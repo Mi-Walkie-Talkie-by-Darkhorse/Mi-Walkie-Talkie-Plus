@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableFromFuture;
 .super Lio/reactivex/Flowable;
-.source "FlowableFromFuture.java"
 
 
 # annotations
@@ -43,16 +42,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Flowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFromFuture;->future:Ljava/util/concurrent/Future;
 
-    .line 3
     iput-wide p2, p0, Lio/reactivex/internal/operators/flowable/FlowableFromFuture;->timeout:J
 
-    .line 4
     iput-object p4, p0, Lio/reactivex/internal/operators/flowable/FlowableFromFuture;->unit:Ljava/util/concurrent/TimeUnit;
 
     return-void
@@ -70,15 +65,12 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/subscriptions/DeferredScalarSubscription;
 
     invoke-direct {v0, p1}, Lio/reactivex/internal/subscriptions/DeferredScalarSubscription;-><init>(Lc/a/c;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableFromFuture;->unit:Ljava/util/concurrent/TimeUnit;
 
@@ -108,7 +100,6 @@
     :goto_0
     if-nez v1, :cond_1
 
-    .line 4
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "The future returned null"
@@ -119,7 +110,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_1
     invoke-virtual {v0, v1}, Lio/reactivex/internal/subscriptions/DeferredScalarSubscription;->complete(Ljava/lang/Object;)V
 
@@ -129,17 +119,14 @@
     :catchall_0
     move-exception v1
 
-    .line 6
     invoke-static {v1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 7
     invoke-virtual {v0}, Lio/reactivex/internal/subscriptions/DeferredScalarSubscription;->isCancelled()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 8
     invoke-interface {p1, v1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
     :cond_2

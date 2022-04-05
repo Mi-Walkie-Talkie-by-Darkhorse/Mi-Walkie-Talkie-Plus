@@ -1,6 +1,5 @@
 .class final Landroidx/fragment/app/FragmentTabHost$TabInfo;
 .super Ljava/lang/Object;
-.source "FragmentTabHost.java"
 
 
 # annotations
@@ -66,16 +65,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/fragment/app/FragmentTabHost$TabInfo;->tag:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Landroidx/fragment/app/FragmentTabHost$TabInfo;->clss:Ljava/lang/Class;
 
-    .line 4
     iput-object p3, p0, Landroidx/fragment/app/FragmentTabHost$TabInfo;->args:Landroid/os/Bundle;
 
     return-void

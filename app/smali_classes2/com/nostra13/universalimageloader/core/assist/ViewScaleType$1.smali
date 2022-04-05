@@ -1,6 +1,5 @@
 .class synthetic Lcom/nostra13/universalimageloader/core/assist/ViewScaleType$1;
 .super Ljava/lang/Object;
-.source "ViewScaleType.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Landroid/widget/ImageView$ScaleType;->values()[Landroid/widget/ImageView$ScaleType;
 
     move-result-object v0

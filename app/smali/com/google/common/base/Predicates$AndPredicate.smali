@@ -1,6 +1,5 @@
 .class Lcom/google/common/base/Predicates$AndPredicate;
 .super Ljava/lang/Object;
-.source "Predicates.java"
 
 # interfaces
 .implements Lcom/google/common/base/Predicate;
@@ -60,10 +59,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/base/Predicates$AndPredicate;->components:Ljava/util/List;
 
     return-void
@@ -72,7 +69,6 @@
 .method synthetic constructor <init>(Ljava/util/List;Lcom/google/common/base/Predicates$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/base/Predicates$AndPredicate;-><init>(Ljava/util/List;)V
 
     return-void
@@ -96,7 +92,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :goto_0
     iget-object v2, p0, Lcom/google/common/base/Predicates$AndPredicate;->components:Ljava/util/List;
 
@@ -106,7 +101,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 2
     iget-object v2, p0, Lcom/google/common/base/Predicates$AndPredicate;->components:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -141,15 +135,12 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Lcom/google/common/base/Predicates$AndPredicate;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/common/base/Predicates$AndPredicate;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/base/Predicates$AndPredicate;->components:Ljava/util/List;
 
     iget-object p1, p1, Lcom/google/common/base/Predicates$AndPredicate;->components:Ljava/util/List;
@@ -169,7 +160,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/Predicates$AndPredicate;->components:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->hashCode()I
@@ -186,7 +176,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/common/base/Predicates;->access$800()Lcom/google/common/base/Joiner;
 
     move-result-object v0

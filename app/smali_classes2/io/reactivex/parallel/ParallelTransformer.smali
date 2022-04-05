@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/parallel/ParallelTransformer;
 .super Ljava/lang/Object;
-.source "ParallelTransformer.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class synthetic Landroidx/constraintlayout/widget/ConstraintLayout$a;
 .super Ljava/lang/Object;
-.source "ConstraintLayout.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Landroidx/constraintlayout/solver/widgets/ConstraintWidget$DimensionBehaviour;->values()[Landroidx/constraintlayout/solver/widgets/ConstraintWidget$DimensionBehaviour;
 
     move-result-object v0

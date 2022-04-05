@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/k/c/a$a;
 .super Ljava/lang/Object;
-.source "ByteBufferRewinder.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/i/e$a;
@@ -30,7 +29,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +41,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/k/c/a$a;->a(Ljava/nio/ByteBuffer;)Lcom/bumptech/glide/load/i/e;
@@ -69,7 +66,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/bumptech/glide/load/k/c/a;
 
     invoke-direct {v0, p1}, Lcom/bumptech/glide/load/k/c/a;-><init>(Ljava/nio/ByteBuffer;)V
@@ -91,7 +87,6 @@
         }
     .end annotation
 
-    .line 3
     const-class v0, Ljava/nio/ByteBuffer;
 
     return-object v0

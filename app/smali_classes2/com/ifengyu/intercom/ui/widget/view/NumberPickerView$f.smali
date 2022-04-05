@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$f;
 .super Ljava/lang/Object;
-.source "NumberPickerView.java"
 
 
 # annotations

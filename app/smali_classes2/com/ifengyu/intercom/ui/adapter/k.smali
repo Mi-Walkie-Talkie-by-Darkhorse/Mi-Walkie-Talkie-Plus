@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/adapter/k;
 .super Ljava/lang/Object;
-.source "OnRecyclerItemClick.java"
 
 
 # virtual methods

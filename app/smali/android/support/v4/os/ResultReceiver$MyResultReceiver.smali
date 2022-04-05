@@ -1,6 +1,5 @@
 .class Landroid/support/v4/os/ResultReceiver$MyResultReceiver;
 .super Landroid/support/v4/os/IResultReceiver$Stub;
-.source "ResultReceiver.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroid/support/v4/os/ResultReceiver;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/os/ResultReceiver$MyResultReceiver;->this$0:Landroid/support/v4/os/ResultReceiver;
 
     invoke-direct {p0}, Landroid/support/v4/os/IResultReceiver$Stub;-><init>()V
@@ -35,14 +33,12 @@
 .method public send(ILandroid/os/Bundle;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/os/ResultReceiver$MyResultReceiver;->this$0:Landroid/support/v4/os/ResultReceiver;
 
     iget-object v1, v0, Landroid/support/v4/os/ResultReceiver;->mHandler:Landroid/os/Handler;
 
     if-eqz v1, :cond_0
 
-    .line 2
     new-instance v2, Landroid/support/v4/os/ResultReceiver$MyRunnable;
 
     invoke-direct {v2, v0, p1, p2}, Landroid/support/v4/os/ResultReceiver$MyRunnable;-><init>(Landroid/support/v4/os/ResultReceiver;ILandroid/os/Bundle;)V
@@ -51,7 +47,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {v0, p1, p2}, Landroid/support/v4/os/ResultReceiver;->onReceiveResult(ILandroid/os/Bundle;)V
 

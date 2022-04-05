@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/result/ListDomainMappingsResult;
 .super Ljava/lang/Object;
-.source "ListDomainMappingsResult.java"
 
 
 # annotations
@@ -24,10 +23,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -50,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/result/ListDomainMappingsResult;->domainMappings:Ljava/util/List;
 
     return-object v0
@@ -67,7 +63,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/result/ListDomainMappingsResult;->domainMappings:Ljava/util/List;
 
     return-void

@@ -1,13 +1,11 @@
 .class public abstract Lcom/efs/sdk/base/protocol/file/AbsFileLog;
 .super Lcom/efs/sdk/base/protocol/AbsLog;
-.source "SourceFile"
 
 
 # direct methods
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/efs/sdk/base/protocol/AbsLog;-><init>(Ljava/lang/String;)V
 
     return-void

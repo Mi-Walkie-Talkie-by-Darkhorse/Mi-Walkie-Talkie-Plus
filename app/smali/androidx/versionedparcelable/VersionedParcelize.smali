@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/versionedparcelable/VersionedParcelize;
 .super Ljava/lang/Object;
-.source "VersionedParcelize.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

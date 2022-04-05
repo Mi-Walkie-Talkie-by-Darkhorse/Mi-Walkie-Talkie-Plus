@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;
 .super Ljava/lang/Object;
-.source "LiteMoreSettingActivity_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -24,13 +23,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->a:Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;
 
-    .line 3
     const-class v0, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     const v1, 0x7f090426
@@ -49,12 +45,10 @@
 
     const-string v1, "field \'mItemKeylessTalk\' and method \'onClick\'"
 
-    .line 4
     invoke-static {p2, v0, v1}, Lbutterknife/internal/Utils;->findRequiredView(Landroid/view/View;ILjava/lang/String;)Landroid/view/View;
 
     move-result-object v1
 
-    .line 5
     const-class v2, Lcom/ifengyu/library/widget/view/ItemView;
 
     const-string v3, "field \'mItemKeylessTalk\'"
@@ -67,10 +61,8 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;->mItemKeylessTalk:Lcom/ifengyu/library/widget/view/ItemView;
 
-    .line 6
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->b:Landroid/view/View;
 
-    .line 7
     new-instance v0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding$a;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding$a;-><init>(Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;)V
@@ -81,12 +73,10 @@
 
     const-string v1, "field \'mItemBannedOnBusy\' and method \'onClick\'"
 
-    .line 8
     invoke-static {p2, v0, v1}, Lbutterknife/internal/Utils;->findRequiredView(Landroid/view/View;ILjava/lang/String;)Landroid/view/View;
 
     move-result-object v1
 
-    .line 9
     const-class v2, Lcom/ifengyu/library/widget/view/ItemView;
 
     const-string v3, "field \'mItemBannedOnBusy\'"
@@ -99,10 +89,8 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;->mItemBannedOnBusy:Lcom/ifengyu/library/widget/view/ItemView;
 
-    .line 10
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->c:Landroid/view/View;
 
-    .line 11
     new-instance v0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding$b;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding$b;-><init>(Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;)V
@@ -113,12 +101,10 @@
 
     const-string v1, "field \'mItemSquelchLevel\' and method \'onClick\'"
 
-    .line 12
     invoke-static {p2, v0, v1}, Lbutterknife/internal/Utils;->findRequiredView(Landroid/view/View;ILjava/lang/String;)Landroid/view/View;
 
     move-result-object v1
 
-    .line 13
     const-class v2, Lcom/ifengyu/library/widget/view/ItemView;
 
     const-string v3, "field \'mItemSquelchLevel\'"
@@ -131,10 +117,8 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;->mItemSquelchLevel:Lcom/ifengyu/library/widget/view/ItemView;
 
-    .line 14
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->d:Landroid/view/View;
 
-    .line 15
     new-instance v0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding$c;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding$c;-><init>(Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;)V
@@ -145,12 +129,10 @@
 
     const-string v1, "field \'mItemWideNarrowBand\' and method \'onClick\'"
 
-    .line 16
     invoke-static {p2, v0, v1}, Lbutterknife/internal/Utils;->findRequiredView(Landroid/view/View;ILjava/lang/String;)Landroid/view/View;
 
     move-result-object p2
 
-    .line 17
     const-class v1, Lcom/ifengyu/library/widget/view/ItemView;
 
     const-string v2, "field \'mItemWideNarrowBand\'"
@@ -163,10 +145,8 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;->mItemWideNarrowBand:Lcom/ifengyu/library/widget/view/ItemView;
 
-    .line 18
     iput-object p2, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->e:Landroid/view/View;
 
-    .line 19
     new-instance v0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding$d;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding$d;-><init>(Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;)V
@@ -183,66 +163,50 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->a:Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->a:Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;->mItemKeylessTalk:Lcom/ifengyu/library/widget/view/ItemView;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;->mItemBannedOnBusy:Lcom/ifengyu/library/widget/view/ItemView;
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;->mItemSquelchLevel:Lcom/ifengyu/library/widget/view/ItemView;
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity;->mItemWideNarrowBand:Lcom/ifengyu/library/widget/view/ItemView;
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->b:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 9
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->b:Landroid/view/View;
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->c:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 11
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->c:Landroid/view/View;
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->d:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 13
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->d:Landroid/view/View;
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->e:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 15
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteMoreSettingActivity_ViewBinding;->e:Landroid/view/View;
 
     return-void
 
-    .line 16
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

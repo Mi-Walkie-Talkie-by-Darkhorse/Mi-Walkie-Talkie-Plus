@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/library/widget/dialog/DialogMenuItemView$CheckItemView;
 .super Lcom/ifengyu/library/widget/dialog/DialogMenuItemView;
-.source "DialogMenuItemView.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method protected a(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/library/widget/dialog/DialogMenuItemView$CheckItemView;->e:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setSelected(Z)V
@@ -41,7 +39,6 @@
 .method public setText(Ljava/lang/CharSequence;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/library/widget/dialog/DialogMenuItemView$CheckItemView;->d:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V

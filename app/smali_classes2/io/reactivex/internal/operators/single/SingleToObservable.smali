@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/single/SingleToObservable;
 .super Lio/reactivex/Observable;
-.source "SingleToObservable.java"
 
 
 # annotations
@@ -43,10 +42,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleToObservable;->source:Lio/reactivex/SingleSource;
 
     return-void
@@ -66,7 +63,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/single/SingleToObservable$SingleToObservableObserver;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/single/SingleToObservable$SingleToObservableObserver;-><init>(Lio/reactivex/Observer;)V
@@ -86,7 +82,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleToObservable;->source:Lio/reactivex/SingleSource;
 
     invoke-static {p1}, Lio/reactivex/internal/operators/single/SingleToObservable;->create(Lio/reactivex/Observer;)Lio/reactivex/SingleObserver;

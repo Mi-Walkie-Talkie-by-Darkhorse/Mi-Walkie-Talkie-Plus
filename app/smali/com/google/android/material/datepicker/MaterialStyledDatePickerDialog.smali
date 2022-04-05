@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/datepicker/MaterialStyledDatePickerDialog;
 .super Landroid/app/DatePickerDialog;
-.source "MaterialStyledDatePickerDialog.java"
 
 
 # annotations
@@ -40,7 +39,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     sget v0, Lcom/google/android/material/R$style;->MaterialAlertDialog_MaterialComponents_Picker_Date_Spinner:I
 
     sput v0, Lcom/google/android/material/datepicker/MaterialStyledDatePickerDialog;->DEF_STYLE_RES:I
@@ -57,7 +55,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/google/android/material/datepicker/MaterialStyledDatePickerDialog;-><init>(Landroid/content/Context;I)V
 
     return-void
@@ -84,7 +81,6 @@
 
     move v2, p2
 
-    .line 2
     invoke-direct/range {v0 .. v6}, Lcom/google/android/material/datepicker/MaterialStyledDatePickerDialog;-><init>(Landroid/content/Context;ILandroid/app/DatePickerDialog$OnDateSetListener;III)V
 
     return-void
@@ -101,15 +97,12 @@
         .end annotation
     .end param
 
-    .line 4
     invoke-direct/range {p0 .. p6}, Landroid/app/DatePickerDialog;-><init>(Landroid/content/Context;ILandroid/app/DatePickerDialog$OnDateSetListener;III)V
 
-    .line 5
     invoke-virtual {p0}, Landroid/app/DatePickerDialog;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    .line 6
     invoke-virtual {p0}, Landroid/app/DatePickerDialog;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -122,12 +115,10 @@
 
     move-result-object p4
 
-    .line 7
     invoke-static {p2, p3, p4}, Lcom/google/android/material/resources/MaterialAttributes;->resolveOrThrow(Landroid/content/Context;ILjava/lang/String;)I
 
     move-result p2
 
-    .line 8
     new-instance p3, Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     sget p4, Lcom/google/android/material/datepicker/MaterialStyledDatePickerDialog;->DEF_STYLE_RES:I
@@ -138,14 +129,12 @@
 
     invoke-direct {p3, p1, p6, p5, p4}, Lcom/google/android/material/shape/MaterialShapeDrawable;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 9
     sget p4, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 p6, 0x15
 
     if-lt p4, p6, :cond_0
 
-    .line 10
     invoke-static {p2}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p2
@@ -157,25 +146,21 @@
     :cond_0
     const/4 p2, 0x0
 
-    .line 11
     invoke-static {p2}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p2
 
     invoke-virtual {p3, p2}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setFillColor(Landroid/content/res/ColorStateList;)V
 
-    .line 12
     :goto_0
     sget p2, Lcom/google/android/material/datepicker/MaterialStyledDatePickerDialog;->DEF_STYLE_RES:I
 
-    .line 13
     invoke-static {p1, p5, p2}, Lcom/google/android/material/dialog/MaterialDialogs;->getDialogBackgroundInsets(Landroid/content/Context;II)Landroid/graphics/Rect;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialStyledDatePickerDialog;->backgroundInsets:Landroid/graphics/Rect;
 
-    .line 14
     invoke-static {p3, p1}, Lcom/google/android/material/dialog/MaterialDialogs;->insetDrawable(Landroid/graphics/drawable/Drawable;Landroid/graphics/Rect;)Landroid/graphics/drawable/InsetDrawable;
 
     move-result-object p1
@@ -210,7 +195,6 @@
 
     move v6, p5
 
-    .line 3
     invoke-direct/range {v0 .. v6}, Lcom/google/android/material/datepicker/MaterialStyledDatePickerDialog;-><init>(Landroid/content/Context;ILandroid/app/DatePickerDialog$OnDateSetListener;III)V
 
     return-void
@@ -221,10 +205,8 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/DatePickerDialog;->onCreate(Landroid/os/Bundle;)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/app/DatePickerDialog;->getWindow()Landroid/view/Window;
 
     move-result-object p1
@@ -233,12 +215,10 @@
 
     invoke-virtual {p1, v0}, Landroid/view/Window;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 3
     invoke-virtual {p0}, Landroid/app/DatePickerDialog;->getWindow()Landroid/view/Window;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
     move-result-object p1
@@ -249,7 +229,6 @@
 
     invoke-direct {v0, p0, v1}, Lcom/google/android/material/dialog/InsetDialogOnTouchListener;-><init>(Landroid/app/Dialog;Landroid/graphics/Rect;)V
 
-    .line 5
     invoke-virtual {p1, v0}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public Landroidx/lifecycle/LifecycleService;
 .super Landroid/app/Service;
-.source "LifecycleService.java"
 
 # interfaces
 .implements Landroidx/lifecycle/k;
@@ -14,10 +13,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
-    .line 2
     new-instance v0, Landroidx/lifecycle/u;
 
     invoke-direct {v0, p0}, Landroidx/lifecycle/u;-><init>(Landroidx/lifecycle/k;)V
@@ -34,7 +31,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->a:Landroidx/lifecycle/u;
 
     invoke-virtual {v0}, Landroidx/lifecycle/u;->a()Landroidx/lifecycle/Lifecycle;
@@ -56,7 +52,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object p1, p0, Landroidx/lifecycle/LifecycleService;->a:Landroidx/lifecycle/u;
 
     invoke-virtual {p1}, Landroidx/lifecycle/u;->b()V
@@ -71,12 +66,10 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->a:Landroidx/lifecycle/u;
 
     invoke-virtual {v0}, Landroidx/lifecycle/u;->c()V
 
-    .line 2
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
     return-void
@@ -87,12 +80,10 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->a:Landroidx/lifecycle/u;
 
     invoke-virtual {v0}, Landroidx/lifecycle/u;->d()V
 
-    .line 2
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
 
     return-void
@@ -107,12 +98,10 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/LifecycleService;->a:Landroidx/lifecycle/u;
 
     invoke-virtual {v0}, Landroidx/lifecycle/u;->e()V
 
-    .line 2
     invoke-super {p0, p1, p2}, Landroid/app/Service;->onStart(Landroid/content/Intent;I)V
 
     return-void
@@ -127,7 +116,6 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
 
     move-result p1

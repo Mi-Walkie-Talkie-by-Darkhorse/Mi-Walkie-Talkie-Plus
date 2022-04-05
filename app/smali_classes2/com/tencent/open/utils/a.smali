@@ -1,6 +1,5 @@
 .class public final Lcom/tencent/open/utils/a;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/tencent/open/utils/j;
 
     const-wide/32 v1, 0x6054b50
@@ -30,7 +28,6 @@
 
     sput-object v0, Lcom/tencent/open/utils/a;->a:Lcom/tencent/open/utils/j;
 
-    .line 2
     new-instance v0, Lcom/tencent/open/utils/k;
 
     const v1, 0x96fb
@@ -45,7 +42,6 @@
 .method static synthetic a()Lcom/tencent/open/utils/k;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/tencent/open/utils/a;->b:Lcom/tencent/open/utils/k;
 
     return-object v0
@@ -61,7 +57,6 @@
 
     const-string v0, "channelNo"
 
-    .line 9
     invoke-static {p0, v0}, Lcom/tencent/open/utils/a;->a(Ljava/io/File;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -79,7 +74,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     new-instance v1, Ljava/io/RandomAccessFile;
 
@@ -89,7 +83,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     :try_start_1
     invoke-static {v1}, Lcom/tencent/open/utils/a;->a(Ljava/io/RandomAccessFile;)[B
 
@@ -99,22 +92,18 @@
 
     if-nez p0, :cond_0
 
-    .line 4
     invoke-virtual {v1}, Ljava/io/RandomAccessFile;->close()V
 
     return-object v0
 
-    .line 5
     :cond_0
     :try_start_2
     new-instance v2, Lcom/tencent/open/utils/a$a;
 
     invoke-direct {v2, v0}, Lcom/tencent/open/utils/a$a;-><init>(Lcom/tencent/open/utils/a$1;)V
 
-    .line 6
     invoke-virtual {v2, p0}, Lcom/tencent/open/utils/a$a;->a([B)V
 
-    .line 7
     iget-object p0, v2, Lcom/tencent/open/utils/a$a;->a:Ljava/util/Properties;
 
     invoke-virtual {p0, p1}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
@@ -123,7 +112,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 8
     invoke-virtual {v1}, Ljava/io/RandomAccessFile;->close()V
 
     return-object p0
@@ -155,7 +143,6 @@
         }
     .end annotation
 
-    .line 10
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->length()J
 
     move-result-wide v0
@@ -164,17 +151,14 @@
 
     sub-long/2addr v0, v2
 
-    .line 11
     invoke-virtual {p0, v0, v1}, Ljava/io/RandomAccessFile;->seek(J)V
 
-    .line 12
     sget-object v2, Lcom/tencent/open/utils/a;->a:Lcom/tencent/open/utils/j;
 
     invoke-virtual {v2}, Lcom/tencent/open/utils/j;->a()[B
 
     move-result-object v2
 
-    .line 13
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->read()I
 
     move-result v3
@@ -190,39 +174,32 @@
 
     if-eq v3, v4, :cond_1
 
-    .line 14
     aget-byte v4, v2, v7
 
     if-ne v3, v4, :cond_0
 
-    .line 15
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->read()I
 
     move-result v3
 
-    .line 16
     aget-byte v4, v2, v5
 
     if-ne v3, v4, :cond_0
 
-    .line 17
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->read()I
 
     move-result v3
 
-    .line 18
     aget-byte v4, v2, v6
 
     if-ne v3, v4, :cond_0
 
-    .line 19
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->read()I
 
     move-result v3
 
     const/4 v4, 0x3
 
-    .line 20
     aget-byte v4, v2, v4
 
     if-ne v3, v4, :cond_0
@@ -234,10 +211,8 @@
 
     sub-long/2addr v0, v3
 
-    .line 21
     invoke-virtual {p0, v0, v1}, Ljava/io/RandomAccessFile;->seek(J)V
 
-    .line 22
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->read()I
 
     move-result v3
@@ -258,15 +233,12 @@
 
     add-long/2addr v0, v2
 
-    .line 23
     invoke-virtual {p0, v0, v1}, Ljava/io/RandomAccessFile;->seek(J)V
 
     new-array v0, v6, [B
 
-    .line 24
     invoke-virtual {p0, v0}, Ljava/io/RandomAccessFile;->readFully([B)V
 
-    .line 25
     new-instance v1, Lcom/tencent/open/utils/k;
 
     invoke-direct {v1, v0}, Lcom/tencent/open/utils/k;-><init>([B)V
@@ -281,16 +253,13 @@
 
     return-object p0
 
-    .line 26
     :cond_2
     new-array v0, v0, [B
 
-    .line 27
     invoke-virtual {p0, v0}, Ljava/io/RandomAccessFile;->read([B)I
 
     return-object v0
 
-    .line 28
     :cond_3
     new-instance p0, Ljava/util/zip/ZipException;
 

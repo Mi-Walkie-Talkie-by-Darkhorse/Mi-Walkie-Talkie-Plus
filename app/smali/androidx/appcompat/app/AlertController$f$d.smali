@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/AlertController$f$d;
 .super Ljava/lang/Object;
-.source "AlertController.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemClickListener;
@@ -29,7 +28,6 @@
 .method constructor <init>(Landroidx/appcompat/app/AlertController$f;Landroidx/appcompat/app/AlertController$RecycleListView;Landroidx/appcompat/app/AlertController;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AlertController$f$d;->c:Landroidx/appcompat/app/AlertController$f;
 
     iput-object p2, p0, Landroidx/appcompat/app/AlertController$f$d;->a:Landroidx/appcompat/app/AlertController$RecycleListView;
@@ -55,14 +53,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/app/AlertController$f$d;->c:Landroidx/appcompat/app/AlertController$f;
 
     iget-object p1, p1, Landroidx/appcompat/app/AlertController$f;->F:[Z
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p2, p0, Landroidx/appcompat/app/AlertController$f$d;->a:Landroidx/appcompat/app/AlertController$RecycleListView;
 
     invoke-virtual {p2, p3}, Landroid/widget/ListView;->isItemChecked(I)Z
@@ -71,7 +67,6 @@
 
     aput-boolean p2, p1, p3
 
-    .line 3
     :cond_0
     iget-object p1, p0, Landroidx/appcompat/app/AlertController$f$d;->c:Landroidx/appcompat/app/AlertController$f;
 
@@ -83,12 +78,10 @@
 
     iget-object p4, p0, Landroidx/appcompat/app/AlertController$f$d;->a:Landroidx/appcompat/app/AlertController$RecycleListView;
 
-    .line 4
     invoke-virtual {p4, p3}, Landroid/widget/ListView;->isItemChecked(I)Z
 
     move-result p4
 
-    .line 5
     invoke-interface {p1, p2, p3, p4}, Landroid/content/DialogInterface$OnMultiChoiceClickListener;->onClick(Landroid/content/DialogInterface;IZ)V
 
     return-void

@@ -1,6 +1,5 @@
 .class final Lcom/uc/crashsdk/e$b;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -30,7 +29,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +37,6 @@
 .method synthetic constructor <init>(B)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/uc/crashsdk/e$b;-><init>()V
 
     return-void
@@ -50,7 +47,6 @@
 .method public final synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 5
 
-    .line 1
     check-cast p1, Ljava/io/File;
 
     check-cast p2, Ljava/io/File;

@@ -1,6 +1,5 @@
 .class final La/a/a/a/a$a;
 .super Ljava/lang/Object;
-.source "ArchTaskExecutor.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Executor;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public execute(Ljava/lang/Runnable;)V
     .locals 1
 
-    .line 1
     invoke-static {}, La/a/a/a/a;->c()La/a/a/a/a;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/map/f/a/g$a;
 .super Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$TileLoader;
-.source "OfflineTileFilesystemProvider.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method protected constructor <init>(Lcom/ifengyu/intercom/ui/map/f/a/g;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/f/a/g$a;->a:Lcom/ifengyu/intercom/ui/map/f/a/g;
 
     invoke-direct {p0, p1}, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$TileLoader;-><init>(Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;)V
@@ -35,7 +33,6 @@
 .method public loadTile(Lorg/osmdroid/tileprovider/MapTileRequestState;)Landroid/graphics/drawable/Drawable;
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g$a;->a:Lcom/ifengyu/intercom/ui/map/f/a/g;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/f/a/g;->a(Lcom/ifengyu/intercom/ui/map/f/a/g;)Ljava/util/concurrent/atomic/AtomicReference;
@@ -54,20 +51,17 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTileRequestState;->getMapTile()Lorg/osmdroid/tileprovider/MapTile;
 
     move-result-object p1
 
-    .line 3
     invoke-static {}, Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;->isSdCardAvailable()Z
 
     move-result v2
 
     if-nez v2, :cond_2
 
-    .line 4
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -78,7 +72,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -100,7 +93,6 @@
     :cond_1
     return-object v1
 
-    .line 6
     :cond_2
     new-instance v2, Ljava/io/File;
 
@@ -132,7 +124,6 @@
 
     invoke-direct {v2, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 7
     invoke-virtual {v2}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v2
@@ -141,7 +132,6 @@
 
     return-object v1
 
-    .line 8
     :cond_3
     array-length v3, v2
 
@@ -152,7 +142,6 @@
 
     aget-object v5, v2, v4
 
-    .line 9
     new-instance v6, Ljava/io/File;
 
     invoke-virtual {v5}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
@@ -179,14 +168,12 @@
 
     invoke-direct {v6, v5, v7}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10
     invoke-virtual {v6}, Ljava/io/File;->exists()Z
 
     move-result v5
 
     if-eqz v5, :cond_4
 
-    .line 11
     :try_start_0
     invoke-virtual {v6}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -203,7 +190,6 @@
     :catch_0
     move-exception v5
 
-    .line 12
     invoke-virtual {v5}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_4

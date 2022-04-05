@@ -1,6 +1,5 @@
 .class public final Landroidx/savedstate/SavedStateRegistry;
 .super Ljava/lang/Object;
-.source "SavedStateRegistry.java"
 
 
 # annotations
@@ -46,10 +45,8 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, La/a/a/b/b;
 
     invoke-direct {v0}, La/a/a/b/b;-><init>()V
@@ -58,7 +55,6 @@
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Landroidx/savedstate/SavedStateRegistry;->e:Z
 
     return-void
@@ -78,29 +74,24 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Landroidx/savedstate/SavedStateRegistry;->c:Z
 
     if-eqz v0, :cond_2
 
-    .line 2
     iget-object v0, p0, Landroidx/savedstate/SavedStateRegistry;->b:Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {v0, p1}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 4
     iget-object v2, p0, Landroidx/savedstate/SavedStateRegistry;->b:Landroid/os/Bundle;
 
     invoke-virtual {v2, p1}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 
-    .line 5
     iget-object p1, p0, Landroidx/savedstate/SavedStateRegistry;->b:Landroid/os/Bundle;
 
     invoke-virtual {p1}, Landroid/os/Bundle;->isEmpty()Z
@@ -109,7 +100,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 6
     iput-object v1, p0, Landroidx/savedstate/SavedStateRegistry;->b:Landroid/os/Bundle;
 
     :cond_0
@@ -118,7 +108,6 @@
     :cond_1
     return-object v1
 
-    .line 7
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -138,24 +127,19 @@
     .annotation build Landroidx/annotation/MainThread;
     .end annotation
 
-    .line 22
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 23
     iget-object v1, p0, Landroidx/savedstate/SavedStateRegistry;->b:Landroid/os/Bundle;
 
     if-eqz v1, :cond_0
 
-    .line 24
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
 
-    .line 25
     :cond_0
     iget-object v1, p0, Landroidx/savedstate/SavedStateRegistry;->a:La/a/a/b/b;
 
-    .line 26
     invoke-virtual {v1}, La/a/a/b/b;->b()La/a/a/b/b$d;
 
     move-result-object v1
@@ -167,14 +151,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 27
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 28
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -198,7 +180,6 @@
     :cond_1
     const-string v1, "androidx.lifecycle.BundlableSavedStateRegistry.key"
 
-    .line 29
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
     return-void
@@ -217,7 +198,6 @@
     .annotation build Landroidx/annotation/MainThread;
     .end annotation
 
-    .line 17
     iget-boolean v0, p0, Landroidx/savedstate/SavedStateRegistry;->c:Z
 
     if-nez v0, :cond_1
@@ -226,14 +206,12 @@
 
     const-string v0, "androidx.lifecycle.BundlableSavedStateRegistry.key"
 
-    .line 18
     invoke-virtual {p2, v0}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object p2
 
     iput-object p2, p0, Landroidx/savedstate/SavedStateRegistry;->b:Landroid/os/Bundle;
 
-    .line 19
     :cond_0
     new-instance p2, Landroidx/savedstate/SavedStateRegistry$1;
 
@@ -243,12 +221,10 @@
 
     const/4 p1, 0x1
 
-    .line 20
     iput-boolean p1, p0, Landroidx/savedstate/SavedStateRegistry;->c:Z
 
     return-void
 
-    .line 21
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -278,17 +254,14 @@
         }
     .end annotation
 
-    .line 10
     iget-boolean v0, p0, Landroidx/savedstate/SavedStateRegistry;->e:Z
 
     if-eqz v0, :cond_1
 
-    .line 11
     iget-object v0, p0, Landroidx/savedstate/SavedStateRegistry;->d:Landroidx/savedstate/Recreator$a;
 
     if-nez v0, :cond_0
 
-    .line 12
     new-instance v0, Landroidx/savedstate/Recreator$a;
 
     invoke-direct {v0, p0}, Landroidx/savedstate/Recreator$a;-><init>(Landroidx/savedstate/SavedStateRegistry;)V
@@ -301,12 +274,10 @@
     :try_start_0
     new-array v0, v0, [Ljava/lang/Class;
 
-    .line 13
     invoke-virtual {p1, v0}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 14
     iget-object v0, p0, Landroidx/savedstate/SavedStateRegistry;->d:Landroidx/savedstate/Recreator$a;
 
     invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -320,7 +291,6 @@
     :catch_0
     move-exception v0
 
-    .line 15
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -349,7 +319,6 @@
 
     throw v1
 
-    .line 16
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -373,7 +342,6 @@
     .annotation build Landroidx/annotation/MainThread;
     .end annotation
 
-    .line 8
     iget-object v0, p0, Landroidx/savedstate/SavedStateRegistry;->a:La/a/a/b/b;
 
     invoke-virtual {v0, p1, p2}, La/a/a/b/b;->b(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -386,7 +354,6 @@
 
     return-void
 
-    .line 9
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

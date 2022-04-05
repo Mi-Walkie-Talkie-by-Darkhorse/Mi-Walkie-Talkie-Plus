@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/o$a;
 .super Landroidx/recyclerview/widget/RecyclerView$p;
-.source "SnapHelper.java"
 
 
 # annotations
@@ -24,14 +23,12 @@
 .method constructor <init>(Landroidx/recyclerview/widget/o;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/o$a;->b:Landroidx/recyclerview/widget/o;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$p;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 2
     iput-boolean p1, p0, Landroidx/recyclerview/widget/o$a;->a:Z
 
     return-void
@@ -42,22 +39,18 @@
 .method public onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$p;->onScrollStateChanged(Landroidx/recyclerview/widget/RecyclerView;I)V
 
     if-nez p2, :cond_0
 
-    .line 2
     iget-boolean p1, p0, Landroidx/recyclerview/widget/o$a;->a:Z
 
     if-eqz p1, :cond_0
 
     const/4 p1, 0x0
 
-    .line 3
     iput-boolean p1, p0, Landroidx/recyclerview/widget/o$a;->a:Z
 
-    .line 4
     iget-object p1, p0, Landroidx/recyclerview/widget/o$a;->b:Landroidx/recyclerview/widget/o;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/o;->a()V
@@ -76,7 +69,6 @@
     :cond_0
     const/4 p1, 0x1
 
-    .line 1
     iput-boolean p1, p0, Landroidx/recyclerview/widget/o$a;->a:Z
 
     :cond_1

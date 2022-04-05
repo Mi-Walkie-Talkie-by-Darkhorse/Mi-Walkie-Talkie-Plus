@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView;
 .super Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$RootView;
-.source "QMUIFragmentActivity.java"
 
 
 # annotations
@@ -31,20 +30,16 @@
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$RootView;-><init>(Landroid/content/Context;I)V
 
-    .line 2
     new-instance v0, Landroidx/fragment/app/FragmentContainerView;
 
     invoke-direct {v0, p1}, Landroidx/fragment/app/FragmentContainerView;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView;->d:Landroidx/fragment/app/FragmentContainerView;
 
-    .line 3
     invoke-virtual {v0, p2}, Landroid/widget/FrameLayout;->setId(I)V
 
-    .line 4
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView;->d:Landroidx/fragment/app/FragmentContainerView;
 
     new-instance p2, Landroid/widget/FrameLayout$LayoutParams;
@@ -55,7 +50,6 @@
 
     invoke-virtual {p0, p1, p2}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 5
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView;->d:Landroidx/fragment/app/FragmentContainerView;
 
     new-instance p2, Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView$a;
@@ -72,7 +66,6 @@
 .method public getFragmentContainerView()Landroidx/fragment/app/FragmentContainerView;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView;->d:Landroidx/fragment/app/FragmentContainerView;
 
     return-object v0

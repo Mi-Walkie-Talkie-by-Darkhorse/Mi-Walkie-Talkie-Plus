@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/Poi;
 .super Ljava/lang/Object;
-.source "Poi.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/model/PoiCreator;
 
     invoke-direct {v0}, Lcom/amap/api/maps/model/PoiCreator;-><init>()V
@@ -35,16 +33,12 @@
 .method public constructor <init>(Ljava/lang/String;Lcom/amap/api/maps/model/LatLng;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/maps/model/Poi;->a:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Lcom/amap/api/maps/model/Poi;->b:Lcom/amap/api/maps/model/LatLng;
 
-    .line 4
     iput-object p3, p0, Lcom/amap/api/maps/model/Poi;->c:Ljava/lang/String;
 
     return-void
@@ -74,18 +68,15 @@
 
     if-eqz p1, :cond_2
 
-    .line 1
     instance-of v2, p1, Lcom/amap/api/maps/model/Poi;
 
     if-nez v2, :cond_1
 
     goto :goto_0
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/amap/api/maps/model/Poi;
 
-    .line 3
     invoke-virtual {p1}, Lcom/amap/api/maps/model/Poi;->getName()Ljava/lang/String;
 
     move-result-object v2
@@ -98,7 +89,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 4
     invoke-virtual {p1}, Lcom/amap/api/maps/model/Poi;->getCoordinate()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object v2
@@ -111,7 +101,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 5
     invoke-virtual {p1}, Lcom/amap/api/maps/model/Poi;->getPoiId()Ljava/lang/String;
 
     move-result-object p1
@@ -134,7 +123,6 @@
 .method public getCoordinate()Lcom/amap/api/maps/model/LatLng;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Poi;->b:Lcom/amap/api/maps/model/LatLng;
 
     return-object v0
@@ -143,7 +131,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Poi;->a:Ljava/lang/String;
 
     return-object v0
@@ -152,7 +139,6 @@
 .method public getPoiId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Poi;->c:Ljava/lang/String;
 
     return-object v0
@@ -161,7 +147,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     invoke-super {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
@@ -172,7 +157,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "poiid "
@@ -197,7 +181,6 @@
 
     iget-object v1, p0, Lcom/amap/api/maps/model/Poi;->b:Lcom/amap/api/maps/model/LatLng;
 
-    .line 2
     invoke-virtual {v1}, Lcom/amap/api/maps/model/LatLng;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -214,17 +197,14 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Poi;->a:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/maps/model/Poi;->b:Lcom/amap/api/maps/model/LatLng;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 3
     iget-object p2, p0, Lcom/amap/api/maps/model/Poi;->c:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V

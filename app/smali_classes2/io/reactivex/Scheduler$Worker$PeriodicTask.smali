@@ -1,6 +1,5 @@
 .class final Lio/reactivex/Scheduler$Worker$PeriodicTask;
 .super Ljava/lang/Object;
-.source "Scheduler.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -52,24 +51,18 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->this$0:Lio/reactivex/Scheduler$Worker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p4, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->decoratedRun:Ljava/lang/Runnable;
 
-    .line 3
     iput-object p7, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->sd:Lio/reactivex/internal/disposables/SequentialDisposable;
 
-    .line 4
     iput-wide p8, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->periodInNanoseconds:J
 
-    .line 5
     iput-wide p5, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->lastNowNanoseconds:J
 
-    .line 6
     iput-wide p2, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->startInNanoseconds:J
 
     return-void
@@ -80,7 +73,6 @@
 .method public getWrappedRunnable()Ljava/lang/Runnable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->decoratedRun:Ljava/lang/Runnable;
 
     return-object v0
@@ -89,12 +81,10 @@
 .method public run()V
     .locals 11
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->decoratedRun:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->sd:Lio/reactivex/internal/disposables/SequentialDisposable;
 
     invoke-virtual {v0}, Lio/reactivex/internal/disposables/SequentialDisposable;->isDisposed()Z
@@ -103,7 +93,6 @@
 
     if-nez v0, :cond_2
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->this$0:Lio/reactivex/Scheduler$Worker;
 
     sget-object v1, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
@@ -112,7 +101,6 @@
 
     move-result-wide v0
 
-    .line 4
     sget-wide v2, Lio/reactivex/Scheduler;->CLOCK_DRIFT_TOLERANCE_NANOSECONDS:J
 
     add-long v4, v0, v2
@@ -137,7 +125,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-wide v2, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->startInNanoseconds:J
 
@@ -153,14 +140,12 @@
 
     goto :goto_1
 
-    .line 6
     :cond_1
     :goto_0
     iget-wide v2, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->periodInNanoseconds:J
 
     add-long v4, v0, v2
 
-    .line 7
     iget-wide v6, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->count:J
 
     add-long/2addr v6, v8
@@ -175,13 +160,11 @@
 
     move-wide v2, v4
 
-    .line 8
     :goto_1
     iput-wide v0, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->lastNowNanoseconds:J
 
     sub-long/2addr v2, v0
 
-    .line 9
     iget-object v0, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->sd:Lio/reactivex/internal/disposables/SequentialDisposable;
 
     iget-object v1, p0, Lio/reactivex/Scheduler$Worker$PeriodicTask;->this$0:Lio/reactivex/Scheduler$Worker;

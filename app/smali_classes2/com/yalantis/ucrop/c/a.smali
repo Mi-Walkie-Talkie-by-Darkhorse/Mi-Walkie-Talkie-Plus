@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/yalantis/ucrop/c/a;
 .super Ljava/lang/Object;
-.source "BitmapCropCallback.java"
 
 
 # virtual methods

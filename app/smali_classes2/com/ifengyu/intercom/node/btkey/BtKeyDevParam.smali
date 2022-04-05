@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam;
 .super Lcom/ifengyu/intercom/node/btkey/a;
-.source "BtKeyDevParam.java"
 
 
 # annotations
@@ -21,17 +20,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btkey/a;-><init>()V
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam$BTKEY_PARAM_TYPE;->b:Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam$BTKEY_PARAM_TYPE;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam;->a:Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam$BTKEY_PARAM_TYPE;
 
     const/4 v0, -0x1
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam;->b:I
 
     return-void
@@ -46,7 +42,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     :try_start_0
     new-instance v1, Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam;
@@ -55,7 +50,6 @@
 
     const/4 v2, 0x0
 
-    .line 4
     :goto_0
     array-length v3, p0
 
@@ -63,7 +57,6 @@
 
     add-int/lit8 v3, v2, 0x1
 
-    .line 5
     aget-byte v2, p0, v2
 
     and-int/lit16 v2, v2, 0xff
@@ -74,7 +67,6 @@
 
     add-int/lit8 v5, v3, 0x1
 
-    .line 6
     aget-byte v3, p0, v3
 
     and-int/lit16 v3, v3, 0xff
@@ -87,7 +79,6 @@
 
     goto :goto_1
 
-    .line 7
     :cond_1
     aget-byte v3, p0, v5
 
@@ -97,7 +88,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_2
     aget-byte v3, p0, v5
 
@@ -105,7 +95,6 @@
 
     if-ne v3, v4, :cond_3
 
-    .line 9
     sget-object v3, Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam$BTKEY_PARAM_TYPE;->c:Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam$BTKEY_PARAM_TYPE;
 
     invoke-virtual {v1, v3}, Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam;->a(Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam$BTKEY_PARAM_TYPE;)V
@@ -124,7 +113,6 @@
     :catch_0
     move-exception p0
 
-    .line 10
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     return-object v0
@@ -135,7 +123,6 @@
 .method public a(I)V
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam;->b:I
 
     return-void
@@ -144,7 +131,6 @@
 .method public a(Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam$BTKEY_PARAM_TYPE;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam;->a:Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam$BTKEY_PARAM_TYPE;
 
     return-void
@@ -153,7 +139,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

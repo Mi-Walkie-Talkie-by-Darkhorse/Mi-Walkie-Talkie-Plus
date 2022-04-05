@@ -1,6 +1,5 @@
 .class interface abstract Lio/reactivex/internal/operators/observable/ObservableReplay$ReplayBuffer;
 .super Ljava/lang/Object;
-.source "ObservableReplay.java"
 
 
 # annotations

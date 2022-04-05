@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/ActionMenuPresenter$b;
 .super Landroidx/appcompat/view/menu/ActionMenuItemView$b;
-.source "ActionMenuPresenter.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/ActionMenuPresenter;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$b;->a:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     invoke-direct {p0}, Landroidx/appcompat/view/menu/ActionMenuItemView$b;-><init>()V
@@ -35,7 +33,6 @@
 .method public a()Landroidx/appcompat/view/menu/o;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$b;->a:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     iget-object v0, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->y:Landroidx/appcompat/widget/ActionMenuPresenter$a;

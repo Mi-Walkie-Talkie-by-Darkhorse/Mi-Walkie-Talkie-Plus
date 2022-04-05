@@ -1,6 +1,5 @@
 .class public abstract Landroidx/appcompat/c/b;
 .super Ljava/lang/Object;
-.source "ActionMode.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +42,6 @@
 .method public a(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/c/b;->a:Ljava/lang/Object;
 
     return-void
@@ -53,7 +50,6 @@
 .method public a(Z)V
     .locals 0
 
-    .line 2
     iput-boolean p1, p0, Landroidx/appcompat/c/b;->b:Z
 
     return-void
@@ -80,7 +76,6 @@
 .method public f()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/c/b;->a:Ljava/lang/Object;
 
     return-object v0
@@ -92,7 +87,6 @@
 .method public h()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/c/b;->b:Z
 
     return v0

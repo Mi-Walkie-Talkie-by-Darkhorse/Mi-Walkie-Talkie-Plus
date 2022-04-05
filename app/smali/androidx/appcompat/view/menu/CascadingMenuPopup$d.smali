@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/view/menu/CascadingMenuPopup$d;
 .super Ljava/lang/Object;
-.source "CascadingMenuPopup.java"
 
 
 # annotations
@@ -34,16 +33,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$d;->a:Landroidx/appcompat/widget/MenuPopupWindow;
 
-    .line 3
     iput-object p2, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$d;->b:Landroidx/appcompat/view/menu/f;
 
-    .line 4
     iput p3, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$d;->c:I
 
     return-void
@@ -54,7 +49,6 @@
 .method public a()Landroid/widget/ListView;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$d;->a:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->e()Landroid/widget/ListView;

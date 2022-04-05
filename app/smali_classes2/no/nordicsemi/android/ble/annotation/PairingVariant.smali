@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lno/nordicsemi/android/ble/annotation/PairingVariant;
 .super Ljava/lang/Object;
-.source "PairingVariant.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

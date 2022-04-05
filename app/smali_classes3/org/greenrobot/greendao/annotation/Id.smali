@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/greenrobot/greendao/annotation/Id;
 .super Ljava/lang/Object;
-.source "Id.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

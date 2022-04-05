@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/lite/base/recycler/c$b;
 .super Ljava/lang/Object;
-.source "BaseRecyclerAdapter2.java"
 
 
 # annotations

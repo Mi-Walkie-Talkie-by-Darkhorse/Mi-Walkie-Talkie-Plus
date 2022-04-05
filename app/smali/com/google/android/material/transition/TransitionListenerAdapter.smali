@@ -1,6 +1,5 @@
 .class abstract Lcom/google/android/material/transition/TransitionListenerAdapter;
 .super Ljava/lang/Object;
-.source "TransitionListenerAdapter.java"
 
 # interfaces
 .implements Landroidx/transition/Transition$g;
@@ -10,7 +9,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

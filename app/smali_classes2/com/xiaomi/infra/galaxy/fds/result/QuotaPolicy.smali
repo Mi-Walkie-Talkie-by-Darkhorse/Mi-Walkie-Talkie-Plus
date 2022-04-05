@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/result/QuotaPolicy;
 .super Ljava/lang/Object;
-.source "QuotaPolicy.java"
 
 
 # annotations
@@ -24,10 +23,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -42,7 +39,6 @@
 .method public addQuota(Lcom/xiaomi/infra/galaxy/fds/bean/Quota;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/result/QuotaPolicy;->quotas:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -64,7 +60,6 @@
 
     if-eqz p1, :cond_4
 
-    .line 1
     const-class v2, Lcom/xiaomi/infra/galaxy/fds/result/QuotaPolicy;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -75,11 +70,9 @@
 
     goto :goto_1
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/xiaomi/infra/galaxy/fds/result/QuotaPolicy;
 
-    .line 3
     iget-object v2, p0, Lcom/xiaomi/infra/galaxy/fds/result/QuotaPolicy;->quotas:Ljava/util/List;
 
     iget-object p1, p1, Lcom/xiaomi/infra/galaxy/fds/result/QuotaPolicy;->quotas:Ljava/util/List;
@@ -119,7 +112,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/result/QuotaPolicy;->quotas:Ljava/util/List;
 
     return-object v0
@@ -128,7 +120,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/result/QuotaPolicy;->quotas:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -157,7 +148,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/result/QuotaPolicy;->quotas:Ljava/util/List;
 
     return-void

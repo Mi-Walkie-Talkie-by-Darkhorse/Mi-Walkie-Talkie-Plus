@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;
 .super Ljava/lang/Object;
-.source "GLOverlayBundle.java"
 
 
 # annotations
@@ -51,10 +50,8 @@
 .method public constructor <init>(ILcom/autonavi/amap/mapcore/interfaces/IAMap;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -63,28 +60,22 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     const-wide/16 v0, 0x0
 
-    .line 4
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mNativeInstance:J
 
-    .line 5
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mTextureCaches:Landroid/util/SparseArray;
 
-    .line 6
     iput p1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mEngineID:I
 
-    .line 7
     iput-object p2, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
-    .line 8
     invoke-interface {p2}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getGlOverlayMgrPtr()J
 
     move-result-wide p1
@@ -107,7 +98,6 @@
 
     const/4 v2, 0x2
 
-    .line 1
     aput v0, p0, v2
 
     shr-int/lit8 v0, p1, 0x8
@@ -120,7 +110,6 @@
 
     const/4 v2, 0x1
 
-    .line 2
     aput v0, p0, v2
 
     shr-int/lit8 v0, p1, 0x10
@@ -133,7 +122,6 @@
 
     const/4 v2, 0x0
 
-    .line 3
     aput v0, p0, v2
 
     shr-int/lit8 p1, p1, 0x18
@@ -146,7 +134,6 @@
 
     const/4 v0, 0x3
 
-    .line 4
     aput p1, p0, v0
 
     return-void
@@ -181,7 +168,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mNativeInstance:J
 
@@ -205,18 +191,15 @@
 
     invoke-static/range {v0 .. v5}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->nativeAddGLOverlay(JJJ)V
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 4
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -234,7 +217,6 @@
 .method public addOverlayTextureItem(IIFFII)Z
     .locals 8
 
-    .line 5
     new-instance v7, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayTexture;
 
     move-object v0, v7
@@ -253,18 +235,15 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayTexture;-><init>(IIFFII)V
 
-    .line 6
     iget-object p2, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mTextureCaches:Landroid/util/SparseArray;
 
     monitor-enter p2
 
-    .line 7
     :try_start_0
     iget-object p3, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mTextureCaches:Landroid/util/SparseArray;
 
     invoke-virtual {p3, p1, v7}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 8
     monitor-exit p2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -284,23 +263,19 @@
 .method public addOverlayTextureItem(IIII)Z
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayTexture;
 
     invoke-direct {v0, p1, p2, p3, p4}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayTexture;-><init>(IIII)V
 
-    .line 2
     iget-object p2, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mTextureCaches:Landroid/util/SparseArray;
 
     monitor-enter p2
 
-    .line 3
     :try_start_0
     iget-object p3, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mTextureCaches:Landroid/util/SparseArray;
 
     invoke-virtual {p3, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 4
     monitor-exit p2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -320,17 +295,14 @@
 .method public clearFocus()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
     if-eqz v0, :cond_2
 
-    .line 2
     monitor-enter v0
 
     const/4 v1, 0x0
 
-    .line 3
     :goto_0
     :try_start_0
     iget-object v2, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
@@ -341,7 +313,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 4
     iget-object v2, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -352,7 +323,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 5
     invoke-virtual {v2}, Lcom/autonavi/ae/gmap/gloverlay/BaseMapOverlay;->clearFocus()V
 
     :cond_0
@@ -360,7 +330,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     monitor-exit v0
     :try_end_0
@@ -382,18 +351,15 @@
 .method public clearOverlayTexture()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mTextureCaches:Landroid/util/SparseArray;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mTextureCaches:Landroid/util/SparseArray;
 
     invoke-virtual {v1}, Landroid/util/SparseArray;->clear()V
 
-    .line 3
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -422,13 +388,11 @@
 
     return p1
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
@@ -445,7 +409,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     monitor-exit v0
 
     throw p1
@@ -459,14 +422,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
     monitor-enter v0
 
     if-ltz p1, :cond_1
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
@@ -480,7 +441,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
@@ -498,7 +458,6 @@
     :goto_0
     const/4 p1, 0x0
 
-    .line 4
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -508,7 +467,6 @@
     :catchall_0
     move-exception p1
 
-    .line 5
     monitor-exit v0
 
     throw p1
@@ -517,12 +475,10 @@
 .method public getOverlayCount()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
@@ -539,7 +495,6 @@
     :catchall_0
     move-exception v1
 
-    .line 3
     monitor-exit v0
 
     throw v1
@@ -548,12 +503,10 @@
 .method public getOverlayTextureItem(II)Lcom/autonavi/ae/gmap/gloverlay/GLOverlayTexture;
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mTextureCaches:Landroid/util/SparseArray;
 
     monitor-enter p1
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mTextureCaches:Landroid/util/SparseArray;
 
@@ -572,7 +525,6 @@
     :catchall_0
     move-exception p2
 
-    .line 3
     monitor-exit p1
 
     throw p2
@@ -589,23 +541,19 @@
 .method public removeAll(Z)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mNativeInstance:J
 
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->nativeClearAllGLOverlay(JZ)V
 
-    .line 2
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
     monitor-enter p1
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 4
     monitor-exit p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -632,7 +580,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mNativeInstance:J
 
@@ -646,18 +593,15 @@
 
     invoke-static {v0, v1, v2, v3}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->nativeRemoveGLOverlay(JJ)V
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle;->mOverlayList:Ljava/util/List;
 
     invoke-interface {v1, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 4
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

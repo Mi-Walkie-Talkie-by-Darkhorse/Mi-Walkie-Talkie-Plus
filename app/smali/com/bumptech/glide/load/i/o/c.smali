@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/i/o/c;
 .super Ljava/lang/Object;
-.source "ThumbFetcher.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/i/d;
@@ -38,13 +37,10 @@
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/i/o/c;->a:Landroid/net/Uri;
 
-    .line 3
     iput-object p2, p0, Lcom/bumptech/glide/load/i/o/c;->b:Lcom/bumptech/glide/load/i/o/e;
 
     return-void
@@ -53,7 +49,6 @@
 .method public static a(Landroid/content/Context;Landroid/net/Uri;)Lcom/bumptech/glide/load/i/o/c;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/i/o/c$a;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -72,7 +67,6 @@
 .method private static a(Landroid/content/Context;Landroid/net/Uri;Lcom/bumptech/glide/load/i/o/d;)Lcom/bumptech/glide/load/i/o/c;
     .locals 3
 
-    .line 2
     invoke-static {p0}, Lcom/bumptech/glide/c;->b(Landroid/content/Context;)Lcom/bumptech/glide/c;
 
     move-result-object v0
@@ -81,10 +75,8 @@
 
     move-result-object v0
 
-    .line 3
     new-instance v1, Lcom/bumptech/glide/load/i/o/e;
 
-    .line 4
     invoke-static {p0}, Lcom/bumptech/glide/c;->b(Landroid/content/Context;)Lcom/bumptech/glide/c;
 
     move-result-object v2
@@ -97,14 +89,12 @@
 
     move-result-object v2
 
-    .line 5
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p0
 
     invoke-direct {v1, v2, p2, v0, p0}, Lcom/bumptech/glide/load/i/o/e;-><init>(Ljava/util/List;Lcom/bumptech/glide/load/i/o/d;Lcom/bumptech/glide/load/engine/x/b;Landroid/content/ContentResolver;)V
 
-    .line 6
     new-instance p0, Lcom/bumptech/glide/load/i/o/c;
 
     invoke-direct {p0, p1, v1}, Lcom/bumptech/glide/load/i/o/c;-><init>(Landroid/net/Uri;Lcom/bumptech/glide/load/i/o/e;)V
@@ -115,7 +105,6 @@
 .method public static b(Landroid/content/Context;Landroid/net/Uri;)Lcom/bumptech/glide/load/i/o/c;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/i/o/c$b;
 
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -139,7 +128,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/i/o/c;->b:Lcom/bumptech/glide/load/i/o/e;
 
     iget-object v1, p0, Lcom/bumptech/glide/load/i/o/c;->a:Landroid/net/Uri;
@@ -152,7 +140,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v2, p0, Lcom/bumptech/glide/load/i/o/c;->b:Lcom/bumptech/glide/load/i/o/e;
 
     iget-object v3, p0, Lcom/bumptech/glide/load/i/o/c;->a:Landroid/net/Uri;
@@ -169,7 +156,6 @@
     :goto_0
     if-eq v2, v1, :cond_1
 
-    .line 3
     new-instance v1, Lcom/bumptech/glide/load/i/g;
 
     invoke-direct {v1, v0, v2}, Lcom/bumptech/glide/load/i/g;-><init>(Ljava/io/InputStream;I)V
@@ -196,7 +182,6 @@
         }
     .end annotation
 
-    .line 12
     const-class v0, Ljava/io/InputStream;
 
     return-object v0
@@ -223,7 +208,6 @@
         }
     .end annotation
 
-    .line 7
     :try_start_0
     invoke-direct {p0}, Lcom/bumptech/glide/load/i/o/c;->d()Ljava/io/InputStream;
 
@@ -233,7 +217,6 @@
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 8
     invoke-interface {p2, p1}, Lcom/bumptech/glide/load/i/d$a;->a(Ljava/lang/Object;)V
 
     return-void
@@ -245,7 +228,6 @@
 
     const-string v1, "MediaStoreThumbFetcher"
 
-    .line 9
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
@@ -254,10 +236,8 @@
 
     const-string v0, "Failed to find thumbnail file"
 
-    .line 10
     invoke-static {v1, v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 11
     :cond_0
     invoke-interface {p2, p1}, Lcom/bumptech/glide/load/i/d$a;->a(Ljava/lang/Exception;)V
 
@@ -267,12 +247,10 @@
 .method public b()V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/i/o/c;->c:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
-    .line 3
     :try_start_0
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
     :try_end_0
@@ -288,7 +266,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/bumptech/glide/load/DataSource;->a:Lcom/bumptech/glide/load/DataSource;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/ListPopupWindow$d;
 .super Landroid/database/DataSetObserver;
-.source "ListPopupWindow.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/ListPopupWindow;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow$d;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -35,7 +33,6 @@
 .method public onChanged()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow$d;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->a()Z
@@ -44,7 +41,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow$d;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->show()V
@@ -56,7 +52,6 @@
 .method public onInvalidated()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow$d;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->dismiss()V

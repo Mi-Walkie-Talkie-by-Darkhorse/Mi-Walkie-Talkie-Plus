@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/t$a;
 .super Ljava/lang/Object;
-.source "McuContinueUpdateDialog.java"
 
 
 # annotations

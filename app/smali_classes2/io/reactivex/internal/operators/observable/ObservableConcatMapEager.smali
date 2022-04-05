@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableConcatMapEager;
 .super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
-.source "ObservableConcatMapEager.java"
 
 
 # annotations
@@ -59,19 +58,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableConcatMapEager;->mapper:Lio/reactivex/functions/Function;
 
-    .line 3
     iput-object p3, p0, Lio/reactivex/internal/operators/observable/ObservableConcatMapEager;->errorMode:Lio/reactivex/internal/util/ErrorMode;
 
-    .line 4
     iput p4, p0, Lio/reactivex/internal/operators/observable/ObservableConcatMapEager;->maxConcurrency:I
 
-    .line 5
     iput p5, p0, Lio/reactivex/internal/operators/observable/ObservableConcatMapEager;->prefetch:I
 
     return-void
@@ -89,7 +83,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     new-instance v7, Lio/reactivex/internal/operators/observable/ObservableConcatMapEager$ConcatMapEagerMainObserver;

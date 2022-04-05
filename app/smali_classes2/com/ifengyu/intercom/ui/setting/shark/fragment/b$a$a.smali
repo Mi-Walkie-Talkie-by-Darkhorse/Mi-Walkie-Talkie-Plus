@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$a;
 .super Ljava/lang/Object;
-.source "SharkPresetFragment.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$a;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$a;->a:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -42,7 +40,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$a;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;->e:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b;
@@ -69,7 +66,6 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$a;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;->e:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b;
@@ -78,7 +74,6 @@
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b;->a(Lcom/ifengyu/intercom/ui/setting/shark/fragment/b;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$a;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;->e:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b;
@@ -89,7 +84,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$a;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;
 
@@ -105,7 +99,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$a;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;
 

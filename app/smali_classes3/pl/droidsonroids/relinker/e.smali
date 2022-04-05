@@ -1,6 +1,5 @@
 .class final Lpl/droidsonroids/relinker/e;
 .super Ljava/lang/Object;
-.source "TextUtils.java"
 
 
 # direct methods
@@ -9,7 +8,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 1
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result p0

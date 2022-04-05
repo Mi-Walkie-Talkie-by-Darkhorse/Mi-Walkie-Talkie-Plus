@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/datepicker/MaterialCalendar$1;
 .super Landroidx/core/view/a;
-.source "MaterialCalendar.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/android/material/datepicker/MaterialCalendar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialCalendar$1;->this$0:Lcom/google/android/material/datepicker/MaterialCalendar;
 
     invoke-direct {p0}, Landroidx/core/view/a;-><init>()V
@@ -39,12 +37,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/core/view/a;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroidx/core/view/accessibility/b;)V
 
     const/4 p1, 0x0
 
-    .line 2
     invoke-virtual {p2, p1}, Landroidx/core/view/accessibility/b;->a(Ljava/lang/Object;)V
 
     return-void

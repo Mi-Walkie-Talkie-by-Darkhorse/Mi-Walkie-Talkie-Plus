@@ -1,16 +1,13 @@
 .class public final Lio/reactivex/internal/util/BlockingHelper;
 .super Ljava/lang/Object;
-.source "BlockingHelper.java"
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "No instances!"
@@ -23,7 +20,6 @@
 .method public static awaitForComplete(Ljava/util/concurrent/CountDownLatch;Lio/reactivex/disposables/Disposable;)V
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->getCount()J
 
     move-result-wide v0
@@ -36,12 +32,10 @@
 
     return-void
 
-    .line 2
     :cond_0
     :try_start_0
     invoke-static {}, Lio/reactivex/internal/util/BlockingHelper;->verifyNonBlocking()V
 
-    .line 3
     invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->await()V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
@@ -51,17 +45,14 @@
     :catch_0
     move-exception p0
 
-    .line 4
     invoke-interface {p1}, Lio/reactivex/disposables/Disposable;->dispose()V
 
-    .line 5
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 6
     new-instance p1, Ljava/lang/IllegalStateException;
 
     const-string v0, "Interrupted while waiting for subscription to complete."
@@ -74,14 +65,12 @@
 .method public static verifyNonBlocking()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lio/reactivex/plugins/RxJavaPlugins;->isFailOnNonBlockingScheduler()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -90,7 +79,6 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-static {}, Lio/reactivex/plugins/RxJavaPlugins;->onBeforeBlocking()Z
 
     move-result v0
@@ -99,7 +87,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

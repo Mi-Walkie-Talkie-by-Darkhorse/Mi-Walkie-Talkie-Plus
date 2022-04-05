@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/TilesOverlay;
 .super Lorg/osmdroid/views/overlay/Overlay;
-.source "TilesOverlay.java"
 
 # interfaces
 .implements Lorg/osmdroid/views/overlay/IOverlayMenuProvider;
@@ -60,14 +59,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/views/overlay/Overlay;->getSafeMenuId()I
 
     move-result v0
 
     sput v0, Lorg/osmdroid/views/overlay/TilesOverlay;->MENU_MAP_MODE:I
 
-    .line 2
     invoke-static {}, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->getTileSources()Ljava/util/List;
 
     move-result-object v0
@@ -76,14 +73,12 @@
 
     move-result v0
 
-    .line 3
     invoke-static {v0}, Lorg/osmdroid/views/overlay/Overlay;->getSafeMenuIdSequence(I)I
 
     move-result v0
 
     sput v0, Lorg/osmdroid/views/overlay/TilesOverlay;->MENU_TILE_SOURCE_STARTING_ID:I
 
-    .line 4
     invoke-static {}, Lorg/osmdroid/views/overlay/Overlay;->getSafeMenuId()I
 
     move-result v0
@@ -94,12 +89,10 @@
 
     new-array v0, v0, [F
 
-    .line 5
     fill-array-data v0, :array_0
 
     sput-object v0, Lorg/osmdroid/views/overlay/TilesOverlay;->negate:[F
 
-    .line 6
     new-instance v0, Landroid/graphics/ColorMatrixColorFilter;
 
     sget-object v1, Lorg/osmdroid/views/overlay/TilesOverlay;->negate:[F
@@ -140,57 +133,48 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/MapTileProviderBase;Landroid/content/Context;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/Overlay;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->userSelectedLoadingDrawable:Landroid/graphics/drawable/Drawable;
 
-    .line 3
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mDebugPaint:Landroid/graphics/Paint;
 
-    .line 4
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileRect:Landroid/graphics/Rect;
 
-    .line 5
     new-instance v1, Landroid/graphics/Point;
 
     invoke-direct {v1}, Landroid/graphics/Point;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTilePoint:Landroid/graphics/Point;
 
-    .line 6
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mViewPort:Landroid/graphics/Rect;
 
-    .line 7
     new-instance v1, Landroid/graphics/Point;
 
     invoke-direct {v1}, Landroid/graphics/Point;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTopLeftMercator:Landroid/graphics/Point;
 
-    .line 8
     new-instance v1, Landroid/graphics/Point;
 
     invoke-direct {v1}, Landroid/graphics/Point;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mBottomRightMercator:Landroid/graphics/Point;
 
-    .line 9
     new-instance v1, Landroid/graphics/Point;
 
     invoke-direct {v1}, Landroid/graphics/Point;-><init>()V
@@ -199,17 +183,14 @@
 
     const/4 v1, 0x1
 
-    .line 10
     iput-boolean v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mOptionsMenuEnabled:Z
 
-    .line 11
     iput-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingTile:Landroid/graphics/drawable/BitmapDrawable;
 
     const/16 v1, 0xd0
 
     const/16 v2, 0xd8
 
-    .line 12
     invoke-static {v2, v1, v1}, Landroid/graphics/Color;->rgb(III)I
 
     move-result v1
@@ -220,7 +201,6 @@
 
     const/16 v2, 0xc8
 
-    .line 13
     invoke-static {v2, v1, v1}, Landroid/graphics/Color;->rgb(III)I
 
     move-result v1
@@ -229,30 +209,24 @@
 
     const/4 v1, 0x0
 
-    .line 14
     iput v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mOvershootTileCache:I
 
-    .line 15
     iput-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->currentColorFilter:Landroid/graphics/ColorFilter;
 
-    .line 16
     new-instance v0, Lorg/osmdroid/views/overlay/TilesOverlay$1;
 
     invoke-direct {v0, p0}, Lorg/osmdroid/views/overlay/TilesOverlay$1;-><init>(Lorg/osmdroid/views/overlay/TilesOverlay;)V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileLooper:Lorg/osmdroid/util/TileLooper;
 
-    .line 17
     iput-object p2, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->ctx:Landroid/content/Context;
 
     if-eqz p1, :cond_0
 
-    .line 18
     iput-object p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     return-void
 
-    .line 19
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -266,7 +240,6 @@
 .method static synthetic access$000(Lorg/osmdroid/views/overlay/TilesOverlay;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mOvershootTileCache:I
 
     return p0
@@ -275,7 +248,6 @@
 .method static synthetic access$100(Lorg/osmdroid/views/overlay/TilesOverlay;)Landroid/graphics/drawable/Drawable;
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/TilesOverlay;->getLoadingTile()Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
@@ -286,7 +258,6 @@
 .method static synthetic access$200(Lorg/osmdroid/views/overlay/TilesOverlay;)Landroid/graphics/Point;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTilePoint:Landroid/graphics/Point;
 
     return-object p0
@@ -295,7 +266,6 @@
 .method static synthetic access$300(Lorg/osmdroid/views/overlay/TilesOverlay;)Landroid/graphics/Rect;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileRect:Landroid/graphics/Rect;
 
     return-object p0
@@ -304,15 +274,12 @@
 .method private clearLoadingTile()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingTile:Landroid/graphics/drawable/BitmapDrawable;
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingTile:Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 3
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x9
@@ -321,7 +288,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -337,14 +303,12 @@
 
     const-string v0, "OsmDroid"
 
-    .line 1
     iget-object v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->userSelectedLoadingDrawable:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_0
 
     return-object v1
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingTile:Landroid/graphics/drawable/BitmapDrawable;
 
@@ -354,7 +318,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
@@ -366,7 +329,6 @@
 
     iget-object v1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
-    .line 4
     invoke-virtual {v1}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->getTileSource()Lorg/osmdroid/tileprovider/tilesource/ITileSource;
 
     move-result-object v1
@@ -380,7 +342,6 @@
     :cond_1
     const/16 v1, 0x100
 
-    .line 5
     :goto_0
     sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
@@ -388,32 +349,26 @@
 
     move-result-object v2
 
-    .line 6
     new-instance v9, Landroid/graphics/Canvas;
 
     invoke-direct {v9, v2}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 7
     new-instance v10, Landroid/graphics/Paint;
 
     invoke-direct {v10}, Landroid/graphics/Paint;-><init>()V
 
-    .line 8
     iget v3, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingBackgroundColor:I
 
     invoke-virtual {v9, v3}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 9
     iget v3, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingLineColor:I
 
     invoke-virtual {v10, v3}, Landroid/graphics/Paint;->setColor(I)V
 
     const/4 v3, 0x0
 
-    .line 10
     invoke-virtual {v10, v3}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 11
     div-int/lit8 v11, v1, 0x10
 
     const/4 v3, 0x0
@@ -439,7 +394,6 @@
 
     move-object v8, v10
 
-    .line 12
     invoke-virtual/range {v3 .. v8}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     const/4 v5, 0x0
@@ -454,14 +408,12 @@
 
     move-object v8, v10
 
-    .line 13
     invoke-virtual/range {v3 .. v8}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     add-int/2addr v12, v11
 
     goto :goto_1
 
-    .line 14
     :cond_2
     new-instance v1, Landroid/graphics/drawable/BitmapDrawable;
 
@@ -477,10 +429,8 @@
     :catch_0
     const-string v1, "NullPointerException getting loading tile"
 
-    .line 15
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 16
     invoke-static {}, Ljava/lang/System;->gc()V
 
     goto :goto_2
@@ -488,13 +438,10 @@
     :catch_1
     const-string v1, "OutOfMemoryError getting loading tile"
 
-    .line 17
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 18
     invoke-static {}, Ljava/lang/System;->gc()V
 
-    .line 19
     :cond_3
     :goto_2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingTile:Landroid/graphics/drawable/BitmapDrawable;
@@ -507,7 +454,6 @@
 .method public draw(Landroid/graphics/Canvas;Lorg/osmdroid/views/MapView;Z)V
     .locals 8
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -518,7 +464,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -546,18 +491,15 @@
 
     return-void
 
-    .line 3
     :cond_1
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v4
 
-    .line 4
     invoke-virtual {v4}, Lorg/osmdroid/views/Projection;->getScreenRect()Landroid/graphics/Rect;
 
     move-result-object p2
 
-    .line 5
     iget p3, p2, Landroid/graphics/Rect;->left:I
 
     iget v0, p2, Landroid/graphics/Rect;->top:I
@@ -566,7 +508,6 @@
 
     invoke-virtual {v4, p3, v0, v1}, Lorg/osmdroid/views/Projection;->toMercatorPixels(IILandroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 6
     iget p3, p2, Landroid/graphics/Rect;->right:I
 
     iget p2, p2, Landroid/graphics/Rect;->bottom:I
@@ -575,7 +516,6 @@
 
     invoke-virtual {v4, p3, p2, v0}, Lorg/osmdroid/views/Projection;->toMercatorPixels(IILandroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 7
     iget-object p2, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mViewPort:Landroid/graphics/Rect;
 
     iget-object p3, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTopLeftMercator:Landroid/graphics/Point;
@@ -592,7 +532,6 @@
 
     invoke-virtual {p2, v0, p3, v2, v1}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 8
     invoke-virtual {v4}, Lorg/osmdroid/views/Projection;->getZoomLevel()I
 
     move-result v5
@@ -615,15 +554,12 @@
 .method public drawTiles(Landroid/graphics/Canvas;Lorg/osmdroid/views/Projection;IILandroid/graphics/Rect;)V
     .locals 6
 
-    .line 1
     iput-object p2, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mProjection:Lorg/osmdroid/views/Projection;
 
-    .line 2
     iget-object p2, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileLooper:Lorg/osmdroid/util/TileLooper;
 
     invoke-virtual {p2, p1, p3, p4, p5}, Lorg/osmdroid/util/TileLooper;->loop(Landroid/graphics/Canvas;IILandroid/graphics/Rect;)V
 
-    .line 3
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object p2
@@ -634,7 +570,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 4
     new-instance p2, Landroid/graphics/Point;
 
     invoke-virtual {p5}, Landroid/graphics/Rect;->centerX()I
@@ -647,7 +582,6 @@
 
     invoke-direct {p2, p3, p4}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 5
     iget p3, p2, Landroid/graphics/Point;->x:I
 
     int-to-float v1, p3
@@ -670,7 +604,6 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 6
     iget p3, p2, Landroid/graphics/Point;->x:I
 
     add-int/lit8 p4, p3, -0x9
@@ -698,7 +631,6 @@
 .method public getLoadingBackgroundColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingBackgroundColor:I
 
     return v0
@@ -707,7 +639,6 @@
 .method public getLoadingLineColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingLineColor:I
 
     return v0
@@ -716,7 +647,6 @@
 .method public getMaximumZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {v0}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->getMaximumZoomLevel()I
@@ -729,7 +659,6 @@
 .method public getMinimumZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {v0}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->getMinimumZoomLevel()I
@@ -742,7 +671,6 @@
 .method public getOvershootTileCache()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mOvershootTileCache:I
 
     return v0
@@ -751,7 +679,6 @@
 .method public isOptionsMenuEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mOptionsMenuEnabled:Z
 
     return v0
@@ -760,7 +687,6 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;ILorg/osmdroid/views/MapView;)Z
     .locals 6
 
-    .line 1
     sget v0, Lorg/osmdroid/views/overlay/TilesOverlay;->MENU_MAP_MODE:I
 
     add-int/2addr v0, p2
@@ -775,14 +701,12 @@
 
     sget v1, Lorg/osmdroid/library/R$drawable;->ic_menu_mapmode:I
 
-    .line 2
     invoke-interface {v0, v1}, Landroid/view/SubMenu;->setIcon(I)Landroid/view/SubMenu;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 3
     :goto_0
     invoke-static {}, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->getTileSources()Ljava/util/List;
 
@@ -794,7 +718,6 @@
 
     if-ge v1, v3, :cond_0
 
-    .line 4
     invoke-static {}, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->getTileSources()Ljava/util/List;
 
     move-result-object v3
@@ -805,7 +728,6 @@
 
     check-cast v3, Lorg/osmdroid/tileprovider/tilesource/ITileSource;
 
-    .line 5
     sget v4, Lorg/osmdroid/views/overlay/TilesOverlay;->MENU_MAP_MODE:I
 
     add-int/2addr v4, p2
@@ -816,19 +738,16 @@
 
     add-int/2addr v5, p2
 
-    .line 6
     invoke-interface {v3}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->name()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 7
     invoke-interface {v0, v4, v5, v2, v3}, Landroid/view/SubMenu;->add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 8
     :cond_0
     sget v1, Lorg/osmdroid/views/overlay/TilesOverlay;->MENU_MAP_MODE:I
 
@@ -838,12 +757,10 @@
 
     invoke-interface {v0, v1, v3, v3}, Landroid/view/SubMenu;->setGroupCheckable(IZZ)V
 
-    .line 9
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->ctx:Landroid/content/Context;
 
     if-eqz v0, :cond_2
 
-    .line 10
     invoke-virtual {p3}, Lorg/osmdroid/views/MapView;->useDataConnection()Z
 
     move-result p3
@@ -857,13 +774,11 @@
     :cond_1
     sget p3, Lorg/osmdroid/library/R$string;->set_mode_online:I
 
-    .line 11
     :goto_1
     invoke-virtual {v0, p3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object p3
 
-    .line 12
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->ctx:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -876,7 +791,6 @@
 
     move-result-object v0
 
-    .line 13
     sget v1, Lorg/osmdroid/views/overlay/TilesOverlay;->MENU_OFFLINE:I
 
     add-int/2addr v1, p2
@@ -894,44 +808,36 @@
 .method public onDetach(Lorg/osmdroid/views/MapView;)V
     .locals 3
 
-    .line 1
     iget-object p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->detach()V
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->ctx:Landroid/content/Context;
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingTile:Landroid/graphics/drawable/BitmapDrawable;
 
     const/16 v1, 0x9
 
     if-eqz v0, :cond_1
 
-    .line 4
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-ge v2, v1, :cond_0
 
-    .line 5
     instance-of v2, v0, Landroid/graphics/drawable/BitmapDrawable;
 
     if-eqz v2, :cond_0
 
-    .line 6
     invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 7
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 8
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingTile:Landroid/graphics/drawable/BitmapDrawable;
 
@@ -939,7 +845,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 9
     invoke-static {}, Lorg/osmdroid/tileprovider/BitmapPool;->getInstance()Lorg/osmdroid/tileprovider/BitmapPool;
 
     move-result-object v0
@@ -950,26 +855,21 @@
 
     invoke-virtual {v0, v2}, Lorg/osmdroid/tileprovider/BitmapPool;->returnDrawableToPool(Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;)V
 
-    .line 10
     :cond_1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingTile:Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 11
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->userSelectedLoadingDrawable:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_3
 
-    .line 12
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-ge v2, v1, :cond_2
 
-    .line 13
     instance-of v1, v0, Landroid/graphics/drawable/BitmapDrawable;
 
     if-eqz v1, :cond_2
 
-    .line 14
     check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
@@ -978,10 +878,8 @@
 
     if-eqz v0, :cond_2
 
-    .line 15
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 16
     :cond_2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->userSelectedLoadingDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -989,7 +887,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 17
     invoke-static {}, Lorg/osmdroid/tileprovider/BitmapPool;->getInstance()Lorg/osmdroid/tileprovider/BitmapPool;
 
     move-result-object v0
@@ -1000,7 +897,6 @@
 
     invoke-virtual {v0, v1}, Lorg/osmdroid/tileprovider/BitmapPool;->returnDrawableToPool(Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;)V
 
-    .line 18
     :cond_3
     iput-object p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->userSelectedLoadingDrawable:Landroid/graphics/drawable/Drawable;
 
@@ -1010,21 +906,18 @@
 .method public onOptionsItemSelected(Landroid/view/MenuItem;ILorg/osmdroid/views/MapView;)Z
     .locals 2
 
-    .line 1
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result p1
 
     sub-int/2addr p1, p2
 
-    .line 2
     sget p2, Lorg/osmdroid/views/overlay/TilesOverlay;->MENU_TILE_SOURCE_STARTING_ID:I
 
     const/4 v0, 0x1
 
     if-lt p1, p2, :cond_0
 
-    .line 3
     invoke-static {}, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->getTileSources()Ljava/util/List;
 
     move-result-object v1
@@ -1037,7 +930,6 @@
 
     if-ge p1, p2, :cond_0
 
-    .line 4
     invoke-static {}, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->getTileSources()Ljava/util/List;
 
     move-result-object p2
@@ -1056,20 +948,17 @@
 
     return v0
 
-    .line 5
     :cond_0
     sget p2, Lorg/osmdroid/views/overlay/TilesOverlay;->MENU_OFFLINE:I
 
     if-ne p1, p2, :cond_1
 
-    .line 6
     invoke-virtual {p3}, Lorg/osmdroid/views/MapView;->useDataConnection()Z
 
     move-result p1
 
     xor-int/2addr p1, v0
 
-    .line 7
     invoke-virtual {p3, p1}, Lorg/osmdroid/views/MapView;->setUseDataConnection(Z)V
 
     return v0
@@ -1083,12 +972,10 @@
 .method public onPrepareOptionsMenu(Landroid/view/Menu;ILorg/osmdroid/views/MapView;)Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->getTileSources()Ljava/util/List;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p3}, Lorg/osmdroid/views/MapView;->getTileProvider()Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     move-result-object v1
@@ -1097,7 +984,6 @@
 
     move-result-object v1
 
-    .line 3
     invoke-interface {v0, v1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
 
     move-result v0
@@ -1106,7 +992,6 @@
 
     if-ltz v0, :cond_0
 
-    .line 4
     sget v2, Lorg/osmdroid/views/overlay/TilesOverlay;->MENU_TILE_SOURCE_STARTING_ID:I
 
     add-int/2addr v2, v0
@@ -1119,7 +1004,6 @@
 
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setChecked(Z)Landroid/view/MenuItem;
 
-    .line 5
     :cond_0
     sget v0, Lorg/osmdroid/views/overlay/TilesOverlay;->MENU_OFFLINE:I
 
@@ -1129,7 +1013,6 @@
 
     move-result-object p1
 
-    .line 6
     invoke-virtual {p3}, Lorg/osmdroid/views/MapView;->useDataConnection()Z
 
     move-result p2
@@ -1143,7 +1026,6 @@
     :cond_1
     sget p2, Lorg/osmdroid/library/R$string;->set_mode_online:I
 
-    .line 7
     :goto_0
     invoke-interface {p1, p2}, Landroid/view/MenuItem;->setTitle(I)Landroid/view/MenuItem;
 
@@ -1153,12 +1035,10 @@
 .method protected onTileReadyToDraw(Landroid/graphics/Canvas;Landroid/graphics/drawable/Drawable;Landroid/graphics/Rect;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->currentColorFilter:Landroid/graphics/ColorFilter;
 
     invoke-virtual {p2, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mProjection:Lorg/osmdroid/views/Projection;
 
     iget v1, p3, Landroid/graphics/Rect;->left:I
@@ -1169,7 +1049,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lorg/osmdroid/views/Projection;->toPixelsFromMercator(IILandroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTilePointMercator:Landroid/graphics/Point;
 
     iget v1, v0, Landroid/graphics/Point;->x:I
@@ -1178,10 +1057,8 @@
 
     invoke-virtual {p3, v1, v0}, Landroid/graphics/Rect;->offsetTo(II)V
 
-    .line 4
     invoke-virtual {p2, p3}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
-    .line 5
     invoke-virtual {p2, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     return-void
@@ -1190,7 +1067,6 @@
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->currentColorFilter:Landroid/graphics/ColorFilter;
 
     return-void
@@ -1199,15 +1075,12 @@
 .method public setLoadingBackgroundColor(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingBackgroundColor:I
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingBackgroundColor:I
 
-    .line 3
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/TilesOverlay;->clearLoadingTile()V
 
     :cond_0
@@ -1217,7 +1090,6 @@
 .method public setLoadingDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->userSelectedLoadingDrawable:Landroid/graphics/drawable/Drawable;
 
     return-void
@@ -1226,15 +1098,12 @@
 .method public setLoadingLineColor(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingLineColor:I
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mLoadingLineColor:I
 
-    .line 3
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/TilesOverlay;->clearLoadingTile()V
 
     :cond_0
@@ -1244,7 +1113,6 @@
 .method public setOptionsMenuEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mOptionsMenuEnabled:Z
 
     return-void
@@ -1253,7 +1121,6 @@
 .method public setOvershootTileCache(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mOvershootTileCache:I
 
     return-void
@@ -1262,7 +1129,6 @@
 .method public setUseDataConnection(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {v0, p1}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->setUseDataConnection(Z)V
@@ -1273,7 +1139,6 @@
 .method public useDataConnection()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {v0}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->useDataConnection()Z

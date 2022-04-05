@@ -1,6 +1,5 @@
 .class Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay$1;
 .super Ljava/lang/Object;
-.source "GLRouteOverlay.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay$1;->this$0:Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;
 
     iput-boolean p2, p0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay$1;->val$isRefreshMap:Z
@@ -42,19 +40,16 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay$1;->this$0:Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;
 
     iget-wide v0, v0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1}, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;->access$000(J)V
 
-    .line 2
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay$1;->val$isRefreshMap:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay$1;->this$0:Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;
 
     iget-object v0, v0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;

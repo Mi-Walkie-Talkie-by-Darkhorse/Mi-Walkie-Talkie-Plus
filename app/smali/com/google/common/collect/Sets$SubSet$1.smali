@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Sets$SubSet$1;
 .super Lcom/google/common/collect/UnmodifiableIterator;
-.source "Sets.java"
 
 
 # annotations
@@ -40,12 +39,10 @@
 .method constructor <init>(Lcom/google/common/collect/Sets$SubSet;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Sets$SubSet$1;->this$0:Lcom/google/common/collect/Sets$SubSet;
 
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
 
-    .line 2
     iget-object p1, p0, Lcom/google/common/collect/Sets$SubSet$1;->this$0:Lcom/google/common/collect/Sets$SubSet;
 
     invoke-static {p1}, Lcom/google/common/collect/Sets$SubSet;->access$100(Lcom/google/common/collect/Sets$SubSet;)Lcom/google/common/collect/ImmutableMap;
@@ -62,7 +59,6 @@
 
     iput-object p1, p0, Lcom/google/common/collect/Sets$SubSet$1;->elements:Lcom/google/common/collect/ImmutableList;
 
-    .line 3
     iget-object p1, p0, Lcom/google/common/collect/Sets$SubSet$1;->this$0:Lcom/google/common/collect/Sets$SubSet;
 
     invoke-static {p1}, Lcom/google/common/collect/Sets$SubSet;->access$200(Lcom/google/common/collect/Sets$SubSet;)I
@@ -79,7 +75,6 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/Sets$SubSet$1;->remainingSetBits:I
 
     if-eqz v0, :cond_0
@@ -103,7 +98,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/Sets$SubSet$1;->remainingSetBits:I
 
     invoke-static {v0}, Ljava/lang/Integer;->numberOfTrailingZeros(I)I
@@ -114,7 +108,6 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     iget v1, p0, Lcom/google/common/collect/Sets$SubSet$1;->remainingSetBits:I
 
     const/4 v2, 0x1
@@ -127,7 +120,6 @@
 
     iput v1, p0, Lcom/google/common/collect/Sets$SubSet$1;->remainingSetBits:I
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/collect/Sets$SubSet$1;->elements:Lcom/google/common/collect/ImmutableList;
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -136,7 +128,6 @@
 
     return-object v0
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 

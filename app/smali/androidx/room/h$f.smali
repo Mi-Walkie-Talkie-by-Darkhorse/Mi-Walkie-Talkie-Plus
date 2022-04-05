@@ -1,6 +1,5 @@
 .class Landroidx/room/h$f;
 .super Landroidx/room/g$c;
-.source "MultiInstanceInvalidationClient.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/room/h;[Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/room/h$f;->b:Landroidx/room/h;
 
     invoke-direct {p0, p2}, Landroidx/room/g$c;-><init>([Ljava/lang/String;)V
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/room/h$f;->b:Landroidx/room/h;
 
     iget-object v0, v0, Landroidx/room/h;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -60,7 +57,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     :try_start_0
     iget-object v0, p0, Landroidx/room/h$f;->b:Landroidx/room/h;
@@ -69,7 +65,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object v1, p0, Landroidx/room/h$f;->b:Landroidx/room/h;
 
     iget v1, v1, Landroidx/room/h;->c:I
@@ -97,7 +92,6 @@
 
     const-string v1, "Cannot broadcast invalidation"
 
-    .line 4
     invoke-static {v0, v1, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_1

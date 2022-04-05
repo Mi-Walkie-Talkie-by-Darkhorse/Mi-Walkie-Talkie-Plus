@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/lifecycle/ReportFragment$a;
 .super Ljava/lang/Object;
-.source "ReportFragment.java"
 
 
 # annotations

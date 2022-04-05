@@ -1,6 +1,5 @@
 .class Lio/reactivex/internal/schedulers/SchedulerWhen$ImmediateAction;
 .super Lio/reactivex/internal/schedulers/SchedulerWhen$ScheduledAction;
-.source "SchedulerWhen.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method constructor <init>(Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/internal/schedulers/SchedulerWhen$ScheduledAction;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/schedulers/SchedulerWhen$ImmediateAction;->action:Ljava/lang/Runnable;
 
     return-void
@@ -36,7 +33,6 @@
 .method protected callActual(Lio/reactivex/Scheduler$Worker;Lio/reactivex/CompletableObserver;)Lio/reactivex/disposables/Disposable;
     .locals 2
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/schedulers/SchedulerWhen$OnCompletedAction;
 
     iget-object v1, p0, Lio/reactivex/internal/schedulers/SchedulerWhen$ImmediateAction;->action:Ljava/lang/Runnable;

@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$b;
 .super Ljava/lang/Object;
-.source "SelectCountryActivity.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemClickListener;
@@ -32,10 +31,8 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$b;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -55,7 +52,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$b;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
     invoke-static {p1}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->c(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;
@@ -72,13 +68,11 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p2, Landroid/content/Intent;
 
     invoke-direct {p2}, Landroid/content/Intent;-><init>()V
 
-    .line 3
     invoke-virtual {p1}, Lcom/sina/weibo/sdk/register/mobile/Country;->a()Ljava/lang/String;
 
     move-result-object p3
@@ -87,7 +81,6 @@
 
     invoke-virtual {p2, p4, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 4
     invoke-virtual {p1}, Lcom/sina/weibo/sdk/register/mobile/Country;->b()Ljava/lang/String;
 
     move-result-object p1
@@ -96,14 +89,12 @@
 
     invoke-virtual {p2, p3, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 5
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$b;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
     const/4 p3, -0x1
 
     invoke-virtual {p1, p3, p2}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
-    .line 6
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$b;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V

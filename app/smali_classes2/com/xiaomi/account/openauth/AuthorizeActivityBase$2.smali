@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/openauth/AuthorizeActivityBase$2;
 .super Ljava/lang/Object;
-.source "AuthorizeActivityBase.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/xiaomi/account/openauth/AuthorizeActivityBase;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/openauth/AuthorizeActivityBase$2;->this$0:Lcom/xiaomi/account/openauth/AuthorizeActivityBase;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/account/openauth/AuthorizeActivityBase$2;->this$0:Lcom/xiaomi/account/openauth/AuthorizeActivityBase;
 
     invoke-virtual {v0}, Lcom/xiaomi/account/openauth/AuthorizeActivityBase;->onHideErrorUI()V

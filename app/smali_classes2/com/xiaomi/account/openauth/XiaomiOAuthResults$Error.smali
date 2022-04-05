@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/openauth/XiaomiOAuthResults$Error;
 .super Ljava/lang/Object;
-.source "XiaomiOAuthResults.java"
 
 
 # annotations
@@ -24,13 +23,10 @@
 .method public constructor <init>(ILjava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthResults$Error;->errorCode:I
 
-    .line 3
     iput-object p2, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthResults$Error;->errorMessage:Ljava/lang/String;
 
     return-void
@@ -39,7 +35,6 @@
 .method static synthetic access$300(Landroid/os/Bundle;)Lcom/xiaomi/account/openauth/XiaomiOAuthResults$Error;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults$Error;->parseBundle(Landroid/os/Bundle;)Lcom/xiaomi/account/openauth/XiaomiOAuthResults$Error;
 
     move-result-object p0
@@ -54,7 +49,6 @@
 
     const-string v1, "error"
 
-    .line 1
     invoke-static {p0, v0, v1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->access$200(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
@@ -63,12 +57,10 @@
 
     const-string v2, "error_description"
 
-    .line 2
     invoke-static {p0, v1, v2}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->access$000(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 3
     new-instance v1, Lcom/xiaomi/account/openauth/XiaomiOAuthResults$Error;
 
     invoke-direct {v1, v0, p0}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults$Error;-><init>(ILjava/lang/String;)V
@@ -81,7 +73,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

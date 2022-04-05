@@ -1,6 +1,5 @@
 .class Lcom/google/protobuf/CodedInputStream$SkippedDataSink;
 .super Ljava/lang/Object;
-.source "CodedInputStream.java"
 
 # interfaces
 .implements Lcom/google/protobuf/CodedInputStream$RefillCallback;
@@ -29,12 +28,10 @@
 .method private constructor <init>(Lcom/google/protobuf/CodedInputStream;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/CodedInputStream$SkippedDataSink;->this$0:Lcom/google/protobuf/CodedInputStream;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iget-object p1, p0, Lcom/google/protobuf/CodedInputStream$SkippedDataSink;->this$0:Lcom/google/protobuf/CodedInputStream;
 
     invoke-static {p1}, Lcom/google/protobuf/CodedInputStream;->access$000(Lcom/google/protobuf/CodedInputStream;)I
@@ -51,12 +48,10 @@
 .method getSkippedData()Ljava/nio/ByteBuffer;
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/CodedInputStream$SkippedDataSink;->byteArrayStream:Ljava/io/ByteArrayOutputStream;
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/CodedInputStream$SkippedDataSink;->this$0:Lcom/google/protobuf/CodedInputStream;
 
     invoke-static {v0}, Lcom/google/protobuf/CodedInputStream;->access$100(Lcom/google/protobuf/CodedInputStream;)[B
@@ -81,7 +76,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lcom/google/protobuf/CodedInputStream$SkippedDataSink;->this$0:Lcom/google/protobuf/CodedInputStream;
 
@@ -99,7 +93,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
-    .line 4
     iget-object v0, p0, Lcom/google/protobuf/CodedInputStream$SkippedDataSink;->byteArrayStream:Ljava/io/ByteArrayOutputStream;
 
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
@@ -116,19 +109,16 @@
 .method public onRefill()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/CodedInputStream$SkippedDataSink;->byteArrayStream:Ljava/io/ByteArrayOutputStream;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     iput-object v0, p0, Lcom/google/protobuf/CodedInputStream$SkippedDataSink;->byteArrayStream:Ljava/io/ByteArrayOutputStream;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/CodedInputStream$SkippedDataSink;->byteArrayStream:Ljava/io/ByteArrayOutputStream;
 
@@ -154,7 +144,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     iput v0, p0, Lcom/google/protobuf/CodedInputStream$SkippedDataSink;->lastPos:I
 
     return-void

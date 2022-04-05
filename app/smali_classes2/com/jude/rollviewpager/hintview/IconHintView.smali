@@ -1,6 +1,5 @@
 .class public Lcom/jude/rollviewpager/hintview/IconHintView;
 .super Lcom/jude/rollviewpager/hintview/ShapeHintView;
-.source "IconHintView.java"
 
 
 # instance fields
@@ -15,17 +14,14 @@
 .method private a(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
     .locals 5
 
-    .line 11
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v0
 
-    .line 12
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v1
 
-    .line 13
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getOpacity()I
 
     move-result v2
@@ -41,23 +37,19 @@
     :cond_0
     sget-object v2, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
-    .line 14
     :goto_0
     invoke-static {v0, v1, v2}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    .line 15
     new-instance v3, Landroid/graphics/Canvas;
 
     invoke-direct {v3, v2}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
     const/4 v4, 0x0
 
-    .line 16
     invoke-virtual {p1, v4, v4, v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 17
     invoke-virtual {p1, v3}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     return-object v2
@@ -66,22 +58,18 @@
 .method private a(Landroid/graphics/drawable/Drawable;II)Landroid/graphics/drawable/Drawable;
     .locals 7
 
-    .line 4
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v3
 
-    .line 5
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v4
 
-    .line 6
     invoke-direct {p0, p1}, Lcom/jude/rollviewpager/hintview/IconHintView;->a(Landroid/graphics/drawable/Drawable;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 7
     new-instance v5, Landroid/graphics/Matrix;
 
     invoke-direct {v5}, Landroid/graphics/Matrix;-><init>()V
@@ -98,7 +86,6 @@
 
     div-float/2addr p2, p3
 
-    .line 8
     invoke-virtual {v5, p1, p2}, Landroid/graphics/Matrix;->postScale(FF)Z
 
     const/4 v1, 0x0
@@ -107,12 +94,10 @@
 
     const/4 v6, 0x1
 
-    .line 9
     invoke-static/range {v0 .. v6}, Landroid/graphics/Bitmap;->createBitmap(Landroid/graphics/Bitmap;IIIILandroid/graphics/Matrix;Z)Landroid/graphics/Bitmap;
 
     move-result-object p1
 
-    .line 10
     new-instance p2, Landroid/graphics/drawable/BitmapDrawable;
 
     const/4 p3, 0x0
@@ -127,7 +112,6 @@
 .method public a()Landroid/graphics/drawable/Drawable;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -142,12 +126,10 @@
 
     move-result-object v0
 
-    .line 2
     iget v1, p0, Lcom/jude/rollviewpager/hintview/IconHintView;->h:I
 
     if-lez v1, :cond_0
 
-    .line 3
     invoke-direct {p0, v0, v1, v1}, Lcom/jude/rollviewpager/hintview/IconHintView;->a(Landroid/graphics/drawable/Drawable;II)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -159,7 +141,6 @@
 .method public b()Landroid/graphics/drawable/Drawable;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -174,12 +155,10 @@
 
     move-result-object v0
 
-    .line 2
     iget v1, p0, Lcom/jude/rollviewpager/hintview/IconHintView;->h:I
 
     if-lez v1, :cond_0
 
-    .line 3
     invoke-direct {p0, v0, v1, v1}, Lcom/jude/rollviewpager/hintview/IconHintView;->a(Landroid/graphics/drawable/Drawable;II)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0

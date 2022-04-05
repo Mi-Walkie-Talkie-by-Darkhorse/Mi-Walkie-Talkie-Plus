@@ -1,6 +1,5 @@
 .class public final Lcom/efs/sdk/base/a/h/a/d;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1
     new-instance v8, Ljava/util/concurrent/ThreadPoolExecutor;
 
     sget-object v5, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
@@ -57,7 +55,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     sget-object v0, Lcom/efs/sdk/base/a/h/a/d;->a:Ljava/util/concurrent/ThreadPoolExecutor;
 
@@ -76,7 +73,6 @@
 
     const-string v1, "submit task error!"
 
-    .line 2
     invoke-static {v0, v1, p0}, Lcom/efs/sdk/base/a/h/d;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     const/4 p0, 0x0

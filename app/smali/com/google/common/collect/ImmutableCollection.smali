@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/ImmutableCollection;
 .super Ljava/util/AbstractCollection;
-.source "ImmutableCollection.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -45,7 +44,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
 
     return-void
@@ -64,7 +62,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -85,7 +82,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -103,12 +99,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableCollection;->asList:Lcom/google/common/collect/ImmutableList;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->createAsList()Lcom/google/common/collect/ImmutableList;
 
     move-result-object v0
@@ -124,7 +118,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -141,7 +134,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-super {p0, p1}, Ljava/util/AbstractCollection;->contains(Ljava/lang/Object;)Z
 
     move-result p1
@@ -162,7 +154,6 @@
 .method copyIntoArray([Ljava/lang/Object;I)I
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -180,7 +171,6 @@
 
     add-int/lit8 v2, p2, 0x1
 
-    .line 2
     aput-object v1, p1, p2
 
     move p2, v2
@@ -201,7 +191,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
@@ -212,7 +201,6 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/RegularImmutableAsList;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->toArray()[Ljava/lang/Object;
@@ -223,7 +211,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
@@ -239,7 +226,6 @@
 
     return-object v0
 
-    .line 4
     :cond_1
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
 
@@ -264,7 +250,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -277,7 +262,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -298,7 +282,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -319,7 +302,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -330,25 +312,21 @@
 .method public final toArray()[Ljava/lang/Object;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     sget-object v0, Lcom/google/common/collect/ObjectArrays;->EMPTY_ARRAY:[Ljava/lang/Object;
 
     return-object v0
 
-    .line 3
     :cond_0
     new-array v0, v0, [Ljava/lang/Object;
 
     const/4 v1, 0x0
 
-    .line 4
     invoke-virtual {p0, v0, v1}, Lcom/google/common/collect/ImmutableCollection;->copyIntoArray([Ljava/lang/Object;I)I
 
     return-object v0
@@ -364,27 +342,22 @@
         }
     .end annotation
 
-    .line 5
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
 
-    .line 7
     array-length v1, p1
 
     if-ge v1, v0, :cond_0
 
-    .line 8
     invoke-static {p1, v0}, Lcom/google/common/collect/ObjectArrays;->newArray([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object p1
 
     goto :goto_0
 
-    .line 9
     :cond_0
     array-length v1, p1
 
@@ -392,14 +365,12 @@
 
     const/4 v1, 0x0
 
-    .line 10
     aput-object v1, p1, v0
 
     :cond_1
     :goto_0
     const/4 v0, 0x0
 
-    .line 11
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/ImmutableCollection;->copyIntoArray([Ljava/lang/Object;I)I
 
     return-object p1
@@ -408,7 +379,6 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ImmutableList$SerializedForm;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->toArray()[Ljava/lang/Object;

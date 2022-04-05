@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/tabs/TabLayout$ViewPagerOnTabSelectedListener;
 .super Ljava/lang/Object;
-.source "TabLayout.java"
 
 # interfaces
 .implements Lcom/google/android/material/tabs/TabLayout$OnTabSelectedListener;
@@ -25,10 +24,8 @@
 .method public constructor <init>(Landroidx/viewpager/widget/ViewPager;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$ViewPagerOnTabSelectedListener;->viewPager:Landroidx/viewpager/widget/ViewPager;
 
     return-void
@@ -49,7 +46,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$ViewPagerOnTabSelectedListener;->viewPager:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {p1}, Lcom/google/android/material/tabs/TabLayout$Tab;->getPosition()I

@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo$1;
 .super Ljava/lang/Object;
-.source "MiAccountPhoneInfo.java"
 
 # interfaces
 .implements Lcom/xiaomi/phonenum/PhoneNumKeeper$SetupFinishedListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo$1;->this$0:Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

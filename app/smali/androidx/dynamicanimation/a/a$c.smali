@@ -1,6 +1,5 @@
 .class abstract Landroidx/dynamicanimation/a/a$c;
 .super Ljava/lang/Object;
-.source "AnimationHandler.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method constructor <init>(Landroidx/dynamicanimation/a/a$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/dynamicanimation/a/a$c;->a:Landroidx/dynamicanimation/a/a$a;
 
     return-void

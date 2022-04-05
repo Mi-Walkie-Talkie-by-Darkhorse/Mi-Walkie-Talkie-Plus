@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/hq$1;
 .super Ljava/lang/Object;
-.source "DynamicLoader.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/hq;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/hq$1;->d:Lcom/amap/api/col/l3/hq;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/hq$1;->a:Landroid/content/Context;
@@ -50,7 +48,6 @@
 .method public final run()V
     .locals 4
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/hq$1;->d:Lcom/amap/api/col/l3/hq;
 
@@ -73,7 +70,6 @@
 
     const-string v2, "run()"
 
-    .line 2
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

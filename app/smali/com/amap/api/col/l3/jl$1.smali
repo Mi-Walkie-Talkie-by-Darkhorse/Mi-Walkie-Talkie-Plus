@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/jl$1;
 .super Landroid/telephony/PhoneStateListener;
-.source "CgiManager.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/jl;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/jl$1;->a:Lcom/amap/api/col/l3/jl;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
@@ -35,7 +33,6 @@
 .method public final onCellLocationChanged(Landroid/telephony/CellLocation;)V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jl$1;->a:Lcom/amap/api/col/l3/jl;
 
@@ -47,20 +44,17 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jl$1;->a:Lcom/amap/api/col/l3/jl;
 
     iput-object p1, v0, Lcom/amap/api/col/l3/jl;->e:Landroid/telephony/CellLocation;
 
-    .line 3
     iget-object p1, p0, Lcom/amap/api/col/l3/jl$1;->a:Lcom/amap/api/col/l3/jl;
 
     const/4 v0, 0x1
 
     iput-boolean v0, p1, Lcom/amap/api/col/l3/jl;->f:Z
 
-    .line 4
     iget-object p1, p0, Lcom/amap/api/col/l3/jl$1;->a:Lcom/amap/api/col/l3/jl;
 
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
@@ -78,7 +72,6 @@
 .method public final onServiceStateChanged(Landroid/telephony/ServiceState;)V
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Landroid/telephony/ServiceState;->getState()I
 
@@ -92,7 +85,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/amap/api/col/l3/jl$1;->a:Lcom/amap/api/col/l3/jl;
 
@@ -100,7 +92,6 @@
 
     return-void
 
-    .line 3
     :cond_1
     iget-object p1, p0, Lcom/amap/api/col/l3/jl$1;->a:Lcom/amap/api/col/l3/jl;
 
@@ -120,7 +111,6 @@
 
     const/16 v0, -0x71
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/jl$1;->a:Lcom/amap/api/col/l3/jl;
 
@@ -136,7 +126,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-static {p1}, Lcom/amap/api/col/l3/ki;->a(I)I
 
@@ -144,13 +133,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     invoke-static {p1}, Lcom/amap/api/col/l3/ki;->a(I)I
 
     move-result v0
 
-    .line 4
     :goto_0
     iget-object p1, p0, Lcom/amap/api/col/l3/jl$1;->a:Lcom/amap/api/col/l3/jl;
 
@@ -172,7 +159,6 @@
     :cond_0
     const/16 v0, -0x71
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/jl$1;->a:Lcom/amap/api/col/l3/jl;
 
@@ -188,7 +174,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     invoke-virtual {p1}, Landroid/telephony/SignalStrength;->getCdmaDbm()I
 
@@ -196,7 +181,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_2
     invoke-virtual {p1}, Landroid/telephony/SignalStrength;->getGsmSignalStrength()I
 
@@ -206,7 +190,6 @@
 
     move-result v0
 
-    .line 4
     :goto_0
     iget-object p1, p0, Lcom/amap/api/col/l3/jl$1;->a:Lcom/amap/api/col/l3/jl;
 

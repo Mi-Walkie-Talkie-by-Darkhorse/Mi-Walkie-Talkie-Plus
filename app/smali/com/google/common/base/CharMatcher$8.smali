@@ -1,6 +1,5 @@
 .class final Lcom/google/common/base/CharMatcher$8;
 .super Lcom/google/common/base/CharMatcher$FastMatcher;
-.source "CharMatcher.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/base/CharMatcher$FastMatcher;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -29,7 +27,6 @@
 .method public and(Lcom/google/common/base/CharMatcher;)Lcom/google/common/base/CharMatcher;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object p0
@@ -38,7 +35,6 @@
 .method public collapseFrom(Ljava/lang/CharSequence;C)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -49,7 +45,6 @@
 .method public countIn(Ljava/lang/CharSequence;)I
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 p1, 0x0
@@ -60,7 +55,6 @@
 .method public indexIn(Ljava/lang/CharSequence;)I
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 p1, -0x1
@@ -71,12 +65,10 @@
 .method public indexIn(Ljava/lang/CharSequence;I)I
     .locals 0
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result p1
 
-    .line 3
     invoke-static {p2, p1}, Lcom/google/common/base/Preconditions;->checkPositionIndex(II)I
 
     const/4 p1, -0x1
@@ -87,7 +79,6 @@
 .method public lastIndexIn(Ljava/lang/CharSequence;)I
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 p1, -0x1
@@ -106,7 +97,6 @@
 .method public matchesAllOf(Ljava/lang/CharSequence;)Z
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result p1
@@ -127,7 +117,6 @@
 .method public matchesNoneOf(Ljava/lang/CharSequence;)Z
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 p1, 0x1
@@ -138,7 +127,6 @@
 .method public negate()Lcom/google/common/base/CharMatcher;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/base/CharMatcher;->ANY:Lcom/google/common/base/CharMatcher;
 
     return-object v0
@@ -147,7 +135,6 @@
 .method public or(Lcom/google/common/base/CharMatcher;)Lcom/google/common/base/CharMatcher;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -160,7 +147,6 @@
 .method public removeFrom(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -171,7 +157,6 @@
 .method public replaceFrom(Ljava/lang/CharSequence;C)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -182,10 +167,8 @@
 .method public replaceFrom(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 0
 
-    .line 2
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -196,7 +179,6 @@
 .method public trimFrom(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -207,7 +189,6 @@
 .method public trimLeadingFrom(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -218,7 +199,6 @@
 .method public trimTrailingFrom(Ljava/lang/CharSequence;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1

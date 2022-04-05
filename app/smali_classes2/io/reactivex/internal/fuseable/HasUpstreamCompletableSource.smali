@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/internal/fuseable/HasUpstreamCompletableSource;
 .super Ljava/lang/Object;
-.source "HasUpstreamCompletableSource.java"
 
 
 # virtual methods

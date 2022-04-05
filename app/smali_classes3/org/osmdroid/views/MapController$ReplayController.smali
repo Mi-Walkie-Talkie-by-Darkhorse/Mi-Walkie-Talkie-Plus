@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/views/MapController$ReplayController;
 .super Ljava/lang/Object;
-.source "MapController.java"
 
 
 # annotations
@@ -38,12 +37,10 @@
 .method private constructor <init>(Lorg/osmdroid/views/MapController;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/MapController$ReplayController;->this$0:Lorg/osmdroid/views/MapController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance p1, Ljava/util/LinkedList;
 
     invoke-direct {p1}, Ljava/util/LinkedList;-><init>()V
@@ -56,7 +53,6 @@
 .method synthetic constructor <init>(Lorg/osmdroid/views/MapController;Lorg/osmdroid/views/MapController$1;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1}, Lorg/osmdroid/views/MapController$ReplayController;-><init>(Lorg/osmdroid/views/MapController;)V
 
     return-void
@@ -67,7 +63,6 @@
 .method public animateTo(II)V
     .locals 4
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/MapController$ReplayController;->mReplayList:Ljava/util/LinkedList;
 
     new-instance v1, Lorg/osmdroid/views/MapController$ReplayController$ReplayClass;
@@ -90,7 +85,6 @@
 .method public animateTo(Lorg/osmdroid/api/IGeoPoint;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController$ReplayController;->mReplayList:Ljava/util/LinkedList;
 
     new-instance v1, Lorg/osmdroid/views/MapController$ReplayController$ReplayClass;
@@ -109,7 +103,6 @@
 .method public replayCalls()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController$ReplayController;->mReplayList:Ljava/util/LinkedList;
 
     invoke-virtual {v0}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
@@ -129,7 +122,6 @@
 
     check-cast v1, Lorg/osmdroid/views/MapController$ReplayController$ReplayClass;
 
-    .line 2
     sget-object v2, Lorg/osmdroid/views/MapController$1;->$SwitchMap$org$osmdroid$views$MapController$ReplayType:[I
 
     invoke-static {v1}, Lorg/osmdroid/views/MapController$ReplayController$ReplayClass;->access$100(Lorg/osmdroid/views/MapController$ReplayController$ReplayClass;)Lorg/osmdroid/views/MapController$ReplayType;
@@ -160,7 +152,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v2, p0, Lorg/osmdroid/views/MapController$ReplayController;->this$0:Lorg/osmdroid/views/MapController;
 
@@ -180,7 +171,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object v2, p0, Lorg/osmdroid/views/MapController$ReplayController;->this$0:Lorg/osmdroid/views/MapController;
 
@@ -192,7 +182,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     iget-object v2, p0, Lorg/osmdroid/views/MapController$ReplayController;->this$0:Lorg/osmdroid/views/MapController;
 
@@ -212,7 +201,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_3
     iget-object v2, p0, Lorg/osmdroid/views/MapController$ReplayController;->this$0:Lorg/osmdroid/views/MapController;
 
@@ -224,7 +212,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_4
     iget-object v0, p0, Lorg/osmdroid/views/MapController$ReplayController;->mReplayList:Ljava/util/LinkedList;
 
@@ -236,7 +223,6 @@
 .method public setCenter(Lorg/osmdroid/api/IGeoPoint;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController$ReplayController;->mReplayList:Ljava/util/LinkedList;
 
     new-instance v1, Lorg/osmdroid/views/MapController$ReplayController$ReplayClass;
@@ -255,7 +241,6 @@
 .method public zoomToSpan(DD)V
     .locals 6
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/MapController$ReplayController;->mReplayList:Ljava/util/LinkedList;
 
     new-instance v1, Lorg/osmdroid/views/MapController$ReplayController$ReplayClass;
@@ -288,7 +273,6 @@
 .method public zoomToSpan(II)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController$ReplayController;->mReplayList:Ljava/util/LinkedList;
 
     new-instance v1, Lorg/osmdroid/views/MapController$ReplayController$ReplayClass;

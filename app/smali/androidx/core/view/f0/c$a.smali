@@ -1,6 +1,5 @@
 .class final Landroidx/core/view/f0/c$a;
 .super Ljava/lang/Object;
-.source "InputContentInfoCompat.java"
 
 # interfaces
 .implements Landroidx/core/view/f0/c$c;
@@ -44,10 +43,8 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     new-instance v0, Landroid/view/inputmethod/InputContentInfo;
 
     invoke-direct {v0, p1, p2, p3}, Landroid/view/inputmethod/InputContentInfo;-><init>(Landroid/net/Uri;Landroid/content/ClipDescription;Landroid/net/Uri;)V
@@ -64,10 +61,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     check-cast p1, Landroid/view/inputmethod/InputContentInfo;
 
     iput-object p1, p0, Landroidx/core/view/f0/c$a;->a:Landroid/view/inputmethod/InputContentInfo;
@@ -82,7 +77,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c$a;->a:Landroid/view/inputmethod/InputContentInfo;
 
     invoke-virtual {v0}, Landroid/view/inputmethod/InputContentInfo;->getContentUri()Landroid/net/Uri;
@@ -95,7 +89,6 @@
 .method public b()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c$a;->a:Landroid/view/inputmethod/InputContentInfo;
 
     invoke-virtual {v0}, Landroid/view/inputmethod/InputContentInfo;->requestPermission()V
@@ -108,7 +101,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c$a;->a:Landroid/view/inputmethod/InputContentInfo;
 
     invoke-virtual {v0}, Landroid/view/inputmethod/InputContentInfo;->getLinkUri()Landroid/net/Uri;
@@ -123,7 +115,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c$a;->a:Landroid/view/inputmethod/InputContentInfo;
 
     invoke-virtual {v0}, Landroid/view/inputmethod/InputContentInfo;->getDescription()Landroid/content/ClipDescription;
@@ -138,7 +129,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c$a;->a:Landroid/view/inputmethod/InputContentInfo;
 
     return-object v0

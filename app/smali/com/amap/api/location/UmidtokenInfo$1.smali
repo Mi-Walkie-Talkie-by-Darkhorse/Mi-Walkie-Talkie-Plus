@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/location/UmidtokenInfo$1;
 .super Ljava/lang/Object;
-.source "UmidtokenInfo.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {}, Lcom/amap/api/location/UmidtokenInfo;->a()Lcom/amap/api/location/AMapLocationClient;
 
@@ -40,7 +37,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/amap/api/location/UmidtokenInfo;->a()Lcom/amap/api/location/AMapLocationClient;
 
     move-result-object v0
@@ -59,7 +55,6 @@
 
     const-string v2, "postDelayed"
 
-    .line 3
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

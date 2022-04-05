@@ -1,6 +1,5 @@
 .class Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;
 .super Ljava/lang/Object;
-.source "GeneratedMessage.java"
 
 # interfaces
 .implements Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$FieldAccessor;
@@ -71,13 +70,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->field:Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getContainingOneof()Lcom/google/protobuf/Descriptors$OneofDescriptor;
 
     move-result-object v0
@@ -98,7 +94,6 @@
     :goto_0
     iput-boolean v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->isOneofField:Z
 
-    .line 4
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getFile()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -135,7 +130,6 @@
     :goto_2
     iput-boolean p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->hasHasMethod:Z
 
-    .line 5
     invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -168,7 +162,6 @@
 
     iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->getMethod:Ljava/lang/reflect/Method;
 
-    .line 6
     invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -199,7 +192,6 @@
 
     iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->getMethodBuilder:Ljava/lang/reflect/Method;
 
-    .line 7
     iget-object p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->getMethod:Ljava/lang/reflect/Method;
 
     invoke-virtual {p1}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
@@ -210,7 +202,6 @@
 
     const-string p1, "set"
 
-    .line 8
     invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -247,7 +238,6 @@
 
     iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->setMethod:Ljava/lang/reflect/Method;
 
-    .line 9
     iget-boolean p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->hasHasMethod:Z
 
     const-string v0, "has"
@@ -292,7 +282,6 @@
     :goto_7
     iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->hasMethod:Ljava/lang/reflect/Method;
 
-    .line 10
     iget-boolean p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->hasHasMethod:Z
 
     if-eqz p1, :cond_9
@@ -335,7 +324,6 @@
 
     const-string p1, "clear"
 
-    .line 11
     invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2
@@ -368,7 +356,6 @@
 
     iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->clearMethod:Ljava/lang/reflect/Method;
 
-    .line 12
     iget-boolean p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->isOneofField:Z
 
     const-string p2, "Case"
@@ -417,7 +404,6 @@
     :goto_b
     iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->caseMethod:Ljava/lang/reflect/Method;
 
-    .line 13
     iget-boolean p1, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->isOneofField:Z
 
     if-eqz p1, :cond_c
@@ -465,7 +451,6 @@
 .method private getOneofFieldNumber(Lcom/google/protobuf/GeneratedMessage$Builder;)I
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->caseMethodBuilder:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
@@ -488,7 +473,6 @@
 .method private getOneofFieldNumber(Lcom/google/protobuf/GeneratedMessage;)I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->caseMethod:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
@@ -513,7 +497,6 @@
 .method public addRepeated(Lcom/google/protobuf/GeneratedMessage$Builder;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "addRepeatedField() called on a singular field."
@@ -526,7 +509,6 @@
 .method public clear(Lcom/google/protobuf/GeneratedMessage$Builder;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->clearMethod:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
@@ -541,7 +523,6 @@
 .method public get(Lcom/google/protobuf/GeneratedMessage$Builder;)Ljava/lang/Object;
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->getMethodBuilder:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
@@ -558,7 +539,6 @@
 .method public get(Lcom/google/protobuf/GeneratedMessage;)Ljava/lang/Object;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->getMethod:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
@@ -575,7 +555,6 @@
 .method public getBuilder(Lcom/google/protobuf/GeneratedMessage$Builder;)Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "getFieldBuilder() called on a non-Message type."
@@ -588,7 +567,6 @@
 .method public getRepeated(Lcom/google/protobuf/GeneratedMessage$Builder;I)Ljava/lang/Object;
     .locals 0
 
-    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "getRepeatedField() called on a singular field."
@@ -601,7 +579,6 @@
 .method public getRepeated(Lcom/google/protobuf/GeneratedMessage;I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "getRepeatedField() called on a singular field."
@@ -614,7 +591,6 @@
 .method public getRepeatedCount(Lcom/google/protobuf/GeneratedMessage$Builder;)I
     .locals 1
 
-    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "getRepeatedFieldSize() called on a singular field."
@@ -627,7 +603,6 @@
 .method public getRepeatedCount(Lcom/google/protobuf/GeneratedMessage;)I
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "getRepeatedFieldSize() called on a singular field."
@@ -640,21 +615,18 @@
 .method public has(Lcom/google/protobuf/GeneratedMessage$Builder;)Z
     .locals 3
 
-    .line 6
     iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->hasHasMethod:Z
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_2
 
-    .line 7
     iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->isOneofField:Z
 
     const/4 v2, 0x1
 
     if-eqz v0, :cond_1
 
-    .line 8
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->getOneofFieldNumber(Lcom/google/protobuf/GeneratedMessage$Builder;)I
 
     move-result p1
@@ -672,7 +644,6 @@
     :cond_0
     return v1
 
-    .line 9
     :cond_1
     invoke-virtual {p0, p1}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->get(Lcom/google/protobuf/GeneratedMessage$Builder;)Ljava/lang/Object;
 
@@ -692,7 +663,6 @@
 
     return p1
 
-    .line 10
     :cond_2
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->hasMethodBuilder:Ljava/lang/reflect/Method;
 
@@ -714,21 +684,18 @@
 .method public has(Lcom/google/protobuf/GeneratedMessage;)Z
     .locals 3
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->hasHasMethod:Z
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_2
 
-    .line 2
     iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->isOneofField:Z
 
     const/4 v2, 0x1
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->getOneofFieldNumber(Lcom/google/protobuf/GeneratedMessage;)I
 
     move-result p1
@@ -746,7 +713,6 @@
     :cond_0
     return v1
 
-    .line 4
     :cond_1
     invoke-virtual {p0, p1}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->get(Lcom/google/protobuf/GeneratedMessage;)Ljava/lang/Object;
 
@@ -766,7 +732,6 @@
 
     return p1
 
-    .line 5
     :cond_2
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->hasMethod:Ljava/lang/reflect/Method;
 
@@ -788,7 +753,6 @@
 .method public newBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "newBuilderForField() called on a non-Message type."
@@ -801,7 +765,6 @@
 .method public set(Lcom/google/protobuf/GeneratedMessage$Builder;Ljava/lang/Object;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$SingularFieldAccessor;->setMethod:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x1
@@ -820,7 +783,6 @@
 .method public setRepeated(Lcom/google/protobuf/GeneratedMessage$Builder;ILjava/lang/Object;)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "setRepeatedField() called on a singular field."

@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/collect/MinMaxPriorityQueue;
 .super Ljava/util/AbstractQueue;
-.source "MinMaxPriorityQueue.java"
 
 
 # annotations
@@ -77,22 +76,18 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/util/AbstractQueue;-><init>()V
 
-    .line 3
     invoke-static {p1}, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;->access$200(Lcom/google/common/collect/MinMaxPriorityQueue$Builder;)Lcom/google/common/collect/Ordering;
 
     move-result-object v0
 
-    .line 4
     new-instance v1, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;-><init>(Lcom/google/common/collect/MinMaxPriorityQueue;Lcom/google/common/collect/Ordering;)V
 
     iput-object v1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->minHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
-    .line 5
     new-instance v1, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/Ordering;->reverse()Lcom/google/common/collect/Ordering;
@@ -103,22 +98,18 @@
 
     iput-object v1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->maxHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
-    .line 6
     iget-object v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->minHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     iput-object v1, v0, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->otherHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
-    .line 7
     iput-object v0, v1, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->otherHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
-    .line 8
     invoke-static {p1}, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;->access$300(Lcom/google/common/collect/MinMaxPriorityQueue$Builder;)I
 
     move-result p1
 
     iput p1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->maximumSize:I
 
-    .line 9
     new-array p1, p2, [Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
@@ -129,7 +120,6 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/MinMaxPriorityQueue$Builder;ILcom/google/common/collect/MinMaxPriorityQueue$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/MinMaxPriorityQueue;-><init>(Lcom/google/common/collect/MinMaxPriorityQueue$Builder;I)V
 
     return-void
@@ -138,7 +128,6 @@
 .method static synthetic access$500(Lcom/google/common/collect/MinMaxPriorityQueue;)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     return-object p0
@@ -147,7 +136,6 @@
 .method static synthetic access$600(Lcom/google/common/collect/MinMaxPriorityQueue;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     return p0
@@ -156,7 +144,6 @@
 .method static synthetic access$700(Lcom/google/common/collect/MinMaxPriorityQueue;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->modCount:I
 
     return p0
@@ -165,7 +152,6 @@
 .method private calculateNewCapacity()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -180,7 +166,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     div-int/lit8 v0, v0, 0x2
 
@@ -190,7 +175,6 @@
 
     move-result v0
 
-    .line 3
     :goto_0
     iget v1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->maximumSize:I
 
@@ -206,7 +190,6 @@
 
     add-int/lit8 p0, p0, -0x1
 
-    .line 1
     invoke-static {p0, p1}, Ljava/lang/Math;->min(II)I
 
     move-result p0
@@ -228,7 +211,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
 
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
@@ -260,7 +242,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
 
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
@@ -289,7 +270,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
 
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
@@ -317,24 +297,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->heapForIndex(I)Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->fillHoleAt(I)I
 
     move-result v1
 
-    .line 3
     invoke-virtual {v0, v1, p2}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->bubbleUpAlternatingLevels(ILjava/lang/Object;)I
 
     move-result v2
 
     if-ne v2, v1, :cond_0
 
-    .line 4
     invoke-virtual {v0, p1, v1, p2}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->tryCrossOverAndBubbleUp(IILjava/lang/Object;)Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
     move-result-object p1
@@ -344,7 +320,6 @@
     :cond_0
     if-ge v2, p1, :cond_1
 
-    .line 5
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->elementData(I)Ljava/lang/Object;
@@ -365,7 +340,6 @@
 .method private getMaxElementIndex()I
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     const/4 v1, 0x1
@@ -376,7 +350,6 @@
 
     if-eq v0, v2, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->maxHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     invoke-virtual {v0, v1, v2}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->compareElements(II)I
@@ -403,7 +376,6 @@
 .method private growIfNeeded()V
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     iget-object v1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
@@ -412,15 +384,12 @@
 
     if-le v0, v1, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->calculateNewCapacity()I
 
     move-result v0
 
-    .line 3
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 4
     iget-object v1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     array-length v2, v1
@@ -429,7 +398,6 @@
 
     invoke-static {v1, v3, v0, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 5
     iput-object v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     :cond_0
@@ -446,7 +414,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->isEvenLevel(I)Z
 
     move-result p1
@@ -483,25 +450,21 @@
 
     const/16 p0, 0xb
 
-    .line 1
     :cond_0
     instance-of v0, p2, Ljava/util/Collection;
 
     if-eqz v0, :cond_1
 
-    .line 2
     check-cast p2, Ljava/util/Collection;
 
     invoke-interface {p2}, Ljava/util/Collection;->size()I
 
     move-result p2
 
-    .line 3
     invoke-static {p0, p2}, Ljava/lang/Math;->max(II)I
 
     move-result p0
 
-    .line 4
     :cond_1
     invoke-static {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->capAtMaximumSize(II)I
 
@@ -533,7 +496,6 @@
     :goto_0
     const-string v3, "negative index"
 
-    .line 1
     invoke-static {v2, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
     const v2, 0x55555555
@@ -566,7 +528,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
 
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
@@ -598,7 +559,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$Builder;
 
     const/4 v1, 0x0
@@ -616,12 +576,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->elementData(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->removeAt(I)Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
     return-object v0
@@ -637,7 +595,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue;->offer(Ljava/lang/Object;)Z
 
     const/4 p1, 0x1
@@ -655,7 +612,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -673,7 +629,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/google/common/collect/MinMaxPriorityQueue;->offer(Ljava/lang/Object;)Z
 
     const/4 v0, 0x1
@@ -689,7 +644,6 @@
     .annotation build Lcom/google/common/annotations/VisibleForTesting;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -704,13 +658,11 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :goto_0
     iget v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     if-ge v1, v2, :cond_0
 
-    .line 2
     iget-object v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     const/4 v3, 0x0
@@ -721,7 +673,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iput v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
@@ -738,7 +689,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->minHeap:Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     iget-object v0, v0, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->ordering:Lcom/google/common/collect/Ordering;
@@ -754,7 +704,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     aget-object p1, v0, p1
@@ -771,13 +720,11 @@
 
     const/4 v1, 0x1
 
-    .line 1
     :goto_0
     iget v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     if-ge v1, v2, :cond_1
 
-    .line 2
     invoke-direct {p0, v1}, Lcom/google/common/collect/MinMaxPriorityQueue;->heapForIndex(I)Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     move-result-object v2
@@ -811,7 +758,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/MinMaxPriorityQueue$QueueIterator;
 
     const/4 v1, 0x0
@@ -829,10 +775,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->modCount:I
 
     const/4 v1, 0x1
@@ -841,24 +785,20 @@
 
     iput v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->modCount:I
 
-    .line 3
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     add-int/lit8 v2, v0, 0x1
 
     iput v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
-    .line 4
     invoke-direct {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->growIfNeeded()V
 
-    .line 5
     invoke-direct {p0, v0}, Lcom/google/common/collect/MinMaxPriorityQueue;->heapForIndex(I)Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
 
     move-result-object v2
 
     invoke-virtual {v2, v0, p1}, Lcom/google/common/collect/MinMaxPriorityQueue$Heap;->bubbleUp(ILjava/lang/Object;)V
 
-    .line 6
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     iget v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->maximumSize:I
@@ -889,7 +829,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/AbstractQueue;->isEmpty()Z
 
     move-result v0
@@ -919,7 +858,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->peek()Ljava/lang/Object;
 
     move-result-object v0
@@ -935,7 +873,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/AbstractQueue;->isEmpty()Z
 
     move-result v0
@@ -967,7 +904,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/AbstractQueue;->isEmpty()Z
 
     move-result v0
@@ -997,7 +933,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->poll()Ljava/lang/Object;
 
     move-result-object v0
@@ -1013,7 +948,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/AbstractQueue;->isEmpty()Z
 
     move-result v0
@@ -1050,19 +984,16 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkPositionIndex(II)I
 
-    .line 2
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->modCount:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->modCount:I
 
-    .line 3
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     add-int/lit8 v0, v0, -0x1
@@ -1073,20 +1004,17 @@
 
     if-ne v0, p1, :cond_0
 
-    .line 4
     iget-object p1, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     aput-object v1, p1, v0
 
     return-object v1
 
-    .line 5
     :cond_0
     invoke-virtual {p0, v0}, Lcom/google/common/collect/MinMaxPriorityQueue;->elementData(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 6
     iget v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     invoke-direct {p0, v2}, Lcom/google/common/collect/MinMaxPriorityQueue;->heapForIndex(I)Lcom/google/common/collect/MinMaxPriorityQueue$Heap;
@@ -1097,21 +1025,18 @@
 
     move-result v2
 
-    .line 7
     iget v3, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     invoke-virtual {p0, v3}, Lcom/google/common/collect/MinMaxPriorityQueue;->elementData(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 8
     iget-object v4, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     iget v5, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     aput-object v1, v4, v5
 
-    .line 9
     invoke-direct {p0, p1, v3}, Lcom/google/common/collect/MinMaxPriorityQueue;->fillHole(ILjava/lang/Object;)Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
     move-result-object v1
@@ -1120,14 +1045,12 @@
 
     if-nez v1, :cond_1
 
-    .line 10
     new-instance p1, Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
     invoke-direct {p1, v0, v3}, Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object p1
 
-    .line 11
     :cond_1
     new-instance p1, Lcom/google/common/collect/MinMaxPriorityQueue$MoveDesc;
 
@@ -1149,7 +1072,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/AbstractQueue;->remove()Ljava/lang/Object;
 
     move-result-object v0
@@ -1165,14 +1087,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/AbstractQueue;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/collect/MinMaxPriorityQueue;->getMaxElementIndex()I
 
     move-result v0
@@ -1183,7 +1103,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -1195,7 +1114,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     return v0
@@ -1204,12 +1122,10 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->size:I
 
     new-array v1, v0, [Ljava/lang/Object;
 
-    .line 2
     iget-object v2, p0, Lcom/google/common/collect/MinMaxPriorityQueue;->queue:[Ljava/lang/Object;
 
     const/4 v3, 0x0

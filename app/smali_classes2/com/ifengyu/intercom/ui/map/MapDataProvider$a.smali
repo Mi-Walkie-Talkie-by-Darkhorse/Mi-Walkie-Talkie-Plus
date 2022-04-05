@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;
 .super Ljava/lang/Object;
-.source "MapDataProvider.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/MapDataProvider;Lcom/ifengyu/intercom/greendao/bean/a;Ljava/util/ArrayList;Lcom/ifengyu/intercom/greendao/dao/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->a:Lcom/ifengyu/intercom/greendao/bean/a;
@@ -52,7 +50,6 @@
 
     move-object/from16 v1, p0
 
-    .line 1
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->a:Lcom/ifengyu/intercom/greendao/bean/a;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/greendao/bean/a;->j()Ljava/lang/Integer;
@@ -67,7 +64,6 @@
 
     move-result-object v8
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -118,7 +114,6 @@
 
     const/4 v11, 0x0
 
-    .line 3
     :goto_0
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->b:Ljava/util/ArrayList;
 
@@ -130,7 +125,6 @@
 
     const/4 v12, 0x0
 
-    .line 4
     :goto_1
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->b:Ljava/util/ArrayList;
 
@@ -144,7 +138,6 @@
 
     if-ge v12, v0, :cond_3
 
-    .line 5
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v11}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -155,7 +148,6 @@
 
     aget-object v0, v0, v12
 
-    .line 6
     iget-object v2, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->a:Lcom/ifengyu/intercom/greendao/bean/a;
 
     invoke-virtual {v2}, Lcom/ifengyu/intercom/greendao/bean/a;->e()Ljava/lang/Boolean;
@@ -168,7 +160,6 @@
 
     if-nez v2, :cond_0
 
-    .line 7
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->a:Lcom/ifengyu/intercom/greendao/bean/a;
 
     invoke-static {v10}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -177,7 +168,6 @@
 
     invoke-virtual {v0, v2}, Lcom/ifengyu/intercom/greendao/bean/a;->a(Ljava/lang/Boolean;)V
 
-    .line 8
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->a(Lcom/ifengyu/intercom/ui/map/MapDataProvider;)Ljava/util/List;
@@ -188,7 +178,6 @@
 
     invoke-interface {v0, v2}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 9
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     iget-object v2, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->c:Lcom/ifengyu/intercom/greendao/dao/b;
@@ -197,7 +186,6 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->a(Lcom/ifengyu/intercom/greendao/dao/b;Lcom/ifengyu/intercom/greendao/bean/a;)V
 
-    .line 10
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -228,32 +216,27 @@
 
     invoke-static {v9, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 11
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     invoke-static {v0, v10}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->a(Lcom/ifengyu/intercom/ui/map/MapDataProvider;I)I
 
     return-void
 
-    .line 12
     :cond_0
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/map/TilePoint;->a()I
 
     move-result v13
 
-    .line 13
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/map/TilePoint;->b()I
 
     move-result v14
 
-    .line 14
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/map/TilePoint;->c()I
 
     move-result v0
 
     const/4 v15, 0x2
 
-    .line 15
     :try_start_0
     new-instance v7, Ljava/io/File;
 
@@ -287,7 +270,6 @@
 
     invoke-direct {v10, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 16
     invoke-virtual {v10}, Ljava/io/File;->exists()Z
 
     move-result v2
@@ -296,7 +278,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 17
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->d(Lcom/ifengyu/intercom/ui/map/MapDataProvider;)Ljava/util/HashMap;
@@ -319,7 +300,6 @@
 
     goto/16 :goto_2
 
-    .line 18
     :cond_1
     new-instance v2, Ljava/net/URL;
 
@@ -341,7 +321,6 @@
 
     invoke-direct {v2, v3}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    .line 19
     invoke-virtual {v2}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object v2
@@ -350,20 +329,16 @@
 
     const/16 v3, 0x1388
 
-    .line 20
     invoke-virtual {v2, v3}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
 
     const-string v3, "GET"
 
-    .line 21
     invoke-virtual {v2, v3}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
-    .line 22
     invoke-virtual {v2}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v6
 
-    .line 23
     iget-object v2, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     iget-object v3, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->a:Lcom/ifengyu/intercom/greendao/bean/a;
@@ -390,7 +365,6 @@
 
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
-    .line 24
     invoke-static {v0, v6}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->a(Lcom/ifengyu/intercom/ui/map/MapDataProvider;Ljava/io/InputStream;)[B
 
     move-result-object v0
@@ -407,20 +381,16 @@
 
     move v7, v13
 
-    .line 25
     invoke-static/range {v2 .. v7}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->a(Lcom/ifengyu/intercom/ui/map/MapDataProvider;Ljava/lang/String;Lcom/ifengyu/intercom/ui/map/MapDataProvider$MAP_TYPE;Ljava/lang/String;[BZ)V
 
-    .line 26
     invoke-virtual {v14}, Ljava/io/InputStream;->close()V
 
-    .line 27
     invoke-virtual {v10}, Ljava/io/File;->exists()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    .line 28
     iget-object v2, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->d(Lcom/ifengyu/intercom/ui/map/MapDataProvider;)Ljava/util/HashMap;
@@ -443,7 +413,6 @@
 
     goto/16 :goto_2
 
-    .line 29
     :cond_2
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
@@ -475,7 +444,6 @@
     :catch_0
     move-exception v0
 
-    .line 30
     iget-object v2, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->d(Lcom/ifengyu/intercom/ui/map/MapDataProvider;)Ljava/util/HashMap;
@@ -496,7 +464,6 @@
 
     invoke-virtual {v2, v15}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 31
     invoke-virtual {v0}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
@@ -508,7 +475,6 @@
     :catch_1
     move-exception v0
 
-    .line 32
     iget-object v2, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->d(Lcom/ifengyu/intercom/ui/map/MapDataProvider;)Ljava/util/HashMap;
@@ -529,7 +495,6 @@
 
     invoke-virtual {v2, v15}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 33
     invoke-virtual {v0}, Ljava/net/UnknownHostException;->printStackTrace()V
 
     goto :goto_3
@@ -537,7 +502,6 @@
     :catch_2
     move-exception v0
 
-    .line 34
     iget-object v2, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->d(Lcom/ifengyu/intercom/ui/map/MapDataProvider;)Ljava/util/HashMap;
@@ -558,7 +522,6 @@
 
     invoke-virtual {v2, v15}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 35
     invoke-virtual {v0}, Ljava/net/SocketTimeoutException;->printStackTrace()V
 
     goto :goto_3
@@ -566,7 +529,6 @@
     :catch_3
     move-exception v0
 
-    .line 36
     iget-object v2, v1, Lcom/ifengyu/intercom/ui/map/MapDataProvider$a;->d:Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->d(Lcom/ifengyu/intercom/ui/map/MapDataProvider;)Ljava/util/HashMap;
@@ -587,7 +549,6 @@
 
     invoke-virtual {v2, v15}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 37
     invoke-virtual {v0}, Ljava/net/MalformedURLException;->getMessage()Ljava/lang/String;
 
     move-result-object v0

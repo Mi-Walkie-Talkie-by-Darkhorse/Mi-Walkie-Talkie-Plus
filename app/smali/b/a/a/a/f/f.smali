@@ -1,6 +1,5 @@
 .class public Lb/a/a/a/f/f;
 .super Lb/a/a/a/f/g;
-.source "CombinedChartRenderer.java"
 
 
 # instance fields
@@ -39,10 +38,8 @@
 .method public constructor <init>(Lcom/github/mikephil/charting/charts/CombinedChart;Lb/a/a/a/a/a;Lb/a/a/a/g/j;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2, p3}, Lb/a/a/a/f/g;-><init>(Lb/a/a/a/a/a;Lb/a/a/a/g/j;)V
 
-    .line 2
     new-instance p2, Ljava/util/ArrayList;
 
     const/4 p3, 0x5
@@ -51,21 +48,18 @@
 
     iput-object p2, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
-    .line 3
     new-instance p2, Ljava/util/ArrayList;
 
     invoke-direct {p2}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p2, p0, Lb/a/a/a/f/f;->h:Ljava/util/List;
 
-    .line 4
     new-instance p2, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object p2, p0, Lb/a/a/a/f/f;->g:Ljava/lang/ref/WeakReference;
 
-    .line 5
     invoke-virtual {p0}, Lb/a/a/a/f/f;->b()V
 
     return-void
@@ -76,7 +70,6 @@
 .method public a()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -96,7 +89,6 @@
 
     check-cast v1, Lb/a/a/a/f/g;
 
-    .line 2
     invoke-virtual {v1}, Lb/a/a/a/f/g;->a()V
 
     goto :goto_0
@@ -108,7 +100,6 @@
 .method public a(Landroid/graphics/Canvas;)V
     .locals 2
 
-    .line 3
     iget-object v0, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -128,7 +119,6 @@
 
     check-cast v1, Lb/a/a/a/f/g;
 
-    .line 4
     invoke-virtual {v1, p1}, Lb/a/a/a/f/g;->a(Landroid/graphics/Canvas;)V
 
     goto :goto_0
@@ -140,7 +130,6 @@
 .method public a(Landroid/graphics/Canvas;[Lb/a/a/a/d/d;)V
     .locals 9
 
-    .line 5
     iget-object v0, p0, Lb/a/a/a/f/f;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -153,7 +142,6 @@
 
     return-void
 
-    .line 6
     :cond_0
     iget-object v1, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
@@ -176,12 +164,10 @@
 
     const/4 v3, 0x0
 
-    .line 7
     instance-of v4, v2, Lb/a/a/a/f/b;
 
     if-eqz v4, :cond_1
 
-    .line 8
     move-object v3, v2
 
     check-cast v3, Lb/a/a/a/f/b;
@@ -194,13 +180,11 @@
 
     goto :goto_1
 
-    .line 9
     :cond_1
     instance-of v4, v2, Lb/a/a/a/f/j;
 
     if-eqz v4, :cond_2
 
-    .line 10
     move-object v3, v2
 
     check-cast v3, Lb/a/a/a/f/j;
@@ -213,13 +197,11 @@
 
     goto :goto_1
 
-    .line 11
     :cond_2
     instance-of v4, v2, Lb/a/a/a/f/e;
 
     if-eqz v4, :cond_3
 
-    .line 12
     move-object v3, v2
 
     check-cast v3, Lb/a/a/a/f/e;
@@ -232,13 +214,11 @@
 
     goto :goto_1
 
-    .line 13
     :cond_3
     instance-of v4, v2, Lb/a/a/a/f/p;
 
     if-eqz v4, :cond_4
 
-    .line 14
     move-object v3, v2
 
     check-cast v3, Lb/a/a/a/f/p;
@@ -251,13 +231,11 @@
 
     goto :goto_1
 
-    .line 15
     :cond_4
     instance-of v4, v2, Lb/a/a/a/f/d;
 
     if-eqz v4, :cond_5
 
-    .line 16
     move-object v3, v2
 
     check-cast v3, Lb/a/a/a/f/d;
@@ -278,7 +256,6 @@
 
     goto :goto_2
 
-    .line 17
     :cond_6
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/Chart;->getData()Lcom/github/mikephil/charting/data/h;
 
@@ -294,13 +271,11 @@
 
     move-result v3
 
-    .line 18
     :goto_2
     iget-object v5, p0, Lb/a/a/a/f/f;->h:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->clear()V
 
-    .line 19
     array-length v5, p2
 
     const/4 v6, 0x0
@@ -310,7 +285,6 @@
 
     aget-object v7, p2, v6
 
-    .line 20
     invoke-virtual {v7}, Lb/a/a/a/d/d;->b()I
 
     move-result v8
@@ -323,7 +297,6 @@
 
     if-ne v8, v4, :cond_8
 
-    .line 21
     :cond_7
     iget-object v8, p0, Lb/a/a/a/f/f;->h:Ljava/util/List;
 
@@ -334,7 +307,6 @@
 
     goto :goto_3
 
-    .line 22
     :cond_9
     iget-object v3, p0, Lb/a/a/a/f/f;->h:Ljava/util/List;
 
@@ -361,12 +333,10 @@
 .method public b()V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 2
     iget-object v0, p0, Lb/a/a/a/f/f;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -379,13 +349,11 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/CombinedChart;->getDrawOrder()[Lcom/github/mikephil/charting/charts/CombinedChart$DrawOrder;
 
     move-result-object v1
 
-    .line 4
     array-length v2, v1
 
     const/4 v3, 0x0
@@ -395,7 +363,6 @@
 
     aget-object v4, v1, v3
 
-    .line 5
     sget-object v5, Lb/a/a/a/f/f$a;->a:[I
 
     invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
@@ -426,7 +393,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_1
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/CombinedChart;->getScatterData()Lcom/github/mikephil/charting/data/o;
 
@@ -434,7 +400,6 @@
 
     if-eqz v4, :cond_6
 
-    .line 7
     iget-object v4, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
     new-instance v5, Lb/a/a/a/f/p;
@@ -449,7 +414,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_2
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/CombinedChart;->getCandleData()Lcom/github/mikephil/charting/data/g;
 
@@ -457,7 +421,6 @@
 
     if-eqz v4, :cond_6
 
-    .line 9
     iget-object v4, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
     new-instance v5, Lb/a/a/a/f/e;
@@ -472,7 +435,6 @@
 
     goto :goto_1
 
-    .line 10
     :cond_3
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/CombinedChart;->getLineData()Lcom/github/mikephil/charting/data/j;
 
@@ -480,7 +442,6 @@
 
     if-eqz v4, :cond_6
 
-    .line 11
     iget-object v4, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
     new-instance v5, Lb/a/a/a/f/j;
@@ -495,7 +456,6 @@
 
     goto :goto_1
 
-    .line 12
     :cond_4
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/CombinedChart;->getBubbleData()Lcom/github/mikephil/charting/data/f;
 
@@ -503,7 +463,6 @@
 
     if-eqz v4, :cond_6
 
-    .line 13
     iget-object v4, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
     new-instance v5, Lb/a/a/a/f/d;
@@ -518,7 +477,6 @@
 
     goto :goto_1
 
-    .line 14
     :cond_5
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/CombinedChart;->getBarData()Lcom/github/mikephil/charting/data/a;
 
@@ -526,7 +484,6 @@
 
     if-eqz v4, :cond_6
 
-    .line 15
     iget-object v4, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
     new-instance v5, Lb/a/a/a/f/b;
@@ -552,7 +509,6 @@
 .method public b(Landroid/graphics/Canvas;)V
     .locals 2
 
-    .line 16
     iget-object v0, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -572,7 +528,6 @@
 
     check-cast v1, Lb/a/a/a/f/g;
 
-    .line 17
     invoke-virtual {v1, p1}, Lb/a/a/a/f/g;->b(Landroid/graphics/Canvas;)V
 
     goto :goto_0
@@ -584,7 +539,6 @@
 .method public c(Landroid/graphics/Canvas;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/f/f;->f:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -604,7 +558,6 @@
 
     check-cast v1, Lb/a/a/a/f/g;
 
-    .line 2
     invoke-virtual {v1, p1}, Lb/a/a/a/f/g;->c(Landroid/graphics/Canvas;)V
 
     goto :goto_0

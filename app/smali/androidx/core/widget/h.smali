@@ -1,6 +1,5 @@
 .class public final Landroidx/core/widget/h;
 .super Ljava/lang/Object;
-.source "PopupWindowCompat.java"
 
 
 # static fields
@@ -21,19 +20,16 @@
         .end annotation
     .end param
 
-    .line 17
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    .line 18
     invoke-virtual {p0, p1}, Landroid/widget/PopupWindow;->setWindowLayoutType(I)V
 
     return-void
 
-    .line 19
     :cond_0
     sget-boolean v0, Landroidx/core/widget/h;->b:Z
 
@@ -43,7 +39,6 @@
 
     if-nez v0, :cond_1
 
-    .line 20
     :try_start_0
     const-class v0, Landroid/widget/PopupWindow;
 
@@ -61,16 +56,13 @@
 
     sput-object v0, Landroidx/core/widget/h;->a:Ljava/lang/reflect/Method;
 
-    .line 21
     invoke-virtual {v0, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 22
     :catch_0
     sput-boolean v2, Landroidx/core/widget/h;->b:Z
 
-    .line 23
     :cond_1
     sget-object v0, Landroidx/core/widget/h;->a:Ljava/lang/reflect/Method;
 
@@ -79,7 +71,6 @@
     :try_start_1
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 24
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -106,25 +97,21 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1, p2, p3, p4}, Landroid/widget/PopupWindow;->showAsDropDown(Landroid/view/View;III)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->s(Landroid/view/View;)I
 
     move-result v0
 
-    .line 4
     invoke-static {p4, v0}, Landroidx/core/view/d;->a(II)I
 
     move-result p4
@@ -135,7 +122,6 @@
 
     if-ne p4, v0, :cond_1
 
-    .line 5
     invoke-virtual {p0}, Landroid/widget/PopupWindow;->getWidth()I
 
     move-result p4
@@ -148,7 +134,6 @@
 
     sub-int/2addr p2, p4
 
-    .line 6
     :cond_1
     invoke-virtual {p0, p1, p2, p3}, Landroid/widget/PopupWindow;->showAsDropDown(Landroid/view/View;II)V
 
@@ -163,14 +148,12 @@
         .end annotation
     .end param
 
-    .line 7
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    .line 8
     invoke-virtual {p0, p1}, Landroid/widget/PopupWindow;->setOverlapAnchor(Z)V
 
     goto :goto_1
@@ -180,7 +163,6 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 9
     sget-boolean v0, Landroidx/core/widget/h;->d:Z
 
     const-string v1, "PopupWindowCompatApi21"
@@ -189,7 +171,6 @@
 
     const/4 v0, 0x1
 
-    .line 10
     :try_start_0
     const-class v2, Landroid/widget/PopupWindow;
 
@@ -201,7 +182,6 @@
 
     sput-object v2, Landroidx/core/widget/h;->c:Ljava/lang/reflect/Field;
 
-    .line 11
     invoke-virtual {v2, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
@@ -213,20 +193,16 @@
 
     const-string v3, "Could not fetch mOverlapAnchor field from PopupWindow"
 
-    .line 12
     invoke-static {v1, v3, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 13
     :goto_0
     sput-boolean v0, Landroidx/core/widget/h;->d:Z
 
-    .line 14
     :cond_1
     sget-object v0, Landroidx/core/widget/h;->c:Ljava/lang/reflect/Field;
 
     if-eqz v0, :cond_2
 
-    .line 15
     :try_start_1
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -243,7 +219,6 @@
 
     const-string p1, "Could not set overlap anchor field in PopupWindow"
 
-    .line 16
     invoke-static {v1, p1, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_2

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/node/h;
 .super Ljava/lang/Object;
-.source "IConnectionApi.java"
 
 
 # virtual methods

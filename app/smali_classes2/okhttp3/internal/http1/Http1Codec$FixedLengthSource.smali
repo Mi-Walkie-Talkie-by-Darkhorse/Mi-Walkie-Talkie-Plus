@@ -1,6 +1,5 @@
 .class Lokhttp3/internal/http1/Http1Codec$FixedLengthSource;
 .super Lokhttp3/internal/http1/Http1Codec$AbstractSource;
-.source "Http1Codec.java"
 
 
 # annotations
@@ -29,14 +28,12 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/http1/Http1Codec$FixedLengthSource;->this$0:Lokhttp3/internal/http1/Http1Codec;
 
     const/4 v0, 0x0
 
     invoke-direct {p0, p1, v0}, Lokhttp3/internal/http1/Http1Codec$AbstractSource;-><init>(Lokhttp3/internal/http1/Http1Codec;Lokhttp3/internal/http1/Http1Codec$1;)V
 
-    .line 2
     iput-wide p2, p0, Lokhttp3/internal/http1/Http1Codec$FixedLengthSource;->bytesRemaining:J
 
     const-wide/16 v1, 0x0
@@ -47,7 +44,6 @@
 
     const/4 p1, 0x1
 
-    .line 3
     invoke-virtual {p0, p1, v0}, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->endOfInput(ZLjava/io/IOException;)V
 
     :cond_0
@@ -64,14 +60,12 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->closed:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iget-wide v0, p0, Lokhttp3/internal/http1/Http1Codec$FixedLengthSource;->bytesRemaining:J
 
@@ -95,13 +89,11 @@
 
     const/4 v1, 0x0
 
-    .line 3
     invoke-virtual {p0, v0, v1}, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->endOfInput(ZLjava/io/IOException;)V
 
     :cond_1
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->closed:Z
 
     return-void
@@ -121,12 +113,10 @@
 
     if-ltz v2, :cond_4
 
-    .line 1
     iget-boolean v2, p0, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->closed:Z
 
     if-nez v2, :cond_3
 
-    .line 2
     iget-wide v2, p0, Lokhttp3/internal/http1/Http1Codec$FixedLengthSource;->bytesRemaining:J
 
     const-wide/16 v4, -0x1
@@ -137,7 +127,6 @@
 
     return-wide v4
 
-    .line 3
     :cond_0
     invoke-static {v2, v3, p2, p3}, Ljava/lang/Math;->min(JJ)J
 
@@ -151,7 +140,6 @@
 
     if-eqz p3, :cond_2
 
-    .line 4
     iget-wide v2, p0, Lokhttp3/internal/http1/Http1Codec$FixedLengthSource;->bytesRemaining:J
 
     sub-long/2addr v2, p1
@@ -166,13 +154,11 @@
 
     const/4 v0, 0x0
 
-    .line 5
     invoke-virtual {p0, p3, v0}, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->endOfInput(ZLjava/io/IOException;)V
 
     :cond_1
     return-wide p1
 
-    .line 6
     :cond_2
     new-instance p1, Ljava/net/ProtocolException;
 
@@ -182,13 +168,10 @@
 
     const/4 p2, 0x0
 
-    .line 7
     invoke-virtual {p0, p2, p1}, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->endOfInput(ZLjava/io/IOException;)V
 
-    .line 8
     throw p1
 
-    .line 9
     :cond_3
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -198,7 +181,6 @@
 
     throw p1
 
-    .line 10
     :cond_4
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

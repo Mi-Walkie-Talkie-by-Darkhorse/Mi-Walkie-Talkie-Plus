@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/pdf417/PDF417Reader;
 .super Ljava/lang/Object;
-.source "PDF417Reader.java"
 
 # interfaces
 .implements Lcom/google/zxing/Reader;
@@ -11,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,17 +36,14 @@
         }
     .end annotation
 
-    .line 6
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 7
     invoke-static {p0, p1, p2}, Lcom/google/zxing/pdf417/detector/Detector;->detect(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;Z)Lcom/google/zxing/pdf417/detector/PDF417DetectorResult;
 
     move-result-object p0
 
-    .line 8
     invoke-virtual {p0}, Lcom/google/zxing/pdf417/detector/PDF417DetectorResult;->getPoints()Ljava/util/List;
 
     move-result-object p1
@@ -70,7 +65,6 @@
 
     check-cast p2, [Lcom/google/zxing/ResultPoint;
 
-    .line 9
     invoke-virtual {p0}, Lcom/google/zxing/pdf417/detector/PDF417DetectorResult;->getBits()Lcom/google/zxing/common/BitMatrix;
 
     move-result-object v1
@@ -91,7 +85,6 @@
 
     aget-object v5, p2, v5
 
-    .line 10
     invoke-static {p2}, Lcom/google/zxing/pdf417/PDF417Reader;->getMinCodewordWidth([Lcom/google/zxing/ResultPoint;)I
 
     move-result v6
@@ -100,12 +93,10 @@
 
     move-result v7
 
-    .line 11
     invoke-static/range {v1 .. v7}, Lcom/google/zxing/pdf417/decoder/PDF417ScanningDecoder;->decode(Lcom/google/zxing/common/BitMatrix;Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;II)Lcom/google/zxing/common/DecoderResult;
 
     move-result-object v1
 
-    .line 12
     new-instance v2, Lcom/google/zxing/Result;
 
     invoke-virtual {v1}, Lcom/google/zxing/common/DecoderResult;->getText()Ljava/lang/String;
@@ -120,7 +111,6 @@
 
     invoke-direct {v2, v3, v4, p2, v5}, Lcom/google/zxing/Result;-><init>(Ljava/lang/String;[B[Lcom/google/zxing/ResultPoint;Lcom/google/zxing/BarcodeFormat;)V
 
-    .line 13
     sget-object p2, Lcom/google/zxing/ResultMetadataType;->ERROR_CORRECTION_LEVEL:Lcom/google/zxing/ResultMetadataType;
 
     invoke-virtual {v1}, Lcom/google/zxing/common/DecoderResult;->getECLevel()Ljava/lang/String;
@@ -129,7 +119,6 @@
 
     invoke-virtual {v2, p2, v3}, Lcom/google/zxing/Result;->putMetadata(Lcom/google/zxing/ResultMetadataType;Ljava/lang/Object;)V
 
-    .line 14
     invoke-virtual {v1}, Lcom/google/zxing/common/DecoderResult;->getOther()Ljava/lang/Object;
 
     move-result-object p2
@@ -138,18 +127,15 @@
 
     if-eqz p2, :cond_0
 
-    .line 15
     sget-object v1, Lcom/google/zxing/ResultMetadataType;->PDF417_EXTRA_METADATA:Lcom/google/zxing/ResultMetadataType;
 
     invoke-virtual {v2, v1, p2}, Lcom/google/zxing/Result;->putMetadata(Lcom/google/zxing/ResultMetadataType;Ljava/lang/Object;)V
 
-    .line 16
     :cond_0
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 17
     :cond_1
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -171,14 +157,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget-object v0, p0, v0
 
     const/4 v1, 0x4
 
     aget-object v1, p0, v1
 
-    .line 2
     invoke-static {v0, v1}, Lcom/google/zxing/pdf417/PDF417Reader;->getMaxWidth(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;)I
 
     move-result v0
@@ -211,7 +195,6 @@
 
     aget-object v2, p0, v2
 
-    .line 3
     invoke-static {v1, v2}, Lcom/google/zxing/pdf417/PDF417Reader;->getMaxWidth(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;)I
 
     move-result v1
@@ -236,7 +219,6 @@
 
     move-result p0
 
-    .line 4
     invoke-static {v0, p0}, Ljava/lang/Math;->max(II)I
 
     move-result p0
@@ -253,7 +235,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Lcom/google/zxing/ResultPoint;->getX()F
 
@@ -285,14 +266,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget-object v0, p0, v0
 
     const/4 v1, 0x4
 
     aget-object v1, p0, v1
 
-    .line 2
     invoke-static {v0, v1}, Lcom/google/zxing/pdf417/PDF417Reader;->getMinWidth(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;)I
 
     move-result v0
@@ -325,7 +304,6 @@
 
     aget-object v2, p0, v2
 
-    .line 3
     invoke-static {v1, v2}, Lcom/google/zxing/pdf417/PDF417Reader;->getMinWidth(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;)I
 
     move-result v1
@@ -350,7 +328,6 @@
 
     move-result p0
 
-    .line 4
     invoke-static {v0, p0}, Ljava/lang/Math;->min(II)I
 
     move-result p0
@@ -367,7 +344,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Lcom/google/zxing/ResultPoint;->getX()F
 
@@ -408,7 +384,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/google/zxing/pdf417/PDF417Reader;->decode(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;)Lcom/google/zxing/Result;
 
     move-result-object p1
@@ -439,14 +414,12 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-static {p1, p2, v0}, Lcom/google/zxing/pdf417/PDF417Reader;->decode(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;Z)[Lcom/google/zxing/Result;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 3
     array-length p2, p1
 
     if-eqz p2, :cond_0
@@ -455,12 +428,10 @@
 
     if-eqz p2, :cond_0
 
-    .line 4
     aget-object p1, p1, v0
 
     return-object p1
 
-    .line 5
     :cond_0
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -479,7 +450,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/google/zxing/pdf417/PDF417Reader;->decodeMultiple(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;)[Lcom/google/zxing/Result;
 
     move-result-object p1
@@ -508,7 +478,6 @@
 
     const/4 v0, 0x1
 
-    .line 2
     :try_start_0
     invoke-static {p1, p2, v0}, Lcom/google/zxing/pdf417/PDF417Reader;->decode(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;Z)[Lcom/google/zxing/Result;
 
@@ -519,7 +488,6 @@
 
     return-object p1
 
-    .line 3
     :catch_0
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 

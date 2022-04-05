@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$AssistExtend;
 .super Ljava/lang/Object;
-.source "Listener4Assist.java"
 
 
 # annotations

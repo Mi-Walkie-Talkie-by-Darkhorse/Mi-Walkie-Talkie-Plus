@@ -1,6 +1,5 @@
 .class final Lcom/umeng/commonsdk/internal/c$2;
 .super Ljava/lang/Object;
-.source "UMInternalDataProtocol.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroid/content/Context;Lcom/umeng/commonsdk/listener/OnGetOaidListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/internal/c$2;->a:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/umeng/commonsdk/internal/c$2;->b:Lcom/umeng/commonsdk/listener/OnGetOaidListener;
@@ -42,19 +40,16 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c$2;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/z;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/umeng/commonsdk/internal/c$2;->b:Lcom/umeng/commonsdk/listener/OnGetOaidListener;
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-interface {v1, v0}, Lcom/umeng/commonsdk/listener/OnGetOaidListener;->onGetOaid(Ljava/lang/String;)V
 
     :cond_0

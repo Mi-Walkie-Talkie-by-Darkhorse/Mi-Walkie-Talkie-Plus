@@ -1,6 +1,5 @@
 .class final Lcom/google/common/cache/LocalCache$EntrySet;
 .super Lcom/google/common/cache/LocalCache$AbstractCacheSet;
-.source "LocalCache.java"
 
 
 # annotations
@@ -38,10 +37,8 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$EntrySet;->this$0:Lcom/google/common/cache/LocalCache;
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/google/common/cache/LocalCache$AbstractCacheSet;-><init>(Lcom/google/common/cache/LocalCache;Ljava/util/concurrent/ConcurrentMap;)V
 
     return-void
@@ -52,7 +49,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 1
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
@@ -61,11 +57,9 @@
 
     return v1
 
-    .line 2
     :cond_0
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -74,7 +68,6 @@
 
     return v1
 
-    .line 4
     :cond_1
     iget-object v2, p0, Lcom/google/common/cache/LocalCache$EntrySet;->this$0:Lcom/google/common/cache/LocalCache;
 
@@ -84,7 +77,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 5
     iget-object v2, p0, Lcom/google/common/cache/LocalCache$EntrySet;->this$0:Lcom/google/common/cache/LocalCache;
 
     iget-object v2, v2, Lcom/google/common/cache/LocalCache;->valueEquivalence:Lcom/google/common/base/Equivalence;
@@ -116,7 +108,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/cache/LocalCache$EntryIterator;
 
     iget-object v1, p0, Lcom/google/common/cache/LocalCache$EntrySet;->this$0:Lcom/google/common/cache/LocalCache;
@@ -129,7 +120,6 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 1
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
@@ -138,18 +128,15 @@
 
     return v1
 
-    .line 2
     :cond_0
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-object v2, p0, Lcom/google/common/cache/LocalCache$EntrySet;->this$0:Lcom/google/common/cache/LocalCache;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;

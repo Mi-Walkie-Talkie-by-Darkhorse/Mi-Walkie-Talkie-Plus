@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/ActionActivity$RationaleListener;
 .super Ljava/lang/Object;
-.source "ActionActivity.java"
 
 
 # annotations

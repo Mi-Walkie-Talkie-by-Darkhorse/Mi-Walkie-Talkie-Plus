@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/auth/AuthAgent$b$1;
 .super Lcom/tencent/connect/auth/AuthAgent$b$a;
-.source "ProGuard"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lcom/tencent/connect/auth/AuthAgent$b;Landroid/app/Dialog;Lcom/tencent/tauth/IUiListener;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$b$1;->c:Lcom/tencent/connect/auth/AuthAgent$b;
 
     iput-object p3, p0, Lcom/tencent/connect/auth/AuthAgent$b$1;->a:Lcom/tencent/tauth/IUiListener;
@@ -43,12 +41,10 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$b$1;->c:Lcom/tencent/connect/auth/AuthAgent$b;
 
     invoke-virtual {p1}, Lcom/tencent/connect/auth/AuthAgent$b;->a()V
 
-    .line 2
     iget-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$b$a;->d:Landroid/app/Dialog;
 
     if-eqz p1, :cond_0
@@ -59,18 +55,15 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$b$a;->d:Landroid/app/Dialog;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$b$1;->a:Lcom/tencent/tauth/IUiListener;
 
     if-eqz p1, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/tencent/connect/auth/AuthAgent$b$1;->b:Ljava/lang/Object;
 
     invoke-interface {p1, v0}, Lcom/tencent/tauth/IUiListener;->onComplete(Ljava/lang/Object;)V

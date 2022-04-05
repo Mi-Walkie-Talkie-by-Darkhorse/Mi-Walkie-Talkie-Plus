@@ -1,6 +1,5 @@
 .class Lcom/google/protobuf/BoundedByteString;
 .super Lcom/google/protobuf/LiteralByteString;
-.source "BoundedByteString.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method constructor <init>([BII)V
     .locals 4
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/protobuf/LiteralByteString;-><init>([B)V
 
     const/16 v0, 0x1d
@@ -36,7 +34,6 @@
 
     add-long/2addr v0, v2
 
-    .line 2
     array-length p1, p1
 
     int-to-long v2, p1
@@ -45,15 +42,12 @@
 
     if-gtz p1, :cond_0
 
-    .line 3
     iput p2, p0, Lcom/google/protobuf/BoundedByteString;->bytesOffset:I
 
-    .line 4
     iput p3, p0, Lcom/google/protobuf/BoundedByteString;->bytesLength:I
 
     return-void
 
-    .line 5
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -83,7 +77,6 @@
 
     throw p1
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -105,7 +98,6 @@
 
     throw p1
 
-    .line 7
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -135,14 +127,12 @@
 
     if-ltz p1, :cond_1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/BoundedByteString;->size()I
 
     move-result v0
 
     if-ge p1, v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     iget v1, p0, Lcom/google/protobuf/BoundedByteString;->bytesOffset:I
@@ -153,7 +143,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
@@ -187,7 +176,6 @@
 
     throw v0
 
-    .line 4
     :cond_1
     new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
@@ -215,7 +203,6 @@
 .method protected copyToInternal([BIII)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     invoke-virtual {p0}, Lcom/google/protobuf/BoundedByteString;->getOffsetIntoBytes()I
@@ -232,7 +219,6 @@
 .method protected getOffsetIntoBytes()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/BoundedByteString;->bytesOffset:I
 
     return v0
@@ -241,7 +227,6 @@
 .method public iterator()Lcom/google/protobuf/ByteString$ByteIterator;
     .locals 2
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/BoundedByteString$BoundedByteIterator;
 
     const/4 v1, 0x0
@@ -254,7 +239,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/BoundedByteString;->iterator()Lcom/google/protobuf/ByteString$ByteIterator;
 
     move-result-object v0
@@ -265,7 +249,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/BoundedByteString;->bytesLength:I
 
     return v0

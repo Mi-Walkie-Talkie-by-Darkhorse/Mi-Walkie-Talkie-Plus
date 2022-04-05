@@ -1,6 +1,5 @@
 .class public abstract Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectHandler;
 .super Ljava/lang/Object;
-.source "QMUIFragmentEffectHandler.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +33,6 @@
 .method public a()Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectHandler$HandlePolicy;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectHandler$HandlePolicy;->b:Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectHandler$HandlePolicy;
 
     return-object v0
@@ -67,7 +64,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -85,7 +81,6 @@
 
     check-cast v0, Lcom/qmuiteam/qmui/arch/effect/a;
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectHandler;->a(Lcom/qmuiteam/qmui/arch/effect/a;)V
 
     goto :goto_0

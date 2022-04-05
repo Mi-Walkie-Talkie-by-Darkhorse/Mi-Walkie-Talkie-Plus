@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/protobuf/GeneratedMessage$4;
 .super Ljava/lang/Object;
-.source "GeneratedMessage.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/Descriptors$FieldDescriptor$JavaType;->values()[Lcom/google/protobuf/Descriptors$FieldDescriptor$JavaType;
 
     move-result-object v0

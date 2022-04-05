@@ -1,6 +1,5 @@
 .class final enum Lcom/google/common/collect/MapMakerInternalMap$EntryFactory$2;
 .super Lcom/google/common/collect/MapMakerInternalMap$EntryFactory;
-.source "MapMakerInternalMap.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/collect/MapMakerInternalMap$EntryFactory;-><init>(Ljava/lang/String;ILcom/google/common/collect/MapMakerInternalMap$1;)V
 
     return-void
@@ -48,12 +46,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Lcom/google/common/collect/MapMakerInternalMap$EntryFactory;->copyEntry(Lcom/google/common/collect/MapMakerInternalMap$Segment;Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0, p2, p1}, Lcom/google/common/collect/MapMakerInternalMap$EntryFactory;->copyExpirableEntry(Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V
 
     return-object p1
@@ -81,7 +77,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Lcom/google/common/collect/MapMakerInternalMap$StrongExpirableEntry;
 
     invoke-direct {p1, p2, p3, p4}, Lcom/google/common/collect/MapMakerInternalMap$StrongExpirableEntry;-><init>(Ljava/lang/Object;ILcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;)V

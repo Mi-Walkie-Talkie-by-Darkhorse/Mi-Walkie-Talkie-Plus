@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/MapFragment;
 .super Landroid/app/Fragment;
-.source "MapFragment.java"
 
 
 # instance fields
@@ -13,7 +12,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Fragment;-><init>()V
 
     return-void
@@ -22,7 +20,6 @@
 .method public static newInstance()Lcom/amap/api/maps/MapFragment;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/AMapOptions;
 
     invoke-direct {v0}, Lcom/amap/api/maps/AMapOptions;-><init>()V
@@ -37,17 +34,14 @@
 .method public static newInstance(Lcom/amap/api/maps/AMapOptions;)Lcom/amap/api/maps/MapFragment;
     .locals 4
 
-    .line 2
     new-instance v0, Lcom/amap/api/maps/MapFragment;
 
     invoke-direct {v0}, Lcom/amap/api/maps/MapFragment;-><init>()V
 
-    .line 3
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 4
     :try_start_0
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -55,12 +49,10 @@
 
     const/4 v3, 0x0
 
-    .line 5
     invoke-virtual {p0, v2, v3}, Lcom/amap/api/maps/AMapOptions;->writeToParcel(Landroid/os/Parcel;I)V
 
     const-string p0, "MapOptions"
 
-    .line 6
     invoke-virtual {v2}, Landroid/os/Parcel;->marshall()[B
 
     move-result-object v2
@@ -74,10 +66,8 @@
     :catchall_0
     move-exception p0
 
-    .line 7
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 8
     :goto_0
     invoke-virtual {v0, v1}, Lcom/amap/api/maps/MapFragment;->setArguments(Landroid/os/Bundle;)V
 
@@ -89,7 +79,6 @@
 .method public getMap()Lcom/amap/api/maps/AMap;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
     move-result-object v0
@@ -100,7 +89,6 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     :try_start_0
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;->getMap()Lcom/autonavi/amap/mapcore/interfaces/IAMap;
@@ -113,20 +101,17 @@
 
     return-object v1
 
-    .line 3
     :cond_1
     iget-object v1, p0, Lcom/amap/api/maps/MapFragment;->a:Lcom/amap/api/maps/AMap;
 
     if-nez v1, :cond_2
 
-    .line 4
     new-instance v1, Lcom/amap/api/maps/AMap;
 
     invoke-direct {v1, v0}, Lcom/amap/api/maps/AMap;-><init>(Lcom/autonavi/amap/mapcore/interfaces/IAMap;)V
 
     iput-object v1, p0, Lcom/amap/api/maps/MapFragment;->a:Lcom/amap/api/maps/AMap;
 
-    .line 5
     :cond_2
     iget-object v0, p0, Lcom/amap/api/maps/MapFragment;->a:Lcom/amap/api/maps/AMap;
 
@@ -139,14 +124,12 @@
 .method protected getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/MapFragment;->b:Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
@@ -195,27 +178,23 @@
     :catchall_0
     nop
 
-    .line 3
     :goto_0
     iget-object v1, p0, Lcom/amap/api/maps/MapFragment;->b:Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
     if-nez v1, :cond_0
 
-    .line 4
     new-instance v1, Lcom/amap/api/col/l3/y;
 
     invoke-direct {v1, v0}, Lcom/amap/api/col/l3/y;-><init>(I)V
 
     iput-object v1, p0, Lcom/amap/api/maps/MapFragment;->b:Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
-    .line 5
     invoke-virtual {p0}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
     invoke-interface {v1, v0}, Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;->setContext(Landroid/content/Context;)V
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/amap/api/maps/MapFragment;->b:Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
@@ -225,7 +204,6 @@
 .method public onAttach(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Fragment;->onAttach(Landroid/app/Activity;)V
 
     return-void
@@ -234,10 +212,8 @@
 .method public onCreate(Landroid/os/Bundle;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
@@ -252,7 +228,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -263,13 +238,11 @@
 
     if-nez p3, :cond_0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Landroid/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object p3
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
@@ -286,7 +259,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -297,18 +269,15 @@
 .method public onDestroy()V
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;->onDestroy()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/maps/MapFragment;->a:Lcom/amap/api/maps/AMap;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -318,10 +287,8 @@
     :catchall_0
     move-exception v0
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 5
     :goto_0
     invoke-super {p0}, Landroid/app/Fragment;->onDestroy()V
 
@@ -331,7 +298,6 @@
 .method public onDestroyView()V
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
@@ -346,10 +312,8 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 3
     :goto_0
     invoke-super {p0}, Landroid/app/Fragment;->onDestroyView()V
 
@@ -359,10 +323,8 @@
 .method public onInflate(Landroid/app/Activity;Landroid/util/AttributeSet;Landroid/os/Bundle;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroid/app/Fragment;->onInflate(Landroid/app/Activity;Landroid/util/AttributeSet;Landroid/os/Bundle;)V
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
@@ -381,7 +343,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -390,10 +351,8 @@
 .method public onLowMemory()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/app/Fragment;->onLowMemory()V
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
@@ -408,7 +367,6 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -417,10 +375,8 @@
 .method public onPause()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/app/Fragment;->onPause()V
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
@@ -435,7 +391,6 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -444,10 +399,8 @@
 .method public onResume()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
@@ -462,7 +415,6 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -471,7 +423,6 @@
 .method public onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
@@ -486,10 +437,8 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 3
     :goto_0
     invoke-super {p0, p1}, Landroid/app/Fragment;->onSaveInstanceState(Landroid/os/Bundle;)V
 
@@ -499,7 +448,6 @@
 .method public setArguments(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Fragment;->setArguments(Landroid/os/Bundle;)V
 
     return-void
@@ -510,7 +458,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 
     move-result-object p1
@@ -521,7 +468,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/amap/api/maps/MapFragment;->getMapFragmentDelegate()Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 

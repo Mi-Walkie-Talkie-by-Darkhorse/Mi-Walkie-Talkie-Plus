@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;
 .super Ljava/lang/Object;
-.source "TrackInfoDetailActivity.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/AMap$OnMapScreenShotListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
 
     move-object/from16 v0, p1
 
-    .line 1
     iget-object v2, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v2, v2, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -73,7 +70,6 @@
 
     move-result-object v2
 
-    .line 2
     iget-object v3, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v3, v3, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -88,7 +84,6 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/LinearLayout;->draw(Landroid/graphics/Canvas;)V
 
-    .line 3
     iget-object v3, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v3, v3, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -119,7 +114,6 @@
 
     move-result-object v3
 
-    .line 4
     iget-object v4, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v4, v4, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -134,7 +128,6 @@
 
     invoke-virtual {v4, v5}, Landroid/widget/LinearLayout;->draw(Landroid/graphics/Canvas;)V
 
-    .line 5
     iget-object v4, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v4, v4, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -151,7 +144,6 @@
 
     const/4 v6, 0x0
 
-    .line 6
     invoke-static {v6, v6}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v7
@@ -162,7 +154,6 @@
 
     invoke-virtual {v4, v7, v8}, Landroid/widget/LinearLayout;->measure(II)V
 
-    .line 7
     invoke-virtual {v4}, Landroid/widget/LinearLayout;->getMeasuredWidth()I
 
     move-result v7
@@ -173,15 +164,12 @@
 
     invoke-virtual {v4, v6, v6, v7, v8}, Landroid/widget/LinearLayout;->layout(IIII)V
 
-    .line 8
     invoke-virtual {v4}, Landroid/widget/LinearLayout;->buildDrawingCache()V
 
-    .line 9
     invoke-virtual {v4}, Landroid/widget/LinearLayout;->getDrawingCache()Landroid/graphics/Bitmap;
 
     move-result-object v7
 
-    .line 10
     iget-object v8, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v8, v8, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -190,14 +178,12 @@
 
     const/high16 v8, 0x41900000    # 18.0f
 
-    .line 11
     invoke-static {v8}, Lcom/ifengyu/intercom/i/c0;->a(F)F
 
     move-result v9
 
     float-to-int v9, v9
 
-    .line 12
     invoke-static {v8}, Lcom/ifengyu/intercom/i/c0;->a(F)F
 
     move-result v8
@@ -206,7 +192,6 @@
 
     const/high16 v10, 0x40800000    # 4.0f
 
-    .line 13
     invoke-static {v10}, Lcom/ifengyu/intercom/i/c0;->a(F)F
 
     move-result v10
@@ -215,14 +200,12 @@
 
     const/high16 v11, 0x40000000    # 2.0f
 
-    .line 14
     invoke-static {v11}, Lcom/ifengyu/intercom/i/c0;->a(F)F
 
     move-result v11
 
     float-to-int v11, v11
 
-    .line 15
     iget-object v12, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v12, v12, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -235,7 +218,6 @@
 
     move-result v12
 
-    .line 16
     iget-object v13, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v13, v13, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -248,7 +230,6 @@
 
     move-result v13
 
-    .line 17
     iget-object v14, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v14, v14, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -261,7 +242,6 @@
 
     move-result v14
 
-    .line 18
     iget-object v15, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v15, v15, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -274,7 +254,6 @@
 
     move-result v15
 
-    .line 19
     iget-object v6, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v6, v6, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -287,7 +266,6 @@
 
     move-result v6
 
-    .line 20
     iget-object v5, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v5, v5, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -354,7 +332,6 @@
 
     float-to-int v5, v5
 
-    .line 21
     sget v6, Lcom/ifengyu/intercom/d;->b:I
 
     add-int/2addr v7, v8
@@ -373,7 +350,6 @@
 
     add-int/2addr v13, v5
 
-    .line 22
     invoke-virtual {v4}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v14
@@ -384,17 +360,14 @@
 
     sget-object v14, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
-    .line 23
     invoke-static {v6, v13, v14}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object v6
 
-    .line 24
     new-instance v13, Landroid/graphics/Canvas;
 
     invoke-direct {v13, v6}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 25
     iget-object v14, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v14, v14, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -411,12 +384,10 @@
 
     invoke-virtual {v13, v14}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 26
     new-instance v14, Landroid/graphics/Paint;
 
     invoke-direct {v14}, Landroid/graphics/Paint;-><init>()V
 
-    .line 27
     new-instance v15, Landroid/graphics/BlurMaskFilter;
 
     move-object/from16 v17, v4
@@ -429,7 +400,6 @@
 
     invoke-direct {v15, v4, v3}, Landroid/graphics/BlurMaskFilter;-><init>(FLandroid/graphics/BlurMaskFilter$Blur;)V
 
-    .line 28
     iget-object v3, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v3, v3, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -446,10 +416,8 @@
 
     invoke-virtual {v14, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 29
     invoke-virtual {v14, v15}, Landroid/graphics/Paint;->setMaskFilter(Landroid/graphics/MaskFilter;)Landroid/graphics/MaskFilter;
 
-    .line 30
     invoke-virtual {v6}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v3
@@ -478,7 +446,6 @@
 
     const/4 v1, 0x0
 
-    .line 31
     invoke-virtual {v0, v14, v1}, Landroid/graphics/Bitmap;->extractAlpha(Landroid/graphics/Paint;[I)Landroid/graphics/Bitmap;
 
     move-result-object v5
@@ -517,7 +484,6 @@
 
     invoke-virtual {v13, v5, v1, v10, v14}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 32
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Bitmap;->getWidth()I
@@ -540,7 +506,6 @@
 
     invoke-virtual {v13, v0, v1, v4, v5}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 33
     invoke-virtual {v2, v14, v5}, Landroid/graphics/Bitmap;->extractAlpha(Landroid/graphics/Paint;[I)Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -567,7 +532,6 @@
 
     invoke-virtual {v13, v0, v1, v4, v14}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 34
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
@@ -594,7 +558,6 @@
 
     move-object/from16 v0, v18
 
-    .line 35
     invoke-virtual {v0, v14, v4}, Landroid/graphics/Bitmap;->extractAlpha(Landroid/graphics/Paint;[I)Landroid/graphics/Bitmap;
 
     move-result-object v1
@@ -621,7 +584,6 @@
 
     invoke-virtual {v13, v1, v2, v4, v14}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 36
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
@@ -646,7 +608,6 @@
 
     invoke-virtual {v13, v0, v1, v2, v5}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 37
     invoke-virtual/range {v17 .. v17}, Landroid/widget/LinearLayout;->getWidth()I
 
     move-result v0
@@ -655,7 +616,6 @@
 
     div-int/lit8 v3, v3, 0x2
 
-    .line 38
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-virtual/range {v16 .. v16}, Landroid/graphics/Bitmap;->getWidth()I
@@ -694,12 +654,10 @@
 
     invoke-virtual {v13, v2, v0, v1, v3}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 39
     invoke-virtual/range {v17 .. v17}, Landroid/widget/LinearLayout;->destroyDrawingCache()V
 
     move-object/from16 v1, p0
 
-    .line 40
     :try_start_0
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
@@ -743,7 +701,6 @@
 
     invoke-static {v0, v2}, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;->a(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;Ljava/io/File;)Ljava/io/File;
 
-    .line 41
     new-instance v0, Ljava/io/FileOutputStream;
 
     iget-object v2, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
@@ -756,7 +713,6 @@
 
     invoke-direct {v0, v2}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    .line 42
     sget-object v2, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
     const/16 v3, 0x64
@@ -765,20 +721,16 @@
 
     invoke-virtual {v4, v2, v3, v0}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 43
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->flush()V
 
-    .line 44
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
 
-    .line 45
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 46
     iget-object v0, v1, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
@@ -796,7 +748,6 @@
     :catch_0
     move-exception v0
 
-    .line 47
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_0

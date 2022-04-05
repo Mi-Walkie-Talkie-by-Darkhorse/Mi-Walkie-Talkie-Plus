@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/datepicker/CalendarConstraints$Builder;
 .super Ljava/lang/Object;
-.source "CalendarConstraints.java"
 
 
 # annotations
@@ -40,7 +39,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lcom/google/android/material/datepicker/Month;->create(II)Lcom/google/android/material/datepicker/Month;
 
     move-result-object v0
@@ -57,7 +55,6 @@
 
     const/16 v1, 0xb
 
-    .line 2
     invoke-static {v0, v1}, Lcom/google/android/material/datepicker/Month;->create(II)Lcom/google/android/material/datepicker/Month;
 
     move-result-object v0
@@ -76,22 +73,18 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     sget-wide v0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->DEFAULT_START:J
 
     iput-wide v0, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->start:J
 
-    .line 3
     sget-wide v0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->DEFAULT_END:J
 
     iput-wide v0, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->end:J
 
     const-wide/high16 v0, -0x8000000000000000L
 
-    .line 4
     invoke-static {v0, v1}, Lcom/google/android/material/datepicker/DateValidatorPointForward;->from(J)Lcom/google/android/material/datepicker/DateValidatorPointForward;
 
     move-result-object v0
@@ -108,29 +101,24 @@
         .end annotation
     .end param
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
     sget-wide v0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->DEFAULT_START:J
 
     iput-wide v0, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->start:J
 
-    .line 7
     sget-wide v0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->DEFAULT_END:J
 
     iput-wide v0, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->end:J
 
     const-wide/high16 v0, -0x8000000000000000L
 
-    .line 8
     invoke-static {v0, v1}, Lcom/google/android/material/datepicker/DateValidatorPointForward;->from(J)Lcom/google/android/material/datepicker/DateValidatorPointForward;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->validator:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
-    .line 9
     invoke-static {p1}, Lcom/google/android/material/datepicker/CalendarConstraints;->access$100(Lcom/google/android/material/datepicker/CalendarConstraints;)Lcom/google/android/material/datepicker/Month;
 
     move-result-object v0
@@ -139,7 +127,6 @@
 
     iput-wide v0, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->start:J
 
-    .line 10
     invoke-static {p1}, Lcom/google/android/material/datepicker/CalendarConstraints;->access$200(Lcom/google/android/material/datepicker/CalendarConstraints;)Lcom/google/android/material/datepicker/Month;
 
     move-result-object v0
@@ -148,7 +135,6 @@
 
     iput-wide v0, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->end:J
 
-    .line 11
     invoke-static {p1}, Lcom/google/android/material/datepicker/CalendarConstraints;->access$300(Lcom/google/android/material/datepicker/CalendarConstraints;)Lcom/google/android/material/datepicker/Month;
 
     move-result-object v0
@@ -161,7 +147,6 @@
 
     iput-object v0, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->openAt:Ljava/lang/Long;
 
-    .line 12
     invoke-static {p1}, Lcom/google/android/material/datepicker/CalendarConstraints;->access$400(Lcom/google/android/material/datepicker/CalendarConstraints;)Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
     move-result-object p1
@@ -178,36 +163,30 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->validator:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
     const-string v2, "DEEP_COPY_VALIDATOR_KEY"
 
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 3
     new-instance v1, Lcom/google/android/material/datepicker/CalendarConstraints;
 
     iget-wide v3, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->start:J
 
-    .line 4
     invoke-static {v3, v4}, Lcom/google/android/material/datepicker/Month;->create(J)Lcom/google/android/material/datepicker/Month;
 
     move-result-object v4
 
     iget-wide v5, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->end:J
 
-    .line 5
     invoke-static {v5, v6}, Lcom/google/android/material/datepicker/Month;->create(J)Lcom/google/android/material/datepicker/Month;
 
     move-result-object v5
 
-    .line 6
     invoke-virtual {v0, v2}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object v0
@@ -224,7 +203,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
@@ -251,7 +229,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iput-wide p1, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->end:J
 
     return-object p0
@@ -262,7 +239,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -277,7 +253,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iput-wide p1, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->start:J
 
     return-object p0
@@ -292,7 +267,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;->validator:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
     return-object p0

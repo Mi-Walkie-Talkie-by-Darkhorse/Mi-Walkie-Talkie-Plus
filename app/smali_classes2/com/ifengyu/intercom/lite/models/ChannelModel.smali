@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/models/ChannelModel;
 .super Ljava/lang/Object;
-.source "ChannelModel.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -103,7 +102,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/lite/models/ChannelModel$1;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel$1;-><init>()V
@@ -116,7 +114,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -127,28 +124,20 @@
     .annotation build Landroidx/room/Ignore;
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput p1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->channelSeq:I
 
-    .line 4
     iput p2, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveFreq:I
 
-    .line 5
     iput p3, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendFreq:I
 
-    .line 6
     iput p4, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneType:I
 
-    .line 7
     iput p5, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneValue:I
 
-    .line 8
     iput p6, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneType:I
 
-    .line 9
     iput p7, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneValue:I
 
     return-void
@@ -157,12 +146,10 @@
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
-    .line 21
     const-class v0, Ljava/lang/Long;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v1
@@ -175,7 +162,6 @@
 
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->id:Ljava/lang/Long;
 
-    .line 23
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v0
@@ -188,49 +174,42 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->configId:Ljava/lang/Long;
 
-    .line 24
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->channelSeq:I
 
-    .line 25
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveFreq:I
 
-    .line 26
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendFreq:I
 
-    .line 27
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneType:I
 
-    .line 28
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneValue:I
 
-    .line 29
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneType:I
 
-    .line 30
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -243,10 +222,8 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;)V
     .locals 2
 
-    .line 10
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 11
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;->getSeq()I
 
     move-result v0
@@ -259,25 +236,21 @@
 
     const/4 v0, 0x0
 
-    .line 12
     :cond_0
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->channelSeq:I
 
-    .line 13
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;->getRxFreq()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveFreq:I
 
-    .line 14
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;->getTxFreq()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendFreq:I
 
-    .line 15
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;->getRxCss()I
 
     move-result v0
@@ -292,11 +265,9 @@
 
     const/4 v0, 0x0
 
-    .line 16
     :cond_1
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneType:I
 
-    .line 17
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;->getRxCss()I
 
     move-result v0
@@ -305,7 +276,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneValue:I
 
-    .line 18
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;->getTxCss()I
 
     move-result v0
@@ -323,11 +293,9 @@
     :cond_2
     move v1, v0
 
-    .line 19
     :goto_0
     iput v1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneType:I
 
-    .line 20
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;->getTxCss()I
 
     move-result p1
@@ -346,22 +314,16 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveFreq:I
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendFreq:I
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneType:I
 
-    .line 4
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneValue:I
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneType:I
 
-    .line 6
     iput v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneValue:I
 
     return-void
@@ -378,7 +340,6 @@
 .method public getChannelSeq()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->channelSeq:I
 
     return v0
@@ -387,7 +348,6 @@
 .method public getConfigId()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->configId:Ljava/lang/Long;
 
     return-object v0
@@ -396,7 +356,6 @@
 .method public getDisplayReceiveFreq()Ljava/lang/String;
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveFreq:I
 
     if-gtz v0, :cond_0
@@ -418,7 +377,6 @@
 
     div-float/2addr v0, v3
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v0
@@ -437,7 +395,6 @@
 .method public getDisplayReceiveFreqWithTone()Ljava/lang/String;
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveFreq:I
 
     if-gtz v0, :cond_0
@@ -459,7 +416,6 @@
 
     div-float/2addr v0, v3
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v0
@@ -492,7 +448,6 @@
 .method public getDisplayReceiveTone()Ljava/lang/String;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/b/a;->b:[[Ljava/lang/String;
 
     iget v1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneType:I
@@ -509,7 +464,6 @@
 .method public getDisplaySendFreq()Ljava/lang/String;
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendFreq:I
 
     if-gtz v0, :cond_0
@@ -531,7 +485,6 @@
 
     div-float/2addr v0, v3
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v0
@@ -550,7 +503,6 @@
 .method public getDisplaySendFreqWithTone()Ljava/lang/String;
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendFreq:I
 
     if-gtz v0, :cond_0
@@ -572,7 +524,6 @@
 
     div-float/2addr v0, v3
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v0
@@ -605,7 +556,6 @@
 .method public getDisplaySendTone()Ljava/lang/String;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/b/a;->b:[[Ljava/lang/String;
 
     iget v1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneType:I
@@ -626,7 +576,6 @@
 
     new-array v1, v0, [Ljava/lang/Object;
 
-    .line 1
     iget v2, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->channelSeq:I
 
     add-int/2addr v2, v0
@@ -651,7 +600,6 @@
 .method public getId()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->id:Ljava/lang/Long;
 
     return-object v0
@@ -660,7 +608,6 @@
 .method public getReceiveFreq()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveFreq:I
 
     return v0
@@ -669,7 +616,6 @@
 .method public getReceiveToneType()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneType:I
 
     return v0
@@ -678,7 +624,6 @@
 .method public getReceiveToneValue()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneValue:I
 
     return v0
@@ -687,7 +632,6 @@
 .method public getSendFreq()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendFreq:I
 
     return v0
@@ -696,7 +640,6 @@
 .method public getSendToneType()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneType:I
 
     return v0
@@ -705,7 +648,6 @@
 .method public getSendToneValue()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneValue:I
 
     return v0
@@ -714,7 +656,6 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveFreq:I
 
     if-lez v0, :cond_1
@@ -741,7 +682,6 @@
 .method public setChannelSeq(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->channelSeq:I
 
     return-void
@@ -750,7 +690,6 @@
 .method public setConfigId(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->configId:Ljava/lang/Long;
 
     return-void
@@ -759,7 +698,6 @@
 .method public setId(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->id:Ljava/lang/Long;
 
     return-void
@@ -768,7 +706,6 @@
 .method public setReceiveFreq(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveFreq:I
 
     return-void
@@ -777,7 +714,6 @@
 .method public setReceiveToneType(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneType:I
 
     return-void
@@ -786,7 +722,6 @@
 .method public setReceiveToneValue(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneValue:I
 
     return-void
@@ -795,7 +730,6 @@
 .method public setSendFreq(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendFreq:I
 
     return-void
@@ -804,7 +738,6 @@
 .method public setSendToneType(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneType:I
 
     return-void
@@ -813,7 +746,6 @@
 .method public setSendToneValue(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneValue:I
 
     return-void
@@ -822,7 +754,6 @@
 .method public toChannelInfo()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;
     .locals 4
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;->newBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;
 
     move-result-object v0
@@ -831,14 +762,12 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;->setSeq(I)Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;
 
     move-result-object v0
 
     iget v1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveFreq:I
 
-    .line 3
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;->setRxFreq(I)Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;
 
     move-result-object v0
@@ -862,7 +791,6 @@
 
     add-int/2addr v3, v1
 
-    .line 4
     :goto_0
     invoke-virtual {v0, v3}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;->setRxCss(I)Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;
 
@@ -870,7 +798,6 @@
 
     iget v1, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendFreq:I
 
-    .line 5
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;->setTxFreq(I)Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;
 
     move-result-object v0
@@ -890,13 +817,11 @@
 
     add-int/2addr v2, v1
 
-    .line 6
     :goto_1
     invoke-virtual {v0, v2}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;->setTxCss(I)Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;
 
     move-result-object v0
 
-    .line 7
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo$Builder;->build()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;
 
     move-result-object v0
@@ -909,7 +834,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1000,47 +924,38 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 1
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->id:Ljava/lang/Long;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeValue(Ljava/lang/Object;)V
 
-    .line 2
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->configId:Ljava/lang/Long;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeValue(Ljava/lang/Object;)V
 
-    .line 3
     iget p2, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->channelSeq:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 4
     iget p2, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveFreq:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 5
     iget p2, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendFreq:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 6
     iget p2, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneType:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 7
     iget p2, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->receiveToneValue:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 8
     iget p2, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneType:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 9
     iget p2, p0, Lcom/ifengyu/intercom/lite/models/ChannelModel;->sendToneValue:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

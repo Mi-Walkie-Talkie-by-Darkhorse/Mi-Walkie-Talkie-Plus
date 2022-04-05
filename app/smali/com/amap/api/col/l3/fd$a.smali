@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/fd$a;
 .super Ljava/lang/Object;
-.source "OfflineDownloadedAdapter.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/fd;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/fd$a;->b:Lcom/amap/api/col/l3/fd;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

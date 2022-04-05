@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$a;
 .super Ljava/lang/Object;
-.source "ForgetPasswordFragment.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$a;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$a;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->A()V

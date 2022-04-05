@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/e$c;
 .super Ljava/lang/Thread;
-.source "ApsManager.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/e$c;->a:Lcom/amap/api/col/l3/e;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -35,7 +33,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/e$c;->a:Lcom/amap/api/col/l3/e;
 
@@ -43,14 +40,12 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/e$c;->a:Lcom/amap/api/col/l3/e;
 
     const/4 v1, 0x1
 
     iput-boolean v1, v0, Lcom/amap/api/col/l3/e;->p:Z
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/e$c;->a:Lcom/amap/api/col/l3/e;
 
     new-instance v1, Ljava/net/ServerSocket;
@@ -61,7 +56,6 @@
 
     iput-object v1, v0, Lcom/amap/api/col/l3/e;->o:Ljava/net/ServerSocket;
 
-    .line 4
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/amap/api/col/l3/e$c;->a:Lcom/amap/api/col/l3/e;
@@ -76,7 +70,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/e$c;->a:Lcom/amap/api/col/l3/e;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/e$c;->a:Lcom/amap/api/col/l3/e;
@@ -89,7 +82,6 @@
 
     iput-object v1, v0, Lcom/amap/api/col/l3/e;->q:Ljava/net/Socket;
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/e$c;->a:Lcom/amap/api/col/l3/e;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/e$c;->a:Lcom/amap/api/col/l3/e;
@@ -109,10 +101,8 @@
 
     const-string v2, "run"
 
-    .line 7
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
     :cond_1
     invoke-super {p0}, Ljava/lang/Thread;->run()V
 

@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/fragment/app/FragmentManager$OpGenerator;
 .super Ljava/lang/Object;
-.source "FragmentManager.java"
 
 
 # annotations

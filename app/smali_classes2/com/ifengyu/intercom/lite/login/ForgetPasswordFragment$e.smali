@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$e;
 .super Ljava/lang/Object;
-.source "ForgetPasswordFragment.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnDismissListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$e;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 4
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$e;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->h(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;)Ljava/lang/String;
@@ -55,7 +52,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$e;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->h(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;)Ljava/lang/String;
@@ -82,7 +78,6 @@
 
     invoke-virtual {p1, v0, v1, v2, v3}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$e;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
@@ -90,17 +85,14 @@
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->a(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$e;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->b(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$e;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->c(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$e;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->d(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;Ljava/lang/String;)Ljava/lang/String;

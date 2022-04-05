@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/api/IProjection;
 .super Ljava/lang/Object;
-.source "IProjection.java"
 
 
 # virtual methods

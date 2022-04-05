@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/utils/b;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # static fields
@@ -23,17 +22,14 @@
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/tencent/open/utils/b$2;
 
     invoke-direct {v0, p0}, Lcom/tencent/open/utils/b$2;-><init>(Lcom/tencent/open/utils/b;)V
 
     iput-object v0, p0, Lcom/tencent/open/utils/b;->f:Ljava/lang/Runnable;
 
-    .line 3
     new-instance v0, Lcom/tencent/open/utils/b$1;
 
     invoke-virtual {p1}, Landroid/app/Activity;->getMainLooper()Landroid/os/Looper;
@@ -52,7 +48,6 @@
 
     const-string v0, "getbitmap bmp fail---"
 
-    .line 32
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -73,13 +68,11 @@
 
     const/4 v1, 0x0
 
-    .line 33
     :try_start_0
     new-instance v3, Ljava/net/URL;
 
     invoke-direct {v3, p0}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    .line 34
     invoke-virtual {v3}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object v3
@@ -88,26 +81,20 @@
 
     const/4 v4, 0x1
 
-    .line 35
     invoke-virtual {v3, v4}, Ljava/net/HttpURLConnection;->setDoInput(Z)V
 
-    .line 36
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->connect()V
 
-    .line 37
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v3
 
-    .line 38
     invoke-static {v3}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
 
     move-result-object v4
 
-    .line 39
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
 
-    .line 40
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -132,10 +119,8 @@
     :catch_0
     move-exception p0
 
-    .line 41
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 42
     invoke-static {v2, v0}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v1
@@ -143,10 +128,8 @@
     :catch_1
     move-exception p0
 
-    .line 43
     invoke-virtual {p0}, Ljava/lang/OutOfMemoryError;->printStackTrace()V
 
-    .line 44
     invoke-static {v2, v0}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v1
@@ -155,7 +138,6 @@
 .method static synthetic a(Lcom/tencent/open/utils/b;)Lcom/tencent/open/utils/c;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/tencent/open/utils/b;->b:Lcom/tencent/open/utils/c;
 
     return-object p0
@@ -164,7 +146,6 @@
 .method static synthetic a()Ljava/lang/String;
     .locals 1
 
-    .line 2
     sget-object v0, Lcom/tencent/open/utils/b;->c:Ljava/lang/String;
 
     return-object v0
@@ -173,7 +154,6 @@
 .method static synthetic b(Lcom/tencent/open/utils/b;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/tencent/open/utils/b;->a:Ljava/lang/String;
 
     return-object p0
@@ -182,7 +162,6 @@
 .method static synthetic c(Lcom/tencent/open/utils/b;)Landroid/os/Handler;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/tencent/open/utils/b;->e:Landroid/os/Handler;
 
     return-object p0
@@ -191,7 +170,6 @@
 .method static synthetic d(Lcom/tencent/open/utils/b;)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/tencent/open/utils/b;->d:J
 
     return-wide v0
@@ -206,7 +184,6 @@
 
     const-string v1, "--save---"
 
-    .line 3
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
@@ -215,7 +192,6 @@
 
     const-string v1, ""
 
-    .line 4
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -224,7 +200,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-static {}, Lcom/tencent/open/utils/i;->b()Z
 
@@ -234,12 +209,10 @@
 
     const/4 p1, 0x2
 
-    .line 6
     invoke-interface {p2, p1, v0}, Lcom/tencent/open/utils/c;->a(ILjava/lang/String;)V
 
     return-void
 
-    .line 7
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -261,20 +234,16 @@
 
     sput-object v0, Lcom/tencent/open/utils/b;->c:Ljava/lang/String;
 
-    .line 8
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/tencent/open/utils/b;->d:J
 
-    .line 9
     iput-object p1, p0, Lcom/tencent/open/utils/b;->a:Ljava/lang/String;
 
-    .line 10
     iput-object p2, p0, Lcom/tencent/open/utils/b;->b:Lcom/tencent/open/utils/c;
 
-    .line 11
     new-instance p1, Ljava/lang/Thread;
 
     iget-object p2, p0, Lcom/tencent/open/utils/b;->f:Ljava/lang/Runnable;
@@ -289,7 +258,6 @@
     :goto_0
     const/4 p1, 0x1
 
-    .line 12
     invoke-interface {p2, p1, v0}, Lcom/tencent/open/utils/c;->a(ILjava/lang/String;)V
 
     return-void
@@ -300,28 +268,23 @@
 
     const-string v0, "AsynLoadImg"
 
-    .line 13
     sget-object v1, Lcom/tencent/open/utils/b;->c:Ljava/lang/String;
 
     const/4 v2, 0x0
 
-    .line 14
     :try_start_0
     new-instance v3, Ljava/io/File;
 
     invoke-direct {v3, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 15
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 16
     invoke-virtual {v3}, Ljava/io/File;->mkdir()Z
 
-    .line 17
     :cond_0
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -335,7 +298,6 @@
 
     move-result-object v1
 
-    .line 18
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -352,12 +314,10 @@
 
     invoke-static {v0, p2}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 19
     new-instance p2, Ljava/io/File;
 
     invoke-direct {p2, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 20
     new-instance v1, Ljava/io/BufferedOutputStream;
 
     new-instance v3, Ljava/io/FileOutputStream;
@@ -369,7 +329,6 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 21
     :try_start_1
     sget-object p2, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -377,13 +336,11 @@
 
     invoke-virtual {p1, p2, v2, v1}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 22
     invoke-virtual {v1}, Ljava/io/BufferedOutputStream;->flush()V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 23
     :try_start_2
     invoke-virtual {v1}, Ljava/io/BufferedOutputStream;->close()V
     :try_end_2
@@ -394,7 +351,6 @@
     :catch_0
     move-exception p1
 
-    .line 24
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_0
@@ -424,14 +380,12 @@
     :catch_2
     move-exception p1
 
-    .line 25
     :goto_1
     :try_start_3
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     const-string p2, "saveFile bmp fail---"
 
-    .line 26
     invoke-static {v0, p2, p1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
@@ -440,7 +394,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 27
     :try_start_4
     invoke-virtual {v2}, Ljava/io/BufferedOutputStream;->close()V
     :try_end_4
@@ -451,7 +404,6 @@
     :catch_3
     move-exception p2
 
-    .line 28
     invoke-virtual {p2}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_1
@@ -461,7 +413,6 @@
     :goto_3
     if-eqz v2, :cond_2
 
-    .line 29
     :try_start_5
     invoke-virtual {v2}, Ljava/io/BufferedOutputStream;->close()V
     :try_end_5
@@ -472,10 +423,8 @@
     :catch_4
     move-exception p2
 
-    .line 30
     invoke-virtual {p2}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 31
     :cond_2
     :goto_4
     throw p1

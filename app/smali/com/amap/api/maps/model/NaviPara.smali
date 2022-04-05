@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/NaviPara;
 .super Ljava/lang/Object;
-.source "NaviPara.java"
 
 
 # static fields
@@ -60,12 +59,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/amap/api/maps/model/NaviPara;->a:I
 
     return-void
@@ -76,7 +73,6 @@
 .method public getNaviStyle()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/NaviPara;->a:I
 
     return v0
@@ -85,7 +81,6 @@
 .method public getTargetPoint()Lcom/amap/api/maps/model/LatLng;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/NaviPara;->b:Lcom/amap/api/maps/model/LatLng;
 
     return-object v0
@@ -100,7 +95,6 @@
 
     if-ge p1, v0, :cond_0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/NaviPara;->a:I
 
     :cond_0
@@ -110,7 +104,6 @@
 .method public setTargetPoint(Lcom/amap/api/maps/model/LatLng;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/NaviPara;->b:Lcom/amap/api/maps/model/LatLng;
 
     return-void

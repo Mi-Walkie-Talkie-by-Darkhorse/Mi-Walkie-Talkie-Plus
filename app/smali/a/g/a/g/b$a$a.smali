@@ -1,6 +1,5 @@
 .class La/g/a/g/b$a$a;
 .super Ljava/lang/Object;
-.source "FrameworkSQLiteOpenHelper.java"
 
 # interfaces
 .implements Landroid/database/DatabaseErrorHandler;
@@ -27,7 +26,6 @@
 .method constructor <init>(La/g/a/c$a;[La/g/a/g/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, La/g/a/g/b$a$a;->a:La/g/a/c$a;
 
     iput-object p2, p0, La/g/a/g/b$a$a;->b:[La/g/a/g/a;
@@ -42,7 +40,6 @@
 .method public onCorruption(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, La/g/a/g/b$a$a;->a:La/g/a/c$a;
 
     iget-object v1, p0, La/g/a/g/b$a$a;->b:[La/g/a/g/a;

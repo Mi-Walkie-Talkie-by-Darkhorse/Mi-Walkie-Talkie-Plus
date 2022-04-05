@@ -1,6 +1,5 @@
 .class Landroidx/lifecycle/r$a;
 .super Ljava/lang/Object;
-.source "ProcessLifecycleOwner.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/lifecycle/r;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/lifecycle/r$a;->a:Landroidx/lifecycle/r;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/r$a;->a:Landroidx/lifecycle/r;
 
     invoke-virtual {v0}, Landroidx/lifecycle/r;->e()V
 
-    .line 2
     iget-object v0, p0, Landroidx/lifecycle/r$a;->a:Landroidx/lifecycle/r;
 
     invoke-virtual {v0}, Landroidx/lifecycle/r;->f()V

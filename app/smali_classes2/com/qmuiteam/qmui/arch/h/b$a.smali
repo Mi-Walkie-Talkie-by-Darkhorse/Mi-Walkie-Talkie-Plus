@@ -1,6 +1,5 @@
 .class final Lcom/qmuiteam/qmui/arch/h/b$a;
 .super Ljava/lang/Object;
-.source "FirstFragmentFinders.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/arch/h/a;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

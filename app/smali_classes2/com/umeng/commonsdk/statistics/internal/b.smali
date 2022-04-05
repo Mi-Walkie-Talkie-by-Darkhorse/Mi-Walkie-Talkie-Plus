@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/commonsdk/statistics/internal/b;
 .super Ljava/lang/Object;
-.source "IRequestStat.java"
 
 
 # virtual methods

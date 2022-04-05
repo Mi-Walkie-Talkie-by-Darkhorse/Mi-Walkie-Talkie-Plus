@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m;
 .super Ljava/lang/Object;
-.source "DolphinSettingActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/node/h;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -56,7 +54,6 @@
 .method public d(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m$a;
@@ -77,7 +74,6 @@
 .method public f(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m$b;

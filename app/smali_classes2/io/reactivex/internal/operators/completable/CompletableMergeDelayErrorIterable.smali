@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/completable/CompletableMergeDelayErrorIterable;
 .super Lio/reactivex/Completable;
-.source "CompletableMergeDelayErrorIterable.java"
 
 
 # instance fields
@@ -29,10 +28,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableMergeDelayErrorIterable;->sources:Ljava/lang/Iterable;
 
     return-void
@@ -43,15 +40,12 @@
 .method public subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 6
 
-    .line 1
     new-instance v0, Lio/reactivex/disposables/CompositeDisposable;
 
     invoke-direct {v0}, Lio/reactivex/disposables/CompositeDisposable;-><init>()V
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/CompletableObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lio/reactivex/internal/operators/completable/CompletableMergeDelayErrorIterable;->sources:Ljava/lang/Iterable;
 
@@ -69,19 +63,16 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 4
     new-instance v2, Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v3, 0x1
 
     invoke-direct {v2, v3}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    .line 5
     new-instance v3, Lio/reactivex/internal/util/AtomicThrowable;
 
     invoke-direct {v3}, Lio/reactivex/internal/util/AtomicThrowable;-><init>()V
 
-    .line 6
     :goto_0
     invoke-virtual {v0}, Lio/reactivex/disposables/CompositeDisposable;->isDisposed()Z
 
@@ -91,7 +82,6 @@
 
     return-void
 
-    .line 7
     :cond_0
     :try_start_1
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
@@ -104,7 +94,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_1
     invoke-virtual {v0}, Lio/reactivex/disposables/CompositeDisposable;->isDisposed()Z
 
@@ -114,7 +103,6 @@
 
     return-void
 
-    .line 9
     :cond_2
     :try_start_2
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -131,7 +119,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 10
     invoke-virtual {v0}, Lio/reactivex/disposables/CompositeDisposable;->isDisposed()Z
 
     move-result v5
@@ -140,11 +127,9 @@
 
     return-void
 
-    .line 11
     :cond_3
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
-    .line 12
     new-instance v5, Lio/reactivex/internal/operators/completable/CompletableMergeDelayErrorArray$MergeInnerCompletableObserver;
 
     invoke-direct {v5, p1, v0, v3, v2}, Lio/reactivex/internal/operators/completable/CompletableMergeDelayErrorArray$MergeInnerCompletableObserver;-><init>(Lio/reactivex/CompletableObserver;Lio/reactivex/disposables/CompositeDisposable;Lio/reactivex/internal/util/AtomicThrowable;Ljava/util/concurrent/atomic/AtomicInteger;)V
@@ -156,10 +141,8 @@
     :catchall_0
     move-exception v0
 
-    .line 13
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 14
     invoke-virtual {v3, v0}, Lio/reactivex/internal/util/AtomicThrowable;->addThrowable(Ljava/lang/Throwable;)Z
 
     goto :goto_1
@@ -167,13 +150,10 @@
     :catchall_1
     move-exception v0
 
-    .line 15
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 16
     invoke-virtual {v3, v0}, Lio/reactivex/internal/util/AtomicThrowable;->addThrowable(Ljava/lang/Throwable;)Z
 
-    .line 17
     :goto_1
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
 
@@ -181,19 +161,16 @@
 
     if-nez v0, :cond_5
 
-    .line 18
     invoke-virtual {v3}, Lio/reactivex/internal/util/AtomicThrowable;->terminate()Ljava/lang/Throwable;
 
     move-result-object v0
 
     if-nez v0, :cond_4
 
-    .line 19
     invoke-interface {p1}, Lio/reactivex/CompletableObserver;->onComplete()V
 
     goto :goto_2
 
-    .line 20
     :cond_4
     invoke-interface {p1, v0}, Lio/reactivex/CompletableObserver;->onError(Ljava/lang/Throwable;)V
 
@@ -204,10 +181,8 @@
     :catchall_2
     move-exception v0
 
-    .line 21
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 22
     invoke-interface {p1, v0}, Lio/reactivex/CompletableObserver;->onError(Ljava/lang/Throwable;)V
 
     return-void

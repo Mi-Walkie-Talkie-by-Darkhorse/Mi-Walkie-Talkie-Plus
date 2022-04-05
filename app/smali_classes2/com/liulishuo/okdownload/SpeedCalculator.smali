@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/SpeedCalculator;
 .super Ljava/lang/Object;
-.source "SpeedCalculator.java"
 
 
 # instance fields
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 .method private static humanReadableSpeed(JZ)Ljava/lang/String;
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -57,7 +54,6 @@
 .method public averageSpeed()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->speedFromBegin()Ljava/lang/String;
 
     move-result-object v0
@@ -70,7 +66,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->timestamp:J
 
@@ -80,17 +75,14 @@
 
     if-nez v4, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->nowMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->timestamp:J
 
-    .line 3
     iput-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->beginTimestamp:J
 
-    .line 4
     :cond_0
     iget-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->increaseBytes:J
 
@@ -98,7 +90,6 @@
 
     iput-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->increaseBytes:J
 
-    .line 5
     iget-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->allIncreaseBytes:J
 
     add-long/2addr v0, p1
@@ -107,7 +98,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     monitor-exit p0
 
     return-void
@@ -125,7 +115,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->nowMillis()J
 
@@ -135,7 +124,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     monitor-exit p0
 
     return-void
@@ -153,18 +141,15 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->nowMillis()J
 
     move-result-wide v0
 
-    .line 2
     iget-wide v2, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->increaseBytes:J
 
     const-wide/16 v4, 0x1
 
-    .line 3
     iget-wide v6, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->timestamp:J
 
     sub-long v6, v0, v6
@@ -175,10 +160,8 @@
 
     const-wide/16 v6, 0x0
 
-    .line 4
     iput-wide v6, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->increaseBytes:J
 
-    .line 5
     iput-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->timestamp:J
 
     long-to-float v0, v2
@@ -193,12 +176,10 @@
 
     float-to-long v0, v0
 
-    .line 6
     iput-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->bytesPerSecond:J
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
     monitor-exit p0
 
     return-void
@@ -216,7 +197,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->nowMillis()J
 
@@ -234,7 +214,6 @@
 
     if-gez v6, :cond_0
 
-    .line 2
     iget-wide v2, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->bytesPerSecond:J
 
     cmp-long v6, v2, v4
@@ -249,7 +228,6 @@
 
     return-wide v0
 
-    .line 3
     :cond_0
     :try_start_1
     iget-wide v2, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->bytesPerSecond:J
@@ -270,7 +248,6 @@
 
     return-wide v4
 
-    .line 4
     :cond_1
     :try_start_2
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->getInstantBytesPerSecondAndFlush()J
@@ -296,7 +273,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->endTimestamp:J
 
@@ -315,13 +291,11 @@
     :cond_0
     iget-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->endTimestamp:J
 
-    .line 2
     :goto_0
     iget-wide v2, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->allIncreaseBytes:J
 
     const-wide/16 v4, 0x1
 
-    .line 3
     iget-wide v6, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->beginTimestamp:J
 
     sub-long/2addr v0, v6
@@ -344,7 +318,6 @@
 
     float-to-long v0, v2
 
-    .line 4
     monitor-exit p0
 
     return-wide v0
@@ -360,10 +333,8 @@
 .method public getInstantBytesPerSecondAndFlush()J
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->flush()V
 
-    .line 2
     iget-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->bytesPerSecond:J
 
     return-wide v0
@@ -374,7 +345,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->nowMillis()J
 
@@ -401,7 +371,6 @@
 .method public getSpeedWithBinaryAndFlush()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->getInstantBytesPerSecondAndFlush()J
 
     move-result-wide v0
@@ -418,7 +387,6 @@
 .method public getSpeedWithSIAndFlush()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->getInstantBytesPerSecondAndFlush()J
 
     move-result-wide v0
@@ -435,7 +403,6 @@
 .method public instantSpeed()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->getSpeedWithSIAndFlush()Ljava/lang/String;
 
     move-result-object v0
@@ -446,7 +413,6 @@
 .method public lastSpeed()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->bytesPerSecond:J
 
     const/4 v2, 0x1
@@ -461,7 +427,6 @@
 .method nowMillis()J
     .locals 2
 
-    .line 1
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
@@ -476,28 +441,21 @@
 
     const-wide/16 v0, 0x0
 
-    .line 1
     :try_start_0
     iput-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->timestamp:J
 
-    .line 2
     iput-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->increaseBytes:J
 
-    .line 3
     iput-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->bytesPerSecond:J
 
-    .line 4
     iput-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->beginTimestamp:J
 
-    .line 5
     iput-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->endTimestamp:J
 
-    .line 6
     iput-wide v0, p0, Lcom/liulishuo/okdownload/SpeedCalculator;->allIncreaseBytes:J
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
     monitor-exit p0
 
     return-void
@@ -513,7 +471,6 @@
 .method public speed()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->getBytesPerSecondAndFlush()J
 
     move-result-wide v0
@@ -530,7 +487,6 @@
 .method public speedFromBegin()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/SpeedCalculator;->getBytesPerSecondFromBegin()J
 
     move-result-wide v0

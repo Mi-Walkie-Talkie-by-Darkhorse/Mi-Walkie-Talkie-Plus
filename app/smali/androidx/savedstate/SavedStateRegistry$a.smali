@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/savedstate/SavedStateRegistry$a;
 .super Ljava/lang/Object;
-.source "SavedStateRegistry.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Lorg/greenrobot/greendao/rx/RxBase;
 .super Ljava/lang/Object;
-.source "RxBase.java"
 
 
 # annotations
@@ -16,12 +15,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lorg/greenrobot/greendao/rx/RxBase;->scheduler:Lrx/Scheduler;
 
     return-void
@@ -32,10 +29,8 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     iput-object p1, p0, Lorg/greenrobot/greendao/rx/RxBase;->scheduler:Lrx/Scheduler;
 
     return-void
@@ -48,7 +43,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/rx/RxBase;->scheduler:Lrx/Scheduler;
 
     return-object v0
@@ -68,7 +62,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lorg/greenrobot/greendao/rx/RxUtils;->fromCallable(Ljava/util/concurrent/Callable;)Lrx/Observable;
 
     move-result-object p1
@@ -94,12 +87,10 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lorg/greenrobot/greendao/rx/RxBase;->scheduler:Lrx/Scheduler;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p1, v0}, Lrx/Observable;->subscribeOn(Lrx/Scheduler;)Lrx/Observable;
 
     move-result-object p1

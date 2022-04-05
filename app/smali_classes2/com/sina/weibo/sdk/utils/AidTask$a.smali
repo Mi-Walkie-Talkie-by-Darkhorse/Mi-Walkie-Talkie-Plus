@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/utils/AidTask$a;
 .super Ljava/lang/Object;
-.source "AidTask.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,10 +24,8 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/utils/AidTask;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/utils/AidTask$a;->a:Lcom/sina/weibo/sdk/utils/AidTask;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +45,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget-object v1, p0, Lcom/sina/weibo/sdk/utils/AidTask$a;->a:Lcom/sina/weibo/sdk/utils/AidTask;
 
@@ -56,7 +52,6 @@
 
     move-result-object v1
 
-    .line 2
     :try_start_0
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
     :try_end_0

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity_ViewBinding;
 .super Ljava/lang/Object;
-.source "ConnectDeviceActivity_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
-    .line 3
     const-class v0, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     const v1, 0x7f090426
@@ -47,22 +43,18 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     return-void
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

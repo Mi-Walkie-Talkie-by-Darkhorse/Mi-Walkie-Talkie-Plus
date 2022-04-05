@@ -1,6 +1,5 @@
 .class public Lb/d/a/a/c/c;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "ViewHolder.java"
 
 
 # instance fields
@@ -21,13 +20,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
-    .line 2
     iput-object p2, p0, Lb/d/a/a/c/c;->b:Landroid/view/View;
 
-    .line 3
     new-instance p1, Landroid/util/SparseArray;
 
     invoke-direct {p1}, Landroid/util/SparseArray;-><init>()V
@@ -40,7 +36,6 @@
 .method public static a(Landroid/content/Context;Landroid/view/View;)Lb/d/a/a/c/c;
     .locals 1
 
-    .line 1
     new-instance v0, Lb/d/a/a/c/c;
 
     invoke-direct {v0, p0, p1}, Lb/d/a/a/c/c;-><init>(Landroid/content/Context;Landroid/view/View;)V
@@ -51,7 +46,6 @@
 .method public static a(Landroid/content/Context;Landroid/view/ViewGroup;I)Lb/d/a/a/c/c;
     .locals 2
 
-    .line 2
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
@@ -62,7 +56,6 @@
 
     move-result-object p1
 
-    .line 3
     new-instance p2, Lb/d/a/a/c/c;
 
     invoke-direct {p2, p0, p1}, Lb/d/a/a/c/c;-><init>(Landroid/content/Context;Landroid/view/View;)V
@@ -75,7 +68,6 @@
 .method public a()Landroid/view/View;
     .locals 1
 
-    .line 7
     iget-object v0, p0, Lb/d/a/a/c/c;->b:Landroid/view/View;
 
     return-object v0
@@ -91,7 +83,6 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lb/d/a/a/c/c;->a:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -102,14 +93,12 @@
 
     if-nez v0, :cond_0
 
-    .line 5
     iget-object v0, p0, Lb/d/a/a/c/c;->b:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 6
     iget-object v1, p0, Lb/d/a/a/c/c;->a:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V

@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector;
 .super Lio/reactivex/internal/operators/maybe/AbstractMaybeWithUpstream;
-.source "MaybeFlatMapBiSelector.java"
 
 
 # annotations
@@ -64,13 +63,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/maybe/AbstractMaybeWithUpstream;-><init>(Lio/reactivex/MaybeSource;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector;->mapper:Lio/reactivex/functions/Function;
 
-    .line 3
     iput-object p3, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector;->resultSelector:Lio/reactivex/functions/BiFunction;
 
     return-void
@@ -88,7 +84,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/maybe/AbstractMaybeWithUpstream;->source:Lio/reactivex/MaybeSource;
 
     new-instance v1, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector$FlatMapBiMainObserver;

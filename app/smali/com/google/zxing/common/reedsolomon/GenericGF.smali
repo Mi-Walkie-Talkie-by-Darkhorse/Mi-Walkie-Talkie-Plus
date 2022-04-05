@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/common/reedsolomon/GenericGF;
 .super Ljava/lang/Object;
-.source "GenericGF.java"
 
 
 # static fields
@@ -41,7 +40,6 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/google/zxing/common/reedsolomon/GenericGF;
 
     const/4 v1, 0x1
@@ -54,7 +52,6 @@
 
     sput-object v0, Lcom/google/zxing/common/reedsolomon/GenericGF;->AZTEC_DATA_12:Lcom/google/zxing/common/reedsolomon/GenericGF;
 
-    .line 2
     new-instance v0, Lcom/google/zxing/common/reedsolomon/GenericGF;
 
     const/16 v2, 0x409
@@ -65,7 +62,6 @@
 
     sput-object v0, Lcom/google/zxing/common/reedsolomon/GenericGF;->AZTEC_DATA_10:Lcom/google/zxing/common/reedsolomon/GenericGF;
 
-    .line 3
     new-instance v0, Lcom/google/zxing/common/reedsolomon/GenericGF;
 
     const/16 v2, 0x43
@@ -76,7 +72,6 @@
 
     sput-object v0, Lcom/google/zxing/common/reedsolomon/GenericGF;->AZTEC_DATA_6:Lcom/google/zxing/common/reedsolomon/GenericGF;
 
-    .line 4
     new-instance v0, Lcom/google/zxing/common/reedsolomon/GenericGF;
 
     const/16 v2, 0x13
@@ -87,7 +82,6 @@
 
     sput-object v0, Lcom/google/zxing/common/reedsolomon/GenericGF;->AZTEC_PARAM:Lcom/google/zxing/common/reedsolomon/GenericGF;
 
-    .line 5
     new-instance v0, Lcom/google/zxing/common/reedsolomon/GenericGF;
 
     const/16 v2, 0x100
@@ -100,19 +94,16 @@
 
     sput-object v0, Lcom/google/zxing/common/reedsolomon/GenericGF;->QR_CODE_FIELD_256:Lcom/google/zxing/common/reedsolomon/GenericGF;
 
-    .line 6
     new-instance v0, Lcom/google/zxing/common/reedsolomon/GenericGF;
 
     const/16 v3, 0x12d
 
     invoke-direct {v0, v3, v2, v1}, Lcom/google/zxing/common/reedsolomon/GenericGF;-><init>(III)V
 
-    .line 7
     sput-object v0, Lcom/google/zxing/common/reedsolomon/GenericGF;->DATA_MATRIX_FIELD_256:Lcom/google/zxing/common/reedsolomon/GenericGF;
 
     sput-object v0, Lcom/google/zxing/common/reedsolomon/GenericGF;->AZTEC_DATA_8:Lcom/google/zxing/common/reedsolomon/GenericGF;
 
-    .line 8
     sget-object v0, Lcom/google/zxing/common/reedsolomon/GenericGF;->AZTEC_DATA_6:Lcom/google/zxing/common/reedsolomon/GenericGF;
 
     sput-object v0, Lcom/google/zxing/common/reedsolomon/GenericGF;->MAXICODE_FIELD_64:Lcom/google/zxing/common/reedsolomon/GenericGF;
@@ -123,24 +114,18 @@
 .method public constructor <init>(III)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->primitive:I
 
-    .line 3
     iput p2, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->size:I
 
-    .line 4
     iput p3, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->generatorBase:I
 
-    .line 5
     new-array p3, p2, [I
 
     iput-object p3, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->expTable:[I
 
-    .line 6
     new-array p3, p2, [I
 
     iput-object p3, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->logTable:[I
@@ -156,7 +141,6 @@
     :goto_0
     if-ge v1, p2, :cond_1
 
-    .line 7
     iget-object v3, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->expTable:[I
 
     aput v2, v3, v1
@@ -184,7 +168,6 @@
 
     if-ge p1, v1, :cond_2
 
-    .line 8
     iget-object v1, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->logTable:[I
 
     iget-object v2, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->expTable:[I
@@ -197,7 +180,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_2
     new-instance p1, Lcom/google/zxing/common/reedsolomon/GenericGFPoly;
 
@@ -209,7 +191,6 @@
 
     iput-object p1, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->zero:Lcom/google/zxing/common/reedsolomon/GenericGFPoly;
 
-    .line 10
     new-instance p1, Lcom/google/zxing/common/reedsolomon/GenericGFPoly;
 
     new-array p2, v0, [I
@@ -240,7 +221,6 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     iget-object p1, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->zero:Lcom/google/zxing/common/reedsolomon/GenericGFPoly;
 
     return-object p1
@@ -248,22 +228,18 @@
     :cond_0
     add-int/lit8 p1, p1, 0x1
 
-    .line 2
     new-array p1, p1, [I
 
     const/4 v0, 0x0
 
-    .line 3
     aput p2, p1, v0
 
-    .line 4
     new-instance p2, Lcom/google/zxing/common/reedsolomon/GenericGFPoly;
 
     invoke-direct {p2, p0, p1}, Lcom/google/zxing/common/reedsolomon/GenericGFPoly;-><init>(Lcom/google/zxing/common/reedsolomon/GenericGF;[I)V
 
     return-object p2
 
-    .line 5
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -275,7 +251,6 @@
 .method exp(I)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->expTable:[I
 
     aget p1, v0, p1
@@ -286,7 +261,6 @@
 .method public getGeneratorBase()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->generatorBase:I
 
     return v0
@@ -295,7 +269,6 @@
 .method getOne()Lcom/google/zxing/common/reedsolomon/GenericGFPoly;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->one:Lcom/google/zxing/common/reedsolomon/GenericGFPoly;
 
     return-object v0
@@ -304,7 +277,6 @@
 .method public getSize()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->size:I
 
     return v0
@@ -313,7 +285,6 @@
 .method getZero()Lcom/google/zxing/common/reedsolomon/GenericGFPoly;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->zero:Lcom/google/zxing/common/reedsolomon/GenericGFPoly;
 
     return-object v0
@@ -324,7 +295,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->expTable:[I
 
     iget v1, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->size:I
@@ -341,7 +311,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/ArithmeticException;
 
@@ -355,14 +324,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->logTable:[I
 
     aget p1, v0, p1
 
     return p1
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -380,7 +347,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/google/zxing/common/reedsolomon/GenericGF;->expTable:[I
 
@@ -412,7 +378,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "GF(0x"

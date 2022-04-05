@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/do;
 .super Ljava/lang/Object;
-.source "StyleParser.java"
 
 
 # instance fields
@@ -15,20 +14,16 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/do;->b:I
 
     const/16 v0, 0x23
 
-    .line 3
     iput-char v0, p0, Lcom/amap/api/col/l3/do;->c:C
 
-    .line 4
     iput-object p1, p0, Lcom/amap/api/col/l3/do;->a:Landroid/content/Context;
 
     return-void
@@ -37,7 +32,6 @@
 .method private static a(Ljava/lang/String;)I
     .locals 2
 
-    .line 101
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -48,7 +42,6 @@
 
     return v1
 
-    .line 102
     :cond_0
     :try_start_0
     invoke-static {p0}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
@@ -62,7 +55,6 @@
     :catchall_0
     move-exception p0
 
-    .line 103
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
@@ -74,7 +66,6 @@
 
     const/4 v0, 0x0
 
-    .line 49
     :try_start_0
     new-instance v1, Lcom/amap/api/col/l3/dl;
 
@@ -87,15 +78,12 @@
 
     const-string v2, "utf-8"
 
-    .line 50
     invoke-virtual {v0, v2}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object v0
 
-    .line 51
     array-length v2, p0
 
-    .line 52
     array-length v3, v0
 
     const/4 v4, 0x0
@@ -105,10 +93,8 @@
     :goto_0
     if-ge v5, v2, :cond_0
 
-    .line 53
     rem-int v6, v5, v3
 
-    .line 54
     aget-byte v7, p0, v5
 
     aget-byte v6, v0, v6
@@ -117,7 +103,6 @@
 
     int-to-byte v6, v6
 
-    .line 55
     aput-byte v6, p0, v5
 
     add-int/lit8 v5, v5, 0x1
@@ -127,48 +112,40 @@
     :cond_0
     const/4 v0, 0x4
 
-    .line 56
     invoke-static {p0, v4, v0}, Lcom/autonavi/amap/mapcore/Convert;->getString([BII)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 57
     invoke-virtual {v1, v3}, Lcom/amap/api/col/l3/dl;->a(Ljava/lang/String;)V
 
     const/16 v3, 0x20
 
-    .line 58
     invoke-static {p0, v0, v3}, Lcom/autonavi/amap/mapcore/Convert;->getString([BII)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 59
     invoke-virtual {v1, v0}, Lcom/amap/api/col/l3/dl;->b(Ljava/lang/String;)V
 
     const/16 v0, 0x24
 
     const/16 v3, 0xa
 
-    .line 60
     invoke-static {p0, v0, v3}, Lcom/autonavi/amap/mapcore/Convert;->getString([BII)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 61
     invoke-virtual {v1, v0}, Lcom/amap/api/col/l3/dl;->c(Ljava/lang/String;)V
 
     const/16 v0, 0x2e
 
     const/16 v3, 0x10
 
-    .line 62
     invoke-static {p0, v0, v3}, Lcom/autonavi/amap/mapcore/Convert;->getSubBytes([BII)[B
 
     move-result-object v0
 
     const/16 v4, 0x3e
 
-    .line 63
     invoke-static {p0, v4, v3}, Lcom/autonavi/amap/mapcore/Convert;->getSubBytes([BII)[B
 
     move-result-object v3
@@ -177,12 +154,10 @@
 
     sub-int/2addr v2, v4
 
-    .line 64
     invoke-static {p0, v4, v2}, Lcom/autonavi/amap/mapcore/Convert;->getSubBytes([BII)[B
 
     move-result-object p0
 
-    .line 65
     invoke-static {p0, v0, v3}, Lcom/amap/api/col/l3/do;->a([B[B[B)Ljava/lang/String;
 
     move-result-object p0
@@ -203,7 +178,6 @@
     :catchall_1
     move-exception p0
 
-    .line 66
     :goto_1
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
@@ -226,7 +200,6 @@
         }
     .end annotation
 
-    .line 94
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -239,19 +212,16 @@
 
     if-nez v0, :cond_0
 
-    .line 95
     new-instance v0, Lcom/autonavi/ae/gmap/style/StyleItem;
 
     invoke-direct {v0, p1}, Lcom/autonavi/ae/gmap/style/StyleItem;-><init>(I)V
 
-    .line 96
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
     invoke-interface {p0, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 97
     :cond_0
     invoke-virtual {v0, p2}, Lcom/autonavi/ae/gmap/style/StyleItem;->get(I)Lcom/autonavi/ae/gmap/style/StyleElement;
 
@@ -259,15 +229,12 @@
 
     if-nez p0, :cond_1
 
-    .line 98
     new-instance p0, Lcom/autonavi/ae/gmap/style/StyleElement;
 
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/style/StyleElement;-><init>()V
 
-    .line 99
     iput p2, p0, Lcom/autonavi/ae/gmap/style/StyleElement;->styleElementType:I
 
-    .line 100
     invoke-virtual {v0, p2, p0}, Lcom/autonavi/ae/gmap/style/StyleItem;->put(ILcom/autonavi/ae/gmap/style/StyleElement;)V
 
     :cond_1
@@ -277,13 +244,11 @@
 .method private static a([B[B[B)Ljava/lang/String;
     .locals 2
 
-    .line 67
     :try_start_0
     new-instance v0, Ljavax/crypto/spec/IvParameterSpec;
 
     invoke-direct {v0, p2}, Ljavax/crypto/spec/IvParameterSpec;-><init>([B)V
 
-    .line 68
     new-instance p2, Ljavax/crypto/spec/SecretKeySpec;
 
     const-string v1, "AES"
@@ -292,22 +257,18 @@
 
     const-string p1, "AES/CBC/NoPadding"
 
-    .line 69
     invoke-static {p1}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object p1
 
     const/4 v1, 0x2
 
-    .line 70
     invoke-virtual {p1, v1, p2, v0}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
 
-    .line 71
     invoke-virtual {p1, p0}, Ljavax/crypto/Cipher;->doFinal([B)[B
 
     move-result-object p0
 
-    .line 72
     new-instance p1, Ljava/lang/String;
 
     const-string p2, "utf-8"
@@ -321,7 +282,6 @@
     :catchall_0
     move-exception p0
 
-    .line 73
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p0, 0x0
@@ -355,7 +315,6 @@
 
     const-string v0, "roads"
 
-    .line 15
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -372,7 +331,6 @@
 
     const-string p1, "subwayline"
 
-    .line 16
     :cond_0
     invoke-static {p1}, Lcom/amap/api/col/l3/dq;->a(Ljava/lang/String;)I
 
@@ -382,7 +340,6 @@
 
     const/4 v0, 0x1
 
-    .line 17
     invoke-virtual {p3, p1, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
@@ -391,7 +348,6 @@
 
     if-nez v1, :cond_1
 
-    .line 18
     invoke-static {p1}, Lcom/amap/api/col/l3/dm;->a(Ljava/lang/String;)I
 
     move-result p1
@@ -400,7 +356,6 @@
 
     move-result-object p0
 
-    .line 19
     iput v2, p0, Lcom/autonavi/ae/gmap/style/StyleElement;->textureId:I
 
     return-void
@@ -408,7 +363,6 @@
     :cond_1
     const-string p1, "showIcon"
 
-    .line 20
     invoke-virtual {p3, p1, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
 
     move-result p1
@@ -417,7 +371,6 @@
 
     if-nez p1, :cond_2
 
-    .line 21
     invoke-static {v1}, Lcom/amap/api/col/l3/dm;->a(Ljava/lang/String;)I
 
     move-result p1
@@ -426,13 +379,11 @@
 
     move-result-object p1
 
-    .line 22
     iput v2, p1, Lcom/autonavi/ae/gmap/style/StyleElement;->textureId:I
 
     :cond_2
     const-string p1, "showLabel"
 
-    .line 23
     invoke-virtual {p3, p1, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
 
     move-result p1
@@ -441,7 +392,6 @@
 
     if-nez p1, :cond_3
 
-    .line 24
     invoke-static {v1}, Lcom/amap/api/col/l3/dm;->a(Ljava/lang/String;)I
 
     move-result p1
@@ -452,10 +402,8 @@
 
     const/4 v2, 0x0
 
-    .line 25
     iput v2, p1, Lcom/autonavi/ae/gmap/style/StyleElement;->opacity:F
 
-    .line 26
     invoke-static {v0}, Lcom/amap/api/col/l3/dm;->a(Ljava/lang/String;)I
 
     move-result p1
@@ -464,7 +412,6 @@
 
     move-result-object p1
 
-    .line 27
     iput v2, p1, Lcom/autonavi/ae/gmap/style/StyleElement;->opacity:F
 
     :cond_3
@@ -472,38 +419,32 @@
 
     const-string v2, "opacity"
 
-    .line 28
     invoke-static {p2, p3, p1, v2, p0}, Lcom/amap/api/col/l3/do;->a(Ljava/util/Map;Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;I)V
 
     const-string p1, "fillColor"
 
     const-string v2, "fillOpacity"
 
-    .line 29
     invoke-static {p2, p3, p1, v2, p0}, Lcom/amap/api/col/l3/do;->a(Ljava/util/Map;Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;I)V
 
     const-string p1, "strokeColor"
 
     const-string v2, "strokeOpacity"
 
-    .line 30
     invoke-static {p2, p3, p1, v2, p0}, Lcom/amap/api/col/l3/do;->a(Ljava/util/Map;Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;I)V
 
     const-string p1, "textFillOpacity"
 
-    .line 31
     invoke-static {p2, p3, v1, p1, p0}, Lcom/amap/api/col/l3/do;->a(Ljava/util/Map;Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;I)V
 
     const-string p1, "textStrokeOpacity"
 
-    .line 32
     invoke-static {p2, p3, v0, p1, p0}, Lcom/amap/api/col/l3/do;->a(Ljava/util/Map;Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;I)V
 
     const-string p1, "backgroundColor"
 
     const-string v0, "backgroundOpacity"
 
-    .line 33
     invoke-static {p2, p3, p1, v0, p0}, Lcom/amap/api/col/l3/do;->a(Ljava/util/Map;Lorg/json/JSONObject;Ljava/lang/String;Ljava/lang/String;I)V
 
     if-eqz p4, :cond_5
@@ -512,7 +453,6 @@
 
     const/4 p4, 0x0
 
-    .line 34
     :try_start_0
     invoke-virtual {p3, p1, p4}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
 
@@ -574,7 +514,6 @@
     :cond_0
     const-string v0, "subType"
 
-    .line 9
     invoke-virtual {p2, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
@@ -583,12 +522,10 @@
 
     const/4 v0, 0x0
 
-    .line 10
     invoke-static {v0, p0, p1, p2, p3}, Lcom/amap/api/col/l3/do;->a(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Lorg/json/JSONObject;Z)V
 
     return-void
 
-    .line 11
     :cond_1
     invoke-virtual {v0}, Lorg/json/JSONObject;->names()Lorg/json/JSONArray;
 
@@ -596,7 +533,6 @@
 
     const/4 v1, 0x0
 
-    .line 12
     :goto_0
     invoke-virtual {p2}, Lorg/json/JSONArray;->length()I
 
@@ -604,12 +540,10 @@
 
     if-ge v1, v2, :cond_2
 
-    .line 13
     invoke-virtual {p2, v1}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 14
     invoke-virtual {v0, v2}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -642,7 +576,6 @@
 
     const/4 v0, 0x0
 
-    .line 35
     :try_start_0
     invoke-virtual {p1, p2, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -652,7 +585,6 @@
 
     const/4 v2, 0x0
 
-    .line 36
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -661,7 +593,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 37
     invoke-virtual {p1, p3, v4, v5}, Lorg/json/JSONObject;->optDouble(Ljava/lang/String;D)D
 
     move-result-wide v0
@@ -670,7 +601,6 @@
 
     goto :goto_0
 
-    .line 38
     :cond_0
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -699,21 +629,17 @@
 
     return-void
 
-    .line 39
     :cond_1
     invoke-static {p2}, Lcom/amap/api/col/l3/dm;->a(Ljava/lang/String;)I
 
     move-result p1
 
-    .line 40
     invoke-static {p0, p4, p1}, Lcom/amap/api/col/l3/do;->a(Ljava/util/Map;II)Lcom/autonavi/ae/gmap/style/StyleElement;
 
     move-result-object p2
 
-    .line 41
     iput v2, p2, Lcom/autonavi/ae/gmap/style/StyleElement;->value:I
 
-    .line 42
     iput v1, p2, Lcom/autonavi/ae/gmap/style/StyleElement;->opacity:F
 
     const/16 p2, 0x27
@@ -722,14 +648,12 @@
 
     if-ne p4, p2, :cond_2
 
-    .line 43
     invoke-static {p0, p4, p3}, Lcom/amap/api/col/l3/do;->a(Ljava/util/Map;II)Lcom/autonavi/ae/gmap/style/StyleElement;
 
     move-result-object p0
 
     const/4 p1, 0x0
 
-    .line 44
     iput p1, p0, Lcom/autonavi/ae/gmap/style/StyleElement;->opacity:F
 
     return-void
@@ -743,15 +667,12 @@
 
     if-ne p1, p2, :cond_3
 
-    .line 45
     invoke-static {p0, p4, p3}, Lcom/amap/api/col/l3/do;->a(Ljava/util/Map;II)Lcom/autonavi/ae/gmap/style/StyleElement;
 
     move-result-object p0
 
-    .line 46
     iput v2, p0, Lcom/autonavi/ae/gmap/style/StyleElement;->value:I
 
-    .line 47
     iput v1, p0, Lcom/autonavi/ae/gmap/style/StyleElement;->opacity:F
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -762,7 +683,6 @@
     :catchall_0
     move-exception p0
 
-    .line 48
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -792,16 +712,13 @@
 
     const/4 v1, 0x0
 
-    .line 91
     :goto_0
     array-length v2, p2
 
     if-ge v1, v2, :cond_2
 
-    .line 92
     aget v2, p2, v1
 
-    .line 93
     invoke-static {p0, v2, p3}, Lcom/amap/api/col/l3/do;->a(Ljava/util/Map;II)Lcom/autonavi/ae/gmap/style/StyleElement;
 
     move-result-object v3
@@ -897,7 +814,6 @@
 
     const/4 v0, 0x0
 
-    .line 74
     :try_start_0
     new-instance v1, Ljava/lang/String;
 
@@ -905,14 +821,12 @@
 
     invoke-direct {v1, p2, v2}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
 
-    .line 75
     new-instance p2, Lorg/json/JSONArray;
 
     invoke-direct {p2, v1}, Lorg/json/JSONArray;-><init>(Ljava/lang/String;)V
 
     const/4 v1, 0x0
 
-    .line 76
     :goto_0
     invoke-virtual {p2}, Lorg/json/JSONArray;->length()I
 
@@ -920,19 +834,16 @@
 
     if-ge v1, v2, :cond_2
 
-    .line 77
     invoke-virtual {p2, v1}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v2
 
     const-string v3, "featureType"
 
-    .line 78
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 79
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v4
@@ -941,7 +852,6 @@
 
     const-string v4, "background"
 
-    .line 80
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -950,7 +860,6 @@
 
     const-string v3, "stylers"
 
-    .line 81
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
@@ -959,7 +868,6 @@
 
     const-string v3, "color"
 
-    .line 82
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -970,12 +878,10 @@
 
     if-eqz v2, :cond_1
 
-    .line 83
     iput v2, p0, Lcom/amap/api/col/l3/do;->b:I
 
     goto :goto_1
 
-    .line 84
     :cond_0
     invoke-static {v3}, Lcom/amap/api/col/l3/dn;->a(Ljava/lang/String;)[I
 
@@ -983,26 +889,22 @@
 
     if-eqz v3, :cond_1
 
-    .line 85
     array-length v4, v3
 
     if-eqz v4, :cond_1
 
     const-string v4, "elementType"
 
-    .line 86
     invoke-virtual {v2, v4}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 87
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
     if-nez v5, :cond_1
 
-    .line 88
     invoke-static {v4}, Lcom/amap/api/col/l3/dm;->a(Ljava/lang/String;)I
 
     move-result v4
@@ -1011,7 +913,6 @@
 
     if-eq v4, v5, :cond_1
 
-    .line 89
     invoke-static {p1, v2, v3, v4}, Lcom/amap/api/col/l3/do;->a(Ljava/util/Map;Lorg/json/JSONObject;[II)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1031,7 +932,6 @@
     :catchall_0
     move-exception p1
 
-    .line 90
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :catch_0
@@ -1043,7 +943,6 @@
 .method public final a()I
     .locals 1
 
-    .line 104
     iget v0, p0, Lcom/amap/api/col/l3/do;->b:I
 
     return v0
@@ -1052,13 +951,11 @@
 .method public final a(Ljava/lang/String;Z)Lcom/amap/api/col/l3/dp;
     .locals 0
 
-    .line 6
     :try_start_0
     invoke-static {p1}, Lcom/autonavi/amap/mapcore/FileUtil;->readFileContents(Ljava/lang/String;)[B
 
     move-result-object p1
 
-    .line 7
     invoke-virtual {p0, p1, p2}, Lcom/amap/api/col/l3/do;->a([BZ)Lcom/amap/api/col/l3/dp;
 
     move-result-object p1
@@ -1070,7 +967,6 @@
     :catchall_0
     move-exception p1
 
-    .line 8
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -1083,12 +979,10 @@
 
     const-string v0, "background"
 
-    .line 1
     new-instance v1, Lcom/amap/api/col/l3/dp;
 
     invoke-direct {v1}, Lcom/amap/api/col/l3/dp;-><init>()V
 
-    .line 2
     :try_start_0
     invoke-virtual {v1}, Lcom/amap/api/col/l3/dp;->a()Ljava/util/Map;
 
@@ -1100,7 +994,6 @@
 
     if-nez v2, :cond_3
 
-    .line 3
     invoke-static {p1}, Lcom/amap/api/col/l3/do;->a([B)Lcom/amap/api/col/l3/dl;
 
     move-result-object p1
@@ -1219,7 +1112,6 @@
     :try_start_2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 4
     :cond_3
     invoke-virtual {v1}, Lcom/amap/api/col/l3/dp;->b()[Lcom/autonavi/ae/gmap/style/StyleItem;
     :try_end_2
@@ -1230,7 +1122,6 @@
     :catchall_1
     move-exception p1
 
-    .line 5
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_2

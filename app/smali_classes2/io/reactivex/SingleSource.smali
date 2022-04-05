@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/SingleSource;
 .super Ljava/lang/Object;
-.source "SingleSource.java"
 
 
 # annotations

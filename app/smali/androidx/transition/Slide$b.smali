@@ -1,6 +1,5 @@
 .class Landroidx/transition/Slide$b;
 .super Landroidx/transition/Slide$h;
-.source "Slide.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Landroidx/transition/Slide$h;-><init>(Landroidx/transition/Slide$a;)V
 
     return-void
@@ -31,7 +29,6 @@
 .method public b(Landroid/view/ViewGroup;Landroid/view/View;)F
     .locals 2
 
-    .line 1
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->s(Landroid/view/View;)I
 
     move-result v0
@@ -48,7 +45,6 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 2
     invoke-virtual {p2}, Landroid/view/View;->getTranslationX()F
 
     move-result p2
@@ -63,7 +59,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-virtual {p2}, Landroid/view/View;->getTranslationX()F
 

@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;
 .super Ljava/lang/Object;
-.source "MaterialTimePicker.java"
 
 
 # annotations
@@ -28,10 +27,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-direct {v0}, Lcom/google/android/material/timepicker/TimeModel;-><init>()V
@@ -40,7 +37,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->titleTextResId:I
 
     return-void
@@ -49,7 +45,6 @@
 .method static synthetic access$000(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)Lcom/google/android/material/timepicker/TimeModel;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     return-object p0
@@ -58,7 +53,6 @@
 .method static synthetic access$100(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->inputMode:I
 
     return p0
@@ -67,7 +61,6 @@
 .method static synthetic access$200(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->titleTextResId:I
 
     return p0
@@ -76,7 +69,6 @@
 .method static synthetic access$300(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)Ljava/lang/CharSequence;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->titleText:Ljava/lang/CharSequence;
 
     return-object p0
@@ -89,7 +81,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/android/material/timepicker/MaterialTimePicker;->access$1000(Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;)Lcom/google/android/material/timepicker/MaterialTimePicker;
 
     move-result-object v0
@@ -108,7 +99,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/timepicker/TimeModel;->setHourOfDay(I)V
@@ -121,7 +111,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->inputMode:I
 
     return-object p0
@@ -138,7 +127,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/timepicker/TimeModel;->setMinute(I)V
@@ -151,25 +139,20 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget v1, v0, Lcom/google/android/material/timepicker/TimeModel;->hour:I
 
-    .line 2
     iget v0, v0, Lcom/google/android/material/timepicker/TimeModel;->minute:I
 
-    .line 3
     new-instance v2, Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-direct {v2, p1}, Lcom/google/android/material/timepicker/TimeModel;-><init>(I)V
 
     iput-object v2, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
-    .line 4
     invoke-virtual {v2, v0}, Lcom/google/android/material/timepicker/TimeModel;->setMinute(I)V
 
-    .line 5
     iget-object p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-virtual {p1, v1}, Lcom/google/android/material/timepicker/TimeModel;->setHourOfDay(I)V
@@ -186,7 +169,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->titleTextResId:I
 
     return-object p0
@@ -201,7 +183,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     iput-object p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$Builder;->titleText:Ljava/lang/CharSequence;
 
     return-object p0

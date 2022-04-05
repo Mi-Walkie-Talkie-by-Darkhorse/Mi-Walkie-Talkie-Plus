@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/RawQuery;
 .super Ljava/lang/Object;
-.source "RawQuery.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

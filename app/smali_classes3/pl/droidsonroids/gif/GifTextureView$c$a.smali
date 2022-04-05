@@ -1,6 +1,5 @@
 .class Lpl/droidsonroids/gif/GifTextureView$c$a;
 .super Ljava/lang/Object;
-.source "GifTextureView.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lpl/droidsonroids/gif/GifTextureView$c;Lpl/droidsonroids/gif/GifTextureView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lpl/droidsonroids/gif/GifTextureView$c$a;->b:Lpl/droidsonroids/gif/GifTextureView$c;
 
     iput-object p2, p0, Lpl/droidsonroids/gif/GifTextureView$c$a;->a:Lpl/droidsonroids/gif/GifTextureView;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView$c$a;->a:Lpl/droidsonroids/gif/GifTextureView;
 
     iget-object v1, p0, Lpl/droidsonroids/gif/GifTextureView$c$a;->b:Lpl/droidsonroids/gif/GifTextureView$c;

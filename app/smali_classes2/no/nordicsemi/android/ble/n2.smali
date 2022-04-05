@@ -1,6 +1,5 @@
 .class public abstract Lno/nordicsemi/android/ble/n2;
 .super Lno/nordicsemi/android/ble/m2;
-.source "SimpleValueRequest.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lno/nordicsemi/android/ble/m2;-><init>(Lno/nordicsemi/android/ble/Request$Type;)V
 
     return-void
@@ -49,7 +47,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lno/nordicsemi/android/ble/m2;-><init>(Lno/nordicsemi/android/ble/Request$Type;Landroid/bluetooth/BluetoothGattCharacteristic;)V
 
     return-void
@@ -74,7 +71,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lno/nordicsemi/android/ble/n2;->p:Ljava/lang/Object;
 
     return-object p0

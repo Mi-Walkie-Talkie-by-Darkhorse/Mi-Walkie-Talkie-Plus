@@ -1,6 +1,5 @@
 .class final Lde/greenrobot/event/j;
 .super Ljava/lang/Object;
-.source "SubscriberMethod.java"
 
 
 # instance fields

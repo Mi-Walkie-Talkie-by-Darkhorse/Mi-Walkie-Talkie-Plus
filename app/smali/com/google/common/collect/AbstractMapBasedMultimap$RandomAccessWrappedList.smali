@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/AbstractMapBasedMultimap$RandomAccessWrappedList;
 .super Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
-.source "AbstractMapBasedMultimap.java"
 
 # interfaces
 .implements Ljava/util/RandomAccess;
@@ -51,10 +50,8 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$RandomAccessWrappedList;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
 
-    .line 2
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;-><init>(Lcom/google/common/collect/AbstractMapBasedMultimap;Ljava/lang/Object;Ljava/util/List;Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;)V
 
     return-void

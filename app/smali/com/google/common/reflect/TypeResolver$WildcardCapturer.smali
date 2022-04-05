@@ -1,6 +1,5 @@
 .class final Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
 .super Ljava/lang/Object;
-.source "TypeResolver.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
@@ -38,7 +35,6 @@
 .method synthetic constructor <init>(Lcom/google/common/reflect/TypeResolver$1;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;-><init>()V
 
     return-void
@@ -47,20 +43,17 @@
 .method private capture([Ljava/lang/reflect/Type;)[Ljava/lang/reflect/Type;
     .locals 3
 
-    .line 18
     array-length v0, p1
 
     new-array v0, v0, [Ljava/lang/reflect/Type;
 
     const/4 v1, 0x0
 
-    .line 19
     :goto_0
     array-length v2, p1
 
     if-ge v1, v2, :cond_0
 
-    .line 20
     aget-object v2, p1, v1
 
     invoke-virtual {p0, v2}, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;->capture(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
@@ -90,7 +83,6 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;->capture(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
 
@@ -104,17 +96,14 @@
 .method capture(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
     .locals 4
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     instance-of v0, p1, Ljava/lang/Class;
 
     if-eqz v0, :cond_0
 
     return-object p1
 
-    .line 3
     :cond_0
     instance-of v0, p1, Ljava/lang/reflect/TypeVariable;
 
@@ -122,16 +111,13 @@
 
     return-object p1
 
-    .line 4
     :cond_1
     instance-of v0, p1, Ljava/lang/reflect/GenericArrayType;
 
     if-eqz v0, :cond_2
 
-    .line 5
     check-cast p1, Ljava/lang/reflect/GenericArrayType;
 
-    .line 6
     invoke-interface {p1}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -146,16 +132,13 @@
 
     return-object p1
 
-    .line 7
     :cond_2
     instance-of v0, p1, Ljava/lang/reflect/ParameterizedType;
 
     if-eqz v0, :cond_3
 
-    .line 8
     check-cast p1, Ljava/lang/reflect/ParameterizedType;
 
-    .line 9
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getOwnerType()Ljava/lang/reflect/Type;
 
     move-result-object v0
@@ -184,33 +167,27 @@
 
     return-object p1
 
-    .line 10
     :cond_3
     instance-of v0, p1, Ljava/lang/reflect/WildcardType;
 
     if-eqz v0, :cond_5
 
-    .line 11
     move-object v0, p1
 
     check-cast v0, Ljava/lang/reflect/WildcardType;
 
-    .line 12
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getLowerBounds()[Ljava/lang/reflect/Type;
 
     move-result-object v1
 
-    .line 13
     array-length v1, v1
 
     if-nez v1, :cond_4
 
-    .line 14
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p1
 
-    .line 15
     iget-object v1, p0, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;->id:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
@@ -261,7 +238,6 @@
 
     move-result-object p1
 
-    .line 16
     const-class v1, Lcom/google/common/reflect/TypeResolver$WildcardCapturer;
 
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
@@ -275,7 +251,6 @@
     :cond_4
     return-object p1
 
-    .line 17
     :cond_5
     new-instance p1, Ljava/lang/AssertionError;
 

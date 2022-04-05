@@ -1,6 +1,5 @@
 .class final Lcom/google/common/base/Platform;
 .super Ljava/lang/Object;
-.source "Platform.java"
 
 
 # annotations
@@ -13,7 +12,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +33,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Enums;->getEnumConstants(Ljava/lang/Class;)Ljava/util/Map;
 
     move-result-object v0
@@ -48,7 +45,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object p0
@@ -75,7 +71,6 @@
 .method static precomputeCharMatcher(Lcom/google/common/base/CharMatcher;)Lcom/google/common/base/CharMatcher;
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/base/CharMatcher;->precomputedInternal()Lcom/google/common/base/CharMatcher;
 
     move-result-object p0
@@ -86,7 +81,6 @@
 .method static systemNanoTime()J
     .locals 2
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v0

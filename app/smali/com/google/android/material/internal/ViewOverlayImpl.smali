@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/android/material/internal/ViewOverlayImpl;
 .super Ljava/lang/Object;
-.source "ViewOverlayImpl.java"
 
 
 # annotations

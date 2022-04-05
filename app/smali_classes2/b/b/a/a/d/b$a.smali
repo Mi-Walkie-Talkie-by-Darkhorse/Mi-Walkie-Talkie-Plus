@@ -1,6 +1,5 @@
 .class Lb/b/a/a/d/b$a;
 .super Landroid/os/Handler;
-.source "AppInstallCmdExecutor.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Lb/b/a/a/d/b;Landroid/os/Looper;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lb/b/a/a/d/b$a;->a:Lb/b/a/a/d/b;
 
-    .line 2
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -36,7 +33,6 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    .line 1
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x1
@@ -49,7 +45,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lb/b/a/a/d/b$a;->a:Lb/b/a/a/d/b;
 
@@ -59,7 +54,6 @@
 
     invoke-virtual {p1}, Landroid/os/Looper;->quit()V
 
-    .line 3
     iget-object p1, p0, Lb/b/a/a/d/b$a;->a:Lb/b/a/a/d/b;
 
     const/4 v0, 0x0
@@ -68,7 +62,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lb/b/a/a/d/b$a;->a:Lb/b/a/a/d/b;
 

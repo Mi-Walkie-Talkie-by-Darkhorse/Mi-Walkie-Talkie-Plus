@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/media/VolumeProviderCompat$ControlType;
 .super Ljava/lang/Object;
-.source "VolumeProviderCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

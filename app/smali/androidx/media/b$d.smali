@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/media/b$d;
 .super Ljava/lang/Object;
-.source "MediaBrowserServiceCompatApi21.java"
 
 
 # annotations

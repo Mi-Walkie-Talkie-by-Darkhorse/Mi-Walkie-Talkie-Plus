@@ -1,13 +1,11 @@
 .class Lcom/bumptech/glide/load/engine/m;
 .super Ljava/lang/Object;
-.source "EngineKeyFactory.java"
 
 
 # direct methods
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v9, Lcom/bumptech/glide/load/engine/l;
 
     move-object v0, v9

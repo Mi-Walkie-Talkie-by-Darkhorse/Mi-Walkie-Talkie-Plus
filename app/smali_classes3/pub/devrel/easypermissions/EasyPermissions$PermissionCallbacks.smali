@@ -1,6 +1,5 @@
 .class public interface abstract Lpub/devrel/easypermissions/EasyPermissions$PermissionCallbacks;
 .super Ljava/lang/Object;
-.source "EasyPermissions.java"
 
 # interfaces
 .implements Landroidx/core/app/a$c;

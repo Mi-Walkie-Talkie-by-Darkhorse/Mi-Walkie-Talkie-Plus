@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableBuffer;
 .super Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;
-.source "FlowableBuffer.java"
 
 
 # annotations
@@ -53,16 +52,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;-><init>(Lio/reactivex/Flowable;)V
 
-    .line 2
     iput p2, p0, Lio/reactivex/internal/operators/flowable/FlowableBuffer;->size:I
 
-    .line 3
     iput p3, p0, Lio/reactivex/internal/operators/flowable/FlowableBuffer;->skip:I
 
-    .line 4
     iput-object p4, p0, Lio/reactivex/internal/operators/flowable/FlowableBuffer;->bufferSupplier:Ljava/util/concurrent/Callable;
 
     return-void
@@ -80,14 +75,12 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lio/reactivex/internal/operators/flowable/FlowableBuffer;->size:I
 
     iget v1, p0, Lio/reactivex/internal/operators/flowable/FlowableBuffer;->skip:I
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;->source:Lio/reactivex/Flowable;
 
     new-instance v2, Lio/reactivex/internal/operators/flowable/FlowableBuffer$PublisherBufferExactSubscriber;
@@ -103,7 +96,6 @@
     :cond_0
     if-le v1, v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;->source:Lio/reactivex/Flowable;
 
     new-instance v1, Lio/reactivex/internal/operators/flowable/FlowableBuffer$PublisherBufferSkipSubscriber;
@@ -120,7 +112,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;->source:Lio/reactivex/Flowable;
 

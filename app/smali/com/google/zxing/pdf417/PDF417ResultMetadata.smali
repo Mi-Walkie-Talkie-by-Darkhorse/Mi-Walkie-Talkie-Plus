@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/pdf417/PDF417ResultMetadata;
 .super Ljava/lang/Object;
-.source "PDF417ResultMetadata.java"
 
 
 # instance fields
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 .method public getFileId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/pdf417/PDF417ResultMetadata;->fileId:Ljava/lang/String;
 
     return-object v0
@@ -37,7 +34,6 @@
 .method public getOptionalData()[I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/pdf417/PDF417ResultMetadata;->optionalData:[I
 
     return-object v0
@@ -46,7 +42,6 @@
 .method public getSegmentIndex()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/PDF417ResultMetadata;->segmentIndex:I
 
     return v0
@@ -55,7 +50,6 @@
 .method public isLastSegment()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/zxing/pdf417/PDF417ResultMetadata;->lastSegment:Z
 
     return v0
@@ -64,7 +58,6 @@
 .method public setFileId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/zxing/pdf417/PDF417ResultMetadata;->fileId:Ljava/lang/String;
 
     return-void
@@ -73,7 +66,6 @@
 .method public setLastSegment(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/zxing/pdf417/PDF417ResultMetadata;->lastSegment:Z
 
     return-void
@@ -82,7 +74,6 @@
 .method public setOptionalData([I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/zxing/pdf417/PDF417ResultMetadata;->optionalData:[I
 
     return-void
@@ -91,7 +82,6 @@
 .method public setSegmentIndex(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/zxing/pdf417/PDF417ResultMetadata;->segmentIndex:I
 
     return-void

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/node/p$b;
 .super Ljava/lang/Object;
-.source "WalkTalkTransportManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/node/p;Lcom/ifengyu/intercom/node/transport/h;Ljava/io/OutputStream;Lcom/ifengyu/intercom/node/SendDataWrap;Lcom/ifengyu/intercom/node/transport/j;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/ifengyu/intercom/node/p$b;->a:Lcom/ifengyu/intercom/node/transport/h;
 
     iput-object p3, p0, Lcom/ifengyu/intercom/node/p$b;->b:Ljava/io/OutputStream;
@@ -50,7 +48,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/ifengyu/intercom/node/p$b;->a:Lcom/ifengyu/intercom/node/transport/h;
 
@@ -69,7 +66,6 @@
     :catch_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_0

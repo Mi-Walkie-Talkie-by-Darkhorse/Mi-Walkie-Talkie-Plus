@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$a;
 .super Ljava/lang/Object;
-.source "LoadMoreListView.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$a;->a:Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$a;->a:Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;
 
     invoke-virtual {p1}, Landroid/widget/ListView;->getContext()Landroid/content/Context;
@@ -55,7 +52,6 @@
 
     const p1, 0x7f110248
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object p1
@@ -64,7 +60,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$a;->a:Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;
 
@@ -74,14 +69,12 @@
 
     if-nez p1, :cond_1
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$a;->a:Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;
 
     const/4 v1, 0x1
 
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;->a(Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;Z)Z
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$a;->a:Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;->b(Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;)Landroid/widget/ImageView;
@@ -90,7 +83,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$a;->a:Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;->b(Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;)Landroid/widget/ImageView;
@@ -105,7 +97,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$a;->a:Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;->d(Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;)Landroid/widget/TextView;
@@ -116,7 +107,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$a;->a:Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;->e(Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;)Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$b;
@@ -125,7 +115,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$a;->a:Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;->e(Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView;)Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$b;

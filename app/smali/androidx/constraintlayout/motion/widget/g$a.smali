@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/g$a;
 .super Ljava/lang/Object;
-.source "KeyCycleOscillator.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -30,7 +29,6 @@
 .method constructor <init>(Landroidx/constraintlayout/motion/widget/g;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public a(Landroidx/constraintlayout/motion/widget/g$p;Landroidx/constraintlayout/motion/widget/g$p;)I
     .locals 0
 
-    .line 1
     iget p1, p1, Landroidx/constraintlayout/motion/widget/g$p;->a:I
 
     iget p2, p2, Landroidx/constraintlayout/motion/widget/g$p;->a:I
@@ -56,7 +53,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Landroidx/constraintlayout/motion/widget/g$p;
 
     check-cast p2, Landroidx/constraintlayout/motion/widget/g$p;

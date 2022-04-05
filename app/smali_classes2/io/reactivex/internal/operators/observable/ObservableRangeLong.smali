@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableRangeLong;
 .super Lio/reactivex/Observable;
-.source "ObservableRangeLong.java"
 
 
 # annotations
@@ -29,13 +28,10 @@
 .method public constructor <init>(JJ)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
-    .line 2
     iput-wide p1, p0, Lio/reactivex/internal/operators/observable/ObservableRangeLong;->start:J
 
-    .line 3
     iput-wide p3, p0, Lio/reactivex/internal/operators/observable/ObservableRangeLong;->count:J
 
     return-void
@@ -55,7 +51,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v6, Lio/reactivex/internal/operators/observable/ObservableRangeLong$RangeDisposable;
 
     iget-wide v2, p0, Lio/reactivex/internal/operators/observable/ObservableRangeLong;->start:J
@@ -70,10 +65,8 @@
 
     invoke-direct/range {v0 .. v5}, Lio/reactivex/internal/operators/observable/ObservableRangeLong$RangeDisposable;-><init>(Lio/reactivex/Observer;JJ)V
 
-    .line 2
     invoke-interface {p1, v6}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     invoke-virtual {v6}, Lio/reactivex/internal/operators/observable/ObservableRangeLong$RangeDisposable;->run()V
 
     return-void

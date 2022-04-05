@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;
 .super Landroid/view/View;
-.source "QMUIDraggableScrollBar.java"
 
 
 # annotations
@@ -51,7 +50,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -64,7 +62,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x1
@@ -77,56 +74,44 @@
 
     aput v0, p2, v1
 
-    .line 3
     iput-object p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->a:[I
 
     new-array p2, v1, [I
 
-    .line 4
     iput-object p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->b:[I
 
     const/16 p2, 0x320
 
-    .line 5
     iput p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->d:I
 
     const/16 p2, 0x64
 
-    .line 6
     iput p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->e:I
 
     const-wide/16 v2, 0x0
 
-    .line 7
     iput-wide v2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->f:J
 
     const/4 p2, 0x0
 
-    .line 8
     iput p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->g:F
 
-    .line 9
     iput p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->h:F
 
-    .line 10
     new-instance v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$a;
 
     invoke-direct {v0, p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$a;-><init>(Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;)V
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->i:Ljava/lang/Runnable;
 
-    .line 11
     iput-boolean v1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->j:Z
 
     const/4 v0, -0x1
 
-    .line 12
     iput v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->l:I
 
-    .line 13
     iput p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->m:F
 
-    .line 14
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -139,7 +124,6 @@
 
     iput p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->n:I
 
-    .line 15
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -152,7 +136,6 @@
 
     iput p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->o:I
 
-    .line 16
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->p:Z
 
     return-void
@@ -161,7 +144,6 @@
 .method private a(Landroid/graphics/drawable/Drawable;F)V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->getScrollBarTopMargin()I
 
     move-result v0
@@ -204,20 +186,16 @@
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 2
     invoke-static {p2, p1, v0}, Lcom/qmuiteam/qmui/util/g;->a(FFF)F
 
     move-result p1
 
-    .line 3
     iget-object p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->k:Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$b;
 
     if-eqz p2, :cond_0
 
-    .line 4
     invoke-interface {p2, p1}, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$b;->a(F)V
 
-    .line 5
     :cond_0
     invoke-direct {p0, p1}, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->setPercentInternal(F)V
 
@@ -227,10 +205,8 @@
 .method private setPercentInternal(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->h:F
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
@@ -241,12 +217,10 @@
 .method public a()V
     .locals 8
 
-    .line 6
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->c:Landroid/graphics/drawable/Drawable;
 
     if-nez v0, :cond_0
 
-    .line 7
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -259,13 +233,11 @@
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->c:Landroid/graphics/drawable/Drawable;
 
-    .line 8
     :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 9
     iget-wide v2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->f:J
 
     sub-long v2, v0, v2
@@ -282,10 +254,8 @@
 
     sub-long/2addr v0, v2
 
-    .line 10
     iput-wide v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->f:J
 
-    .line 11
     :cond_1
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->R(Landroid/view/View;)V
 
@@ -315,23 +285,19 @@
 
     move-object/from16 v1, p1
 
-    .line 1
     invoke-super/range {p0 .. p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     iget-object v2, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->c:Landroid/graphics/drawable/Drawable;
 
     if-nez v2, :cond_0
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v3
 
-    .line 4
     invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v4
@@ -345,14 +311,12 @@
     :cond_1
     const/4 v5, -0x1
 
-    .line 5
     iget-boolean v6, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->p:Z
 
     const/high16 v7, 0x3f800000    # 1.0f
 
     if-eqz v6, :cond_5
 
-    .line 6
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v9
@@ -361,7 +325,6 @@
 
     sub-long/2addr v9, v11
 
-    .line 7
     iget v6, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->e:I
 
     int-to-long v11, v6
@@ -380,7 +343,6 @@
 
     div-float/2addr v5, v6
 
-    .line 8
     iput v5, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->g:F
 
     :goto_0
@@ -393,7 +355,6 @@
 
     sub-long v11, v9, v11
 
-    .line 9
     iget v14, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->d:I
 
     move-wide v15, v9
@@ -404,7 +365,6 @@
 
     if-gez v10, :cond_3
 
-    .line 10
     iput v7, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->g:F
 
     int-to-long v7, v14
@@ -444,16 +404,13 @@
 
     sub-float/2addr v7, v5
 
-    .line 11
     iput v7, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->g:F
 
     goto :goto_0
 
-    .line 12
     :cond_4
     iput v13, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->g:F
 
-    .line 13
     :goto_1
     iget v6, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->g:F
 
@@ -463,11 +420,9 @@
 
     return-void
 
-    .line 14
     :cond_5
     iput v7, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->g:F
 
-    .line 15
     :cond_6
     iget v6, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->g:F
 
@@ -479,7 +434,6 @@
 
     invoke-virtual {v2, v6}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
-    .line 16
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getHeight()I
 
     move-result v6
@@ -496,12 +450,10 @@
 
     sub-int/2addr v6, v7
 
-    .line 17
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getWidth()I
 
     move-result v7
 
-    .line 18
     invoke-virtual/range {p0 .. p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->getScrollBarTopMargin()I
 
     move-result v8
@@ -520,7 +472,6 @@
 
     sub-int/2addr v7, v3
 
-    .line 19
     iget-boolean v6, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->j:Z
 
     if-nez v6, :cond_8
@@ -531,7 +482,6 @@
 
     sub-int v9, v8, v6
 
-    .line 20
     iget v10, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->o:I
 
     if-le v9, v10, :cond_7
@@ -547,7 +497,6 @@
 
     goto :goto_3
 
-    .line 21
     :cond_7
     iget v6, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->o:I
 
@@ -561,7 +510,6 @@
 
     if-le v9, v10, :cond_8
 
-    .line 22
     iget v5, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->l:I
 
     sub-int v8, v5, v6
@@ -572,31 +520,24 @@
     :goto_3
     const/4 v6, 0x0
 
-    .line 23
     invoke-virtual {v2, v6, v6, v3, v4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 24
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Canvas;->save()I
 
     int-to-float v3, v7
 
     int-to-float v4, v8
 
-    .line 25
     invoke-virtual {v1, v3, v4}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 26
     invoke-virtual {v2, v1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 27
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Canvas;->restore()V
 
-    .line 28
     iput v8, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->l:I
 
     if-nez v5, :cond_9
 
-    .line 29
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->invalidate()V
 
     goto :goto_4
@@ -604,7 +545,6 @@
     :cond_9
     if-lez v5, :cond_a
 
-    .line 30
     iget-object v1, v0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->i:Ljava/lang/Runnable;
 
     int-to-long v2, v5
@@ -619,17 +559,14 @@
 .method protected onMeasure(II)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->c:Landroid/graphics/drawable/Drawable;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
@@ -637,7 +574,6 @@
 
     const/high16 v0, 0x40000000    # 2.0f
 
-    .line 4
     invoke-static {p1, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result p1
@@ -650,30 +586,25 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->c:Landroid/graphics/drawable/Drawable;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
 
     return p1
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v1
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v2
 
-    .line 5
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result p1
@@ -684,10 +615,8 @@
 
     if-nez v1, :cond_1
 
-    .line 6
     iput-boolean v3, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->j:Z
 
-    .line 7
     iget v1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->g:F
 
     const/4 v3, 0x0
@@ -720,7 +649,6 @@
 
     if-ltz v2, :cond_4
 
-    .line 8
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v0
@@ -733,7 +661,6 @@
 
     if-gtz v0, :cond_4
 
-    .line 9
     iget v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->l:I
 
     int-to-float v0, v0
@@ -742,25 +669,20 @@
 
     iput p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->m:F
 
-    .line 10
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object p1
 
     invoke-interface {p1, v4}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
 
-    .line 11
     iput-boolean v4, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->j:Z
 
-    .line 12
     iget-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->k:Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$b;
 
     if-eqz p1, :cond_4
 
-    .line 13
     invoke-interface {p1}, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$b;->a()V
 
-    .line 14
     iget-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->c:Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->a:[I
@@ -774,19 +696,16 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 15
     iget-boolean v1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->j:Z
 
     if-eqz v1, :cond_4
 
-    .line 16
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v1
 
     invoke-interface {v1, v4}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
 
-    .line 17
     invoke-direct {p0, v0, p1}, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->a(Landroid/graphics/drawable/Drawable;F)V
 
     goto :goto_0
@@ -798,34 +717,27 @@
 
     if-ne v1, v2, :cond_4
 
-    .line 18
     :cond_3
     iget-boolean v1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->j:Z
 
     if-eqz v1, :cond_4
 
-    .line 19
     iput-boolean v3, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->j:Z
 
-    .line 20
     invoke-direct {p0, v0, p1}, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->a(Landroid/graphics/drawable/Drawable;F)V
 
-    .line 21
     iget-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->k:Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$b;
 
     if-eqz p1, :cond_4
 
-    .line 22
     invoke-interface {p1}, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$b;->e()V
 
-    .line 23
     iget-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->c:Landroid/graphics/drawable/Drawable;
 
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->b:[I
 
     invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
-    .line 24
     :cond_4
     :goto_0
     iget-boolean p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->j:Z
@@ -836,7 +748,6 @@
 .method public setCallback(Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->k:Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$b;
 
     return-void
@@ -845,14 +756,12 @@
 .method public setDragDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->c:Landroid/graphics/drawable/Drawable;
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
@@ -861,7 +770,6 @@
 .method public setEnableFadeInAndOut(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->p:Z
 
     return-void
@@ -870,7 +778,6 @@
 .method public setKeepShownTime(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->d:I
 
     return-void
@@ -879,12 +786,10 @@
 .method public setPercent(F)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->j:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->setPercentInternal(F)V
 
     :cond_0
@@ -894,7 +799,6 @@
 .method public setTransitionDuration(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;->e:I
 
     return-void

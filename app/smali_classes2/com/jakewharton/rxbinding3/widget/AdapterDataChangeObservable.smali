@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable;
 .super Lcom/jakewharton/rxbinding3/InitialValueObservable;
-.source "AdapterDataChangeObservable.kt"
 
 
 # annotations
@@ -83,7 +82,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lcom/jakewharton/rxbinding3/InitialValueObservable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable;->adapter:Landroid/widget/Adapter;
@@ -104,7 +102,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable;->adapter:Landroid/widget/Adapter;
 
     return-object v0
@@ -113,7 +110,6 @@
 .method public bridge synthetic getInitialValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable;->getInitialValue()Landroid/widget/Adapter;
 
     move-result-object v0
@@ -139,7 +135,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-static {p1}, Lcom/jakewharton/rxbinding3/internal/Preconditions;->checkMainThread(Lio/reactivex/Observer;)Z
 
     move-result v0
@@ -148,7 +143,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable$ObserverDisposable;
 
@@ -158,7 +152,6 @@
 
     invoke-direct {v0, v1, p1}, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable$ObserverDisposable;-><init>(Landroid/widget/Adapter;Lio/reactivex/Observer;)V
 
-    .line 3
     invoke-virtual {p0}, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable;->getInitialValue()Landroid/widget/Adapter;
 
     move-result-object v1
@@ -167,7 +160,6 @@
 
     invoke-interface {v1, v2}, Landroid/widget/Adapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
 
-    .line 4
     invoke-interface {p1, v0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
     return-void

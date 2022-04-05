@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultUIController$12;
 .super Ljava/lang/Object;
-.source "DefaultUIController.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/just/agentweb/DefaultUIController;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultUIController$12;->this$0:Lcom/just/agentweb/DefaultUIController;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/just/agentweb/DefaultUIController$12;->this$0:Lcom/just/agentweb/DefaultUIController;
 
     invoke-static {p1}, Lcom/just/agentweb/DefaultUIController;->access$300(Lcom/just/agentweb/DefaultUIController;)Landroidx/appcompat/app/b;
@@ -47,7 +44,6 @@
 
     invoke-virtual {p1, p2}, Lcom/just/agentweb/AbsAgentWebUIController;->toDismissDialog(Landroid/app/Dialog;)V
 
-    .line 2
     iget-object p1, p0, Lcom/just/agentweb/DefaultUIController$12;->this$0:Lcom/just/agentweb/DefaultUIController;
 
     invoke-static {p1}, Lcom/just/agentweb/DefaultUIController;->access$200(Lcom/just/agentweb/DefaultUIController;)Landroid/webkit/JsPromptResult;

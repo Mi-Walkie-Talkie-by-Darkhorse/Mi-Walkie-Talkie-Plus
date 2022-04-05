@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;
 .super Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;
-.source "MapTileSqlCacheProvider.java"
 
 
 # annotations
@@ -39,7 +38,6 @@
 
     const-string v0, "tile"
 
-    .line 1
     filled-new-array {v0}, [Ljava/lang/String;
 
     move-result-object v1
@@ -48,7 +46,6 @@
 
     const-string v1, "expires"
 
-    .line 2
     filled-new-array {v0, v1}, [Ljava/lang/String;
 
     move-result-object v0
@@ -63,7 +60,6 @@
 
     const-wide/32 v0, 0x240c8400
 
-    .line 8
     invoke-direct {p0, p1, p2, v0, v1}, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;-><init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;Lorg/osmdroid/tileprovider/tilesource/ITileSource;J)V
 
     return-void
@@ -72,7 +68,6 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;Lorg/osmdroid/tileprovider/tilesource/ITileSource;J)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -81,7 +76,6 @@
 
     move-result v0
 
-    .line 2
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v1
@@ -90,23 +84,18 @@
 
     move-result v1
 
-    .line 3
     invoke-direct {p0, p1, v0, v1}, Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;-><init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;II)V
 
-    .line 4
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     iput-object p1, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mTileSource:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 5
     invoke-virtual {p0, p2}, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->setTileSource(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
 
-    .line 6
     iput-wide p3, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mMaximumCachedFileAge:J
 
-    .line 7
     new-instance p1, Lorg/osmdroid/tileprovider/modules/SqlTileWriter;
 
     invoke-direct {p1}, Lorg/osmdroid/tileprovider/modules/SqlTileWriter;-><init>()V
@@ -119,7 +108,6 @@
 .method static synthetic access$000(Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;)Ljava/util/concurrent/atomic/AtomicReference;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mTileSource:Ljava/util/concurrent/atomic/AtomicReference;
 
     return-object p0
@@ -128,7 +116,6 @@
 .method static synthetic access$100(Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;)Lorg/osmdroid/tileprovider/modules/SqlTileWriter;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mWriter:Lorg/osmdroid/tileprovider/modules/SqlTileWriter;
 
     return-object p0
@@ -137,7 +124,6 @@
 .method static synthetic access$200()[Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->columns:[Ljava/lang/String;
 
     return-object v0
@@ -146,7 +132,6 @@
 .method static synthetic access$300(Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mMaximumCachedFileAge:J
 
     return-wide v0
@@ -157,21 +142,17 @@
 .method public detach()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mWriter:Lorg/osmdroid/tileprovider/modules/SqlTileWriter;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lorg/osmdroid/tileprovider/modules/SqlTileWriter;->onDetach()V
 
     :cond_0
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mWriter:Lorg/osmdroid/tileprovider/modules/SqlTileWriter;
 
-    .line 4
     invoke-super {p0}, Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;->detach()V
 
     return-void
@@ -180,7 +161,6 @@
 .method public getMaximumZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mTileSource:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -191,14 +171,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->getMaximumZoomLevel()I
 
     move-result v0
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static {}, Lmicrosoft/mappoint/TileSystem;->getMaximumZoomLevel()I
 
@@ -211,7 +189,6 @@
 .method public getMinimumZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mTileSource:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -222,7 +199,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->getMinimumZoomLevel()I
 
     move-result v0
@@ -255,7 +231,6 @@
 .method protected getTileLoader()Ljava/lang/Runnable;
     .locals 1
 
-    .line 1
     new-instance v0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider$TileLoader;
 
     invoke-direct {v0, p0}, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider$TileLoader;-><init>(Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;)V
@@ -274,7 +249,6 @@
 .method public hasTile(Lorg/osmdroid/tileprovider/MapTile;)Z
     .locals 12
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mTileSource:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -289,7 +263,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getX()I
 
@@ -297,14 +270,12 @@
 
     int-to-long v2, v2
 
-    .line 3
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getY()I
 
     move-result v4
 
     int-to-long v4, v4
 
-    .line 4
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getZoomLevel()I
 
     move-result p1
@@ -321,7 +292,6 @@
 
     add-long/2addr v2, v4
 
-    .line 5
     iget-object p1, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mWriter:Lorg/osmdroid/tileprovider/modules/SqlTileWriter;
 
     iget-object v4, p1, Lorg/osmdroid/tileprovider/modules/SqlTileWriter;->db:Landroid/database/sqlite/SQLiteDatabase;
@@ -370,14 +340,12 @@
 
     move-result-object p1
 
-    .line 6
     invoke-interface {p1}, Landroid/database/Cursor;->getCount()I
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 7
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
     const/4 p1, 0x1
@@ -397,15 +365,12 @@
 .method protected onMediaUnmounted()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mWriter:Lorg/osmdroid/tileprovider/modules/SqlTileWriter;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lorg/osmdroid/tileprovider/modules/SqlTileWriter;->onDetach()V
 
-    .line 3
     :cond_0
     new-instance v0, Lorg/osmdroid/tileprovider/modules/SqlTileWriter;
 
@@ -419,7 +384,6 @@
 .method public setTileSource(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->mTileSource:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V

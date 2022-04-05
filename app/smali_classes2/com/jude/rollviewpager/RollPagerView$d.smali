@@ -1,6 +1,5 @@
 .class Lcom/jude/rollviewpager/RollPagerView$d;
 .super Landroid/widget/Scroller;
-.source "RollPagerView.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/jude/rollviewpager/RollPagerView;Landroid/content/Context;Landroid/view/animation/Interpolator;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/jude/rollviewpager/RollPagerView$d;->b:Lcom/jude/rollviewpager/RollPagerView;
 
     iput p4, p0, Lcom/jude/rollviewpager/RollPagerView$d;->a:I
@@ -39,7 +37,6 @@
 .method public startScroll(IIII)V
     .locals 6
 
-    .line 5
     iget v5, p0, Lcom/jude/rollviewpager/RollPagerView$d;->a:I
 
     move-object v0, p0
@@ -60,7 +57,6 @@
 .method public startScroll(IIIII)V
     .locals 6
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -85,12 +81,10 @@
 
     if-lez v4, :cond_0
 
-    .line 2
     iget p5, p0, Lcom/jude/rollviewpager/RollPagerView$d;->a:I
 
     goto :goto_0
 
-    .line 3
     :cond_0
     div-int/lit8 p5, p5, 0x2
 
@@ -107,7 +101,6 @@
 
     move v4, p4
 
-    .line 4
     invoke-super/range {v0 .. v5}, Landroid/widget/Scroller;->startScroll(IIIII)V
 
     return-void

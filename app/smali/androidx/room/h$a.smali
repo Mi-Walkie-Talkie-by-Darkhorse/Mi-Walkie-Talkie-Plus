@@ -1,6 +1,5 @@
 .class Landroidx/room/h$a;
 .super Landroidx/room/d$a;
-.source "MultiInstanceInvalidationClient.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/room/h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/room/h$a;->a:Landroidx/room/h;
 
     invoke-direct {p0}, Landroidx/room/d$a;-><init>()V
@@ -35,7 +33,6 @@
 .method public a([Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/room/h$a;->a:Landroidx/room/h;
 
     iget-object v0, v0, Landroidx/room/h;->g:Ljava/util/concurrent/Executor;

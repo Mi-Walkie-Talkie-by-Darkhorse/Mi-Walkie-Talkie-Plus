@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;
 .super Ljava/lang/Thread;
-.source "UpdateHelper.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;->b:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -35,7 +33,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;-><init>(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)V
 
     return-void
@@ -48,10 +45,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;->a:Z
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;->b:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)V
@@ -64,16 +59,13 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;->a:Z
 
-    .line 2
     :goto_0
     iget-boolean v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;->a:Z
 
     if-nez v1, :cond_2
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;->b:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->c(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)Lcom/ifengyu/intercom/update/sealshark/e;
@@ -92,7 +84,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/node/j;->b()Lcom/ifengyu/intercom/node/j;
 
     move-result-object v1
@@ -103,14 +94,12 @@
 
     if-nez v1, :cond_0
 
-    .line 5
     iget-object v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;->b:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;Z)V
 
     goto :goto_1
 
-    .line 6
     :cond_0
     iget-object v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;->b:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
@@ -126,7 +115,6 @@
 
     invoke-interface {v1, v2}, Lcom/ifengyu/intercom/update/sealshark/e;->d(I)Z
 
-    .line 7
     :cond_1
     :try_start_0
     iget-object v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;->b:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
@@ -142,7 +130,6 @@
 
     const-string v2, "SendDataThread interrupted."
 
-    .line 8
     invoke-static {v1, v2}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0

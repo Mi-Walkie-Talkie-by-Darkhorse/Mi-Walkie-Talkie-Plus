@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/CompletableOnSubscribe;
 .super Ljava/lang/Object;
-.source "CompletableOnSubscribe.java"
 
 
 # virtual methods

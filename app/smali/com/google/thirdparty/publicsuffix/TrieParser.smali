@@ -1,6 +1,5 @@
 .class Lcom/google/thirdparty/publicsuffix/TrieParser;
 .super Ljava/lang/Object;
-.source "TrieParser.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 
     const-string v0, ""
 
-    .line 1
     invoke-static {v0}, Lcom/google/common/base/Joiner;->on(Ljava/lang/String;)Lcom/google/common/base/Joiner;
 
     move-result-object v0
@@ -31,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -53,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -75,7 +71,6 @@
 
     if-ge v2, v0, :cond_1
 
-    .line 2
     invoke-interface {p1, v2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v3
@@ -99,7 +94,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     :goto_1
     invoke-interface {p1, v1, v2}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
@@ -120,7 +114,6 @@
 
     if-ne v3, v6, :cond_3
 
-    .line 4
     :cond_2
     sget-object v4, Lcom/google/thirdparty/publicsuffix/TrieParser;->PREFIX_JOINER:Lcom/google/common/base/Joiner;
 
@@ -128,14 +121,12 @@
 
     move-result-object v4
 
-    .line 5
     invoke-virtual {v4}, Ljava/lang/String;->length()I
 
     move-result v5
 
     if-lez v5, :cond_3
 
-    .line 6
     invoke-static {v3}, Lcom/google/thirdparty/publicsuffix/PublicSuffixType;->fromCode(C)Lcom/google/thirdparty/publicsuffix/PublicSuffixType;
 
     move-result-object v5
@@ -152,7 +143,6 @@
     :cond_4
     if-ge v2, v0, :cond_6
 
-    .line 7
     invoke-interface {p1, v2, v0}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
 
     move-result-object v3
@@ -163,7 +153,6 @@
 
     add-int/2addr v2, v3
 
-    .line 8
     invoke-interface {p1, v2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v3
@@ -179,7 +168,6 @@
     :cond_5
     add-int/lit8 v2, v2, 0x1
 
-    .line 9
     :cond_6
     invoke-interface {p0, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
@@ -200,12 +188,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->builder()Lcom/google/common/collect/ImmutableMap$Builder;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v1
@@ -215,7 +201,6 @@
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 3
     invoke-static {}, Lcom/google/common/collect/Lists;->newLinkedList()Ljava/util/LinkedList;
 
     move-result-object v3
@@ -232,7 +217,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
 
@@ -244,7 +228,6 @@
 .method private static reverse(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 7
 
-    .line 1
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -255,7 +238,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-array v2, v0, [C
 
@@ -263,7 +245,6 @@
 
     add-int/lit8 v4, v0, -0x1
 
-    .line 3
     invoke-interface {p0, v4}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v5
@@ -275,14 +256,12 @@
 
     sub-int v3, v4, v1
 
-    .line 4
     invoke-interface {p0, v3}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v3
 
     aput-char v3, v2, v1
 
-    .line 5
     aget-char v3, v2, v1
 
     add-int/lit8 v5, v1, -0x1
@@ -295,7 +274,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 6
     invoke-static {v2, v5, v1}, Lcom/google/thirdparty/publicsuffix/TrieParser;->swap([CII)V
 
     :cond_1
@@ -303,7 +281,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     new-instance p0, Ljava/lang/String;
 
@@ -315,15 +292,12 @@
 .method private static swap([CII)V
     .locals 2
 
-    .line 1
     aget-char v0, p0, p1
 
-    .line 2
     aget-char v1, p0, p2
 
     aput-char v1, p0, p1
 
-    .line 3
     aput-char v0, p0, p2
 
     return-void

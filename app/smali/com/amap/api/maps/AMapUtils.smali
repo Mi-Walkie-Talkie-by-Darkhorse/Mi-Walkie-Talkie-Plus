@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/AMapUtils;
 .super Ljava/lang/Object;
-.source "AMapUtils.java"
 
 
 # annotations
@@ -47,7 +46,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,7 +59,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/amap/api/maps/AMapUtils;->a(Landroid/content/Context;)Z
 
     move-result v0
@@ -70,7 +67,6 @@
 
     if-eqz v0, :cond_5
 
-    .line 2
     invoke-virtual {p0}, Lcom/amap/api/maps/model/RoutePara;->getStartPoint()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object v0
@@ -141,7 +137,6 @@
     :goto_1
     if-eqz v0, :cond_4
 
-    .line 3
     :try_start_0
     new-instance v0, Landroid/content/Intent;
 
@@ -151,15 +146,12 @@
 
     const/high16 v4, 0x10800000
 
-    .line 4
     invoke-virtual {v0, v4}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     const-string v4, "android.intent.category.DEFAULT"
 
-    .line 5
     invoke-virtual {v0, v4}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 6
     sget-object v4, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const-string v5, "androidamap://route?sourceApplication=%s&slat=%f&slon=%f&sname=%s&dlat=%f&dlon=%f&dname=%s&dev=0&t=%d"
@@ -311,27 +303,22 @@
 
     const-string p0, "com.autonavi.minimap"
 
-    .line 7
     invoke-virtual {v0, p0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 8
     new-instance p0, Lcom/amap/api/maps/AMapUtils$a;
 
     const-string p2, "oan"
 
     invoke-direct {p0, p2, p1}, Lcom/amap/api/maps/AMapUtils$a;-><init>(Ljava/lang/String;Landroid/content/Context;)V
 
-    .line 9
     invoke-virtual {p0}, Ljava/lang/Thread;->start()V
 
-    .line 10
     invoke-virtual {p1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     return-void
 
-    .line 11
     :catchall_0
     new-instance p0, Lcom/amap/api/maps/AMapException;
 
@@ -339,7 +326,6 @@
 
     throw p0
 
-    .line 12
     :cond_4
     new-instance p0, Lcom/amap/api/maps/AMapException;
 
@@ -349,7 +335,6 @@
 
     throw p0
 
-    .line 13
     :cond_5
     new-instance p0, Lcom/amap/api/maps/AMapException;
 
@@ -363,7 +348,6 @@
 
     const/4 v0, 0x0
 
-    .line 14
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -397,7 +381,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     :try_start_0
     iget-wide v1, p0, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
@@ -419,14 +402,12 @@
 
     div-double/2addr v7, v5
 
-    .line 2
     invoke-static {v7, v8}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v3
 
     sub-double/2addr v1, v3
 
-    .line 3
     iget-wide v3, p1, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
     iget-wide p0, p0, Lcom/amap/api/maps/model/LatLng;->longitude:D
@@ -463,12 +444,10 @@
     :catchall_0
     move-exception p0
 
-    .line 4
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return v0
 
-    .line 5
     :cond_1
     :try_start_1
     new-instance p0, Lcom/amap/api/maps/AMapException;
@@ -484,7 +463,6 @@
     :catch_0
     move-exception p0
 
-    .line 6
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     return v0
@@ -501,17 +479,13 @@
 
     if-eqz v1, :cond_0
 
-    .line 1
     :try_start_0
     iget-wide v3, v0, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
-    .line 2
     iget-wide v5, v0, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
-    .line 3
     iget-wide v7, v1, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
-    .line 4
     iget-wide v0, v1, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
     const-wide v9, 0x3f91df46a2529d37L    # 0.01745329251994329
@@ -524,42 +498,34 @@
 
     mul-double v0, v0, v9
 
-    .line 5
     invoke-static {v3, v4}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v9
 
-    .line 6
     invoke-static {v5, v6}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v11
 
-    .line 7
     invoke-static {v3, v4}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v3
 
-    .line 8
     invoke-static {v5, v6}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v5
 
-    .line 9
     invoke-static {v7, v8}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v13
 
-    .line 10
     invoke-static {v0, v1}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v15
 
-    .line 11
     invoke-static {v7, v8}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v7
 
-    .line 12
     invoke-static {v0, v1}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v0
@@ -598,7 +564,6 @@
 
     aput-wide p0, v2, v4
 
-    .line 13
     aget-wide v0, v15, v16
 
     aget-wide v5, v2, v16
@@ -653,7 +618,6 @@
 
     div-double/2addr v0, v2
 
-    .line 14
     invoke-static {v0, v1}, Ljava/lang/Math;->asin(D)D
 
     move-result-wide v0
@@ -671,7 +635,6 @@
     :catchall_0
     move-exception v0
 
-    .line 15
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
@@ -679,7 +642,6 @@
 
     return v1
 
-    .line 16
     :cond_0
     :try_start_1
     new-instance v0, Lcom/amap/api/maps/AMapException;
@@ -695,7 +657,6 @@
     :catch_0
     move-exception v0
 
-    .line 17
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
@@ -707,7 +668,6 @@
     :try_start_0
     const-string v0, "http://wap.amap.com/"
 
-    .line 1
     new-instance v1, Landroid/content/Intent;
 
     const-string v2, "android.intent.action.VIEW"
@@ -716,32 +676,26 @@
 
     const/high16 v2, 0x10800000
 
-    .line 2
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     const-string v2, "android.intent.category.DEFAULT"
 
-    .line 3
     invoke-virtual {v1, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 4
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 5
     new-instance v0, Lcom/amap/api/maps/AMapUtils$a;
 
     const-string v2, "glaa"
 
     invoke-direct {v0, v2, p0}, Lcom/amap/api/maps/AMapUtils$a;-><init>(Ljava/lang/String;Landroid/content/Context;)V
 
-    .line 6
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
-    .line 7
     invoke-virtual {p0, v1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -751,7 +705,6 @@
     :catchall_0
     move-exception p0
 
-    .line 8
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -767,7 +720,6 @@
 
     const/4 v0, 0x2
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/amap/api/maps/AMapUtils;->a(Lcom/amap/api/maps/model/RoutePara;Landroid/content/Context;I)V
 
     return-void
@@ -781,7 +733,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/amap/api/maps/AMapUtils;->a(Landroid/content/Context;)Z
 
     move-result v0
@@ -790,14 +741,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Lcom/amap/api/maps/model/NaviPara;->getTargetPoint()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     :try_start_0
     new-instance v0, Landroid/content/Intent;
 
@@ -807,15 +756,12 @@
 
     const/high16 v2, 0x10800000
 
-    .line 4
     invoke-virtual {v0, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     const-string v2, "android.intent.category.DEFAULT"
 
-    .line 5
     invoke-virtual {v0, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 6
     sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const-string v3, "androidamap://navi?sourceApplication=%s&lat=%f&lon=%f&dev=0&style=%d"
@@ -884,27 +830,22 @@
 
     const-string p0, "com.autonavi.minimap"
 
-    .line 7
     invoke-virtual {v0, p0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 8
     new-instance p0, Lcom/amap/api/maps/AMapUtils$a;
 
     const-string v2, "oan"
 
     invoke-direct {p0, v2, p1}, Lcom/amap/api/maps/AMapUtils$a;-><init>(Ljava/lang/String;Landroid/content/Context;)V
 
-    .line 9
     invoke-virtual {p0}, Ljava/lang/Thread;->start()V
 
-    .line 10
     invoke-virtual {p1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-void
 
-    .line 11
     :catchall_0
     new-instance p0, Lcom/amap/api/maps/AMapException;
 
@@ -912,7 +853,6 @@
 
     throw p0
 
-    .line 12
     :cond_0
     new-instance p0, Lcom/amap/api/maps/AMapException;
 
@@ -922,7 +862,6 @@
 
     throw p0
 
-    .line 13
     :cond_1
     new-instance p0, Lcom/amap/api/maps/AMapException;
 
@@ -939,7 +878,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/amap/api/maps/AMapUtils;->a(Landroid/content/Context;)Z
 
     move-result v0
@@ -948,14 +886,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     invoke-virtual {p0}, Lcom/amap/api/maps/model/PoiPara;->getKeywords()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lcom/amap/api/maps/model/PoiPara;->getKeywords()Ljava/lang/String;
 
     move-result-object v0
@@ -970,7 +906,6 @@
 
     if-lez v0, :cond_1
 
-    .line 4
     :try_start_0
     new-instance v0, Landroid/content/Intent;
 
@@ -980,15 +915,12 @@
 
     const/high16 v2, 0x10800000
 
-    .line 5
     invoke-virtual {v0, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
     const-string v2, "android.intent.category.DEFAULT"
 
-    .line 6
     invoke-virtual {v0, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 7
     sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const-string v3, "androidamap://arroundpoi?sourceApplication=%s&keywords=%s&dev=0"
@@ -1066,27 +998,22 @@
 
     const-string p0, "com.autonavi.minimap"
 
-    .line 8
     invoke-virtual {v0, p0}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 9
     new-instance p0, Lcom/amap/api/maps/AMapUtils$a;
 
     const-string v2, "oan"
 
     invoke-direct {p0, v2, p1}, Lcom/amap/api/maps/AMapUtils$a;-><init>(Ljava/lang/String;Landroid/content/Context;)V
 
-    .line 10
     invoke-virtual {p0}, Ljava/lang/Thread;->start()V
 
-    .line 11
     invoke-virtual {p1, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-void
 
-    .line 12
     :catchall_0
     new-instance p0, Lcom/amap/api/maps/AMapException;
 
@@ -1094,7 +1021,6 @@
 
     throw p0
 
-    .line 13
     :cond_1
     new-instance p0, Lcom/amap/api/maps/AMapException;
 
@@ -1104,7 +1030,6 @@
 
     throw p0
 
-    .line 14
     :cond_2
     new-instance p0, Lcom/amap/api/maps/AMapException;
 
@@ -1123,7 +1048,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/amap/api/maps/AMapUtils;->a(Lcom/amap/api/maps/model/RoutePara;Landroid/content/Context;I)V
 
     return-void
@@ -1139,7 +1063,6 @@
 
     const/4 v0, 0x4
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/amap/api/maps/AMapUtils;->a(Lcom/amap/api/maps/model/RoutePara;Landroid/content/Context;I)V
 
     return-void

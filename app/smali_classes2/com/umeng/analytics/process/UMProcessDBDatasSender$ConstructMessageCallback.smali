@@ -1,6 +1,5 @@
 .class Lcom/umeng/analytics/process/UMProcessDBDatasSender$ConstructMessageCallback;
 .super Ljava/lang/Object;
-.source "UMProcessDBDatasSender.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/utils/FileLockCallback;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lcom/umeng/analytics/process/UMProcessDBDatasSender;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/analytics/process/UMProcessDBDatasSender$ConstructMessageCallback;->a:Lcom/umeng/analytics/process/UMProcessDBDatasSender;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lcom/umeng/analytics/process/UMProcessDBDatasSender;Lcom/umeng/analytics/process/UMProcessDBDatasSender$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/umeng/analytics/process/UMProcessDBDatasSender$ConstructMessageCallback;-><init>(Lcom/umeng/analytics/process/UMProcessDBDatasSender;)V
 
     return-void
@@ -55,7 +52,6 @@
 .method public onFileLock(Ljava/lang/String;)Z
     .locals 3
 
-    .line 1
     iget-object p1, p0, Lcom/umeng/analytics/process/UMProcessDBDatasSender$ConstructMessageCallback;->a:Lcom/umeng/analytics/process/UMProcessDBDatasSender;
 
     invoke-static {p1}, Lcom/umeng/analytics/process/UMProcessDBDatasSender;->access$000(Lcom/umeng/analytics/process/UMProcessDBDatasSender;)Landroid/content/Context;
@@ -74,7 +70,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 2
     invoke-virtual {p1}, Lorg/json/JSONObject;->length()I
 
     move-result v1
@@ -86,7 +81,6 @@
     :cond_0
     const-string v1, "header"
 
-    .line 3
     invoke-virtual {p1, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
@@ -95,14 +89,12 @@
 
     const-string v2, "content"
 
-    .line 4
     invoke-virtual {p1, v2}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Lorg/json/JSONObject;
 
-    .line 5
     iget-object v2, p0, Lcom/umeng/analytics/process/UMProcessDBDatasSender$ConstructMessageCallback;->a:Lcom/umeng/analytics/process/UMProcessDBDatasSender;
 
     invoke-static {v2}, Lcom/umeng/analytics/process/UMProcessDBDatasSender;->access$000(Lcom/umeng/analytics/process/UMProcessDBDatasSender;)Landroid/content/Context;
@@ -115,7 +107,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 6
     iget-object v2, p0, Lcom/umeng/analytics/process/UMProcessDBDatasSender$ConstructMessageCallback;->a:Lcom/umeng/analytics/process/UMProcessDBDatasSender;
 
     invoke-static {v2}, Lcom/umeng/analytics/process/UMProcessDBDatasSender;->access$000(Lcom/umeng/analytics/process/UMProcessDBDatasSender;)Landroid/content/Context;
@@ -128,7 +119,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 7
     iget-object v1, p0, Lcom/umeng/analytics/process/UMProcessDBDatasSender$ConstructMessageCallback;->a:Lcom/umeng/analytics/process/UMProcessDBDatasSender;
 
     invoke-virtual {v1, p1}, Lcom/umeng/analytics/process/UMProcessDBDatasSender;->removeCacheData(Ljava/lang/Object;)V

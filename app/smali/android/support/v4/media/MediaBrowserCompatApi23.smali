@@ -1,6 +1,5 @@
 .class Landroid/support/v4/media/MediaBrowserCompatApi23;
 .super Ljava/lang/Object;
-.source "MediaBrowserCompatApi23.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
 .method public static createItemCallback(Landroid/support/v4/media/MediaBrowserCompatApi23$ItemCallback;)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/support/v4/media/MediaBrowserCompatApi23$ItemCallbackProxy;
 
     invoke-direct {v0, p0}, Landroid/support/v4/media/MediaBrowserCompatApi23$ItemCallbackProxy;-><init>(Landroid/support/v4/media/MediaBrowserCompatApi23$ItemCallback;)V
@@ -40,7 +37,6 @@
 .method public static getItem(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p0, Landroid/media/browse/MediaBrowser;
 
     check-cast p2, Landroid/media/browse/MediaBrowser$ItemCallback;

@@ -1,6 +1,5 @@
 .class final Landroidx/core/app/JobIntentService$d;
 .super Ljava/lang/Object;
-.source "JobIntentService.java"
 
 # interfaces
 .implements Landroidx/core/app/JobIntentService$e;
@@ -29,15 +28,12 @@
 .method constructor <init>(Landroidx/core/app/JobIntentService;Landroid/content/Intent;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/core/app/JobIntentService$d;->c:Landroidx/core/app/JobIntentService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Landroidx/core/app/JobIntentService$d;->a:Landroid/content/Intent;
 
-    .line 3
     iput p3, p0, Landroidx/core/app/JobIntentService$d;->b:I
 
     return-void
@@ -48,7 +44,6 @@
 .method public complete()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/JobIntentService$d;->c:Landroidx/core/app/JobIntentService;
 
     iget v1, p0, Landroidx/core/app/JobIntentService$d;->b:I
@@ -61,7 +56,6 @@
 .method public getIntent()Landroid/content/Intent;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/JobIntentService$d;->a:Landroid/content/Intent;
 
     return-object v0

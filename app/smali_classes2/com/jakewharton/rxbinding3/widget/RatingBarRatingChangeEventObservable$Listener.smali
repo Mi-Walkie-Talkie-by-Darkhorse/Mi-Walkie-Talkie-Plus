@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/RatingBarRatingChangeEventObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "RatingBarRatingChangeEventObservable.kt"
 
 # interfaces
 .implements Landroid/widget/RatingBar$OnRatingBarChangeListener;
@@ -99,7 +98,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/RatingBarRatingChangeEventObservable$Listener;->view:Landroid/widget/RatingBar;
@@ -114,7 +112,6 @@
 .method protected onDispose()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/RatingBarRatingChangeEventObservable$Listener;->view:Landroid/widget/RatingBar;
 
     const/4 v1, 0x0
@@ -135,14 +132,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/RatingBarRatingChangeEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     new-instance v1, Lcom/jakewharton/rxbinding3/widget/RatingBarChangeEvent;

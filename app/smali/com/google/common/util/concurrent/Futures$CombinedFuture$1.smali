@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/Futures$CombinedFuture$1;
 .super Ljava/lang/Object;
-.source "Futures.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/Futures$CombinedFuture;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture$1;->this$0:Lcom/google/common/util/concurrent/Futures$CombinedFuture;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture$1;->this$0:Lcom/google/common/util/concurrent/Futures$CombinedFuture;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/AbstractFuture;->isCancelled()Z
@@ -47,7 +44,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture$1;->this$0:Lcom/google/common/util/concurrent/Futures$CombinedFuture;
 
     iget-object v0, v0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->futures:Lcom/google/common/collect/ImmutableCollection;
@@ -69,7 +65,6 @@
 
     check-cast v1, Lcom/google/common/util/concurrent/ListenableFuture;
 
-    .line 3
     iget-object v2, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture$1;->this$0:Lcom/google/common/util/concurrent/Futures$CombinedFuture;
 
     invoke-virtual {v2}, Lcom/google/common/util/concurrent/AbstractFuture;->wasInterrupted()Z
@@ -80,7 +75,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture$1;->this$0:Lcom/google/common/util/concurrent/Futures$CombinedFuture;
 
@@ -88,10 +82,8 @@
 
     iput-object v1, v0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->futures:Lcom/google/common/collect/ImmutableCollection;
 
-    .line 5
     iput-object v1, v0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->values:Ljava/util/List;
 
-    .line 6
     iput-object v1, v0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->combiner:Lcom/google/common/util/concurrent/Futures$FutureCombiner;
 
     return-void

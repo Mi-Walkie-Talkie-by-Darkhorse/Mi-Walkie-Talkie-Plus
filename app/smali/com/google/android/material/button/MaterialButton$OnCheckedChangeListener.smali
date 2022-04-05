@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/android/material/button/MaterialButton$OnCheckedChangeListener;
 .super Ljava/lang/Object;
-.source "MaterialButton.java"
 
 
 # annotations

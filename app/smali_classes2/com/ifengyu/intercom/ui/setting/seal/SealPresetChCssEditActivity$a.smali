@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$a;
 .super Ljava/lang/Object;
-.source "SealPresetChCssEditActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog$b;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a(Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog;ILjava/lang/String;ILjava/lang/String;)V
     .locals 4
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->a(Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;)Z
@@ -92,7 +89,6 @@
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->mTvRxCss:Landroid/widget/TextView;
 
-    .line 2
     invoke-virtual {p1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object p1
@@ -121,13 +117,11 @@
 
     if-eqz p1, :cond_3
 
-    .line 3
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     invoke-static {p1, v2}, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->a(Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;Z)Z
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     add-int/lit8 v2, p2, 0x1
@@ -138,14 +132,12 @@
 
     invoke-static {p1, v2}, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->a(Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;I)I
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->mTvTxCss:Landroid/widget/TextView;
 
     invoke-virtual {p1, p5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->mTvTxCss:Landroid/widget/TextView;
@@ -162,7 +154,6 @@
     :goto_0
     invoke-virtual {p1, v1, v2}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 7
     :cond_3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
@@ -174,14 +165,12 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->b(Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;I)I
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->mTvRxCss:Landroid/widget/TextView;
 
     invoke-virtual {p1, p5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->mTvRxCss:Landroid/widget/TextView;

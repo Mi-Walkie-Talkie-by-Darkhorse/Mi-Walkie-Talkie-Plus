@@ -1,6 +1,5 @@
 .class final Lcom/google/common/eventbus/EventBus$1;
 .super Lcom/google/common/cache/CacheLoader;
-.source "EventBus.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/cache/CacheLoader;-><init>()V
 
     return-void
@@ -45,7 +43,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/lang/Class;
 
     invoke-virtual {p0, p1}, Lcom/google/common/eventbus/EventBus$1;->load(Ljava/lang/Class;)Ljava/util/Set;
@@ -68,7 +65,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p1

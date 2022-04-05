@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/bw;
 .super Lcom/amap/api/col/l3/ic;
-.source "OfflineDownloadRequest.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/ic;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/bw;->a:Ljava/lang/String;
 
     return-void
@@ -59,7 +56,6 @@
 .method public final c()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bw;->a:Ljava/lang/String;
 
     return-object v0

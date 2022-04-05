@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/app/CoreComponentFactory$a;
 .super Ljava/lang/Object;
-.source "CoreComponentFactory.java"
 
 
 # annotations

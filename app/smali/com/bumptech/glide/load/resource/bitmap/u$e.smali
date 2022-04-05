@@ -1,6 +1,5 @@
 .class interface abstract Lcom/bumptech/glide/load/resource/bitmap/u$e;
 .super Ljava/lang/Object;
-.source "VideoDecoder.java"
 
 
 # annotations

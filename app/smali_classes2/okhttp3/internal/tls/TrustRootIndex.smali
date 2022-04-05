@@ -1,6 +1,5 @@
 .class public interface abstract Lokhttp3/internal/tls/TrustRootIndex;
 .super Ljava/lang/Object;
-.source "TrustRootIndex.java"
 
 
 # virtual methods

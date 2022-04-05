@@ -1,6 +1,5 @@
 .class public final enum Lcom/umeng/commonsdk/config/d$d;
 .super Ljava/lang/Enum;
-.source "FieldTable.java"
 
 
 # annotations
@@ -54,7 +53,6 @@
 .method static constructor <clinit>()V
     .locals 15
 
-    .line 1
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/4 v1, 0x0
@@ -65,7 +63,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/config/d$d;->a:Lcom/umeng/commonsdk/config/d$d;
 
-    .line 2
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/4 v2, 0x1
@@ -76,7 +73,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/config/d$d;->b:Lcom/umeng/commonsdk/config/d$d;
 
-    .line 3
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/4 v3, 0x2
@@ -87,7 +83,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/config/d$d;->c:Lcom/umeng/commonsdk/config/d$d;
 
-    .line 4
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/4 v4, 0x3
@@ -98,7 +93,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/config/d$d;->d:Lcom/umeng/commonsdk/config/d$d;
 
-    .line 5
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/4 v5, 0x4
@@ -109,7 +103,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/config/d$d;->e:Lcom/umeng/commonsdk/config/d$d;
 
-    .line 6
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/4 v6, 0x5
@@ -120,7 +113,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/config/d$d;->f:Lcom/umeng/commonsdk/config/d$d;
 
-    .line 7
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/4 v7, 0x6
@@ -131,7 +123,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/config/d$d;->g:Lcom/umeng/commonsdk/config/d$d;
 
-    .line 8
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/4 v8, 0x7
@@ -142,7 +133,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/config/d$d;->h:Lcom/umeng/commonsdk/config/d$d;
 
-    .line 9
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/16 v9, 0x8
@@ -153,7 +143,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/config/d$d;->i:Lcom/umeng/commonsdk/config/d$d;
 
-    .line 10
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/16 v10, 0x9
@@ -164,7 +153,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/config/d$d;->j:Lcom/umeng/commonsdk/config/d$d;
 
-    .line 11
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/16 v11, 0xa
@@ -175,7 +163,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/config/d$d;->k:Lcom/umeng/commonsdk/config/d$d;
 
-    .line 12
     new-instance v0, Lcom/umeng/commonsdk/config/d$d;
 
     const/16 v12, 0xb
@@ -190,7 +177,6 @@
 
     new-array v13, v13, [Lcom/umeng/commonsdk/config/d$d;
 
-    .line 13
     sget-object v14, Lcom/umeng/commonsdk/config/d$d;->a:Lcom/umeng/commonsdk/config/d$d;
 
     aput-object v14, v13, v1
@@ -250,7 +236,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -259,7 +244,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/umeng/commonsdk/config/d$d;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/umeng/commonsdk/config/d$d;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -274,7 +258,6 @@
 .method public static values()[Lcom/umeng/commonsdk/config/d$d;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/config/d$d;->m:[Lcom/umeng/commonsdk/config/d$d;
 
     invoke-virtual {v0}, [Lcom/umeng/commonsdk/config/d$d;->clone()Ljava/lang/Object;

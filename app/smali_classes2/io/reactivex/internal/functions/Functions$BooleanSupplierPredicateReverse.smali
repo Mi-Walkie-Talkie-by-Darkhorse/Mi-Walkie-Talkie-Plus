@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/functions/Functions$BooleanSupplierPredicateReverse;
 .super Ljava/lang/Object;
-.source "Functions.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Predicate;
@@ -36,10 +35,8 @@
 .method constructor <init>(Lio/reactivex/functions/BooleanSupplier;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/functions/Functions$BooleanSupplierPredicateReverse;->supplier:Lio/reactivex/functions/BooleanSupplier;
 
     return-void
@@ -61,7 +58,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lio/reactivex/internal/functions/Functions$BooleanSupplierPredicateReverse;->supplier:Lio/reactivex/functions/BooleanSupplier;
 
     invoke-interface {p1}, Lio/reactivex/functions/BooleanSupplier;->getAsBoolean()Z

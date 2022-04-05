@@ -1,13 +1,11 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareFABBehaviorDefault;
 .super Lcom/google/android/material/floatingactionbutton/FloatingActionButton$Behavior;
-.source "ScrollAwareFABBehaviorDefault.java"
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$Behavior;-><init>()V
 
     return-void
@@ -18,19 +16,16 @@
 .method public a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Landroid/view/View;IIII)V
     .locals 0
 
-    .line 2
     invoke-super/range {p0 .. p7}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->onNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;IIII)V
 
     if-lez p5, :cond_0
 
-    .line 3
     invoke-virtual {p2}, Landroid/widget/ImageButton;->getVisibility()I
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 4
     new-instance p1, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareFABBehaviorDefault$a;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareFABBehaviorDefault$a;-><init>(Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareFABBehaviorDefault;)V
@@ -42,14 +37,12 @@
     :cond_0
     if-gez p5, :cond_1
 
-    .line 5
     invoke-virtual {p2}, Landroid/widget/ImageButton;->getVisibility()I
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 6
     invoke-virtual {p2}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->show()V
 
     :cond_1
@@ -64,7 +57,6 @@
 
     if-eq p5, v0, :cond_1
 
-    .line 1
     invoke-super/range {p0 .. p5}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->onStartNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;I)Z
 
     move-result p1
@@ -89,7 +81,6 @@
 .method public bridge synthetic onNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;IIII)V
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
     invoke-virtual/range {p0 .. p7}, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareFABBehaviorDefault;->a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Landroid/view/View;IIII)V
@@ -100,7 +91,6 @@
 .method public bridge synthetic onStartNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;I)Z
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
     invoke-virtual/range {p0 .. p5}, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareFABBehaviorDefault;->a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;Landroid/view/View;Landroid/view/View;I)Z

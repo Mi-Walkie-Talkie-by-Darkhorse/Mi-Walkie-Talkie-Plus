@@ -1,6 +1,5 @@
 .class public final Lcom/nostra13/universalimageloader/utils/IoUtils;
 .super Ljava/lang/Object;
-.source "IoUtils.java"
 
 
 # annotations
@@ -23,7 +22,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +32,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     :try_start_0
     invoke-interface {p0}, Ljava/io/Closeable;->close()V
     :try_end_0
@@ -55,7 +52,6 @@
 
     const v0, 0x8000
 
-    .line 1
     invoke-static {p0, p1, p2, v0}, Lcom/nostra13/universalimageloader/utils/IoUtils;->copyStream(Ljava/io/InputStream;Ljava/io/OutputStream;Lcom/nostra13/universalimageloader/utils/IoUtils$CopyListener;I)Z
 
     move-result p0
@@ -71,7 +67,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Ljava/io/InputStream;->available()I
 
     move-result v0
@@ -80,13 +75,11 @@
 
     const v0, 0x7d000
 
-    .line 3
     :cond_0
     new-array v1, p3, [B
 
     const/4 v2, 0x0
 
-    .line 4
     invoke-static {p2, v2, v0}, Lcom/nostra13/universalimageloader/utils/IoUtils;->shouldStopLoading(Lcom/nostra13/universalimageloader/utils/IoUtils$CopyListener;II)Z
 
     move-result v3
@@ -98,7 +91,6 @@
     :cond_1
     const/4 v3, 0x0
 
-    .line 5
     :cond_2
     invoke-virtual {p0, v1, v2, p3}, Ljava/io/InputStream;->read([BII)I
 
@@ -108,12 +100,10 @@
 
     if-eq v4, v5, :cond_3
 
-    .line 6
     invoke-virtual {p1, v1, v2, v4}, Ljava/io/OutputStream;->write([BII)V
 
     add-int/2addr v3, v4
 
-    .line 7
     invoke-static {p2, v3, v0}, Lcom/nostra13/universalimageloader/utils/IoUtils;->shouldStopLoading(Lcom/nostra13/universalimageloader/utils/IoUtils$CopyListener;II)Z
 
     move-result v4
@@ -122,7 +112,6 @@
 
     return v2
 
-    .line 8
     :cond_3
     invoke-virtual {p1}, Ljava/io/OutputStream;->flush()V
 
@@ -141,7 +130,6 @@
     :goto_0
     const/4 v2, 0x0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0, v1, v2, v0}, Ljava/io/InputStream;->read([BII)I
 
@@ -159,7 +147,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-static {p0}, Lcom/nostra13/universalimageloader/utils/IoUtils;->closeSilently(Ljava/io/Closeable;)V
 
     throw v0
@@ -176,7 +163,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-interface {p0, p1, p2}, Lcom/nostra13/universalimageloader/utils/IoUtils$CopyListener;->onBytesCopied(II)Z
 
     move-result p0
@@ -185,7 +171,6 @@
 
     mul-int/lit8 p1, p1, 0x64
 
-    .line 2
     div-int/2addr p1, p2
 
     const/16 p0, 0x4b

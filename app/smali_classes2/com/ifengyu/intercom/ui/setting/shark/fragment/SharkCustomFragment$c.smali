@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$c;
 .super Ljava/lang/Object;
-.source "SharkCustomFragment.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/q$c;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$c;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$c;->a:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -50,7 +48,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     new-instance p1, Landroid/content/Intent;
 
@@ -66,17 +63,14 @@
 
     const-string p2, "seal_action_modify_channel"
 
-    .line 2
     invoke-virtual {p1, p2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 3
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$c;->a:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     const-string v0, "seal_action_modify_channel_info"
 
     invoke-virtual {p1, v0, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 4
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$c;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;
 
     const/16 v0, 0xca
@@ -85,7 +79,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$c;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;
 

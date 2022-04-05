@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/arch/d;
 .super Ljava/lang/Object;
-.source "QMUILatestVisit.java"
 
 
 # static fields
@@ -33,31 +32,26 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/d;->b:Landroid/content/Context;
 
-    .line 3
     new-instance p1, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditorImpl;
 
     invoke-direct {p1}, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditorImpl;-><init>()V
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/d;->d:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
-    .line 4
     new-instance p1, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditorImpl;
 
     invoke-direct {p1}, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditorImpl;-><init>()V
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/d;->e:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
-    .line 5
     :try_start_0
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -83,7 +77,6 @@
 
     move-result-object p1
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
     move-result-object p1
@@ -98,7 +91,6 @@
 
     goto :goto_0
 
-    .line 7
     :catch_0
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -108,7 +100,6 @@
 
     throw p1
 
-    .line 8
     :catch_1
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -118,7 +109,6 @@
 
     throw p1
 
-    .line 9
     :catch_2
     new-instance p1, Lcom/qmuiteam/qmui/arch/d$a;
 
@@ -135,19 +125,16 @@
     .annotation build Landroidx/annotation/MainThread;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/arch/d;->h:Lcom/qmuiteam/qmui/arch/d;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/qmuiteam/qmui/arch/d;
 
     invoke-direct {v0, p0}, Lcom/qmuiteam/qmui/arch/d;-><init>(Landroid/content/Context;)V
 
     sput-object v0, Lcom/qmuiteam/qmui/arch/d;->h:Lcom/qmuiteam/qmui/arch/d;
 
-    .line 3
     :cond_0
     sget-object p0, Lcom/qmuiteam/qmui/arch/d;->h:Lcom/qmuiteam/qmui/arch/d;
 
@@ -157,7 +144,6 @@
 .method private a(I)Ljava/lang/String;
     .locals 2
 
-    .line 28
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -184,7 +170,6 @@
 .method a()V
     .locals 1
 
-    .line 4
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/d;->c()Lcom/qmuiteam/qmui/arch/record/QMUILatestVisitStorage;
 
     move-result-object v0
@@ -197,7 +182,6 @@
 .method a(Lcom/qmuiteam/qmui/arch/a;)V
     .locals 2
 
-    .line 23
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/d;->c:Lcom/qmuiteam/qmui/arch/record/RecordIdClassMap;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -214,18 +198,15 @@
 
     return-void
 
-    .line 24
     :cond_0
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/d;->d:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     invoke-interface {v1}, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;->clear()Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
-    .line 25
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/d;->d:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     invoke-virtual {p1, v1}, Lcom/qmuiteam/qmui/arch/a;->onCollectLatestVisitArgument(Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;)V
 
-    .line 26
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/d;->c()Lcom/qmuiteam/qmui/arch/record/QMUILatestVisitStorage;
 
     move-result-object p1
@@ -238,7 +219,6 @@
 
     invoke-interface {p1, v0, v1}, Lcom/qmuiteam/qmui/arch/record/QMUILatestVisitStorage;->saveActivityRecordInfo(ILjava/util/Map;)V
 
-    .line 27
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/d;->d:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     invoke-interface {p1}, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;->clear()Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
@@ -249,7 +229,6 @@
 .method a(Lcom/qmuiteam/qmui/arch/b;)V
     .locals 8
 
-    .line 5
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/d;->c:Lcom/qmuiteam/qmui/arch/record/RecordIdClassMap;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -266,63 +245,52 @@
 
     return-void
 
-    .line 6
     :cond_0
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/d;->d:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     invoke-interface {v1}, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;->clear()Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
-    .line 7
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/d;->e:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     invoke-interface {v1}, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;->clear()Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
-    .line 8
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/d;->d:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     invoke-virtual {p1, v1}, Lcom/qmuiteam/qmui/arch/b;->onCollectLatestVisitArgument(Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;)V
 
-    .line 9
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getParentFragment()Landroidx/fragment/app/Fragment;
 
     move-result-object p1
 
     const/4 v1, 0x0
 
-    .line 10
     :goto_0
     instance-of v2, p1, Lcom/qmuiteam/qmui/arch/e;
 
     if-eqz v2, :cond_2
 
-    .line 11
     invoke-direct {p0, v1}, Lcom/qmuiteam/qmui/arch/d;->a(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 12
     move-object v3, p1
 
     check-cast v3, Lcom/qmuiteam/qmui/arch/e;
 
-    .line 13
     iget-object v4, p0, Lcom/qmuiteam/qmui/arch/d;->e:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     invoke-interface {v4}, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;->clear()Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
-    .line 14
     iget-object v4, p0, Lcom/qmuiteam/qmui/arch/d;->e:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     invoke-virtual {v3, v4}, Lcom/qmuiteam/qmui/arch/b;->onCollectLatestVisitArgument(Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;)V
 
-    .line 15
     iget-object v4, p0, Lcom/qmuiteam/qmui/arch/d;->e:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     invoke-interface {v4}, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;->getAll()Ljava/util/Map;
 
     move-result-object v4
 
-    .line 16
     iget-object v5, p0, Lcom/qmuiteam/qmui/arch/d;->d:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -349,7 +317,6 @@
 
     invoke-interface {v5, v6, v3}, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;->putString(Ljava/lang/String;Ljava/lang/String;)Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
-    .line 17
     invoke-interface {v4}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v3
@@ -371,7 +338,6 @@
 
     check-cast v5, Ljava/lang/String;
 
-    .line 18
     iget-object v6, p0, Lcom/qmuiteam/qmui/arch/d;->d:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -396,7 +362,6 @@
 
     goto :goto_1
 
-    .line 19
     :cond_1
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getParentFragment()Landroidx/fragment/app/Fragment;
 
@@ -406,7 +371,6 @@
 
     goto :goto_0
 
-    .line 20
     :cond_2
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/d;->c()Lcom/qmuiteam/qmui/arch/record/QMUILatestVisitStorage;
 
@@ -420,12 +384,10 @@
 
     invoke-interface {p1, v0, v1}, Lcom/qmuiteam/qmui/arch/record/QMUILatestVisitStorage;->saveFragmentRecordInfo(ILjava/util/Map;)V
 
-    .line 21
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/d;->d:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     invoke-interface {p1}, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;->clear()Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
-    .line 22
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/d;->e:Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 
     invoke-interface {p1}, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;->clear()Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
@@ -436,7 +398,6 @@
 .method b()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/d;->c()Lcom/qmuiteam/qmui/arch/record/QMUILatestVisitStorage;
 
     move-result-object v0
@@ -449,12 +410,10 @@
 .method c()Lcom/qmuiteam/qmui/arch/record/QMUILatestVisitStorage;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/d;->a:Lcom/qmuiteam/qmui/arch/record/QMUILatestVisitStorage;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/qmuiteam/qmui/arch/record/DefaultLatestVisitStorage;
 
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/d;->b:Landroid/content/Context;
@@ -463,7 +422,6 @@
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/arch/d;->a:Lcom/qmuiteam/qmui/arch/record/QMUILatestVisitStorage;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/d;->a:Lcom/qmuiteam/qmui/arch/record/QMUILatestVisitStorage;
 

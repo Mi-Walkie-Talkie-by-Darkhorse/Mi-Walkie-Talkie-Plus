@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/listener/MapListener;
 .super Ljava/lang/Object;
-.source "MapListener.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;

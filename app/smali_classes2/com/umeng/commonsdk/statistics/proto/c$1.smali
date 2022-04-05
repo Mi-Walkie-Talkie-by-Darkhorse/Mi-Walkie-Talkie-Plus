@@ -1,6 +1,5 @@
 .class synthetic Lcom/umeng/commonsdk/statistics/proto/c$1;
 .super Ljava/lang/Object;
-.source "IdTracking.java"
 
 
 # annotations

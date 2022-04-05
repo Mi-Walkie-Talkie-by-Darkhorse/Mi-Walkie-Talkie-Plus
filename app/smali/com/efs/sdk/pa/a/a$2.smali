@@ -1,6 +1,5 @@
 .class final Lcom/efs/sdk/pa/a/a$2;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/efs/sdk/pa/a/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/pa/a/a$2;->a:Lcom/efs/sdk/pa/a/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public final run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/pa/a/a$2;->a:Lcom/efs/sdk/pa/a/a;
 
     const/4 v1, 0x1
 
-    .line 2
     iput-boolean v1, v0, Lcom/efs/sdk/pa/a/a;->a:Z
 
     return-void

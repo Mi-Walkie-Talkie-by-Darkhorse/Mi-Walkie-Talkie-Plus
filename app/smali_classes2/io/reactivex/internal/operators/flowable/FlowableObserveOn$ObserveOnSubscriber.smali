@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableObserveOn$ObserveOnSubscriber;
 .super Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;
-.source "FlowableObserveOn.java"
 
 # interfaces
 .implements Lio/reactivex/FlowableSubscriber;
@@ -57,10 +56,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p2, p3, p4}, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;-><init>(Lio/reactivex/Scheduler$Worker;ZI)V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$ObserveOnSubscriber;->downstream:Lc/a/c;
 
     return-void
@@ -71,7 +68,6 @@
 .method public onSubscribe(Lc/a/d;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->upstream:Lc/a/d;
 
     invoke-static {v0, p1}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(Lc/a/d;Lc/a/d;)Z
@@ -80,22 +76,18 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->upstream:Lc/a/d;
 
-    .line 3
     instance-of v0, p1, Lio/reactivex/internal/fuseable/QueueSubscription;
 
     if-eqz v0, :cond_1
 
-    .line 4
     move-object v0, p1
 
     check-cast v0, Lio/reactivex/internal/fuseable/QueueSubscription;
 
     const/4 v1, 0x7
 
-    .line 5
     invoke-interface {v0, v1}, Lio/reactivex/internal/fuseable/QueueFuseable;->requestFusion(I)I
 
     move-result v1
@@ -104,16 +96,12 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 6
     iput v2, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->sourceMode:I
 
-    .line 7
     iput-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
-    .line 8
     iput-boolean v2, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->done:Z
 
-    .line 9
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$ObserveOnSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {p1, p0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
@@ -125,18 +113,14 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 10
     iput v2, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->sourceMode:I
 
-    .line 11
     iput-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
-    .line 12
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$ObserveOnSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0, p0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 13
     iget v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->prefetch:I
 
     int-to-long v0, v0
@@ -145,7 +129,6 @@
 
     return-void
 
-    .line 14
     :cond_1
     new-instance v0, Lio/reactivex/internal/queue/SpscArrayQueue;
 
@@ -155,12 +138,10 @@
 
     iput-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
-    .line 15
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$ObserveOnSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0, p0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 16
     iget v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->prefetch:I
 
     int-to-long v0, v0
@@ -188,7 +169,6 @@
     .annotation build Lio/reactivex/annotations/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
     invoke-interface {v0}, Lio/reactivex/internal/fuseable/SimpleQueue;->poll()Ljava/lang/Object;
@@ -197,21 +177,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget v1, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->sourceMode:I
 
     const/4 v2, 0x1
 
     if-eq v1, v2, :cond_1
 
-    .line 3
     iget-wide v1, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->produced:J
 
     const-wide/16 v3, 0x1
 
     add-long/2addr v1, v3
 
-    .line 4
     iget v3, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->limit:I
 
     int-to-long v3, v3
@@ -222,17 +199,14 @@
 
     const-wide/16 v3, 0x0
 
-    .line 5
     iput-wide v3, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->produced:J
 
-    .line 6
     iget-object v3, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v3, v1, v2}, Lc/a/d;->request(J)V
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iput-wide v1, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->produced:J
 
@@ -244,20 +218,16 @@
 .method runAsync()V
     .locals 12
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$ObserveOnSubscriber;->downstream:Lc/a/c;
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
-    .line 3
     iget-wide v2, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->produced:J
 
     const/4 v4, 0x1
 
     const/4 v5, 0x1
 
-    .line 4
     :cond_0
     :goto_0
     iget-object v6, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
@@ -272,10 +242,8 @@
 
     if-eqz v8, :cond_6
 
-    .line 5
     iget-boolean v9, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->done:Z
 
-    .line 6
     :try_start_0
     invoke-interface {v1}, Lio/reactivex/internal/fuseable/SimpleQueue;->poll()Ljava/lang/Object;
 
@@ -292,7 +260,6 @@
     :cond_2
     const/4 v11, 0x0
 
-    .line 7
     :goto_2
     invoke-virtual {p0, v9, v11, v0}, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->checkTerminated(ZZLc/a/c;)Z
 
@@ -307,7 +274,6 @@
 
     goto :goto_3
 
-    .line 8
     :cond_4
     invoke-interface {v0, v10}, Lc/a/c;->onNext(Ljava/lang/Object;)V
 
@@ -315,7 +281,6 @@
 
     add-long/2addr v2, v8
 
-    .line 9
     iget v8, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->limit:I
 
     int-to-long v8, v8
@@ -330,7 +295,6 @@
 
     if-eqz v10, :cond_5
 
-    .line 10
     iget-object v6, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
     neg-long v7, v2
@@ -339,7 +303,6 @@
 
     move-result-wide v6
 
-    .line 11
     :cond_5
     iget-object v8, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->upstream:Lc/a/d;
 
@@ -352,24 +315,18 @@
     :catchall_0
     move-exception v2
 
-    .line 12
     invoke-static {v2}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 13
     iput-boolean v4, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->cancelled:Z
 
-    .line 14
     iget-object v3, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v3}, Lc/a/d;->cancel()V
 
-    .line 15
     invoke-interface {v1}, Lio/reactivex/internal/fuseable/SimpleQueue;->clear()V
 
-    .line 16
     invoke-interface {v0, v2}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
-    .line 17
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->worker:Lio/reactivex/Scheduler$Worker;
 
     invoke-interface {v0}, Lio/reactivex/disposables/Disposable;->dispose()V
@@ -380,7 +337,6 @@
     :goto_3
     if-nez v8, :cond_7
 
-    .line 18
     iget-boolean v6, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->done:Z
 
     invoke-interface {v1}, Lio/reactivex/internal/fuseable/SimpleQueue;->isEmpty()Z
@@ -395,7 +351,6 @@
 
     return-void
 
-    .line 19
     :cond_7
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -403,12 +358,10 @@
 
     if-ne v5, v6, :cond_8
 
-    .line 20
     iput-wide v2, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->produced:J
 
     neg-int v5, v5
 
-    .line 21
     invoke-virtual {p0, v5}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
 
     move-result v5
@@ -430,7 +383,6 @@
 
     const/4 v1, 0x1
 
-    .line 1
     :cond_0
     iget-boolean v2, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->cancelled:Z
 
@@ -438,11 +390,9 @@
 
     return-void
 
-    .line 2
     :cond_1
     iget-boolean v2, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->done:Z
 
-    .line 3
     iget-object v3, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$ObserveOnSubscriber;->downstream:Lc/a/c;
 
     const/4 v4, 0x0
@@ -451,28 +401,23 @@
 
     if-eqz v2, :cond_3
 
-    .line 4
     iput-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->cancelled:Z
 
-    .line 5
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->error:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_2
 
-    .line 6
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$ObserveOnSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v1, v0}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 7
     :cond_2
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$ObserveOnSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0}, Lc/a/c;->onComplete()V
 
-    .line 8
     :goto_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->worker:Lio/reactivex/Scheduler$Worker;
 
@@ -483,7 +428,6 @@
     :cond_3
     neg-int v1, v1
 
-    .line 9
     invoke-virtual {p0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
 
     move-result v1
@@ -496,20 +440,16 @@
 .method runSync()V
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$ObserveOnSubscriber;->downstream:Lc/a/c;
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
-    .line 3
     iget-wide v2, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->produced:J
 
     const/4 v4, 0x1
 
     const/4 v5, 0x1
 
-    .line 4
     :cond_0
     :goto_0
     iget-object v6, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
@@ -523,7 +463,6 @@
 
     if-eqz v8, :cond_3
 
-    .line 5
     :try_start_0
     invoke-interface {v1}, Lio/reactivex/internal/fuseable/SimpleQueue;->poll()Ljava/lang/Object;
 
@@ -531,7 +470,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     iget-boolean v9, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->cancelled:Z
 
     if-eqz v9, :cond_1
@@ -541,20 +479,16 @@
     :cond_1
     if-nez v8, :cond_2
 
-    .line 7
     iput-boolean v4, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->cancelled:Z
 
-    .line 8
     invoke-interface {v0}, Lc/a/c;->onComplete()V
 
-    .line 9
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->worker:Lio/reactivex/Scheduler$Worker;
 
     invoke-interface {v0}, Lio/reactivex/disposables/Disposable;->dispose()V
 
     return-void
 
-    .line 10
     :cond_2
     invoke-interface {v0, v8}, Lc/a/c;->onNext(Ljava/lang/Object;)V
 
@@ -567,28 +501,22 @@
     :catchall_0
     move-exception v1
 
-    .line 11
     invoke-static {v1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 12
     iput-boolean v4, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->cancelled:Z
 
-    .line 13
     iget-object v2, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v2}, Lc/a/d;->cancel()V
 
-    .line 14
     invoke-interface {v0, v1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
-    .line 15
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->worker:Lio/reactivex/Scheduler$Worker;
 
     invoke-interface {v0}, Lio/reactivex/disposables/Disposable;->dispose()V
 
     return-void
 
-    .line 16
     :cond_3
     iget-boolean v6, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->cancelled:Z
 
@@ -596,7 +524,6 @@
 
     return-void
 
-    .line 17
     :cond_4
     invoke-interface {v1}, Lio/reactivex/internal/fuseable/SimpleQueue;->isEmpty()Z
 
@@ -604,20 +531,16 @@
 
     if-eqz v6, :cond_5
 
-    .line 18
     iput-boolean v4, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->cancelled:Z
 
-    .line 19
     invoke-interface {v0}, Lc/a/c;->onComplete()V
 
-    .line 20
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->worker:Lio/reactivex/Scheduler$Worker;
 
     invoke-interface {v0}, Lio/reactivex/disposables/Disposable;->dispose()V
 
     return-void
 
-    .line 21
     :cond_5
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -625,12 +548,10 @@
 
     if-ne v5, v6, :cond_6
 
-    .line 22
     iput-wide v2, p0, Lio/reactivex/internal/operators/flowable/FlowableObserveOn$BaseObserveOnSubscriber;->produced:J
 
     neg-int v5, v5
 
-    .line 23
     invoke-virtual {p0, v5}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
 
     move-result v5

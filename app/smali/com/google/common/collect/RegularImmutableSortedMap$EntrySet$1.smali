@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/RegularImmutableSortedMap$EntrySet$1;
 .super Lcom/google/common/collect/ImmutableAsList;
-.source "RegularImmutableSortedMap.java"
 
 
 # annotations
@@ -39,12 +38,10 @@
 .method constructor <init>(Lcom/google/common/collect/RegularImmutableSortedMap$EntrySet;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/RegularImmutableSortedMap$EntrySet$1;->this$1:Lcom/google/common/collect/RegularImmutableSortedMap$EntrySet;
 
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableAsList;-><init>()V
 
-    .line 2
     iget-object p1, p0, Lcom/google/common/collect/RegularImmutableSortedMap$EntrySet$1;->this$1:Lcom/google/common/collect/RegularImmutableSortedMap$EntrySet;
 
     iget-object p1, p1, Lcom/google/common/collect/RegularImmutableSortedMap$EntrySet;->this$0:Lcom/google/common/collect/RegularImmutableSortedMap;
@@ -75,7 +72,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableSortedMap$EntrySet$1;->this$1:Lcom/google/common/collect/RegularImmutableSortedMap$EntrySet;
 
     return-object v0
@@ -84,7 +80,6 @@
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/RegularImmutableSortedMap$EntrySet$1;->get(I)Ljava/util/Map$Entry;
 
     move-result-object p1
@@ -102,7 +97,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableSortedMap$EntrySet$1;->keyList:Lcom/google/common/collect/ImmutableList;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;

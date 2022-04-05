@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/UMConfigureInternation;
 .super Ljava/lang/Object;
-.source "UMConfigureInternation.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,18 +24,15 @@
 .method public static doSelfCheck(Landroid/content/Context;)V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Lcom/umeng/commonsdk/framework/UMFrUtils;->getCurrentProcessName(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -58,7 +53,6 @@
 
     const v0, 0x8021
 
-    .line 4
     invoke-static {p0}, Lcom/umeng/commonsdk/internal/b;->a(Landroid/content/Context;)Lcom/umeng/commonsdk/internal/b;
 
     move-result-object v1
@@ -69,7 +63,6 @@
 
     const/4 v2, 0x0
 
-    .line 5
     invoke-static {p0, v0, v1, v2}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -90,13 +83,11 @@
 
     const/4 v1, 0x1
 
-    .line 1
     :try_start_0
     sget-boolean v2, Lcom/umeng/commonsdk/UMConfigureInternation;->isInternal:Z
 
     if-nez v2, :cond_0
 
-    .line 2
     new-instance v2, Ljava/lang/Thread;
 
     new-instance v3, Lcom/umeng/commonsdk/UMConfigureInternation$1;
@@ -105,10 +96,8 @@
 
     invoke-direct {v2, v3}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 3
     invoke-virtual {v2}, Ljava/lang/Thread;->start()V
 
-    .line 4
     sput-boolean v1, Lcom/umeng/commonsdk/UMConfigureInternation;->isInternal:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -125,7 +114,6 @@
 
     const/4 v3, 0x0
 
-    .line 5
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -159,7 +147,6 @@
 
     throw p0
 
-    .line 6
     :cond_0
     :goto_0
     monitor-exit v0

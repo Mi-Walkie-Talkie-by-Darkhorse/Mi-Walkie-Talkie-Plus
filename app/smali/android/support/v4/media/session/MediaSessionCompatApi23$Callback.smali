@@ -1,6 +1,5 @@
 .class public interface abstract Landroid/support/v4/media/session/MediaSessionCompatApi23$Callback;
 .super Ljava/lang/Object;
-.source "MediaSessionCompatApi23.java"
 
 # interfaces
 .implements Landroid/support/v4/media/session/MediaSessionCompatApi21$Callback;

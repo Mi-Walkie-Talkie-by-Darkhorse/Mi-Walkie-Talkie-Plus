@@ -1,6 +1,5 @@
 .class public final Lcom/umeng/analytics/pro/bv;
 .super Lcom/umeng/analytics/pro/bj;
-.source "TTupleProtocol.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>(Lcom/umeng/analytics/pro/cd;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/bj;-><init>(Lcom/umeng/analytics/pro/cd;)V
 
     return-void
@@ -24,14 +22,12 @@
 .method public static a([B)Ljava/util/BitSet;
     .locals 5
 
-    .line 4
     new-instance v0, Ljava/util/BitSet;
 
     invoke-direct {v0}, Ljava/util/BitSet;-><init>()V
 
     const/4 v1, 0x0
 
-    .line 5
     :goto_0
     array-length v2, p0
 
@@ -39,7 +35,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 6
     array-length v2, p0
 
     div-int/lit8 v3, v1, 0x8
@@ -60,7 +55,6 @@
 
     if-lez v2, :cond_0
 
-    .line 7
     invoke-virtual {v0, v1}, Ljava/util/BitSet;->set(I)V
 
     :cond_0
@@ -81,7 +75,6 @@
 
     div-double/2addr v0, v2
 
-    .line 5
     invoke-static {v0, v1}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v0
@@ -92,7 +85,6 @@
 
     const/4 v1, 0x0
 
-    .line 6
     :goto_0
     invoke-virtual {p0}, Ljava/util/BitSet;->length()I
 
@@ -100,14 +92,12 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 7
     invoke-virtual {p0, v1}, Ljava/util/BitSet;->get(I)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 8
     div-int/lit8 v2, v1, 0x8
 
     sub-int v2, p1, v2
@@ -151,7 +141,6 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Lcom/umeng/analytics/pro/ca;
 
     return-object v0
@@ -165,12 +154,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1, p2}, Lcom/umeng/analytics/pro/bv;->b(Ljava/util/BitSet;I)[B
 
     move-result-object p1
 
-    .line 2
     array-length p2, p1
 
     const/4 v0, 0x0
@@ -180,7 +167,6 @@
 
     aget-byte v1, p1, v0
 
-    .line 3
     invoke-virtual {p0, v1}, Lcom/umeng/analytics/pro/bj;->a(B)V
 
     add-int/lit8 v0, v0, 0x1
@@ -205,14 +191,12 @@
 
     div-double/2addr v0, v2
 
-    .line 1
     invoke-static {v0, v1}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v0
 
     double-to-int p1, v0
 
-    .line 2
     new-array v0, p1, [B
 
     const/4 v1, 0x0
@@ -220,7 +204,6 @@
     :goto_0
     if-ge v1, p1, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bj;->u()B
 
     move-result v2
@@ -231,7 +214,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-static {v0}, Lcom/umeng/analytics/pro/bv;->a([B)Ljava/util/BitSet;
 

@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ImmutableMultimap$BuilderMultimap;
 .super Lcom/google/common/collect/AbstractMapBasedMultimap;
-.source "ImmutableMultimap.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
@@ -56,7 +54,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/Lists;->newArrayList()Ljava/util/ArrayList;
 
     move-result-object v0

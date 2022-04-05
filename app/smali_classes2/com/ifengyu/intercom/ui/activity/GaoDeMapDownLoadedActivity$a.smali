@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/GaoDeMapDownLoadedActivity$a;
 .super Landroid/os/Handler;
-.source "GaoDeMapDownLoadedActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/GaoDeMapDownLoadedActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapDownLoadedActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/GaoDeMapDownLoadedActivity;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -35,10 +33,8 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 2
     iget p1, p1, Landroid/os/Message;->what:I
 
     if-eqz p1, :cond_1
@@ -49,7 +45,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapDownLoadedActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/GaoDeMapDownLoadedActivity;
 
@@ -61,7 +56,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapDownLoadedActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/GaoDeMapDownLoadedActivity;
 

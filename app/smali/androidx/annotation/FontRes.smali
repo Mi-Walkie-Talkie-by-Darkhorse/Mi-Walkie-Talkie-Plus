@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/FontRes;
 .super Ljava/lang/Object;
-.source "FontRes.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

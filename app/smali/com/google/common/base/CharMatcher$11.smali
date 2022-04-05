@@ -1,6 +1,5 @@
 .class final Lcom/google/common/base/CharMatcher$11;
 .super Lcom/google/common/base/CharMatcher;
-.source "CharMatcher.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Ljava/lang/String;[C)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/google/common/base/CharMatcher$11;->val$chars:[C
 
     invoke-direct {p0, p1}, Lcom/google/common/base/CharMatcher;-><init>(Ljava/lang/String;)V
@@ -35,7 +33,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Character;
 
     invoke-super {p0, p1}, Lcom/google/common/base/CharMatcher;->apply(Ljava/lang/Character;)Z
@@ -48,7 +45,6 @@
 .method public matches(C)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/CharMatcher$11;->val$chars:[C
 
     invoke-static {v0, p1}, Ljava/util/Arrays;->binarySearch([CC)I
@@ -74,7 +70,6 @@
         value = "java.util.BitSet"
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/CharMatcher$11;->val$chars:[C
 
     array-length v1, v0
@@ -86,7 +81,6 @@
 
     aget-char v3, v0, v2
 
-    .line 2
     invoke-virtual {p1, v3}, Ljava/util/BitSet;->set(I)V
 
     add-int/lit8 v2, v2, 0x1

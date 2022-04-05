@@ -1,6 +1,5 @@
 .class abstract Landroidx/appcompat/widget/a;
 .super Landroid/view/ViewGroup;
-.source "AbsActionBarView.java"
 
 
 # annotations
@@ -39,7 +38,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Landroidx/appcompat/widget/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -58,7 +56,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -75,22 +72,18 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 4
     new-instance p2, Landroidx/appcompat/widget/a$a;
 
     invoke-direct {p2, p0}, Landroidx/appcompat/widget/a$a;-><init>(Landroidx/appcompat/widget/a;)V
 
     iput-object p2, p0, Landroidx/appcompat/widget/a;->a:Landroidx/appcompat/widget/a$a;
 
-    .line 5
     new-instance p2, Landroid/util/TypedValue;
 
     invoke-direct {p2}, Landroid/util/TypedValue;-><init>()V
 
-    .line 6
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p3
@@ -109,7 +102,6 @@
 
     if-eqz p3, :cond_0
 
-    .line 7
     new-instance p3, Landroid/view/ContextThemeWrapper;
 
     iget p2, p2, Landroid/util/TypedValue;->resourceId:I
@@ -120,7 +112,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_0
     iput-object p1, p0, Landroidx/appcompat/widget/a;->b:Landroid/content/Context;
 
@@ -147,7 +138,6 @@
 .method static synthetic a(Landroidx/appcompat/widget/a;I)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     return-void
@@ -156,7 +146,6 @@
 .method static synthetic b(Landroidx/appcompat/widget/a;I)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
     return-void
@@ -169,14 +158,12 @@
 
     const/high16 v0, -0x80000000
 
-    .line 12
     invoke-static {p2, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v0
 
     invoke-virtual {p1, v0, p3}, Landroid/view/View;->measure(II)V
 
-    .line 13
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p1
@@ -187,7 +174,6 @@
 
     const/4 p1, 0x0
 
-    .line 14
     invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
 
     move-result p1
@@ -198,19 +184,16 @@
 .method protected a(Landroid/view/View;IIIZ)I
     .locals 2
 
-    .line 15
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v0
 
-    .line 16
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v1
 
     sub-int/2addr p4, v1
 
-    .line 17
     div-int/lit8 p4, p4, 0x2
 
     add-int/2addr p3, p4
@@ -221,7 +204,6 @@
 
     add-int/2addr v1, p3
 
-    .line 18
     invoke-virtual {p1, p4, p3, p2, v1}, Landroid/view/View;->layout(IIII)V
 
     goto :goto_0
@@ -231,7 +213,6 @@
 
     add-int/2addr v1, p3
 
-    .line 19
     invoke-virtual {p1, p2, p3, p4, v1}, Landroid/view/View;->layout(IIII)V
 
     :goto_0
@@ -246,12 +227,10 @@
 .method public a(IJ)Landroidx/core/view/a0;
     .locals 2
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/a;->f:Landroidx/core/view/a0;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Landroidx/core/view/a0;->a()V
 
     :cond_0
@@ -259,17 +238,14 @@
 
     if-nez p1, :cond_2
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getVisibility()I
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 5
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setAlpha(F)V
 
-    .line 6
     :cond_1
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;)Landroidx/core/view/a0;
 
@@ -279,10 +255,8 @@
 
     invoke-virtual {v0, v1}, Landroidx/core/view/a0;->a(F)Landroidx/core/view/a0;
 
-    .line 7
     invoke-virtual {v0, p2, p3}, Landroidx/core/view/a0;->a(J)Landroidx/core/view/a0;
 
-    .line 8
     iget-object p2, p0, Landroidx/appcompat/widget/a;->a:Landroidx/appcompat/widget/a$a;
 
     invoke-virtual {p2, v0, p1}, Landroidx/appcompat/widget/a$a;->a(Landroidx/core/view/a0;I)Landroidx/appcompat/widget/a$a;
@@ -291,7 +265,6 @@
 
     return-object v0
 
-    .line 9
     :cond_2
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;)Landroidx/core/view/a0;
 
@@ -299,10 +272,8 @@
 
     invoke-virtual {v1, v0}, Landroidx/core/view/a0;->a(F)Landroidx/core/view/a0;
 
-    .line 10
     invoke-virtual {v1, p2, p3}, Landroidx/core/view/a0;->a(J)Landroidx/core/view/a0;
 
-    .line 11
     iget-object p2, p0, Landroidx/appcompat/widget/a;->a:Landroidx/appcompat/widget/a$a;
 
     invoke-virtual {p2, v1, p1}, Landroidx/appcompat/widget/a$a;->a(Landroidx/core/view/a0;I)Landroidx/appcompat/widget/a$a;
@@ -315,19 +286,16 @@
 .method public getAnimatedVisibility()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/a;->f:Landroidx/core/view/a0;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/a;->a:Landroidx/appcompat/widget/a$a;
 
     iget v0, v0, Landroidx/appcompat/widget/a$a;->b:I
 
     return v0
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getVisibility()I
 
@@ -339,7 +307,6 @@
 .method public getContentHeight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/appcompat/widget/a;->e:I
 
     return v0
@@ -348,10 +315,8 @@
 .method protected onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 5
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -368,7 +333,6 @@
 
     move-result-object v0
 
-    .line 3
     sget v1, Landroidx/appcompat/R$styleable;->ActionBar_height:I
 
     invoke-virtual {v0, v1, v3}, Landroid/content/res/TypedArray;->getLayoutDimension(II)I
@@ -377,15 +341,12 @@
 
     invoke-virtual {p0, v1}, Landroidx/appcompat/widget/a;->setContentHeight(I)V
 
-    .line 4
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 5
     iget-object v0, p0, Landroidx/appcompat/widget/a;->d:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     if-eqz v0, :cond_0
 
-    .line 6
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/ActionMenuPresenter;->a(Landroid/content/res/Configuration;)V
 
     :cond_0
@@ -395,7 +356,6 @@
 .method public onHoverEvent(Landroid/view/MotionEvent;)Z
     .locals 5
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -406,10 +366,8 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 2
     iput-boolean v1, p0, Landroidx/appcompat/widget/a;->h:Z
 
-    .line 3
     :cond_0
     iget-boolean v3, p0, Landroidx/appcompat/widget/a;->h:Z
 
@@ -417,7 +375,6 @@
 
     if-nez v3, :cond_1
 
-    .line 4
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onHoverEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -426,7 +383,6 @@
 
     if-nez p1, :cond_1
 
-    .line 5
     iput-boolean v4, p0, Landroidx/appcompat/widget/a;->h:Z
 
     :cond_1
@@ -438,7 +394,6 @@
 
     if-ne v0, p1, :cond_3
 
-    .line 6
     :cond_2
     iput-boolean v1, p0, Landroidx/appcompat/widget/a;->h:Z
 
@@ -449,7 +404,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -458,10 +412,8 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iput-boolean v1, p0, Landroidx/appcompat/widget/a;->g:Z
 
-    .line 3
     :cond_0
     iget-boolean v2, p0, Landroidx/appcompat/widget/a;->g:Z
 
@@ -469,7 +421,6 @@
 
     if-nez v2, :cond_1
 
-    .line 4
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -478,7 +429,6 @@
 
     if-nez p1, :cond_1
 
-    .line 5
     iput-boolean v3, p0, Landroidx/appcompat/widget/a;->g:Z
 
     :cond_1
@@ -488,7 +438,6 @@
 
     if-ne v0, p1, :cond_3
 
-    .line 6
     :cond_2
     iput-boolean v1, p0, Landroidx/appcompat/widget/a;->g:Z
 
@@ -502,22 +451,18 @@
 .method public setVisibility(I)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getVisibility()I
 
     move-result v0
 
     if-eq p1, v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/a;->f:Landroidx/core/view/a0;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Landroidx/core/view/a0;->a()V
 
-    .line 4
     :cond_0
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->setVisibility(I)V
 

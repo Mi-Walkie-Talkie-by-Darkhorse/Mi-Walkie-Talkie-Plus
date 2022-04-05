@@ -1,6 +1,5 @@
 .class synthetic Lcom/xiaomi/account/http/UrlConnHttpFactory$1;
 .super Ljava/lang/Object;
-.source "UrlConnHttpFactory.java"
 
 
 # annotations

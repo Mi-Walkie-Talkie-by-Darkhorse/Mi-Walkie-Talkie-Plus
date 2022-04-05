@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/hn$2;
 .super Ljava/lang/Object;
-.source "Utils.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroid/content/Context;Lcom/amap/api/col/l3/gh;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/hn$2;->a:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/hn$2;->b:Lcom/amap/api/col/l3/gh;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/hn$2;->a:Landroid/content/Context;
 

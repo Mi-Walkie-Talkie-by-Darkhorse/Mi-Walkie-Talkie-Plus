@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/im$1;
 .super Ljava/lang/Object;
-.source "StatisticsManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroid/content/Context;Lcom/amap/api/col/l3/il;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/im$1;->a:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/im$1;->b:Lcom/amap/api/col/l3/il;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     :try_start_0
     const-class v0, Lcom/amap/api/col/l3/im;
 
@@ -50,7 +47,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 2
     :try_start_1
     iget-object v1, p0, Lcom/amap/api/col/l3/im$1;->a:Landroid/content/Context;
 
@@ -62,7 +58,6 @@
 
     invoke-static {v1, v2}, Lcom/amap/api/col/l3/im;->a(Landroid/content/Context;[B)V
 
-    .line 3
     monitor-exit v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -86,7 +81,6 @@
 
     const-string v2, "as"
 
-    .line 4
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

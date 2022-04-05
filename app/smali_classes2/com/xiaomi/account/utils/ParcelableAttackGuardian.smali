@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/utils/ParcelableAttackGuardian;
 .super Ljava/lang/Object;
-.source "ParcelableAttackGuardian.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 1
     invoke-virtual {p1}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
@@ -41,7 +38,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v1, Landroid/content/Intent;
 
@@ -53,7 +49,6 @@
 
     const/4 v2, 0x0
 
-    .line 3
     :try_start_0
     invoke-virtual {p0, v1}, Lcom/xiaomi/account/utils/ParcelableAttackGuardian;->unparcelIntent(Landroid/content/Intent;)V
     :try_end_0
@@ -65,7 +60,6 @@
     :catch_0
     move-exception v1
 
-    .line 4
     invoke-virtual {v1}, Ljava/lang/RuntimeException;->getCause()Ljava/lang/Throwable;
 
     move-result-object v1
@@ -74,7 +68,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
     sget-object v0, Lcom/xiaomi/account/utils/ParcelableAttackGuardian;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -106,7 +99,6 @@
     :cond_1
     return v0
 
-    .line 6
     :catch_1
     sget-object v0, Lcom/xiaomi/account/utils/ParcelableAttackGuardian;->TAG:Ljava/lang/String;
 
@@ -151,7 +143,6 @@
 
     const-string v0, ""
 
-    .line 1
     invoke-virtual {p1, v0}, Landroid/content/Intent;->getStringExtra(Ljava/lang/String;)Ljava/lang/String;
 
     return-void

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/LoginFragment$e;
 .super Ljava/lang/Object;
-.source "LoginFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -21,7 +20,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -61,7 +58,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v1

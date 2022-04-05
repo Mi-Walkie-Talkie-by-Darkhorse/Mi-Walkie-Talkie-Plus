@@ -1,6 +1,5 @@
 .class final Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;
 .super Ljava/lang/Object;
-.source "ReplayProcessor.java"
 
 # interfaces
 .implements Lio/reactivex/processors/ReplayProcessor$ReplayBuffer;
@@ -66,12 +65,10 @@
 .method constructor <init>(IJLjava/util/concurrent/TimeUnit;Lio/reactivex/Scheduler;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "maxSize"
 
-    .line 2
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->verifyPositive(ILjava/lang/String;)I
 
     move-result p1
@@ -80,7 +77,6 @@
 
     const-string p1, "maxAge"
 
-    .line 3
     invoke-static {p2, p3, p1}, Lio/reactivex/internal/functions/ObjectHelper;->verifyPositive(JLjava/lang/String;)J
 
     move-result-wide p1
@@ -89,7 +85,6 @@
 
     const-string p1, "unit is null"
 
-    .line 4
     invoke-static {p4, p1}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -100,7 +95,6 @@
 
     const-string p1, "scheduler is null"
 
-    .line 5
     invoke-static {p5, p1}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -109,7 +103,6 @@
 
     iput-object p1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->scheduler:Lio/reactivex/Scheduler;
 
-    .line 6
     new-instance p1, Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     const/4 p2, 0x0
@@ -118,10 +111,8 @@
 
     invoke-direct {p1, p2, p3, p4}, Lio/reactivex/processors/ReplayProcessor$TimedNode;-><init>(Ljava/lang/Object;J)V
 
-    .line 7
     iput-object p1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->tail:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
-    .line 8
     iput-object p1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     return-void
@@ -132,12 +123,10 @@
 .method public complete()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->trimFinal()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->done:Z
 
     return-void
@@ -146,15 +135,12 @@
 .method public error(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->trimFinal()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->error:Ljava/lang/Throwable;
 
     const/4 p1, 0x1
 
-    .line 3
     iput-boolean p1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->done:Z
 
     return-void
@@ -163,7 +149,6 @@
 .method public getError()Ljava/lang/Throwable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->error:Ljava/lang/Throwable;
 
     return-object v0
@@ -179,10 +164,8 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->scheduler:Lio/reactivex/Scheduler;
 
     iget-object v2, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->unit:Ljava/util/concurrent/TimeUnit;
@@ -195,7 +178,6 @@
 
     sub-long/2addr v1, v3
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v3
@@ -211,7 +193,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-wide v4, v0, Lio/reactivex/processors/ReplayProcessor$TimedNode;->time:J
 
     cmp-long v6, v4, v1
@@ -220,7 +201,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_0
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -246,10 +226,8 @@
     .annotation build Lio/reactivex/annotations/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
-    .line 2
     :goto_0
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -259,7 +237,6 @@
 
     if-nez v1, :cond_1
 
-    .line 3
     iget-object v1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->scheduler:Lio/reactivex/Scheduler;
 
     iget-object v2, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->unit:Ljava/util/concurrent/TimeUnit;
@@ -272,7 +249,6 @@
 
     sub-long/2addr v1, v3
 
-    .line 4
     iget-wide v3, v0, Lio/reactivex/processors/ReplayProcessor$TimedNode;->time:J
 
     cmp-long v5, v3, v1
@@ -283,7 +259,6 @@
 
     return-object v0
 
-    .line 5
     :cond_0
     iget-object v0, v0, Lio/reactivex/processors/ReplayProcessor$TimedNode;->value:Ljava/lang/Object;
 
@@ -303,12 +278,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->getHead()Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0, v0}, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->size(Lio/reactivex/processors/ReplayProcessor$TimedNode;)I
 
     move-result v1
@@ -319,23 +292,19 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     array-length v0, p1
 
     if-eqz v0, :cond_3
 
-    .line 4
     aput-object v2, p1, v3
 
     goto :goto_1
 
-    .line 5
     :cond_0
     array-length v4, p1
 
     if-ge v4, v1, :cond_1
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -354,14 +323,12 @@
     :goto_0
     if-eq v3, v1, :cond_2
 
-    .line 7
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
-    .line 8
     iget-object v4, v0, Lio/reactivex/processors/ReplayProcessor$TimedNode;->value:Ljava/lang/Object;
 
     aput-object v4, p1, v3
@@ -370,13 +337,11 @@
 
     goto :goto_0
 
-    .line 9
     :cond_2
     array-length v0, p1
 
     if-le v0, v1, :cond_3
 
-    .line 10
     aput-object v2, p1, v1
 
     :cond_3
@@ -387,7 +352,6 @@
 .method public isDone()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->done:Z
 
     return v0
@@ -401,7 +365,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     iget-object v1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->scheduler:Lio/reactivex/Scheduler;
@@ -414,23 +377,18 @@
 
     invoke-direct {v0, p1, v1, v2}, Lio/reactivex/processors/ReplayProcessor$TimedNode;-><init>(Ljava/lang/Object;J)V
 
-    .line 2
     iget-object p1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->tail:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
-    .line 3
     iput-object v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->tail:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
-    .line 4
     iget v1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->size:I
 
     add-int/lit8 v1, v1, 0x1
 
     iput v1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->size:I
 
-    .line 5
     invoke-virtual {p1, v0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
-    .line 6
     invoke-virtual {p0}, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->trim()V
 
     return-void
@@ -446,7 +404,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
     move-result v0
@@ -455,23 +412,19 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->downstream:Lc/a/c;
 
-    .line 3
     iget-object v1, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
     check-cast v1, Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     if-nez v1, :cond_1
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->getHead()Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     move-result-object v1
 
-    .line 5
     :cond_1
     iget-wide v2, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->emitted:J
 
@@ -479,7 +432,6 @@
 
     const/4 v5, 0x1
 
-    .line 6
     :cond_2
     iget-object v6, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
@@ -494,21 +446,17 @@
 
     if-eqz v9, :cond_8
 
-    .line 7
     iget-boolean v10, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->cancelled:Z
 
     if-eqz v10, :cond_3
 
-    .line 8
     iput-object v8, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
     return-void
 
-    .line 9
     :cond_3
     iget-boolean v10, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->done:Z
 
-    .line 10
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v11
@@ -529,23 +477,18 @@
 
     if-eqz v12, :cond_6
 
-    .line 11
     iput-object v8, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
-    .line 12
     iput-boolean v4, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->cancelled:Z
 
-    .line 13
     iget-object p1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->error:Ljava/lang/Throwable;
 
     if-nez p1, :cond_5
 
-    .line 14
     invoke-interface {v0}, Lc/a/c;->onComplete()V
 
     goto :goto_2
 
-    .line 15
     :cond_5
     invoke-interface {v0, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
@@ -557,7 +500,6 @@
 
     goto :goto_3
 
-    .line 16
     :cond_7
     iget-object v1, v11, Lio/reactivex/processors/ReplayProcessor$TimedNode;->value:Ljava/lang/Object;
 
@@ -575,62 +517,50 @@
     :goto_3
     if-nez v9, :cond_b
 
-    .line 17
     iget-boolean v6, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->cancelled:Z
 
     if-eqz v6, :cond_9
 
-    .line 18
     iput-object v8, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
     return-void
 
-    .line 19
     :cond_9
     iget-boolean v6, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->done:Z
 
     if-eqz v6, :cond_b
 
-    .line 20
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v6
 
     if-nez v6, :cond_b
 
-    .line 21
     iput-object v8, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
-    .line 22
     iput-boolean v4, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->cancelled:Z
 
-    .line 23
     iget-object p1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->error:Ljava/lang/Throwable;
 
     if-nez p1, :cond_a
 
-    .line 24
     invoke-interface {v0}, Lc/a/c;->onComplete()V
 
     goto :goto_4
 
-    .line 25
     :cond_a
     invoke-interface {v0, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
     :goto_4
     return-void
 
-    .line 26
     :cond_b
     iput-object v1, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
-    .line 27
     iput-wide v2, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->emitted:J
 
     neg-int v5, v5
 
-    .line 28
     invoke-virtual {p1, v5}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
 
     move-result v5
@@ -643,7 +573,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->getHead()Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     move-result-object v0
@@ -672,7 +601,6 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 2
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object p1
@@ -696,7 +624,6 @@
 .method trim()V
     .locals 7
 
-    .line 1
     iget v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->size:I
 
     iget v1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->maxSize:I
@@ -705,13 +632,10 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 2
     iput v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->size:I
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
-    .line 4
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -720,7 +644,6 @@
 
     iput-object v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->scheduler:Lio/reactivex/Scheduler;
 
@@ -734,10 +657,8 @@
 
     sub-long/2addr v0, v2
 
-    .line 6
     iget-object v2, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
-    .line 7
     :goto_0
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -747,12 +668,10 @@
 
     if-nez v3, :cond_1
 
-    .line 8
     iput-object v2, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     goto :goto_1
 
-    .line 9
     :cond_1
     iget-wide v4, v3, Lio/reactivex/processors/ReplayProcessor$TimedNode;->time:J
 
@@ -760,7 +679,6 @@
 
     if-lez v6, :cond_2
 
-    .line 10
     iput-object v2, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     :goto_1
@@ -775,7 +693,6 @@
 .method trimFinal()V
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->scheduler:Lio/reactivex/Scheduler;
 
     iget-object v1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->unit:Ljava/util/concurrent/TimeUnit;
@@ -788,10 +705,8 @@
 
     sub-long/2addr v0, v2
 
-    .line 2
     iget-object v2, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
-    .line 3
     :goto_0
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -805,12 +720,10 @@
 
     if-nez v3, :cond_1
 
-    .line 4
     iget-object v0, v2, Lio/reactivex/processors/ReplayProcessor$TimedNode;->value:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
-    .line 5
     new-instance v0, Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     invoke-direct {v0, v6, v4, v5}, Lio/reactivex/processors/ReplayProcessor$TimedNode;-><init>(Ljava/lang/Object;J)V
@@ -819,13 +732,11 @@
 
     goto :goto_1
 
-    .line 6
     :cond_0
     iput-object v2, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     goto :goto_1
 
-    .line 7
     :cond_1
     iget-wide v7, v3, Lio/reactivex/processors/ReplayProcessor$TimedNode;->time:J
 
@@ -833,29 +744,24 @@
 
     if-lez v9, :cond_3
 
-    .line 8
     iget-object v0, v2, Lio/reactivex/processors/ReplayProcessor$TimedNode;->value:Ljava/lang/Object;
 
     if-eqz v0, :cond_2
 
-    .line 9
     new-instance v0, Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     invoke-direct {v0, v6, v4, v5}, Lio/reactivex/processors/ReplayProcessor$TimedNode;-><init>(Ljava/lang/Object;J)V
 
-    .line 10
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 11
     iput-object v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     goto :goto_1
 
-    .line 12
     :cond_2
     iput-object v2, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
@@ -871,14 +777,12 @@
 .method public trimHead()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     iget-object v0, v0, Lio/reactivex/processors/ReplayProcessor$TimedNode;->value:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     const/4 v1, 0x0
@@ -887,7 +791,6 @@
 
     invoke-direct {v0, v1, v2, v3}, Lio/reactivex/processors/ReplayProcessor$TimedNode;-><init>(Ljava/lang/Object;J)V
 
-    .line 3
     iget-object v1, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -896,7 +799,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 4
     iput-object v0, p0, Lio/reactivex/processors/ReplayProcessor$SizeAndTimeBoundReplayBuffer;->head:Lio/reactivex/processors/ReplayProcessor$TimedNode;
 
     :cond_0

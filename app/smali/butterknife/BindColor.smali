@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/BindColor;
 .super Ljava/lang/Object;
-.source "BindColor.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/library/helper/a;
 .super Ljava/lang/Object;
-.source "QMUIDeviceHelper.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 
     const-string v3, "MX"
 
-    .line 1
     filled-new-array {v0, v1, v2, v3}, [Ljava/lang/String;
 
     move-result-object v0
@@ -32,7 +30,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     new-instance v1, Ljava/io/FileInputStream;
 
@@ -51,18 +48,15 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     :try_start_1
     new-instance v0, Ljava/util/Properties;
 
     invoke-direct {v0}, Ljava/util/Properties;-><init>()V
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
 
     const-string v2, "android.os.SystemProperties"
 
-    .line 5
     invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v2
@@ -75,7 +69,6 @@
 
     const/4 v5, 0x0
 
-    .line 6
     const-class v6, Ljava/lang/String;
 
     aput-object v6, v4, v5
@@ -86,7 +79,6 @@
 
     const-string v3, "ro.miui.ui.version.name"
 
-    .line 7
     invoke-static {v0, v2, v3}, Lcom/ifengyu/library/helper/a;->a(Ljava/util/Properties;Ljava/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -95,7 +87,6 @@
 
     const-string v3, "ro.build.display.id"
 
-    .line 8
     invoke-static {v0, v2, v3}, Lcom/ifengyu/library/helper/a;->a(Ljava/util/Properties;Ljava/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -136,7 +127,6 @@
     :try_start_2
     const-string v2, "QMUIDeviceHelper"
 
-    .line 9
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -159,7 +149,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 10
     :goto_1
     invoke-static {v1}, Lcom/ifengyu/library/a/f;->a(Ljava/io/Closeable;)Z
 
@@ -171,7 +160,6 @@
     :goto_2
     invoke-static {v1}, Lcom/ifengyu/library/a/f;->a(Ljava/io/Closeable;)Z
 
-    .line 11
     throw v0
 .end method
 
@@ -180,7 +168,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 5
     invoke-virtual {p0, p2}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -198,7 +185,6 @@
 
     aput-object p2, v1, v2
 
-    .line 6
     invoke-virtual {p1, v0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -218,7 +204,6 @@
     :goto_0
     if-eqz p0, :cond_1
 
-    .line 7
     invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object p0
@@ -230,7 +215,6 @@
 .method public static a()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/library/helper/a;->c:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -263,7 +247,6 @@
 .method private static a([Ljava/lang/String;)Z
     .locals 5
 
-    .line 2
     sget-object v0, Landroid/os/Build;->BOARD:Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -272,7 +255,6 @@
 
     return v1
 
-    .line 3
     :cond_0
     array-length v2, p0
 
@@ -281,7 +263,6 @@
     :goto_0
     if-ge v3, v2, :cond_2
 
-    .line 4
     aget-object v4, p0, v3
 
     invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -306,7 +287,6 @@
 .method public static b()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/library/helper/a;->b:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -321,7 +301,6 @@
 .method public static c()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/library/helper/a;->b:Ljava/lang/String;
 
     const-string v1, "v5"
@@ -336,7 +315,6 @@
 .method public static d()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/library/helper/a;->b:Ljava/lang/String;
 
     const-string v1, "v6"
@@ -351,7 +329,6 @@
 .method public static e()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/library/helper/a;->b:Ljava/lang/String;
 
     const-string v1, "v7"
@@ -366,7 +343,6 @@
 .method public static f()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/library/helper/a;->b:Ljava/lang/String;
 
     const-string v1, "v8"
@@ -381,7 +357,6 @@
 .method public static g()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/library/helper/a;->b:Ljava/lang/String;
 
     const-string v1, "v9"
@@ -420,7 +395,6 @@
 .method public static h()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/library/helper/a;->a:[Ljava/lang/String;
 
     invoke-static {v0}, Lcom/ifengyu/library/helper/a;->a([Ljava/lang/String;)Z
@@ -453,7 +427,6 @@
 .method public static i()Z
     .locals 2
 
-    .line 1
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     if-nez v0, :cond_0
@@ -462,7 +435,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -480,7 +452,6 @@
 .method public static j()Z
     .locals 2
 
-    .line 1
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     if-nez v0, :cond_0
@@ -489,7 +460,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 

@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/single/SingleZipArray;
 .super Lio/reactivex/Single;
-.source "SingleZipArray.java"
 
 
 # annotations
@@ -63,13 +62,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleZipArray;->sources:[Lio/reactivex/SingleSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/single/SingleZipArray;->zipper:Lio/reactivex/functions/Function;
 
     return-void
@@ -87,10 +83,8 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleZipArray;->sources:[Lio/reactivex/SingleSource;
 
-    .line 2
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -99,7 +93,6 @@
 
     if-ne v1, v3, :cond_0
 
-    .line 3
     aget-object v0, v0, v2
 
     new-instance v1, Lio/reactivex/internal/operators/single/SingleMap$MapSingleObserver;
@@ -114,7 +107,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     new-instance v3, Lio/reactivex/internal/operators/single/SingleZipArray$ZipCoordinator;
 
@@ -122,13 +114,11 @@
 
     invoke-direct {v3, p1, v1, v4}, Lio/reactivex/internal/operators/single/SingleZipArray$ZipCoordinator;-><init>(Lio/reactivex/SingleObserver;ILio/reactivex/functions/Function;)V
 
-    .line 5
     invoke-interface {p1, v3}, Lio/reactivex/SingleObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
     :goto_0
     if-ge v2, v1, :cond_3
 
-    .line 6
     invoke-virtual {v3}, Lio/reactivex/internal/operators/single/SingleZipArray$ZipCoordinator;->isDisposed()Z
 
     move-result p1
@@ -137,13 +127,11 @@
 
     return-void
 
-    .line 7
     :cond_1
     aget-object p1, v0, v2
 
     if-nez p1, :cond_2
 
-    .line 8
     new-instance p1, Ljava/lang/NullPointerException;
 
     const-string v0, "One of the sources is null"
@@ -154,7 +142,6 @@
 
     return-void
 
-    .line 9
     :cond_2
     iget-object v4, v3, Lio/reactivex/internal/operators/single/SingleZipArray$ZipCoordinator;->observers:[Lio/reactivex/internal/operators/single/SingleZipArray$ZipSingleObserver;
 

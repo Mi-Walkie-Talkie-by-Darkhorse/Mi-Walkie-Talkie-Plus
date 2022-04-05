@@ -1,6 +1,5 @@
 .class public Lpub/devrel/easypermissions/RationaleDialogFragment;
 .super Landroid/app/DialogFragment;
-.source "RationaleDialogFragment.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/app/DialogFragment;-><init>()V
 
     return-void
@@ -52,12 +50,10 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Lpub/devrel/easypermissions/RationaleDialogFragment;
 
     invoke-direct {v0}, Lpub/devrel/easypermissions/RationaleDialogFragment;-><init>()V
 
-    .line 2
     new-instance v7, Lpub/devrel/easypermissions/RationaleDialogConfig;
 
     move-object v1, v7
@@ -74,7 +70,6 @@
 
     invoke-direct/range {v1 .. v6}, Lpub/devrel/easypermissions/RationaleDialogConfig;-><init>(IILjava/lang/String;I[Ljava/lang/String;)V
 
-    .line 3
     invoke-virtual {v7}, Lpub/devrel/easypermissions/RationaleDialogConfig;->toBundle()Landroid/os/Bundle;
 
     move-result-object p0
@@ -94,10 +89,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/DialogFragment;->onAttach(Landroid/content/Context;)V
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
@@ -114,14 +107,12 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Landroid/app/DialogFragment;->getParentFragment()Landroid/app/Fragment;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {p0}, Landroid/app/DialogFragment;->getParentFragment()Landroid/app/Fragment;
 
     move-result-object v0
@@ -130,7 +121,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-virtual {p0}, Landroid/app/DialogFragment;->getParentFragment()Landroid/app/Fragment;
 
     move-result-object p1
@@ -141,13 +131,11 @@
 
     goto :goto_1
 
-    .line 6
     :cond_1
     instance-of v0, p1, Lpub/devrel/easypermissions/EasyPermissions$PermissionCallbacks;
 
     if-eqz v0, :cond_2
 
-    .line 7
     check-cast p1, Lpub/devrel/easypermissions/EasyPermissions$PermissionCallbacks;
 
     iput-object p1, p0, Lpub/devrel/easypermissions/RationaleDialogFragment;->mPermissionCallbacks:Lpub/devrel/easypermissions/EasyPermissions$PermissionCallbacks;
@@ -164,10 +152,8 @@
 
     const/4 p1, 0x0
 
-    .line 1
     invoke-virtual {p0, p1}, Landroid/app/DialogFragment;->setCancelable(Z)V
 
-    .line 2
     new-instance p1, Lpub/devrel/easypermissions/RationaleDialogConfig;
 
     invoke-virtual {p0}, Landroid/app/DialogFragment;->getArguments()Landroid/os/Bundle;
@@ -176,14 +162,12 @@
 
     invoke-direct {p1, v0}, Lpub/devrel/easypermissions/RationaleDialogConfig;-><init>(Landroid/os/Bundle;)V
 
-    .line 3
     new-instance v0, Lpub/devrel/easypermissions/RationaleDialogClickListener;
 
     iget-object v1, p0, Lpub/devrel/easypermissions/RationaleDialogFragment;->mPermissionCallbacks:Lpub/devrel/easypermissions/EasyPermissions$PermissionCallbacks;
 
     invoke-direct {v0, p0, p1, v1}, Lpub/devrel/easypermissions/RationaleDialogClickListener;-><init>(Lpub/devrel/easypermissions/RationaleDialogFragment;Lpub/devrel/easypermissions/RationaleDialogConfig;Lpub/devrel/easypermissions/EasyPermissions$PermissionCallbacks;)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/app/DialogFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
@@ -198,12 +182,10 @@
 .method public onDetach()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/app/DialogFragment;->onDetach()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lpub/devrel/easypermissions/RationaleDialogFragment;->mPermissionCallbacks:Lpub/devrel/easypermissions/EasyPermissions$PermissionCallbacks;
 
     return-void

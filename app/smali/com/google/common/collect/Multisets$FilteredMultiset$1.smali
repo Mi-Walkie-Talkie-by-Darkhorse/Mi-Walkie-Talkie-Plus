@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Multisets$FilteredMultiset$1;
 .super Ljava/lang/Object;
-.source "Multisets.java"
 
 # interfaces
 .implements Lcom/google/common/base/Predicate;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/google/common/collect/Multisets$FilteredMultiset;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Multisets$FilteredMultiset$1;->this$0:Lcom/google/common/collect/Multisets$FilteredMultiset;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -54,7 +52,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/Multisets$FilteredMultiset$1;->this$0:Lcom/google/common/collect/Multisets$FilteredMultiset;
 
     iget-object v0, v0, Lcom/google/common/collect/Multisets$FilteredMultiset;->predicate:Lcom/google/common/base/Predicate;
@@ -73,7 +70,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/common/collect/Multiset$Entry;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multisets$FilteredMultiset$1;->apply(Lcom/google/common/collect/Multiset$Entry;)Z

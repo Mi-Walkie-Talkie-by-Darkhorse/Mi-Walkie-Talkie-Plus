@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/reflect/TypeToken$TypeCollector;
 .super Ljava/lang/Object;
-.source "TypeToken.java"
 
 
 # annotations
@@ -55,14 +54,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/reflect/TypeToken$TypeCollector$1;
 
     invoke-direct {v0}, Lcom/google/common/reflect/TypeToken$TypeCollector$1;-><init>()V
 
     sput-object v0, Lcom/google/common/reflect/TypeToken$TypeCollector;->FOR_GENERIC_TYPE:Lcom/google/common/reflect/TypeToken$TypeCollector;
 
-    .line 2
     new-instance v0, Lcom/google/common/reflect/TypeToken$TypeCollector$2;
 
     invoke-direct {v0}, Lcom/google/common/reflect/TypeToken$TypeCollector$2;-><init>()V
@@ -75,7 +72,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -84,7 +80,6 @@
 .method synthetic constructor <init>(Lcom/google/common/reflect/TypeToken$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/reflect/TypeToken$TypeCollector;-><init>()V
 
     return-void
@@ -102,7 +97,6 @@
         }
     .end annotation
 
-    .line 6
     invoke-interface {p2, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -111,14 +105,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result p1
 
     return p1
 
-    .line 8
     :cond_0
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector;->getRawType(Ljava/lang/Object;)Ljava/lang/Class;
 
@@ -128,7 +120,6 @@
 
     move-result v0
 
-    .line 9
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector;->getInterfaces(Ljava/lang/Object;)Ljava/lang/Iterable;
 
     move-result-object v1
@@ -148,7 +139,6 @@
 
     move-result-object v2
 
-    .line 10
     invoke-direct {p0, v2, p2}, Lcom/google/common/reflect/TypeToken$TypeCollector;->collectTypes(Ljava/lang/Object;Ljava/util/Map;)I
 
     move-result v2
@@ -159,7 +149,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_1
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$TypeCollector;->getSuperclass(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -167,7 +156,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 12
     invoke-direct {p0, v1, p2}, Lcom/google/common/reflect/TypeToken$TypeCollector;->collectTypes(Ljava/lang/Object;Ljava/util/Map;)I
 
     move-result v1
@@ -179,7 +167,6 @@
     :cond_2
     add-int/lit8 v0, v0, 0x1
 
-    .line 13
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -207,12 +194,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/reflect/TypeToken$TypeCollector$4;
 
     invoke-direct {v0, p1, p0}, Lcom/google/common/reflect/TypeToken$TypeCollector$4;-><init>(Ljava/util/Comparator;Ljava/util/Map;)V
 
-    .line 2
     invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object p0
@@ -236,7 +221,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/reflect/TypeToken$TypeCollector$3;
 
     invoke-direct {v0, p0, p0}, Lcom/google/common/reflect/TypeToken$TypeCollector$3;-><init>(Lcom/google/common/reflect/TypeToken$TypeCollector;Lcom/google/common/reflect/TypeToken$TypeCollector;)V
@@ -256,12 +240,10 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/Maps;->newHashMap()Ljava/util/HashMap;
 
     move-result-object v0
 
-    .line 3
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -277,12 +259,10 @@
 
     move-result-object v1
 
-    .line 4
     invoke-direct {p0, v1, v0}, Lcom/google/common/reflect/TypeToken$TypeCollector;->collectTypes(Ljava/lang/Object;Ljava/util/Map;)I
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
@@ -309,7 +289,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/collect/ImmutableList;->of(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p1

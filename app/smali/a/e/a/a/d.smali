@@ -1,6 +1,5 @@
 .class abstract La/e/a/a/d;
 .super Ljava/lang/Object;
-.source "LookupTableInterpolator.java"
 
 # interfaces
 .implements Landroid/view/animation/Interpolator;
@@ -16,13 +15,10 @@
 .method protected constructor <init>([F)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, La/e/a/a/d;->a:[F
 
-    .line 3
     array-length p1, p1
 
     add-int/lit8 p1, p1, -0x1
@@ -60,7 +56,6 @@
 
     return v0
 
-    .line 1
     :cond_1
     iget-object v0, p0, La/e/a/a/d;->a:[F
 
@@ -84,7 +79,6 @@
 
     int-to-float v1, v0
 
-    .line 2
     iget v2, p0, La/e/a/a/d;->b:F
 
     mul-float v1, v1, v2
@@ -93,7 +87,6 @@
 
     div-float/2addr p1, v2
 
-    .line 3
     iget-object v1, p0, La/e/a/a/d;->a:[F
 
     aget v2, v1, v0

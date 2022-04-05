@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/maybe/MaybeZipIterable;
 .super Lio/reactivex/Maybe;
-.source "MaybeZipIterable.java"
 
 
 # annotations
@@ -64,13 +63,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Maybe;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/maybe/MaybeZipIterable;->sources:Ljava/lang/Iterable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/maybe/MaybeZipIterable;->zipper:Lio/reactivex/functions/Function;
 
     return-void
@@ -92,7 +88,6 @@
 
     new-array v0, v0, [Lio/reactivex/MaybeSource;
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lio/reactivex/internal/operators/maybe/MaybeZipIterable;->sources:Ljava/lang/Iterable;
 
@@ -119,7 +114,6 @@
 
     if-nez v4, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "One of the sources is null"
@@ -130,7 +124,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     array-length v5, v0
 
@@ -140,7 +133,6 @@
 
     add-int/2addr v5, v3
 
-    .line 4
     invoke-static {v0, v5}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object v0
@@ -150,7 +142,6 @@
     :cond_1
     add-int/lit8 v5, v3, 0x1
 
-    .line 5
     aput-object v4, v0, v3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -162,7 +153,6 @@
     :cond_2
     if-nez v3, :cond_3
 
-    .line 6
     invoke-static {p1}, Lio/reactivex/internal/disposables/EmptyDisposable;->complete(Lio/reactivex/MaybeObserver;)V
 
     return-void
@@ -172,7 +162,6 @@
 
     if-ne v3, v1, :cond_4
 
-    .line 7
     aget-object v0, v0, v2
 
     new-instance v1, Lio/reactivex/internal/operators/maybe/MaybeMap$MapMaybeObserver;
@@ -187,7 +176,6 @@
 
     return-void
 
-    .line 8
     :cond_4
     new-instance v1, Lio/reactivex/internal/operators/maybe/MaybeZipArray$ZipCoordinator;
 
@@ -195,13 +183,11 @@
 
     invoke-direct {v1, p1, v3, v4}, Lio/reactivex/internal/operators/maybe/MaybeZipArray$ZipCoordinator;-><init>(Lio/reactivex/MaybeObserver;ILio/reactivex/functions/Function;)V
 
-    .line 9
     invoke-interface {p1, v1}, Lio/reactivex/MaybeObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
     :goto_1
     if-ge v2, v3, :cond_6
 
-    .line 10
     invoke-virtual {v1}, Lio/reactivex/internal/operators/maybe/MaybeZipArray$ZipCoordinator;->isDisposed()Z
 
     move-result p1
@@ -210,7 +196,6 @@
 
     return-void
 
-    .line 11
     :cond_5
     aget-object p1, v0, v2
 
@@ -230,10 +215,8 @@
     :catchall_0
     move-exception v0
 
-    .line 12
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 13
     invoke-static {v0, p1}, Lio/reactivex/internal/disposables/EmptyDisposable;->error(Ljava/lang/Throwable;Lio/reactivex/MaybeObserver;)V
 
     return-void

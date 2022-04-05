@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$e;
 .super Ljava/lang/Object;
-.source "SealSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$e;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$e;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
@@ -42,14 +40,12 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$e;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->p:Ljava/lang/Runnable;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->b(Ljava/lang/Runnable;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$e;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getResult()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam$SEAL_DEV_UERR;
@@ -60,21 +56,18 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$e;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     const v1, 0x7f080191
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$e;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     const v1, 0x7f110027
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c(I)V
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$e$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$e$a;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$e;)V
@@ -83,7 +76,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/ifengyu/intercom/i/k0;->a(Ljava/lang/Runnable;J)V
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -92,12 +84,10 @@
 
     iput-boolean v1, v0, Lcom/ifengyu/intercom/MiTalkiApp;->h:Z
 
-    .line 7
     invoke-static {v1}, Lcom/ifengyu/intercom/i/d0;->a(Z)V
 
     goto :goto_0
 
-    .line 8
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$e;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 

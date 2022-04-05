@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/TreeMultiset$Reference;
 .super Ljava/lang/Object;
-.source "TreeMultiset.java"
 
 
 # annotations
@@ -40,7 +39,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +47,6 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/TreeMultiset$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/collect/TreeMultiset$Reference;-><init>()V
 
     return-void
@@ -69,17 +66,14 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/TreeMultiset$Reference;->value:Ljava/lang/Object;
 
     if-ne v0, p1, :cond_0
 
-    .line 2
     iput-object p2, p0, Lcom/google/common/collect/TreeMultiset$Reference;->value:Ljava/lang/Object;
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/util/ConcurrentModificationException;
 
@@ -99,7 +93,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/TreeMultiset$Reference;->value:Ljava/lang/Object;
 
     return-object v0

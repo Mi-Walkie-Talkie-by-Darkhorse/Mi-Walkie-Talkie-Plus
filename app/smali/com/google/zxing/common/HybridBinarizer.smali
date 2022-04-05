@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/common/HybridBinarizer;
 .super Lcom/google/zxing/common/GlobalHistogramBinarizer;
-.source "HybridBinarizer.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 .method public constructor <init>(Lcom/google/zxing/LuminanceSource;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/zxing/common/GlobalHistogramBinarizer;-><init>(Lcom/google/zxing/LuminanceSource;)V
 
     return-void
@@ -54,7 +52,6 @@
 
     aput v1, v6, v8
 
-    .line 1
     const-class v9, I
 
     invoke-static {v9, v6}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
@@ -113,7 +110,6 @@
 
     add-int v16, v13, v5
 
-    .line 2
     aget-byte v2, p0, v16
 
     and-int/2addr v2, v12
@@ -159,7 +155,6 @@
 
     add-int v16, v13, v5
 
-    .line 3
     aget-byte v2, p0, v16
 
     and-int/2addr v2, v12
@@ -198,7 +193,6 @@
 
     if-gt v7, v12, :cond_8
 
-    .line 4
     div-int/lit8 v5, v8, 0x2
 
     if-lez v9, :cond_8
@@ -207,7 +201,6 @@
 
     add-int/lit8 v7, v9, -0x1
 
-    .line 5
     aget-object v12, v6, v7
 
     aget v12, v12, v11
@@ -241,7 +234,6 @@
     :cond_8
     const/4 v15, 0x2
 
-    .line 6
     :cond_9
     :goto_5
     aget-object v7, v6, v9
@@ -315,7 +307,6 @@
 
     const/4 v13, 0x2
 
-    .line 1
     invoke-static {v11, v13, v3}, Lcom/google/zxing/common/HybridBinarizer;->cap(III)I
 
     move-result v14
@@ -339,7 +330,6 @@
     :goto_3
     add-int/lit8 v3, v0, -0x3
 
-    .line 2
     invoke-static {v15, v13, v3}, Lcom/google/zxing/common/HybridBinarizer;->cap(III)I
 
     move-result v3
@@ -353,12 +343,10 @@
 
     add-int v7, v14, v5
 
-    .line 3
     aget-object v7, p5, v7
 
     add-int/lit8 v8, v3, -0x2
 
-    .line 4
     aget v8, v7, v8
 
     add-int/lit8 v16, v3, -0x1
@@ -389,7 +377,6 @@
 
     goto :goto_4
 
-    .line 5
     :cond_2
     div-int/lit8 v6, v6, 0x19
 
@@ -401,7 +388,6 @@
 
     move-object/from16 v8, p6
 
-    .line 6
     invoke-static/range {v3 .. v8}, Lcom/google/zxing/common/HybridBinarizer;->thresholdBlock([BIIIILcom/google/zxing/common/BitMatrix;)V
 
     add-int/lit8 v15, v15, 0x1
@@ -456,7 +442,6 @@
 
     add-int v5, v0, v4
 
-    .line 1
     aget-byte v5, p0, v5
 
     and-int/lit16 v5, v5, 0xff
@@ -467,7 +452,6 @@
 
     add-int v6, p2, v2
 
-    .line 2
     invoke-virtual {p5, v5, v6}, Lcom/google/zxing/common/BitMatrix;->set(II)V
 
     :cond_0
@@ -491,7 +475,6 @@
 .method public createBinarizer(Lcom/google/zxing/LuminanceSource;)Lcom/google/zxing/Binarizer;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/zxing/common/HybridBinarizer;
 
     invoke-direct {v0, p1}, Lcom/google/zxing/common/HybridBinarizer;-><init>(Lcom/google/zxing/LuminanceSource;)V
@@ -507,25 +490,21 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/common/HybridBinarizer;->matrix:Lcom/google/zxing/common/BitMatrix;
 
     if-eqz v0, :cond_0
 
     return-object v0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/google/zxing/Binarizer;->getLuminanceSource()Lcom/google/zxing/LuminanceSource;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Lcom/google/zxing/LuminanceSource;->getWidth()I
 
     move-result v4
 
-    .line 4
     invoke-virtual {v0}, Lcom/google/zxing/LuminanceSource;->getHeight()I
 
     move-result v5
@@ -536,7 +515,6 @@
 
     if-lt v5, v1, :cond_3
 
-    .line 5
     invoke-virtual {v0}, Lcom/google/zxing/LuminanceSource;->getMatrix()[B
 
     move-result-object v1
@@ -563,27 +541,22 @@
     :cond_2
     move v3, v0
 
-    .line 6
     invoke-static {v1, v2, v3, v4, v5}, Lcom/google/zxing/common/HybridBinarizer;->calculateBlackPoints([BIIII)[[I
 
     move-result-object v6
 
-    .line 7
     new-instance v0, Lcom/google/zxing/common/BitMatrix;
 
     invoke-direct {v0, v4, v5}, Lcom/google/zxing/common/BitMatrix;-><init>(II)V
 
     move-object v7, v0
 
-    .line 8
     invoke-static/range {v1 .. v7}, Lcom/google/zxing/common/HybridBinarizer;->calculateThresholdForBlock([BIIII[[ILcom/google/zxing/common/BitMatrix;)V
 
-    .line 9
     iput-object v0, p0, Lcom/google/zxing/common/HybridBinarizer;->matrix:Lcom/google/zxing/common/BitMatrix;
 
     goto :goto_0
 
-    .line 10
     :cond_3
     invoke-super {p0}, Lcom/google/zxing/common/GlobalHistogramBinarizer;->getBlackMatrix()Lcom/google/zxing/common/BitMatrix;
 
@@ -591,7 +564,6 @@
 
     iput-object v0, p0, Lcom/google/zxing/common/HybridBinarizer;->matrix:Lcom/google/zxing/common/BitMatrix;
 
-    .line 11
     :goto_0
     iget-object v0, p0, Lcom/google/zxing/common/HybridBinarizer;->matrix:Lcom/google/zxing/common/BitMatrix;
 

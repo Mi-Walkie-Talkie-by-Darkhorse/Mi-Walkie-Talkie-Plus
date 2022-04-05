@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Constraints$ConstrainedRandomAccessList;
 .super Lcom/google/common/collect/Constraints$ConstrainedList;
-.source "Constraints.java"
 
 # interfaces
 .implements Ljava/util/RandomAccess;
@@ -41,7 +40,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Constraints$ConstrainedList;-><init>(Ljava/util/List;Lcom/google/common/collect/Constraint;)V
 
     return-void

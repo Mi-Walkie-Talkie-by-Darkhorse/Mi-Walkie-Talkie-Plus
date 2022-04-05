@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/resource/bitmap/t;
 .super Ljava/lang/Object;
-.source "UnitBitmapDecoder.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/f;
@@ -28,7 +27,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,7 +57,6 @@
         }
     .end annotation
 
-    .line 3
     new-instance p2, Lcom/bumptech/glide/load/resource/bitmap/t$a;
 
     invoke-direct {p2, p1}, Lcom/bumptech/glide/load/resource/bitmap/t$a;-><init>(Landroid/graphics/Bitmap;)V
@@ -83,7 +80,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Landroid/graphics/Bitmap;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/resource/bitmap/t;->a(Landroid/graphics/Bitmap;IILcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/engine/s;
@@ -125,7 +121,6 @@
         }
     .end annotation
 
-    .line 2
     check-cast p1, Landroid/graphics/Bitmap;
 
     invoke-virtual {p0, p1, p2}, Lcom/bumptech/glide/load/resource/bitmap/t;->a(Landroid/graphics/Bitmap;Lcom/bumptech/glide/load/e;)Z

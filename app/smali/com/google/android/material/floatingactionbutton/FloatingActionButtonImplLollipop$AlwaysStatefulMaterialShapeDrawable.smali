@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImplLollipop$AlwaysStatefulMaterialShapeDrawable;
 .super Lcom/google/android/material/shape/MaterialShapeDrawable;
-.source "FloatingActionButtonImplLollipop.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Lcom/google/android/material/shape/ShapeAppearanceModel;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/shape/MaterialShapeDrawable;-><init>(Lcom/google/android/material/shape/ShapeAppearanceModel;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/internal/fuseable/ConditionalSubscriber;
 .super Ljava/lang/Object;
-.source "ConditionalSubscriber.java"
 
 # interfaces
 .implements Lio/reactivex/FlowableSubscriber;

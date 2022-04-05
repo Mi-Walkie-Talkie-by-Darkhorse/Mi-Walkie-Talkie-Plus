@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStore;
 .super Ljava/lang/Object;
-.source "BreakpointStore.java"
 
 
 # virtual methods

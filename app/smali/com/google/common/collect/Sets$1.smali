@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Sets$1;
 .super Lcom/google/common/collect/Sets$SetView;
-.source "Sets.java"
 
 
 # annotations
@@ -33,7 +32,6 @@
 .method constructor <init>(Ljava/util/Set;Ljava/util/Set;Ljava/util/Set;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     iput-object p2, p0, Lcom/google/common/collect/Sets$1;->val$set2minus1:Ljava/util/Set;
@@ -52,7 +50,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
@@ -94,12 +91,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     invoke-interface {p1, v0}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/Sets$1;->val$set2:Ljava/util/Set;
 
     invoke-interface {p1, v0}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
@@ -117,7 +112,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ImmutableSet$Builder;
 
     invoke-direct {v0}, Lcom/google/common/collect/ImmutableSet$Builder;-><init>()V
@@ -144,7 +138,6 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
@@ -182,7 +175,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
@@ -209,7 +201,6 @@
 .method public size()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Sets$1;->val$set1:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->size()I

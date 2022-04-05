@@ -1,6 +1,5 @@
 .class public final Lcom/google/protobuf/UnknownFieldSet;
 .super Ljava/lang/Object;
-.source "UnknownFieldSet.java"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageLite;
@@ -39,7 +38,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/UnknownFieldSet;
 
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
@@ -50,7 +48,6 @@
 
     sput-object v0, Lcom/google/protobuf/UnknownFieldSet;->defaultInstance:Lcom/google/protobuf/UnknownFieldSet;
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/UnknownFieldSet$Parser;
 
     invoke-direct {v0}, Lcom/google/protobuf/UnknownFieldSet$Parser;-><init>()V
@@ -63,7 +60,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -81,10 +77,8 @@
         }
     .end annotation
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     iput-object p1, p0, Lcom/google/protobuf/UnknownFieldSet;->fields:Ljava/util/Map;
 
     return-void
@@ -93,7 +87,6 @@
 .method synthetic constructor <init>(Ljava/util/Map;Lcom/google/protobuf/UnknownFieldSet$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/protobuf/UnknownFieldSet;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -102,7 +95,6 @@
 .method static synthetic access$200(Lcom/google/protobuf/UnknownFieldSet;)Ljava/util/Map;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/UnknownFieldSet;->fields:Ljava/util/Map;
 
     return-object p0
@@ -111,7 +103,6 @@
 .method public static getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/UnknownFieldSet;->defaultInstance:Lcom/google/protobuf/UnknownFieldSet;
 
     return-object v0
@@ -120,7 +111,6 @@
 .method public static newBuilder()Lcom/google/protobuf/UnknownFieldSet$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet$Builder;->access$000()Lcom/google/protobuf/UnknownFieldSet$Builder;
 
     move-result-object v0
@@ -131,7 +121,6 @@
 .method public static newBuilder(Lcom/google/protobuf/UnknownFieldSet;)Lcom/google/protobuf/UnknownFieldSet$Builder;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->newBuilder()Lcom/google/protobuf/UnknownFieldSet$Builder;
 
     move-result-object v0
@@ -151,7 +140,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->newBuilder()Lcom/google/protobuf/UnknownFieldSet$Builder;
 
     move-result-object v0
@@ -175,7 +163,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->newBuilder()Lcom/google/protobuf/UnknownFieldSet$Builder;
 
     move-result-object v0
@@ -199,7 +186,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->newBuilder()Lcom/google/protobuf/UnknownFieldSet$Builder;
 
     move-result-object v0
@@ -223,7 +209,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->newBuilder()Lcom/google/protobuf/UnknownFieldSet$Builder;
 
     move-result-object v0
@@ -253,7 +238,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet;->fields:Ljava/util/Map;
 
     return-object v0
@@ -268,7 +252,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/google/protobuf/UnknownFieldSet;
 
@@ -298,7 +281,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstanceForType()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object v0
@@ -309,7 +291,6 @@
 .method public getDefaultInstanceForType()Lcom/google/protobuf/UnknownFieldSet;
     .locals 1
 
-    .line 2
     sget-object v0, Lcom/google/protobuf/UnknownFieldSet;->defaultInstance:Lcom/google/protobuf/UnknownFieldSet;
 
     return-object v0
@@ -318,7 +299,6 @@
 .method public getField(I)Lcom/google/protobuf/UnknownFieldSet$Field;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet;->fields:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -333,7 +313,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet$Field;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet$Field;
 
     move-result-object p1
@@ -345,7 +324,6 @@
 .method public bridge synthetic getParserForType()Lcom/google/protobuf/Parser;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/UnknownFieldSet;->getParserForType()Lcom/google/protobuf/UnknownFieldSet$Parser;
 
     move-result-object v0
@@ -356,7 +334,6 @@
 .method public final getParserForType()Lcom/google/protobuf/UnknownFieldSet$Parser;
     .locals 1
 
-    .line 2
     sget-object v0, Lcom/google/protobuf/UnknownFieldSet;->PARSER:Lcom/google/protobuf/UnknownFieldSet$Parser;
 
     return-object v0
@@ -365,7 +342,6 @@
 .method public getSerializedSize()I
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet;->fields:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -391,7 +367,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 2
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -423,7 +398,6 @@
 .method public getSerializedSizeAsMessageSet()I
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet;->fields:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -449,7 +423,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 2
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -481,7 +454,6 @@
 .method public hasField(I)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet;->fields:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -498,7 +470,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet;->fields:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->hashCode()I
@@ -519,7 +490,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/UnknownFieldSet;->newBuilderForType()Lcom/google/protobuf/UnknownFieldSet$Builder;
 
     move-result-object v0
@@ -530,7 +500,6 @@
 .method public newBuilderForType()Lcom/google/protobuf/UnknownFieldSet$Builder;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->newBuilder()Lcom/google/protobuf/UnknownFieldSet$Builder;
 
     move-result-object v0
@@ -541,7 +510,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/UnknownFieldSet;->toBuilder()Lcom/google/protobuf/UnknownFieldSet$Builder;
 
     move-result-object v0
@@ -552,7 +520,6 @@
 .method public toBuilder()Lcom/google/protobuf/UnknownFieldSet$Builder;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->newBuilder()Lcom/google/protobuf/UnknownFieldSet$Builder;
 
     move-result-object v0
@@ -567,7 +534,6 @@
 .method public toByteArray()[B
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/google/protobuf/UnknownFieldSet;->getSerializedSize()I
 
@@ -575,15 +541,12 @@
 
     new-array v0, v0, [B
 
-    .line 2
     invoke-static {v0}, Lcom/google/protobuf/CodedOutputStream;->newInstance([B)Lcom/google/protobuf/CodedOutputStream;
 
     move-result-object v1
 
-    .line 3
     invoke-virtual {p0, v1}, Lcom/google/protobuf/UnknownFieldSet;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
-    .line 4
     invoke-virtual {v1}, Lcom/google/protobuf/CodedOutputStream;->checkNoSpaceLeft()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -593,7 +556,6 @@
     :catch_0
     move-exception v0
 
-    .line 5
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Serializing to a byte array threw an IOException (should never happen)."
@@ -606,7 +568,6 @@
 .method public toByteString()Lcom/google/protobuf/ByteString;
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/google/protobuf/UnknownFieldSet;->getSerializedSize()I
 
@@ -616,14 +577,12 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Lcom/google/protobuf/ByteString$CodedBuilder;->getCodedOutput()Lcom/google/protobuf/CodedOutputStream;
 
     move-result-object v1
 
     invoke-virtual {p0, v1}, Lcom/google/protobuf/UnknownFieldSet;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
-    .line 3
     invoke-virtual {v0}, Lcom/google/protobuf/ByteString$CodedBuilder;->build()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
@@ -635,7 +594,6 @@
     :catch_0
     move-exception v0
 
-    .line 4
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Serializing to a ByteString threw an IOException (should never happen)."
@@ -648,7 +606,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/google/protobuf/TextFormat;->printToString(Lcom/google/protobuf/UnknownFieldSet;)Ljava/lang/String;
 
     move-result-object v0
@@ -664,7 +621,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet;->fields:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -688,7 +644,6 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 2
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -721,22 +676,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->newInstance(Ljava/io/OutputStream;)Lcom/google/protobuf/CodedOutputStream;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/UnknownFieldSet;->getSerializedSize()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeRawVarint32(I)V
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/google/protobuf/UnknownFieldSet;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
-    .line 4
     invoke-virtual {p1}, Lcom/google/protobuf/CodedOutputStream;->flush()V
 
     return-void
@@ -750,7 +701,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet;->fields:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -774,7 +724,6 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 2
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -807,15 +756,12 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->newInstance(Ljava/io/OutputStream;)Lcom/google/protobuf/CodedOutputStream;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p0, p1}, Lcom/google/protobuf/UnknownFieldSet;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
-    .line 5
     invoke-virtual {p1}, Lcom/google/protobuf/CodedOutputStream;->flush()V
 
     return-void

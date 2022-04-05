@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/bc;
 .super Ljava/lang/Object;
-.source "FieldMetaData.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -37,7 +36,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -50,16 +48,12 @@
 .method public constructor <init>(Ljava/lang/String;BLcom/umeng/analytics/pro/bd;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/umeng/analytics/pro/bc;->a:Ljava/lang/String;
 
-    .line 3
     iput-byte p2, p0, Lcom/umeng/analytics/pro/bc;->b:B
 
-    .line 4
     iput-object p3, p0, Lcom/umeng/analytics/pro/bc;->c:Lcom/umeng/analytics/pro/bd;
 
     return-void
@@ -84,7 +78,6 @@
 
     const-string v0, ", message: "
 
-    .line 2
     sget-object v1, Lcom/umeng/analytics/pro/bc;->d:Ljava/util/Map;
 
     invoke-interface {v1, p0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -93,7 +86,6 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
     :try_end_0
@@ -105,7 +97,6 @@
     :catch_0
     move-exception v1
 
-    .line 4
     new-instance v2, Ljava/lang/RuntimeException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -141,7 +132,6 @@
     :catch_1
     move-exception v1
 
-    .line 5
     new-instance v2, Ljava/lang/RuntimeException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -174,7 +164,6 @@
 
     throw v2
 
-    .line 6
     :cond_0
     :goto_0
     sget-object v0, Lcom/umeng/analytics/pro/bc;->d:Ljava/util/Map;
@@ -205,7 +194,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/pro/bc;->d:Ljava/util/Map;
 
     invoke-interface {v0, p0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

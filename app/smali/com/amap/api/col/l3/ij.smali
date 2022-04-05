@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ij;
 .super Ljava/lang/Object;
-.source "OfflineLocEntity.java"
 
 
 # instance fields
@@ -15,20 +14,16 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/amap/api/col/l3/gh;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/amap/api/col/l3/ij;->a:Landroid/content/Context;
 
-    .line 3
     iput-object p2, p0, Lcom/amap/api/col/l3/ij;->b:Lcom/amap/api/col/l3/gh;
 
-    .line 4
     iput-object p3, p0, Lcom/amap/api/col/l3/ij;->c:Ljava/lang/String;
 
     return-void
@@ -37,7 +32,6 @@
 .method private static a(Landroid/content/Context;Lcom/amap/api/col/l3/gh;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -45,7 +39,6 @@
     :try_start_0
     const-string v1, "\"sdkversion\":\""
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1}, Lcom/amap/api/col/l3/gh;->c()Ljava/lang/String;
@@ -56,7 +49,6 @@
 
     const-string v1, "\",\"product\":\""
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p1}, Lcom/amap/api/col/l3/gh;->a()Ljava/lang/String;
@@ -69,7 +61,6 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
     invoke-static {p0}, Lcom/amap/api/col/l3/gb;->e(Landroid/content/Context;)I
 
     move-result p0
@@ -89,10 +80,8 @@
     :catchall_0
     move-exception p0
 
-    .line 6
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 7
     :goto_0
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -106,7 +95,6 @@
 .method final a()[B
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ij;->a:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/ij;->b:Lcom/amap/api/col/l3/gh;

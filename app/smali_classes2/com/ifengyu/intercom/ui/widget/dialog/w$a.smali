@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/w$a;
 .super Ljava/lang/Object;
-.source "SharkSetPowerListDialog.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/w;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/w;->a(Lcom/ifengyu/intercom/ui/widget/dialog/w;)Lcom/ifengyu/intercom/ui/widget/dialog/w$c;
@@ -58,7 +55,6 @@
 
     invoke-interface {p1, p2, p3}, Lcom/ifengyu/intercom/ui/widget/dialog/w$c;->onClick(Landroid/content/DialogInterface;I)V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V

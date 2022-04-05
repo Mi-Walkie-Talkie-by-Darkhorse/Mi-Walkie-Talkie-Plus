@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/g/e/e;
 .super Lcom/ifengyu/intercom/g/e/c;
-.source "PutFormRequest.java"
 
 
 # instance fields
@@ -49,10 +48,8 @@
 
     move v5, p6
 
-    .line 1
     invoke-direct/range {v0 .. v5}, Lcom/ifengyu/intercom/g/e/c;-><init>(Ljava/lang/String;Ljava/lang/Object;Ljava/util/Map;Ljava/util/Map;I)V
 
-    .line 2
     iput-object p5, p0, Lcom/ifengyu/intercom/g/e/e;->g:Ljava/util/List;
 
     return-void
@@ -61,7 +58,6 @@
 .method private a(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 3
     invoke-static {}, Ljava/net/URLConnection;->getFileNameMap()Ljava/net/FileNameMap;
 
     move-result-object v0
@@ -69,7 +65,6 @@
     :try_start_0
     const-string v1, "UTF-8"
 
-    .line 4
     invoke-static {p1, v1}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -85,7 +80,6 @@
     :catch_0
     move-exception p1
 
-    .line 5
     invoke-virtual {p1}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -102,12 +96,10 @@
 .method private a(Lokhttp3/FormBody$Builder;)V
     .locals 3
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/g/e/c;->c:Ljava/util/Map;
 
     if-eqz v0, :cond_0
 
-    .line 12
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v0
@@ -129,7 +121,6 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 13
     iget-object v2, p0, Lcom/ifengyu/intercom/g/e/c;->c:Ljava/util/Map;
 
     invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -149,7 +140,6 @@
 .method private a(Lokhttp3/MultipartBody$Builder;)V
     .locals 6
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/g/e/c;->c:Ljava/util/Map;
 
     if-eqz v0, :cond_0
@@ -160,7 +150,6 @@
 
     if-nez v0, :cond_0
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/g/e/c;->c:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -196,7 +185,6 @@
 
     const/4 v3, 0x1
 
-    .line 8
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -225,7 +213,6 @@
 
     iget-object v4, p0, Lcom/ifengyu/intercom/g/e/c;->c:Ljava/util/Map;
 
-    .line 9
     invoke-interface {v4, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -236,7 +223,6 @@
 
     move-result-object v1
 
-    .line 10
     invoke-virtual {p1, v2, v1}, Lokhttp3/MultipartBody$Builder;->addPart(Lokhttp3/Headers;Lokhttp3/RequestBody;)Lokhttp3/MultipartBody$Builder;
 
     goto :goto_0
@@ -250,7 +236,6 @@
 .method protected a(Lokhttp3/RequestBody;)Lokhttp3/Request;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/g/e/c;->f:Lokhttp3/Request$Builder;
 
     invoke-virtual {v0, p1}, Lokhttp3/Request$Builder;->put(Lokhttp3/RequestBody;)Lokhttp3/Request$Builder;
@@ -271,7 +256,6 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     new-instance v0, Lcom/ifengyu/intercom/g/e/a;
 
@@ -287,7 +271,6 @@
 .method protected c()Lokhttp3/RequestBody;
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/g/e/e;->g:Ljava/util/List;
 
     if-eqz v0, :cond_2
@@ -300,7 +283,6 @@
 
     goto :goto_1
 
-    .line 2
     :cond_0
     new-instance v0, Lokhttp3/MultipartBody$Builder;
 
@@ -308,17 +290,14 @@
 
     sget-object v1, Lokhttp3/MultipartBody;->FORM:Lokhttp3/MediaType;
 
-    .line 3
     invoke-virtual {v0, v1}, Lokhttp3/MultipartBody$Builder;->setType(Lokhttp3/MediaType;)Lokhttp3/MultipartBody$Builder;
 
     move-result-object v0
 
-    .line 4
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/g/e/e;->a(Lokhttp3/MultipartBody$Builder;)V
 
     const/4 v1, 0x0
 
-    .line 5
     :goto_0
     iget-object v2, p0, Lcom/ifengyu/intercom/g/e/e;->g:Ljava/util/List;
 
@@ -328,7 +307,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 6
     iget-object v2, p0, Lcom/ifengyu/intercom/g/e/e;->g:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -337,7 +315,6 @@
 
     check-cast v2, Lcom/ifengyu/intercom/g/c/d$a;
 
-    .line 7
     iget-object v3, v2, Lcom/ifengyu/intercom/g/c/d$a;->b:Ljava/lang/String;
 
     invoke-direct {p0, v3}, Lcom/ifengyu/intercom/g/e/e;->a(Ljava/lang/String;)Ljava/lang/String;
@@ -354,7 +331,6 @@
 
     move-result-object v3
 
-    .line 8
     iget-object v4, v2, Lcom/ifengyu/intercom/g/c/d$a;->a:Ljava/lang/String;
 
     iget-object v2, v2, Lcom/ifengyu/intercom/g/c/d$a;->b:Ljava/lang/String;
@@ -365,7 +341,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     invoke-virtual {v0}, Lokhttp3/MultipartBody$Builder;->build()Lokhttp3/MultipartBody;
 
@@ -373,17 +348,14 @@
 
     return-object v0
 
-    .line 10
     :cond_2
     :goto_1
     new-instance v0, Lokhttp3/FormBody$Builder;
 
     invoke-direct {v0}, Lokhttp3/FormBody$Builder;-><init>()V
 
-    .line 11
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/g/e/e;->a(Lokhttp3/FormBody$Builder;)V
 
-    .line 12
     invoke-virtual {v0}, Lokhttp3/FormBody$Builder;->build()Lokhttp3/FormBody;
 
     move-result-object v0

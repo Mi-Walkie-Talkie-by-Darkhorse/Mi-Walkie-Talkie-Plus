@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/tencent/open/c/a$a;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # annotations

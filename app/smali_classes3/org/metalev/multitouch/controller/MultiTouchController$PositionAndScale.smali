@@ -1,6 +1,5 @@
 .class public Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 .super Ljava/lang/Object;
-.source "MultiTouchController.java"
 
 
 # annotations
@@ -38,7 +37,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,7 +45,6 @@
 .method static synthetic access$000(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->updateScale:Z
 
     return p0
@@ -56,7 +53,6 @@
 .method static synthetic access$100(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->updateScaleXY:Z
 
     return p0
@@ -65,7 +61,6 @@
 .method static synthetic access$200(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->updateAngle:Z
 
     return p0
@@ -74,7 +69,6 @@
 .method static synthetic access$400(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->scale:F
 
     return p0
@@ -83,7 +77,6 @@
 .method static synthetic access$500(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->xOff:F
 
     return p0
@@ -92,7 +85,6 @@
 .method static synthetic access$600(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->yOff:F
 
     return p0
@@ -101,7 +93,6 @@
 .method static synthetic access$700(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->scaleX:F
 
     return p0
@@ -110,7 +101,6 @@
 .method static synthetic access$800(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->scaleY:F
 
     return p0
@@ -119,7 +109,6 @@
 .method static synthetic access$900(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->angle:F
 
     return p0
@@ -130,7 +119,6 @@
 .method public getAngle()F
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->updateAngle:Z
 
     if-nez v0, :cond_0
@@ -149,7 +137,6 @@
 .method public getScale()F
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->updateScale:Z
 
     if-nez v0, :cond_0
@@ -168,7 +155,6 @@
 .method public getScaleX()F
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->updateScaleXY:Z
 
     if-nez v0, :cond_0
@@ -187,7 +173,6 @@
 .method public getScaleY()F
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->updateScaleXY:Z
 
     if-nez v0, :cond_0
@@ -206,7 +191,6 @@
 .method public getXOff()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->xOff:F
 
     return v0
@@ -215,7 +199,6 @@
 .method public getYOff()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->yOff:F
 
     return v0
@@ -224,10 +207,8 @@
 .method protected set(FFFFFF)V
     .locals 1
 
-    .line 10
     iput p1, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->xOff:F
 
-    .line 11
     iput p2, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->yOff:F
 
     const/high16 p1, 0x3f800000    # 1.0f
@@ -240,7 +221,6 @@
 
     const/high16 p3, 0x3f800000    # 1.0f
 
-    .line 12
     :cond_0
     iput p3, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->scale:F
 
@@ -250,7 +230,6 @@
 
     const/high16 p4, 0x3f800000    # 1.0f
 
-    .line 13
     :cond_1
     iput p4, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->scaleX:F
 
@@ -260,11 +239,9 @@
 
     const/high16 p5, 0x3f800000    # 1.0f
 
-    .line 14
     :cond_2
     iput p5, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->scaleY:F
 
-    .line 15
     iput p6, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->angle:F
 
     return-void
@@ -273,13 +250,10 @@
 .method public set(FFZFZFFZF)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->xOff:F
 
-    .line 2
     iput p2, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->yOff:F
 
-    .line 3
     iput-boolean p3, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->updateScale:Z
 
     const/high16 p1, 0x3f800000    # 1.0f
@@ -292,11 +266,9 @@
 
     const/high16 p4, 0x3f800000    # 1.0f
 
-    .line 4
     :cond_0
     iput p4, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->scale:F
 
-    .line 5
     iput-boolean p5, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->updateScaleXY:Z
 
     cmpl-float p3, p6, p2
@@ -305,7 +277,6 @@
 
     const/high16 p6, 0x3f800000    # 1.0f
 
-    .line 6
     :cond_1
     iput p6, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->scaleX:F
 
@@ -315,14 +286,11 @@
 
     const/high16 p7, 0x3f800000    # 1.0f
 
-    .line 7
     :cond_2
     iput p7, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->scaleY:F
 
-    .line 8
     iput-boolean p8, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->updateAngle:Z
 
-    .line 9
     iput p9, p0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->angle:F
 
     return-void

@@ -1,6 +1,5 @@
 .class Landroidx/transition/e$e;
 .super Ljava/lang/Object;
-.source "FragmentTransitionSupport.java"
 
 # interfaces
 .implements Landroidx/transition/Transition$g;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/transition/e;Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/transition/e$e;->a:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +50,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Landroidx/transition/e$e;->a:Ljava/lang/Runnable;
 
     invoke-interface {p1}, Ljava/lang/Runnable;->run()V

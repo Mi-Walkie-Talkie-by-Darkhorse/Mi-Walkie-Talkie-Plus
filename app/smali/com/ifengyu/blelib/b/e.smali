@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/blelib/b/e;
 .super Lno/nordicsemi/android/ble/u1;
-.source "BleClient.java"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/w2/b;
@@ -56,10 +55,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lno/nordicsemi/android/ble/u1;-><init>(Landroid/content/Context;)V
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -70,7 +67,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
-    .line 3
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -79,10 +75,8 @@
 
     const/4 p1, 0x0
 
-    .line 4
     iput-boolean p1, p0, Lcom/ifengyu/blelib/b/e;->r:Z
 
-    .line 5
     invoke-virtual {p0, p0}, Lno/nordicsemi/android/ble/u1;->a(Lno/nordicsemi/android/ble/w2/b;)V
 
     return-void
@@ -91,7 +85,6 @@
 .method static synthetic a(Lcom/ifengyu/blelib/b/e;[B)Lcom/ifengyu/blelib/d/c;
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/blelib/b/e;->g([B)Lcom/ifengyu/blelib/d/c;
 
     move-result-object p0
@@ -102,7 +95,6 @@
 .method static synthetic a(Lcom/ifengyu/blelib/b/e;I)Lno/nordicsemi/android/ble/e2;
     .locals 0
 
-    .line 4
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/u1;->b(I)Lno/nordicsemi/android/ble/e2;
 
     move-result-object p0
@@ -113,7 +105,6 @@
 .method static synthetic a(Lcom/ifengyu/blelib/b/e;)Lno/nordicsemi/android/ble/k2;
     .locals 0
 
-    .line 5
     invoke-virtual {p0}, Lno/nordicsemi/android/ble/u1;->a()Lno/nordicsemi/android/ble/k2;
 
     move-result-object p0
@@ -124,7 +115,6 @@
 .method static synthetic a(Lcom/ifengyu/blelib/b/e;Landroid/bluetooth/BluetoothGattCharacteristic;)Lno/nordicsemi/android/ble/r2;
     .locals 0
 
-    .line 3
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/u1;->b(Landroid/bluetooth/BluetoothGattCharacteristic;)Lno/nordicsemi/android/ble/r2;
 
     move-result-object p0
@@ -137,7 +127,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 25
     invoke-static {}, Lcom/ifengyu/blelib/c/d;->c()Lcom/ifengyu/blelib/c/d;
 
     move-result-object p2
@@ -151,7 +140,6 @@
 .method static synthetic a(Lcom/ifengyu/blelib/b/e;Z)Z
     .locals 0
 
-    .line 2
     iput-boolean p1, p0, Lcom/ifengyu/blelib/b/e;->r:Z
 
     return p1
@@ -160,7 +148,6 @@
 .method static synthetic a(Lcom/ifengyu/blelib/b/e;Lcom/ifengyu/blelib/d/c;)[B
     .locals 0
 
-    .line 6
     invoke-direct {p0, p1}, Lcom/ifengyu/blelib/b/e;->a(Lcom/ifengyu/blelib/d/c;)[B
 
     move-result-object p0
@@ -171,12 +158,10 @@
 .method private a(Lcom/ifengyu/blelib/d/c;)[B
     .locals 5
 
-    .line 39
     invoke-virtual {p1}, Lcom/ifengyu/blelib/d/c;->a()I
 
     move-result v0
 
-    .line 40
     invoke-virtual {p1}, Lcom/ifengyu/blelib/d/c;->b()Lcom/google/protobuf/Message;
 
     move-result-object v1
@@ -185,7 +170,6 @@
 
     move-result v1
 
-    .line 41
     invoke-virtual {p1}, Lcom/ifengyu/blelib/d/c;->b()Lcom/google/protobuf/Message;
 
     move-result-object p1
@@ -194,7 +178,6 @@
 
     move-result-object p1
 
-    .line 42
     invoke-virtual {p0}, Lcom/ifengyu/blelib/b/e;->y()Z
 
     move-result v2
@@ -212,12 +195,10 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 43
     invoke-direct {p0, p1, v1}, Lcom/ifengyu/blelib/b/e;->a([BI)[B
 
     move-result-object p1
 
-    .line 44
     iget-object v1, p0, Lcom/ifengyu/blelib/b/e;->v:Lcom/ifengyu/blelib/utils/a;
 
     invoke-virtual {v1}, Lcom/ifengyu/blelib/utils/a;->c()[B
@@ -236,13 +217,11 @@
 
     goto :goto_0
 
-    .line 45
     :cond_1
     invoke-direct {p0, p1, v1}, Lcom/ifengyu/blelib/b/e;->a([BI)[B
 
     move-result-object p1
 
-    .line 46
     invoke-virtual {p0}, Lcom/ifengyu/blelib/b/e;->r()[B
 
     move-result-object v1
@@ -255,26 +234,22 @@
 
     move-result-object p1
 
-    .line 47
     :cond_2
     :goto_0
     new-instance v1, Lcom/ifengyu/blelib/d/e;
 
     invoke-direct {v1, v0, p1}, Lcom/ifengyu/blelib/d/e;-><init>(I[B)V
 
-    .line 48
     invoke-virtual {v1}, Lcom/ifengyu/blelib/d/e;->c()[B
 
     move-result-object p1
 
-    .line 49
     invoke-static {}, Lcom/ifengyu/blelib/a;->a()Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 50
     iget-object v2, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -320,12 +295,10 @@
 .method private a([BI)[B
     .locals 6
 
-    .line 51
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 52
     iget-wide v2, p0, Lcom/ifengyu/blelib/b/e;->q:J
 
     cmp-long v4, v0, v2
@@ -336,13 +309,11 @@
 
     add-long/2addr v0, v2
 
-    .line 53
     :cond_0
     iput-wide v0, p0, Lcom/ifengyu/blelib/b/e;->q:J
 
     const/16 v2, 0x8
 
-    .line 54
     invoke-static {v2}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v2
@@ -355,14 +326,12 @@
 
     move-result-object v0
 
-    .line 55
     array-length v1, v0
 
     add-int/2addr v1, p2
 
     add-int/lit8 v2, v1, 0x2
 
-    .line 56
     new-array v2, v2, [B
 
     int-to-long v3, v1
@@ -371,15 +340,12 @@
 
     const/4 v5, 0x2
 
-    .line 57
     invoke-static {v2, v3, v4, v1, v5}, Lcom/ifengyu/blelib/d/f;->a([BJII)V
 
-    .line 58
     invoke-static {p1, v1, v2, v5, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/2addr p2, v5
 
-    .line 59
     array-length p1, v0
 
     invoke-static {v0, v1, v2, p2, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
@@ -390,7 +356,6 @@
 .method static synthetic b(Lcom/ifengyu/blelib/b/e;Landroid/bluetooth/BluetoothGattCharacteristic;)Lno/nordicsemi/android/ble/t2;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/u1;->a(Landroid/bluetooth/BluetoothGattCharacteristic;)Lno/nordicsemi/android/ble/t2;
 
     move-result-object p0
@@ -401,7 +366,6 @@
 .method static synthetic b(Lcom/ifengyu/blelib/b/e;[B)[B
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/blelib/b/e;->u:[B
 
     return-object p1
@@ -410,7 +374,6 @@
 .method static synthetic c(Lcom/ifengyu/blelib/b/e;[B)[B
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/blelib/b/e;->s:[B
 
     return-object p1
@@ -479,7 +442,6 @@
 .method static synthetic d(Lcom/ifengyu/blelib/b/e;[B)[B
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/blelib/b/e;->t:[B
 
     return-object p1
@@ -488,7 +450,6 @@
 .method private e([B)Z
     .locals 2
 
-    .line 1
     array-length v0, p1
 
     add-int/lit8 v0, v0, -0x2
@@ -499,17 +460,14 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/blelib/d/f;->b([B)[B
 
     move-result-object p1
 
-    .line 3
     invoke-static {v0}, Lcom/ifengyu/blelib/d/b;->a([B)[B
 
     move-result-object v0
 
-    .line 4
     invoke-static {p1, v0}, Lcom/ifengyu/blelib/d/a;->a([B[B)Z
 
     move-result p1
@@ -520,7 +478,6 @@
 .method private f([B)[B
     .locals 5
 
-    .line 2
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -529,7 +486,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -554,20 +510,17 @@
 
     return-object v1
 
-    .line 4
     :cond_0
     invoke-static {p1}, Lcom/ifengyu/blelib/d/f;->d([B)I
 
     move-result v0
 
-    .line 5
     array-length v3, p1
 
     add-int/lit8 v4, v0, 0x2
 
     if-ge v3, v4, :cond_1
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -592,7 +545,6 @@
 
     return-object v1
 
-    .line 7
     :cond_1
     invoke-static {p1, v2, v0}, Lcom/ifengyu/blelib/d/f;->a([BII)[B
 
@@ -604,7 +556,6 @@
 .method private g([B)Lcom/ifengyu/blelib/d/c;
     .locals 7
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/blelib/b/e;->e([B)Z
 
     move-result v0
@@ -613,7 +564,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     const-string v0, "parse received pack-->invalid crc"
@@ -622,35 +572,29 @@
 
     return-object v1
 
-    .line 3
     :cond_0
     invoke-static {p1}, Lcom/ifengyu/blelib/d/f;->a([B)I
 
     move-result v0
 
-    .line 4
     invoke-static {p1}, Lcom/ifengyu/blelib/d/f;->g([B)I
 
     move-result v2
 
-    .line 5
     invoke-static {p1}, Lcom/ifengyu/blelib/d/f;->f([B)I
 
     move-result v3
 
-    .line 6
     invoke-static {p1}, Lcom/ifengyu/blelib/d/f;->c([B)[B
 
     move-result-object p1
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/blelib/a;->a()Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 8
     iget-object v4, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -691,7 +635,6 @@
 
     invoke-static {v4, v2}, Lcom/ifengyu/blelib/a;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9
     :cond_1
     invoke-virtual {p0}, Lcom/ifengyu/blelib/b/e;->y()Z
 
@@ -703,7 +646,6 @@
 
     if-ne v0, v2, :cond_2
 
-    .line 10
     invoke-direct {p0, p1}, Lcom/ifengyu/blelib/b/e;->f([B)[B
 
     move-result-object p1
@@ -715,7 +657,6 @@
 
     if-ne v0, v2, :cond_3
 
-    .line 11
     iget-object v2, p0, Lcom/ifengyu/blelib/b/e;->v:Lcom/ifengyu/blelib/utils/a;
 
     invoke-virtual {v2}, Lcom/ifengyu/blelib/utils/a;->c()[B
@@ -732,14 +673,12 @@
 
     move-result-object p1
 
-    .line 12
     invoke-direct {p0, p1}, Lcom/ifengyu/blelib/b/e;->f([B)[B
 
     move-result-object p1
 
     goto :goto_0
 
-    .line 13
     :cond_3
     invoke-virtual {p0}, Lcom/ifengyu/blelib/b/e;->r()[B
 
@@ -753,12 +692,10 @@
 
     move-result-object p1
 
-    .line 14
     invoke-direct {p0, p1}, Lcom/ifengyu/blelib/b/e;->f([B)[B
 
     move-result-object p1
 
-    .line 15
     :goto_0
     invoke-static {}, Lcom/ifengyu/blelib/a;->a()Z
 
@@ -766,7 +703,6 @@
 
     if-eqz v2, :cond_4
 
-    .line 16
     iget-object v2, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -792,7 +728,6 @@
     :cond_4
     if-nez p1, :cond_5
 
-    .line 17
     iget-object p1, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     const-string v0, "parse receive pack-->data is null"
@@ -801,7 +736,6 @@
 
     return-object v1
 
-    .line 18
     :cond_5
     invoke-virtual {p0}, Lcom/ifengyu/blelib/b/e;->n()Lcom/ifengyu/blelib/d/d;
 
@@ -819,7 +753,6 @@
 .method public synthetic a(ILandroid/bluetooth/BluetoothDevice;I)V
     .locals 3
 
-    .line 26
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -848,7 +781,6 @@
 
     invoke-static {v0, p2}, Lcom/ifengyu/blelib/a;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 27
     invoke-static {}, Lcom/ifengyu/blelib/c/d;->c()Lcom/ifengyu/blelib/c/d;
 
     move-result-object p2
@@ -859,7 +791,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 28
     invoke-virtual {p1, p3}, Lcom/ifengyu/blelib/c/e;->a(I)V
 
     :cond_0
@@ -873,14 +804,12 @@
         .end annotation
     .end param
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/blelib/a;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     invoke-static {p1, v0, p2}, Landroid/util/Log;->println(ILjava/lang/String;Ljava/lang/String;)I
@@ -896,7 +825,6 @@
         .end annotation
     .end param
 
-    .line 29
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -919,19 +847,16 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/blelib/a;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 30
     invoke-static {}, Lcom/ifengyu/blelib/c/d;->c()Lcom/ifengyu/blelib/c/d;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/ifengyu/blelib/c/d;->b()V
 
-    .line 31
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->m:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 32
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -949,7 +874,6 @@
 
     check-cast v1, Lcom/ifengyu/blelib/c/b;
 
-    .line 33
     invoke-interface {v1, p1}, Lno/nordicsemi/android/ble/w2/b;->a(Landroid/bluetooth/BluetoothDevice;)V
 
     goto :goto_0
@@ -965,7 +889,6 @@
         .end annotation
     .end param
 
-    .line 34
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -998,19 +921,16 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/blelib/a;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 35
     invoke-static {}, Lcom/ifengyu/blelib/c/d;->c()Lcom/ifengyu/blelib/c/d;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/ifengyu/blelib/c/d;->a()V
 
-    .line 36
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->m:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 37
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1028,7 +948,6 @@
 
     check-cast v1, Lcom/ifengyu/blelib/c/b;
 
-    .line 38
     invoke-interface {v1, p1, p2}, Lno/nordicsemi/android/ble/w2/b;->a(Landroid/bluetooth/BluetoothDevice;I)V
 
     goto :goto_0
@@ -1040,7 +959,6 @@
 .method public a(Lcom/ifengyu/blelib/c/b;)V
     .locals 1
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->m:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -1049,7 +967,6 @@
 
     if-nez v0, :cond_0
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->m:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -1061,7 +978,6 @@
 .method public a(Lcom/ifengyu/blelib/d/c;Lcom/ifengyu/blelib/c/e;)V
     .locals 0
 
-    .line 12
     invoke-direct {p0, p1}, Lcom/ifengyu/blelib/b/e;->a(Lcom/ifengyu/blelib/d/c;)[B
 
     move-result-object p1
@@ -1074,7 +990,6 @@
 .method public a(Lcom/ifengyu/blelib/utils/a;)V
     .locals 0
 
-    .line 7
     iput-object p1, p0, Lcom/ifengyu/blelib/b/e;->v:Lcom/ifengyu/blelib/utils/a;
 
     return-void
@@ -1085,7 +1000,6 @@
 
     const/4 v0, 0x0
 
-    .line 13
     invoke-virtual {p0, p1, v0}, Lcom/ifengyu/blelib/b/e;->a([BLcom/ifengyu/blelib/c/e;)V
 
     return-void
@@ -1094,12 +1008,10 @@
 .method public a([BLcom/ifengyu/blelib/c/e;)V
     .locals 2
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->n:Landroid/bluetooth/BluetoothGattCharacteristic;
 
     if-nez v0, :cond_1
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     const-string v0, "send data failed, device may be disconnected"
@@ -1110,57 +1022,48 @@
 
     const/4 p1, -0x1
 
-    .line 16
     invoke-virtual {p2, p1}, Lcom/ifengyu/blelib/c/e;->a(I)V
 
     :cond_0
     return-void
 
-    .line 17
     :cond_1
     invoke-static {p1}, Lcom/ifengyu/blelib/d/f;->f([B)I
 
     move-result v0
 
-    .line 18
     iget-object v1, p0, Lcom/ifengyu/blelib/b/e;->n:Landroid/bluetooth/BluetoothGattCharacteristic;
 
     invoke-virtual {p0, v1, p1}, Lno/nordicsemi/android/ble/u1;->a(Landroid/bluetooth/BluetoothGattCharacteristic;[B)Lno/nordicsemi/android/ble/t2;
 
     move-result-object p1
 
-    .line 19
     invoke-virtual {p1}, Lno/nordicsemi/android/ble/t2;->j()Lno/nordicsemi/android/ble/t2;
 
     new-instance v1, Lcom/ifengyu/blelib/b/d;
 
     invoke-direct {v1, p2, v0}, Lcom/ifengyu/blelib/b/d;-><init>(Lcom/ifengyu/blelib/c/e;I)V
 
-    .line 20
     invoke-virtual {p1, v1}, Lno/nordicsemi/android/ble/t2;->a(Lno/nordicsemi/android/ble/u2/a;)Lno/nordicsemi/android/ble/t2;
 
     new-instance p2, Lcom/ifengyu/blelib/b/c;
 
     invoke-direct {p2, p0}, Lcom/ifengyu/blelib/b/c;-><init>(Lcom/ifengyu/blelib/b/e;)V
 
-    .line 21
     invoke-virtual {p1, p2}, Lno/nordicsemi/android/ble/t2;->a(Lno/nordicsemi/android/ble/u2/j;)Lno/nordicsemi/android/ble/t2;
 
     new-instance p2, Lcom/ifengyu/blelib/b/a;
 
     invoke-direct {p2, p0, v0}, Lcom/ifengyu/blelib/b/a;-><init>(Lcom/ifengyu/blelib/b/e;I)V
 
-    .line 22
     invoke-virtual {p1, p2}, Lno/nordicsemi/android/ble/t2;->a(Lno/nordicsemi/android/ble/u2/d;)Lno/nordicsemi/android/ble/t2;
 
     new-instance p2, Lcom/ifengyu/blelib/b/b;
 
     invoke-direct {p2, p0, v0}, Lcom/ifengyu/blelib/b/b;-><init>(Lcom/ifengyu/blelib/b/e;I)V
 
-    .line 23
     invoke-virtual {p1, p2}, Lno/nordicsemi/android/ble/t2;->a(Lno/nordicsemi/android/ble/u2/e;)Lno/nordicsemi/android/ble/t2;
 
-    .line 24
     invoke-virtual {p1}, Lno/nordicsemi/android/ble/Request;->a()V
 
     return-void
@@ -1169,7 +1072,6 @@
 .method public b(Landroid/bluetooth/BluetoothGattCharacteristic;[B)Lno/nordicsemi/android/ble/t2;
     .locals 0
 
-    .line 6
     invoke-virtual {p0, p1, p2}, Lno/nordicsemi/android/ble/u1;->a(Landroid/bluetooth/BluetoothGattCharacteristic;[B)Lno/nordicsemi/android/ble/t2;
 
     move-result-object p1
@@ -1184,7 +1086,6 @@
         .end annotation
     .end param
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1217,7 +1118,6 @@
         .end annotation
     .end param
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1250,12 +1150,10 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/blelib/a;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->m:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 10
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1273,7 +1171,6 @@
 
     check-cast v1, Lcom/ifengyu/blelib/c/b;
 
-    .line 11
     invoke-interface {v1, p1, p2}, Lno/nordicsemi/android/ble/w2/b;->b(Landroid/bluetooth/BluetoothDevice;I)V
 
     goto :goto_0
@@ -1285,7 +1182,6 @@
 .method public b(Lcom/ifengyu/blelib/c/b;)V
     .locals 1
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->m:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
@@ -1296,7 +1192,6 @@
 .method public b(Z)V
     .locals 0
 
-    .line 3
     iput-boolean p1, p0, Lcom/ifengyu/blelib/b/e;->r:Z
 
     return-void
@@ -1305,7 +1200,6 @@
 .method public b([B)V
     .locals 0
 
-    .line 4
     iput-object p1, p0, Lcom/ifengyu/blelib/b/e;->t:[B
 
     return-void
@@ -1314,14 +1208,12 @@
 .method public synthetic c(I)V
     .locals 2
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     const-string v1, "invalid request"
 
     invoke-static {v0, v1}, Lcom/ifengyu/blelib/a;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/blelib/c/d;->c()Lcom/ifengyu/blelib/c/d;
 
     move-result-object v0
@@ -1334,7 +1226,6 @@
 
     const/4 v0, -0x4
 
-    .line 5
     invoke-virtual {p1, v0}, Lcom/ifengyu/blelib/c/e;->a(I)V
 
     :cond_0
@@ -1348,7 +1239,6 @@
         .end annotation
     .end param
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1377,7 +1267,6 @@
 .method public c([B)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/blelib/b/e;->s:[B
 
     return-void
@@ -1386,7 +1275,6 @@
 .method public d([B)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/blelib/b/e;->u:[B
 
     return-void
@@ -1399,7 +1287,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1430,7 +1317,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/ifengyu/blelib/b/e$b;
 
     const/4 v1, 0x0
@@ -1443,7 +1329,6 @@
 .method public synthetic h(Landroid/bluetooth/BluetoothDevice;)V
     .locals 3
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->l:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1472,7 +1357,6 @@
 .method public m()V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lno/nordicsemi/android/ble/u1;->b()V
 
     return-void
@@ -1489,7 +1373,6 @@
 .method public p()Lcom/ifengyu/blelib/utils/a;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->v:Lcom/ifengyu/blelib/utils/a;
 
     return-object v0
@@ -1498,7 +1381,6 @@
 .method public q()[B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->t:[B
 
     return-object v0
@@ -1507,7 +1389,6 @@
 .method public r()[B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->s:[B
 
     return-object v0
@@ -1522,7 +1403,6 @@
 .method public u()[B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e;->u:[B
 
     return-object v0
@@ -1540,7 +1420,6 @@
 .method public y()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/blelib/b/e;->r:Z
 
     return v0

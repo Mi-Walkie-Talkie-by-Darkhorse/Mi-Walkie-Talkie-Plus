@@ -1,6 +1,5 @@
 .class Lcom/google/common/reflect/TypeToken$2;
 .super Lcom/google/common/reflect/Invokable$ConstructorInvokable;
-.source "TypeToken.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/reflect/TypeToken;Ljava/lang/reflect/Constructor;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/reflect/TypeToken$2;->this$0:Lcom/google/common/reflect/TypeToken;
 
     invoke-direct {p0, p2}, Lcom/google/common/reflect/Invokable$ConstructorInvokable;-><init>(Ljava/lang/reflect/Constructor;)V
@@ -42,7 +40,6 @@
 .method getGenericExceptionTypes()[Ljava/lang/reflect/Type;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$2;->this$0:Lcom/google/common/reflect/TypeToken;
 
     invoke-super {p0}, Lcom/google/common/reflect/Invokable$ConstructorInvokable;->getGenericExceptionTypes()[Ljava/lang/reflect/Type;
@@ -59,7 +56,6 @@
 .method getGenericParameterTypes()[Ljava/lang/reflect/Type;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$2;->this$0:Lcom/google/common/reflect/TypeToken;
 
     invoke-super {p0}, Lcom/google/common/reflect/Invokable$ConstructorInvokable;->getGenericParameterTypes()[Ljava/lang/reflect/Type;
@@ -76,7 +72,6 @@
 .method getGenericReturnType()Ljava/lang/reflect/Type;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$2;->this$0:Lcom/google/common/reflect/TypeToken;
 
     invoke-super {p0}, Lcom/google/common/reflect/Invokable$ConstructorInvokable;->getGenericReturnType()Ljava/lang/reflect/Type;
@@ -104,7 +99,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$2;->this$0:Lcom/google/common/reflect/TypeToken;
 
     return-object v0
@@ -113,7 +107,6 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeToken$2;->getOwnerType()Lcom/google/common/reflect/TypeToken;
 
     move-result-object v0

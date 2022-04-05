@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;
 .super Lcom/ifengyu/intercom/g/d/l;
-.source "TrackInfoDetailActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/l;-><init>()V
@@ -35,7 +33,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;->a(Ljava/lang/String;I)V
@@ -46,7 +43,6 @@
 .method public a(Ljava/lang/String;I)V
     .locals 2
 
-    .line 4
     :try_start_0
     new-instance p2, Lorg/json/JSONObject;
 
@@ -54,28 +50,24 @@
 
     const-string p1, "errno"
 
-    .line 5
     invoke-virtual {p2, p1}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     const v0, 0x7f1100fe
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c(I)V
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     const v0, 0x7f080191
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;->h(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;)Lcom/ifengyu/intercom/greendao/bean/b;
@@ -96,7 +88,6 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/greendao/bean/b;->e(Ljava/lang/String;)V
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1
@@ -117,7 +108,6 @@
 
     invoke-virtual {p1, p2}, Lorg/greenrobot/greendao/AbstractDao;->insertOrReplace(Ljava/lang/Object;)J
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->a()Landroid/os/Handler;
 
     move-result-object p1
@@ -132,7 +122,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
@@ -145,10 +134,8 @@
     :catch_0
     move-exception p1
 
-    .line 12
     invoke-virtual {p1}, Lorg/json/JSONException;->printStackTrace()V
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;->j(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;)V
@@ -160,10 +147,8 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 0
 
-    .line 2
     invoke-virtual {p2}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;->j(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;)V

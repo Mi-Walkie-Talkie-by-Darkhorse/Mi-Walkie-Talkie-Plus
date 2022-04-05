@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/statistic/b;
 .super Lcom/sina/weibo/sdk/statistic/f;
-.source "EventLog.java"
 
 
 # instance fields
@@ -22,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Lcom/sina/weibo/sdk/statistic/f;-><init>()V
 
     return-void
@@ -42,13 +40,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/statistic/f;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p2, p0, Lcom/sina/weibo/sdk/statistic/b;->f:Ljava/lang/String;
 
-    .line 3
     iput-object p3, p0, Lcom/sina/weibo/sdk/statistic/b;->g:Ljava/util/Map;
 
     return-void
@@ -59,7 +54,6 @@
 .method public f()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/statistic/b;->f:Ljava/lang/String;
 
     return-object v0
@@ -77,7 +71,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/statistic/b;->g:Ljava/util/Map;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/p$a;
 .super Ljava/lang/Object;
-.source "ViewInfoStore.java"
 
 
 # annotations
@@ -44,7 +43,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Landroidx/core/d/f;
 
     const/16 v1, 0x14
@@ -59,7 +57,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -68,7 +65,6 @@
 .method static a()V
     .locals 1
 
-    .line 5
     :goto_0
     sget-object v0, Landroidx/recyclerview/widget/p$a;->d:Landroidx/core/d/e;
 
@@ -89,18 +85,14 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Landroidx/recyclerview/widget/p$a;->a:I
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Landroidx/recyclerview/widget/p$a;->b:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$c;
 
-    .line 3
     iput-object v0, p0, Landroidx/recyclerview/widget/p$a;->c:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$c;
 
-    .line 4
     sget-object v0, Landroidx/recyclerview/widget/p$a;->d:Landroidx/core/d/e;
 
     invoke-interface {v0, p0}, Landroidx/core/d/e;->release(Ljava/lang/Object;)Z
@@ -111,7 +103,6 @@
 .method static b()Landroidx/recyclerview/widget/p$a;
     .locals 1
 
-    .line 1
     sget-object v0, Landroidx/recyclerview/widget/p$a;->d:Landroidx/core/d/e;
 
     invoke-interface {v0}, Landroidx/core/d/e;->acquire()Ljava/lang/Object;
@@ -122,7 +113,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Landroidx/recyclerview/widget/p$a;
 
     invoke-direct {v0}, Landroidx/recyclerview/widget/p$a;-><init>()V

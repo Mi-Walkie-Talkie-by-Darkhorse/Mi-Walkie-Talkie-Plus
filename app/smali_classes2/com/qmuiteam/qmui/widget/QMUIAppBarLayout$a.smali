@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/QMUIAppBarLayout$a;
 .super Landroidx/core/view/WindowInsetsCompat;
-.source "QMUIAppBarLayout.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/QMUIAppBarLayout;Landroidx/core/view/WindowInsetsCompat;Landroid/graphics/Rect;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/QMUIAppBarLayout$a;->d:Lcom/qmuiteam/qmui/widget/QMUIAppBarLayout;
 
     iput-object p3, p0, Lcom/qmuiteam/qmui/widget/QMUIAppBarLayout$a;->c:Landroid/graphics/Rect;
@@ -39,7 +37,6 @@
 .method public h()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAppBarLayout$a;->c:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->top:I

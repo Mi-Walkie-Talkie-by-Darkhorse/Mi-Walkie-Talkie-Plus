@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/debug/SelfChecker;
 .super Ljava/lang/Object;
-.source "SelfChecker.java"
 
 
 # static fields
@@ -2601,7 +2600,6 @@
 
     aput-object v2, v0, v1
 
-    .line 1
     sput-object v0, Lcom/umeng/commonsdk/debug/SelfChecker;->FILELIST:[Ljava/lang/String;
 
     return-void
@@ -2610,7 +2608,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -2619,7 +2616,6 @@
 .method public static doCheck(Landroid/content/Context;)Z
     .locals 7
 
-    .line 1
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
 
     move-result v0
@@ -2630,7 +2626,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-static {p0}, Lcom/umeng/commonsdk/statistics/internal/StatTracer;->getInstance(Landroid/content/Context;)Lcom/umeng/commonsdk/statistics/internal/StatTracer;
 
@@ -2638,7 +2633,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     :goto_0
     sget-object v2, Lcom/umeng/commonsdk/debug/SelfChecker;->FILELIST:[Ljava/lang/String;
 
@@ -2650,7 +2644,6 @@
 
     if-ge v0, v3, :cond_3
 
-    .line 4
     :try_start_0
     aget-object v2, v2, v0
 
@@ -2660,7 +2653,6 @@
 
     if-nez v2, :cond_2
 
-    .line 5
     sget-object v2, Lcom/umeng/commonsdk/debug/SelfChecker;->FILELIST:[Ljava/lang/String;
 
     aget-object v2, v2, v0
@@ -2675,7 +2667,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_1
     sget-object v2, Lcom/umeng/commonsdk/debug/SelfChecker;->FILELIST:[Ljava/lang/String;
 
@@ -2683,7 +2674,6 @@
 
     invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    .line 7
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -2715,7 +2705,6 @@
     :catchall_0
     new-array v1, v1, [Ljava/lang/String;
 
-    .line 8
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -2738,7 +2727,6 @@
 
     invoke-static {v4, v1}, Lcom/umeng/commonsdk/debug/UMLog;->mutlInfo(I[Ljava/lang/String;)V
 
-    .line 9
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2766,10 +2754,8 @@
 
     const-string v0, "\u57fa\u7840\u7ec4\u4ef6\u5e93\u5b8c\u6574\u6027\u81ea\u68c0\u901a\u8fc7\u3002"
 
-    .line 10
     invoke-static {v5, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
     invoke-static {v0, v4, p0}, Lcom/umeng/commonsdk/debug/UMLog;->mutlInfo(Ljava/lang/String;ILjava/lang/String;)V
 
     goto :goto_2
@@ -2777,10 +2763,8 @@
     :cond_4
     const-string v0, "\u57fa\u7840\u7ec4\u4ef6\u5e93\u5b8c\u6574\u6027\u81ea\u68c0\u672a\u901a\u8fc7\uff01\u8bf7\u68c0\u67e5\u5e94\u7528\u6df7\u6dc6\u914d\u7f6e\u3002"
 
-    .line 12
     invoke-static {v5, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 13
     invoke-static {v0, v4, p0}, Lcom/umeng/commonsdk/debug/UMLog;->mutlInfo(Ljava/lang/String;ILjava/lang/String;)V
 
     :goto_2

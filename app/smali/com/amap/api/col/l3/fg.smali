@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/fg;
 .super Lcom/amap/api/col/l3/fh;
-.source "BottomDialog.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -28,10 +27,8 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/amap/api/maps/offlinemap/OfflineMapManager;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/fh;-><init>(Landroid/content/Context;)V
 
-    .line 2
     iput-object p2, p0, Lcom/amap/api/col/l3/fg;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     return-void
@@ -42,7 +39,6 @@
 .method protected final a()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -55,10 +51,8 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/fg;->b:Landroid/view/View;
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->b:Landroid/view/View;
 
     new-instance v1, Lcom/amap/api/col/l3/fg$1;
@@ -67,7 +61,6 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->b:Landroid/view/View;
 
     const v1, 0x7f070007
@@ -80,7 +73,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/fg;->c:Landroid/widget/TextView;
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->b:Landroid/view/View;
 
     const v1, 0x7f070008
@@ -93,7 +85,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/fg;->d:Landroid/widget/TextView;
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->b:Landroid/view/View;
 
     const v1, 0x7f070009
@@ -106,7 +97,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/fg;->e:Landroid/widget/TextView;
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->b:Landroid/view/View;
 
     const v1, 0x7f07000a
@@ -119,17 +109,14 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/fg;->f:Landroid/widget/TextView;
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->d:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 9
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->e:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->f:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -140,7 +127,6 @@
 .method public final a(ILjava/lang/String;)V
     .locals 3
 
-    .line 11
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->c:Landroid/widget/TextView;
 
     invoke-virtual {v0, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
@@ -149,14 +135,12 @@
 
     if-nez p1, :cond_0
 
-    .line 12
     iget-object v1, p0, Lcom/amap/api/col/l3/fg;->d:Landroid/widget/TextView;
 
     const-string v2, "\u6682\u505c"
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 13
     iget-object v1, p0, Lcom/amap/api/col/l3/fg;->d:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setVisibility(I)V
@@ -191,7 +175,6 @@
 
     if-ne p1, v0, :cond_3
 
-    .line 14
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->d:Landroid/widget/TextView;
 
     const/16 v1, 0x8
@@ -200,7 +183,6 @@
 
     goto :goto_1
 
-    .line 15
     :cond_2
     :goto_0
     iget-object v1, p0, Lcom/amap/api/col/l3/fg;->d:Landroid/widget/TextView;
@@ -209,17 +191,14 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 16
     iget-object v1, p0, Lcom/amap/api/col/l3/fg;->d:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 17
     :cond_3
     :goto_1
     iput p1, p0, Lcom/amap/api/col/l3/fg;->g:I
 
-    .line 18
     iput-object p2, p0, Lcom/amap/api/col/l3/fg;->h:Ljava/lang/String;
 
     return-void
@@ -228,7 +207,6 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
@@ -238,13 +216,11 @@
 
     goto :goto_1
 
-    .line 2
     :pswitch_0
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
 
     goto :goto_1
 
-    .line 3
     :pswitch_1
     iget-object p1, p0, Lcom/amap/api/col/l3/fg;->h:Ljava/lang/String;
 
@@ -254,39 +230,33 @@
 
     if-nez p1, :cond_3
 
-    .line 4
     iget-object p1, p0, Lcom/amap/api/col/l3/fg;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->h:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->remove(Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
 
     return-void
 
-    .line 6
     :pswitch_2
     iget p1, p0, Lcom/amap/api/col/l3/fg;->g:I
 
     if-nez p1, :cond_0
 
-    .line 7
     iget-object p1, p0, Lcom/amap/api/col/l3/fg;->d:Landroid/widget/TextView;
 
     const-string v0, "\u5f00\u59cb"
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 8
     iget-object p1, p0, Lcom/amap/api/col/l3/fg;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->pause()V
 
     goto :goto_0
 
-    .line 9
     :cond_0
     iget p1, p0, Lcom/amap/api/col/l3/fg;->g:I
 
@@ -318,7 +288,6 @@
 
     if-ne p1, v0, :cond_2
 
-    .line 10
     :cond_1
     iget-object p1, p0, Lcom/amap/api/col/l3/fg;->d:Landroid/widget/TextView;
 
@@ -326,14 +295,12 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 11
     iget-object p1, p0, Lcom/amap/api/col/l3/fg;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     iget-object v0, p0, Lcom/amap/api/col/l3/fg;->h:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->downloadByCityName(Ljava/lang/String;)V
 
-    .line 12
     :cond_2
     :goto_0
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
@@ -347,7 +314,6 @@
     :catch_0
     move-exception p1
 
-    .line 13
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     return-void

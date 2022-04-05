@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/ik;
 .super Ljava/lang/Object;
-.source "OfflineLocManager.java"
 
 
 # static fields
@@ -33,7 +32,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,7 +40,6 @@
 .method static synthetic a()Ljava/lang/ref/WeakReference;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/ik;->d:Ljava/lang/ref/WeakReference;
 
     return-object v0
@@ -57,16 +54,13 @@
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     sput p0, Lcom/amap/api/col/l3/ik;->a:I
 
-    .line 3
     sput-boolean p1, Lcom/amap/api/col/l3/ik;->b:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     monitor-exit v0
 
     return-void
@@ -86,11 +80,9 @@
 
     monitor-enter v0
 
-    .line 5
     :try_start_0
     sput p0, Lcom/amap/api/col/l3/ik;->a:I
 
-    .line 6
     sput-boolean p1, Lcom/amap/api/col/l3/ik;->b:Z
 
     const/16 p0, 0xa
@@ -104,7 +96,6 @@
     :cond_0
     const/16 p2, 0x14
 
-    .line 7
     :cond_1
     sput p2, Lcom/amap/api/col/l3/ik;->c:I
 
@@ -114,14 +105,12 @@
 
     if-le p0, p1, :cond_2
 
-    .line 8
     div-int/lit8 p2, p2, 0x5
 
     sput p2, Lcom/amap/api/col/l3/ik;->e:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 9
     :cond_2
     monitor-exit v0
 
@@ -138,7 +127,6 @@
 .method public static a(Landroid/content/Context;)V
     .locals 2
 
-    .line 12
     invoke-static {}, Lcom/amap/api/col/l3/gv;->d()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
@@ -159,7 +147,6 @@
 
     monitor-enter v0
 
-    .line 10
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/gv;->d()Ljava/util/concurrent/ExecutorService;
 
@@ -173,7 +160,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 11
     monitor-exit v0
 
     return-void
@@ -189,7 +175,6 @@
 .method static synthetic b()I
     .locals 1
 
-    .line 1
     sget v0, Lcom/amap/api/col/l3/ik;->e:I
 
     return v0

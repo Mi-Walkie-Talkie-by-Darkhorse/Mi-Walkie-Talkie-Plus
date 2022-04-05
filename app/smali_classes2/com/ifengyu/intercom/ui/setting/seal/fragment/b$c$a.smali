@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$c$a;
 .super Ljava/lang/Object;
-.source "SealPresetFragment.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$c;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$c$a;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$c;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$c$a;->a:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -42,7 +40,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$c$a;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$c;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$c;->e:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
@@ -51,7 +48,6 @@
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->a(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$c$a;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$c;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$c;->e:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;

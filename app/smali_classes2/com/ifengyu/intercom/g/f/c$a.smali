@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/g/f/c$a;
 .super Lcom/ifengyu/intercom/g/f/c;
-.source "Platform.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/f/c;-><init>()V
 
     return-void
@@ -35,7 +33,6 @@
 .method public a()Ljava/util/concurrent/Executor;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/g/f/c$a$a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/g/f/c$a$a;-><init>()V

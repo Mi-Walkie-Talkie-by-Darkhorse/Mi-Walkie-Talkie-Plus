@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultDesignUIController$BottomSheetHolder;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "DefaultDesignUIController.java"
 
 
 # annotations
@@ -22,12 +21,10 @@
 .method public constructor <init>(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
     const v0, 0x1020014
 
-    .line 2
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1

@@ -1,13 +1,11 @@
 .class public Lcom/ifengyu/intercom/lite/d/f;
 .super Ljava/lang/Object;
-.source "Transformer.java"
 
 
 # direct methods
 .method static synthetic a(Lio/reactivex/Observable;)Lio/reactivex/ObservableSource;
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/lite/http/entity/HttpResultFunction;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/lite/http/entity/HttpResultFunction;-><init>()V
@@ -32,7 +30,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/d/b;->a:Lcom/ifengyu/intercom/lite/d/b;
 
     return-object v0
@@ -41,7 +38,6 @@
 .method static synthetic b(Lio/reactivex/Observable;)Lio/reactivex/ObservableSource;
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/lite/http/entity/HttpResultFunction;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/lite/http/entity/HttpResultFunction;-><init>()V
@@ -82,7 +78,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/d/c;->a:Lcom/ifengyu/intercom/lite/d/c;
 
     return-object v0
@@ -91,7 +86,6 @@
 .method static synthetic c(Lio/reactivex/Observable;)Lio/reactivex/ObservableSource;
     .locals 1
 
-    .line 2
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->io()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -123,7 +117,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/d/a;->a:Lcom/ifengyu/intercom/lite/d/a;
 
     return-object v0

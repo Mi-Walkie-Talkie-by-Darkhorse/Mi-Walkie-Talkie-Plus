@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/WebViewActivity$c;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "WebViewActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -35,7 +33,6 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->e(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/widget/ProgressBar;
@@ -46,7 +43,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/ProgressBar;->setProgress(I)V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->e(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/widget/ProgressBar;
@@ -57,7 +53,6 @@
 
     invoke-virtual {p1, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->a(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;Z)Z

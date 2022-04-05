@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$f;
 .super Ljava/lang/Object;
-.source "SealBleEarConnectActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/node/h;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$f;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$f;-><init>(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)V
 
     return-void

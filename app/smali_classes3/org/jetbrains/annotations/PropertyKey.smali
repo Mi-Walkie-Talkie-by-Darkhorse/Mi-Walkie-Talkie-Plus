@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/jetbrains/annotations/PropertyKey;
 .super Ljava/lang/Object;
-.source "PropertyKey.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

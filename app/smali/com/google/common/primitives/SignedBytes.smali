@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/primitives/SignedBytes;
 .super Ljava/lang/Object;
-.source "SignedBytes.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +41,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -79,10 +76,8 @@
 .method public static varargs join(Ljava/lang/String;[B)Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     array-length v0, p1
 
     if-nez v0, :cond_0
@@ -91,7 +86,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -103,20 +97,17 @@
 
     const/4 v1, 0x0
 
-    .line 4
     aget-byte v1, p1, v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const/4 v1, 0x1
 
-    .line 5
     :goto_0
     array-length v2, p1
 
     if-ge v1, v2, :cond_1
 
-    .line 6
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     aget-byte v2, p1, v1
@@ -127,7 +118,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -146,7 +136,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/primitives/SignedBytes$LexicographicalComparator;->INSTANCE:Lcom/google/common/primitives/SignedBytes$LexicographicalComparator;
 
     return-object v0
@@ -155,7 +144,6 @@
 .method public static varargs max([B)B
     .locals 3
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -174,21 +162,17 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 2
     aget-byte v0, p0, v1
 
-    .line 3
     :goto_1
     array-length v1, p0
 
     if-ge v2, v1, :cond_2
 
-    .line 4
     aget-byte v1, p0, v2
 
     if-le v1, v0, :cond_1
 
-    .line 5
     aget-byte v0, p0, v2
 
     :cond_1
@@ -203,7 +187,6 @@
 .method public static varargs min([B)B
     .locals 3
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -222,21 +205,17 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 2
     aget-byte v0, p0, v1
 
-    .line 3
     :goto_1
     array-length v1, p0
 
     if-ge v2, v1, :cond_2
 
-    .line 4
     aget-byte v1, p0, v2
 
     if-ge v1, v0, :cond_1
 
-    .line 5
     aget-byte v0, p0, v2
 
     :cond_1

@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/internal/c$5;
 .super Ljava/lang/Object;
-.source "UMInternalDataProtocol.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/utils/onMessageSendListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/umeng/commonsdk/internal/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/internal/c$5;->a:Lcom/umeng/commonsdk/internal/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onMessageSend()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c$5;->a:Lcom/umeng/commonsdk/internal/c;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/internal/c;->a(Lcom/umeng/commonsdk/internal/c;)Landroid/content/Context;
@@ -47,7 +44,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c$5;->a:Lcom/umeng/commonsdk/internal/c;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/internal/c;->a(Lcom/umeng/commonsdk/internal/c;)Landroid/content/Context;
@@ -58,7 +54,6 @@
 
     iget-object v2, p0, Lcom/umeng/commonsdk/internal/c$5;->a:Lcom/umeng/commonsdk/internal/c;
 
-    .line 3
     invoke-static {v2}, Lcom/umeng/commonsdk/internal/c;->a(Lcom/umeng/commonsdk/internal/c;)Landroid/content/Context;
 
     move-result-object v2
@@ -73,10 +68,8 @@
 
     const/4 v3, 0x0
 
-    .line 4
     invoke-static {v0, v1, v2, v3}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
-    .line 5
     :cond_0
     invoke-static {p0}, Lcom/umeng/commonsdk/UMConfigureImpl;->removeMessageSendListener(Lcom/umeng/commonsdk/utils/onMessageSendListener;)V
 

@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/modules/MBTilesFileArchive;
 .super Ljava/lang/Object;
-.source "MBTilesFileArchive.java"
 
 # interfaces
 .implements Lorg/osmdroid/tileprovider/modules/IArchiveFile;
@@ -26,7 +25,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,10 +33,8 @@
 .method private constructor <init>(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/tileprovider/modules/MBTilesFileArchive;->mDatabase:Landroid/database/sqlite/SQLiteDatabase;
 
     return-void
@@ -52,10 +48,8 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/osmdroid/tileprovider/modules/MBTilesFileArchive;
 
-    .line 2
     invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p0
@@ -64,7 +58,6 @@
 
     const/16 v2, 0x11
 
-    .line 3
     invoke-static {p0, v1, v2}, Landroid/database/sqlite/SQLiteDatabase;->openDatabase(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object p0
@@ -79,7 +72,6 @@
 .method public close()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MBTilesFileArchive;->mDatabase:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
@@ -95,7 +87,6 @@
     :try_start_0
     const-string v0, "tile_data"
 
-    .line 1
     filled-new-array {v0}, [Ljava/lang/String;
 
     move-result-object v3
@@ -104,7 +95,6 @@
 
     new-array v5, v0, [Ljava/lang/String;
 
-    .line 2
     invoke-virtual {p2}, Lorg/osmdroid/tileprovider/MapTile;->getX()I
 
     move-result v0
@@ -121,7 +111,6 @@
 
     const-wide/high16 v1, 0x4000000000000000L    # 2.0
 
-    .line 3
     invoke-virtual {p2}, Lorg/osmdroid/tileprovider/MapTile;->getZoomLevel()I
 
     move-result v4
@@ -152,7 +141,6 @@
 
     const/4 v0, 0x2
 
-    .line 4
     invoke-virtual {p2}, Lorg/osmdroid/tileprovider/MapTile;->getZoomLevel()I
 
     move-result v1
@@ -163,7 +151,6 @@
 
     aput-object v1, v5, v0
 
-    .line 5
     iget-object v1, p0, Lorg/osmdroid/tileprovider/modules/MBTilesFileArchive;->mDatabase:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v2, "tiles"
@@ -180,17 +167,14 @@
 
     move-result-object v0
 
-    .line 6
     invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 7
     invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 8
     new-instance v1, Ljava/io/ByteArrayInputStream;
 
     invoke-interface {v0, v9}, Landroid/database/Cursor;->getBlob(I)[B
@@ -204,7 +188,6 @@
     :cond_0
     move-object v1, p1
 
-    .line 9
     :goto_0
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
     :try_end_0
@@ -217,7 +200,6 @@
     :catchall_0
     move-exception v0
 
-    .line 10
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -251,7 +233,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Ljava/util/Collections;->EMPTY_SET:Ljava/util/Set;
 
     return-object v0
@@ -265,7 +246,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p1
@@ -274,7 +254,6 @@
 
     const/16 v1, 0x11
 
-    .line 2
     invoke-static {p1, v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->openDatabase(Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object p1
@@ -287,7 +266,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

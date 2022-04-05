@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/android/material/slider/BaseOnSliderTouchListener;
 .super Ljava/lang/Object;
-.source "BaseOnSliderTouchListener.java"
 
 
 # annotations

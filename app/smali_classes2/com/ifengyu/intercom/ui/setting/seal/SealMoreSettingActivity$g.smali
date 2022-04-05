@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;
 .super Ljava/lang/Object;
-.source "SealMoreSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getResult()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam$SEAL_DEV_UERR;
@@ -53,7 +50,6 @@
 
     if-ne v0, v1, :cond_6
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;)I
@@ -86,72 +82,60 @@
 
     goto/16 :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->c(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-static {v0, v2}, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;I)I
 
     goto/16 :goto_0
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->e(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-static {v0, v2}, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;I)I
 
     goto/16 :goto_0
 
-    .line 9
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->d(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-static {v0, v2}, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;I)I
 
     goto/16 :goto_0
 
-    .line 12
     :cond_3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-static {v0, v2}, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;I)I
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->stopTransIfBusyCheckBox:Landroid/widget/CheckBox;
@@ -166,18 +150,15 @@
 
     goto :goto_0
 
-    .line 15
     :cond_4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-static {v0, v2}, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;I)I
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->pwSaveModeCheckBox:Landroid/widget/CheckBox;
@@ -190,7 +171,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 18
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->pwSaveModeCheckBox:Landroid/widget/CheckBox;
@@ -201,7 +181,6 @@
 
     if-eqz v0, :cond_7
 
-    .line 19
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
@@ -230,18 +209,15 @@
 
     goto :goto_0
 
-    .line 20
     :cond_5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 21
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     invoke-static {v0, v2}, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;I)I
 
-    .line 22
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;->voicePromptCheckBox:Landroid/widget/CheckBox;
@@ -256,7 +232,6 @@
 
     goto :goto_0
 
-    .line 23
     :cond_6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
@@ -264,14 +239,12 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 24
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity;
 
     const v1, 0x7f110260
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c(I)V
 
-    .line 25
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g$a;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/SealMoreSettingActivity$g;)V

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$i;
 .super Landroid/widget/BaseAdapter;
-.source "MyTrackActivity.java"
 
 
 # annotations
@@ -24,12 +23,10 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;)V
     .locals 4
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$i;->b:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
-    .line 2
     new-instance p1, Landroid/text/SpannableString;
 
     const-string v0, " km"
@@ -38,7 +35,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$i;->a:Landroid/text/SpannableString;
 
-    .line 3
     new-instance v0, Landroid/text/style/AbsoluteSizeSpan;
 
     const/16 v1, 0xc
@@ -67,7 +63,6 @@
 .method public getCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$i;->b:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;->a(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;)Ljava/util/List;
@@ -102,7 +97,6 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$i;->b:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     const p3, 0x7f0c014f
@@ -113,14 +107,12 @@
 
     move-result-object p2
 
-    .line 2
     new-instance p3, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;
 
     invoke-direct {p3, v0}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;-><init>(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$a;)V
 
     const v0, 0x7f090443
 
-    .line 3
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -131,7 +123,6 @@
 
     const v0, 0x7f090442
 
-    .line 4
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -142,7 +133,6 @@
 
     const v0, 0x7f090444
 
-    .line 5
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -153,7 +143,6 @@
 
     const v0, 0x7f090441
 
-    .line 6
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -162,12 +151,10 @@
 
     invoke-static {p3, v0}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;->c(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;Landroid/widget/TextView;)Landroid/widget/TextView;
 
-    .line 7
     invoke-virtual {p2, p3}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 8
     :cond_0
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
@@ -175,7 +162,6 @@
 
     check-cast p3, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;
 
-    .line 9
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$i;->b:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
@@ -189,14 +175,12 @@
 
     check-cast p1, Lcom/ifengyu/intercom/greendao/bean/b;
 
-    .line 10
     invoke-virtual {p1}, Lcom/ifengyu/intercom/greendao/bean/b;->w()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    .line 11
     new-instance v0, Ljava/io/File;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/greendao/bean/b;->w()Ljava/lang/String;
@@ -211,7 +195,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 12
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
@@ -242,7 +225,6 @@
 
     goto :goto_1
 
-    .line 13
     :cond_1
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
@@ -260,7 +242,6 @@
 
     goto :goto_1
 
-    .line 14
     :cond_2
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;->a(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;)Landroid/widget/ImageView;
 
@@ -270,7 +251,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 15
     :goto_1
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;->b(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;)Landroid/widget/TextView;
 
@@ -282,7 +262,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 16
     invoke-virtual {p1}, Lcom/ifengyu/intercom/greendao/bean/b;->f()Ljava/lang/Integer;
 
     move-result-object v0
@@ -291,7 +270,6 @@
 
     move-result v0
 
-    .line 17
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;->c(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;)Landroid/widget/TextView;
 
     move-result-object v1
@@ -304,7 +282,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 18
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
@@ -341,14 +318,12 @@
 
     move-result-object p1
 
-    .line 19
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;->d(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;)Landroid/widget/TextView;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 20
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;->d(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$j;)Landroid/widget/TextView;
 
     move-result-object p1

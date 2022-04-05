@@ -1,6 +1,5 @@
 .class public Lcom/flyco/tablayout/b/a;
 .super Ljava/lang/Object;
-.source "FragmentChangeManager.java"
 
 
 # instance fields
@@ -33,19 +32,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/flyco/tablayout/b/a;->a:Landroidx/fragment/app/FragmentManager;
 
-    .line 3
     iput p2, p0, Lcom/flyco/tablayout/b/a;->b:I
 
-    .line 4
     iput-object p3, p0, Lcom/flyco/tablayout/b/a;->c:Ljava/util/ArrayList;
 
-    .line 5
     invoke-direct {p0}, Lcom/flyco/tablayout/b/a;->a()V
 
     return-void
@@ -54,7 +48,6 @@
 .method private a()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/flyco/tablayout/b/a;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -74,7 +67,6 @@
 
     check-cast v1, Landroidx/fragment/app/Fragment;
 
-    .line 2
     iget-object v2, p0, Lcom/flyco/tablayout/b/a;->a:Landroidx/fragment/app/FragmentManager;
 
     invoke-virtual {v2}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
@@ -98,7 +90,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/flyco/tablayout/b/a;->a(I)V
 
     return-void
@@ -111,7 +102,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     :goto_0
     iget-object v1, p0, Lcom/flyco/tablayout/b/a;->c:Ljava/util/ArrayList;
 
@@ -121,14 +111,12 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 5
     iget-object v1, p0, Lcom/flyco/tablayout/b/a;->a:Landroidx/fragment/app/FragmentManager;
 
     invoke-virtual {v1}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
 
     move-result-object v1
 
-    .line 6
     iget-object v2, p0, Lcom/flyco/tablayout/b/a;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -139,16 +127,13 @@
 
     if-ne v0, p1, :cond_0
 
-    .line 7
     invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentTransaction;->show(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
     goto :goto_1
 
-    .line 8
     :cond_0
     invoke-virtual {v1, v2}, Landroidx/fragment/app/FragmentTransaction;->hide(Landroidx/fragment/app/Fragment;)Landroidx/fragment/app/FragmentTransaction;
 
-    .line 9
     :goto_1
     invoke-virtual {v1}, Landroidx/fragment/app/FragmentTransaction;->commit()I
 

@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/single/SingleZipArray$SingletonArrayFunc;
 .super Ljava/lang/Object;
-.source "SingleZipArray.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lio/reactivex/internal/operators/single/SingleZipArray;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleZipArray$SingletonArrayFunc;->this$0:Lio/reactivex/internal/operators/single/SingleZipArray;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -57,7 +55,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleZipArray$SingletonArrayFunc;->this$0:Lio/reactivex/internal/operators/single/SingleZipArray;
 
     iget-object v0, v0, Lio/reactivex/internal/operators/single/SingleZipArray;->zipper:Lio/reactivex/functions/Function;

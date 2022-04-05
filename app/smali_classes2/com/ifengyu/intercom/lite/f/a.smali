@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/lite/f/a;
 .super Ljava/lang/Object;
-.source "ChannelDao.java"
 
 
 # annotations

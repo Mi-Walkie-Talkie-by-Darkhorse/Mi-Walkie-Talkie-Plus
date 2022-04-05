@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$b;
 .super Ljava/lang/Object;
-.source "GoogleMapDownLoadedActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/OffMapDownloadDialog$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;->e(Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;)Ljava/util/List;
@@ -57,7 +54,6 @@
 
     check-cast v0, Lcom/ifengyu/intercom/greendao/bean/a;
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->b()Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
     move-result-object v1
@@ -70,7 +66,6 @@
 
     invoke-virtual {v1, v0, v2}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->a(Lcom/ifengyu/intercom/greendao/bean/a;Lcom/ifengyu/intercom/greendao/dao/b;)V
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;->a(Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;Lcom/ifengyu/intercom/greendao/bean/a;)V
@@ -81,7 +76,6 @@
 .method public b()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;->c(Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;)Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;
@@ -100,7 +94,6 @@
 
     const v0, 0x7f110336
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v0
@@ -109,7 +102,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
@@ -147,7 +139,6 @@
 
     if-nez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
     const v2, 0x7f110248
@@ -160,7 +151,6 @@
 
     return-void
 
-    .line 5
     :cond_1
     invoke-static {}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->b()Lcom/ifengyu/intercom/ui/map/MapDataProvider;
 
@@ -192,7 +182,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->a(Lcom/ifengyu/intercom/greendao/bean/a;Lcom/ifengyu/intercom/greendao/dao/b;)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;->f(Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;)Lcom/ifengyu/intercom/ui/map/c/a;

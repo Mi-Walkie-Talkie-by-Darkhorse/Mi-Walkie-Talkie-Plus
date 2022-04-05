@@ -1,6 +1,5 @@
 .class public final enum Lcom/efs/sdk/pa/config/PackageLevel;
 .super Ljava/lang/Enum;
-.source "SourceFile"
 
 
 # annotations
@@ -33,7 +32,6 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 1
     new-instance v0, Lcom/efs/sdk/pa/config/PackageLevel;
 
     const/4 v1, 0x0
@@ -78,7 +76,6 @@
 
     new-array v5, v5, [Lcom/efs/sdk/pa/config/PackageLevel;
 
-    .line 2
     sget-object v6, Lcom/efs/sdk/pa/config/PackageLevel;->DAILY_DEVELOP:Lcom/efs/sdk/pa/config/PackageLevel;
 
     aput-object v6, v5, v1
@@ -106,10 +103,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput p3, p0, Lcom/efs/sdk/pa/config/PackageLevel;->mLevel:I
 
     return-void
@@ -118,7 +113,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/efs/sdk/pa/config/PackageLevel;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/efs/sdk/pa/config/PackageLevel;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -133,7 +127,6 @@
 .method public static values()[Lcom/efs/sdk/pa/config/PackageLevel;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/efs/sdk/pa/config/PackageLevel;->$VALUES:[Lcom/efs/sdk/pa/config/PackageLevel;
 
     invoke-virtual {v0}, [Lcom/efs/sdk/pa/config/PackageLevel;->clone()Ljava/lang/Object;
@@ -150,7 +143,6 @@
 .method public final getLevel()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/efs/sdk/pa/config/PackageLevel;->mLevel:I
 
     return v0

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/p;
 .super Ljava/lang/Object;
-.source "ConfigableConst.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "AMAP_SDK_Android_Map_"
@@ -36,7 +34,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/p;->c:Ljava/lang/String;
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V

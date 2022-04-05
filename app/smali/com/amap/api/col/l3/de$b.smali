@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/de$b;
 .super Lcom/amap/api/col/l3/ds;
-.source "TileOverlayDelegateImp.java"
 
 
 # annotations
@@ -96,55 +95,42 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/ds;-><init>()V
 
     const/16 v0, 0x100
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/de$b;->f:I
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/de$b;->g:I
 
     const/4 v0, 0x0
 
-    .line 4
     iput v0, p0, Lcom/amap/api/col/l3/de$b;->h:I
 
-    .line 5
     iput-boolean p1, p0, Lcom/amap/api/col/l3/de$b;->e:Z
 
-    .line 6
     new-instance p1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object p1, p0, Lcom/amap/api/col/l3/de$b;->i:Ljava/lang/ref/WeakReference;
 
-    .line 7
     iput p3, p0, Lcom/amap/api/col/l3/de$b;->f:I
 
-    .line 8
     iput p4, p0, Lcom/amap/api/col/l3/de$b;->g:I
 
-    .line 9
     iput p5, p0, Lcom/amap/api/col/l3/de$b;->h:I
 
-    .line 10
     iput-object p6, p0, Lcom/amap/api/col/l3/de$b;->j:Ljava/util/List;
 
-    .line 11
     iput-boolean p7, p0, Lcom/amap/api/col/l3/de$b;->k:Z
 
-    .line 12
     new-instance p1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p1, p8}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object p1, p0, Lcom/amap/api/col/l3/de$b;->l:Ljava/lang/ref/WeakReference;
 
-    .line 13
     new-instance p1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p1, p9}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -167,7 +153,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/de$b;->i:Ljava/lang/ref/WeakReference;
 
@@ -183,18 +168,15 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     invoke-interface {v2}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapWidth()I
 
     move-result v1
 
-    .line 3
     invoke-interface {v2}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapHeight()I
 
     move-result v3
 
-    .line 4
     invoke-interface {v2}, Lcom/amap/api/col/l3/u;->h()F
 
     move-result v4
@@ -209,7 +191,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget v1, p0, Lcom/amap/api/col/l3/de$b;->f:I
 
@@ -254,7 +235,6 @@
     :catchall_0
     move-exception v1
 
-    .line 6
     invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-object v0
@@ -265,7 +245,6 @@
 .method protected final synthetic a([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/de$b;->e()Ljava/util/List;
 
     move-result-object p1
@@ -276,7 +255,6 @@
 .method protected final synthetic a(Ljava/lang/Object;)V
     .locals 8
 
-    .line 2
     check-cast p1, Ljava/util/List;
 
     if-eqz p1, :cond_1

@@ -1,6 +1,5 @@
 .class public final Landroidx/activity/result/ActivityResult;
 .super Ljava/lang/Object;
-.source "ActivityResult.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -42,7 +41,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/activity/result/ActivityResult$a;
 
     invoke-direct {v0}, Landroidx/activity/result/ActivityResult$a;-><init>()V
@@ -59,13 +57,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Landroidx/activity/result/ActivityResult;->a:I
 
-    .line 3
     iput-object p2, p0, Landroidx/activity/result/ActivityResult;->b:Landroid/content/Intent;
 
     return-void
@@ -74,17 +69,14 @@
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Landroidx/activity/result/ActivityResult;->a:I
 
-    .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
@@ -121,7 +113,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 2
     invoke-static {p0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object p0
@@ -146,7 +137,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/activity/result/ActivityResult;->b:Landroid/content/Intent;
 
     return-object v0
@@ -155,7 +145,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/activity/result/ActivityResult;->a:I
 
     return v0
@@ -172,7 +161,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -183,7 +171,6 @@
 
     iget v1, p0, Landroidx/activity/result/ActivityResult;->a:I
 
-    .line 2
     invoke-static {v1}, Landroidx/activity/result/ActivityResult;->a(I)Ljava/lang/String;
 
     move-result-object v1
@@ -216,12 +203,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget v0, p0, Landroidx/activity/result/ActivityResult;->a:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2
     iget-object v0, p0, Landroidx/activity/result/ActivityResult;->b:Landroid/content/Intent;
 
     if-nez v0, :cond_0
@@ -236,12 +221,10 @@
     :goto_0
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 3
     iget-object v0, p0, Landroidx/activity/result/ActivityResult;->b:Landroid/content/Intent;
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {v0, p1, p2}, Landroid/content/Intent;->writeToParcel(Landroid/os/Parcel;I)V
 
     :cond_1

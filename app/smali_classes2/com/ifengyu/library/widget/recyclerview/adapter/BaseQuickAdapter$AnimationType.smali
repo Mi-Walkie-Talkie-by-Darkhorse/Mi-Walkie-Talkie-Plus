@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/ifengyu/library/widget/recyclerview/adapter/BaseQuickAdapter$AnimationType;
 .super Ljava/lang/Object;
-.source "BaseQuickAdapter.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

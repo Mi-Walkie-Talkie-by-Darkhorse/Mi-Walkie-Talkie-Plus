@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/a/a/a$a;
 .super Ljava/lang/Object;
-.source "AppCompatResources.java"
 
 
 # annotations
@@ -32,13 +31,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/appcompat/a/a/a$a;->a:Landroid/content/res/ColorStateList;
 
-    .line 3
     iput-object p2, p0, Landroidx/appcompat/a/a/a$a;->b:Landroid/content/res/Configuration;
 
     return-void

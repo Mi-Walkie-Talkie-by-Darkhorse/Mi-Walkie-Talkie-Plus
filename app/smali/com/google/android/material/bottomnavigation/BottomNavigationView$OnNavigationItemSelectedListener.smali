@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/android/material/bottomnavigation/BottomNavigationView$OnNavigationItemSelectedListener;
 .super Ljava/lang/Object;
-.source "BottomNavigationView.java"
 
 
 # annotations

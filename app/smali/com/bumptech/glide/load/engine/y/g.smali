@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/engine/y/g;
 .super Lcom/bumptech/glide/util/f;
-.source "LruResourceCache.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/y/h;
@@ -26,7 +25,6 @@
 .method public constructor <init>(J)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/bumptech/glide/util/f;-><init>(J)V
 
     return-void
@@ -52,14 +50,12 @@
 
     const/4 p1, 0x0
 
-    .line 5
     invoke-super {p0, p1}, Lcom/bumptech/glide/util/f;->b(Ljava/lang/Object;)I
 
     move-result p1
 
     return p1
 
-    .line 6
     :cond_0
     invoke-interface {p1}, Lcom/bumptech/glide/load/engine/s;->b()I
 
@@ -77,7 +73,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 3
     invoke-super {p0, p1}, Lcom/bumptech/glide/util/f;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -100,7 +95,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 2
     invoke-super {p0, p1, p2}, Lcom/bumptech/glide/util/f;->b(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -122,7 +116,6 @@
 
     if-lt p1, v0, :cond_0
 
-    .line 7
     invoke-virtual {p0}, Lcom/bumptech/glide/util/f;->a()V
 
     goto :goto_0
@@ -136,7 +129,6 @@
 
     if-ne p1, v0, :cond_2
 
-    .line 8
     :cond_1
     invoke-virtual {p0}, Lcom/bumptech/glide/util/f;->b()J
 
@@ -160,7 +152,6 @@
         .end annotation
     .end param
 
-    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/y/g;->d:Lcom/bumptech/glide/load/engine/y/h$a;
 
     return-void
@@ -177,7 +168,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/bumptech/glide/load/c;
 
     check-cast p2, Lcom/bumptech/glide/load/engine/s;
@@ -194,7 +184,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/bumptech/glide/load/engine/s;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/engine/y/g;->a(Lcom/bumptech/glide/load/engine/s;)I
@@ -223,14 +212,12 @@
         }
     .end annotation
 
-    .line 2
     iget-object p1, p0, Lcom/bumptech/glide/load/engine/y/g;->d:Lcom/bumptech/glide/load/engine/y/h$a;
 
     if-eqz p1, :cond_0
 
     if-eqz p2, :cond_0
 
-    .line 3
     invoke-interface {p1, p2}, Lcom/bumptech/glide/load/engine/y/h$a;->a(Lcom/bumptech/glide/load/engine/s;)V
 
     :cond_0

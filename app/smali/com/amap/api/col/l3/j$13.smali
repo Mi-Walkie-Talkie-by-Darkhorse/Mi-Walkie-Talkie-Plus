@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$13;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j;Landroid/view/MotionEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$13;->b:Lcom/amap/api/col/l3/j;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/j$13;->a:Landroid/view/MotionEvent;
@@ -42,13 +40,11 @@
 .method public final run()V
     .locals 4
 
-    .line 1
     :try_start_0
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/j$13;->b:Lcom/amap/api/col/l3/j;
 
     iget-object v2, p0, Lcom/amap/api/col/l3/j$13;->a:Landroid/view/MotionEvent;
@@ -71,7 +67,6 @@
 
     move-result-object v1
 
-    .line 3
     iget-object v2, p0, Lcom/amap/api/col/l3/j$13;->b:Lcom/amap/api/col/l3/j;
 
     invoke-static {v2}, Lcom/amap/api/col/l3/j;->o(Lcom/amap/api/col/l3/j;)Lcom/amap/api/maps/AMap$OnPOIClickListener;
@@ -84,13 +79,10 @@
 
     const/16 v2, 0x14
 
-    .line 4
     iput v2, v0, Landroid/os/Message;->what:I
 
-    .line 5
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 6
     iget-object v1, p0, Lcom/amap/api/col/l3/j$13;->b:Lcom/amap/api/col/l3/j;
 
     iget-object v1, v1, Lcom/amap/api/col/l3/j;->i:Landroid/os/Handler;
@@ -99,7 +91,6 @@
 
     return-void
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/j$13;->b:Lcom/amap/api/col/l3/j;
 
@@ -109,7 +100,6 @@
 
     return-void
 
-    .line 8
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/j$13;->b:Lcom/amap/api/col/l3/j;
 
@@ -124,7 +114,6 @@
     :catchall_0
     move-exception v0
 
-    .line 9
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

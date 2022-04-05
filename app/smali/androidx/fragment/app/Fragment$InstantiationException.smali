@@ -1,6 +1,5 @@
 .class public Landroidx/fragment/app/Fragment$InstantiationException;
 .super Ljava/lang/RuntimeException;
-.source "Fragment.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void

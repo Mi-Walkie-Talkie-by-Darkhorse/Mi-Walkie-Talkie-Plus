@@ -1,6 +1,5 @@
 .class final enum Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
 .super Ljava/lang/Enum;
-.source "MaterialDialog.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .line 1
     new-instance v0, Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
 
     const/4 v1, 0x0
@@ -47,7 +45,6 @@
 
     sput-object v0, Lcom/afollestad/materialdialogs/MaterialDialog$ListType;->a:Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
 
-    .line 2
     new-instance v0, Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
 
     const/4 v2, 0x1
@@ -58,7 +55,6 @@
 
     sput-object v0, Lcom/afollestad/materialdialogs/MaterialDialog$ListType;->b:Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
 
-    .line 3
     new-instance v0, Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
 
     const/4 v3, 0x2
@@ -73,7 +69,6 @@
 
     new-array v4, v4, [Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
 
-    .line 4
     sget-object v5, Lcom/afollestad/materialdialogs/MaterialDialog$ListType;->a:Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
 
     aput-object v5, v4, v1
@@ -97,7 +92,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -106,7 +100,6 @@
 .method public static a(Lcom/afollestad/materialdialogs/MaterialDialog$ListType;)I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/afollestad/materialdialogs/MaterialDialog$c;->b:[I
 
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
@@ -127,12 +120,10 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 2
     sget p0, Lcom/afollestad/materialdialogs/R$layout;->md_listitem_multichoice:I
 
     return p0
 
-    .line 3
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -142,13 +133,11 @@
 
     throw p0
 
-    .line 4
     :cond_1
     sget p0, Lcom/afollestad/materialdialogs/R$layout;->md_listitem_singlechoice:I
 
     return p0
 
-    .line 5
     :cond_2
     sget p0, Lcom/afollestad/materialdialogs/R$layout;->md_listitem:I
 
@@ -158,7 +147,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -173,7 +161,6 @@
 .method public static values()[Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/afollestad/materialdialogs/MaterialDialog$ListType;->d:[Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
 
     invoke-virtual {v0}, [Lcom/afollestad/materialdialogs/MaterialDialog$ListType;->clone()Ljava/lang/Object;

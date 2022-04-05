@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/protobuf/MessageReflection$MergeTarget;
 .super Ljava/lang/Object;
-.source "MessageReflection.java"
 
 
 # annotations

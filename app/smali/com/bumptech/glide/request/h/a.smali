@@ -1,6 +1,5 @@
 .class public abstract Lcom/bumptech/glide/request/h/a;
 .super Ljava/lang/Object;
-.source "BaseTarget.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/request/h/h;
@@ -30,7 +29,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -51,7 +49,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/bumptech/glide/request/h/a;->a:Lcom/bumptech/glide/request/b;
 
     return-void
@@ -72,7 +69,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/request/h/a;->a:Lcom/bumptech/glide/request/b;
 
     return-object v0

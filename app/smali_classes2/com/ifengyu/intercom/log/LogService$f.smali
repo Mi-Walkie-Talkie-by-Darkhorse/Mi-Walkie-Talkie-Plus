@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/log/LogService$f;
 .super Ljava/lang/Thread;
-.source "LogService.java"
 
 
 # annotations
@@ -32,10 +31,8 @@
 .method constructor <init>(Lcom/ifengyu/intercom/log/LogService;Ljava/io/InputStream;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lcom/ifengyu/intercom/log/LogService$f;->a:Ljava/io/InputStream;
 
     return-void
@@ -53,13 +50,10 @@
         }
     .end annotation
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
-    .line 4
     iput-object p2, p0, Lcom/ifengyu/intercom/log/LogService$f;->a:Ljava/io/InputStream;
 
-    .line 5
     iput-object p3, p0, Lcom/ifengyu/intercom/log/LogService$f;->b:Ljava/util/List;
 
     return-void
@@ -70,7 +64,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/io/InputStreamReader;
 
@@ -78,12 +71,10 @@
 
     invoke-direct {v0, v1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
 
-    .line 2
     new-instance v1, Ljava/io/BufferedReader;
 
     invoke-direct {v1, v0}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
 
-    .line 3
     :cond_0
     :goto_0
     invoke-virtual {v1}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
@@ -92,12 +83,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-object v2, p0, Lcom/ifengyu/intercom/log/LogService$f;->b:Ljava/util/List;
 
     if-eqz v2, :cond_0
 
-    .line 5
     iget-object v2, p0, Lcom/ifengyu/intercom/log/LogService$f;->b:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -109,7 +98,6 @@
     :catch_0
     move-exception v0
 
-    .line 6
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_1

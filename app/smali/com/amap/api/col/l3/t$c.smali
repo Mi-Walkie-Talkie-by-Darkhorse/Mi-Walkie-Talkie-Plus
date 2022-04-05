@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/t$c;
 .super Ljava/lang/Object;
-.source "GLTextureView.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/t$f;
@@ -27,14 +26,12 @@
 .method private constructor <init>(Lcom/amap/api/col/l3/t;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/t$c;->a:Lcom/amap/api/col/l3/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 p1, 0x3098
 
-    .line 2
     iput p1, p0, Lcom/amap/api/col/l3/t$c;->b:I
 
     return-void
@@ -43,7 +40,6 @@
 .method synthetic constructor <init>(Lcom/amap/api/col/l3/t;B)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/t$c;-><init>(Lcom/amap/api/col/l3/t;)V
 
     return-void
@@ -58,7 +54,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     iget v1, p0, Lcom/amap/api/col/l3/t$c;->b:I
 
     const/4 v2, 0x0
@@ -67,7 +62,6 @@
 
     iget-object v1, p0, Lcom/amap/api/col/l3/t$c;->a:Lcom/amap/api/col/l3/t;
 
-    .line 2
     invoke-static {v1}, Lcom/amap/api/col/l3/t;->a(Lcom/amap/api/col/l3/t;)I
 
     move-result v1
@@ -82,12 +76,10 @@
 
     aput v2, v0, v1
 
-    .line 3
     sget-object v1, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_CONTEXT:Ljavax/microedition/khronos/egl/EGLContext;
 
     iget-object v2, p0, Lcom/amap/api/col/l3/t$c;->a:Lcom/amap/api/col/l3/t;
 
-    .line 4
     invoke-static {v2}, Lcom/amap/api/col/l3/t;->a(Lcom/amap/api/col/l3/t;)I
 
     move-result v2
@@ -99,7 +91,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 5
     :goto_0
     invoke-interface {p1, p2, p3, v1, v0}, Ljavax/microedition/khronos/egl/EGL10;->eglCreateContext(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljavax/microedition/khronos/egl/EGLContext;[I)Ljavax/microedition/khronos/egl/EGLContext;
 
@@ -111,14 +102,12 @@
 .method public final destroyContext(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;)V
     .locals 2
 
-    .line 1
     invoke-interface {p1, p2, p3}, Ljavax/microedition/khronos/egl/EGL10;->eglDestroyContext(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "display:"
@@ -135,14 +124,12 @@
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 3
     invoke-interface {p1}, Ljavax/microedition/khronos/egl/EGL10;->eglGetError()I
 
     move-result p1
 
     const-string p2, "eglDestroyContex"
 
-    .line 4
     invoke-static {p2, p1}, Lcom/amap/api/col/l3/t$h;->a(Ljava/lang/String;I)V
 
     :cond_0

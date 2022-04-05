@@ -1,6 +1,5 @@
 .class Lme/zhanghai/android/materialprogressbar/CircularProgressBackgroundDrawable;
 .super Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;
-.source "CircularProgressBackgroundDrawable.java"
 
 # interfaces
 .implements Lme/zhanghai/android/materialprogressbar/ShowBackgroundDrawable;
@@ -14,12 +13,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/CircularProgressBackgroundDrawable;->mShow:Z
 
     return-void
@@ -30,12 +27,10 @@
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/CircularProgressBackgroundDrawable;->mShow:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->draw(Landroid/graphics/Canvas;)V
 
     :cond_0
@@ -45,7 +40,6 @@
 .method public getShowBackground()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/CircularProgressBackgroundDrawable;->mShow:Z
 
     return v0
@@ -58,7 +52,6 @@
 
     const/high16 v1, 0x43b40000    # 360.0f
 
-    .line 1
     invoke-virtual {p0, p1, p2, v0, v1}, Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;->drawRing(Landroid/graphics/Canvas;Landroid/graphics/Paint;FF)V
 
     return-void
@@ -67,15 +60,12 @@
 .method public setShowBackground(Z)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/CircularProgressBackgroundDrawable;->mShow:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput-boolean p1, p0, Lme/zhanghai/android/materialprogressbar/CircularProgressBackgroundDrawable;->mShow:Z
 
-    .line 3
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     :cond_0

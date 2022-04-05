@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/collect/Multiset$Entry;
 .super Ljava/lang/Object;
-.source "Multiset.java"
 
 
 # annotations

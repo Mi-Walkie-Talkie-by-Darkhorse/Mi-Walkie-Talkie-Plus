@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$e;
 .super Lcom/ifengyu/intercom/g/d/l;
-.source "MyTrackActivity.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$e;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     iput p2, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$e;->b:I
@@ -39,7 +37,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$e;->a(Ljava/lang/String;I)V
@@ -50,7 +47,6 @@
 .method public a(Ljava/lang/String;I)V
     .locals 1
 
-    .line 2
     :try_start_0
     new-instance p2, Lorg/json/JSONObject;
 
@@ -58,14 +54,12 @@
 
     const-string p1, "errno"
 
-    .line 3
     invoke-virtual {p2, p1}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$e;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;->a(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;)Ljava/util/List;
@@ -94,7 +88,6 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/greendao/bean/b;->e(Ljava/lang/String;)V
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1
@@ -128,7 +121,6 @@
     :catch_0
     move-exception p1
 
-    .line 6
     invoke-virtual {p1}, Lorg/json/JSONException;->printStackTrace()V
 
     :cond_0

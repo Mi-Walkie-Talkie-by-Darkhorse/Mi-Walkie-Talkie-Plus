@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ArrayTable$ArrayMap$1;
 .super Lcom/google/common/collect/Maps$EntrySet;
-.source "ArrayTable.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/collect/ArrayTable$ArrayMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1;->this$0:Lcom/google/common/collect/ArrayTable$ArrayMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/Maps$EntrySet;-><init>()V
@@ -50,7 +48,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ArrayTable$ArrayMap$1$1;
 
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$EntrySet;->size()I
@@ -72,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1;->this$0:Lcom/google/common/collect/ArrayTable$ArrayMap;
 
     return-object v0

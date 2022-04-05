@@ -1,6 +1,5 @@
 .class interface abstract annotation Lcom/ifengyu/library/helper/QMUIStatusBarHelper$StatusBarType;
 .super Ljava/lang/Object;
-.source "QMUIStatusBarHelper.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

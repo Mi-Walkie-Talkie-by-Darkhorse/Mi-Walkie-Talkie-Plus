@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/DownloadContextListener;
 .super Ljava/lang/Object;
-.source "DownloadContextListener.java"
 
 
 # virtual methods

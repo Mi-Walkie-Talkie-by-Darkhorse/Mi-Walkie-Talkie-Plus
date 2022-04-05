@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b$b;
 .super Ljava/lang/Object;
-.source "ActivateDeviceActivity.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b$b;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b$b;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
@@ -55,7 +52,6 @@
 
     invoke-virtual {p1, v0, v0, p2, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(ZZLjava/lang/String;I)V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b$b;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
@@ -66,7 +62,6 @@
 
     invoke-static {p1, v0, v1}, Lcom/ifengyu/intercom/i/k0;->a(Ljava/lang/Runnable;J)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b$b;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;

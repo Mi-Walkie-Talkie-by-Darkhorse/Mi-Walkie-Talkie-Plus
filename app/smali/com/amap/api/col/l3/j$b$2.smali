@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$b$2;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j$b;Lcom/amap/api/col/l3/ew;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$b$2;->b:Lcom/amap/api/col/l3/j$b;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/j$b$2;->a:Lcom/amap/api/col/l3/ew;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/j$b$2;->a:Lcom/amap/api/col/l3/ew;
 
@@ -54,10 +51,8 @@
 
     iget-object v1, v1, Lcom/amap/api/maps/model/IndoorBuildingInfo;->floor_names:[Ljava/lang/String;
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/amap/api/col/l3/ew;->a([Ljava/lang/String;)V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/j$b$2;->a:Lcom/amap/api/col/l3/ew;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/j$b$2;->b:Lcom/amap/api/col/l3/j$b;
@@ -68,10 +63,8 @@
 
     iget-object v1, v1, Lcom/amap/api/maps/model/IndoorBuildingInfo;->activeFloorName:Ljava/lang/String;
 
-    .line 4
     invoke-virtual {v0, v1}, Lcom/amap/api/col/l3/ew;->a(Ljava/lang/String;)V
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/j$b$2;->a:Lcom/amap/api/col/l3/ew;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/ew;->b()Z
@@ -80,7 +73,6 @@
 
     if-nez v0, :cond_0
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/j$b$2;->a:Lcom/amap/api/col/l3/ew;
 
     const/4 v1, 0x1
@@ -95,7 +87,6 @@
     :catchall_0
     move-exception v0
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

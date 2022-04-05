@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/dialog/list/b;
 .super Landroidx/recyclerview/widget/RecyclerView$l;
-.source "BottomSheetListItemDecoration.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/c/b;
@@ -16,17 +15,14 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$l;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/dialog/list/b;->a:Landroid/graphics/Paint;
 
-    .line 3
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -41,7 +37,6 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/dialog/list/b;->a:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
@@ -50,12 +45,10 @@
 
     const v0, 0x7f04042a
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/lite/dialog/list/b;->b:I
 
     if-eqz v0, :cond_0
 
-    .line 6
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/dialog/list/b;->a:Landroid/graphics/Paint;
 
     invoke-static {p1, v0}, Lcom/qmuiteam/qmui/util/i;->a(Landroid/content/Context;I)I
@@ -73,12 +66,10 @@
 .method public a(Landroidx/recyclerview/widget/RecyclerView;Lcom/qmuiteam/qmui/c/g;ILandroid/content/res/Resources$Theme;)V
     .locals 0
 
-    .line 1
     iget p1, p0, Lcom/ifengyu/intercom/lite/dialog/list/b;->b:I
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/dialog/list/b;->a:Landroid/graphics/Paint;
 
     invoke-static {p4, p1}, Lcom/qmuiteam/qmui/util/i;->a(Landroid/content/res/Resources$Theme;I)I
@@ -106,15 +97,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$l;->onDrawOver(Landroid/graphics/Canvas;Landroidx/recyclerview/widget/RecyclerView;Landroidx/recyclerview/widget/RecyclerView$v;)V
 
-    .line 2
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$g;
 
     move-result-object p3
 
-    .line 3
     invoke-virtual {p2}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     move-result-object v0
@@ -123,7 +111,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 4
     iget v1, p0, Lcom/ifengyu/intercom/lite/dialog/list/b;->b:I
 
     if-nez v1, :cond_0
@@ -133,7 +120,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 5
     :goto_0
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -141,17 +127,14 @@
 
     if-ge v1, v2, :cond_3
 
-    .line 6
     invoke-virtual {p2, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 7
     invoke-virtual {p2, v2}, Landroidx/recyclerview/widget/RecyclerView;->getChildAdapterPosition(Landroid/view/View;)I
 
     move-result v3
 
-    .line 8
     instance-of v4, v2, Lcom/ifengyu/intercom/lite/dialog/list/BottomSheetListItemView;
 
     if-eqz v4, :cond_2
@@ -162,14 +145,12 @@
 
     add-int/lit8 v5, v3, -0x1
 
-    .line 9
     invoke-virtual {p3, v5}, Landroidx/recyclerview/widget/RecyclerView$g;->getItemViewType(I)I
 
     move-result v5
 
     if-eq v5, v4, :cond_1
 
-    .line 10
     invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedTop(Landroid/view/View;)I
 
     move-result v5
@@ -178,7 +159,6 @@
 
     int-to-float v10, v5
 
-    .line 11
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getWidth()I
 
     move-result v5
@@ -196,21 +176,18 @@
     :cond_1
     add-int/lit8 v3, v3, 0x1
 
-    .line 12
     invoke-virtual {p3}, Landroidx/recyclerview/widget/RecyclerView$g;->getItemCount()I
 
     move-result v5
 
     if-ge v3, v5, :cond_2
 
-    .line 13
     invoke-virtual {p3, v3}, Landroidx/recyclerview/widget/RecyclerView$g;->getItemViewType(I)I
 
     move-result v3
 
     if-ne v3, v4, :cond_2
 
-    .line 14
     invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedBottom(Landroid/view/View;)I
 
     move-result v2
@@ -219,7 +196,6 @@
 
     int-to-float v7, v2
 
-    .line 15
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getWidth()I
 
     move-result v2

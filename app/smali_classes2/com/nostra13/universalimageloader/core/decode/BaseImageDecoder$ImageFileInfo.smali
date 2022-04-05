@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ImageFileInfo;
 .super Ljava/lang/Object;
-.source "BaseImageDecoder.java"
 
 
 # annotations
@@ -24,13 +23,10 @@
 .method protected constructor <init>(Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ExifInfo;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ImageFileInfo;->imageSize:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
-    .line 3
     iput-object p2, p0, Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ImageFileInfo;->exif:Lcom/nostra13/universalimageloader/core/decode/BaseImageDecoder$ExifInfo;
 
     return-void

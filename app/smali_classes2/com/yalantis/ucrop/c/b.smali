@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/yalantis/ucrop/c/b;
 .super Ljava/lang/Object;
-.source "BitmapLoadCallback.java"
 
 
 # virtual methods

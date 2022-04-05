@@ -1,13 +1,11 @@
 .class Lcom/xiaomi/account/openauth/internal/DeviceIdHasher;
 .super Ljava/lang/Object;
-.source "DeviceIdHasher.java"
 
 
 # direct methods
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -18,7 +16,6 @@
 
     const/16 v0, 0x8
 
-    .line 1
     invoke-static {p0, v0}, Lcom/xiaomi/account/openauth/internal/DeviceIdHasher;->hashDeviceInfo(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
@@ -39,12 +36,10 @@
     :try_start_0
     const-string v0, "SHA1"
 
-    .line 2
     invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
     move-result-object p0
@@ -61,7 +56,6 @@
 
     const/16 v0, 0x10
 
-    .line 4
     invoke-virtual {p0, p1, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
@@ -70,7 +64,6 @@
 
     return-object p0
 
-    .line 5
     :catch_0
     new-instance p0, Ljava/lang/IllegalStateException;
 

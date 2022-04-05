@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/engine/x/b;
 .super Ljava/lang/Object;
-.source "ArrayPool.java"
 
 
 # virtual methods

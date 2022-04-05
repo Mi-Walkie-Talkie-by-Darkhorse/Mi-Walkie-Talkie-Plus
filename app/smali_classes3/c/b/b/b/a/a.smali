@@ -1,6 +1,5 @@
 .class public Lc/b/b/b/a/a;
 .super Ljava/lang/Object;
-.source "IdentifierManager.java"
 
 
 # static fields
@@ -25,21 +24,18 @@
     :try_start_0
     const-string v0, "com.android.id.impl.IdProviderImpl"
 
-    .line 1
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
     sput-object v0, Lc/b/b/b/a/a;->b:Ljava/lang/Class;
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
     move-result-object v0
 
     sput-object v0, Lc/b/b/b/a/a;->a:Ljava/lang/Object;
 
-    .line 3
     sget-object v0, Lc/b/b/b/a/a;->b:Ljava/lang/Class;
 
     const-string v1, "getUDID"
@@ -56,7 +52,6 @@
 
     invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    .line 4
     sget-object v0, Lc/b/b/b/a/a;->b:Ljava/lang/Class;
 
     const-string v1, "getOAID"
@@ -73,7 +68,6 @@
 
     sput-object v0, Lc/b/b/b/a/a;->c:Ljava/lang/reflect/Method;
 
-    .line 5
     sget-object v0, Lc/b/b/b/a/a;->b:Ljava/lang/Class;
 
     const-string v1, "getVAID"
@@ -86,7 +80,6 @@
 
     invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
-    .line 6
     sget-object v0, Lc/b/b/b/a/a;->b:Ljava/lang/Class;
 
     const-string v1, "getAAID"
@@ -110,7 +103,6 @@
 
     const-string v2, "reflect exception!"
 
-    .line 7
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :goto_0
@@ -120,7 +112,6 @@
 .method public static a(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
 
-    .line 2
     sget-object v0, Lc/b/b/b/a/a;->c:Ljava/lang/reflect/Method;
 
     invoke-static {p0, v0}, Lc/b/b/b/a/a;->a(Landroid/content/Context;Ljava/lang/reflect/Method;)Ljava/lang/String;
@@ -133,7 +124,6 @@
 .method private static a(Landroid/content/Context;Ljava/lang/reflect/Method;)Ljava/lang/String;
     .locals 3
 
-    .line 3
     sget-object v0, Lc/b/b/b/a/a;->a:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
@@ -149,14 +139,12 @@
 
     aput-object p0, v1, v2
 
-    .line 4
     invoke-virtual {p1, v0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 5
     check-cast p0, Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -170,7 +158,6 @@
 
     const-string v0, "invoke exception!"
 
-    .line 6
     invoke-static {p1, v0, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_0
@@ -182,7 +169,6 @@
 .method public static a()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lc/b/b/b/a/a;->b:Ljava/lang/Class;
 
     if-eqz v0, :cond_0

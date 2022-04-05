@@ -1,6 +1,5 @@
 .class synthetic Lcom/github/mikephil/charting/components/Legend$a;
 .super Ljava/lang/Object;
-.source "Legend.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 1
     invoke-static {}, Lcom/github/mikephil/charting/components/Legend$LegendOrientation;->values()[Lcom/github/mikephil/charting/components/Legend$LegendOrientation;
 
     move-result-object v0
@@ -64,7 +62,6 @@
     :try_end_1
     .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 2
     :catch_1
     invoke-static {}, Lcom/github/mikephil/charting/components/Legend$LegendPosition;->values()[Lcom/github/mikephil/charting/components/Legend$LegendPosition;
 

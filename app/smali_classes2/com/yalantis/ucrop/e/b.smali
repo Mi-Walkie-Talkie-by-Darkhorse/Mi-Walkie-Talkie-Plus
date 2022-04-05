@@ -1,6 +1,5 @@
 .class public final Lcom/yalantis/ucrop/e/b;
 .super Ljava/lang/Object;
-.source "CubicEasing.java"
 
 
 # direct methods

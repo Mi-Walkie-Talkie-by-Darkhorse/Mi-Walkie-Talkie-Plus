@@ -1,6 +1,5 @@
 .class Lcom/google/gson/internal/ConstructorConstructor$3;
 .super Ljava/lang/Object;
-.source "ConstructorConstructor.java"
 
 # interfaces
 .implements Lcom/google/gson/internal/ObjectConstructor;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/google/gson/internal/ConstructorConstructor;Ljava/lang/reflect/Constructor;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/internal/ConstructorConstructor$3;->this$0:Lcom/google/gson/internal/ConstructorConstructor;
 
     iput-object p2, p0, Lcom/google/gson/internal/ConstructorConstructor$3;->val$constructor:Ljava/lang/reflect/Constructor;
@@ -61,7 +59,6 @@
 
     const/4 v2, 0x0
 
-    .line 1
     :try_start_0
     iget-object v3, p0, Lcom/google/gson/internal/ConstructorConstructor$3;->val$constructor:Ljava/lang/reflect/Constructor;
 
@@ -78,7 +75,6 @@
     :catch_0
     move-exception v0
 
-    .line 2
     new-instance v1, Ljava/lang/AssertionError;
 
     invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -88,7 +84,6 @@
     :catch_1
     move-exception v2
 
-    .line 3
     new-instance v3, Ljava/lang/RuntimeException;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -107,7 +102,6 @@
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v2}, Ljava/lang/reflect/InvocationTargetException;->getTargetException()Ljava/lang/Throwable;
 
     move-result-object v1
@@ -119,7 +113,6 @@
     :catch_2
     move-exception v2
 
-    .line 5
     new-instance v3, Ljava/lang/RuntimeException;
 
     new-instance v4, Ljava/lang/StringBuilder;

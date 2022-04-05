@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ArrayTable$1$1;
 .super Lcom/google/common/collect/Tables$AbstractCell;
-.source "ArrayTable.java"
 
 
 # annotations
@@ -35,14 +34,12 @@
 .method constructor <init>(Lcom/google/common/collect/ArrayTable$1;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ArrayTable$1$1;->this$1:Lcom/google/common/collect/ArrayTable$1;
 
     iput p2, p0, Lcom/google/common/collect/ArrayTable$1$1;->val$index:I
 
     invoke-direct {p0}, Lcom/google/common/collect/Tables$AbstractCell;-><init>()V
 
-    .line 2
     iget p1, p0, Lcom/google/common/collect/ArrayTable$1$1;->val$index:I
 
     iget-object p2, p0, Lcom/google/common/collect/ArrayTable$1$1;->this$1:Lcom/google/common/collect/ArrayTable$1;
@@ -61,7 +58,6 @@
 
     iput p1, p0, Lcom/google/common/collect/ArrayTable$1$1;->rowIndex:I
 
-    .line 3
     iget p1, p0, Lcom/google/common/collect/ArrayTable$1$1;->val$index:I
 
     iget-object p2, p0, Lcom/google/common/collect/ArrayTable$1$1;->this$1:Lcom/google/common/collect/ArrayTable$1;
@@ -93,7 +89,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable$1$1;->this$1:Lcom/google/common/collect/ArrayTable$1;
 
     iget-object v0, v0, Lcom/google/common/collect/ArrayTable$1;->this$0:Lcom/google/common/collect/ArrayTable;
@@ -119,7 +114,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable$1$1;->this$1:Lcom/google/common/collect/ArrayTable$1;
 
     iget-object v0, v0, Lcom/google/common/collect/ArrayTable$1;->this$0:Lcom/google/common/collect/ArrayTable;
@@ -145,7 +139,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ArrayTable$1$1;->this$1:Lcom/google/common/collect/ArrayTable$1;
 
     iget-object v0, v0, Lcom/google/common/collect/ArrayTable$1;->this$0:Lcom/google/common/collect/ArrayTable;

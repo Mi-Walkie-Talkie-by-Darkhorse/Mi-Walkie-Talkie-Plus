@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;
 .super Lio/reactivex/Scheduler$Worker;
-.source "ComputationScheduler.java"
 
 
 # annotations
@@ -30,39 +29,32 @@
 .method constructor <init>(Lio/reactivex/internal/schedulers/ComputationScheduler$PoolWorker;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Scheduler$Worker;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->poolWorker:Lio/reactivex/internal/schedulers/ComputationScheduler$PoolWorker;
 
-    .line 3
     new-instance p1, Lio/reactivex/internal/disposables/ListCompositeDisposable;
 
     invoke-direct {p1}, Lio/reactivex/internal/disposables/ListCompositeDisposable;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->serial:Lio/reactivex/internal/disposables/ListCompositeDisposable;
 
-    .line 4
     new-instance p1, Lio/reactivex/disposables/CompositeDisposable;
 
     invoke-direct {p1}, Lio/reactivex/disposables/CompositeDisposable;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->timed:Lio/reactivex/disposables/CompositeDisposable;
 
-    .line 5
     new-instance p1, Lio/reactivex/internal/disposables/ListCompositeDisposable;
 
     invoke-direct {p1}, Lio/reactivex/internal/disposables/ListCompositeDisposable;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->both:Lio/reactivex/internal/disposables/ListCompositeDisposable;
 
-    .line 6
     iget-object v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->serial:Lio/reactivex/internal/disposables/ListCompositeDisposable;
 
     invoke-virtual {p1, v0}, Lio/reactivex/internal/disposables/ListCompositeDisposable;->add(Lio/reactivex/disposables/Disposable;)Z
 
-    .line 7
     iget-object p1, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->both:Lio/reactivex/internal/disposables/ListCompositeDisposable;
 
     iget-object v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->timed:Lio/reactivex/disposables/CompositeDisposable;
@@ -77,17 +69,14 @@
 .method public dispose()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->disposed:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->disposed:Z
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->both:Lio/reactivex/internal/disposables/ListCompositeDisposable;
 
     invoke-virtual {v0}, Lio/reactivex/internal/disposables/ListCompositeDisposable;->dispose()V
@@ -99,7 +88,6 @@
 .method public isDisposed()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->disposed:Z
 
     return v0
@@ -114,17 +102,14 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->disposed:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     sget-object p1, Lio/reactivex/internal/disposables/EmptyDisposable;->INSTANCE:Lio/reactivex/internal/disposables/EmptyDisposable;
 
     return-object p1
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->poolWorker:Lio/reactivex/internal/schedulers/ComputationScheduler$PoolWorker;
 
@@ -156,17 +141,14 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 4
     iget-boolean v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->disposed:Z
 
     if-eqz v0, :cond_0
 
-    .line 5
     sget-object p1, Lio/reactivex/internal/disposables/EmptyDisposable;->INSTANCE:Lio/reactivex/internal/disposables/EmptyDisposable;
 
     return-object p1
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;->poolWorker:Lio/reactivex/internal/schedulers/ComputationScheduler$PoolWorker;
 

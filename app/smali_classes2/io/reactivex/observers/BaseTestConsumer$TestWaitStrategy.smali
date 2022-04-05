@@ -1,6 +1,5 @@
 .class public abstract enum Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
 .super Ljava/lang/Enum;
-.source "BaseTestConsumer.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -46,7 +45,6 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1
     new-instance v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy$1;
 
     const/4 v1, 0x0
@@ -57,7 +55,6 @@
 
     sput-object v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;->SPIN:Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
 
-    .line 2
     new-instance v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy$2;
 
     const/4 v2, 0x1
@@ -68,7 +65,6 @@
 
     sput-object v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;->YIELD:Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
 
-    .line 3
     new-instance v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy$3;
 
     const/4 v3, 0x2
@@ -79,7 +75,6 @@
 
     sput-object v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;->SLEEP_1MS:Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
 
-    .line 4
     new-instance v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy$4;
 
     const/4 v4, 0x3
@@ -90,7 +85,6 @@
 
     sput-object v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;->SLEEP_10MS:Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
 
-    .line 5
     new-instance v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy$5;
 
     const/4 v5, 0x4
@@ -101,7 +95,6 @@
 
     sput-object v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;->SLEEP_100MS:Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
 
-    .line 6
     new-instance v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy$6;
 
     const/4 v6, 0x5
@@ -116,7 +109,6 @@
 
     new-array v7, v7, [Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
 
-    .line 7
     sget-object v8, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;->SPIN:Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
 
     aput-object v8, v7, v1
@@ -152,7 +144,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -161,7 +152,6 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILio/reactivex/observers/BaseTestConsumer$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -172,7 +162,6 @@
 
     int-to-long v0, p0
 
-    .line 1
     :try_start_0
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
     :try_end_0
@@ -183,7 +172,6 @@
     :catch_0
     move-exception p0
 
-    .line 2
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -194,7 +182,6 @@
 .method public static valueOf(Ljava/lang/String;)Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
     .locals 1
 
-    .line 1
     const-class v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -209,7 +196,6 @@
 .method public static values()[Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;->$VALUES:[Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
 
     invoke-virtual {v0}, [Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;->clone()Ljava/lang/Object;

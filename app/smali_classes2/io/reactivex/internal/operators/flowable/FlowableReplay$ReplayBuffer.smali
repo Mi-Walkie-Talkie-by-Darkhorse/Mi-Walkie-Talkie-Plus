@@ -1,6 +1,5 @@
 .class interface abstract Lio/reactivex/internal/operators/flowable/FlowableReplay$ReplayBuffer;
 .super Ljava/lang/Object;
-.source "FlowableReplay.java"
 
 
 # annotations

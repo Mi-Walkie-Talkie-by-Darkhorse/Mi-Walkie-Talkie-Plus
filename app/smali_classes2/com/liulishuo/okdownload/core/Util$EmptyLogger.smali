@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/Util$EmptyLogger;
 .super Ljava/lang/Object;
-.source "Util.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/Util$Logger;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

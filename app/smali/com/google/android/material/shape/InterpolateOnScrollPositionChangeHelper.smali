@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;
 .super Ljava/lang/Object;
-.source "InterpolateOnScrollPositionChangeHelper.java"
 
 
 # instance fields
@@ -21,35 +20,28 @@
 .method public constructor <init>(Landroid/view/View;Lcom/google/android/material/shape/MaterialShapeDrawable;Landroid/widget/ScrollView;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x2
 
     new-array v1, v0, [I
 
-    .line 2
     iput-object v1, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->scrollLocation:[I
 
     new-array v0, v0, [I
 
-    .line 3
     iput-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->containerLocation:[I
 
-    .line 4
     new-instance v0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper$1;
 
     invoke-direct {v0, p0}, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper$1;-><init>(Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;)V
 
     iput-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->scrollChangedListener:Landroid/view/ViewTreeObserver$OnScrollChangedListener;
 
-    .line 5
     iput-object p1, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->shapedView:Landroid/view/View;
 
-    .line 6
     iput-object p2, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->materialShapeDrawable:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
-    .line 7
     iput-object p3, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->containingScrollView:Landroid/widget/ScrollView;
 
     return-void
@@ -60,7 +52,6 @@
 .method public setContainingScrollView(Landroid/widget/ScrollView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->containingScrollView:Landroid/widget/ScrollView;
 
     return-void
@@ -69,7 +60,6 @@
 .method public setMaterialShapeDrawable(Lcom/google/android/material/shape/MaterialShapeDrawable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->materialShapeDrawable:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     return-void
@@ -82,7 +72,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->scrollChangedListener:Landroid/view/ViewTreeObserver$OnScrollChangedListener;
 
     invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->addOnScrollChangedListener(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V
@@ -97,7 +86,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->scrollChangedListener:Landroid/view/ViewTreeObserver$OnScrollChangedListener;
 
     invoke-virtual {p1, v0}, Landroid/view/ViewTreeObserver;->removeOnScrollChangedListener(Landroid/view/ViewTreeObserver$OnScrollChangedListener;)V
@@ -108,14 +96,12 @@
 .method public updateInterpolationForScreenPosition()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->containingScrollView:Landroid/widget/ScrollView;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Landroid/widget/ScrollView;->getChildCount()I
 
@@ -123,14 +109,12 @@
 
     if-eqz v0, :cond_4
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->containingScrollView:Landroid/widget/ScrollView;
 
     iget-object v1, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->scrollLocation:[I
 
     invoke-virtual {v0, v1}, Landroid/widget/ScrollView;->getLocationInWindow([I)V
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->containingScrollView:Landroid/widget/ScrollView;
 
     const/4 v1, 0x0
@@ -143,7 +127,6 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->getLocationInWindow([I)V
 
-    .line 5
     iget-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->shapedView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getTop()I
@@ -164,14 +147,12 @@
 
     add-int/2addr v0, v1
 
-    .line 6
     iget-object v1, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->shapedView:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
     move-result v1
 
-    .line 7
     iget-object v2, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->containingScrollView:Landroid/widget/ScrollView;
 
     invoke-virtual {v2}, Landroid/widget/ScrollView;->getHeight()I
@@ -184,7 +165,6 @@
 
     if-gez v0, :cond_1
 
-    .line 8
     iget-object v2, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->materialShapeDrawable:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     int-to-float v0, v0
@@ -195,7 +175,6 @@
 
     add-float/2addr v0, v4
 
-    .line 9
     invoke-static {v4, v0}, Ljava/lang/Math;->min(FF)F
 
     move-result v0
@@ -204,10 +183,8 @@
 
     move-result v0
 
-    .line 10
     invoke-virtual {v2, v0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setInterpolation(F)V
 
-    .line 11
     iget-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->shapedView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->invalidate()V
@@ -221,7 +198,6 @@
 
     sub-int/2addr v0, v2
 
-    .line 12
     iget-object v2, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->materialShapeDrawable:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     int-to-float v0, v0
@@ -232,7 +208,6 @@
 
     sub-float v0, v4, v0
 
-    .line 13
     invoke-static {v4, v0}, Ljava/lang/Math;->min(FF)F
 
     move-result v0
@@ -241,17 +216,14 @@
 
     move-result v0
 
-    .line 14
     invoke-virtual {v2, v0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setInterpolation(F)V
 
-    .line 15
     iget-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->shapedView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
     goto :goto_0
 
-    .line 16
     :cond_2
     iget-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->materialShapeDrawable:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
@@ -263,12 +235,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 17
     iget-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->materialShapeDrawable:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     invoke-virtual {v0, v4}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setInterpolation(F)V
 
-    .line 18
     iget-object v0, p0, Lcom/google/android/material/shape/InterpolateOnScrollPositionChangeHelper;->shapedView:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->invalidate()V
@@ -277,7 +247,6 @@
     :goto_0
     return-void
 
-    .line 19
     :cond_4
     new-instance v0, Ljava/lang/IllegalStateException;
 

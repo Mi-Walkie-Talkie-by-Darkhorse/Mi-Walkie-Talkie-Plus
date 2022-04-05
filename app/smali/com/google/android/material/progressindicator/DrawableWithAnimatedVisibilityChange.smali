@@ -1,6 +1,5 @@
 .class abstract Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;
 .super Landroid/graphics/drawable/Drawable;
-.source "DrawableWithAnimatedVisibilityChange.java"
 
 # interfaces
 .implements Landroidx/vectordrawable/a/a/b;
@@ -65,7 +64,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange$3;
 
     const-class v1, Ljava/lang/Float;
@@ -90,23 +88,18 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->paint:Landroid/graphics/Paint;
 
-    .line 3
     iput-object p1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->context:Landroid/content/Context;
 
-    .line 4
     iput-object p2, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->baseSpec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
-    .line 5
     new-instance p1, Lcom/google/android/material/progressindicator/AnimatorDurationScaleProvider;
 
     invoke-direct {p1}, Lcom/google/android/material/progressindicator/AnimatorDurationScaleProvider;-><init>()V
@@ -115,7 +108,6 @@
 
     const/16 p1, 0xff
 
-    .line 6
     invoke-virtual {p0, p1}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setAlpha(I)V
 
     return-void
@@ -124,7 +116,6 @@
 .method static synthetic access$000(Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->dispatchAnimationStart()V
 
     return-void
@@ -133,7 +124,6 @@
 .method static synthetic access$101(Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;ZZ)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
     move-result p0
@@ -144,7 +134,6 @@
 .method static synthetic access$200(Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->dispatchAnimationEnd()V
 
     return-void
@@ -153,15 +142,12 @@
 .method private dispatchAnimationEnd()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->internalAnimationCallback:Landroidx/vectordrawable/a/a/b$a;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p0}, Landroidx/vectordrawable/a/a/b$a;->onAnimationEnd(Landroid/graphics/drawable/Drawable;)V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
@@ -171,7 +157,6 @@
 
     if-nez v1, :cond_1
 
-    .line 4
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -189,7 +174,6 @@
 
     check-cast v1, Landroidx/vectordrawable/a/a/b$a;
 
-    .line 5
     invoke-virtual {v1, p0}, Landroidx/vectordrawable/a/a/b$a;->onAnimationEnd(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_0
@@ -201,15 +185,12 @@
 .method private dispatchAnimationStart()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->internalAnimationCallback:Landroidx/vectordrawable/a/a/b$a;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p0}, Landroidx/vectordrawable/a/a/b$a;->onAnimationStart(Landroid/graphics/drawable/Drawable;)V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
@@ -219,7 +200,6 @@
 
     if-nez v1, :cond_1
 
-    .line 4
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -237,7 +217,6 @@
 
     check-cast v1, Landroidx/vectordrawable/a/a/b$a;
 
-    .line 5
     invoke-virtual {v1, p0}, Landroidx/vectordrawable/a/a/b$a;->onAnimationStart(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_0
@@ -253,15 +232,12 @@
         .end annotation
     .end param
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->ignoreCallbacks:Z
 
     const/4 v1, 0x1
 
-    .line 2
     iput-boolean v1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->ignoreCallbacks:Z
 
-    .line 3
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -271,14 +247,12 @@
 
     aget-object v3, p1, v2
 
-    .line 4
     invoke-virtual {v3}, Landroid/animation/ValueAnimator;->end()V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iput-boolean v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->ignoreCallbacks:Z
 
@@ -288,7 +262,6 @@
 .method private maybeInitializeAnimators()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->showAnimator:Landroid/animation/ValueAnimator;
 
     const-wide/16 v1, 0x1f4
@@ -297,7 +270,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     sget-object v0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->GROW_FRACTION:Landroid/util/Property;
 
     new-array v4, v3, [F
@@ -310,28 +282,23 @@
 
     iput-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->showAnimator:Landroid/animation/ValueAnimator;
 
-    .line 3
     invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->showAnimator:Landroid/animation/ValueAnimator;
 
     sget-object v4, Lcom/google/android/material/animation/AnimationUtils;->FAST_OUT_SLOW_IN_INTERPOLATOR:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v0, v4}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 5
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->showAnimator:Landroid/animation/ValueAnimator;
 
     invoke-direct {p0, v0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setShowAnimator(Landroid/animation/ValueAnimator;)V
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->hideAnimator:Landroid/animation/ValueAnimator;
 
     if-nez v0, :cond_1
 
-    .line 7
     sget-object v0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->GROW_FRACTION:Landroid/util/Property;
 
     new-array v3, v3, [F
@@ -344,17 +311,14 @@
 
     iput-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->hideAnimator:Landroid/animation/ValueAnimator;
 
-    .line 8
     invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 9
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->hideAnimator:Landroid/animation/ValueAnimator;
 
     sget-object v1, Lcom/google/android/material/animation/AnimationUtils;->FAST_OUT_SLOW_IN_INTERPOLATOR:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 10
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->hideAnimator:Landroid/animation/ValueAnimator;
 
     invoke-direct {p0, v0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setHideAnimator(Landroid/animation/ValueAnimator;)V
@@ -382,7 +346,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->hideAnimator:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_1
@@ -395,7 +358,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -405,12 +367,10 @@
 
     throw p1
 
-    .line 3
     :cond_1
     :goto_0
     iput-object p1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->hideAnimator:Landroid/animation/ValueAnimator;
 
-    .line 4
     new-instance v0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange$2;
 
     invoke-direct {v0, p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange$2;-><init>(Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;)V
@@ -427,7 +387,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->showAnimator:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_1
@@ -440,7 +399,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -450,12 +408,10 @@
 
     throw p1
 
-    .line 3
     :cond_1
     :goto_0
     iput-object p1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->showAnimator:Landroid/animation/ValueAnimator;
 
-    .line 4
     new-instance v0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange$1;
 
     invoke-direct {v0, p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange$1;-><init>(Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;)V
@@ -470,14 +426,12 @@
 .method public clearAnimationCallbacks()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
     return-void
@@ -486,7 +440,6 @@
 .method public getAlpha()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->totalAlpha:I
 
     return v0
@@ -495,7 +448,6 @@
 .method getGrowFraction()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->baseSpec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     invoke-virtual {v0}, Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;->isShowAnimationEnabled()Z
@@ -516,7 +468,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     iget-boolean v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->mockHideAnimationRunning:Z
 
@@ -528,13 +479,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->growFraction:F
 
     return v0
 
-    .line 4
     :cond_2
     :goto_0
     iget v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->mockGrowFraction:F
@@ -547,7 +496,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->hideAnimator:Landroid/animation/ValueAnimator;
 
     return-object v0
@@ -566,7 +514,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0, v0, v0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setVisible(ZZZ)Z
 
     move-result v0
@@ -577,7 +524,6 @@
 .method public isHiding()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->hideAnimator:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_0
@@ -608,7 +554,6 @@
 .method public isRunning()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->isShowing()Z
 
     move-result v0
@@ -639,7 +584,6 @@
 .method public isShowing()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->showAnimator:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_0
@@ -674,19 +618,16 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
@@ -696,7 +637,6 @@
 
     if-nez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -708,10 +648,8 @@
 .method public setAlpha(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->totalAlpha:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -724,12 +662,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->paint:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 
-    .line 2
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -744,17 +680,14 @@
         .end annotation
     .end param
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->growFraction:F
 
     cmpl-float v0, v0, p1
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->growFraction:F
 
-    .line 3
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     :cond_0
@@ -768,7 +701,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->internalAnimationCallback:Landroidx/vectordrawable/a/a/b$a;
 
     return-void
@@ -785,10 +717,8 @@
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->mockHideAnimationRunning:Z
 
-    .line 2
     iput p2, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->mockGrowFraction:F
 
     return-void
@@ -805,10 +735,8 @@
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->mockShowAnimationRunning:Z
 
-    .line 2
     iput p2, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->mockGrowFraction:F
 
     return-void
@@ -819,7 +747,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, p1, p2, v0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setVisible(ZZZ)Z
 
     move-result p1
@@ -830,12 +757,10 @@
 .method public setVisible(ZZZ)Z
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animatorDurationScaleProvider:Lcom/google/android/material/progressindicator/AnimatorDurationScaleProvider;
 
     iget-object v1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->context:Landroid/content/Context;
 
-    .line 3
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -859,7 +784,6 @@
     :cond_0
     const/4 p3, 0x0
 
-    .line 4
     :goto_0
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setVisibleInternal(ZZZ)Z
 
@@ -871,10 +795,8 @@
 .method setVisibleInternal(ZZZ)Z
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->maybeInitializeAnimators()V
 
-    .line 2
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->isVisible()Z
 
     move-result v0
@@ -890,7 +812,6 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->showAnimator:Landroid/animation/ValueAnimator;
 
     goto :goto_0
@@ -903,14 +824,12 @@
 
     if-nez p3, :cond_3
 
-    .line 4
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->isRunning()Z
 
     move-result p2
 
     if-eqz p2, :cond_2
 
-    .line 5
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->end()V
 
     goto :goto_1
@@ -920,10 +839,8 @@
 
     aput-object v0, p2, v1
 
-    .line 6
     invoke-direct {p0, p2}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->endAnimatorWithoutCallbacks([Landroid/animation/ValueAnimator;)V
 
-    .line 7
     :goto_1
     invoke-super {p0, p1, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
@@ -934,7 +851,6 @@
     :cond_3
     if-eqz p3, :cond_4
 
-    .line 8
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->isRunning()Z
 
     move-result p3
@@ -946,7 +862,6 @@
     :cond_4
     if-eqz p1, :cond_6
 
-    .line 9
     invoke-super {p0, p1, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
     move-result p3
@@ -967,10 +882,8 @@
     :goto_3
     if-eqz p1, :cond_7
 
-    .line 10
     iget-object p1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->baseSpec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
-    .line 11
     invoke-virtual {p1}, Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;->isShowAnimationEnabled()Z
 
     move-result p1
@@ -991,7 +904,6 @@
 
     aput-object v0, p1, v1
 
-    .line 12
     invoke-direct {p0, p1}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->endAnimatorWithoutCallbacks([Landroid/animation/ValueAnimator;)V
 
     return p3
@@ -999,7 +911,6 @@
     :cond_8
     if-nez p2, :cond_a
 
-    .line 13
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 p2, 0x13
@@ -1014,13 +925,11 @@
 
     goto :goto_5
 
-    .line 14
     :cond_9
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->resume()V
 
     goto :goto_6
 
-    .line 15
     :cond_a
     :goto_5
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
@@ -1036,7 +945,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-virtual {p0, v0, v0, v1}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setVisibleInternal(ZZZ)Z
 
     return-void
@@ -1049,7 +957,6 @@
 
     const/4 v1, 0x1
 
-    .line 1
     invoke-virtual {p0, v0, v1, v0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setVisibleInternal(ZZZ)Z
 
     return-void
@@ -1062,7 +969,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
     if-eqz v0, :cond_1
@@ -1073,12 +979,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 3
     iget-object p1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
@@ -1089,7 +993,6 @@
 
     const/4 p1, 0x0
 
-    .line 4
     iput-object p1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animationCallbacks:Ljava/util/List;
 
     :cond_0

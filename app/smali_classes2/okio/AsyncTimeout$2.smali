@@ -1,6 +1,5 @@
 .class Lokio/AsyncTimeout$2;
 .super Ljava/lang/Object;
-.source "AsyncTimeout.java"
 
 # interfaces
 .implements Lokio/Source;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lokio/AsyncTimeout;Lokio/Source;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokio/AsyncTimeout$2;->this$0:Lokio/AsyncTimeout;
 
     iput-object p2, p0, Lokio/AsyncTimeout$2;->val$source:Lokio/Source;
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lokio/AsyncTimeout$2;->val$source:Lokio/Source;
 
@@ -58,7 +55,6 @@
 
     const/4 v0, 0x1
 
-    .line 2
     iget-object v1, p0, Lokio/AsyncTimeout$2;->this$0:Lokio/AsyncTimeout;
 
     invoke-virtual {v1, v0}, Lokio/AsyncTimeout;->exit(Z)V
@@ -73,7 +69,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     :try_start_1
     iget-object v1, p0, Lokio/AsyncTimeout$2;->this$0:Lokio/AsyncTimeout;
 
@@ -85,7 +80,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 4
     :goto_0
     iget-object v1, p0, Lokio/AsyncTimeout$2;->this$0:Lokio/AsyncTimeout;
 
@@ -104,12 +98,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/AsyncTimeout$2;->this$0:Lokio/AsyncTimeout;
 
     invoke-virtual {v0}, Lokio/AsyncTimeout;->enter()V
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lokio/AsyncTimeout$2;->val$source:Lokio/Source;
 
@@ -122,7 +114,6 @@
 
     const/4 p3, 0x1
 
-    .line 3
     iget-object v0, p0, Lokio/AsyncTimeout$2;->this$0:Lokio/AsyncTimeout;
 
     invoke-virtual {v0, p3}, Lokio/AsyncTimeout;->exit(Z)V
@@ -137,7 +128,6 @@
     :catch_0
     move-exception p1
 
-    .line 4
     :try_start_1
     iget-object p2, p0, Lokio/AsyncTimeout$2;->this$0:Lokio/AsyncTimeout;
 
@@ -149,7 +139,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5
     :goto_0
     iget-object p2, p0, Lokio/AsyncTimeout$2;->this$0:Lokio/AsyncTimeout;
 
@@ -163,7 +152,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/AsyncTimeout$2;->this$0:Lokio/AsyncTimeout;
 
     return-object v0
@@ -172,7 +160,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

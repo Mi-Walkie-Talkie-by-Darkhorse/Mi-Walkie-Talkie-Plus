@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/view/f0/b$c;
 .super Ljava/lang/Object;
-.source "InputConnectionCompat.java"
 
 
 # annotations

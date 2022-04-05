@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/share/QQShare$2;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Lcom/tencent/open/utils/c;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/tencent/connect/share/QQShare;Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/share/QQShare$2;->f:Lcom/tencent/connect/share/QQShare;
 
     iput-object p2, p0, Lcom/tencent/connect/share/QQShare$2;->a:Landroid/os/Bundle;
@@ -60,7 +58,6 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     iget-object p1, p0, Lcom/tencent/connect/share/QQShare$2;->a:Landroid/os/Bundle;
 
     const-string v0, "imageLocalUrl"
@@ -69,7 +66,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/tencent/connect/share/QQShare$2;->b:Ljava/lang/String;
 
@@ -87,12 +83,10 @@
 
     if-eqz p1, :cond_2
 
-    .line 3
     iget-object p1, p0, Lcom/tencent/connect/share/QQShare$2;->d:Lcom/tencent/tauth/IUiListener;
 
     if-eqz p1, :cond_1
 
-    .line 4
     new-instance p2, Lcom/tencent/tauth/UiError;
 
     const/4 v0, -0x6
@@ -109,10 +103,8 @@
 
     const-string p2, "shareToMobileQQ -- error: \u83b7\u53d6\u5206\u4eab\u56fe\u7247\u5931\u8d25!"
 
-    .line 5
     invoke-static {p1, p2}, Lcom/tencent/open/a/f;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     :cond_1
     invoke-static {}, Lcom/tencent/open/b/d;->a()Lcom/tencent/open/b/d;
 
@@ -158,7 +150,6 @@
 
     return-void
 
-    .line 7
     :cond_2
     :goto_0
     iget-object p1, p0, Lcom/tencent/connect/share/QQShare$2;->f:Lcom/tencent/connect/share/QQShare;

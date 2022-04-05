@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/i/j$a;
 .super Ljava/lang/Object;
-.source "HttpUrlFetcher.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/i/j$b;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object p1

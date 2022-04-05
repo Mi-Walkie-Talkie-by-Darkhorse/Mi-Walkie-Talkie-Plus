@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/view/RxView__ViewFocusChangeObservableKt;
 .super Ljava/lang/Object;
-.source "ViewFocusChangeObservable.kt"
 
 
 # annotations
@@ -58,7 +57,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/view/ViewFocusChangeObservable;
 
     invoke-direct {v0, p0}, Lcom/jakewharton/rxbinding3/view/ViewFocusChangeObservable;-><init>(Landroid/view/View;)V

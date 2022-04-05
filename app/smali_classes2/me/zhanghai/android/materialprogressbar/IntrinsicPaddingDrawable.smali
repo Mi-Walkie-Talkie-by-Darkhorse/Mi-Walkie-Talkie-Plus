@@ -1,6 +1,5 @@
 .class public interface abstract Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 .super Ljava/lang/Object;
-.source "IntrinsicPaddingDrawable.java"
 
 
 # virtual methods

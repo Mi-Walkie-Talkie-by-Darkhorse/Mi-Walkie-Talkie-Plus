@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/dw$b;
 .super Lcom/amap/api/col/l3/dy;
-.source "GLESUtility.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/dy;-><init>()V
 
     return-void
@@ -46,7 +44,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     sget v2, Lcom/amap/api/col/l3/dw$b;->a:I
 
     aput v2, v0, v1
@@ -61,7 +58,6 @@
 
     aput v1, v0, v2
 
-    .line 2
     sget-object v1, Ljavax/microedition/khronos/egl/EGL10;->EGL_NO_CONTEXT:Ljavax/microedition/khronos/egl/EGLContext;
 
     invoke-interface {p1, p2, p3, v1, v0}, Ljavax/microedition/khronos/egl/EGL10;->eglCreateContext(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljavax/microedition/khronos/egl/EGLContext;[I)Ljavax/microedition/khronos/egl/EGLContext;
@@ -75,7 +71,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -86,7 +81,6 @@
 .method public final destroyContext(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;)V
     .locals 0
 
-    .line 1
     invoke-interface {p1, p2, p3}, Ljavax/microedition/khronos/egl/EGL10;->eglDestroyContext(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLContext;)Z
 
     return-void

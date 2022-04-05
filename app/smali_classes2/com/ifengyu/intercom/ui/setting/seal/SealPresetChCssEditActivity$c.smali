@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$c;
 .super Ljava/lang/Object;
-.source "SealPresetChCssEditActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$c;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$c;->a:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$c;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->channelName:Landroid/widget/TextView;
@@ -55,7 +52,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$c;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->channelNumber:Landroid/widget/TextView;
@@ -72,7 +68,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$c;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->mTvRxCss:Landroid/widget/TextView;
@@ -87,7 +82,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$c;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->mTvRxCss:Landroid/widget/TextView;
@@ -124,7 +118,6 @@
 
     invoke-virtual {v0, v5, v1}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$c;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->mTvTxCss:Landroid/widget/TextView;
@@ -139,7 +132,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity$c;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealPresetChCssEditActivity;->mTvTxCss:Landroid/widget/TextView;

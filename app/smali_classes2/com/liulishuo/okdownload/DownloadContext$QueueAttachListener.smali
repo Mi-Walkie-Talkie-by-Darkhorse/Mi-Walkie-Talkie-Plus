@@ -1,6 +1,5 @@
 .class Lcom/liulishuo/okdownload/DownloadContext$QueueAttachListener;
 .super Lcom/liulishuo/okdownload/core/listener/DownloadListener2;
-.source "DownloadContext.java"
 
 
 # annotations
@@ -40,20 +39,16 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Lcom/liulishuo/okdownload/core/listener/DownloadListener2;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0, p3}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueAttachListener;->remainCount:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 3
     iput-object p2, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueAttachListener;->contextListener:Lcom/liulishuo/okdownload/DownloadContextListener;
 
-    .line 4
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueAttachListener;->hostContext:Lcom/liulishuo/okdownload/DownloadContext;
 
     return-void
@@ -76,14 +71,12 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueAttachListener;->remainCount:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueAttachListener;->contextListener:Lcom/liulishuo/okdownload/DownloadContextListener;
 
     iget-object v2, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueAttachListener;->hostContext:Lcom/liulishuo/okdownload/DownloadContext;
@@ -100,14 +93,12 @@
 
     if-gtz v0, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueAttachListener;->contextListener:Lcom/liulishuo/okdownload/DownloadContextListener;
 
     iget-object p2, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueAttachListener;->hostContext:Lcom/liulishuo/okdownload/DownloadContext;
 
     invoke-interface {p1, p2}, Lcom/liulishuo/okdownload/DownloadContextListener;->queueEnd(Lcom/liulishuo/okdownload/DownloadContext;)V
 
-    .line 4
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V

@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/util/concurrent/RateLimiter;
 .super Ljava/lang/Object;
-.source "RateLimiter.java"
 
 
 # annotations
@@ -27,10 +26,8 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -45,7 +42,6 @@
 .method private canAcquire(JJ)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/common/util/concurrent/RateLimiter;->queryEarliestAvailable(J)J
 
     move-result-wide v0
@@ -86,7 +82,6 @@
     :goto_0
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -103,7 +98,6 @@
 .method public static create(D)Lcom/google/common/util/concurrent/RateLimiter;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;->createFromSystemTimer()Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
     move-result-object v0
@@ -138,7 +132,6 @@
     :goto_0
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 4
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v3
@@ -149,7 +142,6 @@
 
     invoke-static {v2, v1, v0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 5
     invoke-static {}, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;->createFromSystemTimer()Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
     move-result-object v3
@@ -172,14 +164,12 @@
     .annotation build Lcom/google/common/annotations/VisibleForTesting;
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;
 
     const-wide/high16 v1, 0x3ff0000000000000L    # 1.0
 
     invoke-direct {v0, p0, v1, v2}, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;-><init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;D)V
 
-    .line 3
     invoke-virtual {v0, p1, p2}, Lcom/google/common/util/concurrent/RateLimiter;->setRate(D)V
 
     return-object v0
@@ -190,12 +180,10 @@
     .annotation build Lcom/google/common/annotations/VisibleForTesting;
     .end annotation
 
-    .line 6
     new-instance v0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;
 
     invoke-direct {v0, p0, p3, p4, p5}, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothWarmingUp;-><init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;JLjava/util/concurrent/TimeUnit;)V
 
-    .line 7
     invoke-virtual {v0, p1, p2}, Lcom/google/common/util/concurrent/RateLimiter;->setRate(D)V
 
     return-object v0
@@ -204,28 +192,23 @@
 .method private mutex()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/RateLimiter;->mutexDoNotUseDirectly:Ljava/lang/Object;
 
     if-nez v0, :cond_1
 
-    .line 2
     monitor-enter p0
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/RateLimiter;->mutexDoNotUseDirectly:Ljava/lang/Object;
 
     if-nez v0, :cond_0
 
-    .line 4
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/RateLimiter;->mutexDoNotUseDirectly:Ljava/lang/Object;
 
-    .line 5
     :cond_0
     monitor-exit p0
 
@@ -252,7 +235,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/common/util/concurrent/RateLimiter;->acquire(I)D
 
     move-result-wide v0
@@ -263,12 +245,10 @@
 .method public acquire(I)D
     .locals 4
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/RateLimiter;->reserve(I)J
 
     move-result-wide v0
 
-    .line 3
     iget-object p1, p0, Lcom/google/common/util/concurrent/RateLimiter;->stopwatch:Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
     invoke-virtual {p1, v0, v1}, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;->sleepMicrosUninterruptibly(J)V
@@ -279,7 +259,6 @@
 
     mul-double v0, v0, v2
 
-    .line 4
     sget-object p1, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v2, 0x1
@@ -304,14 +283,12 @@
 .method public final getRate()D
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/RateLimiter;->mutex()Ljava/lang/Object;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/RateLimiter;->doGetRate()D
 
@@ -324,7 +301,6 @@
     :catchall_0
     move-exception v1
 
-    .line 3
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -338,17 +314,14 @@
 .method final reserve(I)J
     .locals 3
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/util/concurrent/RateLimiter;->checkPermits(I)I
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/util/concurrent/RateLimiter;->mutex()Ljava/lang/Object;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/google/common/util/concurrent/RateLimiter;->stopwatch:Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
@@ -367,7 +340,6 @@
     :catchall_0
     move-exception p1
 
-    .line 4
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -378,7 +350,6 @@
 .method final reserveAndGetWaitLength(IJ)J
     .locals 2
 
-    .line 1
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/util/concurrent/RateLimiter;->reserveEarliestAvailable(IJ)J
 
     move-result-wide v0
@@ -387,7 +358,6 @@
 
     const-wide/16 p1, 0x0
 
-    .line 2
     invoke-static {v0, v1, p1, p2}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide p1
@@ -407,7 +377,6 @@
 
     if-lez v2, :cond_0
 
-    .line 1
     invoke-static {p1, p2}, Ljava/lang/Double;->isNaN(D)Z
 
     move-result v0
@@ -426,14 +395,12 @@
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/util/concurrent/RateLimiter;->mutex()Ljava/lang/Object;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/google/common/util/concurrent/RateLimiter;->stopwatch:Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
@@ -443,7 +410,6 @@
 
     invoke-virtual {p0, p1, p2, v1, v2}, Lcom/google/common/util/concurrent/RateLimiter;->doSetRate(DJ)V
 
-    .line 4
     monitor-exit v0
 
     return-void
@@ -465,7 +431,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/RateLimiter;->getRate()D
 
     move-result-wide v1
@@ -490,7 +455,6 @@
 .method public tryAcquire()Z
     .locals 4
 
-    .line 3
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MICROSECONDS:Ljava/util/concurrent/TimeUnit;
 
     const/4 v1, 0x1
@@ -507,7 +471,6 @@
 .method public tryAcquire(I)Z
     .locals 3
 
-    .line 2
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MICROSECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x0
@@ -522,7 +485,6 @@
 .method public tryAcquire(IJLjava/util/concurrent/TimeUnit;)Z
     .locals 2
 
-    .line 4
     invoke-virtual {p4, p2, p3}, Ljava/util/concurrent/TimeUnit;->toMicros(J)J
 
     move-result-wide p2
@@ -533,17 +495,14 @@
 
     move-result-wide p2
 
-    .line 5
     invoke-static {p1}, Lcom/google/common/util/concurrent/RateLimiter;->checkPermits(I)I
 
-    .line 6
     invoke-direct {p0}, Lcom/google/common/util/concurrent/RateLimiter;->mutex()Ljava/lang/Object;
 
     move-result-object p4
 
     monitor-enter p4
 
-    .line 7
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/RateLimiter;->stopwatch:Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
@@ -551,7 +510,6 @@
 
     move-result-wide v0
 
-    .line 8
     invoke-direct {p0, v0, v1, p2, p3}, Lcom/google/common/util/concurrent/RateLimiter;->canAcquire(JJ)Z
 
     move-result p2
@@ -560,23 +518,19 @@
 
     const/4 p1, 0x0
 
-    .line 9
     monitor-exit p4
 
     return p1
 
-    .line 10
     :cond_0
     invoke-virtual {p0, p1, v0, v1}, Lcom/google/common/util/concurrent/RateLimiter;->reserveAndGetWaitLength(IJ)J
 
     move-result-wide p1
 
-    .line 11
     monitor-exit p4
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 12
     iget-object p3, p0, Lcom/google/common/util/concurrent/RateLimiter;->stopwatch:Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;
 
     invoke-virtual {p3, p1, p2}, Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;->sleepMicrosUninterruptibly(J)V
@@ -588,7 +542,6 @@
     :catchall_0
     move-exception p1
 
-    .line 13
     :try_start_1
     monitor-exit p4
     :try_end_1
@@ -602,7 +555,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0, p1, p2, p3}, Lcom/google/common/util/concurrent/RateLimiter;->tryAcquire(IJLjava/util/concurrent/TimeUnit;)Z
 
     move-result p1

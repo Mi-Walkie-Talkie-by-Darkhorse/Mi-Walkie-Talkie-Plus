@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/n$a;
 .super Ljava/lang/Object;
-.source "ModelLoader.java"
 
 
 # annotations
@@ -66,7 +65,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
@@ -102,24 +100,20 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, Lcom/bumptech/glide/load/c;
 
     iput-object p1, p0, Lcom/bumptech/glide/load/j/n$a;->a:Lcom/bumptech/glide/load/c;
 
-    .line 4
     invoke-static {p2}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p2, Ljava/util/List;
 
     iput-object p2, p0, Lcom/bumptech/glide/load/j/n$a;->b:Ljava/util/List;
 
-    .line 5
     invoke-static {p3}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p3, Lcom/bumptech/glide/load/i/d;

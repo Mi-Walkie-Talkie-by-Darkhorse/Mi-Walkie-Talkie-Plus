@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/eq$c;
 .super Ljava/lang/Object;
-.source "ImageWorker.java"
 
 
 # annotations

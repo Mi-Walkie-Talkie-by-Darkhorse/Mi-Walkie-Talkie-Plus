@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/tileprovider/modules/IFilesystemCache;
 .super Ljava/lang/Object;
-.source "IFilesystemCache.java"
 
 
 # virtual methods

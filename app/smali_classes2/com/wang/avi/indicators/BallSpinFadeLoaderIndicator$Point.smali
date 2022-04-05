@@ -1,6 +1,5 @@
 .class final Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator$Point;
 .super Ljava/lang/Object;
-.source "BallSpinFadeLoaderIndicator.java"
 
 
 # annotations
@@ -26,15 +25,12 @@
 .method public constructor <init>(Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator;FF)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator$Point;->this$0:Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p2, p0, Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator$Point;->x:F
 
-    .line 3
     iput p3, p0, Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator$Point;->y:F
 
     return-void

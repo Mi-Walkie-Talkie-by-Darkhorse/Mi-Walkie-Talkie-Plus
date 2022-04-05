@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/TextViewBeforeTextChangeEventObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "TextViewBeforeTextChangeEventObservable.kt"
 
 # interfaces
 .implements Landroid/text/TextWatcher;
@@ -105,7 +104,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/TextViewBeforeTextChangeEventObservable$Listener;->view:Landroid/widget/TextView;
@@ -142,14 +140,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewBeforeTextChangeEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     new-instance v7, Lcom/jakewharton/rxbinding3/widget/TextViewBeforeTextChangeEvent;
@@ -177,7 +173,6 @@
 .method protected onDispose()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewBeforeTextChangeEventObservable$Listener;->view:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->removeTextChangedListener(Landroid/text/TextWatcher;)V

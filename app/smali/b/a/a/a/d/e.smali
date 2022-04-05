@@ -1,13 +1,11 @@
 .class public Lb/a/a/a/d/e;
 .super Lb/a/a/a/d/a;
-.source "HorizontalBarHighlighter.java"
 
 
 # direct methods
 .method public constructor <init>(Lb/a/a/a/e/a/a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lb/a/a/a/d/a;-><init>(Lb/a/a/a/e/a/a;)V
 
     return-void
@@ -20,7 +18,6 @@
 
     sub-float/2addr p2, p4
 
-    .line 23
     invoke-static {p2}, Ljava/lang/Math;->abs(F)F
 
     move-result p1
@@ -31,7 +28,6 @@
 .method public a(FF)Lb/a/a/a/d/d;
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/d/b;->a:Lb/a/a/a/e/a/b;
 
     check-cast v0, Lb/a/a/a/e/a/a;
@@ -40,12 +36,10 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0, p2, p1}, Lb/a/a/a/d/b;->b(FF)Lb/a/a/a/g/d;
 
     move-result-object v1
 
-    .line 3
     iget-wide v2, v1, Lb/a/a/a/g/d;->d:D
 
     double-to-float v2, v2
@@ -60,7 +54,6 @@
 
     return-object p1
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Lb/a/a/a/d/d;->c()I
 
@@ -72,14 +65,12 @@
 
     check-cast p2, Lb/a/a/a/e/b/a;
 
-    .line 5
     invoke-interface {p2}, Lb/a/a/a/e/b/a;->j0()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 6
     iget-wide v2, v1, Lb/a/a/a/g/d;->d:D
 
     double-to-float v0, v2
@@ -94,7 +85,6 @@
 
     return-object p1
 
-    .line 7
     :cond_1
     invoke-static {v1}, Lb/a/a/a/g/d;->a(Lb/a/a/a/g/d;)V
 
@@ -116,17 +106,14 @@
         }
     .end annotation
 
-    .line 8
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 9
     invoke-interface {p1, p3}, Lb/a/a/a/e/b/e;->a(F)Ljava/util/List;
 
     move-result-object v1
 
-    .line 10
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v2
@@ -135,14 +122,12 @@
 
     const/high16 v2, 0x7fc00000    # Float.NaN
 
-    .line 11
     invoke-interface {p1, p3, v2, p4}, Lb/a/a/a/e/b/e;->a(FFLcom/github/mikephil/charting/data/DataSet$Rounding;)Lcom/github/mikephil/charting/data/Entry;
 
     move-result-object p3
 
     if-eqz p3, :cond_0
 
-    .line 12
     invoke-virtual {p3}, Lcom/github/mikephil/charting/data/Entry;->c()F
 
     move-result p3
@@ -151,7 +136,6 @@
 
     move-result-object v1
 
-    .line 13
     :cond_0
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -161,7 +145,6 @@
 
     return-object v0
 
-    .line 14
     :cond_1
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -180,22 +163,18 @@
 
     check-cast p4, Lcom/github/mikephil/charting/data/Entry;
 
-    .line 15
     iget-object v1, p0, Lb/a/a/a/d/b;->a:Lb/a/a/a/e/a/b;
 
     check-cast v1, Lb/a/a/a/e/a/a;
 
-    .line 16
     invoke-interface {p1}, Lb/a/a/a/e/b/e;->o0()Lcom/github/mikephil/charting/components/YAxis$AxisDependency;
 
     move-result-object v2
 
-    .line 17
     invoke-interface {v1, v2}, Lb/a/a/a/e/a/b;->a(Lcom/github/mikephil/charting/components/YAxis$AxisDependency;)Lb/a/a/a/g/g;
 
     move-result-object v1
 
-    .line 18
     invoke-virtual {p4}, Lcom/github/mikephil/charting/data/e;->b()F
 
     move-result v2
@@ -208,10 +187,8 @@
 
     move-result-object v1
 
-    .line 19
     new-instance v9, Lb/a/a/a/d/d;
 
-    .line 20
     invoke-virtual {p4}, Lcom/github/mikephil/charting/data/Entry;->c()F
 
     move-result v3
@@ -228,7 +205,6 @@
 
     double-to-float v6, v1
 
-    .line 21
     invoke-interface {p1}, Lb/a/a/a/e/b/e;->o0()Lcom/github/mikephil/charting/components/YAxis$AxisDependency;
 
     move-result-object v8
@@ -239,7 +215,6 @@
 
     invoke-direct/range {v2 .. v8}, Lb/a/a/a/d/d;-><init>(FFFFILcom/github/mikephil/charting/components/YAxis$AxisDependency;)V
 
-    .line 22
     invoke-virtual {v0, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0

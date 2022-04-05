@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/s$j;
 .super Landroidx/constraintlayout/motion/widget/s;
-.source "TimeCycleSplineSet.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/constraintlayout/motion/widget/s;-><init>()V
 
     return-void
@@ -39,14 +37,12 @@
 
     move-object v5, p5
 
-    .line 1
     invoke-virtual/range {v0 .. v5}, Landroidx/constraintlayout/motion/widget/s;->a(FJLandroid/view/View;Landroidx/constraintlayout/motion/widget/e;)F
 
     move-result p2
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setScaleY(F)V
 
-    .line 2
     iget-boolean p1, p0, Landroidx/constraintlayout/motion/widget/s;->h:Z
 
     return p1

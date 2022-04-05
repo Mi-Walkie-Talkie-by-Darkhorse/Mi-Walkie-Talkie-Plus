@@ -1,6 +1,5 @@
 .class public abstract Landroidx/media/VolumeProviderCompat;
 .super Ljava/lang/Object;
-.source "VolumeProviderCompat.java"
 
 
 # annotations

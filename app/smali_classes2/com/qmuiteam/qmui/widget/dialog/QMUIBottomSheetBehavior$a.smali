@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior$a;
 .super Ljava/lang/Object;
-.source "QMUIBottomSheetBehavior.java"
 
 
 # annotations

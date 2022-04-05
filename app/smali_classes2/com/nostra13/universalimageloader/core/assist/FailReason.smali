@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/core/assist/FailReason;
 .super Ljava/lang/Object;
-.source "FailReason.java"
 
 
 # annotations
@@ -21,13 +20,10 @@
 .method public constructor <init>(Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/assist/FailReason;->type:Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;
 
-    .line 3
     iput-object p2, p0, Lcom/nostra13/universalimageloader/core/assist/FailReason;->cause:Ljava/lang/Throwable;
 
     return-void
@@ -38,7 +34,6 @@
 .method public getCause()Ljava/lang/Throwable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/FailReason;->cause:Ljava/lang/Throwable;
 
     return-object v0
@@ -47,7 +42,6 @@
 .method public getType()Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/FailReason;->type:Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;
 
     return-object v0

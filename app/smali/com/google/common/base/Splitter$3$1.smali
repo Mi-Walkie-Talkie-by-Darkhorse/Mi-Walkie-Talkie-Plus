@@ -1,6 +1,5 @@
 .class Lcom/google/common/base/Splitter$3$1;
 .super Lcom/google/common/base/Splitter$SplittingIterator;
-.source "Splitter.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/google/common/base/Splitter$3;Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;Ljava/util/regex/Matcher;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/base/Splitter$3$1;->this$0:Lcom/google/common/base/Splitter$3;
 
     iput-object p4, p0, Lcom/google/common/base/Splitter$3$1;->val$matcher:Ljava/util/regex/Matcher;
@@ -39,7 +37,6 @@
 .method public separatorEnd(I)I
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/google/common/base/Splitter$3$1;->val$matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {p1}, Ljava/util/regex/Matcher;->end()I
@@ -52,7 +49,6 @@
 .method public separatorStart(I)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/Splitter$3$1;->val$matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Matcher;->find(I)Z

@@ -1,6 +1,5 @@
 .class public abstract Landroidx/transition/p0;
 .super Landroidx/transition/v;
-.source "VisibilityPropagation.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 
     const-string v1, "android:visibilityPropagation:center"
 
-    .line 1
     filled-new-array {v0, v1}, [Ljava/lang/String;
 
     move-result-object v0
@@ -28,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/transition/v;-><init>()V
 
     return-void
@@ -43,7 +40,6 @@
 
     return v0
 
-    .line 12
     :cond_0
     iget-object p0, p0, Landroidx/transition/x;->a:Ljava/util/Map;
 
@@ -59,7 +55,6 @@
 
     return v0
 
-    .line 13
     :cond_1
     aget p0, p0, p1
 
@@ -71,10 +66,8 @@
 .method public a(Landroidx/transition/x;)V
     .locals 6
 
-    .line 1
     iget-object v0, p1, Landroidx/transition/x;->b:Landroid/view/View;
 
-    .line 2
     iget-object v1, p1, Landroidx/transition/x;->a:Ljava/util/Map;
 
     const-string v2, "android:visibility:visibility"
@@ -87,7 +80,6 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
 
     move-result v1
@@ -96,7 +88,6 @@
 
     move-result-object v1
 
-    .line 4
     :cond_0
     iget-object v2, p1, Landroidx/transition/x;->a:Ljava/util/Map;
 
@@ -108,12 +99,10 @@
 
     new-array v2, v1, [I
 
-    .line 5
     invoke-virtual {v0, v2}, Landroid/view/View;->getLocationOnScreen([I)V
 
     const/4 v3, 0x0
 
-    .line 6
     aget v4, v2, v3
 
     invoke-virtual {v0}, Landroid/view/View;->getTranslationX()F
@@ -128,7 +117,6 @@
 
     aput v4, v2, v3
 
-    .line 7
     aget v4, v2, v3
 
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
@@ -143,7 +131,6 @@
 
     const/4 v3, 0x1
 
-    .line 8
     aget v4, v2, v3
 
     invoke-virtual {v0}, Landroid/view/View;->getTranslationY()F
@@ -158,7 +145,6 @@
 
     aput v4, v2, v3
 
-    .line 9
     aget v4, v2, v3
 
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
@@ -171,7 +157,6 @@
 
     aput v4, v2, v3
 
-    .line 10
     iget-object p1, p1, Landroidx/transition/x;->a:Ljava/util/Map;
 
     const-string v0, "android:visibilityPropagation:center"
@@ -184,7 +169,6 @@
 .method public a()[Ljava/lang/String;
     .locals 1
 
-    .line 11
     sget-object v0, Landroidx/transition/p0;->a:[Ljava/lang/String;
 
     return-object v0
@@ -199,7 +183,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     iget-object p1, p1, Landroidx/transition/x;->a:Ljava/util/Map;
 
@@ -215,7 +198,6 @@
 
     return v0
 
-    .line 2
     :cond_1
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -229,7 +211,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p1, v0}, Landroidx/transition/p0;->a(Landroidx/transition/x;I)I
 
     move-result p1
@@ -242,7 +223,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p1, v0}, Landroidx/transition/p0;->a(Landroidx/transition/x;I)I
 
     move-result p1

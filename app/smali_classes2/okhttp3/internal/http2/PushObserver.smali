@@ -1,6 +1,5 @@
 .class public interface abstract Lokhttp3/internal/http2/PushObserver;
 .super Ljava/lang/Object;
-.source "PushObserver.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lokhttp3/internal/http2/PushObserver$1;
 
     invoke-direct {v0}, Lokhttp3/internal/http2/PushObserver$1;-><init>()V

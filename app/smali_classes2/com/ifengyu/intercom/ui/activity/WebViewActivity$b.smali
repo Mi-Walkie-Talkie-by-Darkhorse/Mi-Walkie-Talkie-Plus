@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/WebViewActivity$b;
 .super Ljava/lang/Object;
-.source "WebViewActivity.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     iput p2, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$b;->a:I
@@ -42,17 +40,14 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 3
 
-    .line 1
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
 
     move-result p1
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$b;->a:I
 
     rsub-int/lit8 v0, v0, 0x64
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->e(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/widget/ProgressBar;

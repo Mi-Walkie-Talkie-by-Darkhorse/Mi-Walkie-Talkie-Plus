@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/afollestad/materialdialogs/MaterialDialog$k;
 .super Ljava/lang/Object;
-.source "MaterialDialog.java"
 
 
 # annotations

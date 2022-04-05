@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/transition/platform/FadeThroughProvider;
 .super Ljava/lang/Object;
-.source "FadeThroughProvider.java"
 
 # interfaces
 .implements Lcom/google/android/material/transition/platform/VisibilityAnimatorProvider;
@@ -20,7 +19,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,14 +43,12 @@
 
     new-array v0, v0, [F
 
-    .line 1
     fill-array-data v0, :array_0
 
     invoke-static {v0}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
     move-result-object v0
 
-    .line 2
     new-instance v7, Lcom/google/android/material/transition/platform/FadeThroughProvider$1;
 
     move-object v1, v7
@@ -71,7 +67,6 @@
 
     invoke-virtual {v0, v7}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 3
     new-instance p1, Lcom/google/android/material/transition/platform/FadeThroughProvider$2;
 
     invoke-direct {p1, p0, p5}, Lcom/google/android/material/transition/platform/FadeThroughProvider$2;-><init>(Landroid/view/View;F)V
@@ -104,7 +99,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-virtual {p2}, Landroid/view/View;->getAlpha()F
 
     move-result p1
@@ -139,7 +133,6 @@
 
     move v2, v5
 
-    .line 2
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/transition/platform/FadeThroughProvider;->createFadeThroughAnimator(Landroid/view/View;FFFFF)Landroid/animation/Animator;
 
     move-result-object p1
@@ -160,7 +153,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-virtual {p2}, Landroid/view/View;->getAlpha()F
 
     move-result p1
@@ -195,7 +187,6 @@
 
     move v1, v5
 
-    .line 2
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/transition/platform/FadeThroughProvider;->createFadeThroughAnimator(Landroid/view/View;FFFFF)Landroid/animation/Animator;
 
     move-result-object p1

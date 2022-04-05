@@ -1,6 +1,5 @@
 .class final Lcom/efs/sdk/base/a/c/a/a$a;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/efs/sdk/base/a/c/a/a;
 
     invoke-direct {v0}, Lcom/efs/sdk/base/a/c/a/a;-><init>()V
@@ -35,7 +33,6 @@
 .method static synthetic a()Lcom/efs/sdk/base/a/c/a/a;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/efs/sdk/base/a/c/a/a$a;->a:Lcom/efs/sdk/base/a/c/a/a;
 
     return-object v0

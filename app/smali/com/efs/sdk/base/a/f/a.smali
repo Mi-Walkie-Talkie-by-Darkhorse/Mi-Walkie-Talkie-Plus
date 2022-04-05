@@ -1,6 +1,5 @@
 .class public final Lcom/efs/sdk/base/a/f/a;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # instance fields
@@ -23,38 +22,30 @@
 .method constructor <init>(Ljava/lang/String;B)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x2
 
-    .line 2
     iput-byte v0, p0, Lcom/efs/sdk/base/a/f/a;->b:B
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/efs/sdk/base/a/f/a;->c:I
 
     const-string v0, "none"
 
-    .line 4
     iput-object v0, p0, Lcom/efs/sdk/base/a/f/a;->d:Ljava/lang/String;
 
     const/4 v0, 0x1
 
-    .line 5
     iput v0, p0, Lcom/efs/sdk/base/a/f/a;->e:I
 
     const-wide/16 v1, 0x0
 
-    .line 6
     iput-wide v1, p0, Lcom/efs/sdk/base/a/f/a;->f:J
 
-    .line 7
     iput v0, p0, Lcom/efs/sdk/base/a/f/a;->g:I
 
-    .line 8
     iput-object p1, p0, Lcom/efs/sdk/base/a/f/a;->a:Ljava/lang/String;
 
     if-lez p2, :cond_0
@@ -63,12 +54,10 @@
 
     if-lt p1, p2, :cond_0
 
-    .line 9
     iput-byte p2, p0, Lcom/efs/sdk/base/a/f/a;->b:B
 
     return-void
 
-    .line 10
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

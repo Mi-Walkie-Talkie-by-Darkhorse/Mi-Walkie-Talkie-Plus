@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/ifengyu/intercom/lite/utils/TimeConstants$Unit;
 .super Ljava/lang/Object;
-.source "TimeConstants.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

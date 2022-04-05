@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/LinkedListMultimap$KeyList;
 .super Ljava/lang/Object;
-.source "LinkedListMultimap.java"
 
 
 # annotations
@@ -58,26 +57,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/LinkedListMultimap$KeyList;->head:Lcom/google/common/collect/LinkedListMultimap$Node;
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/collect/LinkedListMultimap$KeyList;->tail:Lcom/google/common/collect/LinkedListMultimap$Node;
 
     const/4 v0, 0x0
 
-    .line 4
     iput-object v0, p1, Lcom/google/common/collect/LinkedListMultimap$Node;->previousSibling:Lcom/google/common/collect/LinkedListMultimap$Node;
 
-    .line 5
     iput-object v0, p1, Lcom/google/common/collect/LinkedListMultimap$Node;->nextSibling:Lcom/google/common/collect/LinkedListMultimap$Node;
 
     const/4 p1, 0x1
 
-    .line 6
     iput p1, p0, Lcom/google/common/collect/LinkedListMultimap$KeyList;->count:I
 
     return-void

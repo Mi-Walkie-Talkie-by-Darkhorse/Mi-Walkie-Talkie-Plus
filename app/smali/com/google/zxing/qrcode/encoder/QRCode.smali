@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/qrcode/encoder/QRCode;
 .super Ljava/lang/Object;
-.source "QRCode.java"
 
 
 # static fields
@@ -23,12 +22,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->maskPattern:I
 
     return-void
@@ -58,7 +55,6 @@
 .method public getECLevel()Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->ecLevel:Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     return-object v0
@@ -67,7 +63,6 @@
 .method public getMaskPattern()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->maskPattern:I
 
     return v0
@@ -76,7 +71,6 @@
 .method public getMatrix()Lcom/google/zxing/qrcode/encoder/ByteMatrix;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->matrix:Lcom/google/zxing/qrcode/encoder/ByteMatrix;
 
     return-object v0
@@ -85,7 +79,6 @@
 .method public getMode()Lcom/google/zxing/qrcode/decoder/Mode;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->mode:Lcom/google/zxing/qrcode/decoder/Mode;
 
     return-object v0
@@ -94,7 +87,6 @@
 .method public getVersion()Lcom/google/zxing/qrcode/decoder/Version;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->version:Lcom/google/zxing/qrcode/decoder/Version;
 
     return-object v0
@@ -103,7 +95,6 @@
 .method public setECLevel(Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->ecLevel:Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     return-void
@@ -112,7 +103,6 @@
 .method public setMaskPattern(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->maskPattern:I
 
     return-void
@@ -121,7 +111,6 @@
 .method public setMatrix(Lcom/google/zxing/qrcode/encoder/ByteMatrix;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->matrix:Lcom/google/zxing/qrcode/encoder/ByteMatrix;
 
     return-void
@@ -130,7 +119,6 @@
 .method public setMode(Lcom/google/zxing/qrcode/decoder/Mode;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->mode:Lcom/google/zxing/qrcode/decoder/Mode;
 
     return-void
@@ -139,7 +127,6 @@
 .method public setVersion(Lcom/google/zxing/qrcode/decoder/Version;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->version:Lcom/google/zxing/qrcode/decoder/Version;
 
     return-void
@@ -148,7 +135,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v1, 0xc8
@@ -157,57 +143,46 @@
 
     const-string v1, "<<\n"
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v1, " mode: "
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4
     iget-object v1, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->mode:Lcom/google/zxing/qrcode/decoder/Mode;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     const-string v1, "\n ecLevel: "
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6
     iget-object v1, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->ecLevel:Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     const-string v1, "\n version: "
 
-    .line 7
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
     iget-object v1, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->version:Lcom/google/zxing/qrcode/decoder/Version;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     const-string v1, "\n maskPattern: "
 
-    .line 9
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 10
     iget v1, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->maskPattern:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 11
     iget-object v1, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->matrix:Lcom/google/zxing/qrcode/encoder/ByteMatrix;
 
     if-nez v1, :cond_0
 
     const-string v1, "\n matrix: null\n"
 
-    .line 12
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
@@ -215,10 +190,8 @@
     :cond_0
     const-string v1, "\n matrix:\n"
 
-    .line 13
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 14
     iget-object v1, p0, Lcom/google/zxing/qrcode/encoder/QRCode;->matrix:Lcom/google/zxing/qrcode/encoder/ByteMatrix;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -226,10 +199,8 @@
     :goto_0
     const-string v1, ">>\n"
 
-    .line 15
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 16
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/j/w$c;
 .super Ljava/lang/Object;
-.source "UriLoader.java"
 
 
 # annotations

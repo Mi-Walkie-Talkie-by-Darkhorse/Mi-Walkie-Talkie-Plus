@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/jvm/JvmPackageName;
 .super Ljava/lang/Object;
-.source "JvmPlatformAnnotations.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

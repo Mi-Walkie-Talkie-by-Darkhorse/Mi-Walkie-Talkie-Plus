@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/ifengyu/library/widget/recyclerview/adapter/BaseFetchLoadAdapter$AnimationType;
 .super Ljava/lang/Object;
-.source "BaseFetchLoadAdapter.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

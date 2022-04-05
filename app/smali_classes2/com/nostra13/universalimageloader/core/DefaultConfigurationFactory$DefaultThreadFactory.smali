@@ -1,6 +1,5 @@
 .class Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$DefaultThreadFactory;
 .super Ljava/lang/Object;
-.source "DefaultConfigurationFactory.java"
 
 # interfaces
 .implements Ljava/util/concurrent/ThreadFactory;
@@ -35,7 +34,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x1
@@ -50,10 +48,8 @@
 .method constructor <init>(ILjava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x1
@@ -62,10 +58,8 @@
 
     iput-object v0, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$DefaultThreadFactory;->threadNumber:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 3
     iput p1, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$DefaultThreadFactory;->threadPriority:I
 
-    .line 4
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
@@ -76,7 +70,6 @@
 
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$DefaultThreadFactory;->group:Ljava/lang/ThreadGroup;
 
-    .line 5
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -109,7 +102,6 @@
 .method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 7
 
-    .line 1
     new-instance v6, Ljava/lang/Thread;
 
     iget-object v1, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$DefaultThreadFactory;->group:Ljava/lang/ThreadGroup;
@@ -142,7 +134,6 @@
 
     invoke-direct/range {v0 .. v5}, Ljava/lang/Thread;-><init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;J)V
 
-    .line 2
     invoke-virtual {v6}, Ljava/lang/Thread;->isDaemon()Z
 
     move-result p1
@@ -153,7 +144,6 @@
 
     invoke-virtual {v6, p1}, Ljava/lang/Thread;->setDaemon(Z)V
 
-    .line 3
     :cond_0
     iget p1, p0, Lcom/nostra13/universalimageloader/core/DefaultConfigurationFactory$DefaultThreadFactory;->threadPriority:I
 

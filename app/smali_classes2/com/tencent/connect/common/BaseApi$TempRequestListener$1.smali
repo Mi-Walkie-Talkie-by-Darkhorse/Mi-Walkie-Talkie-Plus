@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/common/BaseApi$TempRequestListener$1;
 .super Landroid/os/Handler;
-.source "ProGuard"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/tencent/connect/common/BaseApi$TempRequestListener;Landroid/os/Looper;Lcom/tencent/connect/common/BaseApi;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/common/BaseApi$TempRequestListener$1;->b:Lcom/tencent/connect/common/BaseApi$TempRequestListener;
 
     iput-object p3, p0, Lcom/tencent/connect/common/BaseApi$TempRequestListener$1;->a:Lcom/tencent/connect/common/BaseApi;
@@ -39,12 +37,10 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
 
-    .line 1
     iget v0, p1, Landroid/os/Message;->what:I
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/tencent/connect/common/BaseApi$TempRequestListener$1;->b:Lcom/tencent/connect/common/BaseApi$TempRequestListener;
 
     invoke-static {v0}, Lcom/tencent/connect/common/BaseApi$TempRequestListener;->a(Lcom/tencent/connect/common/BaseApi$TempRequestListener;)Lcom/tencent/tauth/IUiListener;
@@ -57,7 +53,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/tencent/connect/common/BaseApi$TempRequestListener$1;->b:Lcom/tencent/connect/common/BaseApi$TempRequestListener;
 

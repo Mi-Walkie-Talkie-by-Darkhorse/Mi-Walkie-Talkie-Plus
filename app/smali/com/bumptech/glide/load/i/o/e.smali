@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/i/o/e;
 .super Ljava/lang/Object;
-.source "ThumbnailStreamOpener.java"
 
 
 # static fields
@@ -31,7 +30,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/i/o/a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/i/o/a;-><init>()V
@@ -57,22 +55,16 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p2, p0, Lcom/bumptech/glide/load/i/o/e;->a:Lcom/bumptech/glide/load/i/o/a;
 
-    .line 4
     iput-object p3, p0, Lcom/bumptech/glide/load/i/o/e;->b:Lcom/bumptech/glide/load/i/o/d;
 
-    .line 5
     iput-object p4, p0, Lcom/bumptech/glide/load/i/o/e;->c:Lcom/bumptech/glide/load/engine/x/b;
 
-    .line 6
     iput-object p5, p0, Lcom/bumptech/glide/load/i/o/e;->d:Landroid/content/ContentResolver;
 
-    .line 7
     iput-object p1, p0, Lcom/bumptech/glide/load/i/o/e;->e:Ljava/util/List;
 
     return-void
@@ -93,7 +85,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v2, Lcom/bumptech/glide/load/i/o/e;->f:Lcom/bumptech/glide/load/i/o/a;
 
     move-object v0, p0
@@ -114,7 +105,6 @@
 .method private a(Ljava/io/File;)Z
     .locals 4
 
-    .line 8
     iget-object v0, p0, Lcom/bumptech/glide/load/i/o/e;->a:Lcom/bumptech/glide/load/i/o/a;
 
     invoke-virtual {v0, p1}, Lcom/bumptech/glide/load/i/o/a;->a(Ljava/io/File;)Z
@@ -155,7 +145,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/i/o/e;->b:Lcom/bumptech/glide/load/i/o/d;
 
     invoke-interface {v0, p1}, Lcom/bumptech/glide/load/i/o/d;->a(Landroid/net/Uri;)Landroid/database/Cursor;
@@ -164,7 +153,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 2
     :try_start_0
     invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -174,7 +162,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -183,7 +170,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 4
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
     :cond_0
@@ -219,7 +205,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
     iget-object v2, p0, Lcom/bumptech/glide/load/i/o/e;->d:Landroid/content/ContentResolver;
 
@@ -227,7 +212,6 @@
 
     move-result-object v1
 
-    .line 2
     iget-object v2, p0, Lcom/bumptech/glide/load/i/o/e;->e:Ljava/util/List;
 
     iget-object v3, p0, Lcom/bumptech/glide/load/i/o/e;->c:Lcom/bumptech/glide/load/engine/x/b;
@@ -242,7 +226,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 3
     :try_start_1
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_1
@@ -268,7 +251,6 @@
     :goto_0
     const/4 v3, 0x3
 
-    .line 4
     :try_start_2
     invoke-static {v0, v3}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
@@ -276,7 +258,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 5
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -298,7 +279,6 @@
     :cond_1
     if-eqz v1, :cond_2
 
-    .line 6
     :try_start_3
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_3
@@ -318,7 +298,6 @@
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 7
     :catch_4
     :cond_3
     throw p1
@@ -332,12 +311,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/bumptech/glide/load/i/o/e;->c(Landroid/net/Uri;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -348,7 +325,6 @@
 
     return-object v2
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lcom/bumptech/glide/load/i/o/e;->a:Lcom/bumptech/glide/load/i/o/a;
 
@@ -356,7 +332,6 @@
 
     move-result-object v0
 
-    .line 4
     invoke-direct {p0, v0}, Lcom/bumptech/glide/load/i/o/e;->a(Ljava/io/File;)Z
 
     move-result v1
@@ -365,13 +340,11 @@
 
     return-object v2
 
-    .line 5
     :cond_1
     invoke-static {v0}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 6
     :try_start_0
     iget-object v1, p0, Lcom/bumptech/glide/load/i/o/e;->d:Landroid/content/ContentResolver;
 
@@ -386,7 +359,6 @@
     :catch_0
     move-exception v1
 
-    .line 7
     new-instance v2, Ljava/io/FileNotFoundException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -411,7 +383,6 @@
 
     invoke-direct {v2, p1}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
 
-    .line 8
     invoke-virtual {v2, v1}, Ljava/io/FileNotFoundException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/SplashActivity$e;
 .super Ljava/lang/Object;
-.source "SplashActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/SplashActivity;Lcom/ifengyu/intercom/bean/AdModel;Lpl/droidsonroids/gif/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->a:Lcom/ifengyu/intercom/bean/AdModel;
@@ -46,7 +44,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 8
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->a:Lcom/ifengyu/intercom/bean/AdModel;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/bean/AdModel;->detailUrl:Ljava/lang/String;
@@ -59,7 +56,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
 
@@ -81,7 +77,6 @@
 
     if-nez p1, :cond_1
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/SplashActivity;->d(Lcom/ifengyu/intercom/ui/SplashActivity;)Lio/reactivex/disposables/Disposable;
@@ -90,16 +85,13 @@
 
     invoke-interface {p1}, Lio/reactivex/disposables/Disposable;->dispose()V
 
-    .line 4
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->b:Lpl/droidsonroids/gif/c;
 
     if-eqz p1, :cond_2
 
-    .line 5
     invoke-virtual {p1}, Lpl/droidsonroids/gif/c;->pause()V
 
-    .line 6
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
 
@@ -119,7 +111,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 7
     new-instance p1, Landroid/content/Intent;
 
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
@@ -128,7 +119,6 @@
 
     invoke-direct {p1, v5, v6}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 8
     new-instance v5, Landroid/content/Intent;
 
     iget-object v6, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
@@ -137,22 +127,18 @@
 
     invoke-direct {v5, v6, v7}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 9
     invoke-virtual {v5, v4}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 10
     new-instance v4, Landroid/os/Bundle;
 
     invoke-direct {v4}, Landroid/os/Bundle;-><init>()V
 
-    .line 11
     iget-object v6, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->a:Lcom/ifengyu/intercom/bean/AdModel;
 
     iget-object v6, v6, Lcom/ifengyu/intercom/bean/AdModel;->detailUrl:Ljava/lang/String;
 
     invoke-virtual {v4, v3, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12
     invoke-virtual {v5, v4}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     new-array v2, v2, [Landroid/content/Intent;
@@ -161,19 +147,16 @@
 
     aput-object v5, v2, v0
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-virtual {p1, v2}, Landroid/app/Activity;->startActivities([Landroid/content/Intent;)V
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V
 
     goto :goto_0
 
-    .line 15
     :cond_3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
 
@@ -183,10 +166,8 @@
 
     const-string v5, "com.ifengyu.intercom.FROM_SPLASH"
 
-    .line 16
     invoke-virtual {p1, v5}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 17
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v5}, Lcom/ifengyu/intercom/ui/SplashActivity;->c(Lcom/ifengyu/intercom/ui/SplashActivity;)Landroid/os/Bundle;
@@ -195,7 +176,6 @@
 
     if-eqz v5, :cond_4
 
-    .line 18
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v5}, Lcom/ifengyu/intercom/ui/SplashActivity;->c(Lcom/ifengyu/intercom/ui/SplashActivity;)Landroid/os/Bundle;
@@ -204,7 +184,6 @@
 
     invoke-virtual {p1, v5}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
-    .line 19
     :cond_4
     new-instance v5, Landroid/content/Intent;
 
@@ -214,22 +193,18 @@
 
     invoke-direct {v5, v6, v7}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 20
     invoke-virtual {v5, v4}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 21
     new-instance v4, Landroid/os/Bundle;
 
     invoke-direct {v4}, Landroid/os/Bundle;-><init>()V
 
-    .line 22
     iget-object v6, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->a:Lcom/ifengyu/intercom/bean/AdModel;
 
     iget-object v6, v6, Lcom/ifengyu/intercom/bean/AdModel;->detailUrl:Ljava/lang/String;
 
     invoke-virtual {v4, v3, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 23
     invoke-virtual {v5, v4}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     new-array v2, v2, [Landroid/content/Intent;
@@ -238,12 +213,10 @@
 
     aput-object v5, v2, v0
 
-    .line 24
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-virtual {p1, v2}, Landroid/app/Activity;->startActivities([Landroid/content/Intent;)V
 
-    .line 25
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$e;->c:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V

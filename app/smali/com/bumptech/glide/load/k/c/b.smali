@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/k/c/b;
 .super Ljava/lang/Object;
-.source "BytesResource.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/s;
@@ -24,10 +23,8 @@
 .method public constructor <init>([B)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, [B
@@ -48,7 +45,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/k/c/b;->a:[B
 
     array-length v0, v0
@@ -69,7 +65,6 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, [B
 
     return-object v0
@@ -80,7 +75,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/bumptech/glide/load/k/c/b;->get()[B
 
     move-result-object v0
@@ -93,7 +87,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/k/c/b;->a:[B
 
     return-object v0

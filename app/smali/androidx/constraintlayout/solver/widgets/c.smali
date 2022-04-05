@@ -1,6 +1,5 @@
 .class public Landroidx/constraintlayout/solver/widgets/c;
 .super Ljava/lang/Object;
-.source "ChainHead.java"
 
 
 # instance fields
@@ -57,26 +56,20 @@
 .method public constructor <init>(Landroidx/constraintlayout/solver/widgets/ConstraintWidget;IZ)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Landroidx/constraintlayout/solver/widgets/c;->k:F
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Landroidx/constraintlayout/solver/widgets/c;->p:Z
 
-    .line 4
     iput-object p1, p0, Landroidx/constraintlayout/solver/widgets/c;->a:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
-    .line 5
     iput p2, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
 
-    .line 6
     iput-boolean p3, p0, Landroidx/constraintlayout/solver/widgets/c;->p:Z
 
     return-void
@@ -85,7 +78,6 @@
 .method private static a(Landroidx/constraintlayout/solver/widgets/ConstraintWidget;I)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->y()I
 
     move-result v0
@@ -129,14 +121,12 @@
 .method private b()V
     .locals 13
 
-    .line 1
     iget v0, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
 
     const/4 v1, 0x2
 
     mul-int/lit8 v0, v0, 0x2
 
-    .line 2
     iget-object v2, p0, Landroidx/constraintlayout/solver/widgets/c;->a:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     const/4 v3, 0x0
@@ -150,14 +140,12 @@
 
     if-nez v5, :cond_13
 
-    .line 3
     iget v7, p0, Landroidx/constraintlayout/solver/widgets/c;->i:I
 
     add-int/2addr v7, v6
 
     iput v7, p0, Landroidx/constraintlayout/solver/widgets/c;->i:I
 
-    .line 4
     iget-object v7, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->z0:[Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     iget v8, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
@@ -166,12 +154,10 @@
 
     aput-object v9, v7, v8
 
-    .line 5
     iget-object v7, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->y0:[Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     aput-object v9, v7, v8
 
-    .line 6
     invoke-virtual {v2}, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->y()I
 
     move-result v7
@@ -180,14 +166,12 @@
 
     if-eq v7, v8, :cond_e
 
-    .line 7
     iget v7, p0, Landroidx/constraintlayout/solver/widgets/c;->l:I
 
     add-int/2addr v7, v6
 
     iput v7, p0, Landroidx/constraintlayout/solver/widgets/c;->l:I
 
-    .line 8
     iget v7, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
 
     invoke-virtual {v2, v7}, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->b(I)Landroidx/constraintlayout/solver/widgets/ConstraintWidget$DimensionBehaviour;
@@ -198,7 +182,6 @@
 
     if-eq v7, v8, :cond_0
 
-    .line 9
     iget v7, p0, Landroidx/constraintlayout/solver/widgets/c;->m:I
 
     iget v8, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
@@ -211,7 +194,6 @@
 
     iput v7, p0, Landroidx/constraintlayout/solver/widgets/c;->m:I
 
-    .line 10
     :cond_0
     iget v7, p0, Landroidx/constraintlayout/solver/widgets/c;->m:I
 
@@ -227,7 +209,6 @@
 
     iput v7, p0, Landroidx/constraintlayout/solver/widgets/c;->m:I
 
-    .line 11
     iget-object v8, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->I:[Landroidx/constraintlayout/solver/widgets/ConstraintAnchor;
 
     add-int/lit8 v10, v0, 0x1
@@ -242,7 +223,6 @@
 
     iput v7, p0, Landroidx/constraintlayout/solver/widgets/c;->m:I
 
-    .line 12
     iget v7, p0, Landroidx/constraintlayout/solver/widgets/c;->n:I
 
     iget-object v8, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->I:[Landroidx/constraintlayout/solver/widgets/ConstraintAnchor;
@@ -257,7 +237,6 @@
 
     iput v7, p0, Landroidx/constraintlayout/solver/widgets/c;->n:I
 
-    .line 13
     iget-object v8, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->I:[Landroidx/constraintlayout/solver/widgets/ConstraintAnchor;
 
     aget-object v8, v8, v10
@@ -270,19 +249,15 @@
 
     iput v7, p0, Landroidx/constraintlayout/solver/widgets/c;->n:I
 
-    .line 14
     iget-object v7, p0, Landroidx/constraintlayout/solver/widgets/c;->b:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     if-nez v7, :cond_1
 
-    .line 15
     iput-object v2, p0, Landroidx/constraintlayout/solver/widgets/c;->b:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
-    .line 16
     :cond_1
     iput-object v2, p0, Landroidx/constraintlayout/solver/widgets/c;->d:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
-    .line 17
     iget-object v7, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->L:[Landroidx/constraintlayout/solver/widgets/ConstraintWidget$DimensionBehaviour;
 
     iget v8, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
@@ -293,7 +268,6 @@
 
     if-ne v7, v10, :cond_e
 
-    .line 18
     iget-object v7, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->l:[I
 
     aget v10, v7, v8
@@ -312,7 +286,6 @@
 
     if-ne v7, v1, :cond_9
 
-    .line 19
     :cond_2
     iget v7, p0, Landroidx/constraintlayout/solver/widgets/c;->j:I
 
@@ -320,7 +293,6 @@
 
     iput v7, p0, Landroidx/constraintlayout/solver/widgets/c;->j:I
 
-    .line 20
     iget-object v7, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->x0:[F
 
     iget v8, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
@@ -331,7 +303,6 @@
 
     if-lez v12, :cond_3
 
-    .line 21
     iget v12, p0, Landroidx/constraintlayout/solver/widgets/c;->k:F
 
     aget v7, v7, v8
@@ -340,7 +311,6 @@
 
     iput v12, p0, Landroidx/constraintlayout/solver/widgets/c;->k:F
 
-    .line 22
     :cond_3
     iget v7, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
 
@@ -354,74 +324,61 @@
 
     if-gez v7, :cond_4
 
-    .line 23
     iput-boolean v6, p0, Landroidx/constraintlayout/solver/widgets/c;->q:Z
 
     goto :goto_1
 
-    .line 24
     :cond_4
     iput-boolean v6, p0, Landroidx/constraintlayout/solver/widgets/c;->r:Z
 
-    .line 25
     :goto_1
     iget-object v7, p0, Landroidx/constraintlayout/solver/widgets/c;->h:Ljava/util/ArrayList;
 
     if-nez v7, :cond_5
 
-    .line 26
     new-instance v7, Ljava/util/ArrayList;
 
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v7, p0, Landroidx/constraintlayout/solver/widgets/c;->h:Ljava/util/ArrayList;
 
-    .line 27
     :cond_5
     iget-object v7, p0, Landroidx/constraintlayout/solver/widgets/c;->h:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 28
     :cond_6
     iget-object v7, p0, Landroidx/constraintlayout/solver/widgets/c;->f:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     if-nez v7, :cond_7
 
-    .line 29
     iput-object v2, p0, Landroidx/constraintlayout/solver/widgets/c;->f:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
-    .line 30
     :cond_7
     iget-object v7, p0, Landroidx/constraintlayout/solver/widgets/c;->g:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     if-eqz v7, :cond_8
 
-    .line 31
     iget-object v7, v7, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->y0:[Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     iget v8, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
 
     aput-object v2, v7, v8
 
-    .line 32
     :cond_8
     iput-object v2, p0, Landroidx/constraintlayout/solver/widgets/c;->g:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
-    .line 33
     :cond_9
     iget v7, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
 
     if-nez v7, :cond_b
 
-    .line 34
     iget v7, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->j:I
 
     if-eqz v7, :cond_a
 
     goto :goto_2
 
-    .line 35
     :cond_a
     iget v7, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->m:I
 
@@ -431,7 +388,6 @@
 
     goto :goto_2
 
-    .line 36
     :cond_b
     iget v7, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->k:I
 
@@ -439,7 +395,6 @@
 
     goto :goto_2
 
-    .line 37
     :cond_c
     iget v7, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->p:I
 
@@ -447,7 +402,6 @@
 
     iget v7, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->q:I
 
-    .line 38
     :cond_d
     :goto_2
     iget v7, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->P:F
@@ -457,14 +411,12 @@
     :cond_e
     if-eq v4, v2, :cond_f
 
-    .line 39
     iget-object v4, v4, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->z0:[Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     iget v7, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
 
     aput-object v2, v4, v7
 
-    .line 40
     :cond_f
     iget-object v4, v2, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->I:[Landroidx/constraintlayout/solver/widgets/ConstraintAnchor;
 
@@ -476,10 +428,8 @@
 
     if-eqz v4, :cond_11
 
-    .line 41
     iget-object v4, v4, Landroidx/constraintlayout/solver/widgets/ConstraintAnchor;->b:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
-    .line 42
     iget-object v7, v4, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->I:[Landroidx/constraintlayout/solver/widgets/ConstraintAnchor;
 
     aget-object v8, v7, v0
@@ -519,13 +469,11 @@
 
     goto/16 :goto_0
 
-    .line 43
     :cond_13
     iget-object v1, p0, Landroidx/constraintlayout/solver/widgets/c;->b:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     if-eqz v1, :cond_14
 
-    .line 44
     iget v4, p0, Landroidx/constraintlayout/solver/widgets/c;->m:I
 
     iget-object v1, v1, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->I:[Landroidx/constraintlayout/solver/widgets/ConstraintAnchor;
@@ -540,13 +488,11 @@
 
     iput v4, p0, Landroidx/constraintlayout/solver/widgets/c;->m:I
 
-    .line 45
     :cond_14
     iget-object v1, p0, Landroidx/constraintlayout/solver/widgets/c;->d:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     if-eqz v1, :cond_15
 
-    .line 46
     iget v4, p0, Landroidx/constraintlayout/solver/widgets/c;->m:I
 
     iget-object v1, v1, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->I:[Landroidx/constraintlayout/solver/widgets/ConstraintAnchor;
@@ -563,11 +509,9 @@
 
     iput v4, p0, Landroidx/constraintlayout/solver/widgets/c;->m:I
 
-    .line 47
     :cond_15
     iput-object v2, p0, Landroidx/constraintlayout/solver/widgets/c;->c:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
-    .line 48
     iget v0, p0, Landroidx/constraintlayout/solver/widgets/c;->o:I
 
     if-nez v0, :cond_16
@@ -576,18 +520,15 @@
 
     if-eqz v0, :cond_16
 
-    .line 49
     iput-object v2, p0, Landroidx/constraintlayout/solver/widgets/c;->e:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     goto :goto_5
 
-    .line 50
     :cond_16
     iget-object v0, p0, Landroidx/constraintlayout/solver/widgets/c;->a:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     iput-object v0, p0, Landroidx/constraintlayout/solver/widgets/c;->e:Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
-    .line 51
     :goto_5
     iget-boolean v0, p0, Landroidx/constraintlayout/solver/widgets/c;->r:Z
 
@@ -610,18 +551,15 @@
 .method public a()V
     .locals 1
 
-    .line 2
     iget-boolean v0, p0, Landroidx/constraintlayout/solver/widgets/c;->t:Z
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-direct {p0}, Landroidx/constraintlayout/solver/widgets/c;->b()V
 
     :cond_0
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Landroidx/constraintlayout/solver/widgets/c;->t:Z
 
     return-void

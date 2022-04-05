@@ -1,6 +1,5 @@
 .class final Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 .super Ljava/util/concurrent/atomic/AtomicLong;
-.source "MulticastProcessor.java"
 
 # interfaces
 .implements Lc/a/d;
@@ -66,13 +65,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->downstream:Lc/a/c;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->parent:Lio/reactivex/processors/MulticastProcessor;
 
     return-void
@@ -85,7 +81,6 @@
 
     const-wide/high16 v0, -0x8000000000000000L
 
-    .line 1
     invoke-virtual {p0, v0, v1}, Ljava/util/concurrent/atomic/AtomicLong;->getAndSet(J)J
 
     move-result-wide v2
@@ -94,7 +89,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->parent:Lio/reactivex/processors/MulticastProcessor;
 
     invoke-virtual {v0, p0}, Lio/reactivex/processors/MulticastProcessor;->remove(Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;)V
@@ -106,7 +100,6 @@
 .method onComplete()V
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v0
@@ -117,7 +110,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->downstream:Lc/a/c;
 
     invoke-interface {v0}, Lc/a/c;->onComplete()V
@@ -129,7 +121,6 @@
 .method onError(Ljava/lang/Throwable;)V
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v0
@@ -140,7 +131,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->downstream:Lc/a/c;
 
     invoke-interface {v0, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
@@ -157,7 +147,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v0
@@ -168,7 +157,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     iget-wide v0, p0, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->emitted:J
 
     const-wide/16 v2, 0x1
@@ -177,7 +165,6 @@
 
     iput-wide v0, p0, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->emitted:J
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->downstream:Lc/a/c;
 
     invoke-interface {v0, p1}, Lc/a/c;->onNext(Ljava/lang/Object;)V
@@ -189,14 +176,12 @@
 .method public request(J)V
     .locals 9
 
-    .line 1
     invoke-static {p1, p2}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(J)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
@@ -230,7 +215,6 @@
     :cond_2
     move-wide v2, v4
 
-    .line 3
     :goto_0
     invoke-virtual {p0, v0, v1, v2, v3}, Ljava/util/concurrent/atomic/AtomicLong;->compareAndSet(JJ)Z
 
@@ -238,7 +222,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object p1, p0, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->parent:Lio/reactivex/processors/MulticastProcessor;
 
     invoke-virtual {p1}, Lio/reactivex/processors/MulticastProcessor;->drain()V

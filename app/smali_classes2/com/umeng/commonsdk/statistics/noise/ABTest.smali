@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/noise/ABTest;
 .super Ljava/lang/Object;
-.source "ABTest.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/statistics/internal/d;
@@ -38,45 +37,34 @@
 .method private constructor <init>(Landroid/content/Context;Ljava/lang/String;I)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
     const/4 v0, -0x1
 
-    .line 3
     iput v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mPolicy:I
 
-    .line 4
     iput v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mInterval:I
 
-    .line 5
     iput v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mGroup:I
 
     const/4 v0, 0x0
 
-    .line 6
     iput v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mProb13:F
 
-    .line 7
     iput v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mProb07:F
 
     const/4 v0, 0x0
 
-    .line 8
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mPoli:Ljava/lang/String;
 
-    .line 9
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->context:Landroid/content/Context;
 
-    .line 10
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->context:Landroid/content/Context;
 
-    .line 11
     invoke-virtual {p0, p2, p3}, Lcom/umeng/commonsdk/statistics/noise/ABTest;->onExperimentChanged(Ljava/lang/String;I)V
 
     return-void
@@ -89,7 +77,6 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/statistics/noise/ABTest;->instance:Lcom/umeng/commonsdk/statistics/noise/ABTest;
 
@@ -99,7 +86,6 @@
 
     const/4 v2, 0x0
 
-    .line 2
     invoke-static {p0, v1, v2}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->imprintProperty(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -108,7 +94,6 @@
 
     const-string v3, "0"
 
-    .line 3
     invoke-static {p0, v2, v3}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->imprintProperty(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -121,14 +106,12 @@
 
     move-result v2
 
-    .line 4
     new-instance v3, Lcom/umeng/commonsdk/statistics/noise/ABTest;
 
     invoke-direct {v3, p0, v1, v2}, Lcom/umeng/commonsdk/statistics/noise/ABTest;-><init>(Landroid/content/Context;Ljava/lang/String;I)V
 
     sput-object v3, Lcom/umeng/commonsdk/statistics/noise/ABTest;->instance:Lcom/umeng/commonsdk/statistics/noise/ABTest;
 
-    .line 5
     :cond_0
     sget-object p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->instance:Lcom/umeng/commonsdk/statistics/noise/ABTest;
     :try_end_0
@@ -156,7 +139,6 @@
     :cond_0
     const-string v0, "\\|"
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p1
@@ -165,7 +147,6 @@
 
     const/4 v1, 0x2
 
-    .line 2
     aget-object v1, p1, v1
 
     const-string v2, "SIG13"
@@ -178,7 +159,6 @@
 
     const/4 v0, 0x3
 
-    .line 3
     aget-object v0, p1, v0
 
     invoke-static {v0}, Ljava/lang/Float;->valueOf(Ljava/lang/String;)Ljava/lang/Float;
@@ -189,7 +169,6 @@
 
     move-result v0
 
-    .line 4
     :cond_1
     iget v1, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mProb13:F
 
@@ -199,12 +178,10 @@
 
     if-lez v0, :cond_2
 
-    .line 5
     iput-boolean v2, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
     return-void
 
-    .line 6
     :cond_2
     aget-object v0, p1, v2
 
@@ -220,7 +197,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 7
     aget-object v0, p1, v3
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
@@ -241,7 +217,6 @@
 
     const/4 v5, 0x4
 
-    .line 8
     aget-object v6, p1, v5
 
     const-string v7, "RPT"
@@ -256,30 +231,25 @@
 
     if-eqz v6, :cond_4
 
-    .line 9
     iput-object v7, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mPoli:Ljava/lang/String;
 
-    .line 10
     aget-object p1, p1, v9
 
     invoke-virtual {p1, v8}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p1
 
-    .line 11
     array-length v4, p1
 
     new-array v4, v4, [I
 
     const/4 v5, 0x0
 
-    .line 12
     :goto_1
     array-length v6, p1
 
     if-ge v5, v6, :cond_5
 
-    .line 13
     aget-object v6, p1, v5
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
@@ -296,7 +266,6 @@
 
     goto :goto_1
 
-    .line 14
     :cond_4
     aget-object v5, p1, v5
 
@@ -308,13 +277,10 @@
 
     if-eqz v5, :cond_5
 
-    .line 15
     iput-object v6, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mPoli:Ljava/lang/String;
 
-    .line 16
     iput-boolean v3, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
-    .line 17
     :try_start_0
     aget-object p1, p1, v9
 
@@ -322,20 +288,17 @@
 
     move-result-object p1
 
-    .line 18
     array-length v5, p1
 
     new-array v4, v5, [I
 
     const/4 v5, 0x0
 
-    .line 19
     :goto_2
     array-length v6, p1
 
     if-ge v5, v6, :cond_5
 
-    .line 20
     aget-object v6, p1, v5
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
@@ -360,24 +323,20 @@
     :cond_5
     if-eq v0, v1, :cond_6
 
-    .line 21
     iput-boolean v3, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
-    .line 22
     iput v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mGroup:I
 
     if-eqz v4, :cond_7
 
     sub-int/2addr v0, v3
 
-    .line 23
     aget p1, v4, v0
 
     iput p1, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mPolicy:I
 
     goto :goto_3
 
-    .line 24
     :cond_6
     iput-boolean v2, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
@@ -396,14 +355,12 @@
     :cond_0
     const-string v0, "\\|"
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p1
 
     const/4 v0, 0x2
 
-    .line 2
     aget-object v0, p1, v0
 
     const-string v1, "SIG13"
@@ -418,7 +375,6 @@
 
     const/4 v0, 0x3
 
-    .line 3
     aget-object v0, p1, v0
 
     invoke-static {v0}, Ljava/lang/Float;->valueOf(Ljava/lang/String;)Ljava/lang/Float;
@@ -434,7 +390,6 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 4
     :goto_0
     iget v2, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mProb13:F
 
@@ -444,12 +399,10 @@
 
     if-lez v0, :cond_2
 
-    .line 5
     iput-boolean v3, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
     return-void
 
-    .line 6
     :cond_2
     aget-object v0, p1, v3
 
@@ -467,27 +420,23 @@
 
     if-eqz v0, :cond_3
 
-    .line 7
     aget-object v0, p1, v5
 
     invoke-virtual {v0, v4}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 8
     array-length v6, v0
 
     new-array v6, v6, [F
 
     const/4 v7, 0x0
 
-    .line 9
     :goto_1
     array-length v8, v0
 
     if-ge v7, v8, :cond_4
 
-    .line 10
     aget-object v8, v0, v7
 
     invoke-static {v8}, Ljava/lang/Float;->valueOf(Ljava/lang/String;)Ljava/lang/Float;
@@ -510,7 +459,6 @@
     :cond_4
     const/4 v0, 0x4
 
-    .line 11
     aget-object v7, p1, v0
 
     const-string v8, "RPT"
@@ -523,30 +471,25 @@
 
     if-eqz v7, :cond_5
 
-    .line 12
     iput-object v8, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mPoli:Ljava/lang/String;
 
-    .line 13
     aget-object p1, p1, v9
 
     invoke-virtual {p1, v4}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p1
 
-    .line 14
     array-length v0, p1
 
     new-array v2, v0, [I
 
     const/4 v0, 0x0
 
-    .line 15
     :goto_2
     array-length v4, p1
 
     if-ge v0, v4, :cond_6
 
-    .line 16
     aget-object v4, p1, v0
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
@@ -563,7 +506,6 @@
 
     goto :goto_2
 
-    .line 17
     :cond_5
     aget-object v0, p1, v0
 
@@ -575,13 +517,10 @@
 
     if-eqz v0, :cond_6
 
-    .line 18
     iput-boolean v5, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
-    .line 19
     iput-object v7, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mPoli:Ljava/lang/String;
 
-    .line 20
     :try_start_0
     aget-object p1, p1, v9
 
@@ -589,20 +528,17 @@
 
     move-result-object p1
 
-    .line 21
     array-length v0, p1
 
     new-array v2, v0, [I
 
     const/4 v0, 0x0
 
-    .line 22
     :goto_3
     array-length v4, p1
 
     if-ge v0, v4, :cond_6
 
-    .line 23
     aget-object v4, p1, v0
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
@@ -625,7 +561,6 @@
     :cond_6
     const/4 p1, 0x0
 
-    .line 24
     :goto_4
     array-length v0, v6
 
@@ -633,12 +568,10 @@
 
     if-ge p1, v0, :cond_8
 
-    .line 25
     aget v0, v6, p1
 
     add-float/2addr v1, v0
 
-    .line 26
     iget v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mProb07:F
 
     cmpg-float v0, v0, v1
@@ -658,24 +591,20 @@
     :goto_5
     if-eq p1, v4, :cond_9
 
-    .line 27
     iput-boolean v5, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
     add-int/lit8 v0, p1, 0x1
 
-    .line 28
     iput v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mGroup:I
 
     if-eqz v2, :cond_a
 
-    .line 29
     aget p1, v2, p1
 
     iput p1, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mPolicy:I
 
     goto :goto_6
 
-    .line 30
     :cond_9
     iput-boolean v3, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
@@ -698,7 +627,6 @@
     :cond_0
     add-int/lit8 v0, p2, 0x5
 
-    .line 1
     invoke-virtual {p1, p2, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p1
@@ -725,7 +653,6 @@
 .method public static validate(Ljava/lang/String;)Z
     .locals 6
 
-    .line 1
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -739,12 +666,10 @@
     :cond_0
     const-string v0, "\\|"
 
-    .line 2
     invoke-virtual {p0, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0
 
-    .line 3
     array-length v0, p0
 
     const/4 v2, 0x6
@@ -753,7 +678,6 @@
 
     return v1
 
-    .line 4
     :cond_1
     aget-object v0, p0, v1
 
@@ -771,7 +695,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 5
     aget-object v0, p0, v4
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -780,7 +703,6 @@
 
     array-length v0, v0
 
-    .line 6
     aget-object v5, p0, v2
 
     invoke-virtual {v5, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -793,7 +715,6 @@
 
     return v4
 
-    .line 7
     :cond_2
     aget-object v0, p0, v1
 
@@ -805,7 +726,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 8
     aget-object v0, p0, v2
 
     invoke-virtual {v0, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -814,7 +734,6 @@
 
     array-length v0, v0
 
-    .line 9
     aget-object p0, p0, v4
 
     invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -836,7 +755,6 @@
 .method public getGroup()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mGroup:I
 
     return v0
@@ -845,7 +763,6 @@
 .method public getGroupInfo()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
     if-nez v0, :cond_0
@@ -854,7 +771,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     iget v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mGroup:I
 
@@ -868,7 +784,6 @@
 .method public getTestInterval()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mInterval:I
 
     return v0
@@ -877,7 +792,6 @@
 .method public getTestName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mPoli:Ljava/lang/String;
 
     return-object v0
@@ -886,7 +800,6 @@
 .method public getTestPolicy()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mPolicy:I
 
     return v0
@@ -895,7 +808,6 @@
 .method public isInTest()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
     return v0
@@ -904,17 +816,14 @@
 .method public onExperimentChanged(Ljava/lang/String;I)V
     .locals 2
 
-    .line 1
     iput p2, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mInterval:I
 
-    .line 2
     iget-object p2, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->context:Landroid/content/Context;
 
     invoke-static {p2}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->getSignature(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 3
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -934,7 +843,6 @@
     :cond_0
     const/16 v0, 0xc
 
-    .line 4
     :try_start_0
     invoke-direct {p0, p2, v0}, Lcom/umeng/commonsdk/statistics/noise/ABTest;->prob(Ljava/lang/String;I)F
 
@@ -944,7 +852,6 @@
 
     const/4 v0, 0x6
 
-    .line 5
     invoke-direct {p0, p2, v0}, Lcom/umeng/commonsdk/statistics/noise/ABTest;->prob(Ljava/lang/String;I)F
 
     move-result p2
@@ -953,14 +860,12 @@
 
     const-string p2, "SIG7"
 
-    .line 6
     invoke-virtual {p1, p2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
-    .line 7
     invoke-direct {p0, p1}, Lcom/umeng/commonsdk/statistics/noise/ABTest;->parseSig7(Ljava/lang/String;)V
 
     goto :goto_0
@@ -968,14 +873,12 @@
     :cond_1
     const-string p2, "FIXED"
 
-    .line 8
     invoke-virtual {p1, p2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result p2
 
     if-eqz p2, :cond_2
 
-    .line 9
     invoke-direct {p0, p1}, Lcom/umeng/commonsdk/statistics/noise/ABTest;->parseFIXED(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -985,10 +888,8 @@
     :catch_0
     move-exception p2
 
-    .line 10
     iput-boolean v1, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
 
-    .line 11
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1009,7 +910,6 @@
     :goto_0
     return-void
 
-    .line 12
     :cond_3
     :goto_1
     iput-boolean v1, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->isInTest:Z
@@ -1024,7 +924,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-virtual {p1, v0, v1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -1033,7 +932,6 @@
 
     const-string v2, "0"
 
-    .line 2
     invoke-virtual {p1, v1, v2}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -1046,7 +944,6 @@
 
     move-result p1
 
-    .line 3
     invoke-virtual {p0, v0, p1}, Lcom/umeng/commonsdk/statistics/noise/ABTest;->onExperimentChanged(Ljava/lang/String;I)V
 
     return-void
@@ -1055,52 +952,42 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v1, " p13:"
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3
     iget v1, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mProb13:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     const-string v1, " p07:"
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
     iget v1, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mProb07:F
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(F)Ljava/lang/StringBuilder;
 
     const-string v1, " policy:"
 
-    .line 6
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
     iget v1, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mPolicy:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const-string v1, " interval:"
 
-    .line 8
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 9
     iget v1, p0, Lcom/umeng/commonsdk/statistics/noise/ABTest;->mInterval:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 10
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0

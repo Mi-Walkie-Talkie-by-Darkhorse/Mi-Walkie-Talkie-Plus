@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/u;
 .super Ljava/lang/Object;
-.source "GCJToWGSUtil.java"
 
 
 # direct methods
@@ -15,12 +14,10 @@
 
     sub-double v2, p0, v2
 
-    .line 1
     invoke-static {v0, v1, v2, v3}, Lcom/ifengyu/intercom/i/u;->b(DD)D
 
     move-result-wide v4
 
-    .line 2
     invoke-static {v0, v1, v2, v3}, Lcom/ifengyu/intercom/i/u;->c(DD)D
 
     move-result-wide v0
@@ -33,7 +30,6 @@
 
     mul-double v6, v6, v8
 
-    .line 3
     invoke-static {v6, v7}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v10
@@ -48,7 +44,6 @@
 
     sub-double/2addr v10, v12
 
-    .line 4
     invoke-static {v10, v11}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v12
@@ -71,7 +66,6 @@
 
     div-double/2addr v2, v12
 
-    .line 5
     invoke-static {v6, v7}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v6
@@ -134,7 +128,6 @@
 
     add-double/2addr v4, v10
 
-    .line 1
     invoke-static/range {p0 .. p1}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v10
@@ -155,7 +148,6 @@
 
     mul-double v8, v8, v10
 
-    .line 2
     invoke-static {v8, v9}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v8
@@ -182,7 +174,6 @@
 
     mul-double v2, p2, v10
 
-    .line 3
     invoke-static {v2, v3}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v8
@@ -215,7 +206,6 @@
 
     mul-double v8, v8, v10
 
-    .line 4
     invoke-static {v8, v9}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v8
@@ -272,7 +262,6 @@
 
     add-double/2addr v2, v8
 
-    .line 1
     invoke-static/range {p0 .. p1}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v8
@@ -293,7 +282,6 @@
 
     mul-double v6, v6, v8
 
-    .line 2
     invoke-static {v6, v7}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v6
@@ -324,7 +312,6 @@
 
     mul-double v6, p0, v8
 
-    .line 3
     invoke-static {v6, v7}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v6
@@ -357,7 +344,6 @@
 
     mul-double v6, v6, v8
 
-    .line 4
     invoke-static {v6, v7}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v6

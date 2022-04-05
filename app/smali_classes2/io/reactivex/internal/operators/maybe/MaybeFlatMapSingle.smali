@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/maybe/MaybeFlatMapSingle;
 .super Lio/reactivex/Single;
-.source "MaybeFlatMapSingle.java"
 
 
 # annotations
@@ -61,13 +60,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapSingle;->source:Lio/reactivex/MaybeSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapSingle;->mapper:Lio/reactivex/functions/Function;
 
     return-void
@@ -85,7 +81,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapSingle;->source:Lio/reactivex/MaybeSource;
 
     new-instance v1, Lio/reactivex/internal/operators/maybe/MaybeFlatMapSingle$FlatMapMaybeObserver;

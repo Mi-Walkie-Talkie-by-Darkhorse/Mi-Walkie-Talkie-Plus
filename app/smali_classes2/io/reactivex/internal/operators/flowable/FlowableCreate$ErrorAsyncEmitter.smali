@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableCreate$ErrorAsyncEmitter;
 .super Lio/reactivex/internal/operators/flowable/FlowableCreate$NoOverflowBaseAsyncEmitter;
-.source "FlowableCreate.java"
 
 
 # annotations
@@ -39,7 +38,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/flowable/FlowableCreate$NoOverflowBaseAsyncEmitter;-><init>(Lc/a/c;)V
 
     return-void
@@ -50,7 +48,6 @@
 .method onOverflow()V
     .locals 2
 
-    .line 1
     new-instance v0, Lio/reactivex/exceptions/MissingBackpressureException;
 
     const-string v1, "create: could not emit value due to lack of requests"

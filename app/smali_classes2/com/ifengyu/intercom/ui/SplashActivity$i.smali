@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/SplashActivity$i;
 .super Ljava/lang/Object;
-.source "SplashActivity.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;
@@ -37,7 +36,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/SplashActivity;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$i;->b:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     iput p2, p0, Lcom/ifengyu/intercom/ui/SplashActivity$i;->a:I
@@ -61,7 +59,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/SplashActivity$i;->a:I
 
     int-to-long v0, v0
@@ -91,7 +88,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/lang/Long;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/SplashActivity$i;->a(Ljava/lang/Long;)Ljava/lang/Long;

@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$3;
 .super Ljava/lang/Object;
-.source "AppBarLayout.java"
 
 # interfaces
 .implements Landroidx/core/view/accessibility/e;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;Lcom/google/android/material/appbar/AppBarLayout;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$3;->this$0:Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;
 
     iput-object p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$3;->val$appBarLayout:Lcom/google/android/material/appbar/AppBarLayout;
@@ -54,7 +52,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$3;->val$appBarLayout:Lcom/google/android/material/appbar/AppBarLayout;
 
     iget-boolean p2, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$3;->val$expand:Z

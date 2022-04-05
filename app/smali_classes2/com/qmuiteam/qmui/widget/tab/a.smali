@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/tab/a;
 .super Lcom/qmuiteam/qmui/widget/d;
-.source "QMUITabAdapter.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/tab/QMUITabView$b;
@@ -26,10 +25,8 @@
 .method public constructor <init>(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;Landroid/view/ViewGroup;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2}, Lcom/qmuiteam/qmui/widget/d;-><init>(Landroid/view/ViewGroup;)V
 
-    .line 2
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/a;->e:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     return-void
@@ -40,7 +37,6 @@
 .method protected bridge synthetic a(Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/widget/tab/a;->a(Landroid/view/ViewGroup;)Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     move-result-object p1
@@ -51,7 +47,6 @@
 .method protected a(Landroid/view/ViewGroup;)Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
     .locals 1
 
-    .line 3
     new-instance v0, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
@@ -66,10 +61,8 @@
 .method protected final a(Lcom/qmuiteam/qmui/widget/tab/QMUITab;Lcom/qmuiteam/qmui/widget/tab/QMUITabView;I)V
     .locals 0
 
-    .line 4
     invoke-virtual {p0, p1, p2, p3}, Lcom/qmuiteam/qmui/widget/tab/a;->b(Lcom/qmuiteam/qmui/widget/tab/QMUITab;Lcom/qmuiteam/qmui/widget/tab/QMUITabView;I)V
 
-    .line 5
     invoke-virtual {p2, p0}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->setCallback(Lcom/qmuiteam/qmui/widget/tab/QMUITabView$b;)V
 
     return-void
@@ -84,7 +77,6 @@
 .method protected bridge synthetic a(Ljava/lang/Object;Landroid/view/View;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/qmuiteam/qmui/widget/tab/QMUITab;
 
     check-cast p2, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
@@ -97,7 +89,6 @@
 .method protected b(Lcom/qmuiteam/qmui/widget/tab/QMUITab;Lcom/qmuiteam/qmui/widget/tab/QMUITabView;I)V
     .locals 0
 
-    .line 1
     invoke-virtual {p2, p1}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->a(Lcom/qmuiteam/qmui/widget/tab/QMUITab;)V
 
     return-void
@@ -106,7 +97,6 @@
 .method public b(Lcom/qmuiteam/qmui/widget/tab/QMUITabView;)V
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/widget/d;->c()Ljava/util/List;
 
     move-result-object v0
@@ -115,7 +105,6 @@
 
     move-result p1
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/a;->e:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->a(I)V
@@ -126,7 +115,6 @@
 .method public c(Lcom/qmuiteam/qmui/widget/tab/QMUITabView;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/widget/d;->c()Ljava/util/List;
 
     move-result-object v0
@@ -135,7 +123,6 @@
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/a;->e:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->f(I)V

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/commonsdk/statistics/internal/UMImprintChangeCallback;
 .super Ljava/lang/Object;
-.source "UMImprintChangeCallback.java"
 
 
 # virtual methods

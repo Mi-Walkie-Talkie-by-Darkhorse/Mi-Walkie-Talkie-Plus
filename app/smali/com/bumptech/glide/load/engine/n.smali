@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/engine/n;
 .super Ljava/lang/Object;
-.source "EngineResource.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/s;
@@ -59,20 +58,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, Lcom/bumptech/glide/load/engine/s;
 
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/n;->g:Lcom/bumptech/glide/load/engine/s;
 
-    .line 3
     iput-boolean p2, p0, Lcom/bumptech/glide/load/engine/n;->a:Z
 
-    .line 4
     iput-boolean p3, p0, Lcom/bumptech/glide/load/engine/n;->b:Z
 
     return-void
@@ -83,27 +78,22 @@
 .method public a()V
     .locals 2
 
-    .line 3
     iget v0, p0, Lcom/bumptech/glide/load/engine/n;->e:I
 
     if-gtz v0, :cond_2
 
-    .line 4
     iget-boolean v0, p0, Lcom/bumptech/glide/load/engine/n;->f:Z
 
     if-nez v0, :cond_1
 
     const/4 v0, 0x1
 
-    .line 5
     iput-boolean v0, p0, Lcom/bumptech/glide/load/engine/n;->f:Z
 
-    .line 6
     iget-boolean v0, p0, Lcom/bumptech/glide/load/engine/n;->b:Z
 
     if-eqz v0, :cond_0
 
-    .line 7
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/n;->g:Lcom/bumptech/glide/load/engine/s;
 
     invoke-interface {v0}, Lcom/bumptech/glide/load/engine/s;->a()V
@@ -111,7 +101,6 @@
     :cond_0
     return-void
 
-    .line 8
     :cond_1
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -121,7 +110,6 @@
 
     throw v0
 
-    .line 9
     :cond_2
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -135,10 +123,8 @@
 .method a(Lcom/bumptech/glide/load/c;Lcom/bumptech/glide/load/engine/n$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/n;->d:Lcom/bumptech/glide/load/c;
 
-    .line 2
     iput-object p2, p0, Lcom/bumptech/glide/load/engine/n;->c:Lcom/bumptech/glide/load/engine/n$a;
 
     return-void
@@ -147,7 +133,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/n;->g:Lcom/bumptech/glide/load/engine/s;
 
     invoke-interface {v0}, Lcom/bumptech/glide/load/engine/s;->b()I
@@ -170,7 +155,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/n;->g:Lcom/bumptech/glide/load/engine/s;
 
     invoke-interface {v0}, Lcom/bumptech/glide/load/engine/s;->c()Ljava/lang/Class;
@@ -183,12 +167,10 @@
 .method d()V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Lcom/bumptech/glide/load/engine/n;->f:Z
 
     if-nez v0, :cond_1
 
-    .line 2
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -203,7 +185,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget v0, p0, Lcom/bumptech/glide/load/engine/n;->e:I
 
     add-int/lit8 v0, v0, 0x1
@@ -212,7 +193,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/IllegalThreadStateException;
 
@@ -222,7 +202,6 @@
 
     throw v0
 
-    .line 5
     :cond_1
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -243,7 +222,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/n;->g:Lcom/bumptech/glide/load/engine/s;
 
     return-object v0
@@ -252,7 +230,6 @@
 .method f()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/bumptech/glide/load/engine/n;->a:Z
 
     return v0
@@ -261,12 +238,10 @@
 .method g()V
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/bumptech/glide/load/engine/n;->e:I
 
     if-lez v0, :cond_2
 
-    .line 2
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -281,7 +256,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget v0, p0, Lcom/bumptech/glide/load/engine/n;->e:I
 
     add-int/lit8 v0, v0, -0x1
@@ -290,7 +264,6 @@
 
     if-nez v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/n;->c:Lcom/bumptech/glide/load/engine/n$a;
 
     iget-object v1, p0, Lcom/bumptech/glide/load/engine/n;->d:Lcom/bumptech/glide/load/c;
@@ -300,7 +273,6 @@
     :cond_0
     return-void
 
-    .line 5
     :cond_1
     new-instance v0, Ljava/lang/IllegalThreadStateException;
 
@@ -310,7 +282,6 @@
 
     throw v0
 
-    .line 6
     :cond_2
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -332,7 +303,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/n;->g:Lcom/bumptech/glide/load/engine/s;
 
     invoke-interface {v0}, Lcom/bumptech/glide/load/engine/s;->get()Ljava/lang/Object;
@@ -345,7 +315,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

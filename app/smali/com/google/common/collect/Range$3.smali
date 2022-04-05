@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Range$3;
 .super Lcom/google/common/collect/Ordering;
-.source "Range.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/Ordering;-><init>()V
 
     return-void
@@ -46,7 +44,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/ComparisonChain;->start()Lcom/google/common/collect/ComparisonChain;
 
     move-result-object v0
@@ -77,7 +74,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/common/collect/Range;
 
     check-cast p2, Lcom/google/common/collect/Range;

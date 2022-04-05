@@ -1,6 +1,5 @@
 .class public Lcom/tencent/connect/auth/b;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # annotations
@@ -38,7 +37,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/tencent/connect/auth/b;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -51,7 +49,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     sput v0, Lcom/tencent/connect/auth/b;->e:I
 
     return-void
@@ -60,10 +57,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -72,7 +67,6 @@
 
     const-string v0, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
-    .line 3
     iput-object v0, p0, Lcom/tencent/connect/auth/b;->c:Ljava/lang/String;
 
     return-void
@@ -81,19 +75,16 @@
 .method public static a()Lcom/tencent/connect/auth/b;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/tencent/connect/auth/b;->a:Lcom/tencent/connect/auth/b;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/tencent/connect/auth/b;
 
     invoke-direct {v0}, Lcom/tencent/connect/auth/b;-><init>()V
 
     sput-object v0, Lcom/tencent/connect/auth/b;->a:Lcom/tencent/connect/auth/b;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/tencent/connect/auth/b;->a:Lcom/tencent/connect/auth/b;
 
@@ -103,7 +94,6 @@
 .method public static b()I
     .locals 1
 
-    .line 1
     sget v0, Lcom/tencent/connect/auth/b;->e:I
 
     add-int/lit8 v0, v0, 0x1
@@ -120,12 +110,10 @@
 
     const-string v0, ""
 
-    .line 4
     invoke-static {}, Lcom/tencent/connect/auth/b;->b()I
 
     move-result v1
 
-    .line 5
     :try_start_0
     iget-object v2, p0, Lcom/tencent/connect/auth/b;->b:Ljava/util/HashMap;
 
@@ -150,10 +138,8 @@
     :catchall_0
     move-exception p1
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 7
     :goto_0
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -173,7 +159,6 @@
 .method public c()Ljava/lang/String;
     .locals 9
 
-    .line 1
     invoke-static {}, Ljava/lang/Math;->random()D
 
     move-result-wide v0
@@ -194,15 +179,12 @@
 
     const-string v1, "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
 
-    .line 2
     invoke-virtual {v1}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v1
 
-    .line 3
     array-length v2, v1
 
-    .line 4
     new-instance v3, Ljava/lang/StringBuffer;
 
     invoke-direct {v3}, Ljava/lang/StringBuffer;-><init>()V
@@ -212,7 +194,6 @@
     :goto_0
     if-ge v4, v0, :cond_0
 
-    .line 5
     invoke-static {}, Ljava/lang/Math;->random()D
 
     move-result-wide v5
@@ -223,7 +204,6 @@
 
     double-to-int v5, v5
 
-    .line 6
     aget-char v5, v1, v5
 
     invoke-virtual {v3, v5}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
@@ -232,7 +212,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {v3}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 

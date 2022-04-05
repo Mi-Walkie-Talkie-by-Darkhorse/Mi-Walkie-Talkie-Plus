@@ -1,6 +1,5 @@
 .class public Lcom/afollestad/materialdialogs/d/b;
 .super Ljava/lang/Object;
-.source "RippleHelper.java"
 
 
 # annotations
@@ -17,12 +16,10 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p0, Landroid/graphics/drawable/RippleDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, Landroid/graphics/drawable/RippleDrawable;
 
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;

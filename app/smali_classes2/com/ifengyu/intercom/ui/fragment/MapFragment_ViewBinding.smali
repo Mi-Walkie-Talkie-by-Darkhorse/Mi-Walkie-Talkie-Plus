@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/fragment/MapFragment_ViewBinding;
 .super Ljava/lang/Object;
-.source "MapFragment_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment_ViewBinding;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
-    .line 3
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09041d
@@ -37,7 +33,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->titleBarTitle:Landroid/widget/TextView;
 
-    .line 4
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f09041a
@@ -52,7 +47,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->titleBarRight:Landroid/widget/ImageView;
 
-    .line 5
     const-class v0, Landroid/widget/LinearLayout;
 
     const v1, 0x7f0902cb
@@ -67,7 +61,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->myDeviceManager:Landroid/widget/LinearLayout;
 
-    .line 6
     const-class v0, Landroid/widget/FrameLayout;
 
     const v1, 0x7f090258
@@ -82,7 +75,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapContainer:Landroid/widget/FrameLayout;
 
-    .line 7
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;
 
     const v1, 0x7f090081
@@ -97,7 +89,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bottomChannelLayout:Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;
 
-    .line 8
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090082
@@ -112,7 +103,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bottomChannelName:Landroid/widget/TextView;
 
-    .line 9
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090083
@@ -127,7 +117,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bottomChannelNumber:Landroid/widget/TextView;
 
-    .line 10
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f090259
@@ -142,7 +131,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->locationShareIV:Landroid/widget/ImageView;
 
-    .line 11
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f09025b
@@ -157,7 +145,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->zoomBigIV:Landroid/widget/ImageView;
 
-    .line 12
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f09025d
@@ -172,7 +159,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->zoomSmallIV:Landroid/widget/ImageView;
 
-    .line 13
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f09025a
@@ -187,7 +173,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->myLocateIV:Landroid/widget/ImageView;
 
-    .line 14
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090274
@@ -202,7 +187,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordBtn:Landroid/widget/TextView;
 
-    .line 15
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09025f
@@ -217,7 +201,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapKitBtn:Landroid/widget/TextView;
 
-    .line 16
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09026f
@@ -232,7 +215,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapSwitchTypeBtn:Landroid/widget/TextView;
 
-    .line 17
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;
 
     const v1, 0x7f090428
@@ -247,7 +229,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bleIsUnConnectLayout:Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;
 
-    .line 18
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090431
@@ -262,7 +243,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bleReconnectImmediatelyBtn:Landroid/widget/TextView;
 
-    .line 19
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f090427
@@ -277,7 +257,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bleUnConnectCloseBtn:Landroid/widget/ImageView;
 
-    .line 20
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;
 
     const v1, 0x7f09042b
@@ -292,7 +271,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mcuHaveUpdateLayout:Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;
 
-    .line 21
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090430
@@ -307,7 +285,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mcuHaveUpdateTV:Landroid/widget/TextView;
 
-    .line 22
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09042f
@@ -322,7 +299,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mcuUpdateImmediatelyBtn:Landroid/widget/TextView;
 
-    .line 23
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f09042a
@@ -337,7 +313,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mcuHaveUpdateCloseBtn:Landroid/widget/ImageView;
 
-    .line 24
     const-class v0, Landroid/view/ViewGroup;
 
     const v1, 0x7f090277
@@ -352,7 +327,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->trackRecordingDataLayout:Landroid/view/ViewGroup;
 
-    .line 25
     const-class v0, Landroid/view/ViewGroup;
 
     const v1, 0x7f090446
@@ -367,7 +341,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->trackRecordingCompressCanHideLayout:Landroid/view/ViewGroup;
 
-    .line 26
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f0901a5
@@ -382,7 +355,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->gpsNoAccuracyPrompt:Landroid/widget/TextView;
 
-    .line 27
     const-class v0, Landroid/view/ViewGroup;
 
     const v1, 0x7f090447
@@ -397,7 +369,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->trackRecordingCompressDistanceLayout:Landroid/view/ViewGroup;
 
-    .line 28
     const-class v0, Landroid/view/ViewGroup;
 
     const v1, 0x7f090449
@@ -412,7 +383,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->trackRecordingCompressSpeedLayout:Landroid/view/ViewGroup;
 
-    .line 29
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f090436
@@ -427,7 +397,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordGpsAccuracy:Landroid/widget/ImageView;
 
-    .line 30
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090448
@@ -442,7 +411,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCompressDistance:Landroid/widget/TextView;
 
-    .line 31
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09044a
@@ -457,7 +425,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCompressSpeed:Landroid/widget/TextView;
 
-    .line 32
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09044d
@@ -472,7 +439,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordTiming:Landroid/widget/TextView;
 
-    .line 33
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09044b
@@ -487,7 +453,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordDistance:Landroid/widget/TextView;
 
-    .line 34
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09044c
@@ -502,7 +467,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordSpeed:Landroid/widget/TextView;
 
-    .line 35
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090276
@@ -517,7 +481,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordPauseBtn:Landroid/widget/TextView;
 
-    .line 36
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090275
@@ -532,7 +495,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCloseBtn:Landroid/widget/TextView;
 
-    .line 37
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f090445
@@ -557,124 +519,86 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment_ViewBinding;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment_ViewBinding;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->titleBarTitle:Landroid/widget/TextView;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->titleBarRight:Landroid/widget/ImageView;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->myDeviceManager:Landroid/widget/LinearLayout;
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapContainer:Landroid/widget/FrameLayout;
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bottomChannelLayout:Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;
 
-    .line 8
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bottomChannelName:Landroid/widget/TextView;
 
-    .line 9
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bottomChannelNumber:Landroid/widget/TextView;
 
-    .line 10
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->locationShareIV:Landroid/widget/ImageView;
 
-    .line 11
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->zoomBigIV:Landroid/widget/ImageView;
 
-    .line 12
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->zoomSmallIV:Landroid/widget/ImageView;
 
-    .line 13
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->myLocateIV:Landroid/widget/ImageView;
 
-    .line 14
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordBtn:Landroid/widget/TextView;
 
-    .line 15
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapKitBtn:Landroid/widget/TextView;
 
-    .line 16
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapSwitchTypeBtn:Landroid/widget/TextView;
 
-    .line 17
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bleIsUnConnectLayout:Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;
 
-    .line 18
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bleReconnectImmediatelyBtn:Landroid/widget/TextView;
 
-    .line 19
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bleUnConnectCloseBtn:Landroid/widget/ImageView;
 
-    .line 20
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mcuHaveUpdateLayout:Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;
 
-    .line 21
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mcuHaveUpdateTV:Landroid/widget/TextView;
 
-    .line 22
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mcuUpdateImmediatelyBtn:Landroid/widget/TextView;
 
-    .line 23
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mcuHaveUpdateCloseBtn:Landroid/widget/ImageView;
 
-    .line 24
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->trackRecordingDataLayout:Landroid/view/ViewGroup;
 
-    .line 25
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->trackRecordingCompressCanHideLayout:Landroid/view/ViewGroup;
 
-    .line 26
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->gpsNoAccuracyPrompt:Landroid/widget/TextView;
 
-    .line 27
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->trackRecordingCompressDistanceLayout:Landroid/view/ViewGroup;
 
-    .line 28
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->trackRecordingCompressSpeedLayout:Landroid/view/ViewGroup;
 
-    .line 29
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordGpsAccuracy:Landroid/widget/ImageView;
 
-    .line 30
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCompressDistance:Landroid/widget/TextView;
 
-    .line 31
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCompressSpeed:Landroid/widget/TextView;
 
-    .line 32
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordTiming:Landroid/widget/TextView;
 
-    .line 33
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordDistance:Landroid/widget/TextView;
 
-    .line 34
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordSpeed:Landroid/widget/TextView;
 
-    .line 35
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordPauseBtn:Landroid/widget/TextView;
 
-    .line 36
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCloseBtn:Landroid/widget/TextView;
 
-    .line 37
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->trackRecordingCompressBtn:Landroid/widget/ImageView;
 
     return-void
 
-    .line 38
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

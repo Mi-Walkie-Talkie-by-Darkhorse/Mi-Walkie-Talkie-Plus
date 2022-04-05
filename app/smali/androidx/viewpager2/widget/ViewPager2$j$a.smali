@@ -1,6 +1,5 @@
 .class Landroidx/viewpager2/widget/ViewPager2$j$a;
 .super Ljava/lang/Object;
-.source "ViewPager2.java"
 
 # interfaces
 .implements Landroidx/core/view/accessibility/e;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/viewpager2/widget/ViewPager2$j;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$j$a;->a:Landroidx/viewpager2/widget/ViewPager2$j;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,10 +44,8 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Landroidx/viewpager2/widget/ViewPager2;
 
-    .line 2
     iget-object p2, p0, Landroidx/viewpager2/widget/ViewPager2$j$a;->a:Landroidx/viewpager2/widget/ViewPager2$j;
 
     invoke-virtual {p1}, Landroidx/viewpager2/widget/ViewPager2;->getCurrentItem()I

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ks;
 .super Landroid/os/Handler;
-.source "MapLocationManagerResultHandler.java"
 
 
 # instance fields

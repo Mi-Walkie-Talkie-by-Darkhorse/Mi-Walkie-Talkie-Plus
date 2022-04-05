@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;
 .super Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
-.source "QMUIBottomSheetBehavior.java"
 
 
 # annotations
@@ -33,15 +32,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->a:Z
 
-    .line 3
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->b:Z
 
     return-void
@@ -73,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->a:Z
 
     const/4 v1, 0x0
@@ -82,7 +77,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getAction()I
 
@@ -90,12 +84,10 @@
 
     if-nez v0, :cond_3
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->c:Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior$a;
 
     if-eqz v0, :cond_2
 
-    .line 4
     invoke-interface {v0, p1, p2, p3}, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior$a;->a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result v0
@@ -116,7 +108,6 @@
     :goto_1
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->b:Z
 
-    .line 5
     :cond_3
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->b:Z
 
@@ -124,7 +115,6 @@
 
     return v1
 
-    .line 6
     :cond_4
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->onInterceptTouchEvent(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
@@ -162,7 +152,6 @@
         }
     .end annotation
 
-    .line 7
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->a:Z
 
     if-nez v0, :cond_0
@@ -171,7 +160,6 @@
 
     return p1
 
-    .line 8
     :cond_0
     invoke-super/range {p0 .. p6}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->onStartNestedScroll(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;Landroid/view/View;II)Z
 
@@ -204,7 +192,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->a:Z
 
     const/4 v1, 0x0
@@ -213,7 +200,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getAction()I
 
@@ -221,12 +207,10 @@
 
     if-nez v0, :cond_3
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->c:Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior$a;
 
     if-eqz v0, :cond_2
 
-    .line 4
     invoke-interface {v0, p1, p2, p3}, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior$a;->a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
     move-result v0
@@ -247,7 +231,6 @@
     :goto_1
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->b:Z
 
-    .line 5
     :cond_3
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->b:Z
 
@@ -255,7 +238,6 @@
 
     return v1
 
-    .line 6
     :cond_4
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->onTouchEvent(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
@@ -279,7 +261,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p2, Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/ViewGroup;Landroid/view/MotionEvent;)Z
@@ -308,7 +289,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p2, Landroid/view/ViewGroup;
 
     invoke-virtual/range {p0 .. p6}, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->a(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;II)Z
@@ -333,7 +313,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p2, Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetBehavior;->b(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/ViewGroup;Landroid/view/MotionEvent;)Z

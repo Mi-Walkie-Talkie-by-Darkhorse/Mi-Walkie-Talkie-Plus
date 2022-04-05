@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/q$c;
 .super Ljava/lang/Object;
-.source "GLMapGestureDetector.java"
 
 # interfaces
 .implements Lcom/autonavi/ae/gmap/gesture/MoveGestureDetector$OnMoveGestureListener;
@@ -31,22 +30,18 @@
 .method private constructor <init>(Lcom/amap/api/col/l3/q;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 2
     iput p1, p0, Lcom/amap/api/col/l3/q$c;->b:F
 
     const/high16 p1, 0x40800000    # 4.0f
 
-    .line 3
     iput p1, p0, Lcom/amap/api/col/l3/q$c;->c:F
 
-    .line 4
     new-instance p1, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;
 
     invoke-direct {p1}, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;-><init>()V
@@ -59,7 +54,6 @@
 .method synthetic constructor <init>(Lcom/amap/api/col/l3/q;B)V
     .locals 0
 
-    .line 5
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/q$c;-><init>(Lcom/amap/api/col/l3/q;)V
 
     return-void
@@ -70,7 +64,6 @@
 .method public final onMove(Lcom/autonavi/ae/gmap/gesture/MoveGestureDetector;)Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/q;->i(Lcom/amap/api/col/l3/q;)Z
@@ -83,7 +76,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
@@ -112,7 +104,6 @@
 
     goto/16 :goto_1
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/q$c;->d:Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;
 
@@ -122,12 +113,10 @@
 
     const/4 v3, 0x3
 
-    .line 4
     iput v3, v0, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;->mGestureType:I
 
     new-array v2, v2, [F
 
-    .line 5
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/gesture/BaseGestureDetector;->getEvent()Landroid/view/MotionEvent;
 
     move-result-object v3
@@ -152,7 +141,6 @@
 
     iput-object v2, v0, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;->mLocation:[F
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
     iget-object v0, v0, Lcom/amap/api/col/l3/q;->a:Lcom/amap/api/col/l3/u;
@@ -163,14 +151,12 @@
 
     move-result v0
 
-    .line 7
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/gesture/MoveGestureDetector;->getFocusDelta()Landroid/graphics/PointF;
 
     move-result-object p1
 
     const/high16 v2, 0x3f800000    # 1.0f
 
-    .line 8
     iget-object v3, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
     invoke-static {v3}, Lcom/amap/api/col/l3/q;->k(Lcom/amap/api/col/l3/q;)I
@@ -181,7 +167,6 @@
 
     const/high16 v2, 0x40800000    # 4.0f
 
-    .line 9
     :cond_2
     iget v3, p1, Landroid/graphics/PointF;->x:F
 
@@ -208,7 +193,6 @@
     :cond_3
     return v4
 
-    .line 10
     :cond_4
     :goto_0
     iget-object v2, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
@@ -219,7 +203,6 @@
 
     if-nez v2, :cond_5
 
-    .line 11
     iget-object v2, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
     iget-object v2, v2, Lcom/amap/api/col/l3/q;->a:Lcom/amap/api/col/l3/u;
@@ -230,7 +213,6 @@
 
     invoke-virtual {v2, v0, v4}, Lcom/autonavi/ae/gmap/GLMapEngine;->clearAnimations(IZ)V
 
-    .line 12
     :cond_5
     iget-object v2, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
@@ -248,7 +230,6 @@
 
     invoke-interface {v2, v0, p1}, Lcom/amap/api/col/l3/u;->a(ILcom/autonavi/amap/mapcore/message/GestureMapMessage;)V
 
-    .line 13
     iget-object p1, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/q;->l(Lcom/amap/api/col/l3/q;)I
@@ -264,10 +245,8 @@
 
     const-string v2, "onMove"
 
-    .line 14
     invoke-static {p1, v0, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 15
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return v1
@@ -278,7 +257,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
@@ -298,7 +276,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lcom/amap/api/col/l3/q$c;->d:Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;
 
@@ -306,7 +283,6 @@
 
     const/4 v2, 0x3
 
-    .line 3
     iput v2, v1, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;->mGestureType:I
 
     const/4 v2, 0x2
@@ -315,7 +291,6 @@
 
     const/4 v3, 0x0
 
-    .line 4
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/gesture/BaseGestureDetector;->getEvent()Landroid/view/MotionEvent;
 
     move-result-object v4
@@ -338,7 +313,6 @@
 
     iput-object v2, v1, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;->mLocation:[F
 
-    .line 5
     iget-object p1, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/q;->a:Lcom/amap/api/col/l3/u;
@@ -349,7 +323,6 @@
 
     move-result p1
 
-    .line 6
     iget-object v1, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
     iget-object v1, v1, Lcom/amap/api/col/l3/q;->a:Lcom/amap/api/col/l3/u;
@@ -373,10 +346,8 @@
 
     const-string v2, "onMoveBegin"
 
-    .line 7
     invoke-static {p1, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return v0
@@ -385,7 +356,6 @@
 .method public final onMoveEnd(Lcom/autonavi/ae/gmap/gesture/MoveGestureDetector;)V
     .locals 4
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
@@ -405,7 +375,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/q$c;->d:Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;
 
@@ -413,7 +382,6 @@
 
     iput v1, v0, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;->mGestureState:I
 
-    .line 3
     iput v1, v0, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;->mGestureType:I
 
     const/4 v1, 0x2
@@ -422,7 +390,6 @@
 
     const/4 v2, 0x0
 
-    .line 4
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/gesture/BaseGestureDetector;->getEvent()Landroid/view/MotionEvent;
 
     move-result-object v3
@@ -447,7 +414,6 @@
 
     iput-object v1, v0, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;->mLocation:[F
 
-    .line 5
     iget-object p1, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/q;->a:Lcom/amap/api/col/l3/u;
@@ -458,7 +424,6 @@
 
     move-result p1
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/q;->k(Lcom/amap/api/col/l3/q;)I
@@ -467,7 +432,6 @@
 
     if-lez v0, :cond_1
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
     iget-object v0, v0, Lcom/amap/api/col/l3/q;->a:Lcom/amap/api/col/l3/u;
@@ -476,7 +440,6 @@
 
     invoke-interface {v0, v1}, Lcom/amap/api/col/l3/u;->a(I)V
 
-    .line 8
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/q$c;->a:Lcom/amap/api/col/l3/q;
 
@@ -501,10 +464,8 @@
 
     const-string v1, "onMoveEnd"
 
-    .line 9
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

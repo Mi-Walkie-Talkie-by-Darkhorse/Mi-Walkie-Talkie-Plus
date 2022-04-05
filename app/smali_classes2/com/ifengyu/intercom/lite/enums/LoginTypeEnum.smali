@@ -1,6 +1,5 @@
 .class public final enum Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 .super Ljava/lang/Enum;
-.source "LoginTypeEnum.java"
 
 
 # annotations
@@ -33,7 +32,6 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
     const/16 v1, 0x66
@@ -52,7 +50,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;->c:Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
     const/16 v1, 0xc9
@@ -71,7 +68,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;->d:Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
     const/16 v1, 0xca
@@ -94,7 +90,6 @@
 
     new-array v1, v1, [Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
-    .line 4
     sget-object v5, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;->c:Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
     aput-object v5, v1, v2
@@ -121,13 +116,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;->a:Ljava/lang/Integer;
 
-    .line 3
     iput-object p4, p0, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;->b:Ljava/lang/String;
 
     return-void
@@ -136,7 +128,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -151,7 +142,6 @@
 .method public static values()[Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;->f:[Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
     invoke-virtual {v0}, [Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;->clone()Ljava/lang/Object;
@@ -168,7 +158,6 @@
 .method public a()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;->a:Ljava/lang/Integer;
 
     return-object v0

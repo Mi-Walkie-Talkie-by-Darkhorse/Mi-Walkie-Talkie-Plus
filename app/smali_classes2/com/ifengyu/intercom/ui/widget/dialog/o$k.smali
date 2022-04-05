@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/o$k;
 .super Ljava/lang/Object;
-.source "InsertChannelDialog.java"
 
 
 # annotations

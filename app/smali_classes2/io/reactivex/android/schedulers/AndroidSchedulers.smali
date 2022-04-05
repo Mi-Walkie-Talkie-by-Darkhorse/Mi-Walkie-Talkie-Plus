@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/android/schedulers/AndroidSchedulers;
 .super Ljava/lang/Object;
-.source "AndroidSchedulers.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/reactivex/android/schedulers/AndroidSchedulers$1;
 
     invoke-direct {v0}, Lio/reactivex/android/schedulers/AndroidSchedulers$1;-><init>()V
@@ -36,10 +34,8 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/AssertionError;
 
     const-string v1, "No instances."
@@ -54,7 +50,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/android/schedulers/AndroidSchedulers;->from(Landroid/os/Looper;Z)Lio/reactivex/Scheduler;
 
     move-result-object p0
@@ -72,7 +67,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
@@ -92,14 +86,12 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 3
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object v0
 
     const/4 v1, 0x1
 
-    .line 4
     :try_start_0
     invoke-virtual {v0, v1}, Landroid/os/Message;->setAsynchronous(Z)V
     :try_end_0
@@ -110,11 +102,9 @@
     :catch_0
     const/4 p1, 0x0
 
-    .line 5
     :goto_0
     invoke-virtual {v0}, Landroid/os/Message;->recycle()V
 
-    .line 6
     :cond_1
     :goto_1
     new-instance v0, Lio/reactivex/android/schedulers/HandlerScheduler;
@@ -127,7 +117,6 @@
 
     return-object v0
 
-    .line 7
     :cond_2
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -141,7 +130,6 @@
 .method public static mainThread()Lio/reactivex/Scheduler;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/reactivex/android/schedulers/AndroidSchedulers;->MAIN_THREAD:Lio/reactivex/Scheduler;
 
     invoke-static {v0}, Lio/reactivex/android/plugins/RxAndroidPlugins;->onMainThreadScheduler(Lio/reactivex/Scheduler;)Lio/reactivex/Scheduler;

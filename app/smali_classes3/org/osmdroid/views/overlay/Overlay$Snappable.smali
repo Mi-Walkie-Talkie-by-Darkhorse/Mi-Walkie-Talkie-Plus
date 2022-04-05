@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/Overlay$Snappable;
 .super Ljava/lang/Object;
-.source "Overlay.java"
 
 
 # annotations

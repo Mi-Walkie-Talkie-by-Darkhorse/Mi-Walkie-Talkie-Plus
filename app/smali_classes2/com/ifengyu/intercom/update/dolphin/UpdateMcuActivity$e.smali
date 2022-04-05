@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$e;
 .super Ljava/lang/Object;
-.source "UpdateMcuActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;->values()[Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/fence/GeoFenceListener;
 .super Ljava/lang/Object;
-.source "GeoFenceListener.java"
 
 
 # virtual methods

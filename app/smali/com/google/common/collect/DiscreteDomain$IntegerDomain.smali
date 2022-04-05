@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/DiscreteDomain$IntegerDomain;
 .super Lcom/google/common/collect/DiscreteDomain;
-.source "DiscreteDomain.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -36,7 +35,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;
 
     invoke-direct {v0}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;-><init>()V
@@ -49,7 +47,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/DiscreteDomain;-><init>()V
 
     return-void
@@ -58,7 +55,6 @@
 .method static synthetic access$000()Lcom/google/common/collect/DiscreteDomain$IntegerDomain;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->INSTANCE:Lcom/google/common/collect/DiscreteDomain$IntegerDomain;
 
     return-object v0
@@ -67,7 +63,6 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->INSTANCE:Lcom/google/common/collect/DiscreteDomain$IntegerDomain;
 
     return-object v0
@@ -78,7 +73,6 @@
 .method public bridge synthetic distance(Ljava/lang/Comparable;Ljava/lang/Comparable;)J
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Integer;
 
     check-cast p2, Ljava/lang/Integer;
@@ -93,7 +87,6 @@
 .method public distance(Ljava/lang/Integer;Ljava/lang/Integer;)J
     .locals 2
 
-    .line 2
     invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
 
     move-result p2
@@ -114,7 +107,6 @@
 .method public bridge synthetic maxValue()Ljava/lang/Comparable;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->maxValue()Ljava/lang/Integer;
 
     move-result-object v0
@@ -127,7 +119,6 @@
 
     const v0, 0x7fffffff
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -138,7 +129,6 @@
 .method public bridge synthetic minValue()Ljava/lang/Comparable;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->minValue()Ljava/lang/Integer;
 
     move-result-object v0
@@ -151,7 +141,6 @@
 
     const/high16 v0, -0x80000000
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -162,7 +151,6 @@
 .method public bridge synthetic next(Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->next(Ljava/lang/Integer;)Ljava/lang/Integer;
@@ -175,7 +163,6 @@
 .method public next(Ljava/lang/Integer;)Ljava/lang/Integer;
     .locals 1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result p1
@@ -191,7 +178,6 @@
     :cond_0
     add-int/lit8 p1, p1, 0x1
 
-    .line 3
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -203,7 +189,6 @@
 .method public bridge synthetic previous(Ljava/lang/Comparable;)Ljava/lang/Comparable;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->previous(Ljava/lang/Integer;)Ljava/lang/Integer;
@@ -216,7 +201,6 @@
 .method public previous(Ljava/lang/Integer;)Ljava/lang/Integer;
     .locals 1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result p1
@@ -232,7 +216,6 @@
     :cond_0
     add-int/lit8 p1, p1, -0x1
 
-    .line 3
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1

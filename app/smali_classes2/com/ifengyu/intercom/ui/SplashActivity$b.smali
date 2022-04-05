@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/SplashActivity$b;
 .super Ljava/lang/Object;
-.source "SplashActivity.java"
 
 # interfaces
 .implements Lio/reactivex/ObservableOnSubscribe;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/SplashActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$b;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -65,12 +63,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 2
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/SplashActivity$b;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/SplashActivity;->a(Lcom/ifengyu/intercom/ui/SplashActivity;)Lcom/ifengyu/intercom/bean/AdModel;
@@ -79,7 +75,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 3
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/SplashActivity$b;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     iget-object v4, v2, Lcom/ifengyu/intercom/bean/AdModel;->imagePath:Ljava/lang/String;
@@ -90,7 +85,6 @@
 
     iput-object v3, v2, Lcom/ifengyu/intercom/bean/AdModel;->type:Ljava/lang/String;
 
-    .line 4
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v3
@@ -107,16 +101,13 @@
 
     add-long/2addr v7, v0
 
-    .line 5
     invoke-static {v7, v8}, Landroid/os/SystemClock;->sleep(J)V
 
-    .line 6
     :cond_0
     invoke-interface {p1, v2}, Lio/reactivex/Emitter;->onNext(Ljava/lang/Object;)V
 
     return-void
 
-    .line 7
     :cond_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -134,10 +125,8 @@
 
     add-long/2addr v6, v0
 
-    .line 8
     invoke-static {v6, v7}, Landroid/os/SystemClock;->sleep(J)V
 
-    .line 9
     :cond_2
     invoke-interface {p1}, Lio/reactivex/Emitter;->onComplete()V
 

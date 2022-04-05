@@ -1,6 +1,5 @@
 .class Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$4;
 .super Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$RunnableEx;
-.source "SourceFile"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$4;->this$0:Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;
 
     invoke-direct {p0}, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$RunnableEx;-><init>()V
@@ -35,7 +33,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$4;->this$0:Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;
 
     invoke-virtual {p0}, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$RunnableEx;->getArg()Ljava/lang/Object;

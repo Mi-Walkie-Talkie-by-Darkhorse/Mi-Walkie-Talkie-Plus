@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlinx/android/parcel/IgnoredOnParcel;
 .super Ljava/lang/Object;
-.source "IgnoredOnParcel.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

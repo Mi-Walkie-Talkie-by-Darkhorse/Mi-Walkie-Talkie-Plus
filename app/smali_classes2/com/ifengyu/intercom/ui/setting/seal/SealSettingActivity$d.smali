@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$d;
 .super Ljava/lang/Object;
-.source "SealSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$d;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;->getOption()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState$SEAL_BTEAR_OPTION;
@@ -76,7 +73,6 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;->hasBtEar()Z
@@ -85,14 +81,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;->getBtEar()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarInfo;
 
     move-result-object v0
 
-    .line 4
     :try_start_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$d;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
@@ -104,7 +98,6 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 5
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$d;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;->d(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;)Landroid/widget/TextView;
@@ -146,12 +139,10 @@
     :catch_0
     move-exception v0
 
-    .line 6
     invoke-virtual {v0}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     goto :goto_0
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$d;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
@@ -163,7 +154,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;
 
@@ -175,7 +165,6 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$d;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;->c(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;)Landroid/widget/LinearLayout;

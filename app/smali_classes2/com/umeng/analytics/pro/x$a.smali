@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/analytics/pro/x$a;
 .super Ljava/lang/Object;
-.source "SessionIdManager.java"
 
 
 # annotations

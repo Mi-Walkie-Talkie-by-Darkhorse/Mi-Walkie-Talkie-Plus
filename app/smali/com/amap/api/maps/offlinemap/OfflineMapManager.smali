@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 .super Ljava/lang/Object;
-.source "OfflineMapManager.java"
 
 
 # annotations
@@ -32,20 +31,16 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineMapDownloadListener;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->d:Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineMapDownloadListener;
 
-    .line 3
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->c:Landroid/content/Context;
 
-    .line 4
     new-instance p2, Landroid/os/Handler;
 
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->c:Landroid/content/Context;
@@ -58,7 +53,6 @@
 
     iput-object p2, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->f:Landroid/os/Handler;
 
-    .line 5
     new-instance p2, Landroid/os/Handler;
 
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->c:Landroid/content/Context;
@@ -71,7 +65,6 @@
 
     iput-object p2, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->g:Landroid/os/Handler;
 
-    .line 6
     invoke-direct {p0, p1}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a(Landroid/content/Context;)V
 
     return-void
@@ -80,20 +73,16 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineMapDownloadListener;Lcom/amap/api/maps/AMap;)V
     .locals 0
 
-    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
     iput-object p2, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->d:Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineMapDownloadListener;
 
-    .line 9
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->c:Landroid/content/Context;
 
-    .line 10
     new-instance p2, Landroid/os/Handler;
 
     iget-object p3, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->c:Landroid/content/Context;
@@ -106,7 +95,6 @@
 
     iput-object p2, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->f:Landroid/os/Handler;
 
-    .line 11
     new-instance p2, Landroid/os/Handler;
 
     iget-object p3, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->c:Landroid/content/Context;
@@ -119,7 +107,6 @@
 
     iput-object p2, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->g:Landroid/os/Handler;
 
-    .line 12
     :try_start_0
     invoke-direct {p0, p1}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a(Landroid/content/Context;)V
     :try_end_0
@@ -130,7 +117,6 @@
     :catchall_0
     move-exception p1
 
-    .line 13
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -139,7 +125,6 @@
 .method static synthetic a(Lcom/amap/api/maps/offlinemap/OfflineMapManager;)Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineMapDownloadListener;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->d:Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineMapDownloadListener;
 
     return-object p0
@@ -148,7 +133,6 @@
 .method private a(Landroid/content/Context;)V
     .locals 1
 
-    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
@@ -157,30 +141,25 @@
 
     const/4 v0, 0x0
 
-    .line 3
     sput-boolean v0, Lcom/amap/api/col/l3/aw;->b:Z
 
-    .line 4
     invoke-static {p1}, Lcom/amap/api/col/l3/aw;->a(Landroid/content/Context;)Lcom/amap/api/col/l3/aw;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
-    .line 5
     new-instance v0, Lcom/amap/api/maps/offlinemap/OfflineMapManager$1;
 
     invoke-direct {v0, p0}, Lcom/amap/api/maps/offlinemap/OfflineMapManager$1;-><init>(Lcom/amap/api/maps/offlinemap/OfflineMapManager;)V
 
     invoke-virtual {p1, v0}, Lcom/amap/api/col/l3/aw;->a(Lcom/amap/api/col/l3/aw$a;)V
 
-    .line 6
     :try_start_0
     iget-object p1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
     invoke-virtual {p1}, Lcom/amap/api/col/l3/aw;->a()V
 
-    .line 7
     iget-object p1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/aw;->f:Lcom/amap/api/col/l3/ba;
@@ -194,7 +173,6 @@
     :catchall_0
     move-exception p1
 
-    .line 8
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -208,7 +186,6 @@
         }
     .end annotation
 
-    .line 9
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/aw;->a(Ljava/lang/String;)V
@@ -219,7 +196,6 @@
 .method static synthetic b(Lcom/amap/api/maps/offlinemap/OfflineMapManager;)Landroid/os/Handler;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->f:Landroid/os/Handler;
 
     return-object p0
@@ -228,7 +204,6 @@
 .method static synthetic c(Lcom/amap/api/maps/offlinemap/OfflineMapManager;)Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineLoadedListener;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->e:Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineLoadedListener;
 
     return-object p0
@@ -239,13 +214,11 @@
 .method public final destroy()V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/aw;->f()V
@@ -253,34 +226,27 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->d:Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineMapDownloadListener;
 
-    .line 4
     iget-object v1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->f:Landroid/os/Handler;
 
     if-eqz v1, :cond_1
 
-    .line 5
     iget-object v1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->f:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 6
     :cond_1
     iput-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->f:Landroid/os/Handler;
 
-    .line 7
     iget-object v1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->g:Landroid/os/Handler;
 
     if-eqz v1, :cond_2
 
-    .line 8
     iget-object v1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->g:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 9
     :cond_2
     iput-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->g:Landroid/os/Handler;
     :try_end_0
@@ -291,7 +257,6 @@
     :catchall_0
     move-exception v0
 
-    .line 10
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -305,7 +270,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
@@ -318,7 +282,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -332,7 +295,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
@@ -345,7 +307,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -359,7 +320,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->c:Landroid/content/Context;
 
@@ -369,19 +329,16 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->getItemByProvinceName(Ljava/lang/String;)Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    .line 3
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -399,12 +356,10 @@
 
     check-cast v0, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 5
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/City;->getCity()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 6
     iget-object v1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->g:Landroid/os/Handler;
 
     new-instance v2, Lcom/amap/api/maps/offlinemap/OfflineMapManager$2;
@@ -418,7 +373,6 @@
     :cond_0
     return-void
 
-    .line 7
     :cond_1
     new-instance p1, Lcom/amap/api/maps/AMapException;
 
@@ -428,7 +382,6 @@
 
     throw p1
 
-    .line 8
     :cond_2
     new-instance p1, Lcom/amap/api/maps/AMapException;
 
@@ -443,7 +396,6 @@
     :catchall_0
     move-exception p1
 
-    .line 9
     instance-of v0, p1, Lcom/amap/api/maps/AMapException;
 
     if-nez v0, :cond_3
@@ -452,12 +404,10 @@
 
     const-string v1, "downloadByProvinceName"
 
-    .line 10
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 11
     :cond_3
     check-cast p1, Lcom/amap/api/maps/AMapException;
 
@@ -475,7 +425,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a:Lcom/amap/api/col/l3/ba;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/ba;->c()Ljava/util/ArrayList;
@@ -496,7 +445,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a:Lcom/amap/api/col/l3/ba;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/ba;->d()Ljava/util/ArrayList;
@@ -517,7 +465,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a:Lcom/amap/api/col/l3/ba;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/ba;->e()Ljava/util/ArrayList;
@@ -538,7 +485,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a:Lcom/amap/api/col/l3/ba;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/ba;->f()Ljava/util/ArrayList;
@@ -551,7 +497,6 @@
 .method public final getItemByCityCode(Ljava/lang/String;)Lcom/amap/api/maps/offlinemap/OfflineMapCity;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a:Lcom/amap/api/col/l3/ba;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/ba;->a(Ljava/lang/String;)Lcom/amap/api/maps/offlinemap/OfflineMapCity;
@@ -564,7 +509,6 @@
 .method public final getItemByCityName(Ljava/lang/String;)Lcom/amap/api/maps/offlinemap/OfflineMapCity;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a:Lcom/amap/api/col/l3/ba;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/ba;->b(Ljava/lang/String;)Lcom/amap/api/maps/offlinemap/OfflineMapCity;
@@ -577,7 +521,6 @@
 .method public final getItemByProvinceName(Ljava/lang/String;)Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a:Lcom/amap/api/col/l3/ba;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/ba;->c(Ljava/lang/String;)Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
@@ -598,7 +541,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a:Lcom/amap/api/col/l3/ba;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/ba;->b()Ljava/util/ArrayList;
@@ -619,7 +561,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a:Lcom/amap/api/col/l3/ba;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/ba;->a()Ljava/util/ArrayList;
@@ -632,7 +573,6 @@
 .method public final pause()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/aw;->e()V
@@ -643,7 +583,6 @@
 .method public final remove(Ljava/lang/String;)V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
@@ -653,14 +592,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/aw;->c(Ljava/lang/String;)V
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a:Lcom/amap/api/col/l3/ba;
 
@@ -670,7 +607,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 4
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object v1
@@ -679,13 +615,11 @@
 
     goto :goto_1
 
-    .line 5
     :cond_1
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object p1
 
-    .line 6
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -703,12 +637,10 @@
 
     check-cast v0, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 7
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/City;->getCity()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 8
     iget-object v1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->g:Landroid/os/Handler;
 
     new-instance v2, Lcom/amap/api/maps/offlinemap/OfflineMapManager$3;
@@ -722,14 +654,12 @@
     :cond_2
     return-void
 
-    .line 9
     :cond_3
     :goto_1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->d:Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineMapDownloadListener;
 
     if-eqz v0, :cond_4
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->d:Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineMapDownloadListener;
 
     const/4 v1, 0x0
@@ -746,7 +676,6 @@
     :catchall_0
     move-exception p1
 
-    .line 11
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -761,7 +690,6 @@
 .method public final setOnOfflineLoadedListener(Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineLoadedListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->e:Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineLoadedListener;
 
     return-void
@@ -770,7 +698,6 @@
 .method public final stop()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->b:Lcom/amap/api/col/l3/aw;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/aw;->d()V
@@ -786,21 +713,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->getItemByCityCode(Ljava/lang/String;)Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/City;->getCity()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/City;->getCity()Ljava/lang/String;
 
     move-result-object p1
@@ -809,7 +733,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     new-instance p1, Lcom/amap/api/maps/AMapException;
 
@@ -828,7 +751,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a(Ljava/lang/String;)V
 
     return-void
@@ -842,7 +764,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->a(Ljava/lang/String;)V
 
     return-void

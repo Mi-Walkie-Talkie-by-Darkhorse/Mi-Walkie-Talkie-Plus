@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/uc/crashsdk/export/ICrashClient;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # static fields

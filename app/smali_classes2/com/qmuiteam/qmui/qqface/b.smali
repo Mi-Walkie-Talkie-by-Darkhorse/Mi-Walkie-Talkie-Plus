@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/qqface/b;
 .super Ljava/lang/Object;
-.source "QMUINoQQFaceManager.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/qqface/a;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

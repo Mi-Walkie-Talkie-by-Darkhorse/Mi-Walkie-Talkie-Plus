@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/MainActivity$f;
 .super Landroidx/fragment/app/FragmentPagerAdapter;
-.source "MainActivity.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/MainActivity;Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/MainActivity$f;->a:Lcom/ifengyu/intercom/ui/MainActivity;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/fragment/app/FragmentPagerAdapter;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
     return-void
@@ -36,7 +33,6 @@
 .method public getCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/MainActivity$f;->a:Lcom/ifengyu/intercom/ui/MainActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/MainActivity;->b(Lcom/ifengyu/intercom/ui/MainActivity;)Ljava/util/ArrayList;
@@ -53,7 +49,6 @@
 .method public getItem(I)Landroidx/fragment/app/Fragment;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/MainActivity$f;->a:Lcom/ifengyu/intercom/ui/MainActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/MainActivity;->b(Lcom/ifengyu/intercom/ui/MainActivity;)Ljava/util/ArrayList;
@@ -72,7 +67,6 @@
 .method public getPageTitle(I)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/MainActivity$f;->a:Lcom/ifengyu/intercom/ui/MainActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/MainActivity;->t:[Ljava/lang/String;

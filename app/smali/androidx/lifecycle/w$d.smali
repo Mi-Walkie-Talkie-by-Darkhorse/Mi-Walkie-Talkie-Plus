@@ -1,6 +1,5 @@
 .class public Landroidx/lifecycle/w$d;
 .super Ljava/lang/Object;
-.source "ViewModelProvider.java"
 
 # interfaces
 .implements Landroidx/lifecycle/w$b;
@@ -25,7 +24,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,19 +34,16 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget-object v0, Landroidx/lifecycle/w$d;->a:Landroidx/lifecycle/w$d;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Landroidx/lifecycle/w$d;
 
     invoke-direct {v0}, Landroidx/lifecycle/w$d;-><init>()V
 
     sput-object v0, Landroidx/lifecycle/w$d;->a:Landroidx/lifecycle/w$d;
 
-    .line 3
     :cond_0
     sget-object v0, Landroidx/lifecycle/w$d;->a:Landroidx/lifecycle/w$d;
 
@@ -78,7 +73,6 @@
 
     const-string v0, "Cannot create an instance of "
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
@@ -94,7 +88,6 @@
     :catch_0
     move-exception v1
 
-    .line 2
     new-instance v2, Ljava/lang/RuntimeException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -116,7 +109,6 @@
     :catch_1
     move-exception v1
 
-    .line 3
     new-instance v2, Ljava/lang/RuntimeException;
 
     new-instance v3, Ljava/lang/StringBuilder;

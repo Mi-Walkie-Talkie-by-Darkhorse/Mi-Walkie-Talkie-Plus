@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/ActivityChooserView$d;
 .super Landroidx/appcompat/widget/t;
-.source "ActivityChooserView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/ActivityChooserView;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ActivityChooserView$d;->j:Landroidx/appcompat/widget/ActivityChooserView;
 
     invoke-direct {p0, p2}, Landroidx/appcompat/widget/t;-><init>(Landroid/view/View;)V
@@ -35,7 +33,6 @@
 .method public a()Landroidx/appcompat/view/menu/o;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ActivityChooserView$d;->j:Landroidx/appcompat/widget/ActivityChooserView;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActivityChooserView;->getListPopupWindow()Landroidx/appcompat/widget/ListPopupWindow;
@@ -48,7 +45,6 @@
 .method protected b()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ActivityChooserView$d;->j:Landroidx/appcompat/widget/ActivityChooserView;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActivityChooserView;->c()Z
@@ -61,7 +57,6 @@
 .method protected c()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ActivityChooserView$d;->j:Landroidx/appcompat/widget/ActivityChooserView;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActivityChooserView;->a()Z

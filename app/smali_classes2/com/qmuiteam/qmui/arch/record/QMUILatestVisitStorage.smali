@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/arch/record/QMUILatestVisitStorage;
 .super Ljava/lang/Object;
-.source "QMUILatestVisitStorage.java"
 
 
 # static fields

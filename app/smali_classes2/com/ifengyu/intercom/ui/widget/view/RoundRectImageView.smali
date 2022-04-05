@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;
 .super Landroidx/appcompat/widget/AppCompatImageView;
-.source "RoundRectImageView.java"
 
 
 # instance fields
@@ -39,7 +38,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -50,7 +48,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -59,12 +56,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 p1, 0x5
 
-    .line 4
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->a(I)I
 
     move-result p2
@@ -73,18 +68,14 @@
 
     const/4 p2, 0x0
 
-    .line 5
     iput p2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->b:I
 
     const/4 p2, 0x1
 
-    .line 6
     iput p2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->c:I
 
-    .line 7
     iput p2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->d:I
 
-    .line 8
     new-instance p2, Landroid/graphics/PorterDuffXfermode;
 
     sget-object p3, Landroid/graphics/PorterDuff$Mode;->DST_IN:Landroid/graphics/PorterDuff$Mode;
@@ -93,21 +84,18 @@
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->j:Landroid/graphics/Xfermode;
 
-    .line 9
     invoke-virtual {p0}, Landroid/widget/ImageView;->getScaleType()Landroid/widget/ImageView$ScaleType;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->e:Landroid/widget/ImageView$ScaleType;
 
-    .line 10
     new-instance p2, Landroid/graphics/Paint;
 
     invoke-direct {p2, p1}, Landroid/graphics/Paint;-><init>(I)V
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->h:Landroid/graphics/Paint;
 
-    .line 11
     new-instance p2, Landroid/graphics/Paint;
 
     invoke-direct {p2, p1}, Landroid/graphics/Paint;-><init>(I)V
@@ -122,7 +110,6 @@
 
     int-to-float p1, p1
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -151,7 +138,6 @@
 .method private getShapeBitmap()Landroid/graphics/Bitmap;
     .locals 6
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
 
     move-result v0
@@ -166,19 +152,16 @@
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Landroid/graphics/Canvas;
 
     invoke-direct {v1, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 3
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->b:I
 
     iget v3, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->d:I
 
     if-ne v2, v3, :cond_0
 
-    .line 4
     invoke-virtual {v1}, Landroid/graphics/Canvas;->getWidth()I
 
     move-result v2
@@ -209,7 +192,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     new-instance v2, Landroid/graphics/RectF;
 
@@ -248,7 +230,6 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->f:Ljava/lang/ref/WeakReference;
 
     const/4 v1, 0x0
@@ -271,14 +252,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->isRecycled()Z
 
     move-result v3
 
     if-eqz v3, :cond_4
 
-    .line 3
     :cond_1
     invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -286,7 +265,6 @@
 
     if-eqz v3, :cond_4
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
 
     move-result v0
@@ -301,22 +279,18 @@
 
     move-result-object v0
 
-    .line 5
     new-instance v4, Landroid/graphics/Canvas;
 
     invoke-direct {v4, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 6
     invoke-virtual {v3, v4}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 7
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->h:Landroid/graphics/Paint;
 
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->j:Landroid/graphics/Xfermode;
 
     invoke-virtual {v3, v5}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
-    .line 8
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->g:Landroid/graphics/Bitmap;
 
     if-eqz v3, :cond_2
@@ -327,7 +301,6 @@
 
     if-eqz v3, :cond_3
 
-    .line 9
     :cond_2
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->getShapeBitmap()Landroid/graphics/Bitmap;
 
@@ -335,7 +308,6 @@
 
     iput-object v3, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->g:Landroid/graphics/Bitmap;
 
-    .line 10
     :cond_3
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->g:Landroid/graphics/Bitmap;
 
@@ -343,12 +315,10 @@
 
     invoke-virtual {v4, v3, v2, v2, v5}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 11
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundRectImageView;->h:Landroid/graphics/Paint;
 
     invoke-virtual {v3, v1}, Landroid/graphics/Paint;->setXfermode(Landroid/graphics/Xfermode;)Landroid/graphics/Xfermode;
 
-    .line 12
     :cond_4
     invoke-virtual {p1, v0, v2, v2, v1}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 

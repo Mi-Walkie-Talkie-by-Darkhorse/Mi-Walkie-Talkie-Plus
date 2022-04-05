@@ -1,6 +1,5 @@
 .class synthetic Lpl/droidsonroids/gif/d$a;
 .super Ljava/lang/Object;
-.source "GifRenderingExecutor.java"
 
 
 # annotations

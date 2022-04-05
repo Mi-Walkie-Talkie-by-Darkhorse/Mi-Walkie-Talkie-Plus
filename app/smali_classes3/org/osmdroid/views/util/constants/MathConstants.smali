@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/util/constants/MathConstants;
 .super Ljava/lang/Object;
-.source "MathConstants.java"
 
 
 # static fields

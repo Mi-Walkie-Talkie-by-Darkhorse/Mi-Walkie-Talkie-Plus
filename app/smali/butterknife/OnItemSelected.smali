@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/OnItemSelected;
 .super Ljava/lang/Object;
-.source "OnItemSelected.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/j/p$a;
 .super Ljava/lang/Object;
-.source "ModelLoaderRegistry.java"
 
 
 # annotations
@@ -38,10 +37,8 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -71,7 +68,6 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lcom/bumptech/glide/load/j/p$a;->a:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -86,7 +82,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object p1, p1, Lcom/bumptech/glide/load/j/p$a$a;->a:Ljava/util/List;
 
@@ -97,7 +92,6 @@
 .method public a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/j/p$a;->a:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
@@ -120,7 +114,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/j/p$a;->a:Ljava/util/Map;
 
     new-instance v1, Lcom/bumptech/glide/load/j/p$a$a;
@@ -137,7 +130,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p2, Ljava/lang/IllegalStateException;
 

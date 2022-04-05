@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableRetryPredicate;
 .super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
-.source "ObservableRetryPredicate.java"
 
 
 # annotations
@@ -51,13 +50,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
 
-    .line 2
     iput-object p4, p0, Lio/reactivex/internal/operators/observable/ObservableRetryPredicate;->predicate:Lio/reactivex/functions/Predicate;
 
-    .line 3
     iput-wide p2, p0, Lio/reactivex/internal/operators/observable/ObservableRetryPredicate;->count:J
 
     return-void
@@ -75,15 +71,12 @@
         }
     .end annotation
 
-    .line 1
     new-instance v5, Lio/reactivex/internal/disposables/SequentialDisposable;
 
     invoke-direct {v5}, Lio/reactivex/internal/disposables/SequentialDisposable;-><init>()V
 
-    .line 2
     invoke-interface {p1, v5}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     new-instance v7, Lio/reactivex/internal/operators/observable/ObservableRetryPredicate$RepeatObserver;
 
     iget-wide v2, p0, Lio/reactivex/internal/operators/observable/ObservableRetryPredicate;->count:J
@@ -98,7 +91,6 @@
 
     invoke-direct/range {v0 .. v6}, Lio/reactivex/internal/operators/observable/ObservableRetryPredicate$RepeatObserver;-><init>(Lio/reactivex/Observer;JLio/reactivex/functions/Predicate;Lio/reactivex/internal/disposables/SequentialDisposable;Lio/reactivex/ObservableSource;)V
 
-    .line 4
     invoke-virtual {v7}, Lio/reactivex/internal/operators/observable/ObservableRetryPredicate$RepeatObserver;->subscribeNext()V
 
     return-void

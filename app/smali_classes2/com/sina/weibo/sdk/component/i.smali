@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/component/i;
 .super Lcom/sina/weibo/sdk/component/j;
-.source "WeiboGameClient.java"
 
 
 # instance fields
@@ -15,16 +14,12 @@
 .method public constructor <init>(Landroid/app/Activity;Lcom/sina/weibo/sdk/component/e;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/sina/weibo/sdk/component/j;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/sina/weibo/sdk/component/i;->b:Landroid/app/Activity;
 
-    .line 3
     iput-object p2, p0, Lcom/sina/weibo/sdk/component/i;->c:Lcom/sina/weibo/sdk/component/e;
 
-    .line 4
     invoke-virtual {p2}, Lcom/sina/weibo/sdk/component/e;->e()Lb/b/a/a/c/b;
 
     move-result-object p1
@@ -39,15 +34,12 @@
 .method public onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/j;->a:Lcom/sina/weibo/sdk/component/c;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2}, Lcom/sina/weibo/sdk/component/c;->a(Landroid/webkit/WebView;Ljava/lang/String;)V
 
-    .line 3
     :cond_0
     invoke-super {p0, p1, p2}, Landroid/webkit/WebViewClient;->onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
 
@@ -57,15 +49,12 @@
 .method public onPageStarted(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/j;->a:Lcom/sina/weibo/sdk/component/c;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2, p3}, Lcom/sina/weibo/sdk/component/c;->a(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
-    .line 3
     :cond_0
     invoke-super {p0, p1, p2, p3}, Landroid/webkit/WebViewClient;->onPageStarted(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
@@ -75,15 +64,12 @@
 .method public onReceivedError(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/j;->a:Lcom/sina/weibo/sdk/component/c;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2, p3, p4}, Lcom/sina/weibo/sdk/component/c;->a(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     :cond_0
     invoke-super {p0, p1, p2, p3, p4}, Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V
 
@@ -93,15 +79,12 @@
 .method public onReceivedSslError(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/j;->a:Lcom/sina/weibo/sdk/component/c;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2, p3}, Lcom/sina/weibo/sdk/component/c;->a(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)V
 
-    .line 3
     :cond_0
     invoke-super {p0, p1, p2, p3}, Landroid/webkit/WebViewClient;->onReceivedSslError(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)V
 
@@ -111,45 +94,37 @@
 .method public shouldOverrideUrlLoading(Landroid/webkit/WebView;Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/j;->a:Lcom/sina/weibo/sdk/component/c;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2}, Lcom/sina/weibo/sdk/component/c;->b(Landroid/webkit/WebView;Ljava/lang/String;)Z
 
     :cond_0
     const-string v0, "sinaweibo://browser/close"
 
-    .line 3
     invoke-virtual {p2, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 4
     invoke-static {p2}, Lcom/sina/weibo/sdk/utils/i;->b(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1}, Landroid/os/Bundle;->isEmpty()Z
 
     move-result p2
 
     if-nez p2, :cond_1
 
-    .line 6
     iget-object p2, p0, Lcom/sina/weibo/sdk/component/i;->d:Lb/b/a/a/c/b;
 
     if-eqz p2, :cond_1
 
-    .line 7
     invoke-interface {p2, p1}, Lb/b/a/a/c/b;->a(Landroid/os/Bundle;)V
 
-    .line 8
     :cond_1
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/i;->b:Landroid/app/Activity;
 
@@ -167,7 +142,6 @@
 
     return p1
 
-    .line 9
     :cond_2
     invoke-super {p0, p1, p2}, Landroid/webkit/WebViewClient;->shouldOverrideUrlLoading(Landroid/webkit/WebView;Ljava/lang/String;)Z
 

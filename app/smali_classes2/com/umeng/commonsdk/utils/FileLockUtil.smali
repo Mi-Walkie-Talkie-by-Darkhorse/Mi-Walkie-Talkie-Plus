@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/utils/FileLockUtil;
 .super Ljava/lang/Object;
-.source "FileLockUtil.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -29,7 +26,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     new-instance v1, Ljava/io/RandomAccessFile;
 
@@ -37,7 +33,6 @@
 
     invoke-direct {v1, p0, v2}, Ljava/io/RandomAccessFile;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {v1}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
 
     move-result-object p0
@@ -45,7 +40,6 @@
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_3
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 3
     :try_start_1
     invoke-virtual {p0}, Ljava/nio/channels/FileChannel;->lock()Ljava/nio/channels/FileLock;
 
@@ -71,7 +65,6 @@
 
     move-object p0, v0
 
-    .line 4
     :goto_0
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
@@ -82,14 +75,12 @@
 
     move-object p0, v0
 
-    .line 5
     :goto_1
     invoke-virtual {v1}, Ljava/io/FileNotFoundException;->printStackTrace()V
 
     :goto_2
     if-eqz p0, :cond_0
 
-    .line 6
     :try_start_2
     invoke-virtual {p0}, Ljava/nio/channels/FileChannel;->close()V
     :try_end_2
@@ -100,7 +91,6 @@
     :catch_4
     move-exception p0
 
-    .line 7
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_0
@@ -113,7 +103,6 @@
 .method public doFileOperateion(Ljava/io/File;Lcom/umeng/commonsdk/utils/FileLockCallback;)V
     .locals 2
 
-    .line 31
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -122,13 +111,11 @@
 
     return-void
 
-    .line 32
     :cond_0
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/FileLockUtil;->lockObject:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 33
     :try_start_0
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -142,7 +129,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 34
     :try_start_1
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -153,11 +139,9 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 35
     :try_start_2
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 36
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p1
@@ -172,7 +156,6 @@
     :catch_0
     move-exception p1
 
-    .line 37
     :goto_0
     :try_start_3
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
@@ -189,17 +172,14 @@
     :catch_1
     move-exception p1
 
-    .line 38
     :try_start_4
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 39
     :try_start_5
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 40
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p1
@@ -216,12 +196,10 @@
 
     goto :goto_0
 
-    .line 41
     :goto_1
     :try_start_6
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 42
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p2
@@ -236,15 +214,12 @@
     :catch_3
     move-exception p2
 
-    .line 43
     :try_start_7
     invoke-virtual {p2}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 44
     :goto_2
     throw p1
 
-    .line 45
     :cond_1
     :goto_3
     monitor-exit v0
@@ -264,7 +239,6 @@
 .method public doFileOperateion(Ljava/io/File;Lcom/umeng/commonsdk/utils/FileLockCallback;I)V
     .locals 2
 
-    .line 16
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -273,13 +247,11 @@
 
     return-void
 
-    .line 17
     :cond_0
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/FileLockUtil;->lockObject:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 18
     :try_start_0
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -293,18 +265,15 @@
 
     if-eqz v1, :cond_1
 
-    .line 19
     :try_start_1
     invoke-interface {p2, p1, p3}, Lcom/umeng/commonsdk/utils/FileLockCallback;->onFileLock(Ljava/io/File;I)Z
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 20
     :try_start_2
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 21
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p1
@@ -318,7 +287,6 @@
     :catchall_0
     move-exception p1
 
-    .line 22
     :goto_0
     :try_start_3
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
@@ -335,17 +303,14 @@
     :catch_0
     move-exception p1
 
-    .line 23
     :try_start_4
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 24
     :try_start_5
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 25
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p1
@@ -361,12 +326,10 @@
 
     goto :goto_0
 
-    .line 26
     :goto_1
     :try_start_6
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 27
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p2
@@ -380,15 +343,12 @@
     :catchall_3
     move-exception p2
 
-    .line 28
     :try_start_7
     invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 29
     :goto_2
     throw p1
 
-    .line 30
     :cond_1
     :goto_3
     monitor-exit v0
@@ -408,7 +368,6 @@
 .method public doFileOperateion(Ljava/io/File;Lcom/umeng/commonsdk/utils/FileLockCallback;Ljava/lang/Object;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -417,13 +376,11 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/FileLockUtil;->lockObject:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -437,7 +394,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 4
     :try_start_1
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -448,11 +404,9 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5
     :try_start_2
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 6
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p1
@@ -467,7 +421,6 @@
     :catch_0
     move-exception p1
 
-    .line 7
     :goto_0
     :try_start_3
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
@@ -484,17 +437,14 @@
     :catch_1
     move-exception p1
 
-    .line 8
     :try_start_4
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 9
     :try_start_5
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 10
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p1
@@ -511,12 +461,10 @@
 
     goto :goto_0
 
-    .line 11
     :goto_1
     :try_start_6
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 12
     invoke-virtual {v1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p2
@@ -531,15 +479,12 @@
     :catch_3
     move-exception p2
 
-    .line 13
     :try_start_7
     invoke-virtual {p2}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 14
     :goto_2
     throw p1
 
-    .line 15
     :cond_1
     :goto_3
     monitor-exit v0
@@ -559,12 +504,10 @@
 .method public doFileOperateion(Ljava/lang/String;Lcom/umeng/commonsdk/utils/FileLockCallback;)V
     .locals 2
 
-    .line 46
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 47
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
@@ -573,13 +516,11 @@
 
     return-void
 
-    .line 48
     :cond_0
     iget-object v1, p0, Lcom/umeng/commonsdk/utils/FileLockUtil;->lockObject:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 49
     :try_start_0
     invoke-static {p1}, Lcom/umeng/commonsdk/utils/FileLockUtil;->getFileLock(Ljava/lang/String;)Ljava/nio/channels/FileLock;
 
@@ -589,7 +530,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 50
     :try_start_1
     invoke-virtual {v0}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -600,11 +540,9 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 51
     :try_start_2
     invoke-virtual {p1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 52
     invoke-virtual {p1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p1
@@ -619,7 +557,6 @@
     :catch_0
     move-exception p1
 
-    .line 53
     :goto_0
     :try_start_3
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
@@ -636,17 +573,14 @@
     :catch_1
     move-exception p2
 
-    .line 54
     :try_start_4
     invoke-virtual {p2}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 55
     :try_start_5
     invoke-virtual {p1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 56
     invoke-virtual {p1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p1
@@ -663,12 +597,10 @@
 
     goto :goto_0
 
-    .line 57
     :goto_1
     :try_start_6
     invoke-virtual {p1}, Ljava/nio/channels/FileLock;->release()V
 
-    .line 58
     invoke-virtual {p1}, Ljava/nio/channels/FileLock;->channel()Ljava/nio/channels/FileChannel;
 
     move-result-object p1
@@ -683,15 +615,12 @@
     :catch_3
     move-exception p1
 
-    .line 59
     :try_start_7
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 60
     :goto_2
     throw p2
 
-    .line 61
     :cond_1
     :goto_3
     monitor-exit v1

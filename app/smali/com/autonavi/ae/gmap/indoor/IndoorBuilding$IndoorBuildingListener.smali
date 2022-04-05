@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/indoor/IndoorBuilding$IndoorBuildingListener;
 .super Ljava/lang/Object;
-.source "IndoorBuilding.java"
 
 
 # annotations

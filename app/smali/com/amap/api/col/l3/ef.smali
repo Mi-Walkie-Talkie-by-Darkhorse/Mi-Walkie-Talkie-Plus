@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ef;
 .super Ljava/lang/Object;
-.source "RandomUtil.java"
 
 
 # annotations
@@ -25,19 +24,16 @@
 .method public static a()Ljava/lang/String;
     .locals 7
 
-    .line 1
     new-instance v0, Ljava/util/Random;
 
     invoke-direct {v0}, Ljava/util/Random;-><init>()V
 
     const/16 v1, 0xa
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/util/Random;->nextInt(I)I
 
     move-result v2
 
-    .line 3
     sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const/4 v4, 0x1
@@ -58,31 +54,26 @@
 
     move-result-object v2
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/util/Random;->nextInt(I)I
 
     move-result v1
 
     const/16 v3, 0x64
 
-    .line 5
     invoke-virtual {v0, v3}, Ljava/util/Random;->nextInt(I)I
 
     move-result v0
 
-    .line 6
     new-instance v3, Lcom/amap/api/col/l3/ef$a;
 
     sget-object v5, Lcom/amap/api/col/l3/ef;->a:Ljava/lang/String;
 
     invoke-direct {v3, v5, v0}, Lcom/amap/api/col/l3/ef$a;-><init>(Ljava/lang/String;I)V
 
-    .line 7
     invoke-virtual {v3, v1, v2}, Lcom/amap/api/col/l3/ef$a;->a(ILjava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 8
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -93,7 +84,6 @@
 
     new-array v5, v4, [Ljava/lang/Object;
 
-    .line 9
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -112,7 +102,6 @@
 
     new-array v2, v4, [Ljava/lang/Object;
 
-    .line 10
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0

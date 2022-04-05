@@ -1,6 +1,5 @@
 .class public Lorg/greenrobot/greendao/query/CountQuery;
 .super Lorg/greenrobot/greendao/query/AbstractQuery;
-.source "CountQuery.java"
 
 
 # annotations
@@ -49,10 +48,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p2, p3, p4}, Lorg/greenrobot/greendao/query/AbstractQuery;-><init>(Lorg/greenrobot/greendao/AbstractDao;Ljava/lang/String;[Ljava/lang/String;)V
 
-    .line 3
     iput-object p1, p0, Lorg/greenrobot/greendao/query/CountQuery;->queryData:Lorg/greenrobot/greendao/query/CountQuery$QueryData;
 
     return-void
@@ -61,7 +58,6 @@
 .method synthetic constructor <init>(Lorg/greenrobot/greendao/query/CountQuery$QueryData;Lorg/greenrobot/greendao/AbstractDao;Ljava/lang/String;[Ljava/lang/String;Lorg/greenrobot/greendao/query/CountQuery$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, p4}, Lorg/greenrobot/greendao/query/CountQuery;-><init>(Lorg/greenrobot/greendao/query/CountQuery$QueryData;Lorg/greenrobot/greendao/AbstractDao;Ljava/lang/String;[Ljava/lang/String;)V
 
     return-void
@@ -85,7 +81,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/CountQuery$QueryData;
 
     invoke-static {p2}, Lorg/greenrobot/greendao/query/AbstractQuery;->toStringArray([Ljava/lang/Object;)[Ljava/lang/String;
@@ -96,7 +91,6 @@
 
     invoke-direct {v0, p0, p1, p2, v1}, Lorg/greenrobot/greendao/query/CountQuery$QueryData;-><init>(Lorg/greenrobot/greendao/AbstractDao;Ljava/lang/String;[Ljava/lang/String;Lorg/greenrobot/greendao/query/CountQuery$1;)V
 
-    .line 2
     invoke-virtual {v0}, Lorg/greenrobot/greendao/query/AbstractQueryData;->forCurrentThread()Lorg/greenrobot/greendao/query/AbstractQuery;
 
     move-result-object p0
@@ -111,10 +105,8 @@
 .method public count()J
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/AbstractQuery;->checkThread()V
 
-    .line 2
     iget-object v0, p0, Lorg/greenrobot/greendao/query/AbstractQuery;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     invoke-virtual {v0}, Lorg/greenrobot/greendao/AbstractDao;->getDatabase()Lorg/greenrobot/greendao/database/Database;
@@ -129,7 +121,6 @@
 
     move-result-object v0
 
-    .line 3
     :try_start_0
     invoke-interface {v0}, Landroid/database/Cursor;->moveToNext()Z
 
@@ -137,14 +128,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 4
     invoke-interface {v0}, Landroid/database/Cursor;->isLast()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 5
     invoke-interface {v0}, Landroid/database/Cursor;->getColumnCount()I
 
     move-result v1
@@ -155,19 +144,16 @@
 
     const/4 v1, 0x0
 
-    .line 6
     invoke-interface {v0, v1}, Landroid/database/Cursor;->getLong(I)J
 
     move-result-wide v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     return-wide v1
 
-    .line 8
     :cond_0
     :try_start_1
     new-instance v1, Lorg/greenrobot/greendao/DaoException;
@@ -194,7 +180,6 @@
 
     throw v1
 
-    .line 9
     :cond_1
     new-instance v1, Lorg/greenrobot/greendao/DaoException;
 
@@ -220,7 +205,6 @@
 
     throw v1
 
-    .line 10
     :cond_2
     new-instance v1, Lorg/greenrobot/greendao/DaoException;
 
@@ -235,7 +219,6 @@
     :catchall_0
     move-exception v1
 
-    .line 11
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     throw v1
@@ -251,7 +234,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/CountQuery;->queryData:Lorg/greenrobot/greendao/query/CountQuery$QueryData;
 
     invoke-virtual {v0, p0}, Lorg/greenrobot/greendao/query/AbstractQueryData;->forCurrentThread(Lorg/greenrobot/greendao/query/AbstractQuery;)Lorg/greenrobot/greendao/query/AbstractQuery;
@@ -266,7 +248,6 @@
 .method public bridge synthetic setParameter(ILjava/lang/Boolean;)Lorg/greenrobot/greendao/query/AbstractQuery;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lorg/greenrobot/greendao/query/CountQuery;->setParameter(ILjava/lang/Boolean;)Lorg/greenrobot/greendao/query/CountQuery;
 
     move-result-object p1
@@ -277,7 +258,6 @@
 .method public bridge synthetic setParameter(ILjava/lang/Object;)Lorg/greenrobot/greendao/query/AbstractQuery;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1, p2}, Lorg/greenrobot/greendao/query/CountQuery;->setParameter(ILjava/lang/Object;)Lorg/greenrobot/greendao/query/CountQuery;
 
     move-result-object p1
@@ -288,7 +268,6 @@
 .method public bridge synthetic setParameter(ILjava/util/Date;)Lorg/greenrobot/greendao/query/AbstractQuery;
     .locals 0
 
-    .line 3
     invoke-virtual {p0, p1, p2}, Lorg/greenrobot/greendao/query/CountQuery;->setParameter(ILjava/util/Date;)Lorg/greenrobot/greendao/query/CountQuery;
 
     move-result-object p1
@@ -308,7 +287,6 @@
         }
     .end annotation
 
-    .line 6
     invoke-super {p0, p1, p2}, Lorg/greenrobot/greendao/query/AbstractQuery;->setParameter(ILjava/lang/Boolean;)Lorg/greenrobot/greendao/query/AbstractQuery;
 
     move-result-object p1
@@ -330,7 +308,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-super {p0, p1, p2}, Lorg/greenrobot/greendao/query/AbstractQuery;->setParameter(ILjava/lang/Object;)Lorg/greenrobot/greendao/query/AbstractQuery;
 
     move-result-object p1
@@ -352,7 +329,6 @@
         }
     .end annotation
 
-    .line 5
     invoke-super {p0, p1, p2}, Lorg/greenrobot/greendao/query/AbstractQuery;->setParameter(ILjava/util/Date;)Lorg/greenrobot/greendao/query/AbstractQuery;
 
     move-result-object p1

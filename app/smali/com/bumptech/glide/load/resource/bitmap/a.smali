@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/resource/bitmap/a;
 .super Ljava/lang/Object;
-.source "BitmapDrawableDecoder.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/f;
@@ -58,17 +57,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, Landroid/content/res/Resources;
 
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/bitmap/a;->b:Landroid/content/res/Resources;
 
-    .line 3
     invoke-static {p2}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p2, Lcom/bumptech/glide/load/f;
@@ -107,14 +103,12 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/a;->a:Lcom/bumptech/glide/load/f;
 
     invoke-interface {v0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/f;->a(Ljava/lang/Object;IILcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/engine/s;
 
     move-result-object p1
 
-    .line 3
     iget-object p2, p0, Lcom/bumptech/glide/load/resource/bitmap/a;->b:Landroid/content/res/Resources;
 
     invoke-static {p2, p1}, Lcom/bumptech/glide/load/resource/bitmap/p;->a(Landroid/content/res/Resources;Lcom/bumptech/glide/load/engine/s;)Lcom/bumptech/glide/load/engine/s;
@@ -148,7 +142,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/a;->a:Lcom/bumptech/glide/load/f;
 
     invoke-interface {v0, p1, p2}, Lcom/bumptech/glide/load/f;->a(Ljava/lang/Object;Lcom/bumptech/glide/load/e;)Z

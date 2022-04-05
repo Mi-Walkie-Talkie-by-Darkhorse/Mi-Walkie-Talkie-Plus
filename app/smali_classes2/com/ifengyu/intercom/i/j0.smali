@@ -1,13 +1,11 @@
 .class public Lcom/ifengyu/intercom/i/j0;
 .super Ljava/lang/Object;
-.source "TimeUtils.java"
 
 
 # direct methods
 .method public static a(Ljava/lang/String;)J
     .locals 4
 
-    .line 2
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -23,7 +21,6 @@
 
     const/16 v3, 0x13
 
-    .line 3
     invoke-virtual {p0, v0, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
@@ -36,7 +33,6 @@
 
     move-result-object p0
 
-    .line 4
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v3, "yyyy-MM-dd HH:mm:ss"
@@ -45,32 +41,27 @@
 
     const-string v3, "UTC"
 
-    .line 5
     invoke-static {v3}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
-    .line 6
     :try_start_0
     invoke-virtual {v0, p0}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p0
 
-    .line 7
     invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Ljava/text/SimpleDateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
-    .line 8
     invoke-virtual {v0, p0}, Ljava/text/SimpleDateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 9
     invoke-virtual {v0, p0}, Ljava/text/SimpleDateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p0
@@ -86,7 +77,6 @@
     :catch_0
     move-exception p0
 
-    .line 10
     invoke-virtual {p0}, Ljava/text/ParseException;->printStackTrace()V
 
     return-wide v1
@@ -101,7 +91,6 @@
 
     return-object p0
 
-    .line 11
     :cond_0
     div-int/lit8 v0, p0, 0x3c
 
@@ -111,10 +100,8 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 12
     rem-int/2addr p0, v2
 
-    .line 13
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -143,7 +130,6 @@
 
     goto :goto_0
 
-    .line 14
     :cond_1
     div-int/lit8 v3, v0, 0x3c
 
@@ -155,7 +141,6 @@
 
     return-object p0
 
-    .line 15
     :cond_2
     rem-int/2addr v0, v2
 
@@ -167,7 +152,6 @@
 
     sub-int/2addr p0, v2
 
-    .line 16
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -205,7 +189,6 @@
 .method public static a(J)Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v1, "yyyy-MM-dd HH:mm:ss"
@@ -236,7 +219,6 @@
 
     if-ge p0, v0, :cond_0
 
-    .line 20
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -257,7 +239,6 @@
 
     goto :goto_0
 
-    .line 21
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -280,12 +261,10 @@
 .method public static b(J)Ljava/lang/String;
     .locals 18
 
-    .line 1
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v7
 
-    .line 2
     invoke-virtual {v7}, Ljava/util/Calendar;->getTimeInMillis()J
 
     move-result-wide v0
@@ -294,21 +273,18 @@
 
     const/4 v10, 0x1
 
-    .line 3
     invoke-virtual {v7, v10}, Ljava/util/Calendar;->get(I)I
 
     move-result v11
 
     const/4 v12, 0x2
 
-    .line 4
     invoke-virtual {v7, v12}, Ljava/util/Calendar;->get(I)I
 
     move-result v13
 
     const/4 v0, 0x5
 
-    .line 5
     invoke-virtual {v7, v0}, Ljava/util/Calendar;->get(I)I
 
     move-result v14
@@ -321,7 +297,6 @@
 
     const v0, 0x7f110165
 
-    .line 6
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v0
@@ -345,7 +320,6 @@
 
     const-wide/16 v2, 0x3c
 
-    .line 7
     div-long/2addr v8, v2
 
     const-wide/16 v2, 0x3e8
@@ -379,10 +353,8 @@
 
     move v3, v14
 
-    .line 8
     invoke-virtual/range {v0 .. v6}, Ljava/util/Calendar;->set(IIIIII)V
 
-    .line 9
     invoke-virtual {v7}, Ljava/util/Calendar;->getTimeInMillis()J
 
     move-result-wide v0
@@ -395,7 +367,6 @@
 
     new-array v1, v10, [Ljava/lang/Object;
 
-    .line 10
     div-long/2addr v8, v15
 
     invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -425,10 +396,8 @@
 
     move v2, v13
 
-    .line 11
     invoke-virtual/range {v0 .. v6}, Ljava/util/Calendar;->set(IIIIII)V
 
-    .line 12
     invoke-virtual {v7}, Ljava/util/Calendar;->getTimeInMillis()J
 
     move-result-wide v0
@@ -439,7 +408,6 @@
 
     const v0, 0x7f11039e
 
-    .line 13
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v0
@@ -461,10 +429,8 @@
 
     move v2, v13
 
-    .line 14
     invoke-virtual/range {v0 .. v6}, Ljava/util/Calendar;->set(IIIIII)V
 
-    .line 15
     invoke-virtual {v7}, Ljava/util/Calendar;->getTimeInMillis()J
 
     move-result-wide v0
@@ -475,7 +441,6 @@
 
     const v0, 0x7f110328
 
-    .line 16
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v0
@@ -495,7 +460,6 @@
 
     const-wide/32 v2, 0x5265c00
 
-    .line 17
     div-long/2addr v8, v2
 
     invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -521,7 +485,6 @@
 
     new-array v3, v10, [Ljava/lang/Object;
 
-    .line 18
     div-long/2addr v8, v0
 
     invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -541,7 +504,6 @@
 
     new-array v1, v10, [Ljava/lang/Object;
 
-    .line 19
     invoke-static {v10}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -558,7 +520,6 @@
 .method public static c(J)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v1, "yyyy-MM-dd HH:mm:ss"
@@ -579,7 +540,6 @@
 .method public static d(J)Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v1, "yyyy-MM-dd"
@@ -604,7 +564,6 @@
 .method public static e(J)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v1, "dd"
@@ -625,7 +584,6 @@
 .method public static f(J)Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
@@ -648,7 +606,6 @@
 .method public static g(J)Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const v1, 0x7f11032b

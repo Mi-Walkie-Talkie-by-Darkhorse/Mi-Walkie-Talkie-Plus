@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;
 .super Ljava/lang/Object;
-.source "FieldParser.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 .method static constructor <clinit>()V
     .locals 36
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -32,7 +30,6 @@
 
     const/4 v1, 0x2
 
-    .line 2
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -47,7 +44,6 @@
 
     const/16 v4, 0x12
 
-    .line 3
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
@@ -66,7 +62,6 @@
 
     const/16 v8, 0xe
 
-    .line 4
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v9
@@ -87,7 +82,6 @@
 
     const/4 v3, 0x3
 
-    .line 5
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v10
@@ -98,14 +92,12 @@
 
     aput-object v12, v11, v5
 
-    .line 6
     sget-object v12, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v12, v11, v7
 
     const/16 v12, 0x14
 
-    .line 7
     invoke-static {v12}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v13
@@ -122,7 +114,6 @@
 
     const/4 v14, 0x6
 
-    .line 8
     invoke-static {v14}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v15
@@ -177,7 +168,6 @@
 
     const/16 v19, 0x8
 
-    .line 9
     invoke-static/range {v19 .. v19}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v20
@@ -202,7 +192,6 @@
 
     aput-object v22, v11, v5
 
-    .line 10
     sget-object v22, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v22, v11, v7
@@ -211,7 +200,6 @@
 
     const/16 v22, 0xa
 
-    .line 11
     invoke-static/range {v22 .. v22}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v23
@@ -224,14 +212,12 @@
 
     aput-object v24, v11, v5
 
-    .line 12
     sget-object v24, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v24, v11, v7
 
     const/16 v24, 0x1d
 
-    .line 13
     invoke-static/range {v24 .. v24}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v24
@@ -264,7 +250,6 @@
 
     aput-object v26, v11, v5
 
-    .line 14
     sget-object v26, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v26, v11, v7
@@ -273,7 +258,6 @@
 
     const/16 v20, 0xd
 
-    .line 15
     invoke-static/range {v20 .. v20}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v26
@@ -286,14 +270,12 @@
 
     aput-object v27, v11, v5
 
-    .line 16
     sget-object v27, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v27, v11, v7
 
     const/16 v27, 0x1e
 
-    .line 17
     invoke-static/range {v27 .. v27}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v28
@@ -316,7 +298,6 @@
 
     const/16 v29, 0xf
 
-    .line 18
     invoke-static/range {v29 .. v29}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v30
@@ -329,7 +310,6 @@
 
     aput-object v31, v11, v5
 
-    .line 19
     sget-object v31, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v31, v11, v7
@@ -346,7 +326,6 @@
 
     aput-object v32, v11, v5
 
-    .line 20
     sget-object v32, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v32, v11, v7
@@ -355,7 +334,6 @@
 
     const/16 v32, 0x11
 
-    .line 21
     invoke-static/range {v32 .. v32}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v33
@@ -368,7 +346,6 @@
 
     aput-object v34, v11, v5
 
-    .line 22
     sget-object v34, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v34, v11, v7
@@ -383,7 +360,6 @@
 
     aput-object v34, v11, v5
 
-    .line 23
     sget-object v34, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v34, v11, v7
@@ -400,7 +376,6 @@
 
     aput-object v35, v11, v5
 
-    .line 24
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -415,7 +390,6 @@
 
     aput-object v35, v11, v5
 
-    .line 25
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -432,7 +406,6 @@
 
     aput-object v35, v11, v5
 
-    .line 26
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -449,7 +422,6 @@
 
     aput-object v35, v11, v5
 
-    .line 27
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -460,7 +432,6 @@
 
     aput-object v11, v0, v35
 
-    .line 28
     sput-object v0, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->TWO_DIGIT_DATA_LENGTH:[[Ljava/lang/Object;
 
     const/16 v0, 0x17
@@ -473,7 +444,6 @@
 
     aput-object v35, v11, v5
 
-    .line 29
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -488,7 +458,6 @@
 
     aput-object v35, v11, v5
 
-    .line 30
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -503,7 +472,6 @@
 
     aput-object v35, v11, v5
 
-    .line 31
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -518,7 +486,6 @@
 
     aput-object v35, v11, v5
 
-    .line 32
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -533,7 +500,6 @@
 
     aput-object v35, v11, v5
 
-    .line 33
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -548,7 +514,6 @@
 
     aput-object v35, v11, v5
 
-    .line 34
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -563,7 +528,6 @@
 
     aput-object v35, v11, v5
 
-    .line 35
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -578,7 +542,6 @@
 
     aput-object v35, v11, v5
 
-    .line 36
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -593,7 +556,6 @@
 
     aput-object v35, v11, v5
 
-    .line 37
     sget-object v35, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v35, v11, v7
@@ -618,7 +580,6 @@
 
     aput-object v33, v11, v5
 
-    .line 38
     sget-object v33, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v33, v11, v7
@@ -683,7 +644,6 @@
 
     aput-object v33, v11, v5
 
-    .line 39
     sget-object v33, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v33, v11, v7
@@ -698,7 +658,6 @@
 
     aput-object v33, v11, v5
 
-    .line 40
     sget-object v33, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v33, v11, v7
@@ -723,7 +682,6 @@
 
     aput-object v33, v11, v5
 
-    .line 41
     sget-object v33, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v33, v11, v7
@@ -766,7 +724,6 @@
 
     aput-object v11, v0, v10
 
-    .line 42
     sput-object v0, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->THREE_DIGIT_DATA_LENGTH:[[Ljava/lang/Object;
 
     const/16 v0, 0x39
@@ -1359,7 +1316,6 @@
 
     aput-object v11, v10, v5
 
-    .line 43
     sget-object v11, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v11, v10, v7
@@ -1376,7 +1332,6 @@
 
     aput-object v11, v10, v5
 
-    .line 44
     sget-object v11, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v11, v10, v7
@@ -1393,7 +1348,6 @@
 
     aput-object v11, v10, v5
 
-    .line 45
     sget-object v11, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v11, v10, v7
@@ -1410,7 +1364,6 @@
 
     aput-object v11, v10, v5
 
-    .line 46
     sget-object v11, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v11, v10, v7
@@ -1427,7 +1380,6 @@
 
     aput-object v11, v10, v5
 
-    .line 47
     sget-object v11, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v11, v10, v7
@@ -1438,7 +1390,6 @@
 
     aput-object v10, v0, v11
 
-    .line 48
     sput-object v0, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->THREE_DIGIT_PLUS_DIGIT_DATA_LENGTH:[[Ljava/lang/Object;
 
     new-array v0, v4, [[Ljava/lang/Object;
@@ -1459,7 +1410,6 @@
 
     aput-object v10, v4, v5
 
-    .line 49
     sget-object v10, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v10, v4, v7
@@ -1494,7 +1444,6 @@
 
     aput-object v9, v4, v5
 
-    .line 50
     sget-object v9, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v9, v4, v7
@@ -1509,7 +1458,6 @@
 
     aput-object v9, v4, v5
 
-    .line 51
     sget-object v9, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v9, v4, v7
@@ -1524,7 +1472,6 @@
 
     aput-object v9, v4, v5
 
-    .line 52
     sget-object v9, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v9, v4, v7
@@ -1559,7 +1506,6 @@
 
     aput-object v9, v4, v5
 
-    .line 53
     sget-object v9, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v9, v4, v7
@@ -1574,12 +1520,10 @@
 
     aput-object v9, v4, v5
 
-    .line 54
     sget-object v9, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v9, v4, v7
 
-    .line 55
     invoke-static/range {v25 .. v25}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v9
@@ -1604,14 +1548,12 @@
 
     aput-object v6, v4, v5
 
-    .line 56
     sget-object v6, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v6, v4, v7
 
     const/16 v6, 0x19
 
-    .line 57
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
@@ -1656,14 +1598,12 @@
 
     aput-object v4, v2, v5
 
-    .line 58
     sget-object v4, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     aput-object v4, v2, v7
 
     const/16 v4, 0x46
 
-    .line 59
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -1684,7 +1624,6 @@
 
     const/16 v3, 0x46
 
-    .line 60
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -1701,7 +1640,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -1715,7 +1653,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v0
@@ -1726,7 +1663,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -1738,12 +1674,10 @@
 
     const/4 v0, 0x0
 
-    .line 3
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 4
     sget-object v3, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->TWO_DIGIT_DATA_LENGTH:[[Ljava/lang/Object;
 
     array-length v4, v3
@@ -1757,7 +1691,6 @@
 
     aget-object v7, v3, v5
 
-    .line 5
     aget-object v8, v7, v0
 
     invoke-virtual {v8, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -1766,14 +1699,12 @@
 
     if-eqz v8, :cond_2
 
-    .line 6
     aget-object v0, v7, v6
 
     sget-object v2, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     if-ne v0, v2, :cond_1
 
-    .line 7
     aget-object v0, v7, v1
 
     check-cast v0, Ljava/lang/Integer;
@@ -1788,7 +1719,6 @@
 
     return-object p0
 
-    .line 8
     :cond_1
     aget-object v0, v7, v6
 
@@ -1809,7 +1739,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_3
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -1819,12 +1748,10 @@
 
     if-lt v2, v3, :cond_e
 
-    .line 10
     invoke-virtual {p0, v0, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 11
     sget-object v4, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->THREE_DIGIT_DATA_LENGTH:[[Ljava/lang/Object;
 
     array-length v5, v4
@@ -1836,7 +1763,6 @@
 
     aget-object v8, v4, v7
 
-    .line 12
     aget-object v9, v8, v0
 
     invoke-virtual {v9, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -1845,14 +1771,12 @@
 
     if-eqz v9, :cond_5
 
-    .line 13
     aget-object v0, v8, v6
 
     sget-object v2, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     if-ne v0, v2, :cond_4
 
-    .line 14
     aget-object v0, v8, v1
 
     check-cast v0, Ljava/lang/Integer;
@@ -1867,7 +1791,6 @@
 
     return-object p0
 
-    .line 15
     :cond_4
     aget-object v0, v8, v6
 
@@ -1888,7 +1811,6 @@
 
     goto :goto_1
 
-    .line 16
     :cond_6
     sget-object v3, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->THREE_DIGIT_PLUS_DIGIT_DATA_LENGTH:[[Ljava/lang/Object;
 
@@ -1903,7 +1825,6 @@
 
     aget-object v8, v3, v5
 
-    .line 17
     aget-object v9, v8, v0
 
     invoke-virtual {v9, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -1912,14 +1833,12 @@
 
     if-eqz v9, :cond_8
 
-    .line 18
     aget-object v0, v8, v6
 
     sget-object v2, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     if-ne v0, v2, :cond_7
 
-    .line 19
     aget-object v0, v8, v1
 
     check-cast v0, Ljava/lang/Integer;
@@ -1934,7 +1853,6 @@
 
     return-object p0
 
-    .line 20
     :cond_7
     aget-object v0, v8, v6
 
@@ -1955,7 +1873,6 @@
 
     goto :goto_2
 
-    .line 21
     :cond_9
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -1963,12 +1880,10 @@
 
     if-lt v2, v7, :cond_d
 
-    .line 22
     invoke-virtual {p0, v0, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 23
     sget-object v3, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->FOUR_DIGIT_DATA_LENGTH:[[Ljava/lang/Object;
 
     array-length v4, v3
@@ -1980,7 +1895,6 @@
 
     aget-object v8, v3, v5
 
-    .line 24
     aget-object v9, v8, v0
 
     invoke-virtual {v9, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -1989,14 +1903,12 @@
 
     if-eqz v9, :cond_b
 
-    .line 25
     aget-object v0, v8, v6
 
     sget-object v2, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->VARIABLE_LENGTH:Ljava/lang/Object;
 
     if-ne v0, v2, :cond_a
 
-    .line 26
     aget-object v0, v8, v1
 
     check-cast v0, Ljava/lang/Integer;
@@ -2011,7 +1923,6 @@
 
     return-object p0
 
-    .line 27
     :cond_a
     aget-object v0, v8, v6
 
@@ -2032,7 +1943,6 @@
 
     goto :goto_3
 
-    .line 28
     :cond_c
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -2040,7 +1950,6 @@
 
     throw p0
 
-    .line 29
     :cond_d
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -2048,7 +1957,6 @@
 
     throw p0
 
-    .line 30
     :cond_e
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -2056,7 +1964,6 @@
 
     throw p0
 
-    .line 31
     :cond_f
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -2073,7 +1980,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -2082,12 +1988,10 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-virtual {p2, v0, p0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2096,17 +2000,14 @@
 
     if-lt v1, p1, :cond_1
 
-    .line 4
     invoke-virtual {p2, p0, p1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 5
     invoke-virtual {p2, p1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 6
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string v1, "("
@@ -2125,7 +2026,6 @@
 
     move-result-object p0
 
-    .line 7
     invoke-static {p1}, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->parseFieldsInGeneralPurpose(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -2134,7 +2034,6 @@
 
     return-object p0
 
-    .line 8
     :cond_0
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -2150,7 +2049,6 @@
 
     return-object p0
 
-    .line 9
     :cond_1
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -2158,7 +2056,6 @@
 
     throw p0
 
-    .line 10
     :cond_2
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -2177,12 +2074,10 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p2, v0, p0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2191,23 +2086,19 @@
 
     if-ge v1, p1, :cond_0
 
-    .line 3
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
     move-result p1
 
-    .line 4
     :cond_0
     invoke-virtual {p2, p0, p1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 5
     invoke-virtual {p2, p1}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 6
     new-instance p2, Ljava/lang/StringBuilder;
 
     const-string v1, "("
@@ -2226,7 +2117,6 @@
 
     move-result-object p0
 
-    .line 7
     invoke-static {p1}, Lcom/google/zxing/oned/rss/expanded/decoders/FieldParser;->parseFieldsInGeneralPurpose(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -2235,7 +2125,6 @@
 
     return-object p0
 
-    .line 8
     :cond_1
     new-instance p2, Ljava/lang/StringBuilder;
 

@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/i/j;
 .super Ljava/lang/Object;
-.source "HttpUrlFetcher.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/i/d;
@@ -49,7 +48,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/i/j$a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/i/j$a;-><init>()V
@@ -62,7 +60,6 @@
 .method public constructor <init>(Lcom/bumptech/glide/load/j/g;I)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/bumptech/glide/load/i/j;->g:Lcom/bumptech/glide/load/i/j$b;
 
     invoke-direct {p0, p1, p2, v0}, Lcom/bumptech/glide/load/i/j;-><init>(Lcom/bumptech/glide/load/j/g;ILcom/bumptech/glide/load/i/j$b;)V
@@ -75,16 +72,12 @@
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/bumptech/glide/load/i/j;->a:Lcom/bumptech/glide/load/j/g;
 
-    .line 4
     iput p2, p0, Lcom/bumptech/glide/load/i/j;->b:I
 
-    .line 5
     iput-object p3, p0, Lcom/bumptech/glide/load/i/j;->c:Lcom/bumptech/glide/load/i/j$b;
 
     return-void
@@ -98,7 +91,6 @@
         }
     .end annotation
 
-    .line 40
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getContentEncoding()Ljava/lang/String;
 
     move-result-object v0
@@ -109,12 +101,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 41
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getContentLength()I
 
     move-result v0
 
-    .line 42
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object p1
@@ -134,14 +124,12 @@
 
     const-string v1, "HttpUrlFetcher"
 
-    .line 43
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 44
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -162,7 +150,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 45
     :cond_1
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
@@ -170,7 +157,6 @@
 
     iput-object p1, p0, Lcom/bumptech/glide/load/i/j;->e:Ljava/io/InputStream;
 
-    .line 46
     :goto_0
     iget-object p1, p0, Lcom/bumptech/glide/load/i/j;->e:Ljava/io/InputStream;
 
@@ -205,7 +191,6 @@
 
     if-eqz p3, :cond_1
 
-    .line 13
     :try_start_0
     invoke-virtual {p1}, Ljava/net/URL;->toURI()Ljava/net/URI;
 
@@ -223,7 +208,6 @@
 
     goto :goto_0
 
-    .line 14
     :cond_0
     new-instance p3, Lcom/bumptech/glide/load/HttpException;
 
@@ -235,7 +219,6 @@
     :try_end_0
     .catch Ljava/net/URISyntaxException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 15
     :catch_0
     :cond_1
     :goto_0
@@ -247,7 +230,6 @@
 
     iput-object p3, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
-    .line 16
     invoke-interface {p4}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p3
@@ -269,7 +251,6 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 17
     iget-object v1, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -288,7 +269,6 @@
 
     goto :goto_1
 
-    .line 18
     :cond_2
     iget-object p3, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
@@ -296,38 +276,32 @@
 
     invoke-virtual {p3, v0}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
 
-    .line 19
     iget-object p3, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
     iget v0, p0, Lcom/bumptech/glide/load/i/j;->b:I
 
     invoke-virtual {p3, v0}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
 
-    .line 20
     iget-object p3, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
     const/4 v0, 0x0
 
     invoke-virtual {p3, v0}, Ljava/net/HttpURLConnection;->setUseCaches(Z)V
 
-    .line 21
     iget-object p3, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
     const/4 v1, 0x1
 
     invoke-virtual {p3, v1}, Ljava/net/HttpURLConnection;->setDoInput(Z)V
 
-    .line 22
     iget-object p3, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
     invoke-virtual {p3, v0}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
 
-    .line 23
     iget-object p3, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
     invoke-virtual {p3}, Ljava/net/HttpURLConnection;->connect()V
 
-    .line 24
     iget-object p3, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
     invoke-virtual {p3}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
@@ -336,7 +310,6 @@
 
     iput-object p3, p0, Lcom/bumptech/glide/load/i/j;->e:Ljava/io/InputStream;
 
-    .line 25
     iget-boolean p3, p0, Lcom/bumptech/glide/load/i/j;->f:Z
 
     if-eqz p3, :cond_3
@@ -345,7 +318,6 @@
 
     return-object p1
 
-    .line 26
     :cond_3
     iget-object p3, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
@@ -353,14 +325,12 @@
 
     move-result p3
 
-    .line 27
     invoke-static {p3}, Lcom/bumptech/glide/load/i/j;->a(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 28
     iget-object p1, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
     invoke-direct {p0, p1}, Lcom/bumptech/glide/load/i/j;->a(Ljava/net/HttpURLConnection;)Ljava/io/InputStream;
@@ -369,7 +339,6 @@
 
     return-object p1
 
-    .line 29
     :cond_4
     invoke-static {p3}, Lcom/bumptech/glide/load/i/j;->b(I)Z
 
@@ -377,7 +346,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 30
     iget-object p3, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
     const-string v0, "Location"
@@ -386,31 +354,26 @@
 
     move-result-object p3
 
-    .line 31
     invoke-static {p3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_5
 
-    .line 32
     new-instance v0, Ljava/net/URL;
 
     invoke-direct {v0, p1, p3}, Ljava/net/URL;-><init>(Ljava/net/URL;Ljava/lang/String;)V
 
-    .line 33
     invoke-virtual {p0}, Lcom/bumptech/glide/load/i/j;->b()V
 
     add-int/2addr p2, v1
 
-    .line 34
     invoke-direct {p0, v0, p2, p1, p4}, Lcom/bumptech/glide/load/i/j;->a(Ljava/net/URL;ILjava/net/URL;Ljava/util/Map;)Ljava/io/InputStream;
 
     move-result-object p1
 
     return-object p1
 
-    .line 35
     :cond_5
     new-instance p1, Lcom/bumptech/glide/load/HttpException;
 
@@ -425,14 +388,12 @@
 
     if-ne p3, p1, :cond_7
 
-    .line 36
     new-instance p1, Lcom/bumptech/glide/load/HttpException;
 
     invoke-direct {p1, p3}, Lcom/bumptech/glide/load/HttpException;-><init>(I)V
 
     throw p1
 
-    .line 37
     :cond_7
     new-instance p1, Lcom/bumptech/glide/load/HttpException;
 
@@ -446,7 +407,6 @@
 
     throw p1
 
-    .line 38
     :cond_8
     new-instance p1, Lcom/bumptech/glide/load/HttpException;
 
@@ -460,7 +420,6 @@
 .method private static a(I)Z
     .locals 1
 
-    .line 39
     div-int/lit8 p0, p0, 0x64
 
     const/4 v0, 0x2
@@ -481,7 +440,6 @@
 .method private static b(I)Z
     .locals 1
 
-    .line 1
     div-int/lit8 p0, p0, 0x64
 
     const/4 v0, 0x3
@@ -515,7 +473,6 @@
         }
     .end annotation
 
-    .line 47
     const-class v0, Ljava/io/InputStream;
 
     return-object v0
@@ -546,14 +503,12 @@
 
     const-string v0, "HttpUrlFetcher"
 
-    .line 1
     invoke-static {}, Lcom/bumptech/glide/util/e;->a()J
 
     move-result-wide v1
 
     const/4 v3, 0x2
 
-    .line 2
     :try_start_0
     iget-object v4, p0, Lcom/bumptech/glide/load/i/j;->a:Lcom/bumptech/glide/load/j/g;
 
@@ -575,20 +530,17 @@
 
     move-result-object v4
 
-    .line 3
     invoke-interface {p2, v4}, Lcom/bumptech/glide/load/i/d$a;->a(Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     invoke-static {v0, v3}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
-    .line 5
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -605,7 +557,6 @@
 
     const/4 v5, 0x3
 
-    .line 6
     :try_start_1
     invoke-static {v0, v5}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
@@ -615,23 +566,19 @@
 
     const-string v5, "Failed to load data for url"
 
-    .line 7
     invoke-static {v0, v5, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 8
     :cond_0
     invoke-interface {p2, v4}, Lcom/bumptech/glide/load/i/d$a;->a(Ljava/lang/Exception;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 9
     invoke-static {v0, v3}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result p2
 
     if-eqz p2, :cond_1
 
-    .line 10
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -654,7 +601,6 @@
     :cond_1
     return-void
 
-    .line 11
     :goto_1
     invoke-static {v0, v3}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
@@ -662,7 +608,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 12
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -688,12 +633,10 @@
 .method public b()V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/i/j;->e:Ljava/io/InputStream;
 
     if-eqz v0, :cond_0
 
-    .line 3
     :try_start_0
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
     :try_end_0
@@ -704,20 +647,17 @@
     :catch_0
     nop
 
-    .line 4
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 
     :cond_1
     const/4 v0, 0x0
 
-    .line 6
     iput-object v0, p0, Lcom/bumptech/glide/load/i/j;->d:Ljava/net/HttpURLConnection;
 
     return-void
@@ -728,7 +668,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/bumptech/glide/load/DataSource;->b:Lcom/bumptech/glide/load/DataSource;
 
     return-object v0
@@ -739,7 +678,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/bumptech/glide/load/i/j;->f:Z
 
     return-void

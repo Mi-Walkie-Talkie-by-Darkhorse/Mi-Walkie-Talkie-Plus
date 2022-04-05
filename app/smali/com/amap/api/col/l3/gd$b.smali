@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/gd$b;
 .super Ljava/lang/Object;
-.source "HttpsDecisionUtil.java"
 
 
 # annotations
@@ -28,23 +27,18 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/gd$b;->b:I
 
     const/4 v1, 0x1
 
-    .line 3
     iput-boolean v1, p0, Lcom/amap/api/col/l3/gd$b;->a:Z
 
-    .line 4
     iput-boolean v1, p0, Lcom/amap/api/col/l3/gd$b;->c:Z
 
-    .line 5
     iput-boolean v0, p0, Lcom/amap/api/col/l3/gd$b;->d:Z
 
     return-void
@@ -53,7 +47,6 @@
 .method synthetic constructor <init>(B)V
     .locals 0
 
-    .line 6
     invoke-direct {p0}, Lcom/amap/api/col/l3/gd$b;-><init>()V
 
     return-void
@@ -68,7 +61,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget v0, p0, Lcom/amap/api/col/l3/gd$b;->b:I
 
@@ -80,7 +72,6 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
@@ -100,7 +91,6 @@
 .method public final a(Z)V
     .locals 0
 
-    .line 3
     iput-boolean p1, p0, Lcom/amap/api/col/l3/gd$b;->a:Z
 
     return-void
@@ -109,7 +99,6 @@
 .method public final a()Z
     .locals 5
 
-    .line 4
     iget-boolean v0, p0, Lcom/amap/api/col/l3/gd$b;->d:Z
 
     const/4 v1, 0x1
@@ -194,7 +183,6 @@
 .method public final b(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/gd$b;->d:Z
 
     return-void

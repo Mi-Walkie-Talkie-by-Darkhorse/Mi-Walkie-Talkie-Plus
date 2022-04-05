@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/ArcOptionsCreator;
 .super Ljava/lang/Object;
-.source "ArcOptionsCreator.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,17 +30,14 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/amap/api/maps/model/ArcOptions;
     .locals 9
 
-    .line 2
     new-instance v0, Lcom/amap/api/maps/model/ArcOptions;
 
     invoke-direct {v0}, Lcom/amap/api/maps/model/ArcOptions;-><init>()V
 
-    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readBundle()Landroid/os/Bundle;
 
     move-result-object v1
 
-    .line 4
     new-instance v2, Lcom/amap/api/maps/model/LatLng;
 
     const-string v3, "startlat"
@@ -59,7 +54,6 @@
 
     invoke-direct {v2, v3, v4, v5, v6}, Lcom/amap/api/maps/model/LatLng;-><init>(DD)V
 
-    .line 5
     new-instance v3, Lcom/amap/api/maps/model/LatLng;
 
     const-string v4, "passedlat"
@@ -76,7 +70,6 @@
 
     invoke-direct {v3, v4, v5, v6, v7}, Lcom/amap/api/maps/model/LatLng;-><init>(DD)V
 
-    .line 6
     new-instance v4, Lcom/amap/api/maps/model/LatLng;
 
     const-string v5, "endlat"
@@ -93,31 +86,26 @@
 
     invoke-direct {v4, v5, v6, v7, v8}, Lcom/amap/api/maps/model/LatLng;-><init>(DD)V
 
-    .line 7
     invoke-virtual {v0, v2, v3, v4}, Lcom/amap/api/maps/model/ArcOptions;->point(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)Lcom/amap/api/maps/model/ArcOptions;
 
-    .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v1
 
     invoke-virtual {v0, v1}, Lcom/amap/api/maps/model/ArcOptions;->strokeWidth(F)Lcom/amap/api/maps/model/ArcOptions;
 
-    .line 9
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Lcom/amap/api/maps/model/ArcOptions;->strokeColor(I)Lcom/amap/api/maps/model/ArcOptions;
 
-    .line 10
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v1
 
     invoke-virtual {v0, v1}, Lcom/amap/api/maps/model/ArcOptions;->zIndex(F)Lcom/amap/api/maps/model/ArcOptions;
 
-    .line 11
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
 
     move-result v1
@@ -134,7 +122,6 @@
     :goto_0
     invoke-virtual {v0, v2}, Lcom/amap/api/maps/model/ArcOptions;->visible(Z)Lcom/amap/api/maps/model/ArcOptions;
 
-    .line 12
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
@@ -147,7 +134,6 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/amap/api/maps/model/ArcOptionsCreator;->createFromParcel(Landroid/os/Parcel;)Lcom/amap/api/maps/model/ArcOptions;
 
     move-result-object p1
@@ -158,7 +144,6 @@
 .method public newArray(I)[Lcom/amap/api/maps/model/ArcOptions;
     .locals 0
 
-    .line 2
     new-array p1, p1, [Lcom/amap/api/maps/model/ArcOptions;
 
     return-object p1
@@ -167,7 +152,6 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/amap/api/maps/model/ArcOptionsCreator;->newArray(I)[Lcom/amap/api/maps/model/ArcOptions;
 
     move-result-object p1

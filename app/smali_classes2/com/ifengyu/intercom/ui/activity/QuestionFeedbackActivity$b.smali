@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$b;
 .super Lcom/ifengyu/intercom/g/d/l;
-.source "QuestionFeedbackActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/l;-><init>()V
@@ -35,7 +33,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$b;->a(Ljava/lang/String;I)V
@@ -46,7 +43,6 @@
 .method public a(Ljava/lang/String;I)V
     .locals 2
 
-    .line 6
     invoke-static {p1}, Lcom/ifengyu/intercom/network/c;->a(Ljava/lang/String;)Z
 
     move-result p1
@@ -55,21 +51,18 @@
 
     if-eqz p1, :cond_0
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;
 
     const p2, 0x7f110102
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c(I)V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;
 
     const p2, 0x7f080191
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->a()Landroid/os/Handler;
 
     move-result-object p1
@@ -82,7 +75,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;
 
@@ -90,7 +82,6 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c(I)V
 
-    .line 11
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;
 
     const p2, 0x7f080189
@@ -99,7 +90,6 @@
 
     const p1, 0x7f11033f
 
-    .line 12
     invoke-static {p1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object p1
@@ -108,7 +98,6 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/c0;->a(Ljava/lang/CharSequence;Z)V
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->a()Landroid/os/Handler;
 
     move-result-object p1
@@ -126,14 +115,12 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 2
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;
 
     const p2, 0x7f110101
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;
 
     const p2, 0x7f080189
@@ -142,7 +129,6 @@
 
     const p1, 0x7f11033f
 
-    .line 4
     invoke-static {p1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object p1
@@ -151,7 +137,6 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/c0;->a(Ljava/lang/CharSequence;Z)V
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->a()Landroid/os/Handler;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEventObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "TextViewEditorActionEventObservable.kt"
 
 # interfaces
 .implements Landroid/widget/TextView$OnEditorActionListener;
@@ -126,7 +125,6 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEventObservable$Listener;->view:Landroid/widget/TextView;
@@ -143,7 +141,6 @@
 .method protected onDispose()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEventObservable$Listener;->view:Landroid/widget/TextView;
 
     const/4 v1, 0x0
@@ -168,14 +165,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance p1, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEvent;
 
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEventObservable$Listener;->view:Landroid/widget/TextView;
 
     invoke-direct {p1, v0, p2, p3}, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEvent;-><init>(Landroid/widget/TextView;ILandroid/view/KeyEvent;)V
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
@@ -197,7 +192,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 3
     iget-object p2, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     invoke-interface {p2, p1}, Lio/reactivex/Observer;->onNext(Ljava/lang/Object;)V
@@ -211,12 +205,10 @@
     :catch_0
     move-exception p1
 
-    .line 4
     iget-object p2, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     invoke-interface {p2, p1}, Lio/reactivex/Observer;->onError(Ljava/lang/Throwable;)V
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->dispose()V
 
     :cond_0

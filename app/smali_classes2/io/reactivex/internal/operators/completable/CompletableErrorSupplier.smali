@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/completable/CompletableErrorSupplier;
 .super Lio/reactivex/Completable;
-.source "CompletableErrorSupplier.java"
 
 
 # instance fields
@@ -29,10 +28,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableErrorSupplier;->errorSupplier:Ljava/util/concurrent/Callable;
 
     return-void
@@ -43,7 +40,6 @@
 .method protected subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableErrorSupplier;->errorSupplier:Ljava/util/concurrent/Callable;
 
@@ -66,10 +62,8 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 3
     :goto_0
     invoke-static {v0, p1}, Lio/reactivex/internal/disposables/EmptyDisposable;->error(Ljava/lang/Throwable;Lio/reactivex/CompletableObserver;)V
 

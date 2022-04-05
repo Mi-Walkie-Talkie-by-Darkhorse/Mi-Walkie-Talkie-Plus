@@ -1,6 +1,5 @@
 .class final enum Lcom/sina/weibo/sdk/component/BrowserLauncher;
 .super Ljava/lang/Enum;
-.source "BrowserRequestParamBase.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method static constructor <clinit>()V
     .locals 8
 
-    .line 1
     new-instance v0, Lcom/sina/weibo/sdk/component/BrowserLauncher;
 
     const/4 v1, 0x0
@@ -86,7 +84,6 @@
 
     new-array v6, v6, [Lcom/sina/weibo/sdk/component/BrowserLauncher;
 
-    .line 2
     sget-object v7, Lcom/sina/weibo/sdk/component/BrowserLauncher;->a:Lcom/sina/weibo/sdk/component/BrowserLauncher;
 
     aput-object v7, v6, v1
@@ -113,7 +110,6 @@
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -122,7 +118,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/sina/weibo/sdk/component/BrowserLauncher;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/sina/weibo/sdk/component/BrowserLauncher;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -137,7 +132,6 @@
 .method public static values()[Lcom/sina/weibo/sdk/component/BrowserLauncher;
     .locals 4
 
-    .line 1
     sget-object v0, Lcom/sina/weibo/sdk/component/BrowserLauncher;->f:[Lcom/sina/weibo/sdk/component/BrowserLauncher;
 
     array-length v1, v0

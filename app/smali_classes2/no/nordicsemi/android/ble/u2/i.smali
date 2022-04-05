@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/u2/i;
 .super Ljava/lang/Object;
-.source "RssiCallback.java"
 
 
 # virtual methods

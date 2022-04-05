@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;
 .super Ljava/lang/Object;
-.source "SharkSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->a:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->a:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getResult()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$SHARK_DEV_UERR;
@@ -57,7 +54,6 @@
 
     if-ne v0, v1, :cond_5
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;)I
@@ -80,20 +76,17 @@
 
     goto/16 :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     invoke-static {v0, v4}, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;->b(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;I)I
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     const v1, 0x7f080191
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     const v1, 0x7f110304
@@ -104,7 +97,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(Ljava/lang/String;)V
 
-    .line 6
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q$a;-><init>(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;)V
@@ -113,36 +105,30 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     invoke-static {v0, v4}, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;->b(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;I)I
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;->b(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;)V
 
     goto :goto_0
 
-    .line 10
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     invoke-static {v0, v4}, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;->b(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;I)I
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;->s:Landroid/widget/CheckBox;
@@ -155,7 +141,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->a:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
@@ -177,14 +162,12 @@
 
     if-eqz v0, :cond_4
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;->b(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;)V
 
     goto :goto_0
 
-    .line 15
     :cond_4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->a:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
@@ -194,7 +177,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;->s:Landroid/widget/CheckBox;
@@ -207,27 +189,23 @@
 
     goto :goto_0
 
-    .line 17
     :cond_5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     invoke-static {v0, v4}, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;->b(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;I)I
 
-    .line 18
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     const v1, 0x7f080189
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 19
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     const v1, 0x7f110260
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c(I)V
 
-    .line 20
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q$b;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q$b;-><init>(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$q;)V

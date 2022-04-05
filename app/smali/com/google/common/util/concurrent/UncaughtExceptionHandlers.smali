@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/util/concurrent/UncaughtExceptionHandlers;
 .super Ljava/lang/Object;
-.source "UncaughtExceptionHandlers.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +22,6 @@
 .method public static systemExit()Ljava/lang/Thread$UncaughtExceptionHandler;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;
 
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;

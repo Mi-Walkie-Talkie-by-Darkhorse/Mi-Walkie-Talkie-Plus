@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/Striped$CompactStriped;
 .super Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;
-.source "Striped.java"
 
 
 # annotations
@@ -43,7 +42,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;-><init>(I)V
 
     const/4 v0, 0x0
@@ -64,10 +62,8 @@
     :goto_0
     const-string v2, "Stripes must be <= 2^30)"
 
-    .line 3
     invoke-static {p1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 4
     iget p1, p0, Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;->mask:I
 
     add-int/2addr p1, v1
@@ -76,7 +72,6 @@
 
     iput-object p1, p0, Lcom/google/common/util/concurrent/Striped$CompactStriped;->array:[Ljava/lang/Object;
 
-    .line 5
     :goto_1
     iget-object p1, p0, Lcom/google/common/util/concurrent/Striped$CompactStriped;->array:[Ljava/lang/Object;
 
@@ -84,7 +79,6 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 6
     invoke-interface {p2}, Lcom/google/common/base/Supplier;->get()Ljava/lang/Object;
 
     move-result-object v1
@@ -102,7 +96,6 @@
 .method synthetic constructor <init>(ILcom/google/common/base/Supplier;Lcom/google/common/util/concurrent/Striped$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/Striped$CompactStriped;-><init>(ILcom/google/common/base/Supplier;)V
 
     return-void
@@ -119,7 +112,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Striped$CompactStriped;->array:[Ljava/lang/Object;
 
     aget-object p1, v0, p1
@@ -130,7 +122,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Striped$CompactStriped;->array:[Ljava/lang/Object;
 
     array-length v0, v0

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/primitives/Floats$FloatConverter;
 .super Lcom/google/common/base/Converter;
-.source "Floats.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -37,7 +36,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/primitives/Floats$FloatConverter;
 
     invoke-direct {v0}, Lcom/google/common/primitives/Floats$FloatConverter;-><init>()V
@@ -50,7 +48,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/base/Converter;-><init>()V
 
     return-void
@@ -59,7 +56,6 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/primitives/Floats$FloatConverter;->INSTANCE:Lcom/google/common/primitives/Floats$FloatConverter;
 
     return-object v0
@@ -70,7 +66,6 @@
 .method protected bridge synthetic doBackward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Float;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Floats$FloatConverter;->doBackward(Ljava/lang/Float;)Ljava/lang/String;
@@ -83,7 +78,6 @@
 .method protected doBackward(Ljava/lang/Float;)Ljava/lang/String;
     .locals 0
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Float;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -94,7 +88,6 @@
 .method protected doForward(Ljava/lang/String;)Ljava/lang/Float;
     .locals 0
 
-    .line 2
     invoke-static {p1}, Ljava/lang/Float;->valueOf(Ljava/lang/String;)Ljava/lang/Float;
 
     move-result-object p1
@@ -105,7 +98,6 @@
 .method protected bridge synthetic doForward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Floats$FloatConverter;->doForward(Ljava/lang/String;)Ljava/lang/Float;

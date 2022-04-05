@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/util/concurrent/Monitor;
 .super Ljava/lang/Object;
-.source "Monitor.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/Monitor;-><init>(Z)V
 
     return-void
@@ -41,18 +39,14 @@
 .method public constructor <init>(Z)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 4
     iput-boolean p1, p0, Lcom/google/common/util/concurrent/Monitor;->fair:Z
 
-    .line 5
     new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {v0, p1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>(Z)V
@@ -65,7 +59,6 @@
 .method static synthetic access$000(Lcom/google/common/util/concurrent/Monitor;)Ljava/util/concurrent/locks/ReentrantLock;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     return-object p0
@@ -85,21 +78,17 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalNextWaiter()V
 
-    .line 2
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->beginWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
-    .line 3
     :cond_1
     :try_start_0
     iget-object p2, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->condition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {p2}, Ljava/util/concurrent/locks/Condition;->await()V
 
-    .line 4
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result p2
@@ -108,7 +97,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 5
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
     return-void
@@ -135,10 +123,8 @@
 
     if-eqz p4, :cond_0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalNextWaiter()V
 
-    .line 2
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->beginWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
@@ -151,13 +137,11 @@
 
     const/4 p2, 0x0
 
-    .line 3
     :goto_0
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
     return p2
 
-    .line 4
     :cond_2
     :try_start_0
     iget-object p4, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->condition:Ljava/util/concurrent/locks/Condition;
@@ -166,7 +150,6 @@
 
     move-result-wide p2
 
-    .line 5
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result p4
@@ -182,7 +165,6 @@
     :catchall_0
     move-exception p2
 
-    .line 6
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
     throw p2
@@ -196,21 +178,17 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalNextWaiter()V
 
-    .line 2
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->beginWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
-    .line 3
     :cond_1
     :try_start_0
     iget-object p2, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->condition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {p2}, Ljava/util/concurrent/locks/Condition;->awaitUninterruptibly()V
 
-    .line 4
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result p2
@@ -219,7 +197,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 5
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->endWaitingFor(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
     return-void
@@ -238,7 +215,6 @@
         value = "lock"
     .end annotation
 
-    .line 1
     iget v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->waiterCount:I
 
     add-int/lit8 v1, v0, 0x1
@@ -247,12 +223,10 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     iput-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     :cond_0
@@ -265,7 +239,6 @@
         value = "lock"
     .end annotation
 
-    .line 1
     iget v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->waiterCount:I
 
     add-int/lit8 v0, v0, -0x1
@@ -274,7 +247,6 @@
 
     if-nez v0, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     const/4 v1, 0x0
@@ -286,26 +258,22 @@
 
     if-nez v2, :cond_0
 
-    .line 3
     iget-object p1, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     iput-object p1, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     goto :goto_1
 
-    .line 4
     :cond_0
     iget-object p1, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     iput-object p1, v2, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 5
     :goto_1
     iput-object v1, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     goto :goto_2
 
-    .line 6
     :cond_1
     iget-object v2, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
@@ -328,7 +296,6 @@
         value = "lock"
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
@@ -341,10 +308,8 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalAllWaiters()V
 
-    .line 3
     invoke-static {p1}, Lcom/google/common/base/Throwables;->propagate(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     move-result-object p1
@@ -358,18 +323,15 @@
         value = "lock"
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     :goto_0
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v1, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->condition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Condition;->signalAll()V
 
-    .line 3
     iget-object v0, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     goto :goto_0
@@ -384,27 +346,23 @@
         value = "lock"
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->activeGuards:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/Monitor;->isSatisfied(Lcom/google/common/util/concurrent/Monitor$Guard;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 3
     iget-object v0, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->condition:Ljava/util/concurrent/locks/Condition;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Condition;->signal()V
 
     goto :goto_1
 
-    .line 4
     :cond_0
     iget-object v0, v0, Lcom/google/common/util/concurrent/Monitor$Guard;->next:Lcom/google/common/util/concurrent/Monitor$Guard;
 
@@ -420,7 +378,6 @@
 .method public enter()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
@@ -431,15 +388,12 @@
 .method public enter(JLjava/util/concurrent/TimeUnit;)Z
     .locals 5
 
-    .line 2
     invoke-virtual {p3, p1, p2}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
 
     move-result-wide p1
 
-    .line 3
     iget-object p3, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 4
     iget-boolean v0, p0, Lcom/google/common/util/concurrent/Monitor;->fair:Z
 
     const/4 v1, 0x1
@@ -454,7 +408,6 @@
 
     return v1
 
-    .line 5
     :cond_0
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -462,12 +415,10 @@
 
     add-long/2addr v2, p1
 
-    .line 6
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result v0
 
-    .line 7
     :goto_0
     :try_start_0
     sget-object v4, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
@@ -481,7 +432,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 8
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p2
@@ -498,7 +448,6 @@
 
     goto :goto_1
 
-    .line 9
     :catch_0
     :try_start_1
     invoke-static {}, Ljava/lang/System;->nanoTime()J
@@ -519,7 +468,6 @@
     :goto_1
     if-eqz v1, :cond_2
 
-    .line 10
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p2
@@ -533,18 +481,14 @@
 .method public enterIf(Lcom/google/common/util/concurrent/Monitor$Guard;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
-    .line 4
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
@@ -554,7 +498,6 @@
 
     if-nez p1, :cond_0
 
-    .line 5
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     :cond_0
@@ -567,7 +510,6 @@
 
     throw p1
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -579,12 +521,10 @@
 .method public enterIf(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
     .locals 1
 
-    .line 7
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_2
 
-    .line 8
     invoke-virtual {p0, p2, p3, p4}, Lcom/google/common/util/concurrent/Monitor;->enter(JLjava/util/concurrent/TimeUnit;)Z
 
     move-result p2
@@ -595,7 +535,6 @@
 
     return p1
 
-    .line 9
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
@@ -606,7 +545,6 @@
 
     if-nez p1, :cond_1
 
-    .line 10
     iget-object p2, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {p2}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
@@ -623,7 +561,6 @@
 
     throw p1
 
-    .line 11
     :cond_2
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -640,18 +577,14 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lockInterruptibly()V
 
-    .line 4
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
@@ -661,7 +594,6 @@
 
     if-nez p1, :cond_0
 
-    .line 5
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     :cond_0
@@ -674,7 +606,6 @@
 
     throw p1
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -691,15 +622,12 @@
         }
     .end annotation
 
-    .line 7
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_2
 
-    .line 8
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 9
     invoke-virtual {v0, p2, p3, p4}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock(JLjava/util/concurrent/TimeUnit;)Z
 
     move-result p2
@@ -710,7 +638,6 @@
 
     return p1
 
-    .line 10
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
@@ -721,7 +648,6 @@
 
     if-nez p1, :cond_1
 
-    .line 11
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     :cond_1
@@ -734,7 +660,6 @@
 
     throw p1
 
-    .line 12
     :cond_2
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -751,7 +676,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lockInterruptibly()V
@@ -767,7 +691,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock(JLjava/util/concurrent/TimeUnit;)Z
@@ -785,23 +708,18 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
     move-result v1
 
-    .line 4
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lockInterruptibly()V
 
-    .line 5
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
@@ -809,7 +727,6 @@
 
     if-nez v0, :cond_0
 
-    .line 6
     invoke-direct {p0, p1, v1}, Lcom/google/common/util/concurrent/Monitor;->await(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -820,12 +737,10 @@
     :catchall_0
     move-exception p1
 
-    .line 7
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
     throw p1
 
-    .line 8
     :cond_1
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -842,25 +757,20 @@
         }
     .end annotation
 
-    .line 9
     invoke-virtual {p4, p2, p3}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
 
     move-result-wide v0
 
-    .line 10
     iget-object v2, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v2, p0, :cond_7
 
-    .line 11
     iget-object v2, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 12
     invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
     move-result v3
 
-    .line 13
     iget-boolean v4, p0, Lcom/google/common/util/concurrent/Monitor;->fair:Z
 
     const/4 v5, 0x0
@@ -873,7 +783,6 @@
 
     if-nez v4, :cond_2
 
-    .line 14
     :cond_0
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -881,7 +790,6 @@
 
     add-long/2addr v6, v0
 
-    .line 15
     invoke-virtual {v2, p2, p3, p4}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock(JLjava/util/concurrent/TimeUnit;)Z
 
     move-result p2
@@ -890,7 +798,6 @@
 
     return v5
 
-    .line 16
     :cond_1
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -898,7 +805,6 @@
 
     sub-long v0, v6, p2
 
-    .line 17
     :cond_2
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
@@ -921,7 +827,6 @@
     :cond_4
     if-nez v5, :cond_5
 
-    .line 18
     invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     :cond_5
@@ -932,7 +837,6 @@
 
     if-nez v3, :cond_6
 
-    .line 19
     :try_start_1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalNextWaiter()V
     :try_end_1
@@ -943,7 +847,6 @@
     :catchall_1
     move-exception p1
 
-    .line 20
     invoke-virtual {v2}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     throw p1
@@ -954,7 +857,6 @@
 
     throw p1
 
-    .line 21
     :cond_7
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -966,23 +868,18 @@
 .method public enterWhenUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;)V
     .locals 2
 
-    .line 1
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
     move-result v1
 
-    .line 4
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
-    .line 5
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
@@ -990,7 +887,6 @@
 
     if-nez v0, :cond_0
 
-    .line 6
     invoke-direct {p0, p1, v1}, Lcom/google/common/util/concurrent/Monitor;->awaitUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1001,12 +897,10 @@
     :catchall_0
     move-exception p1
 
-    .line 7
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
     throw p1
 
-    .line 8
     :cond_1
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -1018,37 +912,30 @@
 .method public enterWhenUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
     .locals 8
 
-    .line 9
     invoke-virtual {p4, p2, p3}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
 
     move-result-wide p2
 
-    .line 10
     iget-object p4, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne p4, p0, :cond_a
 
-    .line 11
     iget-object p4, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 12
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v0
 
     add-long/2addr v0, p2
 
-    .line 13
     invoke-virtual {p4}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
 
     move-result v2
 
-    .line 14
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result v3
 
-    .line 15
     :try_start_0
     iget-boolean v4, p0, Lcom/google/common/util/concurrent/Monitor;->fair:Z
 
@@ -1069,7 +956,6 @@
     :cond_0
     const/4 v4, 0x0
 
-    .line 16
     :cond_1
     :try_start_1
     sget-object v7, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
@@ -1085,7 +971,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 17
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
@@ -1098,7 +983,6 @@
     :catch_0
     const/4 v3, 0x1
 
-    .line 18
     :cond_3
     :try_start_2
     invoke-static {}, Ljava/lang/System;->nanoTime()J
@@ -1111,7 +995,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 19
     :cond_4
     :goto_0
     :try_start_3
@@ -1139,7 +1022,6 @@
     :goto_1
     if-nez v5, :cond_7
 
-    .line 20
     :try_start_4
     invoke-virtual {p4}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
     :try_end_4
@@ -1148,7 +1030,6 @@
     :cond_7
     if-eqz v3, :cond_8
 
-    .line 21
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
@@ -1163,7 +1044,6 @@
 
     goto :goto_2
 
-    .line 22
     :catch_1
     :try_start_5
     invoke-static {}, Ljava/lang/System;->nanoTime()J
@@ -1185,7 +1065,6 @@
 
     const/4 v3, 0x1
 
-    .line 23
     :goto_2
     :try_start_6
     invoke-virtual {p4}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
@@ -1199,7 +1078,6 @@
 
     if-eqz v3, :cond_9
 
-    .line 24
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p2
@@ -1209,7 +1087,6 @@
     :cond_9
     throw p1
 
-    .line 25
     :cond_a
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -1221,7 +1098,6 @@
 .method public getOccupiedDepth()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->getHoldCount()I
@@ -1234,7 +1110,6 @@
 .method public getQueueLength()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->getQueueLength()I
@@ -1247,23 +1122,19 @@
 .method public getWaitQueueLength(Lcom/google/common/util/concurrent/Monitor$Guard;)I
     .locals 1
 
-    .line 1
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
-    .line 3
     :try_start_0
     iget p1, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->waiterCount:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
@@ -1279,7 +1150,6 @@
 
     throw p1
 
-    .line 5
     :cond_0
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -1291,7 +1161,6 @@
 .method public hasQueuedThread(Ljava/lang/Thread;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/locks/ReentrantLock;->hasQueuedThread(Ljava/lang/Thread;)Z
@@ -1304,7 +1173,6 @@
 .method public hasQueuedThreads()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->hasQueuedThreads()Z
@@ -1317,7 +1185,6 @@
 .method public hasWaiters(Lcom/google/common/util/concurrent/Monitor$Guard;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/Monitor;->getWaitQueueLength(Lcom/google/common/util/concurrent/Monitor$Guard;)I
 
     move-result p1
@@ -1338,7 +1205,6 @@
 .method public isFair()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/common/util/concurrent/Monitor;->fair:Z
 
     return v0
@@ -1347,7 +1213,6 @@
 .method public isOccupied()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->isLocked()Z
@@ -1360,7 +1225,6 @@
 .method public isOccupiedByCurrentThread()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->isHeldByCurrentThread()Z
@@ -1373,10 +1237,8 @@
 .method public leave()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 2
     :try_start_0
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->getHoldCount()I
 
@@ -1386,12 +1248,10 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Monitor;->signalNextWaiter()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
@@ -1408,7 +1268,6 @@
 .method public tryEnter()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock()Z
@@ -1421,15 +1280,12 @@
 .method public tryEnterIf(Lcom/google/common/util/concurrent/Monitor$Guard;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     if-ne v0, p0, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Monitor;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->tryLock()Z
 
     move-result v1
@@ -1440,7 +1296,6 @@
 
     return p1
 
-    .line 4
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
@@ -1451,7 +1306,6 @@
 
     if-nez p1, :cond_1
 
-    .line 5
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     :cond_1
@@ -1464,7 +1318,6 @@
 
     throw p1
 
-    .line 6
     :cond_2
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -1481,7 +1334,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     const/4 v1, 0x1
@@ -1506,20 +1358,17 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 3
     invoke-direct {p0, p1, v1}, Lcom/google/common/util/concurrent/Monitor;->await(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
 
     :cond_1
     return-void
 
-    .line 4
     :cond_2
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -1536,12 +1385,10 @@
         }
     .end annotation
 
-    .line 5
     invoke-virtual {p4, p2, p3}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
 
     move-result-wide p2
 
-    .line 6
     iget-object p4, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     const/4 v0, 0x0
@@ -1568,7 +1415,6 @@
 
     if-eqz p4, :cond_3
 
-    .line 7
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result p4
@@ -1587,7 +1433,6 @@
     :cond_2
     return v0
 
-    .line 8
     :cond_3
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -1599,7 +1444,6 @@
 .method public waitForUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;)V
     .locals 3
 
-    .line 1
     iget-object v0, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     const/4 v1, 0x1
@@ -1624,20 +1468,17 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 3
     invoke-direct {p0, p1, v1}, Lcom/google/common/util/concurrent/Monitor;->awaitUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;Z)V
 
     :cond_1
     return-void
 
-    .line 4
     :cond_2
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 
@@ -1649,12 +1490,10 @@
 .method public waitForUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;JLjava/util/concurrent/TimeUnit;)Z
     .locals 5
 
-    .line 5
     invoke-virtual {p4, p2, p3}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
 
     move-result-wide p2
 
-    .line 6
     iget-object p4, p1, Lcom/google/common/util/concurrent/Monitor$Guard;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     const/4 v0, 0x0
@@ -1681,7 +1520,6 @@
 
     if-eqz p4, :cond_5
 
-    .line 7
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
 
     move-result p4
@@ -1690,7 +1528,6 @@
 
     return v1
 
-    .line 8
     :cond_1
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -1698,14 +1535,12 @@
 
     add-long/2addr v2, p2
 
-    .line 9
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result p4
 
     const/4 v4, 0x1
 
-    .line 10
     :goto_1
     :try_start_0
     invoke-direct {p0, p1, p2, p3, v4}, Lcom/google/common/util/concurrent/Monitor;->awaitNanos(Lcom/google/common/util/concurrent/Monitor$Guard;JZ)Z
@@ -1717,7 +1552,6 @@
 
     if-eqz p4, :cond_2
 
-    .line 11
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p2
@@ -1734,7 +1568,6 @@
 
     goto :goto_2
 
-    .line 12
     :catch_0
     :try_start_1
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor$Guard;->isSatisfied()Z
@@ -1745,7 +1578,6 @@
 
     if-eqz p2, :cond_3
 
-    .line 13
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
@@ -1754,7 +1586,6 @@
 
     return v1
 
-    .line 14
     :cond_3
     :try_start_2
     invoke-static {}, Ljava/lang/System;->nanoTime()J
@@ -1777,7 +1608,6 @@
     :goto_2
     if-eqz v1, :cond_4
 
-    .line 15
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p2
@@ -1787,7 +1617,6 @@
     :cond_4
     throw p1
 
-    .line 16
     :cond_5
     new-instance p1, Ljava/lang/IllegalMonitorStateException;
 

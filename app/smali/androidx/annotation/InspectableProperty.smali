@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/InspectableProperty;
 .super Ljava/lang/Object;
-.source "InspectableProperty.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/commonsdk/framework/UMSenderStateNotify;
 .super Ljava/lang/Object;
-.source "UMSenderStateNotify.java"
 
 
 # virtual methods

@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/a/c;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # static fields
@@ -37,7 +36,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -90,52 +88,42 @@
 
     const-string v0, ".log"
 
-    .line 2
     sput-object v0, Lcom/tencent/open/a/c;->e:Ljava/lang/String;
 
     const-wide/32 v0, 0x800000
 
-    .line 3
     sput-wide v0, Lcom/tencent/open/a/c;->f:J
 
     const/high16 v0, 0x40000
 
-    .line 4
     sput v0, Lcom/tencent/open/a/c;->g:I
 
     const/16 v0, 0x400
 
-    .line 5
     sput v0, Lcom/tencent/open/a/c;->h:I
 
     const/16 v0, 0x2710
 
-    .line 6
     sput v0, Lcom/tencent/open/a/c;->i:I
 
     const-string v0, "debug.file.blockcount"
 
-    .line 7
     sput-object v0, Lcom/tencent/open/a/c;->j:Ljava/lang/String;
 
     const-string v0, "debug.file.keepperiod"
 
-    .line 8
     sput-object v0, Lcom/tencent/open/a/c;->k:Ljava/lang/String;
 
     const-string v0, "debug.file.tracelevel"
 
-    .line 9
     sput-object v0, Lcom/tencent/open/a/c;->l:Ljava/lang/String;
 
     const/16 v0, 0x18
 
-    .line 10
     sput v0, Lcom/tencent/open/a/c;->m:I
 
     const-wide/32 v0, 0x240c8400
 
-    .line 11
     sput-wide v0, Lcom/tencent/open/a/c;->n:J
 
     return-void

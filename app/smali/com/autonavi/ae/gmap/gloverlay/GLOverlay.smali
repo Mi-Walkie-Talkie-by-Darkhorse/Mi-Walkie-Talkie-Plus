@@ -1,6 +1,5 @@
 .class public abstract Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;
 .super Ljava/lang/Object;
-.source "GLOverlay.java"
 
 
 # annotations
@@ -27,29 +26,22 @@
 .method public constructor <init>(ILcom/autonavi/amap/mapcore/interfaces/IAMap;I)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->isNightStyle:Z
 
     const-wide/16 v0, 0x0
 
-    .line 3
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
-    .line 4
     iput p1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mEngineID:I
 
-    .line 5
     iput-object p2, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
-    .line 6
     iput p3, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mCode:I
 
-    .line 7
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     return-void
@@ -119,10 +111,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->releaseInstance()V
 
-    .line 2
     invoke-super {p0}, Ljava/lang/Object;->finalize()V
 
     return-void
@@ -131,7 +121,6 @@
 .method public getCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mCode:I
 
     return v0
@@ -140,7 +129,6 @@
 .method public getNativeInstatnce()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     return-wide v0
@@ -149,7 +137,6 @@
 .method public getOverlayPriority()I
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeGetOverlayPriority(J)I
@@ -162,7 +149,6 @@
 .method public getSize()I
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -175,7 +161,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-static {v0, v1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeGetCount(J)I
 
@@ -187,7 +172,6 @@
 .method public getSubType()I
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -200,7 +184,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-static {v0, v1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeGetSubType(J)I
 
@@ -212,7 +195,6 @@
 .method public getType()I
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -225,7 +207,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-static {v0, v1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeGetType(J)I
 
@@ -237,7 +218,6 @@
 .method public isClickable()Z
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -250,7 +230,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-static {v0, v1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeIsClickable(J)Z
 
@@ -262,7 +241,6 @@
 .method public isVisible()Z
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -275,7 +253,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-static {v0, v1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeIsVisible(J)Z
 
@@ -287,7 +264,6 @@
 .method public releaseInstance()V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -296,12 +272,10 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     iget v4, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mEngineID:I
 
     invoke-static {v4, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->destoryOverlay(IJ)V
 
-    .line 3
     iput-wide v2, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     :cond_0
@@ -311,7 +285,6 @@
 .method public removeAll()V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -322,18 +295,15 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {v0, v1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeRemoveAll(J)V
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-eqz v0, :cond_1
 
     const/4 v1, 0x0
 
-    .line 4
     invoke-interface {v0, v1}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->setRunLowFrame(Z)V
 
     :cond_1
@@ -343,7 +313,6 @@
 .method public removeItem(I)V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -354,7 +323,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeRemoveItem(JI)V
 
@@ -364,7 +332,6 @@
 .method public setClickable(Z)V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -375,7 +342,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeSetClickable(JZ)V
 
@@ -385,7 +351,6 @@
 .method public setMaxCountShown(I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeSetShownMaxCount(JI)V
@@ -396,7 +361,6 @@
 .method public setMaxDisplayLevel(I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeSetMaxDisplayLevel(JI)V
@@ -407,7 +371,6 @@
 .method public setMinDisplayLevel(I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeSetMinDisplayLevel(JI)V
@@ -418,7 +381,6 @@
 .method public setOverlayItemPriority(I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeSetOverlayItemPriority(JI)V
@@ -429,7 +391,6 @@
 .method public setOverlayOnTop(Z)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeSetOverlayOnTop(JZ)V
@@ -440,7 +401,6 @@
 .method public setOverlayPriority(I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeSetOverlayPriority(JI)V
@@ -451,7 +411,6 @@
 .method public setVisible(Z)V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -462,11 +421,9 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->nativeSetVisible(JZ)V
 
-    .line 3
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     const/4 v0, 0x0
@@ -479,7 +436,6 @@
 .method public useNightStyle(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->isNightStyle:Z
 
     return-void

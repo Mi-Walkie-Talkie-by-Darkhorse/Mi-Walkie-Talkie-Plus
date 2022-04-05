@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/HeatmapTileProvider;
 .super Ljava/lang/Object;
-.source "HeatmapTileProvider.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/model/TileProvider;
@@ -68,7 +67,6 @@
 
     const/16 v4, 0xe1
 
-    .line 1
     invoke-static {v3, v4, v2}, Landroid/graphics/Color;->rgb(III)I
 
     move-result v3
@@ -77,7 +75,6 @@
 
     const/16 v3, 0xff
 
-    .line 2
     invoke-static {v3, v2, v2}, Landroid/graphics/Color;->rgb(III)I
 
     move-result v2
@@ -90,12 +87,10 @@
 
     new-array v0, v0, [F
 
-    .line 3
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->b:[F
 
-    .line 4
     new-instance v2, Lcom/amap/api/maps/model/Gradient;
 
     invoke-direct {v2, v1, v0}, Lcom/amap/api/maps/model/Gradient;-><init>([I[F)V
@@ -114,24 +109,20 @@
 .method private constructor <init>(Lcom/amap/api/maps/model/HeatmapTileProvider$Builder;)V
     .locals 4
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     invoke-static {p1}, Lcom/amap/api/maps/model/HeatmapTileProvider$Builder;->a(Lcom/amap/api/maps/model/HeatmapTileProvider$Builder;)Ljava/util/Collection;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->d:Ljava/util/Collection;
 
-    .line 4
     invoke-static {p1}, Lcom/amap/api/maps/model/HeatmapTileProvider$Builder;->b(Lcom/amap/api/maps/model/HeatmapTileProvider$Builder;)I
 
     move-result v0
 
     iput v0, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->f:I
 
-    .line 5
     invoke-static {p1}, Lcom/amap/api/maps/model/HeatmapTileProvider$Builder;->c(Lcom/amap/api/maps/model/HeatmapTileProvider$Builder;)Lcom/amap/api/maps/model/Gradient;
 
     move-result-object v0
@@ -140,20 +131,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 6
     invoke-virtual {v0}, Lcom/amap/api/maps/model/Gradient;->isAvailable()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 7
     :cond_0
     sget-object v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->DEFAULT_GRADIENT:Lcom/amap/api/maps/model/Gradient;
 
     iput-object v0, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->g:Lcom/amap/api/maps/model/Gradient;
 
-    .line 8
     :cond_1
     invoke-static {p1}, Lcom/amap/api/maps/model/HeatmapTileProvider$Builder;->d(Lcom/amap/api/maps/model/HeatmapTileProvider$Builder;)D
 
@@ -161,7 +149,6 @@
 
     iput-wide v0, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->j:D
 
-    .line 9
     iget p1, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->f:I
 
     int-to-double v0, p1
@@ -176,7 +163,6 @@
 
     iput-object p1, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->i:[D
 
-    .line 10
     iget-object p1, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->g:Lcom/amap/api/maps/model/Gradient;
 
     iput-object p1, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->g:Lcom/amap/api/maps/model/Gradient;
@@ -189,7 +175,6 @@
 
     iput-object p1, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->h:[I
 
-    .line 11
     iget-object p1, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->d:Ljava/util/Collection;
 
     invoke-direct {p0, p1}, Lcom/amap/api/maps/model/HeatmapTileProvider;->b(Ljava/util/Collection;)V
@@ -200,7 +185,6 @@
 .method synthetic constructor <init>(Lcom/amap/api/maps/model/HeatmapTileProvider$Builder;B)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/amap/api/maps/model/HeatmapTileProvider;-><init>(Lcom/amap/api/maps/model/HeatmapTileProvider$Builder;)V
 
     return-void
@@ -213,14 +197,12 @@
 
     move-object/from16 v1, p1
 
-    .line 17
     array-length v2, v1
 
     add-int/lit8 v2, v2, -0x1
 
     aget v2, v1, v2
 
-    .line 18
     array-length v3, v1
 
     add-int/lit8 v3, v3, -0x1
@@ -229,12 +211,10 @@
 
     div-double v3, v3, p2
 
-    .line 19
     array-length v12, v0
 
     mul-int v5, v12, v12
 
-    .line 20
     new-array v6, v5, [I
 
     const/4 v5, 0x0
@@ -249,7 +229,6 @@
     :goto_1
     if-ge v8, v12, :cond_2
 
-    .line 21
     aget-object v9, v0, v8
 
     aget-wide v10, v9, v7
@@ -268,7 +247,6 @@
 
     if-eqz v16, :cond_1
 
-    .line 22
     array-length v10, v1
 
     if-ge v13, v10, :cond_0
@@ -279,13 +257,11 @@
 
     goto :goto_2
 
-    .line 23
     :cond_0
     aput v2, v6, v9
 
     goto :goto_2
 
-    .line 24
     :cond_1
     aput v5, v6, v9
 
@@ -299,7 +275,6 @@
 
     goto :goto_0
 
-    .line 25
     :cond_3
     sget-object v0, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
@@ -319,7 +294,6 @@
 
     move v11, v12
 
-    .line 26
     invoke-virtual/range {v5 .. v12}, Landroid/graphics/Bitmap;->setPixels([IIIIIII)V
 
     return-object v0
@@ -328,7 +302,6 @@
 .method static synthetic a(Ljava/util/Collection;)Ljava/util/Collection;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -378,7 +351,6 @@
 
     if-ge v4, v5, :cond_6
 
-    .line 2
     iget-object v5, v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->d:Ljava/util/Collection;
 
     iget-object v6, v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->e:Lcom/amap/api/col/l3/du;
@@ -389,7 +361,6 @@
 
     int-to-double v11, v4
 
-    .line 3
     invoke-static {v9, v10, v11, v12}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v9
@@ -398,7 +369,6 @@
 
     double-to-int v7, v9
 
-    .line 4
     iget-wide v8, v6, Lcom/amap/api/col/l3/du;->a:D
 
     iget-wide v10, v6, Lcom/amap/api/col/l3/du;->c:D
@@ -577,7 +547,6 @@
     :goto_3
     if-ge v4, v3, :cond_5
 
-    .line 5
     aget-wide v5, v2, v3
 
     aput-wide v5, v2, v4
@@ -599,7 +568,6 @@
 
     const/16 v3, 0xa
 
-    .line 6
     aget-wide v3, v2, v3
 
     aput-wide v3, v2, v5
@@ -619,7 +587,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 7
     new-array v0, v0, [D
 
     neg-int v1, p0
@@ -643,7 +610,6 @@
 
     div-double/2addr v3, v5
 
-    .line 8
     invoke-static {v3, v4}, Ljava/lang/Math;->exp(D)D
 
     move-result-wide v3
@@ -665,7 +631,6 @@
 
     move-object/from16 v1, p1
 
-    .line 9
     const-class v2, D
 
     array-length v3, v1
@@ -682,7 +647,6 @@
 
     double-to-int v3, v3
 
-    .line 10
     array-length v4, v0
 
     mul-int/lit8 v5, v3, 0x2
@@ -705,7 +669,6 @@
 
     aput v4, v9, v10
 
-    .line 11
     invoke-static {v2, v9}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v9
@@ -724,7 +687,6 @@
     :goto_1
     if-ge v14, v4, :cond_3
 
-    .line 12
     aget-object v15, v0, v11
 
     aget-wide v16, v15, v14
@@ -756,7 +718,6 @@
     :goto_2
     if-ge v13, v15, :cond_2
 
-    .line 13
     aget-object v20, v9, v13
 
     aget-wide v21, v20, v14
@@ -794,7 +755,6 @@
 
     aput v5, v0, v10
 
-    .line 14
     invoke-static {v2, v0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
 
     move-result-object v0
@@ -813,7 +773,6 @@
     :goto_4
     if-ge v5, v4, :cond_8
 
-    .line 15
     aget-object v8, v9, v2
 
     aget-wide v11, v8, v5
@@ -852,7 +811,6 @@
 
     sub-int v16, v2, v3
 
-    .line 16
     aget-object v16, v0, v16
 
     sub-int v18, v7, v3
@@ -904,13 +862,11 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -929,7 +885,6 @@
 
     check-cast v1, Lcom/amap/api/maps/model/WeightedLatLng;
 
-    .line 3
     iget-object v2, v1, Lcom/amap/api/maps/model/WeightedLatLng;->latLng:Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v2, v2, Lcom/amap/api/maps/model/LatLng;->latitude:D
@@ -950,30 +905,25 @@
 
     if-lez v6, :cond_0
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iput-object v0, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->d:Ljava/util/Collection;
 
-    .line 6
     invoke-static {v0}, Lcom/amap/api/maps/model/HeatmapTileProvider;->c(Ljava/util/Collection;)Lcom/amap/api/col/l3/du;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->e:Lcom/amap/api/col/l3/du;
 
-    .line 7
     new-instance v0, Lcom/amap/api/maps/model/a;
 
     invoke-direct {v0, p1}, Lcom/amap/api/maps/model/a;-><init>(Lcom/amap/api/col/l3/du;)V
 
     iput-object v0, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->c:Lcom/amap/api/maps/model/a;
 
-    .line 8
     iget-object p1, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->d:Ljava/util/Collection;
 
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
@@ -993,14 +943,12 @@
 
     check-cast v0, Lcom/amap/api/maps/model/WeightedLatLng;
 
-    .line 9
     iget-object v1, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->c:Lcom/amap/api/maps/model/a;
 
     invoke-virtual {v1, v0}, Lcom/amap/api/maps/model/a;->a(Lcom/amap/api/maps/model/WeightedLatLng;)V
 
     goto :goto_1
 
-    .line 10
     :cond_2
     iget p1, p0, Lcom/amap/api/maps/model/HeatmapTileProvider;->f:I
 
@@ -1017,7 +965,6 @@
     :catchall_0
     move-exception p1
 
-    .line 11
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -1035,40 +982,34 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface/range {p0 .. p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/amap/api/maps/model/WeightedLatLng;
 
-    .line 3
     invoke-virtual {v1}, Lcom/amap/api/maps/model/WeightedLatLng;->getPoint()Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object v2
 
     iget-wide v2, v2, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
-    .line 4
     invoke-virtual {v1}, Lcom/amap/api/maps/model/WeightedLatLng;->getPoint()Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object v4
 
     iget-wide v4, v4, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
-    .line 5
     invoke-virtual {v1}, Lcom/amap/api/maps/model/WeightedLatLng;->getPoint()Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object v6
 
     iget-wide v6, v6, Lcom/autonavi/amap/mapcore/DPoint;->y:D
 
-    .line 6
     invoke-virtual {v1}, Lcom/amap/api/maps/model/WeightedLatLng;->getPoint()Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object v1
@@ -1083,7 +1024,6 @@
 
     move-wide/from16 v17, v8
 
-    .line 7
     :cond_0
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -1092,21 +1032,18 @@
 
     if-eqz v1, :cond_4
 
-    .line 8
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/amap/api/maps/model/WeightedLatLng;
 
-    .line 9
     invoke-virtual {v1}, Lcom/amap/api/maps/model/WeightedLatLng;->getPoint()Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object v2
 
     iget-wide v2, v2, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
-    .line 10
     invoke-virtual {v1}, Lcom/amap/api/maps/model/WeightedLatLng;->getPoint()Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object v1
@@ -1142,7 +1079,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_4
     new-instance v0, Lcom/amap/api/col/l3/du;
 
@@ -1170,7 +1106,6 @@
 
     const-wide/high16 v6, 0x4000000000000000L    # 2.0
 
-    .line 1
     invoke-static {v6, v7, v4, v5}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v4
@@ -1179,7 +1114,6 @@
 
     div-double v4, v8, v4
 
-    .line 2
     iget v10, v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->f:I
 
     int-to-double v11, v10
@@ -1236,7 +1170,6 @@
 
     add-double/2addr v1, v11
 
-    .line 3
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
@@ -1247,7 +1180,6 @@
 
     if-gez v5, :cond_0
 
-    .line 4
     new-instance v4, Lcom/amap/api/col/l3/du;
 
     const-wide/high16 v15, 0x3ff0000000000000L    # 1.0
@@ -1266,7 +1198,6 @@
 
     const-wide/high16 v15, -0x4010000000000000L    # -1.0
 
-    .line 5
     iget-object v5, v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->c:Lcom/amap/api/maps/model/a;
 
     invoke-virtual {v5, v4}, Lcom/amap/api/maps/model/a;->a(Lcom/amap/api/col/l3/du;)Ljava/util/Collection;
@@ -1285,7 +1216,6 @@
 
     if-lez v5, :cond_1
 
-    .line 6
     new-instance v4, Lcom/amap/api/col/l3/du;
 
     const-wide/16 v21, 0x0
@@ -1300,7 +1230,6 @@
 
     invoke-direct/range {v20 .. v28}, Lcom/amap/api/col/l3/du;-><init>(DDDD)V
 
-    .line 7
     iget-object v5, v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->c:Lcom/amap/api/maps/model/a;
 
     invoke-virtual {v5, v4}, Lcom/amap/api/maps/model/a;->a(Lcom/amap/api/col/l3/du;)Ljava/util/Collection;
@@ -1312,7 +1241,6 @@
     :cond_1
     move-wide/from16 v24, v20
 
-    .line 8
     :goto_1
     new-instance v5, Lcom/amap/api/col/l3/du;
 
@@ -1326,7 +1254,6 @@
 
     invoke-direct/range {v15 .. v23}, Lcom/amap/api/col/l3/du;-><init>(DDDD)V
 
-    .line 9
     new-instance v1, Lcom/amap/api/col/l3/du;
 
     iget-object v2, v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->e:Lcom/amap/api/col/l3/du;
@@ -1353,19 +1280,16 @@
 
     invoke-direct/range {v26 .. v34}, Lcom/amap/api/col/l3/du;-><init>(DDDD)V
 
-    .line 10
     invoke-virtual {v5, v1}, Lcom/amap/api/col/l3/du;->a(Lcom/amap/api/col/l3/du;)Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    .line 11
     sget-object v1, Lcom/amap/api/maps/model/TileProvider;->NO_TILE:Lcom/amap/api/maps/model/Tile;
 
     return-object v1
 
-    .line 12
     :cond_2
     iget-object v1, v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->c:Lcom/amap/api/maps/model/a;
 
@@ -1373,19 +1297,16 @@
 
     move-result-object v1
 
-    .line 13
     invoke-interface {v1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 14
     sget-object v1, Lcom/amap/api/maps/model/TileProvider;->NO_TILE:Lcom/amap/api/maps/model/Tile;
 
     return-object v1
 
-    .line 15
     :cond_3
     iget v2, v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->f:I
 
@@ -1417,7 +1338,6 @@
 
     check-cast v2, [[D
 
-    .line 16
     invoke-interface {v1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -1435,12 +1355,10 @@
 
     check-cast v3, Lcom/amap/api/maps/model/WeightedLatLng;
 
-    .line 17
     invoke-virtual {v3}, Lcom/amap/api/maps/model/WeightedLatLng;->getPoint()Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object v4
 
-    .line 18
     iget-wide v10, v4, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
     sub-double/2addr v10, v13
@@ -1449,7 +1367,6 @@
 
     double-to-int v5, v10
 
-    .line 19
     iget-wide v10, v4, Lcom/autonavi/amap/mapcore/DPoint;->y:D
 
     sub-double/2addr v10, v8
@@ -1458,7 +1375,6 @@
 
     double-to-int v4, v10
 
-    .line 20
     aget-object v5, v2, v5
 
     aget-wide v10, v5, v4
@@ -1477,7 +1393,6 @@
 
     goto :goto_2
 
-    .line 21
     :cond_4
     invoke-interface/range {p1 .. p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
@@ -1496,12 +1411,10 @@
 
     check-cast v1, Lcom/amap/api/maps/model/WeightedLatLng;
 
-    .line 22
     invoke-virtual {v1}, Lcom/amap/api/maps/model/WeightedLatLng;->getPoint()Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object v3
 
-    .line 23
     iget-wide v4, v3, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
     add-double v4, v4, v24
@@ -1512,7 +1425,6 @@
 
     double-to-int v4, v4
 
-    .line 24
     iget-wide v10, v3, Lcom/autonavi/amap/mapcore/DPoint;->y:D
 
     sub-double/2addr v10, v8
@@ -1521,7 +1433,6 @@
 
     double-to-int v3, v10
 
-    .line 25
     aget-object v4, v2, v4
 
     aget-wide v10, v4, v3
@@ -1541,14 +1452,12 @@
     :cond_5
     move-object/from16 v0, p0
 
-    .line 26
     iget-object v1, v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->i:[D
 
     invoke-static {v2, v1}, Lcom/amap/api/maps/model/HeatmapTileProvider;->a([[D[D)[[D
 
     move-result-object v1
 
-    .line 27
     iget-object v2, v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->h:[I
 
     iget-object v3, v0, Lcom/amap/api/maps/model/HeatmapTileProvider;->k:[D
@@ -1559,7 +1468,6 @@
 
     move-result-object v1
 
-    .line 28
     new-instance v2, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v2}, Ljava/io/ByteArrayOutputStream;-><init>()V

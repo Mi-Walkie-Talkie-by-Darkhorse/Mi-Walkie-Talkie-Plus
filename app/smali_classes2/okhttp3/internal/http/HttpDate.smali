@@ -1,6 +1,5 @@
 .class public final Lokhttp3/internal/http/HttpDate;
 .super Ljava/lang/Object;
-.source "HttpDate.java"
 
 
 # static fields
@@ -25,7 +24,6 @@
 .method static constructor <clinit>()V
     .locals 16
 
-    .line 1
     new-instance v0, Lokhttp3/internal/http/HttpDate$1;
 
     invoke-direct {v0}, Lokhttp3/internal/http/HttpDate$1;-><init>()V
@@ -62,14 +60,12 @@
 
     const-string v15, "EEE MMM d yyyy HH:mm:ss z"
 
-    .line 2
     filled-new-array/range {v1 .. v15}, [Ljava/lang/String;
 
     move-result-object v0
 
     sput-object v0, Lokhttp3/internal/http/HttpDate;->BROWSER_COMPATIBLE_DATE_FORMAT_STRINGS:[Ljava/lang/String;
 
-    .line 3
     array-length v0, v0
 
     new-array v0, v0, [Ljava/text/DateFormat;
@@ -82,7 +78,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -91,7 +86,6 @@
 .method public static format(Ljava/util/Date;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lokhttp3/internal/http/HttpDate;->STANDARD_DATE_FORMAT:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -110,7 +104,6 @@
 .method public static parse(Ljava/lang/String;)Ljava/util/Date;
     .locals 9
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -121,7 +114,6 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/text/ParsePosition;
 
@@ -129,7 +121,6 @@
 
     invoke-direct {v0, v2}, Ljava/text/ParsePosition;-><init>(I)V
 
-    .line 3
     sget-object v3, Lokhttp3/internal/http/HttpDate;->STANDARD_DATE_FORMAT:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v3}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -142,7 +133,6 @@
 
     move-result-object v3
 
-    .line 4
     invoke-virtual {v0}, Ljava/text/ParsePosition;->getIndex()I
 
     move-result v4
@@ -155,13 +145,11 @@
 
     return-object v3
 
-    .line 5
     :cond_1
     sget-object v3, Lokhttp3/internal/http/HttpDate;->BROWSER_COMPATIBLE_DATE_FORMAT_STRINGS:[Ljava/lang/String;
 
     monitor-enter v3
 
-    .line 6
     :try_start_0
     sget-object v4, Lokhttp3/internal/http/HttpDate;->BROWSER_COMPATIBLE_DATE_FORMAT_STRINGS:[Ljava/lang/String;
 
@@ -172,14 +160,12 @@
     :goto_0
     if-ge v5, v4, :cond_4
 
-    .line 7
     sget-object v6, Lokhttp3/internal/http/HttpDate;->BROWSER_COMPATIBLE_DATE_FORMATS:[Ljava/text/DateFormat;
 
     aget-object v6, v6, v5
 
     if-nez v6, :cond_2
 
-    .line 8
     new-instance v6, Ljava/text/SimpleDateFormat;
 
     sget-object v7, Lokhttp3/internal/http/HttpDate;->BROWSER_COMPATIBLE_DATE_FORMAT_STRINGS:[Ljava/lang/String;
@@ -190,33 +176,27 @@
 
     invoke-direct {v6, v7, v8}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 9
     sget-object v7, Lokhttp3/internal/Util;->UTC:Ljava/util/TimeZone;
 
     invoke-virtual {v6, v7}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
-    .line 10
     sget-object v7, Lokhttp3/internal/http/HttpDate;->BROWSER_COMPATIBLE_DATE_FORMATS:[Ljava/text/DateFormat;
 
     aput-object v6, v7, v5
 
-    .line 11
     :cond_2
     invoke-virtual {v0, v2}, Ljava/text/ParsePosition;->setIndex(I)V
 
-    .line 12
     invoke-virtual {v6, p0, v0}, Ljava/text/DateFormat;->parse(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/util/Date;
 
     move-result-object v6
 
-    .line 13
     invoke-virtual {v0}, Ljava/text/ParsePosition;->getIndex()I
 
     move-result v7
 
     if-eqz v7, :cond_3
 
-    .line 14
     monitor-exit v3
 
     return-object v6
@@ -226,7 +206,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_4
     monitor-exit v3
 

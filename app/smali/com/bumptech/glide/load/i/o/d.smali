@@ -1,6 +1,5 @@
 .class interface abstract Lcom/bumptech/glide/load/i/o/d;
 .super Ljava/lang/Object;
-.source "ThumbnailQuery.java"
 
 
 # virtual methods

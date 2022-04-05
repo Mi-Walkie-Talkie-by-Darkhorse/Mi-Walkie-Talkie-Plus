@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/provider/FontsContractCompat$FontRequestCallback$FontRequestFailReason;
 .super Ljava/lang/Object;
-.source "FontsContractCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

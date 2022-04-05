@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/TreeMultiset$3;
 .super Ljava/lang/Object;
-.source "TreeMultiset.java"
 
 # interfaces
 .implements Ljava/util/Iterator;
@@ -52,12 +51,10 @@
 .method constructor <init>(Lcom/google/common/collect/TreeMultiset;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/TreeMultiset$3;->this$0:Lcom/google/common/collect/TreeMultiset;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iget-object p1, p0, Lcom/google/common/collect/TreeMultiset$3;->this$0:Lcom/google/common/collect/TreeMultiset;
 
     invoke-static {p1}, Lcom/google/common/collect/TreeMultiset;->access$1600(Lcom/google/common/collect/TreeMultiset;)Lcom/google/common/collect/TreeMultiset$AvlNode;
@@ -68,7 +65,6 @@
 
     const/4 p1, 0x0
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/collect/TreeMultiset$3;->prevEntry:Lcom/google/common/collect/Multiset$Entry;
 
     return-void
@@ -79,7 +75,6 @@
 .method public hasNext()Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/TreeMultiset$3;->current:Lcom/google/common/collect/TreeMultiset$AvlNode;
 
     const/4 v1, 0x0
@@ -88,7 +83,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/TreeMultiset$3;->this$0:Lcom/google/common/collect/TreeMultiset;
 
@@ -110,7 +104,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/google/common/collect/TreeMultiset$3;->current:Lcom/google/common/collect/TreeMultiset$AvlNode;
 
     return v1
@@ -131,14 +124,12 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/TreeMultiset$3;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/TreeMultiset$3;->this$0:Lcom/google/common/collect/TreeMultiset;
 
     iget-object v1, p0, Lcom/google/common/collect/TreeMultiset$3;->current:Lcom/google/common/collect/TreeMultiset$AvlNode;
@@ -147,10 +138,8 @@
 
     move-result-object v0
 
-    .line 4
     iput-object v0, p0, Lcom/google/common/collect/TreeMultiset$3;->prevEntry:Lcom/google/common/collect/Multiset$Entry;
 
-    .line 5
     iget-object v1, p0, Lcom/google/common/collect/TreeMultiset$3;->current:Lcom/google/common/collect/TreeMultiset$AvlNode;
 
     invoke-static {v1}, Lcom/google/common/collect/TreeMultiset$AvlNode;->access$1100(Lcom/google/common/collect/TreeMultiset$AvlNode;)Lcom/google/common/collect/TreeMultiset$AvlNode;
@@ -167,12 +156,10 @@
 
     const/4 v1, 0x0
 
-    .line 6
     iput-object v1, p0, Lcom/google/common/collect/TreeMultiset$3;->current:Lcom/google/common/collect/TreeMultiset$AvlNode;
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-object v1, p0, Lcom/google/common/collect/TreeMultiset$3;->current:Lcom/google/common/collect/TreeMultiset$AvlNode;
 
@@ -185,7 +172,6 @@
     :goto_0
     return-object v0
 
-    .line 8
     :cond_1
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -197,7 +183,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/TreeMultiset$3;->next()Lcom/google/common/collect/Multiset$Entry;
 
     move-result-object v0
@@ -208,7 +193,6 @@
 .method public remove()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/TreeMultiset$3;->prevEntry:Lcom/google/common/collect/Multiset$Entry;
 
     const/4 v1, 0x0
@@ -225,7 +209,6 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/collect/CollectPreconditions;->checkRemove(Z)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/TreeMultiset$3;->this$0:Lcom/google/common/collect/TreeMultiset;
 
     iget-object v2, p0, Lcom/google/common/collect/TreeMultiset$3;->prevEntry:Lcom/google/common/collect/Multiset$Entry;
@@ -238,7 +221,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/google/common/collect/TreeMultiset$3;->prevEntry:Lcom/google/common/collect/Multiset$Entry;
 
     return-void

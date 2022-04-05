@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/gd$a;
 .super Ljava/lang/Object;
-.source "HttpsDecisionUtil.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/col/l3/gd;
 
     invoke-direct {v0}, Lcom/amap/api/col/l3/gd;-><init>()V

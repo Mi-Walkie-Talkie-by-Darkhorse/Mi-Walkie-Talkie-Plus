@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/resource/bitmap/r$a;
 .super Ljava/lang/Object;
-.source "StreamBitmapDecoder.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/resource/bitmap/j$b;
@@ -27,13 +26,10 @@
 .method constructor <init>(Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;Lcom/bumptech/glide/util/d;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/bitmap/r$a;->a:Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;
 
-    .line 3
     iput-object p2, p0, Lcom/bumptech/glide/load/resource/bitmap/r$a;->b:Lcom/bumptech/glide/util/d;
 
     return-void
@@ -44,7 +40,6 @@
 .method public a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/r$a;->a:Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;
 
     invoke-virtual {v0}, Lcom/bumptech/glide/load/resource/bitmap/RecyclableBufferedInputStream;->a()V
@@ -60,7 +55,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/r$a;->b:Lcom/bumptech/glide/util/d;
 
     invoke-virtual {v0}, Lcom/bumptech/glide/util/d;->a()Ljava/io/IOException;
@@ -71,10 +65,8 @@
 
     if-eqz p2, :cond_0
 
-    .line 3
     invoke-interface {p1, p2}, Lcom/bumptech/glide/load/engine/x/e;->a(Landroid/graphics/Bitmap;)V
 
-    .line 4
     :cond_0
     throw v0
 

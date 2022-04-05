@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl$2;
 .super Ljava/lang/Object;
-.source "GalaxyFDSClientImpl.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -48,7 +47,6 @@
 .method constructor <init>(Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I[BLcom/xiaomi/infra/galaxy/fds/android/model/ObjectMetadata;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl$2;->this$0:Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl;
 
     iput-object p2, p0, Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl$2;->val$finalUploadId:Ljava/lang/String;
@@ -80,7 +78,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl$2;->this$0:Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl;
 
     iget-object v1, p0, Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl$2;->val$finalUploadId:Ljava/lang/String;
@@ -124,7 +121,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl$2;->call()Lcom/xiaomi/infra/galaxy/fds/android/model/UploadPartResult;
 
     move-result-object v0

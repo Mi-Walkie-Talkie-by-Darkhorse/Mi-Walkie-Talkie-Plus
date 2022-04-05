@@ -1,6 +1,5 @@
 .class Lcom/umeng/analytics/process/UMProcessDBDatasSender$ReplaceCallback;
 .super Ljava/lang/Object;
-.source "UMProcessDBDatasSender.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/utils/FileLockCallback;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lcom/umeng/analytics/process/UMProcessDBDatasSender;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/analytics/process/UMProcessDBDatasSender$ReplaceCallback;->a:Lcom/umeng/analytics/process/UMProcessDBDatasSender;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lcom/umeng/analytics/process/UMProcessDBDatasSender;Lcom/umeng/analytics/process/UMProcessDBDatasSender$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/umeng/analytics/process/UMProcessDBDatasSender$ReplaceCallback;-><init>(Lcom/umeng/analytics/process/UMProcessDBDatasSender;)V
 
     return-void
@@ -55,7 +52,6 @@
 .method public onFileLock(Ljava/lang/String;)Z
     .locals 4
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -69,7 +65,6 @@
     :cond_0
     const-string v0, "ua_"
 
-    .line 2
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -78,7 +73,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 3
     invoke-virtual {p1, v0, v3}, Ljava/lang/String;->replaceFirst(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -86,12 +80,10 @@
     :cond_1
     const-string v0, ".db"
 
-    .line 4
     invoke-virtual {p1, v0, v3}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 5
     iget-object v0, p0, Lcom/umeng/analytics/process/UMProcessDBDatasSender$ReplaceCallback;->a:Lcom/umeng/analytics/process/UMProcessDBDatasSender;
 
     invoke-static {v0}, Lcom/umeng/analytics/process/UMProcessDBDatasSender;->access$000(Lcom/umeng/analytics/process/UMProcessDBDatasSender;)Landroid/content/Context;

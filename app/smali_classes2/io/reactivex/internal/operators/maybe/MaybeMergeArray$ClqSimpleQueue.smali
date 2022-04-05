@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/maybe/MaybeMergeArray$ClqSimpleQueue;
 .super Ljava/util/concurrent/ConcurrentLinkedQueue;
-.source "MaybeMergeArray.java"
 
 # interfaces
 .implements Lio/reactivex/internal/operators/maybe/MaybeMergeArray$SimpleQueueWithConsumerIndex;
@@ -43,10 +42,8 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
@@ -61,7 +58,6 @@
 .method public consumerIndex()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$ClqSimpleQueue;->consumerIndex:I
 
     return v0
@@ -70,7 +66,6 @@
 .method public drop()V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$ClqSimpleQueue;->poll()Ljava/lang/Object;
 
     return-void
@@ -84,12 +79,10 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$ClqSimpleQueue;->producerIndex:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
-    .line 3
     invoke-super {p0, p1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->offer(Ljava/lang/Object;)Z
 
     move-result p1
@@ -105,7 +98,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -124,14 +116,12 @@
     .annotation build Lio/reactivex/annotations/Nullable;
     .end annotation
 
-    .line 1
     invoke-super {p0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->poll()Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget v1, p0, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$ClqSimpleQueue;->consumerIndex:I
 
     add-int/lit8 v1, v1, 0x1
@@ -145,7 +135,6 @@
 .method public producerIndex()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$ClqSimpleQueue;->producerIndex:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I

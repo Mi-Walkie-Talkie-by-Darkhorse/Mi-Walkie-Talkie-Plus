@@ -1,6 +1,5 @@
 .class synthetic Lcom/liulishuo/okdownload/core/listener/DownloadListener4WithSpeed$1;
 .super Ljava/lang/Object;
-.source "DownloadListener4WithSpeed.java"
 
 
 # annotations

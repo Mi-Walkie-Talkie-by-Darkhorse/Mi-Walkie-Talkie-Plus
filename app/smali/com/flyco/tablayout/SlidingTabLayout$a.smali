@@ -1,6 +1,5 @@
 .class Lcom/flyco/tablayout/SlidingTabLayout$a;
 .super Ljava/lang/Object;
-.source "SlidingTabLayout.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/flyco/tablayout/SlidingTabLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout$a;->a:Lcom/flyco/tablayout/SlidingTabLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$a;->a:Lcom/flyco/tablayout/SlidingTabLayout;
 
     invoke-static {v0}, Lcom/flyco/tablayout/SlidingTabLayout;->a(Lcom/flyco/tablayout/SlidingTabLayout;)Landroid/widget/LinearLayout;
@@ -53,7 +50,6 @@
 
     if-eq p1, v0, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$a;->a:Lcom/flyco/tablayout/SlidingTabLayout;
 
     invoke-static {v0}, Lcom/flyco/tablayout/SlidingTabLayout;->b(Lcom/flyco/tablayout/SlidingTabLayout;)Landroidx/viewpager/widget/ViewPager;
@@ -66,7 +62,6 @@
 
     if-eq v0, p1, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$a;->a:Lcom/flyco/tablayout/SlidingTabLayout;
 
     invoke-static {v0}, Lcom/flyco/tablayout/SlidingTabLayout;->c(Lcom/flyco/tablayout/SlidingTabLayout;)Z
@@ -75,7 +70,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$a;->a:Lcom/flyco/tablayout/SlidingTabLayout;
 
     invoke-static {v0}, Lcom/flyco/tablayout/SlidingTabLayout;->b(Lcom/flyco/tablayout/SlidingTabLayout;)Landroidx/viewpager/widget/ViewPager;
@@ -88,7 +82,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$a;->a:Lcom/flyco/tablayout/SlidingTabLayout;
 
@@ -98,7 +91,6 @@
 
     invoke-virtual {v0, p1}, Landroidx/viewpager/widget/ViewPager;->setCurrentItem(I)V
 
-    .line 6
     :goto_0
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$a;->a:Lcom/flyco/tablayout/SlidingTabLayout;
 
@@ -108,7 +100,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 7
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$a;->a:Lcom/flyco/tablayout/SlidingTabLayout;
 
     invoke-static {v0}, Lcom/flyco/tablayout/SlidingTabLayout;->d(Lcom/flyco/tablayout/SlidingTabLayout;)Lcom/flyco/tablayout/a/b;
@@ -119,7 +110,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_1
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$a;->a:Lcom/flyco/tablayout/SlidingTabLayout;
 
@@ -129,7 +119,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 9
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$a;->a:Lcom/flyco/tablayout/SlidingTabLayout;
 
     invoke-static {v0}, Lcom/flyco/tablayout/SlidingTabLayout;->d(Lcom/flyco/tablayout/SlidingTabLayout;)Lcom/flyco/tablayout/a/b;

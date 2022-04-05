@@ -1,6 +1,5 @@
 .class final Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet;
 .super Ljava/util/AbstractSet;
-.source "LinkedHashTreeMap.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>(Lcom/google/gson/internal/LinkedHashTreeMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet;->this$0:Lcom/google/gson/internal/LinkedHashTreeMap;
 
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
@@ -43,7 +41,6 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet;->this$0:Lcom/google/gson/internal/LinkedHashTreeMap;
 
     invoke-virtual {v0}, Lcom/google/gson/internal/LinkedHashTreeMap;->clear()V
@@ -54,7 +51,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     if-eqz v0, :cond_0
@@ -91,7 +87,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet$1;
 
     invoke-direct {v0, p0}, Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet$1;-><init>(Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet;)V
@@ -102,7 +97,6 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 1
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
@@ -111,7 +105,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet;->this$0:Lcom/google/gson/internal/LinkedHashTreeMap;
 
@@ -125,7 +118,6 @@
 
     return v1
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet;->this$0:Lcom/google/gson/internal/LinkedHashTreeMap;
 
@@ -139,7 +131,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/internal/LinkedHashTreeMap$EntrySet;->this$0:Lcom/google/gson/internal/LinkedHashTreeMap;
 
     iget v0, v0, Lcom/google/gson/internal/LinkedHashTreeMap;->size:I

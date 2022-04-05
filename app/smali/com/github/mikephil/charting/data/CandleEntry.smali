@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/data/CandleEntry;
 .super Lcom/github/mikephil/charting/data/Entry;
-.source "CandleEntry.java"
 
 
 # annotations
@@ -25,7 +24,6 @@
 .method public b()F
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/github/mikephil/charting/data/e;->b()F
 
     move-result v0
@@ -36,7 +34,6 @@
 .method public d()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/CandleEntry;->f:F
 
     return v0
@@ -45,7 +42,6 @@
 .method public e()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/CandleEntry;->d:F
 
     return v0
@@ -54,7 +50,6 @@
 .method public f()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/CandleEntry;->e:F
 
     return v0
@@ -63,7 +58,6 @@
 .method public g()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/CandleEntry;->g:F
 
     return v0

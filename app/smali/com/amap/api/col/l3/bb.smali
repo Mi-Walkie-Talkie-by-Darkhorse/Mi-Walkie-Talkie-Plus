@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/bb;
 .super Lcom/amap/api/col/l3/jd;
-.source "OfflineMapDownloadTask.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/bq$a;
@@ -26,10 +25,8 @@
 .method private constructor <init>(Lcom/amap/api/col/l3/bu;Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/jd;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
@@ -38,13 +35,10 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Lcom/amap/api/col/l3/bb;->h:Z
 
-    .line 4
     iput-object p1, p0, Lcom/amap/api/col/l3/bb;->d:Lcom/amap/api/col/l3/bu;
 
-    .line 5
     iput-object p2, p0, Lcom/amap/api/col/l3/bb;->e:Landroid/content/Context;
 
     return-void
@@ -53,12 +47,10 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/bu;Landroid/content/Context;B)V
     .locals 0
 
-    .line 6
     invoke-direct {p0, p1, p2}, Lcom/amap/api/col/l3/bb;-><init>(Lcom/amap/api/col/l3/bu;Landroid/content/Context;)V
 
     const/4 p1, 0x0
 
-    .line 7
     iput-object p1, p0, Lcom/amap/api/col/l3/bb;->g:Lcom/amap/api/maps/AMap;
 
     return-void
@@ -69,12 +61,10 @@
 .method public final a()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bb;->d:Lcom/amap/api/col/l3/bu;
 
     invoke-interface {v0}, Lcom/amap/api/col/l3/bu;->t()Z
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/bb;->d:Lcom/amap/api/col/l3/bu;
 
@@ -148,7 +138,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     return-void
@@ -159,30 +148,24 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/amap/api/col/l3/bb;->h:Z
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/bb;->b:Lcom/amap/api/col/l3/bq;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Lcom/amap/api/col/l3/bq;->b()V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {p0}, Lcom/amap/api/col/l3/jd;->e()V
 
-    .line 5
     :goto_0
     iget-object v0, p0, Lcom/amap/api/col/l3/bb;->c:Lcom/amap/api/col/l3/bs;
 
     if-eqz v0, :cond_1
 
-    .line 6
     invoke-virtual {v0}, Lcom/amap/api/col/l3/bs;->a()V
 
     :cond_1
@@ -194,18 +177,14 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Lcom/amap/api/col/l3/bb;->g:Lcom/amap/api/maps/AMap;
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/bb;->f:Landroid/os/Bundle;
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-virtual {v1}, Landroid/os/Bundle;->clear()V
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/col/l3/bb;->f:Landroid/os/Bundle;
 
     :cond_0
@@ -215,12 +194,10 @@
 .method public final d()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bb;->c:Lcom/amap/api/col/l3/bs;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/amap/api/col/l3/bs;->b()V
 
     :cond_0

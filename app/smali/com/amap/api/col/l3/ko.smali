@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ko;
 .super Ljava/lang/Object;
-.source "MapGPSLocation.java"
 
 
 # instance fields

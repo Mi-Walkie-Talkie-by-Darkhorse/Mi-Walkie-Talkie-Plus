@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/datepicker/CompositeDateValidator$2;
 .super Ljava/lang/Object;
-.source "CompositeDateValidator.java"
 
 # interfaces
 .implements Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -75,7 +72,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     invoke-interface {v0, p2, p3}, Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;->isValid(J)Z
 

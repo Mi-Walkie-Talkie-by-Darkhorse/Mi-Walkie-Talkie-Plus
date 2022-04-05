@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;
 .super Ljava/lang/Object;
-.source "DownloadUriOutputStream.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/file/DownloadOutputStream;
@@ -45,10 +44,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p1
@@ -61,10 +58,8 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->pdf:Landroid/os/ParcelFileDescriptor;
 
-    .line 4
     new-instance p2, Ljava/io/FileOutputStream;
 
     invoke-virtual {p1}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
@@ -75,14 +70,12 @@
 
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->fos:Ljava/io/FileOutputStream;
 
-    .line 5
     invoke-virtual {p2}, Ljava/io/FileOutputStream;->getChannel()Ljava/nio/channels/FileChannel;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->channel:Ljava/nio/channels/FileChannel;
 
-    .line 6
     new-instance p1, Ljava/io/BufferedOutputStream;
 
     iget-object p2, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->fos:Ljava/io/FileOutputStream;
@@ -93,7 +86,6 @@
 
     return-void
 
-    .line 7
     :cond_0
     new-instance p1, Ljava/io/FileNotFoundException;
 
@@ -139,19 +131,14 @@
         .end annotation
     .end param
 
-    .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 9
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->channel:Ljava/nio/channels/FileChannel;
 
-    .line 10
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->pdf:Landroid/os/ParcelFileDescriptor;
 
-    .line 11
     iput-object p3, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->fos:Ljava/io/FileOutputStream;
 
-    .line 12
     iput-object p4, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->out:Ljava/io/BufferedOutputStream;
 
     return-void
@@ -167,17 +154,14 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->out:Ljava/io/BufferedOutputStream;
 
     invoke-virtual {v0}, Ljava/io/BufferedOutputStream;->close()V
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->fos:Ljava/io/FileOutputStream;
 
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
 
-    .line 3
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->pdf:Landroid/os/ParcelFileDescriptor;
 
     invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->close()V
@@ -193,12 +177,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->out:Ljava/io/BufferedOutputStream;
 
     invoke-virtual {v0}, Ljava/io/BufferedOutputStream;->flush()V
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->pdf:Landroid/os/ParcelFileDescriptor;
 
     invoke-virtual {v0}, Landroid/os/ParcelFileDescriptor;->getFileDescriptor()Ljava/io/FileDescriptor;
@@ -218,7 +200,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->channel:Ljava/nio/channels/FileChannel;
 
     invoke-virtual {v0, p1, p2}, Ljava/nio/channels/FileChannel;->position(J)Ljava/nio/channels/FileChannel;
@@ -229,7 +210,6 @@
 .method public setLength(J)V
     .locals 6
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const-string v1, ") on the sdk version("
@@ -242,7 +222,6 @@
 
     if-lt v0, v4, :cond_2
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->pdf:Landroid/os/ParcelFileDescriptor;
 
@@ -261,14 +240,12 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     instance-of v4, v0, Landroid/system/ErrnoException;
 
     const-string v5, "), because of "
 
     if-eqz v4, :cond_1
 
-    .line 4
     check-cast v0, Landroid/system/ErrnoException;
 
     iget v0, v0, Landroid/system/ErrnoException;->errno:I
@@ -284,10 +261,8 @@
     :cond_0
     const-string v0, "fallocate() not supported; falling back to ftruncate()"
 
-    .line 5
     invoke-static {v3, v0}, Lcom/liulishuo/okdownload/core/Util;->w(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     :try_start_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->pdf:Landroid/os/ParcelFileDescriptor;
 
@@ -304,7 +279,6 @@
     :catchall_1
     move-exception v0
 
-    .line 7
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -331,7 +305,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -359,7 +332,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_2
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -398,7 +370,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;->out:Ljava/io/BufferedOutputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/BufferedOutputStream;->write([BII)V

@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Synchronized$SynchronizedAsMapValues;
 .super Lcom/google/common/collect/Synchronized$SynchronizedCollection;
-.source "Synchronized.java"
 
 
 # annotations
@@ -49,7 +48,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;-><init>(Ljava/util/Collection;Ljava/lang/Object;Lcom/google/common/collect/Synchronized$1;)V
 
     return-void
@@ -68,12 +66,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0}, Lcom/google/common/collect/Synchronized$SynchronizedCollection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Lcom/google/common/collect/Synchronized$SynchronizedAsMapValues$1;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/collect/Synchronized$SynchronizedAsMapValues$1;-><init>(Lcom/google/common/collect/Synchronized$SynchronizedAsMapValues;Ljava/util/Iterator;)V

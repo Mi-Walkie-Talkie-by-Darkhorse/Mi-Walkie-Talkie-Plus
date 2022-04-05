@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/multi/qrcode/detector/MultiDetector;
 .super Lcom/google/zxing/qrcode/detector/Detector;
-.source "MultiDetector.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 
     new-array v0, v0, [Lcom/google/zxing/common/DetectorResult;
 
-    .line 1
     sput-object v0, Lcom/google/zxing/multi/qrcode/detector/MultiDetector;->EMPTY_DETECTOR_RESULTS:[Lcom/google/zxing/common/DetectorResult;
 
     return-void
@@ -24,7 +22,6 @@
 .method public constructor <init>(Lcom/google/zxing/common/BitMatrix;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/zxing/qrcode/detector/Detector;-><init>(Lcom/google/zxing/common/BitMatrix;)V
 
     return-void
@@ -50,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/detector/Detector;->getImage()Lcom/google/zxing/common/BitMatrix;
 
     move-result-object v0
@@ -61,39 +57,32 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     sget-object v1, Lcom/google/zxing/DecodeHintType;->NEED_RESULT_POINT_CALLBACK:Lcom/google/zxing/DecodeHintType;
 
-    .line 3
     invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/google/zxing/ResultPointCallback;
 
-    .line 4
     :goto_0
     new-instance v2, Lcom/google/zxing/multi/qrcode/detector/MultiFinderPatternFinder;
 
     invoke-direct {v2, v0, v1}, Lcom/google/zxing/multi/qrcode/detector/MultiFinderPatternFinder;-><init>(Lcom/google/zxing/common/BitMatrix;Lcom/google/zxing/ResultPointCallback;)V
 
-    .line 5
     invoke-virtual {v2, p1}, Lcom/google/zxing/multi/qrcode/detector/MultiFinderPatternFinder;->findMulti(Ljava/util/Map;)[Lcom/google/zxing/qrcode/detector/FinderPatternInfo;
 
     move-result-object p1
 
-    .line 6
     array-length v0, p1
 
     if-eqz v0, :cond_3
 
-    .line 7
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 8
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -103,7 +92,6 @@
 
     aget-object v3, p1, v2
 
-    .line 9
     :try_start_0
     invoke-virtual {p0, v3}, Lcom/google/zxing/qrcode/detector/Detector;->processFinderPatternInfo(Lcom/google/zxing/qrcode/detector/FinderPatternInfo;)Lcom/google/zxing/common/DetectorResult;
 
@@ -118,7 +106,6 @@
 
     goto :goto_1
 
-    .line 10
     :cond_1
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -126,12 +113,10 @@
 
     if-eqz p1, :cond_2
 
-    .line 11
     sget-object p1, Lcom/google/zxing/multi/qrcode/detector/MultiDetector;->EMPTY_DETECTOR_RESULTS:[Lcom/google/zxing/common/DetectorResult;
 
     return-object p1
 
-    .line 12
     :cond_2
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -147,7 +132,6 @@
 
     return-object p1
 
-    .line 13
     :cond_3
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 

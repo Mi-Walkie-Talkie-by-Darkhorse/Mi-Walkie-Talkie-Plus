@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/io/Resources;
 .super Ljava/lang/Object;
-.source "Resources.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +25,6 @@
 .method public static asByteSource(Ljava/net/URL;)Lcom/google/common/io/ByteSource;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/io/Resources$UrlByteSource;
 
     const/4 v1, 0x0
@@ -40,7 +37,6 @@
 .method public static asCharSource(Ljava/net/URL;Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/io/Resources;->asByteSource(Ljava/net/URL;)Lcom/google/common/io/ByteSource;
 
     move-result-object p0
@@ -60,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/io/Resources;->asByteSource(Ljava/net/URL;)Lcom/google/common/io/ByteSource;
 
     move-result-object p0
@@ -83,7 +78,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-virtual {p0, p1}, Ljava/lang/Class;->getResource(Ljava/lang/String;)Ljava/net/URL;
 
     move-result-object v0
@@ -108,7 +102,6 @@
 
     aput-object p1, v4, v2
 
-    .line 5
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p0
@@ -125,7 +118,6 @@
 .method public static getResource(Ljava/lang/String;)Ljava/net/URL;
     .locals 4
 
-    .line 1
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -146,7 +138,6 @@
 
     check-cast v0, Ljava/lang/ClassLoader;
 
-    .line 2
     invoke-virtual {v0, p0}, Ljava/lang/ClassLoader;->getResource(Ljava/lang/String;)Ljava/net/URL;
 
     move-result-object v0
@@ -171,7 +162,6 @@
 
     const-string p0, "resource %s not found."
 
-    .line 3
     invoke-static {v3, p0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
     return-object v0
@@ -197,7 +187,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/io/Resources;->asCharSource(Ljava/net/URL;Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
 
     move-result-object p0
@@ -229,7 +218,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/io/Resources$1;
 
     invoke-direct {v0}, Lcom/google/common/io/Resources$1;-><init>()V
@@ -251,7 +239,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/io/Resources;->asByteSource(Ljava/net/URL;)Lcom/google/common/io/ByteSource;
 
     move-result-object p0
@@ -271,7 +258,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/io/Resources;->asCharSource(Ljava/net/URL;Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
 
     move-result-object p0

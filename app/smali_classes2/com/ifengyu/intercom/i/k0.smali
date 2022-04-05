@@ -1,13 +1,11 @@
 .class public Lcom/ifengyu/intercom/i/k0;
 .super Ljava/lang/Object;
-.source "UIUtils.java"
 
 
 # direct methods
 .method public static a(I)I
     .locals 1
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->e()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -22,7 +20,6 @@
 .method public static a()Landroid/content/Context;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -39,7 +36,6 @@
 
     return-object v0
 
-    .line 9
     :cond_0
     :try_start_0
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->a()Landroid/content/Context;
@@ -65,7 +61,6 @@
     :catch_0
     move-exception p0
 
-    .line 10
     invoke-virtual {p0}, Ljava/io/FileNotFoundException;->printStackTrace()V
 
     return-object v0
@@ -74,7 +69,6 @@
 .method public static varargs a(I[Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->e()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -89,14 +83,12 @@
 .method public static a(Ljava/lang/Runnable;)V
     .locals 5
 
-    .line 4
     invoke-static {}, Landroid/os/Process;->myTid()I
 
     move-result v0
 
     int-to-long v0, v0
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->c()J
 
     move-result-wide v2
@@ -105,12 +97,10 @@
 
     if-nez v4, :cond_0
 
-    .line 6
     invoke-interface {p0}, Ljava/lang/Runnable;->run()V
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->b()Landroid/os/Handler;
 
@@ -125,7 +115,6 @@
 .method public static a(Ljava/lang/Runnable;J)V
     .locals 1
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->b()Landroid/os/Handler;
 
     move-result-object v0
@@ -138,7 +127,6 @@
 .method private static b()Landroid/os/Handler;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->a()Landroid/os/Handler;
 
     move-result-object v0
@@ -149,7 +137,6 @@
 .method public static b(Ljava/lang/Runnable;)V
     .locals 1
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->b()Landroid/os/Handler;
 
     move-result-object v0
@@ -162,7 +149,6 @@
 .method public static b(I)[I
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->e()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -177,7 +163,6 @@
 .method private static c()J
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->c()J
 
     move-result-wide v0
@@ -188,7 +173,6 @@
 .method public static c(I)Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->e()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -203,7 +187,6 @@
 .method public static d()Ljava/lang/String;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -218,7 +201,6 @@
 .method public static d(I)[Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->e()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -233,7 +215,6 @@
 .method public static e()Landroid/content/res/Resources;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -248,7 +229,6 @@
 .method public static f()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->b()Landroid/os/Handler;
 
     move-result-object v0

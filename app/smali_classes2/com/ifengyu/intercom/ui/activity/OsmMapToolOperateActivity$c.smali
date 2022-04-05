@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$c;
 .super Ljava/lang/Object;
-.source "OsmMapToolOperateActivity.java"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onGlobalLayout()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->m(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Lorg/osmdroid/views/overlay/ScaleBarOverlay;
@@ -47,7 +44,6 @@
 
     invoke-virtual {v0}, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->disableScaleBar()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->m(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Lorg/osmdroid/views/overlay/ScaleBarOverlay;
@@ -56,7 +52,6 @@
 
     invoke-virtual {v0}, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->enableScaleBar()V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->m(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Lorg/osmdroid/views/overlay/ScaleBarOverlay;
@@ -67,7 +62,6 @@
 
     invoke-virtual {v0, v1}, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->setAlignBottom(Z)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->mapView:Lorg/osmdroid/views/MapView;
@@ -84,7 +78,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->mapView:Lorg/osmdroid/views/MapView;

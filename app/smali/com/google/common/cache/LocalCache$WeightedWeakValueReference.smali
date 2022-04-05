@@ -1,6 +1,5 @@
 .class final Lcom/google/common/cache/LocalCache$WeightedWeakValueReference;
 .super Lcom/google/common/cache/LocalCache$WeakValueReference;
-.source "LocalCache.java"
 
 
 # annotations
@@ -43,10 +42,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/google/common/cache/LocalCache$WeakValueReference;-><init>(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;Lcom/google/common/cache/LocalCache$ReferenceEntry;)V
 
-    .line 2
     iput p4, p0, Lcom/google/common/cache/LocalCache$WeightedWeakValueReference;->weight:I
 
     return-void
@@ -68,7 +65,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/cache/LocalCache$WeightedWeakValueReference;
 
     iget v1, p0, Lcom/google/common/cache/LocalCache$WeightedWeakValueReference;->weight:I
@@ -81,7 +77,6 @@
 .method public getWeight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/cache/LocalCache$WeightedWeakValueReference;->weight:I
 
     return v0

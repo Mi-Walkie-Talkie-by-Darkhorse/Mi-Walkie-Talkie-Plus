@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/m;
 .super Ljava/lang/Object;
-.source "Holder.java"
 
 
 # virtual methods

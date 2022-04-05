@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/exception/InvalidBucketNameException;
 .super Lcom/xiaomi/infra/galaxy/fds/exception/GalaxyFDSException;
-.source "InvalidBucketNameException.java"
 
 
 # static fields
@@ -15,10 +14,8 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/xiaomi/infra/galaxy/fds/exception/GalaxyFDSException;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/exception/InvalidBucketNameException;->message:Ljava/lang/String;
 
     return-void
@@ -29,7 +26,6 @@
 .method public getError()Lcom/xiaomi/infra/galaxy/fds/FDSError;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->InvalidBucketName:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     return-object v0
@@ -38,7 +34,6 @@
 .method public getMessage()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/exception/InvalidBucketNameException;->message:Ljava/lang/String;
 
     return-object v0

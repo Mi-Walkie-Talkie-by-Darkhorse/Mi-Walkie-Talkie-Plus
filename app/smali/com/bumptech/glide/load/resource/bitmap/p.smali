@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/resource/bitmap/p;
 .super Ljava/lang/Object;
-.source "LazyBitmapDrawableResource.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/s;
@@ -54,17 +53,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, Landroid/content/res/Resources;
 
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/bitmap/p;->a:Landroid/content/res/Resources;
 
-    .line 3
     invoke-static {p2}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p2, Lcom/bumptech/glide/load/engine/s;
@@ -106,7 +102,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     new-instance v0, Lcom/bumptech/glide/load/resource/bitmap/p;
 
@@ -120,7 +115,6 @@
 .method public a()V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/p;->b:Lcom/bumptech/glide/load/engine/s;
 
     invoke-interface {v0}, Lcom/bumptech/glide/load/engine/s;->a()V
@@ -131,7 +125,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/p;->b:Lcom/bumptech/glide/load/engine/s;
 
     invoke-interface {v0}, Lcom/bumptech/glide/load/engine/s;->b()I
@@ -155,7 +148,6 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Landroid/graphics/drawable/BitmapDrawable;
 
     return-object v0
@@ -166,7 +158,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-instance v0, Landroid/graphics/drawable/BitmapDrawable;
 
     iget-object v1, p0, Lcom/bumptech/glide/load/resource/bitmap/p;->a:Landroid/content/res/Resources;
@@ -189,7 +180,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/bumptech/glide/load/resource/bitmap/p;->get()Landroid/graphics/drawable/BitmapDrawable;
 
     move-result-object v0
@@ -200,14 +190,12 @@
 .method public initialize()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/p;->b:Lcom/bumptech/glide/load/engine/s;
 
     instance-of v1, v0, Lcom/bumptech/glide/load/engine/o;
 
     if-eqz v1, :cond_0
 
-    .line 2
     check-cast v0, Lcom/bumptech/glide/load/engine/o;
 
     invoke-interface {v0}, Lcom/bumptech/glide/load/engine/o;->initialize()V

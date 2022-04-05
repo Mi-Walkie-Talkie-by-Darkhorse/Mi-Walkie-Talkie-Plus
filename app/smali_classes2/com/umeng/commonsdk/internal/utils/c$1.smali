@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/internal/utils/c$1;
 .super Landroid/content/BroadcastReceiver;
-.source "BatteryUtils.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/umeng/commonsdk/internal/utils/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/internal/utils/c$1;->a:Lcom/umeng/commonsdk/internal/utils/c;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -37,7 +35,6 @@
 
     const-string v0, "ts"
 
-    .line 1
     :try_start_0
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
@@ -45,14 +42,12 @@
 
     const-string v2, "android.intent.action.BATTERY_CHANGED"
 
-    .line 2
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_6
 
-    .line 3
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
@@ -61,7 +56,6 @@
 
     const/4 v3, 0x0
 
-    .line 4
     invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
@@ -71,7 +65,6 @@
     :try_start_1
     const-string v4, "le"
 
-    .line 5
     invoke-virtual {v1, v4, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
@@ -81,7 +74,6 @@
     :try_start_2
     const-string v2, "voltage"
 
-    .line 6
     invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
@@ -91,7 +83,6 @@
     :try_start_3
     const-string v4, "vol"
 
-    .line 7
     invoke-virtual {v1, v4, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_1
@@ -101,7 +92,6 @@
     :try_start_4
     const-string v2, "temperature"
 
-    .line 8
     invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
@@ -111,10 +101,8 @@
     :try_start_5
     const-string v4, "temp"
 
-    .line 9
     invoke-virtual {v1, v4, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    .line 10
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v4
@@ -128,7 +116,6 @@
     :try_start_6
     const-string v2, "status"
 
-    .line 11
     invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v2
@@ -173,7 +160,6 @@
     :try_start_7
     const-string v2, "st"
 
-    .line 12
     invoke-virtual {v1, v2, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
     :try_end_7
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_3
@@ -183,7 +169,6 @@
     :try_start_8
     const-string v2, "plugged"
 
-    .line 13
     invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result p2
@@ -206,10 +191,8 @@
     :try_start_9
     const-string p2, "ct"
 
-    .line 14
     invoke-virtual {v1, p2, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    .line 15
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v4
@@ -225,7 +208,6 @@
 
     new-array v0, v6, [Ljava/lang/Object;
 
-    .line 16
     invoke-virtual {v1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object v2
@@ -236,7 +218,6 @@
 
     const p2, 0x8003
 
-    .line 17
     invoke-static {}, Lcom/umeng/commonsdk/internal/utils/c;->d()Landroid/content/Context;
 
     move-result-object v0
@@ -253,10 +234,8 @@
 
     move-result-object v1
 
-    .line 18
     invoke-static {p1, p2, v0, v1}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
-    .line 19
     iget-object p1, p0, Lcom/umeng/commonsdk/internal/utils/c$1;->a:Lcom/umeng/commonsdk/internal/utils/c;
 
     invoke-virtual {p1}, Lcom/umeng/commonsdk/internal/utils/c;->c()V
@@ -268,7 +247,6 @@
     :catchall_0
     move-exception p1
 
-    .line 20
     invoke-static {}, Lcom/umeng/commonsdk/internal/utils/c;->d()Landroid/content/Context;
 
     move-result-object p2

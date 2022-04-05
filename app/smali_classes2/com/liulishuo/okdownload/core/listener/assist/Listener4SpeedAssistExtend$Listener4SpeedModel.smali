@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;
 .super Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;
-.source "Listener4SpeedAssistExtend.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;-><init>(I)V
 
     return-void
@@ -43,7 +41,6 @@
 .method public getBlockSpeed(I)Lcom/liulishuo/okdownload/SpeedCalculator;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;->blockSpeeds:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -58,7 +55,6 @@
 .method public getTaskSpeed()Lcom/liulishuo/okdownload/SpeedCalculator;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;->taskSpeed:Lcom/liulishuo/okdownload/SpeedCalculator;
 
     return-object v0
@@ -71,24 +67,20 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->onInfoValid(Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)V
 
-    .line 2
     new-instance v0, Lcom/liulishuo/okdownload/SpeedCalculator;
 
     invoke-direct {v0}, Lcom/liulishuo/okdownload/SpeedCalculator;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;->taskSpeed:Lcom/liulishuo/okdownload/SpeedCalculator;
 
-    .line 3
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;->blockSpeeds:Landroid/util/SparseArray;
 
-    .line 4
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getBlockCount()I
 
     move-result p1
@@ -98,7 +90,6 @@
     :goto_0
     if-ge v0, p1, :cond_0
 
-    .line 5
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;->blockSpeeds:Landroid/util/SparseArray;
 
     new-instance v2, Lcom/liulishuo/okdownload/SpeedCalculator;

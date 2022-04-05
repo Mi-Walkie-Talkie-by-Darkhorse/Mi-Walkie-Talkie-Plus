@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/AbstractService$3;
 .super Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
-.source "AbstractService.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>(Ljava/lang/String;Lcom/google/common/util/concurrent/Service$State;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/google/common/util/concurrent/AbstractService$3;->val$from:Lcom/google/common/util/concurrent/Service$State;
 
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;-><init>(Ljava/lang/String;)V
@@ -43,7 +41,6 @@
 .method call(Lcom/google/common/util/concurrent/Service$Listener;)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService$3;->val$from:Lcom/google/common/util/concurrent/Service$State;
 
     invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/Service$Listener;->terminated(Lcom/google/common/util/concurrent/Service$State;)V
@@ -54,7 +51,6 @@
 .method bridge synthetic call(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/common/util/concurrent/Service$Listener;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/AbstractService$3;->call(Lcom/google/common/util/concurrent/Service$Listener;)V

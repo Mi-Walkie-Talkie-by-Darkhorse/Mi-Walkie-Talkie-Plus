@@ -1,6 +1,5 @@
 .class final Lretrofit2/converter/gson/GsonResponseBodyConverter;
 .super Ljava/lang/Object;
-.source "GsonResponseBodyConverter.java"
 
 # interfaces
 .implements Lretrofit2/Converter;
@@ -45,13 +44,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lretrofit2/converter/gson/GsonResponseBodyConverter;->gson:Lcom/google/gson/Gson;
 
-    .line 3
     iput-object p2, p0, Lretrofit2/converter/gson/GsonResponseBodyConverter;->adapter:Lcom/google/gson/TypeAdapter;
 
     return-void
@@ -67,7 +63,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Lokhttp3/ResponseBody;
 
     invoke-virtual {p0, p1}, Lretrofit2/converter/gson/GsonResponseBodyConverter;->convert(Lokhttp3/ResponseBody;)Ljava/lang/Object;
@@ -93,7 +88,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lretrofit2/converter/gson/GsonResponseBodyConverter;->gson:Lcom/google/gson/Gson;
 
     invoke-virtual {p1}, Lokhttp3/ResponseBody;->charStream()Ljava/io/Reader;
@@ -104,7 +98,6 @@
 
     move-result-object v0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lretrofit2/converter/gson/GsonResponseBodyConverter;->adapter:Lcom/google/gson/TypeAdapter;
 
@@ -114,7 +107,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     invoke-virtual {p1}, Lokhttp3/ResponseBody;->close()V
 
     return-object v0

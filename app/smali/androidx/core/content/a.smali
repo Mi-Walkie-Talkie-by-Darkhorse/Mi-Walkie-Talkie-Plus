@@ -1,13 +1,11 @@
 .class public final Landroidx/core/content/a;
 .super Ljava/lang/Object;
-.source "ContentResolverCompat.java"
 
 
 # direct methods
 .method public static a(Landroid/content/ContentResolver;Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroidx/core/os/b;)Landroid/database/Cursor;
     .locals 7
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
@@ -16,7 +14,6 @@
 
     if-eqz p6, :cond_0
 
-    .line 2
     :try_start_0
     invoke-virtual {p6}, Landroidx/core/os/b;->b()Ljava/lang/Object;
 
@@ -32,7 +29,6 @@
     :cond_0
     const/4 p6, 0x0
 
-    .line 3
     :goto_0
     move-object v6, p6
 
@@ -50,7 +46,6 @@
 
     move-object v5, p5
 
-    .line 4
     invoke-virtual/range {v0 .. v6}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
 
     move-result-object p0
@@ -59,30 +54,25 @@
 
     return-object p0
 
-    .line 5
     :goto_1
     instance-of p1, p0, Landroid/os/OperationCanceledException;
 
     if-eqz p1, :cond_1
 
-    .line 6
     new-instance p0, Landroidx/core/os/OperationCanceledException;
 
     invoke-direct {p0}, Landroidx/core/os/OperationCanceledException;-><init>()V
 
     throw p0
 
-    .line 7
     :cond_1
     throw p0
 
     :cond_2
     if-eqz p6, :cond_3
 
-    .line 8
     invoke-virtual {p6}, Landroidx/core/os/b;->d()V
 
-    .line 9
     :cond_3
     invoke-virtual/range {p0 .. p5}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 

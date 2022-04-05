@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/subscribers/LambdaSubscriber;
 .super Ljava/util/concurrent/atomic/AtomicReference;
-.source "LambdaSubscriber.java"
 
 # interfaces
 .implements Lio/reactivex/FlowableSubscriber;
@@ -86,19 +85,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/subscribers/LambdaSubscriber;->onNext:Lio/reactivex/functions/Consumer;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/subscribers/LambdaSubscriber;->onError:Lio/reactivex/functions/Consumer;
 
-    .line 4
     iput-object p3, p0, Lio/reactivex/internal/subscribers/LambdaSubscriber;->onComplete:Lio/reactivex/functions/Action;
 
-    .line 5
     iput-object p4, p0, Lio/reactivex/internal/subscribers/LambdaSubscriber;->onSubscribe:Lio/reactivex/functions/Consumer;
 
     return-void
@@ -109,7 +103,6 @@
 .method public cancel()V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->cancel(Ljava/util/concurrent/atomic/AtomicReference;)Z
 
     return-void
@@ -118,7 +111,6 @@
 .method public dispose()V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/subscribers/LambdaSubscriber;->cancel()V
 
     return-void
@@ -127,7 +119,6 @@
 .method public hasCustomOnError()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/subscribers/LambdaSubscriber;->onError:Lio/reactivex/functions/Consumer;
 
     sget-object v1, Lio/reactivex/internal/functions/Functions;->ON_ERROR_MISSING:Lio/reactivex/functions/Consumer;
@@ -148,7 +139,6 @@
 .method public isDisposed()Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -171,7 +161,6 @@
 .method public onComplete()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -180,10 +169,8 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/subscribers/LambdaSubscriber;->onComplete:Lio/reactivex/functions/Action;
 
@@ -196,10 +183,8 @@
     :catchall_0
     move-exception v0
 
-    .line 4
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 5
     invoke-static {v0}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
     :cond_0
@@ -210,7 +195,6 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -219,10 +203,8 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/subscribers/LambdaSubscriber;->onError:Lio/reactivex/functions/Consumer;
 
@@ -235,10 +217,8 @@
     :catchall_0
     move-exception v0
 
-    .line 4
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 5
     new-instance v1, Lio/reactivex/exceptions/CompositeException;
 
     const/4 v2, 0x2
@@ -259,7 +239,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
@@ -275,14 +254,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/subscribers/LambdaSubscriber;->isDisposed()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/subscribers/LambdaSubscriber;->onNext:Lio/reactivex/functions/Consumer;
 
@@ -295,10 +272,8 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 4
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -307,7 +282,6 @@
 
     invoke-interface {v0}, Lc/a/d;->cancel()V
 
-    .line 5
     invoke-virtual {p0, p1}, Lio/reactivex/internal/subscribers/LambdaSubscriber;->onError(Ljava/lang/Throwable;)V
 
     :cond_0
@@ -318,14 +292,12 @@
 .method public onSubscribe(Lc/a/d;)V
     .locals 1
 
-    .line 1
     invoke-static {p0, p1}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->setOnce(Ljava/util/concurrent/atomic/AtomicReference;Lc/a/d;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/subscribers/LambdaSubscriber;->onSubscribe:Lio/reactivex/functions/Consumer;
 
@@ -338,13 +310,10 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 4
     invoke-interface {p1}, Lc/a/d;->cancel()V
 
-    .line 5
     invoke-virtual {p0, v0}, Lio/reactivex/internal/subscribers/LambdaSubscriber;->onError(Ljava/lang/Throwable;)V
 
     :cond_0
@@ -355,7 +324,6 @@
 .method public request(J)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0

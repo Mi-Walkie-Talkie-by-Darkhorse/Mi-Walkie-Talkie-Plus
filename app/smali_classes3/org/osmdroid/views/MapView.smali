@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/MapView;
 .super Landroid/view/ViewGroup;
-.source "MapView.java"
 
 # interfaces
 .implements Lorg/osmdroid/api/IMapView;
@@ -127,7 +126,6 @@
 
     const-wide/high16 v0, 0x4000000000000000L    # 2.0
 
-    .line 1
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -146,7 +144,6 @@
 
     const/4 v0, 0x0
 
-    .line 45
     invoke-direct {p0, p1, v0, v0, v0}, Lorg/osmdroid/views/MapView;-><init>(Landroid/content/Context;Lorg/osmdroid/tileprovider/MapTileProviderBase;Landroid/os/Handler;Landroid/util/AttributeSet;)V
 
     return-void
@@ -157,7 +154,6 @@
 
     const/4 v0, 0x0
 
-    .line 44
     invoke-direct {p0, p1, v0, v0, p2}, Lorg/osmdroid/views/MapView;-><init>(Landroid/content/Context;Lorg/osmdroid/tileprovider/MapTileProviderBase;Landroid/os/Handler;Landroid/util/AttributeSet;)V
 
     return-void
@@ -168,7 +164,6 @@
 
     const/4 v0, 0x0
 
-    .line 46
     invoke-direct {p0, p1, p2, v0}, Lorg/osmdroid/views/MapView;-><init>(Landroid/content/Context;Lorg/osmdroid/tileprovider/MapTileProviderBase;Landroid/os/Handler;)V
 
     return-void
@@ -179,7 +174,6 @@
 
     const/4 v0, 0x0
 
-    .line 47
     invoke-direct {p0, p1, p2, p3, v0}, Lorg/osmdroid/views/MapView;-><init>(Landroid/content/Context;Lorg/osmdroid/tileprovider/MapTileProviderBase;Landroid/os/Handler;Landroid/util/AttributeSet;)V
 
     return-void
@@ -188,7 +182,6 @@
 .method public constructor <init>(Landroid/content/Context;Lorg/osmdroid/tileprovider/MapTileProviderBase;Landroid/os/Handler;Landroid/util/AttributeSet;)V
     .locals 7
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -215,37 +208,30 @@
 .method public constructor <init>(Landroid/content/Context;Lorg/osmdroid/tileprovider/MapTileProviderBase;Landroid/os/Handler;Landroid/util/AttributeSet;Z)V
     .locals 4
 
-    .line 2
     invoke-direct {p0, p1, p4}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lorg/osmdroid/views/MapView;->mZoomLevel:I
 
-    .line 4
     new-instance v1, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/MapView;->mTargetZoomLevel:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 5
     new-instance v1, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v1, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
     iput-object v1, p0, Lorg/osmdroid/views/MapView;->mIsAnimating:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 6
     iput-boolean v0, p0, Lorg/osmdroid/views/MapView;->mEnableZoomController:Z
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 7
     iput v1, p0, Lorg/osmdroid/views/MapView;->mMultiTouchScale:F
 
-    .line 8
     new-instance v1, Landroid/graphics/PointF;
 
     invoke-direct {v1}, Landroid/graphics/PointF;-><init>()V
@@ -254,59 +240,48 @@
 
     const/4 v1, 0x0
 
-    .line 9
     iput v1, p0, Lorg/osmdroid/views/MapView;->mapOrientation:F
 
-    .line 10
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/MapView;->mInvalidateRect:Landroid/graphics/Rect;
 
-    .line 11
     iput-boolean v0, p0, Lorg/osmdroid/views/MapView;->mTilesScaledToDpi:Z
 
-    .line 12
     new-instance v1, Landroid/graphics/Matrix;
 
     invoke-direct {v1}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/MapView;->mRotateScaleMatrix:Landroid/graphics/Matrix;
 
-    .line 13
     new-instance v1, Landroid/graphics/Point;
 
     invoke-direct {v1}, Landroid/graphics/Point;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/MapView;->mRotateScalePoint:Landroid/graphics/Point;
 
-    .line 14
     new-instance v1, Landroid/graphics/Point;
 
     invoke-direct {v1}, Landroid/graphics/Point;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/MapView;->mLayoutPoint:Landroid/graphics/Point;
 
-    .line 15
     new-instance v1, Ljava/util/LinkedList;
 
     invoke-direct {v1}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/MapView;->mOnFirstLayoutListeners:Ljava/util/LinkedList;
 
-    .line 16
     iput-boolean v0, p0, Lorg/osmdroid/views/MapView;->mLayoutOccurred:Z
 
     const/4 v1, 0x1
 
-    .line 17
     iput-boolean v1, p0, Lorg/osmdroid/views/MapView;->enableFling:Z
 
-    .line 18
     iput-boolean v0, p0, Lorg/osmdroid/views/MapView;->pauseFling:Z
 
-    .line 19
     invoke-virtual {p0}, Landroid/view/ViewGroup;->isInEditMode()Z
 
     move-result v2
@@ -315,19 +290,14 @@
 
     if-eqz v2, :cond_0
 
-    .line 20
     iput-object v3, p0, Lorg/osmdroid/views/MapView;->mTileRequestCompleteHandler:Landroid/os/Handler;
 
-    .line 21
     iput-object v3, p0, Lorg/osmdroid/views/MapView;->mController:Lorg/osmdroid/views/MapController;
 
-    .line 22
     iput-object v3, p0, Lorg/osmdroid/views/MapView;->mZoomController:Landroid/widget/ZoomButtonsController;
 
-    .line 23
     iput-object v3, p0, Lorg/osmdroid/views/MapView;->mScroller:Landroid/widget/Scroller;
 
-    .line 24
     iput-object v3, p0, Lorg/osmdroid/views/MapView;->mGestureDetector:Landroid/view/GestureDetector;
 
     return-void
@@ -335,17 +305,14 @@
     :cond_0
     if-nez p5, :cond_1
 
-    .line 25
     sget p5, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0xb
 
     if-lt p5, v2, :cond_1
 
-    .line 26
     invoke-virtual {p0, v1, v3}, Landroid/view/ViewGroup;->setLayerType(ILandroid/graphics/Paint;)V
 
-    .line 27
     :cond_1
     new-instance p5, Lorg/osmdroid/views/MapController;
 
@@ -353,7 +320,6 @@
 
     iput-object p5, p0, Lorg/osmdroid/views/MapView;->mController:Lorg/osmdroid/views/MapController;
 
-    .line 28
     new-instance p5, Landroid/widget/Scroller;
 
     invoke-direct {p5, p1}, Landroid/widget/Scroller;-><init>(Landroid/content/Context;)V
@@ -362,12 +328,10 @@
 
     if-nez p2, :cond_3
 
-    .line 29
     invoke-direct {p0, p4}, Lorg/osmdroid/views/MapView;->getTileSourceFromAttributes(Landroid/util/AttributeSet;)Lorg/osmdroid/tileprovider/tilesource/ITileSource;
 
     move-result-object p2
 
-    .line 30
     invoke-virtual {p0}, Landroid/view/ViewGroup;->isInEditMode()Z
 
     move-result p4
@@ -385,7 +349,6 @@
     :cond_2
     new-instance p4, Lorg/osmdroid/tileprovider/MapTileProviderBasic;
 
-    .line 31
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p5
@@ -398,7 +361,6 @@
     :cond_3
     if-nez p3, :cond_4
 
-    .line 32
     new-instance p3, Lorg/osmdroid/tileprovider/util/SimpleInvalidationHandler;
 
     invoke-direct {p3, p0}, Lorg/osmdroid/tileprovider/util/SimpleInvalidationHandler;-><init>(Landroid/view/View;)V
@@ -406,13 +368,10 @@
     :cond_4
     iput-object p3, p0, Lorg/osmdroid/views/MapView;->mTileRequestCompleteHandler:Landroid/os/Handler;
 
-    .line 33
     iput-object p2, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
-    .line 34
     invoke-virtual {p2, p3}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->setTileRequestCompleteHandler(Landroid/os/Handler;)V
 
-    .line 35
     iget-object p2, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {p2}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->getTileSource()Lorg/osmdroid/tileprovider/tilesource/ITileSource;
@@ -421,7 +380,6 @@
 
     invoke-direct {p0, p2}, Lorg/osmdroid/views/MapView;->updateTileSizeForDensity(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
 
-    .line 36
     new-instance p2, Lorg/osmdroid/views/overlay/TilesOverlay;
 
     iget-object p3, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
@@ -430,7 +388,6 @@
 
     iput-object p2, p0, Lorg/osmdroid/views/MapView;->mMapOverlay:Lorg/osmdroid/views/overlay/TilesOverlay;
 
-    .line 37
     new-instance p2, Lorg/osmdroid/views/overlay/DefaultOverlayManager;
 
     iget-object p3, p0, Lorg/osmdroid/views/MapView;->mMapOverlay:Lorg/osmdroid/views/overlay/TilesOverlay;
@@ -439,19 +396,16 @@
 
     iput-object p2, p0, Lorg/osmdroid/views/MapView;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
-    .line 38
     invoke-virtual {p0}, Landroid/view/ViewGroup;->isInEditMode()Z
 
     move-result p2
 
     if-eqz p2, :cond_5
 
-    .line 39
     iput-object v3, p0, Lorg/osmdroid/views/MapView;->mZoomController:Landroid/widget/ZoomButtonsController;
 
     goto :goto_1
 
-    .line 40
     :cond_5
     new-instance p2, Landroid/widget/ZoomButtonsController;
 
@@ -459,14 +413,12 @@
 
     iput-object p2, p0, Lorg/osmdroid/views/MapView;->mZoomController:Landroid/widget/ZoomButtonsController;
 
-    .line 41
     new-instance p3, Lorg/osmdroid/views/MapView$MapViewZoomListener;
 
     invoke-direct {p3, p0, v3}, Lorg/osmdroid/views/MapView$MapViewZoomListener;-><init>(Lorg/osmdroid/views/MapView;Lorg/osmdroid/views/MapView$1;)V
 
     invoke-virtual {p2, p3}, Landroid/widget/ZoomButtonsController;->setOnZoomListener(Landroid/widget/ZoomButtonsController$OnZoomListener;)V
 
-    .line 42
     :goto_1
     new-instance p2, Landroid/view/GestureDetector;
 
@@ -478,7 +430,6 @@
 
     iput-object p2, p0, Lorg/osmdroid/views/MapView;->mGestureDetector:Landroid/view/GestureDetector;
 
-    .line 43
     new-instance p1, Lorg/osmdroid/views/MapView$MapViewDoubleClickListener;
 
     invoke-direct {p1, p0, v3}, Lorg/osmdroid/views/MapView$MapViewDoubleClickListener;-><init>(Lorg/osmdroid/views/MapView;Lorg/osmdroid/views/MapView$1;)V
@@ -491,7 +442,6 @@
 .method static synthetic access$300(Lorg/osmdroid/views/MapView;)Landroid/widget/Scroller;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/views/MapView;->mScroller:Landroid/widget/Scroller;
 
     return-object p0
@@ -500,7 +450,6 @@
 .method static synthetic access$400(Lorg/osmdroid/views/MapView;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lorg/osmdroid/views/MapView;->mEnableZoomController:Z
 
     return p0
@@ -509,7 +458,6 @@
 .method static synthetic access$500(Lorg/osmdroid/views/MapView;)Landroid/widget/ZoomButtonsController;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/views/MapView;->mZoomController:Landroid/widget/ZoomButtonsController;
 
     return-object p0
@@ -518,7 +466,6 @@
 .method static synthetic access$600(Lorg/osmdroid/views/MapView;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lorg/osmdroid/views/MapView;->enableFling:Z
 
     return p0
@@ -527,7 +474,6 @@
 .method static synthetic access$700(Lorg/osmdroid/views/MapView;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lorg/osmdroid/views/MapView;->pauseFling:Z
 
     return p0
@@ -536,7 +482,6 @@
 .method static synthetic access$702(Lorg/osmdroid/views/MapView;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/MapView;->pauseFling:Z
 
     return p1
@@ -545,7 +490,6 @@
 .method static synthetic access$800(Lorg/osmdroid/views/MapView;)Lorg/metalev/multitouch/controller/MultiTouchController;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/views/MapView;->mMultiTouchController:Lorg/metalev/multitouch/controller/MultiTouchController;
 
     return-object p0
@@ -554,7 +498,6 @@
 .method private checkZoomButtons()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mZoomController:Landroid/widget/ZoomButtonsController;
 
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->canZoomIn()Z
@@ -563,7 +506,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ZoomButtonsController;->setZoomInEnabled(Z)V
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mZoomController:Landroid/widget/ZoomButtonsController;
 
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->canZoomOut()Z
@@ -578,7 +520,6 @@
 .method private getTileSourceFromAttributes(Landroid/util/AttributeSet;)Lorg/osmdroid/tileprovider/tilesource/ITileSource;
     .locals 6
 
-    .line 1
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->DEFAULT_TILE_SOURCE:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     const/4 v1, 0x0
@@ -589,20 +530,17 @@
 
     const-string v3, "tilesource"
 
-    .line 2
     invoke-interface {p1, v1, v3}, Landroid/util/AttributeSet;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     if-eqz v3, :cond_0
 
-    .line 3
     :try_start_0
     invoke-static {v3}, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->getTileSource(Ljava/lang/String;)Lorg/osmdroid/tileprovider/tilesource/ITileSource;
 
     move-result-object v3
 
-    .line 4
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -625,7 +563,6 @@
 
     goto :goto_0
 
-    .line 5
     :catch_0
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -647,14 +584,12 @@
     :goto_0
     if-eqz p1, :cond_2
 
-    .line 6
     instance-of v3, v0, Lorg/osmdroid/tileprovider/tilesource/IStyledTileSource;
 
     if-eqz v3, :cond_2
 
     const-string v3, "style"
 
-    .line 7
     invoke-interface {p1, v1, v3}, Landroid/util/AttributeSet;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -663,12 +598,10 @@
 
     const-string p1, "Using default style: 1"
 
-    .line 8
     invoke-static {v2, p1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_1
 
-    .line 9
     :cond_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -686,14 +619,12 @@
 
     invoke-static {v2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     move-object v1, v0
 
     check-cast v1, Lorg/osmdroid/tileprovider/tilesource/IStyledTileSource;
 
     invoke-interface {v1, p1}, Lorg/osmdroid/tileprovider/tilesource/IStyledTileSource;->setStyle(Ljava/lang/String;)V
 
-    .line 11
     :cond_2
     :goto_1
     new-instance p1, Ljava/lang/StringBuilder;
@@ -722,12 +653,10 @@
 .method private invalidateMapCoordinates(IIIIZ)V
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mInvalidateRect:Landroid/graphics/Rect;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 4
     iget-object p1, p0, Lorg/osmdroid/views/MapView;->mInvalidateRect:Landroid/graphics/Rect;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getScrollX()I
@@ -740,7 +669,6 @@
 
     invoke-virtual {p1, p2, p3}, Landroid/graphics/Rect;->offset(II)V
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getScrollX()I
 
     move-result p1
@@ -753,7 +681,6 @@
 
     add-int/2addr p1, p2
 
-    .line 6
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getScrollY()I
 
     move-result p2
@@ -766,7 +693,6 @@
 
     add-int/2addr p2, p3
 
-    .line 7
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMapOrientation()F
 
     move-result p3
@@ -777,10 +703,8 @@
 
     if-eqz p3, :cond_0
 
-    .line 8
     iget-object p3, p0, Lorg/osmdroid/views/MapView;->mInvalidateRect:Landroid/graphics/Rect;
 
-    .line 9
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMapOrientation()F
 
     move-result p4
@@ -791,13 +715,11 @@
 
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mInvalidateRect:Landroid/graphics/Rect;
 
-    .line 10
     invoke-static {p3, p1, p2, p4, v0}, Lorg/osmdroid/util/GeometryMath;->getBoundingBoxForRotatatedRectangle(Landroid/graphics/Rect;IIFLandroid/graphics/Rect;)Landroid/graphics/Rect;
 
     :cond_0
     if-eqz p5, :cond_1
 
-    .line 11
     iget-object p1, p0, Lorg/osmdroid/views/MapView;->mInvalidateRect:Landroid/graphics/Rect;
 
     iget p2, p1, Landroid/graphics/Rect;->left:I
@@ -812,7 +734,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_1
     iget-object p1, p0, Lorg/osmdroid/views/MapView;->mInvalidateRect:Landroid/graphics/Rect;
 
@@ -825,7 +746,6 @@
 .method private rotateTouchEvent(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
     .locals 6
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMapOrientation()F
 
     move-result v0
@@ -838,20 +758,17 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object v0
 
-    .line 3
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0xb
 
     if-ge v1, v2, :cond_1
 
-    .line 4
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v1
@@ -872,7 +789,6 @@
 
     invoke-virtual {v1, v2, p1, v3}, Lorg/osmdroid/views/Projection;->unrotateAndScalePoint(IILandroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 5
     iget-object p1, p0, Lorg/osmdroid/views/MapView;->mRotateScalePoint:Landroid/graphics/Point;
 
     iget v1, p1, Landroid/graphics/Point;->x:I
@@ -887,7 +803,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     :try_start_0
     sget-object p1, Lorg/osmdroid/views/MapView;->sMotionEventTransformMethod:Ljava/lang/reflect/Method;
@@ -898,7 +813,6 @@
 
     if-nez p1, :cond_2
 
-    .line 7
     const-class p1, Landroid/view/MotionEvent;
 
     const-string v3, "transform"
@@ -915,7 +829,6 @@
 
     sput-object p1, Lorg/osmdroid/views/MapView;->sMotionEventTransformMethod:Ljava/lang/reflect/Method;
 
-    .line 8
     :cond_2
     sget-object p1, Lorg/osmdroid/views/MapView;->sMotionEventTransformMethod:Ljava/lang/reflect/Method;
 
@@ -925,14 +838,12 @@
 
     move-result-object v3
 
-    .line 9
     invoke-virtual {v3}, Lorg/osmdroid/views/Projection;->getInvertedScaleRotateCanvasMatrix()Landroid/graphics/Matrix;
 
     move-result-object v3
 
     aput-object v3, v2, v1
 
-    .line 10
     invoke-virtual {p1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_4
@@ -946,7 +857,6 @@
     :catch_0
     move-exception p1
 
-    .line 11
     invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->printStackTrace()V
 
     goto :goto_0
@@ -954,7 +864,6 @@
     :catch_1
     move-exception p1
 
-    .line 12
     invoke-virtual {p1}, Ljava/lang/IllegalAccessException;->printStackTrace()V
 
     goto :goto_0
@@ -962,7 +871,6 @@
     :catch_2
     move-exception p1
 
-    .line 13
     invoke-virtual {p1}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
 
     goto :goto_0
@@ -970,7 +878,6 @@
     :catch_3
     move-exception p1
 
-    .line 14
     invoke-virtual {p1}, Ljava/lang/NoSuchMethodException;->printStackTrace()V
 
     goto :goto_0
@@ -978,7 +885,6 @@
     :catch_4
     move-exception p1
 
-    .line 15
     invoke-virtual {p1}, Ljava/lang/SecurityException;->printStackTrace()V
 
     :goto_0
@@ -988,12 +894,10 @@
 .method private updateTileSizeForDensity(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
     .locals 2
 
-    .line 1
     invoke-interface {p1}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->getTileSizePixels()I
 
     move-result p1
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -1012,7 +916,6 @@
 
     div-float/2addr v0, p1
 
-    .line 3
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->isTilesScaledToDpi()Z
 
     move-result v1
@@ -1029,7 +932,6 @@
 
     float-to-int p1, p1
 
-    .line 4
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -1040,7 +942,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1059,7 +960,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     :cond_1
     invoke-static {p1}, Lmicrosoft/mappoint/TileSystem;->setTileSize(I)V
 
@@ -1071,14 +971,12 @@
 .method public addOnFirstLayoutListener(Lorg/osmdroid/views/MapView$OnFirstLayoutListener;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->isLayoutOccurred()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mOnFirstLayoutListeners:Ljava/util/LinkedList;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
@@ -1090,12 +988,10 @@
 .method public canZoomIn()Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMaxZoomLevel()I
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->isAnimating()Z
 
     move-result v1
@@ -1129,12 +1025,10 @@
 .method public canZoomOut()Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMinZoomLevel()I
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->isAnimating()Z
 
     move-result v1
@@ -1168,7 +1062,6 @@
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 0
 
-    .line 1
     instance-of p1, p1, Lorg/osmdroid/views/MapView$LayoutParams;
 
     return p1
@@ -1177,19 +1070,16 @@
 .method public computeScroll()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mScroller:Landroid/widget/Scroller;
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {v0}, Landroid/widget/Scroller;->computeScrollOffset()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->isFinished()Z
@@ -1198,7 +1088,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mScroller:Landroid/widget/Scroller;
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->getCurrX()I
@@ -1213,19 +1102,16 @@
 
     invoke-virtual {p0, v0, v1}, Lorg/osmdroid/views/MapView;->scrollTo(II)V
 
-    .line 5
     iget v0, p0, Lorg/osmdroid/views/MapView;->mZoomLevel:I
 
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/MapView;->setZoomLevel(I)I
 
     const/4 v0, 0x0
 
-    .line 6
     iput-boolean v0, p0, Lorg/osmdroid/views/MapView;->mIsFlinging:Z
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mScroller:Landroid/widget/Scroller;
 
@@ -1241,7 +1127,6 @@
 
     invoke-virtual {p0, v0, v1}, Lorg/osmdroid/views/MapView;->scrollTo(II)V
 
-    .line 8
     :goto_0
     invoke-virtual {p0}, Landroid/view/ViewGroup;->postInvalidate()V
 
@@ -1254,20 +1139,16 @@
 
     const-string v0, "OsmDroid"
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    .line 2
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 3
     iget-object v3, p0, Lorg/osmdroid/views/MapView;->mRotateScaleMatrix:Landroid/graphics/Matrix;
 
     invoke-virtual {v3}, Landroid/graphics/Matrix;->reset()V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getScrollX()I
 
     move-result v3
@@ -1282,7 +1163,6 @@
 
     invoke-virtual {p1, v3, v4}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 5
     iget-object v3, p0, Lorg/osmdroid/views/MapView;->mRotateScaleMatrix:Landroid/graphics/Matrix;
 
     iget v4, p0, Lorg/osmdroid/views/MapView;->mMultiTouchScale:F
@@ -1295,7 +1175,6 @@
 
     invoke-virtual {v3, v4, v4, v6, v5}, Landroid/graphics/Matrix;->preScale(FFFF)Z
 
-    .line 6
     iget-object v3, p0, Lorg/osmdroid/views/MapView;->mRotateScaleMatrix:Landroid/graphics/Matrix;
 
     iget v4, p0, Lorg/osmdroid/views/MapView;->mapOrientation:F
@@ -1318,17 +1197,14 @@
 
     invoke-virtual {v3, v4, v5, v6}, Landroid/graphics/Matrix;->preRotate(FFF)Z
 
-    .line 7
     iget-object v3, p0, Lorg/osmdroid/views/MapView;->mRotateScaleMatrix:Landroid/graphics/Matrix;
 
     invoke-virtual {p1, v3}, Landroid/graphics/Canvas;->concat(Landroid/graphics/Matrix;)V
 
     const/4 v3, 0x0
 
-    .line 8
     invoke-virtual {p0, v3}, Lorg/osmdroid/views/MapView;->setProjection(Lorg/osmdroid/views/Projection;)V
 
-    .line 9
     :try_start_0
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
 
@@ -1336,10 +1212,8 @@
 
     invoke-interface {v3, p1, p0}, Lorg/osmdroid/views/overlay/OverlayManager;->onDraw(Landroid/graphics/Canvas;Lorg/osmdroid/views/MapView;)V
 
-    .line 10
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
-    .line 11
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchDraw(Landroid/graphics/Canvas;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -1351,10 +1225,8 @@
 
     const-string v3, "error dispatchDraw, probably in edit mode"
 
-    .line 12
     invoke-static {v0, v3, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 13
     :goto_0
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
@@ -1366,12 +1238,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 14
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v3
 
-    .line 15
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1401,7 +1271,6 @@
 .method public dispatchTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -1414,7 +1283,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1435,7 +1303,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mZoomController:Landroid/widget/ZoomButtonsController;
 
@@ -1457,13 +1324,11 @@
 
     return v2
 
-    .line 4
     :cond_1
     invoke-direct {p0, p1}, Lorg/osmdroid/views/MapView;->rotateTouchEvent(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object v0
 
-    .line 5
     :try_start_0
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -1471,7 +1336,6 @@
 
     if-eqz v3, :cond_4
 
-    .line 6
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v3
@@ -1484,7 +1348,6 @@
 
     const-string v3, "super handled onTouchEvent"
 
-    .line 7
     invoke-static {v1, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1492,13 +1355,11 @@
     :cond_2
     if-eq v0, p1, :cond_3
 
-    .line 8
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
     :cond_3
     return v2
 
-    .line 9
     :cond_4
     :try_start_1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
@@ -1515,13 +1376,11 @@
 
     if-eq v0, p1, :cond_5
 
-    .line 10
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
     :cond_5
     return v2
 
-    .line 11
     :cond_6
     :try_start_2
     iget-object v3, p0, Lorg/osmdroid/views/MapView;->mMultiTouchController:Lorg/metalev/multitouch/controller/MultiTouchController;
@@ -1538,7 +1397,6 @@
 
     if-eqz v3, :cond_8
 
-    .line 12
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v3
@@ -1551,7 +1409,6 @@
 
     const-string v3, "mMultiTouchController handled onTouchEvent"
 
-    .line 13
     invoke-static {v1, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_7
@@ -1562,7 +1419,6 @@
     :cond_8
     const/4 v3, 0x0
 
-    .line 14
     :goto_0
     iget-object v5, p0, Lorg/osmdroid/views/MapView;->mGestureDetector:Landroid/view/GestureDetector;
 
@@ -1572,7 +1428,6 @@
 
     if-eqz v5, :cond_a
 
-    .line 15
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v3
@@ -1585,7 +1440,6 @@
 
     const-string v3, "mGestureDetector handled onTouchEvent"
 
-    .line 16
     invoke-static {v1, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -1598,7 +1452,6 @@
 
     if-eq v0, p1, :cond_b
 
-    .line 17
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
     :cond_b
@@ -1609,7 +1462,6 @@
 
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
-    .line 18
     :cond_d
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
@@ -1623,7 +1475,6 @@
 
     const-string p1, "no-one handled onTouchEvent"
 
-    .line 19
     invoke-static {v1, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_e
@@ -1634,7 +1485,6 @@
 
     if-eq v0, p1, :cond_f
 
-    .line 20
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
     :cond_f
@@ -1644,7 +1494,6 @@
 .method protected generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 8
 
-    .line 1
     new-instance v7, Lorg/osmdroid/views/MapView$LayoutParams;
 
     const/4 v1, -0x2
@@ -1669,7 +1518,6 @@
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/osmdroid/views/MapView$LayoutParams;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
@@ -1684,7 +1532,6 @@
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
-    .line 2
     new-instance v0, Lorg/osmdroid/views/MapView$LayoutParams;
 
     invoke-direct {v0, p1}, Lorg/osmdroid/views/MapView$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
@@ -1695,7 +1542,6 @@
 .method public getBoundingBox()Lorg/osmdroid/util/BoundingBox;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
@@ -1710,7 +1556,6 @@
 .method public getBoundingBoxE6()Lorg/osmdroid/util/BoundingBoxE6;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
@@ -1725,7 +1570,6 @@
 .method public getController()Lorg/osmdroid/api/IMapController;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mController:Lorg/osmdroid/views/MapController;
 
     return-object v0
@@ -1734,7 +1578,6 @@
 .method public getDraggableObjectAtPoint(Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;)Ljava/lang/Object;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->isAnimating()Z
 
     move-result v0
@@ -1745,7 +1588,6 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mMultiTouchScalePoint:Landroid/graphics/PointF;
 
@@ -1755,7 +1597,6 @@
 
     iput v1, v0, Landroid/graphics/PointF;->x:F
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mMultiTouchScalePoint:Landroid/graphics/PointF;
 
     invoke-virtual {p1}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;->getY()F
@@ -1772,12 +1613,10 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getWidth()I
 
@@ -1797,7 +1636,6 @@
 .method public getLatitudeSpan()I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getBoundingBoxE6()Lorg/osmdroid/util/BoundingBoxE6;
 
     move-result-object v0
@@ -1812,7 +1650,6 @@
 .method public getLatitudeSpanDouble()D
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getBoundingBox()Lorg/osmdroid/util/BoundingBox;
 
     move-result-object v0
@@ -1827,7 +1664,6 @@
 .method public getLongitudeSpan()I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getBoundingBoxE6()Lorg/osmdroid/util/BoundingBoxE6;
 
     move-result-object v0
@@ -1842,7 +1678,6 @@
 .method public getLongitudeSpanDouble()D
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getBoundingBox()Lorg/osmdroid/util/BoundingBox;
 
     move-result-object v0
@@ -1857,7 +1692,6 @@
 .method public getMapCenter()Lorg/osmdroid/api/IGeoPoint;
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
@@ -1886,7 +1720,6 @@
 .method public getMapOrientation()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/MapView;->mapOrientation:F
 
     return v0
@@ -1895,7 +1728,6 @@
 .method public getMaxZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mMaximumZoomLevel:Ljava/lang/Integer;
 
     if-nez v0, :cond_0
@@ -1920,7 +1752,6 @@
 .method public getMinZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mMinimumZoomLevel:Ljava/lang/Integer;
 
     if-nez v0, :cond_0
@@ -1945,7 +1776,6 @@
 .method public getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     return-object v0
@@ -1962,7 +1792,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
 
     move-result-object v0
@@ -1977,7 +1806,6 @@
 .method public getPositionAndScale(Ljava/lang/Object;Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)V
     .locals 10
 
-    .line 1
     iget v4, p0, Lorg/osmdroid/views/MapView;->mMultiTouchScale:F
 
     const/4 v1, 0x0
@@ -2006,7 +1834,6 @@
 .method public bridge synthetic getProjection()Lorg/osmdroid/api/IProjection;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
@@ -2017,19 +1844,16 @@
 .method public getProjection()Lorg/osmdroid/views/Projection;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mProjection:Lorg/osmdroid/views/Projection;
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Lorg/osmdroid/views/Projection;
 
     invoke-direct {v0, p0}, Lorg/osmdroid/views/Projection;-><init>(Lorg/osmdroid/views/MapView;)V
 
     iput-object v0, p0, Lorg/osmdroid/views/MapView;->mProjection:Lorg/osmdroid/views/Projection;
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mProjection:Lorg/osmdroid/views/Projection;
 
@@ -2039,12 +1863,10 @@
 .method public getScreenRect(Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 3
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/osmdroid/views/MapView;->getIntrinsicScreenRect(Landroid/graphics/Rect;)Landroid/graphics/Rect;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMapOrientation()F
 
     move-result v0
@@ -2065,7 +1887,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Landroid/graphics/Rect;->centerX()I
 
     move-result v0
@@ -2074,12 +1895,10 @@
 
     move-result v1
 
-    .line 4
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMapOrientation()F
 
     move-result v2
 
-    .line 5
     invoke-static {p1, v0, v1, v2, p1}, Lorg/osmdroid/util/GeometryMath;->getBoundingBoxForRotatatedRectangle(Landroid/graphics/Rect;IIFLandroid/graphics/Rect;)Landroid/graphics/Rect;
 
     :cond_0
@@ -2089,7 +1908,6 @@
 .method public getScrollableAreaLimit()Lorg/osmdroid/util/BoundingBox;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mScrollableAreaBoundingBox:Lorg/osmdroid/util/BoundingBox;
 
     return-object v0
@@ -2098,7 +1916,6 @@
 .method public getScroller()Landroid/widget/Scroller;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mScroller:Landroid/widget/Scroller;
 
     return-object v0
@@ -2107,7 +1924,6 @@
 .method public getTileProvider()Lorg/osmdroid/tileprovider/MapTileProviderBase;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     return-object v0
@@ -2116,7 +1932,6 @@
 .method public getTileRequestCompleteHandler()Landroid/os/Handler;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mTileRequestCompleteHandler:Landroid/os/Handler;
 
     return-object v0
@@ -2127,7 +1942,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/MapView;->getZoomLevel(Z)I
 
     move-result v0
@@ -2140,14 +1954,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->isAnimating()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lorg/osmdroid/views/MapView;->mTargetZoomLevel:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -2156,7 +1968,6 @@
 
     return p1
 
-    .line 4
     :cond_0
     iget p1, p0, Lorg/osmdroid/views/MapView;->mZoomLevel:I
 
@@ -2178,7 +1989,6 @@
 
     move v4, p4
 
-    .line 2
     invoke-direct/range {v0 .. v5}, Lorg/osmdroid/views/MapView;->invalidateMapCoordinates(IIIIZ)V
 
     return-void
@@ -2187,7 +1997,6 @@
 .method public invalidateMapCoordinates(Landroid/graphics/Rect;)V
     .locals 6
 
-    .line 1
     iget v1, p1, Landroid/graphics/Rect;->left:I
 
     iget v2, p1, Landroid/graphics/Rect;->top:I
@@ -2208,7 +2017,6 @@
 .method public isAnimating()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mIsAnimating:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -2221,7 +2029,6 @@
 .method public isFlingEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/MapView;->enableFling:Z
 
     return v0
@@ -2230,7 +2037,6 @@
 .method public isLayoutOccurred()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/MapView;->mLayoutOccurred:Z
 
     return v0
@@ -2239,7 +2045,6 @@
 .method public isTilesScaledToDpi()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/MapView;->mTilesScaledToDpi:Z
 
     return v0
@@ -2248,38 +2053,32 @@
 .method public onDetach()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
 
     move-result-object v0
 
     invoke-interface {v0, p0}, Lorg/osmdroid/views/overlay/OverlayManager;->onDetach(Lorg/osmdroid/views/MapView;)V
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {v0}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->detach()V
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {v0}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->clearTileCache()V
 
-    .line 4
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mZoomController:Landroid/widget/ZoomButtonsController;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ZoomButtonsController;->setVisible(Z)V
 
-    .line 5
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mTileRequestCompleteHandler:Landroid/os/Handler;
 
     instance-of v1, v0, Lorg/osmdroid/tileprovider/util/SimpleInvalidationHandler;
 
     if-eqz v1, :cond_0
 
-    .line 6
     check-cast v0, Lorg/osmdroid/tileprovider/util/SimpleInvalidationHandler;
 
     invoke-virtual {v0}, Lorg/osmdroid/tileprovider/util/SimpleInvalidationHandler;->destroy()V
@@ -2287,18 +2086,14 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 7
     iput-object v0, p0, Lorg/osmdroid/views/MapView;->mTileRequestCompleteHandler:Landroid/os/Handler;
 
-    .line 8
     iget-object v1, p0, Lorg/osmdroid/views/MapView;->mProjection:Lorg/osmdroid/views/Projection;
 
     if-eqz v1, :cond_1
 
-    .line 9
     invoke-virtual {v1}, Lorg/osmdroid/views/Projection;->detach()V
 
-    .line 10
     :cond_1
     iput-object v0, p0, Lorg/osmdroid/views/MapView;->mProjection:Lorg/osmdroid/views/Projection;
 
@@ -2308,17 +2103,14 @@
 .method protected onDetachedFromWindow()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mZoomController:Landroid/widget/ZoomButtonsController;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ZoomButtonsController;->setVisible(Z)V
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->onDetach()V
 
-    .line 3
     invoke-super {p0}, Landroid/view/ViewGroup;->onDetachedFromWindow()V
 
     return-void
@@ -2327,7 +2119,6 @@
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
 
     move-result-object v0
@@ -2338,7 +2129,6 @@
 
     if-nez v0, :cond_1
 
-    .line 2
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result p1
@@ -2363,7 +2153,6 @@
 .method public onKeyUp(ILandroid/view/KeyEvent;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
 
     move-result-object v0
@@ -2374,7 +2163,6 @@
 
     if-nez v0, :cond_1
 
-    .line 2
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onKeyUp(ILandroid/view/KeyEvent;)Z
 
     move-result p1
@@ -2399,7 +2187,6 @@
 .method protected onLayout(ZIIII)V
     .locals 9
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result p1
@@ -2411,12 +2198,10 @@
 
     if-ge v0, p1, :cond_2
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 3
     invoke-virtual {v2}, Landroid/view/View;->getVisibility()I
 
     move-result v3
@@ -2425,24 +2210,20 @@
 
     if-eq v3, v4, :cond_1
 
-    .line 4
     invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v3
 
     check-cast v3, Lorg/osmdroid/views/MapView$LayoutParams;
 
-    .line 5
     invoke-virtual {v2}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v4
 
-    .line 6
     invoke-virtual {v2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v5
 
-    .line 7
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v6
@@ -2453,7 +2234,6 @@
 
     invoke-virtual {v6, v7, v8}, Lorg/osmdroid/views/Projection;->toPixels(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 8
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMapOrientation()F
 
     move-result v6
@@ -2464,7 +2244,6 @@
 
     if-eqz v6, :cond_0
 
-    .line 9
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v6
@@ -2479,19 +2258,16 @@
 
     move-result-object v1
 
-    .line 10
     iget-object v6, p0, Lorg/osmdroid/views/MapView;->mLayoutPoint:Landroid/graphics/Point;
 
     iget v7, v1, Landroid/graphics/Point;->x:I
 
     iput v7, v6, Landroid/graphics/Point;->x:I
 
-    .line 11
     iget v1, v1, Landroid/graphics/Point;->y:I
 
     iput v1, v6, Landroid/graphics/Point;->y:I
 
-    .line 12
     :cond_0
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
@@ -2505,22 +2281,18 @@
 
     invoke-virtual {v1, v7, v8, v6}, Lorg/osmdroid/views/Projection;->toMercatorPixels(IILandroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 13
     iget-object v1, p0, Lorg/osmdroid/views/MapView;->mLayoutPoint:Landroid/graphics/Point;
 
     iget v6, v1, Landroid/graphics/Point;->x:I
 
-    .line 14
     iget v1, v1, Landroid/graphics/Point;->y:I
 
-    .line 15
     iget v7, v3, Lorg/osmdroid/views/MapView$LayoutParams;->alignment:I
 
     packed-switch v7, :pswitch_data_0
 
     goto/16 :goto_4
 
-    .line 16
     :pswitch_0
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -2530,14 +2302,12 @@
 
     sub-int v6, v7, v5
 
-    .line 17
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
     move-result v7
 
     goto :goto_1
 
-    .line 18
     :pswitch_1
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -2549,14 +2319,12 @@
 
     sub-int v6, v7, v6
 
-    .line 19
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
     move-result v7
 
     goto :goto_1
 
-    .line 20
     :pswitch_2
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -2564,7 +2332,6 @@
 
     add-int/2addr v6, v7
 
-    .line 21
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
     move-result v7
@@ -2576,7 +2343,6 @@
 
     goto :goto_4
 
-    .line 22
     :pswitch_3
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -2586,7 +2352,6 @@
 
     sub-int v6, v7, v5
 
-    .line 23
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
     move-result v7
@@ -2597,7 +2362,6 @@
 
     goto :goto_2
 
-    .line 24
     :pswitch_4
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -2609,7 +2373,6 @@
 
     sub-int v6, v7, v6
 
-    .line 25
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
     move-result v7
@@ -2620,7 +2383,6 @@
 
     goto :goto_2
 
-    .line 26
     :pswitch_5
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -2628,7 +2390,6 @@
 
     add-int/2addr v6, v7
 
-    .line 27
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
     move-result v7
@@ -2642,7 +2403,6 @@
 
     goto :goto_4
 
-    .line 28
     :pswitch_6
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -2652,14 +2412,12 @@
 
     sub-int v6, v7, v5
 
-    .line 29
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
     move-result v7
 
     goto :goto_3
 
-    .line 30
     :pswitch_7
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -2671,14 +2429,12 @@
 
     sub-int v6, v7, v6
 
-    .line 31
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
     move-result v7
 
     goto :goto_3
 
-    .line 32
     :pswitch_8
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -2686,7 +2442,6 @@
 
     add-int/2addr v6, v7
 
-    .line 33
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
     move-result v7
@@ -2694,13 +2449,11 @@
     :goto_3
     add-int/2addr v1, v7
 
-    .line 34
     :goto_4
     iget v7, v3, Lorg/osmdroid/views/MapView$LayoutParams;->offsetX:I
 
     add-int/2addr v6, v7
 
-    .line 35
     iget v3, v3, Lorg/osmdroid/views/MapView$LayoutParams;->offsetY:I
 
     add-int/2addr v1, v3
@@ -2709,7 +2462,6 @@
 
     add-int/2addr v4, v1
 
-    .line 36
     invoke-virtual {v2, v6, v1, v5, v4}, Landroid/view/View;->layout(IIII)V
 
     :cond_1
@@ -2717,7 +2469,6 @@
 
     goto/16 :goto_0
 
-    .line 37
     :cond_2
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->isLayoutOccurred()Z
 
@@ -2727,10 +2478,8 @@
 
     const/4 p1, 0x1
 
-    .line 38
     iput-boolean p1, p0, Lorg/osmdroid/views/MapView;->mLayoutOccurred:Z
 
-    .line 39
     iget-object p1, p0, Lorg/osmdroid/views/MapView;->mOnFirstLayoutListeners:Ljava/util/LinkedList;
 
     invoke-virtual {p1}, Ljava/util/LinkedList;->iterator()Ljava/util/Iterator;
@@ -2762,18 +2511,15 @@
 
     move v7, p5
 
-    .line 40
     invoke-interface/range {v2 .. v7}, Lorg/osmdroid/views/MapView$OnFirstLayoutListener;->onFirstLayout(Landroid/view/View;IIII)V
 
     goto :goto_5
 
-    .line 41
     :cond_3
     iget-object p1, p0, Lorg/osmdroid/views/MapView;->mOnFirstLayoutListeners:Ljava/util/LinkedList;
 
     invoke-virtual {p1}, Ljava/util/LinkedList;->clear()V
 
-    .line 42
     :cond_4
     invoke-virtual {p0, v1}, Lorg/osmdroid/views/MapView;->setProjection(Lorg/osmdroid/views/Projection;)V
 
@@ -2798,10 +2544,8 @@
 .method protected onMeasure(II)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->measureChildren(II)V
 
-    .line 2
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onMeasure(II)V
 
     return-void
@@ -2818,7 +2562,6 @@
 .method public onTrackballEvent(Landroid/view/MotionEvent;)Z
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
 
     move-result-object v0
@@ -2833,7 +2576,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -2855,7 +2597,6 @@
 
     invoke-virtual {p0, v0, v1}, Landroid/view/ViewGroup;->scrollBy(II)V
 
-    .line 3
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onTrackballEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -2878,7 +2619,6 @@
 
     move v4, p4
 
-    .line 1
     invoke-direct/range {v0 .. v5}, Lorg/osmdroid/views/MapView;->invalidateMapCoordinates(IIIIZ)V
 
     return-void
@@ -2887,7 +2627,6 @@
 .method public removeOnFirstLayoutListener(Lorg/osmdroid/views/MapView$OnFirstLayoutListener;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mOnFirstLayoutListeners:Ljava/util/LinkedList;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedList;->remove(Ljava/lang/Object;)Z
@@ -2900,7 +2639,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/MapView;->getZoomLevel(Z)I
 
     move-result v1
@@ -2940,42 +2678,35 @@
 
     goto :goto_3
 
-    .line 2
     :cond_3
     iget-object v1, p0, Lorg/osmdroid/views/MapView;->mScrollableAreaLimit:Landroid/graphics/Rect;
 
     if-eqz v1, :cond_b
 
-    .line 3
     invoke-static {}, Lmicrosoft/mappoint/TileSystem;->getMaximumZoomLevel()I
 
     move-result v1
 
-    .line 4
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/MapView;->getZoomLevel(Z)I
 
     move-result v0
 
     sub-int/2addr v1, v0
 
-    .line 5
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mScrollableAreaLimit:Landroid/graphics/Rect;
 
     iget v2, v0, Landroid/graphics/Rect;->left:I
 
     shr-int/2addr v2, v1
 
-    .line 6
     iget v3, v0, Landroid/graphics/Rect;->top:I
 
     shr-int/2addr v3, v1
 
-    .line 7
     iget v4, v0, Landroid/graphics/Rect;->right:I
 
     shr-int/2addr v4, v1
 
-    .line 8
     iget v0, v0, Landroid/graphics/Rect;->bottom:I
 
     shr-int/2addr v0, v1
@@ -2984,12 +2715,10 @@
 
     sub-int v5, v0, v3
 
-    .line 9
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getWidth()I
 
     move-result v6
 
-    .line 10
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getHeight()I
 
     move-result v7
@@ -3057,17 +2786,14 @@
     :goto_7
     sub-int p2, v0, v7
 
-    .line 11
     :cond_b
     :goto_8
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->scrollTo(II)V
 
     const/4 v0, 0x0
 
-    .line 12
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/MapView;->setProjection(Lorg/osmdroid/views/Projection;)V
 
-    .line 13
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMapOrientation()F
 
     move-result v0
@@ -3080,7 +2806,6 @@
 
     const/4 v2, 0x1
 
-    .line 14
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getLeft()I
 
     move-result v3
@@ -3101,18 +2826,15 @@
 
     invoke-virtual/range {v1 .. v6}, Lorg/osmdroid/views/MapView;->onLayout(ZIIII)V
 
-    .line 15
     :cond_c
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mListener:Lorg/osmdroid/events/MapListener;
 
     if-eqz v0, :cond_d
 
-    .line 16
     new-instance v0, Lorg/osmdroid/events/ScrollEvent;
 
     invoke-direct {v0, p0, p1, p2}, Lorg/osmdroid/events/ScrollEvent;-><init>(Lorg/osmdroid/views/MapView;II)V
 
-    .line 17
     iget-object p1, p0, Lorg/osmdroid/views/MapView;->mListener:Lorg/osmdroid/events/MapListener;
 
     invoke-interface {p1, v0}, Lorg/osmdroid/events/MapListener;->onScroll(Lorg/osmdroid/events/ScrollEvent;)Z
@@ -3128,7 +2850,6 @@
 
     if-nez p1, :cond_1
 
-    .line 1
     iget p1, p0, Lorg/osmdroid/views/MapView;->mMultiTouchScale:F
 
     cmpl-float v0, p1, p2
@@ -3137,7 +2858,6 @@
 
     float-to-double v0, p1
 
-    .line 2
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -3148,14 +2868,12 @@
 
     double-to-float p1, v0
 
-    .line 3
     invoke-static {p1}, Ljava/lang/Math;->round(F)I
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 4
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
@@ -3164,7 +2882,6 @@
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v1
@@ -3181,7 +2898,6 @@
 
     invoke-virtual {v1, v2, v0, v3}, Lorg/osmdroid/views/Projection;->unrotateAndScalePoint(IILandroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 6
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
@@ -3198,7 +2914,6 @@
 
     move-result-object v0
 
-    .line 7
     iget v1, v0, Landroid/graphics/Point;->x:I
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getWidth()I
@@ -3221,7 +2936,6 @@
 
     invoke-virtual {p0, v1, v0}, Lorg/osmdroid/views/MapView;->scrollTo(II)V
 
-    .line 8
     :cond_0
     iget v0, p0, Lorg/osmdroid/views/MapView;->mZoomLevel:I
 
@@ -3229,7 +2943,6 @@
 
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/MapView;->setZoomLevel(I)I
 
-    .line 9
     :cond_1
     iput p2, p0, Lorg/osmdroid/views/MapView;->mMultiTouchScale:F
 
@@ -3239,12 +2952,10 @@
 .method public setBackgroundColor(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mMapOverlay:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     invoke-virtual {v0, p1}, Lorg/osmdroid/views/overlay/TilesOverlay;->setLoadingBackgroundColor(I)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/ViewGroup;->invalidate()V
 
     return-void
@@ -3253,10 +2964,8 @@
 .method public setBuiltInZoomControls(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/MapView;->mEnableZoomController:Z
 
-    .line 2
     invoke-direct {p0}, Lorg/osmdroid/views/MapView;->checkZoomButtons()V
 
     return-void
@@ -3265,7 +2974,6 @@
 .method public setFlingEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/MapView;->enableFling:Z
 
     return-void
@@ -3274,7 +2982,6 @@
 .method setMapCenter(DD)V
     .locals 1
 
-    .line 3
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     invoke-direct {v0, p1, p2, p3, p4}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
@@ -3287,7 +2994,6 @@
 .method setMapCenter(II)V
     .locals 1
 
-    .line 2
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     invoke-direct {v0, p1, p2}, Lorg/osmdroid/util/GeoPoint;-><init>(II)V
@@ -3300,7 +3006,6 @@
 .method setMapCenter(Lorg/osmdroid/api/IGeoPoint;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
     move-result-object v0
@@ -3313,7 +3018,6 @@
 .method public setMapListener(Lorg/osmdroid/events/MapListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/MapView;->mListener:Lorg/osmdroid/events/MapListener;
 
     return-void
@@ -3326,13 +3030,10 @@
 
     rem-float/2addr p1, v0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/MapView;->mapOrientation:F
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/ViewGroup;->invalidate()V
 
     return-void
@@ -3341,7 +3042,6 @@
 .method public setMaxZoomLevel(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/MapView;->mMaximumZoomLevel:Ljava/lang/Integer;
 
     return-void
@@ -3350,7 +3050,6 @@
 .method public setMinZoomLevel(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/MapView;->mMinimumZoomLevel:Ljava/lang/Integer;
 
     return-void
@@ -3361,7 +3060,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     new-instance p1, Lorg/metalev/multitouch/controller/MultiTouchController;
 
     const/4 v0, 0x0
@@ -3382,7 +3080,6 @@
 .method public setOverlayManager(Lorg/osmdroid/views/overlay/OverlayManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/MapView;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     return-void
@@ -3391,7 +3088,6 @@
 .method public setPositionAndScale(Ljava/lang/Object;Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p2}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->getScale()F
 
     move-result p1
@@ -3402,7 +3098,6 @@
 
     if-lez p3, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->canZoomIn()Z
 
     move-result p3
@@ -3416,7 +3111,6 @@
 
     if-gez p3, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->canZoomOut()Z
 
     move-result p3
@@ -3428,14 +3122,11 @@
     :cond_1
     move p2, p1
 
-    .line 4
     :goto_0
     iput p2, p0, Lorg/osmdroid/views/MapView;->mMultiTouchScale:F
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
-    .line 6
     invoke-virtual {p0}, Landroid/view/ViewGroup;->invalidate()V
 
     const/4 p1, 0x1
@@ -3446,7 +3137,6 @@
 .method protected setProjection(Lorg/osmdroid/views/Projection;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/MapView;->mProjection:Lorg/osmdroid/views/Projection;
 
     return-void
@@ -3457,7 +3147,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance v9, Lorg/osmdroid/util/BoundingBox;
 
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBoxE6;->getLatNorthE6()I
@@ -3470,7 +3159,6 @@
 
     div-double v1, v0, v10
 
-    .line 2
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBoxE6;->getLonEastE6()I
 
     move-result v0
@@ -3505,12 +3193,10 @@
 
     const/4 p1, 0x0
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/views/MapView;->mScrollableAreaLimit:Landroid/graphics/Rect;
 
     return-void
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBoxE6;->getLatNorthE6()I
 
@@ -3520,7 +3206,6 @@
 
     div-double v2, v0, v10
 
-    .line 5
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBoxE6;->getLonWestE6()I
 
     move-result v0
@@ -3529,19 +3214,16 @@
 
     div-double v4, v0, v10
 
-    .line 6
     invoke-static {}, Lmicrosoft/mappoint/TileSystem;->getMaximumZoomLevel()I
 
     move-result v6
 
     const/4 v7, 0x0
 
-    .line 7
     invoke-static/range {v2 .. v7}, Lmicrosoft/mappoint/TileSystem;->LatLongToPixelXY(DDILandroid/graphics/Point;)Landroid/graphics/Point;
 
     move-result-object v0
 
-    .line 8
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBoxE6;->getLatSouthE6()I
 
     move-result v1
@@ -3550,7 +3232,6 @@
 
     div-double v3, v1, v10
 
-    .line 9
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBoxE6;->getLonEastE6()I
 
     move-result p1
@@ -3559,19 +3240,16 @@
 
     div-double v5, v1, v10
 
-    .line 10
     invoke-static {}, Lmicrosoft/mappoint/TileSystem;->getMaximumZoomLevel()I
 
     move-result v7
 
     const/4 v8, 0x0
 
-    .line 11
     invoke-static/range {v3 .. v8}, Lmicrosoft/mappoint/TileSystem;->LatLongToPixelXY(DDILandroid/graphics/Point;)Landroid/graphics/Point;
 
     move-result-object p1
 
-    .line 12
     new-instance v1, Landroid/graphics/Rect;
 
     iget v2, v0, Landroid/graphics/Point;->x:I
@@ -3592,25 +3270,21 @@
 .method public setScrollableAreaLimitDouble(Lorg/osmdroid/util/BoundingBox;)V
     .locals 7
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/MapView;->mScrollableAreaBoundingBox:Lorg/osmdroid/util/BoundingBox;
 
     if-nez p1, :cond_0
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, p0, Lorg/osmdroid/views/MapView;->mScrollableAreaLimit:Landroid/graphics/Rect;
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBox;->getLatNorth()D
 
     move-result-wide v0
 
-    .line 4
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBox;->getLonWest()D
 
     move-result-wide v2
@@ -3619,17 +3293,14 @@
 
     const/4 v5, 0x0
 
-    .line 5
     invoke-static/range {v0 .. v5}, Lmicrosoft/mappoint/TileSystem;->LatLongToPixelXY(DDILandroid/graphics/Point;)Landroid/graphics/Point;
 
     move-result-object v0
 
-    .line 6
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBox;->getLatSouth()D
 
     move-result-wide v1
 
-    .line 7
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBox;->getLonEast()D
 
     move-result-wide v3
@@ -3638,12 +3309,10 @@
 
     const/4 v6, 0x0
 
-    .line 8
     invoke-static/range {v1 .. v6}, Lmicrosoft/mappoint/TileSystem;->LatLongToPixelXY(DDILandroid/graphics/Point;)Landroid/graphics/Point;
 
     move-result-object p1
 
-    .line 9
     new-instance v1, Landroid/graphics/Rect;
 
     iget v2, v0, Landroid/graphics/Point;->x:I
@@ -3664,25 +3333,20 @@
 .method public setTileProvider(Lorg/osmdroid/tileprovider/MapTileProviderBase;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {v0}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->detach()V
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {v0}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->clearTileCache()V
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
-    .line 4
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mTileRequestCompleteHandler:Landroid/os/Handler;
 
     invoke-virtual {p1, v0}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->setTileRequestCompleteHandler(Landroid/os/Handler;)V
 
-    .line 5
     iget-object p1, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->getTileSource()Lorg/osmdroid/tileprovider/tilesource/ITileSource;
@@ -3691,7 +3355,6 @@
 
     invoke-direct {p0, p1}, Lorg/osmdroid/views/MapView;->updateTileSizeForDensity(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
 
-    .line 6
     new-instance p1, Lorg/osmdroid/views/overlay/TilesOverlay;
 
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
@@ -3704,12 +3367,10 @@
 
     iput-object p1, p0, Lorg/osmdroid/views/MapView;->mMapOverlay:Lorg/osmdroid/views/overlay/TilesOverlay;
 
-    .line 7
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     invoke-interface {v0, p1}, Lorg/osmdroid/views/overlay/OverlayManager;->setTilesOverlay(Lorg/osmdroid/views/overlay/TilesOverlay;)V
 
-    .line 8
     invoke-virtual {p0}, Landroid/view/ViewGroup;->invalidate()V
 
     return-void
@@ -3718,23 +3379,18 @@
 .method public setTileSource(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     invoke-virtual {v0, p1}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->setTileSource(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
 
-    .line 2
     invoke-direct {p0, p1}, Lorg/osmdroid/views/MapView;->updateTileSizeForDensity(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
 
-    .line 3
     invoke-direct {p0}, Lorg/osmdroid/views/MapView;->checkZoomButtons()V
 
-    .line 4
     iget p1, p0, Lorg/osmdroid/views/MapView;->mZoomLevel:I
 
     invoke-virtual {p0, p1}, Lorg/osmdroid/views/MapView;->setZoomLevel(I)I
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/ViewGroup;->postInvalidate()V
 
     return-void
@@ -3743,10 +3399,8 @@
 .method public setTilesScaledToDpi(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/MapView;->mTilesScaledToDpi:Z
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getTileProvider()Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     move-result-object p1
@@ -3763,7 +3417,6 @@
 .method public setUseDataConnection(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mMapOverlay:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     invoke-virtual {v0, p1}, Lorg/osmdroid/views/overlay/TilesOverlay;->setUseDataConnection(Z)V
@@ -3774,17 +3427,14 @@
 .method setZoomLevel(I)I
     .locals 8
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMinZoomLevel()I
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMaxZoomLevel()I
 
     move-result v1
 
-    .line 3
     invoke-static {v1, p1}, Ljava/lang/Math;->min(II)I
 
     move-result p1
@@ -3793,69 +3443,56 @@
 
     move-result p1
 
-    .line 4
     iget v0, p0, Lorg/osmdroid/views/MapView;->mZoomLevel:I
 
     const/4 v1, 0x1
 
     if-eq p1, v0, :cond_1
 
-    .line 5
     iget-object v2, p0, Lorg/osmdroid/views/MapView;->mScroller:Landroid/widget/Scroller;
 
     if-eqz v2, :cond_0
 
-    .line 6
     invoke-virtual {v2, v1}, Landroid/widget/Scroller;->forceFinished(Z)V
 
     :cond_0
     const/4 v2, 0x0
 
-    .line 7
     iput-boolean v2, p0, Lorg/osmdroid/views/MapView;->mIsFlinging:Z
 
-    .line 8
     :cond_1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMapCenter()Lorg/osmdroid/api/IGeoPoint;
 
     move-result-object v2
 
-    .line 9
     iput p1, p0, Lorg/osmdroid/views/MapView;->mZoomLevel:I
 
     const/4 v3, 0x0
 
-    .line 10
     invoke-virtual {p0, v3}, Lorg/osmdroid/views/MapView;->setProjection(Lorg/osmdroid/views/Projection;)V
 
-    .line 11
     invoke-direct {p0}, Lorg/osmdroid/views/MapView;->checkZoomButtons()V
 
-    .line 12
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->isLayoutOccurred()Z
 
     move-result v4
 
     if-eqz v4, :cond_3
 
-    .line 13
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
     move-result-object v4
 
     invoke-interface {v4, v2}, Lorg/osmdroid/api/IMapController;->setCenter(Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 14
     new-instance v2, Landroid/graphics/Point;
 
     invoke-direct {v2}, Landroid/graphics/Point;-><init>()V
 
-    .line 15
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v4
 
-    .line 16
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
 
     move-result-object v5
@@ -3876,7 +3513,6 @@
 
     if-eqz v5, :cond_2
 
-    .line 17
     iget v5, v2, Landroid/graphics/Point;->x:I
 
     iget v2, v2, Landroid/graphics/Point;->y:I
@@ -3885,14 +3521,12 @@
 
     move-result-object v2
 
-    .line 18
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
     move-result-object v5
 
     invoke-interface {v5, v2}, Lorg/osmdroid/api/IMapController;->animateTo(Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 19
     :cond_2
     iget-object v2, p0, Lorg/osmdroid/views/MapView;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
@@ -3902,32 +3536,26 @@
 
     invoke-virtual {v2, v4, p1, v0, v3}, Lorg/osmdroid/tileprovider/MapTileProviderBase;->rescaleCache(Lorg/osmdroid/views/Projection;IILandroid/graphics/Rect;)V
 
-    .line 20
     iput-boolean v1, p0, Lorg/osmdroid/views/MapView;->pauseFling:Z
 
     :cond_3
     if-eq p1, v0, :cond_4
 
-    .line 21
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mListener:Lorg/osmdroid/events/MapListener;
 
     if-eqz v0, :cond_4
 
-    .line 22
     new-instance v0, Lorg/osmdroid/events/ZoomEvent;
 
     invoke-direct {v0, p0, p1}, Lorg/osmdroid/events/ZoomEvent;-><init>(Lorg/osmdroid/views/MapView;I)V
 
-    .line 23
     iget-object p1, p0, Lorg/osmdroid/views/MapView;->mListener:Lorg/osmdroid/events/MapListener;
 
     invoke-interface {p1, v0}, Lorg/osmdroid/events/MapListener;->onZoom(Lorg/osmdroid/events/ZoomEvent;)Z
 
-    .line 24
     :cond_4
     invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
-    .line 25
     iget p1, p0, Lorg/osmdroid/views/MapView;->mZoomLevel:I
 
     return p1
@@ -3936,7 +3564,6 @@
 .method public useDataConnection()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView;->mMapOverlay:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/overlay/TilesOverlay;->useDataConnection()Z
@@ -3949,7 +3576,6 @@
 .method zoomIn()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
     move-result-object v0
@@ -3966,7 +3592,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 3
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
     move-result-object v0
@@ -3983,7 +3608,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
@@ -3994,7 +3618,6 @@
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
     move-result-object v0
@@ -4013,7 +3636,6 @@
 .method zoomOut()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
     move-result-object v0
@@ -4030,7 +3652,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 3
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
     move-result-object v0
@@ -4047,7 +3668,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
@@ -4058,7 +3678,6 @@
 
     move-result-object p1
 
-    .line 2
     iget v0, p1, Landroid/graphics/Point;->x:I
 
     iget p1, p1, Landroid/graphics/Point;->y:I
@@ -4073,12 +3692,10 @@
 .method public zoomToBoundingBox(Lorg/osmdroid/util/BoundingBox;Z)V
     .locals 13
 
-    .line 3
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getBoundingBox()Lorg/osmdroid/util/BoundingBox;
 
     move-result-object v0
 
-    .line 4
     iget v1, p0, Lorg/osmdroid/views/MapView;->mZoomLevel:I
 
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMaxZoomLevel()I
@@ -4089,14 +3706,12 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 5
     invoke-virtual {v0}, Lorg/osmdroid/util/BoundingBox;->getLatitudeSpan()D
 
     move-result-wide v1
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-virtual {v0}, Lorg/osmdroid/util/BoundingBox;->getLatitudeSpan()D
 
@@ -4118,7 +3733,6 @@
 
     div-double/2addr v1, v5
 
-    .line 7
     :goto_0
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMaxZoomLevel()I
 
@@ -4126,7 +3740,6 @@
 
     int-to-double v5, v5
 
-    .line 8
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBox;->getLatitudeSpan()D
 
     move-result-wide v7
@@ -4149,7 +3762,6 @@
 
     sub-double/2addr v5, v7
 
-    .line 9
     iget v7, p0, Lorg/osmdroid/views/MapView;->mZoomLevel:I
 
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMaxZoomLevel()I
@@ -4158,14 +3770,12 @@
 
     if-ne v7, v8, :cond_1
 
-    .line 10
     invoke-virtual {v0}, Lorg/osmdroid/util/BoundingBox;->getLongitudeSpan()D
 
     move-result-wide v7
 
     goto :goto_1
 
-    .line 11
     :cond_1
     invoke-virtual {v0}, Lorg/osmdroid/util/BoundingBox;->getLongitudeSpan()D
 
@@ -4187,7 +3797,6 @@
 
     div-double/2addr v7, v9
 
-    .line 12
     :goto_1
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getMaxZoomLevel()I
 
@@ -4195,7 +3804,6 @@
 
     int-to-double v9, v9
 
-    .line 13
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBox;->getLongitudeSpan()D
 
     move-result-wide v11
@@ -4218,7 +3826,6 @@
 
     sub-double/2addr v9, v3
 
-    .line 14
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v3
@@ -4229,7 +3836,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 15
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -4252,7 +3858,6 @@
 
     invoke-static {v3, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 16
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -4286,7 +3891,6 @@
     :cond_2
     if-eqz p2, :cond_4
 
-    .line 17
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
     move-result-object p2
@@ -4307,7 +3911,6 @@
 
     goto :goto_4
 
-    .line 18
     :cond_4
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
@@ -4327,7 +3930,6 @@
 
     invoke-interface {p2, v0}, Lorg/osmdroid/api/IMapController;->setZoom(I)I
 
-    .line 19
     :goto_4
     invoke-virtual {p0}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
@@ -4335,7 +3937,6 @@
 
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
-    .line 20
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBox;->getCenter()Lorg/osmdroid/util/GeoPoint;
 
     move-result-object v1
@@ -4348,14 +3949,12 @@
 
     move-result-object p1
 
-    .line 21
     invoke-virtual {p1}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
 
     move-result-wide v3
 
     invoke-direct {v0, v1, v2, v3, v4}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
-    .line 22
     invoke-interface {p2, v0}, Lorg/osmdroid/api/IMapController;->setCenter(Lorg/osmdroid/api/IGeoPoint;)V
 
     return-void
@@ -4366,7 +3965,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance v9, Lorg/osmdroid/util/BoundingBox;
 
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBoxE6;->getLatNorthE6()I
@@ -4417,7 +4015,6 @@
 
     const/4 p1, 0x0
 
-    .line 2
     invoke-virtual {p0, v9, p1}, Lorg/osmdroid/views/MapView;->zoomToBoundingBox(Lorg/osmdroid/util/BoundingBox;Z)V
 
     return-void

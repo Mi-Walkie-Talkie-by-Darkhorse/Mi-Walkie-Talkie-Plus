@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/collect/HashBiMap$Itr;
 .super Ljava/lang/Object;
-.source "HashBiMap.java"
 
 # interfaces
 .implements Ljava/util/Iterator;
@@ -58,25 +57,20 @@
 .method constructor <init>(Lcom/google/common/collect/HashBiMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$Itr;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 2
     iput p1, p0, Lcom/google/common/collect/HashBiMap$Itr;->nextBucket:I
 
     const/4 p1, 0x0
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$Itr;->next:Lcom/google/common/collect/HashBiMap$BiEntry;
 
-    .line 4
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$Itr;->toRemove:Lcom/google/common/collect/HashBiMap$BiEntry;
 
-    .line 5
     iget-object p1, p0, Lcom/google/common/collect/HashBiMap$Itr;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-static {p1}, Lcom/google/common/collect/HashBiMap;->access$000(Lcom/google/common/collect/HashBiMap;)I
@@ -91,7 +85,6 @@
 .method private checkForConcurrentModification()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Itr;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-static {v0}, Lcom/google/common/collect/HashBiMap;->access$000(Lcom/google/common/collect/HashBiMap;)I
@@ -104,7 +97,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/util/ConcurrentModificationException;
 
@@ -118,10 +110,8 @@
 .method public hasNext()Z
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/HashBiMap$Itr;->checkForConcurrentModification()V
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Itr;->next:Lcom/google/common/collect/HashBiMap$BiEntry;
 
     const/4 v1, 0x1
@@ -130,7 +120,6 @@
 
     return v1
 
-    .line 3
     :cond_0
     :goto_0
     iget v0, p0, Lcom/google/common/collect/HashBiMap$Itr;->nextBucket:I
@@ -145,7 +134,6 @@
 
     if-ge v0, v2, :cond_2
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Itr;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-static {v0}, Lcom/google/common/collect/HashBiMap;->access$100(Lcom/google/common/collect/HashBiMap;)[Lcom/google/common/collect/HashBiMap$BiEntry;
@@ -158,7 +146,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Itr;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-static {v0}, Lcom/google/common/collect/HashBiMap;->access$100(Lcom/google/common/collect/HashBiMap;)[Lcom/google/common/collect/HashBiMap$BiEntry;
@@ -180,7 +167,6 @@
     :cond_1
     add-int/lit8 v2, v2, 0x1
 
-    .line 6
     iput v2, p0, Lcom/google/common/collect/HashBiMap$Itr;->nextBucket:I
 
     goto :goto_0
@@ -199,35 +185,28 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/HashBiMap$Itr;->checkForConcurrentModification()V
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/HashBiMap$Itr;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Itr;->next:Lcom/google/common/collect/HashBiMap$BiEntry;
 
-    .line 4
     iget-object v1, v0, Lcom/google/common/collect/HashBiMap$BiEntry;->nextInKToVBucket:Lcom/google/common/collect/HashBiMap$BiEntry;
 
     iput-object v1, p0, Lcom/google/common/collect/HashBiMap$Itr;->next:Lcom/google/common/collect/HashBiMap$BiEntry;
 
-    .line 5
     iput-object v0, p0, Lcom/google/common/collect/HashBiMap$Itr;->toRemove:Lcom/google/common/collect/HashBiMap$BiEntry;
 
-    .line 6
     invoke-virtual {p0, v0}, Lcom/google/common/collect/HashBiMap$Itr;->output(Lcom/google/common/collect/HashBiMap$BiEntry;)Ljava/lang/Object;
 
     move-result-object v0
 
     return-object v0
 
-    .line 7
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -249,10 +228,8 @@
 .method public remove()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/HashBiMap$Itr;->checkForConcurrentModification()V
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Itr;->toRemove:Lcom/google/common/collect/HashBiMap$BiEntry;
 
     if-eqz v0, :cond_0
@@ -267,14 +244,12 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/collect/CollectPreconditions;->checkRemove(Z)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Itr;->this$0:Lcom/google/common/collect/HashBiMap;
 
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap$Itr;->toRemove:Lcom/google/common/collect/HashBiMap$BiEntry;
 
     invoke-static {v0, v1}, Lcom/google/common/collect/HashBiMap;->access$200(Lcom/google/common/collect/HashBiMap;Lcom/google/common/collect/HashBiMap$BiEntry;)V
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Itr;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-static {v0}, Lcom/google/common/collect/HashBiMap;->access$000(Lcom/google/common/collect/HashBiMap;)I
@@ -285,7 +260,6 @@
 
     const/4 v0, 0x0
 
-    .line 5
     iput-object v0, p0, Lcom/google/common/collect/HashBiMap$Itr;->toRemove:Lcom/google/common/collect/HashBiMap$BiEntry;
 
     return-void

@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/animation/ArgbEvaluatorCompat;
 .super Ljava/lang/Object;
-.source "ArgbEvaluatorCompat.java"
 
 # interfaces
 .implements Landroid/animation/TypeEvaluator;
@@ -25,7 +24,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/material/animation/ArgbEvaluatorCompat;
 
     invoke-direct {v0}, Lcom/google/android/material/animation/ArgbEvaluatorCompat;-><init>()V
@@ -38,7 +36,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +46,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/android/material/animation/ArgbEvaluatorCompat;->instance:Lcom/google/android/material/animation/ArgbEvaluatorCompat;
 
     return-object v0
@@ -62,7 +58,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
 
     move-result p2
@@ -99,7 +94,6 @@
 
     div-float/2addr p2, v1
 
-    .line 3
     invoke-virtual {p3}, Ljava/lang/Integer;->intValue()I
 
     move-result p3
@@ -138,7 +132,6 @@
 
     const-wide v9, 0x400199999999999aL    # 2.2
 
-    .line 4
     invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v7
@@ -147,7 +140,6 @@
 
     float-to-double v7, v3
 
-    .line 5
     invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v7
@@ -156,7 +148,6 @@
 
     float-to-double v7, p2
 
-    .line 6
     invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v7
@@ -165,7 +156,6 @@
 
     float-to-double v7, v5
 
-    .line 7
     invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v7
@@ -174,7 +164,6 @@
 
     float-to-double v6, v6
 
-    .line 8
     invoke-static {v6, v7, v9, v10}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v6
@@ -183,7 +172,6 @@
 
     float-to-double v7, p3
 
-    .line 9
     invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v7
@@ -220,7 +208,6 @@
 
     const-wide v6, 0x3fdd1745d1745d17L    # 0.45454545454545453
 
-    .line 10
     invoke-static {v4, v5, v6, v7}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v4
@@ -231,7 +218,6 @@
 
     float-to-double v2, v3
 
-    .line 11
     invoke-static {v2, v3, v6, v7}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v2
@@ -242,7 +228,6 @@
 
     float-to-double v2, p2
 
-    .line 12
     invoke-static {v2, v3, v6, v7}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v2
@@ -251,7 +236,6 @@
 
     mul-float p2, p2, v1
 
-    .line 13
     invoke-static {v0}, Ljava/lang/Math;->round(F)I
 
     move-result v0
@@ -292,7 +276,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     check-cast p2, Ljava/lang/Integer;
 
     check-cast p3, Ljava/lang/Integer;

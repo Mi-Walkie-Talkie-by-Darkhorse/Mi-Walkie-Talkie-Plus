@@ -1,6 +1,5 @@
 .class interface abstract Lcom/amap/api/col/l3/jd$a;
 .super Ljava/lang/Object;
-.source "ThreadTask.java"
 
 
 # annotations

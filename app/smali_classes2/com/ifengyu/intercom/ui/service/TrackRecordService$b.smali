@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/service/TrackRecordService$b;
 .super Ljava/lang/Object;
-.source "TrackRecordService.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$b;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -59,7 +56,6 @@
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$b;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
-    .line 2
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->e(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Ljava/lang/String;
 
     move-result-object v2
@@ -80,7 +76,6 @@
 
     move-result-object v0
 
-    .line 3
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -98,7 +93,6 @@
 
     check-cast v1, Lcom/ifengyu/intercom/greendao/bean/c;
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v2

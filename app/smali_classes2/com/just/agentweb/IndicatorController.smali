@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/IndicatorController;
 .super Ljava/lang/Object;
-.source "IndicatorController.java"
 
 
 # virtual methods

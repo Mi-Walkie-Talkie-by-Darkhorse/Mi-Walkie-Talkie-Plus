@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/style/StyleItem;
 .super Ljava/lang/Object;
-.source "StyleItem.java"
 
 
 # instance fields
@@ -22,17 +21,14 @@
 .method public constructor <init>(I)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/style/StyleItem;->styleElements:Ljava/util/Map;
 
-    .line 3
     iput p1, p0, Lcom/autonavi/ae/gmap/style/StyleItem;->styleTypeId:I
 
     return-void
@@ -43,7 +39,6 @@
 .method public get(I)Lcom/autonavi/ae/gmap/style/StyleElement;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/style/StyleItem;->styleElements:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -62,7 +57,6 @@
 .method public getStyleElements()[Lcom/autonavi/ae/gmap/style/StyleElement;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/style/StyleItem;->styleElements:Ljava/util/Map;
 
     if-eqz v0, :cond_0
@@ -73,7 +67,6 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/style/StyleItem;->styleElements:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
@@ -82,7 +75,6 @@
 
     new-array v0, v0, [Lcom/autonavi/ae/gmap/style/StyleElement;
 
-    .line 3
     iget-object v1, p0, Lcom/autonavi/ae/gmap/style/StyleItem;->styleElements:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->values()Ljava/util/Collection;
@@ -106,7 +98,6 @@
 .method public getStyleTypeId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/style/StyleItem;->styleTypeId:I
 
     return v0
@@ -115,7 +106,6 @@
 .method public isValid()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/style/StyleItem;->styleElements:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
@@ -141,7 +131,6 @@
 .method public put(ILcom/autonavi/ae/gmap/style/StyleElement;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/style/StyleItem;->styleElements:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -156,14 +145,12 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v1, "styleTypeId:"
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget v1, p0, Lcom/autonavi/ae/gmap/style/StyleItem;->styleTypeId:I
@@ -176,7 +163,6 @@
 
     const-string v1, "styleElements.size :"
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object v1, p0, Lcom/autonavi/ae/gmap/style/StyleItem;->styleElements:Ljava/util/Map;
@@ -187,7 +173,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0

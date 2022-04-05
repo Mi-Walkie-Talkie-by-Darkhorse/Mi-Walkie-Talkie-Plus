@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/hj;
 .super Ljava/lang/Object;
-.source "DynamicFileDBCreator.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/gy;
@@ -14,7 +13,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,20 +25,17 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/hj;->a:Lcom/amap/api/col/l3/hj;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/amap/api/col/l3/hj;
 
     invoke-direct {v1}, Lcom/amap/api/col/l3/hj;-><init>()V
 
     sput-object v1, Lcom/amap/api/col/l3/hj;->a:Lcom/amap/api/col/l3/hj;
 
-    .line 3
     :cond_0
     sget-object v1, Lcom/amap/api/col/l3/hj;->a:Lcom/amap/api/col/l3/hj;
     :try_end_0
@@ -66,7 +61,6 @@
     :try_start_0
     const-string v0, "CREATE TABLE IF NOT EXISTS file (_id integer primary key autoincrement, sname  varchar(20), fname varchar(100),md varchar(20),version varchar(20),dversion varchar(20),status varchar(20),reservedfield varchar(20));"
 
-    .line 4
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -80,7 +74,6 @@
 
     const-string v1, "onCreate"
 
-    .line 5
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

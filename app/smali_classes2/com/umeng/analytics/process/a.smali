@@ -1,6 +1,5 @@
 .class interface abstract Lcom/umeng/analytics/process/a;
 .super Ljava/lang/Object;
-.source "DBConstant.java"
 
 
 # annotations

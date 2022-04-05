@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/io/CharStreams;
 .super Ljava/lang/Object;
-.source "CharStreams.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,20 +29,16 @@
 .method static asReader(Ljava/lang/Readable;)Ljava/io/Reader;
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     instance-of v0, p0, Ljava/io/Reader;
 
     if-eqz v0, :cond_0
 
-    .line 3
     check-cast p0, Ljava/io/Reader;
 
     return-object p0
 
-    .line 4
     :cond_0
     new-instance v0, Lcom/google/common/io/CharStreams$1;
 
@@ -56,17 +50,14 @@
 .method public static asWriter(Ljava/lang/Appendable;)Ljava/io/Writer;
     .locals 1
 
-    .line 1
     instance-of v0, p0, Ljava/io/Writer;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, Ljava/io/Writer;
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/google/common/io/AppendableWriter;
 
@@ -83,22 +74,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/16 v0, 0x800
 
-    .line 3
     invoke-static {v0}, Ljava/nio/CharBuffer;->allocate(I)Ljava/nio/CharBuffer;
 
     move-result-object v0
 
     const-wide/16 v1, 0x0
 
-    .line 4
     :goto_0
     invoke-interface {p0, v0}, Ljava/lang/Readable;->read(Ljava/nio/CharBuffer;)I
 
@@ -108,13 +95,10 @@
 
     if-eq v3, v4, :cond_0
 
-    .line 5
     invoke-virtual {v0}, Ljava/nio/CharBuffer;->flip()Ljava/nio/Buffer;
 
-    .line 6
     invoke-interface {p1, v0}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
 
-    .line 7
     invoke-virtual {v0}, Ljava/nio/CharBuffer;->remaining()I
 
     move-result v3
@@ -123,7 +107,6 @@
 
     add-long/2addr v1, v3
 
-    .line 8
     invoke-virtual {v0}, Ljava/nio/CharBuffer;->clear()Ljava/nio/Buffer;
 
     goto :goto_0
@@ -135,7 +118,6 @@
 .method public static nullWriter()Ljava/io/Writer;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/google/common/io/CharStreams$NullWriter;->access$000()Lcom/google/common/io/CharStreams$NullWriter;
 
     move-result-object v0
@@ -162,18 +144,14 @@
         }
     .end annotation
 
-    .line 5
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
     new-instance v0, Lcom/google/common/io/LineReader;
 
     invoke-direct {v0, p0}, Lcom/google/common/io/LineReader;-><init>(Ljava/lang/Readable;)V
 
-    .line 8
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/io/LineReader;->readLine()Ljava/lang/String;
 
@@ -181,14 +159,12 @@
 
     if-eqz p0, :cond_1
 
-    .line 9
     invoke-interface {p1, p0}, Lcom/google/common/io/LineProcessor;->processLine(Ljava/lang/String;)Z
 
     move-result p0
 
     if-nez p0, :cond_0
 
-    .line 10
     :cond_1
     invoke-interface {p1}, Lcom/google/common/io/LineProcessor;->getResult()Ljava/lang/Object;
 
@@ -216,17 +192,14 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     new-instance v1, Lcom/google/common/io/LineReader;
 
     invoke-direct {v1, p0}, Lcom/google/common/io/LineReader;-><init>(Ljava/lang/Readable;)V
 
-    .line 3
     :goto_0
     invoke-virtual {v1}, Lcom/google/common/io/LineReader;->readLine()Ljava/lang/String;
 
@@ -234,7 +207,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 4
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -251,7 +223,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_0
@@ -261,7 +232,6 @@
 
     if-lez v2, :cond_2
 
-    .line 2
     invoke-virtual {p0, p1, p2}, Ljava/io/Reader;->skip(J)J
 
     move-result-wide v2
@@ -270,7 +240,6 @@
 
     if-nez v4, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Ljava/io/Reader;->read()I
 
     move-result v0
@@ -285,7 +254,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance p0, Ljava/io/EOFException;
 
@@ -310,7 +278,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/io/CharStreams;->toStringBuilder(Ljava/lang/Readable;)Ljava/lang/StringBuilder;
 
     move-result-object p0
@@ -330,12 +297,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
     invoke-static {p0, v0}, Lcom/google/common/io/CharStreams;->copy(Ljava/lang/Readable;Ljava/lang/Appendable;)J
 
     return-object v0

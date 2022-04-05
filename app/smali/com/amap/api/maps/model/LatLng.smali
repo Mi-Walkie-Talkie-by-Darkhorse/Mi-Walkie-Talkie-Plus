@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/maps/model/LatLng;
 .super Ljava/lang/Object;
-.source "LatLng.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -21,7 +20,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/model/LatLngCreator;
 
     invoke-direct {v0}, Lcom/amap/api/maps/model/LatLngCreator;-><init>()V
@@ -42,7 +40,6 @@
 
     move-wide v3, p3
 
-    .line 1
     invoke-direct/range {v0 .. v5}, Lcom/amap/api/maps/model/LatLng;-><init>(DDZ)V
 
     return-void
@@ -51,7 +48,6 @@
 .method public constructor <init>(DDZ)V
     .locals 4
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-eqz p5, :cond_2
@@ -68,7 +64,6 @@
 
     if-gez p5, :cond_0
 
-    .line 3
     iput-wide p3, p0, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
     goto :goto_0
@@ -86,7 +81,6 @@
 
     sub-double/2addr p3, v2
 
-    .line 4
     iput-wide p3, p0, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
     :goto_0
@@ -104,7 +98,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_1
     :try_start_0
     new-instance p5, Lcom/amap/api/maps/AMapException;
@@ -120,10 +113,8 @@
     :catch_0
     move-exception p5
 
-    .line 6
     invoke-virtual {p5}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 7
     :goto_1
     invoke-static {p3, p4, p1, p2}, Ljava/lang/Math;->min(DD)D
 
@@ -137,11 +128,9 @@
 
     return-void
 
-    .line 8
     :cond_2
     iput-wide p1, p0, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
-    .line 9
     iput-wide p3, p0, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
     return-void
@@ -152,7 +141,6 @@
 .method public final clone()Lcom/amap/api/maps/model/LatLng;
     .locals 5
 
-    .line 2
     new-instance v0, Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v1, p0, Lcom/amap/api/maps/model/LatLng;->latitude:D
@@ -172,7 +160,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/amap/api/maps/model/LatLng;->clone()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object v0
@@ -197,7 +184,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/amap/api/maps/model/LatLng;
 
@@ -207,11 +193,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/amap/api/maps/model/LatLng;
 
-    .line 3
     iget-wide v3, p0, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
     invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
@@ -220,7 +204,6 @@
 
     iget-wide v5, p1, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
-    .line 4
     invoke-static {v5, v6}, Ljava/lang/Double;->doubleToLongBits(D)J
 
     move-result-wide v5
@@ -231,14 +214,12 @@
 
     iget-wide v3, p0, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
-    .line 5
     invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
 
     move-result-wide v3
 
     iget-wide v5, p1, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
-    .line 6
     invoke-static {v5, v6}, Ljava/lang/Double;->doubleToLongBits(D)J
 
     move-result-wide v5
@@ -256,7 +237,6 @@
 .method public final hashCode()I
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
     invoke-static {v0, v1}, Ljava/lang/Double;->doubleToLongBits(D)J
@@ -273,7 +253,6 @@
 
     add-int/lit8 v1, v1, 0x1f
 
-    .line 2
     iget-wide v3, p0, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
     invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
@@ -296,7 +275,6 @@
 .method public final toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "lat/lng: ("
@@ -329,12 +307,10 @@
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
-    .line 2
     iget-wide v0, p0, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V

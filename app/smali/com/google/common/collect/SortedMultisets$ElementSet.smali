@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/SortedMultisets$ElementSet;
 .super Lcom/google/common/collect/Multisets$ElementSet;
-.source "SortedMultisets.java"
 
 # interfaces
 .implements Ljava/util/SortedSet;
@@ -51,10 +50,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$ElementSet;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/SortedMultisets$ElementSet;->multiset:Lcom/google/common/collect/SortedMultiset;
 
     return-void
@@ -72,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/SortedMultisets$ElementSet;->multiset()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object v0
@@ -92,7 +88,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/SortedMultisets$ElementSet;->multiset()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object v0
@@ -118,7 +113,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/SortedMultisets$ElementSet;->multiset()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object v0
@@ -144,7 +138,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/SortedMultisets$ElementSet;->multiset()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object v0
@@ -163,7 +156,6 @@
 .method bridge synthetic multiset()Lcom/google/common/collect/Multiset;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/SortedMultisets$ElementSet;->multiset()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object v0
@@ -181,7 +173,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/SortedMultisets$ElementSet;->multiset:Lcom/google/common/collect/SortedMultiset;
 
     return-object v0
@@ -197,7 +188,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/SortedMultisets$ElementSet;->multiset()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object v0
@@ -227,7 +217,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/SortedMultisets$ElementSet;->multiset()Lcom/google/common/collect/SortedMultiset;
 
     move-result-object v0

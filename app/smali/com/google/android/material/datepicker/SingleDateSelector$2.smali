@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/datepicker/SingleDateSelector$2;
 .super Ljava/lang/Object;
-.source "SingleDateSelector.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,12 +45,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/android/material/datepicker/SingleDateSelector;
 
     invoke-direct {v0}, Lcom/google/android/material/datepicker/SingleDateSelector;-><init>()V
 
-    .line 3
     const-class v1, Ljava/lang/Long;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -79,7 +75,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/SingleDateSelector$2;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/datepicker/SingleDateSelector;
 
     move-result-object p1
@@ -92,7 +87,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-array p1, p1, [Lcom/google/android/material/datepicker/SingleDateSelector;
 
     return-object p1
@@ -103,7 +97,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/SingleDateSelector$2;->newArray(I)[Lcom/google/android/material/datepicker/SingleDateSelector;
 
     move-result-object p1

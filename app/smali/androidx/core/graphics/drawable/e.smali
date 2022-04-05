@@ -1,6 +1,5 @@
 .class Landroidx/core/graphics/drawable/e;
 .super Landroidx/core/graphics/drawable/d;
-.source "WrappedDrawableApi21.java"
 
 
 # annotations
@@ -17,10 +16,8 @@
 .method constructor <init>(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/core/graphics/drawable/d;-><init>(Landroid/graphics/drawable/Drawable;)V
 
-    .line 2
     invoke-direct {p0}, Landroidx/core/graphics/drawable/e;->c()V
 
     return-void
@@ -29,10 +26,8 @@
 .method constructor <init>(Landroidx/core/graphics/drawable/f;Landroid/content/res/Resources;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2}, Landroidx/core/graphics/drawable/d;-><init>(Landroidx/core/graphics/drawable/f;Landroid/content/res/Resources;)V
 
-    .line 4
     invoke-direct {p0}, Landroidx/core/graphics/drawable/e;->c()V
 
     return-void
@@ -41,12 +36,10 @@
 .method private c()V
     .locals 3
 
-    .line 1
     sget-object v0, Landroidx/core/graphics/drawable/e;->h:Ljava/lang/reflect/Method;
 
     if-nez v0, :cond_0
 
-    .line 2
     :try_start_0
     const-class v0, Landroid/graphics/drawable/Drawable;
 
@@ -73,7 +66,6 @@
 
     const-string v2, "Failed to retrieve Drawable#isProjected() method"
 
-    .line 3
     invoke-static {v1, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_0
@@ -86,7 +78,6 @@
 .method protected b()Z
     .locals 3
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
@@ -95,10 +86,8 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 2
     iget-object v0, p0, Landroidx/core/graphics/drawable/d;->f:Landroid/graphics/drawable/Drawable;
 
-    .line 3
     instance-of v2, v0, Landroid/graphics/drawable/GradientDrawable;
 
     if-nez v2, :cond_0
@@ -127,7 +116,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/graphics/drawable/d;->f:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getDirtyBounds()Landroid/graphics/Rect;
@@ -144,7 +132,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/core/graphics/drawable/d;->f:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->getOutline(Landroid/graphics/Outline;)V
@@ -155,7 +142,6 @@
 .method public setHotspot(FF)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/graphics/drawable/d;->f:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/drawable/Drawable;->setHotspot(FF)V
@@ -166,7 +152,6 @@
 .method public setHotspotBounds(IIII)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/graphics/drawable/d;->f:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->setHotspotBounds(IIII)V
@@ -181,14 +166,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/core/graphics/drawable/d;->setState([I)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     const/4 p1, 0x1
@@ -204,19 +187,16 @@
 .method public setTint(I)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroidx/core/graphics/drawable/e;->b()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroidx/core/graphics/drawable/d;->setTint(I)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/core/graphics/drawable/d;->f:Landroid/graphics/drawable/Drawable;
 
@@ -229,19 +209,16 @@
 .method public setTintList(Landroid/content/res/ColorStateList;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroidx/core/graphics/drawable/e;->b()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroidx/core/graphics/drawable/d;->setTintList(Landroid/content/res/ColorStateList;)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/core/graphics/drawable/d;->f:Landroid/graphics/drawable/Drawable;
 
@@ -258,19 +235,16 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroidx/core/graphics/drawable/e;->b()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroidx/core/graphics/drawable/d;->setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/core/graphics/drawable/d;->f:Landroid/graphics/drawable/Drawable;
 

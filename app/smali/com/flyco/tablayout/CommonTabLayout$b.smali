@@ -1,6 +1,5 @@
 .class Lcom/flyco/tablayout/CommonTabLayout$b;
 .super Ljava/lang/Object;
-.source "CommonTabLayout.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lcom/flyco/tablayout/CommonTabLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/flyco/tablayout/CommonTabLayout$b;->c:Lcom/flyco/tablayout/CommonTabLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ew$2;
 .super Landroid/graphics/drawable/Drawable;
-.source "IndoorFloorSwitchView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/ew;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ew$2;->a:Lcom/amap/api/col/l3/ew;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
@@ -35,7 +33,6 @@
 .method public final draw(Landroid/graphics/Canvas;)V
     .locals 5
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ew$2;->a:Lcom/amap/api/col/l3/ew;
 
@@ -45,7 +42,6 @@
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 2
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
@@ -134,7 +130,6 @@
 
     invoke-virtual {p1, v3, v1, v2, v0}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 3
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V

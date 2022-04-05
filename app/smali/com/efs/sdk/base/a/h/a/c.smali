@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/efs/sdk/base/a/h/a/c;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations

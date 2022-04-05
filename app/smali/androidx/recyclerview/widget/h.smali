@@ -1,6 +1,5 @@
 .class public Landroidx/recyclerview/widget/h;
 .super Landroidx/recyclerview/widget/RecyclerView$u;
-.source "LinearSmoothScroller.java"
 
 
 # static fields
@@ -41,17 +40,14 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$u;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
     iput-object v0, p0, Landroidx/recyclerview/widget/h;->mLinearInterpolator:Landroid/view/animation/LinearInterpolator;
 
-    .line 3
     new-instance v0, Landroid/view/animation/DecelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
@@ -60,15 +56,12 @@
 
     const/4 v0, 0x0
 
-    .line 4
     iput-boolean v0, p0, Landroidx/recyclerview/widget/h;->mHasCalculatedMillisPerPixel:Z
 
-    .line 5
     iput v0, p0, Landroidx/recyclerview/widget/h;->mInterimTargetDx:I
 
     iput v0, p0, Landroidx/recyclerview/widget/h;->mInterimTargetDy:I
 
-    .line 6
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -102,12 +95,10 @@
 .method private getSpeedPerPixel()F
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/recyclerview/widget/h;->mHasCalculatedMillisPerPixel:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/recyclerview/widget/h;->mDisplayMetrics:Landroid/util/DisplayMetrics;
 
     invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/h;->calculateSpeedPerPixel(Landroid/util/DisplayMetrics;)F
@@ -118,10 +109,8 @@
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Landroidx/recyclerview/widget/h;->mHasCalculatedMillisPerPixel:Z
 
-    .line 4
     :cond_0
     iget v0, p0, Landroidx/recyclerview/widget/h;->mMillisPerPixel:F
 
@@ -147,7 +136,6 @@
 
     return p4
 
-    .line 1
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -185,14 +173,12 @@
 .method public calculateDxToMakeVisible(Landroid/view/View;I)I
     .locals 10
 
-    .line 1
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$u;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollHorizontally()Z
 
     move-result v1
@@ -201,7 +187,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -209,7 +194,6 @@
 
     check-cast v1, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
 
-    .line 4
     invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedLeft(Landroid/view/View;)I
 
     move-result v2
@@ -218,7 +202,6 @@
 
     sub-int v5, v2, v3
 
-    .line 5
     invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedRight(Landroid/view/View;)I
 
     move-result p1
@@ -227,12 +210,10 @@
 
     add-int v6, p1, v1
 
-    .line 6
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getPaddingLeft()I
 
     move-result v7
 
-    .line 7
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getWidth()I
 
     move-result p1
@@ -247,7 +228,6 @@
 
     move v9, p2
 
-    .line 8
     invoke-virtual/range {v4 .. v9}, Landroidx/recyclerview/widget/h;->calculateDtToFit(IIIII)I
 
     move-result p1
@@ -264,14 +244,12 @@
 .method public calculateDyToMakeVisible(Landroid/view/View;I)I
     .locals 10
 
-    .line 1
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$u;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->canScrollVertically()Z
 
     move-result v1
@@ -280,7 +258,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -288,7 +265,6 @@
 
     check-cast v1, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
 
-    .line 4
     invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedTop(Landroid/view/View;)I
 
     move-result v2
@@ -297,7 +273,6 @@
 
     sub-int v5, v2, v3
 
-    .line 5
     invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedBottom(Landroid/view/View;)I
 
     move-result p1
@@ -306,12 +281,10 @@
 
     add-int v6, p1, v1
 
-    .line 6
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getPaddingTop()I
 
     move-result v7
 
-    .line 7
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getHeight()I
 
     move-result p1
@@ -326,7 +299,6 @@
 
     move v9, p2
 
-    .line 8
     invoke-virtual/range {v4 .. v9}, Landroidx/recyclerview/widget/h;->calculateDtToFit(IIIII)I
 
     move-result p1
@@ -343,7 +315,6 @@
 .method protected calculateSpeedPerPixel(Landroid/util/DisplayMetrics;)F
     .locals 1
 
-    .line 1
     iget p1, p1, Landroid/util/DisplayMetrics;->densityDpi:I
 
     int-to-float p1, p1
@@ -358,7 +329,6 @@
 .method protected calculateTimeForDeceleration(I)I
     .locals 4
 
-    .line 1
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/h;->calculateTimeForScrolling(I)I
 
     move-result p1
@@ -381,7 +351,6 @@
 .method protected calculateTimeForScrolling(I)I
     .locals 2
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
     move-result p1
@@ -408,7 +377,6 @@
 .method protected getHorizontalSnapPreference()I
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/h;->mTargetVector:Landroid/graphics/PointF;
 
     if-eqz v0, :cond_2
@@ -448,7 +416,6 @@
 .method protected getVerticalSnapPreference()I
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/h;->mTargetVector:Landroid/graphics/PointF;
 
     if-eqz v0, :cond_2
@@ -488,19 +455,16 @@
 .method protected onSeekTargetStep(IILandroidx/recyclerview/widget/RecyclerView$v;Landroidx/recyclerview/widget/RecyclerView$u$a;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$u;->getChildCount()I
 
     move-result p3
 
     if-nez p3, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$u;->stop()V
 
     return-void
 
-    .line 3
     :cond_0
     iget p3, p0, Landroidx/recyclerview/widget/h;->mInterimTargetDx:I
 
@@ -510,7 +474,6 @@
 
     iput p1, p0, Landroidx/recyclerview/widget/h;->mInterimTargetDx:I
 
-    .line 4
     iget p1, p0, Landroidx/recyclerview/widget/h;->mInterimTargetDy:I
 
     invoke-direct {p0, p1, p2}, Landroidx/recyclerview/widget/h;->clampApplyScroll(II)I
@@ -519,14 +482,12 @@
 
     iput p1, p0, Landroidx/recyclerview/widget/h;->mInterimTargetDy:I
 
-    .line 5
     iget p2, p0, Landroidx/recyclerview/widget/h;->mInterimTargetDx:I
 
     if-nez p2, :cond_1
 
     if-nez p1, :cond_1
 
-    .line 6
     invoke-virtual {p0, p4}, Landroidx/recyclerview/widget/h;->updateActionForInterimTarget(Landroidx/recyclerview/widget/RecyclerView$u$a;)V
 
     :cond_1
@@ -544,14 +505,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Landroidx/recyclerview/widget/h;->mInterimTargetDy:I
 
     iput v0, p0, Landroidx/recyclerview/widget/h;->mInterimTargetDx:I
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Landroidx/recyclerview/widget/h;->mTargetVector:Landroid/graphics/PointF;
 
     return-void
@@ -560,7 +519,6 @@
 .method protected onTargetFound(Landroid/view/View;Landroidx/recyclerview/widget/RecyclerView$v;Landroidx/recyclerview/widget/RecyclerView$u$a;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroidx/recyclerview/widget/h;->getHorizontalSnapPreference()I
 
     move-result p2
@@ -569,7 +527,6 @@
 
     move-result p2
 
-    .line 2
     invoke-virtual {p0}, Landroidx/recyclerview/widget/h;->getVerticalSnapPreference()I
 
     move-result v0
@@ -586,14 +543,12 @@
 
     int-to-double v0, v0
 
-    .line 3
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
 
     double-to-int v0, v0
 
-    .line 4
     invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/h;->calculateTimeForDeceleration(I)I
 
     move-result v0
@@ -604,7 +559,6 @@
 
     neg-int p1, p1
 
-    .line 5
     iget-object v1, p0, Landroidx/recyclerview/widget/h;->mDecelerateInterpolator:Landroid/view/animation/DecelerateInterpolator;
 
     invoke-virtual {p3, p2, p1, v0, v1}, Landroidx/recyclerview/widget/RecyclerView$u$a;->a(IIILandroid/view/animation/Interpolator;)V
@@ -616,7 +570,6 @@
 .method protected updateActionForInterimTarget(Landroidx/recyclerview/widget/RecyclerView$u$a;)V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$u;->getTargetPosition()I
 
     move-result v0
@@ -627,7 +580,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget v1, v0, Landroid/graphics/PointF;->x:F
 
     const/4 v2, 0x0
@@ -644,14 +596,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/RecyclerView$u;->normalize(Landroid/graphics/PointF;)V
 
-    .line 4
     iput-object v0, p0, Landroidx/recyclerview/widget/h;->mTargetVector:Landroid/graphics/PointF;
 
-    .line 5
     iget v1, v0, Landroid/graphics/PointF;->x:F
 
     const v2, 0x461c4000    # 10000.0f
@@ -662,7 +611,6 @@
 
     iput v1, p0, Landroidx/recyclerview/widget/h;->mInterimTargetDx:I
 
-    .line 6
     iget v0, v0, Landroid/graphics/PointF;->y:F
 
     mul-float v0, v0, v2
@@ -673,12 +621,10 @@
 
     const/16 v0, 0x2710
 
-    .line 7
     invoke-virtual {p0, v0}, Landroidx/recyclerview/widget/h;->calculateTimeForScrolling(I)I
 
     move-result v0
 
-    .line 8
     iget v1, p0, Landroidx/recyclerview/widget/h;->mInterimTargetDx:I
 
     int-to-float v1, v1
@@ -709,17 +655,14 @@
 
     return-void
 
-    .line 9
     :cond_1
     :goto_0
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$u;->getTargetPosition()I
 
     move-result v0
 
-    .line 10
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView$u$a;->a(I)V
 
-    .line 11
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$u;->stop()V
 
     return-void

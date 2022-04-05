@@ -1,6 +1,5 @@
 .class final Lokio/Pipe$PipeSink;
 .super Ljava/lang/Object;
-.source "Pipe.java"
 
 # interfaces
 .implements Lokio/Sink;
@@ -27,12 +26,10 @@
 .method constructor <init>(Lokio/Pipe;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance p1, Lokio/Timeout;
 
     invoke-direct {p1}, Lokio/Timeout;-><init>()V
@@ -52,14 +49,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
     iget-object v0, v0, Lokio/Pipe;->buffer:Lokio/Buffer;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
@@ -71,7 +66,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
@@ -104,7 +98,6 @@
 
     throw v1
 
-    .line 4
     :cond_2
     :goto_0
     iget-object v1, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
@@ -113,14 +106,12 @@
 
     iput-boolean v2, v1, Lokio/Pipe;->sinkClosed:Z
 
-    .line 5
     iget-object v1, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
     iget-object v1, v1, Lokio/Pipe;->buffer:Lokio/Buffer;
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 6
     monitor-exit v0
 
     return-void
@@ -143,14 +134,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
     iget-object v0, v0, Lokio/Pipe;->buffer:Lokio/Buffer;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
@@ -158,7 +147,6 @@
 
     if-nez v1, :cond_2
 
-    .line 3
     iget-object v1, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
     iget-boolean v1, v1, Lokio/Pipe;->sourceClosed:Z
@@ -190,14 +178,12 @@
 
     throw v1
 
-    .line 4
     :cond_1
     :goto_0
     monitor-exit v0
 
     return-void
 
-    .line 5
     :cond_2
     new-instance v1, Ljava/lang/IllegalStateException;
 
@@ -210,7 +196,6 @@
     :catchall_0
     move-exception v1
 
-    .line 6
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -221,7 +206,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/Pipe$PipeSink;->timeout:Lokio/Timeout;
 
     return-object v0
@@ -235,14 +219,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
     iget-object v0, v0, Lokio/Pipe;->buffer:Lokio/Buffer;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
@@ -257,14 +239,12 @@
 
     if-lez v3, :cond_2
 
-    .line 3
     iget-object v3, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
     iget-boolean v3, v3, Lokio/Pipe;->sourceClosed:Z
 
     if-nez v3, :cond_1
 
-    .line 4
     iget-object v3, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
     iget-wide v3, v3, Lokio/Pipe;->maxBufferSize:J
@@ -283,7 +263,6 @@
 
     if-nez v5, :cond_0
 
-    .line 5
     iget-object v1, p0, Lokio/Pipe$PipeSink;->timeout:Lokio/Timeout;
 
     iget-object v2, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
@@ -294,13 +273,11 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-static {v3, v4, p2, p3}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v1
 
-    .line 7
     iget-object v3, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
     iget-object v3, v3, Lokio/Pipe;->buffer:Lokio/Buffer;
@@ -309,7 +286,6 @@
 
     sub-long/2addr p2, v1
 
-    .line 8
     iget-object v1, p0, Lokio/Pipe$PipeSink;->this$0:Lokio/Pipe;
 
     iget-object v1, v1, Lokio/Pipe;->buffer:Lokio/Buffer;
@@ -318,7 +294,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     new-instance p1, Ljava/io/IOException;
 
@@ -328,13 +303,11 @@
 
     throw p1
 
-    .line 10
     :cond_2
     monitor-exit v0
 
     return-void
 
-    .line 11
     :cond_3
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -347,7 +320,6 @@
     :catchall_0
     move-exception p1
 
-    .line 12
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

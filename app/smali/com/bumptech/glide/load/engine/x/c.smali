@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/engine/x/c;
 .super Ljava/lang/Object;
-.source "AttributeStrategy.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/x/l;
@@ -34,17 +33,14 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/bumptech/glide/load/engine/x/c$b;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/engine/x/c$b;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/load/engine/x/c;->a:Lcom/bumptech/glide/load/engine/x/c$b;
 
-    .line 3
     new-instance v0, Lcom/bumptech/glide/load/engine/x/h;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/engine/x/h;-><init>()V
@@ -57,7 +53,6 @@
 .method static c(IILandroid/graphics/Bitmap$Config;)Ljava/lang/String;
     .locals 2
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -90,7 +85,6 @@
 .method private static d(Landroid/graphics/Bitmap;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v0
@@ -115,14 +109,12 @@
 .method public a(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/c;->a:Lcom/bumptech/glide/load/engine/x/c$b;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/bumptech/glide/load/engine/x/c$b;->a(IILandroid/graphics/Bitmap$Config;)Lcom/bumptech/glide/load/engine/x/c$a;
 
     move-result-object p1
 
-    .line 4
     iget-object p2, p0, Lcom/bumptech/glide/load/engine/x/c;->b:Lcom/bumptech/glide/load/engine/x/h;
 
     invoke-virtual {p2, p1}, Lcom/bumptech/glide/load/engine/x/h;->a(Lcom/bumptech/glide/load/engine/x/m;)Ljava/lang/Object;
@@ -137,7 +129,6 @@
 .method public a(Landroid/graphics/Bitmap;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/c;->a:Lcom/bumptech/glide/load/engine/x/c$b;
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
@@ -156,7 +147,6 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/bumptech/glide/load/engine/x/c;->b:Lcom/bumptech/glide/load/engine/x/h;
 
     invoke-virtual {v1, v0, p1}, Lcom/bumptech/glide/load/engine/x/h;->a(Lcom/bumptech/glide/load/engine/x/m;Ljava/lang/Object;)V
@@ -167,7 +157,6 @@
 .method public b(Landroid/graphics/Bitmap;)I
     .locals 0
 
-    .line 2
     invoke-static {p1}, Lcom/bumptech/glide/util/j;->a(Landroid/graphics/Bitmap;)I
 
     move-result p1
@@ -178,7 +167,6 @@
 .method public b(IILandroid/graphics/Bitmap$Config;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-static {p1, p2, p3}, Lcom/bumptech/glide/load/engine/x/c;->c(IILandroid/graphics/Bitmap$Config;)Ljava/lang/String;
 
     move-result-object p1
@@ -189,7 +177,6 @@
 .method public c(Landroid/graphics/Bitmap;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/bumptech/glide/load/engine/x/c;->d(Landroid/graphics/Bitmap;)Ljava/lang/String;
 
     move-result-object p1
@@ -200,7 +187,6 @@
 .method public removeLast()Landroid/graphics/Bitmap;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/c;->b:Lcom/bumptech/glide/load/engine/x/h;
 
     invoke-virtual {v0}, Lcom/bumptech/glide/load/engine/x/h;->a()Ljava/lang/Object;
@@ -215,7 +201,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

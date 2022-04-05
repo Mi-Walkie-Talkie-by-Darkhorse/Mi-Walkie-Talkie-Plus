@@ -1,6 +1,5 @@
 .class final Lcom/google/common/reflect/ClassPath$1;
 .super Ljava/lang/Object;
-.source "ClassPath.java"
 
 # interfaces
 .implements Lcom/google/common/base/Predicate;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public apply(Lcom/google/common/reflect/ClassPath$ClassInfo;)Z
     .locals 1
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/reflect/ClassPath$ClassInfo;->access$000(Lcom/google/common/reflect/ClassPath$ClassInfo;)Ljava/lang/String;
 
     move-result-object p1
@@ -70,7 +67,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/common/reflect/ClassPath$ClassInfo;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/ClassPath$1;->apply(Lcom/google/common/reflect/ClassPath$ClassInfo;)Z

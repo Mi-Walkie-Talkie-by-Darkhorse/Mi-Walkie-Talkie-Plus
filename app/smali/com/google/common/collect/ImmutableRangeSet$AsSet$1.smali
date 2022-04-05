@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;
 .super Lcom/google/common/collect/AbstractIterator;
-.source "ImmutableRangeSet.java"
 
 
 # annotations
@@ -48,12 +47,10 @@
 .method constructor <init>(Lcom/google/common/collect/ImmutableRangeSet$AsSet;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->this$1:Lcom/google/common/collect/ImmutableRangeSet$AsSet;
 
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
-    .line 2
     iget-object p1, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->this$1:Lcom/google/common/collect/ImmutableRangeSet$AsSet;
 
     iget-object p1, p1, Lcom/google/common/collect/ImmutableRangeSet$AsSet;->this$0:Lcom/google/common/collect/ImmutableRangeSet;
@@ -68,7 +65,6 @@
 
     iput-object p1, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->rangeItr:Ljava/util/Iterator;
 
-    .line 3
     invoke-static {}, Lcom/google/common/collect/Iterators;->emptyIterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p1
@@ -88,7 +84,6 @@
         }
     .end annotation
 
-    .line 2
     :goto_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->elemItr:Ljava/util/Iterator;
 
@@ -98,7 +93,6 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->rangeItr:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -107,7 +101,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->rangeItr:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -134,7 +127,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractIterator;->endOfData()Ljava/lang/Object;
 
@@ -144,7 +136,6 @@
 
     return-object v0
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->elemItr:Ljava/util/Iterator;
 
@@ -160,7 +151,6 @@
 .method protected bridge synthetic computeNext()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableRangeSet$AsSet$1;->computeNext()Ljava/lang/Comparable;
 
     move-result-object v0

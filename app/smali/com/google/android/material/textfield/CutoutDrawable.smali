@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/textfield/CutoutDrawable;
 .super Lcom/google/android/material/shape/MaterialShapeDrawable;
-.source "CutoutDrawable.java"
 
 
 # instance fields
@@ -23,7 +22,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/material/textfield/CutoutDrawable;-><init>(Lcom/google/android/material/shape/ShapeAppearanceModel;)V
 
     return-void
@@ -40,7 +38,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance p1, Lcom/google/android/material/shape/ShapeAppearanceModel;
 
@@ -49,7 +46,6 @@
     :goto_0
     invoke-direct {p0, p1}, Lcom/google/android/material/shape/MaterialShapeDrawable;-><init>(Lcom/google/android/material/shape/ShapeAppearanceModel;)V
 
-    .line 3
     new-instance p1, Landroid/graphics/Paint;
 
     const/4 v0, 0x1
@@ -58,10 +54,8 @@
 
     iput-object p1, p0, Lcom/google/android/material/textfield/CutoutDrawable;->cutoutPaint:Landroid/graphics/Paint;
 
-    .line 4
     invoke-direct {p0}, Lcom/google/android/material/textfield/CutoutDrawable;->setPaintStyles()V
 
-    .line 5
     new-instance p1, Landroid/graphics/RectF;
 
     invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
@@ -78,7 +72,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 
     move-result-object v0
@@ -89,7 +82,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget v0, p0, Lcom/google/android/material/textfield/CutoutDrawable;->savedLayer:I
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->restoreToCount(I)V
@@ -105,22 +97,18 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 
     move-result-object v0
 
-    .line 2
     invoke-direct {p0, v0}, Lcom/google/android/material/textfield/CutoutDrawable;->useHardwareLayer(Landroid/graphics/drawable/Drawable$Callback;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 3
     check-cast v0, Landroid/view/View;
 
-    .line 4
     invoke-virtual {v0}, Landroid/view/View;->getLayerType()I
 
     move-result p1
@@ -131,12 +119,10 @@
 
     const/4 p1, 0x0
 
-    .line 5
     invoke-virtual {v0, v1, p1}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/android/material/textfield/CutoutDrawable;->saveCanvasLayer(Landroid/graphics/Canvas;)V
 
@@ -152,7 +138,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
@@ -163,7 +148,6 @@
 
     const/4 v4, 0x0
 
-    .line 2
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getWidth()I
 
     move-result v0
@@ -193,7 +177,6 @@
 
     const/4 v2, 0x0
 
-    .line 3
     invoke-virtual {p1}, Landroid/graphics/Canvas;->getWidth()I
 
     move-result v0
@@ -225,21 +208,18 @@
 .method private setPaintStyles()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/textfield/CutoutDrawable;->cutoutPaint:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL_AND_STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/textfield/CutoutDrawable;->cutoutPaint:Landroid/graphics/Paint;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/textfield/CutoutDrawable;->cutoutPaint:Landroid/graphics/Paint;
 
     new-instance v1, Landroid/graphics/PorterDuffXfermode;
@@ -256,7 +236,6 @@
 .method private useHardwareLayer(Landroid/graphics/drawable/Drawable$Callback;)Z
     .locals 0
 
-    .line 1
     instance-of p1, p1, Landroid/view/View;
 
     return p1
@@ -271,20 +250,16 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/textfield/CutoutDrawable;->preDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     invoke-super {p0, p1}, Lcom/google/android/material/shape/MaterialShapeDrawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/textfield/CutoutDrawable;->cutoutBounds:Landroid/graphics/RectF;
 
     iget-object v1, p0, Lcom/google/android/material/textfield/CutoutDrawable;->cutoutPaint:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
-    .line 4
     invoke-direct {p0, p1}, Lcom/google/android/material/textfield/CutoutDrawable;->postDraw(Landroid/graphics/Canvas;)V
 
     return-void
@@ -293,7 +268,6 @@
 .method hasCutout()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/textfield/CutoutDrawable;->cutoutBounds:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->isEmpty()Z
@@ -310,7 +284,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0, v0, v0, v0}, Lcom/google/android/material/textfield/CutoutDrawable;->setCutout(FFFF)V
 
     return-void
@@ -319,7 +292,6 @@
 .method setCutout(FFFF)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/textfield/CutoutDrawable;->cutoutBounds:Landroid/graphics/RectF;
 
     iget v1, v0, Landroid/graphics/RectF;->left:F
@@ -346,13 +318,11 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/textfield/CutoutDrawable;->cutoutBounds:Landroid/graphics/RectF;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->invalidateSelf()V
 
     :cond_1
@@ -366,7 +336,6 @@
         .end annotation
     .end param
 
-    .line 4
     iget v0, p1, Landroid/graphics/RectF;->left:F
 
     iget v1, p1, Landroid/graphics/RectF;->top:F

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/trace/TraceStatusListener;
 .super Ljava/lang/Object;
-.source "TraceStatusListener.java"
 
 
 # virtual methods

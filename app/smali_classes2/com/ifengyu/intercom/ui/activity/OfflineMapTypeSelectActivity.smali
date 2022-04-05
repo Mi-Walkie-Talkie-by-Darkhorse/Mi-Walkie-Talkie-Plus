@@ -1,13 +1,11 @@
 .class public Lcom/ifengyu/intercom/ui/activity/OfflineMapTypeSelectActivity;
 .super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
-.source "OfflineMapTypeSelectActivity.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;-><init>()V
 
     return-void
@@ -16,14 +14,12 @@
 .method private w()V
     .locals 5
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->r()[D
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 2
     aget-wide v1, v0, v1
 
     const/4 v3, 0x1
@@ -44,7 +40,6 @@
 .method public gaodeMapDownloadClicked(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     new-instance p1, Landroid/content/Intent;
 
     const-class v0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapDownLoadedActivity;
@@ -59,7 +54,6 @@
 .method public googleMapDownloadClicked(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     new-instance p1, Landroid/content/Intent;
 
     const-class v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
@@ -74,17 +68,14 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c003d
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->setContentView(I)V
 
     const p1, 0x7f09041d
 
-    .line 3
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -101,7 +92,6 @@
 
     const p1, 0x7f090419
 
-    .line 4
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -112,7 +102,6 @@
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 5
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/OfflineMapTypeSelectActivity;->w()V
 
     return-void

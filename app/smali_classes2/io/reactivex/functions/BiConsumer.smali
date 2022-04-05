@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/functions/BiConsumer;
 .super Ljava/lang/Object;
-.source "BiConsumer.java"
 
 
 # annotations

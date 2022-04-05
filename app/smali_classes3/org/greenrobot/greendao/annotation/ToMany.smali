@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/greenrobot/greendao/annotation/ToMany;
 .super Ljava/lang/Object;
-.source "ToMany.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

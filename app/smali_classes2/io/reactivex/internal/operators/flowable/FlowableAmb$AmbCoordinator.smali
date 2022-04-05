@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;
 .super Ljava/lang/Object;
-.source "FlowableAmb.java"
 
 # interfaces
 .implements Lc/a/d;
@@ -61,20 +60,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
     iput-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 3
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->downstream:Lc/a/c;
 
-    .line 4
     new-array p1, p2, [Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;
 
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->subscribers:[Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;
@@ -87,7 +82,6 @@
 .method public cancel()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -98,12 +92,10 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->lazySet(I)V
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->subscribers:[Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;
 
     array-length v1, v0
@@ -115,7 +107,6 @@
 
     aget-object v3, v0, v2
 
-    .line 4
     invoke-virtual {v3}, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;->cancel()V
 
     add-int/lit8 v2, v2, 0x1
@@ -129,14 +120,12 @@
 .method public request(J)V
     .locals 4
 
-    .line 1
     invoke-static {p1, p2}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(J)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -145,7 +134,6 @@
 
     if-lez v0, :cond_0
 
-    .line 3
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->subscribers:[Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;
 
     add-int/lit8 v0, v0, -0x1
@@ -159,7 +147,6 @@
     :cond_0
     if-nez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->subscribers:[Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;
 
     array-length v1, v0
@@ -171,7 +158,6 @@
 
     aget-object v3, v0, v2
 
-    .line 5
     invoke-virtual {v3, p1, p2}, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;->request(J)V
 
     add-int/lit8 v2, v2, 0x1
@@ -193,10 +179,8 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->subscribers:[Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;
 
-    .line 2
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -206,7 +190,6 @@
     :goto_0
     if-ge v3, v1, :cond_0
 
-    .line 3
     new-instance v4, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;
 
     add-int/lit8 v5, v3, 0x1
@@ -221,13 +204,11 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v3, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v3, v2}, Ljava/util/concurrent/atomic/AtomicInteger;->lazySet(I)V
 
-    .line 5
     iget-object v3, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->downstream:Lc/a/c;
 
     invoke-interface {v3, p0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
@@ -235,7 +216,6 @@
     :goto_1
     if-ge v2, v1, :cond_2
 
-    .line 6
     iget-object v3, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -246,7 +226,6 @@
 
     return-void
 
-    .line 7
     :cond_1
     aget-object v3, p1, v2
 
@@ -265,7 +244,6 @@
 .method public win(I)Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -276,7 +254,6 @@
 
     if-nez v0, :cond_2
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0, v1, p1}, Ljava/util/concurrent/atomic/AtomicInteger;->compareAndSet(II)Z
@@ -285,10 +262,8 @@
 
     if-eqz v0, :cond_2
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbCoordinator;->subscribers:[Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;
 
-    .line 4
     array-length v2, v0
 
     :goto_0
@@ -298,7 +273,6 @@
 
     if-eq v3, p1, :cond_0
 
-    .line 5
     aget-object v1, v0, v1
 
     invoke-virtual {v1}, Lio/reactivex/internal/operators/flowable/FlowableAmb$AmbInnerSubscriber;->cancel()V

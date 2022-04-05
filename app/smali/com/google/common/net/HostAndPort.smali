@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/net/HostAndPort;
 .super Ljava/lang/Object;
-.source "HostAndPort.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -35,16 +34,12 @@
 .method private constructor <init>(Ljava/lang/String;IZ)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/net/HostAndPort;->host:Ljava/lang/String;
 
-    .line 3
     iput p2, p0, Lcom/google/common/net/HostAndPort;->port:I
 
-    .line 4
     iput-boolean p3, p0, Lcom/google/common/net/HostAndPort;->hasBracketlessColons:Z
 
     return-void
@@ -53,12 +48,10 @@
 .method public static fromHost(Ljava/lang/String;)Lcom/google/common/net/HostAndPort;
     .locals 4
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/net/HostAndPort;->fromString(Ljava/lang/String;)Lcom/google/common/net/HostAndPort;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Lcom/google/common/net/HostAndPort;->hasPort()Z
 
     move-result v1
@@ -83,7 +76,6 @@
 .method public static fromParts(Ljava/lang/String;I)Lcom/google/common/net/HostAndPort;
     .locals 5
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/net/HostAndPort;->isValidPort(I)Z
 
     move-result v0
@@ -104,12 +96,10 @@
 
     invoke-static {v0, v3, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/net/HostAndPort;->fromString(Ljava/lang/String;)Lcom/google/common/net/HostAndPort;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Lcom/google/common/net/HostAndPort;->hasPort()Z
 
     move-result v2
@@ -124,7 +114,6 @@
 
     invoke-static {v2, p0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 4
     new-instance p0, Lcom/google/common/net/HostAndPort;
 
     iget-object v1, v0, Lcom/google/common/net/HostAndPort;->host:Ljava/lang/String;
@@ -139,12 +128,10 @@
 .method public static fromString(Ljava/lang/String;)Lcom/google/common/net/HostAndPort;
     .locals 9
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "["
 
-    .line 2
     invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
@@ -157,15 +144,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-static {p0}, Lcom/google/common/net/HostAndPort;->getHostAndPortFromBracketedHost(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4
     aget-object v4, v0, v3
 
-    .line 5
     aget-object v0, v0, v2
 
     :goto_0
@@ -178,7 +162,6 @@
     :cond_0
     const/16 v0, 0x3a
 
-    .line 6
     invoke-virtual {p0, v0}, Ljava/lang/String;->indexOf(I)I
 
     move-result v4
@@ -187,19 +170,16 @@
 
     add-int/lit8 v5, v4, 0x1
 
-    .line 7
     invoke-virtual {p0, v0, v5}, Ljava/lang/String;->indexOf(II)I
 
     move-result v0
 
     if-ne v0, v1, :cond_1
 
-    .line 8
     invoke-virtual {p0, v3, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 9
     invoke-virtual {p0, v5}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v0
@@ -227,7 +207,6 @@
 
     move-object v0, v8
 
-    .line 10
     :goto_2
     invoke-static {v0}, Lcom/google/common/base/Strings;->isNullOrEmpty(Ljava/lang/String;)Z
 
@@ -237,7 +216,6 @@
 
     const-string v1, "+"
 
-    .line 11
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
@@ -252,7 +230,6 @@
 
     invoke-static {v1, v7, v6}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 12
     :try_start_0
     invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
@@ -260,7 +237,6 @@
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 13
     invoke-static {v1}, Lcom/google/common/net/HostAndPort;->isValidPort(I)Z
 
     move-result v0
@@ -275,7 +251,6 @@
 
     goto :goto_4
 
-    .line 14
     :catch_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -307,7 +282,6 @@
 
     throw v0
 
-    .line 15
     :cond_4
     :goto_4
     new-instance p0, Lcom/google/common/net/HostAndPort;
@@ -322,7 +296,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -351,14 +324,12 @@
 
     const/16 v1, 0x3a
 
-    .line 2
     invoke-virtual {p0, v1}, Ljava/lang/String;->indexOf(I)I
 
     move-result v3
 
     const/16 v4, 0x5d
 
-    .line 3
     invoke-virtual {p0, v4}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v4
@@ -383,17 +354,14 @@
 
     const-string v6, "Invalid bracketed host/port: %s"
 
-    .line 4
     invoke-static {v3, v6, v5}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 5
     invoke-virtual {p0, v2, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v3
 
     add-int/lit8 v5, v4, 0x1
 
-    .line 6
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v6
@@ -412,7 +380,6 @@
 
     return-object p0
 
-    .line 7
     :cond_2
     invoke-virtual {p0, v5}, Ljava/lang/String;->charAt(I)C
 
@@ -440,7 +407,6 @@
 
     move v1, v4
 
-    .line 8
     :goto_3
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -448,7 +414,6 @@
 
     if-ge v1, v5, :cond_4
 
-    .line 9
     invoke-virtual {p0, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
@@ -474,7 +439,6 @@
 
     aput-object v3, v1, v0
 
-    .line 10
     invoke-virtual {p0, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
@@ -519,7 +483,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/google/common/net/HostAndPort;
 
@@ -527,10 +490,8 @@
 
     if-eqz v1, :cond_2
 
-    .line 2
     check-cast p1, Lcom/google/common/net/HostAndPort;
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/net/HostAndPort;->host:Ljava/lang/String;
 
     iget-object v3, p1, Lcom/google/common/net/HostAndPort;->host:Ljava/lang/String;
@@ -568,7 +529,6 @@
 .method public getHostText()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/net/HostAndPort;->host:Ljava/lang/String;
 
     return-object v0
@@ -577,14 +537,12 @@
 .method public getPort()I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/net/HostAndPort;->hasPort()Z
 
     move-result v0
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 2
     iget v0, p0, Lcom/google/common/net/HostAndPort;->port:I
 
     return v0
@@ -593,7 +551,6 @@
 .method public getPortOrDefault(I)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/net/HostAndPort;->hasPort()Z
 
     move-result v0
@@ -609,7 +566,6 @@
 .method public hasPort()Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/net/HostAndPort;->port:I
 
     if-ltz v0, :cond_0
@@ -632,7 +588,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-object v1, p0, Lcom/google/common/net/HostAndPort;->host:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -669,7 +624,6 @@
 .method public requireBracketsForIPv6()Lcom/google/common/net/HostAndPort;
     .locals 4
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/common/net/HostAndPort;->hasBracketlessColons:Z
 
     const/4 v1, 0x1
@@ -694,7 +648,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     iget-object v1, p0, Lcom/google/common/net/HostAndPort;->host:Ljava/lang/String;
@@ -707,7 +660,6 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 2
     iget-object v1, p0, Lcom/google/common/net/HostAndPort;->host:Ljava/lang/String;
 
     const/16 v2, 0x3a
@@ -720,7 +672,6 @@
 
     const/16 v1, 0x5b
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     iget-object v1, p0, Lcom/google/common/net/HostAndPort;->host:Ljava/lang/String;
@@ -733,13 +684,11 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/google/common/net/HostAndPort;->host:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
     :goto_0
     invoke-virtual {p0}, Lcom/google/common/net/HostAndPort;->hasPort()Z
 
@@ -747,14 +696,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 6
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     iget v1, p0, Lcom/google/common/net/HostAndPort;->port:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 7
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -766,14 +713,12 @@
 .method public withDefaultPort(I)Lcom/google/common/net/HostAndPort;
     .locals 3
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/net/HostAndPort;->isValidPort(I)Z
 
     move-result v0
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/net/HostAndPort;->hasPort()Z
 
     move-result v0
@@ -786,7 +731,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/google/common/net/HostAndPort;
 

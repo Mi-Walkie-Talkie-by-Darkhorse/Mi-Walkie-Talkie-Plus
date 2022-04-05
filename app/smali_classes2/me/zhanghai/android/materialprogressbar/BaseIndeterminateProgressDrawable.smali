@@ -1,6 +1,5 @@
 .class abstract Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;
 .super Lme/zhanghai/android/materialprogressbar/BaseProgressDrawable;
-.source "BaseIndeterminateProgressDrawable.java"
 
 # interfaces
 .implements Landroid/graphics/drawable/Animatable;
@@ -19,10 +18,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lme/zhanghai/android/materialprogressbar/BaseProgressDrawable;-><init>()V
 
-    .line 2
     sget v0, Lme/zhanghai/android/materialprogressbar/R$attr;->colorControlActivated:I
 
     const/high16 v1, -0x1000000
@@ -31,7 +28,6 @@
 
     move-result p1
 
-    .line 3
     invoke-virtual {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->setTint(I)V
 
     return-void
@@ -40,7 +36,6 @@
 .method private isStarted()Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;->mAnimators:[Landroid/animation/Animator;
 
     array-length v1, v0
@@ -54,7 +49,6 @@
 
     aget-object v4, v0, v3
 
-    .line 2
     invoke-virtual {v4}, Landroid/animation/Animator;->isStarted()Z
 
     move-result v4
@@ -79,17 +73,14 @@
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 2
     invoke-direct {p0}, Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;->isStarted()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     :cond_0
@@ -99,7 +90,6 @@
 .method public isRunning()Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;->mAnimators:[Landroid/animation/Animator;
 
     array-length v1, v0
@@ -113,7 +103,6 @@
 
     aget-object v4, v0, v3
 
-    .line 2
     invoke-virtual {v4}, Landroid/animation/Animator;->isRunning()Z
 
     move-result v4
@@ -136,7 +125,6 @@
 .method public start()V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;->isStarted()Z
 
     move-result v0
@@ -145,7 +133,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;->mAnimators:[Landroid/animation/Animator;
 
@@ -158,14 +145,12 @@
 
     aget-object v3, v0, v2
 
-    .line 3
     invoke-virtual {v3}, Landroid/animation/Animator;->start()V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 4
     :cond_1
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
@@ -175,7 +160,6 @@
 .method public stop()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;->mAnimators:[Landroid/animation/Animator;
 
     array-length v1, v0
@@ -187,7 +171,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-virtual {v3}, Landroid/animation/Animator;->end()V
 
     add-int/lit8 v2, v2, 0x1

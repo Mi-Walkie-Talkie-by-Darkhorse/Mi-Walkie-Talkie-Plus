@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/btle/BtleCentralService$a;
 .super Landroid/os/Binder;
-.source "BtleCentralService.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/node/btle/BtleCentralService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btle/BtleCentralService$a;->a:Lcom/ifengyu/intercom/node/btle/BtleCentralService;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
@@ -35,7 +33,6 @@
 .method public a()Lcom/ifengyu/intercom/node/ConnectionConfiguration;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/BtleCentralService$a;->a:Lcom/ifengyu/intercom/node/btle/BtleCentralService;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/btle/BtleCentralService;->c()Lcom/ifengyu/intercom/node/ConnectionConfiguration;

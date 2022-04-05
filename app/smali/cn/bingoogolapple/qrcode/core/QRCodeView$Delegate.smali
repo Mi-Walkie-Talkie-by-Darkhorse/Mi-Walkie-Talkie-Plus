@@ -1,6 +1,5 @@
 .class public interface abstract Lcn/bingoogolapple/qrcode/core/QRCodeView$Delegate;
 .super Ljava/lang/Object;
-.source "QRCodeView.java"
 
 
 # annotations

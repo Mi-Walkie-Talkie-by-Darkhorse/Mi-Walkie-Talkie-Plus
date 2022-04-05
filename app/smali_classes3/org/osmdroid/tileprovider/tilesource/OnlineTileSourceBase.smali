@@ -1,6 +1,5 @@
 .class public abstract Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 .super Lorg/osmdroid/tileprovider/tilesource/BitmapTileSourceBase;
-.source "OnlineTileSourceBase.java"
 
 
 # instance fields
@@ -27,7 +26,6 @@
 
     move-object v6, p6
 
-    .line 1
     invoke-direct/range {v0 .. v7}, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;-><init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -50,10 +48,8 @@
 
     move-object v6, p7
 
-    .line 2
     invoke-direct/range {v0 .. v6}, Lorg/osmdroid/tileprovider/tilesource/BitmapTileSourceBase;-><init>(Ljava/lang/String;IIILjava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     iput-object p6, p0, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;->mBaseUrls:[Ljava/lang/String;
 
     return-void
@@ -64,7 +60,6 @@
 .method public getBaseUrl()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;->mBaseUrls:[Ljava/lang/String;
 
     iget-object v1, p0, Lorg/osmdroid/tileprovider/tilesource/BitmapTileSourceBase;->random:Ljava/util/Random;

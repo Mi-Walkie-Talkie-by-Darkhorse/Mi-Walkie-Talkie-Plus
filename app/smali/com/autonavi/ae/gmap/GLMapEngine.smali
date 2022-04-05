@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/GLMapEngine;
 .super Ljava/lang/Object;
-.source "GLMapEngine.java"
 
 # interfaces
 .implements Lcom/autonavi/ae/gmap/callback/JniIndoorCallback;
@@ -293,7 +292,6 @@
 
     const-string v0, "utf-8"
 
-    .line 1
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     move-result-object v0
@@ -306,94 +304,80 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/autonavi/amap/mapcore/interfaces/IAMap;)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->geometryReqMapGrids:Ljava/util/List;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->roadReqMapGrids:Ljava/util/List;
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->bldReqMapGrids:Ljava/util/List;
 
-    .line 5
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->regionReqMapGrids:Ljava/util/List;
 
-    .line 6
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->poiReqMapGrids:Ljava/util/List;
 
-    .line 7
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->versionMapGrids:Ljava/util/List;
 
-    .line 8
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->indoorMapGrids:Ljava/util/List;
 
-    .line 9
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->vectmcReqMapGirds:Ljava/util/List;
 
-    .line 10
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->stiReqMapGirds:Ljava/util/List;
 
-    .line 11
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapReqModels:Ljava/util/List;
 
-    .line 12
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->guideReqMapGirds:Ljava/util/List;
 
-    .line 13
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapHeatReqMapGirds:Ljava/util/List;
 
-    .line 14
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -402,151 +386,116 @@
 
     const/4 v0, 0x0
 
-    .line 15
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mEagleEyeScreenGirds:Ljava/util/List;
 
     const/4 v1, 0x0
 
-    .line 16
     iput v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGridsCount:I
 
-    .line 17
     new-instance v2, Ljava/lang/Object;
 
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
     iput-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurGridFillLock:Ljava/lang/Object;
 
-    .line 18
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mContext:Landroid/content/Context;
 
-    .line 19
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mTextTextureGenerator:Lcom/autonavi/ae/gmap/utils/TextTextureGenerator;
 
-    .line 20
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mConnectionManager:Lcom/autonavi/ae/gmap/maploader/ConnectionManager;
 
-    .line 21
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mTileProcessCtrl:Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;
 
-    .line 22
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
-    .line 23
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mBoardDataListener:Lcom/autonavi/ae/gmap/listener/RouteBoardDataListener;
 
-    .line 24
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mScenicListener:Lcom/autonavi/ae/gmap/scenic/ScenicListener;
 
-    .line 25
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mMapListener:Lcom/autonavi/ae/gmap/listener/MapListener;
 
-    .line 26
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAMapListener:Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;
 
-    .line 27
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mMapHeatListener:Lcom/autonavi/ae/gmap/scenic/MapHeatListener;
 
-    .line 28
     new-instance v2, Ljava/util/Vector;
 
     invoke-direct {v2}, Ljava/util/Vector;-><init>()V
 
     iput-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateMessageList:Ljava/util/List;
 
-    .line 29
     new-instance v2, Ljava/util/Vector;
 
     invoke-direct {v2}, Ljava/util/Vector;-><init>()V
 
     iput-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAnimateStateMessageList:Ljava/util/List;
 
-    .line 30
     new-instance v2, Ljava/util/Vector;
 
     invoke-direct {v2}, Ljava/util/Vector;-><init>()V
 
     iput-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGestureMessageList:Ljava/util/List;
 
-    .line 31
     new-instance v2, Ljava/util/Vector;
 
     invoke-direct {v2}, Ljava/util/Vector;-><init>()V
 
     iput-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGestureEndMessageList:Ljava/util/List;
 
-    .line 32
     iput-boolean v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->canStopRender:Z
 
-    .line 33
     iput-boolean v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->isMoveCameraStep:Z
 
-    .line 34
     iput-boolean v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->isGestureStep:Z
 
-    .line 35
     iput v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_gesture_count:I
 
     const-wide/16 v2, 0x0
 
-    .line 36
     iput-wide v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
-    .line 37
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
-    .line 38
     new-instance v2, Ljava/lang/Object;
 
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
     iput-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mut_lock:Ljava/lang/Object;
 
-    .line 39
     iput v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mShowErrowTipCouont:I
 
     const-string v2, ""
 
-    .line 40
     iput-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mUserAgent:Ljava/lang/String;
 
-    .line 41
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_anims_mgr:Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
 
-    .line 42
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->copyGLMapState:Lcom/autonavi/ae/gmap/GLMapState;
 
-    .line 43
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCacheMgr:Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;
 
-    .line 44
     new-instance v0, Lcom/autonavi/ae/gmap/GLMapState;
 
     invoke-direct {v0}, Lcom/autonavi/ae/gmap/GLMapState;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->s:Lcom/autonavi/ae/gmap/GLMapState;
 
-    .line 45
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateSparseArray:Landroid/util/SparseArray;
 
-    .line 46
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mContext:Landroid/content/Context;
 
-    .line 47
     iput-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
-    .line 48
     new-instance p2, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
 
     invoke-direct {p2}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;-><init>()V
 
     iput-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_anims_mgr:Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
 
-    .line 49
     new-instance v0, Lcom/autonavi/ae/gmap/GLMapEngine$1;
 
     invoke-direct {v0, p0}, Lcom/autonavi/ae/gmap/GLMapEngine$1;-><init>(Lcom/autonavi/ae/gmap/GLMapEngine;)V
@@ -555,7 +504,6 @@
 
     const/16 p2, 0xc00
 
-    .line 50
     invoke-static {p2}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object p2
@@ -566,36 +514,30 @@
 
     iput-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->tmp_3072bytes_data:[B
 
-    .line 51
     new-instance p2, Lcom/autonavi/ae/gmap/utils/TextTextureGenerator;
 
     invoke-direct {p2}, Lcom/autonavi/ae/gmap/utils/TextTextureGenerator;-><init>()V
 
     iput-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mTextTextureGenerator:Lcom/autonavi/ae/gmap/utils/TextTextureGenerator;
 
-    .line 52
     invoke-virtual {p2}, Lcom/autonavi/ae/gmap/utils/TextTextureGenerator;->getFontVersion()Ljava/lang/String;
 
     move-result-object p2
 
     const-string v0, "Map_Assert"
 
-    .line 53
     invoke-virtual {p1, v0, v1}, Landroid/content/Context;->getDir(Ljava/lang/String;I)Ljava/io/File;
 
     move-result-object v0
 
-    .line 54
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 55
     invoke-virtual {v0}, Ljava/io/File;->mkdir()Z
 
-    .line 56
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -615,7 +557,6 @@
 
     move-result-object v0
 
-    .line 57
     sget v1, Lcom/autonavi/ae/gmap/GLMapEngine;->BUILDINGHEIGHT:I
 
     invoke-static {v0, p2, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeCreate(Ljava/lang/String;Ljava/lang/String;I)J
@@ -624,7 +565,6 @@
 
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
-    .line 58
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -659,7 +599,6 @@
 .method static synthetic access$000(Lcom/autonavi/ae/gmap/GLMapEngine;Lcom/amap/api/maps/AMap$CancelableCallback;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->doMapAnimationFinishCallback(Lcom/amap/api/maps/AMap$CancelableCallback;)V
 
     return-void
@@ -668,7 +607,6 @@
 .method static synthetic access$100(Lcom/autonavi/ae/gmap/GLMapEngine;)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     return-wide v0
@@ -677,7 +615,6 @@
 .method static synthetic access$1000(Lcom/autonavi/ae/gmap/GLMapEngine;)Lcom/autonavi/ae/gmap/scenic/ScenicListener;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mScenicListener:Lcom/autonavi/ae/gmap/scenic/ScenicListener;
 
     return-object p0
@@ -686,7 +623,6 @@
 .method static synthetic access$1100(IJIIII[B)Z
     .locals 0
 
-    .line 1
     invoke-static/range {p0 .. p7}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeMapDataControl(IJIIII[B)Z
 
     move-result p0
@@ -697,7 +633,6 @@
 .method static synthetic access$200(IJLjava/lang/String;I)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3, p4}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeUpdateStyleOrIcons(IJLjava/lang/String;I)V
 
     return-void
@@ -706,7 +641,6 @@
 .method static synthetic access$300(Lcom/autonavi/ae/gmap/GLMapEngine;)Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_anims_mgr:Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
 
     return-object p0
@@ -715,7 +649,6 @@
 .method static synthetic access$400(IJIIIIIZ)V
     .locals 0
 
-    .line 1
     invoke-static/range {p0 .. p8}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeAddGeoAndScreenCenterGroupAnimation(IJIIIIIZ)V
 
     return-void
@@ -724,7 +657,6 @@
 .method static synthetic access$500(IJ)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeClearAnimation(IJ)V
 
     return-void
@@ -733,7 +665,6 @@
 .method static synthetic access$600(IJIFIII)V
     .locals 0
 
-    .line 1
     invoke-static/range {p0 .. p7}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeAddZoomRotateAnimation(IJIFIII)V
 
     return-void
@@ -742,7 +673,6 @@
 .method static synthetic access$700(IJ)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeFinishAnimations(IJ)V
 
     return-void
@@ -751,7 +681,6 @@
 .method static synthetic access$800(IJIFII)V
     .locals 0
 
-    .line 1
     invoke-static/range {p0 .. p6}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeAddPivotZoomAnimation(IJIFII)V
 
     return-void
@@ -760,7 +689,6 @@
 .method static synthetic access$900(Lcom/autonavi/ae/gmap/GLMapEngine;)Lcom/autonavi/amap/mapcore/interfaces/IAMap;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     return-object p0
@@ -771,7 +699,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
@@ -779,7 +706,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 2
     :try_start_1
     sget-object v2, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -787,14 +713,12 @@
 
     invoke-virtual {p1, v2, v3, v1}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 3
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 4
     :try_start_2
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_2
@@ -805,7 +729,6 @@
     :catchall_0
     move-exception v0
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
@@ -814,7 +737,6 @@
     :catchall_1
     move-object v1, v0
 
-    .line 6
     :catchall_2
     :try_start_3
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->close()V
@@ -826,7 +748,6 @@
     :catchall_3
     move-exception p1
 
-    .line 7
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_1
@@ -847,7 +768,6 @@
 
     shl-long/2addr v0, v3
 
-    .line 1
     aget-byte v3, p0, v2
 
     and-int/lit16 v3, v3, 0xff
@@ -867,7 +787,6 @@
 .method public static destoryOverlay(IJ)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeDestoryOverlay(IJ)V
 
     return-void
@@ -880,13 +799,11 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMainHandler()Landroid/os/Handler;
 
     move-result-object v0
@@ -908,13 +825,11 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMainHandler()Landroid/os/Handler;
 
     move-result-object v0
@@ -937,7 +852,6 @@
         }
     .end annotation
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -948,13 +862,11 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurGridFillLock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -964,7 +876,6 @@
 
     invoke-static {p1, v1, v2, v3, v4}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetScreenGrids(IJ[BI)V
 
-    .line 4
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->tmp_3072bytes_data:[B
 
     const/4 v2, 0x0
@@ -975,7 +886,6 @@
 
     if-gtz v1, :cond_1
 
-    .line 5
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -990,7 +900,6 @@
 
     const/16 v1, 0xc8
 
-    .line 6
     :cond_2
     :try_start_2
     iput v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGridsCount:I
@@ -1001,14 +910,12 @@
 
     if-ne p1, v5, :cond_5
 
-    .line 7
     iget-object v6, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGirds:Ljava/util/List;
 
     if-eqz v6, :cond_4
 
     const/4 v6, 0x0
 
-    .line 8
     :goto_0
     iget-object v7, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGirds:Ljava/util/List;
 
@@ -1018,7 +925,6 @@
 
     if-ge v6, v7, :cond_3
 
-    .line 9
     iget-object v7, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGirds:Ljava/util/List;
 
     invoke-interface {v7, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1027,14 +933,12 @@
 
     check-cast v7, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
-    .line 10
     invoke-virtual {v7}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->recycle()V
 
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_0
 
-    .line 11
     :cond_3
     iget-object v6, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGirds:Ljava/util/List;
 
@@ -1042,7 +946,6 @@
 
     goto :goto_2
 
-    .line 12
     :cond_4
     new-instance v6, Ljava/util/ArrayList;
 
@@ -1055,14 +958,12 @@
     :cond_5
     if-ne p1, v3, :cond_8
 
-    .line 13
     iget-object v6, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mEagleEyeScreenGirds:Ljava/util/List;
 
     if-eqz v6, :cond_7
 
     const/4 v6, 0x0
 
-    .line 14
     :goto_1
     iget-object v7, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mEagleEyeScreenGirds:Ljava/util/List;
 
@@ -1072,7 +973,6 @@
 
     if-ge v6, v7, :cond_6
 
-    .line 15
     iget-object v7, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mEagleEyeScreenGirds:Ljava/util/List;
 
     invoke-interface {v7, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1081,14 +981,12 @@
 
     check-cast v7, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
-    .line 16
     invoke-virtual {v7}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->recycle()V
 
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_1
 
-    .line 17
     :cond_6
     iget-object v6, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mEagleEyeScreenGirds:Ljava/util/List;
 
@@ -1096,7 +994,6 @@
 
     goto :goto_2
 
-    .line 18
     :cond_7
     new-instance v6, Ljava/util/ArrayList;
 
@@ -1115,7 +1012,6 @@
 
     if-ge v6, v7, :cond_b
 
-    .line 19
     iget-object v8, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->tmp_3072bytes_data:[B
 
     add-int/lit8 v9, v6, 0x1
@@ -1132,7 +1028,6 @@
 
     if-gt v8, v7, :cond_b
 
-    .line 20
     new-instance v7, Ljava/lang/String;
 
     iget-object v10, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->tmp_3072bytes_data:[B
@@ -1145,20 +1040,16 @@
 
     if-ne p1, v5, :cond_9
 
-    .line 21
     invoke-static {}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->obtain()Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
     move-result-object v8
 
-    .line 22
     invoke-virtual {v8, v7, v4}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->setGridData(Ljava/lang/String;I)V
 
-    .line 23
     iget-object v7, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGirds:Ljava/util/List;
 
     invoke-interface {v7, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 24
     iget v7, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGridsCount:I
 
     add-int/2addr v7, v5
@@ -1170,20 +1061,16 @@
     :cond_9
     if-ne p1, v3, :cond_a
 
-    .line 25
     invoke-static {}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->obtain()Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
     move-result-object v8
 
-    .line 26
     invoke-virtual {v8, v7, v4}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->setGridData(Ljava/lang/String;I)V
 
-    .line 27
     iget-object v7, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mEagleEyeScreenGirds:Ljava/util/List;
 
     invoke-interface {v7, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 28
     iget v7, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGridsCount:I
 
     add-int/2addr v7, v5
@@ -1201,11 +1088,9 @@
     :catchall_0
     move-exception p1
 
-    .line 29
     :try_start_3
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 30
     :cond_b
     monitor-exit v0
     :try_end_3
@@ -1224,7 +1109,6 @@
 .method private gestureBegin()V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_gesture_count:I
 
     add-int/lit8 v0, v0, 0x1
@@ -1237,7 +1121,6 @@
 .method private gestureEnd()V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_gesture_count:I
 
     add-int/lit8 v0, v0, -0x1
@@ -1246,7 +1129,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->recycleMessage()V
 
     :cond_0
@@ -1288,67 +1170,56 @@
 
     return-object p1
 
-    .line 1
     :pswitch_0
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapHeatReqMapGirds:Ljava/util/List;
 
     return-object p1
 
-    .line 2
     :pswitch_1
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->guideReqMapGirds:Ljava/util/List;
 
     return-object p1
 
-    .line 3
     :pswitch_2
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->indoorMapGrids:Ljava/util/List;
 
     return-object p1
 
-    .line 4
     :pswitch_3
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->versionMapGrids:Ljava/util/List;
 
     return-object p1
 
-    .line 5
     :pswitch_4
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->poiReqMapGrids:Ljava/util/List;
 
     return-object p1
 
-    .line 6
     :pswitch_5
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->regionReqMapGrids:Ljava/util/List;
 
     return-object p1
 
-    .line 7
     :cond_0
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->geometryReqMapGrids:Ljava/util/List;
 
     return-object p1
 
-    .line 8
     :cond_1
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->vectmcReqMapGirds:Ljava/util/List;
 
     return-object p1
 
-    .line 9
     :cond_2
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->stiReqMapGirds:Ljava/util/List;
 
     return-object p1
 
-    .line 10
     :cond_3
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->bldReqMapGrids:Ljava/util/List;
 
     return-object p1
 
-    .line 11
     :cond_4
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->roadReqMapGrids:Ljava/util/List;
 
@@ -1370,7 +1241,6 @@
 .method private getStateInstanceWithEngineID(I)J
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateSparseArray:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -1383,7 +1253,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateSparseArray:Landroid/util/SparseArray;
 
@@ -1409,7 +1278,6 @@
 .method private initAnimation()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAnimateStateMessageList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1418,7 +1286,6 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAnimateStateMessageList:Ljava/util/List;
 
     const/4 v1, 0x0
@@ -1431,7 +1298,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0, p0}, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->generateMapAnimation(Lcom/autonavi/ae/gmap/GLMapEngine;)V
 
     :cond_0
@@ -1441,7 +1307,6 @@
 .method private isGridInList(ILjava/lang/String;)Z
     .locals 5
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGridsCount:I
 
     const/4 v1, 0x0
@@ -1455,7 +1320,6 @@
 
     if-ne p1, v3, :cond_0
 
-    .line 2
     iget-object v4, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGirds:Ljava/util/List;
 
     invoke-interface {v4, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1481,7 +1345,6 @@
 
     if-ne p1, v4, :cond_1
 
-    .line 3
     iget-object v4, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mEagleEyeScreenGirds:Ljava/util/List;
 
     invoke-interface {v4, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1527,7 +1390,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :goto_0
     invoke-interface {p2}, Ljava/util/List;->size()I
 
@@ -1535,7 +1397,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 2
     invoke-interface {p2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -1838,7 +1699,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
     aget-byte v2, p1, v0
 
@@ -1846,7 +1706,6 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     new-instance v3, Ljava/util/ArrayList;
 
@@ -1863,11 +1722,9 @@
 
     add-int/lit8 v5, v4, 0x1
 
-    .line 3
     :try_start_1
     aget-byte v4, p1, v4
 
-    .line 4
     new-instance v6, Ljava/lang/String;
 
     const-string v7, "utf-8"
@@ -1878,7 +1735,6 @@
 
     add-int/lit8 v4, v5, 0x1
 
-    .line 5
     new-instance v5, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
     invoke-direct {v5, v6, p2}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;-><init>(Ljava/lang/String;I)V
@@ -1901,7 +1757,6 @@
     :catchall_1
     move-exception p1
 
-    .line 6
     :goto_1
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
@@ -1914,11 +1769,9 @@
 .method private processAnimations(Lcom/autonavi/ae/gmap/GLMapState;)V
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/GLMapState;->recalculate()V
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_anims_mgr:Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;->getAnimationsCount()I
@@ -1927,7 +1780,6 @@
 
     if-lez v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_anims_mgr:Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
 
     invoke-virtual {v0, p1}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;->doAnimations(Lcom/autonavi/ae/gmap/GLMapState;)V
@@ -1940,7 +1792,6 @@
     :catchall_0
     move-exception p1
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -1949,7 +1800,6 @@
 .method private processGestureMessage(Lcom/autonavi/ae/gmap/GLMapState;)V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGestureMessageList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1960,12 +1810,10 @@
 
     if-gtz v0, :cond_1
 
-    .line 2
     iget-boolean p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->isGestureStep:Z
 
     if-eqz p1, :cond_0
 
-    .line 3
     iput-boolean v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->isGestureStep:Z
 
     :cond_0
@@ -1974,18 +1822,15 @@
     :cond_1
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->isGestureStep:Z
 
     if-nez p1, :cond_2
 
     return-void
 
-    .line 5
     :cond_2
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/GLMapState;->recalculate()V
 
-    .line 6
     :goto_0
     iget-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGestureMessageList:Ljava/util/List;
 
@@ -1997,7 +1842,6 @@
 
     iget-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGestureMessageList:Ljava/util/List;
 
-    .line 7
     invoke-interface {v2, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -2006,12 +1850,10 @@
 
     if-eqz v2, :cond_8
 
-    .line 8
     iget v3, v2, Lcom/autonavi/amap/mapcore/message/GestureMapMessage;->width:I
 
     if-nez v3, :cond_3
 
-    .line 9
     iget-object v3, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     invoke-interface {v3}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapWidth()I
@@ -2020,13 +1862,11 @@
 
     iput v3, v2, Lcom/autonavi/amap/mapcore/message/GestureMapMessage;->width:I
 
-    .line 10
     :cond_3
     iget v3, v2, Lcom/autonavi/amap/mapcore/message/GestureMapMessage;->height:I
 
     if-nez v3, :cond_4
 
-    .line 11
     iget-object v3, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     invoke-interface {v3}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapHeight()I
@@ -2035,7 +1875,6 @@
 
     iput v3, v2, Lcom/autonavi/amap/mapcore/message/GestureMapMessage;->height:I
 
-    .line 12
     :cond_4
     invoke-virtual {v2}, Lcom/autonavi/amap/mapcore/message/GestureMapMessage;->getMapGestureState()I
 
@@ -2045,7 +1884,6 @@
 
     if-ne v3, v4, :cond_5
 
-    .line 13
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->gestureBegin()V
 
     goto :goto_1
@@ -2055,7 +1893,6 @@
 
     if-ne v3, v4, :cond_6
 
-    .line 14
     invoke-virtual {v2, p1}, Lcom/autonavi/amap/mapcore/message/GestureMapMessage;->runCameraUpdate(Lcom/autonavi/ae/gmap/GLMapState;)V
 
     goto :goto_1
@@ -2065,10 +1902,8 @@
 
     if-ne v3, v4, :cond_7
 
-    .line 15
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->gestureEnd()V
 
-    .line 16
     :cond_7
     :goto_1
     iget-object v3, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGestureEndMessageList:Ljava/util/List;
@@ -2077,7 +1912,6 @@
 
     goto :goto_0
 
-    .line 17
     :cond_8
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGestureEndMessageList:Ljava/util/List;
 
@@ -2087,7 +1921,6 @@
 
     if-ne p1, v0, :cond_9
 
-    .line 18
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->recycleMessage()V
 
     :cond_9
@@ -2097,19 +1930,15 @@
 .method private processMessage()V
     .locals 2
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->getCloneMapState()Lcom/autonavi/ae/gmap/GLMapState;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/GLMapState;->reset()V
 
-    .line 3
     invoke-direct {p0, v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->processGestureMessage(Lcom/autonavi/ae/gmap/GLMapState;)V
 
-    .line 4
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGestureMessageList:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -2118,12 +1947,10 @@
 
     if-gtz v1, :cond_0
 
-    .line 5
     invoke-direct {p0, v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->processStateMapMessage(Lcom/autonavi/ae/gmap/GLMapState;)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateMessageList:Ljava/util/List;
 
@@ -2133,19 +1960,16 @@
 
     if-lez v1, :cond_1
 
-    .line 7
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateMessageList:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
-    .line 8
     :cond_1
     :goto_0
     invoke-direct {p0, v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->processAnimations(Lcom/autonavi/ae/gmap/GLMapState;)V
 
     const/4 v1, 0x1
 
-    .line 9
     invoke-virtual {p0, v1, v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->setMapState(ILcom/autonavi/ae/gmap/GLMapState;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -2173,7 +1997,6 @@
 
     move/from16 v9, p3
 
-    .line 1
     invoke-static {}, Lcom/autonavi/ae/gmap/maploader/NetworkState;->getInstance()Lcom/autonavi/ae/gmap/maploader/NetworkState;
 
     move-result-object v1
@@ -2188,28 +2011,23 @@
 
     if-nez v1, :cond_2
 
-    .line 2
     iget v1, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mShowErrowTipCouont:I
 
     if-gtz v1, :cond_0
 
     add-int/2addr v1, v10
 
-    .line 3
     iput v1, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mShowErrowTipCouont:I
 
     const/16 v1, 0x3ea
 
-    .line 4
     invoke-virtual {v0, v8, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->onException(II)V
 
-    .line 5
     :cond_0
     iget-object v1, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz v1, :cond_1
 
-    .line 6
     new-instance v2, Lcom/autonavi/ae/gmap/GLMapEngine$2;
 
     invoke-direct {v2, v0, v8}, Lcom/autonavi/ae/gmap/GLMapEngine$2;-><init>(Lcom/autonavi/ae/gmap/GLMapEngine;I)V
@@ -2222,15 +2040,12 @@
     :cond_2
     const/4 v11, 0x0
 
-    .line 7
     iput v11, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mShowErrowTipCouont:I
 
-    .line 8
     new-instance v12, Ljava/util/ArrayList;
 
     invoke-direct {v12}, Ljava/util/ArrayList;-><init>()V
 
-    .line 9
     invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
     move-result v13
@@ -2244,7 +2059,6 @@
 
     move-object/from16 v7, p2
 
-    .line 10
     invoke-interface {v7, v14}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -2253,7 +2067,6 @@
 
     check-cast v6, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
-    .line 11
     iget-object v2, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mTileProcessCtrl:Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;
 
     invoke-virtual {v6}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->getKeyGridName()Ljava/lang/String;
@@ -2268,12 +2081,10 @@
 
     if-ne v9, v1, :cond_5
 
-    .line 12
     invoke-virtual {v6}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->getGridName()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 13
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -2284,7 +2095,6 @@
 
     new-array v5, v1, [B
 
-    .line 14
     iget-wide v2, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const/16 v16, 0x1
@@ -2313,12 +2123,10 @@
 
     move-object/from16 v1, v18
 
-    .line 15
     aget-byte v2, v1, v11
 
     if-lez v2, :cond_3
 
-    .line 16
     :try_start_0
     new-instance v3, Ljava/lang/String;
 
@@ -2333,7 +2141,6 @@
     :cond_3
     const/4 v3, 0x0
 
-    .line 17
     :goto_1
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -2341,10 +2148,8 @@
 
     if-nez v1, :cond_4
 
-    .line 18
     iput-object v3, v15, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->mObj:Ljava/lang/Object;
 
-    .line 19
     :cond_4
     invoke-interface {v12, v15}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -2353,7 +2158,6 @@
     :cond_5
     move-object v15, v6
 
-    .line 20
     invoke-interface {v12, v15}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :catch_0
@@ -2363,7 +2167,6 @@
 
     goto :goto_0
 
-    .line 21
     :cond_7
     invoke-interface {v12}, Ljava/util/List;->size()I
 
@@ -2377,22 +2180,18 @@
 
     packed-switch v9, :pswitch_data_0
 
-    .line 22
     invoke-virtual {v0, v8, v11}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapModeState(IZ)[I
 
     move-result-object v1
 
     if-eqz v1, :cond_9
 
-    .line 23
     new-instance v15, Lcom/autonavi/ae/gmap/maploader/NormalMapLoader;
 
     invoke-direct {v15, v8, v0, v9}, Lcom/autonavi/ae/gmap/maploader/NormalMapLoader;-><init>(ILcom/autonavi/ae/gmap/GLMapEngine;I)V
 
-    .line 24
     invoke-virtual {v15, v11}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->setGetRequestMethod(Z)V
 
-    .line 25
     invoke-virtual/range {p0 .. p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapZoomer(I)F
 
     move-result v3
@@ -2407,34 +2206,28 @@
 
     goto :goto_3
 
-    .line 26
     :pswitch_0
     new-instance v15, Lcom/autonavi/ae/gmap/maploader/HeatMapLoader;
 
     invoke-direct {v15, v8, v0, v9}, Lcom/autonavi/ae/gmap/maploader/HeatMapLoader;-><init>(ILcom/autonavi/ae/gmap/GLMapEngine;I)V
 
-    .line 27
     invoke-virtual {v15, v11}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->setGetRequestMethod(Z)V
 
     move-object/from16 v1, p4
 
-    .line 28
     invoke-virtual {v15, v1}, Lcom/autonavi/ae/gmap/maploader/HeatMapLoader;->setMapHeatPoiId(Ljava/lang/String;)V
 
     goto :goto_3
 
-    .line 29
     :pswitch_1
     new-instance v15, Lcom/autonavi/ae/gmap/maploader/GuideMapLoader;
 
     invoke-direct {v15, v8, v0, v9}, Lcom/autonavi/ae/gmap/maploader/GuideMapLoader;-><init>(ILcom/autonavi/ae/gmap/GLMapEngine;I)V
 
-    .line 30
     invoke-virtual {v15, v11}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->setGetRequestMethod(Z)V
 
     goto :goto_3
 
-    .line 31
     :pswitch_2
     new-instance v15, Lcom/autonavi/ae/gmap/maploader/IndoorMapLoader;
 
@@ -2442,7 +2235,6 @@
 
     goto :goto_3
 
-    .line 32
     :cond_8
     invoke-virtual {v0, v8, v11}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapModeState(IZ)[I
 
@@ -2450,15 +2242,12 @@
 
     if-eqz v1, :cond_9
 
-    .line 33
     new-instance v15, Lcom/autonavi/ae/gmap/maploader/TmcMapLoader;
 
     invoke-direct {v15, v8, v0, v9}, Lcom/autonavi/ae/gmap/maploader/TmcMapLoader;-><init>(ILcom/autonavi/ae/gmap/GLMapEngine;I)V
 
-    .line 34
     invoke-virtual {v15, v11}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->setGetRequestMethod(Z)V
 
-    .line 35
     invoke-virtual/range {p0 .. p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapZoomer(I)F
 
     move-result v3
@@ -2476,7 +2265,6 @@
     :cond_9
     const/4 v15, 0x0
 
-    .line 36
     :goto_3
     invoke-interface {v12}, Ljava/util/List;->size()I
 
@@ -2485,14 +2273,12 @@
     :goto_4
     if-ge v11, v1, :cond_a
 
-    .line 37
     invoke-interface {v12, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
-    .line 38
     iget-object v3, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mTileProcessCtrl:Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;
 
     invoke-virtual {v2}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->getKeyGridName()Ljava/lang/String;
@@ -2501,20 +2287,17 @@
 
     invoke-virtual {v3, v4}, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;->addProcessingTile(Ljava/lang/String;)V
 
-    .line 39
     invoke-virtual {v15, v2}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->addRequestTiles(Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;)V
 
     add-int/lit8 v11, v11, 0x1
 
     goto :goto_4
 
-    .line 40
     :cond_a
     iget-object v1, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mConnectionManager:Lcom/autonavi/ae/gmap/maploader/ConnectionManager;
 
     if-eqz v1, :cond_b
 
-    .line 41
     invoke-virtual {v1, v15}, Lcom/autonavi/ae/gmap/maploader/ConnectionManager;->insertConntionTask(Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;)V
 
     :cond_b
@@ -2533,7 +2316,6 @@
 .method private processStateMapMessage(Lcom/autonavi/ae/gmap/GLMapState;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateMessageList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -2544,12 +2326,10 @@
 
     if-gtz v0, :cond_1
 
-    .line 2
     iget-boolean p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->isMoveCameraStep:Z
 
     if-eqz p1, :cond_0
 
-    .line 3
     iput-boolean v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->isMoveCameraStep:Z
 
     :cond_0
@@ -2558,14 +2338,12 @@
     :cond_1
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->isMoveCameraStep:Z
 
     if-nez p1, :cond_2
 
     return-void
 
-    .line 5
     :cond_2
     :goto_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateMessageList:Ljava/util/List;
@@ -2578,7 +2356,6 @@
 
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateMessageList:Ljava/util/List;
 
-    .line 6
     invoke-interface {v0, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -2587,12 +2364,10 @@
 
     if-eqz v0, :cond_5
 
-    .line 7
     iget v2, v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->width:I
 
     if-nez v2, :cond_3
 
-    .line 8
     iget-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     invoke-interface {v2}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapWidth()I
@@ -2601,13 +2376,11 @@
 
     iput v2, v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->width:I
 
-    .line 9
     :cond_3
     iget v2, v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->height:I
 
     if-nez v2, :cond_4
 
-    .line 10
     iget-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     invoke-interface {v2}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapHeight()I
@@ -2616,11 +2389,9 @@
 
     iput v2, v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->height:I
 
-    .line 11
     :cond_4
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/GLMapState;->recalculate()V
 
-    .line 12
     invoke-virtual {v0, p1}, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->runCameraUpdate(Lcom/autonavi/ae/gmap/GLMapState;)V
 
     goto :goto_0
@@ -2632,7 +2403,6 @@
 .method private recycleMessage()V
     .locals 2
 
-    .line 1
     :cond_0
     :goto_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGestureEndMessageList:Ljava/util/List;
@@ -2647,7 +2417,6 @@
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-interface {v0, v1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -2656,51 +2425,43 @@
 
     if-eqz v0, :cond_4
 
-    .line 3
     instance-of v1, v0, Lcom/autonavi/amap/mapcore/message/MoveGestureMapMessage;
 
     if-eqz v1, :cond_1
 
-    .line 4
     check-cast v0, Lcom/autonavi/amap/mapcore/message/MoveGestureMapMessage;
 
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/message/MoveGestureMapMessage;->recycle()V
 
     goto :goto_0
 
-    .line 5
     :cond_1
     instance-of v1, v0, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;
 
     if-eqz v1, :cond_2
 
-    .line 6
     check-cast v0, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;
 
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;->recycle()V
 
     goto :goto_0
 
-    .line 7
     :cond_2
     instance-of v1, v0, Lcom/autonavi/amap/mapcore/message/RotateGestureMapMessage;
 
     if-eqz v1, :cond_3
 
-    .line 8
     check-cast v0, Lcom/autonavi/amap/mapcore/message/RotateGestureMapMessage;
 
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/message/RotateGestureMapMessage;->recycle()V
 
     goto :goto_0
 
-    .line 9
     :cond_3
     instance-of v1, v0, Lcom/autonavi/amap/mapcore/message/ScaleGestureMapMessage;
 
     if-eqz v1, :cond_0
 
-    .line 10
     check-cast v0, Lcom/autonavi/amap/mapcore/message/ScaleGestureMapMessage;
 
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/message/ScaleGestureMapMessage;->recycle()V
@@ -2716,7 +2477,6 @@
 .method public AddGeoAndScreenCenterGroupAnimation(IILcom/autonavi/ae/gmap/glinterface/GLGeoPoint;Landroid/graphics/Point;Z)V
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz v0, :cond_1
@@ -2727,7 +2487,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v8, Lcom/autonavi/ae/gmap/GLMapEngine$9;
 
@@ -2759,7 +2518,6 @@
 
     move-object v9, p0
 
-    .line 1
     iget-object v10, v9, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     new-instance v11, Lcom/autonavi/ae/gmap/GLMapEngine$6;
@@ -2794,20 +2552,17 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeFinishAnimations(IJ)V
 
     return-void
 
-    .line 2
     :cond_0
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz p2, :cond_1
 
-    .line 3
     new-instance v0, Lcom/autonavi/ae/gmap/GLMapEngine$13;
 
     invoke-direct {v0, p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine$13;-><init>(Lcom/autonavi/ae/gmap/GLMapEngine;I)V
@@ -2823,7 +2578,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->isMapEngineValid()Z
 
@@ -2833,7 +2587,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurGridFillLock:Ljava/lang/Object;
 
@@ -2841,13 +2594,11 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 3
     :try_start_1
     iget v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGridsCount:I
 
     if-gtz v2, :cond_1
 
-    .line 4
     monitor-exit v1
 
     return v0
@@ -2857,7 +2608,6 @@
 
     if-ne p1, v2, :cond_2
 
-    .line 5
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGirds:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2883,7 +2633,6 @@
 
     if-ne p1, v2, :cond_3
 
-    .line 6
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mEagleEyeScreenGirds:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2906,7 +2655,6 @@
 
     return p1
 
-    .line 7
     :cond_3
     monitor-exit v1
 
@@ -2915,7 +2663,6 @@
     :catchall_0
     move-exception p1
 
-    .line 8
     :try_start_2
     monitor-exit v1
 
@@ -2926,7 +2673,6 @@
     :catch_0
     move-exception p1
 
-    .line 9
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     return v0
@@ -2935,7 +2681,6 @@
 .method public GetRealCityDataVerSion(II)Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetRealCityDataVerSion(IJI)Ljava/lang/String;
@@ -2948,7 +2693,6 @@
 .method public IsRealCityAnimateFinish(I)I
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeIsRealCityAnimateFinish(IJ)I
@@ -2985,7 +2729,6 @@
 
     aput p6, v0, p2
 
-    .line 1
     iget-wide p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, p2, p3, v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeIsSkinExist(IJ[I)Z
@@ -2998,7 +2741,6 @@
 .method public IsSupportRealcity(II)I
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeIsSupportRealcity(IJI)I
@@ -3011,7 +2753,6 @@
 .method public OnMapAnimationFinished(II)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mMapListener:Lcom/autonavi/ae/gmap/listener/MapListener;
 
     if-eqz v0, :cond_0
@@ -3020,7 +2761,6 @@
 
     if-eq v1, p2, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2}, Lcom/autonavi/ae/gmap/listener/MapListener;->onMapAnimationFinished(II)V
 
     :cond_0
@@ -3036,7 +2776,6 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
@@ -3053,14 +2792,12 @@
 
     const-string v0, "icons_5"
 
-    .line 2
     invoke-virtual {p2, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapCacheMgr()Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;
 
     move-result-object v0
@@ -3084,14 +2821,12 @@
     :cond_1
     const-string v0, "bktile"
 
-    .line 4
     invoke-virtual {p2, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 5
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapCacheMgr()Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;
 
     move-result-object v0
@@ -3100,7 +2835,6 @@
 
     move-result-object p1
 
-    .line 6
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapConfig()Lcom/autonavi/amap/mapcore/MapConfig;
@@ -3113,7 +2847,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 7
     invoke-virtual {p0, p1, v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->writeCustomBackground([BI)[B
 
     move-result-object p1
@@ -3124,7 +2857,6 @@
 
     return-object p1
 
-    .line 8
     :cond_3
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapCacheMgr()Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;
 
@@ -3141,7 +2873,6 @@
     :catchall_0
     move-exception p2
 
-    .line 9
     invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_1
@@ -3151,7 +2882,6 @@
 .method public OnMapResourceReLoad(ILjava/lang/String;I)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2, p3}, Lcom/autonavi/ae/gmap/GLMapEngine;->UpdateStyleOrIcons(ILjava/lang/String;I)V
 
     return-void
@@ -3160,7 +2890,6 @@
 .method public OnMapResourceRequired(ILjava/lang/String;I)V
     .locals 5
 
-    .line 1
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -3169,32 +2898,27 @@
 
     return-void
 
-    .line 2
     :cond_0
     :try_start_0
     new-instance v0, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager$RetStyleIconsFile;
 
     invoke-direct {v0}, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager$RetStyleIconsFile;-><init>()V
 
-    .line 3
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCacheMgr:Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;
 
     if-nez v1, :cond_1
 
     return-void
 
-    .line 4
     :cond_1
     iput-object p2, v0, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager$RetStyleIconsFile;->fullName:Ljava/lang/String;
 
     const-string v1, "_|\\."
 
-    .line 5
     invoke-virtual {p2, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p2
 
-    .line 6
     array-length v1, p2
 
     const/4 v2, 0x2
@@ -3203,7 +2927,6 @@
 
     return-void
 
-    .line 7
     :cond_2
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -3233,7 +2956,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     :try_start_1
     aget-object v1, p2, v2
 
@@ -3243,14 +2965,12 @@
 
     iput v1, v0, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager$RetStyleIconsFile;->clientVersion:I
 
-    .line 9
     array-length v1, p2
 
     const/4 v2, 0x3
 
     if-le v1, v2, :cond_3
 
-    .line 10
     aget-object p2, p2, v2
 
     invoke-static {p2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -3261,7 +2981,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_3
     iput v3, v0, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager$RetStyleIconsFile;->serverVersion:I
     :try_end_1
@@ -3270,24 +2989,19 @@
 
     goto :goto_0
 
-    .line 12
     :catch_0
     :try_start_2
     iput v3, v0, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager$RetStyleIconsFile;->clientVersion:I
 
-    .line 13
     iput v3, v0, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager$RetStyleIconsFile;->serverVersion:I
 
-    .line 14
     :goto_0
     iput p3, v0, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager$RetStyleIconsFile;->type:I
 
-    .line 15
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapSvrAddress()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 16
     new-instance p3, Lcom/autonavi/ae/gmap/style/StylesIconsUpdate;
 
     invoke-direct {p3, p1, p0, v0}, Lcom/autonavi/ae/gmap/style/StylesIconsUpdate;-><init>(ILcom/autonavi/ae/gmap/GLMapEngine;Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager$RetStyleIconsFile;)V
@@ -3315,7 +3029,6 @@
     :catchall_0
     move-exception p1
 
-    .line 17
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -3324,12 +3037,10 @@
 .method public PutResourceData(I[B)V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mut_lock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -3339,22 +3050,18 @@
 
     if-eqz v5, :cond_0
 
-    .line 3
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v1, v2, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativePutResourceData(IJ[B)V
 
-    .line 4
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz p1, :cond_0
 
-    .line 5
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     invoke-interface {p1}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTimeLong()V
 
-    .line 6
     :cond_0
     monitor-exit v0
     :try_end_0
@@ -3397,7 +3104,6 @@
 
     aput v0, v4, p2
 
-    .line 1
     iget-wide v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     move v1, p1
@@ -3418,7 +3124,6 @@
 .method public UpdateStyleOrIcons(ILjava/lang/String;I)V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz v0, :cond_1
@@ -3433,7 +3138,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v1, Lcom/autonavi/ae/gmap/GLMapEngine$3;
 
@@ -3453,24 +3157,20 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     monitor-exit p0
 
     return-void
 
-    .line 2
     :cond_0
     :try_start_0
     iput-boolean p3, p2, Lcom/autonavi/amap/mapcore/message/GestureMapMessage;->isGestureScaleByMapCenter:Z
 
-    .line 3
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGestureMessageList:Ljava/util/List;
 
     invoke-interface {p1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     monitor-exit p0
 
     return-void
@@ -3486,7 +3186,6 @@
 .method public addLabels3rd(II[Lcom/autonavi/ae/gmap/scenic/Label3rd;Z)V
     .locals 6
 
-    .line 1
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     move v0, p1
@@ -3507,28 +3206,23 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAnimateStateMessageList:Ljava/util/List;
 
     if-eqz p2, :cond_1
 
-    .line 2
     invoke-interface {p2}, Ljava/util/List;->clear()V
 
-    .line 3
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAnimateStateMessageList:Ljava/util/List;
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-void
 
-    .line 4
     :cond_0
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateMessageList:Ljava/util/List;
 
     if-eqz p2, :cond_1
 
-    .line 5
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_1
@@ -3540,7 +3234,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-object v0, p2, Lcom/autonavi/ae/gmap/gloverlay/GLTextureProperty;->mBitmap:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_0
@@ -3551,7 +3244,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-wide v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     iget v4, p2, Lcom/autonavi/ae/gmap/gloverlay/GLTextureProperty;->mId:I
@@ -3581,7 +3273,6 @@
 
     move-object v0, p0
 
-    .line 1
     iget-wide v2, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v4, 0x0
@@ -3610,7 +3301,6 @@
 
     move/from16 v12, p8
 
-    .line 2
     invoke-static/range {v1 .. v12}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeAddPoiFilter(IJIIIFFFFLjava/lang/String;I)V
 
     :cond_0
@@ -3620,7 +3310,6 @@
 .method public appendOpenLayer(I[B)V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -3629,7 +3318,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeAppendOpenLayer(IJ[B)V
 
     :cond_0
@@ -3639,12 +3327,10 @@
 .method public canStopMapRender(I)Z
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mut_lock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -3654,7 +3340,6 @@
 
     if-eqz v5, :cond_0
 
-    .line 3
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v1, v2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeCanStopRenderMap(IJ)Z
@@ -3667,7 +3352,6 @@
 
     return p1
 
-    .line 4
     :cond_0
     monitor-exit v0
 
@@ -3686,7 +3370,6 @@
 .method public changeMapEnv(I)V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -3697,10 +3380,8 @@
 
     const-string v2, ""
 
-    .line 2
     invoke-static {p1, v0, v1, v2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeChangeMapEnv(IJLjava/lang/String;)V
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCacheMgr:Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;
 
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
@@ -3711,7 +3392,6 @@
 
     invoke-virtual {v0, p1}, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;->setMapCachePath(Ljava/lang/String;)V
 
-    .line 4
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCacheMgr:Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;
 
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;->checkDir()V
@@ -3725,7 +3405,6 @@
 
     move-object v10, p0
 
-    .line 1
     iget-wide v1, v10, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v3, 0x0
@@ -3750,7 +3429,6 @@
 
     move-object v9, p0
 
-    .line 2
     invoke-static/range {v0 .. v9}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeChangeSurface(IJIIIIIILcom/autonavi/ae/gmap/GLMapEngine;)V
 
     :cond_0
@@ -3760,7 +3438,6 @@
 .method public clearAllMessages(I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeClearAllMessage(IJ)V
@@ -3771,12 +3448,10 @@
 .method public clearAllRequestTiles()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mTileProcessCtrl:Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;->clearAll()V
 
     :cond_0
@@ -3788,20 +3463,17 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_anims_mgr:Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
 
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;->clearAnimations()V
 
     return-void
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz p1, :cond_1
 
-    .line 3
     new-instance p2, Lcom/autonavi/ae/gmap/GLMapEngine$4;
 
     invoke-direct {p2, p0}, Lcom/autonavi/ae/gmap/GLMapEngine$4;-><init>(Lcom/autonavi/ae/gmap/GLMapEngine;)V
@@ -3817,20 +3489,17 @@
 
     if-eqz p2, :cond_0
 
-    .line 4
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_anims_mgr:Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
 
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;->clearAnimations()V
 
     return-void
 
-    .line 5
     :cond_0
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz p1, :cond_1
 
-    .line 6
     new-instance p2, Lcom/autonavi/ae/gmap/GLMapEngine$5;
 
     invoke-direct {p2, p0}, Lcom/autonavi/ae/gmap/GLMapEngine$5;-><init>(Lcom/autonavi/ae/gmap/GLMapEngine;)V
@@ -3844,12 +3513,10 @@
 .method public clearException(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->clearException(I)V
 
     :cond_0
@@ -3859,7 +3526,6 @@
 .method public clearLabels3rd(IIZ)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2, p3}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeClearLabels3rd(IJIZ)V
@@ -3870,7 +3536,6 @@
 .method public clearPoiFilter(I)V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -3879,7 +3544,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeClearPoiFilter(IJ)V
 
     :cond_0
@@ -3889,7 +3553,6 @@
 .method public clearSelectMapPois(I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeClearSelectedScenicPois(IJ)V
@@ -3912,25 +3575,21 @@
 
     if-ne v11, v2, :cond_0
 
-    .line 1
     iget-object v2, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mEagleEyeScreenGirds:Ljava/util/List;
 
     if-nez v2, :cond_0
 
-    .line 2
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v2, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mEagleEyeScreenGirds:Ljava/util/List;
 
-    .line 3
     :cond_0
     iget-object v2, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCacheMgr:Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;
 
     if-nez v2, :cond_1
 
-    .line 4
     new-instance v2, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManagerImpl;
 
     iget-object v3, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mContext:Landroid/content/Context;
@@ -3945,10 +3604,8 @@
 
     iput-object v2, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCacheMgr:Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;
 
-    .line 5
     invoke-virtual {v2}, Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;->checkDir()V
 
-    .line 6
     :cond_1
     iget-wide v2, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -3974,7 +3631,6 @@
 
     invoke-static/range {v1 .. v10}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeCreateEngineWithFrame(IJIIIIIIZ)I
 
-    .line 7
     new-instance v1, Lcom/autonavi/ae/gmap/utils/GLStateInstance;
 
     iget-wide v2, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
@@ -3985,7 +3641,6 @@
 
     invoke-direct {v1, p1, v2, v3}, Lcom/autonavi/ae/gmap/utils/GLStateInstance;-><init>(IJ)V
 
-    .line 8
     iget-object v2, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateSparseArray:Landroid/util/SparseArray;
 
     invoke-virtual {v2, p1, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
@@ -3997,7 +3652,6 @@
 .method public createOverlay(II)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeCreateOverlay(IJI)J
@@ -4010,7 +3664,6 @@
 .method public deleteOpenLayer(II)V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -4019,7 +3672,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeDeleteOpenLayer(IJI)Z
 
     :cond_0
@@ -4029,15 +3681,12 @@
 .method public destorySurface()V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mTileProcessCtrl:Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;->clearAll()V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mConnectionManager:Lcom/autonavi/ae/gmap/maploader/ConnectionManager;
 
@@ -4047,17 +3696,14 @@
 
     const/4 v2, 0x0
 
-    .line 4
     iput-boolean v2, v0, Lcom/autonavi/ae/gmap/maploader/ConnectionManager;->threadFlag:Z
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/Thread;->isAlive()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 6
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mConnectionManager:Lcom/autonavi/ae/gmap/maploader/ConnectionManager;
 
@@ -4065,38 +3711,29 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 7
     :catch_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mConnectionManager:Lcom/autonavi/ae/gmap/maploader/ConnectionManager;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/maploader/ConnectionManager;->shutDown()V
 
-    .line 8
     iput-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mConnectionManager:Lcom/autonavi/ae/gmap/maploader/ConnectionManager;
 
-    .line 9
     :cond_1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateSparseArray:Landroid/util/SparseArray;
 
     if-eqz v0, :cond_2
 
-    .line 10
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
-    .line 11
     :cond_2
     invoke-static {}, Lcom/autonavi/amap/mapcore/message/MoveGestureMapMessage;->destory()V
 
-    .line 12
     invoke-static {}, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;->destory()V
 
-    .line 13
     invoke-static {}, Lcom/autonavi/amap/mapcore/message/RotateGestureMapMessage;->destory()V
 
-    .line 14
     invoke-static {}, Lcom/autonavi/amap/mapcore/message/ScaleGestureMapMessage;->destory()V
 
-    .line 15
     iget-wide v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v4, 0x0
@@ -4105,19 +3742,15 @@
 
     if-eqz v0, :cond_3
 
-    .line 16
     invoke-static {v2, v3, p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeDestorySurface(JLcom/autonavi/ae/gmap/GLMapEngine;)V
 
-    .line 17
     :cond_3
     iput-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->tmp_3072bytes_data:[B
 
-    .line 18
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mut_lock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 19
     :try_start_1
     iget-wide v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -4125,29 +3758,23 @@
 
     if-eqz v6, :cond_5
 
-    .line 20
     iget-wide v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {v2, v3}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeDestroy(J)V
 
-    .line 21
     iget-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->copyGLMapState:Lcom/autonavi/ae/gmap/GLMapState;
 
     if-eqz v2, :cond_4
 
-    .line 22
     iget-object v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->copyGLMapState:Lcom/autonavi/ae/gmap/GLMapState;
 
     invoke-virtual {v2}, Lcom/autonavi/ae/gmap/GLMapState;->recycle()V
 
-    .line 23
     iput-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->copyGLMapState:Lcom/autonavi/ae/gmap/GLMapState;
 
-    .line 24
     :cond_4
     iput-wide v4, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
-    .line 25
     :cond_5
     monitor-exit v0
     :try_end_1
@@ -4166,7 +3793,6 @@
 .method public doMapDataControl(IIIII)Z
     .locals 10
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const/4 v2, 0x1
@@ -4185,7 +3811,6 @@
 
     if-ne p5, v2, :cond_0
 
-    .line 2
     new-instance v0, Lcom/autonavi/ae/gmap/maploader/MessageDataThread;
 
     move-object v3, v0
@@ -4204,7 +3829,6 @@
 
     invoke-direct/range {v3 .. v9}, Lcom/autonavi/ae/gmap/maploader/MessageDataThread;-><init>(ILcom/autonavi/ae/gmap/GLMapEngine;IIII)V
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     :cond_0
@@ -4214,7 +3838,6 @@
 .method public drawFrame()V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -4223,31 +3846,25 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->processMessage()V
 
-    .line 3
     const-class v0, Lcom/autonavi/ae/gmap/GLMapEngine;
 
     monitor-enter v0
 
-    .line 4
     :try_start_0
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {v1, v2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeDrawFrame(J)V
 
-    .line 5
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {v1, v2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativePostDrawFrame(J)V
 
-    .line 6
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->initAnimation()V
 
     goto :goto_0
@@ -4255,7 +3872,6 @@
     :catchall_0
     move-exception v1
 
-    .line 8
     monitor-exit v0
 
     throw v1
@@ -4268,7 +3884,6 @@
 .method public getAnimateionsCount()I
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -4277,7 +3892,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_anims_mgr:Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;->getAnimationsCount()I
@@ -4297,7 +3911,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
@@ -4324,12 +3937,10 @@
 .method public getCloneMapState()Lcom/autonavi/ae/gmap/GLMapState;
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->copyGLMapState:Lcom/autonavi/ae/gmap/GLMapState;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/autonavi/ae/gmap/GLMapState;
 
     const/4 v1, 0x1
@@ -4342,7 +3953,6 @@
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->copyGLMapState:Lcom/autonavi/ae/gmap/GLMapState;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->copyGLMapState:Lcom/autonavi/ae/gmap/GLMapState;
 
@@ -4358,7 +3968,6 @@
 
     invoke-virtual {v0, v1}, Lcom/autonavi/ae/gmap/GLMapState;->setMapZoomer(F)V
 
-    .line 4
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->copyGLMapState:Lcom/autonavi/ae/gmap/GLMapState;
 
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
@@ -4373,7 +3982,6 @@
 
     invoke-virtual {v0, v1}, Lcom/autonavi/ae/gmap/GLMapState;->setCameraDegree(F)V
 
-    .line 5
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->copyGLMapState:Lcom/autonavi/ae/gmap/GLMapState;
 
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
@@ -4388,7 +3996,6 @@
 
     invoke-virtual {v0, v1}, Lcom/autonavi/ae/gmap/GLMapState;->setMapAngle(F)V
 
-    .line 6
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->copyGLMapState:Lcom/autonavi/ae/gmap/GLMapState;
 
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
@@ -4413,7 +4020,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/autonavi/ae/gmap/GLMapState;->setMapGeoCenter(II)V
 
-    .line 7
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->copyGLMapState:Lcom/autonavi/ae/gmap/GLMapState;
 
     return-object v0
@@ -4422,7 +4028,6 @@
 .method public getContext()Landroid/content/Context;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -4443,26 +4048,22 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurGridFillLock:Ljava/lang/Object;
 
     monitor-enter v1
 
     const/4 v2, 0x0
 
-    .line 3
     :goto_0
     :try_start_0
     iget v3, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGridsCount:I
 
     if-ge v2, v3, :cond_0
 
-    .line 4
     iget-object v3, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurScreenGirds:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -4481,7 +4082,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     monitor-exit v1
     :try_end_0
@@ -4500,7 +4100,6 @@
 .method public getEngineIDWithGestureInfo(Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;)I
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -4509,7 +4108,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetEngineIDWithGestureInfo(JLcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;)I
 
     move-result p1
@@ -4544,7 +4142,6 @@
 .method public getEngineIDs()[I
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetEngineIDArray(J)[I
@@ -4557,7 +4154,6 @@
 .method public getGLUnitWithPixel20(II)F
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -4572,7 +4168,6 @@
 .method public getGLUnitWithWin(II)F
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -4587,7 +4182,6 @@
 .method public getGLUnitWithWinByY(III)F
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -4602,7 +4196,6 @@
 .method public getGlOverlayMgrPtr(I)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetGlOverlayMgrPtr(IJ)J
@@ -4615,7 +4208,6 @@
 .method public getIsProcessBuildingMark(I)Z
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetIsProcessBuildingMark(IJ)Z
@@ -4635,7 +4227,6 @@
     :try_start_0
     new-array v0, v0, [B
 
-    .line 1
     iget-wide v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     move v1, p1
@@ -4652,7 +4243,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     monitor-exit p0
 
     return-object v0
@@ -4670,7 +4260,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
@@ -4697,7 +4286,6 @@
 .method public getMapCacheMgr()Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCacheMgr:Lcom/autonavi/ae/gmap/style/MapTilsCacheAndResManager;
 
     return-object v0
@@ -4708,13 +4296,11 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v1
@@ -4723,7 +4309,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     monitor-exit p0
 
     return-object v0
@@ -4739,7 +4324,6 @@
 .method public getMapEnginePtr()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     return-wide v0
@@ -4748,7 +4332,6 @@
 .method public getMapIndoorAddress()Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/amap/api/maps/MapsInitializer;->getHttpProtocol()I
 
     move-result v0
@@ -4770,7 +4353,6 @@
 .method public getMapModeState(IZ)[I
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetMapModeState(IJZ)[I
@@ -4785,7 +4367,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -4795,7 +4376,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->s:Lcom/autonavi/ae/gmap/GLMapState;
 
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
@@ -4804,7 +4384,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/autonavi/ae/gmap/GLMapState;->setMapstateInstance(J)V
 
-    .line 3
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->s:Lcom/autonavi/ae/gmap/GLMapState;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -4816,7 +4395,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     monitor-exit p0
 
     return-object p1
@@ -4832,7 +4410,6 @@
 .method public getMapStateInstance(I)J
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -4843,7 +4420,6 @@
 .method public getMapSvrAddress()Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/amap/api/maps/MapsInitializer;->getHttpProtocol()I
 
     move-result v0
@@ -4865,7 +4441,6 @@
 .method public getMapZoomer(I)F
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -4880,7 +4455,6 @@
 .method public getMaxZoomLevel(I)I
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -4895,7 +4469,6 @@
 .method public getMinZoomLevel(I)I
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -4912,7 +4485,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -4922,7 +4494,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     new-instance v0, Lcom/autonavi/ae/gmap/GLMapState;
 
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
@@ -4938,7 +4509,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 3
     monitor-exit p0
 
     return-object p1
@@ -4962,7 +4532,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateSparseArray:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -4975,7 +4544,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateSparseArray:Landroid/util/SparseArray;
 
@@ -4999,7 +4567,6 @@
 .method public getPixel20Bound(ILandroid/graphics/Rect;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -5012,7 +4579,6 @@
 .method public getSrvViewStateBoolValue(II)Z
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetSrvViewStateBoolValue(IJI)Z
@@ -5025,7 +4591,6 @@
 .method public getSrvViewStateFloatValue(II)F
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetSrvViewStateFloatValue(IJI)F
@@ -5038,7 +4603,6 @@
 .method public getSrvViewStateIntValue(II)I
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetSrvViewStateIntValue(IJI)I
@@ -5053,7 +4617,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateMessageList:Ljava/util/List;
 
@@ -5071,12 +4634,10 @@
 
     const/4 v0, 0x0
 
-    .line 2
     monitor-exit p0
 
     return-object v0
 
-    .line 3
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateMessageList:Ljava/util/List;
@@ -5089,14 +4650,12 @@
 
     check-cast v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;
 
-    .line 4
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateMessageList:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5
     monitor-exit p0
 
     return-object v0
@@ -5112,7 +4671,6 @@
 .method public getStateMessageCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateMessageList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -5125,21 +4683,18 @@
 .method public initConnectionManager()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/autonavi/ae/gmap/maploader/ConnectionManager;
 
     invoke-direct {v0, p0}, Lcom/autonavi/ae/gmap/maploader/ConnectionManager;-><init>(Lcom/autonavi/ae/gmap/GLMapEngine;)V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mConnectionManager:Lcom/autonavi/ae/gmap/maploader/ConnectionManager;
 
-    .line 2
     new-instance v0, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;
 
     invoke-direct {v0}, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mTileProcessCtrl:Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mConnectionManager:Lcom/autonavi/ae/gmap/maploader/ConnectionManager;
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
@@ -5152,14 +4707,12 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->isInMapAnimation(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->map_anims_mgr:Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
 
@@ -5171,7 +4724,6 @@
 
     const/4 v1, 0x0
 
-    .line 3
     invoke-virtual {p0, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->clearAnimations(IZ)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -5181,7 +4733,6 @@
     :catchall_0
     move-exception v0
 
-    .line 4
     const-class v1, Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -5192,7 +4743,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_0
@@ -5202,7 +4752,6 @@
 .method public isEngineCreated(I)Z
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->getEngineIDs()[I
 
     move-result-object v0
@@ -5211,12 +4760,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     array-length v2, v0
 
     if-lez v2, :cond_1
 
-    .line 3
     array-length v2, v0
 
     const/4 v3, 0x0
@@ -5246,7 +4793,6 @@
 
     const/4 p2, 0x1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->isMapEngineValid()Z
 
@@ -5258,7 +4804,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurGridFillLock:Ljava/lang/Object;
 
@@ -5266,7 +4811,6 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 3
     :try_start_1
     invoke-direct {p0, p1, p3}, Lcom/autonavi/ae/gmap/GLMapEngine;->isGridInList(ILjava/lang/String;)Z
 
@@ -5274,14 +4818,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 4
     monitor-exit v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     return p2
 
-    .line 5
     :cond_1
     monitor-exit v0
 
@@ -5290,7 +4832,6 @@
     :catchall_0
     move-exception p1
 
-    .line 6
     :try_start_2
     monitor-exit v0
 
@@ -5315,7 +4856,6 @@
 
     const/4 p3, 0x1
 
-    .line 1
     :try_start_0
     invoke-interface {p2}, Ljava/util/List;->size()I
 
@@ -5327,7 +4867,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->isMapEngineValid()Z
 
@@ -5337,7 +4876,6 @@
 
     return v1
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mCurGridFillLock:Ljava/lang/Object;
 
@@ -5345,7 +4883,6 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 4
     :try_start_1
     invoke-interface {p2}, Ljava/util/List;->size()I
 
@@ -5356,7 +4893,6 @@
     :goto_0
     if-ge v3, v2, :cond_3
 
-    .line 5
     invoke-interface {p2, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -5373,7 +4909,6 @@
 
     if-eqz v4, :cond_2
 
-    .line 6
     monitor-exit v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -5385,7 +4920,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_3
     monitor-exit v0
 
@@ -5394,7 +4928,6 @@
     :catchall_0
     move-exception p1
 
-    .line 8
     :try_start_2
     monitor-exit v0
 
@@ -5405,7 +4938,6 @@
     :catch_0
     move-exception p1
 
-    .line 9
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     return p3
@@ -5414,7 +4946,6 @@
 .method public isInMapAction(I)Z
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetGestureMsgCount(IJ)I
@@ -5436,7 +4967,6 @@
 .method public isInMapAnimation(I)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/GLMapEngine;->getAnimateionsCount()I
 
     move-result p1
@@ -5480,12 +5010,10 @@
 .method public isMapEngineValid()Z
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mut_lock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -5512,7 +5040,6 @@
     :catchall_0
     move-exception v1
 
-    .line 3
     monitor-exit v0
 
     throw v1
@@ -5521,7 +5048,6 @@
 .method public isShowFeatureSpotIcon(I)Z
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeIsShowFeatureSpotIcon(IJ)Z
@@ -5534,7 +5060,6 @@
 .method public isShowLandMarkBuildingPoi(I)Z
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeIsShowLandMarkBuildingPoi(IJ)Z
@@ -5547,7 +5072,6 @@
 .method public isShowMask(I)Z
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeIsShowMask(IJ)Z
@@ -5584,7 +5108,6 @@
 
     aput p5, v4, p2
 
-    .line 1
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 p2, 0x0
@@ -5601,7 +5124,6 @@
 
     move v6, p7
 
-    .line 2
     invoke-static/range {v0 .. v6}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeLoadStartResource(IJLcom/autonavi/ae/gmap/GLMapEngine;[III)V
 
     :cond_0
@@ -5611,7 +5133,6 @@
 .method public mapToP20Point(IFFLandroid/graphics/Point;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -5624,7 +5145,6 @@
 .method public mapToScreenPoint(IFFLandroid/graphics/PointF;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -5637,7 +5157,6 @@
 .method public mapToScreenPointWithZ(IFFFLandroid/graphics/PointF;)V
     .locals 6
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -5658,7 +5177,6 @@
 .method public onCharBitmapRequired(II)[B
     .locals 0
 
-    .line 1
     :try_start_0
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mTextTextureGenerator:Lcom/autonavi/ae/gmap/utils/TextTextureGenerator;
 
@@ -5666,12 +5184,10 @@
 
     move-result-object p1
 
-    .line 2
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz p2, :cond_0
 
-    .line 3
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     invoke-interface {p2}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTimeLong()V
@@ -5684,7 +5200,6 @@
     :catchall_0
     move-exception p1
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -5695,7 +5210,6 @@
 .method public onClearCache(I)V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/autonavi/ae/gmap/maploader/VMapDataCache;->getInstance()Lcom/autonavi/ae/gmap/maploader/VMapDataCache;
 
     move-result-object p1
@@ -5708,7 +5222,6 @@
 .method public onClearOverlayTexture(I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeClearOverlayTexture(IJ)V
@@ -5719,12 +5232,10 @@
 .method public onException(II)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->onException(II)V
 
     :cond_0
@@ -5734,12 +5245,10 @@
 .method public onIndoorBuildingActivity(I[B)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     invoke-interface {v0, p1, p2}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->onIndoorBuildingActivity(I[B)V
     :try_end_0
@@ -5750,7 +5259,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_0
@@ -5762,14 +5270,12 @@
 
     if-eqz p3, :cond_4
 
-    .line 1
     array-length v0, p3
 
     if-nez v0, :cond_0
 
     goto :goto_2
 
-    .line 2
     :cond_0
     :try_start_0
     invoke-direct {p0, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->getReqGridList(I)Ljava/util/List;
@@ -5782,7 +5288,6 @@
 
     const/4 v2, 0x0
 
-    .line 3
     :goto_0
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -5790,36 +5295,30 @@
 
     if-ge v2, v3, :cond_1
 
-    .line 4
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
-    .line 5
     invoke-virtual {v3}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->recycle()V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 7
     :goto_1
     array-length v2, p3
 
     if-ge v1, v2, :cond_2
 
-    .line 8
     invoke-static {}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->obtain()Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
     move-result-object v2
 
-    .line 9
     aget-object v3, p3, v1
 
     aget v4, p4, v1
@@ -5828,7 +5327,6 @@
 
     invoke-virtual {v2, v3, p2, v4, v5}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->setGridData(Ljava/lang/String;III)V
 
-    .line 10
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v1, v1, 0x1
@@ -5842,7 +5340,6 @@
 
     const/4 p3, 0x0
 
-    .line 11
     invoke-direct {p0, p1, v0, p2, p3}, Lcom/autonavi/ae/gmap/GLMapEngine;->processRequiredData(ILjava/util/List;ILjava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -5853,7 +5350,6 @@
     :catchall_0
     move-exception p1
 
-    .line 12
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_4
@@ -5882,7 +5378,6 @@
 .method public onMapCharsWidthsRequired(I[III)[B
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mTextTextureGenerator:Lcom/autonavi/ae/gmap/utils/TextTextureGenerator;
 
     invoke-virtual {p1, p2}, Lcom/autonavi/ae/gmap/utils/TextTextureGenerator;->getCharsWidths([I)[B
@@ -5897,7 +5392,6 @@
 
     if-eqz p3, :cond_7
 
-    .line 1
     array-length v0, p3
 
     if-eqz v0, :cond_7
@@ -5912,7 +5406,6 @@
 
     goto :goto_3
 
-    .line 2
     :cond_0
     :try_start_0
     invoke-direct {p0, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->getReqGridList(I)Ljava/util/List;
@@ -5925,7 +5418,6 @@
 
     const/4 v2, 0x0
 
-    .line 3
     :goto_0
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -5933,25 +5425,21 @@
 
     if-ge v2, v3, :cond_1
 
-    .line 4
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
-    .line 5
     invoke-virtual {v3}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->recycle()V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 7
     array-length v2, p3
 
     const/4 v3, 0x0
@@ -5965,39 +5453,33 @@
 
     if-ne p2, v5, :cond_2
 
-    .line 8
     iget-wide v5, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v5, v6}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeGetMapHeatPoiId(IJ)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 9
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
     if-nez v5, :cond_3
 
-    .line 10
     invoke-static {}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->obtain()Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
     move-result-object v4
 
-    .line 11
     aget-object v5, p3, v1
 
     invoke-virtual {v4, v5, v3, p2}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->setGridData(Ljava/lang/String;Ljava/lang/String;I)V
 
     goto :goto_2
 
-    .line 12
     :cond_2
     invoke-static {}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->obtain()Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
     move-result-object v4
 
-    .line 13
     aget-object v5, p3, v1
 
     invoke-virtual {v4, v5, p2}, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;->setGridData(Ljava/lang/String;I)V
@@ -6006,7 +5488,6 @@
     :goto_2
     if-eqz v4, :cond_4
 
-    .line 14
     invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_4
@@ -6019,7 +5500,6 @@
 
     if-eq p2, p3, :cond_6
 
-    .line 15
     invoke-direct {p0, p1, v0, p2, v3}, Lcom/autonavi/ae/gmap/GLMapEngine;->processRequiredData(ILjava/util/List;ILjava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -6030,7 +5510,6 @@
     :catchall_0
     move-exception p1
 
-    .line 16
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_7
@@ -6041,12 +5520,10 @@
 .method public onMapHeatActive(IZ)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mMapHeatListener:Lcom/autonavi/ae/gmap/scenic/MapHeatListener;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2}, Lcom/autonavi/ae/gmap/scenic/MapHeatListener;->onMapHeatActive(IZ)V
 
     :cond_0
@@ -6096,33 +5573,28 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     :try_start_0
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz p1, :cond_8
 
-    .line 2
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     invoke-interface {p1}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTimeLong()V
 
     return-void
 
-    .line 3
     :cond_1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->fillCurScreenGrids(I)V
 
     return-void
 
-    .line 4
     :cond_2
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mMapListener:Lcom/autonavi/ae/gmap/listener/MapListener;
 
     if-eqz p2, :cond_3
 
-    .line 5
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mMapListener:Lcom/autonavi/ae/gmap/listener/MapListener;
 
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapState(I)Lcom/autonavi/ae/gmap/GLMapState;
@@ -6131,13 +5603,11 @@
 
     invoke-interface {p2, p1, v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;->afterDrawFrame(ILcom/autonavi/ae/gmap/GLMapState;)V
 
-    .line 6
     :cond_3
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAMapListener:Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;
 
     if-eqz p2, :cond_8
 
-    .line 7
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAMapListener:Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;
 
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapState(I)Lcom/autonavi/ae/gmap/GLMapState;
@@ -6148,13 +5618,11 @@
 
     return-void
 
-    .line 8
     :cond_4
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAMapListener:Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;
 
     if-eqz p2, :cond_8
 
-    .line 9
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAMapListener:Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;
 
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapState(I)Lcom/autonavi/ae/gmap/GLMapState;
@@ -6165,13 +5633,11 @@
 
     return-void
 
-    .line 10
     :cond_5
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAMapListener:Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;
 
     if-eqz p2, :cond_8
 
-    .line 11
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAMapListener:Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;
 
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapState(I)Lcom/autonavi/ae/gmap/GLMapState;
@@ -6182,13 +5648,11 @@
 
     return-void
 
-    .line 12
     :cond_6
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mMapListener:Lcom/autonavi/ae/gmap/listener/MapListener;
 
     if-eqz p2, :cond_8
 
-    .line 13
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mMapListener:Lcom/autonavi/ae/gmap/listener/MapListener;
 
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapState(I)Lcom/autonavi/ae/gmap/GLMapState;
@@ -6202,7 +5666,6 @@
     :cond_7
     const/4 p2, 0x2
 
-    .line 14
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->IsRealCityAnimateFinish(I)I
 
     move-result v0
@@ -6213,7 +5676,6 @@
 
     if-eqz p2, :cond_8
 
-    .line 15
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mMapListener:Lcom/autonavi/ae/gmap/listener/MapListener;
 
     invoke-interface {p2, p1}, Lcom/autonavi/ae/gmap/listener/MapListener;->onRealCityAnimateFinish(I)V
@@ -6229,19 +5691,16 @@
 .method public onOfflineMap(ILjava/lang/String;I)V
     .locals 1
 
-    .line 1
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mMapListener:Lcom/autonavi/ae/gmap/listener/MapListener;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0, p1, p2, p3}, Lcom/autonavi/ae/gmap/listener/MapListener;->onOfflineMap(ILjava/lang/String;I)V
 
     :cond_0
@@ -6251,7 +5710,6 @@
 .method public onOpenLayerDataRequired(ILjava/lang/String;III[Ljava/lang/String;)V
     .locals 8
 
-    .line 1
     new-instance v7, Lcom/autonavi/ae/gmap/maploader/OpenLayerMapLoader;
 
     move-object v0, v7
@@ -6270,24 +5728,20 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/autonavi/ae/gmap/maploader/OpenLayerMapLoader;-><init>(ILcom/autonavi/ae/gmap/GLMapEngine;Ljava/lang/String;III)V
 
-    .line 2
     invoke-virtual {v7, p6}, Lcom/autonavi/ae/gmap/maploader/OpenLayerMapLoader;->createDownUrl([Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mConnectionManager:Lcom/autonavi/ae/gmap/maploader/ConnectionManager;
 
     if-eqz p1, :cond_0
 
     const/4 p1, 0x0
 
-    .line 4
     invoke-virtual {v7, p1}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->setGetRequestMethod(Z)V
 
-    .line 5
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mConnectionManager:Lcom/autonavi/ae/gmap/maploader/ConnectionManager;
 
     invoke-virtual {p1, v7}, Lcom/autonavi/ae/gmap/maploader/ConnectionManager;->insertConntionTask(Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;)V
@@ -6299,7 +5753,6 @@
 .method public onRoadTips(I[B)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mBoardDataListener:Lcom/autonavi/ae/gmap/listener/RouteBoardDataListener;
 
     if-eqz v0, :cond_0
@@ -6310,7 +5763,6 @@
 
     if-lez v1, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2}, Lcom/autonavi/ae/gmap/listener/RouteBoardDataListener;->setRouteBoardData(I[B)V
 
     :cond_0
@@ -6326,18 +5778,15 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
     aget-byte v2, p2, v1
 
-    .line 2
     new-instance v3, Lcom/autonavi/ae/gmap/scenic/ScenicInfor;
 
     invoke-direct {v3}, Lcom/autonavi/ae/gmap/scenic/ScenicInfor;-><init>()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     :try_start_1
     new-instance v0, Ljava/lang/String;
 
@@ -6353,7 +5802,6 @@
 
     add-int/lit8 v0, v2, 0x1
 
-    .line 4
     aget-byte v2, p2, v2
 
     if-eqz v2, :cond_0
@@ -6370,7 +5818,6 @@
 
     add-int/lit8 v2, v0, 0x1
 
-    .line 5
     aget-byte v0, p2, v0
 
     if-eqz v0, :cond_1
@@ -6387,7 +5834,6 @@
 
     add-int/lit8 v0, v2, 0x1
 
-    .line 6
     aget-byte v2, p2, v2
 
     if-eqz v2, :cond_2
@@ -6404,7 +5850,6 @@
 
     add-int/lit8 v2, v0, 0x1
 
-    .line 7
     aget-byte v0, p2, v0
 
     if-eqz v0, :cond_3
@@ -6421,7 +5866,6 @@
 
     add-int/lit8 v0, v2, 0x1
 
-    .line 8
     aget-byte v2, p2, v2
 
     if-eqz v2, :cond_4
@@ -6438,7 +5882,6 @@
 
     add-int/lit8 v2, v0, 0x1
 
-    .line 9
     aget-byte v0, p2, v0
 
     if-eqz v0, :cond_5
@@ -6448,7 +5891,6 @@
     :cond_5
     iput-boolean v1, v3, Lcom/autonavi/ae/gmap/scenic/ScenicInfor;->mHasRoute:Z
 
-    .line 10
     aget-byte p2, p2, v2
 
     iput p2, v3, Lcom/autonavi/ae/gmap/scenic/ScenicInfor;->mRouteNumber:I
@@ -6469,18 +5911,15 @@
     :catchall_1
     move-exception p2
 
-    .line 11
     :goto_5
     invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 12
     :cond_6
     :goto_6
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz p2, :cond_7
 
-    .line 13
     new-instance v1, Lcom/autonavi/ae/gmap/GLMapEngine$14;
 
     invoke-direct {v1, p0, p1, v0}, Lcom/autonavi/ae/gmap/GLMapEngine$14;-><init>(Lcom/autonavi/ae/gmap/GLMapEngine;ILcom/autonavi/ae/gmap/scenic/ScenicInfor;)V
@@ -6501,7 +5940,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 1
     aget v0, p2, p1
 
     const/16 v1, 0x2710
@@ -6514,7 +5952,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
@@ -6522,7 +5959,6 @@
 
     const/4 v1, 0x1
 
-    .line 3
     aget p2, p2, v1
 
     const/4 v1, 0x2
@@ -6533,30 +5969,25 @@
 
     if-eq p2, v1, :cond_2
 
-    .line 4
     invoke-interface {v0, p1}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTime(Z)V
 
     return-void
 
-    .line 5
     :cond_2
     invoke-interface {v0}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTimeLongLong()V
 
     goto :goto_0
 
-    .line 6
     :cond_3
     invoke-interface {v0}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTimeLong()V
 
     return-void
 
-    .line 7
     :cond_4
     iget-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz p2, :cond_5
 
-    .line 8
     invoke-interface {p2, p1}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTime(Z)V
 
     :cond_5
@@ -6567,7 +5998,6 @@
 .method public p20ToMapPoint(IIILandroid/graphics/PointF;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -6580,7 +6010,6 @@
 .method public p20ToScreenPoint(IIILandroid/graphics/PointF;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -6593,7 +6022,6 @@
 .method public popRendererState()V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -6604,7 +6032,6 @@
 
     const/4 v2, 0x1
 
-    .line 2
     invoke-static {v2, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativePopRenderState(IJ)V
 
     :cond_0
@@ -6614,7 +6041,6 @@
 .method public pushRendererState()V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -6625,7 +6051,6 @@
 
     const/4 v2, 0x1
 
-    .line 2
     invoke-static {v2, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativePushRendererState(IJ)V
 
     :cond_0
@@ -6643,12 +6068,10 @@
 
     move v3, p4
 
-    .line 1
     iget-object v8, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mut_lock:Ljava/lang/Object;
 
     monitor-enter v8
 
-    .line 2
     :try_start_0
     iget-wide v4, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -6660,7 +6083,6 @@
 
     if-eqz v10, :cond_2
 
-    .line 3
     array-length v4, v0
 
     const/4 v10, 0x1
@@ -6669,7 +6091,6 @@
 
     if-nez v2, :cond_0
 
-    .line 4
     iget-wide v3, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     move v2, p1
@@ -6691,14 +6112,11 @@
 
     goto :goto_1
 
-    .line 5
     :cond_0
     new-array v6, v3, [B
 
-    .line 6
     invoke-static {p2, p3, v6, v9, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 7
     iget-wide v3, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     move v2, p1
@@ -6715,19 +6133,16 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     :goto_1
     iget-object v0, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz v0, :cond_2
 
-    .line 9
     iget-object v0, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     invoke-interface {v0}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTimeLong()V
 
-    .line 10
     :cond_2
     monitor-exit v8
     :try_end_0
@@ -6754,7 +6169,6 @@
 
     move-object/from16 v3, p6
 
-    .line 1
     array-length v4, v0
 
     const/4 v5, 0x0
@@ -6771,13 +6185,11 @@
 
     goto :goto_1
 
-    .line 2
     :cond_0
     iget-object v4, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mut_lock:Ljava/lang/Object;
 
     monitor-enter v4
 
-    .line 3
     :try_start_0
     iget-wide v6, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
     :try_end_0
@@ -6792,37 +6204,30 @@
     :try_start_1
     const-string v6, "utf-8"
 
-    .line 4
     invoke-virtual {v3, v6}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object v3
 
-    .line 5
     array-length v6, v3
 
     add-int/lit8 v7, v6, 0x1
 
     add-int v8, v7, v2
 
-    .line 6
     new-array v13, v8, [B
 
     int-to-byte v8, v6
 
-    .line 7
     aput-byte v8, v13, v5
 
     const/4 v8, 0x1
 
-    .line 8
     invoke-static {v3, v5, v13, v8, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     move/from16 v3, p3
 
-    .line 9
     invoke-static {v0, v3, v13, v7, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 10
     iget-wide v10, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const/16 v12, 0xc
@@ -6839,13 +6244,11 @@
 
     const/4 v5, 0x1
 
-    .line 11
     :cond_1
     iget-object v0, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz v0, :cond_2
 
-    .line 12
     iget-object v0, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     invoke-interface {v0}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTimeLong()V
@@ -6857,11 +6260,9 @@
     :catchall_0
     move-exception v0
 
-    .line 13
     :try_start_2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 14
     :cond_2
     :goto_0
     monitor-exit v4
@@ -6885,12 +6286,10 @@
 .method public putMapTMCData(II[BLjava/lang/String;Z)V
     .locals 9
 
-    .line 1
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mut_lock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 2
     :try_start_0
     iget-wide v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -6900,7 +6299,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-wide v3, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     move v2, p1
@@ -6915,17 +6313,14 @@
 
     invoke-static/range {v2 .. v8}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeUpdateTmcCache(IJI[BLjava/lang/String;Z)V
 
-    .line 4
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz v0, :cond_0
 
-    .line 5
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     invoke-interface {v0}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTimeLong()V
 
-    .line 6
     :cond_0
     monitor-exit v1
     :try_end_0
@@ -6944,12 +6339,10 @@
 .method public putScenicData(I[BILjava/lang/String;)V
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mut_lock:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
     :try_end_0
@@ -6964,12 +6357,10 @@
     :try_start_1
     const-string v1, "utf-8"
 
-    .line 3
     invoke-virtual {p4, v1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object p4
 
-    .line 4
     array-length v1, p4
 
     int-to-byte v1, v1
@@ -6980,23 +6371,18 @@
 
     add-int/2addr v2, v3
 
-    .line 5
     new-array v8, v2, [B
 
     const/4 v2, 0x0
 
-    .line 6
     aput-byte v1, v8, v2
 
-    .line 7
     invoke-static {p4, v2, v8, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/2addr v1, v3
 
-    .line 8
     invoke-static {p2, v2, v8, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 9
     iget-wide v5, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const/16 v7, 0x65
@@ -7014,11 +6400,9 @@
     :catchall_0
     move-exception p1
 
-    .line 10
     :try_start_2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 11
     :cond_0
     :goto_0
     monitor-exit v0
@@ -7038,17 +6422,14 @@
 .method public removeEngine(I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeRemoveEngine(IJ)V
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateSparseArray:Landroid/util/SparseArray;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->remove(I)V
 
     :cond_0
@@ -7058,7 +6439,6 @@
 .method public removePoiFilter(ILjava/lang/String;)V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -7067,7 +6447,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeRemovePoiFilter(IJLjava/lang/String;)V
 
     :cond_0
@@ -7077,12 +6456,10 @@
 .method public resetRenderTime(I)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-interface {p1}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTimeLongLong()V
 
     :cond_0
@@ -7092,7 +6469,6 @@
 .method public screenToMapGPoint(IFFLandroid/graphics/PointF;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -7105,7 +6481,6 @@
 .method public screenToP20Point(IFFLandroid/graphics/Point;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
     move-result-wide v0
@@ -7118,7 +6493,6 @@
 .method public setBackGroundColor(IFFFF)V
     .locals 7
 
-    .line 1
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     move v0, p1
@@ -7161,11 +6535,9 @@
 
     move v2, p1
 
-    .line 1
     :try_start_0
     invoke-virtual/range {v1 .. v7}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
-    .line 2
     :cond_0
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
@@ -7175,7 +6547,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     monitor-exit p0
 
     return-void
@@ -7191,7 +6562,6 @@
 .method public setEngineVisible(IZ)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, p2, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeSetServiceViewVisible(IZJ)V
@@ -7202,7 +6572,6 @@
 .method public setIndoorBuildingToBeActive(ILjava/lang/String;ILjava/lang/String;)V
     .locals 7
 
-    .line 1
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -7217,7 +6586,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-wide v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -7231,12 +6599,10 @@
 
     invoke-static/range {v1 .. v6}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeSetIndoorBuildingToBeActive(IJLjava/lang/String;ILjava/lang/String;)V
 
-    .line 3
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     if-eqz p1, :cond_1
 
-    .line 4
     invoke-interface {p1}, Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;->resetRenderTimeLongLong()V
 
     :cond_1
@@ -7249,7 +6615,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2, p3}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeSetInternalTexture(IJ[BI)V
@@ -7282,7 +6647,6 @@
 
     sub-float/2addr p2, v1
 
-    .line 1
     :cond_1
     :goto_0
     :try_start_0
@@ -7294,7 +6658,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     monitor-exit p0
 
     return-void
@@ -7312,7 +6675,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
@@ -7322,7 +6684,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     monitor-exit p0
 
     return-void
@@ -7338,7 +6699,6 @@
 .method public setMapCoreListener(Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     return-void
@@ -7349,7 +6709,6 @@
 
     move-object v8, p0
 
-    .line 1
     iget-wide v0, v8, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -7362,7 +6721,6 @@
 
     if-eqz v9, :cond_0
 
-    .line 2
     new-instance v10, Lcom/autonavi/ae/gmap/GLMapEngine$15;
 
     move-object v0, v10
@@ -7406,7 +6764,6 @@
 
     move v3, p2
 
-    .line 1
     invoke-virtual/range {v0 .. v6}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
     return-void
@@ -7415,7 +6772,6 @@
 .method public setMapHeatListener(Lcom/autonavi/ae/gmap/scenic/MapHeatListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mMapHeatListener:Lcom/autonavi/ae/gmap/scenic/MapHeatListener;
 
     return-void
@@ -7424,7 +6780,6 @@
 .method public setMapHeatPoiRegion(ILjava/lang/String;[I[I)V
     .locals 6
 
-    .line 1
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     move v0, p1
@@ -7443,7 +6798,6 @@
 .method public setMapListener(Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mAMapListener:Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;
 
     return-void
@@ -7454,7 +6808,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, p1, p2, v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->setMapState(ILcom/autonavi/ae/gmap/GLMapState;Z)V
 
     return-void
@@ -7465,7 +6818,6 @@
 
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -7477,7 +6829,6 @@
 
     if-eqz p3, :cond_0
 
-    .line 3
     iget-object p3, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-eqz p3, :cond_0
@@ -7490,12 +6841,10 @@
 
     if-eqz p3, :cond_0
 
-    .line 4
     iget-object p3, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     invoke-interface {p3, p2}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->checkMapState(Lcom/autonavi/ae/gmap/GLMapState;)V
 
-    .line 5
     :cond_0
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -7503,7 +6852,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     :cond_1
     monitor-exit p0
 
@@ -7522,7 +6870,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMaxZoomLevel(I)I
 
@@ -7534,14 +6881,12 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMaxZoomLevel(I)I
 
     move-result p2
 
     int-to-float p2, p2
 
-    .line 3
     :cond_0
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->getStateInstanceWithEngineID(I)J
 
@@ -7551,7 +6896,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     monitor-exit p0
 
     return-void
@@ -7567,7 +6911,6 @@
 .method public setMaskColor(II)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeSetMaskColor(IJI)V
@@ -7578,7 +6921,6 @@
 .method public setNaviRouteBoardDataListener(Lcom/autonavi/ae/gmap/listener/RouteBoardDataListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mBoardDataListener:Lcom/autonavi/ae/gmap/listener/RouteBoardDataListener;
 
     return-void
@@ -7595,7 +6937,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateSparseArray:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -7608,7 +6949,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mStateSparseArray:Landroid/util/SparseArray;
 
@@ -7632,7 +6972,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-wide v2, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -7642,7 +6981,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-wide v3, v1, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     move v2, p1
@@ -7661,7 +6999,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     :cond_0
     monitor-exit p0
 
@@ -7692,7 +7029,6 @@
 
     move v3, p2
 
-    .line 1
     invoke-virtual/range {v0 .. v6}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
     return-void
@@ -7701,7 +7037,6 @@
 .method public setScenicListener(Lcom/autonavi/ae/gmap/scenic/ScenicListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mScenicListener:Lcom/autonavi/ae/gmap/scenic/ScenicListener;
 
     return-void
@@ -7714,7 +7049,6 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const/4 p2, 0x0
@@ -7723,7 +7057,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v1, p2, Lcom/autonavi/ae/gmap/scenic/ScenicWidgetItem;->mFilters:[Lcom/autonavi/ae/gmap/scenic/ScenicWidgetItem$ScenicWidgetFilter;
 
@@ -7733,7 +7066,6 @@
 
     new-array v1, v1, [I
 
-    .line 3
     :goto_0
     iget-object v2, p2, Lcom/autonavi/ae/gmap/scenic/ScenicWidgetItem;->mFilters:[Lcom/autonavi/ae/gmap/scenic/ScenicWidgetItem$ScenicWidgetFilter;
 
@@ -7743,7 +7075,6 @@
 
     mul-int/lit8 v3, v0, 0x3
 
-    .line 4
     aget-object v4, v2, v0
 
     iget v4, v4, Lcom/autonavi/ae/gmap/scenic/ScenicWidgetItem$ScenicWidgetFilter;->mMainKey:I
@@ -7752,7 +7083,6 @@
 
     add-int/lit8 v4, v3, 0x1
 
-    .line 5
     aget-object v5, v2, v0
 
     iget v5, v5, Lcom/autonavi/ae/gmap/scenic/ScenicWidgetItem$ScenicWidgetFilter;->mSubKey:I
@@ -7761,7 +7091,6 @@
 
     add-int/lit8 v3, v3, 0x2
 
-    .line 6
     aget-object v2, v2, v0
 
     iget v2, v2, Lcom/autonavi/ae/gmap/scenic/ScenicWidgetItem$ScenicWidgetFilter;->mPoiFlag:I
@@ -7772,7 +7101,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     iget-wide v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
@@ -7788,7 +7116,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     const-wide/16 v2, 0x0
@@ -7797,7 +7124,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeSetSearchedSubwayIds(IJ[Ljava/lang/String;)V
 
     :cond_0
@@ -7809,7 +7135,6 @@
 
     move-object v0, p0
 
-    .line 1
     iget-wide v2, v0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     move v1, p1
@@ -7840,7 +7165,6 @@
 .method public setShowMask(IZ)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeSetShowMask(IJZ)V
@@ -7851,7 +7175,6 @@
 .method public setSrvViewStateBoolValue(IIZ)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2, p3}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeSetSrvViewStateBoolValue(IJIZ)V
@@ -7862,7 +7185,6 @@
 .method public setSrvViewStateFloatValue(IIF)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2, p3}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeSetSrvViewStateFloatValue(IJIF)V
@@ -7873,7 +7195,6 @@
 .method public setSrvViewStateIntValue(III)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mNativeMapengineInstance:J
 
     invoke-static {p1, v0, v1, p2, p3}, Lcom/autonavi/ae/gmap/GLMapEngine;->nativeSetSrvViewStateIntValue(IJII)V
@@ -7884,7 +7205,6 @@
 .method public startMapSlidAnim(ILandroid/graphics/Point;FF)V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     new-instance v7, Lcom/autonavi/ae/gmap/GLMapEngine$12;
@@ -7913,7 +7233,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget v0, p2, Landroid/graphics/Point;->x:I
 
     if-gtz v0, :cond_0
@@ -7924,10 +7243,8 @@
 
     const/4 v0, 0x1
 
-    .line 2
     iput v0, p2, Landroid/graphics/Point;->y:I
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mGlMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
@@ -7939,7 +7256,6 @@
 
     return-void
 
-    .line 4
     :cond_1
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/MapConfig;->getMaxZoomLevel()F
 
@@ -7959,7 +7275,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
@@ -8011,7 +7326,6 @@
     :cond_1
     move v6, p4
 
-    .line 1
     iget-object p4, p0, Lcom/autonavi/ae/gmap/GLMapEngine;->mapcoreListener:Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 
     new-instance v7, Lcom/autonavi/ae/gmap/GLMapEngine$10;
@@ -8040,7 +7354,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     array-length v1, p1
 
@@ -8048,7 +7361,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
 
     move-result-object v1
@@ -8059,12 +7371,10 @@
 
     move-result-object v1
 
-    .line 3
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v3
 
-    .line 4
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v4
@@ -8079,7 +7389,6 @@
     :goto_1
     if-ge v6, v4, :cond_0
 
-    .line 5
     invoke-virtual {v1, v5, v6, p2}, Landroid/graphics/Bitmap;->setPixel(III)V
 
     add-int/lit8 v6, v6, 0x1
@@ -8091,7 +7400,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-direct {p0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->bitmap2bytes(Landroid/graphics/Bitmap;)[B
 
@@ -8101,11 +7409,9 @@
 
     move-object p2, p1
 
-    .line 7
     :cond_2
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 8
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -8117,7 +7423,6 @@
     :catchall_0
     move-exception p2
 
-    .line 9
     invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_2

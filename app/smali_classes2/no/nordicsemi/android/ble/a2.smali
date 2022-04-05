@@ -1,6 +1,5 @@
 .class public final Lno/nordicsemi/android/ble/a2;
 .super Lno/nordicsemi/android/ble/t1;
-.source "ConditionalWaitRequest.java"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/f2;
@@ -61,7 +60,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/a2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/a2;
 
     return-object p0
@@ -86,7 +84,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-super {p0, p1}, Lno/nordicsemi/android/ble/p2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/p2;
 
     return-object p0
@@ -101,7 +98,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/a2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/a2;
 
     return-object p0
@@ -112,7 +108,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lno/nordicsemi/android/ble/a2;->u:Lno/nordicsemi/android/ble/a2$a;
 
@@ -143,7 +138,6 @@
 
     const-string v3, "Error while checking predicate"
 
-    .line 2
     invoke-static {v2, v3, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     return v0

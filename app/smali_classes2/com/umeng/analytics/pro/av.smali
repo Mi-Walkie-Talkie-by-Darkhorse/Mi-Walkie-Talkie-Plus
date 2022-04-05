@@ -1,13 +1,11 @@
 .class public Lcom/umeng/analytics/pro/av;
 .super Ljava/lang/Object;
-.source "TEnumHelper.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +33,6 @@
 
     new-array v3, v2, [Ljava/lang/Class;
 
-    .line 1
     sget-object v4, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     const/4 v5, 0x0
@@ -48,7 +45,6 @@
 
     new-array v1, v2, [Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1

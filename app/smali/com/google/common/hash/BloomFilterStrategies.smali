@@ -1,6 +1,5 @@
 .class abstract enum Lcom/google/common/hash/BloomFilterStrategies;
 .super Ljava/lang/Enum;
-.source "BloomFilterStrategies.java"
 
 # interfaces
 .implements Lcom/google/common/hash/BloomFilter$Strategy;
@@ -35,7 +34,6 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/google/common/hash/BloomFilterStrategies$1;
 
     const/4 v1, 0x0
@@ -46,7 +44,6 @@
 
     sput-object v0, Lcom/google/common/hash/BloomFilterStrategies;->MURMUR128_MITZ_32:Lcom/google/common/hash/BloomFilterStrategies;
 
-    .line 2
     new-instance v0, Lcom/google/common/hash/BloomFilterStrategies$2;
 
     const/4 v2, 0x1
@@ -61,7 +58,6 @@
 
     new-array v3, v3, [Lcom/google/common/hash/BloomFilterStrategies;
 
-    .line 3
     sget-object v4, Lcom/google/common/hash/BloomFilterStrategies;->MURMUR128_MITZ_32:Lcom/google/common/hash/BloomFilterStrategies;
 
     aput-object v4, v3, v1
@@ -81,7 +77,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -90,7 +85,6 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/common/hash/BloomFilterStrategies$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/google/common/hash/BloomFilterStrategies;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -99,7 +93,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/hash/BloomFilterStrategies;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/common/hash/BloomFilterStrategies;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -114,7 +107,6 @@
 .method public static values()[Lcom/google/common/hash/BloomFilterStrategies;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/hash/BloomFilterStrategies;->$VALUES:[Lcom/google/common/hash/BloomFilterStrategies;
 
     invoke-virtual {v0}, [Lcom/google/common/hash/BloomFilterStrategies;->clone()Ljava/lang/Object;

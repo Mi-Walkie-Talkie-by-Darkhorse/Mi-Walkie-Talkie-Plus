@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Iterators$MergingIterator$1;
 .super Ljava/lang/Object;
-.source "Iterators.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -36,7 +35,6 @@
 .method constructor <init>(Lcom/google/common/collect/Iterators$MergingIterator;Ljava/util/Comparator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Iterators$MergingIterator$1;->this$0:Lcom/google/common/collect/Iterators$MergingIterator;
 
     iput-object p2, p0, Lcom/google/common/collect/Iterators$MergingIterator$1;->val$itemComparator:Ljava/util/Comparator;
@@ -60,7 +58,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/Iterators$MergingIterator$1;->val$itemComparator:Ljava/util/Comparator;
 
     invoke-interface {p1}, Lcom/google/common/collect/PeekingIterator;->peek()Ljava/lang/Object;
@@ -81,7 +78,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/common/collect/PeekingIterator;
 
     check-cast p2, Lcom/google/common/collect/PeekingIterator;

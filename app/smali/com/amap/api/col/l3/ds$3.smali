@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ds$3;
 .super Ljava/util/concurrent/FutureTask;
-.source "AsyncTask.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/ds;Ljava/util/concurrent/Callable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ds$3;->a:Lcom/amap/api/col/l3/ds;
 
     invoke-direct {p0, p2}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
@@ -42,7 +40,6 @@
 .method protected final done()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ds$3;->a:Lcom/amap/api/col/l3/ds;
 
@@ -64,7 +61,6 @@
 
     return-void
 
-    .line 2
     :catch_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ds$3;->a:Lcom/amap/api/col/l3/ds;
 
@@ -77,10 +73,8 @@
     :catch_1
     move-exception v0
 
-    .line 3
     new-instance v1, Ljava/lang/RuntimeException;
 
-    .line 4
     invoke-virtual {v0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
 
     move-result-object v0

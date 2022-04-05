@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/bottomsheet/BottomSheetDialog$3;
 .super Ljava/lang/Object;
-.source "BottomSheetDialog.java"
 
 # interfaces
 .implements Landroid/view/View$OnTouchListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/bottomsheet/BottomSheetDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetDialog$3;->this$0:Lcom/google/android/material/bottomsheet/BottomSheetDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

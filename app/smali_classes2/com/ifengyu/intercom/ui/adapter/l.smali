@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/adapter/l;
 .super Lcom/jude/rollviewpager/d/a;
-.source "PicLoopPagerAdapter.java"
 
 
 # instance fields
@@ -31,49 +30,40 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p2}, Lcom/jude/rollviewpager/d/a;-><init>(Lcom/jude/rollviewpager/RollPagerView;)V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/l;->c:Ljava/util/ArrayList;
 
-    .line 3
     new-instance p1, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;
 
     invoke-direct {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;-><init>()V
 
     const p2, 0x7f0800e5
 
-    .line 4
     invoke-virtual {p1, p2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;->showImageForEmptyUri(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1, p2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;->showImageOnFail(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;
 
     move-result-object p1
 
     const p2, 0x7f0800e6
 
-    .line 6
     invoke-virtual {p1, p2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;->showImageOnLoading(I)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;
 
     move-result-object p1
 
     const/4 p2, 0x1
 
-    .line 7
     invoke-virtual {p1, p2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;->cacheInMemory(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;
 
     move-result-object p1
 
-    .line 8
     invoke-virtual {p1, p2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;->cacheOnDisk(Z)Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;
 
     move-result-object p1
 
-    .line 9
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;->build()Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     move-result-object p1
@@ -88,7 +78,6 @@
 .method public a()I
     .locals 1
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/l;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -101,7 +90,6 @@
 .method public a(Landroid/view/ViewGroup;I)Landroid/view/View;
     .locals 4
 
-    .line 1
     new-instance v0, Landroid/widget/ImageView;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
@@ -110,12 +98,10 @@
 
     invoke-direct {v0, p1}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;)V
 
-    .line 2
     sget-object p1, Landroid/widget/ImageView$ScaleType;->CENTER_CROP:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
-    .line 3
     new-instance p1, Landroid/view/ViewGroup$LayoutParams;
 
     const/4 v1, -0x1
@@ -124,7 +110,6 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/ImageView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 4
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object p1
@@ -163,7 +148,6 @@
 
     invoke-virtual {p1, v1, v0, v3}, Lcom/nostra13/universalimageloader/core/ImageLoader;->displayImage(Ljava/lang/String;Landroid/widget/ImageView;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/l;->c:Ljava/util/ArrayList;
 
     invoke-virtual {p1, p2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -180,7 +164,6 @@
 
     move-result-object p1
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object p2
@@ -207,7 +190,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
@@ -231,7 +213,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_1
     :goto_0
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
@@ -257,7 +238,6 @@
         }
     .end annotation
 
-    .line 10
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/l;->c:Ljava/util/ArrayList;
 
     return-void

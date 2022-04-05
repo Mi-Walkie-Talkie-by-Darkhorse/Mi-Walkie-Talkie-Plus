@@ -1,6 +1,5 @@
 .class Landroidx/transition/z$a;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "TranslationAnimationCreator.java"
 
 # interfaces
 .implements Landroidx/transition/Transition$g;
@@ -41,16 +40,12 @@
 .method constructor <init>(Landroid/view/View;Landroid/view/View;IIFF)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/transition/z$a;->b:Landroid/view/View;
 
-    .line 3
     iput-object p2, p0, Landroidx/transition/z$a;->a:Landroid/view/View;
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
 
     move-result p1
@@ -63,7 +58,6 @@
 
     iput p3, p0, Landroidx/transition/z$a;->c:I
 
-    .line 5
     iget-object p1, p0, Landroidx/transition/z$a;->b:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
@@ -78,13 +72,10 @@
 
     iput p4, p0, Landroidx/transition/z$a;->d:I
 
-    .line 6
     iput p5, p0, Landroidx/transition/z$a;->h:F
 
-    .line 7
     iput p6, p0, Landroidx/transition/z$a;->i:F
 
-    .line 8
     iget-object p1, p0, Landroidx/transition/z$a;->a:Landroid/view/View;
 
     sget p2, Landroidx/transition/R$id;->transition_position:I
@@ -99,7 +90,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 9
     iget-object p1, p0, Landroidx/transition/z$a;->a:Landroid/view/View;
 
     sget p2, Landroidx/transition/R$id;->transition_position:I
@@ -117,7 +107,6 @@
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 3
 
-    .line 1
     iget-object p1, p0, Landroidx/transition/z$a;->e:[I
 
     if-nez p1, :cond_0
@@ -126,10 +115,8 @@
 
     new-array p1, p1, [I
 
-    .line 2
     iput-object p1, p0, Landroidx/transition/z$a;->e:[I
 
-    .line 3
     :cond_0
     iget-object p1, p0, Landroidx/transition/z$a;->e:[I
 
@@ -153,7 +140,6 @@
 
     aput v1, p1, v0
 
-    .line 4
     iget-object p1, p0, Landroidx/transition/z$a;->e:[I
 
     const/4 v0, 0x1
@@ -176,7 +162,6 @@
 
     aput v1, p1, v0
 
-    .line 5
     iget-object p1, p0, Landroidx/transition/z$a;->a:Landroid/view/View;
 
     sget v0, Landroidx/transition/R$id;->transition_position:I
@@ -191,7 +176,6 @@
 .method public onAnimationPause(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/transition/z$a;->b:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
@@ -200,7 +184,6 @@
 
     iput p1, p0, Landroidx/transition/z$a;->f:F
 
-    .line 2
     iget-object p1, p0, Landroidx/transition/z$a;->b:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
@@ -209,14 +192,12 @@
 
     iput p1, p0, Landroidx/transition/z$a;->g:F
 
-    .line 3
     iget-object p1, p0, Landroidx/transition/z$a;->b:Landroid/view/View;
 
     iget v0, p0, Landroidx/transition/z$a;->h:F
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 4
     iget-object p1, p0, Landroidx/transition/z$a;->b:Landroid/view/View;
 
     iget v0, p0, Landroidx/transition/z$a;->i:F
@@ -229,14 +210,12 @@
 .method public onAnimationResume(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/transition/z$a;->b:Landroid/view/View;
 
     iget v0, p0, Landroidx/transition/z$a;->f:F
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 2
     iget-object p1, p0, Landroidx/transition/z$a;->b:Landroid/view/View;
 
     iget v0, p0, Landroidx/transition/z$a;->g:F
@@ -263,21 +242,18 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/transition/z$a;->b:Landroid/view/View;
 
     iget v1, p0, Landroidx/transition/z$a;->h:F
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 2
     iget-object v0, p0, Landroidx/transition/z$a;->b:Landroid/view/View;
 
     iget v1, p0, Landroidx/transition/z$a;->i:F
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationY(F)V
 
-    .line 3
     invoke-virtual {p1, p0}, Landroidx/transition/Transition;->removeListener(Landroidx/transition/Transition$g;)Landroidx/transition/Transition;
 
     return-void

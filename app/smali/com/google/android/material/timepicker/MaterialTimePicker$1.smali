@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/timepicker/MaterialTimePicker$1;
 .super Ljava/lang/Object;
-.source "MaterialTimePicker.java"
 
 # interfaces
 .implements Lcom/google/android/material/timepicker/TimePickerView$OnDoubleTapListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/timepicker/MaterialTimePicker;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$1;->this$0:Lcom/google/android/material/timepicker/MaterialTimePicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public onDoubleTap()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$1;->this$0:Lcom/google/android/material/timepicker/MaterialTimePicker;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/google/android/material/timepicker/MaterialTimePicker;->access$402(Lcom/google/android/material/timepicker/MaterialTimePicker;I)I
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$1;->this$0:Lcom/google/android/material/timepicker/MaterialTimePicker;
 
     invoke-static {v0}, Lcom/google/android/material/timepicker/MaterialTimePicker;->access$500(Lcom/google/android/material/timepicker/MaterialTimePicker;)Lcom/google/android/material/button/MaterialButton;
@@ -54,7 +50,6 @@
 
     invoke-static {v0, v1}, Lcom/google/android/material/timepicker/MaterialTimePicker;->access$600(Lcom/google/android/material/timepicker/MaterialTimePicker;Lcom/google/android/material/button/MaterialButton;)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$1;->this$0:Lcom/google/android/material/timepicker/MaterialTimePicker;
 
     invoke-static {v0}, Lcom/google/android/material/timepicker/MaterialTimePicker;->access$700(Lcom/google/android/material/timepicker/MaterialTimePicker;)Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;

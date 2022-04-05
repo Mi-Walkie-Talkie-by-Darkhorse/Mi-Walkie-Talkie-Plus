@@ -1,6 +1,5 @@
 .class interface abstract Lio/reactivex/internal/operators/flowable/FlowableConcatMap$ConcatMapSupport;
 .super Ljava/lang/Object;
-.source "FlowableConcatMap.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class synthetic Landroidx/core/graphics/b$a;
 .super Ljava/lang/Object;
-.source "BlendModeUtils.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Landroidx/core/graphics/BlendModeCompat;->values()[Landroidx/core/graphics/BlendModeCompat;
 
     move-result-object v0

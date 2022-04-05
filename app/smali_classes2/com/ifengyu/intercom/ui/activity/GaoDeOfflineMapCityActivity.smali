@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;
 .super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
-.source "GaoDeOfflineMapCityActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -75,17 +74,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->z:Ljava/util/List;
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity$a;-><init>(Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;)V
@@ -98,7 +94,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;)Lcom/ifengyu/intercom/ui/adapter/f;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->A:Lcom/ifengyu/intercom/ui/adapter/f;
 
     return-object p0
@@ -107,7 +102,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->z()V
 
     return-void
@@ -120,7 +114,6 @@
 
     const-string v0, "quanguogaiyaotu"
 
-    .line 2
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -134,7 +127,6 @@
     :cond_0
     const-string v0, "xian"
 
-    .line 3
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -148,7 +140,6 @@
     :cond_1
     const-string v0, "yaan"
 
-    .line 4
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -162,7 +153,6 @@
     :cond_2
     const-string v0, "liuan"
 
-    .line 5
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -176,7 +166,6 @@
     :cond_3
     const-string v0, "huaian"
 
-    .line 6
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -190,7 +179,6 @@
     :cond_4
     const-string v0, "guanan"
 
-    .line 7
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -204,7 +192,6 @@
     :cond_5
     const-string v0, "taian"
 
-    .line 8
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -218,7 +205,6 @@
     :cond_6
     const-string v0, "xianggang"
 
-    .line 9
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -232,7 +218,6 @@
     :cond_7
     const-string v0, "aomen"
 
-    .line 10
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -243,7 +228,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_8
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -280,7 +264,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->y()V
 
     return-void
@@ -289,7 +272,6 @@
 .method private x()V
     .locals 7
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/v;->b()Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     move-result-object v0
@@ -298,14 +280,12 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->z:Ljava/util/List;
 
     const/4 v2, 0x0
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 3
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
@@ -314,7 +294,6 @@
 
     const/4 v3, 0x0
 
-    .line 4
     :goto_0
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -322,14 +301,12 @@
 
     if-ge v3, v4, :cond_3
 
-    .line 5
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
 
-    .line 6
     invoke-virtual {v4}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object v5
@@ -342,7 +319,6 @@
 
     if-eq v5, v6, :cond_0
 
-    .line 7
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->z:Ljava/util/List;
 
     add-int/lit8 v6, v3, 0x1
@@ -351,7 +327,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_0
     invoke-virtual {v4}, Lcom/amap/api/maps/offlinemap/Province;->getProvinceName()Ljava/lang/String;
 
@@ -359,7 +334,6 @@
 
     const v6, 0x7f110055
 
-    .line 9
     invoke-virtual {p0, v6}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v6
@@ -430,7 +404,6 @@
 
     if-eqz v5, :cond_2
 
-    .line 10
     :cond_1
     invoke-virtual {v4}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
@@ -444,7 +417,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_3
     new-instance v0, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
 
@@ -452,7 +424,6 @@
 
     const v3, 0x7f1103a2
 
-    .line 12
     invoke-virtual {p0, v3}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -461,17 +432,14 @@
 
     const v3, 0x7f1103a3
 
-    .line 13
     invoke-virtual {p0, v3}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/amap/api/maps/offlinemap/Province;->setPinyin(Ljava/lang/String;)V
 
-    .line 14
     invoke-virtual {v0, v1}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->setCityList(Ljava/util/ArrayList;)V
 
-    .line 15
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->z:Ljava/util/List;
 
     invoke-interface {v1, v2, v0}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
@@ -482,7 +450,6 @@
 .method private y()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->D:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getState()I
@@ -525,31 +492,26 @@
 
     goto/16 :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->y:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     goto/16 :goto_0
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->y:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -562,7 +524,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     const v1, 0x7f110110
@@ -575,18 +536,15 @@
 
     goto/16 :goto_0
 
-    .line 8
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->y:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -601,7 +559,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     const v1, 0x7f110393
@@ -614,18 +571,15 @@
 
     goto :goto_0
 
-    .line 12
     :cond_3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->y:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -638,7 +592,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 15
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     const v1, 0x7f110363
@@ -647,18 +600,15 @@
 
     goto :goto_0
 
-    .line 16
     :cond_4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->y:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 18
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -673,7 +623,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 19
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     const v1, 0x7f110111
@@ -686,26 +635,22 @@
 
     goto :goto_0
 
-    .line 20
     :cond_5
     :pswitch_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->y:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 21
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 22
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     const/high16 v1, -0x10000
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 23
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x:Landroid/widget/TextView;
 
     const v1, 0x7f110272
@@ -730,7 +675,6 @@
 .method private z()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->B:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getState()I
@@ -773,31 +717,26 @@
 
     goto/16 :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->u:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setVisibility(I)V
 
     goto/16 :goto_0
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->u:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -810,7 +749,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     const v1, 0x7f110110
@@ -823,18 +761,15 @@
 
     goto/16 :goto_0
 
-    .line 8
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->u:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -849,7 +784,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     const v1, 0x7f110393
@@ -862,18 +796,15 @@
 
     goto :goto_0
 
-    .line 12
     :cond_3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->u:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -886,7 +817,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 15
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     const v1, 0x7f110363
@@ -895,18 +825,15 @@
 
     goto :goto_0
 
-    .line 16
     :cond_4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->u:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 18
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -919,7 +846,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 19
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     const v1, 0x7f110111
@@ -932,26 +858,22 @@
 
     goto :goto_0
 
-    .line 20
     :cond_5
     :pswitch_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->u:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 21
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 22
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     const/high16 v1, -0x10000
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 23
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->t:Landroid/widget/TextView;
 
     const v1, 0x7f110272
@@ -980,7 +902,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -999,19 +920,16 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->C:Ljava/lang/String;
 
     if-eqz p1, :cond_3
 
-    .line 4
     :try_start_0
     invoke-static {}, Lcom/ifengyu/intercom/i/v;->b()Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
@@ -1028,12 +946,10 @@
     :catch_0
     move-exception p1
 
-    .line 5
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_0
 
-    .line 6
     :cond_2
     :try_start_1
     invoke-static {}, Lcom/ifengyu/intercom/i/v;->b()Lcom/amap/api/maps/offlinemap/OfflineMapManager;
@@ -1051,7 +967,6 @@
     :catch_1
     move-exception p1
 
-    .line 7
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_3
@@ -1062,24 +977,18 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c002c
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->setContentView(I)V
 
-    .line 3
     invoke-static {p0}, Lbutterknife/ButterKnife;->bind(Landroid/app/Activity;)Lbutterknife/Unbinder;
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->x()V
 
-    .line 5
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->w()V
 
-    .line 6
     invoke-static {p0}, Lcom/ifengyu/intercom/i/v;->a(Lcom/ifengyu/intercom/i/v$b;)V
 
     return-void
@@ -1088,10 +997,8 @@
 .method protected onDestroy()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onDestroy()V
 
-    .line 2
     invoke-static {p0}, Lcom/ifengyu/intercom/i/v;->b(Lcom/ifengyu/intercom/i/v$b;)V
 
     return-void
@@ -1100,17 +1007,14 @@
 .method public onDownload(IILjava/lang/String;)V
     .locals 8
 
-    .line 1
     iget-boolean p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->F:Z
 
     const/4 p2, 0x1
 
     if-nez p1, :cond_1
 
-    .line 2
     iput-boolean p2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->F:Z
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->B:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     const-string v0, "M"
@@ -1121,7 +1025,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getSize()J
 
     move-result-wide v5
@@ -1140,7 +1043,6 @@
 
     div-double/2addr v5, v1
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->s:Landroid/widget/TextView;
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -1161,7 +1063,6 @@
 
     invoke-virtual {p1, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 6
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->D:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
@@ -1183,7 +1084,6 @@
 
     div-double/2addr v3, v1
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->w:Landroid/widget/TextView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1204,7 +1104,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 8
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->G:Landroid/os/Handler;
 
@@ -1212,7 +1111,6 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->C:Ljava/lang/String;
 
     if-eqz p1, :cond_2
@@ -1231,12 +1129,10 @@
 
     if-nez p1, :cond_2
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->G:Landroid/os/Handler;
 
     invoke-virtual {p1, p2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 11
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->E:Ljava/lang/String;
 
@@ -1246,7 +1142,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->G:Landroid/os/Handler;
 
     const/4 p2, 0x2
@@ -1266,12 +1161,10 @@
 .method public w()V
     .locals 12
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->leftBackIv:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->titleText:Landroid/widget/TextView;
 
     const v1, 0x7f11008c
@@ -1286,14 +1179,12 @@
 
     const v1, 0x7f0c005e
 
-    .line 3
     invoke-static {p0, v1, v0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v1
 
     const v2, 0x7f0900fc
 
-    .line 4
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1302,12 +1193,10 @@
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->q:Landroid/widget/LinearLayout;
 
-    .line 5
     invoke-virtual {v2, p0}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v2, 0x7f0900fa
 
-    .line 6
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1318,7 +1207,6 @@
 
     const v2, 0x7f0900f9
 
-    .line 7
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1329,7 +1217,6 @@
 
     const v2, 0x7f0900fb
 
-    .line 8
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1340,7 +1227,6 @@
 
     const v2, 0x7f0900f8
 
-    .line 9
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1351,7 +1237,6 @@
 
     const v2, 0x7f0900f6
 
-    .line 10
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1360,12 +1245,10 @@
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->v:Landroid/widget/LinearLayout;
 
-    .line 11
     invoke-virtual {v2, p0}, Landroid/widget/LinearLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v2, 0x7f090334
 
-    .line 12
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1374,7 +1257,6 @@
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->H:Landroid/widget/TextView;
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/intercom/i/c0;->a()Z
 
     move-result v2
@@ -1383,7 +1265,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 14
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->H:Landroid/widget/TextView;
 
     const v4, 0x7f1100c3
@@ -1396,7 +1277,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_0
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->H:Landroid/widget/TextView;
 
@@ -1409,7 +1289,6 @@
     :goto_0
     const v2, 0x7f0900f5
 
-    .line 16
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1420,7 +1299,6 @@
 
     const v2, 0x7f0900f7
 
-    .line 17
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1431,7 +1309,6 @@
 
     const v2, 0x7f0900f4
 
-    .line 18
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -1440,7 +1317,6 @@
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->y:Landroid/widget/ImageView;
 
-    .line 19
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->e()Ljava/lang/String;
 
     move-result-object v2
@@ -1455,7 +1331,6 @@
 
     if-nez v2, :cond_1
 
-    .line 20
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->q:Landroid/widget/LinearLayout;
 
     const/16 v9, 0x8
@@ -1464,7 +1339,6 @@
 
     goto :goto_2
 
-    .line 21
     :cond_1
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->q:Landroid/widget/LinearLayout;
 
@@ -1472,7 +1346,6 @@
 
     invoke-virtual {v2, v9}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 22
     invoke-static {}, Lcom/ifengyu/intercom/i/v;->b()Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     move-result-object v2
@@ -1487,14 +1360,12 @@
 
     if-eqz v2, :cond_3
 
-    .line 23
     invoke-static {}, Lcom/ifengyu/intercom/i/c0;->a()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    .line 24
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->B:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     invoke-virtual {v2}, Lcom/amap/api/maps/offlinemap/City;->getPinyin()Ljava/lang/String;
@@ -1509,14 +1380,12 @@
 
     move-result-object v2
 
-    .line 25
     iget-object v9, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->r:Landroid/widget/TextView;
 
     invoke-virtual {v9, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_1
 
-    .line 26
     :cond_2
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->r:Landroid/widget/TextView;
 
@@ -1528,7 +1397,6 @@
 
     invoke-virtual {v2, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 27
     :goto_1
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->B:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
@@ -1550,7 +1418,6 @@
 
     div-double/2addr v9, v5
 
-    .line 28
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->s:Landroid/widget/TextView;
 
     new-instance v11, Ljava/lang/StringBuilder;
@@ -1571,11 +1438,9 @@
 
     invoke-virtual {v2, v9}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 29
     :cond_3
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->z()V
 
-    .line 30
     :goto_2
     invoke-virtual {p0, v3}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
@@ -1583,7 +1448,6 @@
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->E:Ljava/lang/String;
 
-    .line 31
     invoke-static {}, Lcom/ifengyu/intercom/i/v;->b()Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     move-result-object v2
@@ -1596,7 +1460,6 @@
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->D:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 32
     invoke-virtual {v2}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getSize()J
 
     move-result-wide v2
@@ -1615,7 +1478,6 @@
 
     div-double/2addr v2, v5
 
-    .line 33
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->w:Landroid/widget/TextView;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -1636,15 +1498,12 @@
 
     invoke-virtual {v5, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 34
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->y()V
 
-    .line 35
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->cityExpandableListView:Landroid/widget/ExpandableListView;
 
     invoke-virtual {v2, v1}, Landroid/widget/ExpandableListView;->addHeaderView(Landroid/view/View;)V
 
-    .line 36
     new-instance v1, Lcom/ifengyu/intercom/ui/adapter/f;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->z:Ljava/util/List;
@@ -1657,26 +1516,22 @@
 
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->A:Lcom/ifengyu/intercom/ui/adapter/f;
 
-    .line 37
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->cityExpandableListView:Landroid/widget/ExpandableListView;
 
     invoke-virtual {v2, v1}, Landroid/widget/ExpandableListView;->setAdapter(Landroid/widget/ExpandableListAdapter;)V
 
-    .line 38
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->cityExpandableListView:Landroid/widget/ExpandableListView;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->A:Lcom/ifengyu/intercom/ui/adapter/f;
 
     invoke-virtual {v1, v2}, Landroid/widget/ExpandableListView;->setOnGroupCollapseListener(Landroid/widget/ExpandableListView$OnGroupCollapseListener;)V
 
-    .line 39
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->cityExpandableListView:Landroid/widget/ExpandableListView;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->A:Lcom/ifengyu/intercom/ui/adapter/f;
 
     invoke-virtual {v1, v2}, Landroid/widget/ExpandableListView;->setOnGroupExpandListener(Landroid/widget/ExpandableListView$OnGroupExpandListener;)V
 
-    .line 40
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeOfflineMapCityActivity;->cityExpandableListView:Landroid/widget/ExpandableListView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ExpandableListView;->setGroupIndicator(Landroid/graphics/drawable/Drawable;)V

@@ -1,6 +1,5 @@
 .class public abstract Lio/reactivex/Maybe;
 .super Ljava/lang/Object;
-.source "Maybe.java"
 
 # interfaces
 .implements Lio/reactivex/MaybeSource;
@@ -23,7 +22,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -54,10 +52,8 @@
 
     const-string v0, "sources is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeAmb;
 
     const/4 v1, 0x0
@@ -92,19 +88,16 @@
         value = "none"
     .end annotation
 
-    .line 1
     array-length v0, p0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lio/reactivex/Maybe;->empty()Lio/reactivex/Maybe;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_0
     array-length v0, p0
 
@@ -114,7 +107,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     aget-object p0, p0, v0
 
     invoke-static {p0}, Lio/reactivex/Maybe;->wrap(Lio/reactivex/MaybeSource;)Lio/reactivex/Maybe;
@@ -123,7 +115,6 @@
 
     return-object p0
 
-    .line 5
     :cond_1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeAmb;
 
@@ -167,7 +158,6 @@
 
     const/4 v0, 0x2
 
-    .line 15
     invoke-static {p0, v0}, Lio/reactivex/Maybe;->concat(Lc/a/b;I)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -204,15 +194,12 @@
 
     const-string v0, "sources is null"
 
-    .line 16
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "prefetch"
 
-    .line 17
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->verifyPositive(ILjava/lang/String;)I
 
-    .line 18
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableConcatMapPublisher;
 
     invoke-static {}, Lio/reactivex/internal/operators/maybe/MaybeToPublisher;->instance()Lio/reactivex/functions/Function;
@@ -259,12 +246,10 @@
 
     const-string v0, "source1 is null"
 
-    .line 3
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 4
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const/4 v0, 0x2
@@ -279,7 +264,6 @@
 
     aput-object p1, v0, p0
 
-    .line 5
     invoke-static {v0}, Lio/reactivex/Maybe;->concatArray([Lio/reactivex/MaybeSource;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -318,17 +302,14 @@
 
     const-string v0, "source1 is null"
 
-    .line 6
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 7
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 8
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const/4 v0, 0x3
@@ -347,7 +328,6 @@
 
     aput-object p2, v0, p0
 
-    .line 9
     invoke-static {v0}, Lio/reactivex/Maybe;->concatArray([Lio/reactivex/MaybeSource;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -388,22 +368,18 @@
 
     const-string v0, "source1 is null"
 
-    .line 10
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 11
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 12
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source4 is null"
 
-    .line 13
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const/4 v0, 0x4
@@ -426,7 +402,6 @@
 
     aput-object p3, v0, p0
 
-    .line 14
     invoke-static {v0}, Lio/reactivex/Maybe;->concatArray([Lio/reactivex/MaybeSource;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -463,10 +438,8 @@
 
     const-string v0, "sources is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeConcatIterable;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeConcatIterable;-><init>(Ljava/lang/Iterable;)V
@@ -505,22 +478,18 @@
 
     const-string v0, "sources is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     array-length v0, p0
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-static {}, Lio/reactivex/Flowable;->empty()Lio/reactivex/Flowable;
 
     move-result-object p0
 
     return-object p0
 
-    .line 4
     :cond_0
     array-length v0, p0
 
@@ -528,7 +497,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 5
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeToFlowable;
 
     const/4 v1, 0x0
@@ -543,7 +511,6 @@
 
     return-object p0
 
-    .line 6
     :cond_1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeConcatArray;
 
@@ -581,19 +548,16 @@
         value = "none"
     .end annotation
 
-    .line 1
     array-length v0, p0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lio/reactivex/Flowable;->empty()Lio/reactivex/Flowable;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_0
     array-length v0, p0
 
@@ -601,7 +565,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 4
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeToFlowable;
 
     const/4 v1, 0x0
@@ -616,7 +579,6 @@
 
     return-object p0
 
-    .line 5
     :cond_1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeConcatArrayDelayError;
 
@@ -654,7 +616,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lio/reactivex/Flowable;->fromArray([Ljava/lang/Object;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -697,7 +658,6 @@
         value = "none"
     .end annotation
 
-    .line 3
     invoke-static {p0}, Lio/reactivex/Flowable;->fromPublisher(Lc/a/b;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -742,10 +702,8 @@
 
     const-string v0, "sources is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p0}, Lio/reactivex/Flowable;->fromIterable(Ljava/lang/Iterable;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -788,7 +746,6 @@
         value = "none"
     .end annotation
 
-    .line 2
     invoke-static {p0}, Lio/reactivex/Flowable;->fromPublisher(Lc/a/b;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -831,7 +788,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lio/reactivex/Flowable;->fromIterable(Ljava/lang/Iterable;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -870,10 +826,8 @@
 
     const-string v0, "onSubscribe is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeCreate;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeCreate;-><init>(Lio/reactivex/MaybeOnSubscribe;)V
@@ -910,10 +864,8 @@
 
     const-string v0, "maybeSupplier is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeDefer;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeDefer;-><init>(Ljava/util/concurrent/Callable;)V
@@ -944,7 +896,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     sget-object v0, Lio/reactivex/internal/operators/maybe/MaybeEmpty;->INSTANCE:Lio/reactivex/internal/operators/maybe/MaybeEmpty;
 
     invoke-static {v0}, Lio/reactivex/plugins/RxJavaPlugins;->onAssembly(Lio/reactivex/Maybe;)Lio/reactivex/Maybe;
@@ -977,10 +928,8 @@
 
     const-string v0, "exception is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeError;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeError;-><init>(Ljava/lang/Throwable;)V
@@ -1017,10 +966,8 @@
 
     const-string v0, "errorSupplier is null"
 
-    .line 3
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 4
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeErrorCallable;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeErrorCallable;-><init>(Ljava/util/concurrent/Callable;)V
@@ -1055,10 +1002,8 @@
 
     const-string v0, "run is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFromAction;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeFromAction;-><init>(Lio/reactivex/functions/Action;)V
@@ -1097,10 +1042,8 @@
 
     const-string v0, "callable is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFromCallable;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeFromCallable;-><init>(Ljava/util/concurrent/Callable;)V
@@ -1135,10 +1078,8 @@
 
     const-string v0, "completableSource is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFromCompletable;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeFromCompletable;-><init>(Lio/reactivex/CompletableSource;)V
@@ -1173,10 +1114,8 @@
 
     const-string v0, "future is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFromFuture;
 
     const-wide/16 v1, 0x0
@@ -1217,15 +1156,12 @@
 
     const-string v0, "future is null"
 
-    .line 3
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "unit is null"
 
-    .line 4
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 5
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFromFuture;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lio/reactivex/internal/operators/maybe/MaybeFromFuture;-><init>(Ljava/util/concurrent/Future;JLjava/util/concurrent/TimeUnit;)V
@@ -1260,10 +1196,8 @@
 
     const-string v0, "run is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFromRunnable;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeFromRunnable;-><init>(Ljava/lang/Runnable;)V
@@ -1298,10 +1232,8 @@
 
     const-string v0, "singleSource is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFromSingle;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeFromSingle;-><init>(Lio/reactivex/SingleSource;)V
@@ -1334,10 +1266,8 @@
 
     const-string v0, "item is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeJust;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeJust;-><init>(Ljava/lang/Object;)V
@@ -1378,7 +1308,6 @@
 
     const v0, 0x7fffffff
 
-    .line 2
     invoke-static {p0, v0}, Lio/reactivex/Maybe;->merge(Lc/a/b;I)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -1415,15 +1344,12 @@
 
     const-string v0, "source is null"
 
-    .line 3
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "maxConcurrency"
 
-    .line 4
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->verifyPositive(ILjava/lang/String;)I
 
-    .line 5
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableFlatMapPublisher;
 
     invoke-static {}, Lio/reactivex/internal/operators/maybe/MaybeToPublisher;->instance()Lio/reactivex/functions/Function;
@@ -1478,12 +1404,10 @@
 
     const-string v0, "source1 is null"
 
-    .line 8
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 9
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const/4 v0, 0x2
@@ -1498,7 +1422,6 @@
 
     aput-object p1, v0, p0
 
-    .line 10
     invoke-static {v0}, Lio/reactivex/Maybe;->mergeArray([Lio/reactivex/MaybeSource;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -1537,17 +1460,14 @@
 
     const-string v0, "source1 is null"
 
-    .line 11
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 12
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 13
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const/4 v0, 0x3
@@ -1566,7 +1486,6 @@
 
     aput-object p2, v0, p0
 
-    .line 14
     invoke-static {v0}, Lio/reactivex/Maybe;->mergeArray([Lio/reactivex/MaybeSource;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -1607,22 +1526,18 @@
 
     const-string v0, "source1 is null"
 
-    .line 15
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 16
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 17
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source4 is null"
 
-    .line 18
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const/4 v0, 0x4
@@ -1645,7 +1560,6 @@
 
     aput-object p3, v0, p0
 
-    .line 19
     invoke-static {v0}, Lio/reactivex/Maybe;->mergeArray([Lio/reactivex/MaybeSource;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -1680,7 +1594,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lio/reactivex/Flowable;->fromIterable(Ljava/lang/Iterable;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -1717,10 +1630,8 @@
 
     const-string v0, "source is null"
 
-    .line 6
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 7
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFlatten;
 
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->identity()Lio/reactivex/functions/Function;
@@ -1763,22 +1674,18 @@
 
     const-string v0, "sources is null"
 
-    .line 1
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     array-length v0, p0
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-static {}, Lio/reactivex/Flowable;->empty()Lio/reactivex/Flowable;
 
     move-result-object p0
 
     return-object p0
 
-    .line 4
     :cond_0
     array-length v0, p0
 
@@ -1786,7 +1693,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 5
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeToFlowable;
 
     const/4 v1, 0x0
@@ -1801,7 +1707,6 @@
 
     return-object p0
 
-    .line 6
     :cond_1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeMergeArray;
 
@@ -1839,19 +1744,16 @@
         value = "none"
     .end annotation
 
-    .line 1
     array-length v0, p0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lio/reactivex/Flowable;->empty()Lio/reactivex/Flowable;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-static {p0}, Lio/reactivex/Flowable;->fromArray([Ljava/lang/Object;)Lio/reactivex/Flowable;
 
@@ -1901,7 +1803,6 @@
 
     const v0, 0x7fffffff
 
-    .line 2
     invoke-static {p0, v0}, Lio/reactivex/Maybe;->mergeDelayError(Lc/a/b;I)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -1938,15 +1839,12 @@
 
     const-string v0, "source is null"
 
-    .line 3
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "maxConcurrency"
 
-    .line 4
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->verifyPositive(ILjava/lang/String;)I
 
-    .line 5
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableFlatMapPublisher;
 
     invoke-static {}, Lio/reactivex/internal/operators/maybe/MaybeToPublisher;->instance()Lio/reactivex/functions/Function;
@@ -2001,12 +1899,10 @@
 
     const-string v0, "source1 is null"
 
-    .line 6
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 7
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const/4 v0, 0x2
@@ -2021,7 +1917,6 @@
 
     aput-object p1, v0, p0
 
-    .line 8
     invoke-static {v0}, Lio/reactivex/Maybe;->mergeArrayDelayError([Lio/reactivex/MaybeSource;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -2060,17 +1955,14 @@
 
     const-string v0, "source1 is null"
 
-    .line 9
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 10
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 11
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const/4 v0, 0x3
@@ -2089,7 +1981,6 @@
 
     aput-object p2, v0, p0
 
-    .line 12
     invoke-static {v0}, Lio/reactivex/Maybe;->mergeArrayDelayError([Lio/reactivex/MaybeSource;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -2130,22 +2021,18 @@
 
     const-string v0, "source1 is null"
 
-    .line 13
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 14
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 15
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source4 is null"
 
-    .line 16
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const/4 v0, 0x4
@@ -2168,7 +2055,6 @@
 
     aput-object p3, v0, p0
 
-    .line 17
     invoke-static {v0}, Lio/reactivex/Maybe;->mergeArrayDelayError([Lio/reactivex/MaybeSource;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -2203,7 +2089,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lio/reactivex/Flowable;->fromIterable(Ljava/lang/Iterable;)Lio/reactivex/Flowable;
 
     move-result-object p0
@@ -2240,7 +2125,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     sget-object v0, Lio/reactivex/internal/operators/maybe/MaybeNever;->INSTANCE:Lio/reactivex/internal/operators/maybe/MaybeNever;
 
     invoke-static {v0}, Lio/reactivex/plugins/RxJavaPlugins;->onAssembly(Lio/reactivex/Maybe;)Lio/reactivex/Maybe;
@@ -2274,7 +2158,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-static {}, Lio/reactivex/internal/functions/ObjectHelper;->equalsPredicate()Lio/reactivex/functions/BiPredicate;
 
     move-result-object v0
@@ -2314,20 +2197,16 @@
 
     const-string v0, "source1 is null"
 
-    .line 2
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 3
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "isEqual is null"
 
-    .line 4
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 5
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeEqualSingle;
 
     invoke-direct {v0, p0, p1, p2}, Lio/reactivex/internal/operators/maybe/MaybeEqualSingle;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/MaybeSource;Lio/reactivex/functions/BiPredicate;)V
@@ -2359,7 +2238,6 @@
         value = "io.reactivex:computation"
     .end annotation
 
-    .line 1
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->computation()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -2394,15 +2272,12 @@
 
     const-string v0, "unit is null"
 
-    .line 2
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "scheduler is null"
 
-    .line 3
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 4
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeTimer;
 
     const-wide/16 v1, 0x0
@@ -2441,17 +2316,14 @@
         value = "none"
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lio/reactivex/Maybe;
 
     if-nez v0, :cond_0
 
     const-string v0, "onSubscribe is null"
 
-    .line 2
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 3
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeUnsafeCreate;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeUnsafeCreate;-><init>(Lio/reactivex/MaybeSource;)V
@@ -2462,7 +2334,6 @@
 
     return-object p0
 
-    .line 4
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -2504,7 +2375,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p0, p1, p2, v0}, Lio/reactivex/Maybe;->using(Ljava/util/concurrent/Callable;Lio/reactivex/functions/Function;Lio/reactivex/functions/Consumer;Z)Lio/reactivex/Maybe;
 
     move-result-object p0
@@ -2543,20 +2413,16 @@
 
     const-string v0, "resourceSupplier is null"
 
-    .line 2
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "sourceSupplier is null"
 
-    .line 3
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "disposer is null"
 
-    .line 4
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 5
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeUsing;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lio/reactivex/internal/operators/maybe/MaybeUsing;-><init>(Ljava/util/concurrent/Callable;Lio/reactivex/functions/Function;Lio/reactivex/functions/Consumer;Z)V
@@ -2589,12 +2455,10 @@
         value = "none"
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lio/reactivex/Maybe;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, Lio/reactivex/Maybe;
 
     invoke-static {p0}, Lio/reactivex/plugins/RxJavaPlugins;->onAssembly(Lio/reactivex/Maybe;)Lio/reactivex/Maybe;
@@ -2606,10 +2470,8 @@
     :cond_0
     const-string v0, "onSubscribe is null"
 
-    .line 3
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 4
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeUnsafeCreate;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeUnsafeCreate;-><init>(Lio/reactivex/MaybeSource;)V
@@ -2680,50 +2542,40 @@
 
     const-string v0, "source1 is null"
 
-    .line 46
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 47
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 48
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source4 is null"
 
-    .line 49
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source5 is null"
 
-    .line 50
     invoke-static {p4, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source6 is null"
 
-    .line 51
     invoke-static {p5, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source7 is null"
 
-    .line 52
     invoke-static {p6, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source8 is null"
 
-    .line 53
     invoke-static {p7, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source9 is null"
 
-    .line 54
     invoke-static {p8, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 55
     invoke-static {p9}, Lio/reactivex/internal/functions/Functions;->toFunction(Lio/reactivex/functions/Function9;)Lio/reactivex/functions/Function;
 
     move-result-object p9
@@ -2830,45 +2682,36 @@
 
     const-string v0, "source1 is null"
 
-    .line 37
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 38
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 39
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source4 is null"
 
-    .line 40
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source5 is null"
 
-    .line 41
     invoke-static {p4, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source6 is null"
 
-    .line 42
     invoke-static {p5, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source7 is null"
 
-    .line 43
     invoke-static {p6, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source8 is null"
 
-    .line 44
     invoke-static {p7, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 45
     invoke-static {p8}, Lio/reactivex/internal/functions/Functions;->toFunction(Lio/reactivex/functions/Function8;)Lio/reactivex/functions/Function;
 
     move-result-object p8
@@ -2967,40 +2810,32 @@
 
     const-string v0, "source1 is null"
 
-    .line 29
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 30
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 31
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source4 is null"
 
-    .line 32
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source5 is null"
 
-    .line 33
     invoke-static {p4, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source6 is null"
 
-    .line 34
     invoke-static {p5, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source7 is null"
 
-    .line 35
     invoke-static {p6, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 36
     invoke-static {p7}, Lio/reactivex/internal/functions/Functions;->toFunction(Lio/reactivex/functions/Function7;)Lio/reactivex/functions/Function;
 
     move-result-object p7
@@ -3091,35 +2926,28 @@
 
     const-string v0, "source1 is null"
 
-    .line 22
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 23
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 24
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source4 is null"
 
-    .line 25
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source5 is null"
 
-    .line 26
     invoke-static {p4, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source6 is null"
 
-    .line 27
     invoke-static {p5, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 28
     invoke-static {p6}, Lio/reactivex/internal/functions/Functions;->toFunction(Lio/reactivex/functions/Function6;)Lio/reactivex/functions/Function;
 
     move-result-object p6
@@ -3202,30 +3030,24 @@
 
     const-string v0, "source1 is null"
 
-    .line 16
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 17
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 18
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source4 is null"
 
-    .line 19
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source5 is null"
 
-    .line 20
     invoke-static {p4, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 21
     invoke-static {p5}, Lio/reactivex/internal/functions/Functions;->toFunction(Lio/reactivex/functions/Function5;)Lio/reactivex/functions/Function;
 
     move-result-object p5
@@ -3300,25 +3122,20 @@
 
     const-string v0, "source1 is null"
 
-    .line 11
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 12
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 13
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source4 is null"
 
-    .line 14
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 15
     invoke-static {p4}, Lio/reactivex/internal/functions/Functions;->toFunction(Lio/reactivex/functions/Function4;)Lio/reactivex/functions/Function;
 
     move-result-object p4
@@ -3385,20 +3202,16 @@
 
     const-string v0, "source1 is null"
 
-    .line 7
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 8
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source3 is null"
 
-    .line 9
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 10
     invoke-static {p3}, Lio/reactivex/internal/functions/Functions;->toFunction(Lio/reactivex/functions/Function3;)Lio/reactivex/functions/Function;
 
     move-result-object p3
@@ -3457,15 +3270,12 @@
 
     const-string v0, "source1 is null"
 
-    .line 4
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "source2 is null"
 
-    .line 5
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 6
     invoke-static {p2}, Lio/reactivex/internal/functions/Functions;->toFunction(Lio/reactivex/functions/BiFunction;)Lio/reactivex/functions/Function;
 
     move-result-object p2
@@ -3520,15 +3330,12 @@
 
     const-string v0, "zipper is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "sources is null"
 
-    .line 2
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 3
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeZipIterable;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeZipIterable;-><init>(Ljava/lang/Iterable;Lio/reactivex/functions/Function;)V
@@ -3569,15 +3376,12 @@
 
     const-string v0, "sources is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     array-length v0, p1
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-static {}, Lio/reactivex/Maybe;->empty()Lio/reactivex/Maybe;
 
     move-result-object p0
@@ -3587,10 +3391,8 @@
     :cond_0
     const-string v0, "zipper is null"
 
-    .line 4
     invoke-static {p0, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 5
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeZipArray;
 
     invoke-direct {v0, p1, p0}, Lio/reactivex/internal/operators/maybe/MaybeZipArray;-><init>([Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -3625,7 +3427,6 @@
 
     const-string v0, "other is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const/4 v0, 0x2
@@ -3640,7 +3441,6 @@
 
     aput-object p1, v0, v1
 
-    .line 2
     invoke-static {v0}, Lio/reactivex/Maybe;->ambArray([Lio/reactivex/MaybeSource;)Lio/reactivex/Maybe;
 
     move-result-object p1
@@ -3673,7 +3473,6 @@
 
     const-string v0, "converter is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -3702,15 +3501,12 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/observers/BlockingMultiObserver;
 
     invoke-direct {v0}, Lio/reactivex/internal/observers/BlockingMultiObserver;-><init>()V
 
-    .line 2
     invoke-virtual {p0, v0}, Lio/reactivex/Maybe;->subscribe(Lio/reactivex/MaybeObserver;)V
 
-    .line 3
     invoke-virtual {v0}, Lio/reactivex/internal/observers/BlockingMultiObserver;->blockingGet()Ljava/lang/Object;
 
     move-result-object v0
@@ -3735,18 +3531,14 @@
 
     const-string v0, "defaultValue is null"
 
-    .line 4
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 5
     new-instance v0, Lio/reactivex/internal/observers/BlockingMultiObserver;
 
     invoke-direct {v0}, Lio/reactivex/internal/observers/BlockingMultiObserver;-><init>()V
 
-    .line 6
     invoke-virtual {p0, v0}, Lio/reactivex/Maybe;->subscribe(Lio/reactivex/MaybeObserver;)V
 
-    .line 7
     invoke-virtual {v0, p1}, Lio/reactivex/internal/observers/BlockingMultiObserver;->blockingGet(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -3771,7 +3563,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeCache;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeCache;-><init>(Lio/reactivex/MaybeSource;)V
@@ -3806,10 +3597,8 @@
 
     const-string v0, "clazz is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lio/reactivex/internal/functions/Functions;->castFunction(Ljava/lang/Class;)Lio/reactivex/functions/Function;
 
     move-result-object p1
@@ -3844,7 +3633,6 @@
 
     const-string v0, "transformer is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -3887,10 +3675,8 @@
 
     const-string v0, "mapper is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFlatten;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeFlatten;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -3927,10 +3713,8 @@
 
     const-string v0, "other is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p0, p1}, Lio/reactivex/Maybe;->concat(Lio/reactivex/MaybeSource;Lio/reactivex/MaybeSource;)Lio/reactivex/Flowable;
 
     move-result-object p1
@@ -3960,10 +3744,8 @@
 
     const-string v0, "item is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeContains;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeContains;-><init>(Lio/reactivex/MaybeSource;Ljava/lang/Object;)V
@@ -3993,7 +3775,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeCount;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeCount;-><init>(Lio/reactivex/MaybeSource;)V
@@ -4024,10 +3805,8 @@
 
     const-string v0, "item is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lio/reactivex/Maybe;->just(Ljava/lang/Object;)Lio/reactivex/Maybe;
 
     move-result-object p1
@@ -4058,7 +3837,6 @@
         value = "io.reactivex:computation"
     .end annotation
 
-    .line 1
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->computation()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -4092,15 +3870,12 @@
 
     const-string v0, "unit is null"
 
-    .line 2
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "scheduler is null"
 
-    .line 3
     invoke-static {p4, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 4
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeDelay;
 
     const-wide/16 v1, 0x0
@@ -4155,10 +3930,8 @@
 
     const-string v0, "delayIndicator is null"
 
-    .line 5
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 6
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeDelayOtherPublisher;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeDelayOtherPublisher;-><init>(Lio/reactivex/MaybeSource;Lc/a/b;)V
@@ -4189,7 +3962,6 @@
         value = "io.reactivex:computation"
     .end annotation
 
-    .line 3
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->computation()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -4221,7 +3993,6 @@
         value = "custom"
     .end annotation
 
-    .line 4
     invoke-static {p1, p2, p3, p4}, Lio/reactivex/Flowable;->timer(JLjava/util/concurrent/TimeUnit;Lio/reactivex/Scheduler;)Lio/reactivex/Flowable;
 
     move-result-object p1
@@ -4260,10 +4031,8 @@
 
     const-string v0, "subscriptionIndicator is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeDelaySubscriptionOtherPublisher;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeDelaySubscriptionOtherPublisher;-><init>(Lio/reactivex/MaybeSource;Lc/a/b;)V
@@ -4296,10 +4065,8 @@
 
     const-string v0, "doAfterSuccess is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeDoAfterSuccess;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeDoAfterSuccess;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Consumer;)V
@@ -4330,20 +4097,16 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v8, Lio/reactivex/internal/operators/maybe/MaybePeek;
 
-    .line 2
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v2
 
-    .line 3
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v3
 
-    .line 4
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v4
@@ -4352,7 +4115,6 @@
 
     const-string v0, "onAfterTerminate is null"
 
-    .line 5
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -4369,7 +4131,6 @@
 
     invoke-direct/range {v0 .. v7}, Lio/reactivex/internal/operators/maybe/MaybePeek;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;)V
 
-    .line 6
     invoke-static {v8}, Lio/reactivex/plugins/RxJavaPlugins;->onAssembly(Lio/reactivex/Maybe;)Lio/reactivex/Maybe;
 
     move-result-object p1
@@ -4398,10 +4159,8 @@
 
     const-string v0, "onFinally is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeDoFinally;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeDoFinally;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Action;)V
@@ -4432,27 +4191,22 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v8, Lio/reactivex/internal/operators/maybe/MaybePeek;
 
-    .line 2
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v2
 
-    .line 3
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v3
 
-    .line 4
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v4
 
     const-string v0, "onComplete is null"
 
-    .line 5
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -4471,7 +4225,6 @@
 
     invoke-direct/range {v0 .. v7}, Lio/reactivex/internal/operators/maybe/MaybePeek;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;)V
 
-    .line 6
     invoke-static {v8}, Lio/reactivex/plugins/RxJavaPlugins;->onAssembly(Lio/reactivex/Maybe;)Lio/reactivex/Maybe;
 
     move-result-object p1
@@ -4498,20 +4251,16 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v8, Lio/reactivex/internal/operators/maybe/MaybePeek;
 
-    .line 2
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v2
 
-    .line 3
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v3
 
-    .line 4
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v4
@@ -4520,7 +4269,6 @@
 
     const-string v0, "onDispose is null"
 
-    .line 5
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -4537,7 +4285,6 @@
 
     invoke-direct/range {v0 .. v7}, Lio/reactivex/internal/operators/maybe/MaybePeek;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;)V
 
-    .line 6
     invoke-static {v8}, Lio/reactivex/plugins/RxJavaPlugins;->onAssembly(Lio/reactivex/Maybe;)Lio/reactivex/Maybe;
 
     move-result-object p1
@@ -4566,22 +4313,18 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v8, Lio/reactivex/internal/operators/maybe/MaybePeek;
 
-    .line 2
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v2
 
-    .line 3
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v3
 
     const-string v0, "onError is null"
 
-    .line 4
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -4602,7 +4345,6 @@
 
     invoke-direct/range {v0 .. v7}, Lio/reactivex/internal/operators/maybe/MaybePeek;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;)V
 
-    .line 5
     invoke-static {v8}, Lio/reactivex/plugins/RxJavaPlugins;->onAssembly(Lio/reactivex/Maybe;)Lio/reactivex/Maybe;
 
     move-result-object p1
@@ -4633,10 +4375,8 @@
 
     const-string v0, "onEvent is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeDoOnEvent;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeDoOnEvent;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/BiConsumer;)V
@@ -4669,12 +4409,10 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v8, Lio/reactivex/internal/operators/maybe/MaybePeek;
 
     const-string v0, "onSubscribe is null"
 
-    .line 2
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -4683,12 +4421,10 @@
 
     check-cast v2, Lio/reactivex/functions/Consumer;
 
-    .line 3
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v3
 
-    .line 4
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v4
@@ -4705,7 +4441,6 @@
 
     invoke-direct/range {v0 .. v7}, Lio/reactivex/internal/operators/maybe/MaybePeek;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;)V
 
-    .line 5
     invoke-static {v8}, Lio/reactivex/plugins/RxJavaPlugins;->onAssembly(Lio/reactivex/Maybe;)Lio/reactivex/Maybe;
 
     move-result-object p1
@@ -4732,17 +4467,14 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v8, Lio/reactivex/internal/operators/maybe/MaybePeek;
 
-    .line 2
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v2
 
     const-string v0, "onSubscribe is null"
 
-    .line 3
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -4751,7 +4483,6 @@
 
     check-cast v3, Lio/reactivex/functions/Consumer;
 
-    .line 4
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v4
@@ -4768,7 +4499,6 @@
 
     invoke-direct/range {v0 .. v7}, Lio/reactivex/internal/operators/maybe/MaybePeek;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;Lio/reactivex/functions/Action;)V
 
-    .line 5
     invoke-static {v8}, Lio/reactivex/plugins/RxJavaPlugins;->onAssembly(Lio/reactivex/Maybe;)Lio/reactivex/Maybe;
 
     move-result-object p1
@@ -4797,10 +4527,8 @@
 
     const-string v0, "predicate is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFilter;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeFilter;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Predicate;)V
@@ -4837,10 +4565,8 @@
 
     const-string v0, "mapper is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFlatten;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeFlatten;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -4881,15 +4607,12 @@
 
     const-string v0, "mapper is null"
 
-    .line 7
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "resultSelector is null"
 
-    .line 8
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 9
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector;
 
     invoke-direct {v0, p0, p1, p2}, Lio/reactivex/internal/operators/maybe/MaybeFlatMapBiSelector;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;Lio/reactivex/functions/BiFunction;)V
@@ -4936,20 +4659,16 @@
 
     const-string v0, "onSuccessMapper is null"
 
-    .line 3
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "onErrorMapper is null"
 
-    .line 4
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "onCompleteSupplier is null"
 
-    .line 5
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 6
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapNotification;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lio/reactivex/internal/operators/maybe/MaybeFlatMapNotification;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;Lio/reactivex/functions/Function;Ljava/util/concurrent/Callable;)V
@@ -4983,10 +4702,8 @@
 
     const-string v0, "mapper is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapCompletable;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeFlatMapCompletable;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -5023,10 +4740,8 @@
 
     const-string v0, "mapper is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/mixed/MaybeFlatMapObservable;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/mixed/MaybeFlatMapObservable;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -5067,10 +4782,8 @@
 
     const-string v0, "mapper is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/mixed/MaybeFlatMapPublisher;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/mixed/MaybeFlatMapPublisher;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -5107,10 +4820,8 @@
 
     const-string v0, "mapper is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapSingle;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeFlatMapSingle;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -5147,10 +4858,8 @@
 
     const-string v0, "mapper is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapSingleElement;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeFlatMapSingleElement;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -5191,10 +4900,8 @@
 
     const-string v0, "mapper is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapIterableFlowable;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeFlatMapIterableFlowable;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -5231,10 +4938,8 @@
 
     const-string v0, "mapper is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeFlatMapIterableObservable;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeFlatMapIterableObservable;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -5263,7 +4968,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeHide;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeHide;-><init>(Lio/reactivex/MaybeSource;)V
@@ -5284,7 +4988,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeIgnoreElementCompletable;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeIgnoreElementCompletable;-><init>(Lio/reactivex/MaybeSource;)V
@@ -5314,7 +5017,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeIsEmptySingle;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeIsEmptySingle;-><init>(Lio/reactivex/MaybeSource;)V
@@ -5349,10 +5051,8 @@
 
     const-string v0, "onLift is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeLift;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeLift;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/MaybeOperator;)V
@@ -5387,10 +5087,8 @@
 
     const-string v0, "mapper is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeMap;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeMap;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -5427,10 +5125,8 @@
 
     const-string v0, "other is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p0, p1}, Lio/reactivex/Maybe;->merge(Lio/reactivex/MaybeSource;Lio/reactivex/MaybeSource;)Lio/reactivex/Flowable;
 
     move-result-object p1
@@ -5459,10 +5155,8 @@
 
     const-string v0, "scheduler is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeObserveOn;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeObserveOn;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/Scheduler;)V
@@ -5497,10 +5191,8 @@
 
     const-string v0, "clazz is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lio/reactivex/internal/functions/Functions;->isInstanceOf(Ljava/lang/Class;)Lio/reactivex/functions/Predicate;
 
     move-result-object v0
@@ -5533,7 +5225,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->alwaysTrue()Lio/reactivex/functions/Predicate;
 
     move-result-object v0
@@ -5568,10 +5259,8 @@
 
     const-string v0, "predicate is null"
 
-    .line 2
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 3
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeOnErrorComplete;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeOnErrorComplete;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Predicate;)V
@@ -5604,10 +5293,8 @@
 
     const-string v0, "next is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lio/reactivex/internal/functions/Functions;->justFunction(Ljava/lang/Object;)Lio/reactivex/functions/Function;
 
     move-result-object p1
@@ -5644,10 +5331,8 @@
 
     const-string v0, "resumeFunction is null"
 
-    .line 3
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 4
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeOnErrorNext;
 
     const/4 v1, 0x1
@@ -5684,10 +5369,8 @@
 
     const-string v0, "valueSupplier is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeOnErrorReturn;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeOnErrorReturn;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/functions/Function;)V
@@ -5718,10 +5401,8 @@
 
     const-string v0, "item is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lio/reactivex/internal/functions/Functions;->justFunction(Ljava/lang/Object;)Lio/reactivex/functions/Function;
 
     move-result-object p1
@@ -5754,10 +5435,8 @@
 
     const-string v0, "next is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeOnErrorNext;
 
     invoke-static {p1}, Lio/reactivex/internal/functions/Functions;->justFunction(Ljava/lang/Object;)Lio/reactivex/functions/Function;
@@ -5792,7 +5471,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeDetach;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeDetach;-><init>(Lio/reactivex/MaybeSource;)V
@@ -5827,7 +5505,6 @@
 
     const-wide v0, 0x7fffffffffffffffL
 
-    .line 1
     invoke-virtual {p0, v0, v1}, Lio/reactivex/Maybe;->repeat(J)Lio/reactivex/Flowable;
 
     move-result-object v0
@@ -5856,7 +5533,6 @@
         value = "none"
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lio/reactivex/Maybe;->toFlowable()Lio/reactivex/Flowable;
 
     move-result-object v0
@@ -5891,7 +5567,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/Maybe;->toFlowable()Lio/reactivex/Flowable;
 
     move-result-object v0
@@ -5931,7 +5606,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/Maybe;->toFlowable()Lio/reactivex/Flowable;
 
     move-result-object v0
@@ -5960,7 +5634,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->alwaysTrue()Lio/reactivex/functions/Predicate;
 
     move-result-object v0
@@ -5991,7 +5664,6 @@
         value = "none"
     .end annotation
 
-    .line 3
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->alwaysTrue()Lio/reactivex/functions/Predicate;
 
     move-result-object v0
@@ -6024,7 +5696,6 @@
         value = "none"
     .end annotation
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/Maybe;->toFlowable()Lio/reactivex/Flowable;
 
     move-result-object v0
@@ -6063,7 +5734,6 @@
         value = "none"
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lio/reactivex/Maybe;->toFlowable()Lio/reactivex/Flowable;
 
     move-result-object v0
@@ -6102,7 +5772,6 @@
 
     const-wide v0, 0x7fffffffffffffffL
 
-    .line 5
     invoke-virtual {p0, v0, v1, p1}, Lio/reactivex/Maybe;->retry(JLio/reactivex/functions/Predicate;)Lio/reactivex/Maybe;
 
     move-result-object p1
@@ -6131,10 +5800,8 @@
 
     const-string v0, "stop is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lio/reactivex/internal/functions/Functions;->predicateReverseFor(Lio/reactivex/functions/BooleanSupplier;)Lio/reactivex/functions/Predicate;
 
     move-result-object p1
@@ -6172,7 +5839,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/Maybe;->toFlowable()Lio/reactivex/Flowable;
 
     move-result-object v0
@@ -6194,7 +5860,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v0
@@ -6228,7 +5893,6 @@
         value = "none"
     .end annotation
 
-    .line 2
     sget-object v0, Lio/reactivex/internal/functions/Functions;->ON_ERROR_MISSING:Lio/reactivex/functions/Consumer;
 
     sget-object v1, Lio/reactivex/internal/functions/Functions;->EMPTY_ACTION:Lio/reactivex/functions/Action;
@@ -6262,7 +5926,6 @@
         value = "none"
     .end annotation
 
-    .line 3
     sget-object v0, Lio/reactivex/internal/functions/Functions;->EMPTY_ACTION:Lio/reactivex/functions/Action;
 
     invoke-virtual {p0, p1, p2, v0}, Lio/reactivex/Maybe;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Action;)Lio/reactivex/disposables/Disposable;
@@ -6298,20 +5961,16 @@
 
     const-string v0, "onSuccess is null"
 
-    .line 4
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "onError is null"
 
-    .line 5
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "onComplete is null"
 
-    .line 6
     invoke-static {p3, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 7
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeCallbackObserver;
 
     invoke-direct {v0, p1, p2, p3}, Lio/reactivex/internal/operators/maybe/MaybeCallbackObserver;-><init>(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Action;)V
@@ -6341,20 +6000,16 @@
 
     const-string v0, "observer is null"
 
-    .line 8
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 9
     invoke-static {p0, p1}, Lio/reactivex/plugins/RxJavaPlugins;->onSubscribe(Lio/reactivex/Maybe;Lio/reactivex/MaybeObserver;)Lio/reactivex/MaybeObserver;
 
     move-result-object p1
 
     const-string v0, "The RxJavaPlugins.onSubscribe hook returned a null MaybeObserver. Please check the handler provided to RxJavaPlugins.setOnMaybeSubscribe for invalid null returns. Further reading: https://github.com/ReactiveX/RxJava/wiki/Plugins"
 
-    .line 10
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 11
     :try_start_0
     invoke-virtual {p0, p1}, Lio/reactivex/Maybe;->subscribeActual(Lio/reactivex/MaybeObserver;)V
     :try_end_0
@@ -6366,26 +6021,21 @@
     :catchall_0
     move-exception p1
 
-    .line 12
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 13
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "subscribeActual failed"
 
     invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
-    .line 14
     invoke-virtual {v0, p1}, Ljava/lang/NullPointerException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    .line 15
     throw v0
 
     :catch_0
     move-exception p1
 
-    .line 16
     throw p1
 .end method
 
@@ -6420,10 +6070,8 @@
 
     const-string v0, "scheduler is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeSubscribeOn;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeSubscribeOn;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/Scheduler;)V
@@ -6452,7 +6100,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lio/reactivex/Maybe;->subscribe(Lio/reactivex/MaybeObserver;)V
 
     return-object p1
@@ -6479,10 +6126,8 @@
 
     const-string v0, "other is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeSwitchIfEmpty;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeSwitchIfEmpty;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/MaybeSource;)V
@@ -6515,10 +6160,8 @@
 
     const-string v0, "other is null"
 
-    .line 3
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 4
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeSwitchIfEmptySingle;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeSwitchIfEmptySingle;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/SingleSource;)V
@@ -6557,10 +6200,8 @@
 
     const-string v0, "other is null"
 
-    .line 3
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 4
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeTakeUntilPublisher;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeTakeUntilPublisher;-><init>(Lio/reactivex/MaybeSource;Lc/a/b;)V
@@ -6595,10 +6236,8 @@
 
     const-string v0, "other is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeTakeUntilMaybe;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeTakeUntilMaybe;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/MaybeSource;)V
@@ -6627,12 +6266,10 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/observers/TestObserver;
 
     invoke-direct {v0}, Lio/reactivex/observers/TestObserver;-><init>()V
 
-    .line 2
     invoke-virtual {p0, v0}, Lio/reactivex/Maybe;->subscribe(Lio/reactivex/MaybeObserver;)V
 
     return-object v0
@@ -6655,17 +6292,14 @@
         value = "none"
     .end annotation
 
-    .line 3
     new-instance v0, Lio/reactivex/observers/TestObserver;
 
     invoke-direct {v0}, Lio/reactivex/observers/TestObserver;-><init>()V
 
     if-eqz p1, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Lio/reactivex/observers/TestObserver;->cancel()V
 
-    .line 5
     :cond_0
     invoke-virtual {p0, v0}, Lio/reactivex/Maybe;->subscribe(Lio/reactivex/MaybeObserver;)V
 
@@ -6691,7 +6325,6 @@
         value = "io.reactivex:computation"
     .end annotation
 
-    .line 1
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->computation()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -6725,10 +6358,8 @@
 
     const-string v0, "other is null"
 
-    .line 2
     invoke-static {p4, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 3
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->computation()Lio/reactivex/Scheduler;
 
     move-result-object v5
@@ -6768,7 +6399,6 @@
         value = "custom"
     .end annotation
 
-    .line 6
     invoke-static {p1, p2, p3, p4}, Lio/reactivex/Maybe;->timer(JLjava/util/concurrent/TimeUnit;Lio/reactivex/Scheduler;)Lio/reactivex/Maybe;
 
     move-result-object p1
@@ -6803,10 +6433,8 @@
 
     const-string v0, "fallback is null"
 
-    .line 4
     invoke-static {p5, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 5
     invoke-static {p1, p2, p3, p4}, Lio/reactivex/Maybe;->timer(JLjava/util/concurrent/TimeUnit;Lio/reactivex/Scheduler;)Lio/reactivex/Maybe;
 
     move-result-object p1
@@ -6845,10 +6473,8 @@
 
     const-string v0, "timeoutIndicator is null"
 
-    .line 12
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 13
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeTimeoutPublisher;
 
     const/4 v1, 0x0
@@ -6891,15 +6517,12 @@
 
     const-string v0, "timeoutIndicator is null"
 
-    .line 14
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "fallback is null"
 
-    .line 15
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 16
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeTimeoutPublisher;
 
     invoke-direct {v0, p0, p1, p2}, Lio/reactivex/internal/operators/maybe/MaybeTimeoutPublisher;-><init>(Lio/reactivex/MaybeSource;Lc/a/b;Lio/reactivex/MaybeSource;)V
@@ -6934,10 +6557,8 @@
 
     const-string v0, "timeoutIndicator is null"
 
-    .line 7
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 8
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeTimeoutMaybe;
 
     const/4 v1, 0x0
@@ -6976,15 +6597,12 @@
 
     const-string v0, "timeoutIndicator is null"
 
-    .line 9
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "fallback is null"
 
-    .line 10
     invoke-static {p2, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 11
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeTimeoutMaybe;
 
     invoke-direct {v0, p0, p1, p2}, Lio/reactivex/internal/operators/maybe/MaybeTimeoutMaybe;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/MaybeSource;Lio/reactivex/MaybeSource;)V
@@ -7020,7 +6638,6 @@
     :try_start_0
     const-string v0, "convert is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -7038,10 +6655,8 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 3
     invoke-static {p1}, Lio/reactivex/internal/util/ExceptionHelper;->wrapOrThrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     move-result-object p1
@@ -7070,12 +6685,10 @@
         value = "none"
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lio/reactivex/internal/fuseable/FuseToFlowable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     move-object v0, p0
 
     check-cast v0, Lio/reactivex/internal/fuseable/FuseToFlowable;
@@ -7086,7 +6699,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeToFlowable;
 
@@ -7116,12 +6728,10 @@
         value = "none"
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lio/reactivex/internal/fuseable/FuseToObservable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     move-object v0, p0
 
     check-cast v0, Lio/reactivex/internal/fuseable/FuseToObservable;
@@ -7132,7 +6742,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeToObservable;
 
@@ -7162,7 +6771,6 @@
         value = "none"
     .end annotation
 
-    .line 3
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeToSingle;
 
     const/4 v1, 0x0
@@ -7195,10 +6803,8 @@
 
     const-string v0, "defaultValue is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeToSingle;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeToSingle;-><init>(Lio/reactivex/MaybeSource;Ljava/lang/Object;)V
@@ -7231,10 +6837,8 @@
 
     const-string v0, "scheduler is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeUnsubscribeOn;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/maybe/MaybeUnsubscribeOn;-><init>(Lio/reactivex/MaybeSource;Lio/reactivex/Scheduler;)V
@@ -7273,10 +6877,8 @@
 
     const-string v0, "other is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p0, p1, p2}, Lio/reactivex/Maybe;->zip(Lio/reactivex/MaybeSource;Lio/reactivex/MaybeSource;Lio/reactivex/functions/BiFunction;)Lio/reactivex/Maybe;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/ifengyu/library/widget/dialog/TipDialog$Builder$IconType;
 .super Ljava/lang/Object;
-.source "TipDialog.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

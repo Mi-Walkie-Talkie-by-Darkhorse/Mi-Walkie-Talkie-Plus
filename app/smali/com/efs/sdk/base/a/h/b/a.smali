@@ -1,6 +1,5 @@
 .class public final Lcom/efs/sdk/base/a/h/b/a;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
 .implements Lcom/efs/sdk/base/http/IHttpUtil;
@@ -18,7 +17,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +25,6 @@
 .method synthetic constructor <init>(B)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/efs/sdk/base/a/h/b/a;-><init>()V
 
     return-void
@@ -36,7 +33,6 @@
 .method public static a()Lcom/efs/sdk/base/a/h/b/a;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/efs/sdk/base/a/h/b/a$a;->a()Lcom/efs/sdk/base/a/h/b/a;
 
     move-result-object v0
@@ -85,14 +81,12 @@
 
     const-string v2, "efs.util.http"
 
-    .line 25
     new-instance v3, Lcom/efs/sdk/base/http/HttpResponse;
 
     invoke-direct {v3}, Lcom/efs/sdk/base/http/HttpResponse;-><init>()V
 
     const/4 v4, 0x0
 
-    .line 26
     :try_start_0
     invoke-static {p0, p1}, Lcom/efs/sdk/base/a/h/b/a;->a(Ljava/lang/String;Ljava/util/Map;)Ljava/net/HttpURLConnection;
 
@@ -105,24 +99,20 @@
     :try_start_1
     const-string v5, "POST"
 
-    .line 27
     invoke-virtual {p1, v5}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
     const-string v5, "Connection"
 
     const-string v6, "close"
 
-    .line 28
     invoke-virtual {p1, v5, v6}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v5, "Content-Type"
 
     const-string v6, "multipart/form-data;boundary=----WebKitFormBoundaryP0Rfzlf32iRoMhmb"
 
-    .line 29
     invoke-virtual {p1, v5, v6}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 30
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v5
@@ -131,7 +121,6 @@
     .catch Ljava/net/SocketTimeoutException; {:try_start_1 .. :try_end_1} :catch_6
     .catchall {:try_start_1 .. :try_end_1} :catchall_3
 
-    .line 31
     :try_start_2
     new-instance v6, Ljava/io/DataOutputStream;
 
@@ -144,7 +133,6 @@
     :try_start_3
     const-string v7, "------WebKitFormBoundaryP0Rfzlf32iRoMhmb\r\n"
 
-    .line 32
     invoke-virtual {v6, v7}, Ljava/io/DataOutputStream;->writeBytes(Ljava/lang/String;)V
     :try_end_3
     .catch Ljava/net/UnknownHostException; {:try_start_3 .. :try_end_3} :catch_3
@@ -159,7 +147,6 @@
 
     if-eqz p2, :cond_2
 
-    .line 33
     :try_start_4
     invoke-virtual {p2}, Ljava/io/File;->exists()Z
 
@@ -169,7 +156,6 @@
 
     goto :goto_1
 
-    .line 34
     :cond_0
     new-instance p3, Ljava/lang/StringBuilder;
 
@@ -193,10 +179,8 @@
 
     invoke-virtual {v6, p3}, Ljava/io/DataOutputStream;->writeBytes(Ljava/lang/String;)V
 
-    .line 35
     invoke-virtual {v6, v8}, Ljava/io/DataOutputStream;->writeBytes(Ljava/lang/String;)V
 
-    .line 36
     new-instance p3, Ljava/io/FileInputStream;
 
     invoke-direct {p3, p2}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
@@ -210,7 +194,6 @@
     :try_start_5
     new-array p2, p2, [B
 
-    .line 37
     :goto_0
     invoke-virtual {p3, p2}, Ljava/io/FileInputStream;->read([B)I
 
@@ -220,7 +203,6 @@
 
     if-eq v4, v9, :cond_1
 
-    .line 38
     invoke-virtual {v6, p2, v7, v4}, Ljava/io/DataOutputStream;->write([BII)V
     :try_end_5
     .catch Ljava/net/UnknownHostException; {:try_start_5 .. :try_end_5} :catch_1
@@ -249,18 +231,14 @@
 
     goto/16 :goto_5
 
-    .line 39
     :cond_2
     :goto_1
     invoke-static {p1}, Lcom/efs/sdk/base/a/h/b/a;->b(Ljava/net/HttpURLConnection;)V
 
-    .line 40
     invoke-static {v5}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 41
     invoke-static {v6}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 42
     invoke-static {v4}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
     return-object v3
@@ -269,27 +247,21 @@
     :try_start_6
     const-string p2, "Content-Disposition: form-data;name=\"file\";filename=\"f\"\r\n"
 
-    .line 43
     invoke-virtual {v6, p2}, Ljava/io/DataOutputStream;->writeBytes(Ljava/lang/String;)V
 
-    .line 44
     invoke-virtual {v6, v8}, Ljava/io/DataOutputStream;->writeBytes(Ljava/lang/String;)V
 
-    .line 45
     array-length p2, p3
 
     invoke-virtual {v6, p3, v7, p2}, Ljava/io/DataOutputStream;->write([BII)V
 
-    .line 46
     :goto_2
     invoke-virtual {v6, v8}, Ljava/io/DataOutputStream;->writeBytes(Ljava/lang/String;)V
 
     const-string p2, "------WebKitFormBoundaryP0Rfzlf32iRoMhmb--\r\n"
 
-    .line 47
     invoke-virtual {v6, p2}, Ljava/io/DataOutputStream;->writeBytes(Ljava/lang/String;)V
 
-    .line 48
     invoke-static {p1}, Lcom/efs/sdk/base/a/h/b/a;->a(Ljava/net/HttpURLConnection;)Lcom/efs/sdk/base/http/HttpResponse;
 
     move-result-object v3
@@ -298,16 +270,12 @@
     .catch Ljava/net/SocketTimeoutException; {:try_start_6 .. :try_end_6} :catch_2
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
-    .line 49
     invoke-static {p1}, Lcom/efs/sdk/base/a/h/b/a;->b(Ljava/net/HttpURLConnection;)V
 
-    .line 50
     invoke-static {v5}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 51
     invoke-static {v6}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 52
     invoke-static {v4}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
     goto/16 :goto_a
@@ -411,7 +379,6 @@
 
     move-object v6, v5
 
-    .line 53
     :goto_6
     :try_start_7
     new-instance p1, Ljava/lang/StringBuilder;
@@ -430,17 +397,13 @@
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_5
 
-    .line 54
     :goto_7
     invoke-static {v4}, Lcom/efs/sdk/base/a/h/b/a;->b(Ljava/net/HttpURLConnection;)V
 
-    .line 55
     invoke-static {v5}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 56
     invoke-static {v6}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 57
     invoke-static {p3}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
     goto :goto_a
@@ -457,11 +420,9 @@
     :goto_8
     const/4 p1, -0x3
 
-    .line 58
     :try_start_8
     invoke-virtual {v3, p1}, Lcom/efs/sdk/base/http/HttpResponse;->setHttpCode(I)V
 
-    .line 59
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -490,10 +451,8 @@
     :goto_9
     const/4 p1, -0x2
 
-    .line 60
     invoke-virtual {v3, p1}, Lcom/efs/sdk/base/http/HttpResponse;->setHttpCode(I)V
 
-    .line 61
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -514,7 +473,6 @@
 
     goto :goto_7
 
-    .line 62
     :goto_a
     invoke-virtual {v3, p0}, Lcom/efs/sdk/base/http/HttpResponse;->setReqUrl(Ljava/lang/String;)V
 
@@ -523,16 +481,12 @@
     :catchall_5
     move-exception p0
 
-    .line 63
     invoke-static {v4}, Lcom/efs/sdk/base/a/h/b/a;->b(Ljava/net/HttpURLConnection;)V
 
-    .line 64
     invoke-static {v5}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 65
     invoke-static {v6}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 66
     invoke-static {p3}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
     throw p0
@@ -541,7 +495,6 @@
 .method private static a(Ljava/net/HttpURLConnection;)Lcom/efs/sdk/base/http/HttpResponse;
     .locals 5
 
-    .line 12
     new-instance v0, Lcom/efs/sdk/base/http/HttpResponse;
 
     invoke-direct {v0}, Lcom/efs/sdk/base/http/HttpResponse;-><init>()V
@@ -553,16 +506,13 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 13
     :try_start_0
     invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result v2
 
-    .line 14
     invoke-virtual {v0, v2}, Lcom/efs/sdk/base/http/HttpResponse;->setHttpCode(I)V
 
-    .line 15
     invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object p0
@@ -574,7 +524,6 @@
     :try_start_1
     new-array v2, v2, [B
 
-    .line 16
     new-instance v3, Ljava/io/ByteArrayOutputStream;
 
     invoke-virtual {p0}, Ljava/io/InputStream;->available()I
@@ -585,7 +534,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 17
     :goto_0
     :try_start_2
     invoke-virtual {p0, v2}, Ljava/io/InputStream;->read([B)I
@@ -598,12 +546,10 @@
 
     const/4 v4, 0x0
 
-    .line 18
     invoke-virtual {v3, v2, v4, v1}, Ljava/io/OutputStream;->write([BII)V
 
     goto :goto_0
 
-    .line 19
     :cond_1
     invoke-virtual {v3}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -644,16 +590,13 @@
 
     const-string v4, "get response error"
 
-    .line 20
     invoke-static {v2, v4, v1}, Lcom/efs/sdk/base/a/h/d;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_3
 
-    .line 21
     :goto_2
     invoke-static {p0}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 22
     invoke-static {v3}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
     return-object v0
@@ -661,10 +604,8 @@
     :catchall_3
     move-exception v0
 
-    .line 23
     invoke-static {p0}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 24
     invoke-static {v3}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
     throw v0
@@ -684,12 +625,10 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/net/URL;
 
     invoke-direct {v0, p0}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    .line 3
     invoke-virtual {v0}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object p0
@@ -698,35 +637,28 @@
 
     const/16 v0, 0x3a98
 
-    .line 4
     invoke-virtual {p0, v0}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
 
     const/16 v0, 0x2710
 
-    .line 5
     invoke-virtual {p0, v0}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
 
     const/4 v0, 0x1
 
-    .line 6
     invoke-virtual {p0, v0}, Ljava/net/HttpURLConnection;->setDoInput(Z)V
 
-    .line 7
     invoke-virtual {p0, v0}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
 
     const/4 v0, 0x0
 
-    .line 8
     invoke-virtual {p0, v0}, Ljava/net/HttpURLConnection;->setUseCaches(Z)V
 
     if-nez p1, :cond_0
 
-    .line 9
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p1
 
-    .line 10
     :cond_0
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -749,7 +681,6 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 11
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -775,10 +706,8 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Ljava/net/HttpURLConnection;->disconnect()V
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
@@ -818,7 +747,6 @@
 
     const-string v2, "efs.util.http"
 
-    .line 1
     new-instance v3, Lcom/efs/sdk/base/http/HttpResponse;
 
     invoke-direct {v3}, Lcom/efs/sdk/base/http/HttpResponse;-><init>()V
@@ -832,7 +760,6 @@
 
     const/4 v5, 0x0
 
-    .line 2
     :try_start_0
     invoke-static {p1, p2}, Lcom/efs/sdk/base/a/h/b/a;->a(Ljava/lang/String;Ljava/util/Map;)Ljava/net/HttpURLConnection;
 
@@ -840,25 +767,20 @@
 
     const-string v6, "GET"
 
-    .line 3
     invoke-virtual {v5, v6}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
     const/4 v6, 0x1
 
-    .line 4
     invoke-virtual {v5, v6}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
 
     const-string v6, "Connection"
 
     const-string v7, "close"
 
-    .line 5
     invoke-virtual {v5, v6, v7}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {v5}, Ljava/net/HttpURLConnection;->connect()V
 
-    .line 7
     invoke-static {v5}, Lcom/efs/sdk/base/a/h/b/a;->a(Ljava/net/HttpURLConnection;)Lcom/efs/sdk/base/http/HttpResponse;
 
     move-result-object v3
@@ -867,7 +789,6 @@
     .catch Ljava/net/SocketTimeoutException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     invoke-static {v5}, Lcom/efs/sdk/base/a/h/b/a;->b(Ljava/net/HttpURLConnection;)V
 
     goto :goto_2
@@ -875,7 +796,6 @@
     :catchall_0
     move-exception v6
 
-    .line 9
     :try_start_1
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -895,7 +815,6 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    .line 10
     :goto_1
     invoke-static {v5}, Lcom/efs/sdk/base/a/h/b/a;->b(Ljava/net/HttpURLConnection;)V
 
@@ -906,11 +825,9 @@
 
     const/4 v7, -0x3
 
-    .line 11
     :try_start_2
     invoke-virtual {v3, v7}, Lcom/efs/sdk/base/http/HttpResponse;->setHttpCode(I)V
 
-    .line 12
     new-instance v7, Ljava/lang/StringBuilder;
 
     const-string v8, "post file \'"
@@ -934,10 +851,8 @@
 
     const/4 v7, -0x2
 
-    .line 13
     invoke-virtual {v3, v7}, Lcom/efs/sdk/base/http/HttpResponse;->setHttpCode(I)V
 
-    .line 14
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -961,12 +876,10 @@
     :catchall_1
     move-exception p1
 
-    .line 15
     invoke-static {v5}, Lcom/efs/sdk/base/a/h/b/a;->b(Ljava/net/HttpURLConnection;)V
 
     throw p1
 
-    .line 16
     :cond_0
     :goto_2
     invoke-virtual {v3, p1}, Lcom/efs/sdk/base/http/HttpResponse;->setReqUrl(Ljava/lang/String;)V
@@ -1007,7 +920,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p1, p2, p3, v0}, Lcom/efs/sdk/base/a/h/b/a;->a(Ljava/lang/String;Ljava/util/Map;Ljava/io/File;[B)Lcom/efs/sdk/base/http/HttpResponse;
 
     move-result-object p1
@@ -1048,14 +960,12 @@
 
     const-string v1, "efs.util.http"
 
-    .line 2
     new-instance v2, Lcom/efs/sdk/base/http/HttpResponse;
 
     invoke-direct {v2}, Lcom/efs/sdk/base/http/HttpResponse;-><init>()V
 
     const/4 v3, 0x0
 
-    .line 3
     :try_start_0
     invoke-static {p1, p2}, Lcom/efs/sdk/base/a/h/b/a;->a(Ljava/lang/String;Ljava/util/Map;)Ljava/net/HttpURLConnection;
 
@@ -1068,25 +978,20 @@
     :try_start_1
     const-string v4, "POST"
 
-    .line 4
     invoke-virtual {p2, v4}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
     const-string v4, "Connection"
 
     const-string v5, "close"
 
-    .line 5
     invoke-virtual {p2, v4, v5}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {p2}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v3
 
-    .line 7
     invoke-virtual {v3, p3}, Ljava/io/OutputStream;->write([B)V
 
-    .line 8
     invoke-static {p2}, Lcom/efs/sdk/base/a/h/b/a;->a(Ljava/net/HttpURLConnection;)Lcom/efs/sdk/base/http/HttpResponse;
 
     move-result-object v2
@@ -1095,11 +1000,9 @@
     .catch Ljava/net/SocketTimeoutException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 9
     :goto_0
     invoke-static {v3}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 10
     invoke-static {p2}, Lcom/efs/sdk/base/a/h/b/a;->b(Ljava/net/HttpURLConnection;)V
 
     goto :goto_4
@@ -1124,7 +1027,6 @@
 
     move-object p2, v3
 
-    .line 11
     :goto_1
     :try_start_2
     new-instance v4, Ljava/lang/StringBuilder;
@@ -1153,10 +1055,8 @@
     :goto_2
     const/4 v4, -0x3
 
-    .line 12
     invoke-virtual {v2, v4}, Lcom/efs/sdk/base/http/HttpResponse;->setHttpCode(I)V
 
-    .line 13
     new-instance v4, Ljava/lang/StringBuilder;
 
     const-string v5, "post file \'"
@@ -1183,10 +1083,8 @@
     :goto_3
     const/4 v0, -0x2
 
-    .line 14
     invoke-virtual {v2, v0}, Lcom/efs/sdk/base/http/HttpResponse;->setHttpCode(I)V
 
-    .line 15
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v4, "post data to \'"
@@ -1209,7 +1107,6 @@
 
     goto :goto_0
 
-    .line 16
     :goto_4
     invoke-virtual {v2, p1}, Lcom/efs/sdk/base/http/HttpResponse;->setReqUrl(Ljava/lang/String;)V
 
@@ -1218,10 +1115,8 @@
     :catchall_2
     move-exception p1
 
-    .line 17
     invoke-static {v3}, Lcom/efs/sdk/base/a/h/b;->a(Ljava/io/Closeable;)V
 
-    .line 18
     invoke-static {p2}, Lcom/efs/sdk/base/a/h/b/a;->b(Ljava/net/HttpURLConnection;)V
 
     throw p1
@@ -1246,7 +1141,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p1, p2, v0, p3}, Lcom/efs/sdk/base/a/h/b/a;->a(Ljava/lang/String;Ljava/util/Map;Ljava/io/File;[B)Lcom/efs/sdk/base/http/HttpResponse;
 
     move-result-object p1

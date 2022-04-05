@@ -1,6 +1,5 @@
 .class synthetic Landroidx/constraintlayout/solver/widgets/analyzer/k$a;
 .super Ljava/lang/Object;
-.source "VerticalWidgetRun.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Landroidx/constraintlayout/solver/widgets/analyzer/WidgetRun$RunType;->values()[Landroidx/constraintlayout/solver/widgets/analyzer/WidgetRun$RunType;
 
     move-result-object v0

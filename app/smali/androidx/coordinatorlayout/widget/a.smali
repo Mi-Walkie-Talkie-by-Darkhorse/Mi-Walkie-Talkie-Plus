@@ -1,6 +1,5 @@
 .class public final Landroidx/coordinatorlayout/widget/a;
 .super Ljava/lang/Object;
-.source "DirectedAcyclicGraph.java"
 
 
 # annotations
@@ -65,10 +64,8 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroidx/core/d/f;
 
     const/16 v1, 0xa
@@ -77,21 +74,18 @@
 
     iput-object v0, p0, Landroidx/coordinatorlayout/widget/a;->a:Landroidx/core/d/e;
 
-    .line 3
     new-instance v0, La/b/g;
 
     invoke-direct {v0}, La/b/g;-><init>()V
 
     iput-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/coordinatorlayout/widget/a;->c:Ljava/util/ArrayList;
 
-    .line 5
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
@@ -113,7 +107,6 @@
         }
     .end annotation
 
-    .line 13
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     move-result v0
@@ -122,7 +115,6 @@
 
     return-void
 
-    .line 14
     :cond_0
     invoke-virtual {p3, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -130,10 +122,8 @@
 
     if-nez v0, :cond_2
 
-    .line 15
     invoke-virtual {p3, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 16
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v0, p1}, La/b/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -146,7 +136,6 @@
 
     const/4 v1, 0x0
 
-    .line 17
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v2
@@ -154,7 +143,6 @@
     :goto_0
     if-ge v1, v2, :cond_1
 
-    .line 18
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -165,16 +153,13 @@
 
     goto :goto_0
 
-    .line 19
     :cond_1
     invoke-virtual {p3, p1}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
 
-    .line 20
     invoke-virtual {p2, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-void
 
-    .line 21
     :cond_2
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -199,10 +184,8 @@
         }
     .end annotation
 
-    .line 22
     invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
 
-    .line 23
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->a:Landroidx/core/d/e;
 
     invoke-interface {v0, p1}, Landroidx/core/d/e;->release(Ljava/lang/Object;)Z
@@ -223,7 +206,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->a:Landroidx/core/d/e;
 
     invoke-interface {v0}, Landroidx/core/d/e;->acquire()Ljava/lang/Object;
@@ -234,7 +216,6 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -248,7 +229,6 @@
 .method public a()V
     .locals 3
 
-    .line 9
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v0}, La/b/g;->size()I
@@ -260,7 +240,6 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 10
     iget-object v2, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v2, v1}, La/b/g;->d(I)Ljava/lang/Object;
@@ -271,7 +250,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 11
     invoke-direct {p0, v2}, Landroidx/coordinatorlayout/widget/a;->a(Ljava/util/ArrayList;)V
 
     :cond_0
@@ -279,7 +257,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_1
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
@@ -300,7 +277,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v0, p1}, La/b/g;->containsKey(Ljava/lang/Object;)Z
@@ -309,7 +285,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     const/4 v1, 0x0
@@ -336,7 +311,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v0, p1}, La/b/g;->containsKey(Ljava/lang/Object;)Z
@@ -353,7 +327,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v0, p1}, La/b/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -364,23 +337,19 @@
 
     if-nez v0, :cond_0
 
-    .line 5
     invoke-direct {p0}, Landroidx/coordinatorlayout/widget/a;->c()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 6
     iget-object v1, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v1, p1, v0}, La/b/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
     :cond_0
     invoke-virtual {v0, p2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-void
 
-    .line 8
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -404,17 +373,14 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 3
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->d:Ljava/util/HashSet;
 
     invoke-virtual {v0}, Ljava/util/HashSet;->clear()V
 
-    .line 4
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v0}, La/b/g;->size()I
@@ -426,7 +392,6 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 5
     iget-object v2, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v2, v1}, La/b/g;->b(I)Ljava/lang/Object;
@@ -443,7 +408,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->c:Ljava/util/ArrayList;
 
@@ -462,7 +426,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v0, p1}, La/b/g;->containsKey(Ljava/lang/Object;)Z
@@ -488,7 +451,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v0, p1}, La/b/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -517,7 +479,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v0}, La/b/g;->size()I
@@ -531,7 +492,6 @@
     :goto_0
     if-ge v2, v0, :cond_2
 
-    .line 2
     iget-object v3, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v3, v2}, La/b/g;->d(I)Ljava/lang/Object;
@@ -542,7 +502,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 3
     invoke-virtual {v3, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     move-result v3
@@ -551,12 +510,10 @@
 
     if-nez v1, :cond_0
 
-    .line 4
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 5
     :cond_0
     iget-object v3, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
@@ -587,7 +544,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v0}, La/b/g;->size()I
@@ -601,7 +557,6 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 2
     iget-object v3, p0, Landroidx/coordinatorlayout/widget/a;->b:La/b/g;
 
     invoke-virtual {v3, v2}, La/b/g;->d(I)Ljava/lang/Object;
@@ -612,7 +567,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 3
     invoke-virtual {v3, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     move-result v3

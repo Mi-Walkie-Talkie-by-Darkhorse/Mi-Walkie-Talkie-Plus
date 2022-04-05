@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;
 .super Ljava/lang/Object;
-.source "QMUICollapsingTopBarLayout.java"
 
 # interfaces
 .implements Lcom/google/android/material/appbar/AppBarLayout$OnOffsetChangedListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,17 +36,14 @@
 .method public onOffsetChanged(Lcom/google/android/material/appbar/AppBarLayout;I)V
     .locals 8
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
     iput p2, p1, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;->v:I
 
-    .line 2
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;->a(Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;)I
 
     move-result p1
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->getChildCount()I
@@ -62,26 +57,22 @@
     :goto_0
     if-ge v2, v0, :cond_2
 
-    .line 4
     iget-object v3, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
     invoke-virtual {v3, v2}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 5
     invoke-virtual {v3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v4
 
     check-cast v4, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$LayoutParams;
 
-    .line 6
     invoke-static {v3}, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;->c(Landroid/view/View;)Lcom/qmuiteam/qmui/util/m;
 
     move-result-object v5
 
-    .line 7
     iget v6, v4, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$LayoutParams;->a:I
 
     const/4 v7, 0x1
@@ -99,17 +90,14 @@
 
     int-to-float v3, v3
 
-    .line 8
     iget v4, v4, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$LayoutParams;->b:F
 
     mul-float v3, v3, v4
 
-    .line 9
     invoke-static {v3}, Ljava/lang/Math;->round(F)I
 
     move-result v3
 
-    .line 10
     invoke-virtual {v5, v3}, Lcom/qmuiteam/qmui/util/m;->b(I)Z
 
     goto :goto_1
@@ -117,10 +105,8 @@
     :cond_1
     neg-int v4, p2
 
-    .line 11
     iget-object v6, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
-    .line 12
     invoke-virtual {v6, v3, v1}, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;->a(Landroid/view/View;Z)I
 
     move-result v3
@@ -129,7 +115,6 @@
 
     move-result v3
 
-    .line 13
     invoke-virtual {v5, v3}, Lcom/qmuiteam/qmui/util/m;->b(I)Z
 
     :goto_1
@@ -137,13 +122,11 @@
 
     goto :goto_0
 
-    .line 14
     :cond_2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;->b()V
 
-    .line 15
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
     iget-object v1, v0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;->m:Landroid/graphics/drawable/Drawable;
@@ -152,10 +135,8 @@
 
     if-lez p1, :cond_3
 
-    .line 16
     invoke-static {v0}, Landroidx/core/view/ViewCompat;->R(Landroid/view/View;)V
 
-    .line 17
     :cond_3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
@@ -173,7 +154,6 @@
 
     sub-int/2addr v0, p1
 
-    .line 18
     invoke-static {p2}, Ljava/lang/Math;->abs(I)I
 
     move-result p1
@@ -184,14 +164,12 @@
 
     div-float/2addr p1, v0
 
-    .line 19
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
     iget-object v0, v0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;->j:Lcom/qmuiteam/qmui/util/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/util/a;->a(F)V
 
-    .line 20
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;->b(Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;)Ljava/util/ArrayList;
@@ -215,7 +193,6 @@
 
     check-cast v1, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$d;
 
-    .line 21
     iget-object v2, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$c;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
     invoke-interface {v1, v2, p2, p1}, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$d;->a(Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;IF)V

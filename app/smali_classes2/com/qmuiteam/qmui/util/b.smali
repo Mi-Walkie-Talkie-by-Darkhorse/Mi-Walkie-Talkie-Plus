@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/util/b;
 .super Ljava/lang/Object;
-.source "QMUIColorHelper.java"
 
 
 # direct methods
@@ -13,7 +12,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/qmuiteam/qmui/util/b;->a(IFZ)I
 
     move-result p0
@@ -72,17 +70,14 @@
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 2
     invoke-static {p2, v0, v1}, Lcom/qmuiteam/qmui/util/g;->a(FFF)F
 
     move-result p2
 
-    .line 3
     invoke-static {p0}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v0
 
-    .line 4
     invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v1
@@ -97,12 +92,10 @@
 
     add-int/2addr v1, v0
 
-    .line 5
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v0
 
-    .line 6
     invoke-static {p1}, Landroid/graphics/Color;->red(I)I
 
     move-result v2
@@ -117,12 +110,10 @@
 
     add-int/2addr v2, v0
 
-    .line 7
     invoke-static {p0}, Landroid/graphics/Color;->green(I)I
 
     move-result v0
 
-    .line 8
     invoke-static {p1}, Landroid/graphics/Color;->green(I)I
 
     move-result v3
@@ -137,12 +128,10 @@
 
     add-int/2addr v3, v0
 
-    .line 9
     invoke-static {p0}, Landroid/graphics/Color;->blue(I)I
 
     move-result p0
 
-    .line 10
     invoke-static {p1}, Landroid/graphics/Color;->blue(I)I
 
     move-result p1
@@ -157,7 +146,6 @@
 
     add-int/2addr p1, p0
 
-    .line 11
     invoke-static {v1, v2, v3, p1}, Landroid/graphics/Color;->argb(IIII)I
 
     move-result p0

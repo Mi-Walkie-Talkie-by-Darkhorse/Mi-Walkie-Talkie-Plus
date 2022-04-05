@@ -1,6 +1,5 @@
 .class public Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$c;
 .super Ljava/lang/Object;
-.source "RecyclerView.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +41,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$c;->a(Landroidx/recyclerview/widget/RecyclerView$y;I)Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$c;
 
     return-object p0
@@ -58,27 +55,22 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
     move-result p2
 
     iput p2, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$c;->a:I
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/View;->getTop()I
 
     move-result p2
 
     iput p2, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$c;->b:I
 
-    .line 5
     invoke-virtual {p1}, Landroid/view/View;->getRight()I
 
-    .line 6
     invoke-virtual {p1}, Landroid/view/View;->getBottom()I
 
     return-object p0

@@ -1,6 +1,5 @@
 .class Landroidx/loader/a/b$b;
 .super Ljava/lang/Object;
-.source "LoaderManagerImpl.java"
 
 # interfaces
 .implements Landroidx/lifecycle/q;

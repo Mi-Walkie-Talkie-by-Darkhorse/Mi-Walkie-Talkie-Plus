@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/view/b$b;
 .super Ljava/lang/Object;
-.source "ActionProvider.java"
 
 
 # annotations

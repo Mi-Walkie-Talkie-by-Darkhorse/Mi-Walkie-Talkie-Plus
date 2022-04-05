@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/n;
 .super Ljava/lang/Object;
-.source "HolderAdapter.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/m;

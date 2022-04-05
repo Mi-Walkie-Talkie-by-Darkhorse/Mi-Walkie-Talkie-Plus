@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/AgentWeb$CommonBuilder;
 .super Ljava/lang/Object;
-.source "AgentWeb.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Lcom/just/agentweb/AgentWeb$AgentBuilder;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     return-void
@@ -44,7 +41,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1, p2}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$3800(Lcom/just/agentweb/AgentWeb$AgentBuilder;Ljava/lang/String;Ljava/lang/Object;)V
@@ -55,7 +51,6 @@
 .method public additionalHttpHeader(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/just/agentweb/AgentWeb$CommonBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1, p2, p3}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$3900(Lcom/just/agentweb/AgentWeb$AgentBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
@@ -77,7 +72,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1, p2}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$4000(Lcom/just/agentweb/AgentWeb$AgentBuilder;Ljava/lang/String;Ljava/util/Map;)V
@@ -88,7 +82,6 @@
 .method public closeWebViewClientHelper()Lcom/just/agentweb/AgentWeb$CommonBuilder;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     const/4 v1, 0x0
@@ -101,7 +94,6 @@
 .method public createAgentWeb()Lcom/just/agentweb/AgentWeb$PreAgentWeb;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$3700(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/AgentWeb$PreAgentWeb;
@@ -114,7 +106,6 @@
 .method public interceptUnkownUrl()Lcom/just/agentweb/AgentWeb$CommonBuilder;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     const/4 v1, 0x1
@@ -131,7 +122,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2202(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/AbsAgentWebUIController;)Lcom/just/agentweb/AbsAgentWebUIController;
@@ -146,7 +136,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1602(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/IAgentWebSettings;)Lcom/just/agentweb/IAgentWebSettings;
@@ -161,7 +150,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$302(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/IEventHandler;)Lcom/just/agentweb/IEventHandler;
@@ -180,12 +168,10 @@
         .end annotation
     .end param
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2302(Lcom/just/agentweb/AgentWeb$AgentBuilder;I)I
 
-    .line 3
     iget-object p1, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {p1, p2}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2402(Lcom/just/agentweb/AgentWeb$AgentBuilder;I)I
@@ -200,7 +186,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2502(Lcom/just/agentweb/AgentWeb$AgentBuilder;Landroid/view/View;)Landroid/view/View;
@@ -215,7 +200,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2802(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/DefaultWebClient$OpenOtherPageWays;)Lcom/just/agentweb/DefaultWebClient$OpenOtherPageWays;
@@ -230,7 +214,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1802(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/PermissionInterceptor;)Lcom/just/agentweb/PermissionInterceptor;
@@ -245,7 +228,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2002(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/AgentWeb$SecurityType;)Lcom/just/agentweb/AgentWeb$SecurityType;
@@ -260,7 +242,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1402(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/WebChromeClient;)Lcom/just/agentweb/WebChromeClient;
@@ -275,7 +256,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1202(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/IWebLayout;)Lcom/just/agentweb/IWebLayout;
@@ -290,7 +270,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1102(Lcom/just/agentweb/AgentWeb$AgentBuilder;Landroid/webkit/WebView;)Landroid/webkit/WebView;
@@ -305,7 +284,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1502(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/WebViewClient;)Lcom/just/agentweb/WebViewClient;
@@ -324,7 +302,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
@@ -334,7 +311,6 @@
 
     if-nez v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$3602(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/MiddlewareWebChromeBase;)Lcom/just/agentweb/MiddlewareWebChromeBase;
@@ -345,7 +321,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
@@ -355,7 +330,6 @@
 
     invoke-virtual {v0, p1}, Lcom/just/agentweb/MiddlewareWebChromeBase;->enq(Lcom/just/agentweb/MiddlewareWebChromeBase;)Lcom/just/agentweb/MiddlewareWebChromeBase;
 
-    .line 4
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$3602(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/MiddlewareWebChromeBase;)Lcom/just/agentweb/MiddlewareWebChromeBase;
@@ -375,7 +349,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
@@ -385,7 +358,6 @@
 
     if-nez v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$3502(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/MiddlewareWebClientBase;)Lcom/just/agentweb/MiddlewareWebClientBase;
@@ -396,7 +368,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
@@ -406,7 +377,6 @@
 
     invoke-virtual {v0, p1}, Lcom/just/agentweb/MiddlewareWebClientBase;->enq(Lcom/just/agentweb/MiddlewareWebClientBase;)Lcom/just/agentweb/MiddlewareWebClientBase;
 
-    .line 4
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$CommonBuilder;->mAgentBuilder:Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-static {v0, p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$3502(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/MiddlewareWebClientBase;)Lcom/just/agentweb/MiddlewareWebClientBase;

@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView$1;
 .super Ljava/lang/Object;
-.source "BottomNavigationMenuView.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView$1;->this$0:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,15 +36,12 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    .line 1
     check-cast p1, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/android/material/bottomnavigation/BottomNavigationItemView;->getItemData()Landroidx/appcompat/view/menu/h;
 
     move-result-object p1
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView$1;->this$0:Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;
 
     invoke-static {v0}, Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;->access$100(Lcom/google/android/material/bottomnavigation/BottomNavigationMenuView;)Landroidx/appcompat/view/menu/f;
@@ -69,7 +64,6 @@
 
     const/4 v0, 0x1
 
-    .line 4
     invoke-interface {p1, v0}, Landroid/view/MenuItem;->setChecked(Z)Landroid/view/MenuItem;
 
     :cond_0

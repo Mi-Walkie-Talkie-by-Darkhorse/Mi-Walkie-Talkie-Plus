@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/qrcode/detector/AlignmentPattern;
 .super Lcom/google/zxing/ResultPoint;
-.source "AlignmentPattern.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method constructor <init>(FFF)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
 
-    .line 2
     iput p3, p0, Lcom/google/zxing/qrcode/detector/AlignmentPattern;->estimatedModuleSize:F
 
     return-void
@@ -25,7 +22,6 @@
 .method aboutEquals(FFF)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result v0
@@ -56,7 +52,6 @@
 
     if-gtz p2, :cond_2
 
-    .line 2
     iget p2, p0, Lcom/google/zxing/qrcode/detector/AlignmentPattern;->estimatedModuleSize:F
 
     sub-float/2addr p1, p2
@@ -71,7 +66,6 @@
 
     if-lez p2, :cond_1
 
-    .line 3
     iget p2, p0, Lcom/google/zxing/qrcode/detector/AlignmentPattern;->estimatedModuleSize:F
 
     cmpg-float p1, p1, p2
@@ -96,7 +90,6 @@
 .method combineEstimate(FFF)Lcom/google/zxing/qrcode/detector/AlignmentPattern;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v0
@@ -107,7 +100,6 @@
 
     div-float/2addr v0, p2
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result v1
@@ -116,14 +108,12 @@
 
     div-float/2addr v1, p2
 
-    .line 3
     iget p1, p0, Lcom/google/zxing/qrcode/detector/AlignmentPattern;->estimatedModuleSize:F
 
     add-float/2addr p1, p3
 
     div-float/2addr p1, p2
 
-    .line 4
     new-instance p2, Lcom/google/zxing/qrcode/detector/AlignmentPattern;
 
     invoke-direct {p2, v0, v1, p1}, Lcom/google/zxing/qrcode/detector/AlignmentPattern;-><init>(FFF)V

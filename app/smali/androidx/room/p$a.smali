@@ -1,6 +1,5 @@
 .class Landroidx/room/p$a;
 .super Ljava/lang/Object;
-.source "TransactionExecutor.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/room/p;Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/room/p$a;->b:Landroidx/room/p;
 
     iput-object p2, p0, Landroidx/room/p$a;->a:Ljava/lang/Runnable;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Landroidx/room/p$a;->a:Ljava/lang/Runnable;
 
@@ -50,7 +47,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     iget-object v0, p0, Landroidx/room/p$a;->b:Landroidx/room/p;
 
     invoke-virtual {v0}, Landroidx/room/p;->a()V
@@ -64,6 +60,5 @@
 
     invoke-virtual {v1}, Landroidx/room/p;->a()V
 
-    .line 3
     throw v0
 .end method

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/hi;
 .super Ljava/lang/Object;
-.source "DynamicExceptionHandler.java"
 
 # interfaces
 .implements Ljava/lang/Thread$UncaughtExceptionHandler;
@@ -22,27 +21,22 @@
 .method private constructor <init>(Landroid/content/Context;Lcom/amap/api/col/l3/gh;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/amap/api/col/l3/hi;->c:Landroid/content/Context;
 
-    .line 3
     iput-object p2, p0, Lcom/amap/api/col/l3/hi;->d:Lcom/amap/api/col/l3/gh;
 
-    .line 4
     invoke-static {}, Ljava/lang/Thread;->getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/amap/api/col/l3/hi;->b:Ljava/lang/Thread$UncaughtExceptionHandler;
 
-    .line 5
     invoke-static {p0}, Ljava/lang/Thread;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
     return-void
@@ -55,20 +49,17 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/hi;->a:Lcom/amap/api/col/l3/hi;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/amap/api/col/l3/hi;
 
     invoke-direct {v1, p0, p1}, Lcom/amap/api/col/l3/hi;-><init>(Landroid/content/Context;Lcom/amap/api/col/l3/gh;)V
 
     sput-object v1, Lcom/amap/api/col/l3/hi;->a:Lcom/amap/api/col/l3/hi;
 
-    .line 3
     :cond_0
     sget-object p0, Lcom/amap/api/col/l3/hi;->a:Lcom/amap/api/col/l3/hi;
     :try_end_0
@@ -101,7 +92,6 @@
 
     const-string v4, "loc"
 
-    .line 1
     invoke-static {p2}, Lcom/amap/api/col/l3/gi;->a(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object v5
@@ -372,14 +362,12 @@
 
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     :cond_c
     :goto_2
     iget-object v0, p0, Lcom/amap/api/col/l3/hi;->b:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     if-eqz v0, :cond_d
 
-    .line 3
     invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
     :cond_d

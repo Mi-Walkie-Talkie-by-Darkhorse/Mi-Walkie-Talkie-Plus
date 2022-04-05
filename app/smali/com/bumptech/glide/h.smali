@@ -1,6 +1,5 @@
 .class public abstract Lcom/bumptech/glide/h;
 .super Ljava/lang/Object;
-.source "TransitionOptions.java"
 
 # interfaces
 .implements Ljava/lang/Cloneable;
@@ -37,10 +36,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {}, Lcom/bumptech/glide/request/i/c;->b()Lcom/bumptech/glide/request/i/e;
 
     move-result-object v0
@@ -82,14 +79,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, Lcom/bumptech/glide/request/i/e;
 
     iput-object p1, p0, Lcom/bumptech/glide/h;->a:Lcom/bumptech/glide/request/i/e;
 
-    .line 2
     invoke-direct {p0}, Lcom/bumptech/glide/h;->b()Lcom/bumptech/glide/h;
 
     return-object p0
@@ -105,7 +100,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/h;->a:Lcom/bumptech/glide/request/i/e;
 
     return-object v0
@@ -120,7 +114,6 @@
         }
     .end annotation
 
-    .line 2
     :try_start_0
     invoke-super {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
@@ -135,7 +128,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     new-instance v1, Ljava/lang/RuntimeException;
 
     invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -151,7 +143,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/bumptech/glide/h;->clone()Lcom/bumptech/glide/h;
 
     move-result-object v0

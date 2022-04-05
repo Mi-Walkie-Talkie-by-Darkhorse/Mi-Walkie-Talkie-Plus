@@ -1,6 +1,5 @@
 .class Lcom/yalantis/ucrop/UCropActivity$b;
 .super Ljava/lang/Object;
-.source "UCropActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/yalantis/ucrop/UCropActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/UCropActivity$b;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$b;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/UCropActivity;->c(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
@@ -51,7 +48,6 @@
 
     const/4 v2, 0x0
 
-    .line 2
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
@@ -66,10 +62,8 @@
 
     move-result v1
 
-    .line 3
     invoke-virtual {v0, v1}, Lcom/yalantis/ucrop/view/CropImageView;->setTargetAspectRatio(F)V
 
-    .line 4
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$b;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/UCropActivity;->c(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
@@ -78,14 +72,12 @@
 
     invoke-virtual {v0}, Lcom/yalantis/ucrop/view/CropImageView;->setImageToWrapCropBounds()V
 
-    .line 5
     invoke-virtual {p1}, Landroid/view/View;->isSelected()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 6
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$b;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/UCropActivity;->d(Lcom/yalantis/ucrop/UCropActivity;)Ljava/util/List;
@@ -118,7 +110,6 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 7
     :goto_1
     invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->setSelected(Z)V
 

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/adapter/n$e;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "SelectDeviceAdapter.java"
 
 
 # annotations
@@ -32,12 +31,10 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/adapter/n;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
     const p1, 0x7f090080
 
-    .line 2
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -48,7 +45,6 @@
 
     const p1, 0x7f09046a
 
-    .line 3
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -59,7 +55,6 @@
 
     const p1, 0x7f09046b
 
-    .line 4
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -70,7 +65,6 @@
 
     const p1, 0x7f09046c
 
-    .line 5
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -81,7 +75,6 @@
 
     const p1, 0x7f09011e
 
-    .line 6
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -92,7 +85,6 @@
 
     const p1, 0x7f090349
 
-    .line 7
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1

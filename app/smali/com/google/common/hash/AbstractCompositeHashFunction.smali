@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/hash/AbstractCompositeHashFunction;
 .super Lcom/google/common/hash/AbstractStreamingHashFunction;
-.source "AbstractCompositeHashFunction.java"
 
 
 # static fields
@@ -15,10 +14,8 @@
 .method varargs constructor <init>([Lcom/google/common/hash/HashFunction;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction;-><init>()V
 
-    .line 2
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -28,14 +25,12 @@
 
     aget-object v2, p1, v1
 
-    .line 3
     invoke-static {v2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iput-object p1, p0, Lcom/google/common/hash/AbstractCompositeHashFunction;->functions:[Lcom/google/common/hash/HashFunction;
 
@@ -50,7 +45,6 @@
 .method public newHasher()Lcom/google/common/hash/Hasher;
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/hash/AbstractCompositeHashFunction;->functions:[Lcom/google/common/hash/HashFunction;
 
     array-length v0, v0
@@ -62,7 +56,6 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 2
     iget-object v3, p0, Lcom/google/common/hash/AbstractCompositeHashFunction;->functions:[Lcom/google/common/hash/HashFunction;
 
     aget-object v3, v3, v2
@@ -77,7 +70,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/google/common/hash/AbstractCompositeHashFunction$1;
 

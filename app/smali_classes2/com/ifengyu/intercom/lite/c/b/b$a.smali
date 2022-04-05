@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/c/b/b$a;
 .super Ljava/lang/Object;
-.source "ChannelDialogBuilder.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/c/b/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/b$a;->a:Lcom/ifengyu/intercom/lite/c/b/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/b$a;->a:Lcom/ifengyu/intercom/lite/c/b/b;
 
     move-object v1, p1

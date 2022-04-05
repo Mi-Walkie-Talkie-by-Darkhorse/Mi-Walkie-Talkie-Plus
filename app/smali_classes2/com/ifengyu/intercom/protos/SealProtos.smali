@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/protos/SealProtos;
 .super Ljava/lang/Object;
-.source "SealProtos.java"
 
 
 # annotations
@@ -130,12 +129,10 @@
 
     const-string v12, "S_ALLOW\u0010\u0008\u0012\u0013\n\u000fSEAL_DIS_REFUSE\u0010\t\u0012\u0011\n\rSEAL_DIS_WAIT\u0010\n\u0012\u0015\n\u0011SEAL_DIS_LOWPOWER\u0010\u000b\u0012\r\n\tSEAL_BUSY\u0010\u000c*(\n\u000bSEAL_SWITCH\u0012\u000c\n\u0008SEAL_OFF\u0010\u0001\u0012\u000b\n\u0007SEAL_ON\u0010\u0002B+\n\u001bcom.ifengyu.intercom.protosB\nSealProtosH\u0002"
 
-    .line 1
     filled-new-array/range {v0 .. v12}, [Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Lcom/ifengyu/intercom/protos/SealProtos$a;
 
     invoke-direct {v1}, Lcom/ifengyu/intercom/protos/SealProtos$a;-><init>()V
@@ -144,10 +141,8 @@
 
     new-array v3, v2, [Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 3
     invoke-static {v0, v3, v1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalBuildGeneratedFileFrom([Ljava/lang/String;[Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;)V
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -164,7 +159,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->a:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 5
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "Version"
@@ -189,7 +183,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->b:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -208,7 +201,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->c:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 7
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "ChNo"
@@ -245,7 +237,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->d:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -264,7 +255,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->e:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 9
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "Version"
@@ -307,7 +297,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->f:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -326,7 +315,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->g:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "Version"
@@ -349,7 +337,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->h:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 12
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -368,7 +355,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->i:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 13
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "Option"
@@ -387,7 +373,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->j:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 14
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -406,7 +391,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->k:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 15
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v5, "Version"
@@ -437,7 +421,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->l:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 16
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -456,7 +439,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->m:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 17
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v5, "FCmd"
@@ -475,7 +457,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->n:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 18
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -494,7 +475,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->o:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 19
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v5, "Offset"
@@ -507,7 +487,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->p:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 20
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -526,7 +505,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->q:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 21
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v6, "Data"
@@ -541,7 +519,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->r:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 22
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -560,7 +537,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->s:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 23
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v5, "Mac"
@@ -579,7 +555,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->t:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 24
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -598,7 +573,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->u:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 25
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v5, "BtEar"
@@ -611,7 +585,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->v:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 26
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -630,7 +603,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->w:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 27
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     filled-new-array {v4, v3, v2}, [Ljava/lang/String;
@@ -641,7 +613,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->x:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 28
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -660,7 +631,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->y:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 29
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     filled-new-array {v4, v3, v5}, [Ljava/lang/String;
@@ -671,7 +641,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SealProtos;->z:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 30
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos;->C()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -690,7 +659,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->A:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 31
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "PowerOn"
@@ -721,7 +689,6 @@
 .method static synthetic A()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->m:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -730,7 +697,6 @@
 .method static synthetic B()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->n:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -739,7 +705,6 @@
 .method public static C()Lcom/google/protobuf/Descriptors$FileDescriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->C:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     return-object v0
@@ -748,7 +713,6 @@
 .method static synthetic a()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->a:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -757,7 +721,6 @@
 .method static synthetic a(Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/Descriptors$FileDescriptor;
     .locals 0
 
-    .line 2
     sput-object p0, Lcom/ifengyu/intercom/protos/SealProtos;->C:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     return-object p0
@@ -766,7 +729,6 @@
 .method static synthetic b()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->b:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -775,7 +737,6 @@
 .method static synthetic c()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->o:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -784,7 +745,6 @@
 .method static synthetic d()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->p:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -793,7 +753,6 @@
 .method static synthetic e()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->q:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -802,7 +761,6 @@
 .method static synthetic f()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->r:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -811,7 +769,6 @@
 .method static synthetic g()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->s:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -820,7 +777,6 @@
 .method static synthetic h()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->t:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -829,7 +785,6 @@
 .method static synthetic i()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->c:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -838,7 +793,6 @@
 .method static synthetic j()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->u:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -847,7 +801,6 @@
 .method static synthetic k()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->v:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -856,7 +809,6 @@
 .method static synthetic l()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->d:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -865,7 +817,6 @@
 .method static synthetic m()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->w:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -874,7 +825,6 @@
 .method static synthetic n()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->x:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -883,7 +833,6 @@
 .method static synthetic o()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->y:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -892,7 +841,6 @@
 .method static synthetic p()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->z:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -901,7 +849,6 @@
 .method static synthetic q()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->A:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -910,7 +857,6 @@
 .method static synthetic r()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->B:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -919,7 +865,6 @@
 .method static synthetic s()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->e:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -928,7 +873,6 @@
 .method static synthetic t()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->f:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -937,7 +881,6 @@
 .method static synthetic u()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->g:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -946,7 +889,6 @@
 .method static synthetic v()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->h:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -955,7 +897,6 @@
 .method static synthetic w()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->i:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -964,7 +905,6 @@
 .method static synthetic x()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->j:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -973,7 +913,6 @@
 .method static synthetic y()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->k:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -982,7 +921,6 @@
 .method static synthetic z()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SealProtos;->l:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0

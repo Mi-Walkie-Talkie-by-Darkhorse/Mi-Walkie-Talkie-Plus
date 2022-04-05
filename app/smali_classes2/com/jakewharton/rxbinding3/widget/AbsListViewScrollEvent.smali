@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEvent;
 .super Ljava/lang/Object;
-.source "AbsListViewScrollEventObservable.kt"
 
 
 # annotations
@@ -81,7 +80,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEvent;->view:Landroid/widget/AbsListView;
@@ -346,7 +344,6 @@
 .method public final getFirstVisibleItem()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEvent;->firstVisibleItem:I
 
     return v0
@@ -355,7 +352,6 @@
 .method public final getScrollState()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEvent;->scrollState:I
 
     return v0
@@ -364,7 +360,6 @@
 .method public final getTotalItemCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEvent;->totalItemCount:I
 
     return v0
@@ -375,7 +370,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEvent;->view:Landroid/widget/AbsListView;
 
     return-object v0
@@ -384,7 +378,6 @@
 .method public final getVisibleItemCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEvent;->visibleItemCount:I
 
     return v0

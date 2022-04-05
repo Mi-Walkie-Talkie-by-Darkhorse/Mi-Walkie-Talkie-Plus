@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/collect/Range;
 .super Ljava/lang/Object;
-.source "Range.java"
 
 # interfaces
 .implements Lcom/google/common/base/Predicate;
@@ -94,28 +93,24 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Range$1;
 
     invoke-direct {v0}, Lcom/google/common/collect/Range$1;-><init>()V
 
     sput-object v0, Lcom/google/common/collect/Range;->LOWER_BOUND_FN:Lcom/google/common/base/Function;
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/Range$2;
 
     invoke-direct {v0}, Lcom/google/common/collect/Range$2;-><init>()V
 
     sput-object v0, Lcom/google/common/collect/Range;->UPPER_BOUND_FN:Lcom/google/common/base/Function;
 
-    .line 3
     new-instance v0, Lcom/google/common/collect/Range$3;
 
     invoke-direct {v0}, Lcom/google/common/collect/Range$3;-><init>()V
 
     sput-object v0, Lcom/google/common/collect/Range;->RANGE_LEX_ORDERING:Lcom/google/common/collect/Ordering;
 
-    .line 4
     new-instance v0, Lcom/google/common/collect/Range;
 
     invoke-static {}, Lcom/google/common/collect/Cut;->belowAll()Lcom/google/common/collect/Cut;
@@ -145,10 +140,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p1, p2}, Lcom/google/common/collect/Cut;->compareTo(Lcom/google/common/collect/Cut;)I
 
     move-result v0
@@ -169,7 +162,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -179,7 +171,6 @@
 
     iput-object p1, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
-    .line 4
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -190,7 +181,6 @@
 
     return-void
 
-    .line 5
     :cond_1
     :goto_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -240,7 +230,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/Range;->ALL:Lcom/google/common/collect/Range;
 
     return-object v0
@@ -258,7 +247,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Cut;->belowValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -286,7 +274,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/Cut;->belowAll()Lcom/google/common/collect/Cut;
 
     move-result-object v0
@@ -316,7 +303,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p0, Ljava/util/SortedSet;
 
     return-object p0
@@ -334,7 +320,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Cut;->belowValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -362,7 +347,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Cut;->belowValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -381,7 +365,6 @@
 .method static compareOrThrow(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
     .locals 0
 
-    .line 1
     invoke-interface {p0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
 
     move-result p0
@@ -405,7 +388,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Range;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Range;-><init>(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)V
@@ -427,7 +409,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/Range$4;->$SwitchMap$com$google$common$collect$BoundType:[I
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
@@ -444,14 +425,12 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/collect/Range;->atLeast(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -459,7 +438,6 @@
 
     throw p0
 
-    .line 4
     :cond_1
     invoke-static {p0}, Lcom/google/common/collect/Range;->greaterThan(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
@@ -482,15 +460,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     instance-of v0, p0, Lcom/google/common/collect/ContiguousSet;
 
     if-eqz v0, :cond_0
 
-    .line 3
     check-cast p0, Lcom/google/common/collect/ContiguousSet;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ContiguousSet;->range()Lcom/google/common/collect/Range;
@@ -499,13 +474,11 @@
 
     return-object p0
 
-    .line 4
     :cond_0
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
 
-    .line 5
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -518,7 +491,6 @@
 
     move-object v1, v0
 
-    .line 6
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -526,7 +498,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 7
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
@@ -537,7 +508,6 @@
 
     check-cast v2, Ljava/lang/Comparable;
 
-    .line 8
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v3
@@ -548,7 +518,6 @@
 
     check-cast v0, Ljava/lang/Comparable;
 
-    .line 9
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v3
@@ -561,7 +530,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_1
     invoke-static {v0, v1}, Lcom/google/common/collect/Range;->closed(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
@@ -582,7 +550,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Cut;->aboveValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -610,7 +577,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/Cut;->belowAll()Lcom/google/common/collect/Cut;
 
     move-result-object v0
@@ -641,7 +607,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/Range;->LOWER_BOUND_FN:Lcom/google/common/base/Function;
 
     return-object v0
@@ -659,7 +624,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Cut;->aboveValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -687,7 +651,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Cut;->aboveValue(Ljava/lang/Comparable;)Lcom/google/common/collect/Cut;
 
     move-result-object p0
@@ -719,13 +682,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     sget-object v0, Lcom/google/common/collect/BoundType;->OPEN:Lcom/google/common/collect/BoundType;
 
     if-ne p1, v0, :cond_0
@@ -741,7 +701,6 @@
 
     move-result-object p0
 
-    .line 4
     :goto_0
     sget-object p1, Lcom/google/common/collect/BoundType;->OPEN:Lcom/google/common/collect/BoundType;
 
@@ -758,7 +717,6 @@
 
     move-result-object p1
 
-    .line 5
     :goto_1
     invoke-static {p0, p1}, Lcom/google/common/collect/Range;->create(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Lcom/google/common/collect/Range;
 
@@ -779,7 +737,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p0}, Lcom/google/common/collect/Range;->closed(Ljava/lang/Comparable;Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
     move-result-object p0
@@ -800,25 +757,20 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v1, 0x10
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/google/common/collect/Cut;->describeAsLowerBound(Ljava/lang/StringBuilder;)V
 
     const/16 p0, 0x2025
 
-    .line 4
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 5
     invoke-virtual {p1, v0}, Lcom/google/common/collect/Cut;->describeAsUpperBound(Ljava/lang/StringBuilder;)V
 
-    .line 6
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -840,7 +792,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/Range$4;->$SwitchMap$com$google$common$collect$BoundType:[I
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
@@ -857,14 +808,12 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/collect/Range;->atMost(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance p0, Ljava/lang/AssertionError;
 
@@ -872,7 +821,6 @@
 
     throw p0
 
-    .line 4
     :cond_1
     invoke-static {p0}, Lcom/google/common/collect/Range;->lessThan(Ljava/lang/Comparable;)Lcom/google/common/collect/Range;
 
@@ -896,7 +844,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/Range;->UPPER_BOUND_FN:Lcom/google/common/base/Function;
 
     return-object v0
@@ -915,7 +862,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Range;->contains(Ljava/lang/Comparable;)Z
 
     move-result p1
@@ -926,7 +872,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Range;->apply(Ljava/lang/Comparable;)Z
@@ -948,24 +893,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/Cut;->canonical(Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v1, p1}, Lcom/google/common/collect/Cut;->canonical(Lcom/google/common/collect/DiscreteDomain;)Lcom/google/common/collect/Cut;
 
     move-result-object p1
 
-    .line 4
     iget-object v1, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     if-ne v0, v1, :cond_0
@@ -995,10 +936,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/Cut;->isLessThan(Ljava/lang/Comparable;)Z
@@ -1036,7 +975,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/collect/Iterables;->isEmpty(Ljava/lang/Iterable;)Z
 
     move-result v0
@@ -1047,7 +985,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     instance-of v0, p1, Ljava/util/SortedSet;
 
@@ -1055,17 +992,14 @@
 
     if-eqz v0, :cond_3
 
-    .line 3
     invoke-static {p1}, Lcom/google/common/collect/Range;->cast(Ljava/lang/Iterable;)Ljava/util/SortedSet;
 
     move-result-object v0
 
-    .line 4
     invoke-interface {v0}, Ljava/util/SortedSet;->comparator()Ljava/util/Comparator;
 
     move-result-object v3
 
-    .line 5
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v4
@@ -1078,7 +1012,6 @@
 
     if-nez v3, :cond_3
 
-    .line 6
     :cond_1
     invoke-interface {v0}, Ljava/util/SortedSet;->first()Ljava/lang/Object;
 
@@ -1112,7 +1045,6 @@
     :goto_0
     return v1
 
-    .line 7
     :cond_3
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -1131,7 +1063,6 @@
 
     check-cast v0, Ljava/lang/Comparable;
 
-    .line 8
     invoke-virtual {p0, v0}, Lcom/google/common/collect/Range;->contains(Ljava/lang/Comparable;)Z
 
     move-result v0
@@ -1154,7 +1085,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p1, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
@@ -1193,17 +1123,14 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Lcom/google/common/collect/Range;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/common/collect/Range;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v2, p1, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
@@ -1233,7 +1160,6 @@
 .method public hasLowerBound()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-static {}, Lcom/google/common/collect/Cut;->belowAll()Lcom/google/common/collect/Cut;
@@ -1256,7 +1182,6 @@
 .method public hasUpperBound()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     invoke-static {}, Lcom/google/common/collect/Cut;->aboveAll()Lcom/google/common/collect/Cut;
@@ -1279,7 +1204,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -1311,7 +1235,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p1, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
@@ -1320,7 +1243,6 @@
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     iget-object v2, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -1345,7 +1267,6 @@
     :cond_1
     if-ltz v0, :cond_2
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     goto :goto_0
@@ -1356,7 +1277,6 @@
     :goto_0
     if-gtz v1, :cond_3
 
-    .line 4
     iget-object p1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     goto :goto_1
@@ -1364,7 +1284,6 @@
     :cond_3
     iget-object p1, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
-    .line 5
     :goto_1
     invoke-static {v0, p1}, Lcom/google/common/collect/Range;->create(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Lcom/google/common/collect/Range;
 
@@ -1383,7 +1302,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -1418,7 +1336,6 @@
 .method public isEmpty()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -1433,7 +1350,6 @@
 .method public lowerBoundType()Lcom/google/common/collect/BoundType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v0}, Lcom/google/common/collect/Cut;->typeAsLowerBound()Lcom/google/common/collect/BoundType;
@@ -1451,7 +1367,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v0}, Lcom/google/common/collect/Cut;->endpoint()Ljava/lang/Comparable;
@@ -1464,7 +1379,6 @@
 .method readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/Range;->ALL:Lcom/google/common/collect/Range;
 
     invoke-virtual {p0, v0}, Lcom/google/common/collect/Range;->equals(Ljava/lang/Object;)Z
@@ -1473,7 +1387,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/Range;->all()Lcom/google/common/collect/Range;
 
     move-result-object v0
@@ -1496,7 +1409,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p1, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
@@ -1505,7 +1417,6 @@
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     iget-object v2, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -1530,7 +1441,6 @@
     :cond_1
     if-gtz v0, :cond_2
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     goto :goto_0
@@ -1541,7 +1451,6 @@
     :goto_0
     if-ltz v1, :cond_3
 
-    .line 4
     iget-object p1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     goto :goto_1
@@ -1549,7 +1458,6 @@
     :cond_3
     iget-object p1, p1, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
-    .line 5
     :goto_1
     invoke-static {v0, p1}, Lcom/google/common/collect/Range;->create(Lcom/google/common/collect/Cut;Lcom/google/common/collect/Cut;)Lcom/google/common/collect/Range;
 
@@ -1561,7 +1469,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     iget-object v1, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
@@ -1576,7 +1483,6 @@
 .method public upperBoundType()Lcom/google/common/collect/BoundType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v0}, Lcom/google/common/collect/Cut;->typeAsUpperBound()Lcom/google/common/collect/BoundType;
@@ -1594,7 +1500,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Range;->upperBound:Lcom/google/common/collect/Cut;
 
     invoke-virtual {v0}, Lcom/google/common/collect/Cut;->endpoint()Ljava/lang/Comparable;

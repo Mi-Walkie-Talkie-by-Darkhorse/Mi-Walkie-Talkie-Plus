@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/maps/model/LatLngBounds$Builder;
 .super Ljava/lang/Object;
-.source "LatLngBounds.java"
 
 
 # annotations
@@ -28,25 +27,20 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/high16 v0, 0x7ff0000000000000L    # Double.POSITIVE_INFINITY
 
-    .line 2
     iput-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->a:D
 
     const-wide/high16 v0, -0x10000000000000L    # Double.NEGATIVE_INFINITY
 
-    .line 3
     iput-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->b:D
 
     const-wide/high16 v0, 0x7ff8000000000000L    # Double.NaN
 
-    .line 4
     iput-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->c:D
 
-    .line 5
     iput-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->d:D
 
     return-void
@@ -57,7 +51,6 @@
 .method public final build()Lcom/amap/api/maps/model/LatLngBounds;
     .locals 14
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->c:D
 
     invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
@@ -70,7 +63,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     iget-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->c:D
 
@@ -80,13 +72,10 @@
 
     if-lez v4, :cond_1
 
-    .line 3
     iput-wide v2, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->c:D
 
-    .line 4
     iput-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->d:D
 
-    .line 5
     :cond_1
     iget-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->a:D
 
@@ -96,13 +85,10 @@
 
     if-lez v4, :cond_2
 
-    .line 6
     iput-wide v2, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->a:D
 
-    .line 7
     iput-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->b:D
 
-    .line 8
     :cond_2
     new-instance v0, Lcom/amap/api/maps/model/LatLngBounds;
 
@@ -142,7 +128,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     iget-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->a:D
 
@@ -154,7 +139,6 @@
 
     iput-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->a:D
 
-    .line 2
     iget-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->b:D
 
     iget-wide v2, p1, Lcom/amap/api/maps/model/LatLng;->latitude:D
@@ -165,10 +149,8 @@
 
     iput-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->b:D
 
-    .line 3
     iget-wide v0, p1, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
-    .line 4
     iget-wide v2, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->c:D
 
     invoke-static {v2, v3}, Ljava/lang/Double;->isNaN(D)Z
@@ -177,12 +159,10 @@
 
     if-eqz p1, :cond_1
 
-    .line 5
     iput-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->c:D
 
     goto :goto_1
 
-    .line 6
     :cond_1
     iget-wide v2, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->c:D
 
@@ -222,7 +202,6 @@
     :cond_4
     if-nez p1, :cond_6
 
-    .line 7
     iget-wide v2, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->c:D
 
     invoke-static {v2, v3, v0, v1}, Lcom/amap/api/maps/model/LatLngBounds;->a(DD)D
@@ -231,7 +210,6 @@
 
     iget-wide v4, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->d:D
 
-    .line 8
     invoke-static {v4, v5, v0, v1}, Lcom/amap/api/maps/model/LatLngBounds;->b(DD)D
 
     move-result-wide v4
@@ -240,12 +218,10 @@
 
     if-gez p1, :cond_5
 
-    .line 9
     iput-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->c:D
 
     goto :goto_2
 
-    .line 10
     :cond_5
     :goto_1
     iput-wide v0, p0, Lcom/amap/api/maps/model/LatLngBounds$Builder;->d:D

@@ -1,6 +1,5 @@
 .class public final Lb/a/a/a/g/b;
 .super Lb/a/a/a/g/f$a;
-.source "FSize.java"
 
 
 # static fields
@@ -25,7 +24,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lb/a/a/a/g/b;
 
     const/4 v1, 0x0
@@ -42,7 +40,6 @@
 
     const/high16 v1, 0x3f000000    # 0.5f
 
-    .line 2
     invoke-virtual {v0, v1}, Lb/a/a/a/g/f;->a(F)V
 
     return-void
@@ -51,7 +48,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lb/a/a/a/g/f$a;-><init>()V
 
     return-void
@@ -60,13 +56,10 @@
 .method public constructor <init>(FF)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lb/a/a/a/g/f$a;-><init>()V
 
-    .line 3
     iput p1, p0, Lb/a/a/a/g/b;->c:F
 
-    .line 4
     iput p2, p0, Lb/a/a/a/g/b;->d:F
 
     return-void
@@ -75,7 +68,6 @@
 .method public static a(FF)Lb/a/a/a/g/b;
     .locals 1
 
-    .line 2
     sget-object v0, Lb/a/a/a/g/b;->e:Lb/a/a/a/g/f;
 
     invoke-virtual {v0}, Lb/a/a/a/g/f;->a()Lb/a/a/a/g/f$a;
@@ -84,10 +76,8 @@
 
     check-cast v0, Lb/a/a/a/g/b;
 
-    .line 3
     iput p0, v0, Lb/a/a/a/g/b;->c:F
 
-    .line 4
     iput p1, v0, Lb/a/a/a/g/b;->d:F
 
     return-object v0
@@ -96,7 +86,6 @@
 .method public static a(Lb/a/a/a/g/b;)V
     .locals 1
 
-    .line 5
     sget-object v0, Lb/a/a/a/g/b;->e:Lb/a/a/a/g/f;
 
     invoke-virtual {v0, p0}, Lb/a/a/a/g/f;->a(Lb/a/a/a/g/f$a;)V
@@ -109,7 +98,6 @@
 .method protected a()Lb/a/a/a/g/f$a;
     .locals 2
 
-    .line 1
     new-instance v0, Lb/a/a/a/g/b;
 
     const/4 v1, 0x0
@@ -135,16 +123,13 @@
 
     return v1
 
-    .line 1
     :cond_1
     instance-of v2, p1, Lb/a/a/a/g/b;
 
     if-eqz v2, :cond_2
 
-    .line 2
     check-cast p1, Lb/a/a/a/g/b;
 
-    .line 3
     iget v2, p0, Lb/a/a/a/g/b;->c:F
 
     iget v3, p1, Lb/a/a/a/g/b;->c:F
@@ -170,7 +155,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lb/a/a/a/g/b;->c:F
 
     invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
@@ -191,7 +175,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

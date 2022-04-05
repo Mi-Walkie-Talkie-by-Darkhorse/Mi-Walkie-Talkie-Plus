@@ -1,6 +1,5 @@
 .class Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$2;
 .super Ljava/lang/Object;
-.source "MultiPointOutputStream.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$2;->this$0:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$2;->this$0:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->cancel()V

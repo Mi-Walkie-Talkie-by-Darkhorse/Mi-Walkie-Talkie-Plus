@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/intellij/lang/annotations/Flow;
 .super Ljava/lang/Object;
-.source "Flow.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

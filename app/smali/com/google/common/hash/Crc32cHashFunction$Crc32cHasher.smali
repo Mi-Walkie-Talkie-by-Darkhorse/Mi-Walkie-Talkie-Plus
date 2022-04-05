@@ -1,6 +1,5 @@
 .class final Lcom/google/common/hash/Crc32cHashFunction$Crc32cHasher;
 .super Lcom/google/common/hash/AbstractByteHasher;
-.source "Crc32cHashFunction.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/google/common/hash/Crc32cHashFunction$Crc32cHasher;->CRC_TABLE:[I
@@ -301,12 +299,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/hash/AbstractByteHasher;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/google/common/hash/Crc32cHashFunction$Crc32cHasher;->crc:I
 
     return-void
@@ -317,7 +313,6 @@
 .method public hash()Lcom/google/common/hash/HashCode;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/hash/Crc32cHashFunction$Crc32cHasher;->crc:I
 
     invoke-static {v0}, Lcom/google/common/hash/HashCode;->fromInt(I)Lcom/google/common/hash/HashCode;
@@ -330,7 +325,6 @@
 .method public update(B)V
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/google/common/hash/Crc32cHashFunction$Crc32cHasher;->crc:I
 
     not-int v0, v0
@@ -339,7 +333,6 @@
 
     ushr-int/lit8 v1, v0, 0x8
 
-    .line 2
     sget-object v2, Lcom/google/common/hash/Crc32cHashFunction$Crc32cHasher;->CRC_TABLE:[I
 
     xor-int/2addr p1, v0

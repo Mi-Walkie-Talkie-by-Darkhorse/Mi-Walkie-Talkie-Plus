@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/dc;
 .super Ljava/lang/Object;
-.source "PopupOverlay.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/an;
@@ -100,45 +99,36 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/u;Landroid/content/Context;)V
     .locals 5
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/amap/api/col/l3/dc;->k:Z
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/dc;->l:I
 
     iput v0, p0, Lcom/amap/api/col/l3/dc;->m:I
 
-    .line 4
     iput v0, p0, Lcom/amap/api/col/l3/dc;->n:I
 
     iput v0, p0, Lcom/amap/api/col/l3/dc;->o:I
 
     const/4 v1, 0x0
 
-    .line 5
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->q:Ljava/nio/FloatBuffer;
 
     const/4 v2, 0x1
 
-    .line 6
     iput-boolean v2, p0, Lcom/amap/api/col/l3/dc;->s:Z
 
     const/high16 v3, 0x3f000000    # 0.5f
 
-    .line 7
     iput v3, p0, Lcom/amap/api/col/l3/dc;->u:F
 
     const/high16 v3, 0x3f800000    # 1.0f
 
-    .line 8
     iput v3, p0, Lcom/amap/api/col/l3/dc;->v:F
 
-    .line 9
     new-instance v3, Landroid/graphics/Rect;
 
     invoke-direct {v3}, Landroid/graphics/Rect;-><init>()V
@@ -147,77 +137,58 @@
 
     const/4 v3, 0x0
 
-    .line 10
     iput v3, p0, Lcom/amap/api/col/l3/dc;->A:F
 
-    .line 11
     iput v3, p0, Lcom/amap/api/col/l3/dc;->B:F
 
-    .line 12
     iput-boolean v2, p0, Lcom/amap/api/col/l3/dc;->D:Z
 
-    .line 13
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->E:Landroid/graphics/Bitmap;
 
-    .line 14
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->F:Landroid/graphics/Bitmap;
 
-    .line 15
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->G:Landroid/graphics/Bitmap;
 
-    .line 16
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->H:Landroid/graphics/Bitmap;
 
-    .line 17
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->a:Lcom/amap/api/col/l3/u;
 
-    .line 18
     iput-boolean v0, p0, Lcom/amap/api/col/l3/dc;->I:Z
 
     const/16 v1, 0xc
 
     new-array v1, v1, [F
 
-    .line 19
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->b:[F
 
     const/16 v1, 0x10
 
     new-array v1, v1, [F
 
-    .line 20
     fill-array-data v1, :array_0
 
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->d:[F
 
     const-wide/16 v3, 0x0
 
-    .line 21
     iput-wide v3, p0, Lcom/amap/api/col/l3/dc;->e:J
 
     const-wide v3, 0x7fffffffffffffffL
 
-    .line 22
     iput-wide v3, p0, Lcom/amap/api/col/l3/dc;->f:J
 
     const-wide/16 v3, 0x64
 
-    .line 23
     iput-wide v3, p0, Lcom/amap/api/col/l3/dc;->g:J
 
-    .line 24
     iput-boolean v0, p0, Lcom/amap/api/col/l3/dc;->L:Z
 
-    .line 25
     iput-boolean v2, p0, Lcom/amap/api/col/l3/dc;->M:Z
 
-    .line 26
     iput-object p2, p0, Lcom/amap/api/col/l3/dc;->i:Landroid/content/Context;
 
-    .line 27
     iput-object p1, p0, Lcom/amap/api/col/l3/dc;->a:Lcom/amap/api/col/l3/u;
 
-    .line 28
     invoke-virtual {p0}, Lcom/amap/api/col/l3/dc;->getId()Ljava/lang/String;
 
     move-result-object p1
@@ -258,7 +229,6 @@
 
     return-object p1
 
-    .line 38
     :cond_0
     instance-of v0, p1, Landroid/widget/RelativeLayout;
 
@@ -270,31 +240,25 @@
 
     if-eqz v0, :cond_1
 
-    .line 39
     new-instance v0, Landroid/widget/LinearLayout;
 
     iget-object v2, p0, Lcom/amap/api/col/l3/dc;->i:Landroid/content/Context;
 
     invoke-direct {v0, v2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 40
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 41
     invoke-virtual {v0, p1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     move-object p1, v0
 
-    .line 42
     :cond_1
     invoke-virtual {p1, v1}, Landroid/view/View;->setDrawingCacheEnabled(Z)V
 
     const/4 v0, 0x0
 
-    .line 43
     invoke-virtual {p1, v0}, Landroid/view/View;->setDrawingCacheQuality(I)V
 
-    .line 44
     invoke-static {p1}, Lcom/amap/api/col/l3/em;->a(Landroid/view/View;)Landroid/graphics/Bitmap;
 
     move-result-object p1
@@ -305,7 +269,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/dc;)Lcom/autonavi/amap/mapcore/animation/GLAnimation;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/dc;->J:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
     return-object p0
@@ -318,7 +281,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     :try_start_0
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->isRecycled()Z
 
@@ -326,7 +288,6 @@
 
     if-nez v0, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -340,7 +301,6 @@
 
     throw p1
 
-    .line 5
     :cond_0
     :goto_0
     monitor-exit p0
@@ -351,7 +311,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/dc;Z)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/dc;->a(Z)V
 
     return-void
@@ -362,14 +321,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 25
     iget-object p1, p0, Lcom/amap/api/col/l3/dc;->E:Landroid/graphics/Bitmap;
 
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/dc;->b(Landroid/graphics/Bitmap;)V
 
     return-void
 
-    .line 26
     :cond_0
     iget-object p1, p0, Lcom/amap/api/col/l3/dc;->G:Landroid/graphics/Bitmap;
 
@@ -386,30 +343,23 @@
         }
     .end annotation
 
-    .line 17
     iget-boolean v0, p0, Lcom/amap/api/col/l3/dc;->L:Z
 
     if-eqz v0, :cond_0
 
-    .line 18
     iput p1, p0, Lcom/amap/api/col/l3/dc;->n:I
 
-    .line 19
     iput p2, p0, Lcom/amap/api/col/l3/dc;->o:I
 
     return-void
 
-    .line 20
     :cond_0
     iput p1, p0, Lcom/amap/api/col/l3/dc;->l:I
 
-    .line 21
     iput p2, p0, Lcom/amap/api/col/l3/dc;->m:I
 
-    .line 22
     iput p1, p0, Lcom/amap/api/col/l3/dc;->n:I
 
-    .line 23
     iput p2, p0, Lcom/amap/api/col/l3/dc;->o:I
 
     return-void
@@ -422,7 +372,6 @@
 
     if-eqz p1, :cond_8
 
-    .line 2
     :try_start_0
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->isRecycled()Z
 
@@ -432,7 +381,6 @@
 
     goto/16 :goto_2
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
 
@@ -452,12 +400,10 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 4
     monitor-exit p0
 
     return-void
 
-    .line 5
     :cond_1
     :try_start_1
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
@@ -466,7 +412,6 @@
 
     if-eqz v0, :cond_7
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->E:Landroid/graphics/Bitmap;
 
     if-nez v0, :cond_2
@@ -483,19 +428,16 @@
 
     if-nez v0, :cond_2
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->y:Landroid/graphics/Bitmap;
 
     invoke-direct {p0, v0}, Lcom/amap/api/col/l3/dc;->a(Landroid/graphics/Bitmap;)V
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
 
     iput-object v0, p0, Lcom/amap/api/col/l3/dc;->y:Landroid/graphics/Bitmap;
 
     goto :goto_1
 
-    .line 9
     :cond_2
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
 
@@ -582,38 +524,31 @@
     :goto_0
     if-nez v3, :cond_7
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->y:Landroid/graphics/Bitmap;
 
     invoke-direct {p0, v0}, Lcom/amap/api/col/l3/dc;->a(Landroid/graphics/Bitmap;)V
 
-    .line 11
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
 
     iput-object v0, p0, Lcom/amap/api/col/l3/dc;->y:Landroid/graphics/Bitmap;
 
-    .line 12
     :cond_7
     :goto_1
     iput-boolean v1, p0, Lcom/amap/api/col/l3/dc;->I:Z
 
-    .line 13
     iput-object p1, p0, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 14
     monitor-exit p0
 
     return-void
 
-    .line 15
     :catchall_0
     monitor-exit p0
 
     return-void
 
-    .line 16
     :cond_8
     :goto_2
     monitor-exit p0
@@ -626,7 +561,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/amap/api/col/l3/dc;->L:Z
 
     return v0
@@ -635,7 +569,6 @@
 .method private d()I
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
 
@@ -656,7 +589,6 @@
 .method private e()I
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
 
@@ -677,7 +609,6 @@
 .method private f()V
     .locals 3
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/dc;->D:Z
 
     const/4 v1, 0x1
@@ -688,7 +619,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->K:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
     if-eqz v0, :cond_0
@@ -725,13 +655,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_2
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->E:Landroid/graphics/Bitmap;
 
     invoke-direct {p0, v0}, Lcom/amap/api/col/l3/dc;->b(Landroid/graphics/Bitmap;)V
 
-    .line 4
     :goto_0
     iput-boolean v1, p0, Lcom/amap/api/col/l3/dc;->D:Z
 
@@ -741,7 +669,6 @@
 .method private g()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
 
     const/4 v1, 0x0
@@ -750,13 +677,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 3
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->y:Landroid/graphics/Bitmap;
 
@@ -768,15 +692,12 @@
 
     if-nez v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->y:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 6
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->y:Landroid/graphics/Bitmap;
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->E:Landroid/graphics/Bitmap;
 
@@ -788,12 +709,10 @@
 
     if-nez v0, :cond_2
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->E:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 9
     :cond_2
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->F:Landroid/graphics/Bitmap;
 
@@ -805,12 +724,10 @@
 
     if-nez v0, :cond_3
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->F:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 11
     :cond_3
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->G:Landroid/graphics/Bitmap;
 
@@ -822,12 +739,10 @@
 
     if-nez v0, :cond_4
 
-    .line 12
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->G:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 13
     :cond_4
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->H:Landroid/graphics/Bitmap;
 
@@ -839,7 +754,6 @@
 
     if-nez v0, :cond_5
 
-    .line 14
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->H:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
@@ -859,7 +773,6 @@
 
     move/from16 v3, p2
 
-    .line 6
     iget-boolean v0, v1, Lcom/amap/api/col/l3/dc;->s:Z
 
     if-eqz v0, :cond_14
@@ -874,7 +787,6 @@
 
     goto/16 :goto_a
 
-    .line 7
     :cond_0
     iget-object v0, v1, Lcom/amap/api/col/l3/dc;->h:Lcom/amap/api/col/l3/ao;
 
@@ -944,13 +856,11 @@
     :goto_1
     iput-wide v8, v1, Lcom/amap/api/col/l3/dc;->e:J
 
-    .line 8
     :cond_5
     iget-object v0, v1, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->isRecycled()Z
 
-    .line 9
     iget-boolean v0, v1, Lcom/amap/api/col/l3/dc;->I:Z
 
     const/4 v4, 0x1
@@ -967,7 +877,6 @@
 
     if-nez v0, :cond_7
 
-    .line 10
     :try_start_1
     iget v0, v1, Lcom/amap/api/col/l3/dc;->C:I
 
@@ -975,7 +884,6 @@
 
     new-array v0, v4, [I
 
-    .line 11
     iget v6, v1, Lcom/amap/api/col/l3/dc;->C:I
 
     aput v6, v0, v5
@@ -989,14 +897,12 @@
 
     aput v5, v0, v5
 
-    .line 12
     invoke-static {v4, v0, v5}, Landroid/opengl/GLES20;->glGenTextures(I[II)V
 
     aget v0, v0, v5
 
     iput v0, v1, Lcom/amap/api/col/l3/dc;->C:I
 
-    .line 13
     :goto_2
     iget-object v0, v1, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
 
@@ -1010,14 +916,12 @@
 
     if-nez v0, :cond_7
 
-    .line 14
     iget v0, v1, Lcom/amap/api/col/l3/dc;->C:I
 
     iget-object v6, v1, Lcom/amap/api/col/l3/dc;->x:Landroid/graphics/Bitmap;
 
     invoke-static {v0, v6, v5}, Lcom/amap/api/col/l3/em;->a(ILandroid/graphics/Bitmap;Z)I
 
-    .line 15
     iput-boolean v4, v1, Lcom/amap/api/col/l3/dc;->I:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -1031,15 +935,12 @@
 
     const-string v3, "drawMarker"
 
-    .line 16
     invoke-static {v0, v2, v3}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 17
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
 
-    .line 18
     :cond_7
     :goto_3
     iget-boolean v0, v1, Lcom/amap/api/col/l3/dc;->M:Z
@@ -1163,7 +1064,6 @@
 
     iput-boolean v5, v1, Lcom/amap/api/col/l3/dc;->L:Z
 
-    .line 19
     :cond_a
     :goto_5
     iget-object v0, v1, Lcom/amap/api/col/l3/dc;->a:Lcom/amap/api/col/l3/u;
@@ -1423,12 +1323,10 @@
     :goto_8
     if-eqz v6, :cond_14
 
-    .line 20
     iget-object v6, v1, Lcom/amap/api/col/l3/dc;->d:[F
 
     invoke-static {v6, v5}, Landroid/opengl/Matrix;->setIdentityM([FI)V
 
-    .line 21
     iget-object v9, v1, Lcom/amap/api/col/l3/dc;->d:[F
 
     const/4 v10, 0x0
@@ -1447,7 +1345,6 @@
 
     invoke-static/range {v9 .. v16}, Landroid/opengl/Matrix;->orthoM([FIFFFFFF)V
 
-    .line 22
     iget v2, v1, Lcom/amap/api/col/l3/dc;->C:I
 
     iget-object v14, v1, Lcom/amap/api/col/l3/dc;->q:Ljava/nio/FloatBuffer;
@@ -1572,14 +1469,12 @@
 
     invoke-static {v6}, Landroid/opengl/GLES20;->glDisable(I)V
 
-    .line 23
     :cond_13
     :goto_9
     iget-boolean v0, v1, Lcom/amap/api/col/l3/dc;->w:Z
 
     if-eqz v0, :cond_14
 
-    .line 24
     iput-boolean v5, v1, Lcom/amap/api/col/l3/dc;->w:Z
 
     :cond_14
@@ -1604,7 +1499,6 @@
 .method public final a(Lcom/amap/api/col/l3/ao;)V
     .locals 0
 
-    .line 47
     iput-object p1, p0, Lcom/amap/api/col/l3/dc;->h:Lcom/amap/api/col/l3/ao;
 
     return-void
@@ -1622,12 +1516,10 @@
 
     if-nez p1, :cond_0
 
-    .line 27
     monitor-exit p0
 
     return-void
 
-    .line 28
     :cond_0
     :try_start_0
     invoke-interface {p1}, Lcom/amap/api/col/l3/cp;->isInfoWindowEnable()Z
@@ -1638,12 +1530,10 @@
 
     if-nez v0, :cond_1
 
-    .line 29
     monitor-exit p0
 
     return-void
 
-    .line 30
     :cond_1
     :try_start_1
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->j:Lcom/amap/api/col/l3/cp;
@@ -1666,29 +1556,23 @@
 
     if-nez v0, :cond_2
 
-    .line 31
     invoke-virtual {p0}, Lcom/amap/api/col/l3/dc;->b_()V
 
-    .line 32
     :cond_2
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->h:Lcom/amap/api/col/l3/ao;
 
     if-eqz v0, :cond_9
 
-    .line 33
     iput-object p1, p0, Lcom/amap/api/col/l3/dc;->j:Lcom/amap/api/col/l3/cp;
 
     const/4 v0, 0x1
 
-    .line 34
     invoke-interface {p1, v0}, Lcom/amap/api/col/l3/cp;->a(Z)V
 
-    .line 35
     invoke-virtual {p0, v0}, Lcom/amap/api/col/l3/dc;->setVisible(Z)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 36
     :try_start_2
     new-instance p1, Lcom/amap/api/maps/model/Marker;
 
@@ -1850,7 +1734,6 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 37
     :cond_9
     monitor-exit p0
 
@@ -1875,7 +1758,6 @@
 .method public final a(Landroid/view/MotionEvent;)Z
     .locals 3
 
-    .line 45
     iget-boolean v0, p0, Lcom/amap/api/col/l3/dc;->s:Z
 
     const/4 v1, 0x0
@@ -1888,7 +1770,6 @@
 
     goto :goto_0
 
-    .line 46
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->z:Landroid/graphics/Rect;
 
@@ -1922,7 +1803,6 @@
 .method public final a_()V
     .locals 11
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->j:Lcom/amap/api/col/l3/cp;
 
@@ -1943,17 +1823,14 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/amap/api/col/l3/dc;->setVisible(Z)V
 
-    .line 3
     iget-object v2, p0, Lcom/amap/api/col/l3/dc;->j:Lcom/amap/api/col/l3/cp;
 
     invoke-interface {v2}, Lcom/amap/api/col/l3/cs;->h()Landroid/graphics/Rect;
 
     move-result-object v2
 
-    .line 4
     iget-object v3, p0, Lcom/amap/api/col/l3/dc;->j:Lcom/amap/api/col/l3/cp;
 
     invoke-interface {v3}, Lcom/amap/api/col/l3/cp;->e()I
@@ -1962,14 +1839,12 @@
 
     iget-object v4, p0, Lcom/amap/api/col/l3/dc;->j:Lcom/amap/api/col/l3/cp;
 
-    .line 5
     invoke-interface {v4}, Lcom/amap/api/col/l3/cp;->c()I
 
     move-result v4
 
     add-int/2addr v3, v4
 
-    .line 6
     iget-object v4, p0, Lcom/amap/api/col/l3/dc;->j:Lcom/amap/api/col/l3/cp;
 
     invoke-interface {v4}, Lcom/amap/api/col/l3/cp;->f()I
@@ -1978,7 +1853,6 @@
 
     iget-object v5, p0, Lcom/amap/api/col/l3/dc;->j:Lcom/amap/api/col/l3/cp;
 
-    .line 7
     invoke-interface {v5}, Lcom/amap/api/col/l3/cp;->d()I
 
     move-result v5
@@ -1987,7 +1861,6 @@
 
     add-int/lit8 v4, v4, 0x2
 
-    .line 8
     iget-boolean v5, p0, Lcom/amap/api/col/l3/dc;->L:Z
 
     if-eqz v5, :cond_1
@@ -2004,43 +1877,36 @@
 
     if-eqz v5, :cond_9
 
-    .line 9
     :cond_1
     iget-object v5, p0, Lcom/amap/api/col/l3/dc;->j:Lcom/amap/api/col/l3/cp;
 
-    .line 10
     invoke-interface {v5}, Lcom/amap/api/col/l3/cs;->getIMarkerAction()Lcom/autonavi/amap/mapcore/interfaces/IMarkerAction;
 
     move-result-object v5
 
     if-eqz v5, :cond_2
 
-    .line 11
     invoke-interface {v5}, Lcom/autonavi/amap/mapcore/interfaces/IMarkerAction;->isInfoWindowEnable()Z
 
     move-result v6
 
     if-nez v6, :cond_2
 
-    .line 12
     invoke-virtual {p0, v1}, Lcom/amap/api/col/l3/dc;->setVisible(Z)V
 
     return-void
 
-    .line 13
     :cond_2
     invoke-virtual {p0, v0}, Lcom/amap/api/col/l3/dc;->setVisible(Z)V
 
     if-eqz v5, :cond_8
 
-    .line 14
     invoke-interface {v5}, Lcom/autonavi/amap/mapcore/interfaces/IMarkerAction;->isInfoWindowAutoOverturn()Z
 
     move-result v0
 
     if-eqz v0, :cond_8
 
-    .line 15
     new-instance v0, Landroid/graphics/Rect;
 
     iget-object v5, p0, Lcom/amap/api/col/l3/dc;->z:Landroid/graphics/Rect;
@@ -2091,7 +1957,6 @@
 
     invoke-direct {v0, v5, v6, v7, v8}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 16
     new-instance v5, Landroid/graphics/Rect;
 
     iget-object v6, p0, Lcom/amap/api/col/l3/dc;->z:Landroid/graphics/Rect;
@@ -2142,17 +2007,14 @@
 
     invoke-direct {v5, v6, v7, v8, v9}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 17
     iget-boolean v6, p0, Lcom/amap/api/col/l3/dc;->D:Z
 
     if-eqz v6, :cond_7
 
-    .line 18
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
     move-result v2
 
-    .line 19
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
     move-result v0
@@ -2161,18 +2023,15 @@
 
     add-int/lit8 v2, v2, 0x2
 
-    .line 20
     invoke-virtual {v5, v1, v2}, Landroid/graphics/Rect;->offset(II)V
 
     goto :goto_4
 
-    .line 21
     :cond_7
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
     move-result v2
 
-    .line 22
     invoke-virtual {v0}, Landroid/graphics/Rect;->height()I
 
     move-result v5
@@ -2183,61 +2042,47 @@
 
     neg-int v2, v2
 
-    .line 23
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Rect;->offset(II)V
 
-    .line 24
     :goto_4
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->a:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0}, Lcom/amap/api/col/l3/u;->o()I
 
-    .line 25
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->a:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0}, Lcom/amap/api/col/l3/u;->o()I
 
-    .line 26
     invoke-direct {p0}, Lcom/amap/api/col/l3/dc;->f()V
 
-    .line 27
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->j:Lcom/amap/api/col/l3/cp;
 
-    .line 28
     invoke-interface {v0}, Lcom/amap/api/col/l3/cp;->a()Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v0
 
-    .line 29
     iput-object v0, p0, Lcom/amap/api/col/l3/dc;->p:Lcom/autonavi/amap/mapcore/FPoint;
 
-    .line 30
     invoke-direct {p0, v3, v4}, Lcom/amap/api/col/l3/dc;->b(II)V
 
     return-void
 
-    .line 31
     :cond_8
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->j:Lcom/amap/api/col/l3/cp;
 
-    .line 32
     invoke-interface {v0}, Lcom/amap/api/col/l3/cp;->a()Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v0
 
-    .line 33
     iput-object v0, p0, Lcom/amap/api/col/l3/dc;->p:Lcom/autonavi/amap/mapcore/FPoint;
 
-    .line 34
     invoke-direct {p0, v3, v4}, Lcom/amap/api/col/l3/dc;->b(II)V
 
-    .line 35
     invoke-direct {p0}, Lcom/amap/api/col/l3/dc;->f()V
 
     :cond_9
     return-void
 
-    .line 36
     :cond_a
     :goto_5
     invoke-virtual {p0, v1}, Lcom/amap/api/col/l3/dc;->setVisible(Z)V
@@ -2249,7 +2094,6 @@
     :catchall_0
     move-exception v0
 
-    .line 37
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -2273,16 +2117,13 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0, v0}, Lcom/amap/api/col/l3/dc;->setVisible(Z)V
 
-    .line 2
     invoke-direct {p0}, Lcom/amap/api/col/l3/dc;->g()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     monitor-exit p0
 
     return-void
@@ -2306,51 +2147,41 @@
 .method public final destroy()V
     .locals 3
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/dc;->k:Z
 
     if-eqz v0, :cond_2
 
-    .line 2
     :try_start_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/dc;->g()V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->t:Ljava/nio/FloatBuffer;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->t:Ljava/nio/FloatBuffer;
 
     invoke-virtual {v0}, Ljava/nio/FloatBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 5
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->t:Ljava/nio/FloatBuffer;
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->q:Ljava/nio/FloatBuffer;
 
     if-eqz v0, :cond_1
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->q:Ljava/nio/FloatBuffer;
 
     invoke-virtual {v0}, Ljava/nio/FloatBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 8
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->q:Ljava/nio/FloatBuffer;
 
-    .line 9
     :cond_1
     iput-object v1, p0, Lcom/amap/api/col/l3/dc;->p:Lcom/autonavi/amap/mapcore/FPoint;
 
     const/4 v0, 0x0
 
-    .line 10
     iput v0, p0, Lcom/amap/api/col/l3/dc;->C:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2364,10 +2195,8 @@
 
     const-string v2, "realDestroy"
 
-    .line 11
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_2
@@ -2382,14 +2211,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 2
     invoke-interface {p1}, Lcom/autonavi/amap/mapcore/interfaces/IOverlay;->getId()Ljava/lang/String;
 
     move-result-object p1
@@ -2421,17 +2248,14 @@
 .method public final getId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->r:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
     const-string v0, "PopupOverlay"
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/dc;->r:Ljava/lang/String;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->r:Ljava/lang/String;
 
@@ -2449,7 +2273,6 @@
 .method public final hashCodeRemote()I
     .locals 1
 
-    .line 1
     invoke-super {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
@@ -2468,7 +2291,6 @@
 .method public final isVisible()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/dc;->s:Z
 
     return v0
@@ -2500,7 +2322,6 @@
 .method public final setInfoWindowAppearAnimation(Lcom/amap/api/maps/model/animation/Animation;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->K:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
     if-eqz v0, :cond_0
@@ -2513,7 +2334,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     iget-object p1, p1, Lcom/amap/api/maps/model/animation/Animation;->glAnimation:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
@@ -2534,12 +2354,10 @@
 
     const-string v1, "setInfoWindowDisappearAnimation"
 
-    .line 3
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 4
     :cond_0
     iget-object p1, p1, Lcom/amap/api/maps/model/animation/Animation;->glAnimation:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
@@ -2569,7 +2387,6 @@
 .method public final setInfoWindowDisappearAnimation(Lcom/amap/api/maps/model/animation/Animation;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/dc;->J:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
     if-eqz v0, :cond_0
@@ -2582,7 +2399,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     iget-object p1, p1, Lcom/amap/api/maps/model/animation/Animation;->glAnimation:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
@@ -2603,12 +2419,10 @@
 
     const-string v1, "setInfoWindowDisappearAnimation"
 
-    .line 3
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 4
     :cond_0
     iget-object p1, p1, Lcom/amap/api/maps/model/animation/Animation;->glAnimation:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
@@ -2626,7 +2440,6 @@
 .method public final setVisible(Z)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/dc;->s:Z
 
     if-nez v0, :cond_0
@@ -2635,10 +2448,8 @@
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/amap/api/col/l3/dc;->w:Z
 
-    .line 3
     :cond_0
     iput-boolean p1, p0, Lcom/amap/api/col/l3/dc;->s:Z
 

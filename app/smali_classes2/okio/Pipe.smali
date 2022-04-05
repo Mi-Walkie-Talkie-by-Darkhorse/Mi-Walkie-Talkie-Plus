@@ -1,6 +1,5 @@
 .class public final Lokio/Pipe;
 .super Ljava/lang/Object;
-.source "Pipe.java"
 
 
 # annotations
@@ -30,24 +29,20 @@
 .method public constructor <init>(J)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lokio/Buffer;
 
     invoke-direct {v0}, Lokio/Buffer;-><init>()V
 
     iput-object v0, p0, Lokio/Pipe;->buffer:Lokio/Buffer;
 
-    .line 3
     new-instance v0, Lokio/Pipe$PipeSink;
 
     invoke-direct {v0, p0}, Lokio/Pipe$PipeSink;-><init>(Lokio/Pipe;)V
 
     iput-object v0, p0, Lokio/Pipe;->sink:Lokio/Sink;
 
-    .line 4
     new-instance v0, Lokio/Pipe$PipeSource;
 
     invoke-direct {v0, p0}, Lokio/Pipe$PipeSource;-><init>(Lokio/Pipe;)V
@@ -60,12 +55,10 @@
 
     if-ltz v2, :cond_0
 
-    .line 5
     iput-wide p1, p0, Lokio/Pipe;->maxBufferSize:J
 
     return-void
 
-    .line 6
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -93,7 +86,6 @@
 .method public final sink()Lokio/Sink;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/Pipe;->sink:Lokio/Sink;
 
     return-object v0
@@ -102,7 +94,6 @@
 .method public final source()Lokio/Source;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/Pipe;->source:Lokio/Source;
 
     return-object v0

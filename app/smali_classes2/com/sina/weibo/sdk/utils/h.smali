@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/utils/h;
 .super Ljava/lang/Object;
-.source "UIUtils.java"
 
 
 # direct methods
@@ -9,7 +8,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-static {p0, p1, p2}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
 
     move-result-object p0

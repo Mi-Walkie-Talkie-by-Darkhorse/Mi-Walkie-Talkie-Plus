@@ -1,6 +1,5 @@
 .class public Lb/a/a/a/d/g;
 .super Lb/a/a/a/d/h;
-.source "PieHighlighter.java"
 
 
 # annotations
@@ -17,7 +16,6 @@
 .method public constructor <init>(Lcom/github/mikephil/charting/charts/PieChart;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lb/a/a/a/d/h;-><init>(Lcom/github/mikephil/charting/charts/PieRadarChartBase;)V
 
     return-void
@@ -28,7 +26,6 @@
 .method protected a(IFF)Lb/a/a/a/d/d;
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/d/h;->a:Lcom/github/mikephil/charting/charts/PieRadarChartBase;
 
     check-cast v0, Lcom/github/mikephil/charting/charts/PieChart;
@@ -43,12 +40,10 @@
 
     move-result-object v0
 
-    .line 2
     invoke-interface {v0, p1}, Lb/a/a/a/e/b/e;->a(I)Lcom/github/mikephil/charting/data/Entry;
 
     move-result-object v1
 
-    .line 3
     new-instance v9, Lb/a/a/a/d/d;
 
     int-to-float v3, p1

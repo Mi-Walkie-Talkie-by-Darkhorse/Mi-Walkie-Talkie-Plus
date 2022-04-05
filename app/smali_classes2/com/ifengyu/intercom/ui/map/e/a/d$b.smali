@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/e/a/d$b;
 .super Ljava/lang/Object;
-.source "ClusterOverlay.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/model/animation/Animation$AnimationListener;
@@ -41,10 +40,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/map/e/a/d$b;->a:Ljava/util/List;
 
     return-void
@@ -55,7 +52,6 @@
 .method public onAnimationEnd()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/a/d$b;->a:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -75,12 +71,10 @@
 
     check-cast v1, Lcom/amap/api/maps/model/Marker;
 
-    .line 2
     invoke-virtual {v1}, Lcom/amap/api/maps/model/Marker;->remove()V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/a/d$b;->a:Ljava/util/List;
 

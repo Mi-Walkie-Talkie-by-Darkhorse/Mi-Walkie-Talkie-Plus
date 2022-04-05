@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/cu;
 .super Ljava/lang/Object;
-.source "IPolylineDelegate.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/cr;

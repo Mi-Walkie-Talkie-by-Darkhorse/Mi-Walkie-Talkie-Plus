@@ -1,6 +1,5 @@
 .class public abstract Lde/greenrobot/event/util/b;
 .super Ljava/lang/Object;
-.source "ErrorDialogFragmentFactory.java"
 
 
 # annotations

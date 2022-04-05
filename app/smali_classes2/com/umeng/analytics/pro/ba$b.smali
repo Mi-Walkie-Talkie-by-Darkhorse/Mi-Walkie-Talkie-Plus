@@ -1,6 +1,5 @@
 .class Lcom/umeng/analytics/pro/ba$b;
 .super Ljava/lang/Object;
-.source "TUnion.java"
 
 # interfaces
 .implements Lcom/umeng/analytics/pro/by;
@@ -21,7 +20,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 .method synthetic constructor <init>(Lcom/umeng/analytics/pro/ba$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/umeng/analytics/pro/ba$b;-><init>()V
 
     return-void
@@ -41,7 +38,6 @@
 .method public a()Lcom/umeng/analytics/pro/ba$a;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/umeng/analytics/pro/ba$a;
 
     const/4 v1, 0x0
@@ -54,7 +50,6 @@
 .method public synthetic b()Lcom/umeng/analytics/pro/bx;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/ba$b;->a()Lcom/umeng/analytics/pro/ba$a;
 
     move-result-object v0

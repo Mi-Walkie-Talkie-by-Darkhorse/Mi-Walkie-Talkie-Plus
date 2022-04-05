@@ -1,6 +1,5 @@
 .class Lcom/yalantis/ucrop/view/GestureCropImageView$b;
 .super Landroid/view/GestureDetector$SimpleOnGestureListener;
-.source "GestureCropImageView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Lcom/yalantis/ucrop/view/GestureCropImageView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView$b;->a:Lcom/yalantis/ucrop/view/GestureCropImageView;
 
     invoke-direct {p0}, Landroid/view/GestureDetector$SimpleOnGestureListener;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/yalantis/ucrop/view/GestureCropImageView;Lcom/yalantis/ucrop/view/GestureCropImageView$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/yalantis/ucrop/view/GestureCropImageView$b;-><init>(Lcom/yalantis/ucrop/view/GestureCropImageView;)V
 
     return-void
@@ -44,7 +41,6 @@
 .method public onDoubleTap(Landroid/view/MotionEvent;)Z
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView$b;->a:Lcom/yalantis/ucrop/view/GestureCropImageView;
 
     invoke-virtual {v0}, Lcom/yalantis/ucrop/view/GestureCropImageView;->getDoubleTapTargetScale()F
@@ -63,7 +59,6 @@
 
     invoke-virtual/range {v0 .. v5}, Lcom/yalantis/ucrop/view/CropImageView;->a(FFFJ)V
 
-    .line 2
     invoke-super {p0, p1}, Landroid/view/GestureDetector$SimpleOnGestureListener;->onDoubleTap(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -74,7 +69,6 @@
 .method public onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView$b;->a:Lcom/yalantis/ucrop/view/GestureCropImageView;
 
     neg-float p2, p3

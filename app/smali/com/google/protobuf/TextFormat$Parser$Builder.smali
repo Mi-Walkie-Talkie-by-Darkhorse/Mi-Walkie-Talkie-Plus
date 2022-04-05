@@ -1,6 +1,5 @@
 .class public Lcom/google/protobuf/TextFormat$Parser$Builder;
 .super Ljava/lang/Object;
-.source "TextFormat.java"
 
 
 # annotations
@@ -24,15 +23,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/google/protobuf/TextFormat$Parser$Builder;->allowUnknownFields:Z
 
-    .line 3
     sget-object v0, Lcom/google/protobuf/TextFormat$Parser$SingularOverwritePolicy;->ALLOW_SINGULAR_OVERWRITES:Lcom/google/protobuf/TextFormat$Parser$SingularOverwritePolicy;
 
     iput-object v0, p0, Lcom/google/protobuf/TextFormat$Parser$Builder;->singularOverwritePolicy:Lcom/google/protobuf/TextFormat$Parser$SingularOverwritePolicy;
@@ -45,7 +41,6 @@
 .method public build()Lcom/google/protobuf/TextFormat$Parser;
     .locals 4
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/TextFormat$Parser;
 
     iget-boolean v1, p0, Lcom/google/protobuf/TextFormat$Parser$Builder;->allowUnknownFields:Z
@@ -62,7 +57,6 @@
 .method public setSingularOverwritePolicy(Lcom/google/protobuf/TextFormat$Parser$SingularOverwritePolicy;)Lcom/google/protobuf/TextFormat$Parser$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/TextFormat$Parser$Builder;->singularOverwritePolicy:Lcom/google/protobuf/TextFormat$Parser$SingularOverwritePolicy;
 
     return-object p0

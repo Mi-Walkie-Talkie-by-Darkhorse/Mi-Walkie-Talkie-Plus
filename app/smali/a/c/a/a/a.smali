@@ -1,6 +1,5 @@
 .class La/c/a/a/a;
 .super La/c/a/a/b;
-.source "ArcCurveFit.java"
 
 
 # annotations
@@ -25,13 +24,10 @@
 
     move-object/from16 v1, p2
 
-    .line 1
     invoke-direct/range {p0 .. p0}, La/c/a/a/b;-><init>()V
 
-    .line 2
     iput-object v1, v0, La/c/a/a/a;->a:[D
 
-    .line 3
     array-length v2, v1
 
     const/4 v3, 0x1
@@ -50,7 +46,6 @@
 
     const/4 v6, 0x1
 
-    .line 4
     :goto_0
     iget-object v7, v0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
@@ -58,7 +53,6 @@
 
     if-ge v4, v7, :cond_5
 
-    .line 5
     aget v7, p1, v4
 
     const/4 v8, 0x3
@@ -109,7 +103,6 @@
     :cond_4
     const/16 v20, 0x3
 
-    .line 6
     :goto_2
     iget-object v14, v0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
@@ -168,7 +161,6 @@
 .method public a(DI)D
     .locals 5
 
-    .line 25
     iget-object v0, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     const/4 v1, 0x0
@@ -181,14 +173,12 @@
 
     if-gez v4, :cond_0
 
-    .line 26
     aget-object p1, v0, v1
 
     iget-wide p1, p1, La/c/a/a/a$a;->c:D
 
     goto :goto_0
 
-    .line 27
     :cond_0
     array-length v2, v0
 
@@ -202,7 +192,6 @@
 
     if-lez v4, :cond_1
 
-    .line 28
     array-length p1, v0
 
     add-int/lit8 p1, p1, -0x1
@@ -211,7 +200,6 @@
 
     iget-wide p1, p1, La/c/a/a/a$a;->d:D
 
-    .line 29
     :cond_1
     :goto_0
     iget-object v0, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
@@ -220,7 +208,6 @@
 
     if-ge v1, v2, :cond_6
 
-    .line 30
     aget-object v2, v0, v1
 
     iget-wide v2, v2, La/c/a/a/a$a;->d:D
@@ -229,7 +216,6 @@
 
     if-gtz v4, :cond_5
 
-    .line 31
     aget-object v2, v0, v1
 
     iget-boolean v2, v2, La/c/a/a/a$a;->r:Z
@@ -238,7 +224,6 @@
 
     if-nez p3, :cond_2
 
-    .line 32
     aget-object p3, v0, v1
 
     invoke-virtual {p3, p1, p2}, La/c/a/a/a$a;->c(D)D
@@ -247,7 +232,6 @@
 
     return-wide p1
 
-    .line 33
     :cond_2
     aget-object p3, v0, v1
 
@@ -257,7 +241,6 @@
 
     return-wide p1
 
-    .line 34
     :cond_3
     aget-object v0, v0, v1
 
@@ -265,7 +248,6 @@
 
     if-nez p3, :cond_4
 
-    .line 35
     iget-object p1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     aget-object p1, p1, v1
@@ -276,7 +258,6 @@
 
     return-wide p1
 
-    .line 36
     :cond_4
     iget-object p1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
@@ -302,7 +283,6 @@
 .method public a(D[D)V
     .locals 7
 
-    .line 1
     iget-object v0, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     const/4 v1, 0x0
@@ -315,12 +295,10 @@
 
     if-gez v4, :cond_0
 
-    .line 2
     aget-object p1, v0, v1
 
     iget-wide p1, p1, La/c/a/a/a$a;->c:D
 
-    .line 3
     :cond_0
     iget-object v0, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
@@ -338,7 +316,6 @@
 
     if-lez v2, :cond_1
 
-    .line 4
     array-length p1, v0
 
     sub-int/2addr p1, v3
@@ -350,7 +327,6 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 5
     :goto_0
     iget-object v2, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
@@ -358,7 +334,6 @@
 
     if-ge v0, v4, :cond_4
 
-    .line 6
     aget-object v4, v2, v0
 
     iget-wide v4, v4, La/c/a/a/a$a;->d:D
@@ -367,14 +342,12 @@
 
     if-gtz v6, :cond_3
 
-    .line 7
     aget-object v4, v2, v0
 
     iget-boolean v4, v4, La/c/a/a/a$a;->r:Z
 
     if-eqz v4, :cond_2
 
-    .line 8
     aget-object v2, v2, v0
 
     invoke-virtual {v2, p1, p2}, La/c/a/a/a$a;->c(D)D
@@ -383,7 +356,6 @@
 
     aput-wide v4, p3, v1
 
-    .line 9
     iget-object v1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     aget-object v0, v1, v0
@@ -396,13 +368,11 @@
 
     return-void
 
-    .line 10
     :cond_2
     aget-object v2, v2, v0
 
     invoke-virtual {v2, p1, p2}, La/c/a/a/a$a;->f(D)V
 
-    .line 11
     iget-object p1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     aget-object p1, p1, v0
@@ -413,7 +383,6 @@
 
     aput-wide p1, p3, v1
 
-    .line 12
     iget-object p1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     aget-object p1, p1, v0
@@ -438,7 +407,6 @@
 .method public a(D[F)V
     .locals 7
 
-    .line 13
     iget-object v0, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     const/4 v1, 0x0
@@ -453,14 +421,12 @@
 
     if-gez v5, :cond_0
 
-    .line 14
     aget-object p1, v0, v1
 
     iget-wide p1, p1, La/c/a/a/a$a;->c:D
 
     goto :goto_0
 
-    .line 15
     :cond_0
     array-length v2, v0
 
@@ -474,7 +440,6 @@
 
     if-lez v5, :cond_1
 
-    .line 16
     array-length p1, v0
 
     sub-int/2addr p1, v4
@@ -487,7 +452,6 @@
     :goto_0
     const/4 v0, 0x0
 
-    .line 17
     :goto_1
     iget-object v2, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
@@ -495,7 +459,6 @@
 
     if-ge v0, v3, :cond_4
 
-    .line 18
     aget-object v3, v2, v0
 
     iget-wide v5, v3, La/c/a/a/a$a;->d:D
@@ -504,14 +467,12 @@
 
     if-gtz v3, :cond_3
 
-    .line 19
     aget-object v3, v2, v0
 
     iget-boolean v3, v3, La/c/a/a/a$a;->r:Z
 
     if-eqz v3, :cond_2
 
-    .line 20
     aget-object v2, v2, v0
 
     invoke-virtual {v2, p1, p2}, La/c/a/a/a$a;->c(D)D
@@ -522,7 +483,6 @@
 
     aput v2, p3, v1
 
-    .line 21
     iget-object v1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     aget-object v0, v1, v0
@@ -537,13 +497,11 @@
 
     return-void
 
-    .line 22
     :cond_2
     aget-object v2, v2, v0
 
     invoke-virtual {v2, p1, p2}, La/c/a/a/a$a;->f(D)V
 
-    .line 23
     iget-object p1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     aget-object p1, p1, v0
@@ -556,7 +514,6 @@
 
     aput p1, p3, v1
 
-    .line 24
     iget-object p1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     aget-object p1, p1, v0
@@ -583,7 +540,6 @@
 .method public a()[D
     .locals 1
 
-    .line 37
     iget-object v0, p0, La/c/a/a/a;->a:[D
 
     return-object v0
@@ -592,7 +548,6 @@
 .method public b(DI)D
     .locals 5
 
-    .line 13
     iget-object v0, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     const/4 v1, 0x0
@@ -605,12 +560,10 @@
 
     if-gez v4, :cond_0
 
-    .line 14
     aget-object p1, v0, v1
 
     iget-wide p1, p1, La/c/a/a/a$a;->c:D
 
-    .line 15
     :cond_0
     iget-object v0, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
@@ -626,7 +579,6 @@
 
     if-lez v4, :cond_1
 
-    .line 16
     array-length p1, v0
 
     add-int/lit8 p1, p1, -0x1
@@ -635,7 +587,6 @@
 
     iget-wide p1, p1, La/c/a/a/a$a;->d:D
 
-    .line 17
     :cond_1
     :goto_0
     iget-object v0, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
@@ -644,7 +595,6 @@
 
     if-ge v1, v2, :cond_6
 
-    .line 18
     aget-object v2, v0, v1
 
     iget-wide v2, v2, La/c/a/a/a$a;->d:D
@@ -653,7 +603,6 @@
 
     if-gtz v4, :cond_5
 
-    .line 19
     aget-object v2, v0, v1
 
     iget-boolean v2, v2, La/c/a/a/a$a;->r:Z
@@ -662,7 +611,6 @@
 
     if-nez p3, :cond_2
 
-    .line 20
     aget-object p3, v0, v1
 
     invoke-virtual {p3, p1, p2}, La/c/a/a/a$a;->a(D)D
@@ -671,7 +619,6 @@
 
     return-wide p1
 
-    .line 21
     :cond_2
     aget-object p3, v0, v1
 
@@ -681,7 +628,6 @@
 
     return-wide p1
 
-    .line 22
     :cond_3
     aget-object v0, v0, v1
 
@@ -689,7 +635,6 @@
 
     if-nez p3, :cond_4
 
-    .line 23
     iget-object p1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     aget-object p1, p1, v1
@@ -700,7 +645,6 @@
 
     return-wide p1
 
-    .line 24
     :cond_4
     iget-object p1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
@@ -726,7 +670,6 @@
 .method public b(D[D)V
     .locals 7
 
-    .line 1
     iget-object v0, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     const/4 v1, 0x0
@@ -741,14 +684,12 @@
 
     if-gez v5, :cond_0
 
-    .line 2
     aget-object p1, v0, v1
 
     iget-wide p1, p1, La/c/a/a/a$a;->c:D
 
     goto :goto_0
 
-    .line 3
     :cond_0
     array-length v2, v0
 
@@ -762,7 +703,6 @@
 
     if-lez v5, :cond_1
 
-    .line 4
     array-length p1, v0
 
     sub-int/2addr p1, v4
@@ -775,7 +715,6 @@
     :goto_0
     const/4 v0, 0x0
 
-    .line 5
     :goto_1
     iget-object v2, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
@@ -783,7 +722,6 @@
 
     if-ge v0, v3, :cond_4
 
-    .line 6
     aget-object v3, v2, v0
 
     iget-wide v5, v3, La/c/a/a/a$a;->d:D
@@ -792,14 +730,12 @@
 
     if-gtz v3, :cond_3
 
-    .line 7
     aget-object v3, v2, v0
 
     iget-boolean v3, v3, La/c/a/a/a$a;->r:Z
 
     if-eqz v3, :cond_2
 
-    .line 8
     aget-object v2, v2, v0
 
     invoke-virtual {v2, p1, p2}, La/c/a/a/a$a;->a(D)D
@@ -808,7 +744,6 @@
 
     aput-wide v2, p3, v1
 
-    .line 9
     iget-object v1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     aget-object v0, v1, v0
@@ -821,13 +756,11 @@
 
     return-void
 
-    .line 10
     :cond_2
     aget-object v2, v2, v0
 
     invoke-virtual {v2, p1, p2}, La/c/a/a/a$a;->f(D)V
 
-    .line 11
     iget-object p1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     aget-object p1, p1, v0
@@ -838,7 +771,6 @@
 
     aput-wide p1, p3, v1
 
-    .line 12
     iget-object p1, p0, La/c/a/a/a;->b:[La/c/a/a/a$a;
 
     aget-object p1, p1, v0

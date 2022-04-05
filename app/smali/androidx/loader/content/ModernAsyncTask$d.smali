@@ -1,6 +1,5 @@
 .class synthetic Landroidx/loader/content/ModernAsyncTask$d;
 .super Ljava/lang/Object;
-.source "ModernAsyncTask.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Landroidx/loader/content/ModernAsyncTask$Status;->values()[Landroidx/loader/content/ModernAsyncTask$Status;
 
     move-result-object v0

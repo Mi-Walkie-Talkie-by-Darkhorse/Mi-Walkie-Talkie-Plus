@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kc;
 .super Ljava/lang/Object;
-.source "OtherServiceEntity.java"
 
 
 # instance fields
@@ -31,33 +30,26 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/amap/api/col/l3/kc;->a:Z
 
     const-string v1, ""
 
-    .line 3
     iput-object v1, p0, Lcom/amap/api/col/l3/kc;->b:Ljava/lang/String;
 
-    .line 4
     iput-object v1, p0, Lcom/amap/api/col/l3/kc;->c:Ljava/lang/String;
 
-    .line 5
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v2, p0, Lcom/amap/api/col/l3/kc;->d:Ljava/util/List;
 
-    .line 6
     iput-object v1, p0, Lcom/amap/api/col/l3/kc;->e:Ljava/lang/String;
 
-    .line 7
     iput-boolean v0, p0, Lcom/amap/api/col/l3/kc;->f:Z
 
     return-void
@@ -68,7 +60,6 @@
 .method public final a()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/kc;->a:Z
 
     return v0
@@ -77,7 +68,6 @@
 .method public final b()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/kc;->b:Ljava/lang/String;
 
     return-object v0
@@ -86,7 +76,6 @@
 .method public final c()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/kc;->c:Ljava/lang/String;
 
     return-object v0
@@ -105,7 +94,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/kc;->d:Ljava/util/List;
 
     return-object v0
@@ -114,7 +102,6 @@
 .method public final e()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/kc;->e:Ljava/lang/String;
 
     return-object v0
@@ -123,7 +110,6 @@
 .method public final f()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/kc;->f:Z
 
     return v0

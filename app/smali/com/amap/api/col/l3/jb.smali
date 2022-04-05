@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/jb;
 .super Lcom/amap/api/col/l3/ja;
-.source "WiFiUplateStrategy.java"
 
 
 # instance fields
@@ -13,18 +12,14 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/ja;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/amap/api/col/l3/jb;->c:Z
 
-    .line 3
     iput-object p1, p0, Lcom/amap/api/col/l3/jb;->b:Landroid/content/Context;
 
-    .line 4
     iput-boolean v0, p0, Lcom/amap/api/col/l3/jb;->c:Z
 
     return-void
@@ -35,7 +30,6 @@
 .method protected final a()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jb;->b:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/gb;->r(Landroid/content/Context;)I

@@ -1,6 +1,5 @@
 .class public final enum Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 .super Ljava/lang/Enum;
-.source "XiaomiHeader.java"
 
 
 # annotations
@@ -37,7 +36,6 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
     const/4 v1, 0x0
@@ -50,7 +48,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;->DATE:Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
-    .line 2
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
     const/4 v2, 0x1
@@ -63,7 +60,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;->REQUEST_ID:Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
-    .line 3
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
     const/4 v3, 0x2
@@ -76,7 +72,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;->ACL:Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
-    .line 4
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
     const/4 v4, 0x3
@@ -89,7 +84,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;->ACL_META:Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
-    .line 5
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
     const/4 v5, 0x4
@@ -102,7 +96,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;->CONTENT_LENGTH:Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
-    .line 6
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
     const/4 v6, 0x5
@@ -119,7 +112,6 @@
 
     new-array v7, v7, [Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
-    .line 7
     sget-object v8, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;->DATE:Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
     aput-object v8, v7, v1
@@ -157,10 +149,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;->name:Ljava/lang/String;
 
     return-void
@@ -169,7 +159,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -184,7 +173,6 @@
 .method public static values()[Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;->$VALUES:[Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;
 
     invoke-virtual {v0}, [Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;->clone()Ljava/lang/Object;
@@ -201,7 +189,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/auth/signature/XiaomiHeader;->name:Ljava/lang/String;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableObserveOn;
 .super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
-.source "ObservableObserveOn.java"
 
 
 # annotations
@@ -42,16 +41,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableObserveOn;->scheduler:Lio/reactivex/Scheduler;
 
-    .line 3
     iput-boolean p3, p0, Lio/reactivex/internal/operators/observable/ObservableObserveOn;->delayError:Z
 
-    .line 4
     iput p4, p0, Lio/reactivex/internal/operators/observable/ObservableObserveOn;->bufferSize:I
 
     return-void
@@ -69,27 +64,23 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableObserveOn;->scheduler:Lio/reactivex/Scheduler;
 
     instance-of v1, v0, Lio/reactivex/internal/schedulers/TrampolineScheduler;
 
     if-eqz v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     invoke-interface {v0, p1}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Lio/reactivex/Scheduler;->createWorker()Lio/reactivex/Scheduler$Worker;
 
     move-result-object v0
 
-    .line 4
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     new-instance v2, Lio/reactivex/internal/operators/observable/ObservableObserveOn$ObserveOnObserver;

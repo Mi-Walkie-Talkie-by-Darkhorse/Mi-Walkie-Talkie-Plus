@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IMultiPointOverlay;
 .super Ljava/lang/Object;
-.source "IMultiPointOverlay.java"
 
 
 # virtual methods

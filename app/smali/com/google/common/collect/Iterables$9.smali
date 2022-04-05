@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Iterables$9;
 .super Lcom/google/common/collect/FluentIterable;
-.source "Iterables.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Ljava/util/List;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Iterables$9;->val$list:Ljava/util/List;
 
     iput p2, p0, Lcom/google/common/collect/Iterables$9;->val$numberToSkip:I
@@ -53,7 +51,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Iterables$9;->val$list:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -66,7 +63,6 @@
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/common/collect/Iterables$9;->val$list:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I

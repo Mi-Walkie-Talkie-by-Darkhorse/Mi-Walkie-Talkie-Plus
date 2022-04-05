@@ -1,6 +1,5 @@
 .class final Landroidx/appcompat/widget/c$e;
 .super Landroid/os/AsyncTask;
-.source "ActivityChooserModel.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/c$e;->a:Landroidx/appcompat/widget/c;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -45,7 +43,6 @@
 .method public bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/c$e;->doInBackground([Ljava/lang/Object;)Ljava/lang/Void;
 
     move-result-object p1
@@ -64,21 +61,18 @@
 
     const/4 v3, 0x0
 
-    .line 2
     aget-object v4, p1, v3
 
     check-cast v4, Ljava/util/List;
 
     const/4 v5, 0x1
 
-    .line 3
     aget-object p1, p1, v5
 
     check-cast p1, Ljava/lang/String;
 
     const/4 v6, 0x0
 
-    .line 4
     :try_start_0
     iget-object v7, p0, Landroidx/appcompat/widget/c$e;->a:Landroidx/appcompat/widget/c;
 
@@ -90,28 +84,23 @@
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_5
 
-    .line 5
     invoke-static {}, Landroid/util/Xml;->newSerializer()Lorg/xmlpull/v1/XmlSerializer;
 
     move-result-object v7
 
-    .line 6
     :try_start_1
     invoke-interface {v7, p1, v6}, Lorg/xmlpull/v1/XmlSerializer;->setOutput(Ljava/io/OutputStream;Ljava/lang/String;)V
 
     const-string v8, "UTF-8"
 
-    .line 7
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v9
 
     invoke-interface {v7, v8, v9}, Lorg/xmlpull/v1/XmlSerializer;->startDocument(Ljava/lang/String;Ljava/lang/Boolean;)V
 
-    .line 8
     invoke-interface {v7, v6, v1}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 9
     invoke-interface {v4}, Ljava/util/List;->size()I
 
     move-result v8
@@ -121,32 +110,26 @@
     :goto_0
     if-ge v9, v8, :cond_0
 
-    .line 10
     invoke-interface {v4, v3}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     move-result-object v10
 
     check-cast v10, Landroidx/appcompat/widget/c$c;
 
-    .line 11
     invoke-interface {v7, v6, v0}, Lorg/xmlpull/v1/XmlSerializer;->startTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     const-string v11, "activity"
 
-    .line 12
     iget-object v12, v10, Landroidx/appcompat/widget/c$c;->a:Landroid/content/ComponentName;
 
-    .line 13
     invoke-virtual {v12}, Landroid/content/ComponentName;->flattenToString()Ljava/lang/String;
 
     move-result-object v12
 
-    .line 14
     invoke-interface {v7, v6, v11, v12}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     const-string v11, "time"
 
-    .line 15
     iget-wide v12, v10, Landroidx/appcompat/widget/c$c;->b:J
 
     invoke-static {v12, v13}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
@@ -157,7 +140,6 @@
 
     const-string v11, "weight"
 
-    .line 16
     iget v10, v10, Landroidx/appcompat/widget/c$c;->c:F
 
     invoke-static {v10}, Ljava/lang/String;->valueOf(F)Ljava/lang/String;
@@ -166,18 +148,15 @@
 
     invoke-interface {v7, v6, v11, v10}, Lorg/xmlpull/v1/XmlSerializer;->attribute(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 17
     invoke-interface {v7, v6, v0}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
     add-int/lit8 v9, v9, 0x1
 
     goto :goto_0
 
-    .line 18
     :cond_0
     invoke-interface {v7, v6, v1}, Lorg/xmlpull/v1/XmlSerializer;->endTag(Ljava/lang/String;Ljava/lang/String;)Lorg/xmlpull/v1/XmlSerializer;
 
-    .line 19
     invoke-interface {v7}, Lorg/xmlpull/v1/XmlSerializer;->endDocument()V
     :try_end_1
     .catch Ljava/lang/IllegalArgumentException; {:try_start_1 .. :try_end_1} :catch_2
@@ -185,14 +164,12 @@
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 20
     iget-object v0, p0, Landroidx/appcompat/widget/c$e;->a:Landroidx/appcompat/widget/c;
 
     iput-boolean v5, v0, Landroidx/appcompat/widget/c;->i:Z
 
     if-eqz p1, :cond_1
 
-    .line 21
     :goto_1
     :try_start_2
     invoke-virtual {p1}, Ljava/io/FileOutputStream;->close()V
@@ -209,7 +186,6 @@
     :catch_0
     move-exception v0
 
-    .line 22
     :try_start_3
     sget-object v1, Landroidx/appcompat/widget/c;->n:Ljava/lang/String;
 
@@ -233,7 +209,6 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 23
     iget-object v0, p0, Landroidx/appcompat/widget/c$e;->a:Landroidx/appcompat/widget/c;
 
     iput-boolean v5, v0, Landroidx/appcompat/widget/c;->i:Z
@@ -245,7 +220,6 @@
     :catch_1
     move-exception v0
 
-    .line 24
     :try_start_4
     sget-object v1, Landroidx/appcompat/widget/c;->n:Ljava/lang/String;
 
@@ -269,7 +243,6 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 25
     iget-object v0, p0, Landroidx/appcompat/widget/c$e;->a:Landroidx/appcompat/widget/c;
 
     iput-boolean v5, v0, Landroidx/appcompat/widget/c;->i:Z
@@ -281,7 +254,6 @@
     :catch_2
     move-exception v0
 
-    .line 26
     :try_start_5
     sget-object v1, Landroidx/appcompat/widget/c;->n:Ljava/lang/String;
 
@@ -305,7 +277,6 @@
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 27
     iget-object v0, p0, Landroidx/appcompat/widget/c$e;->a:Landroidx/appcompat/widget/c;
 
     iput-boolean v5, v0, Landroidx/appcompat/widget/c;->i:Z
@@ -326,13 +297,11 @@
 
     if-eqz p1, :cond_2
 
-    .line 28
     :try_start_6
     invoke-virtual {p1}, Ljava/io/FileOutputStream;->close()V
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_4
 
-    .line 29
     :catch_4
     :cond_2
     throw v0
@@ -340,7 +309,6 @@
     :catch_5
     move-exception v0
 
-    .line 30
     sget-object v1, Landroidx/appcompat/widget/c;->n:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;

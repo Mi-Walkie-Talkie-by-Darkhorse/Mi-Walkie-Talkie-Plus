@@ -1,6 +1,5 @@
 .class public Landroidx/room/r/c;
 .super Ljava/lang/Object;
-.source "DBUtil.java"
 
 
 # annotations
@@ -28,13 +27,11 @@
 
     const/4 v1, 0x0
 
-    .line 19
     :try_start_0
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v2
 
-    .line 20
     new-instance v3, Ljava/io/FileInputStream;
 
     invoke-direct {v3, p0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
@@ -51,25 +48,20 @@
 
     move-object v4, v1
 
-    .line 21
     invoke-virtual/range {v4 .. v9}, Ljava/nio/channels/FileChannel;->tryLock(JJZ)Ljava/nio/channels/FileLock;
 
     const-wide/16 v3, 0x3c
 
-    .line 22
     invoke-virtual {v1, v3, v4}, Ljava/nio/channels/FileChannel;->position(J)Ljava/nio/channels/FileChannel;
 
-    .line 23
     invoke-virtual {v1, v2}, Ljava/nio/channels/FileChannel;->read(Ljava/nio/ByteBuffer;)I
 
     move-result p0
 
     if-ne p0, v0, :cond_1
 
-    .line 24
     invoke-virtual {v2}, Ljava/nio/ByteBuffer;->rewind()Ljava/nio/Buffer;
 
-    .line 25
     invoke-virtual {v2}, Ljava/nio/ByteBuffer;->getInt()I
 
     move-result p0
@@ -78,13 +70,11 @@
 
     if-eqz v1, :cond_0
 
-    .line 26
     invoke-virtual {v1}, Ljava/nio/channels/FileChannel;->close()V
 
     :cond_0
     return p0
 
-    .line 27
     :cond_1
     :try_start_1
     new-instance p0, Ljava/io/IOException;
@@ -102,10 +92,8 @@
 
     if-eqz v1, :cond_2
 
-    .line 28
     invoke-virtual {v1}, Ljava/nio/channels/FileChannel;->close()V
 
-    .line 29
     :cond_2
     throw p0
 .end method
@@ -127,36 +115,30 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1, p3}, Landroidx/room/RoomDatabase;->a(La/g/a/e;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
 
     move-result-object p0
 
     if-eqz p2, :cond_2
 
-    .line 2
     instance-of p1, p0, Landroid/database/AbstractWindowedCursor;
 
     if-eqz p1, :cond_2
 
-    .line 3
     move-object p1, p0
 
     check-cast p1, Landroid/database/AbstractWindowedCursor;
 
-    .line 4
     invoke-virtual {p1}, Landroid/database/AbstractWindowedCursor;->getCount()I
 
     move-result p2
 
-    .line 5
     invoke-virtual {p1}, Landroid/database/AbstractWindowedCursor;->hasWindow()Z
 
     move-result p3
 
     if-eqz p3, :cond_0
 
-    .line 6
     invoke-virtual {p1}, Landroid/database/AbstractWindowedCursor;->getWindow()Landroid/database/CursorWindow;
 
     move-result-object p3
@@ -170,7 +152,6 @@
     :cond_0
     move p3, p2
 
-    .line 7
     :goto_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -180,7 +161,6 @@
 
     if-ge p3, p2, :cond_2
 
-    .line 8
     :cond_1
     invoke-static {p1}, Landroidx/room/r/b;->a(Landroid/database/Cursor;)Landroid/database/Cursor;
 
@@ -193,19 +173,16 @@
 .method public static a(La/g/a/b;)V
     .locals 4
 
-    .line 9
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     const-string v1, "SELECT name FROM sqlite_master WHERE type = \'trigger\'"
 
-    .line 10
     invoke-interface {p0, v1}, La/g/a/b;->f(Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v1
 
-    .line 11
     :goto_0
     :try_start_0
     invoke-interface {v1}, Landroid/database/Cursor;->moveToNext()Z
@@ -216,7 +193,6 @@
 
     const/4 v2, 0x0
 
-    .line 12
     invoke-interface {v1, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
@@ -227,11 +203,9 @@
 
     goto :goto_0
 
-    .line 13
     :cond_0
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 14
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -252,14 +226,12 @@
 
     const-string v2, "room_fts_content_sync_"
 
-    .line 15
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 16
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -284,9 +256,7 @@
     :catchall_0
     move-exception p0
 
-    .line 17
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 18
     throw p0
 .end method

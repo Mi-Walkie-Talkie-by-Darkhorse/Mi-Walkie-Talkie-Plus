@@ -1,6 +1,5 @@
 .class final Lcom/google/gson/internal/bind/TypeAdapters$33;
 .super Ljava/lang/Object;
-.source "TypeAdapters.java"
 
 # interfaces
 .implements Lcom/google/gson/TypeAdapterFactory;
@@ -29,7 +28,6 @@
 .method constructor <init>(Ljava/lang/Class;Ljava/lang/Class;Lcom/google/gson/TypeAdapter;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/internal/bind/TypeAdapters$33;->val$unboxed:Ljava/lang/Class;
 
     iput-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$33;->val$boxed:Ljava/lang/Class;
@@ -58,12 +56,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object p1
 
-    .line 2
     iget-object p2, p0, Lcom/google/gson/internal/bind/TypeAdapters$33;->val$unboxed:Ljava/lang/Class;
 
     if-eq p1, p2, :cond_1
@@ -90,7 +86,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -113,7 +108,6 @@
 
     iget-object v1, p0, Lcom/google/gson/internal/bind/TypeAdapters$33;->val$unboxed:Ljava/lang/Class;
 
-    .line 2
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1

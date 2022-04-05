@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/appcompat/c/c;
 .super Ljava/lang/Object;
-.source "CollapsibleActionView.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/FlowableConverter;
 .super Ljava/lang/Object;
-.source "FlowableConverter.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/fo;
 .super Ljava/lang/Exception;
-.source "AMapException.java"
 
 
 # instance fields
@@ -13,17 +12,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 6
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 
     const-string v0, ""
 
-    .line 7
     iput-object v0, p0, Lcom/amap/api/col/l3/fo;->a:Ljava/lang/String;
 
     const/16 v0, 0x3e8
 
-    .line 8
     iput v0, p0, Lcom/amap/api/col/l3/fo;->b:I
 
     return-void
@@ -32,25 +28,20 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     const-string v0, ""
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/fo;->a:Ljava/lang/String;
 
     const/16 v0, 0x3e8
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/fo;->b:I
 
-    .line 4
     iput-object p1, p0, Lcom/amap/api/col/l3/fo;->a:Ljava/lang/String;
 
     const-string v0, "\u7528\u6237\u7b7e\u540d\u672a\u901a\u8fc7"
 
-    .line 5
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -452,7 +443,6 @@
 .method public final a()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/fo;->a:Ljava/lang/String;
 
     return-object v0

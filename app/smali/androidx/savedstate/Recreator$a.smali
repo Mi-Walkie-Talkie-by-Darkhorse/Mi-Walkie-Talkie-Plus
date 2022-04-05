@@ -1,6 +1,5 @@
 .class final Landroidx/savedstate/Recreator$a;
 .super Ljava/lang/Object;
-.source "Recreator.java"
 
 # interfaces
 .implements Landroidx/savedstate/SavedStateRegistry$b;
@@ -33,10 +32,8 @@
 .method constructor <init>(Landroidx/savedstate/SavedStateRegistry;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
@@ -45,7 +42,6 @@
 
     const-string v0, "androidx.savedstate.Restarter"
 
-    .line 3
     invoke-virtual {p1, v0, p0}, Landroidx/savedstate/SavedStateRegistry;->a(Ljava/lang/String;Landroidx/savedstate/SavedStateRegistry$b;)V
 
     return-void
@@ -56,7 +52,6 @@
 .method a(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/savedstate/Recreator$a;->a:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
@@ -69,12 +64,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 2
     new-instance v1, Ljava/util/ArrayList;
 
     iget-object v2, p0, Landroidx/savedstate/Recreator$a;->a:Ljava/util/Set;

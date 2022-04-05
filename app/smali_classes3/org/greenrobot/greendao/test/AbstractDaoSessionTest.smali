@@ -1,6 +1,5 @@
 .class public abstract Lorg/greenrobot/greendao/test/AbstractDaoSessionTest;
 .super Lorg/greenrobot/greendao/test/DbTest;
-.source "AbstractDaoSessionTest.java"
 
 
 # annotations
@@ -56,7 +55,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lorg/greenrobot/greendao/test/AbstractDaoSessionTest;-><init>(Ljava/lang/Class;Z)V
 
     return-void
@@ -72,10 +70,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p2}, Lorg/greenrobot/greendao/test/DbTest;-><init>(Z)V
 
-    .line 3
     iput-object p1, p0, Lorg/greenrobot/greendao/test/AbstractDaoSessionTest;->daoMasterClass:Ljava/lang/Class;
 
     return-void
@@ -91,12 +87,10 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Lorg/greenrobot/greendao/database/Database;
 
     invoke-super {p0}, Lorg/greenrobot/greendao/test/DbTest;->setUp()V
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lorg/greenrobot/greendao/test/AbstractDaoSessionTest;->daoMasterClass:Ljava/lang/Class;
 
@@ -114,7 +108,6 @@
 
     new-array v3, v2, [Ljava/lang/Object;
 
-    .line 3
     iget-object v5, p0, Lorg/greenrobot/greendao/test/DbTest;->db:Lorg/greenrobot/greendao/database/Database;
 
     aput-object v5, v3, v4
@@ -127,7 +120,6 @@
 
     iput-object v1, p0, Lorg/greenrobot/greendao/test/AbstractDaoSessionTest;->daoMaster:Lorg/greenrobot/greendao/AbstractDaoMaster;
 
-    .line 4
     iget-object v1, p0, Lorg/greenrobot/greendao/test/AbstractDaoSessionTest;->daoMasterClass:Ljava/lang/Class;
 
     const-string v3, "createAllTables"
@@ -150,7 +142,6 @@
 
     new-array v3, v5, [Ljava/lang/Object;
 
-    .line 5
     iget-object v5, p0, Lorg/greenrobot/greendao/test/DbTest;->db:Lorg/greenrobot/greendao/database/Database;
 
     aput-object v5, v3, v4
@@ -165,7 +156,6 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 6
     iget-object v0, p0, Lorg/greenrobot/greendao/test/AbstractDaoSessionTest;->daoMaster:Lorg/greenrobot/greendao/AbstractDaoMaster;
 
     invoke-virtual {v0}, Lorg/greenrobot/greendao/AbstractDaoMaster;->newSession()Lorg/greenrobot/greendao/AbstractDaoSession;
@@ -179,7 +169,6 @@
     :catch_0
     move-exception v0
 
-    .line 7
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Could not prepare DAO session test"

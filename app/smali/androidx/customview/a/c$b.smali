@@ -1,6 +1,5 @@
 .class Landroidx/customview/a/c$b;
 .super Ljava/lang/Object;
-.source "ViewDragHelper.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/customview/a/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/customview/a/c$b;->a:Landroidx/customview/a/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/customview/a/c$b;->a:Landroidx/customview/a/c;
 
     const/4 v1, 0x0

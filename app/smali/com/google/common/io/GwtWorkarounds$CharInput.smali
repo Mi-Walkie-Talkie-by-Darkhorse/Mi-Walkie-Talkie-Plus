@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/common/io/GwtWorkarounds$CharInput;
 .super Ljava/lang/Object;
-.source "GwtWorkarounds.java"
 
 
 # annotations

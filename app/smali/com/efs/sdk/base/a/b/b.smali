@@ -1,6 +1,5 @@
 .class public final Lcom/efs/sdk/base/a/b/b;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # instance fields
@@ -20,10 +19,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
@@ -40,7 +37,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/a/b/b;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-static {p1}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -61,7 +57,6 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 2
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v0
@@ -76,12 +71,10 @@
 
     const-string v2, "efs.cache"
 
-    .line 3
     invoke-static {v2, v0, v1}, Lcom/efs/sdk/base/a/h/d;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/efs/sdk/base/a/b/b;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -97,7 +90,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/efs/sdk/base/a/b/b;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -111,7 +103,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     :cond_2
     :goto_0
     iget-object v0, p0, Lcom/efs/sdk/base/a/b/b;->a:Ljava/util/concurrent/ConcurrentHashMap;

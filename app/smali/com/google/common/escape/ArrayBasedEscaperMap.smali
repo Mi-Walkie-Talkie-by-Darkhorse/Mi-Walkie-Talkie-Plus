@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/escape/ArrayBasedEscaperMap;
 .super Ljava/lang/Object;
-.source "ArrayBasedEscaperMap.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     const-class v1, C
@@ -54,10 +52,8 @@
 .method private constructor <init>([[C)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/escape/ArrayBasedEscaperMap;->replacementArray:[[C
 
     return-void
@@ -76,7 +72,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/escape/ArrayBasedEscaperMap;
 
     invoke-static {p0}, Lcom/google/common/escape/ArrayBasedEscaperMap;->createReplacementArray(Ljava/util/Map;)[[C
@@ -103,22 +98,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-interface {p0}, Ljava/util/Map;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     sget-object p0, Lcom/google/common/escape/ArrayBasedEscaperMap;->EMPTY_REPLACEMENT_ARRAY:[[C
 
     return-object p0
 
-    .line 4
     :cond_0
     invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -136,10 +127,8 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 5
     new-array v0, v0, [[C
 
-    .line 6
     invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v1
@@ -165,7 +154,6 @@
 
     move-result v2
 
-    .line 7
     invoke-static {v2}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
 
     move-result-object v3
@@ -193,7 +181,6 @@
 .method getReplacementArray()[[C
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/escape/ArrayBasedEscaperMap;->replacementArray:[[C
 
     return-object v0

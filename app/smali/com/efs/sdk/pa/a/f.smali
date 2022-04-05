@@ -1,6 +1,5 @@
 .class final Lcom/efs/sdk/pa/a/f;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
 .implements Lcom/efs/sdk/pa/a/d;
@@ -20,7 +19,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 
     return-object v3
 
-    .line 1
     :cond_0
     new-instance v4, Lcom/efs/sdk/pa/b;
 
@@ -50,7 +47,6 @@
     :try_start_0
     const-string v5, ":"
 
-    .line 2
     invoke-virtual {p0, v5}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v5
@@ -65,7 +61,6 @@
 
     add-int/lit8 v5, v5, 0x2
 
-    .line 3
     :try_start_1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -73,7 +68,6 @@
 
     if-ge v5, v8, :cond_1
 
-    .line 4
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v8
@@ -87,11 +81,9 @@
     :cond_1
     move-object v5, v6
 
-    .line 5
     :goto_0
     iput-object v5, v4, Lcom/efs/sdk/pa/b;->a:Ljava/lang/String;
 
-    .line 6
     invoke-virtual {p0, v2}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v5
@@ -109,12 +101,10 @@
 
     if-eqz v5, :cond_2
 
-    .line 7
     invoke-virtual {p0, v2}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v0
@@ -125,7 +115,6 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 9
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -134,14 +123,12 @@
 
     if-le v0, v1, :cond_3
 
-    .line 10
     invoke-virtual {p0, v1, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_1
 
-    .line 11
     :cond_2
     invoke-virtual {p0, v1}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -155,12 +142,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 12
     invoke-virtual {p0, v1}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 13
     invoke-virtual {p0, v8}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v1
@@ -171,7 +156,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 14
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -180,7 +164,6 @@
 
     if-le v1, v0, :cond_3
 
-    .line 15
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
@@ -190,27 +173,23 @@
     :cond_3
     move-object v0, v6
 
-    .line 16
     :goto_1
     iput-object v0, v4, Lcom/efs/sdk/pa/b;->b:Ljava/lang/String;
 
     const-string v0, "null"
 
-    .line 17
     invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_4
 
-    .line 18
     invoke-virtual {p0, v8}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 19
     invoke-virtual {p0, v8}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
 
     move-result v0
@@ -219,14 +198,12 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 20
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-ge v0, v1, :cond_4
 
-    .line 21
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -235,16 +212,13 @@
 
     move-result-object v6
 
-    .line 22
     :cond_4
     iput-object v6, v4, Lcom/efs/sdk/pa/b;->c:Ljava/lang/String;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 23
     iput-wide p1, v4, Lcom/efs/sdk/pa/b;->d:J
 
-    .line 24
     iput-wide p3, v4, Lcom/efs/sdk/pa/b;->e:J
 
     return-object v4
@@ -252,7 +226,6 @@
     :catch_0
     move-exception p0
 
-    .line 25
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     return-object v3
@@ -263,35 +236,29 @@
 .method public final a(Ljava/lang/String;JJ)V
     .locals 0
 
-    .line 1
     invoke-static {p1, p2, p3, p4, p5}, Lcom/efs/sdk/pa/a/f;->b(Ljava/lang/String;JJ)Lcom/efs/sdk/pa/b;
 
     move-result-object p1
 
     if-eqz p1, :cond_2
 
-    .line 2
     iget-boolean p2, p0, Lcom/efs/sdk/pa/a/f;->b:Z
 
     if-eqz p2, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Lcom/efs/sdk/pa/b;->toString()Ljava/lang/String;
 
     move-result-object p2
 
     const-string p3, "PerformanceAnalyze"
 
-    .line 4
     invoke-static {p3, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     :cond_0
     iget-object p2, p0, Lcom/efs/sdk/pa/a/f;->c:Ljava/lang/String;
 
     if-eqz p2, :cond_1
 
-    .line 6
     :try_start_0
     iget-object p2, p0, Lcom/efs/sdk/pa/a/f;->d:Ljava/io/BufferedOutputStream;
 
@@ -321,7 +288,6 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 7
     :catch_0
     :cond_1
     iget-object p2, p0, Lcom/efs/sdk/pa/a/f;->a:Lcom/efs/sdk/pa/PAMsgListener;

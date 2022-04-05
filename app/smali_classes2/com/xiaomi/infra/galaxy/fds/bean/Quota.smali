@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/bean/Quota;
 .super Ljava/lang/Object;
-.source "Quota.java"
 
 
 # annotations
@@ -23,7 +22,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,16 +30,12 @@
 .method public constructor <init>(Lcom/xiaomi/infra/galaxy/fds/bean/Quota$QuotaType;Lcom/xiaomi/infra/galaxy/fds/Action;J)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->type:Lcom/xiaomi/infra/galaxy/fds/bean/Quota$QuotaType;
 
-    .line 4
     iput-object p2, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->action:Lcom/xiaomi/infra/galaxy/fds/Action;
 
-    .line 5
     iput-wide p3, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->value:J
 
     return-void
@@ -63,7 +57,6 @@
 
     if-eqz p1, :cond_5
 
-    .line 1
     const-class v2, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -74,11 +67,9 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;
 
-    .line 3
     iget-wide v2, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->value:J
 
     iget-wide v4, p1, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->value:J
@@ -89,7 +80,6 @@
 
     return v1
 
-    .line 4
     :cond_2
     iget-object v2, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->action:Lcom/xiaomi/infra/galaxy/fds/Action;
 
@@ -99,7 +89,6 @@
 
     return v1
 
-    .line 5
     :cond_3
     iget-object v2, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->type:Lcom/xiaomi/infra/galaxy/fds/bean/Quota$QuotaType;
 
@@ -120,7 +109,6 @@
 .method public getAction()Lcom/xiaomi/infra/galaxy/fds/Action;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->action:Lcom/xiaomi/infra/galaxy/fds/Action;
 
     return-object v0
@@ -129,7 +117,6 @@
 .method public getType()Lcom/xiaomi/infra/galaxy/fds/bean/Quota$QuotaType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->type:Lcom/xiaomi/infra/galaxy/fds/bean/Quota$QuotaType;
 
     return-object v0
@@ -138,7 +125,6 @@
 .method public getValue()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->value:J
 
     return-wide v0
@@ -147,7 +133,6 @@
 .method public hashCode()I
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->type:Lcom/xiaomi/infra/galaxy/fds/bean/Quota$QuotaType;
 
     const/4 v1, 0x0
@@ -166,7 +151,6 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 2
     iget-object v2, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->action:Lcom/xiaomi/infra/galaxy/fds/Action;
 
     if-eqz v2, :cond_1
@@ -180,7 +164,6 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 3
     iget-wide v1, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->value:J
 
     const/16 v3, 0x20
@@ -199,7 +182,6 @@
 .method public setAction(Lcom/xiaomi/infra/galaxy/fds/Action;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->action:Lcom/xiaomi/infra/galaxy/fds/Action;
 
     return-void
@@ -208,7 +190,6 @@
 .method public setType(Lcom/xiaomi/infra/galaxy/fds/bean/Quota$QuotaType;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->type:Lcom/xiaomi/infra/galaxy/fds/bean/Quota$QuotaType;
 
     return-void
@@ -217,7 +198,6 @@
 .method public setValue(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/xiaomi/infra/galaxy/fds/bean/Quota;->value:J
 
     return-void

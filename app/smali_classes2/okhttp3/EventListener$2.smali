@@ -1,6 +1,5 @@
 .class Lokhttp3/EventListener$2;
 .super Ljava/lang/Object;
-.source "EventListener.java"
 
 # interfaces
 .implements Lokhttp3/EventListener$Factory;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lokhttp3/EventListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/EventListener$2;->val$listener:Lokhttp3/EventListener;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public create(Lokhttp3/Call;)Lokhttp3/EventListener;
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lokhttp3/EventListener$2;->val$listener:Lokhttp3/EventListener;
 
     return-object p1

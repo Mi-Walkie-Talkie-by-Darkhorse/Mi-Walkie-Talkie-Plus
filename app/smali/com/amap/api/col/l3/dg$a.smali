@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/dg$a;
 .super Lcom/amap/api/col/l3/df;
-.source "GLShaderManager.java"
 
 
 # annotations
@@ -38,12 +37,10 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/dg;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/dg$a;->l:Lcom/amap/api/col/l3/dg;
 
     invoke-direct {p0}, Lcom/amap/api/col/l3/df;-><init>()V
 
-    .line 2
     new-instance p1, Ljava/lang/StringBuilder;
 
     const-string v0, "precision highp float;\n        attribute vec4 aVertex;\n        attribute vec2 aTexture;\n        uniform vec4 aMapAttribute;\n        uniform mat4 aMVPMatrix;\n        uniform mat4 aProjection;\n        uniform vec3 aInstanceOffset["
@@ -66,10 +63,8 @@
 
     const-string v0, "        precision highp float;\n        varying vec2 texture;\n        uniform sampler2D aTextureUnit0;\n        void main(){\n            vec4 tempColor = texture2D(aTextureUnit0, texture);\n            gl_FragColor = tempColor;\n        }"
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/col/l3/dg$a;->b:Ljava/lang/String;
 
-    .line 4
     invoke-virtual {p0, p1, v0}, Lcom/amap/api/col/l3/df;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p1
@@ -93,7 +88,6 @@
     :cond_1
     const-string p1, "aMVPMatrix"
 
-    .line 5
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/df;->c(Ljava/lang/String;)I
 
     move-result p1
@@ -102,7 +96,6 @@
 
     const-string p1, "aProjection"
 
-    .line 6
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/df;->c(Ljava/lang/String;)I
 
     move-result p1
@@ -111,7 +104,6 @@
 
     const-string p1, "aInstanceOffset"
 
-    .line 7
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/df;->c(Ljava/lang/String;)I
 
     move-result p1
@@ -120,7 +112,6 @@
 
     const-string p1, "aMapAttribute"
 
-    .line 8
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/df;->c(Ljava/lang/String;)I
 
     move-result p1
@@ -129,7 +120,6 @@
 
     const-string p1, "aVertex"
 
-    .line 9
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/df;->b(Ljava/lang/String;)I
 
     move-result p1
@@ -138,7 +128,6 @@
 
     const-string p1, "aTexture"
 
-    .line 10
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/df;->b(Ljava/lang/String;)I
 
     move-result p1

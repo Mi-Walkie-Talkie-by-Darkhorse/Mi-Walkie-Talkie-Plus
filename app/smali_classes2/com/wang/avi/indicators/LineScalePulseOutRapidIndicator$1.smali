@@ -1,6 +1,5 @@
 .class Lcom/wang/avi/indicators/LineScalePulseOutRapidIndicator$1;
 .super Ljava/lang/Object;
-.source "LineScalePulseOutRapidIndicator.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/wang/avi/indicators/LineScalePulseOutRapidIndicator;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/wang/avi/indicators/LineScalePulseOutRapidIndicator$1;->this$0:Lcom/wang/avi/indicators/LineScalePulseOutRapidIndicator;
 
     iput p2, p0, Lcom/wang/avi/indicators/LineScalePulseOutRapidIndicator$1;->val$index:I
@@ -42,7 +40,6 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/wang/avi/indicators/LineScalePulseOutRapidIndicator$1;->this$0:Lcom/wang/avi/indicators/LineScalePulseOutRapidIndicator;
 
     iget-object v0, v0, Lcom/wang/avi/indicators/LineScaleIndicator;->scaleYFloats:[F
@@ -61,7 +58,6 @@
 
     aput p1, v0, v1
 
-    .line 2
     iget-object p1, p0, Lcom/wang/avi/indicators/LineScalePulseOutRapidIndicator$1;->this$0:Lcom/wang/avi/indicators/LineScalePulseOutRapidIndicator;
 
     invoke-virtual {p1}, Lcom/wang/avi/Indicator;->postInvalidate()V

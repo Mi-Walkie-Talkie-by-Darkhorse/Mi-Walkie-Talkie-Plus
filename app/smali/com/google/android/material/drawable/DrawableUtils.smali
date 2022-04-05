@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/drawable/DrawableUtils;
 .super Ljava/lang/Object;
-.source "DrawableUtils.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -48,7 +45,6 @@
 
     move-result-object p0
 
-    .line 2
     :cond_0
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -65,7 +61,6 @@
     :cond_1
     if-ne v0, v1, :cond_3
 
-    .line 3
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -76,14 +71,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 4
     invoke-static {p0}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
 
     move-result-object p0
 
     return-object p0
 
-    .line 5
     :cond_2
     new-instance p0, Lorg/xmlpull/v1/XmlPullParserException;
 
@@ -109,7 +102,6 @@
 
     throw p0
 
-    .line 6
     :cond_3
     new-instance p0, Lorg/xmlpull/v1/XmlPullParserException;
 
@@ -130,7 +122,6 @@
     :catch_1
     move-exception p0
 
-    .line 7
     :goto_0
     new-instance p2, Landroid/content/res/Resources$NotFoundException;
 
@@ -142,7 +133,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
     invoke-static {p1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -155,10 +145,8 @@
 
     invoke-direct {p2, p1}, Landroid/content/res/Resources$NotFoundException;-><init>(Ljava/lang/String;)V
 
-    .line 9
     invoke-virtual {p2, p0}, Landroid/content/res/Resources$NotFoundException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    .line 10
     throw p2
 .end method
 
@@ -172,19 +160,16 @@
         value = 0x15
     .end annotation
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1}, Landroid/graphics/drawable/RippleDrawable;->setRadius(I)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     :try_start_0
     const-class v0, Landroid/graphics/drawable/RippleDrawable;
@@ -201,14 +186,12 @@
 
     aput-object v4, v3, v5
 
-    .line 4
     invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
     new-array v1, v2, [Ljava/lang/Object;
 
-    .line 5
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -237,7 +220,6 @@
     :catch_2
     move-exception p0
 
-    .line 6
     :goto_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -271,7 +253,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
 
@@ -283,7 +264,6 @@
 
     move-result p0
 
-    .line 2
     new-instance p1, Landroid/graphics/PorterDuffColorFilter;
 
     invoke-direct {p1, p0, p2}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V

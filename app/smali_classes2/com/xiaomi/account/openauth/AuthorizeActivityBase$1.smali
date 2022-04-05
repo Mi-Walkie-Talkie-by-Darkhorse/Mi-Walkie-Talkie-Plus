@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/openauth/AuthorizeActivityBase$1;
 .super Landroid/webkit/WebChromeClient;
-.source "AuthorizeActivityBase.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/xiaomi/account/openauth/AuthorizeActivityBase;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/openauth/AuthorizeActivityBase$1;->this$0:Lcom/xiaomi/account/openauth/AuthorizeActivityBase;
 
     invoke-direct {p0}, Landroid/webkit/WebChromeClient;-><init>()V
@@ -35,7 +33,6 @@
 .method public onProgressChanged(Landroid/webkit/WebView;I)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/xiaomi/account/openauth/AuthorizeActivityBase$1;->this$0:Lcom/xiaomi/account/openauth/AuthorizeActivityBase;
 
     invoke-virtual {p1, p2}, Lcom/xiaomi/account/openauth/AuthorizeActivityBase;->onUpdateProgress(I)V

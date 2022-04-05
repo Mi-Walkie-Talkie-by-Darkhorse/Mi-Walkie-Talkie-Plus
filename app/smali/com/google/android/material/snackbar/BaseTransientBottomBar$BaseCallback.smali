@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/android/material/snackbar/BaseTransientBottomBar$BaseCallback;
 .super Ljava/lang/Object;
-.source "BaseTransientBottomBar.java"
 
 
 # annotations
@@ -45,7 +44,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

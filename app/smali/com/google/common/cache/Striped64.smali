@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/cache/Striped64;
 .super Ljava/lang/Number;
-.source "Striped64.java"
 
 
 # annotations
@@ -44,21 +43,18 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
     sput-object v0, Lcom/google/common/cache/Striped64;->threadHashCode:Ljava/lang/ThreadLocal;
 
-    .line 2
     new-instance v0, Ljava/util/Random;
 
     invoke-direct {v0}, Ljava/util/Random;-><init>()V
 
     sput-object v0, Lcom/google/common/cache/Striped64;->rng:Ljava/util/Random;
 
-    .line 3
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     move-result-object v0
@@ -69,7 +65,6 @@
 
     sput v0, Lcom/google/common/cache/Striped64;->NCPU:I
 
-    .line 4
     :try_start_0
     invoke-static {}, Lcom/google/common/cache/Striped64;->getUnsafe()Lsun/misc/Unsafe;
 
@@ -77,12 +72,10 @@
 
     sput-object v0, Lcom/google/common/cache/Striped64;->UNSAFE:Lsun/misc/Unsafe;
 
-    .line 5
     const-class v1, Lcom/google/common/cache/Striped64;
 
     const-string v2, "base"
 
-    .line 6
     invoke-virtual {v1, v2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v2
@@ -93,7 +86,6 @@
 
     sput-wide v2, Lcom/google/common/cache/Striped64;->baseOffset:J
 
-    .line 7
     sget-object v0, Lcom/google/common/cache/Striped64;->UNSAFE:Lsun/misc/Unsafe;
 
     const-string v2, "busy"
@@ -115,7 +107,6 @@
     :catch_0
     move-exception v0
 
-    .line 8
     new-instance v1, Ljava/lang/Error;
 
     invoke-direct {v1, v0}, Ljava/lang/Error;-><init>(Ljava/lang/Throwable;)V
@@ -126,7 +117,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Number;-><init>()V
 
     return-void
@@ -135,7 +125,6 @@
 .method static synthetic access$000()Lsun/misc/Unsafe;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/google/common/cache/Striped64;->getUnsafe()Lsun/misc/Unsafe;
 
     move-result-object v0
@@ -146,7 +135,6 @@
 .method private static getUnsafe()Lsun/misc/Unsafe;
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {}, Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe;
 
@@ -156,7 +144,6 @@
 
     return-object v0
 
-    .line 2
     :catch_0
     :try_start_1
     new-instance v0, Lcom/google/common/cache/Striped64$1;
@@ -176,7 +163,6 @@
     :catch_1
     move-exception v0
 
-    .line 3
     new-instance v1, Ljava/lang/RuntimeException;
 
     invoke-virtual {v0}, Ljava/security/PrivilegedActionException;->getCause()Ljava/lang/Throwable;
@@ -195,7 +181,6 @@
 .method final casBase(JJ)Z
     .locals 8
 
-    .line 1
     sget-object v0, Lcom/google/common/cache/Striped64;->UNSAFE:Lsun/misc/Unsafe;
 
     sget-wide v2, Lcom/google/common/cache/Striped64;->baseOffset:J
@@ -216,7 +201,6 @@
 .method final casBusy()Z
     .locals 6
 
-    .line 1
     sget-object v0, Lcom/google/common/cache/Striped64;->UNSAFE:Lsun/misc/Unsafe;
 
     sget-wide v2, Lcom/google/common/cache/Striped64;->busyOffset:J
@@ -240,15 +224,12 @@
 .method final internalReset(J)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/cache/Striped64;->cells:[Lcom/google/common/cache/Striped64$Cell;
 
-    .line 2
     iput-wide p1, p0, Lcom/google/common/cache/Striped64;->base:J
 
     if-eqz v0, :cond_1
 
-    .line 3
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -256,12 +237,10 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 4
     aget-object v3, v0, v2
 
     if-eqz v3, :cond_0
 
-    .line 5
     iput-wide p1, v3, Lcom/google/common/cache/Striped64$Cell;->value:J
 
     :cond_0
@@ -286,14 +265,12 @@
 
     if-nez p3, :cond_1
 
-    .line 1
     sget-object v5, Lcom/google/common/cache/Striped64;->threadHashCode:Ljava/lang/ThreadLocal;
 
     new-array v6, v0, [I
 
     invoke-virtual {v5, v6}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
-    .line 2
     sget-object v5, Lcom/google/common/cache/Striped64;->rng:Ljava/util/Random;
 
     invoke-virtual {v5}, Ljava/util/Random;->nextInt()I
@@ -309,7 +286,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     aget v5, p3, v4
 
@@ -322,7 +298,6 @@
 
     move/from16 v5, p4
 
-    .line 4
     :cond_2
     :goto_1
     iget-object v9, v1, Lcom/google/common/cache/Striped64;->cells:[Lcom/google/common/cache/Striped64$Cell;
@@ -337,22 +312,18 @@
 
     and-int/2addr v11, v7
 
-    .line 5
     aget-object v11, v9, v11
 
     if-nez v11, :cond_5
 
-    .line 6
     iget v9, v1, Lcom/google/common/cache/Striped64;->busy:I
 
     if-nez v9, :cond_4
 
-    .line 7
     new-instance v9, Lcom/google/common/cache/Striped64$Cell;
 
     invoke-direct {v9, v2, v3}, Lcom/google/common/cache/Striped64$Cell;-><init>(J)V
 
-    .line 8
     iget v10, v1, Lcom/google/common/cache/Striped64;->busy:I
 
     if-nez v10, :cond_4
@@ -363,7 +334,6 @@
 
     if-eqz v10, :cond_4
 
-    .line 9
     :try_start_0
     iget-object v10, v1, Lcom/google/common/cache/Striped64;->cells:[Lcom/google/common/cache/Striped64$Cell;
 
@@ -381,7 +351,6 @@
 
     if-nez v12, :cond_3
 
-    .line 10
     aput-object v9, v10, v11
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -393,7 +362,6 @@
     :cond_3
     const/4 v9, 0x0
 
-    .line 11
     :goto_2
     iput v4, v1, Lcom/google/common/cache/Striped64;->busy:I
 
@@ -421,7 +389,6 @@
 
     goto :goto_5
 
-    .line 12
     :cond_6
     iget-wide v12, v11, Lcom/google/common/cache/Striped64$Cell;->value:J
 
@@ -437,7 +404,6 @@
 
     goto/16 :goto_7
 
-    .line 13
     :cond_7
     sget v11, Lcom/google/common/cache/Striped64;->NCPU:I
 
@@ -456,7 +422,6 @@
 
     goto :goto_5
 
-    .line 14
     :cond_9
     iget v11, v1, Lcom/google/common/cache/Striped64;->busy:I
 
@@ -468,7 +433,6 @@
 
     if-eqz v11, :cond_c
 
-    .line 15
     :try_start_1
     iget-object v8, v1, Lcom/google/common/cache/Striped64;->cells:[Lcom/google/common/cache/Striped64$Cell;
 
@@ -476,7 +440,6 @@
 
     shl-int/lit8 v8, v10, 0x1
 
-    .line 16
     new-array v8, v8, [Lcom/google/common/cache/Striped64$Cell;
 
     const/4 v11, 0x0
@@ -484,7 +447,6 @@
     :goto_4
     if-ge v11, v10, :cond_a
 
-    .line 17
     aget-object v12, v9, v11
 
     aput-object v12, v8, v11
@@ -493,13 +455,11 @@
 
     goto :goto_4
 
-    .line 18
     :cond_a
     iput-object v8, v1, Lcom/google/common/cache/Striped64;->cells:[Lcom/google/common/cache/Striped64$Cell;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 19
     :cond_b
     iput v4, v1, Lcom/google/common/cache/Striped64;->busy:I
 
@@ -528,12 +488,10 @@
 
     xor-int/2addr v7, v9
 
-    .line 20
     aput v7, v6, v4
 
     goto/16 :goto_1
 
-    .line 21
     :cond_d
     iget v10, v1, Lcom/google/common/cache/Striped64;->busy:I
 
@@ -549,7 +507,6 @@
 
     if-eqz v10, :cond_f
 
-    .line 22
     :try_start_2
     iget-object v10, v1, Lcom/google/common/cache/Striped64;->cells:[Lcom/google/common/cache/Striped64$Cell;
 
@@ -561,14 +518,12 @@
 
     and-int/lit8 v10, v7, 0x1
 
-    .line 23
     new-instance v11, Lcom/google/common/cache/Striped64$Cell;
 
     invoke-direct {v11, v2, v3}, Lcom/google/common/cache/Striped64$Cell;-><init>(J)V
 
     aput-object v11, v9, v10
 
-    .line 24
     iput-object v9, v1, Lcom/google/common/cache/Striped64;->cells:[Lcom/google/common/cache/Striped64$Cell;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
@@ -580,7 +535,6 @@
     :cond_e
     const/4 v9, 0x0
 
-    .line 25
     :goto_6
     iput v4, v1, Lcom/google/common/cache/Striped64;->busy:I
 
@@ -595,7 +549,6 @@
 
     throw v0
 
-    .line 26
     :cond_f
     iget-wide v9, v1, Lcom/google/common/cache/Striped64;->base:J
 

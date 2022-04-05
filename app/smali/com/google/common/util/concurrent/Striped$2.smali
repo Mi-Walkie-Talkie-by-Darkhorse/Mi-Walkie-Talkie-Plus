@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/Striped$2;
 .super Ljava/lang/Object;
-.source "Striped.java"
 
 # interfaces
 .implements Lcom/google/common/base/Supplier;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/Striped$2;->get()Ljava/util/concurrent/locks/Lock;
 
     move-result-object v0
@@ -52,7 +49,6 @@
 .method public get()Ljava/util/concurrent/locks/Lock;
     .locals 2
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
 
     const/4 v1, 0x0

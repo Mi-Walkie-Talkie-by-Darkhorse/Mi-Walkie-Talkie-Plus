@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/collect/RowSortedTable;
 .super Ljava/lang/Object;
-.source "RowSortedTable.java"
 
 # interfaces
 .implements Lcom/google/common/collect/Table;

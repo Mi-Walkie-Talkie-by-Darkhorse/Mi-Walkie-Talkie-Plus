@@ -1,6 +1,5 @@
 .class abstract enum Lcom/google/common/collect/Maps$EntryFunction;
 .super Ljava/lang/Enum;
-.source "Maps.java"
 
 # interfaces
 .implements Lcom/google/common/base/Function;
@@ -42,7 +41,6 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Maps$EntryFunction$1;
 
     const/4 v1, 0x0
@@ -53,7 +51,6 @@
 
     sput-object v0, Lcom/google/common/collect/Maps$EntryFunction;->KEY:Lcom/google/common/collect/Maps$EntryFunction;
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/Maps$EntryFunction$2;
 
     const/4 v2, 0x1
@@ -68,7 +65,6 @@
 
     new-array v3, v3, [Lcom/google/common/collect/Maps$EntryFunction;
 
-    .line 3
     sget-object v4, Lcom/google/common/collect/Maps$EntryFunction;->KEY:Lcom/google/common/collect/Maps$EntryFunction;
 
     aput-object v4, v3, v1
@@ -88,7 +84,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -97,7 +92,6 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/common/collect/Maps$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Maps$EntryFunction;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -106,7 +100,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/collect/Maps$EntryFunction;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/common/collect/Maps$EntryFunction;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -121,7 +114,6 @@
 .method public static values()[Lcom/google/common/collect/Maps$EntryFunction;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/Maps$EntryFunction;->$VALUES:[Lcom/google/common/collect/Maps$EntryFunction;
 
     invoke-virtual {v0}, [Lcom/google/common/collect/Maps$EntryFunction;->clone()Ljava/lang/Object;

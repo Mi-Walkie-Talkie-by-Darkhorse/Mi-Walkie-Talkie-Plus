@@ -1,6 +1,5 @@
 .class public final Lb/c/a/a;
 .super Ljava/lang/Object;
-.source "LeakCanary.java"
 
 
 # direct methods

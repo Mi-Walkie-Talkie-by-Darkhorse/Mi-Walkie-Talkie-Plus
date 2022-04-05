@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/b/h;
 .super Ljava/lang/Object;
-.source "ILineScatterCandleRadarDataSet.java"
 
 # interfaces
 .implements Lb/a/a/a/e/b/b;

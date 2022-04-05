@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/register/mobile/a;
 .super Ljava/lang/Object;
-.source "PinyinUtils.java"
 
 
 # static fields
@@ -2463,7 +2462,6 @@
 
     aput-object v2, v0, v1
 
-    .line 1
     sput-object v0, Lcom/sina/weibo/sdk/register/mobile/a;->c:[Ljava/lang/String;
 
     return-void
@@ -2472,7 +2470,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -2481,7 +2478,6 @@
 .method public static a()Lcom/sina/weibo/sdk/register/mobile/a;
     .locals 1
 
-    .line 15
     sget-object v0, Lcom/sina/weibo/sdk/register/mobile/a;->a:Lcom/sina/weibo/sdk/register/mobile/a;
 
     return-object v0
@@ -2494,24 +2490,20 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/sina/weibo/sdk/register/mobile/a;->a:Lcom/sina/weibo/sdk/register/mobile/a;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/sina/weibo/sdk/register/mobile/a;
 
     invoke-direct {v1}, Lcom/sina/weibo/sdk/register/mobile/a;-><init>()V
 
     sput-object v1, Lcom/sina/weibo/sdk/register/mobile/a;->a:Lcom/sina/weibo/sdk/register/mobile/a;
 
-    .line 3
     :cond_0
     invoke-static {p0}, Lcom/sina/weibo/sdk/register/mobile/a;->b(Landroid/content/Context;)V
 
-    .line 4
     sget-object p0, Lcom/sina/weibo/sdk/register/mobile/a;->a:Lcom/sina/weibo/sdk/register/mobile/a;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2531,7 +2523,6 @@
 .method private a(C)Ljava/lang/String;
     .locals 3
 
-    .line 5
     sget-boolean v0, Lcom/sina/weibo/sdk/register/mobile/a;->d:Z
 
     const-string v1, ""
@@ -2563,7 +2554,6 @@
     :cond_2
     sub-int/2addr p1, v0
 
-    .line 6
     sget-object v0, Lcom/sina/weibo/sdk/register/mobile/a;->c:[Ljava/lang/String;
 
     sget-object v2, Lcom/sina/weibo/sdk/register/mobile/a;->b:[S
@@ -2582,7 +2572,6 @@
     :goto_0
     return-object v1
 
-    .line 7
     :cond_4
     :goto_1
     invoke-static {p1}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
@@ -2599,7 +2588,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
     sget-boolean v2, Lcom/sina/weibo/sdk/register/mobile/a;->d:Z
 
@@ -2607,7 +2595,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
@@ -2623,7 +2610,6 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     :try_start_1
     new-instance v2, Ljava/io/DataInputStream;
 
@@ -2633,7 +2619,6 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 4
     :try_start_2
     invoke-virtual {v2}, Ljava/io/DataInputStream;->available()I
 
@@ -2647,14 +2632,12 @@
 
     long-to-int v0, v4
 
-    .line 5
     new-array v0, v0, [S
 
     sput-object v0, Lcom/sina/weibo/sdk/register/mobile/a;->b:[S
 
     const/4 v0, 0x0
 
-    .line 6
     :goto_0
     sget-object v4, Lcom/sina/weibo/sdk/register/mobile/a;->b:[S
 
@@ -2662,20 +2645,17 @@
 
     if-lt v0, v4, :cond_1
 
-    .line 7
     sput-boolean v3, Lcom/sina/weibo/sdk/register/mobile/a;->d:Z
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 8
     :try_start_3
     invoke-virtual {v2}, Ljava/io/DataInputStream;->close()V
 
     if-eqz p0, :cond_4
 
-    .line 9
     :goto_1
     invoke-virtual {p0}, Ljava/io/InputStream;->close()V
     :try_end_3
@@ -2683,7 +2663,6 @@
 
     goto :goto_4
 
-    .line 10
     :cond_1
     :try_start_4
     sget-object v4, Lcom/sina/weibo/sdk/register/mobile/a;->b:[S
@@ -2731,7 +2710,6 @@
     :catch_2
     move-object p0, v0
 
-    .line 11
     :catch_3
     :goto_2
     :try_start_5
@@ -2741,7 +2719,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 12
     :try_start_6
     invoke-virtual {v0}, Ljava/io/DataInputStream;->close()V
     :try_end_6
@@ -2755,7 +2732,6 @@
     :catch_4
     move-object p0, v0
 
-    .line 13
     :catch_5
     :goto_3
     :try_start_7
@@ -2765,7 +2741,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 14
     :try_start_8
     invoke-virtual {v0}, Ljava/io/DataInputStream;->close()V
     :try_end_8
@@ -2797,12 +2772,10 @@
     :cond_5
     if-eqz p0, :cond_6
 
-    .line 15
     invoke-virtual {p0}, Ljava/io/InputStream;->close()V
     :try_end_9
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_7
 
-    .line 16
     :catch_7
     :cond_6
     throw v0
@@ -2813,7 +2786,6 @@
 .method public a(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
-    .line 8
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -2824,7 +2796,6 @@
 
     return-object v1
 
-    .line 9
     :cond_0
     sget-boolean v0, Lcom/sina/weibo/sdk/register/mobile/a;->d:Z
 
@@ -2832,13 +2803,11 @@
 
     return-object v1
 
-    .line 10
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 11
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -2848,20 +2817,17 @@
     :goto_0
     if-lt v2, v1, :cond_2
 
-    .line 12
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 
-    .line 13
     :cond_2
     invoke-virtual {p1, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
 
-    .line 14
     invoke-direct {p0, v3}, Lcom/sina/weibo/sdk/register/mobile/a;->a(C)Ljava/lang/String;
 
     move-result-object v3

@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/metalev/multitouch/controller/MultiTouchController$MultiTouchObjectCanvas;
 .super Ljava/lang/Object;
-.source "MultiTouchController.java"
 
 
 # annotations

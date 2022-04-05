@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;
 .super Ljava/lang/Object;
-.source "ViewLayoutChangeEventObservable.kt"
 
 
 # annotations
@@ -101,7 +100,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;->view:Landroid/view/View;
@@ -553,7 +551,6 @@
 .method public final getBottom()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;->bottom:I
 
     return v0
@@ -562,7 +559,6 @@
 .method public final getLeft()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;->left:I
 
     return v0
@@ -571,7 +567,6 @@
 .method public final getOldBottom()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;->oldBottom:I
 
     return v0
@@ -580,7 +575,6 @@
 .method public final getOldLeft()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;->oldLeft:I
 
     return v0
@@ -589,7 +583,6 @@
 .method public final getOldRight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;->oldRight:I
 
     return v0
@@ -598,7 +591,6 @@
 .method public final getOldTop()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;->oldTop:I
 
     return v0
@@ -607,7 +599,6 @@
 .method public final getRight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;->right:I
 
     return v0
@@ -616,7 +607,6 @@
 .method public final getTop()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;->top:I
 
     return v0
@@ -627,7 +617,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;->view:Landroid/view/View;
 
     return-object v0

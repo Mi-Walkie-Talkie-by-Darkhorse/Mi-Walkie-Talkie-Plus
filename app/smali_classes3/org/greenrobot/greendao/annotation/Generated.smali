@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/greenrobot/greendao/annotation/Generated;
 .super Ljava/lang/Object;
-.source "Generated.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

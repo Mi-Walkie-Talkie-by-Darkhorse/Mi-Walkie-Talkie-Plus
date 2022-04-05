@@ -1,6 +1,5 @@
 .class public final Landroidx/media/AudioAttributesCompatParcelizer;
 .super Ljava/lang/Object;
-.source "AudioAttributesCompatParcelizer.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,12 +22,10 @@
 .method public static read(Landroidx/versionedparcelable/a;)Landroidx/media/AudioAttributesCompat;
     .locals 3
 
-    .line 1
     new-instance v0, Landroidx/media/AudioAttributesCompat;
 
     invoke-direct {v0}, Landroidx/media/AudioAttributesCompat;-><init>()V
 
-    .line 2
     iget-object v1, v0, Landroidx/media/AudioAttributesCompat;->a:Landroidx/media/AudioAttributesImpl;
 
     const/4 v2, 0x1
@@ -50,10 +46,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p1, v0, v0}, Landroidx/versionedparcelable/a;->a(ZZ)V
 
-    .line 2
     iget-object p0, p0, Landroidx/media/AudioAttributesCompat;->a:Landroidx/media/AudioAttributesImpl;
 
     const/4 v0, 0x1

@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/internal/NavigationSubMenu;
 .super Landroidx/appcompat/view/menu/q;
-.source "NavigationSubMenu.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/google/android/material/internal/NavigationMenu;Landroidx/appcompat/view/menu/h;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/view/menu/q;-><init>(Landroid/content/Context;Landroidx/appcompat/view/menu/f;Landroidx/appcompat/view/menu/h;)V
 
     return-void
@@ -26,10 +24,8 @@
 .method public onItemsChanged(Z)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/appcompat/view/menu/f;->onItemsChanged(Z)V
 
-    .line 2
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/q;->getParentMenu()Landroid/view/Menu;
 
     move-result-object v0

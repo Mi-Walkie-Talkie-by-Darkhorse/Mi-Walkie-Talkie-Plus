@@ -1,6 +1,5 @@
 .class final Lcom/google/common/cache/CacheBuilder$3;
 .super Lcom/google/common/base/Ticker;
-.source "CacheBuilder.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/base/Ticker;-><init>()V
 
     return-void

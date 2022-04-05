@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/arch/SwipeBackLayout$d;
 .super Ljava/lang/Object;
-.source "SwipeBackLayout.java"
 
 
 # annotations

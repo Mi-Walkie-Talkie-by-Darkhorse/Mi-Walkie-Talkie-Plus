@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/b$a;
 .super Ljava/lang/Object;
-.source "QMUILog.java"
 
 
 # annotations

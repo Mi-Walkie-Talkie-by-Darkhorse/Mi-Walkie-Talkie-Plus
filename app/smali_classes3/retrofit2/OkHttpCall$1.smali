@@ -1,6 +1,5 @@
 .class Lretrofit2/OkHttpCall$1;
 .super Ljava/lang/Object;
-.source "OkHttpCall.java"
 
 # interfaces
 .implements Lokhttp3/Callback;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lretrofit2/OkHttpCall;Lretrofit2/Callback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lretrofit2/OkHttpCall$1;->this$0:Lretrofit2/OkHttpCall;
 
     iput-object p2, p0, Lretrofit2/OkHttpCall$1;->val$callback:Lretrofit2/Callback;
@@ -40,7 +38,6 @@
 .method private callFailure(Ljava/lang/Throwable;)V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lretrofit2/OkHttpCall$1;->val$callback:Lretrofit2/Callback;
 
@@ -55,7 +52,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
@@ -72,7 +68,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lretrofit2/OkHttpCall$1;->val$callback:Lretrofit2/Callback;
 
@@ -87,7 +82,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
@@ -99,7 +93,6 @@
 .method public onFailure(Lokhttp3/Call;Ljava/io/IOException;)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object p1, p0, Lretrofit2/OkHttpCall$1;->val$callback:Lretrofit2/Callback;
 
@@ -114,7 +107,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
@@ -129,7 +121,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object p1, p0, Lretrofit2/OkHttpCall$1;->this$0:Lretrofit2/OkHttpCall;
 
@@ -139,7 +130,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     invoke-direct {p0, p1}, Lretrofit2/OkHttpCall$1;->callSuccess(Lretrofit2/Response;)V
 
     return-void
@@ -147,7 +137,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     invoke-direct {p0, p1}, Lretrofit2/OkHttpCall$1;->callFailure(Ljava/lang/Throwable;)V
 
     return-void

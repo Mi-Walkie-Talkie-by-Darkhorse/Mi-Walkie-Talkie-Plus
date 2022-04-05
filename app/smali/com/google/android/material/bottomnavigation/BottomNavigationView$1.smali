@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/bottomnavigation/BottomNavigationView$1;
 .super Ljava/lang/Object;
-.source "BottomNavigationView.java"
 
 # interfaces
 .implements Landroidx/appcompat/view/menu/f$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/bottomnavigation/BottomNavigationView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$1;->this$0:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$1;->this$0:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
 
     invoke-static {p1}, Lcom/google/android/material/bottomnavigation/BottomNavigationView;->access$000(Lcom/google/android/material/bottomnavigation/BottomNavigationView;)Lcom/google/android/material/bottomnavigation/BottomNavigationView$OnNavigationItemReselectedListener;
@@ -65,7 +62,6 @@
 
     if-ne p1, v1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$1;->this$0:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
 
     invoke-static {p1}, Lcom/google/android/material/bottomnavigation/BottomNavigationView;->access$000(Lcom/google/android/material/bottomnavigation/BottomNavigationView;)Lcom/google/android/material/bottomnavigation/BottomNavigationView$OnNavigationItemReselectedListener;
@@ -76,7 +72,6 @@
 
     return v0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationView$1;->this$0:Lcom/google/android/material/bottomnavigation/BottomNavigationView;
 

@@ -1,6 +1,5 @@
 .class Lcom/afollestad/materialdialogs/MaterialDialog$a;
 .super Ljava/lang/Object;
-.source "MaterialDialog.java"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/afollestad/materialdialogs/MaterialDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public onGlobalLayout()V
     .locals 3
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
     iget-object v0, v0, Lcom/afollestad/materialdialogs/MaterialDialog;->h:Landroidx/recyclerview/widget/RecyclerView;
@@ -58,7 +54,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
@@ -70,7 +65,6 @@
 
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 4
     :goto_0
     iget-object v0, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
@@ -84,7 +78,6 @@
 
     if-ne v0, v1, :cond_5
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
@@ -94,7 +87,6 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 6
     iget-object v0, v0, Lcom/afollestad/materialdialogs/MaterialDialog;->c:Lcom/afollestad/materialdialogs/MaterialDialog$d;
 
     iget v0, v0, Lcom/afollestad/materialdialogs/MaterialDialog$d;->O:I
@@ -103,7 +95,6 @@
 
     return-void
 
-    .line 7
     :cond_2
     iget-object v0, v0, Lcom/afollestad/materialdialogs/MaterialDialog;->t:Ljava/util/List;
 
@@ -117,7 +108,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_3
     iget-object v0, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
@@ -125,7 +115,6 @@
 
     invoke-static {v0}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
-    .line 9
     iget-object v0, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
     iget-object v0, v0, Lcom/afollestad/materialdialogs/MaterialDialog;->t:Ljava/util/List;
@@ -142,7 +131,6 @@
 
     move-result v0
 
-    .line 10
     :cond_4
     iget-object v1, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 

@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gesture/MoveGestureDetector$SimpleOnMoveGestureListener;
 .super Ljava/lang/Object;
-.source "MoveGestureDetector.java"
 
 # interfaces
 .implements Lcom/autonavi/ae/gmap/gesture/MoveGestureDetector$OnMoveGestureListener;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -1,6 +1,5 @@
 .class public Landroidx/core/b/a;
 .super Ljava/lang/Object;
-.source "MathUtils.java"
 
 
 # direct methods

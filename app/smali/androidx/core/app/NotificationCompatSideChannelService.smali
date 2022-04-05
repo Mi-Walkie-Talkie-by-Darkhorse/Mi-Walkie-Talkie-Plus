@@ -1,6 +1,5 @@
 .class public abstract Landroidx/core/app/NotificationCompatSideChannelService;
 .super Landroid/app/Service;
-.source "NotificationCompatSideChannelService.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     return-void
@@ -26,7 +24,6 @@
 .method a(ILjava/lang/String;)V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Landroid/app/Service;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
@@ -44,7 +41,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-virtual {v3, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -58,7 +54,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     new-instance v0, Ljava/lang/SecurityException;
 
@@ -99,7 +94,6 @@
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
@@ -114,7 +108,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 2
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
@@ -123,7 +116,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance p1, Landroidx/core/app/NotificationCompatSideChannelService$a;
 

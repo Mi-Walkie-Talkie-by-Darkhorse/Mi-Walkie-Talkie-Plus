@@ -1,6 +1,5 @@
 .class Lcom/afollestad/materialdialogs/internal/MDRootLayout$c;
 .super Ljava/lang/Object;
-.source "MDRootLayout.java"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnScrollChangedListener;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/view/ViewGroup;ZZ)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$c;->d:Lcom/afollestad/materialdialogs/internal/MDRootLayout;
 
     iput-object p2, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$c;->a:Landroid/view/ViewGroup;
@@ -50,7 +48,6 @@
 .method public onScrollChanged()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$c;->d:Lcom/afollestad/materialdialogs/internal/MDRootLayout;
 
     invoke-static {v0}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->a(Lcom/afollestad/materialdialogs/internal/MDRootLayout;)[Lcom/afollestad/materialdialogs/internal/MDButton;
@@ -70,7 +67,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     invoke-virtual {v4}, Landroid/widget/TextView;->getVisibility()I
 
     move-result v4
@@ -88,7 +84,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     :goto_1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$c;->a:Landroid/view/ViewGroup;
@@ -97,7 +92,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 4
     iget-object v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$c;->d:Lcom/afollestad/materialdialogs/internal/MDRootLayout;
 
     check-cast v0, Landroid/webkit/WebView;
@@ -110,7 +104,6 @@
 
     goto :goto_2
 
-    .line 5
     :cond_2
     iget-object v1, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$c;->d:Lcom/afollestad/materialdialogs/internal/MDRootLayout;
 
@@ -120,7 +113,6 @@
 
     invoke-static {v1, v0, v3, v4, v2}, Lcom/afollestad/materialdialogs/internal/MDRootLayout;->a(Lcom/afollestad/materialdialogs/internal/MDRootLayout;Landroid/view/ViewGroup;ZZZ)V
 
-    .line 6
     :goto_2
     iget-object v0, p0, Lcom/afollestad/materialdialogs/internal/MDRootLayout$c;->d:Lcom/afollestad/materialdialogs/internal/MDRootLayout;
 

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Iterables$12;
 .super Lcom/google/common/collect/FluentIterable;
-.source "Iterables.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Ljava/lang/Iterable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Iterables$12;->val$iterable:Ljava/lang/Iterable;
 
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;-><init>()V
@@ -49,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Iterables$ConsumingQueueIterator;
 
     iget-object v1, p0, Lcom/google/common/collect/Iterables$12;->val$iterable:Ljava/lang/Iterable;

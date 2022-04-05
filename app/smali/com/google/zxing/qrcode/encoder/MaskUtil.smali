@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/qrcode/encoder/MaskUtil;
 .super Ljava/lang/Object;
-.source "MaskUtil.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p0, v0}, Lcom/google/zxing/qrcode/encoder/MaskUtil;->applyMaskPenaltyRule1Internal(Lcom/google/zxing/qrcode/encoder/ByteMatrix;Z)I
 
     move-result v0
@@ -49,7 +46,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result v0
@@ -64,7 +60,6 @@
     :goto_0
     if-eqz p1, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getWidth()I
 
     move-result v1
@@ -76,7 +71,6 @@
 
     move-result v1
 
-    .line 3
     :goto_1
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getArray()[[B
 
@@ -104,7 +98,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 4
     aget-object v9, p0, v3
 
     aget-byte v9, v9, v6
@@ -165,17 +158,14 @@
 .method static applyMaskPenaltyRule2(Lcom/google/zxing/qrcode/encoder/ByteMatrix;)I
     .locals 11
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getArray()[[B
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getWidth()I
 
     move-result v1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result p0
@@ -191,7 +181,6 @@
 
     if-ge v3, v5, :cond_2
 
-    .line 4
     aget-object v5, v0, v3
 
     const/4 v6, 0x0
@@ -201,12 +190,10 @@
 
     if-ge v6, v7, :cond_1
 
-    .line 5
     aget-byte v7, v5, v6
 
     add-int/lit8 v8, v6, 0x1
 
-    .line 6
     aget-byte v9, v5, v8
 
     if-ne v7, v9, :cond_0
@@ -246,17 +233,14 @@
 .method static applyMaskPenaltyRule3(Lcom/google/zxing/qrcode/encoder/ByteMatrix;)I
     .locals 10
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getArray()[[B
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getWidth()I
 
     move-result v1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result p0
@@ -275,7 +259,6 @@
     :goto_1
     if-ge v5, v1, :cond_4
 
-    .line 4
     aget-object v6, v0, v3
 
     add-int/lit8 v7, v5, 0x6
@@ -284,7 +267,6 @@
 
     if-ge v7, v1, :cond_1
 
-    .line 5
     aget-byte v9, v6, v5
 
     if-ne v9, v8, :cond_1
@@ -325,7 +307,6 @@
 
     add-int/lit8 v7, v5, -0x4
 
-    .line 6
     invoke-static {v6, v7, v5}, Lcom/google/zxing/qrcode/encoder/MaskUtil;->isWhiteHorizontal([BII)Z
 
     move-result v7
@@ -350,7 +331,6 @@
 
     if-ge v6, p0, :cond_3
 
-    .line 7
     aget-object v7, v0, v3
 
     aget-byte v7, v7, v5
@@ -405,7 +385,6 @@
 
     add-int/lit8 v6, v3, -0x4
 
-    .line 8
     invoke-static {v0, v5, v6, v3}, Lcom/google/zxing/qrcode/encoder/MaskUtil;->isWhiteVertical([[BIII)Z
 
     move-result v6
@@ -444,17 +423,14 @@
 .method static applyMaskPenaltyRule4(Lcom/google/zxing/qrcode/encoder/ByteMatrix;)I
     .locals 10
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getArray()[[B
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getWidth()I
 
     move-result v1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result v2
@@ -470,7 +446,6 @@
 
     if-ge v4, v2, :cond_2
 
-    .line 4
     aget-object v7, v0, v4
 
     const/4 v8, 0x0
@@ -478,7 +453,6 @@
     :goto_1
     if-ge v8, v1, :cond_1
 
-    .line 5
     aget-byte v9, v7, v8
 
     if-ne v9, v6, :cond_0
@@ -495,7 +469,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_2
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
@@ -511,7 +484,6 @@
 
     sub-int/2addr p0, v0
 
-    .line 7
     invoke-static {p0}, Ljava/lang/Math;->abs(I)I
 
     move-result p0
@@ -532,7 +504,6 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -554,7 +525,6 @@
     :pswitch_0
     mul-int p0, p2, p1
 
-    .line 2
     rem-int/lit8 p0, p0, 0x3
 
     add-int/2addr p2, p1
@@ -570,7 +540,6 @@
 
     and-int/lit8 p0, p2, 0x1
 
-    .line 3
     rem-int/lit8 p2, p2, 0x3
 
     add-int/2addr p0, p2
@@ -585,14 +554,12 @@
 
     and-int/lit8 p0, p2, 0x1
 
-    .line 4
     rem-int/lit8 p2, p2, 0x3
 
     add-int/2addr p0, p2
 
     goto :goto_2
 
-    .line 5
     :pswitch_3
     div-int/lit8 p2, p2, 0x2
 
@@ -603,12 +570,10 @@
     :pswitch_4
     add-int/2addr p2, p1
 
-    .line 6
     rem-int/lit8 p0, p2, 0x3
 
     goto :goto_2
 
-    .line 7
     :pswitch_5
     rem-int/lit8 p0, p1, 0x3
 
@@ -649,12 +614,10 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p1, v0}, Ljava/lang/Math;->max(II)I
 
     move-result p1
 
-    .line 2
     array-length v1, p0
 
     invoke-static {p2, v1}, Ljava/lang/Math;->min(II)I
@@ -666,7 +629,6 @@
 
     if-ge p1, p2, :cond_1
 
-    .line 3
     aget-byte v2, p0, p1
 
     if-ne v2, v1, :cond_0
@@ -687,12 +649,10 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p2, v0}, Ljava/lang/Math;->max(II)I
 
     move-result p2
 
-    .line 2
     array-length v1, p0
 
     invoke-static {p3, v1}, Ljava/lang/Math;->min(II)I
@@ -704,7 +664,6 @@
 
     if-ge p2, p3, :cond_1
 
-    .line 3
     aget-object v2, p0, p2
 
     aget-byte v2, v2, p1

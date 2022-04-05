@@ -1,6 +1,5 @@
 .class public Landroidx/recyclerview/widget/l;
 .super Landroidx/core/view/a;
-.source "RecyclerViewAccessibilityDelegate.java"
 
 
 # annotations
@@ -25,32 +24,26 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Landroidx/core/view/a;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/recyclerview/widget/l;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 3
     invoke-virtual {p0}, Landroidx/recyclerview/widget/l;->getItemDelegate()Landroidx/core/view/a;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 4
     instance-of v0, p1, Landroidx/recyclerview/widget/l$a;
 
     if-eqz v0, :cond_0
 
-    .line 5
     check-cast p1, Landroidx/recyclerview/widget/l$a;
 
     iput-object p1, p0, Landroidx/recyclerview/widget/l;->mItemDelegate:Landroidx/recyclerview/widget/l$a;
 
     goto :goto_0
 
-    .line 6
     :cond_0
     new-instance p1, Landroidx/recyclerview/widget/l$a;
 
@@ -69,7 +62,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/l;->mItemDelegate:Landroidx/recyclerview/widget/l$a;
 
     return-object v0
@@ -78,10 +70,8 @@
 .method public onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/core/view/a;->onInitializeAccessibilityEvent(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
 
-    .line 2
     instance-of v0, p1, Landroidx/recyclerview/widget/RecyclerView;
 
     if-eqz v0, :cond_0
@@ -92,17 +82,14 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     check-cast p1, Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 4
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 5
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     move-result-object p1
@@ -116,10 +103,8 @@
 .method public onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroidx/core/view/accessibility/b;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/core/view/a;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroidx/core/view/accessibility/b;)V
 
-    .line 2
     invoke-virtual {p0}, Landroidx/recyclerview/widget/l;->shouldIgnore()Z
 
     move-result p1
@@ -134,7 +119,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Landroidx/recyclerview/widget/l;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
@@ -150,7 +134,6 @@
 .method public performAccessibilityAction(Landroid/view/View;ILandroid/os/Bundle;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroidx/core/view/a;->performAccessibilityAction(Landroid/view/View;ILandroid/os/Bundle;)Z
 
     move-result p1
@@ -161,7 +144,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroidx/recyclerview/widget/l;->shouldIgnore()Z
 
@@ -177,7 +159,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 3
     iget-object p1, p0, Landroidx/recyclerview/widget/l;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
@@ -199,7 +180,6 @@
 .method shouldIgnore()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/l;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->hasPendingAdapterUpdates()Z

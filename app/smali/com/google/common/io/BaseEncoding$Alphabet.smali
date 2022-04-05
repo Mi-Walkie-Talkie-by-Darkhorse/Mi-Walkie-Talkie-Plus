@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/BaseEncoding$Alphabet;
 .super Lcom/google/common/base/CharMatcher;
-.source "BaseEncoding.java"
 
 
 # annotations
@@ -36,10 +35,8 @@
 .method constructor <init>(Ljava/lang/String;[C)V
     .locals 8
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/base/CharMatcher;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -48,7 +45,6 @@
 
     iput-object p1, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->name:Ljava/lang/String;
 
-    .line 3
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -57,7 +53,6 @@
 
     iput-object p1, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->chars:[C
 
-    .line 4
     :try_start_0
     array-length p1, p2
 
@@ -71,7 +66,6 @@
     :try_end_0
     .catch Ljava/lang/ArithmeticException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5
     invoke-static {p1}, Ljava/lang/Integer;->lowestOneBit(I)I
 
     move-result p1
@@ -82,19 +76,16 @@
 
     move-result p1
 
-    .line 6
     div-int/2addr v0, p1
 
     iput v0, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->charsPerChunk:I
 
-    .line 7
     iget v0, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->bitsPerChar:I
 
     div-int/2addr v0, p1
 
     iput v0, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->bytesPerChunk:I
 
-    .line 8
     array-length p1, p2
 
     const/4 v0, 0x1
@@ -109,23 +100,19 @@
 
     const/4 v1, -0x1
 
-    .line 9
     invoke-static {p1, v1}, Ljava/util/Arrays;->fill([BB)V
 
     const/4 v2, 0x0
 
     const/4 v3, 0x0
 
-    .line 10
     :goto_0
     array-length v4, p2
 
     if-ge v3, v4, :cond_1
 
-    .line 11
     aget-char v4, p2, v3
 
-    .line 12
     sget-object v5, Lcom/google/common/base/CharMatcher;->ASCII:Lcom/google/common/base/CharMatcher;
 
     invoke-virtual {v5, v4}, Lcom/google/common/base/CharMatcher;->matches(C)Z
@@ -144,7 +131,6 @@
 
     invoke-static {v5, v7, v6}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 13
     aget-byte v5, p1, v4
 
     if-ne v5, v1, :cond_0
@@ -171,23 +157,19 @@
 
     int-to-byte v5, v3
 
-    .line 14
     aput-byte v5, p1, v4
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 15
     :cond_1
     iput-object p1, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->decodabet:[B
 
-    .line 16
     iget p1, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->charsPerChunk:I
 
     new-array p1, p1, [Z
 
-    .line 17
     :goto_2
     iget p2, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->bytesPerChunk:I
 
@@ -195,7 +177,6 @@
 
     mul-int/lit8 p2, v2, 0x8
 
-    .line 18
     iget v1, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->bitsPerChar:I
 
     sget-object v3, Ljava/math/RoundingMode;->CEILING:Ljava/math/RoundingMode;
@@ -210,7 +191,6 @@
 
     goto :goto_2
 
-    .line 19
     :cond_2
     iput-object p1, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->validPadding:[Z
 
@@ -219,7 +199,6 @@
     :catch_0
     move-exception p1
 
-    .line 20
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     array-length p2, p2
@@ -248,7 +227,6 @@
 .method private hasLowerCase()Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->chars:[C
 
     array-length v1, v0
@@ -262,7 +240,6 @@
 
     aget-char v4, v0, v3
 
-    .line 2
     invoke-static {v4}, Lcom/google/common/base/Ascii;->isLowerCase(C)Z
 
     move-result v4
@@ -285,7 +262,6 @@
 .method private hasUpperCase()Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->chars:[C
 
     array-length v1, v0
@@ -299,7 +275,6 @@
 
     aget-char v4, v0, v3
 
-    .line 2
     invoke-static {v4}, Lcom/google/common/base/Ascii;->isUpperCase(C)Z
 
     move-result v4
@@ -333,7 +308,6 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->decodabet:[B
 
     aget-byte v1, v0, p1
@@ -342,12 +316,10 @@
 
     if-eq v1, v2, :cond_0
 
-    .line 2
     aget-byte p1, v0, p1
 
     return p1
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/google/common/io/BaseEncoding$DecodingException;
 
@@ -375,7 +347,6 @@
 .method encode(I)C
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->chars:[C
 
     aget-char p1, v0, p1
@@ -386,7 +357,6 @@
 .method isValidPaddingStartPosition(I)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->validPadding:[Z
 
     iget v1, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->charsPerChunk:I
@@ -401,7 +371,6 @@
 .method lowerCase()Lcom/google/common/io/BaseEncoding$Alphabet;
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/io/BaseEncoding$Alphabet;->hasUpperCase()Z
 
     move-result v0
@@ -410,7 +379,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     invoke-direct {p0}, Lcom/google/common/io/BaseEncoding$Alphabet;->hasLowerCase()Z
 
@@ -422,7 +390,6 @@
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->chars:[C
 
     array-length v0, v0
@@ -431,7 +398,6 @@
 
     const/4 v1, 0x0
 
-    .line 4
     :goto_0
     iget-object v2, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->chars:[C
 
@@ -439,7 +405,6 @@
 
     if-ge v1, v3, :cond_1
 
-    .line 5
     aget-char v2, v2, v1
 
     invoke-static {v2}, Lcom/google/common/base/Ascii;->toLowerCase(C)C
@@ -452,7 +417,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     new-instance v1, Lcom/google/common/io/BaseEncoding$Alphabet;
 
@@ -476,7 +440,6 @@
 .method public matches(C)Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/base/CharMatcher;->ASCII:Lcom/google/common/base/CharMatcher;
 
     invoke-virtual {v0, p1}, Lcom/google/common/base/CharMatcher;->matches(C)Z
@@ -507,7 +470,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->name:Ljava/lang/String;
 
     return-object v0
@@ -516,7 +478,6 @@
 .method upperCase()Lcom/google/common/io/BaseEncoding$Alphabet;
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/io/BaseEncoding$Alphabet;->hasLowerCase()Z
 
     move-result v0
@@ -525,7 +486,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     invoke-direct {p0}, Lcom/google/common/io/BaseEncoding$Alphabet;->hasUpperCase()Z
 
@@ -537,7 +497,6 @@
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->chars:[C
 
     array-length v0, v0
@@ -546,7 +505,6 @@
 
     const/4 v1, 0x0
 
-    .line 4
     :goto_0
     iget-object v2, p0, Lcom/google/common/io/BaseEncoding$Alphabet;->chars:[C
 
@@ -554,7 +512,6 @@
 
     if-ge v1, v3, :cond_1
 
-    .line 5
     aget-char v2, v2, v1
 
     invoke-static {v2}, Lcom/google/common/base/Ascii;->toUpperCase(C)C
@@ -567,7 +524,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     new-instance v1, Lcom/google/common/io/BaseEncoding$Alphabet;
 

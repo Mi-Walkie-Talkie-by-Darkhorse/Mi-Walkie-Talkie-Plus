@@ -1,6 +1,5 @@
 .class public final enum Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 .super Ljava/lang/Enum;
-.source "CannedAcl.java"
 
 
 # annotations
@@ -43,7 +42,6 @@
 .method static constructor <clinit>()V
     .locals 12
 
-    .line 1
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;->ALL_USERS:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;
@@ -58,7 +56,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->PUBLIC_READ:Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
-    .line 2
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;->ALL_USERS:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;
@@ -73,7 +70,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->PUBLIC_WRITE:Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
-    .line 3
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;->ALL_USERS:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;
@@ -88,7 +84,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->PUBLIC_READ_OBJECTS:Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
-    .line 4
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;->ALL_USERS:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;
@@ -103,7 +98,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->PUBLIC_SSO_WRITE:Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
-    .line 5
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;->AUTHENTICATED_USERS:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;
@@ -118,7 +112,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->AUTHENTICATED_READ:Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
-    .line 6
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;->AUTHENTICATED_USERS:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;
@@ -133,7 +126,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->AUTHENTICATED_WRITE:Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
-    .line 7
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;->AUTHENTICATED_USERS:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;
@@ -148,7 +140,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->AUTHENTICATED_READ_OBJECTS:Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
-    .line 8
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;->AUTHENTICATED_USERS:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;
@@ -167,7 +158,6 @@
 
     new-array v1, v1, [Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
-    .line 9
     sget-object v2, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->PUBLIC_READ:Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
     aput-object v2, v1, v3
@@ -214,13 +204,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->group:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;
 
-    .line 3
     iput-object p4, p0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->permission:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
     return-void
@@ -241,19 +228,16 @@
 
     const-string v0, ","
 
-    .line 1
     invoke-virtual {p0, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p0
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     array-length v1, p0
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 3
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -263,7 +247,6 @@
 
     aget-object v3, p0, v2
 
-    .line 4
     invoke-virtual {v3}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v3
@@ -272,7 +255,6 @@
 
     move-result-object v3
 
-    .line 5
     invoke-virtual {v3}, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->getGrant()Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Grant;
 
     move-result-object v3
@@ -290,7 +272,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -305,7 +286,6 @@
 .method public static values()[Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->$VALUES:[Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;
 
     invoke-virtual {v0}, [Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->clone()Ljava/lang/Object;
@@ -322,7 +302,6 @@
 .method public getGrant()Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Grant;
     .locals 4
 
-    .line 1
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Grant;
 
     iget-object v1, p0, Lcom/xiaomi/infra/galaxy/fds/acl/CannedAcl;->group:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$UserGroups;

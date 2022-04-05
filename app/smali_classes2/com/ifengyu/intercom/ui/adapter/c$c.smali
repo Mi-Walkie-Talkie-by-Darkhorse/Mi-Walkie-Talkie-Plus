@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/c$c;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "DiscoveryFragmentAdapter.java"
 
 
 # annotations
@@ -24,15 +23,12 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/adapter/c;Landroid/view/View;)V
     .locals 4
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/c$c;->b:Lcom/ifengyu/intercom/ui/adapter/c;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
     const v0, 0x7f090352
 
-    .line 3
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -43,10 +39,8 @@
 
     const/16 v0, 0x3e8
 
-    .line 4
     invoke-virtual {p2, v0}, Lcom/jude/rollviewpager/RollPagerView;->setAnimationDurtion(I)V
 
-    .line 5
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/c$c;->a:Lcom/jude/rollviewpager/RollPagerView;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/view/MyColorPointHintView;
@@ -71,7 +65,6 @@
 
     invoke-virtual {p2, v0}, Lcom/jude/rollviewpager/RollPagerView;->setHintView(Lcom/jude/rollviewpager/a;)V
 
-    .line 6
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/c$c;->a:Lcom/jude/rollviewpager/RollPagerView;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/adapter/c$c$a;

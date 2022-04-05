@@ -1,6 +1,5 @@
 .class final Lpl/droidsonroids/gif/e;
 .super Ljava/lang/Object;
-.source "GifViewUtils.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 
     const-string v2, "mipmap"
 
-    .line 1
     filled-new-array {v0, v1, v2}, [Ljava/lang/String;
 
     move-result-object v0
@@ -62,17 +60,14 @@
         .end annotation
     .end param
 
-    .line 16
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
     const/4 v1, 0x1
 
-    .line 17
     invoke-virtual {p0, p1, v0, v1}, Landroid/content/res/Resources;->getValue(ILandroid/util/TypedValue;Z)V
 
-    .line 18
     iget p1, v0, Landroid/util/TypedValue;->density:I
 
     if-nez p1, :cond_0
@@ -91,7 +86,6 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 19
     :goto_0
     invoke-virtual {p0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
@@ -122,31 +116,26 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/ImageView;->isInEditMode()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 2
     new-instance v0, Lpl/droidsonroids/gif/e$a;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lpl/droidsonroids/gif/e$a;-><init>(Landroid/widget/ImageView;Landroid/util/AttributeSet;II)V
 
-    .line 3
     iget p1, v0, Lpl/droidsonroids/gif/e$b;->b:I
 
     if-ltz p1, :cond_0
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
     invoke-static {p1, p2}, Lpl/droidsonroids/gif/e;->a(ILandroid/graphics/drawable/Drawable;)V
 
-    .line 5
     invoke-virtual {p0}, Landroid/widget/ImageView;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
@@ -156,7 +145,6 @@
     :cond_0
     return-object v0
 
-    .line 6
     :cond_1
     new-instance p0, Lpl/droidsonroids/gif/e$a;
 
@@ -168,12 +156,10 @@
 .method static a(ILandroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    .line 7
     instance-of v0, p1, Lpl/droidsonroids/gif/c;
 
     if-eqz v0, :cond_0
 
-    .line 8
     check-cast p1, Lpl/droidsonroids/gif/c;
 
     invoke-virtual {p1, p0}, Lpl/droidsonroids/gif/c;->a(I)V
@@ -187,7 +173,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 15
     :try_start_0
     new-instance v0, Lpl/droidsonroids/gif/c;
 
@@ -219,7 +204,6 @@
 .method static a(Landroid/widget/ImageView;ZI)Z
     .locals 4
 
-    .line 9
     invoke-virtual {p0}, Landroid/widget/ImageView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -228,13 +212,11 @@
 
     if-eqz v0, :cond_2
 
-    .line 10
     :try_start_0
     invoke-virtual {v0, p2}, Landroid/content/res/Resources;->getResourceTypeName(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 11
     sget-object v3, Lpl/droidsonroids/gif/e;->a:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -245,7 +227,6 @@
 
     return v1
 
-    .line 12
     :cond_0
     new-instance v2, Lpl/droidsonroids/gif/c;
 
@@ -253,12 +234,10 @@
 
     if-eqz p1, :cond_1
 
-    .line 13
     invoke-virtual {p0, v2}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_0
 
-    .line 14
     :cond_1
     invoke-virtual {p0, v2}, Landroid/widget/ImageView;->setBackground(Landroid/graphics/drawable/Drawable;)V
     :try_end_0

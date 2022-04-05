@@ -1,6 +1,5 @@
 .class Landroidx/activity/ComponentActivity$4;
 .super Ljava/lang/Object;
-.source "ComponentActivity.java"
 
 # interfaces
 .implements Landroidx/lifecycle/i;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/activity/ComponentActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/activity/ComponentActivity$4;->a:Landroidx/activity/ComponentActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,19 +44,16 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
 
     if-ne p2, p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Landroidx/activity/ComponentActivity$4;->a:Landroidx/activity/ComponentActivity;
 
     iget-object p1, p1, Landroidx/activity/ComponentActivity;->mContextAwareHelper:Landroidx/activity/d/a;
 
     invoke-virtual {p1}, Landroidx/activity/d/a;->a()V
 
-    .line 3
     iget-object p1, p0, Landroidx/activity/ComponentActivity$4;->a:Landroidx/activity/ComponentActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->isChangingConfigurations()Z
@@ -67,7 +62,6 @@
 
     if-nez p1, :cond_0
 
-    .line 4
     iget-object p1, p0, Landroidx/activity/ComponentActivity$4;->a:Landroidx/activity/ComponentActivity;
 
     invoke-virtual {p1}, Landroidx/activity/ComponentActivity;->getViewModelStore()Landroidx/lifecycle/y;

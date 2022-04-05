@@ -1,6 +1,5 @@
 .class final Lcom/google/common/escape/Platform$1;
 .super Ljava/lang/ThreadLocal;
-.source "Platform.java"
 
 
 # annotations
@@ -25,7 +24,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
 .method protected bridge synthetic initialValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/escape/Platform$1;->initialValue()[C
 
     move-result-object v0

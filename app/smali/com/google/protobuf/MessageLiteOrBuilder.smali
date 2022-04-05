@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/protobuf/MessageLiteOrBuilder;
 .super Ljava/lang/Object;
-.source "MessageLiteOrBuilder.java"
 
 
 # virtual methods

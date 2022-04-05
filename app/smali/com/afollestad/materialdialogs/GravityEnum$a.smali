@@ -1,6 +1,5 @@
 .class synthetic Lcom/afollestad/materialdialogs/GravityEnum$a;
 .super Ljava/lang/Object;
-.source "GravityEnum.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/afollestad/materialdialogs/GravityEnum;->values()[Lcom/afollestad/materialdialogs/GravityEnum;
 
     move-result-object v0

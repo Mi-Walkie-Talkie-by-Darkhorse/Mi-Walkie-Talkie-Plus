@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/primitives/Bytes;
 .super Ljava/lang/Object;
-.source "Bytes.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +25,6 @@
 .method static synthetic access$000([BBII)I
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/google/common/primitives/Bytes;->indexOf([BBII)I
 
     move-result p0
@@ -38,7 +35,6 @@
 .method static synthetic access$100([BBII)I
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/google/common/primitives/Bytes;->lastIndexOf([BBII)I
 
     move-result p0
@@ -57,19 +53,16 @@
         }
     .end annotation
 
-    .line 1
     array-length v0, p0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/google/common/primitives/Bytes$ByteArrayAsList;
 
@@ -81,7 +74,6 @@
 .method public static varargs concat([[B)[B
     .locals 7
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -95,7 +87,6 @@
 
     aget-object v4, p0, v2
 
-    .line 2
     array-length v4, v4
 
     add-int/2addr v3, v4
@@ -104,11 +95,9 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-array v0, v3, [B
 
-    .line 4
     array-length v2, p0
 
     const/4 v3, 0x0
@@ -120,12 +109,10 @@
 
     aget-object v5, p0, v3
 
-    .line 5
     array-length v6, v5
 
     invoke-static {v5, v1, v0, v4, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 6
     array-length v5, v5
 
     add-int/2addr v4, v5
@@ -141,7 +128,6 @@
 .method public static contains([BB)Z
     .locals 4
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -171,10 +157,8 @@
 .method private static copyOf([BI)[B
     .locals 2
 
-    .line 1
     new-array v0, p1, [B
 
-    .line 2
     array-length v1, p0
 
     invoke-static {v1, p1}, Ljava/lang/Math;->min(II)I
@@ -207,7 +191,6 @@
     :goto_0
     new-array v3, v0, [Ljava/lang/Object;
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -230,7 +213,6 @@
     :goto_1
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 2
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -241,7 +223,6 @@
 
     invoke-static {v2, v1, v0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     array-length v0, p0
 
     if-ge v0, p1, :cond_2
@@ -265,7 +246,6 @@
 .method public static indexOf([BB)I
     .locals 2
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -283,7 +263,6 @@
     :goto_0
     if-ge p2, p3, :cond_1
 
-    .line 2
     aget-byte v0, p0, p2
 
     if-ne v0, p1, :cond_0
@@ -306,15 +285,12 @@
 
     const-string v0, "array"
 
-    .line 3
     invoke-static {p0, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "target"
 
-    .line 4
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -326,7 +302,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 6
     :goto_0
     array-length v2, p0
 
@@ -340,7 +315,6 @@
 
     const/4 v2, 0x0
 
-    .line 7
     :goto_1
     array-length v3, p1
 
@@ -348,7 +322,6 @@
 
     add-int v3, v0, v2
 
-    .line 8
     aget-byte v3, p0, v3
 
     aget-byte v4, p1, v2
@@ -376,7 +349,6 @@
 .method public static lastIndexOf([BB)I
     .locals 2
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -396,7 +368,6 @@
     :goto_0
     if-lt p3, p2, :cond_1
 
-    .line 2
     aget-byte v0, p0, p3
 
     if-ne v0, p1, :cond_0
@@ -426,12 +397,10 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/primitives/Bytes$ByteArrayAsList;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, Lcom/google/common/primitives/Bytes$ByteArrayAsList;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/Bytes$ByteArrayAsList;->toByteArray()[B
@@ -440,16 +409,13 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-interface {p0}, Ljava/util/Collection;->toArray()[Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 4
     array-length v0, p0
 
-    .line 5
     new-array v1, v0, [B
 
     const/4 v2, 0x0
@@ -457,7 +423,6 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 6
     aget-object v3, p0, v2
 
     invoke-static {v3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;

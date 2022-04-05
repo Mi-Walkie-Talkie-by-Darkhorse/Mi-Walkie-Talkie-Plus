@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$d;
 .super Ljava/lang/Object;
-.source "DialogPlus.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$d;->a:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$d;->a:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;->f(Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;)Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$i;
@@ -49,7 +46,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$d;->a:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;
 

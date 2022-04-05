@@ -1,6 +1,5 @@
 .class Landroidx/core/provider/e$c;
 .super Ljava/lang/Object;
-.source "FontRequestWorker.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -40,7 +39,6 @@
 .method constructor <init>(Ljava/lang/String;Landroid/content/Context;Landroidx/core/provider/d;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/core/provider/e$c;->a:Ljava/lang/String;
 
     iput-object p2, p0, Landroidx/core/provider/e$c;->b:Landroid/content/Context;
@@ -59,7 +57,6 @@
 .method public call()Landroidx/core/provider/e$e;
     .locals 4
 
-    .line 2
     iget-object v0, p0, Landroidx/core/provider/e$c;->a:Ljava/lang/String;
 
     iget-object v1, p0, Landroidx/core/provider/e$c;->b:Landroid/content/Context;
@@ -83,7 +80,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroidx/core/provider/e$c;->call()Landroidx/core/provider/e$e;
 
     move-result-object v0

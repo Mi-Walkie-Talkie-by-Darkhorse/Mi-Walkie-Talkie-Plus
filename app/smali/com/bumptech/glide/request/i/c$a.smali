@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/request/i/c$a;
 .super Ljava/lang/Object;
-.source "NoTransition.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/request/i/e;
@@ -32,7 +31,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object p1, Lcom/bumptech/glide/request/i/c;->a:Lcom/bumptech/glide/request/i/c;
 
     return-object p1

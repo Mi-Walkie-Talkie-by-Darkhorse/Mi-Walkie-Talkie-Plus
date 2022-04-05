@@ -1,6 +1,5 @@
 .class final Landroidx/appcompat/app/i$d;
 .super Ljava/lang/Object;
-.source "ToolbarActionBar.java"
 
 # interfaces
 .implements Landroidx/appcompat/view/menu/f$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/app/i;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/i$d;->a:Landroidx/appcompat/app/i;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -58,14 +56,12 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/app/i$d;->a:Landroidx/appcompat/app/i;
 
     iget-object v1, v0, Landroidx/appcompat/app/i;->c:Landroid/view/Window$Callback;
 
     if-eqz v1, :cond_1
 
-    .line 2
     iget-object v0, v0, Landroidx/appcompat/app/i;->a:Landroidx/appcompat/widget/p;
 
     invoke-interface {v0}, Landroidx/appcompat/widget/p;->a()Z
@@ -76,7 +72,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Landroidx/appcompat/app/i$d;->a:Landroidx/appcompat/app/i;
 
     iget-object v0, v0, Landroidx/appcompat/app/i;->c:Landroid/view/Window$Callback;
@@ -85,7 +80,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/app/i$d;->a:Landroidx/appcompat/app/i;
 
@@ -101,7 +95,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Landroidx/appcompat/app/i$d;->a:Landroidx/appcompat/app/i;
 
     iget-object v0, v0, Landroidx/appcompat/app/i;->c:Landroid/view/Window$Callback;

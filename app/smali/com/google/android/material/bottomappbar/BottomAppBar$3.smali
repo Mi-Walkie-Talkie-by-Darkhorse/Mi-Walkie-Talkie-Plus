@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/bottomappbar/BottomAppBar$3;
 .super Ljava/lang/Object;
-.source "BottomAppBar.java"
 
 # interfaces
 .implements Lcom/google/android/material/internal/ViewUtils$OnApplyWindowInsetsListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +46,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-static {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$600(Lcom/google/android/material/bottomappbar/BottomAppBar;)Z
@@ -57,7 +54,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-virtual {p2}, Landroidx/core/view/WindowInsetsCompat;->e()I
@@ -66,7 +62,6 @@
 
     invoke-static {p1, p3}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$702(Lcom/google/android/material/bottomappbar/BottomAppBar;I)I
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
@@ -80,7 +75,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 4
     iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-static {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$900(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
@@ -100,7 +94,6 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 5
     :goto_0
     iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
@@ -115,7 +108,6 @@
     :cond_2
     const/4 p1, 0x0
 
-    .line 6
     :goto_1
     iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
@@ -125,7 +117,6 @@
 
     if-eqz v1, :cond_4
 
-    .line 7
     iget-object v1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-static {v1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1100(Lcom/google/android/material/bottomappbar/BottomAppBar;)I
@@ -143,7 +134,6 @@
     :cond_3
     const/4 p3, 0x0
 
-    .line 8
     :goto_2
     iget-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
@@ -160,18 +150,15 @@
 
     if-eqz v0, :cond_6
 
-    .line 9
     :cond_5
     iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-static {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1200(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
 
-    .line 10
     iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-static {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1300(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
 
-    .line 11
     iget-object p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$3;->this$0:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-static {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->access$1400(Lcom/google/android/material/bottomappbar/BottomAppBar;)V

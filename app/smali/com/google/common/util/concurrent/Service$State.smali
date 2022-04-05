@@ -1,6 +1,5 @@
 .class public abstract enum Lcom/google/common/util/concurrent/Service$State;
 .super Ljava/lang/Enum;
-.source "Service.java"
 
 
 # annotations
@@ -45,7 +44,6 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Service$State$1;
 
     const/4 v1, 0x0
@@ -56,7 +54,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/Service$State;->NEW:Lcom/google/common/util/concurrent/Service$State;
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/Service$State$2;
 
     const/4 v2, 0x1
@@ -67,7 +64,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/Service$State;->STARTING:Lcom/google/common/util/concurrent/Service$State;
 
-    .line 3
     new-instance v0, Lcom/google/common/util/concurrent/Service$State$3;
 
     const/4 v3, 0x2
@@ -78,7 +74,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/Service$State;->RUNNING:Lcom/google/common/util/concurrent/Service$State;
 
-    .line 4
     new-instance v0, Lcom/google/common/util/concurrent/Service$State$4;
 
     const/4 v4, 0x3
@@ -89,7 +84,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/Service$State;->STOPPING:Lcom/google/common/util/concurrent/Service$State;
 
-    .line 5
     new-instance v0, Lcom/google/common/util/concurrent/Service$State$5;
 
     const/4 v5, 0x4
@@ -100,7 +94,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/Service$State;->TERMINATED:Lcom/google/common/util/concurrent/Service$State;
 
-    .line 6
     new-instance v0, Lcom/google/common/util/concurrent/Service$State$6;
 
     const/4 v6, 0x5
@@ -115,7 +108,6 @@
 
     new-array v7, v7, [Lcom/google/common/util/concurrent/Service$State;
 
-    .line 7
     sget-object v8, Lcom/google/common/util/concurrent/Service$State;->NEW:Lcom/google/common/util/concurrent/Service$State;
 
     aput-object v8, v7, v1
@@ -151,7 +143,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -160,7 +151,6 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/common/util/concurrent/Service$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/Service$State;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -169,7 +159,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/util/concurrent/Service$State;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/common/util/concurrent/Service$State;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -184,7 +173,6 @@
 .method public static values()[Lcom/google/common/util/concurrent/Service$State;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->$VALUES:[Lcom/google/common/util/concurrent/Service$State;
 
     invoke-virtual {v0}, [Lcom/google/common/util/concurrent/Service$State;->clone()Ljava/lang/Object;

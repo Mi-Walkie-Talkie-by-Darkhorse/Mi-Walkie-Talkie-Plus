@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$c;
 .super Ljava/lang/Object;
-.source "CircleIndicator.java"
 
 # interfaces
 .implements Landroid/view/animation/Interpolator;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$c;->a:Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$c;-><init>(Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;)V
 
     return-void
@@ -51,7 +48,6 @@
 
     sub-float/2addr v0, p1
 
-    .line 1
     invoke-static {v0}, Ljava/lang/Math;->abs(F)F
 
     move-result p1

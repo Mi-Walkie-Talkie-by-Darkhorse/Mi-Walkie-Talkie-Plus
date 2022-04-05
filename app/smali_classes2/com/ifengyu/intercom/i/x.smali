@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/x;
 .super Ljava/lang/Object;
-.source "HttpUIHelper.java"
 
 
 # direct methods

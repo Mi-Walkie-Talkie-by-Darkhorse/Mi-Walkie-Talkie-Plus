@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/engine/y/h;
 .super Ljava/lang/Object;
-.source "MemoryCache.java"
 
 
 # annotations

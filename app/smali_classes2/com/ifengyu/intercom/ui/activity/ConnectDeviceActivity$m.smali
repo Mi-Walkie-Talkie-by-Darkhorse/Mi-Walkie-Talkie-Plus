@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$m;
 .super Ljava/lang/Object;
-.source "ConnectDeviceActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$m;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$m;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->b(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$m;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V

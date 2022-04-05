@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowablePublish;
 .super Lio/reactivex/flowables/ConnectableFlowable;
-.source "FlowablePublish.java"
 
 # interfaces
 .implements Lio/reactivex/internal/fuseable/HasUpstreamPublisher;
@@ -80,19 +79,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/flowables/ConnectableFlowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowablePublish;->onSubscribe:Lc/a/b;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/flowable/FlowablePublish;->source:Lio/reactivex/Flowable;
 
-    .line 4
     iput-object p3, p0, Lio/reactivex/internal/operators/flowable/FlowablePublish;->current:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 5
     iput p4, p0, Lio/reactivex/internal/operators/flowable/FlowablePublish;->bufferSize:I
 
     return-void
@@ -112,17 +106,14 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    .line 2
     new-instance v1, Lio/reactivex/internal/operators/flowable/FlowablePublish$FlowablePublisher;
 
     invoke-direct {v1, v0, p1}, Lio/reactivex/internal/operators/flowable/FlowablePublish$FlowablePublisher;-><init>(Ljava/util/concurrent/atomic/AtomicReference;I)V
 
-    .line 3
     new-instance v2, Lio/reactivex/internal/operators/flowable/FlowablePublish;
 
     invoke-direct {v2, v1, p0, v0, p1}, Lio/reactivex/internal/operators/flowable/FlowablePublish;-><init>(Lc/a/b;Lio/reactivex/Flowable;Ljava/util/concurrent/atomic/AtomicReference;I)V
@@ -148,7 +139,6 @@
         }
     .end annotation
 
-    .line 1
     :goto_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowablePublish;->current:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -160,14 +150,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lio/reactivex/internal/operators/flowable/FlowablePublish$PublishSubscriber;->isDisposed()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 3
     :cond_0
     new-instance v1, Lio/reactivex/internal/operators/flowable/FlowablePublish$PublishSubscriber;
 
@@ -177,7 +165,6 @@
 
     invoke-direct {v1, v2, v3}, Lio/reactivex/internal/operators/flowable/FlowablePublish$PublishSubscriber;-><init>(Ljava/util/concurrent/atomic/AtomicReference;I)V
 
-    .line 4
     iget-object v2, p0, Lio/reactivex/internal/operators/flowable/FlowablePublish;->current:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v2, v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -191,7 +178,6 @@
     :cond_1
     move-object v0, v1
 
-    .line 5
     :cond_2
     iget-object v1, v0, Lio/reactivex/internal/operators/flowable/FlowablePublish$PublishSubscriber;->shouldConnect:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -218,7 +204,6 @@
     :cond_3
     const/4 v2, 0x0
 
-    .line 6
     :goto_1
     :try_start_0
     invoke-interface {p1, v0}, Lio/reactivex/functions/Consumer;->accept(Ljava/lang/Object;)V
@@ -227,7 +212,6 @@
 
     if-eqz v2, :cond_4
 
-    .line 7
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowablePublish;->source:Lio/reactivex/Flowable;
 
     invoke-virtual {p1, v0}, Lio/reactivex/Flowable;->subscribe(Lio/reactivex/FlowableSubscriber;)V
@@ -238,10 +222,8 @@
     :catchall_0
     move-exception p1
 
-    .line 8
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 9
     invoke-static {p1}, Lio/reactivex/internal/util/ExceptionHelper;->wrapOrThrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     move-result-object p1
@@ -259,7 +241,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowablePublish;->source:Lio/reactivex/Flowable;
 
     return-object v0
@@ -275,7 +256,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowablePublish;->onSubscribe:Lc/a/b;
 
     invoke-interface {v0, p1}, Lc/a/b;->subscribe(Lc/a/c;)V

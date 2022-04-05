@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/engine/x/i;
 .super Ljava/lang/Object;
-.source "IntegerArrayAdapter.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/x/a;
@@ -20,7 +19,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +37,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, [I
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/engine/x/i;->a([I)I
@@ -52,7 +49,6 @@
 .method public a([I)I
     .locals 0
 
-    .line 2
     array-length p1, p1
 
     return p1
@@ -69,7 +65,6 @@
 .method public bridge synthetic newArray(I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/engine/x/i;->newArray(I)[I
 
     move-result-object p1
@@ -80,7 +75,6 @@
 .method public newArray(I)[I
     .locals 0
 
-    .line 2
     new-array p1, p1, [I
 
     return-object p1

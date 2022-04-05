@@ -1,6 +1,5 @@
 .class final Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;
 .super Ljava/lang/Object;
-.source "GeneratedMessageLite.java"
 
 # interfaces
 .implements Lcom/google/protobuf/FieldSet$FieldDescriptorLite;
@@ -58,22 +57,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->enumTypeMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
-    .line 3
     iput p2, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->number:I
 
-    .line 4
     iput-object p3, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->type:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 5
     iput-boolean p4, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->isRepeated:Z
 
-    .line 6
     iput-boolean p5, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->isPacked:Z
 
     return-void
@@ -84,7 +77,6 @@
 .method public compareTo(Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;)I
     .locals 1
 
-    .line 2
     iget v0, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->number:I
 
     iget p1, p1, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->number:I
@@ -97,7 +89,6 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;
 
     invoke-virtual {p0, p1}, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->compareTo(Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;)I
@@ -117,7 +108,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->enumTypeMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
     return-object v0
@@ -126,7 +116,6 @@
 .method public getLiteJavaType()Lcom/google/protobuf/WireFormat$JavaType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->type:Lcom/google/protobuf/WireFormat$FieldType;
 
     invoke-virtual {v0}, Lcom/google/protobuf/WireFormat$FieldType;->getJavaType()Lcom/google/protobuf/WireFormat$JavaType;
@@ -139,7 +128,6 @@
 .method public getLiteType()Lcom/google/protobuf/WireFormat$FieldType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->type:Lcom/google/protobuf/WireFormat$FieldType;
 
     return-object v0
@@ -148,7 +136,6 @@
 .method public getNumber()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->number:I
 
     return v0
@@ -157,7 +144,6 @@
 .method public internalMergeFrom(Lcom/google/protobuf/MessageLite$Builder;Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/MessageLite$Builder;
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/protobuf/GeneratedMessageLite$Builder;
 
     check-cast p2, Lcom/google/protobuf/GeneratedMessageLite;
@@ -172,7 +158,6 @@
 .method public isPacked()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->isPacked:Z
 
     return v0
@@ -181,7 +166,6 @@
 .method public isRepeated()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$ExtensionDescriptor;->isRepeated:Z
 
     return v0

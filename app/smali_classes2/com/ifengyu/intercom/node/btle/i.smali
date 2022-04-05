@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/btle/i;
 .super Ljava/lang/Object;
-.source "DataSender.java"
 
 
 # instance fields
@@ -34,10 +33,8 @@
 .method constructor <init>(Landroid/content/Context;Lcom/ifengyu/intercom/node/btle/BtleCentralService;Landroid/bluetooth/BluetoothGattCharacteristic;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance p1, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {p1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
@@ -46,32 +43,24 @@
 
     const/4 p1, 0x0
 
-    .line 3
     iput-boolean p1, p0, Lcom/ifengyu/intercom/node/btle/i;->d:Z
 
-    .line 4
     iput p1, p0, Lcom/ifengyu/intercom/node/btle/i;->e:I
 
-    .line 5
     iput-boolean p1, p0, Lcom/ifengyu/intercom/node/btle/i;->f:Z
 
-    .line 6
     iput p1, p0, Lcom/ifengyu/intercom/node/btle/i;->g:I
 
-    .line 7
     new-instance p1, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {p1}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btle/i;->h:Ljava/util/concurrent/LinkedBlockingQueue;
 
-    .line 8
     iput-object p2, p0, Lcom/ifengyu/intercom/node/btle/i;->b:Lcom/ifengyu/intercom/node/btle/BtleCentralService;
 
-    .line 9
     iput-object p3, p0, Lcom/ifengyu/intercom/node/btle/i;->c:Landroid/bluetooth/BluetoothGattCharacteristic;
 
-    .line 10
     new-instance p1, Lcom/ifengyu/intercom/node/btle/g;
 
     const-string p2, "DataTransport"
@@ -94,7 +83,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/node/btle/i;[B)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/btle/i;->d([B)V
 
     return-void
@@ -109,38 +97,32 @@
 
     sub-int/2addr p1, v0
 
-    .line 22
     new-array p1, p1, [B
 
     const/4 v1, 0x0
 
     const/4 v2, -0x2
 
-    .line 23
     aput-byte v2, p1, v1
 
     const/4 v1, 0x1
 
-    .line 24
     aput-byte v1, p1, v1
 
     int-to-long v1, p2
 
     const/4 p2, 0x2
 
-    .line 25
     invoke-static {p1, v1, v2, p2, p2}, Lcom/ifengyu/intercom/node/transport/e;->a([BJII)V
 
     int-to-long v1, p3
 
-    .line 26
     invoke-static {p1, v1, v2, v0, p2}, Lcom/ifengyu/intercom/node/transport/e;->a([BJII)V
 
     int-to-long p3, p4
 
     const/4 v0, 0x6
 
-    .line 27
     invoke-static {p1, p3, p4, v0, p2}, Lcom/ifengyu/intercom/node/transport/e;->a([BJII)V
 
     return-object p1
@@ -154,12 +136,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->d([B)I
 
     move-result p1
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/TransMode;->a(I)Z
 
     move-result v0
@@ -168,7 +148,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -187,12 +166,10 @@
 
     invoke-static {v2, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/TransMode;->b(I)Lcom/ifengyu/intercom/node/transport/TransMode;
 
     move-result-object v0
 
-    .line 5
     sget-object v3, Lcom/ifengyu/intercom/node/transport/TransMode;->a:Lcom/ifengyu/intercom/node/transport/TransMode;
 
     if-ne v0, v3, :cond_0
@@ -201,7 +178,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     sget-object v3, Lcom/ifengyu/intercom/node/transport/TransMode;->b:Lcom/ifengyu/intercom/node/transport/TransMode;
 
@@ -211,7 +187,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -229,14 +204,12 @@
 
     invoke-static {v2, v0}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 8
     new-instance v0, Ljava/lang/InterruptedException;
 
     const/4 v2, 0x1
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 9
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object p1
@@ -266,12 +239,10 @@
         }
     .end annotation
 
-    .line 20
     iget-boolean v0, p0, Lcom/ifengyu/intercom/node/btle/i;->d:Z
 
     if-eqz v0, :cond_1
 
-    .line 21
     iget v0, p0, Lcom/ifengyu/intercom/node/btle/i;->e:I
 
     const/4 v1, 0x3
@@ -280,12 +251,10 @@
 
     const/4 v0, 0x1
 
-    .line 22
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/i;->e:I
 
     goto :goto_0
 
-    .line 23
     :cond_0
     new-instance v0, Ljava/io/IOException;
 
@@ -295,7 +264,6 @@
 
     throw v0
 
-    .line 24
     :cond_1
     :goto_0
     iget-boolean v0, p0, Lcom/ifengyu/intercom/node/btle/i;->d:Z
@@ -317,7 +285,6 @@
 
     if-eqz p3, :cond_2
 
-    .line 10
     iget p3, p0, Lcom/ifengyu/intercom/node/btle/i;->g:I
 
     const/4 v2, 0x1
@@ -338,7 +305,6 @@
     :goto_0
     invoke-static {p3}, Lcom/ifengyu/intercom/i/o;->a(Z)V
 
-    .line 11
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/btle/i;->b([B)I
 
     move-result p3
@@ -351,7 +317,6 @@
 
     sub-int/2addr p2, v5
 
-    .line 12
     array-length v6, p1
 
     iget v7, p0, Lcom/ifengyu/intercom/node/btle/i;->g:I
@@ -360,21 +325,18 @@
 
     move-result-object v6
 
-    .line 13
     array-length v7, p1
 
     sub-int/2addr v7, v5
 
     invoke-static {p1, v5, v6, v4, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 14
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 15
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -409,7 +371,6 @@
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 16
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -430,7 +391,6 @@
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 17
     :cond_1
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/i;->g:I
 
@@ -442,7 +402,6 @@
 
     return-object v6
 
-    .line 18
     :cond_2
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
@@ -450,7 +409,6 @@
 
     if-eqz p2, :cond_3
 
-    .line 19
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -480,7 +438,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/i;->i:Ljava/util/concurrent/ExecutorService;
 
     new-instance v1, Lcom/ifengyu/intercom/node/btle/i$a;
@@ -502,7 +459,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->c()Z
 
     move-result v0
@@ -517,7 +473,6 @@
 
     if-eqz p3, :cond_1
 
-    .line 2
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -541,7 +496,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -562,14 +516,12 @@
 
     invoke-static {v2, v0}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     :cond_3
     :goto_0
     invoke-direct {p0, p1, p2, p3}, Lcom/ifengyu/intercom/node/btle/i;->b([BIZ)[B
 
     move-result-object p1
 
-    .line 5
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/btle/i;->e([B)V
 
     return-void
@@ -578,7 +530,6 @@
 .method private c()[B
     .locals 1
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/i;->h:Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-virtual {v0}, Ljava/util/concurrent/LinkedBlockingQueue;->isEmpty()Z
@@ -591,7 +542,6 @@
 
     return-object v0
 
-    .line 8
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/i;->h:Ljava/util/concurrent/LinkedBlockingQueue;
 
@@ -611,22 +561,18 @@
 
     const-string v1, "writeCharacteristic"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-boolean v1, p0, Lcom/ifengyu/intercom/node/btle/i;->d:Z
 
     if-eqz v1, :cond_0
 
     const-string p1, "In lame duck mode. Ignoring write"
 
-    .line 3
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
-    .line 4
     :cond_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -636,7 +582,6 @@
 
     return-void
 
-    .line 5
     :cond_1
     new-instance v0, Landroid/bluetooth/BluetoothGattCharacteristic;
 
@@ -646,10 +591,8 @@
 
     invoke-direct {v0, v1, v2, v2}, Landroid/bluetooth/BluetoothGattCharacteristic;-><init>(Ljava/util/UUID;II)V
 
-    .line 6
     invoke-virtual {v0, p1}, Landroid/bluetooth/BluetoothGattCharacteristic;->setValue([B)Z
 
-    .line 7
     :try_start_0
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/i;->b:Lcom/ifengyu/intercom/node/btle/BtleCentralService;
 
@@ -668,7 +611,6 @@
     :catch_0
     move-exception p1
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/i;->b:Lcom/ifengyu/intercom/node/btle/BtleCentralService;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/node/btle/BtleCentralService;->a(Ljava/lang/Exception;)V
@@ -680,7 +622,6 @@
 .method private e([B)V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->c()Z
 
     move-result v0
@@ -689,7 +630,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -716,7 +656,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     :cond_1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/node/btle/i;->d:Z
 
@@ -724,12 +663,10 @@
 
     const-string p1, "In lame duck mode. Ignoring write"
 
-    .line 4
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
-    .line 5
     :cond_2
     iget-boolean v0, p0, Lcom/ifengyu/intercom/node/btle/i;->f:Z
 
@@ -737,10 +674,8 @@
 
     const-string v0, "writeOrEnqueue: ble is busy, so we put data into buffer."
 
-    .line 6
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/i;->h:Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/LinkedBlockingQueue;->add(Ljava/lang/Object;)Z
@@ -750,10 +685,8 @@
     :cond_3
     const/4 v0, 0x1
 
-    .line 8
     iput-boolean v0, p0, Lcom/ifengyu/intercom/node/btle/i;->f:Z
 
-    .line 9
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/btle/i;->c([B)V
 
     :goto_1
@@ -765,20 +698,17 @@
 .method a()V
     .locals 2
 
-    .line 18
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/i;->a:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
     const/4 v0, 0x1
 
-    .line 19
     :try_start_0
     iput-boolean v0, p0, Lcom/ifengyu/intercom/node/btle/i;->d:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 20
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/i;->a:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -792,19 +722,16 @@
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 21
     throw v0
 .end method
 
 .method a(Landroid/bluetooth/BluetoothGattCharacteristic;)V
     .locals 3
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/i;->a:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 8
     :try_start_0
     iget-boolean p1, p0, Lcom/ifengyu/intercom/node/btle/i;->d:Z
     :try_end_0
@@ -817,12 +744,10 @@
     :try_start_1
     const-string p1, "Ignoring onCharacteristicWrite as we are in lame duck mode"
 
-    .line 9
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->e(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 10
     :goto_0
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/i;->a:Ljava/util/concurrent/locks/Lock;
 
@@ -830,7 +755,6 @@
 
     return-void
 
-    .line 11
     :cond_0
     :try_start_2
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/i;->c()[B
@@ -841,12 +765,10 @@
 
     const/4 p1, 0x0
 
-    .line 12
     iput-boolean p1, p0, Lcom/ifengyu/intercom/node/btle/i;->f:Z
 
     goto :goto_0
 
-    .line 13
     :cond_1
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
@@ -854,7 +776,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 14
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -875,13 +796,11 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 15
     :cond_2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/btle/i;->c([B)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 16
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/i;->a:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -895,14 +814,12 @@
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 17
     throw p1
 .end method
 
 .method public a([B)V
     .locals 0
 
-    .line 6
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/btle/i;->e([B)V
 
     return-void
@@ -916,7 +833,6 @@
         }
     .end annotation
 
-    .line 2
     :try_start_0
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/i;->b()Z
 
@@ -928,12 +844,10 @@
 
     const-string p2, "write: dropping write as we are in lame duck mode"
 
-    .line 3
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-direct {p0, p1, p2, p3}, Lcom/ifengyu/intercom/node/btle/i;->c([BIZ)V
     :try_end_0
@@ -945,7 +859,6 @@
     :catch_0
     move-exception p1
 
-    .line 5
     new-instance p2, Ljava/io/IOException;
 
     invoke-direct {p2, p1}, Ljava/io/IOException;-><init>(Ljava/lang/Throwable;)V
@@ -956,34 +869,27 @@
 .method b(Landroid/bluetooth/BluetoothGattCharacteristic;)V
     .locals 1
 
-    .line 25
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/i;->h:Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-virtual {v0}, Ljava/util/concurrent/LinkedBlockingQueue;->clear()V
 
-    .line 26
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btle/i;->c:Landroid/bluetooth/BluetoothGattCharacteristic;
 
-    .line 27
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/i;->a:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->lock()V
 
     const/4 p1, 0x0
 
-    .line 28
     :try_start_0
     iput-boolean p1, p0, Lcom/ifengyu/intercom/node/btle/i;->d:Z
 
-    .line 29
     iput-boolean p1, p0, Lcom/ifengyu/intercom/node/btle/i;->f:Z
 
-    .line 30
     iput p1, p0, Lcom/ifengyu/intercom/node/btle/i;->e:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 31
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/i;->a:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p1}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -997,6 +903,5 @@
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 32
     throw p1
 .end method

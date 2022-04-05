@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/lifecycle/i;
 .super Ljava/lang/Object;
-.source "LifecycleEventObserver.java"
 
 # interfaces
 .implements Landroidx/lifecycle/j;

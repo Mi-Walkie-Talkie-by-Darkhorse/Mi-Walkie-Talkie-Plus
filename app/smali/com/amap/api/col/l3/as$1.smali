@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/as$1;
 .super Ljava/lang/Object;
-.source "MultiPointOverlayDelegate.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/as;Lcom/amap/api/col/l3/aq;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/as$1;->c:Lcom/amap/api/col/l3/as;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/as$1;->a:Lcom/amap/api/col/l3/aq;
@@ -46,7 +44,6 @@
 .method public final run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/as$1;->a:Lcom/amap/api/col/l3/aq;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/aq;->b()Z
@@ -57,13 +54,11 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/as$1;->a:Lcom/amap/api/col/l3/aq;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/aq;->a()V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/as$1;->c:Lcom/amap/api/col/l3/as;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/as;->a(Lcom/amap/api/col/l3/as;)Ljava/util/List;

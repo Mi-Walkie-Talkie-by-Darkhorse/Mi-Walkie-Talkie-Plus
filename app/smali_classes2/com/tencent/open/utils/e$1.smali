@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/utils/e$1;
 .super Ljava/lang/Thread;
-.source "ProGuard"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/tencent/open/utils/e;Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/utils/e$1;->b:Lcom/tencent/open/utils/e;
 
     iput-object p2, p0, Lcom/tencent/open/utils/e$1;->a:Landroid/os/Bundle;
@@ -39,7 +37,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/tencent/open/utils/e$1;->b:Lcom/tencent/open/utils/e;
 
@@ -57,15 +54,12 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v0, v0, Lcom/tencent/open/utils/i$a;->a:Ljava/lang/String;
 
-    .line 3
     invoke-static {v0}, Lcom/tencent/open/utils/i;->d(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    .line 4
     iget-object v1, p0, Lcom/tencent/open/utils/e$1;->b:Lcom/tencent/open/utils/e;
 
     invoke-static {v1, v0}, Lcom/tencent/open/utils/e;->a(Lcom/tencent/open/utils/e;Lorg/json/JSONObject;)V
@@ -77,10 +71,8 @@
     :catch_0
     move-exception v0
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 6
     :goto_0
     iget-object v0, p0, Lcom/tencent/open/utils/e$1;->b:Lcom/tencent/open/utils/e;
 

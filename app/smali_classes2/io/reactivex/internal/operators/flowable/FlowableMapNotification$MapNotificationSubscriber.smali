@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableMapNotification$MapNotificationSubscriber;
 .super Lio/reactivex/internal/subscribers/SinglePostCompleteSubscriber;
-.source "FlowableMapNotification.java"
 
 
 # annotations
@@ -80,16 +79,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/subscribers/SinglePostCompleteSubscriber;-><init>(Lc/a/c;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/flowable/FlowableMapNotification$MapNotificationSubscriber;->onNextMapper:Lio/reactivex/functions/Function;
 
-    .line 3
     iput-object p3, p0, Lio/reactivex/internal/operators/flowable/FlowableMapNotification$MapNotificationSubscriber;->onErrorMapper:Lio/reactivex/functions/Function;
 
-    .line 4
     iput-object p4, p0, Lio/reactivex/internal/operators/flowable/FlowableMapNotification$MapNotificationSubscriber;->onCompleteSupplier:Ljava/util/concurrent/Callable;
 
     return-void
@@ -100,7 +95,6 @@
 .method public onComplete()V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableMapNotification$MapNotificationSubscriber;->onCompleteSupplier:Ljava/util/concurrent/Callable;
 
@@ -116,7 +110,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     invoke-virtual {p0, v0}, Lio/reactivex/internal/subscribers/SinglePostCompleteSubscriber;->complete(Ljava/lang/Object;)V
 
     return-void
@@ -124,10 +117,8 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 4
     iget-object v1, p0, Lio/reactivex/internal/subscribers/SinglePostCompleteSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v1, v0}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
@@ -138,7 +129,6 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 5
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableMapNotification$MapNotificationSubscriber;->onErrorMapper:Lio/reactivex/functions/Function;
 
@@ -154,7 +144,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     invoke-virtual {p0, p1}, Lio/reactivex/internal/subscribers/SinglePostCompleteSubscriber;->complete(Ljava/lang/Object;)V
 
     return-void
@@ -162,10 +151,8 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 4
     iget-object v1, p0, Lio/reactivex/internal/subscribers/SinglePostCompleteSubscriber;->downstream:Lc/a/c;
 
     new-instance v2, Lio/reactivex/exceptions/CompositeException;
@@ -197,7 +184,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableMapNotification$MapNotificationSubscriber;->onNextMapper:Lio/reactivex/functions/Function;
 
@@ -213,7 +199,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     iget-wide v0, p0, Lio/reactivex/internal/subscribers/SinglePostCompleteSubscriber;->produced:J
 
     const-wide/16 v2, 0x1
@@ -222,7 +207,6 @@
 
     iput-wide v0, p0, Lio/reactivex/internal/subscribers/SinglePostCompleteSubscriber;->produced:J
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/subscribers/SinglePostCompleteSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0, p1}, Lc/a/c;->onNext(Ljava/lang/Object;)V
@@ -232,10 +216,8 @@
     :catchall_0
     move-exception p1
 
-    .line 4
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 5
     iget-object v0, p0, Lio/reactivex/internal/subscribers/SinglePostCompleteSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V

@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$BufferedReplayCallable;
 .super Ljava/lang/Object;
-.source "FlowableInternalHelper.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -53,13 +52,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$BufferedReplayCallable;->parent:Lio/reactivex/Flowable;
 
-    .line 3
     iput p2, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$BufferedReplayCallable;->bufferSize:I
 
     return-void
@@ -77,7 +73,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$BufferedReplayCallable;->parent:Lio/reactivex/Flowable;
 
     iget v1, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$BufferedReplayCallable;->bufferSize:I
@@ -97,7 +92,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$BufferedReplayCallable;->call()Lio/reactivex/flowables/ConnectableFlowable;
 
     move-result-object v0

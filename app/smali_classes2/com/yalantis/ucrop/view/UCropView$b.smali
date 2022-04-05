@@ -1,6 +1,5 @@
 .class Lcom/yalantis/ucrop/view/UCropView$b;
 .super Ljava/lang/Object;
-.source "UCropView.java"
 
 # interfaces
 .implements Lcom/yalantis/ucrop/c/d;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/yalantis/ucrop/view/UCropView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/view/UCropView$b;->a:Lcom/yalantis/ucrop/view/UCropView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a(Landroid/graphics/RectF;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/UCropView$b;->a:Lcom/yalantis/ucrop/view/UCropView;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/view/UCropView;->b(Lcom/yalantis/ucrop/view/UCropView;)Lcom/yalantis/ucrop/view/GestureCropImageView;

@@ -1,6 +1,5 @@
 .class abstract Lcom/ifengyu/intercom/update/sealshark/b;
 .super Ljava/lang/Object;
-.source "AbsUpdateTransport.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/update/sealshark/e;
@@ -69,26 +68,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->f:Landroid/util/SparseArray;
 
-    .line 3
     iput-object p3, p0, Lcom/ifengyu/intercom/update/sealshark/b;->e:Lcom/ifengyu/intercom/update/sealshark/c;
 
-    .line 4
     iput-object p2, p0, Lcom/ifengyu/intercom/update/sealshark/b;->b:Landroid/app/AlarmManager;
 
-    .line 5
     iput-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/b;->a:Landroid/content/Context;
 
-    .line 6
     iput-object p4, p0, Lcom/ifengyu/intercom/update/sealshark/b;->c:Ljava/lang/String;
 
     return-void
@@ -97,12 +90,10 @@
 .method private a(J)V
     .locals 4
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/b;->g()Landroid/app/PendingIntent;
 
     move-result-object v0
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/update/sealshark/b;->b:Landroid/app/AlarmManager;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -121,7 +112,6 @@
 .method private f()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->b:Landroid/app/AlarmManager;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/b;->g()Landroid/app/PendingIntent;
@@ -136,7 +126,6 @@
 .method private g()Landroid/app/PendingIntent;
     .locals 4
 
-    .line 1
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.ifengyu.intercom.ACTION_UPDATEMCU_ACK_TIMER"
@@ -153,7 +142,6 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/update/sealshark/b;->a:Landroid/content/Context;
 
     const/4 v2, 0x0
@@ -178,7 +166,6 @@
 
     mul-float p1, p1, v0
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->e:Lcom/ifengyu/intercom/update/sealshark/c;
 
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/sealshark/c;->b()I
@@ -201,7 +188,6 @@
 .method public a(Ljava/lang/String;I)V
     .locals 0
 
-    .line 2
     iget-object p2, p0, Lcom/ifengyu/intercom/update/sealshark/b;->e:Lcom/ifengyu/intercom/update/sealshark/c;
 
     invoke-interface {p2, p1}, Lcom/ifengyu/intercom/update/sealshark/c;->a(Ljava/lang/String;)V
@@ -212,7 +198,6 @@
 .method public b(I)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->c:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -245,7 +230,6 @@
 
     if-ltz p1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->e:Lcom/ifengyu/intercom/update/sealshark/c;
 
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/sealshark/c;->b()I
@@ -254,10 +238,8 @@
 
     if-ge p1, v0, :cond_0
 
-    .line 3
     iput p1, p0, Lcom/ifengyu/intercom/update/sealshark/b;->d:I
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->f:Landroid/util/SparseArray;
 
     add-int/lit8 p1, p1, -0x1
@@ -271,7 +253,6 @@
 .method public c(I)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->e:Lcom/ifengyu/intercom/update/sealshark/c;
 
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/sealshark/c;->b()I
@@ -294,7 +275,6 @@
 .method public d()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->f:Landroid/util/SparseArray;
 
     iget v1, p0, Lcom/ifengyu/intercom/update/sealshark/b;->d:I
@@ -319,7 +299,6 @@
 .method e()V
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->d:I
 
     if-ltz v0, :cond_0
@@ -338,7 +317,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->f:Landroid/util/SparseArray;
 
     iget v1, p0, Lcom/ifengyu/intercom/update/sealshark/b;->d:I
@@ -354,12 +332,10 @@
 .method e(I)V
     .locals 2
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/b;->f()V
 
     int-to-long v0, p1
 
-    .line 4
     invoke-direct {p0, v0, v1}, Lcom/ifengyu/intercom/update/sealshark/b;->a(J)V
 
     return-void
@@ -368,14 +344,12 @@
 .method public release()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->e:Lcom/ifengyu/intercom/update/sealshark/c;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, v1}, Lcom/ifengyu/intercom/update/sealshark/c;->a(Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/b;->f:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V

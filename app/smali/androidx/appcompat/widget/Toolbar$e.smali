@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/appcompat/widget/Toolbar$e;
 .super Ljava/lang/Object;
-.source "Toolbar.java"
 
 
 # annotations

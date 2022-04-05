@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/q$c;
 .super Ljava/lang/Object;
-.source "ListDialog.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public final Lcom/efs/sdk/pa/b;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # instance fields
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 .method public final toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "MsgID="

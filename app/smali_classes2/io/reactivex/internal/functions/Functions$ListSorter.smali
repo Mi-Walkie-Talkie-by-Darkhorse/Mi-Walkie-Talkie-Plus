@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/functions/Functions$ListSorter;
 .super Ljava/lang/Object;
-.source "Functions.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;
@@ -53,10 +52,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/functions/Functions$ListSorter;->comparator:Ljava/util/Comparator;
 
     return-void
@@ -72,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/functions/Functions$ListSorter;->apply(Ljava/util/List;)Ljava/util/List;
@@ -94,7 +90,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/functions/Functions$ListSorter;->comparator:Ljava/util/Comparator;
 
     invoke-static {p1, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V

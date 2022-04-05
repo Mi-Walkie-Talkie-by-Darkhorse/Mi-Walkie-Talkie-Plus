@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/view/RxViewGroup;
 .super Ljava/lang/Object;
-.source "ViewGroupHierarchyChangeEventObservable.kt"
 
 
 # annotations
@@ -46,7 +45,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxViewGroup__ViewGroupHierarchyChangeEventObservableKt;->changeEvents(Landroid/view/ViewGroup;)Lio/reactivex/Observable;
 
     move-result-object p0

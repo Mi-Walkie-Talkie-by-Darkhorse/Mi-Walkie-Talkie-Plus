@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr$MapAnimationListener;
 .super Ljava/lang/Object;
-.source "ADGLMapAnimationMgr.java"
 
 
 # annotations

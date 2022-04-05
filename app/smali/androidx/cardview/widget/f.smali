@@ -1,6 +1,5 @@
 .class Landroidx/cardview/widget/f;
 .super Landroid/graphics/drawable/Drawable;
-.source "RoundRectDrawable.java"
 
 
 # annotations
@@ -37,28 +36,22 @@
 .method constructor <init>(Landroid/content/res/ColorStateList;F)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Landroidx/cardview/widget/f;->f:Z
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Landroidx/cardview/widget/f;->g:Z
 
-    .line 4
     sget-object v0, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
 
     iput-object v0, p0, Landroidx/cardview/widget/f;->k:Landroid/graphics/PorterDuff$Mode;
 
-    .line 5
     iput p2, p0, Landroidx/cardview/widget/f;->a:F
 
-    .line 6
     new-instance p2, Landroid/graphics/Paint;
 
     const/4 v0, 0x5
@@ -67,17 +60,14 @@
 
     iput-object p2, p0, Landroidx/cardview/widget/f;->b:Landroid/graphics/Paint;
 
-    .line 7
     invoke-direct {p0, p1}, Landroidx/cardview/widget/f;->b(Landroid/content/res/ColorStateList;)V
 
-    .line 8
     new-instance p1, Landroid/graphics/RectF;
 
     invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
 
     iput-object p1, p0, Landroidx/cardview/widget/f;->c:Landroid/graphics/RectF;
 
-    .line 9
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
@@ -96,7 +86,6 @@
 
     goto :goto_0
 
-    .line 22
     :cond_0
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
 
@@ -108,7 +97,6 @@
 
     move-result p1
 
-    .line 23
     new-instance v0, Landroid/graphics/PorterDuffColorFilter;
 
     invoke-direct {v0, p1, p2}, Landroid/graphics/PorterDuffColorFilter;-><init>(ILandroid/graphics/PorterDuff$Mode;)V
@@ -127,12 +115,10 @@
 
     if-nez p1, :cond_0
 
-    .line 7
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object p1
 
-    .line 8
     :cond_0
     iget-object v0, p0, Landroidx/cardview/widget/f;->c:Landroid/graphics/RectF;
 
@@ -154,17 +140,14 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 9
     iget-object v0, p0, Landroidx/cardview/widget/f;->d:Landroid/graphics/Rect;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
-    .line 10
     iget-boolean p1, p0, Landroidx/cardview/widget/f;->f:Z
 
     if-eqz p1, :cond_1
 
-    .line 11
     iget p1, p0, Landroidx/cardview/widget/f;->e:F
 
     iget v0, p0, Landroidx/cardview/widget/f;->a:F
@@ -175,7 +158,6 @@
 
     move-result p1
 
-    .line 12
     iget v0, p0, Landroidx/cardview/widget/f;->e:F
 
     iget v1, p0, Landroidx/cardview/widget/f;->a:F
@@ -186,7 +168,6 @@
 
     move-result v0
 
-    .line 13
     iget-object v1, p0, Landroidx/cardview/widget/f;->d:Landroid/graphics/Rect;
 
     float-to-double v2, v0
@@ -207,7 +188,6 @@
 
     invoke-virtual {v1, v0, p1}, Landroid/graphics/Rect;->inset(II)V
 
-    .line 14
     iget-object p1, p0, Landroidx/cardview/widget/f;->c:Landroid/graphics/RectF;
 
     iget-object v0, p0, Landroidx/cardview/widget/f;->d:Landroid/graphics/Rect;
@@ -225,7 +205,6 @@
 
     const/4 p1, 0x0
 
-    .line 1
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
@@ -233,7 +212,6 @@
     :cond_0
     iput-object p1, p0, Landroidx/cardview/widget/f;->h:Landroid/content/res/ColorStateList;
 
-    .line 2
     iget-object v0, p0, Landroidx/cardview/widget/f;->b:Landroid/graphics/Paint;
 
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getState()[I
@@ -260,7 +238,6 @@
 .method public a()Landroid/content/res/ColorStateList;
     .locals 1
 
-    .line 21
     iget-object v0, p0, Landroidx/cardview/widget/f;->h:Landroid/content/res/ColorStateList;
 
     return-object v0
@@ -269,7 +246,6 @@
 .method a(F)V
     .locals 1
 
-    .line 15
     iget v0, p0, Landroidx/cardview/widget/f;->a:F
 
     cmpl-float v0, p1, v0
@@ -278,16 +254,13 @@
 
     return-void
 
-    .line 16
     :cond_0
     iput p1, p0, Landroidx/cardview/widget/f;->a:F
 
     const/4 p1, 0x0
 
-    .line 17
     invoke-direct {p0, p1}, Landroidx/cardview/widget/f;->a(Landroid/graphics/Rect;)V
 
-    .line 18
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -296,7 +269,6 @@
 .method a(FZZ)V
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/cardview/widget/f;->e:F
 
     cmpl-float v0, p1, v0
@@ -313,22 +285,17 @@
 
     return-void
 
-    .line 2
     :cond_0
     iput p1, p0, Landroidx/cardview/widget/f;->e:F
 
-    .line 3
     iput-boolean p2, p0, Landroidx/cardview/widget/f;->f:Z
 
-    .line 4
     iput-boolean p3, p0, Landroidx/cardview/widget/f;->g:Z
 
     const/4 p1, 0x0
 
-    .line 5
     invoke-direct {p0, p1}, Landroidx/cardview/widget/f;->a(Landroid/graphics/Rect;)V
 
-    .line 6
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -341,10 +308,8 @@
         .end annotation
     .end param
 
-    .line 19
     invoke-direct {p0, p1}, Landroidx/cardview/widget/f;->b(Landroid/content/res/ColorStateList;)V
 
-    .line 20
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -353,7 +318,6 @@
 .method b()F
     .locals 1
 
-    .line 3
     iget v0, p0, Landroidx/cardview/widget/f;->e:F
 
     return v0
@@ -362,7 +326,6 @@
 .method public c()F
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/cardview/widget/f;->a:F
 
     return v0
@@ -371,10 +334,8 @@
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Landroidx/cardview/widget/f;->b:Landroid/graphics/Paint;
 
-    .line 2
     iget-object v1, p0, Landroidx/cardview/widget/f;->i:Landroid/graphics/PorterDuffColorFilter;
 
     if-eqz v1, :cond_0
@@ -385,7 +346,6 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     iget-object v1, p0, Landroidx/cardview/widget/f;->i:Landroid/graphics/PorterDuffColorFilter;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
@@ -397,7 +357,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 4
     :goto_0
     iget-object v2, p0, Landroidx/cardview/widget/f;->c:Landroid/graphics/RectF;
 
@@ -409,7 +368,6 @@
 
     const/4 p1, 0x0
 
-    .line 5
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 
     :cond_1
@@ -427,7 +385,6 @@
 .method public getOutline(Landroid/graphics/Outline;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/cardview/widget/f;->d:Landroid/graphics/Rect;
 
     iget v1, p0, Landroidx/cardview/widget/f;->a:F
@@ -440,7 +397,6 @@
 .method public isStateful()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/cardview/widget/f;->j:Landroid/content/res/ColorStateList;
 
     if-eqz v0, :cond_0
@@ -456,7 +412,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {v0}, Landroid/content/res/ColorStateList;->isStateful()Z
 
     move-result v0
@@ -485,10 +440,8 @@
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/graphics/drawable/Drawable;->onBoundsChange(Landroid/graphics/Rect;)V
 
-    .line 2
     invoke-direct {p0, p1}, Landroidx/cardview/widget/f;->a(Landroid/graphics/Rect;)V
 
     return-void
@@ -497,7 +450,6 @@
 .method protected onStateChange([I)Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/cardview/widget/f;->h:Landroid/content/res/ColorStateList;
 
     invoke-virtual {v0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
@@ -508,7 +460,6 @@
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Landroidx/cardview/widget/f;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v0}, Landroid/graphics/Paint;->getColor()I
@@ -529,12 +480,10 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object v2, p0, Landroidx/cardview/widget/f;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v2, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 4
     :cond_1
     iget-object p1, p0, Landroidx/cardview/widget/f;->j:Landroid/content/res/ColorStateList;
 
@@ -544,7 +493,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 5
     invoke-direct {p0, p1, v2}, Landroidx/cardview/widget/f;->a(Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
 
     move-result-object p1
@@ -560,7 +508,6 @@
 .method public setAlpha(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/cardview/widget/f;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setAlpha(I)V
@@ -571,7 +518,6 @@
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/cardview/widget/f;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
@@ -582,10 +528,8 @@
 .method public setTintList(Landroid/content/res/ColorStateList;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Landroidx/cardview/widget/f;->j:Landroid/content/res/ColorStateList;
 
-    .line 2
     iget-object v0, p0, Landroidx/cardview/widget/f;->k:Landroid/graphics/PorterDuff$Mode;
 
     invoke-direct {p0, p1, v0}, Landroidx/cardview/widget/f;->a(Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
@@ -594,7 +538,6 @@
 
     iput-object p1, p0, Landroidx/cardview/widget/f;->i:Landroid/graphics/PorterDuffColorFilter;
 
-    .line 3
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -603,10 +546,8 @@
 .method public setTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Landroidx/cardview/widget/f;->k:Landroid/graphics/PorterDuff$Mode;
 
-    .line 2
     iget-object v0, p0, Landroidx/cardview/widget/f;->j:Landroid/content/res/ColorStateList;
 
     invoke-direct {p0, v0, p1}, Landroidx/cardview/widget/f;->a(Landroid/content/res/ColorStateList;Landroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
@@ -615,7 +556,6 @@
 
     iput-object p1, p0, Landroidx/cardview/widget/f;->i:Landroid/graphics/PorterDuffColorFilter;
 
-    .line 3
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void

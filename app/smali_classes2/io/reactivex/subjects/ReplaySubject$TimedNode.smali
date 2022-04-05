@@ -1,6 +1,5 @@
 .class final Lio/reactivex/subjects/ReplaySubject$TimedNode;
 .super Ljava/util/concurrent/atomic/AtomicReference;
-.source "ReplaySubject.java"
 
 
 # annotations
@@ -50,13 +49,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/subjects/ReplaySubject$TimedNode;->value:Ljava/lang/Object;
 
-    .line 3
     iput-wide p2, p0, Lio/reactivex/subjects/ReplaySubject$TimedNode;->time:J
 
     return-void

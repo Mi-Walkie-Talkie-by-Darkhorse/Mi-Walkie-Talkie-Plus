@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/k;
 .super Ljava/lang/Object;
-.source "TwilightManager.java"
 
 
 # annotations
@@ -37,20 +36,16 @@
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroidx/appcompat/app/k$a;
 
     invoke-direct {v0}, Landroidx/appcompat/app/k$a;-><init>()V
 
     iput-object v0, p0, Landroidx/appcompat/app/k;->c:Landroidx/appcompat/app/k$a;
 
-    .line 3
     iput-object p1, p0, Landroidx/appcompat/app/k;->a:Landroid/content/Context;
 
-    .line 4
     iput-object p2, p0, Landroidx/appcompat/app/k;->b:Landroid/location/LocationManager;
 
     return-void
@@ -65,7 +60,6 @@
         }
     .end annotation
 
-    .line 15
     :try_start_0
     iget-object v0, p0, Landroidx/appcompat/app/k;->b:Landroid/location/LocationManager;
 
@@ -75,7 +69,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 16
     iget-object v0, p0, Landroidx/appcompat/app/k;->b:Landroid/location/LocationManager;
 
     invoke-virtual {v0, p1}, Landroid/location/LocationManager;->getLastKnownLocation(Ljava/lang/String;)Landroid/location/Location;
@@ -93,7 +86,6 @@
 
     const-string v1, "Failed to get last known location"
 
-    .line 17
     invoke-static {v0, v1, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_0
@@ -109,22 +101,18 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object v0, Landroidx/appcompat/app/k;->d:Landroidx/appcompat/app/k;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p0
 
-    .line 3
     new-instance v0, Landroidx/appcompat/app/k;
 
     const-string v1, "location"
 
-    .line 4
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
@@ -135,7 +123,6 @@
 
     sput-object v0, Landroidx/appcompat/app/k;->d:Landroidx/appcompat/app/k;
 
-    .line 5
     :cond_0
     sget-object p0, Landroidx/appcompat/app/k;->d:Landroidx/appcompat/app/k;
 
@@ -151,15 +138,12 @@
 
     move-object/from16 v0, p0
 
-    .line 18
     iget-object v1, v0, Landroidx/appcompat/app/k;->c:Landroidx/appcompat/app/k$a;
 
-    .line 19
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v9
 
-    .line 20
     invoke-static {}, Landroidx/appcompat/app/j;->a()Landroidx/appcompat/app/j;
 
     move-result-object v11
@@ -168,7 +152,6 @@
 
     sub-long v3, v9, v12
 
-    .line 21
     invoke-virtual/range {p1 .. p1}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v5
@@ -179,13 +162,10 @@
 
     move-object v2, v11
 
-    .line 22
     invoke-virtual/range {v2 .. v8}, Landroidx/appcompat/app/j;->a(JDD)V
 
-    .line 23
     iget-wide v14, v11, Landroidx/appcompat/app/j;->a:J
 
-    .line 24
     invoke-virtual/range {p1 .. p1}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v5
@@ -198,7 +178,6 @@
 
     invoke-virtual/range {v2 .. v8}, Landroidx/appcompat/app/j;->a(JDD)V
 
-    .line 25
     iget v2, v11, Landroidx/appcompat/app/j;->c:I
 
     const/4 v3, 0x1
@@ -214,16 +193,13 @@
 
     const/4 v7, 0x0
 
-    .line 26
     :goto_0
     iget-wide v5, v11, Landroidx/appcompat/app/j;->b:J
 
-    .line 27
     iget-wide v3, v11, Landroidx/appcompat/app/j;->a:J
 
     add-long/2addr v12, v9
 
-    .line 28
     invoke-virtual/range {p1 .. p1}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v16
@@ -248,10 +224,8 @@
 
     move-wide/from16 v7, v18
 
-    .line 29
     invoke-virtual/range {v2 .. v8}, Landroidx/appcompat/app/j;->a(JDD)V
 
-    .line 30
     iget-wide v2, v11, Landroidx/appcompat/app/j;->b:J
 
     const-wide/16 v4, 0x0
@@ -302,25 +276,19 @@
 
     add-long/2addr v4, v9
 
-    .line 31
     :goto_3
     iput-boolean v0, v1, Landroidx/appcompat/app/k$a;->a:Z
 
     move-wide/from16 v6, v20
 
-    .line 32
     iput-wide v6, v1, Landroidx/appcompat/app/k$a;->b:J
 
-    .line 33
     iput-wide v12, v1, Landroidx/appcompat/app/k$a;->c:J
 
-    .line 34
     iput-wide v14, v1, Landroidx/appcompat/app/k$a;->d:J
 
-    .line 35
     iput-wide v2, v1, Landroidx/appcompat/app/k$a;->e:J
 
-    .line 36
     iput-wide v4, v1, Landroidx/appcompat/app/k$a;->f:J
 
     return-void
@@ -334,7 +302,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/app/k;->a:Landroid/content/Context;
 
     const-string v1, "android.permission.ACCESS_COARSE_LOCATION"
@@ -349,7 +316,6 @@
 
     const-string v0, "network"
 
-    .line 2
     invoke-direct {p0, v0}, Landroidx/appcompat/app/k;->a(Ljava/lang/String;)Landroid/location/Location;
 
     move-result-object v0
@@ -359,7 +325,6 @@
     :cond_0
     move-object v0, v1
 
-    .line 3
     :goto_0
     iget-object v2, p0, Landroidx/appcompat/app/k;->a:Landroid/content/Context;
 
@@ -373,7 +338,6 @@
 
     const-string v1, "gps"
 
-    .line 4
     invoke-direct {p0, v1}, Landroidx/appcompat/app/k;->a(Ljava/lang/String;)Landroid/location/Location;
 
     move-result-object v1
@@ -383,7 +347,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 5
     invoke-virtual {v1}, Landroid/location/Location;->getTime()J
 
     move-result-wide v2
@@ -413,7 +376,6 @@
 .method private c()Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/app/k;->c:Landroidx/appcompat/app/k$a;
 
     iget-wide v0, v0, Landroidx/appcompat/app/k$a;->f:J
@@ -442,22 +404,18 @@
 .method a()Z
     .locals 2
 
-    .line 6
     iget-object v0, p0, Landroidx/appcompat/app/k;->c:Landroidx/appcompat/app/k$a;
 
-    .line 7
     invoke-direct {p0}, Landroidx/appcompat/app/k;->c()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 8
     iget-boolean v0, v0, Landroidx/appcompat/app/k$a;->a:Z
 
     return v0
 
-    .line 9
     :cond_0
     invoke-direct {p0}, Landroidx/appcompat/app/k;->b()Landroid/location/Location;
 
@@ -465,10 +423,8 @@
 
     if-eqz v1, :cond_1
 
-    .line 10
     invoke-direct {p0, v1}, Landroidx/appcompat/app/k;->a(Landroid/location/Location;)V
 
-    .line 11
     iget-boolean v0, v0, Landroidx/appcompat/app/k$a;->a:Z
 
     return v0
@@ -478,17 +434,14 @@
 
     const-string v1, "Could not get last known location. This is probably because the app does not have any location permissions. Falling back to hardcoded sunrise/sunset values."
 
-    .line 12
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 13
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v0
 
     const/16 v1, 0xb
 
-    .line 14
     invoke-virtual {v0, v1}, Ljava/util/Calendar;->get(I)I
 
     move-result v0

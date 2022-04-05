@@ -1,13 +1,11 @@
 .class public Lcom/google/zxing/oned/Code93Writer;
 .super Lcom/google/zxing/oned/OneDimensionalCodeWriter;
-.source "Code93Writer.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/oned/OneDimensionalCodeWriter;-><init>()V
 
     return-void
@@ -16,7 +14,6 @@
 .method private static appendPattern([ZI[I)I
     .locals 5
 
-    .line 2
     array-length v0, p2
 
     const/4 v1, 0x0
@@ -39,7 +36,6 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 3
     :goto_1
     aput-boolean v3, p0, p1
 
@@ -60,7 +56,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/google/zxing/oned/Code93Writer;->appendPattern([ZI[I)I
 
     move-result p0
@@ -71,7 +66,6 @@
 .method private static computeChecksumIndex(Ljava/lang/String;I)I
     .locals 6
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -87,7 +81,6 @@
     :goto_0
     if-ltz v0, :cond_1
 
-    .line 2
     invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -113,7 +106,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     rem-int/lit8 v2, v2, 0x2f
 
@@ -144,7 +136,6 @@
 
     const/4 v3, 0x0
 
-    .line 1
     :cond_0
     aput v3, p1, v1
 
@@ -179,19 +170,16 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/zxing/BarcodeFormat;->CODE_93:Lcom/google/zxing/BarcodeFormat;
 
     if-ne p2, v0, :cond_0
 
-    .line 2
     invoke-super/range {p0 .. p5}, Lcom/google/zxing/oned/OneDimensionalCodeWriter;->encode(Ljava/lang/String;Lcom/google/zxing/BarcodeFormat;IILjava/util/Map;)Lcom/google/zxing/common/BitMatrix;
 
     move-result-object p1
 
     return-object p1
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -215,7 +203,6 @@
 .method public encode(Ljava/lang/String;)[Z
     .locals 9
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -228,7 +215,6 @@
 
     new-array v2, v1, [I
 
-    .line 5
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -243,7 +229,6 @@
 
     add-int/2addr v3, v1
 
-    .line 6
     sget-object v4, Lcom/google/zxing/oned/Code93Reader;->CHARACTER_ENCODINGS:[I
 
     const/16 v5, 0x2f
@@ -252,12 +237,10 @@
 
     invoke-static {v4, v2}, Lcom/google/zxing/oned/Code93Writer;->toIntArray(I[I)V
 
-    .line 7
     new-array v3, v3, [Z
 
     const/4 v4, 0x0
 
-    .line 8
     invoke-static {v3, v4, v2}, Lcom/google/zxing/oned/Code93Writer;->appendPattern([ZI[I)I
 
     move-result v6
@@ -267,7 +250,6 @@
 
     if-ge v4, v0, :cond_0
 
-    .line 9
     invoke-virtual {p1, v4}, Ljava/lang/String;->charAt(I)C
 
     move-result v8
@@ -276,14 +258,12 @@
 
     move-result v7
 
-    .line 10
     sget-object v8, Lcom/google/zxing/oned/Code93Reader;->CHARACTER_ENCODINGS:[I
 
     aget v7, v8, v7
 
     invoke-static {v7, v2}, Lcom/google/zxing/oned/Code93Writer;->toIntArray(I[I)V
 
-    .line 11
     invoke-static {v3, v6, v2}, Lcom/google/zxing/oned/Code93Writer;->appendPattern([ZI[I)I
 
     move-result v7
@@ -297,26 +277,22 @@
     :cond_0
     const/16 v0, 0x14
 
-    .line 12
     invoke-static {p1, v0}, Lcom/google/zxing/oned/Code93Writer;->computeChecksumIndex(Ljava/lang/String;I)I
 
     move-result v0
 
-    .line 13
     sget-object v4, Lcom/google/zxing/oned/Code93Reader;->CHARACTER_ENCODINGS:[I
 
     aget v4, v4, v0
 
     invoke-static {v4, v2}, Lcom/google/zxing/oned/Code93Writer;->toIntArray(I[I)V
 
-    .line 14
     invoke-static {v3, v6, v2}, Lcom/google/zxing/oned/Code93Writer;->appendPattern([ZI[I)I
 
     move-result v4
 
     add-int/2addr v6, v4
 
-    .line 15
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -335,45 +311,38 @@
 
     const/16 v0, 0xf
 
-    .line 16
     invoke-static {p1, v0}, Lcom/google/zxing/oned/Code93Writer;->computeChecksumIndex(Ljava/lang/String;I)I
 
     move-result p1
 
-    .line 17
     sget-object v0, Lcom/google/zxing/oned/Code93Reader;->CHARACTER_ENCODINGS:[I
 
     aget p1, v0, p1
 
     invoke-static {p1, v2}, Lcom/google/zxing/oned/Code93Writer;->toIntArray(I[I)V
 
-    .line 18
     invoke-static {v3, v6, v2}, Lcom/google/zxing/oned/Code93Writer;->appendPattern([ZI[I)I
 
     move-result p1
 
     add-int/2addr v6, p1
 
-    .line 19
     sget-object p1, Lcom/google/zxing/oned/Code93Reader;->CHARACTER_ENCODINGS:[I
 
     aget p1, p1, v5
 
     invoke-static {p1, v2}, Lcom/google/zxing/oned/Code93Writer;->toIntArray(I[I)V
 
-    .line 20
     invoke-static {v3, v6, v2}, Lcom/google/zxing/oned/Code93Writer;->appendPattern([ZI[I)I
 
     move-result p1
 
     add-int/2addr v6, p1
 
-    .line 21
     aput-boolean v1, v3, v6
 
     return-object v3
 
-    .line 22
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

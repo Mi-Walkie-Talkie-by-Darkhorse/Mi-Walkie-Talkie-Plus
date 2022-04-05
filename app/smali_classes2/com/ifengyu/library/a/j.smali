@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/library/a/j;
 .super Ljava/lang/Object;
-.source "SPUtils.java"
 
 
 # static fields
@@ -24,7 +23,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, La/b/g;
 
     invoke-direct {v0}, La/b/g;-><init>()V
@@ -37,10 +35,8 @@
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->b()Lcom/ifengyu/library/base/BaseApp;
 
     move-result-object v0
@@ -59,7 +55,6 @@
 .method public static a(Ljava/lang/String;)Lcom/ifengyu/library/a/j;
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/ifengyu/library/a/j;->b(Ljava/lang/String;)Z
 
     move-result v0
@@ -68,7 +63,6 @@
 
     const-string p0, "spUtils"
 
-    .line 2
     :cond_0
     sget-object v0, Lcom/ifengyu/library/a/j;->b:La/b/g;
 
@@ -80,12 +74,10 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     new-instance v0, Lcom/ifengyu/library/a/j;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/library/a/j;-><init>(Ljava/lang/String;)V
 
-    .line 4
     sget-object v1, Lcom/ifengyu/library/a/j;->b:La/b/g;
 
     invoke-virtual {v1, p0, v0}, La/b/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -103,7 +95,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -116,7 +107,6 @@
     :goto_0
     if-ge v3, v1, :cond_2
 
-    .line 3
     invoke-virtual {p0, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -151,7 +141,6 @@
         .end annotation
     .end param
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/library/a/j;->a:Landroid/content/SharedPreferences;
 
     invoke-interface {v0, p1, p2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
@@ -164,7 +153,6 @@
 .method public a()V
     .locals 1
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/library/a/j;->a:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -191,7 +179,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/library/a/j;->a:Landroid/content/SharedPreferences;
 
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;

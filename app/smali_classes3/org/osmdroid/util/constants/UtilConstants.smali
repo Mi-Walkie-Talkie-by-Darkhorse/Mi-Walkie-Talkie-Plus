@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/util/constants/UtilConstants;
 .super Ljava/lang/Object;
-.source "UtilConstants.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0

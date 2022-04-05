@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/af;
 .super Ljava/lang/Object;
-.source "UiSettingsDelegateImp.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/x;
@@ -44,56 +43,40 @@
 .method constructor <init>(Lcom/amap/api/col/l3/u;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/amap/api/col/l3/af;->c:Z
 
-    .line 3
     iput-boolean v0, p0, Lcom/amap/api/col/l3/af;->d:Z
 
-    .line 4
     iput-boolean v0, p0, Lcom/amap/api/col/l3/af;->e:Z
 
     const/4 v1, 0x0
 
-    .line 5
     iput-boolean v1, p0, Lcom/amap/api/col/l3/af;->f:Z
 
-    .line 6
     iput-boolean v0, p0, Lcom/amap/api/col/l3/af;->g:Z
 
-    .line 7
     iput-boolean v0, p0, Lcom/amap/api/col/l3/af;->h:Z
 
-    .line 8
     iput-boolean v0, p0, Lcom/amap/api/col/l3/af;->i:Z
 
-    .line 9
     iput-boolean v1, p0, Lcom/amap/api/col/l3/af;->j:Z
 
-    .line 10
     iput-boolean v0, p0, Lcom/amap/api/col/l3/af;->k:Z
 
-    .line 11
     iput v1, p0, Lcom/amap/api/col/l3/af;->l:I
 
-    .line 12
     iput v0, p0, Lcom/amap/api/col/l3/af;->m:I
 
-    .line 13
     iput-boolean v0, p0, Lcom/amap/api/col/l3/af;->n:Z
 
-    .line 14
     iput-boolean v1, p0, Lcom/amap/api/col/l3/af;->o:Z
 
-    .line 15
     iput-boolean v1, p0, Lcom/amap/api/col/l3/af;->p:Z
 
-    .line 16
     new-instance v0, Lcom/amap/api/col/l3/af$1;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -104,7 +87,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/af;->a:Landroid/os/Handler;
 
-    .line 17
     iput-object p1, p0, Lcom/amap/api/col/l3/af;->b:Lcom/amap/api/col/l3/u;
 
     return-void
@@ -113,7 +95,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/af;)Lcom/amap/api/col/l3/u;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/af;->b:Lcom/amap/api/col/l3/u;
 
     return-object p0
@@ -122,7 +103,6 @@
 .method static synthetic b(Lcom/amap/api/col/l3/af;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/amap/api/col/l3/af;->h:Z
 
     return p0
@@ -131,7 +111,6 @@
 .method static synthetic c(Lcom/amap/api/col/l3/af;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/amap/api/col/l3/af;->j:Z
 
     return p0
@@ -140,7 +119,6 @@
 .method static synthetic d(Lcom/amap/api/col/l3/af;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/amap/api/col/l3/af;->i:Z
 
     return p0
@@ -149,7 +127,6 @@
 .method static synthetic e(Lcom/amap/api/col/l3/af;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/amap/api/col/l3/af;->f:Z
 
     return p0
@@ -158,7 +135,6 @@
 .method static synthetic f(Lcom/amap/api/col/l3/af;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/amap/api/col/l3/af;->n:Z
 
     return p0
@@ -167,7 +143,6 @@
 .method static synthetic g(Lcom/amap/api/col/l3/af;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/amap/api/col/l3/af;->k:Z
 
     return p0
@@ -178,7 +153,6 @@
 .method public final getLogoMarginRate(I)F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/af;->b:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0, p1}, Lcom/amap/api/col/l3/u;->k(I)F
@@ -196,7 +170,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/af;->l:I
 
     return v0
@@ -210,7 +183,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/af;->m:I
 
     return v0
@@ -224,7 +196,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->i:Z
 
     return v0
@@ -238,7 +209,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->p:Z
 
     return v0
@@ -252,7 +222,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->n:Z
 
     return v0
@@ -261,7 +230,6 @@
 .method public final isLogoEnable()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->k:Z
 
     return v0
@@ -275,7 +243,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->f:Z
 
     return v0
@@ -289,7 +256,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->c:Z
 
     return v0
@@ -303,7 +269,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->j:Z
 
     return v0
@@ -317,7 +282,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->d:Z
 
     return v0
@@ -331,7 +295,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->e:Z
 
     return v0
@@ -345,7 +308,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->h:Z
 
     return v0
@@ -359,7 +321,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->g:Z
 
     return v0
@@ -368,7 +329,6 @@
 .method public final isZoomInByScreenCenter()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/af;->o:Z
 
     return v0
@@ -382,16 +342,12 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->c:Z
 
-    .line 2
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->e:Z
 
-    .line 3
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->g:Z
 
-    .line 4
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->d:Z
 
     return-void
@@ -405,10 +361,8 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->i:Z
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/af;->a:Landroid/os/Handler;
 
     const/4 v0, 0x2
@@ -430,7 +384,6 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->p:Z
 
     return-void
@@ -444,10 +397,8 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->n:Z
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/af;->a:Landroid/os/Handler;
 
     const/4 v0, 0x4
@@ -464,7 +415,6 @@
 .method public final setLogoBottomMargin(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/af;->b:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0, p1}, Lcom/amap/api/col/l3/u;->i(I)V
@@ -475,10 +425,8 @@
 .method public final setLogoEnable(Z)V
     .locals 1
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->k:Z
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/af;->a:Landroid/os/Handler;
 
     const/4 v0, 0x5
@@ -495,7 +443,6 @@
 .method public final setLogoLeftMargin(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/af;->b:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0, p1}, Lcom/amap/api/col/l3/u;->j(I)V
@@ -506,7 +453,6 @@
 .method public final setLogoMarginRate(IF)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/af;->b:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0, p1, p2}, Lcom/amap/api/col/l3/u;->a(IF)V
@@ -522,10 +468,8 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/af;->l:I
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/af;->b:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0, p1}, Lcom/amap/api/col/l3/u;->h(I)V
@@ -541,10 +485,8 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->f:Z
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/af;->a:Landroid/os/Handler;
 
     const/4 v0, 0x3
@@ -566,7 +508,6 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->c:Z
 
     return-void
@@ -580,10 +521,8 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->j:Z
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/af;->a:Landroid/os/Handler;
 
     const/4 v0, 0x1
@@ -605,7 +544,6 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->d:Z
 
     return-void
@@ -619,7 +557,6 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->e:Z
 
     return-void
@@ -633,10 +570,8 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->h:Z
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/af;->a:Landroid/os/Handler;
 
     const/4 v0, 0x0
@@ -658,7 +593,6 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->g:Z
 
     return-void
@@ -667,7 +601,6 @@
 .method public final setZoomInByScreenCenter(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/af;->o:Z
 
     return-void
@@ -681,10 +614,8 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/af;->m:I
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/af;->b:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0, p1}, Lcom/amap/api/col/l3/u;->f(I)V

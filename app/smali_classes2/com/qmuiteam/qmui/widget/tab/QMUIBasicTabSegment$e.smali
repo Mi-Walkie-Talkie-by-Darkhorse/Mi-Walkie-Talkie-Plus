@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$e;
 .super Ljava/lang/Object;
-.source "QMUIBasicTabSegment.java"
 
 
 # annotations

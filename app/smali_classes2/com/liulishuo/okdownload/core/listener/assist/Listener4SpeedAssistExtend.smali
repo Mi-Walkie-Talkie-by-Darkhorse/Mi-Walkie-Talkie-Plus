@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;
 .super Ljava/lang/Object;
-.source "Listener4SpeedAssistExtend.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$AssistExtend;
@@ -40,7 +39,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -51,7 +49,6 @@
 .method public create(I)Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;
 
     invoke-direct {v0, p1}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;-><init>(I)V
@@ -62,7 +59,6 @@
 .method public bridge synthetic create(I)Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;->create(I)Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;
 
     move-result-object p1
@@ -73,12 +69,10 @@
 .method public dispatchBlockEnd(Lcom/liulishuo/okdownload/DownloadTask;ILcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;)Z
     .locals 2
 
-    .line 1
     move-object v0, p3
 
     check-cast v0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;
 
-    .line 2
     iget-object v1, v0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;->blockSpeeds:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -89,24 +83,20 @@
 
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/SpeedCalculator;->endTask()V
 
-    .line 3
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;->callback:Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;
 
     if-eqz v1, :cond_0
 
-    .line 4
     iget-object p3, p3, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     invoke-virtual {p3, p2}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getBlock(I)Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
     move-result-object p3
 
-    .line 5
     invoke-virtual {v0, p2}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;->getBlockSpeed(I)Lcom/liulishuo/okdownload/SpeedCalculator;
 
     move-result-object v0
 
-    .line 6
     invoke-interface {v1, p1, p2, p3, v0}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;->blockEnd(Lcom/liulishuo/okdownload/DownloadTask;ILcom/liulishuo/okdownload/core/breakpoint/BlockInfo;Lcom/liulishuo/okdownload/SpeedCalculator;)V
 
     :cond_0
@@ -126,12 +116,10 @@
         .end annotation
     .end param
 
-    .line 1
     move-object v0, p5
 
     check-cast v0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;
 
-    .line 2
     iget-object v1, v0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;->blockSpeeds:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -142,17 +130,14 @@
 
     invoke-virtual {v1, p3, p4}, Lcom/liulishuo/okdownload/SpeedCalculator;->downloading(J)V
 
-    .line 3
     iget-object v1, v0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;->taskSpeed:Lcom/liulishuo/okdownload/SpeedCalculator;
 
     invoke-virtual {v1, p3, p4}, Lcom/liulishuo/okdownload/SpeedCalculator;->downloading(J)V
 
-    .line 4
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;->callback:Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;
 
     if-eqz v2, :cond_0
 
-    .line 5
     iget-object p3, p5, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->blockCurrentOffsetMap:Landroid/util/SparseArray;
 
     invoke-virtual {p3, p2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -165,7 +150,6 @@
 
     move-result-wide v5
 
-    .line 6
     invoke-virtual {v0, p2}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;->getBlockSpeed(I)Lcom/liulishuo/okdownload/SpeedCalculator;
 
     move-result-object v7
@@ -174,10 +158,8 @@
 
     move v4, p2
 
-    .line 7
     invoke-interface/range {v2 .. v7}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;->progressBlock(Lcom/liulishuo/okdownload/DownloadTask;IJLcom/liulishuo/okdownload/SpeedCalculator;)V
 
-    .line 8
     iget-object p2, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;->callback:Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;
 
     iget-wide p3, p5, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->currentOffset:J
@@ -203,12 +185,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;->callback:Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p4, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;
 
     invoke-interface {v0, p1, p2, p3, p4}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;->infoReady(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;ZLcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;)V
@@ -230,32 +210,26 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p4, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;
 
-    .line 2
     iget-object p4, p4, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;->taskSpeed:Lcom/liulishuo/okdownload/SpeedCalculator;
 
     if-eqz p4, :cond_0
 
-    .line 3
     invoke-virtual {p4}, Lcom/liulishuo/okdownload/SpeedCalculator;->endTask()V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance p4, Lcom/liulishuo/okdownload/SpeedCalculator;
 
     invoke-direct {p4}, Lcom/liulishuo/okdownload/SpeedCalculator;-><init>()V
 
-    .line 5
     :goto_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;->callback:Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;
 
     if-eqz v0, :cond_1
 
-    .line 6
     invoke-interface {v0, p1, p2, p3, p4}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;->taskEnd(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/cause/EndCause;Ljava/lang/Exception;Lcom/liulishuo/okdownload/SpeedCalculator;)V
 
     :cond_1
@@ -267,7 +241,6 @@
 .method public setCallback(Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;->callback:Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;
 
     return-void

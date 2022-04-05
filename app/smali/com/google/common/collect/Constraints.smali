@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Constraints;
 .super Ljava/lang/Object;
-.source "Constraints.java"
 
 
 # annotations
@@ -23,7 +22,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method static synthetic access$000(Ljava/util/Collection;Lcom/google/common/collect/Constraint;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Constraints;->checkElements(Ljava/util/Collection;Lcom/google/common/collect/Constraint;)Ljava/util/Collection;
 
     move-result-object p0
@@ -43,7 +40,6 @@
 .method static synthetic access$100(Ljava/util/ListIterator;Lcom/google/common/collect/Constraint;)Ljava/util/ListIterator;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Constraints;->constrainedListIterator(Ljava/util/ListIterator;Lcom/google/common/collect/Constraint;)Ljava/util/ListIterator;
 
     move-result-object p0
@@ -67,12 +63,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Lists;->newArrayList(Ljava/lang/Iterable;)Ljava/util/ArrayList;
 
     move-result-object p0
 
-    .line 2
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -88,7 +82,6 @@
 
     move-result-object v1
 
-    .line 3
     invoke-interface {p1, v1}, Lcom/google/common/collect/Constraint;->checkElement(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
@@ -113,7 +106,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Constraints$ConstrainedCollection;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Constraints$ConstrainedCollection;-><init>(Ljava/util/Collection;Lcom/google/common/collect/Constraint;)V
@@ -137,7 +129,6 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Ljava/util/RandomAccess;
 
     if-eqz v0, :cond_0
@@ -173,7 +164,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Constraints$ConstrainedListIterator;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Constraints$ConstrainedListIterator;-><init>(Ljava/util/ListIterator;Lcom/google/common/collect/Constraint;)V
@@ -197,7 +187,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Constraints$ConstrainedSet;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Constraints$ConstrainedSet;-><init>(Ljava/util/Set;Lcom/google/common/collect/Constraint;)V
@@ -221,7 +210,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Constraints$ConstrainedSortedSet;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Constraints$ConstrainedSortedSet;-><init>(Ljava/util/SortedSet;Lcom/google/common/collect/Constraint;)V
@@ -245,12 +233,10 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Ljava/util/SortedSet;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, Ljava/util/SortedSet;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Constraints;->constrainedSortedSet(Ljava/util/SortedSet;Lcom/google/common/collect/Constraint;)Ljava/util/SortedSet;
@@ -259,13 +245,11 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     instance-of v0, p0, Ljava/util/Set;
 
     if-eqz v0, :cond_1
 
-    .line 4
     check-cast p0, Ljava/util/Set;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Constraints;->constrainedSet(Ljava/util/Set;Lcom/google/common/collect/Constraint;)Ljava/util/Set;
@@ -274,13 +258,11 @@
 
     return-object p0
 
-    .line 5
     :cond_1
     instance-of v0, p0, Ljava/util/List;
 
     if-eqz v0, :cond_2
 
-    .line 6
     check-cast p0, Ljava/util/List;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Constraints;->constrainedList(Ljava/util/List;Lcom/google/common/collect/Constraint;)Ljava/util/List;
@@ -289,7 +271,6 @@
 
     return-object p0
 
-    .line 7
     :cond_2
     invoke-static {p0, p1}, Lcom/google/common/collect/Constraints;->constrainedCollection(Ljava/util/Collection;Lcom/google/common/collect/Constraint;)Ljava/util/Collection;
 

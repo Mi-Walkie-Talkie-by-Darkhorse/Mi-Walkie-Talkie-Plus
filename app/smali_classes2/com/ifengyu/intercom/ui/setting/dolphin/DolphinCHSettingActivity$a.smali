@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$a;
 .super Landroidx/viewpager/widget/ViewPager$k;
-.source "DolphinCHSettingActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
 
     invoke-direct {p0}, Landroidx/viewpager/widget/ViewPager$k;-><init>()V
@@ -35,12 +33,10 @@
 .method public onPageSelected(I)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;->e(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;)Ljava/lang/String;
@@ -65,7 +61,6 @@
 
     if-nez p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;->mFabLayout:Landroid/view/View;
@@ -76,7 +71,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
 

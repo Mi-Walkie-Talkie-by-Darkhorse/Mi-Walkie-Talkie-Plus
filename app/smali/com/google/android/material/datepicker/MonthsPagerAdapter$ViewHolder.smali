@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/datepicker/MonthsPagerAdapter$ViewHolder;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "MonthsPagerAdapter.java"
 
 
 # annotations
@@ -28,10 +27,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
-    .line 2
     sget v0, Lcom/google/android/material/R$id;->month_title:I
 
     invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
@@ -44,10 +41,8 @@
 
     const/4 v1, 0x1
 
-    .line 3
     invoke-static {v0, v1}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;Z)V
 
-    .line 4
     sget v0, Lcom/google/android/material/R$id;->month_grid:I
 
     invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
@@ -60,7 +55,6 @@
 
     if-nez p2, :cond_0
 
-    .line 5
     iget-object p1, p0, Lcom/google/android/material/datepicker/MonthsPagerAdapter$ViewHolder;->monthTitle:Landroid/widget/TextView;
 
     const/16 p2, 0x8

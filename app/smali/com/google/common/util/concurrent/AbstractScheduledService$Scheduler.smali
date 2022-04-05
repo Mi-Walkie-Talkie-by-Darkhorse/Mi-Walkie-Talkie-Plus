@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler;
 .super Ljava/lang/Object;
-.source "AbstractScheduledService.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +25,6 @@
 .method synthetic constructor <init>(Lcom/google/common/util/concurrent/AbstractScheduledService$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler;-><init>()V
 
     return-void
@@ -36,7 +33,6 @@
 .method public static newFixedDelaySchedule(JJLjava/util/concurrent/TimeUnit;)Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler;
     .locals 7
 
-    .line 1
     new-instance v6, Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler$1;
 
     move-object v0, v6
@@ -55,7 +51,6 @@
 .method public static newFixedRateSchedule(JJLjava/util/concurrent/TimeUnit;)Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler;
     .locals 7
 
-    .line 1
     new-instance v6, Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler$2;
 
     move-object v0, v6

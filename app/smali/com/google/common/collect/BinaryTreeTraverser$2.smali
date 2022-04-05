@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/BinaryTreeTraverser$2;
 .super Lcom/google/common/collect/FluentIterable;
-.source "BinaryTreeTraverser.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/google/common/collect/BinaryTreeTraverser;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/BinaryTreeTraverser$2;->this$0:Lcom/google/common/collect/BinaryTreeTraverser;
 
     iput-object p2, p0, Lcom/google/common/collect/BinaryTreeTraverser$2;->val$root:Ljava/lang/Object;
@@ -53,7 +51,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/BinaryTreeTraverser$InOrderIterator;
 
     iget-object v1, p0, Lcom/google/common/collect/BinaryTreeTraverser$2;->this$0:Lcom/google/common/collect/BinaryTreeTraverser;
@@ -68,7 +65,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/BinaryTreeTraverser$2;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0

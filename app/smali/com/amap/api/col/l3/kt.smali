@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kt;
 .super Ljava/lang/Object;
-.source "MapLocationService.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/transition/platform/MaterialFadeThrough;
 .super Lcom/google/android/material/transition/platform/MaterialVisibility;
-.source "MaterialFadeThrough.java"
 
 
 # annotations
@@ -25,7 +24,6 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/google/android/material/transition/platform/MaterialFadeThrough;->createPrimaryAnimatorProvider()Lcom/google/android/material/transition/platform/FadeThroughProvider;
 
     move-result-object v0
@@ -42,7 +40,6 @@
 .method private static createPrimaryAnimatorProvider()Lcom/google/android/material/transition/platform/FadeThroughProvider;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/material/transition/platform/FadeThroughProvider;
 
     invoke-direct {v0}, Lcom/google/android/material/transition/platform/FadeThroughProvider;-><init>()V
@@ -53,19 +50,16 @@
 .method private static createSecondaryAnimatorProvider()Lcom/google/android/material/transition/platform/VisibilityAnimatorProvider;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/android/material/transition/platform/ScaleProvider;
 
     invoke-direct {v0}, Lcom/google/android/material/transition/platform/ScaleProvider;-><init>()V
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/google/android/material/transition/platform/ScaleProvider;->setScaleOnDisappear(Z)V
 
     const v1, 0x3f6b851f    # 0.92f
 
-    .line 3
     invoke-virtual {v0, v1}, Lcom/google/android/material/transition/platform/ScaleProvider;->setIncomingStartScale(F)V
 
     return-object v0
@@ -80,7 +74,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/android/material/transition/platform/MaterialVisibility;->addAdditionalAnimatorProvider(Lcom/google/android/material/transition/platform/VisibilityAnimatorProvider;)V
 
     return-void
@@ -89,7 +82,6 @@
 .method public bridge synthetic clearAdditionalAnimatorProvider()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/google/android/material/transition/platform/MaterialVisibility;->clearAdditionalAnimatorProvider()V
 
     return-void
@@ -100,7 +92,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-super {p0}, Lcom/google/android/material/transition/platform/MaterialVisibility;->getSecondaryAnimatorProvider()Lcom/google/android/material/transition/platform/VisibilityAnimatorProvider;
 
     move-result-object v0
@@ -111,7 +102,6 @@
 .method public bridge synthetic onAppear(Landroid/view/ViewGroup;Landroid/view/View;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Lcom/google/android/material/transition/platform/MaterialVisibility;->onAppear(Landroid/view/ViewGroup;Landroid/view/View;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
 
     move-result-object p1
@@ -122,7 +112,6 @@
 .method public bridge synthetic onDisappear(Landroid/view/ViewGroup;Landroid/view/View;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Lcom/google/android/material/transition/platform/MaterialVisibility;->onDisappear(Landroid/view/ViewGroup;Landroid/view/View;Landroid/transition/TransitionValues;Landroid/transition/TransitionValues;)Landroid/animation/Animator;
 
     move-result-object p1
@@ -137,7 +126,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/android/material/transition/platform/MaterialVisibility;->removeAdditionalAnimatorProvider(Lcom/google/android/material/transition/platform/VisibilityAnimatorProvider;)Z
 
     move-result p1
@@ -152,7 +140,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/android/material/transition/platform/MaterialVisibility;->setSecondaryAnimatorProvider(Lcom/google/android/material/transition/platform/VisibilityAnimatorProvider;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/bean/RelayInfo;
 .super Ljava/lang/Object;
-.source "RelayInfo.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -16,7 +15,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,7 +38,6 @@
 
     return v1
 
-    .line 1
     :cond_1
     const-class v2, Lcom/ifengyu/intercom/bean/RelayInfo;
 
@@ -52,11 +49,9 @@
 
     return v1
 
-    .line 2
     :cond_2
     check-cast p1, Lcom/ifengyu/intercom/bean/RelayInfo;
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/RelayInfo;->getCh1()Lcom/ifengyu/intercom/bean/ChannelBean;
 
     move-result-object v2
@@ -65,7 +60,6 @@
 
     return v1
 
-    .line 4
     :cond_3
     iget-object v2, p0, Lcom/ifengyu/intercom/bean/RelayInfo;->ch1:Lcom/ifengyu/intercom/bean/ChannelBean;
 
@@ -73,7 +67,6 @@
 
     return v1
 
-    .line 5
     :cond_4
     invoke-virtual {v2}, Lcom/ifengyu/intercom/bean/ChannelBean;->getNo()I
 
@@ -98,7 +91,6 @@
 .method public getCh1()Lcom/ifengyu/intercom/bean/ChannelBean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/RelayInfo;->ch1:Lcom/ifengyu/intercom/bean/ChannelBean;
 
     return-object v0
@@ -107,7 +99,6 @@
 .method public getCh2()Lcom/ifengyu/intercom/bean/ChannelBean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/RelayInfo;->ch2:Lcom/ifengyu/intercom/bean/ChannelBean;
 
     return-object v0
@@ -116,7 +107,6 @@
 .method public setCh1(Lcom/ifengyu/intercom/bean/ChannelBean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/RelayInfo;->ch1:Lcom/ifengyu/intercom/bean/ChannelBean;
 
     return-void
@@ -125,7 +115,6 @@
 .method public setCh2(Lcom/ifengyu/intercom/bean/ChannelBean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/RelayInfo;->ch2:Lcom/ifengyu/intercom/bean/ChannelBean;
 
     return-void

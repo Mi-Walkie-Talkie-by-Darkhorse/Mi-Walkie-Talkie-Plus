@@ -1,6 +1,5 @@
 .class public interface abstract Lretrofit2/CallAdapter;
 .super Ljava/lang/Object;
-.source "CallAdapter.java"
 
 
 # annotations

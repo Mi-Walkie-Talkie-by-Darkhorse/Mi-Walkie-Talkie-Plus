@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/yalantis/ucrop/view/widget/HorizontalProgressWheelView$a;
 .super Ljava/lang/Object;
-.source "HorizontalProgressWheelView.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;
 .super Landroidx/appcompat/widget/AppCompatTextView;
-.source "QMUIVerticalTextView.java"
 
 
 # instance fields
@@ -17,15 +16,12 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;)V
 
     const/4 p1, 0x1
 
-    .line 2
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->a:Z
 
-    .line 3
     invoke-direct {p0}, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->a()V
 
     return-void
@@ -34,15 +30,12 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x1
 
-    .line 5
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->a:Z
 
-    .line 6
     invoke-direct {p0}, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->a()V
 
     return-void
@@ -51,15 +44,12 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 7
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 p1, 0x1
 
-    .line 8
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->a:Z
 
-    .line 9
     invoke-direct {p0}, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->a()V
 
     return-void
@@ -74,12 +64,10 @@
 .method private static a(I)Z
     .locals 1
 
-    .line 1
     invoke-static {p0}, Ljava/lang/Character$UnicodeBlock;->of(I)Ljava/lang/Character$UnicodeBlock;
 
     move-result-object p0
 
-    .line 2
     sget-object v0, Ljava/lang/Character$UnicodeBlock;->CJK_UNIFIED_IDEOGRAPHS:Ljava/lang/Character$UnicodeBlock;
 
     if-eq p0, v0, :cond_1
@@ -146,17 +134,14 @@
 
     move-object/from16 v8, p1
 
-    .line 1
     iget-boolean v1, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->a:Z
 
     if-nez v1, :cond_0
 
-    .line 2
     invoke-super/range {p0 .. p1}, Landroid/widget/TextView;->onDraw(Landroid/graphics/Canvas;)V
 
     goto/16 :goto_7
 
-    .line 3
     :cond_0
     iget v1, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->b:I
 
@@ -164,32 +149,27 @@
 
     return-void
 
-    .line 4
     :cond_1
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
 
     move-result-object v9
 
-    .line 5
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getCurrentTextColor()I
 
     move-result v1
 
     invoke-virtual {v9, v1}, Landroid/text/TextPaint;->setColor(I)V
 
-    .line 6
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getDrawableState()[I
 
     move-result-object v1
 
     iput-object v1, v9, Landroid/text/TextPaint;->drawableState:[I
 
-    .line 7
     invoke-virtual {v9}, Landroid/text/TextPaint;->getFontMetricsInt()Landroid/graphics/Paint$FontMetricsInt;
 
     move-result-object v10
 
-    .line 8
     invoke-virtual/range {p0 .. p0}, Landroidx/appcompat/widget/AppCompatTextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v1
@@ -202,10 +182,8 @@
 
     move-result-object v11
 
-    .line 9
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 10
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getWidth()I
 
     move-result v1
@@ -226,7 +204,6 @@
 
     sub-float/2addr v1, v2
 
-    .line 11
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getPaddingTop()I
 
     move-result v2
@@ -243,23 +220,19 @@
 
     const/16 v16, 0x0
 
-    .line 12
     :goto_0
     array-length v1, v11
 
     if-ge v7, v1, :cond_9
 
-    .line 13
     invoke-static {v11, v7}, Ljava/lang/Character;->codePointAt([CI)I
 
     move-result v1
 
-    .line 14
     invoke-static {v1}, Ljava/lang/Character;->charCount(I)I
 
     move-result v6
 
-    .line 15
     invoke-static {v1}, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->a(I)Z
 
     move-result v1
@@ -268,7 +241,6 @@
 
     xor-int/lit8 v18, v1, 0x1
 
-    .line 16
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Canvas;->save()I
 
     move-result v5
@@ -277,13 +249,11 @@
 
     const/high16 v1, 0x42b40000    # 90.0f
 
-    .line 17
     invoke-virtual {v8, v1, v13, v15}, Landroid/graphics/Canvas;->rotate(FFF)V
 
     :cond_2
     if-eqz v18, :cond_3
 
-    .line 18
     iget-object v1, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->c:[F
 
     aget v1, v1, v16
@@ -346,15 +316,12 @@
 
     move-object v7, v9
 
-    .line 19
     invoke-virtual/range {v1 .. v7}, Landroid/graphics/Canvas;->drawText([CIIFFLandroid/graphics/Paint;)V
 
-    .line 20
     invoke-virtual {v8, v12}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
     add-int v7, v10, v13
 
-    .line 21
     array-length v1, v11
 
     if-ge v7, v1, :cond_4
@@ -371,7 +338,6 @@
 
     add-int/lit8 v1, v10, 0x1
 
-    .line 22
     iget-object v2, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->d:[I
 
     aget v2, v2, v16
@@ -388,14 +354,12 @@
 
     add-int/lit8 v1, v16, 0x1
 
-    .line 23
     iget-object v2, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->c:[F
 
     array-length v3, v2
 
     if-ge v1, v3, :cond_6
 
-    .line 24
     aget v2, v2, v1
 
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getLineSpacingMultiplier()F
@@ -412,7 +376,6 @@
 
     sub-float/2addr v14, v2
 
-    .line 25
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getPaddingTop()I
 
     move-result v2
@@ -432,7 +395,6 @@
     :cond_6
     if-eqz v18, :cond_7
 
-    .line 26
     invoke-virtual {v9, v11, v10, v13}, Landroid/text/TextPaint;->measureText([CII)F
 
     move-result v1
@@ -444,7 +406,6 @@
     :cond_7
     move-object/from16 v1, v19
 
-    .line 27
     iget v2, v1, Landroid/graphics/Paint$FontMetricsInt;->descent:I
 
     iget v3, v1, Landroid/graphics/Paint$FontMetricsInt;->ascent:I
@@ -471,7 +432,6 @@
 
     goto/16 :goto_0
 
-    .line 28
     :cond_9
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Canvas;->restore()V
 
@@ -493,35 +453,28 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     invoke-super/range {p0 .. p2}, Landroidx/appcompat/widget/AppCompatTextView;->onMeasure(II)V
 
-    .line 2
     iget-boolean v1, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->a:Z
 
     if-eqz v1, :cond_f
 
-    .line 3
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v1
 
-    .line 4
     invoke-static/range {p2 .. p2}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v2
 
-    .line 5
     invoke-static/range {p1 .. p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v3
 
-    .line 6
     invoke-static/range {p2 .. p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v4
 
-    .line 7
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getPaddingLeft()I
 
     move-result v5
@@ -534,7 +487,6 @@
 
     int-to-float v5, v5
 
-    .line 8
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getPaddingTop()I
 
     move-result v6
@@ -547,7 +499,6 @@
 
     int-to-float v6, v6
 
-    .line 9
     invoke-virtual/range {p0 .. p0}, Landroidx/appcompat/widget/AppCompatTextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v7
@@ -560,12 +511,10 @@
 
     move-result-object v7
 
-    .line 10
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
 
     move-result-object v8
 
-    .line 11
     invoke-virtual {v8}, Landroid/graphics/Paint;->getFontMetricsInt()Landroid/graphics/Paint$FontMetricsInt;
 
     move-result-object v9
@@ -579,7 +528,6 @@
     :cond_0
     move v10, v4
 
-    .line 12
     :goto_0
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getPaddingBottom()I
 
@@ -587,7 +535,6 @@
 
     sub-int/2addr v10, v11
 
-    .line 13
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getPaddingTop()I
 
     move-result v11
@@ -596,10 +543,8 @@
 
     const/4 v12, 0x0
 
-    .line 14
     iput v12, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->b:I
 
-    .line 15
     array-length v13, v7
 
     const/4 v14, 0x1
@@ -610,7 +555,6 @@
 
     iput-object v13, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->c:[F
 
-    .line 16
     array-length v13, v7
 
     add-int/2addr v13, v14
@@ -627,23 +571,19 @@
 
     const/16 v17, 0x1
 
-    .line 17
     :goto_1
     array-length v12, v7
 
     if-ge v15, v12, :cond_8
 
-    .line 18
     invoke-static {v7, v15}, Ljava/lang/Character;->codePointAt([CI)I
 
     move-result v12
 
-    .line 19
     invoke-static {v12}, Ljava/lang/Character;->charCount(I)I
 
     move-result v14
 
-    .line 20
     invoke-static {v12}, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->a(I)Z
 
     move-result v12
@@ -654,7 +594,6 @@
 
     if-eqz v12, :cond_1
 
-    .line 21
     iget v12, v9, Landroid/graphics/Paint$FontMetricsInt;->descent:I
 
     move/from16 v18, v3
@@ -665,7 +604,6 @@
 
     int-to-float v3, v12
 
-    .line 22
     invoke-virtual {v8, v7, v15, v14}, Landroid/graphics/Paint;->measureText([CII)F
 
     move-result v12
@@ -675,12 +613,10 @@
     :cond_1
     move/from16 v18, v3
 
-    .line 23
     invoke-virtual {v8, v7, v15, v14}, Landroid/graphics/Paint;->measureText([CII)F
 
     move-result v3
 
-    .line 24
     iget v12, v9, Landroid/graphics/Paint$FontMetricsInt;->descent:I
 
     move/from16 v17, v3
@@ -725,7 +661,6 @@
     :cond_3
     move v11, v13
 
-    .line 25
     :goto_4
     iget-object v8, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->d:[I
 
@@ -733,7 +668,6 @@
 
     aput v13, v8, v16
 
-    .line 26
     iget-object v8, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->c:[F
 
     aget v8, v8, v16
@@ -742,7 +676,6 @@
 
     add-int/lit8 v16, v16, 0x1
 
-    .line 27
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getPaddingTop()I
 
     move-result v8
@@ -766,7 +699,6 @@
 
     move v13, v11
 
-    .line 28
     :cond_5
     :goto_5
     iget-object v8, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->c:[F
@@ -777,25 +709,21 @@
 
     if-gez v12, :cond_6
 
-    .line 29
     aput v3, v8, v16
 
     :cond_6
     add-int/2addr v15, v14
 
-    .line 30
     array-length v3, v7
 
     if-lt v15, v3, :cond_7
 
-    .line 31
     iget-object v3, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->c:[F
 
     aget v3, v3, v16
 
     add-float/2addr v5, v3
 
-    .line 32
     invoke-virtual/range {p0 .. p0}, Landroid/widget/TextView;->getPaddingBottom()I
 
     move-result v3
@@ -820,17 +748,14 @@
     :cond_8
     move/from16 v18, v3
 
-    .line 33
     array-length v3, v7
 
     if-lez v3, :cond_9
 
     add-int/lit8 v3, v16, 0x1
 
-    .line 34
     iput v3, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->b:I
 
-    .line 35
     iget-object v3, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->d:[I
 
     array-length v7, v7
@@ -839,7 +764,6 @@
 
     aput v7, v3, v16
 
-    .line 36
     :cond_9
     iget v3, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->b:I
 
@@ -854,7 +778,6 @@
     :goto_6
     if-ge v12, v3, :cond_a
 
-    .line 37
     iget-object v7, v0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->c:[F
 
     aget v7, v7, v12
@@ -897,7 +820,6 @@
 
     int-to-float v2, v4
 
-    .line 38
     invoke-static {v6, v2}, Ljava/lang/Math;->min(FF)F
 
     move-result v6
@@ -919,7 +841,6 @@
 
     int-to-float v1, v2
 
-    .line 39
     invoke-static {v5, v1}, Ljava/lang/Math;->min(FF)F
 
     move-result v5
@@ -930,7 +851,6 @@
 
     float-to-int v2, v6
 
-    .line 40
     invoke-virtual {v0, v1, v2}, Landroid/widget/TextView;->setMeasuredDimension(II)V
 
     :cond_f
@@ -940,10 +860,8 @@
 .method public setVerticalMode(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/QMUIVerticalTextView;->a:Z
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/TextView;->requestLayout()V
 
     return-void

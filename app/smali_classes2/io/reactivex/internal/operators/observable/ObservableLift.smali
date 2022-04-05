@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableLift;
 .super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
-.source "ObservableLift.java"
 
 
 # annotations
@@ -41,10 +40,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableLift;->operator:Lio/reactivex/ObservableOperator;
 
     return-void
@@ -62,7 +59,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableLift;->operator:Lio/reactivex/ObservableOperator;
 
@@ -99,7 +95,6 @@
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     invoke-interface {v0, p1}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
@@ -109,28 +104,22 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 4
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
-    .line 5
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v1, "Actually not, but can\'t throw other exceptions due to RS"
 
     invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {v0, p1}, Ljava/lang/NullPointerException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    .line 7
     throw v0
 
     :catch_0
     move-exception p1
 
-    .line 8
     throw p1
 .end method

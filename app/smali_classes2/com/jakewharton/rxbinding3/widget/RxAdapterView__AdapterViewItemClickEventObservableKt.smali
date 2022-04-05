@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/widget/RxAdapterView__AdapterViewItemClickEventObservableKt;
 .super Ljava/lang/Object;
-.source "AdapterViewItemClickEventObservable.kt"
 
 
 # annotations
@@ -62,7 +61,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemClickEventObservable;
 
     invoke-direct {v0, p0}, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemClickEventObservable;-><init>(Landroid/widget/AdapterView;)V

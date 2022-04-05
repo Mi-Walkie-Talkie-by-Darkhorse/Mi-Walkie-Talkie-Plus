@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Collections2$PermutationCollection;
 .super Ljava/util/AbstractCollection;
-.source "Collections2.java"
 
 
 # annotations
@@ -47,10 +46,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/Collections2$PermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
 
     return-void
@@ -65,15 +62,12 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Ljava/util/List;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/Collections2$PermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Collections2;->access$100(Ljava/util/List;Ljava/util/List;)Z
@@ -107,7 +101,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Collections2$PermutationIterator;
 
     iget-object v1, p0, Lcom/google/common/collect/Collections2$PermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
@@ -120,7 +113,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Collections2$PermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Ljava/util/AbstractCollection;->size()I
@@ -137,7 +129,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Collections2$PermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;

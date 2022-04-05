@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/util/constants/GeoConstants;
 .super Ljava/lang/Object;
-.source "GeoConstants.java"
 
 
 # static fields

@@ -1,13 +1,11 @@
 .class public Lcom/umeng/vt/diff/util/ClassLoadUtil;
 .super Ljava/lang/Object;
-.source "ClassLoadUtil.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +25,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -37,7 +34,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 

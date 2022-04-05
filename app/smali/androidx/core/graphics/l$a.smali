@@ -1,6 +1,5 @@
 .class Landroidx/core/graphics/l$a;
 .super Ljava/lang/Object;
-.source "TypefaceCompatBaseImpl.java"
 
 # interfaces
 .implements Landroidx/core/graphics/l$c;
@@ -30,7 +29,6 @@
 .method constructor <init>(Landroidx/core/graphics/l;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public a(Landroidx/core/provider/FontsContractCompat$b;)I
     .locals 0
 
-    .line 2
     invoke-virtual {p1}, Landroidx/core/provider/FontsContractCompat$b;->d()I
 
     move-result p1
@@ -52,7 +49,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Landroidx/core/provider/FontsContractCompat$b;
 
     invoke-virtual {p0, p1}, Landroidx/core/graphics/l$a;->a(Landroidx/core/provider/FontsContractCompat$b;)I
@@ -65,7 +61,6 @@
 .method public b(Landroidx/core/provider/FontsContractCompat$b;)Z
     .locals 0
 
-    .line 2
     invoke-virtual {p1}, Landroidx/core/provider/FontsContractCompat$b;->e()Z
 
     move-result p1
@@ -76,7 +71,6 @@
 .method public bridge synthetic b(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Landroidx/core/provider/FontsContractCompat$b;
 
     invoke-virtual {p0, p1}, Landroidx/core/graphics/l$a;->b(Landroidx/core/provider/FontsContractCompat$b;)Z

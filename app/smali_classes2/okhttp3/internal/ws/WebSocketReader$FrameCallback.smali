@@ -1,6 +1,5 @@
 .class public interface abstract Lokhttp3/internal/ws/WebSocketReader$FrameCallback;
 .super Ljava/lang/Object;
-.source "WebSocketReader.java"
 
 
 # annotations

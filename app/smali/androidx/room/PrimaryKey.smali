@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/PrimaryKey;
 .super Ljava/lang/Object;
-.source "PrimaryKey.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

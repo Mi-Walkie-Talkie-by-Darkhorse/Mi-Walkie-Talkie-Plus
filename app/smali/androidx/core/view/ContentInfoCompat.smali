@@ -1,6 +1,5 @@
 .class public final Landroidx/core/view/ContentInfoCompat;
 .super Ljava/lang/Object;
-.source "ContentInfoCompat.java"
 
 
 # annotations
@@ -38,10 +37,8 @@
 .method constructor <init>(Landroidx/core/view/ContentInfoCompat$a;)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iget-object v0, p1, Landroidx/core/view/ContentInfoCompat$a;->a:Landroid/content/ClipData;
 
     invoke-static {v0}, Landroidx/core/d/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
@@ -50,7 +47,6 @@
 
     iput-object v0, p0, Landroidx/core/view/ContentInfoCompat;->a:Landroid/content/ClipData;
 
-    .line 3
     iget v0, p1, Landroidx/core/view/ContentInfoCompat$a;->b:I
 
     const/4 v1, 0x0
@@ -63,7 +59,6 @@
 
     iput v0, p0, Landroidx/core/view/ContentInfoCompat;->b:I
 
-    .line 4
     iget v0, p1, Landroidx/core/view/ContentInfoCompat$a;->c:I
 
     const/4 v1, 0x1
@@ -72,12 +67,10 @@
 
     iput v0, p0, Landroidx/core/view/ContentInfoCompat;->c:I
 
-    .line 5
     iget-object v0, p1, Landroidx/core/view/ContentInfoCompat$a;->d:Landroid/net/Uri;
 
     iput-object v0, p0, Landroidx/core/view/ContentInfoCompat;->d:Landroid/net/Uri;
 
-    .line 6
     iget-object p1, p1, Landroidx/core/view/ContentInfoCompat$a;->e:Landroid/os/Bundle;
 
     iput-object p1, p0, Landroidx/core/view/ContentInfoCompat;->e:Landroid/os/Bundle;
@@ -104,7 +97,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     invoke-static {p0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
@@ -138,7 +130,6 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 1
     invoke-static {p0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object p0
@@ -173,7 +164,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/core/view/ContentInfoCompat;->a:Landroid/content/ClipData;
 
     return-object v0
@@ -182,7 +172,6 @@
 .method public b()I
     .locals 1
 
-    .line 2
     iget v0, p0, Landroidx/core/view/ContentInfoCompat;->c:I
 
     return v0
@@ -191,7 +180,6 @@
 .method public c()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/core/view/ContentInfoCompat;->b:I
 
     return v0
@@ -202,7 +190,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -221,7 +208,6 @@
 
     iget v1, p0, Landroidx/core/view/ContentInfoCompat;->b:I
 
-    .line 2
     invoke-static {v1}, Landroidx/core/view/ContentInfoCompat;->b(I)Ljava/lang/String;
 
     move-result-object v1
@@ -234,7 +220,6 @@
 
     iget v1, p0, Landroidx/core/view/ContentInfoCompat;->c:I
 
-    .line 3
     invoke-static {v1}, Landroidx/core/view/ContentInfoCompat;->a(I)Ljava/lang/String;
 
     move-result-object v1

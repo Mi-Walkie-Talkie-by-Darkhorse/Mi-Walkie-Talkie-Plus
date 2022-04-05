@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Fts4;
 .super Ljava/lang/Object;
-.source "Fts4.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

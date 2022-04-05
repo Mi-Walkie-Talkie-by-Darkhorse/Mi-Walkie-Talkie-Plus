@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$a;
 .super Ljava/lang/Object;
-.source "GoogleMapDownLoadedActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;Ljava/util/List;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$a;->b:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$a;->a:Ljava/util/List;
@@ -44,7 +42,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$a;->b:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
@@ -56,7 +53,6 @@
 
     if-ge v0, v1, :cond_3
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$a;->a:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -76,12 +72,10 @@
 
     check-cast v2, Lcom/ifengyu/intercom/greendao/bean/a;
 
-    .line 3
     invoke-virtual {v2}, Lcom/ifengyu/intercom/greendao/bean/a;->b()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 4
     new-instance v4, Ljava/io/File;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -120,14 +114,12 @@
 
     invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    .line 6
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$a;->b:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
     invoke-static {v3}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;->b(Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;)Lcom/ifengyu/intercom/greendao/dao/b;
@@ -136,7 +128,6 @@
 
     invoke-virtual {v3, v2}, Lorg/greenrobot/greendao/AbstractDaoSession;->delete(Ljava/lang/Object;)V
 
-    .line 7
     :cond_1
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$a;->b:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
@@ -162,7 +153,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_2
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$a;->b:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 

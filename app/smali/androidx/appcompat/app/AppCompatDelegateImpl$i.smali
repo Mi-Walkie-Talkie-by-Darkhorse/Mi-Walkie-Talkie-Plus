@@ -1,6 +1,5 @@
 .class final Landroidx/appcompat/app/AppCompatDelegateImpl$i;
 .super Ljava/lang/Object;
-.source "AppCompatDelegateImpl.java"
 
 # interfaces
 .implements Landroidx/appcompat/view/menu/l$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$i;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$i;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->q()Landroid/view/Window$Callback;
@@ -53,7 +50,6 @@
 
     const/16 v1, 0x6c
 
-    .line 2
     invoke-interface {v0, v1, p1}, Landroid/view/Window$Callback;->onMenuOpened(ILandroid/view/Menu;)Z
 
     :cond_0
@@ -69,7 +65,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$i;->a:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-virtual {p2, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->a(Landroidx/appcompat/view/menu/f;)V

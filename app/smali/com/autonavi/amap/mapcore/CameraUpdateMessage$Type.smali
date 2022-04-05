@@ -1,6 +1,5 @@
 .class public final enum Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 .super Ljava/lang/Enum;
-.source "CameraUpdateMessage.java"
 
 
 # annotations
@@ -60,7 +59,6 @@
 .method static constructor <clinit>()V
     .locals 17
 
-    .line 1
     new-instance v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
     const/4 v1, 0x0
@@ -81,7 +79,6 @@
 
     sput-object v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;->zoomIn:Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
-    .line 2
     new-instance v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
     const/4 v3, 0x2
@@ -92,7 +89,6 @@
 
     sput-object v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;->changeCenter:Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
-    .line 3
     new-instance v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
     const/4 v4, 0x3
@@ -103,7 +99,6 @@
 
     sput-object v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;->changeTilt:Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
-    .line 4
     new-instance v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
     const/4 v5, 0x4
@@ -124,7 +119,6 @@
 
     sput-object v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;->changeBearingGeoCenter:Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
-    .line 5
     new-instance v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
     const/4 v7, 0x6
@@ -219,7 +213,6 @@
 
     new-array v14, v14, [Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
-    .line 6
     sget-object v16, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;->none:Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
     aput-object v16, v14, v1
@@ -293,7 +286,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -302,7 +294,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -317,7 +308,6 @@
 .method public static values()[Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;->$VALUES:[Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;
 
     invoke-virtual {v0}, [Lcom/autonavi/amap/mapcore/CameraUpdateMessage$Type;->clone()Ljava/lang/Object;

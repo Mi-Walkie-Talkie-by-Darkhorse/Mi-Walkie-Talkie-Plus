@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IArc;
 .super Ljava/lang/Object;
-.source "IArc.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/interfaces/IOverlay;

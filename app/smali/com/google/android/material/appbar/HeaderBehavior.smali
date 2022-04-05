@@ -1,6 +1,5 @@
 .class abstract Lcom/google/android/material/appbar/HeaderBehavior;
 .super Lcom/google/android/material/appbar/ViewOffsetBehavior;
-.source "HeaderBehavior.java"
 
 
 # annotations
@@ -51,15 +50,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/appbar/ViewOffsetBehavior;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->activePointerId:I
 
-    .line 3
     iput v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->touchSlop:I
 
     return-void
@@ -68,15 +64,12 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/appbar/ViewOffsetBehavior;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, -0x1
 
-    .line 5
     iput p1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->activePointerId:I
 
-    .line 6
     iput p1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->touchSlop:I
 
     return-void
@@ -85,12 +78,10 @@
 .method private ensureVelocityTracker()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->velocityTracker:Landroid/view/VelocityTracker;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Landroid/view/VelocityTracker;->obtain()Landroid/view/VelocityTracker;
 
     move-result-object v0
@@ -134,26 +125,21 @@
 
     move-object v1, p2
 
-    .line 1
     iget-object v2, v0, Lcom/google/android/material/appbar/HeaderBehavior;->flingRunnable:Ljava/lang/Runnable;
 
     if-eqz v2, :cond_0
 
-    .line 2
     invoke-virtual {p2, v2}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
     const/4 v2, 0x0
 
-    .line 3
     iput-object v2, v0, Lcom/google/android/material/appbar/HeaderBehavior;->flingRunnable:Ljava/lang/Runnable;
 
-    .line 4
     :cond_0
     iget-object v2, v0, Lcom/google/android/material/appbar/HeaderBehavior;->scroller:Landroid/widget/OverScroller;
 
     if-nez v2, :cond_1
 
-    .line 5
     new-instance v2, Landroid/widget/OverScroller;
 
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -164,20 +150,17 @@
 
     iput-object v2, v0, Lcom/google/android/material/appbar/HeaderBehavior;->scroller:Landroid/widget/OverScroller;
 
-    .line 6
     :cond_1
     iget-object v4, v0, Lcom/google/android/material/appbar/HeaderBehavior;->scroller:Landroid/widget/OverScroller;
 
     const/4 v5, 0x0
 
-    .line 7
     invoke-virtual {p0}, Lcom/google/android/material/appbar/ViewOffsetBehavior;->getTopAndBottomOffset()I
 
     move-result v6
 
     const/4 v7, 0x0
 
-    .line 8
     invoke-static/range {p5 .. p5}, Ljava/lang/Math;->round(F)I
 
     move-result v8
@@ -190,10 +173,8 @@
 
     move/from16 v12, p4
 
-    .line 9
     invoke-virtual/range {v4 .. v12}, Landroid/widget/OverScroller;->fling(IIIIIIII)V
 
-    .line 10
     iget-object v2, v0, Lcom/google/android/material/appbar/HeaderBehavior;->scroller:Landroid/widget/OverScroller;
 
     invoke-virtual {v2}, Landroid/widget/OverScroller;->computeScrollOffset()Z
@@ -202,7 +183,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 11
     new-instance v2, Lcom/google/android/material/appbar/HeaderBehavior$FlingRunnable;
 
     move-object v3, p1
@@ -211,7 +191,6 @@
 
     iput-object v2, v0, Lcom/google/android/material/appbar/HeaderBehavior;->flingRunnable:Ljava/lang/Runnable;
 
-    .line 12
     invoke-static {p2, v2}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;Ljava/lang/Runnable;)V
 
     const/4 v1, 0x1
@@ -221,7 +200,6 @@
     :cond_2
     move-object v3, p1
 
-    .line 13
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/appbar/HeaderBehavior;->onFlingFinished(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;)V
 
     const/4 v1, 0x0
@@ -241,7 +219,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p1
@@ -263,7 +240,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p1
@@ -274,7 +250,6 @@
 .method getTopBottomOffsetForScrollingSibling()I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/appbar/ViewOffsetBehavior;->getTopAndBottomOffset()I
 
     move-result v0
@@ -319,12 +294,10 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->touchSlop:I
 
     if-gez v0, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -339,7 +312,6 @@
 
     iput v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->touchSlop:I
 
-    .line 3
     :cond_0
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -359,14 +331,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 4
     iget v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->activePointerId:I
 
     if-ne v0, v3, :cond_1
 
     return v4
 
-    .line 5
     :cond_1
     invoke-virtual {p3, v0}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
@@ -376,7 +346,6 @@
 
     return v4
 
-    .line 6
     :cond_2
     invoke-virtual {p3, v0}, Landroid/view/MotionEvent;->getY(I)F
 
@@ -384,7 +353,6 @@
 
     float-to-int v0, v0
 
-    .line 7
     iget v1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->lastMotionY:I
 
     sub-int v1, v0, v1
@@ -393,17 +361,14 @@
 
     move-result v1
 
-    .line 8
     iget v5, p0, Lcom/google/android/material/appbar/HeaderBehavior;->touchSlop:I
 
     if-le v1, v5, :cond_3
 
-    .line 9
     iput v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->lastMotionY:I
 
     return v2
 
-    .line 10
     :cond_3
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -411,24 +376,20 @@
 
     if-nez v0, :cond_5
 
-    .line 11
     iput v3, p0, Lcom/google/android/material/appbar/HeaderBehavior;->activePointerId:I
 
-    .line 12
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
 
     float-to-int v0, v0
 
-    .line 13
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getY()F
 
     move-result v1
 
     float-to-int v1, v1
 
-    .line 14
     invoke-virtual {p0, p2}, Lcom/google/android/material/appbar/HeaderBehavior;->canDragView(Landroid/view/View;)Z
 
     move-result v3
@@ -453,20 +414,16 @@
 
     if-eqz p1, :cond_5
 
-    .line 15
     iput v1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->lastMotionY:I
 
-    .line 16
     invoke-virtual {p3, v4}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result p1
 
     iput p1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->activePointerId:I
 
-    .line 17
     invoke-direct {p0}, Lcom/google/android/material/appbar/HeaderBehavior;->ensureVelocityTracker()V
 
-    .line 18
     iget-object p1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->scroller:Landroid/widget/OverScroller;
 
     if-eqz p1, :cond_5
@@ -477,20 +434,17 @@
 
     if-nez p1, :cond_5
 
-    .line 19
     iget-object p1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->scroller:Landroid/widget/OverScroller;
 
     invoke-virtual {p1}, Landroid/widget/OverScroller;->abortAnimation()V
 
     return v2
 
-    .line 20
     :cond_5
     iget-object p1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->velocityTracker:Landroid/view/VelocityTracker;
 
     if-eqz p1, :cond_6
 
-    .line 21
     invoke-virtual {p1, p3}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
     :cond_6
@@ -521,7 +475,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -548,7 +501,6 @@
 
     goto :goto_1
 
-    .line 2
     :cond_0
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getActionIndex()I
 
@@ -563,7 +515,6 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 3
     :goto_0
     invoke-virtual {p3, p1}, Landroid/view/MotionEvent;->getPointerId(I)I
 
@@ -571,7 +522,6 @@
 
     iput p2, p0, Lcom/google/android/material/appbar/HeaderBehavior;->activePointerId:I
 
-    .line 4
     invoke-virtual {p3, p1}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result p1
@@ -586,7 +536,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_2
     iget v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->activePointerId:I
 
@@ -598,7 +547,6 @@
 
     return v3
 
-    .line 6
     :cond_3
     invoke-virtual {p3, v0}, Landroid/view/MotionEvent;->getY(I)F
 
@@ -606,15 +554,12 @@
 
     float-to-int v0, v0
 
-    .line 7
     iget v1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->lastMotionY:I
 
     sub-int v7, v1, v0
 
-    .line 8
     iput v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->lastMotionY:I
 
-    .line 9
     invoke-virtual {p0, p2}, Lcom/google/android/material/appbar/HeaderBehavior;->getMaxDragOffset(Landroid/view/View;)I
 
     move-result v8
@@ -634,23 +579,19 @@
 
     goto :goto_3
 
-    .line 10
     :cond_4
     iget-object v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->velocityTracker:Landroid/view/VelocityTracker;
 
     if-eqz v0, :cond_5
 
-    .line 11
     invoke-virtual {v0, p3}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
-    .line 12
     iget-object v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->velocityTracker:Landroid/view/VelocityTracker;
 
     const/16 v4, 0x3e8
 
     invoke-virtual {v0, v4}, Landroid/view/VelocityTracker;->computeCurrentVelocity(I)V
 
-    .line 13
     iget-object v0, p0, Lcom/google/android/material/appbar/HeaderBehavior;->velocityTracker:Landroid/view/VelocityTracker;
 
     iget v4, p0, Lcom/google/android/material/appbar/HeaderBehavior;->activePointerId:I
@@ -659,7 +600,6 @@
 
     move-result v10
 
-    .line 14
     invoke-virtual {p0, p2}, Lcom/google/android/material/appbar/HeaderBehavior;->getScrollRangeForDragFling(Landroid/view/View;)I
 
     move-result v0
@@ -683,37 +623,29 @@
     :cond_5
     const/4 p1, 0x0
 
-    .line 15
     :goto_2
     iput-boolean v3, p0, Lcom/google/android/material/appbar/HeaderBehavior;->isBeingDragged:Z
 
-    .line 16
     iput v1, p0, Lcom/google/android/material/appbar/HeaderBehavior;->activePointerId:I
 
-    .line 17
     iget-object p2, p0, Lcom/google/android/material/appbar/HeaderBehavior;->velocityTracker:Landroid/view/VelocityTracker;
 
     if-eqz p2, :cond_6
 
-    .line 18
     invoke-virtual {p2}, Landroid/view/VelocityTracker;->recycle()V
 
     const/4 p2, 0x0
 
-    .line 19
     iput-object p2, p0, Lcom/google/android/material/appbar/HeaderBehavior;->velocityTracker:Landroid/view/VelocityTracker;
 
-    .line 20
     :cond_6
     :goto_3
     iget-object p2, p0, Lcom/google/android/material/appbar/HeaderBehavior;->velocityTracker:Landroid/view/VelocityTracker;
 
     if-eqz p2, :cond_7
 
-    .line 21
     invoke-virtual {p2, p3}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
-    .line 22
     :cond_7
     iget-boolean p2, p0, Lcom/google/android/material/appbar/HeaderBehavior;->isBeingDragged:Z
 
@@ -741,7 +673,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/appbar/HeaderBehavior;->getTopBottomOffsetForScrollingSibling()I
 
     move-result v0
@@ -758,7 +689,6 @@
 
     move v6, p5
 
-    .line 2
     invoke-virtual/range {v1 .. v6}, Lcom/google/android/material/appbar/HeaderBehavior;->setHeaderTopBottomOffset(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)I
 
     move-result p1
@@ -788,7 +718,6 @@
 
     move v3, p3
 
-    .line 1
     invoke-virtual/range {v0 .. v5}, Lcom/google/android/material/appbar/HeaderBehavior;->setHeaderTopBottomOffset(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;III)I
 
     move-result p1
@@ -806,7 +735,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/android/material/appbar/ViewOffsetBehavior;->getTopAndBottomOffset()I
 
     move-result p1
@@ -817,14 +745,12 @@
 
     if-gt p1, p5, :cond_0
 
-    .line 3
     invoke-static {p3, p4, p5}, Landroidx/core/b/a;->a(III)I
 
     move-result p2
 
     if-eq p1, p2, :cond_0
 
-    .line 4
     invoke-virtual {p0, p2}, Lcom/google/android/material/appbar/ViewOffsetBehavior;->setTopAndBottomOffset(I)Z
 
     sub-int/2addr p1, p2

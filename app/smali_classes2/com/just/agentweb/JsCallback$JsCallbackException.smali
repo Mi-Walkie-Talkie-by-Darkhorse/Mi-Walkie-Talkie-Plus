@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/JsCallback$JsCallbackException;
 .super Ljava/lang/Exception;
-.source "JsCallback.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     return-void

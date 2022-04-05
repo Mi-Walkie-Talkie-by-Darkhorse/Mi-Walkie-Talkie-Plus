@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/library/widget/groupicon/NineGridImageView;
 .super Landroid/view/ViewGroup;
-.source "NineGridImageView.java"
 
 
 # annotations
@@ -60,7 +59,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -71,7 +69,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -80,29 +77,24 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/16 p3, 0x9
 
-    .line 4
     iput p3, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->b:I
 
-    .line 5
     new-instance p3, Ljava/util/ArrayList;
 
     invoke-direct {p3}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p3, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->f:Ljava/util/List;
 
-    .line 6
     sget-object p3, Lcom/ifengyu/library/R$styleable;->NineGridImageView:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 7
     sget p2, Lcom/ifengyu/library/R$styleable;->NineGridImageView_imgGap:I
 
     const/high16 p3, 0x41000000    # 8.0f
@@ -115,7 +107,6 @@
 
     iput p2, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->c:I
 
-    .line 8
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -126,14 +117,12 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     iget-object v1, v0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->g:Ljava/util/List;
 
     if-nez v1, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -144,19 +133,16 @@
     :goto_0
     if-ge v2, v1, :cond_14
 
-    .line 3
     invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
     check-cast v3, Landroid/widget/ImageView;
 
-    .line 4
     iget-object v4, v0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->h:Lcom/ifengyu/library/widget/groupicon/a;
 
     if-eqz v4, :cond_1
 
-    .line 5
     invoke-virtual/range {p0 .. p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v5
@@ -169,16 +155,13 @@
 
     invoke-virtual {v4, v5, v3, v6}, Lcom/ifengyu/library/widget/groupicon/a;->a(Landroid/content/Context;Landroid/widget/ImageView;Ljava/lang/Object;)V
 
-    .line 6
     :cond_1
     iget v4, v0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->a:I
 
     div-int v5, v2, v4
 
-    .line 7
     rem-int v6, v2, v4
 
-    .line 8
     iget v7, v0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->d:I
 
     add-int/lit8 v8, v4, 0x1
@@ -191,7 +174,6 @@
 
     div-int/2addr v8, v4
 
-    .line 9
     iget v4, v0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->e:I
 
     add-int v10, v4, v9
@@ -202,22 +184,18 @@
 
     sub-int v12, v4, v9
 
-    .line 10
     div-int/2addr v12, v11
 
     add-int v13, v7, v9
 
-    .line 11
     div-int/2addr v13, v11
 
     sub-int/2addr v7, v9
 
-    .line 12
     div-int/2addr v7, v11
 
     sub-int/2addr v4, v8
 
-    .line 13
     div-int/2addr v4, v11
 
     mul-int v14, v8, v6
@@ -244,7 +222,6 @@
 
     if-ne v1, v15, :cond_2
 
-    .line 14
     invoke-virtual {v3, v14, v6, v5, v11}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto/16 :goto_1
@@ -256,7 +233,6 @@
 
     add-int/2addr v8, v4
 
-    .line 15
     invoke-virtual {v3, v14, v4, v5, v8}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto/16 :goto_1
@@ -270,7 +246,6 @@
 
     add-int/2addr v8, v4
 
-    .line 16
     invoke-virtual {v3, v4, v6, v8, v11}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto/16 :goto_1
@@ -292,7 +267,6 @@
 
     add-int/2addr v8, v10
 
-    .line 17
     invoke-virtual {v3, v4, v10, v9, v8}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto/16 :goto_1
@@ -302,7 +276,6 @@
 
     if-ne v1, v15, :cond_6
 
-    .line 18
     invoke-virtual {v3, v14, v6, v5, v11}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto/16 :goto_1
@@ -316,7 +289,6 @@
 
     sub-int v4, v7, v8
 
-    .line 19
     invoke-virtual {v3, v4, v4, v7, v7}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto/16 :goto_1
@@ -330,7 +302,6 @@
 
     add-int/2addr v8, v13
 
-    .line 20
     invoke-virtual {v3, v13, v4, v8, v7}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto/16 :goto_1
@@ -354,7 +325,6 @@
 
     add-int/2addr v8, v10
 
-    .line 21
     invoke-virtual {v3, v5, v10, v9, v8}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto/16 :goto_1
@@ -384,7 +354,6 @@
 
     add-int/2addr v9, v8
 
-    .line 22
     invoke-virtual {v3, v5, v6, v9, v12}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto/16 :goto_1
@@ -408,7 +377,6 @@
 
     add-int/2addr v8, v10
 
-    .line 23
     invoke-virtual {v3, v5, v10, v9, v8}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto/16 :goto_1
@@ -424,7 +392,6 @@
 
     add-int/2addr v8, v9
 
-    .line 24
     invoke-virtual {v3, v4, v9, v5, v8}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto/16 :goto_1
@@ -452,12 +419,10 @@
 
     add-int/2addr v8, v4
 
-    .line 25
     invoke-virtual {v3, v5, v4, v9, v8}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto :goto_1
 
-    .line 26
     :cond_d
     iget v4, v0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->c:I
 
@@ -498,7 +463,6 @@
 
     add-int/2addr v8, v9
 
-    .line 27
     invoke-virtual {v3, v4, v9, v7, v8}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto :goto_1
@@ -512,7 +476,6 @@
 
     add-int/2addr v8, v9
 
-    .line 28
     invoke-virtual {v3, v13, v9, v4, v8}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto :goto_1
@@ -542,12 +505,10 @@
 
     add-int/2addr v8, v4
 
-    .line 29
     invoke-virtual {v3, v6, v4, v9, v8}, Landroid/widget/ImageView;->layout(IIII)V
 
     goto :goto_1
 
-    .line 30
     :cond_11
     iget v4, v0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->c:I
 
@@ -582,7 +543,6 @@
 
     if-ne v1, v4, :cond_13
 
-    .line 31
     invoke-virtual {v3, v14, v6, v5, v11}, Landroid/widget/ImageView;->layout(IIII)V
 
     :cond_13
@@ -627,7 +587,6 @@
 
     goto :goto_1
 
-    .line 32
     :cond_1
     div-int/lit8 v0, p0, 0x3
 
@@ -656,7 +615,6 @@
 .method private b(I)Landroid/widget/ImageView;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->f:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -665,7 +623,6 @@
 
     if-ge p1, v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->f:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -676,13 +633,11 @@
 
     return-object p1
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->h:Lcom/ifengyu/library/widget/groupicon/a;
 
     if-eqz p1, :cond_1
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -691,7 +646,6 @@
 
     move-result-object p1
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->f:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -703,7 +657,6 @@
 
     const-string v0, "Your must set a NineGridImageViewAdapter for NineGirdImageView"
 
-    .line 6
     invoke-static {p1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 p1, 0x0
@@ -714,12 +667,10 @@
 .method private c(I)I
     .locals 3
 
-    .line 1
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v0
 
-    .line 2
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result p1
@@ -737,7 +688,6 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 3
     invoke-static {v1, p1}, Ljava/lang/Math;->min(II)I
 
     move-result p1
@@ -754,12 +704,10 @@
 .method private d(I)I
     .locals 3
 
-    .line 1
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v0
 
-    .line 2
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result p1
@@ -777,7 +725,6 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 3
     invoke-static {v1, p1}, Ljava/lang/Math;->min(II)I
 
     move-result p1
@@ -796,7 +743,6 @@
 .method protected onLayout(ZIIII)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->a()V
 
     return-void
@@ -805,24 +751,20 @@
 .method protected onMeasure(II)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/view/ViewGroup;->onMeasure(II)V
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->d(I)I
 
     move-result p1
 
     iput p1, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->d:I
 
-    .line 3
     invoke-direct {p0, p2}, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->c(I)I
 
     move-result p1
 
     iput p1, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->e:I
 
-    .line 4
     iget p2, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->d:I
 
     invoke-virtual {p0, p2, p1}, Landroid/view/ViewGroup;->setMeasuredDimension(II)V
@@ -833,7 +775,6 @@
 .method public setAdapter(Lcom/ifengyu/library/widget/groupicon/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->h:Lcom/ifengyu/library/widget/groupicon/a;
 
     return-void
@@ -842,7 +783,6 @@
 .method public setGap(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->c:I
 
     return-void
@@ -853,12 +793,10 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     :cond_0
     iget v0, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->b:I
 
@@ -874,12 +812,10 @@
 
     if-le v0, v2, :cond_1
 
-    .line 3
     invoke-interface {p1, v1, v2}, Ljava/util/List;->subList(II)Ljava/util/List;
 
     move-result-object p1
 
-    .line 4
     :cond_1
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -889,22 +825,18 @@
 
     move-result-object v0
 
-    .line 5
     aget v2, v0, v1
 
     const/4 v2, 0x1
 
-    .line 6
     aget v0, v0, v2
 
     iput v0, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->a:I
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->g:Ljava/util/List;
 
     if-nez v0, :cond_3
 
-    .line 8
     :goto_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -912,7 +844,6 @@
 
     if-ge v1, v0, :cond_6
 
-    .line 9
     invoke-direct {p0, v1}, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->b(I)Landroid/widget/ImageView;
 
     move-result-object v0
@@ -921,7 +852,6 @@
 
     return-void
 
-    .line 10
     :cond_2
     invoke-virtual {p0}, Landroid/view/ViewGroup;->generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -933,13 +863,11 @@
 
     goto :goto_0
 
-    .line 11
     :cond_3
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    .line 12
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v1
@@ -948,7 +876,6 @@
 
     sub-int/2addr v0, v1
 
-    .line 13
     invoke-virtual {p0, v1, v0}, Landroid/view/ViewGroup;->removeViews(II)V
 
     goto :goto_2
@@ -959,7 +886,6 @@
     :goto_1
     if-ge v0, v1, :cond_6
 
-    .line 14
     invoke-direct {p0, v0}, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->b(I)Landroid/widget/ImageView;
 
     move-result-object v2
@@ -968,7 +894,6 @@
 
     return-void
 
-    .line 15
     :cond_5
     invoke-virtual {p0}, Landroid/view/ViewGroup;->generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -980,12 +905,10 @@
 
     goto :goto_1
 
-    .line 16
     :cond_6
     :goto_2
     iput-object p1, p0, Lcom/ifengyu/library/widget/groupicon/NineGridImageView;->g:Ljava/util/List;
 
-    .line 17
     invoke-virtual {p0}, Landroid/view/ViewGroup;->requestLayout()V
 
     return-void

@@ -1,6 +1,5 @@
 .class Landroidx/customview/a/a$c;
 .super Landroidx/core/view/accessibility/c;
-.source "ExploreByTouchHelper.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/customview/a/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/customview/a/a$c;->b:Landroidx/customview/a/a;
 
     invoke-direct {p0}, Landroidx/core/view/accessibility/c;-><init>()V
@@ -35,15 +33,12 @@
 .method public a(I)Landroidx/core/view/accessibility/b;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/customview/a/a$c;->b:Landroidx/customview/a/a;
 
-    .line 2
     invoke-virtual {v0, p1}, Landroidx/customview/a/a;->obtainAccessibilityNodeInfo(I)Landroidx/core/view/accessibility/b;
 
     move-result-object p1
 
-    .line 3
     invoke-static {p1}, Landroidx/core/view/accessibility/b;->a(Landroidx/core/view/accessibility/b;)Landroidx/core/view/accessibility/b;
 
     move-result-object p1
@@ -54,7 +49,6 @@
 .method public a(IILandroid/os/Bundle;)Z
     .locals 1
 
-    .line 4
     iget-object v0, p0, Landroidx/customview/a/a$c;->b:Landroidx/customview/a/a;
 
     invoke-virtual {v0, p1, p2, p3}, Landroidx/customview/a/a;->performAction(IILandroid/os/Bundle;)Z
@@ -71,7 +65,6 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 1
     iget-object p1, p0, Landroidx/customview/a/a$c;->b:Landroidx/customview/a/a;
 
     iget p1, p1, Landroidx/customview/a/a;->mAccessibilityFocusedVirtualViewId:I
@@ -92,7 +85,6 @@
 
     return-object p1
 
-    .line 2
     :cond_1
     invoke-virtual {p0, p1}, Landroidx/customview/a/a$c;->a(I)Landroidx/core/view/accessibility/b;
 

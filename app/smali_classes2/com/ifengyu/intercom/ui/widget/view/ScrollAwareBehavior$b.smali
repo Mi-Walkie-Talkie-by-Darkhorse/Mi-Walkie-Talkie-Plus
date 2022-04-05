@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior$b;
 .super Ljava/lang/Object;
-.source "ScrollAwareBehavior.java"
 
 # interfaces
 .implements Landroid/view/animation/Animation$AnimationListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior;Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior$b;->b:Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior$b;->a:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
@@ -42,14 +40,12 @@
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior$b;->b:Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior;
 
     const/4 v0, 0x0
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior;->a(Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior;Z)Z
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior$b;->a:Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->setVisibility(I)V
@@ -66,7 +62,6 @@
 .method public onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior$b;->b:Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior;
 
     const/4 v0, 0x1

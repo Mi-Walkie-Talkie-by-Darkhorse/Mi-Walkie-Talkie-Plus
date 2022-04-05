@@ -1,6 +1,5 @@
 .class final Lcom/google/common/escape/Platform;
 .super Ljava/lang/Object;
-.source "Platform.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/escape/Platform$1;
 
     invoke-direct {v0}, Lcom/google/common/escape/Platform$1;-><init>()V
@@ -37,7 +35,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +43,6 @@
 .method static charBufferFromThreadLocal()[C
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/escape/Platform;->DEST_TL:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;

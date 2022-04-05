@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/util/NotificationLite$ErrorNotification;
 .super Ljava/lang/Object;
-.source "NotificationLite.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -29,10 +28,8 @@
 .method constructor <init>(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/util/NotificationLite$ErrorNotification;->e:Ljava/lang/Throwable;
 
     return-void
@@ -43,15 +40,12 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lio/reactivex/internal/util/NotificationLite$ErrorNotification;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lio/reactivex/internal/util/NotificationLite$ErrorNotification;
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/util/NotificationLite$ErrorNotification;->e:Ljava/lang/Throwable;
 
     iget-object p1, p1, Lio/reactivex/internal/util/NotificationLite$ErrorNotification;->e:Ljava/lang/Throwable;
@@ -71,7 +65,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/util/NotificationLite$ErrorNotification;->e:Ljava/lang/Throwable;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -84,7 +77,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

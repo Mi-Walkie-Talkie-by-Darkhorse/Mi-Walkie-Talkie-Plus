@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/GwtWorkarounds$3;
 .super Ljava/io/InputStream;
-.source "GwtWorkarounds.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/common/io/GwtWorkarounds$ByteInput;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/io/GwtWorkarounds$3;->val$input:Lcom/google/common/io/GwtWorkarounds$ByteInput;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
@@ -40,7 +38,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/GwtWorkarounds$3;->val$input:Lcom/google/common/io/GwtWorkarounds$ByteInput;
 
     invoke-interface {v0}, Lcom/google/common/io/GwtWorkarounds$ByteInput;->close()V
@@ -56,7 +53,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/GwtWorkarounds$3;->val$input:Lcom/google/common/io/GwtWorkarounds$ByteInput;
 
     invoke-interface {v0}, Lcom/google/common/io/GwtWorkarounds$ByteInput;->read()I
@@ -74,12 +70,10 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int v0, p2, p3
 
-    .line 3
     array-length v1, p1
 
     invoke-static {p2, v0, v1}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
@@ -90,7 +84,6 @@
 
     return p1
 
-    .line 4
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/io/GwtWorkarounds$3;->read()I
 
@@ -105,7 +98,6 @@
     :cond_1
     int-to-byte v0, v0
 
-    .line 5
     aput-byte v0, p1, p2
 
     const/4 v0, 0x1
@@ -113,7 +105,6 @@
     :goto_0
     if-ge v0, p3, :cond_3
 
-    .line 6
     invoke-virtual {p0}, Lcom/google/common/io/GwtWorkarounds$3;->read()I
 
     move-result v2
@@ -127,7 +118,6 @@
 
     int-to-byte v2, v2
 
-    .line 7
     aput-byte v2, p1, v3
 
     add-int/lit8 v0, v0, 0x1

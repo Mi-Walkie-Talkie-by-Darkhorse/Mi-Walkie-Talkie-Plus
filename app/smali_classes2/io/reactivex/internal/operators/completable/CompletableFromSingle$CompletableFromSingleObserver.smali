@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/completable/CompletableFromSingle$CompletableFromSingleObserver;
 .super Ljava/lang/Object;
-.source "CompletableFromSingle.java"
 
 # interfaces
 .implements Lio/reactivex/SingleObserver;
@@ -36,10 +35,8 @@
 .method constructor <init>(Lio/reactivex/CompletableObserver;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableFromSingle$CompletableFromSingleObserver;->co:Lio/reactivex/CompletableObserver;
 
     return-void
@@ -50,7 +47,6 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableFromSingle$CompletableFromSingleObserver;->co:Lio/reactivex/CompletableObserver;
 
     invoke-interface {v0, p1}, Lio/reactivex/CompletableObserver;->onError(Ljava/lang/Throwable;)V
@@ -61,7 +57,6 @@
 .method public onSubscribe(Lio/reactivex/disposables/Disposable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableFromSingle$CompletableFromSingleObserver;->co:Lio/reactivex/CompletableObserver;
 
     invoke-interface {v0, p1}, Lio/reactivex/CompletableObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
@@ -77,7 +72,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableFromSingle$CompletableFromSingleObserver;->co:Lio/reactivex/CompletableObserver;
 
     invoke-interface {p1}, Lio/reactivex/CompletableObserver;->onComplete()V

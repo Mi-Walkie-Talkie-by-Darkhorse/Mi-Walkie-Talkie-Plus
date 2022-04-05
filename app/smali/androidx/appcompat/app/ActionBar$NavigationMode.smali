@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/appcompat/app/ActionBar$NavigationMode;
 .super Ljava/lang/Object;
-.source "ActionBar.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

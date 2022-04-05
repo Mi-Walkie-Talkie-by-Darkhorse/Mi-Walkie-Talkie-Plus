@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ObserverOnError;
 .super Ljava/lang/Object;
-.source "ObservableInternalHelper.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -51,10 +50,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ObserverOnError;->observer:Lio/reactivex/Observer;
 
     return-void
@@ -70,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ObserverOnError;->accept(Ljava/lang/Throwable;)V
@@ -86,7 +82,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ObserverOnError;->observer:Lio/reactivex/Observer;
 
     invoke-interface {v0, p1}, Lio/reactivex/Observer;->onError(Ljava/lang/Throwable;)V

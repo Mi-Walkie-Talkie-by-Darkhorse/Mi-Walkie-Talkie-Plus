@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultUIController$4;
 .super Ljava/lang/Object;
-.source "DefaultUIController.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/just/agentweb/DefaultUIController;Landroid/os/Handler$Callback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultUIController$4;->this$0:Lcom/just/agentweb/DefaultUIController;
 
     iput-object p2, p0, Lcom/just/agentweb/DefaultUIController$4;->val$callback:Landroid/os/Handler$Callback;
@@ -44,16 +42,13 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/just/agentweb/DefaultUIController$4;->val$callback:Landroid/os/Handler$Callback;
 
     if-eqz p1, :cond_1
 
-    .line 3
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object p2

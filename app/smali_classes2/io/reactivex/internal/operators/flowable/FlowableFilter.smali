@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableFilter;
 .super Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;
-.source "FlowableFilter.java"
 
 
 # annotations
@@ -46,10 +45,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;-><init>(Lio/reactivex/Flowable;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/flowable/FlowableFilter;->predicate:Lio/reactivex/functions/Predicate;
 
     return-void
@@ -67,12 +64,10 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p1, Lio/reactivex/internal/fuseable/ConditionalSubscriber;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;->source:Lio/reactivex/Flowable;
 
     new-instance v1, Lio/reactivex/internal/operators/flowable/FlowableFilter$FilterConditionalSubscriber;
@@ -87,7 +82,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;->source:Lio/reactivex/Flowable;
 

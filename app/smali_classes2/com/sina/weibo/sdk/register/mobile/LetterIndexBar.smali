@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;
 .super Landroid/view/View;
-.source "LetterIndexBar.java"
 
 
 # annotations
@@ -41,10 +40,8 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 2
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
@@ -53,10 +50,8 @@
 
     const/16 p1, 0x1b
 
-    .line 3
     iput p1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->e:I
 
-    .line 4
     invoke-direct {p0}, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->a()V
 
     return-void
@@ -65,10 +60,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 9
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 10
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
@@ -77,10 +70,8 @@
 
     const/16 p1, 0x1b
 
-    .line 11
     iput p1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->e:I
 
-    .line 12
     invoke-direct {p0}, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->a()V
 
     return-void
@@ -89,10 +80,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 5
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 6
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
@@ -101,10 +90,8 @@
 
     const/16 p1, 0x1b
 
-    .line 7
     iput p1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->e:I
 
-    .line 8
     invoke-direct {p0}, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->a()V
 
     return-void
@@ -113,28 +100,24 @@
 .method private a()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 2
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 3
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
     const v1, -0xa2a2a3
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -155,29 +138,24 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 9
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     iget-boolean v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->i:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v0}, Landroid/graphics/Paint;->getColor()I
 
     move-result v0
 
-    .line 4
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
     const v2, -0x77888878
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 5
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->j:Landroid/graphics/RectF;
 
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
@@ -200,23 +178,19 @@
 
     invoke-virtual {p1, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
-    .line 6
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 7
     :cond_0
     iget v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->k:I
 
-    .line 8
     iget v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->a:I
 
     if-le v0, v1, :cond_1
 
     move v0, v1
 
-    .line 9
     :cond_1
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
@@ -224,7 +198,6 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 10
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->c:[Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -233,7 +206,6 @@
 
     const/16 v1, 0x41
 
-    .line 11
     :goto_0
     iget v3, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->e:I
 
@@ -241,7 +213,6 @@
 
     goto :goto_3
 
-    .line 12
     :cond_2
     iget v3, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->a:I
 
@@ -259,7 +230,6 @@
 
     add-int/2addr v3, v4
 
-    .line 13
     iget-object v4, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->d:[Z
 
     if-eqz v4, :cond_3
@@ -268,7 +238,6 @@
 
     if-eqz v4, :cond_5
 
-    .line 14
     :cond_3
     iget v4, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->e:I
 
@@ -285,7 +254,6 @@
 
     int-to-char v4, v4
 
-    .line 15
     invoke-static {v1}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
     move-result-object v1
@@ -296,7 +264,6 @@
 
     move v1, v8
 
-    .line 16
     :goto_1
     iget-object v5, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
@@ -306,7 +273,6 @@
 
     float-to-int v5, v5
 
-    .line 17
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v6
@@ -319,7 +285,6 @@
 
     int-to-float v3, v3
 
-    .line 18
     iget-object v6, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v4, v5, v3, v6}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
@@ -329,7 +294,6 @@
 
     goto :goto_0
 
-    .line 19
     :cond_6
     :goto_2
     iget v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->e:I
@@ -339,7 +303,6 @@
     :goto_3
     return-void
 
-    .line 20
     :cond_7
     iget v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->a:I
 
@@ -357,7 +320,6 @@
 
     add-int/2addr v1, v3
 
-    .line 21
     iget-object v3, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->d:[Z
 
     if-eqz v3, :cond_8
@@ -366,7 +328,6 @@
 
     if-eqz v3, :cond_a
 
-    .line 22
     :cond_8
     iget-object v3, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->c:[Ljava/lang/String;
 
@@ -374,14 +335,12 @@
 
     const-string v4, ""
 
-    .line 23
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-eqz v4, :cond_9
 
-    .line 24
     iget-object v3, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
     const-string v4, "M"
@@ -392,7 +351,6 @@
 
     float-to-int v3, v3
 
-    .line 25
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v4
@@ -401,7 +359,6 @@
 
     div-int/lit8 v4, v4, 0x2
 
-    .line 26
     iget-object v5, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->l:Landroid/graphics/drawable/Drawable;
 
     sub-int v6, v1, v4
@@ -414,14 +371,12 @@
 
     invoke-virtual {v5, v4, v6, v7, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 27
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->l:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
     goto :goto_4
 
-    .line 28
     :cond_9
     iget-object v4, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
@@ -431,7 +386,6 @@
 
     float-to-int v4, v4
 
-    .line 29
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v5
@@ -444,7 +398,6 @@
 
     int-to-float v1, v1
 
-    .line 30
     iget-object v5, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v3, v4, v1, v5}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
@@ -459,12 +412,10 @@
 .method protected onMeasure(II)V
     .locals 3
 
-    .line 1
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result p1
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v0
@@ -477,17 +428,14 @@
 
     sub-int/2addr v0, v1
 
-    .line 3
     iget v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->e:I
 
     div-int/2addr v0, v1
 
-    .line 4
     iput v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->a:I
 
     int-to-float v0, v0
 
-    .line 5
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v1}, Landroid/graphics/Paint;->getTextSize()F
@@ -504,7 +452,6 @@
 
     iput v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->h:I
 
-    .line 6
     iget v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->k:I
 
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
@@ -519,10 +466,8 @@
 
     add-int/2addr v0, v1
 
-    .line 7
     invoke-virtual {p0, v0, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
-    .line 8
     new-instance p2, Landroid/graphics/RectF;
 
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
@@ -537,7 +482,6 @@
 
     int-to-float v1, v1
 
-    .line 9
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v2
@@ -554,10 +498,8 @@
 
     const/4 v2, 0x0
 
-    .line 10
     invoke-direct {p2, v2, v0, v1, p1}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    .line 11
     iput-object p2, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->j:Landroid/graphics/RectF;
 
     return-void
@@ -566,7 +508,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 3
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
@@ -594,23 +535,19 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 2
     iput-boolean p1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->i:Z
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iput-boolean v1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->i:Z
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result p1
 
     float-to-int p1, p1
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v0
@@ -621,7 +558,6 @@
 
     div-int/2addr p1, v0
 
-    .line 6
     iget v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->f:I
 
     if-eq p1, v0, :cond_3
@@ -634,7 +570,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 7
     :cond_2
     iget v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->e:I
 
@@ -642,18 +577,14 @@
 
     if-ltz p1, :cond_3
 
-    .line 8
     iput p1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->f:I
 
-    .line 9
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->g:Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar$a;
 
     if-eqz v0, :cond_3
 
-    .line 10
     invoke-interface {v0, p1}, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar$a;->a(I)V
 
-    .line 11
     :cond_3
     :goto_0
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
@@ -664,7 +595,6 @@
 .method public setIndexChangeListener(Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->g:Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar$a;
 
     return-void
@@ -677,21 +607,17 @@
 
     return-void
 
-    .line 1
     :cond_0
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->c:[Ljava/lang/String;
 
-    .line 2
     array-length p1, p1
 
     iput p1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->e:I
 
     const/4 p1, -0x1
 
-    .line 3
     iput p1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->f:I
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
@@ -704,11 +630,9 @@
 
     return-void
 
-    .line 1
     :cond_0
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->d:[Z
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void

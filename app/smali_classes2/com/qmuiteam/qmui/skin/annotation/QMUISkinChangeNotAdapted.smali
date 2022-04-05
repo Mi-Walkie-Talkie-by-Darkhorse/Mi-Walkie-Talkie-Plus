@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/skin/annotation/QMUISkinChangeNotAdapted;
 .super Ljava/lang/Object;
-.source "QMUISkinChangeNotAdapted.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/jvm/Synchronized;
 .super Ljava/lang/Object;
-.source "JvmFlagAnnotations.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

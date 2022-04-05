@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$8;
 .super Ljava/lang/Object;
-.source "DropdownMenuEndIconDelegate.java"
 
 # interfaces
 .implements Landroid/widget/AutoCompleteTextView$OnDismissListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$8;->this$0:Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public onDismiss()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$8;->this$0:Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;->access$402(Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;Z)Z
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$8;->this$0:Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -54,7 +50,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;->access$1402(Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;J)J
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$8;->this$0:Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate;
 
     const/4 v1, 0x0

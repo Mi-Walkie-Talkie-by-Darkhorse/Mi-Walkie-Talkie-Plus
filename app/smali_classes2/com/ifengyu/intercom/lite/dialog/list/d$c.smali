@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/lite/dialog/list/d$c;
 .super Ljava/lang/Object;
-.source "ItemListBuilder.java"
 
 
 # annotations

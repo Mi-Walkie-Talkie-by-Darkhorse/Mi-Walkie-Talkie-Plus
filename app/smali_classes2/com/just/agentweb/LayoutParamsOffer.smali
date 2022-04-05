@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/LayoutParamsOffer;
 .super Ljava/lang/Object;
-.source "LayoutParamsOffer.java"
 
 
 # annotations

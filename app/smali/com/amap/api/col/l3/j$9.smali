@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$9;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$9;->b:Lcom/amap/api/col/l3/j;
 
     iput p2, p0, Lcom/amap/api/col/l3/j$9;->a:I
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 8
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/j$9;->b:Lcom/amap/api/col/l3/j;
 
@@ -52,7 +49,6 @@
 
     invoke-virtual {v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->clearAllMessages(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/j$9;->b:Lcom/amap/api/col/l3/j;
 
     iget-object v1, v0, Lcom/amap/api/col/l3/j;->f:Lcom/autonavi/ae/gmap/GLMapEngine;
@@ -78,7 +74,6 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

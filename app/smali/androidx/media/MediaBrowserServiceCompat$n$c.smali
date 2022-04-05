@@ -1,6 +1,5 @@
 .class Landroidx/media/MediaBrowserServiceCompat$n$c;
 .super Ljava/lang/Object;
-.source "MediaBrowserServiceCompat.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -33,7 +32,6 @@
 .method constructor <init>(Landroidx/media/MediaBrowserServiceCompat$n;Landroidx/media/MediaBrowserServiceCompat$o;Ljava/lang/String;Landroid/os/IBinder;Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$n$c;->e:Landroidx/media/MediaBrowserServiceCompat$n;
 
     iput-object p2, p0, Landroidx/media/MediaBrowserServiceCompat$n$c;->a:Landroidx/media/MediaBrowserServiceCompat$o;
@@ -54,14 +52,12 @@
 .method public run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$n$c;->a:Landroidx/media/MediaBrowserServiceCompat$o;
 
     invoke-interface {v0}, Landroidx/media/MediaBrowserServiceCompat$o;->asBinder()Landroid/os/IBinder;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Landroidx/media/MediaBrowserServiceCompat$n$c;->e:Landroidx/media/MediaBrowserServiceCompat$n;
 
     iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat$n;->a:Landroidx/media/MediaBrowserServiceCompat;
@@ -76,7 +72,6 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -99,7 +94,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     iget-object v1, p0, Landroidx/media/MediaBrowserServiceCompat$n$c;->e:Landroidx/media/MediaBrowserServiceCompat$n;
 

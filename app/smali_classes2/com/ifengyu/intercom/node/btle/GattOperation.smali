@@ -1,6 +1,5 @@
 .class public final enum Lcom/ifengyu/intercom/node/btle/GattOperation;
 .super Ljava/lang/Enum;
-.source "GattOperation.java"
 
 
 # annotations
@@ -41,7 +40,6 @@
 .method static constructor <clinit>()V
     .locals 11
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/node/btle/GattOperation;
 
     const/4 v1, 0x0
@@ -82,7 +80,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/node/btle/GattOperation;->e:Lcom/ifengyu/intercom/node/btle/GattOperation;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/node/btle/GattOperation;
 
     const/4 v5, 0x4
@@ -103,7 +100,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/node/btle/GattOperation;->g:Lcom/ifengyu/intercom/node/btle/GattOperation;
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/node/btle/GattOperation;
 
     const/4 v7, 0x6
@@ -128,7 +124,6 @@
 
     new-array v9, v9, [Lcom/ifengyu/intercom/node/btle/GattOperation;
 
-    .line 4
     sget-object v10, Lcom/ifengyu/intercom/node/btle/GattOperation;->b:Lcom/ifengyu/intercom/node/btle/GattOperation;
 
     aput-object v10, v9, v1
@@ -174,10 +169,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/ifengyu/intercom/node/btle/GattOperation;->a:Ljava/lang/String;
 
     return-void
@@ -186,7 +179,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/ifengyu/intercom/node/btle/GattOperation;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/node/btle/GattOperation;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -201,7 +193,6 @@
 .method public static values()[Lcom/ifengyu/intercom/node/btle/GattOperation;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/node/btle/GattOperation;->j:[Lcom/ifengyu/intercom/node/btle/GattOperation;
 
     invoke-virtual {v0}, [Lcom/ifengyu/intercom/node/btle/GattOperation;->clone()Ljava/lang/Object;

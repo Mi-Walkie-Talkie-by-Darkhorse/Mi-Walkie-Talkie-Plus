@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;
 .super Landroid/webkit/WebViewClient;
-.source "WebViewActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-direct {p0}, Landroid/webkit/WebViewClient;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;-><init>(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)V
 
     return-void
@@ -44,17 +41,14 @@
 .method public onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/webkit/WebViewClient;->onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
 
     const-string p1, "WebViewActivity"
 
     const-string p2, "onPageFinished:"
 
-    .line 2
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->d(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/webkit/WebView;
@@ -63,7 +57,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->d(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/webkit/WebView;
@@ -81,7 +74,6 @@
 .method public onPageStarted(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -100,7 +92,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->e(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/widget/ProgressBar;
@@ -109,7 +100,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->e(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/widget/ProgressBar;
@@ -120,7 +110,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setVisibility(I)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->e(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/widget/ProgressBar;
@@ -131,7 +120,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ProgressBar;->setAlpha(F)V
 
-    .line 5
     :cond_0
     invoke-super {p0, p1, p2, p3}, Landroid/webkit/WebViewClient;->onPageStarted(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
@@ -141,10 +129,8 @@
 .method public onReceivedError(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/webkit/WebViewClient;->onReceivedError(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -169,7 +155,6 @@
 
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->b(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/view/View;
@@ -178,7 +163,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->b(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/view/View;
@@ -189,7 +173,6 @@
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 5
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
@@ -199,7 +182,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->d(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/webkit/WebView;
@@ -217,7 +199,6 @@
 .method public onReceivedHttpError(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;Landroid/webkit/WebResourceResponse;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -240,7 +221,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0, p1, p2, p3}, Landroid/webkit/WebViewClient;->onReceivedHttpError(Landroid/webkit/WebView;Landroid/webkit/WebResourceRequest;Landroid/webkit/WebResourceResponse;)V
 
     return-void
@@ -249,7 +229,6 @@
 .method public onReceivedSslError(Landroid/webkit/WebView;Landroid/webkit/SslErrorHandler;Landroid/net/http/SslError;)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -274,7 +253,6 @@
 .method public shouldOverrideUrlLoading(Landroid/webkit/WebView;Ljava/lang/String;)Z
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -293,7 +271,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-virtual {p1, p2}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
     const/4 p1, 0x1

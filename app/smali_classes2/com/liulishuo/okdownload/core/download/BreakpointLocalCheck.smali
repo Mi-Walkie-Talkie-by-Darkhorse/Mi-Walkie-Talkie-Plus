@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;
 .super Ljava/lang/Object;
-.source "BreakpointLocalCheck.java"
 
 
 # instance fields
@@ -31,16 +30,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 3
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
-    .line 4
     iput-wide p3, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->responseInstanceLength:J
 
     return-void
@@ -51,28 +46,24 @@
 .method public check()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->isFileExistToResume()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->fileExist:Z
 
-    .line 2
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->isInfoRightToResume()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->infoRight:Z
 
-    .line 3
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->isOutputStreamSupportResume()Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->outputStreamSupport:Z
 
-    .line 4
     iget-boolean v1, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->infoRight:Z
 
     if-eqz v1, :cond_1
@@ -105,39 +96,32 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->infoRight:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     sget-object v0, Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;->INFO_DIRTY:Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;
 
     return-object v0
 
-    .line 3
     :cond_0
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->fileExist:Z
 
     if-nez v0, :cond_1
 
-    .line 4
     sget-object v0, Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;->FILE_NOT_EXIST:Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;
 
     return-object v0
 
-    .line 5
     :cond_1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->outputStreamSupport:Z
 
     if-nez v0, :cond_2
 
-    .line 6
     sget-object v0, Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;->OUTPUT_STREAM_NOT_SUPPORT:Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;
 
     return-object v0
 
-    .line 7
     :cond_2
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -165,7 +149,6 @@
 .method public isDirty()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->dirty:Z
 
     return v0
@@ -174,14 +157,12 @@
 .method public isFileExistToResume()Z
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/DownloadTask;->getUri()Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Lcom/liulishuo/okdownload/core/Util;->isUriContentScheme(Landroid/net/Uri;)Z
 
     move-result v1
@@ -192,7 +173,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 3
     invoke-static {v0}, Lcom/liulishuo/okdownload/core/Util;->getSizeFromContentUri(Landroid/net/Uri;)J
 
     move-result-wide v0
@@ -211,7 +191,6 @@
     :goto_0
     return v2
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
@@ -221,7 +200,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 5
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -240,7 +218,6 @@
 .method public isInfoRightToResume()Z
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getBlockCount()I
@@ -253,7 +230,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
@@ -265,7 +241,6 @@
 
     return v1
 
-    .line 3
     :cond_1
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
@@ -277,7 +252,6 @@
 
     return v1
 
-    .line 4
     :cond_2
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
@@ -285,7 +259,6 @@
 
     move-result-object v2
 
-    .line 5
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     invoke-virtual {v3}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getFile()Ljava/io/File;
@@ -300,7 +273,6 @@
 
     return v1
 
-    .line 6
     :cond_3
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
@@ -324,7 +296,6 @@
 
     return v1
 
-    .line 7
     :cond_4
     iget-wide v2, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->responseInstanceLength:J
 
@@ -354,14 +325,12 @@
     :goto_0
     if-ge v2, v0, :cond_7
 
-    .line 8
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     invoke-virtual {v3, v2}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getBlock(I)Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
     move-result-object v3
 
-    .line 9
     invoke-virtual {v3}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->getContentLength()J
 
     move-result-wide v6
@@ -386,7 +355,6 @@
 .method public isOutputStreamSupportResume()Z
     .locals 4
 
-    .line 1
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -405,7 +373,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/BreakpointLocalCheck;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
@@ -419,7 +386,6 @@
 
     return v2
 
-    .line 3
     :cond_1
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
@@ -446,7 +412,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -479,7 +444,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
     invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1

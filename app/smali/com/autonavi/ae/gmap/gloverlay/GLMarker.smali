@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gloverlay/GLMarker;
 .super Ljava/lang/Object;
-.source "GLMarker.java"
 
 
 # static fields
@@ -57,7 +56,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -116,7 +114,6 @@
 
     sub-int/2addr p4, p2
 
-    .line 1
     div-int/lit8 p3, p4, 0x2
 
     goto :goto_2
@@ -124,7 +121,6 @@
     :pswitch_3
     sub-int/2addr p4, p2
 
-    .line 2
     div-int/lit8 p3, p4, 0x2
 
     goto :goto_3
@@ -132,7 +128,6 @@
     :pswitch_4
     sub-int/2addr p3, p1
 
-    .line 3
     div-int/lit8 p2, p3, 0x2
 
     goto :goto_0
@@ -140,7 +135,6 @@
     :pswitch_5
     sub-int/2addr p3, p1
 
-    .line 4
     div-int/lit8 p0, p3, 0x2
 
     goto :goto_1
@@ -148,12 +142,10 @@
     :pswitch_6
     sub-int/2addr p3, p1
 
-    .line 5
     div-int/lit8 p0, p3, 0x2
 
     sub-int/2addr p4, p2
 
-    .line 6
     div-int/lit8 p3, p4, 0x2
 
     goto :goto_2
@@ -196,12 +188,10 @@
     :cond_0
     sub-int/2addr p3, p1
 
-    .line 7
     div-int/lit8 p0, p3, 0x2
 
     sub-int/2addr p4, p2
 
-    .line 8
     div-int/lit8 p3, p4, 0x2
 
     goto :goto_2
@@ -210,7 +200,6 @@
     :goto_4
     sub-int/2addr p3, p1
 
-    .line 9
     div-int/lit8 p0, p3, 0x2
 
     goto :goto_1

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/sina/weibo/sdk/component/view/TitleBar$b;
 .super Ljava/lang/Object;
-.source "TitleBar.java"
 
 
 # annotations

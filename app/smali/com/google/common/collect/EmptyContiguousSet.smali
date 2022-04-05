@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/EmptyContiguousSet;
 .super Lcom/google/common/collect/ContiguousSet;
-.source "EmptyContiguousSet.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/ContiguousSet;-><init>(Lcom/google/common/collect/DiscreteDomain;)V
 
     return-void
@@ -54,7 +52,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
 
     move-result-object v0
@@ -76,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/EmptyImmutableSortedSet;
 
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
@@ -106,7 +102,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/Iterators;->emptyIterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -117,7 +112,6 @@
 .method public bridge synthetic descendingIterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/EmptyContiguousSet;->descendingIterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -132,15 +126,12 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Ljava/util/Set;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Ljava/util/Set;
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Set;->isEmpty()Z
 
     move-result p1
@@ -161,7 +152,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
@@ -172,7 +162,6 @@
 .method public bridge synthetic first()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/EmptyContiguousSet;->first()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -204,7 +193,6 @@
 .method bridge synthetic headSetImpl(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/EmptyContiguousSet;->headSetImpl(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
@@ -266,7 +254,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/Iterators;->emptyIterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -277,7 +264,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/EmptyContiguousSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -293,7 +279,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
@@ -304,7 +289,6 @@
 .method public bridge synthetic last()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/EmptyContiguousSet;->last()Ljava/lang/Comparable;
 
     move-result-object v0
@@ -322,7 +306,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
@@ -343,7 +326,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance p1, Ljava/util/NoSuchElementException;
 
     invoke-direct {p1}, Ljava/util/NoSuchElementException;-><init>()V
@@ -375,7 +357,6 @@
 .method bridge synthetic subSetImpl(Ljava/lang/Object;ZLjava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Comparable;
 
     check-cast p3, Ljava/lang/Comparable;
@@ -403,7 +384,6 @@
 .method bridge synthetic tailSetImpl(Ljava/lang/Object;Z)Lcom/google/common/collect/ImmutableSortedSet;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/EmptyContiguousSet;->tailSetImpl(Ljava/lang/Comparable;Z)Lcom/google/common/collect/ContiguousSet;
@@ -427,7 +407,6 @@
         value = "serialization"
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/EmptyContiguousSet$SerializedForm;
 
     iget-object v1, p0, Lcom/google/common/collect/ContiguousSet;->domain:Lcom/google/common/collect/DiscreteDomain;

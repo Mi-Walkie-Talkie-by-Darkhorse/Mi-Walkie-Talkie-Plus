@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableWindowBoundarySupplier;
 .super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
-.source "ObservableWindowBoundarySupplier.java"
 
 
 # annotations
@@ -56,13 +55,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableWindowBoundarySupplier;->other:Ljava/util/concurrent/Callable;
 
-    .line 3
     iput p3, p0, Lio/reactivex/internal/operators/observable/ObservableWindowBoundarySupplier;->capacityHint:I
 
     return-void
@@ -82,7 +78,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableWindowBoundarySupplier$WindowBoundaryMainObserver;
 
     iget v1, p0, Lio/reactivex/internal/operators/observable/ObservableWindowBoundarySupplier;->capacityHint:I
@@ -91,7 +86,6 @@
 
     invoke-direct {v0, p1, v1, v2}, Lio/reactivex/internal/operators/observable/ObservableWindowBoundarySupplier$WindowBoundaryMainObserver;-><init>(Lio/reactivex/Observer;ILjava/util/concurrent/Callable;)V
 
-    .line 2
     iget-object p1, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     invoke-interface {p1, v0}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V

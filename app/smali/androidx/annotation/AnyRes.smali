@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/AnyRes;
 .super Ljava/lang/Object;
-.source "AnyRes.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

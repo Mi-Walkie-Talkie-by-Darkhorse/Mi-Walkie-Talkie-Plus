@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/analytics/pro/by;
 .super Ljava/lang/Object;
-.source "SchemeFactory.java"
 
 
 # virtual methods

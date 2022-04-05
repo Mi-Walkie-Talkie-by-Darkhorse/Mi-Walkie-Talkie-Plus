@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;
 .super Landroid/widget/LinearLayout;
-.source "TabLayout.java"
 
 
 # annotations
@@ -30,23 +29,18 @@
 .method constructor <init>(Lcom/google/android/material/tabs/TabLayout;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
-    .line 2
     invoke-direct {p0, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     const/4 p1, -0x1
 
-    .line 3
     iput p1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->selectedPosition:I
 
-    .line 4
     iput p1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->layoutDirection:I
 
     const/4 p1, 0x0
 
-    .line 5
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->setWillNotDraw(Z)V
 
     return-void
@@ -55,7 +49,6 @@
 .method static synthetic access$1300(Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;Landroid/view/View;Landroid/view/View;F)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->tweenIndicatorPosition(Landroid/view/View;Landroid/view/View;F)V
 
     return-void
@@ -64,14 +57,12 @@
 .method private jumpIndicatorToSelectedPosition()V
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->selectedPosition:I
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-static {v1}, Lcom/google/android/material/tabs/TabLayout;->access$1200(Lcom/google/android/material/tabs/TabLayout;)Lcom/google/android/material/tabs/TabIndicatorInterpolator;
@@ -92,7 +83,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -109,7 +99,6 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-static {v0}, Lcom/google/android/material/tabs/TabLayout;->access$1200(Lcom/google/android/material/tabs/TabLayout;)Lcom/google/android/material/tabs/TabIndicatorInterpolator;
@@ -130,13 +119,11 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     iget-object p1, p1, Lcom/google/android/material/tabs/TabLayout;->tabSelectedIndicator:Landroid/graphics/drawable/Drawable;
 
-    .line 4
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object p2
@@ -155,10 +142,8 @@
 
     const/4 v0, -0x1
 
-    .line 5
     invoke-virtual {p1, v0, p2, v0, p3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 6
     :goto_1
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->R(Landroid/view/View;)V
 
@@ -168,26 +153,22 @@
 .method private updateOrRecreateIndicatorAnimation(ZII)V
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->selectedPosition:I
 
     invoke-virtual {p0, v0}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0, p2}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
     if-nez v1, :cond_0
 
-    .line 3
     invoke-direct {p0}, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->jumpIndicatorToSelectedPosition()V
 
     return-void
 
-    .line 4
     :cond_0
     new-instance v2, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator$1;
 
@@ -195,54 +176,45 @@
 
     if-eqz p1, :cond_1
 
-    .line 5
     new-instance p1, Landroid/animation/ValueAnimator;
 
     invoke-direct {p1}, Landroid/animation/ValueAnimator;-><init>()V
 
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->indicatorAnimator:Landroid/animation/ValueAnimator;
 
-    .line 6
     sget-object v0, Lcom/google/android/material/animation/AnimationUtils;->FAST_OUT_SLOW_IN_INTERPOLATOR:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {p1, v0}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
     int-to-long v0, p3
 
-    .line 7
     invoke-virtual {p1, v0, v1}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     const/4 p3, 0x2
 
     new-array p3, p3, [F
 
-    .line 8
     fill-array-data p3, :array_0
 
     invoke-virtual {p1, p3}, Landroid/animation/ValueAnimator;->setFloatValues([F)V
 
-    .line 9
     invoke-virtual {p1, v2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 10
     new-instance p3, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator$2;
 
     invoke-direct {p3, p0, p2}, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator$2;-><init>(Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;I)V
 
     invoke-virtual {p1, p3}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 11
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->start()V
 
     goto :goto_0
 
-    .line 12
     :cond_1
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->indicatorAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->removeAllUpdateListeners()V
 
-    .line 13
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->indicatorAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {p1, v2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
@@ -262,7 +234,6 @@
 .method animateIndicatorToPosition(II)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->indicatorAnimator:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_0
@@ -273,7 +244,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->indicatorAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
@@ -281,7 +251,6 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 3
     invoke-direct {p0, v0, p1, p2}, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->updateOrRecreateIndicatorAnimation(ZII)V
 
     return-void
@@ -290,7 +259,6 @@
 .method childrenNeedLayout()Z
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getChildCount()I
 
     move-result v0
@@ -302,12 +270,10 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 2
     invoke-virtual {p0, v2}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 3
     invoke-virtual {v3}, Landroid/view/View;->getWidth()I
 
     move-result v3
@@ -334,7 +300,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     iget-object v0, v0, Lcom/google/android/material/tabs/TabLayout;->tabSelectedIndicator:Landroid/graphics/drawable/Drawable;
@@ -349,7 +314,6 @@
 
     if-gez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     iget-object v0, v0, Lcom/google/android/material/tabs/TabLayout;->tabSelectedIndicator:Landroid/graphics/drawable/Drawable;
@@ -358,7 +322,6 @@
 
     move-result v0
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
@@ -384,7 +347,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getHeight()I
 
@@ -392,7 +354,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getHeight()I
 
@@ -402,7 +363,6 @@
 
     div-int/lit8 v2, v1, 0x2
 
-    .line 6
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v1
@@ -413,7 +373,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_3
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getHeight()I
 
@@ -421,12 +380,10 @@
 
     sub-int v2, v1, v0
 
-    .line 8
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getHeight()I
 
     move-result v0
 
-    .line 9
     :cond_4
     :goto_0
     iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
@@ -443,7 +400,6 @@
 
     if-lez v1, :cond_7
 
-    .line 10
     iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     iget-object v1, v1, Lcom/google/android/material/tabs/TabLayout;->tabSelectedIndicator:Landroid/graphics/drawable/Drawable;
@@ -452,7 +408,6 @@
 
     move-result-object v1
 
-    .line 11
     iget-object v3, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     iget-object v3, v3, Lcom/google/android/material/tabs/TabLayout;->tabSelectedIndicator:Landroid/graphics/drawable/Drawable;
@@ -463,31 +418,26 @@
 
     invoke-virtual {v3, v4, v2, v1, v0}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 12
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     iget-object v1, v0, Lcom/google/android/material/tabs/TabLayout;->tabSelectedIndicator:Landroid/graphics/drawable/Drawable;
 
-    .line 13
     invoke-static {v0}, Lcom/google/android/material/tabs/TabLayout;->access$1400(Lcom/google/android/material/tabs/TabLayout;)I
 
     move-result v0
 
     if-eqz v0, :cond_6
 
-    .line 14
     invoke-static {v1}, Landroidx/core/graphics/drawable/a;->i(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 15
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x15
 
     if-ne v0, v2, :cond_5
 
-    .line 16
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-static {v0}, Lcom/google/android/material/tabs/TabLayout;->access$1400(Lcom/google/android/material/tabs/TabLayout;)I
@@ -500,7 +450,6 @@
 
     goto :goto_1
 
-    .line 17
     :cond_5
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
@@ -510,12 +459,10 @@
 
     invoke-static {v1, v0}, Landroidx/core/graphics/drawable/a;->b(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 18
     :cond_6
     :goto_1
     invoke-virtual {v1, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 19
     :cond_7
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->draw(Landroid/graphics/Canvas;)V
 
@@ -525,7 +472,6 @@
 .method getIndicatorPosition()F
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->selectedPosition:I
 
     int-to-float v0, v0
@@ -540,10 +486,8 @@
 .method protected onLayout(ZIIII)V
     .locals 0
 
-    .line 1
     invoke-super/range {p0 .. p5}, Landroid/widget/LinearLayout;->onLayout(ZIIII)V
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->indicatorAnimator:Landroid/animation/ValueAnimator;
 
     if-eqz p1, :cond_0
@@ -556,7 +500,6 @@
 
     const/4 p1, 0x0
 
-    .line 3
     iget p2, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->selectedPosition:I
 
     const/4 p3, -0x1
@@ -565,7 +508,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-direct {p0}, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->jumpIndicatorToSelectedPosition()V
 
@@ -576,10 +518,8 @@
 .method protected onMeasure(II)V
     .locals 8
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
-    .line 2
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v0
@@ -590,7 +530,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
@@ -606,7 +545,6 @@
 
     if-ne v0, v2, :cond_9
 
-    .line 4
     :cond_1
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getChildCount()I
 
@@ -621,19 +559,16 @@
     :goto_0
     if-ge v4, v0, :cond_3
 
-    .line 5
     invoke-virtual {p0, v4}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v6
 
-    .line 6
     invoke-virtual {v6}, Landroid/view/View;->getVisibility()I
 
     move-result v7
 
     if-nez v7, :cond_2
 
-    .line 7
     invoke-virtual {v6}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v6
@@ -652,7 +587,6 @@
 
     return-void
 
-    .line 8
     :cond_4
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
 
@@ -668,7 +602,6 @@
 
     mul-int v6, v5, v0
 
-    .line 9
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getMeasuredWidth()I
 
     move-result v7
@@ -684,7 +617,6 @@
     :goto_1
     if-ge v1, v0, :cond_7
 
-    .line 10
     invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
@@ -695,7 +627,6 @@
 
     check-cast v4, Landroid/widget/LinearLayout$LayoutParams;
 
-    .line 11
     iget v6, v4, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
     const/4 v7, 0x0
@@ -708,11 +639,9 @@
 
     if-eqz v6, :cond_6
 
-    .line 12
     :cond_5
     iput v5, v4, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
-    .line 13
     iput v7, v4, Landroid/widget/LinearLayout$LayoutParams;->weight:F
 
     const/4 v2, 0x1
@@ -727,19 +656,16 @@
 
     goto :goto_2
 
-    .line 14
     :cond_8
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     iput v1, v0, Lcom/google/android/material/tabs/TabLayout;->tabGravity:I
 
-    .line 15
     invoke-virtual {v0, v1}, Lcom/google/android/material/tabs/TabLayout;->updateTabViews(Z)V
 
     :goto_2
     if-eqz v3, :cond_9
 
-    .line 16
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
     :cond_9
@@ -749,25 +675,20 @@
 .method public onRtlPropertiesChanged(I)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->onRtlPropertiesChanged(I)V
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-ge v0, v1, :cond_0
 
-    .line 3
     iget v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->layoutDirection:I
 
     if-eq v0, p1, :cond_0
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->requestLayout()V
 
-    .line 5
     iput p1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->layoutDirection:I
 
     :cond_0
@@ -777,7 +698,6 @@
 .method setIndicatorPositionFromTabPosition(IF)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->indicatorAnimator:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_0
@@ -788,24 +708,19 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->indicatorAnimator:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
 
-    .line 3
     :cond_0
     iput p1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->selectedPosition:I
 
-    .line 4
     iput p2, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->selectionOffset:F
 
-    .line 5
     invoke-virtual {p0, p1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object p1
 
-    .line 6
     iget p2, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->selectedPosition:I
 
     add-int/lit8 p2, p2, 0x1
@@ -814,7 +729,6 @@
 
     move-result-object p2
 
-    .line 7
     iget v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->selectionOffset:F
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->tweenIndicatorPosition(Landroid/view/View;Landroid/view/View;F)V
@@ -825,7 +739,6 @@
 .method setSelectedIndicatorHeight(I)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     iget-object v0, v0, Lcom/google/android/material/tabs/TabLayout;->tabSelectedIndicator:Landroid/graphics/drawable/Drawable;
@@ -834,7 +747,6 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/android/material/tabs/TabLayout$SlidingTabIndicator;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     iget-object v1, v1, Lcom/google/android/material/tabs/TabLayout;->tabSelectedIndicator:Landroid/graphics/drawable/Drawable;
@@ -847,7 +759,6 @@
 
     invoke-virtual {v1, v2, v3, v0, p1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 3
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->requestLayout()V
 
     return-void

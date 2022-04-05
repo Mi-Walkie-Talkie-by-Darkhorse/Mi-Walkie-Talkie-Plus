@@ -1,6 +1,5 @@
 .class public abstract Lno/nordicsemi/android/ble/Request;
 .super Ljava/lang/Object;
-.source "Request.java"
 
 
 # annotations
@@ -51,21 +50,16 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lno/nordicsemi/android/ble/Request;->c:Lno/nordicsemi/android/ble/Request$Type;
 
     const/4 p1, 0x0
 
-    .line 3
     iput-object p1, p0, Lno/nordicsemi/android/ble/Request;->d:Landroid/bluetooth/BluetoothGattCharacteristic;
 
-    .line 4
     iput-object p1, p0, Lno/nordicsemi/android/ble/Request;->e:Landroid/bluetooth/BluetoothGattDescriptor;
 
-    .line 5
     new-instance p1, Landroid/os/ConditionVariable;
 
     const/4 v0, 0x1
@@ -86,21 +80,16 @@
         .end annotation
     .end param
 
-    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
     iput-object p1, p0, Lno/nordicsemi/android/ble/Request;->c:Lno/nordicsemi/android/ble/Request$Type;
 
-    .line 8
     iput-object p2, p0, Lno/nordicsemi/android/ble/Request;->d:Landroid/bluetooth/BluetoothGattCharacteristic;
 
     const/4 p1, 0x0
 
-    .line 9
     iput-object p1, p0, Lno/nordicsemi/android/ble/Request;->e:Landroid/bluetooth/BluetoothGattDescriptor;
 
-    .line 10
     new-instance p1, Landroid/os/ConditionVariable;
 
     const/4 p2, 0x1
@@ -124,7 +113,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 7
     new-instance v0, Lno/nordicsemi/android/ble/e2;
 
     sget-object v1, Lno/nordicsemi/android/ble/Request$Type;->D:Lno/nordicsemi/android/ble/Request$Type;
@@ -147,7 +135,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 8
     new-instance v0, Lno/nordicsemi/android/ble/o2;
 
     sget-object v1, Lno/nordicsemi/android/ble/Request$Type;->J:Lno/nordicsemi/android/ble/Request$Type;
@@ -169,7 +156,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 6
     new-instance v0, Lno/nordicsemi/android/ble/t2;
 
     sget-object v1, Lno/nordicsemi/android/ble/Request$Type;->o:Lno/nordicsemi/android/ble/Request$Type;
@@ -195,7 +181,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 4
     new-instance v7, Lno/nordicsemi/android/ble/t2;
 
     sget-object v1, Lno/nordicsemi/android/ble/Request$Type;->f:Lno/nordicsemi/android/ble/Request$Type;
@@ -216,7 +201,6 @@
     :goto_0
     if-eqz p0, :cond_1
 
-    .line 5
     invoke-virtual {p0}, Landroid/bluetooth/BluetoothGattCharacteristic;->getWriteType()I
 
     move-result v0
@@ -249,7 +233,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lno/nordicsemi/android/ble/d2;
 
     sget-object v1, Lno/nordicsemi/android/ble/Request$Type;->c:Lno/nordicsemi/android/ble/Request$Type;
@@ -268,7 +251,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lno/nordicsemi/android/ble/b2;
 
     sget-object v1, Lno/nordicsemi/android/ble/Request$Type;->b:Lno/nordicsemi/android/ble/Request$Type;
@@ -286,7 +268,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 2
     new-instance v0, Lno/nordicsemi/android/ble/t2;
 
     sget-object v1, Lno/nordicsemi/android/ble/Request$Type;->A:Lno/nordicsemi/android/ble/Request$Type;
@@ -301,7 +282,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lno/nordicsemi/android/ble/t2;
 
     sget-object v1, Lno/nordicsemi/android/ble/Request$Type;->C:Lno/nordicsemi/android/ble/Request$Type;
@@ -319,7 +299,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance v0, Lno/nordicsemi/android/ble/h2;
 
     sget-object v1, Lno/nordicsemi/android/ble/Request$Type;->z:Lno/nordicsemi/android/ble/Request$Type;
@@ -340,15 +319,12 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lno/nordicsemi/android/ble/Request;->a:Lno/nordicsemi/android/ble/j2;
 
-    .line 2
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->b:Lno/nordicsemi/android/ble/z1;
 
     if-nez v0, :cond_0
 
-    .line 3
     iput-object p1, p0, Lno/nordicsemi/android/ble/Request;->b:Lno/nordicsemi/android/ble/z1;
 
     :cond_0
@@ -364,7 +340,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 12
     iput-object p1, p0, Lno/nordicsemi/android/ble/Request;->f:Lno/nordicsemi/android/ble/u2/a;
 
     return-object p0
@@ -379,7 +354,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 10
     iput-object p1, p0, Lno/nordicsemi/android/ble/Request;->h:Lno/nordicsemi/android/ble/u2/d;
 
     return-object p0
@@ -394,7 +368,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 11
     iput-object p1, p0, Lno/nordicsemi/android/ble/Request;->i:Lno/nordicsemi/android/ble/u2/e;
 
     return-object p0
@@ -409,7 +382,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 9
     iput-object p1, p0, Lno/nordicsemi/android/ble/Request;->g:Lno/nordicsemi/android/ble/u2/j;
 
     return-object p0
@@ -418,7 +390,6 @@
 .method public a()V
     .locals 1
 
-    .line 13
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->a:Lno/nordicsemi/android/ble/j2;
 
     invoke-virtual {v0, p0}, Lno/nordicsemi/android/ble/j2;->a(Lno/nordicsemi/android/ble/Request;)V
@@ -429,12 +400,10 @@
 .method public synthetic a(Landroid/bluetooth/BluetoothDevice;)V
     .locals 1
 
-    .line 14
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->f:Lno/nordicsemi/android/ble/u2/a;
 
     if-eqz v0, :cond_0
 
-    .line 15
     invoke-interface {v0, p1}, Lno/nordicsemi/android/ble/u2/a;->a(Landroid/bluetooth/BluetoothDevice;)V
 
     :cond_0
@@ -444,12 +413,10 @@
 .method public synthetic a(Landroid/bluetooth/BluetoothDevice;I)V
     .locals 1
 
-    .line 16
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->h:Lno/nordicsemi/android/ble/u2/d;
 
     if-eqz v0, :cond_0
 
-    .line 17
     invoke-interface {v0, p1, p2}, Lno/nordicsemi/android/ble/u2/d;->a(Landroid/bluetooth/BluetoothDevice;I)V
 
     :cond_0
@@ -459,12 +426,10 @@
 .method public synthetic b()V
     .locals 1
 
-    .line 8
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->i:Lno/nordicsemi/android/ble/u2/e;
 
     if-eqz v0, :cond_0
 
-    .line 9
     invoke-interface {v0}, Lno/nordicsemi/android/ble/u2/e;->a()V
 
     :cond_0
@@ -474,12 +439,10 @@
 .method public synthetic b(Landroid/bluetooth/BluetoothDevice;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->g:Lno/nordicsemi/android/ble/u2/j;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Lno/nordicsemi/android/ble/u2/j;->a(Landroid/bluetooth/BluetoothDevice;)V
 
     :cond_0
@@ -493,25 +456,20 @@
         .end annotation
     .end param
 
-    .line 3
     iget-boolean v0, p0, Lno/nordicsemi/android/ble/Request;->o:Z
 
     if-nez v0, :cond_1
 
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lno/nordicsemi/android/ble/Request;->o:Z
 
-    .line 5
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->l:Lno/nordicsemi/android/ble/u2/d;
 
     if-eqz v0, :cond_0
 
-    .line 6
     invoke-interface {v0, p1, p2}, Lno/nordicsemi/android/ble/u2/d;->a(Landroid/bluetooth/BluetoothDevice;I)V
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->b:Lno/nordicsemi/android/ble/z1;
 
@@ -528,17 +486,14 @@
 .method c()V
     .locals 2
 
-    .line 6
     iget-boolean v0, p0, Lno/nordicsemi/android/ble/Request;->o:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 7
     iput-boolean v0, p0, Lno/nordicsemi/android/ble/Request;->o:Z
 
-    .line 8
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->b:Lno/nordicsemi/android/ble/z1;
 
     new-instance v1, Lno/nordicsemi/android/ble/j1;
@@ -558,25 +513,20 @@
         .end annotation
     .end param
 
-    .line 1
     iget-boolean v0, p0, Lno/nordicsemi/android/ble/Request;->n:Z
 
     if-nez v0, :cond_1
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lno/nordicsemi/android/ble/Request;->n:Z
 
-    .line 3
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->j:Lno/nordicsemi/android/ble/u2/a;
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-interface {v0, p1}, Lno/nordicsemi/android/ble/u2/a;->a(Landroid/bluetooth/BluetoothDevice;)V
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->b:Lno/nordicsemi/android/ble/z1;
 
@@ -597,25 +547,20 @@
         .end annotation
     .end param
 
-    .line 2
     iget-boolean v0, p0, Lno/nordicsemi/android/ble/Request;->o:Z
 
     if-nez v0, :cond_1
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Lno/nordicsemi/android/ble/Request;->o:Z
 
-    .line 4
     iget-object v1, p0, Lno/nordicsemi/android/ble/Request;->k:Lno/nordicsemi/android/ble/u2/j;
 
     if-eqz v1, :cond_0
 
-    .line 5
     invoke-interface {v1, p1}, Lno/nordicsemi/android/ble/u2/j;->a(Landroid/bluetooth/BluetoothDevice;)V
 
-    .line 6
     :cond_0
     iget-object v1, p0, Lno/nordicsemi/android/ble/Request;->b:Lno/nordicsemi/android/ble/z1;
 

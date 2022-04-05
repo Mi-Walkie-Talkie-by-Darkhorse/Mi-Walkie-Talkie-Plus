@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/utils/HttpUtils$a;
 .super Lorg/apache/http/conn/ssl/SSLSocketFactory;
-.source "ProGuard"
 
 
 # annotations
@@ -30,12 +29,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lorg/apache/http/conn/ssl/SSLSocketFactory;-><init>(Ljava/security/KeyStore;)V
 
     const-string p1, "TLS"
 
-    .line 2
     invoke-static {p1}, Ljavax/net/ssl/SSLContext;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;
 
     move-result-object p1
@@ -44,7 +41,6 @@
 
     const/4 p1, 0x0
 
-    .line 3
     :try_start_0
     new-instance v0, Lcom/tencent/open/utils/HttpUtils$b;
 
@@ -57,7 +53,6 @@
     :catch_0
     move-object v0, p1
 
-    .line 4
     :goto_0
     iget-object v1, p0, Lcom/tencent/open/utils/HttpUtils$a;->a:Ljavax/net/ssl/SSLContext;
 
@@ -84,7 +79,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/tencent/open/utils/HttpUtils$a;->a:Ljavax/net/ssl/SSLContext;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
@@ -107,7 +101,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/open/utils/HttpUtils$a;->a:Ljavax/net/ssl/SSLContext;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/hz;
 .super Ljava/lang/Object;
-.source "DownloadManager.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 
     move-object v1, p1
 
-    .line 1
     invoke-direct/range {v0 .. v5}, Lcom/amap/api/col/l3/hz;-><init>(Lcom/amap/api/col/l3/ic;JJ)V
 
     return-void
@@ -48,7 +46,6 @@
 
     move-wide v4, p4
 
-    .line 2
     invoke-direct/range {v0 .. v6}, Lcom/amap/api/col/l3/hz;-><init>(Lcom/amap/api/col/l3/ic;JJB)V
 
     return-void
@@ -57,20 +54,16 @@
 .method private constructor <init>(Lcom/amap/api/col/l3/ic;JJB)V
     .locals 3
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     iput-object p1, p0, Lcom/amap/api/col/l3/hz;->b:Lcom/amap/api/col/l3/ic;
 
-    .line 5
     iget-object p1, p1, Lcom/amap/api/col/l3/ic;->j:Ljava/net/Proxy;
 
     if-nez p1, :cond_0
 
     const/4 p1, 0x0
 
-    .line 6
     :cond_0
     new-instance p6, Lcom/amap/api/col/l3/ia;
 
@@ -86,10 +79,8 @@
 
     iput-object p6, p0, Lcom/amap/api/col/l3/hz;->a:Lcom/amap/api/col/l3/ia;
 
-    .line 7
     invoke-virtual {p6, p4, p5}, Lcom/amap/api/col/l3/ia;->b(J)V
 
-    .line 8
     iget-object p1, p0, Lcom/amap/api/col/l3/hz;->a:Lcom/amap/api/col/l3/ia;
 
     invoke-virtual {p1, p2, p3}, Lcom/amap/api/col/l3/ia;->a(J)V
@@ -102,7 +93,6 @@
 .method public final a()V
     .locals 1
 
-    .line 9
     iget-object v0, p0, Lcom/amap/api/col/l3/hz;->a:Lcom/amap/api/col/l3/ia;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/ia;->a()V
@@ -113,54 +103,46 @@
 .method public final a(Lcom/amap/api/col/l3/hz$a;)V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/hz;->a:Lcom/amap/api/col/l3/ia;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/hz;->b:Lcom/amap/api/col/l3/ic;
 
-    .line 2
     invoke-virtual {v1}, Lcom/amap/api/col/l3/ic;->c()Ljava/lang/String;
 
     move-result-object v1
 
     iget-object v2, p0, Lcom/amap/api/col/l3/hz;->b:Lcom/amap/api/col/l3/ic;
 
-    .line 3
     invoke-virtual {v2}, Lcom/amap/api/col/l3/ic;->m()Z
 
     move-result v2
 
     iget-object v3, p0, Lcom/amap/api/col/l3/hz;->b:Lcom/amap/api/col/l3/ic;
 
-    .line 4
     invoke-virtual {v3}, Lcom/amap/api/col/l3/ic;->l()Ljava/lang/String;
 
     move-result-object v3
 
     iget-object v4, p0, Lcom/amap/api/col/l3/hz;->b:Lcom/amap/api/col/l3/ic;
 
-    .line 5
     invoke-virtual {v4}, Lcom/amap/api/col/l3/ic;->a()Ljava/util/Map;
 
     move-result-object v4
 
     iget-object v5, p0, Lcom/amap/api/col/l3/hz;->b:Lcom/amap/api/col/l3/ic;
 
-    .line 6
     invoke-virtual {v5}, Lcom/amap/api/col/l3/ic;->b()Ljava/util/Map;
 
     move-result-object v5
 
     iget-object v6, p0, Lcom/amap/api/col/l3/hz;->b:Lcom/amap/api/col/l3/ic;
 
-    .line 7
     invoke-virtual {v6}, Lcom/amap/api/col/l3/ic;->f()[B
 
     move-result-object v6
 
     move-object v7, p1
 
-    .line 8
     invoke-virtual/range {v0 .. v7}, Lcom/amap/api/col/l3/ia;->a(Ljava/lang/String;ZLjava/lang/String;Ljava/util/Map;Ljava/util/Map;[BLcom/amap/api/col/l3/hz$a;)V
 
     return-void

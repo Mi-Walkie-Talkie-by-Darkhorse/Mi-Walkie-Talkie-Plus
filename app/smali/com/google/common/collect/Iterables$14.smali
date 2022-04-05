@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Iterables$14;
 .super Lcom/google/common/collect/FluentIterable;
-.source "Iterables.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Ljava/lang/Iterable;Ljava/util/Comparator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Iterables$14;->val$iterables:Ljava/lang/Iterable;
 
     iput-object p2, p0, Lcom/google/common/collect/Iterables$14;->val$comparator:Ljava/util/Comparator;
@@ -53,7 +51,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Iterables$14;->val$iterables:Ljava/lang/Iterable;
 
     invoke-static {}, Lcom/google/common/collect/Iterables;->access$300()Lcom/google/common/base/Function;

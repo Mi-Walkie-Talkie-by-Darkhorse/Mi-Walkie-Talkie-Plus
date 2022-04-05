@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/cw;
 .super Ljava/lang/Object;
-.source "ITileOverlayDelegate.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/interfaces/ITileOverlay;

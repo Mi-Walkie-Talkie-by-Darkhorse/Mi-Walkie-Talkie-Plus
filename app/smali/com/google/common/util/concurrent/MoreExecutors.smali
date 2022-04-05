@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/util/concurrent/MoreExecutors;
 .super Ljava/lang/Object;
-.source "MoreExecutors.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 .method static synthetic access$000(Ljava/util/concurrent/ThreadPoolExecutor;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/util/concurrent/MoreExecutors;->useDaemonThreadFactory(Ljava/util/concurrent/ThreadPoolExecutor;)V
 
     return-void
@@ -39,7 +36,6 @@
     .annotation build Lcom/google/common/annotations/Beta;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/MoreExecutors$Application;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/MoreExecutors$Application;-><init>()V
@@ -52,7 +48,6 @@
 .method public static directExecutor()Ljava/util/concurrent/Executor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/util/concurrent/MoreExecutors$DirectExecutor;->INSTANCE:Lcom/google/common/util/concurrent/MoreExecutors$DirectExecutor;
 
     return-object v0
@@ -63,7 +58,6 @@
     .annotation build Lcom/google/common/annotations/Beta;
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/MoreExecutors$Application;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/MoreExecutors$Application;-><init>()V
@@ -80,7 +74,6 @@
     .annotation build Lcom/google/common/annotations/Beta;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/MoreExecutors$Application;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/MoreExecutors$Application;-><init>()V
@@ -97,7 +90,6 @@
     .annotation build Lcom/google/common/annotations/Beta;
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/MoreExecutors$Application;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/MoreExecutors$Application;-><init>()V
@@ -114,7 +106,6 @@
     .annotation build Lcom/google/common/annotations/Beta;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/MoreExecutors$Application;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/MoreExecutors$Application;-><init>()V
@@ -151,10 +142,8 @@
 
     move-object/from16 v1, p0
 
-    .line 1
     invoke-static/range {p0 .. p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-interface/range {p1 .. p1}, Ljava/util/Collection;->size()I
 
     move-result v0
@@ -170,23 +159,19 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 3
     :goto_0
     invoke-static {v3}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 4
     invoke-static {v0}, Lcom/google/common/collect/Lists;->newArrayListWithCapacity(I)Ljava/util/ArrayList;
 
     move-result-object v3
 
-    .line 5
     invoke-static {}, Lcom/google/common/collect/Queues;->newLinkedBlockingQueue()Ljava/util/concurrent/LinkedBlockingQueue;
 
     move-result-object v4
 
     if-eqz p2, :cond_1
 
-    .line 6
     :try_start_0
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
@@ -202,13 +187,11 @@
     :cond_1
     const-wide/16 v5, 0x0
 
-    .line 7
     :goto_1
     invoke-interface/range {p1 .. p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v7
 
-    .line 8
     invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v8
@@ -233,7 +216,6 @@
 
     move-wide/from16 v5, p3
 
-    .line 9
     :goto_2
     invoke-interface {v4}, Ljava/util/concurrent/BlockingQueue;->poll()Ljava/lang/Object;
 
@@ -247,7 +229,6 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 10
     invoke-interface {v7}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v14
@@ -269,19 +250,16 @@
 
     if-nez v12, :cond_3
 
-    .line 11
     new-instance v12, Ljava/util/concurrent/ExecutionException;
 
     invoke-direct {v12, v8}, Ljava/util/concurrent/ExecutionException;-><init>(Ljava/lang/Throwable;)V
 
-    .line 12
     :cond_3
     throw v12
 
     :cond_4
     if-eqz p2, :cond_6
 
-    .line 13
     sget-object v13, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-interface {v4, v5, v6, v13}, Ljava/util/concurrent/BlockingQueue;->poll(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
@@ -292,7 +270,6 @@
 
     if-eqz v13, :cond_5
 
-    .line 14
     invoke-static {}, Ljava/lang/System;->nanoTime()J
 
     move-result-wide v14
@@ -303,7 +280,6 @@
 
     goto :goto_4
 
-    .line 15
     :cond_5
     new-instance v0, Ljava/util/concurrent/TimeoutException;
 
@@ -311,7 +287,6 @@
 
     throw v0
 
-    .line 16
     :cond_6
     invoke-interface {v4}, Ljava/util/concurrent/BlockingQueue;->take()Ljava/lang/Object;
 
@@ -334,7 +309,6 @@
 
     add-int/lit8 v11, v11, -0x1
 
-    .line 17
     :try_start_1
     invoke-interface {v13}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
 
@@ -344,7 +318,6 @@
     .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 18
     invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -362,7 +335,6 @@
 
     check-cast v3, Ljava/util/concurrent/Future;
 
-    .line 19
     invoke-interface {v3, v2}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     goto :goto_5
@@ -375,7 +347,6 @@
 
     move-object v6, v0
 
-    .line 20
     :try_start_2
     new-instance v12, Ljava/util/concurrent/ExecutionException;
 
@@ -400,7 +371,6 @@
 
     goto :goto_2
 
-    .line 21
     :goto_7
     invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -419,12 +389,10 @@
 
     check-cast v3, Ljava/util/concurrent/Future;
 
-    .line 22
     invoke-interface {v3, v2}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     goto :goto_8
 
-    .line 23
     :cond_a
     throw v0
 .end method
@@ -434,7 +402,6 @@
 
     const-string v0, "com.google.appengine.runtime.environment"
 
-    .line 1
     invoke-static {v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -449,7 +416,6 @@
     :try_start_0
     const-string v0, "com.google.apphosting.api.ApiProxy"
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
@@ -487,7 +453,6 @@
 .method public static listeningDecorator(Ljava/util/concurrent/ExecutorService;)Lcom/google/common/util/concurrent/ListeningExecutorService;
     .locals 1
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/util/concurrent/ListeningExecutorService;
 
     if-eqz v0, :cond_0
@@ -524,7 +489,6 @@
 .method public static listeningDecorator(Ljava/util/concurrent/ScheduledExecutorService;)Lcom/google/common/util/concurrent/ListeningScheduledExecutorService;
     .locals 1
 
-    .line 2
     instance-of v0, p0, Lcom/google/common/util/concurrent/ListeningScheduledExecutorService;
 
     if-eqz v0, :cond_0
@@ -547,7 +511,6 @@
 .method public static newDirectExecutorService()Lcom/google/common/util/concurrent/ListeningExecutorService;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/MoreExecutors$DirectExecutorService;
 
     const/4 v1, 0x0
@@ -560,13 +523,10 @@
 .method static newThread(Ljava/lang/String;Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->platformThreadFactory()Ljava/util/concurrent/ThreadFactory;
 
     move-result-object v0
@@ -575,7 +535,6 @@
 
     move-result-object p1
 
-    .line 4
     :try_start_0
     invoke-virtual {p1, p0}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
     :try_end_0
@@ -592,14 +551,12 @@
 
     const-string v0, "Couldn\'t invoke ThreadManager.currentRequestThreadFactory"
 
-    .line 1
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->isAppEngine()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 2
     invoke-static {}, Ljava/util/concurrent/Executors;->defaultThreadFactory()Ljava/util/concurrent/ThreadFactory;
 
     move-result-object v0
@@ -610,7 +567,6 @@
     :try_start_0
     const-string v1, "com.google.appengine.api.ThreadManager"
 
-    .line 3
     invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v1
@@ -645,7 +601,6 @@
     :catch_0
     move-exception v0
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 
     move-result-object v0
@@ -659,7 +614,6 @@
     :catch_1
     move-exception v1
 
-    .line 5
     new-instance v2, Ljava/lang/RuntimeException;
 
     invoke-direct {v2, v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -669,7 +623,6 @@
     :catch_2
     move-exception v1
 
-    .line 6
     new-instance v2, Ljava/lang/RuntimeException;
 
     invoke-direct {v2, v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -679,7 +632,6 @@
     :catch_3
     move-exception v1
 
-    .line 7
     new-instance v2, Ljava/lang/RuntimeException;
 
     invoke-direct {v2, v0, v1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -700,13 +652,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->isAppEngine()Z
 
     move-result v0
@@ -715,7 +664,6 @@
 
     return-object p0
 
-    .line 4
     :cond_0
     new-instance v0, Lcom/google/common/util/concurrent/MoreExecutors$2;
 
@@ -737,13 +685,10 @@
         }
     .end annotation
 
-    .line 5
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->isAppEngine()Z
 
     move-result v0
@@ -752,7 +697,6 @@
 
     return-object p0
 
-    .line 8
     :cond_0
     new-instance v0, Lcom/google/common/util/concurrent/MoreExecutors$3;
 
@@ -774,13 +718,10 @@
         }
     .end annotation
 
-    .line 9
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->isAppEngine()Z
 
     move-result v0
@@ -789,7 +730,6 @@
 
     return-object p0
 
-    .line 12
     :cond_0
     new-instance v0, Lcom/google/common/util/concurrent/MoreExecutors$4;
 
@@ -803,7 +743,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/MoreExecutors$DirectExecutorService;
 
     const/4 v1, 0x0
@@ -818,13 +757,10 @@
     .annotation build Lcom/google/common/annotations/Beta;
     .end annotation
 
-    .line 1
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-interface {p0}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
-    .line 3
     :try_start_0
     sget-object v0, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -836,7 +772,6 @@
 
     div-long/2addr p1, v0
 
-    .line 4
     sget-object p3, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-interface {p0, p1, p2, p3}, Ljava/util/concurrent/ExecutorService;->awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
@@ -845,10 +780,8 @@
 
     if-nez p3, :cond_0
 
-    .line 5
     invoke-interface {p0}, Ljava/util/concurrent/ExecutorService;->shutdownNow()Ljava/util/List;
 
-    .line 6
     sget-object p3, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-interface {p0, p1, p2, p3}, Ljava/util/concurrent/ExecutorService;->awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
@@ -857,7 +790,6 @@
 
     goto :goto_0
 
-    .line 7
     :catch_0
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -865,10 +797,8 @@
 
     invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 8
     invoke-interface {p0}, Ljava/util/concurrent/ExecutorService;->shutdownNow()Ljava/util/List;
 
-    .line 9
     :cond_0
     :goto_0
     invoke-interface {p0}, Ljava/util/concurrent/ExecutorService;->isTerminated()Z
@@ -896,12 +826,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0, p1}, Lcom/google/common/util/concurrent/ListeningExecutorService;->submit(Ljava/util/concurrent/Callable;)Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object p0
 
-    .line 2
     new-instance p1, Lcom/google/common/util/concurrent/MoreExecutors$1;
 
     invoke-direct {p1, p2, p0}, Lcom/google/common/util/concurrent/MoreExecutors$1;-><init>(Ljava/util/concurrent/BlockingQueue;Lcom/google/common/util/concurrent/ListenableFuture;)V
@@ -918,7 +846,6 @@
 .method private static useDaemonThreadFactory(Ljava/util/concurrent/ThreadPoolExecutor;)V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/ThreadFactoryBuilder;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/ThreadFactoryBuilder;-><init>()V

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/safeparcel/SafeReader;
 .super Ljava/lang/Object;
-.source "SafeReader.java"
 
 
 # annotations
@@ -25,7 +24,6 @@
 .method public static a(Landroid/os/Parcel;)I
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
@@ -36,7 +34,6 @@
 .method private static a(Landroid/os/Parcel;II)V
     .locals 3
 
-    .line 2
     invoke-static {p0, p1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->c(Landroid/os/Parcel;I)I
 
     move-result p1
@@ -45,7 +42,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/ifengyu/intercom/node/safeparcel/SafeReader$ReadException;
 
@@ -69,7 +65,6 @@
 
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4
     invoke-static {p1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -94,10 +89,8 @@
 
     const/4 v0, 0x4
 
-    .line 5
     invoke-static {p0, p1, v0}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->a(Landroid/os/Parcel;II)V
 
-    .line 6
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
@@ -118,22 +111,18 @@
 .method public static b(Landroid/os/Parcel;)I
     .locals 5
 
-    .line 1
     invoke-static {p0}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->a(Landroid/os/Parcel;)I
 
     move-result v0
 
-    .line 2
     invoke-static {p0, v0}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->c(Landroid/os/Parcel;I)I
 
     move-result v1
 
-    .line 3
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v2
 
-    .line 4
     invoke-static {v0}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->a(I)I
 
     move-result v3
@@ -146,7 +135,6 @@
 
     if-lt v1, v2, :cond_0
 
-    .line 5
     invoke-virtual {p0}, Landroid/os/Parcel;->dataSize()I
 
     move-result v0
@@ -155,7 +143,6 @@
 
     return v1
 
-    .line 6
     :cond_0
     new-instance v0, Lcom/ifengyu/intercom/node/safeparcel/SafeReader$ReadException;
 
@@ -183,7 +170,6 @@
 
     throw v0
 
-    .line 7
     :cond_1
     new-instance v1, Lcom/ifengyu/intercom/node/safeparcel/SafeReader$ReadException;
 
@@ -215,10 +201,8 @@
 
     const/4 v0, 0x4
 
-    .line 8
     invoke-static {p0, p1, v0}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->a(Landroid/os/Parcel;II)V
 
-    .line 9
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
     move-result p0
@@ -243,7 +227,6 @@
 
     return p0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
@@ -255,12 +238,10 @@
 .method public static d(Landroid/os/Parcel;I)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-static {p0, p1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->c(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0
@@ -271,7 +252,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -279,7 +259,6 @@
 
     add-int/2addr v0, p1
 
-    .line 4
     invoke-virtual {p0, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
     return-object v1
@@ -288,12 +267,10 @@
 .method public static e(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 1
     invoke-static {p0, p1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->c(Landroid/os/Parcel;I)I
 
     move-result p1
 
-    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v0

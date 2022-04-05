@@ -1,6 +1,5 @@
 .class public abstract Landroidx/constraintlayout/motion/widget/o;
 .super Ljava/lang/Object;
-.source "MotionInterpolator.java"
 
 # interfaces
 .implements Landroid/view/animation/Interpolator;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

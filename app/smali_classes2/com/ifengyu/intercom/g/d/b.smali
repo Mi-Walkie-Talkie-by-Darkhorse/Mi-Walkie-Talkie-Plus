@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/intercom/g/d/b;
 .super Ljava/lang/Object;
-.source "Callback.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/g/d/b$a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/g/d/b$a;-><init>()V
@@ -35,7 +33,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -91,7 +88,6 @@
 .method public b(Lokhttp3/Response;I)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lokhttp3/Response;->isSuccessful()Z
 
     move-result p1

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/library/widget/waitingdots/SinTypeEvaluator;
 .super Ljava/lang/Object;
-.source "SinTypeEvaluator.java"
 
 # interfaces
 .implements Landroid/animation/TypeEvaluator;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,7 +40,6 @@
 
     mul-double v0, v0, v2
 
-    .line 2
     invoke-static {v0, v1}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v0
@@ -77,7 +74,6 @@
 .method public bridge synthetic evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p2, Ljava/lang/Number;
 
     check-cast p3, Ljava/lang/Number;

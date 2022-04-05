@@ -1,6 +1,5 @@
 .class Landroidx/core/app/c$a;
 .super Ljava/lang/Object;
-.source "ActivityRecreator.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/core/app/c$d;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/core/app/c$a;->a:Landroidx/core/app/c$d;
 
     iput-object p2, p0, Landroidx/core/app/c$a;->b:Ljava/lang/Object;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/c$a;->a:Landroidx/core/app/c$d;
 
     iget-object v1, p0, Landroidx/core/app/c$a;->b:Ljava/lang/Object;

@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/fm$a;
 .super Ljava/lang/Object;
-.source "ServiceUtils.java"
 
 # interfaces
 .implements Ljava/io/FilenameFilter;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public final accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -53,7 +50,6 @@
 
     move-result-object p1
 
-    .line 2
     invoke-static {}, Lcom/amap/api/col/l3/fm;->d()Ljava/lang/String;
 
     move-result-object v0
@@ -64,7 +60,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p2, p1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result p1

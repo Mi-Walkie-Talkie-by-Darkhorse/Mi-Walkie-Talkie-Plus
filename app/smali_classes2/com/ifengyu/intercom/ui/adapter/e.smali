@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/adapter/e;
 .super Ljava/lang/Object;
-.source "GaoDeOfflineCityChild.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -32,28 +31,22 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/amap/api/maps/offlinemap/OfflineMapManager;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->d:Z
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/ui/adapter/e$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/adapter/e$a;-><init>(Lcom/ifengyu/intercom/ui/adapter/e;)V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->j:Landroid/os/Handler;
 
-    .line 4
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
 
-    .line 5
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/e;->b:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/adapter/e;->f()V
 
     return-void
@@ -66,7 +59,6 @@
 
     const-string v0, "quanguogaiyaotu"
 
-    .line 11
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -80,7 +72,6 @@
     :cond_0
     const-string v0, "xian"
 
-    .line 12
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -94,7 +85,6 @@
     :cond_1
     const-string v0, "yaan"
 
-    .line 13
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -108,7 +98,6 @@
     :cond_2
     const-string v0, "liuan"
 
-    .line 14
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -122,7 +111,6 @@
     :cond_3
     const-string v0, "huaian"
 
-    .line 15
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -136,7 +124,6 @@
     :cond_4
     const-string v0, "guanan"
 
-    .line 16
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -150,7 +137,6 @@
     :cond_5
     const-string v0, "taian"
 
-    .line 17
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -164,7 +150,6 @@
     :cond_6
     const-string v0, "xianggang"
 
-    .line 18
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -178,7 +163,6 @@
     :cond_7
     const-string v0, "aomen"
 
-    .line 19
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -189,7 +173,6 @@
 
     goto :goto_0
 
-    .line 20
     :cond_8
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -226,21 +209,18 @@
 .method private a(I)V
     .locals 2
 
-    .line 28
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->i:Landroid/widget/ImageView;
 
     const/16 v0, 0x8
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 29
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 30
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
@@ -257,7 +237,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 31
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
@@ -276,36 +255,29 @@
 .method private a(IIZ)V
     .locals 0
 
-    .line 21
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/adapter/e;->c:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     if-eqz p3, :cond_0
 
-    .line 22
     invoke-virtual {p3, p1}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->setState(I)V
 
-    .line 23
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/adapter/e;->c:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     invoke-virtual {p3, p2}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->setCompleteCode(I)V
 
-    .line 24
     :cond_0
     new-instance p3, Landroid/os/Message;
 
     invoke-direct {p3}, Landroid/os/Message;-><init>()V
 
-    .line 25
     iput p1, p3, Landroid/os/Message;->what:I
 
-    .line 26
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
     iput-object p1, p3, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 27
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->j:Landroid/os/Handler;
 
     invoke-virtual {p1, p3}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
@@ -316,7 +288,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/adapter/e;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/adapter/e;->e()V
 
     return-void
@@ -325,7 +296,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/adapter/e;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/adapter/e;->a(I)V
 
     return-void
@@ -334,14 +304,12 @@
 .method private b()V
     .locals 2
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->i:Landroid/widget/ImageView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     const/16 v1, 0x8
@@ -354,28 +322,24 @@
 .method private b(I)V
     .locals 2
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->i:Landroid/widget/ImageView;
 
     const/16 v0, 0x8
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     const/high16 v0, -0x10000
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
@@ -394,7 +358,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/adapter/e;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/adapter/e;->c()V
 
     return-void
@@ -403,7 +366,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/adapter/e;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/adapter/e;->b(I)V
 
     return-void
@@ -412,28 +374,24 @@
 .method private c()V
     .locals 3
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->i:Landroid/widget/ImageView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     const/high16 v1, -0x10000
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
@@ -452,21 +410,18 @@
 .method private c(I)V
     .locals 2
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->i:Landroid/widget/ImageView;
 
     const/16 v0, 0x8
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
@@ -483,7 +438,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
@@ -502,7 +456,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/adapter/e;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/adapter/e;->b()V
 
     return-void
@@ -511,7 +464,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/adapter/e;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/adapter/e;->c(I)V
 
     return-void
@@ -526,21 +478,18 @@
 .method private d(I)V
     .locals 2
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->i:Landroid/widget/ImageView;
 
     const/16 v0, 0x8
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
@@ -557,7 +506,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
@@ -576,7 +524,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/adapter/e;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/adapter/e;->d()V
 
     return-void
@@ -585,7 +532,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/adapter/e;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/adapter/e;->d(I)V
 
     return-void
@@ -594,7 +540,6 @@
 .method static synthetic e(Lcom/ifengyu/intercom/ui/adapter/e;)Landroid/view/View;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->e:Landroid/view/View;
 
     return-object p0
@@ -603,21 +548,18 @@
 .method private e()V
     .locals 3
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->i:Landroid/widget/ImageView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
@@ -634,7 +576,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
@@ -653,7 +594,6 @@
 .method private f()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
 
     const-string v1, "layout_inflater"
@@ -668,7 +608,6 @@
 
     const/4 v2, 0x0
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object v0
@@ -677,7 +616,6 @@
 
     const v1, 0x7f0900d8
 
-    .line 3
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -686,7 +624,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->f:Landroid/widget/TextView;
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->e:Landroid/view/View;
 
     const v1, 0x7f0900d7
@@ -699,7 +636,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->g:Landroid/widget/TextView;
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->e:Landroid/view/View;
 
     const v1, 0x7f0900d9
@@ -712,7 +648,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->h:Landroid/widget/TextView;
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->e:Landroid/view/View;
 
     const v1, 0x7f0900d6
@@ -725,7 +660,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->i:Landroid/widget/ImageView;
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->e:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -738,20 +672,17 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->b:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->pause()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->b:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->restart()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     monitor-exit p0
 
     return-void
@@ -769,7 +700,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->b:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
@@ -786,7 +716,6 @@
 
     const/4 v0, 0x1
 
-    .line 2
     monitor-exit p0
 
     return v0
@@ -799,7 +728,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     :try_start_1
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_1
@@ -807,7 +735,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     monitor-exit p0
 
     return v0
@@ -823,7 +750,6 @@
 .method public a()Landroid/view/View;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->e:Landroid/view/View;
 
     return-object v0
@@ -834,17 +760,14 @@
 
     if-eqz p1, :cond_1
 
-    .line 4
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->c:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/i/c0;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->f:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/City;->getPinyin()Ljava/lang/String;
@@ -863,7 +786,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->f:Landroid/widget/TextView;
 
@@ -873,7 +795,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 8
     :goto_0
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getSize()J
 
@@ -897,7 +818,6 @@
 
     div-double/2addr v0, v2
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->g:Landroid/widget/TextView;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -920,7 +840,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->c:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getState()I
@@ -944,7 +863,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->a(Landroid/content/Context;)Ljava/lang/String;
@@ -953,14 +871,12 @@
 
     sput-object p1, Lcom/amap/api/maps/MapsInitializer;->sdcardDir:Ljava/lang/String;
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->e:Landroid/view/View;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setClickable(Z)V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->a()Landroid/os/Handler;
 
     move-result-object p1
@@ -973,17 +889,14 @@
 
     invoke-virtual {p1, v0, v1, v2}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e;->c:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     if-eqz p1, :cond_3
 
-    .line 5
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getState()I
 
     move-result p1
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e;->c:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getcompleteCode()I
@@ -1000,32 +913,26 @@
 
     if-eq p1, v1, :cond_2
 
-    .line 7
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/adapter/e;->h()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 8
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/ui/adapter/e;->d(I)V
 
     goto :goto_0
 
-    .line 9
     :cond_0
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/adapter/e;->c()V
 
     goto :goto_0
 
-    .line 10
     :cond_1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/adapter/e;->g()V
 
-    .line 11
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/ui/adapter/e;->b(I)V
 
-    .line 12
     :cond_2
     :goto_0
     new-instance p1, Ljava/lang/StringBuilder;

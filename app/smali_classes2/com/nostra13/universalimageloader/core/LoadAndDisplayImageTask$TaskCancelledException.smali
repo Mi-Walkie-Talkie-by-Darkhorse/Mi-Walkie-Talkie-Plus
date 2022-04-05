@@ -1,6 +1,5 @@
 .class Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$TaskCancelledException;
 .super Ljava/lang/Exception;
-.source "LoadAndDisplayImageTask.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$TaskCancelledException;->this$0:Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;
 
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V

@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/util/NetworkLocationIgnorer;
 .super Ljava/lang/Object;
-.source "NetworkLocationIgnorer.java"
 
 # interfaces
 .implements Lorg/osmdroid/util/constants/UtilConstants;
@@ -14,12 +13,10 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lorg/osmdroid/util/NetworkLocationIgnorer;->mLastGps:J
 
     return-void
@@ -32,19 +29,16 @@
 
     const-string v0, "gps"
 
-    .line 1
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 2
     iput-wide p2, p0, Lorg/osmdroid/util/NetworkLocationIgnorer;->mLastGps:J
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-wide v0, p0, Lorg/osmdroid/util/NetworkLocationIgnorer;->mLastGps:J
 

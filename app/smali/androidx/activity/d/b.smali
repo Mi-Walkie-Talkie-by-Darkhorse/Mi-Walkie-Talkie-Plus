@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/activity/d/b;
 .super Ljava/lang/Object;
-.source "OnContextAvailableListener.java"
 
 
 # virtual methods

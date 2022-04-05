@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kk;
 .super Ljava/lang/Object;
-.source "R.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/s$e;
 .super Landroidx/constraintlayout/motion/widget/s;
-.source "TimeCycleSplineSet.java"
 
 
 # annotations
@@ -22,12 +21,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroidx/constraintlayout/motion/widget/s;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Landroidx/constraintlayout/motion/widget/s$e;->l:Z
 
     return-void
@@ -46,12 +43,10 @@
 
     const-string v9, "SplineSet"
 
-    .line 1
     instance-of v1, v0, Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     if-eqz v1, :cond_0
 
-    .line 2
     move-object v8, v0
 
     check-cast v8, Landroidx/constraintlayout/motion/widget/MotionLayout;
@@ -74,7 +69,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_0
     iget-boolean v1, v7, Landroidx/constraintlayout/motion/widget/s$e;->l:Z
 
@@ -89,7 +83,6 @@
 
     const/4 v2, 0x1
 
-    .line 4
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -111,7 +104,6 @@
 
     goto :goto_0
 
-    .line 5
     :catch_0
     iput-boolean v2, v7, Landroidx/constraintlayout/motion/widget/s$e;->l:Z
 
@@ -133,7 +125,6 @@
 
     move-object/from16 v6, p5
 
-    .line 6
     invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/motion/widget/s;->a(FJLandroid/view/View;Landroidx/constraintlayout/motion/widget/e;)F
 
     move-result v1
@@ -154,7 +145,6 @@
     :catch_1
     move-exception v0
 
-    .line 7
     invoke-static {v9, v8, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_1
@@ -162,10 +152,8 @@
     :catch_2
     move-exception v0
 
-    .line 8
     invoke-static {v9, v8, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 9
     :cond_2
     :goto_1
     iget-boolean v0, v7, Landroidx/constraintlayout/motion/widget/s;->h:Z

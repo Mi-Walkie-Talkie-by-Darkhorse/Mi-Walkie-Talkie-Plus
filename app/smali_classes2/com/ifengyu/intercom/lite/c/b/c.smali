@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/c/b/c;
 .super Lcom/ifengyu/intercom/lite/c/b/b;
-.source "EditChannelDialogBuilder.java"
 
 
 # static fields
@@ -21,7 +20,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/ifengyu/intercom/lite/c/b/c;->C:[I
@@ -30,21 +28,18 @@
 
     new-array v1, v0, [I
 
-    .line 2
     fill-array-data v1, :array_1
 
     sput-object v1, Lcom/ifengyu/intercom/lite/c/b/c;->D:[I
 
     new-array v1, v0, [I
 
-    .line 3
     fill-array-data v1, :array_2
 
     sput-object v1, Lcom/ifengyu/intercom/lite/c/b/c;->E:[I
 
     new-array v0, v0, [I
 
-    .line 4
     fill-array-data v0, :array_3
 
     sput-object v0, Lcom/ifengyu/intercom/lite/c/b/c;->F:[I
@@ -109,7 +104,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/lite/c/b/b;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -120,7 +114,6 @@
 
     const/4 v0, 0x0
 
-    .line 13
     aget v1, p1, v0
 
     if-ne p2, v1, :cond_0
@@ -130,7 +123,6 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 14
     aget v1, p1, v0
 
     if-ne p2, v1, :cond_1
@@ -140,7 +132,6 @@
     :cond_1
     const/4 v0, 0x2
 
-    .line 15
     aget v1, p1, v0
 
     if-ne p2, v1, :cond_2
@@ -150,7 +141,6 @@
     :cond_2
     const/4 v0, 0x3
 
-    .line 16
     aget v1, p1, v0
 
     if-ne p2, v1, :cond_3
@@ -160,7 +150,6 @@
     :cond_3
     const/4 v0, 0x4
 
-    .line 17
     aget v1, p1, v0
 
     if-ne p2, v1, :cond_4
@@ -170,7 +159,6 @@
     :cond_4
     const/4 v0, 0x5
 
-    .line 18
     aget v1, p1, v0
 
     if-ne p2, v1, :cond_5
@@ -180,7 +168,6 @@
     :cond_5
     const/4 v0, 0x6
 
-    .line 19
     aget v1, p1, v0
 
     if-ne p2, v1, :cond_6
@@ -190,7 +177,6 @@
     :cond_6
     const/4 v0, 0x7
 
-    .line 20
     aget p1, p1, v0
 
     if-ne p2, p1, :cond_7
@@ -236,7 +222,6 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     sget-object v1, Lcom/ifengyu/intercom/lite/c/b/c;->C:[I
 
     aget v1, v1, p3
@@ -271,7 +256,6 @@
 
     goto/16 :goto_4
 
-    .line 2
     :pswitch_0
     aget v15, p2, v14
 
@@ -348,7 +332,6 @@
     :cond_2
     const/4 v3, 0x0
 
-    .line 3
     :goto_0
     sget-object v5, Lcom/ifengyu/intercom/lite/c/b/c;->E:[I
 
@@ -362,7 +345,6 @@
 
     if-eqz v3, :cond_c
 
-    .line 4
     sget-object v2, Lcom/ifengyu/intercom/lite/c/b/c;->F:[I
 
     aget v2, v2, v4
@@ -371,7 +353,6 @@
 
     goto/16 :goto_3
 
-    .line 5
     :pswitch_1
     aget v15, p2, v14
 
@@ -438,7 +419,6 @@
     :cond_5
     const/4 v3, 0x0
 
-    .line 6
     :goto_1
     invoke-direct {v0, v15}, Lcom/ifengyu/intercom/lite/c/b/c;->b(F)Z
 
@@ -446,7 +426,6 @@
 
     if-eqz v5, :cond_6
 
-    .line 7
     sget-object v4, Lcom/ifengyu/intercom/lite/c/b/c;->D:[I
 
     aget v5, p2, v12
@@ -459,7 +438,6 @@
 
     if-eqz v3, :cond_c
 
-    .line 8
     sget-object v2, Lcom/ifengyu/intercom/lite/c/b/c;->E:[I
 
     aget v2, v2, v4
@@ -483,7 +461,6 @@
 
     goto/16 :goto_3
 
-    .line 9
     :pswitch_2
     aget v2, p2, v14
 
@@ -542,7 +519,6 @@
     :cond_9
     const/4 v3, 0x0
 
-    .line 10
     :goto_2
     invoke-direct {v0, v2}, Lcom/ifengyu/intercom/lite/c/b/c;->b(F)Z
 
@@ -565,7 +541,6 @@
 
     goto :goto_4
 
-    .line 11
     :pswitch_3
     aget v2, p2, v14
 
@@ -612,7 +587,6 @@
 
     goto :goto_3
 
-    .line 12
     :pswitch_4
     aget v2, p2, v14
 
@@ -685,7 +659,6 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/c/b/b;->e()V
 
     :cond_0
@@ -699,7 +672,6 @@
 
     if-ne p1, p3, :cond_0
 
-    .line 1
     sget-object p1, Lcom/ifengyu/intercom/lite/c/b/c;->E:[I
 
     aget p2, p2, p3
@@ -708,7 +680,6 @@
 
     move-result p1
 
-    .line 2
     sget-object p2, Lcom/ifengyu/intercom/lite/c/b/c;->F:[I
 
     aget p1, p2, p1

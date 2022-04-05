@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;
 .super Landroid/widget/FrameLayout;
-.source "ShadowLayout.java"
 
 
 # instance fields
@@ -25,22 +24,18 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->f:Z
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->g:Z
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->b(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -49,20 +44,16 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 5
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 v0, 0x1
 
-    .line 6
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->f:Z
 
     const/4 v0, 0x0
 
-    .line 7
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->g:Z
 
-    .line 8
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->b(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -71,20 +62,16 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 9
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 p3, 0x1
 
-    .line 10
     iput-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->f:Z
 
     const/4 p3, 0x0
 
-    .line 11
     iput-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->g:Z
 
-    .line 12
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->b(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -95,7 +82,6 @@
 
     const/4 v0, 0x0
 
-    .line 15
     invoke-virtual {p1, p2, p3, v0, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p1
@@ -106,19 +92,16 @@
 .method private a(IIFFFFII)Landroid/graphics/Bitmap;
     .locals 4
 
-    .line 16
     sget-object v0, Landroid/graphics/Bitmap$Config;->ALPHA_8:Landroid/graphics/Bitmap$Config;
 
     invoke-static {p1, p2, v0}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object v0
 
-    .line 17
     new-instance v1, Landroid/graphics/Canvas;
 
     invoke-direct {v1, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 18
     new-instance v2, Landroid/graphics/RectF;
 
     int-to-float p1, p1
@@ -137,14 +120,12 @@
 
     if-lez p2, :cond_0
 
-    .line 19
     iget p2, v2, Landroid/graphics/RectF;->top:F
 
     add-float/2addr p2, p6
 
     iput p2, v2, Landroid/graphics/RectF;->top:F
 
-    .line 20
     iget p2, v2, Landroid/graphics/RectF;->bottom:F
 
     sub-float/2addr p2, p6
@@ -158,7 +139,6 @@
 
     if-gez p2, :cond_1
 
-    .line 21
     iget p2, v2, Landroid/graphics/RectF;->top:F
 
     invoke-static {p6}, Ljava/lang/Math;->abs(F)F
@@ -169,7 +149,6 @@
 
     iput p2, v2, Landroid/graphics/RectF;->top:F
 
-    .line 22
     iget p2, v2, Landroid/graphics/RectF;->bottom:F
 
     invoke-static {p6}, Ljava/lang/Math;->abs(F)F
@@ -186,14 +165,12 @@
 
     if-lez p2, :cond_2
 
-    .line 23
     iget p1, v2, Landroid/graphics/RectF;->left:F
 
     add-float/2addr p1, p5
 
     iput p1, v2, Landroid/graphics/RectF;->left:F
 
-    .line 24
     iget p1, v2, Landroid/graphics/RectF;->right:F
 
     sub-float/2addr p1, p5
@@ -207,7 +184,6 @@
 
     if-gez p1, :cond_3
 
-    .line 25
     iget p1, v2, Landroid/graphics/RectF;->left:F
 
     invoke-static {p5}, Ljava/lang/Math;->abs(F)F
@@ -218,7 +194,6 @@
 
     iput p1, v2, Landroid/graphics/RectF;->left:F
 
-    .line 26
     iget p1, v2, Landroid/graphics/RectF;->right:F
 
     invoke-static {p5}, Ljava/lang/Math;->abs(F)F
@@ -229,7 +204,6 @@
 
     iput p1, v2, Landroid/graphics/RectF;->right:F
 
-    .line 27
     :cond_3
     :goto_1
     new-instance p1, Landroid/graphics/Paint;
@@ -238,28 +212,22 @@
 
     const/4 p2, 0x1
 
-    .line 28
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 29
     invoke-virtual {p1, p8}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 30
     sget-object p2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 31
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->isInEditMode()Z
 
     move-result p2
 
     if-nez p2, :cond_4
 
-    .line 32
     invoke-virtual {p1, p4, p5, p6, p7}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
 
-    .line 33
     :cond_4
     invoke-virtual {v1, v2, p3, p3, p1}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
@@ -269,7 +237,6 @@
 .method private a(II)V
     .locals 9
 
-    .line 1
     iget v3, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->c:F
 
     iget v4, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->b:F
@@ -292,7 +259,6 @@
 
     move-result-object p1
 
-    .line 2
     new-instance p2, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getResources()Landroid/content/res/Resources;
@@ -301,19 +267,16 @@
 
     invoke-direct {p2, v0, p1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    .line 3
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v0, 0x10
 
     if-gt p1, v0, :cond_0
 
-    .line 4
     invoke-virtual {p0, p2}, Landroid/widget/FrameLayout;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-virtual {p0, p2}, Landroid/widget/FrameLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
@@ -324,7 +287,6 @@
 .method private a(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
 
-    .line 6
     sget-object v0, Lcom/ifengyu/intercom/R$styleable;->ShadowLayout:[I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->a(Landroid/content/Context;Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -338,7 +300,6 @@
     :cond_0
     const/4 p2, 0x0
 
-    .line 7
     :try_start_0
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getResources()Landroid/content/res/Resources;
 
@@ -358,7 +319,6 @@
 
     const/4 p2, 0x4
 
-    .line 8
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -379,7 +339,6 @@
 
     const/4 v0, 0x1
 
-    .line 9
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result p2
@@ -388,7 +347,6 @@
 
     const/4 p2, 0x0
 
-    .line 10
     invoke-virtual {p1, v0, p2}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
     move-result v0
@@ -397,7 +355,6 @@
 
     const/4 v0, 0x2
 
-    .line 11
     invoke-virtual {p1, v0, p2}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
     move-result p2
@@ -408,7 +365,6 @@
 
     const v0, -0x778a8a8b
 
-    .line 12
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result p2
@@ -417,7 +373,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 13
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -427,17 +382,14 @@
 
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 14
     throw p2
 .end method
 
 .method private b(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 2
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->b:F
 
     iget p2, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->d:F
@@ -450,7 +402,6 @@
 
     float-to-int p1, p1
 
-    .line 3
     iget p2, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->b:F
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->e:F
@@ -463,12 +414,10 @@
 
     float-to-int p2, p2
 
-    .line 4
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->h:Z
 
     if-eqz v0, :cond_0
 
-    .line 5
     invoke-virtual {p0, p1, p2, p1, p2}, Landroid/widget/FrameLayout;->setPadding(IIII)V
 
     goto :goto_0
@@ -476,7 +425,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 6
     invoke-virtual {p0, p1, v0, p1, p2}, Landroid/widget/FrameLayout;->setPadding(IIII)V
 
     :goto_0
@@ -504,24 +452,20 @@
 .method protected onLayout(ZIIII)V
     .locals 0
 
-    .line 1
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
-    .line 2
     iget-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->g:Z
 
     if-eqz p1, :cond_0
 
     const/4 p1, 0x0
 
-    .line 3
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->g:Z
 
     sub-int/2addr p4, p2
 
     sub-int/2addr p5, p3
 
-    .line 4
     invoke-direct {p0, p4, p5}, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->a(II)V
 
     :cond_0
@@ -531,14 +475,12 @@
 .method protected onSizeChanged(IIII)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/FrameLayout;->onSizeChanged(IIII)V
 
     if-lez p1, :cond_1
 
     if-lez p2, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object p3
@@ -556,10 +498,8 @@
     :cond_0
     const/4 p3, 0x0
 
-    .line 3
     iput-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->g:Z
 
-    .line 4
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->a(II)V
 
     :cond_1
@@ -569,7 +509,6 @@
 .method public setInvalidateShadowOnSizeChanged(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ShadowLayout;->f:Z
 
     return-void

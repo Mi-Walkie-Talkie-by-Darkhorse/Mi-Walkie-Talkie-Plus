@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/IndicatorHandler;
 .super Ljava/lang/Object;
-.source "IndicatorHandler.java"
 
 # interfaces
 .implements Lcom/just/agentweb/IndicatorController;
@@ -14,7 +13,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,7 +21,6 @@
 .method static getInstance()Lcom/just/agentweb/IndicatorHandler;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/just/agentweb/IndicatorHandler;
 
     invoke-direct {v0}, Lcom/just/agentweb/IndicatorHandler;-><init>()V
@@ -36,12 +33,10 @@
 .method public finish()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/IndicatorHandler;->mBaseIndicatorSpec:Lcom/just/agentweb/BaseIndicatorSpec;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/just/agentweb/BaseIndicatorSpec;->hide()V
 
     :cond_0
@@ -51,7 +46,6 @@
 .method inJectIndicator(Lcom/just/agentweb/BaseIndicatorSpec;)Lcom/just/agentweb/IndicatorHandler;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/IndicatorHandler;->mBaseIndicatorSpec:Lcom/just/agentweb/BaseIndicatorSpec;
 
     return-object p0
@@ -60,7 +54,6 @@
 .method public offerIndicator()Lcom/just/agentweb/BaseIndicatorSpec;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/IndicatorHandler;->mBaseIndicatorSpec:Lcom/just/agentweb/BaseIndicatorSpec;
 
     return-object v0
@@ -71,7 +64,6 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/IndicatorHandler;->reset()V
 
     goto :goto_0
@@ -83,7 +75,6 @@
 
     if-gt p2, p1, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Lcom/just/agentweb/IndicatorHandler;->showIndicator()V
 
     goto :goto_0
@@ -95,16 +86,13 @@
 
     if-ge p2, p1, :cond_2
 
-    .line 3
     invoke-virtual {p0, p2}, Lcom/just/agentweb/IndicatorHandler;->setProgress(I)V
 
     goto :goto_0
 
-    .line 4
     :cond_2
     invoke-virtual {p0, p2}, Lcom/just/agentweb/IndicatorHandler;->setProgress(I)V
 
-    .line 5
     invoke-virtual {p0}, Lcom/just/agentweb/IndicatorHandler;->finish()V
 
     :goto_0
@@ -114,12 +102,10 @@
 .method public reset()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/IndicatorHandler;->mBaseIndicatorSpec:Lcom/just/agentweb/BaseIndicatorSpec;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/just/agentweb/BaseIndicatorSpec;->reset()V
 
     :cond_0
@@ -129,12 +115,10 @@
 .method public setProgress(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/IndicatorHandler;->mBaseIndicatorSpec:Lcom/just/agentweb/BaseIndicatorSpec;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Lcom/just/agentweb/BaseIndicatorSpec;->setProgress(I)V
 
     :cond_0
@@ -144,12 +128,10 @@
 .method public showIndicator()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/IndicatorHandler;->mBaseIndicatorSpec:Lcom/just/agentweb/BaseIndicatorSpec;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/just/agentweb/BaseIndicatorSpec;->show()V
 
     :cond_0

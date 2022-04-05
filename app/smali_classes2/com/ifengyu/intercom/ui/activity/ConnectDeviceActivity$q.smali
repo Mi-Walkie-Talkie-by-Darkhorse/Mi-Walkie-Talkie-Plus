@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$q;
 .super Ljava/lang/Object;
-.source "ConnectDeviceActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$q;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$q;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {v0, v0}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->a(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;Landroid/app/Activity;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$q;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     const/4 v1, 0x1

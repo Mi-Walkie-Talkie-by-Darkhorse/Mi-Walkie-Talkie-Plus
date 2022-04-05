@@ -1,6 +1,5 @@
 .class interface abstract annotation Lkotlin/native/concurrent/SharedImmutable;
 .super Ljava/lang/Object;
-.source "NativeAnnotationsH.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

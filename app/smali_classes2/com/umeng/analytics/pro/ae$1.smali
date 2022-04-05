@@ -1,6 +1,5 @@
 .class Lcom/umeng/analytics/pro/ae$1;
 .super Ljava/lang/Object;
-.source "SamsungDeviceIdSupplier.java"
 
 # interfaces
 .implements Landroid/content/ServiceConnection;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/umeng/analytics/pro/ae;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/analytics/pro/ae$1;->a:Lcom/umeng/analytics/pro/ae;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,13 +38,11 @@
 
     const-string p1, "DeviceIdService"
 
-    .line 1
     :try_start_0
     invoke-static {p2}, Lcom/umeng/analytics/pro/a$a;->a(Landroid/os/IBinder;)Lcom/umeng/analytics/pro/a;
 
     move-result-object p2
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/analytics/pro/ae$1;->a:Lcom/umeng/analytics/pro/ae;
 
     invoke-interface {p2}, Lcom/umeng/analytics/pro/a;->a()Ljava/lang/String;
@@ -57,7 +53,6 @@
 
     const-string p2, "onServiceConnected"
 
-    .line 3
     invoke-static {p1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
@@ -73,7 +68,6 @@
     :catch_1
     move-exception p2
 
-    .line 4
     :goto_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -95,7 +89,6 @@
 
     invoke-static {p1, p2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     :goto_1
     iget-object p1, p0, Lcom/umeng/analytics/pro/ae$1;->a:Lcom/umeng/analytics/pro/ae;
 
@@ -115,7 +108,6 @@
 
     const-string v0, "onServiceDisconnected"
 
-    .line 1
     invoke-static {p1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void

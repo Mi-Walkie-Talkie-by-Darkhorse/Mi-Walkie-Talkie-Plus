@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/intercom/lite/base/e;
 .super Lcom/qmuiteam/qmui/arch/b;
-.source "BaseFragment.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/qmuiteam/qmui/arch/b;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -46,7 +43,6 @@
     :cond_0
     const/16 p2, 0x64
 
-    .line 7
     invoke-static {p1, p2}, Lcom/qmuiteam/qmui/util/d;->a(Landroid/content/Context;I)I
 
     move-result p1
@@ -67,7 +63,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -78,10 +73,8 @@
 
     const/4 v1, 0x3
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;
 
-    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -94,15 +87,12 @@
 
     const/4 p1, 0x0
 
-    .line 4
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;->a(Z)Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog;
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     new-instance v0, Lcom/ifengyu/intercom/lite/base/c;
@@ -119,7 +109,6 @@
 .method protected b(I)V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -128,7 +117,6 @@
 
     invoke-direct {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object p1
@@ -137,20 +125,16 @@
 
     const/4 p1, 0x2
 
-    .line 3
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;
 
     const/4 p1, 0x0
 
-    .line 4
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;->a(Z)Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog;
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     new-instance v0, Lcom/ifengyu/intercom/lite/base/c;
@@ -175,10 +159,8 @@
 .method public onPause()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onPause()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/base/e;->y:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/umeng/analytics/MobclickAgent;->onPageEnd(Ljava/lang/String;)V
@@ -189,10 +171,8 @@
 .method public onResume()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/qmuiteam/qmui/arch/b;->onResume()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/base/e;->y:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/umeng/analytics/MobclickAgent;->onPageStart(Ljava/lang/String;)V
@@ -203,7 +183,6 @@
 .method protected x()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -212,14 +191,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
     check-cast v0, Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;
 
-    .line 3
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;->q()V
 
     :cond_0
@@ -229,7 +206,6 @@
 .method protected y()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -238,14 +214,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
     check-cast v0, Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;
 
-    .line 3
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;->s()V
 
     :cond_0
@@ -255,7 +229,6 @@
 .method protected z()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -264,14 +237,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
     check-cast v0, Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;
 
-    .line 3
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;->t()V
 
     :cond_0

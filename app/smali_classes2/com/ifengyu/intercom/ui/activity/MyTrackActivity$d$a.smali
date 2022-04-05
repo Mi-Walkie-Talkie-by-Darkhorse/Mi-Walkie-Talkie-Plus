@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d$a;
 .super Ljava/lang/Object;
-.source "MyTrackActivity.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d$a;->b:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d;
 
     iput p2, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d$a;->a:I
@@ -42,7 +40,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d$a;->b:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;

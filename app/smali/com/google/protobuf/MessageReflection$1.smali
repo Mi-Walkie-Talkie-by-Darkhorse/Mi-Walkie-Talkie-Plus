@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/protobuf/MessageReflection$1;
 .super Ljava/lang/Object;
-.source "MessageReflection.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/Descriptors$FieldDescriptor$Type;->values()[Lcom/google/protobuf/Descriptors$FieldDescriptor$Type;
 
     move-result-object v0

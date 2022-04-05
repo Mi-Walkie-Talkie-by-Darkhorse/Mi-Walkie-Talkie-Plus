@@ -1,6 +1,5 @@
 .class Lokhttp3/internal/http2/Http2Connection$4;
 .super Lokhttp3/internal/NamedRunnable;
-.source "Http2Connection.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method varargs constructor <init>(Lokhttp3/internal/http2/Http2Connection;Ljava/lang/String;[Ljava/lang/Object;ILjava/util/List;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/http2/Http2Connection$4;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
     iput p4, p0, Lokhttp3/internal/http2/Http2Connection$4;->val$streamId:I
@@ -43,7 +41,6 @@
 .method public execute()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$4;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
     iget-object v0, v0, Lokhttp3/internal/http2/Http2Connection;->pushObserver:Lokhttp3/internal/http2/PushObserver;
@@ -58,7 +55,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$4;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
@@ -70,14 +66,12 @@
 
     invoke-virtual {v0, v1, v2}, Lokhttp3/internal/http2/Http2Writer;->rstStream(ILokhttp3/internal/http2/ErrorCode;)V
 
-    .line 3
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$4;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
     monitor-enter v0
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 4
     :try_start_1
     iget-object v1, p0, Lokhttp3/internal/http2/Http2Connection$4;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
@@ -91,7 +85,6 @@
 
     invoke-interface {v1, v2}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
-    .line 5
     monitor-exit v0
 
     goto :goto_0

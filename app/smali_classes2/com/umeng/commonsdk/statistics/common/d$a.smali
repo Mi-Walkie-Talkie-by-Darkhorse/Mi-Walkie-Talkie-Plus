@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/common/d$a;
 .super Ljava/lang/Object;
-.source "StoreHelper.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 
     const-string v0, ".um"
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/umeng/commonsdk/statistics/common/d$a;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     return-void
@@ -37,22 +35,18 @@
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0xa
 
-    .line 3
     iput v0, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->a:I
 
-    .line 4
     new-instance v0, Lcom/umeng/commonsdk/statistics/common/d$a$1;
 
     invoke-direct {v0, p0}, Lcom/umeng/commonsdk/statistics/common/d$a$1;-><init>(Lcom/umeng/commonsdk/statistics/common/d$a;)V
 
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->c:Ljava/io/FilenameFilter;
 
-    .line 5
     new-instance v0, Ljava/io/File;
 
     invoke-virtual {p1}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
@@ -63,7 +57,6 @@
 
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->b:Ljava/io/File;
 
-    .line 6
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p1
@@ -78,7 +71,6 @@
 
     if-nez p1, :cond_1
 
-    .line 7
     :cond_0
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->b:Ljava/io/File;
 
@@ -93,7 +85,6 @@
 .method public a(Lcom/umeng/commonsdk/statistics/common/d$b;)V
     .locals 5
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->b:Ljava/io/File;
 
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->c:Ljava/io/FilenameFilter;
@@ -106,17 +97,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     array-length v2, v0
 
     const/16 v3, 0xa
 
     if-lt v2, v3, :cond_0
 
-    .line 5
     invoke-static {v0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
 
-    .line 6
     array-length v2, v0
 
     sub-int/2addr v2, v3
@@ -126,7 +114,6 @@
     :goto_0
     if-ge v3, v2, :cond_0
 
-    .line 7
     aget-object v4, v0, v3
 
     invoke-virtual {v4}, Ljava/io/File;->delete()Z
@@ -138,23 +125,19 @@
     :cond_0
     if-eqz v0, :cond_3
 
-    .line 8
     array-length v2, v0
 
     if-lez v2, :cond_3
 
-    .line 9
     iget-object v2, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->b:Ljava/io/File;
 
     invoke-interface {p1, v2}, Lcom/umeng/commonsdk/statistics/common/d$b;->a(Ljava/io/File;)V
 
-    .line 10
     array-length v2, v0
 
     :goto_1
     if-ge v1, v2, :cond_2
 
-    .line 11
     :try_start_0
     aget-object v3, v0, v1
 
@@ -166,7 +149,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 12
     aget-object v3, v0, v1
 
     goto :goto_2
@@ -182,7 +164,6 @@
 
     goto :goto_1
 
-    .line 13
     :cond_2
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->b:Ljava/io/File;
 
@@ -197,14 +178,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 14
     array-length v0, p1
 
     if-nez v0, :cond_0
 
     goto :goto_0
 
-    .line 15
     :cond_0
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
@@ -230,14 +209,12 @@
 
     move-result-object v0
 
-    .line 16
     new-instance v1, Ljava/io/File;
 
     iget-object v2, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->b:Ljava/io/File;
 
     invoke-direct {v1, v2, v0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 17
     :try_start_0
     invoke-static {v1, p1}, Lcom/umeng/commonsdk/statistics/common/HelperUtils;->writeFile(Ljava/io/File;[B)V
     :try_end_0
@@ -252,7 +229,6 @@
 .method public a()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->b:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->listFiles()[Ljava/io/File;
@@ -261,7 +237,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     array-length v0, v0
 
     if-lez v0, :cond_0
@@ -279,7 +254,6 @@
 .method public b()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->b:Ljava/io/File;
 
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->c:Ljava/io/FilenameFilter;
@@ -290,12 +264,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     array-length v1, v0
 
     if-lez v1, :cond_0
 
-    .line 3
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -305,7 +277,6 @@
 
     aget-object v3, v0, v2
 
-    .line 4
     invoke-virtual {v3}, Ljava/io/File;->delete()Z
 
     add-int/lit8 v2, v2, 0x1
@@ -319,7 +290,6 @@
 .method public c()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->b:Ljava/io/File;
 
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/common/d$a;->c:Ljava/io/FilenameFilter;
@@ -330,12 +300,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     array-length v1, v0
 
     if-lez v1, :cond_0
 
-    .line 3
     array-length v0, v0
 
     return v0

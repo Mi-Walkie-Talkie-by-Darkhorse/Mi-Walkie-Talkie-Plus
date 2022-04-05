@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/util/GeometryMath;
 .super Ljava/lang/Object;
-.source "GeometryMath.java"
 
 
 # static fields
@@ -13,7 +12,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -22,7 +20,6 @@
 .method private static Max4(DDDD)D
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(DD)D
 
     move-result-wide p0
@@ -45,7 +42,6 @@
 .method private static Min4(DDDD)D
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->min(DD)D
 
     move-result-wide p0
@@ -68,7 +64,6 @@
 .method public static final getBoundingBoxForRotatatedRectangle(Landroid/graphics/Rect;FLandroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/graphics/Rect;->centerX()I
 
     move-result v0
@@ -95,7 +90,6 @@
 
     if-nez p4, :cond_0
 
-    .line 3
     new-instance v3, Landroid/graphics/Rect;
 
     invoke-direct {v3}, Landroid/graphics/Rect;-><init>()V
@@ -116,24 +110,20 @@
 
     mul-double v4, v4, v6
 
-    .line 4
     invoke-static {v4, v5}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v6
 
-    .line 5
     invoke-static {v4, v5}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v4
 
-    .line 6
     iget v8, v0, Landroid/graphics/Rect;->left:I
 
     sub-int v9, v8, v1
 
     int-to-double v9, v9
 
-    .line 7
     iget v11, v0, Landroid/graphics/Rect;->top:I
 
     sub-int v12, v11, v2
@@ -162,7 +152,6 @@
 
     sub-double/2addr v9, v12
 
-    .line 8
     iget v12, v0, Landroid/graphics/Rect;->right:I
 
     sub-int v13, v12, v1
@@ -197,7 +186,6 @@
 
     int-to-double v11, v8
 
-    .line 9
     iget v0, v0, Landroid/graphics/Rect;->bottom:I
 
     sub-int v8, v0, v2
@@ -254,7 +242,6 @@
 
     move-wide/from16 v26, v12
 
-    .line 10
     invoke-static/range {v20 .. v27}, Lorg/osmdroid/util/GeometryMath;->Min4(DDDD)D
 
     move-result-wide v4
@@ -283,7 +270,6 @@
 
     move-wide/from16 v26, v12
 
-    .line 11
     invoke-static/range {v20 .. v27}, Lorg/osmdroid/util/GeometryMath;->Max4(DDDD)D
 
     move-result-wide v5
@@ -304,7 +290,6 @@
 
     double-to-int v0, v0
 
-    .line 12
     invoke-virtual {v3, v2, v4, v5, v0}, Landroid/graphics/Rect;->set(IIII)V
 
     return-object v3
@@ -313,7 +298,6 @@
 .method public static final getBoundingBoxForRotatatedRectangle(Landroid/graphics/Rect;Landroid/graphics/Point;FLandroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 1
 
-    .line 2
     iget v0, p1, Landroid/graphics/Point;->x:I
 
     iget p1, p1, Landroid/graphics/Point;->y:I

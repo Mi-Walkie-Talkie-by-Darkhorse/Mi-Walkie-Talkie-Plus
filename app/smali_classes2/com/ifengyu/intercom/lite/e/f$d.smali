@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/e/f$d;
 .super Lcom/ifengyu/blelib/c/e;
-.source "LiteBleClient.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/e/f;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/e/f$d;->c:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-direct {p0}, Lcom/ifengyu/blelib/c/e;-><init>()V
@@ -35,7 +33,6 @@
 .method public a(I)V
     .locals 3
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/e/f$d;->c:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/e/f;->h(Lcom/ifengyu/intercom/lite/e/f;)Ljava/lang/String;
@@ -64,7 +61,6 @@
 .method public a(Lcom/ifengyu/blelib/d/c;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/e/f$d;->c:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/e/f;->g(Lcom/ifengyu/intercom/lite/e/f;)Ljava/lang/String;
@@ -95,14 +91,12 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/blelib/a;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-virtual {p1}, Lcom/ifengyu/blelib/d/c;->b()Lcom/google/protobuf/Message;
 
     move-result-object p1
 
     check-cast p1, Lcom/ifengyu/intercom/protos/LiteProtos$DevResponse;
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$DevResponse;->getResult()Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;
 
     move-result-object v0
@@ -111,7 +105,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/e/f$d;->c:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$DevResponse;->getDevInfo()Lcom/ifengyu/intercom/protos/LiteProtos$DevInfo;
@@ -122,7 +115,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/ifengyu/intercom/lite/e/f;->a(Lcom/ifengyu/intercom/lite/e/f;Lcom/ifengyu/intercom/protos/LiteProtos$DevInfo;[B)V
 
-    .line 5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$DevResponse;->getDevInfo()Lcom/ifengyu/intercom/protos/LiteProtos$DevInfo;
 
     move-result-object p1

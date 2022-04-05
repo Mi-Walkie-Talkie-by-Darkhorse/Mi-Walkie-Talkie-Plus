@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/protobuf/DescriptorProtos$SourceCodeInfoOrBuilder;
 .super Ljava/lang/Object;
-.source "DescriptorProtos.java"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageOrBuilder;

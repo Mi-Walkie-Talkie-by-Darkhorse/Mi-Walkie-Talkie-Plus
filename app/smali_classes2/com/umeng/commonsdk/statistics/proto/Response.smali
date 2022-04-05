@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/proto/Response;
 .super Ljava/lang/Object;
-.source "Response.java"
 
 # interfaces
 .implements Lcom/umeng/analytics/pro/aq;
@@ -87,7 +86,6 @@
 .method static constructor <clinit>()V
     .locals 12
 
-    .line 1
     new-instance v0, Lcom/umeng/analytics/pro/bu;
 
     const-string v1, "Response"
@@ -96,7 +94,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->STRUCT_DESC:Lcom/umeng/analytics/pro/bu;
 
-    .line 2
     new-instance v0, Lcom/umeng/analytics/pro/bk;
 
     const/4 v1, 0x1
@@ -109,7 +106,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->RESP_CODE_FIELD_DESC:Lcom/umeng/analytics/pro/bk;
 
-    .line 3
     new-instance v0, Lcom/umeng/analytics/pro/bk;
 
     const/16 v4, 0xb
@@ -122,7 +118,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->MSG_FIELD_DESC:Lcom/umeng/analytics/pro/bk;
 
-    .line 4
     new-instance v0, Lcom/umeng/analytics/pro/bk;
 
     const/16 v7, 0xc
@@ -135,14 +130,12 @@
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->IMPRINT_FIELD_DESC:Lcom/umeng/analytics/pro/bk;
 
-    .line 5
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->schemes:Ljava/util/Map;
 
-    .line 6
     const-class v9, Lcom/umeng/analytics/pro/bz;
 
     new-instance v10, Lcom/umeng/commonsdk/statistics/proto/Response$b;
@@ -153,7 +146,6 @@
 
     invoke-interface {v0, v9, v10}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
     sget-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->schemes:Ljava/util/Map;
 
     const-class v9, Lcom/umeng/analytics/pro/ca;
@@ -164,14 +156,12 @@
 
     invoke-interface {v0, v9, v10}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
     new-instance v0, Ljava/util/EnumMap;
 
     const-class v9, Lcom/umeng/commonsdk/statistics/proto/Response$e;
 
     invoke-direct {v0, v9}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
-    .line 9
     sget-object v9, Lcom/umeng/commonsdk/statistics/proto/Response$e;->a:Lcom/umeng/commonsdk/statistics/proto/Response$e;
 
     new-instance v10, Lcom/umeng/analytics/pro/bc;
@@ -184,7 +174,6 @@
 
     invoke-interface {v0, v9, v10}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
     sget-object v1, Lcom/umeng/commonsdk/statistics/proto/Response$e;->b:Lcom/umeng/commonsdk/statistics/proto/Response$e;
 
     new-instance v2, Lcom/umeng/analytics/pro/bc;
@@ -197,7 +186,6 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
     sget-object v1, Lcom/umeng/commonsdk/statistics/proto/Response$e;->c:Lcom/umeng/commonsdk/statistics/proto/Response$e;
 
     new-instance v2, Lcom/umeng/analytics/pro/bc;
@@ -212,14 +200,12 @@
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v0
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->metaDataMap:Ljava/util/Map;
 
-    .line 13
     const-class v1, Lcom/umeng/commonsdk/statistics/proto/Response;
 
     invoke-static {v1, v0}, Lcom/umeng/analytics/pro/bc;->a(Ljava/lang/Class;Ljava/util/Map;)V
@@ -230,19 +216,16 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-byte v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->__isset_bitfield:B
 
     const/4 v1, 0x2
 
     new-array v1, v1, [Lcom/umeng/commonsdk/statistics/proto/Response$e;
 
-    .line 3
     sget-object v2, Lcom/umeng/commonsdk/statistics/proto/Response$e;->b:Lcom/umeng/commonsdk/statistics/proto/Response$e;
 
     aput-object v2, v1, v0
@@ -261,15 +244,12 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Lcom/umeng/commonsdk/statistics/proto/Response;-><init>()V
 
-    .line 5
     iput p1, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->resp_code:I
 
     const/4 p1, 0x1
 
-    .line 6
     invoke-virtual {p0, p1}, Lcom/umeng/commonsdk/statistics/proto/Response;->setResp_codeIsSet(Z)V
 
     return-void
@@ -278,19 +258,16 @@
 .method public constructor <init>(Lcom/umeng/commonsdk/statistics/proto/Response;)V
     .locals 3
 
-    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 8
     iput-byte v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->__isset_bitfield:B
 
     const/4 v1, 0x2
 
     new-array v1, v1, [Lcom/umeng/commonsdk/statistics/proto/Response$e;
 
-    .line 9
     sget-object v2, Lcom/umeng/commonsdk/statistics/proto/Response$e;->b:Lcom/umeng/commonsdk/statistics/proto/Response$e;
 
     aput-object v2, v1, v0
@@ -303,29 +280,24 @@
 
     iput-object v1, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->optionals:[Lcom/umeng/commonsdk/statistics/proto/Response$e;
 
-    .line 10
     iget-byte v0, p1, Lcom/umeng/commonsdk/statistics/proto/Response;->__isset_bitfield:B
 
     iput-byte v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->__isset_bitfield:B
 
-    .line 11
     iget v0, p1, Lcom/umeng/commonsdk/statistics/proto/Response;->resp_code:I
 
     iput v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->resp_code:I
 
-    .line 12
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/proto/Response;->isSetMsg()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 13
     iget-object v0, p1, Lcom/umeng/commonsdk/statistics/proto/Response;->msg:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->msg:Ljava/lang/String;
 
-    .line 14
     :cond_0
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/proto/Response;->isSetImprint()Z
 
@@ -333,7 +305,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 15
     new-instance v0, Lcom/umeng/commonsdk/statistics/proto/d;
 
     iget-object p1, p1, Lcom/umeng/commonsdk/statistics/proto/Response;->imprint:Lcom/umeng/commonsdk/statistics/proto/d;
@@ -349,7 +320,6 @@
 .method static synthetic access$300()Lcom/umeng/analytics/pro/bu;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->STRUCT_DESC:Lcom/umeng/analytics/pro/bu;
 
     return-object v0
@@ -358,7 +328,6 @@
 .method static synthetic access$400()Lcom/umeng/analytics/pro/bk;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->RESP_CODE_FIELD_DESC:Lcom/umeng/analytics/pro/bk;
 
     return-object v0
@@ -367,7 +336,6 @@
 .method static synthetic access$500()Lcom/umeng/analytics/pro/bk;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->MSG_FIELD_DESC:Lcom/umeng/analytics/pro/bk;
 
     return-object v0
@@ -376,7 +344,6 @@
 .method static synthetic access$600()Lcom/umeng/analytics/pro/bk;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->IMPRINT_FIELD_DESC:Lcom/umeng/analytics/pro/bk;
 
     return-object v0
@@ -393,11 +360,9 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     iput-byte v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->__isset_bitfield:B
 
-    .line 2
     new-instance v0, Lcom/umeng/analytics/pro/bj;
 
     new-instance v1, Lcom/umeng/analytics/pro/cb;
@@ -415,7 +380,6 @@
     :catch_0
     move-exception p1
 
-    .line 3
     new-instance v0, Ljava/io/IOException;
 
     invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
@@ -435,7 +399,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     new-instance v0, Lcom/umeng/analytics/pro/bj;
 
@@ -454,7 +417,6 @@
     :catch_0
     move-exception p1
 
-    .line 2
     new-instance v0, Ljava/io/IOException;
 
     invoke-virtual {p1}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
@@ -473,18 +435,14 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/umeng/commonsdk/statistics/proto/Response;->setResp_codeIsSet(Z)V
 
-    .line 2
     iput v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->resp_code:I
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->msg:Ljava/lang/String;
 
-    .line 4
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->imprint:Lcom/umeng/commonsdk/statistics/proto/d;
 
     return-void
@@ -493,7 +451,6 @@
 .method public bridge synthetic deepCopy()Lcom/umeng/analytics/pro/aq;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/umeng/commonsdk/statistics/proto/Response;->deepCopy()Lcom/umeng/commonsdk/statistics/proto/Response;
 
     move-result-object v0
@@ -504,7 +461,6 @@
 .method public deepCopy()Lcom/umeng/commonsdk/statistics/proto/Response;
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/umeng/commonsdk/statistics/proto/Response;
 
     invoke-direct {v0, p0}, Lcom/umeng/commonsdk/statistics/proto/Response;-><init>(Lcom/umeng/commonsdk/statistics/proto/Response;)V
@@ -515,7 +471,6 @@
 .method public bridge synthetic fieldForId(I)Lcom/umeng/analytics/pro/ax;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/umeng/commonsdk/statistics/proto/Response;->fieldForId(I)Lcom/umeng/commonsdk/statistics/proto/Response$e;
 
     move-result-object p1
@@ -526,7 +481,6 @@
 .method public fieldForId(I)Lcom/umeng/commonsdk/statistics/proto/Response$e;
     .locals 0
 
-    .line 2
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/proto/Response$e;->a(I)Lcom/umeng/commonsdk/statistics/proto/Response$e;
 
     move-result-object p1
@@ -537,7 +491,6 @@
 .method public getImprint()Lcom/umeng/commonsdk/statistics/proto/d;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->imprint:Lcom/umeng/commonsdk/statistics/proto/d;
 
     return-object v0
@@ -546,7 +499,6 @@
 .method public getMsg()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->msg:Ljava/lang/String;
 
     return-object v0
@@ -555,7 +507,6 @@
 .method public getResp_code()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->resp_code:I
 
     return v0
@@ -564,7 +515,6 @@
 .method public isSetImprint()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->imprint:Lcom/umeng/commonsdk/statistics/proto/d;
 
     if-eqz v0, :cond_0
@@ -583,7 +533,6 @@
 .method public isSetMsg()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->msg:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -602,7 +551,6 @@
 .method public isSetResp_code()Z
     .locals 2
 
-    .line 1
     iget-byte v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->__isset_bitfield:B
 
     const/4 v1, 0x0
@@ -622,7 +570,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->schemes:Ljava/util/Map;
 
     invoke-virtual {p1}, Lcom/umeng/analytics/pro/bp;->D()Ljava/lang/Class;
@@ -647,7 +594,6 @@
 .method public setImprint(Lcom/umeng/commonsdk/statistics/proto/d;)Lcom/umeng/commonsdk/statistics/proto/Response;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->imprint:Lcom/umeng/commonsdk/statistics/proto/d;
 
     return-object p0
@@ -660,7 +606,6 @@
 
     const/4 p1, 0x0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->imprint:Lcom/umeng/commonsdk/statistics/proto/d;
 
     :cond_0
@@ -670,7 +615,6 @@
 .method public setMsg(Ljava/lang/String;)Lcom/umeng/commonsdk/statistics/proto/Response;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->msg:Ljava/lang/String;
 
     return-object p0
@@ -683,7 +627,6 @@
 
     const/4 p1, 0x0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->msg:Ljava/lang/String;
 
     :cond_0
@@ -693,12 +636,10 @@
 .method public setResp_code(I)Lcom/umeng/commonsdk/statistics/proto/Response;
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->resp_code:I
 
     const/4 p1, 0x1
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/umeng/commonsdk/statistics/proto/Response;->setResp_codeIsSet(Z)V
 
     return-object p0
@@ -707,7 +648,6 @@
 .method public setResp_codeIsSet(Z)V
     .locals 2
 
-    .line 1
     iget-byte v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->__isset_bitfield:B
 
     const/4 v1, 0x0
@@ -724,7 +664,6 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Response("
@@ -733,15 +672,12 @@
 
     const-string v1, "resp_code:"
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3
     iget v1, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->resp_code:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 4
     invoke-virtual {p0}, Lcom/umeng/commonsdk/statistics/proto/Response;->isSetMsg()Z
 
     move-result v1
@@ -752,29 +688,23 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v1, "msg:"
 
-    .line 6
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->msg:Ljava/lang/String;
 
     if-nez v1, :cond_0
 
-    .line 8
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 9
     :cond_0
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 10
     :cond_1
     :goto_0
     invoke-virtual {p0}, Lcom/umeng/commonsdk/statistics/proto/Response;->isSetImprint()Z
@@ -783,25 +713,20 @@
 
     if-eqz v1, :cond_3
 
-    .line 11
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v1, "imprint:"
 
-    .line 12
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 13
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->imprint:Lcom/umeng/commonsdk/statistics/proto/d;
 
     if-nez v1, :cond_2
 
-    .line 14
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 15
     :cond_2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -809,10 +734,8 @@
     :goto_1
     const-string v1, ")"
 
-    .line 16
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 17
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -825,7 +748,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->imprint:Lcom/umeng/commonsdk/statistics/proto/d;
 
     return-void
@@ -836,7 +758,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->msg:Ljava/lang/String;
 
     return-void
@@ -845,7 +766,6 @@
 .method public unsetResp_code()V
     .locals 2
 
-    .line 1
     iget-byte v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->__isset_bitfield:B
 
     const/4 v1, 0x0
@@ -867,12 +787,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/proto/Response;->imprint:Lcom/umeng/commonsdk/statistics/proto/d;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/umeng/commonsdk/statistics/proto/d;->l()V
 
     :cond_0
@@ -887,7 +805,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/statistics/proto/Response;->schemes:Ljava/util/Map;
 
     invoke-virtual {p1}, Lcom/umeng/analytics/pro/bp;->D()Ljava/lang/Class;

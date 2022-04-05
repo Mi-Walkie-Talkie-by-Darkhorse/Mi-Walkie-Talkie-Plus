@@ -1,6 +1,5 @@
 .class public Lorg/greenrobot/greendao/query/LazyList;
 .super Ljava/lang/Object;
-.source "LazyList.java"
 
 # interfaces
 .implements Ljava/util/List;
@@ -68,16 +67,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lorg/greenrobot/greendao/query/LazyList;->cursor:Landroid/database/Cursor;
 
-    .line 3
     iput-object p1, p0, Lorg/greenrobot/greendao/query/LazyList;->daoAccess:Lorg/greenrobot/greendao/InternalQueryDaoAccess;
 
-    .line 4
     invoke-interface {p2}, Landroid/database/Cursor;->getCount()I
 
     move-result p1
@@ -88,7 +83,6 @@
 
     if-eqz p3, :cond_0
 
-    .line 5
     new-instance p3, Ljava/util/ArrayList;
 
     iget v0, p0, Lorg/greenrobot/greendao/query/LazyList;->size:I
@@ -99,13 +93,11 @@
 
     const/4 p3, 0x0
 
-    .line 6
     :goto_0
     iget v0, p0, Lorg/greenrobot/greendao/query/LazyList;->size:I
 
     if-ge p3, v0, :cond_1
 
-    .line 7
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -114,20 +106,16 @@
 
     goto :goto_0
 
-    .line 8
     :cond_0
     iput-object p1, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
-    .line 9
     :cond_1
     iget p1, p0, Lorg/greenrobot/greendao/query/LazyList;->size:I
 
     if-nez p1, :cond_2
 
-    .line 10
     invoke-interface {p2}, Landroid/database/Cursor;->close()V
 
-    .line 11
     :cond_2
     new-instance p1, Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -141,7 +129,6 @@
 .method static synthetic access$000(Lorg/greenrobot/greendao/query/LazyList;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lorg/greenrobot/greendao/query/LazyList;->size:I
 
     return p0
@@ -157,7 +144,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -173,7 +159,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -191,7 +176,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -209,7 +193,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -220,14 +203,12 @@
 .method protected checkCached()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Lorg/greenrobot/greendao/DaoException;
 
@@ -241,7 +222,6 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -252,7 +232,6 @@
 .method public close()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->cursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
@@ -263,10 +242,8 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/LazyList;->loadRemaining()V
 
-    .line 2
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -286,10 +263,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/LazyList;->loadRemaining()V
 
-    .line 2
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->containsAll(Ljava/util/Collection;)Z
@@ -307,24 +282,20 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     if-eqz v0, :cond_2
 
-    .line 2
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
-    .line 4
     :try_start_0
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
@@ -334,38 +305,32 @@
 
     if-nez v0, :cond_0
 
-    .line 5
     invoke-virtual {p0, p1}, Lorg/greenrobot/greendao/query/LazyList;->loadEntity(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 6
     iget-object v1, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     invoke-interface {v1, p1, v0}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
     iget p1, p0, Lorg/greenrobot/greendao/query/LazyList;->loadedCount:I
 
     add-int/lit8 p1, p1, 0x1
 
     iput p1, p0, Lorg/greenrobot/greendao/query/LazyList;->loadedCount:I
 
-    .line 8
     iget p1, p0, Lorg/greenrobot/greendao/query/LazyList;->loadedCount:I
 
     iget v1, p0, Lorg/greenrobot/greendao/query/LazyList;->size:I
 
     if-ne p1, v1, :cond_0
 
-    .line 9
     iget-object p1, p0, Lorg/greenrobot/greendao/query/LazyList;->cursor:Landroid/database/Cursor;
 
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 10
     :cond_0
     iget-object p1, p0, Lorg/greenrobot/greendao/query/LazyList;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -386,13 +351,11 @@
     :goto_0
     return-object v0
 
-    .line 11
     :cond_2
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
-    .line 12
     :try_start_1
     invoke-virtual {p0, p1}, Lorg/greenrobot/greendao/query/LazyList;->loadEntity(I)Ljava/lang/Object;
 
@@ -400,7 +363,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 13
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->lock:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
@@ -420,7 +382,6 @@
 .method public getLoadedCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/query/LazyList;->loadedCount:I
 
     return v0
@@ -429,10 +390,8 @@
 .method public indexOf(Ljava/lang/Object;)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/LazyList;->loadRemaining()V
 
-    .line 2
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
@@ -445,7 +404,6 @@
 .method public isClosed()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->cursor:Landroid/database/Cursor;
 
     invoke-interface {v0}, Landroid/database/Cursor;->isClosed()Z
@@ -458,7 +416,6 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/query/LazyList;->size:I
 
     if-nez v0, :cond_0
@@ -477,7 +434,6 @@
 .method public isLoadedCompletely()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/query/LazyList;->loadedCount:I
 
     iget v1, p0, Lorg/greenrobot/greendao/query/LazyList;->size:I
@@ -505,7 +461,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/LazyList$LazyIterator;
 
     const/4 v1, 0x0
@@ -518,10 +473,8 @@
 .method public lastIndexOf(Ljava/lang/Object;)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/LazyList;->loadRemaining()V
 
-    .line 2
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->lastIndexOf(Ljava/lang/Object;)I
@@ -534,7 +487,6 @@
 .method public bridge synthetic listIterator()Ljava/util/ListIterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/LazyList;->listIterator()Lorg/greenrobot/greendao/query/CloseableListIterator;
 
     move-result-object v0
@@ -552,7 +504,6 @@
         }
     .end annotation
 
-    .line 3
     new-instance v0, Lorg/greenrobot/greendao/query/LazyList$LazyIterator;
 
     const/4 v1, 0x0
@@ -572,7 +523,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/query/LazyList$LazyIterator;
 
     const/4 v1, 0x0
@@ -592,7 +542,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/LazyList$LazyIterator;
 
     const/4 v1, 0x0
@@ -612,7 +561,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->cursor:Landroid/database/Cursor;
 
     invoke-interface {v0, p1}, Landroid/database/Cursor;->moveToPosition(I)Z
@@ -621,7 +569,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->daoAccess:Lorg/greenrobot/greendao/InternalQueryDaoAccess;
 
     iget-object v1, p0, Lorg/greenrobot/greendao/query/LazyList;->cursor:Landroid/database/Cursor;
@@ -638,7 +585,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v0, Lorg/greenrobot/greendao/DaoException;
 
@@ -660,7 +606,6 @@
 
     throw v0
 
-    .line 4
     :cond_1
     new-instance v0, Lorg/greenrobot/greendao/DaoException;
 
@@ -686,10 +631,8 @@
 .method public loadRemaining()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/LazyList;->checkCached()V
 
-    .line 2
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -701,7 +644,6 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 3
     invoke-virtual {p0, v1}, Lorg/greenrobot/greendao/query/LazyList;->get(I)Ljava/lang/Object;
 
     add-int/lit8 v1, v1, 0x1
@@ -720,12 +662,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -746,7 +686,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -757,7 +696,6 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -775,7 +713,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -793,7 +730,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -809,7 +745,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -820,7 +755,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/query/LazyList;->size:I
 
     return v0
@@ -836,7 +770,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/LazyList;->checkCached()V
 
     move v0, p1
@@ -844,14 +777,12 @@
     :goto_0
     if-ge v0, p2, :cond_0
 
-    .line 2
     invoke-virtual {p0, v0}, Lorg/greenrobot/greendao/query/LazyList;->get(I)Ljava/lang/Object;
 
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
@@ -865,10 +796,8 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/LazyList;->loadRemaining()V
 
-    .line 2
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->toArray()[Ljava/lang/Object;
@@ -888,10 +817,8 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/LazyList;->loadRemaining()V
 
-    .line 4
     iget-object v0, p0, Lorg/greenrobot/greendao/query/LazyList;->entities:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;

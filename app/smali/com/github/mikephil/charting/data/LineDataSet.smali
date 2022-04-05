@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/data/LineDataSet;
 .super Lcom/github/mikephil/charting/data/k;
-.source "LineDataSet.java"
 
 # interfaces
 .implements Lb/a/a/a/e/b/f;
@@ -67,43 +66,34 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/github/mikephil/charting/data/k;-><init>(Ljava/util/List;Ljava/lang/String;)V
 
-    .line 2
     sget-object p1, Lcom/github/mikephil/charting/data/LineDataSet$Mode;->a:Lcom/github/mikephil/charting/data/LineDataSet$Mode;
 
     iput-object p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->D:Lcom/github/mikephil/charting/data/LineDataSet$Mode;
 
     const/4 p1, 0x0
 
-    .line 3
     iput-object p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->E:Ljava/util/List;
 
     const/4 p2, -0x1
 
-    .line 4
     iput p2, p0, Lcom/github/mikephil/charting/data/LineDataSet;->F:I
 
     const/high16 p2, 0x41000000    # 8.0f
 
-    .line 5
     iput p2, p0, Lcom/github/mikephil/charting/data/LineDataSet;->G:F
 
     const/high16 p2, 0x40800000    # 4.0f
 
-    .line 6
     iput p2, p0, Lcom/github/mikephil/charting/data/LineDataSet;->H:F
 
     const p2, 0x3e4ccccd    # 0.2f
 
-    .line 7
     iput p2, p0, Lcom/github/mikephil/charting/data/LineDataSet;->I:F
 
-    .line 8
     iput-object p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->J:Landroid/graphics/DashPathEffect;
 
-    .line 9
     new-instance p1, Lb/a/a/a/c/b;
 
     invoke-direct {p1}, Lb/a/a/a/c/b;-><init>()V
@@ -112,31 +102,25 @@
 
     const/4 p1, 0x1
 
-    .line 10
     iput-boolean p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->L:Z
 
-    .line 11
     iput-boolean p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->M:Z
 
-    .line 12
     iget-object p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->E:Ljava/util/List;
 
     if-nez p1, :cond_0
 
-    .line 13
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->E:Ljava/util/List;
 
-    .line 14
     :cond_0
     iget-object p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->E:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
-    .line 15
     iget-object p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->E:Ljava/util/List;
 
     const/16 p2, 0x8c
@@ -163,7 +147,6 @@
 .method public A()Landroid/graphics/DashPathEffect;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->J:Landroid/graphics/DashPathEffect;
 
     return-object v0
@@ -172,7 +155,6 @@
 .method public I()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->G:F
 
     return v0
@@ -181,7 +163,6 @@
 .method public a(Lcom/github/mikephil/charting/data/LineDataSet$Mode;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->D:Lcom/github/mikephil/charting/data/LineDataSet$Mode;
 
     return-void
@@ -207,7 +188,6 @@
 
     const p1, 0x3d4ccccd    # 0.05f
 
-    .line 1
     :cond_1
     iput p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->I:F
 
@@ -217,7 +197,6 @@
 .method public c(Z)V
     .locals 0
 
-    .line 2
     iput-boolean p1, p0, Lcom/github/mikephil/charting/data/LineDataSet;->L:Z
 
     return-void
@@ -226,7 +205,6 @@
 .method public d()I
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->E:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -239,7 +217,6 @@
 .method public d(I)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->E:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -258,7 +235,6 @@
 .method public getMode()Lcom/github/mikephil/charting/data/LineDataSet$Mode;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->D:Lcom/github/mikephil/charting/data/LineDataSet$Mode;
 
     return-object v0
@@ -267,7 +243,6 @@
 .method public k()Lb/a/a/a/c/e;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->K:Lb/a/a/a/c/e;
 
     return-object v0
@@ -276,7 +251,6 @@
 .method public r0()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->L:Z
 
     return v0
@@ -285,7 +259,6 @@
 .method public s()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->J:Landroid/graphics/DashPathEffect;
 
     if-nez v0, :cond_0
@@ -304,7 +277,6 @@
 .method public u()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->F:I
 
     return v0
@@ -313,7 +285,6 @@
 .method public u0()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->H:F
 
     return v0
@@ -322,7 +293,6 @@
 .method public x0()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->M:Z
 
     return v0
@@ -333,7 +303,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->D:Lcom/github/mikephil/charting/data/LineDataSet$Mode;
 
     sget-object v1, Lcom/github/mikephil/charting/data/LineDataSet$Mode;->b:Lcom/github/mikephil/charting/data/LineDataSet$Mode;
@@ -354,7 +323,6 @@
 .method public z()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/LineDataSet;->I:F
 
     return v0

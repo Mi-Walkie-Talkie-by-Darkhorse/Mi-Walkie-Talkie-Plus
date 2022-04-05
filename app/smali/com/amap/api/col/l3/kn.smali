@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kn;
 .super Ljava/lang/Object;
-.source "LocationListener.java"
 
 # interfaces
 .implements Lcom/amap/api/location/AMapLocationListener;

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/fence/GeoFenceManagerBase;
 .super Ljava/lang/Object;
-.source "GeoFenceManagerBase.java"
 
 
 # virtual methods

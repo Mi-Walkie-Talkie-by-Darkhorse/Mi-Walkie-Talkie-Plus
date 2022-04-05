@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/a$a;
 .super Landroid/os/Handler;
-.source "GeoFenceManager.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/a;Landroid/os/Looper;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
-    .line 2
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -36,7 +33,6 @@
 .method public final handleMessage(Landroid/os/Message;)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget v0, p1, Landroid/os/Message;->what:I
 
@@ -44,7 +40,6 @@
 
     goto/16 :goto_0
 
-    .line 2
     :pswitch_0
     iget-object p1, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -52,7 +47,6 @@
 
     goto :goto_0
 
-    .line 3
     :pswitch_1
     iget-object v0, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -64,7 +58,6 @@
 
     return-void
 
-    .line 4
     :pswitch_2
     iget-object v0, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -76,7 +69,6 @@
 
     return-void
 
-    .line 5
     :pswitch_3
     iget-object p1, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -84,7 +76,6 @@
 
     return-void
 
-    .line 6
     :pswitch_4
     iget-object v0, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -96,7 +87,6 @@
 
     return-void
 
-    .line 7
     :pswitch_5
     iget-object v0, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -108,7 +98,6 @@
 
     return-void
 
-    .line 8
     :pswitch_6
     iget-object p1, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -116,7 +105,6 @@
 
     return-void
 
-    .line 9
     :pswitch_7
     iget-object p1, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -128,7 +116,6 @@
 
     return-void
 
-    .line 10
     :pswitch_8
     iget-object p1, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -136,7 +123,6 @@
 
     return-void
 
-    .line 11
     :pswitch_9
     iget-object v0, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -148,7 +134,6 @@
 
     return-void
 
-    .line 12
     :pswitch_a
     iget-object v0, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -160,7 +145,6 @@
 
     return-void
 
-    .line 13
     :pswitch_b
     iget-object v0, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -172,7 +156,6 @@
 
     return-void
 
-    .line 14
     :pswitch_c
     iget-object v0, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 
@@ -184,7 +167,6 @@
 
     return-void
 
-    .line 15
     :pswitch_d
     iget-object v0, p0, Lcom/amap/api/col/l3/a$a;->a:Lcom/amap/api/col/l3/a;
 

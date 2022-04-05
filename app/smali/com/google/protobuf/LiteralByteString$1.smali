@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/protobuf/LiteralByteString$1;
 .super Ljava/lang/Object;
-.source "LiteralByteString.java"
 
 
 # annotations

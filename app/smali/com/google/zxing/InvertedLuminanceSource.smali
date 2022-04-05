@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/InvertedLuminanceSource;
 .super Lcom/google/zxing/LuminanceSource;
-.source "InvertedLuminanceSource.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method public constructor <init>(Lcom/google/zxing/LuminanceSource;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Lcom/google/zxing/LuminanceSource;->getWidth()I
 
     move-result v0
@@ -22,7 +20,6 @@
 
     invoke-direct {p0, v0, v1}, Lcom/google/zxing/LuminanceSource;-><init>(II)V
 
-    .line 2
     iput-object p1, p0, Lcom/google/zxing/InvertedLuminanceSource;->delegate:Lcom/google/zxing/LuminanceSource;
 
     return-void
@@ -33,7 +30,6 @@
 .method public crop(IIII)Lcom/google/zxing/LuminanceSource;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/zxing/InvertedLuminanceSource;
 
     iget-object v1, p0, Lcom/google/zxing/InvertedLuminanceSource;->delegate:Lcom/google/zxing/LuminanceSource;
@@ -50,14 +46,12 @@
 .method public getMatrix()[B
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/InvertedLuminanceSource;->delegate:Lcom/google/zxing/LuminanceSource;
 
     invoke-virtual {v0}, Lcom/google/zxing/LuminanceSource;->getMatrix()[B
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/LuminanceSource;->getWidth()I
 
     move-result v1
@@ -68,7 +62,6 @@
 
     mul-int v1, v1, v2
 
-    .line 3
     new-array v2, v1, [B
 
     const/4 v3, 0x0
@@ -76,7 +69,6 @@
     :goto_0
     if-ge v3, v1, :cond_0
 
-    .line 4
     aget-byte v4, v0, v3
 
     and-int/lit16 v4, v4, 0xff
@@ -98,14 +90,12 @@
 .method public getRow(I[B)[B
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/InvertedLuminanceSource;->delegate:Lcom/google/zxing/LuminanceSource;
 
     invoke-virtual {v0, p1, p2}, Lcom/google/zxing/LuminanceSource;->getRow(I[B)[B
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/LuminanceSource;->getWidth()I
 
     move-result p2
@@ -115,7 +105,6 @@
     :goto_0
     if-ge v0, p2, :cond_0
 
-    .line 3
     aget-byte v1, p1, v0
 
     and-int/lit16 v1, v1, 0xff
@@ -137,7 +126,6 @@
 .method public invert()Lcom/google/zxing/LuminanceSource;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/InvertedLuminanceSource;->delegate:Lcom/google/zxing/LuminanceSource;
 
     return-object v0
@@ -146,7 +134,6 @@
 .method public isCropSupported()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/InvertedLuminanceSource;->delegate:Lcom/google/zxing/LuminanceSource;
 
     invoke-virtual {v0}, Lcom/google/zxing/LuminanceSource;->isCropSupported()Z
@@ -159,7 +146,6 @@
 .method public isRotateSupported()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/InvertedLuminanceSource;->delegate:Lcom/google/zxing/LuminanceSource;
 
     invoke-virtual {v0}, Lcom/google/zxing/LuminanceSource;->isRotateSupported()Z
@@ -172,7 +158,6 @@
 .method public rotateCounterClockwise()Lcom/google/zxing/LuminanceSource;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/zxing/InvertedLuminanceSource;
 
     iget-object v1, p0, Lcom/google/zxing/InvertedLuminanceSource;->delegate:Lcom/google/zxing/LuminanceSource;
@@ -189,7 +174,6 @@
 .method public rotateCounterClockwise45()Lcom/google/zxing/LuminanceSource;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/zxing/InvertedLuminanceSource;
 
     iget-object v1, p0, Lcom/google/zxing/InvertedLuminanceSource;->delegate:Lcom/google/zxing/LuminanceSource;

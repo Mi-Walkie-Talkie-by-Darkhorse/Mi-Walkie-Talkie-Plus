@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/fn;
 .super Ljava/lang/Object;
-.source "ILocationProviderService.java"
 
 # interfaces
 .implements Landroid/os/IInterface;

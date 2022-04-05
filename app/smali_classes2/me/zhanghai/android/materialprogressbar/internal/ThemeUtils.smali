@@ -1,13 +1,11 @@
 .class public Lme/zhanghai/android/materialprogressbar/internal/ThemeUtils;
 .super Ljava/lang/Object;
-.source "ThemeUtils.java"
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,12 +22,10 @@
 
     aput p0, v0, v1
 
-    .line 1
     invoke-virtual {p2, v0}, Landroid/content/Context;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
 
     move-result-object p0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0, v1, p1}, Landroid/content/res/TypedArray;->getColor(II)I
 
@@ -37,7 +33,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     return p1
@@ -61,12 +56,10 @@
 
     aput p0, v0, v1
 
-    .line 1
     invoke-virtual {p2, v0}, Landroid/content/Context;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
 
     move-result-object p0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0, v1, p1}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
@@ -74,7 +67,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     return p1

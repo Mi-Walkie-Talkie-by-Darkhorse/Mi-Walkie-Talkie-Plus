@@ -1,13 +1,11 @@
 .class public Lcom/ifengyu/intercom/node/transport/a;
 .super Ljava/lang/Object;
-.source "BtKeyCommandHelper.java"
 
 
 # direct methods
 .method private static varargs a([[B)I
     .locals 4
 
-    .line 11
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -19,7 +17,6 @@
 
     aget-object v3, p0, v1
 
-    .line 12
     array-length v3, v3
 
     add-int/2addr v2, v3
@@ -49,7 +46,6 @@
 
     aput-byte v4, v1, v4
 
-    .line 7
     sget-object v5, Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam$BTKEY_PARAM_TYPE;->c:Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam$BTKEY_PARAM_TYPE;
 
     invoke-virtual {v5}, Lcom/ifengyu/intercom/node/btkey/BtKeyDevParam$BTKEY_PARAM_TYPE;->a()I
@@ -64,17 +60,14 @@
 
     aput-object v1, v2, v3
 
-    .line 8
     invoke-static {v2}, Lcom/ifengyu/intercom/node/transport/a;->a([[B)I
 
     move-result v2
 
     new-array v2, v2, [B
 
-    .line 9
     invoke-static {v1, v3, v2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 10
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -117,7 +110,6 @@
 
     aput-byte v3, v0, v3
 
-    .line 1
     sget-object v4, Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;->d:Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;
 
     invoke-virtual {v4}, Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;->a()I
@@ -130,7 +122,6 @@
 
     new-array v4, p0, [B
 
-    .line 2
     fill-array-data v4, :array_0
 
     new-array v1, v1, [[B
@@ -139,20 +130,16 @@
 
     aput-object v4, v1, v3
 
-    .line 3
     invoke-static {v1}, Lcom/ifengyu/intercom/node/transport/a;->a([[B)I
 
     move-result v1
 
     new-array v1, v1, [B
 
-    .line 4
     invoke-static {v0, v2, v1, v2, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 5
     invoke-static {v4, v2, v1, p0, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 6
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V

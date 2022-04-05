@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/y/a$a;
 .super Ljava/lang/Object;
-.source "HttpGlideUrlLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/o;
@@ -44,10 +43,8 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/bumptech/glide/load/j/m;
 
     const-wide/16 v1, 0x1f4
@@ -78,7 +75,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Lcom/bumptech/glide/load/j/y/a;
 
     iget-object v0, p0, Lcom/bumptech/glide/load/j/y/a$a;->a:Lcom/bumptech/glide/load/j/m;

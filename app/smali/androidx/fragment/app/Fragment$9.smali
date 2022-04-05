@@ -1,6 +1,5 @@
 .class Landroidx/fragment/app/Fragment$9;
 .super Landroidx/activity/result/b;
-.source "Fragment.java"
 
 
 # annotations
@@ -33,7 +32,6 @@
 .method constructor <init>(Landroidx/fragment/app/Fragment;Ljava/util/concurrent/atomic/AtomicReference;Landroidx/activity/result/d/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/Fragment$9;->this$0:Landroidx/fragment/app/Fragment;
 
     iput-object p2, p0, Landroidx/fragment/app/Fragment$9;->val$ref:Ljava/util/concurrent/atomic/AtomicReference;
@@ -60,7 +58,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/fragment/app/Fragment$9;->val$contract:Landroidx/activity/result/d/a;
 
     return-object v0
@@ -80,7 +77,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/fragment/app/Fragment$9;->val$ref:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -91,12 +87,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1, p2}, Landroidx/activity/result/b;->launch(Ljava/lang/Object;Landroidx/core/app/b;)V
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -110,7 +104,6 @@
 .method public unregister()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/fragment/app/Fragment$9;->val$ref:Ljava/util/concurrent/atomic/AtomicReference;
 
     const/4 v1, 0x0
@@ -123,7 +116,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroidx/activity/result/b;->unregister()V
 
     :cond_0

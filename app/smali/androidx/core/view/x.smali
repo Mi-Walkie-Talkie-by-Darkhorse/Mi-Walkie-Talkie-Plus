@@ -1,6 +1,5 @@
 .class public final Landroidx/core/view/x;
 .super Ljava/lang/Object;
-.source "ViewConfigurationCompat.java"
 
 
 # static fields
@@ -11,14 +10,12 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x19
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     :try_start_0
     const-class v0, Landroid/view/ViewConfiguration;
 
@@ -28,7 +25,6 @@
 
     new-array v2, v2, [Ljava/lang/Class;
 
-    .line 3
     invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
@@ -44,7 +40,6 @@
 
     const-string v1, "Could not find method getScaledScrollFactor() on ViewConfiguration"
 
-    .line 4
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
@@ -55,7 +50,6 @@
 .method private static a(Landroid/view/ViewConfiguration;Landroid/content/Context;)F
     .locals 3
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x19
@@ -71,7 +65,6 @@
     :try_start_0
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 2
     invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -93,16 +86,13 @@
 
     const-string v0, "Could not find method getScaledScrollFactor() on ViewConfiguration"
 
-    .line 3
     invoke-static {p0, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     :cond_0
     new-instance p0, Landroid/util/TypedValue;
 
     invoke-direct {p0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 5
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object v0
@@ -117,7 +107,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 6
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -141,21 +130,18 @@
 .method public static a(Landroid/view/ViewConfiguration;)I
     .locals 2
 
-    .line 7
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-lt v0, v1, :cond_0
 
-    .line 8
     invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledHoverSlop()I
 
     move-result p0
 
     return p0
 
-    .line 9
     :cond_0
     invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
 
@@ -177,21 +163,18 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1a
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledHorizontalScrollFactor()F
 
     move-result p0
 
     return p0
 
-    .line 3
     :cond_0
     invoke-static {p0, p1}, Landroidx/core/view/x;->a(Landroid/view/ViewConfiguration;Landroid/content/Context;)F
 
@@ -211,21 +194,18 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1a
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/ViewConfiguration;->getScaledVerticalScrollFactor()F
 
     move-result p0
 
     return p0
 
-    .line 3
     :cond_0
     invoke-static {p0, p1}, Landroidx/core/view/x;->a(Landroid/view/ViewConfiguration;Landroid/content/Context;)F
 
@@ -241,21 +221,18 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/ViewConfiguration;->shouldShowMenuShortcutsWhenKeyboardPresent()Z
 
     move-result p0
 
     return p0
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -267,14 +244,12 @@
 
     const-string v1, "android"
 
-    .line 4
     invoke-virtual {p0, p1, v0, v1}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 5
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
     move-result p0

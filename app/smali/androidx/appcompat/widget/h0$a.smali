@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/h0$a;
 .super Ljava/lang/Object;
-.source "TooltipCompatHandler.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/h0;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/h0$a;->a:Landroidx/appcompat/widget/h0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/h0$a;->a:Landroidx/appcompat/widget/h0;
 
     const/4 v1, 0x0

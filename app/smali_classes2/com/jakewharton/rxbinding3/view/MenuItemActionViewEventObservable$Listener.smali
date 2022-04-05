@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/view/MenuItemActionViewEventObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "MenuItemActionViewEventObservable.kt"
 
 # interfaces
 .implements Landroid/view/MenuItem$OnActionExpandListener;
@@ -125,7 +124,6 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/view/MenuItemActionViewEventObservable$Listener;->menuItem:Landroid/view/MenuItem;
@@ -140,14 +138,12 @@
 .method private final onEvent(Lcom/jakewharton/rxbinding3/view/MenuItemActionViewEvent;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/MenuItemActionViewEventObservable$Listener;->handled:Lkotlin/jvm/a/b;
 
@@ -163,7 +159,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/MenuItemActionViewEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     invoke-interface {v0, p1}, Lio/reactivex/Observer;->onNext(Ljava/lang/Object;)V
@@ -177,12 +172,10 @@
     :catch_0
     move-exception p1
 
-    .line 4
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/MenuItemActionViewEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     invoke-interface {v0, p1}, Lio/reactivex/Observer;->onError(Ljava/lang/Throwable;)V
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->dispose()V
 
     :cond_0
@@ -196,7 +189,6 @@
 .method protected onDispose()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/MenuItemActionViewEventObservable$Listener;->menuItem:Landroid/view/MenuItem;
 
     const/4 v1, 0x0
@@ -217,7 +209,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/view/MenuItemActionViewCollapseEvent;
 
     invoke-direct {v0, p1}, Lcom/jakewharton/rxbinding3/view/MenuItemActionViewCollapseEvent;-><init>(Landroid/view/MenuItem;)V
@@ -240,7 +231,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/view/MenuItemActionViewExpandEvent;
 
     invoke-direct {v0, p1}, Lcom/jakewharton/rxbinding3/view/MenuItemActionViewExpandEvent;-><init>(Landroid/view/MenuItem;)V

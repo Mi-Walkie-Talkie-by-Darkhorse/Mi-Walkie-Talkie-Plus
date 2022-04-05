@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/LocationListenerProxy;
 .super Ljava/lang/Object;
-.source "LocationListenerProxy.java"
 
 # interfaces
 .implements Landroid/location/LocationListener;
@@ -16,15 +15,12 @@
 .method public constructor <init>(Landroid/location/LocationManager;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lorg/osmdroid/LocationListenerProxy;->mListener:Landroid/location/LocationListener;
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/LocationListenerProxy;->mLocationManager:Landroid/location/LocationManager;
 
     return-void
@@ -35,12 +31,10 @@
 .method public onLocationChanged(Landroid/location/Location;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/LocationListenerProxy;->mListener:Landroid/location/LocationListener;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Landroid/location/LocationListener;->onLocationChanged(Landroid/location/Location;)V
 
     :cond_0
@@ -50,12 +44,10 @@
 .method public onProviderDisabled(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/LocationListenerProxy;->mListener:Landroid/location/LocationListener;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Landroid/location/LocationListener;->onProviderDisabled(Ljava/lang/String;)V
 
     :cond_0
@@ -65,12 +57,10 @@
 .method public onProviderEnabled(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/LocationListenerProxy;->mListener:Landroid/location/LocationListener;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Landroid/location/LocationListener;->onProviderEnabled(Ljava/lang/String;)V
 
     :cond_0
@@ -80,12 +70,10 @@
 .method public onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/LocationListenerProxy;->mListener:Landroid/location/LocationListener;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2, p3}, Landroid/location/LocationListener;->onStatusChanged(Ljava/lang/String;ILandroid/os/Bundle;)V
 
     :cond_0
@@ -95,10 +83,8 @@
 .method public startListening(Landroid/location/LocationListener;JF)Z
     .locals 9
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/LocationListenerProxy;->mListener:Landroid/location/LocationListener;
 
-    .line 2
     iget-object p1, p0, Lorg/osmdroid/LocationListenerProxy;->mLocationManager:Landroid/location/LocationManager;
 
     const/4 v0, 0x1
@@ -131,7 +117,6 @@
 
     const-string v2, "gps"
 
-    .line 3
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -140,14 +125,12 @@
 
     const-string v2, "network"
 
-    .line 4
     invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 5
     :cond_1
     iget-object v3, p0, Lorg/osmdroid/LocationListenerProxy;->mLocationManager:Landroid/location/LocationManager;
 
@@ -172,10 +155,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Lorg/osmdroid/LocationListenerProxy;->mListener:Landroid/location/LocationListener;
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/LocationListenerProxy;->mLocationManager:Landroid/location/LocationManager;
 
     invoke-virtual {v0, p0}, Landroid/location/LocationManager;->removeUpdates(Landroid/location/LocationListener;)V

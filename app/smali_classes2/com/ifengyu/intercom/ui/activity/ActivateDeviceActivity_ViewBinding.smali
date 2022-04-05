@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity_ViewBinding;
 .super Ljava/lang/Object;
-.source "ActivateDeviceActivity_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 
-    .line 3
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09041d
@@ -37,7 +33,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mTitleBarTitle:Landroid/widget/TextView;
 
-    .line 4
     const-class v0, Landroidx/appcompat/widget/AppCompatCheckBox;
 
     const v1, 0x7f0900c9
@@ -52,7 +47,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mCheckbox:Landroidx/appcompat/widget/AppCompatCheckBox;
 
-    .line 5
     const-class v0, Landroid/widget/Button;
 
     const v1, 0x7f090094
@@ -67,7 +61,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mBtnCancel:Landroid/widget/Button;
 
-    .line 6
     const-class v0, Landroid/widget/Button;
 
     const v1, 0x7f090091
@@ -82,7 +75,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mBtnActivate:Landroid/widget/Button;
 
-    .line 7
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f090419
@@ -97,7 +89,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mTitleBarLeft:Landroid/widget/ImageView;
 
-    .line 8
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f09041a
@@ -122,37 +113,28 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mTitleBarTitle:Landroid/widget/TextView;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mCheckbox:Landroidx/appcompat/widget/AppCompatCheckBox;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mBtnCancel:Landroid/widget/Button;
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mBtnActivate:Landroid/widget/Button;
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mTitleBarLeft:Landroid/widget/ImageView;
 
-    .line 8
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mTitleBarRight:Landroid/widget/ImageView;
 
     return-void
 
-    .line 9
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

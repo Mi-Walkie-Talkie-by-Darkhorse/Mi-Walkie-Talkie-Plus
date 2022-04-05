@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$a;
 .super Ljava/lang/Object;
-.source "QMUICollapsingTopBarLayout.java"
 
 # interfaces
 .implements Landroidx/core/view/r;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$a;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onApplyWindowInsets(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$a;->a:Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;
 
     invoke-static {p1, p2}, Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;->a(Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;

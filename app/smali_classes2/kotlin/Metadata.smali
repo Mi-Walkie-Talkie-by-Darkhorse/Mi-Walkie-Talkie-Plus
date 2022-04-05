@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/Metadata;
 .super Ljava/lang/Object;
-.source "Metadata.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

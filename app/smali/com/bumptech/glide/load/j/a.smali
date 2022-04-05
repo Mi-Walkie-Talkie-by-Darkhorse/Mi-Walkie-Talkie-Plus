@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/a;
 .super Ljava/lang/Object;
-.source "AssetUriLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/n;
@@ -63,13 +62,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/j/a;->a:Landroid/content/res/AssetManager;
 
-    .line 3
     iput-object p2, p0, Lcom/bumptech/glide/load/j/a;->b:Lcom/bumptech/glide/load/j/a$a;
 
     return-void
@@ -99,7 +95,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object p2
@@ -110,7 +105,6 @@
 
     move-result-object p2
 
-    .line 4
     new-instance p3, Lcom/bumptech/glide/load/j/n$a;
 
     new-instance p4, Lcom/bumptech/glide/l/b;
@@ -141,7 +135,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Landroid/net/Uri;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/j/a;->a(Landroid/net/Uri;IILcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/j/n$a;
@@ -158,7 +151,6 @@
         .end annotation
     .end param
 
-    .line 5
     invoke-virtual {p1}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v0
@@ -177,7 +169,6 @@
 
     move-result-object v0
 
-    .line 6
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -213,7 +204,6 @@
         .end annotation
     .end param
 
-    .line 2
     check-cast p1, Landroid/net/Uri;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/j/a;->a(Landroid/net/Uri;)Z

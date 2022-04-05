@@ -1,6 +1,5 @@
 .class public Lcom/yalantis/ucrop/d/b$a;
 .super Ljava/lang/Object;
-.source "BitmapLoadTask.java"
 
 
 # annotations
@@ -34,13 +33,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/yalantis/ucrop/d/b$a;->a:Landroid/graphics/Bitmap;
 
-    .line 3
     iput-object p2, p0, Lcom/yalantis/ucrop/d/b$a;->b:Lcom/yalantis/ucrop/model/b;
 
     return-void
@@ -53,10 +49,8 @@
         .end annotation
     .end param
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
     iput-object p1, p0, Lcom/yalantis/ucrop/d/b$a;->c:Ljava/lang/Exception;
 
     return-void

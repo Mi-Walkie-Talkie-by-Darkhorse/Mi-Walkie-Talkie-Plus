@@ -1,6 +1,5 @@
 .class final Lcom/google/gson/internal/bind/TypeAdapters$9;
 .super Lcom/google/gson/TypeAdapter;
-.source "TypeAdapters.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
 
     return-void
@@ -42,7 +40,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/gson/internal/bind/TypeAdapters$9;->read(Lcom/google/gson/stream/JsonReader;)Ljava/util/concurrent/atomic/AtomicBoolean;
 
     move-result-object p1
@@ -58,7 +55,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->nextBoolean()Z
@@ -78,7 +74,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p2, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/internal/bind/TypeAdapters$9;->write(Lcom/google/gson/stream/JsonWriter;Ljava/util/concurrent/atomic/AtomicBoolean;)V
@@ -94,7 +89,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     move-result p2

@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/u2/f;
 .super Ljava/lang/Object;
-.source "MtuCallback.java"
 
 
 # virtual methods

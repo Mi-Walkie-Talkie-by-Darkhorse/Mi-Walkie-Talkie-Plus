@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/common/util/concurrent/AbstractService$10;
 .super Ljava/lang/Object;
-.source "AbstractService.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/common/util/concurrent/Service$State;->values()[Lcom/google/common/util/concurrent/Service$State;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;
 .super Ljava/lang/Object;
-.source "ListenerModelHandler.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/listener/assist/ListenerAssist;
@@ -66,17 +65,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->modelList:Landroid/util/SparseArray;
 
-    .line 3
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->creator:Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ModelCreator;
 
     return-void
@@ -106,7 +102,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->creator:Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ModelCreator;
 
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getId()I
@@ -117,21 +112,17 @@
 
     move-result-object v0
 
-    .line 2
     monitor-enter p0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->singleTaskModel:Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
 
     if-nez v1, :cond_0
 
-    .line 4
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->singleTaskModel:Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->modelList:Landroid/util/SparseArray;
 
@@ -144,10 +135,8 @@
     :goto_0
     if-eqz p2, :cond_1
 
-    .line 6
     invoke-interface {v0, p2}, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;->onInfoValid(Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)V
 
-    .line 7
     :cond_1
     monitor-exit p0
 
@@ -185,15 +174,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getId()I
 
     move-result v0
 
-    .line 2
     monitor-enter p0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->singleTaskModel:Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
 
@@ -214,7 +200,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 4
     :goto_0
     monitor-exit p0
     :try_end_0
@@ -222,7 +207,6 @@
 
     if-nez v1, :cond_1
 
-    .line 5
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->modelList:Landroid/util/SparseArray;
 
     invoke-virtual {v1, v0}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -236,7 +220,6 @@
     :cond_1
     if-nez v1, :cond_3
 
-    .line 6
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->isAlwaysRecoverAssistModel()Z
 
     move-result v0
@@ -245,7 +228,6 @@
 
     goto :goto_1
 
-    .line 7
     :cond_2
     invoke-virtual {p0, p1, p2}, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->addAndGetModel(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
 
@@ -260,7 +242,6 @@
     :catchall_0
     move-exception p1
 
-    .line 8
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -272,7 +253,6 @@
 .method public isAlwaysRecoverAssistModel()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->alwaysRecoverModel:Ljava/lang/Boolean;
 
     if-eqz v0, :cond_0
@@ -316,15 +296,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getId()I
 
     move-result p1
 
-    .line 2
     monitor-enter p0
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->singleTaskModel:Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
 
@@ -338,17 +315,14 @@
 
     if-ne v0, p1, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->singleTaskModel:Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
 
     const/4 v1, 0x0
 
-    .line 5
     iput-object v1, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->singleTaskModel:Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->modelList:Landroid/util/SparseArray;
 
@@ -358,12 +332,10 @@
 
     check-cast v0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
 
-    .line 7
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->modelList:Landroid/util/SparseArray;
 
     invoke-virtual {v1, p1}, Landroid/util/SparseArray;->remove(I)V
 
-    .line 8
     :goto_0
     monitor-exit p0
     :try_end_0
@@ -371,7 +343,6 @@
 
     if-nez v0, :cond_1
 
-    .line 9
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->creator:Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ModelCreator;
 
     invoke-interface {v0, p1}, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ModelCreator;->create(I)Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
@@ -380,7 +351,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 10
     invoke-interface {v0, p2}, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;->onInfoValid(Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)V
 
     :cond_1
@@ -389,7 +359,6 @@
     :catchall_0
     move-exception p1
 
-    .line 11
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -401,7 +370,6 @@
 .method public setAlwaysRecoverAssistModel(Z)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -414,7 +382,6 @@
 .method public setAlwaysRecoverAssistModelIfNotSet(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler;->alwaysRecoverModel:Ljava/lang/Boolean;
 
     if-nez v0, :cond_0

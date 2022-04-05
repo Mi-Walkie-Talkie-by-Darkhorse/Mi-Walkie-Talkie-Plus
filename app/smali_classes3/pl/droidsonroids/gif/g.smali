@@ -1,6 +1,5 @@
 .class Lpl/droidsonroids/gif/g;
 .super Landroid/os/Handler;
-.source "InvalidationHandler.java"
 
 
 # instance fields
@@ -19,14 +18,12 @@
 .method constructor <init>(Lpl/droidsonroids/gif/c;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 2
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -45,7 +42,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/gif/g;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -58,7 +54,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget v1, p1, Landroid/os/Message;->what:I
 
@@ -66,12 +61,10 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 3
     invoke-virtual {v0}, Lpl/droidsonroids/gif/c;->invalidateSelf()V
 
     goto :goto_1
 
-    .line 4
     :cond_1
     iget-object v0, v0, Lpl/droidsonroids/gif/c;->h:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
@@ -92,7 +85,6 @@
 
     check-cast v1, Lpl/droidsonroids/gif/a;
 
-    .line 5
     iget v2, p1, Landroid/os/Message;->what:I
 
     invoke-interface {v1, v2}, Lpl/droidsonroids/gif/a;->a(I)V

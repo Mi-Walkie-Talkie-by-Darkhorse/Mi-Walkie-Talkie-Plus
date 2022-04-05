@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/AlertController$f$c;
 .super Ljava/lang/Object;
-.source "AlertController.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/appcompat/app/AlertController$f;Landroidx/appcompat/app/AlertController;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AlertController$f$c;->b:Landroidx/appcompat/app/AlertController$f;
 
     iput-object p2, p0, Landroidx/appcompat/app/AlertController$f$c;->a:Landroidx/appcompat/app/AlertController;
@@ -51,7 +49,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/app/AlertController$f$c;->b:Landroidx/appcompat/app/AlertController$f;
 
     iget-object p1, p1, Landroidx/appcompat/app/AlertController$f;->x:Landroid/content/DialogInterface$OnClickListener;
@@ -62,14 +59,12 @@
 
     invoke-interface {p1, p2, p3}, Landroid/content/DialogInterface$OnClickListener;->onClick(Landroid/content/DialogInterface;I)V
 
-    .line 2
     iget-object p1, p0, Landroidx/appcompat/app/AlertController$f$c;->b:Landroidx/appcompat/app/AlertController$f;
 
     iget-boolean p1, p1, Landroidx/appcompat/app/AlertController$f;->H:Z
 
     if-nez p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Landroidx/appcompat/app/AlertController$f$c;->a:Landroidx/appcompat/app/AlertController;
 
     iget-object p1, p1, Landroidx/appcompat/app/AlertController;->b:Landroidx/appcompat/app/d;

@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/ui/activity/d0;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;

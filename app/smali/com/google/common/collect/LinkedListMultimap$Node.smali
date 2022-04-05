@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/LinkedListMultimap$Node;
 .super Lcom/google/common/collect/AbstractMapEntry;
-.source "LinkedListMultimap.java"
 
 
 # annotations
@@ -97,13 +96,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapEntry;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/LinkedListMultimap$Node;->key:Ljava/lang/Object;
 
-    .line 3
     iput-object p2, p0, Lcom/google/common/collect/LinkedListMultimap$Node;->value:Ljava/lang/Object;
 
     return-void
@@ -119,7 +115,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/LinkedListMultimap$Node;->key:Ljava/lang/Object;
 
     return-object v0
@@ -133,7 +128,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/LinkedListMultimap$Node;->value:Ljava/lang/Object;
 
     return-object v0
@@ -151,10 +145,8 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/LinkedListMultimap$Node;->value:Ljava/lang/Object;
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/LinkedListMultimap$Node;->value:Ljava/lang/Object;
 
     return-object v0

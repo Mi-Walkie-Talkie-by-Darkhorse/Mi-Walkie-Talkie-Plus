@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/SingletonImmutableSet;
 .super Lcom/google/common/collect/ImmutableSet;
-.source "SingletonImmutableSet.java"
 
 
 # annotations
@@ -41,10 +40,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSet;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -62,13 +59,10 @@
         }
     .end annotation
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSet;-><init>()V
 
-    .line 4
     iput-object p1, p0, Lcom/google/common/collect/SingletonImmutableSet;->element:Ljava/lang/Object;
 
-    .line 5
     iput p2, p0, Lcom/google/common/collect/SingletonImmutableSet;->cachedHashCode:I
 
     return-void
@@ -79,7 +73,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableSet;->element:Ljava/lang/Object;
 
     invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -92,7 +85,6 @@
 .method copyIntoArray([Ljava/lang/Object;I)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableSet;->element:Ljava/lang/Object;
 
     aput-object v0, p1, p2
@@ -115,7 +107,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Ljava/util/Set;
 
@@ -123,10 +114,8 @@
 
     if-eqz v1, :cond_2
 
-    .line 2
     check-cast p1, Ljava/util/Set;
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Set;->size()I
 
     move-result v1
@@ -164,12 +153,10 @@
 .method public final hashCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/SingletonImmutableSet;->cachedHashCode:I
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableSet;->element:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -193,7 +180,6 @@
 .method isHashCodeFast()Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/SingletonImmutableSet;->cachedHashCode:I
 
     if-eqz v0, :cond_0
@@ -227,7 +213,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableSet;->element:Ljava/lang/Object;
 
     invoke-static {v0}, Lcom/google/common/collect/Iterators;->singletonIterator(Ljava/lang/Object;)Lcom/google/common/collect/UnmodifiableIterator;
@@ -240,7 +225,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/SingletonImmutableSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -259,14 +243,12 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/SingletonImmutableSet;->element:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I

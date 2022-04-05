@@ -1,13 +1,11 @@
 .class public Lkotlin/jvm/b/b;
 .super Ljava/lang/Object;
-.source "Intrinsics.java"
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,7 +21,6 @@
         }
     .end annotation
 
-    .line 10
     const-class v0, Lkotlin/jvm/b/b;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -47,12 +44,10 @@
         }
     .end annotation
 
-    .line 11
     invoke-virtual {p0}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
 
     move-result-object v0
 
-    .line 12
     array-length v1, v0
 
     const/4 v2, -0x1
@@ -62,7 +57,6 @@
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 13
     aget-object v4, v0, v3
 
     invoke-virtual {v4}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
@@ -85,14 +79,12 @@
     :cond_1
     add-int/lit8 v2, v2, 0x1
 
-    .line 14
     invoke-static {v0, v2, v1}, Ljava/util/Arrays;->copyOfRange([Ljava/lang/Object;II)[Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, [Ljava/lang/StackTraceElement;
 
-    .line 15
     invoke-virtual {p0, p1}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
 
     return-object p0
@@ -101,7 +93,6 @@
 .method public static a()V
     .locals 1
 
-    .line 1
     new-instance v0, Lkotlin/KotlinNullPointerException;
 
     invoke-direct {v0}, Lkotlin/KotlinNullPointerException;-><init>()V
@@ -120,7 +111,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/IllegalStateException;
 
@@ -150,7 +140,6 @@
 .method private static a(Ljava/lang/String;)V
     .locals 5
 
-    .line 3
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -161,20 +150,16 @@
 
     const/4 v1, 0x3
 
-    .line 4
     aget-object v0, v0, v1
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 6
     invoke-virtual {v0}, Ljava/lang/StackTraceElement;->getMethodName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 7
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -205,7 +190,6 @@
 
     invoke-direct {v2, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    .line 8
     invoke-static {v2}, Lkotlin/jvm/b/b;->a(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     check-cast v2, Ljava/lang/IllegalArgumentException;
@@ -229,7 +213,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -246,7 +229,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-static {p1}, Lkotlin/jvm/b/b;->a(Ljava/lang/String;)V
 

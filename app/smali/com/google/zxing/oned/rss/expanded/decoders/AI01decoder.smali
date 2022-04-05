@@ -1,6 +1,5 @@
 .class abstract Lcom/google/zxing/oned/rss/expanded/decoders/AI01decoder;
 .super Lcom/google/zxing/oned/rss/expanded/decoders/AbstractExpandedDecoder;
-.source "AI01decoder.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method constructor <init>(Lcom/google/zxing/common/BitArray;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/zxing/oned/rss/expanded/decoders/AbstractExpandedDecoder;-><init>(Lcom/google/zxing/common/BitArray;)V
 
     return-void
@@ -33,7 +31,6 @@
 
     add-int v3, v1, p1
 
-    .line 1
     invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->charAt(I)C
 
     move-result v3
@@ -56,7 +53,6 @@
     :cond_1
     const/16 p1, 0xa
 
-    .line 2
     rem-int/2addr v2, p1
 
     rsub-int/lit8 v1, v2, 0xa
@@ -68,7 +64,6 @@
     :cond_2
     move v0, v1
 
-    .line 3
     :goto_1
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -82,20 +77,16 @@
 
     const-string v0, "(01)"
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->length()I
 
     move-result v0
 
     const/16 v1, 0x39
 
-    .line 3
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 4
     invoke-virtual {p0, p1, p2, v0}, Lcom/google/zxing/oned/rss/expanded/decoders/AI01decoder;->encodeCompressedGtinWithoutAI(Ljava/lang/StringBuilder;II)V
 
     return-void
@@ -111,7 +102,6 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/expanded/decoders/AbstractExpandedDecoder;->getGeneralDecoder()Lcom/google/zxing/oned/rss/expanded/decoders/GeneralAppIdDecoder;
 
     move-result-object v1
@@ -126,26 +116,21 @@
 
     move-result v1
 
-    .line 2
     div-int/lit8 v2, v1, 0x64
 
     const/16 v3, 0x30
 
     if-nez v2, :cond_0
 
-    .line 3
     invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 4
     :cond_0
     div-int/lit8 v2, v1, 0xa
 
     if-nez v2, :cond_1
 
-    .line 5
     invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 6
     :cond_1
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -153,7 +138,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     invoke-static {p1, p3}, Lcom/google/zxing/oned/rss/expanded/decoders/AI01decoder;->appendCheckDigit(Ljava/lang/StringBuilder;I)V
 

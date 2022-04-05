@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList;
 .super Ljava/lang/Object;
-.source "AccessControlList.java"
 
 
 # annotations
@@ -32,10 +31,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -50,12 +47,10 @@
 .method public addGrant(Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Grant;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Grant;->getGrantKey()Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList;->acls:Ljava/util/Map;
 
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -66,7 +61,6 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     iget-object v1, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList;->acls:Ljava/util/Map;
 
     invoke-virtual {p1}, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Grant;->getPermission()Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
@@ -85,7 +79,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
@@ -105,7 +98,6 @@
 
     move-result-object p1
 
-    .line 5
     iget-object v1, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList;->acls:Ljava/util/Map;
 
     invoke-interface {v1, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -125,7 +117,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -143,7 +134,6 @@
 
     check-cast v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Grant;
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList;->addGrant(Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Grant;)V
 
     goto :goto_0
@@ -155,7 +145,6 @@
 .method public checkGroupReadPermission(Ljava/lang/String;)Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;->GROUP:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->READ:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
@@ -170,7 +159,6 @@
 .method public checkGroupWritePermission(Ljava/lang/String;)Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;->GROUP:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->WRITE:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
@@ -185,7 +173,6 @@
 .method public checkPermission(Ljava/lang/String;Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList;->acls:Ljava/util/Map;
 
     new-instance v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;
@@ -202,7 +189,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p3}, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->getValue()I
 
     move-result p3
@@ -224,7 +210,6 @@
 .method public checkUserReadPermission(Ljava/lang/String;)Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;->USER:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->READ:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
@@ -239,7 +224,6 @@
 .method public checkUserWritePermission(Ljava/lang/String;)Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;->USER:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;
 
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->WRITE:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
@@ -262,12 +246,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList;->acls:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -292,14 +274,12 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;
 
-    .line 4
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v4
@@ -318,7 +298,6 @@
 
     if-ne v4, v5, :cond_1
 
-    .line 5
     new-instance v2, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Grant;
 
     sget-object v4, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->FULL_CONTROL:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
@@ -329,7 +308,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-static {}, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->values()[Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
@@ -344,7 +322,6 @@
 
     aget-object v7, v4, v6
 
-    .line 7
     invoke-virtual {v7}, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->getValue()I
 
     move-result v8
@@ -375,7 +352,6 @@
 
     if-lez v8, :cond_2
 
-    .line 8
     new-instance v8, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Grant;
 
     invoke-direct {v8, v3, v7}, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Grant;-><init>(Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;)V

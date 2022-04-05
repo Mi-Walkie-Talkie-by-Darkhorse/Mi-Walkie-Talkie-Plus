@@ -1,6 +1,5 @@
 .class public interface abstract La/g/a/e;
 .super Ljava/lang/Object;
-.source "SupportSQLiteQuery.java"
 
 
 # virtual methods

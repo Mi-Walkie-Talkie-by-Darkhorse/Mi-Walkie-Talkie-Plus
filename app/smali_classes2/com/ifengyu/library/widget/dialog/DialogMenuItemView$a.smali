@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/library/widget/dialog/DialogMenuItemView$a;
 .super Ljava/lang/Object;
-.source "DialogMenuItemView.java"
 
 
 # annotations

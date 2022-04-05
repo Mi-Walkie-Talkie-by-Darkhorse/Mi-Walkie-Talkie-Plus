@@ -1,6 +1,5 @@
 .class public final Lokhttp3/internal/connection/RouteSelector;
 .super Ljava/lang/Object;
-.source "RouteSelector.java"
 
 
 # annotations
@@ -57,43 +56,34 @@
 .method public constructor <init>(Lokhttp3/Address;Lokhttp3/internal/connection/RouteDatabase;Lokhttp3/Call;Lokhttp3/EventListener;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
     iput-object v0, p0, Lokhttp3/internal/connection/RouteSelector;->proxies:Ljava/util/List;
 
-    .line 3
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
     iput-object v0, p0, Lokhttp3/internal/connection/RouteSelector;->inetSocketAddresses:Ljava/util/List;
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lokhttp3/internal/connection/RouteSelector;->postponedRoutes:Ljava/util/List;
 
-    .line 5
     iput-object p1, p0, Lokhttp3/internal/connection/RouteSelector;->address:Lokhttp3/Address;
 
-    .line 6
     iput-object p2, p0, Lokhttp3/internal/connection/RouteSelector;->routeDatabase:Lokhttp3/internal/connection/RouteDatabase;
 
-    .line 7
     iput-object p3, p0, Lokhttp3/internal/connection/RouteSelector;->call:Lokhttp3/Call;
 
-    .line 8
     iput-object p4, p0, Lokhttp3/internal/connection/RouteSelector;->eventListener:Lokhttp3/EventListener;
 
-    .line 9
     invoke-virtual {p1}, Lokhttp3/Address;->url()Lokhttp3/HttpUrl;
 
     move-result-object p2
@@ -110,21 +100,18 @@
 .method static getHostString(Ljava/net/InetSocketAddress;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Ljava/net/InetSocketAddress;->getAddress()Ljava/net/InetAddress;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Ljava/net/InetSocketAddress;->getHostName()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Ljava/net/InetAddress;->getHostAddress()Ljava/lang/String;
 
@@ -136,7 +123,6 @@
 .method private hasNextProxy()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/connection/RouteSelector;->nextProxyIndex:I
 
     iget-object v1, p0, Lokhttp3/internal/connection/RouteSelector;->proxies:Ljava/util/List;
@@ -166,14 +152,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lokhttp3/internal/connection/RouteSelector;->hasNextProxy()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lokhttp3/internal/connection/RouteSelector;->proxies:Ljava/util/List;
 
     iget v1, p0, Lokhttp3/internal/connection/RouteSelector;->nextProxyIndex:I
@@ -188,12 +172,10 @@
 
     check-cast v0, Ljava/net/Proxy;
 
-    .line 3
     invoke-direct {p0, v0}, Lokhttp3/internal/connection/RouteSelector;->resetNextInetSocketAddress(Ljava/net/Proxy;)V
 
     return-object v0
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/net/SocketException;
 
@@ -242,14 +224,12 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lokhttp3/internal/connection/RouteSelector;->inetSocketAddresses:Ljava/util/List;
 
-    .line 2
     invoke-virtual {p1}, Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;
 
     move-result-object v0
@@ -268,33 +248,27 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Ljava/net/Proxy;->address()Ljava/net/SocketAddress;
 
     move-result-object v0
 
-    .line 4
     instance-of v1, v0, Ljava/net/InetSocketAddress;
 
     if-eqz v1, :cond_1
 
-    .line 5
     check-cast v0, Ljava/net/InetSocketAddress;
 
-    .line 6
     invoke-static {v0}, Lokhttp3/internal/connection/RouteSelector;->getHostString(Ljava/net/InetSocketAddress;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 7
     invoke-virtual {v0}, Ljava/net/InetSocketAddress;->getPort()I
 
     move-result v0
 
     goto :goto_1
 
-    .line 8
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -306,7 +280,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 9
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -321,7 +294,6 @@
 
     throw p1
 
-    .line 10
     :cond_2
     :goto_0
     iget-object v0, p0, Lokhttp3/internal/connection/RouteSelector;->address:Lokhttp3/Address;
@@ -334,7 +306,6 @@
 
     move-result-object v1
 
-    .line 11
     iget-object v0, p0, Lokhttp3/internal/connection/RouteSelector;->address:Lokhttp3/Address;
 
     invoke-virtual {v0}, Lokhttp3/Address;->url()Lokhttp3/HttpUrl;
@@ -354,7 +325,6 @@
 
     if-gt v0, v2, :cond_6
 
-    .line 12
     invoke-virtual {p1}, Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;
 
     move-result-object p1
@@ -363,7 +333,6 @@
 
     if-ne p1, v2, :cond_3
 
-    .line 13
     iget-object p1, p0, Lokhttp3/internal/connection/RouteSelector;->inetSocketAddresses:Ljava/util/List;
 
     invoke-static {v1, v0}, Ljava/net/InetSocketAddress;->createUnresolved(Ljava/lang/String;I)Ljava/net/InetSocketAddress;
@@ -374,7 +343,6 @@
 
     goto :goto_3
 
-    .line 14
     :cond_3
     iget-object p1, p0, Lokhttp3/internal/connection/RouteSelector;->eventListener:Lokhttp3/EventListener;
 
@@ -382,7 +350,6 @@
 
     invoke-virtual {p1, v2, v1}, Lokhttp3/EventListener;->dnsStart(Lokhttp3/Call;Ljava/lang/String;)V
 
-    .line 15
     iget-object p1, p0, Lokhttp3/internal/connection/RouteSelector;->address:Lokhttp3/Address;
 
     invoke-virtual {p1}, Lokhttp3/Address;->dns()Lokhttp3/Dns;
@@ -393,14 +360,12 @@
 
     move-result-object p1
 
-    .line 16
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result v2
 
     if-nez v2, :cond_5
 
-    .line 17
     iget-object v2, p0, Lokhttp3/internal/connection/RouteSelector;->eventListener:Lokhttp3/EventListener;
 
     iget-object v3, p0, Lokhttp3/internal/connection/RouteSelector;->call:Lokhttp3/Call;
@@ -409,7 +374,6 @@
 
     const/4 v1, 0x0
 
-    .line 18
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v2
@@ -417,14 +381,12 @@
     :goto_2
     if-ge v1, v2, :cond_4
 
-    .line 19
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Ljava/net/InetAddress;
 
-    .line 20
     iget-object v4, p0, Lokhttp3/internal/connection/RouteSelector;->inetSocketAddresses:Ljava/util/List;
 
     new-instance v5, Ljava/net/InetSocketAddress;
@@ -441,7 +403,6 @@
     :goto_3
     return-void
 
-    .line 21
     :cond_5
     new-instance p1, Ljava/net/UnknownHostException;
 
@@ -471,7 +432,6 @@
 
     throw p1
 
-    .line 22
     :cond_6
     new-instance p1, Ljava/net/SocketException;
 
@@ -511,7 +471,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     invoke-static {p2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
@@ -520,7 +479,6 @@
 
     goto :goto_1
 
-    .line 2
     :cond_0
     iget-object p2, p0, Lokhttp3/internal/connection/RouteSelector;->address:Lokhttp3/Address;
 
@@ -538,14 +496,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 3
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result p2
 
     if-nez p2, :cond_1
 
-    .line 4
     invoke-static {p1}, Lokhttp3/internal/Util;->immutableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
@@ -557,7 +513,6 @@
 
     new-array p1, p1, [Ljava/net/Proxy;
 
-    .line 5
     sget-object p2, Ljava/net/Proxy;->NO_PROXY:Ljava/net/Proxy;
 
     aput-object p2, p1, v0
@@ -569,7 +524,6 @@
     :goto_0
     iput-object p1, p0, Lokhttp3/internal/connection/RouteSelector;->proxies:Ljava/util/List;
 
-    .line 6
     :goto_1
     iput v0, p0, Lokhttp3/internal/connection/RouteSelector;->nextProxyIndex:I
 
@@ -581,7 +535,6 @@
 .method public connectFailed(Lokhttp3/Route;Ljava/io/IOException;)V
     .locals 3
 
-    .line 1
     invoke-virtual {p1}, Lokhttp3/Route;->proxy()Ljava/net/Proxy;
 
     move-result-object v0
@@ -602,7 +555,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lokhttp3/internal/connection/RouteSelector;->address:Lokhttp3/Address;
 
     invoke-virtual {v0}, Lokhttp3/Address;->proxySelector()Ljava/net/ProxySelector;
@@ -611,7 +563,6 @@
 
     iget-object v1, p0, Lokhttp3/internal/connection/RouteSelector;->address:Lokhttp3/Address;
 
-    .line 3
     invoke-virtual {v1}, Lokhttp3/Address;->url()Lokhttp3/HttpUrl;
 
     move-result-object v1
@@ -628,10 +579,8 @@
 
     move-result-object v2
 
-    .line 4
     invoke-virtual {v0, v1, v2, p2}, Ljava/net/ProxySelector;->connectFailed(Ljava/net/URI;Ljava/net/SocketAddress;Ljava/io/IOException;)V
 
-    .line 5
     :cond_0
     iget-object p2, p0, Lokhttp3/internal/connection/RouteSelector;->routeDatabase:Lokhttp3/internal/connection/RouteDatabase;
 
@@ -643,7 +592,6 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokhttp3/internal/connection/RouteSelector;->hasNextProxy()Z
 
     move-result v0
@@ -681,19 +629,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lokhttp3/internal/connection/RouteSelector;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
     :cond_0
     invoke-direct {p0}, Lokhttp3/internal/connection/RouteSelector;->hasNextProxy()Z
 
@@ -701,14 +646,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 4
     invoke-direct {p0}, Lokhttp3/internal/connection/RouteSelector;->nextProxy()Ljava/net/Proxy;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    .line 5
     iget-object v3, p0, Lokhttp3/internal/connection/RouteSelector;->inetSocketAddresses:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
@@ -718,7 +661,6 @@
     :goto_0
     if-ge v2, v3, :cond_2
 
-    .line 6
     new-instance v4, Lokhttp3/Route;
 
     iget-object v5, p0, Lokhttp3/internal/connection/RouteSelector;->address:Lokhttp3/Address;
@@ -733,7 +675,6 @@
 
     invoke-direct {v4, v5, v1, v6}, Lokhttp3/Route;-><init>(Lokhttp3/Address;Ljava/net/Proxy;Ljava/net/InetSocketAddress;)V
 
-    .line 7
     iget-object v5, p0, Lokhttp3/internal/connection/RouteSelector;->routeDatabase:Lokhttp3/internal/connection/RouteDatabase;
 
     invoke-virtual {v5, v4}, Lokhttp3/internal/connection/RouteDatabase;->shouldPostpone(Lokhttp3/Route;)Z
@@ -742,14 +683,12 @@
 
     if-eqz v5, :cond_1
 
-    .line 8
     iget-object v5, p0, Lokhttp3/internal/connection/RouteSelector;->postponedRoutes:Ljava/util/List;
 
     invoke-interface {v5, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
-    .line 9
     :cond_1
     invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -758,7 +697,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_2
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -766,7 +704,6 @@
 
     if-nez v1, :cond_0
 
-    .line 11
     :cond_3
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
@@ -774,17 +711,14 @@
 
     if-eqz v1, :cond_4
 
-    .line 12
     iget-object v1, p0, Lokhttp3/internal/connection/RouteSelector;->postponedRoutes:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 13
     iget-object v1, p0, Lokhttp3/internal/connection/RouteSelector;->postponedRoutes:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
-    .line 14
     :cond_4
     new-instance v1, Lokhttp3/internal/connection/RouteSelector$Selection;
 
@@ -792,7 +726,6 @@
 
     return-object v1
 
-    .line 15
     :cond_5
     new-instance v0, Ljava/util/NoSuchElementException;
 

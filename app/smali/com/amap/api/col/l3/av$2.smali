@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/av$2;
 .super Ljava/lang/Object;
-.source "CityObject.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/col/l3/av;
 
     invoke-direct {v0, p1}, Lcom/amap/api/col/l3/av;-><init>(Landroid/os/Parcel;)V
@@ -52,7 +49,6 @@
 .method public final bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     new-array p1, p1, [Lcom/amap/api/col/l3/av;
 
     return-object p1

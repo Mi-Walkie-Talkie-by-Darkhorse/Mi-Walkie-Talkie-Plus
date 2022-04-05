@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/l$b;
 .super Landroidx/core/view/c0;
-.source "WindowDecorActionBar.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/appcompat/app/l;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/l$b;->a:Landroidx/appcompat/app/l;
 
     invoke-direct {p0}, Landroidx/core/view/c0;-><init>()V
@@ -35,14 +33,12 @@
 .method public b(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/app/l$b;->a:Landroidx/appcompat/app/l;
 
     const/4 v0, 0x0
 
     iput-object v0, p1, Landroidx/appcompat/app/l;->w:Landroidx/appcompat/c/h;
 
-    .line 2
     iget-object p1, p1, Landroidx/appcompat/app/l;->e:Landroidx/appcompat/widget/ActionBarContainer;
 
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->requestLayout()V

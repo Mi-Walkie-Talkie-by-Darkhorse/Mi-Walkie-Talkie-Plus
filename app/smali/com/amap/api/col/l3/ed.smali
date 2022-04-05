@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ed;
 .super Ljava/lang/Object;
-.source "NinePatchTool.java"
 
 
 # direct methods
@@ -9,22 +8,18 @@
 
     add-int/lit8 v0, p1, 0x0
 
-    .line 29
     aget-byte v0, p0, v0
 
     add-int/lit8 v1, p1, 0x1
 
-    .line 30
     aget-byte v1, p0, v1
 
     add-int/lit8 v2, p1, 0x2
 
-    .line 31
     aget-byte v2, p0, v2
 
     add-int/lit8 p1, p1, 0x3
 
-    .line 32
     aget-byte p0, p0, p1
 
     and-int/lit16 p1, v0, 0xff
@@ -52,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static/range {p0 .. p0}, Lcom/amap/api/col/l3/eh;->a(Landroid/content/Context;)Landroid/content/res/AssetManager;
 
     move-result-object v0
@@ -409,27 +403,23 @@
     :goto_9
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
-    .line 2
     invoke-virtual {v8}, Landroid/graphics/Bitmap;->getNinePatchChunk()[B
 
     move-result-object v0
 
     if-nez v0, :cond_12
 
-    .line 3
     new-instance v0, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-direct {v0, v8}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/graphics/Bitmap;)V
 
     return-object v0
 
-    .line 4
     :cond_12
     new-instance v10, Landroid/graphics/Rect;
 
     invoke-direct {v10}, Landroid/graphics/Rect;-><init>()V
 
-    .line 5
     invoke-virtual {v8}, Landroid/graphics/Bitmap;->getNinePatchChunk()[B
 
     move-result-object v0
@@ -466,14 +456,12 @@
 
     iput v0, v10, Landroid/graphics/Rect;->bottom:I
 
-    .line 6
     new-instance v0, Landroid/graphics/drawable/NinePatchDrawable;
 
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v7
 
-    .line 7
     invoke-virtual {v8}, Landroid/graphics/Bitmap;->getNinePatchChunk()[B
 
     move-result-object v9
@@ -490,7 +478,6 @@
 .method private static a(Landroid/graphics/Bitmap;[B)V
     .locals 12
 
-    .line 8
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v0
@@ -499,7 +486,6 @@
 
     new-array v9, v0, [I
 
-    .line 9
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v1
@@ -520,7 +506,6 @@
 
     move v7, v0
 
-    .line 10
     invoke-virtual/range {v1 .. v8}, Landroid/graphics/Bitmap;->getPixels([IIIIIII)V
 
     const/4 v1, 0x0
@@ -532,14 +517,12 @@
 
     if-ge v2, v0, :cond_1
 
-    .line 11
     aget v4, v9, v2
 
     if-ne v3, v4, :cond_0
 
     const/16 v4, 0xc
 
-    .line 12
     invoke-static {p1, v4, v2}, Lcom/amap/api/col/l3/ed;->a([BII)V
 
     goto :goto_1
@@ -556,7 +539,6 @@
     :goto_2
     if-ltz v2, :cond_3
 
-    .line 13
     aget v4, v9, v2
 
     if-ne v3, v4, :cond_2
@@ -567,7 +549,6 @@
 
     add-int/lit8 v0, v0, -0x2
 
-    .line 14
     invoke-static {p1, v4, v0}, Lcom/amap/api/col/l3/ed;->a([BII)V
 
     goto :goto_3
@@ -577,7 +558,6 @@
 
     goto :goto_2
 
-    .line 15
     :cond_3
     :goto_3
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
@@ -592,7 +572,6 @@
 
     const/4 v7, 0x1
 
-    .line 16
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v4
@@ -614,14 +593,12 @@
     :goto_4
     if-ge v1, v0, :cond_5
 
-    .line 17
     aget p0, v2, v1
 
     if-ne v3, p0, :cond_4
 
     const/16 p0, 0x14
 
-    .line 18
     invoke-static {p1, p0, v1}, Lcom/amap/api/col/l3/ed;->a([BII)V
 
     goto :goto_5
@@ -638,7 +615,6 @@
     :goto_6
     if-ltz p0, :cond_7
 
-    .line 19
     aget v1, v2, p0
 
     if-ne v3, v1, :cond_6
@@ -649,7 +625,6 @@
 
     add-int/lit8 v0, v0, -0x2
 
-    .line 20
     invoke-static {p1, v1, v0}, Lcom/amap/api/col/l3/ed;->a([BII)V
 
     return-void
@@ -675,28 +650,24 @@
 
     and-int/lit16 v0, v0, 0xff
 
-    .line 21
     invoke-virtual {p0, v0}, Ljava/io/OutputStream;->write(I)V
 
     shr-int/lit8 v0, p1, 0x8
 
     and-int/lit16 v0, v0, 0xff
 
-    .line 22
     invoke-virtual {p0, v0}, Ljava/io/OutputStream;->write(I)V
 
     shr-int/lit8 v0, p1, 0x10
 
     and-int/lit16 v0, v0, 0xff
 
-    .line 23
     invoke-virtual {p0, v0}, Ljava/io/OutputStream;->write(I)V
 
     shr-int/lit8 p1, p1, 0x18
 
     and-int/lit16 p1, p1, 0xff
 
-    .line 24
     invoke-virtual {p0, p1}, Ljava/io/OutputStream;->write(I)V
 
     return-void
@@ -711,7 +682,6 @@
 
     int-to-byte v1, v1
 
-    .line 25
     aput-byte v1, p0, v0
 
     add-int/lit8 v0, p1, 0x1
@@ -720,7 +690,6 @@
 
     int-to-byte v1, v1
 
-    .line 26
     aput-byte v1, p0, v0
 
     add-int/lit8 v0, p1, 0x2
@@ -729,7 +698,6 @@
 
     int-to-byte v1, v1
 
-    .line 27
     aput-byte v1, p0, v0
 
     add-int/lit8 p1, p1, 0x3
@@ -738,7 +706,6 @@
 
     int-to-byte p2, p2
 
-    .line 28
     aput-byte p2, p0, p1
 
     return-void

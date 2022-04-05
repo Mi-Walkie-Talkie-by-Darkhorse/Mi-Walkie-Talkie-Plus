@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/l/a;
 .super Ljava/lang/Object;
-.source "EmptySignature.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/c;
@@ -14,7 +13,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/l/a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/l/a;-><init>()V
@@ -27,7 +25,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +35,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/bumptech/glide/l/a;->b:Lcom/bumptech/glide/l/a;
 
     return-object v0

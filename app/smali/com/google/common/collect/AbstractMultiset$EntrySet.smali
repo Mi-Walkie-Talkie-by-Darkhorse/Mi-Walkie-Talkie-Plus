@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/AbstractMultiset$EntrySet;
 .super Lcom/google/common/collect/Multisets$EntrySet;
-.source "AbstractMultiset.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/collect/AbstractMultiset;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultiset$EntrySet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$EntrySet;-><init>()V
@@ -50,7 +48,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultiset$EntrySet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     invoke-virtual {v0}, Lcom/google/common/collect/AbstractMultiset;->entryIterator()Ljava/util/Iterator;
@@ -70,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultiset$EntrySet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     return-object v0
@@ -79,7 +75,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultiset$EntrySet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     invoke-virtual {v0}, Lcom/google/common/collect/AbstractMultiset;->distinctElements()I

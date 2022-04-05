@@ -1,6 +1,5 @@
 .class public abstract Landroidx/appcompat/app/AppCompatDelegate;
 .super Ljava/lang/Object;
-.source "AppCompatDelegate.java"
 
 
 # annotations
@@ -32,14 +31,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, La/b/b;
 
     invoke-direct {v0}, La/b/b;-><init>()V
 
     sput-object v0, Landroidx/appcompat/app/AppCompatDelegate;->b:La/b/b;
 
-    .line 2
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +49,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -71,7 +67,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-direct {v0, p0, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;-><init>(Landroid/app/Activity;Landroidx/appcompat/app/c;)V
@@ -92,7 +87,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-instance v0, Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-direct {v0, p0, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;-><init>(Landroid/app/Dialog;Landroidx/appcompat/app/c;)V
@@ -107,16 +101,13 @@
         .end annotation
     .end param
 
-    .line 4
     sget-object v0, Landroidx/appcompat/app/AppCompatDelegate;->c:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 5
     :try_start_0
     invoke-static {p0}, Landroidx/appcompat/app/AppCompatDelegate;->c(Landroidx/appcompat/app/AppCompatDelegate;)V
 
-    .line 6
     sget-object v1, Landroidx/appcompat/app/AppCompatDelegate;->b:La/b/b;
 
     new-instance v2, Ljava/lang/ref/WeakReference;
@@ -125,7 +116,6 @@
 
     invoke-virtual {v1, v2}, La/b/b;->add(Ljava/lang/Object;)Z
 
-    .line 7
     monitor-exit v0
 
     return-void
@@ -143,7 +133,6 @@
 .method public static a(Z)V
     .locals 0
 
-    .line 3
     invoke-static {p0}, Landroidx/appcompat/widget/j0;->a(Z)V
 
     return-void
@@ -156,16 +145,13 @@
         .end annotation
     .end param
 
-    .line 2
     sget-object v0, Landroidx/appcompat/app/AppCompatDelegate;->c:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     invoke-static {p0}, Landroidx/appcompat/app/AppCompatDelegate;->c(Landroidx/appcompat/app/AppCompatDelegate;)V
 
-    .line 4
     monitor-exit v0
 
     return-void
@@ -187,12 +173,10 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object v0, Landroidx/appcompat/app/AppCompatDelegate;->c:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     sget-object v1, Landroidx/appcompat/app/AppCompatDelegate;->b:La/b/b;
 
@@ -200,7 +184,6 @@
 
     move-result-object v1
 
-    .line 3
     :cond_0
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
@@ -209,7 +192,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 4
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
@@ -226,13 +208,11 @@
 
     if-nez v2, :cond_0
 
-    .line 5
     :cond_1
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
 
-    .line 6
     :cond_2
     monitor-exit v0
 
@@ -251,7 +231,6 @@
 .method public static k()I
     .locals 1
 
-    .line 1
     sget v0, Landroidx/appcompat/app/AppCompatDelegate;->a:I
 
     return v0
@@ -359,7 +338,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatDelegate;->a(Landroid/content/Context;)V
 
     return-object p1

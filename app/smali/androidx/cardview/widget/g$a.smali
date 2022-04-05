@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/cardview/widget/g$a;
 .super Ljava/lang/Object;
-.source "RoundRectDrawableWithShadow.java"
 
 
 # annotations

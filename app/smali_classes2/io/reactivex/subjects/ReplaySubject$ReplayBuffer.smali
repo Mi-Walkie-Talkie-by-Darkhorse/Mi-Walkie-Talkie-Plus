@@ -1,6 +1,5 @@
 .class interface abstract Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 .super Ljava/lang/Object;
-.source "ReplaySubject.java"
 
 
 # annotations

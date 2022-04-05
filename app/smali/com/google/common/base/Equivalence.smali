@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/base/Equivalence;
 .super Ljava/lang/Object;
-.source "Equivalence.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/base/Equivalence$Equals;->INSTANCE:Lcom/google/common/base/Equivalence$Equals;
 
     return-object v0
@@ -64,7 +61,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/base/Equivalence$Identity;->INSTANCE:Lcom/google/common/base/Equivalence$Identity;
 
     return-object v0
@@ -117,7 +113,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_1
     invoke-virtual {p0, p1, p2}, Lcom/google/common/base/Equivalence;->doEquivalent(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -149,7 +144,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/base/Equivalence$EquivalentToPredicate;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/base/Equivalence$EquivalentToPredicate;-><init>(Lcom/google/common/base/Equivalence;Ljava/lang/Object;)V
@@ -175,7 +169,6 @@
 
     return p1
 
-    .line 1
     :cond_0
     invoke-virtual {p0, p1}, Lcom/google/common/base/Equivalence;->doHash(Ljava/lang/Object;)I
 
@@ -198,7 +191,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/base/FunctionalEquivalence;
 
     invoke-direct {v0, p1, p0}, Lcom/google/common/base/FunctionalEquivalence;-><init>(Lcom/google/common/base/Function;Lcom/google/common/base/Equivalence;)V
@@ -221,7 +213,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/base/PairwiseEquivalence;
 
     invoke-direct {v0, p0}, Lcom/google/common/base/PairwiseEquivalence;-><init>(Lcom/google/common/base/Equivalence;)V
@@ -243,7 +234,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/base/Equivalence$Wrapper;
 
     const/4 v1, 0x0

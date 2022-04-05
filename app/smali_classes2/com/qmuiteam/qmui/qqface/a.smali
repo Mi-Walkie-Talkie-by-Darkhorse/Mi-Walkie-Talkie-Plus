@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/qqface/a;
 .super Ljava/lang/Object;
-.source "IQMUIQQFaceManager.java"
 
 
 # virtual methods

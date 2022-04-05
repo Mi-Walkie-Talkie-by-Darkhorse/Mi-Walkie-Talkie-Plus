@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/u$a;
 .super Ljava/lang/Object;
-.source "OffMapRenameDialog.java"
 
 # interfaces
 .implements Landroid/text/TextWatcher;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/u;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/u$a;->d:Lcom/ifengyu/intercom/ui/widget/dialog/u;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +42,6 @@
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/u$a;->d:Lcom/ifengyu/intercom/ui/widget/dialog/u;
 
@@ -58,7 +55,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/u$a;->b:I
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/u$a;->d:Lcom/ifengyu/intercom/ui/widget/dialog/u;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/u;->a(Lcom/ifengyu/intercom/ui/widget/dialog/u;)Landroid/widget/EditText;
@@ -71,7 +67,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/u$a;->c:I
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/u$a;->d:Lcom/ifengyu/intercom/ui/widget/dialog/u;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/u;->a(Lcom/ifengyu/intercom/ui/widget/dialog/u;)Landroid/widget/EditText;
@@ -114,7 +109,6 @@
 
     if-le v0, v1, :cond_0
 
-    .line 4
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/u$a;->b:I
 
     add-int/lit8 v0, v0, -0x1
@@ -123,7 +117,6 @@
 
     invoke-interface {p1, v0, v1}, Landroid/text/Editable;->delete(II)Landroid/text/Editable;
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/u$a;->d:Lcom/ifengyu/intercom/ui/widget/dialog/u;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/u;->a(Lcom/ifengyu/intercom/ui/widget/dialog/u;)Landroid/widget/EditText;
@@ -132,7 +125,6 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/u$a;->d:Lcom/ifengyu/intercom/ui/widget/dialog/u;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/u;->a(Lcom/ifengyu/intercom/ui/widget/dialog/u;)Landroid/widget/EditText;
@@ -152,7 +144,6 @@
     :catch_0
     move-exception p1
 
-    .line 7
     invoke-virtual {p1}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     :cond_0
@@ -163,7 +154,6 @@
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/u$a;->a:Ljava/lang/CharSequence;
 
     return-void

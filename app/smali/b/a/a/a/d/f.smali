@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/d/f;
 .super Ljava/lang/Object;
-.source "IHighlighter.java"
 
 
 # virtual methods

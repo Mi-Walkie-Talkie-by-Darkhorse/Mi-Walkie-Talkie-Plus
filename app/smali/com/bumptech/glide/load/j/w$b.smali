@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/w$b;
 .super Ljava/lang/Object;
-.source "UriLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/o;
@@ -39,10 +38,8 @@
 .method public constructor <init>(Landroid/content/ContentResolver;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/j/w$b;->a:Landroid/content/ContentResolver;
 
     return-void
@@ -63,7 +60,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/i/i;
 
     iget-object v1, p0, Lcom/bumptech/glide/load/j/w$b;->a:Landroid/content/ContentResolver;
@@ -90,7 +86,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance p1, Lcom/bumptech/glide/load/j/w;
 
     invoke-direct {p1, p0}, Lcom/bumptech/glide/load/j/w;-><init>(Lcom/bumptech/glide/load/j/w$c;)V

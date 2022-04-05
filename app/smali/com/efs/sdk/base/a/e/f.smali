@@ -1,6 +1,5 @@
 .class public final Lcom/efs/sdk/base/a/e/f;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations
@@ -23,15 +22,12 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/efs/sdk/base/a/e/f;->a:I
 
-    .line 4
     invoke-static {}, Lcom/efs/sdk/base/a/d/a;->a()Lcom/efs/sdk/base/a/c/a;
 
     move-result-object v0
@@ -46,7 +42,6 @@
 .method synthetic constructor <init>(B)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/efs/sdk/base/a/e/f;-><init>()V
 
     return-void
@@ -64,15 +59,12 @@
 
     const/4 v2, 0x0
 
-    .line 4
     invoke-static {v0, v1, v2}, Lcom/efs/sdk/base/a/h/d;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     const/4 v0, 0x1
 
-    .line 5
     iput v0, p0, Lcom/efs/sdk/base/a/e/f;->a:I
 
-    .line 6
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/efs/sdk/base/a/e/f$1;
@@ -81,12 +73,10 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     monitor-exit p0
 
     return-void
@@ -104,7 +94,6 @@
 .method public final a()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/efs/sdk/base/a/e/f;->a:I
 
     const/4 v1, 0x2
@@ -115,13 +104,11 @@
 
     return v0
 
-    .line 2
     :cond_0
     iget v0, p0, Lcom/efs/sdk/base/a/e/f;->a:I
 
     if-nez v0, :cond_1
 
-    .line 3
     invoke-static {}, Lcom/efs/sdk/base/a/d/a;->a()Lcom/efs/sdk/base/a/c/a;
 
     move-result-object v0

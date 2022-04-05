@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/OptionalExpectation;
 .super Ljava/lang/Object;
-.source "Multiplatform.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public Lcom/google/common/io/LittleEndianDataOutputStream;
 .super Ljava/io/FilterOutputStream;
-.source "LittleEndianDataOutputStream.java"
 
 # interfaces
 .implements Ljava/io/DataOutput;
@@ -15,7 +14,6 @@
 .method public constructor <init>(Ljava/io/OutputStream;)V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/io/DataOutputStream;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -41,7 +39,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
@@ -57,7 +54,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
@@ -73,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     check-cast v0, Ljava/io/DataOutputStream;
@@ -91,7 +86,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     check-cast v0, Ljava/io/DataOutputStream;
@@ -112,7 +106,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     check-cast v0, Ljava/io/DataOutputStream;
@@ -130,7 +123,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/io/LittleEndianDataOutputStream;->writeShort(I)V
 
     return-void
@@ -146,7 +138,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -154,7 +145,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p1, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -177,7 +167,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1, p2}, Ljava/lang/Double;->doubleToLongBits(D)J
 
     move-result-wide p1
@@ -195,7 +184,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result p1
@@ -213,14 +201,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     and-int/lit16 v1, p1, 0xff
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 2
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     shr-int/lit8 v1, p1, 0x8
@@ -229,7 +215,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 3
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     shr-int/lit8 v1, p1, 0x10
@@ -238,7 +223,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 4
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     shr-int/lit8 p1, p1, 0x18
@@ -258,7 +242,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1, p2}, Ljava/lang/Long;->reverseBytes(J)J
 
     move-result-wide p1
@@ -267,7 +250,6 @@
 
     move-result-object p1
 
-    .line 2
     array-length p2, p1
 
     const/4 v0, 0x0
@@ -285,14 +267,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     and-int/lit16 v1, p1, 0xff
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 2
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     shr-int/lit8 p1, p1, 0x8
@@ -312,7 +292,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     check-cast v0, Ljava/io/DataOutputStream;

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;
 .super Ljava/lang/Object;
-.source "SelectDeviceActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->g(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
@@ -56,7 +52,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
@@ -71,7 +66,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->b(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;
 
@@ -83,7 +77,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
@@ -110,7 +103,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;
 
@@ -122,7 +114,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result v0
@@ -131,7 +122,6 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object v0
@@ -150,7 +140,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/ifengyu/intercom/node/e;->a(ILjava/lang/String;)V
 
-    .line 9
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;
 
@@ -160,7 +149,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->a(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;Z)Z
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result v0
@@ -171,7 +159,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
@@ -182,7 +169,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;
 

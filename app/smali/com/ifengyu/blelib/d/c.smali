@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/blelib/d/c;
 .super Ljava/lang/Object;
-.source "Commend.java"
 
 
 # instance fields
@@ -13,13 +12,10 @@
 .method public constructor <init>(ILcom/google/protobuf/Message;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/blelib/d/c;->a:I
 
-    .line 3
     iput-object p2, p0, Lcom/ifengyu/blelib/d/c;->b:Lcom/google/protobuf/Message;
 
     return-void
@@ -30,7 +26,6 @@
 .method public a()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/blelib/d/c;->a:I
 
     return v0
@@ -39,7 +34,6 @@
 .method public b()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/d/c;->b:Lcom/google/protobuf/Message;
 
     return-object v0
@@ -50,7 +44,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

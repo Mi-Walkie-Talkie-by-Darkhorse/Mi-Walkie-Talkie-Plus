@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/modules/ArchiveFileFactory;
 .super Ljava/lang/Object;
-.source "ArchiveFileFactory.java"
 
 
 # static fields
@@ -22,28 +21,24 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lorg/osmdroid/tileprovider/modules/ArchiveFileFactory;->extensionMap:Ljava/util/Map;
 
-    .line 2
     const-class v1, Lorg/osmdroid/tileprovider/modules/ZipFileArchive;
 
     const-string v2, "zip"
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xa
 
     if-lt v0, v1, :cond_0
 
-    .line 4
     sget-object v0, Lorg/osmdroid/tileprovider/modules/ArchiveFileFactory;->extensionMap:Ljava/util/Map;
 
     const-class v1, Lorg/osmdroid/tileprovider/modules/DatabaseFileArchive;
@@ -52,7 +47,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
     sget-object v0, Lorg/osmdroid/tileprovider/modules/ArchiveFileFactory;->extensionMap:Ljava/util/Map;
 
     const-class v1, Lorg/osmdroid/tileprovider/modules/MBTilesFileArchive;
@@ -61,7 +55,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     sget-object v0, Lorg/osmdroid/tileprovider/modules/ArchiveFileFactory;->extensionMap:Ljava/util/Map;
 
     const-class v1, Lorg/osmdroid/tileprovider/modules/GEMFFileArchive;
@@ -77,7 +70,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -90,21 +82,18 @@
 
     const-string v1, "OsmDroid"
 
-    .line 1
     invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, "."
 
-    .line 2
     invoke-virtual {v2, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 3
     :try_start_0
     invoke-virtual {v2, v3}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
 
@@ -123,7 +112,6 @@
     :catch_0
     nop
 
-    .line 4
     :cond_0
     :goto_0
     sget-object v3, Lorg/osmdroid/tileprovider/modules/ArchiveFileFactory;->extensionMap:Ljava/util/Map;
@@ -140,7 +128,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 5
     :try_start_1
     invoke-virtual {v2}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
@@ -148,7 +135,6 @@
 
     check-cast v2, Lorg/osmdroid/tileprovider/modules/IArchiveFile;
 
-    .line 6
     invoke-interface {v2, p0}, Lorg/osmdroid/tileprovider/modules/IArchiveFile;->init(Ljava/io/File;)V
     :try_end_1
     .catch Ljava/lang/InstantiationException; {:try_start_1 .. :try_end_1} :catch_3
@@ -160,7 +146,6 @@
     :catch_1
     move-exception v0
 
-    .line 7
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -186,7 +171,6 @@
     :catch_2
     move-exception v2
 
-    .line 8
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -210,7 +194,6 @@
     :catch_3
     move-exception v2
 
-    .line 9
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -239,7 +222,6 @@
 .method public static isFileExtensionRegistered(Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     sget-object v0, Lorg/osmdroid/tileprovider/modules/ArchiveFileFactory;->extensionMap:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -263,7 +245,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lorg/osmdroid/tileprovider/modules/ArchiveFileFactory;->extensionMap:Ljava/util/Map;
 
     invoke-interface {v0, p1, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

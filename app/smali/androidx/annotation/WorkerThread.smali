@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/WorkerThread;
 .super Ljava/lang/Object;
-.source "WorkerThread.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

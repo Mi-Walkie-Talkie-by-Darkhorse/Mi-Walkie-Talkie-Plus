@@ -1,6 +1,5 @@
 .class Landroidx/core/app/a$f$a;
 .super Ljava/lang/Object;
-.source "ActivityCompat.java"
 
 # interfaces
 .implements Landroidx/core/app/k$a;
@@ -21,7 +20,6 @@
 .method constructor <init>(Landroidx/core/app/a$f;Landroid/app/SharedElementCallback$OnSharedElementsReadyListener;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

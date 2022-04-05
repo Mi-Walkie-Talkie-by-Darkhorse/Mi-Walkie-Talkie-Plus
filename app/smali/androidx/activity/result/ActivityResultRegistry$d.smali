@@ -1,6 +1,5 @@
 .class Landroidx/activity/result/ActivityResultRegistry$d;
 .super Ljava/lang/Object;
-.source "ActivityResultRegistry.java"
 
 
 # annotations
@@ -36,13 +35,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/activity/result/ActivityResultRegistry$d;->a:Landroidx/lifecycle/Lifecycle;
 
-    .line 3
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -57,7 +53,6 @@
 .method a()V
     .locals 3
 
-    .line 3
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$d;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -77,14 +72,12 @@
 
     check-cast v1, Landroidx/lifecycle/i;
 
-    .line 4
     iget-object v2, p0, Landroidx/activity/result/ActivityResultRegistry$d;->a:Landroidx/lifecycle/Lifecycle;
 
     invoke-virtual {v2, v1}, Landroidx/lifecycle/Lifecycle;->b(Landroidx/lifecycle/j;)V
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$d;->b:Ljava/util/ArrayList;
 
@@ -100,12 +93,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$d;->a:Landroidx/lifecycle/Lifecycle;
 
     invoke-virtual {v0, p1}, Landroidx/lifecycle/Lifecycle;->a(Landroidx/lifecycle/j;)V
 
-    .line 2
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$d;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z

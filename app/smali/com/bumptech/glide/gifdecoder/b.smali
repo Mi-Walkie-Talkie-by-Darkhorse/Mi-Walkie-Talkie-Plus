@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/gifdecoder/b;
 .super Ljava/lang/Object;
-.source "GifHeader.java"
 
 
 # instance fields
@@ -49,23 +48,18 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/bumptech/glide/gifdecoder/b;->a:[I
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/bumptech/glide/gifdecoder/b;->b:I
 
-    .line 4
     iput v0, p0, Lcom/bumptech/glide/gifdecoder/b;->c:I
 
-    .line 5
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -80,7 +74,6 @@
 .method public a()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/bumptech/glide/gifdecoder/b;->g:I
 
     return v0
@@ -89,7 +82,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/bumptech/glide/gifdecoder/b;->c:I
 
     return v0
@@ -98,7 +90,6 @@
 .method public c()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/bumptech/glide/gifdecoder/b;->b:I
 
     return v0
@@ -107,7 +98,6 @@
 .method public d()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/bumptech/glide/gifdecoder/b;->f:I
 
     return v0

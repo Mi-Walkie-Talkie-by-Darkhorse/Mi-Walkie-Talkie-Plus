@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/k/f/e;
 .super Lcom/bumptech/glide/load/k/d/b;
-.source "GifDrawableResource.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/o;
@@ -21,7 +20,6 @@
 .method public constructor <init>(Lcom/bumptech/glide/load/k/f/c;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/bumptech/glide/load/k/d/b;-><init>(Landroid/graphics/drawable/Drawable;)V
 
     return-void
@@ -32,14 +30,12 @@
 .method public a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/k/d/b;->a:Landroid/graphics/drawable/Drawable;
 
     check-cast v0, Lcom/bumptech/glide/load/k/f/c;
 
     invoke-virtual {v0}, Lcom/bumptech/glide/load/k/f/c;->stop()V
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/k/d/b;->a:Landroid/graphics/drawable/Drawable;
 
     check-cast v0, Lcom/bumptech/glide/load/k/f/c;
@@ -52,7 +48,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/k/d/b;->a:Landroid/graphics/drawable/Drawable;
 
     check-cast v0, Lcom/bumptech/glide/load/k/f/c;
@@ -78,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Lcom/bumptech/glide/load/k/f/c;
 
     return-object v0
@@ -87,7 +81,6 @@
 .method public initialize()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/k/d/b;->a:Landroid/graphics/drawable/Drawable;
 
     check-cast v0, Lcom/bumptech/glide/load/k/f/c;

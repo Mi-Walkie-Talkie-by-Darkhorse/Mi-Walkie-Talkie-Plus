@@ -1,6 +1,5 @@
 .class public Lokio/ForwardingTimeout;
 .super Lokio/Timeout;
-.source "ForwardingTimeout.java"
 
 
 # instance fields
@@ -11,17 +10,14 @@
 .method public constructor <init>(Lokio/Timeout;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/Timeout;-><init>()V
 
     if-eqz p1, :cond_0
 
-    .line 2
     iput-object p1, p0, Lokio/ForwardingTimeout;->delegate:Lokio/Timeout;
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -37,7 +33,6 @@
 .method public clearDeadline()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingTimeout;->delegate:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->clearDeadline()Lokio/Timeout;
@@ -50,7 +45,6 @@
 .method public clearTimeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingTimeout;->delegate:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->clearTimeout()Lokio/Timeout;
@@ -63,7 +57,6 @@
 .method public deadlineNanoTime()J
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingTimeout;->delegate:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->deadlineNanoTime()J
@@ -76,7 +69,6 @@
 .method public deadlineNanoTime(J)Lokio/Timeout;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lokio/ForwardingTimeout;->delegate:Lokio/Timeout;
 
     invoke-virtual {v0, p1, p2}, Lokio/Timeout;->deadlineNanoTime(J)Lokio/Timeout;
@@ -89,7 +81,6 @@
 .method public final delegate()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingTimeout;->delegate:Lokio/Timeout;
 
     return-object v0
@@ -98,7 +89,6 @@
 .method public hasDeadline()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingTimeout;->delegate:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->hasDeadline()Z
@@ -113,12 +103,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iput-object p1, p0, Lokio/ForwardingTimeout;->delegate:Lokio/Timeout;
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -137,7 +125,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingTimeout;->delegate:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->throwIfReached()V
@@ -148,7 +135,6 @@
 .method public timeout(JLjava/util/concurrent/TimeUnit;)Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingTimeout;->delegate:Lokio/Timeout;
 
     invoke-virtual {v0, p1, p2, p3}, Lokio/Timeout;->timeout(JLjava/util/concurrent/TimeUnit;)Lokio/Timeout;
@@ -161,7 +147,6 @@
 .method public timeoutNanos()J
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingTimeout;->delegate:Lokio/Timeout;
 
     invoke-virtual {v0}, Lokio/Timeout;->timeoutNanos()J

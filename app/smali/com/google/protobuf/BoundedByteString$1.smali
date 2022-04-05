@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/protobuf/BoundedByteString$1;
 .super Ljava/lang/Object;
-.source "BoundedByteString.java"
 
 
 # annotations

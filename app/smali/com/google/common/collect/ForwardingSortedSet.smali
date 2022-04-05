@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/ForwardingSortedSet;
 .super Lcom/google/common/collect/ForwardingSet;
-.source "ForwardingSortedSet.java"
 
 # interfaces
 .implements Ljava/util/SortedSet;
@@ -27,7 +26,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingSet;-><init>()V
 
     return-void
@@ -36,14 +34,12 @@
 .method private unsafeCompare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSet;->comparator()Ljava/util/Comparator;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 2
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-interface {p1, p2}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
@@ -73,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -88,7 +83,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -99,7 +93,6 @@
 .method protected bridge synthetic delegate()Ljava/util/Collection;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -110,7 +103,6 @@
 .method protected bridge synthetic delegate()Ljava/util/Set;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -136,7 +128,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -158,7 +149,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -178,7 +168,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -201,7 +190,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-interface {p0, p1}, Ljava/util/SortedSet;->tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
 
@@ -211,7 +199,6 @@
 
     move-result-object v1
 
-    .line 2
     invoke-direct {p0, v1, p1}, Lcom/google/common/collect/ForwardingSortedSet;->unsafeCompare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p1
@@ -240,7 +227,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-interface {p0, p1}, Ljava/util/SortedSet;->tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
 
@@ -250,26 +236,22 @@
 
     move-result-object v1
 
-    .line 2
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 3
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 4
     invoke-direct {p0, v2, p1}, Lcom/google/common/collect/ForwardingSortedSet;->unsafeCompare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 5
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
     :try_end_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
@@ -297,7 +279,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ForwardingSortedSet;->tailSet(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -319,7 +300,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -341,7 +321,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSet;->delegate()Ljava/util/SortedSet;
 
     move-result-object v0

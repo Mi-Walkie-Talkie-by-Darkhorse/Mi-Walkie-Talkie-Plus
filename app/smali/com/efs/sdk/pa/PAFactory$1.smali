@@ -1,6 +1,5 @@
 .class final synthetic Lcom/efs/sdk/pa/PAFactory$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations

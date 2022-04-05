@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/widget/a;
 .super Landroidx/recyclerview/widget/RecyclerView$l;
-.source "SpaceItemDecoration.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$l;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/lite/widget/a;->a:I
 
     return-void
@@ -37,7 +34,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p3, p2}, Landroidx/recyclerview/widget/RecyclerView;->getChildLayoutPosition(Landroid/view/View;)I
 
     move-result p2
@@ -46,7 +42,6 @@
 
     if-eq p2, p3, :cond_0
 
-    .line 2
     iget p2, p0, Lcom/ifengyu/intercom/lite/widget/a;->a:I
 
     iput p2, p1, Landroid/graphics/Rect;->top:I

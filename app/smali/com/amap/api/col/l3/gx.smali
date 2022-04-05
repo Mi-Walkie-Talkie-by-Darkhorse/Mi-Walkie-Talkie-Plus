@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/gx;
 .super Ljava/lang/Object;
-.source "MccUtil.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     sget-object v1, Lcom/amap/api/col/l3/gx;->a:Ljava/lang/String;
 
@@ -33,14 +31,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 2
     invoke-static {p0}, Lcom/amap/api/col/l3/gb;->o(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p0
 
     sput-object p0, Lcom/amap/api/col/l3/gx;->a:Ljava/lang/String;
 
-    .line 3
     :cond_1
     sget-object p0, Lcom/amap/api/col/l3/gx;->a:Ljava/lang/String;
 
@@ -60,7 +56,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_2
     new-instance p0, Ljava/lang/StringBuilder;
 

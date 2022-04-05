@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/callback/JniIndoorCallback;
 .super Ljava/lang/Object;
-.source "JniIndoorCallback.java"
 
 
 # virtual methods

@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/statistic/h;
 .super Ljava/lang/Object;
-.source "WBAgentExecutor.java"
 
 
 # static fields
@@ -11,12 +10,10 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
-    .line 2
     sput-object v0, Lcom/sina/weibo/sdk/statistic/h;->a:Ljava/util/concurrent/ExecutorService;
 
     return-void
@@ -29,7 +26,6 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/sina/weibo/sdk/statistic/h;->a:Ljava/util/concurrent/ExecutorService;
 
@@ -39,14 +35,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 2
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v1
 
     sput-object v1, Lcom/sina/weibo/sdk/statistic/h;->a:Ljava/util/concurrent/ExecutorService;
 
-    .line 3
     :cond_0
     sget-object v1, Lcom/sina/weibo/sdk/statistic/h;->a:Ljava/util/concurrent/ExecutorService;
 
@@ -54,7 +48,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     monitor-exit v0
 
     return-void

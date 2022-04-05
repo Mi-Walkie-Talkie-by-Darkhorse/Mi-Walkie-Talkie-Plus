@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableReplay$DefaultUnboundedFactory;
 .super Ljava/lang/Object;
-.source "FlowableReplay.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public call()Ljava/lang/Object;
     .locals 2
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableReplay$UnboundedReplayBuffer;
 
     const/16 v1, 0x10

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/MainActivity$c;
 .super Ljava/lang/Object;
-.source "MainActivity.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/MainActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/MainActivity$c;->a:Lcom/ifengyu/intercom/ui/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,15 +36,12 @@
 .method public a(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
     const/4 p1, 0x0
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/intercom/i/d0;->c(Z)V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1

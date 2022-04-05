@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/util/k/a;
 .super Ljava/lang/Object;
-.source "FactoryPools.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/util/k/a$a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/util/k/a$a;-><init>()V
@@ -56,7 +54,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Landroidx/core/d/g;
 
     invoke-direct {v0, p0}, Landroidx/core/d/g;-><init>(I)V
@@ -97,7 +94,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Landroidx/core/d/f;
 
     invoke-direct {v0, p0}, Landroidx/core/d/f;-><init>(I)V
@@ -136,7 +132,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {}, Lcom/bumptech/glide/util/k/a;->a()Lcom/bumptech/glide/util/k/a$g;
 
     move-result-object v0
@@ -181,7 +176,6 @@
         }
     .end annotation
 
-    .line 4
     new-instance v0, Lcom/bumptech/glide/util/k/a$e;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/bumptech/glide/util/k/a$e;-><init>(Landroidx/core/d/e;Lcom/bumptech/glide/util/k/a$d;Lcom/bumptech/glide/util/k/a$g;)V
@@ -204,7 +198,6 @@
         }
     .end annotation
 
-    .line 5
     sget-object v0, Lcom/bumptech/glide/util/k/a;->a:Lcom/bumptech/glide/util/k/a$g;
 
     return-object v0
@@ -228,7 +221,6 @@
 
     const/16 v0, 0x14
 
-    .line 2
     invoke-static {v0}, Lcom/bumptech/glide/util/k/a;->a(I)Landroidx/core/d/e;
 
     move-result-object v0
@@ -257,7 +249,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Landroidx/core/d/g;
 
     invoke-direct {v0, p0}, Landroidx/core/d/g;-><init>(I)V

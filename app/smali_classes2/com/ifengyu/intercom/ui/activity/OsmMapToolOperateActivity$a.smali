@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;
 .super Landroid/view/GestureDetector$SimpleOnGestureListener;
-.source "OsmMapToolOperateActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-direct {p0}, Landroid/view/GestureDetector$SimpleOnGestureListener;-><init>()V
@@ -37,7 +35,6 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     iget-object v1, v1, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->mapView:Lorg/osmdroid/views/MapView;
@@ -46,7 +43,6 @@
 
     move-result-object v1
 
-    .line 2
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->a(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Z
@@ -69,7 +65,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 3
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v2
@@ -86,7 +81,6 @@
 
     move-result-object v1
 
-    .line 4
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->b(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Ljava/util/ArrayList;
@@ -107,7 +101,6 @@
 
     invoke-virtual {v2, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 5
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->l(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Lorg/osmdroid/views/overlay/Polyline;
@@ -122,7 +115,6 @@
 
     invoke-virtual {v2, v10}, Lorg/osmdroid/views/overlay/Polyline;->setPoints(Ljava/util/List;)V
 
-    .line 6
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->b(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Ljava/util/ArrayList;
@@ -135,12 +127,10 @@
 
     if-ne v2, v8, :cond_0
 
-    .line 7
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2, v9}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->a(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;I)I
 
-    .line 8
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->s(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -151,7 +141,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 9
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->s(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -168,12 +157,10 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 10
     new-instance v2, Lorg/osmdroid/views/overlay/OverlayItem;
 
     invoke-direct {v2, v7, v7, v1}, Lorg/osmdroid/views/overlay/OverlayItem;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 11
     iget-object v3, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-virtual {v3}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -186,7 +173,6 @@
 
     invoke-virtual {v2, v3}, Lorg/osmdroid/views/overlay/OverlayItem;->setMarker(Landroid/graphics/drawable/Drawable;)V
 
-    .line 12
     sget-object v3, Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;->BOTTOM_CENTER:Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;
 
     invoke-virtual {v2, v3}, Lorg/osmdroid/views/overlay/OverlayItem;->setMarkerHotspot(Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;)V
@@ -196,7 +182,6 @@
     :cond_0
     new-array v2, v8, [F
 
-    .line 13
     iget-object v5, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v5}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->t(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Lorg/osmdroid/api/IGeoPoint;
@@ -229,10 +214,8 @@
 
     invoke-static/range {v10 .. v18}, Landroid/location/Location;->distanceBetween(DDDD[F)V
 
-    .line 14
     aget v2, v2, v9
 
-    .line 15
     iget-object v5, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v5}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->r(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)I
@@ -247,7 +230,6 @@
 
     invoke-static {v5, v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->a(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;I)I
 
-    .line 16
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->s(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -258,7 +240,6 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 17
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->s(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -273,7 +254,6 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 18
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->r(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)I
@@ -282,7 +262,6 @@
 
     if-ge v2, v6, :cond_1
 
-    .line 19
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->s(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -311,7 +290,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
-    .line 20
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->s(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -328,7 +306,6 @@
 
     goto :goto_0
 
-    .line 21
     :cond_1
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -356,7 +333,6 @@
 
     move-result-object v2
 
-    .line 22
     iget-object v3, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v3}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->s(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -365,7 +341,6 @@
 
     invoke-virtual {v3, v2}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
-    .line 23
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->s(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -380,13 +355,11 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
-    .line 24
     :goto_0
     new-instance v2, Lorg/osmdroid/views/overlay/OverlayItem;
 
     invoke-direct {v2, v7, v7, v1}, Lorg/osmdroid/views/overlay/OverlayItem;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 25
     iget-object v3, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-virtual {v3}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -401,12 +374,10 @@
 
     invoke-virtual {v2, v3}, Lorg/osmdroid/views/overlay/OverlayItem;->setMarker(Landroid/graphics/drawable/Drawable;)V
 
-    .line 26
     sget-object v3, Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;->CENTER:Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;
 
     invoke-virtual {v2, v3}, Lorg/osmdroid/views/overlay/OverlayItem;->setMarkerHotspot(Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;)V
 
-    .line 27
     :goto_1
     iget-object v3, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
@@ -426,12 +397,10 @@
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 28
     iget-object v3, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v3, v1}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->b(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;Lorg/osmdroid/api/IGeoPoint;)Lorg/osmdroid/api/IGeoPoint;
 
-    .line 29
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->c(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Lcom/ifengyu/intercom/ui/map/f/a/b;
@@ -440,7 +409,6 @@
 
     invoke-virtual {v1, v9, v2}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->addItem(ILorg/osmdroid/views/overlay/OverlayItem;)V
 
-    .line 30
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     iget-object v1, v1, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->mapView:Lorg/osmdroid/views/MapView;
@@ -449,7 +417,6 @@
 
     goto/16 :goto_2
 
-    .line 31
     :cond_2
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
@@ -459,7 +426,6 @@
 
     if-eqz v2, :cond_3
 
-    .line 32
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v2
@@ -476,7 +442,6 @@
 
     move-result-object v1
 
-    .line 33
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     const v3, 0x7f11020d
@@ -489,14 +454,12 @@
 
     invoke-virtual {v2, v9, v8, v3, v4}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(ZZLjava/lang/String;I)V
 
-    .line 34
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2, v1}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->a(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;Lorg/osmdroid/api/IGeoPoint;)V
 
     goto/16 :goto_2
 
-    .line 35
     :cond_3
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
@@ -506,7 +469,6 @@
 
     if-eqz v2, :cond_5
 
-    .line 36
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v2
@@ -523,12 +485,10 @@
 
     move-result-object v1
 
-    .line 37
     new-instance v2, Lorg/osmdroid/views/overlay/OverlayItem;
 
     invoke-direct {v2, v7, v7, v1}, Lorg/osmdroid/views/overlay/OverlayItem;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 38
     new-instance v7, Landroid/graphics/drawable/BitmapDrawable;
 
     iget-object v10, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
@@ -551,7 +511,6 @@
 
     invoke-virtual {v2, v7}, Lorg/osmdroid/views/overlay/OverlayItem;->setMarker(Landroid/graphics/drawable/Drawable;)V
 
-    .line 39
     iget-object v5, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v5}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->f(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Lorg/osmdroid/views/overlay/ItemizedOverlayWithFocus;
@@ -560,7 +519,6 @@
 
     invoke-virtual {v5}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->removeAllItems()V
 
-    .line 40
     iget-object v5, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v5}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->f(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Lorg/osmdroid/views/overlay/ItemizedOverlayWithFocus;
@@ -569,14 +527,12 @@
 
     invoke-virtual {v5, v2}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->addItem(Lorg/osmdroid/views/overlay/OverlayItem;)Z
 
-    .line 41
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     iget-object v2, v2, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->mapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v2}, Landroid/view/ViewGroup;->invalidate()V
 
-    .line 42
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->g(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -593,7 +549,6 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 43
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->h(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -634,7 +589,6 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 44
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->i(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -673,14 +627,12 @@
 
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 45
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->r()[D
 
     move-result-object v2
 
     new-array v5, v8, [F
 
-    .line 46
     aget-wide v10, v2, v9
 
     aget-wide v12, v2, v8
@@ -697,14 +649,12 @@
 
     invoke-static/range {v10 .. v18}, Landroid/location/Location;->distanceBetween(DDDD[F)V
 
-    .line 47
     aget v1, v5, v9
 
     float-to-int v1, v1
 
     if-ge v1, v6, :cond_4
 
-    .line 48
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->j(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -736,7 +686,6 @@
 
     div-float/2addr v1, v3
 
-    .line 49
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v1
@@ -747,7 +696,6 @@
 
     move-result-object v1
 
-    .line 50
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->j(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;

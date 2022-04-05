@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/dialog/s;
 .super Lcom/ifengyu/intercom/ui/widget/dialog/d;
-.source "MapMarkerClickDialog.java"
 
 
 # static fields
@@ -31,7 +30,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/ui/widget/dialog/s;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -46,13 +44,10 @@
 .method public constructor <init>(Landroid/app/Activity;Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;-><init>(Landroid/content/Context;)V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->b:Landroid/app/Activity;
 
-    .line 3
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->a:Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     return-void
@@ -61,7 +56,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/widget/dialog/s;)Landroid/widget/TextView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->g:Landroid/widget/TextView;
 
     return-object p0
@@ -70,7 +64,6 @@
 .method static synthetic b()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->j:Ljava/lang/String;
 
     return-object v0
@@ -89,22 +82,18 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 13
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c00d0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;->setContentView(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->b:Landroid/app/Activity;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;->a(Landroid/content/Context;)V
 
     const p1, 0x7f09019a
 
-    .line 4
     invoke-virtual {p0, p1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -115,7 +104,6 @@
 
     const p1, 0x7f090198
 
-    .line 5
     invoke-virtual {p0, p1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -126,7 +114,6 @@
 
     const p1, 0x7f09019f
 
-    .line 6
     invoke-virtual {p0, p1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -137,7 +124,6 @@
 
     const p1, 0x7f09019e
 
-    .line 7
     invoke-virtual {p0, p1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -148,7 +134,6 @@
 
     const p1, 0x7f09019c
 
-    .line 8
     invoke-virtual {p0, p1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -159,7 +144,6 @@
 
     const p1, 0x7f090199
 
-    .line 9
     invoke-virtual {p0, p1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -170,7 +154,6 @@
 
     const p1, 0x7f090197
 
-    .line 10
     invoke-virtual {p0, p1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -179,28 +162,24 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->g:Landroid/widget/TextView;
 
-    .line 11
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->h:Landroid/widget/TextView;
 
     sget-object v0, Lcom/ifengyu/intercom/i/p;->b:Landroid/graphics/Typeface;
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->f:Landroid/widget/TextView;
 
     sget-object v0, Lcom/ifengyu/intercom/i/p;->b:Landroid/graphics/Typeface;
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->g:Landroid/widget/TextView;
 
     sget-object v0, Lcom/ifengyu/intercom/i/p;->b:Landroid/graphics/Typeface;
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->d:Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->a:Lcom/ifengyu/intercom/bean/BeanUserLocation;
@@ -211,7 +190,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->a:Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getTime()I
@@ -224,12 +202,10 @@
 
     mul-long v0, v0, v2
 
-    .line 16
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/j0;->b(J)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->e:Landroid/widget/TextView;
 
     const/4 v1, 0x1
@@ -248,26 +224,22 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 18
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->a:Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getLongitudeDouble()D
 
     move-result-wide v4
 
-    .line 19
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->a:Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getLatitudeDouble()D
 
     move-result-wide v6
 
-    .line 20
     new-instance p1, Ljava/lang/StringBuffer;
 
     invoke-direct {p1}, Ljava/lang/StringBuffer;-><init>()V
 
-    .line 21
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->b:Landroid/app/Activity;
 
     const v2, 0x7f1101cc
@@ -284,7 +256,6 @@
 
     if-ltz v0, :cond_0
 
-    .line 22
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -303,7 +274,6 @@
 
     goto :goto_0
 
-    .line 23
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -328,14 +298,12 @@
     :goto_0
     const-string v0, " , "
 
-    .line 24
     invoke-virtual {p1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     cmpl-double v0, v6, v8
 
     if-ltz v0, :cond_1
 
-    .line 25
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -354,7 +322,6 @@
 
     goto :goto_1
 
-    .line 26
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -376,7 +343,6 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 27
     :goto_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->i:Landroid/widget/TextView;
 
@@ -388,12 +354,10 @@
 
     new-array p1, v1, [F
 
-    .line 28
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->r()[D
 
     move-result-object v0
 
-    .line 29
     aget-wide v4, v0, v3
 
     aget-wide v6, v0, v1
@@ -414,15 +378,12 @@
 
     invoke-static/range {v4 .. v12}, Landroid/location/Location;->distanceBetween(DDDD[F)V
 
-    .line 30
     aget p1, p1, v3
 
-    .line 31
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
     invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
 
-    .line 32
     new-instance v2, Landroid/text/style/AbsoluteSizeSpan;
 
     const/high16 v4, 0x41200000    # 10.0f
@@ -433,7 +394,6 @@
 
     invoke-direct {v2, v4}, Landroid/text/style/AbsoluteSizeSpan;-><init>(I)V
 
-    .line 33
     new-instance v4, Ljava/text/DecimalFormat;
 
     const-string v5, "#.#"
@@ -454,7 +414,6 @@
 
     if-gez v5, :cond_2
 
-    .line 34
     invoke-static {p1}, Ljava/lang/Math;->round(F)I
 
     move-result p1
@@ -465,17 +424,14 @@
 
     invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 35
     invoke-virtual {v0, v6}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 36
     invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result p1
 
     add-int/lit8 v3, p1, -0x1
 
-    .line 37
     invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result p1
@@ -487,7 +443,6 @@
 
     float-to-double v7, p1
 
-    .line 38
     invoke-virtual {v4, v7, v8}, Ljava/text/DecimalFormat;->format(D)Ljava/lang/String;
 
     move-result-object p1
@@ -500,17 +455,14 @@
 
     const-string p1, " km"
 
-    .line 39
     invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 40
     invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result p1
 
     add-int/lit8 v3, p1, -0x2
 
-    .line 41
     invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result p1
@@ -523,18 +475,14 @@
     :goto_2
     const/16 v4, 0x21
 
-    .line 42
     invoke-virtual {v0, v2, v3, p1, v4}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 43
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->h:Landroid/widget/TextView;
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 44
     invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->clear()V
 
-    .line 45
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->a:Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getFreq()I
@@ -549,10 +497,8 @@
 
     const-string p1, " MHz"
 
-    .line 46
     invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 47
     invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result p1
@@ -565,15 +511,12 @@
 
     invoke-virtual {v0, v2, p1, v3, v4}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 48
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->f:Landroid/widget/TextView;
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 49
     invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->clear()V
 
-    .line 50
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->a:Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getAltitude()I
@@ -586,10 +529,8 @@
 
     invoke-virtual {v0, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 51
     invoke-virtual {v0, v6}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 52
     invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result p1
@@ -602,12 +543,10 @@
 
     invoke-virtual {v0, v2, p1, v1, v4}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 53
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->g:Landroid/widget/TextView;
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 54
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->a:Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getAltitude()I
@@ -616,7 +555,6 @@
 
     if-nez p1, :cond_4
 
-    .line 55
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->a:Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getLatitudeDouble()D
@@ -635,7 +573,6 @@
 
     invoke-static {v3, v4, v5, v6, p1}, Lcom/ifengyu/intercom/g/a;->a(DDLcom/ifengyu/intercom/g/d/b;)V
 
-    .line 56
     :cond_4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->a:Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
@@ -671,7 +608,6 @@
 
     if-nez p1, :cond_5
 
-    .line 57
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object p1
@@ -688,7 +624,6 @@
 
     goto :goto_3
 
-    .line 58
     :cond_5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s;->c:Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;
 

@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/a$b;
 .super Landroid/os/HandlerThread;
-.source "GeoFenceManager.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -29,7 +27,6 @@
 .method public final run()V
     .locals 0
 
-    .line 1
     :try_start_0
     invoke-super {p0}, Landroid/os/HandlerThread;->run()V
     :try_end_0

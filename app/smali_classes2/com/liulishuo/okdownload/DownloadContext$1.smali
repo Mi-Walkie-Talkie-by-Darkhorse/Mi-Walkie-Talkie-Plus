@@ -1,6 +1,5 @@
 .class Lcom/liulishuo/okdownload/DownloadContext$1;
 .super Ljava/lang/Object;
-.source "DownloadContext.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/liulishuo/okdownload/DownloadContext;Ljava/util/List;Lcom/liulishuo/okdownload/DownloadListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$1;->this$0:Lcom/liulishuo/okdownload/DownloadContext;
 
     iput-object p2, p0, Lcom/liulishuo/okdownload/DownloadContext$1;->val$scheduleTaskList:Ljava/util/List;
@@ -46,7 +44,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$1;->val$scheduleTaskList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -66,7 +63,6 @@
 
     check-cast v1, Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 2
     iget-object v2, p0, Lcom/liulishuo/okdownload/DownloadContext$1;->this$0:Lcom/liulishuo/okdownload/DownloadContext;
 
     invoke-virtual {v2}, Lcom/liulishuo/okdownload/DownloadContext;->isStarted()Z
@@ -75,7 +71,6 @@
 
     if-nez v2, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$1;->this$0:Lcom/liulishuo/okdownload/DownloadContext;
 
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/DownloadTask;->isAutoCallbackToUIThread()Z
@@ -86,7 +81,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_0
     iget-object v2, p0, Lcom/liulishuo/okdownload/DownloadContext$1;->val$targetListener:Lcom/liulishuo/okdownload/DownloadListener;
 

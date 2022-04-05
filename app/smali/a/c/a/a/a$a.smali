@@ -1,6 +1,5 @@
 .class La/c/a/a/a$a;
 .super Ljava/lang/Object;
-.source "ArcCurveFit.java"
 
 
 # annotations
@@ -64,7 +63,6 @@
 
     new-array v0, v0, [D
 
-    .line 1
     sput-object v0, La/c/a/a/a$a;->s:[D
 
     return-void
@@ -89,12 +87,10 @@
 
     move-wide/from16 v12, p12
 
-    .line 1
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v14, 0x0
 
-    .line 2
     iput-boolean v14, v9, La/c/a/a/a$a;->r:Z
 
     const/4 v15, 0x1
@@ -103,14 +99,11 @@
 
     const/4 v14, 0x1
 
-    .line 3
     :cond_0
     iput-boolean v14, v9, La/c/a/a/a$a;->q:Z
 
-    .line 4
     iput-wide v1, v9, La/c/a/a/a$a;->c:D
 
-    .line 5
     iput-wide v3, v9, La/c/a/a/a$a;->d:D
 
     const-wide/high16 v16, 0x3ff0000000000000L    # 1.0
@@ -119,14 +112,12 @@
 
     div-double v1, v16, v1
 
-    .line 6
     iput-wide v1, v9, La/c/a/a/a$a;->i:D
 
     const/4 v1, 0x3
 
     if-ne v1, v0, :cond_1
 
-    .line 7
     iput-boolean v15, v9, La/c/a/a/a$a;->r:Z
 
     :cond_1
@@ -134,7 +125,6 @@
 
     sub-double v2, v12, v7
 
-    .line 8
     iget-boolean v4, v9, La/c/a/a/a$a;->r:Z
 
     if-nez v4, :cond_7
@@ -164,10 +154,8 @@
 
     new-array v4, v4, [D
 
-    .line 9
     iput-object v4, v9, La/c/a/a/a$a;->a:[D
 
-    .line 10
     iget-boolean v4, v9, La/c/a/a/a$a;->q:Z
 
     if-eqz v4, :cond_3
@@ -186,7 +174,6 @@
 
     iput-wide v0, v9, La/c/a/a/a$a;->j:D
 
-    .line 11
     iget-boolean v0, v9, La/c/a/a/a$a;->q:Z
 
     if-eqz v0, :cond_4
@@ -205,7 +192,6 @@
 
     iput-wide v2, v9, La/c/a/a/a$a;->k:D
 
-    .line 12
     iget-boolean v0, v9, La/c/a/a/a$a;->q:Z
 
     if-eqz v0, :cond_5
@@ -220,7 +206,6 @@
     :goto_2
     iput-wide v0, v9, La/c/a/a/a$a;->l:D
 
-    .line 13
     iget-boolean v0, v9, La/c/a/a/a$a;->q:Z
 
     if-eqz v0, :cond_6
@@ -245,10 +230,8 @@
 
     move-wide/from16 v7, p12
 
-    .line 14
     invoke-direct/range {v0 .. v8}, La/c/a/a/a$a;->a(DDDD)V
 
-    .line 15
     iget-wide v0, v9, La/c/a/a/a$a;->b:D
 
     iget-wide v2, v9, La/c/a/a/a$a;->i:D
@@ -263,36 +246,28 @@
     :goto_4
     const/4 v4, 0x1
 
-    .line 16
     iput-boolean v4, v9, La/c/a/a/a$a;->r:Z
 
-    .line 17
     iput-wide v5, v9, La/c/a/a/a$a;->e:D
 
-    .line 18
     iput-wide v10, v9, La/c/a/a/a$a;->f:D
 
-    .line 19
     iput-wide v7, v9, La/c/a/a/a$a;->g:D
 
-    .line 20
     iput-wide v12, v9, La/c/a/a/a$a;->h:D
 
-    .line 21
     invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->hypot(DD)D
 
     move-result-wide v4
 
     iput-wide v4, v9, La/c/a/a/a$a;->b:D
 
-    .line 22
     iget-wide v6, v9, La/c/a/a/a$a;->i:D
 
     mul-double v4, v4, v6
 
     iput-wide v4, v9, La/c/a/a/a$a;->n:D
 
-    .line 23
     iget-wide v4, v9, La/c/a/a/a$a;->d:D
 
     iget-wide v6, v9, La/c/a/a/a$a;->c:D
@@ -307,7 +282,6 @@
 
     div-double/2addr v2, v4
 
-    .line 24
     iput-wide v2, v9, La/c/a/a/a$a;->m:D
 
     return-void
@@ -330,7 +304,6 @@
 
     const-wide/16 v13, 0x0
 
-    .line 6
     :goto_0
     sget-object v15, La/c/a/a/a$a;->s:[D
 
@@ -344,7 +317,6 @@
 
     mul-double v6, v6, v16
 
-    .line 7
     array-length v5, v15
 
     add-int/lit8 v5, v5, -0x1
@@ -359,12 +331,10 @@
 
     move-result-wide v5
 
-    .line 8
     invoke-static {v5, v6}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v9
 
-    .line 9
     invoke-static {v5, v6}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v5
@@ -379,14 +349,12 @@
 
     sub-double v13, v5, v13
 
-    .line 10
     invoke-static {v11, v12, v13, v14}, Ljava/lang/Math;->hypot(DD)D
 
     move-result-wide v11
 
     add-double v11, p4, v11
 
-    .line 11
     sget-object v7, La/c/a/a/a$a;->s:[D
 
     aput-wide v11, v7, v8
@@ -412,12 +380,10 @@
     :cond_1
     move-wide v11, v9
 
-    .line 12
     iput-wide v11, v0, La/c/a/a/a$a;->b:D
 
     const/4 v1, 0x0
 
-    .line 13
     :goto_2
     sget-object v2, La/c/a/a/a$a;->s:[D
 
@@ -425,7 +391,6 @@
 
     if-ge v1, v3, :cond_2
 
-    .line 14
     aget-wide v3, v2, v1
 
     div-double/2addr v3, v11
@@ -439,7 +404,6 @@
     :cond_2
     const/4 v5, 0x0
 
-    .line 15
     :goto_3
     iget-object v1, v0, La/c/a/a/a$a;->a:[D
 
@@ -449,7 +413,6 @@
 
     int-to-double v2, v5
 
-    .line 16
     array-length v1, v1
 
     add-int/lit8 v1, v1, -0x1
@@ -458,7 +421,6 @@
 
     div-double/2addr v2, v6
 
-    .line 17
     sget-object v1, La/c/a/a/a$a;->s:[D
 
     invoke-static {v1, v2, v3}, Ljava/util/Arrays;->binarySearch([DD)I
@@ -467,7 +429,6 @@
 
     if-ltz v1, :cond_3
 
-    .line 18
     iget-object v2, v0, La/c/a/a/a$a;->a:[D
 
     sget-object v3, La/c/a/a/a$a;->s:[D
@@ -491,7 +452,6 @@
 
     if-ne v1, v4, :cond_4
 
-    .line 19
     iget-object v1, v0, La/c/a/a/a$a;->a:[D
 
     const-wide/16 v6, 0x0
@@ -511,7 +471,6 @@
 
     int-to-double v8, v4
 
-    .line 20
     sget-object v10, La/c/a/a/a$a;->s:[D
 
     aget-wide v11, v10, v4
@@ -536,7 +495,6 @@
 
     div-double/2addr v8, v1
 
-    .line 21
     iget-object v1, v0, La/c/a/a/a$a;->a:[D
 
     aput-wide v8, v1, v5
@@ -555,14 +513,12 @@
 .method a()D
     .locals 6
 
-    .line 1
     iget-wide v0, p0, La/c/a/a/a$a;->j:D
 
     iget-wide v2, p0, La/c/a/a/a$a;->p:D
 
     mul-double v0, v0, v2
 
-    .line 2
     iget-wide v2, p0, La/c/a/a/a$a;->k:D
 
     neg-double v2, v2
@@ -571,7 +527,6 @@
 
     mul-double v2, v2, v4
 
-    .line 3
     iget-wide v4, p0, La/c/a/a/a$a;->n:D
 
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->hypot(DD)D
@@ -580,7 +535,6 @@
 
     div-double/2addr v4, v2
 
-    .line 4
     iget-boolean v2, p0, La/c/a/a/a$a;->q:Z
 
     if-eqz v2, :cond_0
@@ -596,7 +550,6 @@
 .method public a(D)D
     .locals 0
 
-    .line 5
     iget-wide p1, p0, La/c/a/a/a$a;->l:D
 
     return-wide p1
@@ -605,14 +558,12 @@
 .method b()D
     .locals 6
 
-    .line 1
     iget-wide v0, p0, La/c/a/a/a$a;->j:D
 
     iget-wide v2, p0, La/c/a/a/a$a;->p:D
 
     mul-double v0, v0, v2
 
-    .line 2
     iget-wide v2, p0, La/c/a/a/a$a;->k:D
 
     neg-double v2, v2
@@ -621,7 +572,6 @@
 
     mul-double v2, v2, v4
 
-    .line 3
     iget-wide v4, p0, La/c/a/a/a$a;->n:D
 
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->hypot(DD)D
@@ -630,7 +580,6 @@
 
     div-double/2addr v4, v0
 
-    .line 4
     iget-boolean v0, p0, La/c/a/a/a$a;->q:Z
 
     if-eqz v0, :cond_0
@@ -651,7 +600,6 @@
 .method public b(D)D
     .locals 0
 
-    .line 5
     iget-wide p1, p0, La/c/a/a/a$a;->m:D
 
     return-wide p1
@@ -660,7 +608,6 @@
 .method c()D
     .locals 6
 
-    .line 1
     iget-wide v0, p0, La/c/a/a/a$a;->l:D
 
     iget-wide v2, p0, La/c/a/a/a$a;->j:D
@@ -677,7 +624,6 @@
 .method public c(D)D
     .locals 4
 
-    .line 2
     iget-wide v0, p0, La/c/a/a/a$a;->c:D
 
     sub-double/2addr p1, v0
@@ -686,7 +632,6 @@
 
     mul-double p1, p1, v0
 
-    .line 3
     iget-wide v0, p0, La/c/a/a/a$a;->e:D
 
     iget-wide v2, p0, La/c/a/a/a$a;->f:D
@@ -703,7 +648,6 @@
 .method d()D
     .locals 6
 
-    .line 1
     iget-wide v0, p0, La/c/a/a/a$a;->m:D
 
     iget-wide v2, p0, La/c/a/a/a$a;->k:D
@@ -720,7 +664,6 @@
 .method public d(D)D
     .locals 4
 
-    .line 2
     iget-wide v0, p0, La/c/a/a/a$a;->c:D
 
     sub-double/2addr p1, v0
@@ -729,7 +672,6 @@
 
     mul-double p1, p1, v0
 
-    .line 3
     iget-wide v0, p0, La/c/a/a/a$a;->g:D
 
     iget-wide v2, p0, La/c/a/a/a$a;->h:D
@@ -763,7 +705,6 @@
 
     return-wide v0
 
-    .line 1
     :cond_1
     iget-object v0, p0, La/c/a/a/a$a;->a:[D
 
@@ -781,7 +722,6 @@
 
     sub-double/2addr p1, v2
 
-    .line 2
     aget-wide v2, v0, v1
 
     add-int/lit8 v4, v1, 0x1
@@ -802,7 +742,6 @@
 .method f(D)V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, La/c/a/a/a$a;->q:Z
 
     if-eqz v0, :cond_0
@@ -825,21 +764,18 @@
 
     const-wide p1, 0x3ff921fb54442d18L    # 1.5707963267948966
 
-    .line 2
     invoke-virtual {p0, v0, v1}, La/c/a/a/a$a;->e(D)D
 
     move-result-wide v0
 
     mul-double v0, v0, p1
 
-    .line 3
     invoke-static {v0, v1}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide p1
 
     iput-wide p1, p0, La/c/a/a/a$a;->o:D
 
-    .line 4
     invoke-static {v0, v1}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide p1

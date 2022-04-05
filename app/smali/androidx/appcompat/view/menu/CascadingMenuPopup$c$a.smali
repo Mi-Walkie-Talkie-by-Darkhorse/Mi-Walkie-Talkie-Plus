@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/view/menu/CascadingMenuPopup$c$a;
 .super Ljava/lang/Object;
-.source "CascadingMenuPopup.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -31,7 +30,6 @@
 .method constructor <init>(Landroidx/appcompat/view/menu/CascadingMenuPopup$c;Landroidx/appcompat/view/menu/CascadingMenuPopup$d;Landroid/view/MenuItem;Landroidx/appcompat/view/menu/f;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$c$a;->d:Landroidx/appcompat/view/menu/CascadingMenuPopup$c;
 
     iput-object p2, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$c$a;->a:Landroidx/appcompat/view/menu/CascadingMenuPopup$d;
@@ -50,12 +48,10 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$c$a;->a:Landroidx/appcompat/view/menu/CascadingMenuPopup$d;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$c$a;->d:Landroidx/appcompat/view/menu/CascadingMenuPopup$c;
 
     iget-object v1, v1, Landroidx/appcompat/view/menu/CascadingMenuPopup$c;->a:Landroidx/appcompat/view/menu/CascadingMenuPopup;
@@ -64,21 +60,18 @@
 
     iput-boolean v2, v1, Landroidx/appcompat/view/menu/CascadingMenuPopup;->A:Z
 
-    .line 3
     iget-object v0, v0, Landroidx/appcompat/view/menu/CascadingMenuPopup$d;->b:Landroidx/appcompat/view/menu/f;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/f;->close(Z)V
 
-    .line 4
     iget-object v0, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$c$a;->d:Landroidx/appcompat/view/menu/CascadingMenuPopup$c;
 
     iget-object v0, v0, Landroidx/appcompat/view/menu/CascadingMenuPopup$c;->a:Landroidx/appcompat/view/menu/CascadingMenuPopup;
 
     iput-boolean v1, v0, Landroidx/appcompat/view/menu/CascadingMenuPopup;->A:Z
 
-    .line 5
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$c$a;->b:Landroid/view/MenuItem;
 
@@ -96,7 +89,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 6
     iget-object v0, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$c$a;->c:Landroidx/appcompat/view/menu/f;
 
     iget-object v1, p0, Landroidx/appcompat/view/menu/CascadingMenuPopup$c$a;->b:Landroid/view/MenuItem;

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/gv;
 .super Lcom/amap/api/col/l3/gs;
-.source "SDKLogHandler.java"
 
 # interfaces
 .implements Ljava/lang/Thread$UncaughtExceptionHandler;
@@ -50,7 +49,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
@@ -61,7 +59,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/gv;->f:Ljava/util/Set;
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/gv$2;
 
     invoke-direct {v0}, Lcom/amap/api/col/l3/gv$2;-><init>()V
@@ -74,13 +71,10 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/gs;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/gv;->d:Landroid/content/Context;
 
-    .line 3
     :try_start_0
     invoke-static {}, Ljava/lang/Thread;->getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
 
@@ -156,7 +150,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/gv;)Landroid/content/Context;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/gv;->d:Landroid/content/Context;
 
     return-object p0
@@ -176,7 +169,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 2
     :try_start_0
     invoke-virtual {p1}, Lcom/amap/api/col/l3/gh;->a()Ljava/lang/String;
 
@@ -198,7 +190,6 @@
 
     if-nez v1, :cond_2
 
-    .line 3
     :try_start_1
     sget-object v1, Lcom/amap/api/col/l3/gv;->f:Ljava/util/Set;
 
@@ -226,14 +217,12 @@
 
     return-object p0
 
-    .line 4
     :cond_0
     :try_start_2
     sget-object v1, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
     if-nez v1, :cond_1
 
-    .line 5
     new-instance v1, Lcom/amap/api/col/l3/gv;
 
     invoke-direct {v1, p0}, Lcom/amap/api/col/l3/gv;-><init>(Landroid/content/Context;)V
@@ -242,7 +231,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     sget-object v1, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
@@ -250,7 +238,6 @@
 
     iput-boolean v2, v1, Lcom/amap/api/col/l3/gs;->c:Z
 
-    .line 7
     :goto_0
     sget-object v1, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
@@ -267,11 +254,9 @@
     :catchall_0
     move-exception p0
 
-    .line 8
     :try_start_3
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 9
     :goto_1
     sget-object p0, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
@@ -283,7 +268,6 @@
 
     return-object p0
 
-    .line 10
     :cond_2
     :try_start_4
     new-instance p0, Lcom/amap/api/col/l3/fv;
@@ -299,7 +283,6 @@
 
     goto :goto_2
 
-    .line 11
     :cond_3
     new-instance p0, Lcom/amap/api/col/l3/fv;
 
@@ -322,7 +305,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 23
     invoke-virtual {p2}, Lcom/amap/api/col/l3/fv;->c()Ljava/lang/String;
 
     move-result-object v0
@@ -331,12 +313,10 @@
 
     move-result-object v1
 
-    .line 24
     invoke-virtual {p2}, Lcom/amap/api/col/l3/fv;->b()Ljava/lang/String;
 
     move-result-object p2
 
-    .line 25
     invoke-static {p0, p1, v0, v1, p2}, Lcom/amap/api/col/l3/gv;->a(Lcom/amap/api/col/l3/gh;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
@@ -346,20 +326,17 @@
 .method public static a(Lcom/amap/api/col/l3/gh;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 19
     :try_start_0
     sget-object v0, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
     if-eqz v0, :cond_0
 
-    .line 20
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "path:"
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 21
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string p1, ",type:"
@@ -380,7 +357,6 @@
 
     invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 22
     sget-object p1, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -405,18 +381,15 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/gv;->e:Ljava/util/concurrent/ExecutorService;
 
     if-eqz v1, :cond_0
 
-    .line 2
     sget-object v1, Lcom/amap/api/col/l3/gv;->e:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v1}, Ljava/util/concurrent/ExecutorService;->shutdown()V
 
-    .line 3
     :cond_0
     invoke-static {}, Lcom/amap/api/col/l3/hs;->a()V
     :try_end_0
@@ -427,20 +400,17 @@
     :catchall_0
     move-exception v1
 
-    .line 4
     :try_start_1
     invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 5
     :goto_0
     :try_start_2
     sget-object v1, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
     if-eqz v1, :cond_1
 
-    .line 6
     invoke-static {}, Ljava/lang/Thread;->getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
 
     move-result-object v1
@@ -455,7 +425,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 7
     sget-object v1, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
     iget-object v1, v1, Lcom/amap/api/col/l3/gs;->b:Ljava/lang/Thread$UncaughtExceptionHandler;
@@ -465,12 +434,10 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 8
     sput-object v1, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 9
     monitor-exit v0
 
     return-void
@@ -478,13 +445,11 @@
     :catchall_1
     move-exception v1
 
-    .line 10
     :try_start_3
     invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 11
     monitor-exit v0
 
     return-void
@@ -500,13 +465,11 @@
 .method public static b(Lcom/amap/api/col/l3/gh;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 14
     :try_start_0
     sget-object v0, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
     if-eqz v0, :cond_0
 
-    .line 15
     sget-object v0, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
     invoke-virtual {v0, p0, p1, p2}, Lcom/amap/api/col/l3/gs;->a(Lcom/amap/api/col/l3/gh;Ljava/lang/String;Ljava/lang/String;)V
@@ -521,7 +484,6 @@
 .method public static c()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/gv;->g:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
@@ -532,7 +494,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     sget-object v0, Lcom/amap/api/col/l3/gv;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -545,13 +506,11 @@
 
     return-void
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {v0}, Lcom/amap/api/col/l3/gs;->a()V
 
     :cond_1
@@ -561,13 +520,11 @@
 .method public static c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 5
     :try_start_0
     sget-object v0, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
     if-eqz v0, :cond_0
 
-    .line 6
     sget-object v0, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
     const/4 v1, 0x1
@@ -588,7 +545,6 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/gv;->e:Ljava/util/concurrent/ExecutorService;
 
@@ -602,7 +558,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 2
     :cond_0
     new-instance v1, Ljava/util/concurrent/ThreadPoolExecutor;
 
@@ -635,11 +590,9 @@
     :catchall_0
     move-exception v1
 
-    .line 3
     :try_start_1
     invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 4
     :cond_1
     :goto_0
     sget-object v1, Lcom/amap/api/col/l3/gv;->e:Ljava/util/concurrent/ExecutorService;
@@ -665,7 +618,6 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
@@ -690,7 +642,6 @@
 .method protected final a()V
     .locals 1
 
-    .line 14
     iget-object v0, p0, Lcom/amap/api/col/l3/gv;->d:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/gt;->a(Landroid/content/Context;)V
@@ -701,7 +652,6 @@
 .method protected final a(Landroid/content/Context;Lcom/amap/api/col/l3/gh;Z)V
     .locals 2
 
-    .line 15
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/gv;->d()Ljava/util/concurrent/ExecutorService;
 
@@ -709,7 +659,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 16
     invoke-interface {v0}, Ljava/util/concurrent/ExecutorService;->isShutdown()Z
 
     move-result v1
@@ -718,7 +667,6 @@
 
     goto :goto_0
 
-    .line 17
     :cond_0
     new-instance v1, Lcom/amap/api/col/l3/gv$1;
 
@@ -736,7 +684,6 @@
     :catchall_0
     move-exception p1
 
-    .line 18
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :catch_0
@@ -746,7 +693,6 @@
 .method protected final a(Lcom/amap/api/col/l3/gh;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 12
     iget-object v0, p0, Lcom/amap/api/col/l3/gv;->d:Landroid/content/Context;
 
     invoke-static {p1, v0, p3, p2}, Lcom/amap/api/col/l3/gw;->a(Lcom/amap/api/col/l3/gh;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
@@ -757,7 +703,6 @@
 .method protected final a(Ljava/lang/Throwable;ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 13
     iget-object v0, p0, Lcom/amap/api/col/l3/gv;->d:Landroid/content/Context;
 
     invoke-static {v0, p1, p2, p3, p4}, Lcom/amap/api/col/l3/gw;->a(Landroid/content/Context;Ljava/lang/Throwable;ILjava/lang/String;Ljava/lang/String;)V
@@ -775,7 +720,6 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 12
     :try_start_0
     invoke-virtual {p0, p1, v0, p2, p3}, Lcom/amap/api/col/l3/gv;->a(Ljava/lang/Throwable;ILjava/lang/String;Ljava/lang/String;)V
     :try_end_0
@@ -786,7 +730,6 @@
     :catchall_0
     move-exception p1
 
-    .line 13
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -799,7 +742,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :goto_0
     :try_start_0
     iget-object v2, p0, Lcom/amap/api/col/l3/gv;->i:Ljava/util/List;
@@ -835,21 +777,17 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 2
     invoke-virtual {p0, p2, v0, v1, v1}, Lcom/amap/api/col/l3/gv;->a(Ljava/lang/Throwable;ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/gs;->b:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     if-eqz v0, :cond_2
 
-    .line 4
     :try_start_1
     invoke-static {v0}, Ljava/lang/Thread;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 5
     :catchall_1
     iget-object v0, p0, Lcom/amap/api/col/l3/gs;->b:Ljava/lang/Thread$UncaughtExceptionHandler;
 

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kv;
 .super Ljava/lang/Object;
-.source "MapParser.java"
 
 
 # instance fields

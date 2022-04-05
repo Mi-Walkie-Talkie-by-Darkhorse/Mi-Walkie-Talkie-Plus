@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;
 .super Ljava/lang/Object;
-.source "MapView.java"
 
 # interfaces
 .implements Landroid/view/GestureDetector$OnGestureListener;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lorg/osmdroid/views/MapView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lorg/osmdroid/views/MapView;Lorg/osmdroid/views/MapView$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;-><init>(Lorg/osmdroid/views/MapView;)V
 
     return-void
@@ -47,21 +44,18 @@
 .method public onDown(Landroid/view/MotionEvent;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
     iget-boolean v1, v0, Lorg/osmdroid/views/MapView;->mIsFlinging:Z
 
     if-eqz v1, :cond_1
 
-    .line 2
     invoke-static {v0}, Lorg/osmdroid/views/MapView;->access$300(Lorg/osmdroid/views/MapView;)Landroid/widget/Scroller;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-static {v0}, Lorg/osmdroid/views/MapView;->access$300(Lorg/osmdroid/views/MapView;)Landroid/widget/Scroller;
@@ -70,7 +64,6 @@
 
     invoke-virtual {v0}, Landroid/widget/Scroller;->abortAnimation()V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
@@ -78,7 +71,6 @@
 
     iput-boolean v1, v0, Lorg/osmdroid/views/MapView;->mIsFlinging:Z
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
@@ -98,7 +90,6 @@
 
     return v0
 
-    .line 6
     :cond_2
     iget-object p1, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
@@ -120,7 +111,6 @@
 .method public onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-static {v0}, Lorg/osmdroid/views/MapView;->access$600(Lorg/osmdroid/views/MapView;)Z
@@ -141,7 +131,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
@@ -159,7 +148,6 @@
 
     move v6, p4
 
-    .line 3
     invoke-interface/range {v2 .. v7}, Lorg/osmdroid/views/overlay/OverlayManager;->onFling(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FFLorg/osmdroid/views/MapView;)Z
 
     move-result p1
@@ -170,7 +158,6 @@
 
     return p2
 
-    .line 4
     :cond_1
     iget-object p1, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
@@ -182,19 +169,16 @@
 
     move-result v8
 
-    .line 5
     iget-object p1, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
     iput-boolean p2, p1, Lorg/osmdroid/views/MapView;->mIsFlinging:Z
 
-    .line 6
     invoke-static {p1}, Lorg/osmdroid/views/MapView;->access$300(Lorg/osmdroid/views/MapView;)Landroid/widget/Scroller;
 
     move-result-object p1
 
     if-eqz p1, :cond_2
 
-    .line 7
     iget-object p1, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-static {p1}, Lorg/osmdroid/views/MapView;->access$300(Lorg/osmdroid/views/MapView;)Landroid/widget/Scroller;
@@ -232,7 +216,6 @@
     :cond_2
     return p2
 
-    .line 8
     :cond_3
     :goto_0
     iget-object p1, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
@@ -245,7 +228,6 @@
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-static {v0}, Lorg/osmdroid/views/MapView;->access$800(Lorg/osmdroid/views/MapView;)Lorg/metalev/multitouch/controller/MultiTouchController;
@@ -268,7 +250,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
@@ -286,7 +267,6 @@
 .method public onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
@@ -313,7 +293,6 @@
 
     return p2
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
@@ -329,7 +308,6 @@
 .method public onShowPress(Landroid/view/MotionEvent;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
@@ -346,7 +324,6 @@
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewGestureDetectorListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;

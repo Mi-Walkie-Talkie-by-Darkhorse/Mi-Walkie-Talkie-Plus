@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/k/g/b;
 .super Ljava/lang/Object;
-.source "BitmapDrawableTranscoder.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/k/g/e;
@@ -30,10 +29,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, Landroid/content/res/Resources;
@@ -72,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p2, p0, Lcom/bumptech/glide/load/k/g/b;->a:Landroid/content/res/Resources;
 
     invoke-static {p2, p1}, Lcom/bumptech/glide/load/resource/bitmap/p;->a(Landroid/content/res/Resources;Lcom/bumptech/glide/load/engine/s;)Lcom/bumptech/glide/load/engine/s;

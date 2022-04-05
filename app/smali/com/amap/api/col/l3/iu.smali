@@ -1,6 +1,5 @@
 .class public abstract Lcom/amap/api/col/l3/iu;
 .super Ljava/lang/Object;
-.source "UpdateDataStrategy.java"
 
 
 # instance fields
@@ -13,12 +12,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/iu;->d:[B
 
     return-void
@@ -27,15 +24,12 @@
 .method constructor <init>(Lcom/amap/api/col/l3/iu;)V
     .locals 1
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/col/l3/iu;->d:[B
 
-    .line 5
     iput-object p1, p0, Lcom/amap/api/col/l3/iu;->c:Lcom/amap/api/col/l3/iu;
 
     return-void
@@ -60,7 +54,6 @@
 
     move-object v0, p0
 
-    .line 1
     :goto_0
     iget-object v1, v0, Lcom/amap/api/col/l3/iu;->d:[B
 
@@ -68,12 +61,10 @@
 
     move-result-object v1
 
-    .line 2
     iget-object v0, v0, Lcom/amap/api/col/l3/iu;->c:Lcom/amap/api/col/l3/iu;
 
     if-eqz v0, :cond_0
 
-    .line 3
     iput-object v1, v0, Lcom/amap/api/col/l3/iu;->d:[B
 
     goto :goto_0

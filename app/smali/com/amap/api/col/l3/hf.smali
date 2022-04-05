@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/hf;
 .super Ljava/lang/Object;
-.source "DexDownLoad.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/hz$a;
@@ -32,10 +31,8 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/amap/api/col/l3/hg;Lcom/amap/api/col/l3/gh;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -43,18 +40,15 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/hf;->e:Landroid/content/Context;
 
-    .line 3
     iput-object p3, p0, Lcom/amap/api/col/l3/hf;->b:Lcom/amap/api/col/l3/gh;
 
     if-nez p2, :cond_0
 
     return-void
 
-    .line 4
     :cond_0
     iput-object p2, p0, Lcom/amap/api/col/l3/hf;->a:Lcom/amap/api/col/l3/hg;
 
-    .line 5
     new-instance p3, Lcom/amap/api/col/l3/hz;
 
     new-instance v0, Lcom/amap/api/col/l3/hp;
@@ -65,7 +59,6 @@
 
     iput-object p3, p0, Lcom/amap/api/col/l3/hf;->f:Lcom/amap/api/col/l3/hz;
 
-    .line 6
     iget-object p2, p0, Lcom/amap/api/col/l3/hf;->a:Lcom/amap/api/col/l3/hg;
 
     iget-object p2, p2, Lcom/amap/api/col/l3/hg;->b:Ljava/lang/String;
@@ -87,7 +80,6 @@
 
     const-string p3, "DexDownLoad()"
 
-    .line 7
     invoke-static {p1, p2, p3}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -96,7 +88,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/hf;)Lcom/amap/api/col/l3/hz;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/hf;->f:Lcom/amap/api/col/l3/hz;
 
     return-object p0
@@ -107,7 +98,6 @@
 .method public final a()V
     .locals 3
 
-    .line 2
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/hm;->b()Lcom/amap/api/col/l3/hm;
 
@@ -134,7 +124,6 @@
 
     const-string v2, "startDownload()"
 
-    .line 3
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -143,7 +132,6 @@
 .method public final a(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 13
     :try_start_0
     iget-object p1, p0, Lcom/amap/api/col/l3/hf;->d:Ljava/io/RandomAccessFile;
 
@@ -156,7 +144,6 @@
     :catchall_0
     move-exception p1
 
-    .line 14
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -165,35 +152,29 @@
 .method public final a([BJ)V
     .locals 3
 
-    .line 4
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/hf;->d:Ljava/io/RandomAccessFile;
 
     if-nez v0, :cond_1
 
-    .line 5
     new-instance v0, Ljava/io/File;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/hf;->c:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {v0}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
     move-result-object v1
 
-    .line 7
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 8
     invoke-virtual {v1}, Ljava/io/File;->mkdirs()Z
 
-    .line 9
     :cond_0
     new-instance v1, Ljava/io/RandomAccessFile;
 
@@ -203,13 +184,11 @@
 
     iput-object v1, p0, Lcom/amap/api/col/l3/hf;->d:Ljava/io/RandomAccessFile;
 
-    .line 10
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/hf;->d:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v0, p2, p3}, Ljava/io/RandomAccessFile;->seek(J)V
 
-    .line 11
     iget-object p2, p0, Lcom/amap/api/col/l3/hf;->d:Ljava/io/RandomAccessFile;
 
     invoke-virtual {p2, p1}, Ljava/io/RandomAccessFile;->write([B)V
@@ -225,7 +204,6 @@
 
     const-string p3, "onDownload()"
 
-    .line 12
     invoke-static {p1, p2, p3}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -234,7 +212,6 @@
 .method final b()Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/hf;->a:Lcom/amap/api/col/l3/hg;
 
     const/4 v1, 0x1
@@ -256,7 +233,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     :try_start_0
     iget-object v3, p0, Lcom/amap/api/col/l3/hf;->e:Landroid/content/Context;
@@ -267,7 +243,6 @@
 
     if-nez v3, :cond_3
 
-    .line 3
     iget-object v3, p0, Lcom/amap/api/col/l3/hf;->b:Lcom/amap/api/col/l3/gh;
 
     iget-object v4, p0, Lcom/amap/api/col/l3/hf;->a:Lcom/amap/api/col/l3/hg;
@@ -288,7 +263,6 @@
 
     iget-object v3, p0, Lcom/amap/api/col/l3/hf;->e:Landroid/content/Context;
 
-    .line 4
     invoke-static {v3, v0}, Lcom/amap/api/col/l3/hn;->a(Landroid/content/Context;Z)Z
 
     move-result v0
@@ -341,7 +315,6 @@
     :goto_2
     if-eqz v0, :cond_3
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/hf;->e:Landroid/content/Context;
 
     iget-object v3, p0, Lcom/amap/api/col/l3/hf;->b:Lcom/amap/api/col/l3/gh;
@@ -366,7 +339,6 @@
 
     const-string v3, "isNeedDownload()"
 
-    .line 6
     invoke-static {v0, v1, v3}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return v2
@@ -383,7 +355,6 @@
 
     const-string v0, "dDownLoad"
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/hf;->d:Ljava/io/RandomAccessFile;
 
@@ -391,20 +362,17 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lcom/amap/api/col/l3/hf;->d:Ljava/io/RandomAccessFile;
 
     invoke-static {v1}, Lcom/amap/api/col/l3/hn;->a(Ljava/io/Closeable;)V
 
-    .line 3
     iget-object v1, p0, Lcom/amap/api/col/l3/hf;->a:Lcom/amap/api/col/l3/hg;
 
     invoke-virtual {v1}, Lcom/amap/api/col/l3/hg;->b()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 4
     iget-object v1, p0, Lcom/amap/api/col/l3/hf;->c:Ljava/lang/String;
 
     invoke-static {v1, v4}, Lcom/amap/api/col/l3/hn;->a(Ljava/lang/String;Ljava/lang/String;)Z
@@ -413,7 +381,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
     iget-object v1, p0, Lcom/amap/api/col/l3/hf;->a:Lcom/amap/api/col/l3/hg;
 
     iget-object v1, v1, Lcom/amap/api/col/l3/hg;->d:Ljava/lang/String;
@@ -541,7 +508,6 @@
 
     invoke-static {v1, v0, v2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     :goto_1
     new-instance v1, Lcom/amap/api/col/l3/il;
 
@@ -555,7 +521,6 @@
 
     iget-object v4, p0, Lcom/amap/api/col/l3/hf;->b:Lcom/amap/api/col/l3/gh;
 
-    .line 7
     invoke-virtual {v4}, Lcom/amap/api/col/l3/gh;->b()Ljava/lang/String;
 
     move-result-object v4
@@ -566,10 +531,8 @@
 
     const-string v2, "{\"param_int_first\":1}"
 
-    .line 8
     invoke-virtual {v1, v2}, Lcom/amap/api/col/l3/il;->a(Ljava/lang/String;)V
 
-    .line 9
     iget-object v2, p0, Lcom/amap/api/col/l3/hf;->e:Landroid/content/Context;
 
     invoke-static {v1, v2}, Lcom/amap/api/col/l3/im;->a(Lcom/amap/api/col/l3/il;Landroid/content/Context;)V
@@ -578,7 +541,6 @@
 
     return-void
 
-    .line 10
     :cond_1
     :try_start_5
     new-instance v1, Ljava/io/File;
@@ -587,7 +549,6 @@
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 11
     invoke-virtual {v1}, Ljava/io/File;->delete()Z
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_2
@@ -600,7 +561,6 @@
     :try_start_6
     const-string v2, "onFinish"
 
-    .line 12
     invoke-static {v1, v0, v2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_3
@@ -612,7 +572,6 @@
 
     const-string v2, "onFinish()"
 
-    .line 13
     invoke-static {v1, v0, v2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

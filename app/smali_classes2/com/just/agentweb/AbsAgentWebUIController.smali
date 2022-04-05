@@ -1,6 +1,5 @@
 .class public abstract Lcom/just/agentweb/AbsAgentWebUIController;
 .super Ljava/lang/Object;
-.source "AbsAgentWebUIController.java"
 
 
 # static fields
@@ -26,17 +25,14 @@
     :try_start_0
     const-string v0, "com.google.android.material.snackbar.Snackbar"
 
-    .line 1
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     const-string v0, "com.google.android.material.bottomsheet.BottomSheetDialog"
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     const/4 v0, 0x1
 
-    .line 3
     sput-boolean v0, Lcom/just/agentweb/AbsAgentWebUIController;->HAS_DESIGN_LIB:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -46,7 +42,6 @@
     :catchall_0
     const/4 v0, 0x0
 
-    .line 4
     sput-boolean v0, Lcom/just/agentweb/AbsAgentWebUIController;->HAS_DESIGN_LIB:Z
 
     :goto_0
@@ -56,15 +51,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/just/agentweb/AbsAgentWebUIController;->mIsBindWebParent:Z
 
-    .line 3
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -88,7 +80,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-boolean v0, p0, Lcom/just/agentweb/AbsAgentWebUIController;->mIsBindWebParent:Z
 
@@ -96,21 +87,16 @@
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/just/agentweb/AbsAgentWebUIController;->mIsBindWebParent:Z
 
-    .line 3
     iput-object p1, p0, Lcom/just/agentweb/AbsAgentWebUIController;->mWebParentLayout:Lcom/just/agentweb/WebParentLayout;
 
-    .line 4
     iput-object p2, p0, Lcom/just/agentweb/AbsAgentWebUIController;->mActivity:Landroid/app/Activity;
 
-    .line 5
     invoke-virtual {p0, p1, p2}, Lcom/just/agentweb/AbsAgentWebUIController;->bindSupportWebParent(Lcom/just/agentweb/WebParentLayout;Landroid/app/Activity;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     :cond_0
     monitor-exit p0
 
@@ -127,7 +113,6 @@
 .method protected create()Lcom/just/agentweb/AbsAgentWebUIController;
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/just/agentweb/AbsAgentWebUIController;->HAS_DESIGN_LIB:Z
 
     if-eqz v0, :cond_0
@@ -150,12 +135,10 @@
 .method protected getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AbsAgentWebUIController;->mAgentWebUIControllerDelegate:Lcom/just/agentweb/AbsAgentWebUIController;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->create()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -207,14 +190,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p1}, Landroid/app/Dialog;->isShowing()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
 
     :cond_0
@@ -226,14 +207,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p1}, Landroid/app/Dialog;->isShowing()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
     :cond_0

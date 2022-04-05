@@ -1,6 +1,5 @@
 .class synthetic Lpl/droidsonroids/gif/GifTextureView$a;
 .super Ljava/lang/Object;
-.source "GifTextureView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Landroid/widget/ImageView$ScaleType;->values()[Landroid/widget/ImageView$ScaleType;
 
     move-result-object v0

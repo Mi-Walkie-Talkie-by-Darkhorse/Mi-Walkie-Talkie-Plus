@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Database;
 .super Ljava/lang/Object;
-.source "Database.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

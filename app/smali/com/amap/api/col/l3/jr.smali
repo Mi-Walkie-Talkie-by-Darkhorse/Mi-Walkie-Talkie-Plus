@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/jr;
 .super Ljava/lang/Object;
-.source "SdCardDbCreator.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/gy;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +22,6 @@
     :try_start_0
     const-string v0, "CREATE TABLE IF NOT EXISTS c (_id integer primary key autoincrement, a2 varchar(100), a4 varchar(2000), a3 LONG );"
 
-    .line 1
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -38,7 +35,6 @@
 
     const-string v1, "onCreate"
 
-    .line 2
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/y/e;
 .super Ljava/lang/Object;
-.source "UrlLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/n;
@@ -50,10 +49,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/j/y/e;->a:Lcom/bumptech/glide/load/j/n;
 
     return-void
@@ -72,7 +69,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Ljava/net/URL;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/j/y/e;->a(Ljava/net/URL;IILcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/j/n$a;
@@ -105,7 +101,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/load/j/y/e;->a:Lcom/bumptech/glide/load/j/n;
 
     new-instance v1, Lcom/bumptech/glide/load/j/g;
@@ -126,7 +121,6 @@
         .end annotation
     .end param
 
-    .line 2
     check-cast p1, Ljava/net/URL;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/j/y/e;->a(Ljava/net/URL;)Z

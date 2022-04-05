@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/view/accessibility/e;
 .super Ljava/lang/Object;
-.source "AccessibilityViewCommand.java"
 
 
 # annotations

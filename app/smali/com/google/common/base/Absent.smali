@@ -1,6 +1,5 @@
 .class final Lcom/google/common/base/Absent;
 .super Lcom/google/common/base/Optional;
-.source "Absent.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/base/Absent;
 
     invoke-direct {v0}, Lcom/google/common/base/Absent;-><init>()V
@@ -49,7 +47,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/base/Optional;-><init>()V
 
     return-void
@@ -58,7 +55,6 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/base/Absent;->INSTANCE:Lcom/google/common/base/Absent;
 
     return-object v0
@@ -76,7 +72,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/base/Absent;->INSTANCE:Lcom/google/common/base/Absent;
 
     return-object v0
@@ -94,7 +89,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
 
     move-result-object v0
@@ -130,7 +124,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "Optional.get() cannot be called on an absent value"
@@ -168,7 +161,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -188,7 +180,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-interface {p1}, Lcom/google/common/base/Supplier;->get()Ljava/lang/Object;
 
     move-result-object p1
@@ -212,7 +203,6 @@
 
     const-string v0, "use Optional.orNull() instead of Optional.or(null)"
 
-    .line 1
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -258,10 +248,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object p1

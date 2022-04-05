@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/arch/record/RecordIdClassMap;
 .super Ljava/lang/Object;
-.source "RecordIdClassMap.java"
 
 
 # virtual methods

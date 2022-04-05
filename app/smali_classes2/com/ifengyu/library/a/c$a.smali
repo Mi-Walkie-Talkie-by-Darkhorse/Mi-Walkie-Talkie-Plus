@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/library/a/c$a;
 .super Ljava/lang/Object;
-.source "CountDownTimer.java"
 
 # interfaces
 .implements Lio/reactivex/Observer;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/library/a/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/library/a/c$a;->a:Lcom/ifengyu/library/a/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public a(Ljava/lang/Long;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/library/a/c$a;->a:Lcom/ifengyu/library/a/c;
 
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
@@ -62,7 +59,6 @@
 .method public onComplete()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/library/a/c$a;->a:Lcom/ifengyu/library/a/c;
 
     invoke-virtual {v0}, Lcom/ifengyu/library/a/c;->c()V
@@ -73,7 +69,6 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -82,7 +77,6 @@
 .method public bridge synthetic onNext(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Long;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/library/a/c$a;->a(Ljava/lang/Long;)V
@@ -93,7 +87,6 @@
 .method public onSubscribe(Lio/reactivex/disposables/Disposable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/library/a/c$a;->a:Lcom/ifengyu/library/a/c;
 
     invoke-static {v0, p1}, Lcom/ifengyu/library/a/c;->a(Lcom/ifengyu/library/a/c;Lio/reactivex/disposables/Disposable;)Lio/reactivex/disposables/Disposable;

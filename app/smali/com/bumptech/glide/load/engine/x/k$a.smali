@@ -1,6 +1,5 @@
 .class interface abstract Lcom/bumptech/glide/load/engine/x/k$a;
 .super Ljava/lang/Object;
-.source "LruBitmapPool.java"
 
 
 # annotations

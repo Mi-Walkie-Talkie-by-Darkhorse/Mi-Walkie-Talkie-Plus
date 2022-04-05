@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/webview/QMUIWebView$a;
 .super Ljava/lang/Object;
-.source "QMUIWebView.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity_ViewBinding;
 .super Ljava/lang/Object;
-.source "DolphinRelayEditActivity_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;
 
-    .line 3
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f090419
@@ -37,7 +33,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarLeft:Landroid/widget/ImageView;
 
-    .line 4
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09041d
@@ -52,7 +47,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarTitle:Landroid/widget/TextView;
 
-    .line 5
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090418
@@ -67,7 +61,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarConfirm:Landroid/widget/TextView;
 
-    .line 6
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
     const v1, 0x7f090176
@@ -82,7 +75,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mEtRelayEditName:Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
-    .line 7
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09048b
@@ -97,7 +89,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditUpFreq:Landroid/widget/TextView;
 
-    .line 8
     const-class v0, Landroid/widget/FrameLayout;
 
     const v1, 0x7f09018a
@@ -112,7 +103,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditUpFreq:Landroid/widget/FrameLayout;
 
-    .line 9
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090489
@@ -127,7 +117,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditDownFreq:Landroid/widget/TextView;
 
-    .line 10
     const-class v0, Landroid/widget/FrameLayout;
 
     const v1, 0x7f090188
@@ -142,7 +131,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditDownFreq:Landroid/widget/FrameLayout;
 
-    .line 11
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09048c
@@ -157,7 +145,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditUpTone:Landroid/widget/TextView;
 
-    .line 12
     const-class v0, Landroid/widget/FrameLayout;
 
     const v1, 0x7f09018b
@@ -172,7 +159,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditUpTone:Landroid/widget/FrameLayout;
 
-    .line 13
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09048a
@@ -187,7 +173,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditDownTone:Landroid/widget/TextView;
 
-    .line 14
     const-class v0, Landroid/widget/FrameLayout;
 
     const v1, 0x7f090189
@@ -202,7 +187,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditDownTone:Landroid/widget/FrameLayout;
 
-    .line 15
     const-class v0, Landroid/widget/Button;
 
     const v1, 0x7f0900a2
@@ -227,58 +211,42 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarLeft:Landroid/widget/ImageView;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarTitle:Landroid/widget/TextView;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarConfirm:Landroid/widget/TextView;
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mEtRelayEditName:Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditUpFreq:Landroid/widget/TextView;
 
-    .line 8
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditUpFreq:Landroid/widget/FrameLayout;
 
-    .line 9
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditDownFreq:Landroid/widget/TextView;
 
-    .line 10
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditDownFreq:Landroid/widget/FrameLayout;
 
-    .line 11
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditUpTone:Landroid/widget/TextView;
 
-    .line 12
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditUpTone:Landroid/widget/FrameLayout;
 
-    .line 13
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditDownTone:Landroid/widget/TextView;
 
-    .line 14
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditDownTone:Landroid/widget/FrameLayout;
 
-    .line 15
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mBtnRelayEditDelete:Landroid/widget/Button;
 
     return-void
 
-    .line 16
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

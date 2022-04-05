@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlinx/android/parcel/TypeParceler;
 .super Ljava/lang/Object;
-.source "TypeParceler.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

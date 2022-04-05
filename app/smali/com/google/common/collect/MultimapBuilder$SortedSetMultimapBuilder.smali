@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/MultimapBuilder$SortedSetMultimapBuilder;
 .super Lcom/google/common/collect/MultimapBuilder$SetMultimapBuilder;
-.source "MultimapBuilder.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/MultimapBuilder$SetMultimapBuilder;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public bridge synthetic build()Lcom/google/common/collect/Multimap;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MultimapBuilder$SortedSetMultimapBuilder;->build()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object v0
@@ -52,7 +49,6 @@
 .method public bridge synthetic build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/Multimap;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MultimapBuilder$SortedSetMultimapBuilder;->build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object p1
@@ -63,7 +59,6 @@
 .method public bridge synthetic build()Lcom/google/common/collect/SetMultimap;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/common/collect/MultimapBuilder$SortedSetMultimapBuilder;->build()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object v0
@@ -74,7 +69,6 @@
 .method public bridge synthetic build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/SetMultimap;
     .locals 0
 
-    .line 4
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MultimapBuilder$SortedSetMultimapBuilder;->build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object p1
@@ -104,7 +98,6 @@
         }
     .end annotation
 
-    .line 5
     invoke-super {p0, p1}, Lcom/google/common/collect/MultimapBuilder$SetMultimapBuilder;->build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/SetMultimap;
 
     move-result-object p1

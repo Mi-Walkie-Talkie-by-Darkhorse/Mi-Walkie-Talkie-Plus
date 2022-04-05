@@ -1,6 +1,5 @@
 .class public Landroidx/constraintlayout/solver/widgets/h;
 .super Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
-.source "HelperWidget.java"
 
 # interfaces
 .implements Landroidx/constraintlayout/solver/widgets/g;
@@ -16,19 +15,16 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;-><init>()V
 
     const/4 v0, 0x4
 
     new-array v0, v0, [Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
-    .line 2
     iput-object v0, p0, Landroidx/constraintlayout/solver/widgets/h;->D0:[Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Landroidx/constraintlayout/solver/widgets/h;->E0:I
 
     return-void
@@ -41,10 +37,8 @@
 
     const/4 v0, 0x0
 
-    .line 10
     iput v0, p0, Landroidx/constraintlayout/solver/widgets/h;->E0:I
 
-    .line 11
     iget-object v0, p0, Landroidx/constraintlayout/solver/widgets/h;->D0:[Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     const/4 v1, 0x0
@@ -63,7 +57,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     iget v0, p0, Landroidx/constraintlayout/solver/widgets/h;->E0:I
 
@@ -75,7 +68,6 @@
 
     if-le v0, v2, :cond_1
 
-    .line 2
     array-length v0, v1
 
     mul-int/lit8 v0, v0, 0x2
@@ -88,7 +80,6 @@
 
     iput-object v0, p0, Landroidx/constraintlayout/solver/widgets/h;->D0:[Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
-    .line 3
     :cond_1
     iget-object v0, p0, Landroidx/constraintlayout/solver/widgets/h;->D0:[Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
@@ -98,7 +89,6 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 4
     iput v1, p0, Landroidx/constraintlayout/solver/widgets/h;->E0:I
 
     :cond_2
@@ -119,24 +109,19 @@
         }
     .end annotation
 
-    .line 5
     invoke-super {p0, p1, p2}, Landroidx/constraintlayout/solver/widgets/ConstraintWidget;->a(Landroidx/constraintlayout/solver/widgets/ConstraintWidget;Ljava/util/HashMap;)V
 
-    .line 6
     check-cast p1, Landroidx/constraintlayout/solver/widgets/h;
 
     const/4 v0, 0x0
 
-    .line 7
     iput v0, p0, Landroidx/constraintlayout/solver/widgets/h;->E0:I
 
-    .line 8
     iget v1, p1, Landroidx/constraintlayout/solver/widgets/h;->E0:I
 
     :goto_0
     if-ge v0, v1, :cond_0
 
-    .line 9
     iget-object v2, p1, Landroidx/constraintlayout/solver/widgets/h;->D0:[Landroidx/constraintlayout/solver/widgets/ConstraintWidget;
 
     aget-object v2, v2, v0

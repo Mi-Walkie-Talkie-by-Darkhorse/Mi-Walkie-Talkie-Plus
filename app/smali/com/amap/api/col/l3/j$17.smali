@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$17;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$17;->b:Lcom/amap/api/col/l3/j;
 
     iput p2, p0, Lcom/amap/api/col/l3/j$17;->a:I
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/j$17;->b:Lcom/amap/api/col/l3/j;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/j;->w(Lcom/amap/api/col/l3/j;)Z
@@ -57,7 +54,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 2
     iget v2, p0, Lcom/amap/api/col/l3/j$17;->a:I
 
     const/16 v3, 0x7de

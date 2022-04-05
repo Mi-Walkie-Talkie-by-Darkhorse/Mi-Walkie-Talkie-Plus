@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/EmptyImmutableSet;
 .super Lcom/google/common/collect/ImmutableSet;
-.source "EmptyImmutableSet.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/EmptyImmutableSet;
 
     invoke-direct {v0}, Lcom/google/common/collect/EmptyImmutableSet;-><init>()V
@@ -41,7 +39,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSet;-><init>()V
 
     return-void
@@ -60,7 +57,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
 
     move-result-object v0
@@ -90,7 +86,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result p1
@@ -111,15 +106,12 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Ljava/util/Set;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Ljava/util/Set;
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Set;->isEmpty()Z
 
     move-result p1
@@ -175,7 +167,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/Iterators;->emptyIterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -186,7 +177,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/EmptyImmutableSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -197,7 +187,6 @@
 .method readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/EmptyImmutableSet;->INSTANCE:Lcom/google/common/collect/EmptyImmutableSet;
 
     return-object v0

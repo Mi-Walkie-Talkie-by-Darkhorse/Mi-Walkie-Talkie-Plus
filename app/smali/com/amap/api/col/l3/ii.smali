@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/ii;
 .super Ljava/lang/Object;
-.source "MarkInfoManager.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 .method public static a(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/gv;->d()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
@@ -45,7 +42,6 @@
 .method static synthetic b(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/amap/api/col/l3/gb;->v(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0

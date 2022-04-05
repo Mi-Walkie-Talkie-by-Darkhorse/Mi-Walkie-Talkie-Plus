@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Hashing;
 .super Ljava/lang/Object;
-.source "Hashing.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,12 +35,10 @@
 
     const/4 v0, 0x2
 
-    .line 1
     invoke-static {p0, v0}, Ljava/lang/Math;->max(II)I
 
     move-result p0
 
-    .line 2
     invoke-static {p0}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result v0
@@ -61,7 +57,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     sget p0, Lcom/google/common/collect/Hashing;->MAX_TABLE_SIZE:I
 
@@ -85,7 +80,6 @@
 
     if-lez p0, :cond_0
 
-    .line 1
     sget p0, Lcom/google/common/collect/Hashing;->MAX_TABLE_SIZE:I
 
     if-ge p1, p0, :cond_0
@@ -110,7 +104,6 @@
 
     const/16 v0, 0xf
 
-    .line 1
     invoke-static {p0, v0}, Ljava/lang/Integer;->rotateLeft(II)I
 
     move-result p0
@@ -135,7 +128,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 

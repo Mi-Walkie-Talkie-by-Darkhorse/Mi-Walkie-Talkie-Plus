@@ -1,6 +1,5 @@
 .class Lcom/afollestad/materialdialogs/internal/a;
 .super Ljava/lang/Object;
-.source "AllCapsTransformationMethod.java"
 
 # interfaces
 .implements Landroid/text/method/TransformationMethod;
@@ -14,10 +13,8 @@
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -40,7 +37,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1

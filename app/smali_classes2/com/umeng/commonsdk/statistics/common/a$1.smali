@@ -1,6 +1,5 @@
 .class synthetic Lcom/umeng/commonsdk/statistics/common/a$1;
 .super Ljava/lang/Object;
-.source "AdvertisingId.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/zxing/qrcode/decoder/DecodedBitStreamParser$1;
 .super Ljava/lang/Object;
-.source "DecodedBitStreamParser.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/zxing/qrcode/decoder/Mode;->values()[Lcom/google/zxing/qrcode/decoder/Mode;
 
     move-result-object v0

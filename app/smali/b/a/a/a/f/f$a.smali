@@ -1,6 +1,5 @@
 .class synthetic Lb/a/a/a/f/f$a;
 .super Ljava/lang/Object;
-.source "CombinedChartRenderer.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/github/mikephil/charting/charts/CombinedChart$DrawOrder;->values()[Lcom/github/mikephil/charting/charts/CombinedChart$DrawOrder;
 
     move-result-object v0

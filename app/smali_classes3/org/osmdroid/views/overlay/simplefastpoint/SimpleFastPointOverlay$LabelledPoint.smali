@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;
 .super Landroid/graphics/Point;
-.source "SimpleFastPointOverlay.java"
 
 
 # annotations
@@ -24,13 +23,10 @@
 .method public constructor <init>(Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;Landroid/graphics/Point;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;->this$0:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;
 
-    .line 2
     invoke-direct {p0, p2}, Landroid/graphics/Point;-><init>(Landroid/graphics/Point;)V
 
-    .line 3
     iput-object p3, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;->mlabel:Ljava/lang/String;
 
     return-void
@@ -39,7 +35,6 @@
 .method static synthetic access$000(Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;->mlabel:Ljava/lang/String;
 
     return-object p0

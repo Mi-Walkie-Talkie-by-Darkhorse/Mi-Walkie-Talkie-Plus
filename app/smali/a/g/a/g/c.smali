@@ -1,6 +1,5 @@
 .class public final La/g/a/g/c;
 .super Ljava/lang/Object;
-.source "FrameworkSQLiteOpenHelperFactory.java"
 
 # interfaces
 .implements La/g/a/c$c;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -21,7 +19,6 @@
 .method public a(La/g/a/c$b;)La/g/a/c;
     .locals 3
 
-    .line 1
     new-instance v0, La/g/a/g/b;
 
     iget-object v1, p1, La/g/a/c$b;->a:Landroid/content/Context;

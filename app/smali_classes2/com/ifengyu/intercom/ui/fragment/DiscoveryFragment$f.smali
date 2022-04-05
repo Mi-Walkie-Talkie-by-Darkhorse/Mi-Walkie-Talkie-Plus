@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;
 .super Ljava/lang/Object;
-.source "DiscoveryFragment.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/adapter/c$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a()V
     .locals 1
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->h(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)V
@@ -49,7 +46,6 @@
 .method public a(I)V
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
@@ -64,10 +60,8 @@
 
     const-string v1, "com.ifengyu.intercom.action.SINGLE_ARTICLE"
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->e(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Ljava/util/ArrayList;
@@ -88,7 +82,6 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-virtual {p1, v0}, Landroidx/fragment/app/Fragment;->startActivity(Landroid/content/Intent;)V
@@ -99,7 +92,6 @@
 .method public b()V
     .locals 3
 
-    .line 5
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
@@ -112,7 +104,6 @@
 
     invoke-direct {v0, v1, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 6
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-virtual {v1, v0}, Landroidx/fragment/app/Fragment;->startActivity(Landroid/content/Intent;)V
@@ -123,7 +114,6 @@
 .method public b(I)V
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
@@ -138,10 +128,8 @@
 
     const-string v1, "com.ifengyu.intercom.action.SINGLE_ARTICLE"
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->b(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Ljava/util/ArrayList;
@@ -162,7 +150,6 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-virtual {p1, v0}, Landroidx/fragment/app/Fragment;->startActivity(Landroid/content/Intent;)V
@@ -173,7 +160,6 @@
 .method public c()V
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
@@ -188,10 +174,8 @@
 
     const-string v1, "com.ifengyu.intercom.action.NEW_MAN_GUIDE"
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-virtual {v1, v0}, Landroidx/fragment/app/Fragment;->startActivity(Landroid/content/Intent;)V
@@ -202,7 +186,6 @@
 .method public d()V
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
@@ -217,10 +200,8 @@
 
     const-string v1, "com.ifengyu.intercom.action.EXAM_IFNO_QUERY"
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$f;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-virtual {v1, v0}, Landroidx/fragment/app/Fragment;->startActivity(Landroid/content/Intent;)V

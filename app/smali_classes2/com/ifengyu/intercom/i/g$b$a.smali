@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/i/g$b$a;
 .super Ljava/lang/Object;
-.source "ACache.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/i/g$b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/i/g$b$a;->a:Lcom/ifengyu/intercom/i/g$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/i/g$b$a;->a:Lcom/ifengyu/intercom/i/g$b;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/i/g$b;->f:Ljava/io/File;
@@ -49,7 +46,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -65,7 +61,6 @@
 
     int-to-long v6, v3
 
-    .line 3
     iget-object v3, p0, Lcom/ifengyu/intercom/i/g$b$a;->a:Lcom/ifengyu/intercom/i/g$b;
 
     invoke-static {v3, v5}, Lcom/ifengyu/intercom/i/g$b;->a(Lcom/ifengyu/intercom/i/g$b;Ljava/io/File;)J
@@ -78,7 +73,6 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    .line 4
     iget-object v6, p0, Lcom/ifengyu/intercom/i/g$b$a;->a:Lcom/ifengyu/intercom/i/g$b;
 
     invoke-static {v6}, Lcom/ifengyu/intercom/i/g$b;->a(Lcom/ifengyu/intercom/i/g$b;)Ljava/util/Map;
@@ -99,7 +93,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/i/g$b$a;->a:Lcom/ifengyu/intercom/i/g$b;
 
@@ -111,7 +104,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/i/g$b$a;->a:Lcom/ifengyu/intercom/i/g$b;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/g$b;->c(Lcom/ifengyu/intercom/i/g$b;)Ljava/util/concurrent/atomic/AtomicInteger;

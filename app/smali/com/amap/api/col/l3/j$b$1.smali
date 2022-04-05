@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$b$1;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j$b;Lcom/amap/api/col/l3/ew;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$b$1;->b:Lcom/amap/api/col/l3/j$b;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/j$b$1;->a:Lcom/amap/api/col/l3/ew;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/j$b$1;->a:Lcom/amap/api/col/l3/ew;
 
     const/4 v1, 0x0

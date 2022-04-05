@@ -1,6 +1,5 @@
 .class final Lcom/liulishuo/okdownload/core/exception/InterruptException$1;
 .super Lcom/liulishuo/okdownload/core/exception/InterruptException;
-.source "InterruptException.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/liulishuo/okdownload/core/exception/InterruptException;-><init>(Lcom/liulishuo/okdownload/core/exception/InterruptException$1;)V
 
     return-void
@@ -31,7 +29,6 @@
 .method public printStackTrace()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/IllegalAccessError;
 
     const-string v1, "Stack is ignored for signal"

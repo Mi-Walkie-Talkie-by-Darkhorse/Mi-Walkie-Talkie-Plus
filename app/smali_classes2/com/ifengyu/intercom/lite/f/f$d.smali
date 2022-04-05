@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/f/f$d;
 .super Landroidx/room/o;
-.source "DeviceDao_Impl.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/f/f;Landroidx/room/RoomDatabase;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2}, Landroidx/room/o;-><init>(Landroidx/room/RoomDatabase;)V
 
     return-void

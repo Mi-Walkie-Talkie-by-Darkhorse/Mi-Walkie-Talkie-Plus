@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/MaybeTransformer;
 .super Ljava/lang/Object;
-.source "MaybeTransformer.java"
 
 
 # annotations

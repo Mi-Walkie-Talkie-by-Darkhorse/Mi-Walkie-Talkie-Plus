@@ -1,6 +1,5 @@
 .class final Lcom/google/gson/internal/UnsafeAllocator$4;
 .super Lcom/google/gson/internal/UnsafeAllocator;
-.source "UnsafeAllocator.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/gson/internal/UnsafeAllocator;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     new-instance v1, Ljava/lang/StringBuilder;

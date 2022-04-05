@@ -1,6 +1,5 @@
 .class abstract Landroidx/transition/Slide$i;
 .super Ljava/lang/Object;
-.source "Slide.java"
 
 # interfaces
 .implements Landroidx/transition/Slide$g;
@@ -21,7 +20,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 .method synthetic constructor <init>(Landroidx/transition/Slide$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Landroidx/transition/Slide$i;-><init>()V
 
     return-void
@@ -41,7 +38,6 @@
 .method public b(Landroid/view/ViewGroup;Landroid/view/View;)F
     .locals 0
 
-    .line 1
     invoke-virtual {p2}, Landroid/view/View;->getTranslationX()F
 
     move-result p1

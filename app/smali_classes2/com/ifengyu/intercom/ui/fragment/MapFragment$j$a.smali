@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$j$a;
 .super Ljava/lang/Object;
-.source "MapFragment.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/baseui/BaseActivity$e;
@@ -21,7 +20,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment$j;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,17 +30,14 @@
 .method public a()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->h()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->N()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -57,7 +52,6 @@
 
     const/4 v2, 0x0
 
-    .line 4
     invoke-static {v1, v0, v2}, Lcom/ifengyu/intercom/g/a;->a(Ljava/lang/String;Ljava/lang/String;Lcom/ifengyu/intercom/g/d/b;)V
 
     :cond_0

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Update;
 .super Ljava/lang/Object;
-.source "Update.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

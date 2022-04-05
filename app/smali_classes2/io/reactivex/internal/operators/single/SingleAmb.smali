@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/single/SingleAmb;
 .super Lio/reactivex/Single;
-.source "SingleAmb.java"
 
 
 # annotations
@@ -59,13 +58,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleAmb;->sources:[Lio/reactivex/SingleSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/single/SingleAmb;->sourcesIterable:Ljava/lang/Iterable;
 
     return-void
@@ -83,7 +79,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleAmb;->sources:[Lio/reactivex/SingleSource;
 
     const-string v1, "One of the sources is null"
@@ -96,7 +91,6 @@
 
     new-array v0, v0, [Lio/reactivex/SingleSource;
 
-    .line 2
     :try_start_0
     iget-object v3, p0, Lio/reactivex/internal/operators/single/SingleAmb;->sourcesIterable:Ljava/lang/Iterable;
 
@@ -121,7 +115,6 @@
 
     if-nez v5, :cond_0
 
-    .line 3
     new-instance v0, Ljava/lang/NullPointerException;
 
     invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
@@ -130,7 +123,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     array-length v6, v0
 
@@ -140,10 +132,8 @@
 
     add-int/2addr v6, v4
 
-    .line 5
     new-array v6, v6, [Lio/reactivex/SingleSource;
 
-    .line 6
     invoke-static {v0, v2, v6, v2, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     move-object v0, v6
@@ -151,7 +141,6 @@
     :cond_1
     add-int/lit8 v6, v4, 0x1
 
-    .line 7
     aput-object v5, v0, v4
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -163,30 +152,24 @@
     :catchall_0
     move-exception v0
 
-    .line 8
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 9
     invoke-static {v0, p1}, Lio/reactivex/internal/disposables/EmptyDisposable;->error(Ljava/lang/Throwable;Lio/reactivex/SingleObserver;)V
 
     return-void
 
-    .line 10
     :cond_2
     array-length v4, v0
 
-    .line 11
     :cond_3
     new-instance v3, Lio/reactivex/disposables/CompositeDisposable;
 
     invoke-direct {v3}, Lio/reactivex/disposables/CompositeDisposable;-><init>()V
 
-    .line 12
     new-instance v5, Lio/reactivex/internal/operators/single/SingleAmb$AmbSingleObserver;
 
     invoke-direct {v5, p1, v3}, Lio/reactivex/internal/operators/single/SingleAmb$AmbSingleObserver;-><init>(Lio/reactivex/SingleObserver;Lio/reactivex/disposables/CompositeDisposable;)V
 
-    .line 13
     invoke-interface {p1, v3}, Lio/reactivex/SingleObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
     const/4 v6, 0x0
@@ -194,10 +177,8 @@
     :goto_1
     if-ge v6, v4, :cond_7
 
-    .line 14
     aget-object v7, v0, v6
 
-    .line 15
     invoke-virtual {v5}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     move-result v8
@@ -209,36 +190,30 @@
     :cond_4
     if-nez v7, :cond_6
 
-    .line 16
     invoke-virtual {v3}, Lio/reactivex/disposables/CompositeDisposable;->dispose()V
 
-    .line 17
     new-instance v0, Ljava/lang/NullPointerException;
 
     invoke-direct {v0, v1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
     const/4 v1, 0x1
 
-    .line 18
     invoke-virtual {v5, v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
 
     move-result v1
 
     if-eqz v1, :cond_5
 
-    .line 19
     invoke-interface {p1, v0}, Lio/reactivex/SingleObserver;->onError(Ljava/lang/Throwable;)V
 
     goto :goto_2
 
-    .line 20
     :cond_5
     invoke-static {v0}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
     :goto_2
     return-void
 
-    .line 21
     :cond_6
     invoke-interface {v7, v5}, Lio/reactivex/SingleSource;->subscribe(Lio/reactivex/SingleObserver;)V
 

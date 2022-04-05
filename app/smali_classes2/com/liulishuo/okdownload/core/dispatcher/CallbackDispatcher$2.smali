@@ -1,6 +1,5 @@
 .class Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher$2;
 .super Ljava/lang/Object;
-.source "CallbackDispatcher.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;Ljava/util/Collection;Ljava/util/Collection;Ljava/util/Collection;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher$2;->this$0:Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;
 
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher$2;->val$completedTaskCollection:Ljava/util/Collection;
@@ -50,7 +48,6 @@
 .method public run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher$2;->val$completedTaskCollection:Ljava/util/Collection;
 
     invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
@@ -72,7 +69,6 @@
 
     check-cast v1, Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 2
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/DownloadTask;->getListener()Lcom/liulishuo/okdownload/DownloadListener;
 
     move-result-object v3
@@ -83,7 +79,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher$2;->val$sameTaskConflictCollection:Ljava/util/Collection;
 
@@ -104,7 +99,6 @@
 
     check-cast v1, Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 4
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/DownloadTask;->getListener()Lcom/liulishuo/okdownload/DownloadListener;
 
     move-result-object v3
@@ -115,7 +109,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher$2;->val$fileBusyCollection:Ljava/util/Collection;
 
@@ -136,7 +129,6 @@
 
     check-cast v1, Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 6
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/DownloadTask;->getListener()Lcom/liulishuo/okdownload/DownloadListener;
 
     move-result-object v3

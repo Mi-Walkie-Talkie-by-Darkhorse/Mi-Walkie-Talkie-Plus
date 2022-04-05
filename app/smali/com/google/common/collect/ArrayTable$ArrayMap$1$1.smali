@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ArrayTable$ArrayMap$1$1;
 .super Lcom/google/common/collect/AbstractIndexedListIterator;
-.source "ArrayTable.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>(Lcom/google/common/collect/ArrayTable$ArrayMap$1;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ArrayTable$ArrayMap$1$1;->this$1:Lcom/google/common/collect/ArrayTable$ArrayMap$1;
 
     invoke-direct {p0, p2}, Lcom/google/common/collect/AbstractIndexedListIterator;-><init>(I)V
@@ -43,7 +41,6 @@
 .method protected bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ArrayTable$ArrayMap$1$1;->get(I)Ljava/util/Map$Entry;
 
     move-result-object p1
@@ -61,7 +58,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/ArrayTable$ArrayMap$1$1$1;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/ArrayTable$ArrayMap$1$1$1;-><init>(Lcom/google/common/collect/ArrayTable$ArrayMap$1$1;I)V

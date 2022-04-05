@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 .super Ljava/lang/Object;
-.source "IPolyline.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/interfaces/IOverlay;

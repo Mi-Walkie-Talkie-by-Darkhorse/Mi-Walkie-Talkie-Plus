@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/util/concurrent/ForwardingListenableFuture;
 .super Lcom/google/common/util/concurrent/ForwardingFuture;
-.source "ForwardingListenableFuture.java"
 
 # interfaces
 .implements Lcom/google/common/util/concurrent/ListenableFuture;
@@ -30,7 +29,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/ForwardingFuture;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingListenableFuture;->delegate()Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object v0
@@ -64,7 +61,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingListenableFuture;->delegate()Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object v0
@@ -75,7 +71,6 @@
 .method protected bridge synthetic delegate()Ljava/util/concurrent/Future;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingListenableFuture;->delegate()Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object v0

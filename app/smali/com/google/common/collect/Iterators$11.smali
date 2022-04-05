@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Iterators$11;
 .super Lcom/google/common/collect/AbstractIndexedListIterator;
-.source "Iterators.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(II[Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     iput-object p3, p0, Lcom/google/common/collect/Iterators$11;->val$array:[Ljava/lang/Object;
 
     iput p4, p0, Lcom/google/common/collect/Iterators$11;->val$offset:I
@@ -51,7 +49,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Iterators$11;->val$array:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/Iterators$11;->val$offset:I

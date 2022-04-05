@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlinx/android/parcel/RawValue;
 .super Ljava/lang/Object;
-.source "RawValue.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

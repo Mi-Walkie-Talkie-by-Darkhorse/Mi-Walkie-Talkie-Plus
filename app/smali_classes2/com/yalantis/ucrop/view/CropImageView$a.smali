@@ -1,6 +1,5 @@
 .class Lcom/yalantis/ucrop/view/CropImageView$a;
 .super Ljava/lang/Object;
-.source "CropImageView.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -51,45 +50,34 @@
 .method public constructor <init>(Lcom/yalantis/ucrop/view/CropImageView;JFFFFFFZ)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->a:Ljava/lang/ref/WeakReference;
 
-    .line 3
     iput-wide p2, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->b:J
 
-    .line 4
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide p1
 
     iput-wide p1, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->c:J
 
-    .line 5
     iput p4, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->d:F
 
-    .line 6
     iput p5, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->e:F
 
-    .line 7
     iput p6, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->f:F
 
-    .line 8
     iput p7, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->g:F
 
-    .line 9
     iput p8, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->h:F
 
-    .line 10
     iput p9, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->i:F
 
-    .line 11
     iput-boolean p10, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->j:Z
 
     return-void
@@ -100,7 +88,6 @@
 .method public run()V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -113,13 +100,11 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    .line 3
     iget-wide v3, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->b:J
 
     iget-wide v5, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->c:J
@@ -132,7 +117,6 @@
 
     long-to-float v1, v1
 
-    .line 4
     iget v2, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->f:F
 
     iget-wide v3, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->b:J
@@ -145,7 +129,6 @@
 
     move-result v2
 
-    .line 5
     iget v3, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->g:F
 
     iget-wide v5, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->b:J
@@ -156,7 +139,6 @@
 
     move-result v3
 
-    .line 6
     iget v5, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->i:F
 
     iget-wide v6, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->b:J
@@ -167,7 +149,6 @@
 
     move-result v4
 
-    .line 7
     iget-wide v5, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->b:J
 
     long-to-float v5, v5
@@ -176,7 +157,6 @@
 
     if-gez v1, :cond_2
 
-    .line 8
     iget-object v1, v0, Lcom/yalantis/ucrop/view/TransformImageView;->b:[F
 
     const/4 v5, 0x0
@@ -201,12 +181,10 @@
 
     invoke-virtual {v0, v2, v3}, Lcom/yalantis/ucrop/view/TransformImageView;->a(FF)V
 
-    .line 9
     iget-boolean v1, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->j:Z
 
     if-nez v1, :cond_1
 
-    .line 10
     iget v1, p0, Lcom/yalantis/ucrop/view/CropImageView$a;->h:F
 
     add-float/2addr v1, v4
@@ -229,7 +207,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/yalantis/ucrop/view/CropImageView;->c(FFF)V
 
-    .line 11
     :cond_1
     invoke-virtual {v0}, Lcom/yalantis/ucrop/view/CropImageView;->h()Z
 
@@ -237,7 +214,6 @@
 
     if-nez v1, :cond_2
 
-    .line 12
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->post(Ljava/lang/Runnable;)Z
 
     :cond_2

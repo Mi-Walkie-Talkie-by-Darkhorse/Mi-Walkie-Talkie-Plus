@@ -1,13 +1,11 @@
 .class public final Lcom/amap/api/col/l3/it;
 .super Lcom/amap/api/col/l3/iu;
-.source "StatisticsPubDataStrategy.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/iu;-><init>()V
 
     return-void
@@ -16,7 +14,6 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/iu;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/iu;-><init>(Lcom/amap/api/col/l3/iu;)V
 
     return-void
@@ -27,12 +24,10 @@
 .method protected final a([B)[B
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuffer;
 
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
 
-    .line 2
     new-instance v1, Ljava/text/SimpleDateFormat;
 
     const-string v2, "yyyyMMdd HHmmss"
@@ -51,10 +46,8 @@
 
     const-string v1, " "
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 4
     invoke-static {}, Ljava/util/UUID;->randomUUID()Ljava/util/UUID;
 
     move-result-object v2
@@ -65,10 +58,8 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 6
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->length()I
 
     move-result v1
@@ -83,7 +74,6 @@
 
     return-object p1
 
-    .line 7
     :cond_0
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -93,7 +83,6 @@
 
     move-result-object v0
 
-    .line 8
     array-length v1, v0
 
     array-length v3, p1
@@ -102,12 +91,10 @@
 
     new-array v1, v1, [B
 
-    .line 9
     array-length v3, v0
 
     invoke-static {v0, v2, v1, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 10
     array-length v0, v0
 
     array-length v3, p1

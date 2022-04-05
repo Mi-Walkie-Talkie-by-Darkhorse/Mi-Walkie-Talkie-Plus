@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/blelib/e/a;
 .super Ljava/lang/Object;
-.source "CustomDataMerge.java"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/data/b;
@@ -24,7 +23,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,7 +31,6 @@
 .method private a([B)Z
     .locals 4
 
-    .line 8
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -44,7 +41,6 @@
 
     return v1
 
-    .line 9
     :cond_0
     aget-byte v0, p1, v1
 
@@ -90,7 +86,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     invoke-direct {p0, p2}, Lcom/ifengyu/blelib/e/a;->a([B)Z
 
@@ -98,14 +93,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 2
     invoke-static {p2}, Lcom/ifengyu/blelib/d/f;->e([B)I
 
     move-result v1
 
     iput v1, p0, Lcom/ifengyu/blelib/e/a;->a:I
 
-    .line 3
     sget-object v1, Lcom/ifengyu/blelib/e/a;->b:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -126,7 +119,6 @@
 
     invoke-static {v1, v2}, Lcom/ifengyu/blelib/a;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     :cond_1
     invoke-static {}, Lcom/ifengyu/blelib/a;->a()Z
 
@@ -134,7 +126,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 5
     sget-object v1, Lcom/ifengyu/blelib/e/a;->b:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -167,11 +158,9 @@
 
     invoke-static {v1, p3}, Lcom/ifengyu/blelib/a;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     :cond_2
     invoke-virtual {p1, p2}, Lno/nordicsemi/android/ble/data/d;->a([B)Z
 
-    .line 7
     invoke-virtual {p1}, Lno/nordicsemi/android/ble/data/d;->a()I
 
     move-result p1

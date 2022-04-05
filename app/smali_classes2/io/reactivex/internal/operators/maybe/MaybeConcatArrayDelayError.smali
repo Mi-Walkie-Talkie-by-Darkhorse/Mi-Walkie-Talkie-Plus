@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/maybe/MaybeConcatArrayDelayError;
 .super Lio/reactivex/Flowable;
-.source "MaybeConcatArrayDelayError.java"
 
 
 # annotations
@@ -44,10 +43,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Flowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/maybe/MaybeConcatArrayDelayError;->sources:[Lio/reactivex/MaybeSource;
 
     return-void
@@ -65,17 +62,14 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeConcatArrayDelayError$ConcatMaybeObserver;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/maybe/MaybeConcatArrayDelayError;->sources:[Lio/reactivex/MaybeSource;
 
     invoke-direct {v0, p1, v1}, Lio/reactivex/internal/operators/maybe/MaybeConcatArrayDelayError$ConcatMaybeObserver;-><init>(Lc/a/c;[Lio/reactivex/MaybeSource;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 3
     invoke-virtual {v0}, Lio/reactivex/internal/operators/maybe/MaybeConcatArrayDelayError$ConcatMaybeObserver;->drain()V
 
     return-void

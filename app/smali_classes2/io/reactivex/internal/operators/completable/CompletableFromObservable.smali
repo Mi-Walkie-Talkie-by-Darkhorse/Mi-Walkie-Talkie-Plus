@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/completable/CompletableFromObservable;
 .super Lio/reactivex/Completable;
-.source "CompletableFromObservable.java"
 
 
 # annotations
@@ -42,10 +41,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableFromObservable;->observable:Lio/reactivex/ObservableSource;
 
     return-void
@@ -56,7 +53,6 @@
 .method protected subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableFromObservable;->observable:Lio/reactivex/ObservableSource;
 
     new-instance v1, Lio/reactivex/internal/operators/completable/CompletableFromObservable$CompletableFromObservableObserver;

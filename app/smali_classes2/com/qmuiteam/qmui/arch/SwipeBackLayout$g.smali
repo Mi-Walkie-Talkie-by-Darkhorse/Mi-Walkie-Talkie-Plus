@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/arch/SwipeBackLayout$g;
 .super Ljava/lang/Object;
-.source "SwipeBackLayout.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/arch/SwipeBackLayout$f;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,7 +59,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p3}, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$g;->b(I)Z
 
     move-result p3
@@ -70,7 +67,6 @@
 
     if-eqz p3, :cond_0
 
-    .line 2
     invoke-virtual {p2}, Landroid/view/View;->getLeft()I
 
     move-result p2
@@ -93,7 +89,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {p2}, Landroid/view/View;->getTop()I
 
@@ -118,7 +113,6 @@
     :goto_0
     const/4 p2, 0x0
 
-    .line 4
     invoke-static {p1, p2, v0}, Lcom/qmuiteam/qmui/util/g;->a(FFF)F
 
     move-result p1
@@ -164,21 +158,18 @@
         .end annotation
     .end param
 
-    .line 5
     invoke-direct {p0, p2}, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$g;->b(I)Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
-    .line 6
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getWidth()I
 
     move-result p1
 
     return p1
 
-    .line 7
     :cond_0
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getHeight()I
 
@@ -210,7 +201,6 @@
 
     if-nez p3, :cond_6
 
-    .line 8
     invoke-virtual {p0, p1, p2, p4}, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$g;->a(Lcom/qmuiteam/qmui/arch/SwipeBackLayout;Landroid/view/View;I)F
 
     move-result p2
@@ -219,7 +209,6 @@
 
     if-lez p2, :cond_6
 
-    .line 9
     :cond_0
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getWidth()I
 
@@ -240,7 +229,6 @@
 
     if-nez p3, :cond_6
 
-    .line 10
     invoke-virtual {p0, p1, p2, p4}, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$g;->a(Lcom/qmuiteam/qmui/arch/SwipeBackLayout;Landroid/view/View;I)F
 
     move-result p2
@@ -249,7 +237,6 @@
 
     if-lez p2, :cond_6
 
-    .line 11
     :cond_2
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getWidth()I
 
@@ -271,7 +258,6 @@
 
     if-nez p3, :cond_6
 
-    .line 12
     invoke-virtual {p0, p1, p2, p4}, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$g;->a(Lcom/qmuiteam/qmui/arch/SwipeBackLayout;Landroid/view/View;I)F
 
     move-result p2
@@ -280,7 +266,6 @@
 
     if-lez p2, :cond_6
 
-    .line 13
     :cond_4
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getHeight()I
 
@@ -297,7 +282,6 @@
 
     if-nez p3, :cond_6
 
-    .line 14
     invoke-virtual {p0, p1, p2, p4}, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$g;->a(Lcom/qmuiteam/qmui/arch/SwipeBackLayout;Landroid/view/View;I)F
 
     move-result p2
@@ -313,7 +297,6 @@
 
     return p1
 
-    .line 15
     :cond_7
     :goto_1
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getHeight()I
@@ -344,7 +327,6 @@
 
     if-ne p4, v0, :cond_0
 
-    .line 16
     invoke-virtual {p3}, Lcom/qmuiteam/qmui/util/m;->c()I
 
     move-result p4
@@ -355,7 +337,6 @@
 
     float-to-int p4, p4
 
-    .line 17
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getWidth()I
 
     move-result p1
@@ -364,7 +345,6 @@
 
     move-result p1
 
-    .line 18
     invoke-virtual {p3, p1}, Lcom/qmuiteam/qmui/util/m;->a(I)Z
 
     goto :goto_0
@@ -374,7 +354,6 @@
 
     if-ne p4, v0, :cond_1
 
-    .line 19
     invoke-virtual {p3}, Lcom/qmuiteam/qmui/util/m;->c()I
 
     move-result p4
@@ -385,7 +364,6 @@
 
     float-to-int p4, p4
 
-    .line 20
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getWidth()I
 
     move-result p1
@@ -396,7 +374,6 @@
 
     move-result p1
 
-    .line 21
     invoke-virtual {p3, p1}, Lcom/qmuiteam/qmui/util/m;->a(I)Z
 
     goto :goto_0
@@ -406,7 +383,6 @@
 
     if-ne p4, v0, :cond_2
 
-    .line 22
     invoke-virtual {p3}, Lcom/qmuiteam/qmui/util/m;->d()I
 
     move-result p4
@@ -417,7 +393,6 @@
 
     float-to-int p4, p4
 
-    .line 23
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result p1
@@ -426,12 +401,10 @@
 
     move-result p1
 
-    .line 24
     invoke-virtual {p3, p1}, Lcom/qmuiteam/qmui/util/m;->b(I)Z
 
     goto :goto_0
 
-    .line 25
     :cond_2
     invoke-virtual {p3}, Lcom/qmuiteam/qmui/util/m;->d()I
 
@@ -443,7 +416,6 @@
 
     float-to-int p4, p4
 
-    .line 26
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result p1
@@ -454,7 +426,6 @@
 
     move-result p1
 
-    .line 27
     invoke-virtual {p3, p1}, Lcom/qmuiteam/qmui/util/m;->b(I)Z
 
     :goto_0

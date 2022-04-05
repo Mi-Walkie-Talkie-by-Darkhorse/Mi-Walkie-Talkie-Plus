@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/internal/PureReifiable;
 .super Ljava/lang/Object;
-.source "InternalAnnotations.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

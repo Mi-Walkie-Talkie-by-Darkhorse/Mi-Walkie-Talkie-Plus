@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/internal/fuseable/FuseToMaybe;
 .super Ljava/lang/Object;
-.source "FuseToMaybe.java"
 
 
 # annotations

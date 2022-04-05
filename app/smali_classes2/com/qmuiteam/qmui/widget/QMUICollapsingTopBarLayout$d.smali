@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/QMUICollapsingTopBarLayout$d;
 .super Ljava/lang/Object;
-.source "QMUICollapsingTopBarLayout.java"
 
 
 # annotations

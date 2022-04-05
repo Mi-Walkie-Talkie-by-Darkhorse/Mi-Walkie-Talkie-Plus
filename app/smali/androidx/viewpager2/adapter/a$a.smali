@@ -1,6 +1,5 @@
 .class Landroidx/viewpager2/adapter/a$a;
 .super Ljava/lang/Object;
-.source "FragmentStateAdapter.java"
 
 
 # annotations

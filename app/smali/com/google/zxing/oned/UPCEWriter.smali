@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/oned/UPCEWriter;
 .super Lcom/google/zxing/oned/UPCEANWriter;
-.source "UPCEWriter.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/oned/UPCEANWriter;-><init>()V
 
     return-void
@@ -40,19 +38,16 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/zxing/BarcodeFormat;->UPC_E:Lcom/google/zxing/BarcodeFormat;
 
     if-ne p2, v0, :cond_0
 
-    .line 2
     invoke-super/range {p0 .. p5}, Lcom/google/zxing/oned/OneDimensionalCodeWriter;->encode(Ljava/lang/String;Lcom/google/zxing/BarcodeFormat;IILjava/util/Map;)Lcom/google/zxing/common/BitMatrix;
 
     move-result-object p1
 
     return-object p1
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -76,7 +71,6 @@
 .method public encode(Ljava/lang/String;)[Z
     .locals 9
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -89,7 +83,6 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 5
     :try_start_0
     invoke-static {p1}, Lcom/google/zxing/oned/UPCEANReader;->checkStandardUPCEANChecksum(Ljava/lang/CharSequence;)Z
 
@@ -99,7 +92,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -111,7 +103,6 @@
     :try_end_0
     .catch Lcom/google/zxing/FormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 7
     :catch_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -121,7 +112,6 @@
 
     throw p1
 
-    .line 8
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -141,7 +131,6 @@
 
     throw p1
 
-    .line 9
     :cond_2
     :try_start_1
     invoke-static {p1}, Lcom/google/zxing/oned/UPCEReader;->convertUPCEtoUPCA(Ljava/lang/String;)Ljava/lang/String;
@@ -154,7 +143,6 @@
     :try_end_1
     .catch Lcom/google/zxing/FormatException; {:try_start_1 .. :try_end_1} :catch_1
 
-    .line 10
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -170,7 +158,6 @@
     :goto_0
     const/4 v0, 0x0
 
-    .line 11
     invoke-virtual {p1, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -189,7 +176,6 @@
 
     goto :goto_1
 
-    .line 12
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -199,7 +185,6 @@
 
     throw p1
 
-    .line 13
     :cond_4
     :goto_1
     invoke-virtual {p1, v1}, Ljava/lang/String;->charAt(I)C
@@ -210,7 +195,6 @@
 
     move-result v1
 
-    .line 14
     sget-object v5, Lcom/google/zxing/oned/UPCEReader;->NUMSYS_AND_CHECK_DIGIT_PATTERNS:[[I
 
     aget-object v2, v5, v2
@@ -221,7 +205,6 @@
 
     new-array v2, v2, [Z
 
-    .line 15
     sget-object v5, Lcom/google/zxing/oned/UPCEANReader;->START_END_PATTERN:[I
 
     invoke-static {v2, v0, v5, v4}, Lcom/google/zxing/oned/OneDimensionalCodeWriter;->appendPattern([ZI[IZ)I
@@ -237,7 +220,6 @@
 
     if-gt v6, v7, :cond_6
 
-    .line 16
     invoke-virtual {p1, v6}, Ljava/lang/String;->charAt(I)C
 
     move-result v8
@@ -256,7 +238,6 @@
 
     add-int/lit8 v8, v8, 0xa
 
-    .line 17
     :cond_5
     sget-object v7, Lcom/google/zxing/oned/UPCEANReader;->L_AND_G_PATTERNS:[[I
 
@@ -272,7 +253,6 @@
 
     goto :goto_2
 
-    .line 18
     :cond_6
     sget-object p1, Lcom/google/zxing/oned/UPCEANReader;->END_PATTERN:[I
 
@@ -283,7 +263,6 @@
     :catch_1
     move-exception p1
 
-    .line 19
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V

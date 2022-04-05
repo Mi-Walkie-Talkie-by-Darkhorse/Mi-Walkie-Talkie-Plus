@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;
 .super Ljava/lang/Object;
-.source "BottomSheetBehavior.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -31,15 +30,12 @@
 .method constructor <init>(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;Landroid/view/View;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;->this$0:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;->view:Landroid/view/View;
 
-    .line 3
     iput p3, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;->targetState:I
 
     return-void
@@ -48,7 +44,6 @@
 .method static synthetic access$300(Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;->isPosted:Z
 
     return p0
@@ -57,7 +52,6 @@
 .method static synthetic access$302(Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;->isPosted:Z
 
     return p1
@@ -68,7 +62,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;->this$0:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     iget-object v0, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->viewDragHelper:Landroidx/customview/a/c;
@@ -83,14 +76,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;->view:Landroid/view/View;
 
     invoke-static {v0, p0}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;Ljava/lang/Runnable;)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;->this$0:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
@@ -101,7 +92,6 @@
     :goto_0
     const/4 v0, 0x0
 
-    .line 4
     iput-boolean v0, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SettleRunnable;->isPosted:Z
 
     return-void

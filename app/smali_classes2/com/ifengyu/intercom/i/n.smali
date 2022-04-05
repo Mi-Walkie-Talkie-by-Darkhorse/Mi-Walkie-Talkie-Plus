@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/n;
 .super Ljava/lang/Object;
-.source "Calculate.java"
 
 
 # direct methods
@@ -45,7 +44,6 @@
 
     float-to-double p0, p0
 
-    .line 1
     invoke-static {p0, p1}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide p0

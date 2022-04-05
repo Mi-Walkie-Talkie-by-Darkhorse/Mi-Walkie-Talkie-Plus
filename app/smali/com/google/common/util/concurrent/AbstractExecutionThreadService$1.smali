@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/AbstractExecutionThreadService$1;
 .super Lcom/google/common/util/concurrent/AbstractService;
-.source "AbstractExecutionThreadService.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/AbstractExecutionThreadService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/AbstractExecutionThreadService$1;->this$0:Lcom/google/common/util/concurrent/AbstractExecutionThreadService;
 
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;-><init>()V
@@ -35,7 +33,6 @@
 .method protected final doStart()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractExecutionThreadService$1;->this$0:Lcom/google/common/util/concurrent/AbstractExecutionThreadService;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/AbstractExecutionThreadService;->executor()Ljava/util/concurrent/Executor;
@@ -50,7 +47,6 @@
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Lcom/google/common/util/concurrent/AbstractExecutionThreadService$1$2;
 
     invoke-direct {v1, p0}, Lcom/google/common/util/concurrent/AbstractExecutionThreadService$1$2;-><init>(Lcom/google/common/util/concurrent/AbstractExecutionThreadService$1;)V
@@ -63,7 +59,6 @@
 .method protected doStop()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractExecutionThreadService$1;->this$0:Lcom/google/common/util/concurrent/AbstractExecutionThreadService;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/AbstractExecutionThreadService;->triggerShutdown()V

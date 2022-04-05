@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/la;
 .super Ljava/lang/Object;
-.source "CgiManager.java"
 
 
 # annotations

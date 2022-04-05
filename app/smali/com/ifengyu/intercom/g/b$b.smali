@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/g/b$b;
 .super Ljava/lang/Object;
-.source "OkHttpUtils.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/g/b;Lcom/ifengyu/intercom/g/d/b;Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/ifengyu/intercom/g/b$b;->a:Lcom/ifengyu/intercom/g/d/b;
 
     iput-object p3, p0, Lcom/ifengyu/intercom/g/b$b;->b:Lokhttp3/Call;
@@ -50,7 +48,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/g/b$b;->a:Lcom/ifengyu/intercom/g/d/b;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/g/b$b;->b:Lokhttp3/Call;
@@ -61,7 +58,6 @@
 
     invoke-virtual {v0, v1, v2, v3}, Lcom/ifengyu/intercom/g/d/b;->a(Lokhttp3/Call;Ljava/lang/Exception;I)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/g/b$b;->a:Lcom/ifengyu/intercom/g/d/b;
 
     iget v1, p0, Lcom/ifengyu/intercom/g/b$b;->d:I

@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/dialog/MaterialDialogs;
 .super Ljava/lang/Object;
-.source "MaterialDialogs.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +32,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget-object v2, Lcom/google/android/material/R$styleable;->MaterialAlertDialog:[I
 
     const/4 v0, 0x0
@@ -49,102 +46,82 @@
 
     move v4, p2
 
-    .line 2
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/ThemeEnforcement;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 3
     sget p2, Lcom/google/android/material/R$styleable;->MaterialAlertDialog_backgroundInsetStart:I
 
-    .line 4
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
     sget v1, Lcom/google/android/material/R$dimen;->mtrl_alert_dialog_background_inset_start:I
 
-    .line 5
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v0
 
-    .line 6
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p2
 
-    .line 7
     sget v0, Lcom/google/android/material/R$styleable;->MaterialAlertDialog_backgroundInsetTop:I
 
-    .line 8
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
     sget v2, Lcom/google/android/material/R$dimen;->mtrl_alert_dialog_background_inset_top:I
 
-    .line 9
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v1
 
-    .line 10
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
 
-    .line 11
     sget v1, Lcom/google/android/material/R$styleable;->MaterialAlertDialog_backgroundInsetEnd:I
 
-    .line 12
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
     sget v3, Lcom/google/android/material/R$dimen;->mtrl_alert_dialog_background_inset_end:I
 
-    .line 13
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v2
 
-    .line 14
     invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v1
 
-    .line 15
     sget v2, Lcom/google/android/material/R$styleable;->MaterialAlertDialog_backgroundInsetBottom:I
 
-    .line 16
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
     sget v4, Lcom/google/android/material/R$dimen;->mtrl_alert_dialog_background_inset_bottom:I
 
-    .line 17
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v3
 
-    .line 18
     invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v2
 
-    .line 19
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 20
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x11
 
     if-lt p1, v3, :cond_0
 
-    .line 21
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -167,7 +144,6 @@
 
     move p2, v6
 
-    .line 22
     :cond_0
     new-instance p0, Landroid/graphics/Rect;
 
@@ -189,7 +165,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v6, Landroid/graphics/drawable/InsetDrawable;
 
     iget v2, p1, Landroid/graphics/Rect;->left:I

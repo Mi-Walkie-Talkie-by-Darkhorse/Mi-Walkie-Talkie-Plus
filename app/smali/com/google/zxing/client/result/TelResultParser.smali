@@ -1,13 +1,11 @@
 .class public final Lcom/google/zxing/client/result/TelResultParser;
 .super Lcom/google/zxing/client/result/ResultParser;
-.source "TelResultParser.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/client/result/ResultParser;-><init>()V
 
     return-void
@@ -18,7 +16,6 @@
 .method public bridge synthetic parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/ParsedResult;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/zxing/client/result/TelResultParser;->parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/TelParsedResult;
 
     move-result-object p1
@@ -29,14 +26,12 @@
 .method public parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/TelParsedResult;
     .locals 4
 
-    .line 2
     invoke-static {p1}, Lcom/google/zxing/client/result/ResultParser;->getMassagedText(Lcom/google/zxing/Result;)Ljava/lang/String;
 
     move-result-object p1
 
     const-string v0, "tel:"
 
-    .line 3
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
@@ -55,7 +50,6 @@
 
     return-object v2
 
-    .line 4
     :cond_0
     invoke-virtual {p1, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -87,14 +81,12 @@
     :goto_0
     const/16 v1, 0x3f
 
-    .line 5
     invoke-virtual {p1, v1, v3}, Ljava/lang/String;->indexOf(II)I
 
     move-result v1
 
     if-gez v1, :cond_2
 
-    .line 6
     invoke-virtual {p1, v3}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
@@ -106,7 +98,6 @@
 
     move-result-object p1
 
-    .line 7
     :goto_1
     new-instance v1, Lcom/google/zxing/client/result/TelParsedResult;
 

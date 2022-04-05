@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/core/interceptor/Interceptor$Connect;
 .super Ljava/lang/Object;
-.source "Interceptor.java"
 
 
 # annotations

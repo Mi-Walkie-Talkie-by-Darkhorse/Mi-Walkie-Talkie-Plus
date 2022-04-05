@@ -1,6 +1,5 @@
 .class final Lcom/google/common/net/MediaType$Tokenizer;
 .super Ljava/lang/Object;
-.source "MediaType.java"
 
 
 # annotations
@@ -24,15 +23,12 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/google/common/net/MediaType$Tokenizer;->position:I
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/net/MediaType$Tokenizer;->input:Ljava/lang/String;
 
     return-void
@@ -43,14 +39,12 @@
 .method consumeCharacter(C)C
     .locals 2
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/common/net/MediaType$Tokenizer;->hasMore()Z
 
     move-result v0
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 6
     invoke-virtual {p0}, Lcom/google/common/net/MediaType$Tokenizer;->previewChar()C
 
     move-result v0
@@ -69,7 +63,6 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 7
     iget v0, p0, Lcom/google/common/net/MediaType$Tokenizer;->position:I
 
     add-int/2addr v0, v1
@@ -82,26 +75,22 @@
 .method consumeCharacter(Lcom/google/common/base/CharMatcher;)C
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/net/MediaType$Tokenizer;->hasMore()Z
 
     move-result v0
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/net/MediaType$Tokenizer;->previewChar()C
 
     move-result v0
 
-    .line 3
     invoke-virtual {p1, v0}, Lcom/google/common/base/CharMatcher;->matches(C)Z
 
     move-result p1
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 4
     iget p1, p0, Lcom/google/common/net/MediaType$Tokenizer;->position:I
 
     add-int/lit8 p1, p1, 0x1
@@ -114,15 +103,12 @@
 .method consumeToken(Lcom/google/common/base/CharMatcher;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/common/net/MediaType$Tokenizer;->position:I
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/net/MediaType$Tokenizer;->consumeTokenIfPresent(Lcom/google/common/base/CharMatcher;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3
     iget v1, p0, Lcom/google/common/net/MediaType$Tokenizer;->position:I
 
     if-eq v1, v0, :cond_0
@@ -143,17 +129,14 @@
 .method consumeTokenIfPresent(Lcom/google/common/base/CharMatcher;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/net/MediaType$Tokenizer;->hasMore()Z
 
     move-result v0
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 2
     iget v0, p0, Lcom/google/common/net/MediaType$Tokenizer;->position:I
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/common/base/CharMatcher;->negate()Lcom/google/common/base/CharMatcher;
 
     move-result-object p1
@@ -166,7 +149,6 @@
 
     iput p1, p0, Lcom/google/common/net/MediaType$Tokenizer;->position:I
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/common/net/MediaType$Tokenizer;->hasMore()Z
 
     move-result p1
@@ -197,7 +179,6 @@
 .method hasMore()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/common/net/MediaType$Tokenizer;->position:I
 
     if-ltz v0, :cond_0
@@ -224,14 +205,12 @@
 .method previewChar()C
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/net/MediaType$Tokenizer;->hasMore()Z
 
     move-result v0
 
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/net/MediaType$Tokenizer;->input:Ljava/lang/String;
 
     iget v1, p0, Lcom/google/common/net/MediaType$Tokenizer;->position:I

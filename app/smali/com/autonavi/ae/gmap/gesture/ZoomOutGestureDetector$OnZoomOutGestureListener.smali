@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector$OnZoomOutGestureListener;
 .super Ljava/lang/Object;
-.source "ZoomOutGestureDetector.java"
 
 
 # annotations

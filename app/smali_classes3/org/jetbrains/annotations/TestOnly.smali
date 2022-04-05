@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/jetbrains/annotations/TestOnly;
 .super Ljava/lang/Object;
-.source "TestOnly.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

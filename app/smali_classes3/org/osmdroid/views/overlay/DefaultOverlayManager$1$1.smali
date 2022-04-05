@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/views/overlay/DefaultOverlayManager$1$1;
 .super Ljava/lang/Object;
-.source "DefaultOverlayManager.java"
 
 # interfaces
 .implements Ljava/util/Iterator;
@@ -36,7 +35,6 @@
 .method constructor <init>(Lorg/osmdroid/views/overlay/DefaultOverlayManager$1;Ljava/util/ListIterator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/DefaultOverlayManager$1$1;->this$1:Lorg/osmdroid/views/overlay/DefaultOverlayManager$1;
 
     iput-object p2, p0, Lorg/osmdroid/views/overlay/DefaultOverlayManager$1$1;->val$i:Ljava/util/ListIterator;
@@ -51,7 +49,6 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/DefaultOverlayManager$1$1;->val$i:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->hasPrevious()Z
@@ -64,7 +61,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/DefaultOverlayManager$1$1;->next()Lorg/osmdroid/views/overlay/Overlay;
 
     move-result-object v0
@@ -75,7 +71,6 @@
 .method public next()Lorg/osmdroid/views/overlay/Overlay;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/DefaultOverlayManager$1$1;->val$i:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
@@ -90,7 +85,6 @@
 .method public remove()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/DefaultOverlayManager$1$1;->val$i:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->remove()V

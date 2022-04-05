@@ -1,6 +1,5 @@
 .class final Lcom/google/protobuf/FieldSet;
 .super Ljava/lang/Object;
-.source "FieldSet.java"
 
 
 # annotations
@@ -45,7 +44,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/FieldSet;
 
     const/4 v1, 0x1
@@ -60,17 +58,14 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/google/protobuf/FieldSet;->hasLazyField:Z
 
     const/16 v0, 0x10
 
-    .line 3
     invoke-static {v0}, Lcom/google/protobuf/SmallSortedMap;->newFieldMap(I)Lcom/google/protobuf/SmallSortedMap;
 
     move-result-object v0
@@ -83,22 +78,18 @@
 .method private constructor <init>(Z)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 5
     iput-boolean p1, p0, Lcom/google/protobuf/FieldSet;->hasLazyField:Z
 
-    .line 6
     invoke-static {p1}, Lcom/google/protobuf/SmallSortedMap;->newFieldMap(I)Lcom/google/protobuf/SmallSortedMap;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
-    .line 7
     invoke-virtual {p0}, Lcom/google/protobuf/FieldSet;->makeImmutable()V
 
     return-void
@@ -120,24 +111,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;
 
-    .line 2
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p2
 
-    .line 3
     instance-of v1, p2, Lcom/google/protobuf/LazyField;
 
     if-eqz v1, :cond_0
 
-    .line 4
     check-cast p2, Lcom/google/protobuf/LazyField;
 
     invoke-virtual {p2}, Lcom/google/protobuf/LazyField;->getValue()Lcom/google/protobuf/MessageLite;
@@ -148,7 +135,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-interface {p1, v0, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -159,20 +145,16 @@
 .method private cloneIfMutable(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
 
-    .line 1
     instance-of v0, p1, [B
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, [B
 
-    .line 3
     array-length v0, p1
 
     new-array v0, v0, [B
 
-    .line 4
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -188,19 +170,16 @@
 .method private static computeElementSize(Lcom/google/protobuf/WireFormat$FieldType;ILjava/lang/Object;)I
     .locals 1
 
-    .line 1
     invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->computeTagSize(I)I
 
     move-result p1
 
-    .line 2
     sget-object v0, Lcom/google/protobuf/WireFormat$FieldType;->GROUP:Lcom/google/protobuf/WireFormat$FieldType;
 
     if-ne p0, v0, :cond_0
 
     mul-int/lit8 p1, p1, 0x2
 
-    .line 3
     :cond_0
     invoke-static {p0, p2}, Lcom/google/protobuf/FieldSet;->computeElementSizeNoTag(Lcom/google/protobuf/WireFormat$FieldType;Ljava/lang/Object;)I
 
@@ -214,7 +193,6 @@
 .method private static computeElementSizeNoTag(Lcom/google/protobuf/WireFormat$FieldType;Ljava/lang/Object;)I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/FieldSet$1;->$SwitchMap$com$google$protobuf$WireFormat$FieldType:[I
 
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
@@ -225,7 +203,6 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 2
     new-instance p0, Ljava/lang/RuntimeException;
 
     const-string p1, "There is no way to get here, but the compiler thinks otherwise."
@@ -234,13 +211,11 @@
 
     throw p0
 
-    .line 3
     :pswitch_0
     instance-of p0, p1, Lcom/google/protobuf/Internal$EnumLite;
 
     if-eqz p0, :cond_0
 
-    .line 4
     check-cast p1, Lcom/google/protobuf/Internal$EnumLite;
 
     invoke-interface {p1}, Lcom/google/protobuf/Internal$EnumLite;->getNumber()I
@@ -253,7 +228,6 @@
 
     return p0
 
-    .line 5
     :cond_0
     check-cast p1, Ljava/lang/Integer;
 
@@ -267,13 +241,11 @@
 
     return p0
 
-    .line 6
     :pswitch_1
     instance-of p0, p1, Lcom/google/protobuf/LazyField;
 
     if-eqz p0, :cond_1
 
-    .line 7
     check-cast p1, Lcom/google/protobuf/LazyField;
 
     invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->computeLazyFieldSizeNoTag(Lcom/google/protobuf/LazyFieldLite;)I
@@ -282,7 +254,6 @@
 
     return p0
 
-    .line 8
     :cond_1
     check-cast p1, Lcom/google/protobuf/MessageLite;
 
@@ -292,7 +263,6 @@
 
     return p0
 
-    .line 9
     :pswitch_2
     check-cast p1, Lcom/google/protobuf/MessageLite;
 
@@ -302,7 +272,6 @@
 
     return p0
 
-    .line 10
     :pswitch_3
     check-cast p1, Ljava/lang/Long;
 
@@ -316,7 +285,6 @@
 
     return p0
 
-    .line 11
     :pswitch_4
     check-cast p1, Ljava/lang/Integer;
 
@@ -330,7 +298,6 @@
 
     return p0
 
-    .line 12
     :pswitch_5
     check-cast p1, Ljava/lang/Long;
 
@@ -344,7 +311,6 @@
 
     return p0
 
-    .line 13
     :pswitch_6
     check-cast p1, Ljava/lang/Integer;
 
@@ -358,7 +324,6 @@
 
     return p0
 
-    .line 14
     :pswitch_7
     check-cast p1, Ljava/lang/Integer;
 
@@ -372,13 +337,11 @@
 
     return p0
 
-    .line 15
     :pswitch_8
     instance-of p0, p1, Lcom/google/protobuf/ByteString;
 
     if-eqz p0, :cond_2
 
-    .line 16
     check-cast p1, Lcom/google/protobuf/ByteString;
 
     invoke-static {p1}, Lcom/google/protobuf/CodedOutputStream;->computeBytesSizeNoTag(Lcom/google/protobuf/ByteString;)I
@@ -387,7 +350,6 @@
 
     return p0
 
-    .line 17
     :cond_2
     check-cast p1, [B
 
@@ -397,7 +359,6 @@
 
     return p0
 
-    .line 18
     :pswitch_9
     check-cast p1, Ljava/lang/String;
 
@@ -407,7 +368,6 @@
 
     return p0
 
-    .line 19
     :pswitch_a
     check-cast p1, Ljava/lang/Boolean;
 
@@ -421,7 +381,6 @@
 
     return p0
 
-    .line 20
     :pswitch_b
     check-cast p1, Ljava/lang/Integer;
 
@@ -435,7 +394,6 @@
 
     return p0
 
-    .line 21
     :pswitch_c
     check-cast p1, Ljava/lang/Long;
 
@@ -449,7 +407,6 @@
 
     return p0
 
-    .line 22
     :pswitch_d
     check-cast p1, Ljava/lang/Integer;
 
@@ -463,7 +420,6 @@
 
     return p0
 
-    .line 23
     :pswitch_e
     check-cast p1, Ljava/lang/Long;
 
@@ -477,7 +433,6 @@
 
     return p0
 
-    .line 24
     :pswitch_f
     check-cast p1, Ljava/lang/Long;
 
@@ -491,7 +446,6 @@
 
     return p0
 
-    .line 25
     :pswitch_10
     check-cast p1, Ljava/lang/Float;
 
@@ -505,7 +459,6 @@
 
     return p0
 
-    .line 26
     :pswitch_11
     check-cast p1, Ljava/lang/Double;
 
@@ -554,24 +507,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getLiteType()Lcom/google/protobuf/WireFormat$FieldType;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {p0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getNumber()I
 
     move-result v1
 
-    .line 3
     invoke-interface {p0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isRepeated()Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 4
     invoke-interface {p0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isPacked()Z
 
     move-result p0
@@ -580,7 +529,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 5
     check-cast p1, Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -598,7 +546,6 @@
 
     move-result-object p1
 
-    .line 6
     invoke-static {v0, p1}, Lcom/google/protobuf/FieldSet;->computeElementSizeNoTag(Lcom/google/protobuf/WireFormat$FieldType;Ljava/lang/Object;)I
 
     move-result p1
@@ -607,7 +554,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-static {v1}, Lcom/google/protobuf/CodedOutputStream;->computeTagSize(I)I
 
@@ -623,7 +569,6 @@
 
     return p0
 
-    .line 8
     :cond_1
     check-cast p1, Ljava/util/List;
 
@@ -642,7 +587,6 @@
 
     move-result-object p1
 
-    .line 9
     invoke-static {v0, v1, p1}, Lcom/google/protobuf/FieldSet;->computeElementSize(Lcom/google/protobuf/WireFormat$FieldType;ILjava/lang/Object;)I
 
     move-result p1
@@ -654,7 +598,6 @@
     :cond_2
     return v2
 
-    .line 10
     :cond_3
     invoke-static {v0, v1, p1}, Lcom/google/protobuf/FieldSet;->computeElementSize(Lcom/google/protobuf/WireFormat$FieldType;ILjava/lang/Object;)I
 
@@ -675,7 +618,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/FieldSet;->DEFAULT_INSTANCE:Lcom/google/protobuf/FieldSet;
 
     return-object v0
@@ -693,19 +635,16 @@
         }
     .end annotation
 
-    .line 5
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;
 
-    .line 6
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 7
     invoke-interface {v0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getLiteJavaType()Lcom/google/protobuf/WireFormat$JavaType;
 
     move-result-object v2
@@ -726,12 +665,10 @@
 
     if-nez v2, :cond_1
 
-    .line 8
     instance-of v0, v1, Lcom/google/protobuf/LazyField;
 
     if-eqz v0, :cond_0
 
-    .line 9
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object p1
@@ -750,7 +687,6 @@
 
     return p1
 
-    .line 10
     :cond_0
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -770,7 +706,6 @@
 
     return p1
 
-    .line 11
     :cond_1
     invoke-static {v0, v1}, Lcom/google/protobuf/FieldSet;->computeFieldSize(Lcom/google/protobuf/FieldSet$FieldDescriptorLite;Ljava/lang/Object;)I
 
@@ -788,7 +723,6 @@
 
     return p0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Lcom/google/protobuf/WireFormat$FieldType;->getWireType()I
 
@@ -809,14 +743,12 @@
         }
     .end annotation
 
-    .line 5
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;
 
-    .line 6
     invoke-interface {v0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getLiteJavaType()Lcom/google/protobuf/WireFormat$JavaType;
 
     move-result-object v1
@@ -827,7 +759,6 @@
 
     if-ne v1, v2, :cond_4
 
-    .line 7
     invoke-interface {v0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isRepeated()Z
 
     move-result v0
@@ -836,7 +767,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 8
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -860,7 +790,6 @@
 
     check-cast v0, Lcom/google/protobuf/MessageLite;
 
-    .line 9
     invoke-interface {v0}, Lcom/google/protobuf/MessageLiteOrBuilder;->isInitialized()Z
 
     move-result v0
@@ -869,18 +798,15 @@
 
     return v1
 
-    .line 10
     :cond_1
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 11
     instance-of v0, p1, Lcom/google/protobuf/MessageLite;
 
     if-eqz v0, :cond_2
 
-    .line 12
     check-cast p1, Lcom/google/protobuf/MessageLite;
 
     invoke-interface {p1}, Lcom/google/protobuf/MessageLiteOrBuilder;->isInitialized()Z
@@ -891,7 +817,6 @@
 
     return v1
 
-    .line 13
     :cond_2
     instance-of p1, p1, Lcom/google/protobuf/LazyField;
 
@@ -899,7 +824,6 @@
 
     return v3
 
-    .line 14
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -925,31 +849,26 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 3
     instance-of v1, p1, Lcom/google/protobuf/LazyField;
 
     if-eqz v1, :cond_0
 
-    .line 4
     check-cast p1, Lcom/google/protobuf/LazyField;
 
     invoke-virtual {p1}, Lcom/google/protobuf/LazyField;->getValue()Lcom/google/protobuf/MessageLite;
 
     move-result-object p1
 
-    .line 5
     :cond_0
     invoke-interface {v0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isRepeated()Z
 
@@ -957,19 +876,16 @@
 
     if-eqz v1, :cond_3
 
-    .line 6
     invoke-virtual {p0, v0}, Lcom/google/protobuf/FieldSet;->getField(Lcom/google/protobuf/FieldSet$FieldDescriptorLite;)Ljava/lang/Object;
 
     move-result-object v1
 
     if-nez v1, :cond_1
 
-    .line 7
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 8
     :cond_1
     check-cast p1, Ljava/util/List;
 
@@ -988,7 +904,6 @@
 
     move-result-object v2
 
-    .line 9
     move-object v3, v1
 
     check-cast v3, Ljava/util/List;
@@ -1001,7 +916,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_2
     iget-object p1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -1009,7 +923,6 @@
 
     goto :goto_1
 
-    .line 11
     :cond_3
     invoke-interface {v0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getLiteJavaType()Lcom/google/protobuf/WireFormat$JavaType;
 
@@ -1019,14 +932,12 @@
 
     if-ne v1, v2, :cond_5
 
-    .line 12
     invoke-virtual {p0, v0}, Lcom/google/protobuf/FieldSet;->getField(Lcom/google/protobuf/FieldSet$FieldDescriptorLite;)Ljava/lang/Object;
 
     move-result-object v1
 
     if-nez v1, :cond_4
 
-    .line 13
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-direct {p0, p1}, Lcom/google/protobuf/FieldSet;->cloneIfMutable(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1037,7 +948,6 @@
 
     goto :goto_1
 
-    .line 14
     :cond_4
     check-cast v1, Lcom/google/protobuf/MessageLite;
 
@@ -1055,14 +965,12 @@
 
     move-result-object p1
 
-    .line 15
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v1, v0, p1}, Lcom/google/protobuf/SmallSortedMap;->put(Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_1
 
-    .line 16
     :cond_5
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -1088,7 +996,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/FieldSet;
 
     invoke-direct {v0}, Lcom/google/protobuf/FieldSet;-><init>()V
@@ -1104,7 +1011,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/FieldSet$1;->$SwitchMap$com$google$protobuf$WireFormat$FieldType:[I
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
@@ -1115,7 +1021,6 @@
 
     packed-switch p1, :pswitch_data_0
 
-    .line 2
     new-instance p0, Ljava/lang/RuntimeException;
 
     const-string p1, "There is no way to get here, but the compiler thinks otherwise."
@@ -1124,7 +1029,6 @@
 
     throw p0
 
-    .line 3
     :pswitch_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1134,7 +1038,6 @@
 
     throw p0
 
-    .line 4
     :pswitch_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1144,7 +1047,6 @@
 
     throw p0
 
-    .line 5
     :pswitch_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1154,7 +1056,6 @@
 
     throw p0
 
-    .line 6
     :pswitch_3
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readSInt64()J
 
@@ -1166,7 +1067,6 @@
 
     return-object p0
 
-    .line 7
     :pswitch_4
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readSInt32()I
 
@@ -1178,7 +1078,6 @@
 
     return-object p0
 
-    .line 8
     :pswitch_5
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readSFixed64()J
 
@@ -1190,7 +1089,6 @@
 
     return-object p0
 
-    .line 9
     :pswitch_6
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readSFixed32()I
 
@@ -1202,7 +1100,6 @@
 
     return-object p0
 
-    .line 10
     :pswitch_7
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readUInt32()I
 
@@ -1214,7 +1111,6 @@
 
     return-object p0
 
-    .line 11
     :pswitch_8
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readBytes()Lcom/google/protobuf/ByteString;
 
@@ -1225,14 +1121,12 @@
     :pswitch_9
     if-eqz p2, :cond_0
 
-    .line 12
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readStringRequireUtf8()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 13
     :cond_0
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readString()Ljava/lang/String;
 
@@ -1240,7 +1134,6 @@
 
     return-object p0
 
-    .line 14
     :pswitch_a
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readBool()Z
 
@@ -1252,7 +1145,6 @@
 
     return-object p0
 
-    .line 15
     :pswitch_b
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readFixed32()I
 
@@ -1264,7 +1156,6 @@
 
     return-object p0
 
-    .line 16
     :pswitch_c
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readFixed64()J
 
@@ -1276,7 +1167,6 @@
 
     return-object p0
 
-    .line 17
     :pswitch_d
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readInt32()I
 
@@ -1288,7 +1178,6 @@
 
     return-object p0
 
-    .line 18
     :pswitch_e
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readUInt64()J
 
@@ -1300,7 +1189,6 @@
 
     return-object p0
 
-    .line 19
     :pswitch_f
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readInt64()J
 
@@ -1312,7 +1200,6 @@
 
     return-object p0
 
-    .line 20
     :pswitch_10
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readFloat()F
 
@@ -1324,7 +1211,6 @@
 
     return-object p0
 
-    .line 21
     :pswitch_11
     invoke-virtual {p0}, Lcom/google/protobuf/CodedInputStream;->readDouble()D
 
@@ -1366,7 +1252,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/FieldSet$1;->$SwitchMap$com$google$protobuf$WireFormat$JavaType:[I
 
     invoke-virtual {p0}, Lcom/google/protobuf/WireFormat$FieldType;->getJavaType()Lcom/google/protobuf/WireFormat$JavaType;
@@ -1387,7 +1272,6 @@
 
     goto :goto_1
 
-    .line 2
     :pswitch_0
     instance-of p0, p1, Lcom/google/protobuf/MessageLite;
 
@@ -1399,7 +1283,6 @@
 
     goto :goto_0
 
-    .line 3
     :pswitch_1
     instance-of p0, p1, Ljava/lang/Integer;
 
@@ -1411,7 +1294,6 @@
 
     goto :goto_0
 
-    .line 4
     :pswitch_2
     instance-of p0, p1, Lcom/google/protobuf/ByteString;
 
@@ -1432,37 +1314,31 @@
 
     goto :goto_1
 
-    .line 5
     :pswitch_3
     instance-of v1, p1, Ljava/lang/String;
 
     goto :goto_1
 
-    .line 6
     :pswitch_4
     instance-of v1, p1, Ljava/lang/Boolean;
 
     goto :goto_1
 
-    .line 7
     :pswitch_5
     instance-of v1, p1, Ljava/lang/Double;
 
     goto :goto_1
 
-    .line 8
     :pswitch_6
     instance-of v1, p1, Ljava/lang/Float;
 
     goto :goto_1
 
-    .line 9
     :pswitch_7
     instance-of v1, p1, Ljava/lang/Long;
 
     goto :goto_1
 
-    .line 10
     :pswitch_8
     instance-of v1, p1, Ljava/lang/Integer;
 
@@ -1471,7 +1347,6 @@
 
     return-void
 
-    .line 11
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1484,7 +1359,6 @@
     :cond_3
     const/4 p0, 0x0
 
-    .line 12
     throw p0
 
     :pswitch_data_0
@@ -1509,12 +1383,10 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/WireFormat$FieldType;->GROUP:Lcom/google/protobuf/WireFormat$FieldType;
 
     if-ne p1, v0, :cond_0
 
-    .line 2
     check-cast p3, Lcom/google/protobuf/MessageLite;
 
     invoke-virtual {p0, p2, p3}, Lcom/google/protobuf/CodedOutputStream;->writeGroup(ILcom/google/protobuf/MessageLite;)V
@@ -1524,14 +1396,12 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 3
     invoke-static {p1, v0}, Lcom/google/protobuf/FieldSet;->getWireFormatForFieldType(Lcom/google/protobuf/WireFormat$FieldType;Z)I
 
     move-result v0
 
     invoke-virtual {p0, p2, v0}, Lcom/google/protobuf/CodedOutputStream;->writeTag(II)V
 
-    .line 4
     invoke-static {p0, p1, p3}, Lcom/google/protobuf/FieldSet;->writeElementNoTag(Lcom/google/protobuf/CodedOutputStream;Lcom/google/protobuf/WireFormat$FieldType;Ljava/lang/Object;)V
 
     :goto_0
@@ -1546,7 +1416,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/FieldSet$1;->$SwitchMap$com$google$protobuf$WireFormat$FieldType:[I
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
@@ -1559,13 +1428,11 @@
 
     goto/16 :goto_0
 
-    .line 2
     :pswitch_0
     instance-of p1, p2, Lcom/google/protobuf/Internal$EnumLite;
 
     if-eqz p1, :cond_0
 
-    .line 3
     check-cast p2, Lcom/google/protobuf/Internal$EnumLite;
 
     invoke-interface {p2}, Lcom/google/protobuf/Internal$EnumLite;->getNumber()I
@@ -1576,7 +1443,6 @@
 
     goto/16 :goto_0
 
-    .line 4
     :cond_0
     check-cast p2, Ljava/lang/Integer;
 
@@ -1588,7 +1454,6 @@
 
     goto/16 :goto_0
 
-    .line 5
     :pswitch_1
     check-cast p2, Lcom/google/protobuf/MessageLite;
 
@@ -1596,7 +1461,6 @@
 
     goto/16 :goto_0
 
-    .line 6
     :pswitch_2
     check-cast p2, Lcom/google/protobuf/MessageLite;
 
@@ -1604,7 +1468,6 @@
 
     goto/16 :goto_0
 
-    .line 7
     :pswitch_3
     check-cast p2, Ljava/lang/Long;
 
@@ -1616,7 +1479,6 @@
 
     goto/16 :goto_0
 
-    .line 8
     :pswitch_4
     check-cast p2, Ljava/lang/Integer;
 
@@ -1628,7 +1490,6 @@
 
     goto/16 :goto_0
 
-    .line 9
     :pswitch_5
     check-cast p2, Ljava/lang/Long;
 
@@ -1640,7 +1501,6 @@
 
     goto/16 :goto_0
 
-    .line 10
     :pswitch_6
     check-cast p2, Ljava/lang/Integer;
 
@@ -1652,7 +1512,6 @@
 
     goto/16 :goto_0
 
-    .line 11
     :pswitch_7
     check-cast p2, Ljava/lang/Integer;
 
@@ -1664,20 +1523,17 @@
 
     goto :goto_0
 
-    .line 12
     :pswitch_8
     instance-of p1, p2, Lcom/google/protobuf/ByteString;
 
     if-eqz p1, :cond_1
 
-    .line 13
     check-cast p2, Lcom/google/protobuf/ByteString;
 
     invoke-virtual {p0, p2}, Lcom/google/protobuf/CodedOutputStream;->writeBytesNoTag(Lcom/google/protobuf/ByteString;)V
 
     goto :goto_0
 
-    .line 14
     :cond_1
     check-cast p2, [B
 
@@ -1685,7 +1541,6 @@
 
     goto :goto_0
 
-    .line 15
     :pswitch_9
     check-cast p2, Ljava/lang/String;
 
@@ -1693,7 +1548,6 @@
 
     goto :goto_0
 
-    .line 16
     :pswitch_a
     check-cast p2, Ljava/lang/Boolean;
 
@@ -1705,7 +1559,6 @@
 
     goto :goto_0
 
-    .line 17
     :pswitch_b
     check-cast p2, Ljava/lang/Integer;
 
@@ -1717,7 +1570,6 @@
 
     goto :goto_0
 
-    .line 18
     :pswitch_c
     check-cast p2, Ljava/lang/Long;
 
@@ -1729,7 +1581,6 @@
 
     goto :goto_0
 
-    .line 19
     :pswitch_d
     check-cast p2, Ljava/lang/Integer;
 
@@ -1741,7 +1592,6 @@
 
     goto :goto_0
 
-    .line 20
     :pswitch_e
     check-cast p2, Ljava/lang/Long;
 
@@ -1753,7 +1603,6 @@
 
     goto :goto_0
 
-    .line 21
     :pswitch_f
     check-cast p2, Ljava/lang/Long;
 
@@ -1765,7 +1614,6 @@
 
     goto :goto_0
 
-    .line 22
     :pswitch_10
     check-cast p2, Ljava/lang/Float;
 
@@ -1777,7 +1625,6 @@
 
     goto :goto_0
 
-    .line 23
     :pswitch_11
     check-cast p2, Ljava/lang/Double;
 
@@ -1834,27 +1681,22 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getLiteType()Lcom/google/protobuf/WireFormat$FieldType;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {p0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getNumber()I
 
     move-result v1
 
-    .line 3
     invoke-interface {p0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isRepeated()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    .line 4
     check-cast p1, Ljava/util/List;
 
-    .line 5
     invoke-interface {p0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isPacked()Z
 
     move-result p0
@@ -1863,12 +1705,10 @@
 
     const/4 p0, 0x2
 
-    .line 6
     invoke-virtual {p2, v1, p0}, Lcom/google/protobuf/CodedOutputStream;->writeTag(II)V
 
     const/4 p0, 0x0
 
-    .line 7
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -1884,7 +1724,6 @@
 
     move-result-object v2
 
-    .line 8
     invoke-static {v0, v2}, Lcom/google/protobuf/FieldSet;->computeElementSizeNoTag(Lcom/google/protobuf/WireFormat$FieldType;Ljava/lang/Object;)I
 
     move-result v2
@@ -1893,11 +1732,9 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     invoke-virtual {p2, p0}, Lcom/google/protobuf/CodedOutputStream;->writeRawVarint32(I)V
 
-    .line 10
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -1913,12 +1750,10 @@
 
     move-result-object p1
 
-    .line 11
     invoke-static {p2, v0, p1}, Lcom/google/protobuf/FieldSet;->writeElementNoTag(Lcom/google/protobuf/CodedOutputStream;Lcom/google/protobuf/WireFormat$FieldType;Ljava/lang/Object;)V
 
     goto :goto_1
 
-    .line 12
     :cond_1
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1935,18 +1770,15 @@
 
     move-result-object p1
 
-    .line 13
     invoke-static {p2, v0, v1, p1}, Lcom/google/protobuf/FieldSet;->writeElement(Lcom/google/protobuf/CodedOutputStream;Lcom/google/protobuf/WireFormat$FieldType;ILjava/lang/Object;)V
 
     goto :goto_2
 
-    .line 14
     :cond_2
     instance-of p0, p1, Lcom/google/protobuf/LazyField;
 
     if-eqz p0, :cond_3
 
-    .line 15
     check-cast p1, Lcom/google/protobuf/LazyField;
 
     invoke-virtual {p1}, Lcom/google/protobuf/LazyField;->getValue()Lcom/google/protobuf/MessageLite;
@@ -1957,7 +1789,6 @@
 
     goto :goto_3
 
-    .line 16
     :cond_3
     invoke-static {p2, v0, v1, p1}, Lcom/google/protobuf/FieldSet;->writeElement(Lcom/google/protobuf/CodedOutputStream;Lcom/google/protobuf/WireFormat$FieldType;ILjava/lang/Object;)V
 
@@ -1986,14 +1817,12 @@
         }
     .end annotation
 
-    .line 5
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;
 
-    .line 6
     invoke-interface {v0}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getLiteJavaType()Lcom/google/protobuf/WireFormat$JavaType;
 
     move-result-object v1
@@ -2014,24 +1843,20 @@
 
     if-nez v1, :cond_1
 
-    .line 7
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 8
     instance-of v1, v0, Lcom/google/protobuf/LazyField;
 
     if-eqz v1, :cond_0
 
-    .line 9
     check-cast v0, Lcom/google/protobuf/LazyField;
 
     invoke-virtual {v0}, Lcom/google/protobuf/LazyField;->getValue()Lcom/google/protobuf/MessageLite;
 
     move-result-object v0
 
-    .line 10
     :cond_0
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -2049,7 +1874,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_1
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -2073,50 +1897,42 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isRepeated()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-interface {p1}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getLiteType()Lcom/google/protobuf/WireFormat$FieldType;
 
     move-result-object v0
 
     invoke-static {v0, p2}, Lcom/google/protobuf/FieldSet;->verifyType(Lcom/google/protobuf/WireFormat$FieldType;Ljava/lang/Object;)V
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/google/protobuf/FieldSet;->getField(Lcom/google/protobuf/FieldSet$FieldDescriptorLite;)Ljava/lang/Object;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 5
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v1, p1, v0}, Lcom/google/protobuf/SmallSortedMap;->put(Ljava/lang/Comparable;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 6
     :cond_0
     check-cast v0, Ljava/util/List;
 
-    .line 7
     :goto_0
     invoke-interface {v0, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     return-void
 
-    .line 8
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -2130,14 +1946,12 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v0}, Lcom/google/protobuf/SmallSortedMap;->clear()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/google/protobuf/FieldSet;->hasLazyField:Z
 
     return-void
@@ -2151,12 +1965,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v0, p1}, Lcom/google/protobuf/SmallSortedMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     iget-object p1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {p1}, Ljava/util/AbstractMap;->isEmpty()Z
@@ -2167,7 +1979,6 @@
 
     const/4 p1, 0x0
 
-    .line 3
     iput-boolean p1, p0, Lcom/google/protobuf/FieldSet;->hasLazyField:Z
 
     :cond_0
@@ -2184,14 +1995,12 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/google/protobuf/FieldSet;->newFieldSet()Lcom/google/protobuf/FieldSet;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 3
     :goto_0
     iget-object v2, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2201,21 +2010,18 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 4
     iget-object v2, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v2, v1}, Lcom/google/protobuf/SmallSortedMap;->getArrayEntryAt(I)Ljava/util/Map$Entry;
 
     move-result-object v2
 
-    .line 5
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;
 
-    .line 6
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -2226,7 +2032,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2251,14 +2056,12 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 8
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;
 
-    .line 9
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -2267,7 +2070,6 @@
 
     goto :goto_1
 
-    .line 10
     :cond_1
     iget-boolean v1, p0, Lcom/google/protobuf/FieldSet;->hasLazyField:Z
 
@@ -2284,7 +2086,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/FieldSet;->clone()Lcom/google/protobuf/FieldSet;
 
     move-result-object v0
@@ -2304,21 +2105,18 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/protobuf/FieldSet;->hasLazyField:Z
 
     if-eqz v0, :cond_3
 
     const/16 v0, 0x10
 
-    .line 2
     invoke-static {v0}, Lcom/google/protobuf/SmallSortedMap;->newFieldMap(I)Lcom/google/protobuf/SmallSortedMap;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 3
     :goto_0
     iget-object v2, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2328,7 +2126,6 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 4
     iget-object v2, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v2, v1}, Lcom/google/protobuf/SmallSortedMap;->getArrayEntryAt(I)Ljava/util/Map$Entry;
@@ -2341,7 +2138,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2366,12 +2162,10 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 6
     invoke-direct {p0, v0, v2}, Lcom/google/protobuf/FieldSet;->cloneFieldEntry(Ljava/util/Map;Ljava/util/Map$Entry;)V
 
     goto :goto_1
 
-    .line 7
     :cond_1
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2381,13 +2175,11 @@
 
     if-eqz v1, :cond_2
 
-    .line 8
     invoke-virtual {v0}, Lcom/google/protobuf/SmallSortedMap;->makeImmutable()V
 
     :cond_2
     return-object v0
 
-    .line 9
     :cond_3
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2421,19 +2213,16 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v0, p1}, Lcom/google/protobuf/SmallSortedMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 2
     instance-of v0, p1, Lcom/google/protobuf/LazyField;
 
     if-eqz v0, :cond_0
 
-    .line 3
     check-cast p1, Lcom/google/protobuf/LazyField;
 
     invoke-virtual {p1}, Lcom/google/protobuf/LazyField;->getValue()Lcom/google/protobuf/MessageLite;
@@ -2451,7 +2240,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :goto_0
     iget-object v2, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2461,7 +2249,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 2
     iget-object v2, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v2, v0}, Lcom/google/protobuf/SmallSortedMap;->getArrayEntryAt(I)Ljava/util/Map$Entry;
@@ -2478,7 +2265,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2503,7 +2289,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 4
     invoke-direct {p0, v2}, Lcom/google/protobuf/FieldSet;->getMessageSetSerializedSize(Ljava/util/Map$Entry;)I
 
     move-result v2
@@ -2525,21 +2310,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isRepeated()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/protobuf/FieldSet;->getField(Lcom/google/protobuf/FieldSet$FieldDescriptorLite;)Ljava/lang/Object;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 3
     check-cast p1, Ljava/util/List;
 
     invoke-interface {p1, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2548,7 +2330,6 @@
 
     return-object p1
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/IndexOutOfBoundsException;
 
@@ -2556,7 +2337,6 @@
 
     throw p1
 
-    .line 5
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -2575,14 +2355,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isRepeated()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/protobuf/FieldSet;->getField(Lcom/google/protobuf/FieldSet$FieldDescriptorLite;)Ljava/lang/Object;
 
     move-result-object p1
@@ -2593,7 +2371,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     check-cast p1, Ljava/util/List;
 
@@ -2603,7 +2380,6 @@
 
     return p1
 
-    .line 4
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -2621,7 +2397,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :goto_0
     iget-object v2, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2631,14 +2406,12 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 2
     iget-object v2, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v2, v0}, Lcom/google/protobuf/SmallSortedMap;->getArrayEntryAt(I)Ljava/util/Map$Entry;
 
     move-result-object v2
 
-    .line 3
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -2659,7 +2432,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2684,7 +2456,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 5
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -2715,14 +2486,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isRepeated()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v0, p1}, Lcom/google/protobuf/SmallSortedMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2741,7 +2510,6 @@
     :goto_0
     return p1
 
-    .line 3
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -2755,7 +2523,6 @@
 .method public isImmutable()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/protobuf/FieldSet;->isImmutable:Z
 
     return v0
@@ -2768,7 +2535,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :goto_0
     iget-object v2, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2778,7 +2544,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 2
     iget-object v2, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v2, v1}, Lcom/google/protobuf/SmallSortedMap;->getArrayEntryAt(I)Ljava/util/Map$Entry;
@@ -2798,7 +2563,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2823,7 +2587,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 4
     invoke-direct {p0, v2}, Lcom/google/protobuf/FieldSet;->isInitialized(Ljava/util/Map$Entry;)Z
 
     move-result v2
@@ -2851,12 +2614,10 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/protobuf/FieldSet;->hasLazyField:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/LazyField$LazyIterator;
 
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
@@ -2873,7 +2634,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2891,14 +2651,12 @@
 .method public makeImmutable()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/protobuf/FieldSet;->isImmutable:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2906,7 +2664,6 @@
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Lcom/google/protobuf/FieldSet;->isImmutable:Z
 
     return-void
@@ -2924,7 +2681,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     iget-object v1, p1, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2934,7 +2690,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     iget-object v1, p1, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v1, v0}, Lcom/google/protobuf/SmallSortedMap;->getArrayEntryAt(I)Ljava/util/Map$Entry;
@@ -2947,7 +2702,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p1, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -2972,7 +2726,6 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 4
     invoke-direct {p0, v0}, Lcom/google/protobuf/FieldSet;->mergeFromField(Ljava/util/Map$Entry;)V
 
     goto :goto_1
@@ -2991,29 +2744,24 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isRepeated()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 2
     instance-of v0, p2, Ljava/util/List;
 
     if-eqz v0, :cond_1
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 4
     check-cast p2, Ljava/util/List;
 
     invoke-interface {v0, p2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 5
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
@@ -3029,7 +2777,6 @@
 
     move-result-object v1
 
-    .line 6
     invoke-interface {p1}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getLiteType()Lcom/google/protobuf/WireFormat$FieldType;
 
     move-result-object v2
@@ -3043,7 +2790,6 @@
 
     goto :goto_1
 
-    .line 7
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -3053,7 +2799,6 @@
 
     throw p1
 
-    .line 8
     :cond_2
     invoke-interface {p1}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getLiteType()Lcom/google/protobuf/WireFormat$FieldType;
 
@@ -3061,7 +2806,6 @@
 
     invoke-static {v0, p2}, Lcom/google/protobuf/FieldSet;->verifyType(Lcom/google/protobuf/WireFormat$FieldType;Ljava/lang/Object;)V
 
-    .line 9
     :goto_1
     instance-of v0, p2, Lcom/google/protobuf/LazyField;
 
@@ -3069,10 +2813,8 @@
 
     const/4 v0, 0x1
 
-    .line 10
     iput-boolean v0, p0, Lcom/google/protobuf/FieldSet;->hasLazyField:Z
 
-    .line 11
     :cond_3
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -3091,35 +2833,30 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->isRepeated()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/protobuf/FieldSet;->getField(Lcom/google/protobuf/FieldSet$FieldDescriptorLite;)Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {p1}, Lcom/google/protobuf/FieldSet$FieldDescriptorLite;->getLiteType()Lcom/google/protobuf/WireFormat$FieldType;
 
     move-result-object p1
 
     invoke-static {p1, p3}, Lcom/google/protobuf/FieldSet;->verifyType(Lcom/google/protobuf/WireFormat$FieldType;Ljava/lang/Object;)V
 
-    .line 4
     check-cast v0, Ljava/util/List;
 
     invoke-interface {v0, p2, p3}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     return-void
 
-    .line 5
     :cond_0
     new-instance p1, Ljava/lang/IndexOutOfBoundsException;
 
@@ -3127,7 +2864,6 @@
 
     throw p1
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -3148,7 +2884,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -3158,7 +2893,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v1, v0}, Lcom/google/protobuf/SmallSortedMap;->getArrayEntryAt(I)Ljava/util/Map$Entry;
@@ -3171,7 +2905,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -3196,7 +2929,6 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 4
     invoke-direct {p0, v1, p1}, Lcom/google/protobuf/FieldSet;->writeMessageSetTo(Ljava/util/Map$Entry;Lcom/google/protobuf/CodedOutputStream;)V
 
     goto :goto_1
@@ -3215,7 +2947,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -3225,14 +2956,12 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     iget-object v1, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
     invoke-virtual {v1, v0}, Lcom/google/protobuf/SmallSortedMap;->getArrayEntryAt(I)Ljava/util/Map$Entry;
 
     move-result-object v1
 
-    .line 3
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -3249,7 +2978,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/FieldSet;->fields:Lcom/google/protobuf/SmallSortedMap;
 
@@ -3274,7 +3002,6 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 5
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2

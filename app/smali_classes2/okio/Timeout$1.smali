@@ -1,6 +1,5 @@
 .class final Lokio/Timeout$1;
 .super Lokio/Timeout;
-.source "Timeout.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lokio/Timeout;-><init>()V
 
     return-void

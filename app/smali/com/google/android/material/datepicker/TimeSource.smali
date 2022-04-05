@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/datepicker/TimeSource;
 .super Ljava/lang/Object;
-.source "TimeSource.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/android/material/datepicker/TimeSource;
 
     const/4 v1, 0x0
@@ -46,13 +44,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/android/material/datepicker/TimeSource;->fixedTimeMs:Ljava/lang/Long;
 
-    .line 3
     iput-object p2, p0, Lcom/google/android/material/datepicker/TimeSource;->fixedTimeZone:Ljava/util/TimeZone;
 
     return-void
@@ -61,7 +56,6 @@
 .method static fixed(J)Lcom/google/android/material/datepicker/TimeSource;
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/google/android/material/datepicker/TimeSource;
 
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -82,7 +76,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Lcom/google/android/material/datepicker/TimeSource;
 
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -97,7 +90,6 @@
 .method static system()Lcom/google/android/material/datepicker/TimeSource;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/android/material/datepicker/TimeSource;->SYSTEM_TIME_SOURCE:Lcom/google/android/material/datepicker/TimeSource;
 
     return-object v0
@@ -108,7 +100,6 @@
 .method now()Ljava/util/Calendar;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/datepicker/TimeSource;->fixedTimeZone:Ljava/util/TimeZone;
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/datepicker/TimeSource;->now(Ljava/util/TimeZone;)Ljava/util/Calendar;
@@ -127,7 +118,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object p1
@@ -139,13 +129,11 @@
 
     move-result-object p1
 
-    .line 3
     :goto_0
     iget-object v0, p0, Lcom/google/android/material/datepicker/TimeSource;->fixedTimeMs:Ljava/lang/Long;
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v0

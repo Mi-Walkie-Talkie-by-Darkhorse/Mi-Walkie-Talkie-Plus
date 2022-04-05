@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/idtracking/g;
 .super Lcom/umeng/commonsdk/statistics/idtracking/a;
-.source "MacTracker.java"
 
 
 # static fields
@@ -17,10 +16,8 @@
 
     const-string v0, "mac"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/umeng/commonsdk/statistics/idtracking/a;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/idtracking/g;->b:Landroid/content/Context;
 
     return-void
@@ -31,7 +28,6 @@
 .method public f()Ljava/lang/String;
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/g;->b:Landroid/content/Context;
 
@@ -46,15 +42,12 @@
     :catch_0
     move-exception v0
 
-    .line 2
     sget-boolean v1, Lcom/umeng/commonsdk/statistics/AnalyticsConstants;->UM_DEBUG:Z
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/g;->b:Landroid/content/Context;
 

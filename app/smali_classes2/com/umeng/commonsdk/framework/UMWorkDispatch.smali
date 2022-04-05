@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/framework/UMWorkDispatch;
 .super Ljava/lang/Object;
-.source "UMWorkDispatch.java"
 
 
 # static fields
@@ -33,7 +32,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +44,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -55,22 +52,18 @@
 .method public static Quit()V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object v0
 
     const/16 v1, 0x310
 
-    .line 3
     iput v1, v0, Landroid/os/Message;->what:I
 
-    .line 4
     sget-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
@@ -82,7 +75,6 @@
 .method static synthetic access$000(Landroid/os/Message;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->handleEvent(Landroid/os/Message;)V
 
     return-void
@@ -91,7 +83,6 @@
 .method static synthetic access$100()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->delayProcess()V
 
     return-void
@@ -100,7 +91,6 @@
 .method static synthetic access$200()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->handleQuit()V
 
     return-void
@@ -113,22 +103,18 @@
 
     const-string v1, "--->>> delayProcess Enter..."
 
-    .line 1
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/ULog;->d(Ljava/lang/String;)V
 
     const-string v2, "MobclickRT"
 
-    .line 2
     invoke-static {v2, v1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     invoke-static {}, Lcom/umeng/commonsdk/framework/UMModuleRegister;->getAppContext()Landroid/content/Context;
 
     move-result-object v1
 
     if-eqz v1, :cond_3
 
-    .line 4
     invoke-static {v1}, Lcom/umeng/commonsdk/framework/UMFrUtils;->isOnline(Landroid/content/Context;)Z
 
     move-result v3
@@ -137,7 +123,6 @@
 
     return-void
 
-    .line 5
     :cond_0
     invoke-static {v1}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->maxDataSpace(Landroid/content/Context;)J
 
@@ -145,7 +130,6 @@
 
     const-string v5, "analytics"
 
-    .line 6
     invoke-static {v5}, Lcom/umeng/commonsdk/framework/UMModuleRegister;->getCallbackFromModuleName(Ljava/lang/String;)Lcom/umeng/commonsdk/framework/UMLogDataProtocol;
 
     move-result-object v5
@@ -154,7 +138,6 @@
 
     if-eqz v5, :cond_1
 
-    .line 7
     :try_start_0
     invoke-interface {v5, v3, v4}, Lcom/umeng/commonsdk/framework/UMLogDataProtocol;->setupReportData(J)Lorg/json/JSONObject;
 
@@ -164,7 +147,6 @@
 
     const-string v0, "--->>> analyticsCB.setupReportData() return null"
 
-    .line 8
     invoke-static {v2, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -177,7 +159,6 @@
     :cond_1
     if-eqz v6, :cond_3
 
-    .line 9
     invoke-virtual {v6}, Lorg/json/JSONObject;->length()I
 
     move-result v3
@@ -186,7 +167,6 @@
 
     const-string v3, "header"
 
-    .line 10
     invoke-virtual {v6, v3}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v3
@@ -195,7 +175,6 @@
 
     const-string v4, "content"
 
-    .line 11
     invoke-virtual {v6, v4}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v4
@@ -208,7 +187,6 @@
 
     if-eqz v4, :cond_3
 
-    .line 12
     invoke-static {v1, v3, v4}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->buildEnvelopeWithExtHeader(Landroid/content/Context;Lorg/json/JSONObject;Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -217,7 +195,6 @@
 
     if-eqz v3, :cond_3
 
-    .line 13
     :try_start_1
     invoke-virtual {v3, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -225,7 +202,6 @@
 
     if-eqz v4, :cond_2
 
-    .line 14
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -253,17 +229,14 @@
     :try_start_2
     const-string v0, "--->>> autoProcess: removeCacheData ... "
 
-    .line 15
     invoke-static {v2, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 16
     invoke-interface {v5, v3}, Lcom/umeng/commonsdk/framework/UMLogDataProtocol;->removeCacheData(Ljava/lang/Object;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     goto :goto_1
 
-    .line 17
     :goto_0
     invoke-static {v1, v0}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
@@ -279,7 +252,6 @@
 
     monitor-enter v0
 
-    .line 4
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
     :try_end_0
@@ -289,12 +261,10 @@
 
     const/4 v1, 0x0
 
-    .line 5
     monitor-exit v0
 
     return v1
 
-    .line 6
     :cond_0
     :try_start_1
     sget-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
@@ -326,7 +296,6 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
     :try_end_0
@@ -336,12 +305,10 @@
 
     const/4 p0, 0x0
 
-    .line 2
     monitor-exit v0
 
     return p0
 
-    .line 3
     :cond_0
     :try_start_1
     sget-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
@@ -367,13 +334,10 @@
 .method private static handleEvent(Landroid/os/Message;)V
     .locals 4
 
-    .line 1
     iget v0, p0, Landroid/os/Message;->arg1:I
 
-    .line 2
     iget-object p0, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 3
     invoke-static {v0}, Lcom/umeng/commonsdk/framework/UMModuleRegister;->eventType2ModuleName(I)Ljava/lang/String;
 
     move-result-object v1
@@ -384,7 +348,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -409,7 +372,6 @@
 
     invoke-static {v2}, Lcom/umeng/commonsdk/statistics/common/ULog;->d(Ljava/lang/String;)V
 
-    .line 5
     invoke-interface {v1, p0, v0}, Lcom/umeng/commonsdk/framework/UMLogDataProtocol;->workEvent(Ljava/lang/Object;I)V
 
     :cond_0
@@ -419,7 +381,6 @@
 .method private static handleQuit()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mSender:Lcom/umeng/commonsdk/framework/a;
 
     if-eqz v0, :cond_0
@@ -428,20 +389,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/umeng/commonsdk/framework/a;->c()V
 
     const-string v0, "--->>> handleQuit: Quit dispatch thread."
 
-    .line 3
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/ULog;->d(Ljava/lang/String;)V
 
-    .line 4
     sget-object v0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mNetTask:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quit()Z
 
-    .line 5
     invoke-static {}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->teardown()V
 
     :cond_0
@@ -458,18 +415,15 @@
     :try_start_0
     const-string v1, "--->>> Dispatch: init Enter..."
 
-    .line 1
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/ULog;->d(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 2
     :try_start_1
     sget-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mNetTask:Landroid/os/HandlerThread;
 
     if-nez v1, :cond_0
 
-    .line 3
     new-instance v1, Landroid/os/HandlerThread;
 
     const-string v2, "work_thread"
@@ -478,15 +432,12 @@
 
     sput-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mNetTask:Landroid/os/HandlerThread;
 
-    .line 4
     invoke-virtual {v1}, Landroid/os/HandlerThread;->start()V
 
-    .line 5
     sget-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
 
     if-nez v1, :cond_0
 
-    .line 6
     new-instance v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch$1;
 
     sget-object v2, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mNetTask:Landroid/os/HandlerThread;
@@ -506,7 +457,6 @@
     :catchall_0
     move-exception v1
 
-    .line 7
     :try_start_2
     invoke-static {}, Lcom/umeng/commonsdk/framework/UMModuleRegister;->getAppContext()Landroid/content/Context;
 
@@ -518,12 +468,10 @@
     :goto_0
     const-string v1, "--->>> Dispatch: init Exit..."
 
-    .line 8
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/ULog;->d(Ljava/lang/String;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 9
     monitor-exit v0
 
     return-void
@@ -539,12 +487,10 @@
 .method public static registerConnStateObserver(Lcom/umeng/commonsdk/framework/UMSenderStateNotify;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mSender:Lcom/umeng/commonsdk/framework/a;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {p0}, Lcom/umeng/commonsdk/framework/a;->a(Lcom/umeng/commonsdk/framework/UMSenderStateNotify;)V
 
     :cond_0
@@ -558,7 +504,6 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
     :try_end_0
@@ -566,12 +511,10 @@
 
     if-nez v1, :cond_0
 
-    .line 2
     monitor-exit v0
 
     return-void
 
-    .line 3
     :cond_0
     :try_start_1
     sget-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
@@ -582,7 +525,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 4
     monitor-exit v0
 
     return-void
@@ -598,14 +540,12 @@
 .method public static sendDelayProcessMsg(J)V
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_1
 
     const/16 v1, 0x302
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/os/Handler;->hasMessages(I)Z
 
     move-result v0
@@ -616,7 +556,6 @@
 
     const-string p0, "--->>> MSG_DELAY_PROCESS has exist. do nothing."
 
-    .line 3
     invoke-static {v2, p0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
@@ -624,20 +563,16 @@
     :cond_0
     const-string v0, "--->>> MSG_DELAY_PROCESS not exist. send it."
 
-    .line 4
     invoke-static {v2, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     sget-object v0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 6
     iput v1, v0, Landroid/os/Message;->what:I
 
-    .line 7
     sget-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
 
     invoke-virtual {v1, v0, p0, p1}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
@@ -662,7 +597,6 @@
 
     move-object v4, p3
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEventInternal(Landroid/content/Context;IILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;J)V
 
     return-void
@@ -683,7 +617,6 @@
 
     move-wide v5, p4
 
-    .line 2
     invoke-static/range {v0 .. v6}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEventInternal(Landroid/content/Context;IILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;J)V
 
     return-void
@@ -704,7 +637,6 @@
 
     move-wide v5, p4
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEventInternal(Landroid/content/Context;IILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;J)V
 
     return-void
@@ -719,7 +651,6 @@
 
     goto :goto_2
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -727,7 +658,6 @@
 
     invoke-static {v0}, Lcom/umeng/commonsdk/framework/UMModuleRegister;->registerAppContext(Landroid/content/Context;)V
 
-    .line 2
     invoke-static {p2, p3}, Lcom/umeng/commonsdk/framework/UMModuleRegister;->registerCallback(ILcom/umeng/commonsdk/framework/UMLogDataProtocol;)Z
 
     move-result p3
@@ -736,7 +666,6 @@
 
     return-void
 
-    .line 3
     :cond_1
     sget-object p3, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mNetTask:Landroid/os/HandlerThread;
 
@@ -746,41 +675,34 @@
 
     if-nez p3, :cond_3
 
-    .line 4
     :cond_2
     invoke-static {}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->init()V
 
-    .line 5
     :cond_3
     :try_start_0
     sget-object p3, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
 
     if-eqz p3, :cond_6
 
-    .line 6
     invoke-static {p0}, Lcom/umeng/commonsdk/utils/UMUtils;->isMainProgress(Landroid/content/Context;)Z
 
     move-result p3
 
     if-eqz p3, :cond_5
 
-    .line 7
     sget-object p3, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mSenderInitLock:Ljava/lang/Object;
 
     monitor-enter p3
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 8
     :try_start_1
     sget-object v0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mSender:Lcom/umeng/commonsdk/framework/a;
 
     if-nez v0, :cond_4
 
-    .line 9
     invoke-static {p0}, Lcom/umeng/commonsdk/framework/UMFrUtils;->syncLegacyEnvelopeIfNeeded(Landroid/content/Context;)V
 
-    .line 10
     new-instance v0, Lcom/umeng/commonsdk/framework/a;
 
     sget-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
@@ -789,7 +711,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mSender:Lcom/umeng/commonsdk/framework/a;
 
-    .line 11
     :cond_4
     monitor-exit p3
 
@@ -805,7 +726,6 @@
     :try_start_2
     throw p0
 
-    .line 12
     :cond_5
     :goto_0
     sget-object p0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
@@ -814,16 +734,12 @@
 
     move-result-object p0
 
-    .line 13
     iput p1, p0, Landroid/os/Message;->what:I
 
-    .line 14
     iput p2, p0, Landroid/os/Message;->arg1:I
 
-    .line 15
     iput-object p4, p0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 16
     sget-object p1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
 
     invoke-virtual {p1, p0, p5, p6}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
@@ -835,7 +751,6 @@
     :catchall_1
     move-exception p0
 
-    .line 17
     invoke-static {}, Lcom/umeng/commonsdk/framework/UMModuleRegister;->getAppContext()Landroid/content/Context;
 
     move-result-object p1
@@ -850,7 +765,6 @@
     :goto_2
     const-string p0, "--->>> Context or UMLogDataProtocol parameter cannot be null!"
 
-    .line 18
     invoke-static {p0}, Lcom/umeng/commonsdk/statistics/common/ULog;->d(Ljava/lang/String;)V
 
     return-void
@@ -859,32 +773,26 @@
 .method private static teardown()V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mNetTask:Landroid/os/HandlerThread;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     sput-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mNetTask:Landroid/os/HandlerThread;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_1
 
-    .line 4
     sput-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mTaskHandler:Landroid/os/Handler;
 
-    .line 5
     :cond_1
     sget-object v0, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mSender:Lcom/umeng/commonsdk/framework/a;
 
     if-eqz v0, :cond_2
 
-    .line 6
     sput-object v1, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->mSender:Lcom/umeng/commonsdk/framework/a;
 
     :cond_2

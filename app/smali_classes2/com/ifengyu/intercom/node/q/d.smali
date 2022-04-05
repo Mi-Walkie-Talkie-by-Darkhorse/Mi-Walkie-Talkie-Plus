@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/q/d;
 .super Ljava/lang/Object;
-.source "ConnectionServiceManager.java"
 
 
 # static fields
@@ -31,20 +30,16 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/q/d;->b:Ljava/lang/Object;
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/node/q/d;->c:Landroid/content/Context;
 
-    .line 4
     new-instance v0, Lcom/ifengyu/intercom/node/q/a;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/node/q/b;->a(Landroid/content/Context;)Lcom/ifengyu/intercom/node/q/b;
@@ -65,13 +60,11 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/ifengyu/intercom/node/q/d;->g:Lcom/ifengyu/intercom/node/q/d;
 
     if-eqz v1, :cond_0
 
-    .line 2
     sget-object p0, Lcom/ifengyu/intercom/node/q/d;->f:Ljava/lang/String;
 
     const-string v1, "already been initialized!"
@@ -80,12 +73,10 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     monitor-exit v0
 
     return-void
 
-    .line 4
     :cond_0
     :try_start_1
     new-instance v1, Lcom/ifengyu/intercom/node/q/d;
@@ -96,7 +87,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5
     monitor-exit v0
 
     return-void
@@ -112,7 +102,6 @@
 .method public static c()Lcom/ifengyu/intercom/node/q/d;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/node/q/d;->g:Lcom/ifengyu/intercom/node/q/d;
 
     return-object v0
@@ -123,7 +112,6 @@
 .method public a(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)Landroid/content/Intent;
     .locals 3
 
-    .line 13
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/node/q/d;->c:Landroid/content/Context;
@@ -134,10 +122,8 @@
 
     const-string v1, "connection_config"
 
-    .line 14
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 15
     sget-object p1, Lcom/ifengyu/intercom/node/q/d;->f:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -162,7 +148,6 @@
 .method public a(Ljava/lang/String;)Lcom/ifengyu/intercom/node/ConnectionConfiguration;
     .locals 1
 
-    .line 19
     iget-object v0, p0, Lcom/ifengyu/intercom/node/q/d;->d:Lcom/ifengyu/intercom/node/q/a;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/node/q/a;->a(Ljava/lang/String;)Lcom/ifengyu/intercom/node/ConnectionConfiguration;
@@ -175,18 +160,15 @@
 .method public a()V
     .locals 2
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/node/q/d;->b:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 8
     :try_start_0
     iget-boolean v1, p0, Lcom/ifengyu/intercom/node/q/d;->a:Z
 
     if-eqz v1, :cond_0
 
-    .line 9
     monitor-exit v0
 
     return-void
@@ -194,13 +176,10 @@
     :cond_0
     const/4 v1, 0x1
 
-    .line 10
     iput-boolean v1, p0, Lcom/ifengyu/intercom/node/q/d;->a:Z
 
-    .line 11
     invoke-virtual {p0}, Lcom/ifengyu/intercom/node/q/d;->b()V
 
-    .line 12
     monitor-exit v0
 
     return-void
@@ -218,7 +197,6 @@
 .method public a(Lcom/ifengyu/intercom/node/p;)V
     .locals 0
 
-    .line 6
     iput-object p1, p0, Lcom/ifengyu/intercom/node/q/d;->e:Lcom/ifengyu/intercom/node/p;
 
     return-void
@@ -227,7 +205,6 @@
 .method public a(Ljava/lang/String;Z)V
     .locals 2
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/node/q/d;->d:Lcom/ifengyu/intercom/node/q/a;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/node/q/a;->a(Ljava/lang/String;)Lcom/ifengyu/intercom/node/ConnectionConfiguration;
@@ -245,7 +222,6 @@
     :cond_0
     const/4 p2, 0x2
 
-    .line 17
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/node/q/d;->c:Landroid/content/Context;
 
@@ -263,7 +239,6 @@
 
     goto :goto_1
 
-    .line 18
     :cond_1
     sget-object p1, Lcom/ifengyu/intercom/node/q/d;->f:Ljava/lang/String;
 
@@ -278,12 +253,10 @@
 .method public b()V
     .locals 5
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/node/q/d;->a:Z
 
     if-eqz v0, :cond_4
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/node/q/d;->c:Landroid/content/Context;
 
     new-instance v1, Landroid/content/Intent;
@@ -296,14 +269,12 @@
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->stopService(Landroid/content/Intent;)Z
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/node/q/d;->d:Lcom/ifengyu/intercom/node/q/a;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/q/a;->b()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 4
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -322,14 +293,12 @@
 
     check-cast v1, Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 6
     sget-object v2, Lcom/ifengyu/intercom/node/q/d;->f:Ljava/lang/String;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -348,7 +317,6 @@
 
     invoke-static {v2, v3}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7
     :cond_1
     invoke-virtual {v1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->g()Z
 
@@ -362,7 +330,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 8
     :cond_2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
@@ -380,7 +347,6 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 9
     :cond_3
     invoke-static {v2}, Lcom/ifengyu/intercom/i/d0;->a(I)Z
 
@@ -388,7 +354,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 10
     iget-object v2, p0, Lcom/ifengyu/intercom/node/q/d;->c:Landroid/content/Context;
 
     invoke-virtual {p0, v1}, Lcom/ifengyu/intercom/node/q/d;->a(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)Landroid/content/Intent;
@@ -406,7 +371,6 @@
 .method public b(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
     .locals 1
 
-    .line 22
     iget-object v0, p0, Lcom/ifengyu/intercom/node/q/d;->d:Lcom/ifengyu/intercom/node/q/a;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/node/q/a;->a(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
@@ -417,7 +381,6 @@
 .method public b(Ljava/lang/String;)V
     .locals 1
 
-    .line 21
     iget-object v0, p0, Lcom/ifengyu/intercom/node/q/d;->d:Lcom/ifengyu/intercom/node/q/a;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/node/q/a;->b(Ljava/lang/String;)I
@@ -432,7 +395,6 @@
 
     return-void
 
-    .line 11
     :cond_0
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/node/q/d;->a(Ljava/lang/String;)Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
@@ -440,7 +402,6 @@
 
     if-nez p1, :cond_1
 
-    .line 12
     sget-object p1, Lcom/ifengyu/intercom/node/q/d;->f:Ljava/lang/String;
 
     const-string p2, "didn\'t remove any config, skipping update"
@@ -452,16 +413,12 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 13
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->a(Z)V
 
-    .line 14
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->b(Z)V
 
-    .line 15
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/node/q/d;->b(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
 
-    .line 16
     new-instance v0, Landroid/content/Intent;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/node/q/d;->c:Landroid/content/Context;
@@ -472,22 +429,18 @@
 
     const-string v1, "connection_config"
 
-    .line 17
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     const/4 p1, 0x1
 
     const-string v1, "connection_remove"
 
-    .line 18
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     const-string p1, "notReConn"
 
-    .line 19
     invoke-virtual {v0, p1, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
-    .line 20
     iget-object p1, p0, Lcom/ifengyu/intercom/node/q/d;->c:Landroid/content/Context;
 
     invoke-virtual {p1, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
@@ -499,14 +452,12 @@
 .method public c(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
     .locals 3
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/node/q/d;->f:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -529,13 +480,11 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/node/q/d;->b:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 5
     :try_start_0
     iget-boolean v1, p0, Lcom/ifengyu/intercom/node/q/d;->a:Z
 
@@ -547,7 +496,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 6
     iget-object v1, p0, Lcom/ifengyu/intercom/node/q/d;->c:Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/node/q/d;->a(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)Landroid/content/Intent;
@@ -556,7 +504,6 @@
 
     invoke-virtual {v1, p1}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 7
     :cond_1
     monitor-exit v0
 
@@ -579,7 +526,6 @@
 
     return-void
 
-    .line 8
     :cond_0
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/node/q/d;->a(Ljava/lang/String;)Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
@@ -587,7 +533,6 @@
 
     if-nez p1, :cond_1
 
-    .line 9
     sget-object p1, Lcom/ifengyu/intercom/node/q/d;->f:Ljava/lang/String;
 
     const-string v0, "didn\'t remove any config, skipping update"
@@ -599,16 +544,12 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 10
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->a(Z)V
 
-    .line 11
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->b(Z)V
 
-    .line 12
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/node/q/d;->b(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/node/q/d;->c:Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/node/q/d;->a(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)Landroid/content/Intent;

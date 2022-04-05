@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/setting/UserChannel;
 .super Ljava/lang/Object;
-.source "UserChannel.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -40,7 +39,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/UserChannel$a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel$a;-><init>()V
@@ -53,7 +51,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 23
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,19 +59,14 @@
 .method public constructor <init>(IILjava/lang/String;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b:I
 
-    .line 3
     iput p2, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c:I
 
-    .line 4
     iput-object p3, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d:Ljava/lang/String;
 
-    .line 5
     iput p4, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e:I
 
     return-void
@@ -83,52 +75,44 @@
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b:I
 
-    .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c:I
 
-    .line 9
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d:Ljava/lang/String;
 
-    .line 10
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e:I
 
-    .line 11
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f:I
 
-    .line 12
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->g:I
 
-    .line 13
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -141,31 +125,22 @@
 .method public constructor <init>(Ljava/lang/Long;IILjava/lang/String;IIII)V
     .locals 0
 
-    .line 14
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 15
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a:Ljava/lang/Long;
 
-    .line 16
     iput p2, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b:I
 
-    .line 17
     iput p3, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c:I
 
-    .line 18
     iput-object p4, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d:Ljava/lang/String;
 
-    .line 19
     iput p5, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e:I
 
-    .line 20
     iput p6, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f:I
 
-    .line 21
     iput p7, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->g:I
 
-    .line 22
     iput p8, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->h:I
 
     return-void
@@ -176,7 +151,6 @@
 .method public a()I
     .locals 1
 
-    .line 3
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e:I
 
     return v0
@@ -185,7 +159,6 @@
 .method public a(I)V
     .locals 0
 
-    .line 4
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e:I
 
     return-void
@@ -194,7 +167,6 @@
 .method public a(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a:Ljava/lang/Long;
 
     return-void
@@ -203,7 +175,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d:Ljava/lang/String;
 
     return-void
@@ -212,7 +183,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->g:I
 
     return v0
@@ -221,7 +191,6 @@
 .method public b(I)V
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->g:I
 
     return-void
@@ -230,7 +199,6 @@
 .method public c()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a:Ljava/lang/Long;
 
     return-object v0
@@ -239,7 +207,6 @@
 .method public c(I)V
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b:I
 
     return-void
@@ -248,7 +215,6 @@
 .method public d()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d:Ljava/lang/String;
 
     return-object v0
@@ -257,7 +223,6 @@
 .method public d(I)V
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f:I
 
     return-void
@@ -274,7 +239,6 @@
 .method public e()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b:I
 
     return v0
@@ -283,7 +247,6 @@
 .method public e(I)V
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->h:I
 
     return-void
@@ -305,7 +268,6 @@
 
     return v1
 
-    .line 1
     :cond_1
     const-class v2, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
@@ -317,11 +279,9 @@
 
     return v1
 
-    .line 2
     :cond_2
     check-cast p1, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->h()I
 
     move-result v2
@@ -334,7 +294,6 @@
 
     return v1
 
-    .line 4
     :cond_3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e()I
 
@@ -355,7 +314,6 @@
 .method public f()I
     .locals 1
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f:I
 
     return v0
@@ -364,7 +322,6 @@
 .method public f(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c:I
 
     return-void
@@ -373,7 +330,6 @@
 .method public g()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->h:I
 
     return v0
@@ -382,7 +338,6 @@
 .method public h()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c:I
 
     return v0
@@ -391,7 +346,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c:I
 
     const/16 v1, 0x20f
@@ -400,7 +354,6 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b:I
 
     add-int/2addr v1, v0
@@ -411,7 +364,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -498,37 +450,30 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 1
     iget p2, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2
     iget p2, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 3
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 4
     iget p2, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 5
     iget p2, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 6
     iget p2, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->g:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 7
     iget p2, p0, Lcom/ifengyu/intercom/ui/setting/UserChannel;->h:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

@@ -1,6 +1,5 @@
 .class Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher$3;
 .super Ljava/lang/Object;
-.source "CallbackDispatcher.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;Ljava/util/Collection;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher$3;->this$0:Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;
 
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher$3;->val$canceledCollection:Ljava/util/Collection;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher$3;->val$canceledCollection:Ljava/util/Collection;
 
     invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
@@ -62,7 +59,6 @@
 
     check-cast v1, Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 2
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/DownloadTask;->getListener()Lcom/liulishuo/okdownload/DownloadListener;
 
     move-result-object v2

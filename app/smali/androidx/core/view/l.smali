@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/view/l;
 .super Ljava/lang/Object;
-.source "NestedScrollingChild.java"
 
 
 # virtual methods

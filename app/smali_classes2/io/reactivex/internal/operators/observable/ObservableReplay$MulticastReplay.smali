@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/ObservableReplay$MulticastReplay;
 .super Lio/reactivex/Observable;
-.source "ObservableReplay.java"
 
 
 # annotations
@@ -71,13 +70,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$MulticastReplay;->connectableFactory:Ljava/util/concurrent/Callable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$MulticastReplay;->selector:Lio/reactivex/functions/Function;
 
     return-void
@@ -95,7 +91,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$MulticastReplay;->connectableFactory:Ljava/util/concurrent/Callable;
 
@@ -111,7 +106,6 @@
 
     check-cast v0, Lio/reactivex/observables/ConnectableObservable;
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$MulticastReplay;->selector:Lio/reactivex/functions/Function;
 
     invoke-interface {v1, v0}, Lio/reactivex/functions/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
@@ -128,15 +122,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     new-instance v2, Lio/reactivex/internal/operators/observable/ObserverResourceWrapper;
 
     invoke-direct {v2, p1}, Lio/reactivex/internal/operators/observable/ObserverResourceWrapper;-><init>(Lio/reactivex/Observer;)V
 
-    .line 4
     invoke-interface {v1, v2}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
 
-    .line 5
     new-instance p1, Lio/reactivex/internal/operators/observable/ObservableReplay$DisposeConsumer;
 
     invoke-direct {p1, v2}, Lio/reactivex/internal/operators/observable/ObservableReplay$DisposeConsumer;-><init>(Lio/reactivex/internal/operators/observable/ObserverResourceWrapper;)V
@@ -148,10 +139,8 @@
     :catchall_0
     move-exception v0
 
-    .line 6
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 7
     invoke-static {v0, p1}, Lio/reactivex/internal/disposables/EmptyDisposable;->error(Ljava/lang/Throwable;Lio/reactivex/Observer;)V
 
     return-void

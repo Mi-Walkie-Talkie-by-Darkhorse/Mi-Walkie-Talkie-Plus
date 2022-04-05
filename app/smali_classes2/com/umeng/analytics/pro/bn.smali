@@ -1,6 +1,5 @@
 .class public final Lcom/umeng/analytics/pro/bn;
 .super Ljava/lang/Object;
-.source "TMessage.java"
 
 
 # instance fields
@@ -19,7 +18,6 @@
 
     const-string v1, ""
 
-    .line 1
     invoke-direct {p0, v1, v0, v0}, Lcom/umeng/analytics/pro/bn;-><init>(Ljava/lang/String;BI)V
 
     return-void
@@ -28,16 +26,12 @@
 .method public constructor <init>(Ljava/lang/String;BI)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/umeng/analytics/pro/bn;->a:Ljava/lang/String;
 
-    .line 4
     iput-byte p2, p0, Lcom/umeng/analytics/pro/bn;->b:B
 
-    .line 5
     iput p3, p0, Lcom/umeng/analytics/pro/bn;->c:I
 
     return-void
@@ -48,7 +42,6 @@
 .method public a(Lcom/umeng/analytics/pro/bn;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/analytics/pro/bn;->a:Ljava/lang/String;
 
     iget-object v1, p1, Lcom/umeng/analytics/pro/bn;->a:Ljava/lang/String;
@@ -85,12 +78,10 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lcom/umeng/analytics/pro/bn;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/umeng/analytics/pro/bn;
 
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/bn;->a(Lcom/umeng/analytics/pro/bn;)Z
@@ -108,7 +99,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

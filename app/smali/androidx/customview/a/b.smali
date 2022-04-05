@@ -1,6 +1,5 @@
 .class Landroidx/customview/a/b;
 .super Ljava/lang/Object;
-.source "FocusStrategy.java"
 
 
 # annotations
@@ -63,12 +62,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1, p0}, Landroidx/customview/a/b$b;->a(Ljava/lang/Object;)I
 
     move-result v0
 
-    .line 2
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
@@ -78,7 +75,6 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 3
     invoke-interface {p1, p0, v2}, Landroidx/customview/a/b$b;->a(Ljava/lang/Object;I)Ljava/lang/Object;
 
     move-result-object v3
@@ -89,13 +85,11 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance p0, Landroidx/customview/a/b$c;
 
     invoke-direct {p0, p5, p2}, Landroidx/customview/a/b$c;-><init>(ZLandroidx/customview/a/b$a;)V
 
-    .line 5
     invoke-static {v1, p0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     const/4 p0, 0x1
@@ -106,14 +100,12 @@
 
     if-ne p4, p0, :cond_1
 
-    .line 6
     invoke-static {p3, v1, p6}, Landroidx/customview/a/b;->a(Ljava/lang/Object;Ljava/util/ArrayList;Z)Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 7
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -123,7 +115,6 @@
 
     throw p0
 
-    .line 8
     :cond_2
     invoke-static {p3, v1, p6}, Landroidx/customview/a/b;->b(Ljava/lang/Object;Ljava/util/ArrayList;Z)Ljava/lang/Object;
 
@@ -173,7 +164,6 @@
         }
     .end annotation
 
-    .line 13
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0, p4}, Landroid/graphics/Rect;-><init>(Landroid/graphics/Rect;)V
@@ -196,7 +186,6 @@
 
     if-ne p5, v1, :cond_0
 
-    .line 14
     invoke-virtual {p4}, Landroid/graphics/Rect;->height()I
 
     move-result v1
@@ -209,7 +198,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -219,7 +207,6 @@
 
     throw p0
 
-    .line 16
     :cond_1
     invoke-virtual {p4}, Landroid/graphics/Rect;->width()I
 
@@ -233,7 +220,6 @@
 
     goto :goto_0
 
-    .line 17
     :cond_2
     invoke-virtual {p4}, Landroid/graphics/Rect;->height()I
 
@@ -245,7 +231,6 @@
 
     goto :goto_0
 
-    .line 18
     :cond_3
     invoke-virtual {p4}, Landroid/graphics/Rect;->width()I
 
@@ -258,12 +243,10 @@
     :goto_0
     const/4 v1, 0x0
 
-    .line 19
     invoke-interface {p1, p0}, Landroidx/customview/a/b$b;->a(Ljava/lang/Object;)I
 
     move-result v3
 
-    .line 20
     new-instance v4, Landroid/graphics/Rect;
 
     invoke-direct {v4}, Landroid/graphics/Rect;-><init>()V
@@ -271,7 +254,6 @@
     :goto_1
     if-ge v2, v3, :cond_6
 
-    .line 21
     invoke-interface {p1, p0, v2}, Landroidx/customview/a/b$b;->a(Ljava/lang/Object;I)Ljava/lang/Object;
 
     move-result-object v5
@@ -280,18 +262,15 @@
 
     goto :goto_2
 
-    .line 22
     :cond_4
     invoke-interface {p2, v5, v4}, Landroidx/customview/a/b$a;->a(Ljava/lang/Object;Landroid/graphics/Rect;)V
 
-    .line 23
     invoke-static {p5, p4, v4, v0}, Landroidx/customview/a/b;->b(ILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Z
 
     move-result v6
 
     if-eqz v6, :cond_5
 
-    .line 24
     invoke-virtual {v0, v4}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
     move-object v1, v5
@@ -318,7 +297,6 @@
         }
     .end annotation
 
-    .line 9
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result v0
@@ -329,7 +307,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     invoke-virtual {p1, p0}, Ljava/util/ArrayList;->lastIndexOf(Ljava/lang/Object;)I
 
@@ -340,7 +317,6 @@
 
     if-ge p0, v0, :cond_1
 
-    .line 11
     invoke-virtual {p1, p0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -354,7 +330,6 @@
 
     const/4 p0, 0x0
 
-    .line 12
     invoke-virtual {p1, p0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -400,7 +375,6 @@
 
     goto :goto_0
 
-    .line 35
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -410,7 +384,6 @@
 
     throw p0
 
-    .line 36
     :cond_1
     :goto_0
     iget p0, p2, Landroid/graphics/Rect;->right:I
@@ -433,7 +406,6 @@
     :goto_1
     return v1
 
-    .line 37
     :cond_3
     iget p0, p2, Landroid/graphics/Rect;->bottom:I
 
@@ -471,12 +443,10 @@
         .end annotation
     .end param
 
-    .line 25
     invoke-static {p0, p1, p2}, Landroidx/customview/a/b;->a(ILandroid/graphics/Rect;Landroid/graphics/Rect;)Z
 
     move-result v0
 
-    .line 26
     invoke-static {p0, p1, p3}, Landroidx/customview/a/b;->a(ILandroid/graphics/Rect;Landroid/graphics/Rect;)Z
 
     move-result v1
@@ -489,7 +459,6 @@
 
     goto :goto_1
 
-    .line 27
     :cond_0
     invoke-static {p0, p1, p3}, Landroidx/customview/a/b;->b(ILandroid/graphics/Rect;Landroid/graphics/Rect;)Z
 
@@ -512,13 +481,11 @@
 
     goto :goto_0
 
-    .line 28
     :cond_2
     invoke-static {p0, p1, p2}, Landroidx/customview/a/b;->c(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
 
     move-result p2
 
-    .line 29
     invoke-static {p0, p1, p3}, Landroidx/customview/a/b;->e(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
 
     move-result p0
@@ -570,7 +537,6 @@
 
     if-ne p2, v0, :cond_2
 
-    .line 30
     iget p2, p0, Landroid/graphics/Rect;->top:I
 
     iget v0, p1, Landroid/graphics/Rect;->top:I
@@ -596,7 +562,6 @@
     :goto_0
     return v1
 
-    .line 31
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -606,7 +571,6 @@
 
     throw p0
 
-    .line 32
     :cond_3
     iget p2, p0, Landroid/graphics/Rect;->left:I
 
@@ -633,7 +597,6 @@
     :goto_1
     return v1
 
-    .line 33
     :cond_6
     iget p2, p0, Landroid/graphics/Rect;->bottom:I
 
@@ -660,7 +623,6 @@
     :goto_2
     return v1
 
-    .line 34
     :cond_9
     iget p2, p0, Landroid/graphics/Rect;->right:I
 
@@ -700,7 +662,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result v0
@@ -711,7 +672,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p1, p0}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
 
@@ -722,7 +682,6 @@
 
     if-ltz p0, :cond_1
 
-    .line 3
     invoke-virtual {p1, p0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -736,7 +695,6 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 4
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -780,7 +738,6 @@
 
     if-ne p0, v0, :cond_1
 
-    .line 15
     iget p0, p1, Landroid/graphics/Rect;->bottom:I
 
     iget p1, p2, Landroid/graphics/Rect;->top:I
@@ -795,7 +752,6 @@
     :goto_0
     return v1
 
-    .line 16
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -805,7 +761,6 @@
 
     throw p0
 
-    .line 17
     :cond_2
     iget p0, p1, Landroid/graphics/Rect;->right:I
 
@@ -821,7 +776,6 @@
     :goto_1
     return v1
 
-    .line 18
     :cond_4
     iget p0, p1, Landroid/graphics/Rect;->top:I
 
@@ -837,7 +791,6 @@
     :goto_2
     return v1
 
-    .line 19
     :cond_6
     iget p0, p1, Landroid/graphics/Rect;->left:I
 
@@ -869,7 +822,6 @@
         .end annotation
     .end param
 
-    .line 5
     invoke-static {p1, p2, p0}, Landroidx/customview/a/b;->a(Landroid/graphics/Rect;Landroid/graphics/Rect;I)Z
 
     move-result v0
@@ -880,7 +832,6 @@
 
     return v1
 
-    .line 6
     :cond_0
     invoke-static {p1, p3, p0}, Landroidx/customview/a/b;->a(Landroid/graphics/Rect;Landroid/graphics/Rect;I)Z
 
@@ -892,7 +843,6 @@
 
     return v2
 
-    .line 7
     :cond_1
     invoke-static {p0, p1, p2, p3}, Landroidx/customview/a/b;->a(ILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Z
 
@@ -902,7 +852,6 @@
 
     return v2
 
-    .line 8
     :cond_2
     invoke-static {p0, p1, p3, p2}, Landroidx/customview/a/b;->a(ILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;)Z
 
@@ -912,33 +861,27 @@
 
     return v1
 
-    .line 9
     :cond_3
     invoke-static {p0, p1, p2}, Landroidx/customview/a/b;->c(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
 
     move-result v0
 
-    .line 10
     invoke-static {p0, p1, p2}, Landroidx/customview/a/b;->g(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
 
     move-result p2
 
-    .line 11
     invoke-static {v0, p2}, Landroidx/customview/a/b;->a(II)I
 
     move-result p2
 
-    .line 12
     invoke-static {p0, p1, p3}, Landroidx/customview/a/b;->c(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
 
     move-result v0
 
-    .line 13
     invoke-static {p0, p1, p3}, Landroidx/customview/a/b;->g(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
 
     move-result p0
 
-    .line 14
     invoke-static {v0, p0}, Landroidx/customview/a/b;->a(II)I
 
     move-result p0
@@ -962,7 +905,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0, p1, p2}, Landroidx/customview/a/b;->d(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
 
     move-result p0
@@ -1003,7 +945,6 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 1
     iget p0, p2, Landroid/graphics/Rect;->top:I
 
     iget p1, p1, Landroid/graphics/Rect;->bottom:I
@@ -1013,7 +954,6 @@
 
     return p0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1023,7 +963,6 @@
 
     throw p0
 
-    .line 3
     :cond_1
     iget p0, p2, Landroid/graphics/Rect;->left:I
 
@@ -1031,7 +970,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_2
     iget p0, p1, Landroid/graphics/Rect;->top:I
 
@@ -1039,7 +977,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_3
     iget p0, p1, Landroid/graphics/Rect;->left:I
 
@@ -1059,7 +996,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0, p1, p2}, Landroidx/customview/a/b;->f(ILandroid/graphics/Rect;Landroid/graphics/Rect;)I
 
     move-result p0
@@ -1100,7 +1036,6 @@
 
     if-ne p0, v0, :cond_0
 
-    .line 1
     iget p0, p2, Landroid/graphics/Rect;->bottom:I
 
     iget p1, p1, Landroid/graphics/Rect;->bottom:I
@@ -1110,7 +1045,6 @@
 
     return p0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1120,7 +1054,6 @@
 
     throw p0
 
-    .line 3
     :cond_1
     iget p0, p2, Landroid/graphics/Rect;->right:I
 
@@ -1128,7 +1061,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_2
     iget p0, p1, Landroid/graphics/Rect;->top:I
 
@@ -1136,7 +1068,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_3
     iget p0, p1, Landroid/graphics/Rect;->left:I
 
@@ -1174,7 +1105,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1184,12 +1114,10 @@
 
     throw p0
 
-    .line 2
     :cond_1
     :goto_0
     iget p0, p1, Landroid/graphics/Rect;->left:I
 
-    .line 3
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
     move-result p1
@@ -1210,18 +1138,15 @@
 
     sub-int/2addr p0, p1
 
-    .line 4
     invoke-static {p0}, Ljava/lang/Math;->abs(I)I
 
     move-result p0
 
     return p0
 
-    .line 5
     :cond_2
     iget p0, p1, Landroid/graphics/Rect;->top:I
 
-    .line 6
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
 
     move-result p1
@@ -1242,7 +1167,6 @@
 
     sub-int/2addr p0, p1
 
-    .line 7
     invoke-static {p0}, Ljava/lang/Math;->abs(I)I
 
     move-result p0

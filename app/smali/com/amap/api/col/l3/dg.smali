@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/dg;
 .super Ljava/lang/Object;
-.source "GLShaderManager.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,13 +40,11 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->a:Lcom/amap/api/col/l3/dg$c;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/dg$c;
 
     const-string v1, "texture_normal.glsl"
@@ -57,7 +53,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/dg;->a:Lcom/amap/api/col/l3/dg$c;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->a:Lcom/amap/api/col/l3/dg$c;
     :try_end_0
@@ -80,13 +75,11 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->b:Lcom/amap/api/col/l3/dg$e;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/dg$e;
 
     const-string v1, "texture.glsl"
@@ -95,7 +88,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/dg;->b:Lcom/amap/api/col/l3/dg$e;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->b:Lcom/amap/api/col/l3/dg$e;
     :try_end_0
@@ -118,13 +110,11 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->c:Lcom/amap/api/col/l3/dg$b;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/dg$b;
 
     const-string v1, "texture_layer.glsl"
@@ -133,7 +123,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/dg;->c:Lcom/amap/api/col/l3/dg$b;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->c:Lcom/amap/api/col/l3/dg$b;
     :try_end_0
@@ -156,13 +145,11 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->d:Lcom/amap/api/col/l3/dg$d;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/dg$d;
 
     const-string v1, "point.glsl"
@@ -171,7 +158,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/dg;->d:Lcom/amap/api/col/l3/dg$d;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->d:Lcom/amap/api/col/l3/dg$d;
     :try_end_0
@@ -194,20 +180,17 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->e:Lcom/amap/api/col/l3/dg$a;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/dg$a;
 
     invoke-direct {v0, p0}, Lcom/amap/api/col/l3/dg$a;-><init>(Lcom/amap/api/col/l3/dg;)V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/dg;->e:Lcom/amap/api/col/l3/dg$a;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->e:Lcom/amap/api/col/l3/dg$a;
     :try_end_0
@@ -252,7 +235,6 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/dg;->f()Lcom/amap/api/col/l3/dg$a;
 
@@ -260,7 +242,6 @@
 
     return-object p1
 
-    .line 2
     :cond_1
     invoke-direct {p0}, Lcom/amap/api/col/l3/dg;->e()Lcom/amap/api/col/l3/df;
 
@@ -268,7 +249,6 @@
 
     return-object p1
 
-    .line 3
     :cond_2
     invoke-direct {p0}, Lcom/amap/api/col/l3/dg;->d()Lcom/amap/api/col/l3/df;
 
@@ -276,7 +256,6 @@
 
     return-object p1
 
-    .line 4
     :cond_3
     invoke-direct {p0}, Lcom/amap/api/col/l3/dg;->b()Lcom/amap/api/col/l3/df;
 
@@ -284,7 +263,6 @@
 
     return-object p1
 
-    .line 5
     :cond_4
     invoke-direct {p0}, Lcom/amap/api/col/l3/dg;->c()Lcom/amap/api/col/l3/df;
 
@@ -298,7 +276,6 @@
 
     monitor-enter p0
 
-    .line 6
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->a:Lcom/amap/api/col/l3/dg$c;
 
@@ -306,59 +283,47 @@
 
     if-eqz v0, :cond_0
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->a:Lcom/amap/api/col/l3/dg$c;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/df;->a()V
 
-    .line 8
     iput-object v1, p0, Lcom/amap/api/col/l3/dg;->a:Lcom/amap/api/col/l3/dg$c;
 
-    .line 9
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->b:Lcom/amap/api/col/l3/dg$e;
 
     if-eqz v0, :cond_1
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->b:Lcom/amap/api/col/l3/dg$e;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/df;->a()V
 
-    .line 11
     iput-object v1, p0, Lcom/amap/api/col/l3/dg;->b:Lcom/amap/api/col/l3/dg$e;
 
-    .line 12
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->c:Lcom/amap/api/col/l3/dg$b;
 
     if-eqz v0, :cond_2
 
-    .line 13
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->c:Lcom/amap/api/col/l3/dg$b;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/df;->a()V
 
-    .line 14
     iput-object v1, p0, Lcom/amap/api/col/l3/dg;->c:Lcom/amap/api/col/l3/dg$b;
 
-    .line 15
     :cond_2
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->d:Lcom/amap/api/col/l3/dg$d;
 
     if-eqz v0, :cond_3
 
-    .line 16
     iget-object v0, p0, Lcom/amap/api/col/l3/dg;->d:Lcom/amap/api/col/l3/dg$d;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/df;->a()V
 
-    .line 17
     iput-object v1, p0, Lcom/amap/api/col/l3/dg;->d:Lcom/amap/api/col/l3/dg$d;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 18
     :cond_3
     monitor-exit p0
 

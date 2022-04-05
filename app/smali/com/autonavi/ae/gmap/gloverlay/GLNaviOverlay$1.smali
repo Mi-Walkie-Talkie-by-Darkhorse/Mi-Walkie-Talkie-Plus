@@ -1,6 +1,5 @@
 .class Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay$1;
 .super Ljava/lang/Object;
-.source "GLNaviOverlay.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;IIII)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay$1;->this$0:Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;
 
     iput p2, p0, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay$1;->val$radius:I
@@ -54,7 +52,6 @@
 .method public run()V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay$1;->this$0:Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;
 
     iget-wide v1, v0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J

@@ -1,6 +1,5 @@
 .class public Lcom/google/zxing/ResultPoint;
 .super Ljava/lang/Object;
-.source "ResultPoint.java"
 
 
 # instance fields
@@ -13,13 +12,10 @@
 .method public constructor <init>(FF)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/google/zxing/ResultPoint;->x:F
 
-    .line 3
     iput p2, p0, Lcom/google/zxing/ResultPoint;->y:F
 
     return-void
@@ -28,13 +24,10 @@
 .method private static crossProductZ(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;)F
     .locals 3
 
-    .line 1
     iget v0, p1, Lcom/google/zxing/ResultPoint;->x:F
 
-    .line 2
     iget p1, p1, Lcom/google/zxing/ResultPoint;->y:F
 
-    .line 3
     iget v1, p2, Lcom/google/zxing/ResultPoint;->x:F
 
     sub-float/2addr v1, v0
@@ -63,7 +56,6 @@
 .method public static distance(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;)F
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/ResultPoint;->x:F
 
     iget p0, p0, Lcom/google/zxing/ResultPoint;->y:F
@@ -84,7 +76,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget-object v1, p0, v0
 
     const/4 v2, 0x1
@@ -95,7 +86,6 @@
 
     move-result v1
 
-    .line 2
     aget-object v3, p0, v2
 
     const/4 v4, 0x2
@@ -106,7 +96,6 @@
 
     move-result v3
 
-    .line 3
     aget-object v5, p0, v0
 
     aget-object v6, p0, v4
@@ -123,13 +112,10 @@
 
     if-ltz v6, :cond_0
 
-    .line 4
     aget-object v1, p0, v0
 
-    .line 5
     aget-object v3, p0, v2
 
-    .line 6
     aget-object v5, p0, v4
 
     goto :goto_0
@@ -143,28 +129,21 @@
 
     if-ltz v1, :cond_1
 
-    .line 7
     aget-object v1, p0, v2
 
-    .line 8
     aget-object v3, p0, v0
 
-    .line 9
     aget-object v5, p0, v4
 
     goto :goto_0
 
-    .line 10
     :cond_1
     aget-object v1, p0, v4
 
-    .line 11
     aget-object v3, p0, v0
 
-    .line 12
     aget-object v5, p0, v2
 
-    .line 13
     :goto_0
     invoke-static {v3, v1, v5}, Lcom/google/zxing/ResultPoint;->crossProductZ(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;)F
 
@@ -182,14 +161,11 @@
 
     move-object v3, v8
 
-    .line 14
     :cond_2
     aput-object v3, p0, v0
 
-    .line 15
     aput-object v1, p0, v2
 
-    .line 16
     aput-object v5, p0, v4
 
     return-void
@@ -200,17 +176,14 @@
 .method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 1
     instance-of v0, p1, Lcom/google/zxing/ResultPoint;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/zxing/ResultPoint;
 
-    .line 3
     iget v0, p0, Lcom/google/zxing/ResultPoint;->x:F
 
     iget v2, p1, Lcom/google/zxing/ResultPoint;->x:F
@@ -238,7 +211,6 @@
 .method public final getX()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/ResultPoint;->x:F
 
     return v0
@@ -247,7 +219,6 @@
 .method public final getY()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/ResultPoint;->y:F
 
     return v0
@@ -256,7 +227,6 @@
 .method public final hashCode()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/ResultPoint;->x:F
 
     invoke-static {v0}, Ljava/lang/Float;->floatToIntBits(F)I
@@ -279,7 +249,6 @@
 .method public final toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "("

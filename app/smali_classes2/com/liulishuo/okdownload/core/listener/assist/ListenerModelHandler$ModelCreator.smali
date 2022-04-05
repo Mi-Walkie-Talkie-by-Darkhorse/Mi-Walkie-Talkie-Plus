@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ModelCreator;
 .super Ljava/lang/Object;
-.source "ListenerModelHandler.java"
 
 
 # annotations

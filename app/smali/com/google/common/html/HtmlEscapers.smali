@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/html/HtmlEscapers;
 .super Ljava/lang/Object;
-.source "HtmlEscapers.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/common/escape/Escapers;->builder()Lcom/google/common/escape/Escapers$Builder;
 
     move-result-object v0
@@ -76,7 +74,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,7 +82,6 @@
 .method public static htmlEscaper()Lcom/google/common/escape/Escaper;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/html/HtmlEscapers;->HTML_ESCAPER:Lcom/google/common/escape/Escaper;
 
     return-object v0

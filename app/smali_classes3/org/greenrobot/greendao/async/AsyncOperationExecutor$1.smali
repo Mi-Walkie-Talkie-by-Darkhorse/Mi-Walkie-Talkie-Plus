@@ -1,6 +1,5 @@
 .class synthetic Lorg/greenrobot/greendao/async/AsyncOperationExecutor$1;
 .super Ljava/lang/Object;
-.source "AsyncOperationExecutor.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lorg/greenrobot/greendao/async/AsyncOperation$OperationType;->values()[Lorg/greenrobot/greendao/async/AsyncOperation$OperationType;
 
     move-result-object v0

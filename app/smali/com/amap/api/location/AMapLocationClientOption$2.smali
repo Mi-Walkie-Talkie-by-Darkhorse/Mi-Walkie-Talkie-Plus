@@ -1,6 +1,5 @@
 .class final synthetic Lcom/amap/api/location/AMapLocationClientOption$2;
 .super Ljava/lang/Object;
-.source "AMapLocationClientOption.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/amap/api/location/AMapLocationClientOption$AMapLocationPurpose;->values()[Lcom/amap/api/location/AMapLocationClientOption$AMapLocationPurpose;
 
     move-result-object v0

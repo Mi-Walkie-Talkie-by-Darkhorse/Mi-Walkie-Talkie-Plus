@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/noise/Defcon;
 .super Ljava/lang/Object;
-.source "Defcon.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/statistics/internal/d;
@@ -38,12 +37,10 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/umeng/commonsdk/statistics/noise/Defcon;->mLevel:I
 
     return-void
@@ -56,13 +53,11 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/statistics/noise/Defcon;->instanse:Lcom/umeng/commonsdk/statistics/noise/Defcon;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/umeng/commonsdk/statistics/noise/Defcon;
 
     invoke-direct {v1}, Lcom/umeng/commonsdk/statistics/noise/Defcon;-><init>()V
@@ -73,12 +68,10 @@
 
     const-string v2, "0"
 
-    .line 3
     invoke-static {p0, v1, v2}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->imprintProperty(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 4
     sget-object v1, Lcom/umeng/commonsdk/statistics/noise/Defcon;->instanse:Lcom/umeng/commonsdk/statistics/noise/Defcon;
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
@@ -91,7 +84,6 @@
 
     invoke-virtual {v1, p0}, Lcom/umeng/commonsdk/statistics/noise/Defcon;->setLevel(I)V
 
-    .line 5
     :cond_0
     sget-object p0, Lcom/umeng/commonsdk/statistics/noise/Defcon;->instanse:Lcom/umeng/commonsdk/statistics/noise/Defcon;
     :try_end_0
@@ -114,7 +106,6 @@
 .method public getLevel()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/umeng/commonsdk/statistics/noise/Defcon;->mLevel:I
 
     return v0
@@ -123,7 +114,6 @@
 .method public getReqInterval()J
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/umeng/commonsdk/statistics/noise/Defcon;->mLevel:I
 
     const/4 v1, 0x1
@@ -161,7 +151,6 @@
 .method public getRetryInterval()J
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/umeng/commonsdk/statistics/noise/Defcon;->mLevel:I
 
     if-nez v0, :cond_0
@@ -180,7 +169,6 @@
 .method public isOpen()Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/umeng/commonsdk/statistics/noise/Defcon;->mLevel:I
 
     if-eqz v0, :cond_0
@@ -201,7 +189,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v0
@@ -212,7 +199,6 @@
 
     move-result-object p1
 
-    .line 2
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object p1
@@ -235,7 +221,6 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 1
     iput p1, p0, Lcom/umeng/commonsdk/statistics/noise/Defcon;->mLevel:I
 
     :cond_0

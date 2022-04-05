@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/n$a;
 .super Ljava/lang/Object;
-.source "SelectDeviceAdapter.java"
 
 # interfaces
 .implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/adapter/n;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n$a;->b:Lcom/ifengyu/intercom/ui/adapter/n;
 
     iput p2, p0, Lcom/ifengyu/intercom/ui/adapter/n$a;->a:I
@@ -44,7 +42,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n$a;->b:Lcom/ifengyu/intercom/ui/adapter/n;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/adapter/n;->a(Lcom/ifengyu/intercom/ui/adapter/n;)I
@@ -57,7 +54,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n$a;->b:Lcom/ifengyu/intercom/ui/adapter/n;
 
@@ -69,7 +65,6 @@
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/ui/adapter/n;->a(Lcom/ifengyu/intercom/ui/adapter/n;I)I
 
-    .line 3
     :goto_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n$a;->b:Lcom/ifengyu/intercom/ui/adapter/n;
 
@@ -89,7 +84,6 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n$a;->b:Lcom/ifengyu/intercom/ui/adapter/n;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/adapter/n;->c(Lcom/ifengyu/intercom/ui/adapter/n;)Lcom/ifengyu/intercom/ui/adapter/n$d;
@@ -100,7 +94,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n$a;->b:Lcom/ifengyu/intercom/ui/adapter/n;
 
@@ -110,7 +103,6 @@
 
     invoke-interface {p1}, Lcom/ifengyu/intercom/ui/adapter/n$d;->b()V
 
-    .line 6
     :goto_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n$a;->b:Lcom/ifengyu/intercom/ui/adapter/n;
 

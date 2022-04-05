@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/parallel/ParallelRunOn$RunOnSubscriber;
 .super Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;
-.source "ParallelRunOn.java"
 
 
 # annotations
@@ -54,10 +53,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p2, p3, p4}, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;-><init>(ILio/reactivex/internal/queue/SpscArrayQueue;Lio/reactivex/Scheduler$Worker;)V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$RunOnSubscriber;->downstream:Lc/a/c;
 
     return-void
@@ -68,7 +65,6 @@
 .method public onSubscribe(Lc/a/d;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->upstream:Lc/a/d;
 
     invoke-static {v0, p1}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(Lc/a/d;Lc/a/d;)Z
@@ -77,15 +73,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->upstream:Lc/a/d;
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$RunOnSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0, p0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 4
     iget v0, p0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->prefetch:I
 
     int-to-long v0, v0
@@ -101,23 +94,18 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     iget v1, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->consumed:I
 
-    .line 2
     iget-object v2, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->queue:Lio/reactivex/internal/queue/SpscArrayQueue;
 
-    .line 3
     iget-object v3, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$RunOnSubscriber;->downstream:Lc/a/c;
 
-    .line 4
     iget v4, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->limit:I
 
     const/4 v5, 0x1
 
     const/4 v6, 0x1
 
-    .line 5
     :cond_0
     :goto_0
     iget-object v7, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
@@ -136,41 +124,33 @@
 
     if-eqz v13, :cond_7
 
-    .line 6
     iget-boolean v14, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->cancelled:Z
 
     if-eqz v14, :cond_2
 
-    .line 7
     invoke-virtual {v2}, Lio/reactivex/internal/queue/SpscArrayQueue;->clear()V
 
     return-void
 
-    .line 8
     :cond_2
     iget-boolean v14, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->done:Z
 
     if-eqz v14, :cond_3
 
-    .line 9
     iget-object v15, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->error:Ljava/lang/Throwable;
 
     if-eqz v15, :cond_3
 
-    .line 10
     invoke-virtual {v2}, Lio/reactivex/internal/queue/SpscArrayQueue;->clear()V
 
-    .line 11
     invoke-interface {v3, v15}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
-    .line 12
     iget-object v1, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->worker:Lio/reactivex/Scheduler$Worker;
 
     invoke-interface {v1}, Lio/reactivex/disposables/Disposable;->dispose()V
 
     return-void
 
-    .line 13
     :cond_3
     invoke-virtual {v2}, Lio/reactivex/internal/queue/SpscArrayQueue;->poll()Ljava/lang/Object;
 
@@ -192,10 +172,8 @@
 
     if-eqz v17, :cond_5
 
-    .line 14
     invoke-interface {v3}, Lc/a/c;->onComplete()V
 
-    .line 15
     iget-object v1, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->worker:Lio/reactivex/Scheduler$Worker;
 
     invoke-interface {v1}, Lio/reactivex/disposables/Disposable;->dispose()V
@@ -207,7 +185,6 @@
 
     goto :goto_3
 
-    .line 16
     :cond_6
     invoke-interface {v3, v15}, Lc/a/c;->onNext(Ljava/lang/Object;)V
 
@@ -219,7 +196,6 @@
 
     if-ne v1, v4, :cond_1
 
-    .line 17
     iget-object v13, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->upstream:Lc/a/d;
 
     int-to-long v14, v1
@@ -234,41 +210,33 @@
     :goto_3
     if-nez v13, :cond_a
 
-    .line 18
     iget-boolean v13, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->cancelled:Z
 
     if-eqz v13, :cond_8
 
-    .line 19
     invoke-virtual {v2}, Lio/reactivex/internal/queue/SpscArrayQueue;->clear()V
 
     return-void
 
-    .line 20
     :cond_8
     iget-boolean v13, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->done:Z
 
     if-eqz v13, :cond_a
 
-    .line 21
     iget-object v13, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->error:Ljava/lang/Throwable;
 
     if-eqz v13, :cond_9
 
-    .line 22
     invoke-virtual {v2}, Lio/reactivex/internal/queue/SpscArrayQueue;->clear()V
 
-    .line 23
     invoke-interface {v3, v13}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
-    .line 24
     iget-object v1, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->worker:Lio/reactivex/Scheduler$Worker;
 
     invoke-interface {v1}, Lio/reactivex/disposables/Disposable;->dispose()V
 
     return-void
 
-    .line 25
     :cond_9
     invoke-virtual {v2}, Lio/reactivex/internal/queue/SpscArrayQueue;->isEmpty()Z
 
@@ -276,10 +244,8 @@
 
     if-eqz v13, :cond_a
 
-    .line 26
     invoke-interface {v3}, Lc/a/c;->onComplete()V
 
-    .line 27
     iget-object v1, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->worker:Lio/reactivex/Scheduler$Worker;
 
     invoke-interface {v1}, Lio/reactivex/disposables/Disposable;->dispose()V
@@ -297,14 +263,12 @@
 
     if-eqz v13, :cond_b
 
-    .line 28
     iget-object v7, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
     neg-long v8, v11
 
     invoke-virtual {v7, v8, v9}, Ljava/util/concurrent/atomic/AtomicLong;->addAndGet(J)J
 
-    .line 29
     :cond_b
     invoke-virtual/range {p0 .. p0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -312,12 +276,10 @@
 
     if-ne v7, v6, :cond_c
 
-    .line 30
     iput v1, v0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$BaseRunOnSubscriber;->consumed:I
 
     neg-int v6, v6
 
-    .line 31
     invoke-virtual {v0, v6}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
 
     move-result v6

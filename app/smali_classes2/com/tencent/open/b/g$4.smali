@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/b/g$4;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/tencent/open/b/g;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/b/g$4;->a:Lcom/tencent/open/b/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +44,6 @@
 
     const-string v3, "openSDK_LOG.ReportManager"
 
-    .line 1
     :try_start_0
     iget-object v4, p0, Lcom/tencent/open/b/g$4;->a:Lcom/tencent/open/b/g;
 
@@ -58,7 +55,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
@@ -80,7 +76,6 @@
 
     const/4 v5, 0x3
 
-    .line 3
     :cond_1
     new-instance v7, Ljava/lang/StringBuilder;
 
@@ -109,7 +104,6 @@
 
     add-int/2addr v8, v9
 
-    .line 4
     :try_start_1
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
@@ -119,7 +113,6 @@
 
     move-result-object v10
 
-    .line 5
     new-instance v11, Lorg/apache/http/client/methods/HttpPost;
 
     invoke-direct {v11, v1}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
@@ -128,50 +121,40 @@
 
     const-string v13, "gzip"
 
-    .line 6
     invoke-virtual {v11, v12, v13}, Lorg/apache/http/client/methods/HttpPost;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v12, "Content-Type"
 
     const-string v13, "application/x-www-form-urlencoded"
 
-    .line 7
     invoke-virtual {v11, v12, v13}, Lorg/apache/http/client/methods/HttpPost;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
     invoke-static {v4}, Lcom/tencent/open/utils/HttpUtils;->encodeUrl(Landroid/os/Bundle;)Ljava/lang/String;
 
     move-result-object v12
 
-    .line 9
     invoke-static {v12}, Lcom/tencent/open/utils/i;->i(Ljava/lang/String;)[B
 
     move-result-object v12
 
-    .line 10
     new-instance v13, Lorg/apache/http/entity/ByteArrayEntity;
 
     invoke-direct {v13, v12}, Lorg/apache/http/entity/ByteArrayEntity;-><init>([B)V
 
-    .line 11
     invoke-virtual {v11, v13}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
 
-    .line 12
     invoke-interface {v10, v11}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
 
     move-result-object v10
 
-    .line 13
     invoke-interface {v10}, Lorg/apache/http/HttpResponse;->getStatusLine()Lorg/apache/http/StatusLine;
 
     move-result-object v10
 
-    .line 14
     invoke-interface {v10}, Lorg/apache/http/StatusLine;->getStatusCode()I
 
     move-result v10
 
-    .line 15
     new-instance v11, Ljava/lang/StringBuilder;
 
     invoke-direct {v11}, Ljava/lang/StringBuilder;-><init>()V
@@ -192,7 +175,6 @@
 
     if-ne v10, v11, :cond_3
 
-    .line 16
     invoke-static {}, Lcom/tencent/open/b/f;->a()Lcom/tencent/open/b/f;
 
     move-result-object v10
@@ -210,7 +192,6 @@
     :catch_0
     move-exception v1
 
-    .line 17
     :try_start_2
     invoke-static {v3, v2, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
@@ -219,7 +200,6 @@
     :catch_1
     move-exception v9
 
-    .line 18
     invoke-static {v3, v2, v9}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
@@ -227,7 +207,6 @@
     :catch_2
     move-exception v9
 
-    .line 19
     invoke-static {v3, v2, v9}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
@@ -237,7 +216,6 @@
     :goto_1
     if-nez v7, :cond_4
 
-    .line 20
     invoke-static {}, Lcom/tencent/open/b/f;->a()Lcom/tencent/open/b/f;
 
     move-result-object v1
@@ -248,7 +226,6 @@
 
     invoke-virtual {v1, v0, v2}, Lcom/tencent/open/b/f;->a(Ljava/lang/String;Ljava/util/List;)V
 
-    .line 21
     :cond_4
     iget-object v0, p0, Lcom/tencent/open/b/g$4;->a:Lcom/tencent/open/b/g;
 
@@ -265,7 +242,6 @@
 
     const-string v1, "-->doReportCgi, doupload exception out."
 
-    .line 22
     invoke-static {v3, v1, v0}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_2

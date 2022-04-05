@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$i;
 .super Ljava/lang/Object;
-.source "ConnectDeviceActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$i;->b:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$i;->a:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$i;->a:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->hasActivate()Z
@@ -51,7 +48,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$i;->b:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
@@ -60,7 +56,6 @@
 
     check-cast v0, Lcom/ifengyu/intercom/MiTalkiApp;
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$i;->a:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     invoke-virtual {v1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getActivate()I
@@ -79,7 +74,6 @@
     :goto_0
     iput-boolean v1, v0, Lcom/ifengyu/intercom/MiTalkiApp;->h:Z
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$i;->b:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 

@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/auth/a$1;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Landroid/view/View$OnLongClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/tencent/connect/auth/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/a$1;->a:Lcom/tencent/connect/auth/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

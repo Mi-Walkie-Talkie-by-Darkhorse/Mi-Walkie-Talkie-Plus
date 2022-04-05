@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$FlatMapWithCombinerInner;
 .super Ljava/lang/Object;
-.source "FlowableInternalHelper.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;
@@ -62,13 +61,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$FlatMapWithCombinerInner;->combiner:Lio/reactivex/functions/BiFunction;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$FlatMapWithCombinerInner;->t:Ljava/lang/Object;
 
     return-void
@@ -90,7 +86,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$FlatMapWithCombinerInner;->combiner:Lio/reactivex/functions/BiFunction;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$FlatMapWithCombinerInner;->t:Ljava/lang/Object;

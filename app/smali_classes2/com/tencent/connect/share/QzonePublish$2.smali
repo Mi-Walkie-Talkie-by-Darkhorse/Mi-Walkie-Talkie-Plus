@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/share/QzonePublish$2;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Landroid/media/MediaPlayer$OnErrorListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/tencent/connect/share/QzonePublish;Lcom/tencent/tauth/IUiListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/share/QzonePublish$2;->b:Lcom/tencent/connect/share/QzonePublish;
 
     iput-object p2, p0, Lcom/tencent/connect/share/QzonePublish$2;->a:Lcom/tencent/tauth/IUiListener;
@@ -46,10 +44,8 @@
 
     const-string p2, "publishToQzone() mediaplayer onError()"
 
-    .line 1
     invoke-static {p1, p2}, Lcom/tencent/open/a/f;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object p1, p0, Lcom/tencent/connect/share/QzonePublish$2;->a:Lcom/tencent/tauth/IUiListener;
 
     new-instance p2, Lcom/tencent/tauth/UiError;

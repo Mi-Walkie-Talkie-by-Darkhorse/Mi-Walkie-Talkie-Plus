@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;
 .super Ljava/lang/Object;
-.source "LruDiskCache.java"
 
 # interfaces
 .implements Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
@@ -36,7 +35,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
     sput-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->DEFAULT_COMPRESS_FORMAT:Landroid/graphics/Bitmap$CompressFormat;
@@ -64,7 +62,6 @@
 
     move-wide v4, p3
 
-    .line 1
     invoke-direct/range {v0 .. v6}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;-><init>(Ljava/io/File;Ljava/io/File;Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;JI)V
 
     return-void
@@ -78,22 +75,18 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const v0, 0x8000
 
-    .line 3
     iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->bufferSize:I
 
-    .line 4
     sget-object v0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->DEFAULT_COMPRESS_FORMAT:Landroid/graphics/Bitmap$CompressFormat;
 
     iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->compressFormat:Landroid/graphics/Bitmap$CompressFormat;
 
     const/16 v0, 0x64
 
-    .line 5
     iput v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->compressQuality:I
 
     if-eqz p1, :cond_5
@@ -126,11 +119,9 @@
     :cond_1
     move v5, p6
 
-    .line 6
     :goto_0
     iput-object p2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->reserveCacheDir:Ljava/io/File;
 
-    .line 7
     iput-object p3, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->fileNameGenerator:Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;
 
     move-object v0, p0
@@ -139,12 +130,10 @@
 
     move-object v2, p2
 
-    .line 8
     invoke-direct/range {v0 .. v5}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->initCache(Ljava/io/File;Ljava/io/File;JI)V
 
     return-void
 
-    .line 9
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -154,7 +143,6 @@
 
     throw p1
 
-    .line 10
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -164,7 +152,6 @@
 
     throw p1
 
-    .line 11
     :cond_4
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -174,7 +161,6 @@
 
     throw p1
 
-    .line 12
     :cond_5
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -188,7 +174,6 @@
 .method private getKey(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->fileNameGenerator:Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;
 
     invoke-interface {v0, p1}, Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;->generate(Ljava/lang/String;)Ljava/lang/String;
@@ -216,7 +201,6 @@
 
     move v5, p5
 
-    .line 1
     :try_start_0
     invoke-static/range {v0 .. v5}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;->open(Ljava/io/File;IIJI)Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
@@ -231,7 +215,6 @@
     :catch_0
     move-exception p1
 
-    .line 2
     invoke-static {p1}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/Throwable;)V
 
     if-eqz p2, :cond_0
@@ -246,10 +229,8 @@
 
     move v5, p5
 
-    .line 3
     invoke-direct/range {v0 .. v5}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->initCache(Ljava/io/File;Ljava/io/File;JI)V
 
-    .line 4
     :cond_0
     iget-object p2, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->cache:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
@@ -258,7 +239,6 @@
     :goto_0
     return-void
 
-    .line 5
     :cond_1
     throw p1
 .end method
@@ -268,7 +248,6 @@
 .method public clear()V
     .locals 7
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->cache:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
@@ -281,10 +260,8 @@
     :catch_0
     move-exception v0
 
-    .line 2
     invoke-static {v0}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/Throwable;)V
 
-    .line 3
     :goto_0
     :try_start_1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->cache:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
@@ -318,7 +295,6 @@
     :catch_1
     move-exception v0
 
-    .line 4
     invoke-static {v0}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/Throwable;)V
 
     :goto_1
@@ -328,7 +304,6 @@
 .method public close()V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->cache:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
@@ -341,13 +316,11 @@
     :catch_0
     move-exception v0
 
-    .line 2
     invoke-static {v0}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/Throwable;)V
 
     :goto_0
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->cache:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     return-void
@@ -358,7 +331,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->cache:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
@@ -380,7 +352,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 2
     :try_start_1
     invoke-virtual {p1, v1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Snapshot;->getFile(I)Ljava/io/File;
 
@@ -392,7 +363,6 @@
     :goto_0
     if-eqz p1, :cond_1
 
-    .line 3
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Snapshot;->close()V
 
     :cond_1
@@ -419,7 +389,6 @@
 
     move-object p1, v0
 
-    .line 4
     :goto_1
     :try_start_2
     invoke-static {v1}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/Throwable;)V
@@ -428,7 +397,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 5
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Snapshot;->close()V
 
     :cond_2
@@ -449,7 +417,6 @@
 .method public getDirectory()Ljava/io/File;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->cache:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;->getDirectory()Ljava/io/File;
@@ -462,7 +429,6 @@
 .method public remove(Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->cache:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
@@ -481,7 +447,6 @@
     :catch_0
     move-exception p1
 
-    .line 2
     invoke-static {p1}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/Throwable;)V
 
     const/4 p1, 0x0
@@ -497,7 +462,6 @@
         }
     .end annotation
 
-    .line 9
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->cache:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     invoke-direct {p0, p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->getKey(Ljava/lang/String;)Ljava/lang/String;
@@ -514,7 +478,6 @@
 
     return v0
 
-    .line 10
     :cond_0
     new-instance v1, Ljava/io/BufferedOutputStream;
 
@@ -526,7 +489,6 @@
 
     invoke-direct {v1, v0, v2}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;I)V
 
-    .line 11
     :try_start_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->compressFormat:Landroid/graphics/Bitmap$CompressFormat;
 
@@ -538,17 +500,14 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 12
     invoke-static {v1}, Lcom/nostra13/universalimageloader/utils/IoUtils;->closeSilently(Ljava/io/Closeable;)V
 
     if-eqz p2, :cond_1
 
-    .line 13
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;->commit()V
 
     goto :goto_0
 
-    .line 14
     :cond_1
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;->abort()V
 
@@ -558,7 +517,6 @@
     :catchall_0
     move-exception p1
 
-    .line 15
     invoke-static {v1}, Lcom/nostra13/universalimageloader/utils/IoUtils;->closeSilently(Ljava/io/Closeable;)V
 
     throw p1
@@ -572,7 +530,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->cache:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache;
 
     invoke-direct {p0, p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->getKey(Ljava/lang/String;)Ljava/lang/String;
@@ -589,7 +546,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     new-instance v1, Ljava/io/BufferedOutputStream;
 
@@ -601,7 +557,6 @@
 
     invoke-direct {v1, v0, v2}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;I)V
 
-    .line 3
     :try_start_0
     iget v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->bufferSize:I
 
@@ -611,17 +566,14 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     invoke-static {v1}, Lcom/nostra13/universalimageloader/utils/IoUtils;->closeSilently(Ljava/io/Closeable;)V
 
     if-eqz p2, :cond_1
 
-    .line 5
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;->commit()V
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;->abort()V
 
@@ -631,10 +583,8 @@
     :catchall_0
     move-exception p2
 
-    .line 7
     invoke-static {v1}, Lcom/nostra13/universalimageloader/utils/IoUtils;->closeSilently(Ljava/io/Closeable;)V
 
-    .line 8
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;->abort()V
 
     throw p2
@@ -643,7 +593,6 @@
 .method public setBufferSize(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->bufferSize:I
 
     return-void
@@ -652,7 +601,6 @@
 .method public setCompressFormat(Landroid/graphics/Bitmap$CompressFormat;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->compressFormat:Landroid/graphics/Bitmap$CompressFormat;
 
     return-void
@@ -661,7 +609,6 @@
 .method public setCompressQuality(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/LruDiskCache;->compressQuality:I
 
     return-void

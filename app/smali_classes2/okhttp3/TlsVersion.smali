@@ -1,6 +1,5 @@
 .class public final enum Lokhttp3/TlsVersion;
 .super Ljava/lang/Enum;
-.source "TlsVersion.java"
 
 
 # annotations
@@ -35,7 +34,6 @@
 .method static constructor <clinit>()V
     .locals 8
 
-    .line 1
     new-instance v0, Lokhttp3/TlsVersion;
 
     const/4 v1, 0x0
@@ -48,7 +46,6 @@
 
     sput-object v0, Lokhttp3/TlsVersion;->TLS_1_3:Lokhttp3/TlsVersion;
 
-    .line 2
     new-instance v0, Lokhttp3/TlsVersion;
 
     const/4 v2, 0x1
@@ -61,7 +58,6 @@
 
     sput-object v0, Lokhttp3/TlsVersion;->TLS_1_2:Lokhttp3/TlsVersion;
 
-    .line 3
     new-instance v0, Lokhttp3/TlsVersion;
 
     const/4 v3, 0x2
@@ -74,7 +70,6 @@
 
     sput-object v0, Lokhttp3/TlsVersion;->TLS_1_1:Lokhttp3/TlsVersion;
 
-    .line 4
     new-instance v0, Lokhttp3/TlsVersion;
 
     const/4 v4, 0x3
@@ -87,7 +82,6 @@
 
     sput-object v0, Lokhttp3/TlsVersion;->TLS_1_0:Lokhttp3/TlsVersion;
 
-    .line 5
     new-instance v0, Lokhttp3/TlsVersion;
 
     const/4 v5, 0x4
@@ -104,7 +98,6 @@
 
     new-array v6, v6, [Lokhttp3/TlsVersion;
 
-    .line 6
     sget-object v7, Lokhttp3/TlsVersion;->TLS_1_3:Lokhttp3/TlsVersion;
 
     aput-object v7, v6, v1
@@ -138,10 +131,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lokhttp3/TlsVersion;->javaName:Ljava/lang/String;
 
     return-void
@@ -150,7 +141,6 @@
 .method public static forJavaName(Ljava/lang/String;)Lokhttp3/TlsVersion;
     .locals 6
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
@@ -255,12 +245,10 @@
 
     if-ne v0, v2, :cond_3
 
-    .line 2
     sget-object p0, Lokhttp3/TlsVersion;->SSL_3_0:Lokhttp3/TlsVersion;
 
     return-object p0
 
-    .line 3
     :cond_3
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -282,25 +270,21 @@
 
     throw v0
 
-    .line 4
     :cond_4
     sget-object p0, Lokhttp3/TlsVersion;->TLS_1_0:Lokhttp3/TlsVersion;
 
     return-object p0
 
-    .line 5
     :cond_5
     sget-object p0, Lokhttp3/TlsVersion;->TLS_1_1:Lokhttp3/TlsVersion;
 
     return-object p0
 
-    .line 6
     :cond_6
     sget-object p0, Lokhttp3/TlsVersion;->TLS_1_2:Lokhttp3/TlsVersion;
 
     return-object p0
 
-    .line 7
     :cond_7
     sget-object p0, Lokhttp3/TlsVersion;->TLS_1_3:Lokhttp3/TlsVersion;
 
@@ -329,14 +313,12 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     array-length v1, p0
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 2
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -346,7 +328,6 @@
 
     aget-object v3, p0, v2
 
-    .line 3
     invoke-static {v3}, Lokhttp3/TlsVersion;->forJavaName(Ljava/lang/String;)Lokhttp3/TlsVersion;
 
     move-result-object v3
@@ -357,7 +338,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
@@ -369,7 +349,6 @@
 .method public static valueOf(Ljava/lang/String;)Lokhttp3/TlsVersion;
     .locals 1
 
-    .line 1
     const-class v0, Lokhttp3/TlsVersion;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -384,7 +363,6 @@
 .method public static values()[Lokhttp3/TlsVersion;
     .locals 1
 
-    .line 1
     sget-object v0, Lokhttp3/TlsVersion;->$VALUES:[Lokhttp3/TlsVersion;
 
     invoke-virtual {v0}, [Lokhttp3/TlsVersion;->clone()Ljava/lang/Object;
@@ -401,7 +379,6 @@
 .method public javaName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/TlsVersion;->javaName:Ljava/lang/String;
 
     return-object v0

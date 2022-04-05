@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/blelib/c/e;
 .super Ljava/lang/Object;
-.source "PacketListener.java"
 
 
 # instance fields
@@ -13,15 +12,12 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x1388
 
-    .line 5
     iput-wide v0, p0, Lcom/ifengyu/blelib/c/e;->b:J
 
-    .line 6
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -34,13 +30,10 @@
 .method public constructor <init>(J)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-wide p1, p0, Lcom/ifengyu/blelib/c/e;->b:J
 
-    .line 3
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide p1
@@ -55,7 +48,6 @@
 .method public a()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/ifengyu/blelib/c/e;->a:J
 
     return-wide v0
@@ -70,7 +62,6 @@
 .method public b()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/ifengyu/blelib/c/e;->b:J
 
     return-wide v0

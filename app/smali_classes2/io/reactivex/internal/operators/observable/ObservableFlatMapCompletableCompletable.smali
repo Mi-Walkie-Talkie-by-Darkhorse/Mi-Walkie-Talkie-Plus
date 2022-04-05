@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableFlatMapCompletableCompletable;
 .super Lio/reactivex/Completable;
-.source "ObservableFlatMapCompletableCompletable.java"
 
 # interfaces
 .implements Lio/reactivex/internal/fuseable/FuseToObservable;
@@ -64,16 +63,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableFlatMapCompletableCompletable;->source:Lio/reactivex/ObservableSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableFlatMapCompletableCompletable;->mapper:Lio/reactivex/functions/Function;
 
-    .line 4
     iput-boolean p3, p0, Lio/reactivex/internal/operators/observable/ObservableFlatMapCompletableCompletable;->delayErrors:Z
 
     return-void
@@ -91,7 +86,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableFlatMapCompletable;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableFlatMapCompletableCompletable;->source:Lio/reactivex/ObservableSource;
@@ -112,7 +106,6 @@
 .method protected subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableFlatMapCompletableCompletable;->source:Lio/reactivex/ObservableSource;
 
     new-instance v1, Lio/reactivex/internal/operators/observable/ObservableFlatMapCompletableCompletable$FlatMapCompletableMainObserver;

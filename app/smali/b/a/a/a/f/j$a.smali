@@ -1,6 +1,5 @@
 .class synthetic Lb/a/a/a/f/j$a;
 .super Ljava/lang/Object;
-.source "LineChartRenderer.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/github/mikephil/charting/data/LineDataSet$Mode;->values()[Lcom/github/mikephil/charting/data/LineDataSet$Mode;
 
     move-result-object v0

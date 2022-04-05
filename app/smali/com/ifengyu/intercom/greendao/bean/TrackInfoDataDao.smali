@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/greendao/bean/TrackInfoDataDao;
 .super Lorg/greenrobot/greendao/AbstractDao;
-.source "TrackInfoDataDao.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 140
     invoke-virtual {p1}, Lcom/ifengyu/intercom/greendao/bean/b;->k()Ljava/lang/Long;
 
     move-result-object p1
@@ -46,14 +44,12 @@
 .method protected final a(Lcom/ifengyu/intercom/greendao/bean/b;J)Ljava/lang/Long;
     .locals 1
 
-    .line 138
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/greendao/bean/b;->a(Ljava/lang/Long;)V
 
-    .line 139
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -66,7 +62,6 @@
 
     add-int/lit8 v0, p3, 0x0
 
-    .line 111
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -93,7 +88,6 @@
 
     add-int/lit8 v0, p3, 0x1
 
-    .line 112
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -114,7 +108,6 @@
 
     add-int/lit8 v0, p3, 0x2
 
-    .line 113
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -135,7 +128,6 @@
 
     add-int/lit8 v0, p3, 0x3
 
-    .line 114
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -156,7 +148,6 @@
 
     add-int/lit8 v0, p3, 0x4
 
-    .line 115
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -181,7 +172,6 @@
 
     add-int/lit8 v0, p3, 0x5
 
-    .line 116
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -202,7 +192,6 @@
 
     add-int/lit8 v0, p3, 0x6
 
-    .line 117
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -223,7 +212,6 @@
 
     add-int/lit8 v0, p3, 0x7
 
-    .line 118
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -248,7 +236,6 @@
 
     add-int/lit8 v0, p3, 0x8
 
-    .line 119
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -273,7 +260,6 @@
 
     add-int/lit8 v0, p3, 0x9
 
-    .line 120
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -294,7 +280,6 @@
 
     add-int/lit8 v0, p3, 0xa
 
-    .line 121
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -315,7 +300,6 @@
 
     add-int/lit8 v0, p3, 0xb
 
-    .line 122
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -336,7 +320,6 @@
 
     add-int/lit8 v0, p3, 0xc
 
-    .line 123
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -357,7 +340,6 @@
 
     add-int/lit8 v0, p3, 0xd
 
-    .line 124
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -382,7 +364,6 @@
 
     add-int/lit8 v0, p3, 0xe
 
-    .line 125
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -407,7 +388,6 @@
 
     add-int/lit8 v0, p3, 0xf
 
-    .line 126
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -432,7 +412,6 @@
 
     add-int/lit8 v0, p3, 0x10
 
-    .line 127
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -457,7 +436,6 @@
 
     add-int/lit8 v0, p3, 0x11
 
-    .line 128
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -482,7 +460,6 @@
 
     add-int/lit8 v0, p3, 0x12
 
-    .line 129
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -507,7 +484,6 @@
 
     add-int/lit8 v0, p3, 0x13
 
-    .line 130
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -532,7 +508,6 @@
 
     add-int/lit8 v0, p3, 0x14
 
-    .line 131
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -557,7 +532,6 @@
 
     add-int/lit8 v0, p3, 0x15
 
-    .line 132
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -582,7 +556,6 @@
 
     add-int/lit8 v0, p3, 0x16
 
-    .line 133
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -607,7 +580,6 @@
 
     add-int/lit8 v0, p3, 0x17
 
-    .line 134
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -632,7 +604,6 @@
 
     add-int/lit8 v0, p3, 0x18
 
-    .line 135
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -653,7 +624,6 @@
 
     add-int/lit8 v0, p3, 0x19
 
-    .line 136
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -692,7 +662,6 @@
 
     add-int/lit8 p3, p3, 0x1a
 
-    .line 137
     invoke-interface {p1, p3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v0
@@ -727,10 +696,8 @@
 .method protected final a(Landroid/database/sqlite/SQLiteStatement;Lcom/ifengyu/intercom/greendao/bean/b;)V
     .locals 8
 
-    .line 56
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteStatement;->clearBindings()V
 
-    .line 57
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->k()Ljava/lang/Long;
 
     move-result-object v0
@@ -739,14 +706,12 @@
 
     const/4 v1, 0x1
 
-    .line 58
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 59
     :cond_0
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->A()Ljava/lang/String;
 
@@ -756,10 +721,8 @@
 
     const/4 v1, 0x2
 
-    .line 60
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 61
     :cond_1
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->v()Ljava/lang/String;
 
@@ -769,10 +732,8 @@
 
     const/4 v1, 0x3
 
-    .line 62
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 63
     :cond_2
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->p()Ljava/lang/String;
 
@@ -782,10 +743,8 @@
 
     const/4 v1, 0x4
 
-    .line 64
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 65
     :cond_3
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->z()Ljava/lang/Integer;
 
@@ -795,7 +754,6 @@
 
     const/4 v1, 0x5
 
-    .line 66
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -804,7 +762,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 67
     :cond_4
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->y()Ljava/lang/String;
 
@@ -814,10 +771,8 @@
 
     const/4 v1, 0x6
 
-    .line 68
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 69
     :cond_5
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->s()Ljava/lang/String;
 
@@ -827,10 +782,8 @@
 
     const/4 v1, 0x7
 
-    .line 70
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 71
     :cond_6
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->f()Ljava/lang/Integer;
 
@@ -840,7 +793,6 @@
 
     const/16 v1, 0x8
 
-    .line 72
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -849,7 +801,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 73
     :cond_7
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->j()Ljava/lang/Integer;
 
@@ -859,7 +810,6 @@
 
     const/16 v1, 0x9
 
-    .line 74
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -868,7 +818,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 75
     :cond_8
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->e()Ljava/lang/String;
 
@@ -878,10 +827,8 @@
 
     const/16 v1, 0xa
 
-    .line 76
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 77
     :cond_9
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->i()Ljava/lang/String;
 
@@ -891,10 +838,8 @@
 
     const/16 v1, 0xb
 
-    .line 78
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 79
     :cond_a
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->g()Ljava/lang/String;
 
@@ -904,10 +849,8 @@
 
     const/16 v1, 0xc
 
-    .line 80
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 81
     :cond_b
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->h()Ljava/lang/String;
 
@@ -917,10 +860,8 @@
 
     const/16 v1, 0xd
 
-    .line 82
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 83
     :cond_c
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->r()Ljava/lang/Integer;
 
@@ -930,7 +871,6 @@
 
     const/16 v1, 0xe
 
-    .line 84
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -939,7 +879,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 85
     :cond_d
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->q()Ljava/lang/Integer;
 
@@ -949,7 +888,6 @@
 
     const/16 v1, 0xf
 
-    .line 86
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -958,7 +896,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 87
     :cond_e
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->d()Ljava/lang/Float;
 
@@ -968,7 +905,6 @@
 
     const/16 v1, 0x10
 
-    .line 88
     invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
 
     move-result v0
@@ -977,7 +913,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindDouble(ID)V
 
-    .line 89
     :cond_f
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->c()Ljava/lang/Integer;
 
@@ -987,7 +922,6 @@
 
     const/16 v1, 0x11
 
-    .line 90
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -996,7 +930,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 91
     :cond_10
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->n()Ljava/lang/Integer;
 
@@ -1006,7 +939,6 @@
 
     const/16 v1, 0x12
 
-    .line 92
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1015,7 +947,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 93
     :cond_11
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->o()Ljava/lang/Integer;
 
@@ -1025,7 +956,6 @@
 
     const/16 v1, 0x13
 
-    .line 94
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1034,7 +964,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 95
     :cond_12
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->a()Ljava/lang/Integer;
 
@@ -1044,7 +973,6 @@
 
     const/16 v1, 0x14
 
-    .line 96
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1053,7 +981,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 97
     :cond_13
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->b()Ljava/lang/Integer;
 
@@ -1063,7 +990,6 @@
 
     const/16 v1, 0x15
 
-    .line 98
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1072,7 +998,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 99
     :cond_14
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->x()Ljava/lang/Integer;
 
@@ -1082,7 +1007,6 @@
 
     const/16 v1, 0x16
 
-    .line 100
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1091,7 +1015,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 101
     :cond_15
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->t()Ljava/lang/Integer;
 
@@ -1101,7 +1024,6 @@
 
     const/16 v1, 0x17
 
-    .line 102
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1110,7 +1032,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 103
     :cond_16
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->u()Ljava/lang/Integer;
 
@@ -1120,7 +1041,6 @@
 
     const/16 v1, 0x18
 
-    .line 104
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1129,7 +1049,6 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 105
     :cond_17
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->w()Ljava/lang/String;
 
@@ -1139,10 +1058,8 @@
 
     const/16 v1, 0x19
 
-    .line 106
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
-    .line 107
     :cond_18
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->l()Ljava/lang/Boolean;
 
@@ -1156,7 +1073,6 @@
 
     const/16 v5, 0x1a
 
-    .line 108
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
@@ -1173,7 +1089,6 @@
     :goto_0
     invoke-virtual {p1, v5, v6, v7}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 109
     :cond_1a
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->m()Ljava/lang/Boolean;
 
@@ -1183,7 +1098,6 @@
 
     const/16 v0, 0x1b
 
-    .line 110
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p2
@@ -1205,10 +1119,8 @@
 .method protected final a(Lorg/greenrobot/greendao/database/DatabaseStatement;Lcom/ifengyu/intercom/greendao/bean/b;)V
     .locals 8
 
-    .line 1
     invoke-interface {p1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->clearBindings()V
 
-    .line 2
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->k()Ljava/lang/Long;
 
     move-result-object v0
@@ -1217,14 +1129,12 @@
 
     const/4 v1, 0x1
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 4
     :cond_0
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->A()Ljava/lang/String;
 
@@ -1234,10 +1144,8 @@
 
     const/4 v1, 0x2
 
-    .line 5
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    .line 6
     :cond_1
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->v()Ljava/lang/String;
 
@@ -1247,10 +1155,8 @@
 
     const/4 v1, 0x3
 
-    .line 7
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    .line 8
     :cond_2
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->p()Ljava/lang/String;
 
@@ -1260,10 +1166,8 @@
 
     const/4 v1, 0x4
 
-    .line 9
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    .line 10
     :cond_3
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->z()Ljava/lang/Integer;
 
@@ -1273,7 +1177,6 @@
 
     const/4 v1, 0x5
 
-    .line 11
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1282,7 +1185,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 12
     :cond_4
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->y()Ljava/lang/String;
 
@@ -1292,10 +1194,8 @@
 
     const/4 v1, 0x6
 
-    .line 13
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    .line 14
     :cond_5
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->s()Ljava/lang/String;
 
@@ -1305,10 +1205,8 @@
 
     const/4 v1, 0x7
 
-    .line 15
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    .line 16
     :cond_6
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->f()Ljava/lang/Integer;
 
@@ -1318,7 +1216,6 @@
 
     const/16 v1, 0x8
 
-    .line 17
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1327,7 +1224,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 18
     :cond_7
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->j()Ljava/lang/Integer;
 
@@ -1337,7 +1233,6 @@
 
     const/16 v1, 0x9
 
-    .line 19
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1346,7 +1241,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 20
     :cond_8
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->e()Ljava/lang/String;
 
@@ -1356,10 +1250,8 @@
 
     const/16 v1, 0xa
 
-    .line 21
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    .line 22
     :cond_9
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->i()Ljava/lang/String;
 
@@ -1369,10 +1261,8 @@
 
     const/16 v1, 0xb
 
-    .line 23
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    .line 24
     :cond_a
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->g()Ljava/lang/String;
 
@@ -1382,10 +1272,8 @@
 
     const/16 v1, 0xc
 
-    .line 25
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    .line 26
     :cond_b
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->h()Ljava/lang/String;
 
@@ -1395,10 +1283,8 @@
 
     const/16 v1, 0xd
 
-    .line 27
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    .line 28
     :cond_c
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->r()Ljava/lang/Integer;
 
@@ -1408,7 +1294,6 @@
 
     const/16 v1, 0xe
 
-    .line 29
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1417,7 +1302,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 30
     :cond_d
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->q()Ljava/lang/Integer;
 
@@ -1427,7 +1311,6 @@
 
     const/16 v1, 0xf
 
-    .line 31
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1436,7 +1319,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 32
     :cond_e
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->d()Ljava/lang/Float;
 
@@ -1446,7 +1328,6 @@
 
     const/16 v1, 0x10
 
-    .line 33
     invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
 
     move-result v0
@@ -1455,7 +1336,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindDouble(ID)V
 
-    .line 34
     :cond_f
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->c()Ljava/lang/Integer;
 
@@ -1465,7 +1345,6 @@
 
     const/16 v1, 0x11
 
-    .line 35
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1474,7 +1353,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 36
     :cond_10
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->n()Ljava/lang/Integer;
 
@@ -1484,7 +1362,6 @@
 
     const/16 v1, 0x12
 
-    .line 37
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1493,7 +1370,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 38
     :cond_11
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->o()Ljava/lang/Integer;
 
@@ -1503,7 +1379,6 @@
 
     const/16 v1, 0x13
 
-    .line 39
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1512,7 +1387,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 40
     :cond_12
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->a()Ljava/lang/Integer;
 
@@ -1522,7 +1396,6 @@
 
     const/16 v1, 0x14
 
-    .line 41
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1531,7 +1404,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 42
     :cond_13
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->b()Ljava/lang/Integer;
 
@@ -1541,7 +1413,6 @@
 
     const/16 v1, 0x15
 
-    .line 43
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1550,7 +1421,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 44
     :cond_14
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->x()Ljava/lang/Integer;
 
@@ -1560,7 +1430,6 @@
 
     const/16 v1, 0x16
 
-    .line 45
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1569,7 +1438,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 46
     :cond_15
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->t()Ljava/lang/Integer;
 
@@ -1579,7 +1447,6 @@
 
     const/16 v1, 0x17
 
-    .line 47
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1588,7 +1455,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 48
     :cond_16
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->u()Ljava/lang/Integer;
 
@@ -1598,7 +1464,6 @@
 
     const/16 v1, 0x18
 
-    .line 49
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -1607,7 +1472,6 @@
 
     invoke-interface {p1, v1, v2, v3}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 50
     :cond_17
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->w()Ljava/lang/String;
 
@@ -1617,10 +1481,8 @@
 
     const/16 v1, 0x19
 
-    .line 51
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
-    .line 52
     :cond_18
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->l()Ljava/lang/Boolean;
 
@@ -1634,7 +1496,6 @@
 
     const/16 v5, 0x1a
 
-    .line 53
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
@@ -1651,7 +1512,6 @@
     :goto_0
     invoke-interface {p1, v5, v6, v7}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 54
     :cond_1a
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/b;->m()Ljava/lang/Boolean;
 
@@ -1661,7 +1521,6 @@
 
     const/16 v0, 0x1b
 
-    .line 55
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p2
@@ -1683,7 +1542,6 @@
 .method public b(Lcom/ifengyu/intercom/greendao/bean/b;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/greendao/bean/b;->k()Ljava/lang/Long;
 
     move-result-object p1
@@ -1704,7 +1562,6 @@
 .method protected bridge synthetic bindValues(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/bean/TrackInfoDataDao;->a(Landroid/database/sqlite/SQLiteStatement;Lcom/ifengyu/intercom/greendao/bean/b;)V
@@ -1715,7 +1572,6 @@
 .method protected bridge synthetic bindValues(Lorg/greenrobot/greendao/database/DatabaseStatement;Ljava/lang/Object;)V
     .locals 0
 
-    .line 2
     check-cast p2, Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/bean/TrackInfoDataDao;->a(Lorg/greenrobot/greendao/database/DatabaseStatement;Lcom/ifengyu/intercom/greendao/bean/b;)V
@@ -1726,7 +1582,6 @@
 .method public bridge synthetic getKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/greendao/bean/TrackInfoDataDao;->a(Lcom/ifengyu/intercom/greendao/bean/b;)Ljava/lang/Long;
@@ -1739,7 +1594,6 @@
 .method public bridge synthetic hasKey(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/greendao/bean/TrackInfoDataDao;->b(Lcom/ifengyu/intercom/greendao/bean/b;)Z
@@ -1762,12 +1616,10 @@
 
     move-object/from16 v0, p1
 
-    .line 3
     new-instance v28, Lcom/ifengyu/intercom/greendao/bean/b;
 
     add-int/lit8 v1, p2, 0x0
 
-    .line 4
     invoke-interface {v0, v1}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v2
@@ -1790,7 +1642,6 @@
     :goto_0
     add-int/lit8 v2, p2, 0x1
 
-    .line 5
     invoke-interface {v0, v2}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v4
@@ -1809,7 +1660,6 @@
     :goto_1
     add-int/lit8 v4, p2, 0x2
 
-    .line 6
     invoke-interface {v0, v4}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v5
@@ -1828,7 +1678,6 @@
     :goto_2
     add-int/lit8 v5, p2, 0x3
 
-    .line 7
     invoke-interface {v0, v5}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v6
@@ -1847,7 +1696,6 @@
     :goto_3
     add-int/lit8 v6, p2, 0x4
 
-    .line 8
     invoke-interface {v0, v6}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v7
@@ -1870,7 +1718,6 @@
     :goto_4
     add-int/lit8 v7, p2, 0x5
 
-    .line 9
     invoke-interface {v0, v7}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v8
@@ -1889,7 +1736,6 @@
     :goto_5
     add-int/lit8 v8, p2, 0x6
 
-    .line 10
     invoke-interface {v0, v8}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v9
@@ -1908,7 +1754,6 @@
     :goto_6
     add-int/lit8 v9, p2, 0x7
 
-    .line 11
     invoke-interface {v0, v9}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v10
@@ -1931,7 +1776,6 @@
     :goto_7
     add-int/lit8 v10, p2, 0x8
 
-    .line 12
     invoke-interface {v0, v10}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v11
@@ -1954,7 +1798,6 @@
     :goto_8
     add-int/lit8 v11, p2, 0x9
 
-    .line 13
     invoke-interface {v0, v11}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v12
@@ -1973,7 +1816,6 @@
     :goto_9
     add-int/lit8 v12, p2, 0xa
 
-    .line 14
     invoke-interface {v0, v12}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v13
@@ -1992,7 +1834,6 @@
     :goto_a
     add-int/lit8 v13, p2, 0xb
 
-    .line 15
     invoke-interface {v0, v13}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v14
@@ -2011,7 +1852,6 @@
     :goto_b
     add-int/lit8 v14, p2, 0xc
 
-    .line 16
     invoke-interface {v0, v14}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v15
@@ -2030,7 +1870,6 @@
     :goto_c
     add-int/lit8 v15, p2, 0xd
 
-    .line 17
     invoke-interface {v0, v15}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v16
@@ -2053,7 +1892,6 @@
     :goto_d
     add-int/lit8 v3, p2, 0xe
 
-    .line 18
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v17
@@ -2078,7 +1916,6 @@
     :goto_e
     add-int/lit8 v3, p2, 0xf
 
-    .line 19
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v18
@@ -2103,7 +1940,6 @@
     :goto_f
     add-int/lit8 v3, p2, 0x10
 
-    .line 20
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v19
@@ -2128,7 +1964,6 @@
     :goto_10
     add-int/lit8 v3, p2, 0x11
 
-    .line 21
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v20
@@ -2153,7 +1988,6 @@
     :goto_11
     add-int/lit8 v3, p2, 0x12
 
-    .line 22
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v21
@@ -2178,7 +2012,6 @@
     :goto_12
     add-int/lit8 v3, p2, 0x13
 
-    .line 23
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v22
@@ -2203,7 +2036,6 @@
     :goto_13
     add-int/lit8 v3, p2, 0x14
 
-    .line 24
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v23
@@ -2228,7 +2060,6 @@
     :goto_14
     add-int/lit8 v3, p2, 0x15
 
-    .line 25
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v24
@@ -2253,7 +2084,6 @@
     :goto_15
     add-int/lit8 v3, p2, 0x16
 
-    .line 26
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v25
@@ -2278,7 +2108,6 @@
     :goto_16
     add-int/lit8 v3, p2, 0x17
 
-    .line 27
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v26
@@ -2303,7 +2132,6 @@
     :goto_17
     add-int/lit8 v3, p2, 0x18
 
-    .line 28
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v27
@@ -2324,7 +2152,6 @@
     :goto_18
     add-int/lit8 v3, p2, 0x19
 
-    .line 29
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v29
@@ -2363,7 +2190,6 @@
     :goto_1a
     add-int/lit8 v3, p2, 0x1a
 
-    .line 30
     invoke-interface {v0, v3}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v32
@@ -2454,7 +2280,6 @@
 .method public bridge synthetic readEntity(Landroid/database/Cursor;I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/bean/TrackInfoDataDao;->readEntity(Landroid/database/Cursor;I)Lcom/ifengyu/intercom/greendao/bean/b;
 
     move-result-object p1
@@ -2465,7 +2290,6 @@
 .method public bridge synthetic readEntity(Landroid/database/Cursor;Ljava/lang/Object;I)V
     .locals 0
 
-    .line 2
     check-cast p2, Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/ifengyu/intercom/greendao/bean/TrackInfoDataDao;->a(Landroid/database/Cursor;Lcom/ifengyu/intercom/greendao/bean/b;I)V
@@ -2478,7 +2302,6 @@
 
     add-int/lit8 p2, p2, 0x0
 
-    .line 2
     invoke-interface {p1, p2}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v0
@@ -2505,7 +2328,6 @@
 .method public bridge synthetic readKey(Landroid/database/Cursor;I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/bean/TrackInfoDataDao;->readKey(Landroid/database/Cursor;I)Ljava/lang/Long;
 
     move-result-object p1
@@ -2516,7 +2338,6 @@
 .method protected bridge synthetic updateKeyAfterInsert(Ljava/lang/Object;J)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/ifengyu/intercom/greendao/bean/TrackInfoDataDao;->a(Lcom/ifengyu/intercom/greendao/bean/b;J)Ljava/lang/Long;

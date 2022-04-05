@@ -1,6 +1,5 @@
 .class abstract Lio/reactivex/internal/operators/parallel/ParallelFilterTry$BaseFilterSubscriber;
 .super Ljava/lang/Object;
-.source "ParallelFilterTry.java"
 
 # interfaces
 .implements Lio/reactivex/internal/fuseable/ConditionalSubscriber;
@@ -77,13 +76,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/parallel/ParallelFilterTry$BaseFilterSubscriber;->predicate:Lio/reactivex/functions/Predicate;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/parallel/ParallelFilterTry$BaseFilterSubscriber;->errorHandler:Lio/reactivex/functions/BiFunction;
 
     return-void
@@ -94,7 +90,6 @@
 .method public final cancel()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/parallel/ParallelFilterTry$BaseFilterSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v0}, Lc/a/d;->cancel()V
@@ -110,7 +105,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0, p1}, Lio/reactivex/internal/fuseable/ConditionalSubscriber;->tryOnNext(Ljava/lang/Object;)Z
 
     move-result p1
@@ -121,7 +115,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lio/reactivex/internal/operators/parallel/ParallelFilterTry$BaseFilterSubscriber;->upstream:Lc/a/d;
 
     const-wide/16 v0, 0x1
@@ -135,7 +128,6 @@
 .method public final request(J)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/parallel/ParallelFilterTry$BaseFilterSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v0, p1, p2}, Lc/a/d;->request(J)V

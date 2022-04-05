@@ -1,6 +1,5 @@
 .class Landroidx/viewpager2/widget/ViewPager2$m;
 .super Landroidx/recyclerview/widget/RecyclerView;
-.source "ViewPager2.java"
 
 
 # annotations
@@ -26,10 +25,8 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$m;->a:Landroidx/viewpager2/widget/ViewPager2;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -43,7 +40,6 @@
         value = 0x17
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$m;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->t:Landroidx/viewpager2/widget/ViewPager2$e;
@@ -54,7 +50,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$m;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->t:Landroidx/viewpager2/widget/ViewPager2$e;
@@ -65,7 +60,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     invoke-super {p0}, Landroidx/recyclerview/widget/RecyclerView;->getAccessibilityClassName()Ljava/lang/CharSequence;
 
@@ -81,24 +75,20 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onInitializeAccessibilityEvent(Landroid/view/accessibility/AccessibilityEvent;)V
 
-    .line 2
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$m;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     iget v0, v0, Landroidx/viewpager2/widget/ViewPager2;->d:I
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityEvent;->setFromIndex(I)V
 
-    .line 3
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$m;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     iget v0, v0, Landroidx/viewpager2/widget/ViewPager2;->d:I
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityEvent;->setToIndex(I)V
 
-    .line 4
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$m;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->t:Landroidx/viewpager2/widget/ViewPager2$e;
@@ -111,7 +101,6 @@
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$m;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-virtual {v0}, Landroidx/viewpager2/widget/ViewPager2;->c()Z
@@ -145,7 +134,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$m;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-virtual {v0}, Landroidx/viewpager2/widget/ViewPager2;->c()Z

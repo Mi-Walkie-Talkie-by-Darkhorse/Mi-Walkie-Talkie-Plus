@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$14;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j;Landroid/view/MotionEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$14;->b:Lcom/amap/api/col/l3/j;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/j$14;->a:Landroid/view/MotionEvent;
@@ -42,17 +40,14 @@
 .method public final run()V
     .locals 2
 
-    .line 1
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object v0
 
     const/16 v1, 0x13
 
-    .line 2
     iput v1, v0, Landroid/os/Message;->what:I
 
-    .line 3
     iget-object v1, p0, Lcom/amap/api/col/l3/j$14;->a:Landroid/view/MotionEvent;
 
     invoke-virtual {v1}, Landroid/view/MotionEvent;->getX()F
@@ -63,7 +58,6 @@
 
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 4
     iget-object v1, p0, Lcom/amap/api/col/l3/j$14;->a:Landroid/view/MotionEvent;
 
     invoke-virtual {v1}, Landroid/view/MotionEvent;->getY()F
@@ -74,7 +68,6 @@
 
     iput v1, v0, Landroid/os/Message;->arg2:I
 
-    .line 5
     iget-object v1, p0, Lcom/amap/api/col/l3/j$14;->b:Lcom/amap/api/col/l3/j;
 
     iget-object v1, v1, Lcom/amap/api/col/l3/j;->i:Landroid/os/Handler;

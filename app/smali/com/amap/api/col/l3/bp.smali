@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/bp;
 .super Ljava/lang/Object;
-.source "IUnzipItem.java"
 
 
 # virtual methods

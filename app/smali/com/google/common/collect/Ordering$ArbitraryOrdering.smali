@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Ordering$ArbitraryOrdering;
 .super Lcom/google/common/collect/Ordering;
-.source "Ordering.java"
 
 
 # annotations
@@ -42,10 +41,8 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/Ordering;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/MapMaker;
 
     invoke-direct {v0}, Lcom/google/common/collect/MapMaker;-><init>()V
@@ -92,13 +89,11 @@
 
     return v1
 
-    .line 1
     :cond_2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Ordering$ArbitraryOrdering;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v2
 
-    .line 2
     invoke-virtual {p0, p2}, Lcom/google/common/collect/Ordering$ArbitraryOrdering;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v3
@@ -115,7 +110,6 @@
     :goto_0
     return v0
 
-    .line 3
     :cond_4
     iget-object v0, p0, Lcom/google/common/collect/Ordering$ArbitraryOrdering;->uids:Ljava/util/Map;
 
@@ -141,7 +135,6 @@
 
     return p1
 
-    .line 4
     :cond_5
     new-instance p1, Ljava/lang/AssertionError;
 
@@ -153,7 +146,6 @@
 .method identityHashCode(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
     move-result p1

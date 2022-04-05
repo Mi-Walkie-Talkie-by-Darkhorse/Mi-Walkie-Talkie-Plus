@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/MultimapBuilder$4;
 .super Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys;
-.source "MultimapBuilder.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Ljava/lang/Class;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/MultimapBuilder$4;->val$keyClass:Ljava/lang/Class;
 
     invoke-direct {p0}, Lcom/google/common/collect/MultimapBuilder$MultimapBuilderWithKeys;-><init>()V
@@ -53,7 +51,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/EnumMap;
 
     iget-object v1, p0, Lcom/google/common/collect/MultimapBuilder$4;->val$keyClass:Ljava/lang/Class;

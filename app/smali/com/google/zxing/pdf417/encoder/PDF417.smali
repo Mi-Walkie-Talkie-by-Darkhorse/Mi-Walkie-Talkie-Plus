@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/pdf417/encoder/PDF417;
 .super Ljava/lang/Object;
-.source "PDF417.java"
 
 
 # static fields
@@ -47,7 +46,6 @@
 
     new-array v2, v1, [I
 
-    .line 1
     fill-array-data v2, :array_0
 
     const/4 v3, 0x0
@@ -2879,7 +2877,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/zxing/pdf417/encoder/PDF417;-><init>(Z)V
 
     return-void
@@ -2888,36 +2885,28 @@
 .method public constructor <init>(Z)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-boolean p1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->compact:Z
 
-    .line 4
     sget-object p1, Lcom/google/zxing/pdf417/encoder/Compaction;->AUTO:Lcom/google/zxing/pdf417/encoder/Compaction;
 
     iput-object p1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->compaction:Lcom/google/zxing/pdf417/encoder/Compaction;
 
     const/4 p1, 0x0
 
-    .line 5
     iput-object p1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->encoding:Ljava/nio/charset/Charset;
 
     const/4 p1, 0x2
 
-    .line 6
     iput p1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->minCols:I
 
     const/16 v0, 0x1e
 
-    .line 7
     iput v0, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->maxCols:I
 
-    .line 8
     iput v0, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->maxRows:I
 
-    .line 9
     iput p1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->minRows:I
 
     return-void
@@ -2930,7 +2919,6 @@
 
     add-int/2addr p0, p1
 
-    .line 1
     div-int p1, p0, p2
 
     add-int/lit8 p1, p1, 0x1
@@ -2955,7 +2943,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->minCols:I
 
     const/4 v1, 0x0
@@ -2973,17 +2960,14 @@
 
     if-gt v0, v3, :cond_2
 
-    .line 2
     invoke-static {p1, p2, v0}, Lcom/google/zxing/pdf417/encoder/PDF417;->calculateNumberOfRows(III)I
 
     move-result v3
 
-    .line 3
     iget v7, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->minRows:I
 
     if-lt v3, v7, :cond_2
 
-    .line 4
     iget v7, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->maxRows:I
 
     if-gt v3, v7, :cond_1
@@ -3012,7 +2996,6 @@
 
     sub-float v9, v7, v8
 
-    .line 5
     invoke-static {v9}, Ljava/lang/Math;->abs(F)F
 
     move-result v9
@@ -3046,21 +3029,18 @@
     :cond_2
     if-nez v2, :cond_3
 
-    .line 6
     iget v0, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->minCols:I
 
     invoke-static {p1, p2, v0}, Lcom/google/zxing/pdf417/encoder/PDF417;->calculateNumberOfRows(III)I
 
     move-result p1
 
-    .line 7
     iget p2, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->minRows:I
 
     if-ge p1, p2, :cond_3
 
     new-array v2, v5, [I
 
-    .line 8
     iget p1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->minCols:I
 
     aput p1, v2, v4
@@ -3072,7 +3052,6 @@
 
     return-object v2
 
-    .line 9
     :cond_4
     new-instance p1, Lcom/google/zxing/WriterException;
 
@@ -3131,7 +3110,6 @@
 
     goto :goto_3
 
-    .line 1
     :cond_2
     invoke-virtual {p2, v2, v5}, Lcom/google/zxing/pdf417/encoder/BarcodeRow;->addBar(ZI)V
 
@@ -3146,7 +3124,6 @@
 
     goto :goto_1
 
-    .line 2
     :cond_3
     invoke-virtual {p2, v2, v5}, Lcom/google/zxing/pdf417/encoder/BarcodeRow;->addBar(ZI)V
 
@@ -3165,15 +3142,12 @@
     :goto_0
     if-ge v1, p3, :cond_4
 
-    .line 1
     rem-int/lit8 v3, v1, 0x3
 
-    .line 2
     invoke-virtual {p5}, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->startRow()V
 
     const v4, 0x1fea8
 
-    .line 3
     invoke-virtual {p5}, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->getCurrentRow()Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
     move-result-object v5
@@ -3186,7 +3160,6 @@
 
     if-nez v3, :cond_0
 
-    .line 4
     div-int/lit8 v5, v1, 0x3
 
     mul-int/lit8 v5, v5, 0x1e
@@ -3207,7 +3180,6 @@
     :cond_0
     if-ne v3, v4, :cond_1
 
-    .line 5
     div-int/lit8 v5, v1, 0x3
 
     mul-int/lit8 v5, v5, 0x1e
@@ -3222,12 +3194,10 @@
 
     add-int/2addr v7, v9
 
-    .line 6
     div-int/lit8 v8, v8, 0x3
 
     goto :goto_1
 
-    .line 7
     :cond_1
     div-int/lit8 v5, v1, 0x3
 
@@ -3243,12 +3213,10 @@
 
     add-int/lit8 v8, p3, -0x1
 
-    .line 8
     rem-int/lit8 v8, v8, 0x3
 
     goto :goto_1
 
-    .line 9
     :goto_2
     sget-object v8, Lcom/google/zxing/pdf417/encoder/PDF417;->CODEWORD_TABLE:[[I
 
@@ -3256,7 +3224,6 @@
 
     aget v7, v8, v7
 
-    .line 10
     invoke-virtual {p5}, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->getCurrentRow()Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
     move-result-object v8
@@ -3268,7 +3235,6 @@
     :goto_3
     if-ge v7, p2, :cond_2
 
-    .line 11
     sget-object v8, Lcom/google/zxing/pdf417/encoder/PDF417;->CODEWORD_TABLE:[[I
 
     aget-object v8, v8, v3
@@ -3279,7 +3245,6 @@
 
     aget v8, v8, v9
 
-    .line 12
     invoke-virtual {p5}, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->getCurrentRow()Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
     move-result-object v9
@@ -3292,7 +3257,6 @@
 
     goto :goto_3
 
-    .line 13
     :cond_2
     iget-boolean v7, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->compact:Z
 
@@ -3300,7 +3264,6 @@
 
     if-eqz v7, :cond_3
 
-    .line 14
     invoke-virtual {p5}, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->getCurrentRow()Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
     move-result-object v3
@@ -3309,7 +3272,6 @@
 
     goto :goto_4
 
-    .line 15
     :cond_3
     sget-object v4, Lcom/google/zxing/pdf417/encoder/PDF417;->CODEWORD_TABLE:[[I
 
@@ -3317,7 +3279,6 @@
 
     aget v3, v3, v5
 
-    .line 16
     invoke-virtual {p5}, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->getCurrentRow()Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
     move-result-object v4
@@ -3326,7 +3287,6 @@
 
     const/16 v3, 0x12
 
-    .line 17
     invoke-virtual {p5}, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->getCurrentRow()Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
     move-result-object v4
@@ -3375,12 +3335,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p2}, Lcom/google/zxing/pdf417/encoder/PDF417ErrorCorrection;->getErrorCorrectionCodewordCount(I)I
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->compaction:Lcom/google/zxing/pdf417/encoder/Compaction;
 
     iget-object v2, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->encoding:Ljava/nio/charset/Charset;
@@ -3389,27 +3347,22 @@
 
     move-result-object v1
 
-    .line 3
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v2
 
-    .line 4
     invoke-direct {p0, v2, v0}, Lcom/google/zxing/pdf417/encoder/PDF417;->determineDimensions(II)[I
 
     move-result-object v3
 
     const/4 v4, 0x0
 
-    .line 5
     aget v7, v3, v4
 
     const/4 v5, 0x1
 
-    .line 6
     aget v8, v3, v5
 
-    .line 7
     invoke-static {v2, v0, v7, v8}, Lcom/google/zxing/pdf417/encoder/PDF417;->getNumberOfPadCodewords(IIII)I
 
     move-result v3
@@ -3426,17 +3379,14 @@
 
     add-int/2addr v2, v5
 
-    .line 8
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
 
     int-to-char v0, v2
 
-    .line 9
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 10
     invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :goto_0
@@ -3444,32 +3394,27 @@
 
     const/16 v0, 0x384
 
-    .line 11
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 12
     :cond_0
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 13
     invoke-static {p1, p2}, Lcom/google/zxing/pdf417/encoder/PDF417ErrorCorrection;->generateErrorCorrection(Ljava/lang/CharSequence;I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 14
     new-instance v1, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;
 
     invoke-direct {v1, v8, v7}, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;-><init>(II)V
 
     iput-object v1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->barcodeMatrix:Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;
 
-    .line 15
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3492,7 +3437,6 @@
 
     return-void
 
-    .line 16
     :cond_1
     new-instance p2, Lcom/google/zxing/WriterException;
 
@@ -3502,7 +3446,6 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 17
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result p1
@@ -3525,7 +3468,6 @@
 .method public getBarcodeMatrix()Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->barcodeMatrix:Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;
 
     return-object v0
@@ -3534,7 +3476,6 @@
 .method public setCompact(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->compact:Z
 
     return-void
@@ -3543,7 +3484,6 @@
 .method public setCompaction(Lcom/google/zxing/pdf417/encoder/Compaction;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->compaction:Lcom/google/zxing/pdf417/encoder/Compaction;
 
     return-void
@@ -3552,16 +3492,12 @@
 .method public setDimensions(IIII)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->maxCols:I
 
-    .line 2
     iput p2, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->minCols:I
 
-    .line 3
     iput p3, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->maxRows:I
 
-    .line 4
     iput p4, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->minRows:I
 
     return-void
@@ -3570,7 +3506,6 @@
 .method public setEncoding(Ljava/nio/charset/Charset;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/zxing/pdf417/encoder/PDF417;->encoding:Ljava/nio/charset/Charset;
 
     return-void

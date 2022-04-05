@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$e$a;
 .super Ljava/lang/Object;
-.source "SelectDeviceActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$e$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$e$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$e;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
@@ -49,7 +46,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->d(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$e$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$e;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;

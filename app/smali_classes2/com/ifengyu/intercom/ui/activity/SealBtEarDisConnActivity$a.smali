@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SealBtEarDisConnActivity$a;
 .super Ljava/lang/Object;
-.source "SealBtEarDisConnActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SealBtEarDisConnActivity;Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarDisConnActivity$a;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarDisConnActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarDisConnActivity$a;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarDisConnActivity$a;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;->getOption()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState$SEAL_BTEAR_OPTION;
@@ -67,10 +64,8 @@
 
     const-string v1, "\u65ad\u5f00\u6210\u529f"
 
-    .line 2
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/c0;->a(Ljava/lang/CharSequence;Z)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarDisConnActivity$a;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarDisConnActivity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V

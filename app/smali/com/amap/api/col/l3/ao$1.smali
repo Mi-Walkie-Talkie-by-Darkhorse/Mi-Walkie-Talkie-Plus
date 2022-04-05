@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ao$1;
 .super Ljava/lang/Object;
-.source "InfoWindowDelegate.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/AMap$InfoWindowAdapter;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/ao;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +44,6 @@
 .method public final getInfoWindow(Lcom/amap/api/maps/model/Marker;)Landroid/view/View;
     .locals 4
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
@@ -56,7 +53,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
@@ -71,7 +67,6 @@
 
     invoke-static {v0, v1}, Lcom/amap/api/col/l3/ao;->a(Lcom/amap/api/col/l3/ao;Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
@@ -81,7 +76,6 @@
 
     if-nez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     new-instance v1, Landroid/widget/LinearLayout;
@@ -94,7 +88,6 @@
 
     invoke-static {v0, v1}, Lcom/amap/api/col/l3/ao;->a(Lcom/amap/api/col/l3/ao;Landroid/view/View;)Landroid/view/View;
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/ao;->b(Lcom/amap/api/col/l3/ao;)Landroid/view/View;
@@ -109,7 +102,6 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     new-instance v1, Landroid/widget/TextView;
@@ -122,7 +114,6 @@
 
     invoke-static {v0, v1}, Lcom/amap/api/col/l3/ao;->a(Lcom/amap/api/col/l3/ao;Landroid/widget/TextView;)Landroid/widget/TextView;
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/ao;->c(Lcom/amap/api/col/l3/ao;)Landroid/widget/TextView;
@@ -135,7 +126,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/ao;->c(Lcom/amap/api/col/l3/ao;)Landroid/widget/TextView;
@@ -146,7 +136,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 9
     iget-object v0, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     new-instance v2, Landroid/widget/TextView;
@@ -159,7 +148,6 @@
 
     invoke-static {v0, v2}, Lcom/amap/api/col/l3/ao;->b(Lcom/amap/api/col/l3/ao;Landroid/widget/TextView;)Landroid/widget/TextView;
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/ao;->d(Lcom/amap/api/col/l3/ao;)Landroid/widget/TextView;
@@ -168,7 +156,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 11
     iget-object v0, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/ao;->d(Lcom/amap/api/col/l3/ao;)Landroid/widget/TextView;
@@ -181,7 +168,6 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 12
     iget-object p1, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/ao;->b(Lcom/amap/api/col/l3/ao;)Landroid/view/View;
@@ -194,7 +180,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
-    .line 13
     iget-object p1, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/ao;->b(Lcom/amap/api/col/l3/ao;)Landroid/view/View;
@@ -211,7 +196,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
-    .line 14
     iget-object p1, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/ao;->b(Lcom/amap/api/col/l3/ao;)Landroid/view/View;
@@ -239,13 +223,10 @@
 
     const-string v1, "showInfoWindow decodeDrawableFromAsset"
 
-    .line 15
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 16
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 17
     :cond_1
     :goto_0
     iget-object p1, p0, Lcom/amap/api/col/l3/ao$1;->a:Lcom/amap/api/col/l3/ao;

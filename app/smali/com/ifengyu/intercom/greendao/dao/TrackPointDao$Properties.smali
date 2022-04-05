@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/greendao/dao/TrackPointDao$Properties;
 .super Ljava/lang/Object;
-.source "TrackPointDao.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    .line 1
     new-instance v6, Lorg/greenrobot/greendao/Property;
 
     const-class v2, Ljava/lang/Long;
@@ -55,7 +53,6 @@
 
     sput-object v6, Lcom/ifengyu/intercom/greendao/dao/TrackPointDao$Properties;->Id:Lorg/greenrobot/greendao/Property;
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/String;
@@ -74,7 +71,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackPointDao$Properties;->TrackID:Lorg/greenrobot/greendao/Property;
 
-    .line 3
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -93,7 +89,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackPointDao$Properties;->Latitude:Lorg/greenrobot/greendao/Property;
 
-    .line 4
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Integer;
@@ -110,7 +105,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackPointDao$Properties;->Longitude:Lorg/greenrobot/greendao/Property;
 
-    .line 5
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -127,7 +121,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackPointDao$Properties;->Altitude:Lorg/greenrobot/greendao/Property;
 
-    .line 6
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Integer;
@@ -144,7 +137,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackPointDao$Properties;->CurrentDistance:Lorg/greenrobot/greendao/Property;
 
-    .line 7
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -161,7 +153,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackPointDao$Properties;->CurrentTime:Lorg/greenrobot/greendao/Property;
 
-    .line 8
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v9, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
@@ -184,7 +175,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

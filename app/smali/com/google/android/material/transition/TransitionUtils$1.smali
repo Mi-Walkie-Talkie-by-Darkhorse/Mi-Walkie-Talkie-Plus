@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/transition/TransitionUtils$1;
 .super Ljava/lang/Object;
-.source "TransitionUtils.java"
 
 # interfaces
 .implements Lcom/google/android/material/shape/ShapeAppearanceModel$CornerSizeUnaryOperator;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroid/graphics/RectF;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/TransitionUtils$1;->val$bounds:Landroid/graphics/RectF;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +42,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     instance-of v0, p1, Lcom/google/android/material/shape/RelativeCornerSize;
 
     if-eqz v0, :cond_0
@@ -56,7 +53,6 @@
 
     iget-object v1, p0, Lcom/google/android/material/transition/TransitionUtils$1;->val$bounds:Landroid/graphics/RectF;
 
-    .line 2
     invoke-interface {p1, v1}, Lcom/google/android/material/shape/CornerSize;->getCornerSize(Landroid/graphics/RectF;)F
 
     move-result p1

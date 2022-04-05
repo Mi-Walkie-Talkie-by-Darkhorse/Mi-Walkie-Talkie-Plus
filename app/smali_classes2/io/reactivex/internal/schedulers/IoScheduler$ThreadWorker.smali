@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/schedulers/IoScheduler$ThreadWorker;
 .super Lio/reactivex/internal/schedulers/NewThreadWorker;
-.source "IoScheduler.java"
 
 
 # annotations
@@ -22,12 +21,10 @@
 .method constructor <init>(Ljava/util/concurrent/ThreadFactory;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/schedulers/NewThreadWorker;-><init>(Ljava/util/concurrent/ThreadFactory;)V
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lio/reactivex/internal/schedulers/IoScheduler$ThreadWorker;->expirationTime:J
 
     return-void
@@ -38,7 +35,6 @@
 .method public getExpirationTime()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lio/reactivex/internal/schedulers/IoScheduler$ThreadWorker;->expirationTime:J
 
     return-wide v0
@@ -47,7 +43,6 @@
 .method public setExpirationTime(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lio/reactivex/internal/schedulers/IoScheduler$ThreadWorker;->expirationTime:J
 
     return-void

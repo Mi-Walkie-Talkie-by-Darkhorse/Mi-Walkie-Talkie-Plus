@@ -50,7 +50,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxTextView__TextViewAfterTextChangeEventObservableKt;->afterTextChangeEvents(Landroid/widget/TextView;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     move-result-object p0
@@ -81,7 +80,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxTextView__TextViewBeforeTextChangeEventObservableKt;->beforeTextChangeEvents(Landroid/widget/TextView;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     move-result-object p0
@@ -160,7 +158,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/widget/RxTextView__TextViewEditorActionEventObservableKt;->editorActionEvents(Landroid/widget/TextView;Lkotlin/jvm/a/b;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -179,7 +176,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/jakewharton/rxbinding3/widget/RxTextView__TextViewEditorActionEventObservableKt;->editorActionEvents$default(Landroid/widget/TextView;Lkotlin/jvm/a/b;ILjava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -258,7 +254,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/widget/RxTextView__TextViewEditorActionObservableKt;->editorActions(Landroid/widget/TextView;Lkotlin/jvm/a/b;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -277,7 +272,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/jakewharton/rxbinding3/widget/RxTextView__TextViewEditorActionObservableKt;->editorActions$default(Landroid/widget/TextView;Lkotlin/jvm/a/b;ILjava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -308,7 +302,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxTextView__TextViewTextChangeEventObservableKt;->textChangeEvents(Landroid/widget/TextView;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     move-result-object p0
@@ -339,7 +332,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxTextView__TextViewTextChangesObservableKt;->textChanges(Landroid/widget/TextView;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     move-result-object p0

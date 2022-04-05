@@ -1,6 +1,5 @@
 .class public Landroidx/core/widget/f;
 .super Landroidx/core/widget/a;
-.source "ListViewAutoScrollHelper.java"
 
 
 # instance fields
@@ -15,10 +14,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/core/widget/a;-><init>(Landroid/view/View;)V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/widget/f;->s:Landroid/widget/ListView;
 
     return-void
@@ -29,7 +26,6 @@
 .method public a(II)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Landroidx/core/widget/f;->s:Landroid/widget/ListView;
 
     invoke-static {p1, p2}, Landroidx/core/widget/g;->b(Landroid/widget/ListView;I)V
@@ -48,10 +44,8 @@
 .method public b(I)Z
     .locals 7
 
-    .line 1
     iget-object v0, p0, Landroidx/core/widget/f;->s:Landroid/widget/ListView;
 
-    .line 2
     invoke-virtual {v0}, Landroid/widget/ListView;->getCount()I
 
     move-result v1
@@ -62,13 +56,11 @@
 
     return v2
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Landroid/widget/ListView;->getChildCount()I
 
     move-result v3
 
-    .line 4
     invoke-virtual {v0}, Landroid/widget/ListView;->getFirstVisiblePosition()I
 
     move-result v4
@@ -83,12 +75,10 @@
 
     sub-int/2addr v3, v6
 
-    .line 5
     invoke-virtual {v0, v3}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
 
     move-result-object p1
 
-    .line 6
     invoke-virtual {p1}, Landroid/view/View;->getBottom()I
 
     move-result p1
@@ -106,12 +96,10 @@
 
     if-gtz v4, :cond_2
 
-    .line 7
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
 
     move-result-object p1
 
-    .line 8
     invoke-virtual {p1}, Landroid/view/View;->getTop()I
 
     move-result p1

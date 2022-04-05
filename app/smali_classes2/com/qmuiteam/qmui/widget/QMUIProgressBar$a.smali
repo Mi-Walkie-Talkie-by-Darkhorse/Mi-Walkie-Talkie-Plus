@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/QMUIProgressBar$a;
 .super Ljava/lang/Object;
-.source "QMUIProgressBar.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/QMUIProgressBar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/QMUIProgressBar$a;->a:Lcom/qmuiteam/qmui/widget/QMUIProgressBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIProgressBar$a;->a:Lcom/qmuiteam/qmui/widget/QMUIProgressBar;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/QMUIProgressBar;->a(Lcom/qmuiteam/qmui/widget/QMUIProgressBar;)Lcom/qmuiteam/qmui/widget/QMUIProgressBar$b;
@@ -47,7 +44,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIProgressBar$a;->a:Lcom/qmuiteam/qmui/widget/QMUIProgressBar;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/QMUIProgressBar;->a(Lcom/qmuiteam/qmui/widget/QMUIProgressBar;)Lcom/qmuiteam/qmui/widget/QMUIProgressBar$b;

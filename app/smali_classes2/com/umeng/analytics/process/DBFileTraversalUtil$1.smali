@@ -1,6 +1,5 @@
 .class final Lcom/umeng/analytics/process/DBFileTraversalUtil$1;
 .super Ljava/lang/Object;
-.source "DBFileTraversalUtil.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Ljava/io/File;Lcom/umeng/commonsdk/utils/FileLockCallback;Lcom/umeng/analytics/process/DBFileTraversalUtil$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/analytics/process/DBFileTraversalUtil$1;->a:Ljava/io/File;
 
     iput-object p2, p0, Lcom/umeng/analytics/process/DBFileTraversalUtil$1;->b:Lcom/umeng/commonsdk/utils/FileLockCallback;
@@ -48,7 +46,6 @@
 
     const-string v0, "MobclickRT"
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/umeng/analytics/process/DBFileTraversalUtil$1;->a:Ljava/io/File;
 
@@ -56,7 +53,6 @@
 
     move-result-object v1
 
-    .line 2
     array-length v2, v1
 
     const/4 v3, 0x0
@@ -66,7 +62,6 @@
 
     aget-object v4, v1, v3
 
-    .line 3
     invoke-virtual {v4}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v5
@@ -79,7 +74,6 @@
 
     if-eqz v5, :cond_0
 
-    .line 4
     invoke-static {}, Lcom/umeng/analytics/process/DBFileTraversalUtil;->a()Lcom/umeng/commonsdk/utils/FileLockUtil;
 
     move-result-object v5
@@ -88,7 +82,6 @@
 
     invoke-virtual {v5, v4, v6}, Lcom/umeng/commonsdk/utils/FileLockUtil;->doFileOperateion(Ljava/io/File;Lcom/umeng/commonsdk/utils/FileLockCallback;)V
 
-    .line 5
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -114,13 +107,11 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-object v1, p0, Lcom/umeng/analytics/process/DBFileTraversalUtil$1;->c:Lcom/umeng/analytics/process/DBFileTraversalUtil$a;
 
     if-eqz v1, :cond_2
 
-    .line 7
     iget-object v1, p0, Lcom/umeng/analytics/process/DBFileTraversalUtil$1;->c:Lcom/umeng/analytics/process/DBFileTraversalUtil$a;
 
     invoke-interface {v1}, Lcom/umeng/analytics/process/DBFileTraversalUtil$a;->a()V
@@ -131,7 +122,6 @@
     :cond_2
     const-string v1, "--->>> end *** "
 
-    .line 8
     invoke-static {v0, v1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

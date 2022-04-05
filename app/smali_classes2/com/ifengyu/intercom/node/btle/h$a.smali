@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/node/btle/h$a;
 .super Ljava/lang/Object;
-.source "DataReceiver.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/node/btle/h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btle/h$a;->a:Lcom/ifengyu/intercom/node/btle/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,12 +38,10 @@
 
     const-string v0, "DataReceiver"
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v1
 
-    .line 2
     :try_start_0
     iget-object v2, p0, Lcom/ifengyu/intercom/node/btle/h$a;->a:Lcom/ifengyu/intercom/node/btle/h;
 
@@ -80,13 +76,10 @@
 
     const-string v3, "parse protobuf error!!!"
 
-    .line 3
     invoke-static {v0, v3}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 5
     :goto_0
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->c()Z
 
@@ -94,7 +87,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 6
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -121,10 +113,8 @@
 
     const-string v2, "notifying message transports"
 
-    .line 7
     invoke-static {v0, v2}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 8
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/node/q/d;->c()Lcom/ifengyu/intercom/node/q/d;
 
@@ -151,7 +141,6 @@
 
     check-cast v2, Lcom/ifengyu/intercom/node/g;
 
-    .line 9
     invoke-virtual {v1}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;->build()Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object v3

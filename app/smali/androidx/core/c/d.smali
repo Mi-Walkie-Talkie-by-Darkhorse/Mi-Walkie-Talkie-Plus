@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/c/d;
 .super Ljava/lang/Object;
-.source "TextDirectionHeuristicCompat.java"
 
 
 # virtual methods

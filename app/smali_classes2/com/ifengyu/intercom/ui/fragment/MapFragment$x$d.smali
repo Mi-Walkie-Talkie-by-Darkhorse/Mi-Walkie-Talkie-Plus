@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$x$d;
 .super Lcom/ifengyu/intercom/g/d/j;
-.source "MapFragment.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment$x;Lcom/ifengyu/intercom/ui/fragment/MapFragment;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$x$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/j;-><init>()V
@@ -37,7 +35,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->getVersionCode()Ljava/lang/String;
 
     move-result-object p2
@@ -46,7 +43,6 @@
 
     move-result p2
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->K()I
 
     move-result v0
@@ -57,10 +53,8 @@
 
     const/4 p2, 0x1
 
-    .line 4
     invoke-static {p2}, Lcom/ifengyu/intercom/i/d0;->q(Z)V
 
-    .line 5
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$x$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->s(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)Lcom/ifengyu/intercom/ui/fragment/MapFragment$x;
@@ -71,7 +65,6 @@
 
     invoke-virtual {p2, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 6
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$x$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->a(Lcom/ifengyu/intercom/ui/fragment/MapFragment;Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;)Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;
@@ -83,7 +76,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/fragment/MapFragment$x$d;->a(Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;I)V

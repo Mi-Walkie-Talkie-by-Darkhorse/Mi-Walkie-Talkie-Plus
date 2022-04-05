@@ -1,6 +1,5 @@
 .class public Lc/b/a/a/a/a$c;
 .super Ljava/lang/Object;
-.source "OpenIDHelper.java"
 
 
 # annotations
@@ -27,27 +26,22 @@
 .method public synthetic constructor <init>(Lc/b/a/a/a/a$c$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, p0, Lc/b/a/a/a/a$c;->a:Lc/b/a/a/a/a;
 
-    .line 3
     iput-object p1, p0, Lc/b/a/a/a/a$c;->b:Ljava/lang/String;
 
     iput-object p1, p0, Lc/b/a/a/a/a$c;->c:Ljava/lang/String;
 
-    .line 4
     new-instance p1, Ljava/lang/Object;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lc/b/a/a/a/a$c;->d:Ljava/lang/Object;
 
-    .line 5
     new-instance p1, Lc/b/a/a/a/a$c$a;
 
     invoke-direct {p1, p0}, Lc/b/a/a/a/a$c$a;-><init>(Lc/b/a/a/a/a$c;)V
@@ -64,7 +58,6 @@
 
     monitor-enter p0
 
-    .line 6
     :try_start_0
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -76,17 +69,14 @@
 
     if-eq v0, v1, :cond_3
 
-    .line 7
     iget-object v0, p0, Lc/b/a/a/a/a$c;->a:Lc/b/a/a/a/a;
 
     if-nez v0, :cond_2
 
-    .line 8
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 9
     new-instance v1, Landroid/content/ComponentName;
 
     const-string v2, "com.heytap.openid"
@@ -99,10 +89,8 @@
 
     const-string v1, "action.com.heytap.openid.OPEN_ID_SERVICE"
 
-    .line 10
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 11
     iget-object v1, p0, Lc/b/a/a/a/a$c;->e:Landroid/content/ServiceConnection;
 
     const/4 v2, 0x1
@@ -113,14 +101,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 12
     iget-object v0, p0, Lc/b/a/a/a/a$c;->d:Ljava/lang/Object;
 
     monitor-enter v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 13
     :try_start_1
     iget-object v1, p0, Lc/b/a/a/a/a$c;->d:Ljava/lang/Object;
 
@@ -141,11 +127,9 @@
     :catch_0
     move-exception v1
 
-    .line 14
     :try_start_2
     invoke-virtual {v1}, Ljava/lang/InterruptedException;->printStackTrace()V
 
-    .line 15
     :goto_0
     monitor-exit v0
 
@@ -159,7 +143,6 @@
     :try_start_3
     throw p1
 
-    .line 16
     :cond_0
     :goto_2
     iget-object v0, p0, Lc/b/a/a/a/a$c;->a:Lc/b/a/a/a/a;
@@ -174,7 +157,6 @@
 
     return-object p1
 
-    .line 17
     :cond_1
     :try_start_4
     invoke-virtual {p0, p1, p2}, Lc/b/a/a/a/a$c;->b(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
@@ -191,7 +173,6 @@
     :catch_1
     move-exception p1
 
-    .line 18
     :try_start_5
     invoke-virtual {p1}, Landroid/os/RemoteException;->printStackTrace()V
 
@@ -203,7 +184,6 @@
 
     return-object p1
 
-    .line 19
     :cond_2
     :try_start_6
     invoke-virtual {p0, p1, p2}, Lc/b/a/a/a/a$c;->b(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
@@ -220,7 +200,6 @@
     :catch_2
     move-exception p1
 
-    .line 20
     :try_start_7
     invoke-virtual {p1}, Landroid/os/RemoteException;->printStackTrace()V
 
@@ -232,7 +211,6 @@
 
     return-object p1
 
-    .line 21
     :cond_3
     :try_start_8
     new-instance p1, Ljava/lang/IllegalStateException;
@@ -258,7 +236,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -273,7 +250,6 @@
 
     move-result-object p1
 
-    .line 2
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x1c
@@ -284,7 +260,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Landroid/content/pm/PackageInfo;->getLongVersionCode()J
 
     move-result-wide v1
@@ -303,7 +278,6 @@
     :cond_1
     if-eqz p1, :cond_2
 
-    .line 4
     iget p1, p1, Landroid/content/pm/PackageInfo;->versionCode:I
     :try_end_1
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
@@ -318,7 +292,6 @@
     :catch_0
     move-exception p1
 
-    .line 5
     invoke-virtual {p1}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
 
     return v0
@@ -327,7 +300,6 @@
 .method public final b(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lc/b/a/a/a/a$c;->b:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -336,14 +308,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lc/b/a/a/a/a$c;->b:Ljava/lang/String;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lc/b/a/a/a/a$c;->c:Ljava/lang/String;
 
@@ -353,12 +323,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 4
     iget-object v0, p0, Lc/b/a/a/a/a$c;->b:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    .line 5
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -370,7 +338,6 @@
 
     move-result-object p1
 
-    .line 6
     iget-object p1, p1, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -380,7 +347,6 @@
     :catch_0
     move-exception p1
 
-    .line 7
     invoke-virtual {p1}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
 
     move-object p1, v1
@@ -388,7 +354,6 @@
     :goto_0
     if-eqz p1, :cond_2
 
-    .line 8
     array-length v0, p1
 
     if-lez v0, :cond_2
@@ -399,12 +364,10 @@
 
     const-string v2, "SHA1"
 
-    .line 9
     invoke-virtual {p1}, Landroid/content/pm/Signature;->toByteArray()[B
 
     move-result-object p1
 
-    .line 10
     :try_start_1
     invoke-static {v2}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
@@ -412,17 +375,14 @@
 
     if-eqz v2, :cond_2
 
-    .line 11
     invoke-virtual {v2, p1}, Ljava/security/MessageDigest;->digest([B)[B
 
     move-result-object p1
 
-    .line 12
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 13
     array-length v3, p1
 
     :goto_1
@@ -434,7 +394,6 @@
 
     or-int/lit16 v4, v4, 0x100
 
-    .line 14
     invoke-static {v4}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v4
@@ -453,7 +412,6 @@
 
     goto :goto_1
 
-    .line 15
     :cond_1
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -466,15 +424,12 @@
     :catch_1
     move-exception p1
 
-    .line 16
     invoke-virtual {p1}, Ljava/security/NoSuchAlgorithmException;->printStackTrace()V
 
-    .line 17
     :cond_2
     :goto_2
     iput-object v1, p0, Lc/b/a/a/a/a$c;->c:Ljava/lang/String;
 
-    .line 18
     :cond_3
     iget-object p1, p0, Lc/b/a/a/a/a$c;->a:Lc/b/a/a/a/a;
 
@@ -488,7 +443,6 @@
 
     move-result-object p1
 
-    .line 19
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result p2

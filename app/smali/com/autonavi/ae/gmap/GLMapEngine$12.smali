@@ -1,6 +1,5 @@
 .class Lcom/autonavi/ae/gmap/GLMapEngine$12;
 .super Ljava/lang/Object;
-.source "GLMapEngine.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/autonavi/ae/gmap/GLMapEngine;Landroid/graphics/Point;IFF)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$12;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iput-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine$12;->val$touchPoint:Landroid/graphics/Point;
@@ -54,14 +52,12 @@
 .method public run()V
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$12;->val$touchPoint:Landroid/graphics/Point;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$12;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
@@ -72,31 +68,24 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/autonavi/ae/gmap/GLMapEngine;->clearAnimations(IZ)V
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$12;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->getCloneMapState()Lcom/autonavi/ae/gmap/GLMapState;
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/GLMapState;->reset()V
 
-    .line 5
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/GLMapState;->recalculate()V
 
-    .line 6
     iget v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$12;->val$x:F
 
-    .line 7
     iget v2, p0, Lcom/autonavi/ae/gmap/GLMapEngine$12;->val$y:F
 
-    .line 8
     invoke-static {v1}, Ljava/lang/Math;->abs(F)F
 
     move-result v3
 
-    .line 9
     invoke-static {v2}, Ljava/lang/Math;->abs(F)F
 
     move-result v4
@@ -162,7 +151,6 @@
 
     const v2, -0x39c48000    # -12000.0f
 
-    .line 10
     :cond_5
     :goto_1
     new-instance v3, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimFling;
@@ -171,7 +159,6 @@
 
     iget-object v5, p0, Lcom/autonavi/ae/gmap/GLMapEngine$12;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
-    .line 11
     invoke-static {v5}, Lcom/autonavi/ae/gmap/GLMapEngine;->access$900(Lcom/autonavi/ae/gmap/GLMapEngine;)Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     move-result-object v5
@@ -196,13 +183,10 @@
 
     invoke-direct {v3, v4, v5, v6}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimFling;-><init>(III)V
 
-    .line 12
     invoke-virtual {v3, v1, v2}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimFling;->setPositionAndVelocity(FF)V
 
-    .line 13
     invoke-virtual {v3, v0}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimFling;->commitAnimation(Ljava/lang/Object;)V
 
-    .line 14
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$12;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-static {v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->access$300(Lcom/autonavi/ae/gmap/GLMapEngine;)Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
@@ -220,7 +204,6 @@
     :catchall_0
     move-exception v0
 
-    .line 15
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

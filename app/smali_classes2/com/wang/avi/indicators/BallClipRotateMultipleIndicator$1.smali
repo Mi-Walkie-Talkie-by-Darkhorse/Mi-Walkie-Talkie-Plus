@@ -1,6 +1,5 @@
 .class Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator$1;
 .super Ljava/lang/Object;
-.source "BallClipRotateMultipleIndicator.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator$1;->this$0:Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator$1;->this$0:Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
@@ -53,7 +50,6 @@
 
     iput p1, v0, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;->scaleFloat:F
 
-    .line 2
     iget-object p1, p0, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator$1;->this$0:Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;
 
     invoke-virtual {p1}, Lcom/wang/avi/Indicator;->postInvalidate()V

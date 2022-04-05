@@ -1,6 +1,5 @@
 .class abstract Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;
 .super Lme/zhanghai/android/materialprogressbar/BaseProgressDrawable;
-.source "BaseSingleCircularProgressDrawable.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/graphics/RectF;
 
     const/high16 v1, 0x41a80000    # 21.0f
@@ -26,7 +24,6 @@
 
     sput-object v0, Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;->RECT_BOUND:Landroid/graphics/RectF;
 
-    .line 2
     new-instance v0, Landroid/graphics/RectF;
 
     const/high16 v1, 0x41c00000    # 24.0f
@@ -37,7 +34,6 @@
 
     sput-object v0, Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;->RECT_PADDED_BOUND:Landroid/graphics/RectF;
 
-    .line 3
     new-instance v0, Landroid/graphics/RectF;
 
     const/high16 v1, 0x41980000    # 19.0f
@@ -54,7 +50,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lme/zhanghai/android/materialprogressbar/BaseProgressDrawable;-><init>()V
 
     return-void
@@ -65,7 +60,6 @@
 .method protected drawRing(Landroid/graphics/Canvas;Landroid/graphics/Paint;FF)V
     .locals 6
 
-    .line 1
     sget-object v1, Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;->RECT_PROGRESS:Landroid/graphics/RectF;
 
     const/high16 v0, -0x3d4c0000    # -90.0f
@@ -88,7 +82,6 @@
 .method protected onDraw(Landroid/graphics/Canvas;IILandroid/graphics/Paint;)V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressDrawable;->mUseIntrinsicPadding:Z
 
     const/high16 v1, 0x40000000    # 2.0f
@@ -97,7 +90,6 @@
 
     int-to-float p2, p2
 
-    .line 2
     sget-object v0, Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;->RECT_PADDED_BOUND:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
@@ -118,7 +110,6 @@
 
     invoke-virtual {p1, p2, p3}, Landroid/graphics/Canvas;->scale(FF)V
 
-    .line 3
     sget-object p2, Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;->RECT_PADDED_BOUND:Landroid/graphics/RectF;
 
     invoke-virtual {p2}, Landroid/graphics/RectF;->width()F
@@ -142,7 +133,6 @@
     :cond_0
     int-to-float p2, p2
 
-    .line 4
     sget-object v0, Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;->RECT_BOUND:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
@@ -163,7 +153,6 @@
 
     invoke-virtual {p1, p2, p3}, Landroid/graphics/Canvas;->scale(FF)V
 
-    .line 5
     sget-object p2, Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;->RECT_BOUND:Landroid/graphics/RectF;
 
     invoke-virtual {p2}, Landroid/graphics/RectF;->width()F
@@ -182,7 +171,6 @@
 
     invoke-virtual {p1, p2, p3}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 6
     :goto_0
     invoke-virtual {p0, p1, p4}, Lme/zhanghai/android/materialprogressbar/BaseSingleCircularProgressDrawable;->onDrawRing(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
 
@@ -195,14 +183,12 @@
 .method protected onPreparePaint(Landroid/graphics/Paint;)V
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     const/high16 v0, 0x40800000    # 4.0f
 
-    .line 2
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/functions/IntFunction;
 .super Ljava/lang/Object;
-.source "IntFunction.java"
 
 
 # annotations

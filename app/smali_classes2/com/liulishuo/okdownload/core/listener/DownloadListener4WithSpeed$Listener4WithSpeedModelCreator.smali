@@ -1,6 +1,5 @@
 .class Lcom/liulishuo/okdownload/core/listener/DownloadListener4WithSpeed$Listener4WithSpeedModelCreator;
 .super Ljava/lang/Object;
-.source "DownloadListener4WithSpeed.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ModelCreator;
@@ -30,7 +29,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +37,6 @@
 .method synthetic constructor <init>(Lcom/liulishuo/okdownload/core/listener/DownloadListener4WithSpeed$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/liulishuo/okdownload/core/listener/DownloadListener4WithSpeed$Listener4WithSpeedModelCreator;-><init>()V
 
     return-void
@@ -50,7 +47,6 @@
 .method public create(I)Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;
 
     invoke-direct {v0, p1}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;-><init>(I)V
@@ -61,7 +57,6 @@
 .method public bridge synthetic create(I)Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/listener/DownloadListener4WithSpeed$Listener4WithSpeedModelCreator;->create(I)Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedModel;
 
     move-result-object p1

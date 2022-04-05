@@ -1,6 +1,5 @@
 .class Landroidx/core/view/ViewCompat$e;
 .super Landroidx/core/view/ViewCompat$g;
-.source "ViewCompat.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(ILjava/lang/Class;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Landroidx/core/view/ViewCompat$g;-><init>(ILjava/lang/Class;I)V
 
     return-void
@@ -40,7 +38,6 @@
         value = 0x1c
     .end annotation
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/View;->isAccessibilityHeading()Z
 
     move-result p1
@@ -58,7 +55,6 @@
         value = 0x1c
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Landroidx/core/view/ViewCompat$e;->a(Landroid/view/View;)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -72,7 +68,6 @@
         value = 0x1c
     .end annotation
 
-    .line 5
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p2
@@ -88,7 +83,6 @@
         value = 0x1c
     .end annotation
 
-    .line 2
     check-cast p2, Ljava/lang/Boolean;
 
     invoke-virtual {p0, p1, p2}, Landroidx/core/view/ViewCompat$e;->a(Landroid/view/View;Ljava/lang/Boolean;)V
@@ -99,7 +93,6 @@
 .method bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
 
-    .line 3
     check-cast p1, Ljava/lang/Boolean;
 
     check-cast p2, Ljava/lang/Boolean;
@@ -114,7 +107,6 @@
 .method b(Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Landroidx/core/view/ViewCompat$g;->a(Ljava/lang/Boolean;Ljava/lang/Boolean;)Z
 
     move-result p1

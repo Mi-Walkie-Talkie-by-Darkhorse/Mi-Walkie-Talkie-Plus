@@ -1,6 +1,5 @@
 .class Landroidx/media/MediaBrowserServiceCompat$f;
 .super Ljava/lang/Object;
-.source "MediaBrowserServiceCompat.java"
 
 # interfaces
 .implements Landroid/os/IBinder$DeathRecipient;
@@ -45,27 +44,22 @@
 .method constructor <init>(Landroidx/media/MediaBrowserServiceCompat;Ljava/lang/String;IILandroid/os/Bundle;Landroidx/media/MediaBrowserServiceCompat$o;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$f;->e:Landroidx/media/MediaBrowserServiceCompat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$f;->c:Ljava/util/HashMap;
 
-    .line 3
     iput-object p2, p0, Landroidx/media/MediaBrowserServiceCompat$f;->a:Ljava/lang/String;
 
-    .line 4
     new-instance p1, Landroidx/media/e;
 
     invoke-direct {p1, p2, p3, p4}, Landroidx/media/e;-><init>(Ljava/lang/String;II)V
 
-    .line 5
     iput-object p6, p0, Landroidx/media/MediaBrowserServiceCompat$f;->b:Landroidx/media/MediaBrowserServiceCompat$o;
 
     return-void
@@ -76,7 +70,6 @@
 .method public binderDied()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$f;->e:Landroidx/media/MediaBrowserServiceCompat;
 
     iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat;->d:Landroidx/media/MediaBrowserServiceCompat$q;

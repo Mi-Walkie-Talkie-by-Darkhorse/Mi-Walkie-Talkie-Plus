@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;
 .super Lcom/ifengyu/intercom/lite/base/BaseActivity;
-.source "LiteChannelSettingActivity.java"
 
 
 # annotations
@@ -87,7 +86,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/base/BaseActivity;-><init>()V
 
     return-void
@@ -96,7 +94,6 @@
 .method private A()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->n:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->isEmpty()Z
@@ -113,7 +110,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mTvChannelName:Landroid/widget/TextView;
 
     new-array v3, v3, [Ljava/lang/Object;
@@ -132,30 +128,25 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mContentBoard:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mEmptyBoard:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mContentBoard:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v0, v4}, Landroid/widget/RelativeLayout;->setVisibility(I)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mEmptyBoard:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v2}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mTvChannelName:Landroid/widget/TextView;
 
     new-array v2, v3, [Ljava/lang/Object;
@@ -174,7 +165,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mTvReceiveFreq:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->n:Lcom/ifengyu/intercom/lite/models/ChannelModel;
@@ -185,7 +175,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mTvSendFreq:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->n:Lcom/ifengyu/intercom/lite/models/ChannelModel;
@@ -196,7 +185,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 10
     sget-object v0, Lcom/ifengyu/intercom/i/p;->b:Landroid/graphics/Typeface;
 
     const/4 v1, 0x2
@@ -220,29 +208,24 @@
 .method public static a(Landroid/app/Activity;Lcom/ifengyu/intercom/lite/models/ChannelModel;)V
     .locals 3
 
-    .line 2
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 3
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
     const-string v2, "channel"
 
-    .line 4
     invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 5
     invoke-virtual {v0, v1}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     const/4 p1, 0x0
 
-    .line 6
     invoke-virtual {p0, v0, p1}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 
     return-void
@@ -251,7 +234,6 @@
 .method private a(Landroid/content/Intent;)V
     .locals 1
 
-    .line 7
     invoke-virtual {p1}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
     move-result-object p1
@@ -260,7 +242,6 @@
 
     const-string v0, "channel"
 
-    .line 8
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
@@ -276,7 +257,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->y()V
 
     return-void
@@ -285,7 +265,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/BaseActivity;->v()V
 
     return-void
@@ -294,7 +273,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->z()V
 
     return-void
@@ -303,7 +281,6 @@
 .method static synthetic c(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/appcompat/app/d;->dismiss()V
 
     return-void
@@ -312,7 +289,6 @@
 .method static synthetic d(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/appcompat/app/d;->dismiss()V
 
     return-void
@@ -321,14 +297,12 @@
 .method private y()V
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/lite/c/b/e;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/c/b/e;-><init>(Landroid/content/Context;)V
 
     const v1, 0x7f11017a
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/b$b;->d(I)Lcom/qmuiteam/qmui/widget/dialog/b$b;
 
     sget-object v1, Lcom/ifengyu/intercom/lite/old/h;->a:Lcom/ifengyu/intercom/lite/old/h;
@@ -339,7 +313,6 @@
 
     const/4 v4, 0x2
 
-    .line 3
     invoke-virtual {v0, v2, v3, v4, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(IIILcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     check-cast v0, Lcom/qmuiteam/qmui/widget/dialog/b$b;
@@ -350,14 +323,12 @@
 
     const v3, 0x7f11009c
 
-    .line 4
     invoke-virtual {v0, v2, v3, v2, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(IIILcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     check-cast v0, Lcom/qmuiteam/qmui/widget/dialog/b$b;
 
     const v1, 0x7f1200fc
 
-    .line 5
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/b;
 
     move-result-object v0
@@ -370,14 +341,12 @@
 .method private z()V
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/lite/c/b/e;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/c/b/e;-><init>(Landroid/content/Context;)V
 
     const v1, 0x7f11017b
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/b$b;->d(I)Lcom/qmuiteam/qmui/widget/dialog/b$b;
 
     sget-object v1, Lcom/ifengyu/intercom/lite/old/k;->a:Lcom/ifengyu/intercom/lite/old/k;
@@ -388,7 +357,6 @@
 
     const/4 v4, 0x2
 
-    .line 3
     invoke-virtual {v0, v2, v3, v4, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(IIILcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     check-cast v0, Lcom/qmuiteam/qmui/widget/dialog/b$b;
@@ -399,14 +367,12 @@
 
     const v3, 0x7f1101e6
 
-    .line 4
     invoke-virtual {v0, v2, v3, v2, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(IIILcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     check-cast v0, Lcom/qmuiteam/qmui/widget/dialog/b$b;
 
     const v1, 0x7f1200fc
 
-    .line 5
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/b;
 
     move-result-object v0
@@ -421,7 +387,6 @@
 .method public synthetic a(Landroid/view/View;)V
     .locals 0
 
-    .line 9
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/QMUIActivity;->onBackPressed()V
 
     return-void
@@ -430,10 +395,8 @@
 .method public synthetic a(Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog;Lcom/ifengyu/intercom/lite/models/ChannelModel;)V
     .locals 1
 
-    .line 13
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->m:Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity$c;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getChannelSeq()I
@@ -446,54 +409,46 @@
 
     check-cast p1, Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
-    .line 15
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveFreq()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setReceiveFreq(I)V
 
-    .line 16
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendFreq()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setSendFreq(I)V
 
-    .line 17
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveToneType()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setReceiveToneType(I)V
 
-    .line 18
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveToneValue()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setReceiveToneValue(I)V
 
-    .line 19
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendToneType()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setSendToneType(I)V
 
-    .line 20
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendToneValue()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setSendToneValue(I)V
 
-    .line 21
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->m:Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity$c;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyDataSetChanged()V
 
-    .line 22
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getChannelSeq()I
 
     move-result p1
@@ -506,7 +461,6 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 23
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->n:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveFreq()I
@@ -515,7 +469,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setReceiveFreq(I)V
 
-    .line 24
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->n:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendFreq()I
@@ -524,7 +477,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setSendFreq(I)V
 
-    .line 25
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->n:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveToneType()I
@@ -533,7 +485,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setReceiveToneType(I)V
 
-    .line 26
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->n:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveToneValue()I
@@ -542,7 +493,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setReceiveToneValue(I)V
 
-    .line 27
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->n:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendToneType()I
@@ -551,7 +501,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setSendToneType(I)V
 
-    .line 28
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->n:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendToneValue()I
@@ -560,7 +509,6 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setSendToneValue(I)V
 
-    .line 29
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->A()V
 
     :cond_0
@@ -570,13 +518,10 @@
 .method public synthetic a(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 2
 
-    .line 10
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/BaseActivity;->w()V
 
-    .line 11
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
-    .line 12
     new-instance p1, Lcom/ifengyu/intercom/lite/old/w;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/lite/old/w;-><init>(Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;)V
@@ -591,10 +536,8 @@
 .method public synthetic b(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 2
     invoke-static {p0}, Lcom/ifengyu/intercom/lite/old/LiteConfigFileActivity;->start(Landroid/content/Context;)V
 
-    .line 3
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
     return-void
@@ -607,7 +550,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/FragmentActivity;->onActivityResult(IILandroid/content/Intent;)V
 
     const/4 p1, -0x1
@@ -621,7 +563,6 @@
 
     return-void
 
-    .line 2
     :cond_1
     invoke-virtual {p3}, Landroid/content/Intent;->getExtras()Landroid/os/Bundle;
 
@@ -634,7 +575,6 @@
     :cond_2
     const-string p2, "channel"
 
-    .line 3
     invoke-virtual {p1, p2}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
@@ -645,7 +585,6 @@
 
     return-void
 
-    .line 4
     :cond_3
     new-instance p2, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;
 
@@ -653,12 +592,10 @@
 
     const/4 p3, 0x1
 
-    .line 5
     invoke-virtual {p2, p3}, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;
 
     const p3, 0x7f110285
 
-    .line 6
     invoke-static {p3}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object p3
@@ -671,10 +608,8 @@
 
     move-result-object p2
 
-    .line 7
     invoke-virtual {p2}, Landroid/app/Dialog;->show()V
 
-    .line 8
     new-instance p3, Lcom/ifengyu/intercom/lite/old/g;
 
     invoke-direct {p3, p0, p2, p1}, Lcom/ifengyu/intercom/lite/old/g;-><init>(Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog;Lcom/ifengyu/intercom/lite/models/ChannelModel;)V
@@ -689,25 +624,20 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/lite/base/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c0032
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/arch/QMUIActivity;->setContentView(I)V
 
-    .line 3
     invoke-static {p0}, Lbutterknife/ButterKnife;->bind(Landroid/app/Activity;)Lbutterknife/Unbinder;
 
-    .line 4
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->a(Landroid/content/Intent;)V
 
-    .line 5
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->x()V
 
     return-void
@@ -716,13 +646,10 @@
 .method protected onNewIntent(Landroid/content/Intent;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/fragment/app/FragmentActivity;->onNewIntent(Landroid/content/Intent;)V
 
-    .line 2
     invoke-virtual {p0, p1}, Landroid/app/Activity;->setIntent(Landroid/content/Intent;)V
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->a(Landroid/content/Intent;)V
 
     return-void
@@ -731,7 +658,6 @@
 .method protected x()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     const v1, 0x7f060191
@@ -742,7 +668,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setBackgroundColor(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;->a()Lcom/qmuiteam/qmui/alpha/QMUIAlphaImageButton;
@@ -751,22 +676,18 @@
 
     const v1, 0x7f080109
 
-    .line 3
     invoke-virtual {v0, v1}, Landroidx/appcompat/widget/AppCompatImageButton;->setImageResource(I)V
 
     const/4 v1, 0x1
 
-    .line 4
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaImageButton;->setChangeAlphaWhenPress(Z)V
 
-    .line 5
     new-instance v2, Lcom/ifengyu/intercom/lite/old/j;
 
     invoke-direct {v2, p0}, Lcom/ifengyu/intercom/lite/old/j;-><init>(Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 6
     new-instance v0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity$c;
 
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
@@ -779,7 +700,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->m:Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity$c;
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     new-instance v2, Lcom/ifengyu/intercom/lite/base/recycler/LinearLayoutManagerWapper;
@@ -794,7 +714,6 @@
 
     invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView;->setLayoutManager(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     new-instance v2, Landroidx/recyclerview/widget/d;
@@ -803,14 +722,12 @@
 
     invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView;->addItemDecoration(Landroidx/recyclerview/widget/RecyclerView$l;)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->m:Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity$c;
 
     invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$g;)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->m:Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity$c;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity$a;
@@ -819,12 +736,10 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/lite/base/recycler/c;->setOnItemClickListener(Lcom/ifengyu/intercom/lite/base/recycler/c$a;)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->n:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     if-eqz v0, :cond_0
 
-    .line 12
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->m:Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity$c;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getChannelSeq()I
@@ -833,10 +748,8 @@
 
     invoke-virtual {v1, v0}, Lcom/ifengyu/intercom/lite/base/recycler/c;->c(I)V
 
-    .line 13
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->A()V
 
-    .line 14
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteChannelSettingActivity;->mRlChannelBackup:Landroid/widget/RelativeLayout;
 

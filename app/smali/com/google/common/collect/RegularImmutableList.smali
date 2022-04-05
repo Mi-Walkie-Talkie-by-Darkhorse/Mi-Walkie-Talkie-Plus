@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/RegularImmutableList;
 .super Lcom/google/common/collect/ImmutableList;
-.source "RegularImmutableList.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method constructor <init>([Ljava/lang/Object;)V
     .locals 2
 
-    .line 5
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -45,16 +43,12 @@
 .method constructor <init>([Ljava/lang/Object;II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableList;-><init>()V
 
-    .line 2
     iput p2, p0, Lcom/google/common/collect/RegularImmutableList;->offset:I
 
-    .line 3
     iput p3, p0, Lcom/google/common/collect/RegularImmutableList;->size:I
 
-    .line 4
     iput-object p1, p0, Lcom/google/common/collect/RegularImmutableList;->array:[Ljava/lang/Object;
 
     return-void
@@ -65,7 +59,6 @@
 .method copyIntoArray([Ljava/lang/Object;I)I
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableList;->array:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/RegularImmutableList;->offset:I
@@ -74,7 +67,6 @@
 
     invoke-static {v0, v1, p1, p2, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 2
     iget p1, p0, Lcom/google/common/collect/RegularImmutableList;->size:I
 
     add-int/2addr p2, p1
@@ -90,12 +82,10 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/RegularImmutableList;->size:I
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableList;->array:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/RegularImmutableList;->offset:I
@@ -123,13 +113,11 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 1
     :goto_0
     iget v2, p0, Lcom/google/common/collect/RegularImmutableList;->size:I
 
     if-ge v1, v2, :cond_2
 
-    .line 2
     iget-object v2, p0, Lcom/google/common/collect/RegularImmutableList;->array:[Ljava/lang/Object;
 
     iget v3, p0, Lcom/google/common/collect/RegularImmutableList;->offset:I
@@ -158,7 +146,6 @@
 .method isPartialView()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/RegularImmutableList;->size:I
 
     iget-object v1, p0, Lcom/google/common/collect/RegularImmutableList;->array:[Ljava/lang/Object;
@@ -191,7 +178,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     iget v1, p0, Lcom/google/common/collect/RegularImmutableList;->size:I
 
@@ -200,7 +186,6 @@
     :goto_0
     if-ltz v1, :cond_2
 
-    .line 2
     iget-object v2, p0, Lcom/google/common/collect/RegularImmutableList;->array:[Ljava/lang/Object;
 
     iget v3, p0, Lcom/google/common/collect/RegularImmutableList;->offset:I
@@ -236,7 +221,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableList;->array:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/RegularImmutableList;->offset:I
@@ -253,7 +237,6 @@
 .method public bridge synthetic listIterator(I)Ljava/util/ListIterator;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/RegularImmutableList;->listIterator(I)Lcom/google/common/collect/UnmodifiableListIterator;
 
     move-result-object p1
@@ -264,7 +247,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/RegularImmutableList;->size:I
 
     return v0
@@ -280,7 +262,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/RegularImmutableList;
 
     iget-object v1, p0, Lcom/google/common/collect/RegularImmutableList;->array:[Ljava/lang/Object;

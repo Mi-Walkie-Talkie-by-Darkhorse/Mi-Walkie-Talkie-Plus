@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/experimental/ExperimentalTypeInference;
 .super Ljava/lang/Object;
-.source "inferenceMarker.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

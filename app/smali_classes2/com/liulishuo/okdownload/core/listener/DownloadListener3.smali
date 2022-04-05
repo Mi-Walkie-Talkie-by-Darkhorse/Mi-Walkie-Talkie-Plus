@@ -1,13 +1,11 @@
 .class public abstract Lcom/liulishuo/okdownload/core/listener/DownloadListener3;
 .super Lcom/liulishuo/okdownload/core/listener/DownloadListener1;
-.source "DownloadListener3.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/liulishuo/okdownload/core/listener/DownloadListener1;-><init>()V
 
     return-void
@@ -66,7 +64,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object p4, Lcom/liulishuo/okdownload/core/listener/DownloadListener3$1;->$SwitchMap$com$liulishuo$okdownload$core$cause$EndCause:[I
 
     invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
@@ -77,7 +74,6 @@
 
     packed-switch p4, :pswitch_data_0
 
-    .line 2
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -98,25 +94,21 @@
 
     goto :goto_0
 
-    .line 3
     :pswitch_0
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/listener/DownloadListener3;->warn(Lcom/liulishuo/okdownload/DownloadTask;)V
 
     goto :goto_0
 
-    .line 4
     :pswitch_1
     invoke-virtual {p0, p1, p3}, Lcom/liulishuo/okdownload/core/listener/DownloadListener3;->error(Lcom/liulishuo/okdownload/DownloadTask;Ljava/lang/Exception;)V
 
     goto :goto_0
 
-    .line 5
     :pswitch_2
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/listener/DownloadListener3;->canceled(Lcom/liulishuo/okdownload/DownloadTask;)V
 
     goto :goto_0
 
-    .line 6
     :pswitch_3
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/listener/DownloadListener3;->completed(Lcom/liulishuo/okdownload/DownloadTask;)V
 
@@ -145,7 +137,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/listener/DownloadListener3;->started(Lcom/liulishuo/okdownload/DownloadTask;)V
 
     return-void

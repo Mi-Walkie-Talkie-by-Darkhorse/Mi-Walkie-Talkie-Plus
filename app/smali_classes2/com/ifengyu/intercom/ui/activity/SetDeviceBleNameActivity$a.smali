@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;
 .super Ljava/lang/Object;
-.source "SetDeviceBleNameActivity.java"
 
 # interfaces
 .implements Landroid/text/TextWatcher;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +44,6 @@
 
     const-string v0, "GB2312"
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;
 
@@ -72,7 +69,6 @@
 
     if-nez v1, :cond_0
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->b(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)Landroid/view/View;
@@ -85,7 +81,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;
 
@@ -97,7 +92,6 @@
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
-    .line 4
     :goto_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;
 
@@ -153,7 +147,6 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 5
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->a(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)Landroid/widget/EditText;
@@ -166,7 +159,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->b:I
 
-    .line 6
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->a(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)Landroid/widget/EditText;
@@ -179,7 +171,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->c:I
 
-    .line 7
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->a(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)Landroid/widget/EditText;
@@ -220,7 +211,6 @@
 
     if-le v0, v1, :cond_1
 
-    .line 8
     iget v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->b:I
 
     add-int/lit8 v0, v0, -0x1
@@ -229,7 +219,6 @@
 
     invoke-interface {p1, v0, v1}, Landroid/text/Editable;->delete(II)Landroid/text/Editable;
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->a(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)Landroid/widget/EditText;
@@ -238,7 +227,6 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->a(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)Landroid/widget/EditText;
@@ -258,7 +246,6 @@
     :catch_0
     move-exception p1
 
-    .line 11
     invoke-virtual {p1}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     :cond_1
@@ -269,7 +256,6 @@
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$a;->a:Ljava/lang/CharSequence;
 
     return-void

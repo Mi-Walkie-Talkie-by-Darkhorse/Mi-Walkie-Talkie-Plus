@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/AppCompatDelegateImpl$p;
 .super Landroidx/appcompat/app/AppCompatDelegateImpl$q;
-.source "AppCompatDelegateImpl.java"
 
 
 # annotations
@@ -28,19 +27,16 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$p;->d:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-direct {p0, p1}, Landroidx/appcompat/app/AppCompatDelegateImpl$q;-><init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
 
-    .line 2
     invoke-virtual {p2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
     const-string p2, "power"
 
-    .line 3
     invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -57,21 +53,18 @@
 .method b()Landroid/content/IntentFilter;
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
     const-string v1, "android.os.action.POWER_SAVE_MODE_CHANGED"
 
-    .line 3
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
     return-object v0
@@ -85,7 +78,6 @@
 .method public c()I
     .locals 3
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x1
@@ -94,7 +86,6 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$p;->c:Landroid/os/PowerManager;
 
     invoke-static {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl$l;->a(Landroid/os/PowerManager;)Z
@@ -112,7 +103,6 @@
 .method public d()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$p;->d:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-virtual {v0}, Landroidx/appcompat/app/AppCompatDelegateImpl;->l()Z

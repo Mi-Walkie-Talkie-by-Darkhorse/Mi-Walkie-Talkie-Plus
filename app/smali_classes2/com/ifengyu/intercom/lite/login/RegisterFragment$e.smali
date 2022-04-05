@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/RegisterFragment$e;
 .super Ljava/lang/Object;
-.source "RegisterFragment.java"
 
 # interfaces
 .implements Landroid/text/TextWatcher;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/RegisterFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$e;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$e;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->mBtnGetCode:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
@@ -51,7 +48,6 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -66,7 +62,6 @@
 
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$e;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
-    .line 3
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->b(Lcom/ifengyu/intercom/lite/login/RegisterFragment;)Lcom/ifengyu/library/a/c;
 
     move-result-object p1
@@ -93,7 +88,6 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 4
     :goto_0
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaButton;->setEnabled(Z)V
 

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/BaseIndicatorSpec;
 .super Ljava/lang/Object;
-.source "BaseIndicatorSpec.java"
 
 
 # virtual methods

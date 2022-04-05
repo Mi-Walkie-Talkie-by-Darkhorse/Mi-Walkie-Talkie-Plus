@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/LiteSetupPasswordFragment$b;
 .super Ljava/lang/Object;
-.source "LiteSetupPasswordFragment.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/LiteSetupPasswordFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/LiteSetupPasswordFragment$b;->a:Lcom/ifengyu/intercom/lite/login/LiteSetupPasswordFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public a(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 1
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/login/LiteSetupPasswordFragment$b;->a:Lcom/ifengyu/intercom/lite/login/LiteSetupPasswordFragment;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/lite/login/LiteSetupPasswordFragment;->e(Lcom/ifengyu/intercom/lite/login/LiteSetupPasswordFragment;)V
 
-    .line 2
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
     return-void

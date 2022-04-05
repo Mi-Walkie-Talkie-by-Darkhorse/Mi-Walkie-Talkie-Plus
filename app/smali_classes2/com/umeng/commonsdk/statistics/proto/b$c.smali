@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/statistics/proto/b$c;
 .super Lcom/umeng/analytics/pro/ca;
-.source "IdSnapshot.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/umeng/analytics/pro/ca;-><init>()V
 
     return-void
@@ -35,7 +33,6 @@
 .method synthetic constructor <init>(Lcom/umeng/commonsdk/statistics/proto/b$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/umeng/commonsdk/statistics/proto/b$c;-><init>()V
 
     return-void
@@ -51,7 +48,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p2, Lcom/umeng/commonsdk/statistics/proto/b;
 
     invoke-virtual {p0, p1, p2}, Lcom/umeng/commonsdk/statistics/proto/b$c;->a(Lcom/umeng/analytics/pro/bp;Lcom/umeng/commonsdk/statistics/proto/b;)V
@@ -67,20 +63,16 @@
         }
     .end annotation
 
-    .line 2
     check-cast p1, Lcom/umeng/analytics/pro/bv;
 
-    .line 3
     iget-object v0, p2, Lcom/umeng/commonsdk/statistics/proto/b;->a:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Lcom/umeng/analytics/pro/bj;->a(Ljava/lang/String;)V
 
-    .line 4
     iget-wide v0, p2, Lcom/umeng/commonsdk/statistics/proto/b;->b:J
 
     invoke-virtual {p1, v0, v1}, Lcom/umeng/analytics/pro/bj;->a(J)V
 
-    .line 5
     iget p2, p2, Lcom/umeng/commonsdk/statistics/proto/b;->c:I
 
     invoke-virtual {p1, p2}, Lcom/umeng/analytics/pro/bj;->a(I)V
@@ -96,7 +88,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p2, Lcom/umeng/commonsdk/statistics/proto/b;
 
     invoke-virtual {p0, p1, p2}, Lcom/umeng/commonsdk/statistics/proto/b$c;->b(Lcom/umeng/analytics/pro/bp;Lcom/umeng/commonsdk/statistics/proto/b;)V
@@ -112,10 +103,8 @@
         }
     .end annotation
 
-    .line 2
     check-cast p1, Lcom/umeng/analytics/pro/bv;
 
-    .line 3
     invoke-virtual {p1}, Lcom/umeng/analytics/pro/bj;->z()Ljava/lang/String;
 
     move-result-object v0
@@ -124,27 +113,22 @@
 
     const/4 v0, 0x1
 
-    .line 4
     invoke-virtual {p2, v0}, Lcom/umeng/commonsdk/statistics/proto/b;->a(Z)V
 
-    .line 5
     invoke-virtual {p1}, Lcom/umeng/analytics/pro/bj;->x()J
 
     move-result-wide v1
 
     iput-wide v1, p2, Lcom/umeng/commonsdk/statistics/proto/b;->b:J
 
-    .line 6
     invoke-virtual {p2, v0}, Lcom/umeng/commonsdk/statistics/proto/b;->b(Z)V
 
-    .line 7
     invoke-virtual {p1}, Lcom/umeng/analytics/pro/bj;->w()I
 
     move-result p1
 
     iput p1, p2, Lcom/umeng/commonsdk/statistics/proto/b;->c:I
 
-    .line 8
     invoke-virtual {p2, v0}, Lcom/umeng/commonsdk/statistics/proto/b;->c(Z)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public final enum Lcom/autonavi/amap/mapcore/Inner_3dMap_locationOption$Inner_3dMap_Enum_LocationMode;
 .super Ljava/lang/Enum;
-.source "Inner_3dMap_locationOption.java"
 
 
 # annotations

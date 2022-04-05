@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Maps$AsMapView$1;
 .super Lcom/google/common/collect/Maps$EntrySet;
-.source "Maps.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/collect/Maps$AsMapView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Maps$AsMapView$1;->this$0:Lcom/google/common/collect/Maps$AsMapView;
 
     invoke-direct {p0}, Lcom/google/common/collect/Maps$EntrySet;-><init>()V
@@ -50,7 +48,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Maps$AsMapView$1;->this$0:Lcom/google/common/collect/Maps$AsMapView;
 
     invoke-virtual {v0}, Lcom/google/common/collect/Maps$AsMapView;->backingSet()Ljava/util/Set;
@@ -78,7 +75,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Maps$AsMapView$1;->this$0:Lcom/google/common/collect/Maps$AsMapView;
 
     return-object v0

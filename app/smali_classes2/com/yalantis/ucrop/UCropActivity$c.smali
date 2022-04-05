@@ -1,6 +1,5 @@
 .class Lcom/yalantis/ucrop/UCropActivity$c;
 .super Ljava/lang/Object;
-.source "UCropActivity.java"
 
 # interfaces
 .implements Lcom/yalantis/ucrop/view/widget/HorizontalProgressWheelView$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/yalantis/ucrop/UCropActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/UCropActivity$c;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$c;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/UCropActivity;->c(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
@@ -53,7 +50,6 @@
 .method public b()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$c;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/UCropActivity;->c(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
@@ -68,7 +64,6 @@
 .method public onScroll(FF)V
     .locals 1
 
-    .line 1
     iget-object p2, p0, Lcom/yalantis/ucrop/UCropActivity$c;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-static {p2}, Lcom/yalantis/ucrop/UCropActivity;->c(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/j$j;
 .super Ljava/lang/Object;
-.source "NoAlphaItemAnimator.java"
 
 
 # annotations
@@ -30,22 +29,16 @@
 .method private constructor <init>(Landroidx/recyclerview/widget/RecyclerView$y;IIII)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/j$j;->a:Landroidx/recyclerview/widget/RecyclerView$y;
 
-    .line 4
     iput p2, p0, Lcom/ifengyu/intercom/ui/adapter/j$j;->b:I
 
-    .line 5
     iput p3, p0, Lcom/ifengyu/intercom/ui/adapter/j$j;->c:I
 
-    .line 6
     iput p4, p0, Lcom/ifengyu/intercom/ui/adapter/j$j;->d:I
 
-    .line 7
     iput p5, p0, Lcom/ifengyu/intercom/ui/adapter/j$j;->e:I
 
     return-void
@@ -54,7 +47,6 @@
 .method synthetic constructor <init>(Landroidx/recyclerview/widget/RecyclerView$y;IIIILcom/ifengyu/intercom/ui/adapter/j$a;)V
     .locals 0
 
-    .line 1
     invoke-direct/range {p0 .. p5}, Lcom/ifengyu/intercom/ui/adapter/j$j;-><init>(Landroidx/recyclerview/widget/RecyclerView$y;IIII)V
 
     return-void

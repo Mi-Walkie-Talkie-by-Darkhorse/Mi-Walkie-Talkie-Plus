@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/CompoundButtonCheckedChangeObservable;
 .super Lcom/jakewharton/rxbinding3/InitialValueObservable;
-.source "CompoundButtonCheckedChangeObservable.kt"
 
 
 # annotations
@@ -69,7 +68,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lcom/jakewharton/rxbinding3/InitialValueObservable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/CompoundButtonCheckedChangeObservable;->view:Landroid/widget/CompoundButton;
@@ -84,7 +82,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/CompoundButtonCheckedChangeObservable;->view:Landroid/widget/CompoundButton;
 
     invoke-virtual {v0}, Landroid/widget/CompoundButton;->isChecked()Z
@@ -101,7 +98,6 @@
 .method public bridge synthetic getInitialValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/jakewharton/rxbinding3/widget/CompoundButtonCheckedChangeObservable;->getInitialValue()Ljava/lang/Boolean;
 
     move-result-object v0
@@ -129,7 +125,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-static {p1}, Lcom/jakewharton/rxbinding3/internal/Preconditions;->checkMainThread(Lio/reactivex/Observer;)Z
 
     move-result v0
@@ -138,7 +133,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/CompoundButtonCheckedChangeObservable$Listener;
 
@@ -146,10 +140,8 @@
 
     invoke-direct {v0, v1, p1}, Lcom/jakewharton/rxbinding3/widget/CompoundButtonCheckedChangeObservable$Listener;-><init>(Landroid/widget/CompoundButton;Lio/reactivex/Observer;)V
 
-    .line 3
     invoke-interface {p1, v0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 4
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/widget/CompoundButtonCheckedChangeObservable;->view:Landroid/widget/CompoundButton;
 
     invoke-virtual {p1, v0}, Landroid/widget/CompoundButton;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V

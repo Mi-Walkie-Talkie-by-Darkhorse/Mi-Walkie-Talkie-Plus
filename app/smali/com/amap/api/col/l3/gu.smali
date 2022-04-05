@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/gu;
 .super Lcom/amap/api/col/l3/ic;
-.source "LogUpdateRequest.java"
 
 
 # instance fields
@@ -13,15 +12,12 @@
 .method public constructor <init>([BLjava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/ic;-><init>()V
 
     const-string v0, "1"
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/gu;->b:Ljava/lang/String;
 
-    .line 3
     invoke-virtual {p1}, [B->clone()Ljava/lang/Object;
 
     move-result-object p1
@@ -30,7 +26,6 @@
 
     iput-object p1, p0, Lcom/amap/api/col/l3/gu;->a:[B
 
-    .line 4
     iput-object p2, p0, Lcom/amap/api/col/l3/gu;->b:Ljava/lang/String;
 
     return-void
@@ -50,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -59,10 +53,8 @@
 
     const-string v2, "application/zip"
 
-    .line 2
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     iget-object v1, p0, Lcom/amap/api/col/l3/gu;->a:[B
 
     array-length v1, v1
@@ -98,7 +90,6 @@
 .method public final c()Ljava/lang/String;
     .locals 7
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/gq;->c:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/gi;->c(Ljava/lang/String;)Ljava/lang/String;
@@ -131,7 +122,6 @@
 
     aput-object v4, v1, v2
 
-    .line 2
     sget-object v2, Lcom/amap/api/col/l3/gq;->b:Ljava/lang/String;
 
     invoke-static {v2}, Lcom/amap/api/col/l3/gi;->a(Ljava/lang/String;)[B
@@ -162,7 +152,6 @@
 
     aput-object v2, v1, v3
 
-    .line 3
     invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -173,7 +162,6 @@
 .method public final f()[B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/gu;->a:[B
 
     return-object v0

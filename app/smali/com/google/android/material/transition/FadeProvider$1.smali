@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/transition/FadeProvider$1;
 .super Ljava/lang/Object;
-.source "FadeProvider.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -33,7 +32,6 @@
 .method constructor <init>(Landroid/view/View;FFFF)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/FadeProvider$1;->val$view:Landroid/view/View;
 
     iput p2, p0, Lcom/google/android/material/transition/FadeProvider$1;->val$startValue:F
@@ -54,7 +52,6 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 5
 
-    .line 1
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -65,7 +62,6 @@
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/transition/FadeProvider$1;->val$view:Landroid/view/View;
 
     iget v1, p0, Lcom/google/android/material/transition/FadeProvider$1;->val$startValue:F

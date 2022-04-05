@@ -1,6 +1,5 @@
 .class public final Lno/nordicsemi/android/ble/g2;
 .super Lno/nordicsemi/android/ble/n2;
-.source "PhyRequest.java"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/f2;
@@ -35,7 +34,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/g2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/g2;
 
     return-object p0
@@ -50,7 +48,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-super {p0, p1}, Lno/nordicsemi/android/ble/Request;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/Request;
 
     return-object p0
@@ -59,12 +56,10 @@
 .method public synthetic a(Landroid/bluetooth/BluetoothDevice;II)V
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lno/nordicsemi/android/ble/n2;->p:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
-    .line 4
     check-cast v0, Lno/nordicsemi/android/ble/u2/g;
 
     invoke-interface {v0, p1, p2, p3}, Lno/nordicsemi/android/ble/u2/g;->a(Landroid/bluetooth/BluetoothDevice;II)V
@@ -80,7 +75,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->b:Lno/nordicsemi/android/ble/z1;
 
     new-instance v1, Lno/nordicsemi/android/ble/b1;
@@ -95,12 +89,10 @@
 .method public synthetic f(Landroid/bluetooth/BluetoothDevice;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/n2;->p:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast v0, Lno/nordicsemi/android/ble/u2/g;
 
     const/4 v1, 0x1
@@ -118,7 +110,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->b:Lno/nordicsemi/android/ble/z1;
 
     new-instance v1, Lno/nordicsemi/android/ble/a1;
@@ -133,7 +124,6 @@
 .method h()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lno/nordicsemi/android/ble/g2;->s:I
 
     return v0
@@ -142,7 +132,6 @@
 .method i()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lno/nordicsemi/android/ble/g2;->r:I
 
     return v0
@@ -151,7 +140,6 @@
 .method j()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lno/nordicsemi/android/ble/g2;->q:I
 
     return v0

@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/oned/UPCAWriter;
 .super Ljava/lang/Object;
-.source "UPCAWriter.java"
 
 # interfaces
 .implements Lcom/google/zxing/Writer;
@@ -14,10 +13,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/zxing/oned/EAN13Writer;
 
     invoke-direct {v0}, Lcom/google/zxing/oned/EAN13Writer;-><init>()V
@@ -49,7 +46,6 @@
 
     move v4, p4
 
-    .line 1
     invoke-virtual/range {v0 .. v5}, Lcom/google/zxing/oned/UPCAWriter;->encode(Ljava/lang/String;Lcom/google/zxing/BarcodeFormat;IILjava/util/Map;)Lcom/google/zxing/common/BitMatrix;
 
     move-result-object p1
@@ -78,12 +74,10 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/google/zxing/BarcodeFormat;->UPC_A:Lcom/google/zxing/BarcodeFormat;
 
     if-ne p2, v0, :cond_0
 
-    .line 3
     iget-object v1, p0, Lcom/google/zxing/oned/UPCAWriter;->subWriter:Lcom/google/zxing/oned/EAN13Writer;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -112,7 +106,6 @@
 
     return-object p1
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

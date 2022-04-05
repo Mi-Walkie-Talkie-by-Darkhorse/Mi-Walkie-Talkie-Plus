@@ -1,6 +1,5 @@
 .class public Landroidx/lifecycle/p;
 .super Landroidx/lifecycle/LiveData;
-.source "MutableLiveData.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/lifecycle/LiveData;-><init>()V
 
     return-void
@@ -35,7 +33,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/lifecycle/LiveData;->postValue(Ljava/lang/Object;)V
 
     return-void
@@ -49,7 +46,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/lifecycle/LiveData;->setValue(Ljava/lang/Object;)V
 
     return-void

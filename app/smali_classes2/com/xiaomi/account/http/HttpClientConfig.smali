@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/http/HttpClientConfig;
 .super Ljava/lang/Object;
-.source "HttpClientConfig.java"
 
 
 # annotations
@@ -41,35 +40,28 @@
 .method private constructor <init>(Lcom/xiaomi/account/http/HttpClientConfig$Builder;)V
     .locals 2
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iget-object v0, p1, Lcom/xiaomi/account/http/HttpClientConfig$Builder;->network:Landroid/net/Network;
 
     iput-object v0, p0, Lcom/xiaomi/account/http/HttpClientConfig;->network:Landroid/net/Network;
 
-    .line 4
     iget p1, p1, Lcom/xiaomi/account/http/HttpClientConfig$Builder;->netWorkSlotId:I
 
     iput p1, p0, Lcom/xiaomi/account/http/HttpClientConfig;->netWorkSlotId:I
 
-    .line 5
     sget-wide v0, Lcom/xiaomi/account/http/HttpClientConfig;->defaultConnectTimeoutMs:J
 
     iput-wide v0, p0, Lcom/xiaomi/account/http/HttpClientConfig;->connectTimeoutMs:J
 
-    .line 6
     sget-wide v0, Lcom/xiaomi/account/http/HttpClientConfig;->defaultWaitCellularTimeoutMs:J
 
     iput-wide v0, p0, Lcom/xiaomi/account/http/HttpClientConfig;->waitCellularTimeoutMs:J
 
     const-wide/16 v0, 0x3a98
 
-    .line 7
     iput-wide v0, p0, Lcom/xiaomi/account/http/HttpClientConfig;->readTimeoutMs:J
 
-    .line 8
     iput-wide v0, p0, Lcom/xiaomi/account/http/HttpClientConfig;->writeTimeoutMs:J
 
     return-void
@@ -78,7 +70,6 @@
 .method synthetic constructor <init>(Lcom/xiaomi/account/http/HttpClientConfig$Builder;Lcom/xiaomi/account/http/HttpClientConfig$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/account/http/HttpClientConfig;-><init>(Lcom/xiaomi/account/http/HttpClientConfig$Builder;)V
 
     return-void
@@ -87,7 +78,6 @@
 .method public static setDefaultConnectTimeoutMs(J)V
     .locals 0
 
-    .line 1
     sput-wide p0, Lcom/xiaomi/account/http/HttpClientConfig;->defaultConnectTimeoutMs:J
 
     return-void
@@ -96,7 +86,6 @@
 .method public static setDefaultWaitCellularTimeoutMs(J)V
     .locals 0
 
-    .line 1
     sput-wide p0, Lcom/xiaomi/account/http/HttpClientConfig;->defaultWaitCellularTimeoutMs:J
 
     return-void

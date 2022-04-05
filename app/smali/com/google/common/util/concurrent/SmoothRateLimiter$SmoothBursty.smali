@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;
 .super Lcom/google/common/util/concurrent/SmoothRateLimiter;
-.source "SmoothRateLimiter.java"
 
 
 # annotations
@@ -24,10 +23,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/google/common/util/concurrent/SmoothRateLimiter;-><init>(Lcom/google/common/util/concurrent/RateLimiter$SleepingStopwatch;Lcom/google/common/util/concurrent/SmoothRateLimiter$1;)V
 
-    .line 2
     iput-wide p2, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;->maxBurstSeconds:D
 
     return-void
@@ -38,10 +35,8 @@
 .method doSetRate(DD)V
     .locals 3
 
-    .line 1
     iget-wide p3, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->maxPermits:D
 
-    .line 2
     iget-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter$SmoothBursty;->maxBurstSeconds:D
 
     mul-double v0, v0, p1
@@ -54,7 +49,6 @@
 
     if-nez v2, :cond_0
 
-    .line 3
     iput-wide v0, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->storedPermits:D
 
     goto :goto_1
@@ -68,7 +62,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-wide p1, p0, Lcom/google/common/util/concurrent/SmoothRateLimiter;->storedPermits:D
 

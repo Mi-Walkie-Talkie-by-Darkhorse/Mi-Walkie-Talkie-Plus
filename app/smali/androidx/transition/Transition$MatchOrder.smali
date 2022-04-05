@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/transition/Transition$MatchOrder;
 .super Ljava/lang/Object;
-.source "Transition.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

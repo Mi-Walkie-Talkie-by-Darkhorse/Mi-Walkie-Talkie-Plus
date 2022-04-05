@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/old/LiteUpgradeActivity;
 .super Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;
-.source "LiteUpgradeActivity.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 .method public static start(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/lite/old/LiteUpgradeActivity;
 
     const-class v1, Lcom/ifengyu/intercom/lite/fragment/FirmwareUpgradeFragment;
@@ -37,7 +34,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     return-void
@@ -56,10 +52,8 @@
 .method protected m()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;->m()V
 
-    .line 2
     invoke-static {p0}, Lcom/qmuiteam/qmui/util/k;->a(Landroid/app/Activity;)Z
 
     return-void

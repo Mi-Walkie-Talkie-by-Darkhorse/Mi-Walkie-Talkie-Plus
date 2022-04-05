@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/MotionLayout$c;
 .super Landroidx/constraintlayout/motion/widget/o;
-.source "MotionLayout.java"
 
 
 # annotations
@@ -28,17 +27,14 @@
 .method constructor <init>(Landroidx/constraintlayout/motion/widget/MotionLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-direct {p0}, Landroidx/constraintlayout/motion/widget/o;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 2
     iput p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->a:F
 
-    .line 3
     iput p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->b:F
 
     return-void
@@ -49,7 +45,6 @@
 .method public a()F
     .locals 1
 
-    .line 4
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     iget v0, v0, Landroidx/constraintlayout/motion/widget/MotionLayout;->c:F
@@ -60,13 +55,10 @@
 .method public a(FFF)V
     .locals 0
 
-    .line 1
     iput p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->a:F
 
-    .line 2
     iput p2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->b:F
 
-    .line 3
     iput p3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->c:F
 
     return-void
@@ -75,7 +67,6 @@
 .method public getInterpolation(F)F
     .locals 5
 
-    .line 1
     iget v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->a:F
 
     const/high16 v1, 0x40000000    # 2.0f
@@ -86,7 +77,6 @@
 
     if-lez v2, :cond_1
 
-    .line 2
     iget v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->c:F
 
     div-float v3, v0, v2
@@ -97,7 +87,6 @@
 
     div-float p1, v0, v2
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
@@ -121,7 +110,6 @@
 
     sub-float/2addr v2, v3
 
-    .line 4
     iget p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->b:F
 
     :goto_0
@@ -132,7 +120,6 @@
     :cond_1
     neg-float v2, v0
 
-    .line 5
     iget v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->c:F
 
     div-float/2addr v2, v3
@@ -145,7 +132,6 @@
 
     div-float/2addr p1, v3
 
-    .line 6
     :cond_2
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->d:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
@@ -169,7 +155,6 @@
 
     add-float/2addr v2, v3
 
-    .line 7
     iget p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$c;->b:F
 
     goto :goto_0

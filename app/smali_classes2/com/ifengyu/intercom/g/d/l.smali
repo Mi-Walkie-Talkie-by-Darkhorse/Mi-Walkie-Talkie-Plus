@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/intercom/g/d/l;
 .super Lcom/ifengyu/intercom/g/d/b;
-.source "StringCallback.java"
 
 
 # annotations
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/b;-><init>()V
 
     return-void
@@ -33,7 +31,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/g/d/l;->a(Lokhttp3/Response;I)Ljava/lang/String;
 
     move-result-object p1
@@ -49,7 +46,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p1}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
     move-result-object p1

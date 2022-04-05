@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lno/nordicsemi/android/ble/data/Data$LongFormat;
 .super Ljava/lang/Object;
-.source "Data.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

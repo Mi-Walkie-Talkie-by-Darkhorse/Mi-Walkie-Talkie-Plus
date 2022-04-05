@@ -1,6 +1,5 @@
 .class Lcom/google/common/io/MultiReader;
 .super Ljava/io/Reader;
-.source "MultiReader.java"
 
 
 # instance fields
@@ -37,13 +36,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/io/Reader;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/io/MultiReader;->it:Ljava/util/Iterator;
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/io/MultiReader;->advance()V
 
     return-void
@@ -57,10 +53,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/io/MultiReader;->close()V
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/io/MultiReader;->it:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -69,7 +63,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/io/MultiReader;->it:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -98,20 +91,17 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/MultiReader;->current:Ljava/io/Reader;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     :try_start_0
     invoke-virtual {v0}, Ljava/io/Reader;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     iput-object v1, p0, Lcom/google/common/io/MultiReader;->current:Ljava/io/Reader;
 
     goto :goto_0
@@ -140,7 +130,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/MultiReader;->current:Ljava/io/Reader;
 
     const/4 v1, -0x1
@@ -149,7 +138,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/Reader;->read([CII)I
 
@@ -157,10 +145,8 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/io/MultiReader;->advance()V
 
-    .line 4
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/io/MultiReader;->read([CII)I
 
     move-result p1
@@ -179,7 +165,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/MultiReader;->current:Ljava/io/Reader;
 
     if-eqz v0, :cond_0
@@ -225,18 +210,15 @@
     :goto_0
     const-string v4, "n is negative"
 
-    .line 1
     invoke-static {v3, v4}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
     if-lez v2, :cond_2
 
-    .line 2
     :goto_1
     iget-object v2, p0, Lcom/google/common/io/MultiReader;->current:Ljava/io/Reader;
 
     if-eqz v2, :cond_2
 
-    .line 3
     invoke-virtual {v2, p1, p2}, Ljava/io/Reader;->skip(J)J
 
     move-result-wide v2
@@ -247,7 +229,6 @@
 
     return-wide v2
 
-    .line 4
     :cond_1
     invoke-direct {p0}, Lcom/google/common/io/MultiReader;->advance()V
 

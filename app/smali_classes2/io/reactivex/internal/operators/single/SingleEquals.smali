@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/single/SingleEquals;
 .super Lio/reactivex/Single;
-.source "SingleEquals.java"
 
 
 # annotations
@@ -55,13 +54,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleEquals;->first:Lio/reactivex/SingleSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/single/SingleEquals;->second:Lio/reactivex/SingleSource;
 
     return-void
@@ -81,7 +77,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v6, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v6}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
@@ -100,15 +95,12 @@
 
     aput-object v0, v7, v1
 
-    .line 2
     new-instance v8, Lio/reactivex/disposables/CompositeDisposable;
 
     invoke-direct {v8}, Lio/reactivex/disposables/CompositeDisposable;-><init>()V
 
-    .line 3
     invoke-interface {p1, v8}, Lio/reactivex/SingleObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 4
     iget-object v9, p0, Lio/reactivex/internal/operators/single/SingleEquals;->first:Lio/reactivex/SingleSource;
 
     new-instance v10, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;
@@ -129,7 +121,6 @@
 
     invoke-interface {v9, v10}, Lio/reactivex/SingleSource;->subscribe(Lio/reactivex/SingleObserver;)V
 
-    .line 5
     iget-object v9, p0, Lio/reactivex/internal/operators/single/SingleEquals;->second:Lio/reactivex/SingleSource;
 
     new-instance v10, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;

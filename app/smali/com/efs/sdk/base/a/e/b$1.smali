@@ -1,6 +1,5 @@
 .class final Lcom/efs/sdk/base/a/e/b$1;
 .super Ljava/util/HashMap;
-.source "SourceFile"
 
 
 # annotations
@@ -29,12 +28,10 @@
 
     const/4 v0, 0x3
 
-    .line 1
     invoke-direct {p0, v0}, Ljava/util/HashMap;-><init>(I)V
 
     const-wide/32 v0, 0x493e0
 
-    .line 2
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0
@@ -45,7 +42,6 @@
 
     const-wide/32 v0, 0x36ee80
 
-    .line 3
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0
@@ -56,7 +52,6 @@
 
     const-wide/32 v0, 0x5265c00
 
-    .line 4
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0

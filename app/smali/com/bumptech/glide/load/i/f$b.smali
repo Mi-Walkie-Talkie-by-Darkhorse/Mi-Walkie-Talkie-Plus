@@ -1,6 +1,5 @@
 .class final Lcom/bumptech/glide/load/i/f$b;
 .super Ljava/lang/Object;
-.source "DataRewinderRegistry.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/i/e;
@@ -38,10 +37,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/i/f$b;->a:Ljava/lang/Object;
 
     return-void
@@ -54,7 +51,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/i/f$b;->a:Ljava/lang/Object;
 
     return-object v0

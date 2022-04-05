@@ -1,6 +1,5 @@
 .class Lcom/afollestad/materialdialogs/MaterialDialog$a$a;
 .super Ljava/lang/Object;
-.source "MaterialDialog.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/afollestad/materialdialogs/MaterialDialog$a;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a$a;->b:Lcom/afollestad/materialdialogs/MaterialDialog$a;
 
     iput p2, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a$a;->a:I
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a$a;->b:Lcom/afollestad/materialdialogs/MaterialDialog$a;
 
     iget-object v0, v0, Lcom/afollestad/materialdialogs/MaterialDialog$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
@@ -51,7 +48,6 @@
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->requestFocus()Z
 
-    .line 2
     iget-object v0, p0, Lcom/afollestad/materialdialogs/MaterialDialog$a$a;->b:Lcom/afollestad/materialdialogs/MaterialDialog$a;
 
     iget-object v0, v0, Lcom/afollestad/materialdialogs/MaterialDialog$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;

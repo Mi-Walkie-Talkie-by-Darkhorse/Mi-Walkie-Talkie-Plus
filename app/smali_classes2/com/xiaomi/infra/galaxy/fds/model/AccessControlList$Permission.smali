@@ -1,6 +1,5 @@
 .class public final enum Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 .super Ljava/lang/Enum;
-.source "AccessControlList.java"
 
 
 # annotations
@@ -44,7 +43,6 @@
 .method static constructor <clinit>()V
     .locals 8
 
-    .line 1
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
     const/4 v1, 0x0
@@ -57,7 +55,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->READ:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
-    .line 2
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
     const/4 v3, 0x2
@@ -68,7 +65,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->WRITE:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
-    .line 3
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
     const/4 v4, 0x4
@@ -79,7 +75,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->READ_OBJECTS:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
-    .line 4
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
     const/4 v5, 0x3
@@ -92,7 +87,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->SSO_WRITE:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
-    .line 5
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
     const-string v6, "FULL_CONTROL"
@@ -107,7 +101,6 @@
 
     new-array v6, v6, [Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
-    .line 6
     sget-object v7, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->READ:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
     aput-object v7, v6, v1
@@ -139,10 +132,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput p3, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->value:I
 
     return-void
@@ -151,7 +142,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -166,7 +156,6 @@
 .method public static values()[Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->$VALUES:[Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;
 
     invoke-virtual {v0}, [Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->clone()Ljava/lang/Object;
@@ -183,7 +172,6 @@
 .method public getValue()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$Permission;->value:I
 
     return v0

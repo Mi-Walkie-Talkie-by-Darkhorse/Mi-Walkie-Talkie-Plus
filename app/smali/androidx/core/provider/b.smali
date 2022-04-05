@@ -1,6 +1,5 @@
 .class Landroidx/core/provider/b;
 .super Ljava/lang/Object;
-.source "CalleeHandler.java"
 
 
 # direct methods
@@ -9,14 +8,12 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -27,7 +24,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance v0, Landroid/os/Handler;
 

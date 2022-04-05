@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/LexicographicalOrdering;
 .super Lcom/google/common/collect/Ordering;
-.source "LexicographicalOrdering.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -50,10 +49,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/Ordering;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Lcom/google/common/collect/Ordering;
 
     return-void
@@ -73,17 +70,14 @@
         }
     .end annotation
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 3
     invoke-interface {p2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
 
-    .line 4
     :cond_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -91,7 +85,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 5
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -102,7 +95,6 @@
 
     return p1
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Lcom/google/common/collect/Ordering;
 
@@ -122,7 +114,6 @@
 
     return v0
 
-    .line 7
     :cond_2
     invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
 
@@ -143,7 +134,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Iterable;
 
     check-cast p2, Ljava/lang/Iterable;
@@ -168,16 +158,13 @@
 
     return p1
 
-    .line 1
     :cond_0
     instance-of v0, p1, Lcom/google/common/collect/LexicographicalOrdering;
 
     if-eqz v0, :cond_1
 
-    .line 2
     check-cast p1, Lcom/google/common/collect/LexicographicalOrdering;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Lcom/google/common/collect/Ordering;
 
     iget-object p1, p1, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Lcom/google/common/collect/Ordering;
@@ -197,7 +184,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Lcom/google/common/collect/Ordering;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -214,7 +200,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/LexicographicalOrdering;->elementOrder:Lcom/google/common/collect/Ordering;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;

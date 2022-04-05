@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/jc;
 .super Ljava/lang/Object;
-.source "ThreadPool.java"
 
 
 # static fields
@@ -34,24 +33,20 @@
 .method private constructor <init>(I)V
     .locals 7
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     iput-object p1, p0, Lcom/amap/api/col/l3/jc;->c:Ljava/util/concurrent/ConcurrentHashMap;
 
-    .line 3
     new-instance p1, Lcom/amap/api/col/l3/jc$1;
 
     invoke-direct {p1, p0}, Lcom/amap/api/col/l3/jc$1;-><init>(Lcom/amap/api/col/l3/jc;)V
 
     iput-object p1, p0, Lcom/amap/api/col/l3/jc;->d:Lcom/amap/api/col/l3/jd$a;
 
-    .line 4
     :try_start_0
     new-instance p1, Ljava/util/concurrent/ThreadPoolExecutor;
 
@@ -86,10 +81,8 @@
 
     const-string v1, "ThreadPool"
 
-    .line 5
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -102,13 +95,11 @@
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/jc;->a:Lcom/amap/api/col/l3/jc;
 
     if-nez v1, :cond_0
 
-    .line 3
     new-instance v1, Lcom/amap/api/col/l3/jc;
 
     const/4 v2, 0x1
@@ -117,7 +108,6 @@
 
     sput-object v1, Lcom/amap/api/col/l3/jc;->a:Lcom/amap/api/col/l3/jc;
 
-    .line 4
     :cond_0
     sget-object v1, Lcom/amap/api/col/l3/jc;->a:Lcom/amap/api/col/l3/jc;
     :try_end_0
@@ -138,7 +128,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/jc;Lcom/amap/api/col/l3/jd;Z)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/amap/api/col/l3/jc;->a(Lcom/amap/api/col/l3/jd;Z)V
 
     return-void
@@ -157,7 +146,6 @@
 
     monitor-enter p0
 
-    .line 13
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jc;->c:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -165,7 +153,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 14
     monitor-exit p0
 
     return-void
@@ -178,15 +165,12 @@
 
     const-string v0, "addQueue"
 
-    .line 15
     invoke-static {p1, p2, v0}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 16
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 17
     monitor-exit p0
 
     return-void
@@ -204,7 +188,6 @@
 
     monitor-enter p0
 
-    .line 18
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jc;->c:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -220,12 +203,10 @@
 
     const/4 p2, 0x1
 
-    .line 19
     invoke-interface {p1, p2}, Ljava/util/concurrent/Future;->cancel(Z)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 20
     :cond_0
     monitor-exit p0
 
@@ -239,15 +220,12 @@
 
     const-string v0, "removeQueue"
 
-    .line 21
     invoke-static {p1, p2, v0}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 22
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 23
     monitor-exit p0
 
     return-void
@@ -267,13 +245,11 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/jc;->a:Lcom/amap/api/col/l3/jc;
 
     if-eqz v1, :cond_2
 
-    .line 2
     sget-object v1, Lcom/amap/api/col/l3/jc;->a:Lcom/amap/api/col/l3/jc;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
@@ -367,12 +343,10 @@
     :goto_1
     const/4 v1, 0x0
 
-    .line 3
     sput-object v1, Lcom/amap/api/col/l3/jc;->a:Lcom/amap/api/col/l3/jc;
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 4
     :cond_2
     monitor-exit v0
 
@@ -386,15 +360,12 @@
 
     const-string v3, "onDestroy"
 
-    .line 5
     invoke-static {v1, v2, v3}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_2
 
-    .line 7
     monitor-exit v0
 
     return-void
@@ -412,7 +383,6 @@
 
     monitor-enter p0
 
-    .line 8
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jc;->c:Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -432,17 +402,14 @@
 
     const-string v1, "contain"
 
-    .line 9
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
     const/4 p1, 0x0
 
-    .line 11
     :goto_0
     monitor-exit p0
 
@@ -466,7 +433,6 @@
         }
     .end annotation
 
-    .line 5
     :try_start_0
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/jc;->b(Lcom/amap/api/col/l3/jd;)Z
 
@@ -476,7 +442,6 @@
 
     return-void
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jc;->b:Ljava/util/concurrent/ExecutorService;
 
@@ -492,7 +457,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/jc;->d:Lcom/amap/api/col/l3/jd$a;
 
@@ -500,7 +464,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     :try_start_1
     iget-object v0, p0, Lcom/amap/api/col/l3/jc;->b:Ljava/util/concurrent/ExecutorService;
 
@@ -515,7 +478,6 @@
 
     return-void
 
-    .line 9
     :cond_2
     :try_start_2
     invoke-direct {p0, p1, v0}, Lcom/amap/api/col/l3/jc;->a(Lcom/amap/api/col/l3/jd;Ljava/util/concurrent/Future;)V
@@ -530,17 +492,14 @@
     :catchall_0
     move-exception p1
 
-    .line 10
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const-string v0, "TPool"
 
     const-string v1, "addTask"
 
-    .line 11
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12
     new-instance p1, Lcom/amap/api/col/l3/fv;
 
     const-string v0, "thread pool has exception"

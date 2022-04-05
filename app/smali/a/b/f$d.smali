@@ -1,6 +1,5 @@
 .class final La/b/f$d;
 .super Ljava/lang/Object;
-.source "MapCollections.java"
 
 # interfaces
 .implements Ljava/util/Iterator;
@@ -43,17 +42,14 @@
 .method constructor <init>(La/b/f;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, La/b/f$d;->d:La/b/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, La/b/f$d;->c:Z
 
-    .line 3
     invoke-virtual {p1}, La/b/f;->c()I
 
     move-result p1
@@ -64,7 +60,6 @@
 
     const/4 p1, -0x1
 
-    .line 4
     iput p1, p0, La/b/f$d;->b:I
 
     return-void
@@ -75,12 +70,10 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 4
 
-    .line 1
     iget-boolean v0, p0, La/b/f$d;->c:Z
 
     if-eqz v0, :cond_2
 
-    .line 2
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
@@ -89,11 +82,9 @@
 
     return v1
 
-    .line 3
     :cond_0
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 4
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -114,7 +105,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -138,7 +128,6 @@
     :cond_1
     return v1
 
-    .line 6
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -157,12 +146,10 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, La/b/f$d;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, La/b/f$d;->d:La/b/f;
 
     iget v1, p0, La/b/f$d;->b:I
@@ -175,7 +162,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -194,12 +180,10 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, La/b/f$d;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, La/b/f$d;->d:La/b/f;
 
     iget v1, p0, La/b/f$d;->b:I
@@ -212,7 +196,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -226,7 +209,6 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 1
     iget v0, p0, La/b/f$d;->b:I
 
     iget v1, p0, La/b/f$d;->a:I
@@ -247,12 +229,10 @@
 .method public hashCode()I
     .locals 5
 
-    .line 1
     iget-boolean v0, p0, La/b/f$d;->c:Z
 
     if-eqz v0, :cond_2
 
-    .line 2
     iget-object v0, p0, La/b/f$d;->d:La/b/f;
 
     iget v1, p0, La/b/f$d;->b:I
@@ -263,7 +243,6 @@
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, La/b/f$d;->d:La/b/f;
 
     iget v3, p0, La/b/f$d;->b:I
@@ -280,7 +259,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -291,7 +269,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_1
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -302,7 +279,6 @@
 
     return v0
 
-    .line 6
     :cond_2
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -316,7 +292,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, La/b/f$d;->next()Ljava/util/Map$Entry;
 
     return-object p0
@@ -332,14 +307,12 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, La/b/f$d;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget v0, p0, La/b/f$d;->b:I
 
     const/4 v1, 0x1
@@ -348,12 +321,10 @@
 
     iput v0, p0, La/b/f$d;->b:I
 
-    .line 4
     iput-boolean v1, p0, La/b/f$d;->c:Z
 
     return-object p0
 
-    .line 5
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
@@ -365,26 +336,22 @@
 .method public remove()V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, La/b/f$d;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, La/b/f$d;->d:La/b/f;
 
     iget v1, p0, La/b/f$d;->b:I
 
     invoke-virtual {v0, v1}, La/b/f;->a(I)V
 
-    .line 3
     iget v0, p0, La/b/f$d;->b:I
 
     add-int/lit8 v0, v0, -0x1
 
     iput v0, p0, La/b/f$d;->b:I
 
-    .line 4
     iget v0, p0, La/b/f$d;->a:I
 
     add-int/lit8 v0, v0, -0x1
@@ -393,12 +360,10 @@
 
     const/4 v0, 0x0
 
-    .line 5
     iput-boolean v0, p0, La/b/f$d;->c:Z
 
     return-void
 
-    .line 6
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -415,12 +380,10 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, La/b/f$d;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, La/b/f$d;->d:La/b/f;
 
     iget v1, p0, La/b/f$d;->b:I
@@ -431,7 +394,6 @@
 
     return-object p1
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -445,7 +407,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

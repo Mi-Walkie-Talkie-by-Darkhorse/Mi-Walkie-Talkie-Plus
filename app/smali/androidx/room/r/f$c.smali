@@ -1,6 +1,5 @@
 .class Landroidx/room/r/f$c;
 .super Ljava/lang/Object;
-.source "TableInfo.java"
 
 # interfaces
 .implements Ljava/lang/Comparable;
@@ -46,19 +45,14 @@
 .method constructor <init>(IILjava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Landroidx/room/r/f$c;->a:I
 
-    .line 3
     iput p2, p0, Landroidx/room/r/f$c;->b:I
 
-    .line 4
     iput-object p3, p0, Landroidx/room/r/f$c;->c:Ljava/lang/String;
 
-    .line 5
     iput-object p4, p0, Landroidx/room/r/f$c;->d:Ljava/lang/String;
 
     return-void
@@ -73,7 +67,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget v0, p0, Landroidx/room/r/f$c;->a:I
 
     iget v1, p1, Landroidx/room/r/f$c;->a:I
@@ -82,7 +75,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget v0, p0, Landroidx/room/r/f$c;->b:I
 
     iget p1, p1, Landroidx/room/r/f$c;->b:I
@@ -100,7 +92,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Landroidx/room/r/f$c;
 
     invoke-virtual {p0, p1}, Landroidx/room/r/f$c;->a(Landroidx/room/r/f$c;)I

@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/exception/ServerCanceledException;
 .super Ljava/io/IOException;
-.source "ServerCanceledException.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method public constructor <init>(IJ)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -34,7 +32,6 @@
 
     invoke-direct {p0, p2}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput p1, p0, Lcom/liulishuo/okdownload/core/exception/ServerCanceledException;->responseCode:I
 
     return-void
@@ -45,7 +42,6 @@
 .method public getResponseCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/core/exception/ServerCanceledException;->responseCode:I
 
     return v0

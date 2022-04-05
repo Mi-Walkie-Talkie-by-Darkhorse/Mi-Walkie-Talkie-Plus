@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/BindBitmap;
 .super Ljava/lang/Object;
-.source "BindBitmap.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

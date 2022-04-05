@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/widget/RxAdapterView__AdapterViewItemSelectionObservableKt;
 .super Ljava/lang/Object;
-.source "AdapterViewItemSelectionObservable.kt"
 
 
 # annotations
@@ -62,7 +61,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemSelectionObservable;
 
     invoke-direct {v0, p0}, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemSelectionObservable;-><init>(Landroid/widget/AdapterView;)V

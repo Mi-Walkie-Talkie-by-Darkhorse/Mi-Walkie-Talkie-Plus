@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/badge/BadgeDrawable$SavedState$1;
 .super Ljava/lang/Object;
-.source "BadgeDrawable.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,7 +45,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/android/material/badge/BadgeDrawable$SavedState;
 
     invoke-direct {v0, p1}, Lcom/google/android/material/badge/BadgeDrawable$SavedState;-><init>(Landroid/os/Parcel;)V
@@ -64,7 +61,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/badge/BadgeDrawable$SavedState$1;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/badge/BadgeDrawable$SavedState;
 
     move-result-object p1
@@ -77,7 +73,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-array p1, p1, [Lcom/google/android/material/badge/BadgeDrawable$SavedState;
 
     return-object p1
@@ -88,7 +83,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/badge/BadgeDrawable$SavedState$1;->newArray(I)[Lcom/google/android/material/badge/BadgeDrawable$SavedState;
 
     move-result-object p1

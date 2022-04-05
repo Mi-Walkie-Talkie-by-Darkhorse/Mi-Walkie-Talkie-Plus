@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/protobuf/Extension;
 .super Ljava/lang/Object;
-.source "Extension.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -52,7 +50,6 @@
 .method protected getExtensionType()Lcom/google/protobuf/Extension$ExtensionType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Extension$ExtensionType;->IMMUTABLE:Lcom/google/protobuf/Extension$ExtensionType;
 
     return-object v0
@@ -67,7 +64,6 @@
 .method public getMessageType()Lcom/google/protobuf/Extension$MessageType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Extension$MessageType;->PROTO2:Lcom/google/protobuf/Extension$MessageType;
 
     return-object v0

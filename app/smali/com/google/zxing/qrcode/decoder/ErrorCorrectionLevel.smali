@@ -1,6 +1,5 @@
 .class public final enum Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 .super Ljava/lang/Enum;
-.source "ErrorCorrectionLevel.java"
 
 
 # annotations
@@ -35,7 +34,6 @@
 .method static constructor <clinit>()V
     .locals 10
 
-    .line 1
     new-instance v0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     const/4 v1, 0x1
@@ -48,7 +46,6 @@
 
     sput-object v0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;->L:Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
-    .line 2
     new-instance v0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     const-string v3, "M"
@@ -57,7 +54,6 @@
 
     sput-object v0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;->M:Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
-    .line 3
     new-instance v0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     const/4 v3, 0x3
@@ -70,7 +66,6 @@
 
     sput-object v0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;->Q:Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
-    .line 4
     new-instance v0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     const-string v5, "H"
@@ -83,7 +78,6 @@
 
     new-array v6, v5, [Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
-    .line 5
     sget-object v7, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;->L:Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     aput-object v7, v6, v2
@@ -110,7 +104,6 @@
 
     aput-object v9, v5, v3
 
-    .line 6
     sput-object v5, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;->FOR_BITS:[Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     return-void
@@ -124,10 +117,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput p3, p0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;->bits:I
 
     return-void
@@ -138,19 +129,16 @@
 
     if-ltz p0, :cond_0
 
-    .line 1
     sget-object v0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;->FOR_BITS:[Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     array-length v1, v0
 
     if-ge p0, v1, :cond_0
 
-    .line 2
     aget-object p0, v0, p0
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -162,7 +150,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -177,7 +164,6 @@
 .method public static values()[Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;->$VALUES:[Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;
 
     invoke-virtual {v0}, [Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;->clone()Ljava/lang/Object;
@@ -194,7 +180,6 @@
 .method public getBits()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;->bits:I
 
     return v0

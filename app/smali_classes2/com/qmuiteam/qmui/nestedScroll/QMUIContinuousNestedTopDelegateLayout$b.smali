@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopDelegateLayout$b;
 .super Ljava/lang/Object;
-.source "QMUIContinuousNestedTopDelegateLayout.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/nestedScroll/b$a;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopDelegateLayout;Lcom/qmuiteam/qmui/nestedScroll/b$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopDelegateLayout$b;->b:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopDelegateLayout;
 
     iput-object p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopDelegateLayout$b;->a:Lcom/qmuiteam/qmui/nestedScroll/b$a;
@@ -42,7 +40,6 @@
 .method public a(II)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopDelegateLayout$b;->a:Lcom/qmuiteam/qmui/nestedScroll/b$a;
 
     iget-object p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopDelegateLayout$b;->b:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopDelegateLayout;

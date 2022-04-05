@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/IWebIndicator;
 .super Ljava/lang/Object;
-.source "IWebIndicator.java"
 
 
 # annotations

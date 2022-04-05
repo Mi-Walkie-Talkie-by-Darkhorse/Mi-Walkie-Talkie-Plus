@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;
 .super Ljava/lang/Object;
-.source "ScaleGestureDetector.java"
 
 
 # annotations
@@ -72,21 +71,16 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Landroid/view/ViewConfiguration;->get(Landroid/content/Context;)Landroid/view/ViewConfiguration;
 
     move-result-object v0
 
-    .line 3
     iput-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mContext:Landroid/content/Context;
 
-    .line 4
     iput-object p2, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
-    .line 5
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledEdgeSlop()I
 
     move-result p1
@@ -101,12 +95,10 @@
 .method private findNewActiveIndex(Landroid/view/MotionEvent;II)I
     .locals 8
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v0
 
-    .line 2
     invoke-virtual {p1, p2}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result p2
@@ -120,21 +112,16 @@
 
     if-eq v1, p2, :cond_0
 
-    .line 3
     iget v2, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mEdgeSlop:F
 
-    .line 4
     iget v3, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mRightSlopEdge:F
 
-    .line 5
     iget v4, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mBottomSlopEdge:F
 
-    .line 6
     invoke-static {p1, v1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawX(Landroid/view/MotionEvent;I)F
 
     move-result v5
 
-    .line 7
     invoke-static {p1, v1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawY(Landroid/view/MotionEvent;I)F
 
     move-result v6
@@ -181,14 +168,12 @@
     :cond_0
     if-nez p1, :cond_1
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result p0
 
     return p0
 
-    .line 2
     :cond_1
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -200,7 +185,6 @@
 
     sub-float/2addr v0, v1
 
-    .line 3
     invoke-virtual {p0, p1}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result p0
@@ -222,14 +206,12 @@
     :cond_0
     if-nez p1, :cond_1
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result p0
 
     return p0
 
-    .line 2
     :cond_1
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getRawY()F
 
@@ -241,7 +223,6 @@
 
     sub-float/2addr v0, v1
 
-    .line 3
     invoke-virtual {p0, p1}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result p0
@@ -254,49 +235,38 @@
 .method private reset()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
-    .line 3
     iput-object v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrEvent:Landroid/view/MotionEvent;
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
-    .line 6
     iput-object v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrEvent:Landroid/view/MotionEvent;
 
     :cond_1
     const/4 v0, 0x0
 
-    .line 7
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mSloppyGesture:Z
 
-    .line 8
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mGestureInProgress:Z
 
     const/4 v1, -0x1
 
-    .line 9
     iput v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
-    .line 10
     iput v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
-    .line 11
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mInvalidGesture:Z
 
     return-void
@@ -305,15 +275,12 @@
 .method private setContext(Landroid/view/MotionEvent;)V
     .locals 13
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrEvent:Landroid/view/MotionEvent;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
-    .line 3
     :cond_0
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
@@ -323,40 +290,32 @@
 
     const/high16 v0, -0x40800000    # -1.0f
 
-    .line 4
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrLen:F
 
-    .line 5
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevLen:F
 
-    .line 6
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mScaleFactor:F
 
-    .line 7
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
-    .line 8
     iget v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
     invoke-virtual {v0, v1}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v1
 
-    .line 9
     iget v2, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
     invoke-virtual {v0, v2}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v2
 
-    .line 10
     iget v3, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
     invoke-virtual {p1, v3}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v3
 
-    .line 11
     iget v4, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->findPointerIndex(I)I
@@ -373,43 +332,35 @@
 
     goto :goto_0
 
-    .line 12
     :cond_1
     invoke-virtual {v0, v1}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v5
 
-    .line 13
     invoke-virtual {v0, v1}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v6
 
-    .line 14
     invoke-virtual {v0, v2}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v7
 
-    .line 15
     invoke-virtual {v0, v2}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v8
 
-    .line 16
     invoke-virtual {p1, v3}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v9
 
-    .line 17
     invoke-virtual {p1, v3}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v10
 
-    .line 18
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v11
 
-    .line 19
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v12
@@ -422,16 +373,12 @@
 
     sub-float/2addr v12, v10
 
-    .line 20
     iput v7, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevFingerDiffX:F
 
-    .line 21
     iput v8, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevFingerDiffY:F
 
-    .line 22
     iput v11, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrFingerDiffX:F
 
-    .line 23
     iput v12, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrFingerDiffY:F
 
     const/high16 v5, 0x3f000000    # 0.5f
@@ -440,17 +387,14 @@
 
     add-float/2addr v9, v11
 
-    .line 24
     iput v9, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusX:F
 
     mul-float v12, v12, v5
 
     add-float/2addr v10, v12
 
-    .line 25
     iput v10, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusY:F
 
-    .line 26
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getEventTime()J
 
     move-result-wide v5
@@ -463,12 +407,10 @@
 
     iput-wide v5, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mTimeDelta:J
 
-    .line 27
     invoke-virtual {p1, v3}, Landroid/view/MotionEvent;->getPressure(I)F
 
     move-result v3
 
-    .line 28
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->getPressure(I)F
 
     move-result p1
@@ -477,12 +419,10 @@
 
     iput v3, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrPressure:F
 
-    .line 29
     invoke-virtual {v0, v1}, Landroid/view/MotionEvent;->getPressure(I)F
 
     move-result p1
 
-    .line 30
     invoke-virtual {v0, v2}, Landroid/view/MotionEvent;->getPressure(I)F
 
     move-result v0
@@ -497,15 +437,12 @@
     :goto_0
     const/4 p1, 0x1
 
-    .line 31
     iput-boolean p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mInvalidGesture:Z
 
-    .line 32
     iget-boolean p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mGestureInProgress:Z
 
     if-eqz p1, :cond_3
 
-    .line 33
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {p1, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleEnd(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)V
@@ -519,7 +456,6 @@
 .method public getCurrentSpan()F
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrLen:F
 
     const/high16 v1, -0x40800000    # -1.0f
@@ -528,10 +464,8 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrFingerDiffX:F
 
-    .line 3
     iget v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrFingerDiffY:F
 
     mul-float v0, v0, v0
@@ -542,7 +476,6 @@
 
     float-to-double v0, v0
 
-    .line 4
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
@@ -551,7 +484,6 @@
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrLen:F
 
-    .line 5
     :cond_0
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrLen:F
 
@@ -561,7 +493,6 @@
 .method public getCurrentSpanX()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrFingerDiffX:F
 
     return v0
@@ -570,7 +501,6 @@
 .method public getCurrentSpanY()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrFingerDiffY:F
 
     return v0
@@ -579,7 +509,6 @@
 .method public getEvent()Landroid/view/MotionEvent;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrEvent:Landroid/view/MotionEvent;
 
     return-object v0
@@ -588,7 +517,6 @@
 .method public getEventTime()J
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrEvent:Landroid/view/MotionEvent;
 
     invoke-virtual {v0}, Landroid/view/MotionEvent;->getEventTime()J
@@ -601,7 +529,6 @@
 .method public getFocusX()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusX:F
 
     return v0
@@ -610,7 +537,6 @@
 .method public getFocusY()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusY:F
 
     return v0
@@ -619,7 +545,6 @@
 .method public getPreviousSpan()F
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevLen:F
 
     const/high16 v1, -0x40800000    # -1.0f
@@ -628,10 +553,8 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevFingerDiffX:F
 
-    .line 3
     iget v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevFingerDiffY:F
 
     mul-float v0, v0, v0
@@ -642,7 +565,6 @@
 
     float-to-double v0, v0
 
-    .line 4
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
@@ -651,7 +573,6 @@
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevLen:F
 
-    .line 5
     :cond_0
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevLen:F
 
@@ -661,7 +582,6 @@
 .method public getPreviousSpanX()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevFingerDiffX:F
 
     return v0
@@ -670,7 +590,6 @@
 .method public getPreviousSpanY()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevFingerDiffY:F
 
     return v0
@@ -679,7 +598,6 @@
 .method public getScaleFactor()F
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mScaleFactor:F
 
     const/high16 v1, -0x40800000    # -1.0f
@@ -688,7 +606,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getCurrentSpan()F
 
     move-result v0
@@ -701,7 +618,6 @@
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mScaleFactor:F
 
-    .line 3
     :cond_0
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mScaleFactor:F
 
@@ -711,7 +627,6 @@
 .method public getTimeDelta()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mTimeDelta:J
 
     return-wide v0
@@ -720,7 +635,6 @@
 .method public isInProgress()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mGestureInProgress:Z
 
     return v0
@@ -729,7 +643,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 13
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
@@ -738,10 +651,8 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->reset()V
 
-    .line 3
     :cond_0
     iget-boolean v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mInvalidGesture:Z
 
@@ -753,7 +664,6 @@
 
     goto/16 :goto_12
 
-    .line 4
     :cond_1
     iget-boolean v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mGestureInProgress:Z
 
@@ -783,23 +693,19 @@
 
     goto/16 :goto_11
 
-    .line 5
     :cond_2
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mSloppyGesture:Z
 
     if-eqz v0, :cond_34
 
-    .line 6
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v0
 
-    .line 7
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-lt v1, v7, :cond_3
 
-    .line 8
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionIndex()I
 
     move-result v1
@@ -809,7 +715,6 @@
     :cond_3
     const/4 v1, 0x0
 
-    .line 9
     :goto_0
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getPointerId(I)I
 
@@ -817,12 +722,10 @@
 
     if-le v0, v8, :cond_5
 
-    .line 10
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
     if-ne v4, v0, :cond_4
 
-    .line 11
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
     invoke-direct {p0, p1, v0, v1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->findNewActiveIndex(Landroid/view/MotionEvent;II)I
@@ -831,7 +734,6 @@
 
     if-ltz v0, :cond_34
 
-    .line 12
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result p1
@@ -840,20 +742,17 @@
 
     goto/16 :goto_11
 
-    .line 13
     :cond_4
     iget v2, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
     if-ne v4, v2, :cond_34
 
-    .line 14
     invoke-direct {p0, p1, v0, v1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->findNewActiveIndex(Landroid/view/MotionEvent;II)I
 
     move-result v0
 
     if-ltz v0, :cond_34
 
-    .line 15
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result p1
@@ -862,7 +761,6 @@
 
     goto/16 :goto_11
 
-    .line 16
     :cond_5
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
@@ -870,7 +768,6 @@
 
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
-    .line 17
     :cond_6
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
@@ -878,15 +775,12 @@
 
     if-gez v0, :cond_8
 
-    .line 18
     iput-boolean v3, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mInvalidGesture:Z
 
-    .line 19
     iget-boolean p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mGestureInProgress:Z
 
     if-eqz p1, :cond_7
 
-    .line 20
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {p1, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleEnd(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)V
@@ -894,7 +788,6 @@
     :cond_7
     return v2
 
-    .line 21
     :cond_8
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
@@ -902,20 +795,16 @@
 
     iput v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
-    .line 22
     iput-boolean v3, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActive0MostRecent:Z
 
-    .line 23
     iput v6, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
-    .line 24
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v1
 
     iput v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusX:F
 
-    .line 25
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result p1
@@ -924,7 +813,6 @@
 
     goto/16 :goto_11
 
-    .line 26
     :cond_9
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mContext:Landroid/content/Context;
 
@@ -932,12 +820,10 @@
 
     move-result-object v0
 
-    .line 27
     invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
     move-result-object v0
 
-    .line 28
     iget v4, v0, Landroid/util/DisplayMetrics;->widthPixels:I
 
     int-to-float v4, v4
@@ -948,7 +834,6 @@
 
     iput v4, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mRightSlopEdge:F
 
-    .line 29
     iget v0, v0, Landroid/util/DisplayMetrics;->heightPixels:I
 
     int-to-float v0, v0
@@ -957,15 +842,12 @@
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mBottomSlopEdge:F
 
-    .line 30
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
     if-eqz v0, :cond_a
 
-    .line 31
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
-    .line 32
     :cond_a
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
@@ -975,27 +857,22 @@
 
     const-wide/16 v4, 0x0
 
-    .line 33
     iput-wide v4, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mTimeDelta:J
 
-    .line 34
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-lt v0, v7, :cond_d
 
-    .line 35
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionIndex()I
 
     move-result v0
 
-    .line 36
     iget v4, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v4
 
-    .line 37
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v5
@@ -1011,7 +888,6 @@
 
     goto :goto_1
 
-    .line 38
     :cond_c
     iget v6, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
@@ -1020,7 +896,6 @@
 
     move-result v4
 
-    .line 39
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v5
@@ -1029,7 +904,6 @@
 
     goto :goto_2
 
-    .line 40
     :cond_d
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -1037,19 +911,16 @@
 
     if-lez v0, :cond_e
 
-    .line 41
     invoke-virtual {p1, v3}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v0
 
-    .line 42
     iget v4, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v4
 
-    .line 43
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v5
@@ -1063,39 +934,30 @@
 
     const/4 v4, 0x0
 
-    .line 44
     :cond_f
     :goto_2
     iput-boolean v2, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActive0MostRecent:Z
 
-    .line 45
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->setContext(Landroid/view/MotionEvent;)V
 
-    .line 46
     iget v5, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mEdgeSlop:F
 
-    .line 47
     iget v6, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mRightSlopEdge:F
 
-    .line 48
     iget v7, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mBottomSlopEdge:F
 
-    .line 49
     invoke-static {p1, v4}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawX(Landroid/view/MotionEvent;I)F
 
     move-result v8
 
-    .line 50
     invoke-static {p1, v4}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawY(Landroid/view/MotionEvent;I)F
 
     move-result v9
 
-    .line 51
     invoke-static {p1, v0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawX(Landroid/view/MotionEvent;I)F
 
     move-result v10
 
-    .line 52
     invoke-static {p1, v0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawY(Landroid/view/MotionEvent;I)F
 
     move-result v11
@@ -1160,13 +1022,10 @@
 
     if-eqz v5, :cond_14
 
-    .line 53
     iput v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusX:F
 
-    .line 54
     iput v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusY:F
 
-    .line 55
     iput-boolean v3, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mSloppyGesture:Z
 
     goto/16 :goto_11
@@ -1174,21 +1033,18 @@
     :cond_14
     if-eqz v8, :cond_15
 
-    .line 56
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v1
 
     iput v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusX:F
 
-    .line 57
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result p1
 
     iput p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusY:F
 
-    .line 58
     iput-boolean v3, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mSloppyGesture:Z
 
     goto/16 :goto_11
@@ -1196,30 +1052,25 @@
     :cond_15
     if-eqz v5, :cond_16
 
-    .line 59
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v0
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusX:F
 
-    .line 60
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result p1
 
     iput p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusY:F
 
-    .line 61
     iput-boolean v3, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mSloppyGesture:Z
 
     goto/16 :goto_11
 
-    .line 62
     :cond_16
     iput-boolean v2, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mSloppyGesture:Z
 
-    .line 63
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {p1, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleBegin(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)Z
@@ -1230,51 +1081,41 @@
 
     goto/16 :goto_11
 
-    .line 64
     :cond_17
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mSloppyGesture:Z
 
     if-eqz v0, :cond_34
 
-    .line 65
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mEdgeSlop:F
 
-    .line 66
     iget v4, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mRightSlopEdge:F
 
-    .line 67
     iget v5, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mBottomSlopEdge:F
 
-    .line 68
     iget v6, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
     invoke-virtual {p1, v6}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v6
 
-    .line 69
     iget v7, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
     invoke-virtual {p1, v7}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v7
 
-    .line 70
     invoke-static {p1, v6}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawX(Landroid/view/MotionEvent;I)F
 
     move-result v8
 
-    .line 71
     invoke-static {p1, v6}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawY(Landroid/view/MotionEvent;I)F
 
     move-result v9
 
-    .line 72
     invoke-static {p1, v7}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawX(Landroid/view/MotionEvent;I)F
 
     move-result v10
 
-    .line 73
     invoke-static {p1, v7}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawY(Landroid/view/MotionEvent;I)F
 
     move-result v11
@@ -1337,7 +1178,6 @@
     :goto_a
     if-eqz v8, :cond_1c
 
-    .line 74
     iget v4, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
     invoke-direct {p0, p1, v4, v6}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->findNewActiveIndex(Landroid/view/MotionEvent;II)I
@@ -1346,17 +1186,14 @@
 
     if-ltz v4, :cond_1c
 
-    .line 75
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v5
 
     iput v5, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
-    .line 76
     invoke-static {p1, v4}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawX(Landroid/view/MotionEvent;I)F
 
-    .line 77
     invoke-static {p1, v4}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawY(Landroid/view/MotionEvent;I)F
 
     move v6, v4
@@ -1366,7 +1203,6 @@
     :cond_1c
     if-eqz v0, :cond_1d
 
-    .line 78
     iget v4, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
     invoke-direct {p0, p1, v4, v7}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->findNewActiveIndex(Landroid/view/MotionEvent;II)I
@@ -1375,17 +1211,14 @@
 
     if-ltz v4, :cond_1d
 
-    .line 79
     invoke-virtual {p1, v4}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
-    .line 80
     invoke-static {p1, v4}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawX(Landroid/view/MotionEvent;I)F
 
-    .line 81
     invoke-static {p1, v4}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getRawY(Landroid/view/MotionEvent;I)F
 
     move v7, v4
@@ -1397,10 +1230,8 @@
 
     if-eqz v0, :cond_1e
 
-    .line 82
     iput v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusX:F
 
-    .line 83
     iput v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusY:F
 
     goto/16 :goto_11
@@ -1408,14 +1239,12 @@
     :cond_1e
     if-eqz v8, :cond_1f
 
-    .line 84
     invoke-virtual {p1, v7}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v0
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusX:F
 
-    .line 85
     invoke-virtual {p1, v7}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result p1
@@ -1427,14 +1256,12 @@
     :cond_1f
     if-eqz v0, :cond_20
 
-    .line 86
     invoke-virtual {p1, v6}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v0
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusX:F
 
-    .line 87
     invoke-virtual {p1, v6}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result p1
@@ -1443,11 +1270,9 @@
 
     goto/16 :goto_11
 
-    .line 88
     :cond_20
     iput-boolean v2, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mSloppyGesture:Z
 
-    .line 89
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {p1, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleBegin(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)Z
@@ -1458,13 +1283,11 @@
 
     goto/16 :goto_11
 
-    .line 90
     :cond_21
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->reset()V
 
     goto/16 :goto_11
 
-    .line 91
     :cond_22
     invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getPointerId(I)I
 
@@ -1472,7 +1295,6 @@
 
     iput p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
-    .line 92
     iput-boolean v3, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActive0MostRecent:Z
 
     goto/16 :goto_11
@@ -1492,18 +1314,15 @@
 
     goto/16 :goto_11
 
-    .line 93
     :cond_24
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v0
 
-    .line 94
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-lt v1, v7, :cond_25
 
-    .line 95
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionIndex()I
 
     move-result v1
@@ -1513,7 +1332,6 @@
     :cond_25
     const/4 v1, 0x0
 
-    .line 96
     :goto_b
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getPointerId(I)I
 
@@ -1521,12 +1339,10 @@
 
     if-le v0, v8, :cond_29
 
-    .line 97
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
     if-ne v4, v0, :cond_27
 
-    .line 98
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
     invoke-direct {p0, p1, v0, v1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->findNewActiveIndex(Landroid/view/MotionEvent;II)I
@@ -1535,32 +1351,26 @@
 
     if-ltz v0, :cond_26
 
-    .line 99
     iget-object v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {v1, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleEnd(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)V
 
-    .line 100
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
-    .line 101
     iput-boolean v3, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActive0MostRecent:Z
 
-    .line 102
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
-    .line 103
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->setContext(Landroid/view/MotionEvent;)V
 
-    .line 104
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {v0, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleBegin(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)Z
@@ -1576,45 +1386,37 @@
 
     goto :goto_c
 
-    .line 105
     :cond_27
     iget v5, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
     if-ne v4, v5, :cond_28
 
-    .line 106
     invoke-direct {p0, p1, v0, v1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->findNewActiveIndex(Landroid/view/MotionEvent;II)I
 
     move-result v0
 
     if-ltz v0, :cond_26
 
-    .line 107
     iget-object v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {v1, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleEnd(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)V
 
-    .line 108
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
-    .line 109
     iput-boolean v2, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActive0MostRecent:Z
 
-    .line 110
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
-    .line 111
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->setContext(Landroid/view/MotionEvent;)V
 
-    .line 112
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {v0, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleBegin(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)Z
@@ -1623,21 +1425,18 @@
 
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mGestureInProgress:Z
 
-    .line 113
     :cond_28
     :goto_c
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
-    .line 114
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
-    .line 115
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->setContext(Landroid/view/MotionEvent;)V
 
     goto :goto_d
@@ -1648,75 +1447,60 @@
     :goto_d
     if-eqz v2, :cond_34
 
-    .line 116
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->setContext(Landroid/view/MotionEvent;)V
 
-    .line 117
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
     if-ne v4, v0, :cond_2a
 
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
-    .line 118
     :cond_2a
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->findPointerIndex(I)I
 
     move-result v1
 
-    .line 119
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v2
 
     iput v2, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusX:F
 
-    .line 120
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result p1
 
     iput p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mFocusY:F
 
-    .line 121
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {p1, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleEnd(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)V
 
-    .line 122
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->reset()V
 
-    .line 123
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
-    .line 124
     iput-boolean v3, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActive0MostRecent:Z
 
     goto/16 :goto_11
 
-    .line 125
     :cond_2b
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {v0, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleEnd(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)V
 
-    .line 126
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
-    .line 127
     iget v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
-    .line 128
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->reset()V
 
-    .line 129
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object v4
 
     iput-object v4, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
-    .line 130
     iget-boolean v4, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActive0MostRecent:Z
 
     if-eqz v4, :cond_2c
@@ -1729,12 +1513,10 @@
     :goto_e
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
-    .line 131
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-lt v0, v7, :cond_2d
 
-    .line 132
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionIndex()I
 
     move-result v0
@@ -1747,7 +1529,6 @@
 
     goto :goto_f
 
-    .line 133
     :cond_2d
     invoke-virtual {p1, v3}, Landroid/view/MotionEvent;->getPointerId(I)I
 
@@ -1755,11 +1536,9 @@
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
-    .line 134
     :goto_f
     iput-boolean v2, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActive0MostRecent:Z
 
-    .line 135
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->findPointerIndex(I)I
@@ -1768,14 +1547,12 @@
 
     if-ltz v0, :cond_2e
 
-    .line 136
     iget v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
     iget v2, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId1:I
 
     if-ne v1, v2, :cond_30
 
-    .line 137
     :cond_2e
     iget v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
@@ -1793,18 +1570,15 @@
 
     move-result v0
 
-    .line 138
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getPointerId(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mActiveId0:I
 
-    .line 139
     :cond_30
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->setContext(Landroid/view/MotionEvent;)V
 
-    .line 140
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {p1, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleBegin(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)Z
@@ -1815,22 +1589,18 @@
 
     goto :goto_11
 
-    .line 141
     :cond_31
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {p1, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScaleEnd(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)V
 
-    .line 142
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->reset()V
 
     goto :goto_11
 
-    .line 143
     :cond_32
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->setContext(Landroid/view/MotionEvent;)V
 
-    .line 144
     iget v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mCurrPressure:F
 
     iget v1, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevPressure:F
@@ -1843,7 +1613,6 @@
 
     if-lez v0, :cond_34
 
-    .line 145
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 
     invoke-interface {v0, p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;->onScale(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)Z
@@ -1852,12 +1621,10 @@
 
     if-eqz v0, :cond_34
 
-    .line 146
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
-    .line 147
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object p1
@@ -1866,7 +1633,6 @@
 
     goto :goto_11
 
-    .line 148
     :cond_33
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->reset()V
 

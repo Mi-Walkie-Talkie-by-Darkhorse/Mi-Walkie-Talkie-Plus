@@ -1,6 +1,5 @@
 .class public Lno/nordicsemi/android/ble/x2/a;
 .super Ljava/lang/Object;
-.source "ParserUtils.java"
 
 
 # static fields
@@ -13,7 +12,6 @@
 
     const-string v0, "0123456789ABCDEF"
 
-    .line 1
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
     move-result-object v0
@@ -30,7 +28,6 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 10
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -85,14 +82,12 @@
 
     if-eqz p0, :cond_3
 
-    .line 1
     array-length v0, p0
 
     if-nez v0, :cond_0
 
     goto :goto_1
 
-    .line 2
     :cond_0
     array-length v0, p0
 
@@ -104,20 +99,17 @@
 
     const/4 v1, 0x0
 
-    .line 3
     :goto_0
     array-length v2, p0
 
     if-ge v1, v2, :cond_2
 
-    .line 4
     aget-byte v2, p0, v1
 
     and-int/lit16 v2, v2, 0xff
 
     mul-int/lit8 v3, v1, 0x3
 
-    .line 5
     sget-object v4, Lno/nordicsemi/android/ble/x2/a;->a:[C
 
     ushr-int/lit8 v5, v2, 0x4
@@ -130,12 +122,10 @@
 
     and-int/lit8 v2, v2, 0xf
 
-    .line 6
     aget-char v2, v4, v2
 
     aput-char v2, v0, v5
 
-    .line 7
     array-length v2, p0
 
     add-int/lit8 v2, v2, -0x1
@@ -146,7 +136,6 @@
 
     const/16 v2, 0x2d
 
-    .line 8
     aput-char v2, v0, v3
 
     :cond_1
@@ -154,7 +143,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_2
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -190,7 +178,6 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -275,7 +262,6 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -319,7 +305,6 @@
 
     packed-switch p0, :pswitch_data_0
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -406,7 +391,6 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -462,7 +446,6 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -521,7 +504,6 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

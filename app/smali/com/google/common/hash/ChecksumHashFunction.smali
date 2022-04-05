@@ -1,6 +1,5 @@
 .class final Lcom/google/common/hash/ChecksumHashFunction;
 .super Lcom/google/common/hash/AbstractStreamingHashFunction;
-.source "ChecksumHashFunction.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -50,10 +49,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -88,7 +85,6 @@
     :goto_1
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -99,10 +95,8 @@
 
     invoke-static {v1, p1, v0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 4
     iput p2, p0, Lcom/google/common/hash/ChecksumHashFunction;->bits:I
 
-    .line 5
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -117,7 +111,6 @@
 .method static synthetic access$100(Lcom/google/common/hash/ChecksumHashFunction;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/google/common/hash/ChecksumHashFunction;->bits:I
 
     return p0
@@ -128,7 +121,6 @@
 .method public bits()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/hash/ChecksumHashFunction;->bits:I
 
     return v0
@@ -137,7 +129,6 @@
 .method public newHasher()Lcom/google/common/hash/Hasher;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/google/common/hash/ChecksumHashFunction$ChecksumHasher;
 
     iget-object v1, p0, Lcom/google/common/hash/ChecksumHashFunction;->checksumSupplier:Lcom/google/common/base/Supplier;
@@ -158,7 +149,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/hash/ChecksumHashFunction;->toString:Ljava/lang/String;
 
     return-object v0

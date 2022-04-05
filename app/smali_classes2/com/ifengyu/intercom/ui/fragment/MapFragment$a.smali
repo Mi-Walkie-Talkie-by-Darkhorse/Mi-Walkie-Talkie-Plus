@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;
 .super Ljava/lang/Object;
-.source "MapFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment;IIIF)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iput p2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->a:I
@@ -54,7 +52,6 @@
 .method public run()V
     .locals 7
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->a:I
 
     const v1, 0x7f1100ca
@@ -63,14 +60,12 @@
 
     if-gez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordGpsAccuracy:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->gpsNoAccuracyPrompt:Landroid/widget/TextView;
@@ -90,7 +85,6 @@
 
     if-gt v0, v3, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordGpsAccuracy:Landroid/widget/ImageView;
@@ -99,7 +93,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->gpsNoAccuracyPrompt:Landroid/widget/TextView;
@@ -113,7 +106,6 @@
 
     if-gt v0, v3, :cond_2
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordGpsAccuracy:Landroid/widget/ImageView;
@@ -122,7 +114,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->gpsNoAccuracyPrompt:Landroid/widget/TextView;
@@ -136,7 +127,6 @@
 
     if-gt v0, v3, :cond_3
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordGpsAccuracy:Landroid/widget/ImageView;
@@ -145,7 +135,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->gpsNoAccuracyPrompt:Landroid/widget/TextView;
@@ -159,7 +148,6 @@
 
     if-gt v0, v3, :cond_4
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordGpsAccuracy:Landroid/widget/ImageView;
@@ -168,7 +156,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->gpsNoAccuracyPrompt:Landroid/widget/TextView;
@@ -177,7 +164,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
@@ -185,7 +171,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->gpsNoAccuracyPrompt:Landroid/widget/TextView;
@@ -196,7 +181,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 14
     :goto_0
     sget-object v0, Ljava/util/Locale;->CHINA:Ljava/util/Locale;
 
@@ -248,12 +232,10 @@
 
     move-result-object v0
 
-    .line 15
     new-instance v1, Landroid/text/SpannableString;
 
     invoke-direct {v1, v0}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 16
     new-instance v0, Landroid/text/style/AbsoluteSizeSpan;
 
     const/16 v2, 0xd
@@ -270,21 +252,18 @@
 
     invoke-virtual {v1, v0, v2, v5, v6}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordTiming:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 18
     iget v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->c:I
 
     const/16 v1, 0x3e8
 
     if-ge v0, v1, :cond_5
 
-    .line 19
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v1, v1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordDistance:Landroid/widget/TextView;
@@ -295,7 +274,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 20
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordDistance:Landroid/widget/TextView;
@@ -306,7 +284,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
-    .line 21
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCompressDistance:Landroid/widget/TextView;
@@ -319,7 +296,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 22
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCompressDistance:Landroid/widget/TextView;
@@ -332,7 +308,6 @@
 
     goto :goto_1
 
-    .line 23
     :cond_5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
@@ -366,7 +341,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 24
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordDistance:Landroid/widget/TextView;
@@ -377,7 +351,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
-    .line 25
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCompressDistance:Landroid/widget/TextView;
@@ -406,7 +379,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 26
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCompressDistance:Landroid/widget/TextView;
@@ -417,7 +389,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
-    .line 27
     :goto_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
@@ -431,7 +402,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 28
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordSpeed:Landroid/widget/TextView;
@@ -442,7 +412,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->append(Ljava/lang/CharSequence;)V
 
-    .line 29
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCompressSpeed:Landroid/widget/TextView;
@@ -455,7 +424,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 30
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$a;->e:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->mapTrackRecordCompressSpeed:Landroid/widget/TextView;

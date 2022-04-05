@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout$d;
 .super Ljava/lang/Object;
-.source "QMUIContinuousNestedScrollLayout.java"
 
 
 # annotations

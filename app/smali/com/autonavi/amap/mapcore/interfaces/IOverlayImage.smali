@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IOverlayImage;
 .super Ljava/lang/Object;
-.source "IOverlayImage.java"
 
 
 # virtual methods

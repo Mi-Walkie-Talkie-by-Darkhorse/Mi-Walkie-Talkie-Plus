@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableFromFuture;
 .super Lio/reactivex/Observable;
-.source "ObservableFromFuture.java"
 
 
 # annotations
@@ -43,16 +42,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableFromFuture;->future:Ljava/util/concurrent/Future;
 
-    .line 3
     iput-wide p2, p0, Lio/reactivex/internal/operators/observable/ObservableFromFuture;->timeout:J
 
-    .line 4
     iput-object p4, p0, Lio/reactivex/internal/operators/observable/ObservableFromFuture;->unit:Ljava/util/concurrent/TimeUnit;
 
     return-void
@@ -70,22 +65,18 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/observers/DeferredScalarDisposable;
 
     invoke-direct {v0, p1}, Lio/reactivex/internal/observers/DeferredScalarDisposable;-><init>(Lio/reactivex/Observer;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     invoke-virtual {v0}, Lio/reactivex/internal/observers/DeferredScalarDisposable;->isDisposed()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 4
     :try_start_0
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableFromFuture;->unit:Ljava/util/concurrent/TimeUnit;
 
@@ -119,7 +110,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     invoke-virtual {v0, p1}, Lio/reactivex/internal/observers/DeferredScalarDisposable;->complete(Ljava/lang/Object;)V
 
     goto :goto_1
@@ -127,17 +117,14 @@
     :catchall_0
     move-exception v1
 
-    .line 6
     invoke-static {v1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 7
     invoke-virtual {v0}, Lio/reactivex/internal/observers/DeferredScalarDisposable;->isDisposed()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 8
     invoke-interface {p1, v1}, Lio/reactivex/Observer;->onError(Ljava/lang/Throwable;)V
 
     :cond_1

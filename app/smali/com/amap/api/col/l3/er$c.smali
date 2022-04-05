@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/er$c;
 .super Ljava/lang/Object;
-.source "RectPacker.java"
 
 
 # annotations
@@ -30,21 +29,16 @@
 .method constructor <init>(Lcom/amap/api/col/l3/er;IIII)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/er$c;->e:Lcom/amap/api/col/l3/er;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p2, p0, Lcom/amap/api/col/l3/er$c;->a:I
 
-    .line 3
     iput p3, p0, Lcom/amap/api/col/l3/er$c;->b:I
 
-    .line 4
     iput p4, p0, Lcom/amap/api/col/l3/er$c;->c:I
 
-    .line 5
     iput p5, p0, Lcom/amap/api/col/l3/er$c;->d:I
 
     return-void
@@ -55,7 +49,6 @@
 .method public final toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "[ x: "

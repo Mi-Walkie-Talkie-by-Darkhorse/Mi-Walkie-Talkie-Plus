@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/link/c;
 .super Landroid/text/method/LinkMovementMethod;
-.source "QMUILinkTouchMovementMethod.java"
 
 
 # static fields
@@ -13,7 +12,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/qmuiteam/qmui/link/b;
 
     invoke-direct {v0}, Lcom/qmuiteam/qmui/link/b;-><init>()V
@@ -26,7 +24,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/text/method/LinkMovementMethod;-><init>()V
 
     return-void
@@ -35,19 +32,16 @@
 .method public static getInstance()Landroid/text/method/MovementMethod;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/link/c;->a:Lcom/qmuiteam/qmui/link/c;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/qmuiteam/qmui/link/c;
 
     invoke-direct {v0}, Lcom/qmuiteam/qmui/link/c;-><init>()V
 
     sput-object v0, Lcom/qmuiteam/qmui/link/c;->a:Lcom/qmuiteam/qmui/link/c;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/qmuiteam/qmui/link/c;->a:Lcom/qmuiteam/qmui/link/c;
 
@@ -59,7 +53,6 @@
 .method public onTouchEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/link/c;->b:Lcom/qmuiteam/qmui/link/b;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/qmuiteam/qmui/link/b;->b(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
@@ -68,7 +61,6 @@
 
     if-nez v0, :cond_1
 
-    .line 2
     invoke-static {p1, p2, p3}, Landroid/text/method/Touch;->onTouchEvent(Landroid/widget/TextView;Landroid/text/Spannable;Landroid/view/MotionEvent;)Z
 
     move-result p1

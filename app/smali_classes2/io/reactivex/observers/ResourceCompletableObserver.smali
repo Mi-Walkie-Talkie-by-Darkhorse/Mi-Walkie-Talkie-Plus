@@ -1,6 +1,5 @@
 .class public abstract Lio/reactivex/observers/ResourceCompletableObserver;
 .super Ljava/lang/Object;
-.source "ResourceCompletableObserver.java"
 
 # interfaces
 .implements Lio/reactivex/CompletableObserver;
@@ -25,17 +24,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     iput-object v0, p0, Lio/reactivex/observers/ResourceCompletableObserver;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 3
     new-instance v0, Lio/reactivex/internal/disposables/ListCompositeDisposable;
 
     invoke-direct {v0}, Lio/reactivex/internal/disposables/ListCompositeDisposable;-><init>()V
@@ -56,10 +52,8 @@
 
     const-string v0, "resource is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/observers/ResourceCompletableObserver;->resources:Lio/reactivex/internal/disposables/ListCompositeDisposable;
 
     invoke-virtual {v0, p1}, Lio/reactivex/internal/disposables/ListCompositeDisposable;->add(Lio/reactivex/disposables/Disposable;)Z
@@ -70,7 +64,6 @@
 .method public final dispose()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/ResourceCompletableObserver;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-static {v0}, Lio/reactivex/internal/disposables/DisposableHelper;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
@@ -79,7 +72,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/observers/ResourceCompletableObserver;->resources:Lio/reactivex/internal/disposables/ListCompositeDisposable;
 
     invoke-virtual {v0}, Lio/reactivex/internal/disposables/ListCompositeDisposable;->dispose()V
@@ -91,7 +83,6 @@
 .method public final isDisposed()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/ResourceCompletableObserver;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -120,7 +111,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/ResourceCompletableObserver;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     const-class v1, Lio/reactivex/observers/ResourceCompletableObserver;
@@ -131,7 +121,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lio/reactivex/observers/ResourceCompletableObserver;->onStart()V
 
     :cond_0

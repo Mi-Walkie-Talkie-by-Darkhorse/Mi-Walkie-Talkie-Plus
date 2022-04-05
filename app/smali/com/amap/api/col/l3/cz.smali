@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/cz;
 .super Ljava/lang/Object;
-.source "NavigateArrowDelegateImp.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/cq;
@@ -66,33 +65,26 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/u;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/high16 v0, 0x41200000    # 10.0f
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/cz;->m:F
 
     const/high16 v0, -0x1000000
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/cz;->n:I
 
-    .line 4
     iput v0, p0, Lcom/amap/api/col/l3/cz;->o:I
 
     const/4 v0, 0x0
 
-    .line 5
     iput v0, p0, Lcom/amap/api/col/l3/cz;->p:F
 
     const/4 v0, 0x1
 
-    .line 6
     iput-boolean v0, p0, Lcom/amap/api/col/l3/cz;->q:Z
 
-    .line 7
     new-instance v0, Ljava/util/Vector;
 
     invoke-direct {v0}, Ljava/util/Vector;-><init>()V
@@ -101,13 +93,10 @@
 
     const/4 v0, 0x0
 
-    .line 8
     iput v0, p0, Lcom/amap/api/col/l3/cz;->t:I
 
-    .line 9
     iput-boolean v0, p0, Lcom/amap/api/col/l3/cz;->u:Z
 
-    .line 10
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
@@ -116,19 +105,14 @@
 
     const/4 v1, 0x0
 
-    .line 11
     iput-object v1, p0, Lcom/amap/api/col/l3/cz;->w:Lcom/amap/api/maps/model/LatLngBounds;
 
-    .line 12
     iput-object v1, p0, Lcom/amap/api/col/l3/cz;->i:Landroid/graphics/Rect;
 
-    .line 13
     iput v0, p0, Lcom/amap/api/col/l3/cz;->k:I
 
-    .line 14
     iput-object p1, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
-    .line 15
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/col/l3/cz;->getId()Ljava/lang/String;
 
@@ -147,10 +131,8 @@
 
     const-string v1, "create"
 
-    .line 16
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 17
     invoke-virtual {p1}, Landroid/os/RemoteException;->printStackTrace()V
 
     return-void
@@ -164,35 +146,29 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->v:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 5
     :try_start_0
     invoke-virtual {p1}, Lcom/autonavi/amap/mapcore/MapConfig;->getS_x()I
 
     move-result v1
 
-    .line 6
     invoke-virtual {p1}, Lcom/autonavi/amap/mapcore/MapConfig;->getS_y()I
 
     move-result p1
 
     const/4 v2, 0x0
 
-    .line 7
     iput-boolean v2, p0, Lcom/amap/api/col/l3/cz;->u:Z
 
-    .line 8
     iget-object v3, p0, Lcom/amap/api/col/l3/cz;->s:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v3
 
-    .line 9
     iget-object v4, p0, Lcom/amap/api/col/l3/cz;->j:[F
 
     if-eqz v4, :cond_0
@@ -208,7 +184,6 @@
     :cond_0
     mul-int/lit8 v4, v3, 0x3
 
-    .line 10
     new-array v4, v4, [F
 
     iput-object v4, p0, Lcom/amap/api/col/l3/cz;->j:[F
@@ -216,10 +191,8 @@
     :cond_1
     mul-int/lit8 v3, v3, 0x3
 
-    .line 11
     iput v3, p0, Lcom/amap/api/col/l3/cz;->k:I
 
-    .line 12
     iget-object v3, p0, Lcom/amap/api/col/l3/cz;->s:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -239,7 +212,6 @@
 
     check-cast v4, Lcom/autonavi/amap/mapcore/IPoint;
 
-    .line 13
     iget-object v5, p0, Lcom/amap/api/col/l3/cz;->j:[F
 
     mul-int/lit8 v6, v2, 0x3
@@ -252,7 +224,6 @@
 
     aput v7, v5, v6
 
-    .line 14
     iget-object v5, p0, Lcom/amap/api/col/l3/cz;->j:[F
 
     add-int/lit8 v7, v6, 0x1
@@ -265,7 +236,6 @@
 
     aput v4, v5, v7
 
-    .line 15
     iget-object v4, p0, Lcom/amap/api/col/l3/cz;->j:[F
 
     add-int/lit8 v6, v6, 0x2
@@ -278,7 +248,6 @@
 
     goto :goto_0
 
-    .line 16
     :cond_2
     iget-object p1, p0, Lcom/amap/api/col/l3/cz;->s:Ljava/util/List;
 
@@ -288,7 +257,6 @@
 
     iput p1, p0, Lcom/amap/api/col/l3/cz;->t:I
 
-    .line 17
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -322,23 +290,19 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->s:Ljava/util/List;
 
     if-eqz v0, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->v:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 4
     iget-object v2, p0, Lcom/amap/api/col/l3/cz;->s:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -361,12 +325,10 @@
 
     if-eqz v3, :cond_0
 
-    .line 5
     invoke-static {}, Lcom/autonavi/amap/mapcore/DPoint;->obtain()Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object v4
 
-    .line 6
     iget-object v5, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     iget v6, v3, Landroid/graphics/Point;->x:I
@@ -375,7 +337,6 @@
 
     invoke-interface {v5, v6, v3, v4}, Lcom/amap/api/col/l3/u;->a(IILcom/autonavi/amap/mapcore/DPoint;)V
 
-    .line 7
     new-instance v3, Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v5, v4, Lcom/autonavi/amap/mapcore/DPoint;->y:D
@@ -386,12 +347,10 @@
 
     invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 8
     invoke-virtual {v4}, Lcom/autonavi/amap/mapcore/DPoint;->recycle()V
 
     goto :goto_0
 
-    .line 9
     :cond_1
     monitor-exit v0
     :try_end_0
@@ -402,7 +361,6 @@
     :catchall_0
     move-exception v1
 
-    .line 10
     monitor-exit v0
 
     throw v1
@@ -418,14 +376,12 @@
 .method public final a()Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->i:Landroid/graphics/Rect;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapConfig()Lcom/autonavi/amap/mapcore/MapConfig;
@@ -438,7 +394,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v2, p0, Lcom/amap/api/col/l3/cz;->i:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v2}, Lcom/autonavi/amap/mapcore/Rectangle;->isOverlap(Landroid/graphics/Rect;)Z
@@ -463,7 +418,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->s:Ljava/util/List;
 
     if-eqz v0, :cond_2
@@ -484,7 +438,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
@@ -494,7 +447,6 @@
 
     invoke-direct {p0, v0}, Lcom/amap/api/col/l3/cz;->a(Lcom/autonavi/amap/mapcore/MapConfig;)Z
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->j:[F
 
     if-eqz v0, :cond_1
@@ -503,7 +455,6 @@
 
     if-lez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0}, Lcom/amap/api/col/l3/u;->d()Lcom/autonavi/ae/gmap/GLMapState;
@@ -518,14 +469,12 @@
 
     move-result v4
 
-    .line 5
     iget-object v2, p0, Lcom/amap/api/col/l3/cz;->j:[F
 
     iget v3, p0, Lcom/amap/api/col/l3/cz;->k:I
 
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
-    .line 6
     invoke-interface {v0}, Lcom/amap/api/col/l3/u;->e()I
 
     move-result v5
@@ -548,18 +497,15 @@
 
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
-    .line 7
     invoke-interface {v0}, Lcom/amap/api/col/l3/u;->v()[F
 
     move-result-object v14
 
-    .line 8
     invoke-static/range {v2 .. v14}, Lcom/autonavi/amap/mapcore/AMapNativeRenderer;->nativeDrawLineByTextureID([FIFIFFFFFZZZ[F)V
 
     :cond_1
     const/4 v0, 0x1
 
-    .line 9
     iput-boolean v0, p0, Lcom/amap/api/col/l3/cz;->u:Z
 
     :cond_2
@@ -570,7 +516,6 @@
 .method public final c()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/cz;->u:Z
 
     return v0
@@ -579,7 +524,6 @@
 .method public final destroy()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->j:[F
 
@@ -587,7 +531,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/cz;->j:[F
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -602,10 +545,8 @@
 
     const-string v2, "destroy"
 
-    .line 3
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -619,14 +560,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 2
     invoke-interface {p1}, Lcom/autonavi/amap/mapcore/interfaces/IOverlay;->getId()Ljava/lang/String;
 
     move-result-object p1
@@ -663,12 +602,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->r:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     const-string v1, "NavigateArrow"
@@ -679,7 +616,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/cz;->r:Ljava/lang/String;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->r:Ljava/lang/String;
 
@@ -703,7 +639,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/cz;->d()Ljava/util/List;
 
     move-result-object v0
@@ -719,7 +654,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/cz;->o:I
 
     return v0
@@ -733,7 +667,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/cz;->n:I
 
     return v0
@@ -747,7 +680,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/cz;->m:F
 
     return v0
@@ -761,7 +693,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/cz;->p:F
 
     return v0
@@ -775,7 +706,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
@@ -799,7 +729,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/cz;->q:Z
 
     return v0
@@ -813,7 +742,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     invoke-virtual {p0}, Lcom/amap/api/col/l3/cz;->getId()Ljava/lang/String;
@@ -822,7 +750,6 @@
 
     invoke-interface {v0, v1}, Lcom/amap/api/col/l3/u;->a(Ljava/lang/String;)Z
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     const/4 v1, 0x0
@@ -855,7 +782,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/cz;->v:Ljava/lang/Object;
 
     monitor-enter v0
@@ -975,10 +901,8 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/cz;->o:I
 
-    .line 2
     invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v0
@@ -991,7 +915,6 @@
 
     iput v0, p0, Lcom/amap/api/col/l3/cz;->e:F
 
-    .line 3
     invoke-static {p1}, Landroid/graphics/Color;->red(I)I
 
     move-result v0
@@ -1002,7 +925,6 @@
 
     iput v0, p0, Lcom/amap/api/col/l3/cz;->f:F
 
-    .line 4
     invoke-static {p1}, Landroid/graphics/Color;->green(I)I
 
     move-result v0
@@ -1013,7 +935,6 @@
 
     iput v0, p0, Lcom/amap/api/col/l3/cz;->g:F
 
-    .line 5
     invoke-static {p1}, Landroid/graphics/Color;->blue(I)I
 
     move-result p1
@@ -1024,7 +945,6 @@
 
     iput p1, p0, Lcom/amap/api/col/l3/cz;->h:F
 
-    .line 6
     iget-object p1, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     const/4 v0, 0x0
@@ -1042,10 +962,8 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/cz;->n:I
 
-    .line 2
     invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v0
@@ -1058,7 +976,6 @@
 
     iput v0, p0, Lcom/amap/api/col/l3/cz;->a:F
 
-    .line 3
     invoke-static {p1}, Landroid/graphics/Color;->red(I)I
 
     move-result v0
@@ -1069,7 +986,6 @@
 
     iput v0, p0, Lcom/amap/api/col/l3/cz;->b:F
 
-    .line 4
     invoke-static {p1}, Landroid/graphics/Color;->green(I)I
 
     move-result v0
@@ -1080,7 +996,6 @@
 
     iput v0, p0, Lcom/amap/api/col/l3/cz;->c:F
 
-    .line 5
     invoke-static {p1}, Landroid/graphics/Color;->blue(I)I
 
     move-result p1
@@ -1091,7 +1006,6 @@
 
     iput p1, p0, Lcom/amap/api/col/l3/cz;->d:F
 
-    .line 6
     iget-object p1, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     const/4 v0, 0x0
@@ -1109,10 +1023,8 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/cz;->q:Z
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     const/4 v0, 0x0
@@ -1130,10 +1042,8 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/cz;->m:F
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     const/4 v0, 0x0
@@ -1151,15 +1061,12 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/cz;->p:F
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     invoke-interface {p1}, Lcom/amap/api/col/l3/u;->g()V
 
-    .line 3
     iget-object p1, p0, Lcom/amap/api/col/l3/cz;->l:Lcom/amap/api/col/l3/u;
 
     const/4 v0, 0x0

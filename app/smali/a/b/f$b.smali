@@ -1,6 +1,5 @@
 .class final La/b/f$b;
 .super Ljava/lang/Object;
-.source "MapCollections.java"
 
 # interfaces
 .implements Ljava/util/Set;
@@ -34,7 +33,6 @@
 .method constructor <init>(La/b/f;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, La/b/f$b;->a:La/b/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -54,7 +52,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -65,7 +62,6 @@
 .method public bridge synthetic add(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/util/Map$Entry;
 
     invoke-virtual {p0, p1}, La/b/f$b;->a(Ljava/util/Map$Entry;)Z
@@ -87,14 +83,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/b/f$b;->a:La/b/f;
 
     invoke-virtual {v0}, La/b/f;->c()I
 
     move-result v0
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -112,7 +106,6 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 3
     iget-object v2, p0, La/b/f$b;->a:La/b/f;
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -127,7 +120,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object p1, p0, La/b/f$b;->a:La/b/f;
 
@@ -151,7 +143,6 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/f$b;->a:La/b/f;
 
     invoke-virtual {v0}, La/b/f;->a()V
@@ -162,7 +153,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 1
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
@@ -171,11 +161,9 @@
 
     return v1
 
-    .line 2
     :cond_0
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 3
     iget-object v0, p0, La/b/f$b;->a:La/b/f;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -190,7 +178,6 @@
 
     return v1
 
-    .line 4
     :cond_1
     iget-object v1, p0, La/b/f$b;->a:La/b/f;
 
@@ -200,7 +187,6 @@
 
     move-result-object v0
 
-    .line 5
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -222,12 +208,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 2
     :cond_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -235,7 +219,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -259,7 +242,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, La/b/f;->a(Ljava/util/Set;Ljava/lang/Object;)Z
 
     move-result p1
@@ -270,7 +252,6 @@
 .method public hashCode()I
     .locals 6
 
-    .line 1
     iget-object v0, p0, La/b/f$b;->a:La/b/f;
 
     invoke-virtual {v0}, La/b/f;->c()I
@@ -288,14 +269,12 @@
     :goto_0
     if-ltz v0, :cond_2
 
-    .line 2
     iget-object v4, p0, La/b/f$b;->a:La/b/f;
 
     invoke-virtual {v4, v0, v2}, La/b/f;->a(II)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 3
     iget-object v5, p0, La/b/f$b;->a:La/b/f;
 
     invoke-virtual {v5, v0, v1}, La/b/f;->a(II)Ljava/lang/Object;
@@ -308,7 +287,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_0
     invoke-virtual {v4}, Ljava/lang/Object;->hashCode()I
 
@@ -321,7 +299,6 @@
 
     goto :goto_2
 
-    .line 5
     :cond_1
     invoke-virtual {v5}, Ljava/lang/Object;->hashCode()I
 
@@ -343,7 +320,6 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/f$b;->a:La/b/f;
 
     invoke-virtual {v0}, La/b/f;->c()I
@@ -374,7 +350,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, La/b/f$d;
 
     iget-object v1, p0, La/b/f$b;->a:La/b/f;
@@ -387,7 +362,6 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -405,7 +379,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -423,7 +396,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -434,7 +406,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/f$b;->a:La/b/f;
 
     invoke-virtual {v0}, La/b/f;->c()I
@@ -447,7 +418,6 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -465,7 +435,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V

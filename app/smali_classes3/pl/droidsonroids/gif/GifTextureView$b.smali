@@ -1,6 +1,5 @@
 .class public interface abstract Lpl/droidsonroids/gif/GifTextureView$b;
 .super Ljava/lang/Object;
-.source "GifTextureView.java"
 
 
 # annotations

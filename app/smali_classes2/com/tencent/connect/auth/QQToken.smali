@@ -1,6 +1,5 @@
 .class public Lcom/tencent/connect/auth/QQToken;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # static fields
@@ -27,20 +26,16 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput v0, p0, Lcom/tencent/connect/auth/QQToken;->d:I
 
     const-wide/16 v0, -0x1
 
-    .line 3
     iput-wide v0, p0, Lcom/tencent/connect/auth/QQToken;->e:J
 
-    .line 4
     iput-object p1, p0, Lcom/tencent/connect/auth/QQToken;->a:Ljava/lang/String;
 
     return-void
@@ -51,7 +46,6 @@
 .method public getAccessToken()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/connect/auth/QQToken;->b:Ljava/lang/String;
 
     return-object v0
@@ -60,7 +54,6 @@
 .method public getAppId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/connect/auth/QQToken;->a:Ljava/lang/String;
 
     return-object v0
@@ -69,7 +62,6 @@
 .method public getAuthSource()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/tencent/connect/auth/QQToken;->d:I
 
     return v0
@@ -78,7 +70,6 @@
 .method public getExpireTimeInSecond()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/tencent/connect/auth/QQToken;->e:J
 
     return-wide v0
@@ -87,7 +78,6 @@
 .method public getOpenId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/connect/auth/QQToken;->c:Ljava/lang/String;
 
     return-object v0
@@ -96,7 +86,6 @@
 .method public isSessionValid()Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/connect/auth/QQToken;->b:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -130,17 +119,14 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/QQToken;->b:Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lcom/tencent/connect/auth/QQToken;->e:J
 
     if-eqz p2, :cond_0
 
-    .line 3
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -164,7 +150,6 @@
 .method public setAppId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/QQToken;->a:Ljava/lang/String;
 
     return-void
@@ -173,7 +158,6 @@
 .method public setAuthSource(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/tencent/connect/auth/QQToken;->d:I
 
     return-void
@@ -182,7 +166,6 @@
 .method public setOpenId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/QQToken;->c:Ljava/lang/String;
 
     return-void

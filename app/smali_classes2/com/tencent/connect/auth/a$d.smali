@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/auth/a$d;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,17 +26,14 @@
 .method public constructor <init>(Lcom/tencent/connect/auth/a;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/a$d;->b:Lcom/tencent/connect/auth/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string p1, ""
 
-    .line 2
     iput-object p1, p0, Lcom/tencent/connect/auth/a$d;->a:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Lcom/tencent/connect/auth/a$d;->a:Ljava/lang/String;
 
     return-void
@@ -48,7 +44,6 @@
 .method public run()V
     .locals 5
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -81,7 +76,6 @@
 
     invoke-static {v1, v0}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lcom/tencent/connect/auth/a$d;->a:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/tencent/connect/auth/a$d;->b:Lcom/tencent/connect/auth/a;
@@ -96,7 +90,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/tencent/connect/auth/a$d;->b:Lcom/tencent/connect/auth/a;
 
     invoke-static {v0}, Lcom/tencent/connect/auth/a;->f(Lcom/tencent/connect/auth/a;)Lcom/tencent/connect/auth/a$b;
@@ -119,7 +112,6 @@
 
     invoke-virtual {v0, v1}, Lcom/tencent/connect/auth/a$b;->onError(Lcom/tencent/tauth/UiError;)V
 
-    .line 4
     iget-object v0, p0, Lcom/tencent/connect/auth/a$d;->b:Lcom/tencent/connect/auth/a;
 
     invoke-virtual {v0}, Lcom/tencent/connect/auth/a;->dismiss()V

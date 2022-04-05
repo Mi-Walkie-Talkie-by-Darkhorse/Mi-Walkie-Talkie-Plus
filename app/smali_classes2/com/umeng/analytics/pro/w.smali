@@ -1,6 +1,5 @@
 .class Lcom/umeng/analytics/pro/w;
 .super Ljava/lang/Object;
-.source "SessionIdGenerateServiceImpl.java"
 
 # interfaces
 .implements Lcom/umeng/analytics/pro/v;
@@ -14,10 +13,8 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     sget-wide v0, Lcom/umeng/analytics/AnalyticsConfig;->kContinueSessionMillis:J
 
     iput-wide v0, p0, Lcom/umeng/analytics/pro/w;->a:J
@@ -30,7 +27,6 @@
 .method public a()J
     .locals 2
 
-    .line 2
     iget-wide v0, p0, Lcom/umeng/analytics/pro/w;->a:J
 
     return-wide v0
@@ -39,24 +35,20 @@
 .method public a(Landroid/content/Context;)Ljava/lang/String;
     .locals 3
 
-    .line 3
     invoke-static {p1}, Lcom/umeng/commonsdk/utils/UMUtils;->getAppkey(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 4
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
     if-eqz p1, :cond_0
 
-    .line 5
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 6
     invoke-virtual {v2, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -65,7 +57,6 @@
 
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -76,7 +67,6 @@
 
     return-object p1
 
-    .line 8
     :cond_0
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -90,7 +80,6 @@
 .method public a(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/umeng/analytics/pro/w;->a:J
 
     return-void
@@ -99,12 +88,10 @@
 .method public a(Landroid/content/Context;Ljava/lang/String;)V
     .locals 4
 
-    .line 12
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 13
     :try_start_0
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/internal/PreferenceWrapper;->getDefault(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -116,27 +103,22 @@
 
     const-string v2, "session_id"
 
-    .line 14
     invoke-interface {p1, v2, p2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     const-string p2, "session_end_time"
 
     const-wide/16 v2, 0x0
 
-    .line 15
     invoke-interface {p1, p2, v2, v3}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
 
     const-string p2, "a_start_time"
 
-    .line 16
     invoke-interface {p1, p2, v0, v1}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
 
     const-string p2, "a_end_time"
 
-    .line 17
     invoke-interface {p1, p2, v2, v3}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
 
-    .line 18
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -148,7 +130,6 @@
 .method public a(JJ)Z
     .locals 8
 
-    .line 9
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -163,7 +144,6 @@
 
     sub-long p1, v0, p1
 
-    .line 10
     iget-wide v5, p0, Lcom/umeng/analytics/pro/w;->a:J
 
     cmp-long v7, p1, v5
@@ -179,7 +159,6 @@
 
     sub-long/2addr v0, p3
 
-    .line 11
     iget-wide p1, p0, Lcom/umeng/analytics/pro/w;->a:J
 
     cmp-long p3, v0, p1

@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/internal/b;
 .super Ljava/lang/Object;
-.source "UMInternalData.java"
 
 
 # static fields
@@ -17,13 +16,10 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/umeng/commonsdk/internal/b;->a:Landroid/content/Context;
 
-    .line 3
     new-instance v0, Lcom/umeng/commonsdk/internal/c;
 
     invoke-direct {v0, p1}, Lcom/umeng/commonsdk/internal/c;-><init>(Landroid/content/Context;)V
@@ -40,13 +36,11 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/internal/b;->b:Lcom/umeng/commonsdk/internal/b;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/umeng/commonsdk/internal/b;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -57,7 +51,6 @@
 
     sput-object v1, Lcom/umeng/commonsdk/internal/b;->b:Lcom/umeng/commonsdk/internal/b;
 
-    .line 3
     :cond_0
     sget-object p0, Lcom/umeng/commonsdk/internal/b;->b:Lcom/umeng/commonsdk/internal/b;
     :try_end_0
@@ -80,7 +73,6 @@
 .method public a()Lcom/umeng/commonsdk/internal/c;
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/b;->c:Lcom/umeng/commonsdk/internal/c;
 
     return-object v0

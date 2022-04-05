@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableFromObservable$SubscriberObserver;
 .super Ljava/lang/Object;
-.source "FlowableFromObservable.java"
 
 # interfaces
 .implements Lio/reactivex/Observer;
@@ -54,10 +53,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFromObservable$SubscriberObserver;->downstream:Lc/a/c;
 
     return-void
@@ -68,7 +65,6 @@
 .method public cancel()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFromObservable$SubscriberObserver;->upstream:Lio/reactivex/disposables/Disposable;
 
     invoke-interface {v0}, Lio/reactivex/disposables/Disposable;->dispose()V
@@ -79,7 +75,6 @@
 .method public onComplete()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFromObservable$SubscriberObserver;->downstream:Lc/a/c;
 
     invoke-interface {v0}, Lc/a/c;->onComplete()V
@@ -90,7 +85,6 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFromObservable$SubscriberObserver;->downstream:Lc/a/c;
 
     invoke-interface {v0, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
@@ -106,7 +100,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFromObservable$SubscriberObserver;->downstream:Lc/a/c;
 
     invoke-interface {v0, p1}, Lc/a/c;->onNext(Ljava/lang/Object;)V
@@ -117,10 +110,8 @@
 .method public onSubscribe(Lio/reactivex/disposables/Disposable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFromObservable$SubscriberObserver;->upstream:Lio/reactivex/disposables/Disposable;
 
-    .line 2
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFromObservable$SubscriberObserver;->downstream:Lc/a/c;
 
     invoke-interface {p1, p0}, Lc/a/c;->onSubscribe(Lc/a/d;)V

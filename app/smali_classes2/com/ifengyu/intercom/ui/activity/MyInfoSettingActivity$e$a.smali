@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e$a;
 .super Ljava/lang/Object;
-.source "MyInfoSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e$a;->a:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e$a;->a:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e;->c:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;

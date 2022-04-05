@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/RegularImmutableMap$NonTerminalMapEntry;
 .super Lcom/google/common/collect/ImmutableMapEntry;
-.source "RegularImmutableMap.java"
 
 
 # annotations
@@ -50,10 +49,8 @@
         }
     .end annotation
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/google/common/collect/ImmutableMapEntry;-><init>(Lcom/google/common/collect/ImmutableMapEntry;)V
 
-    .line 4
     iput-object p2, p0, Lcom/google/common/collect/RegularImmutableMap$NonTerminalMapEntry;->nextInKeyBucket:Lcom/google/common/collect/ImmutableMapEntry;
 
     return-void
@@ -69,10 +66,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/ImmutableMapEntry;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 2
     iput-object p3, p0, Lcom/google/common/collect/RegularImmutableMap$NonTerminalMapEntry;->nextInKeyBucket:Lcom/google/common/collect/ImmutableMapEntry;
 
     return-void
@@ -90,7 +85,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableMap$NonTerminalMapEntry;->nextInKeyBucket:Lcom/google/common/collect/ImmutableMapEntry;
 
     return-object v0

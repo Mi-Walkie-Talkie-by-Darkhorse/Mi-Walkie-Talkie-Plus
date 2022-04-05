@@ -1,6 +1,5 @@
 .class public interface abstract Lme/zhanghai/android/materialprogressbar/ShowBackgroundDrawable;
 .super Ljava/lang/Object;
-.source "ShowBackgroundDrawable.java"
 
 
 # virtual methods

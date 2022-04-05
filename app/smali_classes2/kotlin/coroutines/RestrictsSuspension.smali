@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/coroutines/RestrictsSuspension;
 .super Ljava/lang/Object;
-.source "Continuation.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

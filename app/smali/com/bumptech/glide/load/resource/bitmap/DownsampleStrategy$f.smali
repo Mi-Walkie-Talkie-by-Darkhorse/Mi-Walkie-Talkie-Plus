@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$f;
 .super Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;
-.source "DownsampleStrategy.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
 .method public a(IIII)Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$SampleSizeRounding;
     .locals 0
 
-    .line 1
     sget-object p1, Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$SampleSizeRounding;->b:Lcom/bumptech/glide/load/resource/bitmap/DownsampleStrategy$SampleSizeRounding;
 
     return-object p1

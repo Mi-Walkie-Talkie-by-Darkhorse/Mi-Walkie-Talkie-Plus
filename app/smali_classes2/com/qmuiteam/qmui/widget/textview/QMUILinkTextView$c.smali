@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/textview/QMUILinkTextView$c;
 .super Ljava/lang/Object;
-.source "QMUILinkTextView.java"
 
 
 # annotations

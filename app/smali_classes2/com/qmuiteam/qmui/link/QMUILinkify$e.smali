@@ -1,6 +1,5 @@
 .class final Lcom/qmuiteam/qmui/link/QMUILinkify$e;
 .super Ljava/lang/Object;
-.source "QMUILinkify.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/link/QMUILinkify$i;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public final a(Ljava/util/regex/Matcher;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Landroid/util/Patterns;->digitsAndPlusOnly(Ljava/util/regex/Matcher;)Ljava/lang/String;
 
     move-result-object p1

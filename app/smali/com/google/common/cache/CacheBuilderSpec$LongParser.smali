@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/cache/CacheBuilderSpec$LongParser;
 .super Ljava/lang/Object;
-.source "CacheBuilderSpec.java"
 
 # interfaces
 .implements Lcom/google/common/cache/CacheBuilderSpec$ValueParser;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
 
     if-eqz p3, :cond_0
 
-    .line 1
     invoke-virtual {p3}, Ljava/lang/String;->isEmpty()Z
 
     move-result v2
@@ -61,7 +58,6 @@
 
     invoke-static {v2, v4, v3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
     :try_start_0
     invoke-static {p3}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
 
@@ -76,7 +72,6 @@
     :catch_0
     move-exception p1
 
-    .line 3
     new-instance v2, Ljava/lang/IllegalArgumentException;
 
     const/4 v3, 0x2

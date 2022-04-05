@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Interners$WeakInterner;
 .super Ljava/lang/Object;
-.source "Interners.java"
 
 # interfaces
 .implements Lcom/google/common/collect/Interner;
@@ -51,10 +50,8 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/MapMaker;
 
     invoke-direct {v0}, Lcom/google/common/collect/MapMaker;-><init>()V
@@ -83,7 +80,6 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/Interners$1;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/collect/Interners$WeakInterner;-><init>()V
 
     return-void
@@ -99,7 +95,6 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/Interners$WeakInterner;->map:Lcom/google/common/collect/MapMakerInternalMap;
 
@@ -109,7 +104,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-interface {v0}, Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -118,7 +112,6 @@
 
     return-object v0
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/google/common/collect/Interners$WeakInterner;->map:Lcom/google/common/collect/MapMakerInternalMap;
 

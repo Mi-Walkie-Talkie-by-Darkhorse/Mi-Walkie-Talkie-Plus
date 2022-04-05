@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/MultimapBuilder$SetMultimapBuilder;
 .super Lcom/google/common/collect/MultimapBuilder;
-.source "MultimapBuilder.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/common/collect/MultimapBuilder;-><init>(Lcom/google/common/collect/MultimapBuilder$1;)V
 
     return-void
@@ -43,7 +41,6 @@
 .method public bridge synthetic build()Lcom/google/common/collect/Multimap;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MultimapBuilder$SetMultimapBuilder;->build()Lcom/google/common/collect/SetMultimap;
 
     move-result-object v0
@@ -54,7 +51,6 @@
 .method public bridge synthetic build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/Multimap;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MultimapBuilder$SetMultimapBuilder;->build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/SetMultimap;
 
     move-result-object p1
@@ -84,7 +80,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-super {p0, p1}, Lcom/google/common/collect/MultimapBuilder;->build(Lcom/google/common/collect/Multimap;)Lcom/google/common/collect/Multimap;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class public final Landroidx/recyclerview/widget/GridLayoutManager$a;
 .super Landroidx/recyclerview/widget/GridLayoutManager$b;
-.source "GridLayoutManager.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/GridLayoutManager$b;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
 .method public d(II)I
     .locals 0
 
-    .line 1
     rem-int/2addr p1, p2
 
     return p1

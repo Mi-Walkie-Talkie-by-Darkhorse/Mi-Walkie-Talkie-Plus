@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$Size;
 .super Ljava/lang/Object;
-.source "ExtendedFloatingActionButton.java"
 
 
 # annotations

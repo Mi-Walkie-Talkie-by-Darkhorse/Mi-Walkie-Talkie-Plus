@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;
 .super Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam;
-.source "ADGLAnimationParam1V.java"
 
 
 # instance fields
@@ -13,10 +12,8 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;->reset()V
 
     return-void
@@ -29,10 +26,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam;->_needToCaculate:Z
 
-    .line 2
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam;->_hasFromValue:Z
 
     const/4 v1, 0x1
@@ -43,14 +38,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;->_toValue:F
 
     iget v2, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;->_fromValue:F
 
     sub-float/2addr v0, v2
 
-    .line 4
     invoke-static {v0}, Ljava/lang/Math;->abs(F)F
 
     move-result v0
@@ -63,10 +56,8 @@
 
     if-lez v0, :cond_0
 
-    .line 5
     iput-boolean v1, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam;->_needToCaculate:Z
 
-    .line 6
     :cond_0
     iput-boolean v1, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam;->_hasCheckedParam:Z
 
@@ -76,7 +67,6 @@
 .method public getCurValue()F
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;->_fromValue:F
 
     iget v1, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;->_toValue:F
@@ -95,7 +85,6 @@
 .method public getFromValue()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;->_fromValue:F
 
     return v0
@@ -104,7 +93,6 @@
 .method public getToValue()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;->_toValue:F
 
     return v0
@@ -113,15 +101,12 @@
 .method public reset()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam;->reset()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;->_fromValue:F
 
-    .line 3
     iput v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;->_toValue:F
 
     return-void
@@ -130,17 +115,14 @@
 .method public setFromValue(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;->_fromValue:F
 
     const/4 p1, 0x1
 
-    .line 2
     iput-boolean p1, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam;->_hasFromValue:Z
 
     const/4 p1, 0x0
 
-    .line 3
     iput-boolean p1, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam;->_hasCheckedParam:Z
 
     return-void
@@ -149,17 +131,14 @@
 .method public setToValue(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam1V;->_toValue:F
 
     const/4 p1, 0x1
 
-    .line 2
     iput-boolean p1, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam;->_hasToValue:Z
 
     const/4 p1, 0x0
 
-    .line 3
     iput-boolean p1, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimationParam;->_hasCheckedParam:Z
 
     return-void

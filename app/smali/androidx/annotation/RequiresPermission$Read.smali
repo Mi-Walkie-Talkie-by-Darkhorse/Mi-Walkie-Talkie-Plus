@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/RequiresPermission$Read;
 .super Ljava/lang/Object;
-.source "RequiresPermission.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

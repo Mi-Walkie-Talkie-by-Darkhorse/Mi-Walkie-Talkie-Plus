@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/w$c;
 .super Ljava/lang/Object;
-.source "SharkSetPowerListDialog.java"
 
 
 # annotations

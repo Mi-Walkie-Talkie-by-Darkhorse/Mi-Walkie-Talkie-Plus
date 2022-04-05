@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$e;
 .super Ljava/lang/Object;
-.source "DiscoveryFragment.java"
 
 # interfaces
 .implements Lio/reactivex/ObservableOnSubscribe;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$e;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -67,14 +65,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$e;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->f(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/Emitter;->onNext(Ljava/lang/Object;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public Lorg/metalev/multitouch/controller/MultiTouchController;
 .super Ljava/lang/Object;
-.source "MultiTouchController.java"
 
 
 # annotations
@@ -137,7 +136,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
     const-class v2, Landroid/view/MotionEvent;
 
@@ -151,7 +149,6 @@
 
     sput-object v2, Lorg/metalev/multitouch/controller/MultiTouchController;->m_getPointerCount:Ljava/lang/reflect/Method;
 
-    .line 2
     const-class v2, Landroid/view/MotionEvent;
 
     const-string v3, "getPointerId"
@@ -168,7 +165,6 @@
 
     sput-object v2, Lorg/metalev/multitouch/controller/MultiTouchController;->m_getPointerId:Ljava/lang/reflect/Method;
 
-    .line 3
     const-class v2, Landroid/view/MotionEvent;
 
     const-string v3, "getPressure"
@@ -185,7 +181,6 @@
 
     sput-object v2, Lorg/metalev/multitouch/controller/MultiTouchController;->m_getPressure:Ljava/lang/reflect/Method;
 
-    .line 4
     const-class v2, Landroid/view/MotionEvent;
 
     const-string v3, "getHistoricalX"
@@ -208,7 +203,6 @@
 
     sput-object v2, Lorg/metalev/multitouch/controller/MultiTouchController;->m_getHistoricalX:Ljava/lang/reflect/Method;
 
-    .line 5
     const-class v2, Landroid/view/MotionEvent;
 
     const-string v3, "getHistoricalY"
@@ -229,7 +223,6 @@
 
     sput-object v2, Lorg/metalev/multitouch/controller/MultiTouchController;->m_getHistoricalY:Ljava/lang/reflect/Method;
 
-    .line 6
     const-class v2, Landroid/view/MotionEvent;
 
     const-string v3, "getHistoricalPressure"
@@ -250,7 +243,6 @@
 
     sput-object v2, Lorg/metalev/multitouch/controller/MultiTouchController;->m_getHistoricalPressure:Ljava/lang/reflect/Method;
 
-    .line 7
     const-class v2, Landroid/view/MotionEvent;
 
     const-string v3, "getX"
@@ -267,7 +259,6 @@
 
     sput-object v2, Lorg/metalev/multitouch/controller/MultiTouchController;->m_getX:Ljava/lang/reflect/Method;
 
-    .line 8
     const-class v2, Landroid/view/MotionEvent;
 
     const-string v3, "getY"
@@ -295,18 +286,15 @@
 
     const-string v3, "static initializer failed"
 
-    .line 9
     invoke-static {v2, v3, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     const/4 v0, 0x0
 
-    .line 10
     :goto_0
     sput-boolean v0, Lorg/metalev/multitouch/controller/MultiTouchController;->multiTouchSupported:Z
 
     if-eqz v0, :cond_0
 
-    .line 11
     :try_start_1
     const-class v0, Landroid/view/MotionEvent;
 
@@ -324,7 +312,6 @@
 
     sput v0, Lorg/metalev/multitouch/controller/MultiTouchController;->ACTION_POINTER_UP:I
 
-    .line 12
     const-class v0, Landroid/view/MotionEvent;
 
     const-string v2, "ACTION_POINTER_INDEX_SHIFT"
@@ -347,22 +334,18 @@
 
     new-array v1, v0, [F
 
-    .line 13
     sput-object v1, Lorg/metalev/multitouch/controller/MultiTouchController;->xVals:[F
 
     new-array v1, v0, [F
 
-    .line 14
     sput-object v1, Lorg/metalev/multitouch/controller/MultiTouchController;->yVals:[F
 
     new-array v1, v0, [F
 
-    .line 15
     sput-object v1, Lorg/metalev/multitouch/controller/MultiTouchController;->pressureVals:[F
 
     new-array v0, v0, [I
 
-    .line 16
     sput-object v0, Lorg/metalev/multitouch/controller/MultiTouchController;->pointerIds:[I
 
     return-void
@@ -380,7 +363,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lorg/metalev/multitouch/controller/MultiTouchController;-><init>(Lorg/metalev/multitouch/controller/MultiTouchController$MultiTouchObjectCanvas;Z)V
 
     return-void
@@ -396,15 +378,12 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->selectedObject:Ljava/lang/Object;
 
-    .line 4
     new-instance v0, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
     invoke-direct {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;-><init>()V
@@ -413,27 +392,22 @@
 
     const/4 v0, 0x0
 
-    .line 5
     iput v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mMode:I
 
-    .line 6
     new-instance v0, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
     invoke-direct {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;-><init>()V
 
     iput-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
-    .line 7
     new-instance v0, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
     invoke-direct {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;-><init>()V
 
     iput-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mPrevPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
-    .line 8
     iput-boolean p2, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->handleSingleTouchEvents:Z
 
-    .line 9
     iput-object p1, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->objectCanvas:Lorg/metalev/multitouch/controller/MultiTouchController$MultiTouchObjectCanvas;
 
     return-void
@@ -442,14 +416,12 @@
 .method private anchorAtThisPositionAndScale()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->selectedObject:Ljava/lang/Object;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->objectCanvas:Lorg/metalev/multitouch/controller/MultiTouchController$MultiTouchObjectCanvas;
 
@@ -457,7 +429,6 @@
 
     invoke-interface {v1, v0, v2}, Lorg/metalev/multitouch/controller/MultiTouchController$MultiTouchObjectCanvas;->getPositionAndScale(Ljava/lang/Object;Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)V
 
-    .line 3
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
     invoke-static {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->access$000(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)Z
@@ -498,10 +469,8 @@
     :goto_1
     div-float/2addr v1, v0
 
-    .line 4
     invoke-direct {p0}, Lorg/metalev/multitouch/controller/MultiTouchController;->extractCurrPtInfo()V
 
-    .line 5
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtX:F
 
     iget-object v2, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
@@ -516,7 +485,6 @@
 
     iput v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->startPosX:F
 
-    .line 6
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtY:F
 
     iget-object v2, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
@@ -531,7 +499,6 @@
 
     iput v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->startPosY:F
 
-    .line 7
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
     invoke-static {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->access$400(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)F
@@ -544,7 +511,6 @@
 
     iput v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->startScaleOverPinchDiam:F
 
-    .line 8
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
     invoke-static {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->access$700(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)F
@@ -557,7 +523,6 @@
 
     iput v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->startScaleXOverPinchWidth:F
 
-    .line 9
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
     invoke-static {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->access$800(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)F
@@ -570,7 +535,6 @@
 
     iput v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->startScaleYOverPinchHeight:F
 
-    .line 10
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
     invoke-static {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->access$900(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)F
@@ -591,15 +555,12 @@
 
     move-object v0, p0
 
-    .line 1
     iget-object v1, v0, Lorg/metalev/multitouch/controller/MultiTouchController;->mPrevPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
-    .line 2
     iget-object v2, v0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
     iput-object v2, v0, Lorg/metalev/multitouch/controller/MultiTouchController;->mPrevPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
-    .line 3
     iput-object v1, v0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
     move v2, p1
@@ -618,10 +579,8 @@
 
     move-wide/from16 v9, p8
 
-    .line 4
     invoke-static/range {v1 .. v10}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;->access$300(Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;I[F[F[F[IIZJ)V
 
-    .line 5
     invoke-direct {p0}, Lorg/metalev/multitouch/controller/MultiTouchController;->multiTouchController()V
 
     return-void
@@ -630,7 +589,6 @@
 .method private extractCurrPtInfo()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
     invoke-virtual {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;->getX()F
@@ -639,7 +597,6 @@
 
     iput v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtX:F
 
-    .line 2
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
     invoke-virtual {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;->getY()F
@@ -648,7 +605,6 @@
 
     iput v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtY:F
 
-    .line 3
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
     invoke-static {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->access$000(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)Z
@@ -679,7 +635,6 @@
 
     iput v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtDiam:F
 
-    .line 4
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
     invoke-static {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->access$100(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)Z
@@ -708,7 +663,6 @@
 
     iput v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtWidth:F
 
-    .line 5
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
     invoke-static {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->access$100(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)Z
@@ -735,7 +689,6 @@
 
     iput v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtHeight:F
 
-    .line 6
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
     invoke-static {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->access$200(Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;)Z
@@ -762,7 +715,6 @@
 .method private multiTouchController()V
     .locals 7
 
-    .line 1
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mMode:I
 
     const/4 v1, 0x1
@@ -783,7 +735,6 @@
 
     goto/16 :goto_2
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
@@ -803,7 +754,6 @@
 
     goto/16 :goto_1
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
@@ -831,7 +781,6 @@
 
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
-    .line 4
     invoke-virtual {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;->getY()F
 
     move-result v0
@@ -854,7 +803,6 @@
 
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
-    .line 5
     invoke-virtual {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;->getMultiTouchWidth()F
 
     move-result v0
@@ -883,7 +831,6 @@
 
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
-    .line 6
     invoke-virtual {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;->getMultiTouchHeight()F
 
     move-result v0
@@ -908,7 +855,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
@@ -922,23 +868,19 @@
 
     if-gez v4, :cond_3
 
-    .line 8
     invoke-direct {p0}, Lorg/metalev/multitouch/controller/MultiTouchController;->anchorAtThisPositionAndScale()V
 
     goto/16 :goto_2
 
-    .line 9
     :cond_3
     invoke-direct {p0}, Lorg/metalev/multitouch/controller/MultiTouchController;->performDragOrPinch()V
 
     goto/16 :goto_2
 
-    .line 10
     :cond_4
     :goto_0
     invoke-direct {p0}, Lorg/metalev/multitouch/controller/MultiTouchController;->anchorAtThisPositionAndScale()V
 
-    .line 11
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
     invoke-virtual {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;->getEventTime()J
@@ -949,12 +891,10 @@
 
     add-long/2addr v0, v5
 
-    .line 12
     iput-wide v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mSettleEndTime:J
 
     goto/16 :goto_2
 
-    .line 13
     :cond_5
     :goto_1
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
@@ -965,10 +905,8 @@
 
     if-nez v0, :cond_6
 
-    .line 14
     iput v3, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mMode:I
 
-    .line 15
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->objectCanvas:Lorg/metalev/multitouch/controller/MultiTouchController$MultiTouchObjectCanvas;
 
     iput-object v2, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->selectedObject:Ljava/lang/Object;
@@ -979,14 +917,11 @@
 
     goto/16 :goto_2
 
-    .line 16
     :cond_6
     iput v1, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mMode:I
 
-    .line 17
     invoke-direct {p0}, Lorg/metalev/multitouch/controller/MultiTouchController;->anchorAtThisPositionAndScale()V
 
-    .line 18
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
     invoke-virtual {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;->getEventTime()J
@@ -997,12 +932,10 @@
 
     add-long/2addr v0, v5
 
-    .line 19
     iput-wide v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mSettleEndTime:J
 
     goto :goto_2
 
-    .line 20
     :cond_7
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
@@ -1012,10 +945,8 @@
 
     if-nez v0, :cond_8
 
-    .line 21
     iput v3, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mMode:I
 
-    .line 22
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->objectCanvas:Lorg/metalev/multitouch/controller/MultiTouchController$MultiTouchObjectCanvas;
 
     iput-object v2, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->selectedObject:Ljava/lang/Object;
@@ -1026,7 +957,6 @@
 
     goto :goto_2
 
-    .line 23
     :cond_8
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
@@ -1036,13 +966,10 @@
 
     if-eqz v0, :cond_9
 
-    .line 24
     iput v4, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mMode:I
 
-    .line 25
     invoke-direct {p0}, Lorg/metalev/multitouch/controller/MultiTouchController;->anchorAtThisPositionAndScale()V
 
-    .line 26
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
     invoke-virtual {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;->getEventTime()J
@@ -1053,12 +980,10 @@
 
     add-long/2addr v0, v5
 
-    .line 27
     iput-wide v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mSettleEndTime:J
 
     goto :goto_2
 
-    .line 28
     :cond_9
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
@@ -1072,18 +997,15 @@
 
     if-gez v4, :cond_a
 
-    .line 29
     invoke-direct {p0}, Lorg/metalev/multitouch/controller/MultiTouchController;->anchorAtThisPositionAndScale()V
 
     goto :goto_2
 
-    .line 30
     :cond_a
     invoke-direct {p0}, Lorg/metalev/multitouch/controller/MultiTouchController;->performDragOrPinch()V
 
     goto :goto_2
 
-    .line 31
     :cond_b
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
@@ -1093,7 +1015,6 @@
 
     if-eqz v0, :cond_c
 
-    .line 32
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->objectCanvas:Lorg/metalev/multitouch/controller/MultiTouchController$MultiTouchObjectCanvas;
 
     iget-object v2, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
@@ -1106,20 +1027,16 @@
 
     if-eqz v0, :cond_c
 
-    .line 33
     iput v1, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mMode:I
 
-    .line 34
     iget-object v1, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->objectCanvas:Lorg/metalev/multitouch/controller/MultiTouchController$MultiTouchObjectCanvas;
 
     iget-object v2, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
     invoke-interface {v1, v0, v2}, Lorg/metalev/multitouch/controller/MultiTouchController$MultiTouchObjectCanvas;->selectObject(Ljava/lang/Object;Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;)V
 
-    .line 35
     invoke-direct {p0}, Lorg/metalev/multitouch/controller/MultiTouchController;->anchorAtThisPositionAndScale()V
 
-    .line 36
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPt:Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;
 
     invoke-virtual {v0}, Lorg/metalev/multitouch/controller/MultiTouchController$PointInfo;->getEventTime()J
@@ -1138,14 +1055,12 @@
 .method private performDragOrPinch()V
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->selectedObject:Ljava/lang/Object;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
@@ -1181,11 +1096,9 @@
 
     move-result v1
 
-    .line 3
     :goto_0
     invoke-direct {p0}, Lorg/metalev/multitouch/controller/MultiTouchController;->extractCurrPtInfo()V
 
-    .line 4
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtX:F
 
     iget v2, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->startPosX:F
@@ -1194,7 +1107,6 @@
 
     sub-float v4, v0, v2
 
-    .line 5
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtY:F
 
     iget v2, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->startPosY:F
@@ -1203,40 +1115,34 @@
 
     sub-float v5, v0, v2
 
-    .line 6
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->startScaleOverPinchDiam:F
 
     iget v1, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtDiam:F
 
     mul-float v6, v0, v1
 
-    .line 7
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->startScaleXOverPinchWidth:F
 
     iget v1, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtWidth:F
 
     mul-float v7, v0, v1
 
-    .line 8
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->startScaleYOverPinchHeight:F
 
     iget v1, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtHeight:F
 
     mul-float v8, v0, v1
 
-    .line 9
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->startAngleMinusPinchAngle:F
 
     iget v1, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrPtAng:F
 
     add-float v9, v0, v1
 
-    .line 10
     iget-object v3, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mCurrXform:Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;
 
     invoke-virtual/range {v3 .. v9}, Lorg/metalev/multitouch/controller/MultiTouchController$PositionAndScale;->set(FFFFFF)V
 
-    .line 11
     iget-object v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->objectCanvas:Lorg/metalev/multitouch/controller/MultiTouchController$MultiTouchObjectCanvas;
 
     iget-object v1, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->selectedObject:Ljava/lang/Object;
@@ -1255,7 +1161,6 @@
 .method protected getHandleSingleTouchEvents()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->handleSingleTouchEvents:Z
 
     return v0
@@ -1264,7 +1169,6 @@
 .method public getMode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mMode:I
 
     return v0
@@ -1273,7 +1177,6 @@
 .method public isPinching()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->mMode:I
 
     const/4 v1, 0x2
@@ -1300,7 +1203,6 @@
 
     const/4 v12, 0x0
 
-    .line 1
     :try_start_0
     sget-boolean v1, Lorg/metalev/multitouch/controller/MultiTouchController;->multiTouchSupported:Z
 
@@ -1329,7 +1231,6 @@
     :cond_0
     const/4 v14, 0x1
 
-    .line 2
     :goto_0
     iget v1, v11, Lorg/metalev/multitouch/controller/MultiTouchController;->mMode:I
 
@@ -1343,13 +1244,11 @@
 
     return v12
 
-    .line 3
     :cond_1
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v15
 
-    .line 4
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getHistorySize()I
 
     move-result v1
@@ -1370,7 +1269,6 @@
     :cond_2
     const/4 v1, 0x0
 
-    .line 5
     :goto_2
     sget-boolean v2, Lorg/metalev/multitouch/controller/MultiTouchController;->multiTouchSupported:Z
 
@@ -1385,7 +1283,6 @@
     :cond_3
     const/16 v2, 0x14
 
-    .line 6
     invoke-static {v14, v2}, Ljava/lang/Math;->min(II)I
 
     move-result v2
@@ -1395,7 +1292,6 @@
     :goto_3
     if-ge v4, v2, :cond_b
 
-    .line 7
     sget-object v5, Lorg/metalev/multitouch/controller/MultiTouchController;->m_getPointerId:Ljava/lang/reflect/Method;
 
     new-array v6, v13, [Ljava/lang/Object;
@@ -1416,12 +1312,10 @@
 
     move-result v5
 
-    .line 8
     sget-object v6, Lorg/metalev/multitouch/controller/MultiTouchController;->pointerIds:[I
 
     aput v5, v6, v4
 
-    .line 9
     sget-object v5, Lorg/metalev/multitouch/controller/MultiTouchController;->xVals:[F
 
     if-eqz v1, :cond_4
@@ -1472,7 +1366,6 @@
 
     aput v6, v5, v4
 
-    .line 10
     sget-object v5, Lorg/metalev/multitouch/controller/MultiTouchController;->yVals:[F
 
     if-eqz v1, :cond_5
@@ -1523,7 +1416,6 @@
 
     aput v6, v5, v4
 
-    .line 11
     sget-object v5, Lorg/metalev/multitouch/controller/MultiTouchController;->pressureVals:[F
 
     if-eqz v1, :cond_6
@@ -1555,7 +1447,6 @@
 
     new-array v7, v13, [Ljava/lang/Object;
 
-    .line 12
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v8
@@ -1569,7 +1460,6 @@
     :goto_6
     check-cast v6, Ljava/lang/Float;
 
-    .line 13
     invoke-virtual {v6}, Ljava/lang/Float;->floatValue()F
 
     move-result v6
@@ -1580,7 +1470,6 @@
 
     goto/16 :goto_3
 
-    .line 14
     :cond_7
     :goto_7
     sget-object v2, Lorg/metalev/multitouch/controller/MultiTouchController;->xVals:[F
@@ -1601,7 +1490,6 @@
     :goto_8
     aput v4, v2, v12
 
-    .line 15
     sget-object v2, Lorg/metalev/multitouch/controller/MultiTouchController;->yVals:[F
 
     if-eqz v1, :cond_9
@@ -1620,7 +1508,6 @@
     :goto_9
     aput v4, v2, v12
 
-    .line 16
     sget-object v2, Lorg/metalev/multitouch/controller/MultiTouchController;->pressureVals:[F
 
     if-eqz v1, :cond_a
@@ -1639,7 +1526,6 @@
     :goto_a
     aput v4, v2, v12
 
-    .line 17
     :cond_b
     sget-object v4, Lorg/metalev/multitouch/controller/MultiTouchController;->xVals:[F
 
@@ -1693,7 +1579,6 @@
     :goto_d
     if-eqz v1, :cond_f
 
-    .line 18
     invoke-virtual {v0, v10}, Landroid/view/MotionEvent;->getHistoricalEventTime(I)J
 
     move-result-wide v1
@@ -1730,7 +1615,6 @@
 
     move-wide/from16 v9, v17
 
-    .line 19
     invoke-direct/range {v1 .. v10}, Lorg/metalev/multitouch/controller/MultiTouchController;->decodeTouchEvent(I[F[F[F[IIZJ)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -1751,7 +1635,6 @@
 
     const-string v2, "onTouchEvent() failed"
 
-    .line 20
     invoke-static {v1, v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     return v12
@@ -1760,7 +1643,6 @@
 .method protected setHandleSingleTouchEvents(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/metalev/multitouch/controller/MultiTouchController;->handleSingleTouchEvents:Z
 
     return-void

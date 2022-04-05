@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/constraintlayout/solver/f;
 .super Ljava/lang/Object;
-.source "Pools.java"
 
 
 # annotations

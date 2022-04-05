@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/timepicker/ClockFaceView$1;
 .super Ljava/lang/Object;
-.source "ClockFaceView.java"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnPreDrawListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/timepicker/ClockFaceView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/timepicker/ClockFaceView$1;->this$0:Lcom/google/android/material/timepicker/ClockFaceView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onPreDraw()Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/ClockFaceView$1;->this$0:Lcom/google/android/material/timepicker/ClockFaceView;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->isShown()Z
@@ -51,7 +48,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/timepicker/ClockFaceView$1;->this$0:Lcom/google/android/material/timepicker/ClockFaceView;
 
@@ -61,10 +57,8 @@
 
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/timepicker/ClockFaceView$1;->this$0:Lcom/google/android/material/timepicker/ClockFaceView;
 
-    .line 4
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getHeight()I
 
     move-result v0
@@ -91,7 +85,6 @@
 
     sub-int/2addr v0, v2
 
-    .line 5
     iget-object v2, p0, Lcom/google/android/material/timepicker/ClockFaceView$1;->this$0:Lcom/google/android/material/timepicker/ClockFaceView;
 
     invoke-virtual {v2, v0}, Lcom/google/android/material/timepicker/ClockFaceView;->setRadius(I)V

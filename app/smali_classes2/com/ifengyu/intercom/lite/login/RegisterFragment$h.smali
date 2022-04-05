@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/RegisterFragment$h;
 .super Lcom/ifengyu/library/a/c;
-.source "RegisterFragment.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/RegisterFragment;Ljava/lang/Long;Ljava/util/concurrent/TimeUnit;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$h;->d:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     invoke-direct {p0, p2, p3}, Lcom/ifengyu/library/a/c;-><init>(Ljava/lang/Long;Ljava/util/concurrent/TimeUnit;)V
@@ -35,7 +33,6 @@
 .method public a(J)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$h;->d:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->mBtnGetCode:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
@@ -66,7 +63,6 @@
 .method public c()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$h;->d:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->mBtnGetCode:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
@@ -95,7 +91,6 @@
     :goto_0
     invoke-virtual {v1, v0}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaButton;->setEnabled(Z)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$h;->d:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->mBtnGetCode:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;

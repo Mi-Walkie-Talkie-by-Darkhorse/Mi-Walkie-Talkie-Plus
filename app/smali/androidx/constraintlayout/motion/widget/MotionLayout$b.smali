@@ -1,6 +1,5 @@
 .class synthetic Landroidx/constraintlayout/motion/widget/MotionLayout$b;
 .super Ljava/lang/Object;
-.source "MotionLayout.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Landroidx/constraintlayout/motion/widget/MotionLayout$TransitionState;->values()[Landroidx/constraintlayout/motion/widget/MotionLayout$TransitionState;
 
     move-result-object v0

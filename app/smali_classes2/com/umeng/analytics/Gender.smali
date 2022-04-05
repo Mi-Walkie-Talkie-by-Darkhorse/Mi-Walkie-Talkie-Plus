@@ -1,6 +1,5 @@
 .class public enum Lcom/umeng/analytics/Gender;
 .super Ljava/lang/Enum;
-.source "Gender.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .line 1
     new-instance v0, Lcom/umeng/analytics/Gender$1;
 
     const/4 v1, 0x1
@@ -44,7 +42,6 @@
 
     sput-object v0, Lcom/umeng/analytics/Gender;->Male:Lcom/umeng/analytics/Gender;
 
-    .line 2
     new-instance v0, Lcom/umeng/analytics/Gender$2;
 
     const/4 v3, 0x2
@@ -55,7 +52,6 @@
 
     sput-object v0, Lcom/umeng/analytics/Gender;->Female:Lcom/umeng/analytics/Gender;
 
-    .line 3
     new-instance v0, Lcom/umeng/analytics/Gender$3;
 
     const-string v4, "Unknown"
@@ -68,7 +64,6 @@
 
     new-array v4, v4, [Lcom/umeng/analytics/Gender;
 
-    .line 4
     sget-object v5, Lcom/umeng/analytics/Gender;->Male:Lcom/umeng/analytics/Gender;
 
     aput-object v5, v4, v2
@@ -92,10 +87,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 3
     iput p3, p0, Lcom/umeng/analytics/Gender;->value:I
 
     return-void
@@ -104,7 +97,6 @@
 .method synthetic constructor <init>(Ljava/lang/String;IILcom/umeng/analytics/Gender$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/umeng/analytics/Gender;-><init>(Ljava/lang/String;II)V
 
     return-void
@@ -121,18 +113,15 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 1
     sget-object p0, Lcom/umeng/analytics/Gender;->Unknown:Lcom/umeng/analytics/Gender;
 
     goto :goto_0
 
-    .line 2
     :cond_0
     sget-object p0, Lcom/umeng/analytics/Gender;->Female:Lcom/umeng/analytics/Gender;
 
     goto :goto_0
 
-    .line 3
     :cond_1
     sget-object p0, Lcom/umeng/analytics/Gender;->Male:Lcom/umeng/analytics/Gender;
 
@@ -143,7 +132,6 @@
 .method public static transGender(Lcom/umeng/analytics/Gender;)Lcom/umeng/commonsdk/statistics/proto/Gender;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/Gender$4;->a:[I
 
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
@@ -160,18 +148,15 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 2
     sget-object p0, Lcom/umeng/commonsdk/statistics/proto/Gender;->UNKNOWN:Lcom/umeng/commonsdk/statistics/proto/Gender;
 
     return-object p0
 
-    .line 3
     :cond_0
     sget-object p0, Lcom/umeng/commonsdk/statistics/proto/Gender;->FEMALE:Lcom/umeng/commonsdk/statistics/proto/Gender;
 
     return-object p0
 
-    .line 4
     :cond_1
     sget-object p0, Lcom/umeng/commonsdk/statistics/proto/Gender;->MALE:Lcom/umeng/commonsdk/statistics/proto/Gender;
 
@@ -181,7 +166,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/umeng/analytics/Gender;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/umeng/analytics/Gender;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -196,7 +180,6 @@
 .method public static values()[Lcom/umeng/analytics/Gender;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/Gender;->a:[Lcom/umeng/analytics/Gender;
 
     invoke-virtual {v0}, [Lcom/umeng/analytics/Gender;->clone()Ljava/lang/Object;
@@ -213,7 +196,6 @@
 .method public value()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/umeng/analytics/Gender;->value:I
 
     return v0

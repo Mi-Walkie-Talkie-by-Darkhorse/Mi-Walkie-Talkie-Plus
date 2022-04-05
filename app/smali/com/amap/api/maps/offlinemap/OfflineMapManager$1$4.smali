@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/maps/offlinemap/OfflineMapManager$1$4;
 .super Ljava/lang/Object;
-.source "OfflineMapManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/maps/offlinemap/OfflineMapManager$1;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager$1$4;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final run()V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager$1$4;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager$1;
 
@@ -57,7 +54,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

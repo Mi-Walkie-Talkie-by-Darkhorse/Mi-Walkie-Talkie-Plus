@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/j/v$b;
 .super Ljava/lang/Object;
-.source "UnitModelLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/i/d;
@@ -47,10 +46,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/j/v$b;->a:Ljava/lang/Object;
 
     return-void
@@ -71,7 +68,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/j/v$b;->a:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -100,7 +96,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/bumptech/glide/load/j/v$b;->a:Ljava/lang/Object;
 
     invoke-interface {p2, p1}, Lcom/bumptech/glide/load/i/d$a;->a(Ljava/lang/Object;)V
@@ -119,7 +114,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/bumptech/glide/load/DataSource;->a:Lcom/bumptech/glide/load/DataSource;
 
     return-object v0

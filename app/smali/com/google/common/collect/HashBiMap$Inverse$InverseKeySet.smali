@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet;
 .super Lcom/google/common/collect/Maps$KeySet;
-.source "HashBiMap.java"
 
 
 # annotations
@@ -29,10 +28,8 @@
 .method constructor <init>(Lcom/google/common/collect/HashBiMap$Inverse;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet;->this$1:Lcom/google/common/collect/HashBiMap$Inverse;
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/collect/Maps$KeySet;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -50,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet$1;-><init>(Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet;)V
@@ -65,7 +61,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet;->this$1:Lcom/google/common/collect/HashBiMap$Inverse;
 
     iget-object v0, v0, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
@@ -84,7 +79,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet;->this$1:Lcom/google/common/collect/HashBiMap$Inverse;
 

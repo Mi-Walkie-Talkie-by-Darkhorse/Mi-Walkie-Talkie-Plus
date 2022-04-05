@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$1;
 .super Ljava/lang/Object;
-.source "QMUIFragmentEffectRegistry.java"
 
 # interfaces
 .implements Landroidx/lifecycle/i;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$1;->b:Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;
 
     iput p2, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$1;->a:I
@@ -50,7 +48,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
 
     invoke-virtual {p1, p2}, Ljava/lang/Enum;->equals(Ljava/lang/Object;)Z
@@ -59,7 +56,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$1;->b:Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;
 
     iget p2, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$1;->a:I

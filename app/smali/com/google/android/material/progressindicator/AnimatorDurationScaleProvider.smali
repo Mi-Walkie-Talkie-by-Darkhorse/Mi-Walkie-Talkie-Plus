@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/progressindicator/AnimatorDurationScaleProvider;
 .super Ljava/lang/Object;
-.source "AnimatorDurationScaleProvider.java"
 
 
 # annotations
@@ -25,7 +24,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
-    .line 1
     sput p0, Lcom/google/android/material/progressindicator/AnimatorDurationScaleProvider;->defaultSystemAnimatorDurationScale:F
 
     return-void
@@ -51,7 +48,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/high16 v1, 0x3f800000    # 1.0f
@@ -62,7 +58,6 @@
 
     if-lt v0, v3, :cond_0
 
-    .line 2
     invoke-static {p1, v2, v1}, Landroid/provider/Settings$Global;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)F
 
     move-result p1
@@ -74,14 +69,12 @@
 
     if-ne v0, v3, :cond_1
 
-    .line 3
     invoke-static {p1, v2, v1}, Landroid/provider/Settings$System;->getFloat(Landroid/content/ContentResolver;Ljava/lang/String;F)F
 
     move-result p1
 
     return p1
 
-    .line 4
     :cond_1
     sget p1, Lcom/google/android/material/progressindicator/AnimatorDurationScaleProvider;->defaultSystemAnimatorDurationScale:F
 

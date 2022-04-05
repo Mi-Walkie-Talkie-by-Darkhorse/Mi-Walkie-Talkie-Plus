@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;
 .super Ljava/lang/Object;
-.source "BreakpointStoreOnCache.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
@@ -72,7 +71,6 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
@@ -108,38 +106,30 @@
         }
     .end annotation
 
-    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->unStoredTasks:Landroid/util/SparseArray;
 
-    .line 11
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->storedInfos:Landroid/util/SparseArray;
 
-    .line 12
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->fileDirtyList:Ljava/util/List;
 
-    .line 13
     iput-object p3, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->responseFilenameMap:Ljava/util/HashMap;
 
-    .line 14
     new-instance p2, Lcom/liulishuo/okdownload/core/breakpoint/KeyToIdMap;
 
     invoke-direct {p2}, Lcom/liulishuo/okdownload/core/breakpoint/KeyToIdMap;-><init>()V
 
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->keyToIdMap:Lcom/liulishuo/okdownload/core/breakpoint/KeyToIdMap;
 
-    .line 15
     invoke-virtual {p1}, Landroid/util/SparseArray;->size()I
 
     move-result p2
 
-    .line 16
     new-instance p3, Ljava/util/ArrayList;
 
     invoke-direct {p3, p2}, Ljava/util/ArrayList;-><init>(I)V
@@ -151,7 +141,6 @@
     :goto_0
     if-ge p3, p2, :cond_0
 
-    .line 17
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->sortedOccupiedIds:Ljava/util/List;
 
     invoke-virtual {p1, p3}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
@@ -172,7 +161,6 @@
 
     goto :goto_0
 
-    .line 18
     :cond_0
     iget-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->sortedOccupiedIds:Ljava/util/List;
 
@@ -207,25 +195,18 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p4, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->unStoredTasks:Landroid/util/SparseArray;
 
-    .line 4
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->fileDirtyList:Ljava/util/List;
 
-    .line 5
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->storedInfos:Landroid/util/SparseArray;
 
-    .line 6
     iput-object p3, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->responseFilenameMap:Ljava/util/HashMap;
 
-    .line 7
     iput-object p5, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->sortedOccupiedIds:Ljava/util/List;
 
-    .line 8
     iput-object p6, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->keyToIdMap:Lcom/liulishuo/okdownload/core/breakpoint/KeyToIdMap;
 
     return-void
@@ -244,7 +225,6 @@
 
     const/4 v2, 0x0
 
-    .line 1
     :goto_0
     :try_start_0
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->sortedOccupiedIds:Ljava/util/List;
@@ -257,7 +237,6 @@
 
     if-ge v1, v3, :cond_3
 
-    .line 2
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->sortedOccupiedIds:Ljava/util/List;
 
     invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -272,7 +251,6 @@
 
     goto :goto_2
 
-    .line 3
     :cond_0
     invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
@@ -309,7 +287,6 @@
     :goto_2
     if-nez v0, :cond_5
 
-    .line 4
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->sortedOccupiedIds:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
@@ -320,7 +297,6 @@
 
     goto :goto_3
 
-    .line 5
     :cond_4
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->sortedOccupiedIds:Ljava/util/List;
 
@@ -344,7 +320,6 @@
 
     add-int/2addr v4, v0
 
-    .line 6
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->sortedOccupiedIds:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -356,7 +331,6 @@
     :cond_5
     move v4, v0
 
-    .line 7
     :goto_3
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->sortedOccupiedIds:Ljava/util/List;
 
@@ -368,7 +342,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     monitor-exit p0
 
     return v4
@@ -390,12 +363,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getId()I
 
     move-result v0
 
-    .line 2
     new-instance v1, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getUrl()Ljava/lang/String;
@@ -406,28 +377,23 @@
 
     move-result-object v3
 
-    .line 3
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getFilename()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-direct {v1, v0, v2, v3, p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;-><init>(ILjava/lang/String;Ljava/io/File;Ljava/lang/String;)V
 
-    .line 4
     monitor-enter p0
 
-    .line 5
     :try_start_0
     iget-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->storedInfos:Landroid/util/SparseArray;
 
     invoke-virtual {p1, v0, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 6
     iget-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->unStoredTasks:Landroid/util/SparseArray;
 
     invoke-virtual {p1, v0}, Landroid/util/SparseArray;->remove(I)V
 
-    .line 7
     monitor-exit p0
 
     return-object v1
@@ -453,10 +419,8 @@
         .end annotation
     .end param
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->storedInfos:Landroid/util/SparseArray;
 
@@ -464,12 +428,10 @@
 
     move-result-object v0
 
-    .line 3
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
     move-result v1
@@ -479,7 +441,6 @@
     :goto_0
     if-ge v2, v1, :cond_2
 
-    .line 5
     invoke-virtual {v0, v2}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -490,7 +451,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_0
     invoke-virtual {v3, p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->isSameFrom(Lcom/liulishuo/okdownload/DownloadTask;)Z
 
@@ -514,7 +474,6 @@
     :catchall_0
     move-exception p1
 
-    .line 7
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -532,7 +491,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->keyToIdMap:Lcom/liulishuo/okdownload/core/breakpoint/KeyToIdMap;
 
@@ -542,7 +500,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result p1
@@ -553,7 +510,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->storedInfos:Landroid/util/SparseArray;
@@ -569,7 +525,6 @@
     :goto_0
     if-ge v2, v0, :cond_2
 
-    .line 4
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->storedInfos:Landroid/util/SparseArray;
 
     invoke-virtual {v3, v2}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
@@ -580,14 +535,12 @@
 
     if-eqz v3, :cond_1
 
-    .line 5
     invoke-virtual {v3, p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->isSameFrom(Lcom/liulishuo/okdownload/DownloadTask;)Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 6
     iget p1, v3, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->id:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -601,7 +554,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     :try_start_2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->unStoredTasks:Landroid/util/SparseArray;
@@ -613,7 +565,6 @@
     :goto_1
     if-ge v1, v0, :cond_5
 
-    .line 8
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->unStoredTasks:Landroid/util/SparseArray;
 
     invoke-virtual {v2, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
@@ -626,7 +577,6 @@
 
     goto :goto_2
 
-    .line 9
     :cond_3
     invoke-virtual {v2, p1}, Lcom/liulishuo/okdownload/core/IdentifiedTask;->compareIgnoreId(Lcom/liulishuo/okdownload/core/IdentifiedTask;)Z
 
@@ -650,14 +600,12 @@
 
     goto :goto_1
 
-    .line 10
     :cond_5
     :try_start_3
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->allocateId()I
 
     move-result v0
 
-    .line 11
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->unStoredTasks:Landroid/util/SparseArray;
 
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask;->mock(I)Lcom/liulishuo/okdownload/DownloadTask$MockTaskForCompare;
@@ -666,14 +614,12 @@
 
     invoke-virtual {v1, v0, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 12
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->keyToIdMap:Lcom/liulishuo/okdownload/core/breakpoint/KeyToIdMap;
 
     invoke-virtual {v1, p1, v0}, Lcom/liulishuo/okdownload/core/breakpoint/KeyToIdMap;->add(Lcom/liulishuo/okdownload/DownloadTask;I)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 13
     monitor-exit p0
 
     return v0
@@ -689,7 +635,6 @@
 .method public get(I)Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->storedInfos:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -716,7 +661,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->responseFilenameMap:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -731,7 +675,6 @@
 .method public isFileDirty(I)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->fileDirtyList:Ljava/util/List;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -756,12 +699,10 @@
 .method public markFileClear(I)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->fileDirtyList:Ljava/util/List;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->fileDirtyList:Ljava/util/List;
 
@@ -780,7 +721,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -791,7 +731,6 @@
 .method public markFileDirty(I)Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->fileDirtyList:Ljava/util/List;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -804,12 +743,10 @@
 
     if-nez v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->fileDirtyList:Ljava/util/List;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->fileDirtyList:Ljava/util/List;
 
@@ -823,7 +760,6 @@
 
     if-nez v1, :cond_0
 
-    .line 4
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->fileDirtyList:Ljava/util/List;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -834,12 +770,10 @@
 
     const/4 p1, 0x1
 
-    .line 5
     monitor-exit v0
 
     return p1
 
-    .line 6
     :cond_0
     monitor-exit v0
 
@@ -873,7 +807,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->storedInfos:Landroid/util/SparseArray;
 
     iget v1, p1, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->id:I
@@ -886,7 +819,6 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p2}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getBlock(I)Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
     move-result-object p1
@@ -895,7 +827,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/io/IOException;
 
@@ -917,12 +848,10 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object p3, Lcom/liulishuo/okdownload/core/cause/EndCause;->COMPLETED:Lcom/liulishuo/okdownload/core/cause/EndCause;
 
     if-ne p2, p3, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->remove(I)V
 
     :cond_0
@@ -940,13 +869,11 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->storedInfos:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->remove(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->unStoredTasks:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -963,7 +890,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->keyToIdMap:Lcom/liulishuo/okdownload/core/breakpoint/KeyToIdMap;
 
@@ -971,7 +897,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     monitor-exit p0
 
     return-void
@@ -991,12 +916,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getFilename()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->isTaskOnlyProvidedParentPath()Z
 
     move-result v1
@@ -1005,7 +928,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->responseFilenameMap:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getUrl()Ljava/lang/String;
@@ -1014,7 +936,6 @@
 
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->storedInfos:Landroid/util/SparseArray;
 
@@ -1034,11 +955,9 @@
 
     return v1
 
-    .line 5
     :cond_1
     monitor-enter p0
 
-    .line 6
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStoreOnCache;->storedInfos:Landroid/util/SparseArray;
 
@@ -1050,7 +969,6 @@
 
     invoke-virtual {v0, v2, p1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 7
     monitor-exit p0
 
     return v1

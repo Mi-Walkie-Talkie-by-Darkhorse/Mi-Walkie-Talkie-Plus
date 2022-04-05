@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;
 .super Ljava/lang/Object;
-.source "WebViewActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/view/b$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public a()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/c0;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     const-string v1, "https://m.ifengyu.com/resources/en/productshark.html"
@@ -54,7 +50,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
@@ -62,7 +57,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->a(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 4
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
@@ -84,14 +78,12 @@
 .method public b()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/c0;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     const-string v1, "https://m.ifengyu.com/resources/en/productseal.html"
@@ -100,7 +92,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
@@ -108,7 +99,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->a(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 4
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
@@ -130,14 +120,12 @@
 .method public c()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/c0;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     const-string v1, "https://m.ifengyu.com/resources/en/product.html"
@@ -146,7 +134,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
@@ -154,7 +141,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->a(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 4
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 

@@ -1,6 +1,5 @@
 .class public Lcom/google/common/collect/ImmutableMap$Builder;
 .super Ljava/lang/Object;
-.source "ImmutableMap.java"
 
 
 # annotations
@@ -45,7 +44,6 @@
 
     const/4 v0, 0x4
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableMap$Builder;-><init>(I)V
 
     return-void
@@ -54,17 +52,14 @@
 .method constructor <init>(I)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     new-array p1, p1, [Lcom/google/common/collect/ImmutableMapEntry$TerminalEntry;
 
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMap$Builder;->entries:[Lcom/google/common/collect/ImmutableMapEntry$TerminalEntry;
 
     const/4 p1, 0x0
 
-    .line 4
     iput p1, p0, Lcom/google/common/collect/ImmutableMap$Builder;->size:I
 
     return-void
@@ -73,14 +68,12 @@
 .method private ensureCapacity(I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMap$Builder;->entries:[Lcom/google/common/collect/ImmutableMapEntry$TerminalEntry;
 
     array-length v1, v0
 
     if-le p1, v1, :cond_0
 
-    .line 2
     array-length v1, v0
 
     invoke-static {v1, p1}, Lcom/google/common/collect/ImmutableCollection$Builder;->expandedCapacity(II)I
@@ -111,7 +104,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/ImmutableMap$Builder;->size:I
 
     if-eqz v0, :cond_1
@@ -120,7 +112,6 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/RegularImmutableMap;
 
     iget v1, p0, Lcom/google/common/collect/ImmutableMap$Builder;->size:I
@@ -131,7 +122,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMap$Builder;->entries:[Lcom/google/common/collect/ImmutableMapEntry$TerminalEntry;
 
@@ -157,7 +147,6 @@
 
     return-object v0
 
-    .line 4
     :cond_1
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->of()Lcom/google/common/collect/ImmutableMap;
 
@@ -176,19 +165,16 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/ImmutableMap$Builder;->size:I
 
     add-int/lit8 v0, v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableMap$Builder;->ensureCapacity(I)V
 
-    .line 2
     invoke-static {p1, p2}, Lcom/google/common/collect/ImmutableMap;->entryOf(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMapEntry$TerminalEntry;
 
     move-result-object p1
 
-    .line 3
     iget-object p2, p0, Lcom/google/common/collect/ImmutableMap$Builder;->entries:[Lcom/google/common/collect/ImmutableMapEntry$TerminalEntry;
 
     iget v0, p0, Lcom/google/common/collect/ImmutableMap$Builder;->size:I
@@ -214,7 +200,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -242,7 +227,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/ImmutableMap$Builder;->size:I
 
     invoke-interface {p1}, Ljava/util/Map;->size()I
@@ -253,7 +237,6 @@
 
     invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableMap$Builder;->ensureCapacity(I)V
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -275,7 +258,6 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/google/common/collect/ImmutableMap$Builder;->put(Ljava/util/Map$Entry;)Lcom/google/common/collect/ImmutableMap$Builder;
 
     goto :goto_0

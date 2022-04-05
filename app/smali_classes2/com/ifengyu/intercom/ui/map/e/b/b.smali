@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/map/e/b/b;
 .super Ljava/lang/Object;
-.source "OsmClusterOverlayManager.java"
 
 # interfaces
 .implements Lorg/osmdroid/events/MapListener;
@@ -79,35 +78,28 @@
 .method public constructor <init>(Lorg/osmdroid/views/MapView;ILandroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->f:F
 
-    .line 3
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 4
     new-instance v0, Lcom/ifengyu/intercom/ui/map/e/b/b$c;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/map/e/b/b$c;-><init>(Lcom/ifengyu/intercom/ui/map/e/b/b;)V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->m:Landroid/widget/AdapterView$OnItemClickListener;
 
-    .line 5
     iput-object p3, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->e:Landroid/content/Context;
 
-    .line 6
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->b:Lorg/osmdroid/views/MapView;
 
     int-to-float p1, p2
 
-    .line 7
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->a(F)F
 
     move-result p1
@@ -116,28 +108,24 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->d:I
 
-    .line 8
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->c:Ljava/util/List;
 
-    .line 9
     new-instance p1, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->g:Ljava/util/Map;
 
-    .line 10
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->l:Ljava/util/ArrayList;
 
-    .line 11
     new-instance p1, Lorg/osmdroid/views/overlay/ItemizedOverlayWithFocus;
 
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->l:Ljava/util/ArrayList;
@@ -152,12 +140,10 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->a:Lorg/osmdroid/views/overlay/ItemizedOverlayWithFocus;
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->b:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p1, p0}, Lorg/osmdroid/views/MapView;->setMapListener(Lorg/osmdroid/events/MapListener;)V
 
-    .line 13
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
@@ -166,22 +152,18 @@
 
     const/4 p2, 0x1
 
-    .line 14
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->h:Landroid/graphics/Paint;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
 
-    .line 16
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->h:Landroid/graphics/Paint;
 
     sget-object p2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 17
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->h:Landroid/graphics/Paint;
 
     const/4 p2, -0x1
@@ -204,7 +186,6 @@
 
     add-double/2addr p1, p3
 
-    .line 90
     invoke-static {p1, p2}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide p1
@@ -215,7 +196,6 @@
 .method private a(Landroid/graphics/Point;)Lcom/ifengyu/intercom/ui/map/e/b/a;
     .locals 13
 
-    .line 85
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -235,12 +215,10 @@
 
     check-cast v1, Lcom/ifengyu/intercom/ui/map/e/b/a;
 
-    .line 86
     invoke-virtual {v1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->b()Landroid/graphics/Point;
 
     move-result-object v2
 
-    .line 87
     iget v3, p1, Landroid/graphics/Point;->x:I
 
     int-to-double v5, v3
@@ -280,7 +258,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/map/e/b/b;Lcom/ifengyu/intercom/ui/map/e/b/a;)Lcom/ifengyu/intercom/ui/map/e/b/a;
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->i:Lcom/ifengyu/intercom/ui/map/e/b/a;
 
     return-object p1
@@ -289,7 +266,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/map/e/b/b;Ljava/util/ArrayList;)Ljava/util/ArrayList;
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->k:Ljava/util/ArrayList;
 
     return-object p1
@@ -298,7 +274,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/map/e/b/b;)Lorg/osmdroid/views/MapView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->b:Lorg/osmdroid/views/MapView;
 
     return-object p0
@@ -307,7 +282,6 @@
 .method private a(Lcom/ifengyu/intercom/ui/map/e/b/a;)V
     .locals 9
 
-    .line 33
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->e()I
 
     move-result v0
@@ -318,7 +292,6 @@
 
     return-void
 
-    .line 34
     :cond_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->d()Ljava/util/List;
 
@@ -332,25 +305,21 @@
 
     if-le v0, v2, :cond_1
 
-    .line 35
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->b(Lcom/ifengyu/intercom/ui/map/e/b/a;)V
 
     goto :goto_2
 
-    .line 36
     :cond_1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->a()Lorg/osmdroid/api/IGeoPoint;
 
     move-result-object v0
 
-    .line 37
     new-instance v2, Lcom/ifengyu/intercom/ui/map/f/a/f;
 
     const/4 v3, 0x0
 
     invoke-direct {v2, v3, v3, v0}, Lcom/ifengyu/intercom/ui/map/f/a/f;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 38
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->d()Ljava/util/List;
 
     move-result-object v0
@@ -374,14 +343,12 @@
 
     check-cast v3, Lcom/ifengyu/intercom/ui/map/f/a/f;
 
-    .line 39
     invoke-virtual {v3}, Lcom/ifengyu/intercom/ui/map/f/a/f;->a()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
-    .line 40
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v5
@@ -416,7 +383,6 @@
 
     if-ne v0, v4, :cond_4
 
-    .line 41
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->e()I
 
     move-result v0
@@ -435,7 +401,6 @@
 
     goto :goto_1
 
-    .line 42
     :cond_4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->e()I
 
@@ -453,19 +418,15 @@
 
     invoke-direct {p0, v2, v0, v1, v3}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/ui/map/f/a/f;ILcom/ifengyu/intercom/ui/map/f/a/f;Z)V
 
-    .line 43
     :goto_1
     invoke-virtual {v2, p1}, Lcom/ifengyu/intercom/ui/map/f/a/f;->a(Ljava/lang/Object;)V
 
-    .line 44
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->a:Lorg/osmdroid/views/overlay/ItemizedOverlayWithFocus;
 
     invoke-virtual {v0, v2}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->addItem(Lorg/osmdroid/views/overlay/OverlayItem;)Z
 
-    .line 45
     invoke-virtual {p1, v2}, Lcom/ifengyu/intercom/ui/map/e/b/a;->b(Lcom/ifengyu/intercom/ui/map/f/a/f;)V
 
-    .line 46
     :goto_2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->d()Ljava/util/List;
 
@@ -488,7 +449,6 @@
 
     check-cast v0, Lcom/ifengyu/intercom/ui/map/f/a/f;
 
-    .line 47
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->a:Lorg/osmdroid/views/overlay/ItemizedOverlayWithFocus;
 
     invoke-virtual {v1, v0}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->removeItem(Lorg/osmdroid/views/overlay/OverlayItem;)Z
@@ -502,7 +462,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/map/e/b/b;Lorg/osmdroid/views/MapView;)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lorg/osmdroid/views/MapView;)V
 
     return-void
@@ -511,7 +470,6 @@
 .method private a(Lcom/ifengyu/intercom/ui/map/f/a/f;ILcom/ifengyu/intercom/ui/map/f/a/f;Z)V
     .locals 10
 
-    .line 62
     invoke-virtual {p3}, Lcom/ifengyu/intercom/ui/map/f/a/f;->a()Ljava/lang/Object;
 
     move-result-object p3
@@ -522,7 +480,6 @@
 
     if-eqz p1, :cond_6
 
-    .line 63
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->e:Landroid/content/Context;
 
     const v1, 0x7f0c00ce
@@ -535,7 +492,6 @@
 
     const v1, 0x7f090257
 
-    .line 64
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
@@ -544,14 +500,12 @@
 
     const v3, 0x7f090256
 
-    .line 65
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v3
 
     check-cast v3, Landroid/widget/TextView;
 
-    .line 66
     invoke-virtual {p3}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getImgUrl()Ljava/lang/String;
 
     move-result-object p3
@@ -562,7 +516,6 @@
 
     if-eqz p3, :cond_0
 
-    .line 67
     invoke-virtual {p3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
@@ -575,7 +528,6 @@
 
     if-nez v6, :cond_0
 
-    .line 68
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v2
@@ -599,7 +551,6 @@
 
     if-eqz v2, :cond_3
 
-    .line 69
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v2
@@ -608,13 +559,11 @@
 
     goto :goto_0
 
-    .line 70
     :cond_1
     invoke-virtual {v1, v9}, Landroid/widget/ImageView;->setVisibility(I)V
 
     new-array v2, v7, [Ljava/lang/Object;
 
-    .line 71
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2
@@ -627,7 +576,6 @@
 
     invoke-virtual {v3, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 72
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object p2
@@ -658,7 +606,6 @@
 
     if-eqz p4, :cond_2
 
-    .line 73
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->e:Landroid/content/Context;
 
     invoke-virtual {p3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -671,23 +618,19 @@
 
     invoke-virtual {v3, p3}, Landroid/widget/TextView;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 74
     invoke-static {p2}, Lcom/ifengyu/intercom/i/c0;->a(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     move-result-object p2
 
-    .line 75
     :cond_2
     invoke-virtual {v1, p2}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 76
     invoke-static {v0}, Lcom/ifengyu/intercom/i/c0;->a(Landroid/view/View;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
     if-eqz p2, :cond_6
 
-    .line 77
     invoke-virtual {p1, p2}, Lorg/osmdroid/views/overlay/OverlayItem;->setMarker(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_1
@@ -696,7 +639,6 @@
     :goto_0
     if-eqz p4, :cond_4
 
-    .line 78
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->e:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -712,12 +654,10 @@
     :cond_4
     const/16 v2, 0x8
 
-    .line 79
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
     new-array v1, v7, [Ljava/lang/Object;
 
-    .line 80
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -730,20 +670,17 @@
 
     invoke-virtual {v3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 81
     invoke-static {v0}, Lcom/ifengyu/intercom/i/c0;->a(Landroid/view/View;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     if-eqz v0, :cond_5
 
-    .line 82
     invoke-virtual {p1, v0}, Lorg/osmdroid/views/overlay/OverlayItem;->setMarker(Landroid/graphics/drawable/Drawable;)V
 
     :cond_5
     if-eqz p3, :cond_6
 
-    .line 83
     invoke-virtual {p3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -756,7 +693,6 @@
 
     if-nez v0, :cond_6
 
-    .line 84
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v0
@@ -777,7 +713,6 @@
 
     if-eqz p2, :cond_5
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->g:Ljava/util/Map;
 
     if-eqz v0, :cond_5
@@ -788,7 +723,6 @@
 
     if-lez v0, :cond_5
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->e:Landroid/content/Context;
 
     const v1, 0x7f0c00d1
@@ -801,14 +735,12 @@
 
     const v1, 0x7f090266
 
-    .line 8
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/widget/ImageView;
 
-    .line 9
     invoke-virtual {p2}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getImgUrl()Ljava/lang/String;
 
     move-result-object v3
@@ -819,7 +751,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 10
     invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
@@ -832,7 +763,6 @@
 
     if-nez v6, :cond_0
 
-    .line 11
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v2
@@ -848,7 +778,6 @@
     :cond_0
     if-eqz v2, :cond_3
 
-    .line 12
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v2
@@ -860,10 +789,8 @@
     :cond_1
     const/4 v2, 0x0
 
-    .line 13
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 14
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v2
@@ -898,23 +825,19 @@
 
     if-eqz p3, :cond_2
 
-    .line 15
     invoke-static {p2}, Lcom/ifengyu/intercom/i/c0;->a(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     move-result-object p2
 
-    .line 16
     :cond_2
     invoke-virtual {v1, p2}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 17
     invoke-static {v0}, Lcom/ifengyu/intercom/i/c0;->a(Landroid/view/View;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
     if-eqz p2, :cond_5
 
-    .line 18
     invoke-virtual {p1, p2}, Lorg/osmdroid/views/overlay/OverlayItem;->setMarker(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_1
@@ -923,23 +846,19 @@
     :goto_0
     const/16 p2, 0x8
 
-    .line 19
     invoke-virtual {v1, p2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 20
     invoke-static {v0}, Lcom/ifengyu/intercom/i/c0;->a(Landroid/view/View;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
     if-eqz p2, :cond_4
 
-    .line 21
     invoke-virtual {p1, p2}, Lorg/osmdroid/views/overlay/OverlayItem;->setMarker(Landroid/graphics/drawable/Drawable;)V
 
     :cond_4
     if-eqz v3, :cond_5
 
-    .line 22
     invoke-virtual {v3, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
@@ -952,7 +871,6 @@
 
     if-nez p2, :cond_5
 
-    .line 23
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object p2
@@ -971,7 +889,6 @@
 .method private a(Lorg/osmdroid/views/MapView;)V
     .locals 9
 
-    .line 48
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->e:Landroid/content/Context;
 
     const v1, 0x7f0c00c1
@@ -984,29 +901,24 @@
 
     const v1, 0x7f09019b
 
-    .line 49
     invoke-virtual {v0, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/widget/ListView;
 
-    .line 50
     new-instance v2, Lcom/ifengyu/intercom/ui/map/e/b/b$e;
 
     invoke-direct {v2, p0}, Lcom/ifengyu/intercom/ui/map/e/b/b$e;-><init>(Lcom/ifengyu/intercom/ui/map/e/b/b;)V
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->j:Lcom/ifengyu/intercom/ui/map/e/b/b$e;
 
-    .line 51
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 52
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->m:Landroid/widget/AdapterView$OnItemClickListener;
 
     invoke-virtual {v1, v2}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 53
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->e:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1021,7 +933,6 @@
 
     int-to-float v1, v1
 
-    .line 54
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->e:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1036,7 +947,6 @@
 
     int-to-float v2, v2
 
-    .line 55
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->i:Lcom/ifengyu/intercom/ui/map/e/b/a;
 
     invoke-virtual {v3}, Lcom/ifengyu/intercom/ui/map/e/b/a;->e()I
@@ -1055,7 +965,6 @@
 
     mul-float v2, v2, v6
 
-    .line 56
     :cond_0
     new-instance v3, Landroid/widget/PopupWindow;
 
@@ -1075,23 +984,18 @@
 
     const/4 v0, 0x1
 
-    .line 57
     invoke-virtual {v3, v0}, Landroid/widget/PopupWindow;->setTouchable(Z)V
 
-    .line 58
     invoke-virtual {v3, v0}, Landroid/widget/PopupWindow;->setFocusable(Z)V
 
-    .line 59
     invoke-virtual {v3, v0}, Landroid/widget/PopupWindow;->setOutsideTouchable(Z)V
 
-    .line 60
     new-instance v0, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-direct {v0}, Landroid/graphics/drawable/BitmapDrawable;-><init>()V
 
     invoke-virtual {v3, v0}, Landroid/widget/PopupWindow;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 61
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getWidth()I
 
     move-result v0
@@ -1148,7 +1052,6 @@
 .method private a(I)Z
     .locals 4
 
-    .line 91
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -1181,7 +1084,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/map/e/b/b;)Landroid/content/Context;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->e:Landroid/content/Context;
 
     return-object p0
@@ -1190,12 +1092,10 @@
 .method private b(Lcom/ifengyu/intercom/ui/map/e/b/a;)V
     .locals 11
 
-    .line 8
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->c()Lcom/ifengyu/intercom/ui/map/f/a/f;
 
     move-result-object v0
 
-    .line 9
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->d()Ljava/util/List;
 
     move-result-object v1
@@ -1204,14 +1104,12 @@
 
     if-nez v0, :cond_0
 
-    .line 10
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/ifengyu/intercom/ui/map/f/a/f;
 
-    .line 11
     :cond_0
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1234,14 +1132,12 @@
 
     check-cast v4, Lcom/ifengyu/intercom/ui/map/f/a/f;
 
-    .line 12
     invoke-virtual {v4}, Lcom/ifengyu/intercom/ui/map/f/a/f;->a()Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
-    .line 13
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v7
@@ -1274,7 +1170,6 @@
     :goto_0
     if-ne v3, v6, :cond_3
 
-    .line 14
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->e()I
 
     move-result p1
@@ -1289,7 +1184,6 @@
 
     goto :goto_1
 
-    .line 15
     :cond_3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->e()I
 
@@ -1310,7 +1204,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/map/e/b/b;)Lcom/ifengyu/intercom/ui/map/e/b/a;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->i:Lcom/ifengyu/intercom/ui/map/e/b/a;
 
     return-object p0
@@ -1319,7 +1212,6 @@
 .method private c(Lcom/ifengyu/intercom/bean/BeanUserLocation;)Lcom/ifengyu/intercom/ui/map/f/a/f;
     .locals 4
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/ui/map/f/a/f;
 
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->d(Lcom/ifengyu/intercom/bean/BeanUserLocation;)Lorg/osmdroid/util/GeoPoint;
@@ -1330,10 +1222,8 @@
 
     invoke-direct {v0, v2, v2, v1}, Lcom/ifengyu/intercom/ui/map/f/a/f;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 3
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/map/f/a/f;->a(Ljava/lang/Object;)V
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->g:Ljava/util/Map;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getUserID()Ljava/lang/String;
@@ -1346,7 +1236,6 @@
 
     invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getTime()I
 
     move-result v1
@@ -1359,7 +1248,6 @@
 
     const/4 v1, 0x1
 
-    .line 6
     invoke-direct {p0, v0, p1, v1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/ui/map/f/a/f;Lcom/ifengyu/intercom/bean/BeanUserLocation;Z)V
 
     goto :goto_0
@@ -1367,7 +1255,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 7
     invoke-direct {p0, v0, p1, v1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/ui/map/f/a/f;Lcom/ifengyu/intercom/bean/BeanUserLocation;Z)V
 
     :goto_0
@@ -1377,7 +1264,6 @@
 .method private c()V
     .locals 6
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -1397,7 +1283,6 @@
 
     check-cast v1, Lcom/ifengyu/intercom/ui/map/e/b/a;
 
-    .line 9
     invoke-virtual {v1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->d()Ljava/util/List;
 
     move-result-object v1
@@ -1406,18 +1291,15 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->a:Lorg/osmdroid/views/overlay/ItemizedOverlayWithFocus;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->removeAllItems()V
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->g:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -1441,7 +1323,6 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 13
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->g:Ljava/util/Map;
 
     invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1450,12 +1331,10 @@
 
     check-cast v1, Lcom/ifengyu/intercom/ui/map/d/a;
 
-    .line 14
     invoke-virtual {v1}, Lcom/ifengyu/intercom/ui/map/d/a;->a()Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     move-result-object v2
 
-    .line 15
     new-instance v3, Lcom/ifengyu/intercom/ui/map/f/a/f;
 
     invoke-direct {p0, v2}, Lcom/ifengyu/intercom/ui/map/e/b/b;->d(Lcom/ifengyu/intercom/bean/BeanUserLocation;)Lorg/osmdroid/util/GeoPoint;
@@ -1466,10 +1345,8 @@
 
     invoke-direct {v3, v5, v5, v4}, Lcom/ifengyu/intercom/ui/map/f/a/f;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 16
     invoke-virtual {v3, v2}, Lcom/ifengyu/intercom/ui/map/f/a/f;->a(Ljava/lang/Object;)V
 
-    .line 17
     invoke-virtual {v2}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getTime()I
 
     move-result v4
@@ -1482,7 +1359,6 @@
 
     const/4 v4, 0x1
 
-    .line 18
     invoke-direct {p0, v3, v2, v4}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/ui/map/f/a/f;Lcom/ifengyu/intercom/bean/BeanUserLocation;Z)V
 
     goto :goto_2
@@ -1490,14 +1366,11 @@
     :cond_1
     const/4 v4, 0x0
 
-    .line 19
     invoke-direct {p0, v3, v2, v4}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/ui/map/f/a/f;Lcom/ifengyu/intercom/bean/BeanUserLocation;Z)V
 
-    .line 20
     :goto_2
     invoke-virtual {v1, v3}, Lcom/ifengyu/intercom/ui/map/d/a;->a(Lcom/ifengyu/intercom/ui/map/f/a/f;)V
 
-    .line 21
     invoke-virtual {p0, v3}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/ui/map/f/a/f;)V
 
     goto :goto_1
@@ -1509,7 +1382,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/map/e/b/b;)Ljava/util/ArrayList;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->k:Ljava/util/ArrayList;
 
     return-object p0
@@ -1518,7 +1390,6 @@
 .method private d(Lcom/ifengyu/intercom/bean/BeanUserLocation;)Lorg/osmdroid/util/GeoPoint;
     .locals 5
 
-    .line 2
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getLatitudeDouble()D
@@ -1539,7 +1410,6 @@
 .method public a()V
     .locals 3
 
-    .line 88
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->b:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getOverlays()Ljava/util/List;
@@ -1554,7 +1424,6 @@
 
     if-nez v0, :cond_0
 
-    .line 89
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->b:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getOverlays()Ljava/util/List;
@@ -1574,7 +1443,6 @@
 .method public a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
     .locals 0
 
-    .line 5
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->c(Lcom/ifengyu/intercom/bean/BeanUserLocation;)Lcom/ifengyu/intercom/ui/map/f/a/f;
 
     move-result-object p1
@@ -1591,13 +1459,11 @@
 
     return-void
 
-    .line 24
     :cond_0
     invoke-virtual {p1}, Lorg/osmdroid/views/overlay/OverlayItem;->getPoint()Lorg/osmdroid/api/IGeoPoint;
 
     move-result-object v0
 
-    .line 25
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->b:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v1}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
@@ -1610,36 +1476,29 @@
 
     move-result-object v1
 
-    .line 26
     invoke-direct {p0, v1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Landroid/graphics/Point;)Lcom/ifengyu/intercom/ui/map/e/b/a;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    .line 27
     invoke-virtual {v2, p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->a(Lcom/ifengyu/intercom/ui/map/f/a/f;)V
 
-    .line 28
     invoke-direct {p0, v2}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/ui/map/e/b/a;)V
 
     goto :goto_0
 
-    .line 29
     :cond_1
     new-instance v2, Lcom/ifengyu/intercom/ui/map/e/b/a;
 
     invoke-direct {v2, v1, v0}, Lcom/ifengyu/intercom/ui/map/e/b/a;-><init>(Landroid/graphics/Point;Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 30
     invoke-virtual {v2, p1}, Lcom/ifengyu/intercom/ui/map/e/b/a;->a(Lcom/ifengyu/intercom/ui/map/f/a/f;)V
 
-    .line 31
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->c:Ljava/util/List;
 
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 32
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->a:Lorg/osmdroid/views/overlay/ItemizedOverlayWithFocus;
 
     invoke-virtual {v0, p1}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->addItem(Lorg/osmdroid/views/overlay/OverlayItem;)Z
@@ -1651,7 +1510,6 @@
 .method public b()V
     .locals 2
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->b:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getOverlays()Ljava/util/List;
@@ -1666,7 +1524,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->b:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getOverlays()Ljava/util/List;
@@ -1684,7 +1541,6 @@
 .method public b(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
     .locals 2
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1707,7 +1563,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->g:Ljava/util/Map;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getUserID()Ljava/lang/String;
@@ -1720,7 +1575,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->g:Ljava/util/Map;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getUserID()Ljava/lang/String;
@@ -1733,15 +1587,12 @@
 
     check-cast v0, Lcom/ifengyu/intercom/ui/map/d/a;
 
-    .line 5
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/map/d/a;->a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/map/e/b/b;->c()V
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
@@ -1760,7 +1611,6 @@
 .method public onZoom(Lorg/osmdroid/events/ZoomEvent;)Z
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->b:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapView;->getZoomLevel()I
@@ -1769,7 +1619,6 @@
 
     int-to-float p1, p1
 
-    .line 2
     invoke-static {p1}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result v0
@@ -1782,10 +1631,8 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/map/e/b/b;->c()V
 
-    .line 4
     iput p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b;->f:F
 
     :cond_0

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lio/reactivex/internal/util/SuppressAnimalSniffer;
 .super Ljava/lang/Object;
-.source "SuppressAnimalSniffer.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

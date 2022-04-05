@@ -1,6 +1,5 @@
 .class final Lcom/umeng/commonsdk/UMConfigureImpl$1;
 .super Ljava/lang/Object;
-.source "UMConfigureImpl.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     :try_start_0
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigureImpl;->a()I
 
@@ -48,7 +45,6 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 2
     :cond_0
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigureImpl;->c()Z
 
@@ -58,17 +54,14 @@
 
     const/4 v0, 0x1
 
-    .line 3
     invoke-static {v0}, Lcom/umeng/commonsdk/UMConfigureImpl;->a(Z)Z
 
-    .line 4
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigureImpl;->d()Landroid/content/Context;
 
     move-result-object v0
 
     invoke-static {v0}, Lcom/umeng/commonsdk/UMConfigureImpl;->a(Landroid/content/Context;)V
 
-    .line 5
     :cond_1
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigureImpl;->e()Ljava/util/concurrent/ScheduledExecutorService;
 
@@ -76,7 +69,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 6
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigureImpl;->e()Ljava/util/concurrent/ScheduledExecutorService;
 
     move-result-object v0
@@ -85,10 +77,8 @@
 
     const/4 v0, 0x0
 
-    .line 7
     invoke-static {v0}, Lcom/umeng/commonsdk/UMConfigureImpl;->a(Ljava/util/concurrent/ScheduledExecutorService;)Ljava/util/concurrent/ScheduledExecutorService;
 
-    .line 8
     :cond_2
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigureImpl;->f()I
     :try_end_0

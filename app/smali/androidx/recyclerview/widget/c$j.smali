@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/c$j;
 .super Ljava/lang/Object;
-.source "DefaultItemAnimator.java"
 
 
 # annotations
@@ -30,22 +29,16 @@
 .method constructor <init>(Landroidx/recyclerview/widget/RecyclerView$y;IIII)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/recyclerview/widget/c$j;->a:Landroidx/recyclerview/widget/RecyclerView$y;
 
-    .line 3
     iput p2, p0, Landroidx/recyclerview/widget/c$j;->b:I
 
-    .line 4
     iput p3, p0, Landroidx/recyclerview/widget/c$j;->c:I
 
-    .line 5
     iput p4, p0, Landroidx/recyclerview/widget/c$j;->d:I
 
-    .line 6
     iput p5, p0, Landroidx/recyclerview/widget/c$j;->e:I
 
     return-void

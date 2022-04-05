@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/CheckResult;
 .super Ljava/lang/Object;
-.source "CheckResult.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

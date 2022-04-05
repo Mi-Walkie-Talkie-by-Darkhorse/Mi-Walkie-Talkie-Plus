@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/btle/d;
 .super Ljava/io/InputStream;
-.source "BtleInputStream.java"
 
 
 # static fields
@@ -24,7 +23,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/node/btle/d;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -39,10 +37,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/LinkedBlockingDeque;
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>()V
@@ -51,7 +47,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/d;->b:I
 
     return-void
@@ -62,7 +57,6 @@
 .method public a([B)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/d;->a:Ljava/util/concurrent/LinkedBlockingDeque;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/LinkedBlockingDeque;->offerLast(Ljava/lang/Object;)Z
@@ -71,7 +65,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     sget-object p1, Lcom/ifengyu/intercom/node/btle/d;->c:Ljava/lang/String;
 
     const-string v0, "Full Read Queue. Dropping data on the floor."
@@ -90,7 +83,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "Operation unsupported"
@@ -108,7 +100,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/node/btle/d;->c:Ljava/lang/String;
 
     const-string v1, "closing BtleInputStream"
@@ -121,7 +112,6 @@
 .method public mark(I)V
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "Operation unsupported"
@@ -147,7 +137,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "Operation unsupported"
@@ -165,7 +154,6 @@
         }
     .end annotation
 
-    .line 10
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "Operation unsupported"
@@ -183,7 +171,6 @@
         }
     .end annotation
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/d;->a:Ljava/util/concurrent/LinkedBlockingDeque;
 
@@ -193,7 +180,6 @@
 
     check-cast v0, [B
 
-    .line 3
     array-length v1, v0
 
     iget v2, p0, Lcom/ifengyu/intercom/node/btle/d;->b:I
@@ -204,12 +190,10 @@
 
     move-result p3
 
-    .line 4
     iget v1, p0, Lcom/ifengyu/intercom/node/btle/d;->b:I
 
     invoke-static {v0, v1, p1, p2, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 5
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/d;->b:I
 
     add-int/2addr p1, p3
@@ -218,14 +202,12 @@
 
     if-ge p1, p2, :cond_0
 
-    .line 6
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/d;->b:I
 
     add-int/2addr p1, p3
 
     iput p1, p0, Lcom/ifengyu/intercom/node/btle/d;->b:I
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/d;->a:Ljava/util/concurrent/LinkedBlockingDeque;
 
     invoke-virtual {p1, v0}, Ljava/util/concurrent/LinkedBlockingDeque;->addFirst(Ljava/lang/Object;)V
@@ -235,7 +217,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 8
     iput p1, p0, Lcom/ifengyu/intercom/node/btle/d;->b:I
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
@@ -246,7 +227,6 @@
     :catch_0
     move-exception p1
 
-    .line 9
     sget-object p2, Lcom/ifengyu/intercom/node/btle/d;->c:Ljava/lang/String;
 
     new-instance p3, Ljava/lang/StringBuilder;
@@ -284,7 +264,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
@@ -312,7 +291,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "Operation unsupported"

@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/SearchView$o;
 .super Landroid/view/TouchDelegate;
-.source "SearchView.java"
 
 
 # annotations
@@ -32,10 +31,8 @@
 .method public constructor <init>(Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/view/View;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1, p3}, Landroid/view/TouchDelegate;-><init>(Landroid/graphics/Rect;Landroid/view/View;)V
 
-    .line 2
     invoke-virtual {p3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -50,31 +47,26 @@
 
     iput v0, p0, Landroidx/appcompat/widget/SearchView$o;->e:I
 
-    .line 3
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v0, p0, Landroidx/appcompat/widget/SearchView$o;->b:Landroid/graphics/Rect;
 
-    .line 4
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v0, p0, Landroidx/appcompat/widget/SearchView$o;->d:Landroid/graphics/Rect;
 
-    .line 5
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v0, p0, Landroidx/appcompat/widget/SearchView$o;->c:Landroid/graphics/Rect;
 
-    .line 6
     invoke-virtual {p0, p1, p2}, Landroidx/appcompat/widget/SearchView$o;->a(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
 
-    .line 7
     iput-object p3, p0, Landroidx/appcompat/widget/SearchView$o;->a:Landroid/view/View;
 
     return-void
@@ -85,17 +77,14 @@
 .method public a(Landroid/graphics/Rect;Landroid/graphics/Rect;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SearchView$o;->b:Landroid/graphics/Rect;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/SearchView$o;->d:Landroid/graphics/Rect;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
 
-    .line 3
     iget-object p1, p0, Landroidx/appcompat/widget/SearchView$o;->d:Landroid/graphics/Rect;
 
     iget v0, p0, Landroidx/appcompat/widget/SearchView$o;->e:I
@@ -106,7 +95,6 @@
 
     invoke-virtual {p1, v1, v0}, Landroid/graphics/Rect;->inset(II)V
 
-    .line 4
     iget-object p1, p0, Landroidx/appcompat/widget/SearchView$o;->c:Landroid/graphics/Rect;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Rect;->set(Landroid/graphics/Rect;)V
@@ -117,21 +105,18 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 7
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
 
     float-to-int v0, v0
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v1
 
     float-to-int v1, v1
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v2
@@ -154,22 +139,18 @@
 
     goto :goto_2
 
-    .line 4
     :cond_0
     iget-boolean v2, p0, Landroidx/appcompat/widget/SearchView$o;->f:Z
 
-    .line 5
     iput-boolean v5, p0, Landroidx/appcompat/widget/SearchView$o;->f:Z
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-boolean v2, p0, Landroidx/appcompat/widget/SearchView$o;->f:Z
 
     if-eqz v2, :cond_2
 
-    .line 7
     iget-object v6, p0, Landroidx/appcompat/widget/SearchView$o;->d:Landroid/graphics/Rect;
 
     invoke-virtual {v6, v0, v1}, Landroid/graphics/Rect;->contains(II)Z
@@ -193,7 +174,6 @@
 
     goto :goto_3
 
-    .line 8
     :cond_3
     iget-object v2, p0, Landroidx/appcompat/widget/SearchView$o;->b:Landroid/graphics/Rect;
 
@@ -203,7 +183,6 @@
 
     if-eqz v2, :cond_4
 
-    .line 9
     iput-boolean v4, p0, Landroidx/appcompat/widget/SearchView$o;->f:Z
 
     goto :goto_1
@@ -219,7 +198,6 @@
 
     if-eqz v2, :cond_5
 
-    .line 10
     iget-object v2, p0, Landroidx/appcompat/widget/SearchView$o;->c:Landroid/graphics/Rect;
 
     invoke-virtual {v2, v0, v1}, Landroid/graphics/Rect;->contains(II)Z
@@ -228,7 +206,6 @@
 
     if-nez v2, :cond_5
 
-    .line 11
     iget-object v0, p0, Landroidx/appcompat/widget/SearchView$o;->a:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
@@ -241,7 +218,6 @@
 
     iget-object v1, p0, Landroidx/appcompat/widget/SearchView$o;->a:Landroid/view/View;
 
-    .line 12
     invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
     move-result v1
@@ -250,12 +226,10 @@
 
     int-to-float v1, v1
 
-    .line 13
     invoke-virtual {p1, v0, v1}, Landroid/view/MotionEvent;->setLocation(FF)V
 
     goto :goto_4
 
-    .line 14
     :cond_5
     iget-object v2, p0, Landroidx/appcompat/widget/SearchView$o;->c:Landroid/graphics/Rect;
 
@@ -273,7 +247,6 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/view/MotionEvent;->setLocation(FF)V
 
-    .line 15
     :goto_4
     iget-object v0, p0, Landroidx/appcompat/widget/SearchView$o;->a:Landroid/view/View;
 

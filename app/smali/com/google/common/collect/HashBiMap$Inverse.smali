@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/HashBiMap$Inverse;
 .super Ljava/util/AbstractMap;
-.source "HashBiMap.java"
 
 # interfaces
 .implements Lcom/google/common/collect/BiMap;
@@ -42,7 +41,6 @@
 .method private constructor <init>(Lcom/google/common/collect/HashBiMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-direct {p0}, Ljava/util/AbstractMap;-><init>()V
@@ -53,7 +51,6 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/HashBiMap;Lcom/google/common/collect/HashBiMap$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/collect/HashBiMap$Inverse;-><init>(Lcom/google/common/collect/HashBiMap;)V
 
     return-void
@@ -64,7 +61,6 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/HashBiMap$Inverse;->forward()Lcom/google/common/collect/BiMap;
 
     move-result-object v0
@@ -81,7 +77,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/HashBiMap$Inverse;->forward()Lcom/google/common/collect/BiMap;
 
     move-result-object v0
@@ -104,7 +99,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/HashBiMap$Inverse$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/HashBiMap$Inverse$1;-><init>(Lcom/google/common/collect/HashBiMap$Inverse;)V
@@ -128,7 +122,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
 
     const/4 v1, 0x1
@@ -150,7 +143,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
 
     return-object v0
@@ -170,7 +162,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-static {p1}, Lcom/google/common/collect/HashBiMap;->access$300(Ljava/lang/Object;)I
@@ -187,7 +178,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p1, Lcom/google/common/collect/ImmutableEntry;->key:Ljava/lang/Object;
 
@@ -205,7 +195,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/HashBiMap$Inverse;->forward()Lcom/google/common/collect/BiMap;
 
     move-result-object v0
@@ -223,7 +212,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet;-><init>(Lcom/google/common/collect/HashBiMap$Inverse;)V
@@ -247,7 +235,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
 
     const/4 v1, 0x0
@@ -273,7 +260,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-static {p1}, Lcom/google/common/collect/HashBiMap;->access$300(Ljava/lang/Object;)I
@@ -290,13 +276,11 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/HashBiMap;->access$200(Lcom/google/common/collect/HashBiMap;Lcom/google/common/collect/HashBiMap$BiEntry;)V
 
-    .line 3
     iget-object p1, p1, Lcom/google/common/collect/ImmutableEntry;->key:Ljava/lang/Object;
 
     return-object p1
@@ -305,7 +289,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-static {v0}, Lcom/google/common/collect/HashBiMap;->access$900(Lcom/google/common/collect/HashBiMap;)I
@@ -318,7 +301,6 @@
 .method public bridge synthetic values()Ljava/util/Collection;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/HashBiMap$Inverse;->values()Ljava/util/Set;
 
     move-result-object v0
@@ -336,7 +318,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/HashBiMap$Inverse;->forward()Lcom/google/common/collect/BiMap;
 
     move-result-object v0
@@ -351,7 +332,6 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/HashBiMap$InverseSerializedForm;
 
     iget-object v1, p0, Lcom/google/common/collect/HashBiMap$Inverse;->this$0:Lcom/google/common/collect/HashBiMap;

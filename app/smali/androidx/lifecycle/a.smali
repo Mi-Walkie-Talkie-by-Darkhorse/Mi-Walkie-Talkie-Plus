@@ -1,6 +1,5 @@
 .class public Landroidx/lifecycle/a;
 .super Landroidx/lifecycle/v;
-.source "AndroidViewModel.java"
 
 
 # instance fields
@@ -21,10 +20,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Landroidx/lifecycle/v;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/lifecycle/a;->a:Landroid/app/Application;
 
     return-void
@@ -45,7 +42,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/a;->a:Landroid/app/Application;
 
     return-object v0

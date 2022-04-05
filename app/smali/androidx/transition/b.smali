@@ -1,6 +1,5 @@
 .class Landroidx/transition/b;
 .super Ljava/lang/Object;
-.source "CanvasUtils.java"
 
 
 # static fields
@@ -24,7 +23,6 @@
         }
     .end annotation
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
@@ -40,12 +38,10 @@
 
     if-eqz p1, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Landroid/graphics/Canvas;->enableZ()V
 
     goto :goto_2
 
-    .line 3
     :cond_1
     invoke-virtual {p0}, Landroid/graphics/Canvas;->disableZ()V
 
@@ -56,7 +52,6 @@
 
     if-eq v0, v1, :cond_6
 
-    .line 4
     sget-boolean v0, Landroidx/transition/b;->c:Z
 
     const/4 v1, 0x0
@@ -65,7 +60,6 @@
 
     const/4 v0, 0x1
 
-    .line 5
     :try_start_0
     const-class v2, Landroid/graphics/Canvas;
 
@@ -79,10 +73,8 @@
 
     sput-object v2, Landroidx/transition/b;->a:Ljava/lang/reflect/Method;
 
-    .line 6
     invoke-virtual {v2, v0}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 7
     const-class v2, Landroid/graphics/Canvas;
 
     const-string v3, "insertInorderBarrier"
@@ -95,25 +87,21 @@
 
     sput-object v2, Landroidx/transition/b;->b:Ljava/lang/reflect/Method;
 
-    .line 8
     invoke-virtual {v2, v0}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 9
     :catch_0
     sput-boolean v0, Landroidx/transition/b;->c:Z
 
     :cond_3
     if-eqz p1, :cond_4
 
-    .line 10
     :try_start_1
     sget-object v0, Landroidx/transition/b;->a:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_4
 
-    .line 11
     sget-object v0, Landroidx/transition/b;->a:Ljava/lang/reflect/Method;
 
     new-array v2, v1, [Ljava/lang/Object;
@@ -131,12 +119,10 @@
     :goto_0
     if-nez p1, :cond_5
 
-    .line 12
     sget-object p1, Landroidx/transition/b;->b:Ljava/lang/reflect/Method;
 
     if-eqz p1, :cond_5
 
-    .line 13
     sget-object p1, Landroidx/transition/b;->b:Ljava/lang/reflect/Method;
 
     new-array v0, v1, [Ljava/lang/Object;
@@ -148,7 +134,6 @@
 
     goto :goto_2
 
-    .line 14
     :goto_1
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -165,7 +150,6 @@
     :goto_2
     return-void
 
-    .line 15
     :cond_6
     new-instance p0, Ljava/lang/IllegalStateException;
 

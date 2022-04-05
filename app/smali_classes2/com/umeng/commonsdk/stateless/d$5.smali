@@ -1,6 +1,5 @@
 .class final Lcom/umeng/commonsdk/stateless/d$5;
 .super Ljava/lang/Object;
-.source "UMSLUtils.java"
 
 # interfaces
 .implements Ljava/io/FilenameFilter;
@@ -25,7 +24,6 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/stateless/d$5;->a:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public accept(Ljava/io/File;Ljava/lang/String;)Z
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/umeng/commonsdk/stateless/d$5;->a:Ljava/lang/String;
 
     invoke-virtual {p2, p1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z

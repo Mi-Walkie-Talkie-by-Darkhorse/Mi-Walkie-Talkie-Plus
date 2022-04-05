@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;
 .super Landroid/widget/ImageView;
-.source "CirclrImageView.java"
 
 
 # instance fields
@@ -19,7 +18,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -28,17 +26,14 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
 
-    .line 2
     invoke-direct {p0, p1, p2}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 3
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->a:Landroid/graphics/Paint;
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/R$styleable;->CirclrImageView:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -49,7 +44,6 @@
 
     const/4 v0, 0x3
 
-    .line 5
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInteger(II)I
 
     move-result v0
@@ -60,17 +54,14 @@
 
     const v1, -0x9c4701
 
-    .line 6
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getInteger(II)I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->c:I
 
-    .line 7
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 8
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->b:I
 
     mul-int/lit8 p1, p1, 0x2
@@ -81,12 +72,10 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->d:Landroid/graphics/Paint;
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->a:Landroid/graphics/Paint;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->a:Landroid/graphics/Paint;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
@@ -101,18 +90,14 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
 
-    .line 2
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 3
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
 
-    .line 4
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
@@ -120,15 +105,12 @@
     :cond_0
     const/high16 v1, -0x1000000
 
-    .line 5
     invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 6
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v1
 
-    .line 7
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v2
@@ -157,7 +139,6 @@
 
     move p2, v0
 
-    .line 8
     :cond_3
     sget-object v4, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
@@ -165,12 +146,10 @@
 
     move-result-object v4
 
-    .line 9
     new-instance v5, Landroid/graphics/Canvas;
 
     invoke-direct {v5, v4}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 10
     new-instance v6, Landroid/graphics/Rect;
 
     div-int/lit8 v1, v1, 0x2
@@ -189,22 +168,18 @@
 
     invoke-direct {v6, v7, v8, v1, v2}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 11
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0, v3, v3, p2, p2}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 12
     invoke-virtual {v5, v3, v3, v3, v3}, Landroid/graphics/Canvas;->drawARGB(IIII)V
 
-    .line 13
     div-int/lit8 p2, p2, 0x2
 
     int-to-float p2, p2
 
     invoke-virtual {v5, p2, p2, p2, p1}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 14
     new-instance p2, Landroid/graphics/PorterDuffXfermode;
 
     sget-object v1, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
@@ -215,24 +190,20 @@
 
     if-eqz p3, :cond_4
 
-    .line 15
     new-instance p2, Landroid/graphics/ColorMatrix;
 
     invoke-direct {p2}, Landroid/graphics/ColorMatrix;-><init>()V
 
     const p3, 0x3e99999a    # 0.3f
 
-    .line 16
     invoke-virtual {p2, p3}, Landroid/graphics/ColorMatrix;->setSaturation(F)V
 
-    .line 17
     new-instance p3, Landroid/graphics/ColorMatrixColorFilter;
 
     invoke-direct {p3, p2}, Landroid/graphics/ColorMatrixColorFilter;-><init>(Landroid/graphics/ColorMatrix;)V
 
     invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setColorFilter(Landroid/graphics/ColorFilter;)Landroid/graphics/ColorFilter;
 
-    .line 18
     :cond_4
     invoke-virtual {v5, p0, v6, v0, p1}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
@@ -242,30 +213,24 @@
 .method private a(I)Landroid/graphics/Paint;
     .locals 2
 
-    .line 19
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    .line 20
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     int-to-float p1, p1
 
-    .line 21
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     const/4 p1, 0x1
 
-    .line 22
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 23
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
 
-    .line 24
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->c:I
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
@@ -278,7 +243,6 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 8
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
 
     move-result v0
@@ -300,7 +264,6 @@
 
     move-result v0
 
-    .line 2
     :goto_0
     invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -308,7 +271,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 3
     check-cast v1, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
@@ -319,7 +281,6 @@
 
     return-void
 
-    .line 4
     :cond_1
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->a:Landroid/graphics/Paint;
 
@@ -329,7 +290,6 @@
 
     move-result-object v1
 
-    .line 5
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->getWidth()I
@@ -342,7 +302,6 @@
 
     invoke-direct {v2, v3, v3, v4, v5}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 6
     new-instance v3, Landroid/graphics/Rect;
 
     iget v4, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->b:I
@@ -361,29 +320,24 @@
 
     invoke-direct {v3, v5, v6, v7, v4}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 7
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->a:Landroid/graphics/Paint;
 
     invoke-virtual {v4}, Landroid/graphics/Paint;->reset()V
 
-    .line 8
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->a:Landroid/graphics/Paint;
 
     const/4 v5, 0x1
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
 
-    .line 9
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->a:Landroid/graphics/Paint;
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 10
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->a:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 11
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/CirclrImageView;->b:I
 
     if-eqz v1, :cond_2
@@ -403,7 +357,6 @@
     :cond_2
     return-void
 
-    .line 12
     :cond_3
     invoke-super {p0, p1}, Landroid/widget/ImageView;->onDraw(Landroid/graphics/Canvas;)V
 

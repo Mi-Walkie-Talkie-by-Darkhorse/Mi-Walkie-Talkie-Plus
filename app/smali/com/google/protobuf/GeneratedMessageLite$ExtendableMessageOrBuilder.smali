@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/protobuf/GeneratedMessageLite$ExtendableMessageOrBuilder;
 .super Ljava/lang/Object;
-.source "GeneratedMessageLite.java"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageLiteOrBuilder;

@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/internal/Preconditions;
 .super Ljava/lang/Object;
-.source "mainThread.kt"
 
 
 # annotations
@@ -58,7 +57,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -77,17 +75,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {}, Lio/reactivex/disposables/Disposables;->empty()Lio/reactivex/disposables/Disposable;
 
     move-result-object v0
 
     invoke-interface {p0, v0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    .line 4
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -114,7 +109,6 @@
 
     move-result-object v1
 
-    .line 5
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
     invoke-interface {p0, v0}, Lio/reactivex/Observer;->onError(Ljava/lang/Throwable;)V

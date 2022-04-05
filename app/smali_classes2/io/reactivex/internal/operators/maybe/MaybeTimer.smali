@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/maybe/MaybeTimer;
 .super Lio/reactivex/Maybe;
-.source "MaybeTimer.java"
 
 
 # annotations
@@ -31,16 +30,12 @@
 .method public constructor <init>(JLjava/util/concurrent/TimeUnit;Lio/reactivex/Scheduler;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Maybe;-><init>()V
 
-    .line 2
     iput-wide p1, p0, Lio/reactivex/internal/operators/maybe/MaybeTimer;->delay:J
 
-    .line 3
     iput-object p3, p0, Lio/reactivex/internal/operators/maybe/MaybeTimer;->unit:Ljava/util/concurrent/TimeUnit;
 
-    .line 4
     iput-object p4, p0, Lio/reactivex/internal/operators/maybe/MaybeTimer;->scheduler:Lio/reactivex/Scheduler;
 
     return-void
@@ -60,15 +55,12 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeTimer$TimerDisposable;
 
     invoke-direct {v0, p1}, Lio/reactivex/internal/operators/maybe/MaybeTimer$TimerDisposable;-><init>(Lio/reactivex/MaybeObserver;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/MaybeObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     iget-object p1, p0, Lio/reactivex/internal/operators/maybe/MaybeTimer;->scheduler:Lio/reactivex/Scheduler;
 
     iget-wide v1, p0, Lio/reactivex/internal/operators/maybe/MaybeTimer;->delay:J

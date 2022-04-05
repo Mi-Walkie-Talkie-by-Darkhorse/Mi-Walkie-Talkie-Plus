@@ -1,6 +1,5 @@
 .class public Landroidx/appcompat/widget/MenuPopupWindow;
 .super Landroidx/appcompat/widget/ListPopupWindow;
-.source "MenuPopupWindow.java"
 
 # interfaces
 .implements Landroidx/appcompat/widget/u;
@@ -32,7 +31,6 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1
     :try_start_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -40,7 +38,6 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 2
     const-class v0, Landroid/widget/PopupWindow;
 
     const-string v1, "setTouchModal"
@@ -70,7 +67,6 @@
 
     const-string v1, "Could not find method setTouchModal() on PopupWindow. Oh well."
 
-    .line 3
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_0
@@ -89,7 +85,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/appcompat/widget/ListPopupWindow;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     return-void
@@ -102,12 +97,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Landroidx/appcompat/widget/MenuPopupWindow$MenuDropDownListView;
 
     invoke-direct {v0, p1, p2}, Landroidx/appcompat/widget/MenuPopupWindow$MenuDropDownListView;-><init>(Landroid/content/Context;Z)V
 
-    .line 2
     invoke-virtual {v0, p0}, Landroidx/appcompat/widget/MenuPopupWindow$MenuDropDownListView;->setHoverListener(Landroidx/appcompat/widget/u;)V
 
     return-object v0
@@ -124,12 +117,10 @@
         .end annotation
     .end param
 
-    .line 6
     iget-object v0, p0, Landroidx/appcompat/widget/MenuPopupWindow;->I:Landroidx/appcompat/widget/u;
 
     if-eqz v0, :cond_0
 
-    .line 7
     invoke-interface {v0, p1, p2}, Landroidx/appcompat/widget/u;->a(Landroidx/appcompat/view/menu/f;Landroid/view/MenuItem;)V
 
     :cond_0
@@ -139,7 +130,6 @@
 .method public a(Landroidx/appcompat/widget/u;)V
     .locals 0
 
-    .line 5
     iput-object p1, p0, Landroidx/appcompat/widget/MenuPopupWindow;->I:Landroidx/appcompat/widget/u;
 
     return-void
@@ -148,14 +138,12 @@
 .method public a(Ljava/lang/Object;)V
     .locals 2
 
-    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    .line 4
     iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->E:Landroid/widget/PopupWindow;
 
     check-cast p1, Landroid/transition/Transition;
@@ -177,12 +165,10 @@
         .end annotation
     .end param
 
-    .line 3
     iget-object v0, p0, Landroidx/appcompat/widget/MenuPopupWindow;->I:Landroidx/appcompat/widget/u;
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-interface {v0, p1, p2}, Landroidx/appcompat/widget/u;->b(Landroidx/appcompat/view/menu/f;Landroid/view/MenuItem;)V
 
     :cond_0
@@ -192,14 +178,12 @@
 .method public b(Ljava/lang/Object;)V
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->E:Landroid/widget/PopupWindow;
 
     check-cast p1, Landroid/transition/Transition;
@@ -213,19 +197,16 @@
 .method public c(Z)V
     .locals 4
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-gt v0, v1, :cond_0
 
-    .line 2
     sget-object v0, Landroidx/appcompat/widget/MenuPopupWindow;->J:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_1
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Landroidx/appcompat/widget/ListPopupWindow;->E:Landroid/widget/PopupWindow;
 
@@ -252,12 +233,10 @@
 
     const-string v0, "Could not invoke setTouchModal() on PopupWindow. Oh well."
 
-    .line 4
     invoke-static {p1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow;->E:Landroid/widget/PopupWindow;
 

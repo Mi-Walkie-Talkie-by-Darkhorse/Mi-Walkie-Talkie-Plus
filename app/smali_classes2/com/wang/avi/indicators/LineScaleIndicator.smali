@@ -1,6 +1,5 @@
 .class public Lcom/wang/avi/indicators/LineScaleIndicator;
 .super Lcom/wang/avi/Indicator;
-.source "LineScaleIndicator.java"
 
 
 # static fields
@@ -15,14 +14,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/wang/avi/Indicator;-><init>()V
 
     const/4 v0, 0x5
 
     new-array v0, v0, [F
 
-    .line 2
     fill-array-data v0, :array_0
 
     iput-object v0, p0, Lcom/wang/avi/indicators/LineScaleIndicator;->scaleYFloats:[F
@@ -44,7 +41,6 @@
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 9
 
-    .line 1
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v0
@@ -53,7 +49,6 @@
 
     int-to-float v0, v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getHeight()I
 
     move-result v1
@@ -69,7 +64,6 @@
 
     if-ge v2, v3, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     mul-int/lit8 v3, v2, 0x2
@@ -86,19 +80,16 @@
 
     sub-float/2addr v3, v5
 
-    .line 4
     invoke-virtual {p1, v3, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
     const/high16 v3, 0x3f800000    # 1.0f
 
-    .line 5
     iget-object v6, p0, Lcom/wang/avi/indicators/LineScaleIndicator;->scaleYFloats:[F
 
     aget v6, v6, v2
 
     invoke-virtual {p1, v3, v6}, Landroid/graphics/Canvas;->scale(FF)V
 
-    .line 6
     new-instance v3, Landroid/graphics/RectF;
 
     neg-float v6, v0
@@ -129,10 +120,8 @@
 
     const/high16 v4, 0x40a00000    # 5.0f
 
-    .line 7
     invoke-virtual {p1, v3, v4, v4, p2}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
-    .line 8
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     add-int/lit8 v2, v2, 0x1
@@ -154,7 +143,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -163,7 +151,6 @@
 
     new-array v2, v1, [J
 
-    .line 2
     fill-array-data v2, :array_0
 
     const/4 v3, 0x0
@@ -175,7 +162,6 @@
 
     new-array v4, v4, [F
 
-    .line 3
     fill-array-data v4, :array_1
 
     invoke-static {v4}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
@@ -184,27 +170,22 @@
 
     const-wide/16 v5, 0x3e8
 
-    .line 4
     invoke-virtual {v4, v5, v6}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     const/4 v5, -0x1
 
-    .line 5
     invoke-virtual {v4, v5}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 6
     aget-wide v5, v2, v3
 
     invoke-virtual {v4, v5, v6}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
 
-    .line 7
     new-instance v5, Lcom/wang/avi/indicators/LineScaleIndicator$1;
 
     invoke-direct {v5, p0, v3}, Lcom/wang/avi/indicators/LineScaleIndicator$1;-><init>(Lcom/wang/avi/indicators/LineScaleIndicator;I)V
 
     invoke-virtual {p0, v4, v5}, Lcom/wang/avi/Indicator;->addUpdateListener(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 8
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v3, v3, 0x1

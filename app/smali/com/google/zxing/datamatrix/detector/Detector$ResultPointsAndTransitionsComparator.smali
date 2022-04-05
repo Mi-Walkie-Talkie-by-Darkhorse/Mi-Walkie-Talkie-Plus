@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/datamatrix/detector/Detector$ResultPointsAndTransitionsComparator;
 .super Ljava/lang/Object;
-.source "Detector.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -32,7 +31,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method synthetic constructor <init>(Lcom/google/zxing/datamatrix/detector/Detector$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/zxing/datamatrix/detector/Detector$ResultPointsAndTransitionsComparator;-><init>()V
 
     return-void
@@ -52,7 +49,6 @@
 .method public compare(Lcom/google/zxing/datamatrix/detector/Detector$ResultPointsAndTransitions;Lcom/google/zxing/datamatrix/detector/Detector$ResultPointsAndTransitions;)I
     .locals 0
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/zxing/datamatrix/detector/Detector$ResultPointsAndTransitions;->getTransitions()I
 
     move-result p1
@@ -69,7 +65,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/zxing/datamatrix/detector/Detector$ResultPointsAndTransitions;
 
     check-cast p2, Lcom/google/zxing/datamatrix/detector/Detector$ResultPointsAndTransitions;

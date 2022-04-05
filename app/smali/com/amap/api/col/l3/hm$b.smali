@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/hm$b;
 .super Ljava/lang/Object;
-.source "LoaderFactory.java"
 
 # interfaces
 .implements Ljava/util/concurrent/ThreadFactory;
@@ -25,10 +24,8 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x1
@@ -45,7 +42,6 @@
 .method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Ljava/lang/StringBuilder;

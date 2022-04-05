@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/maxicode/decoder/Decoder;
 .super Ljava/lang/Object;
-.source "Decoder.java"
 
 
 # static fields
@@ -19,10 +18,8 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/zxing/common/reedsolomon/ReedSolomonDecoder;
 
     sget-object v1, Lcom/google/zxing/common/reedsolomon/GenericGF;->MAXICODE_FIELD_64:Lcom/google/zxing/common/reedsolomon/GenericGF;
@@ -53,7 +50,6 @@
     :cond_0
     const/4 v1, 0x2
 
-    .line 1
     :goto_0
     div-int v2, v0, v1
 
@@ -68,14 +64,12 @@
 
     if-eqz p5, :cond_1
 
-    .line 2
     rem-int/lit8 v5, v4, 0x2
 
     add-int/lit8 v6, p5, -0x1
 
     if-ne v5, v6, :cond_2
 
-    .line 3
     :cond_1
     div-int v5, v4, v1
 
@@ -92,7 +86,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_3
     :try_start_0
     iget-object v0, p0, Lcom/google/zxing/maxicode/decoder/Decoder;->rsDecoder:Lcom/google/zxing/common/reedsolomon/ReedSolomonDecoder;
@@ -108,7 +101,6 @@
 
     if-eqz p5, :cond_4
 
-    .line 5
     rem-int/lit8 p4, v3, 0x2
 
     add-int/lit8 v0, p5, -0x1
@@ -118,7 +110,6 @@
     :cond_4
     add-int p4, v3, p2
 
-    .line 6
     div-int v0, v3, v1
 
     aget v0, v2, v0
@@ -135,7 +126,6 @@
     :cond_6
     return-void
 
-    .line 7
     :catch_0
     invoke-static {}, Lcom/google/zxing/ChecksumException;->getChecksumInstance()Lcom/google/zxing/ChecksumException;
 
@@ -157,7 +147,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/google/zxing/maxicode/decoder/Decoder;->decode(Lcom/google/zxing/common/BitMatrix;Ljava/util/Map;)Lcom/google/zxing/common/DecoderResult;
 
     move-result-object p1
@@ -185,12 +174,10 @@
         }
     .end annotation
 
-    .line 2
     new-instance p2, Lcom/google/zxing/maxicode/decoder/BitMatrixParser;
 
     invoke-direct {p2, p1}, Lcom/google/zxing/maxicode/decoder/BitMatrixParser;-><init>(Lcom/google/zxing/common/BitMatrix;)V
 
-    .line 3
     invoke-virtual {p2}, Lcom/google/zxing/maxicode/decoder/BitMatrixParser;->readCodewords()[B
 
     move-result-object p1
@@ -207,12 +194,10 @@
 
     move-object v1, p1
 
-    .line 4
     invoke-direct/range {v0 .. v5}, Lcom/google/zxing/maxicode/decoder/Decoder;->correctErrors([BIIII)V
 
     const/4 p2, 0x0
 
-    .line 5
     aget-byte v0, p1, p2
 
     and-int/lit8 v6, v0, 0xf
@@ -245,12 +230,10 @@
 
     move-object v1, p1
 
-    .line 6
     invoke-direct/range {v0 .. v5}, Lcom/google/zxing/maxicode/decoder/Decoder;->correctErrors([BIIII)V
 
     const/4 v5, 0x2
 
-    .line 7
     invoke-direct/range {v0 .. v5}, Lcom/google/zxing/maxicode/decoder/Decoder;->correctErrors([BIIII)V
 
     const/16 v0, 0x4e
@@ -259,7 +242,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_0
     invoke-static {}, Lcom/google/zxing/FormatException;->getFormatInstance()Lcom/google/zxing/FormatException;
 
@@ -280,12 +262,10 @@
 
     move-object v1, p1
 
-    .line 9
     invoke-direct/range {v0 .. v5}, Lcom/google/zxing/maxicode/decoder/Decoder;->correctErrors([BIIII)V
 
     const/4 v5, 0x2
 
-    .line 10
     invoke-direct/range {v0 .. v5}, Lcom/google/zxing/maxicode/decoder/Decoder;->correctErrors([BIIII)V
 
     const/16 v0, 0x5e
@@ -295,19 +275,16 @@
     :goto_0
     const/16 v1, 0xa
 
-    .line 11
     invoke-static {p1, p2, v0, p2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     const/16 p2, 0x14
 
-    .line 12
     array-length v2, v0
 
     sub-int/2addr v2, v1
 
     invoke-static {p1, p2, v0, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 13
     invoke-static {v0, v6}, Lcom/google/zxing/maxicode/decoder/DecodedBitStreamParser;->decode([BI)Lcom/google/zxing/common/DecoderResult;
 
     move-result-object p1

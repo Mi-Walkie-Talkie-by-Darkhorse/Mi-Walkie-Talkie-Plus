@@ -1,6 +1,5 @@
 .class public La/c/a/a/h;
 .super Ljava/lang/Object;
-.source "VelocityMatrix.java"
 
 
 # instance fields
@@ -27,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,7 +38,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, La/c/a/a/h;->e:F
 
     iput v0, p0, La/c/a/a/h;->d:F
@@ -63,12 +60,10 @@
 
     const/4 v2, 0x0
 
-    .line 9
     aget v3, p5, v2
 
     const/4 v4, 0x1
 
-    .line 10
     aget v5, p5, v4
 
     const/high16 v6, 0x3f000000    # 0.5f
@@ -83,31 +78,26 @@
 
     mul-float v6, v6, v8
 
-    .line 11
     iget v8, v0, La/c/a/a/h;->c:F
 
     add-float/2addr v3, v8
 
-    .line 12
     iget v8, v0, La/c/a/a/h;->d:F
 
     add-float/2addr v5, v8
 
-    .line 13
     iget v8, v0, La/c/a/a/h;->a:F
 
     mul-float v8, v8, v7
 
     add-float/2addr v3, v8
 
-    .line 14
     iget v8, v0, La/c/a/a/h;->b:F
 
     mul-float v8, v8, v6
 
     add-float/2addr v5, v8
 
-    .line 15
     iget v8, v0, La/c/a/a/h;->f:F
 
     float-to-double v8, v8
@@ -118,7 +108,6 @@
 
     double-to-float v8, v8
 
-    .line 16
     iget v9, v0, La/c/a/a/h;->e:F
 
     float-to-double v9, v9
@@ -139,7 +128,6 @@
 
     float-to-double v12, v8
 
-    .line 17
     invoke-static {v12, v13}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v14
@@ -174,7 +162,6 @@
 
     float-to-double v6, v1
 
-    .line 18
     invoke-static {v12, v13}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v10
@@ -195,10 +182,8 @@
 
     add-float/2addr v5, v9
 
-    .line 19
     aput v3, p5, v2
 
-    .line 20
     aput v5, p5, v4
 
     return-void
@@ -209,7 +194,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 6
     invoke-virtual {p1, p2}, Landroidx/constraintlayout/motion/widget/g;->b(F)F
 
     move-result p1
@@ -232,7 +216,6 @@
     :cond_0
     if-nez p1, :cond_1
 
-    .line 7
     invoke-virtual {p1, p3}, Landroidx/constraintlayout/motion/widget/g;->b(F)F
 
     move-result p1
@@ -242,7 +225,6 @@
     :cond_1
     if-nez p2, :cond_2
 
-    .line 8
     invoke-virtual {p2, p3}, Landroidx/constraintlayout/motion/widget/g;->b(F)F
 
     move-result p1
@@ -258,14 +240,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p1, p2}, Landroidx/constraintlayout/motion/widget/r;->b(F)F
 
     move-result v0
 
     iput v0, p0, La/c/a/a/h;->e:F
 
-    .line 3
     invoke-virtual {p1, p2}, Landroidx/constraintlayout/motion/widget/r;->a(F)F
 
     move-result p1
@@ -281,7 +261,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 4
     invoke-virtual {p1, p3}, Landroidx/constraintlayout/motion/widget/r;->b(F)F
 
     move-result p1
@@ -291,7 +270,6 @@
     :cond_0
     if-eqz p2, :cond_1
 
-    .line 5
     invoke-virtual {p2, p3}, Landroidx/constraintlayout/motion/widget/r;->b(F)F
 
     move-result p1
@@ -307,7 +285,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-virtual {p1, p3}, Landroidx/constraintlayout/motion/widget/g;->b(F)F
 
     move-result p1
@@ -317,7 +294,6 @@
     :cond_0
     if-eqz p2, :cond_1
 
-    .line 4
     invoke-virtual {p2, p3}, Landroidx/constraintlayout/motion/widget/g;->b(F)F
 
     move-result p1
@@ -333,7 +309,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p1, p3}, Landroidx/constraintlayout/motion/widget/r;->b(F)F
 
     move-result p1
@@ -343,7 +318,6 @@
     :cond_0
     if-eqz p2, :cond_1
 
-    .line 2
     invoke-virtual {p2, p3}, Landroidx/constraintlayout/motion/widget/r;->b(F)F
 
     move-result p1

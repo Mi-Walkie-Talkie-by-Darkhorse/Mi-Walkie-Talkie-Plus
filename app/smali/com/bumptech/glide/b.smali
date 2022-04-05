@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/b;
 .super Lcom/bumptech/glide/h;
-.source "GenericTransitionOptions.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/h;-><init>()V
 
     return-void

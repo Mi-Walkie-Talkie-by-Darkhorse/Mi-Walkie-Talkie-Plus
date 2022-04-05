@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/adapter/c$a;
 .super Ljava/lang/Object;
-.source "DiscoveryFragmentAdapter.java"
 
 
 # annotations

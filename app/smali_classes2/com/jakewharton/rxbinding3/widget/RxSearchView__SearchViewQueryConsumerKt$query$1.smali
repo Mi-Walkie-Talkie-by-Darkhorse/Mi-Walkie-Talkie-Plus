@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/RxSearchView__SearchViewQueryConsumerKt$query$1;
 .super Ljava/lang/Object;
-.source "SearchViewQueryConsumer.kt"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -78,7 +77,6 @@
 .method public final accept(Ljava/lang/CharSequence;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/RxSearchView__SearchViewQueryConsumerKt$query$1;->receiver$0:Landroid/widget/SearchView;
 
     iget-boolean v1, p0, Lcom/jakewharton/rxbinding3/widget/RxSearchView__SearchViewQueryConsumerKt$query$1;->$submit:Z

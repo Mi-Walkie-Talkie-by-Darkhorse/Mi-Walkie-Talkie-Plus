@@ -1,6 +1,5 @@
 .class Landroidx/media/MediaBrowserServiceCompat$k;
 .super Landroidx/media/MediaBrowserServiceCompat$j;
-.source "MediaBrowserServiceCompat.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/media/MediaBrowserServiceCompat;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/media/MediaBrowserServiceCompat$j;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
 
     return-void

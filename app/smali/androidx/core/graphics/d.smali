@@ -1,6 +1,5 @@
 .class public final Landroidx/core/graphics/d;
 .super Ljava/lang/Object;
-.source "Insets.java"
 
 
 # static fields
@@ -24,7 +23,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Landroidx/core/graphics/d;
 
     const/4 v1, 0x0
@@ -39,19 +37,14 @@
 .method private constructor <init>(IIII)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Landroidx/core/graphics/d;->a:I
 
-    .line 3
     iput p2, p0, Landroidx/core/graphics/d;->b:I
 
-    .line 4
     iput p3, p0, Landroidx/core/graphics/d;->c:I
 
-    .line 5
     iput p4, p0, Landroidx/core/graphics/d;->d:I
 
     return-void
@@ -70,12 +63,10 @@
 
     if-nez p3, :cond_0
 
-    .line 1
     sget-object p0, Landroidx/core/graphics/d;->e:Landroidx/core/graphics/d;
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v0, Landroidx/core/graphics/d;
 
@@ -97,7 +88,6 @@
         api = 0x1d
     .end annotation
 
-    .line 7
     iget v0, p0, Landroid/graphics/Insets;->left:I
 
     iget v1, p0, Landroid/graphics/Insets;->top:I
@@ -122,7 +112,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 3
     iget v0, p0, Landroid/graphics/Rect;->left:I
 
     iget v1, p0, Landroid/graphics/Rect;->top:I
@@ -151,7 +140,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 4
     iget v0, p0, Landroidx/core/graphics/d;->a:I
 
     iget v1, p1, Landroidx/core/graphics/d;->a:I
@@ -172,7 +160,6 @@
 
     iget v3, p1, Landroidx/core/graphics/d;->c:I
 
-    .line 5
     invoke-static {v2, v3}, Ljava/lang/Math;->max(II)I
 
     move-result v2
@@ -185,7 +172,6 @@
 
     move-result p0
 
-    .line 6
     invoke-static {v0, v1, v2, p0}, Landroidx/core/graphics/d;->a(IIII)Landroidx/core/graphics/d;
 
     move-result-object p0
@@ -204,7 +190,6 @@
         api = 0x1d
     .end annotation
 
-    .line 8
     iget v0, p0, Landroidx/core/graphics/d;->a:I
 
     iget v1, p0, Landroidx/core/graphics/d;->b:I
@@ -234,7 +219,6 @@
 
     if-eqz p1, :cond_6
 
-    .line 1
     const-class v2, Landroidx/core/graphics/d;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -245,11 +229,9 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     check-cast p1, Landroidx/core/graphics/d;
 
-    .line 3
     iget v2, p0, Landroidx/core/graphics/d;->d:I
 
     iget v3, p1, Landroidx/core/graphics/d;->d:I
@@ -258,7 +240,6 @@
 
     return v1
 
-    .line 4
     :cond_2
     iget v2, p0, Landroidx/core/graphics/d;->a:I
 
@@ -268,7 +249,6 @@
 
     return v1
 
-    .line 5
     :cond_3
     iget v2, p0, Landroidx/core/graphics/d;->c:I
 
@@ -278,7 +258,6 @@
 
     return v1
 
-    .line 6
     :cond_4
     iget v2, p0, Landroidx/core/graphics/d;->b:I
 
@@ -299,26 +278,22 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget v0, p0, Landroidx/core/graphics/d;->a:I
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 2
     iget v1, p0, Landroidx/core/graphics/d;->b:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 3
     iget v1, p0, Landroidx/core/graphics/d;->c:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 4
     iget v1, p0, Landroidx/core/graphics/d;->d:I
 
     add-int/2addr v0, v1
@@ -329,7 +304,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

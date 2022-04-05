@@ -1,6 +1,5 @@
 .class Landroidx/core/c/e$b;
 .super Ljava/lang/Object;
-.source "TextDirectionHeuristicsCompat.java"
 
 # interfaces
 .implements Landroidx/core/c/e$c;
@@ -25,7 +24,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/core/c/e$b;
 
     invoke-direct {v0}, Landroidx/core/c/e$b;-><init>()V
@@ -38,7 +36,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +57,6 @@
 
     if-ne v1, v0, :cond_0
 
-    .line 1
     invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v1

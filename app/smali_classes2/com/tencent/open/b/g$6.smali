@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/b/g$6;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/tencent/open/b/g;Landroid/os/Bundle;Ljava/lang/String;ZLjava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/b/g$6;->e:Lcom/tencent/open/b/g;
 
     iput-object p2, p0, Lcom/tencent/open/b/g$6;->a:Landroid/os/Bundle;
@@ -56,7 +54,6 @@
 
     const-string v0, "openSDK_LOG.ReportManager"
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/tencent/open/b/g$6;->a:Landroid/os/Bundle;
 
@@ -64,12 +61,10 @@
 
     const-string v1, "-->httpRequest, params is null!"
 
-    .line 2
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 3
     :cond_0
     invoke-static {}, Lcom/tencent/open/b/e;->a()I
 
@@ -79,7 +74,6 @@
 
     const/4 v1, 0x3
 
-    .line 4
     :cond_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -97,7 +91,6 @@
 
     invoke-static {v0, v2}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -110,24 +103,20 @@
 
     move-result-object v2
 
-    .line 6
     iget-object v3, p0, Lcom/tencent/open/b/g$6;->a:Landroid/os/Bundle;
 
     invoke-static {v3}, Lcom/tencent/open/utils/HttpUtils;->encodeUrl(Landroid/os/Bundle;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 7
     iget-boolean v4, p0, Lcom/tencent/open/b/g$6;->c:Z
 
     if-eqz v4, :cond_2
 
-    .line 8
     invoke-static {v3}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 9
     :cond_2
     iget-object v4, p0, Lcom/tencent/open/b/g$6;->d:Ljava/lang/String;
 
@@ -143,17 +132,14 @@
 
     if-eqz v4, :cond_3
 
-    .line 10
     new-instance v4, Ljava/lang/StringBuffer;
 
     iget-object v5, p0, Lcom/tencent/open/b/g$6;->b:Ljava/lang/String;
 
     invoke-direct {v4, v5}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
-    .line 11
     invoke-virtual {v4, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 12
     new-instance v3, Lorg/apache/http/client/methods/HttpGet;
 
     invoke-virtual {v4}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
@@ -164,7 +150,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_3
     iget-object v4, p0, Lcom/tencent/open/b/g$6;->d:Ljava/lang/String;
 
@@ -180,24 +165,20 @@
 
     if-eqz v4, :cond_7
 
-    .line 14
     new-instance v4, Lorg/apache/http/client/methods/HttpPost;
 
     iget-object v5, p0, Lcom/tencent/open/b/g$6;->b:Ljava/lang/String;
 
     invoke-direct {v4, v5}, Lorg/apache/http/client/methods/HttpPost;-><init>(Ljava/lang/String;)V
 
-    .line 15
     invoke-static {v3}, Lcom/tencent/open/utils/i;->i(Ljava/lang/String;)[B
 
     move-result-object v3
 
-    .line 16
     new-instance v5, Lorg/apache/http/entity/ByteArrayEntity;
 
     invoke-direct {v5, v3}, Lorg/apache/http/entity/ByteArrayEntity;-><init>([B)V
 
-    .line 17
     invoke-virtual {v4, v5}, Lorg/apache/http/client/methods/HttpPost;->setEntity(Lorg/apache/http/HttpEntity;)V
 
     move-object v3, v4
@@ -207,14 +188,12 @@
 
     const-string v5, "gzip"
 
-    .line 18
     invoke-interface {v3, v4, v5}, Lorg/apache/http/client/methods/HttpUriRequest;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v4, "Content-Type"
 
     const-string v5, "application/x-www-form-urlencoded"
 
-    .line 19
     invoke-interface {v3, v4, v5}, Lorg/apache/http/client/methods/HttpUriRequest;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_6
@@ -228,23 +207,19 @@
 
     add-int/2addr v4, v6
 
-    .line 20
     :try_start_1
     invoke-interface {v2, v3}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
 
     move-result-object v7
 
-    .line 21
     invoke-interface {v7}, Lorg/apache/http/HttpResponse;->getStatusLine()Lorg/apache/http/StatusLine;
 
     move-result-object v7
 
-    .line 22
     invoke-interface {v7}, Lorg/apache/http/StatusLine;->getStatusCode()I
 
     move-result v7
 
-    .line 23
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -267,7 +242,6 @@
 
     const-string v7, "-->ReportCenter httpRequest : HttpStatuscode != 200"
 
-    .line 24
     invoke-static {v0, v7}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_1
     .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_1 .. :try_end_1} :catch_5
@@ -280,7 +254,6 @@
     :try_start_2
     const-string v5, "-->ReportCenter httpRequest Thread success"
 
-    .line 25
     invoke-static {v0, v5}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_2
     .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_2 .. :try_end_2} :catch_2
@@ -311,7 +284,6 @@
     :try_start_3
     const-string v1, "-->ReportCenter httpRequest Exception"
 
-    .line 26
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_5
@@ -320,7 +292,6 @@
     :goto_2
     const-string v7, "-->ReportCenter httpRequest SocketTimeoutException"
 
-    .line 27
     invoke-static {v0, v7}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_4
@@ -329,7 +300,6 @@
     :goto_3
     const-string v7, "-->ReportCenter httpRequest ConnectTimeoutException"
 
-    .line 28
     invoke-static {v0, v7}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_4
@@ -340,7 +310,6 @@
 
     const-string v1, "-->ReportCenter httpRequest Thread request success"
 
-    .line 29
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_6
@@ -348,7 +317,6 @@
     :cond_6
     const-string v1, "-->ReportCenter httpRequest Thread request failed"
 
-    .line 30
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_6
@@ -356,7 +324,6 @@
     :cond_7
     const-string v1, "-->httpRequest unkonw request method return."
 
-    .line 31
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->e(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_3
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_6
@@ -366,7 +333,6 @@
     :catch_6
     const-string v1, "-->httpRequest, exception in serial executor."
 
-    .line 32
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_6

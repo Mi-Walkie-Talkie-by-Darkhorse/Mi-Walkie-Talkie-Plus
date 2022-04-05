@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/ByteStreams$1;
 .super Ljava/io/OutputStream;
-.source "ByteStreams.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
     return-void
@@ -43,7 +41,6 @@
 .method public write([B)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
@@ -52,7 +49,6 @@
 .method public write([BII)V
     .locals 0
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void

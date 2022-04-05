@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/dt$a;
 .super Lcom/amap/api/col/l3/ic;
-.source "BaseTileProvider.java"
 
 
 # annotations
@@ -32,29 +31,22 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/dt;IIILjava/lang/String;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/dt$a;->a:Lcom/amap/api/col/l3/dt;
 
     invoke-direct {p0}, Lcom/amap/api/col/l3/ic;-><init>()V
 
     const-string p1, ""
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/dt$a;->f:Ljava/lang/String;
 
-    .line 3
     iput p2, p0, Lcom/amap/api/col/l3/dt$a;->b:I
 
-    .line 4
     iput p3, p0, Lcom/amap/api/col/l3/dt$a;->c:I
 
-    .line 5
     iput p4, p0, Lcom/amap/api/col/l3/dt$a;->d:I
 
-    .line 6
     iput-object p5, p0, Lcom/amap/api/col/l3/dt$a;->e:Ljava/lang/String;
 
-    .line 7
     invoke-static {p2, p3, p4}, Lcom/amap/api/col/l3/eg;->a(III)Z
 
     move-result p1
@@ -138,7 +130,6 @@
     :goto_2
     iput-object p1, p0, Lcom/amap/api/col/l3/dt$a;->f:Ljava/lang/String;
 
-    .line 8
     sget-object p1, Lcom/amap/api/col/l3/y;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/gf;->a(Landroid/content/Context;)Ljava/net/Proxy;
@@ -149,12 +140,10 @@
 
     const/16 p1, 0x1388
 
-    .line 9
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/ic;->a(I)V
 
     const p1, 0xc350
 
-    .line 10
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/ic;->b(I)V
 
     return-void
@@ -165,20 +154,16 @@
 
     const-string v0, "&"
 
-    .line 10
     invoke-virtual {p0, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
-    .line 11
     invoke-static {v1}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
 
-    .line 12
     new-instance v2, Ljava/lang/StringBuffer;
 
     invoke-direct {v2}, Ljava/lang/StringBuffer;-><init>()V
 
-    .line 13
     array-length v3, v1
 
     const/4 v4, 0x0
@@ -190,28 +175,23 @@
 
     aget-object v6, v1, v5
 
-    .line 14
     invoke-static {v6}, Lcom/amap/api/col/l3/dt$a;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 15
     invoke-virtual {v2, v6}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 16
     invoke-virtual {v2, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     add-int/lit8 v5, v5, 0x1
 
     goto :goto_0
 
-    .line 17
     :cond_0
     invoke-virtual {v2}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 18
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -220,7 +200,6 @@
 
     if-le v1, v2, :cond_1
 
-    .line 19
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result p0
@@ -250,7 +229,6 @@
     :try_start_0
     const-string v1, "utf-8"
 
-    .line 1
     invoke-static {p0, v1}, Ljava/net/URLDecoder;->decode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -265,7 +243,6 @@
 
     const-string v1, "strReEncoderException"
 
-    .line 2
     invoke-static {p0, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
@@ -275,7 +252,6 @@
 
     const-string v1, "strReEncoder"
 
-    .line 3
     invoke-static {p0, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
@@ -298,12 +274,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 2
     sget-object v1, Lcom/amap/api/col/l3/p;->c:Ljava/lang/String;
 
     const-string v2, "User-Agent"
@@ -314,10 +288,8 @@
 
     const-string v2, "gzip"
 
-    .line 3
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const/4 v2, 0x2
@@ -346,20 +318,16 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
     sget-object v1, Lcom/amap/api/col/l3/y;->a:Landroid/content/Context;
 
-    .line 6
     invoke-static {v1}, Lcom/amap/api/col/l3/fz;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
     const-string v2, "X-INFO"
 
-    .line 7
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
     sget-object v1, Lcom/amap/api/col/l3/y;->a:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/amap/api/col/l3/fw;->f(Landroid/content/Context;)Ljava/lang/String;
@@ -374,7 +342,6 @@
 
     const-string v2, "2.1"
 
-    .line 9
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object v0
@@ -400,7 +367,6 @@
 .method public final c()Ljava/lang/String;
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/dt$a;->f:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -413,7 +379,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 

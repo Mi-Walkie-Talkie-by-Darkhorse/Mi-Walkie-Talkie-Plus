@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/maybe/MaybeCache$CacheDisposable;
 .super Ljava/util/concurrent/atomic/AtomicReference;
-.source "MaybeCache.java"
 
 # interfaces
 .implements Lio/reactivex/disposables/Disposable;
@@ -57,10 +56,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p2}, Ljava/util/concurrent/atomic/AtomicReference;-><init>(Ljava/lang/Object;)V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/maybe/MaybeCache$CacheDisposable;->downstream:Lio/reactivex/MaybeObserver;
 
     return-void
@@ -73,7 +70,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -82,7 +78,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p0}, Lio/reactivex/internal/operators/maybe/MaybeCache;->remove(Lio/reactivex/internal/operators/maybe/MaybeCache$CacheDisposable;)V
 
     :cond_0
@@ -92,7 +87,6 @@
 .method public isDisposed()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0

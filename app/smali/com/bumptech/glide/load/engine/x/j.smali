@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/engine/x/j;
 .super Ljava/lang/Object;
-.source "LruArrayPool.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/x/b;
@@ -64,38 +63,32 @@
 .method public constructor <init>(I)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/bumptech/glide/load/engine/x/h;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/engine/x/h;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/load/engine/x/j;->a:Lcom/bumptech/glide/load/engine/x/h;
 
-    .line 3
     new-instance v0, Lcom/bumptech/glide/load/engine/x/j$b;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/engine/x/j$b;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/load/engine/x/j;->b:Lcom/bumptech/glide/load/engine/x/j$b;
 
-    .line 4
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/load/engine/x/j;->c:Ljava/util/Map;
 
-    .line 5
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/load/engine/x/j;->d:Ljava/util/Map;
 
-    .line 6
     iput p1, p0, Lcom/bumptech/glide/load/engine/x/j;->e:I
 
     return-void
@@ -115,7 +108,6 @@
         }
     .end annotation
 
-    .line 18
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/j;->d:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -126,7 +118,6 @@
 
     if-nez v0, :cond_2
 
-    .line 19
     const-class v0, [I
 
     invoke-virtual {p1, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -135,14 +126,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 20
     new-instance v0, Lcom/bumptech/glide/load/engine/x/i;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/engine/x/i;-><init>()V
 
     goto :goto_0
 
-    .line 21
     :cond_0
     const-class v0, [B
 
@@ -152,12 +141,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 22
     new-instance v0, Lcom/bumptech/glide/load/engine/x/g;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/engine/x/g;-><init>()V
 
-    .line 23
     :goto_0
     iget-object v1, p0, Lcom/bumptech/glide/load/engine/x/j;->d:Ljava/util/Map;
 
@@ -165,7 +152,6 @@
 
     goto :goto_1
 
-    .line 24
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -177,7 +163,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 25
     invoke-virtual {p1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object p1
@@ -209,7 +194,6 @@
         }
     .end annotation
 
-    .line 17
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -236,7 +220,6 @@
         }
     .end annotation
 
-    .line 10
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/j;->a:Lcom/bumptech/glide/load/engine/x/h;
 
     invoke-virtual {v0, p1}, Lcom/bumptech/glide/load/engine/x/h;->a(Lcom/bumptech/glide/load/engine/x/m;)Ljava/lang/Object;
@@ -259,19 +242,16 @@
         }
     .end annotation
 
-    .line 3
     invoke-direct {p0, p2}, Lcom/bumptech/glide/load/engine/x/j;->a(Ljava/lang/Class;)Lcom/bumptech/glide/load/engine/x/a;
 
     move-result-object v0
 
-    .line 4
     invoke-direct {p0, p1}, Lcom/bumptech/glide/load/engine/x/j;->a(Lcom/bumptech/glide/load/engine/x/j$a;)Ljava/lang/Object;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 5
     iget v2, p0, Lcom/bumptech/glide/load/engine/x/j;->f:I
 
     invoke-interface {v0, v1}, Lcom/bumptech/glide/load/engine/x/a;->a(Ljava/lang/Object;)I
@@ -288,7 +268,6 @@
 
     iput v2, p0, Lcom/bumptech/glide/load/engine/x/j;->f:I
 
-    .line 6
     invoke-interface {v0, v1}, Lcom/bumptech/glide/load/engine/x/a;->a(Ljava/lang/Object;)I
 
     move-result v2
@@ -298,7 +277,6 @@
     :cond_0
     if-nez v1, :cond_2
 
-    .line 7
     invoke-interface {v0}, Lcom/bumptech/glide/load/engine/x/a;->getTag()Ljava/lang/String;
 
     move-result-object p2
@@ -311,7 +289,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 8
     invoke-interface {v0}, Lcom/bumptech/glide/load/engine/x/a;->getTag()Ljava/lang/String;
 
     move-result-object p2
@@ -338,7 +315,6 @@
 
     invoke-static {p2, v1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9
     :cond_1
     iget p1, p1, Lcom/bumptech/glide/load/engine/x/j$a;->b:I
 
@@ -355,7 +331,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 11
     invoke-direct {p0}, Lcom/bumptech/glide/load/engine/x/j;->c()Z
 
     move-result v0
@@ -396,7 +371,6 @@
         }
     .end annotation
 
-    .line 15
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/j;->c:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -407,12 +381,10 @@
 
     if-nez v0, :cond_0
 
-    .line 16
     new-instance v0, Ljava/util/TreeMap;
 
     invoke-direct {v0}, Ljava/util/TreeMap;-><init>()V
 
-    .line 17
     iget-object v1, p0, Lcom/bumptech/glide/load/engine/x/j;->c:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -424,7 +396,6 @@
 .method private b()V
     .locals 1
 
-    .line 6
     iget v0, p0, Lcom/bumptech/glide/load/engine/x/j;->e:I
 
     invoke-direct {p0, v0}, Lcom/bumptech/glide/load/engine/x/j;->b(I)V
@@ -435,29 +406,24 @@
 .method private b(I)V
     .locals 5
 
-    .line 7
     :cond_0
     :goto_0
     iget v0, p0, Lcom/bumptech/glide/load/engine/x/j;->f:I
 
     if-le v0, p1, :cond_1
 
-    .line 8
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/j;->a:Lcom/bumptech/glide/load/engine/x/h;
 
     invoke-virtual {v0}, Lcom/bumptech/glide/load/engine/x/h;->a()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 9
     invoke-static {v0}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
     invoke-direct {p0, v0}, Lcom/bumptech/glide/load/engine/x/j;->a(Ljava/lang/Object;)Lcom/bumptech/glide/load/engine/x/a;
 
     move-result-object v1
 
-    .line 11
     iget v2, p0, Lcom/bumptech/glide/load/engine/x/j;->f:I
 
     invoke-interface {v1, v0}, Lcom/bumptech/glide/load/engine/x/a;->a(Ljava/lang/Object;)I
@@ -474,7 +440,6 @@
 
     iput v2, p0, Lcom/bumptech/glide/load/engine/x/j;->f:I
 
-    .line 12
     invoke-interface {v1, v0}, Lcom/bumptech/glide/load/engine/x/a;->a(Ljava/lang/Object;)I
 
     move-result v2
@@ -485,7 +450,6 @@
 
     invoke-direct {p0, v2, v3}, Lcom/bumptech/glide/load/engine/x/j;->c(ILjava/lang/Class;)V
 
-    .line 13
     invoke-interface {v1}, Lcom/bumptech/glide/load/engine/x/a;->getTag()Ljava/lang/String;
 
     move-result-object v2
@@ -498,7 +462,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 14
     invoke-interface {v1}, Lcom/bumptech/glide/load/engine/x/a;->getTag()Ljava/lang/String;
 
     move-result-object v2
@@ -539,12 +502,10 @@
         }
     .end annotation
 
-    .line 3
     invoke-direct {p0, p2}, Lcom/bumptech/glide/load/engine/x/j;->b(Ljava/lang/Class;)Ljava/util/NavigableMap;
 
     move-result-object p2
 
-    .line 4
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -557,7 +518,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v1
@@ -566,7 +526,6 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 6
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -575,7 +534,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -596,7 +554,6 @@
     :goto_0
     return-void
 
-    .line 8
     :cond_1
     new-instance p2, Ljava/lang/NullPointerException;
 
@@ -628,7 +585,6 @@
 .method private c()Z
     .locals 2
 
-    .line 2
     iget v0, p0, Lcom/bumptech/glide/load/engine/x/j;->f:I
 
     if-eqz v0, :cond_1
@@ -659,7 +615,6 @@
 .method private c(I)Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/bumptech/glide/load/engine/x/j;->e:I
 
     div-int/lit8 v0, v0, 0x2
@@ -693,7 +648,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/j;->b:Lcom/bumptech/glide/load/engine/x/j$b;
 
@@ -701,7 +655,6 @@
 
     move-result-object p1
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/bumptech/glide/load/engine/x/j;->a(Lcom/bumptech/glide/load/engine/x/j$a;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p1
@@ -727,13 +680,11 @@
 
     const/4 v0, 0x0
 
-    .line 12
     :try_start_0
     invoke-direct {p0, v0}, Lcom/bumptech/glide/load/engine/x/j;->b(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 13
     monitor-exit p0
 
     return-void
@@ -755,7 +706,6 @@
 
     if-lt p1, v0, :cond_0
 
-    .line 14
     :try_start_0
     invoke-virtual {p0}, Lcom/bumptech/glide/load/engine/x/j;->a()V
 
@@ -775,7 +725,6 @@
 
     if-ne p1, v0, :cond_2
 
-    .line 15
     :cond_1
     iget p1, p0, Lcom/bumptech/glide/load/engine/x/j;->e:I
 
@@ -785,7 +734,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 16
     :cond_2
     :goto_0
     monitor-exit p0
@@ -812,7 +760,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-direct {p0, p2}, Lcom/bumptech/glide/load/engine/x/j;->b(Ljava/lang/Class;)Ljava/util/NavigableMap;
 
@@ -828,14 +775,12 @@
 
     check-cast v0, Ljava/lang/Integer;
 
-    .line 2
     invoke-direct {p0, p1, v0}, Lcom/bumptech/glide/load/engine/x/j;->a(ILjava/lang/Integer;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/bumptech/glide/load/engine/x/j;->b:Lcom/bumptech/glide/load/engine/x/j$b;
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
@@ -848,7 +793,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/j;->b:Lcom/bumptech/glide/load/engine/x/j$b;
 
@@ -856,7 +800,6 @@
 
     move-result-object p1
 
-    .line 5
     :goto_0
     invoke-direct {p0, p1, p2}, Lcom/bumptech/glide/load/engine/x/j;->a(Lcom/bumptech/glide/load/engine/x/j$a;Ljava/lang/Class;)Ljava/lang/Object;
 
@@ -888,30 +831,25 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 2
     invoke-direct {p0, v0}, Lcom/bumptech/glide/load/engine/x/j;->a(Ljava/lang/Class;)Lcom/bumptech/glide/load/engine/x/a;
 
     move-result-object v1
 
-    .line 3
     invoke-interface {v1, p1}, Lcom/bumptech/glide/load/engine/x/a;->a(Ljava/lang/Object;)I
 
     move-result v2
 
-    .line 4
     invoke-interface {v1}, Lcom/bumptech/glide/load/engine/x/a;->a()I
 
     move-result v1
 
     mul-int v1, v1, v2
 
-    .line 5
     invoke-direct {p0, v1}, Lcom/bumptech/glide/load/engine/x/j;->c(I)Z
 
     move-result v3
@@ -920,12 +858,10 @@
 
     if-nez v3, :cond_0
 
-    .line 6
     monitor-exit p0
 
     return-void
 
-    .line 7
     :cond_0
     :try_start_1
     iget-object v3, p0, Lcom/bumptech/glide/load/engine/x/j;->b:Lcom/bumptech/glide/load/engine/x/j$b;
@@ -934,17 +870,14 @@
 
     move-result-object v2
 
-    .line 8
     iget-object v3, p0, Lcom/bumptech/glide/load/engine/x/j;->a:Lcom/bumptech/glide/load/engine/x/h;
 
     invoke-virtual {v3, v2, p1}, Lcom/bumptech/glide/load/engine/x/h;->a(Lcom/bumptech/glide/load/engine/x/m;Ljava/lang/Object;)V
 
-    .line 9
     invoke-direct {p0, v0}, Lcom/bumptech/glide/load/engine/x/j;->b(Ljava/lang/Class;)Ljava/util/NavigableMap;
 
     move-result-object p1
 
-    .line 10
     iget v0, v2, Lcom/bumptech/glide/load/engine/x/j$a;->b:I
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -957,7 +890,6 @@
 
     check-cast v0, Ljava/lang/Integer;
 
-    .line 11
     iget v2, v2, Lcom/bumptech/glide/load/engine/x/j$a;->b:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -984,19 +916,16 @@
 
     invoke-interface {p1, v2, v0}, Ljava/util/NavigableMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12
     iget p1, p0, Lcom/bumptech/glide/load/engine/x/j;->f:I
 
     add-int/2addr p1, v1
 
     iput p1, p0, Lcom/bumptech/glide/load/engine/x/j;->f:I
 
-    .line 13
     invoke-direct {p0}, Lcom/bumptech/glide/load/engine/x/j;->b()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 14
     monitor-exit p0
 
     return-void

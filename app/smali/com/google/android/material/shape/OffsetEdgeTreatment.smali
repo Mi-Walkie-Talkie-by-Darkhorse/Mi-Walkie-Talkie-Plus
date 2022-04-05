@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/shape/OffsetEdgeTreatment;
 .super Lcom/google/android/material/shape/EdgeTreatment;
-.source "OffsetEdgeTreatment.java"
 
 
 # instance fields
@@ -17,13 +16,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/shape/EdgeTreatment;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/android/material/shape/OffsetEdgeTreatment;->other:Lcom/google/android/material/shape/EdgeTreatment;
 
-    .line 3
     iput p2, p0, Lcom/google/android/material/shape/OffsetEdgeTreatment;->offset:F
 
     return-void
@@ -34,7 +30,6 @@
 .method forceIntersection()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/shape/OffsetEdgeTreatment;->other:Lcom/google/android/material/shape/EdgeTreatment;
 
     invoke-virtual {v0}, Lcom/google/android/material/shape/EdgeTreatment;->forceIntersection()Z
@@ -51,7 +46,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/shape/OffsetEdgeTreatment;->other:Lcom/google/android/material/shape/EdgeTreatment;
 
     iget v1, p0, Lcom/google/android/material/shape/OffsetEdgeTreatment;->offset:F

@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;
 .super Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;
-.source "MapTileFilesystemProvider.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->DEFAULT_TILE_SOURCE:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     invoke-direct {p0, p1, v0}, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;-><init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
@@ -40,7 +38,6 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
     .locals 4
 
-    .line 2
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -61,7 +58,6 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;Lorg/osmdroid/tileprovider/tilesource/ITileSource;J)V
     .locals 8
 
-    .line 3
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -70,7 +66,6 @@
 
     move-result v6
 
-    .line 4
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -87,7 +82,6 @@
 
     move-wide v4, p3
 
-    .line 5
     invoke-direct/range {v1 .. v7}, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;-><init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;Lorg/osmdroid/tileprovider/tilesource/ITileSource;JII)V
 
     return-void
@@ -96,20 +90,16 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;Lorg/osmdroid/tileprovider/tilesource/ITileSource;JII)V
     .locals 0
 
-    .line 6
     invoke-direct {p0, p1, p5, p6}, Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;-><init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;II)V
 
-    .line 7
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     iput-object p1, p0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;->mTileSource:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 8
     invoke-virtual {p0, p2}, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;->setTileSource(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
 
-    .line 9
     iput-wide p3, p0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;->mMaximumCachedFileAge:J
 
     return-void
@@ -118,7 +108,6 @@
 .method static synthetic access$000(Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;)Ljava/util/concurrent/atomic/AtomicReference;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;->mTileSource:Ljava/util/concurrent/atomic/AtomicReference;
 
     return-object p0
@@ -127,7 +116,6 @@
 .method static synthetic access$100(Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;->mMaximumCachedFileAge:J
 
     return-wide v0
@@ -138,7 +126,6 @@
 .method public getMaximumZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;->mTileSource:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -149,14 +136,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->getMaximumZoomLevel()I
 
     move-result v0
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static {}, Lmicrosoft/mappoint/TileSystem;->getMaximumZoomLevel()I
 
@@ -169,7 +154,6 @@
 .method public getMinimumZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;->mTileSource:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -180,7 +164,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->getMinimumZoomLevel()I
 
     move-result v0
@@ -213,7 +196,6 @@
 .method protected getTileLoader()Ljava/lang/Runnable;
     .locals 1
 
-    .line 1
     new-instance v0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider$TileLoader;
 
     invoke-direct {v0, p0}, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider$TileLoader;-><init>(Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;)V
@@ -232,7 +214,6 @@
 .method public setTileSource(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;->mTileSource:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V

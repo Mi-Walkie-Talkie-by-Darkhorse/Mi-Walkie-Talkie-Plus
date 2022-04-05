@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ba;
 .super Ljava/lang/Object;
-.source "OfflineMapDownloadList.java"
 
 
 # instance fields
@@ -25,23 +24,18 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/os/Handler;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
-    .line 3
     iput-object p1, p0, Lcom/amap/api/col/l3/ba;->c:Landroid/content/Context;
 
-    .line 4
     iput-object p2, p0, Lcom/amap/api/col/l3/ba;->d:Landroid/os/Handler;
 
-    .line 5
     invoke-static {p1}, Lcom/amap/api/col/l3/bl;->a(Landroid/content/Context;)Lcom/amap/api/col/l3/bl;
 
     move-result-object p1
@@ -54,14 +48,12 @@
 .method private a(Lcom/amap/api/col/l3/bg;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ba;->b:Lcom/amap/api/col/l3/bl;
 
     if-eqz v0, :cond_0
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/bl;->a(Lcom/amap/api/col/l3/bg;)V
 
     :cond_0
@@ -122,13 +114,11 @@
 
     return v0
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object p0
 
-    .line 4
     invoke-virtual {p0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -146,7 +136,6 @@
 
     check-cast v1, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 5
     invoke-virtual {v1}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getState()I
 
     move-result v1
@@ -166,7 +155,6 @@
 .method private b(Lcom/amap/api/col/l3/av;)V
     .locals 6
 
-    .line 17
     new-instance v0, Ljava/io/File;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/ba;->c:Landroid/content/Context;
@@ -185,7 +173,6 @@
 
     return-void
 
-    .line 18
     :cond_0
     array-length v1, v0
 
@@ -196,7 +183,6 @@
 
     aget-object v3, v0, v2
 
-    .line 19
     invoke-virtual {v3}, Ljava/io/File;->isFile()Z
 
     move-result v4
@@ -223,7 +209,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 20
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v4
@@ -236,7 +221,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 21
     invoke-virtual {v3}, Ljava/io/File;->delete()Z
 
     :cond_1
@@ -251,12 +235,10 @@
 .method private b(Lcom/amap/api/col/l3/bg;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ba;->b:Lcom/amap/api/col/l3/bl;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/bl;->b(Lcom/amap/api/col/l3/bg;)V
 
     :cond_0
@@ -274,7 +256,6 @@
 
     const-string v1, ""
 
-    .line 11
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -283,13 +264,11 @@
 
     goto :goto_0
 
-    .line 12
     :cond_0
     iget-object v1, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     monitor-enter v1
 
-    .line 13
     :try_start_0
     iget-object v2, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
@@ -310,7 +289,6 @@
 
     check-cast v3, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
 
-    .line 14
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object v3
@@ -332,7 +310,6 @@
 
     check-cast v4, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 15
     invoke-virtual {v4}, Lcom/amap/api/maps/offlinemap/City;->getCode()Ljava/lang/String;
 
     move-result-object v5
@@ -343,14 +320,12 @@
 
     if-eqz v5, :cond_2
 
-    .line 16
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object v4
 
-    .line 17
     :cond_3
     monitor-exit v1
 
@@ -379,17 +354,14 @@
         }
     .end annotation
 
-    .line 6
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 7
     iget-object v1, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     monitor-enter v1
 
-    .line 8
     :try_start_0
     iget-object v2, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
@@ -410,12 +382,10 @@
 
     check-cast v3, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
 
-    .line 9
     invoke-virtual {v0, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 10
     :cond_0
     monitor-exit v1
     :try_end_0
@@ -434,17 +404,14 @@
 .method public final a(Lcom/amap/api/col/l3/av;)V
     .locals 8
 
-    .line 39
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/City;->getPinyin()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 40
     iget-object v1, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     monitor-enter v1
 
-    .line 41
     :try_start_0
     iget-object v2, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
@@ -467,12 +434,10 @@
 
     if-eqz v3, :cond_0
 
-    .line 42
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object v4
 
-    .line 43
     invoke-interface {v4}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
@@ -490,7 +455,6 @@
 
     check-cast v5, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 44
     invoke-virtual {v5}, Lcom/amap/api/maps/offlinemap/City;->getPinyin()Ljava/lang/String;
 
     move-result-object v6
@@ -509,7 +473,6 @@
 
     if-eqz v6, :cond_1
 
-    .line 45
     invoke-virtual {p1}, Lcom/amap/api/col/l3/av;->c()Lcom/amap/api/col/l3/bz;
 
     move-result-object v0
@@ -630,7 +593,6 @@
 
     invoke-virtual {v5, v0}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->setCompleteCode(I)V
 
-    .line 46
     invoke-virtual {p1}, Lcom/amap/api/col/l3/av;->c()Lcom/amap/api/col/l3/bz;
 
     move-result-object v0
@@ -789,7 +751,6 @@
 
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 47
     :cond_a
     :goto_4
     monitor-exit v1
@@ -817,12 +778,10 @@
         }
     .end annotation
 
-    .line 18
     iget-object v0, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     monitor-enter v0
 
-    .line 19
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
@@ -836,7 +795,6 @@
 
     const/4 v2, 0x0
 
-    .line 20
     :goto_0
     iget-object v3, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
@@ -846,7 +804,6 @@
 
     if-ge v2, v3, :cond_9
 
-    .line 21
     iget-object v3, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -855,7 +812,6 @@
 
     check-cast v3, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
 
-    .line 22
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
@@ -875,7 +831,6 @@
 
     check-cast v5, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
 
-    .line 23
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/Province;->getPinyin()Ljava/lang/String;
 
     move-result-object v7
@@ -892,7 +847,6 @@
 
     goto :goto_1
 
-    .line 24
     :cond_1
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/Province;->getPinyin()Ljava/lang/String;
 
@@ -906,7 +860,6 @@
 
     if-nez v7, :cond_2
 
-    .line 25
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/Province;->getProvinceCode()Ljava/lang/String;
 
     move-result-object v7
@@ -919,7 +872,6 @@
 
     if-nez v7, :cond_2
 
-    .line 26
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/Province;->getProvinceCode()Ljava/lang/String;
 
     move-result-object v7
@@ -932,7 +884,6 @@
 
     if-eqz v7, :cond_0
 
-    .line 27
     :cond_2
     invoke-virtual {v5}, Lcom/amap/api/maps/offlinemap/Province;->getPinyin()Ljava/lang/String;
 
@@ -954,7 +905,6 @@
     :goto_1
     if-eqz v5, :cond_7
 
-    .line 28
     invoke-virtual {v5}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getUrl()Ljava/lang/String;
 
     move-result-object v4
@@ -985,19 +935,16 @@
 
     invoke-virtual {v3, v4}, Lcom/amap/api/maps/offlinemap/Province;->setJianpin(Ljava/lang/String;)V
 
-    .line 29
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object v3
 
-    .line 30
     invoke-virtual {v5}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object v4
 
     const/4 v5, 0x0
 
-    .line 31
     :goto_2
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -1005,14 +952,12 @@
 
     if-ge v5, v7, :cond_7
 
-    .line 32
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
     check-cast v7, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 33
     invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v8
@@ -1030,7 +975,6 @@
 
     check-cast v9, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 34
     invoke-virtual {v7}, Lcom/amap/api/maps/offlinemap/City;->getPinyin()Ljava/lang/String;
 
     move-result-object v10
@@ -1053,7 +997,6 @@
     :goto_3
     if-eqz v9, :cond_6
 
-    .line 35
     invoke-virtual {v9}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getUrl()Ljava/lang/String;
 
     move-result-object v8
@@ -1100,7 +1043,6 @@
 
     goto/16 :goto_0
 
-    .line 36
     :cond_8
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1119,14 +1061,12 @@
 
     check-cast v1, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
 
-    .line 37
     iget-object v2, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_4
 
-    .line 38
     :cond_9
     monitor-exit v0
     :try_end_0
@@ -1151,7 +1091,6 @@
 
     const-string v1, ""
 
-    .line 3
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -1160,13 +1099,11 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     monitor-enter v1
 
-    .line 5
     :try_start_0
     iget-object v2, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
@@ -1187,7 +1124,6 @@
 
     check-cast v3, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
 
-    .line 6
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object v3
@@ -1209,12 +1145,10 @@
 
     check-cast v4, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 7
     invoke-virtual {v4}, Lcom/amap/api/maps/offlinemap/City;->getCity()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 8
     invoke-virtual {v5}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v5
@@ -1229,14 +1163,12 @@
 
     if-eqz v5, :cond_2
 
-    .line 9
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object v4
 
-    .line 10
     :cond_3
     monitor-exit v1
 
@@ -1265,17 +1197,14 @@
         }
     .end annotation
 
-    .line 11
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 12
     iget-object v1, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     monitor-enter v1
 
-    .line 13
     :try_start_0
     iget-object v2, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
@@ -1296,7 +1225,6 @@
 
     check-cast v3, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
 
-    .line 14
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object v3
@@ -1318,12 +1246,10 @@
 
     check-cast v4, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 15
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 16
     :cond_1
     monitor-exit v1
     :try_end_0
@@ -1348,7 +1274,6 @@
 
     const-string v1, ""
 
-    .line 1
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -1357,13 +1282,11 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     monitor-enter v1
 
-    .line 3
     :try_start_0
     iget-object v2, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
@@ -1384,12 +1307,10 @@
 
     check-cast v3, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;
 
-    .line 4
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/Province;->getProvinceName()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 5
     invoke-virtual {v4}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v4
@@ -1404,14 +1325,12 @@
 
     if-eqz v4, :cond_1
 
-    .line 6
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object v3
 
-    .line 7
     :cond_2
     monitor-exit v1
 
@@ -1440,18 +1359,15 @@
         }
     .end annotation
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     monitor-enter v0
 
-    .line 9
     :try_start_0
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 10
     iget-object v2, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -1473,12 +1389,10 @@
 
     if-eqz v3, :cond_0
 
-    .line 11
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object v3
 
-    .line 12
     invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -1497,7 +1411,6 @@
 
     check-cast v4, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 13
     invoke-virtual {v4}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getState()I
 
     move-result v5
@@ -1506,7 +1419,6 @@
 
     if-eq v5, v6, :cond_2
 
-    .line 14
     invoke-virtual {v4}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getState()I
 
     move-result v5
@@ -1515,13 +1427,11 @@
 
     if-ne v5, v6, :cond_1
 
-    .line 15
     :cond_2
     invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 16
     :cond_3
     monitor-exit v0
     :try_end_0
@@ -1532,7 +1442,6 @@
     :catchall_0
     move-exception v1
 
-    .line 17
     monitor-exit v0
 
     throw v1
@@ -1549,18 +1458,15 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
     iget-object v2, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -1583,7 +1489,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 4
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getState()I
 
     move-result v4
@@ -1592,7 +1497,6 @@
 
     if-eq v4, v5, :cond_1
 
-    .line 5
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getState()I
 
     move-result v4
@@ -1601,13 +1505,11 @@
 
     if-ne v4, v5, :cond_0
 
-    .line 6
     :cond_1
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 7
     :cond_2
     monitor-exit v0
     :try_end_0
@@ -1618,7 +1520,6 @@
     :catchall_0
     move-exception v1
 
-    .line 8
     monitor-exit v0
 
     throw v1
@@ -1635,18 +1536,15 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
     iget-object v2, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -1668,12 +1566,10 @@
 
     if-eqz v3, :cond_0
 
-    .line 4
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getCityList()Ljava/util/ArrayList;
 
     move-result-object v3
 
-    .line 5
     invoke-interface {v3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -1692,7 +1588,6 @@
 
     check-cast v4, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 6
     invoke-virtual {v4}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getState()I
 
     move-result v5
@@ -1703,12 +1598,10 @@
 
     if-eqz v5, :cond_1
 
-    .line 7
     invoke-virtual {v1, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 8
     :cond_2
     monitor-exit v0
     :try_end_0
@@ -1719,7 +1612,6 @@
     :catchall_0
     move-exception v1
 
-    .line 9
     monitor-exit v0
 
     throw v1
@@ -1736,18 +1628,15 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
     iget-object v2, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -1770,7 +1659,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 4
     invoke-virtual {v3}, Lcom/amap/api/maps/offlinemap/OfflineMapProvince;->getState()I
 
     move-result v4
@@ -1781,12 +1669,10 @@
 
     if-eqz v4, :cond_0
 
-    .line 5
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 6
     :cond_1
     monitor-exit v0
     :try_end_0
@@ -1797,7 +1683,6 @@
     :catchall_0
     move-exception v1
 
-    .line 7
     monitor-exit v0
 
     throw v1
@@ -1806,7 +1691,6 @@
 .method public final g()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ba;->a:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
@@ -1835,13 +1719,10 @@
     :goto_0
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/ba;->d:Landroid/os/Handler;
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/col/l3/ba;->b:Lcom/amap/api/col/l3/bl;
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/col/l3/ba;->c:Landroid/content/Context;
 
     return-void

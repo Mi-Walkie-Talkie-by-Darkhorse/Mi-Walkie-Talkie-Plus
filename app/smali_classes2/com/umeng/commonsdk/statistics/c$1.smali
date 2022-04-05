@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/statistics/c$1;
 .super Ljava/lang/Object;
-.source "NetWorkManager.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/statistics/internal/d;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/umeng/commonsdk/statistics/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/c$1;->a:Lcom/umeng/commonsdk/statistics/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onImprintChanged(Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/c$1;->a:Lcom/umeng/commonsdk/statistics/c;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/c;->a(Lcom/umeng/commonsdk/statistics/c;)Lcom/umeng/commonsdk/statistics/noise/Defcon;
@@ -47,7 +44,6 @@
 
     invoke-virtual {v0, p1}, Lcom/umeng/commonsdk/statistics/noise/Defcon;->onImprintChanged(Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;)V
 
-    .line 2
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/c$1;->a:Lcom/umeng/commonsdk/statistics/c;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/c;->b(Lcom/umeng/commonsdk/statistics/c;)Landroid/content/Context;

@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder$b;
 .super Ljava/lang/Object;
-.source "QMUIDialogBuilder.java"
 
 # interfaces
 .implements Landroid/view/View$OnLayoutChangeListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;Lcom/qmuiteam/qmui/layout/QMUILinearLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder$b;->b:Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     iput-object p2, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder$b;->a:Lcom/qmuiteam/qmui/layout/QMUILinearLayout;
@@ -44,7 +42,6 @@
 
     sub-int/2addr p4, p2
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder$b;->a:Lcom/qmuiteam/qmui/layout/QMUILinearLayout;
 
     invoke-virtual {p1}, Landroid/widget/LinearLayout;->getChildCount()I
@@ -53,7 +50,6 @@
 
     if-lez p1, :cond_0
 
-    .line 2
     iget-object p2, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder$b;->a:Lcom/qmuiteam/qmui/layout/QMUILinearLayout;
 
     add-int/lit8 p3, p1, -0x1
@@ -62,14 +58,12 @@
 
     move-result-object p2
 
-    .line 3
     invoke-virtual {p2}, Landroid/view/View;->getRight()I
 
     move-result p3
 
     if-le p3, p4, :cond_0
 
-    .line 4
     invoke-virtual {p2}, Landroid/view/View;->getPaddingLeft()I
 
     move-result p2
@@ -99,7 +93,6 @@
     :goto_0
     if-ge p4, p1, :cond_0
 
-    .line 5
     iget-object p5, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder$b;->a:Lcom/qmuiteam/qmui/layout/QMUILinearLayout;
 
     invoke-virtual {p5, p4}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;

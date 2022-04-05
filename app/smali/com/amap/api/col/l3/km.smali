@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/km;
 .super Lcom/autonavi/amap/mapcore/Inner_3dMap_location;
-.source "AMapLocationModel.java"
 
 
 # instance fields

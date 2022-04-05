@@ -1,6 +1,5 @@
 .class Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder;
 .super Ljava/lang/Object;
-.source "UnsignedBytes.java"
 
 
 # annotations
@@ -41,7 +40,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     const-class v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -60,7 +58,6 @@
 
     sput-object v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder;->UNSAFE_COMPARATOR_NAME:Ljava/lang/String;
 
-    .line 2
     invoke-static {}, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder;->getBestComparator()Ljava/util/Comparator;
 
     move-result-object v0
@@ -73,7 +70,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -89,7 +85,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     sget-object v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder;->UNSAFE_COMPARATOR_NAME:Ljava/lang/String;
 
@@ -97,7 +92,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Class;->getEnumConstants()[Ljava/lang/Object;
 
     move-result-object v0
@@ -112,7 +106,6 @@
 
     return-object v0
 
-    .line 3
     :catchall_0
     invoke-static {}, Lcom/google/common/primitives/UnsignedBytes;->lexicographicalComparatorJavaImpl()Ljava/util/Comparator;
 

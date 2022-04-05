@@ -1,6 +1,5 @@
 .class interface abstract Lcom/yalantis/ucrop/e/f$b;
 .super Ljava/lang/Object;
-.source "ImageHeaderParser.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/ColorRes;
 .super Ljava/lang/Object;
-.source "ColorRes.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

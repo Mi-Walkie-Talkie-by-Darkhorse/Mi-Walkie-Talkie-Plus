@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/appbar/CollapsingToolbarLayout$OffsetUpdateListener;
 .super Ljava/lang/Object;
-.source "CollapsingToolbarLayout.java"
 
 # interfaces
 .implements Lcom/google/android/material/appbar/AppBarLayout$OnOffsetChangedListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/appbar/CollapsingToolbarLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$OffsetUpdateListener;->this$0:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public onOffsetChanged(Lcom/google/android/material/appbar/AppBarLayout;I)V
     .locals 8
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$OffsetUpdateListener;->this$0:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
     iput p2, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->currentOffset:I
 
-    .line 2
     iget-object p1, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->lastInsets:Landroidx/core/view/WindowInsetsCompat;
 
     const/4 v0, 0x0
@@ -59,7 +55,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 3
     :goto_0
     iget-object v1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$OffsetUpdateListener;->this$0:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
@@ -72,26 +67,22 @@
     :goto_1
     if-ge v2, v1, :cond_3
 
-    .line 4
     iget-object v3, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$OffsetUpdateListener;->this$0:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
     invoke-virtual {v3, v2}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
 
-    .line 5
     invoke-virtual {v3}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v4
 
     check-cast v4, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;
 
-    .line 6
     invoke-static {v3}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->getViewOffsetHelper(Landroid/view/View;)Lcom/google/android/material/appbar/ViewOffsetHelper;
 
     move-result-object v5
 
-    .line 7
     iget v6, v4, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->collapseMode:I
 
     const/4 v7, 0x1
@@ -109,7 +100,6 @@
 
     int-to-float v3, v3
 
-    .line 8
     iget v4, v4, Lcom/google/android/material/appbar/CollapsingToolbarLayout$LayoutParams;->parallaxMult:F
 
     mul-float v3, v3, v4
@@ -125,10 +115,8 @@
     :cond_2
     neg-int v4, p2
 
-    .line 9
     iget-object v6, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$OffsetUpdateListener;->this$0:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
-    .line 10
     invoke-virtual {v6, v3}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->getMaxOffsetForPinChild(Landroid/view/View;)I
 
     move-result v3
@@ -137,7 +125,6 @@
 
     move-result v3
 
-    .line 11
     invoke-virtual {v5, v3}, Lcom/google/android/material/appbar/ViewOffsetHelper;->setTopAndBottomOffset(I)Z
 
     :goto_2
@@ -145,13 +132,11 @@
 
     goto :goto_1
 
-    .line 12
     :cond_3
     iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$OffsetUpdateListener;->this$0:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
     invoke-virtual {v0}, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->updateScrimVisibility()V
 
-    .line 13
     iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$OffsetUpdateListener;->this$0:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
     iget-object v1, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->statusBarScrim:Landroid/graphics/drawable/Drawable;
@@ -160,14 +145,11 @@
 
     if-lez p1, :cond_4
 
-    .line 14
     invoke-static {v0}, Landroidx/core/view/ViewCompat;->R(Landroid/view/View;)V
 
-    .line 15
     :cond_4
     iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$OffsetUpdateListener;->this$0:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
-    .line 16
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result v0
@@ -182,7 +164,6 @@
 
     sub-int/2addr v0, p1
 
-    .line 17
     iget-object p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$OffsetUpdateListener;->this$0:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
     iget-object p1, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->collapsingTextHelper:Lcom/google/android/material/internal/CollapsingTextHelper;

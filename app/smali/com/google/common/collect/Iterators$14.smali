@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Iterators$14;
 .super Ljava/lang/Object;
-.source "Iterators.java"
 
 # interfaces
 .implements Ljava/util/Enumeration;
@@ -33,7 +32,6 @@
 .method constructor <init>(Ljava/util/Iterator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Iterators$14;->val$iterator:Ljava/util/Iterator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +44,6 @@
 .method public hasMoreElements()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Iterators$14;->val$iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -64,7 +61,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Iterators$14;->val$iterator:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;

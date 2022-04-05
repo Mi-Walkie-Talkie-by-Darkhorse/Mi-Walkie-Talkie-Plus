@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;
 .super Ljava/lang/Object;
-.source "DownloadListenerBunch.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/DownloadListener;
@@ -29,10 +28,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     return-void
@@ -63,7 +60,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -75,7 +71,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-interface {v3, p1, p2, p3, p4}, Lcom/liulishuo/okdownload/DownloadListener;->connectEnd(Lcom/liulishuo/okdownload/DownloadTask;IILjava/util/Map;)V
 
     add-int/lit8 v2, v2, 0x1
@@ -109,7 +104,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -121,7 +115,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-interface {v3, p1, p2, p3}, Lcom/liulishuo/okdownload/DownloadListener;->connectStart(Lcom/liulishuo/okdownload/DownloadTask;ILjava/util/Map;)V
 
     add-int/lit8 v2, v2, 0x1
@@ -155,7 +148,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -167,7 +159,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-interface {v3, p1, p2, p3}, Lcom/liulishuo/okdownload/DownloadListener;->connectTrialEnd(Lcom/liulishuo/okdownload/DownloadTask;ILjava/util/Map;)V
 
     add-int/lit8 v2, v2, 0x1
@@ -200,7 +191,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -212,7 +202,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-interface {v3, p1, p2}, Lcom/liulishuo/okdownload/DownloadListener;->connectTrialStart(Lcom/liulishuo/okdownload/DownloadTask;Ljava/util/Map;)V
 
     add-int/lit8 v2, v2, 0x1
@@ -226,7 +215,6 @@
 .method public contain(Lcom/liulishuo/okdownload/DownloadListener;)Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -270,7 +258,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -282,7 +269,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-interface {v3, p1, p2, p3}, Lcom/liulishuo/okdownload/DownloadListener;->downloadFromBeginning(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;)V
 
     add-int/lit8 v2, v2, 0x1
@@ -304,7 +290,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -316,7 +301,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-interface {v3, p1, p2}, Lcom/liulishuo/okdownload/DownloadListener;->downloadFromBreakpoint(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)V
 
     add-int/lit8 v2, v2, 0x1
@@ -334,7 +318,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -346,7 +329,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-interface {v3, p1, p2, p3, p4}, Lcom/liulishuo/okdownload/DownloadListener;->fetchEnd(Lcom/liulishuo/okdownload/DownloadTask;IJ)V
 
     add-int/lit8 v2, v2, 0x1
@@ -364,7 +346,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -376,7 +357,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-interface {v3, p1, p2, p3, p4}, Lcom/liulishuo/okdownload/DownloadListener;->fetchProgress(Lcom/liulishuo/okdownload/DownloadTask;IJ)V
 
     add-int/lit8 v2, v2, 0x1
@@ -394,7 +374,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -406,7 +385,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-interface {v3, p1, p2, p3, p4}, Lcom/liulishuo/okdownload/DownloadListener;->fetchStart(Lcom/liulishuo/okdownload/DownloadTask;IJ)V
 
     add-int/lit8 v2, v2, 0x1
@@ -422,7 +400,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
@@ -430,7 +407,6 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 2
     aget-object v1, v1, v0
 
     if-ne v1, p1, :cond_0
@@ -463,7 +439,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -475,7 +450,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-interface {v3, p1, p2, p3}, Lcom/liulishuo/okdownload/DownloadListener;->taskEnd(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/cause/EndCause;Ljava/lang/Exception;)V
 
     add-int/lit8 v2, v2, 0x1
@@ -493,7 +467,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;->listenerList:[Lcom/liulishuo/okdownload/DownloadListener;
 
     array-length v1, v0
@@ -505,7 +478,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-interface {v3, p1}, Lcom/liulishuo/okdownload/DownloadListener;->taskStart(Lcom/liulishuo/okdownload/DownloadTask;)V
 
     add-int/lit8 v2, v2, 0x1

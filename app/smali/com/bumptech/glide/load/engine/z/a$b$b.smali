@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/engine/z/a$b$b;
 .super Ljava/lang/Object;
-.source "GlideExecutor.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/z/a$b;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
 
     const-string v1, "GlideExecutor"
 
-    .line 1
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
@@ -47,7 +44,6 @@
 
     const-string v0, "Request threw uncaught throwable"
 
-    .line 2
     invoke-static {v1, v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_0

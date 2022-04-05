@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/RegisterFragment$j;
 .super Ljava/lang/Object;
-.source "RegisterFragment.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnDismissListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/RegisterFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$j;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 4
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$j;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->k(Lcom/ifengyu/intercom/lite/login/RegisterFragment;)Ljava/lang/String;
@@ -55,7 +52,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$j;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->k(Lcom/ifengyu/intercom/lite/login/RegisterFragment;)Ljava/lang/String;
@@ -82,7 +78,6 @@
 
     invoke-virtual {p1, v0, v1, v2, v3}, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$j;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
@@ -90,17 +85,14 @@
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->a(Lcom/ifengyu/intercom/lite/login/RegisterFragment;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$j;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->b(Lcom/ifengyu/intercom/lite/login/RegisterFragment;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$j;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->c(Lcom/ifengyu/intercom/lite/login/RegisterFragment;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$j;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->d(Lcom/ifengyu/intercom/lite/login/RegisterFragment;Ljava/lang/String;)Ljava/lang/String;

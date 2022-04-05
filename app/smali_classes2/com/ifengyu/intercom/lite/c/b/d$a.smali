@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/c/b/d$a;
 .super Ljava/lang/Object;
-.source "EditTextDialogBuilder.java"
 
 # interfaces
 .implements Landroid/text/TextWatcher;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/c/b/d;Landroid/widget/EditText;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/d$a;->b:Lcom/ifengyu/intercom/lite/c/b/d;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/d$a;->a:Landroid/widget/EditText;
@@ -54,7 +52,6 @@
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/d$a;->b:Lcom/ifengyu/intercom/lite/c/b/d;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/c/b/d;->a(Lcom/ifengyu/intercom/lite/c/b/d;)Z
@@ -63,7 +60,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/d$a;->b:Lcom/ifengyu/intercom/lite/c/b/d;
 
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/d$a;->a:Landroid/widget/EditText;

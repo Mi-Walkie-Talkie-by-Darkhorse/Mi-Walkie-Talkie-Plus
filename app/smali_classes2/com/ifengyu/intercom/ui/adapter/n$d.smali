@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/adapter/n$d;
 .super Ljava/lang/Object;
-.source "SelectDeviceAdapter.java"
 
 
 # annotations

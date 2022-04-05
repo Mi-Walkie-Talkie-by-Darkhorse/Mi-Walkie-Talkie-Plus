@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/node/btle/g$a;
 .super Ljava/lang/Object;
-.source "CustomNamedThreadFactory.java"
 
 # interfaces
 .implements Ljava/lang/Thread$UncaughtExceptionHandler;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/node/btle/g;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btle/g$a;->a:Lcom/ifengyu/intercom/node/btle/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/g$a;->a:Lcom/ifengyu/intercom/node/btle/g;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/node/btle/g;->a(Lcom/ifengyu/intercom/node/btle/g;)Ljava/lang/String;

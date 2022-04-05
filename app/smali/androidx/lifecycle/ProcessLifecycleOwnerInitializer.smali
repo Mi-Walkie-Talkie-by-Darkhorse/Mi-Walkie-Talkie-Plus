@@ -1,6 +1,5 @@
 .class public Landroidx/lifecycle/ProcessLifecycleOwnerInitializer;
 .super Landroid/content/ContentProvider;
-.source "ProcessLifecycleOwnerInitializer.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/content/ContentProvider;-><init>()V
 
     return-void
@@ -66,14 +64,12 @@
 .method public onCreate()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/ContentProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
     invoke-static {v0}, Landroidx/lifecycle/h;->a(Landroid/content/Context;)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/ContentProvider;->getContext()Landroid/content/Context;
 
     move-result-object v0

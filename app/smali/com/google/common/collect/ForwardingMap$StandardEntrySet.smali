@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/ForwardingMap$StandardEntrySet;
 .super Lcom/google/common/collect/Maps$EntrySet;
-.source "ForwardingMap.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method public constructor <init>(Lcom/google/common/collect/ForwardingMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ForwardingMap$StandardEntrySet;->this$0:Lcom/google/common/collect/ForwardingMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/Maps$EntrySet;-><init>()V
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ForwardingMap$StandardEntrySet;->this$0:Lcom/google/common/collect/ForwardingMap;
 
     return-object v0

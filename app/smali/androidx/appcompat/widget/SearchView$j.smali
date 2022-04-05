@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/SearchView$j;
 .super Ljava/lang/Object;
-.source "SearchView.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemSelectedListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SearchView$j;->a:Landroidx/appcompat/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/SearchView$j;->a:Landroidx/appcompat/widget/SearchView;
 
     invoke-virtual {p1, p3}, Landroidx/appcompat/widget/SearchView;->a(I)Z

@@ -1,6 +1,5 @@
 .class public final Landroidx/activity/result/d/b;
 .super Landroidx/activity/result/d/a;
-.source "ActivityResultContracts.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/activity/result/d/a;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "androidx.activity.result.contract.action.REQUEST_PERMISSIONS"
@@ -67,7 +64,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-static {p2}, Landroidx/activity/result/d/b;->a([Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object p1
@@ -105,20 +101,17 @@
 
     if-eqz p2, :cond_5
 
-    .line 1
     array-length v0, p2
 
     if-nez v0, :cond_0
 
     goto :goto_2
 
-    .line 2
     :cond_0
     new-instance v0, La/b/a;
 
     invoke-direct {v0}, La/b/a;-><init>()V
 
-    .line 3
     array-length v1, p2
 
     const/4 v2, 0x0
@@ -134,7 +127,6 @@
 
     aget-object v6, p2, v4
 
-    .line 4
     invoke-static {p1, v6}, Landroidx/core/content/b;->a(Landroid/content/Context;Ljava/lang/String;)I
 
     move-result v7
@@ -148,7 +140,6 @@
     :cond_1
     const/4 v7, 0x0
 
-    .line 5
     :goto_1
     invoke-static {v7}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -168,7 +159,6 @@
     :cond_3
     if-eqz v5, :cond_4
 
-    .line 6
     new-instance p1, Landroidx/activity/result/d/a$a;
 
     invoke-direct {p1, v0}, Landroidx/activity/result/d/a$a;-><init>(Ljava/lang/Object;)V
@@ -180,7 +170,6 @@
 
     return-object p1
 
-    .line 7
     :cond_5
     :goto_2
     new-instance p1, Landroidx/activity/result/d/a$a;
@@ -207,7 +196,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     check-cast p2, [Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Landroidx/activity/result/d/b;->a(Landroid/content/Context;[Ljava/lang/String;)Landroid/content/Intent;
@@ -230,7 +218,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     check-cast p2, [Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Landroidx/activity/result/d/b;->b(Landroid/content/Context;[Ljava/lang/String;)Landroidx/activity/result/d/a$a;
@@ -249,7 +236,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Landroidx/activity/result/d/b;->parseResult(ILandroid/content/Intent;)Ljava/util/Map;
 
     move-result-object p1
@@ -282,7 +268,6 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 2
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p1
@@ -292,7 +277,6 @@
     :cond_0
     if-nez p2, :cond_1
 
-    .line 3
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p1
@@ -302,14 +286,12 @@
     :cond_1
     const-string p1, "androidx.activity.result.contract.extra.PERMISSIONS"
 
-    .line 4
     invoke-virtual {p2, p1}, Landroid/content/Intent;->getStringArrayExtra(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p1
 
     const-string v0, "androidx.activity.result.contract.extra.PERMISSION_GRANT_RESULTS"
 
-    .line 5
     invoke-virtual {p2, v0}, Landroid/content/Intent;->getIntArrayExtra(Ljava/lang/String;)[I
 
     move-result-object p2
@@ -320,13 +302,11 @@
 
     goto :goto_2
 
-    .line 6
     :cond_2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 7
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -336,7 +316,6 @@
     :goto_0
     if-ge v3, v1, :cond_4
 
-    .line 8
     aget-object v4, p1, v3
 
     aget v5, p2, v3
@@ -364,7 +343,6 @@
     :cond_4
     return-object v0
 
-    .line 9
     :cond_5
     :goto_2
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;

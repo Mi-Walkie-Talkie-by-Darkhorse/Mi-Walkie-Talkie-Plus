@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/recyclerview/widget/i$a;
 .super Ljava/lang/Object;
-.source "OpReorderer.java"
 
 
 # annotations

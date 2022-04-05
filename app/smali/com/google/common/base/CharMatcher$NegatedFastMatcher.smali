@@ -1,6 +1,5 @@
 .class final Lcom/google/common/base/CharMatcher$NegatedFastMatcher;
 .super Lcom/google/common/base/CharMatcher$NegatedMatcher;
-.source "CharMatcher.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Lcom/google/common/base/CharMatcher;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/base/CharMatcher$NegatedMatcher;-><init>(Lcom/google/common/base/CharMatcher;)V
 
     return-void
@@ -27,7 +25,6 @@
 .method constructor <init>(Ljava/lang/String;Lcom/google/common/base/CharMatcher;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/google/common/base/CharMatcher$NegatedMatcher;-><init>(Ljava/lang/String;Lcom/google/common/base/CharMatcher;)V
 
     return-void
@@ -44,7 +41,6 @@
 .method withToString(Ljava/lang/String;)Lcom/google/common/base/CharMatcher;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/base/CharMatcher$NegatedFastMatcher;
 
     iget-object v1, p0, Lcom/google/common/base/CharMatcher$NegatedMatcher;->original:Lcom/google/common/base/CharMatcher;

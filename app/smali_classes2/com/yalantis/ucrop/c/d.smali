@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/yalantis/ucrop/c/d;
 .super Ljava/lang/Object;
-.source "OverlayViewChangeListener.java"
 
 
 # virtual methods

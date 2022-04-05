@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/progressindicator/IndeterminateDrawable;
 .super Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;
-.source "IndeterminateDrawable.java"
 
 
 # annotations
@@ -67,13 +66,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;-><init>(Landroid/content/Context;Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;)V
 
-    .line 2
     invoke-virtual {p0, p3}, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->setDrawingDelegate(Lcom/google/android/material/progressindicator/DrawingDelegate;)V
 
-    .line 3
     invoke-virtual {p0, p4}, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->setAnimatorDelegate(Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;)V
 
     return-void
@@ -104,7 +100,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;
 
     new-instance v1, Lcom/google/android/material/progressindicator/CircularDrawingDelegate;
@@ -145,7 +140,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;
 
     new-instance v1, Lcom/google/android/material/progressindicator/LinearDrawingDelegate;
@@ -178,7 +172,6 @@
 .method public bridge synthetic clearAnimationCallbacks()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->clearAnimationCallbacks()V
 
     return-void
@@ -191,12 +184,10 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object v1
@@ -221,11 +212,9 @@
 
     goto :goto_1
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->drawingDelegate:Lcom/google/android/material/progressindicator/DrawingDelegate;
 
     invoke-virtual {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->getGrowFraction()F
@@ -234,7 +223,6 @@
 
     invoke-virtual {v0, p1, v1}, Lcom/google/android/material/progressindicator/DrawingDelegate;->validateSpecAndAdjustCanvas(Landroid/graphics/Canvas;F)V
 
-    .line 5
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->drawingDelegate:Lcom/google/android/material/progressindicator/DrawingDelegate;
 
     iget-object v1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->paint:Landroid/graphics/Paint;
@@ -243,7 +231,6 @@
 
     const/4 v0, 0x0
 
-    .line 6
     :goto_0
     iget-object v1, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->animatorDelegate:Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;
 
@@ -253,7 +240,6 @@
 
     if-ge v0, v3, :cond_1
 
-    .line 7
     iget-object v4, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->drawingDelegate:Lcom/google/android/material/progressindicator/DrawingDelegate;
 
     iget-object v6, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->paint:Landroid/graphics/Paint;
@@ -278,7 +264,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
@@ -290,7 +275,6 @@
 .method public bridge synthetic getAlpha()I
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->getAlpha()I
 
     move-result v0
@@ -312,7 +296,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->animatorDelegate:Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;
 
     return-object v0
@@ -331,7 +314,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->drawingDelegate:Lcom/google/android/material/progressindicator/DrawingDelegate;
 
     return-object v0
@@ -340,7 +322,6 @@
 .method public getIntrinsicHeight()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->drawingDelegate:Lcom/google/android/material/progressindicator/DrawingDelegate;
 
     invoke-virtual {v0}, Lcom/google/android/material/progressindicator/DrawingDelegate;->getPreferredHeight()I
@@ -353,7 +334,6 @@
 .method public getIntrinsicWidth()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->drawingDelegate:Lcom/google/android/material/progressindicator/DrawingDelegate;
 
     invoke-virtual {v0}, Lcom/google/android/material/progressindicator/DrawingDelegate;->getPreferredWidth()I
@@ -366,7 +346,6 @@
 .method public bridge synthetic getOpacity()I
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->getOpacity()I
 
     move-result v0
@@ -377,7 +356,6 @@
 .method public bridge synthetic hideNow()Z
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->hideNow()Z
 
     move-result v0
@@ -388,7 +366,6 @@
 .method public bridge synthetic isHiding()Z
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->isHiding()Z
 
     move-result v0
@@ -399,7 +376,6 @@
 .method public bridge synthetic isRunning()Z
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->isRunning()Z
 
     move-result v0
@@ -410,7 +386,6 @@
 .method public bridge synthetic isShowing()Z
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->isShowing()Z
 
     move-result v0
@@ -425,7 +400,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->registerAnimationCallback(Landroidx/vectordrawable/a/a/b$a;)V
 
     return-void
@@ -434,7 +408,6 @@
 .method public bridge synthetic setAlpha(I)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setAlpha(I)V
 
     return-void
@@ -455,10 +428,8 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->animatorDelegate:Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;
 
-    .line 2
     invoke-virtual {p1, p0}, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->registerDrawable(Lcom/google/android/material/progressindicator/IndeterminateDrawable;)V
 
     return-void
@@ -471,7 +442,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
     return-void
@@ -491,10 +461,8 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->drawingDelegate:Lcom/google/android/material/progressindicator/DrawingDelegate;
 
-    .line 2
     invoke-virtual {p1, p0}, Lcom/google/android/material/progressindicator/DrawingDelegate;->registerDrawable(Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;)V
 
     return-void
@@ -503,7 +471,6 @@
 .method public bridge synthetic setVisible(ZZ)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setVisible(ZZ)Z
 
     move-result p1
@@ -514,7 +481,6 @@
 .method public bridge synthetic setVisible(ZZZ)Z
     .locals 0
 
-    .line 2
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setVisible(ZZZ)Z
 
     move-result p1
@@ -525,30 +491,25 @@
 .method setVisibleInternal(ZZZ)Z
     .locals 2
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->setVisibleInternal(ZZZ)Z
 
     move-result p2
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->isRunning()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->animatorDelegate:Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;
 
     invoke-virtual {v0}, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->cancelAnimatorImmediately()V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->animatorDurationScaleProvider:Lcom/google/android/material/progressindicator/AnimatorDurationScaleProvider;
 
     iget-object v1, p0, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->context:Landroid/content/Context;
 
-    .line 5
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -561,7 +522,6 @@
 
     if-nez p3, :cond_1
 
-    .line 6
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 p3, 0x15
@@ -574,7 +534,6 @@
 
     if-lez p1, :cond_2
 
-    .line 7
     :cond_1
     iget-object p1, p0, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->animatorDelegate:Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;
 
@@ -587,7 +546,6 @@
 .method public bridge synthetic start()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->start()V
 
     return-void
@@ -596,7 +554,6 @@
 .method public bridge synthetic stop()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->stop()V
 
     return-void
@@ -609,7 +566,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/android/material/progressindicator/DrawableWithAnimatedVisibilityChange;->unregisterAnimationCallback(Landroidx/vectordrawable/a/a/b$a;)Z
 
     move-result p1

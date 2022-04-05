@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/aw$2;
 .super Ljava/lang/Object;
-.source "OfflineDownloadManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/aw;Lcom/amap/api/col/l3/av;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/aw$2;->c:Lcom/amap/api/col/l3/aw;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/aw$2;->a:Lcom/amap/api/col/l3/av;
@@ -46,7 +44,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$2;->a:Lcom/amap/api/col/l3/av;
 
@@ -64,7 +61,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$2;->c:Lcom/amap/api/col/l3/aw;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/aw;->d(Lcom/amap/api/col/l3/aw;)Lcom/amap/api/col/l3/aw$a;
@@ -73,7 +69,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$2;->c:Lcom/amap/api/col/l3/aw;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/aw;->d(Lcom/amap/api/col/l3/aw;)Lcom/amap/api/col/l3/aw$a;
@@ -87,7 +82,6 @@
     :cond_0
     return-void
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$2;->a:Lcom/amap/api/col/l3/av;
 
@@ -101,7 +95,6 @@
 
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$2;->a:Lcom/amap/api/col/l3/av;
 
-    .line 5
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getState()I
 
     move-result v0
@@ -112,7 +105,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_2
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$2;->c:Lcom/amap/api/col/l3/aw;
 
@@ -122,7 +114,6 @@
 
     invoke-virtual {v0, v1}, Lcom/amap/api/col/l3/bc;->a(Lcom/amap/api/col/l3/av;)V
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$2;->c:Lcom/amap/api/col/l3/aw;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/aw;->d(Lcom/amap/api/col/l3/aw;)Lcom/amap/api/col/l3/aw$a;
@@ -131,7 +122,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$2;->c:Lcom/amap/api/col/l3/aw;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/aw;->d(Lcom/amap/api/col/l3/aw;)Lcom/amap/api/col/l3/aw$a;
@@ -144,7 +134,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_3
     :goto_0
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$2;->c:Lcom/amap/api/col/l3/aw;
@@ -155,12 +144,10 @@
 
     invoke-virtual {v0, v1}, Lcom/amap/api/col/l3/bc;->a(Lcom/amap/api/col/l3/av;)V
 
-    .line 10
     iget-boolean v0, p0, Lcom/amap/api/col/l3/aw$2;->b:Z
 
     if-eqz v0, :cond_4
 
-    .line 11
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$2;->c:Lcom/amap/api/col/l3/aw;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/aw;->d(Lcom/amap/api/col/l3/aw;)Lcom/amap/api/col/l3/aw$a;
@@ -169,7 +156,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 12
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$2;->c:Lcom/amap/api/col/l3/aw;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/aw;->d(Lcom/amap/api/col/l3/aw;)Lcom/amap/api/col/l3/aw$a;
@@ -193,7 +179,6 @@
 
     const-string v2, "removeExcecRunnable"
 
-    .line 13
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

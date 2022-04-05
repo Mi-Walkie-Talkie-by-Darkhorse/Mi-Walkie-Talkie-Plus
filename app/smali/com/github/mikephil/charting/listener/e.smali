@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/listener/e;
 .super Lcom/github/mikephil/charting/listener/ChartTouchListener;
-.source "PieRadarChartTouchListener.java"
 
 
 # annotations
@@ -50,22 +49,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/github/mikephil/charting/listener/ChartTouchListener;-><init>(Lcom/github/mikephil/charting/charts/Chart;)V
 
     const/4 p1, 0x0
 
-    .line 2
     invoke-static {p1, p1}, Lb/a/a/a/g/e;->a(FF)Lb/a/a/a/g/e;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/github/mikephil/charting/listener/e;->f:Lb/a/a/a/g/e;
 
-    .line 3
     iput p1, p0, Lcom/github/mikephil/charting/listener/e;->g:F
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -74,10 +69,8 @@
 
     const-wide/16 v0, 0x0
 
-    .line 5
     iput-wide v0, p0, Lcom/github/mikephil/charting/listener/e;->i:J
 
-    .line 6
     iput p1, p0, Lcom/github/mikephil/charting/listener/e;->j:F
 
     return-void
@@ -86,7 +79,6 @@
 .method private c()F
     .locals 13
 
-    .line 6
     iget-object v0, p0, Lcom/github/mikephil/charting/listener/e;->h:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -99,7 +91,6 @@
 
     return v1
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/github/mikephil/charting/listener/e;->h:Ljava/util/ArrayList;
 
@@ -111,7 +102,6 @@
 
     check-cast v0, Lcom/github/mikephil/charting/listener/e$a;
 
-    .line 8
     iget-object v3, p0, Lcom/github/mikephil/charting/listener/e;->h:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
@@ -128,7 +118,6 @@
 
     check-cast v3, Lcom/github/mikephil/charting/listener/e$a;
 
-    .line 9
     iget-object v4, p0, Lcom/github/mikephil/charting/listener/e;->h:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
@@ -142,7 +131,6 @@
     :goto_0
     if-ltz v4, :cond_2
 
-    .line 10
     iget-object v6, p0, Lcom/github/mikephil/charting/listener/e;->h:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -151,7 +139,6 @@
 
     check-cast v6, Lcom/github/mikephil/charting/listener/e$a;
 
-    .line 11
     iget v7, v6, Lcom/github/mikephil/charting/listener/e$a;->b:F
 
     iget v8, v3, Lcom/github/mikephil/charting/listener/e$a;->b:F
@@ -167,7 +154,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_2
     :goto_1
     iget-wide v7, v3, Lcom/github/mikephil/charting/listener/e$a;->a:J
@@ -188,7 +174,6 @@
 
     const v4, 0x3dcccccd    # 0.1f
 
-    .line 13
     :cond_3
     iget v1, v3, Lcom/github/mikephil/charting/listener/e$a;->b:F
 
@@ -200,7 +185,6 @@
 
     const/4 v2, 0x1
 
-    .line 14
     :cond_4
     iget v1, v3, Lcom/github/mikephil/charting/listener/e$a;->b:F
 
@@ -222,7 +206,6 @@
 
     xor-int/lit8 v2, v2, 0x1
 
-    .line 15
     :cond_5
     iget v1, v3, Lcom/github/mikephil/charting/listener/e$a;->b:F
 
@@ -246,7 +229,6 @@
 
     double-to-float v1, v5
 
-    .line 16
     iput v1, v0, Lcom/github/mikephil/charting/listener/e$a;->b:F
 
     goto :goto_2
@@ -266,10 +248,8 @@
 
     double-to-float v1, v5
 
-    .line 17
     iput v1, v3, Lcom/github/mikephil/charting/listener/e$a;->b:F
 
-    .line 18
     :cond_7
     :goto_2
     iget v1, v3, Lcom/github/mikephil/charting/listener/e$a;->b:F
@@ -295,12 +275,10 @@
 .method private c(FF)V
     .locals 7
 
-    .line 1
     invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
 
     move-result-wide v0
 
-    .line 2
     iget-object v2, p0, Lcom/github/mikephil/charting/listener/e;->h:Ljava/util/ArrayList;
 
     new-instance v3, Lcom/github/mikephil/charting/listener/e$a;
@@ -317,7 +295,6 @@
 
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 3
     iget-object p1, p0, Lcom/github/mikephil/charting/listener/e;->h:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
@@ -329,7 +306,6 @@
 
     if-lez p2, :cond_0
 
-    .line 4
     iget-object p2, p0, Lcom/github/mikephil/charting/listener/e;->h:Ljava/util/ArrayList;
 
     const/4 v2, 0x0
@@ -350,7 +326,6 @@
 
     if-lez p2, :cond_0
 
-    .line 5
     iget-object p2, p0, Lcom/github/mikephil/charting/listener/e;->h:Ljava/util/ArrayList;
 
     invoke-virtual {p2, v2}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
@@ -366,7 +341,6 @@
 .method private d()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/listener/e;->h:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
@@ -379,7 +353,6 @@
 .method public a()V
     .locals 6
 
-    .line 2
     iget v0, p0, Lcom/github/mikephil/charting/listener/e;->j:F
 
     const/4 v1, 0x0
@@ -390,13 +363,11 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
 
     move-result-wide v0
 
-    .line 4
     iget v2, p0, Lcom/github/mikephil/charting/listener/e;->j:F
 
     iget-object v3, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
@@ -411,7 +382,6 @@
 
     iput v2, p0, Lcom/github/mikephil/charting/listener/e;->j:F
 
-    .line 5
     iget-wide v2, p0, Lcom/github/mikephil/charting/listener/e;->i:J
 
     sub-long v2, v0, v2
@@ -422,7 +392,6 @@
 
     div-float/2addr v2, v3
 
-    .line 6
     iget-object v3, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
     move-object v4, v3
@@ -443,10 +412,8 @@
 
     invoke-virtual {v4, v3}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;->setRotationAngle(F)V
 
-    .line 7
     iput-wide v0, p0, Lcom/github/mikephil/charting/listener/e;->i:J
 
-    .line 8
     iget v0, p0, Lcom/github/mikephil/charting/listener/e;->j:F
 
     invoke-static {v0}, Ljava/lang/Math;->abs(F)F
@@ -461,14 +428,12 @@
 
     if-ltz v4, :cond_1
 
-    .line 9
     iget-object v0, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
     invoke-static {v0}, Lb/a/a/a/g/i;->a(Landroid/view/View;)V
 
     goto :goto_0
 
-    .line 10
     :cond_1
     invoke-virtual {p0}, Lcom/github/mikephil/charting/listener/e;->b()V
 
@@ -479,7 +444,6 @@
 .method public a(FF)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
     check-cast v0, Lcom/github/mikephil/charting/charts/PieRadarChartBase;
@@ -508,7 +472,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/github/mikephil/charting/listener/e;->j:F
 
     return-void
@@ -517,7 +480,6 @@
 .method public b(FF)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
     move-object v1, v0
@@ -542,12 +504,10 @@
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/github/mikephil/charting/listener/ChartTouchListener$ChartGesture;->i:Lcom/github/mikephil/charting/listener/ChartTouchListener$ChartGesture;
 
     iput-object v0, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->a:Lcom/github/mikephil/charting/listener/ChartTouchListener$ChartGesture;
 
-    .line 2
     iget-object v0, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
     check-cast v0, Lcom/github/mikephil/charting/charts/PieRadarChartBase;
@@ -558,7 +518,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0, p1}, Lcom/github/mikephil/charting/listener/b;->b(Landroid/view/MotionEvent;)V
 
     :cond_0
@@ -576,12 +535,10 @@
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/github/mikephil/charting/listener/ChartTouchListener$ChartGesture;->g:Lcom/github/mikephil/charting/listener/ChartTouchListener$ChartGesture;
 
     iput-object v0, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->a:Lcom/github/mikephil/charting/listener/ChartTouchListener$ChartGesture;
 
-    .line 2
     iget-object v0, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
     check-cast v0, Lcom/github/mikephil/charting/charts/PieRadarChartBase;
@@ -592,10 +549,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0, p1}, Lcom/github/mikephil/charting/listener/b;->a(Landroid/view/MotionEvent;)V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
@@ -611,7 +566,6 @@
 
     return p1
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
@@ -629,7 +583,6 @@
 
     move-result-object v0
 
-    .line 6
     invoke-virtual {p0, v0, p1}, Lcom/github/mikephil/charting/listener/ChartTouchListener;->a(Lb/a/a/a/d/d;Landroid/view/MotionEvent;)V
 
     const/4 p1, 0x1
@@ -645,7 +598,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->d:Landroid/view/GestureDetector;
 
     invoke-virtual {p1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
@@ -658,7 +610,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
@@ -670,17 +621,14 @@
 
     if-eqz p1, :cond_9
 
-    .line 3
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
 
     move-result p1
 
-    .line 4
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
 
     move-result v1
 
-    .line 5
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v2
@@ -695,7 +643,6 @@
 
     goto/16 :goto_1
 
-    .line 6
     :cond_1
     iget-object v2, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
@@ -707,10 +654,8 @@
 
     if-eqz v2, :cond_2
 
-    .line 7
     invoke-direct {p0, p1, v1}, Lcom/github/mikephil/charting/listener/e;->c(FF)V
 
-    .line 8
     :cond_2
     iget v2, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->b:I
 
@@ -724,14 +669,12 @@
 
     iget v2, v2, Lb/a/a/a/g/e;->d:F
 
-    .line 9
     invoke-static {p1, v4, v1, v2}, Lcom/github/mikephil/charting/listener/ChartTouchListener;->a(FFFF)F
 
     move-result v2
 
     const/high16 v4, 0x41000000    # 8.0f
 
-    .line 10
     invoke-static {v4}, Lb/a/a/a/g/i;->a(F)F
 
     move-result v4
@@ -740,15 +683,12 @@
 
     if-lez v2, :cond_3
 
-    .line 11
     sget-object p1, Lcom/github/mikephil/charting/listener/ChartTouchListener$ChartGesture;->f:Lcom/github/mikephil/charting/listener/ChartTouchListener$ChartGesture;
 
     iput-object p1, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->a:Lcom/github/mikephil/charting/listener/ChartTouchListener$ChartGesture;
 
-    .line 12
     iput v3, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->b:I
 
-    .line 13
     iget-object p1, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
     check-cast p1, Lcom/github/mikephil/charting/charts/PieRadarChartBase;
@@ -757,30 +697,25 @@
 
     goto :goto_0
 
-    .line 14
     :cond_3
     iget v2, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->b:I
 
     if-ne v2, v3, :cond_4
 
-    .line 15
     invoke-virtual {p0, p1, v1}, Lcom/github/mikephil/charting/listener/e;->b(FF)V
 
-    .line 16
     iget-object p1, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
     check-cast p1, Lcom/github/mikephil/charting/charts/PieRadarChartBase;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->invalidate()V
 
-    .line 17
     :cond_4
     :goto_0
     invoke-virtual {p0, p2}, Lcom/github/mikephil/charting/listener/ChartTouchListener;->a(Landroid/view/MotionEvent;)V
 
     goto :goto_1
 
-    .line 18
     :cond_5
     iget-object v2, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
@@ -792,13 +727,10 @@
 
     if-eqz v2, :cond_6
 
-    .line 19
     invoke-virtual {p0}, Lcom/github/mikephil/charting/listener/e;->b()V
 
-    .line 20
     invoke-direct {p0, p1, v1}, Lcom/github/mikephil/charting/listener/e;->c(FF)V
 
-    .line 21
     invoke-direct {p0}, Lcom/github/mikephil/charting/listener/e;->c()F
 
     move-result p1
@@ -811,19 +743,16 @@
 
     if-eqz p1, :cond_6
 
-    .line 22
     invoke-static {}, Landroid/view/animation/AnimationUtils;->currentAnimationTimeMillis()J
 
     move-result-wide v1
 
     iput-wide v1, p0, Lcom/github/mikephil/charting/listener/e;->i:J
 
-    .line 23
     iget-object p1, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
     invoke-static {p1}, Lb/a/a/a/g/i;->a(Landroid/view/View;)V
 
-    .line 24
     :cond_6
     iget-object p1, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
@@ -833,25 +762,19 @@
 
     const/4 p1, 0x0
 
-    .line 25
     iput p1, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->b:I
 
-    .line 26
     invoke-virtual {p0, p2}, Lcom/github/mikephil/charting/listener/ChartTouchListener;->a(Landroid/view/MotionEvent;)V
 
     goto :goto_1
 
-    .line 27
     :cond_7
     invoke-virtual {p0, p2}, Lcom/github/mikephil/charting/listener/ChartTouchListener;->b(Landroid/view/MotionEvent;)V
 
-    .line 28
     invoke-virtual {p0}, Lcom/github/mikephil/charting/listener/e;->b()V
 
-    .line 29
     invoke-direct {p0}, Lcom/github/mikephil/charting/listener/e;->d()V
 
-    .line 30
     iget-object p2, p0, Lcom/github/mikephil/charting/listener/ChartTouchListener;->e:Lcom/github/mikephil/charting/charts/Chart;
 
     check-cast p2, Lcom/github/mikephil/charting/charts/PieRadarChartBase;
@@ -862,19 +785,15 @@
 
     if-eqz p2, :cond_8
 
-    .line 31
     invoke-direct {p0, p1, v1}, Lcom/github/mikephil/charting/listener/e;->c(FF)V
 
-    .line 32
     :cond_8
     invoke-virtual {p0, p1, v1}, Lcom/github/mikephil/charting/listener/e;->a(FF)V
 
-    .line 33
     iget-object p2, p0, Lcom/github/mikephil/charting/listener/e;->f:Lb/a/a/a/g/e;
 
     iput p1, p2, Lb/a/a/a/g/e;->c:F
 
-    .line 34
     iput v1, p2, Lb/a/a/a/g/e;->d:F
 
     :cond_9

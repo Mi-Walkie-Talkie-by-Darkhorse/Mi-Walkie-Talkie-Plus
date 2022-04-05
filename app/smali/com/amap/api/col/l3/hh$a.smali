@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/hh$a;
 .super Ljava/lang/Object;
-.source "DexFileManager.java"
 
 
 # annotations
@@ -18,21 +17,18 @@
 .method static a(Lcom/amap/api/col/l3/gz;Ljava/lang/String;)Lcom/amap/api/col/l3/hk;
     .locals 1
 
-    .line 1
     invoke-static {p1}, Lcom/amap/api/col/l3/hk;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     const-class v0, Lcom/amap/api/col/l3/hk;
 
-    .line 2
     invoke-virtual {p0, p1, v0}, Lcom/amap/api/col/l3/gz;->b(Ljava/lang/String;Ljava/lang/Class;)Ljava/util/List;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 3
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result p1
@@ -41,7 +37,6 @@
 
     const/4 p1, 0x0
 
-    .line 4
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -71,7 +66,6 @@
         }
     .end annotation
 
-    .line 5
     invoke-static {p1, p2}, Lcom/amap/api/col/l3/hk;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1

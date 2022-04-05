@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$g;
 .super Ljava/lang/Object;
-.source "LiteSettingFragment.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;
@@ -21,7 +20,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public a(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
     return-void

@@ -1,6 +1,5 @@
 .class public final Landroidx/core/app/l;
 .super Ljava/lang/Object;
-.source "TaskStackBuilder.java"
 
 # interfaces
 .implements Ljava/lang/Iterable;
@@ -41,17 +40,14 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/core/app/l;->a:Ljava/util/ArrayList;
 
-    .line 3
     iput-object p1, p0, Landroidx/core/app/l;->b:Landroid/content/Context;
 
     return-void
@@ -66,7 +62,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Landroidx/core/app/l;
 
     invoke-direct {v0, p0}, Landroidx/core/app/l;-><init>(Landroid/content/Context;)V
@@ -85,12 +80,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 3
     instance-of v0, p1, Landroidx/core/app/l$a;
 
     if-eqz v0, :cond_0
 
-    .line 4
     move-object v0, p1
 
     check-cast v0, Landroidx/core/app/l$a;
@@ -107,7 +100,6 @@
     :goto_0
     if-nez v0, :cond_1
 
-    .line 5
     invoke-static {p1}, Landroidx/core/app/f;->a(Landroid/app/Activity;)Landroid/content/Intent;
 
     move-result-object v0
@@ -115,14 +107,12 @@
     :cond_1
     if-eqz v0, :cond_3
 
-    .line 6
     invoke-virtual {v0}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object p1
 
     if-nez p1, :cond_2
 
-    .line 7
     iget-object p1, p0, Landroidx/core/app/l;->b:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -133,11 +123,9 @@
 
     move-result-object p1
 
-    .line 8
     :cond_2
     invoke-virtual {p0, p1}, Landroidx/core/app/l;->a(Landroid/content/ComponentName;)Landroidx/core/app/l;
 
-    .line 9
     invoke-virtual {p0, v0}, Landroidx/core/app/l;->a(Landroid/content/Intent;)Landroidx/core/app/l;
 
     :cond_3
@@ -147,14 +135,12 @@
 .method public a(Landroid/content/ComponentName;)Landroidx/core/app/l;
     .locals 2
 
-    .line 10
     iget-object v0, p0, Landroidx/core/app/l;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
-    .line 11
     :try_start_0
     iget-object v1, p0, Landroidx/core/app/l;->b:Landroid/content/Context;
 
@@ -165,12 +151,10 @@
     :goto_0
     if-eqz p1, :cond_0
 
-    .line 12
     iget-object v1, p0, Landroidx/core/app/l;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0, p1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    .line 13
     iget-object v1, p0, Landroidx/core/app/l;->b:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
@@ -195,10 +179,8 @@
 
     const-string v1, "Bad ComponentName while traversing activity parent metadata"
 
-    .line 14
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 15
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {v0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
@@ -215,7 +197,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/core/app/l;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -228,7 +209,6 @@
 
     const/4 v0, 0x0
 
-    .line 16
     invoke-virtual {p0, v0}, Landroidx/core/app/l;->a(Landroid/os/Bundle;)V
 
     return-void
@@ -241,7 +221,6 @@
         .end annotation
     .end param
 
-    .line 17
     iget-object v0, p0, Landroidx/core/app/l;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -250,7 +229,6 @@
 
     if-nez v0, :cond_1
 
-    .line 18
     iget-object v0, p0, Landroidx/core/app/l;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -265,7 +243,6 @@
 
     check-cast v0, [Landroid/content/Intent;
 
-    .line 19
     new-instance v1, Landroid/content/Intent;
 
     const/4 v2, 0x0
@@ -282,7 +259,6 @@
 
     aput-object v1, v0, v2
 
-    .line 20
     iget-object v1, p0, Landroidx/core/app/l;->b:Landroid/content/Context;
 
     invoke-static {v1, v0, p1}, Landroidx/core/content/b;->a(Landroid/content/Context;[Landroid/content/Intent;Landroid/os/Bundle;)Z
@@ -291,7 +267,6 @@
 
     if-nez p1, :cond_0
 
-    .line 21
     new-instance p1, Landroid/content/Intent;
 
     array-length v1, v0
@@ -304,10 +279,8 @@
 
     const/high16 v0, 0x10000000
 
-    .line 22
     invoke-virtual {p1, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 23
     iget-object v0, p0, Landroidx/core/app/l;->b:Landroid/content/Context;
 
     invoke-virtual {v0, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
@@ -315,7 +288,6 @@
     :cond_0
     return-void
 
-    .line 24
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -340,7 +312,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/l;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;

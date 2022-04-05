@@ -1,6 +1,5 @@
 .class public La/c/a/a/f;
 .super Ljava/lang/Object;
-.source "Oscillator.java"
 
 
 # instance fields
@@ -25,24 +24,20 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
     new-array v1, v0, [F
 
-    .line 2
     iput-object v1, p0, La/c/a/a/f;->a:[F
 
     new-array v0, v0, [D
 
-    .line 3
     iput-object v0, p0, La/c/a/a/f;->b:[D
 
     const-wide v0, 0x401921fb54442d18L    # 6.283185307179586
 
-    .line 4
     iput-wide v0, p0, La/c/a/a/f;->e:D
 
     return-void
@@ -72,7 +67,6 @@
 
     const-wide p1, 0x3feffffde7210be9L    # 0.999999
 
-    .line 22
     :cond_1
     :goto_0
     iget-object v2, p0, La/c/a/a/f;->b:[D
@@ -92,7 +86,6 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 23
     iget-object v1, p0, La/c/a/a/f;->a:[F
 
     aget v2, v1, v0
@@ -117,7 +110,6 @@
 
     mul-double p1, p1, v4
 
-    .line 24
     aget v0, v1, v3
 
     float-to-double v0, v0
@@ -147,7 +139,6 @@
 
     const/4 v4, 0x0
 
-    .line 10
     :goto_0
     iget-object v7, v0, La/c/a/a/f;->a:[F
 
@@ -155,7 +146,6 @@
 
     if-ge v4, v8, :cond_0
 
-    .line 11
     aget v7, v7, v4
 
     float-to-double v7, v7
@@ -173,7 +163,6 @@
 
     const/4 v7, 0x1
 
-    .line 12
     :goto_1
     iget-object v10, v0, La/c/a/a/f;->a:[F
 
@@ -185,7 +174,6 @@
 
     add-int/lit8 v11, v7, -0x1
 
-    .line 13
     aget v13, v10, v11
 
     aget v10, v10, v7
@@ -194,7 +182,6 @@
 
     div-float/2addr v13, v12
 
-    .line 14
     iget-object v10, v0, La/c/a/a/f;->b:[D
 
     aget-wide v14, v10, v7
@@ -216,7 +203,6 @@
     :cond_1
     const/4 v7, 0x0
 
-    .line 15
     :goto_2
     iget-object v10, v0, La/c/a/a/f;->a:[F
 
@@ -224,7 +210,6 @@
 
     if-ge v7, v11, :cond_2
 
-    .line 16
     aget v11, v10, v7
 
     float-to-double v13, v11
@@ -241,13 +226,11 @@
 
     goto :goto_2
 
-    .line 17
     :cond_2
     iget-object v5, v0, La/c/a/a/f;->c:[D
 
     aput-wide v2, v5, v1
 
-    .line 18
     :goto_3
     iget-object v1, v0, La/c/a/a/f;->a:[F
 
@@ -257,7 +240,6 @@
 
     add-int/lit8 v2, v4, -0x1
 
-    .line 19
     aget v3, v1, v2
 
     aget v1, v1, v4
@@ -266,7 +248,6 @@
 
     div-float/2addr v3, v12
 
-    .line 20
     iget-object v1, v0, La/c/a/a/f;->b:[D
 
     aget-wide v5, v1, v4
@@ -275,7 +256,6 @@
 
     sub-double/2addr v5, v7
 
-    .line 21
     iget-object v1, v0, La/c/a/a/f;->c:[D
 
     aget-wide v7, v1, v2
@@ -299,14 +279,12 @@
 .method public a(DF)V
     .locals 4
 
-    .line 2
     iget-object v0, p0, La/c/a/a/f;->a:[F
 
     array-length v0, v0
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 3
     iget-object v1, p0, La/c/a/a/f;->b:[D
 
     invoke-static {v1, p1, p2}, Ljava/util/Arrays;->binarySearch([DD)I
@@ -319,7 +297,6 @@
 
     add-int/lit8 v1, v1, -0x1
 
-    .line 4
     :cond_0
     iget-object v2, p0, La/c/a/a/f;->b:[D
 
@@ -329,7 +306,6 @@
 
     iput-object v2, p0, La/c/a/a/f;->b:[D
 
-    .line 5
     iget-object v2, p0, La/c/a/a/f;->a:[F
 
     invoke-static {v2, v0}, Ljava/util/Arrays;->copyOf([FI)[F
@@ -338,12 +314,10 @@
 
     iput-object v2, p0, La/c/a/a/f;->a:[F
 
-    .line 6
     new-array v2, v0, [D
 
     iput-object v2, p0, La/c/a/a/f;->c:[D
 
-    .line 7
     iget-object v2, p0, La/c/a/a/f;->b:[D
 
     add-int/lit8 v3, v1, 0x1
@@ -354,12 +328,10 @@
 
     invoke-static {v2, v1, v2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 8
     iget-object v0, p0, La/c/a/a/f;->b:[D
 
     aput-wide p1, v0, v1
 
-    .line 9
     iget-object p1, p0, La/c/a/a/f;->a:[F
 
     aput p3, p1, v1
@@ -370,7 +342,6 @@
 .method public a(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, La/c/a/a/f;->d:I
 
     return-void
@@ -398,7 +369,6 @@
 
     move-wide p1, v0
 
-    .line 1
     :cond_1
     :goto_0
     iget-object v4, p0, La/c/a/a/f;->b:[D
@@ -418,7 +388,6 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 2
     iget-object v1, p0, La/c/a/a/f;->a:[F
 
     aget v2, v1, v0
@@ -441,7 +410,6 @@
 
     div-double/2addr v4, v6
 
-    .line 3
     iget-object v0, p0, La/c/a/a/f;->c:[D
 
     aget-wide v6, v0, v3
@@ -494,7 +462,6 @@
 .method public c(D)D
     .locals 9
 
-    .line 1
     iget v0, p0, La/c/a/a/f;->d:I
 
     const-wide/high16 v1, 0x4000000000000000L    # 2.0
@@ -503,7 +470,6 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 2
     iget-wide v0, p0, La/c/a/a/f;->e:D
 
     invoke-virtual {p0, p1, p2}, La/c/a/a/f;->a(D)D
@@ -529,7 +495,6 @@
 
     return-wide v0
 
-    .line 3
     :pswitch_0
     invoke-virtual {p0, p1, p2}, La/c/a/a/f;->a(D)D
 
@@ -554,7 +519,6 @@
 
     return-wide v5
 
-    .line 4
     :pswitch_1
     iget-wide v0, p0, La/c/a/a/f;->e:D
 
@@ -580,7 +544,6 @@
 
     goto :goto_0
 
-    .line 5
     :pswitch_2
     invoke-virtual {p0, p1, p2}, La/c/a/a/f;->a(D)D
 
@@ -593,7 +556,6 @@
 
     return-wide p1
 
-    .line 6
     :pswitch_3
     invoke-virtual {p0, p1, p2}, La/c/a/a/f;->a(D)D
 
@@ -601,7 +563,6 @@
 
     goto :goto_2
 
-    .line 7
     :pswitch_4
     invoke-virtual {p0, p1, p2}, La/c/a/a/f;->a(D)D
 
@@ -648,7 +609,6 @@
 .method public d(D)D
     .locals 7
 
-    .line 1
     iget v0, p0, La/c/a/a/f;->d:I
 
     const-wide/high16 v1, 0x4010000000000000L    # 4.0
@@ -659,7 +619,6 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 2
     iget-wide v0, p0, La/c/a/a/f;->e:D
 
     invoke-virtual {p0, p1, p2}, La/c/a/a/f;->b(D)D
@@ -674,7 +633,6 @@
 
     return-wide p1
 
-    .line 3
     :pswitch_0
     invoke-virtual {p0, p1, p2}, La/c/a/a/f;->b(D)D
 
@@ -699,7 +657,6 @@
 
     return-wide v5
 
-    .line 4
     :pswitch_1
     iget-wide v0, p0, La/c/a/a/f;->e:D
 
@@ -715,7 +672,6 @@
 
     return-wide p1
 
-    .line 5
     :pswitch_2
     invoke-virtual {p0, p1, p2}, La/c/a/a/f;->b(D)D
 
@@ -729,7 +685,6 @@
 
     goto :goto_0
 
-    .line 6
     :pswitch_3
     invoke-virtual {p0, p1, p2}, La/c/a/a/f;->b(D)D
 
@@ -745,7 +700,6 @@
 
     return-wide p1
 
-    .line 7
     :pswitch_4
     invoke-virtual {p0, p1, p2}, La/c/a/a/f;->b(D)D
 
@@ -768,7 +722,6 @@
     :pswitch_5
     const-wide/high16 v0, 0x3fe0000000000000L    # 0.5
 
-    .line 8
     invoke-virtual {p0, p1, p2}, La/c/a/a/f;->b(D)D
 
     move-result-wide p1
@@ -799,7 +752,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

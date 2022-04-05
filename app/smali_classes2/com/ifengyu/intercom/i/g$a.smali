@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/i/g$a;
 .super Ljava/lang/Object;
-.source "ACache.java"
 
 
 # annotations

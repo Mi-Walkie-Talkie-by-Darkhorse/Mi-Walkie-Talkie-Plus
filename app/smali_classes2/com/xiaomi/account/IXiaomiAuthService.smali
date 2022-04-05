@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/xiaomi/account/IXiaomiAuthService;
 .super Ljava/lang/Object;
-.source "IXiaomiAuthService.java"
 
 # interfaces
 .implements Landroid/os/IInterface;

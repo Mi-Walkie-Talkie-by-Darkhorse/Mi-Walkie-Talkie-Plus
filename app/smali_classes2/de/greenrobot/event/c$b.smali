@@ -1,6 +1,5 @@
 .class synthetic Lde/greenrobot/event/c$b;
 .super Ljava/lang/Object;
-.source "EventBus.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lde/greenrobot/event/ThreadMode;->values()[Lde/greenrobot/event/ThreadMode;
 
     move-result-object v0

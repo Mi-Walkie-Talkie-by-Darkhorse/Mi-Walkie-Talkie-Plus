@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/collect/Multisets$AbstractEntry;
 .super Ljava/lang/Object;
-.source "Multisets.java"
 
 # interfaces
 .implements Lcom/google/common/collect/Multiset$Entry;
@@ -32,7 +31,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,17 +45,14 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Lcom/google/common/collect/Multiset$Entry;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/common/collect/Multiset$Entry;
 
-    .line 3
     invoke-interface {p0}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result v0
@@ -91,7 +86,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     invoke-interface {p0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v0
@@ -102,7 +96,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
@@ -121,7 +114,6 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 1
     invoke-interface {p0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object v0
@@ -130,7 +122,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-interface {p0}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result v1
@@ -141,7 +132,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 

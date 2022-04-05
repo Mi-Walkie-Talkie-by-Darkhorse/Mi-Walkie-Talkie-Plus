@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2$1;
 .super Lcom/google/common/collect/AbstractIterator;
-.source "TreeRangeMap.java"
 
 
 # annotations
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/google/common/collect/TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2;Ljava/util/Iterator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2$1;->this$3:Lcom/google/common/collect/TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2;
 
     iput-object p2, p0, Lcom/google/common/collect/TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2$1;->val$backingItr:Ljava/util/Iterator;
@@ -48,7 +46,6 @@
 .method protected bridge synthetic computeNext()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2$1;->computeNext()Ljava/util/Map$Entry;
 
     move-result-object v0
@@ -67,7 +64,6 @@
         }
     .end annotation
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2$1;->val$backingItr:Ljava/util/Iterator;
 
@@ -77,7 +73,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeMap$SubRangeMap$SubRangeMapAsMap$2$1;->val$backingItr:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -86,7 +81,6 @@
 
     check-cast v0, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;
 
-    .line 4
     invoke-virtual {v0}, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;->getLowerBound()Lcom/google/common/collect/Cut;
 
     move-result-object v1
@@ -111,7 +105,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-virtual {v0}, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;->getUpperBound()Lcom/google/common/collect/Cut;
 
@@ -135,7 +128,6 @@
 
     if-lez v1, :cond_0
 
-    .line 6
     invoke-virtual {v0}, Lcom/google/common/collect/TreeRangeMap$RangeMapEntry;->getKey()Lcom/google/common/collect/Range;
 
     move-result-object v1
@@ -164,7 +156,6 @@
 
     return-object v0
 
-    .line 7
     :cond_2
     :goto_0
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractIterator;->endOfData()Ljava/lang/Object;

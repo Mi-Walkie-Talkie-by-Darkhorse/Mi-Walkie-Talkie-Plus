@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/ifengyu/library/account/UserInfo$LoginType;
 .super Ljava/lang/Object;
-.source "UserInfo.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

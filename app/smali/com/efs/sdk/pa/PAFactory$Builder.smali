@@ -1,6 +1,5 @@
 .class public Lcom/efs/sdk/pa/PAFactory$Builder;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations
@@ -47,27 +46,22 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/efs/sdk/pa/config/IEfsReporter;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x7d0
 
-    .line 2
     iput-wide v0, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->h:J
 
     if-eqz p1, :cond_1
 
     if-eqz p2, :cond_0
 
-    .line 3
     iput-object p2, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->b:Lcom/efs/sdk/pa/config/IEfsReporter;
 
-    .line 4
     iput-object p1, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->d:Landroid/content/Context;
 
     return-void
 
-    .line 5
     :cond_0
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -77,7 +71,6 @@
 
     throw p1
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -93,12 +86,10 @@
 .method public build()Lcom/efs/sdk/pa/PAFactory;
     .locals 13
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->a:Lcom/efs/sdk/pa/config/PackageLevel;
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/efs/sdk/pa/PAFactory;
 
     iget-object v2, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->d:Landroid/content/Context;
@@ -127,7 +118,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -165,7 +155,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->f:Ljava/util/HashMap;
 
     return-object p0
@@ -174,7 +163,6 @@
 .method public isNewInstall(Z)Lcom/efs/sdk/pa/PAFactory$Builder;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->c:Z
 
     return-object p0
@@ -183,7 +171,6 @@
 .method public packageLevel(Lcom/efs/sdk/pa/config/PackageLevel;)Lcom/efs/sdk/pa/PAFactory$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->a:Lcom/efs/sdk/pa/config/PackageLevel;
 
     return-object p0
@@ -192,7 +179,6 @@
 .method public serial(Ljava/lang/String;)Lcom/efs/sdk/pa/PAFactory$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->e:Ljava/lang/String;
 
     return-object p0
@@ -201,7 +187,6 @@
 .method public sver(Ljava/lang/String;)Lcom/efs/sdk/pa/PAFactory$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->g:Ljava/lang/String;
 
     return-object p0
@@ -222,10 +207,8 @@
 
     const-string p1, "Timeout time is invalid, and the default value 2s will be used"
 
-    .line 1
     invoke-static {v2, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iput-wide v0, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->h:J
 
     goto :goto_0
@@ -239,15 +222,12 @@
 
     const-string p1, "Timeout time over 4s is not recommended, and the default value 2s will be used"
 
-    .line 3
     invoke-static {v2, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     iput-wide v0, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->h:J
 
     return-object p0
 
-    .line 5
     :cond_1
     iput-wide p1, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->h:J
 
@@ -258,7 +238,6 @@
 .method public traceListener(Lcom/efs/sdk/pa/PATraceListener;)Lcom/efs/sdk/pa/PAFactory$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/pa/PAFactory$Builder;->i:Lcom/efs/sdk/pa/PATraceListener;
 
     return-object p0

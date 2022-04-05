@@ -1,6 +1,5 @@
 .class public abstract Lokhttp3/internal/http2/Http2Connection$Listener;
 .super Ljava/lang/Object;
-.source "Http2Connection.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lokhttp3/internal/http2/Http2Connection$Listener$1;
 
     invoke-direct {v0}, Lokhttp3/internal/http2/Http2Connection$Listener$1;-><init>()V
@@ -35,7 +33,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

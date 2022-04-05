@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/BindDrawable;
 .super Ljava/lang/Object;
-.source "BindDrawable.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

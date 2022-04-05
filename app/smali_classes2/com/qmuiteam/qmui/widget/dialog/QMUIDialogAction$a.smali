@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$a;
 .super Ljava/lang/Object;
-.source "QMUIDialogAction.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction;Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$a;->c:Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction;
 
     iput-object p2, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$a;->a:Lcom/qmuiteam/qmui/widget/dialog/b;
@@ -46,7 +44,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$a;->c:Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction;->a(Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;
@@ -67,7 +64,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$a;->c:Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction;->a(Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;

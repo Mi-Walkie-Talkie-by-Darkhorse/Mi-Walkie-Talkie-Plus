@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/reflect/TypeParameter;
 .super Lcom/google/common/reflect/TypeCapture;
-.source "TypeParameter.java"
 
 
 # annotations
@@ -33,15 +32,12 @@
 .method protected constructor <init>()V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/reflect/TypeCapture;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/reflect/TypeCapture;->capture()Ljava/lang/reflect/Type;
 
     move-result-object v0
 
-    .line 3
     instance-of v1, v0, Ljava/lang/reflect/TypeVariable;
 
     const/4 v2, 0x1
@@ -56,7 +52,6 @@
 
     invoke-static {v1, v3, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 4
     check-cast v0, Ljava/lang/reflect/TypeVariable;
 
     iput-object v0, p0, Lcom/google/common/reflect/TypeParameter;->typeVariable:Ljava/lang/reflect/TypeVariable;
@@ -73,15 +68,12 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Lcom/google/common/reflect/TypeParameter;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/common/reflect/TypeParameter;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/reflect/TypeParameter;->typeVariable:Ljava/lang/reflect/TypeVariable;
 
     iget-object p1, p1, Lcom/google/common/reflect/TypeParameter;->typeVariable:Ljava/lang/reflect/TypeVariable;
@@ -101,7 +93,6 @@
 .method public final hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeParameter;->typeVariable:Ljava/lang/reflect/TypeVariable;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -114,7 +105,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeParameter;->typeVariable:Ljava/lang/reflect/TypeVariable;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;

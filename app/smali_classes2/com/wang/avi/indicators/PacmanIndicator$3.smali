@@ -1,6 +1,5 @@
 .class Lcom/wang/avi/indicators/PacmanIndicator$3;
 .super Ljava/lang/Object;
-.source "PacmanIndicator.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/wang/avi/indicators/PacmanIndicator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/wang/avi/indicators/PacmanIndicator$3;->this$0:Lcom/wang/avi/indicators/PacmanIndicator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/wang/avi/indicators/PacmanIndicator$3;->this$0:Lcom/wang/avi/indicators/PacmanIndicator;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
@@ -53,7 +50,6 @@
 
     invoke-static {v0, p1}, Lcom/wang/avi/indicators/PacmanIndicator;->access$202(Lcom/wang/avi/indicators/PacmanIndicator;F)F
 
-    .line 2
     iget-object p1, p0, Lcom/wang/avi/indicators/PacmanIndicator$3;->this$0:Lcom/wang/avi/indicators/PacmanIndicator;
 
     invoke-virtual {p1}, Lcom/wang/avi/Indicator;->postInvalidate()V

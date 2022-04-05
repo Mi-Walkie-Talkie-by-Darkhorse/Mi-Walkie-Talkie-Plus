@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/interceptor/connect/CallServerInterceptor;
 .super Ljava/lang/Object;
-.source "CallServerInterceptor.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/interceptor/Interceptor$Connect;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -44,7 +41,6 @@
 
     invoke-virtual {v0, v1}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->inspectNetworkOnWifi(Lcom/liulishuo/okdownload/DownloadTask;)V
 
-    .line 2
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -55,7 +51,6 @@
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->inspectNetworkAvailable()V
 
-    .line 3
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->getConnectionOrCreate()Lcom/liulishuo/okdownload/core/connection/DownloadConnection;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class final Lcom/google/protobuf/GeneratedMessageLite$SerializedForm;
 .super Ljava/lang/Object;
-.source "GeneratedMessageLite.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -31,10 +30,8 @@
 .method constructor <init>(Lcom/google/protobuf/MessageLite;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -45,7 +42,6 @@
 
     iput-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$SerializedForm;->messageClassName:Ljava/lang/String;
 
-    .line 3
     invoke-interface {p1}, Lcom/google/protobuf/MessageLite;->toByteArray()[B
 
     move-result-object p1
@@ -65,7 +61,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$SerializedForm;->messageClassName:Ljava/lang/String;
 
@@ -79,7 +74,6 @@
 
     new-array v3, v2, [Ljava/lang/Class;
 
-    .line 2
     invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
@@ -88,19 +82,16 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 3
     invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/protobuf/MessageLite$Builder;
 
-    .line 4
     iget-object v1, p0, Lcom/google/protobuf/GeneratedMessageLite$SerializedForm;->asBytes:[B
 
     invoke-interface {v0, v1}, Lcom/google/protobuf/MessageLite$Builder;->mergeFrom([B)Lcom/google/protobuf/MessageLite$Builder;
 
-    .line 5
     invoke-interface {v0}, Lcom/google/protobuf/MessageLite$Builder;->buildPartial()Lcom/google/protobuf/MessageLite;
 
     move-result-object v0
@@ -116,7 +107,6 @@
     :catch_0
     move-exception v0
 
-    .line 6
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Unable to understand proto buffer"
@@ -128,7 +118,6 @@
     :catch_1
     move-exception v0
 
-    .line 7
     new-instance v1, Ljava/lang/RuntimeException;
 
     invoke-virtual {v0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
@@ -144,7 +133,6 @@
     :catch_2
     move-exception v0
 
-    .line 8
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Unable to call newBuilder method"
@@ -156,7 +144,6 @@
     :catch_3
     move-exception v0
 
-    .line 9
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Unable to find newBuilder method"
@@ -168,7 +155,6 @@
     :catch_4
     move-exception v0
 
-    .line 10
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Unable to find proto buffer class"

@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/gw$1;
 .super Ljava/lang/Object;
-.source "ErrorLogManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;Lcom/amap/api/col/l3/ja;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/gw$1;->a:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/gw$1;->b:Ljava/lang/String;
@@ -46,7 +44,6 @@
 .method public final run()V
     .locals 11
 
-    .line 1
     :try_start_0
     const-class v0, Lcom/amap/api/col/l3/gw;
 
@@ -54,7 +51,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 2
     :try_start_1
     invoke-static {}, Lcom/amap/api/col/l3/gw;->a()Ljava/lang/ref/WeakReference;
 
@@ -64,7 +60,6 @@
 
     move-result-object v1
 
-    .line 3
     iget-object v2, p0, Lcom/amap/api/col/l3/gw$1;->a:Landroid/content/Context;
 
     iget-object v4, p0, Lcom/amap/api/col/l3/gw$1;->b:Ljava/lang/String;
@@ -79,17 +74,14 @@
 
     invoke-static/range {v2 .. v7}, Lcom/amap/api/col/l3/in;->a(Landroid/content/Context;Lcom/amap/api/col/l3/ig;Ljava/lang/String;IILjava/lang/String;)V
 
-    .line 4
     iget-object v2, p0, Lcom/amap/api/col/l3/gw$1;->c:Lcom/amap/api/col/l3/ja;
 
     iput-object v2, v1, Lcom/amap/api/col/l3/ig;->f:Lcom/amap/api/col/l3/ja;
 
-    .line 5
     iget-object v2, v1, Lcom/amap/api/col/l3/ig;->g:Lcom/amap/api/col/l3/iu;
 
     if-nez v2, :cond_0
 
-    .line 6
     new-instance v2, Lcom/amap/api/col/l3/ir;
 
     new-instance v9, Lcom/amap/api/col/l3/iq;
@@ -122,7 +114,6 @@
 
     iget-object v10, p0, Lcom/amap/api/col/l3/gw$1;->a:Landroid/content/Context;
 
-    .line 7
     invoke-static {v10}, Lcom/amap/api/col/l3/fw;->f(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v10
@@ -143,7 +134,6 @@
 
     iget-object v10, p0, Lcom/amap/api/col/l3/gw$1;->a:Landroid/content/Context;
 
-    .line 8
     invoke-static {v10}, Lcom/amap/api/col/l3/fw;->c(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v10
@@ -160,7 +150,6 @@
 
     iget-object v10, p0, Lcom/amap/api/col/l3/gw$1;->a:Landroid/content/Context;
 
-    .line 9
     invoke-static {v10}, Lcom/amap/api/col/l3/fw;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v10
@@ -171,7 +160,6 @@
 
     iget-object v10, p0, Lcom/amap/api/col/l3/gw$1;->a:Landroid/content/Context;
 
-    .line 10
     invoke-static {v10}, Lcom/amap/api/col/l3/fw;->d(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v10
@@ -195,13 +183,10 @@
     :cond_0
     const v2, 0x36ee80
 
-    .line 11
     iput v2, v1, Lcom/amap/api/col/l3/ig;->h:I
 
-    .line 12
     invoke-static {v1}, Lcom/amap/api/col/l3/ih;->a(Lcom/amap/api/col/l3/ig;)V
 
-    .line 13
     monitor-exit v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -225,7 +210,6 @@
 
     const-string v2, "pul"
 
-    .line 14
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/FlowableEmitter;
 .super Ljava/lang/Object;
-.source "FlowableEmitter.java"
 
 # interfaces
 .implements Lio/reactivex/Emitter;

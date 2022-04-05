@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/section/b$b;
 .super Ljava/lang/Object;
-.source "QMUIStickySectionItemDecoration.java"
 
 
 # annotations

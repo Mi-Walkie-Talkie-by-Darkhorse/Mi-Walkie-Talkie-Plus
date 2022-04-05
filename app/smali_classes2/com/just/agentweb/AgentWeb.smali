@@ -1,6 +1,5 @@
 .class public final Lcom/just/agentweb/AgentWeb;
 .super Ljava/lang/Object;
-.source "AgentWeb.java"
 
 
 # annotations
@@ -113,15 +112,12 @@
 .method private constructor <init>(Lcom/just/agentweb/AgentWeb$AgentBuilder;)V
     .locals 10
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mAgentWeb:Lcom/just/agentweb/AgentWeb;
 
-    .line 4
     new-instance v1, La/b/a;
 
     invoke-direct {v1}, La/b/a;-><init>()V
@@ -130,84 +126,66 @@
 
     const/4 v1, 0x0
 
-    .line 5
     iput v1, p0, Lcom/just/agentweb/AgentWeb;->mTagTarget:I
 
-    .line 6
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebSecurityController:Lcom/just/agentweb/WebSecurityController;
 
-    .line 7
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebSecurityCheckLogic:Lcom/just/agentweb/WebSecurityCheckLogic;
 
-    .line 8
     sget-object v1, Lcom/just/agentweb/AgentWeb$SecurityType;->DEFAULT_CHECK:Lcom/just/agentweb/AgentWeb$SecurityType;
 
     iput-object v1, p0, Lcom/just/agentweb/AgentWeb;->mSecurityType:Lcom/just/agentweb/AgentWeb$SecurityType;
 
-    .line 9
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mAgentWebJsInterfaceCompat:Lcom/just/agentweb/AgentWebJsInterfaceCompat;
 
-    .line 10
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mJsAccessEntrace:Lcom/just/agentweb/JsAccessEntrace;
 
-    .line 11
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIUrlLoader:Lcom/just/agentweb/IUrlLoader;
 
-    .line 12
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIVideo:Lcom/just/agentweb/IVideo;
 
     const/4 v1, 0x1
 
-    .line 13
     iput-boolean v1, p0, Lcom/just/agentweb/AgentWeb;->mWebClientHelper:Z
 
-    .line 14
     iput-boolean v1, p0, Lcom/just/agentweb/AgentWeb;->mIsInterceptUnkownUrl:Z
 
     const/4 v1, -0x1
 
-    .line 15
     iput v1, p0, Lcom/just/agentweb/AgentWeb;->mUrlHandleWays:I
 
-    .line 16
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mJsInterfaceHolder:Lcom/just/agentweb/JsInterfaceHolder;
 
-    .line 17
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$000(Lcom/just/agentweb/AgentWeb$AgentBuilder;)I
 
     move-result v1
 
     iput v1, p0, Lcom/just/agentweb/AgentWeb;->mTagTarget:I
 
-    .line 18
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$100(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Landroid/app/Activity;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/just/agentweb/AgentWeb;->mActivity:Landroid/app/Activity;
 
-    .line 19
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$200(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Landroid/view/ViewGroup;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/just/agentweb/AgentWeb;->mViewGroup:Landroid/view/ViewGroup;
 
-    .line 20
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$300(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/IEventHandler;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/just/agentweb/AgentWeb;->mIEventHandler:Lcom/just/agentweb/IEventHandler;
 
-    .line 21
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$400(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Z
 
     move-result v1
 
     iput-boolean v1, p0, Lcom/just/agentweb/AgentWeb;->mEnableIndicator:Z
 
-    .line 22
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$500(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/WebCreator;
 
     move-result-object v1
@@ -258,38 +236,32 @@
     :goto_0
     iput-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
-    .line 23
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1300(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/IndicatorController;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/just/agentweb/AgentWeb;->mIndicatorController:Lcom/just/agentweb/IndicatorController;
 
-    .line 24
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1400(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/WebChromeClient;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebChromeClient:Lcom/just/agentweb/WebChromeClient;
 
-    .line 25
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1500(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/WebViewClient;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebViewClient:Lcom/just/agentweb/WebViewClient;
 
-    .line 26
     iput-object p0, p0, Lcom/just/agentweb/AgentWeb;->mAgentWeb:Lcom/just/agentweb/AgentWeb;
 
-    .line 27
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1600(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/IAgentWebSettings;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/just/agentweb/AgentWeb;->mAgentWebSettings:Lcom/just/agentweb/IAgentWebSettings;
 
-    .line 28
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1700(Lcom/just/agentweb/AgentWeb$AgentBuilder;)La/b/a;
 
     move-result-object v1
@@ -306,7 +278,6 @@
 
     if-nez v1, :cond_1
 
-    .line 29
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mJavaObjects:La/b/a;
 
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1700(Lcom/just/agentweb/AgentWeb$AgentBuilder;)La/b/a;
@@ -315,7 +286,6 @@
 
     invoke-virtual {v1, v2}, La/b/a;->putAll(Ljava/util/Map;)V
 
-    .line 30
     sget-object v1, Lcom/just/agentweb/AgentWeb;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -340,7 +310,6 @@
 
     invoke-static {v1, v2}, Lcom/just/agentweb/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 31
     :cond_1
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$1800(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/PermissionInterceptor;
 
@@ -364,14 +333,12 @@
     :goto_1
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mPermissionInterceptor:Lcom/just/agentweb/PermissionInterceptor;
 
-    .line 32
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2000(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/AgentWeb$SecurityType;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mSecurityType:Lcom/just/agentweb/AgentWeb$SecurityType;
 
-    .line 33
     new-instance v0, Lcom/just/agentweb/UrlLoaderImpl;
 
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
@@ -392,7 +359,6 @@
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIUrlLoader:Lcom/just/agentweb/IUrlLoader;
 
-    .line 34
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
     invoke-interface {v0}, Lcom/just/agentweb/WebCreator;->getWebParentLayout()Landroid/widget/FrameLayout;
@@ -403,7 +369,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 35
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
     invoke-interface {v0}, Lcom/just/agentweb/WebCreator;->getWebParentLayout()Landroid/widget/FrameLayout;
@@ -412,7 +377,6 @@
 
     check-cast v0, Lcom/just/agentweb/WebParentLayout;
 
-    .line 36
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2200(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v1
@@ -433,7 +397,6 @@
     :goto_2
     invoke-virtual {v0, v1}, Lcom/just/agentweb/WebParentLayout;->bindController(Lcom/just/agentweb/AbsAgentWebUIController;)V
 
-    .line 37
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2300(Lcom/just/agentweb/AgentWeb$AgentBuilder;)I
 
     move-result v1
@@ -444,14 +407,12 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/just/agentweb/WebParentLayout;->setErrorLayoutRes(II)V
 
-    .line 38
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2500(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Landroid/view/View;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/just/agentweb/WebParentLayout;->setErrorView(Landroid/view/View;)V
 
-    .line 39
     :cond_4
     new-instance v0, Lcom/just/agentweb/DefaultWebLifeCycleImpl;
 
@@ -465,7 +426,6 @@
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebLifeCycle:Lcom/just/agentweb/WebLifeCycle;
 
-    .line 40
     new-instance v0, Lcom/just/agentweb/WebSecurityControllerImpl;
 
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
@@ -484,28 +444,24 @@
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebSecurityController:Lcom/just/agentweb/WebSecurityController;
 
-    .line 41
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2600(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/just/agentweb/AgentWeb;->mWebClientHelper:Z
 
-    .line 42
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2700(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Z
 
     move-result v0
 
     iput-boolean v0, p0, Lcom/just/agentweb/AgentWeb;->mIsInterceptUnkownUrl:Z
 
-    .line 43
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2800(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/DefaultWebClient$OpenOtherPageWays;
 
     move-result-object v0
 
     if-eqz v0, :cond_5
 
-    .line 44
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2800(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/DefaultWebClient$OpenOtherPageWays;
 
     move-result-object v0
@@ -514,7 +470,6 @@
 
     iput v0, p0, Lcom/just/agentweb/AgentWeb;->mUrlHandleWays:I
 
-    .line 45
     :cond_5
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$2900(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/MiddlewareWebClientBase;
 
@@ -522,14 +477,12 @@
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mMiddleWrareWebClientBaseHeader:Lcom/just/agentweb/MiddlewareWebClientBase;
 
-    .line 46
     invoke-static {p1}, Lcom/just/agentweb/AgentWeb$AgentBuilder;->access$3000(Lcom/just/agentweb/AgentWeb$AgentBuilder;)Lcom/just/agentweb/MiddlewareWebChromeBase;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/just/agentweb/AgentWeb;->mMiddlewareWebChromeBaseHeader:Lcom/just/agentweb/MiddlewareWebChromeBase;
 
-    .line 47
     invoke-direct {p0}, Lcom/just/agentweb/AgentWeb;->init()V
 
     return-void
@@ -538,7 +491,6 @@
 .method synthetic constructor <init>(Lcom/just/agentweb/AgentWeb$AgentBuilder;Lcom/just/agentweb/AgentWeb$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/just/agentweb/AgentWeb;-><init>(Lcom/just/agentweb/AgentWeb$AgentBuilder;)V
 
     return-void
@@ -547,7 +499,6 @@
 .method static synthetic access$3100(Lcom/just/agentweb/AgentWeb;)Lcom/just/agentweb/AgentWeb;
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/just/agentweb/AgentWeb;->ready()Lcom/just/agentweb/AgentWeb;
 
     move-result-object p0
@@ -558,7 +509,6 @@
 .method static synthetic access$3200(Lcom/just/agentweb/AgentWeb;Ljava/lang/String;)Lcom/just/agentweb/AgentWeb;
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/just/agentweb/AgentWeb;->go(Ljava/lang/String;)Lcom/just/agentweb/AgentWeb;
 
     move-result-object p0
@@ -573,12 +523,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-boolean v1, v0, Lcom/just/agentweb/AgentWeb;->mEnableIndicator:Z
 
     if-eqz v1, :cond_0
 
-    .line 2
     new-instance v9, Lcom/just/agentweb/DefaultWebCreator;
 
     iget-object v2, v0, Lcom/just/agentweb/AgentWeb;->mActivity:Landroid/app/Activity;
@@ -601,7 +549,6 @@
 
     return-object v9
 
-    .line 3
     :cond_0
     iget-boolean v1, v0, Lcom/just/agentweb/AgentWeb;->mEnableIndicator:Z
 
@@ -657,7 +604,6 @@
 .method private doCompat()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mJavaObjects:La/b/a;
 
     new-instance v1, Lcom/just/agentweb/AgentWebJsInterfaceCompat;
@@ -678,12 +624,10 @@
 .method private doSafeCheck()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebSecurityCheckLogic:Lcom/just/agentweb/WebSecurityCheckLogic;
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
     invoke-interface {v0}, Lcom/just/agentweb/WebCreator;->getWebViewType()I
@@ -696,7 +640,6 @@
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebSecurityCheckLogic:Lcom/just/agentweb/WebSecurityCheckLogic;
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebSecurityController:Lcom/just/agentweb/WebSecurityController;
 
@@ -708,12 +651,10 @@
 .method private getChromeClient()Landroid/webkit/WebChromeClient;
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIndicatorController:Lcom/just/agentweb/IndicatorController;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/just/agentweb/IndicatorHandler;->getInstance()Lcom/just/agentweb/IndicatorHandler;
 
     move-result-object v0
@@ -731,7 +672,6 @@
     :cond_0
     move-object v3, v0
 
-    .line 3
     new-instance v0, Lcom/just/agentweb/DefaultChromeClient;
 
     iget-object v2, p0, Lcom/just/agentweb/AgentWeb;->mActivity:Landroid/app/Activity;
@@ -740,7 +680,6 @@
 
     const/4 v4, 0x0
 
-    .line 4
     invoke-direct {p0}, Lcom/just/agentweb/AgentWeb;->getIVideo()Lcom/just/agentweb/IVideo;
 
     move-result-object v5
@@ -751,7 +690,6 @@
 
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
-    .line 5
     invoke-interface {v1}, Lcom/just/agentweb/WebCreator;->getWebView()Landroid/webkit/WebView;
 
     move-result-object v7
@@ -760,7 +698,6 @@
 
     invoke-direct/range {v1 .. v7}, Lcom/just/agentweb/DefaultChromeClient;-><init>(Landroid/app/Activity;Lcom/just/agentweb/IndicatorController;Landroid/webkit/WebChromeClient;Lcom/just/agentweb/IVideo;Lcom/just/agentweb/PermissionInterceptor;Landroid/webkit/WebView;)V
 
-    .line 6
     sget-object v1, Lcom/just/agentweb/AgentWeb;->TAG:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -781,18 +718,14 @@
 
     invoke-static {v1, v2}, Lcom/just/agentweb/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mMiddlewareWebChromeBaseHeader:Lcom/just/agentweb/MiddlewareWebChromeBase;
 
-    .line 8
     iget-object v2, p0, Lcom/just/agentweb/AgentWeb;->mWebChromeClient:Lcom/just/agentweb/WebChromeClient;
 
     if-eqz v2, :cond_1
 
-    .line 9
     invoke-virtual {v2, v1}, Lcom/just/agentweb/MiddlewareWebChromeBase;->enq(Lcom/just/agentweb/MiddlewareWebChromeBase;)Lcom/just/agentweb/MiddlewareWebChromeBase;
 
-    .line 10
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebChromeClient:Lcom/just/agentweb/WebChromeClient;
 
     :cond_1
@@ -802,7 +735,6 @@
 
     move-object v3, v1
 
-    .line 11
     :goto_0
     invoke-virtual {v3}, Lcom/just/agentweb/MiddlewareWebChromeBase;->next()Lcom/just/agentweb/MiddlewareWebChromeBase;
 
@@ -810,7 +742,6 @@
 
     if-eqz v4, :cond_2
 
-    .line 12
     invoke-virtual {v3}, Lcom/just/agentweb/MiddlewareWebChromeBase;->next()Lcom/just/agentweb/MiddlewareWebChromeBase;
 
     move-result-object v3
@@ -819,7 +750,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_2
     sget-object v4, Lcom/just/agentweb/AgentWeb;->TAG:Ljava/lang/String;
 
@@ -839,15 +769,12 @@
 
     invoke-static {v4, v2}, Lcom/just/agentweb/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 14
     invoke-virtual {v3, v0}, Lcom/just/agentweb/MiddlewareWebChromeBase;->setDelegate(Landroid/webkit/WebChromeClient;)V
 
-    .line 15
     iput-object v1, p0, Lcom/just/agentweb/AgentWeb;->mTargetChromeClient:Landroid/webkit/WebChromeClient;
 
     return-object v1
 
-    .line 16
     :cond_3
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mTargetChromeClient:Landroid/webkit/WebChromeClient;
 
@@ -857,7 +784,6 @@
 .method private getIVideo()Lcom/just/agentweb/IVideo;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIVideo:Lcom/just/agentweb/IVideo;
 
     if-nez v0, :cond_0
@@ -881,14 +807,12 @@
 .method private getInterceptor()Lcom/just/agentweb/EventInterceptor;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mEventInterceptor:Lcom/just/agentweb/EventInterceptor;
 
     if-eqz v0, :cond_0
 
     return-object v0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIVideo:Lcom/just/agentweb/IVideo;
 
@@ -896,7 +820,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 3
     check-cast v0, Lcom/just/agentweb/EventInterceptor;
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mEventInterceptor:Lcom/just/agentweb/EventInterceptor;
@@ -912,7 +835,6 @@
 .method private getWebViewClient()Landroid/webkit/WebViewClient;
     .locals 7
 
-    .line 1
     sget-object v0, Lcom/just/agentweb/AgentWeb;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -933,35 +855,30 @@
 
     invoke-static {v0, v1}, Lcom/just/agentweb/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     invoke-static {}, Lcom/just/agentweb/DefaultWebClient;->createBuilder()Lcom/just/agentweb/DefaultWebClient$Builder;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mActivity:Landroid/app/Activity;
 
-    .line 3
     invoke-virtual {v0, v1}, Lcom/just/agentweb/DefaultWebClient$Builder;->setActivity(Landroid/app/Activity;)Lcom/just/agentweb/DefaultWebClient$Builder;
 
     move-result-object v0
 
     iget-boolean v1, p0, Lcom/just/agentweb/AgentWeb;->mWebClientHelper:Z
 
-    .line 4
     invoke-virtual {v0, v1}, Lcom/just/agentweb/DefaultWebClient$Builder;->setWebClientHelper(Z)Lcom/just/agentweb/DefaultWebClient$Builder;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mPermissionInterceptor:Lcom/just/agentweb/PermissionInterceptor;
 
-    .line 5
     invoke-virtual {v0, v1}, Lcom/just/agentweb/DefaultWebClient$Builder;->setPermissionInterceptor(Lcom/just/agentweb/PermissionInterceptor;)Lcom/just/agentweb/DefaultWebClient$Builder;
 
     move-result-object v0
 
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
-    .line 6
     invoke-interface {v1}, Lcom/just/agentweb/WebCreator;->getWebView()Landroid/webkit/WebView;
 
     move-result-object v1
@@ -972,35 +889,28 @@
 
     iget-boolean v1, p0, Lcom/just/agentweb/AgentWeb;->mIsInterceptUnkownUrl:Z
 
-    .line 7
     invoke-virtual {v0, v1}, Lcom/just/agentweb/DefaultWebClient$Builder;->setInterceptUnkownUrl(Z)Lcom/just/agentweb/DefaultWebClient$Builder;
 
     move-result-object v0
 
     iget v1, p0, Lcom/just/agentweb/AgentWeb;->mUrlHandleWays:I
 
-    .line 8
     invoke-virtual {v0, v1}, Lcom/just/agentweb/DefaultWebClient$Builder;->setUrlHandleWays(I)Lcom/just/agentweb/DefaultWebClient$Builder;
 
     move-result-object v0
 
-    .line 9
     invoke-virtual {v0}, Lcom/just/agentweb/DefaultWebClient$Builder;->build()Lcom/just/agentweb/DefaultWebClient;
 
     move-result-object v0
 
-    .line 10
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mMiddleWrareWebClientBaseHeader:Lcom/just/agentweb/MiddlewareWebClientBase;
 
-    .line 11
     iget-object v2, p0, Lcom/just/agentweb/AgentWeb;->mWebViewClient:Lcom/just/agentweb/WebViewClient;
 
     if-eqz v2, :cond_0
 
-    .line 12
     invoke-virtual {v2, v1}, Lcom/just/agentweb/MiddlewareWebClientBase;->enq(Lcom/just/agentweb/MiddlewareWebClientBase;)Lcom/just/agentweb/MiddlewareWebClientBase;
 
-    .line 13
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebViewClient:Lcom/just/agentweb/WebViewClient;
 
     :cond_0
@@ -1010,7 +920,6 @@
 
     move-object v3, v1
 
-    .line 14
     :goto_0
     invoke-virtual {v3}, Lcom/just/agentweb/MiddlewareWebClientBase;->next()Lcom/just/agentweb/MiddlewareWebClientBase;
 
@@ -1018,7 +927,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 15
     invoke-virtual {v3}, Lcom/just/agentweb/MiddlewareWebClientBase;->next()Lcom/just/agentweb/MiddlewareWebClientBase;
 
     move-result-object v3
@@ -1027,7 +935,6 @@
 
     goto :goto_0
 
-    .line 16
     :cond_1
     sget-object v4, Lcom/just/agentweb/AgentWeb;->TAG:Ljava/lang/String;
 
@@ -1047,7 +954,6 @@
 
     invoke-static {v4, v2}, Lcom/just/agentweb/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 17
     invoke-virtual {v3, v0}, Lcom/just/agentweb/MiddlewareWebClientBase;->setDelegate(Landroid/webkit/WebViewClient;)V
 
     return-object v1
@@ -1059,14 +965,12 @@
 .method private go(Ljava/lang/String;)Lcom/just/agentweb/AgentWeb;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AgentWeb;->getUrlLoader()Lcom/just/agentweb/IUrlLoader;
 
     move-result-object v0
 
     invoke-interface {v0, p1}, Lcom/just/agentweb/IUrlLoader;->loadUrl(Ljava/lang/String;)V
 
-    .line 2
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result p1
@@ -1085,7 +989,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Lcom/just/agentweb/AgentWeb;->getIndicatorController()Lcom/just/agentweb/IndicatorController;
 
     move-result-object p1
@@ -1103,10 +1006,8 @@
 .method private init()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/just/agentweb/AgentWeb;->doCompat()V
 
-    .line 2
     invoke-direct {p0}, Lcom/just/agentweb/AgentWeb;->doSafeCheck()V
 
     return-void
@@ -1115,7 +1016,6 @@
 .method private ready()Lcom/just/agentweb/AgentWeb;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
@@ -1124,32 +1024,27 @@
 
     invoke-static {v0}, Lcom/just/agentweb/AgentWebConfig;->initCookiesManager(Landroid/content/Context;)V
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mAgentWebSettings:Lcom/just/agentweb/IAgentWebSettings;
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-static {}, Lcom/just/agentweb/AbsAgentWebSettings;->getInstance()Lcom/just/agentweb/AbsAgentWebSettings;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mAgentWebSettings:Lcom/just/agentweb/IAgentWebSettings;
 
-    .line 4
     :cond_0
     instance-of v1, v0, Lcom/just/agentweb/AbsAgentWebSettings;
 
     if-eqz v1, :cond_1
 
-    .line 5
     move-object v2, v0
 
     check-cast v2, Lcom/just/agentweb/AbsAgentWebSettings;
 
     invoke-virtual {v2, p0}, Lcom/just/agentweb/AbsAgentWebSettings;->bindAgentWeb(Lcom/just/agentweb/AgentWeb;)V
 
-    .line 6
     :cond_1
     iget-object v2, p0, Lcom/just/agentweb/AgentWeb;->mWebListenerManager:Lcom/just/agentweb/WebListenerManager;
 
@@ -1157,14 +1052,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 7
     move-object v1, v0
 
     check-cast v1, Lcom/just/agentweb/WebListenerManager;
 
     iput-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebListenerManager:Lcom/just/agentweb/WebListenerManager;
 
-    .line 8
     :cond_2
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
@@ -1174,12 +1067,10 @@
 
     invoke-interface {v0, v1}, Lcom/just/agentweb/IAgentWebSettings;->toSetting(Landroid/webkit/WebView;)Lcom/just/agentweb/IAgentWebSettings;
 
-    .line 9
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mJsInterfaceHolder:Lcom/just/agentweb/JsInterfaceHolder;
 
     if-nez v0, :cond_3
 
-    .line 10
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mSecurityType:Lcom/just/agentweb/AgentWeb$SecurityType;
@@ -1190,7 +1081,6 @@
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mJsInterfaceHolder:Lcom/just/agentweb/JsInterfaceHolder;
 
-    .line 11
     :cond_3
     sget-object v0, Lcom/just/agentweb/AgentWeb;->TAG:Ljava/lang/String;
 
@@ -1216,7 +1106,6 @@
 
     invoke-static {v0, v1}, Lcom/just/agentweb/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mJavaObjects:La/b/a;
 
     if-eqz v0, :cond_4
@@ -1227,20 +1116,17 @@
 
     if-nez v0, :cond_4
 
-    .line 13
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mJsInterfaceHolder:Lcom/just/agentweb/JsInterfaceHolder;
 
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mJavaObjects:La/b/a;
 
     invoke-interface {v0, v1}, Lcom/just/agentweb/JsInterfaceHolder;->addJavaObjects(Ljava/util/Map;)Lcom/just/agentweb/JsInterfaceHolder;
 
-    .line 14
     :cond_4
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebListenerManager:Lcom/just/agentweb/WebListenerManager;
 
     if-eqz v0, :cond_5
 
-    .line 15
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
     invoke-interface {v1}, Lcom/just/agentweb/WebCreator;->getWebView()Landroid/webkit/WebView;
@@ -1251,7 +1137,6 @@
 
     invoke-interface {v0, v1, v2}, Lcom/just/agentweb/WebListenerManager;->setDownloader(Landroid/webkit/WebView;Landroid/webkit/DownloadListener;)Lcom/just/agentweb/WebListenerManager;
 
-    .line 16
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebListenerManager:Lcom/just/agentweb/WebListenerManager;
 
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
@@ -1266,7 +1151,6 @@
 
     invoke-interface {v0, v1, v2}, Lcom/just/agentweb/WebListenerManager;->setWebChromeClient(Landroid/webkit/WebView;Landroid/webkit/WebChromeClient;)Lcom/just/agentweb/WebListenerManager;
 
-    .line 17
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebListenerManager:Lcom/just/agentweb/WebListenerManager;
 
     iget-object v1, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
@@ -1294,14 +1178,12 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     new-instance v0, Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-direct {v0, p0}, Lcom/just/agentweb/AgentWeb$AgentBuilder;-><init>(Landroid/app/Activity;)V
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1319,21 +1201,18 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     new-instance v1, Lcom/just/agentweb/AgentWeb$AgentBuilder;
 
     invoke-direct {v1, v0, p0}, Lcom/just/agentweb/AgentWeb$AgentBuilder;-><init>(Landroid/app/Activity;Landroidx/fragment/app/Fragment;)V
 
     return-object v1
 
-    .line 5
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -1349,12 +1228,10 @@
 .method public back()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIEventHandler:Lcom/just/agentweb/IEventHandler;
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
     invoke-interface {v0}, Lcom/just/agentweb/WebCreator;->getWebView()Landroid/webkit/WebView;
@@ -1371,7 +1248,6 @@
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIEventHandler:Lcom/just/agentweb/IEventHandler;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIEventHandler:Lcom/just/agentweb/IEventHandler;
 
@@ -1385,7 +1261,6 @@
 .method public clearWebCache()Lcom/just/agentweb/AgentWeb;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AgentWeb;->getWebCreator()Lcom/just/agentweb/WebCreator;
 
     move-result-object v0
@@ -1396,7 +1271,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {p0}, Lcom/just/agentweb/AgentWeb;->getWebCreator()Lcom/just/agentweb/WebCreator;
@@ -1411,7 +1285,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mActivity:Landroid/app/Activity;
 
@@ -1424,7 +1297,6 @@
 .method public destroy()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebLifeCycle:Lcom/just/agentweb/WebLifeCycle;
 
     invoke-interface {v0}, Lcom/just/agentweb/WebLifeCycle;->onDestroy()V
@@ -1435,7 +1307,6 @@
 .method getActivity()Landroid/app/Activity;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mActivity:Landroid/app/Activity;
 
     return-object v0
@@ -1444,7 +1315,6 @@
 .method public getAgentWebSettings()Lcom/just/agentweb/IAgentWebSettings;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mAgentWebSettings:Lcom/just/agentweb/IAgentWebSettings;
 
     return-object v0
@@ -1453,7 +1323,6 @@
 .method public getIEventHandler()Lcom/just/agentweb/IEventHandler;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIEventHandler:Lcom/just/agentweb/IEventHandler;
 
     if-nez v0, :cond_0
@@ -1481,7 +1350,6 @@
 .method public getIndicatorController()Lcom/just/agentweb/IndicatorController;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIndicatorController:Lcom/just/agentweb/IndicatorController;
 
     return-object v0
@@ -1490,12 +1358,10 @@
 .method public getJsAccessEntrace()Lcom/just/agentweb/JsAccessEntrace;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mJsAccessEntrace:Lcom/just/agentweb/JsAccessEntrace;
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
     invoke-interface {v0}, Lcom/just/agentweb/WebCreator;->getWebView()Landroid/webkit/WebView;
@@ -1515,7 +1381,6 @@
 .method public getJsInterfaceHolder()Lcom/just/agentweb/JsInterfaceHolder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mJsInterfaceHolder:Lcom/just/agentweb/JsInterfaceHolder;
 
     return-object v0
@@ -1524,7 +1389,6 @@
 .method public getPermissionInterceptor()Lcom/just/agentweb/PermissionInterceptor;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mPermissionInterceptor:Lcom/just/agentweb/PermissionInterceptor;
 
     return-object v0
@@ -1533,7 +1397,6 @@
 .method public getUrlLoader()Lcom/just/agentweb/IUrlLoader;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIUrlLoader:Lcom/just/agentweb/IUrlLoader;
 
     return-object v0
@@ -1542,7 +1405,6 @@
 .method public getWebCreator()Lcom/just/agentweb/WebCreator;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
     return-object v0
@@ -1551,7 +1413,6 @@
 .method public getWebLifeCycle()Lcom/just/agentweb/WebLifeCycle;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebLifeCycle:Lcom/just/agentweb/WebLifeCycle;
 
     return-object v0
@@ -1560,12 +1421,10 @@
 .method public handleKeyEvent(ILandroid/view/KeyEvent;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIEventHandler:Lcom/just/agentweb/IEventHandler;
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
     invoke-interface {v0}, Lcom/just/agentweb/WebCreator;->getWebView()Landroid/webkit/WebView;
@@ -1582,7 +1441,6 @@
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIEventHandler:Lcom/just/agentweb/IEventHandler;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb;->mIEventHandler:Lcom/just/agentweb/IEventHandler;
 

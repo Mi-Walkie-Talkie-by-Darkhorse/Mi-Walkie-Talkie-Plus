@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/DoNotInline;
 .super Ljava/lang/Object;
-.source "DoNotInline.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

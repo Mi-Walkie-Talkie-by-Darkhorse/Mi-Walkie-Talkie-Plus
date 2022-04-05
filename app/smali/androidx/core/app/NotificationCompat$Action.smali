@@ -1,6 +1,5 @@
 .class public Landroidx/core/app/NotificationCompat$Action;
 .super Ljava/lang/Object;
-.source "NotificationCompat.java"
 
 
 # annotations
@@ -56,7 +55,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$Action;->k:Landroid/app/PendingIntent;
 
     return-object v0
@@ -65,7 +63,6 @@
 .method public b()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/core/app/NotificationCompat$Action;->e:Z
 
     return v0
@@ -76,7 +73,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$Action;->d:[Landroidx/core/app/RemoteInput;
 
     return-object v0
@@ -87,7 +83,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$Action;->a:Landroid/os/Bundle;
 
     return-object v0
@@ -98,7 +93,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$Action;->b:Landroidx/core/graphics/drawable/IconCompat;
 
     if-nez v0, :cond_0
@@ -111,14 +105,12 @@
 
     const-string v2, ""
 
-    .line 2
     invoke-static {v1, v2, v0}, Landroidx/core/graphics/drawable/IconCompat;->a(Landroid/content/res/Resources;Ljava/lang/String;I)Landroidx/core/graphics/drawable/IconCompat;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/core/app/NotificationCompat$Action;->b:Landroidx/core/graphics/drawable/IconCompat;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$Action;->b:Landroidx/core/graphics/drawable/IconCompat;
 
@@ -130,7 +122,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$Action;->c:[Landroidx/core/app/RemoteInput;
 
     return-object v0
@@ -139,7 +130,6 @@
 .method public g()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/core/app/NotificationCompat$Action;->g:I
 
     return v0
@@ -148,7 +138,6 @@
 .method public h()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/core/app/NotificationCompat$Action;->f:Z
 
     return v0
@@ -159,7 +148,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$Action;->j:Ljava/lang/CharSequence;
 
     return-object v0
@@ -168,7 +156,6 @@
 .method public j()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/core/app/NotificationCompat$Action;->h:Z
 
     return v0

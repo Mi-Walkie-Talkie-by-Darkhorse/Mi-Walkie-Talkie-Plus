@@ -1,6 +1,5 @@
 .class synthetic Lcom/yalantis/ucrop/view/GestureCropImageView$a;
 .super Ljava/lang/Object;
-.source "GestureCropImageView.java"
 
 
 # annotations

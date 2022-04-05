@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Serialization$FieldSetter;
 .super Ljava/lang/Object;
-.source "Serialization.java"
 
 
 # annotations
@@ -31,15 +30,12 @@
 .method private constructor <init>(Ljava/lang/reflect/Field;)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/collect/Serialization$FieldSetter;->field:Ljava/lang/reflect/Field;
 
     const/4 v0, 0x1
 
-    .line 4
     invoke-virtual {p1, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
     return-void
@@ -48,7 +44,6 @@
 .method synthetic constructor <init>(Ljava/lang/reflect/Field;Lcom/google/common/collect/Serialization$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/Serialization$FieldSetter;-><init>(Ljava/lang/reflect/Field;)V
 
     return-void
@@ -64,7 +59,6 @@
         }
     .end annotation
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/google/common/collect/Serialization$FieldSetter;->field:Ljava/lang/reflect/Field;
 
@@ -81,7 +75,6 @@
     :catch_0
     move-exception p1
 
-    .line 4
     new-instance p2, Ljava/lang/AssertionError;
 
     invoke-direct {p2, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -99,7 +92,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/google/common/collect/Serialization$FieldSetter;->field:Ljava/lang/reflect/Field;
 
@@ -112,7 +104,6 @@
     :catch_0
     move-exception p1
 
-    .line 2
     new-instance p2, Ljava/lang/AssertionError;
 
     invoke-direct {p2, p1}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V

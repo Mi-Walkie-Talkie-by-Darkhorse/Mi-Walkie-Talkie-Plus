@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;
 .super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
-.source "SetDeviceBleNameActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -28,12 +27,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;-><init>()V
 
     const/16 v0, 0x10
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->w:I
 
     return-void
@@ -42,7 +39,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)Landroid/widget/EditText;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->t:Landroid/widget/EditText;
 
     return-object p0
@@ -51,7 +47,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)Landroid/view/View;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->v:Landroid/view/View;
 
     return-object p0
@@ -60,7 +55,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->w:I
 
     return p0
@@ -69,7 +63,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)Landroid/widget/TextView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->s:Landroid/widget/TextView;
 
     return-object p0
@@ -78,17 +71,14 @@
 .method private w()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->u:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->f(Ljava/lang/String;)V
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/node/q/d;->c()Lcom/ifengyu/intercom/node/q/d;
 
     move-result-object v0
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->p()Ljava/lang/String;
 
     move-result-object v1
@@ -97,35 +87,28 @@
 
     move-result-object v1
 
-    .line 4
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->u:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->b(Ljava/lang/String;)V
 
     const/4 v2, 0x1
 
-    .line 5
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->a(Z)V
 
-    .line 6
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/node/q/d;->b(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
 
-    .line 7
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 8
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->u:Ljava/lang/String;
 
     const-string v3, "setting_walkie_name"
 
     invoke-virtual {v0, v3, v1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 9
     invoke-virtual {p0, v2, v0}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
-    .line 10
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     return-void
@@ -134,12 +117,10 @@
 .method private x()V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->r()V
 
     const v0, 0x7f09041d
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -150,7 +131,6 @@
 
     const v0, 0x7f090418
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -161,7 +141,6 @@
 
     const v0, 0x7f090054
 
-    .line 4
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -172,7 +151,6 @@
 
     const v0, 0x7f090055
 
-    .line 5
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -181,7 +159,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->s:Landroid/widget/TextView;
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->r:Landroid/widget/TextView;
 
     const v1, 0x7f110098
@@ -192,31 +169,26 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->q:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->q:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const v0, 0x7f090108
 
-    .line 9
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->v:Landroid/view/View;
 
-    .line 10
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->t:Landroid/widget/EditText;
 
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->q()Ljava/lang/String;
@@ -225,7 +197,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->t:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -238,7 +209,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setSelection(I)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->t:Landroid/widget/EditText;
 
     const/4 v2, 0x1
@@ -253,7 +223,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->t:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -274,7 +243,6 @@
 
     if-nez v0, :cond_0
 
-    .line 15
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->v:Landroid/view/View;
 
     const/4 v1, 0x4
@@ -283,13 +251,11 @@
 
     goto :goto_0
 
-    .line 16
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->v:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 17
     :goto_0
     :try_start_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->s:Landroid/widget/TextView;
@@ -343,10 +309,8 @@
     :catch_0
     move-exception v0
 
-    .line 18
     invoke-virtual {v0}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
-    .line 19
     :goto_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->t:Landroid/widget/EditText;
 
@@ -364,7 +328,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -379,7 +342,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->t:Landroid/widget/EditText;
 
@@ -397,7 +359,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->u:Ljava/lang/String;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/node/j;->b()Lcom/ifengyu/intercom/node/j;
 
     move-result-object p1
@@ -412,7 +373,6 @@
 
     const p1, 0x7f1100c9
 
-    .line 4
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -421,7 +381,6 @@
 
     return-void
 
-    .line 5
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->u:Ljava/lang/String;
 
@@ -433,7 +392,6 @@
 
     const p1, 0x7f1102e0
 
-    .line 6
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -442,7 +400,6 @@
 
     return-void
 
-    .line 7
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->u:Ljava/lang/String;
 
@@ -454,7 +411,6 @@
 
     const p1, 0x7f11032f
 
-    .line 8
     invoke-static {p1}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object p1
@@ -466,10 +422,8 @@
     :cond_3
     const/4 p1, 0x1
 
-    .line 9
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->x:Z
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object p1
@@ -480,7 +434,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->t:Landroid/widget/EditText;
 
@@ -495,15 +448,12 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c0050
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->setContentView(I)V
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->x()V
 
     return-void
@@ -512,10 +462,8 @@
 .method protected onPause()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onPause()V
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
@@ -528,10 +476,8 @@
 .method protected onResume()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onResume()V
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
@@ -546,7 +492,6 @@
 
     const v0, 0x7f090419
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -555,7 +500,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c:Landroid/widget/ImageView;
 
-    .line 2
     new-instance v1, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$b;
 
     invoke-direct {v1, p0}, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity$b;-><init>(Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;)V
@@ -570,7 +514,6 @@
     .annotation runtime Lcom/squareup/otto/Subscribe;
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->x:Z
 
     if-nez v0, :cond_0
@@ -580,10 +523,8 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->x:Z
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getResult()Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
     move-result-object p1
@@ -592,7 +533,6 @@
 
     if-ne p1, v1, :cond_1
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/SetDeviceBleNameActivity;->w()V
 
     goto :goto_0
@@ -600,7 +540,6 @@
     :cond_1
     const p1, 0x7f110340
 
-    .line 5
     invoke-static {p1}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object p1

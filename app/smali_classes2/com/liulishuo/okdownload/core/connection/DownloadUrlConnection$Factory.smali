@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Factory;
 .super Ljava/lang/Object;
-.source "DownloadUrlConnection.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Factory;
@@ -27,7 +26,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Factory;-><init>(Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;)V
 
     return-void
@@ -36,10 +34,8 @@
 .method public constructor <init>(Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Factory;->configuration:Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;
 
     return-void
@@ -55,7 +51,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection;
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Factory;->configuration:Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;
@@ -73,7 +68,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection;
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Factory;->configuration:Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;

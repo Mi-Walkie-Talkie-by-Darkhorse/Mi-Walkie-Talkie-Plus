@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/core/assist/deque/LIFOLinkedBlockingDeque;
 .super Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;
-.source "LIFOLinkedBlockingDeque.java"
 
 
 # annotations
@@ -23,7 +22,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;-><init>()V
 
     return-void
@@ -39,7 +37,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->offerFirst(Ljava/lang/Object;)Z
 
     move-result p1
@@ -55,7 +52,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0}, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque;->removeFirst()Ljava/lang/Object;
 
     move-result-object v0

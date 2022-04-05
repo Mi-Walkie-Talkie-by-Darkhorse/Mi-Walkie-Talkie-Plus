@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/net/HttpManager$a;
 .super Lcom/sina/weibo/sdk/net/b;
-.source "HttpManager.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/sina/weibo/sdk/net/b;-><init>()V
 
     return-void

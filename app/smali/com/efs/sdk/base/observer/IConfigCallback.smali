@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/efs/sdk/base/observer/IConfigCallback;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # virtual methods

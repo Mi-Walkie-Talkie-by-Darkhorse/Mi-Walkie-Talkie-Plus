@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$37;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$37;->a:Lcom/amap/api/col/l3/j;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/j$37;->a:Lcom/amap/api/col/l3/j;
 
     iget-object v1, v0, Lcom/amap/api/col/l3/j;->f:Lcom/autonavi/ae/gmap/GLMapEngine;
@@ -47,7 +44,6 @@
 
     const/4 v2, 0x1
 
-    .line 2
     iget-object v0, v0, Lcom/amap/api/col/l3/j;->d:Lcom/amap/api/col/l3/am;
 
     iget-object v3, v0, Lcom/amap/api/maps/model/IndoorBuildingInfo;->activeFloorName:Ljava/lang/String;

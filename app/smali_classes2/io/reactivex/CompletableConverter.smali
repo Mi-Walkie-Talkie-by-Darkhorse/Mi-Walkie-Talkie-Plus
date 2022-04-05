@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/CompletableConverter;
 .super Ljava/lang/Object;
-.source "CompletableConverter.java"
 
 
 # annotations

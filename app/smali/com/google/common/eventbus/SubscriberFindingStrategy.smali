@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/common/eventbus/SubscriberFindingStrategy;
 .super Ljava/lang/Object;
-.source "SubscriberFindingStrategy.java"
 
 
 # virtual methods

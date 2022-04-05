@@ -1,6 +1,5 @@
 .class Lcom/liulishuo/okdownload/DownloadContext$2;
 .super Ljava/lang/Object;
-.source "DownloadContext.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/liulishuo/okdownload/DownloadContext;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$2;->this$0:Lcom/liulishuo/okdownload/DownloadContext;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$2;->this$0:Lcom/liulishuo/okdownload/DownloadContext;
 
     iget-object v1, v0, Lcom/liulishuo/okdownload/DownloadContext;->contextListener:Lcom/liulishuo/okdownload/DownloadContextListener;

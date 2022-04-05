@@ -1,6 +1,5 @@
 .class abstract Lcom/amap/api/col/l3/j$a;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -35,15 +34,12 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/amap/api/col/l3/j$a;->b:Z
 
-    .line 3
     iput-boolean v0, p0, Lcom/amap/api/col/l3/j$a;->c:Z
 
     return-void
@@ -52,7 +48,6 @@
 .method synthetic constructor <init>(B)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Lcom/amap/api/col/l3/j$a;-><init>()V
 
     return-void
@@ -65,7 +60,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lcom/amap/api/col/l3/j$a;->b:Z
 
     return-void

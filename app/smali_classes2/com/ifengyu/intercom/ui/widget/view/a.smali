@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/a;
 .super Ljava/lang/Object;
-.source "MyInputFilter.java"
 
 # interfaces
 .implements Landroid/text/InputFilter;
@@ -16,15 +15,12 @@
 .method public constructor <init>(Landroid/widget/EditText;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0x10
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/a;->a:I
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/a;->b:Landroid/widget/EditText;
 
     return-void
@@ -41,7 +37,6 @@
 
     const/4 p5, 0x0
 
-    .line 1
     :goto_0
     iget p6, p0, Lcom/ifengyu/intercom/ui/widget/view/a;->a:I
 
@@ -57,7 +52,6 @@
 
     add-int/lit8 p6, p5, 0x1
 
-    .line 2
     invoke-interface {p4, p5}, Landroid/text/Spanned;->charAt(I)C
 
     move-result p5
@@ -66,7 +60,6 @@
 
     move-result-object p5
 
-    .line 3
     invoke-static {p5}, Lcom/ifengyu/intercom/i/c0;->h(Ljava/lang/String;)Z
 
     move-result v1
@@ -77,7 +70,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_0
     invoke-static {p5}, Lcom/ifengyu/intercom/i/c0;->d(Ljava/lang/String;)Z
 
@@ -95,7 +87,6 @@
     :cond_1
     return-object v0
 
-    .line 5
     :cond_2
     iget p6, p0, Lcom/ifengyu/intercom/ui/widget/view/a;->a:I
 
@@ -103,7 +94,6 @@
 
     add-int/lit8 p5, p5, -0x1
 
-    .line 6
     invoke-interface {p4, p2, p5}, Landroid/text/Spanned;->subSequence(II)Ljava/lang/CharSequence;
 
     move-result-object p1
@@ -113,7 +103,6 @@
     :cond_3
     const/4 p4, 0x0
 
-    .line 7
     :goto_2
     iget p5, p0, Lcom/ifengyu/intercom/ui/widget/view/a;->a:I
 
@@ -127,7 +116,6 @@
 
     add-int/lit8 p5, p4, 0x1
 
-    .line 8
     invoke-interface {p1, p4}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result p4
@@ -136,7 +124,6 @@
 
     move-result-object p4
 
-    .line 9
     invoke-static {p4}, Lcom/ifengyu/intercom/i/c0;->h(Ljava/lang/String;)Z
 
     move-result p6
@@ -147,7 +134,6 @@
 
     goto :goto_3
 
-    .line 10
     :cond_4
     invoke-static {p4}, Lcom/ifengyu/intercom/i/c0;->d(Ljava/lang/String;)Z
 
@@ -162,7 +148,6 @@
 
     goto :goto_2
 
-    .line 11
     :cond_5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/a;->b:Landroid/widget/EditText;
 
@@ -178,7 +163,6 @@
 
     return-object v0
 
-    .line 12
     :cond_6
     iget p5, p0, Lcom/ifengyu/intercom/ui/widget/view/a;->a:I
 
@@ -186,7 +170,6 @@
 
     add-int/lit8 p4, p4, -0x1
 
-    .line 13
     :cond_7
     invoke-interface {p1, p2, p4}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
 

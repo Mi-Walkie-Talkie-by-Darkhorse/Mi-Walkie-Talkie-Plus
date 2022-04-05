@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/bh;
 .super Lcom/umeng/analytics/pro/bd;
-.source "StructMetaData.java"
 
 
 # instance fields
@@ -29,10 +28,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/bd;-><init>(B)V
 
-    .line 2
     iput-object p2, p0, Lcom/umeng/analytics/pro/bh;->a:Ljava/lang/Class;
 
     return-void

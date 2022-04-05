@@ -1,6 +1,5 @@
 .class public final Lokio/HashingSink;
 .super Lokio/ForwardingSink;
-.source "HashingSink.java"
 
 
 # instance fields
@@ -19,10 +18,8 @@
 .method private constructor <init>(Lokio/Sink;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lokio/ForwardingSink;-><init>(Lokio/Sink;)V
 
-    .line 2
     :try_start_0
     invoke-static {p2}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
@@ -32,14 +29,12 @@
 
     const/4 p1, 0x0
 
-    .line 3
     iput-object p1, p0, Lokio/HashingSink;->mac:Ljavax/crypto/Mac;
     :try_end_0
     .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
 
-    .line 4
     :catch_0
     new-instance p1, Ljava/lang/AssertionError;
 
@@ -51,10 +46,8 @@
 .method private constructor <init>(Lokio/Sink;Lokio/ByteString;Ljava/lang/String;)V
     .locals 1
 
-    .line 5
     invoke-direct {p0, p1}, Lokio/ForwardingSink;-><init>(Lokio/Sink;)V
 
-    .line 6
     :try_start_0
     invoke-static {p3}, Ljavax/crypto/Mac;->getInstance(Ljava/lang/String;)Ljavax/crypto/Mac;
 
@@ -62,7 +55,6 @@
 
     iput-object p1, p0, Lokio/HashingSink;->mac:Ljavax/crypto/Mac;
 
-    .line 7
     new-instance v0, Ljavax/crypto/spec/SecretKeySpec;
 
     invoke-virtual {p2}, Lokio/ByteString;->toByteArray()[B
@@ -75,7 +67,6 @@
 
     const/4 p1, 0x0
 
-    .line 8
     iput-object p1, p0, Lokio/HashingSink;->messageDigest:Ljava/security/MessageDigest;
     :try_end_0
     .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_1
@@ -86,14 +77,12 @@
     :catch_0
     move-exception p1
 
-    .line 9
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/Throwable;)V
 
     throw p2
 
-    .line 10
     :catch_1
     new-instance p1, Ljava/lang/AssertionError;
 
@@ -105,7 +94,6 @@
 .method public static hmacSha1(Lokio/Sink;Lokio/ByteString;)Lokio/HashingSink;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSink;
 
     const-string v1, "HmacSHA1"
@@ -118,7 +106,6 @@
 .method public static hmacSha256(Lokio/Sink;Lokio/ByteString;)Lokio/HashingSink;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSink;
 
     const-string v1, "HmacSHA256"
@@ -131,7 +118,6 @@
 .method public static hmacSha512(Lokio/Sink;Lokio/ByteString;)Lokio/HashingSink;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSink;
 
     const-string v1, "HmacSHA512"
@@ -144,7 +130,6 @@
 .method public static md5(Lokio/Sink;)Lokio/HashingSink;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSink;
 
     const-string v1, "MD5"
@@ -157,7 +142,6 @@
 .method public static sha1(Lokio/Sink;)Lokio/HashingSink;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSink;
 
     const-string v1, "SHA-1"
@@ -170,7 +154,6 @@
 .method public static sha256(Lokio/Sink;)Lokio/HashingSink;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSink;
 
     const-string v1, "SHA-256"
@@ -183,7 +166,6 @@
 .method public static sha512(Lokio/Sink;)Lokio/HashingSink;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/HashingSink;
 
     const-string v1, "SHA-512"
@@ -198,7 +180,6 @@
 .method public final hash()Lokio/ByteString;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/HashingSink;->messageDigest:Ljava/security/MessageDigest;
 
     if-eqz v0, :cond_0
@@ -216,7 +197,6 @@
 
     move-result-object v0
 
-    .line 2
     :goto_0
     invoke-static {v0}, Lokio/ByteString;->of([B)Lokio/ByteString;
 
@@ -233,7 +213,6 @@
         }
     .end annotation
 
-    .line 1
     iget-wide v0, p1, Lokio/Buffer;->size:J
 
     const-wide/16 v2, 0x0
@@ -242,7 +221,6 @@
 
     invoke-static/range {v0 .. v5}, Lokio/Util;->checkOffsetAndCount(JJJ)V
 
-    .line 2
     iget-object v0, p1, Lokio/Buffer;->head:Lokio/Segment;
 
     const-wide/16 v1, 0x0
@@ -254,7 +232,6 @@
 
     sub-long v3, p2, v1
 
-    .line 3
     iget v5, v0, Lokio/Segment;->limit:I
 
     iget v6, v0, Lokio/Segment;->pos:I
@@ -269,12 +246,10 @@
 
     long-to-int v4, v3
 
-    .line 4
     iget-object v3, p0, Lokio/HashingSink;->messageDigest:Ljava/security/MessageDigest;
 
     if-eqz v3, :cond_0
 
-    .line 5
     iget-object v5, v0, Lokio/Segment;->data:[B
 
     iget v6, v0, Lokio/Segment;->pos:I
@@ -283,7 +258,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_0
     iget-object v3, p0, Lokio/HashingSink;->mac:Ljavax/crypto/Mac;
 
@@ -298,12 +272,10 @@
 
     add-long/2addr v1, v3
 
-    .line 7
     iget-object v0, v0, Lokio/Segment;->next:Lokio/Segment;
 
     goto :goto_0
 
-    .line 8
     :cond_1
     invoke-super {p0, p1, p2, p3}, Lokio/ForwardingSink;->write(Lokio/Buffer;J)V
 

@@ -1,6 +1,5 @@
 .class final Lokio/Okio$2;
 .super Ljava/lang/Object;
-.source "Okio.java"
 
 # interfaces
 .implements Lokio/Source;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lokio/Timeout;Ljava/io/InputStream;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokio/Okio$2;->val$timeout:Lokio/Timeout;
 
     iput-object p2, p0, Lokio/Okio$2;->val$in:Ljava/io/InputStream;
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/Okio$2;->val$in:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
@@ -73,7 +70,6 @@
 
     return-wide v0
 
-    .line 1
     :cond_0
     :try_start_0
     iget-object v0, p0, Lokio/Okio$2;->val$timeout:Lokio/Timeout;
@@ -82,12 +78,10 @@
 
     const/4 v0, 0x1
 
-    .line 2
     invoke-virtual {p1, v0}, Lokio/Buffer;->writableSegment(I)Lokio/Segment;
 
     move-result-object v0
 
-    .line 3
     iget v1, v0, Lokio/Segment;->limit:I
 
     rsub-int v1, v1, 0x2000
@@ -100,7 +94,6 @@
 
     long-to-int p3, p2
 
-    .line 4
     iget-object p2, p0, Lokio/Okio$2;->val$in:Ljava/io/InputStream;
 
     iget-object v1, v0, Lokio/Segment;->data:[B
@@ -119,7 +112,6 @@
 
     return-wide p1
 
-    .line 5
     :cond_1
     iget p3, v0, Lokio/Segment;->limit:I
 
@@ -127,7 +119,6 @@
 
     iput p3, v0, Lokio/Segment;->limit:I
 
-    .line 6
     iget-wide v0, p1, Lokio/Buffer;->size:J
 
     int-to-long p2, p2
@@ -143,7 +134,6 @@
     :catch_0
     move-exception p1
 
-    .line 7
     invoke-static {p1}, Lokio/Okio;->isAndroidGetsocknameError(Ljava/lang/AssertionError;)Z
 
     move-result p2
@@ -156,11 +146,9 @@
 
     throw p2
 
-    .line 8
     :cond_2
     throw p1
 
-    .line 9
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -186,7 +174,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/Okio$2;->val$timeout:Lokio/Timeout;
 
     return-object v0
@@ -195,7 +182,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

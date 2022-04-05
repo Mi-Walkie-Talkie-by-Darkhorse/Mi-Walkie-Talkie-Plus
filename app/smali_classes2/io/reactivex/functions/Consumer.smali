@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/functions/Consumer;
 .super Ljava/lang/Object;
-.source "Consumer.java"
 
 
 # annotations

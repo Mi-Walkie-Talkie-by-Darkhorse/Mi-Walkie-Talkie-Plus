@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/a$h;
 .super Ljava/lang/Object;
-.source "DolphinChannelBaseFragment.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$CHOPTION;->values()[Lcom/ifengyu/intercom/protos/MitalkProtos$CHOPTION;
 
     move-result-object v0
@@ -112,7 +110,6 @@
     :try_end_4
     .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 2
     :catch_4
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;->values()[Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 

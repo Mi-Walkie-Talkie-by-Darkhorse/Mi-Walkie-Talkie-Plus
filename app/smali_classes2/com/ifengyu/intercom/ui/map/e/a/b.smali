@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/map/e/a/b;
 .super Ljava/lang/Object;
-.source "ClusterClickListener.java"
 
 
 # virtual methods

@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/DownloadContext$Builder;
 .super Ljava/lang/Object;
-.source "DownloadContext.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
     invoke-direct {v0}, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;-><init>()V
@@ -47,7 +45,6 @@
 .method public constructor <init>(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)V
     .locals 1
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -69,13 +66,10 @@
         }
     .end annotation
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
-    .line 5
     iput-object p2, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->boundTaskList:Ljava/util/ArrayList;
 
     return-void
@@ -90,7 +84,6 @@
         .end annotation
     .end param
 
-    .line 4
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
     invoke-static {v0}, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->access$200(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/util/Map;
@@ -107,7 +100,6 @@
 
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setHeaderMapFields(Ljava/util/Map;)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
@@ -129,7 +121,6 @@
 
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setReadBufferSize(I)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
@@ -151,7 +142,6 @@
 
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setFlushBufferSize(I)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
-    .line 7
     :cond_2
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
@@ -173,7 +163,6 @@
 
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setSyncBufferSize(I)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
-    .line 8
     :cond_3
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
@@ -195,7 +184,6 @@
 
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setWifiRequired(Z)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
-    .line 9
     :cond_4
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
@@ -205,7 +193,6 @@
 
     if-eqz v0, :cond_5
 
-    .line 10
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
     invoke-static {v0}, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->access$700(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Integer;
@@ -218,7 +205,6 @@
 
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setSyncBufferIntervalMillis(I)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
-    .line 11
     :cond_5
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
@@ -228,7 +214,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 12
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
     invoke-static {v0}, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->access$800(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Boolean;
@@ -241,7 +226,6 @@
 
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setAutoCallbackToUIThread(Z)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
-    .line 13
     :cond_6
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
@@ -251,10 +235,8 @@
 
     if-eqz v0, :cond_7
 
-    .line 14
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
-    .line 15
     invoke-static {v0}, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->access$900(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Integer;
 
     move-result-object v0
@@ -265,7 +247,6 @@
 
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setMinIntervalMillisCallbackProcess(I)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
-    .line 16
     :cond_7
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
@@ -275,7 +256,6 @@
 
     if-eqz v0, :cond_8
 
-    .line 17
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
     invoke-static {v0}, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->access$1000(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Boolean;
@@ -288,13 +268,11 @@
 
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setPassIfAlreadyCompleted(Z)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
-    .line 18
     :cond_8
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->build()Lcom/liulishuo/okdownload/DownloadTask;
 
     move-result-object p1
 
-    .line 19
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
     invoke-static {v0}, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->access$1100(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Object;
@@ -311,7 +289,6 @@
 
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask;->setTag(Ljava/lang/Object;)V
 
-    .line 20
     :cond_9
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->boundTaskList:Ljava/util/ArrayList;
 
@@ -327,7 +304,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
     invoke-static {v0}, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->access$100(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Landroid/net/Uri;
@@ -336,7 +312,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
@@ -363,7 +338,6 @@
 
     return-object p1
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -381,7 +355,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->boundTaskList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
@@ -390,14 +363,12 @@
 
     if-ltz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->boundTaskList:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0, p1}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->boundTaskList:Ljava/util/ArrayList;
 
@@ -410,7 +381,6 @@
 .method public build()Lcom/liulishuo/okdownload/DownloadContext;
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->boundTaskList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -419,7 +389,6 @@
 
     new-array v0, v0, [Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 2
     new-instance v1, Lcom/liulishuo/okdownload/DownloadContext;
 
     iget-object v2, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->boundTaskList:Ljava/util/ArrayList;
@@ -442,7 +411,6 @@
 .method public setListener(Lcom/liulishuo/okdownload/DownloadContextListener;)Lcom/liulishuo/okdownload/DownloadContext$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->listener:Lcom/liulishuo/okdownload/DownloadContextListener;
 
     return-object p0
@@ -451,7 +419,6 @@
 .method public unbind(I)V
     .locals 3
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->boundTaskList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
@@ -460,7 +427,6 @@
 
     check-cast v0, Ljava/util/List;
 
-    .line 3
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -479,7 +445,6 @@
 
     check-cast v1, Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 4
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/DownloadTask;->getId()I
 
     move-result v2
@@ -503,7 +468,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$Builder;->boundTaskList:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z

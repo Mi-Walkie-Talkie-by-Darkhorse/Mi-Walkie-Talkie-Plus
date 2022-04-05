@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/bottomsheet/BottomSheetBehavior$5;
 .super Ljava/lang/Object;
-.source "BottomSheetBehavior.java"
 
 # interfaces
 .implements Landroidx/core/view/accessibility/e;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$5;->this$0:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     iput p2, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$5;->val$state:I
@@ -50,7 +48,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$5;->this$0:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     iget p2, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$5;->val$state:I

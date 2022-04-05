@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/timepicker/TimePickerTextInputPresenter$3;
 .super Ljava/lang/Object;
-.source "TimePickerTextInputPresenter.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/timepicker/TimePickerTextInputPresenter$3;->this$0:Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerTextInputPresenter$3;->this$0:Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;
 
     sget v1, Lcom/google/android/material/R$id;->selection_type:I

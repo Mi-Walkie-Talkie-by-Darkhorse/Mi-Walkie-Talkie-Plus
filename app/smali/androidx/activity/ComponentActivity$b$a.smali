@@ -1,6 +1,5 @@
 .class Landroidx/activity/ComponentActivity$b$a;
 .super Ljava/lang/Object;
-.source "ComponentActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Landroidx/activity/ComponentActivity$b;ILandroidx/activity/result/d/a$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/activity/ComponentActivity$b$a;->c:Landroidx/activity/ComponentActivity$b;
 
     iput p2, p0, Landroidx/activity/ComponentActivity$b$a;->a:I
@@ -46,7 +44,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/activity/ComponentActivity$b$a;->c:Landroidx/activity/ComponentActivity$b;
 
     iget v1, p0, Landroidx/activity/ComponentActivity$b$a;->a:I

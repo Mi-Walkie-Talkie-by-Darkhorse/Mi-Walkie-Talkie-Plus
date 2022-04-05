@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/DownloadTask$TaskHideWrapper;
 .super Ljava/lang/Object;
-.source "DownloadTask.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +25,6 @@
 .method public static getLastCallbackProcessTs(Lcom/liulishuo/okdownload/DownloadTask;)J
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/DownloadTask;->getLastCallbackProcessTs()J
 
     move-result-wide v0
@@ -46,7 +43,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/DownloadTask;->setBreakpointInfo(Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)V
 
     return-void
@@ -55,7 +51,6 @@
 .method public static setLastCallbackProcessTs(Lcom/liulishuo/okdownload/DownloadTask;J)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/liulishuo/okdownload/DownloadTask;->setLastCallbackProcessTs(J)V
 
     return-void

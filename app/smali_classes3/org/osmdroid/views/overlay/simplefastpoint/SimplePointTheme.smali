@@ -1,6 +1,5 @@
 .class public final Lorg/osmdroid/views/overlay/simplefastpoint/SimplePointTheme;
 .super Ljava/lang/Object;
-.source "SimplePointTheme.java"
 
 # interfaces
 .implements Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
@@ -32,13 +31,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimplePointTheme;->mPoints:Ljava/util/List;
 
-    .line 3
     iput-boolean p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimplePointTheme;->mLabelled:Z
 
     return-void
@@ -49,7 +45,6 @@
 .method public get(I)Lorg/osmdroid/api/IGeoPoint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimplePointTheme;->mPoints:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -64,7 +59,6 @@
 .method public isLabelled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimplePointTheme;->mLabelled:Z
 
     return v0
@@ -81,7 +75,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimplePointTheme;->mPoints:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -94,7 +87,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimplePointTheme;->mPoints:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I

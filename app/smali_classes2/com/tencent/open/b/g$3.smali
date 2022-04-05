@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/b/g$3;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -39,7 +38,6 @@
 .method constructor <init>(Lcom/tencent/open/b/g;JLjava/lang/String;Ljava/lang/String;IJJZ)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/b/g$3;->h:Lcom/tencent/open/b/g;
 
     iput-wide p2, p0, Lcom/tencent/open/b/g$3;->a:J
@@ -68,7 +66,6 @@
 
     const-string v0, ""
 
-    .line 1
     :try_start_0
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -78,12 +75,10 @@
 
     sub-long/2addr v1, v3
 
-    .line 2
     new-instance v3, Landroid/os/Bundle;
 
     invoke-direct {v3}, Landroid/os/Bundle;-><init>()V
 
-    .line 3
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v4
@@ -94,38 +89,32 @@
 
     const-string v5, "apn"
 
-    .line 4
     invoke-virtual {v3, v5, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v5, "appid"
 
     const-string v6, "1000067"
 
-    .line 5
     invoke-virtual {v3, v5, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v5, "commandid"
 
-    .line 6
     iget-object v6, p0, Lcom/tencent/open/b/g$3;->b:Ljava/lang/String;
 
     invoke-virtual {v3, v5, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v5, "detail"
 
-    .line 7
     iget-object v6, p0, Lcom/tencent/open/b/g$3;->c:Ljava/lang/String;
 
     invoke-virtual {v3, v5, v6}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v6, "network="
 
-    .line 9
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -136,7 +125,6 @@
 
     const-string v6, "sdcard="
 
-    .line 10
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
@@ -167,7 +155,6 @@
 
     const-string v4, "wifi="
 
-    .line 11
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
@@ -180,17 +167,14 @@
 
     invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 12
     invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v4
 
     const-string v5, "deviceInfo"
 
-    .line 13
     invoke-virtual {v3, v5, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 14
     iget-object v4, p0, Lcom/tencent/open/b/g$3;->h:Lcom/tencent/open/b/g;
 
     iget v5, p0, Lcom/tencent/open/b/g$3;->d:I
@@ -201,7 +185,6 @@
 
     const/16 v5, 0x64
 
-    .line 15
     div-int v4, v5, v4
 
     if-gtz v4, :cond_1
@@ -221,7 +204,6 @@
     :goto_1
     const-string v4, "frequency"
 
-    .line 16
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -238,7 +220,6 @@
 
     const-string v4, "reqSize"
 
-    .line 17
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -257,7 +238,6 @@
 
     const-string v4, "resultCode"
 
-    .line 18
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -276,7 +256,6 @@
 
     const-string v4, "rspSize"
 
-    .line 19
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -295,7 +274,6 @@
 
     const-string v4, "timeCost"
 
-    .line 20
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -314,22 +292,18 @@
 
     const-string v1, "1000"
 
-    .line 21
     invoke-virtual {v3, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 22
     new-instance v0, Lcom/tencent/open/b/b;
 
     invoke-direct {v0, v3}, Lcom/tencent/open/b/b;-><init>(Landroid/os/Bundle;)V
 
-    .line 23
     iget-object v1, p0, Lcom/tencent/open/b/g$3;->h:Lcom/tencent/open/b/g;
 
     iget-object v1, v1, Lcom/tencent/open/b/g;->c:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 24
     iget-object v0, p0, Lcom/tencent/open/b/g$3;->h:Lcom/tencent/open/b/g;
 
     iget-object v0, v0, Lcom/tencent/open/b/g;->c:Ljava/util/List;
@@ -338,7 +312,6 @@
 
     move-result v0
 
-    .line 25
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v1
@@ -359,7 +332,6 @@
 
     const/16 v1, 0x2710
 
-    .line 26
     :cond_3
     iget-object v2, p0, Lcom/tencent/open/b/g$3;->h:Lcom/tencent/open/b/g;
 
@@ -379,7 +351,6 @@
 
     goto :goto_2
 
-    .line 27
     :cond_4
     iget-object v0, p0, Lcom/tencent/open/b/g$3;->h:Lcom/tencent/open/b/g;
 
@@ -391,15 +362,12 @@
 
     if-nez v0, :cond_6
 
-    .line 28
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 29
     iput v2, v0, Landroid/os/Message;->what:I
 
-    .line 30
     iget-object v2, p0, Lcom/tencent/open/b/g$3;->h:Lcom/tencent/open/b/g;
 
     iget-object v2, v2, Lcom/tencent/open/b/g;->f:Landroid/os/Handler;
@@ -410,14 +378,12 @@
 
     goto :goto_3
 
-    .line 31
     :cond_5
     :goto_2
     iget-object v0, p0, Lcom/tencent/open/b/g$3;->h:Lcom/tencent/open/b/g;
 
     invoke-virtual {v0}, Lcom/tencent/open/b/g;->b()V
 
-    .line 32
     iget-object v0, p0, Lcom/tencent/open/b/g$3;->h:Lcom/tencent/open/b/g;
 
     iget-object v0, v0, Lcom/tencent/open/b/g;->f:Landroid/os/Handler;
@@ -435,7 +401,6 @@
 
     const-string v2, "--> reportCGI, exception in sub thread."
 
-    .line 33
     invoke-static {v1, v2, v0}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_6

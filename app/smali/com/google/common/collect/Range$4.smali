@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/common/collect/Range$4;
 .super Ljava/lang/Object;
-.source "Range.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/BoundType;->values()[Lcom/google/common/collect/BoundType;
 
     move-result-object v0

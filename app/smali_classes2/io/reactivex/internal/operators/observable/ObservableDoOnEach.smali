@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableDoOnEach;
 .super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
-.source "ObservableDoOnEach.java"
 
 
 # annotations
@@ -67,19 +66,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableDoOnEach;->onNext:Lio/reactivex/functions/Consumer;
 
-    .line 3
     iput-object p3, p0, Lio/reactivex/internal/operators/observable/ObservableDoOnEach;->onError:Lio/reactivex/functions/Consumer;
 
-    .line 4
     iput-object p4, p0, Lio/reactivex/internal/operators/observable/ObservableDoOnEach;->onComplete:Lio/reactivex/functions/Action;
 
-    .line 5
     iput-object p5, p0, Lio/reactivex/internal/operators/observable/ObservableDoOnEach;->onAfterTerminate:Lio/reactivex/functions/Action;
 
     return-void
@@ -97,7 +91,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     new-instance v7, Lio/reactivex/internal/operators/observable/ObservableDoOnEach$DoOnEachObserver;

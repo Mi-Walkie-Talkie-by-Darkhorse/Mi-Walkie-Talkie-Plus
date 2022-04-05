@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/internal/fuseable/FuseToObservable;
 .super Ljava/lang/Object;
-.source "FuseToObservable.java"
 
 
 # annotations

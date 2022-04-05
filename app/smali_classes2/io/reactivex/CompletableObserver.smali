@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/CompletableObserver;
 .super Ljava/lang/Object;
-.source "CompletableObserver.java"
 
 
 # virtual methods

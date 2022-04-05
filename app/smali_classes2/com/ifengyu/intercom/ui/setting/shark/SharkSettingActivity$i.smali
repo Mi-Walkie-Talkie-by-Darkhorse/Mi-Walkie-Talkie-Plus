@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$i;
 .super Ljava/lang/Object;
-.source "SharkSettingActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$i;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$i;->a:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -42,7 +40,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$i;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$i;->a:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;

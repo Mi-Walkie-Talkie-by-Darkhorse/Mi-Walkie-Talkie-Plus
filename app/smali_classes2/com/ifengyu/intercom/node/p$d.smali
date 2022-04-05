@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/node/p$d;
 .super Landroid/os/Handler;
-.source "WalkTalkTransportManager.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/node/p;Lcom/ifengyu/intercom/node/p;Landroid/os/Looper;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p3}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -29,7 +27,6 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
 
-    .line 1
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p1, Lcom/ifengyu/intercom/node/transport/j;
@@ -38,14 +35,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/transport/j;->b()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -70,10 +65,8 @@
 
     const-string v0, "stuck while writing"
 
-    .line 4
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/node/transport/j;->a(Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/transport/j;->a()V
 
     goto :goto_0
@@ -81,7 +74,6 @@
     :cond_0
     const-string p1, "Write is not stuck. No action needed."
 
-    .line 6
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_0

@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/f0$a;
 .super Ljava/lang/Object;
-.source "ToolbarWidgetWrapper.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,12 +26,10 @@
 .method constructor <init>(Landroidx/appcompat/widget/f0;)V
     .locals 7
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/f0$a;->b:Landroidx/appcompat/widget/f0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance p1, Landroidx/appcompat/view/menu/a;
 
     iget-object v0, p0, Landroidx/appcompat/widget/f0$a;->b:Landroidx/appcompat/widget/f0;
@@ -69,7 +66,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/f0$a;->b:Landroidx/appcompat/widget/f0;
 
     iget-object v0, p1, Landroidx/appcompat/widget/f0;->l:Landroid/view/Window$Callback;
@@ -82,7 +78,6 @@
 
     const/4 p1, 0x0
 
-    .line 2
     iget-object v1, p0, Landroidx/appcompat/widget/f0$a;->a:Landroidx/appcompat/view/menu/a;
 
     invoke-interface {v0, p1, v1}, Landroid/view/Window$Callback;->onMenuItemSelected(ILandroid/view/MenuItem;)Z

@@ -1,6 +1,5 @@
 .class Lpub/devrel/easypermissions/helper/LowApiPermissionsHelper;
 .super Lpub/devrel/easypermissions/helper/PermissionHelper;
-.source "LowApiPermissionsHelper.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lpub/devrel/easypermissions/helper/PermissionHelper;-><init>(Ljava/lang/Object;)V
 
     return-void
@@ -56,7 +54,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance p1, Ljava/lang/IllegalStateException;
 
     const-string p2, "Should never be requesting permissions on API < 23!"

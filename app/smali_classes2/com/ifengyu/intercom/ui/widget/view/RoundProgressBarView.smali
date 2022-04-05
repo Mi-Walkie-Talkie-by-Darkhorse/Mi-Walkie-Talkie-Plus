@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;
 .super Landroid/view/View;
-.source "RoundProgressBarView.java"
 
 
 # instance fields
@@ -33,7 +32,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -44,7 +42,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -53,17 +50,14 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 4
     new-instance p3, Landroid/graphics/Paint;
 
     invoke-direct {p3}, Landroid/graphics/Paint;-><init>()V
 
     iput-object p3, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
-    .line 5
     sget-object p3, Lcom/ifengyu/intercom/R$styleable;->RoundProgressBar:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -74,7 +68,6 @@
 
     const/high16 p3, -0x10000
 
-    .line 6
     invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result p3
@@ -85,7 +78,6 @@
 
     const/4 v0, 0x2
 
-    .line 7
     invoke-virtual {p1, v0, p3}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result v0
@@ -94,7 +86,6 @@
 
     const/4 v0, 0x4
 
-    .line 8
     invoke-virtual {p1, v0, p3}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result p3
@@ -105,7 +96,6 @@
 
     const/high16 v0, 0x41700000    # 15.0f
 
-    .line 9
     invoke-virtual {p1, p3, v0}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
     move-result p3
@@ -116,7 +106,6 @@
 
     const/high16 v0, 0x40a00000    # 5.0f
 
-    .line 10
     invoke-virtual {p1, p3, v0}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
     move-result p3
@@ -127,7 +116,6 @@
 
     const/16 v0, 0x64
 
-    .line 11
     invoke-virtual {p1, p3, v0}, Landroid/content/res/TypedArray;->getInteger(II)I
 
     move-result p3
@@ -136,14 +124,12 @@
 
     const/4 p3, 0x5
 
-    .line 12
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result p2
 
     iput-boolean p2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->i:Z
 
-    .line 13
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -154,7 +140,6 @@
 .method public getCricleColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->b:I
 
     return v0
@@ -163,7 +148,6 @@
 .method public getCricleProgressColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->c:I
 
     return v0
@@ -174,7 +158,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->g:I
     :try_end_0
@@ -197,7 +180,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->h:I
     :try_end_0
@@ -218,7 +200,6 @@
 .method public getRoundWidth()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->f:F
 
     return v0
@@ -227,7 +208,6 @@
 .method public getTextColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->d:I
 
     return v0
@@ -236,7 +216,6 @@
 .method public getTextSize()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->e:F
 
     return v0
@@ -245,10 +224,8 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 12
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -257,7 +234,6 @@
 
     int-to-float v1, v0
 
-    .line 3
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->f:F
 
     const/high16 v3, 0x40000000    # 2.0f
@@ -268,28 +244,24 @@
 
     float-to-int v2, v2
 
-    .line 4
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     iget v5, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->b:I
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 5
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     sget-object v5, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 6
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     iget v5, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->f:F
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 7
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     const/4 v5, 0x1
@@ -298,31 +270,26 @@
 
     int-to-float v4, v2
 
-    .line 8
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v1, v1, v4, v5}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 9
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     sget-object v5, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 10
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     iget v5, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->f:F
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 11
     iget-boolean v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->i:Z
 
     if-eqz v4, :cond_0
 
-    .line 12
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     iget v5, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->c:I
@@ -331,7 +298,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_0
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
@@ -351,7 +317,6 @@
 
     invoke-virtual {v4, v5}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 14
     :goto_0
     new-instance v7, Landroid/graphics/RectF;
 
@@ -367,7 +332,6 @@
 
     const/high16 v8, -0x3d4c0000    # -90.0f
 
-    .line 15
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->h:I
 
     mul-int/lit16 v2, v2, 0x168
@@ -386,42 +350,36 @@
 
     invoke-virtual/range {v6 .. v11}, Landroid/graphics/Canvas;->drawArc(Landroid/graphics/RectF;FFZLandroid/graphics/Paint;)V
 
-    .line 16
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     sget-object v4, Landroid/graphics/Paint$Style;->FILL_AND_STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v2, v4}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 17
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     const/4 v4, 0x0
 
     invoke-virtual {v2, v4}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 18
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     iget v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->d:I
 
     invoke-virtual {v2, v4}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 19
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     iget v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->e:F
 
     invoke-virtual {v2, v4}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 20
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     sget-object v4, Landroid/graphics/Typeface;->DEFAULT_BOLD:Landroid/graphics/Typeface;
 
     invoke-virtual {v2, v4}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
-    .line 21
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->h:I
 
     int-to-float v2, v2
@@ -438,7 +396,6 @@
 
     float-to-int v2, v2
 
-    .line 22
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->a:Landroid/graphics/Paint;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -459,7 +416,6 @@
 
     move-result v4
 
-    .line 23
     iget-boolean v5, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->i:Z
 
     if-eqz v5, :cond_1
@@ -468,7 +424,6 @@
 
     if-nez v5, :cond_1
 
-    .line 24
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -499,7 +454,6 @@
 
     goto :goto_1
 
-    .line 25
     :cond_1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -515,7 +469,6 @@
 
     move-result-object v1
 
-    .line 26
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->getWidth()I
@@ -577,7 +530,6 @@
 .method public setCricleColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->b:I
 
     return-void
@@ -586,7 +538,6 @@
 .method public setCricleProgressColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->c:I
 
     return-void
@@ -599,13 +550,11 @@
 
     if-ltz p1, :cond_0
 
-    .line 1
     :try_start_0
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->g:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     monitor-exit p0
 
     return-void
@@ -615,7 +564,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     :try_start_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
@@ -639,7 +587,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->k:I
     :try_end_0
@@ -647,7 +594,6 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 2
     monitor-exit p0
 
     return-void
@@ -655,39 +601,31 @@
     :cond_0
     if-ltz p1, :cond_3
 
-    .line 3
     :try_start_1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->g:I
 
     if-le p1, v0, :cond_1
 
-    .line 4
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->g:I
 
-    .line 5
     :cond_1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->g:I
 
     if-gt p1, v0, :cond_2
 
-    .line 6
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->h:I
 
-    .line 7
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
-    .line 8
     :cond_2
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->k:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 9
     monitor-exit p0
 
     return-void
 
-    .line 10
     :cond_3
     :try_start_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
@@ -711,7 +649,6 @@
 .method public setRoundWidth(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->f:F
 
     return-void
@@ -720,7 +657,6 @@
 .method public setTextColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->d:I
 
     return-void
@@ -729,7 +665,6 @@
 .method public setTextIsDisplayable(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->i:Z
 
     return-void
@@ -738,7 +673,6 @@
 .method public setTextSize(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->e:F
 
     return-void

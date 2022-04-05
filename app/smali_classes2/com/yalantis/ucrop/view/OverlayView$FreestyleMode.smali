@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/yalantis/ucrop/view/OverlayView$FreestyleMode;
 .super Ljava/lang/Object;
-.source "OverlayView.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

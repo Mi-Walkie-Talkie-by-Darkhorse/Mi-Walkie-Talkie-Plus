@@ -1,6 +1,5 @@
 .class public interface abstract Lc/a/c;
 .super Ljava/lang/Object;
-.source "Subscriber.java"
 
 
 # annotations

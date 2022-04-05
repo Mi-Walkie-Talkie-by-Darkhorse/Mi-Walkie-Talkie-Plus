@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/core/c/e$c;
 .super Ljava/lang/Object;
-.source "TextDirectionHeuristicsCompat.java"
 
 
 # annotations

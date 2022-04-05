@@ -1,6 +1,5 @@
 .class public abstract Lcom/liulishuo/okdownload/core/listener/DownloadListener4WithSpeed;
 .super Lcom/liulishuo/okdownload/core/listener/DownloadListener4;
-.source "DownloadListener4WithSpeed.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;
@@ -18,7 +17,6 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 4
     new-instance v0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;
 
     invoke-direct {v0}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;-><init>()V
@@ -31,7 +29,6 @@
 .method private constructor <init>(Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;)V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
     new-instance v1, Lcom/liulishuo/okdownload/core/listener/DownloadListener4WithSpeed$Listener4WithSpeedModelCreator;
@@ -44,10 +41,8 @@
 
     invoke-direct {p0, v0}, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;-><init>(Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;)V
 
-    .line 2
     invoke-virtual {p1, p0}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend;->setCallback(Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;)V
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;->setAssistExtend(Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$AssistExtend;)V
 
     return-void

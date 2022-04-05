@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/MapConstraints$ConstrainedMap;
 .super Lcom/google/common/collect/ForwardingMap;
-.source "MapConstraints.java"
 
 
 # annotations
@@ -69,10 +68,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingMap;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -81,7 +78,6 @@
 
     iput-object p1, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMap;->delegate:Ljava/util/Map;
 
-    .line 3
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -98,7 +94,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MapConstraints$ConstrainedMap;->delegate()Ljava/util/Map;
 
     move-result-object v0
@@ -116,7 +111,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMap;->delegate:Ljava/util/Map;
 
     return-object v0
@@ -133,12 +127,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMap;->entrySet:Ljava/util/Set;
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMap;->delegate:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -165,12 +157,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMap;->constraint:Lcom/google/common/collect/MapConstraint;
 
     invoke-interface {v0, p1, p2}, Lcom/google/common/collect/MapConstraint;->checkKeyValue(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMap;->delegate:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -190,7 +180,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMap;->delegate:Ljava/util/Map;
 
     iget-object v1, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMap;->constraint:Lcom/google/common/collect/MapConstraint;

@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/h$1;
 .super Ljava/lang/Object;
-.source "H5LocationClient.java"
 
 # interfaces
 .implements Landroid/webkit/ValueCallback;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/h$1;->a:Lcom/amap/api/col/l3/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

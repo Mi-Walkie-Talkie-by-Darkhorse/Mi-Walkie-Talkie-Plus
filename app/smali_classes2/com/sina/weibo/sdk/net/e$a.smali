@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/net/e$a;
 .super Ljava/lang/Object;
-.source "SSLSocketFactoryEx.java"
 
 # interfaces
 .implements Ljavax/net/ssl/X509TrustManager;
@@ -33,22 +32,18 @@
 .method protected varargs constructor <init>([Ljava/security/KeyStore;)V
     .locals 7
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/sina/weibo/sdk/net/e$a;->a:Ljava/util/ArrayList;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 4
     :try_start_0
     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
 
@@ -60,13 +55,10 @@
 
     const/4 v2, 0x0
 
-    .line 5
     invoke-virtual {v1, v2}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
 
-    .line 6
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 7
     array-length v1, p1
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -78,7 +70,6 @@
     :goto_0
     if-lt v3, v1, :cond_4
 
-    .line 8
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v4
@@ -90,7 +81,6 @@
 
     if-nez p1, :cond_1
 
-    .line 9
     iget-object p1, p0, Lcom/sina/weibo/sdk/net/e$a;->a:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
@@ -101,7 +91,6 @@
 
     return-void
 
-    .line 10
     :cond_0
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -111,7 +100,6 @@
 
     throw p1
 
-    .line 11
     :cond_1
     invoke-interface {v4}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -119,7 +107,6 @@
 
     check-cast p1, Ljavax/net/ssl/TrustManagerFactory;
 
-    .line 12
     invoke-virtual {p1}, Ljavax/net/ssl/TrustManagerFactory;->getTrustManagers()[Ljavax/net/ssl/TrustManager;
 
     move-result-object v5
@@ -136,12 +123,10 @@
     :cond_2
     aget-object v0, v5, p1
 
-    .line 13
     instance-of v1, v0, Ljavax/net/ssl/X509TrustManager;
 
     if-eqz v1, :cond_3
 
-    .line 14
     iget-object v1, p0, Lcom/sina/weibo/sdk/net/e$a;->a:Ljava/util/ArrayList;
 
     check-cast v0, Ljavax/net/ssl/X509TrustManager;
@@ -153,12 +138,10 @@
 
     goto :goto_2
 
-    .line 15
     :cond_4
     :try_start_1
     aget-object v4, p1, v3
 
-    .line 16
     invoke-static {}, Ljavax/net/ssl/TrustManagerFactory;->getDefaultAlgorithm()Ljava/lang/String;
 
     move-result-object v5
@@ -167,10 +150,8 @@
 
     move-result-object v5
 
-    .line 17
     invoke-virtual {v5, v4}, Ljavax/net/ssl/TrustManagerFactory;->init(Ljava/security/KeyStore;)V
 
-    .line 18
     invoke-virtual {v0, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
@@ -182,7 +163,6 @@
     :catch_0
     move-exception p1
 
-    .line 19
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-direct {v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -200,7 +180,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/net/e$a;->a:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
@@ -211,7 +190,6 @@
 
     check-cast v0, Ljavax/net/ssl/X509TrustManager;
 
-    .line 2
     invoke-interface {v0, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkClientTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
 
     return-void
@@ -225,7 +203,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/net/e$a;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -245,7 +222,6 @@
 
     check-cast v1, Ljavax/net/ssl/X509TrustManager;
 
-    .line 2
     :try_start_0
     invoke-interface {v1, p1, p2}, Ljavax/net/ssl/X509TrustManager;->checkServerTrusted([Ljava/security/cert/X509Certificate;Ljava/lang/String;)V
     :try_end_0
@@ -258,7 +234,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/security/cert/CertificateException;
 
@@ -270,12 +245,10 @@
 .method public getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/sina/weibo/sdk/net/e$a;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -289,7 +262,6 @@
 
     if-nez v2, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v1
@@ -304,7 +276,6 @@
 
     return-object v0
 
-    .line 4
     :cond_0
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -312,7 +283,6 @@
 
     check-cast v2, Ljavax/net/ssl/X509TrustManager;
 
-    .line 5
     invoke-interface {v2}, Ljavax/net/ssl/X509TrustManager;->getAcceptedIssuers()[Ljava/security/cert/X509Certificate;
 
     move-result-object v2

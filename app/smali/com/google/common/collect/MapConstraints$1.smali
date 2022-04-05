@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/MapConstraints$1;
 .super Lcom/google/common/collect/ForwardingMapEntry;
-.source "MapConstraints.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Ljava/util/Map$Entry;Lcom/google/common/collect/MapConstraint;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/MapConstraints$1;->val$entry:Ljava/util/Map$Entry;
 
     iput-object p2, p0, Lcom/google/common/collect/MapConstraints$1;->val$constraint:Lcom/google/common/collect/MapConstraint;
@@ -46,7 +44,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MapConstraints$1;->delegate()Ljava/util/Map$Entry;
 
     move-result-object v0
@@ -64,7 +61,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$1;->val$entry:Ljava/util/Map$Entry;
 
     return-object v0
@@ -78,7 +74,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$1;->val$constraint:Lcom/google/common/collect/MapConstraint;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingMapEntry;->getKey()Ljava/lang/Object;
@@ -87,7 +82,6 @@
 
     invoke-interface {v0, v1, p1}, Lcom/google/common/collect/MapConstraint;->checkKeyValue(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$1;->val$entry:Ljava/util/Map$Entry;
 
     invoke-interface {v0, p1}, Ljava/util/Map$Entry;->setValue(Ljava/lang/Object;)Ljava/lang/Object;

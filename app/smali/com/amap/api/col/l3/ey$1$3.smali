@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ey$1$3;
 .super Ljava/lang/Object;
-.source "MapOverlayViewGroup.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/ey$1;F)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ey$1$3;->b:Lcom/amap/api/col/l3/ey$1;
 
     iput p2, p0, Lcom/amap/api/col/l3/ey$1$3;->a:F
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ey$1$3;->b:Lcom/amap/api/col/l3/ey$1;
 
     iget-object v0, v0, Lcom/amap/api/col/l3/ey$1;->a:Lcom/amap/api/col/l3/ey;

@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/cardview/widget/e;
 .super Ljava/lang/Object;
-.source "CardViewImpl.java"
 
 
 # virtual methods

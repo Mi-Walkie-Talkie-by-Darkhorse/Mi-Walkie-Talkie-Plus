@@ -1,6 +1,5 @@
 .class Landroidx/media/MediaBrowserServiceCompat$l;
 .super Ljava/lang/Object;
-.source "MediaBrowserServiceCompat.java"
 
 # interfaces
 .implements Landroidx/media/MediaBrowserServiceCompat$g;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/media/MediaBrowserServiceCompat;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$l;->b:Landroidx/media/MediaBrowserServiceCompat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +38,6 @@
 .method public onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
@@ -53,7 +50,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$l;->a:Landroid/os/Messenger;
 
     invoke-virtual {p1}, Landroid/os/Messenger;->getBinder()Landroid/os/IBinder;
@@ -71,7 +67,6 @@
 .method public onCreate()V
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/os/Messenger;
 
     iget-object v1, p0, Landroidx/media/MediaBrowserServiceCompat$l;->b:Landroidx/media/MediaBrowserServiceCompat;

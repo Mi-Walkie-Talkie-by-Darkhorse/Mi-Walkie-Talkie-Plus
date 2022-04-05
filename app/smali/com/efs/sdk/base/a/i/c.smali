@@ -1,6 +1,5 @@
 .class public final Lcom/efs/sdk/base/a/i/c;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # instance fields
@@ -15,20 +14,16 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "https://errlog.umeng.com/api/crashsdk/logcollect"
 
-    .line 2
     iput-object v0, p0, Lcom/efs/sdk/base/a/i/c;->a:Ljava/lang/String;
 
     const-string v0, "28ef1713347d"
 
-    .line 3
     iput-object v0, p0, Lcom/efs/sdk/base/a/i/c;->b:Ljava/lang/String;
 
-    .line 4
     invoke-static {}, Lcom/efs/sdk/base/a/d/a;->a()Lcom/efs/sdk/base/a/c/a;
 
     move-result-object v0

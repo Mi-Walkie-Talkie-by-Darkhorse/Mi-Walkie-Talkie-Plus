@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/cache/LoadingCache;
 .super Ljava/lang/Object;
-.source "LoadingCache.java"
 
 # interfaces
 .implements Lcom/google/common/cache/Cache;

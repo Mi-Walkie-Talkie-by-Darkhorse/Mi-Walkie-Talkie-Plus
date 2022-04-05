@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/openauth/XiaomiOAuthorize$2;
 .super Ljava/lang/Object;
-.source "XiaomiOAuthorize.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -46,7 +45,6 @@
 .method constructor <init>(Lcom/xiaomi/account/openauth/XiaomiOAuthorize;Landroid/content/Context;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$2;->this$0:Lcom/xiaomi/account/openauth/XiaomiOAuthorize;
 
     iput-object p2, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$2;->val$context:Landroid/content/Context;
@@ -76,7 +74,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$2;->call()Ljava/lang/String;
 
     move-result-object v0
@@ -92,7 +89,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$2;->val$context:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$2;->val$path:Ljava/lang/String;

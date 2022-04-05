@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/util/o$a;
 .super Ljava/lang/Object;
-.source "QMUIWindowInsetHelper.java"
 
 # interfaces
 .implements Landroidx/core/view/r;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/util/o;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/util/o$a;->a:Lcom/qmuiteam/qmui/util/o;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onApplyWindowInsets(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;
     .locals 1
 
-    .line 1
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v0, 0x15
@@ -57,7 +54,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 2
     iget-object p1, p0, Lcom/qmuiteam/qmui/util/o$a;->a:Lcom/qmuiteam/qmui/util/o;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/util/o;->a(Lcom/qmuiteam/qmui/util/o;)Ljava/lang/ref/WeakReference;
@@ -76,7 +72,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 3
     invoke-virtual {p2}, Landroidx/core/view/WindowInsetsCompat;->j()Z
 
     move-result p1
@@ -85,13 +80,11 @@
 
     return-object p2
 
-    .line 4
     :cond_0
     invoke-virtual {p2}, Landroidx/core/view/WindowInsetsCompat;->c()Landroidx/core/view/WindowInsetsCompat;
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1}, Landroidx/core/view/WindowInsetsCompat;->j()Z
 
     move-result p2
@@ -100,7 +93,6 @@
 
     return-object p1
 
-    .line 6
     :cond_1
     invoke-virtual {p1}, Landroidx/core/view/WindowInsetsCompat;->b()Landroidx/core/view/WindowInsetsCompat;
 

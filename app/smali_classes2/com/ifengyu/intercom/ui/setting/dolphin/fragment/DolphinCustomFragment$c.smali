@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$c;
 .super Ljava/lang/Object;
-.source "DolphinCustomFragment.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/v$a;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$c;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$c;->a:Lcom/ifengyu/intercom/ui/setting/UserChannel;
@@ -42,7 +40,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$c;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;
 
     new-instance v1, Lcom/ifengyu/intercom/ui/setting/UserChannel;
@@ -69,7 +66,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;->a(Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;Lcom/ifengyu/intercom/ui/setting/UserChannel;)Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$c;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;->f(Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;)Lcom/ifengyu/intercom/ui/setting/UserChannel;
@@ -90,7 +86,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(Ljava/lang/Long;)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$c;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;->f(Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;)Lcom/ifengyu/intercom/ui/setting/UserChannel;

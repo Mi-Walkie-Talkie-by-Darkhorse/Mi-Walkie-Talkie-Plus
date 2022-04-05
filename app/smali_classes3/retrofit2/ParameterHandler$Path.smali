@@ -1,6 +1,5 @@
 .class final Lretrofit2/ParameterHandler$Path;
 .super Lretrofit2/ParameterHandler;
-.source "ParameterHandler.java"
 
 
 # annotations
@@ -55,12 +54,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lretrofit2/ParameterHandler;-><init>()V
 
     const-string v0, "name == null"
 
-    .line 2
     invoke-static {p1, v0}, Lretrofit2/Utils;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -69,10 +66,8 @@
 
     iput-object p1, p0, Lretrofit2/ParameterHandler$Path;->name:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Lretrofit2/ParameterHandler$Path;->valueConverter:Lretrofit2/Converter;
 
-    .line 4
     iput-boolean p3, p0, Lretrofit2/ParameterHandler$Path;->encoded:Z
 
     return-void
@@ -102,7 +97,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-object v0, p0, Lretrofit2/ParameterHandler$Path;->name:Ljava/lang/String;
 
     iget-object v1, p0, Lretrofit2/ParameterHandler$Path;->valueConverter:Lretrofit2/Converter;
@@ -119,7 +113,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

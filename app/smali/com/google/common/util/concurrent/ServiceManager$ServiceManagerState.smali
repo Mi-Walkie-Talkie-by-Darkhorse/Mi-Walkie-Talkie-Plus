@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 .super Ljava/lang/Object;
-.source "ServiceManager.java"
 
 
 # annotations
@@ -107,17 +106,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/Monitor;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/Monitor;-><init>()V
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
-    .line 3
     new-instance v0, Ljava/util/EnumMap;
 
     const-class v1, Lcom/google/common/util/concurrent/Service$State;
@@ -134,21 +130,18 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->servicesByState:Lcom/google/common/collect/SetMultimap;
 
-    .line 4
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->keys()Lcom/google/common/collect/Multiset;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->states:Lcom/google/common/collect/Multiset;
 
-    .line 5
     invoke-static {}, Lcom/google/common/collect/Maps;->newIdentityHashMap()Ljava/util/IdentityHashMap;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->startupTimers:Ljava/util/Map;
 
-    .line 6
     new-instance v0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState$2;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
@@ -157,7 +150,6 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->awaitHealthGuard:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 7
     new-instance v0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState$3;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
@@ -166,7 +158,6 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->stoppedGuard:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 8
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -177,14 +168,12 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->listeners:Ljava/util/List;
 
-    .line 9
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
 
     iput v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->numberOfServices:I
 
-    .line 10
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->servicesByState:Lcom/google/common/collect/SetMultimap;
 
     sget-object v1, Lcom/google/common/util/concurrent/Service$State;->NEW:Lcom/google/common/util/concurrent/Service$State;
@@ -201,20 +190,16 @@
 
     const-string v0, "listener"
 
-    .line 1
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "executor"
 
-    .line 2
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 4
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->stoppedGuard:Lcom/google/common/util/concurrent/Monitor$Guard;
 
@@ -224,7 +209,6 @@
 
     if-nez v0, :cond_0
 
-    .line 5
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->listeners:Ljava/util/List;
 
     new-instance v1, Lcom/google/common/util/concurrent/ListenerCallQueue;
@@ -235,7 +219,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     :cond_0
     iget-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
@@ -256,20 +239,17 @@
 .method awaitHealthy()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->awaitHealthGuard:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     invoke-virtual {v0, v1}, Lcom/google/common/util/concurrent/Monitor;->enterWhenUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->checkHealthy()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
@@ -294,12 +274,10 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 5
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
@@ -311,19 +289,16 @@
 
     if-eqz p1, :cond_0
 
-    .line 6
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->checkHealthy()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
     iget-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
     return-void
 
-    .line 8
     :cond_0
     :try_start_1
     new-instance p1, Ljava/util/concurrent/TimeoutException;
@@ -389,7 +364,6 @@
     :catchall_0
     move-exception p1
 
-    .line 9
     iget-object p2, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {p2}, Lcom/google/common/util/concurrent/Monitor;->leave()V
@@ -400,14 +374,12 @@
 .method awaitStopped()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->stoppedGuard:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     invoke-virtual {v0, v1}, Lcom/google/common/util/concurrent/Monitor;->enterWhenUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
@@ -423,12 +395,10 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 4
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
@@ -442,14 +412,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 5
     iget-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
     return-void
 
-    .line 6
     :cond_0
     :try_start_1
     new-instance p1, Ljava/util/concurrent/TimeoutException;
@@ -519,7 +487,6 @@
     :catchall_0
     move-exception p1
 
-    .line 7
     iget-object p2, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {p2}, Lcom/google/common/util/concurrent/Monitor;->leave()V
@@ -533,7 +500,6 @@
         value = "monitor"
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->states:Lcom/google/common/collect/Multiset;
 
     sget-object v1, Lcom/google/common/util/concurrent/Service$State;->RUNNING:Lcom/google/common/util/concurrent/Service$State;
@@ -548,7 +514,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -598,14 +563,12 @@
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 3
     throw v0
 .end method
 
 .method executeListeners()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->isOccupiedByCurrentThread()Z
@@ -620,7 +583,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->listeners:Ljava/util/List;
 
@@ -630,7 +592,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->listeners:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -655,7 +616,6 @@
         value = "monitor"
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState$5;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -705,7 +665,6 @@
         value = "monitor"
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/util/concurrent/ServiceManager;->access$400()Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
     move-result-object v0
@@ -723,7 +682,6 @@
         value = "monitor"
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/util/concurrent/ServiceManager;->access$300()Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
     move-result-object v0
@@ -738,12 +696,10 @@
 .method markReady()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 2
     :try_start_0
     iget-boolean v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->transitioned:Z
 
@@ -751,26 +707,22 @@
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->ready:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
     return-void
 
-    .line 5
     :cond_0
     :try_start_1
     invoke-static {}, Lcom/google/common/collect/Lists;->newArrayList()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 6
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->servicesByState()Lcom/google/common/collect/ImmutableMultimap;
 
     move-result-object v1
@@ -797,7 +749,6 @@
 
     check-cast v2, Lcom/google/common/util/concurrent/Service;
 
-    .line 7
     invoke-interface {v2}, Lcom/google/common/util/concurrent/Service;->state()Lcom/google/common/util/concurrent/Service$State;
 
     move-result-object v3
@@ -806,12 +757,10 @@
 
     if-eq v3, v4, :cond_1
 
-    .line 8
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 9
     :cond_2
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -858,7 +807,6 @@
     :catchall_0
     move-exception v0
 
-    .line 10
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
@@ -878,17 +826,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/ImmutableSetMultimap;->builder()Lcom/google/common/collect/ImmutableSetMultimap$Builder;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v1}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->servicesByState:Lcom/google/common/collect/SetMultimap;
 
@@ -914,7 +859,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 4
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -923,7 +867,6 @@
 
     if-nez v3, :cond_0
 
-    .line 5
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -938,13 +881,11 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 7
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableSetMultimap$Builder;->build()Lcom/google/common/collect/ImmutableSetMultimap;
 
     move-result-object v0
@@ -954,7 +895,6 @@
     :catchall_0
     move-exception v0
 
-    .line 8
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
@@ -974,12 +914,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->startupTimers:Ljava/util/Map;
 
@@ -991,7 +929,6 @@
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->startupTimers:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -1016,21 +953,18 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 4
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/google/common/util/concurrent/Service;
 
-    .line 5
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/google/common/base/Stopwatch;
 
-    .line 6
     invoke-virtual {v2}, Lcom/google/common/base/Stopwatch;->isRunning()Z
 
     move-result v4
@@ -1041,7 +975,6 @@
 
     if-nez v4, :cond_0
 
-    .line 7
     sget-object v4, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v2, v4}, Lcom/google/common/base/Stopwatch;->elapsed(Ljava/util/concurrent/TimeUnit;)J
@@ -1062,13 +995,11 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 9
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v1
@@ -1083,12 +1014,10 @@
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 10
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->builder()Lcom/google/common/collect/ImmutableMap$Builder;
 
     move-result-object v1
 
-    .line 11
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -1106,12 +1035,10 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 12
     invoke-virtual {v1, v2}, Lcom/google/common/collect/ImmutableMap$Builder;->put(Ljava/util/Map$Entry;)Lcom/google/common/collect/ImmutableMap$Builder;
 
     goto :goto_1
 
-    .line 13
     :cond_2
     invoke-virtual {v1}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
 
@@ -1122,7 +1049,6 @@
     :catchall_0
     move-exception v0
 
-    .line 14
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
@@ -1133,7 +1059,6 @@
 .method transitionService(Lcom/google/common/util/concurrent/Service;Lcom/google/common/util/concurrent/Service$State;Lcom/google/common/util/concurrent/Service$State;)V
     .locals 6
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
@@ -1149,37 +1074,30 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 2
     :goto_0
     invoke-static {v2}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 3
     iget-object v2, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v2}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 4
     :try_start_0
     iput-boolean v1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->transitioned:Z
 
-    .line 5
     iget-boolean v2, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->ready:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     if-nez v2, :cond_1
 
-    .line 6
     iget-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 7
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->executeListeners()V
 
     return-void
 
-    .line 8
     :cond_1
     :try_start_1
     iget-object v2, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->servicesByState:Lcom/google/common/collect/SetMultimap;
@@ -1200,7 +1118,6 @@
 
     invoke-static {v2, v3, v5}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 9
     iget-object p2, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->servicesByState:Lcom/google/common/collect/SetMultimap;
 
     invoke-interface {p2, p3, p1}, Lcom/google/common/collect/Multimap;->put(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1217,7 +1134,6 @@
 
     invoke-static {p2, v2, v3}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 10
     iget-object p2, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->startupTimers:Ljava/util/Map;
 
     invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1228,17 +1144,14 @@
 
     if-nez p2, :cond_2
 
-    .line 11
     invoke-static {}, Lcom/google/common/base/Stopwatch;->createStarted()Lcom/google/common/base/Stopwatch;
 
     move-result-object p2
 
-    .line 12
     iget-object v2, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->startupTimers:Ljava/util/Map;
 
     invoke-interface {v2, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 13
     :cond_2
     sget-object v2, Lcom/google/common/util/concurrent/Service$State;->RUNNING:Lcom/google/common/util/concurrent/Service$State;
 
@@ -1254,15 +1167,12 @@
 
     if-eqz v2, :cond_3
 
-    .line 14
     invoke-virtual {p2}, Lcom/google/common/base/Stopwatch;->stop()Lcom/google/common/base/Stopwatch;
 
-    .line 15
     instance-of v2, p1, Lcom/google/common/util/concurrent/ServiceManager$NoOpService;
 
     if-nez v2, :cond_3
 
-    .line 16
     invoke-static {}, Lcom/google/common/util/concurrent/ServiceManager;->access$200()Ljava/util/logging/Logger;
 
     move-result-object v2
@@ -1279,16 +1189,13 @@
 
     invoke-virtual {v2, v3, v5, v4}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 17
     :cond_3
     sget-object p2, Lcom/google/common/util/concurrent/Service$State;->FAILED:Lcom/google/common/util/concurrent/Service$State;
 
     if-ne p3, p2, :cond_4
 
-    .line 18
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->fireFailedListeners(Lcom/google/common/util/concurrent/Service;)V
 
-    .line 19
     :cond_4
     iget-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->states:Lcom/google/common/collect/Multiset;
 
@@ -1302,12 +1209,10 @@
 
     if-ne p1, p2, :cond_5
 
-    .line 20
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->fireHealthyListeners()V
 
     goto :goto_1
 
-    .line 21
     :cond_5
     iget-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->states:Lcom/google/common/collect/Multiset;
 
@@ -1331,19 +1236,16 @@
 
     if-ne p1, p2, :cond_6
 
-    .line 22
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->fireStoppedListeners()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 23
     :cond_6
     :goto_1
     iget-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 24
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->executeListeners()V
 
     return-void
@@ -1351,12 +1253,10 @@
     :catchall_0
     move-exception p1
 
-    .line 25
     iget-object p2, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {p2}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 26
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->executeListeners()V
 
     throw p1
@@ -1365,12 +1265,10 @@
 .method tryStartTiming(Lcom/google/common/util/concurrent/Service;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->startupTimers:Ljava/util/Map;
 
@@ -1382,7 +1280,6 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->startupTimers:Ljava/util/Map;
 
     invoke-static {}, Lcom/google/common/base/Stopwatch;->createStarted()Lcom/google/common/base/Stopwatch;
@@ -1393,7 +1290,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->monitor:Lcom/google/common/util/concurrent/Monitor;
 

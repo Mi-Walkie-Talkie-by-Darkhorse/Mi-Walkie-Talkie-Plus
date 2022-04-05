@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/service/ShareLocationService$b;
 .super Lcom/ifengyu/intercom/g/d/l;
-.source "ShareLocationService.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/service/ShareLocationService;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$b;->c:Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$b;->b:Ljava/lang/String;
@@ -39,7 +37,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/service/ShareLocationService$b;->a(Ljava/lang/String;I)V
@@ -50,7 +47,6 @@
 .method public a(Ljava/lang/String;I)V
     .locals 2
 
-    .line 4
     :try_start_0
     new-instance p2, Lorg/json/JSONObject;
 
@@ -60,7 +56,6 @@
 
     const-string v0, "msg"
 
-    .line 5
     invoke-virtual {p2, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -73,26 +68,22 @@
 
     const-string p1, "data"
 
-    .line 6
     invoke-virtual {p2, p1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
 
     const-string p2, "avatar"
 
-    .line 7
     invoke-virtual {p1, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
     const-string v0, "nickname"
 
-    .line 8
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$b;->c:Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->d(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)Ljava/util/HashMap;
@@ -107,15 +98,12 @@
 
     check-cast v0, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
-    .line 10
     invoke-virtual {v0, p2}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->setImgUrl(Ljava/lang/String;)V
 
-    .line 11
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->setName(Ljava/lang/String;)V
 
     const-string p1, "ShareLocationService"
 
-    .line 12
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -136,14 +124,12 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object p1
 
     invoke-virtual {p1, v0}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$b;->c:Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
@@ -155,7 +141,6 @@
     :catch_0
     move-exception p1
 
-    .line 15
     invoke-virtual {p1}, Lorg/json/JSONException;->printStackTrace()V
 
     :cond_0
@@ -170,10 +155,8 @@
 
     const-string p3, "queryUserInfo onError"
 
-    .line 2
     invoke-static {p1, p3}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     invoke-virtual {p2}, Ljava/lang/Exception;->printStackTrace()V
 
     return-void

@@ -1,6 +1,5 @@
 .class Landroidx/core/view/WindowInsetsCompat$e;
 .super Landroidx/core/view/WindowInsetsCompat$d;
-.source "WindowInsetsCompat.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/core/view/WindowInsetsCompat$d;-><init>()V
 
     return-void
@@ -35,7 +33,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-direct {p0, p1}, Landroidx/core/view/WindowInsetsCompat$d;-><init>(Landroidx/core/view/WindowInsetsCompat;)V
 
     return-void

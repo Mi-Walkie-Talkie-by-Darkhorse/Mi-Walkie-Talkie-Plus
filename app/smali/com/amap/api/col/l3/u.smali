@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/u;
 .super Ljava/lang/Object;
-.source "IAMapDelegate.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/interfaces/IAMap;

@@ -1,6 +1,5 @@
 .class public Landroidx/recyclerview/widget/RecyclerView$u$a;
 .super Ljava/lang/Object;
-.source "RecyclerView.java"
 
 
 # annotations
@@ -46,7 +45,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, v0, v1}, Landroidx/recyclerview/widget/RecyclerView$u$a;-><init>(IIILandroid/view/animation/Interpolator;)V
 
     return-void
@@ -67,32 +65,24 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 3
     iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->d:I
 
     const/4 v0, 0x0
 
-    .line 4
     iput-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->f:Z
 
-    .line 5
     iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->g:I
 
-    .line 6
     iput p1, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->a:I
 
-    .line 7
     iput p2, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->b:I
 
-    .line 8
     iput p3, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->c:I
 
-    .line 9
     iput-object p4, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->e:Landroid/view/animation/Interpolator;
 
     return-void
@@ -101,7 +91,6 @@
 .method private b()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->e:Landroid/view/animation/Interpolator;
 
     const/4 v1, 0x1
@@ -114,7 +103,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -124,7 +112,6 @@
 
     throw v0
 
-    .line 3
     :cond_1
     :goto_0
     iget v0, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->c:I
@@ -133,7 +120,6 @@
 
     return-void
 
-    .line 4
     :cond_2
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -149,7 +135,6 @@
 .method public a(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->d:I
 
     return-void
@@ -170,21 +155,16 @@
         .end annotation
     .end param
 
-    .line 14
     iput p1, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->a:I
 
-    .line 15
     iput p2, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->b:I
 
-    .line 16
     iput p3, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->c:I
 
-    .line 17
     iput-object p4, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->e:Landroid/view/animation/Interpolator;
 
     const/4 p1, 0x1
 
-    .line 18
     iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->f:Z
 
     return-void
@@ -193,7 +173,6 @@
 .method a(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 5
 
-    .line 3
     iget v0, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->d:I
 
     const/4 v1, 0x0
@@ -202,27 +181,21 @@
 
     const/4 v2, -0x1
 
-    .line 4
     iput v2, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->d:I
 
-    .line 5
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->jumpToPositionForSmoothScroller(I)V
 
-    .line 6
     iput-boolean v1, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->f:Z
 
     return-void
 
-    .line 7
     :cond_0
     iget-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->f:Z
 
     if-eqz v0, :cond_2
 
-    .line 8
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$u$a;->b()V
 
-    .line 9
     iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->mViewFlinger:Landroidx/recyclerview/widget/RecyclerView$x;
 
     iget v0, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->a:I
@@ -235,7 +208,6 @@
 
     invoke-virtual {p1, v0, v2, v3, v4}, Landroidx/recyclerview/widget/RecyclerView$x;->a(IIILandroid/view/animation/Interpolator;)V
 
-    .line 10
     iget p1, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->g:I
 
     add-int/lit8 p1, p1, 0x1
@@ -250,16 +222,13 @@
 
     const-string v0, "Smooth Scroll action is being updated too frequently. Make sure you are not changing it unless necessary"
 
-    .line 11
     invoke-static {p1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 12
     :cond_1
     iput-boolean v1, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->f:Z
 
     goto :goto_0
 
-    .line 13
     :cond_2
     iput v1, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->g:I
 
@@ -270,7 +239,6 @@
 .method a()Z
     .locals 1
 
-    .line 2
     iget v0, p0, Landroidx/recyclerview/widget/RecyclerView$u$a;->d:I
 
     if-ltz v0, :cond_0

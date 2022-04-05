@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;
 .super Ljava/lang/Object;
-.source "TrackInfoDataDao.java"
 
 
 # annotations
@@ -74,7 +73,6 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    .line 1
     new-instance v6, Lorg/greenrobot/greendao/Property;
 
     const-class v2, Ljava/lang/Long;
@@ -93,7 +91,6 @@
 
     sput-object v6, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->Id:Lorg/greenrobot/greendao/Property;
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/String;
@@ -112,7 +109,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->Userid:Lorg/greenrobot/greendao/Property;
 
-    .line 3
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/String;
@@ -131,7 +127,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->TrackID:Lorg/greenrobot/greendao/Property;
 
-    .line 4
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/String;
@@ -148,7 +143,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->ServerTrackID:Lorg/greenrobot/greendao/Property;
 
-    .line 5
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -165,7 +159,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->TrackType:Lorg/greenrobot/greendao/Property;
 
-    .line 6
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/String;
@@ -182,7 +175,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->TrackName:Lorg/greenrobot/greendao/Property;
 
-    .line 7
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/String;
@@ -199,7 +191,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->TrackArea:Lorg/greenrobot/greendao/Property;
 
-    .line 8
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Integer;
@@ -216,7 +207,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->BeginTime:Lorg/greenrobot/greendao/Property;
 
-    .line 9
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -233,7 +223,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->EndTime:Lorg/greenrobot/greendao/Property;
 
-    .line 10
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/String;
@@ -250,7 +239,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->BeginAddress:Lorg/greenrobot/greendao/Property;
 
-    .line 11
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/String;
@@ -267,7 +255,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->EndAddress:Lorg/greenrobot/greendao/Property;
 
-    .line 12
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/String;
@@ -284,7 +271,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->City:Lorg/greenrobot/greendao/Property;
 
-    .line 13
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/String;
@@ -301,7 +287,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->District:Lorg/greenrobot/greendao/Property;
 
-    .line 14
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Integer;
@@ -318,7 +303,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->TotalSecondTime:Lorg/greenrobot/greendao/Property;
 
-    .line 15
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -335,7 +319,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->TotalDistance:Lorg/greenrobot/greendao/Property;
 
-    .line 16
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Float;
@@ -352,7 +335,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->AverageSpeed:Lorg/greenrobot/greendao/Property;
 
-    .line 17
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -369,7 +351,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->AverageAltitude:Lorg/greenrobot/greendao/Property;
 
-    .line 18
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Integer;
@@ -386,7 +367,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->MaxAltitude:Lorg/greenrobot/greendao/Property;
 
-    .line 19
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -403,7 +383,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->MinAltitude:Lorg/greenrobot/greendao/Property;
 
-    .line 20
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Integer;
@@ -420,7 +399,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->AccruedClimb:Lorg/greenrobot/greendao/Property;
 
-    .line 21
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -437,7 +415,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->AccruedDescent:Lorg/greenrobot/greendao/Property;
 
-    .line 22
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Integer;
@@ -454,7 +431,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->TrackMapZoomNum:Lorg/greenrobot/greendao/Property;
 
-    .line 23
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -471,7 +447,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->TrackCenterLatitude:Lorg/greenrobot/greendao/Property;
 
-    .line 24
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Integer;
@@ -488,7 +463,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->TrackCenterLongitude:Lorg/greenrobot/greendao/Property;
 
-    .line 25
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/String;
@@ -505,7 +479,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->TrackMapScreenshotURI:Lorg/greenrobot/greendao/Property;
 
-    .line 26
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Boolean;
@@ -522,7 +495,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TrackInfoDataDao$Properties;->IsPaused:Lorg/greenrobot/greendao/Property;
 
-    .line 27
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Boolean;
@@ -545,7 +517,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

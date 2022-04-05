@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/component/view/LoadingBar$a;
 .super Ljava/lang/Object;
-.source "LoadingBar.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,10 +24,8 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/component/view/LoadingBar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/component/view/LoadingBar$a;->a:Lcom/sina/weibo/sdk/component/view/LoadingBar;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/view/LoadingBar$a;->a:Lcom/sina/weibo/sdk/component/view/LoadingBar;
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/component/view/LoadingBar;->a(Lcom/sina/weibo/sdk/component/view/LoadingBar;)I
@@ -50,7 +46,6 @@
 
     invoke-static {v0, v1}, Lcom/sina/weibo/sdk/component/view/LoadingBar;->a(Lcom/sina/weibo/sdk/component/view/LoadingBar;I)V
 
-    .line 2
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/view/LoadingBar$a;->a:Lcom/sina/weibo/sdk/component/view/LoadingBar;
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/component/view/LoadingBar;->a(Lcom/sina/weibo/sdk/component/view/LoadingBar;)I

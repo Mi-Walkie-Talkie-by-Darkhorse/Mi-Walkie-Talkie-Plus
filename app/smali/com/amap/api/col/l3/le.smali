@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/le;
 .super Lcom/amap/api/col/l3/hy;
-.source "LocationRequest.java"
 
 
 # instance fields

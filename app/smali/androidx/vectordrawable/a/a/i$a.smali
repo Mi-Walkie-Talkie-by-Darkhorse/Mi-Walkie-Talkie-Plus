@@ -1,6 +1,5 @@
 .class synthetic Landroidx/vectordrawable/a/a/i$a;
 .super Ljava/lang/Object;
-.source "VectorDrawableCompat.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$d;
 .super Ljava/lang/Object;
-.source "GoogleMapDownLoadedActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;Ljava/io/File;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$d;->b:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$d;->a:Ljava/io/File;
@@ -44,7 +42,6 @@
 
     const-wide/16 v0, 0x3e8
 
-    .line 1
     :try_start_0
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
     :try_end_0
@@ -55,10 +52,8 @@
     :catch_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/InterruptedException;->printStackTrace()V
 
-    .line 3
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$d;->a:Ljava/io/File;
 

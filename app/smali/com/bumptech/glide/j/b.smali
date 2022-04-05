@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/j/b;
 .super Ljava/lang/Object;
-.source "GlideModule.java"
 
 
 # annotations

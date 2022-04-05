@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/internal/utils/b;
 .super Ljava/lang/Object;
-.source "BaseStationUtils.java"
 
 
 # annotations
@@ -35,10 +34,8 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     new-instance v0, Lcom/umeng/commonsdk/internal/utils/b$1;
 
     invoke-direct {v0, p0}, Lcom/umeng/commonsdk/internal/utils/b$1;-><init>(Lcom/umeng/commonsdk/internal/utils/b;)V
@@ -50,7 +47,6 @@
     :try_start_0
     const-string v0, "phone"
 
-    .line 4
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -69,7 +65,6 @@
 .method synthetic constructor <init>(Landroid/content/Context;Lcom/umeng/commonsdk/internal/utils/b$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/umeng/commonsdk/internal/utils/b;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -78,7 +73,6 @@
 .method static synthetic a(Lcom/umeng/commonsdk/internal/utils/b;)Landroid/telephony/TelephonyManager;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/umeng/commonsdk/internal/utils/b;->e:Landroid/telephony/TelephonyManager;
 
     return-object p0
@@ -87,7 +81,6 @@
 .method static synthetic a(Lcom/umeng/commonsdk/internal/utils/b;Landroid/telephony/TelephonyManager;)Landroid/telephony/TelephonyManager;
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/umeng/commonsdk/internal/utils/b;->e:Landroid/telephony/TelephonyManager;
 
     return-object p1
@@ -96,21 +89,18 @@
 .method public static a(Landroid/content/Context;)Lcom/umeng/commonsdk/internal/utils/b;
     .locals 1
 
-    .line 3
     sget-object v0, Lcom/umeng/commonsdk/internal/utils/b;->d:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
     if-eqz p0, :cond_0
 
-    .line 4
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p0
 
     sput-object p0, Lcom/umeng/commonsdk/internal/utils/b;->d:Landroid/content/Context;
 
-    .line 5
     :cond_0
     invoke-static {}, Lcom/umeng/commonsdk/internal/utils/b$a;->a()Lcom/umeng/commonsdk/internal/utils/b;
 
@@ -122,7 +112,6 @@
 .method static synthetic b(Lcom/umeng/commonsdk/internal/utils/b;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/umeng/commonsdk/internal/utils/b;->e()Ljava/lang/String;
 
     move-result-object p0
@@ -133,7 +122,6 @@
 .method static synthetic d()Landroid/content/Context;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/internal/utils/b;->d:Landroid/content/Context;
 
     return-object v0
@@ -144,13 +132,11 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/internal/utils/b;->d:Landroid/content/Context;
 
     const-string v2, "phone"
 
-    .line 2
     invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
@@ -161,13 +147,11 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -176,7 +160,6 @@
 
     const-string v2, "46000"
 
-    .line 5
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -196,7 +179,6 @@
     :cond_1
     const-string v2, "46001"
 
-    .line 6
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -210,7 +192,6 @@
     :cond_2
     const-string v2, "46003"
 
-    .line 7
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -240,7 +221,6 @@
 
     monitor-enter p0
 
-    .line 6
     :try_start_0
     sget-boolean v0, Lcom/umeng/commonsdk/internal/utils/b;->c:Z
     :try_end_0
@@ -276,18 +256,15 @@
 
     aput-object v4, v2, v3
 
-    .line 2
     invoke-static {v0, v2}, Lcom/umeng/commonsdk/statistics/common/ULog;->e(Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     :try_start_1
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/utils/b;->e:Landroid/telephony/TelephonyManager;
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/utils/b;->e:Landroid/telephony/TelephonyManager;
 
     iget-object v2, p0, Lcom/umeng/commonsdk/internal/utils/b;->a:Landroid/telephony/PhoneStateListener;
@@ -296,13 +273,11 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
-    .line 5
     :cond_0
     sput-boolean v1, Lcom/umeng/commonsdk/internal/utils/b;->c:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 6
     :catchall_0
     monitor-exit p0
 
@@ -334,31 +309,26 @@
 
     aput-object v2, v1, v3
 
-    .line 1
     invoke-static {v0, v1}, Lcom/umeng/commonsdk/statistics/common/ULog;->e(Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 2
     :try_start_1
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/utils/b;->e:Landroid/telephony/TelephonyManager;
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/utils/b;->e:Landroid/telephony/TelephonyManager;
 
     iget-object v1, p0, Lcom/umeng/commonsdk/internal/utils/b;->a:Landroid/telephony/PhoneStateListener;
 
     invoke-virtual {v0, v1, v3}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
-    .line 4
     :cond_0
     sput-boolean v3, Lcom/umeng/commonsdk/internal/utils/b;->c:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5
     :catchall_0
     monitor-exit p0
 

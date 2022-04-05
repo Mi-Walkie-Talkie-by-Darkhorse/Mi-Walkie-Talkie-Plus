@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/location/APSServiceBase;
 .super Ljava/lang/Object;
-.source "APSServiceBase.java"
 
 
 # virtual methods

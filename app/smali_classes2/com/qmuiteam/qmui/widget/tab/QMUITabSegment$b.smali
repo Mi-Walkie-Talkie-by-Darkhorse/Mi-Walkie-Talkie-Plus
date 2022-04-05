@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment$b;
 .super Ljava/lang/Object;
-.source "QMUITabSegment.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$e;

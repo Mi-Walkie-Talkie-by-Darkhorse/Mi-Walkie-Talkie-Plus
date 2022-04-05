@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/t$a;
 .super Ljava/lang/Object;
-.source "ForwardingListener.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/t;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/t$a;->a:Landroidx/appcompat/widget/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/t$a;->a:Landroidx/appcompat/widget/t;
 
     iget-object v0, v0, Landroidx/appcompat/widget/t;->d:Landroid/view/View;
@@ -51,7 +48,6 @@
 
     const/4 v1, 0x1
 
-    .line 2
     invoke-interface {v0, v1}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
 
     :cond_0

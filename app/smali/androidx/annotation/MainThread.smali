@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/MainThread;
 .super Ljava/lang/Object;
-.source "MainThread.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

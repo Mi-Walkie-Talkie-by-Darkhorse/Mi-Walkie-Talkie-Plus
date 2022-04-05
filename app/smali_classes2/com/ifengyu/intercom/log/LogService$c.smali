@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/log/LogService$c;
 .super Ljava/lang/Object;
-.source "LogService.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -34,7 +33,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/log/LogService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/log/LogService$c;->a:Lcom/ifengyu/intercom/log/LogService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -45,7 +43,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/log/LogService;Lcom/ifengyu/intercom/log/LogService$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/log/LogService$c;-><init>(Lcom/ifengyu/intercom/log/LogService;)V
 
     return-void
@@ -56,7 +53,6 @@
 .method public a(Ljava/io/File;Ljava/io/File;)I
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/ifengyu/intercom/log/LogService$c;->a:Lcom/ifengyu/intercom/log/LogService;
 
@@ -68,7 +64,6 @@
 
     move-result-object p1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/log/LogService$c;->a:Lcom/ifengyu/intercom/log/LogService;
 
     invoke-virtual {p2}, Ljava/io/File;->getName()Ljava/lang/String;
@@ -79,7 +74,6 @@
 
     move-result-object p2
 
-    .line 3
     invoke-virtual {p1, p2}, Ljava/util/Date;->before(Ljava/util/Date;)Z
 
     move-result p1
@@ -106,7 +100,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/io/File;
 
     check-cast p2, Ljava/io/File;

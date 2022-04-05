@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Insert;
 .super Ljava/lang/Object;
-.source "Insert.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

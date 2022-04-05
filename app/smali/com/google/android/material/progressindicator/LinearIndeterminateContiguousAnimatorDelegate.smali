@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;
 .super Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;
-.source "LinearIndeterminateContiguousAnimatorDelegate.java"
 
 
 # annotations
@@ -48,7 +47,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate$2;
 
     const-class v1, Ljava/lang/Float;
@@ -71,18 +69,14 @@
 
     const/4 v0, 0x3
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;-><init>(I)V
 
     const/4 v0, 0x1
 
-    .line 2
     iput v0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->newIndicatorColorIndex:I
 
-    .line 3
     iput-object p1, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->baseSpec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
-    .line 4
     new-instance p1, La/e/a/a/b;
 
     invoke-direct {p1}, La/e/a/a/b;-><init>()V
@@ -95,7 +89,6 @@
 .method static synthetic access$000(Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->newIndicatorColorIndex:I
 
     return p0
@@ -104,7 +97,6 @@
 .method static synthetic access$002(Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->newIndicatorColorIndex:I
 
     return p1
@@ -113,7 +105,6 @@
 .method static synthetic access$100(Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;)Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->baseSpec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     return-object p0
@@ -122,7 +113,6 @@
 .method static synthetic access$202(Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->dirtyColors:Z
 
     return p1
@@ -131,7 +121,6 @@
 .method static synthetic access$300(Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;)F
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->getAnimationFraction()F
 
     move-result p0
@@ -142,7 +131,6 @@
 .method private getAnimationFraction()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->animationFraction:F
 
     return v0
@@ -151,12 +139,10 @@
 .method private maybeInitializeAnimators()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->animator:Landroid/animation/ObjectAnimator;
 
     if-nez v0, :cond_0
 
-    .line 2
     sget-object v0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->ANIMATION_FRACTION:Landroid/util/Property;
 
     const/4 v1, 0x2
@@ -173,24 +159,20 @@
 
     const-wide/16 v1, 0x14d
 
-    .line 3
     invoke-virtual {v0, v1, v2}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->animator:Landroid/animation/ObjectAnimator;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/animation/ObjectAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 5
     iget-object v0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->animator:Landroid/animation/ObjectAnimator;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/animation/ObjectAnimator;->setRepeatCount(I)V
 
-    .line 6
     iget-object v0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->animator:Landroid/animation/ObjectAnimator;
 
     new-instance v1, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate$1;
@@ -212,7 +194,6 @@
 .method private maybeUpdateSegmentColors()V
     .locals 4
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->dirtyColors:Z
 
     if-eqz v0, :cond_0
@@ -229,7 +210,6 @@
 
     if-gez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->segmentColors:[I
 
     const/4 v1, 0x2
@@ -242,12 +222,10 @@
 
     const/4 v1, 0x0
 
-    .line 3
     aget v3, v0, v1
 
     aput v3, v0, v2
 
-    .line 4
     iget-object v2, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->baseSpec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     iget-object v2, v2, Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;->indicatorColors:[I
@@ -258,19 +236,16 @@
 
     iget-object v3, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->drawable:Lcom/google/android/material/progressindicator/IndeterminateDrawable;
 
-    .line 5
     invoke-virtual {v3}, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->getAlpha()I
 
     move-result v3
 
-    .line 6
     invoke-static {v2, v3}, Lcom/google/android/material/color/MaterialColors;->compositeARGBWithAlpha(II)I
 
     move-result v2
 
     aput v2, v0, v1
 
-    .line 7
     iput-boolean v1, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->dirtyColors:Z
 
     :cond_0
@@ -280,7 +255,6 @@
 .method private updateSegmentPositions(I)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->segmentPositions:[F
 
     const/4 v1, 0x0
@@ -291,12 +265,10 @@
 
     const/16 v0, 0x29b
 
-    .line 2
     invoke-virtual {p0, p1, v2, v0}, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->getFractionInRange(III)F
 
     move-result p1
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->segmentPositions:[F
 
     iget-object v1, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->interpolator:La/e/a/a/b;
@@ -317,7 +289,6 @@
 
     add-float/2addr p1, v0
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->segmentPositions:[F
 
     iget-object v1, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->interpolator:La/e/a/a/b;
@@ -334,7 +305,6 @@
 
     aput p1, v0, v1
 
-    .line 5
     iget-object p1, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->segmentPositions:[F
 
     const/4 v0, 0x5
@@ -351,12 +321,10 @@
 .method public cancelAnimatorImmediately()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->animator:Landroid/animation/ObjectAnimator;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->cancel()V
 
     :cond_0
@@ -366,7 +334,6 @@
 .method public invalidateSpecValues()V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->resetPropertiesForNewStart()V
 
     return-void
@@ -395,13 +362,10 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->dirtyColors:Z
 
-    .line 2
     iput v0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->newIndicatorColorIndex:I
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->segmentColors:[I
 
     iget-object v1, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->baseSpec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
@@ -414,7 +378,6 @@
 
     iget-object v2, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->drawable:Lcom/google/android/material/progressindicator/IndeterminateDrawable;
 
-    .line 4
     invoke-virtual {v2}, Lcom/google/android/material/progressindicator/IndeterminateDrawable;->getAlpha()I
 
     move-result v2
@@ -423,7 +386,6 @@
 
     move-result v1
 
-    .line 5
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([II)V
 
     return-void
@@ -434,7 +396,6 @@
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->animationFraction:F
 
     const v0, 0x43a68000    # 333.0f
@@ -443,13 +404,10 @@
 
     float-to-int p1, p1
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->updateSegmentPositions(I)V
 
-    .line 3
     invoke-direct {p0}, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->maybeUpdateSegmentColors()V
 
-    .line 4
     iget-object p1, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->drawable:Lcom/google/android/material/progressindicator/IndeterminateDrawable;
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
@@ -460,13 +418,10 @@
 .method public startAnimator()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->maybeInitializeAnimators()V
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->resetPropertiesForNewStart()V
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->animator:Landroid/animation/ObjectAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ObjectAnimator;->start()V

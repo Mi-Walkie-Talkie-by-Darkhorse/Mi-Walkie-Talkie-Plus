@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/collect/ImmutableBiMap$Builder;
 .super Lcom/google/common/collect/ImmutableMap$Builder;
-.source "ImmutableBiMap.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableMap$Builder;-><init>()V
 
     return-void
@@ -48,7 +46,6 @@
         }
     .end annotation
 
-    .line 2
     iget v0, p0, Lcom/google/common/collect/ImmutableMap$Builder;->size:I
 
     if-eqz v0, :cond_1
@@ -57,7 +54,6 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 3
     new-instance v0, Lcom/google/common/collect/RegularImmutableBiMap;
 
     iget v1, p0, Lcom/google/common/collect/ImmutableMap$Builder;->size:I
@@ -68,7 +64,6 @@
 
     return-object v0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMap$Builder;->entries:[Lcom/google/common/collect/ImmutableMapEntry$TerminalEntry;
 
@@ -94,7 +89,6 @@
 
     return-object v0
 
-    .line 5
     :cond_1
     invoke-static {}, Lcom/google/common/collect/ImmutableBiMap;->of()Lcom/google/common/collect/ImmutableBiMap;
 
@@ -106,7 +100,6 @@
 .method public bridge synthetic build()Lcom/google/common/collect/ImmutableMap;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableBiMap$Builder;->build()Lcom/google/common/collect/ImmutableBiMap;
 
     move-result-object v0
@@ -124,7 +117,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/ImmutableMap$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
 
     return-object p0
@@ -133,7 +125,6 @@
 .method public bridge synthetic put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableMap$Builder;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ImmutableBiMap$Builder;->put(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableBiMap$Builder;
 
     move-result-object p1
@@ -153,7 +144,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableMap$Builder;->putAll(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap$Builder;
 
     return-object p0
@@ -162,7 +152,6 @@
 .method public bridge synthetic putAll(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap$Builder;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableBiMap$Builder;->putAll(Ljava/util/Map;)Lcom/google/common/collect/ImmutableBiMap$Builder;
 
     move-result-object p1

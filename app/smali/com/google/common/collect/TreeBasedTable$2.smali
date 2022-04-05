@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/TreeBasedTable$2;
 .super Lcom/google/common/collect/AbstractIterator;
-.source "TreeBasedTable.java"
 
 
 # annotations
@@ -41,7 +40,6 @@
 .method constructor <init>(Lcom/google/common/collect/TreeBasedTable;Ljava/util/Iterator;Ljava/util/Comparator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/TreeBasedTable$2;->this$0:Lcom/google/common/collect/TreeBasedTable;
 
     iput-object p2, p0, Lcom/google/common/collect/TreeBasedTable$2;->val$merged:Ljava/util/Iterator;
@@ -63,7 +61,6 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/TreeBasedTable$2;->val$merged:Ljava/util/Iterator;
 
@@ -73,14 +70,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/TreeBasedTable$2;->val$merged:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/collect/TreeBasedTable$2;->lastValue:Ljava/lang/Object;
 
     if-eqz v1, :cond_1
@@ -103,7 +98,6 @@
     :goto_0
     if-nez v1, :cond_0
 
-    .line 4
     iput-object v0, p0, Lcom/google/common/collect/TreeBasedTable$2;->lastValue:Ljava/lang/Object;
 
     return-object v0
@@ -111,10 +105,8 @@
     :cond_2
     const/4 v0, 0x0
 
-    .line 5
     iput-object v0, p0, Lcom/google/common/collect/TreeBasedTable$2;->lastValue:Ljava/lang/Object;
 
-    .line 6
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractIterator;->endOfData()Ljava/lang/Object;
 
     move-result-object v0

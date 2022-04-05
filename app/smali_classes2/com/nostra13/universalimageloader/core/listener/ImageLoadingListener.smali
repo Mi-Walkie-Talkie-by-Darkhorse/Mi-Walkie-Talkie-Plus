@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 .super Ljava/lang/Object;
-.source "ImageLoadingListener.java"
 
 
 # virtual methods

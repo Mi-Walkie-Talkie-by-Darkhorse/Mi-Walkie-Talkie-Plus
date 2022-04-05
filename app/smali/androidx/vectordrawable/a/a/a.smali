@@ -1,6 +1,5 @@
 .class Landroidx/vectordrawable/a/a/a;
 .super Ljava/lang/Object;
-.source "AndroidResources.java"
 
 
 # static fields
@@ -37,7 +36,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Landroidx/vectordrawable/a/a/a;->a:[I
@@ -46,7 +44,6 @@
 
     new-array v1, v0, [I
 
-    .line 2
     fill-array-data v1, :array_1
 
     sput-object v1, Landroidx/vectordrawable/a/a/a;->b:[I
@@ -55,7 +52,6 @@
 
     new-array v1, v1, [I
 
-    .line 3
     fill-array-data v1, :array_2
 
     sput-object v1, Landroidx/vectordrawable/a/a/a;->c:[I
@@ -64,7 +60,6 @@
 
     new-array v1, v1, [I
 
-    .line 4
     fill-array-data v1, :array_3
 
     sput-object v1, Landroidx/vectordrawable/a/a/a;->d:[I
@@ -79,21 +74,18 @@
 
     aput v3, v2, v4
 
-    .line 5
     sput-object v2, Landroidx/vectordrawable/a/a/a;->e:[I
 
     const/4 v2, 0x2
 
     new-array v2, v2, [I
 
-    .line 6
     fill-array-data v2, :array_4
 
     sput-object v2, Landroidx/vectordrawable/a/a/a;->f:[I
 
     new-array v0, v0, [I
 
-    .line 7
     fill-array-data v0, :array_5
 
     sput-object v0, Landroidx/vectordrawable/a/a/a;->g:[I
@@ -104,28 +96,24 @@
 
     aput v1, v0, v4
 
-    .line 8
     sput-object v0, Landroidx/vectordrawable/a/a/a;->h:[I
 
     const/4 v0, 0x4
 
     new-array v1, v0, [I
 
-    .line 9
     fill-array-data v1, :array_6
 
     sput-object v1, Landroidx/vectordrawable/a/a/a;->i:[I
 
     new-array v1, v0, [I
 
-    .line 10
     fill-array-data v1, :array_7
 
     sput-object v1, Landroidx/vectordrawable/a/a/a;->j:[I
 
     new-array v0, v0, [I
 
-    .line 11
     fill-array-data v0, :array_8
 
     sput-object v0, Landroidx/vectordrawable/a/a/a;->k:[I
@@ -134,7 +122,6 @@
 
     new-array v0, v0, [I
 
-    .line 12
     fill-array-data v0, :array_9
 
     sput-object v0, Landroidx/vectordrawable/a/a/a;->l:[I

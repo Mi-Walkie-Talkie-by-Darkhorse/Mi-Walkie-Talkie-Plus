@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/datepicker/CompositeDateValidator;
 .super Ljava/lang/Object;
-.source "CompositeDateValidator.java"
 
 # interfaces
 .implements Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
@@ -58,21 +57,18 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/material/datepicker/CompositeDateValidator$1;
 
     invoke-direct {v0}, Lcom/google/android/material/datepicker/CompositeDateValidator$1;-><init>()V
 
     sput-object v0, Lcom/google/android/material/datepicker/CompositeDateValidator;->ANY_OPERATOR:Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
 
-    .line 2
     new-instance v0, Lcom/google/android/material/datepicker/CompositeDateValidator$2;
 
     invoke-direct {v0}, Lcom/google/android/material/datepicker/CompositeDateValidator$2;-><init>()V
 
     sput-object v0, Lcom/google/android/material/datepicker/CompositeDateValidator;->ALL_OPERATOR:Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
 
-    .line 3
     new-instance v0, Lcom/google/android/material/datepicker/CompositeDateValidator$3;
 
     invoke-direct {v0}, Lcom/google/android/material/datepicker/CompositeDateValidator$3;-><init>()V
@@ -99,13 +95,10 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/google/android/material/datepicker/CompositeDateValidator;->validators:Ljava/util/List;
 
-    .line 4
     iput-object p2, p0, Lcom/google/android/material/datepicker/CompositeDateValidator;->operator:Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
 
     return-void
@@ -114,7 +107,6 @@
 .method synthetic constructor <init>(Ljava/util/List;Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;Lcom/google/android/material/datepicker/CompositeDateValidator$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/datepicker/CompositeDateValidator;-><init>(Ljava/util/List;Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;)V
 
     return-void
@@ -123,7 +115,6 @@
 .method static synthetic access$000()Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/android/material/datepicker/CompositeDateValidator;->ALL_OPERATOR:Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
 
     return-object v0
@@ -132,7 +123,6 @@
 .method static synthetic access$100()Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/android/material/datepicker/CompositeDateValidator;->ANY_OPERATOR:Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
 
     return-object v0
@@ -157,7 +147,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/android/material/datepicker/CompositeDateValidator;
 
     sget-object v1, Lcom/google/android/material/datepicker/CompositeDateValidator;->ALL_OPERATOR:Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
@@ -186,7 +175,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/android/material/datepicker/CompositeDateValidator;
 
     sget-object v1, Lcom/google/android/material/datepicker/CompositeDateValidator;->ANY_OPERATOR:Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
@@ -215,7 +203,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/google/android/material/datepicker/CompositeDateValidator;
 
@@ -225,11 +212,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/google/android/material/datepicker/CompositeDateValidator;
 
-    .line 3
     iget-object v1, p0, Lcom/google/android/material/datepicker/CompositeDateValidator;->validators:Ljava/util/List;
 
     iget-object v3, p1, Lcom/google/android/material/datepicker/CompositeDateValidator;->validators:Ljava/util/List;
@@ -266,7 +251,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/datepicker/CompositeDateValidator;->validators:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->hashCode()I
@@ -279,7 +263,6 @@
 .method public isValid(J)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/datepicker/CompositeDateValidator;->operator:Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
 
     iget-object v1, p0, Lcom/google/android/material/datepicker/CompositeDateValidator;->validators:Ljava/util/List;
@@ -298,12 +281,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p2, p0, Lcom/google/android/material/datepicker/CompositeDateValidator;->validators:Ljava/util/List;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeList(Ljava/util/List;)V
 
-    .line 2
     iget-object p2, p0, Lcom/google/android/material/datepicker/CompositeDateValidator;->operator:Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
 
     invoke-interface {p2}, Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;->getId()I

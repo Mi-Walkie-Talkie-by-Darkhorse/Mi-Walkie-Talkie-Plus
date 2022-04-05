@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h$a;
 .super Ljava/lang/Object;
-.source "DolphinCustomFragment.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h;Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h$a;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h$a;->a:Lcom/ifengyu/intercom/ui/setting/UserChannel;
@@ -42,7 +40,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h$a;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h;->e:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;
@@ -51,7 +48,6 @@
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;->a(Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;Lcom/ifengyu/intercom/ui/setting/UserChannel;)Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h$a;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h;->e:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;

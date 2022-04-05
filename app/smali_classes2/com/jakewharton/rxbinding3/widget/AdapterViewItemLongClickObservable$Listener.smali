@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "AdapterViewItemLongClickObservable.kt"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemLongClickListener;
@@ -131,7 +130,6 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable$Listener;->view:Landroid/widget/AdapterView;
@@ -148,7 +146,6 @@
 .method protected onDispose()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable$Listener;->view:Landroid/widget/AdapterView;
 
     const/4 v1, 0x0
@@ -182,14 +179,12 @@
 
     invoke-static {p1, p2}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 2
     :try_start_0
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable$Listener;->handled:Lkotlin/jvm/a/a;
 
@@ -205,7 +200,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable$Listener;->observer:Lio/reactivex/Observer;
 
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -223,12 +217,10 @@
     :catch_0
     move-exception p1
 
-    .line 4
     iget-object p2, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable$Listener;->observer:Lio/reactivex/Observer;
 
     invoke-interface {p2, p1}, Lio/reactivex/Observer;->onError(Ljava/lang/Throwable;)V
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->dispose()V
 
     :cond_0

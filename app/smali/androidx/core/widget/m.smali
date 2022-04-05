@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/widget/m;
 .super Ljava/lang/Object;
-.source "TintableImageSourceView.java"
 
 
 # annotations

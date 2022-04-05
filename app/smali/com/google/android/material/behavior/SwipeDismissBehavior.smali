@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/behavior/SwipeDismissBehavior;
 .super Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;
-.source "SwipeDismissBehavior.java"
 
 
 # annotations
@@ -68,31 +67,24 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->sensitivity:F
 
     const/4 v1, 0x2
 
-    .line 3
     iput v1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->swipeDirection:I
 
     const/high16 v1, 0x3f000000    # 0.5f
 
-    .line 4
     iput v1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->dragDismissThreshold:F
 
-    .line 5
     iput v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->alphaStartSwipeDistance:F
 
-    .line 6
     iput v1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->alphaEndSwipeDistance:F
 
-    .line 7
     new-instance v0, Lcom/google/android/material/behavior/SwipeDismissBehavior$1;
 
     invoke-direct {v0, p0}, Lcom/google/android/material/behavior/SwipeDismissBehavior$1;-><init>(Lcom/google/android/material/behavior/SwipeDismissBehavior;)V
@@ -105,7 +97,6 @@
 .method static clamp(FFF)F
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Ljava/lang/Math;->max(FF)F
 
     move-result p0
@@ -120,7 +111,6 @@
 .method static clamp(III)I
     .locals 0
 
-    .line 2
     invoke-static {p0, p1}, Ljava/lang/Math;->max(II)I
 
     move-result p0
@@ -135,12 +125,10 @@
 .method private ensureViewDragHelper(Landroid/view/ViewGroup;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->viewDragHelper:Landroidx/customview/a/c;
 
     if-nez v0, :cond_1
 
-    .line 2
     iget-boolean v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->sensitivitySet:Z
 
     if-eqz v0, :cond_0
@@ -149,7 +137,6 @@
 
     iget-object v1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->dragCallback:Landroidx/customview/a/c$c;
 
-    .line 3
     invoke-static {p1, v0, v1}, Landroidx/customview/a/c;->a(Landroid/view/ViewGroup;FLandroidx/customview/a/c$c;)Landroidx/customview/a/c;
 
     move-result-object p1
@@ -159,7 +146,6 @@
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->dragCallback:Landroidx/customview/a/c$c;
 
-    .line 4
     invoke-static {p1, v0}, Landroidx/customview/a/c;->a(Landroid/view/ViewGroup;Landroidx/customview/a/c$c;)Landroidx/customview/a/c;
 
     move-result-object p1
@@ -188,17 +174,14 @@
 
     const/high16 v0, 0x100000
 
-    .line 1
     invoke-static {p1, v0}, Landroidx/core/view/ViewCompat;->g(Landroid/view/View;I)V
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->canSwipeDismissView(Landroid/view/View;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     sget-object v0, Landroidx/core/view/accessibility/b$a;->l:Landroidx/core/view/accessibility/b$a;
 
     const/4 v1, 0x0
@@ -230,7 +213,6 @@
 .method public getDragState()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->viewDragHelper:Landroidx/customview/a/c;
 
     if-eqz v0, :cond_0
@@ -256,7 +238,6 @@
     .annotation build Landroidx/annotation/VisibleForTesting;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->listener:Lcom/google/android/material/behavior/SwipeDismissBehavior$OnDismissListener;
 
     return-object v0
@@ -286,10 +267,8 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->interceptingEvents:Z
 
-    .line 2
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v1
@@ -308,13 +287,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iput-boolean v2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->interceptingEvents:Z
 
     goto :goto_0
 
-    .line 4
     :cond_1
     invoke-virtual {p3}, Landroid/view/MotionEvent;->getX()F
 
@@ -337,10 +314,8 @@
     :goto_0
     if-eqz v0, :cond_2
 
-    .line 5
     invoke-direct {p0, p1}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->ensureViewDragHelper(Landroid/view/ViewGroup;)V
 
-    .line 6
     iget-object p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->viewDragHelper:Landroidx/customview/a/c;
 
     invoke-virtual {p1, p3}, Landroidx/customview/a/c;->b(Landroid/view/MotionEvent;)Z
@@ -371,12 +346,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->onLayoutChild(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;I)Z
 
     move-result p1
 
-    .line 2
     invoke-static {p2}, Landroidx/core/view/ViewCompat;->q(Landroid/view/View;)I
 
     move-result p3
@@ -385,10 +358,8 @@
 
     const/4 p3, 0x1
 
-    .line 3
     invoke-static {p2, p3}, Landroidx/core/view/ViewCompat;->i(Landroid/view/View;I)V
 
-    .line 4
     invoke-direct {p0, p2}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->updateAccessibilityActions(Landroid/view/View;)V
 
     :cond_0
@@ -407,12 +378,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->viewDragHelper:Landroidx/customview/a/c;
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p1, p3}, Landroidx/customview/a/c;->a(Landroid/view/MotionEvent;)V
 
     const/4 p1, 0x1
@@ -432,7 +401,6 @@
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 1
     invoke-static {v0, p1, v1}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->clamp(FFF)F
 
     move-result p1
@@ -449,7 +417,6 @@
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 1
     invoke-static {v0, p1, v1}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->clamp(FFF)F
 
     move-result p1
@@ -466,7 +433,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->listener:Lcom/google/android/material/behavior/SwipeDismissBehavior$OnDismissListener;
 
     return-void
@@ -475,12 +441,10 @@
 .method public setSensitivity(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->sensitivity:F
 
     const/4 p1, 0x1
 
-    .line 2
     iput-boolean p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->sensitivitySet:Z
 
     return-void
@@ -493,7 +457,6 @@
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 1
     invoke-static {v0, p1, v1}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->clamp(FFF)F
 
     move-result p1
@@ -506,7 +469,6 @@
 .method public setSwipeDirection(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior;->swipeDirection:I
 
     return-void

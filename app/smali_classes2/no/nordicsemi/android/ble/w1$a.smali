@@ -1,6 +1,5 @@
 .class Lno/nordicsemi/android/ble/w1$a;
 .super Landroid/content/BroadcastReceiver;
-.source "BleManagerHandler.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lno/nordicsemi/android/ble/w1;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -35,7 +33,6 @@
 
     packed-switch p1, :pswitch_data_0
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -94,19 +91,16 @@
 
     const-string v0, "android.bluetooth.adapter.extra.STATE"
 
-    .line 1
     invoke-virtual {p2, v0, p1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v0
 
     const-string v1, "android.bluetooth.adapter.extra.PREVIOUS_STATE"
 
-    .line 2
     invoke-virtual {p2, v1, p1}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result p2
 
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -115,7 +109,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4
     invoke-direct {p0, v0}, Lno/nordicsemi/android/ble/w1$a;->a(I)Ljava/lang/String;
 
     move-result-object v2
@@ -126,7 +119,6 @@
 
     move-result-object v1
 
-    .line 5
     iget-object v2, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     const/4 v3, 0x3
@@ -146,14 +138,12 @@
 
     if-eq p2, p1, :cond_4
 
-    .line 6
     iget-object p1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     const/4 p2, 0x1
 
     invoke-static {p1, p2}, Lno/nordicsemi/android/ble/w1;->a(Lno/nordicsemi/android/ble/w1;Z)Z
 
-    .line 7
     iget-object p1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-static {p1}, Lno/nordicsemi/android/ble/w1;->f(Lno/nordicsemi/android/ble/w1;)Ljava/util/Deque;
@@ -162,14 +152,12 @@
 
     invoke-interface {p1}, Ljava/util/Deque;->clear()V
 
-    .line 8
     iget-object p1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     const/4 v0, 0x0
 
     invoke-static {p1, v0}, Lno/nordicsemi/android/ble/w1;->a(Lno/nordicsemi/android/ble/w1;Ljava/util/Deque;)Ljava/util/Deque;
 
-    .line 9
     iget-object p1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-static {p1}, Lno/nordicsemi/android/ble/w1;->t(Lno/nordicsemi/android/ble/w1;)Landroid/bluetooth/BluetoothDevice;
@@ -178,7 +166,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 10
     iget-object v1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-static {v1}, Lno/nordicsemi/android/ble/w1;->v(Lno/nordicsemi/android/ble/w1;)Lno/nordicsemi/android/ble/Request;
@@ -201,7 +188,6 @@
 
     if-eq v1, v3, :cond_1
 
-    .line 11
     iget-object v1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-static {v1}, Lno/nordicsemi/android/ble/w1;->v(Lno/nordicsemi/android/ble/w1;)Lno/nordicsemi/android/ble/Request;
@@ -210,12 +196,10 @@
 
     invoke-virtual {v1, p1, v2}, Lno/nordicsemi/android/ble/Request;->b(Landroid/bluetooth/BluetoothDevice;I)V
 
-    .line 12
     iget-object v1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-static {v1, v0}, Lno/nordicsemi/android/ble/w1;->a(Lno/nordicsemi/android/ble/w1;Lno/nordicsemi/android/ble/Request;)Lno/nordicsemi/android/ble/Request;
 
-    .line 13
     :cond_1
     iget-object v1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
@@ -225,7 +209,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 14
     iget-object v1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-static {v1}, Lno/nordicsemi/android/ble/w1;->w(Lno/nordicsemi/android/ble/w1;)Lno/nordicsemi/android/ble/t1;
@@ -234,12 +217,10 @@
 
     invoke-virtual {v1, p1, v2}, Lno/nordicsemi/android/ble/p2;->b(Landroid/bluetooth/BluetoothDevice;I)V
 
-    .line 15
     iget-object v1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-static {v1, v0}, Lno/nordicsemi/android/ble/w1;->a(Lno/nordicsemi/android/ble/w1;Lno/nordicsemi/android/ble/t1;)Lno/nordicsemi/android/ble/t1;
 
-    .line 16
     :cond_2
     iget-object v1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
@@ -249,7 +230,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 17
     iget-object v1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-static {v1}, Lno/nordicsemi/android/ble/w1;->x(Lno/nordicsemi/android/ble/w1;)Lno/nordicsemi/android/ble/b2;
@@ -258,18 +238,15 @@
 
     invoke-virtual {v1, p1, v2}, Lno/nordicsemi/android/ble/p2;->b(Landroid/bluetooth/BluetoothDevice;I)V
 
-    .line 18
     iget-object v1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-static {v1, v0}, Lno/nordicsemi/android/ble/w1;->a(Lno/nordicsemi/android/ble/w1;Lno/nordicsemi/android/ble/b2;)Lno/nordicsemi/android/ble/b2;
 
-    .line 19
     :cond_3
     iget-object v0, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-static {v0, p2}, Lno/nordicsemi/android/ble/w1;->k(Lno/nordicsemi/android/ble/w1;Z)Z
 
-    .line 20
     iget-object v0, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     const/4 v1, 0x0
@@ -278,14 +255,12 @@
 
     if-eqz p1, :cond_5
 
-    .line 21
     iget-object v0, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 
     invoke-static {v0, p1, p2}, Lno/nordicsemi/android/ble/w1;->a(Lno/nordicsemi/android/ble/w1;Landroid/bluetooth/BluetoothDevice;I)V
 
     goto :goto_0
 
-    .line 22
     :cond_4
     iget-object p1, p0, Lno/nordicsemi/android/ble/w1$a;->a:Lno/nordicsemi/android/ble/w1;
 

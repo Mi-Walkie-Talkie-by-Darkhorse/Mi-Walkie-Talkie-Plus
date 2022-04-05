@@ -1,6 +1,5 @@
 .class final Lokio/Util;
 .super Ljava/lang/Object;
-.source "Util.java"
 
 
 # static fields
@@ -13,7 +12,6 @@
 
     const-string v0, "UTF-8"
 
-    .line 1
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
 
     move-result-object v0
@@ -26,7 +24,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +41,6 @@
 
     add-int v2, v1, p1
 
-    .line 1
     aget-byte v2, p0, v2
 
     add-int v3, v1, p3
@@ -89,7 +85,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
@@ -99,7 +94,6 @@
 
     const/4 v2, 0x0
 
-    .line 2
     invoke-static {p0, p1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -270,7 +264,6 @@
 .method public static sneakyRethrow(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lokio/Util;->sneakyThrow2(Ljava/lang/Throwable;)V
 
     return-void
@@ -294,6 +287,5 @@
         }
     .end annotation
 
-    .line 1
     throw p0
 .end method

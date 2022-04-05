@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/protobuf/GeneratedMessage$BuilderParent;
 .super Ljava/lang/Object;
-.source "GeneratedMessage.java"
 
 
 # annotations

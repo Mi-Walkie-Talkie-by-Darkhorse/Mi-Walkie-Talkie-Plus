@@ -1,6 +1,5 @@
 .class public Lcom/efs/sdk/base/http/HttpResponse;
 .super Lcom/efs/sdk/base/a/f/d;
-.source "SourceFile"
 
 
 # annotations
@@ -31,10 +30,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/efs/sdk/base/a/f/d;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -49,7 +46,6 @@
 .method public getBizCode()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/a/f/d;->extra:Ljava/lang/Object;
 
     check-cast v0, Ljava/util/Map;
@@ -66,7 +62,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/efs/sdk/base/a/f/d;->extra:Ljava/lang/Object;
 
@@ -84,7 +79,6 @@
 .method public getHttpCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/efs/sdk/base/a/f/d;->code:I
 
     return v0
@@ -93,7 +87,6 @@
 .method public getReqUrl()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/a/f/d;->extra:Ljava/lang/Object;
 
     check-cast v0, Ljava/util/Map;
@@ -110,7 +103,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/efs/sdk/base/a/f/d;->extra:Ljava/lang/Object;
 
@@ -132,7 +124,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/a/f/d;->extra:Ljava/lang/Object;
 
     check-cast v0, Ljava/util/Map;
@@ -168,11 +159,9 @@
     :cond_2
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     iput-boolean v0, p0, Lcom/efs/sdk/base/a/f/d;->succ:Z
 
-    .line 2
     iput p1, p0, Lcom/efs/sdk/base/a/f/d;->code:I
 
     return-void
@@ -185,7 +174,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -197,7 +185,6 @@
     :cond_0
     const-string v0, "?"
 
-    .line 2
     invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -206,7 +193,6 @@
 
     const/4 v1, 0x0
 
-    .line 3
     invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v0
@@ -215,7 +201,6 @@
 
     move-result-object p1
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/efs/sdk/base/a/f/d;->extra:Ljava/lang/Object;
 
@@ -231,7 +216,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "HttpResponse {succ="

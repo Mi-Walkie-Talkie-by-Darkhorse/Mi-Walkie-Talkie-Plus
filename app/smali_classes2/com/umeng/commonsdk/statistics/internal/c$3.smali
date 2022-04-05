@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/statistics/internal/c$3;
 .super Ljava/lang/Object;
-.source "NetworkHelper.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/statistics/internal/UMImprintChangeCallback;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/umeng/commonsdk/statistics/internal/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/internal/c$3;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onImprintValueChanged(Ljava/lang/String;Ljava/lang/String;)V
     .locals 7
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -63,12 +60,10 @@
 
     invoke-static {v0, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     invoke-static {}, Lcom/umeng/commonsdk/config/FieldManager;->a()Lcom/umeng/commonsdk/config/FieldManager;
 
     move-result-object p1
 
-    .line 3
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/internal/c$3;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
@@ -77,7 +72,6 @@
 
     invoke-virtual {p1, v1, p2}, Lcom/umeng/commonsdk/config/FieldManager;->a(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 4
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/internal/c$3;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
@@ -86,7 +80,6 @@
 
     iget-object p2, p0, Lcom/umeng/commonsdk/statistics/internal/c$3;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 
-    .line 5
     invoke-static {p2}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
 
     move-result-object p2
@@ -103,12 +96,10 @@
 
     const/4 v2, 0x0
 
-    .line 6
     invoke-static {p1, v1, p2, v2}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
     const-string p1, "header_foreground_count"
 
-    .line 7
     invoke-static {p1}, Lcom/umeng/commonsdk/config/FieldManager;->allow(Ljava/lang/String;)Z
 
     move-result p1
@@ -117,17 +108,14 @@
 
     const-string p1, "--->>> recv zcfg response: foregound count timer enabled."
 
-    .line 8
     invoke-static {v0, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
     invoke-static {}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->eventHasExist()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 10
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/internal/c$3;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
@@ -138,7 +126,6 @@
 
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/internal/c$3;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 
-    .line 11
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
 
     move-result-object p1
@@ -151,13 +138,11 @@
 
     const-wide/16 v5, 0x0
 
-    .line 12
     invoke-static/range {v1 .. v6}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEventEx(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;J)V
 
     :cond_0
     const-string p1, "header_first_resume"
 
-    .line 13
     invoke-static {p1}, Lcom/umeng/commonsdk/config/FieldManager;->allow(Ljava/lang/String;)Z
 
     move-result p1
@@ -166,10 +151,8 @@
 
     const-string p1, "--->>> recv zcfg response: FirstResumeTrigger enabled."
 
-    .line 14
     invoke-static {v0, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 15
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/internal/c$3;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
@@ -188,7 +171,6 @@
 
     invoke-virtual {p1, p2}, Lcom/umeng/analytics/pro/k;->b(Landroid/content/Context;)V
 
-    .line 16
     :cond_1
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/internal/c$3;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 

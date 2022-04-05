@@ -1,6 +1,5 @@
 .class final Lcom/google/protobuf/TextFormat$Printer;
 .super Ljava/lang/Object;
-.source "TextFormat.java"
 
 
 # annotations
@@ -24,17 +23,14 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Lcom/google/protobuf/TextFormat$Printer;->singleLineMode:Z
 
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lcom/google/protobuf/TextFormat$Printer;->escapeNonAscii:Z
 
     return-void
@@ -43,7 +39,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/TextFormat$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/TextFormat$Printer;-><init>()V
 
     return-void
@@ -52,7 +47,6 @@
 .method static synthetic access$100(Lcom/google/protobuf/TextFormat$Printer;Z)Lcom/google/protobuf/TextFormat$Printer;
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/protobuf/TextFormat$Printer;->setSingleLineMode(Z)Lcom/google/protobuf/TextFormat$Printer;
 
     move-result-object p0
@@ -63,7 +57,6 @@
 .method static synthetic access$200(Lcom/google/protobuf/TextFormat$Printer;Z)Lcom/google/protobuf/TextFormat$Printer;
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/protobuf/TextFormat$Printer;->setEscapeNonAscii(Z)Lcom/google/protobuf/TextFormat$Printer;
 
     move-result-object p0
@@ -79,7 +72,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/protobuf/TextFormat$Printer;->print(Lcom/google/protobuf/MessageOrBuilder;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
     return-void
@@ -93,7 +85,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/protobuf/TextFormat$Printer;->printUnknownFields(Lcom/google/protobuf/UnknownFieldSet;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
     return-void
@@ -107,7 +98,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/google/protobuf/TextFormat$Printer;->printField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
     return-void
@@ -121,7 +111,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/google/protobuf/TextFormat$Printer;->printFieldValue(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
     return-void
@@ -135,7 +124,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Lcom/google/protobuf/MessageOrBuilder;->getAllFields()Ljava/util/Map;
 
     move-result-object v0
@@ -161,7 +149,6 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 2
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -176,7 +163,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-interface {p1}, Lcom/google/protobuf/MessageOrBuilder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
@@ -195,14 +181,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->isRepeated()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p2, Ljava/util/List;
 
     invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -220,12 +204,10 @@
 
     move-result-object v0
 
-    .line 3
     invoke-direct {p0, p1, v0, p3}, Lcom/google/protobuf/TextFormat$Printer;->printSingleField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-direct {p0, p1, p2, p3}, Lcom/google/protobuf/TextFormat$Printer;->printSingleField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
@@ -241,7 +223,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/TextFormat$3;->$SwitchMap$com$google$protobuf$Descriptors$FieldDescriptor$Type:[I
 
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getType()Lcom/google/protobuf/Descriptors$FieldDescriptor$Type;
@@ -260,7 +241,6 @@
 
     goto/16 :goto_2
 
-    .line 2
     :pswitch_0
     check-cast p2, Lcom/google/protobuf/Message;
 
@@ -268,7 +248,6 @@
 
     goto/16 :goto_2
 
-    .line 3
     :pswitch_1
     check-cast p2, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;
 
@@ -280,16 +259,13 @@
 
     goto/16 :goto_2
 
-    .line 4
     :pswitch_2
     invoke-virtual {p3, v0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 5
     instance-of p1, p2, Lcom/google/protobuf/ByteString;
 
     if-eqz p1, :cond_0
 
-    .line 6
     check-cast p2, Lcom/google/protobuf/ByteString;
 
     invoke-static {p2}, Lcom/google/protobuf/TextFormat;->escapeBytes(Lcom/google/protobuf/ByteString;)Ljava/lang/String;
@@ -300,7 +276,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     check-cast p2, [B
 
@@ -310,17 +285,14 @@
 
     invoke-virtual {p3, p1}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 8
     :goto_0
     invoke-virtual {p3, v0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     goto :goto_2
 
-    .line 9
     :pswitch_3
     invoke-virtual {p3, v0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 10
     iget-boolean p1, p0, Lcom/google/protobuf/TextFormat$Printer;->escapeNonAscii:Z
 
     check-cast p2, Ljava/lang/String;
@@ -341,12 +313,10 @@
     :goto_1
     invoke-virtual {p3, p1}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 11
     invoke-virtual {p3, v0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     goto :goto_2
 
-    .line 12
     :pswitch_4
     check-cast p2, Ljava/lang/Long;
 
@@ -362,7 +332,6 @@
 
     goto :goto_2
 
-    .line 13
     :pswitch_5
     check-cast p2, Ljava/lang/Integer;
 
@@ -378,7 +347,6 @@
 
     goto :goto_2
 
-    .line 14
     :pswitch_6
     check-cast p2, Ljava/lang/Double;
 
@@ -390,7 +358,6 @@
 
     goto :goto_2
 
-    .line 15
     :pswitch_7
     check-cast p2, Ljava/lang/Float;
 
@@ -402,7 +369,6 @@
 
     goto :goto_2
 
-    .line 16
     :pswitch_8
     check-cast p2, Ljava/lang/Boolean;
 
@@ -414,7 +380,6 @@
 
     goto :goto_2
 
-    .line 17
     :pswitch_9
     check-cast p2, Ljava/lang/Long;
 
@@ -426,7 +391,6 @@
 
     goto :goto_2
 
-    .line 18
     :pswitch_a
     check-cast p2, Ljava/lang/Integer;
 
@@ -470,7 +434,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->isExtension()Z
 
     move-result v0
@@ -479,10 +442,8 @@
 
     const-string v0, "["
 
-    .line 2
     invoke-virtual {p3, v0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getContainingType()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -521,7 +482,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getMessageType()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -534,7 +494,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getFullName()Ljava/lang/String;
 
@@ -545,12 +504,10 @@
     :goto_0
     const-string v0, "]"
 
-    .line 6
     invoke-virtual {p3, v0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     goto :goto_1
 
-    .line 7
     :cond_1
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getType()Lcom/google/protobuf/Descriptors$FieldDescriptor$Type;
 
@@ -560,7 +517,6 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 8
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getMessageType()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -573,7 +529,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_2
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getName()Ljava/lang/String;
 
@@ -581,7 +536,6 @@
 
     invoke-virtual {p3, v0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 10
     :goto_1
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getJavaType()Lcom/google/protobuf/Descriptors$FieldDescriptor$JavaType;
 
@@ -591,14 +545,12 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 11
     iget-boolean v0, p0, Lcom/google/protobuf/TextFormat$Printer;->singleLineMode:Z
 
     if-eqz v0, :cond_3
 
     const-string v0, " { "
 
-    .line 12
     invoke-virtual {p3, v0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     goto :goto_2
@@ -606,10 +558,8 @@
     :cond_3
     const-string v0, " {\n"
 
-    .line 13
     invoke-virtual {p3, v0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 14
     invoke-virtual {p3}, Lcom/google/protobuf/TextFormat$TextGenerator;->indent()V
 
     goto :goto_2
@@ -617,14 +567,11 @@
     :cond_4
     const-string v0, ": "
 
-    .line 15
     invoke-virtual {p3, v0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 16
     :goto_2
     invoke-direct {p0, p1, p2, p3}, Lcom/google/protobuf/TextFormat$Printer;->printFieldValue(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
-    .line 17
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getJavaType()Lcom/google/protobuf/Descriptors$FieldDescriptor$JavaType;
 
     move-result-object p1
@@ -633,30 +580,25 @@
 
     if-ne p1, p2, :cond_6
 
-    .line 18
     iget-boolean p1, p0, Lcom/google/protobuf/TextFormat$Printer;->singleLineMode:Z
 
     if-eqz p1, :cond_5
 
     const-string p1, "} "
 
-    .line 19
     invoke-virtual {p3, p1}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     goto :goto_3
 
-    .line 20
     :cond_5
     invoke-virtual {p3}, Lcom/google/protobuf/TextFormat$TextGenerator;->outdent()V
 
     const-string p1, "}\n"
 
-    .line 21
     invoke-virtual {p3, p1}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     goto :goto_3
 
-    .line 22
     :cond_6
     iget-boolean p1, p0, Lcom/google/protobuf/TextFormat$Printer;->singleLineMode:Z
 
@@ -664,7 +606,6 @@
 
     const-string p1, " "
 
-    .line 23
     invoke-virtual {p3, p1}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     goto :goto_3
@@ -672,7 +613,6 @@
     :cond_7
     const-string p1, "\n"
 
-    .line 24
     invoke-virtual {p3, p1}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     :goto_3
@@ -697,7 +637,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p3
@@ -713,7 +652,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v1
@@ -722,13 +660,10 @@
 
     const-string v1, ": "
 
-    .line 3
     invoke-virtual {p4, v1}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 4
     invoke-static {p2, v0, p4}, Lcom/google/protobuf/TextFormat;->access$800(ILjava/lang/Object;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
-    .line 5
     iget-boolean v0, p0, Lcom/google/protobuf/TextFormat$Printer;->singleLineMode:Z
 
     if-eqz v0, :cond_0
@@ -757,7 +692,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Lcom/google/protobuf/UnknownFieldSet;->asMap()Ljava/util/Map;
 
     move-result-object p1
@@ -783,7 +717,6 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 2
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -794,7 +727,6 @@
 
     move-result v1
 
-    .line 3
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -803,7 +735,6 @@
 
     const/4 v3, 0x0
 
-    .line 4
     invoke-virtual {v2}, Lcom/google/protobuf/UnknownFieldSet$Field;->getVarintList()Ljava/util/List;
 
     move-result-object v4
@@ -812,7 +743,6 @@
 
     const/4 v3, 0x5
 
-    .line 5
     invoke-virtual {v2}, Lcom/google/protobuf/UnknownFieldSet$Field;->getFixed32List()Ljava/util/List;
 
     move-result-object v4
@@ -821,7 +751,6 @@
 
     const/4 v3, 0x1
 
-    .line 6
     invoke-virtual {v2}, Lcom/google/protobuf/UnknownFieldSet$Field;->getFixed64List()Ljava/util/List;
 
     move-result-object v4
@@ -830,14 +759,12 @@
 
     const/4 v3, 0x2
 
-    .line 7
     invoke-virtual {v2}, Lcom/google/protobuf/UnknownFieldSet$Field;->getLengthDelimitedList()Ljava/util/List;
 
     move-result-object v4
 
     invoke-direct {p0, v1, v3, v4, p2}, Lcom/google/protobuf/TextFormat$Printer;->printUnknownField(IILjava/util/List;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
-    .line 8
     invoke-virtual {v2}, Lcom/google/protobuf/UnknownFieldSet$Field;->getGroupList()Ljava/util/List;
 
     move-result-object v1
@@ -859,7 +786,6 @@
 
     check-cast v2, Lcom/google/protobuf/UnknownFieldSet;
 
-    .line 9
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -872,14 +798,12 @@
 
     invoke-virtual {p2, v3}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 10
     iget-boolean v3, p0, Lcom/google/protobuf/TextFormat$Printer;->singleLineMode:Z
 
     if-eqz v3, :cond_1
 
     const-string v3, " { "
 
-    .line 11
     invoke-virtual {p2, v3}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     goto :goto_1
@@ -887,35 +811,28 @@
     :cond_1
     const-string v3, " {\n"
 
-    .line 12
     invoke-virtual {p2, v3}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 13
     invoke-virtual {p2}, Lcom/google/protobuf/TextFormat$TextGenerator;->indent()V
 
-    .line 14
     :goto_1
     invoke-direct {p0, v2, p2}, Lcom/google/protobuf/TextFormat$Printer;->printUnknownFields(Lcom/google/protobuf/UnknownFieldSet;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
-    .line 15
     iget-boolean v2, p0, Lcom/google/protobuf/TextFormat$Printer;->singleLineMode:Z
 
     if-eqz v2, :cond_2
 
     const-string v2, "} "
 
-    .line 16
     invoke-virtual {p2, v2}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
-    .line 17
     :cond_2
     invoke-virtual {p2}, Lcom/google/protobuf/TextFormat$TextGenerator;->outdent()V
 
     const-string v2, "}\n"
 
-    .line 18
     invoke-virtual {p2, v2}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     goto :goto_0
@@ -927,7 +844,6 @@
 .method private setEscapeNonAscii(Z)Lcom/google/protobuf/TextFormat$Printer;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/protobuf/TextFormat$Printer;->escapeNonAscii:Z
 
     return-object p0
@@ -936,7 +852,6 @@
 .method private setSingleLineMode(Z)Lcom/google/protobuf/TextFormat$Printer;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/protobuf/TextFormat$Printer;->singleLineMode:Z
 
     return-object p0

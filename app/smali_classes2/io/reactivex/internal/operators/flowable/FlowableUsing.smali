@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableUsing;
 .super Lio/reactivex/Flowable;
-.source "FlowableUsing.java"
 
 
 # annotations
@@ -73,19 +72,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Flowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableUsing;->resourceSupplier:Ljava/util/concurrent/Callable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/flowable/FlowableUsing;->sourceSupplier:Lio/reactivex/functions/Function;
 
-    .line 4
     iput-object p3, p0, Lio/reactivex/internal/operators/flowable/FlowableUsing;->disposer:Lio/reactivex/functions/Consumer;
 
-    .line 5
     iput-boolean p4, p0, Lio/reactivex/internal/operators/flowable/FlowableUsing;->eager:Z
 
     return-void
@@ -103,7 +97,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableUsing;->resourceSupplier:Ljava/util/concurrent/Callable;
 
@@ -113,7 +106,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 2
     :try_start_1
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableUsing;->sourceSupplier:Lio/reactivex/functions/Function;
 
@@ -131,7 +123,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3
     new-instance v2, Lio/reactivex/internal/operators/flowable/FlowableUsing$UsingSubscriber;
 
     iget-object v3, p0, Lio/reactivex/internal/operators/flowable/FlowableUsing;->disposer:Lio/reactivex/functions/Consumer;
@@ -140,7 +131,6 @@
 
     invoke-direct {v2, p1, v0, v3, v4}, Lio/reactivex/internal/operators/flowable/FlowableUsing$UsingSubscriber;-><init>(Lc/a/c;Ljava/lang/Object;Lio/reactivex/functions/Consumer;Z)V
 
-    .line 4
     invoke-interface {v1, v2}, Lc/a/b;->subscribe(Lc/a/c;)V
 
     return-void
@@ -148,10 +138,8 @@
     :catchall_0
     move-exception v1
 
-    .line 5
     invoke-static {v1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 6
     :try_start_2
     iget-object v2, p0, Lio/reactivex/internal/operators/flowable/FlowableUsing;->disposer:Lio/reactivex/functions/Consumer;
 
@@ -159,7 +147,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 7
     invoke-static {v1, p1}, Lio/reactivex/internal/subscriptions/EmptySubscription;->error(Ljava/lang/Throwable;Lc/a/c;)V
 
     return-void
@@ -167,10 +154,8 @@
     :catchall_1
     move-exception v0
 
-    .line 8
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 9
     new-instance v2, Lio/reactivex/exceptions/CompositeException;
 
     const/4 v3, 0x2
@@ -194,10 +179,8 @@
     :catchall_2
     move-exception v0
 
-    .line 10
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 11
     invoke-static {v0, p1}, Lio/reactivex/internal/subscriptions/EmptySubscription;->error(Ljava/lang/Throwable;Lc/a/c;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry$2;
 .super Ljava/lang/Object;
-.source "MutableTypeToInstanceMap.java"
 
 # interfaces
 .implements Lcom/google/common/base/Function;
@@ -32,7 +31,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +41,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/util/Map$Entry;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry$2;->apply(Ljava/util/Map$Entry;)Ljava/util/Map$Entry;
@@ -65,7 +62,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/reflect/MutableTypeToInstanceMap$UnmodifiableEntry;
 
     const/4 v1, 0x0

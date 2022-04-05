@@ -1,6 +1,5 @@
 .class Lcom/flyco/tablayout/SegmentTabLayout$b;
 .super Ljava/lang/Object;
-.source "SegmentTabLayout.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lcom/flyco/tablayout/SegmentTabLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/flyco/tablayout/SegmentTabLayout$b;->c:Lcom/flyco/tablayout/SegmentTabLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

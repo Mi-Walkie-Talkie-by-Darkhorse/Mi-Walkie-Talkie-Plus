@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;
 .super Ljava/lang/Object;
-.source "SelectDeviceActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/node/h;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;-><init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)V
 
     return-void
@@ -47,7 +44,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -78,7 +74,6 @@
 .method public c(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -103,7 +98,6 @@
 .method public d(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -122,7 +116,6 @@
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->b(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)Landroid/os/Handler;
@@ -133,7 +126,6 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 3
     new-instance p1, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$a;-><init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;)V
@@ -146,7 +138,6 @@
 .method public e(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -171,7 +162,6 @@
 .method public f(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -190,7 +180,6 @@
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->f(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)Z
@@ -201,7 +190,6 @@
 
     if-nez p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-virtual {p1}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -218,13 +206,11 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->b(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;Z)Z
 
-    .line 5
     :goto_0
     new-instance p1, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$g$b;
 

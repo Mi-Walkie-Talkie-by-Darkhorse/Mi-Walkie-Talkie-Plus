@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/AppCompatDelegateImpl$j;
 .super Ljava/lang/Object;
-.source "AppCompatDelegateImpl.java"
 
 # interfaces
 .implements Landroidx/appcompat/c/b$a;
@@ -27,12 +26,10 @@
 .method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;Landroidx/appcompat/c/b$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->a:Landroidx/appcompat/c/b$a;
 
     return-void
@@ -43,19 +40,16 @@
 .method public a(Landroidx/appcompat/c/b;)V
     .locals 2
 
-    .line 3
     iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->a:Landroidx/appcompat/c/b$a;
 
     invoke-interface {v0, p1}, Landroidx/appcompat/c/b$a;->a(Landroidx/appcompat/c/b;)V
 
-    .line 4
     iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     iget-object v0, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->q:Landroid/widget/PopupWindow;
 
     if-eqz v0, :cond_0
 
-    .line 5
     iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->f:Landroid/view/Window;
 
     invoke-virtual {p1}, Landroid/view/Window;->getDecorView()Landroid/view/View;
@@ -68,7 +62,6 @@
 
     invoke-virtual {p1, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 6
     :cond_0
     iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
@@ -76,10 +69,8 @@
 
     if-eqz v0, :cond_1
 
-    .line 7
     invoke-virtual {p1}, Landroidx/appcompat/app/AppCompatDelegateImpl;->n()V
 
-    .line 8
     iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     iget-object v0, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->p:Landroidx/appcompat/widget/ActionBarContextView;
@@ -94,7 +85,6 @@
 
     iput-object v0, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->s:Landroidx/core/view/a0;
 
-    .line 9
     iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->s:Landroidx/core/view/a0;
@@ -105,7 +95,6 @@
 
     invoke-virtual {p1, v0}, Landroidx/core/view/a0;->a(Landroidx/core/view/b0;)Landroidx/core/view/a0;
 
-    .line 10
     :cond_1
     iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
@@ -113,12 +102,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 11
     iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->o:Landroidx/appcompat/c/b;
 
     invoke-interface {v0, p1}, Landroidx/appcompat/app/c;->onSupportActionModeFinished(Landroidx/appcompat/c/b;)V
 
-    .line 12
     :cond_2
     iget-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
@@ -126,7 +113,6 @@
 
     iput-object v0, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->o:Landroidx/appcompat/c/b;
 
-    .line 13
     iget-object p1, p1, Landroidx/appcompat/app/AppCompatDelegateImpl;->v:Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->S(Landroid/view/View;)V
@@ -137,7 +123,6 @@
 .method public a(Landroidx/appcompat/c/b;Landroid/view/Menu;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->a:Landroidx/appcompat/c/b$a;
 
     invoke-interface {v0, p1, p2}, Landroidx/appcompat/c/b$a;->a(Landroidx/appcompat/c/b;Landroid/view/Menu;)Z
@@ -150,7 +135,6 @@
 .method public a(Landroidx/appcompat/c/b;Landroid/view/MenuItem;)Z
     .locals 1
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->a:Landroidx/appcompat/c/b$a;
 
     invoke-interface {v0, p1, p2}, Landroidx/appcompat/c/b$a;->a(Landroidx/appcompat/c/b;Landroid/view/MenuItem;)Z
@@ -163,14 +147,12 @@
 .method public b(Landroidx/appcompat/c/b;Landroid/view/Menu;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->b:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     iget-object v0, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->v:Landroid/view/ViewGroup;
 
     invoke-static {v0}, Landroidx/core/view/ViewCompat;->S(Landroid/view/View;)V
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$j;->a:Landroidx/appcompat/c/b$a;
 
     invoke-interface {v0, p1, p2}, Landroidx/appcompat/c/b$a;->b(Landroidx/appcompat/c/b;Landroid/view/Menu;)Z

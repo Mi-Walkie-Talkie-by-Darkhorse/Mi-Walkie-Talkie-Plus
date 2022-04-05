@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/service/ShareLocationService$a;
 .super Ljava/lang/Object;
-.source "ShareLocationService.java"
 
 # interfaces
 .implements Landroid/content/ServiceConnection;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$a;->a:Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 3
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$a;->a:Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 
     check-cast p2, Lcom/ifengyu/intercom/node/btle/BtleCentralService$a;
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->a(Lcom/ifengyu/intercom/ui/service/ShareLocationService;Lcom/ifengyu/intercom/node/btle/BtleCentralService$a;)Lcom/ifengyu/intercom/node/btle/BtleCentralService$a;
 
-    .line 2
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide p1
@@ -84,7 +80,6 @@
 
     add-long/2addr p1, v0
 
-    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
@@ -93,7 +88,6 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$a;->a:Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->c(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)Landroid/app/AlarmManager;
@@ -115,7 +109,6 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$a;->a:Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->c(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)Landroid/app/AlarmManager;
@@ -132,7 +125,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$a;->a:Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 

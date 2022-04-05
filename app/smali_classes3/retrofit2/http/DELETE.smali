@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lretrofit2/http/DELETE;
 .super Ljava/lang/Object;
-.source "DELETE.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

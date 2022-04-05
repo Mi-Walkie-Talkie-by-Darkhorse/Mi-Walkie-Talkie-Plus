@@ -1,6 +1,5 @@
 .class Lcom/umeng/umcrash/UMCrash$CrashClientImpl;
 .super Ljava/lang/Object;
-.source "UMCrash.java"
 
 # interfaces
 .implements Lcom/uc/crashsdk/export/ICrashClient;
@@ -21,7 +20,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 .method synthetic constructor <init>(Lcom/umeng/umcrash/UMCrash$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/umeng/umcrash/UMCrash$CrashClientImpl;-><init>()V
 
     return-void
@@ -67,7 +64,6 @@
 
     const-string p2, "um_action_log"
 
-    .line 1
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
@@ -76,7 +72,6 @@
 
     if-eqz p2, :cond_3
 
-    .line 2
     :try_start_0
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$000()Ljava/lang/Object;
 
@@ -86,7 +81,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     :try_start_1
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$100()Ljava/util/ArrayList;
 
@@ -104,7 +98,6 @@
 
     if-lez p2, :cond_2
 
-    .line 4
     new-instance p2, Lorg/json/JSONObject;
 
     invoke-direct {p2}, Lorg/json/JSONObject;-><init>()V
@@ -113,22 +106,18 @@
 
     const/4 v2, 0x0
 
-    .line 5
     invoke-virtual {p2, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     const-string v1, "action_name"
 
     const-string v3, "page_view"
 
-    .line 6
     invoke-virtual {p2, v1, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 7
     new-instance v1, Lorg/json/JSONArray;
 
     invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
 
-    .line 8
     :goto_0
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$100()Ljava/util/ArrayList;
 
@@ -140,7 +129,6 @@
 
     if-ge v2, v3, :cond_1
 
-    .line 9
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$100()Ljava/util/ArrayList;
 
     move-result-object v3
@@ -153,17 +141,14 @@
 
     if-eqz v3, :cond_0
 
-    .line 10
     new-instance v4, Lorg/json/JSONObject;
 
     invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
 
     const-string v5, "name"
 
-    .line 11
     invoke-virtual {v4, v5, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 12
     invoke-virtual {v1, v4}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     :cond_0
@@ -174,22 +159,18 @@
     :cond_1
     const-string v2, "action_parameter"
 
-    .line 13
     invoke-virtual {p2, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 14
     invoke-virtual {p2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 15
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$200()Z
 
     move-result p2
 
     if-eqz p2, :cond_2
 
-    .line 16
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$300()Ljava/lang/String;
 
     move-result-object p2
@@ -210,7 +191,6 @@
 
     invoke-static {p2, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 17
     :cond_2
     monitor-exit p1
 
@@ -235,14 +215,12 @@
     :cond_3
     const-string p2, "um_umid"
 
-    .line 18
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
 
     if-eqz p2, :cond_4
 
-    .line 19
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$400()Landroid/content/Context;
 
     move-result-object p1
@@ -256,21 +234,18 @@
     :cond_4
     const-string p2, "um_user_string"
 
-    .line 20
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_7
 
-    .line 21
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$600()Lcom/umeng/umcrash/UMCrashCallback;
 
     move-result-object p1
 
     if-eqz p1, :cond_7
 
-    .line 22
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$600()Lcom/umeng/umcrash/UMCrashCallback;
 
     move-result-object p1
@@ -283,7 +258,6 @@
 
     return-object v0
 
-    .line 23
     :cond_5
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -299,7 +273,6 @@
 
     if-le p2, v0, :cond_6
 
-    .line 24
     invoke-static {p1, v0}, Lcom/umeng/umcrash/UMCrashUtils;->splitByByte(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1

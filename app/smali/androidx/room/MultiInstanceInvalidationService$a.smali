@@ -1,6 +1,5 @@
 .class Landroidx/room/MultiInstanceInvalidationService$a;
 .super Landroid/os/RemoteCallbackList;
-.source "MultiInstanceInvalidationService.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>(Landroidx/room/MultiInstanceInvalidationService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/room/MultiInstanceInvalidationService$a;->a:Landroidx/room/MultiInstanceInvalidationService;
 
     invoke-direct {p0}, Landroid/os/RemoteCallbackList;-><init>()V
@@ -43,7 +41,6 @@
 .method public a(Landroidx/room/d;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Landroidx/room/MultiInstanceInvalidationService$a;->a:Landroidx/room/MultiInstanceInvalidationService;
 
     iget-object p1, p1, Landroidx/room/MultiInstanceInvalidationService;->b:Ljava/util/HashMap;
@@ -66,7 +63,6 @@
 .method public bridge synthetic onCallbackDied(Landroid/os/IInterface;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Landroidx/room/d;
 
     invoke-virtual {p0, p1, p2}, Landroidx/room/MultiInstanceInvalidationService$a;->a(Landroidx/room/d;Ljava/lang/Object;)V

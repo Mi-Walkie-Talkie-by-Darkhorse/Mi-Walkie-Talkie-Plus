@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/library/widget/view/SwitchButton;
 .super Landroid/view/View;
-.source "SwitchButton.java"
 
 # interfaces
 .implements Landroid/widget/Checkable;
@@ -123,7 +122,6 @@
 
     const/high16 v0, 0x42680000    # 58.0f
 
-    .line 1
     invoke-static {v0}, Lcom/ifengyu/library/widget/view/SwitchButton;->b(F)I
 
     move-result v0
@@ -132,7 +130,6 @@
 
     const/high16 v0, 0x42100000    # 36.0f
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/library/widget/view/SwitchButton;->b(F)I
 
     move-result v0
@@ -145,10 +142,8 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 2
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
@@ -157,40 +152,32 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
-    .line 4
     new-instance v1, Landroid/animation/ArgbEvaluator;
 
     invoke-direct {v1}, Landroid/animation/ArgbEvaluator;-><init>()V
 
     iput-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->I:Landroid/animation/ArgbEvaluator;
 
-    .line 5
     iput-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->N:Z
 
-    .line 6
     iput-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->O:Z
 
-    .line 7
     iput-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->P:Z
 
-    .line 8
     new-instance v0, Lcom/ifengyu/library/widget/view/SwitchButton$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$a;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     iput-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->S:Ljava/lang/Runnable;
 
-    .line 9
     new-instance v0, Lcom/ifengyu/library/widget/view/SwitchButton$b;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$b;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     iput-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->T:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
-    .line 10
     new-instance v0, Lcom/ifengyu/library/widget/view/SwitchButton$c;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$c;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
@@ -199,7 +186,6 @@
 
     const/4 v0, 0x0
 
-    .line 11
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -208,10 +194,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
 
-    .line 12
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 13
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
@@ -220,47 +204,38 @@
 
     const/4 v0, 0x0
 
-    .line 14
     iput v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
-    .line 15
     new-instance v1, Landroid/animation/ArgbEvaluator;
 
     invoke-direct {v1}, Landroid/animation/ArgbEvaluator;-><init>()V
 
     iput-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->I:Landroid/animation/ArgbEvaluator;
 
-    .line 16
     iput-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->N:Z
 
-    .line 17
     iput-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->O:Z
 
-    .line 18
     iput-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->P:Z
 
-    .line 19
     new-instance v0, Lcom/ifengyu/library/widget/view/SwitchButton$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$a;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     iput-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->S:Ljava/lang/Runnable;
 
-    .line 20
     new-instance v0, Lcom/ifengyu/library/widget/view/SwitchButton$b;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$b;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     iput-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->T:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
-    .line 21
     new-instance v0, Lcom/ifengyu/library/widget/view/SwitchButton$c;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$c;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     iput-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->U:Landroid/animation/Animator$AnimatorListener;
 
-    .line 22
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -269,10 +244,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
 
-    .line 23
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 24
     new-instance p3, Landroid/graphics/RectF;
 
     invoke-direct {p3}, Landroid/graphics/RectF;-><init>()V
@@ -281,47 +254,38 @@
 
     const/4 p3, 0x0
 
-    .line 25
     iput p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
-    .line 26
     new-instance v0, Landroid/animation/ArgbEvaluator;
 
     invoke-direct {v0}, Landroid/animation/ArgbEvaluator;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->I:Landroid/animation/ArgbEvaluator;
 
-    .line 27
     iput-boolean p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->N:Z
 
-    .line 28
     iput-boolean p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->O:Z
 
-    .line 29
     iput-boolean p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->P:Z
 
-    .line 30
     new-instance p3, Lcom/ifengyu/library/widget/view/SwitchButton$a;
 
     invoke-direct {p3, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$a;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     iput-object p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->S:Ljava/lang/Runnable;
 
-    .line 31
     new-instance p3, Lcom/ifengyu/library/widget/view/SwitchButton$b;
 
     invoke-direct {p3, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$b;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     iput-object p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->T:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
-    .line 32
     new-instance p3, Lcom/ifengyu/library/widget/view/SwitchButton$c;
 
     invoke-direct {p3, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$c;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     iput-object p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->U:Landroid/animation/Animator$AnimatorListener;
 
-    .line 33
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -333,10 +297,8 @@
         value = 0x15
     .end annotation
 
-    .line 34
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 35
     new-instance p3, Landroid/graphics/RectF;
 
     invoke-direct {p3}, Landroid/graphics/RectF;-><init>()V
@@ -345,47 +307,38 @@
 
     const/4 p3, 0x0
 
-    .line 36
     iput p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
-    .line 37
     new-instance p4, Landroid/animation/ArgbEvaluator;
 
     invoke-direct {p4}, Landroid/animation/ArgbEvaluator;-><init>()V
 
     iput-object p4, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->I:Landroid/animation/ArgbEvaluator;
 
-    .line 38
     iput-boolean p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->N:Z
 
-    .line 39
     iput-boolean p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->O:Z
 
-    .line 40
     iput-boolean p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->P:Z
 
-    .line 41
     new-instance p3, Lcom/ifengyu/library/widget/view/SwitchButton$a;
 
     invoke-direct {p3, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$a;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     iput-object p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->S:Ljava/lang/Runnable;
 
-    .line 42
     new-instance p3, Lcom/ifengyu/library/widget/view/SwitchButton$b;
 
     invoke-direct {p3, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$b;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     iput-object p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->T:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
-    .line 43
     new-instance p3, Lcom/ifengyu/library/widget/view/SwitchButton$c;
 
     invoke-direct {p3, p0}, Lcom/ifengyu/library/widget/view/SwitchButton$c;-><init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     iput-object p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->U:Landroid/animation/Animator$AnimatorListener;
 
-    .line 44
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -394,12 +347,10 @@
 .method private static a(F)F
     .locals 2
 
-    .line 105
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    .line 106
     invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
     move-result-object v0
@@ -420,7 +371,6 @@
 
     return p2
 
-    .line 107
     :cond_0
     invoke-virtual {p0, p1, p2}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
@@ -436,7 +386,6 @@
 
     return p2
 
-    .line 108
     :cond_0
     invoke-virtual {p0, p1, p2}, Landroid/content/res/TypedArray;->getColor(II)I
 
@@ -448,7 +397,6 @@
 .method static synthetic a(Lcom/ifengyu/library/widget/view/SwitchButton;I)I
     .locals 0
 
-    .line 3
     iput p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
     return p1
@@ -457,17 +405,14 @@
 .method private a()V
     .locals 2
 
-    .line 101
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->Q:Lcom/ifengyu/library/widget/view/SwitchButton$d;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x1
 
-    .line 102
     iput-boolean v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->P:Z
 
-    .line 103
     invoke-virtual {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->isChecked()Z
 
     move-result v1
@@ -477,7 +422,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 104
     iput-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->P:Z
 
     return-void
@@ -490,7 +434,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 4
     sget-object v1, Lcom/ifengyu/library/R$styleable;->SwitchButton:[I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -502,7 +445,6 @@
     :cond_0
     move-object p1, v0
 
-    .line 5
     :goto_0
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_shadow_effect:I
 
@@ -514,7 +456,6 @@
 
     iput-boolean p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->L:Z
 
-    .line 6
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_uncheckcircle_color:I
 
     const v2, -0x555556
@@ -525,17 +466,14 @@
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->s:I
 
-    .line 7
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_uncheckcircle_width:I
 
     const/high16 v2, 0x3fc00000    # 1.5f
 
-    .line 8
     invoke-static {v2}, Lcom/ifengyu/library/widget/view/SwitchButton;->b(F)I
 
     move-result v3
 
-    .line 9
     invoke-static {p1, p2, v3}, Lcom/ifengyu/library/widget/view/SwitchButton;->c(Landroid/content/res/TypedArray;II)I
 
     move-result p2
@@ -544,77 +482,64 @@
 
     const/high16 p2, 0x41200000    # 10.0f
 
-    .line 10
     invoke-static {p2}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(F)F
 
     move-result p2
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->u:F
 
-    .line 11
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_uncheckcircle_radius:I
 
     const/high16 v3, 0x40800000    # 4.0f
 
-    .line 12
     invoke-static {v3}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(F)F
 
     move-result v4
 
-    .line 13
     invoke-static {p1, p2, v4}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/content/res/TypedArray;IF)F
 
     move-result p2
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->v:F
 
-    .line 14
     invoke-static {v3}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(F)F
 
     move-result p2
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->w:F
 
-    .line 15
     invoke-static {v3}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(F)F
 
     move-result p2
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->x:F
 
-    .line 16
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_shadow_radius:I
 
     const/high16 v3, 0x40200000    # 2.5f
 
-    .line 17
     invoke-static {v3}, Lcom/ifengyu/library/widget/view/SwitchButton;->b(F)I
 
     move-result v3
 
-    .line 18
     invoke-static {p1, p2, v3}, Lcom/ifengyu/library/widget/view/SwitchButton;->c(Landroid/content/res/TypedArray;II)I
 
     move-result p2
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->a:I
 
-    .line 19
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_shadow_offset:I
 
-    .line 20
     invoke-static {v2}, Lcom/ifengyu/library/widget/view/SwitchButton;->b(F)I
 
     move-result v2
 
-    .line 21
     invoke-static {p1, p2, v2}, Lcom/ifengyu/library/widget/view/SwitchButton;->c(Landroid/content/res/TypedArray;II)I
 
     move-result p2
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->b:I
 
-    .line 22
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_shadow_color:I
 
     const/high16 v2, 0x33000000
@@ -625,7 +550,6 @@
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->c:I
 
-    .line 23
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_uncheck_color:I
 
     const v2, -0x222223
@@ -636,7 +560,6 @@
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->m:I
 
-    .line 24
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_checked_color:I
 
     const v2, -0xae2c99
@@ -647,24 +570,20 @@
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->n:I
 
-    .line 25
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_border_width:I
 
     const/high16 v2, 0x3f800000    # 1.0f
 
-    .line 26
     invoke-static {v2}, Lcom/ifengyu/library/widget/view/SwitchButton;->b(F)I
 
     move-result v3
 
-    .line 27
     invoke-static {p1, p2, v3}, Lcom/ifengyu/library/widget/view/SwitchButton;->c(Landroid/content/res/TypedArray;II)I
 
     move-result p2
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->o:I
 
-    .line 28
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_checkline_color:I
 
     const/4 v3, -0x1
@@ -675,15 +594,12 @@
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->p:I
 
-    .line 29
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_checkline_width:I
 
-    .line 30
     invoke-static {v2}, Lcom/ifengyu/library/widget/view/SwitchButton;->b(F)I
 
     move-result v2
 
-    .line 31
     invoke-static {p1, p2, v2}, Lcom/ifengyu/library/widget/view/SwitchButton;->c(Landroid/content/res/TypedArray;II)I
 
     move-result p2
@@ -692,21 +608,18 @@
 
     const/high16 p2, 0x40c00000    # 6.0f
 
-    .line 32
     invoke-static {p2}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(F)F
 
     move-result p2
 
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->r:F
 
-    .line 33
     sget p2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_button_color:I
 
     invoke-static {p1, p2, v3}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/content/res/TypedArray;II)I
 
     move-result p2
 
-    .line 34
     sget v2, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_effect_duration:I
 
     const/16 v4, 0x12c
@@ -715,7 +628,6 @@
 
     move-result v2
 
-    .line 35
     sget v4, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_checked:I
 
     const/4 v5, 0x0
@@ -726,7 +638,6 @@
 
     iput-boolean v4, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->J:Z
 
-    .line 36
     sget v4, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_show_indicator:I
 
     invoke-static {p1, v4, v1}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/content/res/TypedArray;IZ)Z
@@ -735,7 +646,6 @@
 
     iput-boolean v4, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->M:Z
 
-    .line 37
     sget v4, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_background:I
 
     invoke-static {p1, v4, v3}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/content/res/TypedArray;II)I
@@ -744,7 +654,6 @@
 
     iput v3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->l:I
 
-    .line 38
     sget v3, Lcom/ifengyu/library/R$styleable;->SwitchButton_sb_enable_effect:I
 
     invoke-static {p1, v3, v1}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/content/res/TypedArray;IZ)Z
@@ -755,10 +664,8 @@
 
     if-eqz p1, :cond_1
 
-    .line 39
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 40
     :cond_1
     new-instance p1, Landroid/graphics/Paint;
 
@@ -766,22 +673,18 @@
 
     iput-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
-    .line 41
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1, v1}, Landroid/graphics/Paint;-><init>(I)V
 
     iput-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->A:Landroid/graphics/Paint;
 
-    .line 42
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 43
     iget-boolean p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->L:Z
 
     if-eqz p1, :cond_2
 
-    .line 44
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->A:Landroid/graphics/Paint;
 
     iget p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->a:I
@@ -798,7 +701,6 @@
 
     invoke-virtual {p1, p2, v3, v4, v6}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
 
-    .line 45
     :cond_2
     new-instance p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
@@ -806,14 +708,12 @@
 
     iput-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
-    .line 46
     new-instance p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-direct {p1}, Lcom/ifengyu/library/widget/view/SwitchButton$e;-><init>()V
 
     iput-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->D:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
-    .line 47
     new-instance p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-direct {p1}, Lcom/ifengyu/library/widget/view/SwitchButton$e;-><init>()V
@@ -824,7 +724,6 @@
 
     new-array p1, p1, [F
 
-    .line 48
     fill-array-data p1, :array_0
 
     invoke-static {p1}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
@@ -835,42 +734,34 @@
 
     int-to-long v2, v2
 
-    .line 49
     invoke-virtual {p1, v2, v3}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 50
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
     invoke-virtual {p1, v5}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 51
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
     iget-object p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->T:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
     invoke-virtual {p1, p2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 52
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
     iget-object p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->U:Landroid/animation/Animator$AnimatorListener;
 
     invoke-virtual {p1, p2}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 53
     invoke-super {p0, v1}, Landroid/view/View;->setClickable(Z)V
 
-    .line 54
     invoke-virtual {p0, v5, v5, v5, v5}, Lcom/ifengyu/library/widget/view/SwitchButton;->setPadding(IIII)V
 
-    .line 55
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 p2, 0xb
 
     if-lt p1, p2, :cond_3
 
-    .line 56
     invoke-virtual {p0, v1, v0}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
     :cond_3
@@ -888,35 +779,30 @@
 .method private a(Landroid/graphics/Canvas;FF)V
     .locals 2
 
-    .line 74
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->e:F
 
     iget-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->A:Landroid/graphics/Paint;
 
     invoke-virtual {p1, p2, p3, v0, v1}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 75
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 76
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 77
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     const v1, -0x222223
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 78
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->e:F
 
     iget-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
@@ -931,7 +817,6 @@
 
     move-object v0, p0
 
-    .line 66
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x15
@@ -956,12 +841,10 @@
 
     move-object/from16 v11, p8
 
-    .line 67
     invoke-virtual/range {v3 .. v11}, Landroid/graphics/Canvas;->drawArc(FFFFFFZLandroid/graphics/Paint;)V
 
     goto :goto_0
 
-    .line 68
     :cond_0
     iget-object v1, v0, Lcom/ifengyu/library/widget/view/SwitchButton;->F:Landroid/graphics/RectF;
 
@@ -975,7 +858,6 @@
 
     invoke-virtual {v1, p2, p3, v4, v5}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 69
     iget-object v3, v0, Lcom/ifengyu/library/widget/view/SwitchButton;->F:Landroid/graphics/RectF;
 
     const/4 v6, 0x1
@@ -997,7 +879,6 @@
 .method private a(Landroid/graphics/Canvas;FFFFFLandroid/graphics/Paint;)V
     .locals 8
 
-    .line 70
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
@@ -1020,18 +901,15 @@
 
     move-object v7, p7
 
-    .line 71
     invoke-virtual/range {v0 .. v7}, Landroid/graphics/Canvas;->drawRoundRect(FFFFFFLandroid/graphics/Paint;)V
 
     goto :goto_0
 
-    .line 72
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->F:Landroid/graphics/RectF;
 
     invoke-virtual {v0, p2, p3, p4, p5}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 73
     iget-object p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->F:Landroid/graphics/RectF;
 
     invoke-virtual {p1, p2, p6, p6, p7}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
@@ -1043,7 +921,6 @@
 .method private a(ZZ)V
     .locals 1
 
-    .line 80
     invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 
     move-result v0
@@ -1052,18 +929,15 @@
 
     return-void
 
-    .line 81
     :cond_0
     iget-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->P:Z
 
     if-nez v0, :cond_9
 
-    .line 82
     iget-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->O:Z
 
     if-nez v0, :cond_2
 
-    .line 83
     iget-boolean p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->J:Z
 
     xor-int/lit8 p1, p1, 0x1
@@ -1072,13 +946,11 @@
 
     if-eqz p2, :cond_1
 
-    .line 84
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->a()V
 
     :cond_1
     return-void
 
-    .line 85
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
@@ -1088,12 +960,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 86
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
 
-    .line 87
     :cond_3
     iget-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->K:Z
 
@@ -1106,37 +976,31 @@
     :cond_4
     const/4 p1, 0x5
 
-    .line 88
     iput p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
-    .line 89
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->D:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     iget-object p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-static {p1, p2}, Lcom/ifengyu/library/widget/view/SwitchButton$e;->a(Lcom/ifengyu/library/widget/view/SwitchButton$e;Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
-    .line 90
     invoke-virtual {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->isChecked()Z
 
     move-result p1
 
     if-eqz p1, :cond_5
 
-    .line 91
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->E:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-direct {p0, p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->setUncheckViewState(Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
     goto :goto_0
 
-    .line 92
     :cond_5
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->E:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-direct {p0, p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->setCheckedViewState(Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
-    .line 93
     :goto_0
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
@@ -1144,7 +1008,6 @@
 
     return-void
 
-    .line 94
     :cond_6
     :goto_1
     iget-boolean p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->J:Z
@@ -1153,39 +1016,33 @@
 
     iput-boolean p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->J:Z
 
-    .line 95
     invoke-virtual {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->isChecked()Z
 
     move-result p1
 
     if-eqz p1, :cond_7
 
-    .line 96
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-direct {p0, p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->setCheckedViewState(Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
     goto :goto_2
 
-    .line 97
     :cond_7
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-direct {p0, p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->setUncheckViewState(Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
-    .line 98
     :goto_2
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     if-eqz p2, :cond_8
 
-    .line 99
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->a()V
 
     :cond_8
     return-void
 
-    .line 100
     :cond_9
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -1203,7 +1060,6 @@
 
     return p2
 
-    .line 109
     :cond_0
     invoke-virtual {p0, p1, p2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -1215,7 +1071,6 @@
 .method static synthetic a(Lcom/ifengyu/library/widget/view/SwitchButton;)Z
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->c()Z
 
     move-result p0
@@ -1226,7 +1081,6 @@
 .method static synthetic a(Lcom/ifengyu/library/widget/view/SwitchButton;Z)Z
     .locals 0
 
-    .line 2
     iput-boolean p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->J:Z
 
     return p1
@@ -1235,7 +1089,6 @@
 .method private static b(F)I
     .locals 0
 
-    .line 4
     invoke-static {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(F)F
 
     move-result p0
@@ -1252,7 +1105,6 @@
 
     return p2
 
-    .line 5
     :cond_0
     invoke-virtual {p0, p1, p2}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -1264,7 +1116,6 @@
 .method static synthetic b(Lcom/ifengyu/library/widget/view/SwitchButton;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->m:I
 
     return p0
@@ -1273,7 +1124,6 @@
 .method private b(Landroid/graphics/Canvas;)V
     .locals 8
 
-    .line 2
     iget v2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->s:I
 
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->t:I
@@ -1304,7 +1154,6 @@
 .method private b()Z
     .locals 2
 
-    .line 3
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
     const/4 v1, 0x2
@@ -1329,7 +1178,6 @@
 
     return p2
 
-    .line 3
     :cond_0
     invoke-virtual {p0, p1, p2}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
 
@@ -1341,7 +1189,6 @@
 .method static synthetic c(Lcom/ifengyu/library/widget/view/SwitchButton;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->n:I
 
     return p0
@@ -1350,7 +1197,6 @@
 .method private c()Z
     .locals 1
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
     if-eqz v0, :cond_0
@@ -1369,7 +1215,6 @@
 .method static synthetic d(Lcom/ifengyu/library/widget/view/SwitchButton;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->d:F
 
     return p0
@@ -1378,7 +1223,6 @@
 .method private d()Z
     .locals 3
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
     const/4 v1, 0x1
@@ -1402,7 +1246,6 @@
 .method static synthetic e(Lcom/ifengyu/library/widget/view/SwitchButton;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->p:I
 
     return p0
@@ -1411,7 +1254,6 @@
 .method private e()V
     .locals 2
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->b()Z
 
     move-result v0
@@ -1424,7 +1266,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
@@ -1434,7 +1275,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
@@ -1442,37 +1282,31 @@
     :cond_1
     const/4 v0, 0x3
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->D:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     iget-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-static {v0, v1}, Lcom/ifengyu/library/widget/view/SwitchButton$e;->a(Lcom/ifengyu/library/widget/view/SwitchButton$e;Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
-    .line 7
     invoke-virtual {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->isChecked()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->E:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-direct {p0, v0}, Lcom/ifengyu/library/widget/view/SwitchButton;->setCheckedViewState(Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
     goto :goto_0
 
-    .line 9
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->E:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-direct {p0, v0}, Lcom/ifengyu/library/widget/view/SwitchButton;->setUncheckViewState(Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
-    .line 10
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
@@ -1485,7 +1319,6 @@
 .method private f()V
     .locals 3
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->c()Z
 
     move-result v0
@@ -1494,7 +1327,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->N:Z
 
@@ -1502,7 +1334,6 @@
 
     return-void
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
@@ -1512,7 +1343,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
@@ -1520,48 +1350,40 @@
     :cond_2
     const/4 v0, 0x1
 
-    .line 6
     iput v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->D:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     iget-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-static {v0, v1}, Lcom/ifengyu/library/widget/view/SwitchButton$e;->a(Lcom/ifengyu/library/widget/view/SwitchButton$e;Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->E:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     iget-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-static {v0, v1}, Lcom/ifengyu/library/widget/view/SwitchButton$e;->a(Lcom/ifengyu/library/widget/view/SwitchButton$e;Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
-    .line 9
     invoke-virtual {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->isChecked()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->E:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->n:I
 
     iput v1, v0, Lcom/ifengyu/library/widget/view/SwitchButton$e;->b:I
 
-    .line 11
     iget v2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->z:F
 
     iput v2, v0, Lcom/ifengyu/library/widget/view/SwitchButton$e;->a:F
 
-    .line 12
     iput v1, v0, Lcom/ifengyu/library/widget/view/SwitchButton$e;->c:I
 
     goto :goto_0
 
-    .line 13
     :cond_3
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->E:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
@@ -1569,17 +1391,14 @@
 
     iput v1, v0, Lcom/ifengyu/library/widget/view/SwitchButton$e;->b:I
 
-    .line 14
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->y:F
 
     iput v1, v0, Lcom/ifengyu/library/widget/view/SwitchButton$e;->a:F
 
-    .line 15
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->d:F
 
     iput v1, v0, Lcom/ifengyu/library/widget/view/SwitchButton$e;->d:F
 
-    .line 16
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
@@ -1591,7 +1410,6 @@
 .method static synthetic f(Lcom/ifengyu/library/widget/view/SwitchButton;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->a()V
 
     return-void
@@ -1600,7 +1418,6 @@
 .method private g()V
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->isRunning()Z
@@ -1609,7 +1426,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
@@ -1617,37 +1433,31 @@
     :cond_0
     const/4 v0, 0x4
 
-    .line 4
     iput v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->D:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     iget-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-static {v0, v1}, Lcom/ifengyu/library/widget/view/SwitchButton$e;->a(Lcom/ifengyu/library/widget/view/SwitchButton$e;Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
-    .line 6
     invoke-virtual {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->isChecked()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->E:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-direct {p0, v0}, Lcom/ifengyu/library/widget/view/SwitchButton;->setCheckedViewState(Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
     goto :goto_0
 
-    .line 8
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->E:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-direct {p0, v0}, Lcom/ifengyu/library/widget/view/SwitchButton;->setUncheckViewState(Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
-    .line 9
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->H:Landroid/animation/ValueAnimator;
 
@@ -1659,7 +1469,6 @@
 .method static synthetic g(Lcom/ifengyu/library/widget/view/SwitchButton;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->J:Z
 
     return p0
@@ -1668,7 +1477,6 @@
 .method static synthetic h(Lcom/ifengyu/library/widget/view/SwitchButton;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->f()V
 
     return-void
@@ -1677,7 +1485,6 @@
 .method static synthetic i(Lcom/ifengyu/library/widget/view/SwitchButton;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->G:I
 
     return p0
@@ -1686,7 +1493,6 @@
 .method static synthetic j(Lcom/ifengyu/library/widget/view/SwitchButton;)Lcom/ifengyu/library/widget/view/SwitchButton$e;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     return-object p0
@@ -1695,7 +1501,6 @@
 .method static synthetic k(Lcom/ifengyu/library/widget/view/SwitchButton;)Lcom/ifengyu/library/widget/view/SwitchButton$e;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->D:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     return-object p0
@@ -1704,7 +1509,6 @@
 .method static synthetic l(Lcom/ifengyu/library/widget/view/SwitchButton;)Lcom/ifengyu/library/widget/view/SwitchButton$e;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->E:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     return-object p0
@@ -1713,7 +1517,6 @@
 .method static synthetic m(Lcom/ifengyu/library/widget/view/SwitchButton;)Landroid/animation/ArgbEvaluator;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->I:Landroid/animation/ArgbEvaluator;
 
     return-object p0
@@ -1722,7 +1525,6 @@
 .method static synthetic n(Lcom/ifengyu/library/widget/view/SwitchButton;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->y:F
 
     return p0
@@ -1731,7 +1533,6 @@
 .method static synthetic o(Lcom/ifengyu/library/widget/view/SwitchButton;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->z:F
 
     return p0
@@ -1740,22 +1541,18 @@
 .method private setCheckedViewState(Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->d:F
 
     iput v0, p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;->d:F
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->n:I
 
     iput v0, p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;->b:I
 
-    .line 3
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->p:I
 
     iput v0, p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;->c:I
 
-    .line 4
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->z:F
 
     iput v0, p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;->a:F
@@ -1768,20 +1565,16 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;->d:F
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->m:I
 
     iput v0, p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;->b:I
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;->c:I
 
-    .line 4
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->y:F
 
     iput v0, p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;->a:F
@@ -1794,7 +1587,6 @@
 .method protected a(Landroid/graphics/Canvas;)V
     .locals 10
 
-    .line 57
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     iget v3, v0, Lcom/ifengyu/library/widget/view/SwitchButton$e;->c:I
@@ -1845,15 +1637,12 @@
 .method protected a(Landroid/graphics/Canvas;IFFFFFLandroid/graphics/Paint;)V
     .locals 6
 
-    .line 58
     sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p8, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 59
     invoke-virtual {p8, p2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 60
     invoke-virtual {p8, p3}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     move-object v0, p1
@@ -1868,7 +1657,6 @@
 
     move-object v5, p8
 
-    .line 61
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     return-void
@@ -1877,18 +1665,14 @@
 .method protected a(Landroid/graphics/Canvas;IFFFFLandroid/graphics/Paint;)V
     .locals 1
 
-    .line 62
     sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p7, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 63
     invoke-virtual {p7, p2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 64
     invoke-virtual {p7, p3}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 65
     invoke-virtual {p1, p4, p5, p6, p7}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     return-void
@@ -1899,7 +1683,6 @@
 
     const/4 v0, 0x1
 
-    .line 79
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(ZZ)V
 
     return-void
@@ -1908,7 +1691,6 @@
 .method public isChecked()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->J:Z
 
     return v0
@@ -1917,10 +1699,8 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 13
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->o:I
@@ -1929,21 +1709,18 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->l:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 5
     iget v4, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->g:F
 
     iget v5, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->h:F
@@ -1962,21 +1739,18 @@
 
     invoke-direct/range {v2 .. v9}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/graphics/Canvas;FFFFFLandroid/graphics/Paint;)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->m:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 8
     iget v4, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->g:F
 
     iget v5, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->h:F
@@ -1991,15 +1765,12 @@
 
     invoke-direct/range {v2 .. v9}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/graphics/Canvas;FFFFFLandroid/graphics/Paint;)V
 
-    .line 9
     iget-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->M:Z
 
     if-eqz v0, :cond_0
 
-    .line 10
     invoke-direct {p0, p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->b(Landroid/graphics/Canvas;)V
 
-    .line 11
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
@@ -2009,14 +1780,12 @@
 
     mul-float v0, v0, v1
 
-    .line 12
     iget-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 13
     iget-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     iget-object v2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
@@ -2025,7 +1794,6 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 14
     iget-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     iget v2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->o:I
@@ -2040,7 +1808,6 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 15
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->g:F
 
     add-float v6, v1, v0
@@ -2067,21 +1834,18 @@
 
     invoke-direct/range {v4 .. v11}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/graphics/Canvas;FFFFFLandroid/graphics/Paint;)V
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->B:Landroid/graphics/Paint;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 18
     iget v6, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->g:F
 
     iget v7, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->h:F
@@ -2104,7 +1868,6 @@
 
     invoke-direct/range {v4 .. v12}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/graphics/Canvas;FFFFFFLandroid/graphics/Paint;)V
 
-    .line 19
     iget v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->g:F
 
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->d:F
@@ -2127,15 +1890,12 @@
 
     invoke-virtual/range {v4 .. v9}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 20
     iget-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->M:Z
 
     if-eqz v0, :cond_1
 
-    .line 21
     invoke-virtual {p0, p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Landroid/graphics/Canvas;)V
 
-    .line 22
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
@@ -2151,12 +1911,10 @@
 .method protected onMeasure(II)V
     .locals 4
 
-    .line 1
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v0
 
-    .line 2
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v1
@@ -2169,7 +1927,6 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 3
     :cond_0
     sget p1, Lcom/ifengyu/library/widget/view/SwitchButton;->V:I
 
@@ -2182,7 +1939,6 @@
 
     if-ne v1, v2, :cond_3
 
-    .line 4
     :cond_2
     sget p2, Lcom/ifengyu/library/widget/view/SwitchButton;->W:I
 
@@ -2190,7 +1946,6 @@
 
     move-result p2
 
-    .line 5
     :cond_3
     invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
@@ -2200,10 +1955,8 @@
 .method protected onSizeChanged(IIII)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
-    .line 2
     iget p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->a:I
 
     iget p4, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->b:I
@@ -2224,7 +1977,6 @@
 
     sub-float p4, p2, p3
 
-    .line 3
     iput p4, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->f:F
 
     int-to-float p1, p1
@@ -2235,10 +1987,8 @@
 
     mul-float p4, p4, v0
 
-    .line 4
     iput p4, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->d:F
 
-    .line 5
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->o:I
 
     int-to-float v1, v1
@@ -2247,50 +1997,40 @@
 
     iput v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->e:F
 
-    .line 6
     iput p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->g:F
 
-    .line 7
     iput p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->h:F
 
-    .line 8
     iput p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->i:F
 
-    .line 9
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->j:F
 
     add-float/2addr p2, p3
 
     mul-float p2, p2, v0
 
-    .line 10
     iput p2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->k:F
 
     add-float/2addr p3, p4
 
-    .line 11
     iput p3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->y:F
 
     sub-float/2addr p1, p4
 
-    .line 12
     iput p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->z:F
 
-    .line 13
     invoke-virtual {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->isChecked()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     invoke-direct {p0, p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->setCheckedViewState(Lcom/ifengyu/library/widget/view/SwitchButton$e;)V
 
     goto :goto_0
 
-    .line 15
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
@@ -2299,10 +2039,8 @@
     :goto_0
     const/4 p1, 0x1
 
-    .line 16
     iput-boolean p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->O:Z
 
-    .line 17
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
@@ -2311,7 +2049,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 9
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->isEnabled()Z
 
     move-result v0
@@ -2322,7 +2059,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->isClickable()Z
 
@@ -2332,7 +2068,6 @@
 
     return v1
 
-    .line 3
     :cond_1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -2358,49 +2093,41 @@
 
     goto/16 :goto_0
 
-    .line 4
     :cond_2
     iput-boolean v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->N:Z
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->S:Ljava/lang/Runnable;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->d()Z
 
     move-result p1
 
     if-nez p1, :cond_3
 
-    .line 7
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->b()Z
 
     move-result p1
 
     if-eqz p1, :cond_c
 
-    .line 8
     :cond_3
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->e()V
 
     goto/16 :goto_0
 
-    .line 9
     :cond_4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result p1
 
-    .line 10
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->d()Z
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    .line 11
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -2409,7 +2136,6 @@
 
     div-float/2addr p1, v0
 
-    .line 12
     invoke-static {v3, p1}, Ljava/lang/Math;->min(FF)F
 
     move-result p1
@@ -2418,7 +2144,6 @@
 
     move-result p1
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->y:F
@@ -2435,7 +2160,6 @@
 
     goto/16 :goto_0
 
-    .line 14
     :cond_5
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->b()Z
 
@@ -2443,7 +2167,6 @@
 
     if-eqz v0, :cond_c
 
-    .line 15
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -2452,7 +2175,6 @@
 
     div-float/2addr p1, v0
 
-    .line 16
     invoke-static {v3, p1}, Ljava/lang/Math;->min(FF)F
 
     move-result p1
@@ -2461,7 +2183,6 @@
 
     move-result p1
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->C:Lcom/ifengyu/library/widget/view/SwitchButton$e;
 
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->y:F
@@ -2476,24 +2197,20 @@
 
     iput v1, v0, Lcom/ifengyu/library/widget/view/SwitchButton$e;->a:F
 
-    .line 18
     iget-object v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->I:Landroid/animation/ArgbEvaluator;
 
     iget v3, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->m:I
 
-    .line 19
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
     iget v4, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->n:I
 
-    .line 20
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
 
-    .line 21
     invoke-virtual {v1, p1, v3, v4}, Landroid/animation/ArgbEvaluator;->evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -2506,21 +2223,17 @@
 
     iput p1, v0, Lcom/ifengyu/library/widget/view/SwitchButton$e;->b:I
 
-    .line 22
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     goto :goto_0
 
-    .line 23
     :cond_6
     iput-boolean v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->N:Z
 
-    .line 24
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->S:Ljava/lang/Runnable;
 
     invoke-virtual {p0, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 25
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v5
@@ -2535,12 +2248,10 @@
 
     if-gtz v0, :cond_7
 
-    .line 26
     invoke-virtual {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->toggle()V
 
     goto :goto_0
 
-    .line 27
     :cond_7
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->b()Z
 
@@ -2548,12 +2259,10 @@
 
     if-eqz v0, :cond_a
 
-    .line 28
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result p1
 
-    .line 29
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -2562,7 +2271,6 @@
 
     div-float/2addr p1, v0
 
-    .line 30
     invoke-static {v3, p1}, Ljava/lang/Math;->min(FF)F
 
     move-result p1
@@ -2579,7 +2287,6 @@
 
     const/4 v1, 0x1
 
-    .line 31
     :cond_8
     invoke-virtual {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->isChecked()Z
 
@@ -2587,21 +2294,17 @@
 
     if-ne v1, p1, :cond_9
 
-    .line 32
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->e()V
 
     goto :goto_0
 
-    .line 33
     :cond_9
     iput-boolean v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->J:Z
 
-    .line 34
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->g()V
 
     goto :goto_0
 
-    .line 35
     :cond_a
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->d()Z
 
@@ -2609,28 +2312,23 @@
 
     if-eqz p1, :cond_c
 
-    .line 36
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->e()V
 
     goto :goto_0
 
-    .line 37
     :cond_b
     iput-boolean v2, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->N:Z
 
-    .line 38
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->R:J
 
-    .line 39
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->S:Ljava/lang/Runnable;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 40
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->S:Ljava/lang/Runnable;
 
     const-wide/16 v0, 0x64
@@ -2645,19 +2343,16 @@
 .method public setChecked(Z)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/library/widget/view/SwitchButton;->isChecked()Z
 
     move-result v0
 
     if-ne p1, v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
 
-    .line 3
     :cond_0
     iget-boolean p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->K:Z
 
@@ -2671,7 +2366,6 @@
 .method public setEnableEffect(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->K:Z
 
     return-void
@@ -2680,7 +2374,6 @@
 .method public setOnCheckedChangeListener(Lcom/ifengyu/library/widget/view/SwitchButton$d;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->Q:Lcom/ifengyu/library/widget/view/SwitchButton$d;
 
     return-void
@@ -2703,7 +2396,6 @@
 
     const/4 p1, 0x0
 
-    .line 1
     invoke-super {p0, p1, p1, p1, p1}, Landroid/view/View;->setPadding(IIII)V
 
     return-void
@@ -2712,14 +2404,12 @@
 .method public setShadowEffect(Z)V
     .locals 4
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->L:Z
 
     if-ne v0, p1, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iput-boolean p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->L:Z
 
@@ -2727,7 +2417,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->A:Landroid/graphics/Paint;
 
     iget v1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->a:I
@@ -2744,7 +2433,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton;->A:Landroid/graphics/Paint;
 
@@ -2761,7 +2449,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Z)V
 
     return-void

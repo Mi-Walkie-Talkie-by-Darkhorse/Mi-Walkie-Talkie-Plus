@@ -1,6 +1,5 @@
 .class public Lcom/efs/sdk/base/protocol/file/section/KVSection;
 .super Lcom/efs/sdk/base/protocol/file/section/AbsSection;
-.source "SourceFile"
 
 
 # instance fields
@@ -22,22 +21,18 @@
 
     const-string v0, "kv"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/efs/sdk/base/protocol/file/section/AbsSection;-><init>(Ljava/lang/String;)V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/efs/sdk/base/protocol/file/section/KVSection;->dataMap:Ljava/util/Map;
 
-    .line 3
     iput-object p1, p0, Lcom/efs/sdk/base/protocol/file/section/AbsSection;->name:Ljava/lang/String;
 
     const-string p1, "linebreak"
 
-    .line 4
     iput-object p1, p0, Lcom/efs/sdk/base/protocol/file/section/AbsSection;->sep:Ljava/lang/String;
 
     return-void
@@ -48,7 +43,6 @@
 .method public changeToStr()Ljava/lang/String;
     .locals 5
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lcom/efs/sdk/base/protocol/file/section/AbsSection;->getDeclarationLine()Ljava/lang/String;
@@ -59,10 +53,8 @@
 
     const-string v1, "\n"
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3
     iget-object v2, p0, Lcom/efs/sdk/base/protocol/file/section/KVSection;->dataMap:Ljava/util/Map;
 
     invoke-interface {v2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -86,7 +78,6 @@
 
     check-cast v3, Ljava/util/Map$Entry;
 
-    .line 4
     invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
@@ -109,7 +100,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -130,7 +120,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/protocol/file/section/KVSection;->dataMap:Ljava/util/Map;
 
     return-object v0
@@ -139,7 +128,6 @@
 .method public put(Ljava/lang/String;Ljava/lang/Object;)Lcom/efs/sdk/base/protocol/file/section/KVSection;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/protocol/file/section/KVSection;->dataMap:Ljava/util/Map;
 
     invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -164,7 +152,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/protocol/file/section/KVSection;->dataMap:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
@@ -175,7 +162,6 @@
 .method public putNum(Ljava/lang/String;J)Lcom/efs/sdk/base/protocol/file/section/KVSection;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/protocol/file/section/KVSection;->dataMap:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -200,7 +186,6 @@
 .method public putString(Ljava/lang/String;Ljava/lang/String;)Lcom/efs/sdk/base/protocol/file/section/KVSection;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/protocol/file/section/KVSection;->dataMap:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -221,7 +206,6 @@
 .method public putTimestamp(Ljava/lang/String;J)Lcom/efs/sdk/base/protocol/file/section/KVSection;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/protocol/file/section/KVSection;->dataMap:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;

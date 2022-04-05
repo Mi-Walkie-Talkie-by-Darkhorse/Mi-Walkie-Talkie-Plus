@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/df;
 .super Ljava/lang/Object;
-.source "GLShader.java"
 
 
 # instance fields
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,15 +24,12 @@
 .method private static a(ILjava/lang/String;)I
     .locals 0
 
-    .line 8
     invoke-static {p0}, Landroid/opengl/GLES20;->glCreateShader(I)I
 
     move-result p0
 
-    .line 9
     invoke-static {p0, p1}, Landroid/opengl/GLES20;->glShaderSource(ILjava/lang/String;)V
 
-    .line 10
     invoke-static {p0}, Landroid/opengl/GLES20;->glCompileShader(I)V
 
     return p0
@@ -47,7 +42,6 @@
 
     const v0, 0x8b31
 
-    .line 2
     invoke-static {v0, p1}, Lcom/amap/api/col/l3/df;->a(ILjava/lang/String;)I
 
     move-result p1
@@ -56,29 +50,24 @@
 
     const p1, 0x8b30
 
-    .line 3
     invoke-static {p1, p2}, Lcom/amap/api/col/l3/df;->a(ILjava/lang/String;)I
 
     move-result p1
 
     iput p1, p0, Lcom/amap/api/col/l3/df;->f:I
 
-    .line 4
     invoke-static {}, Landroid/opengl/GLES20;->glCreateProgram()I
 
     move-result p1
 
-    .line 5
     iget p2, p0, Lcom/amap/api/col/l3/df;->e:I
 
     invoke-static {p1, p2}, Landroid/opengl/GLES20;->glAttachShader(II)V
 
-    .line 6
     iget p2, p0, Lcom/amap/api/col/l3/df;->f:I
 
     invoke-static {p1, p2}, Landroid/opengl/GLES20;->glAttachShader(II)V
 
-    .line 7
     invoke-static {p1}, Landroid/opengl/GLES20;->glLinkProgram(I)V
 
     return p1
@@ -87,36 +76,29 @@
 .method public final a()V
     .locals 1
 
-    .line 11
     iget v0, p0, Lcom/amap/api/col/l3/df;->d:I
 
     if-ltz v0, :cond_0
 
-    .line 12
     invoke-static {v0}, Landroid/opengl/GLES20;->glDeleteProgram(I)V
 
-    .line 13
     :cond_0
     iget v0, p0, Lcom/amap/api/col/l3/df;->e:I
 
     if-ltz v0, :cond_1
 
-    .line 14
     invoke-static {v0}, Landroid/opengl/GLES20;->glDeleteShader(I)V
 
-    .line 15
     :cond_1
     iget v0, p0, Lcom/amap/api/col/l3/df;->f:I
 
     if-ltz v0, :cond_2
 
-    .line 16
     invoke-static {v0}, Landroid/opengl/GLES20;->glDeleteShader(I)V
 
     :cond_2
     const/4 v0, 0x1
 
-    .line 17
     iput-boolean v0, p0, Lcom/amap/api/col/l3/df;->a:Z
 
     return-void
@@ -125,7 +107,6 @@
 .method protected final a(Ljava/lang/String;)Z
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "amap_sdk_shaders/"
@@ -229,7 +210,6 @@
 .method protected final b(Ljava/lang/String;)I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/df;->d:I
 
     invoke-static {v0, p1}, Landroid/opengl/GLES20;->glGetAttribLocation(ILjava/lang/String;)I
@@ -242,7 +222,6 @@
 .method public final b()Z
     .locals 1
 
-    .line 2
     iget-boolean v0, p0, Lcom/amap/api/col/l3/df;->a:Z
 
     return v0
@@ -251,7 +230,6 @@
 .method protected final c(Ljava/lang/String;)I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/df;->d:I
 
     invoke-static {v0, p1}, Landroid/opengl/GLES20;->glGetUniformLocation(ILjava/lang/String;)I

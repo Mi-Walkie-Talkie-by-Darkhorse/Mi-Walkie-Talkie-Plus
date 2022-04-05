@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$d;
 .super Ljava/lang/Object;
-.source "MobileRegisterActivity.java"
 
 # interfaces
 .implements Lcom/sina/weibo/sdk/net/d;
@@ -27,12 +26,10 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$d;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     iput-object p2, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$d;->b:Ljava/lang/String;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +42,6 @@
 
     const-string v0, "error_description"
 
-    .line 1
     invoke-static {}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->b()Ljava/lang/String;
 
     move-result-object v1
@@ -68,7 +64,6 @@
 
     invoke-static {v1, v2}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$d;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-virtual {v1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
@@ -81,12 +76,10 @@
 
     const-string v4, "\u670d\u52d9\u5668\u5fd9,\u8acb\u7a0d\u5f8c\u518d\u8a66"
 
-    .line 3
     invoke-static {v1, v2, v3, v4}, Lcom/sina/weibo/sdk/utils/f;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4
     :try_start_0
     new-instance v2, Lorg/json/JSONObject;
 
@@ -96,7 +89,6 @@
 
     invoke-direct {v2, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {v2, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -107,7 +99,6 @@
 
     if-nez p1, :cond_0
 
-    .line 6
     invoke-virtual {v2, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -119,10 +110,8 @@
     :catch_0
     move-exception p1
 
-    .line 7
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 8
     :cond_0
     :goto_0
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$d;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
@@ -135,7 +124,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 9
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$d;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-static {p1}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->c(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;)Landroid/widget/TextView;
@@ -144,7 +132,6 @@
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 10
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$d;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-virtual {p1}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->a()V
@@ -157,12 +144,10 @@
 
     const-string v0, "uid"
 
-    .line 11
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$d;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-virtual {v1}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->a()V
 
-    .line 12
     invoke-static {}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->b()Ljava/lang/String;
 
     move-result-object v1
@@ -183,23 +168,19 @@
 
     if-eqz p1, :cond_0
 
-    .line 13
     :try_start_0
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 14
     new-instance p1, Landroid/content/Intent;
 
     invoke-direct {p1}, Landroid/content/Intent;-><init>()V
 
-    .line 15
     new-instance v2, Landroid/os/Bundle;
 
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
-    .line 16
     invoke-virtual {v1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -208,7 +189,6 @@
 
     const-string v0, "phone_num"
 
-    .line 17
     iget-object v3, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$d;->b:Ljava/lang/String;
 
     invoke-virtual {v2, v0, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
@@ -217,7 +197,6 @@
 
     const-string v3, "oauth_token"
 
-    .line 18
     invoke-virtual {v1, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -228,24 +207,20 @@
 
     const-string v3, "expires"
 
-    .line 19
     invoke-virtual {v1, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v2, v0, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 20
     invoke-virtual {p1, v2}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
-    .line 21
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$d;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1, p1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
-    .line 22
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$d;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V
@@ -257,7 +232,6 @@
     :catch_0
     move-exception p1
 
-    .line 23
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_0

@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor$Argument;
 .super Ljava/lang/Object;
-.source "RecordArgumentEditor.java"
 
 
 # annotations
@@ -39,13 +38,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor$Argument;->value:Ljava/lang/Object;
 
-    .line 3
     iput-object p2, p0, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor$Argument;->type:Ljava/lang/Class;
 
     return-void
@@ -63,7 +59,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor$Argument;->type:Ljava/lang/Class;
 
     return-object v0
@@ -72,7 +67,6 @@
 .method public getValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor$Argument;->value:Ljava/lang/Object;
 
     return-object v0
@@ -81,14 +75,12 @@
 .method public putToBundle(Landroid/os/Bundle;Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor$Argument;->type:Ljava/lang/Class;
 
     sget-object v1, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor$Argument;->value:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Integer;
@@ -101,13 +93,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     sget-object v1, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
     if-ne v0, v1, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor$Argument;->value:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Boolean;
@@ -120,13 +110,11 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     sget-object v1, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
     if-ne v0, v1, :cond_2
 
-    .line 6
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor$Argument;->value:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Long;
@@ -139,13 +127,11 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     sget-object v1, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
     if-ne v0, v1, :cond_3
 
-    .line 8
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor$Argument;->value:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Float;
@@ -158,13 +144,11 @@
 
     goto :goto_0
 
-    .line 9
     :cond_3
     const-class v1, Ljava/lang/String;
 
     if-ne v0, v1, :cond_4
 
-    .line 10
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor$Argument;->value:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/String;

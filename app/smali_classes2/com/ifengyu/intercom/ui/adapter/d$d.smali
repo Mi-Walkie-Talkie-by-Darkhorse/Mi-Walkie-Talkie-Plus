@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/d$d;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "DolphinRelayAdapter.java"
 
 
 # annotations
@@ -28,15 +27,12 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/adapter/d;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
     const p1, 0x7f09048d
 
-    .line 3
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -47,7 +43,6 @@
 
     const p1, 0x7f09048e
 
-    .line 4
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -58,7 +53,6 @@
 
     const p1, 0x7f090488
 
-    .line 5
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -75,7 +69,6 @@
 .method public a(I)V
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/d;->a(Lcom/ifengyu/intercom/ui/adapter/d;)Ljava/util/List;
@@ -88,7 +81,6 @@
 
     check-cast p1, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->a:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d()Ljava/lang/String;
@@ -101,7 +93,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/d;->c(Lcom/ifengyu/intercom/ui/adapter/d;)Landroid/text/SpannableStringBuilder;
@@ -110,7 +101,6 @@
 
     invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->clear()V
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f()I
 
     move-result v0
@@ -127,7 +117,6 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f()I
 
     move-result v0
@@ -148,11 +137,9 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/i/p;->d:[Ljava/lang/String;
 
-    .line 7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f()I
 
     move-result v1
@@ -161,7 +148,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_1
     :goto_0
     invoke-static {v4}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
@@ -170,13 +156,11 @@
 
     goto :goto_1
 
-    .line 9
     :cond_2
     invoke-static {v4}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 10
     :goto_1
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
@@ -204,7 +188,6 @@
 
     invoke-virtual {v1, v0}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/d;->c(Lcom/ifengyu/intercom/ui/adapter/d;)Landroid/text/SpannableStringBuilder;
@@ -221,7 +204,6 @@
 
     move-result v0
 
-    .line 12
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/adapter/d;->c(Lcom/ifengyu/intercom/ui/adapter/d;)Landroid/text/SpannableStringBuilder;
@@ -248,7 +230,6 @@
 
     invoke-virtual {v1, v6, v0, v7, v8}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 13
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/adapter/d;->e(Lcom/ifengyu/intercom/ui/adapter/d;)Lcom/ifengyu/intercom/ui/setting/UserChannel;
@@ -261,7 +242,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 14
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->a:Landroid/widget/TextView;
 
     iget-object v6, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
@@ -276,7 +256,6 @@
 
     invoke-virtual {v1, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 15
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->b:Landroid/widget/TextView;
 
     iget-object v6, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
@@ -291,7 +270,6 @@
 
     invoke-virtual {v1, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 16
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->c:Landroid/widget/TextView;
 
     iget-object v6, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
@@ -306,7 +284,6 @@
 
     invoke-virtual {v1, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 17
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/adapter/d;->c(Lcom/ifengyu/intercom/ui/adapter/d;)Landroid/text/SpannableStringBuilder;
@@ -333,7 +310,6 @@
 
     goto :goto_2
 
-    .line 18
     :cond_3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->a:Landroid/widget/TextView;
 
@@ -349,7 +325,6 @@
 
     invoke-virtual {v1, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 19
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->b:Landroid/widget/TextView;
 
     iget-object v6, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
@@ -364,7 +339,6 @@
 
     invoke-virtual {v1, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 20
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->c:Landroid/widget/TextView;
 
     iget-object v6, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
@@ -379,7 +353,6 @@
 
     invoke-virtual {v1, v6}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 21
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/adapter/d;->c(Lcom/ifengyu/intercom/ui/adapter/d;)Landroid/text/SpannableStringBuilder;
@@ -404,7 +377,6 @@
 
     invoke-virtual {v1, v6, v0, v7, v8}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 22
     :goto_2
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->b:Landroid/widget/TextView;
 
@@ -416,7 +388,6 @@
 
     invoke-virtual {v1, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 23
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->b:Landroid/widget/TextView;
 
     iget-object v6, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
@@ -427,7 +398,6 @@
 
     invoke-virtual {v1, v6}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 24
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/adapter/d;->c(Lcom/ifengyu/intercom/ui/adapter/d;)Landroid/text/SpannableStringBuilder;
@@ -436,7 +406,6 @@
 
     invoke-virtual {v1}, Landroid/text/SpannableStringBuilder;->clear()V
 
-    .line 25
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->g()I
 
     move-result v1
@@ -447,7 +416,6 @@
 
     if-ge v1, v6, :cond_6
 
-    .line 26
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->g()I
 
     move-result v1
@@ -468,11 +436,9 @@
 
     goto :goto_3
 
-    .line 27
     :cond_4
     sget-object v1, Lcom/ifengyu/intercom/i/p;->d:[Ljava/lang/String;
 
-    .line 28
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->g()I
 
     move-result v2
@@ -481,7 +447,6 @@
 
     goto :goto_4
 
-    .line 29
     :cond_5
     :goto_3
     invoke-static {v4}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
@@ -490,13 +455,11 @@
 
     goto :goto_4
 
-    .line 30
     :cond_6
     invoke-static {v4}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 31
     :goto_4
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
@@ -522,7 +485,6 @@
 
     invoke-virtual {v2, v1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 32
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/adapter/d;->c(Lcom/ifengyu/intercom/ui/adapter/d;)Landroid/text/SpannableStringBuilder;
@@ -547,7 +509,6 @@
 
     invoke-virtual {v1, v2, v0, v3, v8}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 33
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/adapter/d;->e(Lcom/ifengyu/intercom/ui/adapter/d;)Lcom/ifengyu/intercom/ui/setting/UserChannel;
@@ -560,7 +521,6 @@
 
     if-eqz p1, :cond_7
 
-    .line 34
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/adapter/d;->c(Lcom/ifengyu/intercom/ui/adapter/d;)Landroid/text/SpannableStringBuilder;
@@ -587,7 +547,6 @@
 
     goto :goto_5
 
-    .line 35
     :cond_7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;
 
@@ -613,7 +572,6 @@
 
     invoke-virtual {p1, v1, v0, v2, v8}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 36
     :goto_5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->c:Landroid/widget/TextView;
 
@@ -625,7 +583,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 37
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->c:Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/d$d;->d:Lcom/ifengyu/intercom/ui/adapter/d;

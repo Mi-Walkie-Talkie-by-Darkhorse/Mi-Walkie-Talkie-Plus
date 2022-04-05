@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;
 .super Ljava/lang/Object;
-.source "ConnectDeviceActivity.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->c(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)Ljava/util/List;
@@ -62,19 +59,16 @@
 
     if-eqz p1, :cond_1
 
-    .line 2
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     const/4 p4, 0x0
 
     invoke-static {p2, p4}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->a(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;Z)V
 
-    .line 3
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->d(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)V
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;->getDeviceType()I
 
     move-result p2
@@ -83,7 +77,6 @@
 
     if-ne p2, p4, :cond_0
 
-    .line 5
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->e(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$v;
@@ -100,13 +93,11 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->a(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;)V
 
-    .line 7
     :goto_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
@@ -116,7 +107,6 @@
 
     invoke-virtual {p1, p3}, Lcom/ifengyu/intercom/ui/baseui/c;->a(I)V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->o(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)Lcom/ifengyu/intercom/ui/adapter/a;
@@ -125,7 +115,6 @@
 
     invoke-virtual {p1}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->a(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)Landroid/widget/TextView;
@@ -134,7 +123,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->a(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)Landroid/widget/TextView;

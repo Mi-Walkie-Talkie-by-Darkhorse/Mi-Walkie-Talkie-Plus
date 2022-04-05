@@ -1,6 +1,5 @@
 .class final Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;
 .super Lcom/google/common/hash/AbstractHasher;
-.source "AbstractNonStreamingHashFunction.java"
 
 
 # annotations
@@ -28,12 +27,10 @@
 .method constructor <init>(Lcom/google/common/hash/AbstractNonStreamingHashFunction;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->this$0:Lcom/google/common/hash/AbstractNonStreamingHashFunction;
 
     invoke-direct {p0}, Lcom/google/common/hash/AbstractHasher;-><init>()V
 
-    .line 2
     new-instance p1, Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     invoke-direct {p1, p2}, Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;-><init>(I)V
@@ -48,7 +45,6 @@
 .method public hash()Lcom/google/common/hash/HashCode;
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->this$0:Lcom/google/common/hash/AbstractNonStreamingHashFunction;
 
     iget-object v1, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
@@ -75,7 +71,6 @@
 .method public putByte(B)Lcom/google/common/hash/Hasher;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/ByteArrayOutputStream;->write(I)V
@@ -86,7 +81,6 @@
 .method public bridge synthetic putByte(B)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->putByte(B)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -97,7 +91,6 @@
 .method public putBytes([B)Lcom/google/common/hash/Hasher;
     .locals 1
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
@@ -110,7 +103,6 @@
     :catch_0
     move-exception p1
 
-    .line 4
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-direct {v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -121,7 +113,6 @@
 .method public putBytes([BII)Lcom/google/common/hash/Hasher;
     .locals 1
 
-    .line 5
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/ByteArrayOutputStream;->write([BII)V
@@ -132,7 +123,6 @@
 .method public bridge synthetic putBytes([B)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->putBytes([B)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -143,7 +133,6 @@
 .method public bridge synthetic putBytes([BII)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->putBytes([BII)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -154,14 +143,12 @@
 .method public putChar(C)Lcom/google/common/hash/Hasher;
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     and-int/lit16 v1, p1, 0xff
 
     invoke-virtual {v0, v1}, Ljava/io/ByteArrayOutputStream;->write(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     ushr-int/lit8 p1, p1, 0x8
@@ -176,7 +163,6 @@
 .method public bridge synthetic putChar(C)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->putChar(C)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -187,14 +173,12 @@
 .method public putInt(I)Lcom/google/common/hash/Hasher;
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     and-int/lit16 v1, p1, 0xff
 
     invoke-virtual {v0, v1}, Ljava/io/ByteArrayOutputStream;->write(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     ushr-int/lit8 v1, p1, 0x8
@@ -203,7 +187,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/ByteArrayOutputStream;->write(I)V
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     ushr-int/lit8 v1, p1, 0x10
@@ -212,7 +195,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/ByteArrayOutputStream;->write(I)V
 
-    .line 5
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     ushr-int/lit8 p1, p1, 0x18
@@ -227,7 +209,6 @@
 .method public bridge synthetic putInt(I)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->putInt(I)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -245,7 +226,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     iget-object v1, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     ushr-long v2, p1, v0
@@ -271,7 +251,6 @@
 .method public bridge synthetic putLong(J)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->putLong(J)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -292,7 +271,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p2, p1, p0}, Lcom/google/common/hash/Funnel;->funnel(Ljava/lang/Object;Lcom/google/common/hash/PrimitiveSink;)V
 
     return-object p0
@@ -301,14 +279,12 @@
 .method public putShort(S)Lcom/google/common/hash/Hasher;
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     and-int/lit16 v1, p1, 0xff
 
     invoke-virtual {v0, v1}, Ljava/io/ByteArrayOutputStream;->write(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->stream:Lcom/google/common/hash/AbstractNonStreamingHashFunction$ExposedByteArrayOutputStream;
 
     ushr-int/lit8 p1, p1, 0x8
@@ -323,7 +299,6 @@
 .method public bridge synthetic putShort(S)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractNonStreamingHashFunction$BufferingHasher;->putShort(S)Lcom/google/common/hash/Hasher;
 
     move-result-object p1

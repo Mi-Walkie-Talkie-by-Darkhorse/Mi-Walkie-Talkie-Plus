@@ -1,13 +1,11 @@
 .class public final Lcom/amap/api/col/l3/gl;
 .super Lcom/amap/api/col/l3/gm;
-.source "Base64EncryptProcessor.java"
 
 
 # direct methods
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/gm;-><init>()V
 
     return-void
@@ -16,7 +14,6 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/gm;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/gm;-><init>(Lcom/amap/api/col/l3/gm;)V
 
     return-void
@@ -27,7 +24,6 @@
 .method protected final a([B)[B
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/amap/api/col/l3/gc;->c([B)Ljava/lang/String;
 
     move-result-object p1

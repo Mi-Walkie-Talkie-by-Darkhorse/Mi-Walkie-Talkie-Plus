@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/RxRadioGroup__RadioGroupToggleCheckedConsumerKt$checked$1;
 .super Ljava/lang/Object;
-.source "RadioGroupToggleCheckedConsumer.kt"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -79,7 +78,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -89,14 +87,12 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 2
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/widget/RxRadioGroup__RadioGroupToggleCheckedConsumerKt$checked$1;->receiver$0:Landroid/widget/RadioGroup;
 
     invoke-virtual {p1}, Landroid/widget/RadioGroup;->clearCheck()V
 
     goto :goto_1
 
-    .line 3
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/RxRadioGroup__RadioGroupToggleCheckedConsumerKt$checked$1;->receiver$0:Landroid/widget/RadioGroup;

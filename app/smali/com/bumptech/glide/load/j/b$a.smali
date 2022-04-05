@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/b$a;
 .super Ljava/lang/Object;
-.source "ByteArrayLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/o;
@@ -31,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -60,7 +58,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Lcom/bumptech/glide/load/j/b;
 
     new-instance v0, Lcom/bumptech/glide/load/j/b$a$a;

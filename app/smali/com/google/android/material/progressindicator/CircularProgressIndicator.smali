@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/progressindicator/CircularProgressIndicator;
 .super Lcom/google/android/material/progressindicator/BaseProgressIndicator;
-.source "CircularProgressIndicator.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_CircularProgressIndicator:I
 
     sput v0, Lcom/google/android/material/progressindicator/CircularProgressIndicator;->DEF_STYLE_RES:I
@@ -48,7 +46,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/google/android/material/progressindicator/CircularProgressIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -65,7 +62,6 @@
         .end annotation
     .end param
 
-    .line 2
     sget v0, Lcom/google/android/material/R$attr;->circularProgressIndicatorStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/progressindicator/CircularProgressIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -88,12 +84,10 @@
         .end annotation
     .end param
 
-    .line 3
     sget v0, Lcom/google/android/material/progressindicator/CircularProgressIndicator;->DEF_STYLE_RES:I
 
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/android/material/progressindicator/BaseProgressIndicator;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 4
     invoke-direct {p0}, Lcom/google/android/material/progressindicator/CircularProgressIndicator;->initializeDrawables()V
 
     return-void
@@ -102,7 +96,6 @@
 .method private initializeDrawables()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/ProgressBar;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -117,7 +110,6 @@
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->setIndeterminateDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/ProgressBar;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -148,7 +140,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/progressindicator/CircularProgressIndicator;->createSpec(Landroid/content/Context;Landroid/util/AttributeSet;)Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;
 
     move-result-object p1
@@ -167,7 +158,6 @@
         .end annotation
     .end param
 
-    .line 2
     new-instance v0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;
 
     invoke-direct {v0, p1, p2}, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -178,7 +168,6 @@
 .method public getIndicatorDirection()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->spec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     check-cast v0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;
@@ -193,7 +182,6 @@
     .annotation build Landroidx/annotation/Px;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->spec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     check-cast v0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;
@@ -208,7 +196,6 @@
     .annotation build Landroidx/annotation/Px;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->spec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     check-cast v0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;
@@ -221,14 +208,12 @@
 .method public setIndicatorDirection(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->spec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     check-cast v0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;
 
     iput p1, v0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->indicatorDirection:I
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->invalidate()V
 
     return-void
@@ -241,7 +226,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->spec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     move-object v1, v0
@@ -252,12 +236,10 @@
 
     if-eq v1, p1, :cond_0
 
-    .line 2
     check-cast v0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;
 
     iput p1, v0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->indicatorInset:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->invalidate()V
 
     :cond_0
@@ -271,7 +253,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->spec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     move-object v1, v0
@@ -282,19 +263,16 @@
 
     if-eq v1, p1, :cond_0
 
-    .line 2
     move-object v1, v0
 
     check-cast v1, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;
 
     iput p1, v1, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->indicatorSize:I
 
-    .line 3
     check-cast v0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;
 
     invoke-virtual {v0}, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->validateSpec()V
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->invalidate()V
 
     :cond_0
@@ -304,10 +282,8 @@
 .method public setTrackThickness(I)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->setTrackThickness(I)V
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->spec:Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
 
     check-cast p1, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;

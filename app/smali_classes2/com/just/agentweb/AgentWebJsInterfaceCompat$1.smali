@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/AgentWebJsInterfaceCompat$1;
 .super Ljava/lang/Object;
-.source "AgentWebJsInterfaceCompat.java"
 
 # interfaces
 .implements Landroid/os/Handler$Callback;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/just/agentweb/AgentWebJsInterfaceCompat;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat$1;->this$0:Lcom/just/agentweb/AgentWebJsInterfaceCompat;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat$1;->this$0:Lcom/just/agentweb/AgentWebJsInterfaceCompat;
 
     invoke-static {v0}, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->access$000(Lcom/just/agentweb/AgentWebJsInterfaceCompat;)Ljava/lang/ref/WeakReference;
@@ -53,7 +50,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat$1;->this$0:Lcom/just/agentweb/AgentWebJsInterfaceCompat;
 
     invoke-static {v0}, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->access$000(Lcom/just/agentweb/AgentWebJsInterfaceCompat;)Ljava/lang/ref/WeakReference;
@@ -92,7 +88,6 @@
 
     const-string p1, "uploadFileResult"
 
-    .line 3
     invoke-interface {v0, p1, v2}, Lcom/just/agentweb/QuickCallJs;->quickCallJs(Ljava/lang/String;[Ljava/lang/String;)V
 
     :cond_1

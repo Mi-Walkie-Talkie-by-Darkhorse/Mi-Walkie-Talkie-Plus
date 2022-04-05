@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/j$k;
 .super Ljava/lang/Object;
-.source "NoAlphaItemAnimator.java"
 
 # interfaces
 .implements Landroidx/core/view/b0;
@@ -21,7 +20,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/ui/adapter/j$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/adapter/j$k;-><init>()V
 
     return-void

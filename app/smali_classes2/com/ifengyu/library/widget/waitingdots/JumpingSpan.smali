@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/library/widget/waitingdots/JumpingSpan;
 .super Landroid/text/style/ReplacementSpan;
-.source "JumpingSpan.java"
 
 
 # instance fields
@@ -13,15 +12,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroid/text/style/ReplacementSpan;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/library/widget/waitingdots/JumpingSpan;->translationX:F
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/library/widget/waitingdots/JumpingSpan;->translationY:F
 
     return-void
@@ -34,7 +30,6 @@
 
     move-object v0, p0
 
-    .line 1
     iget v1, v0, Lcom/ifengyu/library/widget/waitingdots/JumpingSpan;->translationX:F
 
     add-float v6, p5, v1
@@ -65,7 +60,6 @@
 .method public getSize(Landroid/graphics/Paint;Ljava/lang/CharSequence;IILandroid/graphics/Paint$FontMetricsInt;)I
     .locals 0
 
-    .line 1
     invoke-virtual {p1, p2, p3, p4}, Landroid/graphics/Paint;->measureText(Ljava/lang/CharSequence;II)F
 
     move-result p1
@@ -78,7 +72,6 @@
 .method public setTranslationX(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/library/widget/waitingdots/JumpingSpan;->translationX:F
 
     return-void
@@ -87,7 +80,6 @@
 .method public setTranslationY(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/library/widget/waitingdots/JumpingSpan;->translationY:F
 
     return-void

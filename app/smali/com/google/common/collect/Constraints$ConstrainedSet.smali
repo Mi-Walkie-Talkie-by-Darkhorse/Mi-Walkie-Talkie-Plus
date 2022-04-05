@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Constraints$ConstrainedSet;
 .super Lcom/google/common/collect/ForwardingSet;
-.source "Constraints.java"
 
 
 # annotations
@@ -57,10 +56,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingSet;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -69,7 +66,6 @@
 
     iput-object p1, p0, Lcom/google/common/collect/Constraints$ConstrainedSet;->delegate:Ljava/util/Set;
 
-    .line 3
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -91,12 +87,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Constraints$ConstrainedSet;->constraint:Lcom/google/common/collect/Constraint;
 
     invoke-interface {v0, p1}, Lcom/google/common/collect/Constraint;->checkElement(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/Constraints$ConstrainedSet;->delegate:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
@@ -116,7 +110,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Constraints$ConstrainedSet;->delegate:Ljava/util/Set;
 
     iget-object v1, p0, Lcom/google/common/collect/Constraints$ConstrainedSet;->constraint:Lcom/google/common/collect/Constraint;
@@ -135,7 +128,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/Constraints$ConstrainedSet;->delegate()Ljava/util/Set;
 
     move-result-object v0
@@ -146,7 +138,6 @@
 .method protected bridge synthetic delegate()Ljava/util/Collection;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/Constraints$ConstrainedSet;->delegate()Ljava/util/Set;
 
     move-result-object v0
@@ -164,7 +155,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/Constraints$ConstrainedSet;->delegate:Ljava/util/Set;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/MapConstraints$ConstrainedListMultimap;
 .super Lcom/google/common/collect/MapConstraints$ConstrainedMultimap;
-.source "MapConstraints.java"
 
 # interfaces
 .implements Lcom/google/common/collect/ListMultimap;
@@ -44,7 +43,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/MapConstraints$ConstrainedMultimap;-><init>(Lcom/google/common/collect/Multimap;Lcom/google/common/collect/MapConstraint;)V
 
     return-void
@@ -55,7 +53,6 @@
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MapConstraints$ConstrainedListMultimap;->get(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
@@ -73,7 +70,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-super {p0, p1}, Lcom/google/common/collect/MapConstraints$ConstrainedMultimap;->get(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p1
@@ -86,7 +82,6 @@
 .method public bridge synthetic removeAll(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MapConstraints$ConstrainedListMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
@@ -106,7 +101,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-super {p0, p1}, Lcom/google/common/collect/ForwardingMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p1
@@ -119,7 +113,6 @@
 .method public bridge synthetic replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/MapConstraints$ConstrainedListMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p1
@@ -139,7 +132,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/MapConstraints$ConstrainedMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
 
     move-result-object p1

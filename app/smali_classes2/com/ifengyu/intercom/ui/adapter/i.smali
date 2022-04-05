@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/intercom/ui/adapter/i;
 .super Lb/d/a/a/a;
-.source "MyCommonAdapter.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public constructor <init>(Landroid/content/Context;ILjava/util/List;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lb/d/a/a/a;-><init>(Landroid/content/Context;ILjava/util/List;)V
 
     return-void
@@ -28,7 +26,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/adapter/i;)Lb/d/a/a/b$c;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lb/d/a/a/b;->d:Lb/d/a/a/b$c;
 
     return-object p0
@@ -37,7 +34,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/adapter/i;)Lb/d/a/a/b$c;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lb/d/a/a/b;->d:Lb/d/a/a/b$c;
 
     return-object p0
@@ -46,7 +42,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/adapter/i;)Lb/d/a/a/b$c;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lb/d/a/a/b;->d:Lb/d/a/a/b$c;
 
     return-object p0
@@ -55,7 +50,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/adapter/i;)Lb/d/a/a/b$c;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lb/d/a/a/b;->d:Lb/d/a/a/b$c;
 
     return-object p0
@@ -66,7 +60,6 @@
 .method protected a(Landroid/view/ViewGroup;Lb/d/a/a/c/c;I)V
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p3}, Lb/d/a/a/b;->a(I)Z
 
     move-result p1
@@ -75,7 +68,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {p2}, Lb/d/a/a/c/c;->a()Landroid/view/View;
 
@@ -87,7 +79,6 @@
 
     invoke-virtual {p1, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 4
     invoke-virtual {p2}, Lb/d/a/a/c/c;->a()Landroid/view/View;
 
     move-result-object p1

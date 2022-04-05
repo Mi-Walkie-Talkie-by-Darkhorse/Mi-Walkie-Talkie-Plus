@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/BlockingFlowableNext;
 .super Ljava/lang/Object;
-.source "BlockingFlowableNext.java"
 
 # interfaces
 .implements Ljava/lang/Iterable;
@@ -48,10 +47,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/BlockingFlowableNext;->source:Lc/a/b;
 
     return-void
@@ -69,12 +66,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/flowable/BlockingFlowableNext$NextSubscriber;
 
     invoke-direct {v0}, Lio/reactivex/internal/operators/flowable/BlockingFlowableNext$NextSubscriber;-><init>()V
 
-    .line 2
     new-instance v1, Lio/reactivex/internal/operators/flowable/BlockingFlowableNext$NextIterator;
 
     iget-object v2, p0, Lio/reactivex/internal/operators/flowable/BlockingFlowableNext;->source:Lc/a/b;

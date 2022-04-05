@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/k/f/a$a;
 .super Ljava/lang/Object;
-.source "ByteBufferGifDecoder.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method a(Lcom/bumptech/glide/gifdecoder/GifDecoder$a;Lcom/bumptech/glide/gifdecoder/b;Ljava/nio/ByteBuffer;I)Lcom/bumptech/glide/gifdecoder/GifDecoder;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/gifdecoder/d;
 
     invoke-direct {v0, p1, p2, p3, p4}, Lcom/bumptech/glide/gifdecoder/d;-><init>(Lcom/bumptech/glide/gifdecoder/GifDecoder$a;Lcom/bumptech/glide/gifdecoder/b;Ljava/nio/ByteBuffer;I)V

@@ -1,6 +1,5 @@
 .class final synthetic Lcom/amap/api/maps/CoordinateConverter$1;
 .super Ljava/lang/Object;
-.source "CoordinateConverter.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/amap/api/maps/CoordinateConverter$CoordType;->values()[Lcom/amap/api/maps/CoordinateConverter$CoordType;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/protobuf/AbstractMessageLite;
 .super Ljava/lang/Object;
-.source "AbstractMessageLite.java"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageLite;
@@ -22,12 +21,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/google/protobuf/AbstractMessageLite;->memoizedHashCode:I
 
     return-void
@@ -41,7 +38,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->isValidUtf8()Z
 
     move-result p0
@@ -50,7 +46,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -66,7 +61,6 @@
 .method newUninitializedMessageException()Lcom/google/protobuf/UninitializedMessageException;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/UninitializedMessageException;
 
     invoke-direct {v0, p0}, Lcom/google/protobuf/UninitializedMessageException;-><init>(Lcom/google/protobuf/MessageLite;)V
@@ -77,7 +71,6 @@
 .method public toByteArray()[B
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-interface {p0}, Lcom/google/protobuf/MessageLite;->getSerializedSize()I
 
@@ -85,15 +78,12 @@
 
     new-array v0, v0, [B
 
-    .line 2
     invoke-static {v0}, Lcom/google/protobuf/CodedOutputStream;->newInstance([B)Lcom/google/protobuf/CodedOutputStream;
 
     move-result-object v1
 
-    .line 3
     invoke-interface {p0, v1}, Lcom/google/protobuf/MessageLite;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
-    .line 4
     invoke-virtual {v1}, Lcom/google/protobuf/CodedOutputStream;->checkNoSpaceLeft()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -103,7 +93,6 @@
     :catch_0
     move-exception v0
 
-    .line 5
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Serializing to a byte array threw an IOException (should never happen)."
@@ -116,7 +105,6 @@
 .method public toByteString()Lcom/google/protobuf/ByteString;
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-interface {p0}, Lcom/google/protobuf/MessageLite;->getSerializedSize()I
 
@@ -126,14 +114,12 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Lcom/google/protobuf/ByteString$CodedBuilder;->getCodedOutput()Lcom/google/protobuf/CodedOutputStream;
 
     move-result-object v1
 
     invoke-interface {p0, v1}, Lcom/google/protobuf/MessageLite;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
-    .line 3
     invoke-virtual {v0}, Lcom/google/protobuf/ByteString$CodedBuilder;->build()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
@@ -145,7 +131,6 @@
     :catch_0
     move-exception v0
 
-    .line 4
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Serializing to a ByteString threw an IOException (should never happen)."
@@ -163,12 +148,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Lcom/google/protobuf/MessageLite;->getSerializedSize()I
 
     move-result v0
 
-    .line 2
     invoke-static {v0}, Lcom/google/protobuf/CodedOutputStream;->computeRawVarint32Size(I)I
 
     move-result v1
@@ -179,18 +162,14 @@
 
     move-result v1
 
-    .line 3
     invoke-static {p1, v1}, Lcom/google/protobuf/CodedOutputStream;->newInstance(Ljava/io/OutputStream;I)Lcom/google/protobuf/CodedOutputStream;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1, v0}, Lcom/google/protobuf/CodedOutputStream;->writeRawVarint32(I)V
 
-    .line 5
     invoke-interface {p0, p1}, Lcom/google/protobuf/MessageLite;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
-    .line 6
     invoke-virtual {p1}, Lcom/google/protobuf/CodedOutputStream;->flush()V
 
     return-void
@@ -204,7 +183,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Lcom/google/protobuf/MessageLite;->getSerializedSize()I
 
     move-result v0
@@ -213,15 +191,12 @@
 
     move-result v0
 
-    .line 2
     invoke-static {p1, v0}, Lcom/google/protobuf/CodedOutputStream;->newInstance(Ljava/io/OutputStream;I)Lcom/google/protobuf/CodedOutputStream;
 
     move-result-object p1
 
-    .line 3
     invoke-interface {p0, p1}, Lcom/google/protobuf/MessageLite;->writeTo(Lcom/google/protobuf/CodedOutputStream;)V
 
-    .line 4
     invoke-virtual {p1}, Lcom/google/protobuf/CodedOutputStream;->flush()V
 
     return-void

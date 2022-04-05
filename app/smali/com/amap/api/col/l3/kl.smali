@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kl;
 .super Ljava/lang/Object;
-.source "AMapClientUtils.java"
 
 
 # direct methods

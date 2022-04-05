@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/data/m;
 .super Lcom/github/mikephil/charting/data/h;
-.source "PieData.java"
 
 
 # annotations
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/github/mikephil/charting/data/h;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 .method public bridge synthetic a(I)Lb/a/a/a/e/b/e;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/github/mikephil/charting/data/m;->a(I)Lb/a/a/a/e/b/i;
 
     move-result-object p1
@@ -41,7 +38,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/github/mikephil/charting/data/m;->k()Lb/a/a/a/e/b/i;
 
     move-result-object p1
@@ -58,7 +54,6 @@
 .method public a(Lb/a/a/a/d/d;)Lcom/github/mikephil/charting/data/Entry;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/github/mikephil/charting/data/m;->k()Lb/a/a/a/e/b/i;
 
     move-result-object v0
@@ -79,7 +74,6 @@
 .method public k()Lb/a/a/a/e/b/i;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/h;->i:Ljava/util/List;
 
     const/4 v1, 0x0
@@ -100,7 +94,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :goto_0
     invoke-virtual {p0}, Lcom/github/mikephil/charting/data/m;->k()Lb/a/a/a/e/b/i;
 
@@ -112,7 +105,6 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/github/mikephil/charting/data/m;->k()Lb/a/a/a/e/b/i;
 
     move-result-object v2

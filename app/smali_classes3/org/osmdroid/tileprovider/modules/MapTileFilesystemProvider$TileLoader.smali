@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider$TileLoader;
 .super Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$TileLoader;
-.source "MapTileFilesystemProvider.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method protected constructor <init>(Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;
 
     invoke-direct {p0, p1}, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$TileLoader;-><init>(Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;)V
@@ -40,7 +38,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;
 
     invoke-static {v0}, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;->access$000(Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;)Ljava/util/concurrent/atomic/AtomicReference;
@@ -59,13 +56,11 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTileRequestState;->getMapTile()Lorg/osmdroid/tileprovider/MapTile;
 
     move-result-object p1
 
-    .line 3
     invoke-static {}, Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;->isSdCardAvailable()Z
 
     move-result v2
@@ -76,7 +71,6 @@
 
     if-nez v2, :cond_2
 
-    .line 4
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -87,7 +81,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -104,7 +97,6 @@
 
     invoke-static {v3, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     :cond_1
     sget p1, Lorg/osmdroid/tileprovider/util/Counters;->fileCacheMiss:I
 
@@ -114,7 +106,6 @@
 
     return-object v1
 
-    .line 7
     :cond_2
     new-instance v2, Ljava/io/File;
 
@@ -130,7 +121,6 @@
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 8
     invoke-interface {v0, p1}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->getTileRelativeFilenameString(Lorg/osmdroid/tileprovider/MapTile;)Ljava/lang/String;
 
     move-result-object v7
@@ -147,14 +137,12 @@
 
     invoke-direct {v2, v5, v6}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 9
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v5
 
     if-eqz v5, :cond_6
 
-    .line 10
     :try_start_0
     invoke-virtual {v2}, Ljava/io/File;->getPath()Ljava/lang/String;
 
@@ -164,17 +152,14 @@
 
     move-result-object v0
 
-    .line 11
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v5
 
-    .line 12
     invoke-virtual {v2}, Ljava/io/File;->lastModified()J
 
     move-result-wide v1
 
-    .line 13
     iget-object v7, p0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;
 
     invoke-static {v7}, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;->access$100(Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;)J
@@ -199,7 +184,6 @@
 
     if-eqz v0, :cond_5
 
-    .line 14
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v1
@@ -210,7 +194,6 @@
 
     if-eqz v1, :cond_4
 
-    .line 15
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -227,11 +210,9 @@
 
     invoke-static {v3, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 16
     :cond_4
     invoke-static {v0}, Lorg/osmdroid/tileprovider/ExpirableBitmapDrawable;->setDrawableExpired(Landroid/graphics/drawable/Drawable;)V
 
-    .line 17
     :cond_5
     sget v1, Lorg/osmdroid/tileprovider/util/Counters;->fileCacheHit:I
 
@@ -246,7 +227,6 @@
     :catch_0
     move-exception v0
 
-    .line 18
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -269,14 +249,12 @@
 
     invoke-static {v3, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 19
     sget p1, Lorg/osmdroid/tileprovider/util/Counters;->fileCacheOOM:I
 
     add-int/2addr p1, v4
 
     sput p1, Lorg/osmdroid/tileprovider/util/Counters;->fileCacheOOM:I
 
-    .line 20
     new-instance p1, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$CantContinueException;
 
     iget-object v1, p0, Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileFilesystemProvider;
@@ -285,7 +263,6 @@
 
     throw p1
 
-    .line 21
     :cond_6
     sget p1, Lorg/osmdroid/tileprovider/util/Counters;->fileCacheMiss:I
 

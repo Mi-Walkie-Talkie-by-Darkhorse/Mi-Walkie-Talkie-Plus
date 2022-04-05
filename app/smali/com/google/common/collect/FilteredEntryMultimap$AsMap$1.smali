@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/FilteredEntryMultimap$AsMap$1;
 .super Lcom/google/common/collect/Maps$KeySet;
-.source "FilteredEntryMultimap.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/google/common/collect/FilteredEntryMultimap$AsMap;Ljava/util/Map;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/FilteredEntryMultimap$AsMap$1;->this$1:Lcom/google/common/collect/FilteredEntryMultimap$AsMap;
 
     invoke-direct {p0, p2}, Lcom/google/common/collect/Maps$KeySet;-><init>(Ljava/util/Map;)V
@@ -48,7 +46,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FilteredEntryMultimap$AsMap$1;->this$1:Lcom/google/common/collect/FilteredEntryMultimap$AsMap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/FilteredEntryMultimap$AsMap;->remove(Ljava/lang/Object;)Ljava/util/Collection;
@@ -78,7 +75,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FilteredEntryMultimap$AsMap$1;->this$1:Lcom/google/common/collect/FilteredEntryMultimap$AsMap;
 
     iget-object v0, v0, Lcom/google/common/collect/FilteredEntryMultimap$AsMap;->this$0:Lcom/google/common/collect/FilteredEntryMultimap;
@@ -108,7 +104,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FilteredEntryMultimap$AsMap$1;->this$1:Lcom/google/common/collect/FilteredEntryMultimap$AsMap;
 
     iget-object v0, v0, Lcom/google/common/collect/FilteredEntryMultimap$AsMap;->this$0:Lcom/google/common/collect/FilteredEntryMultimap;

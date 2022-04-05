@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/im$3;
 .super Ljava/lang/Object;
-.source "StatisticsManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/im$3;->a:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final run()V
     .locals 10
 
-    .line 1
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/im;->a()Ljava/lang/ref/WeakReference;
 
@@ -48,7 +45,6 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/im$3;->a:Landroid/content/Context;
 
     sget-object v3, Lcom/amap/api/col/l3/gt;->g:Ljava/lang/String;
@@ -63,12 +59,10 @@
 
     invoke-static/range {v1 .. v6}, Lcom/amap/api/col/l3/in;->a(Landroid/content/Context;Lcom/amap/api/col/l3/ig;Ljava/lang/String;IILjava/lang/String;)V
 
-    .line 3
     iget-object v1, v0, Lcom/amap/api/col/l3/ig;->g:Lcom/amap/api/col/l3/iu;
 
     if-nez v1, :cond_0
 
-    .line 4
     new-instance v1, Lcom/amap/api/col/l3/io;
 
     new-instance v2, Lcom/amap/api/col/l3/is;
@@ -96,10 +90,8 @@
     :cond_0
     const v1, 0x36ee80
 
-    .line 5
     iput v1, v0, Lcom/amap/api/col/l3/ig;->h:I
 
-    .line 6
     iget-object v1, v0, Lcom/amap/api/col/l3/ig;->i:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -110,16 +102,13 @@
 
     const-string v1, "cKey"
 
-    .line 7
     iput-object v1, v0, Lcom/amap/api/col/l3/ig;->i:Ljava/lang/String;
 
-    .line 8
     :cond_1
     iget-object v1, v0, Lcom/amap/api/col/l3/ig;->f:Lcom/amap/api/col/l3/ja;
 
     if-nez v1, :cond_2
 
-    .line 9
     new-instance v1, Lcom/amap/api/col/l3/iz;
 
     iget-object v2, p0, Lcom/amap/api/col/l3/im$3;->a:Landroid/content/Context;
@@ -146,7 +135,6 @@
 
     iput-object v1, v0, Lcom/amap/api/col/l3/ig;->f:Lcom/amap/api/col/l3/ja;
 
-    .line 10
     :cond_2
     invoke-static {v0}, Lcom/amap/api/col/l3/ih;->a(Lcom/amap/api/col/l3/ig;)V
     :try_end_0
@@ -161,7 +149,6 @@
 
     const-string v2, "usd"
 
-    .line 11
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

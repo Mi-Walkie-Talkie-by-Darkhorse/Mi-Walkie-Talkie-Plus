@@ -1,6 +1,5 @@
 .class public abstract Lorg/osmdroid/views/overlay/ClickableIconOverlay;
 .super Lorg/osmdroid/views/overlay/IconOverlay;
-.source "ClickableIconOverlay.java"
 
 
 # annotations
@@ -35,20 +34,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/IconOverlay;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->mId:I
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->mData:Ljava/lang/Object;
 
-    .line 4
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->mData:Ljava/lang/Object;
 
     return-void
@@ -66,7 +61,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -86,7 +80,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget v1, v0, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->mId:I
 
     if-ne v1, p1, :cond_0
@@ -109,7 +102,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->mData:Ljava/lang/Object;
 
     return-object v0
@@ -118,7 +110,6 @@
 .method public getID()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->mId:I
 
     return v0
@@ -127,12 +118,10 @@
 .method protected hitTest(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object p2
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/IconOverlay;->mPosition:Lorg/osmdroid/api/IGeoPoint;
 
     if-eqz v0, :cond_1
@@ -145,16 +134,13 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {p2, v0, v1}, Lorg/osmdroid/views/Projection;->toPixels(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 4
     invoke-virtual {p2}, Lorg/osmdroid/views/Projection;->getIntrinsicScreenRect()Landroid/graphics/Rect;
 
     move-result-object p2
 
-    .line 5
     iget-object v0, p0, Lorg/osmdroid/views/overlay/IconOverlay;->mPositionPixels:Landroid/graphics/Point;
 
     iget v0, v0, Landroid/graphics/Point;->x:I
@@ -173,7 +159,6 @@
 
     add-int/2addr v0, v1
 
-    .line 6
     iget-object v1, p0, Lorg/osmdroid/views/overlay/IconOverlay;->mPositionPixels:Landroid/graphics/Point;
 
     iget v1, v1, Landroid/graphics/Point;->y:I
@@ -192,7 +177,6 @@
 
     add-int/2addr v1, p1
 
-    .line 7
     iget-object p1, p0, Lorg/osmdroid/views/overlay/IconOverlay;->mIcon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
@@ -215,14 +199,12 @@
 .method public onLongPress(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->hitTest(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget p1, p0, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->mId:I
 
     iget-object v0, p0, Lorg/osmdroid/views/overlay/IconOverlay;->mPosition:Lorg/osmdroid/api/IGeoPoint;
@@ -235,7 +217,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     invoke-super {p0, p1, p2}, Lorg/osmdroid/views/overlay/Overlay;->onLongPress(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
 
@@ -267,14 +248,12 @@
 .method public onSingleTapConfirmed(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->hitTest(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget p1, p0, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->mId:I
 
     iget-object v0, p0, Lorg/osmdroid/views/overlay/IconOverlay;->mPosition:Lorg/osmdroid/api/IGeoPoint;
@@ -287,7 +266,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     invoke-super {p0, p1, p2}, Lorg/osmdroid/views/overlay/Overlay;->onSingleTapConfirmed(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
 
@@ -308,13 +286,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p2, p3}, Lorg/osmdroid/views/overlay/IconOverlay;->set(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/drawable/Drawable;)Lorg/osmdroid/views/overlay/IconOverlay;
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->mId:I
 
-    .line 3
     iput-object p4, p0, Lorg/osmdroid/views/overlay/ClickableIconOverlay;->mData:Ljava/lang/Object;
 
     return-object p0

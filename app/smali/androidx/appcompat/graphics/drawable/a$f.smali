@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/graphics/drawable/a$f;
 .super Ljava/lang/Object;
-.source "AnimatedStateListDrawableCompat.java"
 
 # interfaces
 .implements Landroid/animation/TimeInterpolator;
@@ -29,10 +28,8 @@
 .method constructor <init>(Landroid/graphics/drawable/AnimationDrawable;Z)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p0, p1, p2}, Landroidx/appcompat/graphics/drawable/a$f;->a(Landroid/graphics/drawable/AnimationDrawable;Z)I
 
     return-void
@@ -43,7 +40,6 @@
 .method a()I
     .locals 1
 
-    .line 9
     iget v0, p0, Landroidx/appcompat/graphics/drawable/a$f;->c:I
 
     return v0
@@ -52,15 +48,12 @@
 .method a(Landroid/graphics/drawable/AnimationDrawable;Z)I
     .locals 5
 
-    .line 1
     invoke-virtual {p1}, Landroid/graphics/drawable/AnimationDrawable;->getNumberOfFrames()I
 
     move-result v0
 
-    .line 2
     iput v0, p0, Landroidx/appcompat/graphics/drawable/a$f;->b:I
 
-    .line 3
     iget-object v1, p0, Landroidx/appcompat/graphics/drawable/a$f;->a:[I
 
     if-eqz v1, :cond_0
@@ -69,13 +62,11 @@
 
     if-ge v1, v0, :cond_1
 
-    .line 4
     :cond_0
     new-array v1, v0, [I
 
     iput-object v1, p0, Landroidx/appcompat/graphics/drawable/a$f;->a:[I
 
-    .line 5
     :cond_1
     iget-object v1, p0, Landroidx/appcompat/graphics/drawable/a$f;->a:[I
 
@@ -97,13 +88,11 @@
     :cond_2
     move v4, v2
 
-    .line 6
     :goto_1
     invoke-virtual {p1, v4}, Landroid/graphics/drawable/AnimationDrawable;->getDuration(I)I
 
     move-result v4
 
-    .line 7
     aput v4, v1, v2
 
     add-int/2addr v3, v4
@@ -112,7 +101,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_3
     iput v3, p0, Landroidx/appcompat/graphics/drawable/a$f;->c:I
 
@@ -122,7 +110,6 @@
 .method public getInterpolation(F)F
     .locals 4
 
-    .line 1
     iget v0, p0, Landroidx/appcompat/graphics/drawable/a$f;->c:I
 
     int-to-float v0, v0
@@ -135,10 +122,8 @@
 
     float-to-int p1, p1
 
-    .line 2
     iget v0, p0, Landroidx/appcompat/graphics/drawable/a$f;->b:I
 
-    .line 3
     iget-object v1, p0, Landroidx/appcompat/graphics/drawable/a$f;->a:[I
 
     const/4 v2, 0x0
@@ -146,12 +131,10 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 4
     aget v3, v1, v2
 
     if-lt p1, v3, :cond_0
 
-    .line 5
     aget v3, v1, v2
 
     sub-int/2addr p1, v3
@@ -165,7 +148,6 @@
 
     int-to-float p1, p1
 
-    .line 6
     iget v1, p0, Landroidx/appcompat/graphics/drawable/a$f;->c:I
 
     int-to-float v1, v1

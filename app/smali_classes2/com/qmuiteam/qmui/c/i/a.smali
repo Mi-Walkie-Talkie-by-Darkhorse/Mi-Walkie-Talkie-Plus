@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/c/i/a;
 .super Ljava/lang/Object;
-.source "IQMUISkinDefaultAttrProvider.java"
 
 
 # virtual methods

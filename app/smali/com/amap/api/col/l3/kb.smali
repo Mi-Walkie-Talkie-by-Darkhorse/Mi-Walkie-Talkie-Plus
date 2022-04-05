@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kb;
 .super Ljava/lang/Object;
-.source "OffsetUtil.java"
 
 
 # static fields
@@ -21,7 +20,6 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     const/16 v1, 0x8
@@ -142,7 +140,6 @@
 
     mul-double p0, p0, v0
 
-    .line 35
     sget-wide v0, Lcom/amap/api/col/l3/kb;->a:D
 
     const-wide v2, 0x4066800000000000L    # 180.0
@@ -169,7 +166,6 @@
 
     div-double v2, p2, v0
 
-    .line 28
     invoke-static {v2, v3}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v2
@@ -206,13 +202,11 @@
 
     return-object p0
 
-    .line 15
     :cond_0
     new-instance v0, Lcom/amap/api/location/DPoint;
 
     invoke-direct {v0, p3, p4, p1, p2}, Lcom/amap/api/location/DPoint;-><init>(DD)V
 
-    .line 16
     invoke-static {p0, v0}, Lcom/amap/api/col/l3/kb;->a(Landroid/content/Context;Lcom/amap/api/location/DPoint;)Lcom/amap/api/location/DPoint;
 
     move-result-object p0
@@ -232,31 +226,26 @@
     :cond_0
     const-string v1, "libwgs2gcj.so"
 
-    .line 1
     invoke-static {p0, v1}, Lcom/amap/api/col/l3/gg;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
     if-nez v2, :cond_2
 
-    .line 3
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 4
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    .line 5
     invoke-static {}, Lcom/amap/api/location/CoordUtil;->isLoadedSo()Z
 
     move-result v2
@@ -265,11 +254,9 @@
 
     const/4 v2, 0x1
 
-    .line 6
     :try_start_0
     invoke-static {v1}, Ljava/lang/System;->load(Ljava/lang/String;)V
 
-    .line 7
     invoke-static {v2}, Lcom/amap/api/location/CoordUtil;->setLoadedSo(Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -279,7 +266,6 @@
     :catchall_0
     move-exception v1
 
-    .line 8
     :try_start_1
     const-class v3, Lcom/amap/api/col/l3/ga;
 
@@ -289,7 +275,6 @@
 
     new-array v6, v5, [Ljava/lang/Class;
 
-    .line 9
     const-class v7, Landroid/content/Context;
 
     const/4 v8, 0x0
@@ -304,14 +289,12 @@
 
     move-result-object v3
 
-    .line 10
     invoke-virtual {v3}, Ljava/lang/reflect/Method;->isAccessible()Z
 
     move-result v4
 
     if-nez v4, :cond_1
 
-    .line 11
     invoke-virtual {v3, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
     :cond_1
@@ -321,7 +304,6 @@
 
     aput-object v1, v4, v2
 
-    .line 12
     invoke-virtual {v3, v0, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
@@ -331,10 +313,8 @@
 
     const-string v0, "offset"
 
-    .line 13
     invoke-static {v1, p0, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 14
     :cond_2
     :goto_0
     invoke-static {}, Lcom/amap/api/location/CoordUtil;->isLoadedSo()Z
@@ -353,7 +333,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 29
     :try_start_0
     invoke-virtual/range {p0 .. p0}, Lcom/amap/api/location/DPoint;->getLatitude()D
 
@@ -369,14 +348,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 30
     invoke-static/range {p0 .. p0}, Lcom/amap/api/col/l3/kb;->b(Lcom/amap/api/location/DPoint;)Lcom/amap/api/location/DPoint;
 
     move-result-object v0
 
     return-object v0
 
-    .line 31
     :cond_0
     invoke-virtual/range {p0 .. p0}, Lcom/amap/api/location/DPoint;->getLatitude()D
 
@@ -398,12 +375,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 32
     invoke-static/range {p0 .. p0}, Lcom/amap/api/col/l3/kb;->b(Lcom/amap/api/location/DPoint;)Lcom/amap/api/location/DPoint;
 
     move-result-object v0
 
-    .line 33
     invoke-virtual {v0}, Lcom/amap/api/location/DPoint;->getLatitude()D
 
     move-result-wide v1
@@ -786,7 +761,6 @@
 
     const-string v2, "b2G"
 
-    .line 34
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_2
@@ -798,7 +772,6 @@
 
     const-string v0, "OffsetUtil"
 
-    .line 17
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/location/DPoint;->getLatitude()D
 
@@ -826,7 +799,6 @@
 
     new-array p1, v1, [D
 
-    .line 18
     invoke-virtual {p0}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
     move-result-wide v5
@@ -841,7 +813,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 19
     :try_start_1
     invoke-static {p1, v2}, Lcom/amap/api/location/CoordUtil;->convertToGcj([D[D)I
 
@@ -851,7 +822,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 20
     :try_start_2
     invoke-virtual {p0}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
@@ -875,12 +845,10 @@
     :try_start_3
     const-string v1, "cover part1"
 
-    .line 21
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 22
     :try_start_4
     invoke-virtual {p0}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
@@ -899,7 +867,6 @@
     :catchall_1
     move-exception p1
 
-    .line 23
     invoke-virtual {p0}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
     move-result-wide v1
@@ -910,10 +877,8 @@
 
     invoke-static {v1, v2, v3, v4}, Lcom/amap/api/col/l3/kj;->a(DD)[D
 
-    .line 24
     throw p1
 
-    .line 25
     :cond_0
     invoke-virtual {p0}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
@@ -927,7 +892,6 @@
 
     move-result-object v2
 
-    .line 26
     :cond_1
     :goto_0
     new-instance p1, Lcom/amap/api/location/DPoint;
@@ -950,7 +914,6 @@
 
     const-string v1, "cover part2"
 
-    .line 27
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object p0
@@ -963,7 +926,6 @@
 
     mul-double p0, p0, v0
 
-    .line 6
     sget-wide v0, Lcom/amap/api/col/l3/kb;->a:D
 
     const-wide v2, 0x4066800000000000L    # 180.0
@@ -990,7 +952,6 @@
 
     div-double v2, p2, v0
 
-    .line 5
     invoke-static {v2, v3}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v2
@@ -1021,7 +982,6 @@
 .method public static b(Landroid/content/Context;Lcom/amap/api/location/DPoint;)Lcom/amap/api/location/DPoint;
     .locals 15
 
-    .line 1
     :try_start_0
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/DPoint;->getLatitude()D
 
@@ -1039,7 +999,6 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
@@ -1163,7 +1122,6 @@
 
     move-object v0, p0
 
-    .line 3
     invoke-static {p0, v4}, Lcom/amap/api/col/l3/kb;->a(Landroid/content/Context;Lcom/amap/api/location/DPoint;)Lcom/amap/api/location/DPoint;
 
     move-result-object v0
@@ -1179,7 +1137,6 @@
 
     const-string v2, "marbar2G"
 
-    .line 4
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object p1
@@ -1201,7 +1158,6 @@
 
     if-ge v5, v6, :cond_0
 
-    .line 7
     invoke-virtual/range {p0 .. p0}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
     move-result-wide v6
@@ -1328,7 +1284,6 @@
 
     invoke-virtual {v4, v0, v1}, Lcom/amap/api/location/DPoint;->setLatitude(D)V
 
-    .line 8
     invoke-virtual/range {p0 .. p0}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
     move-result-wide v0
@@ -1339,7 +1294,6 @@
 
     sub-double/2addr v0, v2
 
-    .line 9
     invoke-virtual/range {p0 .. p0}, Lcom/amap/api/location/DPoint;->getLatitude()D
 
     move-result-wide v2
@@ -1361,7 +1315,6 @@
 .method private static c(D)D
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/math/BigDecimal;
 
     invoke-direct {v0, p0, p1}, Ljava/math/BigDecimal;-><init>(D)V
@@ -1374,7 +1327,6 @@
 
     move-result-object p0
 
-    .line 2
     invoke-virtual {p0}, Ljava/math/BigDecimal;->doubleValue()D
 
     move-result-wide p0

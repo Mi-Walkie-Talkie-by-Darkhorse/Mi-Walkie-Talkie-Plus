@@ -61,7 +61,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxView__ViewAttachEventObservableKt;->attachEvents(Landroid/view/View;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -92,7 +91,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxView__ViewAttachesObservableKt;->attaches(Landroid/view/View;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -123,7 +121,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxView__ViewClickObservableKt;->clicks(Landroid/view/View;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -154,7 +151,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxView__ViewAttachesObservableKt;->detaches(Landroid/view/View;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -233,7 +229,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/view/RxView__ViewDragObservableKt;->drags(Landroid/view/View;Lkotlin/jvm/a/b;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -252,7 +247,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/jakewharton/rxbinding3/view/RxView__ViewDragObservableKt;->drags$default(Landroid/view/View;Lkotlin/jvm/a/b;ILjava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -287,7 +281,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxView__ViewTreeObserverDrawObservableKt;->draws(Landroid/view/View;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -318,7 +311,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxView__ViewFocusChangeObservableKt;->focusChanges(Landroid/view/View;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     move-result-object p0
@@ -349,7 +341,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxView__ViewTreeObserverGlobalLayoutObservableKt;->globalLayouts(Landroid/view/View;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -428,7 +419,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/view/RxView__ViewHoverObservableKt;->hovers(Landroid/view/View;Lkotlin/jvm/a/b;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -447,7 +437,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/jakewharton/rxbinding3/view/RxView__ViewHoverObservableKt;->hovers$default(Landroid/view/View;Lkotlin/jvm/a/b;ILjava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -526,7 +515,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/view/RxView__ViewKeyObservableKt;->keys(Landroid/view/View;Lkotlin/jvm/a/b;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -545,7 +533,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/jakewharton/rxbinding3/view/RxView__ViewKeyObservableKt;->keys$default(Landroid/view/View;Lkotlin/jvm/a/b;ILjava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -576,7 +563,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxView__ViewLayoutChangeEventObservableKt;->layoutChangeEvents(Landroid/view/View;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -607,7 +593,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxView__ViewLayoutChangeObservableKt;->layoutChanges(Landroid/view/View;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -684,7 +669,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/view/RxView__ViewLongClickObservableKt;->longClicks(Landroid/view/View;Lkotlin/jvm/a/a;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -703,7 +687,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/jakewharton/rxbinding3/view/RxView__ViewLongClickObservableKt;->longClicks$default(Landroid/view/View;Lkotlin/jvm/a/a;ILjava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -740,7 +723,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/view/RxView__ViewTreeObserverPreDrawObservableKt;->preDraws(Landroid/view/View;Lkotlin/jvm/a/a;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -775,7 +757,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxView__ViewScrollChangeEventObservableKt;->scrollChangeEvents(Landroid/view/View;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -806,7 +787,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/view/RxView__ViewSystemUiVisibilityChangeObservableKt;->systemUiVisibilityChanges(Landroid/view/View;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -885,7 +865,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/view/RxView__ViewTouchObservableKt;->touches(Landroid/view/View;Lkotlin/jvm/a/b;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -904,7 +883,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/jakewharton/rxbinding3/view/RxView__ViewTouchObservableKt;->touches$default(Landroid/view/View;Lkotlin/jvm/a/b;ILjava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -979,7 +957,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/view/RxView__ViewVisibilityConsumerKt;->visibility(Landroid/view/View;I)Lio/reactivex/functions/Consumer;
 
     move-result-object p0
@@ -998,7 +975,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/jakewharton/rxbinding3/view/RxView__ViewVisibilityConsumerKt;->visibility$default(Landroid/view/View;IILjava/lang/Object;)Lio/reactivex/functions/Consumer;
 
     move-result-object p0

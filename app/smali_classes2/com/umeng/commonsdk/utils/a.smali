@@ -1,6 +1,5 @@
 .class public abstract Lcom/umeng/commonsdk/utils/a;
 .super Ljava/lang/Object;
-.source "CountDownTimer.java"
 
 
 # static fields
@@ -27,35 +26,28 @@
 .method public constructor <init>(JJ)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/umeng/commonsdk/utils/a;->d:Z
 
-    .line 3
     new-instance v0, Lcom/umeng/commonsdk/utils/a$1;
 
     invoke-direct {v0, p0}, Lcom/umeng/commonsdk/utils/a$1;-><init>(Lcom/umeng/commonsdk/utils/a;)V
 
     iput-object v0, p0, Lcom/umeng/commonsdk/utils/a;->h:Landroid/os/Handler$Callback;
 
-    .line 4
     iput-wide p1, p0, Lcom/umeng/commonsdk/utils/a;->a:J
 
-    .line 5
     iput-wide p3, p0, Lcom/umeng/commonsdk/utils/a;->b:J
 
-    .line 6
     invoke-direct {p0}, Lcom/umeng/commonsdk/utils/a;->d()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 7
     new-instance p1, Landroid/os/HandlerThread;
 
     const-string p2, "CountDownTimerThread"
@@ -64,10 +56,8 @@
 
     iput-object p1, p0, Lcom/umeng/commonsdk/utils/a;->f:Landroid/os/HandlerThread;
 
-    .line 8
     invoke-virtual {p1}, Landroid/os/HandlerThread;->start()V
 
-    .line 9
     new-instance p1, Landroid/os/Handler;
 
     iget-object p2, p0, Lcom/umeng/commonsdk/utils/a;->f:Landroid/os/HandlerThread;
@@ -84,7 +74,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     new-instance p1, Landroid/os/Handler;
 
@@ -101,7 +90,6 @@
 .method static synthetic a(Lcom/umeng/commonsdk/utils/a;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/umeng/commonsdk/utils/a;->d:Z
 
     return p0
@@ -110,7 +98,6 @@
 .method static synthetic b(Lcom/umeng/commonsdk/utils/a;)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/umeng/commonsdk/utils/a;->c:J
 
     return-wide v0
@@ -119,7 +106,6 @@
 .method static synthetic c(Lcom/umeng/commonsdk/utils/a;)Landroid/os/HandlerThread;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/umeng/commonsdk/utils/a;->f:Landroid/os/HandlerThread;
 
     return-object p0
@@ -128,7 +114,6 @@
 .method static synthetic d(Lcom/umeng/commonsdk/utils/a;)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/umeng/commonsdk/utils/a;->b:J
 
     return-wide v0
@@ -137,7 +122,6 @@
 .method private d()Z
     .locals 2
 
-    .line 2
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -160,7 +144,6 @@
 .method static synthetic e(Lcom/umeng/commonsdk/utils/a;)Landroid/os/Handler;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/umeng/commonsdk/utils/a;->g:Landroid/os/Handler;
 
     return-object p0
@@ -175,18 +158,15 @@
 
     const/4 v0, 0x1
 
-    .line 2
     :try_start_0
     iput-boolean v0, p0, Lcom/umeng/commonsdk/utils/a;->d:Z
 
-    .line 3
     iget-object v1, p0, Lcom/umeng/commonsdk/utils/a;->g:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->removeMessages(I)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     monitor-exit p0
 
     return-void
@@ -209,11 +189,9 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     iput-boolean v0, p0, Lcom/umeng/commonsdk/utils/a;->d:Z
 
-    .line 3
     iget-wide v0, p0, Lcom/umeng/commonsdk/utils/a;->a:J
 
     const-wide/16 v2, 0x0
@@ -222,17 +200,14 @@
 
     if-gtz v4, :cond_0
 
-    .line 4
     invoke-virtual {p0}, Lcom/umeng/commonsdk/utils/a;->c()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     monitor-exit p0
 
     return-object p0
 
-    .line 6
     :cond_0
     :try_start_1
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -245,7 +220,6 @@
 
     iput-wide v0, p0, Lcom/umeng/commonsdk/utils/a;->c:J
 
-    .line 7
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/a;->g:Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/umeng/commonsdk/utils/a;->g:Landroid/os/Handler;
@@ -260,7 +234,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 8
     monitor-exit p0
 
     return-object p0

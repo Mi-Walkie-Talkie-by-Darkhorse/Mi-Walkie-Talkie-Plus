@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/data/j;
 .super Lcom/github/mikephil/charting/data/b;
-.source "LineData.java"
 
 
 # annotations
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/github/mikephil/charting/data/b;-><init>()V
 
     return-void
@@ -34,7 +32,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/github/mikephil/charting/data/b;-><init>(Ljava/util/List;)V
 
     return-void

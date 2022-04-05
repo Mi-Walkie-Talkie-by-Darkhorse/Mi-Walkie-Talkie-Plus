@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/blelib/c/d$a;
 .super Ljava/lang/Object;
-.source "ListenerQueue.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/blelib/c/d;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/blelib/c/d$a;->a:Lcom/ifengyu/blelib/c/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,19 +36,16 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/c/d$a;->a:Lcom/ifengyu/blelib/c/d;
 
     invoke-static {v0}, Lcom/ifengyu/blelib/c/d;->a(Lcom/ifengyu/blelib/c/d;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/blelib/c/d$a;->a:Lcom/ifengyu/blelib/c/d;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/ifengyu/blelib/c/d;->a(Lcom/ifengyu/blelib/c/d;Z)Z
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/blelib/c/d$a;->a:Lcom/ifengyu/blelib/c/d;
 
     invoke-static {v0}, Lcom/ifengyu/blelib/c/d;->b(Lcom/ifengyu/blelib/c/d;)V

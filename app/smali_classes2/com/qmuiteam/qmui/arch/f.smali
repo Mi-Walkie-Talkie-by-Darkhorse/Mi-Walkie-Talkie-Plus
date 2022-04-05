@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/arch/f;
 .super Ljava/lang/Object;
-.source "QMUISwipeBackActivityManager.java"
 
 # interfaces
 .implements Landroid/app/Application$ActivityLifecycleCallbacks;
@@ -26,10 +25,8 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/Stack;
 
     invoke-direct {v0}, Ljava/util/Stack;-><init>()V
@@ -46,19 +43,16 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/arch/f;->b:Lcom/qmuiteam/qmui/arch/f;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/qmuiteam/qmui/arch/f;
 
     invoke-direct {v0}, Lcom/qmuiteam/qmui/arch/f;-><init>()V
 
     sput-object v0, Lcom/qmuiteam/qmui/arch/f;->b:Lcom/qmuiteam/qmui/arch/f;
 
-    .line 3
     invoke-virtual {p0, v0}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
     :cond_0
@@ -70,14 +64,12 @@
     .annotation build Landroidx/annotation/MainThread;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/arch/f;->b:Lcom/qmuiteam/qmui/arch/f;
 
     if-eqz v0, :cond_0
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalAccessError;
 
@@ -97,7 +89,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     :try_start_0
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/f;->a:Ljava/util/Stack;
 
@@ -109,7 +100,6 @@
 
     if-le v1, v2, :cond_2
 
-    .line 5
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/f;->a:Ljava/util/Stack;
 
     iget-object v3, p0, Lcom/qmuiteam/qmui/arch/f;->a:Ljava/util/Stack;
@@ -130,7 +120,6 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 6
     :try_start_1
     invoke-virtual {p1, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -138,7 +127,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 7
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/f;->a:Ljava/util/Stack;
 
     invoke-virtual {v0, p1}, Ljava/util/Stack;->indexOf(Ljava/lang/Object;)I
@@ -147,7 +135,6 @@
 
     if-lez p1, :cond_0
 
-    .line 8
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/f;->a:Ljava/util/Stack;
 
     sub-int/2addr p1, v2
@@ -162,7 +149,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/f;->a:Ljava/util/Stack;
 
@@ -172,7 +158,6 @@
 
     if-ne p1, v4, :cond_1
 
-    .line 10
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/f;->a:Ljava/util/Stack;
 
     invoke-virtual {p1}, Ljava/util/Stack;->lastElement()Ljava/lang/Object;
@@ -200,7 +185,6 @@
 .method public a()Z
     .locals 2
 
-    .line 11
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/f;->a:Ljava/util/Stack;
 
     invoke-virtual {v0}, Ljava/util/Stack;->size()I
@@ -223,7 +207,6 @@
 .method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     iget-object p2, p0, Lcom/qmuiteam/qmui/arch/f;->a:Ljava/util/Stack;
 
     invoke-virtual {p2, p1}, Ljava/util/Stack;->add(Ljava/lang/Object;)Z
@@ -234,7 +217,6 @@
 .method public onActivityDestroyed(Landroid/app/Activity;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/f;->a:Ljava/util/Stack;
 
     invoke-virtual {v0, p1}, Ljava/util/Stack;->remove(Ljava/lang/Object;)Z

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/j/h;
 .super Ljava/lang/Object;
-.source "Headers.java"
 
 
 # static fields
@@ -11,12 +10,10 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/j/h$a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/j/h$a;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/bumptech/glide/load/j/j$a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/j/j$a;-><init>()V

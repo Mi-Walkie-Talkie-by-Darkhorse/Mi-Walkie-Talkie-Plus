@@ -1,6 +1,5 @@
 .class final enum Lcom/umeng/analytics/Gender$2;
 .super Lcom/umeng/analytics/Gender;
-.source "Gender.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/umeng/analytics/Gender;-><init>(Ljava/lang/String;IILcom/umeng/analytics/Gender$1;)V
 
     return-void
@@ -31,7 +29,6 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 1
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const/4 v1, 0x1

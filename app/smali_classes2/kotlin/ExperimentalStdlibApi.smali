@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/ExperimentalStdlibApi;
 .super Ljava/lang/Object;
-.source "ExperimentalStdlibApi.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

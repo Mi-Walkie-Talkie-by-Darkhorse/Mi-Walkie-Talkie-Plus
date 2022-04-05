@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;
 .super Ljava/util/ArrayDeque;
-.source "FlowableSkipLast.java"
 
 # interfaces
 .implements Lio/reactivex/FlowableSubscriber;
@@ -61,13 +60,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p2}, Ljava/util/ArrayDeque;-><init>(I)V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->downstream:Lc/a/c;
 
-    .line 3
     iput p2, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->skip:I
 
     return-void
@@ -78,7 +74,6 @@
 .method public cancel()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v0}, Lc/a/d;->cancel()V
@@ -89,7 +84,6 @@
 .method public onComplete()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0}, Lc/a/c;->onComplete()V
@@ -100,7 +94,6 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
@@ -116,7 +109,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->skip:I
 
     invoke-virtual {p0}, Ljava/util/ArrayDeque;->size()I
@@ -125,7 +117,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->downstream:Lc/a/c;
 
     invoke-virtual {p0}, Ljava/util/ArrayDeque;->poll()Ljava/lang/Object;
@@ -136,7 +127,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->upstream:Lc/a/d;
 
@@ -144,7 +134,6 @@
 
     invoke-interface {v0, v1, v2}, Lc/a/d;->request(J)V
 
-    .line 4
     :goto_0
     invoke-virtual {p0, p1}, Ljava/util/ArrayDeque;->offer(Ljava/lang/Object;)Z
 
@@ -154,7 +143,6 @@
 .method public onSubscribe(Lc/a/d;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->upstream:Lc/a/d;
 
     invoke-static {v0, p1}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(Lc/a/d;Lc/a/d;)Z
@@ -163,10 +151,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->upstream:Lc/a/d;
 
-    .line 3
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {p1, p0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
@@ -178,7 +164,6 @@
 .method public request(J)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v0, p1, p2}, Lc/a/d;->request(J)V

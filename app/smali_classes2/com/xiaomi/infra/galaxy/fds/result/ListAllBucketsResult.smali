@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/result/ListAllBucketsResult;
 .super Ljava/lang/Object;
-.source "ListAllBucketsResult.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,13 +42,10 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/result/ListAllBucketsResult;->owner:Lcom/xiaomi/infra/galaxy/fds/bean/OwnerBean;
 
-    .line 4
     iput-object p2, p0, Lcom/xiaomi/infra/galaxy/fds/result/ListAllBucketsResult;->buckets:Ljava/util/List;
 
     return-void
@@ -69,7 +64,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/result/ListAllBucketsResult;->buckets:Ljava/util/List;
 
     return-object v0
@@ -78,7 +72,6 @@
 .method public getOwner()Lcom/xiaomi/infra/galaxy/fds/bean/OwnerBean;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/result/ListAllBucketsResult;->owner:Lcom/xiaomi/infra/galaxy/fds/bean/OwnerBean;
 
     return-object v0
@@ -95,7 +88,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/result/ListAllBucketsResult;->buckets:Ljava/util/List;
 
     return-void
@@ -104,7 +96,6 @@
 .method public setOwner(Lcom/xiaomi/infra/galaxy/fds/bean/OwnerBean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/result/ListAllBucketsResult;->owner:Lcom/xiaomi/infra/galaxy/fds/bean/OwnerBean;
 
     return-void

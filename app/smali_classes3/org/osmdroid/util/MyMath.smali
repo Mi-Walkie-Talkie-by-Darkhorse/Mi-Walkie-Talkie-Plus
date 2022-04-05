@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/util/MyMath;
 .super Ljava/lang/Object;
-.source "MyMath.java"
 
 # interfaces
 .implements Lorg/osmdroid/views/util/constants/MathConstants;
@@ -10,7 +9,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -19,7 +17,6 @@
 .method public static gudermann(D)D
     .locals 2
 
-    .line 1
     invoke-static {p0, p1}, Ljava/lang/Math;->sinh(D)D
 
     move-result-wide p0
@@ -50,7 +47,6 @@
 
     add-double/2addr p0, v0
 
-    .line 1
     invoke-static {p0, p1}, Ljava/lang/Math;->tan(D)D
 
     move-result-wide p0
@@ -67,7 +63,6 @@
 
     if-lez p0, :cond_0
 
-    .line 1
     rem-int/2addr p0, p1
 
     return p0

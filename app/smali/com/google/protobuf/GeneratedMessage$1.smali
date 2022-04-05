@@ -1,6 +1,5 @@
 .class final Lcom/google/protobuf/GeneratedMessage$1;
 .super Lcom/google/protobuf/GeneratedMessage$CachedDescriptorRetriever;
-.source "GeneratedMessage.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/google/protobuf/Message;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$1;->val$scope:Lcom/google/protobuf/Message;
 
     iput p2, p0, Lcom/google/protobuf/GeneratedMessage$1;->val$descriptorIndex:I
@@ -41,7 +39,6 @@
 .method public loadDescriptor()Lcom/google/protobuf/Descriptors$FieldDescriptor;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$1;->val$scope:Lcom/google/protobuf/Message;
 
     invoke-interface {v0}, Lcom/google/protobuf/MessageOrBuilder;->getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;

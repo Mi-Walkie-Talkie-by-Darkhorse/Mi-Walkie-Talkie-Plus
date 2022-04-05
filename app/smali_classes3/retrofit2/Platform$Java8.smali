@@ -1,6 +1,5 @@
 .class Lretrofit2/Platform$Java8;
 .super Lretrofit2/Platform;
-.source "Platform.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lretrofit2/Platform;-><init>()V
 
     return-void
@@ -55,7 +53,6 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Ljava/lang/invoke/MethodHandles$Lookup;
 
     const/4 v1, 0x2
@@ -78,7 +75,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, v5}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
 
     new-array v1, v1, [Ljava/lang/Object;
@@ -87,7 +83,6 @@
 
     const/4 v2, -0x1
 
-    .line 3
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -100,17 +95,14 @@
 
     check-cast v0, Ljava/lang/invoke/MethodHandles$Lookup;
 
-    .line 4
     invoke-virtual {v0, p1, p2}, Ljava/lang/invoke/MethodHandles$Lookup;->unreflectSpecial(Ljava/lang/reflect/Method;Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1, p3}, Ljava/lang/invoke/MethodHandle;->bindTo(Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle;
 
     move-result-object p1
 
-    .line 6
     invoke-virtual {p1, p4}, Ljava/lang/invoke/MethodHandle;->invokeWithArguments([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -121,7 +113,6 @@
 .method isDefaultMethod(Ljava/lang/reflect/Method;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/reflect/Method;->isDefault()Z
 
     move-result p1

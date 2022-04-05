@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/t$i;
 .super Ljava/lang/Thread;
-.source "GLTextureView.java"
 
 
 # annotations
@@ -84,10 +83,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -96,24 +93,18 @@
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Lcom/amap/api/col/l3/t$i;->r:Z
 
     const/4 v1, 0x0
 
-    .line 4
     iput v1, p0, Lcom/amap/api/col/l3/t$i;->l:I
 
-    .line 5
     iput v1, p0, Lcom/amap/api/col/l3/t$i;->m:I
 
-    .line 6
     iput-boolean v0, p0, Lcom/amap/api/col/l3/t$i;->o:Z
 
-    .line 7
     iput v0, p0, Lcom/amap/api/col/l3/t$i;->n:I
 
-    .line 8
     iput-object p1, p0, Lcom/amap/api/col/l3/t$i;->t:Ljava/lang/ref/WeakReference;
 
     return-void
@@ -124,7 +115,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/amap/api/col/l3/t$i;->b:Z
 
     return v0
@@ -133,17 +123,14 @@
 .method private i()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/t$i;->i:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/amap/api/col/l3/t$i;->i:Z
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/t$i;->s:Lcom/amap/api/col/l3/t$h;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$h;->d()V
@@ -155,22 +142,18 @@
 .method private j()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/t$i;->h:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/t$i;->s:Lcom/amap/api/col/l3/t$h;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$h;->e()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Lcom/amap/api/col/l3/t$i;->h:Z
 
-    .line 4
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
@@ -191,7 +174,6 @@
 
     move-object/from16 v1, p0
 
-    .line 1
     new-instance v0, Lcom/amap/api/col/l3/t$h;
 
     iget-object v2, v1, Lcom/amap/api/col/l3/t$i;->t:Ljava/lang/ref/WeakReference;
@@ -202,10 +184,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->h:Z
 
-    .line 3
     iput-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->i:Z
 
     const/4 v3, 0x0
@@ -232,7 +212,6 @@
 
     const/4 v14, 0x0
 
-    .line 4
     :goto_0
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
@@ -243,33 +222,27 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_5
 
-    .line 5
     :goto_1
     :try_start_1
     iget-boolean v2, v1, Lcom/amap/api/col/l3/t$i;->a:Z
 
     if-eqz v2, :cond_0
 
-    .line 6
     monitor-exit v15
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_4
 
-    .line 7
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v2
 
     monitor-enter v2
 
-    .line 8
     :try_start_2
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->i()V
 
-    .line 9
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->j()V
 
-    .line 10
     monitor-exit v2
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -283,7 +256,6 @@
 
     throw v0
 
-    .line 11
     :cond_0
     :try_start_3
     iget-object v2, v1, Lcom/amap/api/col/l3/t$i;->q:Ljava/util/ArrayList;
@@ -294,7 +266,6 @@
 
     if-nez v2, :cond_1
 
-    .line 12
     iget-object v2, v1, Lcom/amap/api/col/l3/t$i;->q:Ljava/util/ArrayList;
 
     const/4 v13, 0x0
@@ -311,7 +282,6 @@
 
     goto/16 :goto_6
 
-    .line 13
     :cond_1
     iget-boolean v2, v1, Lcom/amap/api/col/l3/t$i;->d:Z
 
@@ -319,15 +289,12 @@
 
     if-eq v2, v0, :cond_2
 
-    .line 14
     iget-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->c:Z
 
-    .line 15
     iget-boolean v2, v1, Lcom/amap/api/col/l3/t$i;->c:Z
 
     iput-boolean v2, v1, Lcom/amap/api/col/l3/t$i;->d:Z
 
-    .line 16
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v2
@@ -339,21 +306,17 @@
     :cond_2
     const/4 v0, 0x0
 
-    .line 17
     :goto_2
     iget-boolean v2, v1, Lcom/amap/api/col/l3/t$i;->k:Z
 
     if-eqz v2, :cond_3
 
-    .line 18
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->i()V
 
-    .line 19
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->j()V
 
     const/4 v2, 0x0
 
-    .line 20
     iput-boolean v2, v1, Lcom/amap/api/col/l3/t$i;->k:Z
 
     const/4 v5, 0x1
@@ -361,10 +324,8 @@
     :cond_3
     if-eqz v3, :cond_4
 
-    .line 21
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->i()V
 
-    .line 22
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->j()V
 
     const/4 v3, 0x0
@@ -372,26 +333,21 @@
     :cond_4
     if-eqz v0, :cond_5
 
-    .line 23
     iget-boolean v2, v1, Lcom/amap/api/col/l3/t$i;->i:Z
 
     if-eqz v2, :cond_5
 
-    .line 24
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->i()V
 
     :cond_5
     if-eqz v0, :cond_8
 
-    .line 25
     iget-boolean v2, v1, Lcom/amap/api/col/l3/t$i;->h:Z
 
     if-eqz v2, :cond_8
 
-    .line 26
     iget-object v2, v1, Lcom/amap/api/col/l3/t$i;->t:Ljava/lang/ref/WeakReference;
 
-    .line 27
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v2
@@ -404,7 +360,6 @@
 
     goto :goto_3
 
-    .line 28
     :cond_6
     invoke-static {v2}, Lcom/amap/api/col/l3/t;->g(Lcom/amap/api/col/l3/t;)Z
 
@@ -413,43 +368,36 @@
     :goto_3
     if-eqz v2, :cond_7
 
-    .line 29
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v2
 
-    .line 30
     invoke-virtual {v2}, Lcom/amap/api/col/l3/t$j;->a()Z
 
     move-result v2
 
     if-eqz v2, :cond_8
 
-    .line 31
     :cond_7
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->j()V
 
     :cond_8
     if-eqz v0, :cond_9
 
-    .line 32
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
 
-    .line 33
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$j;->b()Z
 
     move-result v0
 
     if-eqz v0, :cond_9
 
-    .line 34
     iget-object v0, v1, Lcom/amap/api/col/l3/t$i;->s:Lcom/amap/api/col/l3/t$h;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$h;->e()V
 
-    .line 35
     :cond_9
     iget-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->e:Z
 
@@ -459,33 +407,27 @@
 
     if-nez v0, :cond_b
 
-    .line 36
     iget-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->i:Z
 
     if-eqz v0, :cond_a
 
-    .line 37
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->i()V
 
     :cond_a
     const/4 v0, 0x1
 
-    .line 38
     iput-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->g:Z
 
     const/4 v0, 0x0
 
-    .line 39
     iput-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->f:Z
 
-    .line 40
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/Object;->notifyAll()V
 
-    .line 41
     :cond_b
     iget-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->e:Z
 
@@ -497,10 +439,8 @@
 
     const/4 v0, 0x0
 
-    .line 42
     iput-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->g:Z
 
-    .line 43
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
@@ -512,10 +452,8 @@
 
     const/4 v0, 0x1
 
-    .line 44
     iput-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->p:Z
 
-    .line 45
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
@@ -526,7 +464,6 @@
 
     const/4 v14, 0x0
 
-    .line 46
     :cond_d
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->l()Z
 
@@ -534,7 +471,6 @@
 
     if-eqz v0, :cond_1f
 
-    .line 47
     iget-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->h:Z
 
     if-nez v0, :cond_f
@@ -545,13 +481,11 @@
 
     goto :goto_4
 
-    .line 48
     :cond_e
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
 
-    .line 49
     invoke-virtual {v0, v1}, Lcom/amap/api/col/l3/t$j;->b(Lcom/amap/api/col/l3/t$i;)Z
 
     move-result v0
@@ -560,7 +494,6 @@
 
     if-eqz v0, :cond_f
 
-    .line 50
     :try_start_4
     iget-object v0, v1, Lcom/amap/api/col/l3/t$i;->s:Lcom/amap/api/col/l3/t$h;
 
@@ -571,11 +504,9 @@
 
     const/4 v0, 0x1
 
-    .line 51
     :try_start_5
     iput-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->h:Z
 
-    .line 52
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
@@ -589,18 +520,14 @@
     :catch_0
     move-exception v0
 
-    .line 53
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v2
 
-    .line 54
     invoke-virtual {v2, v1}, Lcom/amap/api/col/l3/t$j;->c(Lcom/amap/api/col/l3/t$i;)V
 
-    .line 55
     throw v0
 
-    .line 56
     :cond_f
     :goto_4
     iget-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->h:Z
@@ -613,7 +540,6 @@
 
     const/4 v0, 0x1
 
-    .line 57
     iput-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->i:Z
 
     const/4 v8, 0x1
@@ -622,26 +548,21 @@
 
     const/4 v10, 0x1
 
-    .line 58
     :cond_10
     iget-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->i:Z
 
     if-eqz v0, :cond_1f
 
-    .line 59
     iget-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->r:Z
 
     if-eqz v0, :cond_11
 
-    .line 60
     iget v0, v1, Lcom/amap/api/col/l3/t$i;->l:I
 
-    .line 61
     iget v2, v1, Lcom/amap/api/col/l3/t$i;->m:I
 
     const/4 v8, 0x0
 
-    .line 62
     iput-boolean v8, v1, Lcom/amap/api/col/l3/t$i;->r:Z
 
     move v11, v0
@@ -661,18 +582,15 @@
     :cond_11
     const/4 v0, 0x0
 
-    .line 63
     :goto_5
     iput-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->o:Z
 
-    .line 64
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v2
 
     invoke-virtual {v2}, Ljava/lang/Object;->notifyAll()V
 
-    .line 65
     :goto_6
     monitor-exit v15
     :try_end_5
@@ -680,7 +598,6 @@
 
     if-eqz v13, :cond_12
 
-    .line 66
     :try_start_6
     invoke-interface {v13}, Ljava/lang/Runnable;->run()V
 
@@ -691,7 +608,6 @@
     :cond_12
     if-eqz v8, :cond_14
 
-    .line 67
     iget-object v2, v1, Lcom/amap/api/col/l3/t$i;->s:Lcom/amap/api/col/l3/t$h;
 
     invoke-virtual {v2}, Lcom/amap/api/col/l3/t$h;->b()Z
@@ -700,7 +616,6 @@
 
     if-eqz v2, :cond_13
 
-    .line 68
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v2
@@ -711,18 +626,15 @@
 
     const/4 v8, 0x1
 
-    .line 69
     :try_start_7
     iput-boolean v8, v1, Lcom/amap/api/col/l3/t$i;->j:Z
 
-    .line 70
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v8
 
     invoke-virtual {v8}, Ljava/lang/Object;->notifyAll()V
 
-    .line 71
     monitor-exit v2
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_1
@@ -739,7 +651,6 @@
 
     throw v0
 
-    .line 72
     :cond_13
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
@@ -751,21 +662,17 @@
 
     const/4 v15, 0x1
 
-    .line 73
     :try_start_9
     iput-boolean v15, v1, Lcom/amap/api/col/l3/t$i;->j:Z
 
-    .line 74
     iput-boolean v15, v1, Lcom/amap/api/col/l3/t$i;->f:Z
 
-    .line 75
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v15
 
     invoke-virtual {v15}, Ljava/lang/Object;->notifyAll()V
 
-    .line 76
     monitor-exit v2
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_2
@@ -784,7 +691,6 @@
     :goto_7
     if-eqz v9, :cond_15
 
-    .line 77
     iget-object v2, v1, Lcom/amap/api/col/l3/t$i;->s:Lcom/amap/api/col/l3/t$h;
 
     invoke-virtual {v2}, Lcom/amap/api/col/l3/t$h;->c()Ljavax/microedition/khronos/opengles/GL;
@@ -795,7 +701,6 @@
 
     check-cast v6, Ljavax/microedition/khronos/opengles/GL10;
 
-    .line 78
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v2
@@ -807,7 +712,6 @@
     :cond_15
     if-eqz v7, :cond_17
 
-    .line 79
     iget-object v2, v1, Lcom/amap/api/col/l3/t$i;->t:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -818,7 +722,6 @@
 
     if-eqz v2, :cond_16
 
-    .line 80
     invoke-static {v2}, Lcom/amap/api/col/l3/t;->h(Lcom/amap/api/col/l3/t;)Landroid/opengl/GLSurfaceView$Renderer;
 
     move-result-object v2
@@ -835,7 +738,6 @@
     :cond_17
     if-eqz v10, :cond_19
 
-    .line 81
     iget-object v2, v1, Lcom/amap/api/col/l3/t$i;->t:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -846,7 +748,6 @@
 
     if-eqz v2, :cond_18
 
-    .line 82
     invoke-static {v2}, Lcom/amap/api/col/l3/t;->h(Lcom/amap/api/col/l3/t;)Landroid/opengl/GLSurfaceView$Renderer;
 
     move-result-object v2
@@ -856,7 +757,6 @@
     :cond_18
     const/4 v10, 0x0
 
-    .line 83
     :cond_19
     iget-object v2, v1, Lcom/amap/api/col/l3/t$i;->t:Ljava/lang/ref/WeakReference;
 
@@ -868,14 +768,12 @@
 
     if-eqz v2, :cond_1a
 
-    .line 84
     invoke-static {v2}, Lcom/amap/api/col/l3/t;->h(Lcom/amap/api/col/l3/t;)Landroid/opengl/GLSurfaceView$Renderer;
 
     move-result-object v2
 
     invoke-interface {v2, v6}, Landroid/opengl/GLSurfaceView$Renderer;->onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
 
-    .line 85
     :cond_1a
     iget-object v2, v1, Lcom/amap/api/col/l3/t$i;->s:Lcom/amap/api/col/l3/t$h;
 
@@ -915,10 +813,8 @@
 
     const-string v2, "eglSwapBuffers"
 
-    .line 86
     invoke-static {v2, v0}, Lcom/amap/api/col/l3/t$h;->b(Ljava/lang/String;I)Ljava/lang/String;
 
-    .line 87
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v2
@@ -929,18 +825,15 @@
 
     const/4 v0, 0x1
 
-    .line 88
     :try_start_b
     iput-boolean v0, v1, Lcom/amap/api/col/l3/t$i;->f:Z
 
-    .line 89
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/Object;->notifyAll()V
 
-    .line 90
     monitor-exit v2
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_3
@@ -980,7 +873,6 @@
 
     goto/16 :goto_0
 
-    .line 91
     :cond_1f
     :try_start_d
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
@@ -998,7 +890,6 @@
     :catchall_4
     move-exception v0
 
-    .line 92
     :try_start_e
     monitor-exit v15
 
@@ -1009,32 +900,26 @@
     :catchall_5
     move-exception v0
 
-    .line 93
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v2
 
     monitor-enter v2
 
-    .line 94
     :try_start_f
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->i()V
 
-    .line 95
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/t$i;->j()V
 
-    .line 96
     monitor-exit v2
     :try_end_f
     .catchall {:try_start_f .. :try_end_f} :catchall_6
 
-    .line 97
     throw v0
 
     :catchall_6
     move-exception v0
 
-    .line 98
     monitor-exit v2
 
     throw v0
@@ -1043,7 +928,6 @@
 .method private l()Z
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/t$i;->d:Z
 
     if-nez v0, :cond_1
@@ -1088,14 +972,12 @@
 .method public final a()I
     .locals 2
 
-    .line 7
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 8
     :try_start_0
     iget v1, p0, Lcom/amap/api/col/l3/t$i;->n:I
 
@@ -1108,7 +990,6 @@
     :catchall_0
     move-exception v1
 
-    .line 9
     monitor-exit v0
 
     throw v1
@@ -1123,25 +1004,21 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     iput p1, p0, Lcom/amap/api/col/l3/t$i;->n:I
 
-    .line 4
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 5
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1155,7 +1032,6 @@
 
     throw p1
 
-    .line 6
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1169,41 +1045,33 @@
 .method public final a(II)V
     .locals 2
 
-    .line 10
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 11
     :try_start_0
     iput p1, p0, Lcom/amap/api/col/l3/t$i;->l:I
 
-    .line 12
     iput p2, p0, Lcom/amap/api/col/l3/t$i;->m:I
 
     const/4 p1, 0x1
 
-    .line 13
     iput-boolean p1, p0, Lcom/amap/api/col/l3/t$i;->r:Z
 
-    .line 14
     iput-boolean p1, p0, Lcom/amap/api/col/l3/t$i;->o:Z
 
     const/4 p2, 0x0
 
-    .line 15
     iput-boolean p2, p0, Lcom/amap/api/col/l3/t$i;->p:Z
 
-    .line 16
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 17
     :goto_0
     iget-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->b:Z
 
@@ -1243,7 +1111,6 @@
     :goto_1
     if-eqz v1, :cond_1
 
-    .line 18
     :try_start_1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
@@ -1256,7 +1123,6 @@
 
     goto :goto_0
 
-    .line 19
     :catch_0
     :try_start_2
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -1267,7 +1133,6 @@
 
     goto :goto_0
 
-    .line 20
     :cond_1
     monitor-exit v0
     :try_end_2
@@ -1288,27 +1153,23 @@
 
     if-eqz p1, :cond_0
 
-    .line 21
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 22
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/t$i;->q:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 23
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 24
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1322,7 +1183,6 @@
 
     throw p1
 
-    .line 25
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1336,7 +1196,6 @@
 .method public final b()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
@@ -1345,18 +1204,15 @@
 
     const/4 v1, 0x1
 
-    .line 2
     :try_start_0
     iput-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->o:Z
 
-    .line 3
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 4
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1374,7 +1230,6 @@
 .method public final c()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
@@ -1383,23 +1238,19 @@
 
     const/4 v1, 0x1
 
-    .line 2
     :try_start_0
     iput-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->e:Z
 
     const/4 v1, 0x0
 
-    .line 3
     iput-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->j:Z
 
-    .line 4
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 5
     :goto_0
     iget-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->g:Z
 
@@ -1415,7 +1266,6 @@
 
     if-nez v1, :cond_0
 
-    .line 6
     :try_start_1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
@@ -1428,7 +1278,6 @@
 
     goto :goto_0
 
-    .line 7
     :catch_0
     :try_start_2
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -1439,7 +1288,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_0
     monitor-exit v0
     :try_end_2
@@ -1458,7 +1306,6 @@
 .method public final d()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
@@ -1467,18 +1314,15 @@
 
     const/4 v1, 0x0
 
-    .line 2
     :try_start_0
     iput-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->e:Z
 
-    .line 3
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 4
     :goto_0
     iget-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->g:Z
 
@@ -1490,7 +1334,6 @@
 
     if-nez v1, :cond_0
 
-    .line 5
     :try_start_1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
@@ -1503,7 +1346,6 @@
 
     goto :goto_0
 
-    .line 6
     :catch_0
     :try_start_2
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -1514,7 +1356,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     monitor-exit v0
     :try_end_2
@@ -1533,7 +1374,6 @@
 .method public final e()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
@@ -1542,18 +1382,15 @@
 
     const/4 v1, 0x1
 
-    .line 2
     :try_start_0
     iput-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->c:Z
 
-    .line 3
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 4
     :goto_0
     iget-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->b:Z
 
@@ -1565,7 +1402,6 @@
 
     if-nez v1, :cond_0
 
-    .line 5
     :try_start_1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
@@ -1578,7 +1414,6 @@
 
     goto :goto_0
 
-    .line 6
     :catch_0
     :try_start_2
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -1589,7 +1424,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     monitor-exit v0
     :try_end_2
@@ -1608,7 +1442,6 @@
 .method public final f()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
@@ -1617,26 +1450,21 @@
 
     const/4 v1, 0x0
 
-    .line 2
     :try_start_0
     iput-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->c:Z
 
     const/4 v2, 0x1
 
-    .line 3
     iput-boolean v2, p0, Lcom/amap/api/col/l3/t$i;->o:Z
 
-    .line 4
     iput-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->p:Z
 
-    .line 5
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 6
     :goto_0
     iget-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->b:Z
 
@@ -1652,7 +1480,6 @@
 
     if-nez v1, :cond_0
 
-    .line 7
     :try_start_1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
@@ -1665,7 +1492,6 @@
 
     goto :goto_0
 
-    .line 8
     :catch_0
     :try_start_2
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -1676,7 +1502,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     monitor-exit v0
     :try_end_2
@@ -1695,7 +1520,6 @@
 .method public final g()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
@@ -1704,18 +1528,15 @@
 
     const/4 v1, 0x1
 
-    .line 2
     :try_start_0
     iput-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->a:Z
 
-    .line 3
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 4
     :goto_0
     iget-boolean v1, p0, Lcom/amap/api/col/l3/t$i;->b:Z
     :try_end_0
@@ -1723,7 +1544,6 @@
 
     if-nez v1, :cond_0
 
-    .line 5
     :try_start_1
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
@@ -1736,7 +1556,6 @@
 
     goto :goto_0
 
-    .line 6
     :catch_0
     :try_start_2
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -1747,7 +1566,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     monitor-exit v0
     :try_end_2
@@ -1768,10 +1586,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/amap/api/col/l3/t$i;->k:Z
 
-    .line 2
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
     move-result-object v0
@@ -1784,7 +1600,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "GLThread "
@@ -1803,14 +1618,12 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
 
-    .line 2
     :try_start_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/t$i;->k()V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     :catch_0
     invoke-static {}, Lcom/amap/api/col/l3/t;->d()Lcom/amap/api/col/l3/t$j;
 
@@ -1829,6 +1642,5 @@
 
     invoke-virtual {v1, p0}, Lcom/amap/api/col/l3/t$j;->a(Lcom/amap/api/col/l3/t$i;)V
 
-    .line 4
     throw v0
 .end method

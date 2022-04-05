@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;
 .super Lio/reactivex/internal/subscribers/QueueDrainSubscriber;
-.source "FlowableWindowTimed.java"
 
 # interfaces
 .implements Lio/reactivex/FlowableSubscriber;
@@ -69,7 +68,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -94,30 +92,24 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/queue/MpscLinkedQueue;
 
     invoke-direct {v0}, Lio/reactivex/internal/queue/MpscLinkedQueue;-><init>()V
 
     invoke-direct {p0, p1, v0}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;-><init>(Lc/a/c;Lio/reactivex/internal/fuseable/SimplePlainQueue;)V
 
-    .line 2
     new-instance p1, Lio/reactivex/internal/disposables/SequentialDisposable;
 
     invoke-direct {p1}, Lio/reactivex/internal/disposables/SequentialDisposable;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->timer:Lio/reactivex/internal/disposables/SequentialDisposable;
 
-    .line 3
     iput-wide p2, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->timespan:J
 
-    .line 4
     iput-object p4, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->unit:Ljava/util/concurrent/TimeUnit;
 
-    .line 5
     iput-object p5, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->scheduler:Lio/reactivex/Scheduler;
 
-    .line 6
     iput p6, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->bufferSize:I
 
     return-void
@@ -130,7 +122,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->cancelled:Z
 
     return-void
@@ -139,7 +130,6 @@
 .method public dispose()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->timer:Lio/reactivex/internal/disposables/SequentialDisposable;
 
     invoke-static {v0}, Lio/reactivex/internal/disposables/DisposableHelper;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
@@ -150,26 +140,20 @@
 .method drainLoop()V
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->queue:Lio/reactivex/internal/fuseable/SimplePlainQueue;
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->downstream:Lc/a/c;
 
-    .line 3
     iget-object v2, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->window:Lio/reactivex/processors/UnicastProcessor;
 
     const/4 v3, 0x1
 
-    .line 4
     :cond_0
     :goto_0
     iget-boolean v4, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->terminated:Z
 
-    .line 5
     iget-boolean v5, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->done:Z
 
-    .line 6
     invoke-interface {v0}, Lio/reactivex/internal/fuseable/SimplePlainQueue;->poll()Ljava/lang/Object;
 
     move-result-object v6
@@ -180,32 +164,25 @@
 
     if-eqz v6, :cond_1
 
-    .line 7
     sget-object v5, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->NEXT:Ljava/lang/Object;
 
     if-ne v6, v5, :cond_3
 
-    .line 8
     :cond_1
     iput-object v7, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->window:Lio/reactivex/processors/UnicastProcessor;
 
-    .line 9
     invoke-interface {v0}, Lio/reactivex/internal/fuseable/SimpleQueue;->clear()V
 
-    .line 10
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->dispose()V
 
-    .line 11
     iget-object v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->error:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_2
 
-    .line 12
     invoke-virtual {v2, v0}, Lio/reactivex/processors/UnicastProcessor;->onError(Ljava/lang/Throwable;)V
 
     goto :goto_1
 
-    .line 13
     :cond_2
     invoke-virtual {v2}, Lio/reactivex/processors/UnicastProcessor;->onComplete()V
 
@@ -217,7 +194,6 @@
 
     neg-int v3, v3
 
-    .line 14
     invoke-virtual {p0, v3}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->leave(I)I
 
     move-result v3
@@ -226,28 +202,23 @@
 
     return-void
 
-    .line 15
     :cond_4
     sget-object v5, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->NEXT:Ljava/lang/Object;
 
     if-ne v6, v5, :cond_7
 
-    .line 16
     invoke-virtual {v2}, Lio/reactivex/processors/UnicastProcessor;->onComplete()V
 
     if-nez v4, :cond_6
 
-    .line 17
     iget v2, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->bufferSize:I
 
     invoke-static {v2}, Lio/reactivex/processors/UnicastProcessor;->create(I)Lio/reactivex/processors/UnicastProcessor;
 
     move-result-object v2
 
-    .line 18
     iput-object v2, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->window:Lio/reactivex/processors/UnicastProcessor;
 
-    .line 19
     invoke-virtual {p0}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->requested()J
 
     move-result-wide v4
@@ -258,7 +229,6 @@
 
     if-eqz v6, :cond_5
 
-    .line 20
     invoke-interface {v1, v2}, Lc/a/c;->onNext(Ljava/lang/Object;)V
 
     const-wide v6, 0x7fffffffffffffffL
@@ -269,29 +239,23 @@
 
     const-wide/16 v4, 0x1
 
-    .line 21
     invoke-virtual {p0, v4, v5}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->produced(J)J
 
     goto :goto_0
 
-    .line 22
     :cond_5
     iput-object v7, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->window:Lio/reactivex/processors/UnicastProcessor;
 
-    .line 23
     iget-object v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->queue:Lio/reactivex/internal/fuseable/SimplePlainQueue;
 
     invoke-interface {v0}, Lio/reactivex/internal/fuseable/SimpleQueue;->clear()V
 
-    .line 24
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v0}, Lc/a/d;->cancel()V
 
-    .line 25
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->dispose()V
 
-    .line 26
     new-instance v0, Lio/reactivex/exceptions/MissingBackpressureException;
 
     const-string v2, "Could not deliver first window due to lack of requests."
@@ -302,7 +266,6 @@
 
     return-void
 
-    .line 27
     :cond_6
     iget-object v4, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->upstream:Lc/a/d;
 
@@ -310,7 +273,6 @@
 
     goto :goto_0
 
-    .line 28
     :cond_7
     invoke-static {v6}, Lio/reactivex/internal/util/NotificationLite;->getValue(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -326,26 +288,21 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->done:Z
 
-    .line 2
     invoke-virtual {p0}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->enter()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->drainLoop()V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0}, Lc/a/c;->onComplete()V
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->dispose()V
 
     return-void
@@ -354,31 +311,25 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->error:Ljava/lang/Throwable;
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->done:Z
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->enter()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->drainLoop()V
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
-    .line 6
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->dispose()V
 
     return-void
@@ -392,14 +343,12 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->terminated:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->fastEnter()Z
 
@@ -407,14 +356,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->window:Lio/reactivex/processors/UnicastProcessor;
 
     invoke-virtual {v0, p1}, Lio/reactivex/processors/UnicastProcessor;->onNext(Ljava/lang/Object;)V
 
     const/4 p1, -0x1
 
-    .line 4
     invoke-virtual {p0, p1}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->leave(I)I
 
     move-result p1
@@ -423,7 +370,6 @@
 
     return-void
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->queue:Lio/reactivex/internal/fuseable/SimplePlainQueue;
 
@@ -433,7 +379,6 @@
 
     invoke-interface {v0, p1}, Lio/reactivex/internal/fuseable/SimpleQueue;->offer(Ljava/lang/Object;)Z
 
-    .line 6
     invoke-virtual {p0}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->enter()Z
 
     move-result p1
@@ -442,7 +387,6 @@
 
     return-void
 
-    .line 7
     :cond_2
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->drainLoop()V
 
@@ -452,7 +396,6 @@
 .method public onSubscribe(Lc/a/d;)V
     .locals 12
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->upstream:Lc/a/d;
 
     invoke-static {v0, p1}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(Lc/a/d;Lc/a/d;)Z
@@ -461,10 +404,8 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->upstream:Lc/a/d;
 
-    .line 3
     iget v0, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->bufferSize:I
 
     invoke-static {v0}, Lio/reactivex/processors/UnicastProcessor;->create(I)Lio/reactivex/processors/UnicastProcessor;
@@ -473,13 +414,10 @@
 
     iput-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->window:Lio/reactivex/processors/UnicastProcessor;
 
-    .line 4
     iget-object v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->downstream:Lc/a/c;
 
-    .line 5
     invoke-interface {v0, p0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 6
     invoke-virtual {p0}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->requested()J
 
     move-result-wide v1
@@ -490,7 +428,6 @@
 
     if-eqz v5, :cond_1
 
-    .line 7
     iget-object v3, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->window:Lio/reactivex/processors/UnicastProcessor;
 
     invoke-interface {v0, v3}, Lc/a/c;->onNext(Ljava/lang/Object;)V
@@ -503,16 +440,13 @@
 
     const-wide/16 v0, 0x1
 
-    .line 8
     invoke-virtual {p0, v0, v1}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->produced(J)J
 
-    .line 9
     :cond_0
     iget-boolean v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->cancelled:Z
 
     if-nez v0, :cond_2
 
-    .line 10
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->timer:Lio/reactivex/internal/disposables/SequentialDisposable;
 
     iget-object v5, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->scheduler:Lio/reactivex/Scheduler;
@@ -535,7 +469,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 11
     invoke-interface {p1, v3, v4}, Lc/a/d;->request(J)V
 
     goto :goto_0
@@ -543,13 +476,10 @@
     :cond_1
     const/4 v1, 0x1
 
-    .line 12
     iput-boolean v1, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->cancelled:Z
 
-    .line 13
     invoke-interface {p1}, Lc/a/d;->cancel()V
 
-    .line 14
     new-instance p1, Lio/reactivex/exceptions/MissingBackpressureException;
 
     const-string v1, "Could not deliver first window due to lack of requests."
@@ -566,7 +496,6 @@
 .method public request(J)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->requested(J)V
 
     return-void
@@ -575,20 +504,16 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->cancelled:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->terminated:Z
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->dispose()V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->queue:Lio/reactivex/internal/fuseable/SimplePlainQueue;
 
@@ -596,14 +521,12 @@
 
     invoke-interface {v0, v1}, Lio/reactivex/internal/fuseable/SimpleQueue;->offer(Ljava/lang/Object;)Z
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/internal/subscribers/QueueDrainSubscriber;->enter()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 6
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableWindowTimed$WindowExactUnboundedSubscriber;->drainLoop()V
 
     :cond_1

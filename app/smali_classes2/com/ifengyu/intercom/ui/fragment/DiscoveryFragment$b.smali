@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$b;
 .super Ljava/lang/Object;
-.source "DiscoveryFragment.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$b;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -66,7 +64,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$b;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->b(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Ljava/util/ArrayList;
@@ -75,7 +72,6 @@
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$b;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->b(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Ljava/util/ArrayList;
@@ -84,7 +80,6 @@
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$b;->a:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->c(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Lcom/ifengyu/intercom/ui/adapter/c;
@@ -108,7 +103,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$b;->a(Ljava/util/ArrayList;)V

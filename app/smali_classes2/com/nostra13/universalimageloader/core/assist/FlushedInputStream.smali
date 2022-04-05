@@ -1,13 +1,11 @@
 .class public Lcom/nostra13/universalimageloader/core/assist/FlushedInputStream;
 .super Ljava/io/FilterInputStream;
-.source "FlushedInputStream.java"
 
 
 # direct methods
 .method public constructor <init>(Ljava/io/InputStream;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
 
     return-void
@@ -32,7 +30,6 @@
 
     if-gez v4, :cond_2
 
-    .line 1
     iget-object v4, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
 
     sub-long v5, p1, v2
@@ -45,7 +42,6 @@
 
     if-nez v6, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Ljava/io/FilterInputStream;->read()I
 
     move-result v4

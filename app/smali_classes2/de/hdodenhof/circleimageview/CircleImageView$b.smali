@@ -1,6 +1,5 @@
 .class Lde/hdodenhof/circleimageview/CircleImageView$b;
 .super Landroid/view/ViewOutlineProvider;
-.source "CircleImageView.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method private constructor <init>(Lde/hdodenhof/circleimageview/CircleImageView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lde/hdodenhof/circleimageview/CircleImageView$b;->a:Lde/hdodenhof/circleimageview/CircleImageView;
 
     invoke-direct {p0}, Landroid/view/ViewOutlineProvider;-><init>()V
@@ -37,7 +35,6 @@
 .method synthetic constructor <init>(Lde/hdodenhof/circleimageview/CircleImageView;Lde/hdodenhof/circleimageview/CircleImageView$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lde/hdodenhof/circleimageview/CircleImageView$b;-><init>(Lde/hdodenhof/circleimageview/CircleImageView;)V
 
     return-void
@@ -48,12 +45,10 @@
 .method public getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
     .locals 2
 
-    .line 1
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    .line 2
     iget-object v0, p0, Lde/hdodenhof/circleimageview/CircleImageView$b;->a:Lde/hdodenhof/circleimageview/CircleImageView;
 
     invoke-static {v0}, Lde/hdodenhof/circleimageview/CircleImageView;->a(Lde/hdodenhof/circleimageview/CircleImageView;)Landroid/graphics/RectF;
@@ -62,7 +57,6 @@
 
     invoke-virtual {v0, p1}, Landroid/graphics/RectF;->roundOut(Landroid/graphics/Rect;)V
 
-    .line 3
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
     move-result v0

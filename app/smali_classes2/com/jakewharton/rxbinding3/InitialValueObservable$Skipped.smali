@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/InitialValueObservable$Skipped;
 .super Lio/reactivex/Observable;
-.source "InitialValueObservable.kt"
 
 
 # annotations
@@ -61,7 +60,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/InitialValueObservable$Skipped;->this$0:Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
@@ -89,7 +87,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/InitialValueObservable$Skipped;->this$0:Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     invoke-virtual {v0, p1}, Lcom/jakewharton/rxbinding3/InitialValueObservable;->subscribeListener(Lio/reactivex/Observer;)V

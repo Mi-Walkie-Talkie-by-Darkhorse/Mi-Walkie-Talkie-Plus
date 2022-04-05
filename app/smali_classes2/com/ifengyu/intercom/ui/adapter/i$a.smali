@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/i$a;
 .super Ljava/lang/Object;
-.source "MyCommonAdapter.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/adapter/i;Lb/d/a/a/c/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/i$a;->b:Lcom/ifengyu/intercom/ui/adapter/i;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/i$a;->a:Lb/d/a/a/c/c;
@@ -42,7 +40,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/i$a;->b:Lcom/ifengyu/intercom/ui/adapter/i;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/i;->a(Lcom/ifengyu/intercom/ui/adapter/i;)Lb/d/a/a/b$c;
@@ -51,14 +48,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/i$a;->a:Lb/d/a/a/c/c;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$y;->getLayoutPosition()I
 
     move-result v0
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/i$a;->b:Lcom/ifengyu/intercom/ui/adapter/i;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/adapter/i;->b(Lcom/ifengyu/intercom/ui/adapter/i;)Lb/d/a/a/b$c;

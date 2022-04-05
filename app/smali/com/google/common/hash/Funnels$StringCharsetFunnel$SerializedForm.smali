@@ -1,6 +1,5 @@
 .class Lcom/google/common/hash/Funnels$StringCharsetFunnel$SerializedForm;
 .super Ljava/lang/Object;
-.source "Funnels.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -29,10 +28,8 @@
 .method constructor <init>(Ljava/nio/charset/Charset;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p1}, Ljava/nio/charset/Charset;->name()Ljava/lang/String;
 
     move-result-object p1
@@ -45,7 +42,6 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/hash/Funnels$StringCharsetFunnel$SerializedForm;->charsetCanonicalName:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;

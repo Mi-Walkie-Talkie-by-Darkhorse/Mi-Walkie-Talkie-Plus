@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity$a;
 .super Ljava/lang/Object;
-.source "SharkChannelEditActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/o$k;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +44,6 @@
 .method public b(Ljava/lang/String;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;->a(Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;)Ljava/lang/String;
@@ -69,7 +66,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->c(Ljava/lang/String;)I
@@ -78,14 +74,12 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;->a(Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;I)I
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;->mTvRxFreq:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;->mTvTxFreq:Landroid/widget/TextView;
@@ -100,7 +94,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;->b(Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;)I
@@ -109,7 +102,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;->b(Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;I)I
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelEditActivity;->mTvTxFreq:Landroid/widget/TextView;

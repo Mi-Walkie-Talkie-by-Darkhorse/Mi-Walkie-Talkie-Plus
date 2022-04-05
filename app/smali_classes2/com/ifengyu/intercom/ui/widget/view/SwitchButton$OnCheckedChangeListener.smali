@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/view/SwitchButton$OnCheckedChangeListener;
 .super Ljava/lang/Object;
-.source "SwitchButton.java"
 
 
 # annotations

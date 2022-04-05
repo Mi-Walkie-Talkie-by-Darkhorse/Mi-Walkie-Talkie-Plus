@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/log/LogCollectService;
 .super Landroid/app/Service;
-.source "LogCollectService.java"
 
 
 # annotations
@@ -25,7 +24,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/log/LogCollectService;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -40,10 +38,8 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     const-string v1, "MM-dd_HH:mm"
@@ -58,7 +54,6 @@
 .method private a()Ljava/lang/String;
     .locals 2
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/log/LogCollectService;->b()Z
 
     move-result v0
@@ -67,7 +62,6 @@
 
     const-string v0, "log"
 
-    .line 5
     invoke-virtual {p0, v0}, Landroid/app/Service;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
@@ -76,7 +70,6 @@
 
     move-result-object v0
 
-    .line 6
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/log/LogCollectService;->a(Ljava/lang/String;)Z
 
     move-result v1
@@ -94,7 +87,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/log/LogCollectService;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/log/LogCollectService;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -105,7 +97,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/log/LogCollectService;Ljava/util/Date;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/log/LogCollectService;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p0
@@ -116,7 +107,6 @@
 .method private a(Ljava/util/Date;)Ljava/lang/String;
     .locals 2
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -143,7 +133,6 @@
 .method private b(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -170,7 +159,6 @@
 .method private b()Z
     .locals 2
 
-    .line 2
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
 
     move-result-object v0
@@ -189,12 +177,10 @@
 .method public a(Ljava/lang/String;)Z
     .locals 1
 
-    .line 7
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 8
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p1
@@ -239,17 +225,14 @@
 .method public onCreate()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/log/LogCollectService$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/log/LogCollectService$a;-><init>(Lcom/ifengyu/intercom/log/LogCollectService;)V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/log/LogCollectService;->b:Lcom/ifengyu/intercom/log/LogCollectService$a;
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     return-void
@@ -258,18 +241,14 @@
 .method public onDestroy()V
     .locals 3
 
-    .line 1
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/log/LogCollectService;->b:Lcom/ifengyu/intercom/log/LogCollectService$a;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Lcom/ifengyu/intercom/log/LogCollectService$a;->a()V
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
@@ -277,20 +256,16 @@
 
     const-string v1, "sh"
 
-    .line 5
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     const-string v1, "-c"
 
-    .line 6
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     const-string v1, "setprop log.tag.MiTalk SUPPRESS"
 
-    .line 7
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 8
     :try_start_0
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
@@ -317,7 +292,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 9
     invoke-virtual {v0}, Ljava/lang/Process;->destroy()V
 
     goto :goto_0
@@ -330,7 +304,6 @@
     :catch_0
     move-exception v0
 
-    .line 10
     :try_start_1
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
     :try_end_1
@@ -340,7 +313,6 @@
     :goto_0
     return-void
 
-    .line 11
     :goto_1
     throw v0
 .end method

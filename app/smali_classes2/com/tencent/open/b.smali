@@ -1,6 +1,5 @@
 .class public abstract Lcom/tencent/open/b;
 .super Landroid/app/Dialog;
-.source "ProGuard"
 
 
 # instance fields
@@ -19,10 +18,8 @@
 .method public constructor <init>(Landroid/content/Context;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
-    .line 2
     new-instance p1, Lcom/tencent/open/b$1;
 
     invoke-direct {p1, p0}, Lcom/tencent/open/b$1;-><init>(Lcom/tencent/open/b;)V
@@ -40,10 +37,8 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
-    .line 2
     new-instance p1, Lcom/tencent/open/a;
 
     invoke-direct {p1}, Lcom/tencent/open/a;-><init>()V

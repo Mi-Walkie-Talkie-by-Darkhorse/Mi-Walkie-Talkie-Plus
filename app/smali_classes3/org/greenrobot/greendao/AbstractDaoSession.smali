@@ -1,6 +1,5 @@
 .class public Lorg/greenrobot/greendao/AbstractDaoSession;
 .super Ljava/lang/Object;
-.source "AbstractDaoSession.java"
 
 
 # instance fields
@@ -27,13 +26,10 @@
 .method public constructor <init>(Lorg/greenrobot/greendao/database/Database;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
-    .line 3
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
@@ -63,25 +59,21 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
     invoke-interface {v0}, Lorg/greenrobot/greendao/database/Database;->beginTransaction()V
 
-    .line 2
     :try_start_0
     invoke-interface {p1}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 3
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
     invoke-interface {v0}, Lorg/greenrobot/greendao/database/Database;->setTransactionSuccessful()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
     invoke-interface {v0}, Lorg/greenrobot/greendao/database/Database;->endTransaction()V
@@ -110,12 +102,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
     invoke-interface {v0}, Lorg/greenrobot/greendao/database/Database;->beginTransaction()V
 
-    .line 2
     :try_start_0
     invoke-interface {p1}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
 
@@ -124,7 +114,6 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     :try_start_1
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
@@ -132,7 +121,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 4
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
     invoke-interface {v0}, Lorg/greenrobot/greendao/database/Database;->endTransaction()V
@@ -147,7 +135,6 @@
     :catch_0
     move-exception p1
 
-    .line 5
     :try_start_2
     new-instance v0, Lorg/greenrobot/greendao/DaoException;
 
@@ -159,7 +146,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 6
     :goto_0
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
@@ -178,7 +164,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -187,7 +172,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1}, Lorg/greenrobot/greendao/AbstractDao;->delete(Ljava/lang/Object;)V
 
     return-void
@@ -205,12 +189,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/greenrobot/greendao/AbstractDaoSession;->getDao(Ljava/lang/Class;)Lorg/greenrobot/greendao/AbstractDao;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p1}, Lorg/greenrobot/greendao/AbstractDao;->deleteAll()V
 
     return-void
@@ -227,7 +209,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->entityToDao:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
@@ -255,7 +236,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->entityToDao:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -268,7 +248,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance v0, Lorg/greenrobot/greendao/DaoException;
 
@@ -294,7 +273,6 @@
 .method public getDatabase()Lorg/greenrobot/greendao/database/Database;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
     return-object v0
@@ -310,7 +288,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -319,7 +296,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1}, Lorg/greenrobot/greendao/AbstractDao;->insert(Ljava/lang/Object;)J
 
     move-result-wide v0
@@ -337,7 +313,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -346,7 +321,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1}, Lorg/greenrobot/greendao/AbstractDao;->insertOrReplace(Ljava/lang/Object;)J
 
     move-result-wide v0
@@ -368,12 +342,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/greenrobot/greendao/AbstractDaoSession;->getDao(Ljava/lang/Class;)Lorg/greenrobot/greendao/AbstractDao;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p1, p2}, Lorg/greenrobot/greendao/AbstractDao;->load(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -397,12 +369,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/greenrobot/greendao/AbstractDaoSession;->getDao(Ljava/lang/Class;)Lorg/greenrobot/greendao/AbstractDao;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p1}, Lorg/greenrobot/greendao/AbstractDao;->loadAll()Ljava/util/List;
 
     move-result-object p1
@@ -424,12 +394,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/greenrobot/greendao/AbstractDaoSession;->getDao(Ljava/lang/Class;)Lorg/greenrobot/greendao/AbstractDao;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p1}, Lorg/greenrobot/greendao/AbstractDao;->queryBuilder()Lorg/greenrobot/greendao/query/QueryBuilder;
 
     move-result-object p1
@@ -457,12 +425,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/greenrobot/greendao/AbstractDaoSession;->getDao(Ljava/lang/Class;)Lorg/greenrobot/greendao/AbstractDao;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p1, p2, p3}, Lorg/greenrobot/greendao/AbstractDao;->queryRaw(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
 
     move-result-object p1
@@ -480,7 +446,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -489,7 +454,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1}, Lorg/greenrobot/greendao/AbstractDao;->refresh(Ljava/lang/Object;)V
 
     return-void
@@ -509,7 +473,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->entityToDao:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -520,23 +483,19 @@
 .method public runInTx(Ljava/lang/Runnable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
     invoke-interface {v0}, Lorg/greenrobot/greendao/database/Database;->beginTransaction()V
 
-    .line 2
     :try_start_0
     invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
-    .line 3
     iget-object p1, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
     invoke-interface {p1}, Lorg/greenrobot/greendao/database/Database;->setTransactionSuccessful()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     iget-object p1, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->db:Lorg/greenrobot/greendao/database/Database;
 
     invoke-interface {p1}, Lorg/greenrobot/greendao/database/Database;->endTransaction()V
@@ -558,12 +517,10 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->rxTxIo:Lorg/greenrobot/greendao/rx/RxTransaction;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/rx/RxTransaction;
 
     invoke-static {}, Lrx/schedulers/Schedulers;->io()Lrx/Scheduler;
@@ -574,7 +531,6 @@
 
     iput-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->rxTxIo:Lorg/greenrobot/greendao/rx/RxTransaction;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->rxTxIo:Lorg/greenrobot/greendao/rx/RxTransaction;
 
@@ -586,19 +542,16 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->rxTxPlain:Lorg/greenrobot/greendao/rx/RxTransaction;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/rx/RxTransaction;
 
     invoke-direct {v0, p0}, Lorg/greenrobot/greendao/rx/RxTransaction;-><init>(Lorg/greenrobot/greendao/AbstractDaoSession;)V
 
     iput-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->rxTxPlain:Lorg/greenrobot/greendao/rx/RxTransaction;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lorg/greenrobot/greendao/AbstractDaoSession;->rxTxPlain:Lorg/greenrobot/greendao/rx/RxTransaction;
 
@@ -608,7 +561,6 @@
 .method public startAsyncSession()Lorg/greenrobot/greendao/async/AsyncSession;
     .locals 1
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/async/AsyncSession;
 
     invoke-direct {v0, p0}, Lorg/greenrobot/greendao/async/AsyncSession;-><init>(Lorg/greenrobot/greendao/AbstractDaoSession;)V
@@ -626,7 +578,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -635,7 +586,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1}, Lorg/greenrobot/greendao/AbstractDao;->update(Ljava/lang/Object;)V
 
     return-void

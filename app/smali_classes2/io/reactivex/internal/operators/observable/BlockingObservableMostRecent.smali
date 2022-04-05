@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent;
 .super Ljava/lang/Object;
-.source "BlockingObservableMostRecent.java"
 
 # interfaces
 .implements Ljava/lang/Iterable;
@@ -55,13 +54,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent;->source:Lio/reactivex/ObservableSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent;->initialValue:Ljava/lang/Object;
 
     return-void
@@ -79,19 +75,16 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent$MostRecentObserver;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent;->initialValue:Ljava/lang/Object;
 
     invoke-direct {v0, v1}, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent$MostRecentObserver;-><init>(Ljava/lang/Object;)V
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent;->source:Lio/reactivex/ObservableSource;
 
     invoke-interface {v1, v0}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
 
-    .line 3
     invoke-virtual {v0}, Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent$MostRecentObserver;->getIterable()Lio/reactivex/internal/operators/observable/BlockingObservableMostRecent$MostRecentObserver$Iterator;
 
     move-result-object v0

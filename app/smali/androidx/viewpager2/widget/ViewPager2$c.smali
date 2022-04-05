@@ -1,6 +1,5 @@
 .class Landroidx/viewpager2/widget/ViewPager2$c;
 .super Landroidx/viewpager2/widget/ViewPager2$i;
-.source "ViewPager2.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/viewpager2/widget/ViewPager2;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$c;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-direct {p0}, Landroidx/viewpager2/widget/ViewPager2$i;-><init>()V
@@ -35,12 +33,10 @@
 .method public onPageSelected(I)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$c;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->clearFocus()V
 
-    .line 2
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$c;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->hasFocus()Z
@@ -49,7 +45,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$c;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     iget-object p1, p1, Landroidx/viewpager2/widget/ViewPager2;->j:Landroidx/recyclerview/widget/RecyclerView;

@@ -1,6 +1,5 @@
 .class public Lcom/google/protobuf/ExtensionRegistryLite;
 .super Ljava/lang/Object;
-.source "ExtensionRegistryLite.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/ExtensionRegistryLite;
 
     const/4 v1, 0x1
@@ -49,10 +47,8 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -65,15 +61,12 @@
 .method constructor <init>(Lcom/google/protobuf/ExtensionRegistryLite;)V
     .locals 1
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     sget-object v0, Lcom/google/protobuf/ExtensionRegistryLite;->EMPTY:Lcom/google/protobuf/ExtensionRegistryLite;
 
     if-ne p1, v0, :cond_0
 
-    .line 5
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p1
@@ -82,7 +75,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object p1, p1, Lcom/google/protobuf/ExtensionRegistryLite;->extensionsByNumber:Ljava/util/Map;
 
@@ -99,10 +91,8 @@
 .method private constructor <init>(Z)V
     .locals 0
 
-    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p1
@@ -115,7 +105,6 @@
 .method public static getEmptyRegistry()Lcom/google/protobuf/ExtensionRegistryLite;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/ExtensionRegistryLite;->EMPTY:Lcom/google/protobuf/ExtensionRegistryLite;
 
     return-object v0
@@ -124,7 +113,6 @@
 .method public static isEagerlyParseMessageSets()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/google/protobuf/ExtensionRegistryLite;->eagerlyParseMessageSets:Z
 
     return v0
@@ -133,7 +121,6 @@
 .method public static newInstance()Lcom/google/protobuf/ExtensionRegistryLite;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/ExtensionRegistryLite;
 
     invoke-direct {v0}, Lcom/google/protobuf/ExtensionRegistryLite;-><init>()V
@@ -144,7 +131,6 @@
 .method public static setEagerlyParseMessageSets(Z)V
     .locals 0
 
-    .line 1
     sput-boolean p0, Lcom/google/protobuf/ExtensionRegistryLite;->eagerlyParseMessageSets:Z
 
     return-void
@@ -162,7 +148,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/ExtensionRegistryLite;->extensionsByNumber:Ljava/util/Map;
 
     new-instance v1, Lcom/google/protobuf/ExtensionRegistryLite$ObjectIntPair;
@@ -194,7 +179,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/ExtensionRegistryLite;->extensionsByNumber:Ljava/util/Map;
 
     new-instance v1, Lcom/google/protobuf/ExtensionRegistryLite$ObjectIntPair;
@@ -213,7 +197,6 @@
 .method public getUnmodifiable()Lcom/google/protobuf/ExtensionRegistryLite;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/ExtensionRegistryLite;
 
     invoke-direct {v0, p0}, Lcom/google/protobuf/ExtensionRegistryLite;-><init>(Lcom/google/protobuf/ExtensionRegistryLite;)V

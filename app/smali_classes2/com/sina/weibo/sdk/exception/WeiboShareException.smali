@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/exception/WeiboShareException;
 .super Lcom/sina/weibo/sdk/exception/WeiboException;
-.source "WeiboShareException.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/exception/WeiboException;-><init>(Ljava/lang/String;)V
 
     return-void

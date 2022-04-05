@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/CharStreams$NullWriter;
 .super Ljava/io/Writer;
-.source "CharStreams.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/io/CharStreams$NullWriter;
 
     invoke-direct {v0}, Lcom/google/common/io/CharStreams$NullWriter;-><init>()V
@@ -35,7 +33,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/io/Writer;-><init>()V
 
     return-void
@@ -44,7 +41,6 @@
 .method static synthetic access$000()Lcom/google/common/io/CharStreams$NullWriter;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/io/CharStreams$NullWriter;->INSTANCE:Lcom/google/common/io/CharStreams$NullWriter;
 
     return-object v0
@@ -61,7 +57,6 @@
 .method public append(Ljava/lang/CharSequence;)Ljava/io/Writer;
     .locals 0
 
-    .line 4
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object p0
@@ -70,7 +65,6 @@
 .method public append(Ljava/lang/CharSequence;II)Ljava/io/Writer;
     .locals 0
 
-    .line 5
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result p1
@@ -88,7 +82,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/io/CharStreams$NullWriter;->append(C)Ljava/io/Writer;
 
     move-result-object p1
@@ -104,7 +97,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/io/CharStreams$NullWriter;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
     move-result-object p1
@@ -120,7 +112,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/io/CharStreams$NullWriter;->append(Ljava/lang/CharSequence;II)Ljava/io/Writer;
 
     move-result-object p1
@@ -157,7 +148,6 @@
 .method public write(Ljava/lang/String;)V
     .locals 0
 
-    .line 3
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
@@ -168,7 +158,6 @@
 
     add-int/2addr p3, p2
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result p1
@@ -181,7 +170,6 @@
 .method public write([C)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
@@ -192,7 +180,6 @@
 
     add-int/2addr p3, p2
 
-    .line 2
     array-length p1, p1
 
     invoke-static {p2, p3, p1}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V

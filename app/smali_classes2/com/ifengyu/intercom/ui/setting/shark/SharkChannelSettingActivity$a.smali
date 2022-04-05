@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity$a;
 .super Landroidx/viewpager/widget/ViewPager$k;
-.source "SharkChannelSettingActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity;
 
     invoke-direct {p0}, Landroidx/viewpager/widget/ViewPager$k;-><init>()V
@@ -35,7 +33,6 @@
 .method public onPageSelected(I)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity;)Ljava/lang/String;
@@ -60,7 +57,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity;->mFabLayout:Landroid/view/View;
@@ -71,7 +67,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkChannelSettingActivity;
 

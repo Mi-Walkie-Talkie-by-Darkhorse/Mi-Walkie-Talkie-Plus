@@ -1,6 +1,5 @@
 .class final Lcom/bumptech/glide/load/j/e$b;
 .super Ljava/lang/Object;
-.source "DataUrlLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/i/d;
@@ -61,13 +60,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/j/e$b;->a:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Lcom/bumptech/glide/load/j/e$b;->b:Lcom/bumptech/glide/load/j/e$a;
 
     return-void
@@ -88,7 +84,6 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lcom/bumptech/glide/load/j/e$b;->b:Lcom/bumptech/glide/load/j/e$a;
 
     invoke-interface {v0}, Lcom/bumptech/glide/load/j/e$a;->a()Ljava/lang/Class;
@@ -117,7 +112,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object p1, p0, Lcom/bumptech/glide/load/j/e$b;->b:Lcom/bumptech/glide/load/j/e$a;
 
@@ -129,7 +123,6 @@
 
     iput-object p1, p0, Lcom/bumptech/glide/load/j/e$b;->c:Ljava/lang/Object;
 
-    .line 2
     invoke-interface {p2, p1}, Lcom/bumptech/glide/load/i/d$a;->a(Ljava/lang/Object;)V
     :try_end_0
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
@@ -139,7 +132,6 @@
     :catch_0
     move-exception p1
 
-    .line 3
     invoke-interface {p2, p1}, Lcom/bumptech/glide/load/i/d$a;->a(Ljava/lang/Exception;)V
 
     :goto_0
@@ -149,7 +141,6 @@
 .method public b()V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/bumptech/glide/load/j/e$b;->b:Lcom/bumptech/glide/load/j/e$a;
 
@@ -168,7 +159,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/bumptech/glide/load/DataSource;->a:Lcom/bumptech/glide/load/DataSource;
 
     return-object v0

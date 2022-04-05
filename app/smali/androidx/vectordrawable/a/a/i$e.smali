@@ -1,6 +1,5 @@
 .class abstract Landroidx/vectordrawable/a/a/i$e;
 .super Ljava/lang/Object;
-.source "VectorDrawableCompat.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +25,6 @@
 .method synthetic constructor <init>(Landroidx/vectordrawable/a/a/i$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Landroidx/vectordrawable/a/a/i$e;-><init>()V
 
     return-void

@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 .super Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
-.source "XYTileSource.java"
 
 
 # direct methods
@@ -23,7 +22,6 @@
 
     move-object v6, p6
 
-    .line 1
     invoke-direct/range {v0 .. v7}, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;-><init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -32,7 +30,6 @@
 .method public constructor <init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     invoke-direct/range {p0 .. p7}, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;-><init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -43,7 +40,6 @@
 .method public getTileURLString(Lorg/osmdroid/tileprovider/MapTile;)Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

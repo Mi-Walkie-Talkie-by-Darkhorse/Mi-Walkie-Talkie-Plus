@@ -1,6 +1,5 @@
 .class synthetic Lcom/efs/sdk/base/EfsReporter$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations

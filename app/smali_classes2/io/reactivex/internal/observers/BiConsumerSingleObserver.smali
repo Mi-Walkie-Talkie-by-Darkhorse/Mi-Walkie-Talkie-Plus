@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/observers/BiConsumerSingleObserver;
 .super Ljava/util/concurrent/atomic/AtomicReference;
-.source "BiConsumerSingleObserver.java"
 
 # interfaces
 .implements Lio/reactivex/SingleObserver;
@@ -53,10 +52,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/observers/BiConsumerSingleObserver;->onCallback:Lio/reactivex/functions/BiConsumer;
 
     return-void
@@ -67,7 +64,6 @@
 .method public dispose()V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lio/reactivex/internal/disposables/DisposableHelper;->dispose(Ljava/util/concurrent/atomic/AtomicReference;)Z
 
     return-void
@@ -76,7 +72,6 @@
 .method public isDisposed()Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -99,13 +94,11 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 4
 
-    .line 1
     :try_start_0
     sget-object v0, Lio/reactivex/internal/disposables/DisposableHelper;->DISPOSED:Lio/reactivex/internal/disposables/DisposableHelper;
 
     invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/observers/BiConsumerSingleObserver;->onCallback:Lio/reactivex/functions/BiConsumer;
 
     const/4 v1, 0x0
@@ -119,10 +112,8 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 4
     new-instance v1, Lio/reactivex/exceptions/CompositeException;
 
     const/4 v2, 0x2
@@ -148,7 +139,6 @@
 .method public onSubscribe(Lio/reactivex/disposables/Disposable;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lio/reactivex/internal/disposables/DisposableHelper;->setOnce(Ljava/util/concurrent/atomic/AtomicReference;Lio/reactivex/disposables/Disposable;)Z
 
     return-void
@@ -162,13 +152,11 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     sget-object v0, Lio/reactivex/internal/disposables/DisposableHelper;->DISPOSED:Lio/reactivex/internal/disposables/DisposableHelper;
 
     invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/observers/BiConsumerSingleObserver;->onCallback:Lio/reactivex/functions/BiConsumer;
 
     const/4 v1, 0x0
@@ -182,10 +170,8 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 4
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
     :goto_0

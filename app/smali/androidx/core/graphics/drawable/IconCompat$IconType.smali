@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/graphics/drawable/IconCompat$IconType;
 .super Ljava/lang/Object;
-.source "IconCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

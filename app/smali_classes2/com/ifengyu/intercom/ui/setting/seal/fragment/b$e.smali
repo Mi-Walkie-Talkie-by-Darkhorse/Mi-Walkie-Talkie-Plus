@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$e;
 .super Ljava/lang/Object;
-.source "SealPresetFragment.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;Lcom/ifengyu/intercom/ui/widget/dialog/f;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$e;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$e;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
@@ -42,17 +40,14 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$e;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->b()V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$e;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->m()V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$e;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->d(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)Ljava/util/List;
@@ -69,12 +64,10 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->a(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 4
     new-instance p1, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$e$a;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$e$a;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$e;)V
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->a()Landroid/os/Handler;
 
     move-result-object p2
@@ -83,7 +76,6 @@
 
     invoke-virtual {p2, p1, v0, v1}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$e;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->c(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -92,7 +84,6 @@
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/g0;->f(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$e;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     const/4 p2, 0x1

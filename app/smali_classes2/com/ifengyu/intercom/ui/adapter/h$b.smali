@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/h$b;
 .super Ljava/lang/Object;
-.source "GaoDeOfflineDownloadedChild.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/k$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/adapter/h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/h$b;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/h$b;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/h;->f(Lcom/ifengyu/intercom/ui/adapter/h;)Lcom/amap/api/maps/offlinemap/OfflineMapManager;
@@ -63,7 +60,6 @@
 .method public b()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/h$b;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/h;->c(Lcom/ifengyu/intercom/ui/adapter/h;)V
@@ -74,7 +70,6 @@
 .method public c()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/h$b;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/h;->d(Lcom/ifengyu/intercom/ui/adapter/h;)Z

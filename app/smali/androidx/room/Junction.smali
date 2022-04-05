@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Junction;
 .super Ljava/lang/Object;
-.source "Junction.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

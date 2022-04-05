@@ -1,6 +1,5 @@
 .class public abstract Lcom/jakewharton/rxbinding3/InitialValueObservable;
 .super Lio/reactivex/Observable;
-.source "InitialValueObservable.kt"
 
 
 # annotations
@@ -59,7 +58,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
     return-void
@@ -88,7 +86,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/InitialValueObservable$Skipped;
 
     invoke-direct {v0, p0}, Lcom/jakewharton/rxbinding3/InitialValueObservable$Skipped;-><init>(Lcom/jakewharton/rxbinding3/InitialValueObservable;)V
@@ -114,10 +111,8 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/jakewharton/rxbinding3/InitialValueObservable;->subscribeListener(Lio/reactivex/Observer;)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/jakewharton/rxbinding3/InitialValueObservable;->getInitialValue()Ljava/lang/Object;
 
     move-result-object v0

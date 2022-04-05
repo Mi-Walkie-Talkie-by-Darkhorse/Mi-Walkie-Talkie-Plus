@@ -1,6 +1,5 @@
 .class final Lcom/tencent/connect/share/a$4;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Ljava/util/ArrayList;Landroid/os/Handler;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/share/a$4;->a:Ljava/util/ArrayList;
 
     iput-object p2, p0, Lcom/tencent/connect/share/a$4;->b:Landroid/os/Handler;
@@ -44,7 +42,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     iget-object v1, p0, Lcom/tencent/connect/share/a$4;->a:Ljava/util/ArrayList;
 
@@ -54,7 +51,6 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 2
     iget-object v1, p0, Lcom/tencent/connect/share/a$4;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -63,7 +59,6 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 3
     invoke-static {v1}, Lcom/tencent/open/utils/i;->g(Ljava/lang/String;)Z
 
     move-result v2
@@ -78,14 +73,12 @@
 
     const/16 v2, 0x2710
 
-    .line 4
     invoke-static {v1, v2}, Lcom/tencent/connect/share/a;->a(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
-    .line 5
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -104,12 +97,10 @@
 
     move-result-object v4
 
-    .line 6
     invoke-static {v1}, Lcom/tencent/open/utils/i;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 7
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -130,7 +121,6 @@
 
     const/16 v6, 0x280
 
-    .line 8
     invoke-static {v1, v6, v2}, Lcom/tencent/connect/share/a;->a(Ljava/lang/String;II)Z
 
     move-result v2
@@ -141,7 +131,6 @@
 
     const-string v2, "not out of bound,not compress!"
 
-    .line 9
     invoke-static {v6, v2}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
@@ -149,10 +138,8 @@
     :cond_0
     const-string v1, "out of bound, compress!"
 
-    .line 10
     invoke-static {v6, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
     invoke-static {v3, v4, v5}, Lcom/tencent/connect/share/a;->a(Landroid/graphics/Bitmap;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -160,7 +147,6 @@
     :goto_1
     if-eqz v1, :cond_1
 
-    .line 12
     iget-object v2, p0, Lcom/tencent/connect/share/a$4;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0, v1}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
@@ -170,7 +156,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_2
     iget-object v0, p0, Lcom/tencent/connect/share/a$4;->b:Landroid/os/Handler;
 
@@ -180,22 +165,18 @@
 
     move-result-object v0
 
-    .line 14
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 15
     iget-object v2, p0, Lcom/tencent/connect/share/a$4;->a:Ljava/util/ArrayList;
 
     const-string v3, "images"
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 16
     invoke-virtual {v0, v1}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
-    .line 17
     iget-object v1, p0, Lcom/tencent/connect/share/a$4;->b:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z

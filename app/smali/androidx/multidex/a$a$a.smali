@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/multidex/a$a$a;
 .super Ljava/lang/Object;
-.source "MultiDex.java"
 
 
 # annotations

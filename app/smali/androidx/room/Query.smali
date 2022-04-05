@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Query;
 .super Ljava/lang/Object;
-.source "Query.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

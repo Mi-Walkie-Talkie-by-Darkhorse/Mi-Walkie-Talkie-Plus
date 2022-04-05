@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/utils/g;
 .super Ljava/lang/Object;
-.source "LiteSortUtil.java"
 
 
 # direct methods
@@ -12,10 +11,8 @@
 
     add-int v0, p1, p2
 
-    .line 3
     div-int/lit8 v0, v0, 0x2
 
-    .line 4
     array-length v1, p0
 
     invoke-static {p0, v1, p1, p2, v0}, Lcom/ifengyu/intercom/lite/utils/g;->a([Ljava/lang/Integer;IIII)I
@@ -35,7 +32,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     aget-object p2, p0, p1
 
@@ -49,7 +45,6 @@
 
     return p1
 
-    .line 6
     :cond_2
     aget-object p0, p0, p1
 
@@ -84,7 +79,6 @@
     :goto_0
     if-gt p2, p3, :cond_2
 
-    .line 1
     aget-object v0, p0, p2
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
@@ -97,7 +91,6 @@
 
     if-eq p1, p2, :cond_1
 
-    .line 2
     invoke-static {p0, p2, p1}, Lcom/ifengyu/intercom/lite/utils/g;->b([Ljava/lang/Integer;II)V
 
     :cond_1
@@ -118,19 +111,16 @@
 .method private static b([Ljava/lang/Integer;II)V
     .locals 2
 
-    .line 1
     aget-object v0, p0, p1
 
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
-    .line 2
     aget-object v1, p0, p2
 
     aput-object v1, p0, p1
 
-    .line 3
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/gr;
 .super Ljava/lang/Object;
-.source "HashCodeBuilder.java"
 
 
 # instance fields
@@ -13,22 +12,18 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/gr;->b:I
 
     const/16 v0, 0x25
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/gr;->a:I
 
     const/16 v0, 0x11
 
-    .line 4
     iput v0, p0, Lcom/amap/api/col/l3/gr;->b:I
 
     return-void
@@ -37,7 +32,6 @@
 .method private a(J)Lcom/amap/api/col/l3/gr;
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/gr;->b:I
 
     iget v1, p0, Lcom/amap/api/col/l3/gr;->a:I
@@ -64,7 +58,6 @@
 .method public final a()I
     .locals 1
 
-    .line 25
     iget v0, p0, Lcom/amap/api/col/l3/gr;->b:I
 
     return v0
@@ -75,7 +68,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     iget p1, p0, Lcom/amap/api/col/l3/gr;->b:I
 
     iget v0, p0, Lcom/amap/api/col/l3/gr;->a:I
@@ -86,7 +78,6 @@
 
     goto/16 :goto_8
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -98,14 +89,12 @@
 
     if-eqz v0, :cond_11
 
-    .line 4
     instance-of v0, p1, [J
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_2
 
-    .line 5
     check-cast p1, [J
 
     if-nez p1, :cond_1
@@ -134,13 +123,11 @@
 
     goto :goto_0
 
-    .line 6
     :cond_2
     instance-of v0, p1, [I
 
     if-eqz v0, :cond_4
 
-    .line 7
     check-cast p1, [I
 
     if-nez p1, :cond_3
@@ -177,13 +164,11 @@
 
     goto :goto_1
 
-    .line 8
     :cond_4
     instance-of v0, p1, [S
 
     if-eqz v0, :cond_6
 
-    .line 9
     check-cast p1, [S
 
     if-nez p1, :cond_5
@@ -220,13 +205,11 @@
 
     goto :goto_2
 
-    .line 10
     :cond_6
     instance-of v0, p1, [C
 
     if-eqz v0, :cond_8
 
-    .line 11
     check-cast p1, [C
 
     if-nez p1, :cond_7
@@ -263,13 +246,11 @@
 
     goto :goto_3
 
-    .line 12
     :cond_8
     instance-of v0, p1, [B
 
     if-eqz v0, :cond_a
 
-    .line 13
     check-cast p1, [B
 
     if-nez p1, :cond_9
@@ -306,13 +287,11 @@
 
     goto :goto_4
 
-    .line 14
     :cond_a
     instance-of v0, p1, [D
 
     if-eqz v0, :cond_c
 
-    .line 15
     check-cast p1, [D
 
     if-nez p1, :cond_b
@@ -345,13 +324,11 @@
 
     goto :goto_5
 
-    .line 16
     :cond_c
     instance-of v0, p1, [F
 
     if-eqz v0, :cond_e
 
-    .line 17
     check-cast p1, [F
 
     if-nez p1, :cond_d
@@ -392,13 +369,11 @@
 
     goto :goto_6
 
-    .line 18
     :cond_e
     instance-of v0, p1, [Z
 
     if-eqz v0, :cond_10
 
-    .line 19
     check-cast p1, [Z
 
     if-nez p1, :cond_f
@@ -437,7 +412,6 @@
 
     goto :goto_7
 
-    .line 20
     :cond_10
     check-cast p1, [Ljava/lang/Object;
 
@@ -445,7 +419,6 @@
 
     goto :goto_8
 
-    .line 21
     :cond_11
     iget v0, p0, Lcom/amap/api/col/l3/gr;->b:I
 
@@ -471,7 +444,6 @@
 
     if-nez p1, :cond_0
 
-    .line 22
     iget p1, p0, Lcom/amap/api/col/l3/gr;->b:I
 
     iget v0, p0, Lcom/amap/api/col/l3/gr;->a:I
@@ -485,13 +457,11 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 23
     :goto_0
     array-length v1, p1
 
     if-ge v0, v1, :cond_1
 
-    .line 24
     aget-object v1, p1, v0
 
     invoke-virtual {p0, v1}, Lcom/amap/api/col/l3/gr;->a(Ljava/lang/Object;)Lcom/amap/api/col/l3/gr;
@@ -508,7 +478,6 @@
 .method public final hashCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/gr;->b:I
 
     return v0

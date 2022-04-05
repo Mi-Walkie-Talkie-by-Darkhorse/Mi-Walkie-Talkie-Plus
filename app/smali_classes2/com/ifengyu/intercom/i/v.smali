@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/v;
 .super Ljava/lang/Object;
-.source "GaoDeOfflineMapManagerInstance.java"
 
 
 # annotations
@@ -37,7 +36,6 @@
 .method static synthetic a()Ljava/util/List;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/v;->b:Ljava/util/List;
 
     return-object v0
@@ -46,19 +44,16 @@
 .method public static a(Lcom/ifengyu/intercom/i/v$b;)V
     .locals 1
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/i/v;->b:Ljava/util/List;
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/i/v;->b:Ljava/util/List;
 
-    .line 4
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/i/v;->b:Ljava/util/List;
 
@@ -70,7 +65,6 @@
 .method public static a(Z)V
     .locals 0
 
-    .line 5
     sput-boolean p0, Lcom/ifengyu/intercom/i/v;->c:Z
 
     return-void
@@ -79,12 +73,10 @@
 .method public static b()Lcom/amap/api/maps/offlinemap/OfflineMapManager;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/v;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
@@ -99,7 +91,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/i/v;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/i/v;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
@@ -109,12 +100,10 @@
 .method public static b(Lcom/ifengyu/intercom/i/v$b;)V
     .locals 1
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/i/v;->b:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 5
     invoke-interface {v0, p0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     :cond_0
@@ -124,7 +113,6 @@
 .method public static c()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/ifengyu/intercom/i/v;->c:Z
 
     return v0

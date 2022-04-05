@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity_ViewBinding;
 .super Ljava/lang/Object;
-.source "SealChannelEditActivity_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;
 
-    .line 3
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f090419
@@ -37,7 +33,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTitleBarLeft:Landroid/widget/ImageView;
 
-    .line 4
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09041d
@@ -52,7 +47,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTitleBarTitle:Landroid/widget/TextView;
 
-    .line 5
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090418
@@ -67,7 +61,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTitleBarConfirm:Landroid/widget/TextView;
 
-    .line 6
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f0900c6
@@ -82,7 +75,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->channelIndex:Landroid/widget/TextView;
 
-    .line 7
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
     const v1, 0x7f090167
@@ -97,7 +89,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mEtEditName:Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
-    .line 8
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09049c
@@ -112,7 +103,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTvTxFreq:Landroid/widget/TextView;
 
-    .line 9
     const-class v0, Landroid/widget/FrameLayout;
 
     const v1, 0x7f09018e
@@ -127,7 +117,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mFlTxFreq:Landroid/widget/FrameLayout;
 
-    .line 10
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090490
@@ -142,7 +131,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTvRxFreq:Landroid/widget/TextView;
 
-    .line 11
     const-class v0, Landroid/widget/FrameLayout;
 
     const v1, 0x7f09018c
@@ -157,7 +145,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mFlRxFreq:Landroid/widget/FrameLayout;
 
-    .line 12
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09049d
@@ -172,7 +159,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTvTxCss:Landroid/widget/TextView;
 
-    .line 13
     const-class v0, Landroid/widget/FrameLayout;
 
     const v1, 0x7f09018f
@@ -187,7 +173,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mFlTxCss:Landroid/widget/FrameLayout;
 
-    .line 14
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090491
@@ -202,7 +187,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTvRxCss:Landroid/widget/TextView;
 
-    .line 15
     const-class v0, Landroid/widget/FrameLayout;
 
     const v1, 0x7f09018d
@@ -217,7 +201,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mFlRXCss:Landroid/widget/FrameLayout;
 
-    .line 16
     const-class v0, Landroid/widget/Button;
 
     const v1, 0x7f090096
@@ -242,61 +225,44 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTitleBarLeft:Landroid/widget/ImageView;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTitleBarTitle:Landroid/widget/TextView;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTitleBarConfirm:Landroid/widget/TextView;
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->channelIndex:Landroid/widget/TextView;
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mEtEditName:Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
-    .line 8
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTvTxFreq:Landroid/widget/TextView;
 
-    .line 9
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mFlTxFreq:Landroid/widget/FrameLayout;
 
-    .line 10
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTvRxFreq:Landroid/widget/TextView;
 
-    .line 11
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mFlRxFreq:Landroid/widget/FrameLayout;
 
-    .line 12
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTvTxCss:Landroid/widget/TextView;
 
-    .line 13
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mFlTxCss:Landroid/widget/FrameLayout;
 
-    .line 14
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mTvRxCss:Landroid/widget/TextView;
 
-    .line 15
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mFlRXCss:Landroid/widget/FrameLayout;
 
-    .line 16
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelEditActivity;->mDeleteBtn:Landroid/widget/Button;
 
     return-void
 
-    .line 17
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

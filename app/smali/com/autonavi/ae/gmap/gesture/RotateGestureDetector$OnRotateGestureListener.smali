@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/gesture/RotateGestureDetector$OnRotateGestureListener;
 .super Ljava/lang/Object;
-.source "RotateGestureDetector.java"
 
 
 # annotations

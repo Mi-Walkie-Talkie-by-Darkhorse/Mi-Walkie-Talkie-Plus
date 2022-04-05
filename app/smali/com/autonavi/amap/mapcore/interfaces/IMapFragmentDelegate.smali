@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
 .super Ljava/lang/Object;
-.source "IMapFragmentDelegate.java"
 
 
 # virtual methods

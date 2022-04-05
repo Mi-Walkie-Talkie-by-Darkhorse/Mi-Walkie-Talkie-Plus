@@ -1,6 +1,5 @@
 .class Landroidx/core/content/res/e$b$b;
 .super Ljava/lang/Object;
-.source "ResourcesCompat.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/res/Resources$Theme;->rebase()V
 
     return-void

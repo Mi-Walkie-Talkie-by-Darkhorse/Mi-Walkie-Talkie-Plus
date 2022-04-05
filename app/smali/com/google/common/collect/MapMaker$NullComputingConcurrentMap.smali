@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/MapMaker$NullComputingConcurrentMap;
 .super Lcom/google/common/collect/MapMaker$NullConcurrentMap;
-.source "MapMaker.java"
 
 
 # annotations
@@ -53,10 +52,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/MapMaker$NullConcurrentMap;-><init>(Lcom/google/common/collect/MapMaker;)V
 
-    .line 2
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -76,10 +73,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/google/common/collect/MapMaker$NullComputingConcurrentMap;->computingFunction:Lcom/google/common/base/Function;
 
@@ -95,7 +90,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     new-instance v0, Lcom/google/common/collect/ComputationException;
 
     invoke-direct {v0, p1}, Lcom/google/common/collect/ComputationException;-><init>(Ljava/lang/Throwable;)V
@@ -105,7 +99,6 @@
     :catch_0
     move-exception p1
 
-    .line 4
     throw p1
 .end method
 
@@ -121,7 +114,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/MapMaker$NullComputingConcurrentMap;->compute(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -130,7 +122,6 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 2
     iget-object v2, p0, Lcom/google/common/collect/MapMaker$NullComputingConcurrentMap;->computingFunction:Lcom/google/common/base/Function;
 
     const/4 v3, 0x0
@@ -145,7 +136,6 @@
 
     invoke-static {v0, v2, v1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/MapMaker$NullConcurrentMap;->notifyRemoval(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object v0

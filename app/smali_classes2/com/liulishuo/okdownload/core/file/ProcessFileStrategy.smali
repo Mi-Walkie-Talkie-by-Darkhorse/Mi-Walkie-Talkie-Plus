@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/file/ProcessFileStrategy;
 .super Ljava/lang/Object;
-.source "ProcessFileStrategy.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/liulishuo/okdownload/core/file/FileLock;
 
     invoke-direct {v0}, Lcom/liulishuo/okdownload/core/file/FileLock;-><init>()V
@@ -57,7 +54,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
 
     invoke-direct {v0, p1, p2, p3}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;-><init>(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;)V
@@ -77,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getFile()Ljava/io/File;
 
     move-result-object p1
@@ -86,7 +81,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
@@ -102,7 +96,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     new-instance p1, Ljava/io/IOException;
 
@@ -122,7 +115,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/ProcessFileStrategy;->fileLock:Lcom/liulishuo/okdownload/core/file/FileLock;
 
     return-object v0
@@ -135,7 +127,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -154,7 +145,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getSetPreAllocateLength()Ljava/lang/Boolean;
 

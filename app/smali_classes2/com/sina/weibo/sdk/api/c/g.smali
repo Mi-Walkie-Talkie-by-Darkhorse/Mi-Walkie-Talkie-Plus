@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/api/c/g;
 .super Ljava/lang/Object;
-.source "VersionCheckHandler.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 
     if-eqz p2, :cond_3
 
-    .line 1
     invoke-virtual {p2}, Lb/b/a/a/b$a;->c()Z
 
     move-result p1
@@ -39,7 +36,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     sget-object p1, Lcom/sina/weibo/sdk/api/c/g;->a:Ljava/lang/String;
 
@@ -61,7 +57,6 @@
 
     invoke-static {p1, v0}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     sget-object p1, Lcom/sina/weibo/sdk/api/c/g;->a:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -82,7 +77,6 @@
 
     invoke-static {p1, v0}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     invoke-virtual {p2}, Lb/b/a/a/b$a;->b()I
 
     move-result p1
@@ -93,7 +87,6 @@
 
     if-ge p1, v0, :cond_1
 
-    .line 5
     iget-object p1, p3, Lcom/sina/weibo/sdk/api/a;->a:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     if-eqz p1, :cond_1
@@ -102,10 +95,8 @@
 
     if-eqz p1, :cond_1
 
-    .line 6
     iput-object v1, p3, Lcom/sina/weibo/sdk/api/a;->a:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
-    .line 7
     :cond_1
     invoke-virtual {p2}, Lb/b/a/a/b$a;->b()I
 
@@ -115,7 +106,6 @@
 
     if-ge p1, p2, :cond_2
 
-    .line 8
     iget-object p1, p3, Lcom/sina/weibo/sdk/api/a;->a:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     if-eqz p1, :cond_2
@@ -124,7 +114,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 9
     iput-object v1, p3, Lcom/sina/weibo/sdk/api/a;->a:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     :cond_2
@@ -146,7 +135,6 @@
 
     if-eqz p2, :cond_3
 
-    .line 10
     invoke-virtual {p2}, Lb/b/a/a/b$a;->c()Z
 
     move-result v0
@@ -155,7 +143,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_0
     sget-object v0, Lcom/sina/weibo/sdk/api/c/g;->a:Ljava/lang/String;
 
@@ -177,7 +164,6 @@
 
     invoke-static {v0, v1}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12
     sget-object v0, Lcom/sina/weibo/sdk/api/c/g;->a:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -198,7 +184,6 @@
 
     invoke-static {v0, v1}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 13
     invoke-virtual {p2}, Lb/b/a/a/b$a;->b()I
 
     move-result v0
@@ -209,7 +194,6 @@
 
     return p1
 
-    .line 14
     :cond_1
     invoke-virtual {p2}, Lb/b/a/a/b$a;->b()I
 
@@ -219,7 +203,6 @@
 
     if-ge p1, p2, :cond_2
 
-    .line 15
     iget-object p1, p3, Lcom/sina/weibo/sdk/api/b;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     if-eqz p1, :cond_2
@@ -230,7 +213,6 @@
 
     const/4 p1, 0x0
 
-    .line 16
     iput-object p1, p3, Lcom/sina/weibo/sdk/api/b;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     :cond_2

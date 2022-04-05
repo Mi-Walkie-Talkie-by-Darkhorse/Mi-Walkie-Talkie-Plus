@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/internal/ListenerClass;
 .super Ljava/lang/Object;
-.source "ListenerClass.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

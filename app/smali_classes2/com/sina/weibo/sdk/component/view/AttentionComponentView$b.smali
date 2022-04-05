@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/component/view/AttentionComponentView$b;
 .super Ljava/lang/Object;
-.source "AttentionComponentView.java"
 
 # interfaces
 .implements Lcom/sina/weibo/sdk/net/d;
@@ -25,10 +24,8 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/component/view/AttentionComponentView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/component/view/AttentionComponentView$b;->a:Lcom/sina/weibo/sdk/component/view/AttentionComponentView;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,7 +34,6 @@
 .method static synthetic a(Lcom/sina/weibo/sdk/component/view/AttentionComponentView$b;)Lcom/sina/weibo/sdk/component/view/AttentionComponentView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/sina/weibo/sdk/component/view/AttentionComponentView$b;->a:Lcom/sina/weibo/sdk/component/view/AttentionComponentView;
 
     return-object p0
@@ -48,7 +44,6 @@
 .method public a(Lcom/sina/weibo/sdk/exception/WeiboException;)V
     .locals 3
 
-    .line 2
     invoke-static {}, Lcom/sina/weibo/sdk/component/view/AttentionComponentView;->a()Ljava/lang/String;
 
     move-result-object v0
@@ -71,7 +66,6 @@
 
     invoke-static {v0, p1}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/view/AttentionComponentView$b;->a:Lcom/sina/weibo/sdk/component/view/AttentionComponentView;
 
     const/4 v0, 0x0
@@ -84,7 +78,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 3
 
-    .line 4
     invoke-static {}, Lcom/sina/weibo/sdk/component/view/AttentionComponentView;->a()Ljava/lang/String;
 
     move-result-object v0
@@ -103,7 +96,6 @@
 
     invoke-static {v0, v1}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
@@ -111,12 +103,10 @@
 
     const-string p1, "target"
 
-    .line 6
     invoke-virtual {v0, p1}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
 
-    .line 7
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/view/AttentionComponentView$b;->a:Lcom/sina/weibo/sdk/component/view/AttentionComponentView;
 
     invoke-virtual {v0}, Landroid/widget/FrameLayout;->getHandler()Landroid/os/Handler;

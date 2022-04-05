@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;
 .super Ljava/lang/Object;
-.source "CacheManager.java"
 
 
 # annotations

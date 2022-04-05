@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/Futures$2;
 .super Ljava/lang/Object;
-.source "Futures.java"
 
 # interfaces
 .implements Lcom/google/common/util/concurrent/AsyncFunction;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/google/common/base/Function;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$2;->val$function:Lcom/google/common/base/Function;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,14 +51,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$2;->val$function:Lcom/google/common/base/Function;
 
     invoke-interface {v0, p1}, Lcom/google/common/base/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/util/concurrent/Futures;->immediateFuture(Ljava/lang/Object;)Lcom/google/common/util/concurrent/ListenableFuture;
 
     move-result-object p1

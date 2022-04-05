@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/analytics/pro/br;
 .super Ljava/lang/Object;
-.source "TProtocolFactory.java"
 
 # interfaces
 .implements Ljava/io/Serializable;

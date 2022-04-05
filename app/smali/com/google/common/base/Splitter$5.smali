@@ -1,6 +1,5 @@
 .class Lcom/google/common/base/Splitter$5;
 .super Ljava/lang/Object;
-.source "Splitter.java"
 
 # interfaces
 .implements Ljava/lang/Iterable;
@@ -36,7 +35,6 @@
 .method constructor <init>(Lcom/google/common/base/Splitter;Ljava/lang/CharSequence;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/base/Splitter$5;->this$0:Lcom/google/common/base/Splitter;
 
     iput-object p2, p0, Lcom/google/common/base/Splitter$5;->val$sequence:Ljava/lang/CharSequence;
@@ -59,7 +57,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/Splitter$5;->this$0:Lcom/google/common/base/Splitter;
 
     iget-object v1, p0, Lcom/google/common/base/Splitter$5;->val$sequence:Ljava/lang/CharSequence;
@@ -76,7 +73,6 @@
 
     const-string v0, ", "
 
-    .line 1
     invoke-static {v0}, Lcom/google/common/base/Joiner;->on(Ljava/lang/String;)Lcom/google/common/base/Joiner;
 
     move-result-object v0

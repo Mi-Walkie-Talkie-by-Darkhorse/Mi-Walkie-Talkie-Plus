@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/functions/Functions$ActionConsumer;
 .super Ljava/lang/Object;
-.source "Functions.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -36,10 +35,8 @@
 .method constructor <init>(Lio/reactivex/functions/Action;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/functions/Functions$ActionConsumer;->action:Lio/reactivex/functions/Action;
 
     return-void
@@ -61,7 +58,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lio/reactivex/internal/functions/Functions$ActionConsumer;->action:Lio/reactivex/functions/Action;
 
     invoke-interface {p1}, Lio/reactivex/functions/Action;->run()V

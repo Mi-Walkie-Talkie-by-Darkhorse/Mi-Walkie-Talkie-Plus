@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableSkipLast;
 .super Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;
-.source "FlowableSkipLast.java"
 
 
 # annotations
@@ -36,10 +35,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;-><init>(Lio/reactivex/Flowable;)V
 
-    .line 2
     iput p2, p0, Lio/reactivex/internal/operators/flowable/FlowableSkipLast;->skip:I
 
     return-void
@@ -57,7 +54,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;->source:Lio/reactivex/Flowable;
 
     new-instance v1, Lio/reactivex/internal/operators/flowable/FlowableSkipLast$SkipLastSubscriber;

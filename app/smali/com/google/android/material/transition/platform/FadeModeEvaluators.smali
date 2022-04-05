@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/transition/platform/FadeModeEvaluators;
 .super Ljava/lang/Object;
-.source "FadeModeEvaluators.java"
 
 
 # annotations
@@ -23,28 +22,24 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/material/transition/platform/FadeModeEvaluators$1;
 
     invoke-direct {v0}, Lcom/google/android/material/transition/platform/FadeModeEvaluators$1;-><init>()V
 
     sput-object v0, Lcom/google/android/material/transition/platform/FadeModeEvaluators;->IN:Lcom/google/android/material/transition/platform/FadeModeEvaluator;
 
-    .line 2
     new-instance v0, Lcom/google/android/material/transition/platform/FadeModeEvaluators$2;
 
     invoke-direct {v0}, Lcom/google/android/material/transition/platform/FadeModeEvaluators$2;-><init>()V
 
     sput-object v0, Lcom/google/android/material/transition/platform/FadeModeEvaluators;->OUT:Lcom/google/android/material/transition/platform/FadeModeEvaluator;
 
-    .line 3
     new-instance v0, Lcom/google/android/material/transition/platform/FadeModeEvaluators$3;
 
     invoke-direct {v0}, Lcom/google/android/material/transition/platform/FadeModeEvaluators$3;-><init>()V
 
     sput-object v0, Lcom/google/android/material/transition/platform/FadeModeEvaluators;->CROSS:Lcom/google/android/material/transition/platform/FadeModeEvaluator;
 
-    .line 4
     new-instance v0, Lcom/google/android/material/transition/platform/FadeModeEvaluators$4;
 
     invoke-direct {v0}, Lcom/google/android/material/transition/platform/FadeModeEvaluators$4;-><init>()V
@@ -57,7 +52,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -80,12 +74,10 @@
 
     if-ne p0, p1, :cond_0
 
-    .line 1
     sget-object p0, Lcom/google/android/material/transition/platform/FadeModeEvaluators;->THROUGH:Lcom/google/android/material/transition/platform/FadeModeEvaluator;
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -107,7 +99,6 @@
 
     throw p1
 
-    .line 3
     :cond_1
     sget-object p0, Lcom/google/android/material/transition/platform/FadeModeEvaluators;->CROSS:Lcom/google/android/material/transition/platform/FadeModeEvaluator;
 
@@ -116,7 +107,6 @@
     :cond_2
     if-eqz p1, :cond_3
 
-    .line 4
     sget-object p0, Lcom/google/android/material/transition/platform/FadeModeEvaluators;->OUT:Lcom/google/android/material/transition/platform/FadeModeEvaluator;
 
     goto :goto_0
@@ -130,7 +120,6 @@
     :cond_4
     if-eqz p1, :cond_5
 
-    .line 5
     sget-object p0, Lcom/google/android/material/transition/platform/FadeModeEvaluators;->IN:Lcom/google/android/material/transition/platform/FadeModeEvaluator;
 
     goto :goto_1

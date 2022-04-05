@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/m$b;
 .super Ljava/lang/Object;
-.source "AppCompatTextHelper.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/m;Landroid/widget/TextView;Landroid/graphics/Typeface;I)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/appcompat/widget/m$b;->a:Landroid/widget/TextView;
 
     iput-object p3, p0, Landroidx/appcompat/widget/m$b;->b:Landroid/graphics/Typeface;
@@ -46,7 +44,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/m$b;->a:Landroid/widget/TextView;
 
     iget-object v1, p0, Landroidx/appcompat/widget/m$b;->b:Landroid/graphics/Typeface;

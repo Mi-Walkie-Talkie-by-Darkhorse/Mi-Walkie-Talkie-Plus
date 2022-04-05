@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/Futures$ImmediateFailedFuture;
 .super Lcom/google/common/util/concurrent/Futures$ImmediateFuture;
-.source "Futures.java"
 
 
 # annotations
@@ -34,10 +33,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/Futures$ImmediateFuture;-><init>(Lcom/google/common/util/concurrent/Futures$1;)V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$ImmediateFailedFuture;->thrown:Ljava/lang/Throwable;
 
     return-void
@@ -59,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/ExecutionException;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/Futures$ImmediateFailedFuture;->thrown:Ljava/lang/Throwable;

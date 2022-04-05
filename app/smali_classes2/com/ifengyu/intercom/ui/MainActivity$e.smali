@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/MainActivity$e;
 .super Ljava/lang/Object;
-.source "MainActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/node/h;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/ui/MainActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/MainActivity$e;->a:Lcom/ifengyu/intercom/ui/MainActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/ui/MainActivity;Lcom/ifengyu/intercom/ui/MainActivity$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/MainActivity$e;-><init>(Lcom/ifengyu/intercom/ui/MainActivity;)V
 
     return-void
@@ -69,10 +66,8 @@
 
     const-string v0, "\u5df2\u8fde\u63a5..."
 
-    .line 1
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/MainActivity$e;->a:Lcom/ifengyu/intercom/ui/MainActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/MainActivity;->b(Lcom/ifengyu/intercom/ui/MainActivity;)Ljava/util/ArrayList;
@@ -105,10 +100,8 @@
 
     const-string v0, "\u8fde\u63a5\u65ad\u5f00..."
 
-    .line 1
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/MainActivity$e;->a:Lcom/ifengyu/intercom/ui/MainActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/MainActivity;->b(Lcom/ifengyu/intercom/ui/MainActivity;)Ljava/util/ArrayList;

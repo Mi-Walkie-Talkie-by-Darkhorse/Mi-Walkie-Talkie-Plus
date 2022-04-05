@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/dynamicanimation/a/b$p;
 .super Ljava/lang/Object;
-.source "DynamicAnimation.java"
 
 
 # annotations

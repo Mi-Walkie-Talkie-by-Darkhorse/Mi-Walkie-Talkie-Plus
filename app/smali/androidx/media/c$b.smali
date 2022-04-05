@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/media/c$b;
 .super Ljava/lang/Object;
-.source "MediaBrowserServiceCompatApi23.java"
 
 # interfaces
 .implements Landroidx/media/b$d;

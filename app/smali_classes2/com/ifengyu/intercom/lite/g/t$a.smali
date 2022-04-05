@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/g/t$a;
 .super Lcom/ifengyu/blelib/c/e;
-.source "UpgradeViewModel.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/g/t;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/g/t$a;->c:Lcom/ifengyu/intercom/lite/g/t;
 
     invoke-direct {p0}, Lcom/ifengyu/blelib/c/e;-><init>()V
@@ -35,7 +33,6 @@
 .method public a(I)V
     .locals 3
 
-    .line 12
     invoke-static {}, Lcom/ifengyu/intercom/lite/g/t;->g()Ljava/lang/String;
 
     move-result-object v0
@@ -56,7 +53,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/blelib/a;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/g/t$a;->c:Lcom/ifengyu/intercom/lite/g/t;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/g/t;->b:Landroidx/lifecycle/p;
@@ -69,7 +65,6 @@
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/g/t$a;->c:Lcom/ifengyu/intercom/lite/g/t;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -102,24 +97,20 @@
 .method public a(Lcom/ifengyu/blelib/d/c;)V
     .locals 4
 
-    .line 1
     invoke-virtual {p1}, Lcom/ifengyu/blelib/d/c;->b()Lcom/google/protobuf/Message;
 
     move-result-object p1
 
     check-cast p1, Lcom/ifengyu/intercom/protos/LiteProtos$OtaResponse;
 
-    .line 2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaResponse;->getResult()Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;
 
     move-result-object p1
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;->SUCCESS:Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;
 
     if-ne v0, p1, :cond_0
 
-    .line 4
     new-instance p1, Lcom/ifengyu/intercom/lite/g/d;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/lite/g/d;-><init>(Lcom/ifengyu/intercom/lite/g/t$a;)V
@@ -130,7 +121,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;->LOW_POWER:Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;
 
@@ -138,7 +128,6 @@
 
     if-ne v0, p1, :cond_1
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/lite/g/t;->g()Ljava/lang/String;
 
     move-result-object p1
@@ -147,7 +136,6 @@
 
     invoke-static {p1, v0}, Lcom/ifengyu/blelib/a;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/g/t$a;->c:Lcom/ifengyu/intercom/lite/g/t;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/lite/g/t;->b:Landroidx/lifecycle/p;
@@ -160,7 +148,6 @@
 
     invoke-virtual {p1, v0}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/g/t$a;->c:Lcom/ifengyu/intercom/lite/g/t;
 
     const-string v0, "Ota request, device response LOW POWER"
@@ -169,7 +156,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     invoke-static {}, Lcom/ifengyu/intercom/lite/g/t;->g()Ljava/lang/String;
 
@@ -179,7 +165,6 @@
 
     invoke-static {v0, v2}, Lcom/ifengyu/blelib/a;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/g/t$a;->c:Lcom/ifengyu/intercom/lite/g/t;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/g/t;->b:Landroidx/lifecycle/p;
@@ -192,7 +177,6 @@
 
     invoke-virtual {v0, v2}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/g/t$a;->c:Lcom/ifengyu/intercom/lite/g/t;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -222,7 +206,6 @@
 .method public synthetic c()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/g/t$a;->c:Lcom/ifengyu/intercom/lite/g/t;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/g/t;->a(Lcom/ifengyu/intercom/lite/g/t;)V

@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/util/GEMFFile$GEMFInputStream;
 .super Ljava/io/InputStream;
-.source "GEMFFile.java"
 
 
 # annotations
@@ -31,12 +30,10 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/util/GEMFFile$GEMFInputStream;->this$0:Lorg/osmdroid/util/GEMFFile;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
-    .line 2
     new-instance p1, Ljava/io/RandomAccessFile;
 
     const-string v0, "r"
@@ -45,10 +42,8 @@
 
     iput-object p1, p0, Lorg/osmdroid/util/GEMFFile$GEMFInputStream;->raf:Ljava/io/RandomAccessFile;
 
-    .line 3
     invoke-virtual {p1, p3, p4}, Ljava/io/RandomAccessFile;->seek(J)V
 
-    .line 4
     iput p5, p0, Lorg/osmdroid/util/GEMFFile$GEMFInputStream;->remainingBytes:I
 
     return-void
@@ -59,7 +54,6 @@
 .method public available()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/util/GEMFFile$GEMFInputStream;->remainingBytes:I
 
     return v0
@@ -73,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/util/GEMFFile$GEMFInputStream;->raf:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->close()V
@@ -97,17 +90,14 @@
         }
     .end annotation
 
-    .line 3
     iget v0, p0, Lorg/osmdroid/util/GEMFFile$GEMFInputStream;->remainingBytes:I
 
     if-lez v0, :cond_0
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 4
     iput v0, p0, Lorg/osmdroid/util/GEMFFile$GEMFInputStream;->remainingBytes:I
 
-    .line 5
     iget-object v0, p0, Lorg/osmdroid/util/GEMFFile$GEMFInputStream;->raf:Ljava/io/RandomAccessFile;
 
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->read()I
@@ -116,7 +106,6 @@
 
     return v0
 
-    .line 6
     :cond_0
     new-instance v0, Ljava/io/IOException;
 
@@ -135,7 +124,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/util/GEMFFile$GEMFInputStream;->raf:Ljava/io/RandomAccessFile;
 
     iget v1, p0, Lorg/osmdroid/util/GEMFFile$GEMFInputStream;->remainingBytes:I
@@ -149,7 +137,6 @@
 
     move-result p1
 
-    .line 2
     iget p2, p0, Lorg/osmdroid/util/GEMFFile$GEMFInputStream;->remainingBytes:I
 
     sub-int/2addr p2, p1

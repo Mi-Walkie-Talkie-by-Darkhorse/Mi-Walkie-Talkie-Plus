@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/util/n;
 .super Ljava/lang/Object;
-.source "QMUIWindowHelper.java"
 
 
 # direct methods
@@ -11,7 +10,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x1
@@ -24,21 +22,18 @@
 
     if-le v0, v4, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getRootView()Landroid/view/View;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 4
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -48,10 +43,8 @@
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 6
     invoke-virtual {v0, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -60,7 +53,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     const-class v0, Landroid/view/View;
 
@@ -68,10 +60,8 @@
 
     move-result-object v0
 
-    .line 8
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 9
     invoke-virtual {v0, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -93,7 +83,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/qmuiteam/qmui/util/n;->a(Landroid/view/View;)Ljava/lang/Object;
 
     move-result-object p0
@@ -104,7 +93,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -119,20 +107,16 @@
 
     const/4 v2, 0x1
 
-    .line 3
     invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 4
     invoke-virtual {v1, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 5
     instance-of v1, p0, Landroid/graphics/Rect;
 
     if-eqz v1, :cond_1
 
-    .line 6
     check-cast p0, Landroid/graphics/Rect;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -153,7 +137,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/qmuiteam/qmui/util/n;->a(Landroid/view/View;)Ljava/lang/Object;
 
     move-result-object p0
@@ -164,7 +147,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -179,20 +161,16 @@
 
     const/4 v2, 0x1
 
-    .line 3
     invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 4
     invoke-virtual {v1, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 5
     instance-of v1, p0, Landroid/graphics/Rect;
 
     if-eqz v1, :cond_1
 
-    .line 6
     check-cast p0, Landroid/graphics/Rect;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

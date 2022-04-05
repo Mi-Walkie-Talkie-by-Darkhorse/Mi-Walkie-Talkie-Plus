@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;
 .super Landroid/webkit/WebChromeClient;
-.source "WeiboSdkBrowser.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     invoke-direct {p0}, Landroid/webkit/WebChromeClient;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;-><init>(Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;)V
 
     return-void
@@ -44,7 +41,6 @@
 .method public onProgressChanged(Landroid/webkit/WebView;I)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     invoke-static {p1}, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;->a(Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;)Lcom/sina/weibo/sdk/component/view/LoadingBar;
@@ -57,21 +53,18 @@
 
     if-ne p2, p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     const/4 p2, 0x0
 
     invoke-static {p1, p2}, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;->a(Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;Z)V
 
-    .line 3
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     invoke-virtual {p1}, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;->a()V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
@@ -81,14 +74,12 @@
 
     if-nez p1, :cond_1
 
-    .line 5
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     const/4 p2, 0x1
 
     invoke-static {p1, p2}, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;->a(Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;Z)V
 
-    .line 6
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     invoke-virtual {p1}, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;->a()V
@@ -101,7 +92,6 @@
 .method public onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     invoke-static {p1}, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;->d(Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;)Ljava/lang/String;
@@ -126,12 +116,10 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     invoke-static {p1, p2}, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;->b(Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;Ljava/lang/String;)V
 
-    .line 3
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$d;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     invoke-static {p1}, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;->f(Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;)V

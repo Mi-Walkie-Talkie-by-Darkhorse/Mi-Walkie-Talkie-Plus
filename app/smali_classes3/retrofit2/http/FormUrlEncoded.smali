@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lretrofit2/http/FormUrlEncoded;
 .super Ljava/lang/Object;
-.source "FormUrlEncoded.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

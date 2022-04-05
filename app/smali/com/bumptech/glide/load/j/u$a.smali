@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/j/u$a;
 .super Ljava/lang/Object;
-.source "StringLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/o;
@@ -31,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -57,7 +55,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/j/u;
 
     const-class v1, Landroid/net/Uri;

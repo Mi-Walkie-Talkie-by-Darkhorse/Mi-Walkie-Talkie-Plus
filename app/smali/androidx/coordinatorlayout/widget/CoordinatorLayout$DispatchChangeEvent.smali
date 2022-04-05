@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/coordinatorlayout/widget/CoordinatorLayout$DispatchChangeEvent;
 .super Ljava/lang/Object;
-.source "CoordinatorLayout.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

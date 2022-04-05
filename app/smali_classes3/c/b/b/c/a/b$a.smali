@@ -1,6 +1,5 @@
 .class final Lc/b/b/c/a/b$a;
 .super Landroid/os/Handler;
-.source "IdentifierIdClient.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Landroid/os/Looper;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -29,14 +27,12 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    .line 1
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/16 v1, 0xb
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
     move-result-object v0
@@ -47,7 +43,6 @@
 
     move-result v0
 
-    .line 3
     invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
     move-result-object p1
@@ -58,7 +53,6 @@
 
     move-result-object p1
 
-    .line 4
     invoke-static {}, Lc/b/b/c/a/b;->d()Lc/b/b/c/a/a;
 
     move-result-object v1
@@ -69,14 +63,12 @@
 
     invoke-static {p1}, Lc/b/b/c/a/b;->a(Ljava/lang/String;)Ljava/lang/String;
 
-    .line 5
     invoke-static {}, Lc/b/b/c/a/b;->e()Ljava/lang/Object;
 
     move-result-object p1
 
     monitor-enter p1
 
-    .line 6
     :try_start_0
     invoke-static {}, Lc/b/b/c/a/b;->e()Ljava/lang/Object;
 
@@ -84,7 +76,6 @@
 
     invoke-virtual {v0}, Ljava/lang/Object;->notify()V
 
-    .line 7
     monitor-exit p1
 
     goto :goto_0
@@ -103,7 +94,6 @@
 
     const-string v0, "message type valid"
 
-    .line 8
     invoke-static {p1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_0

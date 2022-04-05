@@ -1,6 +1,5 @@
 .class Lcom/umeng/vt/diff/Channel$1;
 .super Ljava/lang/Object;
-.source "Channel.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/statistics/internal/UMImprintChangeCallback;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/umeng/vt/diff/Channel;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/vt/diff/Channel$1;->this$0:Lcom/umeng/vt/diff/Channel;
 
     iput-object p2, p0, Lcom/umeng/vt/diff/Channel$1;->val$context:Landroid/content/Context;
@@ -44,14 +42,12 @@
 
     const-string p2, "utm-visual"
 
-    .line 1
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/umeng/vt/diff/Channel$1;->this$0:Lcom/umeng/vt/diff/Channel;
 
     iget-object p2, p0, Lcom/umeng/vt/diff/Channel$1;->val$context:Landroid/content/Context;

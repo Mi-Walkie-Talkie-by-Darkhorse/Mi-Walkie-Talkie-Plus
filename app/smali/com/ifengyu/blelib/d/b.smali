@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/blelib/d/b;
 .super Ljava/lang/Object;
-.source "CRC16.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/ifengyu/blelib/d/b;->a:[I
@@ -310,7 +308,6 @@
 .method public static a([B)[B
     .locals 6
 
-    .line 1
     array-length v0, p0
 
     const v1, 0xffff
@@ -324,7 +321,6 @@
 
     shr-int/lit8 v4, v1, 0x8
 
-    .line 2
     sget-object v5, Lcom/ifengyu/blelib/d/b;->a:[I
 
     xor-int/2addr v1, v3
@@ -342,7 +338,6 @@
     :cond_0
     int-to-short p0, v1
 
-    .line 3
     invoke-static {p0}, Lcom/ifengyu/blelib/d/b;->a(S)[B
 
     move-result-object p0

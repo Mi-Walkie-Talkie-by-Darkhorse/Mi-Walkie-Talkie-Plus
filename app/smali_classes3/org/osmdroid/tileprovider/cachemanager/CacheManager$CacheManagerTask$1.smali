@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask$1;
 .super Ljava/lang/Object;
-.source "CacheManager.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnCancelListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask$1;->this$1:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask$1;->this$1:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;
 
     const/4 v0, 0x1

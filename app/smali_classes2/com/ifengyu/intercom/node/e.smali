@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/e;
 .super Ljava/lang/Object;
-.source "DataService.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/node/g;
@@ -40,7 +39,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -51,7 +49,6 @@
     .annotation runtime Lcom/squareup/otto/Produce;
     .end annotation
 
-    .line 99
     new-instance v0, Lcom/ifengyu/intercom/eventbus/StateUpdateEvent;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->getStateResp()Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
@@ -66,15 +63,12 @@
 .method private a(Lcom/google/protobuf/Message;)V
     .locals 1
 
-    .line 172
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;
 
     if-eqz v0, :cond_0
 
-    .line 173
     check-cast p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarConnectState;
 
-    .line 174
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
@@ -88,7 +82,6 @@
 .method private a(Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;)V
     .locals 6
 
-    .line 69
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -99,7 +92,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
-    .line 70
     :try_start_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasDeviceId()Z
 
@@ -107,7 +99,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 71
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     const-string v1, "deviceId"
@@ -122,7 +113,6 @@
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 72
     :cond_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasSosText()Z
 
@@ -134,7 +124,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 73
     :try_start_1
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
@@ -154,7 +143,6 @@
 
     invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 74
     :cond_1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasDevNameGBK()Z
 
@@ -162,7 +150,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 75
     new-instance v0, Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getDevNameGBK()Lcom/google/protobuf/ByteString;
@@ -177,7 +164,6 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->f(Ljava/lang/String;)V
 
-    .line 76
     :cond_2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasVersionBLE()Z
 
@@ -185,7 +171,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 77
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     const-string v1, "versionBLE"
@@ -196,7 +181,6 @@
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    .line 78
     :cond_3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasVersionHW()Z
 
@@ -204,7 +188,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 79
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     const-string v1, "versionHW"
@@ -215,7 +198,6 @@
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    .line 80
     :cond_4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasVersionMCU()Z
 
@@ -223,7 +205,6 @@
 
     if-eqz v0, :cond_5
 
-    .line 81
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     const-string v1, "versionMCU"
@@ -234,7 +215,6 @@
 
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    .line 82
     :cond_5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasShareLoc()Z
 
@@ -246,7 +226,6 @@
 
     if-eqz v0, :cond_7
 
-    .line 83
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     const-string v3, "is_public_loc_info"
@@ -267,7 +246,6 @@
     :goto_0
     invoke-interface {v0, v3, v4}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    .line 84
     :cond_7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasStateMode()Z
 
@@ -275,7 +253,6 @@
 
     if-eqz v0, :cond_a
 
-    .line 85
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getStateMode()Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
     move-result-object v0
@@ -288,7 +265,6 @@
 
     if-ne v0, v3, :cond_8
 
-    .line 86
     :try_start_2
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
@@ -296,7 +272,6 @@
 
     goto :goto_1
 
-    .line 87
     :cond_8
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getStateMode()Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
@@ -306,12 +281,10 @@
 
     if-ne v0, v3, :cond_9
 
-    .line 88
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     invoke-interface {v0, v4, v2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    .line 89
     :cond_9
     :goto_1
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
@@ -328,7 +301,6 @@
 
     invoke-interface {v0, v3, v4}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    .line 90
     :cond_a
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasLowPower()Z
 
@@ -336,7 +308,6 @@
 
     if-eqz v0, :cond_c
 
-    .line 91
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     const-string v3, "lowPower"
@@ -359,7 +330,6 @@
     :goto_2
     invoke-interface {v0, v3, v4}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    .line 92
     :cond_c
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasActivateChannel()Z
 
@@ -367,7 +337,6 @@
 
     if-eqz v0, :cond_e
 
-    .line 93
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getActivateChannel()I
 
     move-result v0
@@ -379,7 +348,6 @@
     :cond_d
     invoke-static {v1}, Lcom/ifengyu/intercom/i/d0;->a(Z)V
 
-    .line 94
     :cond_e
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasLanguage()Z
 
@@ -391,7 +359,6 @@
 
     if-eqz v0, :cond_10
 
-    .line 95
     :try_start_3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getLanguage()I
 
@@ -409,11 +376,9 @@
 
     goto :goto_4
 
-    .line 96
     :cond_10
     invoke-static {v1}, Lcom/ifengyu/intercom/i/d0;->k(Ljava/lang/String;)V
 
-    .line 97
     :goto_4
     iget-object p1, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
@@ -426,7 +391,6 @@
     :catch_0
     move-exception p1
 
-    .line 98
     invoke-virtual {p1}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     :goto_5
@@ -436,7 +400,6 @@
 .method private a(Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;)V
     .locals 4
 
-    .line 58
     sget-object v0, Lcom/ifengyu/intercom/node/e$a;->a:[I
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getOption()Lcom/ifengyu/intercom/protos/MitalkProtos$CHOPTION;
@@ -463,7 +426,6 @@
 
     goto/16 :goto_0
 
-    .line 59
     :cond_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->hasCh1()Z
 
@@ -477,7 +439,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 60
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getCh1()Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;
 
     move-result-object v0
@@ -490,7 +451,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 61
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->d:Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getCh1()Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;
@@ -509,7 +469,6 @@
 
     goto :goto_0
 
-    .line 62
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->d:Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;
 
@@ -545,7 +504,6 @@
 
     goto :goto_0
 
-    .line 63
     :cond_2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->hasCh1()Z
 
@@ -553,7 +511,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 64
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getCh1()Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;
 
     move-result-object v0
@@ -566,7 +523,6 @@
 
     if-eq v0, v1, :cond_4
 
-    .line 65
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->d:Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getCh1()Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;
@@ -581,7 +537,6 @@
 
     goto :goto_0
 
-    .line 66
     :cond_3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->hasCh2()Z
 
@@ -589,7 +544,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 67
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getCh2()Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;
 
     move-result-object v0
@@ -602,7 +556,6 @@
 
     if-eq v0, v1, :cond_4
 
-    .line 68
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->d:Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getCh2()Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;
@@ -623,12 +576,10 @@
 .method private a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;)V
     .locals 3
 
-    .line 163
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;->getCh()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;
 
     move-result-object v0
 
-    .line 164
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;->getChType()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo$SEAL_CHTYPE;
 
     move-result-object v1
@@ -639,7 +590,6 @@
 
     return-void
 
-    .line 165
     :cond_0
     sget-object v1, Lcom/ifengyu/intercom/node/e$a;->c:[I
 
@@ -671,7 +621,6 @@
 
     goto :goto_0
 
-    .line 166
     :cond_1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;->getResult()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate$SEAL_CH_UERR;
 
@@ -681,7 +630,6 @@
 
     if-ne p1, v1, :cond_4
 
-    .line 167
     iget-object p1, p0, Lcom/ifengyu/intercom/node/e;->e:Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/g0;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -692,7 +640,6 @@
 
     goto :goto_0
 
-    .line 168
     :cond_2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;->getResult()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate$SEAL_CH_UERR;
 
@@ -702,7 +649,6 @@
 
     if-ne p1, v1, :cond_4
 
-    .line 169
     iget-object p1, p0, Lcom/ifengyu/intercom/node/e;->e:Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/g0;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -713,7 +659,6 @@
 
     goto :goto_0
 
-    .line 170
     :cond_3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;->getResult()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate$SEAL_CH_UERR;
 
@@ -723,7 +668,6 @@
 
     if-ne p1, v1, :cond_4
 
-    .line 171
     iget-object p1, p0, Lcom/ifengyu/intercom/node/e;->e:Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/g0;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -740,7 +684,6 @@
 .method private a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;)V
     .locals 1
 
-    .line 162
     sget-object v0, Lcom/ifengyu/intercom/node/e$a;->b:[I
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->getOption()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate$SEAL_STOPTION;
@@ -759,7 +702,6 @@
 .method private a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;)V
     .locals 4
 
-    .line 134
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasVerHw()Z
 
     move-result v0
@@ -772,7 +714,6 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->i(I)V
 
-    .line 135
     :cond_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasVerSoft()Z
 
@@ -786,7 +727,6 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->j(I)V
 
-    .line 136
     :cond_1
     :try_start_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasDeviceName()Z
@@ -795,7 +735,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 137
     new-instance v0, Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getDeviceName()Lcom/google/protobuf/ByteString;
@@ -819,10 +758,8 @@
     :catch_0
     move-exception v0
 
-    .line 138
     invoke-virtual {v0}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
-    .line 139
     :cond_2
     :goto_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasActivate()Z
@@ -835,7 +772,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 140
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getActivate()I
 
     move-result v0
@@ -852,7 +788,6 @@
     :goto_1
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->a(Z)V
 
-    .line 141
     :cond_4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasShareLoc()Z
 
@@ -860,7 +795,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 142
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getShareLoc()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_SWITCH;
 
     move-result-object v0
@@ -879,7 +813,6 @@
     :goto_2
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->m(Z)V
 
-    .line 143
     :cond_6
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasBtAudio()Z
 
@@ -887,14 +820,12 @@
 
     if-eqz v0, :cond_7
 
-    .line 144
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getBtAudio()I
 
     move-result v0
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->d(I)V
 
-    .line 145
     :cond_7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasVoiceAlert()Z
 
@@ -902,7 +833,6 @@
 
     if-eqz v0, :cond_9
 
-    .line 146
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getVoiceAlert()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_SWITCH;
 
     move-result-object v0
@@ -921,7 +851,6 @@
     :goto_3
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->l(Z)V
 
-    .line 147
     :cond_9
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasIsAllPublic()Z
 
@@ -929,7 +858,6 @@
 
     if-eqz v0, :cond_b
 
-    .line 148
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getIsAllPublic()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_SWITCH;
 
     move-result-object v0
@@ -948,7 +876,6 @@
     :goto_4
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->k(Z)V
 
-    .line 149
     :cond_b
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasPwsaveMode()Z
 
@@ -956,14 +883,12 @@
 
     if-eqz v0, :cond_c
 
-    .line 150
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getPwsaveMode()I
 
     move-result v0
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->g(I)V
 
-    .line 151
     :cond_c
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasVoiceType()Z
 
@@ -971,7 +896,6 @@
 
     if-eqz v0, :cond_d
 
-    .line 152
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getVoiceType()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam$SEAL_VOICETYPE;
 
     move-result-object v0
@@ -982,7 +906,6 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->o(I)V
 
-    .line 153
     :cond_d
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasCh()Z
 
@@ -990,12 +913,10 @@
 
     if-eqz v0, :cond_14
 
-    .line 154
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getCh()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;
 
     move-result-object p1
 
-    .line 155
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;->hasChSq()Z
 
     move-result v0
@@ -1008,7 +929,6 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->h(I)V
 
-    .line 156
     :cond_e
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;->hasChVox()Z
 
@@ -1022,7 +942,6 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->k(I)V
 
-    .line 157
     :cond_f
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;->hasChElim()Z
 
@@ -1030,7 +949,6 @@
 
     if-eqz v0, :cond_11
 
-    .line 158
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;->getChElim()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_SWITCH;
 
     move-result-object v0
@@ -1049,7 +967,6 @@
     :goto_5
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->j(Z)V
 
-    .line 159
     :cond_11
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;->hasChBand()Z
 
@@ -1063,7 +980,6 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->f(I)V
 
-    .line 160
     :cond_12
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;->hasChPolite()Z
 
@@ -1071,7 +987,6 @@
 
     if-eqz v0, :cond_14
 
-    .line 161
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;->getChPolite()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_SWITCH;
 
     move-result-object p1
@@ -1092,12 +1007,10 @@
 .method private a(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;)V
     .locals 3
 
-    .line 198
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;->getCh()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v0
 
-    .line 199
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getChType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$SHARK_CHTYPE;
 
     move-result-object v1
@@ -1108,7 +1021,6 @@
 
     return-void
 
-    .line 200
     :cond_0
     sget-object v1, Lcom/ifengyu/intercom/node/e$a;->e:[I
 
@@ -1140,7 +1052,6 @@
 
     goto :goto_0
 
-    .line 201
     :cond_1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;->getResult()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CH_UERR;
 
@@ -1150,7 +1061,6 @@
 
     if-ne p1, v1, :cond_4
 
-    .line 202
     iget-object p1, p0, Lcom/ifengyu/intercom/node/e;->e:Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -1161,7 +1071,6 @@
 
     goto :goto_0
 
-    .line 203
     :cond_2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;->getResult()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CH_UERR;
 
@@ -1171,7 +1080,6 @@
 
     if-ne p1, v1, :cond_4
 
-    .line 204
     iget-object p1, p0, Lcom/ifengyu/intercom/node/e;->e:Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -1182,7 +1090,6 @@
 
     goto :goto_0
 
-    .line 205
     :cond_3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;->getResult()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CH_UERR;
 
@@ -1192,7 +1099,6 @@
 
     if-ne p1, v1, :cond_4
 
-    .line 206
     iget-object p1, p0, Lcom/ifengyu/intercom/node/e;->e:Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -1209,7 +1115,6 @@
 .method private a(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;)V
     .locals 1
 
-    .line 197
     sget-object v0, Lcom/ifengyu/intercom/node/e$a;->d:[I
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;->getOption()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
@@ -1228,7 +1133,6 @@
 .method private a(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;)V
     .locals 4
 
-    .line 184
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->hasVerHw()Z
 
     move-result v0
@@ -1241,7 +1145,6 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->m(I)V
 
-    .line 185
     :cond_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->hasVerSoft()Z
 
@@ -1249,14 +1152,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 186
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getVerSoft()I
 
     move-result v0
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->n(I)V
 
-    .line 187
     :cond_1
     :try_start_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->hasDeviceName()Z
@@ -1265,7 +1166,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 188
     new-instance v0, Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getDeviceName()Lcom/google/protobuf/ByteString;
@@ -1289,10 +1189,8 @@
     :catch_0
     move-exception v0
 
-    .line 189
     invoke-virtual {v0}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
-    .line 190
     :cond_2
     :goto_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->hasActivate()Z
@@ -1305,7 +1203,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 191
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getActivate()I
 
     move-result v0
@@ -1322,7 +1219,6 @@
     :goto_1
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->a(Z)V
 
-    .line 192
     :cond_4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->hasShareLoc()Z
 
@@ -1330,7 +1226,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 193
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getShareLoc()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     move-result-object v0
@@ -1344,7 +1239,6 @@
     :cond_5
     invoke-static {v1}, Lcom/ifengyu/intercom/i/d0;->p(Z)V
 
-    .line 194
     :cond_6
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->hasCh()Z
 
@@ -1352,12 +1246,10 @@
 
     if-eqz v0, :cond_7
 
-    .line 195
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getCh()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object p1
 
-    .line 196
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChTxPower()Z
 
     move-result v0
@@ -1379,13 +1271,11 @@
 
     const-string v0, "DataService"
 
-    .line 207
     :try_start_0
     iget-object v1, p0, Lcom/ifengyu/intercom/node/e;->a:Lcom/ifengyu/intercom/node/i;
 
     if-eqz v1, :cond_0
 
-    .line 208
     iget-object v1, p0, Lcom/ifengyu/intercom/node/e;->a:Lcom/ifengyu/intercom/node/i;
 
     const/4 v2, -0x1
@@ -1403,7 +1293,6 @@
     :cond_0
     const-string p1, "Device has disconnected."
 
-    .line 209
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->e(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
@@ -1422,7 +1311,6 @@
     :goto_0
     const-string p2, "Got exception while sending Data, "
 
-    .line 210
     invoke-static {v0, p2, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :goto_1
@@ -1434,15 +1322,12 @@
 .method private b(Lcom/google/protobuf/Message;)V
     .locals 1
 
-    .line 14
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarScanControl;
 
     if-eqz v0, :cond_0
 
-    .line 15
     check-cast p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarScanControl;
 
-    .line 16
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
@@ -1456,7 +1341,6 @@
 .method private b(Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;)V
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/node/e$a;->a:[I
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getOption()Lcom/ifengyu/intercom/protos/MitalkProtos$CHOPTION;
@@ -1483,7 +1367,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->hasCh1()Z
 
@@ -1493,7 +1376,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getCh1()Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;
 
     move-result-object v0
@@ -1504,19 +1386,16 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->h()I
 
     move-result v2
 
     if-eq v2, v1, :cond_1
 
-    .line 5
     iget-object v2, p0, Lcom/ifengyu/intercom/node/e;->d:Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;
 
     invoke-virtual {v2, v0}, Lorg/greenrobot/greendao/AbstractDao;->insertOrReplace(Ljava/lang/Object;)J
 
-    .line 6
     :cond_1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->hasCh2()Z
 
@@ -1524,7 +1403,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getCh2()Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;
 
     move-result-object p1
@@ -1535,14 +1413,12 @@
 
     if-eqz p1, :cond_2
 
-    .line 8
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->h()I
 
     move-result v0
 
     if-eq v0, v1, :cond_2
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->d:Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;
 
     invoke-virtual {v0, p1}, Lorg/greenrobot/greendao/AbstractDao;->insertOrReplace(Ljava/lang/Object;)J
@@ -1555,22 +1431,18 @@
 .method private c(Lcom/google/protobuf/Message;)V
     .locals 1
 
-    .line 18
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;
 
     if-eqz v0, :cond_0
 
-    .line 19
     check-cast p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;
 
-    .line 20
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 21
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;->hasCh()Z
 
     move-result v0
@@ -1583,7 +1455,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 22
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;)V
 
     :cond_0
@@ -1593,7 +1464,6 @@
 .method private c(Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;)V
     .locals 7
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1604,7 +1474,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
-    .line 2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->hasCh1()Z
 
     move-result v0
@@ -1625,7 +1494,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getCh1()Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;
@@ -1658,14 +1526,12 @@
     :cond_1
     invoke-interface {v0, v1, v4}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     invoke-interface {v0, v2, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
     goto :goto_2
 
-    .line 5
     :cond_2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->hasCh1()Z
 
@@ -1673,12 +1539,10 @@
 
     if-eqz v0, :cond_4
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     invoke-interface {v0, v2, v4}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getCh1()Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;
@@ -1703,7 +1567,6 @@
 
     goto :goto_2
 
-    .line 8
     :cond_4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->hasCh2()Z
 
@@ -1711,12 +1574,10 @@
 
     if-eqz v0, :cond_6
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     invoke-interface {v0, v2, v4}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getCh2()Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;
@@ -1739,7 +1600,6 @@
     :goto_1
     invoke-interface {v0, v1, v3}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    .line 11
     :cond_6
     :goto_2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->hasStateMode()Z
@@ -1748,7 +1608,6 @@
 
     if-eqz v0, :cond_7
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getStateMode()Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
@@ -1763,7 +1622,6 @@
 
     invoke-interface {v0, v1, p1}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    .line 13
     :cond_7
     iget-object p1, p0, Lcom/ifengyu/intercom/node/e;->b:Landroid/content/SharedPreferences$Editor;
 
@@ -1775,19 +1633,16 @@
 .method public static d()Lcom/ifengyu/intercom/node/e;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/node/e;->f:Lcom/ifengyu/intercom/node/e;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/node/e;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/node/e;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/node/e;->f:Lcom/ifengyu/intercom/node/e;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/node/e;->f:Lcom/ifengyu/intercom/node/e;
 
@@ -1797,29 +1652,24 @@
 .method private d(Lcom/google/protobuf/Message;)V
     .locals 1
 
-    .line 4
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;
 
     if-eqz v0, :cond_0
 
-    .line 5
     check-cast p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->hasOption()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 8
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;)V
 
     :cond_0
@@ -1829,15 +1679,12 @@
 .method private e(Lcom/google/protobuf/Message;)V
     .locals 4
 
-    .line 1
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
 
     if-eqz v0, :cond_3
 
-    .line 2
     check-cast p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getResult()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam$SEAL_DEV_UERR;
 
     move-result-object v0
@@ -1854,18 +1701,15 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 4
     :cond_0
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;)V
 
-    .line 5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasShareLoc()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 6
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getShareLoc()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_SWITCH;
 
     move-result-object v0
@@ -1880,7 +1724,6 @@
 
     if-nez v0, :cond_1
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -1899,7 +1742,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getShareLoc()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_SWITCH;
 
@@ -1915,7 +1757,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -1932,7 +1773,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Application;->stopService(Landroid/content/Intent;)Z
 
-    .line 10
     :cond_2
     :goto_0
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
@@ -1941,12 +1781,10 @@
 
     invoke-virtual {v0, p1}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->c:Lcom/ifengyu/intercom/node/e$b;
 
     if-eqz v0, :cond_3
 
-    .line 12
     invoke-interface {v0, p1}, Lcom/ifengyu/intercom/node/e$b;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;)V
 
     :cond_3
@@ -1956,15 +1794,12 @@
 .method private f(Lcom/google/protobuf/Message;)V
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_LocationInfo;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_LocationInfo;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
@@ -1978,27 +1813,22 @@
 .method private g(Lcom/google/protobuf/Message;)V
     .locals 3
 
-    .line 1
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;
 
     if-eqz v0, :cond_7
 
-    .line 2
     check-cast p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;
 
-    .line 3
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getPowerOn()I
 
     move-result v1
 
     if-lez v1, :cond_0
 
-    .line 5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getPowerOn()I
 
     move-result v1
@@ -2011,7 +1841,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     :cond_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getFactoryReset()I
 
@@ -2019,7 +1848,6 @@
 
     if-lez v1, :cond_1
 
-    .line 7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getFactoryReset()I
 
     move-result v1
@@ -2032,7 +1860,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
     :cond_1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getDeviceIdQuery()I
 
@@ -2040,7 +1867,6 @@
 
     if-lez v1, :cond_2
 
-    .line 9
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getDeviceIdQuery()I
 
     move-result v1
@@ -2053,7 +1879,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
     :cond_2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getKeyLock()I
 
@@ -2061,7 +1886,6 @@
 
     if-lez v1, :cond_3
 
-    .line 11
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getKeyLock()I
 
     move-result v1
@@ -2074,7 +1898,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12
     :cond_3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getPowerLevelQuery()I
 
@@ -2082,7 +1905,6 @@
 
     if-lez v1, :cond_4
 
-    .line 13
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getPowerLevelQuery()I
 
     move-result v1
@@ -2095,7 +1917,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 14
     :cond_4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getFmOpen()I
 
@@ -2103,7 +1924,6 @@
 
     if-lez v1, :cond_5
 
-    .line 15
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getFmOpen()I
 
     move-result v1
@@ -2116,7 +1936,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 16
     :cond_5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getConnBtEar()I
 
@@ -2124,7 +1943,6 @@
 
     if-lez v1, :cond_6
 
-    .line 17
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UserActionStatistics;->getConnBtEar()I
 
     move-result p1
@@ -2137,7 +1955,6 @@
 
     invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 18
     :cond_6
     invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
 
@@ -2145,7 +1962,6 @@
 
     if-nez p1, :cond_7
 
-    .line 19
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1
@@ -2161,22 +1977,18 @@
 .method private h(Lcom/google/protobuf/Message;)V
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;->hasCh()Z
 
     move-result v0
@@ -2189,7 +2001,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;)V
 
     :cond_0
@@ -2199,29 +2010,24 @@
 .method private i(Lcom/google/protobuf/Message;)V
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;->hasOption()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 5
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;)V
 
     :cond_0
@@ -2231,15 +2037,12 @@
 .method private j(Lcom/google/protobuf/Message;)V
     .locals 4
 
-    .line 1
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     if-eqz v0, :cond_3
 
-    .line 2
     check-cast p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getResult()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$SHARK_DEV_UERR;
 
     move-result-object v0
@@ -2256,18 +2059,15 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 4
     :cond_0
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;)V
 
-    .line 5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->hasShareLoc()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 6
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getShareLoc()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     move-result-object v0
@@ -2282,7 +2082,6 @@
 
     if-nez v0, :cond_1
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -2301,7 +2100,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getShareLoc()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
@@ -2317,7 +2115,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -2334,7 +2131,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Application;->stopService(Landroid/content/Intent;)Z
 
-    .line 10
     :cond_2
     :goto_0
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
@@ -2343,12 +2139,10 @@
 
     invoke-virtual {v0, p1}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/node/e;->c:Lcom/ifengyu/intercom/node/e$b;
 
     if-eqz v0, :cond_3
 
-    .line 12
     invoke-interface {v0, p1}, Lcom/ifengyu/intercom/node/e$b;->a(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;)V
 
     :cond_3
@@ -2358,15 +2152,12 @@
 .method private k(Lcom/google/protobuf/Message;)V
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_LocationInfo;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_LocationInfo;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
@@ -2380,27 +2171,22 @@
 .method private l(Lcom/google/protobuf/Message;)V
     .locals 3
 
-    .line 1
     instance-of v0, p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
     if-eqz v0, :cond_e
 
-    .line 2
     check-cast p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
-    .line 3
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getPowerOn()I
 
     move-result v1
 
     if-lez v1, :cond_0
 
-    .line 5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getPowerOn()I
 
     move-result v1
@@ -2413,7 +2199,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     :cond_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getAzimuthMap()I
 
@@ -2421,7 +2206,6 @@
 
     if-lez v1, :cond_1
 
-    .line 7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getAzimuthMap()I
 
     move-result v1
@@ -2434,7 +2218,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
     :cond_1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getFmRadio()I
 
@@ -2442,7 +2225,6 @@
 
     if-lez v1, :cond_2
 
-    .line 9
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getFmRadio()I
 
     move-result v1
@@ -2455,7 +2237,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
     :cond_2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getQuickTeam()I
 
@@ -2463,7 +2244,6 @@
 
     if-lez v1, :cond_3
 
-    .line 11
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getQuickTeam()I
 
     move-result v1
@@ -2476,7 +2256,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12
     :cond_3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getBluetoothDevice()I
 
@@ -2484,7 +2263,6 @@
 
     if-lez v1, :cond_4
 
-    .line 13
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getBluetoothDevice()I
 
     move-result v1
@@ -2497,7 +2275,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 14
     :cond_4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getHandsFree()I
 
@@ -2505,7 +2282,6 @@
 
     if-lez v1, :cond_5
 
-    .line 15
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getHandsFree()I
 
     move-result v1
@@ -2518,7 +2294,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 16
     :cond_5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getChannelScan()I
 
@@ -2526,7 +2301,6 @@
 
     if-lez v1, :cond_6
 
-    .line 17
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getChannelScan()I
 
     move-result v1
@@ -2539,7 +2313,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 18
     :cond_6
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getDoubleFreq()I
 
@@ -2547,7 +2320,6 @@
 
     if-lez v1, :cond_7
 
-    .line 19
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getDoubleFreq()I
 
     move-result v1
@@ -2560,7 +2332,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 20
     :cond_7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getSosMode()I
 
@@ -2568,7 +2339,6 @@
 
     if-lez v1, :cond_8
 
-    .line 21
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getSosMode()I
 
     move-result v1
@@ -2581,7 +2351,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 22
     :cond_8
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getPowerLevel()I
 
@@ -2589,7 +2358,6 @@
 
     if-lez v1, :cond_9
 
-    .line 23
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getPowerLevel()I
 
     move-result v1
@@ -2602,7 +2370,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 24
     :cond_9
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getBusyLock()I
 
@@ -2610,7 +2377,6 @@
 
     if-lez v1, :cond_a
 
-    .line 25
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getBusyLock()I
 
     move-result v1
@@ -2623,7 +2389,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 26
     :cond_a
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getSquelchTail()I
 
@@ -2631,7 +2396,6 @@
 
     if-lez v1, :cond_b
 
-    .line 27
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getSquelchTail()I
 
     move-result v1
@@ -2644,7 +2408,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 28
     :cond_b
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getWideNarrow()I
 
@@ -2652,7 +2415,6 @@
 
     if-lez v1, :cond_c
 
-    .line 29
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getWideNarrow()I
 
     move-result v1
@@ -2665,7 +2427,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 30
     :cond_c
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getRestoreFactory()I
 
@@ -2673,7 +2434,6 @@
 
     if-lez v1, :cond_d
 
-    .line 31
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getRestoreFactory()I
 
     move-result p1
@@ -2686,7 +2446,6 @@
 
     invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 32
     :cond_d
     invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
 
@@ -2694,7 +2453,6 @@
 
     if-nez p1, :cond_e
 
-    .line 33
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1
@@ -2714,7 +2472,6 @@
 
     const/4 v0, 0x0
 
-    .line 216
     iput-object v0, p0, Lcom/ifengyu/intercom/node/e;->c:Lcom/ifengyu/intercom/node/e$b;
 
     return-void
@@ -2723,7 +2480,6 @@
 .method public a(I)V
     .locals 2
 
-    .line 108
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2742,7 +2498,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 109
     sget-object v0, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;->f:Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;->a()I
@@ -2751,7 +2506,6 @@
 
     if-ne v0, p1, :cond_0
 
-    .line 110
     sget-object p1, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;->f:Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
@@ -2760,7 +2514,6 @@
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 111
     invoke-static {}, Lde/greenrobot/event/c;->b()Lde/greenrobot/event/c;
 
     move-result-object p1
@@ -2771,7 +2524,6 @@
 
     goto :goto_0
 
-    .line 112
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;->g:Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;
 
@@ -2781,7 +2533,6 @@
 
     if-ne v0, p1, :cond_1
 
-    .line 113
     sget-object p1, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;->g:Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
@@ -2790,7 +2541,6 @@
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 114
     invoke-static {}, Lde/greenrobot/event/c;->b()Lde/greenrobot/event/c;
 
     move-result-object p1
@@ -2801,7 +2551,6 @@
 
     goto :goto_0
 
-    .line 115
     :cond_1
     sget-object v0, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;->h:Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;
 
@@ -2811,7 +2560,6 @@
 
     if-ne v0, p1, :cond_2
 
-    .line 116
     sget-object p1, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;->h:Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
@@ -2820,7 +2568,6 @@
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 117
     invoke-static {}, Lde/greenrobot/event/c;->b()Lde/greenrobot/event/c;
 
     move-result-object p1
@@ -2831,7 +2578,6 @@
 
     goto :goto_0
 
-    .line 118
     :cond_2
     sget-object v0, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;->i:Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;
 
@@ -2841,7 +2587,6 @@
 
     if-ne v0, p1, :cond_3
 
-    .line 119
     sget-object p1, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;->i:Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
@@ -2850,7 +2595,6 @@
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 120
     invoke-static {}, Lde/greenrobot/event/c;->b()Lde/greenrobot/event/c;
 
     move-result-object p1
@@ -2861,7 +2605,6 @@
 
     goto :goto_0
 
-    .line 121
     :cond_3
     sget-object v0, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;->j:Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;
 
@@ -2871,7 +2614,6 @@
 
     if-ne v0, p1, :cond_4
 
-    .line 122
     sget-object p1, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;->j:Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->name()Ljava/lang/String;
@@ -2880,7 +2622,6 @@
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 123
     invoke-static {}, Lde/greenrobot/event/c;->b()Lde/greenrobot/event/c;
 
     move-result-object p1
@@ -2897,12 +2638,10 @@
 .method public a(ILjava/lang/String;)V
     .locals 1
 
-    .line 104
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
 
-    .line 105
     invoke-static {v0, p1, p2}, Lcom/ifengyu/intercom/node/transport/d;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;ILjava/lang/String;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object p1
@@ -2917,12 +2656,10 @@
 .method public a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
     .locals 1
 
-    .line 100
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
 
-    .line 101
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/node/transport/d;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;Lcom/ifengyu/intercom/bean/BeanUserLocation;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object p1
@@ -2937,7 +2674,6 @@
 .method public a(Lcom/ifengyu/intercom/node/e$b;)V
     .locals 0
 
-    .line 215
     iput-object p1, p0, Lcom/ifengyu/intercom/node/e;->c:Lcom/ifengyu/intercom/node/e$b;
 
     return-void
@@ -2950,13 +2686,10 @@
 
     const-string v1, "onDeviceConnected"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/node/e;->a:Lcom/ifengyu/intercom/node/i;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1
@@ -2965,7 +2698,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/MiTalkiApp;->a(Z)V
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result p1
@@ -2984,7 +2716,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
@@ -3000,12 +2731,10 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/node/e;->e:Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
 
-    .line 6
     invoke-virtual {p1}, Lorg/greenrobot/greendao/AbstractDao;->deleteAll()V
 
     goto :goto_0
 
-    .line 7
     :cond_1
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
@@ -3021,7 +2750,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/node/e;->d:Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;
 
-    .line 8
     invoke-virtual {p1}, Lorg/greenrobot/greendao/AbstractDao;->deleteAll()V
 
     :goto_0
@@ -3031,12 +2759,10 @@
 .method public a(Lcom/ifengyu/intercom/protos/MitalkProtos$CHOPTION;Lcom/ifengyu/intercom/ui/setting/UserChannel;Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
     .locals 1
 
-    .line 102
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
 
-    .line 103
     invoke-static {v0, p2, p3, p1}, Lcom/ifengyu/intercom/node/transport/d;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;Lcom/ifengyu/intercom/ui/setting/UserChannel;Lcom/ifengyu/intercom/ui/setting/UserChannel;Lcom/ifengyu/intercom/protos/MitalkProtos$CHOPTION;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object p1
@@ -3051,12 +2777,10 @@
 .method public a(Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;)V
     .locals 1
 
-    .line 106
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
 
-    .line 107
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/node/transport/d;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object p1
@@ -3075,12 +2799,10 @@
 
     const-string v0, "onDeviceDisConnected"
 
-    .line 9
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 p1, 0x0
 
-    .line 10
     iput-object p1, p0, Lcom/ifengyu/intercom/node/e;->a:Lcom/ifengyu/intercom/node/i;
 
     return-void
@@ -3105,15 +2827,12 @@
 
     const-string v0, "onSealCmdReceived"
 
-    .line 124
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 125
     invoke-virtual {p2}, Lcom/ifengyu/intercom/node/a;->b()Lcom/google/protobuf/Message;
 
     move-result-object p1
 
-    .line 126
     invoke-virtual {p2}, Lcom/ifengyu/intercom/node/a;->a()I
 
     move-result p2
@@ -3148,43 +2867,36 @@
 
     goto :goto_0
 
-    .line 127
     :cond_0
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->g(Lcom/google/protobuf/Message;)V
 
     goto :goto_0
 
-    .line 128
     :cond_1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->b(Lcom/google/protobuf/Message;)V
 
     goto :goto_0
 
-    .line 129
     :cond_2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->a(Lcom/google/protobuf/Message;)V
 
     goto :goto_0
 
-    .line 130
     :cond_3
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->f(Lcom/google/protobuf/Message;)V
 
     goto :goto_0
 
-    .line 131
     :cond_4
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->c(Lcom/google/protobuf/Message;)V
 
     goto :goto_0
 
-    .line 132
     :cond_5
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->d(Lcom/google/protobuf/Message;)V
 
     goto :goto_0
 
-    .line 133
     :cond_6
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->e(Lcom/google/protobuf/Message;)V
 
@@ -3199,15 +2911,12 @@
 
     const-string v0, "onSharkCmdReceived"
 
-    .line 175
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 176
     invoke-virtual {p2}, Lcom/ifengyu/intercom/node/a;->b()Lcom/google/protobuf/Message;
 
     move-result-object p1
 
-    .line 177
     invoke-virtual {p2}, Lcom/ifengyu/intercom/node/a;->a()I
 
     move-result p2
@@ -3234,34 +2943,28 @@
 
     goto :goto_0
 
-    .line 178
     :cond_0
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->l(Lcom/google/protobuf/Message;)V
 
-    .line 179
     invoke-static {}, Lcom/ifengyu/intercom/i/h0;->f()V
 
     goto :goto_0
 
-    .line 180
     :cond_1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->k(Lcom/google/protobuf/Message;)V
 
     goto :goto_0
 
-    .line 181
     :cond_2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->h(Lcom/google/protobuf/Message;)V
 
     goto :goto_0
 
-    .line 182
     :cond_3
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->i(Lcom/google/protobuf/Message;)V
 
     goto :goto_0
 
-    .line 183
     :cond_4
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/e;->j(Lcom/google/protobuf/Message;)V
 
@@ -3276,17 +2979,14 @@
 
     const-string v0, "onDolphinCmdReceived"
 
-    .line 11
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 12
     invoke-virtual {p2}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->hasLocationSync()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
@@ -3297,7 +2997,6 @@
 
     invoke-virtual {v0, v1}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 14
     :cond_0
     invoke-virtual {p2}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->hasParamUpdate()Z
 
@@ -3307,12 +3006,10 @@
 
     if-eqz v0, :cond_4
 
-    .line 15
     invoke-virtual {p2}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->getParamUpdate()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
 
-    .line 16
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -3333,25 +3030,20 @@
 
     invoke-static {p1, v2}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 17
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;)V
 
-    .line 18
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v2
 
     invoke-virtual {v2, v0}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 19
     iget-object v2, p0, Lcom/ifengyu/intercom/node/e;->c:Lcom/ifengyu/intercom/node/e$b;
 
     if-eqz v2, :cond_1
 
-    .line 20
     invoke-interface {v2, v0}, Lcom/ifengyu/intercom/node/e$b;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;)V
 
-    .line 21
     :cond_1
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasShareLoc()Z
 
@@ -3371,14 +3063,12 @@
 
     if-nez v2, :cond_3
 
-    .line 22
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getShareLoc()I
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 23
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -3397,7 +3087,6 @@
 
     goto :goto_0
 
-    .line 24
     :cond_2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->a0()Z
 
@@ -3405,7 +3094,6 @@
 
     if-nez v0, :cond_4
 
-    .line 25
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -3424,7 +3112,6 @@
 
     goto :goto_0
 
-    .line 26
     :cond_3
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasShareLoc()Z
 
@@ -3444,7 +3131,6 @@
 
     if-eqz v2, :cond_4
 
-    .line 27
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getShareLoc()I
 
     move-result v0
@@ -3457,7 +3143,6 @@
 
     if-nez v0, :cond_4
 
-    .line 28
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -3474,7 +3159,6 @@
 
     invoke-virtual {v0, v2}, Landroid/app/Application;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
-    .line 29
     :cond_4
     :goto_0
     invoke-virtual {p2}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->hasParamResp()Z
@@ -3483,12 +3167,10 @@
 
     if-eqz v0, :cond_6
 
-    .line 30
     invoke-virtual {p2}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->getParamResp()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
 
-    .line 31
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -3509,17 +3191,14 @@
 
     invoke-static {p1, v2}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 32
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;)V
 
-    .line 33
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v2
 
     invoke-virtual {v2, v0}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 34
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasShareLoc()Z
 
     move-result v2
@@ -3538,14 +3217,12 @@
 
     if-nez v2, :cond_6
 
-    .line 35
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getShareLoc()I
 
     move-result v0
 
     if-eqz v0, :cond_5
 
-    .line 36
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -3564,7 +3241,6 @@
 
     goto :goto_1
 
-    .line 37
     :cond_5
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->a0()Z
 
@@ -3572,7 +3248,6 @@
 
     if-nez v0, :cond_6
 
-    .line 38
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -3589,7 +3264,6 @@
 
     invoke-virtual {v0, v2}, Landroid/app/Application;->stopService(Landroid/content/Intent;)Z
 
-    .line 39
     :cond_6
     :goto_1
     invoke-virtual {p2}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->hasStateResp()Z
@@ -3598,12 +3272,10 @@
 
     if-eqz v0, :cond_e
 
-    .line 40
     invoke-virtual {p2}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->getStateResp()Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
 
     move-result-object v0
 
-    .line 41
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getResult()Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
     move-result-object v2
@@ -3612,12 +3284,10 @@
 
     if-ne v2, v3, :cond_8
 
-    .line 42
     sget v2, Lcom/ifengyu/intercom/i/d0;->a:I
 
     if-ne v2, v1, :cond_7
 
-    .line 43
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;)V
 
     goto :goto_2
@@ -3627,10 +3297,8 @@
 
     if-ne v2, v1, :cond_8
 
-    .line 44
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/node/e;->b(Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;)V
 
-    .line 45
     :cond_8
     :goto_2
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->c()Z
@@ -3639,7 +3307,6 @@
 
     if-eqz v1, :cond_9
 
-    .line 46
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -3660,27 +3327,23 @@
 
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 47
     :cond_9
     invoke-direct {p0, p2}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;)Lcom/ifengyu/intercom/eventbus/StateUpdateEvent;
 
     move-result-object p1
 
-    .line 48
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object p2
 
     invoke-virtual {p2, p1}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 49
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p2
 
     invoke-virtual {p2, p1}, Lcom/ifengyu/intercom/MiTalkiApp;->a(Lcom/ifengyu/intercom/eventbus/StateUpdateEvent;)V
 
-    .line 50
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getOption()Lcom/ifengyu/intercom/protos/MitalkProtos$CHOPTION;
 
     move-result-object p1
@@ -3689,7 +3352,6 @@
 
     if-ne p1, p2, :cond_e
 
-    .line 51
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->hasCh1()Z
 
     move-result p1
@@ -3708,7 +3370,6 @@
 
     if-eq p1, p2, :cond_b
 
-    .line 52
     :cond_a
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->hasCh2()Z
 
@@ -3728,7 +3389,6 @@
 
     if-ne p1, p2, :cond_c
 
-    .line 53
     :cond_b
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->a0()Z
 
@@ -3736,7 +3396,6 @@
 
     if-nez p1, :cond_d
 
-    .line 54
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1
@@ -3755,7 +3414,6 @@
 
     goto :goto_3
 
-    .line 55
     :cond_c
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->a0()Z
 
@@ -3769,7 +3427,6 @@
 
     if-nez p1, :cond_d
 
-    .line 56
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1
@@ -3786,7 +3443,6 @@
 
     invoke-virtual {p1, p2}, Landroid/app/Application;->stopService(Landroid/content/Intent;)Z
 
-    .line 57
     :cond_d
     :goto_3
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/node/e;->c(Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;)V
@@ -3800,13 +3456,11 @@
 
     const-string v0, "DataService"
 
-    .line 211
     :try_start_0
     iget-object v1, p0, Lcom/ifengyu/intercom/node/e;->a:Lcom/ifengyu/intercom/node/i;
 
     if-eqz v1, :cond_0
 
-    .line 212
     iget-object v1, p0, Lcom/ifengyu/intercom/node/e;->a:Lcom/ifengyu/intercom/node/i;
 
     const/4 v2, 0x1
@@ -3818,7 +3472,6 @@
     :cond_0
     const-string p1, "Device has disconnected."
 
-    .line 213
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->e(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
@@ -3837,7 +3490,6 @@
     :goto_0
     const-string v1, "Got exception while sending Data, "
 
-    .line 214
     invoke-static {v0, v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :goto_1
@@ -3849,12 +3501,10 @@
 .method public b()V
     .locals 2
 
-    .line 12
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
 
-    .line 13
     invoke-static {v0}, Lcom/ifengyu/intercom/node/transport/d;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object v0
@@ -3869,12 +3519,10 @@
 .method public b(I)V
     .locals 1
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
 
-    .line 11
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/node/transport/d;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;I)Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object p1
@@ -3895,12 +3543,10 @@
 .method public c()V
     .locals 2
 
-    .line 14
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
 
-    .line 15
     invoke-static {v0}, Lcom/ifengyu/intercom/node/transport/d;->b(Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object v0
@@ -3915,12 +3561,10 @@
 .method public c(Ljava/lang/String;)V
     .locals 1
 
-    .line 16
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
 
-    .line 17
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/node/transport/d;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;Ljava/lang/String;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object p1

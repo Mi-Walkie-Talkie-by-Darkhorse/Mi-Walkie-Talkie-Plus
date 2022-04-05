@@ -1,6 +1,5 @@
 .class public Landroidx/core/c/c$a$a;
 .super Ljava/lang/Object;
-.source "PrecomputedTextCompat.java"
 
 
 # annotations
@@ -35,13 +34,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/c/c$a$a;->a:Landroid/text/TextPaint;
 
-    .line 3
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v0, 0x17
@@ -50,10 +46,8 @@
 
     const/4 p1, 0x1
 
-    .line 4
     iput p1, p0, Landroidx/core/c/c$a$a;->c:I
 
-    .line 5
     iput p1, p0, Landroidx/core/c/c$a$a;->d:I
 
     goto :goto_0
@@ -61,12 +55,10 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 6
     iput p1, p0, Landroidx/core/c/c$a$a;->d:I
 
     iput p1, p0, Landroidx/core/c/c$a$a;->c:I
 
-    .line 7
     :goto_0
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -74,7 +66,6 @@
 
     if-lt p1, v0, :cond_1
 
-    .line 8
     sget-object p1, Landroid/text/TextDirectionHeuristics;->FIRSTSTRONG_LTR:Landroid/text/TextDirectionHeuristic;
 
     iput-object p1, p0, Landroidx/core/c/c$a$a;->b:Landroid/text/TextDirectionHeuristic;
@@ -84,7 +75,6 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 9
     iput-object p1, p0, Landroidx/core/c/c$a$a;->b:Landroid/text/TextDirectionHeuristic;
 
     :goto_1
@@ -99,7 +89,6 @@
         value = 0x17
     .end annotation
 
-    .line 1
     iput p1, p0, Landroidx/core/c/c$a$a;->c:I
 
     return-object p0
@@ -115,7 +104,6 @@
         value = 0x12
     .end annotation
 
-    .line 2
     iput-object p1, p0, Landroidx/core/c/c$a$a;->b:Landroid/text/TextDirectionHeuristic;
 
     return-object p0
@@ -126,7 +114,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 3
     new-instance v0, Landroidx/core/c/c$a;
 
     iget-object v1, p0, Landroidx/core/c/c$a$a;->a:Landroid/text/TextPaint;
@@ -148,7 +135,6 @@
         value = 0x17
     .end annotation
 
-    .line 1
     iput p1, p0, Landroidx/core/c/c$a$a;->d:I
 
     return-object p0

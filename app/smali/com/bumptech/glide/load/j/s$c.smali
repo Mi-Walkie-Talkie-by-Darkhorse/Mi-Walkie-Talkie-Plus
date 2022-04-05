@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/s$c;
 .super Ljava/lang/Object;
-.source "ResourceLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/o;
@@ -35,10 +34,8 @@
 .method public constructor <init>(Landroid/content/res/Resources;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/j/s$c;->a:Landroid/content/res/Resources;
 
     return-void
@@ -63,7 +60,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/j/s;
 
     iget-object v1, p0, Lcom/bumptech/glide/load/j/s$c;->a:Landroid/content/res/Resources;

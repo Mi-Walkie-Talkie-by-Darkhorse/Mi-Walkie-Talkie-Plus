@@ -1,13 +1,11 @@
 .class public Lcom/amap/api/maps/offlinemap/DownLoadListView;
 .super Landroid/widget/ListView;
-.source "DownLoadListView.java"
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/widget/ListView;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -16,10 +14,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Landroid/widget/ListView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 3
     new-instance p1, Landroid/widget/LinearLayout$LayoutParams;
 
     const/4 p2, -0x1
@@ -40,12 +36,10 @@
 
     const/high16 v0, -0x80000000
 
-    .line 1
     invoke-static {p2, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result p2
 
-    .line 2
     invoke-super {p0, p1, p2}, Landroid/widget/ListView;->onMeasure(II)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/dialog/o;
 .super Lcom/ifengyu/intercom/ui/widget/dialog/d;
-.source "InsertChannelDialog.java"
 
 
 # annotations

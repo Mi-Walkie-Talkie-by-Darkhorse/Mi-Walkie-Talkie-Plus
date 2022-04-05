@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/trace/LBSTraceClient;
 .super Ljava/lang/Object;
-.source "LBSTraceClient.java"
 
 
 # static fields
@@ -25,7 +24,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,10 +32,8 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/amap/api/trace/LBSTraceClient;->a(Landroid/content/Context;)V
 
     return-void
@@ -48,13 +44,11 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/em;->f()Lcom/amap/api/col/l3/gh;
 
     move-result-object v1
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -75,7 +69,6 @@
 
     new-array v6, v4, [Ljava/lang/Object;
 
-    .line 3
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
@@ -86,7 +79,6 @@
 
     move-object v5, v6
 
-    .line 4
     invoke-static/range {v0 .. v5}, Lcom/amap/api/col/l3/hl;->a(Landroid/content/Context;Lcom/amap/api/col/l3/gh;Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -99,7 +91,6 @@
 
     return-void
 
-    .line 5
     :catchall_0
     new-instance v0, Lcom/amap/api/col/l3/ft;
 
@@ -118,33 +109,27 @@
 .method public static getInstance(Landroid/content/Context;)Lcom/amap/api/trace/LBSTraceClient;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/amap/api/trace/LBSTraceClient;->b:Lcom/amap/api/trace/LBSTraceClient;
 
     if-nez v0, :cond_1
 
-    .line 2
     const-class v0, Lcom/amap/api/trace/LBSTraceClient;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     sget-object v1, Lcom/amap/api/trace/LBSTraceClient;->b:Lcom/amap/api/trace/LBSTraceClient;
 
     if-nez v1, :cond_0
 
-    .line 4
     invoke-static {p0}, Lcom/amap/api/trace/LBSTraceClient;->a(Landroid/content/Context;)V
 
-    .line 5
     new-instance p0, Lcom/amap/api/trace/LBSTraceClient;
 
     invoke-direct {p0}, Lcom/amap/api/trace/LBSTraceClient;-><init>()V
 
     sput-object p0, Lcom/amap/api/trace/LBSTraceClient;->b:Lcom/amap/api/trace/LBSTraceClient;
 
-    .line 6
     :cond_0
     monitor-exit v0
     :try_end_0
@@ -159,7 +144,6 @@
 
     throw p0
 
-    .line 7
     :cond_1
     :goto_0
     sget-object p0, Lcom/amap/api/trace/LBSTraceClient;->b:Lcom/amap/api/trace/LBSTraceClient;
@@ -172,17 +156,14 @@
 .method public destroy()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/trace/LBSTraceClient;->a:Lcom/amap/api/trace/LBSTraceBase;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/amap/api/trace/LBSTraceBase;->destroy()V
 
     const/4 v0, 0x0
 
-    .line 3
     sput-object v0, Lcom/amap/api/trace/LBSTraceClient;->a:Lcom/amap/api/trace/LBSTraceBase;
 
     sput-object v0, Lcom/amap/api/trace/LBSTraceClient;->b:Lcom/amap/api/trace/LBSTraceClient;
@@ -204,12 +185,10 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/amap/api/trace/LBSTraceClient;->a:Lcom/amap/api/trace/LBSTraceBase;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2, p3, p4}, Lcom/amap/api/trace/LBSTraceBase;->queryProcessedTrace(ILjava/util/List;ILcom/amap/api/trace/TraceListener;)V
 
     :cond_0
@@ -219,12 +198,10 @@
 .method public startTrace(Lcom/amap/api/trace/TraceStatusListener;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/trace/LBSTraceClient;->a:Lcom/amap/api/trace/LBSTraceBase;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Lcom/amap/api/trace/LBSTraceBase;->startTrace(Lcom/amap/api/trace/TraceStatusListener;)V
 
     :cond_0
@@ -234,12 +211,10 @@
 .method public stopTrace()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/trace/LBSTraceClient;->a:Lcom/amap/api/trace/LBSTraceBase;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/amap/api/trace/LBSTraceBase;->stopTrace()V
 
     :cond_0

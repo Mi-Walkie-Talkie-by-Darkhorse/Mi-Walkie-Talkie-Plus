@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl$4;
 .super Ljava/lang/Object;
-.source "FloatingActionButtonImpl.java"
 
 # interfaces
 .implements Landroid/animation/TypeEvaluator;
@@ -36,12 +35,10 @@
 .method constructor <init>(Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl$4;->this$0:Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance p1, Landroid/animation/FloatEvaluator;
 
     invoke-direct {p1}, Landroid/animation/FloatEvaluator;-><init>()V
@@ -56,7 +53,6 @@
 .method public evaluate(FLjava/lang/Float;Ljava/lang/Float;)Ljava/lang/Float;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/FloatingActionButtonImpl$4;->floatEvaluator:Landroid/animation/FloatEvaluator;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/animation/FloatEvaluator;->evaluate(FLjava/lang/Number;Ljava/lang/Number;)Ljava/lang/Float;
@@ -75,7 +71,6 @@
 
     const/4 p1, 0x0
 
-    .line 3
     :cond_0
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -87,7 +82,6 @@
 .method public bridge synthetic evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p2, Ljava/lang/Float;
 
     check-cast p3, Ljava/lang/Float;

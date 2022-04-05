@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/MapMaker$ComputingMapAdapter;
 .super Lcom/google/common/collect/ComputingConcurrentHashMap;
-.source "MapMaker.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -46,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/ComputingConcurrentHashMap;-><init>(Lcom/google/common/collect/MapMaker;Lcom/google/common/base/Function;)V
 
     return-void
@@ -64,7 +62,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ComputingConcurrentHashMap;->getOrCompute(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -76,7 +73,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/NullPointerException;
 
@@ -137,17 +133,14 @@
     :catch_0
     move-exception p1
 
-    .line 3
     invoke-virtual {p1}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p1
 
-    .line 4
     const-class v0, Lcom/google/common/collect/ComputationException;
 
     invoke-static {p1, v0}, Lcom/google/common/base/Throwables;->propagateIfInstanceOf(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 5
     new-instance v0, Lcom/google/common/collect/ComputationException;
 
     invoke-direct {v0, p1}, Lcom/google/common/collect/ComputationException;-><init>(Ljava/lang/Throwable;)V

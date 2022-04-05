@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;
 .super Lcom/ifengyu/intercom/lite/base/BaseActivity;
-.source "LiteVoiceSettingActivity.java"
 
 
 # static fields
@@ -57,7 +56,6 @@
 
     const v1, 0x7f11009b
 
-    .line 1
     invoke-static {v1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object v1
@@ -74,7 +72,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/base/BaseActivity;-><init>()V
 
     return-void
@@ -89,7 +86,6 @@
 
     return v0
 
-    .line 9
     :cond_0
     sget-object v1, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity$a;->a:[I
 
@@ -127,7 +123,6 @@
 .method private a(I)Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;
     .locals 2
 
-    .line 10
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;->CLOSE:Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;
 
     if-eqz p1, :cond_1
@@ -140,13 +135,11 @@
 
     goto :goto_0
 
-    .line 11
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;->ENGLISH:Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;
 
     goto :goto_0
 
-    .line 12
     :cond_1
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;->CHINESE:Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;
 
@@ -157,7 +150,6 @@
 .method static synthetic a(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 7
     invoke-virtual {p0}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p0
@@ -166,7 +158,6 @@
 
     const p0, 0x7f1101e7
 
-    .line 8
     invoke-static {p0}, Lcom/ifengyu/library/a/m;->d(I)V
 
     :cond_0
@@ -176,7 +167,6 @@
 .method private a([Ljava/lang/String;I)V
     .locals 3
 
-    .line 13
     new-instance v0, Lcom/ifengyu/intercom/lite/dialog/list/d;
 
     const/4 v1, 0x1
@@ -185,7 +175,6 @@
 
     const v1, 0x7f1101c4
 
-    .line 14
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->c(I)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     move-object v1, v0
@@ -196,13 +185,10 @@
 
     invoke-direct {v2, p0}, Lcom/ifengyu/intercom/lite/old/r;-><init>(Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;)V
 
-    .line 15
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/dialog/list/d;->a(Lcom/ifengyu/intercom/lite/dialog/list/d$c;)Lcom/ifengyu/intercom/lite/dialog/list/d;
 
-    .line 16
     invoke-virtual {v0, p2}, Lcom/ifengyu/intercom/lite/dialog/list/d;->d(I)Lcom/ifengyu/intercom/lite/dialog/list/d;
 
-    .line 17
     array-length p2, p1
 
     const/4 v1, 0x0
@@ -212,7 +198,6 @@
 
     aget-object v2, p1, v1
 
-    .line 18
     invoke-virtual {v0, v2}, Lcom/ifengyu/intercom/lite/dialog/list/d;->b(Ljava/lang/String;)Lcom/ifengyu/intercom/lite/dialog/list/d;
 
     add-int/lit8 v1, v1, 0x1
@@ -222,7 +207,6 @@
     :cond_0
     const p1, 0x7f1200fc
 
-    .line 19
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/b;
 
     move-result-object p1
@@ -235,7 +219,6 @@
 .method public static start(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;
@@ -250,7 +233,6 @@
 .method private x()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;->a()Lcom/qmuiteam/qmui/alpha/QMUIAlphaImageButton;
@@ -263,14 +245,12 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     const v1, 0x7f1101c5
 
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;->f(I)Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->mItemStartupBeep:Lcom/ifengyu/library/widget/view/ItemView;
 
     invoke-virtual {v0}, Lcom/ifengyu/library/widget/view/ItemView;->getSwitch()Lcom/ifengyu/library/widget/view/SwitchButton;
@@ -281,7 +261,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/library/widget/view/SwitchButton;->setChecked(Z)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->mItemKeyBeep:Lcom/ifengyu/library/widget/view/ItemView;
 
     invoke-virtual {v0}, Lcom/ifengyu/library/widget/view/ItemView;->getSwitch()Lcom/ifengyu/library/widget/view/SwitchButton;
@@ -296,7 +275,6 @@
 .method private y()V
     .locals 2
 
-    .line 1
     invoke-static {p0}, Landroidx/lifecycle/x;->a(Landroidx/fragment/app/FragmentActivity;)Landroidx/lifecycle/w;
 
     move-result-object v0
@@ -311,7 +289,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->m:Lcom/ifengyu/intercom/lite/h/h0;
 
-    .line 2
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/h/h0;->i()Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;
 
     move-result-object v0
@@ -322,7 +299,6 @@
 
     invoke-virtual {v0, p0, v1}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/k;Landroidx/lifecycle/q;)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->m:Lcom/ifengyu/intercom/lite/h/h0;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/h/h0;->j()Landroidx/lifecycle/p;
@@ -335,7 +311,6 @@
 
     invoke-virtual {v0, p0, v1}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/k;Landroidx/lifecycle/q;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->m:Lcom/ifengyu/intercom/lite/h/h0;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/h/h0;->k()Landroidx/lifecycle/p;
@@ -346,7 +321,6 @@
 
     invoke-virtual {v0, p0, v1}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/k;Landroidx/lifecycle/q;)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->m:Lcom/ifengyu/intercom/lite/h/h0;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/h/h0;->n()V
@@ -359,7 +333,6 @@
 .method public synthetic a(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/QMUIActivity;->onBackPressed()V
 
     return-void
@@ -368,7 +341,6 @@
 .method public synthetic a(Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;)V
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->mItemStartupBeep:Lcom/ifengyu/library/widget/view/ItemView;
 
     invoke-virtual {v0}, Lcom/ifengyu/library/widget/view/ItemView;->getSwitch()Lcom/ifengyu/library/widget/view/SwitchButton;
@@ -381,7 +353,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/library/widget/view/SwitchButton;->setChecked(Z)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->mItemKeyBeep:Lcom/ifengyu/library/widget/view/ItemView;
 
     invoke-virtual {v0}, Lcom/ifengyu/library/widget/view/ItemView;->getSwitch()Lcom/ifengyu/library/widget/view/SwitchButton;
@@ -394,12 +365,10 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/library/widget/view/SwitchButton;->setChecked(Z)V
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;->getLangType()Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;
 
     move-result-object p1
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->mItemVoice:Lcom/ifengyu/library/widget/view/ItemView;
 
     sget-object v1, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->n:[Ljava/lang/String;
@@ -412,7 +381,6 @@
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
-    .line 6
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/BaseActivity;->v()V
 
     return-void
@@ -421,10 +389,8 @@
 .method public synthetic a(Lcom/qmuiteam/qmui/widget/dialog/b;Landroid/view/View;ILjava/lang/String;)V
     .locals 0
 
-    .line 20
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
-    .line 21
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->m:Lcom/ifengyu/intercom/lite/h/h0;
 
     invoke-direct {p0, p3}, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->a(I)Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;
@@ -433,7 +399,6 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/lite/h/h0;->a(Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;)V
 
-    .line 22
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/BaseActivity;->w()V
 
     return-void
@@ -444,10 +409,8 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/BaseActivity;->v()V
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/library/a/m;->a(Ljava/lang/CharSequence;)V
 
     :cond_0
@@ -464,7 +427,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -483,7 +445,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->m:Lcom/ifengyu/intercom/lite/h/h0;
 
@@ -495,7 +456,6 @@
 
     move-result-object p1
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->n:[Ljava/lang/String;
 
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->a(Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;)I
@@ -506,7 +466,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->m:Lcom/ifengyu/intercom/lite/h/h0;
 
@@ -524,12 +483,10 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/h/h0;->a(Z)V
 
-    .line 5
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/BaseActivity;->w()V
 
     goto :goto_0
 
-    .line 6
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->m:Lcom/ifengyu/intercom/lite/h/h0;
 
@@ -547,7 +504,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/h/h0;->d(Z)V
 
-    .line 7
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/BaseActivity;->w()V
 
     :goto_0
@@ -557,21 +513,16 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/lite/base/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c005a
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/arch/QMUIActivity;->setContentView(I)V
 
-    .line 3
     invoke-static {p0}, Lbutterknife/ButterKnife;->bind(Landroid/app/Activity;)Lbutterknife/Unbinder;
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->x()V
 
-    .line 5
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->y()V
 
     return-void

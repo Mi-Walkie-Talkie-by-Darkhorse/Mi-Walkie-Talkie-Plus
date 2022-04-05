@@ -1,6 +1,5 @@
 .class final Lorg/greenrobot/greendao/query/CursorQuery$QueryData;
 .super Lorg/greenrobot/greendao/query/AbstractQueryData;
-.source "CursorQuery.java"
 
 
 # annotations
@@ -36,13 +35,10 @@
 .method constructor <init>(Lorg/greenrobot/greendao/AbstractDao;Ljava/lang/String;[Ljava/lang/String;II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lorg/greenrobot/greendao/query/AbstractQueryData;-><init>(Lorg/greenrobot/greendao/AbstractDao;Ljava/lang/String;[Ljava/lang/String;)V
 
-    .line 2
     iput p4, p0, Lorg/greenrobot/greendao/query/CursorQuery$QueryData;->limitPosition:I
 
-    .line 3
     iput p5, p0, Lorg/greenrobot/greendao/query/CursorQuery$QueryData;->offsetPosition:I
 
     return-void
@@ -53,7 +49,6 @@
 .method protected bridge synthetic createQuery()Lorg/greenrobot/greendao/query/AbstractQuery;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/CursorQuery$QueryData;->createQuery()Lorg/greenrobot/greendao/query/CursorQuery;
 
     move-result-object v0
@@ -71,7 +66,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v8, Lorg/greenrobot/greendao/query/CursorQuery;
 
     iget-object v2, p0, Lorg/greenrobot/greendao/query/AbstractQueryData;->dao:Lorg/greenrobot/greendao/AbstractDao;

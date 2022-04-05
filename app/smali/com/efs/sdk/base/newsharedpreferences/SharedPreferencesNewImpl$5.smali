@@ -1,6 +1,5 @@
 .class Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$5;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$5;->this$0:Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,18 +36,15 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$5;->this$0:Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$5;->this$0:Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;
 
     invoke-static {v1}, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;->access$400(Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;)V
 
-    .line 3
     monitor-exit v0
 
     return-void

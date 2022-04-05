@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/baseui/BaseActivity$e;
 .super Ljava/lang/Object;
-.source "BaseActivity.java"
 
 
 # annotations

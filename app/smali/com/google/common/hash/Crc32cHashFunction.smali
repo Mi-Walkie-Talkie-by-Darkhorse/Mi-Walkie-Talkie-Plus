@@ -1,6 +1,5 @@
 .class final Lcom/google/common/hash/Crc32cHashFunction;
 .super Lcom/google/common/hash/AbstractStreamingHashFunction;
-.source "Crc32cHashFunction.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction;-><init>()V
 
     return-void
@@ -34,7 +32,6 @@
 .method public newHasher()Lcom/google/common/hash/Hasher;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/hash/Crc32cHashFunction$Crc32cHasher;
 
     invoke-direct {v0}, Lcom/google/common/hash/Crc32cHashFunction$Crc32cHasher;-><init>()V

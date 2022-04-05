@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/update/dolphin/UpdateManager$a;
 .super Ljava/lang/Object;
-.source "UpdateManager.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/network/d/a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/update/dolphin/UpdateManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$a;->a:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a(Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$a;->a:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/update/dolphin/UpdateManager;->a(Lcom/ifengyu/intercom/update/dolphin/UpdateManager;)Ljava/util/HashMap;

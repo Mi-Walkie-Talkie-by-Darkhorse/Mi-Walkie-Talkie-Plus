@@ -1,6 +1,5 @@
 .class La/b/b$a;
 .super La/b/f;
-.source "ArraySet.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(La/b/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, La/b/b$a;->d:La/b/b;
 
     invoke-direct {p0}, La/b/f;-><init>()V
@@ -42,7 +40,6 @@
 .method protected a(Ljava/lang/Object;)I
     .locals 1
 
-    .line 2
     iget-object v0, p0, La/b/b$a;->d:La/b/b;
 
     invoke-virtual {v0, p1}, La/b/b;->indexOf(Ljava/lang/Object;)I
@@ -55,7 +52,6 @@
 .method protected a(II)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iget-object p2, p0, La/b/b$a;->d:La/b/b;
 
     iget-object p2, p2, La/b/b;->b:[Ljava/lang/Object;
@@ -73,7 +69,6 @@
         }
     .end annotation
 
-    .line 4
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "not a map"
@@ -86,7 +81,6 @@
 .method protected a()V
     .locals 1
 
-    .line 6
     iget-object v0, p0, La/b/b$a;->d:La/b/b;
 
     invoke-virtual {v0}, La/b/b;->clear()V
@@ -97,7 +91,6 @@
 .method protected a(I)V
     .locals 1
 
-    .line 5
     iget-object v0, p0, La/b/b$a;->d:La/b/b;
 
     invoke-virtual {v0, p1}, La/b/b;->b(I)Ljava/lang/Object;
@@ -113,7 +106,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object p2, p0, La/b/b$a;->d:La/b/b;
 
     invoke-virtual {p2, p1}, La/b/b;->add(Ljava/lang/Object;)Z
@@ -124,7 +116,6 @@
 .method protected b(Ljava/lang/Object;)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/b$a;->d:La/b/b;
 
     invoke-virtual {v0, p1}, La/b/b;->indexOf(Ljava/lang/Object;)I
@@ -144,7 +135,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "not a map"
@@ -157,7 +147,6 @@
 .method protected c()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/b$a;->d:La/b/b;
 
     iget v0, v0, La/b/b;->c:I

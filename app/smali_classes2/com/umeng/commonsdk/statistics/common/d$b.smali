@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/commonsdk/statistics/common/d$b;
 .super Ljava/lang/Object;
-.source "StoreHelper.java"
 
 
 # annotations

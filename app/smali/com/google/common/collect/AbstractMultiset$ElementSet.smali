@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/AbstractMultiset$ElementSet;
 .super Lcom/google/common/collect/Multisets$ElementSet;
-.source "AbstractMultiset.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/collect/AbstractMultiset;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultiset$ElementSet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$ElementSet;-><init>()V
@@ -49,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultiset$ElementSet;->this$0:Lcom/google/common/collect/AbstractMultiset;
 
     return-object v0

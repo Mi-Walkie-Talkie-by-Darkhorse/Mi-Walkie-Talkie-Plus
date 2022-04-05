@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 .super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
-.source "ActivateDeviceActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -50,10 +49,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;-><init>(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;)V
@@ -66,7 +63,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->x()V
 
     return-void
@@ -75,7 +71,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->w()V
 
     return-void
@@ -86,19 +81,16 @@
 
     const v0, 0x7f080191
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
     const v0, 0x7f110027
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(Ljava/lang/String;)V
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$f;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$f;-><init>(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;)V
@@ -109,7 +101,6 @@
 
     const/4 v0, 0x1
 
-    .line 4
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->a(Z)V
 
     return-void
@@ -118,7 +109,6 @@
 .method private x()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result v0
@@ -137,19 +127,16 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/i/g0;->c()V
 
     goto :goto_0
 
-    .line 3
     :cond_1
     invoke-static {}, Lcom/ifengyu/intercom/i/h0;->c()V
 
     goto :goto_0
 
-    .line 4
     :cond_2
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
@@ -166,7 +153,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -181,13 +167,11 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mCheckbox:Landroidx/appcompat/widget/AppCompatCheckBox;
 
@@ -201,7 +185,6 @@
 
     const p1, 0x7f1100f0
 
-    .line 4
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -210,14 +193,12 @@
 
     invoke-virtual {p0, v0, v0, p1, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(ZZLjava/lang/String;I)V
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->q:Ljava/lang/Runnable;
 
     const-wide/16 v0, 0x1388
 
     invoke-static {p1, v0, v1}, Lcom/ifengyu/intercom/i/k0;->a(Ljava/lang/Runnable;J)V
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->x()V
 
     goto :goto_0
@@ -225,7 +206,6 @@
     :cond_2
     const p1, 0x7f11033b
 
-    .line 7
     invoke-virtual {p0, p1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -239,30 +219,24 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c001e
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->setContentView(I)V
 
-    .line 3
     invoke-static {p0}, Lbutterknife/ButterKnife;->bind(Landroid/app/Activity;)Lbutterknife/Unbinder;
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mTitleBarLeft:Landroid/widget/ImageView;
 
     const/16 v0, 0x8
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mTitleBarRight:Landroid/widget/ImageView;
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mTitleBarTitle:Landroid/widget/TextView;
 
     const v0, 0x7f11010a
@@ -273,14 +247,12 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mCheckbox:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mBtnActivate:Landroid/widget/Button;
 
     invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -295,17 +267,14 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setTextColor(I)V
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mBtnActivate:Landroid/widget/Button;
 
     invoke-virtual {p1, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mBtnCancel:Landroid/widget/Button;
 
     invoke-virtual {p1, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 11
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mCheckbox:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$a;
@@ -324,10 +293,8 @@
 
     const-string v1, "onDestroy"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onDestroy()V
 
     return-void
@@ -340,13 +307,10 @@
 
     const-string v1, "onPause"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onPause()V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
@@ -359,17 +323,14 @@
 .method protected onResume()V
     .locals 2
 
-    .line 1
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onResume()V
 
     const-string v0, "ActivateDeviceActivity"
 
     const-string v1, "onResume"
 
-    .line 2
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
@@ -384,7 +345,6 @@
     .annotation runtime Lcom/squareup/otto/Subscribe;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$c;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$c;-><init>(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;)V
@@ -399,7 +359,6 @@
     .annotation runtime Lcom/squareup/otto/Subscribe;
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$d;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$d;-><init>(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;)V
@@ -414,7 +373,6 @@
     .annotation runtime Lcom/squareup/otto/Subscribe;
     .end annotation
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$e;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$e;-><init>(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;)V

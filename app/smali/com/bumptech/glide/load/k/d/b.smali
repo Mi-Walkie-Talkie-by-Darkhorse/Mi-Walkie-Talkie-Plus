@@ -1,6 +1,5 @@
 .class public abstract Lcom/bumptech/glide/load/k/d/b;
 .super Ljava/lang/Object;
-.source "DrawableResource.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/s;
@@ -40,10 +39,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, Landroid/graphics/drawable/Drawable;
@@ -66,7 +63,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/k/d/b;->a:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
@@ -75,12 +71,10 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/load/k/d/b;->a:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable$ConstantState;->newDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -94,7 +88,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/bumptech/glide/load/k/d/b;->get()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -105,14 +98,12 @@
 .method public initialize()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/k/d/b;->a:Landroid/graphics/drawable/Drawable;
 
     instance-of v1, v0, Landroid/graphics/drawable/BitmapDrawable;
 
     if-eqz v1, :cond_0
 
-    .line 2
     check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
@@ -123,13 +114,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     instance-of v1, v0, Lcom/bumptech/glide/load/k/f/c;
 
     if-eqz v1, :cond_1
 
-    .line 4
     check-cast v0, Lcom/bumptech/glide/load/k/f/c;
 
     invoke-virtual {v0}, Lcom/bumptech/glide/load/k/f/c;->c()Landroid/graphics/Bitmap;

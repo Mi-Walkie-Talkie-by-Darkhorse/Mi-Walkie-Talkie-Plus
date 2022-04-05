@@ -1,6 +1,5 @@
 .class Lcom/google/protobuf/LiteralByteString;
 .super Lcom/google/protobuf/ByteString;
-.source "LiteralByteString.java"
 
 
 # annotations
@@ -21,15 +20,12 @@
 .method constructor <init>([B)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/ByteString;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/google/protobuf/LiteralByteString;->hash:I
 
-    .line 3
     iput-object p1, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     return-void
@@ -47,7 +43,6 @@
 
     mul-int/lit8 p0, p0, 0x1f
 
-    .line 5
     aget-byte v1, p1, v0
 
     add-int/2addr p0, v1
@@ -63,7 +58,6 @@
 .method static hashCode([B)I
     .locals 3
 
-    .line 6
     array-length v0, p0
 
     array-length v1, p0
@@ -87,7 +81,6 @@
 .method public asReadOnlyByteBuffer()Ljava/nio/ByteBuffer;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->getOffsetIntoBytes()I
@@ -102,7 +95,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->asReadOnlyBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v0
@@ -121,14 +113,12 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x1
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->asReadOnlyByteBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v1
@@ -141,7 +131,6 @@
 .method public byteAt(I)B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     aget-byte p1, v0, p1
@@ -152,7 +141,6 @@
 .method public copyTo(Ljava/nio/ByteBuffer;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->getOffsetIntoBytes()I
@@ -171,7 +159,6 @@
 .method protected copyToInternal([BIII)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     invoke-static {v0, p2, p1, p3, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
@@ -188,7 +175,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/google/protobuf/ByteString;
 
@@ -198,7 +184,6 @@
 
     return v2
 
-    .line 2
     :cond_1
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->size()I
 
@@ -216,7 +201,6 @@
 
     return v2
 
-    .line 3
     :cond_2
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->size()I
 
@@ -226,13 +210,11 @@
 
     return v0
 
-    .line 4
     :cond_3
     instance-of v0, p1, Lcom/google/protobuf/LiteralByteString;
 
     if-eqz v0, :cond_4
 
-    .line 5
     check-cast p1, Lcom/google/protobuf/LiteralByteString;
 
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->size()I
@@ -245,20 +227,17 @@
 
     return p1
 
-    .line 6
     :cond_4
     instance-of v0, p1, Lcom/google/protobuf/RopeByteString;
 
     if-eqz v0, :cond_5
 
-    .line 7
     invoke-virtual {p1, p0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     return p1
 
-    .line 8
     :cond_5
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -302,7 +281,6 @@
 .method equalsRange(Lcom/google/protobuf/LiteralByteString;II)Z
     .locals 4
 
-    .line 1
     invoke-virtual {p1}, Lcom/google/protobuf/LiteralByteString;->size()I
 
     move-result v0
@@ -311,27 +289,22 @@
 
     add-int v0, p2, p3
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/protobuf/LiteralByteString;->size()I
 
     move-result v1
 
     if-gt v0, v1, :cond_2
 
-    .line 3
     iget-object v0, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
-    .line 4
     iget-object v1, p1, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->getOffsetIntoBytes()I
 
     move-result v2
 
     add-int/2addr v2, p3
 
-    .line 6
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->getOffsetIntoBytes()I
 
     move-result p3
@@ -345,7 +318,6 @@
     :goto_0
     if-ge p3, v2, :cond_1
 
-    .line 7
     aget-byte p2, v0, p3
 
     aget-byte v3, v1, p1
@@ -368,7 +340,6 @@
 
     return p1
 
-    .line 8
     :cond_2
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -406,7 +377,6 @@
 
     throw v0
 
-    .line 9
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -456,19 +426,16 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/LiteralByteString;->hash:I
 
     if-nez v0, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->size()I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    .line 3
     invoke-virtual {p0, v0, v1, v0}, Lcom/google/protobuf/LiteralByteString;->partialHash(III)I
 
     move-result v0
@@ -477,7 +444,6 @@
 
     const/4 v0, 0x1
 
-    .line 4
     :cond_0
     iput v0, p0, Lcom/google/protobuf/LiteralByteString;->hash:I
 
@@ -496,12 +462,10 @@
 .method public isValidUtf8()Z
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->getOffsetIntoBytes()I
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->size()I
@@ -520,7 +484,6 @@
 .method public iterator()Lcom/google/protobuf/ByteString$ByteIterator;
     .locals 2
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/LiteralByteString$LiteralByteIterator;
 
     const/4 v1, 0x0
@@ -533,7 +496,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->iterator()Lcom/google/protobuf/ByteString$ByteIterator;
 
     move-result-object v0
@@ -544,7 +506,6 @@
 .method public newCodedInput()Lcom/google/protobuf/CodedInputStream;
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/google/protobuf/CodedInputStream;->newInstance(Lcom/google/protobuf/LiteralByteString;)Lcom/google/protobuf/CodedInputStream;
 
     move-result-object v0
@@ -555,7 +516,6 @@
 .method public newInput()Ljava/io/InputStream;
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
     iget-object v1, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
@@ -576,7 +536,6 @@
 .method protected partialHash(III)I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->getOffsetIntoBytes()I
@@ -595,14 +554,12 @@
 .method protected partialIsValidUtf8(III)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->getOffsetIntoBytes()I
 
     move-result v0
 
     add-int/2addr v0, p2
 
-    .line 2
     iget-object p2, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     add-int/2addr p3, v0
@@ -617,7 +574,6 @@
 .method protected peekCachedHashCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/LiteralByteString;->hash:I
 
     return v0
@@ -626,7 +582,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     array-length v0, v0
@@ -639,7 +594,6 @@
 
     if-ltz p1, :cond_3
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->size()I
 
     move-result v0
@@ -652,12 +606,10 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     sget-object p1, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance p2, Lcom/google/protobuf/BoundedByteString;
 
@@ -676,7 +628,6 @@
     :goto_0
     return-object p1
 
-    .line 4
     :cond_1
     new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -706,7 +657,6 @@
 
     throw v0
 
-    .line 5
     :cond_2
     new-instance p1, Ljava/lang/IndexOutOfBoundsException;
 
@@ -740,7 +690,6 @@
 
     throw p1
 
-    .line 6
     :cond_3
     new-instance p2, Ljava/lang/IndexOutOfBoundsException;
 
@@ -777,7 +726,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/String;
 
     iget-object v1, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
@@ -803,7 +751,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->toByteArray()[B
 
     move-result-object v0
@@ -821,7 +768,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/LiteralByteString;->bytes:[B
 
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString;->getOffsetIntoBytes()I

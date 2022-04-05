@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/e/a/d$c;
 .super Landroid/os/Handler;
-.source "ClusterOverlay.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/e/a/d;Landroid/os/Looper;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/a/d$c;->a:Lcom/ifengyu/intercom/ui/map/e/a/d;
 
-    .line 2
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -36,7 +33,6 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
 
-    .line 1
     iget v0, p1, Landroid/os/Message;->what:I
 
     if-eqz v0, :cond_3
@@ -47,13 +43,11 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast p1, Lcom/ifengyu/intercom/ui/map/e/a/c;
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/a/d$c;->a:Lcom/ifengyu/intercom/ui/map/e/a/d;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/e/a/d;->b(Lcom/ifengyu/intercom/ui/map/e/a/d;)Ljava/util/List;
@@ -77,7 +71,6 @@
 
     check-cast v1, Lcom/ifengyu/intercom/ui/map/e/a/c;
 
-    .line 4
     invoke-interface {v1}, Lcom/ifengyu/intercom/ui/map/e/a/c;->a()Ljava/lang/String;
 
     move-result-object v2
@@ -92,7 +85,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/a/d$c;->a:Lcom/ifengyu/intercom/ui/map/e/a/d;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/e/a/d;->b(Lcom/ifengyu/intercom/ui/map/e/a/d;)Ljava/util/List;
@@ -101,7 +93,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
-    .line 6
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/a/d$c;->a:Lcom/ifengyu/intercom/ui/map/e/a/d;
 
@@ -111,14 +102,12 @@
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/a/d$c;->a:Lcom/ifengyu/intercom/ui/map/e/a/d;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/map/e/a/d;->a(Lcom/ifengyu/intercom/ui/map/e/a/d;)V
 
     goto :goto_0
 
-    .line 8
     :cond_3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/a/d$c;->a:Lcom/ifengyu/intercom/ui/map/e/a/d;
 

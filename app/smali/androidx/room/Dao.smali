@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Dao;
 .super Ljava/lang/Object;
-.source "Dao.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

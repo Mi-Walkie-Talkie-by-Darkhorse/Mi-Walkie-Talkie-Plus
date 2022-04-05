@@ -1,6 +1,5 @@
 .class public final Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;
 .super Ljava/lang/Object;
-.source "ImageSizeUtils.java"
 
 
 # static fields
@@ -21,10 +20,8 @@
 
     const/16 v2, 0xd33
 
-    .line 1
     invoke-static {v2, v0, v1}, Landroid/opengl/GLES10;->glGetIntegerv(I[II)V
 
-    .line 2
     aget v0, v0, v1
 
     const/16 v1, 0x800
@@ -33,7 +30,6 @@
 
     move-result v0
 
-    .line 3
     new-instance v1, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-direct {v1, v0, v0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;-><init>(II)V
@@ -46,7 +42,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -55,27 +50,22 @@
 .method public static computeImageSampleSize(Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;Z)I
     .locals 6
 
-    .line 1
     invoke-virtual {p0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getWidth()I
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getHeight()I
 
     move-result p0
 
-    .line 3
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getWidth()I
 
     move-result v1
 
-    .line 4
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getHeight()I
 
     move-result p1
 
-    .line 5
     sget-object v2, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils$1;->$SwitchMap$com$nostra13$universalimageloader$core$assist$ViewScaleType:[I
 
     invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
@@ -99,15 +89,12 @@
     :cond_0
     if-eqz p3, :cond_1
 
-    .line 6
     div-int/lit8 p2, v0, 0x2
 
-    .line 7
     div-int/lit8 v3, p0, 0x2
 
     const/4 v4, 0x1
 
-    .line 8
     :goto_0
     div-int v5, p2, v4
 
@@ -121,7 +108,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     div-int p2, v0, v1
 
@@ -136,15 +122,12 @@
     :cond_2
     if-eqz p3, :cond_4
 
-    .line 10
     div-int/lit8 p2, v0, 0x2
 
-    .line 11
     div-int/lit8 v3, p0, 0x2
 
     const/4 v4, 0x1
 
-    .line 12
     :goto_1
     div-int v5, p2, v4
 
@@ -159,7 +142,6 @@
 
     goto :goto_1
 
-    .line 13
     :cond_4
     div-int p2, v0, v1
 
@@ -178,7 +160,6 @@
     :cond_6
     move v2, v4
 
-    .line 14
     :goto_3
     invoke-static {v0, p0, v2, p3}, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->considerMaxTextureSize(IIIZ)I
 
@@ -190,22 +171,18 @@
 .method public static computeImageScale(Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;Z)F
     .locals 7
 
-    .line 1
     invoke-virtual {p0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getWidth()I
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getHeight()I
 
     move-result p0
 
-    .line 3
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getWidth()I
 
     move-result v1
 
-    .line 4
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getHeight()I
 
     move-result p1
@@ -222,7 +199,6 @@
 
     div-float v5, v4, v5
 
-    .line 5
     sget-object v6, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->FIT_INSIDE:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     if-ne p2, v6, :cond_0
@@ -280,24 +256,20 @@
 .method public static computeMinImageSampleSize(Lcom/nostra13/universalimageloader/core/assist/ImageSize;)I
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getWidth()I
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getHeight()I
 
     move-result p0
 
-    .line 3
     sget-object v1, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->maxBitmapSize:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getWidth()I
 
     move-result v1
 
-    .line 4
     sget-object v2, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->maxBitmapSize:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {v2}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getHeight()I
@@ -312,7 +284,6 @@
 
     float-to-double v0, v0
 
-    .line 5
     invoke-static {v0, v1}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v0
@@ -327,14 +298,12 @@
 
     float-to-double v1, p0
 
-    .line 6
     invoke-static {v1, v2}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v1
 
     double-to-int p0, v1
 
-    .line 7
     invoke-static {v0, p0}, Ljava/lang/Math;->max(II)I
 
     move-result p0
@@ -345,21 +314,18 @@
 .method private static considerMaxTextureSize(IIIZ)I
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->maxBitmapSize:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getWidth()I
 
     move-result v0
 
-    .line 2
     sget-object v1, Lcom/nostra13/universalimageloader/utils/ImageSizeUtils;->maxBitmapSize:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getHeight()I
 
     move-result v1
 
-    .line 3
     :goto_0
     div-int v2, p0, p2
 
@@ -391,19 +357,16 @@
 .method public static defineTargetSizeForView(Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;Lcom/nostra13/universalimageloader/core/assist/ImageSize;)Lcom/nostra13/universalimageloader/core/assist/ImageSize;
     .locals 1
 
-    .line 1
     invoke-interface {p0}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->getWidth()I
 
     move-result v0
 
     if-gtz v0, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getWidth()I
 
     move-result v0
 
-    .line 3
     :cond_0
     invoke-interface {p0}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->getHeight()I
 
@@ -411,12 +374,10 @@
 
     if-gtz p0, :cond_1
 
-    .line 4
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->getHeight()I
 
     move-result p0
 
-    .line 5
     :cond_1
     new-instance p1, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 

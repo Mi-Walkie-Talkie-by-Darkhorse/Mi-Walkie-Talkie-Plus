@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/DiscreteDomain;
 .super Ljava/lang/Object;
-.source "DiscreteDomain.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;->access$200()Lcom/google/common/collect/DiscreteDomain$BigIntegerDomain;
 
     move-result-object v0
@@ -68,7 +65,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/DiscreteDomain$IntegerDomain;->access$000()Lcom/google/common/collect/DiscreteDomain$IntegerDomain;
 
     move-result-object v0
@@ -87,7 +83,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/DiscreteDomain$LongDomain;->access$100()Lcom/google/common/collect/DiscreteDomain$LongDomain;
 
     move-result-object v0
@@ -113,7 +108,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
@@ -129,7 +123,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V

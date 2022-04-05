@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/k/f/a;
 .super Ljava/lang/Object;
-.source "ByteBufferGifDecoder.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/f;
@@ -55,14 +54,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/k/f/a$a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/k/f/a$a;-><init>()V
 
     sput-object v0, Lcom/bumptech/glide/load/k/f/a;->f:Lcom/bumptech/glide/load/k/f/a$a;
 
-    .line 2
     new-instance v0, Lcom/bumptech/glide/load/k/f/a$b;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/k/f/a$b;-><init>()V
@@ -87,7 +84,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v5, Lcom/bumptech/glide/load/k/f/a;->g:Lcom/bumptech/glide/load/k/f/a$b;
 
     sget-object v6, Lcom/bumptech/glide/load/k/f/a;->f:Lcom/bumptech/glide/load/k/f/a$a;
@@ -127,30 +123,24 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/bumptech/glide/load/k/f/a;->a:Landroid/content/Context;
 
-    .line 4
     iput-object p2, p0, Lcom/bumptech/glide/load/k/f/a;->b:Ljava/util/List;
 
-    .line 5
     iput-object p6, p0, Lcom/bumptech/glide/load/k/f/a;->d:Lcom/bumptech/glide/load/k/f/a$a;
 
-    .line 6
     new-instance p1, Lcom/bumptech/glide/load/k/f/b;
 
     invoke-direct {p1, p3, p4}, Lcom/bumptech/glide/load/k/f/b;-><init>(Lcom/bumptech/glide/load/engine/x/e;Lcom/bumptech/glide/load/engine/x/b;)V
 
     iput-object p1, p0, Lcom/bumptech/glide/load/k/f/a;->e:Lcom/bumptech/glide/load/k/f/b;
 
-    .line 7
     iput-object p5, p0, Lcom/bumptech/glide/load/k/f/a;->c:Lcom/bumptech/glide/load/k/f/a$b;
 
     return-void
@@ -159,21 +149,18 @@
 .method private static a(Lcom/bumptech/glide/gifdecoder/b;II)I
     .locals 4
 
-    .line 29
     invoke-virtual {p0}, Lcom/bumptech/glide/gifdecoder/b;->a()I
 
     move-result v0
 
     div-int/2addr v0, p2
 
-    .line 30
     invoke-virtual {p0}, Lcom/bumptech/glide/gifdecoder/b;->d()I
 
     move-result v1
 
     div-int/2addr v1, p1
 
-    .line 31
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
     move-result v0
@@ -184,7 +171,6 @@
 
     goto :goto_0
 
-    .line 32
     :cond_0
     invoke-static {v0}, Ljava/lang/Integer;->highestOneBit(I)I
 
@@ -193,7 +179,6 @@
     :goto_0
     const/4 v1, 0x1
 
-    .line 33
     invoke-static {v1, v0}, Ljava/lang/Math;->max(II)I
 
     move-result v0
@@ -202,7 +187,6 @@
 
     const-string v3, "BufferGifDecoder"
 
-    .line 34
     invoke-static {v3, v2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v2
@@ -211,7 +195,6 @@
 
     if-le v0, v1, :cond_1
 
-    .line 35
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -238,7 +221,6 @@
 
     invoke-virtual {v1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 36
     invoke-virtual {p0}, Lcom/bumptech/glide/gifdecoder/b;->d()I
 
     move-result p2
@@ -261,7 +243,6 @@
 
     move-result-object p0
 
-    .line 37
     invoke-static {v3, p0}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
@@ -279,20 +260,17 @@
 
     const-string v3, "BufferGifDecoder"
 
-    .line 8
     invoke-static {}, Lcom/bumptech/glide/util/e;->a()J
 
     move-result-wide v4
 
     const/4 v6, 0x2
 
-    .line 9
     :try_start_0
     invoke-virtual/range {p4 .. p4}, Lcom/bumptech/glide/gifdecoder/c;->b()Lcom/bumptech/glide/gifdecoder/b;
 
     move-result-object v0
 
-    .line 10
     invoke-virtual {v0}, Lcom/bumptech/glide/gifdecoder/b;->b()I
 
     move-result v7
@@ -309,7 +287,6 @@
 
     goto/16 :goto_1
 
-    .line 11
     :cond_0
     sget-object v7, Lcom/bumptech/glide/load/k/f/i;->a:Lcom/bumptech/glide/load/d;
 
@@ -323,7 +300,6 @@
 
     if-ne v7, v9, :cond_1
 
-    .line 12
     sget-object v7, Landroid/graphics/Bitmap$Config;->RGB_565:Landroid/graphics/Bitmap$Config;
 
     goto :goto_0
@@ -336,12 +312,10 @@
 
     move/from16 v14, p3
 
-    .line 13
     invoke-static {v0, v13, v14}, Lcom/bumptech/glide/load/k/f/a;->a(Lcom/bumptech/glide/gifdecoder/b;II)I
 
     move-result v9
 
-    .line 14
     iget-object v10, v1, Lcom/bumptech/glide/load/k/f/a;->d:Lcom/bumptech/glide/load/k/f/a$a;
 
     iget-object v11, v1, Lcom/bumptech/glide/load/k/f/a;->e:Lcom/bumptech/glide/load/k/f/b;
@@ -352,13 +326,10 @@
 
     move-result-object v11
 
-    .line 15
     invoke-interface {v11, v7}, Lcom/bumptech/glide/gifdecoder/GifDecoder;->a(Landroid/graphics/Bitmap$Config;)V
 
-    .line 16
     invoke-interface {v11}, Lcom/bumptech/glide/gifdecoder/GifDecoder;->b()V
 
-    .line 17
     invoke-interface {v11}, Lcom/bumptech/glide/gifdecoder/GifDecoder;->a()Landroid/graphics/Bitmap;
 
     move-result-object v15
@@ -367,14 +338,12 @@
 
     if-nez v15, :cond_3
 
-    .line 18
     invoke-static {v3, v6}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 19
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -396,14 +365,12 @@
     :cond_2
     return-object v8
 
-    .line 20
     :cond_3
     :try_start_1
     invoke-static {}, Lcom/bumptech/glide/load/k/b;->a()Lcom/bumptech/glide/load/k/b;
 
     move-result-object v12
 
-    .line 21
     new-instance v0, Lcom/bumptech/glide/load/k/f/c;
 
     iget-object v10, v1, Lcom/bumptech/glide/load/k/f/a;->a:Landroid/content/Context;
@@ -416,21 +383,18 @@
 
     invoke-direct/range {v9 .. v15}, Lcom/bumptech/glide/load/k/f/c;-><init>(Landroid/content/Context;Lcom/bumptech/glide/gifdecoder/GifDecoder;Lcom/bumptech/glide/load/h;IILandroid/graphics/Bitmap;)V
 
-    .line 22
     new-instance v7, Lcom/bumptech/glide/load/k/f/e;
 
     invoke-direct {v7, v0}, Lcom/bumptech/glide/load/k/f/e;-><init>(Lcom/bumptech/glide/load/k/f/c;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 23
     invoke-static {v3, v6}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 24
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -452,7 +416,6 @@
     :cond_4
     return-object v7
 
-    .line 25
     :cond_5
     :goto_1
     invoke-static {v3, v6}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
@@ -461,7 +424,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 26
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -486,14 +448,12 @@
     :catchall_0
     move-exception v0
 
-    .line 27
     invoke-static {v3, v6}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v6
 
     if-eqz v6, :cond_7
 
-    .line 28
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -534,7 +494,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/k/f/a;->a(Ljava/nio/ByteBuffer;IILcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/k/f/e;
@@ -555,7 +514,6 @@
         .end annotation
     .end param
 
-    .line 5
     iget-object v0, p0, Lcom/bumptech/glide/load/k/f/a;->c:Lcom/bumptech/glide/load/k/f/a$b;
 
     invoke-virtual {v0, p1}, Lcom/bumptech/glide/load/k/f/a$b;->a(Ljava/nio/ByteBuffer;)Lcom/bumptech/glide/gifdecoder/c;
@@ -574,7 +532,6 @@
 
     move-object v6, p4
 
-    .line 6
     :try_start_0
     invoke-direct/range {v1 .. v6}, Lcom/bumptech/glide/load/k/f/a;->a(Ljava/nio/ByteBuffer;IILcom/bumptech/glide/gifdecoder/c;Lcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/k/f/e;
 
@@ -582,7 +539,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
     iget-object p2, p0, Lcom/bumptech/glide/load/k/f/a;->c:Lcom/bumptech/glide/load/k/f/a$b;
 
     invoke-virtual {p2, v0}, Lcom/bumptech/glide/load/k/f/a$b;->a(Lcom/bumptech/glide/gifdecoder/c;)V
@@ -615,7 +571,6 @@
         }
     .end annotation
 
-    .line 2
     check-cast p1, Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, p1, p2}, Lcom/bumptech/glide/load/k/f/a;->a(Ljava/nio/ByteBuffer;Lcom/bumptech/glide/load/e;)Z
@@ -641,7 +596,6 @@
         }
     .end annotation
 
-    .line 3
     sget-object v0, Lcom/bumptech/glide/load/k/f/i;->b:Lcom/bumptech/glide/load/d;
 
     invoke-virtual {p2, v0}, Lcom/bumptech/glide/load/e;->a(Lcom/bumptech/glide/load/d;)Ljava/lang/Object;
@@ -658,7 +612,6 @@
 
     iget-object p2, p0, Lcom/bumptech/glide/load/k/f/a;->b:Ljava/util/List;
 
-    .line 4
     invoke-static {p2, p1}, Lcom/bumptech/glide/load/b;->a(Ljava/util/List;Ljava/nio/ByteBuffer;)Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;
 
     move-result-object p1

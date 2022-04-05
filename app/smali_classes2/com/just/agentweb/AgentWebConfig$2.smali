@@ -1,6 +1,5 @@
 .class final Lcom/just/agentweb/AgentWebConfig$2;
 .super Ljava/lang/Object;
-.source "AgentWebConfig.java"
 
 # interfaces
 .implements Landroid/webkit/ValueCallback;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public onReceiveValue(Ljava/lang/Boolean;)V
     .locals 3
 
-    .line 2
     invoke-static {}, Lcom/just/agentweb/AgentWebConfig;->access$000()Ljava/lang/String;
 
     move-result-object v0
@@ -68,7 +65,6 @@
 .method public bridge synthetic onReceiveValue(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p0, p1}, Lcom/just/agentweb/AgentWebConfig$2;->onReceiveValue(Ljava/lang/Boolean;)V

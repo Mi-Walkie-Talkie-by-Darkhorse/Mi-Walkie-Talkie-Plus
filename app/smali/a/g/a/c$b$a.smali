@@ -1,6 +1,5 @@
 .class public La/g/a/c$b$a;
 .super Ljava/lang/Object;
-.source "SupportSQLiteOpenHelper.java"
 
 
 # annotations
@@ -30,10 +29,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, La/g/a/c$b$a;->a:Landroid/content/Context;
 
     return-void
@@ -48,7 +45,6 @@
         .end annotation
     .end param
 
-    .line 7
     iput-object p1, p0, La/g/a/c$b$a;->c:La/g/a/c$a;
 
     return-object p0
@@ -61,7 +57,6 @@
         .end annotation
     .end param
 
-    .line 6
     iput-object p1, p0, La/g/a/c$b$a;->b:Ljava/lang/String;
 
     return-object p0
@@ -70,17 +65,14 @@
 .method public a()La/g/a/c$b;
     .locals 4
 
-    .line 1
     iget-object v0, p0, La/g/a/c$b$a;->c:La/g/a/c$a;
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v1, p0, La/g/a/c$b$a;->a:Landroid/content/Context;
 
     if-eqz v1, :cond_0
 
-    .line 3
     new-instance v2, La/g/a/c$b;
 
     iget-object v3, p0, La/g/a/c$b$a;->b:Ljava/lang/String;
@@ -89,7 +81,6 @@
 
     return-object v2
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -99,7 +90,6 @@
 
     throw v0
 
-    .line 5
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

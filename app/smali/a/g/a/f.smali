@@ -1,6 +1,5 @@
 .class public interface abstract La/g/a/f;
 .super Ljava/lang/Object;
-.source "SupportSQLiteStatement.java"
 
 # interfaces
 .implements La/g/a/d;

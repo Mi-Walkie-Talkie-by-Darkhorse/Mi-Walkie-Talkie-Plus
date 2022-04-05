@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/AbstractIdleService$1;
 .super Ljava/lang/Object;
-.source "AbstractIdleService.java"
 
 # interfaces
 .implements Lcom/google/common/base/Supplier;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/AbstractIdleService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/AbstractIdleService$1;->this$0:Lcom/google/common/util/concurrent/AbstractIdleService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractIdleService$1;->get()Ljava/lang/String;
 
     move-result-object v0
@@ -58,7 +55,6 @@
 .method public get()Ljava/lang/String;
     .locals 5
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractIdleService$1;->this$0:Lcom/google/common/util/concurrent/AbstractIdleService;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/AbstractIdleService;->serviceName()Ljava/lang/String;

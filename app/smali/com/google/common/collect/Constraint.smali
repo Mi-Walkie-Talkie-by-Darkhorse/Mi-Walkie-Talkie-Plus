@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/common/collect/Constraint;
 .super Ljava/lang/Object;
-.source "Constraint.java"
 
 
 # annotations

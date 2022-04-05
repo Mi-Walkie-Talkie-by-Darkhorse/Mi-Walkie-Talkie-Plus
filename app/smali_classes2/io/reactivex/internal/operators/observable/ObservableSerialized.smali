@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableSerialized;
 .super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
-.source "ObservableSerialized.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
 
     return-void
@@ -44,7 +42,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     new-instance v1, Lio/reactivex/observers/SerializedObserver;

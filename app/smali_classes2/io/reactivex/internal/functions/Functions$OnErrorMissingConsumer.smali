@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/functions/Functions$OnErrorMissingConsumer;
 .super Ljava/lang/Object;
-.source "Functions.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +44,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/functions/Functions$OnErrorMissingConsumer;->accept(Ljava/lang/Throwable;)V
@@ -57,7 +54,6 @@
 .method public accept(Ljava/lang/Throwable;)V
     .locals 1
 
-    .line 2
     new-instance v0, Lio/reactivex/exceptions/OnErrorNotImplementedException;
 
     invoke-direct {v0, p1}, Lio/reactivex/exceptions/OnErrorNotImplementedException;-><init>(Ljava/lang/Throwable;)V

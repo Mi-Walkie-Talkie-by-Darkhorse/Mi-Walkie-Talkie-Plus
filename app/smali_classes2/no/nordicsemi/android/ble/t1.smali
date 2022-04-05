@@ -1,6 +1,5 @@
 .class public abstract Lno/nordicsemi/android/ble/t1;
 .super Lno/nordicsemi/android/ble/q2;
-.source "AwaitingRequest.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/t1;->s:Lno/nordicsemi/android/ble/Request;
 
     return-object v0
@@ -36,7 +34,6 @@
 .method i()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lno/nordicsemi/android/ble/t1;->t:I
 
     const v1, -0x1e23f
@@ -57,7 +54,6 @@
 .method j()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lno/nordicsemi/android/ble/t1;->t:I
 
     const v1, -0x1e240

@@ -1,6 +1,5 @@
 .class public Landroidx/lifecycle/a0;
 .super Ljava/lang/Object;
-.source "ViewTreeLifecycleOwner.java"
 
 
 # direct methods
@@ -15,7 +14,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroidx/lifecycle/runtime/R$id;->view_tree_lifecycle_owner:I
 
     invoke-virtual {p0, v0, p1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V

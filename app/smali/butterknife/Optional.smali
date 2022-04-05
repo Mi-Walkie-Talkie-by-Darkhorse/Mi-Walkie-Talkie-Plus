@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/Optional;
 .super Ljava/lang/Object;
-.source "Optional.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

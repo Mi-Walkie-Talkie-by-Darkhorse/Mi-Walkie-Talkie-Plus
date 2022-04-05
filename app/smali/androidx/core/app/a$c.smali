@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/app/a$c;
 .super Ljava/lang/Object;
-.source "ActivityCompat.java"
 
 
 # annotations

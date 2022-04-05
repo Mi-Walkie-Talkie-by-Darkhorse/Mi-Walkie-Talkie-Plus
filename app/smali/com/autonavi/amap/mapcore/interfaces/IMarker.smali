@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IMarker;
 .super Ljava/lang/Object;
-.source "IMarker.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/interfaces/IOverlayImage;

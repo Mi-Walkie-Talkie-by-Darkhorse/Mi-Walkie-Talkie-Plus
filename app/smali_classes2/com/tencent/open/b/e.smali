@@ -1,13 +1,11 @@
 .class public Lcom/tencent/open/b/e;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # direct methods
 .method public static a()I
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -35,7 +33,6 @@
 .method public static a(Ljava/lang/String;)I
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v0

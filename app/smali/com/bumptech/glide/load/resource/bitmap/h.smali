@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/resource/bitmap/h;
 .super Lcom/bumptech/glide/load/resource/bitmap/e;
-.source "CenterInside.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/bumptech/glide/load/c;->a:Ljava/nio/charset/Charset;
 
     const-string v1, "com.bumptech.glide.load.resource.bitmap.CenterInside"
@@ -28,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/load/resource/bitmap/e;-><init>()V
 
     return-void
@@ -47,7 +44,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p1, p2, p3, p4}, Lcom/bumptech/glide/load/resource/bitmap/s;->b(Lcom/bumptech/glide/load/engine/x/e;Landroid/graphics/Bitmap;II)Landroid/graphics/Bitmap;
 
     move-result-object p1
@@ -62,7 +58,6 @@
         .end annotation
     .end param
 
-    .line 2
     sget-object v0, Lcom/bumptech/glide/load/resource/bitmap/h;->b:[B
 
     invoke-virtual {p1, v0}, Ljava/security/MessageDigest;->update([B)V
@@ -73,7 +68,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     instance-of p1, p1, Lcom/bumptech/glide/load/resource/bitmap/h;
 
     return p1

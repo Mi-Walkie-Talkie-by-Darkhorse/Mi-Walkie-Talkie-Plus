@@ -1,6 +1,5 @@
 .class public Landroidx/core/provider/FontsContractCompat$b;
 .super Ljava/lang/Object;
-.source "FontsContractCompat.java"
 
 
 # annotations
@@ -53,26 +52,20 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Landroidx/core/d/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, Landroid/net/Uri;
 
     iput-object p1, p0, Landroidx/core/provider/FontsContractCompat$b;->a:Landroid/net/Uri;
 
-    .line 3
     iput p2, p0, Landroidx/core/provider/FontsContractCompat$b;->b:I
 
-    .line 4
     iput p3, p0, Landroidx/core/provider/FontsContractCompat$b;->c:I
 
-    .line 5
     iput-boolean p4, p0, Landroidx/core/provider/FontsContractCompat$b;->d:Z
 
-    .line 6
     iput p5, p0, Landroidx/core/provider/FontsContractCompat$b;->e:I
 
     return-void
@@ -96,7 +89,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v6, Landroidx/core/provider/FontsContractCompat$b;
 
     move-object v0, v6
@@ -121,7 +113,6 @@
 .method public a()I
     .locals 1
 
-    .line 2
     iget v0, p0, Landroidx/core/provider/FontsContractCompat$b;->e:I
 
     return v0
@@ -133,7 +124,6 @@
         from = 0x0L
     .end annotation
 
-    .line 1
     iget v0, p0, Landroidx/core/provider/FontsContractCompat$b;->b:I
 
     return v0
@@ -144,7 +134,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/provider/FontsContractCompat$b;->a:Landroid/net/Uri;
 
     return-object v0
@@ -157,7 +146,6 @@
         to = 0x3e8L
     .end annotation
 
-    .line 1
     iget v0, p0, Landroidx/core/provider/FontsContractCompat$b;->c:I
 
     return v0
@@ -166,7 +154,6 @@
 .method public e()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/core/provider/FontsContractCompat$b;->d:Z
 
     return v0

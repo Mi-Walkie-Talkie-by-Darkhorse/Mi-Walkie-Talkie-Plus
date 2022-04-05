@@ -1,6 +1,5 @@
 .class final Lretrofit2/ParameterHandler$PartMap;
 .super Lretrofit2/ParameterHandler;
-.source "ParameterHandler.java"
 
 
 # annotations
@@ -56,13 +55,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lretrofit2/ParameterHandler;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lretrofit2/ParameterHandler$PartMap;->valueConverter:Lretrofit2/Converter;
 
-    .line 3
     iput-object p2, p0, Lretrofit2/ParameterHandler$PartMap;->transferEncoding:Ljava/lang/String;
 
     return-void
@@ -82,7 +78,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p2, Ljava/util/Map;
 
     invoke-virtual {p0, p1, p2}, Lretrofit2/ParameterHandler$PartMap;->apply(Lretrofit2/RequestBuilder;Ljava/util/Map;)V
@@ -114,7 +109,6 @@
 
     if-eqz p2, :cond_3
 
-    .line 2
     invoke-interface {p2}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p2
@@ -136,7 +130,6 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -145,7 +138,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 4
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
@@ -164,7 +156,6 @@
 
     const/4 v3, 0x1
 
-    .line 5
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -201,7 +192,6 @@
 
     move-result-object v1
 
-    .line 6
     iget-object v2, p0, Lretrofit2/ParameterHandler$PartMap;->valueConverter:Lretrofit2/Converter;
 
     invoke-interface {v2, v0}, Lretrofit2/Converter;->convert(Ljava/lang/Object;)Ljava/lang/Object;
@@ -214,7 +204,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -240,7 +229,6 @@
 
     throw p1
 
-    .line 8
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -253,7 +241,6 @@
     :cond_2
     return-void
 
-    .line 9
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

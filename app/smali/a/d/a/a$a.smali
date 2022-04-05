@@ -1,6 +1,5 @@
 .class La/d/a/a$a;
 .super Landroid/database/ContentObserver;
-.source "CursorAdapter.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method constructor <init>(La/d/a/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, La/d/a/a$a;->a:La/d/a/a;
 
-    .line 2
     new-instance p1, Landroid/os/Handler;
 
     invoke-direct {p1}, Landroid/os/Handler;-><init>()V
@@ -48,7 +45,6 @@
 .method public onChange(Z)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, La/d/a/a$a;->a:La/d/a/a;
 
     invoke-virtual {p1}, La/d/a/a;->b()V

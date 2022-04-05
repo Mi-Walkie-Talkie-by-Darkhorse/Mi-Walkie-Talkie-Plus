@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/functions/Functions$Array2Func;
 .super Ljava/lang/Object;
-.source "Functions.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;
@@ -56,10 +55,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/functions/Functions$Array2Func;->f:Lio/reactivex/functions/BiFunction;
 
     return-void
@@ -75,7 +72,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, [Ljava/lang/Object;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/functions/Functions$Array2Func;->apply([Ljava/lang/Object;)Ljava/lang/Object;
@@ -101,14 +97,12 @@
         }
     .end annotation
 
-    .line 2
     array-length v0, p1
 
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/functions/Functions$Array2Func;->f:Lio/reactivex/functions/BiFunction;
 
     const/4 v1, 0x0
@@ -125,7 +119,6 @@
 
     return-object p1
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;
 .super Ljava/lang/Object;
-.source "McuUpdateInfoModel.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -36,7 +35,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel$1;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel$1;-><init>()V
@@ -49,7 +47,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,45 +55,38 @@
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->versionCode:Ljava/lang/String;
 
-    .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->versionName:Ljava/lang/String;
 
-    .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->info:Ljava/lang/String;
 
-    .line 6
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->source:Ljava/lang/String;
 
-    .line 7
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->lang:Ljava/lang/String;
 
-    .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
@@ -119,7 +109,6 @@
 .method public getInfo()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->info:Ljava/lang/String;
 
     return-object v0
@@ -128,7 +117,6 @@
 .method public getLang()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->lang:Ljava/lang/String;
 
     return-object v0
@@ -137,7 +125,6 @@
 .method public getMD5()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->MD5:Ljava/lang/String;
 
     return-object v0
@@ -146,7 +133,6 @@
 .method public getSource()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->source:Ljava/lang/String;
 
     return-object v0
@@ -155,7 +141,6 @@
 .method public getVersionCode()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->versionCode:Ljava/lang/String;
 
     return-object v0
@@ -164,7 +149,6 @@
 .method public getVersionName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->versionName:Ljava/lang/String;
 
     return-object v0
@@ -173,7 +157,6 @@
 .method public setInfo(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->info:Ljava/lang/String;
 
     return-void
@@ -182,7 +165,6 @@
 .method public setLang(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->lang:Ljava/lang/String;
 
     return-void
@@ -191,7 +173,6 @@
 .method public setMD5(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->MD5:Ljava/lang/String;
 
     return-void
@@ -200,7 +181,6 @@
 .method public setSource(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->source:Ljava/lang/String;
 
     return-void
@@ -209,7 +189,6 @@
 .method public setVersionCode(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->versionCode:Ljava/lang/String;
 
     return-void
@@ -218,7 +197,6 @@
 .method public setVersionName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->versionName:Ljava/lang/String;
 
     return-void
@@ -227,7 +205,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -308,32 +285,26 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 1
     iget-object p2, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->versionCode:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 2
     iget-object p2, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->versionName:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 3
     iget-object p2, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->info:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 4
     iget-object p2, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->source:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 5
     iget-object p2, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->lang:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 6
     iget-object p2, p0, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->MD5:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V

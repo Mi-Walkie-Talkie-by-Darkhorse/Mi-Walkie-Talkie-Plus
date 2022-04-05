@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/k/d/a;
 .super Ljava/lang/Object;
-.source "DrawableDecoderCompat.java"
 
 
 # static fields
@@ -25,7 +24,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-static {p0, p0, p1, p2}, Lcom/bumptech/glide/load/k/d/a;->a(Landroid/content/Context;Landroid/content/Context;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
@@ -42,7 +40,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, p1, p2, v0}, Lcom/bumptech/glide/load/k/d/a;->a(Landroid/content/Context;Landroid/content/Context;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
@@ -61,13 +58,11 @@
         .end annotation
     .end param
 
-    .line 3
     :try_start_0
     sget-boolean v0, Lcom/bumptech/glide/load/k/d/a;->a:Z
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-static {p1, p2, p3}, Lcom/bumptech/glide/load/k/d/a;->c(Landroid/content/Context;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
@@ -86,7 +81,6 @@
     :catch_1
     move-exception p3
 
-    .line 5
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object p0
@@ -101,21 +95,18 @@
 
     if-nez p0, :cond_0
 
-    .line 6
     invoke-static {p1, p2}, Landroidx/core/content/b;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
 
     return-object p0
 
-    .line 7
     :cond_0
     throw p3
 
     :catch_2
     const/4 p0, 0x0
 
-    .line 8
     sput-boolean p0, Lcom/bumptech/glide/load/k/d/a;->a:Z
 
     :cond_1
@@ -124,7 +115,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_2
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
@@ -149,12 +139,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
 
-    .line 2
     invoke-static {p0, p1, p2}, Landroidx/core/content/res/e;->a(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
@@ -175,14 +163,12 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     new-instance v0, Landroidx/appcompat/c/d;
 
     invoke-direct {v0, p0, p2}, Landroidx/appcompat/c/d;-><init>(Landroid/content/Context;Landroid/content/res/Resources$Theme;)V
 
     move-object p0, v0
 
-    .line 2
     :cond_0
     invoke-static {p0, p1}, Landroidx/appcompat/a/a/a;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 

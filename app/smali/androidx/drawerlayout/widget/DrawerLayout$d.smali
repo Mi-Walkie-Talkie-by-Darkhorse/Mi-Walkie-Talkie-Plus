@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/drawerlayout/widget/DrawerLayout$d;
 .super Ljava/lang/Object;
-.source "DrawerLayout.java"
 
 
 # annotations

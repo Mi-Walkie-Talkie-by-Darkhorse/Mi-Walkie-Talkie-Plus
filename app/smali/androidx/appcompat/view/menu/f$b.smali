@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/appcompat/view/menu/f$b;
 .super Ljava/lang/Object;
-.source "MenuBuilder.java"
 
 
 # annotations

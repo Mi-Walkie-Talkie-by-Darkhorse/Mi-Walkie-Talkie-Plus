@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ec;
 .super Lcom/amap/api/col/l3/et;
-.source "NativeBufferPool.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/et;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
 .method private b(I)Lcom/amap/api/col/l3/ec$a;
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/et;->a:Lcom/amap/api/col/l3/es;
 
     check-cast v0, Lcom/amap/api/col/l3/ec$a;
@@ -45,23 +42,19 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/ec$a;
 
     invoke-direct {v0}, Lcom/amap/api/col/l3/ec$a;-><init>()V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v2, v0, Lcom/amap/api/col/l3/es;->f:Lcom/amap/api/col/l3/es;
 
     iput-object v2, p0, Lcom/amap/api/col/l3/et;->a:Lcom/amap/api/col/l3/es;
 
-    .line 4
     iput-object v1, v0, Lcom/amap/api/col/l3/es;->f:Lcom/amap/api/col/l3/es;
 
-    .line 5
     :goto_0
     iget v2, v0, Lcom/amap/api/col/l3/ec$a;->e:I
 
@@ -73,7 +66,6 @@
 
     const p1, 0x8000
 
-    .line 6
     :cond_1
     invoke-static {p1}, Ljava/nio/ByteBuffer;->allocateDirect(I)Ljava/nio/ByteBuffer;
 
@@ -97,7 +89,6 @@
 
     iput-object v1, v0, Lcom/amap/api/col/l3/ec$a;->c:Ljava/nio/FloatBuffer;
 
-    .line 7
     :cond_2
     iget-object p1, p0, Lcom/amap/api/col/l3/ec;->b:Lcom/amap/api/col/l3/ec$a;
 
@@ -128,22 +119,18 @@
 
     mul-int/lit8 p1, p1, 0x4
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/ec;->b(I)Lcom/amap/api/col/l3/ec$a;
 
     move-result-object p1
 
-    .line 3
     iget-object v0, p1, Lcom/amap/api/col/l3/ec$a;->c:Ljava/nio/FloatBuffer;
 
     if-nez v0, :cond_0
 
-    .line 4
     iget-object v0, p1, Lcom/amap/api/col/l3/ec$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 5
     iget-object v0, p1, Lcom/amap/api/col/l3/ec$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->asFloatBuffer()Ljava/nio/FloatBuffer;
@@ -154,17 +141,14 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-virtual {v0}, Ljava/nio/FloatBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 7
     :goto_0
     iget-object v0, p1, Lcom/amap/api/col/l3/ec$a;->c:Ljava/nio/FloatBuffer;
 
     invoke-virtual {v0}, Ljava/nio/FloatBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 8
     iget-object p1, p1, Lcom/amap/api/col/l3/ec$a;->c:Ljava/nio/FloatBuffer;
 
     return-object p1
@@ -173,7 +157,6 @@
 .method public final a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ec;->b:Lcom/amap/api/col/l3/ec$a;
 
     invoke-virtual {p0, v0}, Lcom/amap/api/col/l3/et;->a(Lcom/amap/api/col/l3/es;)Lcom/amap/api/col/l3/es;
@@ -190,22 +173,18 @@
 
     const v0, 0xea60
 
-    .line 8
     invoke-direct {p0, v0}, Lcom/amap/api/col/l3/ec;->b(I)Lcom/amap/api/col/l3/ec$a;
 
     move-result-object v0
 
-    .line 9
     iget-object v1, v0, Lcom/amap/api/col/l3/ec$a;->b:Ljava/nio/ShortBuffer;
 
     if-nez v1, :cond_0
 
-    .line 10
     iget-object v1, v0, Lcom/amap/api/col/l3/ec$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 11
     iget-object v1, v0, Lcom/amap/api/col/l3/ec$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->asShortBuffer()Ljava/nio/ShortBuffer;
@@ -216,11 +195,9 @@
 
     goto :goto_0
 
-    .line 12
     :cond_0
     invoke-virtual {v1}, Ljava/nio/ShortBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 13
     :goto_0
     iget-object v0, v0, Lcom/amap/api/col/l3/ec$a;->b:Ljava/nio/ShortBuffer;
 

@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/datepicker/MaterialCalendar$10;
 .super Ljava/lang/Object;
-.source "MaterialCalendar.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/google/android/material/datepicker/MaterialCalendar;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialCalendar$10;->this$0:Lcom/google/android/material/datepicker/MaterialCalendar;
 
     iput p2, p0, Lcom/google/android/material/datepicker/MaterialCalendar$10;->val$position:I
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/datepicker/MaterialCalendar$10;->this$0:Lcom/google/android/material/datepicker/MaterialCalendar;
 
     invoke-static {v0}, Lcom/google/android/material/datepicker/MaterialCalendar;->access$000(Lcom/google/android/material/datepicker/MaterialCalendar;)Landroidx/recyclerview/widget/RecyclerView;

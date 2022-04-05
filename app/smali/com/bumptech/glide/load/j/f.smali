@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/f;
 .super Ljava/lang/Object;
-.source "FileLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/n;
@@ -52,10 +51,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/j/f;->a:Lcom/bumptech/glide/load/j/f$d;
 
     return-void
@@ -85,7 +82,6 @@
         }
     .end annotation
 
-    .line 3
     new-instance p2, Lcom/bumptech/glide/load/j/n$a;
 
     new-instance p3, Lcom/bumptech/glide/l/b;
@@ -114,7 +110,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Ljava/io/File;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/j/f;->a(Ljava/io/File;IILcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/j/n$a;
@@ -143,7 +138,6 @@
         .end annotation
     .end param
 
-    .line 2
     check-cast p1, Ljava/io/File;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/j/f;->a(Ljava/io/File;)Z

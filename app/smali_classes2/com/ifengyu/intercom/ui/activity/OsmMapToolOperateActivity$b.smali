@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$b;
 .super Ljava/lang/Object;
-.source "OsmMapToolOperateActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnTouchListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->k(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/view/GestureDetector;

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/g;
 .super Ljava/lang/Object;
-.source "ResourceEncoder.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/a;

@@ -1,6 +1,5 @@
 .class public abstract Lno/nordicsemi/android/ble/u1$b;
 .super Lno/nordicsemi/android/ble/w1;
-.source "BleManager.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lno/nordicsemi/android/ble/w1;-><init>()V
 
     return-void

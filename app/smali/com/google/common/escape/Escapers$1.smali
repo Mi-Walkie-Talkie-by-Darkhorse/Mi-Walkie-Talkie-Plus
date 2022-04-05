@@ -1,6 +1,5 @@
 .class final Lcom/google/common/escape/Escapers$1;
 .super Lcom/google/common/escape/CharEscaper;
-.source "Escapers.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/escape/CharEscaper;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
 .method public escape(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1

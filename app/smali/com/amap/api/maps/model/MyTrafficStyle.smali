@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/MyTrafficStyle;
 .super Ljava/lang/Object;
-.source "MyTrafficStyle.java"
 
 
 # instance fields
@@ -19,32 +18,26 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const v0, -0xff5df7
 
-    .line 2
     iput v0, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->a:I
 
     const v0, -0x8af8
 
-    .line 3
     iput v0, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->b:I
 
     const v0, -0x15fcee
 
-    .line 4
     iput v0, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->c:I
 
     const v0, -0x6dfff6
 
-    .line 5
     iput v0, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->d:I
 
     const v0, 0x3f4ccccd    # 0.8f
 
-    .line 6
     iput v0, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->e:F
 
     return-void
@@ -55,7 +48,6 @@
 .method public getCongestedColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->c:I
 
     return v0
@@ -64,7 +56,6 @@
 .method public getRatio()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->e:F
 
     return v0
@@ -73,7 +64,6 @@
 .method public getSeriousCongestedColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->d:I
 
     return v0
@@ -82,7 +72,6 @@
 .method public getSlowColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->b:I
 
     return v0
@@ -91,7 +80,6 @@
 .method public getSmoothColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->a:I
 
     return v0
@@ -100,7 +88,6 @@
 .method public setCongestedColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->c:I
 
     return-void
@@ -109,7 +96,6 @@
 .method public setRatio(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->e:F
 
     return-void
@@ -118,7 +104,6 @@
 .method public setSeriousCongestedColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->d:I
 
     return-void
@@ -127,7 +112,6 @@
 .method public setSlowColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->b:I
 
     return-void
@@ -136,7 +120,6 @@
 .method public setSmoothColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/MyTrafficStyle;->a:I
 
     return-void

@@ -1,6 +1,5 @@
 .class final enum Lcom/google/common/hash/BloomFilterStrategies$2;
 .super Lcom/google/common/hash/BloomFilterStrategies;
-.source "BloomFilterStrategies.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/hash/BloomFilterStrategies;-><init>(Ljava/lang/String;ILcom/google/common/hash/BloomFilterStrategies$1;)V
 
     return-void
@@ -31,7 +29,6 @@
 
     const/4 v0, 0x7
 
-    .line 1
     aget-byte v1, p1, v0
 
     const/4 v0, 0x6
@@ -74,7 +71,6 @@
 
     const/16 v0, 0xf
 
-    .line 1
     aget-byte v1, p1, v0
 
     const/16 v0, 0xe
@@ -128,12 +124,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p4}, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->bitSize()J
 
     move-result-wide v0
 
-    .line 2
     invoke-static {}, Lcom/google/common/hash/Hashing;->murmur3_128()Lcom/google/common/hash/HashFunction;
 
     move-result-object v2
@@ -146,12 +140,10 @@
 
     move-result-object p1
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/google/common/hash/BloomFilterStrategies$2;->lowerEight([B)J
 
     move-result-wide v2
 
-    .line 4
     invoke-direct {p0, p1}, Lcom/google/common/hash/BloomFilterStrategies$2;->upperEight([B)J
 
     move-result-wide p1
@@ -167,7 +159,6 @@
 
     and-long/2addr v6, v2
 
-    .line 5
     rem-long/2addr v6, v0
 
     invoke-virtual {p4, v6, v7}, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->get(J)Z
@@ -205,12 +196,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p4}, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->bitSize()J
 
     move-result-wide v0
 
-    .line 2
     invoke-static {}, Lcom/google/common/hash/Hashing;->murmur3_128()Lcom/google/common/hash/HashFunction;
 
     move-result-object v2
@@ -223,12 +212,10 @@
 
     move-result-object p1
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/google/common/hash/BloomFilterStrategies$2;->lowerEight([B)J
 
     move-result-wide v2
 
-    .line 4
     invoke-direct {p0, p1}, Lcom/google/common/hash/BloomFilterStrategies$2;->upperEight([B)J
 
     move-result-wide p1
@@ -244,7 +231,6 @@
 
     and-long/2addr v6, v2
 
-    .line 5
     rem-long/2addr v6, v0
 
     invoke-virtual {p4, v6, v7}, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->set(J)Z

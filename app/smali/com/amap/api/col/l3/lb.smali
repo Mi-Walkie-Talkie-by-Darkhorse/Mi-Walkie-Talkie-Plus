@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/lb;
 .super Ljava/lang/Object;
-.source "WifiManagerWrapper.java"
 
 
 # static fields

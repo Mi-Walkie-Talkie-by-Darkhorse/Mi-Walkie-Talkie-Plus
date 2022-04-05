@@ -1,6 +1,5 @@
 .class public final Lokhttp3/FormBody$Builder;
 .super Ljava/lang/Object;
-.source "FormBody.java"
 
 
 # annotations
@@ -44,7 +43,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lokhttp3/FormBody$Builder;-><init>(Ljava/nio/charset/Charset;)V
 
     return-void
@@ -53,24 +51,20 @@
 .method public constructor <init>(Ljava/nio/charset/Charset;)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lokhttp3/FormBody$Builder;->names:Ljava/util/List;
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lokhttp3/FormBody$Builder;->values:Ljava/util/List;
 
-    .line 5
     iput-object p1, p0, Lokhttp3/FormBody$Builder;->charset:Ljava/nio/charset/Charset;
 
     return-void
@@ -85,7 +79,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-object v0, p0, Lokhttp3/FormBody$Builder;->names:Ljava/util/List;
 
     const/4 v3, 0x0
@@ -108,7 +101,6 @@
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 2
     iget-object p1, p0, Lokhttp3/FormBody$Builder;->values:Ljava/util/List;
 
     const/4 v2, 0x0
@@ -129,7 +121,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -139,7 +130,6 @@
 
     throw p1
 
-    .line 4
     :cond_1
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -157,7 +147,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-object v0, p0, Lokhttp3/FormBody$Builder;->names:Ljava/util/List;
 
     const/4 v3, 0x1
@@ -180,7 +169,6 @@
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 2
     iget-object p1, p0, Lokhttp3/FormBody$Builder;->values:Ljava/util/List;
 
     const/4 v2, 0x1
@@ -203,7 +191,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -213,7 +200,6 @@
 
     throw p1
 
-    .line 4
     :cond_1
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -227,7 +213,6 @@
 .method public build()Lokhttp3/FormBody;
     .locals 3
 
-    .line 1
     new-instance v0, Lokhttp3/FormBody;
 
     iget-object v1, p0, Lokhttp3/FormBody$Builder;->names:Ljava/util/List;

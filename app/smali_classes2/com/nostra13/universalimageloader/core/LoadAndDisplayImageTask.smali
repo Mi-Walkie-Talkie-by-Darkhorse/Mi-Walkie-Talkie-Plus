@@ -1,6 +1,5 @@
 .class final Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;
 .super Ljava/lang/Object;
-.source "LoadAndDisplayImageTask.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -99,84 +98,66 @@
 .method public constructor <init>(Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;Landroid/os/Handler;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     sget-object v0, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->NETWORK:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     iput-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->loadedFrom:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
-    .line 3
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->engine:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
-    .line 4
     iput-object p2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->imageLoadingInfo:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
 
-    .line 5
     iput-object p3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->handler:Landroid/os/Handler;
 
-    .line 6
     iget-object p1, p1, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
-    .line 7
     iget-object p3, p1, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->downloader:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
     iput-object p3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->downloader:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
-    .line 8
     iget-object p3, p1, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->networkDeniedDownloader:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
     iput-object p3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->networkDeniedDownloader:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
-    .line 9
     iget-object p3, p1, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->slowNetworkDownloader:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
     iput-object p3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->slowNetworkDownloader:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
-    .line 10
     iget-object p1, p1, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->decoder:Lcom/nostra13/universalimageloader/core/decode/ImageDecoder;
 
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->decoder:Lcom/nostra13/universalimageloader/core/decode/ImageDecoder;
 
-    .line 11
     iget-object p1, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->uri:Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->uri:Ljava/lang/String;
 
-    .line 12
     iget-object p1, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->memoryCacheKey:Ljava/lang/String;
 
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
-    .line 13
     iget-object p1, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->imageAware:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->imageAware:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
-    .line 14
     iget-object p1, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->targetSize:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->targetSize:Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
-    .line 15
     iget-object p1, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
-    .line 16
     iget-object p3, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->listener:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
     iput-object p3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->listener:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
 
-    .line 17
     iget-object p2, p2, Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;->progressListener:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingProgressListener;
 
     iput-object p2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->progressListener:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingProgressListener;
 
-    .line 18
     invoke-virtual {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->isSyncLoading()Z
 
     move-result p1
@@ -189,7 +170,6 @@
 .method static synthetic access$000(Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;)Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     return-object p0
@@ -203,7 +183,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->isTaskInterrupted()Z
 
     move-result v0
@@ -212,7 +191,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$TaskCancelledException;
 
@@ -229,10 +207,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->checkViewCollected()V
 
-    .line 2
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->checkViewReused()V
 
     return-void
@@ -246,7 +222,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->isViewCollected()Z
 
     move-result v0
@@ -255,7 +230,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$TaskCancelledException;
 
@@ -272,7 +246,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->isViewReused()Z
 
     move-result v0
@@ -281,7 +254,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$TaskCancelledException;
 
@@ -298,14 +270,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->imageAware:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
     invoke-interface {v0}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->getScaleType()Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     move-result-object v6
 
-    .line 2
     new-instance v0, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;
 
     iget-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
@@ -326,7 +296,6 @@
 
     invoke-direct/range {v1 .. v8}, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;Lcom/nostra13/universalimageloader/core/download/ImageDownloader;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
-    .line 3
     iget-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->decoder:Lcom/nostra13/universalimageloader/core/decode/ImageDecoder;
 
     invoke-interface {p1, v0}, Lcom/nostra13/universalimageloader/core/decode/ImageDecoder;->decode(Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;)Landroid/graphics/Bitmap;
@@ -339,7 +308,6 @@
 .method private delayIfNeed()Z
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->shouldDelayBeforeLoading()Z
@@ -354,7 +322,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 2
     iget-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v2}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->getDelayBeforeLoading()I
@@ -377,7 +344,6 @@
 
     invoke-static {v2, v0}, Lcom/nostra13/universalimageloader/utils/L;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
@@ -391,7 +357,6 @@
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 4
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->isTaskNotActual()Z
 
     move-result v0
@@ -401,7 +366,6 @@
     :catch_0
     new-array v0, v3, [Ljava/lang/Object;
 
-    .line 5
     iget-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v2, v0, v1
@@ -424,7 +388,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->getDownloader()Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
     move-result-object v0
@@ -447,7 +410,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 2
     iget-object v1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -460,7 +422,6 @@
 
     return v2
 
-    .line 3
     :cond_0
     :try_start_0
     iget-object v1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
@@ -475,7 +436,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     invoke-static {v0}, Lcom/nostra13/universalimageloader/utils/IoUtils;->closeSilently(Ljava/io/Closeable;)V
 
     return v1
@@ -491,7 +451,6 @@
 .method private fireCancelEvent()V
     .locals 4
 
-    .line 1
     iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->syncLoading:Z
 
     if-nez v0, :cond_1
@@ -504,7 +463,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$3;
 
@@ -512,7 +470,6 @@
 
     const/4 v1, 0x0
 
-    .line 3
     iget-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->handler:Landroid/os/Handler;
 
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->engine:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
@@ -527,7 +484,6 @@
 .method private fireFailEvent(Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;Ljava/lang/Throwable;)V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->syncLoading:Z
 
     if-nez v0, :cond_1
@@ -546,7 +502,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$2;
 
@@ -554,7 +509,6 @@
 
     const/4 p1, 0x0
 
-    .line 3
     iget-object p2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->handler:Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->engine:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
@@ -569,7 +523,6 @@
 .method private fireProgressEvent(II)Z
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->isTaskInterrupted()Z
 
     move-result v0
@@ -586,18 +539,15 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->progressListener:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingProgressListener;
 
     if-eqz v0, :cond_1
 
-    .line 3
     new-instance v0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$1;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$1;-><init>(Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;II)V
 
-    .line 4
     iget-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->handler:Landroid/os/Handler;
 
     iget-object p2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->engine:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
@@ -617,7 +567,6 @@
 .method private getDownloader()Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->engine:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->isNetworkDenied()Z
@@ -626,12 +575,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->networkDeniedDownloader:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->engine:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
@@ -641,12 +588,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->slowNetworkDownloader:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->downloader:Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
 
@@ -657,7 +602,6 @@
 .method private isTaskInterrupted()Z
     .locals 4
 
-    .line 1
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result v0
@@ -670,7 +614,6 @@
 
     new-array v2, v0, [Ljava/lang/Object;
 
-    .line 2
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v3, v2, v1
@@ -688,7 +631,6 @@
 .method private isTaskNotActual()Z
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->isViewCollected()Z
 
     move-result v0
@@ -719,7 +661,6 @@
 .method private isViewCollected()Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->imageAware:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 
     invoke-interface {v0}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->isCollected()Z
@@ -734,7 +675,6 @@
 
     new-array v2, v0, [Ljava/lang/Object;
 
-    .line 2
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v3, v2, v1
@@ -752,7 +692,6 @@
 .method private isViewReused()Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->engine:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
     iget-object v1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->imageAware:Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
@@ -761,7 +700,6 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -778,7 +716,6 @@
 
     new-array v0, v1, [Ljava/lang/Object;
 
-    .line 3
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v3, v0, v2
@@ -801,7 +738,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     iget-object v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->diskCache:Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
@@ -816,19 +752,16 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 3
     new-instance v7, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     invoke-direct {v7, p1, p2}, Lcom/nostra13/universalimageloader/core/assist/ImageSize;-><init>(II)V
 
-    .line 4
     new-instance p1, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;
 
     invoke-direct {p1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;-><init>()V
@@ -849,7 +782,6 @@
 
     move-result-object v10
 
-    .line 5
     new-instance p1, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;
 
     iget-object v4, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
@@ -876,7 +808,6 @@
 
     invoke-direct/range {v3 .. v10}, Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/nostra13/universalimageloader/core/assist/ImageSize;Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;Lcom/nostra13/universalimageloader/core/download/ImageDownloader;Lcom/nostra13/universalimageloader/core/DisplayImageOptions;)V
 
-    .line 6
     iget-object p2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->decoder:Lcom/nostra13/universalimageloader/core/decode/ImageDecoder;
 
     invoke-interface {p2, p1}, Lcom/nostra13/universalimageloader/core/decode/ImageDecoder;->decode(Lcom/nostra13/universalimageloader/core/decode/ImageDecodingInfo;)Landroid/graphics/Bitmap;
@@ -885,7 +816,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 7
     iget-object p2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     iget-object p2, p2, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->processorForDiskCache:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
@@ -896,7 +826,6 @@
 
     new-array v0, p2, [Ljava/lang/Object;
 
-    .line 8
     iget-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v2, v0, v1
@@ -905,7 +834,6 @@
 
     invoke-static {v2, v0}, Lcom/nostra13/universalimageloader/utils/L;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 9
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     iget-object v0, v0, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->processorForDiskCache:Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
@@ -918,7 +846,6 @@
 
     new-array p2, p2, [Ljava/lang/Object;
 
-    .line 10
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v0, p2, v1
@@ -930,7 +857,6 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 11
     iget-object p2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     iget-object p2, p2, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->diskCache:Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
@@ -941,7 +867,6 @@
 
     move-result v1
 
-    .line 12
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
 
     :cond_1
@@ -953,7 +878,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-interface {p0}, Ljava/lang/Runnable;->run()V
 
     goto :goto_0
@@ -961,12 +885,10 @@
     :cond_0
     if-nez p2, :cond_1
 
-    .line 2
     invoke-virtual {p3, p0}, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->fireCallback(Ljava/lang/Runnable;)V
 
     goto :goto_0
 
-    .line 3
     :cond_1
     invoke-virtual {p2, p0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
@@ -986,7 +908,6 @@
 
     new-array v1, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     const/4 v3, 0x0
@@ -997,7 +918,6 @@
 
     invoke-static {v2, v1}, Lcom/nostra13/universalimageloader/utils/L;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
     :try_start_0
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->downloadImage()Z
 
@@ -1005,12 +925,10 @@
 
     if-eqz v1, :cond_1
 
-    .line 3
     iget-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     iget v2, v2, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->maxImageWidthForDiskCache:I
 
-    .line 4
     iget-object v4, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     iget v4, v4, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->maxImageHeightForDiskCache:I
@@ -1024,14 +942,12 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 5
     iget-object v6, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v6, v0, v3
 
     invoke-static {v5, v0}, Lcom/nostra13/universalimageloader/utils/L;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 6
     invoke-direct {p0, v2, v4}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->resizeAndSaveImage(II)Z
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1044,7 +960,6 @@
     :catch_0
     move-exception v0
 
-    .line 7
     invoke-static {v0}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/Throwable;)V
 
     :goto_0
@@ -1061,7 +976,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
@@ -1079,7 +993,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 2
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v4
@@ -1100,22 +1013,18 @@
 
     new-array v5, v3, [Ljava/lang/Object;
 
-    .line 3
     iget-object v6, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v6, v5, v2
 
     invoke-static {v4, v5}, Lcom/nostra13/universalimageloader/utils/L;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 4
     sget-object v4, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->DISC_CACHE:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     iput-object v4, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->loadedFrom:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
-    .line 5
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->checkTaskNotActual()V
 
-    .line 6
     sget-object v4, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->FILE:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
@@ -1144,7 +1053,6 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 7
     :try_start_1
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -1163,22 +1071,18 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    .line 8
     iget-object v5, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v5, v3, v2
 
     invoke-static {v4, v3}, Lcom/nostra13/universalimageloader/utils/L;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 9
     sget-object v2, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->NETWORK:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
     iput-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->loadedFrom:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
-    .line 10
     iget-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->uri:Ljava/lang/String;
 
-    .line 11
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v3}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->isCacheOnDisk()Z
@@ -1193,7 +1097,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 12
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     iget-object v3, v3, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->diskCache:Lcom/nostra13/universalimageloader/cache/disc/DiskCache;
@@ -1206,7 +1109,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 13
     sget-object v2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->FILE:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
     invoke-virtual {v3}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
@@ -1217,18 +1119,15 @@
 
     move-result-object v2
 
-    .line 14
     :cond_2
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->checkTaskNotActual()V
 
-    .line 15
     invoke-direct {p0, v2}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->decodeImage(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
     if-eqz v1, :cond_3
 
-    .line 16
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v2
@@ -1241,7 +1140,6 @@
 
     if-gtz v2, :cond_4
 
-    .line 17
     :cond_3
     sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;->DECODING_ERROR:Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;
 
@@ -1291,11 +1189,9 @@
     :catchall_1
     move-exception v1
 
-    .line 18
     :goto_1
     invoke-static {v1}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/Throwable;)V
 
-    .line 19
     sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;->UNKNOWN:Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;
 
     invoke-direct {p0, v2, v1}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->fireFailEvent(Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;Ljava/lang/Throwable;)V
@@ -1305,11 +1201,9 @@
     :catch_2
     move-exception v1
 
-    .line 20
     :goto_2
     invoke-static {v1}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/Throwable;)V
 
-    .line 21
     sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;->OUT_OF_MEMORY:Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;
 
     invoke-direct {p0, v2, v1}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->fireFailEvent(Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;Ljava/lang/Throwable;)V
@@ -1319,11 +1213,9 @@
     :catch_3
     move-exception v1
 
-    .line 22
     :goto_3
     invoke-static {v1}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/Throwable;)V
 
-    .line 23
     sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;->IO_ERROR:Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;
 
     invoke-direct {p0, v2, v1}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->fireFailEvent(Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;Ljava/lang/Throwable;)V
@@ -1336,13 +1228,11 @@
     :catch_4
     move-exception v0
 
-    .line 24
     throw v0
 
     :catch_5
     move-object v1, v0
 
-    .line 25
     :catch_6
     sget-object v2, Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;->NETWORK_DENIED:Lcom/nostra13/universalimageloader/core/assist/FailReason$FailType;
 
@@ -1356,21 +1246,18 @@
 .method private waitIfPaused()Z
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->engine:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->getPause()Ljava/util/concurrent/atomic/AtomicBoolean;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 3
     iget-object v1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->engine:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
     invoke-virtual {v1}, Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;->getPauseLock()Ljava/lang/Object;
@@ -1379,7 +1266,6 @@
 
     monitor-enter v1
 
-    .line 4
     :try_start_0
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -1393,7 +1279,6 @@
 
     new-array v3, v2, [Ljava/lang/Object;
 
-    .line 5
     iget-object v4, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     const/4 v5, 0x0
@@ -1404,7 +1289,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     :try_start_1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->engine:Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;
 
@@ -1422,7 +1306,6 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 7
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v3, v2, v5
@@ -1436,19 +1319,16 @@
 
     new-array v3, v2, [Ljava/lang/Object;
 
-    .line 8
     iget-object v4, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v4, v3, v5
 
     invoke-static {v0, v3}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 9
     monitor-exit v1
 
     return v2
 
-    .line 10
     :cond_0
     :goto_0
     monitor-exit v1
@@ -1464,7 +1344,6 @@
 
     throw v0
 
-    .line 11
     :cond_1
     :goto_1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->isTaskNotActual()Z
@@ -1479,7 +1358,6 @@
 .method getLoadingUri()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->uri:Ljava/lang/String;
 
     return-object v0
@@ -1488,7 +1366,6 @@
 .method public onBytesCopied(II)Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->syncLoading:Z
 
     if-nez v0, :cond_1
@@ -1517,7 +1394,6 @@
 .method public run()V
     .locals 7
 
-    .line 1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->waitIfPaused()Z
 
     move-result v0
@@ -1526,7 +1402,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->delayIfNeed()Z
 
@@ -1536,7 +1411,6 @@
 
     return-void
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->imageLoadingInfo:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
 
@@ -1546,7 +1420,6 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 4
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     const/4 v4, 0x0
@@ -1557,7 +1430,6 @@
 
     invoke-static {v3, v2}, Lcom/nostra13/universalimageloader/utils/L;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 5
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->isLocked()Z
 
     move-result v2
@@ -1566,7 +1438,6 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 6
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v3, v2, v4
@@ -1575,15 +1446,12 @@
 
     invoke-static {v3, v2}, Lcom/nostra13/universalimageloader/utils/L;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 7
     :cond_2
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
-    .line 8
     :try_start_0
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->checkTaskNotActual()V
 
-    .line 9
     iget-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     iget-object v2, v2, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->memoryCache:Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
@@ -1596,7 +1464,6 @@
 
     if-eqz v2, :cond_4
 
-    .line 10
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->isRecycled()Z
 
     move-result v3
@@ -1605,7 +1472,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_3
     sget-object v3, Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;->MEMORY_CACHE:Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;
 
@@ -1615,7 +1481,6 @@
 
     new-array v5, v1, [Ljava/lang/Object;
 
-    .line 12
     iget-object v6, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v6, v5, v4
@@ -1624,7 +1489,6 @@
 
     goto :goto_1
 
-    .line 13
     :cond_4
     :goto_0
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->tryLoadBitmap()Landroid/graphics/Bitmap;
@@ -1636,20 +1500,16 @@
 
     if-nez v2, :cond_5
 
-    .line 14
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     return-void
 
-    .line 15
     :cond_5
     :try_start_1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->checkTaskNotActual()V
 
-    .line 16
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->checkTaskInterrupted()V
 
-    .line 17
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v3}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->shouldPreProcess()Z
@@ -1662,14 +1522,12 @@
 
     new-array v5, v1, [Ljava/lang/Object;
 
-    .line 18
     iget-object v6, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v6, v5, v4
 
     invoke-static {v3, v5}, Lcom/nostra13/universalimageloader/utils/L;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 19
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v3}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->getPreProcessor()Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
@@ -1686,7 +1544,6 @@
 
     new-array v5, v1, [Ljava/lang/Object;
 
-    .line 20
     iget-object v6, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v6, v5, v4
@@ -1696,7 +1553,6 @@
     :cond_6
     if-eqz v2, :cond_7
 
-    .line 21
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v3}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->isCacheInMemory()Z
@@ -1709,14 +1565,12 @@
 
     new-array v5, v1, [Ljava/lang/Object;
 
-    .line 22
     iget-object v6, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v6, v5, v4
 
     invoke-static {v3, v5}, Lcom/nostra13/universalimageloader/utils/L;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 23
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->configuration:Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;
 
     iget-object v3, v3, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration;->memoryCache:Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
@@ -1729,7 +1583,6 @@
     :goto_1
     if-eqz v2, :cond_8
 
-    .line 24
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v3}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->shouldPostProcess()Z
@@ -1742,14 +1595,12 @@
 
     new-array v5, v1, [Ljava/lang/Object;
 
-    .line 25
     iget-object v6, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v6, v5, v4
 
     invoke-static {v3, v5}, Lcom/nostra13/universalimageloader/utils/L;->d(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 26
     iget-object v3, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->options:Lcom/nostra13/universalimageloader/core/DisplayImageOptions;
 
     invoke-virtual {v3}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions;->getPostProcessor()Lcom/nostra13/universalimageloader/core/process/BitmapProcessor;
@@ -1766,27 +1617,22 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 27
     iget-object v5, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->memoryCacheKey:Ljava/lang/String;
 
     aput-object v5, v1, v4
 
     invoke-static {v3, v1}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 28
     :cond_8
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->checkTaskNotActual()V
 
-    .line 29
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->checkTaskInterrupted()V
     :try_end_1
     .catch Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$TaskCancelledException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 30
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
-    .line 31
     new-instance v0, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;
 
     iget-object v1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->imageLoadingInfo:Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;
@@ -1797,7 +1643,6 @@
 
     invoke-direct {v0, v2, v1, v3, v4}, Lcom/nostra13/universalimageloader/core/DisplayBitmapTask;-><init>(Landroid/graphics/Bitmap;Lcom/nostra13/universalimageloader/core/ImageLoadingInfo;Lcom/nostra13/universalimageloader/core/ImageLoaderEngine;Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;)V
 
-    .line 32
     iget-boolean v1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->syncLoading:Z
 
     iget-object v2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->handler:Landroid/os/Handler;
@@ -1813,14 +1658,12 @@
 
     goto :goto_2
 
-    .line 33
     :catch_0
     :try_start_2
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->fireCancelEvent()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 34
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V
 
     return-void

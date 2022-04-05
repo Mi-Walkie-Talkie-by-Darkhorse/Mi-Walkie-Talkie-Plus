@@ -1,6 +1,5 @@
 .class public final enum Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 .super Ljava/lang/Enum;
-.source "SharkProtos.java"
 
 # interfaces
 .implements Lcom/google/protobuf/ProtocolMessageEnum;
@@ -96,7 +95,6 @@
 .method static constructor <clinit>()V
     .locals 15
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     const/4 v1, 0x0
@@ -107,7 +105,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_DISCONNECT:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     const/4 v2, 0x1
@@ -118,7 +115,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_CONNECT:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     const/4 v3, 0x2
@@ -131,7 +127,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_ALLOW:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 4
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     const/4 v5, 0x3
@@ -144,7 +139,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_REFUSE:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     const/4 v7, 0x6
@@ -155,7 +149,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_WAIT:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 6
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     const/4 v8, 0x7
@@ -166,7 +159,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_LOWPOWER:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 7
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     const/16 v9, 0x8
@@ -177,7 +169,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_DIS_ALLOW:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 8
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     const/16 v10, 0x9
@@ -188,7 +179,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_DIS_REFUSE:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 9
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     const/16 v11, 0xa
@@ -199,7 +189,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_DIS_WAIT:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 10
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     const/16 v12, 0xb
@@ -210,7 +199,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_DIS_LOWPOWER:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 11
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     const-string v13, "SHARK_BUSY"
@@ -223,7 +211,6 @@
 
     new-array v12, v12, [Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 12
     sget-object v13, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_DISCONNECT:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     aput-object v13, v12, v1
@@ -268,14 +255,12 @@
 
     sput-object v12, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->$VALUES:[Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
-    .line 13
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE$a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE$a;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
-    .line 14
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->values()[Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     move-result-object v0
@@ -293,13 +278,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput p3, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->index:I
 
-    .line 3
     iput p4, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->value:I
 
     return-void
@@ -308,7 +290,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$EnumDescriptor;
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->u()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -339,7 +320,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
     return-object v0
@@ -360,67 +340,56 @@
 
     return-object p0
 
-    .line 2
     :pswitch_0
     sget-object p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_BUSY:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     return-object p0
 
-    .line 3
     :pswitch_1
     sget-object p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_DIS_LOWPOWER:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     return-object p0
 
-    .line 4
     :pswitch_2
     sget-object p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_DIS_WAIT:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     return-object p0
 
-    .line 5
     :pswitch_3
     sget-object p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_DIS_REFUSE:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     return-object p0
 
-    .line 6
     :pswitch_4
     sget-object p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_DIS_ALLOW:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     return-object p0
 
-    .line 7
     :pswitch_5
     sget-object p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_LOWPOWER:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     return-object p0
 
-    .line 8
     :pswitch_6
     sget-object p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_WAIT:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     return-object p0
 
-    .line 9
     :pswitch_7
     sget-object p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_REFUSE:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     return-object p0
 
-    .line 10
     :pswitch_8
     sget-object p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_ALLOW:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     return-object p0
 
-    .line 11
     :cond_0
     sget-object p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_CONNECT:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     return-object p0
 
-    .line 12
     :cond_1
     sget-object p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->SHARK_DISCONNECT:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
@@ -445,7 +414,6 @@
 .method public static valueOf(Lcom/google/protobuf/Descriptors$EnumValueDescriptor;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
     .locals 2
 
-    .line 13
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;->getType()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0
@@ -456,7 +424,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 14
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->VALUES:[Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;->getIndex()I
@@ -467,7 +434,6 @@
 
     return-object p0
 
-    .line 15
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -481,7 +447,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -496,7 +461,6 @@
 .method public static values()[Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->$VALUES:[Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;
 
     invoke-virtual {v0}, [Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->clone()Ljava/lang/Object;
@@ -513,7 +477,6 @@
 .method public final getDescriptorForType()Lcom/google/protobuf/Descriptors$EnumDescriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->getDescriptor()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0
@@ -524,7 +487,6 @@
 .method public final getNumber()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->value:I
 
     return v0
@@ -533,7 +495,6 @@
 .method public final getValueDescriptor()Lcom/google/protobuf/Descriptors$EnumValueDescriptor;
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_CONNCODE;->getDescriptor()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0

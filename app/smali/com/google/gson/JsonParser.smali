@@ -1,13 +1,11 @@
 .class public final Lcom/google/gson/JsonParser;
 .super Ljava/lang/Object;
-.source "JsonParser.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,17 +26,14 @@
 
     const-string v1, "Failed parsing JSON source: "
 
-    .line 9
     invoke-virtual {p1}, Lcom/google/gson/stream/JsonReader;->isLenient()Z
 
     move-result v2
 
     const/4 v3, 0x1
 
-    .line 10
     invoke-virtual {p1, v3}, Lcom/google/gson/stream/JsonReader;->setLenient(Z)V
 
-    .line 11
     :try_start_0
     invoke-static {p1}, Lcom/google/gson/internal/Streams;->parse(Lcom/google/gson/stream/JsonReader;)Lcom/google/gson/JsonElement;
 
@@ -48,7 +43,6 @@
     .catch Ljava/lang/OutOfMemoryError; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 12
     invoke-virtual {p1, v2}, Lcom/google/gson/stream/JsonReader;->setLenient(Z)V
 
     return-object v0
@@ -61,7 +55,6 @@
     :catch_0
     move-exception v3
 
-    .line 13
     :try_start_1
     new-instance v4, Lcom/google/gson/JsonParseException;
 
@@ -86,7 +79,6 @@
     :catch_1
     move-exception v3
 
-    .line 14
     new-instance v4, Lcom/google/gson/JsonParseException;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -109,7 +101,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 15
     :goto_0
     invoke-virtual {p1, v2}, Lcom/google/gson/stream/JsonReader;->setLenient(Z)V
 
@@ -125,18 +116,15 @@
         }
     .end annotation
 
-    .line 2
     :try_start_0
     new-instance v0, Lcom/google/gson/stream/JsonReader;
 
     invoke-direct {v0, p1}, Lcom/google/gson/stream/JsonReader;-><init>(Ljava/io/Reader;)V
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/google/gson/JsonParser;->parse(Lcom/google/gson/stream/JsonReader;)Lcom/google/gson/JsonElement;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1}, Lcom/google/gson/JsonElement;->isJsonNull()Z
 
     move-result v1
@@ -153,7 +141,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     new-instance p1, Lcom/google/gson/JsonSyntaxException;
 
@@ -174,7 +161,6 @@
     :catch_0
     move-exception p1
 
-    .line 6
     new-instance v0, Lcom/google/gson/JsonSyntaxException;
 
     invoke-direct {v0, p1}, Lcom/google/gson/JsonSyntaxException;-><init>(Ljava/lang/Throwable;)V
@@ -184,7 +170,6 @@
     :catch_1
     move-exception p1
 
-    .line 7
     new-instance v0, Lcom/google/gson/JsonIOException;
 
     invoke-direct {v0, p1}, Lcom/google/gson/JsonIOException;-><init>(Ljava/lang/Throwable;)V
@@ -194,7 +179,6 @@
     :catch_2
     move-exception p1
 
-    .line 8
     new-instance v0, Lcom/google/gson/JsonSyntaxException;
 
     invoke-direct {v0, p1}, Lcom/google/gson/JsonSyntaxException;-><init>(Ljava/lang/Throwable;)V
@@ -210,7 +194,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/io/StringReader;
 
     invoke-direct {v0, p1}, Ljava/io/StringReader;-><init>(Ljava/lang/String;)V

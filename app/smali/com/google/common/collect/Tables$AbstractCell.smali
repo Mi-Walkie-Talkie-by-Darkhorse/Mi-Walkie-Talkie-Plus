@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/collect/Tables$AbstractCell;
 .super Ljava/lang/Object;
-.source "Tables.java"
 
 # interfaces
 .implements Lcom/google/common/collect/Table$Cell;
@@ -36,7 +35,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -53,7 +51,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/google/common/collect/Table$Cell;
 
@@ -61,10 +58,8 @@
 
     if-eqz v1, :cond_2
 
-    .line 2
     check-cast p1, Lcom/google/common/collect/Table$Cell;
 
-    .line 3
     invoke-interface {p0}, Lcom/google/common/collect/Table$Cell;->getRowKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -126,7 +121,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     invoke-interface {p0}, Lcom/google/common/collect/Table$Cell;->getRowKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -161,7 +155,6 @@
 .method public toString()Ljava/lang/String;
     .locals 6
 
-    .line 1
     invoke-interface {p0}, Lcom/google/common/collect/Table$Cell;->getRowKey()Ljava/lang/Object;
 
     move-result-object v0

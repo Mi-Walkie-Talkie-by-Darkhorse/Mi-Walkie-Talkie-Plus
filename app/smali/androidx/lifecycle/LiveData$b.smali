@@ -1,6 +1,5 @@
 .class Landroidx/lifecycle/LiveData$b;
 .super Landroidx/lifecycle/LiveData$c;
-.source "LiveData.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroidx/lifecycle/LiveData$c;-><init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/q;)V
 
     return-void

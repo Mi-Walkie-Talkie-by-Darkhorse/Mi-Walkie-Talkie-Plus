@@ -1,6 +1,5 @@
 .class public abstract Lpl/droidsonroids/gif/f;
 .super Ljava/lang/Object;
-.source "InputSource.java"
 
 
 # annotations
@@ -16,7 +15,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,7 +23,6 @@
 .method synthetic constructor <init>(Lpl/droidsonroids/gif/f$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lpl/droidsonroids/gif/f;-><init>()V
 
     return-void

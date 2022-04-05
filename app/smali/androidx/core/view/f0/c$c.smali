@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/core/view/f0/c$c;
 .super Ljava/lang/Object;
-.source "InputContentInfoCompat.java"
 
 
 # annotations

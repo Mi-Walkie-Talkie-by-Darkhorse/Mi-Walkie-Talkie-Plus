@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/Toolbar$b;
 .super Ljava/lang/Object;
-.source "Toolbar.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/Toolbar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/Toolbar$b;->a:Landroidx/appcompat/widget/Toolbar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$b;->a:Landroidx/appcompat/widget/Toolbar;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/Toolbar;->showOverflowMenu()Z

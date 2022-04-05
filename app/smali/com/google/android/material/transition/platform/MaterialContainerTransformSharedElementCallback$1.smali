@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$1;
 .super Lcom/google/android/material/transition/platform/TransitionListenerAdapter;
-.source "MaterialContainerTransformSharedElementCallback.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback;Landroid/view/Window;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$1;->this$0:Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback;
 
     iput-object p2, p0, Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$1;->val$window:Landroid/view/Window;
@@ -39,7 +37,6 @@
 .method public onTransitionEnd(Landroid/transition/Transition;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$1;->val$window:Landroid/view/Window;
 
     invoke-static {p1}, Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback;->access$100(Landroid/view/Window;)V
@@ -50,7 +47,6 @@
 .method public onTransitionStart(Landroid/transition/Transition;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$1;->val$window:Landroid/view/Window;
 
     invoke-static {p1}, Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback;->access$000(Landroid/view/Window;)V

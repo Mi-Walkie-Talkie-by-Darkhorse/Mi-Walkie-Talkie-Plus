@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity$c;
 .super Landroidx/fragment/app/FragmentPagerAdapter;
-.source "SealChannelSettingActivity.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity$c;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/fragment/app/FragmentPagerAdapter;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
     return-void
@@ -36,7 +33,6 @@
 .method public getCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity$c;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->c(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;)[Ljava/lang/String;
@@ -51,7 +47,6 @@
 .method public getItem(I)Landroidx/fragment/app/Fragment;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity$c;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->b(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;)Ljava/util/List;
@@ -70,7 +65,6 @@
 .method public getPageTitle(I)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity$c;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->c(Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;)[Ljava/lang/String;

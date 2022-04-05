@@ -1,6 +1,5 @@
 .class abstract Lcom/qmuiteam/qmui/link/QMUILinkify$StyleableURLSpan;
 .super Landroid/text/style/URLSpan;
-.source "QMUILinkify.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/link/a;
@@ -29,18 +28,14 @@
 .method public constructor <init>(Ljava/lang/String;Lcom/qmuiteam/qmui/span/c;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/text/style/URLSpan;-><init>(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$StyleableURLSpan;->a:Z
 
-    .line 3
     iput-object p1, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$StyleableURLSpan;->b:Ljava/lang/String;
 
-    .line 4
     iput-object p2, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$StyleableURLSpan;->c:Lcom/qmuiteam/qmui/span/c;
 
     return-void
@@ -51,7 +46,6 @@
 .method public a(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$StyleableURLSpan;->a:Z
 
     return-void
@@ -60,7 +54,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$StyleableURLSpan;->c:Lcom/qmuiteam/qmui/span/c;
 
     iget-object v1, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$StyleableURLSpan;->b:Ljava/lang/String;
@@ -73,7 +66,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-super {p0, p1}, Landroid/text/style/URLSpan;->onClick(Landroid/view/View;)V
 

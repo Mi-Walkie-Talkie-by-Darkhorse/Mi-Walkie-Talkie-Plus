@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/arch/SwipeBackLayout$i;
 .super Ljava/lang/Object;
-.source "SwipeBackLayout.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/arch/SwipeBackLayout$f;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,7 +38,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p2}, Landroid/view/View;->getTop()I
 
     move-result p2
@@ -61,7 +58,6 @@
 
     const/4 p1, 0x0
 
-    .line 2
     invoke-static {p2, p1, p3}, Lcom/qmuiteam/qmui/util/g;->a(FFF)F
 
     move-result p1
@@ -84,7 +80,6 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result p1
@@ -111,7 +106,6 @@
 
     if-nez p3, :cond_0
 
-    .line 4
     invoke-virtual {p0, p1, p2, p4}, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$i;->a(Lcom/qmuiteam/qmui/arch/SwipeBackLayout;Landroid/view/View;I)F
 
     move-result p2
@@ -127,7 +121,6 @@
 
     return p1
 
-    .line 5
     :cond_1
     :goto_0
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getHeight()I
@@ -160,7 +153,6 @@
 
     if-ne p4, p2, :cond_1
 
-    .line 6
     :cond_0
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getHeight()I
 
@@ -178,7 +170,6 @@
 
     div-float/2addr p5, p2
 
-    .line 7
     :cond_1
     invoke-virtual {p3}, Lcom/qmuiteam/qmui/util/m;->d()I
 
@@ -192,7 +183,6 @@
 
     const/4 p4, 0x0
 
-    .line 8
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getHeight()I
 
     move-result p1
@@ -201,7 +191,6 @@
 
     move-result p1
 
-    .line 9
     invoke-virtual {p3, p1}, Lcom/qmuiteam/qmui/util/m;->b(I)Z
 
     return-void

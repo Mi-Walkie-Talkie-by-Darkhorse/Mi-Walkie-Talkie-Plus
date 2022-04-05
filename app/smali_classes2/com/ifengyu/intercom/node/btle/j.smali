@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/node/btle/j;
 .super Ljava/lang/Object;
-.source "IGattHandler.java"
 
 
 # virtual methods

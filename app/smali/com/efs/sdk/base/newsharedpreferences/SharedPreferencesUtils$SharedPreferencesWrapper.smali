@@ -1,6 +1,5 @@
 .class Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesUtils$SharedPreferencesWrapper;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,7 +29,6 @@
 .method synthetic constructor <init>(Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesUtils$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesUtils$SharedPreferencesWrapper;-><init>()V
 
     return-void
@@ -40,7 +37,6 @@
 .method static synthetic access$100(Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesUtils$SharedPreferencesWrapper;)Landroid/content/SharedPreferences;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesUtils$SharedPreferencesWrapper;->mSharedPreferences:Landroid/content/SharedPreferences;
 
     return-object p0
@@ -49,7 +45,6 @@
 .method static synthetic access$102(Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesUtils$SharedPreferencesWrapper;Landroid/content/SharedPreferences;)Landroid/content/SharedPreferences;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesUtils$SharedPreferencesWrapper;->mSharedPreferences:Landroid/content/SharedPreferences;
 
     return-object p1

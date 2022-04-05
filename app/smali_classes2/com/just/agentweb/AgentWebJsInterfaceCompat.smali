@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/AgentWebJsInterfaceCompat;
 .super Ljava/lang/Object;
-.source "AgentWebJsInterfaceCompat.java"
 
 
 # instance fields
@@ -31,18 +30,14 @@
 .method constructor <init>(Lcom/just/agentweb/AgentWeb;Landroid/app/Activity;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->mReference:Ljava/lang/ref/WeakReference;
 
-    .line 3
     iput-object v0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->mActivityWeakReference:Ljava/lang/ref/WeakReference;
 
-    .line 4
     const-class v0, Lcom/just/agentweb/AgentWebJsInterfaceCompat;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -51,14 +46,12 @@
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->TAG:Ljava/lang/String;
 
-    .line 5
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->mReference:Ljava/lang/ref/WeakReference;
 
-    .line 6
     new-instance p1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -71,7 +64,6 @@
 .method static synthetic access$000(Lcom/just/agentweb/AgentWebJsInterfaceCompat;)Ljava/lang/ref/WeakReference;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->mReference:Ljava/lang/ref/WeakReference;
 
     return-object p0
@@ -86,7 +78,6 @@
 
     const-string v0, "*/*"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->uploadFile(Ljava/lang/String;)V
 
     return-void
@@ -97,7 +88,6 @@
     .annotation runtime Landroid/webkit/JavascriptInterface;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -134,7 +124,6 @@
 
     invoke-static {v0, v1}, Lcom/just/agentweb/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     iget-object v0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->mActivityWeakReference:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -151,7 +140,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->mActivityWeakReference:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -164,7 +152,6 @@
 
     iget-object v0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->mReference:Ljava/lang/ref/WeakReference;
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -185,7 +172,6 @@
 
     iget-object v0, p0, Lcom/just/agentweb/AgentWebJsInterfaceCompat;->mReference:Ljava/lang/ref/WeakReference;
 
-    .line 6
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -204,7 +190,6 @@
 
     move-object v7, p1
 
-    .line 7
     invoke-static/range {v1 .. v8}, Lcom/just/agentweb/AgentWebUtils;->showFileChooserCompat(Landroid/app/Activity;Landroid/webkit/WebView;Landroid/webkit/ValueCallback;Landroid/webkit/WebChromeClient$FileChooserParams;Lcom/just/agentweb/PermissionInterceptor;Landroid/webkit/ValueCallback;Ljava/lang/String;Landroid/os/Handler$Callback;)Z
 
     :cond_0

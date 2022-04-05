@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/hash/Hasher;
 .super Ljava/lang/Object;
-.source "Hasher.java"
 
 # interfaces
 .implements Lcom/google/common/hash/PrimitiveSink;

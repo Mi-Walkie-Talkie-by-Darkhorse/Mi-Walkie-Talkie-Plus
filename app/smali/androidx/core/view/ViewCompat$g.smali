@@ -1,6 +1,5 @@
 .class abstract Landroidx/core/view/ViewCompat$g;
 .super Ljava/lang/Object;
-.source "ViewCompat.java"
 
 
 # annotations
@@ -53,7 +52,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, v0, p3}, Landroidx/core/view/ViewCompat$g;-><init>(ILjava/lang/Class;II)V
 
     return-void
@@ -69,19 +67,14 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput p1, p0, Landroidx/core/view/ViewCompat$g;->a:I
 
-    .line 4
     iput-object p2, p0, Landroidx/core/view/ViewCompat$g;->b:Ljava/lang/Class;
 
-    .line 5
     iput p3, p0, Landroidx/core/view/ViewCompat$g;->d:I
 
-    .line 6
     iput p4, p0, Landroidx/core/view/ViewCompat$g;->c:I
 
     return-void
@@ -90,7 +83,6 @@
 .method private a()Z
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
@@ -111,7 +103,6 @@
 .method private b()Z
     .locals 2
 
-    .line 12
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     iget v1, p0, Landroidx/core/view/ViewCompat$g;->c:I
@@ -162,7 +153,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -175,7 +165,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -208,21 +197,18 @@
         }
     .end annotation
 
-    .line 7
     invoke-direct {p0}, Landroidx/core/view/ViewCompat$g;->b()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 8
     invoke-virtual {p0, p1}, Landroidx/core/view/ViewCompat$g;->a(Landroid/view/View;)Ljava/lang/Object;
 
     move-result-object p1
 
     return-object p1
 
-    .line 9
     :cond_0
     invoke-direct {p0}, Landroidx/core/view/ViewCompat$g;->a()Z
 
@@ -230,14 +216,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 10
     iget v0, p0, Landroidx/core/view/ViewCompat$g;->a:I
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 11
     iget-object v0, p0, Landroidx/core/view/ViewCompat$g;->b:Ljava/lang/Class;
 
     invoke-virtual {v0, p1}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
@@ -264,19 +248,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Landroidx/core/view/ViewCompat$g;->b()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1, p2}, Landroidx/core/view/ViewCompat$g;->a(Landroid/view/View;Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-direct {p0}, Landroidx/core/view/ViewCompat$g;->a()Z
 
@@ -294,15 +275,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->w(Landroid/view/View;)Landroidx/core/view/a;
 
-    .line 5
     iget v0, p0, Landroidx/core/view/ViewCompat$g;->a:I
 
     invoke-virtual {p1, v0, p2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
-    .line 6
     iget p2, p0, Landroidx/core/view/ViewCompat$g;->d:I
 
     invoke-static {p1, p2}, Landroidx/core/view/ViewCompat;->d(Landroid/view/View;I)V

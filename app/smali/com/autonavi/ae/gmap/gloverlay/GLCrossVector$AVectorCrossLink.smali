@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gloverlay/GLCrossVector$AVectorCrossLink;
 .super Ljava/lang/Object;
-.source "GLCrossVector.java"
 
 
 # annotations
@@ -30,10 +29,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLCrossVector$AVectorCrossLinkAttr;
 
     invoke-direct {v0}, Lcom/autonavi/ae/gmap/gloverlay/GLCrossVector$AVectorCrossLinkAttr;-><init>()V
@@ -42,7 +39,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLCrossVector$AVectorCrossLink;->nCount:I
 
     return-void

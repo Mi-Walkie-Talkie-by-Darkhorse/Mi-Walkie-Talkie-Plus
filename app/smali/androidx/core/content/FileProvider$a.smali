@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/core/content/FileProvider$a;
 .super Ljava/lang/Object;
-.source "FileProvider.java"
 
 
 # annotations

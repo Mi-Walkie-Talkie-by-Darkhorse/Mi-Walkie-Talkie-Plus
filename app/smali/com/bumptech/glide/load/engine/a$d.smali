@@ -1,6 +1,5 @@
 .class final Lcom/bumptech/glide/load/engine/a$d;
 .super Ljava/lang/ref/WeakReference;
-.source "ActiveResources.java"
 
 
 # annotations
@@ -71,17 +70,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p2, p3}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
-    .line 2
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, Lcom/bumptech/glide/load/c;
 
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/a$d;->a:Lcom/bumptech/glide/load/c;
 
-    .line 3
     invoke-virtual {p2}, Lcom/bumptech/glide/load/engine/n;->f()Z
 
     move-result p1
@@ -90,7 +86,6 @@
 
     if-eqz p4, :cond_0
 
-    .line 4
     invoke-virtual {p2}, Lcom/bumptech/glide/load/engine/n;->e()Lcom/bumptech/glide/load/engine/s;
 
     move-result-object p1
@@ -107,7 +102,6 @@
     :goto_0
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/a$d;->c:Lcom/bumptech/glide/load/engine/s;
 
-    .line 5
     invoke-virtual {p2}, Lcom/bumptech/glide/load/engine/n;->f()Z
 
     move-result p1
@@ -124,10 +118,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Lcom/bumptech/glide/load/engine/a$d;->c:Lcom/bumptech/glide/load/engine/s;
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/ref/WeakReference;->clear()V
 
     return-void

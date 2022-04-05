@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/appcompat/graphics/drawable/DrawerArrowDrawable$ArrowDirection;
 .super Ljava/lang/Object;
-.source "DrawerArrowDrawable.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

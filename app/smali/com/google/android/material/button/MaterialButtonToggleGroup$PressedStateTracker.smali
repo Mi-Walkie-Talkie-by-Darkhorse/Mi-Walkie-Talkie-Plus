@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/button/MaterialButtonToggleGroup$PressedStateTracker;
 .super Ljava/lang/Object;
-.source "MaterialButtonToggleGroup.java"
 
 # interfaces
 .implements Lcom/google/android/material/button/MaterialButton$OnPressedChangeListener;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$PressedStateTracker;->this$0:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;Lcom/google/android/material/button/MaterialButtonToggleGroup$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/android/material/button/MaterialButtonToggleGroup$PressedStateTracker;-><init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;)V
 
     return-void
@@ -51,7 +48,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$PressedStateTracker;->this$0:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
     invoke-virtual {p1}, Landroid/widget/LinearLayout;->invalidate()V

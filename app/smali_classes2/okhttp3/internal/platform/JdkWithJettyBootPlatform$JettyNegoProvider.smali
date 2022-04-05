@@ -1,6 +1,5 @@
 .class Lokhttp3/internal/platform/JdkWithJettyBootPlatform$JettyNegoProvider;
 .super Ljava/lang/Object;
-.source "JdkWithJettyBootPlatform.java"
 
 # interfaces
 .implements Ljava/lang/reflect/InvocationHandler;
@@ -45,10 +44,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lokhttp3/internal/platform/JdkWithJettyBootPlatform$JettyNegoProvider;->protocols:Ljava/util/List;
 
     return-void
@@ -64,25 +61,21 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p2}, Ljava/lang/reflect/Method;->getName()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p2}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
 
     move-result-object v0
 
     if-nez p3, :cond_0
 
-    .line 3
     sget-object p3, Lokhttp3/internal/Util;->EMPTY_STRING_ARRAY:[Ljava/lang/String;
 
     :cond_0
     const-string v1, "supports"
 
-    .line 4
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -95,7 +88,6 @@
 
     if-ne v1, v0, :cond_1
 
-    .line 5
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -105,7 +97,6 @@
     :cond_1
     const-string v1, "unsupported"
 
-    .line 6
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -118,7 +109,6 @@
 
     if-ne v1, v0, :cond_2
 
-    .line 7
     iput-boolean v2, p0, Lokhttp3/internal/platform/JdkWithJettyBootPlatform$JettyNegoProvider;->unsupported:Z
 
     return-object v3
@@ -126,7 +116,6 @@
     :cond_2
     const-string v1, "protocols"
 
-    .line 8
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -137,7 +126,6 @@
 
     if-nez v1, :cond_3
 
-    .line 9
     iget-object p1, p0, Lokhttp3/internal/platform/JdkWithJettyBootPlatform$JettyNegoProvider;->protocols:Ljava/util/List;
 
     return-object p1
@@ -145,7 +133,6 @@
     :cond_3
     const-string v1, "selectProtocol"
 
-    .line 10
     invoke-virtual {p1, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -177,12 +164,10 @@
 
     if-eqz v0, :cond_7
 
-    .line 11
     aget-object p1, p3, v4
 
     check-cast p1, Ljava/util/List;
 
-    .line 12
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p2
@@ -192,7 +177,6 @@
     :goto_0
     if-ge p3, p2, :cond_6
 
-    .line 13
     iget-object v0, p0, Lokhttp3/internal/platform/JdkWithJettyBootPlatform$JettyNegoProvider;->protocols:Ljava/util/List;
 
     invoke-interface {p1, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -205,7 +189,6 @@
 
     if-eqz v0, :cond_5
 
-    .line 14
     invoke-interface {p1, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -221,7 +204,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_6
     iget-object p1, p0, Lokhttp3/internal/platform/JdkWithJettyBootPlatform$JettyNegoProvider;->protocols:Ljava/util/List;
 
@@ -238,7 +220,6 @@
     :cond_7
     const-string v0, "protocolSelected"
 
-    .line 16
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -258,7 +239,6 @@
 
     if-ne p1, v2, :cond_9
 
-    .line 17
     aget-object p1, p3, v4
 
     check-cast p1, Ljava/lang/String;
@@ -267,7 +247,6 @@
 
     return-object v3
 
-    .line 18
     :cond_9
     invoke-virtual {p2, p0, p3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 

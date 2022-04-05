@@ -46,7 +46,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxSeekBar__SeekBarChangeEventObservableKt;->changeEvents(Landroid/widget/SeekBar;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     move-result-object p0
@@ -77,7 +76,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxSeekBar__SeekBarChangeObservableKt;->changes(Landroid/widget/SeekBar;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     move-result-object p0
@@ -108,7 +106,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxSeekBar__SeekBarChangeObservableKt;->systemChanges(Landroid/widget/SeekBar;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     move-result-object p0
@@ -139,7 +136,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxSeekBar__SeekBarChangeObservableKt;->userChanges(Landroid/widget/SeekBar;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     move-result-object p0

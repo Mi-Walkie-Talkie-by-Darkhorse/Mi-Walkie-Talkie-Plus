@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/appbar/CollapsingToolbarLayout$2;
 .super Ljava/lang/Object;
-.source "CollapsingToolbarLayout.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/appbar/CollapsingToolbarLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$2;->this$0:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$2;->this$0:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;

@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/tooltip/TooltipDrawable;
 .super Lcom/google/android/material/shape/MaterialShapeDrawable;
-.source "TooltipDrawable.java"
 
 # interfaces
 .implements Lcom/google/android/material/internal/TextDrawableHelper$TextDrawableDelegate;
@@ -84,12 +83,10 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_Tooltip:I
 
     sput v0, Lcom/google/android/material/tooltip/TooltipDrawable;->DEFAULT_STYLE:I
 
-    .line 2
     sget v0, Lcom/google/android/material/R$attr;->tooltipStyle:I
 
     sput v0, Lcom/google/android/material/tooltip/TooltipDrawable;->DEFAULT_THEME_ATTR:I
@@ -112,31 +109,26 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/material/shape/MaterialShapeDrawable;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 2
     new-instance p2, Landroid/graphics/Paint$FontMetrics;
 
     invoke-direct {p2}, Landroid/graphics/Paint$FontMetrics;-><init>()V
 
     iput-object p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->fontMetrics:Landroid/graphics/Paint$FontMetrics;
 
-    .line 3
     new-instance p2, Lcom/google/android/material/internal/TextDrawableHelper;
 
     invoke-direct {p2, p0}, Lcom/google/android/material/internal/TextDrawableHelper;-><init>(Lcom/google/android/material/internal/TextDrawableHelper$TextDrawableDelegate;)V
 
     iput-object p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
-    .line 4
     new-instance p2, Lcom/google/android/material/tooltip/TooltipDrawable$1;
 
     invoke-direct {p2, p0}, Lcom/google/android/material/tooltip/TooltipDrawable$1;-><init>(Lcom/google/android/material/tooltip/TooltipDrawable;)V
 
     iput-object p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->attachedViewLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
-    .line 5
     new-instance p2, Landroid/graphics/Rect;
 
     invoke-direct {p2}, Landroid/graphics/Rect;-><init>()V
@@ -145,27 +137,20 @@
 
     const/high16 p2, 0x3f800000    # 1.0f
 
-    .line 6
     iput p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->tooltipScaleX:F
 
-    .line 7
     iput p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->tooltipScaleY:F
 
     const/high16 p3, 0x3f000000    # 0.5f
 
-    .line 8
     iput p3, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->tooltipPivotX:F
 
-    .line 9
     iput p3, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->tooltipPivotY:F
 
-    .line 10
     iput p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->labelOpacity:F
 
-    .line 11
     iput-object p1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->context:Landroid/content/Context;
 
-    .line 12
     iget-object p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
     invoke-virtual {p2}, Lcom/google/android/material/internal/TextDrawableHelper;->getTextPaint()Landroid/text/TextPaint;
@@ -184,7 +169,6 @@
 
     iput p1, p2, Landroid/text/TextPaint;->density:F
 
-    .line 13
     iget-object p1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
     invoke-virtual {p1}, Lcom/google/android/material/internal/TextDrawableHelper;->getTextPaint()Landroid/text/TextPaint;
@@ -201,7 +185,6 @@
 .method static synthetic access$000(Lcom/google/android/material/tooltip/TooltipDrawable;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/tooltip/TooltipDrawable;->updateLocationOnScreen(Landroid/view/View;)V
 
     return-void
@@ -210,7 +193,6 @@
 .method private calculatePointerOffset()F
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->displayFrame:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->right:I
@@ -233,7 +215,6 @@
 
     if-gez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->displayFrame:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->right:I
@@ -259,7 +240,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->displayFrame:Landroid/graphics/Rect;
 
@@ -283,7 +263,6 @@
 
     if-lez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->displayFrame:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->left:I
@@ -316,7 +295,6 @@
 .method private calculateTextCenterFromBaseline()F
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
     invoke-virtual {v0}, Lcom/google/android/material/internal/TextDrawableHelper;->getTextPaint()Landroid/text/TextPaint;
@@ -327,7 +305,6 @@
 
     invoke-virtual {v0, v1}, Landroid/text/TextPaint;->getFontMetrics(Landroid/graphics/Paint$FontMetrics;)F
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->fontMetrics:Landroid/graphics/Paint$FontMetrics;
 
     iget v1, v0, Landroid/graphics/Paint$FontMetrics;->descent:F
@@ -350,7 +327,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Landroid/graphics/Rect;->centerY()I
 
     move-result p1
@@ -375,7 +351,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget v0, Lcom/google/android/material/tooltip/TooltipDrawable;->DEFAULT_THEME_ATTR:I
 
     sget v1, Lcom/google/android/material/tooltip/TooltipDrawable;->DEFAULT_STYLE:I
@@ -402,7 +377,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 3
     sget v0, Lcom/google/android/material/tooltip/TooltipDrawable;->DEFAULT_THEME_ATTR:I
 
     sget v1, Lcom/google/android/material/tooltip/TooltipDrawable;->DEFAULT_STYLE:I
@@ -435,12 +409,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/android/material/tooltip/TooltipDrawable;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lcom/google/android/material/tooltip/TooltipDrawable;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 2
     invoke-direct {v0, p1, p2, p3}, Lcom/google/android/material/tooltip/TooltipDrawable;->loadFromAttributes(Landroid/util/AttributeSet;II)V
 
     return-object v0
@@ -449,14 +421,12 @@
 .method private createMarkerEdge()Lcom/google/android/material/shape/EdgeTreatment;
     .locals 7
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/tooltip/TooltipDrawable;->calculatePointerOffset()F
 
     move-result v0
 
     neg-float v0, v0
 
-    .line 2
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object v1
@@ -489,17 +459,14 @@
 
     neg-float v2, v1
 
-    .line 3
     invoke-static {v0, v2}, Ljava/lang/Math;->max(FF)F
 
     move-result v0
 
-    .line 4
     invoke-static {v0, v1}, Ljava/lang/Math;->min(FF)F
 
     move-result v0
 
-    .line 5
     new-instance v1, Lcom/google/android/material/shape/OffsetEdgeTreatment;
 
     new-instance v2, Lcom/google/android/material/shape/MarkerEdgeTreatment;
@@ -522,27 +489,23 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->text:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object v0
 
-    .line 3
     invoke-direct {p0, v0}, Lcom/google/android/material/tooltip/TooltipDrawable;->calculateTextOriginAndAlignment(Landroid/graphics/Rect;)F
 
     move-result v1
 
     float-to-int v1, v1
 
-    .line 4
     iget-object v2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
     invoke-virtual {v2}, Lcom/google/android/material/internal/TextDrawableHelper;->getTextAppearance()Lcom/google/android/material/resources/TextAppearance;
@@ -551,7 +514,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 5
     iget-object v2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
     invoke-virtual {v2}, Lcom/google/android/material/internal/TextDrawableHelper;->getTextPaint()Landroid/text/TextPaint;
@@ -564,14 +526,12 @@
 
     iput-object v3, v2, Landroid/text/TextPaint;->drawableState:[I
 
-    .line 6
     iget-object v2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
     iget-object v3, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->context:Landroid/content/Context;
 
     invoke-virtual {v2, v3}, Lcom/google/android/material/internal/TextDrawableHelper;->updateTextPaintDrawState(Landroid/content/Context;)V
 
-    .line 7
     iget-object v2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
     invoke-virtual {v2}, Lcom/google/android/material/internal/TextDrawableHelper;->getTextPaint()Landroid/text/TextPaint;
@@ -588,7 +548,6 @@
 
     invoke-virtual {v2, v3}, Landroid/text/TextPaint;->setAlpha(I)V
 
-    .line 8
     :cond_1
     iget-object v5, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->text:Ljava/lang/CharSequence;
 
@@ -622,7 +581,6 @@
 .method private getTextWidth()F
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->text:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_0
@@ -631,7 +589,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
@@ -661,7 +618,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->context:Landroid/content/Context;
 
     sget-object v2, Lcom/google/android/material/R$styleable;->Tooltip:[I
@@ -676,12 +632,10 @@
 
     move v4, p3
 
-    .line 2
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/ThemeEnforcement;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 3
     iget-object p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->context:Landroid/content/Context;
 
     invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -696,7 +650,6 @@
 
     iput p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->arrowSize:I
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->getShapeAppearanceModel()Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     move-result-object p2
@@ -717,10 +670,8 @@
 
     move-result-object p2
 
-    .line 5
     invoke-virtual {p0, p2}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setShapeAppearanceModel(Lcom/google/android/material/shape/ShapeAppearanceModel;)V
 
-    .line 6
     sget p2, Lcom/google/android/material/R$styleable;->Tooltip_android_text:I
 
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getText(I)Ljava/lang/CharSequence;
@@ -729,114 +680,92 @@
 
     invoke-virtual {p0, p2}, Lcom/google/android/material/tooltip/TooltipDrawable;->setText(Ljava/lang/CharSequence;)V
 
-    .line 7
     iget-object p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->context:Landroid/content/Context;
 
     sget p3, Lcom/google/android/material/R$styleable;->Tooltip_android_textAppearance:I
 
-    .line 8
     invoke-static {p2, p1, p3}, Lcom/google/android/material/resources/MaterialResources;->getTextAppearance(Landroid/content/Context;Landroid/content/res/TypedArray;I)Lcom/google/android/material/resources/TextAppearance;
 
     move-result-object p2
 
-    .line 9
     invoke-virtual {p0, p2}, Lcom/google/android/material/tooltip/TooltipDrawable;->setTextAppearance(Lcom/google/android/material/resources/TextAppearance;)V
 
-    .line 10
     iget-object p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->context:Landroid/content/Context;
 
     sget p3, Lcom/google/android/material/R$attr;->colorOnBackground:I
 
     const-class v0, Lcom/google/android/material/tooltip/TooltipDrawable;
 
-    .line 11
     invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 12
     invoke-static {p2, p3, v0}, Lcom/google/android/material/color/MaterialColors;->getColor(Landroid/content/Context;ILjava/lang/String;)I
 
     move-result p2
 
-    .line 13
     iget-object p3, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->context:Landroid/content/Context;
 
     const-class v0, Lcom/google/android/material/tooltip/TooltipDrawable;
 
-    .line 14
     invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
     move-result-object v0
 
     const v1, 0x1010031
 
-    .line 15
     invoke-static {p3, v1, v0}, Lcom/google/android/material/color/MaterialColors;->getColor(Landroid/content/Context;ILjava/lang/String;)I
 
     move-result p3
 
     const/16 v0, 0xe5
 
-    .line 16
     invoke-static {p3, v0}, Landroidx/core/graphics/c;->c(II)I
 
     move-result p3
 
     const/16 v0, 0x99
 
-    .line 17
     invoke-static {p2, v0}, Landroidx/core/graphics/c;->c(II)I
 
     move-result p2
 
-    .line 18
     invoke-static {p3, p2}, Lcom/google/android/material/color/MaterialColors;->layer(II)I
 
     move-result p2
 
-    .line 19
     sget p3, Lcom/google/android/material/R$styleable;->Tooltip_backgroundTint:I
 
-    .line 20
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result p2
 
-    .line 21
     invoke-static {p2}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p2
 
-    .line 22
     invoke-virtual {p0, p2}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setFillColor(Landroid/content/res/ColorStateList;)V
 
-    .line 23
     iget-object p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->context:Landroid/content/Context;
 
     sget p3, Lcom/google/android/material/R$attr;->colorSurface:I
 
     const-class v0, Lcom/google/android/material/tooltip/TooltipDrawable;
 
-    .line 24
     invoke-virtual {v0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 25
     invoke-static {p2, p3, v0}, Lcom/google/android/material/color/MaterialColors;->getColor(Landroid/content/Context;ILjava/lang/String;)I
 
     move-result p2
 
-    .line 26
     invoke-static {p2}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p2
 
-    .line 27
     invoke-virtual {p0, p2}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setStrokeColor(Landroid/content/res/ColorStateList;)V
 
-    .line 28
     sget p2, Lcom/google/android/material/R$styleable;->Tooltip_android_padding:I
 
     invoke-virtual {p1, p2, v6}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
@@ -845,7 +774,6 @@
 
     iput p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->padding:I
 
-    .line 29
     sget p2, Lcom/google/android/material/R$styleable;->Tooltip_android_minWidth:I
 
     invoke-virtual {p1, p2, v6}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
@@ -854,7 +782,6 @@
 
     iput p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->minWidth:I
 
-    .line 30
     sget p2, Lcom/google/android/material/R$styleable;->Tooltip_android_minHeight:I
 
     invoke-virtual {p1, p2, v6}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
@@ -863,7 +790,6 @@
 
     iput p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->minHeight:I
 
-    .line 31
     sget p2, Lcom/google/android/material/R$styleable;->Tooltip_android_layout_margin:I
 
     invoke-virtual {p1, p2, v6}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
@@ -872,7 +798,6 @@
 
     iput p2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->layoutMargin:I
 
-    .line 32
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -889,17 +814,14 @@
 
     new-array v0, v0, [I
 
-    .line 1
     invoke-virtual {p1, v0}, Landroid/view/View;->getLocationOnScreen([I)V
 
     const/4 v1, 0x0
 
-    .line 2
     aget v0, v0, v1
 
     iput v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->locationOnScreenX:I
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->displayFrame:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
@@ -920,7 +842,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->attachedViewLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
@@ -936,15 +857,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 2
     invoke-direct {p0}, Lcom/google/android/material/tooltip/TooltipDrawable;->calculatePointerOffset()F
 
     move-result v0
 
-    .line 3
     iget v1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->arrowSize:I
 
     int-to-double v1, v1
@@ -967,12 +885,10 @@
 
     double-to-float v1, v1
 
-    .line 4
     iget v2, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->tooltipScaleX:F
 
     iget v3, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->tooltipScaleY:F
 
-    .line 5
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object v4
@@ -997,7 +913,6 @@
 
     add-float/2addr v4, v5
 
-    .line 6
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object v5
@@ -1022,19 +937,14 @@
 
     add-float/2addr v5, v6
 
-    .line 7
     invoke-virtual {p1, v2, v3, v4, v5}, Landroid/graphics/Canvas;->scale(FFFF)V
 
-    .line 8
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 9
     invoke-super {p0, p1}, Lcom/google/android/material/shape/MaterialShapeDrawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 10
     invoke-direct {p0, p1}, Lcom/google/android/material/tooltip/TooltipDrawable;->drawText(Landroid/graphics/Canvas;)V
 
-    .line 11
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     return-void
@@ -1043,7 +953,6 @@
 .method public getIntrinsicHeight()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
     invoke-virtual {v0}, Lcom/google/android/material/internal/TextDrawableHelper;->getTextPaint()Landroid/text/TextPaint;
@@ -1070,7 +979,6 @@
 .method public getIntrinsicWidth()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->padding:I
 
     mul-int/lit8 v0, v0, 0x2
@@ -1099,7 +1007,6 @@
 .method public getLayoutMargin()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->layoutMargin:I
 
     return v0
@@ -1108,7 +1015,6 @@
 .method public getMinHeight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->minHeight:I
 
     return v0
@@ -1117,7 +1023,6 @@
 .method public getMinWidth()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->minWidth:I
 
     return v0
@@ -1128,7 +1033,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->text:Ljava/lang/CharSequence;
 
     return-object v0
@@ -1139,7 +1043,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
     invoke-virtual {v0}, Lcom/google/android/material/internal/TextDrawableHelper;->getTextAppearance()Lcom/google/android/material/resources/TextAppearance;
@@ -1152,7 +1055,6 @@
 .method public getTextPadding()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->padding:I
 
     return v0
@@ -1161,10 +1063,8 @@
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/android/material/shape/MaterialShapeDrawable;->onBoundsChange(Landroid/graphics/Rect;)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->getShapeAppearanceModel()Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     move-result-object p1
@@ -1185,7 +1085,6 @@
 
     move-result-object p1
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setShapeAppearanceModel(Lcom/google/android/material/shape/ShapeAppearanceModel;)V
 
     return-void
@@ -1194,7 +1093,6 @@
 .method public onStateChange([I)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/android/material/shape/MaterialShapeDrawable;->onStateChange([I)Z
 
     move-result p1
@@ -1205,7 +1103,6 @@
 .method public onTextSizeChange()V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->invalidateSelf()V
 
     return-void
@@ -1218,10 +1115,8 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->layoutMargin:I
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->invalidateSelf()V
 
     return-void
@@ -1234,10 +1129,8 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->minHeight:I
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->invalidateSelf()V
 
     return-void
@@ -1250,10 +1143,8 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->minWidth:I
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->invalidateSelf()V
 
     return-void
@@ -1270,11 +1161,9 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/android/material/tooltip/TooltipDrawable;->updateLocationOnScreen(Landroid/view/View;)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->attachedViewLayoutChangeListener:Landroid/view/View$OnLayoutChangeListener;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
@@ -1293,13 +1182,10 @@
 
     const v0, 0x3f99999a    # 1.2f
 
-    .line 1
     iput v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->tooltipPivotY:F
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->tooltipScaleX:F
 
-    .line 3
     iput p1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->tooltipScaleY:F
 
     const/high16 v0, 0x3f800000    # 1.0f
@@ -1308,14 +1194,12 @@
 
     const v2, 0x3e428f5c    # 0.19f
 
-    .line 4
     invoke-static {v1, v0, v2, v0, p1}, Lcom/google/android/material/animation/AnimationUtils;->lerp(FFFFF)F
 
     move-result p1
 
     iput p1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->labelOpacity:F
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->invalidateSelf()V
 
     return-void
@@ -1328,7 +1212,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->text:Ljava/lang/CharSequence;
 
     invoke-static {v0, p1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
@@ -1337,17 +1220,14 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iput-object p1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->text:Ljava/lang/CharSequence;
 
-    .line 3
     iget-object p1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
     const/4 v0, 0x1
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/internal/TextDrawableHelper;->setTextWidthDirty(Z)V
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->invalidateSelf()V
 
     :cond_0
@@ -1361,7 +1241,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->textDrawableHelper:Lcom/google/android/material/internal/TextDrawableHelper;
 
     iget-object v1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->context:Landroid/content/Context;
@@ -1378,7 +1257,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Lcom/google/android/material/resources/TextAppearance;
 
     iget-object v1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->context:Landroid/content/Context;
@@ -1397,10 +1275,8 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->padding:I
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->invalidateSelf()V
 
     return-void
@@ -1413,7 +1289,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/tooltip/TooltipDrawable;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;

@@ -1,6 +1,5 @@
 .class final Lcom/ifengyu/blelib/b/f$a;
 .super Ljava/lang/Object;
-.source "SeqGenerator.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/blelib/b/f;
 
     invoke-direct {v0}, Lcom/ifengyu/blelib/b/f;-><init>()V
@@ -35,7 +33,6 @@
 .method static synthetic a()Lcom/ifengyu/blelib/b/f;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/blelib/b/f$a;->a:Lcom/ifengyu/blelib/b/f;
 
     return-object v0

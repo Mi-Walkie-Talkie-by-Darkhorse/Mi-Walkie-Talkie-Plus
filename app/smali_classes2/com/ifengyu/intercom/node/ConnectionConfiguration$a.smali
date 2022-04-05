@@ -1,6 +1,5 @@
 .class final Lcom/ifengyu/intercom/node/ConnectionConfiguration$a;
 .super Ljava/lang/Object;
-.source "ConnectionConfiguration.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/ifengyu/intercom/node/ConnectionConfiguration;
     .locals 13
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->b(Landroid/os/Parcel;)I
 
     move-result v0
@@ -68,7 +65,6 @@
 
     const/4 v12, 0x0
 
-    .line 3
     :goto_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
@@ -76,24 +72,20 @@
 
     if-ge v1, v0, :cond_0
 
-    .line 4
     invoke-static {p1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->a(Landroid/os/Parcel;)I
 
     move-result v1
 
-    .line 5
     invoke-static {v1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->a(I)I
 
     move-result v2
 
     packed-switch v2, :pswitch_data_0
 
-    .line 6
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->e(Landroid/os/Parcel;I)V
 
     goto :goto_0
 
-    .line 7
     :pswitch_0
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->b(Landroid/os/Parcel;I)I
 
@@ -103,7 +95,6 @@
 
     goto :goto_0
 
-    .line 8
     :pswitch_1
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->b(Landroid/os/Parcel;I)I
 
@@ -113,7 +104,6 @@
 
     goto :goto_0
 
-    .line 9
     :pswitch_2
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->d(Landroid/os/Parcel;I)Ljava/lang/String;
 
@@ -123,7 +113,6 @@
 
     goto :goto_0
 
-    .line 10
     :pswitch_3
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->a(Landroid/os/Parcel;I)Z
 
@@ -133,7 +122,6 @@
 
     goto :goto_0
 
-    .line 11
     :pswitch_4
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->a(Landroid/os/Parcel;I)Z
 
@@ -143,7 +131,6 @@
 
     goto :goto_0
 
-    .line 12
     :pswitch_5
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->d(Landroid/os/Parcel;I)Ljava/lang/String;
 
@@ -153,7 +140,6 @@
 
     goto :goto_0
 
-    .line 13
     :pswitch_6
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->d(Landroid/os/Parcel;I)Ljava/lang/String;
 
@@ -163,7 +149,6 @@
 
     goto :goto_0
 
-    .line 14
     :pswitch_7
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/node/safeparcel/SafeReader;->b(Landroid/os/Parcel;I)I
 
@@ -173,7 +158,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_0
     invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
@@ -181,7 +165,6 @@
 
     if-ne v1, v0, :cond_1
 
-    .line 16
     new-instance p1, Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     move-object v4, p1
@@ -190,7 +173,6 @@
 
     return-object p1
 
-    .line 17
     :cond_1
     new-instance v1, Lcom/ifengyu/intercom/node/safeparcel/SafeReader$ReadException;
 
@@ -228,7 +210,6 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration$a;->createFromParcel(Landroid/os/Parcel;)Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     move-result-object p1
@@ -239,7 +220,6 @@
 .method public newArray(I)[Lcom/ifengyu/intercom/node/ConnectionConfiguration;
     .locals 0
 
-    .line 2
     new-array p1, p1, [Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     return-object p1
@@ -248,7 +228,6 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration$a;->newArray(I)[Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     move-result-object p1

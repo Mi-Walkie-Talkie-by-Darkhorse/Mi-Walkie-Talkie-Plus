@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/ByteSink$AsCharSink;
 .super Lcom/google/common/io/CharSink;
-.source "ByteSink.java"
 
 
 # annotations
@@ -24,12 +23,10 @@
 .method private constructor <init>(Lcom/google/common/io/ByteSink;Ljava/nio/charset/Charset;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/io/ByteSink$AsCharSink;->this$0:Lcom/google/common/io/ByteSink;
 
     invoke-direct {p0}, Lcom/google/common/io/CharSink;-><init>()V
 
-    .line 3
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -44,7 +41,6 @@
 .method synthetic constructor <init>(Lcom/google/common/io/ByteSink;Ljava/nio/charset/Charset;Lcom/google/common/io/ByteSink$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/io/ByteSink$AsCharSink;-><init>(Lcom/google/common/io/ByteSink;Ljava/nio/charset/Charset;)V
 
     return-void
@@ -60,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/io/OutputStreamWriter;
 
     iget-object v1, p0, Lcom/google/common/io/ByteSink$AsCharSink;->this$0:Lcom/google/common/io/ByteSink;
@@ -79,7 +74,6 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/ByteSink$AsCharSink;->this$0:Lcom/google/common/io/ByteSink;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;

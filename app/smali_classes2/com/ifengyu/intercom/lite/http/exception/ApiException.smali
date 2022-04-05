@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/http/exception/ApiException;
 .super Ljava/lang/RuntimeException;
-.source "ApiException.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput p2, p0, Lcom/ifengyu/intercom/lite/http/exception/ApiException;->a:I
 
     return-void
@@ -25,7 +22,6 @@
 .method public a()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/http/exception/ApiException;->a:I
 
     return v0
@@ -40,7 +36,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/http/exception/ApiException;->a()I
 
     move-result v1

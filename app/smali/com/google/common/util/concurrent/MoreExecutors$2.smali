@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/MoreExecutors$2;
 .super Ljava/lang/Object;
-.source "MoreExecutors.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Executor;
@@ -27,7 +26,6 @@
 .method constructor <init>(Ljava/util/concurrent/Executor;Lcom/google/common/base/Supplier;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/MoreExecutors$2;->val$executor:Ljava/util/concurrent/Executor;
 
     iput-object p2, p0, Lcom/google/common/util/concurrent/MoreExecutors$2;->val$nameSupplier:Lcom/google/common/base/Supplier;
@@ -42,7 +40,6 @@
 .method public execute(Ljava/lang/Runnable;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/MoreExecutors$2;->val$executor:Ljava/util/concurrent/Executor;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/MoreExecutors$2;->val$nameSupplier:Lcom/google/common/base/Supplier;

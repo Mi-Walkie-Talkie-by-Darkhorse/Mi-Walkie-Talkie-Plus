@@ -1,6 +1,5 @@
 .class public interface abstract Lpl/droidsonroids/relinker/b$d;
 .super Ljava/lang/Object;
-.source "ReLinker.java"
 
 
 # annotations

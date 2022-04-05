@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/v$c;
 .super La/b/e;
-.source "ResourceManagerInternal.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, La/b/e;-><init>(I)V
 
     return-void
@@ -42,7 +40,6 @@
 
     mul-int/lit8 p0, p0, 0x1f
 
-    .line 1
     invoke-virtual {p1}, Landroid/graphics/PorterDuff$Mode;->hashCode()I
 
     move-result p1
@@ -57,7 +54,6 @@
 .method a(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
     .locals 0
 
-    .line 1
     invoke-static {p1, p2}, Landroidx/appcompat/widget/v$c;->b(ILandroid/graphics/PorterDuff$Mode;)I
 
     move-result p1
@@ -78,7 +74,6 @@
 .method a(ILandroid/graphics/PorterDuff$Mode;Landroid/graphics/PorterDuffColorFilter;)Landroid/graphics/PorterDuffColorFilter;
     .locals 0
 
-    .line 2
     invoke-static {p1, p2}, Landroidx/appcompat/widget/v$c;->b(ILandroid/graphics/PorterDuff$Mode;)I
 
     move-result p1

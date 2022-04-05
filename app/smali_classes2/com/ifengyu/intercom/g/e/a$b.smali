@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/g/e/a$b;
 .super Ljava/lang/Object;
-.source "CountingRequestBody.java"
 
 
 # annotations

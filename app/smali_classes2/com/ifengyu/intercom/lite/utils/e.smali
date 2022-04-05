@@ -1,13 +1,11 @@
 .class public Lcom/ifengyu/intercom/lite/utils/e;
 .super Ljava/lang/Object;
-.source "EventUtils.java"
 
 
 # direct methods
 .method public static a(I)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -44,14 +42,12 @@
     :goto_0
     const/4 v1, 0x1
 
-    .line 2
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
     invoke-interface {v0, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p0

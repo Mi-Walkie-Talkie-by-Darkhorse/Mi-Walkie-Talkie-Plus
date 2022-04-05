@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/qrcode/decoder/Version;
 .super Ljava/lang/Object;
-.source "Version.java"
 
 
 # annotations
@@ -36,12 +35,10 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/google/zxing/qrcode/decoder/Version;->VERSION_DECODE_INFO:[I
 
-    .line 2
     invoke-static {}, Lcom/google/zxing/qrcode/decoder/Version;->buildVersions()[Lcom/google/zxing/qrcode/decoder/Version;
 
     move-result-object v0
@@ -92,35 +89,28 @@
 .method private varargs constructor <init>(I[I[Lcom/google/zxing/qrcode/decoder/Version$ECBlocks;)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/google/zxing/qrcode/decoder/Version;->versionNumber:I
 
-    .line 3
     iput-object p2, p0, Lcom/google/zxing/qrcode/decoder/Version;->alignmentPatternCenters:[I
 
-    .line 4
     iput-object p3, p0, Lcom/google/zxing/qrcode/decoder/Version;->ecBlocks:[Lcom/google/zxing/qrcode/decoder/Version$ECBlocks;
 
     const/4 p1, 0x0
 
-    .line 5
     aget-object p2, p3, p1
 
     invoke-virtual {p2}, Lcom/google/zxing/qrcode/decoder/Version$ECBlocks;->getECCodewordsPerBlock()I
 
     move-result p2
 
-    .line 6
     aget-object p3, p3, p1
 
     invoke-virtual {p3}, Lcom/google/zxing/qrcode/decoder/Version$ECBlocks;->getECBlocks()[Lcom/google/zxing/qrcode/decoder/Version$ECB;
 
     move-result-object p3
 
-    .line 7
     array-length v0, p3
 
     const/4 v1, 0x0
@@ -130,7 +120,6 @@
 
     aget-object v2, p3, p1
 
-    .line 8
     invoke-virtual {v2}, Lcom/google/zxing/qrcode/decoder/Version$ECB;->getCount()I
 
     move-result v3
@@ -149,7 +138,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     iput v1, p0, Lcom/google/zxing/qrcode/decoder/Version;->totalCodewords:I
 
@@ -163,7 +151,6 @@
 
     new-array v0, v0, [Lcom/google/zxing/qrcode/decoder/Version;
 
-    .line 1
     new-instance v1, Lcom/google/zxing/qrcode/decoder/Version;
 
     const/4 v2, 0x0
@@ -5246,7 +5233,6 @@
 
     const v2, 0x7fffffff
 
-    .line 1
     :goto_0
     sget-object v3, Lcom/google/zxing/qrcode/decoder/Version;->VERSION_DECODE_INFO:[I
 
@@ -5254,21 +5240,18 @@
 
     if-ge v0, v4, :cond_2
 
-    .line 2
     aget v3, v3, v0
 
     if-ne v3, p0, :cond_0
 
     add-int/lit8 v0, v0, 0x7
 
-    .line 3
     invoke-static {v0}, Lcom/google/zxing/qrcode/decoder/Version;->getVersionForNumber(I)Lcom/google/zxing/qrcode/decoder/Version;
 
     move-result-object p0
 
     return-object p0
 
-    .line 4
     :cond_0
     invoke-static {p0, v3}, Lcom/google/zxing/qrcode/decoder/FormatInformation;->numBitsDiffering(II)I
 
@@ -5290,7 +5273,6 @@
 
     if-gt v2, p0, :cond_3
 
-    .line 5
     invoke-static {v1}, Lcom/google/zxing/qrcode/decoder/Version;->getVersionForNumber(I)Lcom/google/zxing/qrcode/decoder/Version;
 
     move-result-object p0
@@ -5311,7 +5293,6 @@
         }
     .end annotation
 
-    .line 1
     rem-int/lit8 v0, p0, 0x4
 
     const/4 v1, 0x1
@@ -5320,7 +5301,6 @@
 
     add-int/lit8 p0, p0, -0x11
 
-    .line 2
     :try_start_0
     div-int/lit8 p0, p0, 0x4
 
@@ -5332,7 +5312,6 @@
 
     return-object p0
 
-    .line 3
     :catch_0
     invoke-static {}, Lcom/google/zxing/FormatException;->getFormatInstance()Lcom/google/zxing/FormatException;
 
@@ -5340,7 +5319,6 @@
 
     throw p0
 
-    .line 4
     :cond_0
     invoke-static {}, Lcom/google/zxing/FormatException;->getFormatInstance()Lcom/google/zxing/FormatException;
 
@@ -5358,7 +5336,6 @@
 
     if-gt p0, v0, :cond_0
 
-    .line 1
     sget-object v0, Lcom/google/zxing/qrcode/decoder/Version;->VERSIONS:[Lcom/google/zxing/qrcode/decoder/Version;
 
     add-int/lit8 p0, p0, -0x1
@@ -5367,7 +5344,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -5381,12 +5357,10 @@
 .method buildFunctionPattern()Lcom/google/zxing/common/BitMatrix;
     .locals 10
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/decoder/Version;->getDimensionForVersion()I
 
     move-result v0
 
-    .line 2
     new-instance v1, Lcom/google/zxing/common/BitMatrix;
 
     invoke-direct {v1, v0}, Lcom/google/zxing/common/BitMatrix;-><init>(I)V
@@ -5395,20 +5369,16 @@
 
     const/4 v3, 0x0
 
-    .line 3
     invoke-virtual {v1, v3, v3, v2, v2}, Lcom/google/zxing/common/BitMatrix;->setRegion(IIII)V
 
     add-int/lit8 v4, v0, -0x8
 
     const/16 v5, 0x8
 
-    .line 4
     invoke-virtual {v1, v4, v3, v5, v2}, Lcom/google/zxing/common/BitMatrix;->setRegion(IIII)V
 
-    .line 5
     invoke-virtual {v1, v3, v4, v2, v5}, Lcom/google/zxing/common/BitMatrix;->setRegion(IIII)V
 
-    .line 6
     iget-object v4, p0, Lcom/google/zxing/qrcode/decoder/Version;->alignmentPatternCenters:[I
 
     array-length v4, v4
@@ -5418,7 +5388,6 @@
     :goto_0
     if-ge v5, v4, :cond_4
 
-    .line 7
     iget-object v6, p0, Lcom/google/zxing/qrcode/decoder/Version;->alignmentPatternCenters:[I
 
     aget v6, v6, v5
@@ -5445,7 +5414,6 @@
 
     if-eqz v7, :cond_2
 
-    .line 8
     :cond_1
     iget-object v8, p0, Lcom/google/zxing/qrcode/decoder/Version;->alignmentPatternCenters:[I
 
@@ -5474,13 +5442,10 @@
 
     const/4 v6, 0x1
 
-    .line 9
     invoke-virtual {v1, v5, v2, v6, v4}, Lcom/google/zxing/common/BitMatrix;->setRegion(IIII)V
 
-    .line 10
     invoke-virtual {v1, v2, v5, v4, v6}, Lcom/google/zxing/common/BitMatrix;->setRegion(IIII)V
 
-    .line 11
     iget v2, p0, Lcom/google/zxing/qrcode/decoder/Version;->versionNumber:I
 
     if-le v2, v5, :cond_5
@@ -5489,10 +5454,8 @@
 
     const/4 v2, 0x3
 
-    .line 12
     invoke-virtual {v1, v0, v3, v2, v5}, Lcom/google/zxing/common/BitMatrix;->setRegion(IIII)V
 
-    .line 13
     invoke-virtual {v1, v3, v0, v5, v2}, Lcom/google/zxing/common/BitMatrix;->setRegion(IIII)V
 
     :cond_5
@@ -5502,7 +5465,6 @@
 .method public getAlignmentPatternCenters()[I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/qrcode/decoder/Version;->alignmentPatternCenters:[I
 
     return-object v0
@@ -5511,7 +5473,6 @@
 .method public getDimensionForVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/qrcode/decoder/Version;->versionNumber:I
 
     mul-int/lit8 v0, v0, 0x4
@@ -5524,7 +5485,6 @@
 .method public getECBlocksForLevel(Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;)Lcom/google/zxing/qrcode/decoder/Version$ECBlocks;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/qrcode/decoder/Version;->ecBlocks:[Lcom/google/zxing/qrcode/decoder/Version$ECBlocks;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
@@ -5539,7 +5499,6 @@
 .method public getTotalCodewords()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/qrcode/decoder/Version;->totalCodewords:I
 
     return v0
@@ -5548,7 +5507,6 @@
 .method public getVersionNumber()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/qrcode/decoder/Version;->versionNumber:I
 
     return v0
@@ -5557,7 +5515,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/qrcode/decoder/Version;->versionNumber:I
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;

@@ -1,6 +1,5 @@
 .class public Landroidx/appcompat/c/e;
 .super Landroidx/appcompat/c/b;
-.source "StandaloneActionMode.java"
 
 # interfaces
 .implements Landroidx/appcompat/view/menu/f$a;
@@ -40,19 +39,14 @@
 .method public constructor <init>(Landroid/content/Context;Landroidx/appcompat/widget/ActionBarContextView;Landroidx/appcompat/c/b$a;Z)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/appcompat/c/b;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/appcompat/c/e;->c:Landroid/content/Context;
 
-    .line 3
     iput-object p2, p0, Landroidx/appcompat/c/e;->d:Landroidx/appcompat/widget/ActionBarContextView;
 
-    .line 4
     iput-object p3, p0, Landroidx/appcompat/c/e;->e:Landroidx/appcompat/c/b$a;
 
-    .line 5
     new-instance p1, Landroidx/appcompat/view/menu/f;
 
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
@@ -69,7 +63,6 @@
 
     iput-object p1, p0, Landroidx/appcompat/c/e;->h:Landroidx/appcompat/view/menu/f;
 
-    .line 6
     invoke-virtual {p1, p0}, Landroidx/appcompat/view/menu/f;->setCallback(Landroidx/appcompat/view/menu/f$a;)V
 
     return-void
@@ -80,7 +73,6 @@
 .method public a()V
     .locals 2
 
-    .line 7
     iget-boolean v0, p0, Landroidx/appcompat/c/e;->g:Z
 
     if-eqz v0, :cond_0
@@ -90,17 +82,14 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 8
     iput-boolean v0, p0, Landroidx/appcompat/c/e;->g:Z
 
-    .line 9
     iget-object v0, p0, Landroidx/appcompat/c/e;->d:Landroidx/appcompat/widget/ActionBarContextView;
 
     const/16 v1, 0x20
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->sendAccessibilityEvent(I)V
 
-    .line 10
     iget-object v0, p0, Landroidx/appcompat/c/e;->e:Landroidx/appcompat/c/b$a;
 
     invoke-interface {v0, p0}, Landroidx/appcompat/c/b$a;->a(Landroidx/appcompat/c/b;)V
@@ -111,7 +100,6 @@
 .method public a(I)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/c/e;->c:Landroid/content/Context;
 
     invoke-virtual {v0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -126,14 +114,12 @@
 .method public a(Landroid/view/View;)V
     .locals 1
 
-    .line 5
     iget-object v0, p0, Landroidx/appcompat/c/e;->d:Landroidx/appcompat/widget/ActionBarContextView;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/ActionBarContextView;->setCustomView(Landroid/view/View;)V
 
     if-eqz p1, :cond_0
 
-    .line 6
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -152,7 +138,6 @@
 .method public a(Ljava/lang/CharSequence;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/c/e;->d:Landroidx/appcompat/widget/ActionBarContextView;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/ActionBarContextView;->setSubtitle(Ljava/lang/CharSequence;)V
@@ -163,10 +148,8 @@
 .method public a(Z)V
     .locals 1
 
-    .line 3
     invoke-super {p0, p1}, Landroidx/appcompat/c/b;->a(Z)V
 
-    .line 4
     iget-object v0, p0, Landroidx/appcompat/c/e;->d:Landroidx/appcompat/widget/ActionBarContextView;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/ActionBarContextView;->setTitleOptional(Z)V
@@ -177,7 +160,6 @@
 .method public b()Landroid/view/View;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Landroidx/appcompat/c/e;->f:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
@@ -200,7 +182,6 @@
 .method public b(I)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/c/e;->c:Landroid/content/Context;
 
     invoke-virtual {v0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -215,7 +196,6 @@
 .method public b(Ljava/lang/CharSequence;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/c/e;->d:Landroidx/appcompat/widget/ActionBarContextView;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/ActionBarContextView;->setTitle(Ljava/lang/CharSequence;)V
@@ -226,7 +206,6 @@
 .method public c()Landroid/view/Menu;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/c/e;->h:Landroidx/appcompat/view/menu/f;
 
     return-object v0
@@ -235,7 +214,6 @@
 .method public d()Landroid/view/MenuInflater;
     .locals 2
 
-    .line 1
     new-instance v0, Landroidx/appcompat/c/g;
 
     iget-object v1, p0, Landroidx/appcompat/c/e;->d:Landroidx/appcompat/widget/ActionBarContextView;
@@ -252,7 +230,6 @@
 .method public e()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/c/e;->d:Landroidx/appcompat/widget/ActionBarContextView;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActionBarContextView;->getSubtitle()Ljava/lang/CharSequence;
@@ -265,7 +242,6 @@
 .method public g()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/c/e;->d:Landroidx/appcompat/widget/ActionBarContextView;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActionBarContextView;->getTitle()Ljava/lang/CharSequence;
@@ -278,7 +254,6 @@
 .method public i()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/c/e;->e:Landroidx/appcompat/c/b$a;
 
     iget-object v1, p0, Landroidx/appcompat/c/e;->h:Landroidx/appcompat/view/menu/f;
@@ -291,7 +266,6 @@
 .method public j()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/c/e;->d:Landroidx/appcompat/widget/ActionBarContextView;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ActionBarContextView;->b()Z
@@ -312,7 +286,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/c/e;->e:Landroidx/appcompat/c/b$a;
 
     invoke-interface {p1, p0, p2}, Landroidx/appcompat/c/b$a;->a(Landroidx/appcompat/c/b;Landroid/view/MenuItem;)Z
@@ -329,10 +302,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroidx/appcompat/c/e;->i()V
 
-    .line 2
     iget-object p1, p0, Landroidx/appcompat/c/e;->d:Landroidx/appcompat/widget/ActionBarContextView;
 
     invoke-virtual {p1}, Landroidx/appcompat/widget/ActionBarContextView;->d()Z

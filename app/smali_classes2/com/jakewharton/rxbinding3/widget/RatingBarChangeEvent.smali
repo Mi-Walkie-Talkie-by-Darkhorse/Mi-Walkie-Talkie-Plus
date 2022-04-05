@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/widget/RatingBarChangeEvent;
 .super Ljava/lang/Object;
-.source "RatingBarRatingChangeEventObservable.kt"
 
 
 # annotations
@@ -73,7 +72,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/RatingBarChangeEvent;->view:Landroid/widget/RatingBar;
@@ -234,7 +232,6 @@
 .method public final getFromUser()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/jakewharton/rxbinding3/widget/RatingBarChangeEvent;->fromUser:Z
 
     return v0
@@ -243,7 +240,6 @@
 .method public final getRating()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/widget/RatingBarChangeEvent;->rating:F
 
     return v0
@@ -254,7 +250,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/RatingBarChangeEvent;->view:Landroid/widget/RatingBar;
 
     return-object v0

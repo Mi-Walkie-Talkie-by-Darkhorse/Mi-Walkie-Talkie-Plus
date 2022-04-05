@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/intercom/g/d/k;
 .super Lcom/ifengyu/intercom/g/d/b;
-.source "SplashCallback.java"
 
 
 # annotations
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/b;-><init>()V
 
     return-void
@@ -33,7 +31,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance p2, Lcom/google/gson/Gson;
 
     invoke-direct {p2}, Lcom/google/gson/Gson;-><init>()V
@@ -54,7 +51,6 @@
 
     check-cast p1, Lcom/ifengyu/intercom/bean/SplashResult;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->a()Landroid/content/Context;
 
     move-result-object p2
@@ -69,36 +65,30 @@
 
     move-result-object p2
 
-    .line 4
     iget v0, p1, Lcom/ifengyu/intercom/bean/SplashResult;->count:I
 
     const-string v1, "admodel"
 
     if-lez v0, :cond_8
 
-    .line 5
     iget-object p1, p1, Lcom/ifengyu/intercom/bean/SplashResult;->results:Ljava/util/List;
 
     const/4 v0, 0x0
 
-    .line 6
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Lcom/ifengyu/intercom/bean/AdModel;
 
-    .line 7
     iget-boolean v0, p1, Lcom/ifengyu/intercom/bean/AdModel;->isPublish:Z
 
     if-nez v0, :cond_0
 
-    .line 8
     invoke-virtual {p2, v1, p1}, Lcom/ifengyu/intercom/i/g;->a(Ljava/lang/String;Ljava/io/Serializable;)V
 
     return-object p1
 
-    .line 9
     :cond_0
     invoke-virtual {p2, v1}, Lcom/ifengyu/intercom/i/g;->b(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -110,12 +100,10 @@
 
     if-nez p2, :cond_1
 
-    .line 10
     iput-boolean v0, p1, Lcom/ifengyu/intercom/bean/AdModel;->isGoToDownload:Z
 
     goto :goto_0
 
-    .line 11
     :cond_1
     iget v1, p2, Lcom/ifengyu/intercom/bean/AdModel;->id:I
 
@@ -123,12 +111,10 @@
 
     if-eq v1, v2, :cond_2
 
-    .line 12
     iput-boolean v0, p1, Lcom/ifengyu/intercom/bean/AdModel;->isGoToDownload:Z
 
     goto :goto_0
 
-    .line 13
     :cond_2
     invoke-virtual {p2}, Lcom/ifengyu/intercom/bean/AdModel;->getUpdateTime()J
 
@@ -142,12 +128,10 @@
 
     if-eqz v5, :cond_3
 
-    .line 14
     iput-boolean v0, p1, Lcom/ifengyu/intercom/bean/AdModel;->isGoToDownload:Z
 
     goto :goto_0
 
-    .line 15
     :cond_3
     iget-object v1, p2, Lcom/ifengyu/intercom/bean/AdModel;->imagePath:Ljava/lang/String;
 
@@ -157,12 +141,10 @@
 
     if-eqz v1, :cond_4
 
-    .line 16
     iput-boolean v0, p1, Lcom/ifengyu/intercom/bean/AdModel;->isGoToDownload:Z
 
     goto :goto_0
 
-    .line 17
     :cond_4
     new-instance v1, Ljava/io/File;
 
@@ -170,19 +152,16 @@
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 18
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v2
 
     if-nez v2, :cond_5
 
-    .line 19
     iput-boolean v0, p1, Lcom/ifengyu/intercom/bean/AdModel;->isGoToDownload:Z
 
     goto :goto_0
 
-    .line 20
     :cond_5
     iget-object v2, p2, Lcom/ifengyu/intercom/bean/AdModel;->md5:Ljava/lang/String;
 
@@ -192,12 +171,10 @@
 
     if-eqz v2, :cond_6
 
-    .line 21
     iput-boolean v0, p1, Lcom/ifengyu/intercom/bean/AdModel;->isGoToDownload:Z
 
     goto :goto_0
 
-    .line 22
     :cond_6
     iget-object p2, p2, Lcom/ifengyu/intercom/bean/AdModel;->md5:Ljava/lang/String;
 
@@ -215,14 +192,12 @@
 
     if-nez p2, :cond_7
 
-    .line 23
     iput-boolean v0, p1, Lcom/ifengyu/intercom/bean/AdModel;->isGoToDownload:Z
 
     :cond_7
     :goto_0
     return-object p1
 
-    .line 24
     :cond_8
     invoke-virtual {p2, v1}, Lcom/ifengyu/intercom/i/g;->c(Ljava/lang/String;)Z
 
@@ -239,7 +214,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/g/d/k;->a(Lokhttp3/Response;I)Lcom/ifengyu/intercom/bean/AdModel;
 
     move-result-object p1

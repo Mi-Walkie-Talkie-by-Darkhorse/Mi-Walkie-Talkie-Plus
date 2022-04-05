@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/j/f$d;
 .super Ljava/lang/Object;
-.source "FileLoader.java"
 
 
 # annotations

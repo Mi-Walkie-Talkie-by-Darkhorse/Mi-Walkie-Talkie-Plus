@@ -1,6 +1,5 @@
 .class final Lcom/google/common/hash/Murmur3_32HashFunction;
 .super Lcom/google/common/hash/AbstractStreamingHashFunction;
-.source "Murmur3_32HashFunction.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -30,10 +29,8 @@
 .method constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/google/common/hash/Murmur3_32HashFunction;->seed:I
 
     return-void
@@ -42,7 +39,6 @@
 .method static synthetic access$000(I)I
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/hash/Murmur3_32HashFunction;->mixK1(I)I
 
     move-result p0
@@ -53,7 +49,6 @@
 .method static synthetic access$100(II)I
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/hash/Murmur3_32HashFunction;->mixH1(II)I
 
     move-result p0
@@ -64,7 +59,6 @@
 .method static synthetic access$200(II)Lcom/google/common/hash/HashCode;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/hash/Murmur3_32HashFunction;->fmix(II)Lcom/google/common/hash/HashCode;
 
     move-result-object p0
@@ -97,7 +91,6 @@
 
     xor-int/2addr p0, p1
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/hash/HashCode;->fromInt(I)Lcom/google/common/hash/HashCode;
 
     move-result-object p0
@@ -112,7 +105,6 @@
 
     const/16 p1, 0xd
 
-    .line 1
     invoke-static {p0, p1}, Ljava/lang/Integer;->rotateLeft(II)I
 
     move-result p0
@@ -135,7 +127,6 @@
 
     const/16 v0, 0xf
 
-    .line 1
     invoke-static {p0, v0}, Ljava/lang/Integer;->rotateLeft(II)I
 
     move-result p0
@@ -164,17 +155,14 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Lcom/google/common/hash/Murmur3_32HashFunction;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/common/hash/Murmur3_32HashFunction;
 
-    .line 3
     iget v0, p0, Lcom/google/common/hash/Murmur3_32HashFunction;->seed:I
 
     iget p1, p1, Lcom/google/common/hash/Murmur3_32HashFunction;->seed:I
@@ -190,7 +178,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     const-class v0, Lcom/google/common/hash/Murmur3_32HashFunction;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -207,12 +194,10 @@
 .method public hashInt(I)Lcom/google/common/hash/HashCode;
     .locals 1
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/hash/Murmur3_32HashFunction;->mixK1(I)I
 
     move-result p1
 
-    .line 2
     iget v0, p0, Lcom/google/common/hash/Murmur3_32HashFunction;->seed:I
 
     invoke-static {v0, p1}, Lcom/google/common/hash/Murmur3_32HashFunction;->mixH1(II)I
@@ -221,7 +206,6 @@
 
     const/4 v0, 0x4
 
-    .line 3
     invoke-static {p1, v0}, Lcom/google/common/hash/Murmur3_32HashFunction;->fmix(II)Lcom/google/common/hash/HashCode;
 
     move-result-object p1
@@ -240,31 +224,26 @@
 
     long-to-int p2, p1
 
-    .line 1
     invoke-static {v0}, Lcom/google/common/hash/Murmur3_32HashFunction;->mixK1(I)I
 
     move-result p1
 
-    .line 2
     iget v0, p0, Lcom/google/common/hash/Murmur3_32HashFunction;->seed:I
 
     invoke-static {v0, p1}, Lcom/google/common/hash/Murmur3_32HashFunction;->mixH1(II)I
 
     move-result p1
 
-    .line 3
     invoke-static {p2}, Lcom/google/common/hash/Murmur3_32HashFunction;->mixK1(I)I
 
     move-result p2
 
-    .line 4
     invoke-static {p1, p2}, Lcom/google/common/hash/Murmur3_32HashFunction;->mixH1(II)I
 
     move-result p1
 
     const/16 p2, 0x8
 
-    .line 5
     invoke-static {p1, p2}, Lcom/google/common/hash/Murmur3_32HashFunction;->fmix(II)Lcom/google/common/hash/HashCode;
 
     move-result-object p1
@@ -275,14 +254,12 @@
 .method public hashUnencodedChars(Ljava/lang/CharSequence;)Lcom/google/common/hash/HashCode;
     .locals 5
 
-    .line 1
     iget v0, p0, Lcom/google/common/hash/Murmur3_32HashFunction;->seed:I
 
     const/4 v1, 0x1
 
     const/4 v2, 0x1
 
-    .line 2
     :goto_0
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
@@ -292,7 +269,6 @@
 
     add-int/lit8 v3, v2, -0x1
 
-    .line 3
     invoke-interface {p1, v3}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v3
@@ -305,12 +281,10 @@
 
     or-int/2addr v3, v4
 
-    .line 4
     invoke-static {v3}, Lcom/google/common/hash/Murmur3_32HashFunction;->mixK1(I)I
 
     move-result v3
 
-    .line 5
     invoke-static {v0, v3}, Lcom/google/common/hash/Murmur3_32HashFunction;->mixH1(II)I
 
     move-result v0
@@ -319,7 +293,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
@@ -329,7 +302,6 @@
 
     if-ne v2, v1, :cond_1
 
-    .line 7
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v2
@@ -340,14 +312,12 @@
 
     move-result v1
 
-    .line 8
     invoke-static {v1}, Lcom/google/common/hash/Murmur3_32HashFunction;->mixK1(I)I
 
     move-result v1
 
     xor-int/2addr v0, v1
 
-    .line 9
     :cond_1
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
@@ -365,7 +335,6 @@
 .method public newHasher()Lcom/google/common/hash/Hasher;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/hash/Murmur3_32HashFunction$Murmur3_32Hasher;
 
     iget v1, p0, Lcom/google/common/hash/Murmur3_32HashFunction;->seed:I
@@ -378,7 +347,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/google/common/hash/Murmur3_32HashFunction;->seed:I
 
     new-instance v1, Ljava/lang/StringBuilder;

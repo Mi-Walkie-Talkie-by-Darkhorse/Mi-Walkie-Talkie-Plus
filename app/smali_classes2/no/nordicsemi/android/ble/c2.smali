@@ -1,6 +1,5 @@
 .class public final Lno/nordicsemi/android/ble/c2;
 .super Lno/nordicsemi/android/ble/n2;
-.source "ConnectionPriorityRequest.java"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/f2;
@@ -31,7 +30,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/c2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/c2;
 
     return-object p0
@@ -46,7 +44,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-super {p0, p1}, Lno/nordicsemi/android/ble/Request;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/Request;
 
     return-object p0
@@ -55,7 +52,6 @@
 .method h()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lno/nordicsemi/android/ble/c2;->q:I
 
     return v0

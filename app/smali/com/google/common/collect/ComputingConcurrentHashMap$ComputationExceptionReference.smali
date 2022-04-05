@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/ComputingConcurrentHashMap$ComputationExceptionReference;
 .super Ljava/lang/Object;
-.source "ComputingConcurrentHashMap.java"
 
 # interfaces
 .implements Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
@@ -38,10 +37,8 @@
 .method constructor <init>(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputationExceptionReference;->t:Ljava/lang/Throwable;
 
     return-void
@@ -129,7 +126,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/ExecutionException;
 
     iget-object v1, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputationExceptionReference;->t:Ljava/lang/Throwable;

@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/d$a;
 .super Ljava/lang/Object;
-.source "AppCompatDialog.java"
 
 # interfaces
 .implements Landroidx/core/view/e$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/app/d;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/d$a;->a:Landroidx/appcompat/app/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public superDispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/app/d$a;->a:Landroidx/appcompat/app/d;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/app/d;->superDispatchKeyEvent(Landroid/view/KeyEvent;)Z

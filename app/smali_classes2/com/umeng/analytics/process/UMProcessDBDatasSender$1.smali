@@ -1,6 +1,5 @@
 .class Lcom/umeng/analytics/process/UMProcessDBDatasSender$1;
 .super Ljava/lang/Object;
-.source "UMProcessDBDatasSender.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/umeng/analytics/process/UMProcessDBDatasSender;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/analytics/process/UMProcessDBDatasSender$1;->a:Lcom/umeng/analytics/process/UMProcessDBDatasSender;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,10 +40,8 @@
 
     const-string v1, "--->>> call processDBToMain start."
 
-    .line 1
     invoke-static {v0, v1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/analytics/process/UMProcessDBDatasSender$1;->a:Lcom/umeng/analytics/process/UMProcessDBDatasSender;
 
     invoke-static {v0}, Lcom/umeng/analytics/process/UMProcessDBDatasSender;->access$000(Lcom/umeng/analytics/process/UMProcessDBDatasSender;)Landroid/content/Context;

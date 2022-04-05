@@ -1,6 +1,5 @@
 .class public final Landroidx/savedstate/a;
 .super Ljava/lang/Object;
-.source "SavedStateRegistryController.java"
 
 
 # instance fields
@@ -13,13 +12,10 @@
 .method private constructor <init>(Landroidx/savedstate/b;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/savedstate/a;->a:Landroidx/savedstate/b;
 
-    .line 3
     new-instance p1, Landroidx/savedstate/SavedStateRegistry;
 
     invoke-direct {p1}, Landroidx/savedstate/SavedStateRegistry;-><init>()V
@@ -38,7 +34,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 7
     new-instance v0, Landroidx/savedstate/a;
 
     invoke-direct {v0, p0}, Landroidx/savedstate/a;-><init>(Landroidx/savedstate/b;)V
@@ -53,7 +48,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/savedstate/a;->b:Landroidx/savedstate/SavedStateRegistry;
 
     return-object v0
@@ -68,14 +62,12 @@
     .annotation build Landroidx/annotation/MainThread;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/savedstate/a;->a:Landroidx/savedstate/b;
 
     invoke-interface {v0}, Landroidx/lifecycle/k;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Landroidx/lifecycle/Lifecycle;->a()Landroidx/lifecycle/Lifecycle$State;
 
     move-result-object v1
@@ -84,7 +76,6 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 4
     new-instance v1, Landroidx/savedstate/Recreator;
 
     iget-object v2, p0, Landroidx/savedstate/a;->a:Landroidx/savedstate/b;
@@ -93,14 +84,12 @@
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/Lifecycle;->a(Landroidx/lifecycle/j;)V
 
-    .line 5
     iget-object v1, p0, Landroidx/savedstate/a;->b:Landroidx/savedstate/SavedStateRegistry;
 
     invoke-virtual {v1, v0, p1}, Landroidx/savedstate/SavedStateRegistry;->a(Landroidx/lifecycle/Lifecycle;Landroid/os/Bundle;)V
 
     return-void
 
-    .line 6
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -120,7 +109,6 @@
     .annotation build Landroidx/annotation/MainThread;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/savedstate/a;->b:Landroidx/savedstate/SavedStateRegistry;
 
     invoke-virtual {v0, p1}, Landroidx/savedstate/SavedStateRegistry;->a(Landroid/os/Bundle;)V

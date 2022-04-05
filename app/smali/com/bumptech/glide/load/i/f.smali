@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/i/f;
 .super Ljava/lang/Object;
-.source "DataRewinderRegistry.java"
 
 
 # annotations
@@ -40,7 +39,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/i/f$a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/i/f$a;-><init>()V
@@ -53,10 +51,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -89,11 +85,9 @@
 
     monitor-enter p0
 
-    .line 3
     :try_start_0
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
     iget-object v0, p0, Lcom/bumptech/glide/load/i/f;->a:Ljava/util/Map;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -108,7 +102,6 @@
 
     if-nez v0, :cond_1
 
-    .line 5
     iget-object v1, p0, Lcom/bumptech/glide/load/i/f;->a:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->values()Ljava/util/Collection;
@@ -132,7 +125,6 @@
 
     check-cast v2, Lcom/bumptech/glide/load/i/e$a;
 
-    .line 6
     invoke-interface {v2}, Lcom/bumptech/glide/load/i/e$a;->a()Ljava/lang/Class;
 
     move-result-object v3
@@ -152,10 +144,8 @@
     :cond_1
     if-nez v0, :cond_2
 
-    .line 7
     sget-object v0, Lcom/bumptech/glide/load/i/f;->b:Lcom/bumptech/glide/load/i/e$a;
 
-    .line 8
     :cond_2
     invoke-interface {v0, p1}, Lcom/bumptech/glide/load/i/e$a;->a(Ljava/lang/Object;)Lcom/bumptech/glide/load/i/e;
 
@@ -191,7 +181,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/bumptech/glide/load/i/f;->a:Ljava/util/Map;
 
@@ -203,7 +192,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     monitor-exit p0
 
     return-void

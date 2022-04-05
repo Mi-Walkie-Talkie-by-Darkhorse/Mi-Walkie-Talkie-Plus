@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/lite/g/q;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;

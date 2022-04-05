@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/SplashActivity$f;
 .super Ljava/lang/Object;
-.source "SplashActivity.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/request/d;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/SplashActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$f;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -59,7 +57,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$f;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/SplashActivity;->e(Lcom/ifengyu/intercom/ui/SplashActivity;)Lpl/droidsonroids/gif/GifImageView;
@@ -70,7 +67,6 @@
 
     invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$f;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/SplashActivity;->f(Lcom/ifengyu/intercom/ui/SplashActivity;)Landroid/widget/TextView;
@@ -107,7 +103,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;Ljava/lang/Object;Lcom/bumptech/glide/request/h/h;Lcom/bumptech/glide/load/DataSource;Z)Z
     .locals 0
 
-    .line 1
     check-cast p1, Landroid/graphics/drawable/Drawable;
 
     invoke-virtual/range {p0 .. p5}, Lcom/ifengyu/intercom/ui/SplashActivity$f;->a(Landroid/graphics/drawable/Drawable;Ljava/lang/Object;Lcom/bumptech/glide/request/h/h;Lcom/bumptech/glide/load/DataSource;Z)Z

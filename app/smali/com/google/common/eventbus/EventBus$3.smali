@@ -1,6 +1,5 @@
 .class Lcom/google/common/eventbus/EventBus$3;
 .super Ljava/lang/ThreadLocal;
-.source "EventBus.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>(Lcom/google/common/eventbus/EventBus;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/eventbus/EventBus$3;->this$0:Lcom/google/common/eventbus/EventBus;
 
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
@@ -45,7 +43,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
@@ -56,7 +53,6 @@
 .method protected bridge synthetic initialValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/eventbus/EventBus$3;->initialValue()Ljava/lang/Boolean;
 
     move-result-object v0

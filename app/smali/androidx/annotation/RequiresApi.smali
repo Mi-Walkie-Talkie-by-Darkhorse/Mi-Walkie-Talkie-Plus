@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/RequiresApi;
 .super Ljava/lang/Object;
-.source "RequiresApi.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

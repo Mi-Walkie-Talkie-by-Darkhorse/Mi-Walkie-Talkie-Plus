@@ -1,6 +1,5 @@
 .class final Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$RedirectHandler;
 .super Ljava/lang/Object;
-.source "DownloadUrlConnection.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/IRedirectHandler;
@@ -25,7 +24,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$RedirectHandler;->redirectLocation:Ljava/lang/String;
 
     return-object v0
@@ -65,17 +62,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p2}, Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Connected;->getResponseCode()I
 
     move-result v0
 
-    .line 2
     check-cast p1, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection;
 
     const/4 v1, 0x0
 
-    .line 3
     :goto_0
     invoke-static {v0}, Lcom/liulishuo/okdownload/RedirectUtil;->isRedirect(I)Z
 
@@ -83,7 +77,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 4
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection;->release()V
 
     add-int/lit8 v1, v1, 0x1
@@ -92,14 +85,12 @@
 
     if-gt v1, v2, :cond_0
 
-    .line 5
     invoke-static {p2, v0}, Lcom/liulishuo/okdownload/RedirectUtil;->getRedirectedUrl(Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Connected;I)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$RedirectHandler;->redirectLocation:Ljava/lang/String;
 
-    .line 6
     new-instance v0, Ljava/net/URL;
 
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$RedirectHandler;->redirectLocation:Ljava/lang/String;
@@ -108,25 +99,20 @@
 
     invoke-static {p1, v0}, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection;->access$302(Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection;Ljava/net/URL;)Ljava/net/URL;
 
-    .line 7
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection;->configUrlConnection()V
 
-    .line 8
     invoke-static {p3, p1}, Lcom/liulishuo/okdownload/core/Util;->addRequestHeaderFields(Ljava/util/Map;Lcom/liulishuo/okdownload/core/connection/DownloadConnection;)V
 
-    .line 9
     iget-object v0, p1, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection;->connection:Ljava/net/URLConnection;
 
     invoke-virtual {v0}, Ljava/net/URLConnection;->connect()V
 
-    .line 10
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection;->getResponseCode()I
 
     move-result v0
 
     goto :goto_0
 
-    .line 11
     :cond_0
     new-instance p1, Ljava/net/ProtocolException;
 

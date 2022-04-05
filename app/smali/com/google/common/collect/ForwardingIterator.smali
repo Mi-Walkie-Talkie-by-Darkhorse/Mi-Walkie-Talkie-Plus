@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/ForwardingIterator;
 .super Lcom/google/common/collect/ForwardingObject;
-.source "ForwardingIterator.java"
 
 # interfaces
 .implements Ljava/util/Iterator;
@@ -26,7 +25,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingObject;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingIterator;->delegate()Ljava/util/Iterator;
 
     move-result-object v0
@@ -58,7 +55,6 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingIterator;->delegate()Ljava/util/Iterator;
 
     move-result-object v0
@@ -78,7 +74,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingIterator;->delegate()Ljava/util/Iterator;
 
     move-result-object v0
@@ -93,7 +88,6 @@
 .method public remove()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingIterator;->delegate()Ljava/util/Iterator;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/callback/GLMapCoreCallback;
 .super Ljava/lang/Object;
-.source "GLMapCoreCallback.java"
 
 
 # virtual methods

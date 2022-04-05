@@ -1,6 +1,5 @@
 .class Landroidx/exifinterface/media/ExifInterface$c;
 .super Ljava/io/FilterOutputStream;
-.source "ExifInterface.java"
 
 
 # annotations
@@ -24,13 +23,10 @@
 .method public constructor <init>(Ljava/io/OutputStream;Ljava/nio/ByteOrder;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
 
-    .line 2
     iput-object p1, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
-    .line 3
     iput-object p2, p0, Landroidx/exifinterface/media/ExifInterface$c;->b:Ljava/nio/ByteOrder;
 
     return-void
@@ -48,7 +44,6 @@
 
     int-to-short p1, p1
 
-    .line 8
     invoke-virtual {p0, p1}, Landroidx/exifinterface/media/ExifInterface$c;->a(S)V
 
     return-void
@@ -64,7 +59,6 @@
 
     long-to-int p2, p1
 
-    .line 9
     invoke-virtual {p0, p2}, Landroidx/exifinterface/media/ExifInterface$c;->writeInt(I)V
 
     return-void
@@ -73,7 +67,6 @@
 .method public a(Ljava/nio/ByteOrder;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/exifinterface/media/ExifInterface$c;->b:Ljava/nio/ByteOrder;
 
     return-void
@@ -87,14 +80,12 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->b:Ljava/nio/ByteOrder;
 
     sget-object v1, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 v1, p1, 0x0
@@ -103,7 +94,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 4
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 p1, p1, 0x8
@@ -114,13 +104,11 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     sget-object v1, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
 
     if-ne v0, v1, :cond_1
 
-    .line 6
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 v1, p1, 0x8
@@ -129,7 +117,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 7
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 p1, p1, 0x0
@@ -151,7 +138,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write([B)V
@@ -167,7 +153,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
@@ -183,7 +168,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
@@ -199,14 +183,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->b:Ljava/nio/ByteOrder;
 
     sget-object v1, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 v1, p1, 0x0
@@ -215,7 +197,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 3
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 v1, p1, 0x8
@@ -224,7 +205,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 4
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 v1, p1, 0x10
@@ -233,7 +213,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 5
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 p1, p1, 0x18
@@ -244,13 +223,11 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     sget-object v1, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
 
     if-ne v0, v1, :cond_1
 
-    .line 7
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 v1, p1, 0x18
@@ -259,7 +236,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 8
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 v1, p1, 0x10
@@ -268,7 +244,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 9
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 v1, p1, 0x8
@@ -277,7 +252,6 @@
 
     invoke-virtual {v0, v1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 10
     iget-object v0, p0, Landroidx/exifinterface/media/ExifInterface$c;->a:Ljava/io/OutputStream;
 
     ushr-int/lit8 p1, p1, 0x0

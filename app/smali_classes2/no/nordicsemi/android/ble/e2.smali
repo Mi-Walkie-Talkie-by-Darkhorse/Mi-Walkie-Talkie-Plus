@@ -1,6 +1,5 @@
 .class public final Lno/nordicsemi/android/ble/e2;
 .super Lno/nordicsemi/android/ble/n2;
-.source "MtuRequest.java"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/f2;
@@ -35,7 +34,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lno/nordicsemi/android/ble/n2;-><init>(Lno/nordicsemi/android/ble/Request$Type;)V
 
     const/16 p1, 0x17
@@ -51,7 +49,6 @@
 
     const/16 p2, 0x205
 
-    .line 2
     :cond_1
     iput p2, p0, Lno/nordicsemi/android/ble/e2;->q:I
 
@@ -69,7 +66,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/e2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/e2;
 
     return-object p0
@@ -84,7 +80,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-super {p0, p1}, Lno/nordicsemi/android/ble/Request;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/Request;
 
     return-object p0
@@ -99,7 +94,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 3
     invoke-super {p0, p1}, Lno/nordicsemi/android/ble/Request;->a(Lno/nordicsemi/android/ble/u2/d;)Lno/nordicsemi/android/ble/Request;
 
     return-object p0
@@ -114,7 +108,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 4
     invoke-super {p0, p1}, Lno/nordicsemi/android/ble/n2;->a(Ljava/lang/Object;)Lno/nordicsemi/android/ble/n2;
 
     return-object p0
@@ -123,12 +116,10 @@
 .method public synthetic c(Landroid/bluetooth/BluetoothDevice;I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/n2;->p:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast v0, Lno/nordicsemi/android/ble/u2/f;
 
     invoke-interface {v0, p1, p2}, Lno/nordicsemi/android/ble/u2/f;->a(Landroid/bluetooth/BluetoothDevice;I)V
@@ -150,7 +141,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/Request;->b:Lno/nordicsemi/android/ble/z1;
 
     new-instance v1, Lno/nordicsemi/android/ble/z0;
@@ -165,7 +155,6 @@
 .method h()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lno/nordicsemi/android/ble/e2;->q:I
 
     return v0

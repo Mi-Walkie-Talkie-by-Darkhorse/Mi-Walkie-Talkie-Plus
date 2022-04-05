@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/AbstractExecutionThreadService$2;
 .super Ljava/lang/Object;
-.source "AbstractExecutionThreadService.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Executor;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/AbstractExecutionThreadService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/AbstractExecutionThreadService$2;->this$0:Lcom/google/common/util/concurrent/AbstractExecutionThreadService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public execute(Ljava/lang/Runnable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractExecutionThreadService$2;->this$0:Lcom/google/common/util/concurrent/AbstractExecutionThreadService;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/AbstractExecutionThreadService;->serviceName()Ljava/lang/String;

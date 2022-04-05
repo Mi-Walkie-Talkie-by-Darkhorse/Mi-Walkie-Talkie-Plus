@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/util/g;
 .super Ljava/io/FilterInputStream;
-.source "MarkEnforcingInputStream.java"
 
 
 # instance fields
@@ -15,12 +14,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
 
     const/high16 p1, -0x80000000
 
-    .line 2
     iput p1, p0, Lcom/bumptech/glide/util/g;->a:I
 
     return-void
@@ -29,7 +26,6 @@
 .method private a(J)J
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/bumptech/glide/util/g;->a:I
 
     if-nez v0, :cond_0
@@ -58,7 +54,6 @@
 .method private b(J)V
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/bumptech/glide/util/g;->a:I
 
     const/high16 v1, -0x80000000
@@ -77,7 +72,6 @@
 
     long-to-int p1, v0
 
-    .line 2
     iput p1, p0, Lcom/bumptech/glide/util/g;->a:I
 
     :cond_0
@@ -94,7 +88,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/bumptech/glide/util/g;->a:I
 
     const/high16 v1, -0x80000000
@@ -107,7 +100,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-super {p0}, Ljava/io/FilterInputStream;->available()I
 
@@ -126,16 +118,13 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-super {p0, p1}, Ljava/io/FilterInputStream;->mark(I)V
 
-    .line 2
     iput p1, p0, Lcom/bumptech/glide/util/g;->a:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     monitor-exit p0
 
     return-void
@@ -158,7 +147,6 @@
 
     const-wide/16 v0, 0x1
 
-    .line 1
     invoke-direct {p0, v0, v1}, Lcom/bumptech/glide/util/g;->a(J)J
 
     move-result-wide v2
@@ -173,13 +161,11 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-super {p0}, Ljava/io/FilterInputStream;->read()I
 
     move-result v2
 
-    .line 3
     invoke-direct {p0, v0, v1}, Lcom/bumptech/glide/util/g;->b(J)V
 
     return v2
@@ -199,7 +185,6 @@
 
     int-to-long v0, p3
 
-    .line 4
     invoke-direct {p0, v0, v1}, Lcom/bumptech/glide/util/g;->a(J)J
 
     move-result-wide v0
@@ -212,7 +197,6 @@
 
     return v0
 
-    .line 5
     :cond_0
     invoke-super {p0, p1, p2, p3}, Ljava/io/FilterInputStream;->read([BII)I
 
@@ -220,7 +204,6 @@
 
     int-to-long p2, p1
 
-    .line 6
     invoke-direct {p0, p2, p3}, Lcom/bumptech/glide/util/g;->b(J)V
 
     return p1
@@ -236,18 +219,15 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-super {p0}, Ljava/io/FilterInputStream;->reset()V
 
     const/high16 v0, -0x80000000
 
-    .line 2
     iput v0, p0, Lcom/bumptech/glide/util/g;->a:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     monitor-exit p0
 
     return-void
@@ -268,7 +248,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/bumptech/glide/util/g;->a(J)J
 
     move-result-wide p1
@@ -283,13 +262,11 @@
 
     return-wide p1
 
-    .line 2
     :cond_0
     invoke-super {p0, p1, p2}, Ljava/io/FilterInputStream;->skip(J)J
 
     move-result-wide p1
 
-    .line 3
     invoke-direct {p0, p1, p2}, Lcom/bumptech/glide/util/g;->b(J)V
 
     return-wide p1

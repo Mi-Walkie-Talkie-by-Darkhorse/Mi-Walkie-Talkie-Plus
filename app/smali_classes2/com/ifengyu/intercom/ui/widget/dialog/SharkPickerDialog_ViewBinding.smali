@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog_ViewBinding;
 .super Ljava/lang/Object;
-.source "SharkPickerDialog_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog_ViewBinding;->a:Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;
 
-    .line 3
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090499
@@ -37,7 +33,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->mTvTitle:Landroid/widget/TextView;
 
-    .line 4
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 
     const v1, 0x7f0902e6
@@ -52,7 +47,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->mNp1:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 
-    .line 5
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 
     const v1, 0x7f0902e7
@@ -67,7 +61,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->mNp2:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 
-    .line 6
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f0900af
@@ -82,7 +75,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->mButtonNegative:Landroid/widget/TextView;
 
-    .line 7
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f0900b1
@@ -107,34 +99,26 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog_ViewBinding;->a:Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog_ViewBinding;->a:Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->mTvTitle:Landroid/widget/TextView;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->mNp1:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->mNp2:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->mButtonNegative:Landroid/widget/TextView;
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->mButtonPositive:Landroid/widget/TextView;
 
     return-void
 
-    .line 8
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

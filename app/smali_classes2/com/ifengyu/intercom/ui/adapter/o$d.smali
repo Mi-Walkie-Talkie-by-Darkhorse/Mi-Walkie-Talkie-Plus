@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/adapter/o$d;
 .super Ljava/lang/Object;
-.source "SharkCustomAdapter.java"
 
 
 # annotations

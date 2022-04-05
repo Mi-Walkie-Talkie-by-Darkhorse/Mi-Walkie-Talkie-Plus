@@ -1,6 +1,5 @@
 .class public abstract Landroidx/room/c;
 .super Landroidx/room/o;
-.source "EntityInsertionAdapter.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method public constructor <init>(Landroidx/room/RoomDatabase;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/room/o;-><init>(Landroidx/room/RoomDatabase;)V
 
     return-void
@@ -40,23 +38,19 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroidx/room/o;->a()La/g/a/f;
 
     move-result-object v0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0, v0, p1}, Landroidx/room/c;->a(La/g/a/f;Ljava/lang/Object;)V
 
-    .line 3
     invoke-interface {v0}, La/g/a/f;->executeInsert()J
 
     move-result-wide v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     invoke-virtual {p0, v0}, Landroidx/room/o;->a(La/g/a/f;)V
 
     return-wide v1
@@ -66,7 +60,6 @@
 
     invoke-virtual {p0, v0}, Landroidx/room/o;->a(La/g/a/f;)V
 
-    .line 5
     throw p1
 .end method
 
@@ -83,12 +76,10 @@
         }
     .end annotation
 
-    .line 6
     invoke-virtual {p0}, Landroidx/room/o;->a()La/g/a/f;
 
     move-result-object v0
 
-    .line 7
     :try_start_0
     new-instance v1, Ljava/util/ArrayList;
 
@@ -100,7 +91,6 @@
 
     const/4 v2, 0x0
 
-    .line 8
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -116,10 +106,8 @@
 
     move-result-object v3
 
-    .line 9
     invoke-virtual {p0, v0, v3}, Landroidx/room/c;->a(La/g/a/f;Ljava/lang/Object;)V
 
-    .line 10
     invoke-interface {v0}, La/g/a/f;->executeInsert()J
 
     move-result-wide v3
@@ -136,7 +124,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_0
     invoke-virtual {p0, v0}, Landroidx/room/o;->a(La/g/a/f;)V
 
@@ -147,7 +134,6 @@
 
     invoke-virtual {p0, v0}, Landroidx/room/o;->a(La/g/a/f;)V
 
-    .line 12
     throw p1
 .end method
 

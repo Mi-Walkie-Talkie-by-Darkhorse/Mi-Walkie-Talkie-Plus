@@ -1,6 +1,5 @@
 .class final Landroidx/lifecycle/SavedStateHandleController$a;
 .super Ljava/lang/Object;
-.source "SavedStateHandleController.java"
 
 # interfaces
 .implements Landroidx/savedstate/SavedStateRegistry$a;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,12 +34,10 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Landroidx/lifecycle/z;
 
     if-eqz v0, :cond_2
 
-    .line 2
     move-object v0, p1
 
     check-cast v0, Landroidx/lifecycle/z;
@@ -50,12 +46,10 @@
 
     move-result-object v0
 
-    .line 3
     invoke-interface {p1}, Landroidx/savedstate/b;->getSavedStateRegistry()Landroidx/savedstate/SavedStateRegistry;
 
     move-result-object v1
 
-    .line 4
     invoke-virtual {v0}, Landroidx/lifecycle/y;->b()Ljava/util/Set;
 
     move-result-object v2
@@ -77,12 +71,10 @@
 
     check-cast v3, Ljava/lang/String;
 
-    .line 5
     invoke-virtual {v0, v3}, Landroidx/lifecycle/y;->a(Ljava/lang/String;)Landroidx/lifecycle/v;
 
     move-result-object v3
 
-    .line 6
     invoke-interface {p1}, Landroidx/lifecycle/k;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
     move-result-object v4
@@ -91,7 +83,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {v0}, Landroidx/lifecycle/y;->b()Ljava/util/Set;
 
@@ -103,7 +94,6 @@
 
     if-nez p1, :cond_1
 
-    .line 8
     const-class p1, Landroidx/lifecycle/SavedStateHandleController$a;
 
     invoke-virtual {v1, p1}, Landroidx/savedstate/SavedStateRegistry;->a(Ljava/lang/Class;)V
@@ -111,7 +101,6 @@
     :cond_1
     return-void
 
-    .line 9
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 

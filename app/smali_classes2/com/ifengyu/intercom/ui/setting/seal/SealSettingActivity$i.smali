@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$i;
 .super Ljava/lang/Object;
-.source "SealSettingActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/q$c;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$i;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,21 +42,18 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->E()I
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$i;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;->c(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;I)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$i;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 

@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/g/a$a;
 .super Ljava/lang/Object;
-.source "FengYuApi.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;->values()[Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
     move-result-object v0

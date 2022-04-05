@@ -1,13 +1,11 @@
 .class public Lcom/autonavi/amap/mapcore/Convert;
 .super Ljava/lang/Object;
-.source "Convert.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -16,7 +14,6 @@
 .method public static final bytesToHexString([B)Ljava/lang/String;
     .locals 6
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuffer;
 
     array-length v1, p0
@@ -27,13 +24,11 @@
 
     const/4 v2, 0x0
 
-    .line 2
     :goto_0
     array-length v3, p0
 
     if-ge v2, v3, :cond_1
 
-    .line 3
     aget-byte v3, p0, v2
 
     and-int/lit16 v3, v3, 0xff
@@ -42,7 +37,6 @@
 
     move-result-object v3
 
-    .line 4
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
     move-result v4
@@ -51,10 +45,8 @@
 
     if-ge v4, v5, :cond_0
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
-    .line 6
     :cond_0
     invoke-virtual {v3}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
@@ -66,7 +58,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -78,13 +69,11 @@
 .method public static convert1bString([BILcom/autonavi/amap/mapcore/ConvertString;)V
     .locals 3
 
-    .line 1
     :try_start_0
     aget-byte v0, p0, p1
 
     iput v0, p2, Lcom/autonavi/amap/mapcore/ConvertString;->byteLength:I
 
-    .line 2
     new-instance v0, Ljava/lang/String;
 
     add-int/lit8 p1, p1, 0x1
@@ -104,17 +93,14 @@
     :catch_0
     move-exception p0
 
-    .line 3
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     const/4 p0, 0x0
 
-    .line 4
     iput p0, p2, Lcom/autonavi/amap/mapcore/ConvertString;->byteLength:I
 
     const-string p0, ""
 
-    .line 5
     iput-object p0, p2, Lcom/autonavi/amap/mapcore/ConvertString;->value:Ljava/lang/String;
 
     return-void
@@ -123,7 +109,6 @@
 .method public static convert2bString([BILcom/autonavi/amap/mapcore/ConvertString;)V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {p0, p1}, Lcom/autonavi/amap/mapcore/Convert;->getShort([BI)S
 
@@ -131,7 +116,6 @@
 
     iput v0, p2, Lcom/autonavi/amap/mapcore/ConvertString;->byteLength:I
 
-    .line 2
     new-instance v0, Ljava/lang/String;
 
     add-int/lit8 p1, p1, 0x2
@@ -151,17 +135,14 @@
     :catch_0
     move-exception p0
 
-    .line 3
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     const/4 p0, 0x0
 
-    .line 4
     iput p0, p2, Lcom/autonavi/amap/mapcore/ConvertString;->byteLength:I
 
     const-string p0, ""
 
-    .line 5
     iput-object p0, p2, Lcom/autonavi/amap/mapcore/ConvertString;->value:Ljava/lang/String;
 
     return-void
@@ -181,7 +162,6 @@
 
     add-int v3, v2, p1
 
-    .line 1
     aget-byte v3, p0, v3
 
     and-int/lit16 v3, v3, 0xff
@@ -198,7 +178,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-static {v0, v1}, Ljava/lang/Double;->longBitsToDouble(J)D
 
@@ -286,12 +265,10 @@
 .method public static copyString([BII)[B
     .locals 2
 
-    .line 1
     new-array v0, p2, [B
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-static {p0, p1, v0, v1, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-object v0
@@ -316,7 +293,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     :try_start_0
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
@@ -324,7 +300,6 @@
 
     const-string v2, "UTF-8"
 
-    .line 2
     invoke-virtual {p0, v2}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object p0
@@ -333,20 +308,16 @@
 
     const/4 v3, 0x0
 
-    .line 3
     array-length v4, p0
 
     int-to-byte v4, v4
 
     aput-byte v4, v2, v3
 
-    .line 4
     invoke-virtual {v1, v2}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 5
     invoke-virtual {v1, p0}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 6
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
@@ -358,7 +329,6 @@
     :catch_0
     move-exception p0
 
-    .line 7
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     new-array p0, v0, [B
@@ -369,7 +339,6 @@
 .method public static get2BString(Ljava/lang/String;)[B
     .locals 2
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
@@ -377,12 +346,10 @@
 
     const-string v1, "UTF-8"
 
-    .line 2
     invoke-virtual {p0, v1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object p0
 
-    .line 3
     array-length v1, p0
 
     invoke-static {v1}, Lcom/autonavi/amap/mapcore/Convert;->convertShort(I)[B
@@ -391,10 +358,8 @@
 
     invoke-virtual {v0, v1}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 4
     invoke-virtual {v0, p0}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 5
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
@@ -406,7 +371,6 @@
     :catch_0
     move-exception p0
 
-    .line 6
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     const/4 p0, 0x1
@@ -448,12 +412,10 @@
 
     new-array v1, v0, [B
 
-    .line 1
     invoke-static {p0, p1}, Ljava/lang/Double;->doubleToLongBits(D)J
 
     move-result-wide p0
 
-    .line 2
     invoke-static {p0, p1}, Ljava/lang/Long;->toHexString(J)Ljava/lang/String;
 
     move-result-object p0
@@ -467,7 +429,6 @@
 
     add-int/lit8 v3, v2, 0x2
 
-    .line 3
     invoke-virtual {p0, v2, v3}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
@@ -476,7 +437,6 @@
 
     const/16 v4, 0x10
 
-    .line 4
     invoke-static {v2, v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;I)I
 
     move-result v2
@@ -498,28 +458,24 @@
 
     add-int/lit8 v0, p1, 0x3
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
 
     add-int/lit8 v1, p1, 0x2
 
-    .line 2
     aget-byte v1, p0, v1
 
     and-int/lit16 v1, v1, 0xff
 
     add-int/lit8 v2, p1, 0x1
 
-    .line 3
     aget-byte v2, p0, v2
 
     and-int/lit16 v2, v2, 0xff
 
     add-int/lit8 p1, p1, 0x0
 
-    .line 4
     aget-byte p0, p0, p1
 
     and-int/lit16 p0, p0, 0xff
@@ -578,14 +534,12 @@
 
     add-int/lit8 v0, p1, 0x1
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
 
     add-int/lit8 p1, p1, 0x0
 
-    .line 2
     aget-byte p0, p0, p1
 
     and-int/lit16 p0, p0, 0xff
@@ -604,7 +558,6 @@
 .method public static getString([BII)Ljava/lang/String;
     .locals 2
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/lang/String;
 
@@ -625,12 +578,10 @@
 .method public static getSubBytes([BII)[B
     .locals 2
 
-    .line 1
     new-array v0, p2, [B
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-static {p0, p1, v0, v1, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-object v0
@@ -641,14 +592,12 @@
 
     add-int/lit8 v0, p1, 0x1
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
 
     add-int/lit8 p1, p1, 0x0
 
-    .line 2
     aget-byte p0, p0, p1
 
     and-int/lit16 p0, p0, 0xff
@@ -665,15 +614,12 @@
 .method public static moveArray([BI[BII)V
     .locals 2
 
-    .line 1
     new-array v0, p4, [B
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-static {p0, p1, v0, v1, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 3
     invoke-static {v0, v1, p2, p3, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-void
@@ -682,7 +628,6 @@
 .method public static writeInt([BII)V
     .locals 2
 
-    .line 1
     invoke-static {p2}, Lcom/autonavi/amap/mapcore/Convert;->convertInt(I)[B
 
     move-result-object p2
@@ -691,7 +636,6 @@
 
     const/4 v1, 0x4
 
-    .line 2
     invoke-static {p2, v0, p0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-void
@@ -700,7 +644,6 @@
 .method public static writeShort([BIS)V
     .locals 2
 
-    .line 1
     invoke-static {p2}, Lcom/autonavi/amap/mapcore/Convert;->convertShort(I)[B
 
     move-result-object p2
@@ -709,7 +652,6 @@
 
     const/4 v1, 0x2
 
-    .line 2
     invoke-static {p2, v0, p0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-void

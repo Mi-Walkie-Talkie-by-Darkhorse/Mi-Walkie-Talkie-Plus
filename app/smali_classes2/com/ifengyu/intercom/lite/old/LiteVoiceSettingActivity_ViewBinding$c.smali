@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity_ViewBinding$c;
 .super Lbutterknife/internal/DebouncingOnClickListener;
-.source "LiteVoiceSettingActivity_ViewBinding.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity_ViewBinding;Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity_ViewBinding$c;->a:Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;
 
     invoke-direct {p0}, Lbutterknife/internal/DebouncingOnClickListener;-><init>()V
@@ -35,7 +33,6 @@
 .method public doClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity_ViewBinding$c;->a:Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/lite/old/LiteVoiceSettingActivity;->onClick(Landroid/view/View;)V

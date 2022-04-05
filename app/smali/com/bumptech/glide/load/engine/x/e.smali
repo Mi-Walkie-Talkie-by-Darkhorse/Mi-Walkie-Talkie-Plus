@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/engine/x/e;
 .super Ljava/lang/Object;
-.source "BitmapPool.java"
 
 
 # virtual methods

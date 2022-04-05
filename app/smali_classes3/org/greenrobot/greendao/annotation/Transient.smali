@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/greenrobot/greendao/annotation/Transient;
 .super Ljava/lang/Object;
-.source "Transient.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

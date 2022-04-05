@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/ui/widget/view/CircleProgress$a;
 .super Ljava/lang/Object;
-.source "CircleProgress.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/ui/widget/view/CircleProgress$STATE;->values()[Lcom/ifengyu/intercom/ui/widget/view/CircleProgress$STATE;
 
     move-result-object v0

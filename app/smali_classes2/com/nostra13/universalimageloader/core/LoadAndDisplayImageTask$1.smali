@@ -1,6 +1,5 @@
 .class Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$1;
 .super Ljava/lang/Object;
-.source "LoadAndDisplayImageTask.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;II)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$1;->this$0:Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;
 
     iput p2, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$1;->val$current:I
@@ -46,7 +44,6 @@
 .method public run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask$1;->this$0:Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;
 
     iget-object v1, v0, Lcom/nostra13/universalimageloader/core/LoadAndDisplayImageTask;->progressListener:Lcom/nostra13/universalimageloader/core/listener/ImageLoadingProgressListener;

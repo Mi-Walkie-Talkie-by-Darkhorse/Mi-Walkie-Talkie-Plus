@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/amap/mapcore/Inner_3dMap_locationOption;
 .super Ljava/lang/Object;
-.source "Inner_3dMap_locationOption.java"
 
 # interfaces
 .implements Ljava/lang/Cloneable;

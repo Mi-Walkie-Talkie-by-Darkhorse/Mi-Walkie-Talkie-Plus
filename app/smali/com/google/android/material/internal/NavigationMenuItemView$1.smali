@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/internal/NavigationMenuItemView$1;
 .super Landroidx/core/view/a;
-.source "NavigationMenuItemView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/android/material/internal/NavigationMenuItemView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView$1;->this$0:Lcom/google/android/material/internal/NavigationMenuItemView;
 
     invoke-direct {p0}, Landroidx/core/view/a;-><init>()V
@@ -39,10 +37,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/core/view/a;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroidx/core/view/accessibility/b;)V
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView$1;->this$0:Lcom/google/android/material/internal/NavigationMenuItemView;
 
     iget-boolean p1, p1, Lcom/google/android/material/internal/NavigationMenuItemView;->checkable:Z

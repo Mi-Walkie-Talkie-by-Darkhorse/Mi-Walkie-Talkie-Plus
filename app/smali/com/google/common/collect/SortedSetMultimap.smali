@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/collect/SortedSetMultimap;
 .super Ljava/lang/Object;
-.source "SortedSetMultimap.java"
 
 # interfaces
 .implements Lcom/google/common/collect/SetMultimap;

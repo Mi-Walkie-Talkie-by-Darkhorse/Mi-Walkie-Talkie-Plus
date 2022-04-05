@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/common/collect/SortedMultisetBridge;
 .super Ljava/lang/Object;
-.source "SortedMultisetBridge.java"
 
 # interfaces
 .implements Lcom/google/common/collect/Multiset;

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/g/e/f$a;
 .super Ljava/lang/Object;
-.source "RequestCall.java"
 
 # interfaces
 .implements Lokhttp3/Interceptor;
@@ -21,7 +20,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/g/e/f;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,12 +42,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Lokhttp3/Interceptor$Chain;->request()Lokhttp3/Request;
 
     move-result-object v0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/library/account/a;->c()Lcom/ifengyu/library/account/UserInfo;
 
     move-result-object v1
@@ -60,11 +56,9 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v1, v1, Lcom/ifengyu/library/account/UserInfo;->h:Ljava/lang/String;
 
-    .line 4
     :goto_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -74,7 +68,6 @@
 
     move-result-object v2
 
-    .line 5
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -91,12 +84,10 @@
 
     move-result-object v1
 
-    .line 6
     invoke-virtual {v0}, Lokhttp3/Request;->newBuilder()Lokhttp3/Request$Builder;
 
     move-result-object v0
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/library/account/a;->b()Ljava/lang/String;
 
     move-result-object v3
@@ -113,24 +104,20 @@
 
     const-string v3, "time"
 
-    .line 8
     invoke-virtual {v0, v3, v2}, Lokhttp3/Request$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
 
     move-result-object v0
 
     const-string v2, "sign"
 
-    .line 9
     invoke-virtual {v0, v2, v1}, Lokhttp3/Request$Builder;->addHeader(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder;
 
     move-result-object v0
 
-    .line 10
     invoke-virtual {v0}, Lokhttp3/Request$Builder;->build()Lokhttp3/Request;
 
     move-result-object v0
 
-    .line 11
     invoke-interface {p1, v0}, Lokhttp3/Interceptor$Chain;->proceed(Lokhttp3/Request;)Lokhttp3/Response;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/ActionActivity$ChooserListener;
 .super Ljava/lang/Object;
-.source "ActionActivity.java"
 
 
 # annotations

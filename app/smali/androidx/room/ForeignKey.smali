@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/ForeignKey;
 .super Ljava/lang/Object;
-.source "ForeignKey.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

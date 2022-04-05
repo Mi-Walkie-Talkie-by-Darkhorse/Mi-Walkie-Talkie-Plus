@@ -1,6 +1,5 @@
 .class final Lcom/umeng/commonsdk/internal/utils/k$1;
 .super Ljava/lang/Thread;
-.source "UMProbe.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>([Ljava/lang/String;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/internal/utils/k$1;->a:[Ljava/lang/String;
 
     iput-object p2, p0, Lcom/umeng/commonsdk/internal/utils/k$1;->b:Landroid/content/Context;
@@ -39,10 +37,8 @@
 .method public run()V
     .locals 5
 
-    .line 1
     invoke-super {p0}, Ljava/lang/Thread;->run()V
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/utils/k$1;->a:[Ljava/lang/String;
 
@@ -54,7 +50,6 @@
 
     aput-object v1, v0, v2
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/utils/k$1;->a:[Ljava/lang/String;
 
     invoke-static {}, Lcom/umeng/commonsdk/internal/utils/k;->a()Ljava/lang/String;
@@ -65,7 +60,6 @@
 
     aput-object v1, v0, v3
 
-    .line 4
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/utils/k$1;->a:[Ljava/lang/String;
 
     invoke-static {}, Lcom/umeng/commonsdk/internal/utils/k;->b()Ljava/lang/String;
@@ -76,7 +70,6 @@
 
     aput-object v1, v0, v4
 
-    .line 5
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -117,7 +110,6 @@
 
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;)V
 
-    .line 6
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/utils/k$1;->b:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/umeng/commonsdk/internal/utils/k$1;->a:[Ljava/lang/String;
@@ -131,7 +123,6 @@
     :catchall_0
     move-exception v0
 
-    .line 7
     iget-object v1, p0, Lcom/umeng/commonsdk/internal/utils/k$1;->b:Landroid/content/Context;
 
     invoke-static {v1, v0}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V

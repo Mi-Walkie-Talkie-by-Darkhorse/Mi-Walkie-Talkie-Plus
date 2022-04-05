@@ -1,6 +1,5 @@
 .class synthetic Lcom/umeng/analytics/pro/h$1;
 .super Ljava/lang/Object;
-.source "UMStoreManager.java"
 
 
 # annotations

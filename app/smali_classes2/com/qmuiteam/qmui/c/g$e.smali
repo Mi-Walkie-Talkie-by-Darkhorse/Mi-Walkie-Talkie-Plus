@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/c/g$e;
 .super Ljava/lang/Object;
-.source "QMUISkinManager.java"
 
 
 # annotations
@@ -24,13 +23,10 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/c/g;Ljava/lang/String;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lcom/qmuiteam/qmui/c/g$e;->a:Ljava/lang/String;
 
-    .line 3
     iput p3, p0, Lcom/qmuiteam/qmui/c/g$e;->b:I
 
     return-void
@@ -52,7 +48,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 1
     const-class v2, Lcom/qmuiteam/qmui/c/g$e;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -63,11 +58,9 @@
 
     goto :goto_1
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/qmuiteam/qmui/c/g$e;
 
-    .line 3
     iget v2, p0, Lcom/qmuiteam/qmui/c/g$e;->b:I
 
     iget v3, p1, Lcom/qmuiteam/qmui/c/g$e;->b:I
@@ -78,7 +71,6 @@
 
     iget-object p1, p1, Lcom/qmuiteam/qmui/c/g$e;->a:Ljava/lang/String;
 
-    .line 4
     invoke-static {v2, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
@@ -105,7 +97,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-object v1, p0, Lcom/qmuiteam/qmui/c/g$e;->a:Ljava/lang/String;
 
     const/4 v2, 0x0

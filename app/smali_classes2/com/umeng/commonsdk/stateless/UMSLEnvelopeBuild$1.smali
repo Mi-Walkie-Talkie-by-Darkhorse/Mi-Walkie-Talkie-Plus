@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/stateless/UMSLEnvelopeBuild$1;
 .super Ljava/lang/Thread;
-.source "UMSLEnvelopeBuild.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/umeng/commonsdk/stateless/UMSLEnvelopeBuild;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/stateless/UMSLEnvelopeBuild$1;->b:Lcom/umeng/commonsdk/stateless/UMSLEnvelopeBuild;
 
     iput-object p2, p0, Lcom/umeng/commonsdk/stateless/UMSLEnvelopeBuild$1;->a:Landroid/content/Context;
@@ -39,11 +37,9 @@
 .method public run()V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {}, Landroid/os/Looper;->prepare()V
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/commonsdk/stateless/UMSLEnvelopeBuild$1;->a:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -58,10 +54,8 @@
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 4
     invoke-static {}, Landroid/os/Looper;->loop()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

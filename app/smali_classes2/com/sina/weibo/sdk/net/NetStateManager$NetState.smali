@@ -1,6 +1,5 @@
 .class public final enum Lcom/sina/weibo/sdk/net/NetStateManager$NetState;
 .super Ljava/lang/Enum;
-.source "NetStateManager.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .line 1
     new-instance v0, Lcom/sina/weibo/sdk/net/NetStateManager$NetState;
 
     const/4 v1, 0x0
@@ -71,7 +69,6 @@
 
     new-array v4, v4, [Lcom/sina/weibo/sdk/net/NetStateManager$NetState;
 
-    .line 2
     sget-object v5, Lcom/sina/weibo/sdk/net/NetStateManager$NetState;->a:Lcom/sina/weibo/sdk/net/NetStateManager$NetState;
 
     aput-object v5, v4, v1
@@ -90,7 +87,6 @@
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -99,7 +95,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/sina/weibo/sdk/net/NetStateManager$NetState;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/sina/weibo/sdk/net/NetStateManager$NetState;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -114,7 +109,6 @@
 .method public static values()[Lcom/sina/weibo/sdk/net/NetStateManager$NetState;
     .locals 4
 
-    .line 1
     sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$NetState;->d:[Lcom/sina/weibo/sdk/net/NetStateManager$NetState;
 
     array-length v1, v0

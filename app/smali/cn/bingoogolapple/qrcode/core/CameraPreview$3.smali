@@ -1,6 +1,5 @@
 .class Lcn/bingoogolapple/qrcode/core/CameraPreview$3;
 .super Ljava/lang/Object;
-.source "CameraPreview.java"
 
 # interfaces
 .implements Landroid/hardware/Camera$AutoFocusCallback;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcn/bingoogolapple/qrcode/core/CameraPreview;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview$3;->this$0:Lcn/bingoogolapple/qrcode/core/CameraPreview;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +38,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview$3;->this$0:Lcn/bingoogolapple/qrcode/core/CameraPreview;
 
     invoke-static {p1}, Lcn/bingoogolapple/qrcode/core/CameraPreview;->access$300(Lcn/bingoogolapple/qrcode/core/CameraPreview;)Ljava/lang/Runnable;
@@ -53,7 +50,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview$3;->this$0:Lcn/bingoogolapple/qrcode/core/CameraPreview;
 

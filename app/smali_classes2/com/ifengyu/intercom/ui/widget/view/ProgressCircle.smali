@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;
 .super Landroid/view/View;
-.source "ProgressCircle.java"
 
 
 # annotations
@@ -27,15 +26,12 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
     const/high16 p1, 0x3fc00000    # 1.5f
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->a:F
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->a()V
 
     return-void
@@ -44,15 +40,12 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/high16 p1, 0x3fc00000    # 1.5f
 
-    .line 5
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->a:F
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->a()V
 
     return-void
@@ -67,7 +60,6 @@
 
     return-object p1
 
-    .line 10
     :cond_0
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
@@ -101,7 +93,6 @@
 
     if-nez v0, :cond_3
 
-    .line 11
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -133,7 +124,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 12
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v1
@@ -167,7 +157,6 @@
 .method private a()V
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
@@ -176,42 +165,34 @@
 
     const/4 v1, 0x1
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;->a:Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->e:Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;
 
-    .line 5
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->c:Landroid/graphics/Paint;
 
-    .line 6
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->c:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->c:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->c:Landroid/graphics/Paint;
 
     const/4 v1, -0x1
@@ -230,19 +211,16 @@
 
     move-object/from16 v7, p1
 
-    .line 1
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getHeight()I
 
     move-result v1
 
-    .line 2
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getWidth()I
 
     move-result v2
 
     const/16 v3, 0xbc
 
-    .line 3
     invoke-static {v3}, Lcom/ifengyu/intercom/i/c0;->d(I)I
 
     move-result v3
@@ -259,7 +237,6 @@
 
     const/4 v9, 0x2
 
-    .line 4
     div-int/2addr v2, v9
 
     int-to-float v2, v2
@@ -270,14 +247,12 @@
 
     invoke-virtual {v7, v2, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 5
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 6
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     iget v2, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->a:F
@@ -288,7 +263,6 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 7
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->e:Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;
 
     sget-object v2, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;->d:Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;
@@ -297,7 +271,6 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 8
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
@@ -312,7 +285,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
@@ -323,21 +295,18 @@
     :goto_0
     int-to-float v1, v3
 
-    .line 10
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     const/4 v5, 0x0
 
     invoke-virtual {v7, v5, v5, v1, v2}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 11
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->e:Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;
 
     invoke-direct {v0, v2}, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->a(Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;)Landroid/graphics/Bitmap;
 
     move-result-object v2
 
-    .line 12
     new-instance v5, Landroid/graphics/Rect;
 
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
@@ -352,7 +321,6 @@
 
     invoke-direct {v5, v11, v11, v6, v10}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 13
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v6
@@ -361,7 +329,6 @@
 
     div-int/lit8 v6, v6, 0x5
 
-    .line 14
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v10
@@ -370,7 +337,6 @@
 
     div-int/lit8 v10, v10, 0x5
 
-    .line 15
     new-instance v12, Landroid/graphics/Rect;
 
     neg-int v13, v6
@@ -379,12 +345,10 @@
 
     invoke-direct {v12, v13, v14, v6, v10}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 16
     new-instance v10, Landroid/graphics/Rect;
 
     invoke-direct {v10}, Landroid/graphics/Rect;-><init>()V
 
-    .line 17
     sget-object v6, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$a;->a:[I
 
     iget-object v13, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->e:Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;
@@ -411,7 +375,6 @@
 
     goto/16 :goto_1
 
-    .line 18
     :cond_1
     iget v2, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->d:I
 
@@ -419,10 +382,8 @@
 
     if-lt v2, v5, :cond_2
 
-    .line 19
     iput v5, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->d:I
 
-    .line 20
     :cond_2
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
@@ -430,7 +391,6 @@
 
     invoke-virtual {v2, v5}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 21
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
@@ -443,7 +403,6 @@
 
     invoke-virtual {v2, v4}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 22
     new-instance v2, Landroid/graphics/RectF;
 
     neg-int v3, v3
@@ -454,7 +413,6 @@
 
     const/high16 v3, -0x3d4c0000    # -90.0f
 
-    .line 23
     iget v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->d:I
 
     int-to-double v4, v1
@@ -479,14 +437,12 @@
 
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawArc(Landroid/graphics/RectF;FFZLandroid/graphics/Paint;)V
 
-    .line 24
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 25
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     const/16 v2, 0x56
@@ -499,24 +455,20 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 26
     iget v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->d:I
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 27
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v2, v1, v11, v13, v10}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
-    .line 28
     invoke-virtual {v10}, Landroid/graphics/Rect;->height()I
 
     move-result v2
 
-    .line 29
     iget-object v3, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     invoke-virtual {v3, v1}, Landroid/graphics/Paint;->measureText(Ljava/lang/String;)F
@@ -527,7 +479,6 @@
 
     div-float/2addr v4, v8
 
-    .line 30
     div-int/lit8 v5, v2, 0x2
 
     int-to-float v5, v5
@@ -536,7 +487,6 @@
 
     invoke-virtual {v7, v1, v4, v5, v6}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 31
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     const/16 v4, 0x2a
@@ -549,7 +499,6 @@
 
     invoke-virtual {v1, v4}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 32
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     const-string v4, "%"
@@ -558,7 +507,6 @@
 
     div-float/2addr v3, v8
 
-    .line 33
     invoke-static {v9}, Lcom/ifengyu/intercom/i/c0;->d(I)I
 
     move-result v1
@@ -585,7 +533,6 @@
 
     goto :goto_1
 
-    .line 34
     :cond_3
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->c:Landroid/graphics/Paint;
 
@@ -593,7 +540,6 @@
 
     goto :goto_1
 
-    .line 35
     :cond_4
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
@@ -601,7 +547,6 @@
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 36
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
@@ -614,7 +559,6 @@
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 37
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->b:Landroid/graphics/Paint;
 
     const/16 v3, 0x1c
@@ -627,14 +571,12 @@
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 38
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->c:Landroid/graphics/Paint;
 
     invoke-virtual {v7, v2, v5, v12, v1}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
     goto :goto_1
 
-    .line 39
     :cond_5
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->c:Landroid/graphics/Paint;
 
@@ -647,7 +589,6 @@
 .method protected onMeasure(II)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
     return-void
@@ -656,13 +597,10 @@
 .method public setProgress(ILcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->d:I
 
-    .line 2
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->e:Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void

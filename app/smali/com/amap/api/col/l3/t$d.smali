@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/t$d;
 .super Ljava/lang/Object;
-.source "GLTextureView.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/t$g;
@@ -21,7 +20,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 .method synthetic constructor <init>(B)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/amap/api/col/l3/t$d;-><init>()V
 
     return-void
@@ -43,7 +40,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-interface {p1, p2, p3, p4, v0}, Ljavax/microedition/khronos/egl/EGL10;->eglCreateWindowSurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLConfig;Ljava/lang/Object;[I)Ljavax/microedition/khronos/egl/EGLSurface;
 
@@ -58,7 +54,6 @@
 .method public final a(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;)V
     .locals 0
 
-    .line 2
     invoke-interface {p1, p2, p3}, Ljavax/microedition/khronos/egl/EGL10;->eglDestroySurface(Ljavax/microedition/khronos/egl/EGLDisplay;Ljavax/microedition/khronos/egl/EGLSurface;)Z
 
     return-void

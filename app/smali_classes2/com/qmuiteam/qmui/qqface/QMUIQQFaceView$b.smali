@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;
 .super Ljava/lang/Object;
-.source "QMUIQQFaceView.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -33,10 +32,8 @@
 .method public constructor <init>(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -51,7 +48,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -64,10 +60,8 @@
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a(Z)V
 
-    .line 3
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a()V
 
     :cond_0

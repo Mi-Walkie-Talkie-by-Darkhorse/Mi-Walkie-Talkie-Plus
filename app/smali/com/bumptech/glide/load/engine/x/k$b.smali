@@ -1,6 +1,5 @@
 .class final Lcom/bumptech/glide/load/engine/x/k$b;
 .super Ljava/lang/Object;
-.source "LruBitmapPool.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/x/k$a;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

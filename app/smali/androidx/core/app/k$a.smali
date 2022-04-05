@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/app/k$a;
 .super Ljava/lang/Object;
-.source "SharedElementCallback.java"
 
 
 # annotations

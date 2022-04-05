@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/b/a;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # static fields
@@ -13,7 +12,6 @@
 
     const-string v0, "content://telephony/carriers/preferapn"
 
-    .line 1
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
@@ -26,7 +24,6 @@
 .method public static a(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/tencent/open/b/a;->d(Landroid/content/Context;)I
 
     move-result v0
@@ -129,7 +126,6 @@
 
     return-object p0
 
-    .line 2
     :cond_a
     invoke-static {p0}, Lcom/tencent/open/b/a;->b(Landroid/content/Context;)Ljava/lang/String;
 
@@ -137,7 +133,6 @@
 
     if-eqz p0, :cond_c
 
-    .line 3
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -163,7 +158,6 @@
 
     const-string v1, "openSDK_LOG.APNUtil"
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -189,11 +183,9 @@
 
     return-object v2
 
-    .line 2
     :cond_0
     invoke-interface {p0}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 3
     invoke-interface {p0}, Landroid/database/Cursor;->isAfterLast()Z
 
     move-result v3
@@ -202,7 +194,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 4
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
 
     :cond_1
@@ -211,7 +202,6 @@
     :cond_2
     const-string v2, "apn"
 
-    .line 5
     invoke-interface {p0, v2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v2
@@ -222,7 +212,6 @@
 
     if-eqz p0, :cond_3
 
-    .line 6
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_1
@@ -234,7 +223,6 @@
     :catch_0
     move-exception p0
 
-    .line 7
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -258,7 +246,6 @@
     :catch_1
     move-exception p0
 
-    .line 8
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -286,7 +273,6 @@
 .method public static c(Landroid/content/Context;)Ljava/lang/String;
     .locals 6
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -312,11 +298,9 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     invoke-interface {p0}, Landroid/database/Cursor;->moveToFirst()Z
 
-    .line 3
     invoke-interface {p0}, Landroid/database/Cursor;->isAfterLast()Z
 
     move-result v1
@@ -325,7 +309,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 4
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
 
     :cond_1
@@ -334,7 +317,6 @@
     :cond_2
     const-string v0, "proxy"
 
-    .line 5
     invoke-interface {p0, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v0
@@ -345,7 +327,6 @@
 
     if-eqz p0, :cond_3
 
-    .line 6
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
@@ -356,7 +337,6 @@
     :catch_0
     move-exception p0
 
-    .line 7
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -392,7 +372,6 @@
     :try_start_0
     const-string v1, "connectivity"
 
-    .line 1
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
@@ -403,7 +382,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-virtual {v1}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
@@ -413,13 +391,11 @@
 
     return v0
 
-    .line 3
     :cond_1
     invoke-virtual {v1}, Landroid/net/NetworkInfo;->getTypeName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 4
     invoke-virtual {v2}, Ljava/lang/String;->toUpperCase()Ljava/lang/String;
 
     move-result-object v2
@@ -436,7 +412,6 @@
 
     return p0
 
-    .line 5
     :cond_2
     invoke-virtual {v1}, Landroid/net/NetworkInfo;->getExtraInfo()Ljava/lang/String;
 
@@ -448,7 +423,6 @@
 
     const-string v2, "cmwap"
 
-    .line 6
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -462,7 +436,6 @@
     :cond_3
     const-string v2, "cmnet"
 
-    .line 7
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -482,7 +455,6 @@
     :cond_4
     const-string v2, "uniwap"
 
-    .line 8
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -496,7 +468,6 @@
     :cond_5
     const-string v2, "uninet"
 
-    .line 9
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -510,7 +481,6 @@
     :cond_6
     const-string v2, "wap"
 
-    .line 10
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -524,7 +494,6 @@
     :cond_7
     const-string v2, "net"
 
-    .line 11
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -538,7 +507,6 @@
     :cond_8
     const-string v2, "ctwap"
 
-    .line 12
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -552,7 +520,6 @@
     :cond_9
     const-string v2, "ctnet"
 
-    .line 13
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -566,7 +533,6 @@
     :cond_a
     const-string v2, "3gwap"
 
-    .line 14
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -580,7 +546,6 @@
     :cond_b
     const-string v2, "3gnet"
 
-    .line 15
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -594,21 +559,18 @@
     :cond_c
     const-string v2, "#777"
 
-    .line 16
     invoke-virtual {v1, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_f
 
-    .line 17
     invoke-static {p0}, Lcom/tencent/open/b/a;->c(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p0
 
     if-eqz p0, :cond_d
 
-    .line 18
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result p0
@@ -631,7 +593,6 @@
     :catch_0
     move-exception p0
 
-    .line 19
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -663,7 +624,6 @@
 
     const-string v0, "connectivity"
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -676,7 +636,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
@@ -684,7 +643,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Landroid/net/NetworkInfo;->getTypeName()Ljava/lang/String;
 
     move-result-object p0

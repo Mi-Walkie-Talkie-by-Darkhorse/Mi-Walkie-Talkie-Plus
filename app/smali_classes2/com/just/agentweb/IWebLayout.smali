@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/IWebLayout;
 .super Ljava/lang/Object;
-.source "IWebLayout.java"
 
 
 # annotations

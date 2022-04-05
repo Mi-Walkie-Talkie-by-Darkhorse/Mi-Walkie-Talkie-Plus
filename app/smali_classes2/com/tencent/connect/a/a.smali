@@ -1,6 +1,5 @@
 .class public Lcom/tencent/connect/a/a;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # static fields
@@ -43,18 +42,15 @@
 .method public static varargs a(Landroid/content/Context;Lcom/tencent/connect/auth/QQToken;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 3
 
-    .line 2
     sget-boolean v0, Lcom/tencent/connect/a/a;->g:Z
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 3
     :cond_0
     invoke-static {p0, p1}, Lcom/tencent/connect/a/a;->b(Landroid/content/Context;Lcom/tencent/connect/auth/QQToken;)V
 
-    .line 4
     :try_start_0
     sget-object p1, Lcom/tencent/connect/a/a;->d:Ljava/lang/reflect/Method;
 
@@ -85,7 +81,6 @@
     :catch_0
     move-exception p0
 
-    .line 5
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     :goto_0
@@ -95,7 +90,6 @@
 .method public static a(Landroid/content/Context;Lcom/tencent/connect/auth/QQToken;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lcom/tencent/connect/auth/QQToken;->getAppId()Ljava/lang/String;
 
     move-result-object p1
@@ -116,7 +110,6 @@
 .method public static b(Landroid/content/Context;Lcom/tencent/connect/auth/QQToken;)V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {p0, p1}, Lcom/tencent/connect/a/a;->a(Landroid/content/Context;Lcom/tencent/connect/auth/QQToken;)Z
 
@@ -128,7 +121,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 2
     sget-object p0, Lcom/tencent/connect/a/a;->f:Ljava/lang/reflect/Method;
 
     sget-object v1, Lcom/tencent/connect/a/a;->a:Ljava/lang/Class;
@@ -145,7 +137,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     sget-object p0, Lcom/tencent/connect/a/a;->f:Ljava/lang/reflect/Method;
 
@@ -168,7 +159,6 @@
     :catch_0
     move-exception p0
 
-    .line 4
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     :goto_0
@@ -178,14 +168,12 @@
 .method public static c(Landroid/content/Context;Lcom/tencent/connect/auth/QQToken;)V
     .locals 10
 
-    .line 1
     const-class v0, Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/tencent/connect/auth/QQToken;->getAppId()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -203,7 +191,6 @@
     :try_start_0
     const-string v2, "com.tencent.stat.StatConfig"
 
-    .line 3
     invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v2
@@ -212,7 +199,6 @@
 
     const-string v2, "com.tencent.stat.StatService"
 
-    .line 4
     invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v2
@@ -225,7 +211,6 @@
 
     new-array v5, v4, [Ljava/lang/Class;
 
-    .line 5
     const-class v6, Landroid/content/Context;
 
     const/4 v7, 0x0
@@ -242,7 +227,6 @@
 
     sput-object v2, Lcom/tencent/connect/a/a;->c:Ljava/lang/reflect/Method;
 
-    .line 6
     sget-object v2, Lcom/tencent/connect/a/a;->b:Ljava/lang/Class;
 
     const-string v3, "trackCustomEvent"
@@ -267,7 +251,6 @@
 
     sput-object v2, Lcom/tencent/connect/a/a;->d:Ljava/lang/reflect/Method;
 
-    .line 7
     sget-object v2, Lcom/tencent/connect/a/a;->b:Ljava/lang/Class;
 
     const-string v3, "commitEvents"
@@ -288,7 +271,6 @@
 
     sput-object v2, Lcom/tencent/connect/a/a;->e:Ljava/lang/reflect/Method;
 
-    .line 8
     sget-object v2, Lcom/tencent/connect/a/a;->a:Ljava/lang/Class;
 
     const-string v3, "setEnableStatService"
@@ -305,10 +287,8 @@
 
     sput-object v2, Lcom/tencent/connect/a/a;->f:Ljava/lang/reflect/Method;
 
-    .line 9
     invoke-static {p0, p1}, Lcom/tencent/connect/a/a;->b(Landroid/content/Context;Lcom/tencent/connect/auth/QQToken;)V
 
-    .line 10
     sget-object p1, Lcom/tencent/connect/a/a;->a:Ljava/lang/Class;
 
     const-string v2, "setAutoExceptionCaught"
@@ -335,7 +315,6 @@
 
     invoke-virtual {p1, v2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
     sget-object p1, Lcom/tencent/connect/a/a;->a:Ljava/lang/Class;
 
     const-string v2, "setEnableSmartReporting"
@@ -362,7 +341,6 @@
 
     invoke-virtual {p1, v2, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12
     sget-object p1, Lcom/tencent/connect/a/a;->a:Ljava/lang/Class;
 
     const-string v2, "setSendPeriodMinutes"
@@ -393,12 +371,10 @@
 
     const-string p1, "com.tencent.stat.StatReportStrategy"
 
-    .line 13
     invoke-static {p1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object p1
 
-    .line 14
     sget-object v2, Lcom/tencent/connect/a/a;->a:Ljava/lang/Class;
 
     const-string v3, "setStatSendStrategy"
@@ -431,7 +407,6 @@
 
     invoke-virtual {v2, v3, v8}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 15
     sget-object p1, Lcom/tencent/connect/a/a;->b:Ljava/lang/Class;
 
     const-string v2, "startStatService"
@@ -478,7 +453,6 @@
 
     invoke-virtual {p1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 16
     sput-boolean v6, Lcom/tencent/connect/a/a;->g:Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -488,7 +462,6 @@
     :catch_0
     move-exception p0
 
-    .line 17
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     :goto_0
@@ -498,25 +471,21 @@
 .method public static d(Landroid/content/Context;Lcom/tencent/connect/auth/QQToken;)V
     .locals 4
 
-    .line 1
     sget-boolean v0, Lcom/tencent/connect/a/a;->g:Z
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {p0, p1}, Lcom/tencent/connect/a/a;->b(Landroid/content/Context;Lcom/tencent/connect/auth/QQToken;)V
 
-    .line 3
     invoke-virtual {p1}, Lcom/tencent/connect/auth/QQToken;->getOpenId()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 4
     :try_start_0
     sget-object v0, Lcom/tencent/connect/a/a;->c:Ljava/lang/reflect/Method;
 
@@ -547,7 +516,6 @@
     :catch_0
     move-exception p0
 
-    .line 5
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_1

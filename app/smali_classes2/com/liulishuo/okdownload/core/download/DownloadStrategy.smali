@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/download/DownloadStrategy;
 .super Ljava/lang/Object;
-.source "DownloadStrategy.java"
 
 
 # annotations
@@ -38,7 +37,6 @@
 
     const-string v0, ".*\\\\|/([^\\\\|/|?]*)\\??"
 
-    .line 1
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
@@ -51,15 +49,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->isHasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
-    .line 3
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->manager:Landroid/net/ConnectivityManager;
 
     return-void
@@ -74,7 +69,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getSetConnectionCount()Ljava/lang/Integer;
 
     move-result-object v0
@@ -157,19 +151,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/liulishuo/okdownload/core/Util;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 2
     invoke-virtual {p2}, Lcom/liulishuo/okdownload/DownloadTask;->getUrl()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3
     sget-object p2, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->TMP_FILE_NAME_PATTERN:Ljava/util/regex/Pattern;
 
     invoke-virtual {p2, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
@@ -178,7 +169,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     :goto_0
     invoke-virtual {p2}, Ljava/util/regex/Matcher;->find()Z
 
@@ -188,14 +178,12 @@
 
     const/4 v0, 0x1
 
-    .line 5
     invoke-virtual {p2, v0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v0
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-static {v0}, Lcom/liulishuo/okdownload/core/Util;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -203,7 +191,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 7
     invoke-static {p1}, Lcom/liulishuo/okdownload/core/Util;->md5(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -213,7 +200,6 @@
 
     return-object v0
 
-    .line 8
     :cond_2
     new-instance p1, Ljava/io/IOException;
 
@@ -240,7 +226,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-virtual {p3}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getEtag()Ljava/lang/String;
 
     move-result-object p3
@@ -249,12 +234,10 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 2
     sget-object p1, Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;->RESPONSE_PRECONDITION_FAILED:Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;
 
     return-object p1
 
-    .line 3
     :cond_0
     invoke-static {p3}, Lcom/liulishuo/okdownload/core/Util;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -268,14 +251,12 @@
 
     if-nez v0, :cond_1
 
-    .line 4
     invoke-virtual {p4, p3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p3
 
     if-nez p3, :cond_1
 
-    .line 5
     sget-object p1, Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;->RESPONSE_ETAG_CHANGED:Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;
 
     return-object p1
@@ -287,7 +268,6 @@
 
     if-eqz p2, :cond_2
 
-    .line 6
     sget-object p1, Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;->RESPONSE_CREATED_RANGE_NOT_FROM_0:Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;
 
     return-object p1
@@ -299,7 +279,6 @@
 
     if-eqz p2, :cond_3
 
-    .line 7
     sget-object p1, Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;->RESPONSE_RESET_RANGE_NOT_FROM_0:Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;
 
     return-object p1
@@ -321,7 +300,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->isFilenameFromResponse()Z
 
     move-result v0
@@ -332,7 +310,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
@@ -342,7 +319,6 @@
 
     move-result-object v0
 
-    .line 3
     invoke-interface {v0, p1, p2}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStore;->findAnotherInfoFromCompare(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     move-result-object p1
@@ -351,7 +327,6 @@
 
     return v1
 
-    .line 4
     :cond_1
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getId()I
 
@@ -359,12 +334,10 @@
 
     invoke-interface {v0, v2}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStore;->remove(I)V
 
-    .line 5
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getTotalOffset()J
 
     move-result-wide v2
 
-    .line 6
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -383,7 +356,6 @@
 
     return v1
 
-    .line 7
     :cond_2
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getEtag()Ljava/lang/String;
 
@@ -407,7 +379,6 @@
 
     return v1
 
-    .line 8
     :cond_3
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getTotalLength()J
 
@@ -419,7 +390,6 @@
 
     return v1
 
-    .line 9
     :cond_4
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getFile()Ljava/io/File;
 
@@ -439,11 +409,9 @@
 
     goto :goto_0
 
-    .line 10
     :cond_5
     invoke-virtual {p2, p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->reuseBlocks(Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)V
 
-    .line 11
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -482,19 +450,16 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p2}, Lcom/liulishuo/okdownload/DownloadTask;->getFilename()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Lcom/liulishuo/okdownload/core/Util;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p2}, Lcom/liulishuo/okdownload/DownloadTask;->getFilenameHolder()Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     move-result-object p2
@@ -513,26 +478,22 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->isHasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
 
     const-string v0, "android.permission.ACCESS_NETWORK_STATE"
 
-    .line 2
     invoke-static {v0}, Lcom/liulishuo/okdownload/core/Util;->checkPermission(Ljava/lang/String;)Z
 
     move-result v0
 
-    .line 3
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->isHasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->isHasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
@@ -544,13 +505,11 @@
 
     return-void
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->manager:Landroid/net/ConnectivityManager;
 
     if-nez v0, :cond_2
 
-    .line 6
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -561,7 +520,6 @@
 
     const-string v1, "connectivity"
 
-    .line 7
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -570,7 +528,6 @@
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->manager:Landroid/net/ConnectivityManager;
 
-    .line 8
     :cond_2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->manager:Landroid/net/ConnectivityManager;
 
@@ -582,7 +539,6 @@
 
     return-void
 
-    .line 9
     :cond_3
     new-instance v0, Ljava/net/UnknownHostException;
 
@@ -605,26 +561,22 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->isHasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
 
     const-string v0, "android.permission.ACCESS_NETWORK_STATE"
 
-    .line 2
     invoke-static {v0}, Lcom/liulishuo/okdownload/core/Util;->checkPermission(Ljava/lang/String;)Z
 
     move-result v0
 
-    .line 3
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->isHasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->isWifiRequired()Z
 
@@ -634,7 +586,6 @@
 
     return-void
 
-    .line 5
     :cond_1
     iget-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->isHasAccessNetworkStatePermission:Ljava/lang/Boolean;
 
@@ -644,12 +595,10 @@
 
     if-eqz p1, :cond_4
 
-    .line 6
     iget-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->manager:Landroid/net/ConnectivityManager;
 
     if-nez p1, :cond_2
 
-    .line 7
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object p1
@@ -660,7 +609,6 @@
 
     const-string v0, "connectivity"
 
-    .line 8
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -669,7 +617,6 @@
 
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->manager:Landroid/net/ConnectivityManager;
 
-    .line 9
     :cond_2
     iget-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->manager:Landroid/net/ConnectivityManager;
 
@@ -681,7 +628,6 @@
 
     return-void
 
-    .line 10
     :cond_3
     new-instance p1, Lcom/liulishuo/okdownload/core/exception/NetworkPolicyException;
 
@@ -689,7 +635,6 @@
 
     throw p1
 
-    .line 11
     :cond_4
     new-instance p1, Ljava/io/IOException;
 
@@ -731,7 +676,6 @@
 .method public isUseMultiBlock(Z)Z
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -755,7 +699,6 @@
 .method public resumeAvailableResponseCheck(Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Connected;ILcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)Lcom/liulishuo/okdownload/core/download/DownloadStrategy$ResumeAvailableResponseCheck;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$ResumeAvailableResponseCheck;
 
     invoke-direct {v0, p1, p2, p3}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$ResumeAvailableResponseCheck;-><init>(Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Connected;ILcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)V
@@ -791,7 +734,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p2}, Lcom/liulishuo/okdownload/DownloadTask;->getFilename()Ljava/lang/String;
 
     move-result-object v0
@@ -802,12 +744,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {p0, p1, p2}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->determineFilename(Ljava/lang/String;Lcom/liulishuo/okdownload/DownloadTask;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3
     invoke-virtual {p2}, Lcom/liulishuo/okdownload/DownloadTask;->getFilename()Ljava/lang/String;
 
     move-result-object v0
@@ -818,10 +758,8 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     monitor-enter p2
 
-    .line 5
     :try_start_0
     invoke-virtual {p2}, Lcom/liulishuo/okdownload/DownloadTask;->getFilename()Ljava/lang/String;
 
@@ -833,21 +771,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 6
     invoke-virtual {p2}, Lcom/liulishuo/okdownload/DownloadTask;->getFilenameHolder()Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->set(Ljava/lang/String;)V
 
-    .line 7
     invoke-virtual {p3}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getFilenameHolder()Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     move-result-object p3
 
     invoke-virtual {p3, p1}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->set(Ljava/lang/String;)V
 
-    .line 8
     :cond_0
     monitor-exit p2
 
@@ -874,7 +809,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -883,7 +817,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getUrl()Ljava/lang/String;
 
     move-result-object v1
@@ -898,7 +831,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getFilenameHolder()Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
@@ -922,7 +854,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getId()I
 
     move-result v0
@@ -933,7 +864,6 @@
 
     if-nez p2, :cond_2
 
-    .line 2
     new-instance p2, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getId()I
@@ -948,14 +878,12 @@
 
     move-result-object v2
 
-    .line 3
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getFilename()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-direct {p2, v0, v1, v2, v3}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;-><init>(ILjava/lang/String;Ljava/io/File;Ljava/lang/String;)V
 
-    .line 4
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getUri()Landroid/net/Uri;
 
     move-result-object v0
@@ -966,7 +894,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getUri()Landroid/net/Uri;
 
     move-result-object v0
@@ -980,7 +907,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_0
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getFile()Ljava/io/File;
 
@@ -990,7 +916,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 7
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1011,7 +936,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     invoke-virtual {v0}, Ljava/io/File;->length()J
 
@@ -1019,7 +943,6 @@
 
     goto :goto_0
 
-    .line 9
     :goto_1
     new-instance v0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
@@ -1033,7 +956,6 @@
 
     invoke-virtual {p2, v0}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->addBlock(Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;)V
 
-    .line 10
     :cond_2
     invoke-static {p1, p2}, Lcom/liulishuo/okdownload/DownloadTask$TaskHideWrapper;->setBreakpointInfo(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)V
 

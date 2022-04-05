@@ -1,6 +1,5 @@
 .class public final Lcom/google/protobuf/RpcUtil;
 .super Ljava/lang/Object;
-.source "RpcUtil.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +22,6 @@
 .method static synthetic access$000(Lcom/google/protobuf/Message;Lcom/google/protobuf/Message;)Lcom/google/protobuf/Message;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/protobuf/RpcUtil;->copyAsType(Lcom/google/protobuf/Message;Lcom/google/protobuf/Message;)Lcom/google/protobuf/Message;
 
     move-result-object p0
@@ -44,7 +41,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Lcom/google/protobuf/Message;->newBuilderForType()Lcom/google/protobuf/Message$Builder;
 
     move-result-object p0
@@ -77,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/RpcUtil$1;
 
     invoke-direct {v0, p1, p2, p0}, Lcom/google/protobuf/RpcUtil$1;-><init>(Ljava/lang/Class;Lcom/google/protobuf/Message;Lcom/google/protobuf/RpcCallback;)V
@@ -99,7 +94,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/RpcUtil$2;
 
     invoke-direct {v0, p0}, Lcom/google/protobuf/RpcUtil$2;-><init>(Lcom/google/protobuf/RpcCallback;)V

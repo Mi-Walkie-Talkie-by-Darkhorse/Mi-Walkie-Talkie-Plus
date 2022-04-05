@@ -1,6 +1,5 @@
 .class public final enum Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 .super Ljava/lang/Enum;
-.source "ImageDownloader.java"
 
 
 # annotations
@@ -50,7 +49,6 @@
 .method static constructor <clinit>()V
     .locals 10
 
-    .line 1
     new-instance v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
     const/4 v1, 0x0
@@ -139,7 +137,6 @@
 
     new-array v8, v8, [Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
-    .line 2
     sget-object v9, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->HTTP:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
     aput-object v9, v8, v1
@@ -181,13 +178,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->scheme:Ljava/lang/String;
 
-    .line 3
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -210,7 +204,6 @@
 .method private belongsTo(Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
@@ -231,7 +224,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 1
     invoke-static {}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->values()[Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
     move-result-object v0
@@ -245,7 +237,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-direct {v3, p0}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->belongsTo(Ljava/lang/String;)Z
 
     move-result v4
@@ -259,7 +250,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     sget-object p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->UNKNOWN:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
@@ -269,7 +259,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -284,7 +273,6 @@
 .method public static values()[Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->$VALUES:[Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
     invoke-virtual {v0}, [Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->clone()Ljava/lang/Object;
@@ -301,14 +289,12 @@
 .method public crop(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->belongsTo(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->uriPrefix:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -321,7 +307,6 @@
 
     return-object p1
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -353,7 +338,6 @@
 .method public wrap(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

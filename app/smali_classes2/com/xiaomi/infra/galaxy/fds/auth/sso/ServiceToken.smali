@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;
 .super Ljava/lang/Object;
-.source "ServiceToken.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
 .method static synthetic access$002(Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->tsl:Z
 
     return p1
@@ -47,7 +44,6 @@
 .method static synthetic access$102(Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;J)J
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->uid:J
 
     return-wide p1
@@ -56,7 +52,6 @@
 .method static synthetic access$202(Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->secret:Ljava/lang/String;
 
     return-object p1
@@ -65,7 +60,6 @@
 .method static synthetic access$302(Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;J)J
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->timestamp:J
 
     return-wide p1
@@ -74,7 +68,6 @@
 .method static synthetic access$402(Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->version:Ljava/lang/String;
 
     return-object p1
@@ -83,7 +76,6 @@
 .method static synthetic access$502(Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;J)J
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->developerId:J
 
     return-wide p1
@@ -94,7 +86,6 @@
 .method public getDeveloperId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->developerId:J
 
     return-wide v0
@@ -103,7 +94,6 @@
 .method public getSecret()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->secret:Ljava/lang/String;
 
     return-object v0
@@ -112,7 +102,6 @@
 .method public getTimestamp()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->timestamp:J
 
     return-wide v0
@@ -121,7 +110,6 @@
 .method public getUid()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->uid:J
 
     return-wide v0
@@ -130,7 +118,6 @@
 .method public getVersion()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->version:Ljava/lang/String;
 
     return-object v0
@@ -139,7 +126,6 @@
 .method public isTsl()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/xiaomi/infra/galaxy/fds/auth/sso/ServiceToken;->tsl:Z
 
     return v0
@@ -148,7 +134,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

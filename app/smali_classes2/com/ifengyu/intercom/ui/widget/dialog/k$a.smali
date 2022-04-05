@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/k$a;
 .super Ljava/lang/Object;
-.source "GaoDeMapDownloadItemClickDialog.java"
 
 
 # annotations

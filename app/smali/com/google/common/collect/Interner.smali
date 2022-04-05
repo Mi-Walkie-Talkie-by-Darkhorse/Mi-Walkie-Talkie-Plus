@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/collect/Interner;
 .super Ljava/lang/Object;
-.source "Interner.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public Landroidx/recyclerview/widget/RecyclerView$v;
 .super Ljava/lang/Object;
-.source "RecyclerView.java"
 
 
 # annotations
@@ -62,46 +61,34 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->a:I
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->c:I
 
-    .line 4
     iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->d:I
 
     const/4 v1, 0x1
 
-    .line 5
     iput v1, p0, Landroidx/recyclerview/widget/RecyclerView$v;->e:I
 
-    .line 6
     iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->f:I
 
-    .line 7
     iput-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->g:Z
 
-    .line 8
     iput-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->h:Z
 
-    .line 9
     iput-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->i:Z
 
-    .line 10
     iput-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->j:Z
 
-    .line 11
     iput-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->k:Z
 
-    .line 12
     iput-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->l:Z
 
     return-void
@@ -112,7 +99,6 @@
 .method public a()I
     .locals 2
 
-    .line 10
     iget-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->h:Z
 
     if-eqz v0, :cond_0
@@ -135,7 +121,6 @@
 .method a(I)V
     .locals 3
 
-    .line 1
     iget v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->e:I
 
     and-int/2addr v0, p1
@@ -144,7 +129,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -156,7 +140,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3
     invoke-static {p1}, Ljava/lang/Integer;->toBinaryString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -169,7 +152,6 @@
 
     iget p1, p0, Landroidx/recyclerview/widget/RecyclerView$v;->e:I
 
-    .line 4
     invoke-static {p1}, Ljava/lang/Integer;->toBinaryString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -190,10 +172,8 @@
 
     const/4 v0, 0x1
 
-    .line 5
     iput v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->e:I
 
-    .line 6
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->getItemCount()I
 
     move-result p1
@@ -202,13 +182,10 @@
 
     const/4 p1, 0x0
 
-    .line 7
     iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$v;->h:Z
 
-    .line 8
     iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$v;->i:Z
 
-    .line 9
     iput-boolean p1, p0, Landroidx/recyclerview/widget/RecyclerView$v;->j:Z
 
     return-void
@@ -217,7 +194,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->a:I
 
     return v0
@@ -226,7 +202,6 @@
 .method public c()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->a:I
 
     const/4 v1, -0x1
@@ -247,7 +222,6 @@
 .method public d()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->h:Z
 
     return v0
@@ -256,7 +230,6 @@
 .method public e()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/recyclerview/widget/RecyclerView$v;->l:Z
 
     return v0
@@ -265,7 +238,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

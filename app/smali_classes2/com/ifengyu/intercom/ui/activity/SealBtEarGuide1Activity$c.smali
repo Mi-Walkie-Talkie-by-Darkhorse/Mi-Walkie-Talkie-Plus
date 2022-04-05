@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;
 .super Lcom/ifengyu/intercom/g/d/i;
-.source "SealBtEarGuide1Activity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/i;-><init>()V
@@ -35,7 +33,6 @@
 .method public a(Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;I)V
     .locals 4
 
-    .line 7
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;->a(Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;)Ljava/lang/Runnable;
@@ -44,14 +41,12 @@
 
     invoke-static {p2}, Lcom/ifengyu/intercom/i/k0;->b(Ljava/lang/Runnable;)V
 
-    .line 8
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
     if-eqz p1, :cond_0
 
-    .line 9
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;->b(Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;)Ljava/lang/String;
@@ -78,7 +73,6 @@
 
     invoke-static {p2, v0}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;->getVersionCode()Ljava/lang/String;
 
     move-result-object p2
@@ -87,12 +81,10 @@
 
     move-result p2
 
-    .line 11
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->D()I
 
     move-result v0
 
-    .line 12
     new-instance v1, Landroid/content/Intent;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
@@ -105,7 +97,6 @@
 
     const-string v3, "seal"
 
-    .line 13
     invoke-virtual {v1, v2, v3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     if-lez v0, :cond_0
@@ -116,25 +107,20 @@
 
     const-string v0, "mcu_have_update"
 
-    .line 14
     invoke-virtual {v1, v0, p2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     const-string p2, "mcu_update_info"
 
-    .line 15
     invoke-virtual {v1, p2, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     const-string p1, "mcu_update_action_from_setting"
 
-    .line 16
     invoke-virtual {v1, p1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 17
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 
     invoke-virtual {p1, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 18
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V
@@ -146,7 +132,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;->a(Lcom/ifengyu/intercom/bean/McuUpdateInfoModel;I)V
@@ -157,10 +142,8 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 0
 
-    .line 2
     invoke-virtual {p2}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;->a(Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;)Ljava/lang/Runnable;
@@ -169,7 +152,6 @@
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/k0;->b(Ljava/lang/Runnable;)V
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 
     const p2, 0x7f110248
@@ -180,14 +162,12 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(Ljava/lang/String;)V
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;->b:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 
     const p2, 0x7f080189
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 6
     new-instance p1, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c$a;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c$a;-><init>(Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;)V

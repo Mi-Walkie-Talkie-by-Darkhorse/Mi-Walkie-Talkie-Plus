@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/api/c/j;
 .super Ljava/lang/Object;
-.source "WeiboShareSDK.java"
 
 
 # direct methods
@@ -9,7 +8,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-static {p0, p1, v0}, Lcom/sina/weibo/sdk/api/c/j;->a(Landroid/content/Context;Ljava/lang/String;Z)Lcom/sina/weibo/sdk/api/c/d;
 
     move-result-object p0
@@ -20,7 +18,6 @@
 .method public static a(Landroid/content/Context;Ljava/lang/String;Z)Lcom/sina/weibo/sdk/api/c/d;
     .locals 1
 
-    .line 1
     new-instance p2, Lcom/sina/weibo/sdk/api/c/i;
 
     const/4 v0, 0x0

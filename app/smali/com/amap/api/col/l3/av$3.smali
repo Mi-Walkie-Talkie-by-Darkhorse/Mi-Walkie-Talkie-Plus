@@ -1,6 +1,5 @@
 .class final synthetic Lcom/amap/api/col/l3/av$3;
 .super Ljava/lang/Object;
-.source "CityObject.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/bv$a;->values()[Lcom/amap/api/col/l3/bv$a;
 
     move-result-object v0

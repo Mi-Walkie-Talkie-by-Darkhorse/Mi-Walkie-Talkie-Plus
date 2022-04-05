@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/AbstractMapBasedMultiset$1$1;
 .super Lcom/google/common/collect/Multisets$AbstractEntry;
-.source "AbstractMapBasedMultiset.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/google/common/collect/AbstractMapBasedMultiset$1;Ljava/util/Map$Entry;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$1$1;->this$1:Lcom/google/common/collect/AbstractMapBasedMultiset$1;
 
     iput-object p2, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$1$1;->val$mapEntry:Ljava/util/Map$Entry;
@@ -46,7 +44,6 @@
 .method public getCount()I
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$1$1;->val$mapEntry:Ljava/util/Map$Entry;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -57,14 +54,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/google/common/collect/Count;->get()I
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$1$1;->this$1:Lcom/google/common/collect/AbstractMapBasedMultiset$1;
 
@@ -86,7 +81,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 4
     invoke-virtual {v1}, Lcom/google/common/collect/Count;->get()I
 
     move-result v0
@@ -100,7 +94,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     invoke-virtual {v0}, Lcom/google/common/collect/Count;->get()I
 
@@ -118,7 +111,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset$1$1;->val$mapEntry:Ljava/util/Map$Entry;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;

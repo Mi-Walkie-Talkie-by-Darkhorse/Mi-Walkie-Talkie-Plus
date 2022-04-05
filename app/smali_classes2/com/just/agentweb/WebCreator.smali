@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/WebCreator;
 .super Ljava/lang/Object;
-.source "WebCreator.java"
 
 # interfaces
 .implements Lcom/just/agentweb/IWebIndicator;

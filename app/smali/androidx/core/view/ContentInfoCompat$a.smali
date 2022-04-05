@@ -1,6 +1,5 @@
 .class public final Landroidx/core/view/ContentInfoCompat$a;
 .super Ljava/lang/Object;
-.source "ContentInfoCompat.java"
 
 
 # annotations
@@ -43,13 +42,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/view/ContentInfoCompat$a;->a:Landroid/content/ClipData;
 
-    .line 3
     iput p2, p0, Landroidx/core/view/ContentInfoCompat$a;->b:I
 
     return-void
@@ -62,7 +58,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iput p1, p0, Landroidx/core/view/ContentInfoCompat$a;->c:I
 
     return-object p0
@@ -77,7 +72,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     iput-object p1, p0, Landroidx/core/view/ContentInfoCompat$a;->d:Landroid/net/Uri;
 
     return-object p0
@@ -92,7 +86,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 3
     iput-object p1, p0, Landroidx/core/view/ContentInfoCompat$a;->e:Landroid/os/Bundle;
 
     return-object p0
@@ -103,7 +96,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 4
     new-instance v0, Landroidx/core/view/ContentInfoCompat;
 
     invoke-direct {v0, p0}, Landroidx/core/view/ContentInfoCompat;-><init>(Landroidx/core/view/ContentInfoCompat$a;)V

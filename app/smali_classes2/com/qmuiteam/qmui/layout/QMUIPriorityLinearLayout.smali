@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;
 .super Lcom/qmuiteam/qmui/layout/QMUILinearLayout;
-.source "QMUIPriorityLinearLayout.java"
 
 
 # annotations
@@ -37,17 +36,14 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;-><init>(Landroid/content/Context;)V
 
-    .line 2
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
-    .line 3
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -60,17 +56,14 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p1, p2}, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 5
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
-    .line 6
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
@@ -83,7 +76,6 @@
 .method private a(II)V
     .locals 11
 
-    .line 1
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v0
@@ -100,12 +92,10 @@
 
     sub-int/2addr v0, v1
 
-    .line 2
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v1
 
-    .line 3
     invoke-direct {p0}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->getVisibleChildCount()I
 
     move-result v2
@@ -118,7 +108,6 @@
 
     goto/16 :goto_6
 
-    .line 4
     :cond_0
     invoke-direct {p0, p1, p2}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->b(II)I
 
@@ -130,7 +119,6 @@
 
     if-lt v1, v0, :cond_2
 
-    .line 5
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -150,14 +138,12 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 6
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
     check-cast v1, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 7
     iget v4, v1, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;->b:I
 
     invoke-static {v4, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
@@ -166,7 +152,6 @@
 
     invoke-virtual {v0, v4, p2}, Landroid/view/View;->measure(II)V
 
-    .line 8
     invoke-virtual {v0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v0
@@ -175,7 +160,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
@@ -196,20 +180,16 @@
 
     check-cast p2, Landroid/view/View;
 
-    .line 10
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p2
 
     check-cast p2, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 11
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
-    .line 12
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 13
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     goto :goto_1
@@ -217,7 +197,6 @@
     :cond_2
     sub-int v1, v0, v1
 
-    .line 14
     iget-object v4, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -241,28 +220,24 @@
 
     check-cast v7, Landroid/view/View;
 
-    .line 15
     invoke-virtual {v7}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v8
 
     check-cast v8, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 16
     invoke-static {v0, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v9
 
     invoke-virtual {v7, v9, p2}, Landroid/view/View;->measure(II)V
 
-    .line 17
     iget v9, v8, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     iget v10, v8, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     add-int/2addr v9, v10
 
-    .line 18
     invoke-virtual {v7}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v10
@@ -271,7 +246,6 @@
 
     add-int/2addr v6, v10
 
-    .line 19
     invoke-virtual {v7}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v7
@@ -291,7 +265,6 @@
     :cond_3
     if-lt v5, v1, :cond_5
 
-    .line 20
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -311,14 +284,12 @@
 
     check-cast p2, Landroid/view/View;
 
-    .line 21
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 22
     invoke-virtual {p2}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result p2
@@ -333,7 +304,6 @@
 
     goto :goto_3
 
-    .line 23
     :cond_4
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
@@ -354,20 +324,16 @@
 
     check-cast p2, Landroid/view/View;
 
-    .line 24
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p2
 
     check-cast p2, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 25
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
-    .line 26
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 27
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     goto :goto_4
@@ -375,7 +341,6 @@
     :cond_5
     if-ge v6, v1, :cond_6
 
-    .line 28
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -384,7 +349,6 @@
 
     if-nez v0, :cond_8
 
-    .line 29
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
     sub-int/2addr v1, v6
@@ -393,7 +357,6 @@
 
     goto :goto_6
 
-    .line 30
     :cond_6
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
@@ -414,20 +377,16 @@
 
     check-cast p2, Landroid/view/View;
 
-    .line 31
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p2
 
     check-cast p2, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 32
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
-    .line 33
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 34
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
     goto :goto_5
@@ -435,7 +394,6 @@
     :cond_7
     if-ge v1, v6, :cond_8
 
-    .line 35
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->isEmpty()Z
@@ -444,7 +402,6 @@
 
     if-nez p1, :cond_8
 
-    .line 36
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1, v1, v6}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->a(Ljava/util/ArrayList;II)V
@@ -457,7 +414,6 @@
 .method private b(II)I
     .locals 10
 
-    .line 1
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v0
@@ -474,7 +430,6 @@
 
     sub-int/2addr v0, v1
 
-    .line 2
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v1
@@ -491,17 +446,14 @@
 
     sub-int/2addr v1, v2
 
-    .line 3
     iget-object v2, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
 
-    .line 4
     iget-object v2, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->clear()V
 
-    .line 5
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getOrientation()I
 
     move-result v2
@@ -510,7 +462,6 @@
 
     const/4 v4, 0x0
 
-    .line 6
     :goto_0
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getChildCount()I
 
@@ -518,12 +469,10 @@
 
     if-ge v3, v5, :cond_8
 
-    .line 7
     invoke-virtual {p0, v3}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v5
 
-    .line 8
     invoke-virtual {v5}, Landroid/view/View;->getVisibility()I
 
     move-result v6
@@ -534,7 +483,6 @@
 
     goto :goto_4
 
-    .line 9
     :cond_0
     invoke-virtual {v5}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -542,17 +490,14 @@
 
     check-cast v6, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 10
     invoke-virtual {v6}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;->a()V
 
-    .line 11
     invoke-virtual {v6, v2}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;->a(I)I
 
     move-result v7
 
     if-nez v2, :cond_1
 
-    .line 12
     iget v8, v6, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
     iget v9, v6, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
@@ -575,14 +520,12 @@
 
     if-nez v2, :cond_3
 
-    .line 13
     iget v6, v6, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
     if-ltz v6, :cond_2
 
     goto :goto_2
 
-    .line 14
     :cond_2
     invoke-static {v0, v7}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
@@ -590,14 +533,12 @@
 
     invoke-virtual {v5, v6, p2}, Landroid/view/View;->measure(II)V
 
-    .line 15
     invoke-virtual {v5}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v5
 
     goto :goto_3
 
-    .line 16
     :cond_3
     iget v6, v6, Landroid/widget/LinearLayout$LayoutParams;->height:I
 
@@ -610,7 +551,6 @@
 
     goto :goto_4
 
-    .line 17
     :cond_4
     invoke-static {v1, v7}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
@@ -618,7 +558,6 @@
 
     invoke-virtual {v5, p1, v6}, Landroid/view/View;->measure(II)V
 
-    .line 18
     invoke-virtual {v5}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v5
@@ -635,14 +574,12 @@
 
     if-ne v7, v8, :cond_6
 
-    .line 19
     iget-object v6, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_4
 
-    .line 20
     :cond_6
     iget v6, v6, Landroid/widget/LinearLayout$LayoutParams;->weight:F
 
@@ -652,7 +589,6 @@
 
     if-nez v6, :cond_7
 
-    .line 21
     iget-object v6, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
     invoke-virtual {v6, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -670,7 +606,6 @@
 .method private c(II)V
     .locals 11
 
-    .line 1
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v0
@@ -687,12 +622,10 @@
 
     sub-int/2addr v0, v1
 
-    .line 2
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v1
 
-    .line 3
     invoke-direct {p0}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->getVisibleChildCount()I
 
     move-result v2
@@ -705,7 +638,6 @@
 
     goto/16 :goto_6
 
-    .line 4
     :cond_0
     invoke-direct {p0, p1, p2}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->b(II)I
 
@@ -717,7 +649,6 @@
 
     if-lt v1, v0, :cond_2
 
-    .line 5
     iget-object p2, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {p2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -737,14 +668,12 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 6
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
     check-cast v1, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 7
     iget v4, v1, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;->b:I
 
     invoke-static {v4, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
@@ -753,7 +682,6 @@
 
     invoke-virtual {v0, p1, v4}, Landroid/view/View;->measure(II)V
 
-    .line 8
     invoke-virtual {v0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v0
@@ -762,7 +690,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
@@ -783,20 +710,16 @@
 
     check-cast p2, Landroid/view/View;
 
-    .line 10
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p2
 
     check-cast p2, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 11
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->height:I
 
-    .line 12
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 13
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
     goto :goto_1
@@ -804,7 +727,6 @@
     :cond_2
     sub-int v1, v0, v1
 
-    .line 14
     iget-object v4, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -828,28 +750,24 @@
 
     check-cast v7, Landroid/view/View;
 
-    .line 15
     invoke-virtual {v7}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v8
 
     check-cast v8, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 16
     invoke-static {v0, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v9
 
     invoke-virtual {v7, p1, v9}, Landroid/view/View;->measure(II)V
 
-    .line 17
     iget v9, v8, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
     iget v10, v8, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
     add-int/2addr v9, v10
 
-    .line 18
     invoke-virtual {v7}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v10
@@ -858,7 +776,6 @@
 
     add-int/2addr v6, v10
 
-    .line 19
     invoke-virtual {v7}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v7
@@ -878,7 +795,6 @@
     :cond_3
     if-lt v5, v1, :cond_5
 
-    .line 20
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -898,14 +814,12 @@
 
     check-cast p2, Landroid/view/View;
 
-    .line 21
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 22
     invoke-virtual {p2}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result p2
@@ -920,7 +834,6 @@
 
     goto :goto_3
 
-    .line 23
     :cond_4
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
@@ -941,20 +854,16 @@
 
     check-cast p2, Landroid/view/View;
 
-    .line 24
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p2
 
     check-cast p2, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 25
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->height:I
 
-    .line 26
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 27
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
     goto :goto_4
@@ -962,7 +871,6 @@
     :cond_5
     if-ge v6, v1, :cond_6
 
-    .line 28
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -971,7 +879,6 @@
 
     if-nez v0, :cond_8
 
-    .line 29
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
     sub-int/2addr v1, v6
@@ -980,7 +887,6 @@
 
     goto :goto_6
 
-    .line 30
     :cond_6
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->d:Ljava/util/ArrayList;
 
@@ -1001,20 +907,16 @@
 
     check-cast p2, Landroid/view/View;
 
-    .line 31
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p2
 
     check-cast p2, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 32
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
-    .line 33
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 34
     iput v3, p2, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
     goto :goto_5
@@ -1022,7 +924,6 @@
     :cond_7
     if-ge v1, v6, :cond_8
 
-    .line 35
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->isEmpty()Z
@@ -1031,7 +932,6 @@
 
     if-nez p1, :cond_8
 
-    .line 36
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c:Ljava/util/ArrayList;
 
     invoke-virtual {p0, p1, v1, v6}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->a(Ljava/util/ArrayList;II)V
@@ -1044,7 +944,6 @@
 .method private getVisibleChildCount()I
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getChildCount()I
 
     move-result v0
@@ -1056,7 +955,6 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 2
     invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v3
@@ -1095,7 +993,6 @@
 
     if-lez p2, :cond_1
 
-    .line 66
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -1113,14 +1010,12 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 67
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
     check-cast v1, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 68
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getOrientation()I
 
     move-result v2
@@ -1131,7 +1026,6 @@
 
     if-nez v2, :cond_0
 
-    .line 69
     invoke-virtual {v0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v2
@@ -1152,7 +1046,6 @@
 
     div-float/2addr v2, v4
 
-    .line 70
     invoke-virtual {v0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v0
@@ -1167,7 +1060,6 @@
 
     float-to-int v0, v0
 
-    .line 71
     invoke-static {v3, v0}, Ljava/lang/Math;->max(II)I
 
     move-result v0
@@ -1176,7 +1068,6 @@
 
     goto :goto_0
 
-    .line 72
     :cond_0
     invoke-virtual {v0}, Landroid/view/View;->getMeasuredHeight()I
 
@@ -1198,7 +1089,6 @@
 
     div-float/2addr v2, v4
 
-    .line 73
     invoke-virtual {v0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v0
@@ -1213,7 +1103,6 @@
 
     float-to-int v0, v0
 
-    .line 74
     invoke-static {v3, v0}, Ljava/lang/Math;->max(II)I
 
     move-result v0
@@ -1237,7 +1126,6 @@
         }
     .end annotation
 
-    .line 37
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -1255,14 +1143,12 @@
 
     check-cast v0, Landroid/view/View;
 
-    .line 38
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v1
 
     check-cast v1, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
-    .line 39
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getOrientation()I
 
     move-result v2
@@ -1275,16 +1161,12 @@
 
     if-gtz p4, :cond_0
 
-    .line 40
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 41
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 42
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
-    .line 43
     :cond_0
     iget v2, v1, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
@@ -1296,12 +1178,10 @@
 
     if-lez p4, :cond_2
 
-    .line 44
     invoke-static {p4, v3}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v2
 
-    .line 45
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getPaddingTop()I
 
     move-result v3
@@ -1318,22 +1198,18 @@
 
     move-result v3
 
-    .line 46
     invoke-virtual {v0, v2, v3}, Landroid/view/View;->measure(II)V
 
-    .line 47
     invoke-virtual {v0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v2
 
     if-lt v2, p4, :cond_1
 
-    .line 48
     iput p4, v1, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
     goto :goto_1
 
-    .line 49
     :cond_1
     invoke-virtual {v0}, Landroid/view/View;->getMeasuredWidth()I
 
@@ -1341,14 +1217,11 @@
 
     goto :goto_2
 
-    .line 50
     :cond_2
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->leftMargin:I
 
-    .line 51
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->rightMargin:I
 
-    .line 52
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
     goto :goto_0
@@ -1356,16 +1229,12 @@
     :cond_3
     if-gtz p4, :cond_4
 
-    .line 53
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 54
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 55
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->height:I
 
-    .line 56
     :cond_4
     iget v2, v1, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
@@ -1377,7 +1246,6 @@
 
     if-lez p4, :cond_6
 
-    .line 57
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getPaddingLeft()I
 
     move-result v2
@@ -1394,22 +1262,18 @@
 
     move-result v2
 
-    .line 58
     invoke-static {p4, v3}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v3
 
-    .line 59
     invoke-virtual {v0, v2, v3}, Landroid/view/View;->measure(II)V
 
-    .line 60
     invoke-virtual {v0}, Landroid/view/View;->getMeasuredHeight()I
 
     move-result v2
 
     if-lt v2, p4, :cond_5
 
-    .line 61
     iput p4, v1, Landroid/widget/LinearLayout$LayoutParams;->height:I
 
     :goto_1
@@ -1417,7 +1281,6 @@
 
     goto/16 :goto_0
 
-    .line 62
     :cond_5
     invoke-virtual {v0}, Landroid/view/View;->getMeasuredHeight()I
 
@@ -1428,14 +1291,11 @@
 
     goto/16 :goto_0
 
-    .line 63
     :cond_6
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->topMargin:I
 
-    .line 64
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->bottomMargin:I
 
-    .line 65
     iput v4, v1, Landroid/widget/LinearLayout$LayoutParams;->height:I
 
     goto/16 :goto_0
@@ -1447,7 +1307,6 @@
 .method protected checkLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
     if-eqz v0, :cond_0
@@ -1472,7 +1331,6 @@
 .method protected bridge synthetic generateDefaultLayoutParams()Landroid/view/ViewGroup$LayoutParams;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->generateDefaultLayoutParams()Landroid/widget/LinearLayout$LayoutParams;
 
     move-result-object v0
@@ -1483,7 +1341,6 @@
 .method protected generateDefaultLayoutParams()Landroid/widget/LinearLayout$LayoutParams;
     .locals 2
 
-    .line 2
     new-instance v0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
     const/4 v1, -0x2
@@ -1496,7 +1353,6 @@
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/LinearLayout$LayoutParams;
 
     move-result-object p1
@@ -1507,7 +1363,6 @@
 .method protected bridge synthetic generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/view/ViewGroup$LayoutParams;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;
 
     move-result-object p1
@@ -1518,7 +1373,6 @@
 .method public generateLayoutParams(Landroid/util/AttributeSet;)Landroid/widget/LinearLayout$LayoutParams;
     .locals 2
 
-    .line 4
     new-instance v0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
@@ -1533,7 +1387,6 @@
 .method protected generateLayoutParams(Landroid/view/ViewGroup$LayoutParams;)Landroid/widget/LinearLayout$LayoutParams;
     .locals 1
 
-    .line 3
     new-instance v0, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;
 
     invoke-direct {v0, p1}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
@@ -1544,23 +1397,19 @@
 .method protected onMeasure(II)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getOrientation()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->a(II)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-direct {p0, p1, p2}, Lcom/qmuiteam/qmui/layout/QMUIPriorityLinearLayout;->c(II)V
 
-    .line 4
     :goto_0
     invoke-super {p0, p1, p2}, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->onMeasure(II)V
 

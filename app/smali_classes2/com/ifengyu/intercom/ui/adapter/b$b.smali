@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/adapter/b$b;
 .super Ljava/lang/Object;
-.source "BtEarAdapter.java"
 
 
 # annotations

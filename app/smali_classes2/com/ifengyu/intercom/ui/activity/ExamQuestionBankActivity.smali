@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;
 .super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
-.source "ExamQuestionBankActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -26,17 +25,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;-><init>()V
 
     const-string v0, "A\u7c7b\u4e1a\u4f59\u65e0\u7ebf\u7535\u53f0\u64cd\u4f5c\u6280\u672f\u80fd\u529b\u9a8c\u8bc1\u9898\u5e931_0.pdf"
 
-    .line 2
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->s:Ljava/lang/String;
 
     const-string v0, "A\u7c7b\u4e1a\u4f59\u65e0\u7ebf\u7535\u53f0\u64cd\u4f5c\u6280\u672f\u80fd\u529b\u9a8c\u8bc1\u9898\u5e931_0.html"
 
-    .line 3
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->t:Ljava/lang/String;
 
     return-void
@@ -45,16 +41,13 @@
 .method private a(Ljava/io/File;)V
     .locals 4
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Ljava/io/File;->createNewFile()Z
 
-    .line 2
     new-instance v0, Ljava/io/FileOutputStream;
 
     invoke-direct {v0, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    .line 3
     invoke-virtual {p0}, Landroid/app/Activity;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object p1
@@ -69,7 +62,6 @@
 
     new-array v1, v1, [B
 
-    .line 4
     invoke-virtual {p1, v1}, Ljava/io/InputStream;->read([B)I
 
     move-result v2
@@ -79,24 +71,19 @@
 
     const/4 v3, 0x0
 
-    .line 5
     invoke-virtual {v0, v1, v3, v2}, Ljava/io/OutputStream;->write([BII)V
 
-    .line 6
     invoke-virtual {p1, v1}, Ljava/io/InputStream;->read([B)I
 
     move-result v2
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
 
-    .line 8
     invoke-virtual {p1}, Ljava/io/InputStream;->close()V
 
-    .line 9
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -106,7 +93,6 @@
     :catch_0
     move-exception p1
 
-    .line 10
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_1
@@ -118,7 +104,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 4
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -138,14 +123,12 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-static {p0, p1, v0}, Landroid/view/View;->inflate(Landroid/content/Context;ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p1
 
     const v0, 0x7f0903a4
 
-    .line 3
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -154,14 +137,12 @@
 
     const v0, 0x7f0902f7
 
-    .line 4
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 5
     new-instance v0, Landroid/widget/PopupWindow;
 
     const/4 v1, -0x2
@@ -172,22 +153,18 @@
 
     const v1, 0x7f12000d
 
-    .line 6
     invoke-virtual {v0, v1}, Landroid/widget/PopupWindow;->setAnimationStyle(I)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->w:Landroid/widget/PopupWindow;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/widget/PopupWindow;->setFocusable(Z)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->w:Landroid/widget/PopupWindow;
 
     invoke-virtual {v0, v1}, Landroid/widget/PopupWindow;->setOutsideTouchable(Z)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->w:Landroid/widget/PopupWindow;
 
     new-instance v1, Landroid/graphics/drawable/ColorDrawable;
@@ -202,28 +179,22 @@
 
     new-array v0, v0, [I
 
-    .line 10
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->u:Landroid/widget/ImageView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->getLocationOnScreen([I)V
 
-    .line 11
     invoke-static {v2, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v0
 
-    .line 12
     invoke-static {v2, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v1
 
-    .line 13
     invoke-virtual {p1, v0, v1}, Landroid/view/View;->measure(II)V
 
-    .line 14
     invoke-static {p0}, Lcom/ifengyu/intercom/d;->a(Landroid/app/Activity;)V
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->w:Landroid/widget/PopupWindow;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->u:Landroid/widget/ImageView;
@@ -232,13 +203,11 @@
 
     goto/16 :goto_0
 
-    .line 16
     :sswitch_1
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     goto :goto_0
 
-    .line 17
     :sswitch_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->v:Ljava/io/File;
 
@@ -248,37 +217,29 @@
 
     if-nez p1, :cond_0
 
-    .line 18
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->v:Ljava/io/File;
 
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->a(Ljava/io/File;)V
 
-    .line 19
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->w:Landroid/widget/PopupWindow;
 
     invoke-virtual {p1}, Landroid/widget/PopupWindow;->dismiss()V
 
-    .line 20
     new-instance p1, Landroid/content/Intent;
 
     invoke-direct {p1}, Landroid/content/Intent;-><init>()V
 
     const-string v3, "android.intent.action.SEND"
 
-    .line 21
     invoke-virtual {p1, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 22
     invoke-virtual {p1, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 23
     invoke-virtual {p1, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 24
     invoke-virtual {p1, v0}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 25
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->v:Ljava/io/File;
 
     invoke-static {v0}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
@@ -291,7 +252,6 @@
 
     const v0, 0x7f1102f8
 
-    .line 26
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -304,7 +264,6 @@
 
     goto :goto_0
 
-    .line 27
     :sswitch_3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->v:Ljava/io/File;
 
@@ -314,34 +273,27 @@
 
     if-nez p1, :cond_1
 
-    .line 28
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->v:Ljava/io/File;
 
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->a(Ljava/io/File;)V
 
-    .line 29
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->w:Landroid/widget/PopupWindow;
 
     invoke-virtual {p1}, Landroid/widget/PopupWindow;->dismiss()V
 
-    .line 30
     new-instance p1, Landroid/content/Intent;
 
     invoke-direct {p1}, Landroid/content/Intent;-><init>()V
 
     const-string v3, "android.intent.action.VIEW"
 
-    .line 31
     invoke-virtual {p1, v3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 32
     invoke-virtual {p1, v2}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 33
     invoke-virtual {p1, v1}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 34
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->v:Ljava/io/File;
 
     invoke-static {v1}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
@@ -352,7 +304,6 @@
 
     const v0, 0x7f110267
 
-    .line 35
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -380,17 +331,14 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c0028
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->setContentView(I)V
 
     const p1, 0x7f0904d1
 
-    .line 3
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -401,7 +349,6 @@
 
     const p1, 0x7f090419
 
-    .line 4
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -410,7 +357,6 @@
 
     const p1, 0x7f09041a
 
-    .line 5
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -421,10 +367,8 @@
 
     const/4 v0, 0x0
 
-    .line 6
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->u:Landroid/widget/ImageView;
 
     const v0, 0x7f080112
@@ -433,26 +377,22 @@
 
     const/high16 p1, 0x41a80000    # 21.0f
 
-    .line 8
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->a(F)F
 
     move-result p1
 
     float-to-int p1, p1
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->u:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p1, p1, p1, p1}, Landroid/widget/ImageView;->setPadding(IIII)V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->u:Landroid/widget/ImageView;
 
     invoke-virtual {p1, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     const p1, 0x7f09041d
 
-    .line 11
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -461,24 +401,20 @@
 
     const v0, 0x7f110296
 
-    .line 12
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 13
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->w()V
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->q:Landroid/webkit/WebView;
 
     const-string v0, "file:///android_asset/A\u7c7b\u4e1a\u4f59\u65e0\u7ebf\u7535\u53f0\u64cd\u4f5c\u6280\u672f\u80fd\u529b\u9a8c\u8bc1\u9898\u5e931_0.html"
 
     invoke-virtual {p1, v0}, Landroid/webkit/WebView;->loadUrl(Ljava/lang/String;)V
 
-    .line 15
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -511,7 +447,6 @@
 
     move-result-object p1
 
-    .line 16
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -524,34 +459,28 @@
 .method public w()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->q:Landroid/webkit/WebView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setScrollBarSize(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->q:Landroid/webkit/WebView;
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setHapticFeedbackEnabled(Z)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->q:Landroid/webkit/WebView;
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setHorizontalScrollBarEnabled(Z)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->q:Landroid/webkit/WebView;
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setVerticalScrollBarEnabled(Z)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->q:Landroid/webkit/WebView;
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebView;->setScrollContainer(Z)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->q:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
@@ -562,49 +491,40 @@
 
     const-string v2, "utf-8"
 
-    .line 7
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setDefaultTextEncodingName(Ljava/lang/String;)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->r:Landroid/webkit/WebSettings;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setUseWideViewPort(Z)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->r:Landroid/webkit/WebSettings;
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setLoadWithOverviewMode(Z)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->r:Landroid/webkit/WebSettings;
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setSupportZoom(Z)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->r:Landroid/webkit/WebSettings;
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setBuiltInZoomControls(Z)V
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->r:Landroid/webkit/WebSettings;
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setDisplayZoomControls(Z)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->r:Landroid/webkit/WebSettings;
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->r:Landroid/webkit/WebSettings;
 
     sget-object v3, Landroid/webkit/WebSettings$LayoutAlgorithm;->SINGLE_COLUMN:Landroid/webkit/WebSettings$LayoutAlgorithm;
 
     invoke-virtual {v0, v3}, Landroid/webkit/WebSettings;->setLayoutAlgorithm(Landroid/webkit/WebSettings$LayoutAlgorithm;)V
 
-    .line 15
     invoke-virtual {p0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -615,7 +535,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->r:Landroid/webkit/WebSettings;
 
     const/4 v3, -0x1
@@ -624,26 +543,22 @@
 
     goto :goto_0
 
-    .line 17
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->r:Landroid/webkit/WebSettings;
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setCacheMode(I)V
 
-    .line 18
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->r:Landroid/webkit/WebSettings;
 
     invoke-virtual {v0, v2}, Landroid/webkit/WebSettings;->setAllowFileAccessFromFileURLs(Z)V
 
-    .line 19
     invoke-static {}, Lcom/ifengyu/intercom/i/i;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 20
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ExamQuestionBankActivity;->r:Landroid/webkit/WebSettings;
 
     invoke-virtual {v0, v1}, Landroid/webkit/WebSettings;->setMixedContentMode(I)V

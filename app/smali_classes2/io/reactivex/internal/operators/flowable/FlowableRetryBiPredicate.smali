@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableRetryBiPredicate;
 .super Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;
-.source "FlowableRetryBiPredicate.java"
 
 
 # annotations
@@ -53,10 +52,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;-><init>(Lio/reactivex/Flowable;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/flowable/FlowableRetryBiPredicate;->predicate:Lio/reactivex/functions/BiPredicate;
 
     return-void
@@ -74,15 +71,12 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/subscriptions/SubscriptionArbiter;
 
     invoke-direct {v0}, Lio/reactivex/internal/subscriptions/SubscriptionArbiter;-><init>()V
 
-    .line 2
     invoke-interface {p1, v0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 3
     new-instance v1, Lio/reactivex/internal/operators/flowable/FlowableRetryBiPredicate$RetryBiSubscriber;
 
     iget-object v2, p0, Lio/reactivex/internal/operators/flowable/FlowableRetryBiPredicate;->predicate:Lio/reactivex/functions/BiPredicate;
@@ -91,7 +85,6 @@
 
     invoke-direct {v1, p1, v2, v0, v3}, Lio/reactivex/internal/operators/flowable/FlowableRetryBiPredicate$RetryBiSubscriber;-><init>(Lc/a/c;Lio/reactivex/functions/BiPredicate;Lio/reactivex/internal/subscriptions/SubscriptionArbiter;Lc/a/b;)V
 
-    .line 4
     invoke-virtual {v1}, Lio/reactivex/internal/operators/flowable/FlowableRetryBiPredicate$RetryBiSubscriber;->subscribeNext()V
 
     return-void

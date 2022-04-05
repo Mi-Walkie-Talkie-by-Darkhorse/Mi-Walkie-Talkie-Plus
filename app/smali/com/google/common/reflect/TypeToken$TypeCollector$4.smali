@@ -1,6 +1,5 @@
 .class final Lcom/google/common/reflect/TypeToken$TypeCollector$4;
 .super Lcom/google/common/collect/Ordering;
-.source "TypeToken.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Ljava/util/Comparator;Ljava/util/Map;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/reflect/TypeToken$TypeCollector$4;->val$valueComparator:Ljava/util/Comparator;
 
     iput-object p2, p0, Lcom/google/common/reflect/TypeToken$TypeCollector$4;->val$map:Ljava/util/Map;
@@ -51,7 +49,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$TypeCollector$4;->val$valueComparator:Ljava/util/Comparator;
 
     iget-object v1, p0, Lcom/google/common/reflect/TypeToken$TypeCollector$4;->val$map:Ljava/util/Map;

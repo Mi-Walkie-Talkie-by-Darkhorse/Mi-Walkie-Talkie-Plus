@@ -1,13 +1,11 @@
 .class public Lcom/just/agentweb/LollipopFixedWebView;
 .super Landroid/webkit/WebView;
-.source "LollipopFixedWebView.java"
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/just/agentweb/LollipopFixedWebView;->getFixedContext(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
@@ -20,7 +18,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 2
     invoke-static {p1}, Lcom/just/agentweb/LollipopFixedWebView;->getFixedContext(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
@@ -33,7 +30,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 3
     invoke-static {p1}, Lcom/just/agentweb/LollipopFixedWebView;->getFixedContext(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
@@ -49,7 +45,6 @@
         value = 0x15
     .end annotation
 
-    .line 4
     invoke-static {p1}, Lcom/just/agentweb/LollipopFixedWebView;->getFixedContext(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
@@ -62,7 +57,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;IZ)V
     .locals 0
 
-    .line 5
     invoke-static {p1}, Lcom/just/agentweb/LollipopFixedWebView;->getFixedContext(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
@@ -75,7 +69,6 @@
 .method public static getFixedContext(Landroid/content/Context;)Landroid/content/Context;
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
@@ -86,7 +79,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Landroid/content/res/Configuration;
 
     invoke-direct {v0}, Landroid/content/res/Configuration;-><init>()V

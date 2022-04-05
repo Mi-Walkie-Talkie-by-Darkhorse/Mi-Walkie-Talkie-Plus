@@ -1,20 +1,17 @@
 .class public Lcom/ifengyu/intercom/i/z;
 .super Ljava/lang/Object;
-.source "Logger.java"
 
 
 # direct methods
 .method public static a(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 8
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -48,14 +45,12 @@
 .method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
 
-    .line 11
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->b()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 12
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -99,14 +94,12 @@
 .method public static a(Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->d()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 10
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -156,14 +149,12 @@
     :goto_0
     if-eqz v1, :cond_2
 
-    .line 1
     instance-of v2, v1, Ljava/net/UnknownHostException;
 
     if-eqz v2, :cond_1
 
     return-object v0
 
-    .line 2
     :cond_1
     invoke-virtual {v1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
@@ -171,21 +162,17 @@
 
     goto :goto_0
 
-    .line 3
     :cond_2
     new-instance v0, Ljava/io/StringWriter;
 
     invoke-direct {v0}, Ljava/io/StringWriter;-><init>()V
 
-    .line 4
     new-instance v1, Ljava/io/PrintWriter;
 
     invoke-direct {v1, v0}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
-    .line 5
     invoke-virtual {p0, v1}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
 
-    .line 6
     invoke-virtual {v0}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -204,14 +191,12 @@
 .method public static b(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->b()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -245,14 +230,12 @@
 .method public static b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->d()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -304,14 +287,12 @@
 .method public static c(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->e()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -353,14 +334,12 @@
 .method public static d(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -402,14 +381,12 @@
 .method public static e(Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->d()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

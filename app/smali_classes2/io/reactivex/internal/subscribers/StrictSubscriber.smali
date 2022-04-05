@@ -1,6 +1,5 @@
 .class public Lio/reactivex/internal/subscribers/StrictSubscriber;
 .super Ljava/util/concurrent/atomic/AtomicInteger;
-.source "StrictSubscriber.java"
 
 # interfaces
 .implements Lio/reactivex/FlowableSubscriber;
@@ -65,34 +64,28 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->downstream:Lc/a/c;
 
-    .line 3
     new-instance p1, Lio/reactivex/internal/util/AtomicThrowable;
 
     invoke-direct {p1}, Lio/reactivex/internal/util/AtomicThrowable;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->error:Lio/reactivex/internal/util/AtomicThrowable;
 
-    .line 4
     new-instance p1, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 5
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 6
     new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
@@ -107,12 +100,10 @@
 .method public cancel()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->done:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-static {v0}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->cancel(Ljava/util/concurrent/atomic/AtomicReference;)Z
@@ -126,10 +117,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->done:Z
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->downstream:Lc/a/c;
 
     iget-object v1, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->error:Lio/reactivex/internal/util/AtomicThrowable;
@@ -144,10 +133,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->done:Z
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->downstream:Lc/a/c;
 
     iget-object v1, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->error:Lio/reactivex/internal/util/AtomicThrowable;
@@ -165,7 +152,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->downstream:Lc/a/c;
 
     iget-object v1, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->error:Lio/reactivex/internal/util/AtomicThrowable;
@@ -178,7 +164,6 @@
 .method public onSubscribe(Lc/a/d;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
@@ -191,12 +176,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0, p0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     iget-object v1, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
@@ -205,14 +188,11 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-interface {p1}, Lc/a/d;->cancel()V
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/internal/subscribers/StrictSubscriber;->cancel()V
 
-    .line 6
     new-instance p1, Ljava/lang/IllegalStateException;
 
     const-string v0, "\u00a72.12 violated: onSubscribe must be called at most once"
@@ -234,10 +214,8 @@
 
     if-gtz v2, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/subscribers/StrictSubscriber;->cancel()V
 
-    .line 2
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -260,7 +238,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/subscribers/StrictSubscriber;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 

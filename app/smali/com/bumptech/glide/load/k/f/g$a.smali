@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/k/f/g$a;
 .super Lcom/bumptech/glide/request/h/f;
-.source "GifFrameLoader.java"
 
 
 # annotations
@@ -39,16 +38,12 @@
 .method constructor <init>(Landroid/os/Handler;IJ)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/request/h/f;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/k/f/g$a;->d:Landroid/os/Handler;
 
-    .line 3
     iput p2, p0, Lcom/bumptech/glide/load/k/f/g$a;->e:I
 
-    .line 4
     iput-wide p3, p0, Lcom/bumptech/glide/load/k/f/g$a;->f:J
 
     return-void
@@ -77,10 +72,8 @@
         }
     .end annotation
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/k/f/g$a;->g:Landroid/graphics/Bitmap;
 
-    .line 3
     iget-object p1, p0, Lcom/bumptech/glide/load/k/f/g$a;->d:Landroid/os/Handler;
 
     const/4 p2, 0x1
@@ -89,7 +82,6 @@
 
     move-result-object p1
 
-    .line 4
     iget-object p2, p0, Lcom/bumptech/glide/load/k/f/g$a;->d:Landroid/os/Handler;
 
     iget-wide v0, p0, Lcom/bumptech/glide/load/k/f/g$a;->f:J
@@ -110,7 +102,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Landroid/graphics/Bitmap;
 
     invoke-virtual {p0, p1, p2}, Lcom/bumptech/glide/load/k/f/g$a;->a(Landroid/graphics/Bitmap;Lcom/bumptech/glide/request/i/d;)V
@@ -121,7 +112,6 @@
 .method d()Landroid/graphics/Bitmap;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/k/f/g$a;->g:Landroid/graphics/Bitmap;
 
     return-object v0

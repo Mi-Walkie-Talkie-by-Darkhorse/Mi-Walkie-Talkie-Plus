@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/sina/weibo/sdk/net/d;
 .super Ljava/lang/Object;
-.source "RequestListener.java"
 
 
 # virtual methods

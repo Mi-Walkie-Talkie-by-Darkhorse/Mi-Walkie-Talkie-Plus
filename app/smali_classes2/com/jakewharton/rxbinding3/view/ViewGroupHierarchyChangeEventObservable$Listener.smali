@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/view/ViewGroupHierarchyChangeEventObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "ViewGroupHierarchyChangeEventObservable.kt"
 
 # interfaces
 .implements Landroid/view/ViewGroup$OnHierarchyChangeListener;
@@ -98,7 +97,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/view/ViewGroupHierarchyChangeEventObservable$Listener;->viewGroup:Landroid/view/ViewGroup;
@@ -129,14 +127,12 @@
 
     invoke-static {p2, p1}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/view/ViewGroupHierarchyChangeEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     new-instance v0, Lcom/jakewharton/rxbinding3/view/ViewGroupHierarchyChildViewAddEvent;
@@ -170,14 +166,12 @@
 
     invoke-static {p2, p1}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/view/ViewGroupHierarchyChangeEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     new-instance v0, Lcom/jakewharton/rxbinding3/view/ViewGroupHierarchyChildViewRemoveEvent;
@@ -195,7 +189,6 @@
 .method protected onDispose()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/ViewGroupHierarchyChangeEventObservable$Listener;->viewGroup:Landroid/view/ViewGroup;
 
     const/4 v1, 0x0

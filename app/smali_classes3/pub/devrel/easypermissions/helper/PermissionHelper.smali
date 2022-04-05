@@ -1,6 +1,5 @@
 .class public abstract Lpub/devrel/easypermissions/helper/PermissionHelper;
 .super Ljava/lang/Object;
-.source "PermissionHelper.java"
 
 
 # annotations
@@ -47,10 +46,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lpub/devrel/easypermissions/helper/PermissionHelper;->mHost:Ljava/lang/Object;
 
     return-void
@@ -61,21 +58,18 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Lpub/devrel/easypermissions/helper/LowApiPermissionsHelper;
 
     invoke-direct {v0, p0}, Lpub/devrel/easypermissions/helper/LowApiPermissionsHelper;-><init>(Ljava/lang/Object;)V
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v0, Lpub/devrel/easypermissions/helper/ActivityPermissionHelper;
 
@@ -89,21 +83,18 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 7
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-ge v0, v1, :cond_0
 
-    .line 8
     new-instance v0, Lpub/devrel/easypermissions/helper/LowApiPermissionsHelper;
 
     invoke-direct {v0, p0}, Lpub/devrel/easypermissions/helper/LowApiPermissionsHelper;-><init>(Ljava/lang/Object;)V
 
     return-object v0
 
-    .line 9
     :cond_0
     new-instance v0, Lpub/devrel/easypermissions/helper/FrameworkFragmentPermissionHelper;
 
@@ -117,21 +108,18 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 4
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-ge v0, v1, :cond_0
 
-    .line 5
     new-instance v0, Lpub/devrel/easypermissions/helper/LowApiPermissionsHelper;
 
     invoke-direct {v0, p0}, Lpub/devrel/easypermissions/helper/LowApiPermissionsHelper;-><init>(Ljava/lang/Object;)V
 
     return-object v0
 
-    .line 6
     :cond_0
     new-instance v0, Lpub/devrel/easypermissions/helper/SupportFragmentPermissionHelper;
 
@@ -156,7 +144,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lpub/devrel/easypermissions/helper/PermissionHelper;->mHost:Ljava/lang/Object;
 
     return-object v0
@@ -169,7 +156,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p1}, Lpub/devrel/easypermissions/helper/PermissionHelper;->shouldShowRequestPermissionRationale(Ljava/lang/String;)Z
 
     move-result p1
@@ -205,7 +191,6 @@
         .end annotation
     .end param
 
-    .line 1
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -217,7 +202,6 @@
 
     aget-object v3, p1, v2
 
-    .line 2
     invoke-virtual {p0, v3}, Lpub/devrel/easypermissions/helper/PermissionHelper;->shouldShowRequestPermissionRationale(Ljava/lang/String;)Z
 
     move-result v3
@@ -270,14 +254,12 @@
         api = 0xb
     .end annotation
 
-    .line 1
     invoke-static {p3, p4, p2, p5, p6}, Lpub/devrel/easypermissions/RationaleDialogFragment;->newInstance(IILjava/lang/String;I[Ljava/lang/String;)Lpub/devrel/easypermissions/RationaleDialogFragment;
 
     move-result-object p2
 
     const-string p3, "RationaleDialogFragment"
 
-    .line 2
     invoke-virtual {p2, p1, p3}, Landroid/app/DialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     return-void
@@ -290,7 +272,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p1}, Lpub/devrel/easypermissions/helper/PermissionHelper;->shouldShowRationale([Ljava/lang/String;)Z
 
     move-result p1
@@ -313,7 +294,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -331,7 +311,6 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 2
     invoke-virtual {p0, v0}, Lpub/devrel/easypermissions/helper/PermissionHelper;->permissionPermanentlyDenied(Ljava/lang/String;)Z
 
     move-result v0

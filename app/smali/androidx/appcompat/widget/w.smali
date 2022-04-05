@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/w;
 .super Landroid/content/res/Resources;
-.source "ResourcesWrapper.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method public constructor <init>(Landroid/content/res/Resources;)V
     .locals 3
 
-    .line 1
     invoke-virtual {p1}, Landroid/content/res/Resources;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object v0
@@ -26,7 +24,6 @@
 
     invoke-direct {p0, v0, v1, v2}, Landroid/content/res/Resources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V
 
-    .line 2
     iput-object p1, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     return-void
@@ -42,7 +39,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getAnimation(I)Landroid/content/res/XmlResourceParser;
@@ -60,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getBoolean(I)Z
@@ -78,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getColor(I)I
@@ -96,7 +90,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getColorStateList(I)Landroid/content/res/ColorStateList;
@@ -109,7 +102,6 @@
 .method public getConfiguration()Landroid/content/res/Configuration;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
@@ -127,7 +119,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getDimension(I)F
@@ -145,7 +136,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
@@ -163,7 +153,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
@@ -176,7 +165,6 @@
 .method public getDisplayMetrics()Landroid/util/DisplayMetrics;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
@@ -194,7 +182,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
@@ -216,7 +203,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
@@ -238,7 +224,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/Resources;->getDrawableForDensity(II)Landroid/graphics/drawable/Drawable;
@@ -254,7 +239,6 @@
         value = 0x15
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/content/res/Resources;->getDrawableForDensity(IILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
@@ -267,7 +251,6 @@
 .method public getFraction(III)F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/content/res/Resources;->getFraction(III)F
@@ -280,7 +263,6 @@
 .method public getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
@@ -298,7 +280,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getIntArray(I)[I
@@ -316,7 +297,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getInteger(I)I
@@ -334,7 +314,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getLayout(I)Landroid/content/res/XmlResourceParser;
@@ -352,7 +331,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getMovie(I)Landroid/graphics/Movie;
@@ -370,7 +348,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/Resources;->getQuantityString(II)Ljava/lang/String;
@@ -388,7 +365,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/content/res/Resources;->getQuantityString(II[Ljava/lang/Object;)Ljava/lang/String;
@@ -406,7 +382,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/Resources;->getQuantityText(II)Ljava/lang/CharSequence;
@@ -424,7 +399,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getResourceEntryName(I)Ljava/lang/String;
@@ -442,7 +416,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getResourceName(I)Ljava/lang/String;
@@ -460,7 +433,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getResourcePackageName(I)Ljava/lang/String;
@@ -478,7 +450,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getResourceTypeName(I)Ljava/lang/String;
@@ -496,7 +467,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
@@ -514,7 +484,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
@@ -532,7 +501,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
@@ -550,7 +518,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
@@ -563,7 +530,6 @@
 .method public getText(ILjava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/Resources;->getText(ILjava/lang/CharSequence;)Ljava/lang/CharSequence;
@@ -581,7 +547,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getTextArray(I)[Ljava/lang/CharSequence;
@@ -599,7 +564,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/content/res/Resources;->getValue(ILandroid/util/TypedValue;Z)V
@@ -615,7 +579,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/content/res/Resources;->getValue(Ljava/lang/String;Landroid/util/TypedValue;Z)V
@@ -635,7 +598,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroid/content/res/Resources;->getValueForDensity(IILandroid/util/TypedValue;Z)V
@@ -651,7 +613,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
@@ -664,7 +625,6 @@
 .method public obtainAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/Resources;->obtainAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -682,7 +642,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->obtainTypedArray(I)Landroid/content/res/TypedArray;
@@ -700,7 +659,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
@@ -718,7 +676,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/Resources;->openRawResource(ILandroid/util/TypedValue;)Ljava/io/InputStream;
@@ -736,7 +693,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->openRawResourceFd(I)Landroid/content/res/AssetFileDescriptor;
@@ -754,7 +710,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/content/res/Resources;->parseBundleExtra(Ljava/lang/String;Landroid/util/AttributeSet;Landroid/os/Bundle;)V
@@ -771,7 +726,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/Resources;->parseBundleExtras(Landroid/content/res/XmlResourceParser;Landroid/os/Bundle;)V
@@ -782,15 +736,12 @@
 .method public updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/content/res/Resources;->updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/w;->a:Landroid/content/res/Resources;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0, p1, p2}, Landroid/content/res/Resources;->updateConfiguration(Landroid/content/res/Configuration;Landroid/util/DisplayMetrics;)V
 
     :cond_0

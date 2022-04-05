@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$a;
 .super Ljava/lang/Object;
-.source "QMUIStickySectionLayout.java"
 
 # interfaces
 .implements Landroid/view/View$OnLayoutChangeListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$a;->a:Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public onLayoutChange(Landroid/view/View;IIIIIIII)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$a;->a:Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;
 
     sub-int/2addr p5, p3
 
     invoke-static {p1, p5}, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;->a(Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;I)I
 
-    .line 2
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$a;->a:Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;->a(Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;)I
@@ -62,7 +58,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$a;->a:Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;->b(Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;)Ljava/lang/Runnable;
@@ -71,7 +66,6 @@
 
     invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
-    .line 4
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$a;->a:Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;
 
     const/4 p2, 0x0

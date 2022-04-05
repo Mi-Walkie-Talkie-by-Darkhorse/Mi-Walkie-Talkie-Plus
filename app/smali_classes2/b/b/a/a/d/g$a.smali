@@ -1,6 +1,5 @@
 .class Lb/b/a/a/d/g$a;
 .super Ljava/lang/Object;
-.source "WbAppActivator.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,12 +26,10 @@
 .method constructor <init>(Lb/b/a/a/d/g;Landroid/content/SharedPreferences;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
     iput-object p2, p0, Lb/b/a/a/d/g$a;->b:Landroid/content/SharedPreferences;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +42,6 @@
 
     const-string v0, "after unlock \n mLock.isLocked()--->"
 
-    .line 1
     invoke-static {}, Lb/b/a/a/d/g;->b()Ljava/lang/String;
 
     move-result-object v1
@@ -74,7 +70,6 @@
 
     invoke-static {v1, v2}, Lcom/sina/weibo/sdk/utils/c;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object v1, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
     invoke-static {v1}, Lb/b/a/a/d/g;->a(Lb/b/a/a/d/g;)Ljava/util/concurrent/locks/ReentrantLock;
@@ -92,7 +87,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 3
     :try_start_0
     iget-object v2, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
@@ -112,12 +106,10 @@
 
     if-eqz v2, :cond_1
 
-    .line 4
     invoke-static {v2}, Lcom/sina/weibo/sdk/utils/a;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 5
     new-instance v3, Lb/b/a/a/d/f;
 
     invoke-direct {v3, v2}, Lb/b/a/a/d/f;-><init>(Ljava/lang/String;)V
@@ -125,7 +117,6 @@
     .catch Lcom/sina/weibo/sdk/exception/WeiboException; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     :try_start_1
     iget-object v1, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
@@ -135,7 +126,6 @@
 
     invoke-static {v1, v2}, Lb/b/a/a/d/g;->a(Lb/b/a/a/d/g;Ljava/util/List;)V
 
-    .line 7
     iget-object v1, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
     invoke-virtual {v3}, Lb/b/a/a/d/f;->c()Ljava/util/List;
@@ -156,7 +146,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_1
     :goto_0
     iget-object v2, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
@@ -169,7 +158,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 9
     iget-object v2, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
     invoke-static {v2}, Lb/b/a/a/d/g;->b(Lb/b/a/a/d/g;)Landroid/content/Context;
@@ -186,7 +174,6 @@
 
     invoke-static {v2, v3, v4, v5}, Lb/b/a/a/d/g$b;->a(Landroid/content/Context;Landroid/content/SharedPreferences;J)V
 
-    .line 10
     iget-object v1, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
     invoke-static {v1}, Lb/b/a/a/d/g;->b(Lb/b/a/a/d/g;)Landroid/content/Context;
@@ -201,7 +188,6 @@
 
     invoke-static {v1, v2, v3, v4}, Lb/b/a/a/d/g$b;->b(Landroid/content/Context;Landroid/content/SharedPreferences;J)V
 
-    .line 11
     :cond_2
     invoke-static {}, Lb/b/a/a/d/g;->b()Ljava/lang/String;
 
@@ -229,7 +215,6 @@
 
     move-object v1, v2
 
-    .line 12
     :goto_1
     :try_start_2
     invoke-static {}, Lb/b/a/a/d/g;->b()Ljava/lang/String;
@@ -244,7 +229,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 13
     iget-object v1, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
     invoke-static {v1}, Lb/b/a/a/d/g;->a(Lb/b/a/a/d/g;)Ljava/util/concurrent/locks/ReentrantLock;
@@ -255,7 +239,6 @@
 
     if-eqz v3, :cond_3
 
-    .line 14
     iget-object v1, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
     invoke-static {v1}, Lb/b/a/a/d/g;->b(Lb/b/a/a/d/g;)Landroid/content/Context;
@@ -272,7 +255,6 @@
 
     invoke-static {v1, v2, v3, v4}, Lb/b/a/a/d/g$b;->a(Landroid/content/Context;Landroid/content/SharedPreferences;J)V
 
-    .line 15
     iget-object v1, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
     invoke-static {v1}, Lb/b/a/a/d/g;->b(Lb/b/a/a/d/g;)Landroid/content/Context;
@@ -287,7 +269,6 @@
 
     invoke-static {v1, v2, v3, v4}, Lb/b/a/a/d/g$b;->b(Landroid/content/Context;Landroid/content/SharedPreferences;J)V
 
-    .line 16
     :cond_3
     invoke-static {}, Lb/b/a/a/d/g;->b()Ljava/lang/String;
 
@@ -321,7 +302,6 @@
     :catchall_1
     move-exception v1
 
-    .line 17
     :goto_3
     iget-object v2, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
@@ -333,7 +313,6 @@
 
     if-eqz v3, :cond_4
 
-    .line 18
     iget-object v2, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
     invoke-static {v2}, Lb/b/a/a/d/g;->b(Lb/b/a/a/d/g;)Landroid/content/Context;
@@ -350,7 +329,6 @@
 
     invoke-static {v2, v4, v5, v6}, Lb/b/a/a/d/g$b;->a(Landroid/content/Context;Landroid/content/SharedPreferences;J)V
 
-    .line 19
     iget-object v2, p0, Lb/b/a/a/d/g$a;->a:Lb/b/a/a/d/g;
 
     invoke-static {v2}, Lb/b/a/a/d/g;->b(Lb/b/a/a/d/g;)Landroid/content/Context;
@@ -365,7 +343,6 @@
 
     invoke-static {v2, v3, v4, v5}, Lb/b/a/a/d/g$b;->b(Landroid/content/Context;Landroid/content/SharedPreferences;J)V
 
-    .line 20
     :cond_4
     invoke-static {}, Lb/b/a/a/d/g;->b()Ljava/lang/String;
 
@@ -393,6 +370,5 @@
 
     invoke-static {v2, v0}, Lcom/sina/weibo/sdk/utils/c;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 21
     throw v1
 .end method

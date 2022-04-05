@@ -1,6 +1,5 @@
 .class final Lcom/meituan/android/walle/a;
 .super Ljava/lang/Object;
-.source "ApkUtil.java"
 
 
 # direct methods
@@ -25,12 +24,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/meituan/android/walle/a;->b(Ljava/nio/channels/FileChannel;)J
 
     move-result-wide v0
 
-    .line 2
     invoke-static {p0, v0, v1}, Lcom/meituan/android/walle/a;->a(Ljava/nio/channels/FileChannel;J)Lcom/meituan/android/walle/d;
 
     move-result-object p0
@@ -69,27 +66,22 @@
 
     sub-long v0, p1, v0
 
-    .line 3
     invoke-virtual {p0, v0, v1}, Ljava/nio/channels/FileChannel;->position(J)Ljava/nio/channels/FileChannel;
 
     const/16 v0, 0x18
 
-    .line 4
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {p0, v0}, Ljava/nio/channels/FileChannel;->read(Ljava/nio/ByteBuffer;)I
 
-    .line 6
     sget-object v1, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
     const/16 v1, 0x8
 
-    .line 7
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->getLong(I)J
 
     move-result-wide v1
@@ -102,7 +94,6 @@
 
     const/16 v1, 0x10
 
-    .line 8
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->getLong(I)J
 
     move-result-wide v1
@@ -115,12 +106,10 @@
 
     const/4 v1, 0x0
 
-    .line 9
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->getLong(I)J
 
     move-result-wide v2
 
-    .line 10
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->capacity()I
 
     move-result v0
@@ -153,23 +142,18 @@
 
     if-ltz v6, :cond_1
 
-    .line 11
     invoke-virtual {p0, p1, p2}, Ljava/nio/channels/FileChannel;->position(J)Ljava/nio/channels/FileChannel;
 
-    .line 12
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
-    .line 13
     invoke-virtual {p0, v0}, Ljava/nio/channels/FileChannel;->read(Ljava/nio/ByteBuffer;)I
 
-    .line 14
     sget-object p0, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {v0, p0}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 15
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->getLong(I)J
 
     move-result-wide v4
@@ -178,7 +162,6 @@
 
     if-nez p0, :cond_0
 
-    .line 16
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p0
@@ -189,7 +172,6 @@
 
     return-object p0
 
-    .line 17
     :cond_0
     new-instance p0, Lcom/meituan/android/walle/SignatureNotFoundException;
 
@@ -217,7 +199,6 @@
 
     throw p0
 
-    .line 18
     :cond_1
     new-instance p0, Lcom/meituan/android/walle/SignatureNotFoundException;
 
@@ -239,7 +220,6 @@
 
     throw p0
 
-    .line 19
     :cond_2
     new-instance p0, Lcom/meituan/android/walle/SignatureNotFoundException;
 
@@ -261,7 +241,6 @@
 
     throw p0
 
-    .line 20
     :cond_3
     new-instance p0, Lcom/meituan/android/walle/SignatureNotFoundException;
 
@@ -271,7 +250,6 @@
 
     throw p0
 
-    .line 21
     :cond_4
     new-instance p0, Lcom/meituan/android/walle/SignatureNotFoundException;
 
@@ -304,12 +282,10 @@
 
     if-ltz p1, :cond_1
 
-    .line 40
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->limit()I
 
     move-result v0
 
-    .line 41
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->position()I
 
     move-result v1
@@ -320,28 +296,23 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 42
     invoke-virtual {p0, p1}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 43
     :try_start_0
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->slice()Ljava/nio/ByteBuffer;
 
     move-result-object v1
 
-    .line 44
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->order()Ljava/nio/ByteOrder;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 45
     invoke-virtual {p0, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 46
     invoke-virtual {p0, v0}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
     return-object v1
@@ -353,7 +324,6 @@
 
     throw p1
 
-    .line 47
     :cond_0
     new-instance p0, Ljava/nio/BufferUnderflowException;
 
@@ -361,7 +331,6 @@
 
     throw p0
 
-    .line 48
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -391,46 +360,37 @@
 
     if-lt p2, p1, :cond_1
 
-    .line 22
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->capacity()I
 
     move-result v0
 
-    .line 23
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->capacity()I
 
     move-result v1
 
     if-gt p2, v1, :cond_0
 
-    .line 24
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->limit()I
 
     move-result v0
 
-    .line 25
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->position()I
 
     move-result v1
 
     const/4 v2, 0x0
 
-    .line 26
     :try_start_0
     invoke-virtual {p0, v2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 27
     invoke-virtual {p0, p2}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 28
     invoke-virtual {p0, p1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 29
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->slice()Ljava/nio/ByteBuffer;
 
     move-result-object p1
 
-    .line 30
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->order()Ljava/nio/ByteOrder;
 
     move-result-object p2
@@ -439,13 +399,10 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 31
     invoke-virtual {p0, v2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 32
     invoke-virtual {p0, v0}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 33
     invoke-virtual {p0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     return-object p1
@@ -453,18 +410,14 @@
     :catchall_0
     move-exception p1
 
-    .line 34
     invoke-virtual {p0, v2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 35
     invoke-virtual {p0, v0}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 36
     invoke-virtual {p0, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     throw p1
 
-    .line 37
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -492,7 +445,6 @@
 
     throw p0
 
-    .line 38
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -520,7 +472,6 @@
 
     throw p0
 
-    .line 39
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -546,7 +497,6 @@
 .method private static a(Ljava/nio/ByteBuffer;)V
     .locals 1
 
-    .line 49
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->order()Ljava/nio/ByteOrder;
 
     move-result-object p0
@@ -557,7 +507,6 @@
 
     return-void
 
-    .line 50
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -576,7 +525,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/meituan/android/walle/a;->c(Ljava/nio/channels/FileChannel;)J
 
     move-result-wide v0
@@ -598,17 +546,14 @@
 
     const/4 v0, 0x4
 
-    .line 2
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
-    .line 3
     sget-object v1, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 4
     invoke-virtual {p0}, Ljava/nio/channels/FileChannel;->size()J
 
     move-result-wide v1
@@ -621,12 +566,10 @@
 
     invoke-virtual {p0, v1, v2}, Ljava/nio/channels/FileChannel;->position(J)Ljava/nio/channels/FileChannel;
 
-    .line 5
     invoke-virtual {p0, v0}, Ljava/nio/channels/FileChannel;->read(Ljava/nio/ByteBuffer;)I
 
     const/4 p0, 0x0
 
-    .line 6
     invoke-virtual {v0, p0}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result p0
@@ -656,10 +599,8 @@
         }
     .end annotation
 
-    .line 7
     invoke-static {p0}, Lcom/meituan/android/walle/a;->a(Ljava/nio/ByteBuffer;)V
 
-    .line 8
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->capacity()I
 
     move-result v0
@@ -672,14 +613,12 @@
 
     move-result-object p0
 
-    .line 9
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
     const/4 v2, 0x0
 
-    .line 10
     :goto_0
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->hasRemaining()Z
 
@@ -689,14 +628,12 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    .line 11
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->remaining()I
 
     move-result v3
 
     if-lt v3, v1, :cond_2
 
-    .line 12
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->getLong()J
 
     move-result-wide v3
@@ -719,26 +656,22 @@
 
     long-to-int v4, v3
 
-    .line 13
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->position()I
 
     move-result v3
 
     add-int/2addr v3, v4
 
-    .line 14
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->remaining()I
 
     move-result v5
 
     if-gt v4, v5, :cond_0
 
-    .line 15
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->getInt()I
 
     move-result v5
 
-    .line 16
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
@@ -751,12 +684,10 @@
 
     invoke-interface {v0, v5, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 17
     invoke-virtual {p0, v3}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     goto :goto_0
 
-    .line 18
     :cond_0
     new-instance v0, Lcom/meituan/android/walle/SignatureNotFoundException;
 
@@ -776,7 +707,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 19
     invoke-virtual {p0}, Ljava/nio/ByteBuffer;->remaining()I
 
     move-result p0
@@ -791,7 +721,6 @@
 
     throw v0
 
-    .line 20
     :cond_1
     new-instance p0, Lcom/meituan/android/walle/SignatureNotFoundException;
 
@@ -815,7 +744,6 @@
 
     throw p0
 
-    .line 21
     :cond_2
     new-instance p0, Lcom/meituan/android/walle/SignatureNotFoundException;
 
@@ -849,7 +777,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/nio/channels/FileChannel;->size()J
 
     move-result-wide v0
@@ -864,7 +791,6 @@
 
     const-wide/32 v2, 0xffff
 
-    .line 2
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v2
@@ -884,23 +810,18 @@
 
     const/4 v8, 0x4
 
-    .line 3
     invoke-static {v8}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v8
 
-    .line 4
     invoke-virtual {p0, v6, v7}, Ljava/nio/channels/FileChannel;->position(J)Ljava/nio/channels/FileChannel;
 
-    .line 5
     invoke-virtual {p0, v8}, Ljava/nio/channels/FileChannel;->read(Ljava/nio/ByteBuffer;)I
 
-    .line 6
     sget-object v9, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {v8, v9}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 7
     invoke-virtual {v8, v4}, Ljava/nio/ByteBuffer;->getInt(I)I
 
     move-result v8
@@ -911,7 +832,6 @@
 
     const/4 v8, 0x2
 
-    .line 8
     invoke-static {v8}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v8
@@ -920,18 +840,14 @@
 
     add-long/2addr v6, v9
 
-    .line 9
     invoke-virtual {p0, v6, v7}, Ljava/nio/channels/FileChannel;->position(J)Ljava/nio/channels/FileChannel;
 
-    .line 10
     invoke-virtual {p0, v8}, Ljava/nio/channels/FileChannel;->read(Ljava/nio/ByteBuffer;)I
 
-    .line 11
     sget-object v6, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {v8, v6}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 12
     invoke-virtual {v8, v4}, Ljava/nio/ByteBuffer;->getShort(I)S
 
     move-result v6
@@ -947,7 +863,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_1
     new-instance p0, Ljava/io/IOException;
 
@@ -957,7 +872,6 @@
 
     throw p0
 
-    .line 14
     :cond_2
     new-instance p0, Ljava/io/IOException;
 

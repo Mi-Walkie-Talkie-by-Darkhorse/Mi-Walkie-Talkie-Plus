@@ -1,6 +1,5 @@
 .class final Lcom/umeng/commonsdk/UMInnerImpl$1;
 .super Ljava/lang/Object;
-.source "UMInnerImpl.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/UMInnerImpl$1;->a:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 6
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/umeng/commonsdk/UMInnerImpl$1;->a:Landroid/content/Context;
 
@@ -46,14 +43,12 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/umeng/commonsdk/UMInnerImpl$1;->a:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -74,7 +69,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     :try_start_1
     iget-object v0, p0, Lcom/umeng/commonsdk/UMInnerImpl$1;->a:Landroid/content/Context;
 
@@ -96,7 +90,6 @@
 
     const/4 v3, 0x0
 
-    .line 5
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -122,7 +115,6 @@
     :catchall_1
     move-exception v0
 
-    .line 6
     iget-object v1, p0, Lcom/umeng/commonsdk/UMInnerImpl$1;->a:Landroid/content/Context;
 
     invoke-static {v1, v0}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V

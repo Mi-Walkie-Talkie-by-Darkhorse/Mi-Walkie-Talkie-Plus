@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$v;
 .super Ljava/lang/Object;
-.source "MapFragment.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$v;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -71,12 +68,10 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/lite/event/LiteEvent;->b:Lcom/ifengyu/intercom/lite/event/LiteEvent;
 
     if-ne p1, v0, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$v;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->titleBarRight:Landroid/widget/ImageView;
@@ -97,7 +92,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/lite/event/LiteEvent;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/fragment/MapFragment$v;->a(Lcom/ifengyu/intercom/lite/event/LiteEvent;)V

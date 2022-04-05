@@ -46,7 +46,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxPopupMenu__PopupMenuDismissObservableKt;->dismisses(Landroid/widget/PopupMenu;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -77,7 +76,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxPopupMenu__PopupMenuItemClickObservableKt;->itemClicks(Landroid/widget/PopupMenu;)Lio/reactivex/Observable;
 
     move-result-object p0

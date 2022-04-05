@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/parallel/ParallelRunOn$MultiWorkerCallback;
 .super Ljava/lang/Object;
-.source "ParallelRunOn.java"
 
 # interfaces
 .implements Lio/reactivex/internal/schedulers/SchedulerMultiWorkerSupport$WorkerCallback;
@@ -54,15 +53,12 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$MultiWorkerCallback;->this$0:Lio/reactivex/internal/operators/parallel/ParallelRunOn;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$MultiWorkerCallback;->subscribers:[Lc/a/c;
 
-    .line 3
     iput-object p3, p0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$MultiWorkerCallback;->parents:[Lc/a/c;
 
     return-void
@@ -73,7 +69,6 @@
 .method public onWorker(ILio/reactivex/Scheduler$Worker;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$MultiWorkerCallback;->this$0:Lio/reactivex/internal/operators/parallel/ParallelRunOn;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/parallel/ParallelRunOn$MultiWorkerCallback;->subscribers:[Lc/a/c;

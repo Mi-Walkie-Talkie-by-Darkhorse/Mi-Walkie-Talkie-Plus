@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/internal/PreferenceWrapper;
 .super Ljava/lang/Object;
-.source "PreferenceWrapper.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,7 +24,6 @@
 
     const-string v1, "umeng_general_config"
 
-    .line 1
     invoke-virtual {p0, v1, v0}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p0
@@ -46,7 +43,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p0

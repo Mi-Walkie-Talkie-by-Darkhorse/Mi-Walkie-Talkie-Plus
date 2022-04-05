@@ -1,6 +1,5 @@
 .class public final Lcom/xiaomi/infra/galaxy/fds/android/util/IdleConnectionReaper;
 .super Ljava/lang/Thread;
-.source "IdleConnectionReaper.java"
 
 
 # static fields
@@ -17,15 +16,12 @@
 
     const-string v0, "java-sdk-http-connection-reaper"
 
-    .line 1
     invoke-direct {p0, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/util/IdleConnectionReaper;->connectionManager:Lorg/apache/http/conn/ClientConnectionManager;
 
     const/4 p1, 0x1
 
-    .line 3
     invoke-virtual {p0, p1}, Ljava/lang/Thread;->setDaemon(Z)V
 
     return-void
@@ -39,11 +35,9 @@
     :goto_0
     const-wide/32 v0, 0xea60
 
-    .line 1
     :try_start_0
     invoke-static {v0, v1}, Ljava/lang/Thread;->sleep(J)V
 
-    .line 2
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/android/util/IdleConnectionReaper;->connectionManager:Lorg/apache/http/conn/ClientConnectionManager;
 
     const-wide/16 v1, 0x3c
@@ -56,7 +50,6 @@
 
     goto :goto_0
 
-    .line 3
     :catch_0
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 

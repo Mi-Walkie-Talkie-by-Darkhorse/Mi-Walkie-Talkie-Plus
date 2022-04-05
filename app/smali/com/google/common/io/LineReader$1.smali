@@ -1,6 +1,5 @@
 .class Lcom/google/common/io/LineReader$1;
 .super Lcom/google/common/io/LineBuffer;
-.source "LineReader.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/common/io/LineReader;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/io/LineReader$1;->this$0:Lcom/google/common/io/LineReader;
 
     invoke-direct {p0}, Lcom/google/common/io/LineBuffer;-><init>()V
@@ -35,7 +33,6 @@
 .method protected handleLine(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iget-object p2, p0, Lcom/google/common/io/LineReader$1;->this$0:Lcom/google/common/io/LineReader;
 
     invoke-static {p2}, Lcom/google/common/io/LineReader;->access$000(Lcom/google/common/io/LineReader;)Ljava/util/Queue;

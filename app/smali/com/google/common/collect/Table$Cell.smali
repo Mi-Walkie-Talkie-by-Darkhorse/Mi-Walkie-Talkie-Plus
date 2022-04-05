@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/collect/Table$Cell;
 .super Ljava/lang/Object;
-.source "Table.java"
 
 
 # annotations

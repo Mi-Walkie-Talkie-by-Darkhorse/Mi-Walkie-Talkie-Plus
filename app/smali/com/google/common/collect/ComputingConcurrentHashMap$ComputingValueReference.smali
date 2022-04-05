@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingValueReference;
 .super Ljava/lang/Object;
-.source "ComputingConcurrentHashMap.java"
 
 # interfaces
 .implements Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
@@ -65,17 +64,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/MapMakerInternalMap;->unset()Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingValueReference;->computedReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingValueReference;->computingFunction:Lcom/google/common/base/Function;
 
     return-void
@@ -93,7 +89,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingValueReference;->setValueReference(Lcom/google/common/collect/MapMakerInternalMap$ValueReference;)V
 
     return-void
@@ -113,7 +108,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object p2, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingValueReference;->computingFunction:Lcom/google/common/base/Function;
 
@@ -123,7 +117,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     new-instance p2, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputedReference;
 
     invoke-direct {p2, p1}, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputedReference;-><init>(Ljava/lang/Object;)V
@@ -135,14 +128,12 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     new-instance p2, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputationExceptionReference;
 
     invoke-direct {p2, p1}, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputationExceptionReference;-><init>(Ljava/lang/Throwable;)V
 
     invoke-virtual {p0, p2}, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingValueReference;->setValueReference(Lcom/google/common/collect/MapMakerInternalMap$ValueReference;)V
 
-    .line 4
     new-instance p2, Ljava/util/concurrent/ExecutionException;
 
     invoke-direct {p2, p1}, Ljava/util/concurrent/ExecutionException;-><init>(Ljava/lang/Throwable;)V
@@ -217,10 +208,8 @@
         }
     .end annotation
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingValueReference;->computedReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
 
@@ -228,13 +217,10 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingValueReference;->computedReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
 
-    .line 4
     invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
 
-    .line 5
     :cond_0
     monitor-exit p0
 
@@ -264,7 +250,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingValueReference;->computedReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
 
     sget-object v1, Lcom/google/common/collect/MapMakerInternalMap;->UNSET:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
@@ -273,7 +258,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     monitor-enter p0
     :try_end_0
@@ -281,7 +265,6 @@
 
     const/4 v1, 0x0
 
-    .line 3
     :goto_0
     :try_start_1
     iget-object v0, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingValueReference;->computedReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
@@ -292,7 +275,6 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 4
     :try_start_2
     invoke-virtual {p0}, Ljava/lang/Object;->wait()V
     :try_end_2
@@ -306,7 +288,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     :try_start_3
     monitor-exit p0
@@ -315,7 +296,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 6
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -327,7 +307,6 @@
     :catchall_0
     move-exception v0
 
-    .line 7
     :try_start_4
     monitor-exit p0
     :try_end_4
@@ -353,7 +332,6 @@
     :goto_1
     if-eqz v1, :cond_1
 
-    .line 8
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v1
@@ -363,7 +341,6 @@
     :cond_1
     throw v0
 
-    .line 9
     :cond_2
     :goto_2
     iget-object v0, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingValueReference;->computedReference:Lcom/google/common/collect/MapMakerInternalMap$ValueReference;

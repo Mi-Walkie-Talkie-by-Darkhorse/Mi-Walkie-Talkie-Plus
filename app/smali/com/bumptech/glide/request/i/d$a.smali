@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/request/i/d$a;
 .super Ljava/lang/Object;
-.source "Transition.java"
 
 
 # annotations

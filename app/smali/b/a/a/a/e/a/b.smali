@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/a/b;
 .super Ljava/lang/Object;
-.source "BarLineScatterCandleBubbleDataProvider.java"
 
 # interfaces
 .implements Lb/a/a/a/e/a/e;

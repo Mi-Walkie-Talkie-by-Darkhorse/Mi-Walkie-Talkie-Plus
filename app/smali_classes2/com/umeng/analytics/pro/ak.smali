@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/ak;
 .super Landroid/database/sqlite/SQLiteOpenHelper;
-.source "CacheDBHelper.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -36,10 +34,8 @@
 .method private constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
-    .line 2
     iput-object p1, p0, Lcom/umeng/analytics/pro/ak;->a:Landroid/content/Context;
 
     return-void
@@ -56,18 +52,15 @@
 .method public static a(Landroid/content/Context;)Lcom/umeng/analytics/pro/ak;
     .locals 5
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/pro/ak;->b:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     sget-object v1, Lcom/umeng/analytics/pro/ak;->c:Lcom/umeng/analytics/pro/ak;
 
     if-nez v1, :cond_0
 
-    .line 3
     new-instance v1, Lcom/umeng/analytics/pro/ak;
 
     const-string v2, "umeng_zero_cache.db"
@@ -80,7 +73,6 @@
 
     sput-object v1, Lcom/umeng/analytics/pro/ak;->c:Lcom/umeng/analytics/pro/ak;
 
-    .line 4
     :cond_0
     sget-object p0, Lcom/umeng/analytics/pro/ak;->c:Lcom/umeng/analytics/pro/ak;
 
@@ -91,7 +83,6 @@
     :catchall_0
     move-exception p0
 
-    .line 5
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -105,12 +96,10 @@
     :try_start_0
     const-string v0, "DROP TABLE IF EXISTS stf"
 
-    .line 6
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     const-string v0, "CREATE TABLE IF NOT EXISTS stf(_id INTEGER PRIMARY KEY AUTOINCREMENT, _tp TEXT, _hd TEXT, _bd TEXT, _ts TEXT, _uuid TEXT, _re1 TEXT, _re2 TEXT)"
 
-    .line 7
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/database/SQLException; {:try_start_0 .. :try_end_0} :catch_0
@@ -125,7 +114,6 @@
     :try_start_0
     const-string v0, "CREATE TABLE IF NOT EXISTS stf(_id INTEGER PRIMARY KEY AUTOINCREMENT, _tp TEXT, _hd TEXT, _bd TEXT, _ts TEXT, _uuid TEXT, _re1 TEXT, _re2 TEXT)"
 
-    .line 1
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteDatabaseCorruptException; {:try_start_0 .. :try_end_0} :catch_0
@@ -136,7 +124,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -161,7 +148,6 @@
 
     goto :goto_0
 
-    .line 3
     :catch_0
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/ak;->a(Landroid/database/sqlite/SQLiteDatabase;)V
 
@@ -172,7 +158,6 @@
 .method private d()V
     .locals 2
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -180,7 +165,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
 
     move-result v1
@@ -192,14 +176,12 @@
     :try_start_1
     const-string v1, "DELETE FROM stf WHERE _id IN( SELECT _id FROM stf ORDER BY _id LIMIT 1)"
 
-    .line 3
     invoke-virtual {v0, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     if-eqz v0, :cond_0
 
-    .line 4
     :goto_0
     :try_start_2
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
@@ -228,7 +210,6 @@
 
     const/4 v0, 0x0
 
-    .line 40
     :try_start_0
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -236,7 +217,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 41
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
 
     move-result v2
@@ -259,7 +239,6 @@
 
     move-object/from16 v9, p8
 
-    .line 42
     invoke-virtual/range {v1 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v0
@@ -289,7 +268,6 @@
 
     const-string v6, "_re2"
 
-    .line 23
     filled-new-array/range {v1 .. v6}, [Ljava/lang/String;
 
     move-result-object v3
@@ -310,7 +288,6 @@
 
     move-object v2, p1
 
-    .line 24
     invoke-virtual/range {v1 .. v9}, Lcom/umeng/analytics/pro/ak;->a(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object v1
@@ -319,7 +296,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 25
     :try_start_1
     invoke-interface {v1}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -327,7 +303,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 26
     new-instance v2, Lcom/umeng/analytics/pro/al;
 
     invoke-direct {v2}, Lcom/umeng/analytics/pro/al;-><init>()V
@@ -336,7 +311,6 @@
 
     const/4 v0, 0x0
 
-    .line 27
     :try_start_2
     invoke-interface {v1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -346,7 +320,6 @@
 
     const/4 v0, 0x1
 
-    .line 28
     invoke-interface {v1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -355,19 +328,16 @@
 
     const/4 v0, 0x2
 
-    .line 29
     invoke-interface {v1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     const/4 v3, 0x3
 
-    .line 30
     invoke-interface {v1, v3}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 31
     iget-object v4, p0, Lcom/umeng/analytics/pro/ak;->a:Landroid/content/Context;
 
     invoke-static {v4}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -380,7 +350,6 @@
 
     iput-object v0, v2, Lcom/umeng/analytics/pro/al;->c:Ljava/lang/String;
 
-    .line 32
     iget-object v0, p0, Lcom/umeng/analytics/pro/ak;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -395,7 +364,6 @@
 
     const/4 v0, 0x4
 
-    .line 33
     invoke-interface {v1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -404,7 +372,6 @@
 
     const/4 v0, 0x5
 
-    .line 34
     invoke-interface {v1, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -426,7 +393,6 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 35
     :goto_1
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
@@ -435,7 +401,6 @@
     :catchall_1
     move-object v1, v0
 
-    .line 36
     :catchall_2
     :goto_2
     :try_start_3
@@ -458,10 +423,8 @@
 
     if-eqz v1, :cond_2
 
-    .line 37
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
-    .line 38
     :cond_2
     throw v2
 .end method
@@ -469,7 +432,6 @@
 .method public a(Ljava/lang/String;Landroid/content/ContentValues;)V
     .locals 2
 
-    .line 8
     :try_start_0
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -477,7 +439,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 9
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
 
     move-result v1
@@ -486,35 +447,29 @@
 
     if-eqz v1, :cond_0
 
-    .line 10
     :try_start_1
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
     const/4 v1, 0x0
 
-    .line 11
     invoke-virtual {v0, p1, v1, p2}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
-    .line 12
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
 
     const-string p1, "MobclickRT"
 
     const-string p2, "--->>> [\u6709\u72b6\u6001]\u63d2\u5165\u4e8c\u7ea7\u7f13\u5b58\u6570\u636e\u8bb0\u5f55 \u6210\u529f\u3002"
 
-    .line 13
     invoke-static {p1, p2}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     if-eqz v0, :cond_0
 
-    .line 14
     :goto_0
     :try_start_2
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 15
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
@@ -545,7 +500,6 @@
 
     const-string p2, "_uuid=?"
 
-    .line 39
     invoke-virtual {p0, p1, p2, v0}, Lcom/umeng/analytics/pro/ak;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
     return-void
@@ -554,7 +508,6 @@
 .method public a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
     .locals 2
 
-    .line 16
     :try_start_0
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -562,7 +515,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 17
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
 
     move-result v1
@@ -571,26 +523,21 @@
 
     if-eqz v1, :cond_0
 
-    .line 18
     :try_start_1
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
 
-    .line 19
     invoke-virtual {v0, p1, p2, p3}, Landroid/database/sqlite/SQLiteDatabase;->delete(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)I
 
-    .line 20
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     if-eqz v0, :cond_0
 
-    .line 21
     :goto_0
     :try_start_2
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
 
-    .line 22
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
@@ -611,7 +558,6 @@
 .method public b()V
     .locals 2
 
-    .line 4
     :try_start_0
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -619,14 +565,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 6
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -641,7 +585,6 @@
 
     const/4 v0, 0x0
 
-    .line 7
     :try_start_0
     invoke-virtual {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -651,7 +594,6 @@
 
     if-eqz v10, :cond_0
 
-    .line 8
     :try_start_1
     invoke-virtual {v10}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
 
@@ -677,7 +619,6 @@
 
     move-object v2, p1
 
-    .line 9
     invoke-virtual/range {v1 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p1
@@ -695,7 +636,6 @@
     :goto_0
     if-eqz v0, :cond_3
 
-    .line 10
     invoke-interface {v0}, Landroid/database/Cursor;->getCount()I
 
     move-result p1
@@ -708,13 +648,11 @@
 
     if-eqz v0, :cond_1
 
-    .line 11
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     :cond_1
     if-eqz v10, :cond_2
 
-    .line 12
     invoke-virtual {v10}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
     :cond_2
@@ -723,7 +661,6 @@
     :cond_3
     if-eqz v0, :cond_4
 
-    .line 13
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
     :cond_4
@@ -742,7 +679,6 @@
     :cond_5
     if-eqz v10, :cond_6
 
-    .line 14
     :goto_2
     invoke-virtual {v10}, Landroid/database/sqlite/SQLiteDatabase;->close()V
 
@@ -757,7 +693,6 @@
 
     const-string v0, "stf"
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/ak;->b(Ljava/lang/String;)Z
 
     move-result v0
@@ -777,7 +712,6 @@
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/ak;->b(Landroid/database/sqlite/SQLiteDatabase;)V
 
     return-void

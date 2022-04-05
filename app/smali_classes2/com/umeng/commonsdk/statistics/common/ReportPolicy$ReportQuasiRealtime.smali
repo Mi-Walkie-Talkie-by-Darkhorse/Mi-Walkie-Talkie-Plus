@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportQuasiRealtime;
 .super Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
-.source "ReportPolicy.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;-><init>()V
 
     return-void
@@ -47,7 +45,6 @@
 .method public getReportInterval()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportQuasiRealtime;->mReportInterval:J
 
     return-wide v0
@@ -56,7 +53,6 @@
 .method public setReportInterval(J)V
     .locals 3
 
-    .line 1
     sget-wide v0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportQuasiRealtime;->MIN_REPORT_INTERVAL:J
 
     cmp-long v2, p1, v0
@@ -69,12 +65,10 @@
 
     if-gtz v2, :cond_0
 
-    .line 2
     iput-wide p1, p0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportQuasiRealtime;->mReportInterval:J
 
     goto :goto_0
 
-    .line 3
     :cond_0
     sget-wide p1, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportQuasiRealtime;->DEFAULT_REPORT_INTERVAL:J
 

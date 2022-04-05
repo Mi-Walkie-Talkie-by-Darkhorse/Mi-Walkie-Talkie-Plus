@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/reflect/TypeVisitor;
 .super Ljava/lang/Object;
-.source "TypeVisitor.java"
 
 
 # annotations
@@ -24,10 +23,8 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/Sets;->newHashSet()Ljava/util/HashSet;
 
     move-result-object v0
@@ -42,7 +39,6 @@
 .method public final varargs visit([Ljava/lang/reflect/Type;)V
     .locals 4
 
-    .line 1
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -54,7 +50,6 @@
 
     if-eqz v2, :cond_6
 
-    .line 2
     iget-object v3, p0, Lcom/google/common/reflect/TypeVisitor;->visited:Ljava/util/Set;
 
     invoke-interface {v3, v2}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
@@ -65,14 +60,12 @@
 
     goto :goto_1
 
-    .line 3
     :cond_0
     :try_start_0
     instance-of v3, v2, Ljava/lang/reflect/TypeVariable;
 
     if-eqz v3, :cond_1
 
-    .line 4
     move-object v3, v2
 
     check-cast v3, Ljava/lang/reflect/TypeVariable;
@@ -81,13 +74,11 @@
 
     goto :goto_1
 
-    .line 5
     :cond_1
     instance-of v3, v2, Ljava/lang/reflect/WildcardType;
 
     if-eqz v3, :cond_2
 
-    .line 6
     move-object v3, v2
 
     check-cast v3, Ljava/lang/reflect/WildcardType;
@@ -96,13 +87,11 @@
 
     goto :goto_1
 
-    .line 7
     :cond_2
     instance-of v3, v2, Ljava/lang/reflect/ParameterizedType;
 
     if-eqz v3, :cond_3
 
-    .line 8
     move-object v3, v2
 
     check-cast v3, Ljava/lang/reflect/ParameterizedType;
@@ -111,13 +100,11 @@
 
     goto :goto_1
 
-    .line 9
     :cond_3
     instance-of v3, v2, Ljava/lang/Class;
 
     if-eqz v3, :cond_4
 
-    .line 10
     move-object v3, v2
 
     check-cast v3, Ljava/lang/Class;
@@ -126,13 +113,11 @@
 
     goto :goto_1
 
-    .line 11
     :cond_4
     instance-of v3, v2, Ljava/lang/reflect/GenericArrayType;
 
     if-eqz v3, :cond_5
 
-    .line 12
     move-object v3, v2
 
     check-cast v3, Ljava/lang/reflect/GenericArrayType;
@@ -141,7 +126,6 @@
 
     goto :goto_1
 
-    .line 13
     :cond_5
     new-instance p1, Ljava/lang/AssertionError;
 
@@ -182,7 +166,6 @@
     :catchall_0
     move-exception p1
 
-    .line 14
     iget-object v0, p0, Lcom/google/common/reflect/TypeVisitor;->visited:Ljava/util/Set;
 
     invoke-interface {v0, v2}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z

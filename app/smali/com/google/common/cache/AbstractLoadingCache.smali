@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/cache/AbstractLoadingCache;
 .super Lcom/google/common/cache/AbstractCache;
-.source "AbstractLoadingCache.java"
 
 # interfaces
 .implements Lcom/google/common/cache/LoadingCache;
@@ -29,7 +28,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/cache/AbstractCache;-><init>()V
 
     return-void
@@ -45,7 +43,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/cache/AbstractLoadingCache;->getUnchecked(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -71,12 +68,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/Maps;->newLinkedHashMap()Ljava/util/LinkedHashMap;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -93,14 +88,12 @@
 
     move-result-object v1
 
-    .line 3
     invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 4
     invoke-interface {p0, v1}, Lcom/google/common/cache/LoadingCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -109,7 +102,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-static {v0}, Lcom/google/common/collect/ImmutableMap;->copyOf(Ljava/util/Map;)Lcom/google/common/collect/ImmutableMap;
 
@@ -126,7 +118,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-interface {p0, p1}, Lcom/google/common/cache/LoadingCache;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -139,7 +130,6 @@
     :catch_0
     move-exception p1
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/UncheckedExecutionException;
 
     invoke-virtual {p1}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
@@ -159,7 +149,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V

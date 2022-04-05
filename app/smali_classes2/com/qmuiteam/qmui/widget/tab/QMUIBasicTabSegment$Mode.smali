@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$Mode;
 .super Ljava/lang/Object;
-.source "QMUIBasicTabSegment.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

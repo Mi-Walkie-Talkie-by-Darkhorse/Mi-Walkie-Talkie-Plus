@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$f;
 .super Ljava/lang/Object;
-.source "DialogPlus.java"
 
 # interfaces
 .implements Landroid/view/View$OnTouchListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$f;->a:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result p1
 
     if-nez p1, :cond_1
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$f;->a:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;->i(Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;)Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$h;
@@ -54,7 +50,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$f;->a:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;->i(Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;)Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$h;
@@ -65,7 +60,6 @@
 
     invoke-interface {p1, p2}, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$h;->a(Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;)V
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$f;->a:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;
 

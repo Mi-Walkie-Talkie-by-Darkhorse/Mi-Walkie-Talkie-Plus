@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/auth/AuthAgent$b$3;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnCancelListener;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/tencent/connect/auth/AuthAgent$b;Lcom/tencent/tauth/IUiListener;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$b$3;->c:Lcom/tencent/connect/auth/AuthAgent$b;
 
     iput-object p2, p0, Lcom/tencent/connect/auth/AuthAgent$b$3;->a:Lcom/tencent/tauth/IUiListener;
@@ -46,12 +44,10 @@
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$b$3;->a:Lcom/tencent/tauth/IUiListener;
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/tencent/connect/auth/AuthAgent$b$3;->b:Ljava/lang/Object;
 
     invoke-interface {p1, v0}, Lcom/tencent/tauth/IUiListener;->onComplete(Ljava/lang/Object;)V

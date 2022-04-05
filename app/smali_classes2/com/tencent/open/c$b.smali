@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/c$b;
 .super Lcom/tencent/open/a$b;
-.source "ProGuard"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Lcom/tencent/open/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/c$b;->a:Lcom/tencent/open/c;
 
     invoke-direct {p0}, Lcom/tencent/open/a$b;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/tencent/open/c;Lcom/tencent/open/c$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/tencent/open/c$b;-><init>(Lcom/tencent/open/c;)V
 
     return-void

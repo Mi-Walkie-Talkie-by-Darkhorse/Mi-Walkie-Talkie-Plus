@@ -1,6 +1,5 @@
 .class synthetic Lme/zhanghai/android/materialprogressbar/BaseDrawable$1;
 .super Ljava/lang/Object;
-.source "BaseDrawable.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public abstract Lb/a/a/a/f/a;
 .super Lb/a/a/a/f/o;
-.source "AxisRenderer.java"
 
 
 # instance fields
@@ -21,21 +20,16 @@
 .method public constructor <init>(Lb/a/a/a/g/j;Lb/a/a/a/g/g;Lcom/github/mikephil/charting/components/a;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Lb/a/a/a/f/o;-><init>(Lb/a/a/a/g/j;)V
 
-    .line 2
     iput-object p2, p0, Lb/a/a/a/f/a;->c:Lb/a/a/a/g/g;
 
-    .line 3
     iput-object p3, p0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
-    .line 4
     iget-object p1, p0, Lb/a/a/a/f/o;->a:Lb/a/a/a/g/j;
 
     if-eqz p1, :cond_0
 
-    .line 5
     new-instance p1, Landroid/graphics/Paint;
 
     const/4 p2, 0x1
@@ -44,7 +38,6 @@
 
     iput-object p1, p0, Lb/a/a/a/f/a;->e:Landroid/graphics/Paint;
 
-    .line 6
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
@@ -53,31 +46,26 @@
 
     const p3, -0x777778
 
-    .line 7
     invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 8
     iget-object p1, p0, Lb/a/a/a/f/a;->d:Landroid/graphics/Paint;
 
     const/high16 p3, 0x3f800000    # 1.0f
 
     invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 9
     iget-object p1, p0, Lb/a/a/a/f/a;->d:Landroid/graphics/Paint;
 
     sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 10
     iget-object p1, p0, Lb/a/a/a/f/a;->d:Landroid/graphics/Paint;
 
     const/16 v0, 0x5a
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 11
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
@@ -86,29 +74,24 @@
 
     const/high16 v0, -0x1000000
 
-    .line 12
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 13
     iget-object p1, p0, Lb/a/a/a/f/a;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 14
     iget-object p1, p0, Lb/a/a/a/f/a;->f:Landroid/graphics/Paint;
 
     sget-object p3, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 15
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1, p2}, Landroid/graphics/Paint;-><init>(I)V
 
     iput-object p1, p0, Lb/a/a/a/f/a;->g:Landroid/graphics/Paint;
 
-    .line 16
     sget-object p2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
@@ -122,7 +105,6 @@
 .method public a()Landroid/graphics/Paint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/f/a;->e:Landroid/graphics/Paint;
 
     return-object v0
@@ -137,7 +119,6 @@
 
     move/from16 v2, p2
 
-    .line 12
     iget-object v3, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
     invoke-virtual {v3}, Lcom/github/mikephil/charting/components/a;->n()I
@@ -146,7 +127,6 @@
 
     sub-float v4, v2, v1
 
-    .line 13
     invoke-static {v4}, Ljava/lang/Math;->abs(F)F
 
     move-result v4
@@ -161,7 +141,6 @@
 
     if-lez v9, :cond_10
 
-    .line 14
     invoke-static {v4, v5}, Ljava/lang/Double;->isInfinite(D)Z
 
     move-result v9
@@ -175,14 +154,12 @@
 
     div-double v9, v4, v9
 
-    .line 15
     invoke-static {v9, v10}, Lb/a/a/a/g/i;->b(D)F
 
     move-result v9
 
     float-to-double v9, v9
 
-    .line 16
     iget-object v11, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
     invoke-virtual {v11}, Lcom/github/mikephil/charting/components/a;->x()Z
@@ -191,7 +168,6 @@
 
     if-eqz v11, :cond_1
 
-    .line 17
     iget-object v11, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
     invoke-virtual {v11}, Lcom/github/mikephil/charting/components/a;->j()F
@@ -212,7 +188,6 @@
 
     float-to-double v9, v9
 
-    .line 18
     :cond_1
     invoke-static {v9, v10}, Ljava/lang/Math;->log10(D)D
 
@@ -244,12 +219,10 @@
 
     mul-double v11, v11, v13
 
-    .line 19
     invoke-static {v11, v12}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide v9
 
-    .line 20
     :cond_2
     iget-object v6, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
@@ -257,7 +230,6 @@
 
     move-result v6
 
-    .line 21
     iget-object v7, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
     invoke-virtual {v7}, Lcom/github/mikephil/charting/components/a;->w()Z
@@ -276,19 +248,16 @@
 
     float-to-double v9, v2
 
-    .line 22
     iget-object v2, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
     iput v3, v2, Lcom/github/mikephil/charting/components/a;->n:I
 
-    .line 23
     iget-object v4, v2, Lcom/github/mikephil/charting/components/a;->l:[F
 
     array-length v4, v4
 
     if-ge v4, v3, :cond_3
 
-    .line 24
     new-array v4, v3, [F
 
     iput-object v4, v2, Lcom/github/mikephil/charting/components/a;->l:[F
@@ -299,7 +268,6 @@
     :goto_0
     if-ge v2, v3, :cond_c
 
-    .line 25
     iget-object v4, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
     iget-object v4, v4, Lcom/github/mikephil/charting/components/a;->l:[F
@@ -332,14 +300,12 @@
 
     div-double/2addr v3, v9
 
-    .line 26
     invoke-static {v3, v4}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v3
 
     mul-double v3, v3, v9
 
-    .line 27
     :goto_1
     iget-object v1, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
@@ -363,7 +329,6 @@
 
     div-double/2addr v1, v9
 
-    .line 28
     invoke-static {v1, v2}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide v1
@@ -390,20 +355,17 @@
 
     goto :goto_3
 
-    .line 29
     :cond_8
     iget-object v1, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
     iput v6, v1, Lcom/github/mikephil/charting/components/a;->n:I
 
-    .line 30
     iget-object v2, v1, Lcom/github/mikephil/charting/components/a;->l:[F
 
     array-length v2, v2
 
     if-ge v2, v6, :cond_9
 
-    .line 31
     new-array v2, v6, [F
 
     iput-object v2, v1, Lcom/github/mikephil/charting/components/a;->l:[F
@@ -422,7 +384,6 @@
 
     move-wide v3, v7
 
-    .line 32
     :cond_a
     iget-object v2, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
@@ -448,7 +409,6 @@
 
     if-gez v4, :cond_d
 
-    .line 33
     iget-object v1, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
     invoke-static {v9, v10}, Ljava/lang/Math;->log10(D)D
@@ -467,7 +427,6 @@
 
     goto :goto_5
 
-    .line 34
     :cond_d
     iget-object v1, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
@@ -475,7 +434,6 @@
 
     iput v2, v1, Lcom/github/mikephil/charting/components/a;->o:I
 
-    .line 35
     :goto_5
     iget-object v1, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
@@ -485,7 +443,6 @@
 
     if-eqz v1, :cond_f
 
-    .line 36
     iget-object v1, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
     iget-object v2, v1, Lcom/github/mikephil/charting/components/a;->m:[F
@@ -494,7 +451,6 @@
 
     if-ge v2, v3, :cond_e
 
-    .line 37
     new-array v2, v3, [F
 
     iput-object v2, v1, Lcom/github/mikephil/charting/components/a;->m:[F
@@ -511,7 +467,6 @@
     :goto_6
     if-ge v6, v3, :cond_f
 
-    .line 38
     iget-object v2, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
 
     iget-object v4, v2, Lcom/github/mikephil/charting/components/a;->m:[F
@@ -531,7 +486,6 @@
     :cond_f
     return-void
 
-    .line 39
     :cond_10
     :goto_7
     iget-object v1, v0, Lb/a/a/a/f/a;->b:Lcom/github/mikephil/charting/components/a;
@@ -544,10 +498,8 @@
 
     new-array v3, v2, [F
 
-    .line 40
     iput-object v3, v1, Lcom/github/mikephil/charting/components/a;->m:[F
 
-    .line 41
     iput v2, v1, Lcom/github/mikephil/charting/components/a;->n:I
 
     return-void
@@ -556,7 +508,6 @@
 .method public a(FFZ)V
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lb/a/a/a/f/o;->a:Lb/a/a/a/g/j;
 
     if-eqz v0, :cond_1
@@ -579,7 +530,6 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     iget-object p1, p0, Lb/a/a/a/f/a;->c:Lb/a/a/a/g/g;
 
     iget-object p2, p0, Lb/a/a/a/f/o;->a:Lb/a/a/a/g/j;
@@ -598,7 +548,6 @@
 
     move-result-object p1
 
-    .line 4
     iget-object p2, p0, Lb/a/a/a/f/a;->c:Lb/a/a/a/g/g;
 
     iget-object v0, p0, Lb/a/a/a/f/o;->a:Lb/a/a/a/g/j;
@@ -619,39 +568,32 @@
 
     if-nez p3, :cond_0
 
-    .line 5
     iget-wide v0, p2, Lb/a/a/a/g/d;->d:D
 
     double-to-float p3, v0
 
-    .line 6
     iget-wide v0, p1, Lb/a/a/a/g/d;->d:D
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-wide v0, p1, Lb/a/a/a/g/d;->d:D
 
     double-to-float p3, v0
 
-    .line 8
     iget-wide v0, p2, Lb/a/a/a/g/d;->d:D
 
     :goto_0
     double-to-float v0, v0
 
-    .line 9
     invoke-static {p1}, Lb/a/a/a/g/d;->a(Lb/a/a/a/g/d;)V
 
-    .line 10
     invoke-static {p2}, Lb/a/a/a/g/d;->a(Lb/a/a/a/g/d;)V
 
     move p1, p3
 
     move p2, v0
 
-    .line 11
     :cond_1
     invoke-virtual {p0, p1, p2}, Lb/a/a/a/f/a;->a(FF)V
 

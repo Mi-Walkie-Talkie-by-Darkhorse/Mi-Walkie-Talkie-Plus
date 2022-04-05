@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/z$a;
 .super Ljava/lang/Object;
-.source "UnbindAskDialog.java"
 
 
 # annotations

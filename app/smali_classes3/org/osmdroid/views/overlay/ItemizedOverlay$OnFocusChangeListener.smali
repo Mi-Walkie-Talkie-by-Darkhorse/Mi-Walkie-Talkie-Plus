@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/ItemizedOverlay$OnFocusChangeListener;
 .super Ljava/lang/Object;
-.source "ItemizedOverlay.java"
 
 
 # annotations

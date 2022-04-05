@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/z$1;
 .super Ljava/lang/Object;
-.source "MapOverlayImageView.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/z;Lcom/amap/api/maps/model/LatLngBounds$Builder;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/z$1;->b:Lcom/amap/api/col/l3/z;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/z$1;->a:Lcom/amap/api/maps/model/LatLngBounds$Builder;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/z$1;->b:Lcom/amap/api/col/l3/z;
 
@@ -50,7 +47,6 @@
 
     iget-object v1, p0, Lcom/amap/api/col/l3/z$1;->a:Lcom/amap/api/maps/model/LatLngBounds$Builder;
 
-    .line 2
     invoke-virtual {v1}, Lcom/amap/api/maps/model/LatLngBounds$Builder;->build()Lcom/amap/api/maps/model/LatLngBounds;
 
     move-result-object v1
@@ -61,7 +57,6 @@
 
     move-result-object v1
 
-    .line 3
     invoke-interface {v0, v1}, Lcom/amap/api/col/l3/u;->a(Lcom/autonavi/amap/mapcore/CameraUpdateMessage;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

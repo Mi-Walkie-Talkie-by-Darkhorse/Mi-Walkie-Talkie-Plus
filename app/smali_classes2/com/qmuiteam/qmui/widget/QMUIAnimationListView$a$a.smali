@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a$a;
 .super Landroid/database/DataSetObserver;
-.source "QMUIAnimationListView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a$a;->a:Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -35,7 +33,6 @@
 .method public onChanged()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a$a;->a:Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->a(Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;)Z
@@ -44,7 +41,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a$a;->a:Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->notifyDataSetChanged()V
@@ -56,7 +52,6 @@
 .method public onInvalidated()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a$a;->a:Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;
 
     invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V

@@ -1,6 +1,5 @@
 .class public abstract Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;
 .super Ljava/lang/Object;
-.source "BaseMapLoader.java"
 
 
 # static fields
@@ -53,10 +52,8 @@
 .method public constructor <init>(I)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -65,51 +62,38 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isGetRequestMethod:Z
 
     const/4 v0, 0x0
 
-    .line 5
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mDataSource:I
 
-    .line 6
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
-    .line 7
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
     const/16 v1, 0x7800
 
-    .line 8
     iput v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mCapaticy:I
 
     const/16 v1, 0x2800
 
-    .line 9
     iput v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mCapaticyExt:I
 
-    .line 10
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isReceivedHeader:Z
 
-    .line 11
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isInRequest:Z
 
-    .line 12
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isFinished:Z
 
-    .line 13
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
-    .line 14
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
 
-    .line 15
     iput p1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
 
     return-void
@@ -118,12 +102,10 @@
 .method private generateQueryString(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuffer;
 
     invoke-direct {v0, p2}, Ljava/lang/StringBuffer;-><init>(Ljava/lang/String;)V
 
-    .line 2
     :try_start_0
     iget-object p2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
@@ -137,19 +119,16 @@
 
     const-string v1, "UTF-8"
 
-    .line 3
     invoke-static {p2, v1}, Ljava/net/URLEncoder;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
     const-string v1, "&key="
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object p2
@@ -158,12 +137,10 @@
 
     move-result-object p2
 
-    .line 6
     invoke-static {}, Lcom/amap/api/col/l3/fz;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 7
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "&ts="
@@ -178,14 +155,12 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 8
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "&scode="
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 9
     invoke-static {p1, v1, p2}, Lcom/amap/api/col/l3/fz;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -196,12 +171,10 @@
 
     move-result-object p1
 
-    .line 10
     invoke-virtual {v0, p1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 11
     :catchall_0
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -215,7 +188,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
@@ -227,12 +199,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput-boolean v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isInRequest:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     :try_start_1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
@@ -241,7 +211,6 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 4
     :catch_0
     :cond_0
     :try_start_2
@@ -249,20 +218,16 @@
 
     const/4 v0, 0x0
 
-    .line 5
     iput-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
-    .line 6
     iput v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
-    .line 7
     iput v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     const/4 v0, 0x0
 
-    .line 8
     :goto_0
     :try_start_3
     iget-object v2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mMapTiles:Ljava/util/List;
@@ -273,7 +238,6 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 9
     iget-object v2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mMapTiles:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -282,7 +246,6 @@
 
     check-cast v2, Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;
 
-    .line 10
     iget-object v3, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget-object v3, v3, Lcom/autonavi/ae/gmap/GLMapEngine;->mTileProcessCtrl:Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;
@@ -300,7 +263,6 @@
 
     goto :goto_0
 
-    .line 11
     :catch_1
     :cond_1
     :try_start_4
@@ -308,12 +270,10 @@
 
     const/4 v0, 0x1
 
-    .line 12
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isFinished:Z
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 13
     monitor-exit p0
 
     return-void
@@ -329,7 +289,6 @@
 .method private onConnectionReceivedData([BI)V
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mCapaticy:I
 
     iget v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
@@ -340,7 +299,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 2
     :try_start_0
     iget v2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mCapaticyExt:I
 
@@ -348,15 +306,12 @@
 
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mCapaticy:I
 
-    .line 3
     new-array v0, v0, [B
 
-    .line 4
     iget-object v2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     invoke-static {v2, v3, v0, v3, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 5
     iput-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
     :try_end_0
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_1
@@ -364,19 +319,16 @@
 
     goto :goto_0
 
-    .line 6
     :catch_0
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->doCancel()V
 
     return-void
 
-    .line 7
     :catch_1
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->doCancel()V
 
     return-void
 
-    .line 8
     :cond_0
     :goto_0
     :try_start_1
@@ -389,14 +341,12 @@
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_1 .. :try_end_1} :catch_3
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
 
-    .line 9
     iget p1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
     add-int/2addr p1, p2
 
     iput p1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
-    .line 10
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isNeedReturn()Z
 
     move-result p1
@@ -405,13 +355,11 @@
 
     return-void
 
-    .line 11
     :cond_1
     iget-boolean p1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isReceivedHeader:Z
 
     if-nez p1, :cond_2
 
-    .line 12
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processReceivedDataHeader()Z
 
     move-result p1
@@ -420,19 +368,16 @@
 
     return-void
 
-    .line 13
     :cond_2
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processReceivedDataByType()V
 
     return-void
 
-    .line 14
     :catch_2
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->doCancel()V
 
     return-void
 
-    .line 15
     :catch_3
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->doCancel()V
 
@@ -444,20 +389,16 @@
 
     const-string v0, "&"
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2
     invoke-static {v1}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuffer;
 
     invoke-direct {v2}, Ljava/lang/StringBuffer;-><init>()V
 
-    .line 4
     array-length v3, v1
 
     const/4 v4, 0x0
@@ -469,22 +410,18 @@
 
     aget-object v6, v1, v5
 
-    .line 5
     invoke-direct {p0, v6}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->strReEncoder(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 6
     invoke-static {v6}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v7
 
     if-nez v7, :cond_0
 
-    .line 7
     invoke-virtual {v2, v6}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 8
     invoke-virtual {v2, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_0
@@ -492,13 +429,11 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     invoke-virtual {v2}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 10
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -507,7 +442,6 @@
 
     if-le v1, v2, :cond_2
 
-    .line 11
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result p1
@@ -537,7 +471,6 @@
     :try_start_0
     const-string v1, "utf-8"
 
-    .line 1
     invoke-static {p1, v1}, Ljava/net/URLDecoder;->decode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -552,7 +485,6 @@
 
     const-string v1, "strReEncoderException"
 
-    .line 2
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
@@ -562,7 +494,6 @@
 
     const-string v1, "strReEncoder"
 
-    .line 3
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
@@ -579,12 +510,10 @@
 .method public addRequestTiles(Lcom/autonavi/ae/gmap/maploader/MapSourceGridData;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mMapTiles:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_0
@@ -596,7 +525,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
@@ -611,20 +539,16 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
-    .line 3
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     monitor-exit p0
 
     return-void
 
-    .line 5
     :cond_1
     :goto_0
     monitor-exit p0
@@ -642,7 +566,6 @@
 .method public doRequest()V
     .locals 9
 
-    .line 1
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v0, :cond_e
@@ -653,7 +576,6 @@
 
     goto/16 :goto_7
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isRequestValid()Z
 
@@ -661,42 +583,35 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->doCancel()V
 
     return-void
 
-    .line 4
     :cond_1
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->getMapAddress()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->getMapServerPath()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 6
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->getGridParams()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 7
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-nez v3, :cond_d
 
-    .line 8
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-nez v3, :cond_d
 
-    .line 9
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -705,7 +620,6 @@
 
     goto/16 :goto_6
 
-    .line 10
     :cond_2
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -719,17 +633,14 @@
 
     move-result-object v0
 
-    .line 11
     invoke-virtual {p0, v2}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->getRequestParams(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 12
     iget-boolean v2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isGetRequestMethod:Z
 
     if-eqz v2, :cond_3
 
-    .line 13
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -742,7 +653,6 @@
 
     move-result-object v0
 
-    .line 14
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -769,7 +679,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_3
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -795,13 +704,11 @@
 
     move-result-object v0
 
-    .line 16
     :goto_0
     new-instance v2, Ljava/lang/StringBuffer;
 
     invoke-direct {v2}, Ljava/lang/StringBuffer;-><init>()V
 
-    .line 17
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -836,18 +743,15 @@
 
     const/16 v5, 0x3ed
 
-    .line 18
     :try_start_0
     new-instance v6, Ljava/net/URL;
 
     invoke-direct {v6, v0}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    .line 19
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     if-nez v0, :cond_4
 
-    .line 20
     invoke-virtual {v6}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object v0
@@ -856,7 +760,6 @@
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
-    .line 21
     :cond_4
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
@@ -864,24 +767,20 @@
 
     invoke-virtual {v0, v6}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
 
-    .line 22
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, v6}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
 
-    .line 23
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     invoke-virtual {p0, v0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->addRequestHeader(Ljava/net/HttpURLConnection;)V
 
-    .line 24
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isGetRequestMethod:Z
 
     const/4 v6, 0x1
 
     if-eqz v0, :cond_5
 
-    .line 25
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     const-string v1, "GET"
@@ -890,7 +789,6 @@
 
     goto :goto_1
 
-    .line 26
     :cond_5
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
@@ -898,24 +796,20 @@
 
     invoke-virtual {v0, v7}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
-    .line 27
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, v6}, Ljava/net/HttpURLConnection;->setDoInput(Z)V
 
-    .line 28
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0, v6}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
 
-    .line 29
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     const/4 v7, 0x0
 
     invoke-virtual {v0, v7}, Ljava/net/HttpURLConnection;->setUseCaches(Z)V
 
-    .line 30
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     const-string v7, "User-Agent"
@@ -928,37 +822,29 @@
 
     const-string v0, "utf-8"
 
-    .line 31
     invoke-virtual {v1, v0}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object v0
 
-    .line 32
     iget-object v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v1}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v1
 
-    .line 33
     invoke-virtual {v1, v0}, Ljava/io/OutputStream;->write([B)V
 
-    .line 34
     invoke-virtual {v1}, Ljava/io/OutputStream;->flush()V
 
-    .line 35
     invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
 
-    .line 36
     :goto_1
     iput-boolean v6, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isInRequest:Z
 
-    .line 37
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->connect()V
 
-    .line 38
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     invoke-virtual {p0, v0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processHttpResponse(Ljava/net/HttpURLConnection;)Z
@@ -977,12 +863,10 @@
 
     if-eqz v0, :cond_6
 
-    .line 39
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
 
     return-void
 
-    .line 40
     :cond_6
     :try_start_1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
@@ -995,10 +879,8 @@
 
     if-ne v0, v1, :cond_7
 
-    .line 41
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOpened()V
 
-    .line 42
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mURLConnection:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
@@ -1009,7 +891,6 @@
 
     new-array v0, v0, [B
 
-    .line 43
     :goto_2
     invoke-virtual {v2, v0}, Ljava/io/InputStream;->read([B)I
 
@@ -1017,23 +898,19 @@
 
     if-ltz v1, :cond_9
 
-    .line 44
     iget-boolean v6, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v6, :cond_9
 
-    .line 45
     invoke-direct {p0, v0, v1}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionReceivedData([BI)V
 
     goto :goto_2
 
-    .line 46
     :cond_7
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mDataSource:I
 
     if-ne v0, v4, :cond_8
 
-    .line 47
     move-object v0, p0
 
     check-cast v0, Lcom/autonavi/ae/gmap/maploader/IndoorMapLoader;
@@ -1044,7 +921,6 @@
 
     if-eqz v0, :cond_9
 
-    .line 48
     invoke-virtual {p0, v3}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
 
     goto :goto_3
@@ -1052,7 +928,6 @@
     :cond_8
     const/16 v0, 0x3ea
 
-    .line 49
     invoke-virtual {p0, v0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
     :try_end_1
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_19
@@ -1065,19 +940,16 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 50
     :cond_9
     :goto_3
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
 
     if-eqz v2, :cond_c
 
-    .line 51
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v0, :cond_c
 
-    .line 52
     :try_start_2
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_2
@@ -1088,7 +960,6 @@
     :catch_0
     return-void
 
-    .line 53
     :catch_1
     invoke-virtual {p0, v5}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
 
@@ -1102,17 +973,14 @@
     :catch_2
     nop
 
-    .line 54
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
 
     if-eqz v2, :cond_c
 
-    .line 55
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v0, :cond_c
 
-    .line 56
     :try_start_3
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_3
@@ -1123,7 +991,6 @@
     :catch_3
     return-void
 
-    .line 57
     :catch_4
     invoke-virtual {p0, v5}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
 
@@ -1132,17 +999,14 @@
     :catch_5
     nop
 
-    .line 58
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
 
     if-eqz v2, :cond_c
 
-    .line 59
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v0, :cond_c
 
-    .line 60
     :try_start_4
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_4
@@ -1153,7 +1017,6 @@
     :catch_6
     return-void
 
-    .line 61
     :catch_7
     invoke-virtual {p0, v5}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
 
@@ -1162,17 +1025,14 @@
     :catch_8
     nop
 
-    .line 62
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
 
     if-eqz v2, :cond_c
 
-    .line 63
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v0, :cond_c
 
-    .line 64
     :try_start_5
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_5
@@ -1183,30 +1043,25 @@
     :catch_9
     return-void
 
-    .line 65
     :catch_a
     invoke-virtual {p0, v5}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
 
     return-void
 
-    .line 66
     :catch_b
     :try_start_6
     invoke-virtual {p0, v5}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    .line 67
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
 
     if-eqz v2, :cond_c
 
-    .line 68
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v0, :cond_c
 
-    .line 69
     :try_start_7
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_7
@@ -1217,20 +1072,17 @@
     :catch_c
     return-void
 
-    .line 70
     :catch_d
     invoke-virtual {p0, v5}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
 
     return-void
 
-    .line 71
     :catch_e
     :try_start_8
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mDataSource:I
 
     if-ne v0, v4, :cond_a
 
-    .line 72
     move-object v0, p0
 
     check-cast v0, Lcom/autonavi/ae/gmap/maploader/IndoorMapLoader;
@@ -1241,23 +1093,19 @@
 
     if-eqz v0, :cond_a
 
-    .line 73
     invoke-virtual {p0, v3}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
-    .line 74
     :cond_a
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
 
     if-eqz v2, :cond_c
 
-    .line 75
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v0, :cond_c
 
-    .line 76
     :try_start_9
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_9
@@ -1268,24 +1116,20 @@
     :catch_f
     return-void
 
-    .line 77
     :catch_10
     invoke-virtual {p0, v5}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
 
     return-void
 
-    .line 78
     :goto_4
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
 
     if-eqz v2, :cond_b
 
-    .line 79
     iget-boolean v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v1, :cond_b
 
-    .line 80
     :try_start_a
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_a
@@ -1295,11 +1139,9 @@
 
     goto :goto_5
 
-    .line 81
     :catch_11
     invoke-virtual {p0, v5}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
 
-    .line 82
     :catch_12
     :cond_b
     :goto_5
@@ -1308,17 +1150,14 @@
     :catch_13
     nop
 
-    .line 83
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
 
     if-eqz v2, :cond_c
 
-    .line 84
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v0, :cond_c
 
-    .line 85
     :try_start_b
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_b
@@ -1329,7 +1168,6 @@
     :catch_14
     return-void
 
-    .line 86
     :catch_15
     invoke-virtual {p0, v5}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
 
@@ -1338,17 +1176,14 @@
     :catch_16
     nop
 
-    .line 87
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
 
     if-eqz v2, :cond_c
 
-    .line 88
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v0, :cond_c
 
-    .line 89
     :try_start_c
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_c
@@ -1359,7 +1194,6 @@
     :catch_17
     return-void
 
-    .line 90
     :catch_18
     invoke-virtual {p0, v5}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
 
@@ -1368,17 +1202,14 @@
     :catch_19
     nop
 
-    .line 91
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onConnectionOver()V
 
     if-eqz v2, :cond_c
 
-    .line 92
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-nez v0, :cond_c
 
-    .line 93
     :try_start_d
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_d
@@ -1389,14 +1220,12 @@
     :catch_1a
     return-void
 
-    .line 94
     :catch_1b
     invoke-virtual {p0, v5}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->onException(I)V
 
     :cond_c
     return-void
 
-    .line 95
     :cond_d
     :goto_6
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->doCancel()V
@@ -1424,7 +1253,6 @@
 .method protected getRequestParams(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "mapdataver=6&"
@@ -1437,7 +1265,6 @@
 
     move-result-object p1
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1452,7 +1279,6 @@
 
     move-result-object p1
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1475,7 +1301,6 @@
 
     move-result-object p1
 
-    .line 4
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mDataSource:I
 
     const/16 v1, 0x65
@@ -1491,7 +1316,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
@@ -1532,7 +1356,6 @@
 
     const-string v0, "<"
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -1570,7 +1393,6 @@
 .method protected onConnectionOpened()V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mCapaticy:I
 
     new-array v0, v0, [B
@@ -1579,13 +1401,10 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
-    .line 3
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
-    .line 4
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isReceivedHeader:Z
 
     return-void
@@ -1594,7 +1413,6 @@
 .method public onException(I)V
     .locals 10
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mDataSource:I
 
     const/4 v1, 0x1
@@ -1609,12 +1427,10 @@
 
     if-eq v0, v1, :cond_2
 
-    .line 2
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isCanceled:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget v2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -1625,7 +1441,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mDataSource:I
 
@@ -1633,7 +1448,6 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget v2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -1642,7 +1456,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
@@ -1650,7 +1463,6 @@
 
     invoke-virtual {v0, v2, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->onException(II)V
 
-    .line 7
     iget-object v3, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget v4, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -1667,12 +1479,10 @@
 
     invoke-virtual/range {v3 .. v9}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
-    .line 8
     :cond_2
     :goto_0
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->downLoadOver(I)V
 
-    .line 9
     iput-boolean v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isFinished:Z
 
     return-void
@@ -1689,7 +1499,6 @@
 .method protected processReceivedData()V
     .locals 6
 
-    .line 1
     :try_start_0
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
@@ -1699,12 +1508,10 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
     if-lt v0, v1, :cond_3
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     invoke-static {v0, v2}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->getInt([BI)I
@@ -1715,12 +1522,10 @@
 
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
-    .line 4
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processReceivedData()V
 
     return-void
 
-    .line 5
     :cond_0
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
@@ -1728,14 +1533,12 @@
 
     if-lt v0, v3, :cond_3
 
-    .line 6
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     invoke-static {v0, v2}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->getInt([BI)I
 
     move-result v0
 
-    .line 7
     iget-object v3, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     const/4 v4, 0x4
@@ -1746,7 +1549,6 @@
 
     if-nez v3, :cond_1
 
-    .line 8
     iget-object v3, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     add-int/2addr v0, v1
@@ -1757,7 +1559,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_1
     :try_start_1
     new-instance v4, Ljava/io/ByteArrayInputStream;
@@ -1766,12 +1567,10 @@
 
     invoke-direct {v4, v5, v1, v0}, Ljava/io/ByteArrayInputStream;-><init>([BII)V
 
-    .line 10
     new-instance v0, Ljava/util/zip/GZIPInputStream;
 
     invoke-direct {v0, v4}, Ljava/util/zip/GZIPInputStream;-><init>(Ljava/io/InputStream;)V
 
-    .line 11
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v1}, Ljava/io/ByteArrayOutputStream;-><init>()V
@@ -1780,7 +1579,6 @@
 
     new-array v4, v4, [B
 
-    .line 12
     :goto_0
     invoke-virtual {v0, v4}, Ljava/util/zip/GZIPInputStream;->read([B)I
 
@@ -1788,18 +1586,15 @@
 
     if-ltz v5, :cond_2
 
-    .line 13
     invoke-virtual {v1, v4, v2, v5}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
     goto :goto_0
 
-    .line 14
     :cond_2
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v0
 
-    .line 15
     invoke-virtual {p0, v0, v2, v3}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processReceivedTileData([BII)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
@@ -1810,11 +1605,9 @@
     :catch_0
     move-exception v0
 
-    .line 16
     :try_start_2
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 17
     :goto_1
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
@@ -1824,7 +1617,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 18
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     iget v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
@@ -1839,7 +1631,6 @@
 
     invoke-static {v0, v1, v3, v2, v4}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->moveArray([BI[BII)V
 
-    .line 19
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
     iget v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
@@ -1848,10 +1639,8 @@
 
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
-    .line 20
     iput v2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
-    .line 21
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processReceivedData()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -1862,7 +1651,6 @@
     :catchall_0
     move-exception v0
 
-    .line 22
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -1877,7 +1665,6 @@
 .method protected processReceivedDataV4()V
     .locals 6
 
-    .line 1
     :try_start_0
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
@@ -1887,12 +1674,10 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
     if-lt v0, v2, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     invoke-static {v0, v1}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->getInt([BI)I
@@ -1903,12 +1688,10 @@
 
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
-    .line 4
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processReceivedDataV4()V
 
     return-void
 
-    .line 5
     :cond_0
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
@@ -1916,19 +1699,16 @@
 
     if-lt v0, v3, :cond_1
 
-    .line 6
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     iget v3, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
     invoke-virtual {p0, v0, v2, v3}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processReceivedTileDataV4([BII)V
 
-    .line 7
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     if-eqz v0, :cond_1
 
-    .line 8
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     iget v2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
@@ -1943,7 +1723,6 @@
 
     invoke-static {v0, v2, v3, v1, v4}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->moveArray([BI[BII)V
 
-    .line 9
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
     iget v2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
@@ -1952,10 +1731,8 @@
 
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
-    .line 10
     iput v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
-    .line 11
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processReceivedDataV4()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1966,7 +1743,6 @@
     :catchall_0
     move-exception v0
 
-    .line 12
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -1983,7 +1759,6 @@
 
     add-int/lit8 v1, v0, 0x1
 
-    .line 1
     :try_start_0
     aget-byte v0, p1, v0
 
@@ -1999,14 +1774,12 @@
 
     if-ge v4, p3, :cond_0
 
-    .line 2
     new-instance v2, Ljava/lang/String;
 
     const-string v4, "utf-8"
 
     invoke-direct {v2, p1, v1, v0, v4}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
@@ -2020,7 +1793,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object v4, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
@@ -2038,7 +1810,6 @@
 
     invoke-virtual/range {v4 .. v10}, Lcom/autonavi/ae/gmap/GLMapEngine;->putMapData(I[BIIII)Z
 
-    .line 5
     iget-object p1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget p2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -2047,14 +1818,12 @@
 
     move-result p1
 
-    .line 6
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     move-result p2
 
     if-lt p1, p2, :cond_2
 
-    .line 7
     iget-object p1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget p2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -2072,7 +1841,6 @@
     :cond_2
     if-eqz v3, :cond_3
 
-    .line 8
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->doCancel()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2084,7 +1852,6 @@
     :catchall_0
     move-exception p1
 
-    .line 9
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -2102,7 +1869,6 @@
 
     add-int/lit8 v1, v0, 0x1
 
-    .line 1
     aget-byte v0, p1, v0
 
     const/4 v2, 0x1
@@ -2115,7 +1881,6 @@
 
     if-ge v3, p3, :cond_0
 
-    .line 2
     new-instance v3, Ljava/lang/String;
 
     const-string v4, "utf-8"
@@ -2127,7 +1892,6 @@
     :cond_0
     const-string v3, ""
 
-    .line 3
     :goto_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
@@ -2147,7 +1911,6 @@
     :cond_2
     sub-int v7, p3, p2
 
-    .line 4
     iget v8, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mDataSource:I
 
     const/4 v9, 0x0
@@ -2162,7 +1925,6 @@
 
     invoke-virtual/range {v4 .. v10}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->putMapData([BIIIILjava/lang/String;)V
 
-    .line 5
     iget-object p1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget p2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -2171,14 +1933,12 @@
 
     move-result p1
 
-    .line 6
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
     move-result p2
 
     if-lt p1, p2, :cond_3
 
-    .line 7
     iget-object p1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget p2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -2196,7 +1956,6 @@
     :cond_3
     if-eqz v2, :cond_4
 
-    .line 8
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->doCancel()V
 
     :cond_4
@@ -2211,7 +1970,6 @@
 
     if-lez p3, :cond_4
 
-    .line 1
     :try_start_0
     array-length p2, p1
 
@@ -2219,7 +1977,6 @@
 
     const/4 p2, 0x0
 
-    .line 2
     invoke-static {p1, p2}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->getInt([BI)I
 
     move-result v0
@@ -2231,7 +1988,6 @@
     :cond_0
     const/4 v0, 0x4
 
-    .line 3
     invoke-static {p1, v0}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->getInt([BI)I
 
     move-result v0
@@ -2243,14 +1999,12 @@
     :cond_1
     const/16 v0, 0x8
 
-    .line 4
     invoke-static {p1, v0}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->getInt([BI)I
 
     move-result v0
 
     const/16 v1, 0xc
 
-    .line 5
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -2264,7 +2018,6 @@
 
     add-int/lit8 v4, v1, 0x1
 
-    .line 6
     aget-byte v1, p1, v1
 
     if-lez v1, :cond_3
@@ -2273,14 +2026,12 @@
 
     if-ge v5, p3, :cond_3
 
-    .line 7
     new-instance v6, Ljava/lang/String;
 
     const-string v7, "utf-8"
 
     invoke-direct {v6, p1, v4, v1, v7}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
 
-    .line 8
     invoke-virtual {v2, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v1, v5, 0x4
@@ -2295,7 +2046,6 @@
     :cond_3
     if-eqz p2, :cond_4
 
-    .line 9
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -2319,7 +2069,6 @@
     :catchall_0
     move-exception p1
 
-    .line 10
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_4
@@ -2330,7 +2079,6 @@
 .method protected putMapData([BIIIILjava/lang/String;)V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -2353,7 +2101,6 @@
 .method public setGetRequestMethod(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isGetRequestMethod:Z
 
     return-void

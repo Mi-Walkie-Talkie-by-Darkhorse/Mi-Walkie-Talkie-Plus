@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/http/HttpClientConfig$Builder;
 .super Ljava/lang/Object;
-.source "HttpClientConfig.java"
 
 
 # annotations
@@ -24,12 +23,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Lcom/xiaomi/account/http/HttpClientConfig$Builder;->netWorkSlotId:I
 
     return-void
@@ -40,7 +37,6 @@
 .method public build()Lcom/xiaomi/account/http/HttpClientConfig;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/xiaomi/account/http/HttpClientConfig;
 
     const/4 v1, 0x0
@@ -53,7 +49,6 @@
 .method public network(Landroid/net/Network;)Lcom/xiaomi/account/http/HttpClientConfig$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/http/HttpClientConfig$Builder;->network:Landroid/net/Network;
 
     return-object p0
@@ -62,7 +57,6 @@
 .method public useDataNetWork(I)Lcom/xiaomi/account/http/HttpClientConfig$Builder;
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/xiaomi/account/http/HttpClientConfig$Builder;->netWorkSlotId:I
 
     return-object p0

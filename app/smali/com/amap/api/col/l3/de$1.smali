@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/de$1;
 .super Ljava/lang/Object;
-.source "TileOverlayDelegateImp.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/eq$c;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/de;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/de$1;->a:Lcom/amap/api/col/l3/de;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/de$1;->a:Lcom/amap/api/col/l3/de;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/de;->a(Lcom/amap/api/col/l3/de;)Lcom/amap/api/col/l3/u;

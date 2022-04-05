@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/listener/MapSurfaceListener;
 .super Ljava/lang/Object;
-.source "MapSurfaceListener.java"
 
 
 # virtual methods

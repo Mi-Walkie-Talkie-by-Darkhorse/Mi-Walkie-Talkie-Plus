@@ -1,6 +1,5 @@
 .class public final enum Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 .super Ljava/lang/Enum;
-.source "DeviceTypeEnum.java"
 
 
 # annotations
@@ -33,7 +32,6 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
     const/4 v1, 0x0
@@ -48,7 +46,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;->b:Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
     const/4 v3, 0x4
@@ -61,7 +58,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;->c:Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
     const/4 v4, 0x2
@@ -76,7 +72,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;->d:Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
-    .line 4
     new-instance v0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
     const/4 v5, 0x3
@@ -93,7 +88,6 @@
 
     new-array v3, v3, [Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
-    .line 5
     sget-object v6, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;->b:Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
     aput-object v6, v3, v1
@@ -123,10 +117,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p4, p0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;->a:Ljava/lang/String;
 
     return-void
@@ -135,7 +127,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -150,7 +141,6 @@
 .method public static values()[Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;->f:[Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
     invoke-virtual {v0}, [Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;->clone()Ljava/lang/Object;
@@ -167,7 +157,6 @@
 .method public a()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;->a:Ljava/lang/String;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class public Lno/nordicsemi/android/ble/b2;
 .super Lno/nordicsemi/android/ble/p2;
-.source "ConnectRequest.java"
 
 
 # instance fields
@@ -44,28 +43,22 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lno/nordicsemi/android/ble/p2;-><init>(Lno/nordicsemi/android/ble/Request$Type;)V
 
     const/4 p1, 0x0
 
-    .line 2
     iput p1, p0, Lno/nordicsemi/android/ble/b2;->t:I
 
     iput p1, p0, Lno/nordicsemi/android/ble/b2;->u:I
 
-    .line 3
     iput p1, p0, Lno/nordicsemi/android/ble/b2;->v:I
 
-    .line 4
     iput-boolean p1, p0, Lno/nordicsemi/android/ble/b2;->w:Z
 
-    .line 5
     iput-object p2, p0, Lno/nordicsemi/android/ble/b2;->r:Landroid/bluetooth/BluetoothDevice;
 
     const/4 p1, 0x1
 
-    .line 6
     iput p1, p0, Lno/nordicsemi/android/ble/b2;->s:I
 
     return-void
@@ -82,7 +75,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/b2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/b2;
 
     return-object p0
@@ -101,10 +93,8 @@
         .end annotation
     .end param
 
-    .line 5
     iput p1, p0, Lno/nordicsemi/android/ble/b2;->u:I
 
-    .line 6
     iput p2, p0, Lno/nordicsemi/android/ble/b2;->v:I
 
     return-object p0
@@ -119,7 +109,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 3
     invoke-super {p0, p1}, Lno/nordicsemi/android/ble/p2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/p2;
 
     return-object p0
@@ -134,7 +123,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 4
     invoke-super {p0, p1}, Lno/nordicsemi/android/ble/Request;->a(Lno/nordicsemi/android/ble/u2/d;)Lno/nordicsemi/android/ble/Request;
 
     return-object p0
@@ -143,7 +131,6 @@
 .method public a(Z)Lno/nordicsemi/android/ble/b2;
     .locals 0
 
-    .line 7
     iput-boolean p1, p0, Lno/nordicsemi/android/ble/b2;->w:Z
 
     return-object p0
@@ -158,7 +145,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/b2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/b2;
 
     return-object p0
@@ -167,7 +153,6 @@
 .method h()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lno/nordicsemi/android/ble/b2;->u:I
 
     if-lez v0, :cond_0
@@ -176,7 +161,6 @@
 
     sub-int/2addr v0, v1
 
-    .line 2
     iput v0, p0, Lno/nordicsemi/android/ble/b2;->u:I
 
     return v1
@@ -192,7 +176,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/b2;->r:Landroid/bluetooth/BluetoothDevice;
 
     return-object v0
@@ -201,7 +184,6 @@
 .method j()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lno/nordicsemi/android/ble/b2;->s:I
 
     return v0
@@ -213,7 +195,6 @@
         from = 0x0L
     .end annotation
 
-    .line 1
     iget v0, p0, Lno/nordicsemi/android/ble/b2;->v:I
 
     return v0
@@ -222,7 +203,6 @@
 .method l()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lno/nordicsemi/android/ble/b2;->t:I
 
     add-int/lit8 v1, v0, 0x1
@@ -245,7 +225,6 @@
 .method m()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lno/nordicsemi/android/ble/b2;->w:Z
 
     return v0

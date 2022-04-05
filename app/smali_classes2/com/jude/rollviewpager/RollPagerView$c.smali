@@ -1,6 +1,5 @@
 .class Lcom/jude/rollviewpager/RollPagerView$c;
 .super Ljava/lang/Object;
-.source "RollPagerView.java"
 
 # interfaces
 .implements Landroid/view/animation/Interpolator;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/jude/rollviewpager/RollPagerView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/jude/rollviewpager/RollPagerView$c;->a:Lcom/jude/rollviewpager/RollPagerView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

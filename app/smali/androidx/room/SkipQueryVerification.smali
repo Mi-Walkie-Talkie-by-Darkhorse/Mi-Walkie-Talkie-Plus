@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/SkipQueryVerification;
 .super Ljava/lang/Object;
-.source "SkipQueryVerification.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

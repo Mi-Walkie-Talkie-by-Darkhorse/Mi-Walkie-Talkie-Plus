@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/ListPopupWindow$c;
 .super Ljava/lang/Object;
-.source "ListPopupWindow.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/ListPopupWindow;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow$c;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ListPopupWindow$c;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->g()V

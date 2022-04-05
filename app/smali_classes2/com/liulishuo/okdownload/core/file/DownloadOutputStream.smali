@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/core/file/DownloadOutputStream;
 .super Ljava/lang/Object;
-.source "DownloadOutputStream.java"
 
 
 # annotations

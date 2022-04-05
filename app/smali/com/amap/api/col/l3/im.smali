@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/im;
 .super Ljava/lang/Object;
-.source "StatisticsManager.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 .method static synthetic a()Ljava/lang/ref/WeakReference;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/im;->a:Ljava/lang/ref/WeakReference;
 
     return-object v0
@@ -37,7 +34,6 @@
 .method public static a(Landroid/content/Context;)V
     .locals 2
 
-    .line 9
     invoke-static {}, Lcom/amap/api/col/l3/gv;->d()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
@@ -59,7 +55,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/amap/api/col/l3/im;->a:Ljava/lang/ref/WeakReference;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/in;->a(Ljava/lang/ref/WeakReference;)Lcom/amap/api/col/l3/ig;
@@ -151,7 +146,6 @@
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/gv;->d()Ljava/util/concurrent/ExecutorService;
 
@@ -165,7 +159,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     monitor-exit v0
 
     return-void
@@ -197,7 +190,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 5
     :try_start_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -209,7 +201,6 @@
 
     goto :goto_0
 
-    .line 6
     :catchall_0
     :cond_0
     :try_start_1
@@ -225,7 +216,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 7
     monitor-exit v0
 
     return-void
@@ -237,7 +227,6 @@
 
     throw p0
 
-    .line 8
     :cond_1
     :goto_0
     monitor-exit v0

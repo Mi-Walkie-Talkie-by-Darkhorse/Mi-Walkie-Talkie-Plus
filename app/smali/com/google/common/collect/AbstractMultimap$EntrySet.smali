@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/AbstractMultimap$EntrySet;
 .super Lcom/google/common/collect/AbstractMultimap$Entries;
-.source "AbstractMultimap.java"
 
 # interfaces
 .implements Ljava/util/Set;
@@ -35,7 +34,6 @@
 .method private constructor <init>(Lcom/google/common/collect/AbstractMultimap;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$EntrySet;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     const/4 v0, 0x0
@@ -48,7 +46,6 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/AbstractMultimap;Lcom/google/common/collect/AbstractMultimap$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMultimap$EntrySet;-><init>(Lcom/google/common/collect/AbstractMultimap;)V
 
     return-void
@@ -63,7 +60,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Sets;->equalsImpl(Ljava/util/Set;Ljava/lang/Object;)Z
 
     move-result p1
@@ -74,7 +70,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Sets;->hashCodeImpl(Ljava/util/Set;)I
 
     move-result v0

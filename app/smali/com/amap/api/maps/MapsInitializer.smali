@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/maps/MapsInitializer;
 .super Ljava/lang/Object;
-.source "MapsInitializer.java"
 
 
 # static fields
@@ -29,7 +28,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
 .method public static getHttpProtocol()I
     .locals 1
 
-    .line 1
     sget v0, Lcom/amap/api/maps/MapsInitializer;->d:I
 
     return v0
@@ -47,7 +44,6 @@
 .method public static getNetWorkEnable()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/amap/api/maps/MapsInitializer;->a:Z
 
     return v0
@@ -71,7 +67,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p0
@@ -85,7 +80,6 @@
 .method public static isDownloadCoordinateConvertLibrary()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/amap/api/maps/MapsInitializer;->b:Z
 
     return v0
@@ -94,7 +88,6 @@
 .method public static isLoadWorldGridMap()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/amap/api/maps/MapsInitializer;->c:Z
 
     return v0
@@ -103,7 +96,6 @@
 .method public static loadWorldGridMap(Z)V
     .locals 0
 
-    .line 1
     sput-boolean p0, Lcom/amap/api/maps/MapsInitializer;->c:Z
 
     return-void
@@ -114,7 +106,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v0
@@ -125,7 +116,6 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     invoke-static {p0}, Lcom/amap/api/col/l3/fy;->a(Ljava/lang/String;)V
 
     :cond_0
@@ -135,7 +125,6 @@
 .method public static setBuildingHeight(I)V
     .locals 0
 
-    .line 1
     sput p0, Lcom/autonavi/ae/gmap/GLMapEngine;->BUILDINGHEIGHT:I
 
     return-void
@@ -144,7 +133,6 @@
 .method public static setDownloadCoordinateConvertLibrary(Z)V
     .locals 0
 
-    .line 1
     sput-boolean p0, Lcom/amap/api/maps/MapsInitializer;->b:Z
 
     return-void
@@ -153,7 +141,6 @@
 .method public static setHttpProtocol(I)V
     .locals 0
 
-    .line 1
     sput p0, Lcom/amap/api/maps/MapsInitializer;->d:I
 
     return-void
@@ -162,7 +149,6 @@
 .method public static setNetWorkEnable(Z)V
     .locals 0
 
-    .line 1
     sput-boolean p0, Lcom/amap/api/maps/MapsInitializer;->a:Z
 
     return-void

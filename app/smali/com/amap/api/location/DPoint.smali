@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/location/DPoint;
 .super Ljava/lang/Object;
-.source "DPoint.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -28,7 +27,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/location/DPoint$1;
 
     invoke-direct {v0}, Lcom/amap/api/location/DPoint$1;-><init>()V
@@ -41,15 +39,12 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lcom/amap/api/location/DPoint;->a:D
 
-    .line 3
     iput-wide v0, p0, Lcom/amap/api/location/DPoint;->b:D
 
     return-void
@@ -58,15 +53,12 @@
 .method public constructor <init>(DD)V
     .locals 3
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 5
     iput-wide v0, p0, Lcom/amap/api/location/DPoint;->a:D
 
-    .line 6
     iput-wide v0, p0, Lcom/amap/api/location/DPoint;->b:D
 
     const-wide v0, 0x4066800000000000L    # 180.0
@@ -104,11 +96,9 @@
 
     move-wide p1, v0
 
-    .line 7
     :cond_3
     iput-wide p3, p0, Lcom/amap/api/location/DPoint;->a:D
 
-    .line 8
     iput-wide p1, p0, Lcom/amap/api/location/DPoint;->b:D
 
     return-void
@@ -117,25 +107,20 @@
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
-    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 10
     iput-wide v0, p0, Lcom/amap/api/location/DPoint;->a:D
 
-    .line 11
     iput-wide v0, p0, Lcom/amap/api/location/DPoint;->b:D
 
-    .line 12
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/amap/api/location/DPoint;->a:D
 
-    .line 13
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v0
@@ -158,7 +143,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
 
-    .line 1
     instance-of v0, p1, Lcom/amap/api/location/DPoint;
 
     const/4 v1, 0x0
@@ -167,11 +151,9 @@
 
     return v1
 
-    .line 2
     :cond_0
     check-cast p1, Lcom/amap/api/location/DPoint;
 
-    .line 3
     iget-wide v2, p0, Lcom/amap/api/location/DPoint;->b:D
 
     iget-wide v4, p1, Lcom/amap/api/location/DPoint;->b:D
@@ -182,7 +164,6 @@
 
     return v1
 
-    .line 4
     :cond_1
     iget-wide v2, p0, Lcom/amap/api/location/DPoint;->a:D
 
@@ -203,7 +184,6 @@
 .method public getLatitude()D
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/location/DPoint;->b:D
 
     return-wide v0
@@ -212,7 +192,6 @@
 .method public getLongitude()D
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/location/DPoint;->a:D
 
     return-wide v0
@@ -221,7 +200,6 @@
 .method public hashCode()I
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/location/DPoint;->b:D
 
     iget-wide v2, p0, Lcom/amap/api/location/DPoint;->a:D
@@ -236,7 +214,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Double;->intValue()I
 
     move-result v0
@@ -264,7 +241,6 @@
 
     move-wide p1, v0
 
-    .line 1
     :cond_1
     iput-wide p1, p0, Lcom/amap/api/location/DPoint;->b:D
 
@@ -291,7 +267,6 @@
 
     move-wide p1, v0
 
-    .line 1
     :cond_1
     iput-wide p1, p0, Lcom/amap/api/location/DPoint;->a:D
 
@@ -301,12 +276,10 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/location/DPoint;->a:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
-    .line 2
     iget-wide v0, p0, Lcom/amap/api/location/DPoint;->b:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V

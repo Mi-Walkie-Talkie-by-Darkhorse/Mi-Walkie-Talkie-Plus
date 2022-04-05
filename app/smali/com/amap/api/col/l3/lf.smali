@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/lf;
 .super Ljava/lang/Object;
-.source "Req.java"
 
 
 # annotations

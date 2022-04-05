@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lpub/devrel/easypermissions/AfterPermissionGranted;
 .super Ljava/lang/Object;
-.source "AfterPermissionGranted.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

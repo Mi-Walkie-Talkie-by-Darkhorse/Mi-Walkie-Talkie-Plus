@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/solver/d$b;
 .super Landroidx/constraintlayout/solver/b;
-.source "LinearSystem.java"
 
 
 # annotations
@@ -18,10 +17,8 @@
 .method public constructor <init>(Landroidx/constraintlayout/solver/d;Landroidx/constraintlayout/solver/c;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/constraintlayout/solver/b;-><init>()V
 
-    .line 2
     new-instance p1, Landroidx/constraintlayout/solver/i;
 
     invoke-direct {p1, p0, p2}, Landroidx/constraintlayout/solver/i;-><init>(Landroidx/constraintlayout/solver/b;Landroidx/constraintlayout/solver/c;)V

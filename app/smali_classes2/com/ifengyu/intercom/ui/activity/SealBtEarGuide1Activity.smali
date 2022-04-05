@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 .super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
-.source "SealBtEarGuide1Activity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -14,7 +13,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;-><init>()V
 
     return-void
@@ -23,7 +21,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;)Ljava/lang/Runnable;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;->q:Ljava/lang/Runnable;
 
     return-object p0
@@ -32,7 +29,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a:Ljava/lang/String;
 
     return-object p0
@@ -41,7 +37,6 @@
 .method private z()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$c;-><init>(Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;)V
@@ -56,7 +51,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -71,13 +65,11 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     goto :goto_0
 
-    .line 3
     :cond_1
     const-class p1, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide2Activity;
 
@@ -90,18 +82,14 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c0045
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->setContentView(I)V
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;->x()V
 
-    .line 4
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;->w()V
 
     return-void
@@ -110,7 +98,6 @@
 .method public w()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->D()I
 
     move-result v0
@@ -119,14 +106,12 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->T()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;-><init>(Landroid/app/Activity;)V
@@ -143,7 +128,6 @@
 
     const/4 v2, 0x0
 
-    .line 4
     invoke-virtual {v0, v1, v2}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     const v1, 0x7f110371
@@ -154,14 +138,12 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->c(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
-    .line 5
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a()Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->d()V
 
     const/4 v0, 0x1
 
-    .line 6
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->g(Z)V
 
     :cond_0
@@ -173,7 +155,6 @@
 
     const v0, 0x7f09041d
 
-    .line 1
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -184,7 +165,6 @@
 
     const v0, 0x7f090416
 
-    .line 2
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -193,7 +173,6 @@
 
     const v0, 0x7f090419
 
-    .line 3
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -202,7 +181,6 @@
 
     const v0, 0x7f0900e5
 
-    .line 4
     invoke-virtual {p0, v0}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -215,7 +193,6 @@
 .method public y()V
     .locals 4
 
-    .line 1
     invoke-static {p0}, Lcom/ifengyu/intercom/i/c0;->b(Landroid/content/Context;)Z
 
     move-result v0
@@ -226,7 +203,6 @@
 
     const v0, 0x7f110248
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -235,7 +211,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/node/j;->b()Lcom/ifengyu/intercom/node/j;
 
@@ -249,7 +224,6 @@
 
     const v0, 0x7f1100c9
 
-    .line 4
     invoke-virtual {p0, v0}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -263,7 +237,6 @@
 
     const v2, 0x7f110089
 
-    .line 5
     invoke-virtual {p0, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v2
@@ -272,7 +245,6 @@
 
     invoke-virtual {p0, v1, v0, v2, v3}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(ZZLjava/lang/String;I)V
 
-    .line 6
     new-instance v0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$b;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$b;-><init>(Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;)V
@@ -283,7 +255,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/ifengyu/intercom/i/k0;->a(Ljava/lang/Runnable;J)V
 
-    .line 7
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;->z()V
 
     return-void

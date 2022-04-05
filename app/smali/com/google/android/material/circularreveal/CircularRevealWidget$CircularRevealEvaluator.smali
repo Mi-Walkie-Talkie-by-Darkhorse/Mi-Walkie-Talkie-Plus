@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealEvaluator;
 .super Ljava/lang/Object;
-.source "CircularRevealWidget.java"
 
 # interfaces
 .implements Landroid/animation/TypeEvaluator;
@@ -46,7 +45,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealEvaluator;
 
     invoke-direct {v0}, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealEvaluator;-><init>()V
@@ -59,10 +57,8 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
 
     const/4 v1, 0x0
@@ -89,14 +85,12 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealEvaluator;->revealInfo:Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
 
     iget v1, p2, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->centerX:F
 
     iget v2, p3, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->centerX:F
 
-    .line 3
     invoke-static {v1, v2, p1}, Lcom/google/android/material/math/MathUtils;->lerp(FFF)F
 
     move-result v1
@@ -105,7 +99,6 @@
 
     iget v3, p3, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->centerY:F
 
-    .line 4
     invoke-static {v2, v3, p1}, Lcom/google/android/material/math/MathUtils;->lerp(FFF)F
 
     move-result v2
@@ -114,15 +107,12 @@
 
     iget p3, p3, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->radius:F
 
-    .line 5
     invoke-static {p2, p3, p1}, Lcom/google/android/material/math/MathUtils;->lerp(FFF)F
 
     move-result p1
 
-    .line 6
     invoke-virtual {v0, v1, v2, p1}, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;->set(FFF)V
 
-    .line 7
     iget-object p1, p0, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealEvaluator;->revealInfo:Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
 
     return-object p1
@@ -141,7 +131,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     check-cast p2, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
 
     check-cast p3, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;

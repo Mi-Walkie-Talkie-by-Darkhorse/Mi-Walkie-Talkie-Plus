@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/AgentWebView$AgentWebChrome;
 .super Lcom/just/agentweb/MiddlewareWebChromeBase;
-.source "AgentWebView.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method private constructor <init>(Lcom/just/agentweb/AgentWebView;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/just/agentweb/MiddlewareWebChromeBase;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/just/agentweb/AgentWebView$AgentWebChrome;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     return-void
@@ -34,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/just/agentweb/AgentWebView;Lcom/just/agentweb/AgentWebView$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/just/agentweb/AgentWebView$AgentWebChrome;-><init>(Lcom/just/agentweb/AgentWebView;)V
 
     return-void
@@ -45,7 +41,6 @@
 .method public onJsPrompt(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsPromptResult;)Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/just/agentweb/AgentWebView;->access$500()Ljava/lang/String;
 
     move-result-object v0
@@ -82,7 +77,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWebView$AgentWebChrome;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     invoke-static {v0}, Lcom/just/agentweb/AgentWebView;->access$300(Lcom/just/agentweb/AgentWebView;)Ljava/util/Map;
@@ -97,19 +91,16 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-static {p3}, Lcom/just/agentweb/JsCallJava;->getMsgJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p2
 
-    .line 4
     invoke-static {p2}, Lcom/just/agentweb/JsCallJava;->getInterfacedName(Lorg/json/JSONObject;)Ljava/lang/String;
 
     move-result-object p3
 
     if-eqz p3, :cond_0
 
-    .line 5
     iget-object p4, p0, Lcom/just/agentweb/AgentWebView$AgentWebChrome;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     invoke-static {p4}, Lcom/just/agentweb/AgentWebView;->access$300(Lcom/just/agentweb/AgentWebView;)Ljava/util/Map;
@@ -124,7 +115,6 @@
 
     if-eqz p3, :cond_0
 
-    .line 6
     invoke-virtual {p3, p1, p2}, Lcom/just/agentweb/JsCallJava;->call(Landroid/webkit/WebView;Lorg/json/JSONObject;)Ljava/lang/String;
 
     move-result-object p1
@@ -136,7 +126,6 @@
 
     return p1
 
-    .line 7
     :cond_1
     invoke-super/range {p0 .. p5}, Lcom/just/agentweb/WebChromeClientDelegate;->onJsPrompt(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsPromptResult;)Z
 
@@ -148,7 +137,6 @@
 .method public onProgressChanged(Landroid/webkit/WebView;I)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWebView$AgentWebChrome;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     invoke-static {v0}, Lcom/just/agentweb/AgentWebView;->access$300(Lcom/just/agentweb/AgentWebView;)Ljava/util/Map;
@@ -157,19 +145,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/AgentWebView$AgentWebChrome;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     invoke-static {v0}, Lcom/just/agentweb/AgentWebView;->access$400(Lcom/just/agentweb/AgentWebView;)V
 
-    .line 3
     invoke-static {}, Lcom/just/agentweb/LogUtils;->isDebug()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-static {}, Lcom/just/agentweb/AgentWebView;->access$500()Ljava/lang/String;
 
     move-result-object v0
@@ -200,7 +185,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/AgentWebView$AgentWebChrome;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
@@ -210,12 +194,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 6
     iget-object v0, p0, Lcom/just/agentweb/AgentWebView$AgentWebChrome;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     invoke-static {v0}, Lcom/just/agentweb/AgentWebView;->access$700(Lcom/just/agentweb/AgentWebView;)V
 
-    .line 7
     :cond_1
     invoke-super {p0, p1, p2}, Lcom/just/agentweb/WebChromeClientDelegate;->onProgressChanged(Landroid/webkit/WebView;I)V
 
@@ -225,7 +207,6 @@
 .method public onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWebView$AgentWebChrome;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     invoke-static {v0}, Lcom/just/agentweb/AgentWebView;->access$800(Lcom/just/agentweb/AgentWebView;)Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;
@@ -234,7 +215,6 @@
 
     invoke-virtual {v0}, Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;->onReceivedTitle()V
 
-    .line 2
     invoke-super {p0, p1, p2}, Lcom/just/agentweb/WebChromeClientDelegate;->onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
 
     return-void

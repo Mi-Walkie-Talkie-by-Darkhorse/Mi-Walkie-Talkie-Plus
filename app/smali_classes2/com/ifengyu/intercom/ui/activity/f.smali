@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/ui/activity/f;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;

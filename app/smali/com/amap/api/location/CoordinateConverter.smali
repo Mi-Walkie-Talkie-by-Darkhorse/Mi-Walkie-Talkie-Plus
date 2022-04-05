@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/location/CoordinateConverter;
 .super Ljava/lang/Object;
-.source "CoordinateConverter.java"
 
 
 # annotations
@@ -25,21 +24,16 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->c:Lcom/amap/api/location/CoordinateConverter$CoordType;
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->d:Lcom/amap/api/location/DPoint;
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->a:Lcom/amap/api/location/DPoint;
 
-    .line 5
     iput-object p1, p0, Lcom/amap/api/location/CoordinateConverter;->b:Landroid/content/Context;
 
     return-void
@@ -48,7 +42,6 @@
 .method public static calculateLineDistance(Lcom/amap/api/location/DPoint;Lcom/amap/api/location/DPoint;)F
     .locals 0
 
-    .line 1
     :try_start_0
     invoke-static {p0, p1}, Lcom/amap/api/col/l3/ki;->a(Lcom/amap/api/location/DPoint;Lcom/amap/api/location/DPoint;)F
 
@@ -67,7 +60,6 @@
 .method public static isAMapDataAvailable(DD)Z
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/amap/api/col/l3/jz;->a(DD)Z
 
     move-result p0
@@ -87,18 +79,15 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->c:Lcom/amap/api/location/CoordinateConverter$CoordType;
 
     if-eqz v0, :cond_3
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->d:Lcom/amap/api/location/DPoint;
 
     if-eqz v0, :cond_2
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->d:Lcom/amap/api/location/DPoint;
 
     invoke-virtual {v0}, Lcom/amap/api/location/DPoint;->getLongitude()D
@@ -113,7 +102,6 @@
 
     iget-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->d:Lcom/amap/api/location/DPoint;
 
-    .line 4
     invoke-virtual {v0}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
     move-result-wide v0
@@ -124,7 +112,6 @@
 
     if-ltz v4, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->d:Lcom/amap/api/location/DPoint;
 
     invoke-virtual {v0}, Lcom/amap/api/location/DPoint;->getLatitude()D
@@ -139,7 +126,6 @@
 
     iget-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->d:Lcom/amap/api/location/DPoint;
 
-    .line 6
     invoke-virtual {v0}, Lcom/amap/api/location/DPoint;->getLatitude()D
 
     move-result-wide v0
@@ -150,7 +136,6 @@
 
     if-ltz v4, :cond_0
 
-    .line 7
     sget-object v0, Lcom/amap/api/location/CoordinateConverter$1;->a:[I
 
     iget-object v1, p0, Lcom/amap/api/location/CoordinateConverter;->c:Lcom/amap/api/location/CoordinateConverter$CoordType;
@@ -165,7 +150,6 @@
 
     goto :goto_0
 
-    .line 8
     :pswitch_0
     iget-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->b:Landroid/content/Context;
 
@@ -179,7 +163,6 @@
 
     goto :goto_0
 
-    .line 9
     :pswitch_1
     iget-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->d:Lcom/amap/api/location/DPoint;
 
@@ -187,7 +170,6 @@
 
     goto :goto_0
 
-    .line 10
     :pswitch_2
     iget-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->b:Landroid/content/Context;
 
@@ -201,7 +183,6 @@
 
     goto :goto_0
 
-    .line 11
     :pswitch_3
     iget-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->d:Lcom/amap/api/location/DPoint;
 
@@ -211,7 +192,6 @@
 
     iput-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->a:Lcom/amap/api/location/DPoint;
 
-    .line 12
     :goto_0
     iget-object v0, p0, Lcom/amap/api/location/CoordinateConverter;->a:Lcom/amap/api/location/DPoint;
     :try_end_0
@@ -221,7 +201,6 @@
 
     return-object v0
 
-    .line 13
     :cond_0
     :try_start_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -232,7 +211,6 @@
 
     throw v0
 
-    .line 14
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -242,7 +220,6 @@
 
     throw v0
 
-    .line 15
     :cond_2
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -252,7 +229,6 @@
 
     throw v0
 
-    .line 16
     :cond_3
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -297,7 +273,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
@@ -309,7 +284,6 @@
 
     if-gtz v4, :cond_1
 
-    .line 2
     invoke-virtual {p1}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
     move-result-wide v0
@@ -320,7 +294,6 @@
 
     if-ltz v4, :cond_1
 
-    .line 3
     invoke-virtual {p1}, Lcom/amap/api/location/DPoint;->getLatitude()D
 
     move-result-wide v0
@@ -331,7 +304,6 @@
 
     if-gtz v4, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Lcom/amap/api/location/DPoint;->getLatitude()D
 
     move-result-wide v0
@@ -342,17 +314,14 @@
 
     if-ltz v4, :cond_0
 
-    .line 5
     iput-object p1, p0, Lcom/amap/api/location/CoordinateConverter;->d:Lcom/amap/api/location/DPoint;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     monitor-exit p0
 
     return-object p0
 
-    .line 7
     :cond_0
     :try_start_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
@@ -363,7 +332,6 @@
 
     throw p1
 
-    .line 8
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -378,7 +346,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -401,13 +368,11 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iput-object p1, p0, Lcom/amap/api/location/CoordinateConverter;->c:Lcom/amap/api/location/CoordinateConverter$CoordType;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     monitor-exit p0
 
     return-object p0

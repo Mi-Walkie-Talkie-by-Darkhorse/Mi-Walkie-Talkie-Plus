@@ -1,6 +1,5 @@
 .class synthetic Lcom/xiaomi/account/http/Request$1;
 .super Ljava/lang/Object;
-.source "Request.java"
 
 
 # annotations

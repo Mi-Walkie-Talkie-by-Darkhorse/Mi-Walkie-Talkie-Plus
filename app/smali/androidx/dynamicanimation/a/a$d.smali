@@ -1,6 +1,5 @@
 .class Landroidx/dynamicanimation/a/a$d;
 .super Landroidx/dynamicanimation/a/a$c;
-.source "AnimationHandler.java"
 
 
 # annotations
@@ -26,22 +25,18 @@
 .method constructor <init>(Landroidx/dynamicanimation/a/a$a;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/dynamicanimation/a/a$c;-><init>(Landroidx/dynamicanimation/a/a$a;)V
 
     const-wide/16 v0, -0x1
 
-    .line 2
     iput-wide v0, p0, Landroidx/dynamicanimation/a/a$d;->d:J
 
-    .line 3
     new-instance p1, Landroidx/dynamicanimation/a/a$d$a;
 
     invoke-direct {p1, p0}, Landroidx/dynamicanimation/a/a$d$a;-><init>(Landroidx/dynamicanimation/a/a$d;)V
 
     iput-object p1, p0, Landroidx/dynamicanimation/a/a$d;->b:Ljava/lang/Runnable;
 
-    .line 4
     new-instance p1, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
@@ -60,7 +55,6 @@
 .method a()V
     .locals 4
 
-    .line 1
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
@@ -75,12 +69,10 @@
 
     const-wide/16 v0, 0x0
 
-    .line 2
     invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->max(JJ)J
 
     move-result-wide v0
 
-    .line 3
     iget-object v2, p0, Landroidx/dynamicanimation/a/a$d;->c:Landroid/os/Handler;
 
     iget-object v3, p0, Landroidx/dynamicanimation/a/a$d;->b:Ljava/lang/Runnable;

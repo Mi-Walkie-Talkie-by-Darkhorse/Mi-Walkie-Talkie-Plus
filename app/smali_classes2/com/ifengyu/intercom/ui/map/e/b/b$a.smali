@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/e/b/b$a;
 .super Ljava/lang/Object;
-.source "OsmClusterOverlayManager.java"
 
 # interfaces
 .implements Lorg/osmdroid/views/overlay/ItemizedIconOverlay$OnItemGestureListener;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/e/b/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$a;->a:Lcom/ifengyu/intercom/ui/map/e/b/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -55,26 +53,22 @@
 .method public b(ILcom/ifengyu/intercom/ui/map/f/a/f;)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/map/f/a/f;->a()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 2
     instance-of v0, p1, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/MiTalkiApp;->b(Z)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$a;->a:Lcom/ifengyu/intercom/ui/map/e/b/b;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/ui/map/e/b/b;)Lorg/osmdroid/views/MapView;
@@ -91,10 +85,8 @@
 
     invoke-interface {v0, p2}, Lorg/osmdroid/api/IMapController;->animateTo(Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 5
     check-cast p1, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
-    .line 6
     new-instance p2, Lcom/ifengyu/intercom/ui/widget/dialog/s;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$a;->a:Lcom/ifengyu/intercom/ui/map/e/b/b;
@@ -107,32 +99,27 @@
 
     invoke-direct {p2, v0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/s;-><init>(Landroid/app/Activity;Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
-    .line 7
     invoke-virtual {p2}, Landroid/app/Dialog;->show()V
 
     goto :goto_0
 
-    .line 8
     :cond_0
     instance-of p2, p1, Lcom/ifengyu/intercom/ui/map/e/b/a;
 
     if-eqz p2, :cond_1
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p2
 
     invoke-virtual {p2, v1}, Lcom/ifengyu/intercom/MiTalkiApp;->b(Z)V
 
-    .line 10
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$a;->a:Lcom/ifengyu/intercom/ui/map/e/b/b;
 
     check-cast p1, Lcom/ifengyu/intercom/ui/map/e/b/a;
 
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/ui/map/e/b/b;Lcom/ifengyu/intercom/ui/map/e/b/a;)Lcom/ifengyu/intercom/ui/map/e/b/a;
 
-    .line 11
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$a;->a:Lcom/ifengyu/intercom/ui/map/e/b/b;
 
     new-instance p2, Ljava/util/ArrayList;
@@ -141,7 +128,6 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/ui/map/e/b/b;Ljava/util/ArrayList;)Ljava/util/ArrayList;
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$a;->a:Lcom/ifengyu/intercom/ui/map/e/b/b;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->d(Lcom/ifengyu/intercom/ui/map/e/b/b;)Ljava/util/ArrayList;
@@ -160,7 +146,6 @@
 
     invoke-virtual {p1, p2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$a;->a:Lcom/ifengyu/intercom/ui/map/e/b/b;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a(Lcom/ifengyu/intercom/ui/map/e/b/b;)Lorg/osmdroid/views/MapView;
@@ -183,7 +168,6 @@
 
     invoke-interface {p1, p2}, Lorg/osmdroid/api/IMapController;->animateTo(Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 14
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->a()Landroid/os/Handler;
 
     move-result-object p1
@@ -206,7 +190,6 @@
 .method public bridge synthetic onItemLongPress(ILjava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/ifengyu/intercom/ui/map/f/a/f;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/map/e/b/b$a;->a(ILcom/ifengyu/intercom/ui/map/f/a/f;)Z
@@ -219,7 +202,6 @@
 .method public bridge synthetic onItemSingleTapUp(ILjava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/ifengyu/intercom/ui/map/f/a/f;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/map/e/b/b$a;->b(ILcom/ifengyu/intercom/ui/map/f/a/f;)Z

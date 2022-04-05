@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/greenrobot/greendao/async/AsyncOperationListener;
 .super Ljava/lang/Object;
-.source "AsyncOperationListener.java"
 
 
 # virtual methods

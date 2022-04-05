@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b$a;
 .super Ljava/lang/Object;
-.source "MyFeedBackActivity.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b$a;->b:Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b;
 
     iput p2, p0, Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b$a;->a:I
@@ -42,10 +40,8 @@
 .method public a(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b$a;->b:Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity;

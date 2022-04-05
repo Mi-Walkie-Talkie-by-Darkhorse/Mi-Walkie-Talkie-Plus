@@ -1,6 +1,5 @@
 .class public abstract Lokio/ForwardingSource;
 .super Ljava/lang/Object;
-.source "ForwardingSource.java"
 
 # interfaces
 .implements Lokio/Source;
@@ -14,17 +13,14 @@
 .method public constructor <init>(Lokio/Source;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-eqz p1, :cond_0
 
-    .line 2
     iput-object p1, p0, Lokio/ForwardingSource;->delegate:Lokio/Source;
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -45,7 +41,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingSource;->delegate:Lokio/Source;
 
     invoke-interface {v0}, Lokio/Source;->close()V
@@ -56,7 +51,6 @@
 .method public final delegate()Lokio/Source;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingSource;->delegate:Lokio/Source;
 
     return-object v0
@@ -70,7 +64,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingSource;->delegate:Lokio/Source;
 
     invoke-interface {v0, p1, p2, p3}, Lokio/Source;->read(Lokio/Buffer;J)J
@@ -83,7 +76,6 @@
 .method public timeout()Lokio/Timeout;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokio/ForwardingSource;->delegate:Lokio/Source;
 
     invoke-interface {v0}, Lokio/Source;->timeout()Lokio/Timeout;
@@ -96,7 +88,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

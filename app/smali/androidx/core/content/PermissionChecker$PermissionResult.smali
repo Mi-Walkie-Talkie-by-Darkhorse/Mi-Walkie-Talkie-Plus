@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/content/PermissionChecker$PermissionResult;
 .super Ljava/lang/Object;
-.source "PermissionChecker.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

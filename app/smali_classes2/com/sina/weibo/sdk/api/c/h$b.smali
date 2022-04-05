@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/api/c/h$b;
 .super Ljava/lang/Object;
-.source "WeiboDownloader.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -25,10 +24,8 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/api/c/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/api/c/h$b;->a:Lcom/sina/weibo/sdk/api/c/c;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,12 +36,10 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/sina/weibo/sdk/api/c/h$b;->a:Lcom/sina/weibo/sdk/api/c/c;
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-interface {p1}, Lcom/sina/weibo/sdk/api/c/c;->onCancel()V
 
     :cond_0

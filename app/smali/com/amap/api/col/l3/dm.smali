@@ -1,6 +1,5 @@
 .class public final enum Lcom/amap/api/col/l3/dm;
 .super Ljava/lang/Enum;
-.source "StyleElementType.java"
 
 
 # annotations
@@ -51,7 +50,6 @@
 .method static constructor <clinit>()V
     .locals 15
 
-    .line 1
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/4 v1, 0x0
@@ -64,7 +62,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dm;->a:Lcom/amap/api/col/l3/dm;
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/4 v2, 0x1
@@ -77,7 +74,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dm;->b:Lcom/amap/api/col/l3/dm;
 
-    .line 3
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/4 v3, 0x2
@@ -90,7 +86,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dm;->c:Lcom/amap/api/col/l3/dm;
 
-    .line 4
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/4 v4, 0x3
@@ -103,7 +98,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dm;->d:Lcom/amap/api/col/l3/dm;
 
-    .line 5
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/4 v5, 0x4
@@ -116,7 +110,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dm;->e:Lcom/amap/api/col/l3/dm;
 
-    .line 6
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/4 v6, 0x5
@@ -129,7 +122,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dm;->f:Lcom/amap/api/col/l3/dm;
 
-    .line 7
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/4 v7, 0x6
@@ -142,7 +134,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dm;->g:Lcom/amap/api/col/l3/dm;
 
-    .line 8
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/4 v8, 0x7
@@ -155,7 +146,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dm;->h:Lcom/amap/api/col/l3/dm;
 
-    .line 9
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/16 v9, 0x8
@@ -168,7 +158,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dm;->i:Lcom/amap/api/col/l3/dm;
 
-    .line 10
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/16 v10, 0x9
@@ -181,7 +170,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dm;->j:Lcom/amap/api/col/l3/dm;
 
-    .line 11
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/16 v11, 0xa
@@ -194,7 +182,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dm;->k:Lcom/amap/api/col/l3/dm;
 
-    .line 12
     new-instance v0, Lcom/amap/api/col/l3/dm;
 
     const/16 v12, 0xb
@@ -211,7 +198,6 @@
 
     new-array v13, v13, [Lcom/amap/api/col/l3/dm;
 
-    .line 13
     sget-object v14, Lcom/amap/api/col/l3/dm;->a:Lcom/amap/api/col/l3/dm;
 
     aput-object v14, v13, v1
@@ -273,13 +259,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/amap/api/col/l3/dm;->m:Ljava/lang/String;
 
-    .line 3
     iput p4, p0, Lcom/amap/api/col/l3/dm;->n:I
 
     return-void
@@ -288,7 +271,6 @@
 .method public static a(Ljava/lang/String;)I
     .locals 5
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/dm;->values()[Lcom/amap/api/col/l3/dm;
 
     move-result-object v0
@@ -302,7 +284,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     iget-object v4, v3, Lcom/amap/api/col/l3/dm;->m:Ljava/lang/String;
 
     invoke-virtual {v4, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -311,7 +292,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 3
     iget p0, v3, Lcom/amap/api/col/l3/dm;->n:I
 
     return p0
@@ -330,7 +310,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/amap/api/col/l3/dm;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/amap/api/col/l3/dm;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -345,7 +324,6 @@
 .method public static values()[Lcom/amap/api/col/l3/dm;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/dm;->o:[Lcom/amap/api/col/l3/dm;
 
     invoke-virtual {v0}, [Lcom/amap/api/col/l3/dm;->clone()Ljava/lang/Object;

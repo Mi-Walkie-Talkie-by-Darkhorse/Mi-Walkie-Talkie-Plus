@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/t;
 .super Landroid/view/TextureView;
-.source "GLTextureView.java"
 
 # interfaces
 .implements Landroid/view/TextureView$SurfaceTextureListener;
@@ -72,7 +71,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/amap/api/col/l3/t$j;
 
     const/4 v1, 0x0
@@ -89,17 +87,14 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Landroid/view/TextureView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 2
     new-instance p1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p1, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object p1, p0, Lcom/amap/api/col/l3/t;->b:Ljava/lang/ref/WeakReference;
 
-    .line 3
     invoke-virtual {p0, p0}, Landroid/view/TextureView;->setSurfaceTextureListener(Landroid/view/TextureView$SurfaceTextureListener;)V
 
     return-void
@@ -108,7 +103,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/t;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/amap/api/col/l3/t;->k:I
 
     return p0
@@ -117,14 +111,12 @@
 .method private a()V
     .locals 2
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 7
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -138,7 +130,6 @@
 .method static synthetic b(Lcom/amap/api/col/l3/t;)Lcom/amap/api/col/l3/t$e;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/t;->f:Lcom/amap/api/col/l3/t$e;
 
     return-object p0
@@ -147,7 +138,6 @@
 .method static synthetic c(Lcom/amap/api/col/l3/t;)Lcom/amap/api/col/l3/t$f;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/t;->g:Lcom/amap/api/col/l3/t$f;
 
     return-object p0
@@ -156,7 +146,6 @@
 .method static synthetic d(Lcom/amap/api/col/l3/t;)Lcom/amap/api/col/l3/t$g;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/t;->h:Lcom/amap/api/col/l3/t$g;
 
     return-object p0
@@ -165,7 +154,6 @@
 .method static synthetic d()Lcom/amap/api/col/l3/t$j;
     .locals 1
 
-    .line 2
     sget-object v0, Lcom/amap/api/col/l3/t;->a:Lcom/amap/api/col/l3/t$j;
 
     return-object v0
@@ -174,7 +162,6 @@
 .method static synthetic e(Lcom/amap/api/col/l3/t;)Lcom/amap/api/col/l3/t$k;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/t;->i:Lcom/amap/api/col/l3/t$k;
 
     return-object p0
@@ -183,7 +170,6 @@
 .method static synthetic f(Lcom/amap/api/col/l3/t;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/amap/api/col/l3/t;->j:I
 
     return p0
@@ -192,7 +178,6 @@
 .method static synthetic g(Lcom/amap/api/col/l3/t;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/amap/api/col/l3/t;->l:Z
 
     return p0
@@ -201,7 +186,6 @@
 .method static synthetic h(Lcom/amap/api/col/l3/t;)Landroid/opengl/GLSurfaceView$Renderer;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/t;->d:Landroid/opengl/GLSurfaceView$Renderer;
 
     return-object p0
@@ -212,10 +196,8 @@
 .method public final a(Lcom/amap/api/col/l3/t$e;)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Lcom/amap/api/col/l3/t;->a()V
 
-    .line 5
     iput-object p1, p0, Lcom/amap/api/col/l3/t;->f:Lcom/amap/api/col/l3/t$e;
 
     return-void
@@ -224,10 +206,8 @@
 .method public final a(Lcom/amap/api/col/l3/t$f;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/amap/api/col/l3/t;->a()V
 
-    .line 3
     iput-object p1, p0, Lcom/amap/api/col/l3/t;->g:Lcom/amap/api/col/l3/t$f;
 
     return-void
@@ -236,7 +216,6 @@
 .method public b()V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$i;->e()V
@@ -247,7 +226,6 @@
 .method public c()V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$i;->f()V
@@ -263,20 +241,17 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$i;->g()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     :cond_0
     invoke-super {p0}, Ljava/lang/Object;->finalize()V
 
@@ -287,14 +262,12 @@
 
     invoke-super {p0}, Ljava/lang/Object;->finalize()V
 
-    .line 4
     throw v0
 .end method
 
 .method public getRenderMode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$i;->a()I
@@ -307,10 +280,8 @@
 .method protected onAttachedToWindow()V
     .locals 4
 
-    .line 1
     invoke-super {p0}, Landroid/view/TextureView;->onAttachedToWindow()V
 
-    .line 2
     iget-boolean v0, p0, Lcom/amap/api/col/l3/t;->e:Z
 
     if-eqz v0, :cond_2
@@ -319,14 +290,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$i;->a()I
 
     move-result v0
@@ -336,7 +305,6 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 5
     :goto_0
     new-instance v2, Lcom/amap/api/col/l3/t$i;
 
@@ -348,10 +316,8 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 6
     invoke-virtual {v2, v0}, Lcom/amap/api/col/l3/t$i;->a(I)V
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
@@ -360,7 +326,6 @@
     :cond_2
     const/4 v0, 0x0
 
-    .line 8
     iput-boolean v0, p0, Lcom/amap/api/col/l3/t;->e:Z
 
     return-void
@@ -369,21 +334,17 @@
 .method protected onDetachedFromWindow()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$i;->g()V
 
     :cond_0
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Lcom/amap/api/col/l3/t;->e:Z
 
-    .line 4
     invoke-super {p0}, Landroid/view/TextureView;->onDetachedFromWindow()V
 
     return-void
@@ -392,7 +353,6 @@
 .method protected onLayout(ZIIII)V
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/TextureView;->getSurfaceTexture()Landroid/graphics/SurfaceTexture;
 
     move-result-object v0
@@ -403,7 +363,6 @@
 
     invoke-virtual {p0, v0, v1, v2}, Lcom/amap/api/col/l3/t;->onSurfaceTextureSizeChanged(Landroid/graphics/SurfaceTexture;II)V
 
-    .line 2
     invoke-super/range {p0 .. p5}, Landroid/view/TextureView;->onLayout(ZIIII)V
 
     return-void
@@ -412,12 +371,10 @@
 .method public onSurfaceTextureAvailable(Landroid/graphics/SurfaceTexture;II)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$i;->c()V
 
-    .line 2
     invoke-virtual {p0, p1, p2, p3}, Lcom/amap/api/col/l3/t;->onSurfaceTextureSizeChanged(Landroid/graphics/SurfaceTexture;II)V
 
     return-void
@@ -426,7 +383,6 @@
 .method public onSurfaceTextureDestroyed(Landroid/graphics/SurfaceTexture;)Z
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     invoke-virtual {p1}, Lcom/amap/api/col/l3/t$i;->d()V
@@ -439,7 +395,6 @@
 .method public onSurfaceTextureSizeChanged(Landroid/graphics/SurfaceTexture;II)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     invoke-virtual {p1, p2, p3}, Lcom/amap/api/col/l3/t$i;->a(II)V
@@ -456,7 +411,6 @@
 .method public queueEvent(Ljava/lang/Runnable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/t$i;->a(Ljava/lang/Runnable;)V
@@ -467,7 +421,6 @@
 .method public requestRender()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/t$i;->b()V
@@ -478,7 +431,6 @@
 .method public setRenderMode(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/t$i;->a(I)V
@@ -489,22 +441,18 @@
 .method public setRenderer(Landroid/opengl/GLSurfaceView$Renderer;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/t;->a()V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->f:Lcom/amap/api/col/l3/t$e;
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Lcom/amap/api/col/l3/t$m;
 
     invoke-direct {v0, p0}, Lcom/amap/api/col/l3/t$m;-><init>(Lcom/amap/api/col/l3/t;)V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/t;->f:Lcom/amap/api/col/l3/t$e;
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->g:Lcom/amap/api/col/l3/t$f;
 
@@ -512,31 +460,26 @@
 
     if-nez v0, :cond_1
 
-    .line 5
     new-instance v0, Lcom/amap/api/col/l3/t$c;
 
     invoke-direct {v0, p0, v1}, Lcom/amap/api/col/l3/t$c;-><init>(Lcom/amap/api/col/l3/t;B)V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/t;->g:Lcom/amap/api/col/l3/t$f;
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->h:Lcom/amap/api/col/l3/t$g;
 
     if-nez v0, :cond_2
 
-    .line 7
     new-instance v0, Lcom/amap/api/col/l3/t$d;
 
     invoke-direct {v0, v1}, Lcom/amap/api/col/l3/t$d;-><init>(B)V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/t;->h:Lcom/amap/api/col/l3/t$g;
 
-    .line 8
     :cond_2
     iput-object p1, p0, Lcom/amap/api/col/l3/t;->d:Landroid/opengl/GLSurfaceView$Renderer;
 
-    .line 9
     new-instance p1, Lcom/amap/api/col/l3/t$i;
 
     iget-object v0, p0, Lcom/amap/api/col/l3/t;->b:Ljava/lang/ref/WeakReference;
@@ -545,7 +488,6 @@
 
     iput-object p1, p0, Lcom/amap/api/col/l3/t;->c:Lcom/amap/api/col/l3/t$i;
 
-    .line 10
     invoke-virtual {p1}, Ljava/lang/Thread;->start()V
 
     return-void

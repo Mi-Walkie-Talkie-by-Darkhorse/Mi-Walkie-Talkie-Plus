@@ -1,6 +1,5 @@
 .class final La/h/b;
 .super Ljava/lang/Object;
-.source "TraceApi18Impl.java"
 
 
 # annotations
@@ -13,7 +12,6 @@
 .method public static a()V
     .locals 0
 
-    .line 2
     invoke-static {}, Landroid/os/Trace;->endSection()V
 
     return-void
@@ -26,7 +24,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0}, Landroid/os/Trace;->beginSection(Ljava/lang/String;)V
 
     return-void

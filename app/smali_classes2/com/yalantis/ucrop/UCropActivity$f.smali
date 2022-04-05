@@ -1,6 +1,5 @@
 .class Lcom/yalantis/ucrop/UCropActivity$f;
 .super Ljava/lang/Object;
-.source "UCropActivity.java"
 
 # interfaces
 .implements Lcom/yalantis/ucrop/view/widget/HorizontalProgressWheelView$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/yalantis/ucrop/UCropActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/UCropActivity$f;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$f;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/UCropActivity;->c(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
@@ -53,7 +50,6 @@
 .method public b()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$f;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/UCropActivity;->c(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
@@ -76,7 +72,6 @@
 
     if-lez v0, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$f;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/UCropActivity;->c(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
@@ -95,7 +90,6 @@
 
     iget-object v2, p0, Lcom/yalantis/ucrop/UCropActivity$f;->a:Lcom/yalantis/ucrop/UCropActivity;
 
-    .line 2
     invoke-static {v2}, Lcom/yalantis/ucrop/UCropActivity;->c(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
 
     move-result-object v2
@@ -122,12 +116,10 @@
 
     add-float/2addr v1, p1
 
-    .line 3
     invoke-virtual {v0, v1}, Lcom/yalantis/ucrop/view/CropImageView;->b(F)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$f;->a:Lcom/yalantis/ucrop/UCropActivity;
 
@@ -147,7 +139,6 @@
 
     iget-object v2, p0, Lcom/yalantis/ucrop/UCropActivity$f;->a:Lcom/yalantis/ucrop/UCropActivity;
 
-    .line 5
     invoke-static {v2}, Lcom/yalantis/ucrop/UCropActivity;->c(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
 
     move-result-object v2
@@ -174,7 +165,6 @@
 
     add-float/2addr v1, p1
 
-    .line 6
     invoke-virtual {v0, v1}, Lcom/yalantis/ucrop/view/CropImageView;->c(F)V
 
     :goto_0

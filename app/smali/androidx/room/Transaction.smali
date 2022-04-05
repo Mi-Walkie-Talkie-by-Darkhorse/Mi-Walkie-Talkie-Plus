@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Transaction;
 .super Ljava/lang/Object;
-.source "Transaction.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

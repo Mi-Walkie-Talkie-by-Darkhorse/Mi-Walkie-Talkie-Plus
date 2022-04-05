@@ -1,6 +1,5 @@
 .class Landroidx/viewpager2/widget/ViewPager2$b;
 .super Landroidx/viewpager2/widget/ViewPager2$i;
-.source "ViewPager2.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/viewpager2/widget/ViewPager2;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$b;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-direct {p0}, Landroidx/viewpager2/widget/ViewPager2$i;-><init>()V
@@ -37,7 +35,6 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     iget-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$b;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-virtual {p1}, Landroidx/viewpager2/widget/ViewPager2;->e()V
@@ -49,17 +46,14 @@
 .method public onPageSelected(I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$b;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     iget v1, v0, Landroidx/viewpager2/widget/ViewPager2;->d:I
 
     if-eq v1, p1, :cond_0
 
-    .line 2
     iput p1, v0, Landroidx/viewpager2/widget/ViewPager2;->d:I
 
-    .line 3
     iget-object p1, v0, Landroidx/viewpager2/widget/ViewPager2;->t:Landroidx/viewpager2/widget/ViewPager2$e;
 
     invoke-virtual {p1}, Landroidx/viewpager2/widget/ViewPager2$e;->g()V

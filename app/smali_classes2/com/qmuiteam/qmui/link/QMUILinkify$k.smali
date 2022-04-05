@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/link/QMUILinkify$k;
 .super Ljava/lang/Object;
-.source "QMUILinkify.java"
 
 
 # annotations
@@ -1558,20 +1557,16 @@
 
     aput-object v3, v0, v1
 
-    .line 1
     sput-object v0, Lcom/qmuiteam/qmui/link/QMUILinkify$k;->a:[Ljava/lang/String;
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v1, "("
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4
     :goto_0
     sget-object v1, Lcom/qmuiteam/qmui/link/QMUILinkify$k;->a:[Ljava/lang/String;
 
@@ -1583,10 +1578,8 @@
 
     const-string v1, "|"
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6
     :cond_0
     sget-object v1, Lcom/qmuiteam/qmui/link/QMUILinkify$k;->a:[Ljava/lang/String;
 
@@ -1601,10 +1594,8 @@
     :cond_1
     const-string v1, ")"
 
-    .line 7
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1625,7 +1616,6 @@
 
     move-result-object v0
 
-    .line 9
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1672,7 +1662,6 @@
 .method static synthetic a()Ljava/util/regex/Pattern;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/link/QMUILinkify$k;->b:Ljava/util/regex/Pattern;
 
     return-object v0

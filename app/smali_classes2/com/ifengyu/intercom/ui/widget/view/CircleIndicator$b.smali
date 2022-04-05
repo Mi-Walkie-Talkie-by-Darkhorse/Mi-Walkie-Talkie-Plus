@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$b;
 .super Landroid/database/DataSetObserver;
-.source "CircleIndicator.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$b;->a:Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -35,10 +33,8 @@
 .method public onChanged()V
     .locals 2
 
-    .line 1
     invoke-super {p0}, Landroid/database/DataSetObserver;->onChanged()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$b;->a:Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;->a(Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;)Landroidx/viewpager/widget/ViewPager;
@@ -49,7 +45,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$b;->a:Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;
 
@@ -65,7 +60,6 @@
 
     move-result v0
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$b;->a:Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;
 
     invoke-virtual {v1}, Landroid/widget/LinearLayout;->getChildCount()I
@@ -76,7 +70,6 @@
 
     return-void
 
-    .line 5
     :cond_1
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$b;->a:Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;
 
@@ -86,7 +79,6 @@
 
     if-ge v1, v0, :cond_2
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$b;->a:Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;->a(Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;)Landroidx/viewpager/widget/ViewPager;
@@ -101,7 +93,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$b;->a:Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;
 
@@ -109,7 +100,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;->a(Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;I)I
 
-    .line 8
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator$b;->a:Lcom/ifengyu/intercom/ui/widget/view/CircleIndicator;
 

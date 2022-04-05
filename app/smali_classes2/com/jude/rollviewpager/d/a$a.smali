@@ -1,6 +1,5 @@
 .class synthetic Lcom/jude/rollviewpager/d/a$a;
 .super Ljava/lang/Object;
-.source "LoopPagerAdapter.java"
 
 
 # annotations

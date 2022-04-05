@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/lite/f/e;
 .super Ljava/lang/Object;
-.source "DeviceDao.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/result/ApplySecretResult;
 .super Ljava/lang/Object;
-.source "ApplySecretResult.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,13 +25,10 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/result/ApplySecretResult;->key:Ljava/lang/String;
 
-    .line 4
     iput-object p2, p0, Lcom/xiaomi/infra/galaxy/fds/result/ApplySecretResult;->secret:Ljava/lang/String;
 
     return-void
@@ -44,7 +39,6 @@
 .method public getKey()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/result/ApplySecretResult;->key:Ljava/lang/String;
 
     return-object v0
@@ -53,7 +47,6 @@
 .method public getSecret()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/result/ApplySecretResult;->secret:Ljava/lang/String;
 
     return-object v0
@@ -62,7 +55,6 @@
 .method public setKey(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/result/ApplySecretResult;->key:Ljava/lang/String;
 
     return-void
@@ -71,7 +63,6 @@
 .method public setSecret(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/result/ApplySecretResult;->secret:Ljava/lang/String;
 
     return-void

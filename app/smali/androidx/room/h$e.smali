@@ -1,6 +1,5 @@
 .class Landroidx/room/h$e;
 .super Ljava/lang/Object;
-.source "MultiInstanceInvalidationClient.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/room/h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/room/h$e;->a:Landroidx/room/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/room/h$e;->a:Landroidx/room/h;
 
     iget-object v1, v0, Landroidx/room/h;->d:Landroidx/room/g;
@@ -47,7 +44,6 @@
 
     invoke-virtual {v1, v0}, Landroidx/room/g;->b(Landroidx/room/g$c;)V
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Landroidx/room/h$e;->a:Landroidx/room/h;
 
@@ -55,7 +51,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v1, p0, Landroidx/room/h$e;->a:Landroidx/room/h;
 
     iget-object v1, v1, Landroidx/room/h;->h:Landroidx/room/d;
@@ -77,10 +72,8 @@
 
     const-string v2, "Cannot unregister multi-instance invalidation callback"
 
-    .line 4
     invoke-static {v1, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 5
     :cond_0
     :goto_0
     iget-object v0, p0, Landroidx/room/h$e;->a:Landroidx/room/h;

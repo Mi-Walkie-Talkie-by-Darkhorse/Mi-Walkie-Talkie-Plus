@@ -1,6 +1,5 @@
 .class public Landroidx/room/r/b;
 .super Ljava/lang/Object;
-.source "CursorUtil.java"
 
 
 # annotations
@@ -23,7 +22,6 @@
         .end annotation
     .end param
 
-    .line 15
     invoke-interface {p0, p1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v0
@@ -32,7 +30,6 @@
 
     return v0
 
-    .line 16
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -66,7 +63,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     :try_start_0
     new-instance v0, Landroid/database/MatrixCursor;
 
@@ -80,7 +76,6 @@
 
     invoke-direct {v0, v1, v2}, Landroid/database/MatrixCursor;-><init>([Ljava/lang/String;I)V
 
-    .line 2
     :goto_0
     invoke-interface {p0}, Landroid/database/Cursor;->moveToNext()Z
 
@@ -88,7 +83,6 @@
 
     if-eqz v1, :cond_6
 
-    .line 3
     invoke-interface {p0}, Landroid/database/Cursor;->getColumnCount()I
 
     move-result v1
@@ -97,7 +91,6 @@
 
     const/4 v2, 0x0
 
-    .line 4
     :goto_1
     invoke-interface {p0}, Landroid/database/Cursor;->getColumnCount()I
 
@@ -105,7 +98,6 @@
 
     if-ge v2, v3, :cond_5
 
-    .line 5
     invoke-interface {p0, v2}, Landroid/database/Cursor;->getType(I)I
 
     move-result v3
@@ -128,7 +120,6 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 6
     invoke-interface {p0, v2}, Landroid/database/Cursor;->getBlob(I)[B
 
     move-result-object v3
@@ -137,7 +128,6 @@
 
     goto :goto_2
 
-    .line 7
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -145,7 +135,6 @@
 
     throw v0
 
-    .line 8
     :cond_1
     invoke-interface {p0, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
@@ -155,7 +144,6 @@
 
     goto :goto_2
 
-    .line 9
     :cond_2
     invoke-interface {p0, v2}, Landroid/database/Cursor;->getDouble(I)D
 
@@ -169,7 +157,6 @@
 
     goto :goto_2
 
-    .line 10
     :cond_3
     invoke-interface {p0, v2}, Landroid/database/Cursor;->getLong(I)J
 
@@ -186,7 +173,6 @@
     :cond_4
     const/4 v3, 0x0
 
-    .line 11
     aput-object v3, v1, v2
 
     :goto_2
@@ -194,7 +180,6 @@
 
     goto :goto_1
 
-    .line 12
     :cond_5
     invoke-virtual {v0, v1}, Landroid/database/MatrixCursor;->addRow([Ljava/lang/Object;)V
     :try_end_0
@@ -202,7 +187,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_6
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
 
@@ -213,6 +197,5 @@
 
     invoke-interface {p0}, Landroid/database/Cursor;->close()V
 
-    .line 14
     throw v0
 .end method

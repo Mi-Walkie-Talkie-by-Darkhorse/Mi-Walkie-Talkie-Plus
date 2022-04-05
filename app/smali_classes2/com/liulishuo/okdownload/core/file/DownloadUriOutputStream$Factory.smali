@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream$Factory;
 .super Ljava/lang/Object;
-.source "DownloadUriOutputStream.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/file/DownloadOutputStream$Factory;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;
 
     invoke-direct {v0, p1, p2, p3}, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;-><init>(Landroid/content/Context;Landroid/net/Uri;I)V
@@ -53,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream;
 
     invoke-static {p2}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;

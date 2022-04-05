@@ -1,6 +1,5 @@
 .class final Lcom/google/common/cache/LocalCache$WeakAccessEntry;
 .super Lcom/google/common/cache/LocalCache$WeakEntry;
-.source "LocalCache.java"
 
 
 # annotations
@@ -65,22 +64,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/common/cache/LocalCache$WeakEntry;-><init>(Ljava/lang/ref/ReferenceQueue;Ljava/lang/Object;ILcom/google/common/cache/LocalCache$ReferenceEntry;)V
 
     const-wide p1, 0x7fffffffffffffffL
 
-    .line 2
     iput-wide p1, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->accessTime:J
 
-    .line 3
     invoke-static {}, Lcom/google/common/cache/LocalCache;->nullEntry()Lcom/google/common/cache/LocalCache$ReferenceEntry;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->nextAccess:Lcom/google/common/cache/LocalCache$ReferenceEntry;
 
-    .line 4
     invoke-static {}, Lcom/google/common/cache/LocalCache;->nullEntry()Lcom/google/common/cache/LocalCache$ReferenceEntry;
 
     move-result-object p1
@@ -95,7 +90,6 @@
 .method public getAccessTime()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->accessTime:J
 
     return-wide v0
@@ -111,7 +105,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->nextAccess:Lcom/google/common/cache/LocalCache$ReferenceEntry;
 
     return-object v0
@@ -127,7 +120,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->previousAccess:Lcom/google/common/cache/LocalCache$ReferenceEntry;
 
     return-object v0
@@ -136,7 +128,6 @@
 .method public setAccessTime(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->accessTime:J
 
     return-void
@@ -152,7 +143,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->nextAccess:Lcom/google/common/cache/LocalCache$ReferenceEntry;
 
     return-void
@@ -168,7 +158,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$WeakAccessEntry;->previousAccess:Lcom/google/common/cache/LocalCache$ReferenceEntry;
 
     return-void

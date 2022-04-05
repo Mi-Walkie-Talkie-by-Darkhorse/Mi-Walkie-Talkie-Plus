@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Range$1;
 .super Ljava/lang/Object;
-.source "Range.java"
 
 # interfaces
 .implements Lcom/google/common/base/Function;
@@ -31,7 +30,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,7 +40,6 @@
 .method public apply(Lcom/google/common/collect/Range;)Lcom/google/common/collect/Cut;
     .locals 0
 
-    .line 2
     iget-object p1, p1, Lcom/google/common/collect/Range;->lowerBound:Lcom/google/common/collect/Cut;
 
     return-object p1
@@ -51,7 +48,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/common/collect/Range;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Range$1;->apply(Lcom/google/common/collect/Range;)Lcom/google/common/collect/Cut;

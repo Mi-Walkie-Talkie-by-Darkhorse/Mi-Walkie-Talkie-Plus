@@ -1,13 +1,11 @@
 .class public final Lokhttp3/internal/http/RequestLine;
 .super Ljava/lang/Object;
-.source "RequestLine.java"
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -16,12 +14,10 @@
 .method public static get(Lokhttp3/Request;Ljava/net/Proxy$Type;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Lokhttp3/Request;->method()Ljava/lang/String;
 
     move-result-object v1
@@ -30,17 +26,14 @@
 
     const/16 v1, 0x20
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 4
     invoke-static {p0, p1}, Lokhttp3/internal/http/RequestLine;->includeAuthorityInRequestLine(Lokhttp3/Request;Ljava/net/Proxy$Type;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 5
     invoke-virtual {p0}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
 
     move-result-object p0
@@ -49,7 +42,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-virtual {p0}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
 
@@ -64,10 +56,8 @@
     :goto_0
     const-string p0, " HTTP/1.1"
 
-    .line 7
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -78,7 +68,6 @@
 .method private static includeAuthorityInRequestLine(Lokhttp3/Request;Ljava/net/Proxy$Type;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lokhttp3/Request;->isHttps()Z
 
     move-result p0
@@ -103,19 +92,16 @@
 .method public static requestPath(Lokhttp3/HttpUrl;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lokhttp3/HttpUrl;->encodedPath()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Lokhttp3/HttpUrl;->encodedQuery()Ljava/lang/String;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V

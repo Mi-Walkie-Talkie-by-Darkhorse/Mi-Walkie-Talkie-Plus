@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/maps/AMap$ImageInfoWindowAdapter;
 .super Ljava/lang/Object;
-.source "AMap.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/AMap$InfoWindowAdapter;

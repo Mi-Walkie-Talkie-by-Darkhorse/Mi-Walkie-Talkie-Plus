@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/internal/util/QueueDrain;
 .super Ljava/lang/Object;
-.source "QueueDrain.java"
 
 
 # annotations

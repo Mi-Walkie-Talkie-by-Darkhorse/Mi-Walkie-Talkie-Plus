@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/la$a;
 .super Landroid/os/HandlerThread;
-.source "CgiManager.java"
 
 
 # annotations

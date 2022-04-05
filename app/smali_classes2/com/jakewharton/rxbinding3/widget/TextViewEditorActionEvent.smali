@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEvent;
 .super Ljava/lang/Object;
-.source "TextViewEditorActionEventObservable.kt"
 
 
 # annotations
@@ -80,7 +79,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEvent;->view:Landroid/widget/TextView;
@@ -247,7 +245,6 @@
 .method public final getActionId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEvent;->actionId:I
 
     return v0
@@ -258,7 +255,6 @@
     .annotation build Lorg/jetbrains/annotations/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEvent;->keyEvent:Landroid/view/KeyEvent;
 
     return-object v0
@@ -269,7 +265,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionEvent;->view:Landroid/widget/TextView;
 
     return-object v0

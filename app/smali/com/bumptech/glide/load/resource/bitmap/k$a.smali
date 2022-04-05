@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/resource/bitmap/k$a;
 .super Lcom/bumptech/glide/load/engine/x/f;
-.source "DrawableToBitmapConverter.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/load/engine/x/f;-><init>()V
 
     return-void

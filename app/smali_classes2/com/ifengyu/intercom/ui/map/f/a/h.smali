@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/map/f/a/h;
 .super Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
-.source "TileSource.java"
 
 
 # static fields
@@ -25,7 +24,6 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/map/MapDataProvider$MAP_TYPE;II[Ljava/lang/String;)V
     .locals 7
 
-    .line 1
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/map/f/a/h;->a(Lcom/ifengyu/intercom/ui/map/MapDataProvider$MAP_TYPE;)Ljava/lang/String;
 
     move-result-object v1
@@ -44,7 +42,6 @@
 
     invoke-direct/range {v0 .. v6}, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;-><init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;)V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/f/a/h;->a:Lcom/ifengyu/intercom/ui/map/MapDataProvider$MAP_TYPE;
 
     return-void
@@ -61,7 +58,6 @@
 .method public static a(Lcom/ifengyu/intercom/ui/map/MapDataProvider$MAP_TYPE;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/ui/map/MapDataProvider$MAP_TYPE;->a:Lcom/ifengyu/intercom/ui/map/MapDataProvider$MAP_TYPE;
 
     if-ne p0, v0, :cond_0
@@ -98,7 +94,6 @@
 .method public static a(Lcom/ifengyu/intercom/ui/map/MapDataProvider$MAP_TYPE;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/String;
     .locals 3
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/ui/map/f/a/h$a;->a:[I
 
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
@@ -127,7 +122,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -153,7 +147,6 @@
 
     return-object p0
 
-    .line 4
     :cond_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -185,7 +178,6 @@
 
     return-object p0
 
-    .line 5
     :cond_2
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -232,34 +224,29 @@
 
     const-string v0, "OsmDroid"
 
-    .line 1
     :try_start_0
     new-instance v1, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v1}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    .line 2
     invoke-static {}, Lorg/osmdroid/tileprovider/BitmapPool;->getInstance()Lorg/osmdroid/tileprovider/BitmapPool;
 
     move-result-object v2
 
     invoke-virtual {v2, v1}, Lorg/osmdroid/tileprovider/BitmapPool;->applyReusableOptions(Landroid/graphics/BitmapFactory$Options;)V
 
-    .line 3
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0xf
 
     if-ne v2, v3, :cond_0
 
-    .line 4
     invoke-static {p1}, Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-static {p1, v1}, Landroid/graphics/BitmapFactory;->decodeFile(Ljava/lang/String;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
@@ -268,7 +255,6 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 6
     new-instance v2, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;
 
     invoke-direct {v2, v1}, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;-><init>(Landroid/graphics/Bitmap;)V
@@ -281,7 +267,6 @@
     :catch_0
     move-exception v1
 
-    .line 7
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -298,7 +283,6 @@
 
     invoke-static {v0, p1, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 8
     invoke-static {}, Ljava/lang/System;->gc()V
 
     :cond_1
@@ -309,7 +293,6 @@
     :catch_1
     move-exception v1
 
-    .line 9
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -326,10 +309,8 @@
 
     invoke-static {v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     invoke-static {}, Ljava/lang/System;->gc()V
 
-    .line 11
     new-instance p1, Lorg/osmdroid/tileprovider/tilesource/BitmapTileSourceBase$LowMemoryException;
 
     invoke-direct {p1, v1}, Lorg/osmdroid/tileprovider/tilesource/BitmapTileSourceBase$LowMemoryException;-><init>(Ljava/lang/Throwable;)V
@@ -340,7 +321,6 @@
 .method public getTileURLString(Lorg/osmdroid/tileprovider/MapTile;)Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/h;->a:Lcom/ifengyu/intercom/ui/map/MapDataProvider$MAP_TYPE;
 
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getX()I

@@ -94,7 +94,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/view/RxMenuItem__MenuItemActionViewEventObservableKt;->actionViewEvents(Landroid/view/MenuItem;Lkotlin/jvm/a/b;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -113,7 +112,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/jakewharton/rxbinding3/view/RxMenuItem__MenuItemActionViewEventObservableKt;->actionViewEvents$default(Landroid/view/MenuItem;Lkotlin/jvm/a/b;ILjava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -192,7 +190,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/view/RxMenuItem__MenuItemClickObservableKt;->clicks(Landroid/view/MenuItem;Lkotlin/jvm/a/b;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -211,7 +208,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/jakewharton/rxbinding3/view/RxMenuItem__MenuItemClickObservableKt;->clicks$default(Landroid/view/MenuItem;Lkotlin/jvm/a/b;ILjava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p0

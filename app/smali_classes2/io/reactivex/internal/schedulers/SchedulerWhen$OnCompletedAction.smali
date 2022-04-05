@@ -1,6 +1,5 @@
 .class Lio/reactivex/internal/schedulers/SchedulerWhen$OnCompletedAction;
 .super Ljava/lang/Object;
-.source "SchedulerWhen.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,13 +26,10 @@
 .method constructor <init>(Ljava/lang/Runnable;Lio/reactivex/CompletableObserver;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/schedulers/SchedulerWhen$OnCompletedAction;->action:Ljava/lang/Runnable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/schedulers/SchedulerWhen$OnCompletedAction;->actionCompletable:Lio/reactivex/CompletableObserver;
 
     return-void
@@ -44,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/schedulers/SchedulerWhen$OnCompletedAction;->action:Ljava/lang/Runnable;
 
@@ -52,7 +47,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/schedulers/SchedulerWhen$OnCompletedAction;->actionCompletable:Lio/reactivex/CompletableObserver;
 
     invoke-interface {v0}, Lio/reactivex/CompletableObserver;->onComplete()V

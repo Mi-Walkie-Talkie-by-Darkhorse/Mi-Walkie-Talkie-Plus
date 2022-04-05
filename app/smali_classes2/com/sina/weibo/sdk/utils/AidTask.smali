@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/utils/AidTask;
 .super Ljava/lang/Object;
-.source "AidTask.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -36,10 +35,8 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
 
     const/4 v1, 0x1
@@ -48,14 +45,12 @@
 
     iput-object v0, p0, Lcom/sina/weibo/sdk/utils/AidTask;->d:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 3
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/sina/weibo/sdk/utils/AidTask;->a:Landroid/content/Context;
 
-    .line 4
     new-instance p1, Lcom/sina/weibo/sdk/utils/AidTask$e;
 
     iget-object v0, p0, Lcom/sina/weibo/sdk/utils/AidTask;->a:Landroid/content/Context;
@@ -66,7 +61,6 @@
 
     invoke-direct {p1, v0}, Lcom/sina/weibo/sdk/utils/AidTask$e;-><init>(Landroid/os/Looper;)V
 
-    .line 5
     new-instance p1, Ljava/lang/Thread;
 
     new-instance v0, Lcom/sina/weibo/sdk/utils/AidTask$a;
@@ -75,7 +69,6 @@
 
     invoke-direct {p1, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Thread;->start()V
 
     return-void
@@ -84,7 +77,6 @@
 .method private static a([BII)I
     .locals 1
 
-    .line 83
     array-length v0, p0
 
     if-lt p1, v0, :cond_0
@@ -93,13 +85,11 @@
 
     return p0
 
-    .line 84
     :cond_0
     array-length p0, p0
 
     sub-int/2addr p0, p1
 
-    .line 85
     invoke-static {p0, p2}, Ljava/lang/Math;->min(II)I
 
     move-result p0
@@ -110,14 +100,12 @@
 .method private a(I)Ljava/io/File;
     .locals 4
 
-    .line 7
     iget-object v0, p0, Lcom/sina/weibo/sdk/utils/AidTask;->a:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
     move-result-object v0
 
-    .line 8
     new-instance v1, Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -140,7 +128,6 @@
 .method static synthetic a(Lcom/sina/weibo/sdk/utils/AidTask;I)Ljava/io/File;
     .locals 0
 
-    .line 6
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/utils/AidTask;->a(I)Ljava/io/File;
 
     move-result-object p0
@@ -151,7 +138,6 @@
 .method private static a()Ljava/lang/String;
     .locals 1
 
-    .line 86
     :try_start_0
     sget-object v0, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
     :try_end_0
@@ -170,18 +156,15 @@
 
     const-string v0, ""
 
-    .line 10
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
-    .line 11
     :try_start_0
     invoke-static {}, Lcom/sina/weibo/sdk/utils/AidTask;->d()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 12
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -190,16 +173,13 @@
 
     const-string v3, "1"
 
-    .line 13
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 14
     :cond_0
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->e(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 15
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -208,16 +188,13 @@
 
     const-string v3, "2"
 
-    .line 16
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 17
     :cond_1
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->i(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 18
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -226,16 +203,13 @@
 
     const-string v3, "3"
 
-    .line 19
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 20
     :cond_2
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->f(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 21
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -244,16 +218,13 @@
 
     const-string v3, "4"
 
-    .line 22
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 23
     :cond_3
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->h(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 24
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -262,16 +233,13 @@
 
     const-string v3, "5"
 
-    .line 25
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 26
     :cond_4
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->d(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 27
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -280,16 +248,13 @@
 
     const-string v3, "6"
 
-    .line 28
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 29
     :cond_5
     invoke-static {}, Lcom/sina/weibo/sdk/utils/AidTask;->f()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 30
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -298,16 +263,13 @@
 
     const-string v3, "7"
 
-    .line 31
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 32
     :cond_6
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 33
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -316,16 +278,13 @@
 
     const-string v3, "10"
 
-    .line 34
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 35
     :cond_7
     invoke-static {}, Lcom/sina/weibo/sdk/utils/AidTask;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 36
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -334,16 +293,13 @@
 
     const-string v3, "13"
 
-    .line 37
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 38
     :cond_8
     invoke-static {}, Lcom/sina/weibo/sdk/utils/AidTask;->c()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 39
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -352,16 +308,13 @@
 
     const-string v3, "14"
 
-    .line 40
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 41
     :cond_9
     invoke-static {}, Lcom/sina/weibo/sdk/utils/AidTask;->e()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 42
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -370,16 +323,13 @@
 
     const-string v3, "15"
 
-    .line 43
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 44
     :cond_a
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->k(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 45
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -388,16 +338,13 @@
 
     const-string v3, "16"
 
-    .line 46
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 47
     :cond_b
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->l(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 48
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -406,16 +353,13 @@
 
     const-string v3, "17"
 
-    .line 49
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 50
     :cond_c
     invoke-static {}, Lcom/sina/weibo/sdk/utils/AidTask;->b()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 51
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -424,16 +368,13 @@
 
     const-string v3, "18"
 
-    .line 52
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 53
     :cond_d
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->c(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 54
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -442,12 +383,10 @@
 
     const-string v3, "19"
 
-    .line 55
     invoke-virtual {v1, v3, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 56
     :cond_e
     :try_start_1
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/i;->b(Landroid/content/Context;)Ljava/lang/String;
@@ -461,13 +400,11 @@
     :catch_0
     move-exception p0
 
-    .line 57
     :try_start_2
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     move-object p0, v0
 
-    .line 58
     :goto_0
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -477,10 +414,8 @@
 
     const-string v2, "20"
 
-    .line 59
     invoke-virtual {v1, v2, p0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 60
     :cond_f
     invoke-virtual {v1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
@@ -504,31 +439,26 @@
 
     const-string v0, "RSA/ECB/PKCS1Padding"
 
-    .line 61
     invoke-static {v0}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object v0
 
-    .line 62
     invoke-static {p1}, Lcom/sina/weibo/sdk/utils/AidTask;->d(Ljava/lang/String;)Ljava/security/PublicKey;
 
     move-result-object p1
 
     const/4 v1, 0x1
 
-    .line 63
     invoke-virtual {v0, v1, p1}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;)V
 
     const-string p1, "UTF-8"
 
-    .line 64
     invoke-virtual {p0, p1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object p0
 
     const/4 v1, 0x0
 
-    .line 65
     :try_start_0
     new-instance v2, Ljava/io/ByteArrayOutputStream;
 
@@ -541,7 +471,6 @@
     :goto_0
     const/16 v3, 0x75
 
-    .line 66
     :try_start_1
     invoke-static {p0, v1, v3}, Lcom/sina/weibo/sdk/utils/AidTask;->a([BII)I
 
@@ -555,16 +484,13 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 67
     :try_start_2
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->flush()V
 
-    .line 68
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
 
-    .line 69
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "encryptRsa total enBytes len = "
@@ -581,12 +507,10 @@
 
     invoke-static {v5, v0}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 70
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/b;->b([B)[B
 
     move-result-object p0
 
-    .line 71
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "encryptRsa total base64byte len = "
@@ -603,12 +527,10 @@
 
     invoke-static {v5, v0}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 72
     new-instance v0, Ljava/lang/String;
 
     invoke-direct {v0, p0, p1}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
 
-    .line 73
     new-instance p0, Ljava/lang/StringBuilder;
 
     const-string p1, "01"
@@ -621,7 +543,6 @@
 
     move-result-object p0
 
-    .line 74
     new-instance p1, Ljava/lang/StringBuilder;
 
     const-string v0, "encryptRsa total base64string : "
@@ -638,7 +559,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 75
     :try_start_3
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_3
@@ -647,17 +567,14 @@
     :catch_0
     return-object p0
 
-    .line 76
     :cond_0
     :try_start_4
     invoke-virtual {v0, p0, v1, v3}, Ljavax/crypto/Cipher;->doFinal([BII)[B
 
     move-result-object v4
 
-    .line 77
     invoke-virtual {v2, v4}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 78
     new-instance v6, Ljava/lang/StringBuilder;
 
     const-string v7, "encryptRsa offset = "
@@ -674,7 +591,6 @@
 
     const-string v7, "     enBytes len = "
 
-    .line 79
     invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     array-length v4, v4
@@ -685,7 +601,6 @@
 
     move-result-object v4
 
-    .line 80
     invoke-static {v5, v4}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
@@ -707,13 +622,11 @@
     :goto_1
     if-eqz v1, :cond_1
 
-    .line 81
     :try_start_5
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
 
-    .line 82
     :catch_1
     :cond_1
     throw p0
@@ -722,7 +635,6 @@
 .method static synthetic a(Lcom/sina/weibo/sdk/utils/AidTask;)Ljava/util/concurrent/locks/ReentrantLock;
     .locals 0
 
-    .line 2
     iget-object p0, p0, Lcom/sina/weibo/sdk/utils/AidTask;->d:Ljava/util/concurrent/locks/ReentrantLock;
 
     return-object p0
@@ -731,7 +643,6 @@
 .method static synthetic a(Lcom/sina/weibo/sdk/utils/AidTask;Lcom/sina/weibo/sdk/utils/AidTask$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/utils/AidTask;->c:Lcom/sina/weibo/sdk/utils/AidTask$c;
 
     return-void
@@ -740,7 +651,6 @@
 .method static synthetic a(Lcom/sina/weibo/sdk/utils/AidTask;Ljava/lang/String;)V
     .locals 0
 
-    .line 9
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/utils/AidTask;->c(Ljava/lang/String;)V
 
     return-void
@@ -749,7 +659,6 @@
 .method static synthetic b(Lcom/sina/weibo/sdk/utils/AidTask;)Lcom/sina/weibo/sdk/utils/AidTask$c;
     .locals 0
 
-    .line 6
     invoke-direct {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->h()Lcom/sina/weibo/sdk/utils/AidTask$c;
 
     move-result-object p0
@@ -760,7 +669,6 @@
 .method private static b()Ljava/lang/String;
     .locals 1
 
-    .line 9
     :try_start_0
     sget-object v0, Landroid/os/Build;->BRAND:Ljava/lang/String;
     :try_end_0
@@ -777,7 +685,6 @@
 .method private static b(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
 
-    .line 7
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -785,7 +692,6 @@
 
     const-string v0, "android_id"
 
-    .line 8
     invoke-static {p0, v0}, Landroid/provider/Settings$Secure;->getString(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -803,7 +709,6 @@
 .method private static c()Ljava/lang/String;
     .locals 1
 
-    .line 11
     :try_start_0
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
     :try_end_0
@@ -825,28 +730,24 @@
     :try_start_0
     const-string v1, "connectivity"
 
-    .line 12
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/net/ConnectivityManager;
 
-    .line 13
     invoke-virtual {p0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 14
     invoke-virtual {p0}, Landroid/net/NetworkInfo;->getType()I
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 15
     invoke-virtual {p0}, Landroid/net/NetworkInfo;->getSubtype()I
 
     move-result p0
@@ -870,7 +771,6 @@
 
     goto :goto_0
 
-    .line 16
     :cond_0
     invoke-virtual {p0}, Landroid/net/NetworkInfo;->getType()I
 
@@ -919,7 +819,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->g()Ljava/lang/String;
 
     move-result-object p0
@@ -932,7 +831,6 @@
 
     monitor-enter p0
 
-    .line 2
     :try_start_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -942,7 +840,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     monitor-exit p0
 
     return-void
@@ -952,13 +849,11 @@
 
     const/4 v1, 0x1
 
-    .line 4
     :try_start_1
     invoke-direct {p0, v1}, Lcom/sina/weibo/sdk/utils/AidTask;->a(I)Ljava/io/File;
 
     move-result-object v1
 
-    .line 5
     new-instance v2, Ljava/io/FileOutputStream;
 
     invoke-direct {v2, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
@@ -966,7 +861,6 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 6
     :try_start_2
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
@@ -977,7 +871,6 @@
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 7
     :try_start_3
     invoke-virtual {v2}, Ljava/io/FileOutputStream;->close()V
     :try_end_3
@@ -1010,7 +903,6 @@
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_1
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 8
     :catch_1
     :cond_1
     :try_start_5
@@ -1024,14 +916,12 @@
     :goto_1
     if-eqz v0, :cond_2
 
-    .line 9
     :try_start_6
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_3
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
-    .line 10
     :catch_3
     :cond_2
     :goto_2
@@ -1050,7 +940,6 @@
 .method private static d()Ljava/lang/String;
     .locals 2
 
-    .line 5
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1082,14 +971,12 @@
     :try_start_0
     const-string v0, "phone"
 
-    .line 6
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/telephony/TelephonyManager;
 
-    .line 7
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getSimSerialNumber()Ljava/lang/String;
 
     move-result-object p0
@@ -1112,7 +999,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
     move-result-object p0
@@ -1121,19 +1007,16 @@
 
     move-result-object p0
 
-    .line 2
     new-instance v0, Ljava/security/spec/X509EncodedKeySpec;
 
     invoke-direct {v0, p0}, Ljava/security/spec/X509EncodedKeySpec;-><init>([B)V
 
     const-string p0, "RSA"
 
-    .line 3
     invoke-static {p0}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
 
     move-result-object p0
 
-    .line 4
     invoke-virtual {p0, v0}, Ljava/security/KeyFactory;->generatePublic(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;
 
     move-result-object p0
@@ -1144,13 +1027,11 @@
 .method private static e()Ljava/lang/String;
     .locals 4
 
-    .line 7
     :try_start_0
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v0
 
-    .line 8
     new-instance v1, Landroid/os/StatFs;
 
     invoke-virtual {v0}, Ljava/io/File;->getPath()Ljava/lang/String;
@@ -1159,14 +1040,12 @@
 
     invoke-direct {v1, v0}, Landroid/os/StatFs;-><init>(Ljava/lang/String;)V
 
-    .line 9
     invoke-virtual {v1}, Landroid/os/StatFs;->getBlockSize()I
 
     move-result v0
 
     int-to-long v2, v0
 
-    .line 10
     invoke-virtual {v1}, Landroid/os/StatFs;->getBlockCount()I
 
     move-result v0
@@ -1175,7 +1054,6 @@
 
     mul-long v0, v0, v2
 
-    .line 11
     invoke-static {v0, v1}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object v0
@@ -1196,14 +1074,12 @@
     :try_start_0
     const-string v0, "phone"
 
-    .line 5
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/telephony/TelephonyManager;
 
-    .line 6
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
 
     move-result-object p0
@@ -1221,7 +1097,6 @@
 .method private e(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -1230,11 +1105,9 @@
 
     return-void
 
-    .line 2
     :cond_0
     iput-object p1, p0, Lcom/sina/weibo/sdk/utils/AidTask;->b:Ljava/lang/String;
 
-    .line 3
     new-instance p1, Ljava/lang/Thread;
 
     new-instance v0, Lcom/sina/weibo/sdk/utils/AidTask$b;
@@ -1243,7 +1116,6 @@
 
     invoke-direct {p1, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/Thread;->start()V
 
     return-void
@@ -1252,13 +1124,11 @@
 .method private static f()Ljava/lang/String;
     .locals 7
 
-    .line 3
     const-class v0, Ljava/lang/String;
 
     :try_start_0
     const-string v1, "android.os.SystemProperties"
 
-    .line 4
     invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v1
@@ -1277,7 +1147,6 @@
 
     aput-object v0, v4, v6
 
-    .line 5
     invoke-virtual {v1, v2, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
@@ -1292,7 +1161,6 @@
 
     aput-object v3, v2, v6
 
-    .line 6
     invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1316,14 +1184,12 @@
     :try_start_0
     const-string v0, "phone"
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/telephony/TelephonyManager;
 
-    .line 2
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getSubscriberId()Ljava/lang/String;
 
     move-result-object p0
@@ -1345,20 +1211,17 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/sina/weibo/sdk/utils/AidTask;->e:Lcom/sina/weibo/sdk/utils/AidTask;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/sina/weibo/sdk/utils/AidTask;
 
     invoke-direct {v1, p0}, Lcom/sina/weibo/sdk/utils/AidTask;-><init>(Landroid/content/Context;)V
 
     sput-object v1, Lcom/sina/weibo/sdk/utils/AidTask;->e:Lcom/sina/weibo/sdk/utils/AidTask;
 
-    .line 3
     :cond_0
     sget-object p0, Lcom/sina/weibo/sdk/utils/AidTask;->e:Lcom/sina/weibo/sdk/utils/AidTask;
     :try_end_0
@@ -1386,35 +1249,30 @@
 
     const-string v0, "AidTask"
 
-    .line 4
     iget-object v1, p0, Lcom/sina/weibo/sdk/utils/AidTask;->a:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 5
     iget-object v2, p0, Lcom/sina/weibo/sdk/utils/AidTask;->a:Landroid/content/Context;
 
     invoke-static {v2, v1}, Lcom/sina/weibo/sdk/utils/i;->b(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 6
     iget-object v3, p0, Lcom/sina/weibo/sdk/utils/AidTask;->a:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/sina/weibo/sdk/utils/AidTask;->j(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 7
     new-instance v4, Lcom/sina/weibo/sdk/net/f;
 
     iget-object v5, p0, Lcom/sina/weibo/sdk/utils/AidTask;->b:Ljava/lang/String;
 
     invoke-direct {v4, v5}, Lcom/sina/weibo/sdk/net/f;-><init>(Ljava/lang/String;)V
 
-    .line 8
     iget-object v5, p0, Lcom/sina/weibo/sdk/utils/AidTask;->b:Ljava/lang/String;
 
     const-string v6, "appkey"
@@ -1423,20 +1281,16 @@
 
     const-string v5, "mfp"
 
-    .line 9
     invoke-virtual {v4, v5, v3}, Lcom/sina/weibo/sdk/net/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v3, "packagename"
 
-    .line 10
     invoke-virtual {v4, v3, v1}, Lcom/sina/weibo/sdk/net/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "key_hash"
 
-    .line 11
     invoke-virtual {v4, v1, v2}, Lcom/sina/weibo/sdk/net/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12
     :try_start_0
     iget-object v1, p0, Lcom/sina/weibo/sdk/utils/AidTask;->a:Landroid/content/Context;
 
@@ -1448,7 +1302,6 @@
 
     move-result-object v1
 
-    .line 13
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "loadAidFromNet response : "
@@ -1470,7 +1323,6 @@
     :catch_0
     move-exception v1
 
-    .line 14
     new-instance v2, Ljava/lang/StringBuilder;
 
     const-string v3, "loadAidFromNet WeiboException Msg : "
@@ -1489,7 +1341,6 @@
 
     invoke-static {v0, v2}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 15
     throw v1
 .end method
 
@@ -1502,13 +1353,11 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
     invoke-direct {p0, v0}, Lcom/sina/weibo/sdk/utils/AidTask;->a(I)Ljava/io/File;
 
     move-result-object v0
 
-    .line 2
     new-instance v2, Ljava/io/FileInputStream;
 
     invoke-direct {v2, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
@@ -1516,7 +1365,6 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_3
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     :try_start_1
     invoke-virtual {v2}, Ljava/io/FileInputStream;->available()I
 
@@ -1524,10 +1372,8 @@
 
     new-array v0, v0, [B
 
-    .line 4
     invoke-virtual {v2, v0}, Ljava/io/FileInputStream;->read([B)I
 
-    .line 5
     new-instance v3, Ljava/lang/String;
 
     invoke-direct {v3, v0}, Ljava/lang/String;-><init>([B)V
@@ -1539,14 +1385,12 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 6
     :try_start_2
     invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 7
     :catch_0
     monitor-exit p0
 
@@ -1570,14 +1414,12 @@
     :goto_0
     if-eqz v1, :cond_0
 
-    .line 8
     :try_start_3
     invoke-virtual {v1}, Ljava/io/FileInputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 9
     :catch_2
     :cond_0
     :try_start_4
@@ -1591,7 +1433,6 @@
     :goto_1
     if-eqz v2, :cond_1
 
-    .line 10
     :try_start_5
     invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
     :try_end_5
@@ -1607,7 +1448,6 @@
 
     throw v0
 
-    .line 11
     :catch_4
     :cond_1
     :goto_2
@@ -1624,7 +1464,6 @@
     :try_start_0
     const-string v1, "wifi"
 
-    .line 12
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -1635,7 +1474,6 @@
 
     return-object v0
 
-    .line 13
     :cond_0
     invoke-virtual {p0}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
@@ -1643,7 +1481,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 14
     invoke-virtual {p0}, Landroid/net/wifi/WifiInfo;->getMacAddress()Ljava/lang/String;
 
     move-result-object v0
@@ -1661,14 +1498,12 @@
     :try_start_0
     const-string v0, "phone"
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/telephony/TelephonyManager;
 
-    .line 2
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
 
     move-result-object p0
@@ -1688,12 +1523,10 @@
 
     const-string v0, ""
 
-    .line 1
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/AidTask;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 2
     :try_start_0
     new-instance v1, Ljava/lang/String;
 
@@ -1712,7 +1545,6 @@
     :catch_0
     move-object v1, v0
 
-    .line 3
     :goto_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -1733,12 +1565,10 @@
     :try_start_1
     const-string p0, "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDHHM0Fi2Z6+QYKXqFUX2Cy6AaWq3cPi+GSn9oeAwQbPZR75JB7Netm0HtBVVbtPhzT7UO2p1JhFUKWqrqoYuAjkgMVPmA0sFrQohns5EE44Y86XQopD4ZO+dE5KjUZFE6vrPO3rWW3np2BqlgKpjnYZri6TJApmIpGcQg9/G/3zQIDAQAB"
 
-    .line 4
     invoke-static {v1, p0}, Lcom/sina/weibo/sdk/utils/AidTask;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 5
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "encryptRsa() string : "
@@ -1760,7 +1590,6 @@
     :catch_1
     move-exception p0
 
-    .line 6
     invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object p0
@@ -1773,7 +1602,6 @@
 .method private static k(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     :try_start_0
     new-instance v0, Landroid/util/DisplayMetrics;
 
@@ -1781,21 +1609,18 @@
 
     const-string v1, "window"
 
-    .line 2
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/view/WindowManager;
 
-    .line 3
     invoke-interface {p0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object p0
 
     invoke-virtual {p0, v0}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
-    .line 4
     new-instance p0, Ljava/lang/StringBuilder;
 
     iget v1, v0, Landroid/util/DisplayMetrics;->widthPixels:I
@@ -1812,10 +1637,8 @@
 
     const-string v1, "*"
 
-    .line 5
     invoke-virtual {p0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6
     iget v0, v0, Landroid/util/DisplayMetrics;->heightPixels:I
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -1824,7 +1647,6 @@
 
     invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -1845,21 +1667,18 @@
     :try_start_0
     const-string v0, "wifi"
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/net/wifi/WifiManager;
 
-    .line 2
     invoke-virtual {p0}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Landroid/net/wifi/WifiInfo;->getSSID()Ljava/lang/String;
 
     move-result-object p0
@@ -1880,7 +1699,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 2
 
-    .line 3
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -1894,10 +1712,8 @@
 
     const-string v1, "aidTaskInit "
 
-    .line 4
     invoke-static {v0, v1}, Lcom/sina/weibo/sdk/utils/c;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/utils/AidTask;->e(Ljava/lang/String;)V
 
     return-void
@@ -1911,7 +1727,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -1927,18 +1742,14 @@
 
     const-string v1, "getAidSync "
 
-    .line 2
     invoke-static {v0, v1}, Lcom/sina/weibo/sdk/utils/c;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     iget-object v0, p0, Lcom/sina/weibo/sdk/utils/AidTask;->c:Lcom/sina/weibo/sdk/utils/AidTask$c;
 
     if-nez v0, :cond_1
 
-    .line 4
     invoke-virtual {p0, p1}, Lcom/sina/weibo/sdk/utils/AidTask;->a(Ljava/lang/String;)V
 
-    .line 5
     :cond_1
     iget-object p1, p0, Lcom/sina/weibo/sdk/utils/AidTask;->c:Lcom/sina/weibo/sdk/utils/AidTask$c;
 

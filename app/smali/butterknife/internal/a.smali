@@ -1,6 +1,5 @@
 .class public final synthetic Lbutterknife/internal/a;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Ljava/lang/Runnable;

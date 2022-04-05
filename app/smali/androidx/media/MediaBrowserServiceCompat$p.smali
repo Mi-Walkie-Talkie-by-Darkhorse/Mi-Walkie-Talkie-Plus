@@ -1,6 +1,5 @@
 .class Landroidx/media/MediaBrowserServiceCompat$p;
 .super Ljava/lang/Object;
-.source "MediaBrowserServiceCompat.java"
 
 # interfaces
 .implements Landroidx/media/MediaBrowserServiceCompat$o;
@@ -25,10 +24,8 @@
 .method constructor <init>(Landroid/os/Messenger;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$p;->a:Landroid/os/Messenger;
 
     return-void
@@ -42,23 +39,18 @@
         }
     .end annotation
 
-    .line 8
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 9
     iput p1, v0, Landroid/os/Message;->what:I
 
     const/4 p1, 0x2
 
-    .line 10
     iput p1, v0, Landroid/os/Message;->arg1:I
 
-    .line 11
     invoke-virtual {v0, p2}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
-    .line 12
     iget-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$p;->a:Landroid/os/Messenger;
 
     invoke-virtual {p1, v0}, Landroid/os/Messenger;->send(Landroid/os/Message;)V
@@ -80,7 +72,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-direct {p0, v0, v1}, Landroidx/media/MediaBrowserServiceCompat$p;->a(ILandroid/os/Bundle;)V
 
     return-void
@@ -107,29 +98,24 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     const-string v1, "data_media_item_id"
 
-    .line 3
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p1, "data_options"
 
-    .line 4
     invoke-virtual {v0, p1, p3}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
     const-string p1, "data_notify_children_changed_options"
 
-    .line 5
     invoke-virtual {v0, p1, p4}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
     if-eqz p2, :cond_1
 
-    .line 6
     instance-of p1, p2, Ljava/util/ArrayList;
 
     if-eqz p1, :cond_0
@@ -153,7 +139,6 @@
     :cond_1
     const/4 p1, 0x3
 
-    .line 7
     invoke-direct {p0, p1, v0}, Landroidx/media/MediaBrowserServiceCompat$p;->a(ILandroid/os/Bundle;)V
 
     return-void
@@ -162,7 +147,6 @@
 .method public asBinder()Landroid/os/IBinder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$p;->a:Landroid/os/Messenger;
 
     invoke-virtual {v0}, Landroid/os/Messenger;->getBinder()Landroid/os/IBinder;

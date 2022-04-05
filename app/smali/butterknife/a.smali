@@ -1,6 +1,5 @@
 .class public final synthetic Lbutterknife/a;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Lbutterknife/Unbinder;

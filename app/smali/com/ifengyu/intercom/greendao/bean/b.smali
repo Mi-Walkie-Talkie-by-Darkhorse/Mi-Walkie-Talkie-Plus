@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/greendao/bean/b;
 .super Ljava/lang/Object;
-.source "TrackInfoData.java"
 
 
 # instance fields
@@ -63,7 +62,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 29
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -74,142 +72,114 @@
 
     move-object v0, p0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     move-object v1, p1
 
-    .line 2
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->a:Ljava/lang/Long;
 
     move-object v1, p2
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->b:Ljava/lang/String;
 
     move-object v1, p3
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->c:Ljava/lang/String;
 
     move-object v1, p4
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->d:Ljava/lang/String;
 
     move-object v1, p5
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->e:Ljava/lang/Integer;
 
     move-object v1, p6
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->f:Ljava/lang/String;
 
     move-object v1, p7
 
-    .line 8
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->g:Ljava/lang/String;
 
     move-object v1, p8
 
-    .line 9
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->h:Ljava/lang/Integer;
 
     move-object v1, p9
 
-    .line 10
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->i:Ljava/lang/Integer;
 
     move-object v1, p10
 
-    .line 11
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->j:Ljava/lang/String;
 
     move-object v1, p11
 
-    .line 12
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->k:Ljava/lang/String;
 
     move-object v1, p12
 
-    .line 13
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->l:Ljava/lang/String;
 
     move-object v1, p13
 
-    .line 14
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->m:Ljava/lang/String;
 
     move-object/from16 v1, p14
 
-    .line 15
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->n:Ljava/lang/Integer;
 
     move-object/from16 v1, p15
 
-    .line 16
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->o:Ljava/lang/Integer;
 
     move-object/from16 v1, p16
 
-    .line 17
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->p:Ljava/lang/Float;
 
     move-object/from16 v1, p17
 
-    .line 18
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->q:Ljava/lang/Integer;
 
     move-object/from16 v1, p18
 
-    .line 19
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->r:Ljava/lang/Integer;
 
     move-object/from16 v1, p19
 
-    .line 20
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->s:Ljava/lang/Integer;
 
     move-object/from16 v1, p20
 
-    .line 21
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->t:Ljava/lang/Integer;
 
     move-object/from16 v1, p21
 
-    .line 22
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->u:Ljava/lang/Integer;
 
     move-object/from16 v1, p22
 
-    .line 23
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->v:Ljava/lang/Integer;
 
     move-object/from16 v1, p23
 
-    .line 24
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->w:Ljava/lang/Integer;
 
     move-object/from16 v1, p24
 
-    .line 25
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->x:Ljava/lang/Integer;
 
     move-object/from16 v1, p25
 
-    .line 26
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->y:Ljava/lang/String;
 
     move-object/from16 v1, p26
 
-    .line 27
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->z:Ljava/lang/Boolean;
 
     move-object/from16 v1, p27
 
-    .line 28
     iput-object v1, v0, Lcom/ifengyu/intercom/greendao/bean/b;->A:Ljava/lang/Boolean;
 
     return-void
@@ -220,7 +190,6 @@
 .method public A()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->b:Ljava/lang/String;
 
     return-object v0
@@ -229,7 +198,6 @@
 .method public a()Ljava/lang/Integer;
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->t:Ljava/lang/Integer;
 
     return-object v0
@@ -238,7 +206,6 @@
 .method public a(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 6
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->z:Ljava/lang/Boolean;
 
     return-void
@@ -247,7 +214,6 @@
 .method public a(Ljava/lang/Float;)V
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->p:Ljava/lang/Float;
 
     return-void
@@ -256,7 +222,6 @@
 .method public a(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 5
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->t:Ljava/lang/Integer;
 
     return-void
@@ -265,7 +230,6 @@
 .method public a(Ljava/lang/Long;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->a:Ljava/lang/Long;
 
     return-void
@@ -274,7 +238,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->j:Ljava/lang/String;
 
     return-void
@@ -283,7 +246,6 @@
 .method public b()Ljava/lang/Integer;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->u:Ljava/lang/Integer;
 
     return-object v0
@@ -292,7 +254,6 @@
 .method public b(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 4
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->A:Ljava/lang/Boolean;
 
     return-void
@@ -301,7 +262,6 @@
 .method public b(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->u:Ljava/lang/Integer;
 
     return-void
@@ -310,7 +270,6 @@
 .method public b(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->l:Ljava/lang/String;
 
     return-void
@@ -319,7 +278,6 @@
 .method public c()Ljava/lang/Integer;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->q:Ljava/lang/Integer;
 
     return-object v0
@@ -328,7 +286,6 @@
 .method public c(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->q:Ljava/lang/Integer;
 
     return-void
@@ -337,7 +294,6 @@
 .method public c(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->m:Ljava/lang/String;
 
     return-void
@@ -346,7 +302,6 @@
 .method public d()Ljava/lang/Float;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->p:Ljava/lang/Float;
 
     return-object v0
@@ -355,7 +310,6 @@
 .method public d(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->h:Ljava/lang/Integer;
 
     return-void
@@ -364,7 +318,6 @@
 .method public d(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->k:Ljava/lang/String;
 
     return-void
@@ -373,7 +326,6 @@
 .method public e()Ljava/lang/String;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->j:Ljava/lang/String;
 
     return-object v0
@@ -382,7 +334,6 @@
 .method public e(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->i:Ljava/lang/Integer;
 
     return-void
@@ -391,7 +342,6 @@
 .method public e(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->d:Ljava/lang/String;
 
     return-void
@@ -400,7 +350,6 @@
 .method public f()Ljava/lang/Integer;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->h:Ljava/lang/Integer;
 
     return-object v0
@@ -409,7 +358,6 @@
 .method public f(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->r:Ljava/lang/Integer;
 
     return-void
@@ -418,7 +366,6 @@
 .method public f(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->g:Ljava/lang/String;
 
     return-void
@@ -427,7 +374,6 @@
 .method public g()Ljava/lang/String;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->l:Ljava/lang/String;
 
     return-object v0
@@ -436,7 +382,6 @@
 .method public g(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->s:Ljava/lang/Integer;
 
     return-void
@@ -445,7 +390,6 @@
 .method public g(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->c:Ljava/lang/String;
 
     return-void
@@ -454,7 +398,6 @@
 .method public h()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->m:Ljava/lang/String;
 
     return-object v0
@@ -463,7 +406,6 @@
 .method public h(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->o:Ljava/lang/Integer;
 
     return-void
@@ -472,7 +414,6 @@
 .method public h(Ljava/lang/String;)V
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->y:Ljava/lang/String;
 
     return-void
@@ -481,7 +422,6 @@
 .method public i()Ljava/lang/String;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->k:Ljava/lang/String;
 
     return-object v0
@@ -490,7 +430,6 @@
 .method public i(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->n:Ljava/lang/Integer;
 
     return-void
@@ -499,7 +438,6 @@
 .method public i(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->f:Ljava/lang/String;
 
     return-void
@@ -508,7 +446,6 @@
 .method public j()Ljava/lang/Integer;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->i:Ljava/lang/Integer;
 
     return-object v0
@@ -517,7 +454,6 @@
 .method public j(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->w:Ljava/lang/Integer;
 
     return-void
@@ -526,7 +462,6 @@
 .method public j(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->b:Ljava/lang/String;
 
     return-void
@@ -535,7 +470,6 @@
 .method public k()Ljava/lang/Long;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->a:Ljava/lang/Long;
 
     return-object v0
@@ -544,7 +478,6 @@
 .method public k(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->x:Ljava/lang/Integer;
 
     return-void
@@ -553,7 +486,6 @@
 .method public l()Ljava/lang/Boolean;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->z:Ljava/lang/Boolean;
 
     return-object v0
@@ -562,7 +494,6 @@
 .method public l(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->v:Ljava/lang/Integer;
 
     return-void
@@ -571,7 +502,6 @@
 .method public m()Ljava/lang/Boolean;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->A:Ljava/lang/Boolean;
 
     return-object v0
@@ -580,7 +510,6 @@
 .method public m(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/greendao/bean/b;->e:Ljava/lang/Integer;
 
     return-void
@@ -589,7 +518,6 @@
 .method public n()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->r:Ljava/lang/Integer;
 
     return-object v0
@@ -598,7 +526,6 @@
 .method public o()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->s:Ljava/lang/Integer;
 
     return-object v0
@@ -607,7 +534,6 @@
 .method public p()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->d:Ljava/lang/String;
 
     return-object v0
@@ -616,7 +542,6 @@
 .method public q()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->o:Ljava/lang/Integer;
 
     return-object v0
@@ -625,7 +550,6 @@
 .method public r()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->n:Ljava/lang/Integer;
 
     return-object v0
@@ -634,7 +558,6 @@
 .method public s()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->g:Ljava/lang/String;
 
     return-object v0
@@ -643,7 +566,6 @@
 .method public t()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->w:Ljava/lang/Integer;
 
     return-object v0
@@ -652,7 +574,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -909,7 +830,6 @@
 .method public u()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->x:Ljava/lang/Integer;
 
     return-object v0
@@ -918,7 +838,6 @@
 .method public v()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->c:Ljava/lang/String;
 
     return-object v0
@@ -927,7 +846,6 @@
 .method public w()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->y:Ljava/lang/String;
 
     return-object v0
@@ -936,7 +854,6 @@
 .method public x()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->v:Ljava/lang/Integer;
 
     return-object v0
@@ -945,7 +862,6 @@
 .method public y()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->f:Ljava/lang/String;
 
     return-object v0
@@ -954,7 +870,6 @@
 .method public z()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/greendao/bean/b;->e:Ljava/lang/Integer;
 
     return-object v0

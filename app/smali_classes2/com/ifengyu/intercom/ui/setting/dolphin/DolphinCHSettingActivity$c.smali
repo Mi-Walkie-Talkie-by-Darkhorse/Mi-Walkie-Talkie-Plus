@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$c;
 .super Landroidx/fragment/app/FragmentPagerAdapter;
-.source "DolphinCHSettingActivity.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$c;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/fragment/app/FragmentPagerAdapter;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
     return-void
@@ -36,7 +33,6 @@
 .method public getCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$c;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;->c(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;)[Ljava/lang/String;
@@ -51,7 +47,6 @@
 .method public getItem(I)Landroidx/fragment/app/Fragment;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$c;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;->b(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;)Ljava/util/List;
@@ -70,7 +65,6 @@
 .method public getPageTitle(I)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$c;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;->c(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;)[Ljava/lang/String;

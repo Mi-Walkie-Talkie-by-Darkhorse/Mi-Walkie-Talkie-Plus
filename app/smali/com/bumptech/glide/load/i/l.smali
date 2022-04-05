@@ -1,6 +1,5 @@
 .class public abstract Lcom/bumptech/glide/load/i/l;
 .super Ljava/lang/Object;
-.source "LocalUriFetcher.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/i/d;
@@ -37,13 +36,10 @@
 .method public constructor <init>(Landroid/content/ContentResolver;Landroid/net/Uri;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/i/l;->b:Landroid/content/ContentResolver;
 
-    .line 3
     iput-object p2, p0, Lcom/bumptech/glide/load/i/l;->a:Landroid/net/Uri;
 
     return-void
@@ -87,7 +83,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object p1, p0, Lcom/bumptech/glide/load/i/l;->a:Landroid/net/Uri;
 
@@ -101,7 +96,6 @@
     :try_end_0
     .catch Ljava/io/FileNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2
     invoke-interface {p2, p1}, Lcom/bumptech/glide/load/i/d$a;->a(Ljava/lang/Object;)V
 
     return-void
@@ -113,7 +107,6 @@
 
     const-string v1, "LocalUriFetcher"
 
-    .line 3
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
@@ -122,10 +115,8 @@
 
     const-string v0, "Failed to open Uri"
 
-    .line 4
     invoke-static {v1, v0, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 5
     :cond_0
     invoke-interface {p2, p1}, Lcom/bumptech/glide/load/i/d$a;->a(Ljava/lang/Exception;)V
 
@@ -149,12 +140,10 @@
 .method public b()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/i/l;->c:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0, v0}, Lcom/bumptech/glide/load/i/l;->a(Ljava/lang/Object;)V
     :try_end_0
@@ -170,7 +159,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/bumptech/glide/load/DataSource;->a:Lcom/bumptech/glide/load/DataSource;
 
     return-object v0

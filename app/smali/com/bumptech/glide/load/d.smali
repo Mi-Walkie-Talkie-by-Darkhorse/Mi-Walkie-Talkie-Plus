@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/d;
 .super Ljava/lang/Object;
-.source "Option.java"
 
 
 # annotations
@@ -59,7 +58,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/d$a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/d$a;-><init>()V
@@ -93,18 +91,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/String;)Ljava/lang/String;
 
     iput-object p1, p0, Lcom/bumptech/glide/load/d;->c:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Lcom/bumptech/glide/load/d;->a:Ljava/lang/Object;
 
-    .line 4
     invoke-static {p3}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p3, Lcom/bumptech/glide/load/d$b;
@@ -135,7 +129,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/d;
 
     invoke-static {}, Lcom/bumptech/glide/load/d;->b()Lcom/bumptech/glide/load/d$b;
@@ -174,7 +167,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/bumptech/glide/load/d;
 
     invoke-static {}, Lcom/bumptech/glide/load/d;->b()Lcom/bumptech/glide/load/d$b;
@@ -217,7 +209,6 @@
         }
     .end annotation
 
-    .line 3
     new-instance v0, Lcom/bumptech/glide/load/d;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/bumptech/glide/load/d;-><init>(Ljava/lang/String;Ljava/lang/Object;Lcom/bumptech/glide/load/d$b;)V
@@ -240,7 +231,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/bumptech/glide/load/d;->e:Lcom/bumptech/glide/load/d$b;
 
     return-object v0
@@ -251,12 +241,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/d;->d:[B
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/d;->c:Ljava/lang/String;
 
     sget-object v1, Lcom/bumptech/glide/load/c;->a:Ljava/nio/charset/Charset;
@@ -267,7 +255,6 @@
 
     iput-object v0, p0, Lcom/bumptech/glide/load/d;->d:[B
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/bumptech/glide/load/d;->d:[B
 
@@ -287,7 +274,6 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lcom/bumptech/glide/load/d;->a:Ljava/lang/Object;
 
     return-object v0
@@ -311,7 +297,6 @@
         }
     .end annotation
 
-    .line 5
     iget-object v0, p0, Lcom/bumptech/glide/load/d;->b:Lcom/bumptech/glide/load/d$b;
 
     invoke-direct {p0}, Lcom/bumptech/glide/load/d;->c()[B
@@ -326,15 +311,12 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lcom/bumptech/glide/load/d;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/bumptech/glide/load/d;
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/load/d;->c:Ljava/lang/String;
 
     iget-object p1, p1, Lcom/bumptech/glide/load/d;->c:Ljava/lang/String;
@@ -354,7 +336,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/d;->c:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -367,7 +348,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

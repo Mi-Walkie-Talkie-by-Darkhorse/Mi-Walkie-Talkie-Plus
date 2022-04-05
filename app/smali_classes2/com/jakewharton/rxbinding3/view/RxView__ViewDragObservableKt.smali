@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/view/RxView__ViewDragObservableKt;
 .super Ljava/lang/Object;
-.source "ViewDragObservable.kt"
 
 
 # annotations
@@ -113,7 +112,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/view/ViewDragObservable;
 
     invoke-direct {v0, p0, p1}, Lcom/jakewharton/rxbinding3/view/ViewDragObservable;-><init>(Landroid/view/View;Lkotlin/jvm/a/b;)V
@@ -136,7 +134,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     sget-object p1, Lcom/jakewharton/rxbinding3/internal/AlwaysTrue;->INSTANCE:Lcom/jakewharton/rxbinding3/internal/AlwaysTrue;
 
     :cond_0

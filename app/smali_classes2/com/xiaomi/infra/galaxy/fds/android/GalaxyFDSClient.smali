@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClient;
 .super Ljava/lang/Object;
-.source "GalaxyFDSClient.java"
 
 
 # virtual methods

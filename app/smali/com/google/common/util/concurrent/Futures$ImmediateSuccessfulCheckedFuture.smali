@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulCheckedFuture;
 .super Lcom/google/common/util/concurrent/Futures$ImmediateFuture;
-.source "Futures.java"
 
 # interfaces
 .implements Lcom/google/common/util/concurrent/CheckedFuture;
@@ -59,10 +58,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/Futures$ImmediateFuture;-><init>(Lcom/google/common/util/concurrent/Futures$1;)V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulCheckedFuture;->value:Ljava/lang/Object;
 
     return-void
@@ -78,7 +75,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulCheckedFuture;->value:Ljava/lang/Object;
 
     return-object v0
@@ -94,10 +90,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     iget-object p1, p0, Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulCheckedFuture;->value:Ljava/lang/Object;
 
     return-object p1
@@ -111,7 +105,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulCheckedFuture;->value:Ljava/lang/Object;
 
     return-object v0

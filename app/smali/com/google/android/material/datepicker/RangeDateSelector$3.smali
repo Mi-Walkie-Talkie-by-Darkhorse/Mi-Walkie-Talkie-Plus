@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/datepicker/RangeDateSelector$3;
 .super Ljava/lang/Object;
-.source "RangeDateSelector.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,14 +45,12 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     const-class v0, Ljava/lang/Long;
 
     new-instance v1, Lcom/google/android/material/datepicker/RangeDateSelector;
 
     invoke-direct {v1}, Lcom/google/android/material/datepicker/RangeDateSelector;-><init>()V
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v2
@@ -65,10 +61,8 @@
 
     check-cast v2, Ljava/lang/Long;
 
-    .line 4
     invoke-static {v1, v2}, Lcom/google/android/material/datepicker/RangeDateSelector;->access$302(Lcom/google/android/material/datepicker/RangeDateSelector;Ljava/lang/Long;)Ljava/lang/Long;
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v0
@@ -93,7 +87,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/RangeDateSelector$3;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/datepicker/RangeDateSelector;
 
     move-result-object p1
@@ -106,7 +99,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-array p1, p1, [Lcom/google/android/material/datepicker/RangeDateSelector;
 
     return-object p1
@@ -117,7 +109,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/RangeDateSelector$3;->newArray(I)[Lcom/google/android/material/datepicker/RangeDateSelector;
 
     move-result-object p1

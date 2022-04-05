@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/c/b/g$b;
 .super Ljava/lang/Object;
-.source "SlideVerifyDialogBuilder.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/lite/c/b/g;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/g$b;->a:Lcom/ifengyu/intercom/lite/c/b/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/lite/c/b/g;Lcom/ifengyu/intercom/lite/c/b/g$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/lite/c/b/g$b;-><init>(Lcom/ifengyu/intercom/lite/c/b/g;)V
 
     return-void
@@ -46,7 +43,6 @@
     .annotation runtime Landroid/webkit/JavascriptInterface;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/g$b;->a:Lcom/ifengyu/intercom/lite/c/b/g;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/c/b/g;->a(Lcom/ifengyu/intercom/lite/c/b/g;)Lcom/ifengyu/intercom/lite/c/b/g$c;
@@ -55,7 +51,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/g$b;->a:Lcom/ifengyu/intercom/lite/c/b/g;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/c/b/g;->a(Lcom/ifengyu/intercom/lite/c/b/g;)Lcom/ifengyu/intercom/lite/c/b/g$c;

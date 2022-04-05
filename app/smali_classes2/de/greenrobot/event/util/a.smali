@@ -1,6 +1,5 @@
 .class public Lde/greenrobot/event/util/a;
 .super Ljava/lang/Object;
-.source "ErrorDialogConfig.java"
 
 
 # instance fields

@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 .super Lcom/google/protobuf/GeneratedMessage$Builder;
-.source "SharkProtos.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatisticsOrBuilder;
@@ -62,10 +61,8 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;-><init>()V
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->maybeForceBuilderInitialization()V
 
     return-void
@@ -74,10 +71,8 @@
 .method private constructor <init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage$Builder;-><init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)V
 
-    .line 5
     invoke-direct {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->maybeForceBuilderInitialization()V
 
     return-void
@@ -86,7 +81,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;Lcom/ifengyu/intercom/protos/SharkProtos$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;-><init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)V
 
     return-void
@@ -95,7 +89,6 @@
 .method static synthetic access$13400()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->create()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -106,7 +99,6 @@
 .method private static create()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;-><init>()V
@@ -117,7 +109,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->i()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -128,7 +119,6 @@
 .method private maybeForceBuilderInitialization()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->access$13600()Z
 
     return-void
@@ -139,7 +129,6 @@
 .method public bridge synthetic build()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->build()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
     move-result-object v0
@@ -150,7 +139,6 @@
 .method public bridge synthetic build()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->build()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
     move-result-object v0
@@ -161,12 +149,10 @@
 .method public build()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
     .locals 2
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->buildPartial()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessage;->isInitialized()Z
 
     move-result v1
@@ -175,7 +161,6 @@
 
     return-object v0
 
-    .line 5
     :cond_0
     invoke-static {v0}, Lcom/google/protobuf/AbstractMessage$Builder;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
 
@@ -187,7 +172,6 @@
 .method public bridge synthetic buildPartial()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->buildPartial()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
     move-result-object v0
@@ -198,7 +182,6 @@
 .method public bridge synthetic buildPartial()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->buildPartial()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
     move-result-object v0
@@ -209,14 +192,12 @@
 .method public buildPartial()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
     .locals 5
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p0, v1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;Lcom/ifengyu/intercom/protos/SharkProtos$a;)V
 
-    .line 4
     iget v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit8 v2, v1, 0x1
@@ -230,7 +211,6 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 5
     :goto_0
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->powerOn_:I
 
@@ -244,7 +224,6 @@
 
     or-int/lit8 v3, v3, 0x2
 
-    .line 6
     :cond_1
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->azimuthMap_:I
 
@@ -258,7 +237,6 @@
 
     or-int/lit8 v3, v3, 0x4
 
-    .line 7
     :cond_2
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->fmRadio_:I
 
@@ -272,7 +250,6 @@
 
     or-int/lit8 v3, v3, 0x8
 
-    .line 8
     :cond_3
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->quickTeam_:I
 
@@ -286,7 +263,6 @@
 
     or-int/lit8 v3, v3, 0x10
 
-    .line 9
     :cond_4
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bluetoothDevice_:I
 
@@ -300,7 +276,6 @@
 
     or-int/lit8 v3, v3, 0x20
 
-    .line 10
     :cond_5
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->handsFree_:I
 
@@ -314,7 +289,6 @@
 
     or-int/lit8 v3, v3, 0x40
 
-    .line 11
     :cond_6
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->channelScan_:I
 
@@ -328,7 +302,6 @@
 
     or-int/lit16 v3, v3, 0x80
 
-    .line 12
     :cond_7
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->doubleFreq_:I
 
@@ -342,7 +315,6 @@
 
     or-int/lit16 v3, v3, 0x100
 
-    .line 13
     :cond_8
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->sosMode_:I
 
@@ -356,7 +328,6 @@
 
     or-int/lit16 v3, v3, 0x200
 
-    .line 14
     :cond_9
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->powerLevel_:I
 
@@ -370,7 +341,6 @@
 
     or-int/lit16 v3, v3, 0x400
 
-    .line 15
     :cond_a
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->busyLock_:I
 
@@ -384,7 +354,6 @@
 
     or-int/lit16 v3, v3, 0x800
 
-    .line 16
     :cond_b
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->squelchTail_:I
 
@@ -398,7 +367,6 @@
 
     or-int/lit16 v3, v3, 0x1000
 
-    .line 17
     :cond_c
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->wideNarrow_:I
 
@@ -412,16 +380,13 @@
 
     or-int/lit16 v3, v3, 0x2000
 
-    .line 18
     :cond_d
     iget v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->restoreFactory_:I
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->access$15102(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;I)I
 
-    .line 19
     invoke-static {v0, v3}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->access$15202(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;I)I
 
-    .line 20
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onBuilt()V
 
     return-object v0
@@ -430,7 +395,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/AbstractMessage$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->clear()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -441,7 +405,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/GeneratedMessage$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->clear()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -452,7 +415,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->clear()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -463,7 +425,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 4
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->clear()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -474,123 +435,94 @@
 .method public clear()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 2
 
-    .line 5
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->clear()Lcom/google/protobuf/GeneratedMessage$Builder;
 
     const/4 v0, 0x0
 
-    .line 6
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->powerOn_:I
 
-    .line 7
     iget v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit8 v1, v1, -0x2
 
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 8
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->azimuthMap_:I
 
     and-int/lit8 v1, v1, -0x3
 
-    .line 9
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 10
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->fmRadio_:I
 
     and-int/lit8 v1, v1, -0x5
 
-    .line 11
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 12
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->quickTeam_:I
 
     and-int/lit8 v1, v1, -0x9
 
-    .line 13
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 14
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bluetoothDevice_:I
 
     and-int/lit8 v1, v1, -0x11
 
-    .line 15
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 16
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->handsFree_:I
 
     and-int/lit8 v1, v1, -0x21
 
-    .line 17
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 18
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->channelScan_:I
 
     and-int/lit8 v1, v1, -0x41
 
-    .line 19
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 20
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->doubleFreq_:I
 
     and-int/lit16 v1, v1, -0x81
 
-    .line 21
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 22
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->sosMode_:I
 
     and-int/lit16 v1, v1, -0x101
 
-    .line 23
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 24
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->powerLevel_:I
 
     and-int/lit16 v1, v1, -0x201
 
-    .line 25
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 26
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->busyLock_:I
 
     and-int/lit16 v1, v1, -0x401
 
-    .line 27
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 28
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->squelchTail_:I
 
     and-int/lit16 v1, v1, -0x801
 
-    .line 29
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 30
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->wideNarrow_:I
 
     and-int/lit16 v1, v1, -0x1001
 
-    .line 31
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 32
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->restoreFactory_:I
 
     and-int/lit16 v0, v1, -0x2001
 
-    .line 33
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     return-object p0
@@ -599,7 +531,6 @@
 .method public clearAzimuthMap()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x3
@@ -608,10 +539,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->azimuthMap_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -620,7 +549,6 @@
 .method public clearBluetoothDevice()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x11
@@ -629,10 +557,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bluetoothDevice_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -641,7 +567,6 @@
 .method public clearBusyLock()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x401
@@ -650,10 +575,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->busyLock_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -662,7 +585,6 @@
 .method public clearChannelScan()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x41
@@ -671,10 +593,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->channelScan_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -683,7 +603,6 @@
 .method public clearDoubleFreq()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x81
@@ -692,10 +611,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->doubleFreq_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -704,7 +621,6 @@
 .method public clearFmRadio()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x5
@@ -713,10 +629,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->fmRadio_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -725,7 +639,6 @@
 .method public clearHandsFree()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x21
@@ -734,10 +647,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->handsFree_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -746,7 +657,6 @@
 .method public clearPowerLevel()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x201
@@ -755,10 +665,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->powerLevel_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -767,7 +675,6 @@
 .method public clearPowerOn()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x2
@@ -776,10 +683,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->powerOn_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -788,7 +693,6 @@
 .method public clearQuickTeam()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x9
@@ -797,10 +701,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->quickTeam_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -809,7 +711,6 @@
 .method public clearRestoreFactory()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x2001
@@ -818,10 +719,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->restoreFactory_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -830,7 +729,6 @@
 .method public clearSosMode()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x101
@@ -839,10 +737,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->sosMode_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -851,7 +747,6 @@
 .method public clearSquelchTail()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x801
@@ -860,10 +755,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->squelchTail_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -872,7 +765,6 @@
 .method public clearWideNarrow()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x1001
@@ -881,10 +773,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->wideNarrow_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -893,7 +783,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/AbstractMessage$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -904,7 +793,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/AbstractMessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -915,7 +803,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/GeneratedMessage$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -926,7 +813,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 4
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -937,7 +823,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 5
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -948,7 +833,6 @@
 .method public clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 2
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->create()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -974,7 +858,6 @@
         }
     .end annotation
 
-    .line 6
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
     move-result-object v0
@@ -985,7 +868,6 @@
 .method public getAzimuthMap()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->azimuthMap_:I
 
     return v0
@@ -994,7 +876,6 @@
 .method public getBluetoothDevice()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bluetoothDevice_:I
 
     return v0
@@ -1003,7 +884,6 @@
 .method public getBusyLock()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->busyLock_:I
 
     return v0
@@ -1012,7 +892,6 @@
 .method public getChannelScan()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->channelScan_:I
 
     return v0
@@ -1021,7 +900,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
     move-result-object v0
@@ -1032,7 +910,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
     move-result-object v0
@@ -1043,7 +920,6 @@
 .method public getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
     .locals 1
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
     move-result-object v0
@@ -1054,7 +930,6 @@
 .method public getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->i()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -1065,7 +940,6 @@
 .method public getDoubleFreq()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->doubleFreq_:I
 
     return v0
@@ -1074,7 +948,6 @@
 .method public getFmRadio()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->fmRadio_:I
 
     return v0
@@ -1083,7 +956,6 @@
 .method public getHandsFree()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->handsFree_:I
 
     return v0
@@ -1092,7 +964,6 @@
 .method public getPowerLevel()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->powerLevel_:I
 
     return v0
@@ -1101,7 +972,6 @@
 .method public getPowerOn()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->powerOn_:I
 
     return v0
@@ -1110,7 +980,6 @@
 .method public getQuickTeam()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->quickTeam_:I
 
     return v0
@@ -1119,7 +988,6 @@
 .method public getRestoreFactory()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->restoreFactory_:I
 
     return v0
@@ -1128,7 +996,6 @@
 .method public getSosMode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->sosMode_:I
 
     return v0
@@ -1137,7 +1004,6 @@
 .method public getSquelchTail()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->squelchTail_:I
 
     return v0
@@ -1146,7 +1012,6 @@
 .method public getWideNarrow()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->wideNarrow_:I
 
     return v0
@@ -1155,7 +1020,6 @@
 .method public hasAzimuthMap()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/4 v1, 0x2
@@ -1178,7 +1042,6 @@
 .method public hasBluetoothDevice()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/16 v1, 0x10
@@ -1201,7 +1064,6 @@
 .method public hasBusyLock()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/16 v1, 0x400
@@ -1224,7 +1086,6 @@
 .method public hasChannelScan()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/16 v1, 0x40
@@ -1247,7 +1108,6 @@
 .method public hasDoubleFreq()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/16 v1, 0x80
@@ -1270,7 +1130,6 @@
 .method public hasFmRadio()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/4 v1, 0x4
@@ -1293,7 +1152,6 @@
 .method public hasHandsFree()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/16 v1, 0x20
@@ -1316,7 +1174,6 @@
 .method public hasPowerLevel()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/16 v1, 0x200
@@ -1339,7 +1196,6 @@
 .method public hasPowerOn()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/4 v1, 0x1
@@ -1360,7 +1216,6 @@
 .method public hasQuickTeam()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/16 v1, 0x8
@@ -1383,7 +1238,6 @@
 .method public hasRestoreFactory()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/16 v1, 0x2000
@@ -1406,7 +1260,6 @@
 .method public hasSosMode()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/16 v1, 0x100
@@ -1429,7 +1282,6 @@
 .method public hasSquelchTail()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/16 v1, 0x800
@@ -1452,7 +1304,6 @@
 .method public hasWideNarrow()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     const/16 v1, 0x1000
@@ -1475,7 +1326,6 @@
 .method protected internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->j()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -1484,7 +1334,6 @@
 
     const-class v2, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -1495,17 +1344,14 @@
 .method public setAzimuthMap(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x2
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->azimuthMap_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1514,17 +1360,14 @@
 .method public setBluetoothDevice(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x10
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bluetoothDevice_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1533,17 +1376,14 @@
 .method public setBusyLock(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x400
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->busyLock_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1552,17 +1392,14 @@
 .method public setChannelScan(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x40
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->channelScan_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1571,17 +1408,14 @@
 .method public setDoubleFreq(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x80
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->doubleFreq_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1590,17 +1424,14 @@
 .method public setFmRadio(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x4
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->fmRadio_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1609,17 +1440,14 @@
 .method public setHandsFree(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x20
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->handsFree_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1628,17 +1456,14 @@
 .method public setPowerLevel(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x200
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->powerLevel_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1647,17 +1472,14 @@
 .method public setPowerOn(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->powerOn_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1666,17 +1488,14 @@
 .method public setQuickTeam(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x8
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->quickTeam_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1685,17 +1504,14 @@
 .method public setRestoreFactory(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x2000
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->restoreFactory_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1704,17 +1520,14 @@
 .method public setSosMode(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x100
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->sosMode_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1723,17 +1536,14 @@
 .method public setSquelchTail(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x800
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->squelchTail_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1742,17 +1552,14 @@
 .method public setWideNarrow(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x1000
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics$Builder;->wideNarrow_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0

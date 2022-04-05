@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/FlowableOnSubscribe;
 .super Ljava/lang/Object;
-.source "FlowableOnSubscribe.java"
 
 
 # annotations

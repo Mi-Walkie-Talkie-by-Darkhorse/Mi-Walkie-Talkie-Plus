@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/utils/AidTask$b;
 .super Ljava/lang/Object;
-.source "AidTask.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,10 +24,8 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/utils/AidTask;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/utils/AidTask$b;->a:Lcom/sina/weibo/sdk/utils/AidTask;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +36,6 @@
 .method public run()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/utils/AidTask$b;->a:Lcom/sina/weibo/sdk/utils/AidTask;
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/utils/AidTask;->a(Lcom/sina/weibo/sdk/utils/AidTask;)Ljava/util/concurrent/locks/ReentrantLock;
@@ -56,12 +52,10 @@
 
     const-string v0, "tryLock : false, return"
 
-    .line 2
     invoke-static {v1, v0}, Lcom/sina/weibo/sdk/utils/c;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/sina/weibo/sdk/utils/AidTask$b;->a:Lcom/sina/weibo/sdk/utils/AidTask;
 
@@ -78,7 +72,6 @@
     :cond_1
     add-int/2addr v0, v2
 
-    .line 4
     :try_start_0
     iget-object v3, p0, Lcom/sina/weibo/sdk/utils/AidTask$b;->a:Lcom/sina/weibo/sdk/utils/AidTask;
 
@@ -86,17 +79,14 @@
 
     move-result-object v3
 
-    .line 5
     invoke-static {v3}, Lcom/sina/weibo/sdk/utils/AidTask$c;->a(Ljava/lang/String;)Lcom/sina/weibo/sdk/utils/AidTask$c;
 
     move-result-object v4
 
-    .line 6
     iget-object v5, p0, Lcom/sina/weibo/sdk/utils/AidTask$b;->a:Lcom/sina/weibo/sdk/utils/AidTask;
 
     invoke-static {v5, v3}, Lcom/sina/weibo/sdk/utils/AidTask;->a(Lcom/sina/weibo/sdk/utils/AidTask;Ljava/lang/String;)V
 
-    .line 7
     iget-object v3, p0, Lcom/sina/weibo/sdk/utils/AidTask$b;->a:Lcom/sina/weibo/sdk/utils/AidTask;
 
     invoke-static {v3, v4}, Lcom/sina/weibo/sdk/utils/AidTask;->a(Lcom/sina/weibo/sdk/utils/AidTask;Lcom/sina/weibo/sdk/utils/AidTask$c;)V
@@ -108,7 +98,6 @@
     :catch_0
     move-exception v3
 
-    .line 8
     new-instance v4, Ljava/lang/StringBuilder;
 
     const-string v5, "AidTaskInit WeiboException Msg : "
@@ -133,13 +122,11 @@
 
     goto :goto_0
 
-    .line 9
     :cond_2
     iget-object v1, p0, Lcom/sina/weibo/sdk/utils/AidTask$b;->a:Lcom/sina/weibo/sdk/utils/AidTask;
 
     invoke-static {v1, v0}, Lcom/sina/weibo/sdk/utils/AidTask;->a(Lcom/sina/weibo/sdk/utils/AidTask;Lcom/sina/weibo/sdk/utils/AidTask$c;)V
 
-    .line 10
     :goto_0
     iget-object v0, p0, Lcom/sina/weibo/sdk/utils/AidTask$b;->a:Lcom/sina/weibo/sdk/utils/AidTask;
 

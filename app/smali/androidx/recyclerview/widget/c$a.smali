@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/c$a;
 .super Ljava/lang/Object;
-.source "DefaultItemAnimator.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/recyclerview/widget/c;Ljava/util/ArrayList;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/c$a;->b:Landroidx/recyclerview/widget/c;
 
     iput-object p2, p0, Landroidx/recyclerview/widget/c$a;->a:Ljava/util/ArrayList;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/c$a;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -62,7 +59,6 @@
 
     check-cast v1, Landroidx/recyclerview/widget/c$j;
 
-    .line 2
     iget-object v2, p0, Landroidx/recyclerview/widget/c$a;->b:Landroidx/recyclerview/widget/c;
 
     iget-object v3, v1, Landroidx/recyclerview/widget/c$j;->a:Landroidx/recyclerview/widget/RecyclerView$y;
@@ -79,13 +75,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/recyclerview/widget/c$a;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 4
     iget-object v0, p0, Landroidx/recyclerview/widget/c$a;->b:Landroidx/recyclerview/widget/c;
 
     iget-object v0, v0, Landroidx/recyclerview/widget/c;->m:Ljava/util/ArrayList;

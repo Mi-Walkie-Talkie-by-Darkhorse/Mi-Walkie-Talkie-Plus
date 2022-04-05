@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/collect/ImmutableRangeMap$Builder;
 .super Ljava/lang/Object;
-.source "ImmutableRangeMap.java"
 
 
 # annotations
@@ -49,17 +48,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/TreeRangeSet;->create()Lcom/google/common/collect/TreeRangeSet;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->keyRanges:Lcom/google/common/collect/RangeSet;
 
-    .line 3
     invoke-static {}, Lcom/google/common/collect/TreeRangeMap;->create()Lcom/google/common/collect/TreeRangeMap;
 
     move-result-object v0
@@ -81,14 +77,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->rangeMap:Lcom/google/common/collect/RangeMap;
 
     invoke-interface {v0}, Lcom/google/common/collect/RangeMap;->asMapOfRanges()Ljava/util/Map;
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Lcom/google/common/collect/ImmutableList$Builder;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
@@ -97,7 +91,6 @@
 
     invoke-direct {v1, v2}, Lcom/google/common/collect/ImmutableList$Builder;-><init>(I)V
 
-    .line 3
     new-instance v2, Lcom/google/common/collect/ImmutableList$Builder;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
@@ -106,7 +99,6 @@
 
     invoke-direct {v2, v3}, Lcom/google/common/collect/ImmutableList$Builder;-><init>(I)V
 
-    .line 4
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -128,14 +120,12 @@
 
     check-cast v3, Ljava/util/Map$Entry;
 
-    .line 5
     invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
 
     invoke-virtual {v1, v4}, Lcom/google/common/collect/ImmutableList$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
 
-    .line 6
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -144,7 +134,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     new-instance v0, Lcom/google/common/collect/ImmutableRangeMap;
 
@@ -173,13 +162,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/common/collect/Range;->isEmpty()Z
 
     move-result v0
@@ -198,7 +184,6 @@
 
     invoke-static {v0, v2, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->keyRanges:Lcom/google/common/collect/RangeSet;
 
     invoke-interface {v0}, Lcom/google/common/collect/RangeSet;->complement()Lcom/google/common/collect/RangeSet;
@@ -211,7 +196,6 @@
 
     if-nez v0, :cond_2
 
-    .line 5
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->rangeMap:Lcom/google/common/collect/RangeMap;
 
     invoke-interface {v0}, Lcom/google/common/collect/RangeMap;->asMapOfRanges()Ljava/util/Map;
@@ -240,14 +224,12 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 6
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/google/common/collect/Range;
 
-    .line 7
     invoke-virtual {v2, p1}, Lcom/google/common/collect/Range;->isConnected(Lcom/google/common/collect/Range;)Z
 
     move-result v3
@@ -266,7 +248,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
@@ -322,13 +303,11 @@
 
     throw p2
 
-    .line 9
     :cond_2
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->keyRanges:Lcom/google/common/collect/RangeSet;
 
     invoke-interface {v0, p1}, Lcom/google/common/collect/RangeSet;->add(Lcom/google/common/collect/Range;)V
 
-    .line 10
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$Builder;->rangeMap:Lcom/google/common/collect/RangeMap;
 
     invoke-interface {v0, p1, p2}, Lcom/google/common/collect/RangeMap;->put(Lcom/google/common/collect/Range;Ljava/lang/Object;)V
@@ -348,7 +327,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Lcom/google/common/collect/RangeMap;->asMapOfRanges()Ljava/util/Map;
 
     move-result-object p1
@@ -374,7 +352,6 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 2
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1

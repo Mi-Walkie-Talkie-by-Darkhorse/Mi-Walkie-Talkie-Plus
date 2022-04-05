@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Synchronized;
 .super Ljava/lang/Object;
-.source "Synchronized.java"
 
 
 # annotations
@@ -40,7 +39,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +47,6 @@
 .method static synthetic access$100(Ljava/util/SortedSet;Ljava/lang/Object;)Ljava/util/SortedSet;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->sortedSet(Ljava/util/SortedSet;Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p0
@@ -60,7 +57,6 @@
 .method static synthetic access$200(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->list(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
@@ -71,7 +67,6 @@
 .method static synthetic access$300(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->typePreservingSet(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p0
@@ -82,7 +77,6 @@
 .method static synthetic access$400(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->typePreservingCollection(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
@@ -93,7 +87,6 @@
 .method static synthetic access$500(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->collection(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object p0
@@ -104,7 +97,6 @@
 .method static synthetic access$700(Ljava/util/Map$Entry;Ljava/lang/Object;)Ljava/util/Map$Entry;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->nullableSynchronizedEntry(Ljava/util/Map$Entry;Ljava/lang/Object;)Ljava/util/Map$Entry;
 
     move-result-object p0
@@ -134,7 +126,6 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedBiMap;
 
     if-nez v0, :cond_1
@@ -145,7 +136,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedBiMap;
 
@@ -180,7 +170,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedCollection;
 
     const/4 v1, 0x0
@@ -214,7 +203,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedDeque;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedDeque;-><init>(Ljava/util/Deque;Ljava/lang/Object;)V
@@ -242,7 +230,6 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Ljava/util/RandomAccess;
 
     if-eqz v0, :cond_0
@@ -284,7 +271,6 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedListMultimap;
 
     if-nez v0, :cond_1
@@ -295,7 +281,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedListMultimap;
 
@@ -333,7 +318,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedMap;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedMap;-><init>(Ljava/util/Map;Ljava/lang/Object;)V
@@ -363,7 +347,6 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultimap;
 
     if-nez v0, :cond_1
@@ -374,7 +357,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedMultimap;
 
@@ -407,7 +389,6 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;
 
     if-nez v0, :cond_1
@@ -418,7 +399,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedMultiset;
 
@@ -453,7 +433,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, v0}, Lcom/google/common/collect/Synchronized;->navigableMap(Ljava/util/NavigableMap;Ljava/lang/Object;)Ljava/util/NavigableMap;
 
     move-result-object p0
@@ -487,7 +466,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableMap;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableMap;-><init>(Ljava/util/NavigableMap;Ljava/lang/Object;)V
@@ -515,7 +493,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-static {p0, v0}, Lcom/google/common/collect/Synchronized;->navigableSet(Ljava/util/NavigableSet;Ljava/lang/Object;)Ljava/util/NavigableSet;
 
     move-result-object p0
@@ -547,7 +524,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedNavigableSet;-><init>(Ljava/util/NavigableSet;Ljava/lang/Object;)V
@@ -591,7 +567,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedEntry;
 
@@ -620,7 +595,6 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedQueue;
 
     if-eqz v0, :cond_0
@@ -661,7 +635,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedSet;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedSet;-><init>(Ljava/util/Set;Ljava/lang/Object;)V
@@ -691,7 +664,6 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSetMultimap;
 
     if-nez v0, :cond_1
@@ -702,7 +674,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedSetMultimap;
 
@@ -737,7 +708,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedSortedMap;-><init>(Ljava/util/SortedMap;Ljava/lang/Object;)V
@@ -765,7 +735,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Synchronized$SynchronizedSortedSet;-><init>(Ljava/util/SortedSet;Ljava/lang/Object;)V
@@ -795,14 +764,12 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;
 
     if-eqz v0, :cond_0
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/google/common/collect/Synchronized$SynchronizedSortedSetMultimap;
 
@@ -831,12 +798,10 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Ljava/util/SortedSet;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, Ljava/util/SortedSet;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->sortedSet(Ljava/util/SortedSet;Ljava/lang/Object;)Ljava/util/SortedSet;
@@ -845,13 +810,11 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     instance-of v0, p0, Ljava/util/Set;
 
     if-eqz v0, :cond_1
 
-    .line 4
     check-cast p0, Ljava/util/Set;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->set(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
@@ -860,13 +823,11 @@
 
     return-object p0
 
-    .line 5
     :cond_1
     instance-of v0, p0, Ljava/util/List;
 
     if-eqz v0, :cond_2
 
-    .line 6
     check-cast p0, Ljava/util/List;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->list(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;
@@ -875,7 +836,6 @@
 
     return-object p0
 
-    .line 7
     :cond_2
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->collection(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/Collection;
 
@@ -904,12 +864,10 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Ljava/util/SortedSet;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, Ljava/util/SortedSet;
 
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->sortedSet(Ljava/util/SortedSet;Ljava/lang/Object;)Ljava/util/SortedSet;
@@ -918,7 +876,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-static {p0, p1}, Lcom/google/common/collect/Synchronized;->set(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
 

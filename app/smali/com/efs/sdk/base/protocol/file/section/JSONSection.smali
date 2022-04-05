@@ -1,6 +1,5 @@
 .class public Lcom/efs/sdk/base/protocol/file/section/JSONSection;
 .super Lcom/efs/sdk/base/protocol/file/section/AbsSection;
-.source "SourceFile"
 
 
 # instance fields
@@ -13,10 +12,8 @@
 
     const-string v0, "json"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/efs/sdk/base/protocol/file/section/AbsSection;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p1, p0, Lcom/efs/sdk/base/protocol/file/section/AbsSection;->name:Ljava/lang/String;
 
     return-void
@@ -27,7 +24,6 @@
 .method public changeToStr()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -58,7 +54,6 @@
 .method public setBody(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/base/protocol/file/section/JSONSection;->body:Ljava/lang/String;
 
     return-void

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/j/e$a;
 .super Ljava/lang/Object;
-.source "DataUrlLoader.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public final Lcom/tencent/open/a/d$d;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # annotations
@@ -23,7 +22,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     invoke-direct {v0, p0}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V

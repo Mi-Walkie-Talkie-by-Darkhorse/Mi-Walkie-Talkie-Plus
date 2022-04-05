@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/protobuf/GeneratedMessageLite$1;
 .super Ljava/lang/Object;
-.source "GeneratedMessageLite.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/WireFormat$JavaType;->values()[Lcom/google/protobuf/WireFormat$JavaType;
 
     move-result-object v0

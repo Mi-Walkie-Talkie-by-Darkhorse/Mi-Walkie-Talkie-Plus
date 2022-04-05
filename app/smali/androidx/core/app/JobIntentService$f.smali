@@ -1,6 +1,5 @@
 .class final Landroidx/core/app/JobIntentService$f;
 .super Landroid/app/job/JobServiceEngine;
-.source "JobIntentService.java"
 
 # interfaces
 .implements Landroidx/core/app/JobIntentService$b;
@@ -39,17 +38,14 @@
 .method constructor <init>(Landroidx/core/app/JobIntentService;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/app/job/JobServiceEngine;-><init>(Landroid/app/Service;)V
 
-    .line 2
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Landroidx/core/app/JobIntentService$f;->b:Ljava/lang/Object;
 
-    .line 3
     iput-object p1, p0, Landroidx/core/app/JobIntentService$f;->a:Landroidx/core/app/JobIntentService;
 
     return-void
@@ -60,7 +56,6 @@
 .method public a()Landroid/os/IBinder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/app/job/JobServiceEngine;->getBinder()Landroid/os/IBinder;
 
     move-result-object v0
@@ -71,12 +66,10 @@
 .method public b()Landroidx/core/app/JobIntentService$e;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/JobIntentService$f;->b:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Landroidx/core/app/JobIntentService$f;->c:Landroid/app/job/JobParameters;
 
@@ -84,12 +77,10 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     monitor-exit v0
 
     return-object v2
 
-    .line 4
     :cond_0
     iget-object v1, p0, Landroidx/core/app/JobIntentService$f;->c:Landroid/app/job/JobParameters;
 
@@ -97,14 +88,12 @@
 
     move-result-object v1
 
-    .line 5
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     if-eqz v1, :cond_1
 
-    .line 6
     invoke-virtual {v1}, Landroid/app/job/JobWorkItem;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -117,7 +106,6 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Intent;->setExtrasClassLoader(Ljava/lang/ClassLoader;)V
 
-    .line 7
     new-instance v0, Landroidx/core/app/JobIntentService$f$a;
 
     invoke-direct {v0, p0, v1}, Landroidx/core/app/JobIntentService$f$a;-><init>(Landroidx/core/app/JobIntentService$f;Landroid/app/job/JobWorkItem;)V
@@ -130,7 +118,6 @@
     :catchall_0
     move-exception v1
 
-    .line 8
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -142,10 +129,8 @@
 .method public onStartJob(Landroid/app/job/JobParameters;)Z
     .locals 1
 
-    .line 1
     iput-object p1, p0, Landroidx/core/app/JobIntentService$f;->c:Landroid/app/job/JobParameters;
 
-    .line 2
     iget-object p1, p0, Landroidx/core/app/JobIntentService$f;->a:Landroidx/core/app/JobIntentService;
 
     const/4 v0, 0x0
@@ -160,25 +145,21 @@
 .method public onStopJob(Landroid/app/job/JobParameters;)Z
     .locals 2
 
-    .line 1
     iget-object p1, p0, Landroidx/core/app/JobIntentService$f;->a:Landroidx/core/app/JobIntentService;
 
     invoke-virtual {p1}, Landroidx/core/app/JobIntentService;->b()Z
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Landroidx/core/app/JobIntentService$f;->b:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x0
 
-    .line 3
     :try_start_0
     iput-object v1, p0, Landroidx/core/app/JobIntentService$f;->c:Landroid/app/job/JobParameters;
 
-    .line 4
     monitor-exit v0
 
     return p1

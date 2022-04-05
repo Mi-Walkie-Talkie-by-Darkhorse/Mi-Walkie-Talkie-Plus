@@ -1,6 +1,5 @@
 .class Landroidx/core/view/a0$a;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "ViewPropertyAnimatorCompat.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Landroidx/core/view/a0;Landroidx/core/view/b0;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/core/view/a0$a;->a:Landroidx/core/view/b0;
 
     iput-object p3, p0, Landroidx/core/view/a0$a;->b:Landroid/view/View;
@@ -39,7 +37,6 @@
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/core/view/a0$a;->a:Landroidx/core/view/b0;
 
     iget-object v0, p0, Landroidx/core/view/a0$a;->b:Landroid/view/View;
@@ -52,7 +49,6 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/core/view/a0$a;->a:Landroidx/core/view/b0;
 
     iget-object v0, p0, Landroidx/core/view/a0$a;->b:Landroid/view/View;
@@ -65,7 +61,6 @@
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/core/view/a0$a;->a:Landroidx/core/view/b0;
 
     iget-object v0, p0, Landroidx/core/view/a0$a;->b:Landroid/view/View;

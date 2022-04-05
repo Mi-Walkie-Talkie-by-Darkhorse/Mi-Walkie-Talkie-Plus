@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/statistics/internal/a$a;
 .super Ljava/lang/Object;
-.source "HeaderHelper.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/umeng/commonsdk/statistics/internal/a;
 
     const/4 v1, 0x0
@@ -37,7 +35,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +43,6 @@
 .method static synthetic a()Lcom/umeng/commonsdk/statistics/internal/a;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/statistics/internal/a$a;->a:Lcom/umeng/commonsdk/statistics/internal/a;
 
     return-object v0

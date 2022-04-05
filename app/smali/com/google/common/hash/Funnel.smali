@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/hash/Funnel;
 .super Ljava/lang/Object;
-.source "Funnel.java"
 
 # interfaces
 .implements Ljava/io/Serializable;

@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/stateless/d;
 .super Ljava/lang/Object;
-.source "UMSLUtils.java"
 
 
 # static fields
@@ -19,12 +18,10 @@
 
     new-array v0, v0, [B
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/umeng/commonsdk/stateless/d;->b:[B
 
-    .line 2
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -59,7 +56,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -74,7 +70,6 @@
 
     const/4 v1, 0x0
 
-    .line 6
     :try_start_0
     sget-object v2, Lcom/umeng/commonsdk/stateless/d;->c:Ljava/lang/Object;
 
@@ -83,7 +78,6 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 7
     :try_start_1
     new-instance v3, Ljava/io/File;
 
@@ -109,17 +103,14 @@
 
     invoke-direct {v3, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 8
     invoke-virtual {v3}, Ljava/io/File;->isDirectory()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 9
     invoke-virtual {v3}, Ljava/io/File;->mkdir()Z
 
-    .line 10
     :cond_0
     new-instance p1, Ljava/io/File;
 
@@ -145,25 +136,21 @@
 
     invoke-direct {p1, p2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 11
     new-instance p2, Ljava/io/FileOutputStream;
 
     invoke-direct {p2, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 12
     :try_start_2
     invoke-virtual {p2, p3}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 13
     invoke-virtual {p2}, Ljava/io/FileOutputStream;->close()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     const/4 v0, 0x0
 
-    .line 14
     :try_start_3
     monitor-exit v2
 
@@ -193,7 +180,6 @@
     :catchall_2
     move-exception p1
 
-    .line 15
     :try_start_5
     invoke-static {p0, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
     :try_end_5
@@ -201,7 +187,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 16
     :goto_1
     :try_start_6
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
@@ -213,7 +198,6 @@
     :catch_0
     move-exception p1
 
-    .line 17
     :try_start_7
     invoke-static {p0, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
     :try_end_7
@@ -228,13 +212,11 @@
 
     if-eqz v1, :cond_1
 
-    .line 18
     :try_start_8
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_4
 
-    .line 19
     :catchall_4
     :cond_1
     throw p0
@@ -250,7 +232,6 @@
 
     const/4 v0, 0x0
 
-    .line 36
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/stateless/d;->c:Ljava/lang/Object;
 
@@ -265,7 +246,6 @@
 
     new-array v4, v3, [Ljava/lang/Object;
 
-    .line 37
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -292,14 +272,12 @@
 
     if-eqz p0, :cond_2
 
-    .line 38
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
     if-eqz v2, :cond_2
 
-    .line 39
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -326,84 +304,71 @@
 
     move-result-object v2
 
-    .line 40
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v4
 
     if-nez v4, :cond_2
 
-    .line 41
     new-instance v4, Ljava/io/File;
 
     invoke-direct {v4, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 42
     invoke-virtual {v4}, Ljava/io/File;->isDirectory()Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
-    .line 43
     invoke-virtual {v4}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v2
 
     if-eqz v2, :cond_2
 
-    .line 44
     array-length v4, v2
 
     if-lez v4, :cond_2
 
     const/4 v4, 0x0
 
-    .line 45
     :goto_0
     array-length v5, v2
 
     if-ge v4, v5, :cond_2
 
-    .line 46
     aget-object v5, v2, v4
 
     if-eqz v5, :cond_1
 
-    .line 47
     invoke-virtual {v5}, Ljava/io/File;->isDirectory()Z
 
     move-result v7
 
     if-eqz v7, :cond_1
 
-    .line 48
     invoke-virtual {v5}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v5
 
     if-eqz v5, :cond_1
 
-    .line 49
     array-length v7, v5
 
     if-lez v7, :cond_1
 
-    .line 50
     new-instance v7, Lcom/umeng/commonsdk/stateless/d$1;
 
     invoke-direct {v7}, Lcom/umeng/commonsdk/stateless/d$1;-><init>()V
 
     invoke-static {v5, v7}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
-    .line 51
     aget-object v5, v5, v6
 
     if-eqz v5, :cond_1
 
     if-eqz v0, :cond_0
 
-    .line 52
     invoke-virtual {v0}, Ljava/io/File;->lastModified()J
 
     move-result-wide v7
@@ -429,7 +394,6 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    .line 53
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -452,7 +416,6 @@
 
     invoke-static {v2, v3}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 54
     monitor-exit v1
 
     goto :goto_1
@@ -472,7 +435,6 @@
     :catchall_1
     move-exception v1
 
-    .line 55
     invoke-static {p0, v1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
     :goto_1
@@ -491,7 +453,6 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 56
     :try_start_0
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -521,7 +482,6 @@
 
     goto :goto_0
 
-    .line 57
     :cond_1
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -572,7 +532,6 @@
 
     new-array p2, v1, [Ljava/lang/Object;
 
-    .line 58
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -597,13 +556,11 @@
 
     return-void
 
-    .line 59
     :cond_0
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 60
     invoke-virtual {v2}, Ljava/io/File;->isDirectory()Z
 
     move-result p1
@@ -614,7 +571,6 @@
 
     new-array p2, v1, [Ljava/lang/Object;
 
-    .line 61
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -639,7 +595,6 @@
 
     return-void
 
-    .line 62
     :cond_1
     sget-object p1, Lcom/umeng/commonsdk/stateless/d;->c:Ljava/lang/Object;
 
@@ -647,7 +602,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 63
     :try_start_1
     invoke-virtual {v2}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
@@ -657,7 +611,6 @@
 
     new-array v4, v1, [Ljava/lang/Object;
 
-    .line 64
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -690,7 +643,6 @@
 
     if-eqz v2, :cond_6
 
-    .line 65
     array-length v3, v2
 
     if-lt v3, p2, :cond_6
@@ -703,15 +655,12 @@
 
     aput-object v5, v4, v0
 
-    .line 66
     invoke-static {v3, v4}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 67
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 68
     array-length v4, v2
 
     const/4 v5, 0x0
@@ -723,7 +672,6 @@
 
     if-eqz v6, :cond_2
 
-    .line 69
     invoke-virtual {v3, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_2
@@ -731,7 +679,6 @@
 
     goto :goto_0
 
-    .line 70
     :cond_3
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -739,21 +686,18 @@
 
     if-lt v4, p2, :cond_7
 
-    .line 71
     new-instance v4, Lcom/umeng/commonsdk/stateless/d$4;
 
     invoke-direct {v4}, Lcom/umeng/commonsdk/stateless/d$4;-><init>()V
 
     invoke-static {v3, v4}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 72
     sget-boolean v4, Lcom/umeng/commonsdk/statistics/common/ULog;->DEBUG:Z
 
     if-eqz v4, :cond_4
 
     const/4 v4, 0x0
 
-    .line 73
     :goto_1
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -765,7 +709,6 @@
 
     new-array v6, v1, [Ljava/lang/Object;
 
-    .line 74
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -801,7 +744,6 @@
     :cond_4
     const/4 v4, 0x0
 
-    .line 75
     :goto_2
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -811,7 +753,6 @@
 
     if-gt v4, v5, :cond_7
 
-    .line 76
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -822,7 +763,6 @@
 
     new-array v6, v1, [Ljava/lang/Object;
 
-    .line 77
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -853,7 +793,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 78
     :try_start_2
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -863,7 +802,6 @@
 
     invoke-virtual {v5}, Ljava/io/File;->delete()Z
 
-    .line 79
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
@@ -885,7 +823,6 @@
 
     aput-object v4, v3, v0
 
-    .line 80
     invoke-static {p2, v3}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_7
@@ -893,7 +830,6 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 81
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -924,7 +860,6 @@
 
     invoke-static {p2, v1}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 82
     monitor-exit p1
 
     goto :goto_3
@@ -944,7 +879,6 @@
     :catchall_1
     move-exception p1
 
-    .line 83
     invoke-static {p0, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
     :goto_3
@@ -958,14 +892,12 @@
 
     return-void
 
-    .line 84
     :cond_0
     :try_start_0
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 85
     invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
 
     move-result p1
@@ -974,7 +906,6 @@
 
     return-void
 
-    .line 86
     :cond_1
     sget-object p1, Lcom/umeng/commonsdk/stateless/d;->c:Ljava/lang/Object;
 
@@ -982,7 +913,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 87
     :try_start_1
     new-instance v1, Lcom/umeng/commonsdk/stateless/d$5;
 
@@ -998,7 +928,6 @@
 
     if-eqz p2, :cond_6
 
-    .line 88
     array-length v2, p2
 
     if-lt v2, p3, :cond_6
@@ -1011,15 +940,12 @@
 
     aput-object v4, v3, v0
 
-    .line 89
     invoke-static {v2, v3}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 90
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 91
     array-length v3, p2
 
     const/4 v4, 0x0
@@ -1031,7 +957,6 @@
 
     if-eqz v5, :cond_2
 
-    .line 92
     invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_2
@@ -1039,7 +964,6 @@
 
     goto :goto_0
 
-    .line 93
     :cond_3
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -1047,21 +971,18 @@
 
     if-lt v3, p3, :cond_7
 
-    .line 94
     new-instance v3, Lcom/umeng/commonsdk/stateless/d$6;
 
     invoke-direct {v3}, Lcom/umeng/commonsdk/stateless/d$6;-><init>()V
 
     invoke-static {v2, v3}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 95
     sget-boolean v3, Lcom/umeng/commonsdk/statistics/common/ULog;->DEBUG:Z
 
     if-eqz v3, :cond_4
 
     const/4 v3, 0x0
 
-    .line 96
     :goto_1
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -1073,7 +994,6 @@
 
     new-array v5, v1, [Ljava/lang/Object;
 
-    .line 97
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -1109,7 +1029,6 @@
     :cond_4
     const/4 v3, 0x0
 
-    .line 98
     :goto_2
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
@@ -1119,7 +1038,6 @@
 
     if-gt v3, v4, :cond_7
 
-    .line 99
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -1130,7 +1048,6 @@
 
     new-array v5, v1, [Ljava/lang/Object;
 
-    .line 100
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -1161,7 +1078,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 101
     :try_start_2
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -1171,7 +1087,6 @@
 
     invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
-    .line 102
     invoke-virtual {v2, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
@@ -1193,7 +1108,6 @@
 
     aput-object v3, v2, v0
 
-    .line 103
     invoke-static {p3, v2}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_7
@@ -1201,7 +1115,6 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 104
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1232,7 +1145,6 @@
 
     invoke-static {p3, v1}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 105
     monitor-exit p1
 
     goto :goto_3
@@ -1252,7 +1164,6 @@
     :catchall_1
     move-exception p1
 
-    .line 106
     invoke-static {p0, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
     :goto_3
@@ -1285,7 +1196,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->isDirectory()Z
 
@@ -1293,20 +1203,17 @@
 
     if-eqz v1, :cond_2
 
-    .line 2
     invoke-virtual {p0}, Ljava/io/File;->list()[Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    .line 3
     :goto_0
     array-length v3, v1
 
     if-ge v2, v3, :cond_2
 
-    .line 4
     new-instance v3, Ljava/io/File;
 
     aget-object v4, v1, v2
@@ -1326,7 +1233,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
@@ -1343,7 +1249,6 @@
         }
     .end annotation
 
-    .line 20
     sget-object v0, Lcom/umeng/commonsdk/stateless/d;->c:Ljava/lang/Object;
 
     monitor-enter v0
@@ -1352,7 +1257,6 @@
 
     const/4 v2, 0x0
 
-    .line 21
     :try_start_0
     new-instance v3, Ljava/io/RandomAccessFile;
 
@@ -1364,29 +1268,24 @@
 
     move-result-object v2
 
-    .line 22
     sget-object v6, Ljava/nio/channels/FileChannel$MapMode;->READ_ONLY:Ljava/nio/channels/FileChannel$MapMode;
 
     const-wide/16 v7, 0x0
 
-    .line 23
     invoke-virtual {v2}, Ljava/nio/channels/FileChannel;->size()J
 
     move-result-wide v9
 
     move-object v5, v2
 
-    .line 24
     invoke-virtual/range {v5 .. v10}, Ljava/nio/channels/FileChannel;->map(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;
 
     move-result-object p0
 
-    .line 25
     invoke-virtual {p0}, Ljava/nio/MappedByteBuffer;->load()Ljava/nio/MappedByteBuffer;
 
     move-result-object p0
 
-    .line 26
     invoke-virtual {v2}, Ljava/nio/channels/FileChannel;->size()J
 
     move-result-wide v3
@@ -1395,14 +1294,12 @@
 
     new-array v3, v4, [B
 
-    .line 27
     invoke-virtual {p0}, Ljava/nio/MappedByteBuffer;->remaining()I
 
     move-result v4
 
     if-lez v4, :cond_0
 
-    .line 28
     invoke-virtual {p0}, Ljava/nio/MappedByteBuffer;->remaining()I
 
     move-result v4
@@ -1415,13 +1312,11 @@
     :cond_0
     if-eqz v2, :cond_1
 
-    .line 29
     :try_start_1
     invoke-virtual {v2}, Ljava/nio/channels/FileChannel;->close()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 30
     :catchall_0
     :cond_1
     :try_start_2
@@ -1446,7 +1341,6 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    .line 31
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -1469,7 +1363,6 @@
 
     invoke-static {v3, v4}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 32
     throw p0
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
@@ -1477,13 +1370,11 @@
     :goto_0
     if-eqz v2, :cond_2
 
-    .line 33
     :try_start_4
     invoke-virtual {v2}, Ljava/nio/channels/FileChannel;->close()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 34
     :catchall_2
     :cond_2
     :try_start_5
@@ -1492,7 +1383,6 @@
     :catchall_3
     move-exception p0
 
-    .line 35
     monitor-exit v0
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_3
@@ -1512,23 +1402,19 @@
 
     if-eqz p0, :cond_3
 
-    .line 107
     array-length v1, p0
 
     if-gtz v1, :cond_0
 
     goto :goto_2
 
-    .line 108
     :cond_0
     new-instance v1, Ljava/util/zip/Deflater;
 
     invoke-direct {v1}, Ljava/util/zip/Deflater;-><init>()V
 
-    .line 109
     invoke-virtual {v1, p0}, Ljava/util/zip/Deflater;->setInput([B)V
 
-    .line 110
     invoke-virtual {v1}, Ljava/util/zip/Deflater;->finish()V
 
     const/16 p0, 0x2000
@@ -1537,10 +1423,8 @@
 
     const/4 v2, 0x0
 
-    .line 111
     sput v2, Lcom/umeng/commonsdk/stateless/d;->a:I
 
-    .line 112
     :try_start_0
     new-instance v3, Ljava/io/ByteArrayOutputStream;
 
@@ -1548,7 +1432,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 113
     :goto_0
     :try_start_1
     invoke-virtual {v1}, Ljava/util/zip/Deflater;->finished()Z
@@ -1557,33 +1440,27 @@
 
     if-nez v0, :cond_1
 
-    .line 114
     invoke-virtual {v1, p0}, Ljava/util/zip/Deflater;->deflate([B)I
 
     move-result v0
 
-    .line 115
     sget v4, Lcom/umeng/commonsdk/stateless/d;->a:I
 
     add-int/2addr v4, v0
 
     sput v4, Lcom/umeng/commonsdk/stateless/d;->a:I
 
-    .line 116
     invoke-virtual {v3, p0, v2, v0}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
     goto :goto_0
 
-    .line 117
     :cond_1
     invoke-virtual {v1}, Ljava/util/zip/Deflater;->end()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 118
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
 
-    .line 119
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
@@ -1603,7 +1480,6 @@
     :goto_1
     if-eqz v0, :cond_2
 
-    .line 120
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->close()V
 
     :cond_2
@@ -1624,19 +1500,16 @@
 
     const-string v0, "AES/CBC/PKCS7Padding"
 
-    .line 121
     invoke-static {v0}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object v0
 
-    .line 122
     new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
 
     const-string v2, "AES"
 
     invoke-direct {v1, p1, v2}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 
-    .line 123
     new-instance p1, Ljavax/crypto/spec/IvParameterSpec;
 
     sget-object v2, Lcom/umeng/commonsdk/stateless/d;->b:[B
@@ -1645,10 +1518,8 @@
 
     const/4 v2, 0x1
 
-    .line 124
     invoke-virtual {v0, v2, v1, p1}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
 
-    .line 125
     invoke-virtual {v0, p0}, Ljavax/crypto/Cipher;->doFinal([B)[B
 
     move-result-object p0
@@ -1665,7 +1536,6 @@
 
     return-object v0
 
-    .line 22
     :cond_0
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/stateless/d;->c:Ljava/lang/Object;
@@ -1674,7 +1544,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 23
     :try_start_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1702,32 +1571,27 @@
 
     move-result-object v2
 
-    .line 24
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 25
     monitor-exit v1
 
     return-object v0
 
-    .line 26
     :cond_1
     new-instance v3, Ljava/io/File;
 
     invoke-direct {v3, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 27
     sget-object v2, Lcom/umeng/commonsdk/stateless/d;->c:Ljava/lang/Object;
 
     monitor-enter v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 28
     :try_start_2
     invoke-virtual {v3}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
@@ -1735,14 +1599,12 @@
 
     if-eqz v3, :cond_3
 
-    .line 29
     array-length v4, v3
 
     if-nez v4, :cond_2
 
     goto :goto_0
 
-    .line 30
     :cond_2
     new-instance v4, Lcom/umeng/commonsdk/stateless/d$2;
 
@@ -1752,7 +1614,6 @@
 
     const/4 v4, 0x0
 
-    .line 31
     aget-object v3, v3, v4
 
     monitor-exit v2
@@ -1766,7 +1627,6 @@
 
     return-object v3
 
-    .line 32
     :cond_3
     :goto_0
     :try_start_4
@@ -1784,7 +1644,6 @@
     :catchall_0
     move-exception v3
 
-    .line 33
     :try_start_6
     monitor-exit v2
     :try_end_6
@@ -1796,7 +1655,6 @@
     :catchall_1
     move-exception v2
 
-    .line 34
     monitor-exit v1
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_1
@@ -1809,7 +1667,6 @@
     :catchall_2
     move-exception v1
 
-    .line 35
     invoke-static {p0, v1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
     return-object v0
@@ -1818,7 +1675,6 @@
 .method public static b(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 40
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
@@ -1852,7 +1708,6 @@
 
     const/4 v2, 0x0
 
-    .line 1
     :try_start_0
     sget-object v3, Lcom/umeng/commonsdk/stateless/d;->c:Ljava/lang/Object;
 
@@ -1866,7 +1721,6 @@
 
     new-array v5, v0, [Ljava/lang/Object;
 
-    .line 2
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -1889,7 +1743,6 @@
 
     invoke-static {v4, v5}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     new-instance v4, Ljava/io/File;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -1916,17 +1769,14 @@
 
     invoke-direct {v4, v5}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 4
     invoke-virtual {v4}, Ljava/io/File;->isDirectory()Z
 
     move-result v5
 
     if-nez v5, :cond_0
 
-    .line 5
     invoke-virtual {v4}, Ljava/io/File;->mkdir()Z
 
-    .line 6
     :cond_0
     new-instance v5, Ljava/io/File;
 
@@ -1952,17 +1802,14 @@
 
     invoke-direct {v5, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 7
     invoke-virtual {v5}, Ljava/io/File;->isDirectory()Z
 
     move-result p1
 
     if-nez p1, :cond_1
 
-    .line 8
     invoke-virtual {v5}, Ljava/io/File;->mkdir()Z
 
-    .line 9
     :cond_1
     new-instance p1, Ljava/io/File;
 
@@ -1988,17 +1835,14 @@
 
     invoke-direct {p1, p2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 10
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result p2
 
     if-nez p2, :cond_2
 
-    .line 11
     invoke-virtual {p1}, Ljava/io/File;->createNewFile()Z
 
-    .line 12
     :cond_2
     new-instance p2, Ljava/io/FileOutputStream;
 
@@ -2006,16 +1850,13 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 13
     :try_start_2
     invoke-virtual {p2, p3}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 14
     invoke-virtual {p2}, Ljava/io/FileOutputStream;->close()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 15
     :try_start_3
     monitor-exit v3
     :try_end_3
@@ -2081,7 +1922,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 16
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -2104,7 +1944,6 @@
 
     invoke-static {p3, v0}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 17
     invoke-static {p0, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
     if-eqz v2, :cond_3
@@ -2121,7 +1960,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 18
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -2144,14 +1982,12 @@
 
     invoke-static {p3, v0}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 19
     invoke-static {p0, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_6
 
     if-eqz v2, :cond_3
 
-    .line 20
     :goto_4
     :try_start_7
     invoke-virtual {v2}, Ljava/io/FileOutputStream;->close()V
@@ -2174,7 +2010,6 @@
     :try_end_8
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_3
 
-    .line 21
     :catch_3
     :cond_4
     throw p0
@@ -2192,18 +2027,14 @@
     :try_start_0
     const-string v0, "MD5"
 
-    .line 36
     invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object v0
 
-    .line 37
     invoke-virtual {v0}, Ljava/security/MessageDigest;->reset()V
 
-    .line 38
     invoke-virtual {v0, p0}, Ljava/security/MessageDigest;->update([B)V
 
-    .line 39
     invoke-virtual {v0}, Ljava/security/MessageDigest;->digest()[B
 
     move-result-object p0
@@ -2221,7 +2052,6 @@
 .method public static c(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 19
     :try_start_0
     new-instance v0, Ljava/lang/String;
 
@@ -2253,7 +2083,6 @@
 
     return-object p0
 
-    .line 15
     :cond_0
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -2263,7 +2092,6 @@
 
     const/4 v2, 0x0
 
-    .line 16
     :goto_0
     array-length v3, p0
 
@@ -2273,7 +2101,6 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    .line 17
     aget-byte v4, p0, v2
 
     invoke-static {v4}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -2294,7 +2121,6 @@
 
     goto :goto_0
 
-    .line 18
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
@@ -2318,7 +2144,6 @@
 
     return-object v0
 
-    .line 1
     :cond_0
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/stateless/d;->c:Ljava/lang/Object;
@@ -2327,7 +2152,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 2
     :try_start_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -2355,32 +2179,27 @@
 
     move-result-object v2
 
-    .line 3
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 4
     monitor-exit v1
 
     return-object v0
 
-    .line 5
     :cond_1
     new-instance v3, Ljava/io/File;
 
     invoke-direct {v3, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 6
     sget-object v2, Lcom/umeng/commonsdk/stateless/d;->c:Ljava/lang/Object;
 
     monitor-enter v2
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 7
     :try_start_2
     invoke-virtual {v3}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
@@ -2388,14 +2207,12 @@
 
     if-eqz v3, :cond_3
 
-    .line 8
     array-length v4, v3
 
     if-nez v4, :cond_2
 
     goto :goto_0
 
-    .line 9
     :cond_2
     new-instance v4, Lcom/umeng/commonsdk/stateless/d$3;
 
@@ -2403,7 +2220,6 @@
 
     invoke-static {v3, v4}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
-    .line 10
     monitor-exit v2
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -2415,7 +2231,6 @@
 
     return-object v3
 
-    .line 11
     :cond_3
     :goto_0
     :try_start_4
@@ -2433,7 +2248,6 @@
     :catchall_0
     move-exception v3
 
-    .line 12
     :try_start_6
     monitor-exit v2
     :try_end_6
@@ -2445,7 +2259,6 @@
     :catchall_1
     move-exception v2
 
-    .line 13
     monitor-exit v1
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_1
@@ -2458,7 +2271,6 @@
     :catchall_2
     move-exception v1
 
-    .line 14
     invoke-static {p0, v1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
     return-object v0
@@ -2467,7 +2279,6 @@
 .method public static d(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -2481,7 +2292,6 @@
     :cond_0
     const-string v0, "envelope"
 
-    .line 2
     invoke-virtual {p0, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v0
@@ -2493,7 +2303,6 @@
     :cond_1
     const-string v0, "_"
 
-    .line 3
     invoke-virtual {p0, v0}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
 
     move-result v0
@@ -2502,7 +2311,6 @@
 
     const-string v2, "."
 
-    .line 4
     invoke-virtual {p0, v2}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
 
     move-result v2
@@ -2511,7 +2319,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 5
     invoke-virtual {p0, v0, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v1

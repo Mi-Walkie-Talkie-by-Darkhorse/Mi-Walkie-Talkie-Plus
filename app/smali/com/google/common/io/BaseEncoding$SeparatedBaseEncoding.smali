@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;
 .super Lcom/google/common/io/BaseEncoding;
-.source "BaseEncoding.java"
 
 
 # annotations
@@ -28,10 +27,8 @@
 .method constructor <init>(Lcom/google/common/io/BaseEncoding;Ljava/lang/String;I)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/io/BaseEncoding;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -40,7 +37,6 @@
 
     iput-object p1, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->delegate:Lcom/google/common/io/BaseEncoding;
 
-    .line 3
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -49,7 +45,6 @@
 
     iput-object p1, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->separator:Ljava/lang/String;
 
-    .line 4
     iput p3, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->afterEveryChars:I
 
     const/4 p1, 0x1
@@ -68,7 +63,6 @@
     :goto_0
     new-array p1, p1, [Ljava/lang/Object;
 
-    .line 5
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p3
@@ -79,7 +73,6 @@
 
     invoke-static {v1, p3, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 6
     invoke-static {p2}, Lcom/google/common/base/CharMatcher;->anyOf(Ljava/lang/CharSequence;)Lcom/google/common/base/CharMatcher;
 
     move-result-object p1
@@ -98,7 +91,6 @@
 .method decodingStream(Lcom/google/common/io/GwtWorkarounds$CharInput;)Lcom/google/common/io/GwtWorkarounds$ByteInput;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->delegate:Lcom/google/common/io/BaseEncoding;
 
     iget-object v1, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->separatorChars:Lcom/google/common/base/CharMatcher;
@@ -117,7 +109,6 @@
 .method encodingStream(Lcom/google/common/io/GwtWorkarounds$CharOutput;)Lcom/google/common/io/GwtWorkarounds$ByteOutput;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->delegate:Lcom/google/common/io/BaseEncoding;
 
     iget-object v1, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->separator:Ljava/lang/String;
@@ -138,7 +129,6 @@
 .method public lowerCase()Lcom/google/common/io/BaseEncoding;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->delegate:Lcom/google/common/io/BaseEncoding;
 
     invoke-virtual {v0}, Lcom/google/common/io/BaseEncoding;->lowerCase()Lcom/google/common/io/BaseEncoding;
@@ -159,7 +149,6 @@
 .method maxDecodedSize(I)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->delegate:Lcom/google/common/io/BaseEncoding;
 
     invoke-virtual {v0, p1}, Lcom/google/common/io/BaseEncoding;->maxDecodedSize(I)I
@@ -172,14 +161,12 @@
 .method maxEncodedSize(I)I
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->delegate:Lcom/google/common/io/BaseEncoding;
 
     invoke-virtual {v0, p1}, Lcom/google/common/io/BaseEncoding;->maxEncodedSize(I)I
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->separator:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -212,7 +199,6 @@
 .method public omitPadding()Lcom/google/common/io/BaseEncoding;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->delegate:Lcom/google/common/io/BaseEncoding;
 
     invoke-virtual {v0}, Lcom/google/common/io/BaseEncoding;->omitPadding()Lcom/google/common/io/BaseEncoding;
@@ -233,7 +219,6 @@
 .method padding()Lcom/google/common/base/CharMatcher;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->delegate:Lcom/google/common/io/BaseEncoding;
 
     invoke-virtual {v0}, Lcom/google/common/io/BaseEncoding;->padding()Lcom/google/common/base/CharMatcher;
@@ -246,7 +231,6 @@
 .method public toString()Ljava/lang/String;
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->delegate:Lcom/google/common/io/BaseEncoding;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -317,7 +301,6 @@
 .method public upperCase()Lcom/google/common/io/BaseEncoding;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->delegate:Lcom/google/common/io/BaseEncoding;
 
     invoke-virtual {v0}, Lcom/google/common/io/BaseEncoding;->upperCase()Lcom/google/common/io/BaseEncoding;
@@ -338,7 +321,6 @@
 .method public withPadChar(C)Lcom/google/common/io/BaseEncoding;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$SeparatedBaseEncoding;->delegate:Lcom/google/common/io/BaseEncoding;
 
     invoke-virtual {v0, p1}, Lcom/google/common/io/BaseEncoding;->withPadChar(C)Lcom/google/common/io/BaseEncoding;
@@ -359,7 +341,6 @@
 .method public withSeparator(Ljava/lang/String;I)Lcom/google/common/io/BaseEncoding;
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "Already have a separator"

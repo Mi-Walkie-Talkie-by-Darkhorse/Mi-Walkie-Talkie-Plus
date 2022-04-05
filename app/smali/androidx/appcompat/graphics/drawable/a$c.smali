@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/graphics/drawable/a$c;
 .super Landroidx/appcompat/graphics/drawable/d$a;
-.source "AnimatedStateListDrawableCompat.java"
 
 
 # annotations
@@ -52,24 +51,20 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/graphics/drawable/d$a;-><init>(Landroidx/appcompat/graphics/drawable/d$a;Landroidx/appcompat/graphics/drawable/d;Landroid/content/res/Resources;)V
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p2, p1, Landroidx/appcompat/graphics/drawable/a$c;->K:La/b/d;
 
     iput-object p2, p0, Landroidx/appcompat/graphics/drawable/a$c;->K:La/b/d;
 
-    .line 3
     iget-object p1, p1, Landroidx/appcompat/graphics/drawable/a$c;->L:La/b/h;
 
     iput-object p1, p0, Landroidx/appcompat/graphics/drawable/a$c;->L:La/b/h;
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance p1, La/b/d;
 
@@ -77,7 +72,6 @@
 
     iput-object p1, p0, Landroidx/appcompat/graphics/drawable/a$c;->K:La/b/d;
 
-    .line 5
     new-instance p1, La/b/h;
 
     invoke-direct {p1}, La/b/h;-><init>()V
@@ -113,12 +107,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p3}, Landroidx/appcompat/graphics/drawable/b$d;->a(Landroid/graphics/drawable/Drawable;)I
 
     move-result p3
 
-    .line 2
     invoke-static {p1, p2}, Landroidx/appcompat/graphics/drawable/a$c;->f(II)J
 
     move-result-wide v0
@@ -132,7 +124,6 @@
     :cond_0
     const-wide/16 v2, 0x0
 
-    .line 3
     :goto_0
     iget-object v4, p0, Landroidx/appcompat/graphics/drawable/a$c;->K:La/b/d;
 
@@ -148,12 +139,10 @@
 
     if-eqz p4, :cond_1
 
-    .line 4
     invoke-static {p2, p1}, Landroidx/appcompat/graphics/drawable/a$c;->f(II)J
 
     move-result-wide p1
 
-    .line 5
     iget-object p4, p0, Landroidx/appcompat/graphics/drawable/a$c;->K:La/b/d;
 
     const-wide v0, 0x100000000L
@@ -183,12 +172,10 @@
         .end annotation
     .end param
 
-    .line 6
     invoke-super {p0, p1, p2}, Landroidx/appcompat/graphics/drawable/d$a;->a([ILandroid/graphics/drawable/Drawable;)I
 
     move-result p1
 
-    .line 7
     iget-object p2, p0, Landroidx/appcompat/graphics/drawable/a$c;->L:La/b/h;
 
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -207,7 +194,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/appcompat/graphics/drawable/d$a;->a([I)I
 
     move-result p1
@@ -216,7 +202,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     sget-object p1, Landroid/util/StateSet;->WILD_CARD:[I
 
@@ -230,12 +215,10 @@
 .method c(II)I
     .locals 3
 
-    .line 1
     invoke-static {p1, p2}, Landroidx/appcompat/graphics/drawable/a$c;->f(II)J
 
     move-result-wide p1
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/a$c;->K:La/b/d;
 
     const-wide/16 v1, -0x1
@@ -268,7 +251,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     iget-object v1, p0, Landroidx/appcompat/graphics/drawable/a$c;->L:La/b/h;
 
@@ -293,12 +275,10 @@
 .method d(II)Z
     .locals 3
 
-    .line 2
     invoke-static {p1, p2}, Landroidx/appcompat/graphics/drawable/a$c;->f(II)J
 
     move-result-wide p1
 
-    .line 3
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/a$c;->K:La/b/d;
 
     const-wide/16 v1, -0x1
@@ -341,12 +321,10 @@
 .method e(II)Z
     .locals 3
 
-    .line 1
     invoke-static {p1, p2}, Landroidx/appcompat/graphics/drawable/a$c;->f(II)J
 
     move-result-wide p1
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/a$c;->K:La/b/d;
 
     const-wide/16 v1, -0x1
@@ -389,7 +367,6 @@
 .method m()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/a$c;->K:La/b/d;
 
     invoke-virtual {v0}, La/b/d;->clone()La/b/d;
@@ -398,7 +375,6 @@
 
     iput-object v0, p0, Landroidx/appcompat/graphics/drawable/a$c;->K:La/b/d;
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/a$c;->L:La/b/h;
 
     invoke-virtual {v0}, La/b/h;->clone()La/b/h;
@@ -415,7 +391,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Landroidx/appcompat/graphics/drawable/a;
 
     const/4 v1, 0x0
@@ -430,7 +405,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-instance v0, Landroidx/appcompat/graphics/drawable/a;
 
     invoke-direct {v0, p0, p1}, Landroidx/appcompat/graphics/drawable/a;-><init>(Landroidx/appcompat/graphics/drawable/a$c;Landroid/content/res/Resources;)V

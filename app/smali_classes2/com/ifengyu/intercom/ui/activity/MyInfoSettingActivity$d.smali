@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$d;
 .super Ljava/lang/Object;
-.source "MyInfoSettingActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/lite/dialog/list/d$c;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,10 +36,8 @@
 .method public a(Lcom/qmuiteam/qmui/widget/dialog/b;Landroid/view/View;ILjava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;
 
     invoke-virtual {p1, p3}, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;->e(I)V

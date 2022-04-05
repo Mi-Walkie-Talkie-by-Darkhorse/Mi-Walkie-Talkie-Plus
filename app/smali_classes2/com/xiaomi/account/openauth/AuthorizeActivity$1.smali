@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/openauth/AuthorizeActivity$1;
 .super Ljava/lang/Object;
-.source "AuthorizeActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/xiaomi/account/openauth/AuthorizeActivity;Landroid/webkit/WebView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/openauth/AuthorizeActivity$1;->this$0:Lcom/xiaomi/account/openauth/AuthorizeActivity;
 
     iput-object p2, p0, Lcom/xiaomi/account/openauth/AuthorizeActivity$1;->val$mWebView:Landroid/webkit/WebView;
@@ -42,7 +40,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/xiaomi/account/openauth/AuthorizeActivity$1;->val$mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {p1}, Landroid/webkit/WebView;->canGoBack()Z
@@ -51,14 +48,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/xiaomi/account/openauth/AuthorizeActivity$1;->val$mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {p1}, Landroid/webkit/WebView;->goBack()V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/xiaomi/account/openauth/AuthorizeActivity$1;->this$0:Lcom/xiaomi/account/openauth/AuthorizeActivity;
 

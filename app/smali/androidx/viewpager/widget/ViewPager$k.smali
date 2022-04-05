@@ -1,6 +1,5 @@
 .class public Landroidx/viewpager/widget/ViewPager$k;
 .super Ljava/lang/Object;
-.source "ViewPager.java"
 
 # interfaces
 .implements Landroidx/viewpager/widget/ViewPager$h;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

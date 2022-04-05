@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/FlowableSubscriber;
 .super Ljava/lang/Object;
-.source "FlowableSubscriber.java"
 
 # interfaces
 .implements Lc/a/c;

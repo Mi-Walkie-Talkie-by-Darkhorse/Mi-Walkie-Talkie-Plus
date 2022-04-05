@@ -1,6 +1,5 @@
 .class synthetic Lcom/xiaomi/infra/galaxy/fds/android/util/RequestFactory$1;
 .super Ljava/lang/Object;
-.source "RequestFactory.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/xiaomi/infra/galaxy/fds/model/HttpMethod;->values()[Lcom/xiaomi/infra/galaxy/fds/model/HttpMethod;
 
     move-result-object v0

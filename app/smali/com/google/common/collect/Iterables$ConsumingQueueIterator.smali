@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Iterables$ConsumingQueueIterator;
 .super Lcom/google/common/collect/AbstractIterator;
-.source "Iterables.java"
 
 
 # annotations
@@ -46,10 +45,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/collect/AbstractIterator;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/collect/Iterables$ConsumingQueueIterator;->queue:Ljava/util/Queue;
 
     return-void
@@ -58,7 +55,6 @@
 .method synthetic constructor <init>(Ljava/util/Queue;Lcom/google/common/collect/Iterables$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/Iterables$ConsumingQueueIterator;-><init>(Ljava/util/Queue;)V
 
     return-void
@@ -74,7 +70,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/google/common/collect/Iterables$ConsumingQueueIterator;->queue:Ljava/util/Queue;
 
@@ -86,7 +81,6 @@
 
     return-object v0
 
-    .line 2
     :catch_0
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractIterator;->endOfData()Ljava/lang/Object;
 

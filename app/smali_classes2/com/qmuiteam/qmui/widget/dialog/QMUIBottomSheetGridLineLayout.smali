@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetGridLineLayout;
 .super Landroid/widget/LinearLayout;
-.source "QMUIBottomSheetGridLineLayout.java"
 
 
 # instance fields
@@ -41,14 +40,12 @@
 .method private a(IIII)I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetGridLineLayout;->b:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -66,7 +63,6 @@
 
     sub-int p3, p1, p4
 
-    .line 3
     iget p4, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetGridLineLayout;->b:I
 
     const/4 v0, 0x3
@@ -81,10 +77,8 @@
 
     if-ge v0, p4, :cond_1
 
-    .line 4
     div-int p4, p3, p4
 
-    .line 5
     div-int p4, p3, p4
 
     :cond_1
@@ -92,7 +86,6 @@
 
     if-le p2, p3, :cond_2
 
-    .line 6
     div-int p2, p1, p4
 
     int-to-float p1, p1
@@ -116,7 +109,6 @@
 .method protected measureChild(Landroid/view/View;II)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroid/widget/LinearLayout;->measureChild(Landroid/view/View;II)V
 
     return-void
@@ -125,12 +117,10 @@
 .method protected onMeasure(II)V
     .locals 4
 
-    .line 1
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result v0
 
-    .line 2
     iget v1, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetGridLineLayout;->a:I
 
     iget v2, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetGridLineLayout;->e:I
@@ -141,12 +131,10 @@
 
     iput v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetGridLineLayout;->f:I
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetGridLineLayout;->c:Ljava/util/List;
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -165,7 +153,6 @@
 
     check-cast v1, Landroid/util/Pair;
 
-    .line 5
     iget-object v1, v1, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     move-object v2, v1
@@ -178,20 +165,17 @@
 
     if-eq v2, v3, :cond_0
 
-    .line 6
     check-cast v1, Landroid/widget/LinearLayout$LayoutParams;
 
     iput v3, v1, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
     goto :goto_0
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetGridLineLayout;->d:Ljava/util/List;
 
     if-eqz v0, :cond_3
 
-    .line 8
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -210,7 +194,6 @@
 
     check-cast v1, Landroid/util/Pair;
 
-    .line 9
     iget-object v1, v1, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     move-object v2, v1
@@ -223,14 +206,12 @@
 
     if-eq v2, v3, :cond_2
 
-    .line 10
     check-cast v1, Landroid/widget/LinearLayout$LayoutParams;
 
     iput v3, v1, Landroid/widget/LinearLayout$LayoutParams;->width:I
 
     goto :goto_1
 
-    .line 11
     :cond_3
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 

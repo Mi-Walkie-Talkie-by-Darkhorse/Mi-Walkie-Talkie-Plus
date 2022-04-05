@@ -1,6 +1,5 @@
 .class public final enum Landroidx/annotation/RestrictTo$Scope;
 .super Ljava/lang/Enum;
-.source "RestrictTo.java"
 
 
 # annotations
@@ -45,7 +44,6 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1
     new-instance v0, Landroidx/annotation/RestrictTo$Scope;
 
     const/4 v1, 0x0
@@ -56,7 +54,6 @@
 
     sput-object v0, Landroidx/annotation/RestrictTo$Scope;->a:Landroidx/annotation/RestrictTo$Scope;
 
-    .line 2
     new-instance v0, Landroidx/annotation/RestrictTo$Scope;
 
     const/4 v2, 0x1
@@ -67,7 +64,6 @@
 
     sput-object v0, Landroidx/annotation/RestrictTo$Scope;->b:Landroidx/annotation/RestrictTo$Scope;
 
-    .line 3
     new-instance v0, Landroidx/annotation/RestrictTo$Scope;
 
     const/4 v3, 0x2
@@ -78,7 +74,6 @@
 
     sput-object v0, Landroidx/annotation/RestrictTo$Scope;->c:Landroidx/annotation/RestrictTo$Scope;
 
-    .line 4
     new-instance v0, Landroidx/annotation/RestrictTo$Scope;
 
     const/4 v4, 0x3
@@ -89,7 +84,6 @@
 
     sput-object v0, Landroidx/annotation/RestrictTo$Scope;->d:Landroidx/annotation/RestrictTo$Scope;
 
-    .line 5
     new-instance v0, Landroidx/annotation/RestrictTo$Scope;
 
     const/4 v5, 0x4
@@ -100,7 +94,6 @@
 
     sput-object v0, Landroidx/annotation/RestrictTo$Scope;->e:Landroidx/annotation/RestrictTo$Scope;
 
-    .line 6
     new-instance v0, Landroidx/annotation/RestrictTo$Scope;
 
     const/4 v6, 0x5
@@ -115,7 +108,6 @@
 
     new-array v7, v7, [Landroidx/annotation/RestrictTo$Scope;
 
-    .line 7
     sget-object v8, Landroidx/annotation/RestrictTo$Scope;->a:Landroidx/annotation/RestrictTo$Scope;
 
     aput-object v8, v7, v1
@@ -151,7 +143,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -160,7 +151,6 @@
 .method public static valueOf(Ljava/lang/String;)Landroidx/annotation/RestrictTo$Scope;
     .locals 1
 
-    .line 1
     const-class v0, Landroidx/annotation/RestrictTo$Scope;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -175,7 +165,6 @@
 .method public static values()[Landroidx/annotation/RestrictTo$Scope;
     .locals 1
 
-    .line 1
     sget-object v0, Landroidx/annotation/RestrictTo$Scope;->g:[Landroidx/annotation/RestrictTo$Scope;
 
     invoke-virtual {v0}, [Landroidx/annotation/RestrictTo$Scope;->clone()Ljava/lang/Object;

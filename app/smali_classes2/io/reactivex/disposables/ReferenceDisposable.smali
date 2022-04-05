@@ -1,6 +1,5 @@
 .class abstract Lio/reactivex/disposables/ReferenceDisposable;
 .super Ljava/util/concurrent/atomic/AtomicReference;
-.source "ReferenceDisposable.java"
 
 # interfaces
 .implements Lio/reactivex/disposables/Disposable;
@@ -34,7 +33,6 @@
 
     const-string v0, "value is null"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -49,7 +47,6 @@
 .method public final dispose()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -58,14 +55,12 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p0, v0}, Lio/reactivex/disposables/ReferenceDisposable;->onDisposed(Ljava/lang/Object;)V
 
     :cond_0
@@ -75,7 +70,6 @@
 .method public final isDisposed()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0

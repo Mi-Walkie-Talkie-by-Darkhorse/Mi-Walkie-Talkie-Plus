@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineMapDownloadListener;
 .super Ljava/lang/Object;
-.source "OfflineMapManager.java"
 
 
 # annotations

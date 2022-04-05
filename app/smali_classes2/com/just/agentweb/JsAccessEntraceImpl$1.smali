@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/JsAccessEntraceImpl$1;
 .super Ljava/lang/Object;
-.source "JsAccessEntraceImpl.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/just/agentweb/JsAccessEntraceImpl;Ljava/lang/String;Landroid/webkit/ValueCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/JsAccessEntraceImpl$1;->this$0:Lcom/just/agentweb/JsAccessEntraceImpl;
 
     iput-object p2, p0, Lcom/just/agentweb/JsAccessEntraceImpl$1;->val$s:Ljava/lang/String;
@@ -46,7 +44,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/JsAccessEntraceImpl$1;->this$0:Lcom/just/agentweb/JsAccessEntraceImpl;
 
     iget-object v1, p0, Lcom/just/agentweb/JsAccessEntraceImpl$1;->val$s:Ljava/lang/String;

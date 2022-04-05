@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/map/f/a/c;
 .super Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;
-.source "MyLocationOverlay.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;Lorg/osmdroid/views/MapView;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;-><init>(Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;Lorg/osmdroid/views/MapView;)V
 
-    .line 2
     new-instance p1, Lorg/osmdroid/util/GeoPoint;
 
     const/4 v0, 0x0
@@ -23,7 +20,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/f/a/c;->a:Lorg/osmdroid/util/GeoPoint;
 
-    .line 3
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -40,12 +36,10 @@
 
     check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 4
     invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -60,15 +54,12 @@
 
     check-cast p2, Landroid/graphics/drawable/BitmapDrawable;
 
-    .line 6
     invoke-virtual {p2}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
     move-result-object p2
 
-    .line 7
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/map/f/a/c;->setDirectionArrow(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
 
-    .line 8
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mCirclePaint:Landroid/graphics/Paint;
 
     const p2, -0xbb443d
@@ -83,10 +74,8 @@
 .method public onLocationChanged(Landroid/location/Location;Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1, p2}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->onLocationChanged(Landroid/location/Location;Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;)V
 
-    .line 2
     check-cast p2, Lcom/ifengyu/intercom/ui/map/f/a/d;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/map/f/a/d;->a()Z
@@ -105,7 +94,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 3
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/map/f/a/c;->a:Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p1}, Landroid/location/Location;->getLatitude()D
@@ -114,7 +102,6 @@
 
     invoke-virtual {p2, v0, v1}, Lorg/osmdroid/util/GeoPoint;->setLatitude(D)V
 
-    .line 4
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/map/f/a/c;->a:Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p1}, Landroid/location/Location;->getLongitude()D
@@ -123,7 +110,6 @@
 
     invoke-virtual {p2, v0, v1}, Lorg/osmdroid/util/GeoPoint;->setLongitude(D)V
 
-    .line 5
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
@@ -141,13 +127,10 @@
 .method public setDirectionArrow(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mPersonBitmap:Landroid/graphics/Bitmap;
 
-    .line 2
     iput-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDirectionArrowBitmap:Landroid/graphics/Bitmap;
 
-    .line 3
     invoke-virtual {p2}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result p1
@@ -160,7 +143,6 @@
 
     iput p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDirectionArrowCenterX:F
 
-    .line 4
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDirectionArrowBitmap:Landroid/graphics/Bitmap;
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
@@ -179,12 +161,10 @@
 .method public stopLocationProvider()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationProvider:Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;->stopLocationProvider()V
 
     :cond_0

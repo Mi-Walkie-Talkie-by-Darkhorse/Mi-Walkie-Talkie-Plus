@@ -1,6 +1,5 @@
 .class public final Lcom/meituan/android/walle/f;
 .super Ljava/lang/Object;
-.source "WalleChannelReader.java"
 
 
 # direct methods
@@ -15,7 +14,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
@@ -25,7 +23,6 @@
 
     return-object v0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Landroid/content/pm/ApplicationInfo;->sourceDir:Ljava/lang/String;
     :try_end_0
@@ -48,7 +45,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/meituan/android/walle/f;->b(Landroid/content/Context;)Lcom/meituan/android/walle/b;
 
     move-result-object p0
@@ -57,7 +53,6 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/meituan/android/walle/b;->a()Ljava/lang/String;
 
@@ -75,12 +70,10 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/meituan/android/walle/f;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 2
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -91,7 +84,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/io/File;
 

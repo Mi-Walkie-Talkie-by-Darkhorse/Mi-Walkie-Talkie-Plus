@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlinx/android/parcel/Parcelize;
 .super Ljava/lang/Object;
-.source "Parcelize.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

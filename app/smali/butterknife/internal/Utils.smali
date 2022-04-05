@@ -1,6 +1,5 @@
 .class public final Lbutterknife/internal/Utils;
 .super Ljava/lang/Object;
-.source "Utils.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
@@ -24,10 +22,8 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/AssertionError;
 
     const-string v1, "No instances."
@@ -50,7 +46,6 @@
     .annotation runtime Ljava/lang/SafeVarargs;
     .end annotation
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -60,14 +55,12 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 2
     aget-object v3, p0, v1
 
     if-eqz v3, :cond_0
 
     add-int/lit8 v4, v2, 0x1
 
-    .line 3
     aput-object v3, p0, v2
 
     move v2, v4
@@ -82,7 +75,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_2
     invoke-static {p0, v2}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
@@ -109,7 +101,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-virtual {p5, p0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -122,7 +113,6 @@
     :catch_0
     move-exception p0
 
-    .line 2
     new-instance p5, Ljava/lang/IllegalStateException;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -187,7 +177,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-virtual {p3, p0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -200,12 +189,10 @@
     :catch_0
     move-exception p3
 
-    .line 2
     invoke-static {p0, p1}, Lbutterknife/internal/Utils;->getResourceEntryName(Landroid/view/View;I)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 3
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -262,12 +249,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p0
 
-    .line 2
     invoke-static {p0, p1, p2, p3}, Lbutterknife/internal/Utils;->castView(Landroid/view/View;ILjava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p0
@@ -282,7 +267,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -291,13 +275,11 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     invoke-static {p0, p1}, Lbutterknife/internal/Utils;->getResourceEntryName(Landroid/view/View;I)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 3
     new-instance v0, Ljava/lang/IllegalStateException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -354,12 +336,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lbutterknife/internal/Utils;->findRequiredView(Landroid/view/View;ILjava/lang/String;)Landroid/view/View;
 
     move-result-object p0
 
-    .line 2
     invoke-static {p0, p1, p2, p3}, Lbutterknife/internal/Utils;->castView(Landroid/view/View;ILjava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p0
@@ -376,10 +356,8 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     sget-object v0, Lbutterknife/internal/Utils;->VALUE:Landroid/util/TypedValue;
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -388,21 +366,18 @@
 
     invoke-virtual {p0, p1, v0, v1}, Landroid/content/res/Resources;->getValue(ILandroid/util/TypedValue;Z)V
 
-    .line 3
     iget p0, v0, Landroid/util/TypedValue;->type:I
 
     const/4 v1, 0x4
 
     if-ne p0, v1, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Landroid/util/TypedValue;->getFloat()F
 
     move-result p0
 
     return p0
 
-    .line 5
     :cond_0
     new-instance p0, Landroid/content/res/Resources$NotFoundException;
 
@@ -426,7 +401,6 @@
 
     iget p1, v0, Landroid/util/TypedValue;->type:I
 
-    .line 6
     invoke-static {p1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -453,7 +427,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->isInEditMode()Z
 
     move-result v0
@@ -464,7 +437,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -494,7 +466,6 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object v0
@@ -509,12 +480,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {p0, p1}, Landroidx/core/content/b;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
-    .line 3
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -523,7 +492,6 @@
 
     move-result-object p1
 
-    .line 4
     sget-object p2, Lbutterknife/internal/Utils;->VALUE:Landroid/util/TypedValue;
 
     iget p2, p2, Landroid/util/TypedValue;->resourceId:I
@@ -532,12 +500,10 @@
 
     move-result p0
 
-    .line 5
     invoke-static {p1, p0}, Landroidx/core/graphics/drawable/a;->b(Landroid/graphics/drawable/Drawable;I)V
 
     return-object p1
 
-    .line 6
     :cond_0
     new-instance p1, Landroid/content/res/Resources$NotFoundException;
 
@@ -549,7 +515,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -594,7 +559,6 @@
     .annotation runtime Ljava/lang/SafeVarargs;
     .end annotation
 
-    .line 1
     new-instance v0, Lbutterknife/internal/ImmutableList;
 
     invoke-static {p0}, Lbutterknife/internal/Utils;->arrayFilteringNull([Ljava/lang/Object;)[Ljava/lang/Object;

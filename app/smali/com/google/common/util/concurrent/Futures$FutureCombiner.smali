@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/common/util/concurrent/Futures$FutureCombiner;
 .super Ljava/lang/Object;
-.source "Futures.java"
 
 
 # annotations

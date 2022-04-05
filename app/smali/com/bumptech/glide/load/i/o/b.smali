@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/i/o/b;
 .super Ljava/lang/Object;
-.source "MediaStoreUtil.java"
 
 
 # direct methods
@@ -35,7 +34,6 @@
 .method public static a(Landroid/net/Uri;)Z
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/bumptech/glide/load/i/o/b;->b(Landroid/net/Uri;)Z
 
     move-result v0
@@ -64,7 +62,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v0
@@ -77,7 +74,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/net/Uri;->getAuthority()Ljava/lang/String;
 
     move-result-object p0
@@ -104,7 +100,6 @@
 .method public static c(Landroid/net/Uri;)Z
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/bumptech/glide/load/i/o/b;->b(Landroid/net/Uri;)Z
 
     move-result v0
@@ -131,7 +126,6 @@
 .method private static d(Landroid/net/Uri;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/net/Uri;->getPathSegments()Ljava/util/List;
 
     move-result-object p0

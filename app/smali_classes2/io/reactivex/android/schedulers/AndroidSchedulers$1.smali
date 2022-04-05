@@ -1,6 +1,5 @@
 .class final Lio/reactivex/android/schedulers/AndroidSchedulers$1;
 .super Ljava/lang/Object;
-.source "AndroidSchedulers.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,7 +44,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lio/reactivex/android/schedulers/AndroidSchedulers$MainHolder;->DEFAULT:Lio/reactivex/Scheduler;
 
     return-object v0
@@ -60,7 +57,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/schedulers/AndroidSchedulers$1;->call()Lio/reactivex/Scheduler;
 
     move-result-object v0

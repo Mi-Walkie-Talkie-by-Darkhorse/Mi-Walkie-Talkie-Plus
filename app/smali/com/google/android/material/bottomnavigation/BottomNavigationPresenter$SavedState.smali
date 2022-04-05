@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;
 .super Ljava/lang/Object;
-.source "BottomNavigationPresenter.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -42,7 +41,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState$1;
 
     invoke-direct {v0}, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState$1;-><init>()V
@@ -55,7 +53,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -68,17 +65,14 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->selectedItemId:I
 
-    .line 4
     const-class v0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -113,12 +107,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget p2, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->selectedItemId:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2
     iget-object p2, p0, Lcom/google/android/material/bottomnavigation/BottomNavigationPresenter$SavedState;->badgeSavedStates:Lcom/google/android/material/internal/ParcelableSparseArray;
 
     const/4 v0, 0x0

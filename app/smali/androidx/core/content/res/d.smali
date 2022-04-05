@@ -1,6 +1,5 @@
 .class final Landroidx/core/content/res/d;
 .super Ljava/lang/Object;
-.source "GrowingArrayUtils.java"
 
 
 # direct methods
@@ -27,12 +26,10 @@
 
     add-int/lit8 v0, p1, 0x1
 
-    .line 7
     array-length v1, p0
 
     if-le v0, v1, :cond_0
 
-    .line 8
     invoke-static {p1}, Landroidx/core/content/res/d;->a(I)I
 
     move-result v0
@@ -41,12 +38,10 @@
 
     const/4 v1, 0x0
 
-    .line 9
     invoke-static {p0, v1, v0, v1, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     move-object p0, v0
 
-    .line 10
     :cond_0
     aput p2, p0, p1
 
@@ -65,12 +60,10 @@
 
     add-int/lit8 v0, p1, 0x1
 
-    .line 1
     array-length v1, p0
 
     if-le v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -79,12 +72,10 @@
 
     move-result-object v0
 
-    .line 3
     invoke-static {p1}, Landroidx/core/content/res/d;->a(I)I
 
     move-result v1
 
-    .line 4
     invoke-static {v0, v1}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
 
     move-result-object v0
@@ -93,12 +84,10 @@
 
     const/4 v1, 0x0
 
-    .line 5
     invoke-static {p0, v1, v0, v1, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     move-object p0, v0
 
-    .line 6
     :cond_0
     aput-object p2, p0, p1
 

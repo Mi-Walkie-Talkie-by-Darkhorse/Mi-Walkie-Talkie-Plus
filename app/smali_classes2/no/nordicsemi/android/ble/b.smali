@@ -1,6 +1,5 @@
 .class public final synthetic Lno/nordicsemi/android/ble/b;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/u2/a;

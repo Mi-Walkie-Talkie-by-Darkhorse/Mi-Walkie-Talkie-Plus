@@ -1,6 +1,5 @@
 .class public abstract Landroidx/viewpager2/adapter/a;
 .super Landroidx/recyclerview/widget/RecyclerView$g;
-.source "FragmentStateAdapter.java"
 
 # interfaces
 .implements Landroidx/viewpager2/adapter/c;

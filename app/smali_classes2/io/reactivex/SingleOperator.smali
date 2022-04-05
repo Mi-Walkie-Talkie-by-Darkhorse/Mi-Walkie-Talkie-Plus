@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/SingleOperator;
 .super Ljava/lang/Object;
-.source "SingleOperator.java"
 
 
 # annotations

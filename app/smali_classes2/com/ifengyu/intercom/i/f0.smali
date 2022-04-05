@@ -1,13 +1,11 @@
 .class public Lcom/ifengyu/intercom/i/f0;
 .super Ljava/lang/Object;
-.source "PopupUtils.java"
 
 
 # direct methods
 .method public static a(Landroid/widget/PopupWindow;)Landroid/view/View;
     .locals 2
 
-    .line 7
     :try_start_0
     invoke-virtual {p0}, Landroid/widget/PopupWindow;->getBackground()Landroid/graphics/drawable/Drawable;
 
@@ -17,12 +15,10 @@
 
     if-nez v0, :cond_1
 
-    .line 8
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-lt v0, v1, :cond_0
 
-    .line 9
     invoke-virtual {p0}, Landroid/widget/PopupWindow;->getContentView()Landroid/view/View;
 
     move-result-object p0
@@ -35,7 +31,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     invoke-virtual {p0}, Landroid/widget/PopupWindow;->getContentView()Landroid/view/View;
 
@@ -43,13 +38,11 @@
 
     goto :goto_0
 
-    .line 11
     :cond_1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-lt v0, v1, :cond_2
 
-    .line 12
     invoke-virtual {p0}, Landroid/widget/PopupWindow;->getContentView()Landroid/view/View;
 
     move-result-object p0
@@ -66,7 +59,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_2
     invoke-virtual {p0}, Landroid/widget/PopupWindow;->getContentView()Landroid/view/View;
 
@@ -94,38 +86,32 @@
 
     const-string v0, "window"
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/view/WindowManager;
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/intercom/i/f0;->a(Landroid/widget/PopupWindow;)Landroid/view/View;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/WindowManager$LayoutParams;
 
-    .line 4
     iget v1, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
     or-int/lit8 v1, v1, 0x2
 
     iput v1, v0, Landroid/view/WindowManager$LayoutParams;->flags:I
 
-    .line 5
     iput p2, v0, Landroid/view/WindowManager$LayoutParams;->dimAmount:F
 
-    .line 6
     invoke-interface {p0, p1, v0}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_0

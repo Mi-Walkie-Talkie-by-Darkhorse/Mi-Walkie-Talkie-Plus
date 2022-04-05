@@ -1,6 +1,5 @@
 .class final Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$2;
 .super Ljava/io/OutputStream;
-.source "DiskLruCache.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
     return-void

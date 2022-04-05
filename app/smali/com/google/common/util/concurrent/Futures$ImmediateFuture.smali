@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/util/concurrent/Futures$ImmediateFuture;
 .super Ljava/lang/Object;
-.source "Futures.java"
 
 # interfaces
 .implements Lcom/google/common/util/concurrent/ListenableFuture;
@@ -36,7 +35,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/common/util/concurrent/Futures$ImmediateFuture;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -55,7 +53,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -64,7 +61,6 @@
 .method synthetic constructor <init>(Lcom/google/common/util/concurrent/Futures$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Futures$ImmediateFuture;-><init>()V
 
     return-void
@@ -77,15 +73,12 @@
 
     const-string v0, "Runnable was null."
 
-    .line 1
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "Executor was null."
 
-    .line 2
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     :try_start_0
     invoke-interface {p2, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
     :try_end_0
@@ -96,7 +89,6 @@
     :catch_0
     move-exception v0
 
-    .line 4
     sget-object v1, Lcom/google/common/util/concurrent/Futures$ImmediateFuture;->log:Ljava/util/logging/Logger;
 
     sget-object v2, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
@@ -193,10 +185,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/Futures$ImmediateFuture;->get()Ljava/lang/Object;
 
     move-result-object p1

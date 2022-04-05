@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$c$a$a;
 .super Ljava/lang/Object;
-.source "GoogleMapDownLoadedActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$c$a;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$c$a$a;->b:Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$c$a;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownLoadedActivity$c$a$a;->a:Ljava/lang/String;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 7
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -89,7 +86,6 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 2
     new-instance v1, Ljava/io/File;
 
     new-instance v5, Ljava/lang/StringBuilder;
@@ -124,14 +120,12 @@
 
     invoke-direct {v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 3
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
     :cond_0

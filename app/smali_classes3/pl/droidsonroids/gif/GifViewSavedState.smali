@@ -1,6 +1,5 @@
 .class Lpl/droidsonroids/gif/GifViewSavedState;
 .super Landroid/view/View$BaseSavedState;
-.source "GifViewSavedState.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lpl/droidsonroids/gif/GifViewSavedState$a;
 
     invoke-direct {v0}, Lpl/droidsonroids/gif/GifViewSavedState$a;-><init>()V
@@ -36,10 +34,8 @@
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 3
 
-    .line 9
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 10
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
@@ -50,7 +46,6 @@
 
     const/4 v0, 0x0
 
-    .line 11
     :goto_0
     iget-object v1, p0, Lpl/droidsonroids/gif/GifViewSavedState;->a:[[J
 
@@ -58,7 +53,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 12
     invoke-virtual {p1}, Landroid/os/Parcel;->createLongArray()[J
 
     move-result-object v2
@@ -76,7 +70,6 @@
 .method synthetic constructor <init>(Landroid/os/Parcel;Lpl/droidsonroids/gif/GifViewSavedState$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lpl/droidsonroids/gif/GifViewSavedState;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -85,14 +78,12 @@
 .method constructor <init>(Landroid/os/Parcelable;[J)V
     .locals 1
 
-    .line 13
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     const/4 p1, 0x1
 
     new-array p1, p1, [[J
 
-    .line 14
     iput-object p1, p0, Lpl/droidsonroids/gif/GifViewSavedState;->a:[[J
 
     const/4 v0, 0x0
@@ -105,10 +96,8 @@
 .method varargs constructor <init>(Landroid/os/Parcelable;[Landroid/graphics/drawable/Drawable;)V
     .locals 2
 
-    .line 2
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
-    .line 3
     array-length p1, p2
 
     new-array p1, p1, [[J
@@ -117,21 +106,17 @@
 
     const/4 p1, 0x0
 
-    .line 4
     :goto_0
     array-length v0, p2
 
     if-ge p1, v0, :cond_1
 
-    .line 5
     aget-object v0, p2, p1
 
-    .line 6
     instance-of v1, v0, Lpl/droidsonroids/gif/c;
 
     if-eqz v1, :cond_0
 
-    .line 7
     iget-object v1, p0, Lpl/droidsonroids/gif/GifViewSavedState;->a:[[J
 
     check-cast v0, Lpl/droidsonroids/gif/c;
@@ -146,7 +131,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_0
     iget-object v0, p0, Lpl/droidsonroids/gif/GifViewSavedState;->a:[[J
 
@@ -168,7 +152,6 @@
 .method a(Landroid/graphics/drawable/Drawable;I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/gif/GifViewSavedState;->a:[[J
 
     aget-object v1, v0, p2
@@ -179,10 +162,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 2
     check-cast p1, Lpl/droidsonroids/gif/c;
 
-    .line 3
     iget-object v1, p1, Lpl/droidsonroids/gif/c;->g:Lpl/droidsonroids/gif/GifInfoHandle;
 
     aget-object p2, v0, p2
@@ -208,17 +189,14 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 2
     iget-object p2, p0, Lpl/droidsonroids/gif/GifViewSavedState;->a:[[J
 
     array-length p2, p2
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 3
     iget-object p2, p0, Lpl/droidsonroids/gif/GifViewSavedState;->a:[[J
 
     array-length v0, p2
@@ -230,7 +208,6 @@
 
     aget-object v2, p2, v1
 
-    .line 4
     invoke-virtual {p1, v2}, Landroid/os/Parcel;->writeLongArray([J)V
 
     add-int/lit8 v1, v1, 0x1

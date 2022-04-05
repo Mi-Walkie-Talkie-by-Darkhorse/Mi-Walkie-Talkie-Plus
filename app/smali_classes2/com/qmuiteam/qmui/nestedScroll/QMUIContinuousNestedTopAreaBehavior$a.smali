@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopAreaBehavior$a;
 .super Ljava/lang/Object;
-.source "QMUIContinuousNestedTopAreaBehavior.java"
 
 
 # annotations

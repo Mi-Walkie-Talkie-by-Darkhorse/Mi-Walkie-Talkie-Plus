@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$j;
 .super Ljava/lang/Object;
-.source "SwipeRefreshLayout.java"
 
 
 # annotations

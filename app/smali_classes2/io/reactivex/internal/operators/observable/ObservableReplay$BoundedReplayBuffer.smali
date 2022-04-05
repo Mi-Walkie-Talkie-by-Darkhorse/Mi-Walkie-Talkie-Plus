@@ -1,6 +1,5 @@
 .class abstract Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;
 .super Ljava/util/concurrent/atomic/AtomicReference;
-.source "ObservableReplay.java"
 
 # interfaces
 .implements Lio/reactivex/internal/operators/observable/ObservableReplay$ReplayBuffer;
@@ -44,20 +43,16 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;-><init>(Ljava/lang/Object;)V
 
-    .line 3
     iput-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->tail:Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
-    .line 4
     invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
     return-void
@@ -68,15 +63,12 @@
 .method final addLast(Lio/reactivex/internal/operators/observable/ObservableReplay$Node;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->tail:Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->tail:Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
-    .line 3
     iget p1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->size:I
 
     add-int/lit8 p1, p1, 0x1
@@ -96,12 +88,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->getHead()Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
     move-result-object v0
 
-    .line 2
     :goto_0
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -111,15 +101,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object v1, v0, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;->value:Ljava/lang/Object;
 
-    .line 4
     invoke-virtual {p0, v1}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->leaveTransform(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 5
     invoke-static {v1}, Lio/reactivex/internal/util/NotificationLite;->isComplete(Ljava/lang/Object;)Z
 
     move-result v2
@@ -134,7 +121,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_0
     invoke-static {v1}, Lio/reactivex/internal/util/NotificationLite;->getValue(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -152,7 +138,6 @@
 .method public final complete()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lio/reactivex/internal/util/NotificationLite;->complete()Ljava/lang/Object;
 
     move-result-object v0
@@ -161,15 +146,12 @@
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
     invoke-direct {v1, v0}, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;-><init>(Ljava/lang/Object;)V
 
-    .line 3
     invoke-virtual {p0, v1}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->addLast(Lio/reactivex/internal/operators/observable/ObservableReplay$Node;)V
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->truncateFinal()V
 
     return-void
@@ -184,7 +166,6 @@
 .method public final error(Ljava/lang/Throwable;)V
     .locals 1
 
-    .line 1
     invoke-static {p1}, Lio/reactivex/internal/util/NotificationLite;->error(Ljava/lang/Throwable;)Ljava/lang/Object;
 
     move-result-object p1
@@ -193,15 +174,12 @@
 
     move-result-object p1
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
     invoke-direct {v0, p1}, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;-><init>(Ljava/lang/Object;)V
 
-    .line 3
     invoke-virtual {p0, v0}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->addLast(Lio/reactivex/internal/operators/observable/ObservableReplay$Node;)V
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->truncateFinal()V
 
     return-void
@@ -210,7 +188,6 @@
 .method getHead()Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -223,7 +200,6 @@
 .method hasCompleted()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->tail:Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
     iget-object v0, v0, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;->value:Ljava/lang/Object;
@@ -254,7 +230,6 @@
 .method hasError()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->tail:Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
     iget-object v0, v0, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;->value:Ljava/lang/Object;
@@ -296,7 +271,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/reactivex/internal/util/NotificationLite;->next(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -305,15 +279,12 @@
 
     move-result-object p1
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
     invoke-direct {v0, p1}, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;-><init>(Ljava/lang/Object;)V
 
-    .line 3
     invoke-virtual {p0, v0}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->addLast(Lio/reactivex/internal/operators/observable/ObservableReplay$Node;)V
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->truncate()V
 
     return-void
@@ -322,28 +293,24 @@
 .method final removeFirst()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
-    .line 2
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
-    .line 3
     iget v1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->size:I
 
     add-int/lit8 v1, v1, -0x1
 
     iput v1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->size:I
 
-    .line 4
     invoke-virtual {p0, v0}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->setFirst(Lio/reactivex/internal/operators/observable/ObservableReplay$Node;)V
 
     return-void
@@ -352,7 +319,6 @@
 .method final removeSome(I)V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -362,7 +328,6 @@
     :goto_0
     if-lez p1, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -371,7 +336,6 @@
 
     add-int/lit8 p1, p1, -0x1
 
-    .line 3
     iget v1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->size:I
 
     add-int/lit8 v1, v1, -0x1
@@ -380,7 +344,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {p0, v0}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->setFirst(Lio/reactivex/internal/operators/observable/ObservableReplay$Node;)V
 
@@ -397,7 +360,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
     move-result v0
@@ -409,7 +371,6 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 2
     :cond_1
     invoke-virtual {p1}, Lio/reactivex/internal/operators/observable/ObservableReplay$InnerDisposable;->index()Ljava/lang/Object;
 
@@ -419,15 +380,12 @@
 
     if-nez v1, :cond_2
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->getHead()Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
     move-result-object v1
 
-    .line 4
     iput-object v1, p1, Lio/reactivex/internal/operators/observable/ObservableReplay$InnerDisposable;->index:Ljava/lang/Object;
 
-    .line 5
     :cond_2
     :goto_0
     invoke-virtual {p1}, Lio/reactivex/internal/operators/observable/ObservableReplay$InnerDisposable;->isDisposed()Z
@@ -438,7 +396,6 @@
 
     return-void
 
-    .line 6
     :cond_3
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -448,14 +405,12 @@
 
     if-eqz v2, :cond_5
 
-    .line 7
     iget-object v1, v2, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;->value:Ljava/lang/Object;
 
     invoke-virtual {p0, v1}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->leaveTransform(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 8
     iget-object v3, p1, Lio/reactivex/internal/operators/observable/ObservableReplay$InnerDisposable;->child:Lio/reactivex/Observer;
 
     invoke-static {v1, v3}, Lio/reactivex/internal/util/NotificationLite;->accept(Ljava/lang/Object;Lio/reactivex/Observer;)Z
@@ -466,7 +421,6 @@
 
     const/4 v0, 0x0
 
-    .line 9
     iput-object v0, p1, Lio/reactivex/internal/operators/observable/ObservableReplay$InnerDisposable;->index:Ljava/lang/Object;
 
     return-void
@@ -476,13 +430,11 @@
 
     goto :goto_0
 
-    .line 10
     :cond_5
     iput-object v1, p1, Lio/reactivex/internal/operators/observable/ObservableReplay$InnerDisposable;->index:Ljava/lang/Object;
 
     neg-int v0, v0
 
-    .line 11
     invoke-virtual {p1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
 
     move-result v0
@@ -495,7 +447,6 @@
 .method final setFirst(Lio/reactivex/internal/operators/observable/ObservableReplay$Node;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
     return-void
@@ -504,33 +455,28 @@
 .method final trimHead()V
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
-    .line 2
     iget-object v1, v0, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;->value:Ljava/lang/Object;
 
     if-eqz v1, :cond_0
 
-    .line 3
     new-instance v1, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
     const/4 v2, 0x0
 
     invoke-direct {v1, v2}, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;-><init>(Ljava/lang/Object;)V
 
-    .line 4
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
     invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 5
     invoke-virtual {p0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
     :cond_0
@@ -543,7 +489,6 @@
 .method truncateFinal()V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->trimHead()V
 
     return-void

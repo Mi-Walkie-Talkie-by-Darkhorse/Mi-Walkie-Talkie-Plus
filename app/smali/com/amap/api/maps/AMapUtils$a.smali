@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/maps/AMapUtils$a;
 .super Ljava/lang/Thread;
-.source "AMapUtils.java"
 
 
 # annotations
@@ -24,20 +23,16 @@
 .method public constructor <init>(Ljava/lang/String;Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
     const-string v0, ""
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/maps/AMapUtils$a;->a:Ljava/lang/String;
 
-    .line 3
     iput-object p1, p0, Lcom/amap/api/maps/AMapUtils$a;->a:Ljava/lang/String;
 
     if-eqz p2, :cond_0
 
-    .line 4
     invoke-virtual {p2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
@@ -53,12 +48,10 @@
 .method public final run()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/AMapUtils$a;->b:Landroid/content/Context;
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     new-instance v0, Lcom/amap/api/col/l3/gh$a;
 
@@ -76,22 +69,18 @@
 
     move-result-object v1
 
-    .line 3
     invoke-virtual {v0, v1}, Lcom/amap/api/col/l3/gh$a;->a([Ljava/lang/String;)Lcom/amap/api/col/l3/gh$a;
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Lcom/amap/api/col/l3/gh$a;->a()Lcom/amap/api/col/l3/gh;
 
     move-result-object v0
 
-    .line 5
     iget-object v1, p0, Lcom/amap/api/maps/AMapUtils$a;->b:Landroid/content/Context;
 
     invoke-static {v1, v0}, Lcom/amap/api/col/l3/fy;->a(Landroid/content/Context;Lcom/amap/api/col/l3/gh;)Z
 
-    .line 6
     invoke-virtual {p0}, Ljava/lang/Thread;->interrupt()V
     :try_end_0
     .catch Lcom/amap/api/col/l3/fv; {:try_start_0 .. :try_end_0} :catch_0
@@ -101,7 +90,6 @@
     :catch_0
     move-exception v0
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_0

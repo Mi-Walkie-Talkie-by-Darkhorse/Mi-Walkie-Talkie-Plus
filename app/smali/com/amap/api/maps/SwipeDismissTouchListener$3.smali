@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/maps/SwipeDismissTouchListener$3;
 .super Ljava/lang/Object;
-.source "SwipeDismissTouchListener.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/maps/SwipeDismissTouchListener;Landroid/view/ViewGroup$LayoutParams;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener$3;->b:Lcom/amap/api/maps/SwipeDismissTouchListener;
 
     iput-object p2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener$3;->a:Landroid/view/ViewGroup$LayoutParams;
@@ -42,7 +40,6 @@
 .method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener$3;->a:Landroid/view/ViewGroup$LayoutParams;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
@@ -57,7 +54,6 @@
 
     iput p1, v0, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener$3;->b:Lcom/amap/api/maps/SwipeDismissTouchListener;
 
     invoke-static {p1}, Lcom/amap/api/maps/SwipeDismissTouchListener;->b(Lcom/amap/api/maps/SwipeDismissTouchListener;)Landroid/view/View;

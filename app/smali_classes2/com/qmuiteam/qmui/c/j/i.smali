@@ -1,6 +1,5 @@
 .class public abstract Lcom/qmuiteam/qmui/c/j/i;
 .super Ljava/lang/Object;
-.source "QMUISkinRuleFloatHandler.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/c/j/a;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +46,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p3, p5}, Lcom/qmuiteam/qmui/util/i;->b(Landroid/content/res/Resources$Theme;I)F
 
     move-result p1

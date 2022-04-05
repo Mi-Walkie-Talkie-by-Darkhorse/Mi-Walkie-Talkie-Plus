@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/theme/overlay/MaterialThemeOverlay;
 .super Ljava/lang/Object;
-.source "MaterialThemeOverlay.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 
     aput v1, v0, v2
 
-    .line 1
     sget v1, Lcom/google/android/material/R$attr;->theme:I
 
     const/4 v3, 0x1
@@ -34,7 +32,6 @@
 
     new-array v0, v3, [I
 
-    .line 2
     sget v1, Lcom/google/android/material/R$attr;->materialThemeOverlay:I
 
     aput v1, v0, v2
@@ -47,7 +44,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +58,6 @@
     .annotation build Landroidx/annotation/StyleRes;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/android/material/theme/overlay/MaterialThemeOverlay;->ANDROID_THEME_OVERLAY_ATTRS:[I
 
     invoke-virtual {p0, p1, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -71,19 +66,16 @@
 
     const/4 p1, 0x0
 
-    .line 2
     invoke-virtual {p0, p1, p1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result v0
 
     const/4 v1, 0x1
 
-    .line 3
     invoke-virtual {p0, v1, p1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result p1
 
-    .line 4
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     if-eqz v0, :cond_0
@@ -118,22 +110,18 @@
     .annotation build Landroidx/annotation/StyleRes;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/android/material/theme/overlay/MaterialThemeOverlay;->MATERIAL_THEME_OVERLAY_ATTR:[I
 
-    .line 2
     invoke-virtual {p0, p1, v0, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p0
 
     const/4 p1, 0x0
 
-    .line 3
     invoke-virtual {p0, p1, p1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result p1
 
-    .line 4
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     return p1
@@ -160,12 +148,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/google/android/material/theme/overlay/MaterialThemeOverlay;->obtainMaterialThemeOverlayId(Landroid/content/Context;Landroid/util/AttributeSet;II)I
 
     move-result p2
 
-    .line 2
     instance-of p3, p0, Landroidx/appcompat/c/d;
 
     const/4 v0, 0x1
@@ -176,7 +162,6 @@
 
     check-cast p3, Landroidx/appcompat/c/d;
 
-    .line 3
     invoke-virtual {p3}, Landroidx/appcompat/c/d;->a()I
 
     move-result p3
@@ -197,20 +182,17 @@
 
     goto :goto_1
 
-    .line 4
     :cond_1
     new-instance p3, Landroidx/appcompat/c/d;
 
     invoke-direct {p3, p0, p2}, Landroidx/appcompat/c/d;-><init>(Landroid/content/Context;I)V
 
-    .line 5
     invoke-static {p0, p1}, Lcom/google/android/material/theme/overlay/MaterialThemeOverlay;->obtainAndroidThemeOverlayId(Landroid/content/Context;Landroid/util/AttributeSet;)I
 
     move-result p0
 
     if-eqz p0, :cond_2
 
-    .line 6
     invoke-virtual {p3}, Landroidx/appcompat/c/d;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p1

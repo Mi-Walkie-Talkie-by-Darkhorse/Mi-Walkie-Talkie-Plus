@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/hp;
 .super Lcom/amap/api/col/l3/ic;
-.source "DexDownLoadRequest.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method constructor <init>(Lcom/amap/api/col/l3/hg;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/ic;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/hp;->a:Lcom/amap/api/col/l3/hg;
 
     return-void
@@ -59,7 +56,6 @@
 .method public final c()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/hp;->a:Lcom/amap/api/col/l3/hg;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/hg;->a()Ljava/lang/String;

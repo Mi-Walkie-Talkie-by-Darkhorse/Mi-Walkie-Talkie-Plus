@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/ColumnInfo;
 .super Ljava/lang/Object;
-.source "ColumnInfo.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

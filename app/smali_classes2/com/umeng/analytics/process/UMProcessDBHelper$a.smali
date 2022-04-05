@@ -1,6 +1,5 @@
 .class Lcom/umeng/analytics/process/UMProcessDBHelper$a;
 .super Ljava/lang/Object;
-.source "UMProcessDBHelper.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -41,7 +40,6 @@
 .method private constructor <init>(Lcom/umeng/analytics/process/UMProcessDBHelper;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/analytics/process/UMProcessDBHelper$a;->i:Lcom/umeng/analytics/process/UMProcessDBHelper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +50,6 @@
 .method synthetic constructor <init>(Lcom/umeng/analytics/process/UMProcessDBHelper;Lcom/umeng/analytics/process/UMProcessDBHelper$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/umeng/analytics/process/UMProcessDBHelper$a;-><init>(Lcom/umeng/analytics/process/UMProcessDBHelper;)V
 
     return-void

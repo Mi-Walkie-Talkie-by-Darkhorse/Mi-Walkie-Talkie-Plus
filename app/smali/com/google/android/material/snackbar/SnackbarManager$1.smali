@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/snackbar/SnackbarManager$1;
 .super Ljava/lang/Object;
-.source "SnackbarManager.java"
 
 # interfaces
 .implements Landroid/os/Handler$Callback;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/snackbar/SnackbarManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/snackbar/SnackbarManager$1;->this$0:Lcom/google/android/material/snackbar/SnackbarManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget v0, p1, Landroid/os/Message;->what:I
 
     if-eqz v0, :cond_0
@@ -51,7 +48,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarManager$1;->this$0:Lcom/google/android/material/snackbar/SnackbarManager;
 

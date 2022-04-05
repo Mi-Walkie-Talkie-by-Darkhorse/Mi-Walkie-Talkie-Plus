@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/CoordinateConverter;
 .super Ljava/lang/Object;
-.source "CoordinateConverter.java"
 
 
 # annotations
@@ -23,18 +22,14 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/maps/CoordinateConverter;->b:Lcom/amap/api/maps/CoordinateConverter$CoordType;
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/maps/CoordinateConverter;->c:Lcom/amap/api/maps/model/LatLng;
 
-    .line 4
     iput-object p1, p0, Lcom/amap/api/maps/CoordinateConverter;->a:Landroid/content/Context;
 
     return-void
@@ -43,7 +38,6 @@
 .method public static isAMapDataAvailable(DD)Z
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/amap/api/col/l3/eg;->a(DD)Z
 
     move-result p0
@@ -56,7 +50,6 @@
 .method public convert()Lcom/amap/api/maps/model/LatLng;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/CoordinateConverter;->b:Lcom/amap/api/maps/CoordinateConverter$CoordType;
 
     const/4 v1, 0x0
@@ -65,7 +58,6 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     iget-object v2, p0, Lcom/amap/api/maps/CoordinateConverter;->c:Lcom/amap/api/maps/model/LatLng;
 
@@ -73,7 +65,6 @@
 
     return-object v1
 
-    .line 3
     :cond_1
     :try_start_0
     sget-object v2, Lcom/amap/api/maps/CoordinateConverter$1;->a:[I
@@ -88,7 +79,6 @@
 
     goto :goto_0
 
-    .line 4
     :pswitch_0
     iget-object v0, p0, Lcom/amap/api/maps/CoordinateConverter;->a:Landroid/content/Context;
 
@@ -100,13 +90,11 @@
 
     goto :goto_0
 
-    .line 5
     :pswitch_1
     iget-object v0, p0, Lcom/amap/api/maps/CoordinateConverter;->c:Lcom/amap/api/maps/model/LatLng;
 
     goto :goto_1
 
-    .line 6
     :pswitch_2
     iget-object v0, p0, Lcom/amap/api/maps/CoordinateConverter;->a:Landroid/content/Context;
 
@@ -118,7 +106,6 @@
 
     goto :goto_1
 
-    .line 7
     :pswitch_3
     iget-object v0, p0, Lcom/amap/api/maps/CoordinateConverter;->c:Lcom/amap/api/maps/model/LatLng;
 
@@ -138,17 +125,14 @@
     :catchall_0
     move-exception v0
 
-    .line 8
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const-string v1, "CoordinateConverter"
 
     const-string v2, "convert"
 
-    .line 9
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/maps/CoordinateConverter;->c:Lcom/amap/api/maps/model/LatLng;
 
     :goto_1
@@ -171,7 +155,6 @@
 .method public coord(Lcom/amap/api/maps/model/LatLng;)Lcom/amap/api/maps/CoordinateConverter;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/CoordinateConverter;->c:Lcom/amap/api/maps/model/LatLng;
 
     return-object p0
@@ -180,7 +163,6 @@
 .method public from(Lcom/amap/api/maps/CoordinateConverter$CoordType;)Lcom/amap/api/maps/CoordinateConverter;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/CoordinateConverter;->b:Lcom/amap/api/maps/CoordinateConverter$CoordType;
 
     return-object p0

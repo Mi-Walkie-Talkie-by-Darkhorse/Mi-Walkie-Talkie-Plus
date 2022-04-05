@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/SerializingExecutor$1;
 .super Ljava/lang/Object;
-.source "SerializingExecutor.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/SerializingExecutor;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/SerializingExecutor$1;->this$0:Lcom/google/common/util/concurrent/SerializingExecutor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -35,7 +33,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-super {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0

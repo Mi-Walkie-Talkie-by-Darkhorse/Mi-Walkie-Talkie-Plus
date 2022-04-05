@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/u2/a;
 .super Ljava/lang/Object;
-.source "BeforeCallback.java"
 
 
 # virtual methods

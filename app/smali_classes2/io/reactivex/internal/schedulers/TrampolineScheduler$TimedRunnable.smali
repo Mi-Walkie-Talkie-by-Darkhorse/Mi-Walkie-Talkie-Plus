@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;
 .super Ljava/lang/Object;
-.source "TrampolineScheduler.java"
 
 # interfaces
 .implements Ljava/lang/Comparable;
@@ -40,20 +39,16 @@
 .method constructor <init>(Ljava/lang/Runnable;Ljava/lang/Long;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;->run:Ljava/lang/Runnable;
 
-    .line 3
     invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
 
     move-result-wide p1
 
     iput-wide p1, p0, Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;->execTime:J
 
-    .line 4
     iput p3, p0, Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;->count:I
 
     return-void
@@ -64,7 +59,6 @@
 .method public compareTo(Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;)I
     .locals 4
 
-    .line 2
     iget-wide v0, p0, Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;->execTime:J
 
     iget-wide v2, p1, Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;->execTime:J
@@ -75,7 +69,6 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     iget v0, p0, Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;->count:I
 
     iget p1, p1, Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;->count:I
@@ -93,7 +86,6 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;->compareTo(Lio/reactivex/internal/schedulers/TrampolineScheduler$TimedRunnable;)I

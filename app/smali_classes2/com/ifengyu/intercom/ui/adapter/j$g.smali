@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/j$g;
 .super Lcom/ifengyu/intercom/ui/adapter/j$k;
-.source "NoAlphaItemAnimator.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/adapter/j;Lcom/ifengyu/intercom/ui/adapter/j$i;Landroidx/core/view/a0;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/j$g;->c:Lcom/ifengyu/intercom/ui/adapter/j;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/j$g;->a:Lcom/ifengyu/intercom/ui/adapter/j$i;
@@ -45,7 +43,6 @@
 .method public b(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/j$g;->b:Landroidx/core/view/a0;
 
     const/4 v1, 0x0
@@ -54,18 +51,14 @@
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 2
     invoke-static {p1, v0}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;F)V
 
     const/4 v0, 0x0
 
-    .line 3
     invoke-static {p1, v0}, Landroidx/core/view/ViewCompat;->c(Landroid/view/View;F)V
 
-    .line 4
     invoke-static {p1, v0}, Landroidx/core/view/ViewCompat;->d(Landroid/view/View;F)V
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/j$g;->c:Lcom/ifengyu/intercom/ui/adapter/j;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/j$g;->a:Lcom/ifengyu/intercom/ui/adapter/j$i;
@@ -76,7 +69,6 @@
 
     invoke-virtual {p1, v0, v1}, Landroidx/recyclerview/widget/n;->a(Landroidx/recyclerview/widget/RecyclerView$y;Z)V
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/j$g;->c:Lcom/ifengyu/intercom/ui/adapter/j;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/adapter/j;->c(Lcom/ifengyu/intercom/ui/adapter/j;)Ljava/util/ArrayList;
@@ -89,7 +81,6 @@
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/j$g;->c:Lcom/ifengyu/intercom/ui/adapter/j;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/adapter/j;->g(Lcom/ifengyu/intercom/ui/adapter/j;)V
@@ -100,7 +91,6 @@
 .method public c(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/j$g;->c:Lcom/ifengyu/intercom/ui/adapter/j;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/j$g;->a:Lcom/ifengyu/intercom/ui/adapter/j$i;

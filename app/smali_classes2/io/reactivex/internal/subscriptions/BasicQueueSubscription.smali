@@ -1,6 +1,5 @@
 .class public abstract Lio/reactivex/internal/subscriptions/BasicQueueSubscription;
 .super Ljava/util/concurrent/atomic/AtomicLong;
-.source "BasicQueueSubscription.java"
 
 # interfaces
 .implements Lio/reactivex/internal/fuseable/QueueSubscription;
@@ -27,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
 
     return-void
@@ -43,7 +41,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "Should not be called!"
@@ -61,7 +58,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "Should not be called!"

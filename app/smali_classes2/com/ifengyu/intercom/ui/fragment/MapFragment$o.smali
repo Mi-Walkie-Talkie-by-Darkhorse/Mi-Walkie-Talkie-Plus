@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$o;
 .super Lcom/qmuiteam/qmui/span/d;
-.source "MapFragment.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment;IIII)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$o;->k:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-direct {p0, p2, p3, p4, p5}, Lcom/qmuiteam/qmui/span/d;-><init>(IIII)V
@@ -35,12 +33,10 @@
 .method public a(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$o;->k:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;

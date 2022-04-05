@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/c/a$a;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "OffmapDownloadAdapter.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -35,15 +34,12 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/map/c/a;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/c/a$a;->f:Lcom/ifengyu/intercom/ui/map/c/a;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
     const p1, 0x7f0902ed
 
-    .line 3
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -52,7 +48,6 @@
 
     const p1, 0x7f0902ee
 
-    .line 4
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -63,7 +58,6 @@
 
     const p1, 0x7f0902f5
 
-    .line 5
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -74,7 +68,6 @@
 
     const p1, 0x7f09034a
 
-    .line 6
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -85,7 +78,6 @@
 
     const p1, 0x7f090148
 
-    .line 7
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -94,7 +86,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/c/a$a;->d:Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/c/a$a;->c:Landroid/view/View;
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -107,7 +98,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/c/a$a;->f:Lcom/ifengyu/intercom/ui/map/c/a;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/c/a;->a(Lcom/ifengyu/intercom/ui/map/c/a;)Lcom/ifengyu/intercom/ui/adapter/k;
@@ -116,7 +106,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/c/a$a;->f:Lcom/ifengyu/intercom/ui/map/c/a;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/c/a;->a(Lcom/ifengyu/intercom/ui/map/c/a;)Lcom/ifengyu/intercom/ui/adapter/k;

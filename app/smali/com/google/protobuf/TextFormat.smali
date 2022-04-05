@@ -1,6 +1,5 @@
 .class public final Lcom/google/protobuf/TextFormat;
 .super Ljava/lang/Object;
-.source "TextFormat.java"
 
 
 # annotations
@@ -33,7 +32,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     const-class v0, Lcom/google/protobuf/TextFormat;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -46,7 +44,6 @@
 
     sput-object v0, Lcom/google/protobuf/TextFormat;->logger:Ljava/util/logging/Logger;
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/TextFormat$Printer;
 
     const/4 v1, 0x0
@@ -55,7 +52,6 @@
 
     sput-object v0, Lcom/google/protobuf/TextFormat;->DEFAULT_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
-    .line 3
     new-instance v0, Lcom/google/protobuf/TextFormat$Printer;
 
     invoke-direct {v0, v1}, Lcom/google/protobuf/TextFormat$Printer;-><init>(Lcom/google/protobuf/TextFormat$1;)V
@@ -68,7 +64,6 @@
 
     sput-object v0, Lcom/google/protobuf/TextFormat;->SINGLE_LINE_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
-    .line 4
     new-instance v0, Lcom/google/protobuf/TextFormat$Printer;
 
     invoke-direct {v0, v1}, Lcom/google/protobuf/TextFormat$Printer;-><init>(Lcom/google/protobuf/TextFormat$1;)V
@@ -81,7 +76,6 @@
 
     sput-object v0, Lcom/google/protobuf/TextFormat;->UNICODE_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
-    .line 5
     invoke-static {}, Lcom/google/protobuf/TextFormat$Parser;->newBuilder()Lcom/google/protobuf/TextFormat$Parser$Builder;
 
     move-result-object v0
@@ -98,7 +92,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -107,7 +100,6 @@
 .method static synthetic access$1100()Ljava/util/logging/Logger;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/TextFormat;->logger:Ljava/util/logging/Logger;
 
     return-object v0
@@ -121,7 +113,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/google/protobuf/TextFormat;->printUnknownFieldValue(ILjava/lang/Object;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
     return-void
@@ -167,7 +158,6 @@
 .method static escapeBytes(Lcom/google/protobuf/ByteString;)Ljava/lang/String;
     .locals 1
 
-    .line 20
     new-instance v0, Lcom/google/protobuf/TextFormat$1;
 
     invoke-direct {v0, p0}, Lcom/google/protobuf/TextFormat$1;-><init>(Lcom/google/protobuf/ByteString;)V
@@ -182,7 +172,6 @@
 .method private static escapeBytes(Lcom/google/protobuf/TextFormat$ByteSequence;)Ljava/lang/String;
     .locals 5
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-interface {p0}, Lcom/google/protobuf/TextFormat$ByteSequence;->size()I
@@ -193,7 +182,6 @@
 
     const/4 v1, 0x0
 
-    .line 2
     :goto_0
     invoke-interface {p0}, Lcom/google/protobuf/TextFormat$ByteSequence;->size()I
 
@@ -201,7 +189,6 @@
 
     if-ge v1, v2, :cond_4
 
-    .line 3
     invoke-interface {p0, v1}, Lcom/google/protobuf/TextFormat$ByteSequence;->byteAt(I)B
 
     move-result v2
@@ -226,12 +213,10 @@
 
     int-to-char v2, v2
 
-    .line 4
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 5
     :cond_0
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
@@ -243,7 +228,6 @@
 
     int-to-char v3, v3
 
-    .line 6
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     ushr-int/lit8 v3, v2, 0x3
@@ -254,7 +238,6 @@
 
     int-to-char v3, v3
 
-    .line 7
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     and-int/lit8 v2, v2, 0x7
@@ -263,7 +246,6 @@
 
     int-to-char v2, v2
 
-    .line 8
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -271,7 +253,6 @@
     :pswitch_0
     const-string v2, "\\r"
 
-    .line 9
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -279,7 +260,6 @@
     :pswitch_1
     const-string v2, "\\f"
 
-    .line 10
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -287,7 +267,6 @@
     :pswitch_2
     const-string v2, "\\v"
 
-    .line 11
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -295,7 +274,6 @@
     :pswitch_3
     const-string v2, "\\n"
 
-    .line 12
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -303,7 +281,6 @@
     :pswitch_4
     const-string v2, "\\t"
 
-    .line 13
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -311,7 +288,6 @@
     :pswitch_5
     const-string v2, "\\b"
 
-    .line 14
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -319,7 +295,6 @@
     :pswitch_6
     const-string v2, "\\a"
 
-    .line 15
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -327,7 +302,6 @@
     :cond_1
     const-string v2, "\\\\"
 
-    .line 16
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -335,7 +309,6 @@
     :cond_2
     const-string v2, "\\\'"
 
-    .line 17
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
@@ -343,7 +316,6 @@
     :cond_3
     const-string v2, "\\\""
 
-    .line 18
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :goto_1
@@ -351,7 +323,6 @@
 
     goto :goto_0
 
-    .line 19
     :cond_4
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -376,7 +347,6 @@
 .method static escapeBytes([B)Ljava/lang/String;
     .locals 1
 
-    .line 21
     new-instance v0, Lcom/google/protobuf/TextFormat$2;
 
     invoke-direct {v0, p0}, Lcom/google/protobuf/TextFormat$2;-><init>([B)V
@@ -395,7 +365,6 @@
 
     const-string v1, "\\\\"
 
-    .line 1
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p0
@@ -414,7 +383,6 @@
 .method static escapeText(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
 
     move-result-object p0
@@ -429,7 +397,6 @@
 .method public static getParser()Lcom/google/protobuf/TextFormat$Parser;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/TextFormat;->PARSER:Lcom/google/protobuf/TextFormat$Parser;
 
     return-object v0
@@ -506,7 +473,6 @@
         }
     .end annotation
 
-    .line 4
     sget-object v0, Lcom/google/protobuf/TextFormat;->PARSER:Lcom/google/protobuf/TextFormat$Parser;
 
     invoke-virtual {v0, p0, p1, p2}, Lcom/google/protobuf/TextFormat$Parser;->merge(Ljava/lang/CharSequence;Lcom/google/protobuf/ExtensionRegistry;Lcom/google/protobuf/Message$Builder;)V
@@ -522,7 +488,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/google/protobuf/TextFormat;->PARSER:Lcom/google/protobuf/TextFormat$Parser;
 
     invoke-virtual {v0, p0, p1}, Lcom/google/protobuf/TextFormat$Parser;->merge(Ljava/lang/CharSequence;Lcom/google/protobuf/Message$Builder;)V
@@ -538,7 +503,6 @@
         }
     .end annotation
 
-    .line 3
     sget-object v0, Lcom/google/protobuf/TextFormat;->PARSER:Lcom/google/protobuf/TextFormat$Parser;
 
     invoke-virtual {v0, p0, p1, p2}, Lcom/google/protobuf/TextFormat$Parser;->merge(Ljava/lang/Readable;Lcom/google/protobuf/ExtensionRegistry;Lcom/google/protobuf/Message$Builder;)V
@@ -554,7 +518,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/TextFormat;->PARSER:Lcom/google/protobuf/TextFormat$Parser;
 
     invoke-virtual {v0, p0, p1}, Lcom/google/protobuf/TextFormat$Parser;->merge(Ljava/lang/Readable;Lcom/google/protobuf/Message$Builder;)V
@@ -574,7 +537,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {p0, v0, v1}, Lcom/google/protobuf/TextFormat;->parseInteger(Ljava/lang/String;ZZ)J
 
     move-result-wide v0
@@ -594,7 +556,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p0, v0, v0}, Lcom/google/protobuf/TextFormat;->parseInteger(Ljava/lang/String;ZZ)J
 
     move-result-wide v0
@@ -614,7 +575,6 @@
 
     const-string v1, "-"
 
-    .line 1
     invoke-virtual {p0, v1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;I)Z
 
     move-result v1
@@ -625,7 +585,6 @@
 
     if-nez p1, :cond_1
 
-    .line 2
     new-instance p1, Ljava/lang/NumberFormatException;
 
     const-string p2, "Number must be positive: "
@@ -669,7 +628,6 @@
 
     const-string v3, "0x"
 
-    .line 3
     invoke-virtual {p0, v3, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;I)Z
 
     move-result v3
@@ -687,7 +645,6 @@
     :cond_3
     const-string v3, "0"
 
-    .line 4
     invoke-virtual {p0, v3, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;I)Z
 
     move-result v3
@@ -696,14 +653,12 @@
 
     const/16 v1, 0x8
 
-    .line 5
     :cond_4
     :goto_2
     invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 6
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -714,7 +669,6 @@
 
     if-ge v3, v4, :cond_b
 
-    .line 7
     invoke-static {v0, v1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;I)J
 
     move-result-wide v0
@@ -740,7 +694,6 @@
 
     if-gez v2, :cond_15
 
-    .line 8
     :cond_6
     new-instance p1, Ljava/lang/NumberFormatException;
 
@@ -783,7 +736,6 @@
 
     if-gez v2, :cond_15
 
-    .line 9
     :cond_9
     new-instance p1, Ljava/lang/NumberFormatException;
 
@@ -813,7 +765,6 @@
 
     throw p1
 
-    .line 10
     :cond_b
     new-instance v3, Ljava/math/BigInteger;
 
@@ -821,7 +772,6 @@
 
     if-eqz v2, :cond_c
 
-    .line 11
     invoke-virtual {v3}, Ljava/math/BigInteger;->negate()Ljava/math/BigInteger;
 
     move-result-object v3
@@ -831,7 +781,6 @@
 
     if-eqz p1, :cond_e
 
-    .line 12
     invoke-virtual {v3}, Ljava/math/BigInteger;->bitLength()I
 
     move-result p1
@@ -840,7 +789,6 @@
 
     if-le p1, p2, :cond_14
 
-    .line 13
     new-instance p1, Ljava/lang/NumberFormatException;
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -869,7 +817,6 @@
 
     throw p1
 
-    .line 14
     :cond_e
     invoke-virtual {v3}, Ljava/math/BigInteger;->bitLength()I
 
@@ -879,7 +826,6 @@
 
     if-le p1, p2, :cond_14
 
-    .line 15
     new-instance p1, Ljava/lang/NumberFormatException;
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -911,7 +857,6 @@
     :cond_10
     if-eqz p1, :cond_12
 
-    .line 16
     invoke-virtual {v3}, Ljava/math/BigInteger;->bitLength()I
 
     move-result p1
@@ -920,7 +865,6 @@
 
     if-le p1, p2, :cond_14
 
-    .line 17
     new-instance p1, Ljava/lang/NumberFormatException;
 
     const-string p2, "Number out of range for 64-bit signed integer: "
@@ -951,7 +895,6 @@
 
     throw p1
 
-    .line 18
     :cond_12
     invoke-virtual {v3}, Ljava/math/BigInteger;->bitLength()I
 
@@ -961,7 +904,6 @@
 
     if-le p1, p2, :cond_14
 
-    .line 19
     new-instance p1, Ljava/lang/NumberFormatException;
 
     const-string p2, "Number out of range for 64-bit unsigned integer: "
@@ -992,7 +934,6 @@
 
     throw p1
 
-    .line 20
     :cond_14
     invoke-virtual {v3}, Ljava/math/BigInteger;->longValue()J
 
@@ -1012,7 +953,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, v0, v0}, Lcom/google/protobuf/TextFormat;->parseInteger(Ljava/lang/String;ZZ)J
 
     move-result-wide v0
@@ -1034,7 +974,6 @@
 
     const/4 v1, 0x1
 
-    .line 1
     invoke-static {p0, v0, v1}, Lcom/google/protobuf/TextFormat;->parseInteger(Ljava/lang/String;ZZ)J
 
     move-result-wide v0
@@ -1050,7 +989,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/TextFormat;->DEFAULT_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
     new-instance v1, Lcom/google/protobuf/TextFormat$TextGenerator;
@@ -1072,7 +1010,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/google/protobuf/TextFormat;->DEFAULT_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
     new-instance v1, Lcom/google/protobuf/TextFormat$TextGenerator;
@@ -1094,7 +1031,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/TextFormat;->DEFAULT_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
     new-instance v1, Lcom/google/protobuf/TextFormat$TextGenerator;
@@ -1111,16 +1047,13 @@
 .method public static printFieldToString(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
     invoke-static {p0, p1, v0}, Lcom/google/protobuf/TextFormat;->printField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;Ljava/lang/Appendable;)V
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -1132,7 +1065,6 @@
     :catch_0
     move-exception p0
 
-    .line 4
     new-instance p1, Ljava/lang/IllegalStateException;
 
     invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
@@ -1148,7 +1080,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/TextFormat;->DEFAULT_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
     new-instance v1, Lcom/google/protobuf/TextFormat$TextGenerator;
@@ -1165,16 +1096,13 @@
 .method public static printToString(Lcom/google/protobuf/MessageOrBuilder;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
     invoke-static {p0, v0}, Lcom/google/protobuf/TextFormat;->print(Lcom/google/protobuf/MessageOrBuilder;Ljava/lang/Appendable;)V
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -1186,7 +1114,6 @@
     :catch_0
     move-exception p0
 
-    .line 4
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
@@ -1197,16 +1124,13 @@
 .method public static printToString(Lcom/google/protobuf/UnknownFieldSet;)Ljava/lang/String;
     .locals 1
 
-    .line 5
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 6
     invoke-static {p0, v0}, Lcom/google/protobuf/TextFormat;->print(Lcom/google/protobuf/UnknownFieldSet;Ljava/lang/Appendable;)V
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -1218,7 +1142,6 @@
     :catch_0
     move-exception p0
 
-    .line 8
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
@@ -1229,13 +1152,11 @@
 .method public static printToUnicodeString(Lcom/google/protobuf/MessageOrBuilder;)Ljava/lang/String;
     .locals 4
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
     sget-object v1, Lcom/google/protobuf/TextFormat;->UNICODE_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
     new-instance v2, Lcom/google/protobuf/TextFormat$TextGenerator;
@@ -1246,7 +1167,6 @@
 
     invoke-static {v1, p0, v2}, Lcom/google/protobuf/TextFormat$Printer;->access$400(Lcom/google/protobuf/TextFormat$Printer;Lcom/google/protobuf/MessageOrBuilder;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -1258,7 +1178,6 @@
     :catch_0
     move-exception p0
 
-    .line 4
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
@@ -1269,13 +1188,11 @@
 .method public static printToUnicodeString(Lcom/google/protobuf/UnknownFieldSet;)Ljava/lang/String;
     .locals 4
 
-    .line 5
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 6
     sget-object v1, Lcom/google/protobuf/TextFormat;->UNICODE_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
     new-instance v2, Lcom/google/protobuf/TextFormat$TextGenerator;
@@ -1286,7 +1203,6 @@
 
     invoke-static {v1, p0, v2}, Lcom/google/protobuf/TextFormat$Printer;->access$500(Lcom/google/protobuf/TextFormat$Printer;Lcom/google/protobuf/UnknownFieldSet;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -1298,7 +1214,6 @@
     :catch_0
     move-exception p0
 
-    .line 8
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
@@ -1314,7 +1229,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/TextFormat;->UNICODE_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
     new-instance v1, Lcom/google/protobuf/TextFormat$TextGenerator;
@@ -1336,7 +1250,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/google/protobuf/TextFormat;->UNICODE_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
     new-instance v1, Lcom/google/protobuf/TextFormat$TextGenerator;
@@ -1358,7 +1271,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0}, Lcom/google/protobuf/WireFormat;->getTagWireType(I)I
 
     move-result v0
@@ -1387,7 +1299,6 @@
 
     new-array p0, v3, [Ljava/lang/Object;
 
-    .line 3
     check-cast p1, Ljava/lang/Integer;
 
     aput-object p1, p0, v1
@@ -1402,7 +1313,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1426,7 +1336,6 @@
 
     throw p1
 
-    .line 5
     :cond_1
     sget-object p0, Lcom/google/protobuf/TextFormat;->DEFAULT_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
@@ -1439,10 +1348,8 @@
     :cond_2
     const-string p0, "\""
 
-    .line 6
     invoke-virtual {p2, p0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 7
     check-cast p1, Lcom/google/protobuf/ByteString;
 
     invoke-static {p1}, Lcom/google/protobuf/TextFormat;->escapeBytes(Lcom/google/protobuf/ByteString;)Ljava/lang/String;
@@ -1451,7 +1358,6 @@
 
     invoke-virtual {p2, p1}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
-    .line 8
     invoke-virtual {p2, p0}, Lcom/google/protobuf/TextFormat$TextGenerator;->print(Ljava/lang/CharSequence;)V
 
     goto :goto_0
@@ -1459,7 +1365,6 @@
     :cond_3
     new-array p0, v3, [Ljava/lang/Object;
 
-    .line 9
     check-cast p1, Ljava/lang/Long;
 
     aput-object p1, p0, v1
@@ -1474,7 +1379,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_4
     check-cast p1, Ljava/lang/Long;
 
@@ -1500,7 +1404,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/TextFormat$TextGenerator;
 
     const/4 v1, 0x0
@@ -1515,13 +1418,11 @@
 .method public static shortDebugString(Lcom/google/protobuf/MessageOrBuilder;)Ljava/lang/String;
     .locals 4
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
     sget-object v1, Lcom/google/protobuf/TextFormat;->SINGLE_LINE_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
     new-instance v2, Lcom/google/protobuf/TextFormat$TextGenerator;
@@ -1532,7 +1433,6 @@
 
     invoke-static {v1, p0, v2}, Lcom/google/protobuf/TextFormat$Printer;->access$400(Lcom/google/protobuf/TextFormat$Printer;Lcom/google/protobuf/MessageOrBuilder;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -1548,7 +1448,6 @@
     :catch_0
     move-exception p0
 
-    .line 4
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
@@ -1559,13 +1458,11 @@
 .method public static shortDebugString(Lcom/google/protobuf/UnknownFieldSet;)Ljava/lang/String;
     .locals 4
 
-    .line 5
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 6
     sget-object v1, Lcom/google/protobuf/TextFormat;->SINGLE_LINE_PRINTER:Lcom/google/protobuf/TextFormat$Printer;
 
     new-instance v2, Lcom/google/protobuf/TextFormat$TextGenerator;
@@ -1576,7 +1473,6 @@
 
     invoke-static {v1, p0, v2}, Lcom/google/protobuf/TextFormat$Printer;->access$500(Lcom/google/protobuf/TextFormat$Printer;Lcom/google/protobuf/UnknownFieldSet;Lcom/google/protobuf/TextFormat$TextGenerator;)V
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -1592,7 +1488,6 @@
     :catch_0
     move-exception p0
 
-    .line 8
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/Throwable;)V
@@ -1608,7 +1503,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -1617,7 +1511,6 @@
 
     move-result-object p0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->size()I
 
     move-result v0
@@ -1630,7 +1523,6 @@
 
     const/4 v3, 0x0
 
-    .line 3
     :goto_0
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->size()I
 
@@ -1638,7 +1530,6 @@
 
     if-ge v2, v4, :cond_12
 
-    .line 4
     invoke-virtual {p0, v2}, Lcom/google/protobuf/ByteString;->byteAt(I)B
 
     move-result v4
@@ -1649,33 +1540,28 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->size()I
 
     move-result v4
 
     if-ge v2, v4, :cond_10
 
-    .line 6
     invoke-virtual {p0, v2}, Lcom/google/protobuf/ByteString;->byteAt(I)B
 
     move-result v4
 
-    .line 7
     invoke-static {v4}, Lcom/google/protobuf/TextFormat;->isOctal(B)Z
 
     move-result v6
 
     if-eqz v6, :cond_2
 
-    .line 8
     invoke-static {v4}, Lcom/google/protobuf/TextFormat;->digitValue(B)I
 
     move-result v4
 
     add-int/lit8 v5, v2, 0x1
 
-    .line 9
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->size()I
 
     move-result v6
@@ -1694,7 +1580,6 @@
 
     mul-int/lit8 v4, v4, 0x8
 
-    .line 10
     invoke-virtual {p0, v5}, Lcom/google/protobuf/ByteString;->byteAt(I)B
 
     move-result v2
@@ -1710,7 +1595,6 @@
     :cond_0
     add-int/lit8 v5, v2, 0x1
 
-    .line 11
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->size()I
 
     move-result v6
@@ -1729,7 +1613,6 @@
 
     mul-int/lit8 v4, v4, 0x8
 
-    .line 12
     invoke-virtual {p0, v5}, Lcom/google/protobuf/ByteString;->byteAt(I)B
 
     move-result v2
@@ -1747,7 +1630,6 @@
 
     int-to-byte v4, v4
 
-    .line 13
     aput-byte v4, v0, v3
 
     goto/16 :goto_2
@@ -1799,12 +1681,10 @@
 
     const/16 v5, 0x8
 
-    .line 14
     aput-byte v5, v0, v3
 
     goto/16 :goto_1
 
-    .line 15
     :cond_3
     new-instance p0, Lcom/google/protobuf/TextFormat$InvalidEscapeSequenceException;
 
@@ -1839,7 +1719,6 @@
 
     const/4 v5, 0x7
 
-    .line 16
     aput-byte v5, v0, v3
 
     goto/16 :goto_1
@@ -1847,7 +1726,6 @@
     :cond_5
     add-int/lit8 v2, v2, 0x1
 
-    .line 17
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->size()I
 
     move-result v4
@@ -1864,7 +1742,6 @@
 
     if-eqz v4, :cond_7
 
-    .line 18
     invoke-virtual {p0, v2}, Lcom/google/protobuf/ByteString;->byteAt(I)B
 
     move-result v4
@@ -1875,7 +1752,6 @@
 
     add-int/lit8 v5, v2, 0x1
 
-    .line 19
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->size()I
 
     move-result v6
@@ -1894,7 +1770,6 @@
 
     mul-int/lit8 v4, v4, 0x10
 
-    .line 20
     invoke-virtual {p0, v5}, Lcom/google/protobuf/ByteString;->byteAt(I)B
 
     move-result v2
@@ -1912,14 +1787,12 @@
 
     int-to-byte v4, v4
 
-    .line 21
     aput-byte v4, v0, v3
 
     move v4, v5
 
     goto :goto_1
 
-    .line 22
     :cond_7
     new-instance p0, Lcom/google/protobuf/TextFormat$InvalidEscapeSequenceException;
 
@@ -1934,7 +1807,6 @@
 
     const/16 v5, 0xb
 
-    .line 23
     aput-byte v5, v0, v3
 
     goto :goto_1
@@ -1944,7 +1816,6 @@
 
     const/16 v5, 0x9
 
-    .line 24
     aput-byte v5, v0, v3
 
     goto :goto_1
@@ -1954,7 +1825,6 @@
 
     const/16 v5, 0xd
 
-    .line 25
     aput-byte v5, v0, v3
 
     goto :goto_1
@@ -1964,7 +1834,6 @@
 
     const/16 v5, 0xa
 
-    .line 26
     aput-byte v5, v0, v3
 
     goto :goto_1
@@ -1974,7 +1843,6 @@
 
     const/16 v5, 0xc
 
-    .line 27
     aput-byte v5, v0, v3
 
     goto :goto_1
@@ -1982,7 +1850,6 @@
     :cond_d
     add-int/lit8 v4, v3, 0x1
 
-    .line 28
     aput-byte v5, v0, v3
 
     goto :goto_1
@@ -1990,7 +1857,6 @@
     :cond_e
     add-int/lit8 v4, v3, 0x1
 
-    .line 29
     aput-byte v6, v0, v3
 
     goto :goto_1
@@ -1998,7 +1864,6 @@
     :cond_f
     add-int/lit8 v4, v3, 0x1
 
-    .line 30
     aput-byte v6, v0, v3
 
     :goto_1
@@ -2006,7 +1871,6 @@
 
     goto :goto_3
 
-    .line 31
     :cond_10
     new-instance p0, Lcom/google/protobuf/TextFormat$InvalidEscapeSequenceException;
 
@@ -2019,7 +1883,6 @@
     :cond_11
     add-int/lit8 v5, v3, 0x1
 
-    .line 32
     aput-byte v4, v0, v3
 
     :goto_2
@@ -2030,7 +1893,6 @@
 
     goto/16 :goto_0
 
-    .line 33
     :cond_12
     invoke-static {v0, v1, v3}, Lcom/google/protobuf/ByteString;->copyFrom([BII)Lcom/google/protobuf/ByteString;
 
@@ -2047,7 +1909,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/protobuf/TextFormat;->unescapeBytes(Ljava/lang/CharSequence;)Lcom/google/protobuf/ByteString;
 
     move-result-object p0
@@ -2064,7 +1925,6 @@
 
     if-ltz p0, :cond_0
 
-    .line 1
     invoke-static {p0}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object p0
@@ -2078,7 +1938,6 @@
 
     and-long/2addr v0, v2
 
-    .line 2
     invoke-static {v0, v1}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object p0
@@ -2095,7 +1954,6 @@
 
     if-ltz v2, :cond_0
 
-    .line 3
     invoke-static {p0, p1}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
     move-result-object p0
@@ -2107,7 +1965,6 @@
 
     and-long/2addr p0, v0
 
-    .line 4
     invoke-static {p0, p1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object p0

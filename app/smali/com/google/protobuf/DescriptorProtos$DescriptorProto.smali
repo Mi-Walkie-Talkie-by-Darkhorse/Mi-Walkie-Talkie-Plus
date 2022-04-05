@@ -1,6 +1,5 @@
 .class public final Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
 .super Lcom/google/protobuf/GeneratedMessage;
-.source "DescriptorProtos.java"
 
 # interfaces
 .implements Lcom/google/protobuf/DescriptorProtos$DescriptorProtoOrBuilder;
@@ -135,14 +134,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto$1;
 
     invoke-direct {v0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto$1;-><init>()V
 
     sput-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
 
     const/4 v1, 0x1
@@ -151,7 +148,6 @@
 
     sput-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->defaultInstance:Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
 
-    .line 3
     invoke-direct {v0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->initFields()V
 
     return-void
@@ -165,21 +161,16 @@
         }
     .end annotation
 
-    .line 11
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 12
     iput-byte v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedIsInitialized:B
 
-    .line 13
     iput v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedSerializedSize:I
 
-    .line 14
     invoke-direct {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->initFields()V
 
-    .line 15
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->newBuilder()Lcom/google/protobuf/UnknownFieldSet$Builder;
 
     move-result-object v0
@@ -204,7 +195,6 @@
 
     if-nez v1, :cond_18
 
-    .line 16
     :try_start_0
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readTag()I
 
@@ -246,7 +236,6 @@
 
     if-eq v9, v11, :cond_1
 
-    .line 17
     invoke-virtual {p0, p1, v0, p2, v9}, Lcom/google/protobuf/GeneratedMessage;->parseUnknownField(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/UnknownFieldSet$Builder;Lcom/google/protobuf/ExtensionRegistryLite;I)Z
 
     move-result v3
@@ -260,7 +249,6 @@
 
     if-eq v9, v3, :cond_2
 
-    .line 18
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
@@ -269,7 +257,6 @@
 
     or-int/lit8 v2, v2, 0x40
 
-    .line 19
     :cond_2
     iget-object v9, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
@@ -286,21 +273,18 @@
     :cond_3
     const/4 v9, 0x0
 
-    .line 20
     iget v10, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->bitField0_:I
 
     and-int/2addr v10, v8
 
     if-ne v10, v8, :cond_4
 
-    .line 21
     iget-object v9, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->options_:Lcom/google/protobuf/DescriptorProtos$MessageOptions;
 
     invoke-virtual {v9}, Lcom/google/protobuf/DescriptorProtos$MessageOptions;->toBuilder()Lcom/google/protobuf/DescriptorProtos$MessageOptions$Builder;
 
     move-result-object v9
 
-    .line 22
     :cond_4
     sget-object v10, Lcom/google/protobuf/DescriptorProtos$MessageOptions;->PARSER:Lcom/google/protobuf/Parser;
 
@@ -314,17 +298,14 @@
 
     if-eqz v9, :cond_5
 
-    .line 23
     invoke-virtual {v9, v10}, Lcom/google/protobuf/DescriptorProtos$MessageOptions$Builder;->mergeFrom(Lcom/google/protobuf/DescriptorProtos$MessageOptions;)Lcom/google/protobuf/DescriptorProtos$MessageOptions$Builder;
 
-    .line 24
     invoke-virtual {v9}, Lcom/google/protobuf/DescriptorProtos$MessageOptions$Builder;->buildPartial()Lcom/google/protobuf/DescriptorProtos$MessageOptions;
 
     move-result-object v9
 
     iput-object v9, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->options_:Lcom/google/protobuf/DescriptorProtos$MessageOptions;
 
-    .line 25
     :cond_5
     iget v9, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->bitField0_:I
 
@@ -339,7 +320,6 @@
 
     if-eq v9, v4, :cond_7
 
-    .line 26
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
@@ -348,7 +328,6 @@
 
     or-int/lit8 v2, v2, 0x4
 
-    .line 27
     :cond_7
     iget-object v9, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
@@ -367,7 +346,6 @@
 
     if-eq v9, v5, :cond_9
 
-    .line 28
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
@@ -376,7 +354,6 @@
 
     or-int/lit8 v2, v2, 0x20
 
-    .line 29
     :cond_9
     iget-object v9, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
@@ -395,7 +372,6 @@
 
     if-eq v9, v6, :cond_b
 
-    .line 30
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
@@ -404,7 +380,6 @@
 
     or-int/lit8 v2, v2, 0x10
 
-    .line 31
     :cond_b
     iget-object v9, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
@@ -423,7 +398,6 @@
 
     if-eq v9, v7, :cond_d
 
-    .line 32
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
@@ -432,7 +406,6 @@
 
     or-int/lit8 v2, v2, 0x8
 
-    .line 33
     :cond_d
     iget-object v9, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
@@ -451,7 +424,6 @@
 
     if-eq v9, v8, :cond_f
 
-    .line 34
     new-instance v9, Ljava/util/ArrayList;
 
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
@@ -460,7 +432,6 @@
 
     or-int/lit8 v2, v2, 0x2
 
-    .line 35
     :cond_f
     iget-object v9, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
@@ -474,20 +445,17 @@
 
     goto/16 :goto_0
 
-    .line 36
     :cond_10
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readBytes()Lcom/google/protobuf/ByteString;
 
     move-result-object v9
 
-    .line 37
     iget v11, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->bitField0_:I
 
     or-int/2addr v10, v11
 
     iput v10, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->bitField0_:I
 
-    .line 38
     iput-object v9, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->name_:Ljava/lang/Object;
     :try_end_0
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_1
@@ -510,7 +478,6 @@
     :catch_0
     move-exception p1
 
-    .line 39
     :try_start_1
     new-instance p2, Lcom/google/protobuf/InvalidProtocolBufferException;
 
@@ -529,7 +496,6 @@
     :catch_1
     move-exception p1
 
-    .line 40
     invoke-virtual {p1, p0}, Lcom/google/protobuf/InvalidProtocolBufferException;->setUnfinishedMessage(Lcom/google/protobuf/MessageLite;)Lcom/google/protobuf/InvalidProtocolBufferException;
 
     move-result-object p1
@@ -543,7 +509,6 @@
 
     if-ne p2, v8, :cond_12
 
-    .line 41
     iget-object p2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
     invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -557,7 +522,6 @@
 
     if-ne p2, v7, :cond_13
 
-    .line 42
     iget-object p2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
     invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -571,7 +535,6 @@
 
     if-ne p2, v6, :cond_14
 
-    .line 43
     iget-object p2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
     invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -585,7 +548,6 @@
 
     if-ne p2, v5, :cond_15
 
-    .line 44
     iget-object p2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
     invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -599,7 +561,6 @@
 
     if-ne p2, v4, :cond_16
 
-    .line 45
     iget-object p2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
     invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -613,7 +574,6 @@
 
     if-ne p2, v3, :cond_17
 
-    .line 46
     iget-object p2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
     invoke-static {p2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -622,7 +582,6 @@
 
     iput-object p2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
-    .line 47
     :cond_17
     invoke-virtual {v0}, Lcom/google/protobuf/UnknownFieldSet$Builder;->build()Lcom/google/protobuf/UnknownFieldSet;
 
@@ -630,10 +589,8 @@
 
     iput-object p2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
 
-    .line 48
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage;->makeExtensionsImmutable()V
 
-    .line 49
     throw p1
 
     :cond_18
@@ -641,7 +598,6 @@
 
     if-ne p1, v8, :cond_19
 
-    .line 50
     iget-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -655,7 +611,6 @@
 
     if-ne p1, v7, :cond_1a
 
-    .line 51
     iget-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -669,7 +624,6 @@
 
     if-ne p1, v6, :cond_1b
 
-    .line 52
     iget-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -683,7 +637,6 @@
 
     if-ne p1, v5, :cond_1c
 
-    .line 53
     iget-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -697,7 +650,6 @@
 
     if-ne p1, v4, :cond_1d
 
-    .line 54
     iget-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -711,7 +663,6 @@
 
     if-ne p1, v3, :cond_1e
 
-    .line 55
     iget-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
@@ -720,7 +671,6 @@
 
     iput-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
-    .line 56
     :cond_1e
     invoke-virtual {v0}, Lcom/google/protobuf/UnknownFieldSet$Builder;->build()Lcom/google/protobuf/UnknownFieldSet;
 
@@ -728,7 +678,6 @@
 
     iput-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
 
-    .line 57
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage;->makeExtensionsImmutable()V
 
     return-void
@@ -742,7 +691,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;-><init>(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)V
 
     return-void
@@ -758,18 +706,14 @@
         }
     .end annotation
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
     const/4 v0, -0x1
 
-    .line 4
     iput-byte v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedIsInitialized:B
 
-    .line 5
     iput v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedSerializedSize:I
 
-    .line 6
     invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessage$Builder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object p1
@@ -782,7 +726,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessage$Builder;Lcom/google/protobuf/DescriptorProtos$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
     return-void
@@ -791,18 +734,14 @@
 .method private constructor <init>(Z)V
     .locals 0
 
-    .line 7
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage;-><init>()V
 
     const/4 p1, -0x1
 
-    .line 8
     iput-byte p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedIsInitialized:B
 
-    .line 9
     iput p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedSerializedSize:I
 
-    .line 10
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object p1
@@ -815,7 +754,6 @@
 .method static synthetic access$4000(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->name_:Ljava/lang/Object;
 
     return-object p0
@@ -824,7 +762,6 @@
 .method static synthetic access$4002(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->name_:Ljava/lang/Object;
 
     return-object p1
@@ -833,7 +770,6 @@
 .method static synthetic access$4100(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
     return-object p0
@@ -842,7 +778,6 @@
 .method static synthetic access$4102(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
     return-object p1
@@ -851,7 +786,6 @@
 .method static synthetic access$4200(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
     return-object p0
@@ -860,7 +794,6 @@
 .method static synthetic access$4202(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
     return-object p1
@@ -869,7 +802,6 @@
 .method static synthetic access$4300(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
     return-object p0
@@ -878,7 +810,6 @@
 .method static synthetic access$4302(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
     return-object p1
@@ -887,7 +818,6 @@
 .method static synthetic access$4400(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
     return-object p0
@@ -896,7 +826,6 @@
 .method static synthetic access$4402(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
     return-object p1
@@ -905,7 +834,6 @@
 .method static synthetic access$4500(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
     return-object p0
@@ -914,7 +842,6 @@
 .method static synthetic access$4502(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
     return-object p1
@@ -923,7 +850,6 @@
 .method static synthetic access$4600(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
     return-object p0
@@ -932,7 +858,6 @@
 .method static synthetic access$4602(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
     return-object p1
@@ -941,7 +866,6 @@
 .method static synthetic access$4702(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;Lcom/google/protobuf/DescriptorProtos$MessageOptions;)Lcom/google/protobuf/DescriptorProtos$MessageOptions;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->options_:Lcom/google/protobuf/DescriptorProtos$MessageOptions;
 
     return-object p1
@@ -950,7 +874,6 @@
 .method static synthetic access$4802(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->bitField0_:I
 
     return p1
@@ -959,7 +882,6 @@
 .method public static getDefaultInstance()Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->defaultInstance:Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
 
     return-object v0
@@ -968,7 +890,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos;->access$2500()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -981,52 +902,44 @@
 
     const-string v0, ""
 
-    .line 1
     iput-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->name_:Ljava/lang/Object;
 
-    .line 2
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
-    .line 3
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
-    .line 4
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
-    .line 5
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
-    .line 6
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
-    .line 7
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
-    .line 8
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos$MessageOptions;->getDefaultInstance()Lcom/google/protobuf/DescriptorProtos$MessageOptions;
 
     move-result-object v0
@@ -1039,7 +952,6 @@
 .method public static newBuilder()Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;->access$3700()Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
 
     move-result-object v0
@@ -1050,7 +962,6 @@
 .method public static newBuilder(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;)Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->newBuilder()Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
 
     move-result-object v0
@@ -1070,7 +981,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -1090,7 +1000,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -1110,7 +1019,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
@@ -1130,7 +1038,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -1150,7 +1057,6 @@
         }
     .end annotation
 
-    .line 7
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;)Ljava/lang/Object;
@@ -1170,7 +1076,6 @@
         }
     .end annotation
 
-    .line 8
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -1190,7 +1095,6 @@
         }
     .end annotation
 
-    .line 5
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -1210,7 +1114,6 @@
         }
     .end annotation
 
-    .line 6
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -1230,7 +1133,6 @@
         }
     .end annotation
 
-    .line 3
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
@@ -1250,7 +1152,6 @@
         }
     .end annotation
 
-    .line 4
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -1267,7 +1168,6 @@
 .method public getDefaultInstanceForType()Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
     .locals 1
 
-    .line 3
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->defaultInstance:Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
 
     return-object v0
@@ -1276,7 +1176,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getDefaultInstanceForType()Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
 
     move-result-object v0
@@ -1287,7 +1186,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getDefaultInstanceForType()Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
 
     move-result-object v0
@@ -1298,7 +1196,6 @@
 .method public getEnumType(I)Lcom/google/protobuf/DescriptorProtos$EnumDescriptorProto;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1313,7 +1210,6 @@
 .method public getEnumTypeCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1334,7 +1230,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
     return-object v0
@@ -1343,7 +1238,6 @@
 .method public getEnumTypeOrBuilder(I)Lcom/google/protobuf/DescriptorProtos$EnumDescriptorProtoOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1367,7 +1261,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
     return-object v0
@@ -1376,7 +1269,6 @@
 .method public getExtension(I)Lcom/google/protobuf/DescriptorProtos$FieldDescriptorProto;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1391,7 +1283,6 @@
 .method public getExtensionCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1412,7 +1303,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
     return-object v0
@@ -1421,7 +1311,6 @@
 .method public getExtensionOrBuilder(I)Lcom/google/protobuf/DescriptorProtos$FieldDescriptorProtoOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1445,7 +1334,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
     return-object v0
@@ -1454,7 +1342,6 @@
 .method public getExtensionRange(I)Lcom/google/protobuf/DescriptorProtos$DescriptorProto$ExtensionRange;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1469,7 +1356,6 @@
 .method public getExtensionRangeCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1490,7 +1376,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
     return-object v0
@@ -1499,7 +1384,6 @@
 .method public getExtensionRangeOrBuilder(I)Lcom/google/protobuf/DescriptorProtos$DescriptorProto$ExtensionRangeOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1523,7 +1407,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
     return-object v0
@@ -1532,7 +1415,6 @@
 .method public getField(I)Lcom/google/protobuf/DescriptorProtos$FieldDescriptorProto;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1547,7 +1429,6 @@
 .method public getFieldCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1568,7 +1449,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
     return-object v0
@@ -1577,7 +1457,6 @@
 .method public getFieldOrBuilder(I)Lcom/google/protobuf/DescriptorProtos$FieldDescriptorProtoOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1601,7 +1480,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
     return-object v0
@@ -1610,36 +1488,29 @@
 .method public getName()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->name_:Ljava/lang/Object;
 
-    .line 2
     instance-of v1, v0, Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    .line 3
     check-cast v0, Ljava/lang/String;
 
     return-object v0
 
-    .line 4
     :cond_0
     check-cast v0, Lcom/google/protobuf/ByteString;
 
-    .line 5
     invoke-virtual {v0}, Lcom/google/protobuf/ByteString;->toStringUtf8()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 6
     invoke-virtual {v0}, Lcom/google/protobuf/ByteString;->isValidUtf8()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 7
     iput-object v1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->name_:Ljava/lang/Object;
 
     :cond_1
@@ -1649,27 +1520,22 @@
 .method public getNameBytes()Lcom/google/protobuf/ByteString;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->name_:Ljava/lang/Object;
 
-    .line 2
     instance-of v1, v0, Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
-    .line 3
     check-cast v0, Ljava/lang/String;
 
     invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFromUtf8(Ljava/lang/String;)Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
-    .line 4
     iput-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->name_:Ljava/lang/Object;
 
     return-object v0
 
-    .line 5
     :cond_0
     check-cast v0, Lcom/google/protobuf/ByteString;
 
@@ -1679,7 +1545,6 @@
 .method public getNestedType(I)Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1694,7 +1559,6 @@
 .method public getNestedTypeCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1715,7 +1579,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
     return-object v0
@@ -1724,7 +1587,6 @@
 .method public getNestedTypeOrBuilder(I)Lcom/google/protobuf/DescriptorProtos$DescriptorProtoOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1748,7 +1610,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
     return-object v0
@@ -1757,7 +1618,6 @@
 .method public getOneofDecl(I)Lcom/google/protobuf/DescriptorProtos$OneofDescriptorProto;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1772,7 +1632,6 @@
 .method public getOneofDeclCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1793,7 +1652,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
     return-object v0
@@ -1802,7 +1660,6 @@
 .method public getOneofDeclOrBuilder(I)Lcom/google/protobuf/DescriptorProtos$OneofDescriptorProtoOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1826,7 +1683,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
     return-object v0
@@ -1835,7 +1691,6 @@
 .method public getOptions()Lcom/google/protobuf/DescriptorProtos$MessageOptions;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->options_:Lcom/google/protobuf/DescriptorProtos$MessageOptions;
 
     return-object v0
@@ -1844,7 +1699,6 @@
 .method public getOptionsOrBuilder()Lcom/google/protobuf/DescriptorProtos$MessageOptionsOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->options_:Lcom/google/protobuf/DescriptorProtos$MessageOptions;
 
     return-object v0
@@ -1861,7 +1715,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -1870,7 +1723,6 @@
 .method public getSerializedSize()I
     .locals 6
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedSerializedSize:I
 
     const/4 v1, -0x1
@@ -1879,7 +1731,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     iget v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->bitField0_:I
 
@@ -1891,7 +1742,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getNameBytes()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
@@ -1910,7 +1760,6 @@
     :goto_0
     const/4 v1, 0x0
 
-    .line 4
     :goto_1
     iget-object v3, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
@@ -1922,7 +1771,6 @@
 
     if-ge v1, v3, :cond_2
 
-    .line 5
     iget-object v3, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
     invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1944,7 +1792,6 @@
     :cond_2
     const/4 v1, 0x0
 
-    .line 6
     :goto_2
     iget-object v3, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
@@ -1956,7 +1803,6 @@
 
     const/4 v3, 0x3
 
-    .line 7
     iget-object v5, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
     invoke-interface {v5, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1978,7 +1824,6 @@
     :cond_3
     const/4 v1, 0x0
 
-    .line 8
     :goto_3
     iget-object v3, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
@@ -1990,7 +1835,6 @@
 
     const/4 v3, 0x4
 
-    .line 9
     iget-object v5, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
     invoke-interface {v5, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2012,7 +1856,6 @@
     :cond_4
     const/4 v1, 0x0
 
-    .line 10
     :goto_4
     iget-object v3, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
@@ -2024,7 +1867,6 @@
 
     const/4 v3, 0x5
 
-    .line 11
     iget-object v5, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
     invoke-interface {v5, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2046,7 +1888,6 @@
     :cond_5
     const/4 v1, 0x0
 
-    .line 12
     :goto_5
     iget-object v3, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
@@ -2058,7 +1899,6 @@
 
     const/4 v3, 0x6
 
-    .line 13
     iget-object v5, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
     invoke-interface {v5, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2077,7 +1917,6 @@
 
     goto :goto_5
 
-    .line 14
     :cond_6
     iget v1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->bitField0_:I
 
@@ -2087,7 +1926,6 @@
 
     const/4 v1, 0x7
 
-    .line 15
     iget-object v3, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->options_:Lcom/google/protobuf/DescriptorProtos$MessageOptions;
 
     invoke-static {v1, v3}, Lcom/google/protobuf/CodedOutputStream;->computeMessageSize(ILcom/google/protobuf/MessageLite;)I
@@ -2096,7 +1934,6 @@
 
     add-int/2addr v0, v1
 
-    .line 16
     :cond_7
     :goto_6
     iget-object v1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
@@ -2109,7 +1946,6 @@
 
     const/16 v1, 0x8
 
-    .line 17
     iget-object v3, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2128,7 +1964,6 @@
 
     goto :goto_6
 
-    .line 18
     :cond_8
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
@@ -2140,7 +1975,6 @@
 
     add-int/2addr v0, v1
 
-    .line 19
     iput v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedSerializedSize:I
 
     return v0
@@ -2149,7 +1983,6 @@
 .method public final getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
 
     return-object v0
@@ -2158,7 +1991,6 @@
 .method public hasName()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->bitField0_:I
 
     const/4 v1, 0x1
@@ -2179,7 +2011,6 @@
 .method public hasOptions()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->bitField0_:I
 
     const/4 v1, 0x2
@@ -2202,7 +2033,6 @@
 .method protected internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos;->access$2600()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -2221,7 +2051,6 @@
 .method public final isInitialized()Z
     .locals 4
 
-    .line 1
     iget-byte v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedIsInitialized:B
 
     const/4 v1, 0x1
@@ -2240,7 +2069,6 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getFieldCount()I
 
@@ -2248,7 +2076,6 @@
 
     if-ge v0, v3, :cond_3
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getField(I)Lcom/google/protobuf/DescriptorProtos$FieldDescriptorProto;
 
     move-result-object v3
@@ -2259,7 +2086,6 @@
 
     if-nez v3, :cond_2
 
-    .line 4
     iput-byte v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedIsInitialized:B
 
     return v2
@@ -2272,7 +2098,6 @@
     :cond_3
     const/4 v0, 0x0
 
-    .line 5
     :goto_1
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getExtensionCount()I
 
@@ -2280,7 +2105,6 @@
 
     if-ge v0, v3, :cond_5
 
-    .line 6
     invoke-virtual {p0, v0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getExtension(I)Lcom/google/protobuf/DescriptorProtos$FieldDescriptorProto;
 
     move-result-object v3
@@ -2291,7 +2115,6 @@
 
     if-nez v3, :cond_4
 
-    .line 7
     iput-byte v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedIsInitialized:B
 
     return v2
@@ -2304,7 +2127,6 @@
     :cond_5
     const/4 v0, 0x0
 
-    .line 8
     :goto_2
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getNestedTypeCount()I
 
@@ -2312,7 +2134,6 @@
 
     if-ge v0, v3, :cond_7
 
-    .line 9
     invoke-virtual {p0, v0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getNestedType(I)Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
 
     move-result-object v3
@@ -2323,7 +2144,6 @@
 
     if-nez v3, :cond_6
 
-    .line 10
     iput-byte v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedIsInitialized:B
 
     return v2
@@ -2336,7 +2156,6 @@
     :cond_7
     const/4 v0, 0x0
 
-    .line 11
     :goto_3
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getEnumTypeCount()I
 
@@ -2344,7 +2163,6 @@
 
     if-ge v0, v3, :cond_9
 
-    .line 12
     invoke-virtual {p0, v0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getEnumType(I)Lcom/google/protobuf/DescriptorProtos$EnumDescriptorProto;
 
     move-result-object v3
@@ -2355,7 +2173,6 @@
 
     if-nez v3, :cond_8
 
-    .line 13
     iput-byte v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedIsInitialized:B
 
     return v2
@@ -2365,7 +2182,6 @@
 
     goto :goto_3
 
-    .line 14
     :cond_9
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->hasOptions()Z
 
@@ -2373,7 +2189,6 @@
 
     if-eqz v0, :cond_a
 
-    .line 15
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getOptions()Lcom/google/protobuf/DescriptorProtos$MessageOptions;
 
     move-result-object v0
@@ -2384,12 +2199,10 @@
 
     if-nez v0, :cond_a
 
-    .line 16
     iput-byte v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedIsInitialized:B
 
     return v2
 
-    .line 17
     :cond_a
     iput-byte v1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->memoizedIsInitialized:B
 
@@ -2399,7 +2212,6 @@
 .method public newBuilderForType()Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
     .locals 1
 
-    .line 4
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->newBuilder()Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
 
     move-result-object v0
@@ -2410,7 +2222,6 @@
 .method protected newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
     .locals 2
 
-    .line 5
     new-instance v0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
 
     const/4 v1, 0x0
@@ -2423,7 +2234,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->newBuilderForType()Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
 
     move-result-object v0
@@ -2434,7 +2244,6 @@
 .method protected bridge synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/google/protobuf/Message$Builder;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
 
     move-result-object p1
@@ -2445,7 +2254,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->newBuilderForType()Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
 
     move-result-object v0
@@ -2456,7 +2264,6 @@
 .method public toBuilder()Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
     .locals 1
 
-    .line 3
     invoke-static {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->newBuilder(Lcom/google/protobuf/DescriptorProtos$DescriptorProto;)Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
 
     move-result-object v0
@@ -2467,7 +2274,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->toBuilder()Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
 
     move-result-object v0
@@ -2478,7 +2284,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->toBuilder()Lcom/google/protobuf/DescriptorProtos$DescriptorProto$Builder;
 
     move-result-object v0
@@ -2494,7 +2299,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessage;->writeReplace()Ljava/lang/Object;
 
     move-result-object v0
@@ -2510,10 +2314,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getSerializedSize()I
 
-    .line 2
     iget v0, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->bitField0_:I
 
     const/4 v1, 0x1
@@ -2522,7 +2324,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getNameBytes()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
@@ -2534,7 +2335,6 @@
 
     const/4 v1, 0x0
 
-    .line 4
     :goto_0
     iget-object v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
@@ -2546,7 +2346,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 5
     iget-object v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->field_:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2564,7 +2363,6 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 6
     :goto_1
     iget-object v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
@@ -2576,7 +2374,6 @@
 
     const/4 v2, 0x3
 
-    .line 7
     iget-object v4, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->nestedType_:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2594,7 +2391,6 @@
     :cond_2
     const/4 v1, 0x0
 
-    .line 8
     :goto_2
     iget-object v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
@@ -2606,7 +2402,6 @@
 
     const/4 v2, 0x4
 
-    .line 9
     iget-object v4, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->enumType_:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2624,7 +2419,6 @@
     :cond_3
     const/4 v1, 0x0
 
-    .line 10
     :goto_3
     iget-object v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
@@ -2636,7 +2430,6 @@
 
     const/4 v2, 0x5
 
-    .line 11
     iget-object v4, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extensionRange_:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2654,7 +2447,6 @@
     :cond_4
     const/4 v1, 0x0
 
-    .line 12
     :goto_4
     iget-object v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
@@ -2666,7 +2458,6 @@
 
     const/4 v2, 0x6
 
-    .line 13
     iget-object v4, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->extension_:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2681,7 +2472,6 @@
 
     goto :goto_4
 
-    .line 14
     :cond_5
     iget v1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->bitField0_:I
 
@@ -2691,12 +2481,10 @@
 
     const/4 v1, 0x7
 
-    .line 15
     iget-object v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->options_:Lcom/google/protobuf/DescriptorProtos$MessageOptions;
 
     invoke-virtual {p1, v1, v2}, Lcom/google/protobuf/CodedOutputStream;->writeMessage(ILcom/google/protobuf/MessageLite;)V
 
-    .line 16
     :cond_6
     :goto_5
     iget-object v1, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
@@ -2709,7 +2497,6 @@
 
     const/16 v1, 0x8
 
-    .line 17
     iget-object v2, p0, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->oneofDecl_:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2724,7 +2511,6 @@
 
     goto :goto_5
 
-    .line 18
     :cond_7
     invoke-virtual {p0}, Lcom/google/protobuf/DescriptorProtos$DescriptorProto;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 

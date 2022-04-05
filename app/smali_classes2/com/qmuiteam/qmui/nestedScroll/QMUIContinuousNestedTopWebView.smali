@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopWebView;
 .super Lcom/qmuiteam/qmui/widget/webview/QMUIWebView;
-.source "QMUIContinuousNestedTopWebView.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/nestedScroll/c;
@@ -14,10 +13,8 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/qmuiteam/qmui/widget/webview/QMUIWebView;-><init>(Landroid/content/Context;)V
 
-    .line 2
     invoke-direct {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopWebView;->a()V
 
     return-void
@@ -26,10 +23,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2}, Lcom/qmuiteam/qmui/widget/webview/QMUIWebView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 4
     invoke-direct {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopWebView;->a()V
 
     return-void
@@ -38,10 +33,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 5
     invoke-direct {p0, p1, p2, p3}, Lcom/qmuiteam/qmui/widget/webview/QMUIWebView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 6
     invoke-direct {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopWebView;->a()V
 
     return-void
@@ -52,7 +45,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/webkit/WebView;->setVerticalScrollBarEnabled(Z)V
 
     return-void
@@ -63,17 +55,14 @@
 .method public a(I)I
     .locals 3
 
-    .line 2
     invoke-virtual {p0}, Landroid/webkit/WebView;->getScrollY()I
 
     move-result v0
 
-    .line 3
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopWebView;->getScrollOffsetRange()I
 
     move-result v1
 
-    .line 4
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
     move-result v0
@@ -88,7 +77,6 @@
 
     neg-int v0, v0
 
-    .line 5
     invoke-static {p1, v0}, Ljava/lang/Math;->max(II)I
 
     move-result v0
@@ -100,7 +88,6 @@
 
     sub-int/2addr v1, v0
 
-    .line 6
     invoke-static {p1, v1}, Ljava/lang/Math;->min(II)I
 
     move-result v0
@@ -110,7 +97,6 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 7
     :goto_0
     invoke-virtual {p0, v2, v0}, Landroid/webkit/WebView;->scrollBy(II)V
 
@@ -122,7 +108,6 @@
 .method public a(Lcom/qmuiteam/qmui/nestedScroll/b$a;)V
     .locals 0
 
-    .line 8
     iput-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopWebView;->i:Lcom/qmuiteam/qmui/nestedScroll/b$a;
 
     return-void
@@ -131,17 +116,14 @@
 .method public getCurrentScroll()I
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/webkit/WebView;->getScrollY()I
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopWebView;->getScrollOffsetRange()I
 
     move-result v1
 
-    .line 3
     invoke-static {v0, v1}, Ljava/lang/Math;->min(II)I
 
     move-result v0
@@ -158,7 +140,6 @@
 .method public getScrollOffsetRange()I
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/webkit/WebView;->computeVerticalScrollRange()I
 
     move-result v0
@@ -175,15 +156,12 @@
 .method protected onScrollChanged(IIII)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Lcom/qmuiteam/qmui/widget/webview/QMUIWebView;->onScrollChanged(IIII)V
 
-    .line 2
     iget-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopWebView;->i:Lcom/qmuiteam/qmui/nestedScroll/b$a;
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopWebView;->getCurrentScroll()I
 
     move-result p2

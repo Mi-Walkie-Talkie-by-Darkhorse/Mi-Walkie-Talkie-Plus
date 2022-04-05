@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/AgentWebView$AgentWebClient;
 .super Lcom/just/agentweb/MiddlewareWebClientBase;
-.source "AgentWebView.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method private constructor <init>(Lcom/just/agentweb/AgentWebView;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/just/agentweb/MiddlewareWebClientBase;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/just/agentweb/AgentWebView$AgentWebClient;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     return-void
@@ -34,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/just/agentweb/AgentWebView;Lcom/just/agentweb/AgentWebView$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/just/agentweb/AgentWebView$AgentWebClient;-><init>(Lcom/just/agentweb/AgentWebView;)V
 
     return-void
@@ -45,10 +41,8 @@
 .method public onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1, p2}, Lcom/just/agentweb/WebViewClientDelegate;->onPageFinished(Landroid/webkit/WebView;Ljava/lang/String;)V
 
-    .line 2
     iget-object p2, p0, Lcom/just/agentweb/AgentWebView$AgentWebClient;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     invoke-static {p2}, Lcom/just/agentweb/AgentWebView;->access$800(Lcom/just/agentweb/AgentWebView;)Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;
@@ -57,14 +51,12 @@
 
     invoke-virtual {p2, p1}, Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;->onPageFinished(Landroid/webkit/WebView;)V
 
-    .line 3
     invoke-static {}, Lcom/just/agentweb/LogUtils;->isDebug()Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
-    .line 4
     invoke-static {}, Lcom/just/agentweb/AgentWebView;->access$500()Ljava/lang/String;
 
     move-result-object p2
@@ -96,10 +88,8 @@
 .method public onPageStarted(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Lcom/just/agentweb/WebViewClientDelegate;->onPageStarted(Landroid/webkit/WebView;Ljava/lang/String;Landroid/graphics/Bitmap;)V
 
-    .line 2
     iget-object p3, p0, Lcom/just/agentweb/AgentWebView$AgentWebClient;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     invoke-static {p3}, Lcom/just/agentweb/AgentWebView;->access$300(Lcom/just/agentweb/AgentWebView;)Ljava/util/Map;
@@ -108,19 +98,16 @@
 
     if-eqz p3, :cond_0
 
-    .line 3
     iget-object p3, p0, Lcom/just/agentweb/AgentWebView$AgentWebClient;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     invoke-static {p3}, Lcom/just/agentweb/AgentWebView;->access$400(Lcom/just/agentweb/AgentWebView;)V
 
-    .line 4
     invoke-static {}, Lcom/just/agentweb/LogUtils;->isDebug()Z
 
     move-result p3
 
     if-eqz p3, :cond_0
 
-    .line 5
     invoke-static {}, Lcom/just/agentweb/AgentWebView;->access$500()Ljava/lang/String;
 
     move-result-object p3
@@ -145,7 +132,6 @@
 
     invoke-static {p3, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     :cond_0
     iget-object p1, p0, Lcom/just/agentweb/AgentWebView$AgentWebClient;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
@@ -155,12 +141,10 @@
 
     if-eqz p1, :cond_1
 
-    .line 7
     iget-object p1, p0, Lcom/just/agentweb/AgentWebView$AgentWebClient;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     invoke-static {p1}, Lcom/just/agentweb/AgentWebView;->access$700(Lcom/just/agentweb/AgentWebView;)V
 
-    .line 8
     :cond_1
     iget-object p1, p0, Lcom/just/agentweb/AgentWebView$AgentWebClient;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
@@ -170,7 +154,6 @@
 
     invoke-virtual {p1}, Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;->onPageStarted()V
 
-    .line 9
     iget-object p1, p0, Lcom/just/agentweb/AgentWebView$AgentWebClient;->mAgentWebView:Lcom/just/agentweb/AgentWebView;
 
     invoke-virtual {p1, p2}, Lcom/just/agentweb/AgentWebView;->fixedAccessibilityInjectorExceptionForOnPageFinished(Ljava/lang/String;)V

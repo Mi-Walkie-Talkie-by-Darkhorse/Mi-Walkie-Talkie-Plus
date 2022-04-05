@@ -1,6 +1,5 @@
 .class Landroidx/lifecycle/SavedStateHandleController$1;
 .super Ljava/lang/Object;
-.source "SavedStateHandleController.java"
 
 # interfaces
 .implements Landroidx/lifecycle/i;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/lifecycle/Lifecycle;Landroidx/savedstate/SavedStateRegistry;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/lifecycle/SavedStateHandleController$1;->a:Landroidx/lifecycle/Lifecycle;
 
     iput-object p2, p0, Landroidx/lifecycle/SavedStateHandleController$1;->b:Landroidx/savedstate/SavedStateRegistry;
@@ -50,17 +48,14 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_START:Landroidx/lifecycle/Lifecycle$Event;
 
     if-ne p2, p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Landroidx/lifecycle/SavedStateHandleController$1;->a:Landroidx/lifecycle/Lifecycle;
 
     invoke-virtual {p1, p0}, Landroidx/lifecycle/Lifecycle;->b(Landroidx/lifecycle/j;)V
 
-    .line 3
     iget-object p1, p0, Landroidx/lifecycle/SavedStateHandleController$1;->b:Landroidx/savedstate/SavedStateRegistry;
 
     const-class p2, Landroidx/lifecycle/SavedStateHandleController$a;

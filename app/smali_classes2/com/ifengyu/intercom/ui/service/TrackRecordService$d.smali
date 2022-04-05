@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/service/TrackRecordService$d;
 .super Landroid/os/Binder;
-.source "TrackRecordService.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$d;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-direct {p0}, Landroid/os/Binder;-><init>()V
@@ -35,7 +33,6 @@
 .method public a()Lcom/ifengyu/intercom/ui/service/TrackRecordService;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$d;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     return-object v0

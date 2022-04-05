@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/maps/model/Tile;
 .super Ljava/lang/Object;
-.source "Tile.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -34,14 +33,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/model/b;
 
     invoke-direct {v0}, Lcom/amap/api/maps/model/b;-><init>()V
 
     sput-object v0, Lcom/amap/api/maps/model/Tile;->CREATOR:Lcom/amap/api/maps/model/b;
 
-    .line 2
     new-instance v0, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     const/16 v1, 0x12
@@ -56,19 +53,14 @@
 .method constructor <init>(III[B)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/amap/api/maps/model/Tile;->a:I
 
-    .line 3
     iput p2, p0, Lcom/amap/api/maps/model/Tile;->width:I
 
-    .line 4
     iput p3, p0, Lcom/amap/api/maps/model/Tile;->height:I
 
-    .line 5
     iput-object p4, p0, Lcom/amap/api/maps/model/Tile;->data:[B
 
     return-void
@@ -79,7 +71,6 @@
 
     const/4 v0, 0x1
 
-    .line 6
     invoke-direct {p0, v0, p1, p2, p3}, Lcom/amap/api/maps/model/Tile;-><init>(III[B)V
 
     return-void
@@ -88,7 +79,6 @@
 .method public static obtain(II[B)Lcom/amap/api/maps/model/Tile;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/maps/model/Tile;->b:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->acquire()Ljava/lang/Object;
@@ -101,7 +91,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/amap/api/maps/model/Tile;
 
@@ -123,7 +112,6 @@
 .method public final recycle()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/maps/model/Tile;->b:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0, p0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->release(Ljava/lang/Object;)Z
@@ -134,22 +122,18 @@
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 1
     iget p2, p0, Lcom/amap/api/maps/model/Tile;->a:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2
     iget p2, p0, Lcom/amap/api/maps/model/Tile;->width:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 3
     iget p2, p0, Lcom/amap/api/maps/model/Tile;->height:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 4
     iget-object p2, p0, Lcom/amap/api/maps/model/Tile;->data:[B
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByteArray([B)V

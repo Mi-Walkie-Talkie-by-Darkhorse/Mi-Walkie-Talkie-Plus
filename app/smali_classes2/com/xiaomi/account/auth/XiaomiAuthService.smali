@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/auth/XiaomiAuthService;
 .super Ljava/lang/Object;
-.source "XiaomiAuthService.java"
 
 # interfaces
 .implements Lcom/xiaomi/account/IXiaomiAuthService;
@@ -18,15 +17,12 @@
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "XiaomiAuthService"
 
-    .line 2
     iput-object v0, p0, Lcom/xiaomi/account/auth/XiaomiAuthService;->TAG:Ljava/lang/String;
 
-    .line 3
     :try_start_0
     invoke-static {p1}, Lcom/xiaomi/account/IXiaomiAuthService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/xiaomi/account/IXiaomiAuthService;
 
@@ -38,7 +34,6 @@
 
     goto :goto_0
 
-    .line 4
     :catch_0
     invoke-static {p1}, Lmiui/net/IXiaomiAuthService$a;->a(Landroid/os/IBinder;)Lmiui/net/IXiaomiAuthService;
 
@@ -66,7 +61,6 @@
 
     const-string v0, "intent"
 
-    .line 1
     :try_start_0
     invoke-static {p1}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -86,12 +80,10 @@
 
     const/4 v8, 0x0
 
-    .line 2
     invoke-virtual/range {v1 .. v8}, Landroid/accounts/AccountManager;->addAccount(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Bundle;Landroid/app/Activity;Landroid/accounts/AccountManagerCallback;Landroid/os/Handler;)Landroid/accounts/AccountManagerFuture;
 
     move-result-object p1
 
-    .line 3
     invoke-interface {p1}, Landroid/accounts/AccountManagerFuture;->getResult()Ljava/lang/Object;
 
     move-result-object p1
@@ -100,14 +92,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 4
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 5
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
@@ -123,7 +113,6 @@
     :catch_0
     move-exception p1
 
-    .line 6
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_0
@@ -131,7 +120,6 @@
     :catch_1
     move-exception p1
 
-    .line 7
     invoke-virtual {p1}, Landroid/accounts/AuthenticatorException;->printStackTrace()V
 
     goto :goto_0
@@ -139,7 +127,6 @@
     :catch_2
     move-exception p1
 
-    .line 8
     invoke-virtual {p1}, Ljava/lang/SecurityException;->printStackTrace()V
 
     :cond_0
@@ -159,7 +146,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-static {p1}, Landroid/accounts/AccountManager;->get(Landroid/content/Context;)Landroid/accounts/AccountManager;
 
@@ -171,7 +157,6 @@
 
     move-result-object p1
 
-    .line 2
     array-length v1, p1
 
     if-nez v1, :cond_0
@@ -191,7 +176,6 @@
     :catch_0
     move-exception p1
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/SecurityException;->printStackTrace()V
 
     return-object v0
@@ -207,7 +191,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/xiaomi/account/auth/XiaomiAuthService;->getXiaomiAccount(Landroid/content/Context;)Landroid/accounts/Account;
 
     move-result-object v0
@@ -216,25 +199,20 @@
 
     if-nez v0, :cond_1
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/xiaomi/account/auth/XiaomiAuthService;->addXiaomiAccount(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     new-instance v2, Landroid/os/Bundle;
 
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
-    .line 4
     invoke-virtual {v2, v1, v0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 5
     invoke-interface {p2, v2}, Lcom/xiaomi/account/IXiaomiAuthResponse;->onResult(Landroid/os/Bundle;)V
 
-    .line 6
     :cond_0
     invoke-direct {p0, p1}, Lcom/xiaomi/account/auth/XiaomiAuthService;->getXiaomiAccount(Landroid/content/Context;)Landroid/accounts/Account;
 
@@ -243,31 +221,26 @@
     :cond_1
     if-eqz v0, :cond_6
 
-    .line 7
     iget-object v2, p0, Lcom/xiaomi/account/auth/XiaomiAuthService;->mMiuiV5AuthService:Lmiui/net/IXiaomiAuthService;
 
     if-eqz v2, :cond_5
 
-    .line 8
     invoke-interface {v2, v0, p4}, Lmiui/net/IXiaomiAuthService;->getMiCloudAccessToken(Landroid/accounts/Account;Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object p4
 
     if-eqz p4, :cond_4
 
-    .line 9
     invoke-virtual {p4, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 10
     invoke-interface {p2, p4}, Lcom/xiaomi/account/IXiaomiAuthResponse;->onResult(Landroid/os/Bundle;)V
 
     return-void
 
-    .line 11
     :cond_2
     invoke-virtual {p4, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -277,29 +250,24 @@
 
     if-eqz v0, :cond_3
 
-    .line 12
     iget-object p3, p3, Lcom/xiaomi/account/auth/OAuthConfig;->authorizeActivityClazz:Ljava/lang/Class;
 
     invoke-static {p1, v0, p2, p3}, Lcom/xiaomi/account/openauth/AuthorizeActivityBase;->asMiddleActivity(Landroid/content/Context;Landroid/content/Intent;Lcom/xiaomi/account/IXiaomiAuthResponse;Ljava/lang/Class;)Landroid/content/Intent;
 
     move-result-object p1
 
-    .line 13
     invoke-virtual {p4}, Landroid/os/Bundle;->clone()Ljava/lang/Object;
 
     move-result-object p3
 
     check-cast p3, Landroid/os/Bundle;
 
-    .line 14
     invoke-virtual {p3, v1, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 15
     invoke-interface {p2, p3}, Lcom/xiaomi/account/IXiaomiAuthResponse;->onResult(Landroid/os/Bundle;)V
 
     return-void
 
-    .line 16
     :cond_3
     new-instance p1, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
@@ -309,7 +277,6 @@
 
     throw p1
 
-    .line 17
     :cond_4
     new-instance p1, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
@@ -319,7 +286,6 @@
 
     throw p1
 
-    .line 18
     :cond_5
     new-instance p1, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
@@ -329,7 +295,6 @@
 
     throw p1
 
-    .line 19
     :cond_6
     new-instance p1, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
@@ -343,7 +308,6 @@
 .method private onCancel(Lcom/xiaomi/account/IXiaomiAuthResponse;)V
     .locals 0
 
-    .line 1
     :try_start_0
     invoke-interface {p1}, Lcom/xiaomi/account/IXiaomiAuthResponse;->onCancel()V
     :try_end_0
@@ -361,7 +325,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/xiaomi/account/auth/XiaomiAuthService;->getVersionNum()I
 
     move-result v0
@@ -384,7 +347,6 @@
 .method public asBinder()Landroid/os/IBinder;
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-direct {v0}, Ljava/lang/IllegalStateException;-><init>()V
@@ -400,12 +362,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/account/auth/XiaomiAuthService;->mAuthService:Lcom/xiaomi/account/IXiaomiAuthService;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2, p3, p4}, Lcom/xiaomi/account/IXiaomiAuthService;->getAccessTokenInResponse(Lcom/xiaomi/account/IXiaomiAuthResponse;Landroid/os/Bundle;II)V
 
     :cond_0
@@ -420,28 +380,23 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/account/auth/XiaomiAuthService;->mAuthService:Lcom/xiaomi/account/IXiaomiAuthService;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2}, Lcom/xiaomi/account/IXiaomiAuthService;->getMiCloudAccessToken(Landroid/accounts/Account;Landroid/os/Bundle;)Landroid/os/Bundle;
 
     move-result-object p1
 
     return-object p1
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/xiaomi/account/auth/XiaomiAuthService;->mMiuiV5AuthService:Lmiui/net/IXiaomiAuthService;
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-interface {v0, p1, p2}, Lmiui/net/IXiaomiAuthService;->invalidateAccessToken(Landroid/accounts/Account;Landroid/os/Bundle;)V
 
-    .line 5
     iget-object v0, p0, Lcom/xiaomi/account/auth/XiaomiAuthService;->mMiuiV5AuthService:Lmiui/net/IXiaomiAuthService;
 
     invoke-interface {v0, p1, p2}, Lmiui/net/IXiaomiAuthService;->getMiCloudAccessToken(Landroid/accounts/Account;Landroid/os/Bundle;)Landroid/os/Bundle;
@@ -490,12 +445,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/account/auth/XiaomiAuthService;->mAuthService:Lcom/xiaomi/account/IXiaomiAuthService;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/xiaomi/account/IXiaomiAuthService;->getVersionNum()I
 
     move-result v0
@@ -516,12 +469,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/account/auth/XiaomiAuthService;->mMiuiV5AuthService:Lmiui/net/IXiaomiAuthService;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2}, Lmiui/net/IXiaomiAuthService;->invalidateAccessToken(Landroid/accounts/Account;Landroid/os/Bundle;)V
 
     :cond_0
@@ -536,12 +487,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/account/auth/XiaomiAuthService;->mAuthService:Lcom/xiaomi/account/IXiaomiAuthService;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Lcom/xiaomi/account/IXiaomiAuthService;->isSupport(Ljava/lang/String;)Z
 
     move-result p1
@@ -564,12 +513,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p3}, Lcom/xiaomi/account/auth/OAuthConfig;->makeOptions()Landroid/os/Bundle;
 
     move-result-object p1
 
-    .line 2
     iget-object v0, p3, Lcom/xiaomi/account/auth/OAuthConfig;->appId:Ljava/lang/String;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -580,14 +527,12 @@
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     iget-object v0, p3, Lcom/xiaomi/account/auth/OAuthConfig;->redirectUrl:Ljava/lang/String;
 
     const-string v1, "extra_redirect_uri"
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     iget-object v0, p3, Lcom/xiaomi/account/auth/OAuthConfig;->useSystemAccountLogin:Ljava/lang/Boolean;
 
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
@@ -611,17 +556,14 @@
     :cond_0
     const-string p1, "this version of miui only support system account login"
 
-    .line 5
     invoke-static {v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     new-instance p1, Lcom/xiaomi/account/auth/FallBackWebOAuthException;
 
     invoke-direct {p1}, Lcom/xiaomi/account/auth/FallBackWebOAuthException;-><init>()V
 
     throw p1
 
-    .line 7
     :cond_1
     :goto_0
     iget-boolean v0, p3, Lcom/xiaomi/account/auth/OAuthConfig;->fastOAuth:Z
@@ -639,22 +581,18 @@
     :cond_2
     const-string p1, "this version of miui not support fast Oauth"
 
-    .line 8
     invoke-static {v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9
     new-instance p1, Lcom/xiaomi/account/auth/FallBackWebOAuthException;
 
     invoke-direct {p1}, Lcom/xiaomi/account/auth/FallBackWebOAuthException;-><init>()V
 
     throw p1
 
-    .line 10
     :cond_3
     :goto_1
     iget-object v0, p3, Lcom/xiaomi/account/auth/OAuthConfig;->deviceID:Ljava/lang/String;
 
-    .line 11
     iget v1, p3, Lcom/xiaomi/account/auth/OAuthConfig;->platform:I
 
     const/4 v2, 0x1
@@ -671,7 +609,6 @@
 
     goto :goto_2
 
-    .line 12
     :cond_4
     new-instance p1, Lcom/xiaomi/account/auth/FallBackWebOAuthException;
 
@@ -679,7 +616,6 @@
 
     throw p1
 
-    .line 13
     :cond_5
     :goto_2
     iget p3, p3, Lcom/xiaomi/account/auth/OAuthConfig;->platform:I
@@ -702,7 +638,6 @@
 
     goto :goto_3
 
-    .line 14
     :cond_6
     new-instance p1, Lcom/xiaomi/account/auth/FallBackWebOAuthException;
 
@@ -710,7 +645,6 @@
 
     throw p1
 
-    .line 15
     :cond_7
     :goto_3
     invoke-virtual {p0}, Lcom/xiaomi/account/auth/XiaomiAuthService;->supportResponseWay()Z
@@ -719,7 +653,6 @@
 
     if-eqz p3, :cond_8
 
-    .line 16
     iget-object p3, p0, Lcom/xiaomi/account/auth/XiaomiAuthService;->mAuthService:Lcom/xiaomi/account/IXiaomiAuthService;
 
     const/16 v0, 0x5a
@@ -728,7 +661,6 @@
 
     return-void
 
-    .line 17
     :cond_8
     new-instance p1, Lcom/xiaomi/account/auth/FallBackWebOAuthException;
 
@@ -745,12 +677,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/account/auth/XiaomiAuthService;->mAuthService:Lcom/xiaomi/account/IXiaomiAuthService;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/xiaomi/account/IXiaomiAuthService;->supportResponseWay()Z
 
     move-result v0

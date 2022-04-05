@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/blelib/f/c;
 .super Ljava/lang/Object;
-.source "ScanRecord.java"
 
 
 # instance fields
@@ -82,28 +81,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/blelib/f/c;->b:Ljava/util/List;
 
-    .line 3
     iput-object p2, p0, Lcom/ifengyu/blelib/f/c;->c:Landroid/util/SparseArray;
 
-    .line 4
     iput-object p3, p0, Lcom/ifengyu/blelib/f/c;->d:Ljava/util/Map;
 
-    .line 5
     iput-object p6, p0, Lcom/ifengyu/blelib/f/c;->f:Ljava/lang/String;
 
-    .line 6
     iput p4, p0, Lcom/ifengyu/blelib/f/c;->a:I
 
-    .line 7
     iput p5, p0, Lcom/ifengyu/blelib/f/c;->e:I
 
-    .line 8
     iput-object p7, p0, Lcom/ifengyu/blelib/f/c;->g:[B
 
     return-void
@@ -131,12 +122,10 @@
     :goto_0
     if-lez p2, :cond_0
 
-    .line 27
     invoke-static {p0, p1, p3}, Lcom/ifengyu/blelib/f/c;->a([BII)[B
 
     move-result-object v0
 
-    .line 28
     invoke-static {v0}, Lcom/ifengyu/blelib/f/b;->a([B)Landroid/os/ParcelUuid;
 
     move-result-object v0
@@ -189,7 +178,6 @@
 
     const/high16 v6, -0x80000000
 
-    .line 2
     :goto_0
     :try_start_0
     array-length v0, v8
@@ -198,7 +186,6 @@
 
     add-int/lit8 v0, v1, 0x1
 
-    .line 3
     aget-byte v1, v8, v1
 
     const/16 v9, 0xff
@@ -214,7 +201,6 @@
 
     add-int/lit8 v10, v0, 0x1
 
-    .line 4
     aget-byte v0, v8, v0
 
     and-int/2addr v0, v9
@@ -241,17 +227,14 @@
 
     goto/16 :goto_3
 
-    .line 5
     :pswitch_0
     aget-byte v6, v8, v10
 
     goto/16 :goto_3
 
-    .line 6
     :pswitch_1
     new-instance v7, Ljava/lang/String;
 
-    .line 7
     invoke-static {v8, v10, v1}, Lcom/ifengyu/blelib/f/c;->a([BII)[B
 
     move-result-object v0
@@ -263,12 +246,10 @@
     :pswitch_2
     if-nez v2, :cond_2
 
-    .line 8
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 9
     :cond_2
     invoke-static {v8, v10, v1, v12, v2}, Lcom/ifengyu/blelib/f/c;->a([BIIILjava/util/List;)I
 
@@ -277,7 +258,6 @@
     :pswitch_3
     if-nez v2, :cond_3
 
-    .line 10
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -285,7 +265,6 @@
     :cond_3
     const/4 v11, 0x4
 
-    .line 11
     invoke-static {v8, v10, v1, v11, v2}, Lcom/ifengyu/blelib/f/c;->a([BIIILjava/util/List;)I
 
     goto :goto_3
@@ -293,18 +272,15 @@
     :pswitch_4
     if-nez v2, :cond_4
 
-    .line 12
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 13
     :cond_4
     invoke-static {v8, v10, v1, v13, v2}, Lcom/ifengyu/blelib/f/c;->a([BIIILjava/util/List;)I
 
     goto :goto_3
 
-    .line 14
     :pswitch_5
     aget-byte v0, v8, v10
 
@@ -320,7 +296,6 @@
     :cond_6
     add-int/lit8 v0, v10, 0x1
 
-    .line 15
     aget-byte v0, v8, v0
 
     and-int/2addr v0, v9
@@ -337,19 +312,16 @@
 
     add-int/lit8 v11, v1, -0x2
 
-    .line 16
     invoke-static {v8, v9, v11}, Lcom/ifengyu/blelib/f/c;->a([BII)[B
 
     move-result-object v9
 
     if-nez v3, :cond_7
 
-    .line 17
     new-instance v3, Landroid/util/SparseArray;
 
     invoke-direct {v3}, Landroid/util/SparseArray;-><init>()V
 
-    .line 18
     :cond_7
     invoke-virtual {v3, v0, v9}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
@@ -370,13 +342,11 @@
     :cond_9
     const/4 v12, 0x2
 
-    .line 19
     :goto_2
     invoke-static {v8, v10, v12}, Lcom/ifengyu/blelib/f/c;->a([BII)[B
 
     move-result-object v0
 
-    .line 20
     invoke-static {v0}, Lcom/ifengyu/blelib/f/b;->a([B)Landroid/os/ParcelUuid;
 
     move-result-object v0
@@ -385,19 +355,16 @@
 
     sub-int v11, v1, v12
 
-    .line 21
     invoke-static {v8, v9, v11}, Lcom/ifengyu/blelib/f/c;->a([BII)[B
 
     move-result-object v9
 
     if-nez v4, :cond_a
 
-    .line 22
     new-instance v4, Ljava/util/HashMap;
 
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
-    .line 23
     :cond_a
     invoke-interface {v4, v0, v9}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -406,7 +373,6 @@
 
     goto/16 :goto_0
 
-    .line 24
     :cond_b
     :goto_4
     new-instance v9, Lcom/ifengyu/blelib/f/c;
@@ -433,7 +399,6 @@
 
     return-object v9
 
-    .line 25
     :catch_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -457,7 +422,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 26
     new-instance v9, Lcom/ifengyu/blelib/f/c;
 
     const/4 v1, 0x0
@@ -502,12 +466,10 @@
         .end annotation
     .end param
 
-    .line 29
     new-array v0, p2, [B
 
     const/4 v1, 0x0
 
-    .line 30
     invoke-static {p0, p1, v0, v1, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-object v0
@@ -520,7 +482,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/f/c;->f:Ljava/lang/String;
 
     return-object v0
@@ -539,7 +500,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/f/c;->c:Landroid/util/SparseArray;
 
     return-object v0
@@ -559,7 +519,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/f/c;->b:Ljava/util/List;
 
     return-object v0
@@ -577,7 +536,6 @@
     :cond_0
     if-eqz p1, :cond_2
 
-    .line 1
     const-class v0, Lcom/ifengyu/blelib/f/c;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -588,11 +546,9 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/ifengyu/blelib/f/c;
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/blelib/f/c;->g:[B
 
     iget-object p1, p1, Lcom/ifengyu/blelib/f/c;->g:[B
@@ -613,7 +569,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -640,7 +595,6 @@
 
     iget-object v1, p0, Lcom/ifengyu/blelib/f/c;->c:Landroid/util/SparseArray;
 
-    .line 2
     invoke-static {v1}, Lcom/ifengyu/blelib/f/a;->a(Landroid/util/SparseArray;)Ljava/lang/String;
 
     move-result-object v1
@@ -653,7 +607,6 @@
 
     iget-object v1, p0, Lcom/ifengyu/blelib/f/c;->d:Ljava/util/Map;
 
-    .line 3
     invoke-static {v1}, Lcom/ifengyu/blelib/f/a;->a(Ljava/util/Map;)Ljava/lang/String;
 
     move-result-object v1

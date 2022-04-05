@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/o$b;
 .super Ljava/lang/Object;
-.source "SharkCustomAdapter.java"
 
 # interfaces
 .implements Landroid/view/View$OnLongClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/adapter/o;Lcom/ifengyu/intercom/ui/adapter/o$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/o$b;->b:Lcom/ifengyu/intercom/ui/adapter/o;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/o$b;->a:Lcom/ifengyu/intercom/ui/adapter/o$c;
@@ -42,14 +40,12 @@
 .method public onLongClick(Landroid/view/View;)Z
     .locals 3
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/o$b;->a:Lcom/ifengyu/intercom/ui/adapter/o$c;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$y;->getAdapterPosition()I
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/o$b;->b:Lcom/ifengyu/intercom/ui/adapter/o;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/o;->a(Lcom/ifengyu/intercom/ui/adapter/o;)Ljava/util/List;
@@ -64,7 +60,6 @@
 
     if-ltz p1, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/o$b;->b:Lcom/ifengyu/intercom/ui/adapter/o;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/o;->b(Lcom/ifengyu/intercom/ui/adapter/o;)Lcom/ifengyu/intercom/ui/adapter/o$d;

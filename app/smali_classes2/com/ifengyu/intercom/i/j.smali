@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/j;
 .super Ljava/lang/Object;
-.source "ActivityManager.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
@@ -32,7 +30,6 @@
 .method public static a()V
     .locals 3
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/i/j;->a:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -53,14 +50,12 @@
 
     check-cast v1, Landroid/app/Activity;
 
-    .line 3
     invoke-virtual {v1}, Landroid/app/Activity;->isFinishing()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 4
     invoke-virtual {v1}, Landroid/app/Activity;->finish()V
 
     goto :goto_0
@@ -72,7 +67,6 @@
 .method public static a(Landroid/app/Activity;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/j;->a:Ljava/util/List;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -83,7 +77,6 @@
 .method public static b(Landroid/app/Activity;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/j;->a:Ljava/util/List;
 
     invoke-interface {v0, p0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z

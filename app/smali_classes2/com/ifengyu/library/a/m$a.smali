@@ -1,6 +1,5 @@
 .class final Lcom/ifengyu/library/a/m$a;
 .super Ljava/lang/Object;
-.source "UIUtils.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Ljava/lang/CharSequence;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/library/a/m$a;->a:Ljava/lang/CharSequence;
 
     iput-boolean p2, p0, Lcom/ifengyu/library/a/m$a;->b:Z
@@ -42,14 +40,12 @@
 .method public run()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/library/a/m;->a()Landroid/widget/Toast;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/library/a/m;->c()Landroid/content/Context;
 
     move-result-object v0
@@ -64,7 +60,6 @@
 
     invoke-static {v0}, Lcom/ifengyu/library/a/m;->a(Landroid/widget/Toast;)Landroid/widget/Toast;
 
-    .line 3
     :cond_0
     invoke-static {}, Lcom/ifengyu/library/a/m;->a()Landroid/widget/Toast;
 
@@ -72,12 +67,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/library/a/m$a;->a:Ljava/lang/CharSequence;
 
     if-nez v0, :cond_1
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/library/a/m;->a()Landroid/widget/Toast;
 
     move-result-object v0
@@ -86,7 +79,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-static {}, Lcom/ifengyu/library/a/m;->a()Landroid/widget/Toast;
 
@@ -96,7 +88,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Toast;->setText(Ljava/lang/CharSequence;)V
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/library/a/m;->a()Landroid/widget/Toast;
 
     move-result-object v0
@@ -105,7 +96,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Toast;->setDuration(I)V
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/library/a/m;->a()Landroid/widget/Toast;
 
     move-result-object v0

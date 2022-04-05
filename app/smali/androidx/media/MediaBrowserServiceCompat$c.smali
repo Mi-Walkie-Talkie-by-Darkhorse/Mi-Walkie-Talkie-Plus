@@ -1,6 +1,5 @@
 .class Landroidx/media/MediaBrowserServiceCompat$c;
 .super Landroidx/media/MediaBrowserServiceCompat$m;
-.source "MediaBrowserServiceCompat.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Landroidx/media/MediaBrowserServiceCompat;Ljava/lang/Object;Landroid/support/v4/os/ResultReceiver;)V
     .locals 0
 
-    .line 1
     iput-object p3, p0, Landroidx/media/MediaBrowserServiceCompat$c;->f:Landroid/support/v4/os/ResultReceiver;
 
     invoke-direct {p0, p2}, Landroidx/media/MediaBrowserServiceCompat$m;-><init>(Ljava/lang/Object;)V
@@ -44,7 +42,6 @@
 .method bridge synthetic a(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Landroidx/media/MediaBrowserServiceCompat$c;->a(Ljava/util/List;)V
@@ -63,7 +60,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Landroidx/media/MediaBrowserServiceCompat$m;->a()I
 
     move-result v0
@@ -76,7 +72,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance v0, Landroid/os/Bundle;
 
@@ -86,7 +81,6 @@
 
     new-array v2, v1, [Landroid/support/v4/media/MediaBrowserCompat$MediaItem;
 
-    .line 4
     invoke-interface {p1, v2}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p1
@@ -95,17 +89,14 @@
 
     const-string v2, "search_results"
 
-    .line 5
     invoke-virtual {v0, v2, p1}, Landroid/os/Bundle;->putParcelableArray(Ljava/lang/String;[Landroid/os/Parcelable;)V
 
-    .line 6
     iget-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$c;->f:Landroid/support/v4/os/ResultReceiver;
 
     invoke-virtual {p1, v1, v0}, Landroid/support/v4/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
 
     return-void
 
-    .line 7
     :cond_1
     :goto_0
     iget-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$c;->f:Landroid/support/v4/os/ResultReceiver;

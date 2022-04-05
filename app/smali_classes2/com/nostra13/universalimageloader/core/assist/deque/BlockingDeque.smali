@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/nostra13/universalimageloader/core/assist/deque/BlockingDeque;
 .super Ljava/lang/Object;
-.source "BlockingDeque.java"
 
 # interfaces
 .implements Ljava/util/concurrent/BlockingQueue;

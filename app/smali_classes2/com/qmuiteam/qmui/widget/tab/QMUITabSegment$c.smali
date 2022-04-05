@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment$c;
 .super Landroid/database/DataSetObserver;
-.source "QMUITabSegment.java"
 
 
 # annotations
@@ -24,12 +23,10 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment$c;->b:Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
 
-    .line 2
     iput-boolean p2, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment$c;->a:Z
 
     return-void
@@ -40,7 +37,6 @@
 .method public onChanged()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment$c;->b:Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment;
 
     iget-boolean v1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment$c;->a:Z
@@ -53,7 +49,6 @@
 .method public onInvalidated()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment$c;->b:Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment;
 
     iget-boolean v1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment$c;->a:Z

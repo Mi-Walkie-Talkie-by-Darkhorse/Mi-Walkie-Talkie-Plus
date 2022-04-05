@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/c/g$a;
 .super Ljava/lang/Object;
-.source "SupportMenuInflater.java"
 
 # interfaces
 .implements Landroid/view/MenuItem$OnMenuItemClickListener;
@@ -45,7 +44,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     const-class v2, Landroid/view/MenuItem;
 
     aput-object v2, v0, v1
@@ -58,18 +56,14 @@
 .method public constructor <init>(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/appcompat/c/g$a;->a:Ljava/lang/Object;
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
 
-    .line 4
     :try_start_0
     sget-object v0, Landroidx/appcompat/c/g$a;->c:[Ljava/lang/Class;
 
@@ -86,7 +80,6 @@
     :catch_0
     move-exception v0
 
-    .line 5
     new-instance v1, Landroid/view/InflateException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -103,7 +96,6 @@
 
     invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object p1
@@ -116,10 +108,8 @@
 
     invoke-direct {v1, p1}, Landroid/view/InflateException;-><init>(Ljava/lang/String;)V
 
-    .line 7
     invoke-virtual {v1, v0}, Landroid/view/InflateException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    .line 8
     throw v1
 .end method
 
@@ -128,7 +118,6 @@
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 5
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Landroidx/appcompat/c/g$a;->b:Ljava/lang/reflect/Method;
 
@@ -144,7 +133,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/c/g$a;->b:Ljava/lang/reflect/Method;
 
     iget-object v1, p0, Landroidx/appcompat/c/g$a;->a:Ljava/lang/Object;
@@ -165,7 +153,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/c/g$a;->b:Ljava/lang/reflect/Method;
 
@@ -184,7 +171,6 @@
     :catch_0
     move-exception p1
 
-    .line 4
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-direct {v0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V

@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/Gradient;
 .super Ljava/lang/Object;
-.source "Gradient.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, v0}, Lcom/amap/api/maps/model/Gradient;-><init>([I[FB)V
 
     return-void
@@ -36,12 +34,10 @@
 .method private constructor <init>([I[FB)V
     .locals 4
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p3, 0x1
 
-    .line 3
     iput-boolean p3, p0, Lcom/amap/api/maps/model/Gradient;->d:Z
 
     const/4 v0, 0x0
@@ -50,7 +46,6 @@
 
     if-eqz p2, :cond_4
 
-    .line 4
     :try_start_0
     array-length v1, p1
 
@@ -58,20 +53,17 @@
 
     if-ne v1, v2, :cond_3
 
-    .line 5
     array-length v1, p1
 
     if-eqz v1, :cond_2
 
     const/4 v1, 0x1
 
-    .line 6
     :goto_0
     array-length v2, p2
 
     if-ge v1, v2, :cond_1
 
-    .line 7
     aget v2, p2, v1
 
     add-int/lit8 v3, v1, -0x1
@@ -86,7 +78,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_0
     new-instance p1, Lcom/amap/api/maps/AMapException;
 
@@ -99,41 +90,34 @@
     :cond_1
     const/16 v1, 0x3e8
 
-    .line 9
     iput v1, p0, Lcom/amap/api/maps/model/Gradient;->a:I
 
-    .line 10
     array-length v1, p1
 
     new-array v1, v1, [I
 
     iput-object v1, p0, Lcom/amap/api/maps/model/Gradient;->b:[I
 
-    .line 11
     array-length v2, p2
 
     new-array v2, v2, [F
 
     iput-object v2, p0, Lcom/amap/api/maps/model/Gradient;->c:[F
 
-    .line 12
     array-length v2, p1
 
     invoke-static {p1, v0, v1, v0, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 13
     iget-object p1, p0, Lcom/amap/api/maps/model/Gradient;->c:[F
 
     array-length v1, p2
 
     invoke-static {p2, v0, p1, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 14
     iput-boolean p3, p0, Lcom/amap/api/maps/model/Gradient;->d:Z
 
     return-void
 
-    .line 15
     :cond_2
     new-instance p1, Lcom/amap/api/maps/AMapException;
 
@@ -143,7 +127,6 @@
 
     throw p1
 
-    .line 16
     :cond_3
     new-instance p1, Lcom/amap/api/maps/AMapException;
 
@@ -153,7 +136,6 @@
 
     throw p1
 
-    .line 17
     :cond_4
     new-instance p1, Lcom/amap/api/maps/AMapException;
 
@@ -168,13 +150,10 @@
     :catch_0
     move-exception p1
 
-    .line 18
     iput-boolean v0, p0, Lcom/amap/api/maps/model/Gradient;->d:Z
 
-    .line 19
     invoke-virtual {p1}, Lcom/amap/api/maps/AMapException;->getErrorMessage()Ljava/lang/String;
 
-    .line 20
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     return-void
@@ -183,7 +162,6 @@
 .method private static a(IIF)I
     .locals 7
 
-    .line 1
     invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v0
@@ -212,7 +190,6 @@
 
     new-array v2, v1, [F
 
-    .line 2
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v3
@@ -229,7 +206,6 @@
 
     new-array p0, v1, [F
 
-    .line 3
     invoke-static {p1}, Landroid/graphics/Color;->red(I)I
 
     move-result v3
@@ -246,7 +222,6 @@
 
     const/4 p1, 0x0
 
-    .line 4
     aget v3, v2, p1
 
     aget v4, p0, p1
@@ -261,7 +236,6 @@
 
     if-lez v3, :cond_0
 
-    .line 5
     aget v3, p0, p1
 
     add-float/2addr v3, v4
@@ -270,7 +244,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     aget v3, p0, p1
 
@@ -282,7 +255,6 @@
 
     if-lez v3, :cond_1
 
-    .line 7
     aget v3, v2, p1
 
     add-float/2addr v3, v4
@@ -296,7 +268,6 @@
     :goto_1
     if-ge p1, v1, :cond_2
 
-    .line 8
     aget v4, p0, p1
 
     aget v5, v2, p1
@@ -315,7 +286,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_2
     invoke-static {v0, v3}, Landroid/graphics/Color;->HSVToColor(I[F)I
 
@@ -331,7 +301,6 @@
 
     move-object v6, p0
 
-    .line 1
     new-instance v7, Ljava/util/HashMap;
 
     invoke-direct {v7}, Ljava/util/HashMap;-><init>()V
@@ -551,13 +520,11 @@
 
     invoke-virtual {v7, v10, v11}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     :cond_2
     iget v0, v6, Lcom/amap/api/maps/model/Gradient;->a:I
 
     new-array v0, v0, [I
 
-    .line 3
     invoke-virtual {v7, v9}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -568,13 +535,11 @@
 
     const/4 v3, 0x0
 
-    .line 4
     :goto_1
     iget v4, v6, Lcom/amap/api/maps/model/Gradient;->a:I
 
     if-ge v2, v4, :cond_4
 
-    .line 5
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -585,7 +550,6 @@
 
     if-eqz v4, :cond_3
 
-    .line 6
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -603,14 +567,12 @@
 
     int-to-float v4, v4
 
-    .line 7
     invoke-static {v1}, Lcom/amap/api/maps/model/Gradient$a;->a(Lcom/amap/api/maps/model/Gradient$a;)F
 
     move-result v5
 
     div-float/2addr v4, v5
 
-    .line 8
     invoke-static {v1}, Lcom/amap/api/maps/model/Gradient$a;->b(Lcom/amap/api/maps/model/Gradient$a;)I
 
     move-result v5
@@ -636,16 +598,13 @@
 
     if-eqz v3, :cond_5
 
-    .line 9
     :goto_2
     iget v1, v6, Lcom/amap/api/maps/model/Gradient;->a:I
 
     if-ge v8, v1, :cond_5
 
-    .line 10
     aget v1, v0, v8
 
-    .line 11
     invoke-static {v1}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v2
@@ -656,7 +615,6 @@
 
     double-to-int v2, v2
 
-    .line 12
     invoke-static {v1}, Landroid/graphics/Color;->red(I)I
 
     move-result v3
@@ -669,7 +627,6 @@
 
     move-result v1
 
-    .line 13
     invoke-static {v2, v3, v4, v1}, Landroid/graphics/Color;->argb(IIII)I
 
     move-result v1
@@ -687,7 +644,6 @@
 .method protected isAvailable()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/maps/model/Gradient;->d:Z
 
     return v0

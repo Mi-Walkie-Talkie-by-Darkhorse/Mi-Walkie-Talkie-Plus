@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/utils/l;
 .super Ljava/lang/Object;
-.source "VersionUtil.java"
 
 
 # direct methods
@@ -23,7 +22,6 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 1
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0

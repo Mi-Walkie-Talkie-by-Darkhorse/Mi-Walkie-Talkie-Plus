@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/MyColorPointHintView;
 .super Lcom/jude/rollviewpager/hintview/ColorPointHintView;
-.source "MyColorPointHintView.java"
 
 
 # instance fields
@@ -13,13 +12,10 @@
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/jude/rollviewpager/hintview/ColorPointHintView;-><init>(Landroid/content/Context;II)V
 
-    .line 2
     iput p2, p0, Lcom/ifengyu/intercom/ui/widget/view/MyColorPointHintView;->h:I
 
-    .line 3
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/MyColorPointHintView;->i:I
 
     return-void
@@ -30,17 +26,14 @@
 .method public a()Landroid/graphics/drawable/Drawable;
     .locals 4
 
-    .line 1
     new-instance v0, Landroid/graphics/drawable/GradientDrawable;
 
     invoke-direct {v0}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
 
-    .line 2
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/MyColorPointHintView;->h:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
-    .line 3
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -55,7 +48,6 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setCornerRadius(F)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -82,17 +74,14 @@
 .method public b()Landroid/graphics/drawable/Drawable;
     .locals 4
 
-    .line 1
     new-instance v0, Landroid/graphics/drawable/GradientDrawable;
 
     invoke-direct {v0}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
 
-    .line 2
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/MyColorPointHintView;->i:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
-    .line 3
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -107,7 +96,6 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setCornerRadius(F)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getContext()Landroid/content/Context;
 
     move-result-object v1

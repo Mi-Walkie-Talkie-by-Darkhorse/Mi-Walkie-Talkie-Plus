@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/common/eventbus/AllowConcurrentEvents;
 .super Ljava/lang/Object;
-.source "AllowConcurrentEvents.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

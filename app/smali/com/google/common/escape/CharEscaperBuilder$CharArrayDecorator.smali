@@ -1,6 +1,5 @@
 .class Lcom/google/common/escape/CharEscaperBuilder$CharArrayDecorator;
 .super Lcom/google/common/escape/CharEscaper;
-.source "CharEscaperBuilder.java"
 
 
 # annotations
@@ -24,13 +23,10 @@
 .method constructor <init>([[C)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/escape/CharEscaper;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/escape/CharEscaperBuilder$CharArrayDecorator;->replacements:[[C
 
-    .line 3
     array-length p1, p1
 
     iput p1, p0, Lcom/google/common/escape/CharEscaperBuilder$CharArrayDecorator;->replaceLength:I
@@ -43,7 +39,6 @@
 .method public escape(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -53,12 +48,10 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 2
     invoke-virtual {p1, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
 
-    .line 3
     iget-object v3, p0, Lcom/google/common/escape/CharEscaperBuilder$CharArrayDecorator;->replacements:[[C
 
     array-length v4, v3
@@ -69,7 +62,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 4
     invoke-virtual {p0, p1, v1}, Lcom/google/common/escape/CharEscaper;->escapeSlow(Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
@@ -88,7 +80,6 @@
 .method protected escape(C)[C
     .locals 1
 
-    .line 5
     iget v0, p0, Lcom/google/common/escape/CharEscaperBuilder$CharArrayDecorator;->replaceLength:I
 
     if-ge p1, v0, :cond_0

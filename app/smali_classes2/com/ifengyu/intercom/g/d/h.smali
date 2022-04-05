@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/intercom/g/d/h;
 .super Lcom/ifengyu/intercom/g/d/b;
-.source "PrivacyInfoCallback.java"
 
 
 # annotations
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/b;-><init>()V
 
     return-void
@@ -33,7 +31,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p1}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
     move-result-object p1
@@ -44,10 +41,8 @@
 
     const-string p2, "PrivacyInfoCallback"
 
-    .line 3
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     new-instance p2, Lcom/google/gson/Gson;
 
     invoke-direct {p2}, Lcom/google/gson/Gson;-><init>()V
@@ -71,7 +66,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/g/d/h;->a(Lokhttp3/Response;I)Lcom/ifengyu/intercom/bean/PrivacyInfoBean;
 
     move-result-object p1

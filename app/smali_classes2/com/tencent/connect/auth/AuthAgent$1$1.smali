@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/auth/AuthAgent$1$1;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/tencent/connect/auth/AuthAgent$1;Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$1$1;->b:Lcom/tencent/connect/auth/AuthAgent$1;
 
     iput-object p2, p0, Lcom/tencent/connect/auth/AuthAgent$1$1;->a:Landroid/app/Activity;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 7
 
-    .line 1
     new-instance v6, Lcom/tencent/connect/auth/a;
 
     iget-object v1, p0, Lcom/tencent/connect/auth/AuthAgent$1$1;->a:Landroid/app/Activity;
@@ -65,7 +62,6 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/tencent/connect/auth/a;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;Lcom/tencent/connect/auth/QQToken;)V
 
-    .line 2
     iget-object v0, p0, Lcom/tencent/connect/auth/AuthAgent$1$1;->a:Landroid/app/Activity;
 
     if-eqz v0, :cond_0
@@ -76,7 +72,6 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-virtual {v6}, Landroid/app/Dialog;->show()V
 
     :cond_0

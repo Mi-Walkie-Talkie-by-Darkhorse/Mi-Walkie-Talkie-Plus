@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/dialog/list/a$a;
 .super Ljava/lang/Object;
-.source "BottomSheetListAdapter.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/dialog/list/a;Lcom/ifengyu/intercom/lite/dialog/list/a$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/dialog/list/a$a;->b:Lcom/ifengyu/intercom/lite/dialog/list/a;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/lite/dialog/list/a$a;->a:Lcom/ifengyu/intercom/lite/dialog/list/a$c;
@@ -42,7 +40,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/dialog/list/a$a;->b:Lcom/ifengyu/intercom/lite/dialog/list/a;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/dialog/list/a;->a(Lcom/ifengyu/intercom/lite/dialog/list/a;)Lcom/ifengyu/intercom/lite/dialog/list/a$b;
@@ -51,14 +48,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/dialog/list/a$a;->a:Lcom/ifengyu/intercom/lite/dialog/list/a$c;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$y;->getAdapterPosition()I
 
     move-result p1
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/dialog/list/a$a;->b:Lcom/ifengyu/intercom/lite/dialog/list/a;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/dialog/list/a;->b(Lcom/ifengyu/intercom/lite/dialog/list/a;)Landroid/view/View;
@@ -69,7 +64,6 @@
 
     add-int/lit8 p1, p1, -0x1
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/dialog/list/a$a;->b:Lcom/ifengyu/intercom/lite/dialog/list/a;
 

@@ -1,13 +1,11 @@
 .class public Lcom/google/android/material/shape/CornerTreatment;
 .super Ljava/lang/Object;
-.source "CornerTreatment.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +32,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p2, p3, p1}, Lcom/google/android/material/shape/CornerTreatment;->getCornerPath(FFLcom/google/android/material/shape/ShapePath;)V
 
     return-void
@@ -55,7 +52,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-interface {p5, p4}, Lcom/google/android/material/shape/CornerSize;->getCornerSize(Landroid/graphics/RectF;)F
 
     move-result p4

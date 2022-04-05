@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/datepicker/MaterialDatePicker$2;
 .super Ljava/lang/Object;
-.source "MaterialDatePicker.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/datepicker/MaterialDatePicker;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$2;->this$0:Lcom/google/android/material/datepicker/MaterialDatePicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$2;->this$0:Lcom/google/android/material/datepicker/MaterialDatePicker;
 
     invoke-static {v0}, Lcom/google/android/material/datepicker/MaterialDatePicker;->access$100(Lcom/google/android/material/datepicker/MaterialDatePicker;)Ljava/util/LinkedHashSet;
@@ -62,12 +59,10 @@
 
     check-cast v1, Landroid/view/View$OnClickListener;
 
-    .line 2
     invoke-interface {v1, p1}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$2;->this$0:Lcom/google/android/material/datepicker/MaterialDatePicker;
 

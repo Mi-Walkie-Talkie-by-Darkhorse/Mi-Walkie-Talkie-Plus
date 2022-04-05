@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/ActionBarContextView$a;
 .super Ljava/lang/Object;
-.source "ActionBarContextView.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/ActionBarContextView;Landroidx/appcompat/c/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->b:Landroidx/appcompat/widget/ActionBarContextView;
 
     iput-object p2, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->a:Landroidx/appcompat/c/b;
@@ -42,7 +40,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/ActionBarContextView$a;->a:Landroidx/appcompat/c/b;
 
     invoke-virtual {p1}, Landroidx/appcompat/c/b;->a()V

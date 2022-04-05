@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/k/a;
 .super Ljava/lang/Object;
-.source "SimpleResource.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/s;
@@ -42,10 +41,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/bumptech/glide/util/i;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/bumptech/glide/load/k/a;->a:Ljava/lang/Object;
@@ -82,7 +79,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/k/a;->a:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -103,7 +99,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/k/a;->a:Ljava/lang/Object;
 
     return-object v0

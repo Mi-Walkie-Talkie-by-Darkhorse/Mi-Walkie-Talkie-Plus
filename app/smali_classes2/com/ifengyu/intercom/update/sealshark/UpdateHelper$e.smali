@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$e;
 .super Ljava/lang/Object;
-.source "UpdateHelper.java"
 
 
 # annotations

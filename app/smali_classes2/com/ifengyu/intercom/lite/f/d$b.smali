@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/f/d$b;
 .super Landroidx/room/b;
-.source "ConfigFileDao_Impl.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/f/d;Landroidx/room/RoomDatabase;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2}, Landroidx/room/b;-><init>(Landroidx/room/RoomDatabase;)V
 
     return-void
@@ -37,7 +35,6 @@
 .method public a(La/g/a/f;Lcom/ifengyu/intercom/lite/models/ConfigFileModel;)V
     .locals 4
 
-    .line 2
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;->getId()Ljava/lang/Long;
 
     move-result-object v0
@@ -46,12 +43,10 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-interface {p1, v1}, La/g/a/d;->bindNull(I)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;->getId()Ljava/lang/Long;
 
@@ -70,7 +65,6 @@
 .method public bridge synthetic a(La/g/a/f;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/lite/f/d$b;->a(La/g/a/f;Lcom/ifengyu/intercom/lite/models/ConfigFileModel;)V

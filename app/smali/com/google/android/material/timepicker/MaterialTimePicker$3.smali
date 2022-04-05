@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/timepicker/MaterialTimePicker$3;
 .super Ljava/lang/Object;
-.source "MaterialTimePicker.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/timepicker/MaterialTimePicker;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$3;->this$0:Lcom/google/android/material/timepicker/MaterialTimePicker;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$3;->this$0:Lcom/google/android/material/timepicker/MaterialTimePicker;
 
     invoke-static {v0}, Lcom/google/android/material/timepicker/MaterialTimePicker;->access$900(Lcom/google/android/material/timepicker/MaterialTimePicker;)Ljava/util/Set;
@@ -62,12 +59,10 @@
 
     check-cast v1, Landroid/view/View$OnClickListener;
 
-    .line 2
     invoke-interface {v1, p1}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/timepicker/MaterialTimePicker$3;->this$0:Lcom/google/android/material/timepicker/MaterialTimePicker;
 

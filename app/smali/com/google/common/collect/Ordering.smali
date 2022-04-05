@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/Ordering;
 .super Ljava/lang/Object;
-.source "Ordering.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -40,7 +39,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,7 +59,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/AllEqualOrdering;->INSTANCE:Lcom/google/common/collect/AllEqualOrdering;
 
     return-object v0
@@ -78,7 +75,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/Ordering$ArbitraryOrderingHolder;->ARBITRARY_ORDERING:Lcom/google/common/collect/Ordering;
 
     return-object v0
@@ -104,7 +100,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/CompoundOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/CompoundOrdering;-><init>(Ljava/lang/Iterable;)V
@@ -128,7 +123,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0, p1}, Lcom/google/common/collect/Lists;->asList(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
@@ -158,7 +152,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ExplicitOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ExplicitOrdering;-><init>(Ljava/util/List;)V
@@ -187,7 +180,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -215,7 +207,6 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/collect/Ordering;
 
     if-eqz v0, :cond_0
@@ -251,7 +242,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/NaturalOrdering;->INSTANCE:Lcom/google/common/collect/NaturalOrdering;
 
     return-object v0
@@ -265,15 +255,12 @@
         }
     .end annotation
 
-    .line 1
     aget-object v0, p1, p4
 
-    .line 2
     aget-object v1, p1, p3
 
     aput-object v1, p1, p4
 
-    .line 3
     aput-object v0, p1, p3
 
     move p4, p2
@@ -281,7 +268,6 @@
     :goto_0
     if-ge p2, p3, :cond_1
 
-    .line 4
     aget-object v1, p1, p2
 
     invoke-virtual {p0, v1, v0}, Lcom/google/common/collect/Ordering;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
@@ -290,7 +276,6 @@
 
     if-gez v1, :cond_0
 
-    .line 5
     invoke-static {p1, p4, p2}, Lcom/google/common/collect/ObjectArrays;->swap([Ljava/lang/Object;II)V
 
     add-int/lit8 p4, p4, 0x1
@@ -300,7 +285,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-static {p1, p3, p4}, Lcom/google/common/collect/ObjectArrays;->swap([Ljava/lang/Object;II)V
 
@@ -322,7 +306,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/UsingToStringOrdering;->INSTANCE:Lcom/google/common/collect/UsingToStringOrdering;
 
     return-object v0
@@ -344,7 +327,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1, p2, p0}, Ljava/util/Collections;->binarySearch(Ljava/util/List;Ljava/lang/Object;Ljava/util/Comparator;)I
 
     move-result p1
@@ -384,7 +366,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/CompoundOrdering;
 
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -410,7 +391,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/Ordering;->reverse()Lcom/google/common/collect/Ordering;
 
     move-result-object v0
@@ -434,7 +414,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/Ordering;->reverse()Lcom/google/common/collect/Ordering;
 
     move-result-object v0
@@ -458,12 +437,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/collect/Iterables;->toArray(Ljava/lang/Iterable;)[Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 2
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -473,18 +450,15 @@
 
     aget-object v2, p1, v1
 
-    .line 3
     invoke-static {v2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-static {p1, p0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
-    .line 5
     invoke-static {p1}, Lcom/google/common/collect/ImmutableList;->asImmutableList([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p1
@@ -502,24 +476,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -527,12 +497,10 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 6
     invoke-virtual {p0, v0, v1}, Lcom/google/common/collect/Ordering;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
@@ -564,24 +532,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -589,12 +553,10 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 6
     invoke-virtual {p0, v0, v1}, Lcom/google/common/collect/Ordering;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
@@ -628,17 +590,14 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p1, Ljava/util/Collection;
 
     if-eqz v0, :cond_1
 
-    .line 2
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 3
     invoke-interface {v0}, Ljava/util/Collection;->size()I
 
     move-result v1
@@ -655,25 +614,20 @@
 
     if-gtz v3, :cond_1
 
-    .line 4
     invoke-interface {v0}, Ljava/util/Collection;->toArray()[Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 5
     invoke-static {p1, p0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
-    .line 6
     array-length v0, p1
 
     if-le v0, p2, :cond_0
 
-    .line 7
     invoke-static {p1, p2}, Lcom/google/common/collect/ObjectArrays;->arraysCopyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 8
     :cond_0
     invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
@@ -685,7 +639,6 @@
 
     return-object p1
 
-    .line 9
     :cond_1
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -710,17 +663,14 @@
         }
     .end annotation
 
-    .line 10
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "k"
 
-    .line 11
     invoke-static {p2, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
     if-eqz p2, :cond_a
 
-    .line 12
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -734,22 +684,18 @@
 
     if-lt p2, v0, :cond_2
 
-    .line 13
     invoke-static {p1}, Lcom/google/common/collect/Lists;->newArrayList(Ljava/util/Iterator;)Ljava/util/ArrayList;
 
     move-result-object p1
 
-    .line 14
     invoke-static {p1, p0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 15
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result v0
 
     if-le v0, p2, :cond_1
 
-    .line 16
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result v0
@@ -760,11 +706,9 @@
 
     invoke-interface {p2}, Ljava/util/List;->clear()V
 
-    .line 17
     :cond_1
     invoke-virtual {p1}, Ljava/util/ArrayList;->trimToSize()V
 
-    .line 18
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
@@ -774,17 +718,14 @@
     :cond_2
     mul-int/lit8 v0, p2, 0x2
 
-    .line 19
     new-array v1, v0, [Ljava/lang/Object;
 
-    .line 20
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     const/4 v3, 0x0
 
-    .line 21
     aput-object v2, v1, v3
 
     const/4 v4, 0x1
@@ -794,24 +735,20 @@
     :goto_0
     if-ge v5, p2, :cond_3
 
-    .line 22
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v6
 
     if-eqz v6, :cond_3
 
-    .line 23
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v6
 
     add-int/lit8 v7, v5, 0x1
 
-    .line 24
     aput-object v6, v1, v5
 
-    .line 25
     invoke-virtual {p0, v2, v6}, Lcom/google/common/collect/Ordering;->max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -820,7 +757,6 @@
 
     goto :goto_0
 
-    .line 26
     :cond_3
     :goto_1
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
@@ -829,12 +765,10 @@
 
     if-eqz v6, :cond_9
 
-    .line 27
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 28
     invoke-virtual {p0, v6, v2}, Lcom/google/common/collect/Ordering;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v7
@@ -846,7 +780,6 @@
     :cond_4
     add-int/lit8 v7, v5, 0x1
 
-    .line 29
     aput-object v6, v1, v5
 
     if-ne v7, v0, :cond_8
@@ -866,7 +799,6 @@
 
     ushr-int/2addr v7, v4
 
-    .line 30
     invoke-direct {p0, v1, v5, v2, v7}, Lcom/google/common/collect/Ordering;->partition([Ljava/lang/Object;III)I
 
     move-result v7
@@ -884,7 +816,6 @@
 
     add-int/lit8 v5, v5, 0x1
 
-    .line 31
     invoke-static {v7, v5}, Ljava/lang/Math;->max(II)I
 
     move-result v5
@@ -893,7 +824,6 @@
 
     goto :goto_2
 
-    .line 32
     :cond_6
     aget-object v2, v1, v6
 
@@ -902,7 +832,6 @@
 
     if-ge v6, p2, :cond_7
 
-    .line 33
     aget-object v5, v1, v6
 
     invoke-virtual {p0, v2, v5}, Lcom/google/common/collect/Ordering;->max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -921,16 +850,13 @@
 
     goto :goto_1
 
-    .line 34
     :cond_9
     invoke-static {v1, v3, v5, p0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;IILjava/util/Comparator;)V
 
-    .line 35
     invoke-static {v5, p2}, Ljava/lang/Math;->min(II)I
 
     move-result p1
 
-    .line 36
     invoke-static {v1, p1}, Lcom/google/common/collect/ObjectArrays;->arraysCopyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object p1
@@ -945,7 +871,6 @@
 
     return-object p1
 
-    .line 37
     :cond_a
     :goto_4
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
@@ -970,7 +895,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/LexicographicalOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/LexicographicalOrdering;-><init>(Lcom/google/common/collect/Ordering;)V
@@ -988,7 +912,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -1016,7 +939,6 @@
         }
     .end annotation
 
-    .line 5
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Ordering;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
@@ -1052,7 +974,6 @@
         }
     .end annotation
 
-    .line 6
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Ordering;->max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1061,7 +982,6 @@
 
     move-result-object p1
 
-    .line 7
     array-length p2, p4
 
     const/4 p3, 0x0
@@ -1071,7 +991,6 @@
 
     aget-object v0, p4, p3
 
-    .line 8
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/Ordering;->max(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1094,12 +1013,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1107,7 +1024,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
@@ -1132,7 +1048,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -1160,7 +1075,6 @@
         }
     .end annotation
 
-    .line 5
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Ordering;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
@@ -1196,7 +1110,6 @@
         }
     .end annotation
 
-    .line 6
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/Ordering;->min(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1205,7 +1118,6 @@
 
     move-result-object p1
 
-    .line 7
     array-length p2, p4
 
     const/4 p3, 0x0
@@ -1215,7 +1127,6 @@
 
     aget-object v0, p4, p3
 
-    .line 8
     invoke-virtual {p0, p1, v0}, Lcom/google/common/collect/Ordering;->min(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -1238,12 +1149,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1251,7 +1160,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
@@ -1280,7 +1188,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/NullsFirstOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/NullsFirstOrdering;-><init>(Lcom/google/common/collect/Ordering;)V
@@ -1302,7 +1209,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/NullsLastOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/NullsLastOrdering;-><init>(Lcom/google/common/collect/Ordering;)V
@@ -1321,7 +1227,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/Maps;->keyFunction()Lcom/google/common/base/Function;
 
     move-result-object v0
@@ -1351,7 +1256,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ByFunctionOrdering;
 
     invoke-direct {v0, p1, p0}, Lcom/google/common/collect/ByFunctionOrdering;-><init>(Lcom/google/common/base/Function;Lcom/google/common/collect/Ordering;)V
@@ -1373,7 +1277,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ReverseOrdering;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ReverseOrdering;-><init>(Lcom/google/common/collect/Ordering;)V
@@ -1393,15 +1296,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/collect/Iterables;->toArray(Ljava/lang/Iterable;)[Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 2
     invoke-static {p1, p0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
-    .line 3
     invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1

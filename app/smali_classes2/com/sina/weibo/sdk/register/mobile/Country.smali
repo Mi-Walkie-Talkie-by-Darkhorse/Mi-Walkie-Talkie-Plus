@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/register/mobile/Country;
 .super Ljava/lang/Object;
-.source "Country.java"
 
 # interfaces
 .implements Ljava/lang/Comparable;
@@ -37,7 +36,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -46,13 +44,10 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/Country;->a:Ljava/lang/String;
 
-    .line 4
     iput-object p2, p0, Lcom/sina/weibo/sdk/register/mobile/Country;->c:Ljava/lang/String;
 
     return-void
@@ -63,7 +58,6 @@
 .method public a(Lcom/sina/weibo/sdk/register/mobile/Country;)I
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/Country;->b:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -79,7 +73,6 @@
     :cond_0
     if-eqz p1, :cond_2
 
-    .line 4
     iget-object v0, p1, Lcom/sina/weibo/sdk/register/mobile/Country;->b:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -90,7 +83,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/Country;->b:Ljava/lang/String;
 
@@ -112,7 +104,6 @@
 .method public a()Ljava/lang/String;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/Country;->c:Ljava/lang/String;
 
     return-object v0
@@ -121,7 +112,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 0
 
-    .line 6
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/Country;->c:Ljava/lang/String;
 
     return-void
@@ -130,7 +120,6 @@
 .method public a([Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/Country;->d:[Ljava/lang/String;
 
     return-void
@@ -139,7 +128,6 @@
 .method public b()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/Country;->a:Ljava/lang/String;
 
     return-object v0
@@ -148,7 +136,6 @@
 .method public b(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/Country;->a:Ljava/lang/String;
 
     return-void
@@ -157,7 +144,6 @@
 .method public c()Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/sina/weibo/sdk/register/mobile/a;->a()Lcom/sina/weibo/sdk/register/mobile/a;
 
     move-result-object v0
@@ -178,7 +164,6 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/sina/weibo/sdk/register/mobile/Country;
 
     invoke-virtual {p0, p1}, Lcom/sina/weibo/sdk/register/mobile/Country;->a(Lcom/sina/weibo/sdk/register/mobile/Country;)I

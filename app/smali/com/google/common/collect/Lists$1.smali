@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Lists$1;
 .super Lcom/google/common/collect/Lists$RandomAccessListWrapper;
-.source "Lists.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Ljava/util/List;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/Lists$RandomAccessListWrapper;-><init>(Ljava/util/List;)V
 
     return-void
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Lists$AbstractListWrapper;->backingList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->listIterator(I)Ljava/util/ListIterator;

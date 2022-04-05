@@ -1,6 +1,5 @@
 .class Landroidx/activity/result/ActivityResultRegistry$b;
 .super Landroidx/activity/result/b;
-.source "ActivityResultRegistry.java"
 
 
 # annotations
@@ -35,7 +34,6 @@
 .method constructor <init>(Landroidx/activity/result/ActivityResultRegistry;Ljava/lang/String;ILandroidx/activity/result/d/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/activity/result/ActivityResultRegistry$b;->d:Landroidx/activity/result/ActivityResultRegistry;
 
     iput-object p2, p0, Landroidx/activity/result/ActivityResultRegistry$b;->a:Ljava/lang/String;
@@ -64,7 +62,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$b;->c:Landroidx/activity/result/d/a;
 
     return-object v0
@@ -84,7 +81,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$b;->d:Landroidx/activity/result/ActivityResultRegistry;
 
     iget-object v0, v0, Landroidx/activity/result/ActivityResultRegistry;->e:Ljava/util/ArrayList;
@@ -93,7 +89,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$b;->d:Landroidx/activity/result/ActivityResultRegistry;
 
     iget v1, p0, Landroidx/activity/result/ActivityResultRegistry$b;->b:I
@@ -108,7 +103,6 @@
 .method public unregister()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$b;->d:Landroidx/activity/result/ActivityResultRegistry;
 
     iget-object v1, p0, Landroidx/activity/result/ActivityResultRegistry$b;->a:Ljava/lang/String;

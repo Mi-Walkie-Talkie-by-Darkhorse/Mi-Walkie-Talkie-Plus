@@ -1,6 +1,5 @@
 .class Landroidx/fragment/app/DefaultSpecialEffectsController$4;
 .super Ljava/lang/Object;
-.source "DefaultSpecialEffectsController.java"
 
 # interfaces
 .implements Landroid/view/animation/Animation$AnimationListener;
@@ -31,7 +30,6 @@
 .method constructor <init>(Landroidx/fragment/app/DefaultSpecialEffectsController;Landroid/view/ViewGroup;Landroid/view/View;Landroidx/fragment/app/DefaultSpecialEffectsController$AnimationInfo;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$4;->this$0:Landroidx/fragment/app/DefaultSpecialEffectsController;
 
     iput-object p2, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$4;->val$container:Landroid/view/ViewGroup;
@@ -50,7 +48,6 @@
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/fragment/app/DefaultSpecialEffectsController$4;->val$container:Landroid/view/ViewGroup;
 
     new-instance v0, Landroidx/fragment/app/DefaultSpecialEffectsController$4$1;

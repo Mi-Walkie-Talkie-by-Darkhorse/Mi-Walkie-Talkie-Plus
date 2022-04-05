@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;
 .super Lcom/google/common/collect/MapConstraints$ConstrainedMap;
-.source "MapConstraints.java"
 
 # interfaces
 .implements Lcom/google/common/collect/BiMap;
@@ -61,10 +60,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p3}, Lcom/google/common/collect/MapConstraints$ConstrainedMap;-><init>(Ljava/util/Map;Lcom/google/common/collect/MapConstraint;)V
 
-    .line 2
     iput-object p2, p0, Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;->inverse:Lcom/google/common/collect/BiMap;
 
     return-void
@@ -82,7 +79,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-super {p0}, Lcom/google/common/collect/MapConstraints$ConstrainedMap;->delegate()Ljava/util/Map;
 
     move-result-object v0
@@ -95,7 +91,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;->delegate()Lcom/google/common/collect/BiMap;
 
     move-result-object v0
@@ -106,7 +101,6 @@
 .method protected bridge synthetic delegate()Ljava/util/Map;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;->delegate()Lcom/google/common/collect/BiMap;
 
     move-result-object v0
@@ -122,12 +116,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMap;->constraint:Lcom/google/common/collect/MapConstraint;
 
     invoke-interface {v0, p1, p2}, Lcom/google/common/collect/MapConstraint;->checkKeyValue(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;->delegate()Lcom/google/common/collect/BiMap;
 
     move-result-object v0
@@ -149,12 +141,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;->inverse:Lcom/google/common/collect/BiMap;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;
 
     invoke-virtual {p0}, Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;->delegate()Lcom/google/common/collect/BiMap;
@@ -175,7 +165,6 @@
 
     iput-object v0, p0, Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;->inverse:Lcom/google/common/collect/BiMap;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;->inverse:Lcom/google/common/collect/BiMap;
 
@@ -185,7 +174,6 @@
 .method public bridge synthetic values()Ljava/util/Collection;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;->values()Ljava/util/Set;
 
     move-result-object v0
@@ -203,7 +191,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/MapConstraints$ConstrainedBiMap;->delegate()Lcom/google/common/collect/BiMap;
 
     move-result-object v0

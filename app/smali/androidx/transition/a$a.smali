@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/transition/a$a;
 .super Ljava/lang/Object;
-.source "AnimatorUtils.java"
 
 
 # annotations

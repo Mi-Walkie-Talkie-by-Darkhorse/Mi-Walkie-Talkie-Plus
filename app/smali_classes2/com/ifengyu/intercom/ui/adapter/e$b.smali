@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/e$b;
 .super Ljava/lang/Object;
-.source "GaoDeOfflineCityChild.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/adapter/e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/e$b;->a:Lcom/ifengyu/intercom/ui/adapter/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/e$b;->a:Lcom/ifengyu/intercom/ui/adapter/e;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/e;->e(Lcom/ifengyu/intercom/ui/adapter/e;)Landroid/view/View;

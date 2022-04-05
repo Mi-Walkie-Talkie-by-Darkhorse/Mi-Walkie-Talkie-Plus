@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/AbstractTable$Values;
 .super Ljava/util/AbstractCollection;
-.source "AbstractTable.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/collect/AbstractTable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/AbstractTable$Values;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
@@ -42,7 +40,6 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractTable$Values;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {v0}, Lcom/google/common/collect/AbstractTable;->clear()V
@@ -53,7 +50,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractTable$Values;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/AbstractTable;->containsValue(Ljava/lang/Object;)Z
@@ -73,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractTable$Values;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-virtual {v0}, Lcom/google/common/collect/AbstractTable;->valuesIterator()Ljava/util/Iterator;
@@ -86,7 +81,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractTable$Values;->this$0:Lcom/google/common/collect/AbstractTable;
 
     invoke-interface {v0}, Lcom/google/common/collect/Table;->size()I

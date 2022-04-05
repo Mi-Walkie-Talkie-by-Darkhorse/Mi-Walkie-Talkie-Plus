@@ -1,6 +1,5 @@
 .class Lcom/wang/avi/indicators/BallScaleIndicator$1;
 .super Ljava/lang/Object;
-.source "BallScaleIndicator.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/wang/avi/indicators/BallScaleIndicator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/wang/avi/indicators/BallScaleIndicator$1;->this$0:Lcom/wang/avi/indicators/BallScaleIndicator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/wang/avi/indicators/BallScaleIndicator$1;->this$0:Lcom/wang/avi/indicators/BallScaleIndicator;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
@@ -53,7 +50,6 @@
 
     iput p1, v0, Lcom/wang/avi/indicators/BallScaleIndicator;->scale:F
 
-    .line 2
     iget-object p1, p0, Lcom/wang/avi/indicators/BallScaleIndicator$1;->this$0:Lcom/wang/avi/indicators/BallScaleIndicator;
 
     invoke-virtual {p1}, Lcom/wang/avi/Indicator;->postInvalidate()V

@@ -1,6 +1,5 @@
 .class Lcom/yalantis/ucrop/view/GestureCropImageView$d;
 .super Landroid/view/ScaleGestureDetector$SimpleOnScaleGestureListener;
-.source "GestureCropImageView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Lcom/yalantis/ucrop/view/GestureCropImageView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView$d;->a:Lcom/yalantis/ucrop/view/GestureCropImageView;
 
     invoke-direct {p0}, Landroid/view/ScaleGestureDetector$SimpleOnScaleGestureListener;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/yalantis/ucrop/view/GestureCropImageView;Lcom/yalantis/ucrop/view/GestureCropImageView$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/yalantis/ucrop/view/GestureCropImageView$d;-><init>(Lcom/yalantis/ucrop/view/GestureCropImageView;)V
 
     return-void
@@ -44,7 +41,6 @@
 .method public onScale(Landroid/view/ScaleGestureDetector;)Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView$d;->a:Lcom/yalantis/ucrop/view/GestureCropImageView;
 
     invoke-virtual {p1}, Landroid/view/ScaleGestureDetector;->getScaleFactor()F

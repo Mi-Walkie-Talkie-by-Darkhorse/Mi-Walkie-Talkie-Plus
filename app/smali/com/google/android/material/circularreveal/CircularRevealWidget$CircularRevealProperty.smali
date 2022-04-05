@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealProperty;
 .super Landroid/util/Property;
-.source "CircularRevealWidget.java"
 
 
 # annotations
@@ -40,7 +39,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealProperty;
 
     const-string v1, "circularReveal"
@@ -55,7 +53,6 @@
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
 
     invoke-direct {p0, v0, p1}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
@@ -74,7 +71,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 2
     invoke-interface {p1}, Lcom/google/android/material/circularreveal/CircularRevealWidget;->getRevealInfo()Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
 
     move-result-object p1
@@ -91,7 +87,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     check-cast p1, Lcom/google/android/material/circularreveal/CircularRevealWidget;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealProperty;->get(Lcom/google/android/material/circularreveal/CircularRevealWidget;)Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;
@@ -112,7 +107,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-interface {p1, p2}, Lcom/google/android/material/circularreveal/CircularRevealWidget;->setRevealInfo(Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;)V
 
     return-void
@@ -129,7 +123,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/google/android/material/circularreveal/CircularRevealWidget;
 
     check-cast p2, Lcom/google/android/material/circularreveal/CircularRevealWidget$RevealInfo;

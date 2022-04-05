@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/u2/g;
 .super Ljava/lang/Object;
-.source "PhyCallback.java"
 
 
 # virtual methods

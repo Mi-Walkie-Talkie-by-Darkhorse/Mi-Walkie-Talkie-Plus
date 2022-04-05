@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/map/c/a;
 .super Landroidx/recyclerview/widget/RecyclerView$g;
-.source "OffmapDownloadAdapter.java"
 
 
 # annotations
@@ -45,10 +44,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$g;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/c/a;->a:Ljava/util/List;
 
     return-void
@@ -57,7 +54,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/map/c/a;)Lcom/ifengyu/intercom/ui/adapter/k;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/c/a;->b:Lcom/ifengyu/intercom/ui/adapter/k;
 
     return-object p0
@@ -68,7 +64,6 @@
 .method public a(Lcom/ifengyu/intercom/ui/adapter/k;)V
     .locals 0
 
-    .line 16
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/c/a;->b:Lcom/ifengyu/intercom/ui/adapter/k;
 
     return-void
@@ -77,7 +72,6 @@
 .method public a(Lcom/ifengyu/intercom/ui/map/c/a$a;I)V
     .locals 3
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/c/a;->a:Ljava/util/List;
 
     invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -88,7 +82,6 @@
 
     if-eqz p2, :cond_3
 
-    .line 3
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/map/c/a$a;->a:Landroid/widget/TextView;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/a;->b()Ljava/lang/String;
@@ -97,7 +90,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 4
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/map/c/a$a;->b:Landroid/widget/TextView;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -140,7 +132,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 5
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/a;->l()Ljava/lang/Integer;
 
     move-result-object v0
@@ -161,32 +152,27 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 6
     iget-object p2, p1, Lcom/ifengyu/intercom/ui/map/c/a$a;->e:Landroid/widget/TextView;
 
     invoke-virtual {p2, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 7
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/map/c/a$a;->d:Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_1
 
-    .line 8
     :cond_1
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/map/c/a$a;->e:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 9
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/map/c/a$a;->d:Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 10
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/a;->e()Ljava/lang/Boolean;
 
     move-result-object v0
@@ -197,14 +183,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 11
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/map/c/a$a;->d:Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->setTextIsDisplayable(Z)V
 
-    .line 12
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/map/c/a$a;->d:Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/a;->a()Ljava/lang/Integer;
@@ -217,7 +201,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->setMax(I)V
 
-    .line 13
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/map/c/a$a;->d:Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/greendao/bean/a;->l()Ljava/lang/Integer;
@@ -232,13 +215,11 @@
 
     goto :goto_1
 
-    .line 14
     :cond_2
     iget-object p2, p1, Lcom/ifengyu/intercom/ui/map/c/a$a;->d:Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;
 
     invoke-virtual {p2, v1}, Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;->setTextIsDisplayable(Z)V
 
-    .line 15
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/map/c/a$a;->d:Lcom/ifengyu/intercom/ui/widget/view/RoundProgressBarView;
 
     const-wide/16 v0, 0x12c
@@ -253,7 +234,6 @@
 .method public getItemCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/c/a;->a:Ljava/util/List;
 
     if-nez v0, :cond_0
@@ -274,7 +254,6 @@
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$y;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/ui/map/c/a$a;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/map/c/a;->a(Lcom/ifengyu/intercom/ui/map/c/a$a;I)V
@@ -285,7 +264,6 @@
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$y;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/map/c/a;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/ifengyu/intercom/ui/map/c/a$a;
 
     move-result-object p1
@@ -296,7 +274,6 @@
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/ifengyu/intercom/ui/map/c/a$a;
     .locals 3
 
-    .line 2
     new-instance p2, Lcom/ifengyu/intercom/ui/map/c/a$a;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;

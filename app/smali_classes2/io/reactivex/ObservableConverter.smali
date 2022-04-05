@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/ObservableConverter;
 .super Ljava/lang/Object;
-.source "ObservableConverter.java"
 
 
 # annotations

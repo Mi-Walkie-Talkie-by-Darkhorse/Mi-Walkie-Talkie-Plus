@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/d;
 .super Ljava/lang/Object;
-.source "Variables.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 .method public static a()I
     .locals 4
 
-    .line 15
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -38,7 +36,6 @@
 
     if-lez v0, :cond_0
 
-    .line 16
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->a()Landroid/content/Context;
 
     move-result-object v1
@@ -63,7 +60,6 @@
 .method public static a(Landroid/app/Activity;)V
     .locals 1
 
-    .line 7
     sget v0, Lcom/ifengyu/intercom/d;->c:I
 
     if-gtz v0, :cond_2
@@ -74,13 +70,11 @@
 
     goto :goto_0
 
-    .line 8
     :cond_0
     new-instance v0, Landroid/util/DisplayMetrics;
 
     invoke-direct {v0}, Landroid/util/DisplayMetrics;-><init>()V
 
-    .line 9
     invoke-virtual {p0}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
 
     move-result-object p0
@@ -91,26 +85,21 @@
 
     invoke-virtual {p0, v0}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
-    .line 10
     iget p0, v0, Landroid/util/DisplayMetrics;->heightPixels:I
 
     iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I
 
     if-lt p0, v0, :cond_1
 
-    .line 11
     sput v0, Lcom/ifengyu/intercom/d;->b:I
 
-    .line 12
     sput p0, Lcom/ifengyu/intercom/d;->c:I
 
     goto :goto_0
 
-    .line 13
     :cond_1
     sput p0, Lcom/ifengyu/intercom/d;->b:I
 
-    .line 14
     sput v0, Lcom/ifengyu/intercom/d;->c:I
 
     :cond_2
@@ -125,31 +114,26 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object p0
 
     const/4 v1, 0x0
 
-    .line 3
     :try_start_0
     invoke-virtual {p0, v0, v1}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
     move-result-object p0
 
-    .line 4
     iget-object v0, p0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
 
     sput-object v0, Lcom/ifengyu/intercom/d;->a:Ljava/lang/String;
 
-    .line 5
     iget p0, p0, Landroid/content/pm/PackageInfo;->versionCode:I
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
@@ -159,7 +143,6 @@
     :catch_0
     move-exception p0
 
-    .line 6
     invoke-virtual {p0}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
 
     :goto_0

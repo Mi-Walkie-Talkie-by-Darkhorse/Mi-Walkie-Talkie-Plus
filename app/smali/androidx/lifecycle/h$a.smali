@@ -1,6 +1,5 @@
 .class Landroidx/lifecycle/h$a;
 .super Landroidx/lifecycle/c;
-.source "LifecycleDispatcher.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/lifecycle/c;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Landroidx/lifecycle/ReportFragment;->b(Landroid/app/Activity;)V
 
     return-void

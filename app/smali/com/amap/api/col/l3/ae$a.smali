@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ae$a;
 .super Ljava/lang/Object;
-.source "TileOverlayView.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -32,7 +31,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,17 +41,14 @@
 .method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 2
 
-    .line 1
     check-cast p1, Lcom/amap/api/col/l3/cw;
 
-    .line 2
     check-cast p2, Lcom/amap/api/col/l3/cw;
 
     if-eqz p1, :cond_1
 
     if-eqz p2, :cond_1
 
-    .line 3
     :try_start_0
     invoke-interface {p1}, Lcom/autonavi/amap/mapcore/interfaces/ITileOverlay;->getZIndex()F
 
@@ -71,7 +66,6 @@
 
     return p1
 
-    .line 4
     :cond_0
     invoke-interface {p1}, Lcom/autonavi/amap/mapcore/interfaces/ITileOverlay;->getZIndex()F
 
@@ -98,10 +92,8 @@
 
     const-string v0, "compare"
 
-    .line 5
     invoke-static {p1, p2, v0}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_1

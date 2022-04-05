@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/engine/a$b;
 .super Ljava/lang/Object;
-.source "ActiveResources.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/bumptech/glide/load/engine/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/a$b;->a:Lcom/bumptech/glide/load/engine/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,10 +38,8 @@
 
     const/16 v0, 0xa
 
-    .line 1
     invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/a$b;->a:Lcom/bumptech/glide/load/engine/a;
 
     invoke-virtual {v0}, Lcom/bumptech/glide/load/engine/a;->a()V

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/greenrobot/greendao/annotation/Keep;
 .super Ljava/lang/Object;
-.source "Keep.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

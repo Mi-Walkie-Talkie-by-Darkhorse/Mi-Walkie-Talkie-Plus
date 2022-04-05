@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/jude/rollviewpager/a;
 .super Ljava/lang/Object;
-.source "HintView.java"
 
 
 # virtual methods

@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/util/concurrent/ForwardingCheckedFuture;
 .super Lcom/google/common/util/concurrent/ForwardingListenableFuture;
-.source "ForwardingCheckedFuture.java"
 
 # interfaces
 .implements Lcom/google/common/util/concurrent/CheckedFuture;
@@ -35,7 +34,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/ForwardingListenableFuture;-><init>()V
 
     return-void
@@ -57,7 +55,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCheckedFuture;->delegate()Lcom/google/common/util/concurrent/CheckedFuture;
 
     move-result-object v0
@@ -88,7 +85,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCheckedFuture;->delegate()Lcom/google/common/util/concurrent/CheckedFuture;
 
     move-result-object v0
@@ -113,7 +109,6 @@
 .method protected bridge synthetic delegate()Lcom/google/common/util/concurrent/ListenableFuture;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCheckedFuture;->delegate()Lcom/google/common/util/concurrent/CheckedFuture;
 
     move-result-object v0
@@ -124,7 +119,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCheckedFuture;->delegate()Lcom/google/common/util/concurrent/CheckedFuture;
 
     move-result-object v0
@@ -135,7 +129,6 @@
 .method protected bridge synthetic delegate()Ljava/util/concurrent/Future;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingCheckedFuture;->delegate()Lcom/google/common/util/concurrent/CheckedFuture;
 
     move-result-object v0

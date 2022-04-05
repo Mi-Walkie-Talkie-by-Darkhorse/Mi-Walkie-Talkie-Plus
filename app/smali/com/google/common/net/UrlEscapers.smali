@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/net/UrlEscapers;
 .super Ljava/lang/Object;
-.source "UrlEscapers.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/google/common/net/PercentEscaper;
 
     const-string v1, "-_.*"
@@ -38,7 +36,6 @@
 
     sput-object v0, Lcom/google/common/net/UrlEscapers;->URL_FORM_PARAMETER_ESCAPER:Lcom/google/common/escape/Escaper;
 
-    .line 2
     new-instance v0, Lcom/google/common/net/PercentEscaper;
 
     const/4 v1, 0x0
@@ -49,7 +46,6 @@
 
     sput-object v0, Lcom/google/common/net/UrlEscapers;->URL_PATH_SEGMENT_ESCAPER:Lcom/google/common/escape/Escaper;
 
-    .line 3
     new-instance v0, Lcom/google/common/net/PercentEscaper;
 
     const-string v2, "-._~!$\'()*,;&=@:+/?"
@@ -64,7 +60,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -73,7 +68,6 @@
 .method public static urlFormParameterEscaper()Lcom/google/common/escape/Escaper;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/net/UrlEscapers;->URL_FORM_PARAMETER_ESCAPER:Lcom/google/common/escape/Escaper;
 
     return-object v0
@@ -82,7 +76,6 @@
 .method public static urlFragmentEscaper()Lcom/google/common/escape/Escaper;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/net/UrlEscapers;->URL_FRAGMENT_ESCAPER:Lcom/google/common/escape/Escaper;
 
     return-object v0
@@ -91,7 +84,6 @@
 .method public static urlPathSegmentEscaper()Lcom/google/common/escape/Escaper;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/net/UrlEscapers;->URL_PATH_SEGMENT_ESCAPER:Lcom/google/common/escape/Escaper;
 
     return-object v0

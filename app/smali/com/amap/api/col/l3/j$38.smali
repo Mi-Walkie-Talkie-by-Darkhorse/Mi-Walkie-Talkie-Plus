@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$38;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/model/animation/Animation$AnimationListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$38;->b:Lcom/amap/api/col/l3/j;
 
     iput p2, p0, Lcom/amap/api/col/l3/j$38;->a:I
@@ -42,7 +40,6 @@
 .method public final onAnimationEnd()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/j$38;->b:Lcom/amap/api/col/l3/j;
 
     iget-object v0, v0, Lcom/amap/api/col/l3/j;->i:Landroid/os/Handler;

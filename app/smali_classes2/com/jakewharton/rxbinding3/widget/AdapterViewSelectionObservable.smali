@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionObservable;
 .super Lcom/jakewharton/rxbinding3/InitialValueObservable;
-.source "AdapterViewSelectionObservable.kt"
 
 
 # annotations
@@ -83,7 +82,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lcom/jakewharton/rxbinding3/InitialValueObservable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionObservable;->view:Landroid/widget/AdapterView;
@@ -98,7 +96,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionObservable;->view:Landroid/widget/AdapterView;
 
     invoke-virtual {v0}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
@@ -109,7 +106,6 @@
 
     if-ne v4, v0, :cond_0
 
-    .line 3
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/AdapterViewNothingSelectionEvent;
 
     iget-object v1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionObservable;->view:Landroid/widget/AdapterView;
@@ -118,7 +114,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionObservable;->view:Landroid/widget/AdapterView;
 
@@ -126,14 +121,12 @@
 
     move-result-object v3
 
-    .line 5
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionObservable;->view:Landroid/widget/AdapterView;
 
     invoke-virtual {v0}, Landroid/widget/AdapterView;->getSelectedItemId()J
 
     move-result-wide v5
 
-    .line 6
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemSelectionEvent;
 
     iget-object v2, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionObservable;->view:Landroid/widget/AdapterView;
@@ -149,7 +142,6 @@
 .method public bridge synthetic getInitialValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionObservable;->getInitialValue()Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionEvent;
 
     move-result-object v0
@@ -177,7 +169,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-static {p1}, Lcom/jakewharton/rxbinding3/internal/Preconditions;->checkMainThread(Lio/reactivex/Observer;)Z
 
     move-result v0
@@ -186,7 +177,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionObservable$Listener;
 
@@ -194,12 +184,10 @@
 
     invoke-direct {v0, v1, p1}, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionObservable$Listener;-><init>(Landroid/widget/AdapterView;Lio/reactivex/Observer;)V
 
-    .line 3
     iget-object v1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionObservable;->view:Landroid/widget/AdapterView;
 
     invoke-virtual {v1, v0}, Landroid/widget/AdapterView;->setOnItemSelectedListener(Landroid/widget/AdapterView$OnItemSelectedListener;)V
 
-    .line 4
     invoke-interface {p1, v0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
     return-void

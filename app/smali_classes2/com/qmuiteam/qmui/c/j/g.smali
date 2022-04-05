@@ -1,6 +1,5 @@
 .class public abstract Lcom/qmuiteam/qmui/c/j/g;
 .super Ljava/lang/Object;
-.source "QMUISkinRuleColorStateListHandler.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/c/j/a;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +46,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1

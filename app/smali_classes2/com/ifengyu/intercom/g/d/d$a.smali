@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/g/d/d$a;
 .super Ljava/lang/Object;
-.source "FileCallBack.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/g/d/d;JJI)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/g/d/d$a;->d:Lcom/ifengyu/intercom/g/d/d;
 
     iput-wide p2, p0, Lcom/ifengyu/intercom/g/d/d$a;->a:J
@@ -50,7 +48,6 @@
 .method public run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/g/d/d$a;->d:Lcom/ifengyu/intercom/g/d/d;
 
     iget-wide v1, p0, Lcom/ifengyu/intercom/g/d/d$a;->a:J

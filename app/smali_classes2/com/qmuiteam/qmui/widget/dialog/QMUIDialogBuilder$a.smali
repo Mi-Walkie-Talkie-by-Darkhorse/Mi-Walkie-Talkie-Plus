@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder$a;
 .super Ljava/lang/Object;
-.source "QMUIDialogBuilder.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogRootLayout$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder$a;->a:Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public call()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder$a;->a:Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->d()V

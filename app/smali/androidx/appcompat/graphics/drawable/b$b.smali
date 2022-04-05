@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/graphics/drawable/b$b;
 .super Ljava/lang/Object;
-.source "DrawableContainer.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method public static a(Landroid/content/res/Resources$Theme;)Landroid/content/res/Resources;
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/res/Resources$Theme;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -33,7 +31,6 @@
 .method public static a(Landroid/graphics/drawable/Drawable;Landroid/graphics/Outline;)V
     .locals 0
 
-    .line 3
     invoke-virtual {p0, p1}, Landroid/graphics/drawable/Drawable;->getOutline(Landroid/graphics/Outline;)V
 
     return-void
@@ -42,7 +39,6 @@
 .method public static a(Landroid/graphics/drawable/Drawable$ConstantState;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable$ConstantState;->canApplyTheme()Z
 
     move-result p0

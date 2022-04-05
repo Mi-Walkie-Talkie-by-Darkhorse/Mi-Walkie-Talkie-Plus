@@ -1,13 +1,11 @@
 .class public final Lcom/google/zxing/common/DefaultGridSampler;
 .super Lcom/google/zxing/common/GridSampler;
-.source "DefaultGridSampler.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/common/GridSampler;-><init>()V
 
     return-void
@@ -23,7 +21,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static/range {p4 .. p19}, Lcom/google/zxing/common/PerspectiveTransform;->quadrilateralToQuadrilateral(FFFFFFFFFFFFFFFF)Lcom/google/zxing/common/PerspectiveTransform;
 
     move-result-object v0
@@ -36,7 +33,6 @@
 
     move v4, p3
 
-    .line 2
     invoke-virtual {p0, p1, p2, p3, v0}, Lcom/google/zxing/common/DefaultGridSampler;->sampleGrid(Lcom/google/zxing/common/BitMatrix;IILcom/google/zxing/common/PerspectiveTransform;)Lcom/google/zxing/common/BitMatrix;
 
     move-result-object v0
@@ -56,14 +52,12 @@
 
     if-lez p3, :cond_4
 
-    .line 3
     new-instance v0, Lcom/google/zxing/common/BitMatrix;
 
     invoke-direct {v0, p2, p3}, Lcom/google/zxing/common/BitMatrix;-><init>(II)V
 
     mul-int/lit8 p2, p2, 0x2
 
-    .line 4
     new-array v1, p2, [F
 
     const/4 v2, 0x0
@@ -84,7 +78,6 @@
     :goto_1
     if-ge v6, p2, :cond_0
 
-    .line 5
     div-int/lit8 v7, v6, 0x2
 
     int-to-float v7, v7
@@ -95,18 +88,15 @@
 
     add-int/lit8 v7, v6, 0x1
 
-    .line 6
     aput v4, v1, v7
 
     add-int/lit8 v6, v6, 0x2
 
     goto :goto_1
 
-    .line 7
     :cond_0
     invoke-virtual {p4, v1}, Lcom/google/zxing/common/PerspectiveTransform;->transformPoints([F)V
 
-    .line 8
     invoke-static {p1, v1}, Lcom/google/zxing/common/GridSampler;->checkAndNudgePoints(Lcom/google/zxing/common/BitMatrix;[F)V
 
     const/4 v4, 0x0
@@ -114,7 +104,6 @@
     :goto_2
     if-ge v4, p2, :cond_2
 
-    .line 9
     :try_start_0
     aget v5, v1, v4
 
@@ -132,7 +121,6 @@
 
     if-eqz v5, :cond_1
 
-    .line 10
     div-int/lit8 v5, v4, 0x2
 
     invoke-virtual {v0, v5, v3}, Lcom/google/zxing/common/BitMatrix;->set(II)V
@@ -144,7 +132,6 @@
 
     goto :goto_2
 
-    .line 11
     :catch_0
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -160,7 +147,6 @@
     :cond_3
     return-object v0
 
-    .line 12
     :cond_4
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 

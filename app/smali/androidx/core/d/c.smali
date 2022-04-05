@@ -1,6 +1,5 @@
 .class public Landroidx/core/d/c;
 .super Ljava/lang/Object;
-.source "ObjectsCompat.java"
 
 
 # direct methods
@@ -11,21 +10,18 @@
         .end annotation
     .end param
 
-    .line 4
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
-    .line 5
     invoke-static {p0}, Ljava/util/Objects;->hash([Ljava/lang/Object;)I
 
     move-result p0
 
     return p0
 
-    .line 6
     :cond_0
     invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
@@ -49,7 +45,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 7
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -69,14 +64,12 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-static {p0, p1}, Ljava/util/Objects;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p0
@@ -88,7 +81,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 3
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p0

@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/SwipeBackLayout$a;
 .super Ljava/lang/Object;
-.source "SwipeBackLayout.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/SwipeBackLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$a;->a:Lcom/qmuiteam/qmui/arch/SwipeBackLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$a;->a:Lcom/qmuiteam/qmui/arch/SwipeBackLayout;
 
     const/4 v1, 0x0

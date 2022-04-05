@@ -1,6 +1,5 @@
 .class final Landroidx/legacy/app/FragmentTabHost$a;
 .super Ljava/lang/Object;
-.source "FragmentTabHost.java"
 
 
 # annotations

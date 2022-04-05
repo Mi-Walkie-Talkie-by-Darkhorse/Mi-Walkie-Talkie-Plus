@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o$a;
 .super Ljava/lang/Object;
-.source "ConnectDeviceActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o$a;->b:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o$a;->a:Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o$a;->b:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$o;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;

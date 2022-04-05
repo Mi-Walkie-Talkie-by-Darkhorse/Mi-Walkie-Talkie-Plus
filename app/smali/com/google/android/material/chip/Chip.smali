@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/chip/Chip;
 .super Landroidx/appcompat/widget/AppCompatCheckBox;
-.source "Chip.java"
 
 # interfaces
 .implements Lcom/google/android/material/chip/ChipDrawable$Delegate;
@@ -101,12 +100,10 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 1
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_Chip_Action:I
 
     sput v0, Lcom/google/android/material/chip/Chip;->DEF_STYLE_RES:I
 
-    .line 2
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
@@ -123,7 +120,6 @@
 
     aput v2, v1, v3
 
-    .line 3
     sput-object v1, Lcom/google/android/material/chip/Chip;->SELECTED_STATE:[I
 
     new-array v0, v0, [I
@@ -132,7 +128,6 @@
 
     aput v1, v0, v3
 
-    .line 4
     sput-object v0, Lcom/google/android/material/chip/Chip;->CHECKABLE_STATE_SET:[I
 
     return-void
@@ -143,7 +138,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/google/android/material/chip/Chip;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -152,7 +146,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 2
     sget v0, Lcom/google/android/material/R$attr;->chipStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/chip/Chip;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -163,7 +156,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 7
 
-    .line 3
     sget v0, Lcom/google/android/material/chip/Chip;->DEF_STYLE_RES:I
 
     invoke-static {p1, p2, p3, v0}, Lcom/google/android/material/theme/overlay/MaterialThemeOverlay;->wrap(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
@@ -172,57 +164,46 @@
 
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatCheckBox;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 4
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
     iput-object p1, p0, Lcom/google/android/material/chip/Chip;->rect:Landroid/graphics/Rect;
 
-    .line 5
     new-instance p1, Landroid/graphics/RectF;
 
     invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
 
     iput-object p1, p0, Lcom/google/android/material/chip/Chip;->rectF:Landroid/graphics/RectF;
 
-    .line 6
     new-instance p1, Lcom/google/android/material/chip/Chip$1;
 
     invoke-direct {p1, p0}, Lcom/google/android/material/chip/Chip$1;-><init>(Lcom/google/android/material/chip/Chip;)V
 
     iput-object p1, p0, Lcom/google/android/material/chip/Chip;->fontCallback:Lcom/google/android/material/resources/TextAppearanceFontCallback;
 
-    .line 7
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    .line 8
     invoke-direct {p0, p2}, Lcom/google/android/material/chip/Chip;->validateAttributes(Landroid/util/AttributeSet;)V
 
-    .line 9
     sget v0, Lcom/google/android/material/chip/Chip;->DEF_STYLE_RES:I
 
-    .line 10
     invoke-static {p1, p2, p3, v0}, Lcom/google/android/material/chip/ChipDrawable;->createFromAttributes(Landroid/content/Context;Landroid/util/AttributeSet;II)Lcom/google/android/material/chip/ChipDrawable;
 
     move-result-object v6
 
-    .line 11
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/material/chip/Chip;->initMinTouchTarget(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 12
     invoke-virtual {p0, v6}, Lcom/google/android/material/chip/Chip;->setChipDrawable(Lcom/google/android/material/chip/ChipDrawable;)V
 
-    .line 13
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->n(Landroid/view/View;)F
 
     move-result v0
 
     invoke-virtual {v6, v0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setElevation(F)V
 
-    .line 14
     sget-object v2, Lcom/google/android/material/R$styleable;->Chip:[I
 
     sget v4, Lcom/google/android/material/chip/Chip;->DEF_STYLE_RES:I
@@ -237,30 +218,24 @@
 
     move v3, p3
 
-    .line 15
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/ThemeEnforcement;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
-    .line 16
     sget p3, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v0, 0x17
 
     if-ge p3, v0, :cond_0
 
-    .line 17
     sget p3, Lcom/google/android/material/R$styleable;->Chip_android_textColor:I
 
-    .line 18
     invoke-static {p1, p2, p3}, Lcom/google/android/material/resources/MaterialResources;->getColorStateList(Landroid/content/Context;Landroid/content/res/TypedArray;I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
 
-    .line 19
     invoke-virtual {p0, p1}, Landroid/widget/CheckBox;->setTextColor(Landroid/content/res/ColorStateList;)V
 
-    .line 20
     :cond_0
     sget p1, Lcom/google/android/material/R$styleable;->Chip_shapeAppearance:I
 
@@ -268,48 +243,39 @@
 
     move-result p1
 
-    .line 21
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 22
     new-instance p2, Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
     invoke-direct {p2, p0, p0}, Lcom/google/android/material/chip/Chip$ChipTouchHelper;-><init>(Lcom/google/android/material/chip/Chip;Lcom/google/android/material/chip/Chip;)V
 
     iput-object p2, p0, Lcom/google/android/material/chip/Chip;->touchHelper:Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
-    .line 23
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateAccessibilityDelegate()V
 
     if-nez p1, :cond_1
 
-    .line 24
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->initOutlineProvider()V
 
-    .line 25
     :cond_1
     iget-boolean p1, p0, Lcom/google/android/material/chip/Chip;->deferredCheckedValue:Z
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->setChecked(Z)V
 
-    .line 26
     invoke-virtual {v6}, Lcom/google/android/material/chip/ChipDrawable;->getText()Ljava/lang/CharSequence;
 
     move-result-object p1
 
     invoke-virtual {p0, p1}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;)V
 
-    .line 27
     invoke-virtual {v6}, Lcom/google/android/material/chip/ChipDrawable;->getEllipsize()Landroid/text/TextUtils$TruncateAt;
 
     move-result-object p1
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
 
-    .line 28
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateTextPaintDrawState()V
 
-    .line 29
     iget-object p1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     invoke-virtual {p1}, Lcom/google/android/material/chip/ChipDrawable;->shouldDrawText()Z
@@ -320,34 +286,27 @@
 
     const/4 p1, 0x1
 
-    .line 30
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->setLines(I)V
 
-    .line 31
     invoke-virtual {p0, p1}, Landroid/widget/CheckBox;->setHorizontallyScrolling(Z)V
 
     :cond_2
     const p1, 0x800013
 
-    .line 32
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->setGravity(I)V
 
-    .line 33
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updatePaddingInternal()V
 
-    .line 34
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->shouldEnsureMinTouchTargetSize()Z
 
     move-result p1
 
     if-eqz p1, :cond_3
 
-    .line 35
     iget p1, p0, Lcom/google/android/material/chip/Chip;->minTouchTargetSize:I
 
     invoke-virtual {p0, p1}, Landroid/widget/CheckBox;->setMinHeight(I)V
 
-    .line 36
     :cond_3
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->s(Landroid/view/View;)I
 
@@ -361,7 +320,6 @@
 .method static synthetic access$000(Lcom/google/android/material/chip/Chip;)Lcom/google/android/material/chip/ChipDrawable;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     return-object p0
@@ -370,7 +328,6 @@
 .method static synthetic access$100(Lcom/google/android/material/chip/Chip;)Z
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->hasCloseIcon()Z
 
     move-result p0
@@ -381,7 +338,6 @@
 .method static synthetic access$200(Lcom/google/android/material/chip/Chip;)Landroid/graphics/RectF;
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->getCloseIconTouchBounds()Landroid/graphics/RectF;
 
     move-result-object p0
@@ -392,7 +348,6 @@
 .method static synthetic access$300(Lcom/google/android/material/chip/Chip;)Landroid/view/View$OnClickListener;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/android/material/chip/Chip;->onCloseIconClickListener:Landroid/view/View$OnClickListener;
 
     return-object p0
@@ -401,7 +356,6 @@
 .method static synthetic access$402(Lcom/google/android/material/chip/Chip;Z)Z
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/android/material/chip/Chip;->closeIconFocused:Z
 
     return p1
@@ -410,7 +364,6 @@
 .method static synthetic access$500(Lcom/google/android/material/chip/Chip;)Landroid/graphics/Rect;
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->getCloseIconTouchBoundsInt()Landroid/graphics/Rect;
 
     move-result-object p0
@@ -421,7 +374,6 @@
 .method static synthetic access$600()Landroid/graphics/Rect;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/android/material/chip/Chip;->EMPTY_BOUNDS:Landroid/graphics/Rect;
 
     return-object v0
@@ -434,7 +386,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1, p0}, Lcom/google/android/material/chip/ChipDrawable;->setDelegate(Lcom/google/android/material/chip/ChipDrawable$Delegate;)V
 
     return-void
@@ -445,7 +396,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/CheckBox;->isEnabled()Z
 
     move-result v0
@@ -463,7 +413,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     iget-boolean v3, p0, Lcom/google/android/material/chip/Chip;->closeIconFocused:Z
 
@@ -471,7 +420,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 3
     :cond_1
     iget-boolean v3, p0, Lcom/google/android/material/chip/Chip;->closeIconHovered:Z
 
@@ -479,7 +427,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 4
     :cond_2
     iget-boolean v3, p0, Lcom/google/android/material/chip/Chip;->closeIconPressed:Z
 
@@ -487,7 +434,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 5
     :cond_3
     invoke-virtual {p0}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -497,11 +443,9 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 6
     :cond_4
     new-array v0, v0, [I
 
-    .line 7
     invoke-virtual {p0}, Landroid/widget/CheckBox;->isEnabled()Z
 
     move-result v3
@@ -510,12 +454,10 @@
 
     const v3, 0x101009e
 
-    .line 8
     aput v3, v0, v1
 
     const/4 v1, 0x1
 
-    .line 9
     :cond_5
     iget-boolean v2, p0, Lcom/google/android/material/chip/Chip;->closeIconFocused:Z
 
@@ -523,12 +465,10 @@
 
     const v2, 0x101009c
 
-    .line 10
     aput v2, v0, v1
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 11
     :cond_6
     iget-boolean v2, p0, Lcom/google/android/material/chip/Chip;->closeIconHovered:Z
 
@@ -536,12 +476,10 @@
 
     const v2, 0x1010367
 
-    .line 12
     aput v2, v0, v1
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 13
     :cond_7
     iget-boolean v2, p0, Lcom/google/android/material/chip/Chip;->closeIconPressed:Z
 
@@ -549,12 +487,10 @@
 
     const v2, 0x10100a7
 
-    .line 14
     aput v2, v0, v1
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 15
     :cond_8
     invoke-virtual {p0}, Landroid/widget/CheckBox;->isChecked()Z
 
@@ -564,7 +500,6 @@
 
     const v2, 0x10100a1
 
-    .line 16
     aput v2, v0, v1
 
     :cond_9
@@ -574,7 +509,6 @@
 .method private ensureChipDrawableHasCallback()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->getBackgroundDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -591,7 +525,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     iget-object v1, p0, Lcom/google/android/material/chip/Chip;->insetBackgroundDrawable:Landroid/graphics/drawable/InsetDrawable;
@@ -607,12 +540,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->rectF:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->setEmpty()V
 
-    .line 2
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->hasCloseIcon()Z
 
     move-result v0
@@ -623,14 +554,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     iget-object v1, p0, Lcom/google/android/material/chip/Chip;->rectF:Landroid/graphics/RectF;
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/chip/ChipDrawable;->getCloseIconTouchBounds(Landroid/graphics/RectF;)V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->rectF:Landroid/graphics/RectF;
 
@@ -642,12 +571,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->getCloseIconTouchBounds()Landroid/graphics/RectF;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/android/material/chip/Chip;->rect:Landroid/graphics/Rect;
 
     iget v2, v0, Landroid/graphics/RectF;->left:F
@@ -668,7 +595,6 @@
 
     invoke-virtual {v1, v2, v3, v4, v0}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->rect:Landroid/graphics/Rect;
 
     return-object v0
@@ -679,7 +605,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -709,7 +634,6 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Landroidx/customview/a/a;
 
     const-string v1, "Unable to send Accessibility Exit event"
@@ -729,17 +653,14 @@
     :try_start_0
     const-string p1, "mHoveredVirtualViewId"
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p1
 
     const/4 v4, 0x1
 
-    .line 3
     invoke-virtual {p1, v4}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 4
     iget-object v5, p0, Lcom/google/android/material/chip/Chip;->touchHelper:Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
     invoke-virtual {p1, v5}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -760,20 +681,16 @@
 
     new-array v6, v4, [Ljava/lang/Class;
 
-    .line 5
     sget-object v7, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     aput-object v7, v6, v3
 
-    .line 6
     invoke-virtual {v0, p1, v6}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p1
 
-    .line 7
     invoke-virtual {p1, v4}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
-    .line 8
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->touchHelper:Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
     new-array v6, v4, [Ljava/lang/Object;
@@ -813,25 +730,21 @@
 
     goto :goto_3
 
-    .line 9
     :goto_0
     invoke-static {v2, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_4
 
-    .line 10
     :goto_1
     invoke-static {v2, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_4
 
-    .line 11
     :goto_2
     invoke-static {v2, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     goto :goto_4
 
-    .line 12
     :goto_3
     invoke-static {v2, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
@@ -843,7 +756,6 @@
 .method private hasCloseIcon()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -872,7 +784,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object v2, Lcom/google/android/material/R$styleable;->Chip:[I
 
     sget v4, Lcom/google/android/material/chip/Chip;->DEF_STYLE_RES:I
@@ -887,12 +798,10 @@
 
     move v3, p3
 
-    .line 2
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/ThemeEnforcement;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 3
     sget p2, Lcom/google/android/material/R$styleable;->Chip_ensureMinTouchTargetSize:I
 
     invoke-virtual {p1, p2, v6}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -901,7 +810,6 @@
 
     iput-boolean p2, p0, Lcom/google/android/material/chip/Chip;->ensureMinTouchTargetSize:Z
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -920,17 +828,14 @@
 
     double-to-float p2, p2
 
-    .line 5
     sget p3, Lcom/google/android/material/R$styleable;->Chip_chipMinTouchTargetSize:I
 
-    .line 6
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
     move-result p2
 
     float-to-double p2, p2
 
-    .line 7
     invoke-static {p2, p3}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide p2
@@ -939,7 +844,6 @@
 
     iput p2, p0, Lcom/google/android/material/chip/Chip;->minTouchTargetSize:I
 
-    .line 8
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -948,14 +852,12 @@
 .method private initOutlineProvider()V
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Lcom/google/android/material/chip/Chip$2;
 
     invoke-direct {v0, p0}, Lcom/google/android/material/chip/Chip$2;-><init>(Lcom/google/android/material/chip/Chip;)V
@@ -969,7 +871,6 @@
 .method private insetChipBackgroundDrawable(IIII)V
     .locals 7
 
-    .line 1
     new-instance v6, Landroid/graphics/drawable/InsetDrawable;
 
     iget-object v1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
@@ -994,22 +895,18 @@
 .method private removeBackgroundInset()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->insetBackgroundDrawable:Landroid/graphics/drawable/InsetDrawable;
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/google/android/material/chip/Chip;->insetBackgroundDrawable:Landroid/graphics/drawable/InsetDrawable;
 
     const/4 v0, 0x0
 
-    .line 3
     invoke-virtual {p0, v0}, Landroid/widget/CheckBox;->setMinWidth(I)V
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->getChipMinHeight()F
 
     move-result v0
@@ -1018,7 +915,6 @@
 
     invoke-virtual {p0, v0}, Landroid/widget/CheckBox;->setMinHeight(I)V
 
-    .line 5
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateBackgroundDrawable()V
 
     :cond_0
@@ -1028,15 +924,12 @@
 .method private setCloseIconHovered(Z)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/android/material/chip/Chip;->closeIconHovered:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput-boolean p1, p0, Lcom/google/android/material/chip/Chip;->closeIconHovered:Z
 
-    .line 3
     invoke-virtual {p0}, Landroid/widget/CheckBox;->refreshDrawableState()V
 
     :cond_0
@@ -1046,15 +939,12 @@
 .method private setCloseIconPressed(Z)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/android/material/chip/Chip;->closeIconPressed:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput-boolean p1, p0, Lcom/google/android/material/chip/Chip;->closeIconPressed:Z
 
-    .line 3
     invoke-virtual {p0}, Landroid/widget/CheckBox;->refreshDrawableState()V
 
     :cond_0
@@ -1072,7 +962,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p1, v0}, Lcom/google/android/material/chip/ChipDrawable;->setDelegate(Lcom/google/android/material/chip/ChipDrawable$Delegate;)V
 
     :cond_0
@@ -1082,7 +971,6 @@
 .method private updateAccessibilityDelegate()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->hasCloseIcon()Z
 
     move-result v0
@@ -1099,7 +987,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->touchHelper:Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
     invoke-static {p0, v0}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;Landroidx/core/view/a;)V
@@ -1109,7 +996,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 3
     invoke-static {p0, v0}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;Landroidx/core/view/a;)V
 
     :goto_0
@@ -1119,17 +1005,14 @@
 .method private updateBackgroundDrawable()V
     .locals 2
 
-    .line 1
     sget-boolean v0, Lcom/google/android/material/ripple/RippleUtils;->USE_FRAMEWORK_RIPPLE:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateFrameworkRippleBackground()V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
@@ -1137,17 +1020,14 @@
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/chip/ChipDrawable;->setUseCompatRipple(Z)V
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->getBackgroundDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     invoke-static {p0, v0}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
-    .line 5
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updatePaddingInternal()V
 
-    .line 6
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->ensureChipDrawableHasCallback()V
 
     :goto_0
@@ -1157,12 +1037,10 @@
 .method private updateFrameworkRippleBackground()V
     .locals 4
 
-    .line 1
     new-instance v0, Landroid/graphics/drawable/RippleDrawable;
 
     iget-object v1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
-    .line 2
     invoke-virtual {v1}, Lcom/google/android/material/chip/ChipDrawable;->getRippleColor()Landroid/content/res/ColorStateList;
 
     move-result-object v1
@@ -1171,7 +1049,6 @@
 
     move-result-object v1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->getBackgroundDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
@@ -1182,19 +1059,16 @@
 
     iput-object v0, p0, Lcom/google/android/material/chip/Chip;->ripple:Landroid/graphics/drawable/RippleDrawable;
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/chip/ChipDrawable;->setUseCompatRipple(Z)V
 
-    .line 5
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->ripple:Landroid/graphics/drawable/RippleDrawable;
 
     invoke-static {p0, v0}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
 
-    .line 6
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updatePaddingInternal()V
 
     return-void
@@ -1203,7 +1077,6 @@
 .method private updatePaddingInternal()V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getText()Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -1220,7 +1093,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Lcom/google/android/material/chip/ChipDrawable;->getChipEndPadding()F
 
@@ -1228,7 +1100,6 @@
 
     iget-object v1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
-    .line 3
     invoke-virtual {v1}, Lcom/google/android/material/chip/ChipDrawable;->getTextEndPadding()F
 
     move-result v1
@@ -1237,7 +1108,6 @@
 
     iget-object v1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
-    .line 4
     invoke-virtual {v1}, Lcom/google/android/material/chip/ChipDrawable;->calculateCloseIconWidth()F
 
     move-result v1
@@ -1246,17 +1116,14 @@
 
     float-to-int v0, v0
 
-    .line 5
     iget-object v1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
-    .line 6
     invoke-virtual {v1}, Lcom/google/android/material/chip/ChipDrawable;->getChipStartPadding()F
 
     move-result v1
 
     iget-object v2, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
-    .line 7
     invoke-virtual {v2}, Lcom/google/android/material/chip/ChipDrawable;->getTextStartPadding()F
 
     move-result v2
@@ -1265,7 +1132,6 @@
 
     iget-object v2, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
-    .line 8
     invoke-virtual {v2}, Lcom/google/android/material/chip/ChipDrawable;->calculateChipIconWidth()F
 
     move-result v2
@@ -1274,32 +1140,26 @@
 
     float-to-int v1, v1
 
-    .line 9
     iget-object v2, p0, Lcom/google/android/material/chip/Chip;->insetBackgroundDrawable:Landroid/graphics/drawable/InsetDrawable;
 
     if-eqz v2, :cond_1
 
-    .line 10
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    .line 11
     iget-object v3, p0, Lcom/google/android/material/chip/Chip;->insetBackgroundDrawable:Landroid/graphics/drawable/InsetDrawable;
 
     invoke-virtual {v3, v2}, Landroid/graphics/drawable/InsetDrawable;->getPadding(Landroid/graphics/Rect;)Z
 
-    .line 12
     iget v3, v2, Landroid/graphics/Rect;->left:I
 
     add-int/2addr v1, v3
 
-    .line 13
     iget v2, v2, Landroid/graphics/Rect;->right:I
 
     add-int/2addr v0, v2
 
-    .line 14
     :cond_1
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getPaddingTop()I
 
@@ -1309,7 +1169,6 @@
 
     move-result v3
 
-    .line 15
     invoke-static {p0, v1, v2, v0, v3}, Landroidx/core/view/ViewCompat;->b(Landroid/view/View;IIII)V
 
     :cond_2
@@ -1320,24 +1179,20 @@
 .method private updateTextPaintDrawState()V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getPaint()Landroid/text/TextPaint;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getState()[I
 
     move-result-object v1
 
     iput-object v1, v0, Landroid/text/TextPaint;->drawableState:[I
 
-    .line 4
     :cond_0
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->getTextAppearance()Lcom/google/android/material/resources/TextAppearance;
 
@@ -1345,7 +1200,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -1374,7 +1228,6 @@
 
     const-string v1, "background"
 
-    .line 1
     invoke-interface {p1, v0, v1}, Landroid/util/AttributeSet;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -1385,13 +1238,11 @@
 
     const-string v1, "Do not set the background; Chip manages its own background drawable."
 
-    .line 2
     invoke-static {v2, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
     const-string v1, "drawableLeft"
 
-    .line 3
     invoke-interface {p1, v0, v1}, Landroid/util/AttributeSet;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -1400,7 +1251,6 @@
 
     const-string v1, "drawableStart"
 
-    .line 4
     invoke-interface {p1, v0, v1}, Landroid/util/AttributeSet;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -1409,7 +1259,6 @@
 
     const-string v1, "drawableEnd"
 
-    .line 5
     invoke-interface {p1, v0, v1}, Landroid/util/AttributeSet;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -1420,7 +1269,6 @@
 
     const-string v1, "drawableRight"
 
-    .line 6
     invoke-interface {p1, v0, v1}, Landroid/util/AttributeSet;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -1431,7 +1279,6 @@
 
     const-string v3, "singleLine"
 
-    .line 7
     invoke-interface {p1, v0, v3, v1}, Landroid/util/AttributeSet;->getAttributeBooleanValue(Ljava/lang/String;Ljava/lang/String;Z)Z
 
     move-result v3
@@ -1440,7 +1287,6 @@
 
     const-string v3, "lines"
 
-    .line 8
     invoke-interface {p1, v0, v3, v1}, Landroid/util/AttributeSet;->getAttributeIntValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v3
@@ -1449,7 +1295,6 @@
 
     const-string v3, "minLines"
 
-    .line 9
     invoke-interface {p1, v0, v3, v1}, Landroid/util/AttributeSet;->getAttributeIntValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v3
@@ -1458,7 +1303,6 @@
 
     const-string v3, "maxLines"
 
-    .line 10
     invoke-interface {p1, v0, v3, v1}, Landroid/util/AttributeSet;->getAttributeIntValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v3
@@ -1469,7 +1313,6 @@
 
     const-string v3, "gravity"
 
-    .line 11
     invoke-interface {p1, v0, v3, v1}, Landroid/util/AttributeSet;->getAttributeIntValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result p1
@@ -1478,13 +1321,11 @@
 
     const-string p1, "Chip text must be vertically center and start aligned"
 
-    .line 12
     invoke-static {v2, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_2
     return-void
 
-    .line 13
     :cond_3
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -1494,7 +1335,6 @@
 
     throw p1
 
-    .line 14
     :cond_4
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -1502,7 +1342,6 @@
 
     throw p1
 
-    .line 15
     :cond_5
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -1510,7 +1349,6 @@
 
     throw p1
 
-    .line 16
     :cond_6
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -1520,7 +1358,6 @@
 
     throw p1
 
-    .line 17
     :cond_7
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -1540,7 +1377,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/chip/Chip;->handleAccessibilityExit(Landroid/view/MotionEvent;)Z
 
     move-result v0
@@ -1549,14 +1385,12 @@
 
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->touchHelper:Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
-    .line 2
     invoke-virtual {v0, p1}, Landroidx/customview/a/a;->dispatchHoverEvent(Landroid/view/MotionEvent;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 3
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->dispatchHoverEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -1581,7 +1415,6 @@
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->touchHelper:Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
     invoke-virtual {v0, p1}, Landroidx/customview/a/a;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
@@ -1590,10 +1423,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->touchHelper:Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
-    .line 3
     invoke-virtual {v0}, Landroidx/customview/a/a;->getKeyboardFocusedVirtualViewId()I
 
     move-result v0
@@ -1606,7 +1437,6 @@
 
     return p1
 
-    .line 4
     :cond_0
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -1618,10 +1448,8 @@
 .method protected drawableStateChanged()V
     .locals 2
 
-    .line 1
     invoke-super {p0}, Landroidx/appcompat/widget/AppCompatCheckBox;->drawableStateChanged()V
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -1632,7 +1460,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->createCloseIconDrawableState()[I
@@ -1651,7 +1478,6 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/CheckBox;->invalidate()V
 
     :cond_1
@@ -1665,10 +1491,8 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/chip/Chip;->minTouchTargetSize:I
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->shouldEnsureMinTouchTargetSize()Z
 
     move-result v0
@@ -1677,24 +1501,20 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     iget-object p1, p0, Lcom/google/android/material/chip/Chip;->insetBackgroundDrawable:Landroid/graphics/drawable/InsetDrawable;
 
     if-eqz p1, :cond_0
 
-    .line 4
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->removeBackgroundInset()V
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateBackgroundDrawable()V
 
     :goto_0
     return v1
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
@@ -1708,7 +1528,6 @@
 
     move-result v0
 
-    .line 7
     iget-object v2, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     invoke-virtual {v2}, Lcom/google/android/material/chip/ChipDrawable;->getIntrinsicWidth()I
@@ -1725,17 +1544,14 @@
 
     if-gtz v0, :cond_3
 
-    .line 8
     iget-object p1, p0, Lcom/google/android/material/chip/Chip;->insetBackgroundDrawable:Landroid/graphics/drawable/InsetDrawable;
 
     if-eqz p1, :cond_2
 
-    .line 9
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->removeBackgroundInset()V
 
     goto :goto_1
 
-    .line 10
     :cond_2
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateBackgroundDrawable()V
 
@@ -1745,7 +1561,6 @@
     :cond_3
     if-lez v2, :cond_4
 
-    .line 11
     div-int/lit8 v2, v2, 0x2
 
     goto :goto_2
@@ -1756,10 +1571,8 @@
     :goto_2
     if-lez v0, :cond_5
 
-    .line 12
     div-int/lit8 v1, v0, 0x2
 
-    .line 13
     :cond_5
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->insetBackgroundDrawable:Landroid/graphics/drawable/InsetDrawable;
 
@@ -1767,17 +1580,14 @@
 
     if-eqz v0, :cond_6
 
-    .line 14
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    .line 15
     iget-object v4, p0, Lcom/google/android/material/chip/Chip;->insetBackgroundDrawable:Landroid/graphics/drawable/InsetDrawable;
 
     invoke-virtual {v4, v0}, Landroid/graphics/drawable/InsetDrawable;->getPadding(Landroid/graphics/Rect;)Z
 
-    .line 16
     iget v4, v0, Landroid/graphics/Rect;->top:I
 
     if-ne v4, v1, :cond_6
@@ -1794,12 +1604,10 @@
 
     if-ne v0, v2, :cond_6
 
-    .line 17
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateBackgroundDrawable()V
 
     return v3
 
-    .line 18
     :cond_6
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -1807,17 +1615,14 @@
 
     if-lt v0, v4, :cond_8
 
-    .line 19
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getMinHeight()I
 
     move-result v0
 
     if-eq v0, p1, :cond_7
 
-    .line 20
     invoke-virtual {p0, p1}, Landroid/widget/CheckBox;->setMinHeight(I)V
 
-    .line 21
     :cond_7
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getMinWidth()I
 
@@ -1825,24 +1630,19 @@
 
     if-eq v0, p1, :cond_9
 
-    .line 22
     invoke-virtual {p0, p1}, Landroid/widget/CheckBox;->setMinWidth(I)V
 
     goto :goto_3
 
-    .line 23
     :cond_8
     invoke-virtual {p0, p1}, Landroid/widget/CheckBox;->setMinHeight(I)V
 
-    .line 24
     invoke-virtual {p0, p1}, Landroid/widget/CheckBox;->setMinWidth(I)V
 
-    .line 25
     :cond_9
     :goto_3
     invoke-direct {p0, v2, v1, v2, v1}, Lcom/google/android/material/chip/Chip;->insetChipBackgroundDrawable(IIII)V
 
-    .line 26
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateBackgroundDrawable()V
 
     return v3
@@ -1853,12 +1653,10 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->insetBackgroundDrawable:Landroid/graphics/drawable/InsetDrawable;
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     :cond_0
@@ -1870,7 +1668,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -1893,7 +1690,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -1916,7 +1712,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -1937,7 +1732,6 @@
 .method public getChipCornerRadius()F
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     const/4 v1, 0x0
@@ -1959,7 +1753,6 @@
 .method public getChipDrawable()Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     return-object v0
@@ -1968,7 +1761,6 @@
 .method public getChipEndPadding()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -1991,7 +1783,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2012,7 +1803,6 @@
 .method public getChipIconSize()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2035,7 +1825,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2056,7 +1845,6 @@
 .method public getChipMinHeight()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2077,7 +1865,6 @@
 .method public getChipStartPadding()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2100,7 +1887,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2121,7 +1907,6 @@
 .method public getChipStrokeWidth()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2144,7 +1929,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getText()Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -2157,7 +1941,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2180,7 +1963,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2201,7 +1983,6 @@
 .method public getCloseIconEndPadding()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2222,7 +2003,6 @@
 .method public getCloseIconSize()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2243,7 +2023,6 @@
 .method public getCloseIconStartPadding()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2266,7 +2045,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2289,7 +2067,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2314,7 +2091,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->touchHelper:Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
     invoke-virtual {v0}, Landroidx/customview/a/a;->getKeyboardFocusedVirtualViewId()I
@@ -2327,7 +2103,6 @@
 
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->touchHelper:Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
-    .line 2
     invoke-virtual {v0}, Landroidx/customview/a/a;->getAccessibilityFocusedVirtualViewId()I
 
     move-result v0
@@ -2336,13 +2111,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->getFocusedRect(Landroid/graphics/Rect;)V
 
     goto :goto_1
 
-    .line 4
     :cond_1
     :goto_0
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->getCloseIconTouchBoundsInt()Landroid/graphics/Rect;
@@ -2360,7 +2133,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2381,7 +2153,6 @@
 .method public getIconEndPadding()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2402,7 +2173,6 @@
 .method public getIconStartPadding()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2425,7 +2195,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2448,7 +2217,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     invoke-virtual {v0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->getShapeAppearanceModel()Lcom/google/android/material/shape/ShapeAppearanceModel;
@@ -2463,7 +2231,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2484,7 +2251,6 @@
 .method public getTextEndPadding()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2505,7 +2271,6 @@
 .method public getTextStartPadding()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2526,7 +2291,6 @@
 .method public isCheckable()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2553,7 +2317,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->isCheckedIconVisible()Z
 
     move-result v0
@@ -2564,7 +2327,6 @@
 .method public isCheckedIconVisible()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2591,7 +2353,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->isChipIconVisible()Z
 
     move-result v0
@@ -2602,7 +2363,6 @@
 .method public isChipIconVisible()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2629,7 +2389,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->isCloseIconVisible()Z
 
     move-result v0
@@ -2640,7 +2399,6 @@
 .method public isCloseIconVisible()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
@@ -2665,10 +2423,8 @@
 .method protected onAttachedToWindow()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/widget/CheckBox;->onAttachedToWindow()V
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     invoke-static {p0, v0}, Lcom/google/android/material/shape/MaterialShapeUtils;->setParentAbsoluteElevation(Landroid/view/View;Lcom/google/android/material/shape/MaterialShapeDrawable;)V
@@ -2679,22 +2435,18 @@
 .method public onChipDrawableSizeChange()V
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/chip/Chip;->minTouchTargetSize:I
 
     invoke-virtual {p0, v0}, Lcom/google/android/material/chip/Chip;->ensureAccessibleTouchTarget(I)Z
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/CheckBox;->requestLayout()V
 
-    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
     if-lt v0, v1, :cond_0
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/CheckBox;->invalidateOutline()V
 
     :cond_0
@@ -2706,24 +2458,20 @@
 
     add-int/lit8 p1, p1, 0x2
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->onCreateDrawableState(I)[I
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     sget-object v0, Lcom/google/android/material/chip/Chip;->SELECTED_STATE:[I
 
     invoke-static {p1, v0}, Landroid/widget/CheckBox;->mergeDrawableStates([I[I)[I
 
-    .line 4
     :cond_0
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->isCheckable()Z
 
@@ -2731,7 +2479,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     sget-object v0, Lcom/google/android/material/chip/Chip;->CHECKABLE_STATE_SET:[I
 
     invoke-static {p1, v0}, Landroid/widget/CheckBox;->mergeDrawableStates([I[I)[I
@@ -2743,10 +2490,8 @@
 .method protected onFocusChanged(ZILandroid/graphics/Rect;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroid/widget/CheckBox;->onFocusChanged(ZILandroid/graphics/Rect;)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->touchHelper:Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
     invoke-virtual {v0, p1, p2, p3}, Landroidx/customview/a/a;->onFocusChanged(ZILandroid/graphics/Rect;)V
@@ -2761,7 +2506,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
@@ -2779,12 +2523,10 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, v0}, Lcom/google/android/material/chip/Chip;->setCloseIconHovered(Z)V
 
     goto :goto_0
 
-    .line 3
     :cond_1
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->getCloseIconTouchBounds()Landroid/graphics/RectF;
 
@@ -2804,7 +2546,6 @@
 
     invoke-direct {p0, v0}, Lcom/google/android/material/chip/Chip;->setCloseIconHovered(Z)V
 
-    .line 4
     :goto_0
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->onHoverEvent(Landroid/view/MotionEvent;)Z
 
@@ -2820,10 +2561,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->onInitializeAccessibilityNodeInfo(Landroid/view/accessibility/AccessibilityNodeInfo;)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->isCheckable()Z
 
     move-result v0
@@ -2841,12 +2580,10 @@
     :cond_0
     const-string v0, "android.view.View"
 
-    .line 3
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
 
     goto :goto_2
 
-    .line 4
     :cond_1
     :goto_0
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->isCheckable()Z
@@ -2862,11 +2599,9 @@
     :cond_2
     const-string v0, "android.widget.Button"
 
-    .line 5
     :goto_1
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClassName(Ljava/lang/CharSequence;)V
 
-    .line 6
     :goto_2
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->isCheckable()Z
 
@@ -2874,14 +2609,12 @@
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setCheckable(Z)V
 
-    .line 7
     invoke-virtual {p0}, Landroid/widget/CheckBox;->isClickable()Z
 
     move-result v0
 
     invoke-virtual {p1, v0}, Landroid/view/accessibility/AccessibilityNodeInfo;->setClickable(Z)V
 
-    .line 8
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
@@ -2890,19 +2623,16 @@
 
     if-eqz v0, :cond_4
 
-    .line 9
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
     check-cast v0, Lcom/google/android/material/chip/ChipGroup;
 
-    .line 10
     invoke-static {p1}, Landroidx/core/view/accessibility/b;->a(Landroid/view/accessibility/AccessibilityNodeInfo;)Landroidx/core/view/accessibility/b;
 
     move-result-object p1
 
-    .line 11
     invoke-virtual {v0}, Lcom/google/android/material/chip/ChipGroup;->isSingleLine()Z
 
     move-result v1
@@ -2922,7 +2652,6 @@
 
     const/4 v4, -0x1
 
-    .line 12
     :goto_3
     invoke-virtual {v0, p0}, Lcom/google/android/material/internal/FlowLayout;->getRowIndex(Landroid/view/View;)I
 
@@ -2934,17 +2663,14 @@
 
     const/4 v6, 0x0
 
-    .line 13
     invoke-virtual {p0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v7
 
-    .line 14
     invoke-static/range {v2 .. v7}, Landroidx/core/view/accessibility/b$c;->a(IIIIZZ)Landroidx/core/view/accessibility/b$c;
 
     move-result-object v0
 
-    .line 15
     invoke-virtual {p1, v0}, Landroidx/core/view/accessibility/b;->b(Ljava/lang/Object;)V
 
     :cond_4
@@ -2964,7 +2690,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->getCloseIconTouchBounds()Landroid/graphics/RectF;
 
     move-result-object p2
@@ -2989,7 +2714,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -3014,18 +2738,14 @@
         value = 0x11
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->onRtlPropertiesChanged(I)V
 
-    .line 2
     iget v0, p0, Lcom/google/android/material/chip/Chip;->lastLayoutDirection:I
 
     if-eq v0, p1, :cond_0
 
-    .line 3
     iput p1, p0, Lcom/google/android/material/chip/Chip;->lastLayoutDirection:I
 
-    .line 4
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updatePaddingInternal()V
 
     :cond_0
@@ -3044,12 +2764,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result v0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->getCloseIconTouchBounds()Landroid/graphics/RectF;
 
     move-result-object v1
@@ -3084,7 +2802,6 @@
 
     goto :goto_2
 
-    .line 3
     :cond_0
     iget-boolean v0, p0, Lcom/google/android/material/chip/Chip;->closeIconPressed:Z
 
@@ -3092,18 +2809,15 @@
 
     if-nez v1, :cond_4
 
-    .line 4
     invoke-direct {p0, v2}, Lcom/google/android/material/chip/Chip;->setCloseIconPressed(Z)V
 
     goto :goto_1
 
-    .line 5
     :cond_1
     iget-boolean v0, p0, Lcom/google/android/material/chip/Chip;->closeIconPressed:Z
 
     if-eqz v0, :cond_2
 
-    .line 6
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->performCloseIconClick()Z
 
     const/4 v0, 0x1
@@ -3113,7 +2827,6 @@
     :cond_2
     const/4 v0, 0x0
 
-    .line 7
     :goto_0
     invoke-direct {p0, v2}, Lcom/google/android/material/chip/Chip;->setCloseIconPressed(Z)V
 
@@ -3122,7 +2835,6 @@
     :cond_3
     if-eqz v1, :cond_5
 
-    .line 8
     invoke-direct {p0, v3}, Lcom/google/android/material/chip/Chip;->setCloseIconPressed(Z)V
 
     :cond_4
@@ -3138,7 +2850,6 @@
     :goto_3
     if-nez v0, :cond_6
 
-    .line 9
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -3159,22 +2870,18 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/widget/CheckBox;->playSoundEffect(I)V
 
-    .line 2
     iget-object v1, p0, Lcom/google/android/material/chip/Chip;->onCloseIconClickListener:Landroid/view/View$OnClickListener;
 
     const/4 v2, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-interface {v1, p0}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
 
     const/4 v0, 0x1
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/google/android/material/chip/Chip;->touchHelper:Lcom/google/android/material/chip/Chip$ChipTouchHelper;
 
@@ -3186,7 +2893,6 @@
 .method public setBackground(Landroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->getBackgroundDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -3201,12 +2907,10 @@
 
     const-string v0, "Do not set the background; Chip manages its own background drawable."
 
-    .line 2
     invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
@@ -3221,7 +2925,6 @@
 
     const-string v0, "Do not set the background color; Chip manages its own background drawable."
 
-    .line 1
     invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
@@ -3230,7 +2933,6 @@
 .method public setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/android/material/chip/Chip;->getBackgroundDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -3245,12 +2947,10 @@
 
     const-string v0, "Do not set the background drawable; Chip manages its own background drawable."
 
-    .line 2
     invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-super {p0, p1}, Landroidx/appcompat/widget/AppCompatCheckBox;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
@@ -3265,7 +2965,6 @@
 
     const-string v0, "Do not set the background resource; Chip manages its own background drawable."
 
-    .line 1
     invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
@@ -3282,7 +2981,6 @@
 
     const-string v0, "Do not set the background tint list; Chip manages its own background drawable."
 
-    .line 1
     invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
@@ -3299,7 +2997,6 @@
 
     const-string v0, "Do not set the background tint mode; Chip manages its own background drawable."
 
-    .line 1
     invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
@@ -3308,12 +3005,10 @@
 .method public setCheckable(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCheckable(Z)V
 
     :cond_0
@@ -3327,12 +3022,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCheckableResource(I)V
 
     :cond_0
@@ -3342,17 +3035,14 @@
 .method public setChecked(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-nez v0, :cond_0
 
-    .line 2
     iput-boolean p1, p0, Lcom/google/android/material/chip/Chip;->deferredCheckedValue:Z
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Lcom/google/android/material/chip/ChipDrawable;->isCheckable()Z
 
@@ -3360,22 +3050,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/CheckBox;->isChecked()Z
 
     move-result v0
 
-    .line 5
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     if-eq v0, p1, :cond_1
 
-    .line 6
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->onCheckedChangeListenerInternal:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     if-eqz v0, :cond_1
 
-    .line 7
     invoke-interface {v0, p0, p1}, Landroid/widget/CompoundButton$OnCheckedChangeListener;->onCheckedChanged(Landroid/widget/CompoundButton;Z)V
 
     :cond_1
@@ -3390,12 +3076,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCheckedIcon(Landroid/graphics/drawable/Drawable;)V
 
     :cond_0
@@ -3407,7 +3091,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->setCheckedIconVisible(Z)V
 
     return-void
@@ -3422,7 +3105,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->setCheckedIconVisible(I)V
 
     return-void
@@ -3435,12 +3117,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCheckedIconResource(I)V
 
     :cond_0
@@ -3454,12 +3134,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCheckedIconTint(Landroid/content/res/ColorStateList;)V
 
     :cond_0
@@ -3473,12 +3151,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCheckedIconTintResource(I)V
 
     :cond_0
@@ -3492,12 +3168,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCheckedIconVisible(I)V
 
     :cond_0
@@ -3507,12 +3181,10 @@
 .method public setCheckedIconVisible(Z)V
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCheckedIconVisible(Z)V
 
     :cond_0
@@ -3526,12 +3198,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipBackgroundColor(Landroid/content/res/ColorStateList;)V
 
     :cond_0
@@ -3545,12 +3215,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipBackgroundColorResource(I)V
 
     :cond_0
@@ -3562,12 +3230,10 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipCornerRadius(F)V
 
     :cond_0
@@ -3583,12 +3249,10 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipCornerRadiusResource(I)V
 
     :cond_0
@@ -3602,28 +3266,22 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     invoke-direct {p0, v0}, Lcom/google/android/material/chip/Chip;->unapplyChipDrawable(Lcom/google/android/material/chip/ChipDrawable;)V
 
-    .line 3
     iput-object p1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-virtual {p1, v0}, Lcom/google/android/material/chip/ChipDrawable;->setShouldDrawText(Z)V
 
-    .line 5
     iget-object p1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     invoke-direct {p0, p1}, Lcom/google/android/material/chip/Chip;->applyChipDrawable(Lcom/google/android/material/chip/ChipDrawable;)V
 
-    .line 6
     iget p1, p0, Lcom/google/android/material/chip/Chip;->minTouchTargetSize:I
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->ensureAccessibleTouchTarget(I)Z
@@ -3635,12 +3293,10 @@
 .method public setChipEndPadding(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipEndPadding(F)V
 
     :cond_0
@@ -3654,12 +3310,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipEndPaddingResource(I)V
 
     :cond_0
@@ -3673,12 +3327,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipIcon(Landroid/graphics/drawable/Drawable;)V
 
     :cond_0
@@ -3690,7 +3342,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->setChipIconVisible(Z)V
 
     return-void
@@ -3705,7 +3356,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->setChipIconVisible(I)V
 
     return-void
@@ -3718,12 +3368,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipIconResource(I)V
 
     :cond_0
@@ -3733,12 +3381,10 @@
 .method public setChipIconSize(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipIconSize(F)V
 
     :cond_0
@@ -3752,12 +3398,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipIconSizeResource(I)V
 
     :cond_0
@@ -3771,12 +3415,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipIconTint(Landroid/content/res/ColorStateList;)V
 
     :cond_0
@@ -3790,12 +3432,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipIconTintResource(I)V
 
     :cond_0
@@ -3809,12 +3449,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipIconVisible(I)V
 
     :cond_0
@@ -3824,12 +3462,10 @@
 .method public setChipIconVisible(Z)V
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipIconVisible(Z)V
 
     :cond_0
@@ -3839,12 +3475,10 @@
 .method public setChipMinHeight(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipMinHeight(F)V
 
     :cond_0
@@ -3858,12 +3492,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipMinHeightResource(I)V
 
     :cond_0
@@ -3873,12 +3505,10 @@
 .method public setChipStartPadding(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipStartPadding(F)V
 
     :cond_0
@@ -3892,12 +3522,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipStartPaddingResource(I)V
 
     :cond_0
@@ -3911,12 +3539,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipStrokeColor(Landroid/content/res/ColorStateList;)V
 
     :cond_0
@@ -3930,12 +3556,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipStrokeColorResource(I)V
 
     :cond_0
@@ -3945,12 +3569,10 @@
 .method public setChipStrokeWidth(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipStrokeWidth(F)V
 
     :cond_0
@@ -3964,12 +3586,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setChipStrokeWidthResource(I)V
 
     :cond_0
@@ -3985,7 +3605,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;)V
 
     return-void
@@ -4000,7 +3619,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -4021,15 +3639,12 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIcon(Landroid/graphics/drawable/Drawable;)V
 
-    .line 3
     :cond_0
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateAccessibilityDelegate()V
 
@@ -4043,12 +3658,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIconContentDescription(Ljava/lang/CharSequence;)V
 
     :cond_0
@@ -4060,7 +3673,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->setCloseIconVisible(Z)V
 
     return-void
@@ -4075,7 +3687,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->setCloseIconVisible(I)V
 
     return-void
@@ -4084,12 +3695,10 @@
 .method public setCloseIconEndPadding(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIconEndPadding(F)V
 
     :cond_0
@@ -4103,12 +3712,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIconEndPaddingResource(I)V
 
     :cond_0
@@ -4122,15 +3729,12 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIconResource(I)V
 
-    .line 3
     :cond_0
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateAccessibilityDelegate()V
 
@@ -4140,12 +3744,10 @@
 .method public setCloseIconSize(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIconSize(F)V
 
     :cond_0
@@ -4159,12 +3761,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIconSizeResource(I)V
 
     :cond_0
@@ -4174,12 +3774,10 @@
 .method public setCloseIconStartPadding(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIconStartPadding(F)V
 
     :cond_0
@@ -4193,12 +3791,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIconStartPaddingResource(I)V
 
     :cond_0
@@ -4212,12 +3808,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIconTint(Landroid/content/res/ColorStateList;)V
 
     :cond_0
@@ -4231,12 +3825,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIconTintResource(I)V
 
     :cond_0
@@ -4250,7 +3842,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -4267,15 +3858,12 @@
 .method public setCloseIconVisible(Z)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setCloseIconVisible(Z)V
 
-    .line 4
     :cond_0
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateAccessibilityDelegate()V
 
@@ -4305,12 +3893,10 @@
 
     if-nez p3, :cond_0
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/CheckBox;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4320,7 +3906,6 @@
 
     throw p1
 
-    .line 3
     :cond_1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4354,12 +3939,10 @@
 
     if-nez p3, :cond_0
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/CheckBox;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4369,7 +3952,6 @@
 
     throw p1
 
-    .line 3
     :cond_1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4387,12 +3969,10 @@
 
     if-nez p3, :cond_0
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/CheckBox;->setCompoundDrawablesRelativeWithIntrinsicBounds(IIII)V
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4402,7 +3982,6 @@
 
     throw p1
 
-    .line 3
     :cond_1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4436,12 +4015,10 @@
 
     if-nez p3, :cond_0
 
-    .line 4
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/CheckBox;->setCompoundDrawablesRelativeWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     return-void
 
-    .line 5
     :cond_0
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4451,7 +4028,6 @@
 
     throw p1
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4469,12 +4045,10 @@
 
     if-nez p3, :cond_0
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/CheckBox;->setCompoundDrawablesWithIntrinsicBounds(IIII)V
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4484,7 +4058,6 @@
 
     throw p1
 
-    .line 3
     :cond_1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4518,12 +4091,10 @@
 
     if-nez p3, :cond_0
 
-    .line 4
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/CheckBox;->setCompoundDrawablesWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     return-void
 
-    .line 5
     :cond_0
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4533,7 +4104,6 @@
 
     throw p1
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4550,15 +4120,12 @@
         value = 0x15
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setElevation(F)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0, p1}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setElevation(F)V
 
     :cond_0
@@ -4568,34 +4135,28 @@
 .method public setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     sget-object v0, Landroid/text/TextUtils$TruncateAt;->MARQUEE:Landroid/text/TextUtils$TruncateAt;
 
     if-eq p1, v0, :cond_2
 
-    .line 3
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
 
     :cond_1
     return-void
 
-    .line 6
     :cond_2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4609,10 +4170,8 @@
 .method public setEnsureMinTouchTargetSize(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/android/material/chip/Chip;->ensureMinTouchTargetSize:Z
 
-    .line 2
     iget p1, p0, Lcom/google/android/material/chip/Chip;->minTouchTargetSize:I
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/chip/Chip;->ensureAccessibleTouchTarget(I)Z
@@ -4631,12 +4190,10 @@
 
     const-string v0, "Chip text must be vertically center and start aligned"
 
-    .line 1
     invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setGravity(I)V
 
@@ -4651,12 +4208,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setHideMotionSpec(Lcom/google/android/material/animation/MotionSpec;)V
 
     :cond_0
@@ -4670,12 +4225,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setHideMotionSpecResource(I)V
 
     :cond_0
@@ -4685,12 +4238,10 @@
 .method public setIconEndPadding(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setIconEndPadding(F)V
 
     :cond_0
@@ -4704,12 +4255,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setIconEndPaddingResource(I)V
 
     :cond_0
@@ -4719,12 +4268,10 @@
 .method public setIconStartPadding(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setIconStartPadding(F)V
 
     :cond_0
@@ -4738,12 +4285,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setIconStartPaddingResource(I)V
 
     :cond_0
@@ -4753,14 +4298,12 @@
 .method public setLayoutDirection(I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -4768,7 +4311,6 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 3
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setLayoutDirection(I)V
 
     :cond_1
@@ -4782,12 +4324,10 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setLines(I)V
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4805,12 +4345,10 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setMaxLines(I)V
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4828,15 +4366,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setMaxWidth(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setMaxWidth(I)V
 
     :cond_0
@@ -4850,12 +4385,10 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setMinLines(I)V
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -4869,7 +4402,6 @@
 .method setOnCheckedChangeListenerInternal(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/chip/Chip;->onCheckedChangeListenerInternal:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     return-void
@@ -4878,10 +4410,8 @@
 .method public setOnCloseIconClickListener(Landroid/view/View$OnClickListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/chip/Chip;->onCloseIconClickListener:Landroid/view/View$OnClickListener;
 
-    .line 2
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateAccessibilityDelegate()V
 
     return-void
@@ -4894,15 +4424,12 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setRippleColor(Landroid/content/res/ColorStateList;)V
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
@@ -4912,7 +4439,6 @@
 
     if-nez p1, :cond_1
 
-    .line 4
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateFrameworkRippleBackground()V
 
     :cond_1
@@ -4926,15 +4452,12 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setRippleColorResource(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     invoke-virtual {p1}, Lcom/google/android/material/chip/ChipDrawable;->getUseCompatRipple()Z
@@ -4943,7 +4466,6 @@
 
     if-nez p1, :cond_0
 
-    .line 4
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateFrameworkRippleBackground()V
 
     :cond_0
@@ -4957,7 +4479,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/shape/MaterialShapeDrawable;->setShapeAppearanceModel(Lcom/google/android/material/shape/ShapeAppearanceModel;)V
@@ -4972,12 +4493,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setShowMotionSpec(Lcom/google/android/material/animation/MotionSpec;)V
 
     :cond_0
@@ -4991,12 +4510,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setShowMotionSpecResource(I)V
 
     :cond_0
@@ -5008,12 +4525,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setSingleLine(Z)V
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -5027,7 +4542,6 @@
 .method public setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-nez v0, :cond_0
@@ -5039,7 +4553,6 @@
 
     const-string p1, ""
 
-    .line 2
     :cond_1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
@@ -5059,12 +4572,10 @@
     :goto_0
     invoke-super {p0, v0, p2}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
 
-    .line 3
     iget-object p2, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz p2, :cond_3
 
-    .line 4
     invoke-virtual {p2, p1}, Lcom/google/android/material/chip/ChipDrawable;->setText(Ljava/lang/CharSequence;)V
 
     :cond_3
@@ -5074,18 +4585,14 @@
 .method public setTextAppearance(I)V
     .locals 1
 
-    .line 8
     invoke-super {p0, p1}, Landroid/widget/CheckBox;->setTextAppearance(I)V
 
-    .line 9
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 10
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setTextAppearanceResource(I)V
 
-    .line 11
     :cond_0
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateTextPaintDrawState()V
 
@@ -5095,18 +4602,14 @@
 .method public setTextAppearance(Landroid/content/Context;I)V
     .locals 0
 
-    .line 4
     invoke-super {p0, p1, p2}, Landroid/widget/CheckBox;->setTextAppearance(Landroid/content/Context;I)V
 
-    .line 5
     iget-object p1, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz p1, :cond_0
 
-    .line 6
     invoke-virtual {p1, p2}, Lcom/google/android/material/chip/ChipDrawable;->setTextAppearanceResource(I)V
 
-    .line 7
     :cond_0
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateTextPaintDrawState()V
 
@@ -5120,15 +4623,12 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setTextAppearance(Lcom/google/android/material/resources/TextAppearance;)V
 
-    .line 3
     :cond_0
     invoke-direct {p0}, Lcom/google/android/material/chip/Chip;->updateTextPaintDrawState()V
 
@@ -5142,7 +4642,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/CheckBox;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -5155,12 +4654,10 @@
 .method public setTextEndPadding(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setTextEndPadding(F)V
 
     :cond_0
@@ -5174,12 +4671,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setTextEndPaddingResource(I)V
 
     :cond_0
@@ -5189,12 +4684,10 @@
 .method public setTextStartPadding(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setTextStartPadding(F)V
 
     :cond_0
@@ -5208,12 +4701,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip;->chipDrawable:Lcom/google/android/material/chip/ChipDrawable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/google/android/material/chip/ChipDrawable;->setTextStartPaddingResource(I)V
 
     :cond_0
@@ -5223,7 +4714,6 @@
 .method public shouldEnsureMinTouchTargetSize()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/android/material/chip/Chip;->ensureMinTouchTargetSize:Z
 
     return v0

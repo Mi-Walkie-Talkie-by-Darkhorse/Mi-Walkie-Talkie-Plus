@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;
 .super Ljava/lang/Object;
-.source "BucketBean.java"
 
 
 # instance fields
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,10 +26,8 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;->name:Ljava/lang/String;
 
     return-void
@@ -42,7 +38,6 @@
 .method public getCreationTime()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;->creationTime:J
 
     return-wide v0
@@ -51,7 +46,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;->name:Ljava/lang/String;
 
     return-object v0
@@ -60,7 +54,6 @@
 .method public getNumObjects()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;->numObjects:J
 
     return-wide v0
@@ -69,7 +62,6 @@
 .method public getOrgId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;->orgId:Ljava/lang/String;
 
     return-object v0
@@ -78,7 +70,6 @@
 .method public getUsedSpace()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;->usedSpace:J
 
     return-wide v0
@@ -87,7 +78,6 @@
 .method public setCreationTime(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;->creationTime:J
 
     return-void
@@ -96,7 +86,6 @@
 .method public setName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;->name:Ljava/lang/String;
 
     return-void
@@ -105,7 +94,6 @@
 .method public setNumObjects(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;->numObjects:J
 
     return-void
@@ -114,7 +102,6 @@
 .method public setOrgId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;->orgId:Ljava/lang/String;
 
     return-void
@@ -123,7 +110,6 @@
 .method public setUsedSpace(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/xiaomi/infra/galaxy/fds/bean/BucketBean;->usedSpace:J
 
     return-void

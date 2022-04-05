@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog$b;
 .super Ljava/lang/Object;
-.source "SharkPickerDialog.java"
 
 
 # annotations

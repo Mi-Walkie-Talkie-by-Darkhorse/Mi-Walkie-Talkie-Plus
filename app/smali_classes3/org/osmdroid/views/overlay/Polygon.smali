@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/Polygon;
 .super Lorg/osmdroid/views/overlay/OverlayWithIW;
-.source "Polygon.java"
 
 
 # annotations
@@ -39,31 +38,26 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 2
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/OverlayWithIW;-><init>()V
 
-    .line 3
     new-instance v0, Landroid/graphics/Path;
 
     invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mPath:Landroid/graphics/Path;
 
-    .line 4
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mTempPoint1:Landroid/graphics/Point;
 
-    .line 5
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mTempPoint2:Landroid/graphics/Point;
 
-    .line 6
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
@@ -72,17 +66,14 @@
 
     const/4 v1, 0x0
 
-    .line 7
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 8
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mFillPaint:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 9
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
@@ -91,45 +82,38 @@
 
     const/high16 v2, -0x1000000
 
-    .line 10
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 11
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutlinePaint:Landroid/graphics/Paint;
 
     const/high16 v2, 0x41200000    # 10.0f
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 12
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutlinePaint:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 13
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutlinePaint:Landroid/graphics/Paint;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 14
     new-instance v0, Lorg/osmdroid/views/overlay/Polygon$LinearRing;
 
     invoke-direct {v0, p0}, Lorg/osmdroid/views/overlay/Polygon$LinearRing;-><init>(Lorg/osmdroid/views/overlay/Polygon;)V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutline:Lorg/osmdroid/views/overlay/Polygon$LinearRing;
 
-    .line 15
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mHoles:Ljava/util/ArrayList;
 
-    .line 16
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mPath:Landroid/graphics/Path;
 
     sget-object v1, Landroid/graphics/Path$FillType;->EVEN_ODD:Landroid/graphics/Path$FillType;
@@ -144,7 +128,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/Polygon;-><init>()V
 
     return-void
@@ -153,7 +136,6 @@
 .method static synthetic access$000(Lorg/osmdroid/views/overlay/Polygon;)Landroid/graphics/Point;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/views/overlay/Polygon;->mTempPoint1:Landroid/graphics/Point;
 
     return-object p0
@@ -162,7 +144,6 @@
 .method static synthetic access$100(Lorg/osmdroid/views/overlay/Polygon;)Landroid/graphics/Path;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/views/overlay/Polygon;->mPath:Landroid/graphics/Path;
 
     return-object p0
@@ -171,7 +152,6 @@
 .method static synthetic access$200(Lorg/osmdroid/views/overlay/Polygon;)Landroid/graphics/Point;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/views/overlay/Polygon;->mTempPoint2:Landroid/graphics/Point;
 
     return-object p0
@@ -190,7 +170,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     const/16 v1, 0x3c
@@ -206,12 +185,10 @@
 
     int-to-float v2, v1
 
-    .line 2
     invoke-virtual {p0, p1, p2, v2}, Lorg/osmdroid/util/GeoPoint;->destinationPoint(DF)Lorg/osmdroid/util/GeoPoint;
 
     move-result-object v2
 
-    .line 3
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v1, v1, 0x6
@@ -235,14 +212,12 @@
         }
     .end annotation
 
-    .line 6
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x4
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 7
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBox;->getLatNorth()D
@@ -257,7 +232,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 8
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBox;->getLatNorth()D
@@ -272,7 +246,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 9
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBox;->getLatSouth()D
@@ -287,7 +260,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 10
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBox;->getLatSouth()D
@@ -321,14 +293,12 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x4
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 2
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBoxE6;->getLatNorthE6()I
@@ -343,7 +313,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 3
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBoxE6;->getLatNorthE6()I
@@ -358,7 +327,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 4
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBoxE6;->getLatSouthE6()I
@@ -373,7 +341,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 5
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBoxE6;->getLatSouthE6()I
@@ -404,7 +371,6 @@
         }
     .end annotation
 
-    .line 11
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x4
@@ -417,7 +383,6 @@
 
     const/high16 v3, 0x42b40000    # 90.0f
 
-    .line 12
     invoke-virtual {p0, p1, p2, v3}, Lorg/osmdroid/util/GeoPoint;->destinationPoint(DF)Lorg/osmdroid/util/GeoPoint;
 
     move-result-object p1
@@ -426,12 +391,10 @@
 
     const/high16 p2, 0x43340000    # 180.0f
 
-    .line 13
     invoke-virtual {p0, p3, p4, p2}, Lorg/osmdroid/util/GeoPoint;->destinationPoint(DF)Lorg/osmdroid/util/GeoPoint;
 
     move-result-object p2
 
-    .line 14
     invoke-virtual {p0}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
 
     move-result-wide p3
@@ -446,7 +409,6 @@
 
     sub-double/2addr p3, v3
 
-    .line 15
     invoke-virtual {p0}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v3
@@ -459,7 +421,6 @@
 
     sub-double/2addr v3, v1
 
-    .line 16
     new-instance p0, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p2}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
@@ -474,7 +435,6 @@
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 17
     new-instance p0, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p2}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
@@ -485,14 +445,12 @@
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 18
     new-instance p0, Lorg/osmdroid/util/GeoPoint;
 
     invoke-direct {p0, v3, v4, p3, p4}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
     invoke-virtual {v0, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 19
     new-instance p0, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p1}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
@@ -511,7 +469,6 @@
 .method public contains(Landroid/view/MotionEvent;)Z
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mPath:Landroid/graphics/Path;
 
     invoke-virtual {v0}, Landroid/graphics/Path;->isEmpty()Z
@@ -524,25 +481,21 @@
 
     return p1
 
-    .line 2
     :cond_0
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
 
-    .line 3
     iget-object v1, p0, Lorg/osmdroid/views/overlay/Polygon;->mPath:Landroid/graphics/Path;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v0, v2}, Landroid/graphics/Path;->computeBounds(Landroid/graphics/RectF;Z)V
 
-    .line 4
     new-instance v1, Landroid/graphics/Region;
 
     invoke-direct {v1}, Landroid/graphics/Region;-><init>()V
 
-    .line 5
     iget-object v2, p0, Lorg/osmdroid/views/overlay/Polygon;->mPath:Landroid/graphics/Path;
 
     new-instance v3, Landroid/graphics/Region;
@@ -567,7 +520,6 @@
 
     invoke-virtual {v1, v2, v3}, Landroid/graphics/Region;->setPath(Landroid/graphics/Path;Landroid/graphics/Region;)Z
 
-    .line 6
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
@@ -594,23 +546,19 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object p2
 
-    .line 2
     iget-object p3, p0, Lorg/osmdroid/views/overlay/Polygon;->mPath:Landroid/graphics/Path;
 
     invoke-virtual {p3}, Landroid/graphics/Path;->rewind()V
 
-    .line 3
     iget-object p3, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutline:Lorg/osmdroid/views/overlay/Polygon$LinearRing;
 
     invoke-virtual {p3, p2}, Lorg/osmdroid/views/overlay/Polygon$LinearRing;->buildPathPortion(Lorg/osmdroid/views/Projection;)V
 
-    .line 4
     iget-object p3, p0, Lorg/osmdroid/views/overlay/Polygon;->mHoles:Ljava/util/ArrayList;
 
     invoke-virtual {p3}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -630,12 +578,10 @@
 
     check-cast v0, Lorg/osmdroid/views/overlay/Polygon$LinearRing;
 
-    .line 5
     invoke-virtual {v0, p2}, Lorg/osmdroid/views/overlay/Polygon$LinearRing;->buildPathPortion(Lorg/osmdroid/views/Projection;)V
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-object p2, p0, Lorg/osmdroid/views/overlay/Polygon;->mPath:Landroid/graphics/Path;
 
@@ -643,7 +589,6 @@
 
     invoke-virtual {p1, p2, p3}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 7
     iget-object p2, p0, Lorg/osmdroid/views/overlay/Polygon;->mPath:Landroid/graphics/Path;
 
     iget-object p3, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutlinePaint:Landroid/graphics/Paint;
@@ -656,7 +601,6 @@
 .method public getFillColor()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mFillPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0}, Landroid/graphics/Paint;->getColor()I
@@ -678,7 +622,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     iget-object v1, p0, Lorg/osmdroid/views/overlay/Polygon;->mHoles:Ljava/util/ArrayList;
@@ -689,7 +632,6 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 2
     iget-object v1, p0, Lorg/osmdroid/views/overlay/Polygon;->mHoles:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -709,7 +651,6 @@
 
     check-cast v2, Lorg/osmdroid/views/overlay/Polygon$LinearRing;
 
-    .line 3
     invoke-virtual {v2}, Lorg/osmdroid/views/overlay/Polygon$LinearRing;->getPoints()Ljava/util/ArrayList;
 
     move-result-object v2
@@ -725,7 +666,6 @@
 .method public getOutlinePaint()Landroid/graphics/Paint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutlinePaint:Landroid/graphics/Paint;
 
     return-object v0
@@ -742,7 +682,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutline:Lorg/osmdroid/views/overlay/Polygon$LinearRing;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/overlay/Polygon$LinearRing;->getPoints()Ljava/util/ArrayList;
@@ -755,7 +694,6 @@
 .method public getStrokeColor()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutlinePaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0}, Landroid/graphics/Paint;->getColor()I
@@ -768,7 +706,6 @@
 .method public getStrokeWidth()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutlinePaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0}, Landroid/graphics/Paint;->getStrokeWidth()F
@@ -781,7 +718,6 @@
 .method public isVisible()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/Overlay;->isEnabled()Z
 
     move-result v0
@@ -794,15 +730,12 @@
 
     const/4 p1, 0x0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutline:Lorg/osmdroid/views/overlay/Polygon$LinearRing;
 
-    .line 2
     iget-object p1, p0, Lorg/osmdroid/views/overlay/Polygon;->mHoles:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
 
-    .line 3
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/OverlayWithIW;->onDestroy()V
 
     return-void
@@ -811,7 +744,6 @@
 .method public onSingleTapConfirmed(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayWithIW;->mInfoWindow:Lorg/osmdroid/views/overlay/infowindow/InfoWindow;
 
     const/4 v1, 0x0
@@ -820,7 +752,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-virtual {p0, p1}, Lorg/osmdroid/views/overlay/Polygon;->contains(Landroid/view/MotionEvent;)Z
 
@@ -828,12 +759,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object p2
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v2
@@ -852,7 +781,6 @@
 
     check-cast p1, Lorg/osmdroid/util/GeoPoint;
 
-    .line 5
     iget-object p2, p0, Lorg/osmdroid/views/overlay/OverlayWithIW;->mInfoWindow:Lorg/osmdroid/views/overlay/infowindow/InfoWindow;
 
     invoke-virtual {p2, p0, p1, v1, v1}, Lorg/osmdroid/views/overlay/infowindow/InfoWindow;->open(Ljava/lang/Object;Lorg/osmdroid/util/GeoPoint;II)V
@@ -864,7 +792,6 @@
 .method public setFillColor(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mFillPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
@@ -885,7 +812,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -896,7 +822,6 @@
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mHoles:Ljava/util/ArrayList;
 
-    .line 2
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -914,15 +839,12 @@
 
     check-cast v0, Ljava/util/List;
 
-    .line 3
     new-instance v1, Lorg/osmdroid/views/overlay/Polygon$LinearRing;
 
     invoke-direct {v1, p0}, Lorg/osmdroid/views/overlay/Polygon$LinearRing;-><init>(Lorg/osmdroid/views/overlay/Polygon;)V
 
-    .line 4
     invoke-virtual {v1, v0}, Lorg/osmdroid/views/overlay/Polygon$LinearRing;->setPoints(Ljava/util/List;)V
 
-    .line 5
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mHoles:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -944,7 +866,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutline:Lorg/osmdroid/views/overlay/Polygon$LinearRing;
 
     invoke-virtual {v0, p1}, Lorg/osmdroid/views/overlay/Polygon$LinearRing;->setPoints(Ljava/util/List;)V
@@ -955,7 +876,6 @@
 .method public setStrokeColor(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutlinePaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
@@ -966,7 +886,6 @@
 .method public setStrokeWidth(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Polygon;->mOutlinePaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
@@ -977,7 +896,6 @@
 .method public setVisible(Z)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/osmdroid/views/overlay/Overlay;->setEnabled(Z)V
 
     return-void

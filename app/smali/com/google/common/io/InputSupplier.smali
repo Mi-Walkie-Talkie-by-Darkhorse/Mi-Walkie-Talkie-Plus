@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/io/InputSupplier;
 .super Ljava/lang/Object;
-.source "InputSupplier.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/node/q/a;
 .super Ljava/lang/Object;
-.source "ConnConfigsDBAdapter.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/node/q/b;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/node/q/a;->a:Lcom/ifengyu/intercom/node/q/b;
 
     return-void
@@ -25,49 +22,42 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-interface {p0, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v2, 0x2
 
-    .line 2
     invoke-interface {p0, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
     const/4 v3, 0x3
 
-    .line 3
     invoke-interface {p0, v3}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v3
 
     const/4 v4, 0x4
 
-    .line 4
     invoke-interface {p0, v4}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v9
 
     const/4 v4, 0x5
 
-    .line 5
     invoke-interface {p0, v4}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v10
 
     const/4 v4, 0x6
 
-    .line 6
     invoke-interface {p0, v4}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v11
 
     const-string p0, "NULL_STRING"
 
-    .line 7
     invoke-virtual {v1, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -83,7 +73,6 @@
     :cond_0
     move-object v6, v1
 
-    .line 8
     :goto_0
     invoke-virtual {v2, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -110,7 +99,6 @@
     :cond_2
     const/4 v8, 0x1
 
-    .line 9
     :goto_2
     new-instance p0, Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
@@ -126,7 +114,6 @@
 .method public a(Ljava/lang/String;)Lcom/ifengyu/intercom/node/ConnectionConfiguration;
     .locals 8
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->o()Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     move-result-object v0
@@ -141,7 +128,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 11
     new-instance v7, Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->getName()Ljava/lang/String;
@@ -172,7 +158,6 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;-><init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;II)V
 
-    .line 12
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->isConnected()Z
 
     move-result p1
@@ -199,12 +184,10 @@
         }
     .end annotation
 
-    .line 13
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 14
     iget-object v1, p0, Lcom/ifengyu/intercom/node/q/a;->a:Lcom/ifengyu/intercom/node/q/b;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteOpenHelper;->getReadableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -231,7 +214,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 15
     :goto_0
     invoke-interface {v1}, Landroid/database/Cursor;->moveToNext()Z
 
@@ -239,7 +221,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 16
     invoke-static {v1}, Lcom/ifengyu/intercom/node/q/a;->a(Landroid/database/Cursor;)Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     move-result-object v2
@@ -248,7 +229,6 @@
 
     goto :goto_0
 
-    .line 17
     :cond_0
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
 
@@ -259,7 +239,6 @@
 .method public a(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
     .locals 3
 
-    .line 18
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -278,7 +257,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 19
     invoke-static {}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->o()Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     move-result-object v0
@@ -287,7 +265,6 @@
 
     move-result-object v0
 
-    .line 20
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->a()Ljava/lang/String;
 
     move-result-object v1
@@ -298,66 +275,56 @@
 
     if-nez v1, :cond_0
 
-    .line 21
     new-instance v1, Lcom/ifengyu/intercom/lite/models/DeviceModel;
 
     invoke-direct {v1}, Lcom/ifengyu/intercom/lite/models/DeviceModel;-><init>()V
 
-    .line 22
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->e()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setDeviceId(Ljava/lang/String;)V
 
-    .line 23
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->d()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setName(Ljava/lang/String;)V
 
-    .line 24
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->a()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setAddress(Ljava/lang/String;)V
 
-    .line 25
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->c()I
 
     move-result v2
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setDeviceType(I)V
 
-    .line 26
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->g()Z
 
     move-result v2
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setEnabled(Z)V
 
-    .line 27
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->f()Z
 
     move-result v2
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setConnected(Z)V
 
-    .line 28
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->b()I
 
     move-result p1
 
     invoke-virtual {v1, p1}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setDeviceColor(I)V
 
-    .line 29
     invoke-interface {v0, v1}, Lcom/ifengyu/intercom/lite/f/e;->a(Lcom/ifengyu/intercom/lite/models/DeviceModel;)J
 
     goto :goto_0
 
-    .line 30
     :cond_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->e()Ljava/lang/String;
 
@@ -365,49 +332,42 @@
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setDeviceId(Ljava/lang/String;)V
 
-    .line 31
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->d()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setName(Ljava/lang/String;)V
 
-    .line 32
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->a()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setAddress(Ljava/lang/String;)V
 
-    .line 33
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->c()I
 
     move-result v2
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setDeviceType(I)V
 
-    .line 34
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->g()Z
 
     move-result v2
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setEnabled(Z)V
 
-    .line 35
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->f()Z
 
     move-result v2
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setConnected(Z)V
 
-    .line 36
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->b()I
 
     move-result p1
 
     invoke-virtual {v1, p1}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setDeviceColor(I)V
 
-    .line 37
     invoke-interface {v0, v1}, Lcom/ifengyu/intercom/lite/f/e;->b(Lcom/ifengyu/intercom/lite/models/DeviceModel;)V
 
     :goto_0
@@ -417,7 +377,6 @@
 .method public b(Ljava/lang/String;)I
     .locals 1
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->o()Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     move-result-object v0
@@ -448,15 +407,12 @@
 
     const-string v1, "loadConnectionConfigs"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->o()Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     move-result-object v1
@@ -469,7 +425,6 @@
 
     move-result-object v1
 
-    .line 4
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -487,7 +442,6 @@
 
     check-cast v2, Lcom/ifengyu/intercom/lite/models/DeviceModel;
 
-    .line 5
     new-instance v10, Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     invoke-virtual {v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->getName()Ljava/lang/String;
@@ -518,14 +472,12 @@
 
     invoke-direct/range {v3 .. v9}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;-><init>(Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;II)V
 
-    .line 6
     invoke-virtual {v2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->isConnected()Z
 
     move-result v2
 
     invoke-virtual {v10, v2}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->a(Z)V
 
-    .line 7
     invoke-virtual {v0, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0

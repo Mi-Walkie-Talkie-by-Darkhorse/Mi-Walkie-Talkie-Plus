@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/ActionMenuPresenter$f;
 .super Ljava/lang/Object;
-.source "ActionMenuPresenter.java"
 
 # interfaces
 .implements Landroidx/appcompat/view/menu/l$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/ActionMenuPresenter;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter$f;->a:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$f;->a:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     invoke-static {v0}, Landroidx/appcompat/widget/ActionMenuPresenter;->d(Landroidx/appcompat/widget/ActionMenuPresenter;)Landroidx/appcompat/view/menu/f;
@@ -55,7 +52,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$f;->a:Landroidx/appcompat/widget/ActionMenuPresenter;
 
@@ -73,7 +69,6 @@
 
     iput v2, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->C:I
 
-    .line 3
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$f;->a:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/b;->a()Landroidx/appcompat/view/menu/l$a;
@@ -82,7 +77,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/l$a;->a(Landroidx/appcompat/view/menu/f;)Z
 
     move-result v1
@@ -98,12 +92,10 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Landroidx/appcompat/view/menu/q;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/f;->getRootMenu()Landroidx/appcompat/view/menu/f;
 
     move-result-object v0
@@ -112,7 +104,6 @@
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/f;->close(Z)V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter$f;->a:Landroidx/appcompat/widget/ActionMenuPresenter;
 
@@ -122,7 +113,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-interface {v0, p1, p2}, Landroidx/appcompat/view/menu/l$a;->onCloseMenu(Landroidx/appcompat/view/menu/f;Z)V
 
     :cond_1

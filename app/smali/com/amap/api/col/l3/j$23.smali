@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$23;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j;ZI)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$23;->c:Lcom/amap/api/col/l3/j;
 
     iput-boolean p2, p0, Lcom/amap/api/col/l3/j$23;->a:Z
@@ -46,19 +44,16 @@
 .method public final run()V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/j$23;->c:Lcom/amap/api/col/l3/j;
 
     iget-object v1, v0, Lcom/amap/api/col/l3/j;->f:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     if-eqz v1, :cond_1
 
-    .line 2
     iget-boolean v0, p0, Lcom/amap/api/col/l3/j$23;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget v2, p0, Lcom/amap/api/col/l3/j$23;->b:I
 
     const/16 v3, 0xa2b
@@ -73,7 +68,6 @@
 
     invoke-virtual/range {v1 .. v7}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/j$23;->c:Lcom/amap/api/col/l3/j;
 
     iget-object v1, v0, Lcom/amap/api/col/l3/j;->f:Lcom/autonavi/ae/gmap/GLMapEngine;
@@ -88,7 +82,6 @@
 
     invoke-virtual/range {v1 .. v7}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/j$23;->c:Lcom/amap/api/col/l3/j;
 
     iget-object v1, v0, Lcom/amap/api/col/l3/j;->f:Lcom/autonavi/ae/gmap/GLMapEngine;
@@ -105,7 +98,6 @@
 
     return-void
 
-    .line 6
     :cond_0
     iget v2, p0, Lcom/amap/api/col/l3/j$23;->b:I
 
@@ -121,7 +113,6 @@
 
     invoke-virtual/range {v1 .. v7}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/j$23;->c:Lcom/amap/api/col/l3/j;
 
     iget-object v1, v0, Lcom/amap/api/col/l3/j;->f:Lcom/autonavi/ae/gmap/GLMapEngine;

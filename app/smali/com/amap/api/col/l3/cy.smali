@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/cy;
 .super Ljava/lang/Object;
-.source "MyLocationOverlay.java"
 
 
 # annotations
@@ -61,10 +60,8 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/u;Landroid/content/Context;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/amap/api/maps/model/MyLocationStyle;
 
     invoke-direct {v0}, Lcom/amap/api/maps/model/MyLocationStyle;-><init>()V
@@ -73,72 +70,56 @@
 
     const/4 v0, 0x4
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/cy;->m:I
 
     const/4 v1, 0x0
 
-    .line 4
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->n:Z
 
     const-string v2, "location_map_gps_locked.png"
 
-    .line 5
     iput-object v2, p0, Lcom/amap/api/col/l3/cy;->o:Ljava/lang/String;
 
     const-string v2, "location_map_gps_3d.png"
 
-    .line 6
     iput-object v2, p0, Lcom/amap/api/col/l3/cy;->p:Ljava/lang/String;
 
     const/4 v2, 0x0
 
-    .line 7
     iput-object v2, p0, Lcom/amap/api/col/l3/cy;->q:Lcom/amap/api/maps/model/BitmapDescriptor;
 
-    .line 8
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->r:Z
 
-    .line 9
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->s:Z
 
-    .line 10
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->t:Z
 
-    .line 11
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->u:Z
 
-    .line 12
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->v:Z
 
-    .line 13
     iput-object v2, p0, Lcom/amap/api/col/l3/cy;->a:Lcom/amap/api/col/l3/cy$a;
 
-    .line 14
     new-instance v1, Lcom/amap/api/col/l3/cy$1;
 
     invoke-direct {v1, p0}, Lcom/amap/api/col/l3/cy$1;-><init>(Lcom/amap/api/col/l3/cy;)V
 
     iput-object v1, p0, Lcom/amap/api/col/l3/cy;->c:Landroid/animation/Animator$AnimatorListener;
 
-    .line 15
     new-instance v1, Lcom/amap/api/col/l3/cy$2;
 
     invoke-direct {v1, p0}, Lcom/amap/api/col/l3/cy$2;-><init>(Lcom/amap/api/col/l3/cy;)V
 
     iput-object v1, p0, Lcom/amap/api/col/l3/cy;->d:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
-    .line 16
     invoke-virtual {p2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/amap/api/col/l3/cy;->k:Landroid/content/Context;
 
-    .line 17
     iput-object p1, p0, Lcom/amap/api/col/l3/cy;->e:Lcom/amap/api/col/l3/u;
 
-    .line 18
     new-instance v1, Lcom/amap/api/col/l3/ad;
 
     invoke-direct {v1, p2, p1}, Lcom/amap/api/col/l3/ad;-><init>(Landroid/content/Context;Lcom/amap/api/col/l3/u;)V
@@ -147,7 +128,6 @@
 
     const/4 p1, 0x1
 
-    .line 19
     invoke-direct {p0, v0, p1}, Lcom/amap/api/col/l3/cy;->a(IZ)V
 
     return-void
@@ -156,24 +136,18 @@
 .method private a(IZ)V
     .locals 3
 
-    .line 14
     iput p1, p0, Lcom/amap/api/col/l3/cy;->m:I
 
     const/4 v0, 0x0
 
-    .line 15
     iput-boolean v0, p0, Lcom/amap/api/col/l3/cy;->n:Z
 
-    .line 16
     iput-boolean v0, p0, Lcom/amap/api/col/l3/cy;->s:Z
 
-    .line 17
     iput-boolean v0, p0, Lcom/amap/api/col/l3/cy;->r:Z
 
-    .line 18
     iput-boolean v0, p0, Lcom/amap/api/col/l3/cy;->u:Z
 
-    .line 19
     iput-boolean v0, p0, Lcom/amap/api/col/l3/cy;->v:Z
 
     const/4 v1, 0x1
@@ -202,51 +176,40 @@
 
     goto :goto_0
 
-    .line 20
     :cond_0
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->u:Z
 
     goto :goto_0
 
-    .line 21
     :cond_1
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->r:Z
 
-    .line 22
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->u:Z
 
     goto :goto_0
 
-    .line 23
     :cond_2
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->r:Z
 
-    .line 24
     :cond_3
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->v:Z
 
     goto :goto_0
 
-    .line 25
     :cond_4
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->r:Z
 
-    .line 26
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->t:Z
 
     goto :goto_0
 
-    .line 27
     :cond_5
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->r:Z
 
-    .line 28
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->s:Z
 
-    .line 29
     iput-boolean v1, p0, Lcom/amap/api/col/l3/cy;->t:Z
 
-    .line 30
     :goto_0
     iget-boolean p1, p0, Lcom/amap/api/col/l3/cy;->u:Z
 
@@ -258,16 +221,13 @@
 
     goto :goto_2
 
-    .line 31
     :cond_6
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->f:Lcom/amap/api/maps/model/Marker;
 
     if-eqz p1, :cond_7
 
-    .line 32
     invoke-virtual {p1, v0}, Lcom/amap/api/maps/model/Marker;->setFlat(Z)V
 
-    .line 33
     :cond_7
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->e:Lcom/amap/api/col/l3/u;
 
@@ -291,33 +251,28 @@
 
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 34
     :cond_8
     :goto_1
     invoke-direct {p0, p2}, Lcom/amap/api/col/l3/cy;->b(F)V
 
-    .line 35
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->l:Lcom/amap/api/col/l3/ad;
 
     invoke-virtual {p1}, Lcom/amap/api/col/l3/ad;->b()V
 
     goto :goto_5
 
-    .line 36
     :cond_9
     :goto_2
     iget-boolean p1, p0, Lcom/amap/api/col/l3/cy;->v:Z
 
     if-eqz p1, :cond_b
 
-    .line 37
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->l:Lcom/amap/api/col/l3/ad;
 
     invoke-virtual {p1, v1}, Lcom/amap/api/col/l3/ad;->a(Z)V
 
     if-nez p2, :cond_a
 
-    .line 38
     :try_start_1
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->e:Lcom/amap/api/col/l3/u;
 
@@ -336,36 +291,30 @@
     :catchall_1
     move-exception p1
 
-    .line 39
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_a
     :goto_3
     const/high16 p1, 0x42340000    # 45.0f
 
-    .line 40
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/cy;->b(F)V
 
     goto :goto_4
 
-    .line 41
     :cond_b
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->l:Lcom/amap/api/col/l3/ad;
 
     invoke-virtual {p1, v0}, Lcom/amap/api/col/l3/ad;->a(Z)V
 
-    .line 42
     :goto_4
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->l:Lcom/amap/api/col/l3/ad;
 
     invoke-virtual {p1}, Lcom/amap/api/col/l3/ad;->a()V
 
-    .line 43
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->f:Lcom/amap/api/maps/model/Marker;
 
     if-eqz p1, :cond_c
 
-    .line 44
     invoke-virtual {p1, v1}, Lcom/amap/api/maps/model/Marker;->setFlat(Z)V
 
     :cond_c
@@ -376,7 +325,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/cy;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/cy;->f()V
 
     return-void
@@ -385,37 +333,31 @@
 .method private a(Z)V
     .locals 1
 
-    .line 61
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->g:Lcom/amap/api/maps/model/Circle;
 
     if-eqz v0, :cond_0
 
-    .line 62
     invoke-virtual {v0}, Lcom/amap/api/maps/model/Circle;->isVisible()Z
 
     move-result v0
 
     if-eq v0, p1, :cond_0
 
-    .line 63
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->g:Lcom/amap/api/maps/model/Circle;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/maps/model/Circle;->setVisible(Z)V
 
-    .line 64
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->f:Lcom/amap/api/maps/model/Marker;
 
     if-eqz v0, :cond_1
 
-    .line 65
     invoke-virtual {v0}, Lcom/amap/api/maps/model/Marker;->isVisible()Z
 
     move-result v0
 
     if-eq v0, p1, :cond_1
 
-    .line 66
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->f:Lcom/amap/api/maps/model/Marker;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/maps/model/Marker;->setVisible(Z)V
@@ -427,7 +369,6 @@
 .method static synthetic b(Lcom/amap/api/col/l3/cy;)Lcom/amap/api/maps/model/Circle;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/cy;->g:Lcom/amap/api/maps/model/Circle;
 
     return-object p0
@@ -436,14 +377,12 @@
 .method private b(F)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->e:Lcom/amap/api/col/l3/u;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 3
     :cond_0
     :try_start_0
     invoke-static {p1}, Lcom/amap/api/col/l3/aj;->b(F)Lcom/autonavi/amap/mapcore/CameraUpdateMessage;
@@ -459,7 +398,6 @@
     :catchall_0
     move-exception p1
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -468,7 +406,6 @@
 .method static synthetic c(Lcom/amap/api/col/l3/cy;)Lcom/amap/api/maps/model/Marker;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/cy;->f:Lcom/amap/api/maps/model/Marker;
 
     return-object p0
@@ -477,14 +414,12 @@
 .method private f()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->i:Lcom/amap/api/maps/model/LatLng;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iget-boolean v0, p0, Lcom/amap/api/col/l3/cy;->r:Z
 
@@ -492,7 +427,6 @@
 
     return-void
 
-    .line 3
     :cond_1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/cy;->s:Z
 
@@ -507,16 +441,13 @@
     :cond_2
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lcom/amap/api/col/l3/cy;->n:Z
 
-    .line 5
     :try_start_0
     invoke-static {}, Lcom/autonavi/amap/mapcore/IPoint;->obtain()Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v0
 
-    .line 6
     iget-object v1, p0, Lcom/amap/api/col/l3/cy;->i:Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v1, v1, Lcom/amap/api/maps/model/LatLng;->longitude:D
@@ -527,7 +458,6 @@
 
     invoke-static {v1, v2, v3, v4, v0}, Lcom/autonavi/ae/gmap/GLMapState;->lonlat2Geo(DDLcom/autonavi/amap/mapcore/IPoint;)V
 
-    .line 7
     iget-object v1, p0, Lcom/amap/api/col/l3/cy;->e:Lcom/amap/api/col/l3/u;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/aj;->a(Landroid/graphics/Point;)Lcom/autonavi/amap/mapcore/CameraUpdateMessage;
@@ -547,10 +477,8 @@
 
     const-string v2, "moveMapToLocation"
 
-    .line 8
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -559,21 +487,18 @@
 .method private g()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->h:Lcom/amap/api/maps/model/MyLocationStyle;
 
     const-string v1, "location_map_gps_locked.png"
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/amap/api/maps/model/MyLocationStyle;
 
     invoke-direct {v0}, Lcom/amap/api/maps/model/MyLocationStyle;-><init>()V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/cy;->h:Lcom/amap/api/maps/model/MyLocationStyle;
 
-    .line 3
     invoke-static {v1}, Lcom/amap/api/maps/model/BitmapDescriptorFactory;->fromAsset(Ljava/lang/String;)Lcom/amap/api/maps/model/BitmapDescriptor;
 
     move-result-object v1
@@ -582,7 +507,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Lcom/amap/api/maps/model/MyLocationStyle;->getMyLocationIcon()Lcom/amap/api/maps/model/BitmapDescriptor;
 
@@ -602,7 +526,6 @@
 
     if-nez v0, :cond_2
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->h:Lcom/amap/api/maps/model/MyLocationStyle;
 
@@ -612,7 +535,6 @@
 
     invoke-virtual {v0, v1}, Lcom/amap/api/maps/model/MyLocationStyle;->myLocationIcon(Lcom/amap/api/maps/model/BitmapDescriptor;)Lcom/amap/api/maps/model/MyLocationStyle;
 
-    .line 6
     :cond_2
     :goto_0
     :try_start_0
@@ -949,7 +871,6 @@
 .method public final a()Lcom/amap/api/maps/model/MyLocationStyle;
     .locals 1
 
-    .line 13
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->h:Lcom/amap/api/maps/model/MyLocationStyle;
 
     return-object v0
@@ -958,12 +879,10 @@
 .method public final a(F)V
     .locals 1
 
-    .line 67
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->f:Lcom/amap/api/maps/model/Marker;
 
     if-eqz v0, :cond_0
 
-    .line 68
     invoke-virtual {v0, p1}, Lcom/amap/api/maps/model/Marker;->setRotateAngle(F)V
 
     :cond_0
@@ -977,7 +896,6 @@
 
     return-void
 
-    .line 45
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->h:Lcom/amap/api/maps/model/MyLocationStyle;
 
@@ -987,7 +905,6 @@
 
     invoke-direct {p0, v0}, Lcom/amap/api/col/l3/cy;->a(Z)V
 
-    .line 46
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->h:Lcom/amap/api/maps/model/MyLocationStyle;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/model/MyLocationStyle;->isMyLocationShowing()Z
@@ -998,7 +915,6 @@
 
     return-void
 
-    .line 47
     :cond_1
     new-instance v0, Lcom/amap/api/maps/model/LatLng;
 
@@ -1006,7 +922,6 @@
 
     move-result-wide v1
 
-    .line 48
     invoke-virtual {p1}, Landroid/location/Location;->getLongitude()D
 
     move-result-wide v3
@@ -1015,7 +930,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/cy;->i:Lcom/amap/api/maps/model/LatLng;
 
-    .line 49
     invoke-virtual {p1}, Landroid/location/Location;->getAccuracy()F
 
     move-result v0
@@ -1024,7 +938,6 @@
 
     iput-wide v0, p0, Lcom/amap/api/col/l3/cy;->j:D
 
-    .line 50
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->f:Lcom/amap/api/maps/model/Marker;
 
     if-nez v0, :cond_2
@@ -1033,16 +946,13 @@
 
     if-nez v0, :cond_2
 
-    .line 51
     invoke-direct {p0}, Lcom/amap/api/col/l3/cy;->g()V
 
-    .line 52
     :cond_2
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->g:Lcom/amap/api/maps/model/Circle;
 
     if-eqz v0, :cond_3
 
-    .line 53
     :try_start_0
     iget-wide v1, p0, Lcom/amap/api/col/l3/cy;->j:D
 
@@ -1052,7 +962,6 @@
 
     if-eqz v5, :cond_3
 
-    .line 54
     iget-wide v1, p0, Lcom/amap/api/col/l3/cy;->j:D
 
     invoke-virtual {v0, v1, v2}, Lcom/amap/api/maps/model/Circle;->setRadius(D)V
@@ -1068,13 +977,10 @@
 
     const-string v2, "setCentAndRadius"
 
-    .line 55
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 56
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 57
     :cond_3
     :goto_0
     invoke-virtual {p1}, Landroid/location/Location;->getBearing()F
@@ -1118,7 +1024,6 @@
 
     invoke-virtual {v0, p1}, Lcom/amap/api/maps/model/Marker;->setRotateAngle(F)V
 
-    .line 58
     :cond_6
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->i:Lcom/amap/api/maps/model/LatLng;
 
@@ -1134,7 +1039,6 @@
 
     if-nez p1, :cond_b
 
-    .line 59
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->i:Lcom/amap/api/maps/model/LatLng;
 
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->f:Lcom/amap/api/maps/model/Marker;
@@ -1249,7 +1153,6 @@
 
     return-void
 
-    .line 60
     :cond_b
     invoke-direct {p0}, Lcom/amap/api/col/l3/cy;->f()V
 
@@ -1259,18 +1162,15 @@
 .method public final a(Lcom/amap/api/maps/model/MyLocationStyle;)V
     .locals 2
 
-    .line 2
     :try_start_0
     iput-object p1, p0, Lcom/amap/api/col/l3/cy;->h:Lcom/amap/api/maps/model/MyLocationStyle;
 
-    .line 3
     invoke-virtual {p1}, Lcom/amap/api/maps/model/MyLocationStyle;->isMyLocationShowing()Z
 
     move-result p1
 
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/cy;->a(Z)V
 
-    .line 4
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->h:Lcom/amap/api/maps/model/MyLocationStyle;
 
     invoke-virtual {p1}, Lcom/amap/api/maps/model/MyLocationStyle;->isMyLocationShowing()Z
@@ -1281,12 +1181,10 @@
 
     if-nez p1, :cond_0
 
-    .line 5
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->l:Lcom/amap/api/col/l3/ad;
 
     invoke-virtual {p1, v0}, Lcom/amap/api/col/l3/ad;->a(Z)V
 
-    .line 6
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->h:Lcom/amap/api/maps/model/MyLocationStyle;
 
     invoke-virtual {p1}, Lcom/amap/api/maps/model/MyLocationStyle;->getMyLocationType()I
@@ -1297,11 +1195,9 @@
 
     return-void
 
-    .line 7
     :cond_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/cy;->g()V
 
-    .line 8
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->f:Lcom/amap/api/maps/model/Marker;
 
     if-nez p1, :cond_1
@@ -1312,7 +1208,6 @@
 
     return-void
 
-    .line 9
     :cond_1
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->l:Lcom/amap/api/col/l3/ad;
 
@@ -1320,7 +1215,6 @@
 
     invoke-virtual {p1, v1}, Lcom/amap/api/col/l3/ad;->a(Lcom/amap/api/maps/model/Marker;)V
 
-    .line 10
     iget-object p1, p0, Lcom/amap/api/col/l3/cy;->h:Lcom/amap/api/maps/model/MyLocationStyle;
 
     invoke-virtual {p1}, Lcom/amap/api/maps/model/MyLocationStyle;->getMyLocationType()I
@@ -1340,10 +1234,8 @@
 
     const-string v1, "setMyLocationStyle"
 
-    .line 11
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -1357,7 +1249,6 @@
         }
     .end annotation
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->g:Lcom/amap/api/maps/model/Circle;
 
     const/4 v1, 0x0
@@ -1404,16 +1295,13 @@
 
     invoke-virtual {v0, v1}, Lcom/amap/api/col/l3/ad;->a(Lcom/amap/api/maps/model/Marker;)V
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->l:Lcom/amap/api/col/l3/ad;
 
     if-eqz v0, :cond_2
 
-    .line 7
     invoke-virtual {v0}, Lcom/amap/api/col/l3/ad;->b()V
 
-    .line 8
     iput-object v1, p0, Lcom/amap/api/col/l3/cy;->l:Lcom/amap/api/col/l3/ad;
 
     :cond_2
@@ -1423,12 +1311,10 @@
 .method public final c()Ljava/lang/String;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->f:Lcom/amap/api/maps/model/Marker;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Lcom/amap/api/maps/model/Marker;->getId()Ljava/lang/String;
 
     move-result-object v0
@@ -1449,12 +1335,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/cy;->g:Lcom/amap/api/maps/model/Circle;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/amap/api/maps/model/Circle;->getId()Ljava/lang/String;
 
     move-result-object v0
@@ -1472,10 +1356,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Lcom/amap/api/col/l3/cy;->g:Lcom/amap/api/maps/model/Circle;
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/cy;->f:Lcom/amap/api/maps/model/Marker;
 
     return-void

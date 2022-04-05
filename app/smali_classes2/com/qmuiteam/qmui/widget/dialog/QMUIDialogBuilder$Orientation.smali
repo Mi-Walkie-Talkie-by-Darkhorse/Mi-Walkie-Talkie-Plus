@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder$Orientation;
 .super Ljava/lang/Object;
-.source "QMUIDialogBuilder.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

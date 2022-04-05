@@ -1,6 +1,5 @@
 .class public final Lmicrosoft/mappoint/TileSystem;
 .super Ljava/lang/Object;
-.source "TileSystem.java"
 
 
 # static fields
@@ -29,7 +28,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
 .method private static Clip(DDD)D
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(DD)D
 
     move-result-wide p0
@@ -59,7 +56,6 @@
 
     move-wide v0, p0
 
-    .line 1
     invoke-static/range {v0 .. v5}, Lmicrosoft/mappoint/TileSystem;->Clip(DDD)D
 
     move-result-wide p0
@@ -72,7 +68,6 @@
 
     div-double/2addr p0, v2
 
-    .line 2
     invoke-static {p0, p1}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide p0
@@ -87,7 +82,6 @@
 
     mul-double p0, p0, v0
 
-    .line 3
     invoke-static {p2}, Lmicrosoft/mappoint/TileSystem;->MapSize(I)I
 
     move-result p2
@@ -104,7 +98,6 @@
 
     if-nez p5, :cond_0
 
-    .line 1
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
@@ -121,7 +114,6 @@
 
     move-wide v1, p0
 
-    .line 2
     invoke-static/range {v1 .. v6}, Lmicrosoft/mappoint/TileSystem;->Clip(DDD)D
 
     move-result-wide v1
@@ -132,7 +124,6 @@
 
     move-wide/from16 v3, p2
 
-    .line 3
     invoke-static/range {v3 .. v8}, Lmicrosoft/mappoint/TileSystem;->Clip(DDD)D
 
     move-result-wide v3
@@ -151,7 +142,6 @@
 
     div-double/2addr v1, v5
 
-    .line 4
     invoke-static {v1, v2}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v1
@@ -164,7 +154,6 @@
 
     div-double/2addr v7, v5
 
-    .line 5
     invoke-static {v7, v8}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v1
@@ -177,7 +166,6 @@
 
     sub-double v1, v5, v1
 
-    .line 6
     invoke-static/range {p4 .. p4}, Lmicrosoft/mappoint/TileSystem;->MapSize(I)I
 
     move-result v7
@@ -200,7 +188,6 @@
 
     move-wide/from16 p4, v12
 
-    .line 7
     invoke-static/range {p0 .. p5}, Lmicrosoft/mappoint/TileSystem;->Clip(DDD)D
 
     move-result-wide v3
@@ -219,7 +206,6 @@
 
     move-wide/from16 p2, v3
 
-    .line 8
     invoke-static/range {p0 .. p5}, Lmicrosoft/mappoint/TileSystem;->Clip(DDD)D
 
     move-result-wide v1
@@ -234,7 +220,6 @@
 .method public static MapScale(DII)D
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lmicrosoft/mappoint/TileSystem;->GroundResolution(DI)D
 
     move-result-wide p0
@@ -253,7 +238,6 @@
 .method public static MapSize(I)I
     .locals 2
 
-    .line 1
     sget v0, Lmicrosoft/mappoint/TileSystem;->mTileSize:I
 
     invoke-static {}, Lmicrosoft/mappoint/TileSystem;->getMaximumZoomLevel()I
@@ -264,7 +248,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-static {}, Lmicrosoft/mappoint/TileSystem;->getMaximumZoomLevel()I
 
@@ -281,7 +264,6 @@
 
     if-nez p3, :cond_0
 
-    .line 1
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     const/4 v1, 0x0
@@ -293,7 +275,6 @@
     :cond_0
     move-object/from16 v0, p3
 
-    .line 2
     :goto_0
     invoke-static/range {p2 .. p2}, Lmicrosoft/mappoint/TileSystem;->MapSize(I)I
 
@@ -313,7 +294,6 @@
 
     move-wide v7, v13
 
-    .line 3
     invoke-static/range {v3 .. v8}, Lmicrosoft/mappoint/TileSystem;->Clip(DDD)D
 
     move-result-wide v3
@@ -330,7 +310,6 @@
 
     const-wide/16 v11, 0x0
 
-    .line 4
     invoke-static/range {v9 .. v14}, Lmicrosoft/mappoint/TileSystem;->Clip(DDD)D
 
     move-result-wide v7
@@ -351,7 +330,6 @@
 
     mul-double v5, v5, v7
 
-    .line 5
     invoke-static {v5, v6}, Ljava/lang/Math;->exp(D)D
 
     move-result-wide v5
@@ -370,10 +348,8 @@
 
     mul-double v3, v3, v9
 
-    .line 6
     invoke-virtual {v0, v1, v2}, Lorg/osmdroid/util/GeoPoint;->setLatitude(D)V
 
-    .line 7
     invoke-virtual {v0, v3, v4}, Lorg/osmdroid/util/GeoPoint;->setLongitude(D)V
 
     return-object v0
@@ -384,12 +360,10 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     new-instance p2, Landroid/graphics/Point;
 
     invoke-direct {p2}, Landroid/graphics/Point;-><init>()V
 
-    .line 2
     :cond_0
     sget v0, Lmicrosoft/mappoint/TileSystem;->mTileSize:I
 
@@ -397,7 +371,6 @@
 
     iput p0, p2, Landroid/graphics/Point;->x:I
 
-    .line 3
     div-int/2addr p1, v0
 
     iput p1, p2, Landroid/graphics/Point;->y:I
@@ -410,12 +383,10 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     new-instance p1, Landroid/graphics/Point;
 
     invoke-direct {p1}, Landroid/graphics/Point;-><init>()V
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -438,14 +409,12 @@
 
     sub-int v5, v0, v3
 
-    .line 3
     invoke-virtual {p0, v5}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
 
     packed-switch v5, :pswitch_data_0
 
-    .line 4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     const-string p1, "Invalid QuadKey digit sequence."
@@ -471,7 +440,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-virtual {p1, v1, v2}, Landroid/graphics/Point;->set(II)V
 
@@ -493,12 +461,10 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     new-instance p2, Landroid/graphics/Point;
 
     invoke-direct {p2}, Landroid/graphics/Point;-><init>()V
 
-    .line 2
     :cond_0
     sget v0, Lmicrosoft/mappoint/TileSystem;->mTileSize:I
 
@@ -508,7 +474,6 @@
 
     mul-int p1, p1, v0
 
-    .line 3
     iput p1, p2, Landroid/graphics/Point;->y:I
 
     return-object p2
@@ -517,7 +482,6 @@
 .method public static TileXYToQuadKey(III)Ljava/lang/String;
     .locals 5
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -554,7 +518,6 @@
 
     int-to-char v1, v1
 
-    .line 2
     :cond_1
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
@@ -562,7 +525,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_2
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -574,7 +536,6 @@
 .method public static getMaximumZoomLevel()I
     .locals 1
 
-    .line 1
     sget v0, Lmicrosoft/mappoint/TileSystem;->mMaxZoomLevel:I
 
     return v0
@@ -583,7 +544,6 @@
 .method public static getTileSize()I
     .locals 1
 
-    .line 1
     sget v0, Lmicrosoft/mappoint/TileSystem;->mTileSize:I
 
     return v0
@@ -594,7 +554,6 @@
 
     int-to-double v0, p0
 
-    .line 1
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -613,10 +572,8 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 2
     sput v0, Lmicrosoft/mappoint/TileSystem;->mMaxZoomLevel:I
 
-    .line 3
     sput p0, Lmicrosoft/mappoint/TileSystem;->mTileSize:I
 
     return-void

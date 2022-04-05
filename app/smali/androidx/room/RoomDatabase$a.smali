@@ -1,6 +1,5 @@
 .class public Landroidx/room/RoomDatabase$a;
 .super Ljava/lang/Object;
-.source "RoomDatabase.java"
 
 
 # annotations
@@ -116,29 +115,22 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/room/RoomDatabase$a;->c:Landroid/content/Context;
 
-    .line 3
     iput-object p2, p0, Landroidx/room/RoomDatabase$a;->a:Ljava/lang/Class;
 
-    .line 4
     iput-object p3, p0, Landroidx/room/RoomDatabase$a;->b:Ljava/lang/String;
 
-    .line 5
     sget-object p1, Landroidx/room/RoomDatabase$JournalMode;->a:Landroidx/room/RoomDatabase$JournalMode;
 
     iput-object p1, p0, Landroidx/room/RoomDatabase$a;->i:Landroidx/room/RoomDatabase$JournalMode;
 
     const/4 p1, 0x1
 
-    .line 6
     iput-boolean p1, p0, Landroidx/room/RoomDatabase$a;->k:Z
 
-    .line 7
     new-instance p1, Landroidx/room/RoomDatabase$c;
 
     invoke-direct {p1}, Landroidx/room/RoomDatabase$c;-><init>()V
@@ -165,7 +157,6 @@
 
     const/4 v0, 0x1
 
-    .line 7
     iput-boolean v0, p0, Landroidx/room/RoomDatabase$a;->h:Z
 
     return-object p0
@@ -190,19 +181,16 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/room/RoomDatabase$a;->o:Ljava/util/Set;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
     iput-object v0, p0, Landroidx/room/RoomDatabase$a;->o:Ljava/util/Set;
 
-    .line 3
     :cond_0
     array-length v0, p1
 
@@ -213,7 +201,6 @@
 
     aget-object v2, p1, v1
 
-    .line 4
     iget-object v3, p0, Landroidx/room/RoomDatabase$a;->o:Ljava/util/Set;
 
     iget v4, v2, Landroidx/room/q/a;->a:I
@@ -224,7 +211,6 @@
 
     invoke-interface {v3, v4}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 5
     iget-object v3, p0, Landroidx/room/RoomDatabase$a;->o:Ljava/util/Set;
 
     iget v2, v2, Landroidx/room/q/a;->b:I
@@ -239,7 +225,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-object v0, p0, Landroidx/room/RoomDatabase$a;->m:Landroidx/room/RoomDatabase$c;
 
@@ -267,17 +252,14 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     iget-object v1, v0, Landroidx/room/RoomDatabase$a;->c:Landroid/content/Context;
 
     if-eqz v1, :cond_c
 
-    .line 2
     iget-object v1, v0, Landroidx/room/RoomDatabase$a;->a:Ljava/lang/Class;
 
     if-eqz v1, :cond_b
 
-    .line 3
     iget-object v1, v0, Landroidx/room/RoomDatabase$a;->e:Ljava/util/concurrent/Executor;
 
     if-nez v1, :cond_0
@@ -286,7 +268,6 @@
 
     if-nez v1, :cond_0
 
-    .line 4
     invoke-static {}, La/a/a/a/a;->b()Ljava/util/concurrent/Executor;
 
     move-result-object v1
@@ -297,7 +278,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v1, v0, Landroidx/room/RoomDatabase$a;->e:Ljava/util/concurrent/Executor;
 
@@ -307,12 +287,10 @@
 
     if-nez v2, :cond_1
 
-    .line 6
     iput-object v1, v0, Landroidx/room/RoomDatabase$a;->f:Ljava/util/concurrent/Executor;
 
     goto :goto_0
 
-    .line 7
     :cond_1
     iget-object v1, v0, Landroidx/room/RoomDatabase$a;->e:Ljava/util/concurrent/Executor;
 
@@ -322,10 +300,8 @@
 
     if-eqz v1, :cond_2
 
-    .line 8
     iput-object v1, v0, Landroidx/room/RoomDatabase$a;->e:Ljava/util/concurrent/Executor;
 
-    .line 9
     :cond_2
     :goto_0
     iget-object v1, v0, Landroidx/room/RoomDatabase$a;->o:Ljava/util/Set;
@@ -336,7 +312,6 @@
 
     if-eqz v2, :cond_4
 
-    .line 10
     invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -354,7 +329,6 @@
 
     check-cast v2, Ljava/lang/Integer;
 
-    .line 11
     iget-object v3, v0, Landroidx/room/RoomDatabase$a;->n:Ljava/util/Set;
 
     invoke-interface {v3, v2}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
@@ -365,7 +339,6 @@
 
     goto :goto_1
 
-    .line 12
     :cond_3
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -387,20 +360,17 @@
 
     throw v1
 
-    .line 13
     :cond_4
     iget-object v1, v0, Landroidx/room/RoomDatabase$a;->g:La/g/a/c$c;
 
     if-nez v1, :cond_5
 
-    .line 14
     new-instance v1, La/g/a/g/c;
 
     invoke-direct {v1}, La/g/a/g/c;-><init>()V
 
     iput-object v1, v0, Landroidx/room/RoomDatabase$a;->g:La/g/a/c$c;
 
-    .line 15
     :cond_5
     iget-object v1, v0, Landroidx/room/RoomDatabase$a;->p:Ljava/lang/String;
 
@@ -410,13 +380,11 @@
 
     if-eqz v1, :cond_9
 
-    .line 16
     :cond_6
     iget-object v1, v0, Landroidx/room/RoomDatabase$a;->b:Ljava/lang/String;
 
     if-eqz v1, :cond_a
 
-    .line 17
     iget-object v1, v0, Landroidx/room/RoomDatabase$a;->p:Ljava/lang/String;
 
     if-eqz v1, :cond_8
@@ -427,7 +395,6 @@
 
     goto :goto_2
 
-    .line 18
     :cond_7
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -437,7 +404,6 @@
 
     throw v1
 
-    .line 19
     :cond_8
     :goto_2
     new-instance v1, Landroidx/room/n;
@@ -452,7 +418,6 @@
 
     iput-object v1, v0, Landroidx/room/RoomDatabase$a;->g:La/g/a/c$c;
 
-    .line 20
     :cond_9
     new-instance v1, Landroidx/room/a;
 
@@ -470,7 +435,6 @@
 
     iget-object v2, v0, Landroidx/room/RoomDatabase$a;->i:Landroidx/room/RoomDatabase$JournalMode;
 
-    .line 21
     invoke-virtual {v2, v6}, Landroidx/room/RoomDatabase$JournalMode;->a(Landroid/content/Context;)Landroidx/room/RoomDatabase$JournalMode;
 
     move-result-object v12
@@ -505,7 +469,6 @@
 
     invoke-direct/range {v5 .. v20}, Landroidx/room/a;-><init>(Landroid/content/Context;Ljava/lang/String;La/g/a/c$c;Landroidx/room/RoomDatabase$c;Ljava/util/List;ZLandroidx/room/RoomDatabase$JournalMode;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;ZZZLjava/util/Set;Ljava/lang/String;Ljava/io/File;)V
 
-    .line 22
     iget-object v2, v0, Landroidx/room/RoomDatabase$a;->a:Ljava/lang/Class;
 
     const-string v3, "_Impl"
@@ -516,12 +479,10 @@
 
     check-cast v2, Landroidx/room/RoomDatabase;
 
-    .line 23
     invoke-virtual {v2, v1}, Landroidx/room/RoomDatabase;->b(Landroidx/room/a;)V
 
     return-object v2
 
-    .line 24
     :cond_a
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -531,7 +492,6 @@
 
     throw v1
 
-    .line 25
     :cond_b
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -541,7 +501,6 @@
 
     throw v1
 
-    .line 26
     :cond_c
     new-instance v1, Ljava/lang/IllegalArgumentException;
 

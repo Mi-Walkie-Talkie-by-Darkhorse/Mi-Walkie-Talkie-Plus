@@ -1,6 +1,5 @@
 .class interface abstract Lcom/bumptech/glide/load/i/j$b;
 .super Ljava/lang/Object;
-.source "HttpUrlFetcher.java"
 
 
 # annotations

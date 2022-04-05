@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/SplashActivity$c;
 .super Ljava/lang/Object;
-.source "SplashActivity.java"
 
 # interfaces
 .implements Lio/reactivex/Observer;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/SplashActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +49,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p1, Lcom/ifengyu/intercom/bean/AdModel;->type:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -66,12 +63,10 @@
 
     const-string v0, "the image type is null"
 
-    .line 2
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     goto/16 :goto_1
 
-    .line 3
     :cond_0
     iget-object v0, p1, Lcom/ifengyu/intercom/bean/AdModel;->type:Ljava/lang/String;
 
@@ -85,10 +80,8 @@
 
     const-string v0, "the image type is gif"
 
-    .line 4
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     :try_start_0
     new-instance v0, Lpl/droidsonroids/gif/c;
 
@@ -98,7 +91,6 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 6
     :try_start_1
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
@@ -110,7 +102,6 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 7
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/SplashActivity;->e(Lcom/ifengyu/intercom/ui/SplashActivity;)Lpl/droidsonroids/gif/GifImageView;
@@ -119,7 +110,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 8
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/SplashActivity;->f(Lcom/ifengyu/intercom/ui/SplashActivity;)Landroid/widget/TextView;
@@ -128,7 +118,6 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 9
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/SplashActivity;->f(Lcom/ifengyu/intercom/ui/SplashActivity;)Landroid/widget/TextView;
@@ -175,18 +164,15 @@
     :catch_1
     move-exception v1
 
-    .line 10
     :goto_0
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/ui/SplashActivity;->a(Lcom/ifengyu/intercom/ui/SplashActivity;Lcom/ifengyu/intercom/bean/AdModel;)V
 
     goto :goto_1
 
-    .line 12
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -206,30 +192,25 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/ui/SplashActivity;->a(Lcom/ifengyu/intercom/ui/SplashActivity;Lcom/ifengyu/intercom/bean/AdModel;)V
 
-    .line 14
     :goto_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v0, p1, v2}, Lcom/ifengyu/intercom/ui/SplashActivity;->a(Lcom/ifengyu/intercom/ui/SplashActivity;Lcom/ifengyu/intercom/bean/AdModel;Lpl/droidsonroids/gif/c;)V
 
-    .line 15
     iget p1, p1, Lcom/ifengyu/intercom/bean/AdModel;->showInterval:I
 
     if-lez p1, :cond_2
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v0, p1, v2}, Lcom/ifengyu/intercom/ui/SplashActivity;->a(Lcom/ifengyu/intercom/ui/SplashActivity;ILpl/droidsonroids/gif/c;)V
 
     goto :goto_2
 
-    .line 17
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
@@ -244,7 +225,6 @@
 .method public onComplete()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/SplashActivity;->h(Lcom/ifengyu/intercom/ui/SplashActivity;)V
@@ -269,7 +249,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/bean/AdModel;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a(Lcom/ifengyu/intercom/bean/AdModel;)V
@@ -284,7 +263,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/SplashActivity$c;->a:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/ui/SplashActivity;->a(Lcom/ifengyu/intercom/ui/SplashActivity;Lio/reactivex/disposables/Disposable;)Lio/reactivex/disposables/Disposable;

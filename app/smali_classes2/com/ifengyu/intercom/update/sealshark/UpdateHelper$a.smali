@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$a;
 .super Landroid/content/BroadcastReceiver;
-.source "UpdateHelper.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$a;->a:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -35,7 +33,6 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
@@ -48,7 +45,6 @@
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/o;->a(Z)V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$a;->a:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)V

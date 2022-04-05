@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/JsAccessEntrace;
 .super Ljava/lang/Object;
-.source "JsAccessEntrace.java"
 
 # interfaces
 .implements Lcom/just/agentweb/QuickCallJs;

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/dv;
 .super Ljava/lang/Object;
-.source "EarClippingTriangulator.java"
 
 
 # instance fields
@@ -21,24 +20,20 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/ek;
 
     invoke-direct {v0}, Lcom/amap/api/col/l3/ek;-><init>()V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/dv;->a:Lcom/amap/api/col/l3/ek;
 
-    .line 3
     new-instance v0, Lcom/amap/api/col/l3/ea;
 
     invoke-direct {v0}, Lcom/amap/api/col/l3/ea;-><init>()V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/dv;->e:Lcom/amap/api/col/l3/ea;
 
-    .line 4
     new-instance v0, Lcom/amap/api/col/l3/ek;
 
     invoke-direct {v0}, Lcom/amap/api/col/l3/ek;-><init>()V
@@ -67,7 +62,6 @@
 
     add-double/2addr p0, p8
 
-    .line 8
     invoke-static {p0, p1}, Ljava/lang/Math;->signum(D)D
 
     move-result-wide p0
@@ -82,10 +76,8 @@
 
     move-object/from16 v0, p0
 
-    .line 2
     iget-object v1, v0, Lcom/amap/api/col/l3/dv;->b:[S
 
-    .line 3
     invoke-direct/range {p0 .. p1}, Lcom/amap/api/col/l3/dv;->b(I)I
 
     move-result v2
@@ -94,12 +86,10 @@
 
     mul-int/lit8 v2, v2, 0x2
 
-    .line 4
     aget-short v3, v1, p1
 
     mul-int/lit8 v3, v3, 0x2
 
-    .line 5
     invoke-direct/range {p0 .. p1}, Lcom/amap/api/col/l3/dv;->c(I)I
 
     move-result v4
@@ -108,10 +98,8 @@
 
     mul-int/lit8 v1, v1, 0x2
 
-    .line 6
     iget-object v4, v0, Lcom/amap/api/col/l3/dv;->c:[D
 
-    .line 7
     aget-wide v5, v4, v2
 
     add-int/lit8 v2, v2, 0x1
@@ -142,7 +130,6 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     iget p1, p0, Lcom/amap/api/col/l3/dv;->d:I
 
     :cond_0
@@ -156,7 +143,6 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/dv;->d:I
 
     rem-int/2addr p1, v0
@@ -173,7 +159,6 @@
 
     move-object/from16 v1, p1
 
-    .line 1
     array-length v2, v1
 
     iput-object v1, v0, Lcom/amap/api/col/l3/dv;->c:[D

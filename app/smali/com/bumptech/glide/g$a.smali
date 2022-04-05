@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/g$a;
 .super Ljava/lang/Object;
-.source "RequestManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/bumptech/glide/g;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/bumptech/glide/g$a;->a:Lcom/bumptech/glide/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/g$a;->a:Lcom/bumptech/glide/g;
 
     iget-object v1, v0, Lcom/bumptech/glide/g;->c:Lcom/bumptech/glide/manager/h;

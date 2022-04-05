@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/library/widget/view/SwitchButton$d;
 .super Ljava/lang/Object;
-.source "SwitchButton.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/k/f/b;
 .super Ljava/lang/Object;
-.source "GifBitmapProvider.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/gifdecoder/GifDecoder$a;
@@ -23,13 +22,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/k/f/b;->a:Lcom/bumptech/glide/load/engine/x/e;
 
-    .line 3
     iput-object p2, p0, Lcom/bumptech/glide/load/k/f/b;->b:Lcom/bumptech/glide/load/engine/x/b;
 
     return-void
@@ -46,7 +42,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/k/f/b;->a:Lcom/bumptech/glide/load/engine/x/e;
 
     invoke-interface {v0, p1, p2, p3}, Lcom/bumptech/glide/load/engine/x/e;->b(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
@@ -63,7 +58,6 @@
         .end annotation
     .end param
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/k/f/b;->a:Lcom/bumptech/glide/load/engine/x/e;
 
     invoke-interface {v0, p1}, Lcom/bumptech/glide/load/engine/x/e;->a(Landroid/graphics/Bitmap;)V
@@ -78,14 +72,12 @@
         .end annotation
     .end param
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/load/k/f/b;->b:Lcom/bumptech/glide/load/engine/x/b;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 4
     :cond_0
     invoke-interface {v0, p1}, Lcom/bumptech/glide/load/engine/x/b;->put(Ljava/lang/Object;)V
 
@@ -99,14 +91,12 @@
         .end annotation
     .end param
 
-    .line 8
     iget-object v0, p0, Lcom/bumptech/glide/load/k/f/b;->b:Lcom/bumptech/glide/load/engine/x/b;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 9
     :cond_0
     invoke-interface {v0, p1}, Lcom/bumptech/glide/load/engine/x/b;->put(Ljava/lang/Object;)V
 
@@ -118,17 +108,14 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 5
     iget-object v0, p0, Lcom/bumptech/glide/load/k/f/b;->b:Lcom/bumptech/glide/load/engine/x/b;
 
     if-nez v0, :cond_0
 
-    .line 6
     new-array p1, p1, [I
 
     return-object p1
 
-    .line 7
     :cond_0
     const-class v1, [I
 
@@ -146,17 +133,14 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/k/f/b;->b:Lcom/bumptech/glide/load/engine/x/b;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-array p1, p1, [B
 
     return-object p1
 
-    .line 3
     :cond_0
     const-class v1, [B
 

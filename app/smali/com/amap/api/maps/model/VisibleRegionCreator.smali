@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/VisibleRegionCreator;
 .super Ljava/lang/Object;
-.source "VisibleRegionCreator.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -25,7 +24,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,34 +32,28 @@
 .method static a(Lcom/amap/api/maps/model/VisibleRegion;Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/amap/api/maps/model/VisibleRegion;->a()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/maps/model/VisibleRegion;->nearLeft:Lcom/amap/api/maps/model/LatLng;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/maps/model/VisibleRegion;->nearRight:Lcom/amap/api/maps/model/LatLng;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/maps/model/VisibleRegion;->farLeft:Lcom/amap/api/maps/model/LatLng;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/maps/model/VisibleRegion;->farRight:Lcom/amap/api/maps/model/LatLng;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 6
     iget-object p0, p0, Lcom/amap/api/maps/model/VisibleRegion;->latLngBounds:Lcom/amap/api/maps/model/LatLngBounds;
 
     invoke-virtual {p1, p0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
@@ -74,14 +66,12 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/amap/api/maps/model/VisibleRegion;
     .locals 7
 
-    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
     const/4 v0, 0x0
 
-    .line 3
     :try_start_0
     const-class v2, Lcom/amap/api/maps/model/LatLng;
 
@@ -97,7 +87,6 @@
     :try_end_0
     .catch Landroid/os/BadParcelableException; {:try_start_0 .. :try_end_0} :catch_4
 
-    .line 4
     :try_start_1
     const-class v3, Lcom/amap/api/maps/model/LatLng;
 
@@ -113,7 +102,6 @@
     :try_end_1
     .catch Landroid/os/BadParcelableException; {:try_start_1 .. :try_end_1} :catch_3
 
-    .line 5
     :try_start_2
     const-class v4, Lcom/amap/api/maps/model/LatLng;
 
@@ -129,7 +117,6 @@
     :try_end_2
     .catch Landroid/os/BadParcelableException; {:try_start_2 .. :try_end_2} :catch_2
 
-    .line 6
     :try_start_3
     const-class v5, Lcom/amap/api/maps/model/LatLng;
 
@@ -145,16 +132,13 @@
     :try_end_3
     .catch Landroid/os/BadParcelableException; {:try_start_3 .. :try_end_3} :catch_1
 
-    .line 7
     :try_start_4
     const-class v6, Lcom/amap/api/maps/model/LatLngBounds;
 
-    .line 8
     invoke-virtual {v6}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v6
 
-    .line 9
     invoke-virtual {p1, v6}, Landroid/os/Parcel;->readParcelable(Ljava/lang/ClassLoader;)Landroid/os/Parcelable;
 
     move-result-object p1
@@ -206,13 +190,11 @@
     :goto_1
     move-object v5, v4
 
-    .line 10
     :goto_2
     invoke-virtual {p1}, Landroid/os/BadParcelableException;->printStackTrace()V
 
     move-object v6, v0
 
-    .line 11
     :goto_3
     new-instance p1, Lcom/amap/api/maps/model/VisibleRegion;
 
@@ -226,7 +208,6 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/amap/api/maps/model/VisibleRegionCreator;->createFromParcel(Landroid/os/Parcel;)Lcom/amap/api/maps/model/VisibleRegion;
 
     move-result-object p1
@@ -237,7 +218,6 @@
 .method public newArray(I)[Lcom/amap/api/maps/model/VisibleRegion;
     .locals 0
 
-    .line 2
     new-array p1, p1, [Lcom/amap/api/maps/model/VisibleRegion;
 
     return-object p1
@@ -246,7 +226,6 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/amap/api/maps/model/VisibleRegionCreator;->newArray(I)[Lcom/amap/api/maps/model/VisibleRegion;
 
     move-result-object p1

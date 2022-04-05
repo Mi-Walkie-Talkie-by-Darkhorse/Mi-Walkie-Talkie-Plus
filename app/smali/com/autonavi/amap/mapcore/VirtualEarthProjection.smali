@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/amap/mapcore/VirtualEarthProjection;
 .super Ljava/lang/Object;
-.source "VirtualEarthProjection.java"
 
 
 # static fields
@@ -27,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
 .method public static Clip(DDD)D
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->max(DD)D
 
     move-result-wide p0
@@ -51,7 +48,6 @@
 .method public static LatLongToPixels(DDI)Landroid/graphics/Point;
     .locals 21
 
-    .line 2
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
@@ -62,7 +58,6 @@
 
     move-wide/from16 v1, p0
 
-    .line 3
     invoke-static/range {v1 .. v6}, Lcom/autonavi/amap/mapcore/VirtualEarthProjection;->Clip(DDD)D
 
     move-result-wide v1
@@ -81,7 +76,6 @@
 
     move-wide/from16 v7, p2
 
-    .line 4
     invoke-static/range {v7 .. v12}, Lcom/autonavi/amap/mapcore/VirtualEarthProjection;->Clip(DDD)D
 
     move-result-wide v7
@@ -90,7 +84,6 @@
 
     div-double/2addr v7, v5
 
-    .line 5
     invoke-static {v1, v2}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v1
@@ -107,7 +100,6 @@
 
     div-double/2addr v5, v3
 
-    .line 6
     invoke-static {v5, v6}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v1
@@ -146,7 +138,6 @@
 
     move-wide/from16 v17, v3
 
-    .line 7
     invoke-static/range {v13 .. v18}, Lcom/autonavi/amap/mapcore/VirtualEarthProjection;->Clip(DDD)D
 
     move-result-wide v7
@@ -169,7 +160,6 @@
 
     move-wide/from16 v19, v3
 
-    .line 8
     invoke-static/range {v15 .. v20}, Lcom/autonavi/amap/mapcore/VirtualEarthProjection;->Clip(DDD)D
 
     move-result-wide v1
@@ -194,7 +184,6 @@
 
     div-double/2addr p0, v2
 
-    .line 1
     invoke-static {v0, v1, p0, p1, p2}, Lcom/autonavi/amap/mapcore/VirtualEarthProjection;->LatLongToPixels(DDI)Landroid/graphics/Point;
 
     move-result-object p0
@@ -205,7 +194,6 @@
 .method public static PixelsToLatLong(JJI)Lcom/autonavi/amap/mapcore/DPoint;
     .locals 5
 
-    .line 1
     invoke-static {}, Lcom/autonavi/amap/mapcore/DPoint;->obtain()Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object v0
@@ -242,7 +230,6 @@
 
     div-double/2addr p2, v1
 
-    .line 2
     invoke-static {p2, p3}, Ljava/lang/Math;->exp(D)D
 
     move-result-wide p2
@@ -265,17 +252,14 @@
 
     mul-double v3, v3, p2
 
-    .line 3
     iput-wide v3, v0, Lcom/autonavi/amap/mapcore/DPoint;->y:D
 
     div-double/2addr p0, v1
 
-    .line 4
     iput-wide p0, v0, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
     mul-double p0, p0, p2
 
-    .line 5
     iput-wide p0, v0, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
     return-object v0

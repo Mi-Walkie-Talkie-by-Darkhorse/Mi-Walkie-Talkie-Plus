@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kz;
 .super Ljava/lang/Object;
-.source "Cgi.java"
 
 
 # static fields

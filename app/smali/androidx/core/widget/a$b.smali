@@ -1,6 +1,5 @@
 .class Landroidx/core/widget/a$b;
 .super Ljava/lang/Object;
-.source "AutoScrollHelper.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/core/widget/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/core/widget/a$b;->a:Landroidx/core/widget/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Landroidx/core/widget/a$b;->a:Landroidx/core/widget/a;
 
     iget-boolean v1, v0, Landroidx/core/widget/a;->o:Z
@@ -47,7 +44,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-boolean v1, v0, Landroidx/core/widget/a;->m:Z
 
@@ -55,21 +51,17 @@
 
     if-eqz v1, :cond_1
 
-    .line 3
     iput-boolean v2, v0, Landroidx/core/widget/a;->m:Z
 
-    .line 4
     iget-object v0, v0, Landroidx/core/widget/a;->a:Landroidx/core/widget/a$a;
 
     invoke-virtual {v0}, Landroidx/core/widget/a$a;->h()V
 
-    .line 5
     :cond_1
     iget-object v0, p0, Landroidx/core/widget/a$b;->a:Landroidx/core/widget/a;
 
     iget-object v0, v0, Landroidx/core/widget/a;->a:Landroidx/core/widget/a$a;
 
-    .line 6
     invoke-virtual {v0}, Landroidx/core/widget/a$a;->f()Z
 
     move-result v1
@@ -86,7 +78,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     iget-object v1, p0, Landroidx/core/widget/a$b;->a:Landroidx/core/widget/a;
 
@@ -94,32 +85,25 @@
 
     if-eqz v3, :cond_3
 
-    .line 8
     iput-boolean v2, v1, Landroidx/core/widget/a;->n:Z
 
-    .line 9
     invoke-virtual {v1}, Landroidx/core/widget/a;->a()V
 
-    .line 10
     :cond_3
     invoke-virtual {v0}, Landroidx/core/widget/a$a;->a()V
 
-    .line 11
     invoke-virtual {v0}, Landroidx/core/widget/a$a;->b()I
 
     move-result v1
 
-    .line 12
     invoke-virtual {v0}, Landroidx/core/widget/a$a;->c()I
 
     move-result v0
 
-    .line 13
     iget-object v2, p0, Landroidx/core/widget/a$b;->a:Landroidx/core/widget/a;
 
     invoke-virtual {v2, v1, v0}, Landroidx/core/widget/a;->a(II)V
 
-    .line 14
     iget-object v0, p0, Landroidx/core/widget/a$b;->a:Landroidx/core/widget/a;
 
     iget-object v0, v0, Landroidx/core/widget/a;->c:Landroid/view/View;
@@ -128,7 +112,6 @@
 
     return-void
 
-    .line 15
     :cond_4
     :goto_0
     iget-object v0, p0, Landroidx/core/widget/a$b;->a:Landroidx/core/widget/a;

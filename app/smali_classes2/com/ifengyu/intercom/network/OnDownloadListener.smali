@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/network/OnDownloadListener;
 .super Ljava/lang/Object;
-.source "OnDownloadListener.java"
 
 
 # virtual methods

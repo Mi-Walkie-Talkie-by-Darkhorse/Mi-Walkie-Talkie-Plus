@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/Registry;
 .super Ljava/lang/Object;
-.source "Registry.java"
 
 
 # annotations
@@ -50,73 +49,62 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/bumptech/glide/k/d;
 
     invoke-direct {v0}, Lcom/bumptech/glide/k/d;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/Registry;->h:Lcom/bumptech/glide/k/d;
 
-    .line 3
     new-instance v0, Lcom/bumptech/glide/k/c;
 
     invoke-direct {v0}, Lcom/bumptech/glide/k/c;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/Registry;->i:Lcom/bumptech/glide/k/c;
 
-    .line 4
     invoke-static {}, Lcom/bumptech/glide/util/k/a;->b()Landroidx/core/d/e;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/bumptech/glide/Registry;->j:Landroidx/core/d/e;
 
-    .line 5
     new-instance v1, Lcom/bumptech/glide/load/j/p;
 
     invoke-direct {v1, v0}, Lcom/bumptech/glide/load/j/p;-><init>(Landroidx/core/d/e;)V
 
     iput-object v1, p0, Lcom/bumptech/glide/Registry;->a:Lcom/bumptech/glide/load/j/p;
 
-    .line 6
     new-instance v0, Lcom/bumptech/glide/k/a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/k/a;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/Registry;->b:Lcom/bumptech/glide/k/a;
 
-    .line 7
     new-instance v0, Lcom/bumptech/glide/k/e;
 
     invoke-direct {v0}, Lcom/bumptech/glide/k/e;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/Registry;->c:Lcom/bumptech/glide/k/e;
 
-    .line 8
     new-instance v0, Lcom/bumptech/glide/k/f;
 
     invoke-direct {v0}, Lcom/bumptech/glide/k/f;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/Registry;->d:Lcom/bumptech/glide/k/f;
 
-    .line 9
     new-instance v0, Lcom/bumptech/glide/load/i/f;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/i/f;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/Registry;->e:Lcom/bumptech/glide/load/i/f;
 
-    .line 10
     new-instance v0, Lcom/bumptech/glide/load/k/g/f;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/k/g/f;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/Registry;->f:Lcom/bumptech/glide/load/k/g/f;
 
-    .line 11
     new-instance v0, Lcom/bumptech/glide/k/b;
 
     invoke-direct {v0}, Lcom/bumptech/glide/k/b;-><init>()V
@@ -129,17 +117,14 @@
 
     const-string v2, "BitmapDrawable"
 
-    .line 12
     filled-new-array {v0, v1, v2}, [Ljava/lang/String;
 
     move-result-object v0
 
-    .line 13
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 14
     invoke-virtual {p0, v0}, Lcom/bumptech/glide/Registry;->a(Ljava/util/List;)Lcom/bumptech/glide/Registry;
 
     return-void
@@ -183,20 +168,16 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/bumptech/glide/Registry;->c:Lcom/bumptech/glide/k/e;
 
-    .line 3
     invoke-virtual {v1, p1, p2}, Lcom/bumptech/glide/k/e;->b(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;
 
     move-result-object p2
 
-    .line 4
     invoke-interface {p2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p2
@@ -214,15 +195,12 @@
 
     check-cast v1, Ljava/lang/Class;
 
-    .line 5
     iget-object v2, p0, Lcom/bumptech/glide/Registry;->f:Lcom/bumptech/glide/load/k/g/f;
 
-    .line 6
     invoke-virtual {v2, v1, p3}, Lcom/bumptech/glide/load/k/g/f;->b(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;
 
     move-result-object v2
 
-    .line 7
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v9
@@ -242,23 +220,18 @@
 
     check-cast v5, Ljava/lang/Class;
 
-    .line 8
     iget-object v2, p0, Lcom/bumptech/glide/Registry;->c:Lcom/bumptech/glide/k/e;
 
-    .line 9
     invoke-virtual {v2, p1, v1}, Lcom/bumptech/glide/k/e;->a(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;
 
     move-result-object v6
 
-    .line 10
     iget-object v2, p0, Lcom/bumptech/glide/Registry;->f:Lcom/bumptech/glide/load/k/g/f;
 
-    .line 11
     invoke-virtual {v2, v1, v5}, Lcom/bumptech/glide/load/k/g/f;->a(Ljava/lang/Class;Ljava/lang/Class;)Lcom/bumptech/glide/load/k/g/e;
 
     move-result-object v7
 
-    .line 12
     new-instance v10, Lcom/bumptech/glide/load/engine/g;
 
     iget-object v8, p0, Lcom/bumptech/glide/Registry;->j:Landroidx/core/d/e;
@@ -271,7 +244,6 @@
 
     invoke-direct/range {v2 .. v8}, Lcom/bumptech/glide/load/engine/g;-><init>(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;Ljava/util/List;Lcom/bumptech/glide/load/k/g/e;Landroidx/core/d/e;)V
 
-    .line 13
     invoke-interface {v0, v10}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -291,7 +263,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 11
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->g:Lcom/bumptech/glide/k/b;
 
     invoke-virtual {v0, p1}, Lcom/bumptech/glide/k/b;->a(Lcom/bumptech/glide/load/ImageHeaderParser;)V
@@ -317,7 +288,6 @@
         }
     .end annotation
 
-    .line 9
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->e:Lcom/bumptech/glide/load/i/f;
 
     invoke-virtual {v0, p1}, Lcom/bumptech/glide/load/i/f;->a(Lcom/bumptech/glide/load/i/e$a;)V
@@ -351,7 +321,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->b:Lcom/bumptech/glide/k/a;
 
     invoke-virtual {v0, p1, p2}, Lcom/bumptech/glide/k/a;->a(Ljava/lang/Class;Lcom/bumptech/glide/load/a;)V
@@ -385,7 +354,6 @@
         }
     .end annotation
 
-    .line 8
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->d:Lcom/bumptech/glide/k/f;
 
     invoke-virtual {v0, p1, p2}, Lcom/bumptech/glide/k/f;->a(Ljava/lang/Class;Lcom/bumptech/glide/load/g;)V
@@ -429,7 +397,6 @@
 
     const-string v0, "legacy_append"
 
-    .line 2
     invoke-virtual {p0, v0, p1, p2, p3}, Lcom/bumptech/glide/Registry;->a(Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/load/f;)Lcom/bumptech/glide/Registry;
 
     return-object p0
@@ -469,7 +436,6 @@
         }
     .end annotation
 
-    .line 12
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->a:Lcom/bumptech/glide/load/j/p;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/bumptech/glide/load/j/p;->a(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/load/j/o;)V
@@ -511,7 +477,6 @@
         }
     .end annotation
 
-    .line 10
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->f:Lcom/bumptech/glide/load/k/g/f;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/bumptech/glide/load/k/g/f;->a(Ljava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/load/k/g/e;)V
@@ -558,7 +523,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->c:Lcom/bumptech/glide/k/e;
 
     invoke-virtual {v0, p1, p4, p2, p3}, Lcom/bumptech/glide/k/e;->a(Ljava/lang/String;Lcom/bumptech/glide/load/f;Ljava/lang/Class;Ljava/lang/Class;)V
@@ -585,7 +549,6 @@
         }
     .end annotation
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
@@ -594,15 +557,12 @@
 
     const-string v1, "legacy_prepend_all"
 
-    .line 5
     invoke-interface {v0, p1, v1}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
     const-string p1, "legacy_append"
 
-    .line 6
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 7
     iget-object p1, p0, Lcom/bumptech/glide/Registry;->c:Lcom/bumptech/glide/k/e;
 
     invoke-virtual {p1, v0}, Lcom/bumptech/glide/k/e;->a(Ljava/util/List;)V
@@ -647,15 +607,12 @@
         }
     .end annotation
 
-    .line 13
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->i:Lcom/bumptech/glide/k/c;
 
-    .line 14
     invoke-virtual {v0, p1, p2, p3}, Lcom/bumptech/glide/k/c;->a(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)Lcom/bumptech/glide/load/engine/q;
 
     move-result-object v0
 
-    .line 15
     iget-object v1, p0, Lcom/bumptech/glide/Registry;->i:Lcom/bumptech/glide/k/c;
 
     invoke-virtual {v1, v0}, Lcom/bumptech/glide/k/c;->a(Lcom/bumptech/glide/load/engine/q;)Z
@@ -671,12 +628,10 @@
     :cond_0
     if-nez v0, :cond_2
 
-    .line 16
     invoke-direct {p0, p1, p2, p3}, Lcom/bumptech/glide/Registry;->c(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;
 
     move-result-object v7
 
-    .line 17
     invoke-interface {v7}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
@@ -687,7 +642,6 @@
 
     goto :goto_0
 
-    .line 18
     :cond_1
     new-instance v0, Lcom/bumptech/glide/load/engine/q;
 
@@ -703,7 +657,6 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/bumptech/glide/load/engine/q;-><init>(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;Ljava/util/List;Landroidx/core/d/e;)V
 
-    .line 19
     :goto_0
     iget-object v1, p0, Lcom/bumptech/glide/Registry;->i:Lcom/bumptech/glide/k/c;
 
@@ -740,7 +693,6 @@
         }
     .end annotation
 
-    .line 20
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->d:Lcom/bumptech/glide/k/f;
 
     invoke-interface {p1}, Lcom/bumptech/glide/load/engine/s;->c()Ljava/lang/Class;
@@ -755,7 +707,6 @@
 
     return-object v0
 
-    .line 21
     :cond_0
     new-instance v0, Lcom/bumptech/glide/Registry$NoResultEncoderAvailableException;
 
@@ -782,14 +733,12 @@
         }
     .end annotation
 
-    .line 25
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->g:Lcom/bumptech/glide/k/b;
 
     invoke-virtual {v0}, Lcom/bumptech/glide/k/b;->a()Ljava/util/List;
 
     move-result-object v0
 
-    .line 26
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     move-result v1
@@ -798,7 +747,6 @@
 
     return-object v0
 
-    .line 27
     :cond_0
     new-instance v0, Lcom/bumptech/glide/Registry$NoImageHeaderParserException;
 
@@ -827,14 +775,12 @@
         }
     .end annotation
 
-    .line 22
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->a:Lcom/bumptech/glide/load/j/p;
 
     invoke-virtual {v0, p1}, Lcom/bumptech/glide/load/j/p;->a(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 23
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     move-result v1
@@ -843,7 +789,6 @@
 
     return-object v0
 
-    .line 24
     :cond_0
     new-instance v0, Lcom/bumptech/glide/Registry$NoModelLoaderAvailableException;
 
@@ -871,7 +816,6 @@
         }
     .end annotation
 
-    .line 16
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->e:Lcom/bumptech/glide/load/i/f;
 
     invoke-virtual {v0, p1}, Lcom/bumptech/glide/load/i/f;->a(Ljava/lang/Object;)Lcom/bumptech/glide/load/i/e;
@@ -919,7 +863,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->h:Lcom/bumptech/glide/k/d;
 
     invoke-virtual {v0, p1, p2}, Lcom/bumptech/glide/k/d;->a(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;
@@ -928,19 +871,16 @@
 
     if-nez v0, :cond_3
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
     iget-object v1, p0, Lcom/bumptech/glide/Registry;->a:Lcom/bumptech/glide/load/j/p;
 
     invoke-virtual {v1, p1}, Lcom/bumptech/glide/load/j/p;->a(Ljava/lang/Class;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 4
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -958,15 +898,12 @@
 
     check-cast v2, Ljava/lang/Class;
 
-    .line 5
     iget-object v3, p0, Lcom/bumptech/glide/Registry;->c:Lcom/bumptech/glide/k/e;
 
-    .line 6
     invoke-virtual {v3, v2, p2}, Lcom/bumptech/glide/k/e;->b(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;
 
     move-result-object v2
 
-    .line 7
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -985,15 +922,12 @@
 
     check-cast v3, Ljava/lang/Class;
 
-    .line 8
     iget-object v4, p0, Lcom/bumptech/glide/Registry;->f:Lcom/bumptech/glide/load/k/g/f;
 
-    .line 9
     invoke-virtual {v4, v3, p3}, Lcom/bumptech/glide/load/k/g/f;->b(Ljava/lang/Class;Ljava/lang/Class;)Ljava/util/List;
 
     move-result-object v4
 
-    .line 10
     invoke-interface {v4}, Ljava/util/List;->isEmpty()Z
 
     move-result v4
@@ -1006,21 +940,17 @@
 
     if-nez v4, :cond_1
 
-    .line 11
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 12
     :cond_2
     iget-object p3, p0, Lcom/bumptech/glide/Registry;->h:Lcom/bumptech/glide/k/d;
 
-    .line 13
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v1
 
-    .line 14
     invoke-virtual {p3, p1, p2, v1}, Lcom/bumptech/glide/k/d;->a(Ljava/lang/Class;Ljava/lang/Class;Ljava/util/List;)V
 
     :cond_3
@@ -1041,7 +971,6 @@
         }
     .end annotation
 
-    .line 15
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->d:Lcom/bumptech/glide/k/f;
 
     invoke-interface {p1}, Lcom/bumptech/glide/load/engine/s;->c()Ljava/lang/Class;
@@ -1090,7 +1019,6 @@
         }
     .end annotation
 
-    .line 14
     iget-object v0, p0, Lcom/bumptech/glide/Registry;->b:Lcom/bumptech/glide/k/a;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1105,7 +1033,6 @@
 
     return-object v0
 
-    .line 15
     :cond_0
     new-instance v0, Lcom/bumptech/glide/Registry$NoSourceEncoderAvailableException;
 

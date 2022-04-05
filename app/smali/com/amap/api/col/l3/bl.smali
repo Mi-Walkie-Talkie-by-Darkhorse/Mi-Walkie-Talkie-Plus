@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/bl;
 .super Ljava/lang/Object;
-.source "OfflineDBOperation.java"
 
 
 # static fields
@@ -17,13 +16,10 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/bl;->c:Landroid/content/Context;
 
-    .line 3
     invoke-static {p1}, Lcom/amap/api/col/l3/bl;->b(Landroid/content/Context;)Lcom/amap/api/col/l3/gz;
 
     move-result-object p1
@@ -36,30 +32,25 @@
 .method public static a(Landroid/content/Context;)Lcom/amap/api/col/l3/bl;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/bl;->a:Lcom/amap/api/col/l3/bl;
 
     if-nez v0, :cond_1
 
-    .line 2
     const-class v0, Lcom/amap/api/col/l3/bl;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/bl;->a:Lcom/amap/api/col/l3/bl;
 
     if-nez v1, :cond_0
 
-    .line 4
     new-instance v1, Lcom/amap/api/col/l3/bl;
 
     invoke-direct {v1, p0}, Lcom/amap/api/col/l3/bl;-><init>(Landroid/content/Context;)V
 
     sput-object v1, Lcom/amap/api/col/l3/bl;->a:Lcom/amap/api/col/l3/bl;
 
-    .line 5
     :cond_0
     monitor-exit v0
     :try_end_0
@@ -74,7 +65,6 @@
 
     throw p0
 
-    .line 6
     :cond_1
     :goto_0
     sget-object p0, Lcom/amap/api/col/l3/bl;->a:Lcom/amap/api/col/l3/bl;
@@ -96,19 +86,16 @@
         }
     .end annotation
 
-    .line 26
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 27
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v1
 
     if-lez v1, :cond_0
 
-    .line 28
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -126,7 +113,6 @@
 
     check-cast v1, Lcom/amap/api/col/l3/bi;
 
-    .line 29
     invoke-virtual {v1}, Lcom/amap/api/col/l3/bi;->a()Ljava/lang/String;
 
     move-result-object v1
@@ -144,7 +130,6 @@
 
     monitor-enter p0
 
-    .line 32
     :try_start_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/bl;->b()Z
 
@@ -154,12 +139,10 @@
 
     if-nez v0, :cond_0
 
-    .line 33
     monitor-exit p0
 
     return-void
 
-    .line 34
     :cond_0
     :try_start_1
     new-instance v0, Lcom/amap/api/col/l3/bh;
@@ -180,19 +163,16 @@
 
     invoke-direct/range {v1 .. v9}, Lcom/amap/api/col/l3/bh;-><init>(Ljava/lang/String;JIJJ)V
 
-    .line 35
     invoke-static {p1}, Lcom/amap/api/col/l3/bh;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 36
     sget-object v2, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
     invoke-virtual {v2, v0, v1}, Lcom/amap/api/col/l3/gz;->a(Ljava/lang/Object;Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 37
     monitor-exit p0
 
     return-void
@@ -208,7 +188,6 @@
 .method private static b(Landroid/content/Context;)Lcom/amap/api/col/l3/gz;
     .locals 2
 
-    .line 1
     :try_start_0
     new-instance v0, Lcom/amap/api/col/l3/gz;
 
@@ -229,10 +208,8 @@
 
     const-string v1, "getDB"
 
-    .line 2
     invoke-static {p0, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -244,12 +221,10 @@
 .method private b()Z
     .locals 1
 
-    .line 4
     sget-object v0, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
     if-nez v0, :cond_0
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/bl;->c:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/bl;->b(Landroid/content/Context;)Lcom/amap/api/col/l3/gz;
@@ -258,7 +233,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
-    .line 6
     :cond_0
     sget-object v0, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
@@ -281,7 +255,6 @@
 
     monitor-enter p0
 
-    .line 12
     :try_start_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/bl;->b()Z
 
@@ -293,19 +266,16 @@
 
     if-nez v0, :cond_0
 
-    .line 13
     monitor-exit p0
 
     return-object v1
 
-    .line 14
     :cond_0
     :try_start_1
     invoke-static {p1}, Lcom/amap/api/col/l3/bj;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 15
     sget-object v0, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
     const-class v2, Lcom/amap/api/col/l3/bg;
@@ -314,7 +284,6 @@
 
     move-result-object p1
 
-    .line 16
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -323,7 +292,6 @@
 
     const/4 v0, 0x0
 
-    .line 17
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -336,7 +304,6 @@
 
     return-object p1
 
-    .line 18
     :cond_1
     monitor-exit p0
 
@@ -361,12 +328,10 @@
         }
     .end annotation
 
-    .line 7
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 8
     invoke-direct {p0}, Lcom/amap/api/col/l3/bl;->b()Z
 
     move-result v1
@@ -375,7 +340,6 @@
 
     return-object v0
 
-    .line 9
     :cond_0
     sget-object v1, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
@@ -387,7 +351,6 @@
 
     move-result-object v1
 
-    .line 10
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -405,7 +368,6 @@
 
     check-cast v2, Lcom/amap/api/col/l3/bg;
 
-    .line 11
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -421,7 +383,6 @@
 
     monitor-enter p0
 
-    .line 19
     :try_start_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/bl;->b()Z
 
@@ -431,12 +392,10 @@
 
     if-nez v1, :cond_0
 
-    .line 20
     monitor-exit p0
 
     return-void
 
-    .line 21
     :cond_0
     :try_start_1
     invoke-virtual {p1}, Lcom/amap/api/col/l3/bj;->g()Ljava/lang/String;
@@ -447,17 +406,14 @@
 
     move-result-object v1
 
-    .line 22
     sget-object v2, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
     invoke-virtual {v2, p1, v1}, Lcom/amap/api/col/l3/gz;->a(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 23
     invoke-virtual {p1}, Lcom/amap/api/col/l3/bg;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 24
     invoke-virtual {p1}, Lcom/amap/api/col/l3/bj;->e()Ljava/lang/String;
 
     move-result-object p1
@@ -527,7 +483,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 25
     :cond_3
     monitor-exit p0
 
@@ -544,7 +499,6 @@
 .method public final a(Ljava/lang/String;IJJJ)V
     .locals 9
 
-    .line 30
     invoke-direct {p0}, Lcom/amap/api/col/l3/bl;->b()Z
 
     move-result v0
@@ -602,7 +556,6 @@
 
     move-object v7, v0
 
-    .line 31
     invoke-direct/range {v1 .. v7}, Lcom/amap/api/col/l3/bl;->a(Ljava/lang/String;IJ[J[J)V
 
     return-void
@@ -623,13 +576,11 @@
 
     monitor-enter p0
 
-    .line 7
     :try_start_0
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 8
     invoke-direct {p0}, Lcom/amap/api/col/l3/bl;->b()Z
 
     move-result v1
@@ -638,19 +589,16 @@
 
     if-nez v1, :cond_0
 
-    .line 9
     monitor-exit p0
 
     return-object v0
 
-    .line 10
     :cond_0
     :try_start_1
     invoke-static {p1}, Lcom/amap/api/col/l3/bi;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 11
     sget-object v1, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
     const-class v2, Lcom/amap/api/col/l3/bi;
@@ -659,7 +607,6 @@
 
     move-result-object p1
 
-    .line 12
     invoke-static {p1}, Lcom/amap/api/col/l3/bl;->a(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
@@ -668,7 +615,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 13
     monitor-exit p0
 
     return-object v0
@@ -686,7 +632,6 @@
 
     monitor-enter p0
 
-    .line 14
     :try_start_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/bl;->b()Z
 
@@ -696,12 +641,10 @@
 
     if-nez v0, :cond_0
 
-    .line 15
     monitor-exit p0
 
     return-void
 
-    .line 16
     :cond_0
     :try_start_1
     sget-object v0, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
@@ -718,7 +661,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/amap/api/col/l3/gz;->a(Ljava/lang/String;Ljava/lang/Class;)V
 
-    .line 17
     sget-object v0, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
     invoke-virtual {p1}, Lcom/amap/api/col/l3/bj;->e()Ljava/lang/String;
@@ -733,7 +675,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/amap/api/col/l3/gz;->a(Ljava/lang/String;Ljava/lang/Class;)V
 
-    .line 18
     sget-object v0, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
     invoke-virtual {p1}, Lcom/amap/api/col/l3/bj;->e()Ljava/lang/String;
@@ -750,7 +691,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 19
     monitor-exit p0
 
     return-void
@@ -768,7 +708,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/bl;->b()Z
 
@@ -778,12 +717,10 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     monitor-exit p0
 
     return-void
 
-    .line 3
     :cond_0
     :try_start_1
     sget-object v0, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
@@ -796,7 +733,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/amap/api/col/l3/gz;->a(Ljava/lang/String;Ljava/lang/Class;)V
 
-    .line 4
     sget-object v0, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/bi;->a(Ljava/lang/String;)Ljava/lang/String;
@@ -807,7 +743,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/amap/api/col/l3/gz;->a(Ljava/lang/String;Ljava/lang/Class;)V
 
-    .line 5
     sget-object v0, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/bh;->a(Ljava/lang/String;)Ljava/lang/String;
@@ -820,7 +755,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 6
     monitor-exit p0
 
     return-void
@@ -838,7 +772,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/bl;->b()Z
 
@@ -850,19 +783,16 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     monitor-exit p0
 
     return-object v1
 
-    .line 3
     :cond_0
     :try_start_1
     invoke-static {p1}, Lcom/amap/api/col/l3/bj;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 4
     sget-object v0, Lcom/amap/api/col/l3/bl;->b:Lcom/amap/api/col/l3/gz;
 
     const-class v2, Lcom/amap/api/col/l3/bj;
@@ -871,7 +801,6 @@
 
     move-result-object p1
 
-    .line 5
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -880,7 +809,6 @@
 
     const/4 v0, 0x0
 
-    .line 6
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -893,7 +821,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 7
     :cond_1
     monitor-exit p0
 

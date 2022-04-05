@@ -1,6 +1,5 @@
 .class public Landroidx/lifecycle/w;
 .super Ljava/lang/Object;
-.source "ViewModelProvider.java"
 
 
 # annotations
@@ -33,13 +32,10 @@
         .end annotation
     .end param
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
     iput-object p2, p0, Landroidx/lifecycle/w;->a:Landroidx/lifecycle/w$b;
 
-    .line 7
     iput-object p1, p0, Landroidx/lifecycle/w;->b:Landroidx/lifecycle/y;
 
     return-void
@@ -52,7 +48,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-interface {p1}, Landroidx/lifecycle/z;->getViewModelStore()Landroidx/lifecycle/y;
 
     move-result-object v0
@@ -61,7 +56,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 2
     check-cast p1, Landroidx/lifecycle/g;
 
     invoke-interface {p1}, Landroidx/lifecycle/g;->getDefaultViewModelProviderFactory()Landroidx/lifecycle/w$b;
@@ -70,13 +64,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static {}, Landroidx/lifecycle/w$d;->a()Landroidx/lifecycle/w$d;
 
     move-result-object p1
 
-    .line 4
     :goto_0
     invoke-direct {p0, v0, p1}, Landroidx/lifecycle/w;-><init>(Landroidx/lifecycle/y;Landroidx/lifecycle/w$b;)V
 
@@ -107,14 +99,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -135,7 +125,6 @@
 
     return-object p1
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -173,28 +162,24 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Landroidx/lifecycle/w;->b:Landroidx/lifecycle/y;
 
     invoke-virtual {v0, p1}, Landroidx/lifecycle/y;->a(Ljava/lang/String;)Landroidx/lifecycle/v;
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {p2, v0}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 6
     iget-object p1, p0, Landroidx/lifecycle/w;->a:Landroidx/lifecycle/w$b;
 
     instance-of p2, p1, Landroidx/lifecycle/w$e;
 
     if-eqz p2, :cond_0
 
-    .line 7
     check-cast p1, Landroidx/lifecycle/w$e;
 
     invoke-virtual {p1, v0}, Landroidx/lifecycle/w$e;->a(Landroidx/lifecycle/v;)V
@@ -202,7 +187,6 @@
     :cond_0
     return-object v0
 
-    .line 8
     :cond_1
     iget-object v0, p0, Landroidx/lifecycle/w;->a:Landroidx/lifecycle/w$b;
 
@@ -210,7 +194,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 9
     check-cast v0, Landroidx/lifecycle/w$c;
 
     invoke-virtual {v0, p1, p2}, Landroidx/lifecycle/w$c;->a(Ljava/lang/String;Ljava/lang/Class;)Landroidx/lifecycle/v;
@@ -219,13 +202,11 @@
 
     goto :goto_0
 
-    .line 10
     :cond_2
     invoke-interface {v0, p2}, Landroidx/lifecycle/w$b;->create(Ljava/lang/Class;)Landroidx/lifecycle/v;
 
     move-result-object p2
 
-    .line 11
     :goto_0
     iget-object v0, p0, Landroidx/lifecycle/w;->b:Landroidx/lifecycle/y;
 

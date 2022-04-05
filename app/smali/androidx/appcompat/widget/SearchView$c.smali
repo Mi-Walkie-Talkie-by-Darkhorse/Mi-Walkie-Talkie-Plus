@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/SearchView$c;
 .super Ljava/lang/Object;
-.source "SearchView.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SearchView$c;->a:Landroidx/appcompat/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SearchView$c;->a:Landroidx/appcompat/widget/SearchView;
 
     iget-object v0, v0, Landroidx/appcompat/widget/SearchView;->C:La/d/a/a;
@@ -49,7 +46,6 @@
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-virtual {v0, v1}, La/d/a/a;->a(Landroid/database/Cursor;)V
 
     :cond_0

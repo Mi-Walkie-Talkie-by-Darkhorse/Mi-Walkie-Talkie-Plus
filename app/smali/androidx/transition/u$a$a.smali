@@ -1,6 +1,5 @@
 .class Landroidx/transition/u$a$a;
 .super Landroidx/transition/t;
-.source "TransitionManager.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Landroidx/transition/u$a;La/b/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/transition/u$a$a;->b:Landroidx/transition/u$a;
 
     iput-object p2, p0, Landroidx/transition/u$a$a;->a:La/b/a;
@@ -43,7 +41,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/transition/u$a$a;->a:La/b/a;
 
     iget-object v1, p0, Landroidx/transition/u$a$a;->b:Landroidx/transition/u$a;
@@ -56,10 +53,8 @@
 
     check-cast v0, Ljava/util/ArrayList;
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 3
     invoke-virtual {p1, p0}, Landroidx/transition/Transition;->removeListener(Landroidx/transition/Transition$g;)Landroidx/transition/Transition;
 
     return-void

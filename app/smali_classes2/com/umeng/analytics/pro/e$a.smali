@@ -1,6 +1,5 @@
 .class Lcom/umeng/analytics/pro/e$a;
 .super Ljava/lang/Object;
-.source "UMDBCreater.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 8
 
-    .line 1
     new-instance v7, Lcom/umeng/analytics/pro/e;
 
     invoke-static {}, Lcom/umeng/analytics/pro/e;->b()Landroid/content/Context;
@@ -57,7 +55,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -66,7 +63,6 @@
 .method static synthetic a()Lcom/umeng/analytics/pro/e;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/pro/e$a;->a:Lcom/umeng/analytics/pro/e;
 
     return-object v0

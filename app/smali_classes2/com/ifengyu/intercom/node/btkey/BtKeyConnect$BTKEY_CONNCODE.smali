@@ -1,6 +1,5 @@
 .class public final enum Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;
 .super Ljava/lang/Enum;
-.source "BtKeyConnect.java"
 
 
 # annotations
@@ -44,7 +43,6 @@
 .method static constructor <clinit>()V
     .locals 8
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;
 
     const/4 v1, 0x0
@@ -101,7 +99,6 @@
 
     new-array v6, v6, [Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;
 
-    .line 2
     sget-object v7, Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;->b:Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;
 
     aput-object v7, v6, v1
@@ -133,10 +130,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput p3, p0, Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;->a:I
 
     return-void
@@ -145,7 +140,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -160,7 +154,6 @@
 .method public static values()[Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;->g:[Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;
 
     invoke-virtual {v0}, [Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;->clone()Ljava/lang/Object;
@@ -177,7 +170,6 @@
 .method public a()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/node/btkey/BtKeyConnect$BTKEY_CONNCODE;->a:I
 
     return v0

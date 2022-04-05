@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/ForwardingSortedMultiset$StandardDescendingMultiset;
 .super Lcom/google/common/collect/DescendingMultiset;
-.source "ForwardingSortedMultiset.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method public constructor <init>(Lcom/google/common/collect/ForwardingSortedMultiset;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ForwardingSortedMultiset$StandardDescendingMultiset;->this$0:Lcom/google/common/collect/ForwardingSortedMultiset;
 
     invoke-direct {p0}, Lcom/google/common/collect/DescendingMultiset;-><init>()V
@@ -49,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ForwardingSortedMultiset$StandardDescendingMultiset;->this$0:Lcom/google/common/collect/ForwardingSortedMultiset;
 
     return-object v0

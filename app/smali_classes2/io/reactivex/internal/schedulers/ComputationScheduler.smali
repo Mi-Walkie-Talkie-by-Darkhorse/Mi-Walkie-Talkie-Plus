@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/schedulers/ComputationScheduler;
 .super Lio/reactivex/Scheduler;
-.source "ComputationScheduler.java"
 
 # interfaces
 .implements Lio/reactivex/internal/schedulers/SchedulerMultiWorkerSupport;
@@ -50,7 +49,6 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1
     invoke-static {}, Ljava/lang/Runtime;->getRuntime()Ljava/lang/Runtime;
 
     move-result-object v0
@@ -77,7 +75,6 @@
 
     sput v0, Lio/reactivex/internal/schedulers/ComputationScheduler;->MAX_THREADS:I
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/schedulers/ComputationScheduler$PoolWorker;
 
     new-instance v2, Lio/reactivex/internal/schedulers/RxThreadFactory;
@@ -90,14 +87,12 @@
 
     sput-object v0, Lio/reactivex/internal/schedulers/ComputationScheduler;->SHUTDOWN_WORKER:Lio/reactivex/internal/schedulers/ComputationScheduler$PoolWorker;
 
-    .line 3
     invoke-virtual {v0}, Lio/reactivex/internal/schedulers/NewThreadWorker;->dispose()V
 
     const-string v0, "rx2.computation-priority"
 
     const/4 v2, 0x5
 
-    .line 4
     invoke-static {v0, v2}, Ljava/lang/Integer;->getInteger(Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -108,7 +103,6 @@
 
     const/16 v2, 0xa
 
-    .line 5
     invoke-static {v2, v0}, Ljava/lang/Math;->min(II)I
 
     move-result v0
@@ -119,7 +113,6 @@
 
     move-result v0
 
-    .line 6
     new-instance v3, Lio/reactivex/internal/schedulers/RxThreadFactory;
 
     const-string v4, "RxComputationThreadPool"
@@ -128,14 +121,12 @@
 
     sput-object v3, Lio/reactivex/internal/schedulers/ComputationScheduler;->THREAD_FACTORY:Lio/reactivex/internal/schedulers/RxThreadFactory;
 
-    .line 7
     new-instance v0, Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;
 
     invoke-direct {v0, v1, v3}, Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;-><init>(ILjava/util/concurrent/ThreadFactory;)V
 
     sput-object v0, Lio/reactivex/internal/schedulers/ComputationScheduler;->NONE:Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;
 
-    .line 8
     invoke-virtual {v0}, Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;->shutdown()V
 
     return-void
@@ -144,7 +135,6 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     sget-object v0, Lio/reactivex/internal/schedulers/ComputationScheduler;->THREAD_FACTORY:Lio/reactivex/internal/schedulers/RxThreadFactory;
 
     invoke-direct {p0, v0}, Lio/reactivex/internal/schedulers/ComputationScheduler;-><init>(Ljava/util/concurrent/ThreadFactory;)V
@@ -155,13 +145,10 @@
 .method public constructor <init>(Ljava/util/concurrent/ThreadFactory;)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Lio/reactivex/Scheduler;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lio/reactivex/internal/schedulers/ComputationScheduler;->threadFactory:Ljava/util/concurrent/ThreadFactory;
 
-    .line 4
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object v0, Lio/reactivex/internal/schedulers/ComputationScheduler;->NONE:Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;
@@ -170,7 +157,6 @@
 
     iput-object p1, p0, Lio/reactivex/internal/schedulers/ComputationScheduler;->pool:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/internal/schedulers/ComputationScheduler;->start()V
 
     return-void
@@ -200,7 +186,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/schedulers/ComputationScheduler$EventLoopWorker;
 
     iget-object v1, p0, Lio/reactivex/internal/schedulers/ComputationScheduler;->pool:Ljava/util/concurrent/atomic/AtomicReference;
@@ -225,10 +210,8 @@
 
     const-string v0, "number > 0 required"
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->verifyPositive(ILjava/lang/String;)I
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler;->pool:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -251,7 +234,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler;->pool:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -264,7 +246,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1, p2, p3, p4}, Lio/reactivex/internal/schedulers/NewThreadWorker;->scheduleDirect(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Lio/reactivex/disposables/Disposable;
 
     move-result-object p1
@@ -281,7 +262,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler;->pool:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -302,7 +282,6 @@
 
     move-object v7, p6
 
-    .line 2
     invoke-virtual/range {v1 .. v7}, Lio/reactivex/internal/schedulers/NewThreadWorker;->schedulePeriodicallyDirect(Ljava/lang/Runnable;JJLjava/util/concurrent/TimeUnit;)Lio/reactivex/disposables/Disposable;
 
     move-result-object p1
@@ -313,7 +292,6 @@
 .method public shutdown()V
     .locals 3
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/schedulers/ComputationScheduler;->pool:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -323,14 +301,12 @@
 
     check-cast v0, Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;
 
-    .line 2
     sget-object v1, Lio/reactivex/internal/schedulers/ComputationScheduler;->NONE:Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;
 
     if-ne v0, v1, :cond_1
 
     return-void
 
-    .line 3
     :cond_1
     iget-object v2, p0, Lio/reactivex/internal/schedulers/ComputationScheduler;->pool:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -340,7 +316,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;->shutdown()V
 
     return-void
@@ -349,7 +324,6 @@
 .method public start()V
     .locals 3
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;
 
     sget v1, Lio/reactivex/internal/schedulers/ComputationScheduler;->MAX_THREADS:I
@@ -358,7 +332,6 @@
 
     invoke-direct {v0, v1, v2}, Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;-><init>(ILjava/util/concurrent/ThreadFactory;)V
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/internal/schedulers/ComputationScheduler;->pool:Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object v2, Lio/reactivex/internal/schedulers/ComputationScheduler;->NONE:Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;
@@ -369,7 +342,6 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Lio/reactivex/internal/schedulers/ComputationScheduler$FixedSchedulerPool;->shutdown()V
 
     :cond_0

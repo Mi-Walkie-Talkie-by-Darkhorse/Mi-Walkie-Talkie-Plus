@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/fx$a;
 .super Ljava/lang/Object;
-.source "AuthConfigManager.java"
 
 
 # annotations
@@ -162,12 +161,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/fx$a;->b:I
 
     return-void
@@ -176,7 +173,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/fx$a;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/amap/api/col/l3/fx$a;->H:Z
 
     return p0
@@ -185,7 +181,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/fx$a;Z)Z
     .locals 0
 
-    .line 2
     iput-boolean p1, p0, Lcom/amap/api/col/l3/fx$a;->H:Z
 
     return p1
@@ -196,7 +191,6 @@
 .method public final a()Z
     .locals 1
 
-    .line 3
     iget-boolean v0, p0, Lcom/amap/api/col/l3/fx$a;->H:Z
 
     return v0

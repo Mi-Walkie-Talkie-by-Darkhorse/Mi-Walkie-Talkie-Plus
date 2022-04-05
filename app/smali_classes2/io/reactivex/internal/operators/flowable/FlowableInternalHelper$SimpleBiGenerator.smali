@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$SimpleBiGenerator;
 .super Ljava/lang/Object;
-.source "FlowableInternalHelper.java"
 
 # interfaces
 .implements Lio/reactivex/functions/BiFunction;
@@ -58,10 +57,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$SimpleBiGenerator;->consumer:Lio/reactivex/functions/BiConsumer;
 
     return-void
@@ -85,7 +82,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$SimpleBiGenerator;->consumer:Lio/reactivex/functions/BiConsumer;
 
     invoke-interface {v0, p1, p2}, Lio/reactivex/functions/BiConsumer;->accept(Ljava/lang/Object;Ljava/lang/Object;)V
@@ -101,7 +97,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p2, Lio/reactivex/Emitter;
 
     invoke-virtual {p0, p1, p2}, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$SimpleBiGenerator;->apply(Ljava/lang/Object;Lio/reactivex/Emitter;)Ljava/lang/Object;

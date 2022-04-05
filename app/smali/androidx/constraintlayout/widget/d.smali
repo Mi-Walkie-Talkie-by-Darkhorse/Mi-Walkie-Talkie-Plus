@@ -1,6 +1,5 @@
 .class public Landroidx/constraintlayout/widget/d;
 .super Ljava/lang/Object;
-.source "StateSet.java"
 
 
 # annotations
@@ -34,33 +33,26 @@
 .method public constructor <init>(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Landroidx/constraintlayout/widget/d;->a:I
 
-    .line 3
     iput v0, p0, Landroidx/constraintlayout/widget/d;->b:I
 
-    .line 4
     iput v0, p0, Landroidx/constraintlayout/widget/d;->c:I
 
-    .line 5
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Landroidx/constraintlayout/widget/d;->d:Landroid/util/SparseArray;
 
-    .line 6
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    .line 7
     invoke-direct {p0, p1, p2}, Landroidx/constraintlayout/widget/d;->a(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)V
 
     return-void
@@ -69,19 +61,16 @@
 .method private a(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 9
 
-    .line 1
     invoke-static {p2}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
 
     move-result-object v0
 
-    .line 2
     sget-object v1, Landroidx/constraintlayout/widget/R$styleable;->StateSet:[I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->getIndexCount()I
 
     move-result v1
@@ -93,17 +82,14 @@
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 4
     invoke-virtual {v0, v3}, Landroid/content/res/TypedArray;->getIndex(I)I
 
     move-result v4
 
-    .line 5
     sget v5, Landroidx/constraintlayout/widget/R$styleable;->StateSet_defaultState:I
 
     if-ne v4, v5, :cond_0
 
-    .line 6
     iget v5, p0, Landroidx/constraintlayout/widget/d;->a:I
 
     invoke-virtual {v0, v4, v5}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -120,7 +106,6 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 7
     :try_start_0
     invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
 
@@ -148,7 +133,6 @@
 
     goto/16 :goto_3
 
-    .line 8
     :cond_2
     :try_start_1
     invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
@@ -163,7 +147,6 @@
 
     return-void
 
-    .line 9
     :cond_3
     invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
@@ -171,7 +154,6 @@
 
     const/4 v7, -0x1
 
-    .line 10
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
     move-result v8
@@ -240,7 +222,6 @@
 
     const-string v3, "ConstraintLayoutStates"
 
-    .line 11
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -259,7 +240,6 @@
 
     goto :goto_3
 
-    .line 12
     :cond_5
     new-instance v1, Landroidx/constraintlayout/widget/d$b;
 
@@ -267,18 +247,15 @@
 
     if-eqz v0, :cond_8
 
-    .line 13
     invoke-virtual {v0, v1}, Landroidx/constraintlayout/widget/d$a;->a(Landroidx/constraintlayout/widget/d$b;)V
 
     goto :goto_3
 
-    .line 14
     :cond_6
     new-instance v0, Landroidx/constraintlayout/widget/d$a;
 
     invoke-direct {v0, p1, p2}, Landroidx/constraintlayout/widget/d$a;-><init>(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)V
 
-    .line 15
     iget-object v1, p0, Landroidx/constraintlayout/widget/d;->d:Landroid/util/SparseArray;
 
     iget v3, v0, Landroidx/constraintlayout/widget/d$a;->a:I
@@ -287,11 +264,9 @@
 
     goto :goto_3
 
-    .line 16
     :cond_7
     invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
-    .line 17
     :cond_8
     :goto_3
     invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->next()I
@@ -306,7 +281,6 @@
     :catch_0
     move-exception p1
 
-    .line 18
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_4
@@ -314,7 +288,6 @@
     :catch_1
     move-exception p1
 
-    .line 19
     invoke-virtual {p1}, Lorg/xmlpull/v1/XmlPullParserException;->printStackTrace()V
 
     :cond_9
@@ -335,7 +308,6 @@
 .method public a(IIFF)I
     .locals 4
 
-    .line 21
     iget-object v0, p0, Landroidx/constraintlayout/widget/d;->d:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p2}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -364,7 +336,6 @@
     :cond_1
     const/4 p2, 0x0
 
-    .line 22
     iget-object v1, v0, Landroidx/constraintlayout/widget/d$a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -385,14 +356,12 @@
 
     check-cast v2, Landroidx/constraintlayout/widget/d$b;
 
-    .line 23
     invoke-virtual {v2, p3, p4}, Landroidx/constraintlayout/widget/d$b;->a(FF)Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 24
     iget p2, v2, Landroidx/constraintlayout/widget/d$b;->e:I
 
     if-ne p1, p2, :cond_3
@@ -407,18 +376,15 @@
     :cond_4
     if-eqz p2, :cond_5
 
-    .line 25
     iget p1, p2, Landroidx/constraintlayout/widget/d$b;->e:I
 
     return p1
 
-    .line 26
     :cond_5
     iget p1, v0, Landroidx/constraintlayout/widget/d$a;->c:I
 
     return p1
 
-    .line 27
     :cond_6
     :goto_1
     iget p2, v0, Landroidx/constraintlayout/widget/d$a;->c:I
@@ -427,7 +393,6 @@
 
     return p1
 
-    .line 28
     :cond_7
     iget-object p2, v0, Landroidx/constraintlayout/widget/d$a;->b:Ljava/util/ArrayList;
 
@@ -448,14 +413,12 @@
 
     check-cast p3, Landroidx/constraintlayout/widget/d$b;
 
-    .line 29
     iget p3, p3, Landroidx/constraintlayout/widget/d$b;->e:I
 
     if-ne p1, p3, :cond_8
 
     return p1
 
-    .line 30
     :cond_9
     iget p1, v0, Landroidx/constraintlayout/widget/d$a;->c:I
 
@@ -471,7 +434,6 @@
 
     const/4 v0, -0x1
 
-    .line 20
     invoke-virtual {p0, v0, p1, p2, p3}, Landroidx/constraintlayout/widget/d;->b(IIFF)I
 
     move-result p1
@@ -488,7 +450,6 @@
 
     if-ne p2, v0, :cond_0
 
-    .line 1
     iget-object p2, p0, Landroidx/constraintlayout/widget/d;->d:Landroid/util/SparseArray;
 
     const/4 v1, 0x0
@@ -501,7 +462,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p2, p0, Landroidx/constraintlayout/widget/d;->d:Landroid/util/SparseArray;
 
@@ -518,13 +478,11 @@
 
     return v0
 
-    .line 3
     :cond_1
     iget v1, p0, Landroidx/constraintlayout/widget/d;->c:I
 
     if-eq v1, v0, :cond_2
 
-    .line 4
     iget-object v1, p2, Landroidx/constraintlayout/widget/d$a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -541,7 +499,6 @@
 
     return p1
 
-    .line 5
     :cond_2
     invoke-virtual {p2, p3, p4}, Landroidx/constraintlayout/widget/d$a;->a(FF)I
 
@@ -554,7 +511,6 @@
     :cond_3
     if-ne p3, v0, :cond_4
 
-    .line 6
     iget p1, p2, Landroidx/constraintlayout/widget/d$a;->c:I
 
     goto :goto_1
@@ -573,7 +529,6 @@
     :goto_1
     return p1
 
-    .line 7
     :cond_5
     iget-object p1, p0, Landroidx/constraintlayout/widget/d;->d:Landroid/util/SparseArray;
 
@@ -587,7 +542,6 @@
 
     return v0
 
-    .line 8
     :cond_6
     invoke-virtual {p1, p3, p4}, Landroidx/constraintlayout/widget/d$a;->a(FF)I
 
@@ -595,7 +549,6 @@
 
     if-ne p2, v0, :cond_7
 
-    .line 9
     iget p1, p1, Landroidx/constraintlayout/widget/d$a;->c:I
 
     goto :goto_2

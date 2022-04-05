@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/node/g;
 .super Ljava/lang/Object;
-.source "ICmdDispatcher.java"
 
 
 # virtual methods

@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/auth/a$2;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Landroid/view/View$OnTouchListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/tencent/connect/auth/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/a$2;->a:Lcom/tencent/connect/auth/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
     move-result p2
@@ -51,7 +48,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->hasFocus()Z
 
@@ -59,7 +55,6 @@
 
     if-nez p2, :cond_1
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z
 
     :cond_1

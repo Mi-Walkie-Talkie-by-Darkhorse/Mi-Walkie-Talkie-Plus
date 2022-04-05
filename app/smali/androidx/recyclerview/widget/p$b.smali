@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/recyclerview/widget/p$b;
 .super Ljava/lang/Object;
-.source "ViewInfoStore.java"
 
 
 # annotations

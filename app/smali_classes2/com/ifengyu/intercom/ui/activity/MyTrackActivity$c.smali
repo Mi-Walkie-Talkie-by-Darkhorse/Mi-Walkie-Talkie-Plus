@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$c;
 .super Ljava/lang/Object;
-.source "MyTrackActivity.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;->a(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;)Ljava/util/List;
@@ -60,7 +57,6 @@
 
     check-cast p1, Lcom/ifengyu/intercom/greendao/bean/b;
 
-    .line 2
     new-instance p2, Landroid/content/Intent;
 
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
@@ -69,7 +65,6 @@
 
     invoke-direct {p2, p3, p4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/greendao/bean/b;->k()Ljava/lang/Long;
 
     move-result-object p3
@@ -78,7 +73,6 @@
 
     invoke-virtual {p2, p4, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/greendao/bean/b;->x()Ljava/lang/Integer;
 
     move-result-object p1
@@ -89,7 +83,6 @@
 
     const-string p1, "for_preview_track"
 
-    .line 5
     invoke-virtual {p2, p3, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     goto :goto_0
@@ -97,10 +90,8 @@
     :cond_0
     const-string p1, "for_look_saved_track"
 
-    .line 6
     invoke-virtual {p2, p3, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 7
     :goto_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 

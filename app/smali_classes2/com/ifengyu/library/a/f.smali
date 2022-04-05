@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/library/a/f;
 .super Ljava/lang/Object;
-.source "IOUtils.java"
 
 
 # direct methods
@@ -15,7 +14,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     :try_start_0
     invoke-interface {p0}, Ljava/io/Closeable;->close()V
     :try_end_0
@@ -26,7 +24,6 @@
     :catch_0
     move-exception p0
 
-    .line 2
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_0

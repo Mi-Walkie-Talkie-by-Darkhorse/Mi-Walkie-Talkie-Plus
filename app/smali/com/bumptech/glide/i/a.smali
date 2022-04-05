@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/i/a;
 .super Ljava/lang/Object;
-.source "DiskLruCache.java"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -72,15 +71,12 @@
 
     move-object/from16 v1, p1
 
-    .line 1
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v2, 0x0
 
-    .line 2
     iput-wide v2, v0, Lcom/bumptech/glide/i/a;->h:J
 
-    .line 3
     new-instance v4, Ljava/util/LinkedHashMap;
 
     const/4 v5, 0x0
@@ -93,10 +89,8 @@
 
     iput-object v4, v0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
-    .line 4
     iput-wide v2, v0, Lcom/bumptech/glide/i/a;->l:J
 
-    .line 5
     new-instance v2, Ljava/util/concurrent/ThreadPoolExecutor;
 
     sget-object v13, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
@@ -123,22 +117,18 @@
 
     iput-object v2, v0, Lcom/bumptech/glide/i/a;->m:Ljava/util/concurrent/ThreadPoolExecutor;
 
-    .line 6
     new-instance v2, Lcom/bumptech/glide/i/a$a;
 
     invoke-direct {v2, v0}, Lcom/bumptech/glide/i/a$a;-><init>(Lcom/bumptech/glide/i/a;)V
 
     iput-object v2, v0, Lcom/bumptech/glide/i/a;->n:Ljava/util/concurrent/Callable;
 
-    .line 7
     iput-object v1, v0, Lcom/bumptech/glide/i/a;->a:Ljava/io/File;
 
     move/from16 v2, p2
 
-    .line 8
     iput v2, v0, Lcom/bumptech/glide/i/a;->e:I
 
-    .line 9
     new-instance v2, Ljava/io/File;
 
     const-string v3, "journal"
@@ -147,7 +137,6 @@
 
     iput-object v2, v0, Lcom/bumptech/glide/i/a;->b:Ljava/io/File;
 
-    .line 10
     new-instance v2, Ljava/io/File;
 
     const-string v3, "journal.tmp"
@@ -156,7 +145,6 @@
 
     iput-object v2, v0, Lcom/bumptech/glide/i/a;->c:Ljava/io/File;
 
-    .line 11
     new-instance v2, Ljava/io/File;
 
     const-string v3, "journal.bkp"
@@ -167,12 +155,10 @@
 
     move/from16 v1, p3
 
-    .line 12
     iput v1, v0, Lcom/bumptech/glide/i/a;->g:I
 
     move-wide/from16 v1, p4
 
-    .line 13
     iput-wide v1, v0, Lcom/bumptech/glide/i/a;->f:J
 
     return-void
@@ -181,7 +167,6 @@
 .method static synthetic a(Lcom/bumptech/glide/i/a;I)I
     .locals 0
 
-    .line 3
     iput p1, p0, Lcom/bumptech/glide/i/a;->k:I
 
     return p1
@@ -197,11 +182,9 @@
 
     monitor-enter p0
 
-    .line 29
     :try_start_0
     invoke-direct {p0}, Lcom/bumptech/glide/i/a;->b()V
 
-    .line 30
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -220,7 +203,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 31
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->c(Lcom/bumptech/glide/i/a$d;)J
 
     move-result-wide v1
@@ -231,7 +213,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 32
     :cond_0
     monitor-exit p0
 
@@ -240,20 +221,17 @@
     :cond_1
     if-nez v0, :cond_2
 
-    .line 33
     :try_start_1
     new-instance v0, Lcom/bumptech/glide/i/a$d;
 
     invoke-direct {v0, p0, p1, v3}, Lcom/bumptech/glide/i/a$d;-><init>(Lcom/bumptech/glide/i/a;Ljava/lang/String;Lcom/bumptech/glide/i/a$a;)V
 
-    .line 34
     iget-object p2, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
     invoke-virtual {p2, p1, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 35
     :cond_2
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->e(Lcom/bumptech/glide/i/a$d;)Lcom/bumptech/glide/i/a$c;
 
@@ -263,12 +241,10 @@
 
     if-eqz p2, :cond_3
 
-    .line 36
     monitor-exit p0
 
     return-object v3
 
-    .line 37
     :cond_3
     :goto_0
     :try_start_2
@@ -276,43 +252,36 @@
 
     invoke-direct {p2, p0, v0, v3}, Lcom/bumptech/glide/i/a$c;-><init>(Lcom/bumptech/glide/i/a;Lcom/bumptech/glide/i/a$d;Lcom/bumptech/glide/i/a$a;)V
 
-    .line 38
     invoke-static {v0, p2}, Lcom/bumptech/glide/i/a$d;->a(Lcom/bumptech/glide/i/a$d;Lcom/bumptech/glide/i/a$c;)Lcom/bumptech/glide/i/a$c;
 
-    .line 39
     iget-object p3, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     const-string v0, "DIRTY"
 
     invoke-virtual {p3, v0}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    .line 40
     iget-object p3, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     const/16 v0, 0x20
 
     invoke-virtual {p3, v0}, Ljava/io/Writer;->append(C)Ljava/io/Writer;
 
-    .line 41
     iget-object p3, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {p3, p1}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    .line 42
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     const/16 p3, 0xa
 
     invoke-virtual {p1, p3}, Ljava/io/Writer;->append(C)Ljava/io/Writer;
 
-    .line 43
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {p1}, Ljava/io/Writer;->flush()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 44
     monitor-exit p0
 
     return-object p2
@@ -341,35 +310,30 @@
 
     if-lez p2, :cond_3
 
-    .line 4
     new-instance v0, Ljava/io/File;
 
     const-string v1, "journal.bkp"
 
     invoke-direct {v0, p0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 6
     new-instance v1, Ljava/io/File;
 
     const-string v2, "journal"
 
     invoke-direct {v1, p0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 7
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 8
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
     goto :goto_0
@@ -377,10 +341,8 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 9
     invoke-static {v0, v1, v2}, Lcom/bumptech/glide/i/a;->a(Ljava/io/File;Ljava/io/File;Z)V
 
-    .line 10
     :cond_1
     :goto_0
     new-instance v0, Lcom/bumptech/glide/i/a;
@@ -397,7 +359,6 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/bumptech/glide/i/a;-><init>(Ljava/io/File;IIJ)V
 
-    .line 11
     iget-object v1, v0, Lcom/bumptech/glide/i/a;->b:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
@@ -406,11 +367,9 @@
 
     if-eqz v1, :cond_2
 
-    .line 12
     :try_start_0
     invoke-direct {v0}, Lcom/bumptech/glide/i/a;->e()V
 
-    .line 13
     invoke-direct {v0}, Lcom/bumptech/glide/i/a;->d()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -420,7 +379,6 @@
     :catch_0
     move-exception v1
 
-    .line 14
     sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -437,7 +395,6 @@
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 15
     invoke-virtual {v1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object v1
@@ -452,17 +409,13 @@
 
     move-result-object v1
 
-    .line 16
     invoke-virtual {v2, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 17
     invoke-virtual {v0}, Lcom/bumptech/glide/i/a;->a()V
 
-    .line 18
     :cond_2
     invoke-virtual {p0}, Ljava/io/File;->mkdirs()Z
 
-    .line 19
     new-instance v0, Lcom/bumptech/glide/i/a;
 
     move-object v3, v0
@@ -477,12 +430,10 @@
 
     invoke-direct/range {v3 .. v8}, Lcom/bumptech/glide/i/a;-><init>(Ljava/io/File;IIJ)V
 
-    .line 20
     invoke-direct {v0}, Lcom/bumptech/glide/i/a;->f()V
 
     return-object v0
 
-    .line 21
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -492,7 +443,6 @@
 
     throw p0
 
-    .line 22
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -506,7 +456,6 @@
 .method static synthetic a(Lcom/bumptech/glide/i/a;)Ljava/io/Writer;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     return-object p0
@@ -522,13 +471,11 @@
 
     monitor-enter p0
 
-    .line 45
     :try_start_0
     invoke-static {p1}, Lcom/bumptech/glide/i/a$c;->a(Lcom/bumptech/glide/i/a$c;)Lcom/bumptech/glide/i/a$d;
 
     move-result-object v0
 
-    .line 46
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->e(Lcom/bumptech/glide/i/a$d;)Lcom/bumptech/glide/i/a$c;
 
     move-result-object v1
@@ -539,7 +486,6 @@
 
     if-eqz p2, :cond_2
 
-    .line 47
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->d(Lcom/bumptech/glide/i/a$d;)Z
 
     move-result v2
@@ -548,13 +494,11 @@
 
     const/4 v2, 0x0
 
-    .line 48
     :goto_0
     iget v3, p0, Lcom/bumptech/glide/i/a;->g:I
 
     if-ge v2, v3, :cond_2
 
-    .line 49
     invoke-static {p1}, Lcom/bumptech/glide/i/a$c;->b(Lcom/bumptech/glide/i/a$c;)[Z
 
     move-result-object v3
@@ -563,7 +507,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 50
     invoke-virtual {v0, v2}, Lcom/bumptech/glide/i/a$d;->b(I)Ljava/io/File;
 
     move-result-object v3
@@ -574,12 +517,10 @@
 
     if-nez v3, :cond_0
 
-    .line 51
     invoke-virtual {p1}, Lcom/bumptech/glide/i/a$c;->a()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 52
     monitor-exit p0
 
     return-void
@@ -589,12 +530,10 @@
 
     goto :goto_0
 
-    .line 53
     :cond_1
     :try_start_1
     invoke-virtual {p1}, Lcom/bumptech/glide/i/a$c;->a()V
 
-    .line 54
     new-instance p1, Ljava/lang/IllegalStateException;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -615,55 +554,46 @@
 
     throw p1
 
-    .line 55
     :cond_2
     :goto_1
     iget p1, p0, Lcom/bumptech/glide/i/a;->g:I
 
     if-ge v1, p1, :cond_5
 
-    .line 56
     invoke-virtual {v0, v1}, Lcom/bumptech/glide/i/a$d;->b(I)Ljava/io/File;
 
     move-result-object p1
 
     if-eqz p2, :cond_3
 
-    .line 57
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v2
 
     if-eqz v2, :cond_4
 
-    .line 58
     invoke-virtual {v0, v1}, Lcom/bumptech/glide/i/a$d;->a(I)Ljava/io/File;
 
     move-result-object v2
 
-    .line 59
     invoke-virtual {p1, v2}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
-    .line 60
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->a(Lcom/bumptech/glide/i/a$d;)[J
 
     move-result-object p1
 
     aget-wide v3, p1, v1
 
-    .line 61
     invoke-virtual {v2}, Ljava/io/File;->length()J
 
     move-result-wide v5
 
-    .line 62
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->a(Lcom/bumptech/glide/i/a$d;)[J
 
     move-result-object p1
 
     aput-wide v5, p1, v1
 
-    .line 63
     iget-wide v7, p0, Lcom/bumptech/glide/i/a;->h:J
 
     sub-long/2addr v7, v3
@@ -674,7 +604,6 @@
 
     goto :goto_2
 
-    .line 64
     :cond_3
     invoke-static {p1}, Lcom/bumptech/glide/i/a;->a(Ljava/io/File;)V
 
@@ -684,7 +613,6 @@
 
     goto :goto_1
 
-    .line 65
     :cond_5
     iget p1, p0, Lcom/bumptech/glide/i/a;->k:I
 
@@ -696,10 +624,8 @@
 
     const/4 p1, 0x0
 
-    .line 66
     invoke-static {v0, p1}, Lcom/bumptech/glide/i/a$d;->a(Lcom/bumptech/glide/i/a$d;Lcom/bumptech/glide/i/a$c;)Lcom/bumptech/glide/i/a$c;
 
-    .line 67
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->d(Lcom/bumptech/glide/i/a$d;)Z
 
     move-result p1
@@ -712,22 +638,18 @@
 
     if-eqz p1, :cond_6
 
-    .line 68
     invoke-static {v0, v1}, Lcom/bumptech/glide/i/a$d;->a(Lcom/bumptech/glide/i/a$d;Z)Z
 
-    .line 69
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     const-string v1, "CLEAN"
 
     invoke-virtual {p1, v1}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    .line 70
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {p1, v3}, Ljava/io/Writer;->append(C)Ljava/io/Writer;
 
-    .line 71
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->b(Lcom/bumptech/glide/i/a$d;)Ljava/lang/String;
@@ -736,7 +658,6 @@
 
     invoke-virtual {p1, v1}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    .line 72
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {v0}, Lcom/bumptech/glide/i/a$d;->a()Ljava/lang/String;
@@ -745,14 +666,12 @@
 
     invoke-virtual {p1, v1}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    .line 73
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {p1, v2}, Ljava/io/Writer;->append(C)Ljava/io/Writer;
 
     if-eqz p2, :cond_7
 
-    .line 74
     iget-wide p1, p0, Lcom/bumptech/glide/i/a;->l:J
 
     const-wide/16 v1, 0x1
@@ -765,7 +684,6 @@
 
     goto :goto_3
 
-    .line 75
     :cond_6
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
@@ -775,19 +693,16 @@
 
     invoke-virtual {p1, p2}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 76
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     const-string p2, "REMOVE"
 
     invoke-virtual {p1, p2}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    .line 77
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {p1, v3}, Ljava/io/Writer;->append(C)Ljava/io/Writer;
 
-    .line 78
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->b(Lcom/bumptech/glide/i/a$d;)Ljava/lang/String;
@@ -796,19 +711,16 @@
 
     invoke-virtual {p1, p2}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    .line 79
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {p1, v2}, Ljava/io/Writer;->append(C)Ljava/io/Writer;
 
-    .line 80
     :cond_7
     :goto_3
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {p1}, Ljava/io/Writer;->flush()V
 
-    .line 81
     iget-wide p1, p0, Lcom/bumptech/glide/i/a;->h:J
 
     iget-wide v0, p0, Lcom/bumptech/glide/i/a;->f:J
@@ -823,7 +735,6 @@
 
     if-eqz p1, :cond_9
 
-    .line 82
     :cond_8
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->m:Ljava/util/concurrent/ThreadPoolExecutor;
 
@@ -833,13 +744,11 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 83
     :cond_9
     monitor-exit p0
 
     return-void
 
-    .line 84
     :cond_a
     :try_start_2
     new-instance p1, Ljava/lang/IllegalStateException;
@@ -866,7 +775,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/bumptech/glide/i/a;->a(Lcom/bumptech/glide/i/a$c;Z)V
 
     return-void
@@ -880,7 +788,6 @@
         }
     .end annotation
 
-    .line 23
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -895,7 +802,6 @@
 
     goto :goto_0
 
-    .line 24
     :cond_0
     new-instance p0, Ljava/io/IOException;
 
@@ -918,10 +824,8 @@
 
     if-eqz p2, :cond_0
 
-    .line 25
     invoke-static {p1}, Lcom/bumptech/glide/i/a;->a(Ljava/io/File;)V
 
-    .line 26
     :cond_0
     invoke-virtual {p0, p1}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
@@ -931,7 +835,6 @@
 
     return-void
 
-    .line 27
     :cond_1
     new-instance p0, Ljava/io/IOException;
 
@@ -943,7 +846,6 @@
 .method static synthetic b(Lcom/bumptech/glide/i/a;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/bumptech/glide/i/a;->g:I
 
     return p0
@@ -952,14 +854,12 @@
 .method private b()V
     .locals 2
 
-    .line 18
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 19
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -978,7 +878,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/i/a;->g()V
 
     return-void
@@ -987,7 +886,6 @@
 .method private c()Z
     .locals 2
 
-    .line 2
     iget v0, p0, Lcom/bumptech/glide/i/a;->k:I
 
     const/16 v1, 0x7d0
@@ -996,7 +894,6 @@
 
     iget-object v1, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
-    .line 3
     invoke-virtual {v1}, Ljava/util/LinkedHashMap;->size()I
 
     move-result v1
@@ -1017,7 +914,6 @@
 .method static synthetic d(Lcom/bumptech/glide/i/a;)Ljava/io/File;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/bumptech/glide/i/a;->a:Ljava/io/File;
 
     return-object p0
@@ -1031,12 +927,10 @@
         }
     .end annotation
 
-    .line 21
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->c:Ljava/io/File;
 
     invoke-static {v0}, Lcom/bumptech/glide/i/a;->a(Ljava/io/File;)V
 
-    .line 22
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
@@ -1055,14 +949,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 23
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/bumptech/glide/i/a$d;
 
-    .line 24
     invoke-static {v1}, Lcom/bumptech/glide/i/a$d;->e(Lcom/bumptech/glide/i/a$d;)Lcom/bumptech/glide/i/a$c;
 
     move-result-object v2
@@ -1071,13 +963,11 @@
 
     if-nez v2, :cond_1
 
-    .line 25
     :goto_1
     iget v2, p0, Lcom/bumptech/glide/i/a;->g:I
 
     if-ge v3, v2, :cond_0
 
-    .line 26
     iget-wide v4, p0, Lcom/bumptech/glide/i/a;->h:J
 
     invoke-static {v1}, Lcom/bumptech/glide/i/a$d;->a(Lcom/bumptech/glide/i/a$d;)[J
@@ -1097,23 +987,19 @@
     :cond_1
     const/4 v2, 0x0
 
-    .line 27
     invoke-static {v1, v2}, Lcom/bumptech/glide/i/a$d;->a(Lcom/bumptech/glide/i/a$d;Lcom/bumptech/glide/i/a$c;)Lcom/bumptech/glide/i/a$c;
 
-    .line 28
     :goto_2
     iget v2, p0, Lcom/bumptech/glide/i/a;->g:I
 
     if-ge v3, v2, :cond_2
 
-    .line 29
     invoke-virtual {v1, v3}, Lcom/bumptech/glide/i/a$d;->a(I)Ljava/io/File;
 
     move-result-object v2
 
     invoke-static {v2}, Lcom/bumptech/glide/i/a;->a(Ljava/io/File;)V
 
-    .line 30
     invoke-virtual {v1, v3}, Lcom/bumptech/glide/i/a$d;->b(I)Ljava/io/File;
 
     move-result-object v2
@@ -1124,7 +1010,6 @@
 
     goto :goto_2
 
-    .line 31
     :cond_2
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
@@ -1144,7 +1029,6 @@
 
     const/16 v0, 0x20
 
-    .line 2
     invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(I)I
 
     move-result v1
@@ -1157,14 +1041,12 @@
 
     add-int/lit8 v4, v1, 0x1
 
-    .line 3
     invoke-virtual {p1, v0, v4}, Ljava/lang/String;->indexOf(II)I
 
     move-result v0
 
     if-ne v0, v3, :cond_0
 
-    .line 4
     invoke-virtual {p1, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v4
@@ -1175,27 +1057,23 @@
 
     const-string v5, "REMOVE"
 
-    .line 5
     invoke-virtual {p1, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_1
 
-    .line 6
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
     invoke-virtual {p1, v4}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
 
-    .line 7
     :cond_0
     invoke-virtual {p1, v4, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 8
     :cond_1
     iget-object v5, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
@@ -1209,12 +1087,10 @@
 
     if-nez v5, :cond_2
 
-    .line 9
     new-instance v5, Lcom/bumptech/glide/i/a$d;
 
     invoke-direct {v5, p0, v4, v6}, Lcom/bumptech/glide/i/a$d;-><init>(Lcom/bumptech/glide/i/a;Ljava/lang/String;Lcom/bumptech/glide/i/a$a;)V
 
-    .line 10
     iget-object v7, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v7, v4, v5}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -1228,7 +1104,6 @@
 
     const-string v7, "CLEAN"
 
-    .line 11
     invoke-virtual {p1, v7}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v7
@@ -1239,7 +1114,6 @@
 
     add-int/2addr v0, v1
 
-    .line 12
     invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
@@ -1250,13 +1124,10 @@
 
     move-result-object p1
 
-    .line 13
     invoke-static {v5, v1}, Lcom/bumptech/glide/i/a$d;->a(Lcom/bumptech/glide/i/a$d;Z)Z
 
-    .line 14
     invoke-static {v5, v6}, Lcom/bumptech/glide/i/a$d;->a(Lcom/bumptech/glide/i/a$d;Lcom/bumptech/glide/i/a$c;)Lcom/bumptech/glide/i/a$c;
 
-    .line 15
     invoke-static {v5, p1}, Lcom/bumptech/glide/i/a$d;->a(Lcom/bumptech/glide/i/a$d;[Ljava/lang/String;)V
 
     goto :goto_0
@@ -1268,14 +1139,12 @@
 
     const-string v4, "DIRTY"
 
-    .line 16
     invoke-virtual {p1, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
 
     if-eqz v4, :cond_4
 
-    .line 17
     new-instance p1, Lcom/bumptech/glide/i/a$c;
 
     invoke-direct {p1, p0, v5, v6}, Lcom/bumptech/glide/i/a$c;-><init>(Lcom/bumptech/glide/i/a;Lcom/bumptech/glide/i/a$d;Lcom/bumptech/glide/i/a$a;)V
@@ -1293,7 +1162,6 @@
 
     const-string v0, "READ"
 
-    .line 18
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
@@ -1303,7 +1171,6 @@
     :goto_0
     return-void
 
-    .line 19
     :cond_5
     new-instance v0, Ljava/io/IOException;
 
@@ -1323,7 +1190,6 @@
 
     throw v0
 
-    .line 20
     :cond_6
     new-instance v0, Ljava/io/IOException;
 
@@ -1354,7 +1220,6 @@
 
     const-string v0, ", "
 
-    .line 2
     new-instance v1, Lcom/bumptech/glide/i/b;
 
     new-instance v2, Ljava/io/FileInputStream;
@@ -1367,35 +1232,29 @@
 
     invoke-direct {v1, v2, v3}, Lcom/bumptech/glide/i/b;-><init>(Ljava/io/InputStream;Ljava/nio/charset/Charset;)V
 
-    .line 3
     :try_start_0
     invoke-virtual {v1}, Lcom/bumptech/glide/i/b;->b()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 4
     invoke-virtual {v1}, Lcom/bumptech/glide/i/b;->b()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 5
     invoke-virtual {v1}, Lcom/bumptech/glide/i/b;->b()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 6
     invoke-virtual {v1}, Lcom/bumptech/glide/i/b;->b()Ljava/lang/String;
 
     move-result-object v5
 
-    .line 7
     invoke-virtual {v1}, Lcom/bumptech/glide/i/b;->b()Ljava/lang/String;
 
     move-result-object v6
 
     const-string v7, "libcore.io.DiskLruCache"
 
-    .line 8
     invoke-virtual {v7, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
@@ -1404,7 +1263,6 @@
 
     const-string v7, "1"
 
-    .line 9
     invoke-virtual {v7, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v7
@@ -1413,7 +1271,6 @@
 
     iget v7, p0, Lcom/bumptech/glide/i/a;->e:I
 
-    .line 10
     invoke-static {v7}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v7
@@ -1426,7 +1283,6 @@
 
     iget v4, p0, Lcom/bumptech/glide/i/a;->g:I
 
-    .line 11
     invoke-static {v4}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v4
@@ -1439,7 +1295,6 @@
 
     const-string v4, ""
 
-    .line 12
     invoke-virtual {v4, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -1450,7 +1305,6 @@
 
     const/4 v0, 0x0
 
-    .line 13
     :goto_0
     :try_start_1
     invoke-virtual {v1}, Lcom/bumptech/glide/i/b;->b()Ljava/lang/String;
@@ -1466,7 +1320,6 @@
 
     goto :goto_0
 
-    .line 14
     :catch_0
     :try_start_2
     iget-object v2, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
@@ -1479,19 +1332,16 @@
 
     iput v0, p0, Lcom/bumptech/glide/i/a;->k:I
 
-    .line 15
     invoke-virtual {v1}, Lcom/bumptech/glide/i/b;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 16
     invoke-direct {p0}, Lcom/bumptech/glide/i/a;->f()V
 
     goto :goto_1
 
-    .line 17
     :cond_0
     new-instance v0, Ljava/io/BufferedWriter;
 
@@ -1515,13 +1365,11 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 18
     :goto_1
     invoke-static {v1}, Lcom/bumptech/glide/i/c;->a(Ljava/io/Closeable;)V
 
     return-void
 
-    .line 19
     :cond_1
     :try_start_3
     new-instance v4, Ljava/io/IOException;
@@ -1565,7 +1413,6 @@
     :catchall_0
     move-exception v0
 
-    .line 20
     invoke-static {v1}, Lcom/bumptech/glide/i/c;->a(Ljava/io/Closeable;)V
 
     throw v0
@@ -1574,7 +1421,6 @@
 .method static synthetic e(Lcom/bumptech/glide/i/a;)Z
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/i/a;->c()Z
 
     move-result p0
@@ -1592,18 +1438,15 @@
 
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {v0}, Ljava/io/Writer;->close()V
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/io/BufferedWriter;
 
@@ -1626,25 +1469,20 @@
     :try_start_1
     const-string v1, "libcore.io.DiskLruCache"
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     const-string v1, "\n"
 
-    .line 6
     invoke-virtual {v0, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     const-string v1, "1"
 
-    .line 7
     invoke-virtual {v0, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     const-string v1, "\n"
 
-    .line 8
     invoke-virtual {v0, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
-    .line 9
     iget v1, p0, Lcom/bumptech/glide/i/a;->e:I
 
     invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
@@ -1655,10 +1493,8 @@
 
     const-string v1, "\n"
 
-    .line 10
     invoke-virtual {v0, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
-    .line 11
     iget v1, p0, Lcom/bumptech/glide/i/a;->g:I
 
     invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
@@ -1669,15 +1505,12 @@
 
     const-string v1, "\n"
 
-    .line 12
     invoke-virtual {v0, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     const-string v1, "\n"
 
-    .line 13
     invoke-virtual {v0, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
-    .line 14
     iget-object v1, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
@@ -1701,7 +1534,6 @@
 
     check-cast v2, Lcom/bumptech/glide/i/a$d;
 
-    .line 15
     invoke-static {v2}, Lcom/bumptech/glide/i/a$d;->e(Lcom/bumptech/glide/i/a$d;)Lcom/bumptech/glide/i/a$c;
 
     move-result-object v3
@@ -1710,7 +1542,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 16
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1735,7 +1566,6 @@
 
     goto :goto_0
 
-    .line 17
     :cond_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1769,12 +1599,10 @@
 
     goto :goto_0
 
-    .line 18
     :cond_2
     :try_start_2
     invoke-virtual {v0}, Ljava/io/Writer;->close()V
 
-    .line 19
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->b:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
@@ -1785,14 +1613,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 20
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->b:Ljava/io/File;
 
     iget-object v2, p0, Lcom/bumptech/glide/i/a;->d:Ljava/io/File;
 
     invoke-static {v0, v2, v1}, Lcom/bumptech/glide/i/a;->a(Ljava/io/File;Ljava/io/File;Z)V
 
-    .line 21
     :cond_3
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->c:Ljava/io/File;
 
@@ -1802,12 +1628,10 @@
 
     invoke-static {v0, v2, v3}, Lcom/bumptech/glide/i/a;->a(Ljava/io/File;Ljava/io/File;Z)V
 
-    .line 22
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->d:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
-    .line 23
     new-instance v0, Ljava/io/BufferedWriter;
 
     new-instance v2, Ljava/io/OutputStreamWriter;
@@ -1828,7 +1652,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 24
     monitor-exit p0
 
     return-void
@@ -1836,7 +1659,6 @@
     :catchall_0
     move-exception v1
 
-    .line 25
     :try_start_3
     invoke-virtual {v0}, Ljava/io/Writer;->close()V
 
@@ -1860,7 +1682,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/i/a;->f()V
 
     return-void
@@ -1874,7 +1695,6 @@
         }
     .end annotation
 
-    .line 1
     :goto_0
     iget-wide v0, p0, Lcom/bumptech/glide/i/a;->h:J
 
@@ -1884,7 +1704,6 @@
 
     if-lez v4, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
@@ -1901,7 +1720,6 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -1928,7 +1746,6 @@
 
     const-wide/16 v0, -0x1
 
-    .line 28
     invoke-direct {p0, p1, v0, v1}, Lcom/bumptech/glide/i/a;->a(Ljava/lang/String;J)Lcom/bumptech/glide/i/a$c;
 
     move-result-object p1
@@ -1944,10 +1761,8 @@
         }
     .end annotation
 
-    .line 85
     invoke-virtual {p0}, Lcom/bumptech/glide/i/a;->close()V
 
-    .line 86
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->a:Ljava/io/File;
 
     invoke-static {v0}, Lcom/bumptech/glide/i/c;->a(Ljava/io/File;)V
@@ -1965,11 +1780,9 @@
 
     monitor-enter p0
 
-    .line 2
     :try_start_0
     invoke-direct {p0}, Lcom/bumptech/glide/i/a;->b()V
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1984,12 +1797,10 @@
 
     if-nez v0, :cond_0
 
-    .line 4
     monitor-exit p0
 
     return-object v1
 
-    .line 5
     :cond_0
     :try_start_1
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->d(Lcom/bumptech/glide/i/a$d;)Z
@@ -2000,12 +1811,10 @@
 
     if-nez v2, :cond_1
 
-    .line 6
     monitor-exit p0
 
     return-object v1
 
-    .line 7
     :cond_1
     :try_start_2
     iget-object v2, v0, Lcom/bumptech/glide/i/a$d;->c:[Ljava/io/File;
@@ -2019,7 +1828,6 @@
 
     aget-object v5, v2, v4
 
-    .line 8
     invoke-virtual {v5}, Ljava/io/File;->exists()Z
 
     move-result v5
@@ -2028,7 +1836,6 @@
 
     if-nez v5, :cond_2
 
-    .line 9
     monitor-exit p0
 
     return-object v1
@@ -2038,7 +1845,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_3
     :try_start_3
     iget v1, p0, Lcom/bumptech/glide/i/a;->k:I
@@ -2047,47 +1853,40 @@
 
     iput v1, p0, Lcom/bumptech/glide/i/a;->k:I
 
-    .line 11
     iget-object v1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     const-string v2, "READ"
 
     invoke-virtual {v1, v2}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    .line 12
     iget-object v1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     const/16 v2, 0x20
 
     invoke-virtual {v1, v2}, Ljava/io/Writer;->append(C)Ljava/io/Writer;
 
-    .line 13
     iget-object v1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {v1, p1}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    .line 14
     iget-object v1, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     const/16 v2, 0xa
 
     invoke-virtual {v1, v2}, Ljava/io/Writer;->append(C)Ljava/io/Writer;
 
-    .line 15
     invoke-direct {p0}, Lcom/bumptech/glide/i/a;->c()Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
-    .line 16
     iget-object v1, p0, Lcom/bumptech/glide/i/a;->m:Ljava/util/concurrent/ThreadPoolExecutor;
 
     iget-object v2, p0, Lcom/bumptech/glide/i/a;->n:Ljava/util/concurrent/Callable;
 
     invoke-virtual {v1, v2}, Ljava/util/concurrent/ThreadPoolExecutor;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
 
-    .line 17
     :cond_4
     new-instance v8, Lcom/bumptech/glide/i/a$e;
 
@@ -2135,11 +1934,9 @@
 
     monitor-enter p0
 
-    .line 4
     :try_start_0
     invoke-direct {p0}, Lcom/bumptech/glide/i/a;->b()V
 
-    .line 5
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2152,7 +1949,6 @@
 
     if-eqz v0, :cond_5
 
-    .line 6
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->e(Lcom/bumptech/glide/i/a$d;)Lcom/bumptech/glide/i/a$c;
 
     move-result-object v2
@@ -2161,19 +1957,16 @@
 
     goto/16 :goto_2
 
-    .line 7
     :cond_0
     :goto_0
     iget v2, p0, Lcom/bumptech/glide/i/a;->g:I
 
     if-ge v1, v2, :cond_3
 
-    .line 8
     invoke-virtual {v0, v1}, Lcom/bumptech/glide/i/a$d;->a(I)Ljava/io/File;
 
     move-result-object v2
 
-    .line 9
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v3
@@ -2188,7 +1981,6 @@
 
     goto :goto_1
 
-    .line 10
     :cond_1
     new-instance p1, Ljava/io/IOException;
 
@@ -2210,7 +2002,6 @@
 
     throw p1
 
-    .line 11
     :cond_2
     :goto_1
     iget-wide v2, p0, Lcom/bumptech/glide/i/a;->h:J
@@ -2225,7 +2016,6 @@
 
     iput-wide v2, p0, Lcom/bumptech/glide/i/a;->h:J
 
-    .line 12
     invoke-static {v0}, Lcom/bumptech/glide/i/a$d;->a(Lcom/bumptech/glide/i/a$d;)[J
 
     move-result-object v2
@@ -2238,7 +2028,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_3
     iget v0, p0, Lcom/bumptech/glide/i/a;->k:I
 
@@ -2248,45 +2037,38 @@
 
     iput v0, p0, Lcom/bumptech/glide/i/a;->k:I
 
-    .line 14
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     const-string v2, "REMOVE"
 
     invoke-virtual {v0, v2}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    .line 15
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     const/16 v2, 0x20
 
     invoke-virtual {v0, v2}, Ljava/io/Writer;->append(C)Ljava/io/Writer;
 
-    .line 16
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {v0, p1}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
-    .line 17
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     const/16 v2, 0xa
 
     invoke-virtual {v0, v2}, Ljava/io/Writer;->append(C)Ljava/io/Writer;
 
-    .line 18
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->j:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 19
     invoke-direct {p0}, Lcom/bumptech/glide/i/a;->c()Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    .line 20
     iget-object p1, p0, Lcom/bumptech/glide/i/a;->m:Ljava/util/concurrent/ThreadPoolExecutor;
 
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->n:Ljava/util/concurrent/Callable;
@@ -2295,13 +2077,11 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 21
     :cond_4
     monitor-exit p0
 
     return v1
 
-    .line 22
     :cond_5
     :goto_2
     monitor-exit p0
@@ -2326,7 +2106,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
     :try_end_0
@@ -2334,12 +2113,10 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     monitor-exit p0
 
     return-void
 
-    .line 3
     :cond_0
     :try_start_1
     new-instance v0, Ljava/util/ArrayList;
@@ -2370,14 +2147,12 @@
 
     check-cast v1, Lcom/bumptech/glide/i/a$d;
 
-    .line 4
     invoke-static {v1}, Lcom/bumptech/glide/i/a$d;->e(Lcom/bumptech/glide/i/a$d;)Lcom/bumptech/glide/i/a$c;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    .line 5
     invoke-static {v1}, Lcom/bumptech/glide/i/a$d;->e(Lcom/bumptech/glide/i/a$d;)Lcom/bumptech/glide/i/a$c;
 
     move-result-object v1
@@ -2386,23 +2161,19 @@
 
     goto :goto_0
 
-    .line 6
     :cond_2
     invoke-direct {p0}, Lcom/bumptech/glide/i/a;->g()V
 
-    .line 7
     iget-object v0, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
 
     invoke-virtual {v0}, Ljava/io/Writer;->close()V
 
     const/4 v0, 0x0
 
-    .line 8
     iput-object v0, p0, Lcom/bumptech/glide/i/a;->i:Ljava/io/Writer;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 9
     monitor-exit p0
 
     return-void

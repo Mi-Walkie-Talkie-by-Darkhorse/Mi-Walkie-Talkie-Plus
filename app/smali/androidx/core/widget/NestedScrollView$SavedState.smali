@@ -1,6 +1,5 @@
 .class Landroidx/core/widget/NestedScrollView$SavedState;
 .super Landroid/view/View$BaseSavedState;
-.source "NestedScrollView.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/core/widget/NestedScrollView$SavedState$a;
 
     invoke-direct {v0}, Landroidx/core/widget/NestedScrollView$SavedState$a;-><init>()V
@@ -47,10 +45,8 @@
 .method constructor <init>(Landroid/os/Parcel;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcel;)V
 
-    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -63,7 +59,6 @@
 .method constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/view/View$BaseSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -76,7 +71,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -85,7 +79,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
     invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
     move-result v1
@@ -118,10 +111,8 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 2
     iget p2, p0, Landroidx/core/widget/NestedScrollView$SavedState;->a:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

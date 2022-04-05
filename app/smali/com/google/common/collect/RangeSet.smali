@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/collect/RangeSet;
 .super Ljava/lang/Object;
-.source "RangeSet.java"
 
 
 # annotations

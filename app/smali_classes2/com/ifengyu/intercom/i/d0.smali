@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/d0;
 .super Ljava/lang/Object;
-.source "MiTalkClientUtil.java"
 
 
 # static fields
@@ -31,12 +30,10 @@
 .method public static A()Landroid/content/SharedPreferences;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->f:Landroid/content/SharedPreferences;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -51,7 +48,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/i/d0;->f:Landroid/content/SharedPreferences;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->f:Landroid/content/SharedPreferences;
 
@@ -61,7 +57,6 @@
 .method public static B()I
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -80,7 +75,6 @@
 .method public static C()I
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -124,7 +118,6 @@
 .method public static E()I
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -143,7 +136,6 @@
 .method public static F()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -162,7 +154,6 @@
 .method public static G()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -181,7 +172,6 @@
 .method public static H()I
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -200,12 +190,10 @@
 .method public static I()Landroid/content/SharedPreferences;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->g:Landroid/content/SharedPreferences;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -220,7 +208,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/i/d0;->g:Landroid/content/SharedPreferences;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->g:Landroid/content/SharedPreferences;
 
@@ -230,7 +217,6 @@
 .method public static J()I
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -295,7 +281,6 @@
 .method public static L()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -314,7 +299,6 @@
 .method public static M()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -333,7 +317,6 @@
 .method public static N()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -352,7 +335,6 @@
 .method public static O()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -371,7 +353,6 @@
 .method public static P()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -390,7 +371,6 @@
 .method public static Q()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -409,12 +389,10 @@
 .method public static R()Landroid/content/SharedPreferences;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->d:Landroid/content/SharedPreferences;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -429,7 +407,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/i/d0;->d:Landroid/content/SharedPreferences;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->d:Landroid/content/SharedPreferences;
 
@@ -439,7 +416,6 @@
 .method public static S()I
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -458,7 +434,6 @@
 .method public static T()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -477,7 +452,6 @@
 .method public static U()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->f()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -496,7 +470,6 @@
 .method public static V()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -515,7 +488,6 @@
 .method public static W()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -534,7 +506,6 @@
 .method public static X()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -553,7 +524,6 @@
 .method public static Y()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -572,7 +542,6 @@
 .method public static Z()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -595,7 +564,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 11
     invoke-static {p0}, Lcom/ifengyu/intercom/i/d0;->c(Ljava/lang/String;)Landroid/content/SharedPreferences;
 
     move-result-object p0
@@ -613,7 +581,6 @@
 .method public static a()V
     .locals 1
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -628,7 +595,6 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -643,7 +609,6 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -660,7 +625,6 @@
 
     const/4 v0, 0x1
 
-    .line 6
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->i(Z)V
 
     return-void
@@ -669,7 +633,6 @@
 .method public static a(DD)V
     .locals 1
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -678,7 +641,6 @@
 
     move-result-object v0
 
-    .line 14
     invoke-static {p0, p1}, Ljava/lang/String;->valueOf(D)Ljava/lang/String;
 
     move-result-object p0
@@ -687,7 +649,6 @@
 
     invoke-interface {v0, p1, p0}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 15
     invoke-static {p2, p3}, Ljava/lang/String;->valueOf(D)Ljava/lang/String;
 
     move-result-object p0
@@ -696,7 +657,6 @@
 
     invoke-interface {v0, p1, p0}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 16
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     return-void
@@ -705,7 +665,6 @@
 .method public static a(DDI)V
     .locals 1
 
-    .line 17
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -714,7 +673,6 @@
 
     move-result-object v0
 
-    .line 18
     invoke-static {p0, p1}, Ljava/lang/String;->valueOf(D)Ljava/lang/String;
 
     move-result-object p0
@@ -723,7 +681,6 @@
 
     invoke-interface {v0, p1, p0}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 19
     invoke-static {p2, p3}, Ljava/lang/String;->valueOf(D)Ljava/lang/String;
 
     move-result-object p0
@@ -734,10 +691,8 @@
 
     const-string p0, "altitude_pre"
 
-    .line 20
     invoke-interface {v0, p0, p4}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
-    .line 21
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     return-void
@@ -746,7 +701,6 @@
 .method public static a(IZ)V
     .locals 3
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -785,7 +739,6 @@
 .method public static a(J)V
     .locals 2
 
-    .line 12
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -810,7 +763,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     :try_start_0
     invoke-interface {p0}, Ljava/io/Closeable;->close()V
     :try_end_0
@@ -825,7 +777,6 @@
 
     const-string v1, "closeCloseable exception:"
 
-    .line 2
     invoke-static {v0, v1, p0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_0
@@ -842,7 +793,6 @@
 
     const/4 p1, 0x1
 
-    .line 9
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
@@ -876,7 +826,6 @@
 .method public static a(Ljava/lang/String;J)V
     .locals 1
 
-    .line 10
     invoke-static {p0}, Lcom/ifengyu/intercom/i/d0;->c(Ljava/lang/String;)Landroid/content/SharedPreferences;
 
     move-result-object p0
@@ -899,7 +848,6 @@
 .method public static a(Z)V
     .locals 2
 
-    .line 22
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->f()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -922,7 +870,6 @@
 .method public static a(I)Z
     .locals 3
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -955,7 +902,6 @@
 .method public static a0()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -974,7 +920,6 @@
 .method public static b(Ljava/lang/String;)I
     .locals 4
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1003,7 +948,6 @@
 .method public static b()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1018,7 +962,6 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1033,7 +976,6 @@
 
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1050,10 +992,8 @@
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->f(Ljava/lang/String;)V
 
-    .line 5
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->e(Ljava/lang/String;)V
 
     return-void
@@ -1062,7 +1002,6 @@
 .method public static b(I)V
     .locals 2
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1085,7 +1024,6 @@
 .method public static b(Z)V
     .locals 2
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1108,7 +1046,6 @@
 .method public static b0()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1127,7 +1064,6 @@
 .method public static c(Ljava/lang/String;)Landroid/content/SharedPreferences;
     .locals 4
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -1168,7 +1104,6 @@
 .method public static c()V
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1189,7 +1124,6 @@
 .method public static c(I)V
     .locals 2
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1212,7 +1146,6 @@
 .method public static c(Z)V
     .locals 2
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1235,7 +1168,6 @@
 .method public static c0()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1254,12 +1186,10 @@
 .method public static d()Landroid/content/SharedPreferences;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->b:Landroid/content/SharedPreferences;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -1274,7 +1204,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/i/d0;->b:Landroid/content/SharedPreferences;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->b:Landroid/content/SharedPreferences;
 
@@ -1284,7 +1213,6 @@
 .method public static d(I)V
     .locals 2
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1307,7 +1235,6 @@
 .method public static d(Ljava/lang/String;)V
     .locals 2
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1330,7 +1257,6 @@
 .method public static d(Z)V
     .locals 2
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1353,7 +1279,6 @@
 .method public static d0()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1372,7 +1297,6 @@
 .method public static e()Ljava/lang/String;
     .locals 3
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1391,7 +1315,6 @@
 .method public static e(I)V
     .locals 2
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->f()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1414,7 +1337,6 @@
 .method public static e(Ljava/lang/String;)V
     .locals 2
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->f()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1437,7 +1359,6 @@
 .method public static e(Z)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1460,7 +1381,6 @@
 .method public static e0()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1479,12 +1399,10 @@
 .method public static f()Landroid/content/SharedPreferences;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->h:Landroid/content/SharedPreferences;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -1499,7 +1417,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/i/d0;->h:Landroid/content/SharedPreferences;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->h:Landroid/content/SharedPreferences;
 
@@ -1509,7 +1426,6 @@
 .method public static f(I)V
     .locals 2
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1532,7 +1448,6 @@
 .method public static f(Ljava/lang/String;)V
     .locals 2
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->f()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1555,7 +1470,6 @@
 .method public static f(Z)V
     .locals 2
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1578,7 +1492,6 @@
 .method public static f0()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1649,7 +1562,6 @@
 .method public static g()I
     .locals 3
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->f()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1668,7 +1580,6 @@
 .method public static g(I)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1691,7 +1602,6 @@
 .method public static g(Ljava/lang/String;)V
     .locals 2
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1714,7 +1624,6 @@
 .method public static g(Z)V
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1737,7 +1646,6 @@
 .method public static g0()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1756,7 +1664,6 @@
 .method public static h()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1775,7 +1682,6 @@
 .method public static h(I)V
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1798,7 +1704,6 @@
 .method public static h(Ljava/lang/String;)V
     .locals 2
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1821,7 +1726,6 @@
 .method public static h(Z)V
     .locals 2
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1844,7 +1748,6 @@
 .method public static h0()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1869,7 +1772,6 @@
 .method public static i()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1888,7 +1790,6 @@
 .method public static i(I)V
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1911,7 +1812,6 @@
 .method public static i(Ljava/lang/String;)V
     .locals 2
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1934,7 +1834,6 @@
 .method public static i(Z)V
     .locals 2
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1957,7 +1856,6 @@
 .method public static i0()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -1982,12 +1880,10 @@
 .method public static j()Landroid/content/SharedPreferences;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->e:Landroid/content/SharedPreferences;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -2002,7 +1898,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/i/d0;->e:Landroid/content/SharedPreferences;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/i/d0;->e:Landroid/content/SharedPreferences;
 
@@ -2012,7 +1907,6 @@
 .method public static j(I)V
     .locals 2
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2035,7 +1929,6 @@
 .method public static j(Ljava/lang/String;)V
     .locals 2
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2058,7 +1951,6 @@
 .method public static j(Z)V
     .locals 2
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2081,7 +1973,6 @@
 .method public static k()I
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2100,7 +1991,6 @@
 .method public static k(I)V
     .locals 2
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2123,7 +2013,6 @@
 .method public static k(Ljava/lang/String;)V
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->j()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2146,7 +2035,6 @@
 .method public static k(Z)V
     .locals 2
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2194,7 +2082,6 @@
 .method public static l(I)V
     .locals 2
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2217,7 +2104,6 @@
 .method public static l(Ljava/lang/String;)V
     .locals 2
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2240,7 +2126,6 @@
 .method public static l(Z)V
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2263,7 +2148,6 @@
 .method public static m()J
     .locals 4
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2282,7 +2166,6 @@
 .method public static m(I)V
     .locals 2
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2305,7 +2188,6 @@
 .method public static m(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2328,7 +2210,6 @@
 .method public static m(Z)V
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2351,7 +2232,6 @@
 .method public static n()I
     .locals 3
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2370,7 +2250,6 @@
 .method public static n(I)V
     .locals 2
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2393,7 +2272,6 @@
 .method public static n(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2416,7 +2294,6 @@
 .method public static n(Z)V
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2439,7 +2316,6 @@
 .method public static o()Ljava/lang/String;
     .locals 3
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2452,14 +2328,12 @@
 
     move-result-object v0
 
-    .line 5
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -2468,7 +2342,6 @@
 
     move-result-object v0
 
-    .line 7
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->l(Ljava/lang/String;)V
 
     :cond_0
@@ -2478,7 +2351,6 @@
 .method public static o(I)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2501,7 +2373,6 @@
 .method public static o(Ljava/lang/String;)V
     .locals 2
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2524,7 +2395,6 @@
 .method public static o(Z)V
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2547,7 +2417,6 @@
 .method public static p()Ljava/lang/String;
     .locals 3
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->f()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2566,7 +2435,6 @@
 .method public static p(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2589,7 +2457,6 @@
 .method public static p(Z)V
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2612,7 +2479,6 @@
 .method public static q()Ljava/lang/String;
     .locals 3
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->f()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2631,7 +2497,6 @@
 .method public static q(Z)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->I()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2658,7 +2523,6 @@
 
     new-array v0, v0, [D
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v1
@@ -2683,7 +2547,6 @@
 
     aput-wide v1, v0, v3
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v1
@@ -2718,7 +2581,6 @@
 
     new-array v0, v0, [D
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v1
@@ -2743,7 +2605,6 @@
 
     aput-wide v1, v0, v3
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v1
@@ -2768,7 +2629,6 @@
 
     aput-wide v1, v0, v4
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->d()Landroid/content/SharedPreferences;
 
     move-result-object v1
@@ -2791,7 +2651,6 @@
 .method public static t()I
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2810,7 +2669,6 @@
 .method public static u()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2829,7 +2687,6 @@
 .method public static v()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2848,7 +2705,6 @@
 .method public static w()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2867,7 +2723,6 @@
 .method public static x()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2886,7 +2741,6 @@
 .method public static y()Z
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -2905,7 +2759,6 @@
 .method public static z()I
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->A()Landroid/content/SharedPreferences;
 
     move-result-object v0

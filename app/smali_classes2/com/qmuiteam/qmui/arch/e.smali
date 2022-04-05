@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/arch/e;
 .super Lcom/qmuiteam/qmui/arch/b;
-.source "QMUINavFragment.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/arch/c;
@@ -14,7 +13,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/qmuiteam/qmui/arch/b;-><init>()V
 
     return-void
@@ -29,13 +27,11 @@
 
     const/4 v2, 0x0
 
-    .line 1
     :try_start_0
     invoke-static {p1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v3
 
-    .line 2
     invoke-virtual {v3}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
     move-result-object v3
@@ -44,14 +40,12 @@
 
     const-string v4, "qmui_argument_fragment_arg"
 
-    .line 3
     invoke-virtual {p2, v4}, Landroid/os/Bundle;->getBundle(Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object p2
 
     if-eqz p2, :cond_0
 
-    .line 4
     invoke-virtual {v3, p2}, Landroidx/fragment/app/Fragment;->setArguments(Landroid/os/Bundle;)V
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_2
@@ -61,7 +55,6 @@
     :cond_0
     return-object v3
 
-    .line 5
     :catch_0
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -83,7 +76,6 @@
 
     goto :goto_0
 
-    .line 6
     :catch_1
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -107,7 +99,6 @@
 
     goto :goto_0
 
-    .line 7
     :catch_2
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -144,14 +135,12 @@
         .end annotation
     .end param
 
-    .line 8
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/e;->y:Landroidx/fragment/app/FragmentContainerView;
 
     if-eqz p1, :cond_0
 
     return-void
 
-    .line 9
     :cond_0
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -165,10 +154,8 @@
 .method protected a(Landroidx/fragment/app/FragmentContainerView;)V
     .locals 1
 
-    .line 10
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/e;->y:Landroidx/fragment/app/FragmentContainerView;
 
-    .line 11
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/e;->g()I
 
     move-result v0
@@ -189,7 +176,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/e;->y:Landroidx/fragment/app/FragmentContainerView;
 
     return-object v0
@@ -198,7 +184,6 @@
 .method public f()Landroidx/fragment/app/FragmentManager;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v0
@@ -209,7 +194,6 @@
 .method public g()I
     .locals 1
 
-    .line 1
     sget v0, Lcom/qmuiteam/qmui/arch/R$id;->qmui_activity_fragment_container_id:I
 
     return v0
@@ -222,10 +206,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lcom/qmuiteam/qmui/arch/b;->onAttach(Landroid/content/Context;)V
 
-    .line 2
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object p1
@@ -246,12 +228,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
     if-nez p1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/e;->x()V
 
     :cond_0
@@ -261,12 +241,10 @@
 .method public onDestroyView()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/qmuiteam/qmui/arch/b;->onDestroyView()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/qmuiteam/qmui/arch/e;->y:Landroidx/fragment/app/FragmentContainerView;
 
     return-void
@@ -275,7 +253,6 @@
 .method protected p()Landroid/view/View;
     .locals 2
 
-    .line 1
     new-instance v0, Landroidx/fragment/app/FragmentContainerView;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -286,7 +263,6 @@
 
     invoke-virtual {p0, v0}, Lcom/qmuiteam/qmui/arch/e;->a(Landroidx/fragment/app/FragmentContainerView;)V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/e;->y:Landroidx/fragment/app/FragmentContainerView;
 
     return-object v0
@@ -295,7 +271,6 @@
 .method protected x()V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
@@ -304,29 +279,24 @@
 
     const-string v1, "qmui_argument_dst_fragment"
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3
     invoke-direct {p0, v1, v0}, Lcom/qmuiteam/qmui/arch/e;->a(Ljava/lang/String;Landroid/os/Bundle;)Lcom/qmuiteam/qmui/arch/b;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v1
 
-    .line 5
     invoke-virtual {v1}, Landroidx/fragment/app/FragmentManager;->beginTransaction()Landroidx/fragment/app/FragmentTransaction;
 
     move-result-object v1
 
-    .line 6
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/e;->g()I
 
     move-result v2
@@ -343,7 +313,6 @@
 
     move-result-object v1
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -356,7 +325,6 @@
 
     move-result-object v0
 
-    .line 8
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentTransaction;->commit()I
 
     :cond_0

@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ds$c;
 .super Ljava/lang/Object;
-.source "AsyncTask.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Executor;
@@ -35,10 +34,8 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
@@ -51,7 +48,6 @@
 .method synthetic constructor <init>(B)V
     .locals 0
 
-    .line 3
     invoke-direct {p0}, Lcom/amap/api/col/l3/ds$c;-><init>()V
 
     return-void
@@ -64,7 +60,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ds$c;->a:Ljava/util/ArrayDeque;
 
@@ -78,14 +73,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     sget-object v1, Lcom/amap/api/col/l3/ds;->a:Ljava/util/concurrent/Executor;
 
     invoke-interface {v1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     :cond_0
     monitor-exit p0
 
@@ -104,7 +97,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ds$c;->a:Ljava/util/ArrayDeque;
 
@@ -114,17 +106,14 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayDeque;->offer(Ljava/lang/Object;)Z
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/ds$c;->b:Ljava/lang/Runnable;
 
     if-nez p1, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Lcom/amap/api/col/l3/ds$c;->a()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     :cond_0
     monitor-exit p0
 

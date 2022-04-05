@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/j$a;
 .super Landroid/view/GestureDetector$SimpleOnGestureListener;
-.source "ExpandTouchListener.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/j;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/j$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/j;
 
     invoke-direct {p0}, Landroid/view/GestureDetector$SimpleOnGestureListener;-><init>()V
@@ -35,7 +33,6 @@
 .method public onScroll(Landroid/view/MotionEvent;Landroid/view/MotionEvent;FF)Z
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/j$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/j;
 
     const/4 p2, 0x0

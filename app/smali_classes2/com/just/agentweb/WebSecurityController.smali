@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/WebSecurityController;
 .super Ljava/lang/Object;
-.source "WebSecurityController.java"
 
 
 # annotations

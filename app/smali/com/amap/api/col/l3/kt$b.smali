@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/kt$b;
 .super Landroid/os/HandlerThread;
-.source "MapLocationService.java"
 
 
 # annotations

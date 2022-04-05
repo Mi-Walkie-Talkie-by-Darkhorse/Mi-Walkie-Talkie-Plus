@@ -1,6 +1,5 @@
 .class public abstract Lcom/liulishuo/okdownload/core/IdentifiedTask;
 .super Ljava/lang/Object;
-.source "IdentifiedTask.java"
 
 
 # static fields
@@ -13,7 +12,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     const-string v1, ""
@@ -28,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +36,6 @@
 .method public compareIgnoreId(Lcom/liulishuo/okdownload/core/IdentifiedTask;)Z
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/IdentifiedTask;->getUrl()Ljava/lang/String;
 
     move-result-object v0
@@ -58,7 +54,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/IdentifiedTask;->getUrl()Ljava/lang/String;
 
@@ -86,7 +81,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/IdentifiedTask;->getProvidedPathFile()Ljava/io/File;
 
@@ -106,7 +100,6 @@
 
     return v2
 
-    .line 4
     :cond_2
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/IdentifiedTask;->getParentFile()Ljava/io/File;
 
@@ -124,13 +117,11 @@
 
     return v1
 
-    .line 5
     :cond_3
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/IdentifiedTask;->getFilename()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 6
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/IdentifiedTask;->getFilename()Ljava/lang/String;
 
     move-result-object p1
@@ -139,7 +130,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 7
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1

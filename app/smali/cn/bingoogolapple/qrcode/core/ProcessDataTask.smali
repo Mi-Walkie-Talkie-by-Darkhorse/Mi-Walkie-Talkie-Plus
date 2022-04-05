@@ -1,6 +1,5 @@
 .class public Lcn/bingoogolapple/qrcode/core/ProcessDataTask;
 .super Landroid/os/AsyncTask;
-.source "ProcessDataTask.java"
 
 
 # annotations
@@ -35,19 +34,14 @@
 .method public constructor <init>(Landroid/hardware/Camera;[BLcn/bingoogolapple/qrcode/core/ProcessDataTask$Delegate;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->mCamera:Landroid/hardware/Camera;
 
-    .line 3
     iput-object p2, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->mData:[B
 
-    .line 4
     iput-object p3, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->mDelegate:Lcn/bingoogolapple/qrcode/core/ProcessDataTask$Delegate;
 
-    .line 5
     iput p4, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->orientation:I
 
     return-void
@@ -58,7 +52,6 @@
 .method public cancelTask()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/os/AsyncTask;->getStatus()Landroid/os/AsyncTask$Status;
 
     move-result-object v0
@@ -69,7 +62,6 @@
 
     const/4 v0, 0x1
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/os/AsyncTask;->cancel(Z)Z
 
     :cond_0
@@ -79,7 +71,6 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, [Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->doInBackground([Ljava/lang/Void;)Ljava/lang/String;
@@ -92,28 +83,22 @@
 .method protected varargs doInBackground([Ljava/lang/Void;)Ljava/lang/String;
     .locals 10
 
-    .line 2
     iget-object p1, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->mCamera:Landroid/hardware/Camera;
 
     invoke-virtual {p1}, Landroid/hardware/Camera;->getParameters()Landroid/hardware/Camera$Parameters;
 
     move-result-object p1
 
-    .line 3
     invoke-virtual {p1}, Landroid/hardware/Camera$Parameters;->getPreviewSize()Landroid/hardware/Camera$Size;
 
     move-result-object p1
 
-    .line 4
     iget v0, p1, Landroid/hardware/Camera$Size;->width:I
 
-    .line 5
     iget p1, p1, Landroid/hardware/Camera$Size;->height:I
 
-    .line 6
     iget-object v1, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->mData:[B
 
-    .line 7
     iget v2, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->orientation:I
 
     const/4 v3, 0x0
@@ -122,7 +107,6 @@
 
     if-nez v2, :cond_2
 
-    .line 8
     array-length v1, v1
 
     new-array v1, v1, [B
@@ -145,7 +129,6 @@
 
     sub-int/2addr v6, v4
 
-    .line 9
     iget-object v7, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->mData:[B
 
     mul-int v8, v2, v0
@@ -175,7 +158,6 @@
     :cond_2
     const/4 v2, 0x0
 
-    .line 10
     :try_start_0
     iget-object v5, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->mDelegate:Lcn/bingoogolapple/qrcode/core/ProcessDataTask$Delegate;
 
@@ -183,7 +165,6 @@
 
     return-object v2
 
-    .line 11
     :cond_3
     iget-object v5, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->mDelegate:Lcn/bingoogolapple/qrcode/core/ProcessDataTask$Delegate;
 
@@ -195,7 +176,6 @@
 
     return-object p1
 
-    .line 12
     :catch_0
     :try_start_1
     iget-object v3, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->mDelegate:Lcn/bingoogolapple/qrcode/core/ProcessDataTask$Delegate;
@@ -215,12 +195,10 @@
 .method protected onCancelled()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/os/AsyncTask;->onCancelled()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcn/bingoogolapple/qrcode/core/ProcessDataTask;->mDelegate:Lcn/bingoogolapple/qrcode/core/ProcessDataTask$Delegate;
 
     return-void
@@ -229,7 +207,6 @@
 .method public perform()Lcn/bingoogolapple/qrcode/core/ProcessDataTask;
     .locals 3
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x0
@@ -238,7 +215,6 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 2
     sget-object v0, Landroid/os/AsyncTask;->THREAD_POOL_EXECUTOR:Ljava/util/concurrent/Executor;
 
     new-array v1, v1, [Ljava/lang/Void;
@@ -250,7 +226,6 @@
     :cond_0
     new-array v0, v1, [Ljava/lang/Void;
 
-    .line 3
     invoke-virtual {p0, v0}, Landroid/os/AsyncTask;->execute([Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     :goto_0

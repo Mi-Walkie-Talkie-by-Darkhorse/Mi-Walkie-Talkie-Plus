@@ -1,6 +1,5 @@
 .class public Landroidx/lifecycle/n;
 .super Ljava/lang/Object;
-.source "Lifecycling.java"
 
 
 # annotations
@@ -44,14 +43,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Landroidx/lifecycle/n;->a:Ljava/util/Map;
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -85,7 +82,6 @@
 
     aput-object p1, v0, v1
 
-    .line 19
     invoke-virtual {p0, v0}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -101,7 +97,6 @@
     :catch_0
     move-exception p0
 
-    .line 20
     new-instance p1, Ljava/lang/RuntimeException;
 
     invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -111,7 +106,6 @@
     :catch_1
     move-exception p0
 
-    .line 21
     new-instance p1, Ljava/lang/RuntimeException;
 
     invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -121,7 +115,6 @@
     :catch_2
     move-exception p0
 
-    .line 22
     new-instance p1, Ljava/lang/RuntimeException;
 
     invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -134,17 +127,14 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     instance-of v0, p0, Landroidx/lifecycle/i;
 
-    .line 2
     instance-of v1, p0, Landroidx/lifecycle/d;
 
     if-eqz v0, :cond_0
 
     if-eqz v1, :cond_0
 
-    .line 3
     new-instance v0, Landroidx/lifecycle/FullLifecycleObserverAdapter;
 
     move-object v1, p0
@@ -160,7 +150,6 @@
     :cond_0
     if-eqz v1, :cond_1
 
-    .line 4
     new-instance v0, Landroidx/lifecycle/FullLifecycleObserverAdapter;
 
     check-cast p0, Landroidx/lifecycle/d;
@@ -174,18 +163,15 @@
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 5
     check-cast p0, Landroidx/lifecycle/i;
 
     return-object p0
 
-    .line 6
     :cond_2
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 7
     invoke-static {v0}, Landroidx/lifecycle/n;->b(Ljava/lang/Class;)I
 
     move-result v1
@@ -194,17 +180,14 @@
 
     if-ne v1, v2, :cond_5
 
-    .line 8
     sget-object v1, Landroidx/lifecycle/n;->b:Ljava/util/Map;
 
-    .line 9
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/util/List;
 
-    .line 10
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -215,26 +198,22 @@
 
     if-ne v1, v3, :cond_3
 
-    .line 11
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/reflect/Constructor;
 
-    .line 12
     invoke-static {v0, p0}, Landroidx/lifecycle/n;->a(Ljava/lang/reflect/Constructor;Ljava/lang/Object;)Landroidx/lifecycle/e;
 
     move-result-object p0
 
-    .line 13
     new-instance v0, Landroidx/lifecycle/SingleGeneratedAdapterObserver;
 
     invoke-direct {v0, p0}, Landroidx/lifecycle/SingleGeneratedAdapterObserver;-><init>(Landroidx/lifecycle/e;)V
 
     return-object v0
 
-    .line 14
     :cond_3
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -242,7 +221,6 @@
 
     new-array v1, v1, [Landroidx/lifecycle/e;
 
-    .line 15
     :goto_0
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -250,7 +228,6 @@
 
     if-ge v2, v3, :cond_4
 
-    .line 16
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -267,7 +244,6 @@
 
     goto :goto_0
 
-    .line 17
     :cond_4
     new-instance p0, Landroidx/lifecycle/CompositeGeneratedAdaptersObserver;
 
@@ -275,7 +251,6 @@
 
     return-object p0
 
-    .line 18
     :cond_5
     new-instance v0, Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;
 
@@ -287,7 +262,6 @@
 .method public static a(Ljava/lang/String;)Ljava/lang/String;
     .locals 3
 
-    .line 35
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -330,20 +304,17 @@
         }
     .end annotation
 
-    .line 23
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Class;->getPackage()Ljava/lang/Package;
 
     move-result-object v0
 
-    .line 24
     invoke-virtual {p0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v0, :cond_0
 
-    .line 25
     invoke-virtual {v0}, Ljava/lang/Package;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -353,7 +324,6 @@
     :cond_0
     const-string v0, ""
 
-    .line 26
     :goto_0
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
@@ -365,7 +335,6 @@
 
     goto :goto_1
 
-    .line 27
     :cond_1
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -377,13 +346,11 @@
 
     move-result-object v1
 
-    .line 28
     :goto_1
     invoke-static {v1}, Landroidx/lifecycle/n;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 29
     invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
 
     move-result v2
@@ -409,7 +376,6 @@
 
     move-result-object v1
 
-    .line 30
     :goto_2
     invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -421,19 +387,16 @@
 
     aput-object p0, v1, v2
 
-    .line 31
     invoke-virtual {v0, v1}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object p0
 
-    .line 32
     invoke-virtual {p0}, Ljava/lang/reflect/Constructor;->isAccessible()Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
-    .line 33
     invoke-virtual {p0, v3}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_1
@@ -445,7 +408,6 @@
     :catch_0
     move-exception p0
 
-    .line 34
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-direct {v0, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -468,7 +430,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Landroidx/lifecycle/n;->a:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -479,20 +440,17 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
     move-result p0
 
     return p0
 
-    .line 3
     :cond_0
     invoke-static {p0}, Landroidx/lifecycle/n;->d(Ljava/lang/Class;)I
 
     move-result v0
 
-    .line 4
     sget-object v1, Landroidx/lifecycle/n;->a:Ljava/util/Map;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -516,7 +474,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     const-class v0, Landroidx/lifecycle/j;
 
     invoke-virtual {v0, p0}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -546,7 +503,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
     move-result-object v0
@@ -557,7 +513,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-static {p0}, Landroidx/lifecycle/n;->a(Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
@@ -567,20 +522,16 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     sget-object v1, Landroidx/lifecycle/n;->b:Ljava/util/Map;
 
-    .line 4
     invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
-    .line 5
     invoke-interface {v1, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return v2
 
-    .line 6
     :cond_1
     sget-object v0, Landroidx/lifecycle/b;->c:Landroidx/lifecycle/b;
 
@@ -592,7 +543,6 @@
 
     return v1
 
-    .line 7
     :cond_2
     invoke-virtual {p0}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
 
@@ -600,14 +550,12 @@
 
     const/4 v3, 0x0
 
-    .line 8
     invoke-static {v0}, Landroidx/lifecycle/n;->c(Ljava/lang/Class;)Z
 
     move-result v4
 
     if-eqz v4, :cond_4
 
-    .line 9
     invoke-static {v0}, Landroidx/lifecycle/n;->b(Ljava/lang/Class;)I
 
     move-result v3
@@ -616,7 +564,6 @@
 
     return v1
 
-    .line 10
     :cond_3
     new-instance v3, Ljava/util/ArrayList;
 
@@ -630,7 +577,6 @@
 
     invoke-direct {v3, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 11
     :cond_4
     invoke-virtual {p0}, Ljava/lang/Class;->getInterfaces()[Ljava/lang/Class;
 
@@ -645,7 +591,6 @@
 
     aget-object v6, v0, v5
 
-    .line 12
     invoke-static {v6}, Landroidx/lifecycle/n;->c(Ljava/lang/Class;)Z
 
     move-result v7
@@ -654,7 +599,6 @@
 
     goto :goto_1
 
-    .line 13
     :cond_5
     invoke-static {v6}, Landroidx/lifecycle/n;->b(Ljava/lang/Class;)I
 
@@ -667,12 +611,10 @@
     :cond_6
     if-nez v3, :cond_7
 
-    .line 14
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 15
     :cond_7
     sget-object v7, Landroidx/lifecycle/n;->b:Ljava/util/Map;
 
@@ -692,7 +634,6 @@
     :cond_8
     if-eqz v3, :cond_9
 
-    .line 16
     sget-object v0, Landroidx/lifecycle/n;->b:Ljava/util/Map;
 
     invoke-interface {v0, p0, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

@@ -1,6 +1,5 @@
 .class public final Landroidx/appcompat/widget/f;
 .super Ljava/lang/Object;
-.source "AppCompatDrawableManager.java"
 
 
 # annotations
@@ -25,7 +24,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/graphics/PorterDuff$Mode;->SRC_IN:Landroid/graphics/PorterDuff$Mode;
 
     sput-object v0, Landroidx/appcompat/widget/f;->b:Landroid/graphics/PorterDuff$Mode;
@@ -36,7 +34,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +42,6 @@
 .method static synthetic a()Landroid/graphics/PorterDuff$Mode;
     .locals 1
 
-    .line 1
     sget-object v0, Landroidx/appcompat/widget/f;->b:Landroid/graphics/PorterDuff$Mode;
 
     return-object v0
@@ -58,7 +54,6 @@
 
     monitor-enter v0
 
-    .line 7
     :try_start_0
     invoke-static {p0, p1}, Landroidx/appcompat/widget/v;->a(ILandroid/graphics/PorterDuff$Mode;)Landroid/graphics/PorterDuffColorFilter;
 
@@ -81,7 +76,6 @@
 .method static a(Landroid/graphics/drawable/Drawable;Landroidx/appcompat/widget/c0;[I)V
     .locals 0
 
-    .line 6
     invoke-static {p0, p1, p2}, Landroidx/appcompat/widget/v;->a(Landroid/graphics/drawable/Drawable;Landroidx/appcompat/widget/c0;[I)V
 
     return-void
@@ -94,16 +88,13 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Landroidx/appcompat/widget/f;->c:Landroidx/appcompat/widget/f;
 
     if-nez v1, :cond_0
 
-    .line 2
     invoke-static {}, Landroidx/appcompat/widget/f;->c()V
 
-    .line 3
     :cond_0
     sget-object v1, Landroidx/appcompat/widget/f;->c:Landroidx/appcompat/widget/f;
     :try_end_0
@@ -128,27 +119,23 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Landroidx/appcompat/widget/f;->c:Landroidx/appcompat/widget/f;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Landroidx/appcompat/widget/f;
 
     invoke-direct {v1}, Landroidx/appcompat/widget/f;-><init>()V
 
     sput-object v1, Landroidx/appcompat/widget/f;->c:Landroidx/appcompat/widget/f;
 
-    .line 3
     invoke-static {}, Landroidx/appcompat/widget/v;->a()Landroidx/appcompat/widget/v;
 
     move-result-object v2
 
     iput-object v2, v1, Landroidx/appcompat/widget/f;->a:Landroidx/appcompat/widget/v;
 
-    .line 4
     sget-object v1, Landroidx/appcompat/widget/f;->c:Landroidx/appcompat/widget/f;
 
     iget-object v1, v1, Landroidx/appcompat/widget/f;->a:Landroidx/appcompat/widget/v;
@@ -161,7 +148,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     :cond_0
     monitor-exit v0
 
@@ -190,7 +176,6 @@
 
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Landroidx/appcompat/widget/f;->a:Landroidx/appcompat/widget/v;
 
@@ -225,7 +210,6 @@
 
     monitor-enter p0
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Landroidx/appcompat/widget/f;->a:Landroidx/appcompat/widget/v;
 
@@ -256,7 +240,6 @@
 
     monitor-enter p0
 
-    .line 4
     :try_start_0
     iget-object v0, p0, Landroidx/appcompat/widget/f;->a:Landroidx/appcompat/widget/v;
 
@@ -264,7 +247,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     monitor-exit p0
 
     return-void
@@ -290,7 +272,6 @@
 
     monitor-enter p0
 
-    .line 4
     :try_start_0
     iget-object v0, p0, Landroidx/appcompat/widget/f;->a:Landroidx/appcompat/widget/v;
 

@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/exceptions/OnErrorNotImplementedException;
 .super Ljava/lang/RuntimeException;
-.source "OnErrorNotImplementedException.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     new-instance p2, Ljava/lang/NullPointerException;
 
@@ -38,7 +36,6 @@
         .end annotation
     .end param
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

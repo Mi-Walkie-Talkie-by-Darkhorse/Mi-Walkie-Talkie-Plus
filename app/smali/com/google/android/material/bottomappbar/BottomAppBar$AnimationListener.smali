@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/android/material/bottomappbar/BottomAppBar$AnimationListener;
 .super Ljava/lang/Object;
-.source "BottomAppBar.java"
 
 
 # annotations

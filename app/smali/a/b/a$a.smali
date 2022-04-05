@@ -1,6 +1,5 @@
 .class La/b/a$a;
 .super La/b/f;
-.source "ArrayMap.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(La/b/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, La/b/a$a;->d:La/b/a;
 
     invoke-direct {p0}, La/b/f;-><init>()V
@@ -42,7 +40,6 @@
 .method protected a(Ljava/lang/Object;)I
     .locals 1
 
-    .line 2
     iget-object v0, p0, La/b/a$a;->d:La/b/a;
 
     invoke-virtual {v0, p1}, La/b/g;->a(Ljava/lang/Object;)I
@@ -55,7 +52,6 @@
 .method protected a(II)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/a$a;->d:La/b/a;
 
     iget-object v0, v0, La/b/g;->b:[Ljava/lang/Object;
@@ -77,7 +73,6 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, La/b/a$a;->d:La/b/a;
 
     invoke-virtual {v0, p1, p2}, La/b/g;->a(ILjava/lang/Object;)Ljava/lang/Object;
@@ -90,7 +85,6 @@
 .method protected a()V
     .locals 1
 
-    .line 6
     iget-object v0, p0, La/b/a$a;->d:La/b/a;
 
     invoke-virtual {v0}, La/b/g;->clear()V
@@ -101,7 +95,6 @@
 .method protected a(I)V
     .locals 1
 
-    .line 5
     iget-object v0, p0, La/b/a$a;->d:La/b/a;
 
     invoke-virtual {v0, p1}, La/b/g;->c(I)Ljava/lang/Object;
@@ -117,7 +110,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, La/b/a$a;->d:La/b/a;
 
     invoke-virtual {v0, p1, p2}, La/b/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -128,7 +120,6 @@
 .method protected b(Ljava/lang/Object;)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/a$a;->d:La/b/a;
 
     invoke-virtual {v0, p1}, La/b/g;->b(Ljava/lang/Object;)I
@@ -148,7 +139,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, La/b/a$a;->d:La/b/a;
 
     return-object v0
@@ -157,7 +147,6 @@
 .method protected c()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/a$a;->d:La/b/a;
 
     iget v0, v0, La/b/g;->c:I

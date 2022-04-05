@@ -1,6 +1,5 @@
 .class Lcom/autonavi/ae/gmap/GLMapEngine$9;
 .super Ljava/lang/Object;
-.source "GLMapEngine.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/autonavi/ae/gmap/GLMapEngine;IILcom/autonavi/ae/gmap/glinterface/GLGeoPoint;Landroid/graphics/Point;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$9;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iput p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine$9;->val$engineID:I
@@ -58,7 +56,6 @@
 .method public run()V
     .locals 10
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$9;->val$engineID:I
 
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$9;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;

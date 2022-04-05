@@ -1,6 +1,5 @@
 .class final Lcom/bumptech/glide/load/k/g/f$a;
 .super Ljava/lang/Object;
-.source "TranscoderRegistry.java"
 
 
 # annotations
@@ -81,16 +80,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/k/g/f$a;->a:Ljava/lang/Class;
 
-    .line 3
     iput-object p2, p0, Lcom/bumptech/glide/load/k/g/f$a;->b:Ljava/lang/Class;
 
-    .line 4
     iput-object p3, p0, Lcom/bumptech/glide/load/k/g/f$a;->c:Lcom/bumptech/glide/load/k/g/e;
 
     return-void
@@ -118,7 +113,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/k/g/f$a;->a:Ljava/lang/Class;
 
     invoke-virtual {v0, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z

@@ -1,6 +1,5 @@
 .class final Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileRequest$a;
 .super Lcom/google/protobuf/AbstractParser;
-.source "SharkProtos.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/AbstractParser;-><init>()V
 
     return-void
@@ -42,19 +40,16 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileRequest;->newBuilder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileRequest$Builder;
 
     move-result-object v0
 
-    .line 3
     :try_start_0
     invoke-virtual {v0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
     :try_end_0
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 4
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileRequest$Builder;->buildPartial()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileRequest;
 
     move-result-object p1
@@ -64,10 +59,8 @@
     :catch_0
     move-exception p1
 
-    .line 5
     new-instance p2, Lcom/google/protobuf/InvalidProtocolBufferException;
 
-    .line 6
     invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object p1
@@ -87,7 +80,6 @@
     :catch_1
     move-exception p1
 
-    .line 7
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileRequest$Builder;->buildPartial()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileRequest;
 
     move-result-object p2
@@ -107,7 +99,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileRequest$a;->parsePartialFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileRequest;
 
     move-result-object p1

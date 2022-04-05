@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/qrcode/detector/FinderPattern;
 .super Lcom/google/zxing/ResultPoint;
-.source "FinderPattern.java"
 
 
 # instance fields
@@ -15,7 +14,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/zxing/qrcode/detector/FinderPattern;-><init>(FFFI)V
 
     return-void
@@ -24,13 +22,10 @@
 .method private constructor <init>(FFFI)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
 
-    .line 3
     iput p3, p0, Lcom/google/zxing/qrcode/detector/FinderPattern;->estimatedModuleSize:F
 
-    .line 4
     iput p4, p0, Lcom/google/zxing/qrcode/detector/FinderPattern;->count:I
 
     return-void
@@ -41,7 +36,6 @@
 .method aboutEquals(FFF)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result v0
@@ -72,7 +66,6 @@
 
     if-gtz p2, :cond_2
 
-    .line 2
     iget p2, p0, Lcom/google/zxing/qrcode/detector/FinderPattern;->estimatedModuleSize:F
 
     sub-float/2addr p1, p2
@@ -87,7 +80,6 @@
 
     if-lez p2, :cond_1
 
-    .line 3
     iget p2, p0, Lcom/google/zxing/qrcode/detector/FinderPattern;->estimatedModuleSize:F
 
     cmpg-float p1, p1, p2
@@ -112,14 +104,12 @@
 .method combineEstimate(FFF)Lcom/google/zxing/qrcode/detector/FinderPattern;
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/qrcode/detector/FinderPattern;->count:I
 
     add-int/lit8 v1, v0, 0x1
 
     int-to-float v0, v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v2
@@ -132,7 +122,6 @@
 
     div-float/2addr v0, p2
 
-    .line 3
     iget v2, p0, Lcom/google/zxing/qrcode/detector/FinderPattern;->count:I
 
     int-to-float v2, v2
@@ -147,7 +136,6 @@
 
     div-float/2addr v2, p2
 
-    .line 4
     iget p1, p0, Lcom/google/zxing/qrcode/detector/FinderPattern;->count:I
 
     int-to-float p1, p1
@@ -160,7 +148,6 @@
 
     div-float/2addr p1, p2
 
-    .line 5
     new-instance p2, Lcom/google/zxing/qrcode/detector/FinderPattern;
 
     invoke-direct {p2, v0, v2, p1, v1}, Lcom/google/zxing/qrcode/detector/FinderPattern;-><init>(FFFI)V
@@ -171,7 +158,6 @@
 .method getCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/qrcode/detector/FinderPattern;->count:I
 
     return v0
@@ -180,7 +166,6 @@
 .method public getEstimatedModuleSize()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/qrcode/detector/FinderPattern;->estimatedModuleSize:F
 
     return v0

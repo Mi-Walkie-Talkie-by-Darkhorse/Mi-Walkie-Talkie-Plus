@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/zxing/pdf417/encoder/PDF417HighLevelEncoder$1;
 .super Ljava/lang/Object;
-.source "PDF417HighLevelEncoder.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/zxing/pdf417/encoder/Compaction;->values()[Lcom/google/zxing/pdf417/encoder/Compaction;
 
     move-result-object v0

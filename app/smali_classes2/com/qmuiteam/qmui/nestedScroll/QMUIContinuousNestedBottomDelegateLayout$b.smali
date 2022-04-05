@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$b;
 .super Ljava/lang/Object;
-.source "QMUIContinuousNestedBottomDelegateLayout.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/nestedScroll/b$a;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;Lcom/qmuiteam/qmui/nestedScroll/b$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$b;->b:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 
     iput-object p2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$b;->a:Lcom/qmuiteam/qmui/nestedScroll/b$a;
@@ -42,7 +40,6 @@
 .method public a(II)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$b;->a:Lcom/qmuiteam/qmui/nestedScroll/b$a;
 
     iget-object v1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$b;->b:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
@@ -59,7 +56,6 @@
 
     iget-object v1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$b;->b:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 
-    .line 2
     invoke-static {v1}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;->a(Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;)Landroid/view/View;
 
     move-result-object v1
@@ -70,7 +66,6 @@
 
     add-int/2addr p2, v1
 
-    .line 3
     invoke-interface {v0, p1, p2}, Lcom/qmuiteam/qmui/nestedScroll/b$a;->a(II)V
 
     return-void
@@ -79,7 +74,6 @@
 .method public a(Landroid/view/View;I)V
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$b;->a:Lcom/qmuiteam/qmui/nestedScroll/b$a;
 
     invoke-interface {v0, p1, p2}, Lcom/qmuiteam/qmui/nestedScroll/b$a;->a(Landroid/view/View;I)V

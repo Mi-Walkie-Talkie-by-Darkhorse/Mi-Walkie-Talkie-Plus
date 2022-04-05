@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder$IconType;
 .super Ljava/lang/Object;
-.source "QMUITipDialog.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

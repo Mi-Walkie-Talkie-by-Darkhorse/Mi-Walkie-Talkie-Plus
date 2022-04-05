@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/AppCompatSpinner$e$b;
 .super Ljava/lang/Object;
-.source "AppCompatSpinner.java"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/AppCompatSpinner$e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$e$b;->a:Landroidx/appcompat/widget/AppCompatSpinner$e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onGlobalLayout()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e$b;->a:Landroidx/appcompat/widget/AppCompatSpinner$e;
 
     iget-object v1, v0, Landroidx/appcompat/widget/AppCompatSpinner$e;->M:Landroidx/appcompat/widget/AppCompatSpinner;
@@ -49,20 +46,17 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e$b;->a:Landroidx/appcompat/widget/AppCompatSpinner$e;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->dismiss()V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e$b;->a:Landroidx/appcompat/widget/AppCompatSpinner$e;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner$e;->p()V
 
-    .line 4
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$e$b;->a:Landroidx/appcompat/widget/AppCompatSpinner$e;
 
     invoke-static {v0}, Landroidx/appcompat/widget/AppCompatSpinner$e;->a(Landroidx/appcompat/widget/AppCompatSpinner$e;)V

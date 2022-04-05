@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/views/overlay/TilesOverlay$1;
 .super Lorg/osmdroid/util/TileLooper;
-.source "TilesOverlay.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lorg/osmdroid/views/overlay/TilesOverlay;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     invoke-direct {p0}, Lorg/osmdroid/util/TileLooper;-><init>()V
@@ -41,7 +39,6 @@
 .method public handleTile(Landroid/graphics/Canvas;ILorg/osmdroid/tileprovider/MapTile;II)V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     iget-object v0, v0, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
@@ -50,12 +47,10 @@
 
     move-result-object v0
 
-    .line 2
     instance-of v1, v0, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;
 
     if-eqz v1, :cond_0
 
-    .line 3
     move-object v2, v0
 
     check-cast v2, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;
@@ -68,7 +63,6 @@
     :goto_0
     if-nez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     invoke-static {v0}, Lorg/osmdroid/views/overlay/TilesOverlay;->access$100(Lorg/osmdroid/views/overlay/TilesOverlay;)Landroid/graphics/drawable/Drawable;
@@ -78,7 +72,6 @@
     :cond_1
     if-eqz v0, :cond_5
 
-    .line 5
     iget-object v3, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     invoke-static {v3}, Lorg/osmdroid/views/overlay/TilesOverlay;->access$200(Lorg/osmdroid/views/overlay/TilesOverlay;)Landroid/graphics/Point;
@@ -91,7 +84,6 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/graphics/Point;->set(II)V
 
-    .line 6
     iget-object v3, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     invoke-static {v3}, Lorg/osmdroid/views/overlay/TilesOverlay;->access$300(Lorg/osmdroid/views/overlay/TilesOverlay;)Landroid/graphics/Rect;
@@ -138,13 +130,11 @@
 
     if-eqz v1, :cond_2
 
-    .line 7
     invoke-virtual {v2}, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;->beginUsingDrawable()V
 
     :cond_2
     if-eqz v1, :cond_3
 
-    .line 8
     :try_start_0
     move-object v3, v0
 
@@ -156,7 +146,6 @@
 
     if-nez v3, :cond_3
 
-    .line 9
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     invoke-static {v0}, Lorg/osmdroid/views/overlay/TilesOverlay;->access$100(Lorg/osmdroid/views/overlay/TilesOverlay;)Landroid/graphics/drawable/Drawable;
@@ -165,7 +154,6 @@
 
     const/4 v1, 0x0
 
-    .line 10
     :cond_3
     iget-object v3, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
@@ -181,7 +169,6 @@
 
     if-eqz v1, :cond_5
 
-    .line 11
     invoke-virtual {v2}, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;->finishUsingDrawable()V
 
     goto :goto_1
@@ -196,7 +183,6 @@
     :cond_4
     throw p1
 
-    .line 12
     :cond_5
     :goto_1
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
@@ -209,7 +195,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 13
     iget-object v0, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     invoke-static {v0}, Lorg/osmdroid/views/overlay/TilesOverlay;->access$300(Lorg/osmdroid/views/overlay/TilesOverlay;)Landroid/graphics/Rect;
@@ -226,7 +211,6 @@
 
     invoke-virtual {v0, p4, p5, v1, p2}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 14
     invoke-virtual {p3}, Lorg/osmdroid/tileprovider/MapTile;->toString()Ljava/lang/String;
 
     move-result-object p2
@@ -245,7 +229,6 @@
 
     iget-object p4, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
-    .line 15
     invoke-static {p4}, Lorg/osmdroid/views/overlay/TilesOverlay;->access$300(Lorg/osmdroid/views/overlay/TilesOverlay;)Landroid/graphics/Rect;
 
     move-result-object p4
@@ -268,10 +251,8 @@
 
     iget-object p5, p5, Lorg/osmdroid/views/overlay/TilesOverlay;->mDebugPaint:Landroid/graphics/Paint;
 
-    .line 16
     invoke-virtual {p1, p2, p3, p4, p5}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 17
     iget-object p2, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     invoke-static {p2}, Lorg/osmdroid/views/overlay/TilesOverlay;->access$300(Lorg/osmdroid/views/overlay/TilesOverlay;)Landroid/graphics/Rect;
@@ -320,7 +301,6 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 18
     iget-object p2, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     invoke-static {p2}, Lorg/osmdroid/views/overlay/TilesOverlay;->access$300(Lorg/osmdroid/views/overlay/TilesOverlay;)Landroid/graphics/Rect;
@@ -374,7 +354,6 @@
 .method public initialiseLoop(II)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lorg/osmdroid/util/TileLooper;->mLowerRight:Landroid/graphics/Point;
 
     iget p2, p1, Landroid/graphics/Point;->y:I
@@ -397,7 +376,6 @@
 
     mul-int p2, p2, p1
 
-    .line 2
     iget-object p1, p0, Lorg/osmdroid/views/overlay/TilesOverlay$1;->this$0:Lorg/osmdroid/views/overlay/TilesOverlay;
 
     iget-object v0, p1, Lorg/osmdroid/views/overlay/TilesOverlay;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/Futures$8;
 .super Ljava/lang/Object;
-.source "Futures.java"
 
 # interfaces
 .implements Lcom/google/common/util/concurrent/Futures$FutureCombiner;
@@ -31,7 +30,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,7 +40,6 @@
 .method public bridge synthetic combine(Ljava/util/List;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/Futures$8;->combine(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p1
@@ -63,12 +60,10 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/Lists;->newArrayList()Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 3
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -88,7 +83,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 4
     invoke-virtual {v1}, Lcom/google/common/base/Optional;->orNull()Ljava/lang/Object;
 
     move-result-object v1
@@ -103,7 +97,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 

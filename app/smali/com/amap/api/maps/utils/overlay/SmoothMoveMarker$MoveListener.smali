@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/maps/utils/overlay/SmoothMoveMarker$MoveListener;
 .super Ljava/lang/Object;
-.source "SmoothMoveMarker.java"
 
 
 # annotations

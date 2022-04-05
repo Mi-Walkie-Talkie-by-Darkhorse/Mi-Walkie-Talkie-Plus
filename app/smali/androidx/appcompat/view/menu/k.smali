@@ -1,6 +1,5 @@
 .class public Landroidx/appcompat/view/menu/k;
 .super Ljava/lang/Object;
-.source "MenuPopupHelper.java"
 
 
 # annotations
@@ -71,7 +70,6 @@
 
     move v5, p5
 
-    .line 1
     invoke-direct/range {v0 .. v6}, Landroidx/appcompat/view/menu/k;-><init>(Landroid/content/Context;Landroidx/appcompat/view/menu/f;Landroid/view/View;ZII)V
 
     return-void
@@ -100,37 +98,28 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const v0, 0x800003
 
-    .line 3
     iput v0, p0, Landroidx/appcompat/view/menu/k;->g:I
 
-    .line 4
     new-instance v0, Landroidx/appcompat/view/menu/k$a;
 
     invoke-direct {v0, p0}, Landroidx/appcompat/view/menu/k$a;-><init>(Landroidx/appcompat/view/menu/k;)V
 
     iput-object v0, p0, Landroidx/appcompat/view/menu/k;->l:Landroid/widget/PopupWindow$OnDismissListener;
 
-    .line 5
     iput-object p1, p0, Landroidx/appcompat/view/menu/k;->a:Landroid/content/Context;
 
-    .line 6
     iput-object p2, p0, Landroidx/appcompat/view/menu/k;->b:Landroidx/appcompat/view/menu/f;
 
-    .line 7
     iput-object p3, p0, Landroidx/appcompat/view/menu/k;->f:Landroid/view/View;
 
-    .line 8
     iput-boolean p4, p0, Landroidx/appcompat/view/menu/k;->c:Z
 
-    .line 9
     iput p5, p0, Landroidx/appcompat/view/menu/k;->d:I
 
-    .line 10
     iput p6, p0, Landroidx/appcompat/view/menu/k;->e:I
 
     return-void
@@ -139,27 +128,22 @@
 .method private a(IIZZ)V
     .locals 3
 
-    .line 9
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/k;->b()Landroidx/appcompat/view/menu/j;
 
     move-result-object v0
 
-    .line 10
     invoke-virtual {v0, p4}, Landroidx/appcompat/view/menu/j;->b(Z)V
 
     if-eqz p3, :cond_1
 
-    .line 11
     iget p3, p0, Landroidx/appcompat/view/menu/k;->g:I
 
     iget-object p4, p0, Landroidx/appcompat/view/menu/k;->f:Landroid/view/View;
 
-    .line 12
     invoke-static {p4}, Landroidx/core/view/ViewCompat;->s(Landroid/view/View;)I
 
     move-result p4
 
-    .line 13
     invoke-static {p3, p4}, Landroidx/core/view/d;->a(II)I
 
     move-result p3
@@ -170,7 +154,6 @@
 
     if-ne p3, p4, :cond_0
 
-    .line 14
     iget-object p3, p0, Landroidx/appcompat/view/menu/k;->f:Landroid/view/View;
 
     invoke-virtual {p3}, Landroid/view/View;->getWidth()I
@@ -179,14 +162,11 @@
 
     sub-int/2addr p1, p3
 
-    .line 15
     :cond_0
     invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/j;->b(I)V
 
-    .line 16
     invoke-virtual {v0, p2}, Landroidx/appcompat/view/menu/j;->c(I)V
 
-    .line 17
     iget-object p3, p0, Landroidx/appcompat/view/menu/k;->a:Landroid/content/Context;
 
     invoke-virtual {p3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -209,7 +189,6 @@
 
     float-to-int p3, p3
 
-    .line 18
     new-instance p4, Landroid/graphics/Rect;
 
     sub-int v1, p1, p3
@@ -222,10 +201,8 @@
 
     invoke-direct {p4, v1, v2, p1, p2}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 19
     invoke-virtual {v0, p4}, Landroidx/appcompat/view/menu/j;->a(Landroid/graphics/Rect;)V
 
-    .line 20
     :cond_1
     invoke-interface {v0}, Landroidx/appcompat/view/menu/o;->show()V
 
@@ -237,7 +214,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/k;->a:Landroid/content/Context;
 
     const-string v1, "window"
@@ -248,33 +224,27 @@
 
     check-cast v0, Landroid/view/WindowManager;
 
-    .line 2
     invoke-interface {v0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object v0
 
-    .line 3
     new-instance v1, Landroid/graphics/Point;
 
     invoke-direct {v1}, Landroid/graphics/Point;-><init>()V
 
-    .line 4
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x11
 
     if-lt v2, v3, :cond_0
 
-    .line 5
     invoke-virtual {v0, v1}, Landroid/view/Display;->getRealSize(Landroid/graphics/Point;)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-virtual {v0, v1}, Landroid/view/Display;->getSize(Landroid/graphics/Point;)V
 
-    .line 7
     :goto_0
     iget v0, v1, Landroid/graphics/Point;->x:I
 
@@ -284,7 +254,6 @@
 
     move-result v0
 
-    .line 8
     iget-object v1, p0, Landroidx/appcompat/view/menu/k;->a:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -309,7 +278,6 @@
     :goto_1
     if-eqz v0, :cond_2
 
-    .line 9
     new-instance v0, Landroidx/appcompat/view/menu/CascadingMenuPopup;
 
     iget-object v2, p0, Landroidx/appcompat/view/menu/k;->a:Landroid/content/Context;
@@ -328,7 +296,6 @@
 
     goto :goto_2
 
-    .line 10
     :cond_2
     new-instance v0, Landroidx/appcompat/view/menu/p;
 
@@ -348,33 +315,27 @@
 
     invoke-direct/range {v7 .. v13}, Landroidx/appcompat/view/menu/p;-><init>(Landroid/content/Context;Landroidx/appcompat/view/menu/f;Landroid/view/View;IIZ)V
 
-    .line 11
     :goto_2
     iget-object v1, p0, Landroidx/appcompat/view/menu/k;->b:Landroidx/appcompat/view/menu/f;
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/j;->a(Landroidx/appcompat/view/menu/f;)V
 
-    .line 12
     iget-object v1, p0, Landroidx/appcompat/view/menu/k;->l:Landroid/widget/PopupWindow$OnDismissListener;
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/j;->setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
 
-    .line 13
     iget-object v1, p0, Landroidx/appcompat/view/menu/k;->f:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/j;->a(Landroid/view/View;)V
 
-    .line 14
     iget-object v1, p0, Landroidx/appcompat/view/menu/k;->i:Landroidx/appcompat/view/menu/l$a;
 
     invoke-interface {v0, v1}, Landroidx/appcompat/view/menu/l;->setCallback(Landroidx/appcompat/view/menu/l$a;)V
 
-    .line 15
     iget-boolean v1, p0, Landroidx/appcompat/view/menu/k;->h:Z
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/j;->a(Z)V
 
-    .line 16
     iget v1, p0, Landroidx/appcompat/view/menu/k;->g:I
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/view/menu/j;->a(I)V
@@ -387,14 +348,12 @@
 .method public a()V
     .locals 1
 
-    .line 21
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/k;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 22
     iget-object v0, p0, Landroidx/appcompat/view/menu/k;->j:Landroidx/appcompat/view/menu/j;
 
     invoke-interface {v0}, Landroidx/appcompat/view/menu/o;->dismiss()V
@@ -406,7 +365,6 @@
 .method public a(I)V
     .locals 0
 
-    .line 5
     iput p1, p0, Landroidx/appcompat/view/menu/k;->g:I
 
     return-void
@@ -419,7 +377,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/k;->f:Landroid/view/View;
 
     return-void
@@ -432,15 +389,12 @@
         .end annotation
     .end param
 
-    .line 23
     iput-object p1, p0, Landroidx/appcompat/view/menu/k;->i:Landroidx/appcompat/view/menu/l$a;
 
-    .line 24
     iget-object v0, p0, Landroidx/appcompat/view/menu/k;->j:Landroidx/appcompat/view/menu/j;
 
     if-eqz v0, :cond_0
 
-    .line 25
     invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/l;->setCallback(Landroidx/appcompat/view/menu/l$a;)V
 
     :cond_0
@@ -450,15 +404,12 @@
 .method public a(Z)V
     .locals 1
 
-    .line 2
     iput-boolean p1, p0, Landroidx/appcompat/view/menu/k;->h:Z
 
-    .line 3
     iget-object v0, p0, Landroidx/appcompat/view/menu/k;->j:Landroidx/appcompat/view/menu/j;
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/j;->a(Z)V
 
     :cond_0
@@ -468,7 +419,6 @@
 .method public a(II)Z
     .locals 2
 
-    .line 6
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/k;->c()Z
 
     move-result v0
@@ -479,7 +429,6 @@
 
     return v1
 
-    .line 7
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/view/menu/k;->f:Landroid/view/View;
 
@@ -489,7 +438,6 @@
 
     return p1
 
-    .line 8
     :cond_1
     invoke-direct {p0, p1, p2, v1, v1}, Landroidx/appcompat/view/menu/k;->a(IIZZ)V
 
@@ -507,19 +455,16 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/k;->j:Landroidx/appcompat/view/menu/j;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Landroidx/appcompat/view/menu/k;->g()Landroidx/appcompat/view/menu/j;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/appcompat/view/menu/k;->j:Landroidx/appcompat/view/menu/j;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/view/menu/k;->j:Landroidx/appcompat/view/menu/j;
 
@@ -529,7 +474,6 @@
 .method public c()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/k;->j:Landroidx/appcompat/view/menu/j;
 
     if-eqz v0, :cond_0
@@ -556,15 +500,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Landroidx/appcompat/view/menu/k;->j:Landroidx/appcompat/view/menu/j;
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/view/menu/k;->k:Landroid/widget/PopupWindow$OnDismissListener;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0}, Landroid/widget/PopupWindow$OnDismissListener;->onDismiss()V
 
     :cond_0
@@ -574,7 +515,6 @@
 .method public e()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/k;->f()Z
 
     move-result v0
@@ -583,7 +523,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -597,7 +536,6 @@
 .method public f()Z
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/k;->c()Z
 
     move-result v0
@@ -608,7 +546,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/view/menu/k;->f:Landroid/view/View;
 
@@ -618,7 +555,6 @@
 
     return v2
 
-    .line 3
     :cond_1
     invoke-direct {p0, v2, v2, v2, v2}, Landroidx/appcompat/view/menu/k;->a(IIZZ)V
 
@@ -632,7 +568,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/k;->k:Landroid/widget/PopupWindow$OnDismissListener;
 
     return-void

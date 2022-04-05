@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/internal/fuseable/HasUpstreamObservableSource;
 .super Ljava/lang/Object;
-.source "HasUpstreamObservableSource.java"
 
 
 # annotations

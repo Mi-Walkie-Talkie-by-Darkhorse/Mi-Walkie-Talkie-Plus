@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/maploader/Pools$Pool;
 .super Ljava/lang/Object;
-.source "Pools.java"
 
 
 # annotations

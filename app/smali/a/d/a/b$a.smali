@@ -1,6 +1,5 @@
 .class interface abstract La/d/a/b$a;
 .super Ljava/lang/Object;
-.source "CursorFilter.java"
 
 
 # annotations

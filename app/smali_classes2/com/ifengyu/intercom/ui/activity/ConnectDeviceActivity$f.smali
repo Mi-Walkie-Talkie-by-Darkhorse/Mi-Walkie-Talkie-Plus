@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$f;
 .super Ljava/lang/Object;
-.source "ConnectDeviceActivity.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$f;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public a(Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;)I
     .locals 2
 
-    .line 1
     invoke-virtual {p2}, Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;->getRssi()I
 
     move-result v0
@@ -70,7 +67,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p2}, Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;->getAddress()Ljava/lang/String;
 
     move-result-object p2
@@ -92,7 +88,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;
 
     check-cast p2, Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;

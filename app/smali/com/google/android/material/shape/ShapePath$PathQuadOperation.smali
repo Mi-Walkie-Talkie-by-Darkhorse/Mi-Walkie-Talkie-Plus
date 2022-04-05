@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/shape/ShapePath$PathQuadOperation;
 .super Lcom/google/android/material/shape/ShapePath$PathOperation;
-.source "ShapePath.java"
 
 
 # annotations
@@ -40,7 +39,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/shape/ShapePath$PathOperation;-><init>()V
 
     return-void
@@ -49,7 +47,6 @@
 .method static synthetic access$200(Lcom/google/android/material/shape/ShapePath$PathQuadOperation;F)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->setControlX(F)V
 
     return-void
@@ -58,7 +55,6 @@
 .method static synthetic access$300(Lcom/google/android/material/shape/ShapePath$PathQuadOperation;F)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->setControlY(F)V
 
     return-void
@@ -67,7 +63,6 @@
 .method static synthetic access$400(Lcom/google/android/material/shape/ShapePath$PathQuadOperation;F)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->setEndX(F)V
 
     return-void
@@ -76,7 +71,6 @@
 .method static synthetic access$500(Lcom/google/android/material/shape/ShapePath$PathQuadOperation;F)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->setEndY(F)V
 
     return-void
@@ -85,7 +79,6 @@
 .method private getControlX()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->controlX:F
 
     return v0
@@ -94,7 +87,6 @@
 .method private getControlY()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->controlY:F
 
     return v0
@@ -103,7 +95,6 @@
 .method private getEndX()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->endX:F
 
     return v0
@@ -112,7 +103,6 @@
 .method private getEndY()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->endY:F
 
     return v0
@@ -121,7 +111,6 @@
 .method private setControlX(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->controlX:F
 
     return-void
@@ -130,7 +119,6 @@
 .method private setControlY(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->controlY:F
 
     return-void
@@ -139,7 +127,6 @@
 .method private setEndX(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->endX:F
 
     return-void
@@ -148,7 +135,6 @@
 .method private setEndY(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->endY:F
 
     return-void
@@ -167,16 +153,12 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/shape/ShapePath$PathOperation;->matrix:Landroid/graphics/Matrix;
 
-    .line 2
     invoke-virtual {p1, v0}, Landroid/graphics/Matrix;->invert(Landroid/graphics/Matrix;)Z
 
-    .line 3
     invoke-virtual {p2, v0}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
 
-    .line 4
     invoke-direct {p0}, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->getControlX()F
 
     move-result v0
@@ -195,7 +177,6 @@
 
     invoke-virtual {p2, v0, v1, v2, v3}, Landroid/graphics/Path;->quadTo(FFFF)V
 
-    .line 5
     invoke-virtual {p2, p1}, Landroid/graphics/Path;->transform(Landroid/graphics/Matrix;)V
 
     return-void

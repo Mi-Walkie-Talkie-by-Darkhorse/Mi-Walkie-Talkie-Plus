@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/datepicker/MaterialCalendar$5;
 .super Landroidx/core/view/a;
-.source "MaterialCalendar.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/android/material/datepicker/MaterialCalendar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialCalendar$5;->this$0:Lcom/google/android/material/datepicker/MaterialCalendar;
 
     invoke-direct {p0}, Landroidx/core/view/a;-><init>()V
@@ -39,13 +37,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/core/view/a;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroidx/core/view/accessibility/b;)V
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/datepicker/MaterialCalendar$5;->this$0:Lcom/google/android/material/datepicker/MaterialCalendar;
 
-    .line 3
     invoke-static {p1}, Lcom/google/android/material/datepicker/MaterialCalendar;->access$500(Lcom/google/android/material/datepicker/MaterialCalendar;)Landroid/view/View;
 
     move-result-object p1
@@ -60,7 +55,6 @@
 
     sget v0, Lcom/google/android/material/R$string;->mtrl_picker_toggle_to_year_selection:I
 
-    .line 4
     invoke-virtual {p1, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
     move-result-object p1
@@ -72,12 +66,10 @@
 
     sget v0, Lcom/google/android/material/R$string;->mtrl_picker_toggle_to_day_selection:I
 
-    .line 5
     invoke-virtual {p1, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 6
     :goto_0
     invoke-virtual {p2, p1}, Landroidx/core/view/accessibility/b;->d(Ljava/lang/CharSequence;)V
 

@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/protobuf/TextFormat$ByteSequence;
 .super Ljava/lang/Object;
-.source "TextFormat.java"
 
 
 # annotations

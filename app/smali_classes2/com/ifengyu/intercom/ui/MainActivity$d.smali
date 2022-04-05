@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/MainActivity$d;
 .super Lcom/qmuiteam/qmui/span/d;
-.source "MainActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/MainActivity;IIII)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/MainActivity$d;->k:Lcom/ifengyu/intercom/ui/MainActivity;
 
     invoke-direct {p0, p2, p3, p4, p5}, Lcom/qmuiteam/qmui/span/d;-><init>(IIII)V
@@ -35,7 +33,6 @@
 .method public a(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/MainActivity$d;->k:Lcom/ifengyu/intercom/ui/MainActivity;
 
     const/4 v0, 0x0

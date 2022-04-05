@@ -1,6 +1,5 @@
 .class Landroid/support/v4/media/ParceledListSliceAdapterApi21;
 .super Ljava/lang/Object;
-.source "ParceledListSliceAdapterApi21.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
     :try_start_0
     const-string v0, "android.content.pm.ParceledListSlice"
 
-    .line 1
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
@@ -31,7 +29,6 @@
 
     const/4 v2, 0x0
 
-    .line 2
     const-class v3, Ljava/util/List;
 
     aput-object v3, v1, v2
@@ -55,7 +52,6 @@
     :catch_1
     move-exception v0
 
-    .line 3
     :goto_0
     invoke-virtual {v0}, Ljava/lang/ReflectiveOperationException;->printStackTrace()V
 
@@ -66,7 +62,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -84,7 +79,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     sget-object v0, Landroid/support/v4/media/ParceledListSliceAdapterApi21;->sConstructor:Ljava/lang/reflect/Constructor;
 
@@ -119,7 +113,6 @@
     :catch_2
     move-exception p0
 
-    .line 2
     :goto_0
     invoke-virtual {p0}, Ljava/lang/ReflectiveOperationException;->printStackTrace()V
 

@@ -1,6 +1,5 @@
 .class public abstract Landroidx/constraintlayout/motion/widget/g;
 .super Ljava/lang/Object;
-.source "KeyCycleOscillator.java"
 
 
 # annotations
@@ -51,18 +50,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Landroidx/constraintlayout/motion/widget/g;->d:I
 
-    .line 3
     iput v0, p0, Landroidx/constraintlayout/motion/widget/g;->e:I
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -77,14 +72,12 @@
 
     const-string v0, "CUSTOM"
 
-    .line 2
     invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$c;
 
     invoke-direct {p0}, Landroidx/constraintlayout/motion/widget/g$c;-><init>()V
@@ -94,7 +87,6 @@
     :cond_0
     const/4 v0, -0x1
 
-    .line 4
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     move-result v1
@@ -291,7 +283,6 @@
 
     return-object p0
 
-    .line 5
     :pswitch_0
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$g;
 
@@ -299,7 +290,6 @@
 
     return-object p0
 
-    .line 6
     :pswitch_1
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$o;
 
@@ -307,7 +297,6 @@
 
     return-object p0
 
-    .line 7
     :pswitch_2
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$n;
 
@@ -315,7 +304,6 @@
 
     return-object p0
 
-    .line 8
     :pswitch_3
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$m;
 
@@ -323,7 +311,6 @@
 
     return-object p0
 
-    .line 9
     :pswitch_4
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$b;
 
@@ -331,7 +318,6 @@
 
     return-object p0
 
-    .line 10
     :pswitch_5
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$b;
 
@@ -339,7 +325,6 @@
 
     return-object p0
 
-    .line 11
     :pswitch_6
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$l;
 
@@ -347,7 +332,6 @@
 
     return-object p0
 
-    .line 12
     :pswitch_7
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$k;
 
@@ -355,7 +339,6 @@
 
     return-object p0
 
-    .line 13
     :pswitch_8
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$f;
 
@@ -363,7 +346,6 @@
 
     return-object p0
 
-    .line 14
     :pswitch_9
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$j;
 
@@ -371,7 +353,6 @@
 
     return-object p0
 
-    .line 15
     :pswitch_a
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$i;
 
@@ -379,7 +360,6 @@
 
     return-object p0
 
-    .line 16
     :pswitch_b
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$h;
 
@@ -387,7 +367,6 @@
 
     return-object p0
 
-    .line 17
     :pswitch_c
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$e;
 
@@ -395,7 +374,6 @@
 
     return-object p0
 
-    .line 18
     :pswitch_d
     new-instance p0, Landroidx/constraintlayout/motion/widget/g$b;
 
@@ -445,7 +423,6 @@
 .method public a(F)F
     .locals 2
 
-    .line 3
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/g;->a:Landroidx/constraintlayout/motion/widget/g$d;
 
     invoke-virtual {v0, p1}, Landroidx/constraintlayout/motion/widget/g$d;->b(F)D
@@ -460,7 +437,6 @@
 .method public a(IIIFFF)V
     .locals 2
 
-    .line 8
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/g;->f:Ljava/util/ArrayList;
 
     new-instance v1, Landroidx/constraintlayout/motion/widget/g$p;
@@ -473,10 +449,8 @@
 
     if-eq p3, p1, :cond_0
 
-    .line 9
     iput p3, p0, Landroidx/constraintlayout/motion/widget/g;->e:I
 
-    .line 10
     :cond_0
     iput p2, p0, Landroidx/constraintlayout/motion/widget/g;->d:I
 
@@ -486,7 +460,6 @@
 .method public a(IIIFFFLandroidx/constraintlayout/widget/ConstraintAttribute;)V
     .locals 2
 
-    .line 4
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/g;->f:Ljava/util/ArrayList;
 
     new-instance v1, Landroidx/constraintlayout/motion/widget/g$p;
@@ -499,14 +472,11 @@
 
     if-eq p3, p1, :cond_0
 
-    .line 5
     iput p3, p0, Landroidx/constraintlayout/motion/widget/g;->e:I
 
-    .line 6
     :cond_0
     iput p2, p0, Landroidx/constraintlayout/motion/widget/g;->d:I
 
-    .line 7
     iput-object p7, p0, Landroidx/constraintlayout/motion/widget/g;->b:Landroidx/constraintlayout/widget/ConstraintAttribute;
 
     return-void
@@ -518,7 +488,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/g;->c:Ljava/lang/String;
 
     return-void
@@ -527,7 +496,6 @@
 .method public a()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Landroidx/constraintlayout/motion/widget/g;->e:I
 
     const/4 v1, 0x1
@@ -546,7 +514,6 @@
 .method public b(F)F
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/g;->a:Landroidx/constraintlayout/motion/widget/g$d;
 
     invoke-virtual {v0, p1}, Landroidx/constraintlayout/motion/widget/g$d;->a(F)D
@@ -564,7 +531,6 @@
         value = 0x13
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/g;->f:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -575,7 +541,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/g;->f:Ljava/util/ArrayList;
 
@@ -585,7 +550,6 @@
 
     invoke-static {v1, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 3
     new-array v1, v0, [D
 
     const/4 v2, 0x2
@@ -600,7 +564,6 @@
 
     aput v0, v3, v2
 
-    .line 4
     const-class v5, D
 
     invoke-static {v5, v3}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
@@ -609,7 +572,6 @@
 
     check-cast v3, [[D
 
-    .line 5
     new-instance v5, Landroidx/constraintlayout/motion/widget/g$d;
 
     iget v6, p0, Landroidx/constraintlayout/motion/widget/g;->d:I
@@ -620,7 +582,6 @@
 
     iput-object v5, p0, Landroidx/constraintlayout/motion/widget/g;->a:Landroidx/constraintlayout/motion/widget/g$d;
 
-    .line 6
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/g;->f:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -642,7 +603,6 @@
 
     check-cast v5, Landroidx/constraintlayout/motion/widget/g$p;
 
-    .line 7
     iget v8, v5, Landroidx/constraintlayout/motion/widget/g$p;->d:F
 
     float-to-double v6, v8
@@ -653,7 +613,6 @@
 
     aput-wide v6, v1, v11
 
-    .line 8
     aget-object v6, v3, v11
 
     iget v10, v5, Landroidx/constraintlayout/motion/widget/g$p;->b:F
@@ -662,7 +621,6 @@
 
     aput-wide v12, v6, v2
 
-    .line 9
     aget-object v6, v3, v11
 
     iget v9, v5, Landroidx/constraintlayout/motion/widget/g$p;->c:F
@@ -671,7 +629,6 @@
 
     aput-wide v12, v6, v4
 
-    .line 10
     iget-object v6, p0, Landroidx/constraintlayout/motion/widget/g;->a:Landroidx/constraintlayout/motion/widget/g$d;
 
     iget v7, v5, Landroidx/constraintlayout/motion/widget/g$p;->a:I
@@ -686,13 +643,11 @@
 
     goto :goto_0
 
-    .line 11
     :cond_1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/g;->a:Landroidx/constraintlayout/motion/widget/g$d;
 
     invoke-virtual {v0, p1}, Landroidx/constraintlayout/motion/widget/g$d;->c(F)V
 
-    .line 12
     invoke-static {v2, v1, v3}, La/c/a/a/b;->a(I[D[[D)La/c/a/a/b;
 
     return-void
@@ -701,17 +656,14 @@
 .method public toString()Ljava/lang/String;
     .locals 7
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/g;->c:Ljava/lang/String;
 
-    .line 2
     new-instance v1, Ljava/text/DecimalFormat;
 
     const-string v2, "##.##"
 
     invoke-direct {v1, v2}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;)V
 
-    .line 3
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/g;->f:Ljava/util/ArrayList;
 
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -731,7 +683,6 @@
 
     check-cast v3, Landroidx/constraintlayout/motion/widget/g$p;
 
-    .line 4
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V

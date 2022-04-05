@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/analytics/pro/aq;
 .super Ljava/lang/Object;
-.source "TBase.java"
 
 # interfaces
 .implements Ljava/io/Serializable;

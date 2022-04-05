@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ImmutableMapKeySet$1;
 .super Lcom/google/common/collect/ImmutableAsList;
-.source "ImmutableMapKeySet.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/google/common/collect/ImmutableMapKeySet;Lcom/google/common/collect/ImmutableList;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMapKeySet$1;->this$0:Lcom/google/common/collect/ImmutableMapKeySet;
 
     iput-object p2, p0, Lcom/google/common/collect/ImmutableMapKeySet$1;->val$entryList:Lcom/google/common/collect/ImmutableList;
@@ -53,7 +51,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMapKeySet$1;->this$0:Lcom/google/common/collect/ImmutableMapKeySet;
 
     return-object v0
@@ -67,7 +64,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMapKeySet$1;->val$entryList:Lcom/google/common/collect/ImmutableList;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;

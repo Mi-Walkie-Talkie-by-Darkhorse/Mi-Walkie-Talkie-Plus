@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/protos/SealProtos$SEAL_BtEarScanControlOrBuilder;
 .super Ljava/lang/Object;
-.source "SealProtos.java"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageOrBuilder;

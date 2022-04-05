@@ -1,6 +1,5 @@
 .class final Lcom/google/common/math/MathPreconditions;
 .super Ljava/lang/Object;
-.source "MathPreconditions.java"
 
 
 # annotations
@@ -12,7 +11,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,7 +23,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     new-instance p0, Ljava/lang/ArithmeticException;
 
@@ -43,7 +40,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     new-instance p0, Ljava/lang/ArithmeticException;
 
@@ -69,7 +65,6 @@
 
     return-wide p1
 
-    .line 5
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -123,7 +118,6 @@
 
     return p1
 
-    .line 1
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -181,7 +175,6 @@
 
     return-wide p1
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -231,7 +224,6 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-virtual {p1}, Ljava/math/BigInteger;->signum()I
 
     move-result v0
@@ -240,7 +232,6 @@
 
     return-object p1
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -308,7 +299,6 @@
 
     return p1
 
-    .line 1
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -366,7 +356,6 @@
 
     return-wide p1
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -416,7 +405,6 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-virtual {p1}, Ljava/math/BigInteger;->signum()I
 
     move-result v0
@@ -425,7 +413,6 @@
 
     return-object p1
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -489,7 +476,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     new-instance p0, Ljava/lang/ArithmeticException;
 

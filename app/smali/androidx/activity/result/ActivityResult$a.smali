@@ -1,6 +1,5 @@
 .class Landroidx/activity/result/ActivityResult$a;
 .super Ljava/lang/Object;
-.source "ActivityResult.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +43,6 @@
         .end annotation
     .end param
 
-    .line 2
     new-instance v0, Landroidx/activity/result/ActivityResult;
 
     invoke-direct {v0, p1}, Landroidx/activity/result/ActivityResult;-><init>(Landroid/os/Parcel;)V
@@ -60,7 +57,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p1}, Landroidx/activity/result/ActivityResult$a;->createFromParcel(Landroid/os/Parcel;)Landroidx/activity/result/ActivityResult;
 
     move-result-object p1
@@ -71,7 +67,6 @@
 .method public newArray(I)[Landroidx/activity/result/ActivityResult;
     .locals 0
 
-    .line 2
     new-array p1, p1, [Landroidx/activity/result/ActivityResult;
 
     return-object p1
@@ -80,7 +75,6 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Landroidx/activity/result/ActivityResult$a;->newArray(I)[Landroidx/activity/result/ActivityResult;
 
     move-result-object p1

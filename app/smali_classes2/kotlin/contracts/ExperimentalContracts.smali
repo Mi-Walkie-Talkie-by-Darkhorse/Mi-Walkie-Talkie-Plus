@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/contracts/ExperimentalContracts;
 .super Ljava/lang/Object;
-.source "ContractBuilder.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

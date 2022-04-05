@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/util/l;
 .super Ljava/lang/Object;
-.source "QMUIViewHelper.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x1
@@ -32,7 +30,6 @@
 
     new-array v0, v1, [I
 
-    .line 2
     sget v1, Landroidx/appcompat/R$attr;->colorPrimary:I
 
     const/4 v2, 0x0
@@ -47,21 +44,18 @@
 .method public static a()I
     .locals 3
 
-    .line 12
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 13
     invoke-static {}, Landroid/view/View;->generateViewId()I
 
     move-result v0
 
     return v0
 
-    .line 14
     :cond_0
     sget-object v0, Lcom/qmuiteam/qmui/util/l;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -77,7 +71,6 @@
 
     const/4 v1, 0x1
 
-    .line 15
     :cond_1
     sget-object v2, Lcom/qmuiteam/qmui/util/l;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -93,7 +86,6 @@
 .method public static a(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/l;->b:[I
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->obtainStyledAttributes([I)Landroid/content/res/TypedArray;
@@ -102,21 +94,18 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
     move-result v0
 
     xor-int/lit8 v0, v0, 0x1
 
-    .line 3
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 4
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -130,14 +119,12 @@
 .method public static a(Landroid/view/View;I)V
     .locals 3
 
-    .line 16
     invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
 
     move-result v0
 
     if-eq p1, v0, :cond_0
 
-    .line 17
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v0
@@ -163,7 +150,6 @@
 
     new-array v0, v0, [I
 
-    .line 9
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v1
@@ -196,10 +182,8 @@
 
     aput v1, v0, v5
 
-    .line 10
     invoke-virtual {p0, p1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 11
     aget p1, v0, v2
 
     aget v1, v0, v3
@@ -220,7 +204,6 @@
         .end annotation
     .end param
 
-    .line 18
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object p0
@@ -232,19 +215,16 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 19
     instance-of v1, v0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;
 
     if-eqz v1, :cond_0
 
-    .line 20
     move-object v1, v0
 
     check-cast v1, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;
 
     invoke-virtual {v1}, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;->d()V
 
-    .line 21
     :cond_0
     invoke-interface {v0}, Landroid/view/ViewParent;->getParent()Landroid/view/ViewParent;
 
@@ -252,7 +232,6 @@
 
     goto :goto_0
 
-    .line 22
     :cond_1
     invoke-interface {p0, p1}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
 
@@ -263,7 +242,6 @@
 .method public static a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 3
 
-    .line 29
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -276,7 +254,6 @@
 
     invoke-virtual {p2, v2, v2, v0, v1}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 30
     invoke-static {p0, p1, p2}, Lcom/qmuiteam/qmui/util/l$a;->a(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;)V
 
     return-void
@@ -285,7 +262,6 @@
 .method public static a(Landroid/view/Window;)V
     .locals 3
 
-    .line 5
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
@@ -296,7 +272,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 6
     invoke-virtual {p0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
     move-result-object p0
@@ -305,13 +280,11 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-lt v0, v1, :cond_1
 
-    .line 8
     invoke-virtual {p0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
     move-result-object p0
@@ -326,7 +299,6 @@
 .method public static a(Landroid/widget/ImageView;Z)V
     .locals 3
 
-    .line 23
     invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -335,21 +307,17 @@
 
     return-void
 
-    .line 24
     :cond_0
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v1
 
-    .line 25
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v2
 
-    .line 26
     invoke-virtual {p0, p1}, Landroid/widget/ImageView;->setSelected(Z)V
 
-    .line 27
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result p1
@@ -362,7 +330,6 @@
 
     if-eq p1, v2, :cond_2
 
-    .line 28
     :cond_1
     invoke-virtual {p0}, Landroid/widget/ImageView;->requestLayout()V
 

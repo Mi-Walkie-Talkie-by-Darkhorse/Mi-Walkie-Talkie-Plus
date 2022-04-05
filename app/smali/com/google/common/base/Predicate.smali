@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/base/Predicate;
 .super Ljava/lang/Object;
-.source "Predicate.java"
 
 
 # annotations

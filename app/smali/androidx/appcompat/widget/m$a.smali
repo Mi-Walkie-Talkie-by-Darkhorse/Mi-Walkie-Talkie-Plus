@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/m$a;
 .super Landroidx/core/content/res/e$a;
-.source "AppCompatTextHelper.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/m;IILjava/lang/ref/WeakReference;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/m$a;->d:Landroidx/appcompat/widget/m;
 
     iput p2, p0, Landroidx/appcompat/widget/m$a;->a:I
@@ -57,21 +55,18 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-lt v0, v1, :cond_1
 
-    .line 2
     iget v0, p0, Landroidx/appcompat/widget/m$a;->a:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_1
 
-    .line 3
     iget v1, p0, Landroidx/appcompat/widget/m$a;->b:I
 
     and-int/lit8 v1, v1, 0x2
@@ -90,7 +85,6 @@
 
     move-result-object p1
 
-    .line 4
     :cond_1
     iget-object v0, p0, Landroidx/appcompat/widget/m$a;->d:Landroidx/appcompat/widget/m;
 

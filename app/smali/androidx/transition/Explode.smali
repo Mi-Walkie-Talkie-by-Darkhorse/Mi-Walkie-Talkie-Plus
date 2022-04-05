@@ -1,6 +1,5 @@
 .class public Landroidx/transition/Explode;
 .super Landroidx/transition/Visibility;
-.source "Explode.java"
 
 
 # static fields
@@ -17,14 +16,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/view/animation/DecelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
 
     sput-object v0, Landroidx/transition/Explode;->b:Landroid/animation/TimeInterpolator;
 
-    .line 2
     new-instance v0, Landroid/view/animation/AccelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
@@ -37,17 +34,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroidx/transition/Visibility;-><init>()V
 
     const/4 v0, 0x2
 
     new-array v0, v0, [I
 
-    .line 2
     iput-object v0, p0, Landroidx/transition/Explode;->a:[I
 
-    .line 3
     new-instance v0, Landroidx/transition/c;
 
     invoke-direct {v0}, Landroidx/transition/c;-><init>()V
@@ -68,17 +62,14 @@
         .end annotation
     .end param
 
-    .line 4
     invoke-direct {p0, p1, p2}, Landroidx/transition/Visibility;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x2
 
     new-array p1, p1, [I
 
-    .line 5
     iput-object p1, p0, Landroidx/transition/Explode;->a:[I
 
-    .line 6
     new-instance p1, Landroidx/transition/c;
 
     invoke-direct {p1}, Landroidx/transition/c;-><init>()V
@@ -99,7 +90,6 @@
 
     float-to-double p0, p0
 
-    .line 22
     invoke-static {p0, p1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide p0
@@ -112,7 +102,6 @@
 .method private static a(Landroid/view/View;II)F
     .locals 1
 
-    .line 19
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -123,7 +112,6 @@
 
     move-result p1
 
-    .line 20
     invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result p0
@@ -138,7 +126,6 @@
 
     int-to-float p0, p0
 
-    .line 21
     invoke-static {p1, p0}, Landroidx/transition/Explode;->a(FF)F
 
     move-result p0
@@ -153,12 +140,10 @@
 
     move-object/from16 v1, p1
 
-    .line 1
     iget-object v2, v0, Landroidx/transition/Explode;->a:[I
 
     invoke-virtual {v1, v2}, Landroid/view/View;->getLocationOnScreen([I)V
 
-    .line 2
     iget-object v2, v0, Landroidx/transition/Explode;->a:[I
 
     const/4 v3, 0x0
@@ -167,17 +152,14 @@
 
     const/4 v5, 0x1
 
-    .line 3
     aget v2, v2, v5
 
-    .line 4
     invoke-virtual {p0}, Landroidx/transition/Transition;->getEpicenter()Landroid/graphics/Rect;
 
     move-result-object v6
 
     if-nez v6, :cond_0
 
-    .line 5
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getWidth()I
 
     move-result v6
@@ -186,7 +168,6 @@
 
     add-int/2addr v6, v4
 
-    .line 6
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTranslationX()F
 
     move-result v7
@@ -197,7 +178,6 @@
 
     add-int/2addr v6, v7
 
-    .line 7
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getHeight()I
 
     move-result v7
@@ -206,7 +186,6 @@
 
     add-int/2addr v7, v2
 
-    .line 8
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getTranslationY()F
 
     move-result v8
@@ -219,13 +198,11 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     invoke-virtual {v6}, Landroid/graphics/Rect;->centerX()I
 
     move-result v7
 
-    .line 10
     invoke-virtual {v6}, Landroid/graphics/Rect;->centerY()I
 
     move-result v6
@@ -236,13 +213,11 @@
 
     move v6, v14
 
-    .line 11
     :goto_0
     invoke-virtual/range {p2 .. p2}, Landroid/graphics/Rect;->centerX()I
 
     move-result v8
 
-    .line 12
     invoke-virtual/range {p2 .. p2}, Landroid/graphics/Rect;->centerY()I
 
     move-result v9
@@ -265,7 +240,6 @@
 
     if-nez v10, :cond_1
 
-    .line 13
     invoke-static {}, Ljava/lang/Math;->random()D
 
     move-result-wide v8
@@ -280,7 +254,6 @@
 
     sub-float/2addr v8, v9
 
-    .line 14
     invoke-static {}, Ljava/lang/Math;->random()D
 
     move-result-wide v12
@@ -291,7 +264,6 @@
 
     sub-float v9, v10, v9
 
-    .line 15
     :cond_1
     invoke-static {v8, v9}, Landroidx/transition/Explode;->a(FF)F
 
@@ -305,14 +277,12 @@
 
     sub-int/2addr v7, v2
 
-    .line 16
     invoke-static {v1, v6, v7}, Landroidx/transition/Explode;->a(Landroid/view/View;II)F
 
     move-result v1
 
     mul-float v8, v8, v1
 
-    .line 17
     invoke-static {v8}, Ljava/lang/Math;->round(F)I
 
     move-result v2
@@ -321,7 +291,6 @@
 
     mul-float v1, v1, v9
 
-    .line 18
     invoke-static {v1}, Ljava/lang/Math;->round(F)I
 
     move-result v1
@@ -334,15 +303,12 @@
 .method private captureValues(Landroidx/transition/x;)V
     .locals 5
 
-    .line 1
     iget-object v0, p1, Landroidx/transition/x;->b:Landroid/view/View;
 
-    .line 2
     iget-object v1, p0, Landroidx/transition/Explode;->a:[I
 
     invoke-virtual {v0, v1}, Landroid/view/View;->getLocationOnScreen([I)V
 
-    .line 3
     iget-object v1, p0, Landroidx/transition/Explode;->a:[I
 
     const/4 v2, 0x0
@@ -351,24 +317,20 @@
 
     const/4 v3, 0x1
 
-    .line 4
     aget v1, v1, v3
 
-    .line 5
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
 
     move-result v3
 
     add-int/2addr v3, v2
 
-    .line 6
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
     move-result v0
 
     add-int/2addr v0, v1
 
-    .line 7
     iget-object p1, p1, Landroidx/transition/x;->a:Ljava/util/Map;
 
     new-instance v4, Landroid/graphics/Rect;
@@ -391,10 +353,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/transition/Visibility;->captureEndValues(Landroidx/transition/x;)V
 
-    .line 2
     invoke-direct {p0, p1}, Landroidx/transition/Explode;->captureValues(Landroidx/transition/x;)V
 
     return-void
@@ -407,10 +367,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/transition/Visibility;->captureStartValues(Landroidx/transition/x;)V
 
-    .line 2
     invoke-direct {p0, p1}, Landroidx/transition/Explode;->captureValues(Landroidx/transition/x;)V
 
     return-void
@@ -427,7 +385,6 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     iget-object p3, p4, Landroidx/transition/x;->a:Ljava/util/Map;
 
@@ -439,22 +396,18 @@
 
     check-cast p3, Landroid/graphics/Rect;
 
-    .line 2
     invoke-virtual {p2}, Landroid/view/View;->getTranslationX()F
 
     move-result v6
 
-    .line 3
     invoke-virtual {p2}, Landroid/view/View;->getTranslationY()F
 
     move-result v7
 
-    .line 4
     iget-object v0, p0, Landroidx/transition/Explode;->a:[I
 
     invoke-direct {p0, p1, p3, v0}, Landroidx/transition/Explode;->a(Landroid/view/View;Landroid/graphics/Rect;[I)V
 
-    .line 5
     iget-object p1, p0, Landroidx/transition/Explode;->a:[I
 
     const/4 v0, 0x0
@@ -467,14 +420,12 @@
 
     const/4 v0, 0x1
 
-    .line 6
     aget p1, p1, v0
 
     int-to-float p1, p1
 
     add-float v5, v7, p1
 
-    .line 7
     iget v2, p3, Landroid/graphics/Rect;->left:I
 
     iget v3, p3, Landroid/graphics/Rect;->top:I
@@ -505,7 +456,6 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     iget-object p4, p3, Landroidx/transition/x;->a:Ljava/util/Map;
 
@@ -517,23 +467,18 @@
 
     check-cast p4, Landroid/graphics/Rect;
 
-    .line 2
     iget v2, p4, Landroid/graphics/Rect;->left:I
 
-    .line 3
     iget v3, p4, Landroid/graphics/Rect;->top:I
 
-    .line 4
     invoke-virtual {p2}, Landroid/view/View;->getTranslationX()F
 
     move-result v4
 
-    .line 5
     invoke-virtual {p2}, Landroid/view/View;->getTranslationY()F
 
     move-result v5
 
-    .line 6
     iget-object v0, p3, Landroidx/transition/x;->b:Landroid/view/View;
 
     sget v1, Landroidx/transition/R$id;->transition_position:I
@@ -550,7 +495,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 7
     aget v7, v0, v6
 
     iget v8, p4, Landroid/graphics/Rect;->left:I
@@ -561,7 +505,6 @@
 
     add-float/2addr v7, v4
 
-    .line 8
     aget v8, v0, v1
 
     iget v9, p4, Landroid/graphics/Rect;->top:I
@@ -572,7 +515,6 @@
 
     add-float/2addr v8, v5
 
-    .line 9
     aget v9, v0, v6
 
     aget v0, v0, v1
@@ -586,13 +528,11 @@
 
     move v8, v5
 
-    .line 10
     :goto_0
     iget-object v0, p0, Landroidx/transition/Explode;->a:[I
 
     invoke-direct {p0, p1, p4, v0}, Landroidx/transition/Explode;->a(Landroid/view/View;Landroid/graphics/Rect;[I)V
 
-    .line 11
     iget-object p1, p0, Landroidx/transition/Explode;->a:[I
 
     aget p4, p1, v6
@@ -601,14 +541,12 @@
 
     add-float v6, v7, p4
 
-    .line 12
     aget p1, p1, v1
 
     int-to-float p1, p1
 
     add-float v7, v8, p1
 
-    .line 13
     sget-object v8, Landroidx/transition/Explode;->c:Landroid/animation/TimeInterpolator;
 
     move-object v0, p2

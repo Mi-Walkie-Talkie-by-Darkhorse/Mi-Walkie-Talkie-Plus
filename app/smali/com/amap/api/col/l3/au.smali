@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/au;
 .super Ljava/lang/Object;
-.source "QuadTree2.java"
 
 
 # instance fields
@@ -35,7 +34,6 @@
 .method private constructor <init>(IIIII)V
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/ar;
 
     invoke-direct {v0, p1, p2, p3, p4}, Lcom/amap/api/col/l3/ar;-><init>(IIII)V
@@ -50,7 +48,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/amap/api/col/l3/au;-><init>(Lcom/amap/api/col/l3/ar;I)V
 
     return-void
@@ -59,23 +56,18 @@
 .method private constructor <init>(Lcom/amap/api/col/l3/ar;I)V
     .locals 3
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0x1e
 
-    .line 4
     iput v0, p0, Lcom/amap/api/col/l3/au;->c:I
 
     const/4 v1, 0x0
 
-    .line 5
     iput-object v1, p0, Lcom/amap/api/col/l3/au;->e:Ljava/util/List;
 
-    .line 6
     iput-object p1, p0, Lcom/amap/api/col/l3/au;->a:Lcom/amap/api/col/l3/ar;
 
-    .line 7
     iput p2, p0, Lcom/amap/api/col/l3/au;->b:I
 
     const/4 p1, 0x5
@@ -104,7 +96,6 @@
     :pswitch_3
     const/16 v0, 0x32
 
-    .line 8
     :goto_0
     :pswitch_4
     iput v0, p0, Lcom/amap/api/col/l3/au;->c:I
@@ -137,7 +128,6 @@
         }
     .end annotation
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/au;->a:Lcom/amap/api/col/l3/ar;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/ar;->a(Lcom/amap/api/col/l3/ar;)Z
@@ -148,13 +138,11 @@
 
     return-void
 
-    .line 9
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/au;->d:Ljava/util/List;
 
     if-eqz v0, :cond_3
 
-    .line 10
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -172,7 +160,6 @@
     :goto_0
     if-ge v2, v0, :cond_3
 
-    .line 11
     iget-object v3, p0, Lcom/amap/api/col/l3/au;->d:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -181,7 +168,6 @@
 
     check-cast v3, Lcom/amap/api/maps/model/MultiPointItem;
 
-    .line 12
     invoke-virtual {v3}, Lcom/amap/api/maps/model/MultiPointItem;->getIPoint()Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v4
@@ -192,7 +178,6 @@
 
     goto :goto_1
 
-    .line 13
     :cond_1
     iget v5, v4, Landroid/graphics/Point;->x:I
 
@@ -205,7 +190,6 @@
     :goto_1
     if-eqz v4, :cond_2
 
-    .line 14
     invoke-interface {p2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     :cond_2
@@ -220,7 +204,6 @@
 
     if-lez v2, :cond_6
 
-    .line 15
     iget-object p3, p0, Lcom/amap/api/col/l3/au;->a:Lcom/amap/api/col/l3/ar;
 
     iget v0, p3, Lcom/amap/api/col/l3/ar;->d:I
@@ -285,14 +268,12 @@
 
     double-to-float p3, v2
 
-    .line 16
     :cond_6
     :goto_2
     iget-object v0, p0, Lcom/amap/api/col/l3/au;->e:Ljava/util/List;
 
     if-eqz v0, :cond_7
 
-    .line 17
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v6
@@ -318,7 +299,6 @@
 
     move-wide v4, p4
 
-    .line 18
     invoke-direct/range {v0 .. v5}, Lcom/amap/api/col/l3/au;->a(Lcom/amap/api/col/l3/ar;Ljava/util/Collection;FD)V
 
     goto :goto_3
@@ -334,15 +314,12 @@
 
     const/4 v0, 0x0
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/col/l3/au;->e:Ljava/util/List;
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/au;->d:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 6
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     :cond_0
@@ -371,7 +348,6 @@
 
     move-wide v4, p3
 
-    .line 7
     invoke-direct/range {v0 .. v5}, Lcom/amap/api/col/l3/au;->a(Lcom/amap/api/col/l3/ar;Ljava/util/Collection;FD)V
 
     return-void
@@ -380,12 +356,10 @@
 .method protected final a(Lcom/amap/api/maps/model/MultiPointItem;)V
     .locals 12
 
-    .line 1
     invoke-virtual {p1}, Lcom/amap/api/maps/model/MultiPointItem;->getIPoint()Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/au;->a:Lcom/amap/api/col/l3/ar;
 
     iget v2, v0, Landroid/graphics/Point;->x:I
@@ -398,7 +372,6 @@
 
     if-eqz v1, :cond_6
 
-    .line 3
     iget v1, v0, Landroid/graphics/Point;->x:I
 
     iget v0, v0, Landroid/graphics/Point;->y:I

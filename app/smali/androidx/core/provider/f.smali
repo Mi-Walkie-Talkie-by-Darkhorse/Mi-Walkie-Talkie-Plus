@@ -1,6 +1,5 @@
 .class Landroidx/core/provider/f;
 .super Ljava/lang/Object;
-.source "RequestExecutor.java"
 
 
 # annotations
@@ -45,14 +44,12 @@
         }
     .end annotation
 
-    .line 3
     invoke-interface {p0, p1}, Ljava/util/concurrent/ExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
 
     move-result-object p0
 
     int-to-long p1, p2
 
-    .line 4
     :try_start_0
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
@@ -66,7 +63,6 @@
 
     return-object p0
 
-    .line 5
     :catch_0
     new-instance p0, Ljava/lang/InterruptedException;
 
@@ -79,13 +75,11 @@
     :catch_1
     move-exception p0
 
-    .line 6
     throw p0
 
     :catch_2
     move-exception p0
 
-    .line 7
     new-instance p1, Ljava/lang/RuntimeException;
 
     invoke-direct {p1, p0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -105,12 +99,10 @@
         .end annotation
     .end param
 
-    .line 8
     new-instance v7, Landroidx/core/provider/f$a;
 
     invoke-direct {v7, p0, p1}, Landroidx/core/provider/f$a;-><init>(Ljava/lang/String;I)V
 
-    .line 9
     new-instance p0, Ljava/util/concurrent/ThreadPoolExecutor;
 
     int-to-long v3, p2
@@ -131,7 +123,6 @@
 
     const/4 p1, 0x1
 
-    .line 10
     invoke-virtual {p0, p1}, Ljava/util/concurrent/ThreadPoolExecutor;->allowCoreThreadTimeOut(Z)V
 
     return-object p0
@@ -164,12 +155,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Landroidx/core/provider/b;->a()Landroid/os/Handler;
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Landroidx/core/provider/f$b;
 
     invoke-direct {v1, v0, p1, p2}, Landroidx/core/provider/f$b;-><init>(Landroid/os/Handler;Ljava/util/concurrent/Callable;Landroidx/core/d/a;)V

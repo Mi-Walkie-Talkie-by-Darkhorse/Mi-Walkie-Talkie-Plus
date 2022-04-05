@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/MapMakerInternalMap$CleanupMapTask;
 .super Ljava/lang/Object;
-.source "MapMakerInternalMap.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -40,10 +39,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -58,7 +55,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MapMakerInternalMap$CleanupMapTask;->mapReference:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -69,7 +65,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, v0, Lcom/google/common/collect/MapMakerInternalMap;->segments:[Lcom/google/common/collect/MapMakerInternalMap$Segment;
 
     array-length v1, v0
@@ -81,7 +76,6 @@
 
     aget-object v3, v0, v2
 
-    .line 3
     invoke-virtual {v3}, Lcom/google/common/collect/MapMakerInternalMap$Segment;->runCleanup()V
 
     add-int/lit8 v2, v2, 0x1
@@ -91,7 +85,6 @@
     :cond_0
     return-void
 
-    .line 4
     :cond_1
     new-instance v0, Ljava/util/concurrent/CancellationException;
 

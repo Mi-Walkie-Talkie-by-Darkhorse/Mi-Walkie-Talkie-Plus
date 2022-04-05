@@ -1,6 +1,5 @@
 .class final Lretrofit2/ParameterHandler$RawPart;
 .super Lretrofit2/ParameterHandler;
-.source "ParameterHandler.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lretrofit2/ParameterHandler$RawPart;
 
     invoke-direct {v0}, Lretrofit2/ParameterHandler$RawPart;-><init>()V
@@ -43,7 +41,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lretrofit2/ParameterHandler;-><init>()V
 
     return-void
@@ -63,7 +60,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p2, Lokhttp3/MultipartBody$Part;
 
     invoke-virtual {p0, p1, p2}, Lretrofit2/ParameterHandler$RawPart;->apply(Lretrofit2/RequestBuilder;Lokhttp3/MultipartBody$Part;)V
@@ -85,7 +81,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 2
     invoke-virtual {p1, p2}, Lretrofit2/RequestBuilder;->addPart(Lokhttp3/MultipartBody$Part;)V
 
     :cond_0

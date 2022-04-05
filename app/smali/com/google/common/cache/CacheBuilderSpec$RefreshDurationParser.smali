@@ -1,6 +1,5 @@
 .class Lcom/google/common/cache/CacheBuilderSpec$RefreshDurationParser;
 .super Lcom/google/common/cache/CacheBuilderSpec$DurationParser;
-.source "CacheBuilderSpec.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/cache/CacheBuilderSpec$DurationParser;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
 .method protected parseDuration(Lcom/google/common/cache/CacheBuilderSpec;JLjava/util/concurrent/TimeUnit;)V
     .locals 2
 
-    .line 1
     iget-object v0, p1, Lcom/google/common/cache/CacheBuilderSpec;->refreshTimeUnit:Ljava/util/concurrent/TimeUnit;
 
     if-nez v0, :cond_0
@@ -46,10 +43,8 @@
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 2
     iput-wide p2, p1, Lcom/google/common/cache/CacheBuilderSpec;->refreshDuration:J
 
-    .line 3
     iput-object p4, p1, Lcom/google/common/cache/CacheBuilderSpec;->refreshTimeUnit:Ljava/util/concurrent/TimeUnit;
 
     return-void

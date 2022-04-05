@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/bumptech/glide/gifdecoder/GifDecoder$GifDecodeStatus;
 .super Ljava/lang/Object;
-.source "GifDecoder.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

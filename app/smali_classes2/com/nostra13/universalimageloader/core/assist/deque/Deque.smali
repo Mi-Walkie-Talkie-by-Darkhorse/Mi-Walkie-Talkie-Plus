@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/nostra13/universalimageloader/core/assist/deque/Deque;
 .super Ljava/lang/Object;
-.source "Deque.java"
 
 # interfaces
 .implements Ljava/util/Queue;

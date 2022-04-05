@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;
 .super Lcom/google/protobuf/GeneratedMessage;
-.source "LiteProtos.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponseOrBuilder;
@@ -59,14 +58,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$a;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;
 
     const/4 v1, 0x1
@@ -75,7 +72,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->defaultInstance:Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;
 
-    .line 3
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->initFields()V
 
     return-void
@@ -91,10 +87,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessage$Builder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object p1
@@ -107,7 +101,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessage$Builder;Lcom/ifengyu/intercom/protos/LiteProtos$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
     return-void
@@ -116,7 +109,6 @@
 .method private constructor <init>(Z)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage;-><init>()V
 
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
@@ -131,7 +123,6 @@
 .method static synthetic access$11200()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/google/protobuf/GeneratedMessage;->alwaysUseFieldBuilders:Z
 
     return v0
@@ -140,7 +131,6 @@
 .method static synthetic access$11402(Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->version_:I
 
     return p1
@@ -149,7 +139,6 @@
 .method static synthetic access$11502(Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;)Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->result_:Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;
 
     return-object p1
@@ -158,7 +147,6 @@
 .method static synthetic access$11602(Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;)Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->channelInfo_:Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;
 
     return-object p1
@@ -167,7 +155,6 @@
 .method static synthetic access$11702(Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->bitField0_:I
 
     return p1
@@ -176,7 +163,6 @@
 .method public static getDefaultInstance()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->defaultInstance:Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;
 
     return-object v0
@@ -185,7 +171,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos;->d()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -198,15 +183,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->version_:I
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;->FAIL:Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->result_:Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;
 
     move-result-object v0
@@ -219,7 +201,6 @@
 .method public static newBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;->access$11000()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
 
     move-result-object v0
@@ -230,7 +211,6 @@
 .method public static newBuilder(Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;)Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->newBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
 
     move-result-object v0
@@ -252,7 +232,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -272,7 +251,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -292,7 +270,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
@@ -312,7 +289,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -332,7 +308,6 @@
         }
     .end annotation
 
-    .line 7
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;)Ljava/lang/Object;
@@ -352,7 +327,6 @@
         }
     .end annotation
 
-    .line 8
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -372,7 +346,6 @@
         }
     .end annotation
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -392,7 +365,6 @@
         }
     .end annotation
 
-    .line 6
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -412,7 +384,6 @@
         }
     .end annotation
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
@@ -432,7 +403,6 @@
         }
     .end annotation
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -449,7 +419,6 @@
 .method public getChannelInfo()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->channelInfo_:Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;
 
     return-object v0
@@ -458,7 +427,6 @@
 .method public getChannelInfoOrBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->channelInfo_:Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;
 
     return-object v0
@@ -467,7 +435,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;
 
     move-result-object v0
@@ -478,7 +445,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;
 
     move-result-object v0
@@ -489,7 +455,6 @@
 .method public getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;
     .locals 1
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->defaultInstance:Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;
 
     return-object v0
@@ -506,7 +471,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -515,7 +479,6 @@
 .method public getResult()Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->result_:Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;
 
     return-object v0
@@ -524,7 +487,6 @@
 .method public final getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
 
     return-object v0
@@ -533,7 +495,6 @@
 .method public getVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->version_:I
 
     return v0
@@ -542,7 +503,6 @@
 .method public hasChannelInfo()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->bitField0_:I
 
     const/4 v1, 0x4
@@ -565,7 +525,6 @@
 .method public hasResult()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->bitField0_:I
 
     const/4 v1, 0x2
@@ -588,7 +547,6 @@
 .method public hasVersion()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->bitField0_:I
 
     const/4 v1, 0x1
@@ -609,7 +567,6 @@
 .method protected internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos;->e()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -618,7 +575,6 @@
 
     const-class v2, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -629,7 +585,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->newBuilderForType()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
 
     move-result-object v0
@@ -640,7 +595,6 @@
 .method protected bridge synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/google/protobuf/Message$Builder;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
 
     move-result-object p1
@@ -651,7 +605,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->newBuilderForType()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
 
     move-result-object v0
@@ -662,7 +615,6 @@
 .method public newBuilderForType()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
     .locals 1
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->newBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
 
     move-result-object v0
@@ -673,7 +625,6 @@
 .method protected newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
     .locals 2
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
 
     const/4 v1, 0x0
@@ -686,7 +637,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->toBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
 
     move-result-object v0
@@ -697,7 +647,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->toBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
 
     move-result-object v0
@@ -708,7 +657,6 @@
 .method public toBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
     .locals 1
 
-    .line 3
     invoke-static {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->newBuilder(Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;)Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse$Builder;
 
     move-result-object v0

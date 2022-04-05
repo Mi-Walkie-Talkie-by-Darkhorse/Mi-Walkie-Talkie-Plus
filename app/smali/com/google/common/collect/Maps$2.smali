@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Maps$2;
 .super Lcom/google/common/collect/TransformedIterator;
-.source "Maps.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Ljava/util/Iterator;Lcom/google/common/base/Function;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/google/common/collect/Maps$2;->val$function:Lcom/google/common/base/Function;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/TransformedIterator;-><init>(Ljava/util/Iterator;)V
@@ -44,7 +42,6 @@
 .method bridge synthetic transform(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Maps$2;->transform(Ljava/lang/Object;)Ljava/util/Map$Entry;
 
     move-result-object p1
@@ -62,7 +59,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/Maps$2;->val$function:Lcom/google/common/base/Function;
 
     invoke-interface {v0, p1}, Lcom/google/common/base/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;

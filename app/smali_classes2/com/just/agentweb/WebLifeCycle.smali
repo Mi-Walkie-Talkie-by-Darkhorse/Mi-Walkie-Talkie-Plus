@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/WebLifeCycle;
 .super Ljava/lang/Object;
-.source "WebLifeCycle.java"
 
 
 # virtual methods

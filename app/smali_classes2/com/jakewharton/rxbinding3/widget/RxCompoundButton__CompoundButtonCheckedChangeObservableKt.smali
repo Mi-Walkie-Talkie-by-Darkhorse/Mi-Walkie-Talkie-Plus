@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/widget/RxCompoundButton__CompoundButtonCheckedChangeObservableKt;
 .super Ljava/lang/Object;
-.source "CompoundButtonCheckedChangeObservable.kt"
 
 
 # annotations
@@ -58,7 +57,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/CompoundButtonCheckedChangeObservable;
 
     invoke-direct {v0, p0}, Lcom/jakewharton/rxbinding3/widget/CompoundButtonCheckedChangeObservable;-><init>(Landroid/widget/CompoundButton;)V

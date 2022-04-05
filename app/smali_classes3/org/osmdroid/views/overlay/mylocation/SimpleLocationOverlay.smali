@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;
 .super Lorg/osmdroid/views/overlay/Overlay;
-.source "SimpleLocationOverlay.java"
 
 
 # instance fields
@@ -21,7 +20,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -46,17 +44,14 @@
 .method public constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 3
 
-    .line 2
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/Overlay;-><init>()V
 
-    .line 3
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->mPaint:Landroid/graphics/Paint;
 
-    .line 4
     new-instance v0, Landroid/graphics/Point;
 
     const/16 v1, 0x18
@@ -67,14 +62,12 @@
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->PERSON_HOTSPOT:Landroid/graphics/Point;
 
-    .line 5
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->screenCoords:Landroid/graphics/Point;
 
-    .line 6
     iput-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->PERSON_ICON:Landroid/graphics/Bitmap;
 
     return-void
@@ -87,24 +80,20 @@
 
     if-nez p3, :cond_0
 
-    .line 1
     iget-object p3, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->mLocation:Lorg/osmdroid/util/GeoPoint;
 
     if-eqz p3, :cond_0
 
-    .line 2
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object p2
 
-    .line 3
     iget-object p3, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->mLocation:Lorg/osmdroid/util/GeoPoint;
 
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->screenCoords:Landroid/graphics/Point;
 
     invoke-virtual {p2, p3, v0}, Lorg/osmdroid/views/Projection;->toPixels(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 4
     iget-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->PERSON_ICON:Landroid/graphics/Bitmap;
 
     iget-object p3, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->screenCoords:Landroid/graphics/Point;
@@ -138,7 +127,6 @@
 .method public getMyLocation()Lorg/osmdroid/util/GeoPoint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->mLocation:Lorg/osmdroid/util/GeoPoint;
 
     return-object v0
@@ -153,7 +141,6 @@
 .method public setLocation(Lorg/osmdroid/util/GeoPoint;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->mLocation:Lorg/osmdroid/util/GeoPoint;
 
     return-void
@@ -162,10 +149,8 @@
 .method public setPersonIcon(Landroid/graphics/Bitmap;Landroid/graphics/Point;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->PERSON_ICON:Landroid/graphics/Bitmap;
 
-    .line 2
     iput-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/SimpleLocationOverlay;->PERSON_HOTSPOT:Landroid/graphics/Point;
 
     return-void

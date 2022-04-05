@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/view/menu/k$a;
 .super Ljava/lang/Object;
-.source "MenuPopupHelper.java"
 
 # interfaces
 .implements Landroid/widget/PopupWindow$OnDismissListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/view/menu/k;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/k$a;->a:Landroidx/appcompat/view/menu/k;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onDismiss()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/k$a;->a:Landroidx/appcompat/view/menu/k;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/k;->d()V

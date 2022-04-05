@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/JsInterfaceHolderImpl;
 .super Lcom/just/agentweb/JsBaseInterfaceHolder;
-.source "JsInterfaceHolderImpl.java"
 
 
 # static fields
@@ -25,20 +24,16 @@
 .method constructor <init>(Lcom/just/agentweb/WebCreator;Lcom/just/agentweb/AgentWeb$SecurityType;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/just/agentweb/JsBaseInterfaceHolder;-><init>(Lcom/just/agentweb/WebCreator;Lcom/just/agentweb/AgentWeb$SecurityType;)V
 
-    .line 2
     iput-object p1, p0, Lcom/just/agentweb/JsInterfaceHolderImpl;->mWebCreator:Lcom/just/agentweb/WebCreator;
 
-    .line 3
     invoke-interface {p1}, Lcom/just/agentweb/WebCreator;->getWebView()Landroid/webkit/WebView;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/just/agentweb/JsInterfaceHolderImpl;->mWebView:Landroid/webkit/WebView;
 
-    .line 4
     iput-object p2, p0, Lcom/just/agentweb/JsInterfaceHolderImpl;->mSecurityType:Lcom/just/agentweb/AgentWeb$SecurityType;
 
     return-void
@@ -47,7 +42,6 @@
 .method private addJavaObjectDirect(Ljava/lang/String;Ljava/lang/Object;)Lcom/just/agentweb/JsInterfaceHolder;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/just/agentweb/JsInterfaceHolderImpl;->TAG:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -72,7 +66,6 @@
 
     invoke-static {v0, v1}, Lcom/just/agentweb/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/JsInterfaceHolderImpl;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0, p2, p1}, Landroid/webkit/WebView;->addJavascriptInterface(Ljava/lang/Object;Ljava/lang/String;)V
@@ -83,7 +76,6 @@
 .method static getJsInterfaceHolder(Lcom/just/agentweb/WebCreator;Lcom/just/agentweb/AgentWeb$SecurityType;)Lcom/just/agentweb/JsInterfaceHolderImpl;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/just/agentweb/JsInterfaceHolderImpl;
 
     invoke-direct {v0, p0, p1}, Lcom/just/agentweb/JsInterfaceHolderImpl;-><init>(Lcom/just/agentweb/WebCreator;Lcom/just/agentweb/AgentWeb$SecurityType;)V
@@ -96,7 +88,6 @@
 .method public addJavaObject(Ljava/lang/String;Ljava/lang/Object;)Lcom/just/agentweb/JsInterfaceHolder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/JsBaseInterfaceHolder;->checkSecurity()Z
 
     move-result v0
@@ -105,7 +96,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     invoke-virtual {p0, p2}, Lcom/just/agentweb/JsBaseInterfaceHolder;->checkObject(Ljava/lang/Object;)Z
 
@@ -113,12 +103,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-direct {p0, p1, p2}, Lcom/just/agentweb/JsInterfaceHolderImpl;->addJavaObjectDirect(Ljava/lang/String;Ljava/lang/Object;)Lcom/just/agentweb/JsInterfaceHolder;
 
     return-object p0
 
-    .line 4
     :cond_1
     new-instance p1, Lcom/just/agentweb/JsInterfaceObjectException;
 
@@ -142,14 +130,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/JsBaseInterfaceHolder;->checkSecurity()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     sget-object p1, Lcom/just/agentweb/JsInterfaceHolderImpl;->TAG:Ljava/lang/String;
 
     const-string v0, "The injected object is not safe, give up injection"
@@ -158,13 +144,11 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
 
-    .line 4
     invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -182,19 +166,16 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 5
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 6
     invoke-virtual {p0, v1}, Lcom/just/agentweb/JsBaseInterfaceHolder;->checkObject(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 7
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -205,7 +186,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     new-instance p1, Lcom/just/agentweb/JsInterfaceObjectException;
 

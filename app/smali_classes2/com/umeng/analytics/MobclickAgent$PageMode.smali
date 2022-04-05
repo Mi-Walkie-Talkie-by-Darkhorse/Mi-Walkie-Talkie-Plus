@@ -1,6 +1,5 @@
 .class public final enum Lcom/umeng/analytics/MobclickAgent$PageMode;
 .super Ljava/lang/Enum;
-.source "MobclickAgent.java"
 
 
 # annotations
@@ -38,7 +37,6 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 1
     new-instance v0, Lcom/umeng/analytics/MobclickAgent$PageMode;
 
     const/4 v1, 0x0
@@ -49,7 +47,6 @@
 
     sput-object v0, Lcom/umeng/analytics/MobclickAgent$PageMode;->AUTO:Lcom/umeng/analytics/MobclickAgent$PageMode;
 
-    .line 2
     new-instance v0, Lcom/umeng/analytics/MobclickAgent$PageMode;
 
     const/4 v2, 0x1
@@ -60,7 +57,6 @@
 
     sput-object v0, Lcom/umeng/analytics/MobclickAgent$PageMode;->MANUAL:Lcom/umeng/analytics/MobclickAgent$PageMode;
 
-    .line 3
     new-instance v0, Lcom/umeng/analytics/MobclickAgent$PageMode;
 
     const/4 v3, 0x2
@@ -71,7 +67,6 @@
 
     sput-object v0, Lcom/umeng/analytics/MobclickAgent$PageMode;->LEGACY_AUTO:Lcom/umeng/analytics/MobclickAgent$PageMode;
 
-    .line 4
     new-instance v0, Lcom/umeng/analytics/MobclickAgent$PageMode;
 
     const/4 v4, 0x3
@@ -86,7 +81,6 @@
 
     new-array v5, v5, [Lcom/umeng/analytics/MobclickAgent$PageMode;
 
-    .line 5
     sget-object v6, Lcom/umeng/analytics/MobclickAgent$PageMode;->AUTO:Lcom/umeng/analytics/MobclickAgent$PageMode;
 
     aput-object v6, v5, v1
@@ -114,7 +108,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -123,7 +116,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/umeng/analytics/MobclickAgent$PageMode;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/umeng/analytics/MobclickAgent$PageMode;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -138,7 +130,6 @@
 .method public static values()[Lcom/umeng/analytics/MobclickAgent$PageMode;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/MobclickAgent$PageMode;->a:[Lcom/umeng/analytics/MobclickAgent$PageMode;
 
     invoke-virtual {v0}, [Lcom/umeng/analytics/MobclickAgent$PageMode;->clone()Ljava/lang/Object;

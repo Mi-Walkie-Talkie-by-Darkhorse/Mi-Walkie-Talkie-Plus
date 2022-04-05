@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/CrossOverlay;
 .super Ljava/lang/Object;
-.source "CrossOverlay.java"
 
 
 # instance fields
@@ -13,21 +12,16 @@
 .method public constructor <init>(Lcom/amap/api/maps/model/CrossOverlayOptions;Lcom/autonavi/ae/gmap/gloverlay/CrossVectorOverlay;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/maps/model/CrossOverlay;->a:Lcom/autonavi/ae/gmap/gloverlay/CrossVectorOverlay;
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/maps/model/CrossOverlay;->b:Lcom/amap/api/maps/model/CrossOverlayOptions;
 
-    .line 4
     iput-object p1, p0, Lcom/amap/api/maps/model/CrossOverlay;->b:Lcom/amap/api/maps/model/CrossOverlayOptions;
 
-    .line 5
     iput-object p2, p0, Lcom/amap/api/maps/model/CrossOverlay;->a:Lcom/autonavi/ae/gmap/gloverlay/CrossVectorOverlay;
 
     return-void
@@ -38,12 +32,10 @@
 .method public remove()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/CrossOverlay;->a:Lcom/autonavi/ae/gmap/gloverlay/CrossVectorOverlay;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/gloverlay/CrossVectorOverlay;->remove()V
 
     :cond_0
@@ -53,7 +45,6 @@
 .method public setAttribute(Lcom/autonavi/ae/gmap/gloverlay/GLCrossVector$AVectorCrossAttr;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/CrossOverlay;->a:Lcom/autonavi/ae/gmap/gloverlay/CrossVectorOverlay;
 
     invoke-virtual {v0, p1}, Lcom/autonavi/ae/gmap/gloverlay/CrossVectorOverlay;->setAttribute(Lcom/autonavi/ae/gmap/gloverlay/GLCrossVector$AVectorCrossAttr;)V
@@ -66,12 +57,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/CrossOverlay;->a:Lcom/autonavi/ae/gmap/gloverlay/CrossVectorOverlay;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/autonavi/ae/gmap/gloverlay/CrossVectorOverlay;->setData([B)V
 
     :cond_0
@@ -81,12 +70,10 @@
 .method public setVisible(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/CrossOverlay;->a:Lcom/autonavi/ae/gmap/gloverlay/CrossVectorOverlay;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/autonavi/ae/gmap/gloverlay/BaseMapOverlay;->setVisible(Z)V
 
     :cond_0

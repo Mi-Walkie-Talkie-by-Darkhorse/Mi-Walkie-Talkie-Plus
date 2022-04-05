@@ -1,6 +1,5 @@
 .class interface abstract Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$b;
 .super Ljava/lang/Object;
-.source "QMUIDraggableScrollBar.java"
 
 
 # annotations

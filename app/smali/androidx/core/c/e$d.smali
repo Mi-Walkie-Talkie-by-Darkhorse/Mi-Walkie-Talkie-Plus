@@ -1,6 +1,5 @@
 .class abstract Landroidx/core/c/e$d;
 .super Ljava/lang/Object;
-.source "TextDirectionHeuristicsCompat.java"
 
 # interfaces
 .implements Landroidx/core/c/d;
@@ -25,10 +24,8 @@
 .method constructor <init>(Landroidx/core/c/e$c;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/c/e$d;->a:Landroidx/core/c/e$c;
 
     return-void
@@ -37,7 +34,6 @@
 .method private b(Ljava/lang/CharSequence;II)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/c/e$d;->a:Landroidx/core/c/e$c;
 
     invoke-interface {v0, p1, p2, p3}, Landroidx/core/c/e$c;->a(Ljava/lang/CharSequence;II)I
@@ -50,7 +46,6 @@
 
     if-eq p1, p2, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/core/c/e$d;->a()Z
 
     move-result p1
@@ -80,7 +75,6 @@
 
     if-ltz p3, :cond_1
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -89,19 +83,16 @@
 
     if-lt v0, p2, :cond_1
 
-    .line 2
     iget-object v0, p0, Landroidx/core/c/e$d;->a:Landroidx/core/c/e$c;
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Landroidx/core/c/e$d;->a()Z
 
     move-result p1
 
     return p1
 
-    .line 4
     :cond_0
     invoke-direct {p0, p1, p2, p3}, Landroidx/core/c/e$d;->b(Ljava/lang/CharSequence;II)Z
 
@@ -109,7 +100,6 @@
 
     return p1
 
-    .line 5
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

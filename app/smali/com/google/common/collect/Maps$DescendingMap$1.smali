@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Maps$DescendingMap$1;
 .super Lcom/google/common/collect/Maps$EntrySet;
-.source "Maps.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/collect/Maps$DescendingMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Maps$DescendingMap$1;->this$0:Lcom/google/common/collect/Maps$DescendingMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/Maps$EntrySet;-><init>()V
@@ -50,7 +48,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Maps$DescendingMap$1;->this$0:Lcom/google/common/collect/Maps$DescendingMap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/Maps$DescendingMap;->entryIterator()Ljava/util/Iterator;
@@ -70,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Maps$DescendingMap$1;->this$0:Lcom/google/common/collect/Maps$DescendingMap;
 
     return-object v0

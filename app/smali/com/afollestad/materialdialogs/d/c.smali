@@ -1,6 +1,5 @@
 .class public Lcom/afollestad/materialdialogs/d/c;
 .super Ljava/lang/Object;
-.source "TypefaceHelper.java"
 
 
 # static fields
@@ -20,7 +19,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, La/b/g;
 
     invoke-direct {v0}, La/b/g;-><init>()V
@@ -33,12 +31,10 @@
 .method public static a(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Typeface;
     .locals 4
 
-    .line 1
     sget-object v0, Lcom/afollestad/materialdialogs/d/c;->a:La/b/g;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     sget-object v1, Lcom/afollestad/materialdialogs/d/c;->a:La/b/g;
 
@@ -50,7 +46,6 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     :try_start_1
     invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
@@ -74,7 +69,6 @@
 
     move-result-object p0
 
-    .line 4
     sget-object v1, Lcom/afollestad/materialdialogs/d/c;->a:La/b/g;
 
     invoke-virtual {v1, p1, p0}, La/b/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -82,7 +76,6 @@
     .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5
     :try_start_2
     monitor-exit v0
 
@@ -91,12 +84,10 @@
     :catch_0
     const/4 p0, 0x0
 
-    .line 6
     monitor-exit v0
 
     return-object p0
 
-    .line 7
     :cond_0
     sget-object p0, Lcom/afollestad/materialdialogs/d/c;->a:La/b/g;
 
@@ -113,7 +104,6 @@
     :catchall_0
     move-exception p0
 
-    .line 8
     monitor-exit v0
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0

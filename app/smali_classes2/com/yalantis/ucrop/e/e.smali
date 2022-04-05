@@ -1,6 +1,5 @@
 .class public Lcom/yalantis/ucrop/e/e;
 .super Ljava/lang/Object;
-.source "FileUtils.java"
 
 
 # direct methods
@@ -24,7 +23,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1, p2}, Landroid/net/Uri;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -36,7 +34,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -48,7 +45,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     :try_start_1
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -58,7 +54,6 @@
 
     move-result-object v0
 
-    .line 4
     instance-of p0, p1, Ljava/io/FileInputStream;
 
     if-eqz p0, :cond_3
@@ -67,7 +62,6 @@
 
     if-eqz p0, :cond_3
 
-    .line 5
     move-object p0, p1
 
     check-cast p0, Ljava/io/FileInputStream;
@@ -76,7 +70,6 @@
 
     move-result-object v1
 
-    .line 6
     move-object p0, v0
 
     check-cast p0, Ljava/io/FileOutputStream;
@@ -87,7 +80,6 @@
 
     const-wide/16 v2, 0x0
 
-    .line 7
     invoke-virtual {v1}, Ljava/nio/channels/FileChannel;->size()J
 
     move-result-wide v4
@@ -98,19 +90,16 @@
 
     if-eqz p1, :cond_1
 
-    .line 8
     invoke-virtual {p1}, Ljava/io/InputStream;->close()V
 
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 9
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
     :cond_2
     return-void
 
-    .line 10
     :cond_3
     :try_start_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
@@ -142,16 +131,13 @@
     :goto_0
     if-eqz v0, :cond_4
 
-    .line 11
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
     :cond_4
     if-eqz p1, :cond_5
 
-    .line 12
     invoke-virtual {p1}, Ljava/io/OutputStream;->close()V
 
-    .line 13
     :cond_5
     throw p0
 .end method

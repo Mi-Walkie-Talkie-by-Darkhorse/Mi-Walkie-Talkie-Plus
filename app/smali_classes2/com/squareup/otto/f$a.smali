@@ -1,6 +1,5 @@
 .class final Lcom/squareup/otto/f$a;
 .super Ljava/lang/Object;
-.source "HandlerFinder.java"
 
 # interfaces
 .implements Lcom/squareup/otto/f;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +42,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/squareup/otto/a;->a(Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p1
@@ -68,7 +65,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/squareup/otto/a;->b(Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p1

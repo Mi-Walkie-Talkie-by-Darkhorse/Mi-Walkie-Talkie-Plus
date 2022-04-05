@@ -1,6 +1,5 @@
 .class synthetic Lcom/umeng/analytics/pro/aj$1;
 .super Ljava/lang/Object;
-.source "UMEnvelope.java"
 
 
 # annotations

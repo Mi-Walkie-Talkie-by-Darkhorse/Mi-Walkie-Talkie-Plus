@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/log/LogService$a;
 .super Landroid/content/BroadcastReceiver;
-.source "LogService.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/log/LogService;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
@@ -29,12 +27,10 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 3
 
-    .line 1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/log/LogService;->a()Ljava/lang/String;
 
     move-result-object v0
@@ -55,7 +51,6 @@
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1

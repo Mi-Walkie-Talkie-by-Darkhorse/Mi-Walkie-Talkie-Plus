@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/utils/g$a;
 .super Ljava/lang/Object;
-.source "SDKNotification.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method private static a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I
     .locals 1
 
-    .line 20
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -50,18 +47,15 @@
 
     move-result-object v0
 
-    .line 21
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object p0
 
-    .line 22
     :try_start_0
     invoke-virtual {p0, v0}, Landroid/content/pm/PackageManager;->getResourcesForApplication(Ljava/lang/String;)Landroid/content/res/Resources;
 
     move-result-object p0
 
-    .line 23
     invoke-virtual {p0, p1, p2, v0}, Landroid/content/res/Resources;->getIdentifier(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p0
@@ -73,7 +67,6 @@
     :catch_0
     move-exception p0
 
-    .line 24
     invoke-virtual {p0}, Landroid/content/pm/PackageManager$NameNotFoundException;->printStackTrace()V
 
     const/4 p0, 0x0
@@ -84,7 +77,6 @@
 .method public static a()Lcom/sina/weibo/sdk/utils/g$a;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/sina/weibo/sdk/utils/g$a;
 
     invoke-direct {v0}, Lcom/sina/weibo/sdk/utils/g$a;-><init>()V
@@ -99,7 +91,6 @@
 
     const-string v1, "drawable"
 
-    .line 2
     invoke-static {p0, v0, v1}, Lcom/sina/weibo/sdk/utils/g$a;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p0
@@ -120,7 +111,6 @@
 .method public a(Landroid/app/PendingIntent;)Lcom/sina/weibo/sdk/utils/g$a;
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/sina/weibo/sdk/utils/g$a;->d:Landroid/app/PendingIntent;
 
     return-object p0
@@ -129,7 +119,6 @@
 .method public a(Ljava/lang/String;)Lcom/sina/weibo/sdk/utils/g$a;
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/sina/weibo/sdk/utils/g$a;->c:Ljava/lang/String;
 
     return-object p0
@@ -138,66 +127,54 @@
 .method public a(Landroid/content/Context;)Lcom/sina/weibo/sdk/utils/g;
     .locals 3
 
-    .line 4
     new-instance v0, Landroidx/core/app/NotificationCompat$b;
 
     invoke-direct {v0, p1}, Landroidx/core/app/NotificationCompat$b;-><init>(Landroid/content/Context;)V
 
     const/4 v1, 0x1
 
-    .line 5
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->a(Z)Landroidx/core/app/NotificationCompat$b;
 
-    .line 6
     iget-object v1, p0, Lcom/sina/weibo/sdk/utils/g$a;->d:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->a(Landroid/app/PendingIntent;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 7
     iget-object v1, p0, Lcom/sina/weibo/sdk/utils/g$a;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->c(Ljava/lang/CharSequence;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 8
     invoke-static {p1}, Lcom/sina/weibo/sdk/utils/g$a;->b(Landroid/content/Context;)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->a(I)Landroidx/core/app/NotificationCompat$b;
 
-    .line 9
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
     invoke-virtual {v0, v1, v2}, Landroidx/core/app/NotificationCompat$b;->a(J)Landroidx/core/app/NotificationCompat$b;
 
-    .line 10
     iget-object v1, p0, Lcom/sina/weibo/sdk/utils/g$a;->f:Landroid/net/Uri;
 
     if-eqz v1, :cond_0
 
-    .line 11
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->a(Landroid/net/Uri;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 12
     :cond_0
     iget-object v1, p0, Lcom/sina/weibo/sdk/utils/g$a;->e:[J
 
     if-eqz v1, :cond_1
 
-    .line 13
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->a([J)Landroidx/core/app/NotificationCompat$b;
 
     :cond_1
     const-string v1, "weibosdk_notification_icon.png"
 
-    .line 14
     invoke-static {p1, v1}, Lcom/sina/weibo/sdk/utils/f;->b(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 15
     check-cast v1, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
@@ -206,22 +183,18 @@
 
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->a(Landroid/graphics/Bitmap;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 16
     iget-object v1, p0, Lcom/sina/weibo/sdk/utils/g$a;->b:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->b(Ljava/lang/CharSequence;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 17
     iget-object v1, p0, Lcom/sina/weibo/sdk/utils/g$a;->c:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->a(Ljava/lang/CharSequence;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 18
     invoke-virtual {v0}, Landroidx/core/app/NotificationCompat$b;->a()Landroid/app/Notification;
 
     move-result-object v0
 
-    .line 19
     new-instance v1, Lcom/sina/weibo/sdk/utils/g;
 
     const/4 v2, 0x0
@@ -234,7 +207,6 @@
 .method public b(Ljava/lang/String;)Lcom/sina/weibo/sdk/utils/g$a;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/utils/g$a;->b:Ljava/lang/String;
 
     return-object p0
@@ -243,7 +215,6 @@
 .method public c(Ljava/lang/String;)Lcom/sina/weibo/sdk/utils/g$a;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/utils/g$a;->a:Ljava/lang/String;
 
     return-object p0

@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/MaybeOnSubscribe;
 .super Ljava/lang/Object;
-.source "MaybeOnSubscribe.java"
 
 
 # annotations

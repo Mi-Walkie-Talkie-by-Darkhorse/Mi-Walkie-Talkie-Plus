@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/appcompat/widget/ActionMenuView$a;
 .super Ljava/lang/Object;
-.source "ActionMenuView.java"
 
 
 # annotations

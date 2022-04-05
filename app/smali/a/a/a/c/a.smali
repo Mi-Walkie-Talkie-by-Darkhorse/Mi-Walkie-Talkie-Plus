@@ -1,6 +1,5 @@
 .class public interface abstract La/a/a/c/a;
 .super Ljava/lang/Object;
-.source "Function.java"
 
 
 # annotations

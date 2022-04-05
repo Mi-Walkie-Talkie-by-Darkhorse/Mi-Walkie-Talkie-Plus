@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/HashBiMap$KeySet$1;
 .super Lcom/google/common/collect/HashBiMap$Itr;
-.source "HashBiMap.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/collect/HashBiMap$KeySet;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$KeySet$1;->this$1:Lcom/google/common/collect/HashBiMap$KeySet;
 
     iget-object p1, p1, Lcom/google/common/collect/HashBiMap$KeySet;->this$0:Lcom/google/common/collect/HashBiMap;
@@ -51,7 +49,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p1, Lcom/google/common/collect/ImmutableEntry;->key:Ljava/lang/Object;
 
     return-object p1

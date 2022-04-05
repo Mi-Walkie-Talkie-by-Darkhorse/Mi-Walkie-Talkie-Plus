@@ -1,6 +1,5 @@
 .class public abstract Lcom/qmuiteam/qmui/widget/d;
 .super Ljava/lang/Object;
-.source "QMUIItemViewsAdapter.java"
 
 
 # annotations
@@ -51,24 +50,20 @@
 .method public constructor <init>(Landroid/view/ViewGroup;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->b:Ljava/util/List;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->c:Ljava/util/List;
 
-    .line 4
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/d;->d:Landroid/view/ViewGroup;
 
     return-void
@@ -82,7 +77,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->a:Landroidx/core/d/e;
 
     if-eqz v0, :cond_0
@@ -101,7 +95,6 @@
     :goto_0
     if-nez v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->d:Landroid/view/ViewGroup;
 
     invoke-virtual {p0, v0}, Lcom/qmuiteam/qmui/widget/d;->a(Landroid/view/ViewGroup;)Landroid/view/View;
@@ -134,7 +127,6 @@
         }
     .end annotation
 
-    .line 11
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->b:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -145,12 +137,10 @@
 .method public a()V
     .locals 1
 
-    .line 9
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->b:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 10
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -165,7 +155,6 @@
 .method public a(I)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -177,7 +166,6 @@
 
     if-lez p1, :cond_3
 
-    .line 2
     iget-object v1, p0, Lcom/qmuiteam/qmui/widget/d;->c:Ljava/util/List;
 
     add-int/lit8 v2, v0, -0x1
@@ -188,12 +176,10 @@
 
     check-cast v1, Landroid/view/View;
 
-    .line 3
     iget-object v2, p0, Lcom/qmuiteam/qmui/widget/d;->a:Landroidx/core/d/e;
 
     if-nez v2, :cond_0
 
-    .line 4
     new-instance v2, Landroidx/core/d/f;
 
     const/16 v3, 0xc
@@ -202,7 +188,6 @@
 
     iput-object v2, p0, Lcom/qmuiteam/qmui/widget/d;->a:Landroidx/core/d/e;
 
-    .line 5
     :cond_0
     sget v2, Lcom/qmuiteam/qmui/R$id;->qmui_view_can_not_cache_tag:I
 
@@ -212,7 +197,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 6
     check-cast v2, Ljava/lang/Boolean;
 
     invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
@@ -221,7 +205,6 @@
 
     if-nez v2, :cond_2
 
-    .line 7
     :cond_1
     :try_start_0
     iget-object v2, p0, Lcom/qmuiteam/qmui/widget/d;->a:Landroidx/core/d/e;
@@ -230,7 +213,6 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 8
     :catch_0
     :cond_2
     iget-object v2, p0, Lcom/qmuiteam/qmui/widget/d;->d:Landroid/view/ViewGroup;
@@ -258,7 +240,6 @@
 .method public b()I
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->b:Ljava/util/List;
 
     if-nez v0, :cond_0
@@ -267,7 +248,6 @@
 
     return v0
 
-    .line 5
     :cond_0
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -284,7 +264,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->b:Ljava/util/List;
 
     const/4 v1, 0x0
@@ -296,7 +275,6 @@
     :cond_0
     if-ltz p1, :cond_2
 
-    .line 2
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -305,7 +283,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->b:Ljava/util/List;
 
@@ -330,7 +307,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->c:Ljava/util/List;
 
     return-object v0
@@ -339,14 +315,12 @@
 .method public d()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->b:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/qmuiteam/qmui/widget/d;->c:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -359,7 +333,6 @@
 
     sub-int/2addr v1, v0
 
-    .line 3
     invoke-virtual {p0, v1}, Lcom/qmuiteam/qmui/widget/d;->a(I)V
 
     goto :goto_1
@@ -374,17 +347,14 @@
 
     if-ge v3, v4, :cond_1
 
-    .line 4
     invoke-direct {p0}, Lcom/qmuiteam/qmui/widget/d;->e()Landroid/view/View;
 
     move-result-object v4
 
-    .line 5
     iget-object v5, p0, Lcom/qmuiteam/qmui/widget/d;->d:Landroid/view/ViewGroup;
 
     invoke-virtual {v5, v4}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    .line 6
     iget-object v5, p0, Lcom/qmuiteam/qmui/widget/d;->c:Ljava/util/List;
 
     invoke-interface {v5, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -397,7 +367,6 @@
     :goto_1
     if-ge v2, v0, :cond_2
 
-    .line 7
     iget-object v1, p0, Lcom/qmuiteam/qmui/widget/d;->c:Ljava/util/List;
 
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -406,27 +375,23 @@
 
     check-cast v1, Landroid/view/View;
 
-    .line 8
     iget-object v3, p0, Lcom/qmuiteam/qmui/widget/d;->b:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 9
     invoke-virtual {p0, v3, v1, v2}, Lcom/qmuiteam/qmui/widget/d;->a(Ljava/lang/Object;Landroid/view/View;I)V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_1
 
-    .line 10
     :cond_2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->d:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->invalidate()V
 
-    .line 11
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/d;->d:Landroid/view/ViewGroup;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->requestLayout()V

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/transition/Slide$GravityFlag;
 .super Ljava/lang/Object;
-.source "Slide.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class abstract Lorg/greenrobot/greendao/query/AbstractQueryWithLimit;
 .super Lorg/greenrobot/greendao/query/AbstractQuery;
-.source "AbstractQueryWithLimit.java"
 
 
 # annotations
@@ -36,13 +35,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lorg/greenrobot/greendao/query/AbstractQuery;-><init>(Lorg/greenrobot/greendao/AbstractDao;Ljava/lang/String;[Ljava/lang/String;)V
 
-    .line 2
     iput p4, p0, Lorg/greenrobot/greendao/query/AbstractQueryWithLimit;->limitPosition:I
 
-    .line 3
     iput p5, p0, Lorg/greenrobot/greendao/query/AbstractQueryWithLimit;->offsetPosition:I
 
     return-void
@@ -53,17 +49,14 @@
 .method public setLimit(I)V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/AbstractQuery;->checkThread()V
 
-    .line 2
     iget v0, p0, Lorg/greenrobot/greendao/query/AbstractQueryWithLimit;->limitPosition:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 3
     iget-object v1, p0, Lorg/greenrobot/greendao/query/AbstractQuery;->parameters:[Ljava/lang/String;
 
     invoke-static {p1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
@@ -74,7 +67,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -88,17 +80,14 @@
 .method public setOffset(I)V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/query/AbstractQuery;->checkThread()V
 
-    .line 2
     iget v0, p0, Lorg/greenrobot/greendao/query/AbstractQueryWithLimit;->offsetPosition:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 3
     iget-object v1, p0, Lorg/greenrobot/greendao/query/AbstractQuery;->parameters:[Ljava/lang/String;
 
     invoke-static {p1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
@@ -109,7 +98,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -123,7 +111,6 @@
 .method public bridge synthetic setParameter(ILjava/lang/Object;)Lorg/greenrobot/greendao/query/AbstractQuery;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lorg/greenrobot/greendao/query/AbstractQueryWithLimit;->setParameter(ILjava/lang/Object;)Lorg/greenrobot/greendao/query/AbstractQueryWithLimit;
 
     move-result-object p1
@@ -145,7 +132,6 @@
 
     if-ltz p1, :cond_1
 
-    .line 2
     iget v0, p0, Lorg/greenrobot/greendao/query/AbstractQueryWithLimit;->limitPosition:I
 
     if-eq p1, v0, :cond_0
@@ -156,7 +142,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
@@ -178,7 +163,6 @@
 
     throw p2
 
-    .line 4
     :cond_1
     :goto_0
     invoke-super {p0, p1, p2}, Lorg/greenrobot/greendao/query/AbstractQuery;->setParameter(ILjava/lang/Object;)Lorg/greenrobot/greendao/query/AbstractQuery;

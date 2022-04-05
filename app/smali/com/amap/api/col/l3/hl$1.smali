@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/hl$1;
 .super Ljava/lang/Object;
-.source "InstanceFactory.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/hl$1;->a:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/hl$1;->b:Ljava/lang/String;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     :try_start_0
     new-instance v0, Lcom/amap/api/col/l3/gz;
 
@@ -54,7 +51,6 @@
 
     invoke-direct {v0, v1, v2}, Lcom/amap/api/col/l3/gz;-><init>(Landroid/content/Context;Lcom/amap/api/col/l3/gy;)V
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/hl$1;->a:Landroid/content/Context;
 
     iget-object v2, p0, Lcom/amap/api/col/l3/hl$1;->b:Ljava/lang/String;
@@ -72,7 +68,6 @@
 
     const-string v2, "rollBack"
 
-    .line 3
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

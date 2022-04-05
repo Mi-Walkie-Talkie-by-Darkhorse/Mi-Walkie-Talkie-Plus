@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$g$a;
 .super Ljava/lang/Object;
-.source "SealBleEarConnectActivity.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -32,7 +31,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$g;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -56,7 +54,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p2
@@ -85,7 +82,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/util/Map$Entry;
 
     check-cast p2, Ljava/util/Map$Entry;

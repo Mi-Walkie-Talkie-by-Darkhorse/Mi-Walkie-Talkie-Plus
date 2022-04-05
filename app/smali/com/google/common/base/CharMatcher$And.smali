@@ -1,6 +1,5 @@
 .class Lcom/google/common/base/CharMatcher$And;
 .super Lcom/google/common/base/CharMatcher;
-.source "CharMatcher.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/google/common/base/CharMatcher;Lcom/google/common/base/CharMatcher;)V
     .locals 5
 
-    .line 1
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -85,10 +83,8 @@
 .method constructor <init>(Lcom/google/common/base/CharMatcher;Lcom/google/common/base/CharMatcher;Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p3}, Lcom/google/common/base/CharMatcher;-><init>(Ljava/lang/String;)V
 
-    .line 3
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -97,7 +93,6 @@
 
     iput-object p1, p0, Lcom/google/common/base/CharMatcher$And;->first:Lcom/google/common/base/CharMatcher;
 
-    .line 4
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -114,7 +109,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Character;
 
     invoke-super {p0, p1}, Lcom/google/common/base/CharMatcher;->apply(Ljava/lang/Character;)Z
@@ -127,7 +121,6 @@
 .method public matches(C)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/CharMatcher$And;->first:Lcom/google/common/base/CharMatcher;
 
     invoke-virtual {v0, p1}, Lcom/google/common/base/CharMatcher;->matches(C)Z
@@ -161,30 +154,24 @@
         value = "java.util.BitSet"
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/BitSet;
 
     invoke-direct {v0}, Ljava/util/BitSet;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/google/common/base/CharMatcher$And;->first:Lcom/google/common/base/CharMatcher;
 
     invoke-virtual {v1, v0}, Lcom/google/common/base/CharMatcher;->setBits(Ljava/util/BitSet;)V
 
-    .line 3
     new-instance v1, Ljava/util/BitSet;
 
     invoke-direct {v1}, Ljava/util/BitSet;-><init>()V
 
-    .line 4
     iget-object v2, p0, Lcom/google/common/base/CharMatcher$And;->second:Lcom/google/common/base/CharMatcher;
 
     invoke-virtual {v2, v1}, Lcom/google/common/base/CharMatcher;->setBits(Ljava/util/BitSet;)V
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/util/BitSet;->and(Ljava/util/BitSet;)V
 
-    .line 6
     invoke-virtual {p1, v0}, Ljava/util/BitSet;->or(Ljava/util/BitSet;)V
 
     return-void
@@ -193,7 +180,6 @@
 .method withToString(Ljava/lang/String;)Lcom/google/common/base/CharMatcher;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/google/common/base/CharMatcher$And;
 
     iget-object v1, p0, Lcom/google/common/base/CharMatcher$And;->first:Lcom/google/common/base/CharMatcher;

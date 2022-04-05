@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment_ViewBinding;
 .super Ljava/lang/Object;
-.source "DolphinRelayFragment_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment_ViewBinding;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;
 
-    .line 3
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;
 
     const v1, 0x7f090359
@@ -37,7 +33,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;->mRvRelay:Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;
 
-    .line 4
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090470
@@ -52,7 +47,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;->mTvEmptyView:Landroid/widget/TextView;
 
-    .line 5
     const-class v0, Landroid/widget/ProgressBar;
 
     const v1, 0x7f090311
@@ -77,28 +71,22 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment_ViewBinding;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment_ViewBinding;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;->mRvRelay:Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;->mTvEmptyView:Landroid/widget/TextView;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;->mProgressBar:Landroid/widget/ProgressBar;
 
     return-void
 
-    .line 6
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

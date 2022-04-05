@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/CoreProtocol;
 .super Ljava/lang/Object;
-.source "CoreProtocol.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/framework/UMLogDataProtocol;
@@ -29,7 +28,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
 .method synthetic constructor <init>(Lcom/umeng/analytics/CoreProtocol$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/umeng/analytics/CoreProtocol;-><init>()V
 
     return-void
@@ -47,21 +44,18 @@
 .method public static getInstance(Landroid/content/Context;)Lcom/umeng/analytics/CoreProtocol;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/CoreProtocol;->a:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
     if-eqz p0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p0
 
     sput-object p0, Lcom/umeng/analytics/CoreProtocol;->a:Landroid/content/Context;
 
-    .line 3
     :cond_0
     invoke-static {}, Lcom/umeng/analytics/CoreProtocol$a;->a()Lcom/umeng/analytics/CoreProtocol;
 
@@ -75,7 +69,6 @@
 .method public onConnectionAvailable()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/CoreProtocol;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/n;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/n;
@@ -90,7 +83,6 @@
 .method public onSenderIdle()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/CoreProtocol;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/n;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/n;
@@ -105,7 +97,6 @@
 .method public removeCacheData(Ljava/lang/Object;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/CoreProtocol;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/n;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/n;
@@ -120,7 +111,6 @@
 .method public setupReportData(J)Lorg/json/JSONObject;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/CoreProtocol;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/n;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/n;
@@ -137,7 +127,6 @@
 .method public workEvent(Ljava/lang/Object;I)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/CoreProtocol;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/n;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/n;

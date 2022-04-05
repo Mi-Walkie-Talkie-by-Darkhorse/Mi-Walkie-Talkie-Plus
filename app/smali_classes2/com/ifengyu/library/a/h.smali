@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/library/a/h;
 .super Ljava/lang/Object;
-.source "ProcessUtils.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     :try_start_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -43,7 +41,6 @@
 
     move-result-object v1
 
-    .line 4
     new-instance v2, Ljava/io/BufferedReader;
 
     new-instance v3, Ljava/io/InputStreamReader;
@@ -61,13 +58,11 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     :try_start_1
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 6
     :goto_0
     invoke-virtual {v2}, Ljava/io/BufferedReader;->read()I
 
@@ -77,12 +72,10 @@
 
     int-to-char v3, v3
 
-    .line 7
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 8
     :cond_0
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -91,7 +84,6 @@
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 9
     :try_start_2
     invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
     :try_end_2
@@ -102,7 +94,6 @@
     :catch_0
     move-exception v1
 
-    .line 10
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_1
@@ -127,7 +118,6 @@
 
     move-object v2, v0
 
-    .line 11
     :goto_2
     :try_start_3
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
@@ -136,7 +126,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 12
     :try_start_4
     invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
     :try_end_4
@@ -147,7 +136,6 @@
     :catch_3
     move-exception v1
 
-    .line 13
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_1
@@ -160,7 +148,6 @@
     :goto_4
     if-eqz v2, :cond_2
 
-    .line 14
     :try_start_5
     invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
     :try_end_5
@@ -171,10 +158,8 @@
     :catch_4
     move-exception v1
 
-    .line 15
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 16
     :cond_2
     :goto_5
     throw v0
@@ -183,14 +168,12 @@
 .method public static a(Landroid/content/Context;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/library/a/h;->a()Ljava/lang/String;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {p0}, Lcom/ifengyu/library/a/h;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
@@ -204,7 +187,6 @@
 
     const-string v0, "activity"
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -217,7 +199,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     :goto_0
     invoke-virtual {p0}, Landroid/app/ActivityManager;->getRunningAppProcesses()Ljava/util/List;
@@ -226,7 +207,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 3
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -244,7 +224,6 @@
 
     check-cast v2, Landroid/app/ActivityManager$RunningAppProcessInfo;
 
-    .line 4
     iget v3, v2, Landroid/app/ActivityManager$RunningAppProcessInfo;->pid:I
 
     invoke-static {}, Landroid/os/Process;->myPid()I
@@ -253,10 +232,8 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 5
     iget-object v0, v2, Landroid/app/ActivityManager$RunningAppProcessInfo;->processName:Ljava/lang/String;
 
-    .line 6
     :cond_2
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -269,7 +246,6 @@
     :cond_3
     const-wide/16 v1, 0x64
 
-    .line 7
     :try_start_0
     invoke-static {v1, v2}, Ljava/lang/Thread;->sleep(J)V
     :try_end_0
@@ -280,7 +256,6 @@
     :catch_0
     move-exception v1
 
-    .line 8
     invoke-virtual {v1}, Ljava/lang/InterruptedException;->printStackTrace()V
 
     goto :goto_0
@@ -295,7 +270,6 @@
 
     return p0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -305,12 +279,10 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {p0}, Lcom/ifengyu/library/a/h;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 3
     sget-object v1, Lcom/ifengyu/library/a/h;->a:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -329,7 +301,6 @@
 
     invoke-static {v1, v2}, Lcom/ifengyu/library/a/g;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     invoke-virtual {v0, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0

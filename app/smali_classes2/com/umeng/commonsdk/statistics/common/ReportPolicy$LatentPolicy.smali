@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/common/ReportPolicy$LatentPolicy;
 .super Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
-.source "ReportPolicy.java"
 
 
 # annotations
@@ -24,20 +23,16 @@
 .method public constructor <init>(I)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$LatentPolicy;->start:J
 
     int-to-long v0, p1
 
-    .line 3
     iput-wide v0, p0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$LatentPolicy;->latency:J
 
-    .line 4
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -52,7 +47,6 @@
 .method public isValid()Z
     .locals 5
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -81,7 +75,6 @@
 .method public shouldSendMessage(Z)Z
     .locals 4
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0

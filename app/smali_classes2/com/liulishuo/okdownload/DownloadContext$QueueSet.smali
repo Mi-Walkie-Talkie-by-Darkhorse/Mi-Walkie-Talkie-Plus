@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 .super Ljava/lang/Object;
-.source "DownloadContext.java"
 
 
 # annotations
@@ -52,7 +51,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -61,7 +59,6 @@
 .method static synthetic access$100(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Landroid/net/Uri;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->uri:Landroid/net/Uri;
 
     return-object p0
@@ -70,7 +67,6 @@
 .method static synthetic access$1000(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Boolean;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->passIfAlreadyCompleted:Ljava/lang/Boolean;
 
     return-object p0
@@ -79,7 +75,6 @@
 .method static synthetic access$1100(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->tag:Ljava/lang/Object;
 
     return-object p0
@@ -88,7 +83,6 @@
 .method static synthetic access$200(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/util/Map;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->headerMapFields:Ljava/util/Map;
 
     return-object p0
@@ -97,7 +91,6 @@
 .method static synthetic access$300(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Integer;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->readBufferSize:Ljava/lang/Integer;
 
     return-object p0
@@ -106,7 +99,6 @@
 .method static synthetic access$400(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Integer;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->flushBufferSize:Ljava/lang/Integer;
 
     return-object p0
@@ -115,7 +107,6 @@
 .method static synthetic access$500(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Integer;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->syncBufferSize:Ljava/lang/Integer;
 
     return-object p0
@@ -124,7 +115,6 @@
 .method static synthetic access$600(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Boolean;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->wifiRequired:Ljava/lang/Boolean;
 
     return-object p0
@@ -133,7 +123,6 @@
 .method static synthetic access$700(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Integer;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->syncBufferIntervalMillis:Ljava/lang/Integer;
 
     return-object p0
@@ -142,7 +131,6 @@
 .method static synthetic access$800(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Boolean;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->autoCallbackToUIThread:Ljava/lang/Boolean;
 
     return-object p0
@@ -151,7 +139,6 @@
 .method static synthetic access$900(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)Ljava/lang/Integer;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->minIntervalMillisCallbackProcess:Ljava/lang/Integer;
 
     return-object p0
@@ -162,7 +149,6 @@
 .method public commit()Lcom/liulishuo/okdownload/DownloadContext$Builder;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/DownloadContext$Builder;
 
     invoke-direct {v0, p0}, Lcom/liulishuo/okdownload/DownloadContext$Builder;-><init>(Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)V
@@ -173,7 +159,6 @@
 .method public getDirUri()Landroid/net/Uri;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->uri:Landroid/net/Uri;
 
     return-object v0
@@ -182,7 +167,6 @@
 .method public getFlushBufferSize()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->flushBufferSize:Ljava/lang/Integer;
 
     if-nez v0, :cond_0
@@ -191,7 +175,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
@@ -214,7 +197,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->headerMapFields:Ljava/util/Map;
 
     return-object v0
@@ -223,7 +205,6 @@
 .method public getMinIntervalMillisCallbackProcess()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->minIntervalMillisCallbackProcess:Ljava/lang/Integer;
 
     if-nez v0, :cond_0
@@ -232,7 +213,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
@@ -245,7 +225,6 @@
 .method public getReadBufferSize()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->readBufferSize:Ljava/lang/Integer;
 
     if-nez v0, :cond_0
@@ -254,7 +233,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
@@ -267,7 +245,6 @@
 .method public getSyncBufferIntervalMillis()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->syncBufferIntervalMillis:Ljava/lang/Integer;
 
     if-nez v0, :cond_0
@@ -276,7 +253,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
@@ -289,7 +265,6 @@
 .method public getSyncBufferSize()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->syncBufferSize:Ljava/lang/Integer;
 
     if-nez v0, :cond_0
@@ -298,7 +273,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
@@ -311,7 +285,6 @@
 .method public getTag()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->tag:Ljava/lang/Object;
 
     return-object v0
@@ -320,7 +293,6 @@
 .method public isAutoCallbackToUIThread()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->autoCallbackToUIThread:Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
@@ -329,7 +301,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -342,7 +313,6 @@
 .method public isPassIfAlreadyCompleted()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->passIfAlreadyCompleted:Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
@@ -351,7 +321,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -364,7 +333,6 @@
 .method public isWifiRequired()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->wifiRequired:Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
@@ -373,7 +341,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -386,7 +353,6 @@
 .method public setAutoCallbackToUIThread(Ljava/lang/Boolean;)Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->autoCallbackToUIThread:Ljava/lang/Boolean;
 
     return-object p0
@@ -395,7 +361,6 @@
 .method public setFlushBufferSize(I)Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -418,7 +383,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->headerMapFields:Ljava/util/Map;
 
     return-void
@@ -427,7 +391,6 @@
 .method public setMinIntervalMillisCallbackProcess(Ljava/lang/Integer;)Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->minIntervalMillisCallbackProcess:Ljava/lang/Integer;
 
     return-object p0
@@ -440,7 +403,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -459,14 +421,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->isFile()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {p1}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
     move-result-object p1
@@ -475,7 +435,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -493,7 +452,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->uri:Landroid/net/Uri;
 
     return-object p0
@@ -502,7 +460,6 @@
 .method public setPassIfAlreadyCompleted(Z)Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -515,7 +472,6 @@
 .method public setReadBufferSize(I)Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -528,7 +484,6 @@
 .method public setSyncBufferIntervalMillis(I)Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -541,7 +496,6 @@
 .method public setSyncBufferSize(I)Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -554,7 +508,6 @@
 .method public setTag(Ljava/lang/Object;)Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->tag:Ljava/lang/Object;
 
     return-object p0
@@ -563,7 +516,6 @@
 .method public setWifiRequired(Ljava/lang/Boolean;)Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$QueueSet;->wifiRequired:Ljava/lang/Boolean;
 
     return-object p0

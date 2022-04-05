@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/core/listener/assist/Listener1Assist$Listener1Callback;
 .super Ljava/lang/Object;
-.source "Listener1Assist.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/k$a;
 .super Landroidx/recyclerview/widget/h;
-.source "PagerSnapHelper.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/recyclerview/widget/k;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/k$a;->a:Landroidx/recyclerview/widget/k;
 
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/h;-><init>(Landroid/content/Context;)V
@@ -35,7 +33,6 @@
 .method protected calculateSpeedPerPixel(Landroid/util/DisplayMetrics;)F
     .locals 1
 
-    .line 1
     iget p1, p1, Landroid/util/DisplayMetrics;->densityDpi:I
 
     int-to-float p1, p1
@@ -50,7 +47,6 @@
 .method protected calculateTimeForScrolling(I)I
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/recyclerview/widget/h;->calculateTimeForScrolling(I)I
 
     move-result p1
@@ -67,7 +63,6 @@
 .method protected onTargetFound(Landroid/view/View;Landroidx/recyclerview/widget/RecyclerView$v;Landroidx/recyclerview/widget/RecyclerView$u$a;)V
     .locals 2
 
-    .line 1
     iget-object p2, p0, Landroidx/recyclerview/widget/k$a;->a:Landroidx/recyclerview/widget/k;
 
     iget-object v0, p2, Landroidx/recyclerview/widget/o;->a:Landroidx/recyclerview/widget/RecyclerView;
@@ -82,15 +77,12 @@
 
     const/4 p2, 0x0
 
-    .line 2
     aget p2, p1, p2
 
     const/4 v0, 0x1
 
-    .line 3
     aget p1, p1, v0
 
-    .line 4
     invoke-static {p2}, Ljava/lang/Math;->abs(I)I
 
     move-result v0
@@ -109,7 +101,6 @@
 
     if-lez v0, :cond_0
 
-    .line 5
     iget-object v1, p0, Landroidx/recyclerview/widget/h;->mDecelerateInterpolator:Landroid/view/animation/DecelerateInterpolator;
 
     invoke-virtual {p3, p2, p1, v0, v1}, Landroidx/recyclerview/widget/RecyclerView$u$a;->a(IIILandroid/view/animation/Interpolator;)V

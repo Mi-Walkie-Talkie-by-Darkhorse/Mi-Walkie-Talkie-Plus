@@ -1,6 +1,5 @@
 .class public Lc/b/b/c/a/a;
 .super Ljava/lang/Object;
-.source "DataBaseOperation.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lc/b/b/c/a/a;->a:Landroid/content/Context;
 
     return-void
@@ -48,14 +45,12 @@
     :cond_0
     const-string p1, "content://com.vivo.vms.IdProvider/IdentifierId/OAIDSTATUS"
 
-    .line 1
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p1
 
     goto :goto_0
 
-    .line 2
     :cond_1
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -77,7 +72,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_2
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -102,7 +96,6 @@
     :cond_3
     const-string p1, "content://com.vivo.vms.IdProvider/IdentifierId/OAID"
 
-    .line 4
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p1
@@ -110,7 +103,6 @@
     :goto_0
     move-object v2, p1
 
-    .line 5
     :goto_1
     iget-object p1, p0, Lc/b/b/c/a/a;->a:Landroid/content/Context;
 
@@ -132,7 +124,6 @@
 
     if-eqz p1, :cond_5
 
-    .line 6
     invoke-interface {p1}, Landroid/database/Cursor;->moveToNext()Z
 
     move-result p2
@@ -141,7 +132,6 @@
 
     const-string p2, "value"
 
-    .line 7
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result p2
@@ -152,7 +142,6 @@
 
     move-object v0, p2
 
-    .line 8
     :cond_4
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
 
@@ -163,7 +152,6 @@
 
     const-string p2, "return cursor is null,return"
 
-    .line 9
     invoke-static {p1, p2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_2

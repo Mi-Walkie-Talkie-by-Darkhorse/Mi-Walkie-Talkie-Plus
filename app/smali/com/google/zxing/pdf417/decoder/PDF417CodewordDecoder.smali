@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/pdf417/decoder/PDF417CodewordDecoder;
 .super Ljava/lang/Object;
-.source "PDF417CodewordDecoder.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 11
 
-    .line 1
     sget-object v0, Lcom/google/zxing/pdf417/PDF417Common;->SYMBOL_TABLE:[I
 
     array-length v0, v0
@@ -42,7 +40,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     sget-object v1, Lcom/google/zxing/pdf417/PDF417Common;->SYMBOL_TABLE:[I
 
@@ -50,7 +47,6 @@
 
     if-ge v0, v5, :cond_2
 
-    .line 3
     aget v1, v1, v0
 
     and-int/lit8 v5, v1, 0x1
@@ -75,7 +71,6 @@
 
     goto :goto_2
 
-    .line 4
     :cond_0
     sget-object v5, Lcom/google/zxing/pdf417/decoder/PDF417CodewordDecoder;->RATIOS_TABLE:[[F
 
@@ -109,7 +104,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -124,7 +118,6 @@
 
     const/4 v3, 0x0
 
-    .line 1
     :goto_0
     array-length v4, p0
 
@@ -132,7 +125,6 @@
 
     const/4 v4, 0x0
 
-    .line 2
     :goto_1
     aget v5, p0, v3
 
@@ -142,7 +134,6 @@
 
     shl-long/2addr v1, v5
 
-    .line 3
     rem-int/lit8 v6, v3, 0x2
 
     if-nez v6, :cond_0
@@ -175,7 +166,6 @@
 .method private static getClosestDecodedValue([I)I
     .locals 10
 
-    .line 1
     invoke-static {p0}, Lcom/google/zxing/common/detector/MathUtils;->sum([I)I
 
     move-result v0
@@ -195,7 +185,6 @@
     :goto_0
     if-ge v4, v1, :cond_0
 
-    .line 2
     aget v5, p0, v4
 
     int-to-float v5, v5
@@ -217,7 +206,6 @@
 
     const/4 v4, 0x0
 
-    .line 3
     :goto_1
     sget-object v5, Lcom/google/zxing/pdf417/decoder/PDF417CodewordDecoder;->RATIOS_TABLE:[[F
 
@@ -227,7 +215,6 @@
 
     const/4 v6, 0x0
 
-    .line 4
     aget-object v5, v5, v4
 
     const/4 v7, 0x0
@@ -235,7 +222,6 @@
     :goto_2
     if-ge v7, v1, :cond_1
 
-    .line 5
     aget v8, v5, v7
 
     aget v9, v2, v7
@@ -259,7 +245,6 @@
 
     if-gez v5, :cond_2
 
-    .line 6
     sget-object p0, Lcom/google/zxing/pdf417/PDF417Common;->SYMBOL_TABLE:[I
 
     aget p0, p0, v4
@@ -280,12 +265,10 @@
 .method private static getDecodedCodewordValue([I)I
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/google/zxing/pdf417/decoder/PDF417CodewordDecoder;->getBitValue([I)I
 
     move-result p0
 
-    .line 2
     invoke-static {p0}, Lcom/google/zxing/pdf417/PDF417Common;->getCodeword(I)I
 
     move-result v0
@@ -303,7 +286,6 @@
 .method static getDecodedValue([I)I
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/google/zxing/pdf417/decoder/PDF417CodewordDecoder;->sampleBitCounts([I)[I
 
     move-result-object v0
@@ -318,7 +300,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-static {p0}, Lcom/google/zxing/pdf417/decoder/PDF417CodewordDecoder;->getClosestDecodedValue([I)I
 
@@ -330,7 +311,6 @@
 .method private static sampleBitCounts([I)[I
     .locals 8
 
-    .line 1
     invoke-static {p0}, Lcom/google/zxing/common/detector/MathUtils;->sum([I)I
 
     move-result v0
@@ -366,7 +346,6 @@
 
     add-float/2addr v5, v6
 
-    .line 2
     aget v6, p0, v4
 
     add-int/2addr v6, v3
@@ -377,14 +356,12 @@
 
     if-gtz v5, :cond_0
 
-    .line 3
     aget v5, p0, v4
 
     add-int/2addr v3, v5
 
     add-int/lit8 v4, v4, 0x1
 
-    .line 4
     :cond_0
     aget v5, v1, v4
 

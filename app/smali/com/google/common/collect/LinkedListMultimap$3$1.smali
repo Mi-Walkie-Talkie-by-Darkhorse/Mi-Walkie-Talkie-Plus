@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/LinkedListMultimap$3$1;
 .super Lcom/google/common/collect/TransformedListIterator;
-.source "LinkedListMultimap.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method constructor <init>(Lcom/google/common/collect/LinkedListMultimap$3;Ljava/util/ListIterator;Lcom/google/common/collect/LinkedListMultimap$NodeIterator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/LinkedListMultimap$3$1;->this$1:Lcom/google/common/collect/LinkedListMultimap$3;
 
     iput-object p3, p0, Lcom/google/common/collect/LinkedListMultimap$3$1;->val$nodeItr:Lcom/google/common/collect/LinkedListMultimap$NodeIterator;
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/LinkedListMultimap$3$1;->val$nodeItr:Lcom/google/common/collect/LinkedListMultimap$NodeIterator;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/LinkedListMultimap$NodeIterator;->setValue(Ljava/lang/Object;)V
@@ -63,7 +60,6 @@
 .method bridge synthetic transform(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/util/Map$Entry;
 
     invoke-virtual {p0, p1}, Lcom/google/common/collect/LinkedListMultimap$3$1;->transform(Ljava/util/Map$Entry;)Ljava/lang/Object;
@@ -83,7 +79,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1

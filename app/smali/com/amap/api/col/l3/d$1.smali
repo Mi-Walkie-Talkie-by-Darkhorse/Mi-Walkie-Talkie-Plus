@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/d$1;
 .super Ljava/lang/Object;
-.source "AmapLocationManager.java"
 
 # interfaces
 .implements Landroid/content/ServiceConnection;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/d;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/d$1;->a:Lcom/amap/api/col/l3/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object p1, p0, Lcom/amap/api/col/l3/d$1;->a:Lcom/amap/api/col/l3/d;
 
@@ -48,14 +45,12 @@
 
     iput-object v0, p1, Lcom/amap/api/col/l3/d;->h:Landroid/os/Messenger;
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/d$1;->a:Lcom/amap/api/col/l3/d;
 
     const/4 p2, 0x1
 
     invoke-static {p1, p2}, Lcom/amap/api/col/l3/d;->a(Lcom/amap/api/col/l3/d;Z)Z
 
-    .line 3
     iget-object p1, p0, Lcom/amap/api/col/l3/d$1;->a:Lcom/amap/api/col/l3/d;
 
     iput-boolean p2, p1, Lcom/amap/api/col/l3/d;->q:Z
@@ -71,7 +66,6 @@
 
     const-string v0, "onServiceConnected"
 
-    .line 4
     invoke-static {p1, p2, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -80,7 +74,6 @@
 .method public final onServiceDisconnected(Landroid/content/ComponentName;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/amap/api/col/l3/d$1;->a:Lcom/amap/api/col/l3/d;
 
     const/4 v0, 0x0
@@ -89,7 +82,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-static {p1, v0}, Lcom/amap/api/col/l3/d;->a(Lcom/amap/api/col/l3/d;Z)Z
 
     return-void

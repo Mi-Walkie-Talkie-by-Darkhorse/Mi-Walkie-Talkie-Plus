@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/LatLngBoundsCreator;
 .super Ljava/lang/Object;
-.source "LatLngBoundsCreator.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -25,7 +24,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,19 +32,16 @@
 .method static a(Lcom/amap/api/maps/model/LatLngBounds;Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/amap/api/maps/model/LatLngBounds;->a()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/maps/model/LatLngBounds;->southwest:Lcom/amap/api/maps/model/LatLng;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 3
     iget-object p0, p0, Lcom/amap/api/maps/model/LatLngBounds;->northeast:Lcom/amap/api/maps/model/LatLng;
 
     invoke-virtual {p1, p0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
@@ -59,14 +54,12 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/amap/api/maps/model/LatLngBounds;
     .locals 4
 
-    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    .line 3
     :try_start_0
     const-class v2, Lcom/amap/api/maps/model/LatLngBounds;
 
@@ -82,7 +75,6 @@
     :try_end_0
     .catch Landroid/os/BadParcelableException; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 4
     :try_start_1
     const-class v3, Lcom/amap/api/maps/model/LatLngBounds;
 
@@ -112,11 +104,9 @@
 
     move-object v2, v1
 
-    .line 5
     :goto_0
     invoke-virtual {p1}, Landroid/os/BadParcelableException;->printStackTrace()V
 
-    .line 6
     :goto_1
     new-instance p1, Lcom/amap/api/maps/model/LatLngBounds;
 
@@ -128,7 +118,6 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/amap/api/maps/model/LatLngBoundsCreator;->createFromParcel(Landroid/os/Parcel;)Lcom/amap/api/maps/model/LatLngBounds;
 
     move-result-object p1
@@ -139,7 +128,6 @@
 .method public newArray(I)[Lcom/amap/api/maps/model/LatLngBounds;
     .locals 0
 
-    .line 2
     new-array p1, p1, [Lcom/amap/api/maps/model/LatLngBounds;
 
     return-object p1
@@ -148,7 +136,6 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/amap/api/maps/model/LatLngBoundsCreator;->newArray(I)[Lcom/amap/api/maps/model/LatLngBounds;
 
     move-result-object p1

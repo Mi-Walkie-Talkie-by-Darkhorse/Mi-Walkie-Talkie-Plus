@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Maps$UnmodifiableEntrySet;
 .super Lcom/google/common/collect/Maps$UnmodifiableEntries;
-.source "Maps.java"
 
 # interfaces
 .implements Ljava/util/Set;
@@ -44,7 +43,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/Maps$UnmodifiableEntries;-><init>(Ljava/util/Collection;)V
 
     return-void
@@ -59,7 +57,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Sets;->equalsImpl(Ljava/util/Set;Ljava/lang/Object;)Z
 
     move-result p1
@@ -70,7 +67,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Sets;->hashCodeImpl(Ljava/util/Set;)I
 
     move-result v0

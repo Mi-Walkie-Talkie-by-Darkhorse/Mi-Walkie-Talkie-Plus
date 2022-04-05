@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/maps/WearMapView$OnDismissCallback;
 .super Ljava/lang/Object;
-.source "WearMapView.java"
 
 
 # annotations

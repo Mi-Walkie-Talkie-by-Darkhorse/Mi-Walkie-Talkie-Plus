@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl$1;
 .super Ljava/lang/Object;
-.source "GalaxyFDSClientImpl.java"
 
 # interfaces
 .implements Ljava/util/concurrent/ThreadFactory;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl$1;->this$0:Lcom/xiaomi/infra/galaxy/fds/android/GalaxyFDSClientImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/Thread;
 
     const-string v1, "FDS-multipart-upload-thread"

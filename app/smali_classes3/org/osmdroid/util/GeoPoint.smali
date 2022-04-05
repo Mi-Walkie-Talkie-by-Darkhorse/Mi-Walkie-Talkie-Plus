@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/util/GeoPoint;
 .super Ljava/lang/Object;
-.source "GeoPoint.java"
 
 # interfaces
 .implements Lorg/osmdroid/api/IGeoPoint;
@@ -37,7 +36,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lorg/osmdroid/util/GeoPoint$1;
 
     invoke-direct {v0}, Lorg/osmdroid/util/GeoPoint$1;-><init>()V
@@ -50,13 +48,10 @@
 .method public constructor <init>(DD)V
     .locals 0
 
-    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 10
     iput-wide p1, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
-    .line 11
     iput-wide p3, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
     return-void
@@ -65,16 +60,12 @@
 .method public constructor <init>(DDD)V
     .locals 0
 
-    .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
     iput-wide p1, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
-    .line 14
     iput-wide p3, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
-    .line 15
     iput-wide p5, p0, Lorg/osmdroid/util/GeoPoint;->mAltitude:D
 
     return-void
@@ -85,7 +76,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     int-to-double v0, p1
@@ -94,14 +84,12 @@
 
     div-double/2addr v0, v2
 
-    .line 3
     iput-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
     int-to-double p1, p2
 
     div-double/2addr p1, v2
 
-    .line 4
     iput-wide p1, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
     return-void
@@ -112,7 +100,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     int-to-double v0, p1
@@ -121,19 +108,16 @@
 
     div-double/2addr v0, v2
 
-    .line 6
     iput-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
     int-to-double p1, p2
 
     div-double/2addr p1, v2
 
-    .line 7
     iput-wide p1, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
     int-to-double p1, p3
 
-    .line 8
     iput-wide p1, p0, Lorg/osmdroid/util/GeoPoint;->mAltitude:D
 
     return-void
@@ -142,7 +126,6 @@
 .method public constructor <init>(Landroid/location/Location;)V
     .locals 7
 
-    .line 16
     invoke-virtual {p1}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v1
@@ -165,24 +148,20 @@
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 2
 
-    .line 21
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 22
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v0
 
     iput-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
-    .line 23
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v0
 
     iput-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
-    .line 24
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v0
@@ -195,7 +174,6 @@
 .method synthetic constructor <init>(Landroid/os/Parcel;Lorg/osmdroid/util/GeoPoint$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lorg/osmdroid/util/GeoPoint;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -204,20 +182,16 @@
 .method public constructor <init>(Lorg/osmdroid/util/GeoPoint;)V
     .locals 2
 
-    .line 17
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 18
     iget-wide v0, p1, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
     iput-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
-    .line 19
     iget-wide v0, p1, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
     iput-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
-    .line 20
     iget-wide v0, p1, Lorg/osmdroid/util/GeoPoint;->mAltitude:D
 
     iput-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mAltitude:D
@@ -228,7 +202,6 @@
 .method public static fromCenterBetween(Lorg/osmdroid/util/GeoPoint;Lorg/osmdroid/util/GeoPoint;)Lorg/osmdroid/util/GeoPoint;
     .locals 7
 
-    .line 1
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p0}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
@@ -245,7 +218,6 @@
 
     div-double/2addr v1, v3
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
 
     move-result-wide v5
@@ -266,14 +238,12 @@
 .method public static fromDoubleString(Ljava/lang/String;C)Lorg/osmdroid/util/GeoPoint;
     .locals 11
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/lang/String;->indexOf(I)I
 
     move-result v0
 
     add-int/lit8 v1, v0, 0x1
 
-    .line 2
     invoke-virtual {p0, p1, v1}, Ljava/lang/String;->indexOf(II)I
 
     move-result p1
@@ -284,10 +254,8 @@
 
     if-ne p1, v3, :cond_0
 
-    .line 3
     new-instance p1, Lorg/osmdroid/util/GeoPoint;
 
-    .line 4
     invoke-virtual {p0, v2, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
@@ -296,7 +264,6 @@
 
     move-result-wide v2
 
-    .line 5
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -313,11 +280,9 @@
 
     return-object p1
 
-    .line 6
     :cond_0
     new-instance v3, Lorg/osmdroid/util/GeoPoint;
 
-    .line 7
     invoke-virtual {p0, v2, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
@@ -326,7 +291,6 @@
 
     move-result-wide v5
 
-    .line 8
     invoke-virtual {p0, v1, p1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
@@ -337,7 +301,6 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 9
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -362,14 +325,12 @@
 
     const/16 v0, 0x2c
 
-    .line 1
     invoke-virtual {p0, v0}, Ljava/lang/String;->indexOf(I)I
 
     move-result v1
 
     add-int/lit8 v2, v1, 0x1
 
-    .line 2
     invoke-virtual {p0, v0, v2}, Ljava/lang/String;->indexOf(II)I
 
     move-result v0
@@ -380,10 +341,8 @@
 
     if-ne v0, v4, :cond_0
 
-    .line 3
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
-    .line 4
     invoke-virtual {p0, v3, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v1
@@ -392,7 +351,6 @@
 
     move-result v1
 
-    .line 5
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -409,11 +367,9 @@
 
     return-object v0
 
-    .line 6
     :cond_0
     new-instance v4, Lorg/osmdroid/util/GeoPoint;
 
-    .line 7
     invoke-virtual {p0, v3, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v1
@@ -422,7 +378,6 @@
 
     move-result v1
 
-    .line 8
     invoke-virtual {p0, v2, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
@@ -433,7 +388,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 9
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -454,14 +408,12 @@
 .method public static fromInvertedDoubleString(Ljava/lang/String;C)Lorg/osmdroid/util/GeoPoint;
     .locals 12
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/lang/String;->indexOf(I)I
 
     move-result v0
 
     add-int/lit8 v1, v0, 0x1
 
-    .line 2
     invoke-virtual {p0, p1, v1}, Ljava/lang/String;->indexOf(II)I
 
     move-result p1
@@ -472,10 +424,8 @@
 
     if-ne p1, v3, :cond_0
 
-    .line 3
     new-instance p1, Lorg/osmdroid/util/GeoPoint;
 
-    .line 4
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -488,7 +438,6 @@
 
     move-result-wide v3
 
-    .line 5
     invoke-virtual {p0, v2, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
@@ -501,11 +450,9 @@
 
     return-object p1
 
-    .line 6
     :cond_0
     new-instance v3, Lorg/osmdroid/util/GeoPoint;
 
-    .line 7
     invoke-virtual {p0, v1, p1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v1
@@ -514,7 +461,6 @@
 
     move-result-wide v6
 
-    .line 8
     invoke-virtual {p0, v2, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
@@ -525,7 +471,6 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 9
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -550,21 +495,18 @@
 .method public bearingTo(Lorg/osmdroid/api/IGeoPoint;)D
     .locals 12
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
     invoke-static {v0, v1}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v0
 
-    .line 2
     iget-wide v2, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
     invoke-static {v2, v3}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v2
 
-    .line 3
     invoke-interface {p1}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide v4
@@ -573,7 +515,6 @@
 
     move-result-wide v4
 
-    .line 4
     invoke-interface {p1}, Lorg/osmdroid/api/IGeoPoint;->getLongitude()D
 
     move-result-wide v6
@@ -584,7 +525,6 @@
 
     sub-double/2addr v6, v2
 
-    .line 5
     invoke-static {v6, v7}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v2
@@ -595,7 +535,6 @@
 
     mul-double v2, v2, v8
 
-    .line 6
     invoke-static {v0, v1}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v8
@@ -606,7 +545,6 @@
 
     mul-double v8, v8, v10
 
-    .line 7
     invoke-static {v0, v1}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v0
@@ -625,7 +563,6 @@
 
     sub-double/2addr v8, v0
 
-    .line 8
     invoke-static {v2, v3, v8, v9}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide v0
@@ -651,7 +588,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/util/GeoPoint;->clone()Lorg/osmdroid/util/GeoPoint;
 
     move-result-object v0
@@ -662,7 +598,6 @@
 .method public clone()Lorg/osmdroid/util/GeoPoint;
     .locals 8
 
-    .line 2
     new-instance v7, Lorg/osmdroid/util/GeoPoint;
 
     iget-wide v1, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
@@ -697,7 +632,6 @@
 
     mul-float v2, v2, p3
 
-    .line 1
     invoke-virtual/range {p0 .. p0}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v3
@@ -706,14 +640,12 @@
 
     mul-double v3, v3, v5
 
-    .line 2
     invoke-virtual/range {p0 .. p0}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
 
     move-result-wide v7
 
     mul-double v7, v7, v5
 
-    .line 3
     invoke-static {v3, v4}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v9
@@ -728,7 +660,6 @@
 
     move-result-wide v11
 
-    .line 4
     invoke-static {v0, v1}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v13
@@ -745,12 +676,10 @@
 
     add-double/2addr v9, v11
 
-    .line 5
     invoke-static {v9, v10}, Ljava/lang/Math;->asin(D)D
 
     move-result-wide v9
 
-    .line 6
     invoke-static {v13, v14}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v11
@@ -771,7 +700,6 @@
 
     move-result-wide v0
 
-    .line 7
     invoke-static {v3, v4}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v2
@@ -784,7 +712,6 @@
 
     sub-double/2addr v0, v2
 
-    .line 8
     invoke-static {v11, v12, v0, v1}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide v0
@@ -795,7 +722,6 @@
 
     div-double/2addr v7, v5
 
-    .line 9
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     invoke-direct {v0, v9, v10, v7, v8}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
@@ -808,43 +734,36 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     iget-wide v1, v0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
     const-wide v3, 0x3f91df46a0000000L    # 0.01745329238474369
 
     mul-double v1, v1, v3
 
-    .line 2
     iget-wide v5, v0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
     mul-double v5, v5, v3
 
-    .line 3
     invoke-interface/range {p1 .. p1}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide v7
 
     mul-double v7, v7, v3
 
-    .line 4
     invoke-interface/range {p1 .. p1}, Lorg/osmdroid/api/IGeoPoint;->getLongitude()D
 
     move-result-wide v9
 
     mul-double v9, v9, v3
 
-    .line 5
     invoke-static {v1, v2}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v3
 
-    .line 6
     invoke-static {v7, v8}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v11
 
-    .line 7
     invoke-static {v5, v6}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v13
@@ -859,7 +778,6 @@
 
     mul-double v13, v13, v15
 
-    .line 8
     invoke-static {v5, v6}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v5
@@ -874,7 +792,6 @@
 
     mul-double v3, v3, v5
 
-    .line 9
     invoke-static {v1, v2}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v1
@@ -889,7 +806,6 @@
 
     add-double/2addr v13, v1
 
-    .line 10
     invoke-static {v13, v14}, Ljava/lang/Math;->acos(D)D
 
     move-result-wide v1
@@ -919,7 +835,6 @@
 
     return v1
 
-    .line 1
     :cond_1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -933,11 +848,9 @@
 
     return v0
 
-    .line 2
     :cond_2
     check-cast p1, Lorg/osmdroid/util/GeoPoint;
 
-    .line 3
     iget-wide v2, p1, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
     iget-wide v4, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
@@ -971,7 +884,6 @@
 .method public getAltitude()D
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mAltitude:D
 
     return-wide v0
@@ -980,7 +892,6 @@
 .method public getLatitude()D
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
     return-wide v0
@@ -991,7 +902,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v0
@@ -1008,7 +918,6 @@
 .method public getLongitude()D
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
     return-wide v0
@@ -1019,7 +928,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
 
     move-result-wide v0
@@ -1036,7 +944,6 @@
 .method public hashCode()I
     .locals 6
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
     const-wide v2, 0x3eb0c6f7a0b5ed8dL    # 1.0E-6
@@ -1069,7 +976,6 @@
 .method public setAltitude(D)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lorg/osmdroid/util/GeoPoint;->mAltitude:D
 
     return-void
@@ -1078,10 +984,8 @@
 .method public setCoords(DD)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
-    .line 2
     iput-wide p3, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
     return-void
@@ -1090,7 +994,6 @@
 .method public setLatitude(D)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
     return-void
@@ -1099,7 +1002,6 @@
 .method public setLongitude(D)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
     return-void
@@ -1108,7 +1010,6 @@
 .method public toDoubleString()Ljava/lang/String;
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1123,7 +1024,6 @@
 
     iget-wide v2, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
-    .line 2
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -1142,7 +1042,6 @@
 .method public toIntString()Ljava/lang/String;
     .locals 7
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1155,12 +1054,10 @@
 
     double-to-int v1, v1
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const-string v1, ","
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-wide v5, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
@@ -1169,20 +1066,16 @@
 
     double-to-int v2, v5
 
-    .line 4
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-wide v1, p0, Lorg/osmdroid/util/GeoPoint;->mAltitude:D
 
     double-to-int v1, v1
 
-    .line 6
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -1193,7 +1086,6 @@
 .method public toInvertedDoubleString()Ljava/lang/String;
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1208,7 +1100,6 @@
 
     iget-wide v2, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
-    .line 2
     invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -1227,7 +1118,6 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1250,7 +1140,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(D)Ljava/lang/StringBuilder;
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -1261,17 +1150,14 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLatitude:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
-    .line 2
     iget-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mLongitude:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
-    .line 3
     iget-wide v0, p0, Lorg/osmdroid/util/GeoPoint;->mAltitude:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V

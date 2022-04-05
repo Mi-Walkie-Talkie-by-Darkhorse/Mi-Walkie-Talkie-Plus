@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/nestedScroll/b$a;
 .super Ljava/lang/Object;
-.source "IQMUIContinuousNestedScrollCommon.java"
 
 
 # annotations

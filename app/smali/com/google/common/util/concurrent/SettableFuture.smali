@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/util/concurrent/SettableFuture;
 .super Lcom/google/common/util/concurrent/AbstractFuture;
-.source "SettableFuture.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractFuture;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/SettableFuture;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/SettableFuture;-><init>()V
@@ -59,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/common/util/concurrent/AbstractFuture;->set(Ljava/lang/Object;)Z
 
     move-result p1
@@ -70,7 +66,6 @@
 .method public setException(Ljava/lang/Throwable;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/common/util/concurrent/AbstractFuture;->setException(Ljava/lang/Throwable;)Z
 
     move-result p1

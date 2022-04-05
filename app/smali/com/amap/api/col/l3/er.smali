@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/er;
 .super Ljava/lang/Object;
-.source "RectPacker.java"
 
 
 # annotations
@@ -21,10 +20,8 @@
 .method public constructor <init>()V
     .locals 8
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/er$b;
 
     new-instance v7, Lcom/amap/api/col/l3/er$c;
@@ -55,7 +52,6 @@
 .method public final a()I
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/er;->a:Lcom/amap/api/col/l3/er$b;
 
     iget-object v0, v0, Lcom/amap/api/col/l3/er$b;->b:Lcom/amap/api/col/l3/er$c;
@@ -68,7 +64,6 @@
 .method public final a(IILjava/lang/String;)Lcom/amap/api/col/l3/er$c;
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/er;->a:Lcom/amap/api/col/l3/er$b;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/amap/api/col/l3/er$b;->a(IILjava/lang/String;)Lcom/amap/api/col/l3/er$b;
@@ -77,7 +72,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     new-instance p2, Lcom/amap/api/col/l3/er$c;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/er$b;->b:Lcom/amap/api/col/l3/er$c;
@@ -107,7 +101,6 @@
 .method public final a(Ljava/lang/String;)Z
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/er;->a:Lcom/amap/api/col/l3/er$b;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/er$b;->a(Ljava/lang/String;)Z
@@ -120,7 +113,6 @@
 .method public final b()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/er;->a:Lcom/amap/api/col/l3/er$b;
 
     iget-object v0, v0, Lcom/amap/api/col/l3/er$b;->b:Lcom/amap/api/col/l3/er$c;

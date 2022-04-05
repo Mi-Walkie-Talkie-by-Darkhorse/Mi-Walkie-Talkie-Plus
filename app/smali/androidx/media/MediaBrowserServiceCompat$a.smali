@@ -1,6 +1,5 @@
 .class Landroidx/media/MediaBrowserServiceCompat$a;
 .super Landroidx/media/MediaBrowserServiceCompat$m;
-.source "MediaBrowserServiceCompat.java"
 
 
 # annotations
@@ -39,7 +38,6 @@
 .method constructor <init>(Landroidx/media/MediaBrowserServiceCompat;Ljava/lang/Object;Landroidx/media/MediaBrowserServiceCompat$f;Ljava/lang/String;Landroid/os/Bundle;Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$a;->j:Landroidx/media/MediaBrowserServiceCompat;
 
     iput-object p3, p0, Landroidx/media/MediaBrowserServiceCompat$a;->f:Landroidx/media/MediaBrowserServiceCompat$f;
@@ -60,7 +58,6 @@
 .method bridge synthetic a(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Landroidx/media/MediaBrowserServiceCompat$a;->a(Ljava/util/List;)V
@@ -79,7 +76,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$a;->j:Landroidx/media/MediaBrowserServiceCompat;
 
     iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat;->b:La/b/a;
@@ -102,12 +98,10 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 3
     sget-boolean p1, Landroidx/media/MediaBrowserServiceCompat;->f:Z
 
     if-eqz p1, :cond_0
 
-    .line 4
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -139,7 +133,6 @@
     :cond_0
     return-void
 
-    .line 5
     :cond_1
     invoke-virtual {p0}, Landroidx/media/MediaBrowserServiceCompat$m;->a()I
 
@@ -153,12 +146,10 @@
 
     iget-object v1, p0, Landroidx/media/MediaBrowserServiceCompat$a;->h:Landroid/os/Bundle;
 
-    .line 6
     invoke-virtual {v0, p1, v1}, Landroidx/media/MediaBrowserServiceCompat;->a(Ljava/util/List;Landroid/os/Bundle;)Ljava/util/List;
 
     move-result-object p1
 
-    .line 7
     :cond_2
     :try_start_0
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$a;->f:Landroidx/media/MediaBrowserServiceCompat$f;
@@ -177,7 +168,6 @@
 
     goto :goto_0
 
-    .line 8
     :catch_0
     new-instance p1, Ljava/lang/StringBuilder;
 

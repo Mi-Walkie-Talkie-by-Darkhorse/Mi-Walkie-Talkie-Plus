@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$b;
 .super Ljava/lang/Object;
-.source "GoogleMapDownloadDefinitionActivity.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +38,6 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     new-instance v15, Lcom/ifengyu/intercom/greendao/bean/a;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
@@ -204,7 +201,6 @@
 
     invoke-direct/range {v1 .. v14}, Lcom/ifengyu/intercom/greendao/bean/a;-><init>(Ljava/lang/Long;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;)V
 
-    .line 2
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->i(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Lcom/ifengyu/intercom/greendao/dao/b;
@@ -217,7 +213,6 @@
 
     invoke-virtual {v1, v15}, Lorg/greenrobot/greendao/AbstractDao;->insert(Ljava/lang/Object;)J
 
-    .line 3
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->i(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Lcom/ifengyu/intercom/greendao/dao/b;
@@ -226,7 +221,6 @@
 
     invoke-virtual {v1}, Lcom/ifengyu/intercom/greendao/dao/b;->a()V
 
-    .line 4
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->j(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Lcom/ifengyu/intercom/greendao/dao/a$a;
@@ -235,14 +229,12 @@
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteOpenHelper;->close()V
 
-    .line 5
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     const/4 v2, 0x1
 
     invoke-virtual {v1, v2}, Landroid/app/Activity;->setResult(I)V
 
-    .line 6
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$b;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-virtual {v1}, Landroid/app/Activity;->finish()V

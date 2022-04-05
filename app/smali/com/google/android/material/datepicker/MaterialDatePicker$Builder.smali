@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;
 .super Ljava/lang/Object;
-.source "MaterialDatePicker.java"
 
 
 # annotations
@@ -66,29 +65,22 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->overrideThemeResId:I
 
-    .line 3
     iput v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->titleTextResId:I
 
     const/4 v1, 0x0
 
-    .line 4
     iput-object v1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->titleText:Ljava/lang/CharSequence;
 
-    .line 5
     iput-object v1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->selection:Ljava/lang/Object;
 
-    .line 6
     iput v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->inputMode:I
 
-    .line 7
     iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->dateSelector:Lcom/google/android/material/datepicker/DateSelector;
 
     return-void
@@ -97,7 +89,6 @@
 .method private createDefaultOpenAt()Lcom/google/android/material/datepicker/Month;
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->calendarConstraints:Lcom/google/android/material/datepicker/CalendarConstraints;
 
     invoke-virtual {v0}, Lcom/google/android/material/datepicker/CalendarConstraints;->getStart()Lcom/google/android/material/datepicker/Month;
@@ -106,7 +97,6 @@
 
     iget-wide v0, v0, Lcom/google/android/material/datepicker/Month;->timeInMillis:J
 
-    .line 2
     iget-object v2, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->calendarConstraints:Lcom/google/android/material/datepicker/CalendarConstraints;
 
     invoke-virtual {v2}, Lcom/google/android/material/datepicker/CalendarConstraints;->getEnd()Lcom/google/android/material/datepicker/Month;
@@ -115,7 +105,6 @@
 
     iget-wide v2, v2, Lcom/google/android/material/datepicker/Month;->timeInMillis:J
 
-    .line 3
     iget-object v4, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->dateSelector:Lcom/google/android/material/datepicker/DateSelector;
 
     invoke-interface {v4}, Lcom/google/android/material/datepicker/DateSelector;->getSelectedDays()Ljava/util/Collection;
@@ -128,7 +117,6 @@
 
     if-nez v4, :cond_0
 
-    .line 4
     iget-object v4, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->dateSelector:Lcom/google/android/material/datepicker/DateSelector;
 
     invoke-interface {v4}, Lcom/google/android/material/datepicker/DateSelector;->getSelectedDays()Ljava/util/Collection;
@@ -157,14 +145,12 @@
 
     if-gtz v6, :cond_0
 
-    .line 5
     invoke-static {v4, v5}, Lcom/google/android/material/datepicker/Month;->create(J)Lcom/google/android/material/datepicker/Month;
 
     move-result-object v0
 
     return-object v0
 
-    .line 6
     :cond_0
     invoke-static {}, Lcom/google/android/material/datepicker/MaterialDatePicker;->thisMonthInUtcMilliseconds()J
 
@@ -180,7 +166,6 @@
 
     move-wide v0, v4
 
-    .line 7
     :cond_1
     invoke-static {v0, v1}, Lcom/google/android/material/datepicker/Month;->create(J)Lcom/google/android/material/datepicker/Month;
 
@@ -216,7 +201,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;
 
     invoke-direct {v0, p0}, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;-><init>(Lcom/google/android/material/datepicker/DateSelector;)V
@@ -238,7 +222,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;
 
     new-instance v1, Lcom/google/android/material/datepicker/SingleDateSelector;
@@ -266,7 +249,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;
 
     new-instance v1, Lcom/google/android/material/datepicker/RangeDateSelector;
@@ -293,12 +275,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->calendarConstraints:Lcom/google/android/material/datepicker/CalendarConstraints;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;
 
     invoke-direct {v0}, Lcom/google/android/material/datepicker/CalendarConstraints$Builder;-><init>()V
@@ -309,13 +289,11 @@
 
     iput-object v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->calendarConstraints:Lcom/google/android/material/datepicker/CalendarConstraints;
 
-    .line 3
     :cond_0
     iget v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->titleTextResId:I
 
     if-nez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->dateSelector:Lcom/google/android/material/datepicker/DateSelector;
 
     invoke-interface {v0}, Lcom/google/android/material/datepicker/DateSelector;->getDefaultTitleResId()I
@@ -324,18 +302,15 @@
 
     iput v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->titleTextResId:I
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->selection:Ljava/lang/Object;
 
     if-eqz v0, :cond_2
 
-    .line 6
     iget-object v1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->dateSelector:Lcom/google/android/material/datepicker/DateSelector;
 
     invoke-interface {v1, v0}, Lcom/google/android/material/datepicker/DateSelector;->setSelection(Ljava/lang/Object;)V
 
-    .line 7
     :cond_2
     iget-object v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->calendarConstraints:Lcom/google/android/material/datepicker/CalendarConstraints;
 
@@ -345,7 +320,6 @@
 
     if-nez v0, :cond_3
 
-    .line 8
     iget-object v0, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->calendarConstraints:Lcom/google/android/material/datepicker/CalendarConstraints;
 
     invoke-direct {p0}, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->createDefaultOpenAt()Lcom/google/android/material/datepicker/Month;
@@ -354,7 +328,6 @@
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/datepicker/CalendarConstraints;->setOpenAt(Lcom/google/android/material/datepicker/Month;)V
 
-    .line 9
     :cond_3
     invoke-static {p0}, Lcom/google/android/material/datepicker/MaterialDatePicker;->newInstance(Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;)Lcom/google/android/material/datepicker/MaterialDatePicker;
 
@@ -378,7 +351,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->calendarConstraints:Lcom/google/android/material/datepicker/CalendarConstraints;
 
     return-object p0
@@ -397,7 +369,6 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->inputMode:I
 
     return-object p0
@@ -416,7 +387,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->selection:Ljava/lang/Object;
 
     return-object p0
@@ -439,7 +409,6 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->overrideThemeResId:I
 
     return-object p0
@@ -462,12 +431,10 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->titleTextResId:I
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->titleText:Ljava/lang/CharSequence;
 
     return-object p0
@@ -492,12 +459,10 @@
         }
     .end annotation
 
-    .line 3
     iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->titleText:Ljava/lang/CharSequence;
 
     const/4 p1, 0x0
 
-    .line 4
     iput p1, p0, Lcom/google/android/material/datepicker/MaterialDatePicker$Builder;->titleTextResId:I
 
     return-object p0

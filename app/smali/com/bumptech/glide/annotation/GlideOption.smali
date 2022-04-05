@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/bumptech/glide/annotation/GlideOption;
 .super Ljava/lang/Object;
-.source "GlideOption.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

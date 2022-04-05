@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 .super Ljava/lang/Object;
-.source "UpdateHelper.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/update/sealshark/d;
@@ -52,33 +51,26 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0xc8
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b:I
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->c:I
 
-    .line 4
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->d:I
 
     const/4 v0, -0x1
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e:I
 
-    .line 6
     new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->g:Ljava/util/concurrent/locks/Lock;
 
-    .line 7
     new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
@@ -87,25 +79,20 @@
 
     const/4 v0, 0x0
 
-    .line 8
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->j:I
 
-    .line 9
     iput-boolean v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->k:Z
 
-    .line 10
     new-instance v0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$a;-><init>(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->o:Landroid/content/BroadcastReceiver;
 
-    .line 11
     iput-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a:Landroid/content/Context;
 
     const-string v0, "alarm"
 
-    .line 12
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -114,7 +101,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->i:Landroid/app/AlarmManager;
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result p1
@@ -123,7 +109,6 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 14
     new-instance p1, Lcom/ifengyu/intercom/update/sealshark/g;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a:Landroid/content/Context;
@@ -136,7 +121,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
@@ -146,7 +130,6 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 16
     new-instance p1, Lcom/ifengyu/intercom/update/sealshark/i;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a:Landroid/content/Context;
@@ -157,7 +140,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
-    .line 17
     :cond_1
     :goto_0
     iget-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a:Landroid/content/Context;
@@ -172,7 +154,6 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    .line 18
     invoke-static {}, Lcom/ifengyu/intercom/h/a;->a()Lcom/ifengyu/intercom/h/a;
 
     move-result-object p1
@@ -218,7 +199,6 @@
 .method private a(II)V
     .locals 0
 
-    .line 29
     iput p2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e:I
 
     return-void
@@ -227,7 +207,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f()V
 
     return-void
@@ -236,7 +215,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;Z)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b(Z)V
 
     return-void
@@ -249,20 +227,16 @@
 
     if-eqz p1, :cond_1
 
-    .line 30
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->c()V
 
-    .line 31
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->j()V
 
     const/16 p1, 0x64
 
     const/4 v1, 0x2
 
-    .line 32
     invoke-direct {p0, p1, v1}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a(II)V
 
-    .line 33
     iget-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     invoke-interface {p1}, Lcom/ifengyu/intercom/update/sealshark/e;->b()Z
@@ -271,7 +245,6 @@
 
     if-nez p1, :cond_0
 
-    .line 34
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b(Z)V
 
     goto :goto_0
@@ -279,7 +252,6 @@
     :cond_0
     const/4 p1, 0x1
 
-    .line 35
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b(Z)V
 
     goto :goto_0
@@ -289,10 +261,8 @@
 
     const-string v1, "update failed, maybe crc32 is not right."
 
-    .line 36
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 37
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b(Z)V
 
     :goto_0
@@ -302,14 +272,12 @@
 .method private a(ILjava/lang/String;)Z
     .locals 2
 
-    .line 22
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->c()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 23
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -337,27 +305,22 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 24
     iput-boolean v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->k:Z
 
-    .line 25
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b()V
 
-    .line 26
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 27
     iget-object v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     invoke-interface {v1, p2, p1}, Lcom/ifengyu/intercom/update/sealshark/e;->a(Ljava/lang/String;I)V
 
     const/4 p1, 0x2
 
-    .line 28
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a(II)V
 
     const/4 p1, 0x1
@@ -371,7 +334,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->l:I
 
     return p0
@@ -380,14 +342,12 @@
 .method private b()V
     .locals 3
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/service/a;->b()Lcom/ifengyu/intercom/node/p;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/p;->b()I
 
     move-result v0
@@ -402,7 +362,6 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 4
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
@@ -421,17 +380,13 @@
     :cond_2
     const v0, 0x186a0
 
-    .line 5
     :goto_1
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->d:I
 
-    .line 6
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b:I
 
-    .line 7
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->c:I
 
-    .line 8
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -458,7 +413,6 @@
 
     const/4 v0, 0x0
 
-    .line 9
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->d(ZI)V
 
     return-void
@@ -467,7 +421,6 @@
 .method private b(ZI)V
     .locals 3
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
     move-result v0
@@ -476,7 +429,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 11
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -502,7 +454,6 @@
     :cond_0
     if-eqz p1, :cond_2
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     invoke-interface {p1, p2}, Lcom/ifengyu/intercom/update/sealshark/e;->c(I)Z
@@ -511,25 +462,20 @@
 
     if-eqz p1, :cond_2
 
-    .line 13
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->c()V
 
-    .line 14
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->j()V
 
     const/4 p1, 0x5
 
     const/4 p2, 0x1
 
-    .line 15
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a(II)V
 
-    .line 16
     iget-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->n:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;
 
     if-nez p1, :cond_1
 
-    .line 17
     new-instance p1, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;
 
     const/4 p2, 0x0
@@ -538,7 +484,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->n:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;
 
-    .line 18
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->n:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;
 
@@ -549,12 +494,10 @@
     :cond_2
     const-string p1, "response false or not expected offset, exit update."
 
-    .line 19
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 p1, 0x0
 
-    .line 20
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b(Z)V
 
     :goto_0
@@ -564,7 +507,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)Lcom/ifengyu/intercom/update/sealshark/e;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     return-object p0
@@ -573,12 +515,10 @@
 .method private c()V
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->i:Landroid/app/AlarmManager;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e()Landroid/app/PendingIntent;
 
     move-result-object v1
@@ -592,14 +532,12 @@
 .method private c(ZI)V
     .locals 2
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 5
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -627,21 +565,16 @@
     :cond_0
     if-eqz p1, :cond_3
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->c()V
 
-    .line 7
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->j()V
 
-    .line 8
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->d()V
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     invoke-interface {p1, p2}, Lcom/ifengyu/intercom/update/sealshark/e;->b(I)V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     invoke-interface {p1, p2}, Lcom/ifengyu/intercom/update/sealshark/e;->c(I)Z
@@ -654,10 +587,8 @@
 
     const/4 p2, 0x2
 
-    .line 11
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a(II)V
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     invoke-interface {p1}, Lcom/ifengyu/intercom/update/sealshark/e;->c()Z
@@ -668,26 +599,21 @@
 
     const/4 p1, 0x0
 
-    .line 13
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b(Z)V
 
-    .line 14
     :cond_1
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->i()V
 
     goto :goto_0
 
-    .line 15
     :cond_2
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->h()V
 
     goto :goto_0
 
-    .line 16
     :cond_3
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->g()V
 
-    .line 17
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f()V
 
     :goto_0
@@ -697,7 +623,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$e;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->m:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$e;
 
     return-object p0
@@ -706,7 +631,6 @@
 .method private d()V
     .locals 3
 
-    .line 29
     iget v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b:I
 
     iget v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->d:I
@@ -723,15 +647,12 @@
 
     sub-int/2addr v0, v2
 
-    .line 30
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b:I
 
     if-ge v0, v1, :cond_0
 
-    .line 31
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->c:I
 
-    .line 32
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -760,19 +681,16 @@
 .method private d(ZI)V
     .locals 5
 
-    .line 2
     iget-boolean v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->k:Z
 
     if-nez v0, :cond_1
 
-    .line 3
     iget v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e:I
 
     if-lez v0, :cond_0
 
     if-nez p1, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/sealshark/e;->b()Z
@@ -784,7 +702,6 @@
 
     const/4 v2, 0x0
 
-    .line 5
     :try_start_0
     iget-object v3, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a:Landroid/content/Context;
 
@@ -795,27 +712,20 @@
     .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->c()V
 
-    .line 7
     iget-object v3, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     invoke-interface {v3}, Lcom/ifengyu/intercom/update/sealshark/e;->release()V
 
-    .line 8
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->i()V
 
-    .line 9
     iput-object v2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->i:Landroid/app/AlarmManager;
 
-    .line 10
     iput-boolean v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->k:Z
 
-    .line 11
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e:I
 
-    .line 12
     new-instance v0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;-><init>(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;ZI)V
@@ -830,33 +740,25 @@
     :catch_0
     move-exception v3
 
-    .line 13
     :try_start_1
     invoke-virtual {v3}, Ljava/lang/IllegalArgumentException;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 14
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->c()V
 
-    .line 15
     iget-object v3, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     invoke-interface {v3}, Lcom/ifengyu/intercom/update/sealshark/e;->release()V
 
-    .line 16
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->i()V
 
-    .line 17
     iput-object v2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->i:Landroid/app/AlarmManager;
 
-    .line 18
     iput-boolean v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->k:Z
 
-    .line 19
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e:I
 
-    .line 20
     new-instance v0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;-><init>(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;ZI)V
@@ -866,35 +768,27 @@
 
     goto :goto_2
 
-    .line 21
     :goto_1
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->c()V
 
-    .line 22
     iget-object v4, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     invoke-interface {v4}, Lcom/ifengyu/intercom/update/sealshark/e;->release()V
 
-    .line 23
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->i()V
 
-    .line 24
     iput-object v2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->i:Landroid/app/AlarmManager;
 
-    .line 25
     iput-boolean v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->k:Z
 
-    .line 26
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e:I
 
-    .line 27
     new-instance v0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;-><init>(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;ZI)V
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->a(Ljava/lang/Runnable;)V
 
-    .line 28
     throw v3
 
     :cond_1
@@ -905,7 +799,6 @@
 .method private e()Landroid/app/PendingIntent;
     .locals 4
 
-    .line 2
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.ifengyu.intercom.ACTION_UPDATEMCU_ACK_TIMER"
@@ -922,7 +815,6 @@
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a:Landroid/content/Context;
 
     const/4 v2, 0x0
@@ -939,7 +831,6 @@
 .method static synthetic e(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->h()V
 
     return-void
@@ -952,15 +843,12 @@
 
     const-string v1, "handleAckWaitingTimerFired"
 
-    .line 2
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->g:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 4
     :try_start_0
     iget v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->j:I
 
@@ -976,15 +864,12 @@
 
     const-string v1, "Too many consecutive failures, discard update."
 
-    .line 5
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     invoke-direct {p0, v3}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b(Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->g:Ljava/util/concurrent/locks/Lock;
 
@@ -992,7 +877,6 @@
 
     return-void
 
-    .line 8
     :cond_0
     :try_start_1
     iget v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e:I
@@ -1001,15 +885,12 @@
 
     const-string v1, "update request timeout, discard update."
 
-    .line 9
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     invoke-direct {p0, v3}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b(Z)V
 
     goto :goto_0
 
-    .line 11
     :cond_1
     iget v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e:I
 
@@ -1019,21 +900,17 @@
 
     const-string v1, "wait crc32 result timeout, discard update."
 
-    .line 12
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 13
     invoke-direct {p0, v3}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b(Z)V
 
     goto :goto_0
 
-    .line 14
     :cond_2
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->h()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 15
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->g:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->unlock()V
@@ -1047,7 +924,6 @@
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 16
     throw v0
 .end method
 
@@ -1059,7 +935,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->k()V
 
     return-void
@@ -1068,7 +943,6 @@
 .method private g()V
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b:I
 
     iget v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->d:I
@@ -1079,7 +953,6 @@
 
     if-gt v0, v1, :cond_1
 
-    .line 2
     :cond_0
     iget v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b:I
 
@@ -1087,7 +960,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b:I
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1115,18 +987,15 @@
 .method private h()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->h:Ljava/util/concurrent/locks/Lock;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->h:Ljava/util/concurrent/locks/Lock;
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
-    .line 3
     monitor-exit v0
 
     return-void
@@ -1144,17 +1013,14 @@
 .method private i()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->n:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;->a()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->n:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$d;
 
     :cond_0
@@ -1166,7 +1032,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->j:I
 
     return-void
@@ -1180,18 +1045,15 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->h:Ljava/util/concurrent/locks/Lock;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->h:Ljava/util/concurrent/locks/Lock;
 
     invoke-virtual {v1}, Ljava/lang/Object;->wait()V
 
-    .line 3
     monitor-exit v0
 
     return-void
@@ -1215,7 +1077,6 @@
 
     const/4 v1, 0x1
 
-    .line 14
     invoke-direct {p0, v0, v1}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->d(ZI)V
 
     return-void
@@ -1224,7 +1085,6 @@
 .method public a(ILjava/lang/String;Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$e;)V
     .locals 2
 
-    .line 15
     iget v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e:I
 
     const/4 v1, -0x1
@@ -1233,11 +1093,9 @@
 
     return-void
 
-    .line 16
     :cond_0
     iput-object p3, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->m:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$e;
 
-    .line 17
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a(ILjava/lang/String;)Z
 
     move-result p1
@@ -1250,19 +1108,15 @@
 
     const-string p3, "prepare update error."
 
-    .line 18
     invoke-static {p1, p3}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 19
     invoke-direct {p0, p2}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b(Z)V
 
     return-void
 
-    .line 20
     :cond_1
     iput p2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e:I
 
-    .line 21
     iget-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->f:Lcom/ifengyu/intercom/update/sealshark/e;
 
     invoke-interface {p1}, Lcom/ifengyu/intercom/update/sealshark/e;->a()Z
@@ -1273,7 +1127,6 @@
 .method public a(ZI)V
     .locals 2
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1298,15 +1151,12 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     iput p2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->l:I
 
-    .line 5
     iget-object p2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->g:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {p2}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 6
     :try_start_0
     iget p2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->e:I
 
@@ -1322,13 +1172,11 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->a(Z)V
 
     goto :goto_0
 
-    .line 8
     :cond_1
     iget p2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->l:I
 
@@ -1336,13 +1184,11 @@
 
     goto :goto_0
 
-    .line 9
     :cond_2
     iget p2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->l:I
 
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->b(ZI)V
 
-    .line 10
     :goto_0
     iget-object p2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->m:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$e;
 
@@ -1360,7 +1206,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 11
     new-instance p1, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$b;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$b;-><init>(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)V
@@ -1369,7 +1214,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 12
     :cond_3
     iget-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->g:Ljava/util/concurrent/locks/Lock;
 
@@ -1384,6 +1228,5 @@
 
     invoke-interface {p2}, Ljava/util/concurrent/locks/Lock;->unlock()V
 
-    .line 13
     throw p1
 .end method

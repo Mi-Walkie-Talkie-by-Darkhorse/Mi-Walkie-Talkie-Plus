@@ -1,6 +1,5 @@
 .class public abstract Lb/a/a/a/g/f$a;
 .super Ljava/lang/Object;
-.source "ObjectPool.java"
 
 
 # annotations
@@ -32,10 +31,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     sget v0, Lb/a/a/a/g/f$a;->b:I
 
     iput v0, p0, Lb/a/a/a/g/f$a;->a:I

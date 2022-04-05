@@ -1,6 +1,5 @@
 .class public Landroidx/transition/q;
 .super Ljava/lang/Object;
-.source "Scene.java"
 
 
 # instance fields
@@ -19,7 +18,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 5
     sget v0, Landroidx/transition/R$id;->transition_current_scene:I
 
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getTag(I)Ljava/lang/Object;
@@ -42,7 +40,6 @@
         .end annotation
     .end param
 
-    .line 4
     sget v0, Landroidx/transition/R$id;->transition_current_scene:I
 
     invoke-virtual {p0, v0, p1}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
@@ -55,7 +52,6 @@
 .method public a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/transition/q;->a:Landroid/view/ViewGroup;
 
     invoke-static {v0}, Landroidx/transition/q;->a(Landroid/view/ViewGroup;)Landroidx/transition/q;
@@ -64,12 +60,10 @@
 
     if-ne v0, p0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/transition/q;->b:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
     :cond_0

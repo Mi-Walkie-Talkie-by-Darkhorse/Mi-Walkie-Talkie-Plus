@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/progressindicator/BaseProgressIndicator$HideAnimationBehavior;
 .super Ljava/lang/Object;
-.source "BaseProgressIndicator.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

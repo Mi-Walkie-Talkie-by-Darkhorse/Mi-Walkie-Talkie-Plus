@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableRangeLong;
 .super Lio/reactivex/Flowable;
-.source "FlowableRangeLong.java"
 
 
 # annotations
@@ -31,15 +30,12 @@
 .method public constructor <init>(JJ)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Flowable;-><init>()V
 
-    .line 2
     iput-wide p1, p0, Lio/reactivex/internal/operators/flowable/FlowableRangeLong;->start:J
 
     add-long/2addr p1, p3
 
-    .line 3
     iput-wide p1, p0, Lio/reactivex/internal/operators/flowable/FlowableRangeLong;->end:J
 
     return-void
@@ -59,12 +55,10 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p1, Lio/reactivex/internal/fuseable/ConditionalSubscriber;
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableRangeLong$RangeConditionalSubscription;
 
     move-object v2, p1
@@ -83,7 +77,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableRangeLong$RangeSubscription;
 

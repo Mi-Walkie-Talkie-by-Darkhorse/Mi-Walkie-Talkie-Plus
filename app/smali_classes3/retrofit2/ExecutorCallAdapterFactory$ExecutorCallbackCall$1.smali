@@ -1,6 +1,5 @@
 .class Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall$1;
 .super Ljava/lang/Object;
-.source "ExecutorCallAdapterFactory.java"
 
 # interfaces
 .implements Lretrofit2/Callback;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall;Lretrofit2/Callback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall$1;->this$0:Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall;
 
     iput-object p2, p0, Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall$1;->val$callback:Lretrofit2/Callback;
@@ -59,7 +57,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall$1;->this$0:Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall;
 
     iget-object p1, p1, Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall;->callbackExecutor:Ljava/util/concurrent/Executor;
@@ -85,7 +82,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall$1;->this$0:Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall;
 
     iget-object p1, p1, Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall;->callbackExecutor:Ljava/util/concurrent/Executor;

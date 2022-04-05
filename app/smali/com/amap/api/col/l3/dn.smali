@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/dn;
 .super Ljava/lang/Object;
-.source "StyleItemAdaptor.java"
 
 
 # static fields
@@ -21,7 +20,6 @@
 
     new-array v3, v2, [I
 
-    .line 1
     fill-array-data v3, :array_0
 
     const/4 v4, 0x0
@@ -144,7 +142,6 @@
 
     const-string v14, "districtlable"
 
-    .line 2
     filled-new-array/range {v3 .. v14}, [Ljava/lang/String;
 
     move-result-object v0
@@ -229,7 +226,6 @@
 .method public static a(Ljava/lang/String;)[I
     .locals 5
 
-    .line 1
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -245,7 +241,6 @@
 
     const/4 v2, 0x0
 
-    .line 2
     :goto_0
     sget-object v3, Lcom/amap/api/col/l3/dn;->b:[Ljava/lang/String;
 
@@ -253,7 +248,6 @@
 
     if-ge v2, v4, :cond_2
 
-    .line 3
     aget-object v3, v3, v2
 
     invoke-virtual {v3, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -275,7 +269,6 @@
     :goto_1
     if-ltz v0, :cond_3
 
-    .line 4
     sget-object p0, Lcom/amap/api/col/l3/dn;->a:[[I
 
     aget-object p0, p0, v0

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$d;
 .super Ljava/lang/Object;
-.source "QMUIPullLayout.java"
 
 
 # annotations

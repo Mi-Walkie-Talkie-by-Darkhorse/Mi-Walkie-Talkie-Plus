@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/j/f$b$a;
 .super Ljava/lang/Object;
-.source "FileLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/f$d;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +46,6 @@
 
     const/high16 v0, 0x10000000
 
-    .line 3
     invoke-static {p1, v0}, Landroid/os/ParcelFileDescriptor;->open(Ljava/io/File;I)Landroid/os/ParcelFileDescriptor;
 
     move-result-object p1
@@ -67,7 +64,6 @@
         }
     .end annotation
 
-    .line 5
     const-class v0, Landroid/os/ParcelFileDescriptor;
 
     return-object v0
@@ -81,7 +77,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/j/f$b$a;->a(Ljava/io/File;)Landroid/os/ParcelFileDescriptor;
 
     move-result-object p1
@@ -97,7 +92,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-virtual {p1}, Landroid/os/ParcelFileDescriptor;->close()V
 
     return-void
@@ -111,7 +105,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Landroid/os/ParcelFileDescriptor;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/j/f$b$a;->a(Landroid/os/ParcelFileDescriptor;)V

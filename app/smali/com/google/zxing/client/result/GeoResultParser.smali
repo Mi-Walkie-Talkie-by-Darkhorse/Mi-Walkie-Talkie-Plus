@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/client/result/GeoResultParser;
 .super Lcom/google/zxing/client/result/ResultParser;
-.source "GeoResultParser.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 
     const/4 v1, 0x2
 
-    .line 1
     invoke-static {v0, v1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
 
     move-result-object v0
@@ -28,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/client/result/ResultParser;-><init>()V
 
     return-void
@@ -39,19 +36,16 @@
 .method public parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/GeoParsedResult;
     .locals 12
 
-    .line 2
     invoke-static {p1}, Lcom/google/zxing/client/result/ResultParser;->getMassagedText(Lcom/google/zxing/Result;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3
     sget-object v0, Lcom/google/zxing/client/result/GeoResultParser;->GEO_URL_PATTERN:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1}, Ljava/util/regex/Matcher;->matches()Z
 
     move-result v0
@@ -65,14 +59,12 @@
     :cond_0
     const/4 v0, 0x4
 
-    .line 5
     invoke-virtual {p1, v0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v9
 
     const/4 v0, 0x1
 
-    .line 6
     :try_start_0
     invoke-virtual {p1, v0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
@@ -99,7 +91,6 @@
     :cond_1
     const/4 v0, 0x2
 
-    .line 7
     invoke-virtual {p1, v0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v0
@@ -125,7 +116,6 @@
     :cond_2
     const/4 v0, 0x3
 
-    .line 8
     invoke-virtual {p1, v0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v2
@@ -136,7 +126,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_3
     invoke-virtual {p1, v0}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
@@ -157,7 +146,6 @@
     :cond_4
     move-wide v7, v10
 
-    .line 10
     :goto_0
     new-instance p1, Lcom/google/zxing/client/result/GeoParsedResult;
 
@@ -176,7 +164,6 @@
 .method public bridge synthetic parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/ParsedResult;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/zxing/client/result/GeoResultParser;->parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/GeoParsedResult;
 
     move-result-object p1

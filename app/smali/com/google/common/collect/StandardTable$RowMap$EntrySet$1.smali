@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/StandardTable$RowMap$EntrySet$1;
 .super Ljava/lang/Object;
-.source "StandardTable.java"
 
 # interfaces
 .implements Lcom/google/common/base/Function;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/google/common/collect/StandardTable$RowMap$EntrySet;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/StandardTable$RowMap$EntrySet$1;->this$2:Lcom/google/common/collect/StandardTable$RowMap$EntrySet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +46,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/StandardTable$RowMap$EntrySet$1;->apply(Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p1
@@ -66,7 +63,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/StandardTable$RowMap$EntrySet$1;->this$2:Lcom/google/common/collect/StandardTable$RowMap$EntrySet;
 
     iget-object v0, v0, Lcom/google/common/collect/StandardTable$RowMap$EntrySet;->this$1:Lcom/google/common/collect/StandardTable$RowMap;

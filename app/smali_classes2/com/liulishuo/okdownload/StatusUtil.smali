@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/StatusUtil;
 .super Ljava/lang/Object;
-.source "StatusUtil.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,12 +36,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/liulishuo/okdownload/DownloadTask$Builder;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->build()Lcom/liulishuo/okdownload/DownloadTask;
 
     move-result-object p0
@@ -60,7 +56,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -69,12 +64,10 @@
 
     move-result-object v0
 
-    .line 3
     invoke-interface {v0, p0}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStore;->findOrCreateId(Lcom/liulishuo/okdownload/DownloadTask;)I
 
     move-result p0
 
-    .line 4
     invoke-interface {v0, p0}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStore;->get(I)Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     move-result-object p0
@@ -85,7 +78,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->copy()Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
@@ -112,7 +104,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/liulishuo/okdownload/StatusUtil;->createFinder(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/liulishuo/okdownload/DownloadTask;
 
     move-result-object p0
@@ -131,19 +122,16 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0}, Lcom/liulishuo/okdownload/StatusUtil;->isCompletedOrUnknown(Lcom/liulishuo/okdownload/DownloadTask;)Lcom/liulishuo/okdownload/StatusUtil$Status;
 
     move-result-object v0
 
-    .line 2
     sget-object v1, Lcom/liulishuo/okdownload/StatusUtil$Status;->COMPLETED:Lcom/liulishuo/okdownload/StatusUtil$Status;
 
     if-ne v0, v1, :cond_0
 
     return-object v1
 
-    .line 3
     :cond_0
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
@@ -153,7 +141,6 @@
 
     move-result-object v1
 
-    .line 4
     invoke-virtual {v1, p0}, Lcom/liulishuo/okdownload/core/dispatcher/DownloadDispatcher;->isPending(Lcom/liulishuo/okdownload/DownloadTask;)Z
 
     move-result v2
@@ -164,7 +151,6 @@
 
     return-object p0
 
-    .line 5
     :cond_1
     invoke-virtual {v1, p0}, Lcom/liulishuo/okdownload/core/dispatcher/DownloadDispatcher;->isRunning(Lcom/liulishuo/okdownload/DownloadTask;)Z
 
@@ -195,7 +181,6 @@
         .end annotation
     .end param
 
-    .line 6
     invoke-static {p0, p1, p2}, Lcom/liulishuo/okdownload/StatusUtil;->createFinder(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/liulishuo/okdownload/DownloadTask;
 
     move-result-object p0
@@ -214,7 +199,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0}, Lcom/liulishuo/okdownload/StatusUtil;->isCompletedOrUnknown(Lcom/liulishuo/okdownload/DownloadTask;)Lcom/liulishuo/okdownload/StatusUtil$Status;
 
     move-result-object p0
@@ -249,7 +233,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-static {p0, p1, p2}, Lcom/liulishuo/okdownload/StatusUtil;->createFinder(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/liulishuo/okdownload/DownloadTask;
 
     move-result-object p0
@@ -268,7 +251,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -277,7 +259,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/DownloadTask;->getId()I
 
     move-result v1
@@ -286,24 +267,20 @@
 
     move-result-object v1
 
-    .line 3
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/DownloadTask;->getFilename()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 4
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/DownloadTask;->getParentFile()Ljava/io/File;
 
     move-result-object v3
 
-    .line 5
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/DownloadTask;->getFile()Ljava/io/File;
 
     move-result-object v4
 
     if-eqz v1, :cond_3
 
-    .line 6
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->isChunked()Z
 
     move-result p0
@@ -320,7 +297,6 @@
 
     if-gtz p0, :cond_0
 
-    .line 7
     sget-object p0, Lcom/liulishuo/okdownload/StatusUtil$Status;->UNKNOWN:Lcom/liulishuo/okdownload/StatusUtil$Status;
 
     return-object p0
@@ -328,7 +304,6 @@
     :cond_0
     if-eqz v4, :cond_1
 
-    .line 8
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getFile()Ljava/io/File;
 
     move-result-object p0
@@ -339,14 +314,12 @@
 
     if-eqz p0, :cond_1
 
-    .line 9
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result p0
 
     if-eqz p0, :cond_1
 
-    .line 10
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getTotalOffset()J
 
     move-result-wide v5
@@ -359,7 +332,6 @@
 
     if-nez p0, :cond_1
 
-    .line 11
     sget-object p0, Lcom/liulishuo/okdownload/StatusUtil$Status;->COMPLETED:Lcom/liulishuo/okdownload/StatusUtil$Status;
 
     return-object p0
@@ -367,14 +339,12 @@
     :cond_1
     if-nez v2, :cond_2
 
-    .line 12
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getFile()Ljava/io/File;
 
     move-result-object p0
 
     if-eqz p0, :cond_2
 
-    .line 13
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getFile()Ljava/io/File;
 
     move-result-object p0
@@ -385,7 +355,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 14
     sget-object p0, Lcom/liulishuo/okdownload/StatusUtil$Status;->IDLE:Lcom/liulishuo/okdownload/StatusUtil$Status;
 
     return-object p0
@@ -393,7 +362,6 @@
     :cond_2
     if-eqz v4, :cond_6
 
-    .line 15
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getFile()Ljava/io/File;
 
     move-result-object p0
@@ -404,19 +372,16 @@
 
     if-eqz p0, :cond_6
 
-    .line 16
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result p0
 
     if-eqz p0, :cond_6
 
-    .line 17
     sget-object p0, Lcom/liulishuo/okdownload/StatusUtil$Status;->IDLE:Lcom/liulishuo/okdownload/StatusUtil$Status;
 
     return-object p0
 
-    .line 18
     :cond_3
     invoke-interface {v0}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStore;->isOnlyMemoryCache()Z
 
@@ -439,19 +404,16 @@
     :cond_4
     if-eqz v4, :cond_5
 
-    .line 19
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result v1
 
     if-eqz v1, :cond_5
 
-    .line 20
     sget-object p0, Lcom/liulishuo/okdownload/StatusUtil$Status;->COMPLETED:Lcom/liulishuo/okdownload/StatusUtil$Status;
 
     return-object p0
 
-    .line 21
     :cond_5
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/DownloadTask;->getUrl()Ljava/lang/String;
 
@@ -463,7 +425,6 @@
 
     if-eqz p0, :cond_6
 
-    .line 22
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, v3, p0}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
@@ -474,18 +435,15 @@
 
     if-eqz p0, :cond_6
 
-    .line 23
     sget-object p0, Lcom/liulishuo/okdownload/StatusUtil$Status;->COMPLETED:Lcom/liulishuo/okdownload/StatusUtil$Status;
 
     return-object p0
 
-    .line 24
     :cond_6
     sget-object p0, Lcom/liulishuo/okdownload/StatusUtil$Status;->UNKNOWN:Lcom/liulishuo/okdownload/StatusUtil$Status;
 
     return-object p0
 
-    .line 25
     :cond_7
     :goto_0
     sget-object p0, Lcom/liulishuo/okdownload/StatusUtil$Status;->UNKNOWN:Lcom/liulishuo/okdownload/StatusUtil$Status;
@@ -500,7 +458,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/g$2;
 .super Ljava/lang/Object;
-.source "GpsLocation.java"
 
 # interfaces
 .implements Landroid/location/GpsStatus$Listener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/g;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/g$2;->a:Lcom/amap/api/col/l3/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +38,6 @@
 
     const-string v0, "GpsLocation"
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/g$2;->a:Lcom/amap/api/col/l3/g;
 
@@ -50,7 +47,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lcom/amap/api/col/l3/g$2;->a:Lcom/amap/api/col/l3/g;
 
@@ -84,7 +80,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     :try_start_1
     iget-object p1, p0, Lcom/amap/api/col/l3/g$2;->a:Lcom/amap/api/col/l3/g;
@@ -95,7 +90,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 4
     iget-object p1, p0, Lcom/amap/api/col/l3/g$2;->a:Lcom/amap/api/col/l3/g;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/g;->g(Lcom/amap/api/col/l3/g;)Landroid/location/GpsStatus;
@@ -108,12 +102,10 @@
 
     if-eqz p1, :cond_3
 
-    .line 5
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 6
     iget-object v1, p0, Lcom/amap/api/col/l3/g$2;->a:Lcom/amap/api/col/l3/g;
 
     invoke-static {v1}, Lcom/amap/api/col/l3/g;->g(Lcom/amap/api/col/l3/g;)Landroid/location/GpsStatus;
@@ -124,7 +116,6 @@
 
     move-result v1
 
-    .line 7
     :cond_2
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
@@ -135,14 +126,12 @@
 
     if-ge v2, v1, :cond_3
 
-    .line 8
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Landroid/location/GpsSatellite;
 
-    .line 9
     invoke-virtual {v3}, Landroid/location/GpsSatellite;->usedInFix()Z
 
     move-result v3
@@ -161,10 +150,8 @@
     :try_start_2
     const-string v1, "GPS_EVENT_SATELLITE_STATUS"
 
-    .line 10
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
     :cond_3
     iget-object p1, p0, Lcom/amap/api/col/l3/g$2;->a:Lcom/amap/api/col/l3/g;
 
@@ -173,7 +160,6 @@
     :goto_1
     return-void
 
-    .line 12
     :cond_4
     iget-object p1, p0, Lcom/amap/api/col/l3/g$2;->a:Lcom/amap/api/col/l3/g;
 
@@ -188,7 +174,6 @@
 
     const-string v1, "onGpsStatusChanged"
 
-    .line 13
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

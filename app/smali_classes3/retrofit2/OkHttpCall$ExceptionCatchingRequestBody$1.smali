@@ -1,6 +1,5 @@
 .class Lretrofit2/OkHttpCall$ExceptionCatchingRequestBody$1;
 .super Lokio/ForwardingSource;
-.source "OkHttpCall.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lretrofit2/OkHttpCall$ExceptionCatchingRequestBody;Lokio/Source;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lretrofit2/OkHttpCall$ExceptionCatchingRequestBody$1;->this$0:Lretrofit2/OkHttpCall$ExceptionCatchingRequestBody;
 
     invoke-direct {p0, p2}, Lokio/ForwardingSource;-><init>(Lokio/Source;)V
@@ -40,7 +38,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-super {p0, p1, p2, p3}, Lokio/ForwardingSource;->read(Lokio/Buffer;J)J
 
@@ -53,11 +50,9 @@
     :catch_0
     move-exception p1
 
-    .line 2
     iget-object p2, p0, Lretrofit2/OkHttpCall$ExceptionCatchingRequestBody$1;->this$0:Lretrofit2/OkHttpCall$ExceptionCatchingRequestBody;
 
     iput-object p1, p2, Lretrofit2/OkHttpCall$ExceptionCatchingRequestBody;->thrownException:Ljava/io/IOException;
 
-    .line 3
     throw p1
 .end method

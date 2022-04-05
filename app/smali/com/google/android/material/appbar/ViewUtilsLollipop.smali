@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/appbar/ViewUtilsLollipop;
 .super Ljava/lang/Object;
-.source "ViewUtilsLollipop.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
 
     aput v2, v0, v1
 
-    .line 1
     sput-object v0, Lcom/google/android/material/appbar/ViewUtilsLollipop;->STATE_LIST_ANIM_ATTRS:[I
 
     return-void
@@ -36,7 +34,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +46,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object v0, Landroid/view/ViewOutlineProvider;->BOUNDS:Landroid/view/ViewOutlineProvider;
 
     invoke-virtual {p0, v0}, Landroid/view/View;->setOutlineProvider(Landroid/view/ViewOutlineProvider;)V
@@ -64,7 +60,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -75,7 +70,6 @@
 
     move-result v0
 
-    .line 2
     new-instance v1, Landroid/animation/StateListAnimator;
 
     invoke-direct {v1}, Landroid/animation/StateListAnimator;-><init>()V
@@ -90,7 +84,6 @@
 
     aput v3, v2, v4
 
-    .line 3
     sget v5, Lcom/google/android/material/R$attr;->state_liftable:I
 
     const/4 v6, 0x1
@@ -113,7 +106,6 @@
 
     const-string v8, "elevation"
 
-    .line 4
     invoke-static {p0, v8, v5}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
 
     move-result-object v5
@@ -124,7 +116,6 @@
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {v1, v2, v0}, Landroid/animation/StateListAnimator;->addState([ILandroid/animation/Animator;)V
 
     new-array v0, v6, [I
@@ -135,7 +126,6 @@
 
     aput p1, v2, v4
 
-    .line 6
     invoke-static {p0, v8, v2}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
 
     move-result-object p1
@@ -144,7 +134,6 @@
 
     move-result-object p1
 
-    .line 7
     invoke-virtual {v1, v0, p1}, Landroid/animation/StateListAnimator;->addState([ILandroid/animation/Animator;)V
 
     new-array p1, v4, [I
@@ -153,7 +142,6 @@
 
     aput v7, v0, v4
 
-    .line 8
     invoke-static {p0, v8, v0}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;
 
     move-result-object v0
@@ -166,7 +154,6 @@
 
     invoke-virtual {v1, p1, v0}, Landroid/animation/StateListAnimator;->addState([ILandroid/animation/Animator;)V
 
-    .line 9
     invoke-virtual {p0, v1}, Landroid/view/View;->setStateListAnimator(Landroid/animation/StateListAnimator;)V
 
     return-void
@@ -179,12 +166,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v6
 
-    .line 2
     sget-object v2, Lcom/google/android/material/appbar/ViewUtilsLollipop;->STATE_LIST_ANIM_ATTRS:[I
 
     const/4 v7, 0x0
@@ -199,12 +184,10 @@
 
     move v4, p3
 
-    .line 3
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/internal/ThemeEnforcement;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 4
     :try_start_0
     invoke-virtual {p1, v7}, Landroid/content/res/TypedArray;->hasValue(I)Z
 
@@ -212,7 +195,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 5
     invoke-virtual {p1, v7, v7}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result p2
@@ -221,12 +203,10 @@
 
     move-result-object p2
 
-    .line 6
     invoke-virtual {p0, p2}, Landroid/view/View;->setStateListAnimator(Landroid/animation/StateListAnimator;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
     :cond_0
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
@@ -237,6 +217,5 @@
 
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 8
     throw p0
 .end method

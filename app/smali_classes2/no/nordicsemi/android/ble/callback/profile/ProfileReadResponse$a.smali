@@ -1,6 +1,5 @@
 .class final Lno/nordicsemi/android/ble/callback/profile/ProfileReadResponse$a;
 .super Ljava/lang/Object;
-.source "ProfileReadResponse.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/callback/profile/ProfileReadResponse$a;->createFromParcel(Landroid/os/Parcel;)Lno/nordicsemi/android/ble/callback/profile/ProfileReadResponse;
 
     move-result-object p1
@@ -52,7 +49,6 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lno/nordicsemi/android/ble/callback/profile/ProfileReadResponse;
     .locals 1
 
-    .line 2
     new-instance v0, Lno/nordicsemi/android/ble/callback/profile/ProfileReadResponse;
 
     invoke-direct {v0, p1}, Lno/nordicsemi/android/ble/callback/profile/ProfileReadResponse;-><init>(Landroid/os/Parcel;)V
@@ -63,7 +59,6 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/callback/profile/ProfileReadResponse$a;->newArray(I)[Lno/nordicsemi/android/ble/callback/profile/ProfileReadResponse;
 
     move-result-object p1
@@ -74,7 +69,6 @@
 .method public newArray(I)[Lno/nordicsemi/android/ble/callback/profile/ProfileReadResponse;
     .locals 0
 
-    .line 2
     new-array p1, p1, [Lno/nordicsemi/android/ble/callback/profile/ProfileReadResponse;
 
     return-object p1

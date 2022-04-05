@@ -1,6 +1,5 @@
 .class final Landroidx/customview/a/a$b;
 .super Ljava/lang/Object;
-.source "ExploreByTouchHelper.java"
 
 # interfaces
 .implements Landroidx/customview/a/b$b;
@@ -33,7 +32,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-virtual {p1}, La/b/h;->a()I
 
     move-result p1
@@ -63,7 +60,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;)I
     .locals 0
 
-    .line 2
     check-cast p1, La/b/h;
 
     invoke-virtual {p0, p1}, Landroidx/customview/a/a$b;->a(La/b/h;)I
@@ -85,7 +81,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p1, p2}, La/b/h;->c(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -98,7 +93,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, La/b/h;
 
     invoke-virtual {p0, p1, p2}, Landroidx/customview/a/a$b;->a(La/b/h;I)Landroidx/core/view/accessibility/b;

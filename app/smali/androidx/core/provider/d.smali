@@ -1,6 +1,5 @@
 .class public final Landroidx/core/provider/d;
 .super Ljava/lang/Object;
-.source "FontRequest.java"
 
 
 # instance fields
@@ -56,10 +55,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Landroidx/core/d/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object v0, p1
@@ -68,7 +65,6 @@
 
     iput-object v0, p0, Landroidx/core/provider/d;->a:Ljava/lang/String;
 
-    .line 3
     invoke-static {p2}, Landroidx/core/d/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object v0, p2
@@ -77,7 +73,6 @@
 
     iput-object v0, p0, Landroidx/core/provider/d;->b:Ljava/lang/String;
 
-    .line 4
     invoke-static {p3}, Landroidx/core/d/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-object v0, p3
@@ -86,7 +81,6 @@
 
     iput-object v0, p0, Landroidx/core/provider/d;->c:Ljava/lang/String;
 
-    .line 5
     invoke-static {p4}, Landroidx/core/d/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p4, Ljava/util/List;
@@ -95,10 +89,8 @@
 
     const/4 p4, 0x0
 
-    .line 6
     iput p4, p0, Landroidx/core/provider/d;->e:I
 
-    .line 7
     invoke-direct {p0, p1, p2, p3}, Landroidx/core/provider/d;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -123,7 +115,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
@@ -134,7 +125,6 @@
 
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -162,7 +152,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Landroidx/core/provider/d;->d:Ljava/util/List;
 
     return-object v0
@@ -173,7 +162,6 @@
     .annotation build Landroidx/annotation/ArrayRes;
     .end annotation
 
-    .line 1
     iget v0, p0, Landroidx/core/provider/d;->e:I
 
     return v0
@@ -190,7 +178,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/provider/d;->f:Ljava/lang/String;
 
     return-object v0
@@ -201,7 +188,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/provider/d;->a:Ljava/lang/String;
 
     return-object v0
@@ -212,7 +198,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/provider/d;->b:Ljava/lang/String;
 
     return-object v0
@@ -223,7 +208,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/provider/d;->c:Ljava/lang/String;
 
     return-object v0
@@ -232,12 +216,10 @@
 .method public toString()Ljava/lang/String;
     .locals 6
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -280,7 +262,6 @@
 
     const/4 v2, 0x0
 
-    .line 3
     :goto_0
     iget-object v3, p0, Landroidx/core/provider/d;->d:Ljava/util/List;
 
@@ -292,10 +273,8 @@
 
     const-string v3, " ["
 
-    .line 4
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
     iget-object v3, p0, Landroidx/core/provider/d;->d:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -306,7 +285,6 @@
 
     const/4 v4, 0x0
 
-    .line 6
     :goto_1
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -316,17 +294,14 @@
 
     const-string v5, " \""
 
-    .line 7
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
     invoke-interface {v3, v4}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, [B
 
-    .line 9
     invoke-static {v5, v1}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
     move-result-object v5
@@ -335,7 +310,6 @@
 
     const-string v5, "\""
 
-    .line 10
     invoke-virtual {v0, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     add-int/lit8 v4, v4, 0x1
@@ -345,7 +319,6 @@
     :cond_0
     const-string v3, " ]"
 
-    .line 11
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     add-int/lit8 v2, v2, 0x1
@@ -355,10 +328,8 @@
     :cond_1
     const-string v1, "}"
 
-    .line 12
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 13
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -377,7 +348,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 14
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0

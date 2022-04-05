@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/gs;
 .super Ljava/lang/Object;
-.source "BasicLogHandler.java"
 
 
 # static fields
@@ -17,12 +16,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/amap/api/col/l3/gs;->c:Z
 
     return-void
@@ -31,14 +28,12 @@
 .method public static a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/gs;->a:Lcom/amap/api/col/l3/gs;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x1
 
-    .line 2
     invoke-virtual {v0, p0, v1, p1, p2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;ILjava/lang/String;Ljava/lang/String;)V
 
     :cond_0

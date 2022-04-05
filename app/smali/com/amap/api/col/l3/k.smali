@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/k;
 .super Ljava/lang/Object;
-.source "AMapGLRenderer.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/v;
@@ -18,7 +17,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/amap/api/col/l3/k;-><init>(Landroid/content/Context;B)V
 
     return-void
@@ -27,20 +25,16 @@
 .method private constructor <init>(Landroid/content/Context;B)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p2, 0x0
 
-    .line 3
     iput-object p2, p0, Lcom/amap/api/col/l3/k;->b:Lcom/amap/api/col/l3/u;
 
     const/4 p2, 0x0
 
-    .line 4
     iput-boolean p2, p0, Lcom/amap/api/col/l3/k;->a:Z
 
-    .line 5
     new-instance p2, Lcom/amap/api/col/l3/j;
 
     invoke-direct {p2, p0, p1}, Lcom/amap/api/col/l3/j;-><init>(Lcom/amap/api/col/l3/v;Landroid/content/Context;)V
@@ -55,7 +49,6 @@
 .method public final a()Lcom/amap/api/col/l3/u;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/k;->b:Lcom/amap/api/col/l3/u;
 
     return-object v0
@@ -100,7 +93,6 @@
 .method public final isEnabled()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/k;->b:Lcom/amap/api/col/l3/u;
 
     if-eqz v0, :cond_0
@@ -136,7 +128,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
     :cond_0

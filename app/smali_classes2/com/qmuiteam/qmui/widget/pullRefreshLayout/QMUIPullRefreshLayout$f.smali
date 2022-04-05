@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$f;
 .super Ljava/lang/Object;
-.source "QMUIPullRefreshLayout.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/WebParentLayout$1;
 .super Ljava/lang/Object;
-.source "WebParentLayout.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/just/agentweb/WebParentLayout;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/WebParentLayout$1;->this$0:Lcom/just/agentweb/WebParentLayout;
 
     iput-object p2, p0, Lcom/just/agentweb/WebParentLayout$1;->val$clickView:Landroid/view/View;
@@ -42,7 +40,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/just/agentweb/WebParentLayout$1;->this$0:Lcom/just/agentweb/WebParentLayout;
 
     invoke-virtual {p1}, Lcom/just/agentweb/WebParentLayout;->getWebView()Landroid/webkit/WebView;
@@ -51,14 +48,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/just/agentweb/WebParentLayout$1;->val$clickView:Landroid/view/View;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setClickable(Z)V
 
-    .line 3
     iget-object p1, p0, Lcom/just/agentweb/WebParentLayout$1;->this$0:Lcom/just/agentweb/WebParentLayout;
 
     invoke-virtual {p1}, Lcom/just/agentweb/WebParentLayout;->getWebView()Landroid/webkit/WebView;

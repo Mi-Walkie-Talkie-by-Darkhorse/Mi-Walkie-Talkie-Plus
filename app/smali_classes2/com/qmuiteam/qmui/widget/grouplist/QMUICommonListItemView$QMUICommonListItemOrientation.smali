@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/widget/grouplist/QMUICommonListItemView$QMUICommonListItemOrientation;
 .super Ljava/lang/Object;
-.source "QMUICommonListItemView.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

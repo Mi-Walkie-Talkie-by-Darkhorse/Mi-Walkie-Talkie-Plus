@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lno/nordicsemi/android/ble/annotation/DescriptorPermissions;
 .super Ljava/lang/Object;
-.source "DescriptorPermissions.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/widget/RxAbsListView__AbsListViewScrollEventObservableKt;
 .super Ljava/lang/Object;
-.source "AbsListViewScrollEventObservable.kt"
 
 
 # annotations
@@ -58,7 +57,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEventObservable;
 
     invoke-direct {v0, p0}, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEventObservable;-><init>(Landroid/widget/AbsListView;)V

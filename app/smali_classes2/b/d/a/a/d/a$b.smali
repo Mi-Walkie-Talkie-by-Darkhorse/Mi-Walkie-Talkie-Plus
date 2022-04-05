@@ -1,6 +1,5 @@
 .class public interface abstract Lb/d/a/a/d/a$b;
 .super Ljava/lang/Object;
-.source "WrapperUtils.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/fl$1;
 .super Ljava/lang/Object;
-.source "PluginContext.java"
 
 # interfaces
 .implements Landroid/view/LayoutInflater$Factory;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/fl;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/fl$1;->a:Lcom/amap/api/col/l3/fl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final onCreateView(Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/fl$1;->a:Lcom/amap/api/col/l3/fl;
 
     invoke-static {v0, p1, p2, p3}, Lcom/amap/api/col/l3/fl;->a(Lcom/amap/api/col/l3/fl;Ljava/lang/String;Landroid/content/Context;Landroid/util/AttributeSet;)Landroid/view/View;

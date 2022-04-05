@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/HashBiMap$EntrySet$1;
 .super Lcom/google/common/collect/HashBiMap$Itr;
-.source "HashBiMap.java"
 
 
 # annotations
@@ -37,7 +36,6 @@
 .method constructor <init>(Lcom/google/common/collect/HashBiMap$EntrySet;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$EntrySet$1;->this$1:Lcom/google/common/collect/HashBiMap$EntrySet;
 
     iget-object p1, p1, Lcom/google/common/collect/HashBiMap$EntrySet;->this$0:Lcom/google/common/collect/HashBiMap;
@@ -52,7 +50,6 @@
 .method bridge synthetic output(Lcom/google/common/collect/HashBiMap$BiEntry;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/HashBiMap$EntrySet$1;->output(Lcom/google/common/collect/HashBiMap$BiEntry;)Ljava/util/Map$Entry;
 
     move-result-object p1
@@ -72,7 +69,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/HashBiMap$EntrySet$1$MapEntry;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/HashBiMap$EntrySet$1$MapEntry;-><init>(Lcom/google/common/collect/HashBiMap$EntrySet$1;Lcom/google/common/collect/HashBiMap$BiEntry;)V

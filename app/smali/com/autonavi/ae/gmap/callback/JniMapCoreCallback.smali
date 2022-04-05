@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/callback/JniMapCoreCallback;
 .super Ljava/lang/Object;
-.source "JniMapCoreCallback.java"
 
 
 # virtual methods

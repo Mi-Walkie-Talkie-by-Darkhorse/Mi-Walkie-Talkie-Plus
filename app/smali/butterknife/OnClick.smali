@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/OnClick;
 .super Ljava/lang/Object;
-.source "OnClick.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

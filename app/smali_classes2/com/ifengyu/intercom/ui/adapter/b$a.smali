@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/adapter/b$a;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "BtEarAdapter.java"
 
 
 # annotations
@@ -24,12 +23,10 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/adapter/b;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
     const p1, 0x7f09008d
 
-    .line 2
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -40,7 +37,6 @@
 
     const p1, 0x7f0901f7
 
-    .line 3
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1

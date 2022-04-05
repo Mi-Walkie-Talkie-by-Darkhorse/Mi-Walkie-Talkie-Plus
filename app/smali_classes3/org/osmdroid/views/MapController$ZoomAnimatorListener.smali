@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/views/MapController$ZoomAnimatorListener;
 .super Ljava/lang/Object;
-.source "MapController.java"
 
 # interfaces
 .implements Landroid/animation/Animator$AnimatorListener;
@@ -30,10 +29,8 @@
 .method public constructor <init>(Lorg/osmdroid/views/MapController;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lorg/osmdroid/views/MapController$ZoomAnimatorListener;->mMapController:Lorg/osmdroid/views/MapController;
 
     return-void
@@ -50,7 +47,6 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lorg/osmdroid/views/MapController$ZoomAnimatorListener;->mMapController:Lorg/osmdroid/views/MapController;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapController;->onAnimationEnd()V
@@ -67,7 +63,6 @@
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lorg/osmdroid/views/MapController$ZoomAnimatorListener;->mMapController:Lorg/osmdroid/views/MapController;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapController;->onAnimationStart()V
@@ -78,7 +73,6 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController$ZoomAnimatorListener;->mMapController:Lorg/osmdroid/views/MapController;
 
     iget-object v0, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
@@ -95,7 +89,6 @@
 
     iput p1, v0, Lorg/osmdroid/views/MapView;->mMultiTouchScale:F
 
-    .line 2
     iget-object p1, p0, Lorg/osmdroid/views/MapController$ZoomAnimatorListener;->mMapController:Lorg/osmdroid/views/MapController;
 
     iget-object p1, p1, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;

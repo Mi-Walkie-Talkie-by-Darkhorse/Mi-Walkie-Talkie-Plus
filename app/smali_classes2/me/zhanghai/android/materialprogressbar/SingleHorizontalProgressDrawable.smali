@@ -1,6 +1,5 @@
 .class Lme/zhanghai/android/materialprogressbar/SingleHorizontalProgressDrawable;
 .super Lme/zhanghai/android/materialprogressbar/BaseSingleHorizontalProgressDrawable;
-.source "SingleHorizontalProgressDrawable.java"
 
 # interfaces
 .implements Lme/zhanghai/android/materialprogressbar/ShowBackgroundDrawable;
@@ -18,7 +17,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseSingleHorizontalProgressDrawable;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -29,7 +27,6 @@
 .method public getShowBackground()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/SingleHorizontalProgressDrawable;->mShowBackground:Z
 
     return v0
@@ -38,7 +35,6 @@
 .method protected onDrawRect(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getLevel()I
 
     move-result v0
@@ -47,7 +43,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
@@ -61,7 +56,6 @@
 
     const/high16 v2, 0x3f800000    # 1.0f
 
-    .line 3
     sget-object v3, Lme/zhanghai/android/materialprogressbar/BaseSingleHorizontalProgressDrawable;->RECT_BOUND:Landroid/graphics/RectF;
 
     iget v3, v3, Landroid/graphics/RectF;->left:F
@@ -70,18 +64,14 @@
 
     invoke-virtual {p1, v0, v2, v3, v4}, Landroid/graphics/Canvas;->scale(FFFF)V
 
-    .line 4
     invoke-super {p0, p1, p2}, Lme/zhanghai/android/materialprogressbar/BaseSingleHorizontalProgressDrawable;->onDrawRect(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
 
-    .line 5
     iget-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/SingleHorizontalProgressDrawable;->mShowBackground:Z
 
     if-eqz v0, :cond_1
 
-    .line 6
     invoke-super {p0, p1, p2}, Lme/zhanghai/android/materialprogressbar/BaseSingleHorizontalProgressDrawable;->onDrawRect(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
 
-    .line 7
     :cond_1
     invoke-virtual {p1, v1}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
@@ -91,7 +81,6 @@
 .method protected onLevelChange(I)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     const/4 p1, 0x1
@@ -102,15 +91,12 @@
 .method public setShowBackground(Z)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/SingleHorizontalProgressDrawable;->mShowBackground:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput-boolean p1, p0, Lme/zhanghai/android/materialprogressbar/SingleHorizontalProgressDrawable;->mShowBackground:Z
 
-    .line 3
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     :cond_0

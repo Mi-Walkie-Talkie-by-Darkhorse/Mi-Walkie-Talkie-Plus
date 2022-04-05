@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView$a;
 .super Ljava/lang/Object;
-.source "QMUIFragmentActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnLayoutChangeListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView$a;->a:Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +38,6 @@
 
     const/4 p1, 0x0
 
-    .line 1
     :goto_0
     iget-object p2, p0, Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView$a;->a:Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView;
 
@@ -50,7 +47,6 @@
 
     if-ge p1, p2, :cond_0
 
-    .line 2
     iget-object p2, p0, Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView$a;->a:Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity$DefaultRootView;
 
     invoke-virtual {p2, p1}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;

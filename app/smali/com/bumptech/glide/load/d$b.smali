@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/d$b;
 .super Ljava/lang/Object;
-.source "Option.java"
 
 
 # annotations

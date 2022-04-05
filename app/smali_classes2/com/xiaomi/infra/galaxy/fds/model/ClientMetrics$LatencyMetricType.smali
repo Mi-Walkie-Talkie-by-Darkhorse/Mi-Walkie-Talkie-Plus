@@ -1,6 +1,5 @@
 .class public final enum Lcom/xiaomi/infra/galaxy/fds/model/ClientMetrics$LatencyMetricType;
 .super Ljava/lang/Enum;
-.source "ClientMetrics.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/model/ClientMetrics$LatencyMetricType;
 
     const/4 v1, 0x0
@@ -49,7 +47,6 @@
 
     aput-object v0, v2, v1
 
-    .line 2
     sput-object v2, Lcom/xiaomi/infra/galaxy/fds/model/ClientMetrics$LatencyMetricType;->$VALUES:[Lcom/xiaomi/infra/galaxy/fds/model/ClientMetrics$LatencyMetricType;
 
     return-void
@@ -63,7 +60,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -72,7 +68,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/xiaomi/infra/galaxy/fds/model/ClientMetrics$LatencyMetricType;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/xiaomi/infra/galaxy/fds/model/ClientMetrics$LatencyMetricType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -87,7 +82,6 @@
 .method public static values()[Lcom/xiaomi/infra/galaxy/fds/model/ClientMetrics$LatencyMetricType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/model/ClientMetrics$LatencyMetricType;->$VALUES:[Lcom/xiaomi/infra/galaxy/fds/model/ClientMetrics$LatencyMetricType;
 
     invoke-virtual {v0}, [Lcom/xiaomi/infra/galaxy/fds/model/ClientMetrics$LatencyMetricType;->clone()Ljava/lang/Object;

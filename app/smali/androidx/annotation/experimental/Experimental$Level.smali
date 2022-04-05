@@ -1,6 +1,5 @@
 .class public final enum Landroidx/annotation/experimental/Experimental$Level;
 .super Ljava/lang/Enum;
-.source "Experimental.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1
     new-instance v0, Landroidx/annotation/experimental/Experimental$Level;
 
     const/4 v1, 0x0
@@ -45,7 +43,6 @@
 
     sput-object v0, Landroidx/annotation/experimental/Experimental$Level;->a:Landroidx/annotation/experimental/Experimental$Level;
 
-    .line 2
     new-instance v0, Landroidx/annotation/experimental/Experimental$Level;
 
     const/4 v2, 0x1
@@ -60,7 +57,6 @@
 
     new-array v3, v3, [Landroidx/annotation/experimental/Experimental$Level;
 
-    .line 3
     sget-object v4, Landroidx/annotation/experimental/Experimental$Level;->a:Landroidx/annotation/experimental/Experimental$Level;
 
     aput-object v4, v3, v1
@@ -80,7 +76,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -89,7 +84,6 @@
 .method public static valueOf(Ljava/lang/String;)Landroidx/annotation/experimental/Experimental$Level;
     .locals 1
 
-    .line 1
     const-class v0, Landroidx/annotation/experimental/Experimental$Level;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -104,7 +98,6 @@
 .method public static values()[Landroidx/annotation/experimental/Experimental$Level;
     .locals 1
 
-    .line 1
     sget-object v0, Landroidx/annotation/experimental/Experimental$Level;->c:[Landroidx/annotation/experimental/Experimental$Level;
 
     invoke-virtual {v0}, [Landroidx/annotation/experimental/Experimental$Level;->clone()Ljava/lang/Object;

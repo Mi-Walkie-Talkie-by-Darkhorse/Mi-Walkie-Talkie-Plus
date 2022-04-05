@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/node/transport/d$a;
 .super Ljava/lang/Object;
-.source "DolphinCommandHelper.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$CHOPTION;->values()[Lcom/ifengyu/intercom/protos/MitalkProtos$CHOPTION;
 
     move-result-object v0

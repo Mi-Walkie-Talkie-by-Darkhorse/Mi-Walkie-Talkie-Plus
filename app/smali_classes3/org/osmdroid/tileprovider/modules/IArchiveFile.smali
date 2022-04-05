@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/tileprovider/modules/IArchiveFile;
 .super Ljava/lang/Object;
-.source "IArchiveFile.java"
 
 
 # virtual methods

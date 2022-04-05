@@ -1,6 +1,5 @@
 .class Lpl/droidsonroids/relinker/c$a;
 .super Ljava/lang/Object;
-.source "ReLinkerInstance.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lpl/droidsonroids/relinker/c;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Lpl/droidsonroids/relinker/b$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lpl/droidsonroids/relinker/c$a;->e:Lpl/droidsonroids/relinker/c;
 
     iput-object p2, p0, Lpl/droidsonroids/relinker/c$a;->a:Landroid/content/Context;
@@ -54,7 +52,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lpl/droidsonroids/relinker/c$a;->e:Lpl/droidsonroids/relinker/c;
 
@@ -66,7 +63,6 @@
 
     invoke-static {v0, v1, v2, v3}, Lpl/droidsonroids/relinker/c;->a(Lpl/droidsonroids/relinker/c;Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lpl/droidsonroids/relinker/c$a;->d:Lpl/droidsonroids/relinker/b$c;
 
     invoke-interface {v0}, Lpl/droidsonroids/relinker/b$c;->a()V
@@ -79,7 +75,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     iget-object v1, p0, Lpl/droidsonroids/relinker/c$a;->d:Lpl/droidsonroids/relinker/b$c;
 
     invoke-interface {v1, v0}, Lpl/droidsonroids/relinker/b$c;->a(Ljava/lang/Throwable;)V
@@ -89,7 +84,6 @@
     :catch_1
     move-exception v0
 
-    .line 4
     iget-object v1, p0, Lpl/droidsonroids/relinker/c$a;->d:Lpl/droidsonroids/relinker/b$c;
 
     invoke-interface {v1, v0}, Lpl/droidsonroids/relinker/b$c;->a(Ljava/lang/Throwable;)V

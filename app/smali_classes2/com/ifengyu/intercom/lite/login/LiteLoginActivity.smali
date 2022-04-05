@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/login/LiteLoginActivity;
 .super Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;
-.source "LiteLoginActivity.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 .method public static a(Landroid/content/Context;)Landroid/content/Intent;
     .locals 2
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/lite/login/LiteLoginActivity;
 
     const-class v1, Lcom/ifengyu/intercom/lite/login/LoginFragment;
@@ -53,10 +50,8 @@
 .method protected m()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/ifengyu/intercom/lite/base/BaseFragmentActivity;->m()V
 
-    .line 2
     invoke-static {p0}, Lcom/qmuiteam/qmui/util/k;->a(Landroid/app/Activity;)Z
 
     return-void

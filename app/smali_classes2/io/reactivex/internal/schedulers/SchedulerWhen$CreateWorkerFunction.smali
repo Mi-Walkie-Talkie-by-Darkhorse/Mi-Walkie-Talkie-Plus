@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/schedulers/SchedulerWhen$CreateWorkerFunction;
 .super Ljava/lang/Object;
-.source "SchedulerWhen.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;
@@ -41,10 +40,8 @@
 .method constructor <init>(Lio/reactivex/Scheduler$Worker;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/schedulers/SchedulerWhen$CreateWorkerFunction;->actualWorker:Lio/reactivex/Scheduler$Worker;
 
     return-void
@@ -55,7 +52,6 @@
 .method public apply(Lio/reactivex/internal/schedulers/SchedulerWhen$ScheduledAction;)Lio/reactivex/Completable;
     .locals 1
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/schedulers/SchedulerWhen$CreateWorkerFunction$WorkerCompletable;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/schedulers/SchedulerWhen$CreateWorkerFunction$WorkerCompletable;-><init>(Lio/reactivex/internal/schedulers/SchedulerWhen$CreateWorkerFunction;Lio/reactivex/internal/schedulers/SchedulerWhen$ScheduledAction;)V
@@ -71,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Lio/reactivex/internal/schedulers/SchedulerWhen$ScheduledAction;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/schedulers/SchedulerWhen$CreateWorkerFunction;->apply(Lio/reactivex/internal/schedulers/SchedulerWhen$ScheduledAction;)Lio/reactivex/Completable;

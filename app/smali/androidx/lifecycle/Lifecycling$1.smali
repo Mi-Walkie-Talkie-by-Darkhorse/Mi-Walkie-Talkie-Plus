@@ -1,6 +1,5 @@
 .class Landroidx/lifecycle/Lifecycling$1;
 .super Ljava/lang/Object;
-.source "Lifecycling.java"
 
 # interfaces
 .implements Landroidx/lifecycle/f;
@@ -22,7 +21,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/Lifecycling$1;->a:Landroidx/lifecycle/i;
 
     invoke-interface {v0, p1, p2}, Landroidx/lifecycle/i;->onStateChanged(Landroidx/lifecycle/k;Landroidx/lifecycle/Lifecycle$Event;)V

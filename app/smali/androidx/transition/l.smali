@@ -1,6 +1,5 @@
 .class Landroidx/transition/l;
 .super Ljava/lang/Object;
-.source "MatrixUtils.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/transition/l$a;
 
     invoke-direct {v0}, Landroidx/transition/l$a;-><init>()V

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/old/LiteSettingActivity$b;
 .super Ljava/lang/Object;
-.source "LiteSettingActivity.java"
 
 # interfaces
 .implements Landroidx/lifecycle/q;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteSettingActivity$b;->a:Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public a(Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;)V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;->z()Ljava/lang/String;
 
     move-result-object v0
@@ -72,7 +69,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteSettingActivity$b;->a:Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;->mItemName:Lcom/ifengyu/library/widget/view/ItemView;
@@ -83,7 +79,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/old/LiteSettingActivity$b;->a:Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;->mItemId:Lcom/ifengyu/library/widget/view/ItemView;
@@ -98,7 +93,6 @@
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteSettingActivity$b;->a:Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;->a(Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;)V
@@ -109,7 +103,6 @@
 .method public bridge synthetic onChanged(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/lite/old/LiteSettingActivity$b;->a(Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;)V

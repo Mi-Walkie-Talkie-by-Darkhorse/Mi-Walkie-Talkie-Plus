@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/request/h/h;
 .super Ljava/lang/Object;
-.source "Target.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/manager/i;

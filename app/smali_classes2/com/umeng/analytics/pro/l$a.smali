@@ -1,6 +1,5 @@
 .class Lcom/umeng/analytics/pro/l$a;
 .super Ljava/lang/Object;
-.source "BackgroundMonitor.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/umeng/analytics/pro/l;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/analytics/pro/l$a;->a:Lcom/umeng/analytics/pro/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/analytics/pro/l$a;->a:Lcom/umeng/analytics/pro/l;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/l;->a(Lcom/umeng/analytics/pro/l;)Z
@@ -57,7 +54,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/analytics/pro/l$a;->a:Lcom/umeng/analytics/pro/l;
 
     const/4 v2, 0x0
@@ -66,10 +62,8 @@
 
     const-string v0, "--->>> went background."
 
-    .line 3
     invoke-static {v1, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     :goto_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/l$a;->a:Lcom/umeng/analytics/pro/l;
 
@@ -83,7 +77,6 @@
 
     if-ge v2, v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/umeng/analytics/pro/l$a;->a:Lcom/umeng/analytics/pro/l;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/l;->c(Lcom/umeng/analytics/pro/l;)Ljava/util/ArrayList;
@@ -105,7 +98,6 @@
     :cond_0
     const-string v0, "--->>> still foreground."
 
-    .line 6
     invoke-static {v1, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1

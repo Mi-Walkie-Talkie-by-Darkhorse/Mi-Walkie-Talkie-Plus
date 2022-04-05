@@ -1,6 +1,5 @@
 .class synthetic Landroidx/appcompat/graphics/drawable/a$a;
 .super Ljava/lang/Object;
-.source "AnimatedStateListDrawableCompat.java"
 
 
 # annotations

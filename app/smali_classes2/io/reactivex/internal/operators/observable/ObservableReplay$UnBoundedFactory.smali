@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/ObservableReplay$UnBoundedFactory;
 .super Ljava/lang/Object;
-.source "ObservableReplay.java"
 
 # interfaces
 .implements Lio/reactivex/internal/operators/observable/ObservableReplay$BufferSupplier;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableReplay$UnboundedReplayBuffer;
 
     const/16 v1, 0x10

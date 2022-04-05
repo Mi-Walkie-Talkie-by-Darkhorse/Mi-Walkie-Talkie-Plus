@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/kq;
 .super Ljava/lang/Object;
-.source "MapLocationManager.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/Inner_3dMap_locationManagerBase;

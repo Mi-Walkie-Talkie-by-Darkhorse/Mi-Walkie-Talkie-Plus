@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/g/c/d;
 .super Lcom/ifengyu/intercom/g/c/b;
-.source "PutFormBuilder.java"
 
 
 # annotations
@@ -36,10 +35,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/c/b;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -54,19 +51,16 @@
 .method public a(Ljava/lang/String;Ljava/lang/String;)Lcom/ifengyu/intercom/g/c/d;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/g/c/b;->d:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/g/c/b;->d:Ljava/util/Map;
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/g/c/b;->d:Ljava/util/Map;
 
@@ -78,7 +72,6 @@
 .method public a()Lcom/ifengyu/intercom/g/e/f;
     .locals 8
 
-    .line 1
     new-instance v7, Lcom/ifengyu/intercom/g/e/e;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/g/c/b;->a:Ljava/lang/String;

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$a;
 .super Ljava/lang/Object;
-.source "SelectDeviceActivity.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnKeyListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
 
     if-ne p2, p1, :cond_0
 
-    .line 1
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
     move-result p1
@@ -63,7 +60,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->j(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)Lcom/ifengyu/intercom/lite/h/h0;
@@ -84,10 +80,8 @@
 
     const-string p2, "dialog back pressed, cancel connection"
 
-    .line 3
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->j(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)Lcom/ifengyu/intercom/lite/h/h0;

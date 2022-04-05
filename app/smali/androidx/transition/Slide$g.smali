@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/transition/Slide$g;
 .super Ljava/lang/Object;
-.source "Slide.java"
 
 
 # annotations

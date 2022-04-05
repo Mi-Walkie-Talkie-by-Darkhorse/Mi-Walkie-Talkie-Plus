@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/util/i;
 .super Ljava/lang/Object;
-.source "QMUIResHelper.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method public static a(Landroid/content/Context;I)I
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p0
@@ -26,19 +24,16 @@
 .method public static a(Landroid/content/res/Resources$Theme;I)I
     .locals 2
 
-    .line 2
     sget-object v0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
     sput-object v0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
-    .line 4
     :cond_0
     sget-object v0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -54,7 +49,6 @@
 
     return p0
 
-    .line 5
     :cond_1
     sget-object p1, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -64,7 +58,6 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 6
     iget p1, p1, Landroid/util/TypedValue;->data:I
 
     invoke-static {p0, p1}, Lcom/qmuiteam/qmui/util/i;->a(Landroid/content/res/Resources$Theme;I)I
@@ -73,7 +66,6 @@
 
     return p0
 
-    .line 7
     :cond_2
     iget p0, p1, Landroid/util/TypedValue;->data:I
 
@@ -91,20 +83,17 @@
 
     return-object v0
 
-    .line 8
     :cond_0
     sget-object v1, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
     if-nez v1, :cond_1
 
-    .line 9
     new-instance v1, Landroid/util/TypedValue;
 
     invoke-direct {v1}, Landroid/util/TypedValue;-><init>()V
 
     sput-object v1, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
-    .line 10
     :cond_1
     sget-object v1, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -118,7 +107,6 @@
 
     return-object v0
 
-    .line 11
     :cond_2
     sget-object p2, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -132,7 +120,6 @@
 
     if-gt v1, v2, :cond_3
 
-    .line 12
     iget p0, p2, Landroid/util/TypedValue;->data:I
 
     invoke-static {p0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
@@ -141,7 +128,6 @@
 
     return-object p0
 
-    .line 13
     :cond_3
     sget-object p2, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -151,7 +137,6 @@
 
     if-ne v1, v2, :cond_4
 
-    .line 14
     iget p2, p2, Landroid/util/TypedValue;->data:I
 
     invoke-static {p0, p1, p2}, Lcom/qmuiteam/qmui/util/i;->a(Landroid/content/Context;Landroid/content/res/Resources$Theme;I)Landroid/content/res/ColorStateList;
@@ -160,7 +145,6 @@
 
     return-object p0
 
-    .line 15
     :cond_4
     iget p1, p2, Landroid/util/TypedValue;->resourceId:I
 
@@ -168,7 +152,6 @@
 
     return-object v0
 
-    .line 16
     :cond_5
     invoke-static {p0, p1}, Landroidx/core/content/b;->b(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
 
@@ -182,14 +165,12 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 17
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 18
     iget p2, p1, Landroid/util/TypedValue;->type:I
 
     const/4 v0, 0x2
@@ -200,7 +181,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 19
     invoke-static {p0, p1}, Lcom/qmuiteam/qmui/util/e;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
@@ -216,7 +196,6 @@
 .method public static a(Landroid/widget/TextView;I)V
     .locals 11
 
-    .line 20
     invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -231,12 +210,10 @@
 
     move-result-object p1
 
-    .line 21
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->getIndexCount()I
 
     move-result v0
 
-    .line 22
     invoke-virtual {p0}, Landroid/widget/TextView;->getPaddingLeft()I
 
     move-result v1
@@ -245,7 +222,6 @@
 
     move-result v4
 
-    .line 23
     invoke-virtual {p0}, Landroid/widget/TextView;->getPaddingTop()I
 
     move-result v5
@@ -259,19 +235,16 @@
     :goto_0
     if-ge v7, v0, :cond_13
 
-    .line 24
     invoke-virtual {p1, v7}, Landroid/content/res/TypedArray;->getIndex(I)I
 
     move-result v8
 
-    .line 25
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_gravity:I
 
     const/4 v10, -0x1
 
     if-ne v8, v9, :cond_0
 
-    .line 26
     invoke-virtual {p1, v8, v10}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v8
@@ -280,13 +253,11 @@
 
     goto/16 :goto_1
 
-    .line 27
     :cond_0
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_textColor:I
 
     if-ne v8, v9, :cond_1
 
-    .line 28
     invoke-virtual {p1, v8}, Landroid/content/res/TypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
     move-result-object v8
@@ -295,13 +266,11 @@
 
     goto/16 :goto_1
 
-    .line 29
     :cond_1
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_textSize:I
 
     if-ne v8, v9, :cond_2
 
-    .line 30
     invoke-virtual {p1, v8, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v8
@@ -312,65 +281,55 @@
 
     goto/16 :goto_1
 
-    .line 31
     :cond_2
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_paddingLeft:I
 
     if-ne v8, v9, :cond_3
 
-    .line 32
     invoke-virtual {p1, v8, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v1
 
     goto/16 :goto_1
 
-    .line 33
     :cond_3
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_paddingRight:I
 
     if-ne v8, v9, :cond_4
 
-    .line 34
     invoke-virtual {p1, v8, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v4
 
     goto/16 :goto_1
 
-    .line 35
     :cond_4
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_paddingTop:I
 
     if-ne v8, v9, :cond_5
 
-    .line 36
     invoke-virtual {p1, v8, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v5
 
     goto/16 :goto_1
 
-    .line 37
     :cond_5
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_paddingBottom:I
 
     if-ne v8, v9, :cond_6
 
-    .line 38
     invoke-virtual {p1, v8, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v6
 
     goto/16 :goto_1
 
-    .line 39
     :cond_6
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_singleLine:I
 
     if-ne v8, v9, :cond_7
 
-    .line 40
     invoke-virtual {p1, v8, v3}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result v8
@@ -379,7 +338,6 @@
 
     goto/16 :goto_1
 
-    .line 41
     :cond_7
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_ellipsize:I
 
@@ -387,7 +345,6 @@
 
     const/4 v9, 0x3
 
-    .line 42
     invoke-virtual {p1, v8, v9}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v8
@@ -408,7 +365,6 @@
 
     goto :goto_1
 
-    .line 43
     :cond_8
     sget-object v8, Landroid/text/TextUtils$TruncateAt;->MARQUEE:Landroid/text/TextUtils$TruncateAt;
 
@@ -416,7 +372,6 @@
 
     goto :goto_1
 
-    .line 44
     :cond_9
     sget-object v8, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
@@ -424,7 +379,6 @@
 
     goto :goto_1
 
-    .line 45
     :cond_a
     sget-object v8, Landroid/text/TextUtils$TruncateAt;->MIDDLE:Landroid/text/TextUtils$TruncateAt;
 
@@ -432,7 +386,6 @@
 
     goto :goto_1
 
-    .line 46
     :cond_b
     sget-object v8, Landroid/text/TextUtils$TruncateAt;->START:Landroid/text/TextUtils$TruncateAt;
 
@@ -440,13 +393,11 @@
 
     goto :goto_1
 
-    .line 47
     :cond_c
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_maxLines:I
 
     if-ne v8, v9, :cond_d
 
-    .line 48
     invoke-virtual {p1, v8, v10}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v8
@@ -455,13 +406,11 @@
 
     goto :goto_1
 
-    .line 49
     :cond_d
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_background:I
 
     if-ne v8, v9, :cond_e
 
-    .line 50
     invoke-virtual {p1, v8}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v8
@@ -470,13 +419,11 @@
 
     goto :goto_1
 
-    .line 51
     :cond_e
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_lineSpacingExtra:I
 
     if-ne v8, v9, :cond_f
 
-    .line 52
     invoke-virtual {p1, v8, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v8
@@ -489,13 +436,11 @@
 
     goto :goto_1
 
-    .line 53
     :cond_f
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_drawablePadding:I
 
     if-ne v8, v9, :cond_10
 
-    .line 54
     invoke-virtual {p1, v8, v3}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v8
@@ -504,13 +449,11 @@
 
     goto :goto_1
 
-    .line 55
     :cond_10
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_textColorHint:I
 
     if-ne v8, v9, :cond_11
 
-    .line 56
     invoke-virtual {p1, v8, v3}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result v8
@@ -519,18 +462,15 @@
 
     goto :goto_1
 
-    .line 57
     :cond_11
     sget v9, Lcom/qmuiteam/qmui/R$styleable;->QMUITextCommonStyleDef_android_textStyle:I
 
     if-ne v8, v9, :cond_12
 
-    .line 58
     invoke-virtual {p1, v8, v10}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v8
 
-    .line 59
     invoke-virtual {p0, v2, v8}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;I)V
 
     :cond_12
@@ -539,11 +479,9 @@
 
     goto/16 :goto_0
 
-    .line 60
     :cond_13
     invoke-virtual {p0, v1, v5, v4, v6}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    .line 61
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -552,19 +490,16 @@
 .method public static b(Landroid/content/res/Resources$Theme;I)F
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
     sput-object v0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -580,7 +515,6 @@
 
     return p0
 
-    .line 4
     :cond_1
     sget-object p0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -594,19 +528,16 @@
 .method public static b(Landroid/content/Context;I)I
     .locals 3
 
-    .line 14
     sget-object v0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
     if-nez v0, :cond_0
 
-    .line 15
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
     sput-object v0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
-    .line 16
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
@@ -626,7 +557,6 @@
 
     return p0
 
-    .line 17
     :cond_1
     sget-object p1, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -654,20 +584,17 @@
 
     return-object v0
 
-    .line 5
     :cond_0
     sget-object v1, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
     if-nez v1, :cond_1
 
-    .line 6
     new-instance v1, Landroid/util/TypedValue;
 
     invoke-direct {v1}, Landroid/util/TypedValue;-><init>()V
 
     sput-object v1, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
-    .line 7
     :cond_1
     sget-object v1, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -681,7 +608,6 @@
 
     return-object v0
 
-    .line 8
     :cond_2
     sget-object p2, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -695,7 +621,6 @@
 
     if-gt p2, v1, :cond_3
 
-    .line 9
     new-instance p0, Landroid/graphics/drawable/ColorDrawable;
 
     sget-object p1, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
@@ -706,7 +631,6 @@
 
     return-object p0
 
-    .line 10
     :cond_3
     sget-object p2, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -716,7 +640,6 @@
 
     if-ne v1, v2, :cond_4
 
-    .line 11
     iget p2, p2, Landroid/util/TypedValue;->data:I
 
     invoke-static {p0, p1, p2}, Lcom/qmuiteam/qmui/util/i;->b(Landroid/content/Context;Landroid/content/res/Resources$Theme;I)Landroid/graphics/drawable/Drawable;
@@ -725,13 +648,11 @@
 
     return-object p0
 
-    .line 12
     :cond_4
     iget p1, p2, Landroid/util/TypedValue;->resourceId:I
 
     if-eqz p1, :cond_5
 
-    .line 13
     invoke-static {p0, p1}, Lcom/qmuiteam/qmui/util/e;->a(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
@@ -747,7 +668,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object v0
@@ -762,7 +682,6 @@
 .method public static d(Landroid/content/Context;I)F
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p0
@@ -779,19 +698,16 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
     sput-object v0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
@@ -811,7 +727,6 @@
 
     return-object p1
 
-    .line 4
     :cond_1
     sget-object p0, Lcom/qmuiteam/qmui/util/i;->a:Landroid/util/TypedValue;
 
@@ -821,7 +736,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     invoke-interface {p0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 

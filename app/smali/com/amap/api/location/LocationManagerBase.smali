@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/location/LocationManagerBase;
 .super Ljava/lang/Object;
-.source "LocationManagerBase.java"
 
 
 # virtual methods

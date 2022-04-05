@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/RegisterFragment$c;
 .super Ljava/lang/Object;
-.source "RegisterFragment.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/RegisterFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$c;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$c;->a:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->A()V

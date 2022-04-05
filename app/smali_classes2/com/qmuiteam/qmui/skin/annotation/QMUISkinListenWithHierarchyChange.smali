@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/skin/annotation/QMUISkinListenWithHierarchyChange;
 .super Ljava/lang/Object;
-.source "QMUISkinListenWithHierarchyChange.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

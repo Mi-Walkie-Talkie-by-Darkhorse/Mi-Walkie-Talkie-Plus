@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/d/e;
 .super Ljava/lang/Object;
-.source "ServiceClient.java"
 
 
 # static fields
@@ -11,12 +10,10 @@
 .method public static a()Lcom/ifengyu/intercom/lite/d/g/a;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/d/e;->a:Lcom/ifengyu/intercom/lite/d/g/a;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/lite/d/d;->a()Lretrofit2/Retrofit;
 
     move-result-object v0
@@ -31,7 +28,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/lite/d/e;->a:Lcom/ifengyu/intercom/lite/d/g/a;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/lite/d/e;->a:Lcom/ifengyu/intercom/lite/d/g/a;
 

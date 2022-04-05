@@ -1,13 +1,11 @@
 .class public Lcom/nostra13/universalimageloader/cache/memory/impl/WeakMemoryCache;
 .super Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;
-.source "WeakMemoryCache.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V

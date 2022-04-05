@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ReplayFunction;
 .super Ljava/lang/Object;
-.source "ObservableInternalHelper.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;
@@ -67,13 +66,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ReplayFunction;->selector:Lio/reactivex/functions/Function;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ReplayFunction;->scheduler:Lio/reactivex/Scheduler;
 
     return-void
@@ -99,7 +95,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ReplayFunction;->selector:Lio/reactivex/functions/Function;
 
     invoke-interface {v0, p1}, Lio/reactivex/functions/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
@@ -114,7 +109,6 @@
 
     check-cast p1, Lio/reactivex/ObservableSource;
 
-    .line 3
     invoke-static {p1}, Lio/reactivex/Observable;->wrap(Lio/reactivex/ObservableSource;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -136,7 +130,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Lio/reactivex/Observable;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ReplayFunction;->apply(Lio/reactivex/Observable;)Lio/reactivex/ObservableSource;

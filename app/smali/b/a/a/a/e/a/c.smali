@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/a/c;
 .super Ljava/lang/Object;
-.source "BubbleDataProvider.java"
 
 # interfaces
 .implements Lb/a/a/a/e/a/b;

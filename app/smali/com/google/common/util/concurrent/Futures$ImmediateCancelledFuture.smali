@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/Futures$ImmediateCancelledFuture;
 .super Lcom/google/common/util/concurrent/Futures$ImmediateFuture;
-.source "Futures.java"
 
 
 # annotations
@@ -34,10 +33,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/Futures$ImmediateFuture;-><init>(Lcom/google/common/util/concurrent/Futures$1;)V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/CancellationException;
 
     const-string v1, "Immediate cancelled future."
@@ -59,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$ImmediateCancelledFuture;->thrown:Ljava/util/concurrent/CancellationException;
 
     const-string v1, "Task was cancelled."

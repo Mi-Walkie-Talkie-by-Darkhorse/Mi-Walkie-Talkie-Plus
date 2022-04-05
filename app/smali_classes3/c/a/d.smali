@@ -1,6 +1,5 @@
 .class public interface abstract Lc/a/d;
 .super Ljava/lang/Object;
-.source "Subscription.java"
 
 
 # virtual methods

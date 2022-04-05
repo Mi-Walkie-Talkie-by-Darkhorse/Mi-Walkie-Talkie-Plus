@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/TransitionRes;
 .super Ljava/lang/Object;
-.source "TransitionRes.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

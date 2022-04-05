@@ -1,6 +1,5 @@
 .class Lcom/google/protobuf/LiteralByteString$LiteralByteIterator;
 .super Ljava/lang/Object;
-.source "LiteralByteString.java"
 
 # interfaces
 .implements Lcom/google/protobuf/ByteString$ByteIterator;
@@ -29,17 +28,14 @@
 .method private constructor <init>(Lcom/google/protobuf/LiteralByteString;)V
     .locals 1
 
-    .line 2
     iput-object p1, p0, Lcom/google/protobuf/LiteralByteString$LiteralByteIterator;->this$0:Lcom/google/protobuf/LiteralByteString;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/google/protobuf/LiteralByteString$LiteralByteIterator;->position:I
 
-    .line 4
     invoke-virtual {p1}, Lcom/google/protobuf/LiteralByteString;->size()I
 
     move-result p1
@@ -52,7 +48,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/LiteralByteString;Lcom/google/protobuf/LiteralByteString$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/protobuf/LiteralByteString$LiteralByteIterator;-><init>(Lcom/google/protobuf/LiteralByteString;)V
 
     return-void
@@ -63,7 +58,6 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/LiteralByteString$LiteralByteIterator;->position:I
 
     iget v1, p0, Lcom/google/protobuf/LiteralByteString$LiteralByteIterator;->limit:I
@@ -84,7 +78,6 @@
 .method public next()Ljava/lang/Byte;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString$LiteralByteIterator;->nextByte()B
 
     move-result v0
@@ -99,7 +92,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/LiteralByteString$LiteralByteIterator;->next()Ljava/lang/Byte;
 
     move-result-object v0
@@ -110,7 +102,6 @@
 .method public nextByte()B
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/google/protobuf/LiteralByteString$LiteralByteIterator;->this$0:Lcom/google/protobuf/LiteralByteString;
 
@@ -131,7 +122,6 @@
     :catch_0
     move-exception v0
 
-    .line 2
     new-instance v1, Ljava/util/NoSuchElementException;
 
     invoke-virtual {v0}, Ljava/lang/ArrayIndexOutOfBoundsException;->getMessage()Ljava/lang/String;
@@ -146,7 +136,6 @@
 .method public remove()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V

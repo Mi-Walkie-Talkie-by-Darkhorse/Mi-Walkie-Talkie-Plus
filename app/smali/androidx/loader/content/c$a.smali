@@ -1,6 +1,5 @@
 .class public final Landroidx/loader/content/c$a;
 .super Landroid/database/ContentObserver;
-.source "Loader.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Landroidx/loader/content/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/loader/content/c$a;->a:Landroidx/loader/content/c;
 
-    .line 2
     new-instance p1, Landroid/os/Handler;
 
     invoke-direct {p1}, Landroid/os/Handler;-><init>()V
@@ -48,7 +45,6 @@
 .method public onChange(Z)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Landroidx/loader/content/c$a;->a:Landroidx/loader/content/c;
 
     invoke-virtual {p1}, Landroidx/loader/content/c;->l()V

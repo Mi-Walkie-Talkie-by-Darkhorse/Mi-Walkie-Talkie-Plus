@@ -1,13 +1,11 @@
 .class public Lorg/osmdroid/tileprovider/tilesource/QuadTreeTileSource;
 .super Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
-.source "QuadTreeTileSource.java"
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct/range {p0 .. p6}, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;-><init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;)V
 
     return-void
@@ -18,7 +16,6 @@
 .method public getTileURLString(Lorg/osmdroid/tileprovider/MapTile;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -49,12 +46,10 @@
 .method protected quadTree(Lorg/osmdroid/tileprovider/MapTile;)Ljava/lang/String;
     .locals 6
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getZoomLevel()I
 
     move-result v1
@@ -70,7 +65,6 @@
 
     shl-int v3, v4, v3
 
-    .line 3
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getX()I
 
     move-result v5
@@ -81,7 +75,6 @@
 
     const/4 v2, 0x1
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getY()I
 
@@ -93,7 +86,6 @@
 
     add-int/lit8 v2, v2, 0x2
 
-    .line 5
     :cond_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -115,7 +107,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_2
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

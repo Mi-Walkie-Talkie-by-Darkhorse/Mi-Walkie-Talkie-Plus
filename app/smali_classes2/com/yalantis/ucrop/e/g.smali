@@ -1,6 +1,5 @@
 .class public Lcom/yalantis/ucrop/e/g;
 .super Ljava/lang/Object;
-.source "RectUtils.java"
 
 
 # direct methods
@@ -11,7 +10,6 @@
 
     new-array v0, v0, [F
 
-    .line 3
     invoke-virtual {p0}, Landroid/graphics/RectF;->centerX()F
 
     move-result v1
@@ -40,7 +38,6 @@
 
     const/4 v2, 0x0
 
-    .line 1
     aget v3, p0, v2
 
     aget v4, p0, v0
@@ -91,7 +88,6 @@
 
     float-to-double v2, v0
 
-    .line 2
     invoke-static {v2, v3, v5, v6}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v2
@@ -126,7 +122,6 @@
 .method public static b([F)Landroid/graphics/RectF;
     .locals 6
 
-    .line 2
     new-instance v0, Landroid/graphics/RectF;
 
     const/high16 v1, -0x800000    # Float.NEGATIVE_INFINITY
@@ -137,7 +132,6 @@
 
     const/4 v1, 0x1
 
-    .line 3
     :goto_0
     array-length v2, p0
 
@@ -145,7 +139,6 @@
 
     add-int/lit8 v2, v1, -0x1
 
-    .line 4
     aget v2, p0, v2
 
     const/high16 v3, 0x41200000    # 10.0f
@@ -160,7 +153,6 @@
 
     div-float/2addr v2, v3
 
-    .line 5
     aget v4, p0, v1
 
     mul-float v4, v4, v3
@@ -173,7 +165,6 @@
 
     div-float/2addr v4, v3
 
-    .line 6
     iget v3, v0, Landroid/graphics/RectF;->left:F
 
     cmpg-float v5, v2, v3
@@ -185,7 +176,6 @@
     :cond_0
     iput v3, v0, Landroid/graphics/RectF;->left:F
 
-    .line 7
     iget v3, v0, Landroid/graphics/RectF;->top:F
 
     cmpg-float v5, v4, v3
@@ -197,7 +187,6 @@
     :cond_1
     iput v3, v0, Landroid/graphics/RectF;->top:F
 
-    .line 8
     iget v3, v0, Landroid/graphics/RectF;->right:F
 
     cmpl-float v5, v2, v3
@@ -212,7 +201,6 @@
     :goto_1
     iput v2, v0, Landroid/graphics/RectF;->right:F
 
-    .line 9
     iget v2, v0, Landroid/graphics/RectF;->bottom:F
 
     cmpl-float v3, v4, v2
@@ -231,7 +219,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_4
     invoke-virtual {v0}, Landroid/graphics/RectF;->sort()V
 
@@ -245,7 +232,6 @@
 
     new-array v0, v0, [F
 
-    .line 1
     iget v1, p0, Landroid/graphics/RectF;->left:F
 
     const/4 v2, 0x0

@@ -1,13 +1,11 @@
 .class public final Lcom/ifengyu/library/a/i;
 .super Ljava/lang/Object;
-.source "RegexUtils.java"
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, La/b/g;
 
     invoke-direct {v0}, La/b/g;-><init>()V
@@ -20,7 +18,6 @@
 
     const-string v0, "^[1]\\d{10}$"
 
-    .line 1
     invoke-static {v0, p0}, Lcom/ifengyu/library/a/i;->a(Ljava/lang/String;Ljava/lang/CharSequence;)Z
 
     move-result p0
@@ -33,7 +30,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -62,7 +58,6 @@
 
     const-string v0, "^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]+$"
 
-    .line 1
     invoke-static {v0, p0}, Lcom/ifengyu/library/a/i;->a(Ljava/lang/String;Ljava/lang/CharSequence;)Z
 
     move-result p0

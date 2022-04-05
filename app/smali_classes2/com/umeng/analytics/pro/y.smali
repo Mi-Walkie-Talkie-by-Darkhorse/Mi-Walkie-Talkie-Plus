@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/analytics/pro/y;
 .super Ljava/lang/Object;
-.source "IDeviceIdSupplier.java"
 
 
 # virtual methods

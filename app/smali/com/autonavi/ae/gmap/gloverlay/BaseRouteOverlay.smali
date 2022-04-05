@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gloverlay/BaseRouteOverlay;
 .super Lcom/autonavi/ae/gmap/gloverlay/BaseMapOverlay;
-.source "BaseRouteOverlay.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>(ILandroid/content/Context;Lcom/autonavi/amap/mapcore/interfaces/IAMap;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/autonavi/ae/gmap/gloverlay/BaseMapOverlay;-><init>(ILandroid/content/Context;Lcom/autonavi/amap/mapcore/interfaces/IAMap;)V
 
     return-void
@@ -35,7 +33,6 @@
 .method public addRouteItem(I[Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty;ZJI)V
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/BaseMapOverlay;->mGLOverlay:Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;
 
     if-eqz v0, :cond_0
@@ -52,7 +49,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/BaseMapOverlay;->mGLOverlay:Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;
 
     move-object v1, v0
@@ -80,7 +76,6 @@
 .method protected iniGLOverlay()V
     .locals 4
 
-    .line 1
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;
 
     iget v1, p0, Lcom/autonavi/ae/gmap/gloverlay/BaseMapOverlay;->mEngineID:I
@@ -103,10 +98,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/autonavi/ae/gmap/gloverlay/BaseMapOverlay;->setVisible(Z)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/gloverlay/BaseMapOverlay;->releaseInstance()V
 
     return-void
@@ -115,7 +108,6 @@
 .method public removeRouteName()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/BaseMapOverlay;->mGLOverlay:Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;
 
     if-eqz v0, :cond_0
@@ -132,7 +124,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/BaseMapOverlay;->mGLOverlay:Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;
 
     check-cast v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;

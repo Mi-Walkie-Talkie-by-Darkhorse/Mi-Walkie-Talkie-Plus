@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/fc;
 .super Ljava/lang/Object;
-.source "AMapLocationClient.java"
 
 
 # instance fields

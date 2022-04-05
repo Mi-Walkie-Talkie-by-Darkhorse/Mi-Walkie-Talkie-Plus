@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/time/ExperimentalTime;
 .super Ljava/lang/Object;
-.source "ExperimentalTime.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/c$d;
 .super Landroid/os/Handler;
-.source "ProGuard"
 
 
 # annotations
@@ -24,13 +23,10 @@
 .method public constructor <init>(Lcom/tencent/open/c;Lcom/tencent/open/c$c;Landroid/os/Looper;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/c$d;->a:Lcom/tencent/open/c;
 
-    .line 2
     invoke-direct {p0, p3}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 3
     iput-object p2, p0, Lcom/tencent/open/c$d;->b:Lcom/tencent/open/c$c;
 
     return-void
@@ -41,7 +37,6 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -62,7 +57,6 @@
 
     invoke-static {v1, v0}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x1
@@ -83,7 +77,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/tencent/open/c$d;->a:Lcom/tencent/open/c;
 
@@ -105,7 +98,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 4
     iget-object v0, p0, Lcom/tencent/open/c$d;->a:Lcom/tencent/open/c;
 
     invoke-static {v0}, Lcom/tencent/open/c;->a(Lcom/tencent/open/c;)Ljava/lang/ref/WeakReference;
@@ -126,7 +118,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/tencent/open/c$d;->a:Lcom/tencent/open/c;
 
@@ -148,7 +139,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 6
     iget-object v0, p0, Lcom/tencent/open/c$d;->a:Lcom/tencent/open/c;
 
     invoke-static {v0}, Lcom/tencent/open/c;->a(Lcom/tencent/open/c;)Ljava/lang/ref/WeakReference;
@@ -169,7 +159,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     iget-object p1, p0, Lcom/tencent/open/c$d;->b:Lcom/tencent/open/c$c;
 
@@ -177,7 +166,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_3
     iget-object v0, p0, Lcom/tencent/open/c$d;->b:Lcom/tencent/open/c$c;
 

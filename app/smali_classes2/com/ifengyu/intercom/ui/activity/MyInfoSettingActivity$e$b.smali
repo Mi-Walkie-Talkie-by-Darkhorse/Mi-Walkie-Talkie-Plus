@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e$b;
 .super Ljava/lang/Object;
-.source "MyInfoSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e$b;->a:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e$b;->a:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e;->c:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->M()Ljava/lang/String;
 
     move-result-object v0
@@ -56,7 +52,6 @@
 
     const-string v2, "null"
 
-    .line 3
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -79,7 +74,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e$b;->a:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e;
 
@@ -121,7 +115,6 @@
 
     goto :goto_2
 
-    .line 5
     :cond_2
     :goto_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e$b;->a:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e;
@@ -144,7 +137,6 @@
 
     goto :goto_2
 
-    .line 6
     :cond_3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e$b;->a:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$e;
 

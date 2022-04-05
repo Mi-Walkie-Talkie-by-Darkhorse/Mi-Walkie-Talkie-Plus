@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lno/nordicsemi/android/ble/annotation/PhyValue;
 .super Ljava/lang/Object;
-.source "PhyValue.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

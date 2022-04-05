@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$u;
 .super Ljava/lang/Object;
-.source "MapFragment.java"
 
 # interfaces
 .implements Landroidx/lifecycle/q;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$u;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public a(Lcom/ifengyu/intercom/lite/dto/UpgradeInfoDTO;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$u;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->e0:Lcom/ifengyu/intercom/lite/h/h0;
@@ -68,7 +65,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$u;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->s(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)Lcom/ifengyu/intercom/ui/fragment/MapFragment$x;
@@ -79,7 +75,6 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/dto/UpgradeInfoDTO;->e()I
 
     move-result v0
@@ -96,7 +91,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$u;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->a(Lcom/ifengyu/intercom/ui/fragment/MapFragment;Lcom/ifengyu/intercom/lite/dto/UpgradeInfoDTO;)V
@@ -108,7 +102,6 @@
 .method public bridge synthetic onChanged(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/lite/dto/UpgradeInfoDTO;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/fragment/MapFragment$u;->a(Lcom/ifengyu/intercom/lite/dto/UpgradeInfoDTO;)V

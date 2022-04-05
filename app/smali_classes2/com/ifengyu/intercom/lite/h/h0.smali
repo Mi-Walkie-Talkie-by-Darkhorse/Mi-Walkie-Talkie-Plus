@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/h/h0;
 .super Landroidx/lifecycle/a;
-.source "LiteViewModel.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/lite/e/g/a;
@@ -123,87 +122,74 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/lifecycle/a;-><init>(Landroid/app/Application;)V
 
-    .line 2
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->b:Landroidx/lifecycle/p;
 
-    .line 3
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->c:Landroidx/lifecycle/p;
 
-    .line 4
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->d:Landroidx/lifecycle/p;
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->e:Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;
 
-    .line 6
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->f:Landroidx/lifecycle/p;
 
-    .line 7
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->g:Landroidx/lifecycle/p;
 
-    .line 8
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->h:Landroidx/lifecycle/p;
 
-    .line 9
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->i:Landroidx/lifecycle/p;
 
-    .line 10
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->j:Landroidx/lifecycle/p;
 
-    .line 11
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->m:Ljava/util/List;
 
-    .line 12
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/e/f;->a(Landroid/content/Context;)Lcom/ifengyu/intercom/lite/e/f;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
-    .line 13
     invoke-virtual {p1, p0}, Lcom/ifengyu/blelib/b/e;->a(Lcom/ifengyu/blelib/c/b;)V
 
     return-void
@@ -212,7 +198,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/lite/models/ChannelModel;Lcom/ifengyu/intercom/lite/models/ChannelModel;)I
     .locals 0
 
-    .line 11
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getChannelSeq()I
 
     move-result p0
@@ -229,7 +214,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/lite/h/h0;)Landroidx/lifecycle/p;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/lite/h/h0;->b:Landroidx/lifecycle/p;
 
     return-object p0
@@ -238,7 +222,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/lite/h/h0;)Landroidx/lifecycle/p;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/lite/h/h0;->c:Landroidx/lifecycle/p;
 
     return-object p0
@@ -252,7 +235,6 @@
         }
     .end annotation
 
-    .line 19
     sget-object v0, Lcom/ifengyu/intercom/lite/h/h0;->n:Ljava/lang/String;
 
     const-string v1, "load device from db failed"
@@ -265,7 +247,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/lite/h/h0;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/lite/h/h0;->m:Ljava/util/List;
 
     return-object p0
@@ -290,7 +271,6 @@
         }
     .end annotation
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/lite/h/h0;->n:Ljava/lang/String;
 
     const-string v1, "update device to db failed"
@@ -303,7 +283,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/lite/h/h0;)Landroidx/lifecycle/p;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/lite/h/h0;->d:Landroidx/lifecycle/p;
 
     return-object p0
@@ -312,7 +291,6 @@
 .method static synthetic e(Lcom/ifengyu/intercom/lite/h/h0;)Landroidx/lifecycle/p;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/lite/h/h0;->g:Landroidx/lifecycle/p;
 
     return-object p0
@@ -321,7 +299,6 @@
 .method static synthetic f(Lcom/ifengyu/intercom/lite/h/h0;)Landroidx/lifecycle/p;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/lite/h/h0;->j:Landroidx/lifecycle/p;
 
     return-object p0
@@ -330,7 +307,6 @@
 .method static synthetic g(Lcom/ifengyu/intercom/lite/h/h0;)Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/lite/h/h0;->e:Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;
 
     return-object p0
@@ -339,7 +315,6 @@
 .method static synthetic o()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/h/h0;->n:Ljava/lang/String;
 
     return-object v0
@@ -348,12 +323,10 @@
 .method private p()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->l:Landroid/bluetooth/BluetoothDevice;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-virtual {v1, v0}, Lno/nordicsemi/android/ble/u1;->d(Landroid/bluetooth/BluetoothDevice;)Lno/nordicsemi/android/ble/b2;
@@ -364,22 +337,18 @@
 
     const/16 v2, 0xc8
 
-    .line 3
     invoke-virtual {v0, v1, v2}, Lno/nordicsemi/android/ble/b2;->a(II)Lno/nordicsemi/android/ble/b2;
 
     const/4 v1, 0x1
 
-    .line 4
     invoke-virtual {v0, v1}, Lno/nordicsemi/android/ble/b2;->a(Z)Lno/nordicsemi/android/ble/b2;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/a0;
 
     invoke-direct {v1, p0}, Lcom/ifengyu/intercom/lite/h/a0;-><init>(Lcom/ifengyu/intercom/lite/h/h0;)V
 
-    .line 5
     invoke-virtual {v0, v1}, Lno/nordicsemi/android/ble/b2;->a(Lno/nordicsemi/android/ble/u2/d;)Lno/nordicsemi/android/ble/b2;
 
-    .line 6
     invoke-virtual {v0}, Lno/nordicsemi/android/ble/p2;->a()V
 
     :cond_0
@@ -396,7 +365,6 @@
         }
     .end annotation
 
-    .line 27
     invoke-virtual {p0}, Landroidx/lifecycle/a;->a()Landroid/app/Application;
 
     move-result-object v0
@@ -409,7 +377,6 @@
 
     move-result-object v0
 
-    .line 28
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object p1
@@ -420,10 +387,8 @@
 
     if-eqz p1, :cond_0
 
-    .line 29
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/lite/models/DeviceModel;->setName(Ljava/lang/String;)V
 
-    .line 30
     invoke-interface {v0, p1}, Lcom/ifengyu/intercom/lite/f/e;->b(Lcom/ifengyu/intercom/lite/models/DeviceModel;)V
 
     :cond_0
@@ -437,7 +402,6 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/h/h0;->f:Landroidx/lifecycle/p;
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -446,7 +410,6 @@
 
     invoke-virtual {v1, v0}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->h:Landroidx/lifecycle/p;
 
@@ -476,7 +439,6 @@
         .end annotation
     .end param
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/h0;->f:Landroidx/lifecycle/p;
 
     const/4 p2, 0x0
@@ -487,7 +449,6 @@
 
     invoke-virtual {p1, p2}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/lite/utils/j;->a()Lcom/ifengyu/intercom/lite/utils/j;
 
     move-result-object p1
@@ -514,7 +475,6 @@
         .end annotation
     .end param
 
-    .line 6
     invoke-virtual {p2}, Lcom/ifengyu/blelib/d/c;->a()I
 
     move-result p1
@@ -523,24 +483,20 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 7
     invoke-virtual {p2}, Lcom/ifengyu/blelib/d/c;->b()Lcom/google/protobuf/Message;
 
     move-result-object p1
 
     check-cast p1, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;
 
-    .line 8
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfoResponse;->getChannelInfo()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;
 
     move-result-object p1
 
-    .line 9
     new-instance p2, Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-direct {p2, p1}, Lcom/ifengyu/intercom/lite/models/ChannelModel;-><init>(Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;)V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/h0;->b:Landroidx/lifecycle/p;
 
     invoke-virtual {p1, p2}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
@@ -552,12 +508,10 @@
 .method public a(Lcom/ifengyu/intercom/lite/models/ChannelModel;)V
     .locals 7
 
-    .line 12
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->toChannelInfo()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;
 
     move-result-object p1
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;->getSeq()I
@@ -599,7 +553,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 25
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->i:Landroidx/lifecycle/p;
 
     invoke-virtual {v0, p1}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
@@ -611,7 +564,6 @@
 .method public a(Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;)V
     .locals 2
 
-    .line 32
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/h0$b;
@@ -626,7 +578,6 @@
 .method public a(Ljava/lang/Long;)V
     .locals 2
 
-    .line 18
     invoke-static {p1}, Lio/reactivex/Observable;->just(Ljava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -635,19 +586,16 @@
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/h/t;-><init>(Lcom/ifengyu/intercom/lite/h/h0;)V
 
-    .line 19
     invoke-virtual {p1, v0}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
 
     sget-object v0, Lcom/ifengyu/intercom/lite/h/d0;->a:Lcom/ifengyu/intercom/lite/h/d0;
 
-    .line 20
     invoke-virtual {p1, v0}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
 
-    .line 21
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->io()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -664,7 +612,6 @@
 
     invoke-direct {v1, p0}, Lcom/ifengyu/intercom/lite/h/b0;-><init>(Lcom/ifengyu/intercom/lite/h/h0;)V
 
-    .line 22
     invoke-virtual {p1, v0, v1}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
     return-void
@@ -673,7 +620,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 2
 
-    .line 26
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/h0$l;
@@ -693,7 +639,6 @@
         }
     .end annotation
 
-    .line 23
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->j:Landroidx/lifecycle/p;
 
     const v1, 0x7f110191
@@ -704,7 +649,6 @@
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
 
-    .line 24
     sget-object v0, Lcom/ifengyu/intercom/lite/h/h0;->n:Ljava/lang/String;
 
     const-string v1, "import config file failed"
@@ -725,14 +669,12 @@
         }
     .end annotation
 
-    .line 14
     invoke-interface {p1}, Ljava/util/Queue;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/h0;->j:Landroidx/lifecycle/p;
 
     const/4 v0, 0x0
@@ -741,7 +683,6 @@
 
     return-void
 
-    .line 16
     :cond_0
     invoke-interface {p1}, Ljava/util/Queue;->remove()Ljava/lang/Object;
 
@@ -749,7 +690,6 @@
 
     check-cast v0, Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
-    .line 17
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->toChannelInfo()Lcom/ifengyu/intercom/protos/LiteProtos$ChannelInfo;
@@ -768,7 +708,6 @@
 .method public a(Z)V
     .locals 2
 
-    .line 31
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/h0$m;
@@ -788,7 +727,6 @@
         }
     .end annotation
 
-    .line 17
     invoke-virtual {p0}, Landroidx/lifecycle/a;->a()Landroid/app/Application;
 
     move-result-object v0
@@ -801,7 +739,6 @@
 
     move-result-object v0
 
-    .line 18
     invoke-interface {v0, p1}, Lcom/ifengyu/intercom/lite/f/a;->a(Ljava/lang/Long;)Ljava/util/List;
 
     move-result-object p1
@@ -814,10 +751,8 @@
 
     const/4 v0, 0x0
 
-    .line 6
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->l:Landroid/bluetooth/BluetoothDevice;
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-virtual {v0}, Lno/nordicsemi/android/ble/u1;->f()I
@@ -828,12 +763,10 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-virtual {v0}, Lcom/ifengyu/blelib/b/e;->m()V
 
-    .line 9
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
@@ -853,12 +786,10 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->m:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 11
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/lite/a/a;->c()I
 
@@ -868,22 +799,18 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 12
     invoke-static {}, Lcom/ifengyu/intercom/lite/a/a;->b()Ljava/util/List;
 
     move-result-object p1
 
-    .line 13
     sget-object v0, Lcom/ifengyu/intercom/lite/h/v;->a:Lcom/ifengyu/intercom/lite/h/v;
 
     invoke-static {p1, v0}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->m:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/h0;->c:Landroidx/lifecycle/p;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->m:Ljava/util/List;
@@ -892,7 +819,6 @@
 
     return-void
 
-    .line 16
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
@@ -922,7 +848,6 @@
         .end annotation
     .end param
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/h0;->f:Landroidx/lifecycle/p;
 
     const/4 p2, 0x0
@@ -933,7 +858,6 @@
 
     invoke-virtual {p1, p2}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/h0;->h:Landroidx/lifecycle/p;
 
     const/4 p2, 0x7
@@ -944,7 +868,6 @@
 
     invoke-virtual {p1, v0}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/lite/utils/j;->a()Lcom/ifengyu/intercom/lite/utils/j;
 
     move-result-object p1
@@ -955,7 +878,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/utils/j;->a(Ljava/lang/Object;)V
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/lite/utils/j;->a()Lcom/ifengyu/intercom/lite/utils/j;
 
     move-result-object p1
@@ -974,7 +896,6 @@
 .method public b(Ljava/lang/String;)V
     .locals 2
 
-    .line 20
     invoke-virtual {p0}, Landroidx/lifecycle/a;->a()Landroid/app/Application;
 
     move-result-object v0
@@ -989,7 +910,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 21
     invoke-static {p1}, Lio/reactivex/Observable;->just(Ljava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -998,12 +918,10 @@
 
     invoke-direct {v1, p0, v0}, Lcom/ifengyu/intercom/lite/h/z;-><init>(Lcom/ifengyu/intercom/lite/h/h0;Landroid/bluetooth/BluetoothDevice;)V
 
-    .line 22
     invoke-virtual {p1, v1}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
 
-    .line 23
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->io()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -1016,7 +934,6 @@
 
     sget-object v1, Lcom/ifengyu/intercom/lite/h/y;->a:Lcom/ifengyu/intercom/lite/h/y;
 
-    .line 24
     invoke-virtual {p1, v0, v1}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
     :cond_0
@@ -1026,7 +943,6 @@
 .method public b(Z)V
     .locals 2
 
-    .line 25
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/h0$e;
@@ -1049,7 +965,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->j:Landroidx/lifecycle/p;
 
     return-object v0
@@ -1058,7 +973,6 @@
 .method public c(I)V
     .locals 2
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/h0$d;
@@ -1083,7 +997,6 @@
 .method public synthetic c(Landroid/bluetooth/BluetoothDevice;I)V
     .locals 3
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/lite/h/h0;->n:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1112,7 +1025,6 @@
 
     invoke-static {v0, p1}, Lcom/ifengyu/blelib/a;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/h0;->h:Landroidx/lifecycle/p;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1127,7 +1039,6 @@
 .method public c(Z)V
     .locals 2
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/h0$c;
@@ -1142,7 +1053,6 @@
 .method public d()Lcom/ifengyu/intercom/lite/e/f;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     return-object v0
@@ -1151,7 +1061,6 @@
 .method public d(I)V
     .locals 2
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/h0$k;
@@ -1170,10 +1079,8 @@
         .end annotation
     .end param
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/h/h0;->l:Landroid/bluetooth/BluetoothDevice;
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/h/h0;->p()V
 
     return-void
@@ -1182,7 +1089,6 @@
 .method public d(Z)V
     .locals 2
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/h0$a;
@@ -1205,7 +1111,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->d:Landroidx/lifecycle/p;
 
     return-object v0
@@ -1219,7 +1124,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p0}, Landroidx/lifecycle/a;->a()Landroid/app/Application;
 
     move-result-object v0
@@ -1232,7 +1136,6 @@
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object p1
@@ -1256,7 +1159,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->c:Landroidx/lifecycle/p;
 
     return-object v0
@@ -1283,7 +1185,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->b:Landroidx/lifecycle/p;
 
     return-object v0
@@ -1300,7 +1201,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->i:Landroidx/lifecycle/p;
 
     return-object v0
@@ -1309,7 +1209,6 @@
 .method public i()Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->e:Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;
 
     return-object v0
@@ -1326,7 +1225,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->g:Landroidx/lifecycle/p;
 
     return-object v0
@@ -1343,7 +1241,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->f:Landroidx/lifecycle/p;
 
     return-object v0
@@ -1352,7 +1249,6 @@
 .method public l()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/h0$f;
@@ -1367,7 +1263,6 @@
 .method public m()V
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Landroidx/lifecycle/a;->a()Landroid/app/Application;
 
     move-result-object v0
@@ -1382,7 +1277,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {v0}, Lio/reactivex/Observable;->just(Ljava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object v0
@@ -1391,12 +1285,10 @@
 
     invoke-direct {v1, p0}, Lcom/ifengyu/intercom/lite/h/u;-><init>(Lcom/ifengyu/intercom/lite/h/h0;)V
 
-    .line 3
     invoke-virtual {v0, v1}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object v0
 
-    .line 4
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->io()Lio/reactivex/Scheduler;
 
     move-result-object v1
@@ -1411,7 +1303,6 @@
 
     sget-object v2, Lcom/ifengyu/intercom/lite/h/c0;->a:Lcom/ifengyu/intercom/lite/h/c0;
 
-    .line 5
     invoke-virtual {v0, v1, v2}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
     :cond_0
@@ -1421,7 +1312,6 @@
 .method public n()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/h0$j;
@@ -1436,17 +1326,14 @@
 .method protected onCleared()V
     .locals 2
 
-    .line 1
     invoke-super {p0}, Landroidx/lifecycle/v;->onCleared()V
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/lite/h/h0;->n:Ljava/lang/String;
 
     const-string v1, "onCleared"
 
     invoke-static {v0, v1}, Lcom/ifengyu/blelib/a;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/h0;->k:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-virtual {v0, p0}, Lcom/ifengyu/blelib/b/e;->b(Lcom/ifengyu/blelib/c/b;)V

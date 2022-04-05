@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/tabs/TabLayout$Mode;
 .super Ljava/lang/Object;
-.source "TabLayout.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

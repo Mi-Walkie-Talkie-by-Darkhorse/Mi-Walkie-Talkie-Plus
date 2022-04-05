@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/sina/weibo/sdk/component/view/ResizeableLayout$a;
 .super Ljava/lang/Object;
-.source "ResizeableLayout.java"
 
 
 # annotations

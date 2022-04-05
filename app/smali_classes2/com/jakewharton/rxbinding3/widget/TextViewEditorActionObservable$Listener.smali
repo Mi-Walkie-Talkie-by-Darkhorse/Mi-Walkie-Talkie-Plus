@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "TextViewEditorActionObservable.kt"
 
 # interfaces
 .implements Landroid/widget/TextView$OnEditorActionListener;
@@ -125,7 +124,6 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionObservable$Listener;->view:Landroid/widget/TextView;
@@ -142,7 +140,6 @@
 .method protected onDispose()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionObservable$Listener;->view:Landroid/widget/TextView;
 
     const/4 v1, 0x0
@@ -167,7 +164,6 @@
 
     invoke-static {p1, p3}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
@@ -193,7 +189,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionObservable$Listener;->observer:Lio/reactivex/Observer;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -211,12 +206,10 @@
     :catch_0
     move-exception p1
 
-    .line 3
     iget-object p2, p0, Lcom/jakewharton/rxbinding3/widget/TextViewEditorActionObservable$Listener;->observer:Lio/reactivex/Observer;
 
     invoke-interface {p2, p1}, Lio/reactivex/Observer;->onError(Ljava/lang/Throwable;)V
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->dispose()V
 
     :cond_0

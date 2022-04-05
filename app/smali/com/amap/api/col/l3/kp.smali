@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kp;
 .super Ljava/lang/Object;
-.source "MapLocFilter.java"
 
 
 # static fields

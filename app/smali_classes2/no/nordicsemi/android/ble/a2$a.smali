@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/a2$a;
 .super Ljava/lang/Object;
-.source "ConditionalWaitRequest.java"
 
 
 # annotations

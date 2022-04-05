@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/link/QMUILinkify$i;
 .super Ljava/lang/Object;
-.source "QMUILinkify.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$c;
 .super Ljava/lang/Object;
-.source "SealSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$c;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$c;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$c;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->hasResult()Z
@@ -53,7 +50,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$c;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->getResult()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate$SEAL_ST_UERR;
@@ -64,7 +60,6 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$c;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$c;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;
@@ -73,7 +68,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$c;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
@@ -81,13 +75,11 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$c;->b:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;I)I
 
-    .line 6
     :goto_0
     invoke-static {}, Lcom/ifengyu/intercom/i/g0;->d()V
 

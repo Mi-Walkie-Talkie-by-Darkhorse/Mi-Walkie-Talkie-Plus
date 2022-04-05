@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity$a;
 .super Ljava/lang/Object;
-.source "GaoDeMapToolOperateActivity.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/AMap$OnMapLoadedListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onMapLoaded()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->b(Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;)Lcom/amap/api/maps/AMap;

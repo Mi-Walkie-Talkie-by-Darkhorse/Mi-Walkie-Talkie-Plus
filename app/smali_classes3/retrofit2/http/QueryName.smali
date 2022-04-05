@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lretrofit2/http/QueryName;
 .super Ljava/lang/Object;
-.source "QueryName.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

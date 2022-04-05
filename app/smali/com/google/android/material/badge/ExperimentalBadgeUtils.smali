@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/badge/ExperimentalBadgeUtils;
 .super Ljava/lang/Object;
-.source "ExperimentalBadgeUtils.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

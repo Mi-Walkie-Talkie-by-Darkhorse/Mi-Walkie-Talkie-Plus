@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;
 .super Lcom/google/common/collect/AbstractMultiset$EntrySet;
-.source "ConcurrentHashMultiset.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method private constructor <init>(Lcom/google/common/collect/ConcurrentHashMultiset;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->this$0:Lcom/google/common/collect/ConcurrentHashMultiset;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMultiset$EntrySet;-><init>(Lcom/google/common/collect/AbstractMultiset;)V
@@ -40,7 +38,6 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/ConcurrentHashMultiset;Lcom/google/common/collect/ConcurrentHashMultiset$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;-><init>(Lcom/google/common/collect/ConcurrentHashMultiset;)V
 
     return-void
@@ -57,7 +54,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultiset$EntrySet;->size()I
 
     move-result v0
@@ -66,7 +62,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMultiset$EntrySet;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -88,7 +83,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->this$0:Lcom/google/common/collect/ConcurrentHashMultiset;
 
     return-object v0
@@ -97,7 +91,6 @@
 .method bridge synthetic multiset()Lcom/google/common/collect/Multiset;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->multiset()Lcom/google/common/collect/ConcurrentHashMultiset;
 
     move-result-object v0
@@ -108,7 +101,6 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->snapshot()Ljava/util/List;
 
     move-result-object v0
@@ -130,7 +122,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/collect/ConcurrentHashMultiset$EntrySet;->snapshot()Ljava/util/List;
 
     move-result-object v0

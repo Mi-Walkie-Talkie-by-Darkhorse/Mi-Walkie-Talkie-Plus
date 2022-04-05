@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/api/IMapView;
 .super Ljava/lang/Object;
-.source "IMapView.java"
 
 
 # static fields

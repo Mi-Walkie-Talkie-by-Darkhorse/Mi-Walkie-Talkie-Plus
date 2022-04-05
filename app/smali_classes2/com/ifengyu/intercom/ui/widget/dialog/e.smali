@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/dialog/e;
 .super Lcom/ifengyu/intercom/ui/widget/dialog/d;
-.source "BleHadDisconnectedDialog.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;-><init>(Landroid/content/Context;)V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/e;->a:Landroid/app/Activity;
 
     return-void
@@ -31,13 +28,11 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/e;->a:Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V
 
-    .line 2
     :goto_0
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
 
@@ -55,12 +50,10 @@
 .method public onBackPressed()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/e;->a:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->finish()V
 
-    .line 2
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
 
     return-void
@@ -69,15 +62,12 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c0077
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;->setContentView(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/e;->a:Landroid/app/Activity;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;->a(Landroid/content/Context;)V
@@ -92,7 +82,6 @@
 
     aput v1, p1, v0
 
-    .line 4
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;->a([I)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/h/f0;
 .super Landroidx/lifecycle/a;
-.source "BatchConfigViewModel.java"
 
 # interfaces
 .implements Lcom/ifengyu/blelib/c/b;
@@ -48,38 +47,32 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/lifecycle/a;-><init>(Landroid/app/Application;)V
 
-    .line 2
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/f0;->c:Landroidx/lifecycle/p;
 
-    .line 3
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/f0;->d:Landroidx/lifecycle/p;
 
-    .line 4
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/f0;->e:Landroidx/lifecycle/p;
 
-    .line 5
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/e/f;->a(Landroid/content/Context;)Lcom/ifengyu/intercom/lite/e/f;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/h/f0;->b:Lcom/ifengyu/intercom/lite/e/f;
 
-    .line 6
     invoke-virtual {p1, p0}, Lcom/ifengyu/blelib/b/e;->a(Lcom/ifengyu/blelib/c/b;)V
 
     return-void
@@ -88,7 +81,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/lite/h/f0;)Lcom/ifengyu/intercom/lite/e/f;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/lite/h/f0;->b:Lcom/ifengyu/intercom/lite/e/f;
 
     return-object p0
@@ -97,7 +89,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/lite/h/f0;)Landroidx/lifecycle/p;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/lite/h/f0;->d:Landroidx/lifecycle/p;
 
     return-object p0
@@ -106,7 +97,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/lite/h/f0;)Landroidx/lifecycle/p;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/lite/h/f0;->e:Landroidx/lifecycle/p;
 
     return-object p0
@@ -145,7 +135,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-virtual {p2}, Lcom/ifengyu/blelib/d/c;->a()I
 
     move-result p1
@@ -154,24 +143,20 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 3
     invoke-virtual {p2}, Lcom/ifengyu/blelib/d/c;->b()Lcom/google/protobuf/Message;
 
     move-result-object p1
 
     check-cast p1, Lcom/ifengyu/intercom/protos/LiteProtos$BatchBrodFskResponse;
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$BatchBrodFskResponse;->getResult()Lcom/ifengyu/intercom/protos/LiteProtos$SWITCH;
 
     move-result-object p1
 
-    .line 5
     sget-object p2, Lcom/ifengyu/intercom/protos/LiteProtos$SWITCH;->ON:Lcom/ifengyu/intercom/protos/LiteProtos$SWITCH;
 
     if-ne p1, p2, :cond_0
 
-    .line 6
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/h/f0;->c()Landroidx/lifecycle/p;
 
     move-result-object p1
@@ -186,7 +171,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/h/f0;->c()Landroidx/lifecycle/p;
 
@@ -208,7 +192,6 @@
 .method public b()Lcom/ifengyu/intercom/lite/e/f;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/f0;->b:Lcom/ifengyu/intercom/lite/e/f;
 
     return-object v0
@@ -245,7 +228,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/f0;->c:Landroidx/lifecycle/p;
 
     return-object v0
@@ -272,7 +254,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/f0;->d:Landroidx/lifecycle/p;
 
     return-object v0
@@ -289,7 +270,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/f0;->e:Landroidx/lifecycle/p;
 
     return-object v0
@@ -298,7 +278,6 @@
 .method public f()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/f0;->b:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/f0$a;
@@ -323,7 +302,6 @@
 .method public g()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/f0;->b:Lcom/ifengyu/intercom/lite/e/f;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/h/f0$b;

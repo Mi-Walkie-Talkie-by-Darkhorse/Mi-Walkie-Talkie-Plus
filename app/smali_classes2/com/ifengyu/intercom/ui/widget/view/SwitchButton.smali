@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;
 .super Landroid/view/ViewGroup;
-.source "SwitchButton.java"
 
 
 # annotations
@@ -28,19 +27,16 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;)V
 
     const v0, 0x7f06006c
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->a:I
 
     const/4 v0, 0x0
 
     new-array v0, v0, [Landroid/util/AttributeSet;
 
-    .line 3
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->a(Landroid/content/Context;[Landroid/util/AttributeSet;)V
 
     return-void
@@ -49,12 +45,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 2
 
-    .line 4
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const v0, 0x7f06006c
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->a:I
 
     const/4 v0, 0x1
@@ -65,7 +59,6 @@
 
     aput-object p2, v0, v1
 
-    .line 6
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->a(Landroid/content/Context;[Landroid/util/AttributeSet;)V
 
     return-void
@@ -74,7 +67,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->a:I
 
     return p0
@@ -83,7 +75,6 @@
 .method private varargs a(Landroid/content/Context;[Landroid/util/AttributeSet;)V
     .locals 4
 
-    .line 2
     new-instance v0, Landroid/graphics/Paint;
 
     const/4 v1, 0x1
@@ -92,22 +83,18 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->c:Landroid/graphics/Paint;
 
-    .line 3
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->c:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->c:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->c:Landroid/graphics/Paint;
 
     const/4 v1, 0x2
@@ -120,7 +107,6 @@
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->c:Landroid/graphics/Paint;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
@@ -139,7 +125,6 @@
 
     if-nez p2, :cond_0
 
-    .line 8
     new-instance p2, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton$a;
 
     invoke-direct {p2, p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton$a;-><init>(Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;Landroid/content/Context;)V
@@ -158,10 +143,8 @@
     :goto_0
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->d:Lcom/ifengyu/intercom/ui/widget/view/SwitchButton$a;
 
-    .line 9
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setWillNotDraw(Z)V
 
-    .line 10
     invoke-static {v1}, Lcom/ifengyu/intercom/i/c0;->d(I)I
 
     move-result p1
@@ -176,10 +159,8 @@
 .method public invalidate()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/view/ViewGroup;->invalidate()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->d:Lcom/ifengyu/intercom/ui/widget/view/SwitchButton$a;
 
     invoke-virtual {v0}, Landroid/view/View;->invalidate()V
@@ -190,17 +171,14 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 14
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getWidth()I
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getHeight()I
 
     move-result v1
 
-    .line 3
     new-instance v3, Landroid/graphics/RectF;
 
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->b:I
@@ -231,7 +209,6 @@
 
     invoke-virtual/range {v2 .. v7}, Landroid/graphics/Canvas;->drawArc(Landroid/graphics/RectF;FFZLandroid/graphics/Paint;)V
 
-    .line 4
     new-instance v9, Landroid/graphics/RectF;
 
     sub-int v2, v0, v1
@@ -266,7 +243,6 @@
 
     invoke-virtual/range {v8 .. v13}, Landroid/graphics/Canvas;->drawArc(Landroid/graphics/RectF;FFZLandroid/graphics/Paint;)V
 
-    .line 5
     div-int/lit8 v2, v1, 0x2
 
     int-to-float v9, v2
@@ -291,7 +267,6 @@
 
     invoke-virtual/range {v3 .. v8}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 6
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->b:I
 
     sub-int v3, v1, v2
@@ -316,14 +291,12 @@
 
     const/high16 p1, 0x40400000    # 3.0f
 
-    .line 1
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->a(F)F
 
     move-result p1
 
     float-to-int p1, p1
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getHeight()I
 
     move-result p2
@@ -334,25 +307,21 @@
 
     const/4 p3, 0x0
 
-    .line 3
     invoke-virtual {p0, p3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object p3
 
     if-nez p3, :cond_0
 
-    .line 4
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->d:Lcom/ifengyu/intercom/ui/widget/view/SwitchButton$a;
 
     invoke-virtual {p0, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    .line 5
     :cond_0
     iget-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->e:Z
 
     if-eqz p3, :cond_1
 
-    .line 6
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->d:Lcom/ifengyu/intercom/ui/widget/view/SwitchButton$a;
 
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getWidth()I
@@ -387,7 +356,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->d:Lcom/ifengyu/intercom/ui/widget/view/SwitchButton$a;
 
@@ -418,10 +386,8 @@
 .method public setStartState(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->e:Z
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/SwitchButton;->invalidate()V
 
     return-void

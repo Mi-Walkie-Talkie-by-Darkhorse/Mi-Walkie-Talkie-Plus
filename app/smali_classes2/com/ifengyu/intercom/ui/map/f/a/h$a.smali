@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/ui/map/f/a/h$a;
 .super Ljava/lang/Object;
-.source "TileSource.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/ui/map/MapDataProvider$MAP_TYPE;->values()[Lcom/ifengyu/intercom/ui/map/MapDataProvider$MAP_TYPE;
 
     move-result-object v0

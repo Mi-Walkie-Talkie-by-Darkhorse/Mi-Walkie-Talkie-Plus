@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/functions/Function4;
 .super Ljava/lang/Object;
-.source "Function4.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/MapMakerInternalMap$KeyIterator;
 .super Lcom/google/common/collect/MapMakerInternalMap$HashIterator;
-.source "MapMakerInternalMap.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/collect/MapMakerInternalMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/MapMakerInternalMap$KeyIterator;->this$0:Lcom/google/common/collect/MapMakerInternalMap;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;-><init>(Lcom/google/common/collect/MapMakerInternalMap;)V
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MapMakerInternalMap$HashIterator;->nextEntry()Lcom/google/common/collect/MapMakerInternalMap$WriteThroughEntry;
 
     move-result-object v0

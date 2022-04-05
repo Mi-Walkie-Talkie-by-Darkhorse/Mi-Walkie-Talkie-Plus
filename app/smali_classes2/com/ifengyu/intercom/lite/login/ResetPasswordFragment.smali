@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;
 .super Lcom/ifengyu/intercom/lite/base/e;
-.source "ResetPasswordFragment.java"
 
 
 # instance fields
@@ -51,7 +50,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/base/e;-><init>()V
 
     return-void
@@ -60,14 +58,12 @@
 .method private B()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     const v1, 0x7f110132
 
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;->f(I)Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;->a()Lcom/qmuiteam/qmui/alpha/QMUIAlphaImageButton;
@@ -80,7 +76,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageButton;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mEtPasswordNew:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
     const/4 v1, 0x1
@@ -99,7 +94,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mEtPasswordConfirm:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
     new-array v2, v1, [Landroid/text/InputFilter;
@@ -112,7 +106,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mBtnAction:Landroidx/appcompat/widget/AppCompatButton;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mEtPasswordNew:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
@@ -147,7 +140,6 @@
     :goto_0
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setEnabled(Z)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mBtnAction:Landroidx/appcompat/widget/AppCompatButton;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/login/w;
@@ -156,7 +148,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mBtnGotoLogin:Landroidx/appcompat/widget/AppCompatButton;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/login/v;
@@ -165,7 +156,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mEtPasswordNew:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
     invoke-static {v0}, Lcom/jakewharton/rxbinding3/widget/RxTextView;->textChanges(Landroid/widget/TextView;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
@@ -178,7 +168,6 @@
 
     move-result-object v0
 
-    .line 9
     iget-object v3, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mEtPasswordConfirm:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
     invoke-static {v3}, Lcom/jakewharton/rxbinding3/widget/RxTextView;->textChanges(Landroid/widget/TextView;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
@@ -189,7 +178,6 @@
 
     move-result-object v1
 
-    .line 10
     sget-object v2, Lcom/ifengyu/intercom/lite/login/u;->a:Lcom/ifengyu/intercom/lite/login/u;
 
     invoke-static {v0, v1, v2}, Lio/reactivex/Observable;->combineLatest(Lio/reactivex/ObservableSource;Lio/reactivex/ObservableSource;Lio/reactivex/functions/BiFunction;)Lio/reactivex/Observable;
@@ -200,7 +188,6 @@
 
     invoke-direct {v1, p0}, Lcom/ifengyu/intercom/lite/login/x;-><init>(Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;)V
 
-    .line 11
     invoke-virtual {v0, v1}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
     return-void
@@ -209,7 +196,6 @@
 .method private C()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-virtual {p0, v0}, Lcom/qmuiteam/qmui/arch/b;->a(Ljava/lang/Class;)V
@@ -225,7 +211,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -270,7 +255,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->z()V
 
     return-void
@@ -279,7 +263,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;I)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->c(I)V
 
     return-void
@@ -288,27 +271,22 @@
 .method public static b(Ljava/lang/String;Ljava/lang/String;)Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;
     .locals 3
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;-><init>()V
 
-    .line 3
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
     const-string v2, "phone"
 
-    .line 4
     invoke-virtual {v1, v2, p0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p0, "code"
 
-    .line 5
     invoke-virtual {v1, p0, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {v0, v1}, Landroidx/fragment/app/Fragment;->setArguments(Landroid/os/Bundle;)V
 
     return-object v0
@@ -317,7 +295,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->x()V
 
     return-void
@@ -326,7 +303,6 @@
 .method private c(I)V
     .locals 3
 
-    .line 3
     new-instance v0, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -339,7 +315,6 @@
 
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;
 
-    .line 4
     invoke-static {p1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object p1
@@ -352,10 +327,8 @@
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
-    .line 6
     new-instance v0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment$b;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment$b;-><init>(Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog;)V
@@ -370,7 +343,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->x()V
 
     return-void
@@ -379,7 +351,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->C()V
 
     return-void
@@ -390,7 +361,6 @@
 .method public A()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mEtPasswordNew:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatEditText;->getText()Landroid/text/Editable;
@@ -401,7 +371,6 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mEtPasswordConfirm:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
     invoke-virtual {v1}, Landroidx/appcompat/widget/AppCompatEditText;->getText()Landroid/text/Editable;
@@ -412,7 +381,6 @@
 
     move-result-object v1
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -423,7 +391,6 @@
 
     if-le v2, v3, :cond_0
 
-    .line 4
     invoke-static {v4}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object v0
@@ -432,7 +399,6 @@
 
     return-void
 
-    .line 5
     :cond_0
     invoke-static {v0}, Lcom/ifengyu/library/a/i;->b(Ljava/lang/CharSequence;)Z
 
@@ -440,7 +406,6 @@
 
     if-nez v2, :cond_1
 
-    .line 6
     invoke-static {v4}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object v0
@@ -449,7 +414,6 @@
 
     return-void
 
-    .line 7
     :cond_1
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
@@ -457,7 +421,6 @@
 
     if-le v2, v3, :cond_2
 
-    .line 8
     invoke-static {v4}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object v0
@@ -466,7 +429,6 @@
 
     return-void
 
-    .line 9
     :cond_2
     invoke-static {v1}, Lcom/ifengyu/library/a/i;->b(Ljava/lang/CharSequence;)Z
 
@@ -474,7 +436,6 @@
 
     if-nez v2, :cond_3
 
-    .line 10
     invoke-static {v4}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object v0
@@ -483,7 +444,6 @@
 
     return-void
 
-    .line 11
     :cond_3
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -493,7 +453,6 @@
 
     const v0, 0x7f11012d
 
-    .line 12
     invoke-static {v0}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object v0
@@ -502,7 +461,6 @@
 
     return-void
 
-    .line 13
     :cond_4
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
 
@@ -515,14 +473,12 @@
     :cond_5
     const-string v2, "phone"
 
-    .line 14
     invoke-virtual {v1, v2}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, "code"
 
-    .line 15
     invoke-virtual {v1, v3}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -533,7 +489,6 @@
 
     goto :goto_0
 
-    .line 16
     :cond_6
     new-instance v3, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment$a;
 
@@ -554,7 +509,6 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mBtnAction:Landroidx/appcompat/widget/AppCompatButton;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
@@ -569,7 +523,6 @@
 .method public synthetic b(Landroid/view/View;)V
     .locals 0
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mLlSuccessContainer:Landroid/widget/LinearLayout;
 
     invoke-virtual {p1}, Landroid/widget/LinearLayout;->getVisibility()I
@@ -578,14 +531,12 @@
 
     if-nez p1, :cond_0
 
-    .line 8
     const-class p1, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/arch/b;->a(Ljava/lang/Class;)V
 
     goto :goto_0
 
-    .line 9
     :cond_0
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/b;->t()V
 
@@ -604,7 +555,6 @@
 .method public synthetic c(Landroid/view/View;)V
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->A()V
 
     return-void
@@ -613,7 +563,6 @@
 .method public synthetic d(Landroid/view/View;)V
     .locals 0
 
-    .line 2
     const-class p1, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/arch/b;->a(Ljava/lang/Class;)V
@@ -624,7 +573,6 @@
 .method protected p()Landroid/view/View;
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -641,10 +589,8 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->B()V
 
     return-object v0

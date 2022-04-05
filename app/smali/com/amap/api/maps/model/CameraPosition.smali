@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/maps/model/CameraPosition;
 .super Ljava/lang/Object;
-.source "CameraPosition.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -34,7 +33,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/model/CameraPositionCreator;
 
     invoke-direct {v0}, Lcom/amap/api/maps/model/CameraPositionCreator;-><init>()V
@@ -47,16 +45,12 @@
 .method public constructor <init>(Lcom/amap/api/maps/model/LatLng;FFF)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/maps/model/CameraPosition;->target:Lcom/amap/api/maps/model/LatLng;
 
-    .line 3
     iput p2, p0, Lcom/amap/api/maps/model/CameraPosition;->zoom:F
 
-    .line 4
     iput p3, p0, Lcom/amap/api/maps/model/CameraPosition;->tilt:F
 
     float-to-double p2, p4
@@ -76,12 +70,10 @@
     :cond_0
     rem-float/2addr p4, v0
 
-    .line 5
     iput p4, p0, Lcom/amap/api/maps/model/CameraPosition;->bearing:F
 
     if-eqz p1, :cond_1
 
-    .line 6
     iget-wide p2, p1, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
     iget-wide v0, p1, Lcom/amap/api/maps/model/LatLng;->longitude:D
@@ -99,7 +91,6 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 7
     iput-boolean p1, p0, Lcom/amap/api/maps/model/CameraPosition;->isAbroad:Z
 
     return-void
@@ -108,7 +99,6 @@
 .method public static builder()Lcom/amap/api/maps/model/CameraPosition$Builder;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/model/CameraPosition$Builder;
 
     invoke-direct {v0}, Lcom/amap/api/maps/model/CameraPosition$Builder;-><init>()V
@@ -119,7 +109,6 @@
 .method public static builder(Lcom/amap/api/maps/model/CameraPosition;)Lcom/amap/api/maps/model/CameraPosition$Builder;
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/amap/api/maps/model/CameraPosition$Builder;
 
     invoke-direct {v0, p0}, Lcom/amap/api/maps/model/CameraPosition$Builder;-><init>(Lcom/amap/api/maps/model/CameraPosition;)V
@@ -130,7 +119,6 @@
 .method public static final fromLatLngZoom(Lcom/amap/api/maps/model/LatLng;F)Lcom/amap/api/maps/model/CameraPosition;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/model/CameraPosition;
 
     const/4 v1, 0x0
@@ -159,7 +147,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/amap/api/maps/model/CameraPosition;
 
@@ -169,11 +156,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/amap/api/maps/model/CameraPosition;
 
-    .line 3
     iget-object v1, p0, Lcom/amap/api/maps/model/CameraPosition;->target:Lcom/amap/api/maps/model/LatLng;
 
     iget-object v3, p1, Lcom/amap/api/maps/model/CameraPosition;->target:Lcom/amap/api/maps/model/LatLng;
@@ -186,14 +171,12 @@
 
     iget v1, p0, Lcom/amap/api/maps/model/CameraPosition;->zoom:F
 
-    .line 4
     invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result v1
 
     iget v3, p1, Lcom/amap/api/maps/model/CameraPosition;->zoom:F
 
-    .line 5
     invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result v3
@@ -202,14 +185,12 @@
 
     iget v1, p0, Lcom/amap/api/maps/model/CameraPosition;->tilt:F
 
-    .line 6
     invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result v1
 
     iget v3, p1, Lcom/amap/api/maps/model/CameraPosition;->tilt:F
 
-    .line 7
     invoke-static {v3}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result v3
@@ -218,14 +199,12 @@
 
     iget v1, p0, Lcom/amap/api/maps/model/CameraPosition;->bearing:F
 
-    .line 8
     invoke-static {v1}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result v1
 
     iget p1, p1, Lcom/amap/api/maps/model/CameraPosition;->bearing:F
 
-    .line 9
     invoke-static {p1}, Ljava/lang/Float;->floatToIntBits(F)I
 
     move-result p1
@@ -241,7 +220,6 @@
 .method public final hashCode()I
     .locals 1
 
-    .line 1
     invoke-super {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
@@ -256,7 +234,6 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 1
     iget-object v1, p0, Lcom/amap/api/maps/model/CameraPosition;->target:Lcom/amap/api/maps/model/LatLng;
 
     const-string v2, "target"
@@ -271,7 +248,6 @@
 
     iget v1, p0, Lcom/amap/api/maps/model/CameraPosition;->zoom:F
 
-    .line 2
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v1
@@ -288,7 +264,6 @@
 
     iget v1, p0, Lcom/amap/api/maps/model/CameraPosition;->tilt:F
 
-    .line 3
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v1
@@ -305,7 +280,6 @@
 
     iget v1, p0, Lcom/amap/api/maps/model/CameraPosition;->bearing:F
 
-    .line 4
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v1
@@ -320,7 +294,6 @@
 
     aput-object v1, v0, v2
 
-    .line 5
     invoke-static {v0}, Lcom/amap/api/col/l3/em;->a([Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -331,12 +304,10 @@
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    .line 1
     iget p2, p0, Lcom/amap/api/maps/model/CameraPosition;->bearing:F
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 2
     iget-object p2, p0, Lcom/amap/api/maps/model/CameraPosition;->target:Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v0, p2, Lcom/amap/api/maps/model/LatLng;->latitude:D
@@ -345,7 +316,6 @@
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 3
     iget-object p2, p0, Lcom/amap/api/maps/model/CameraPosition;->target:Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v0, p2, Lcom/amap/api/maps/model/LatLng;->longitude:D
@@ -354,12 +324,10 @@
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 4
     iget p2, p0, Lcom/amap/api/maps/model/CameraPosition;->tilt:F
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 5
     iget p2, p0, Lcom/amap/api/maps/model/CameraPosition;->zoom:F
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V

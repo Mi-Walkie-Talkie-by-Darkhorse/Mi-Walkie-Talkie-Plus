@@ -1,13 +1,11 @@
 .class public Lcom/amap/api/maps/utils/SpatialRelationUtil;
 .super Ljava/lang/Object;
-.source "SpatialRelationUtil.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 1
     :try_start_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -46,7 +43,6 @@
 
     goto :goto_1
 
-    .line 2
     :cond_0
     new-instance v1, Ljava/util/ArrayList;
 
@@ -54,7 +50,6 @@
 
     const/4 v2, 0x0
 
-    .line 3
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -72,7 +67,6 @@
 
     check-cast v3, Lcom/amap/api/maps/model/LatLng;
 
-    .line 4
     iget-wide v4, v3, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
     iget-wide v6, v3, Lcom/amap/api/maps/model/LatLng;->longitude:D
@@ -83,14 +77,12 @@
 
     invoke-interface {v1, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 5
     invoke-virtual {v3, p1}, Lcom/amap/api/maps/model/LatLng;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 6
     new-instance p0, Landroid/util/Pair;
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -106,7 +98,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     iget-wide v2, p1, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
@@ -116,14 +107,12 @@
 
     move-result-object p0
 
-    .line 8
     invoke-static {v1, p0}, Lcom/amap/api/maps/utils/SpatialRelationUtil;->calShortestDistancePoint(Ljava/util/List;Lcom/autonavi/amap/mapcore/DPoint;)Landroid/util/Pair;
 
     move-result-object p0
 
     if-eqz p0, :cond_3
 
-    .line 9
     new-instance p1, Landroid/util/Pair;
 
     iget-object v1, p0, Landroid/util/Pair;->first:Ljava/lang/Object;
@@ -153,7 +142,6 @@
     :catchall_0
     move-exception p0
 
-    .line 10
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_3
@@ -188,7 +176,6 @@
 
     if-eqz v1, :cond_6
 
-    .line 11
     invoke-interface/range {p0 .. p0}, Ljava/util/List;->size()I
 
     move-result v3
@@ -197,7 +184,6 @@
 
     goto/16 :goto_3
 
-    .line 12
     :cond_0
     invoke-interface/range {p0 .. p0}, Ljava/util/List;->size()I
 
@@ -220,7 +206,6 @@
 
     move-object v3, v2
 
-    .line 13
     :goto_0
     invoke-interface/range {p0 .. p0}, Ljava/util/List;->size()I
 
@@ -232,21 +217,18 @@
 
     if-nez v6, :cond_2
 
-    .line 14
     invoke-interface {v0, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/autonavi/amap/mapcore/DPoint;
 
-    .line 15
     invoke-virtual {v3, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v7
 
     if-eqz v7, :cond_2
 
-    .line 16
     new-instance v0, Landroid/util/Pair;
 
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -260,21 +242,18 @@
     :cond_2
     add-int/lit8 v7, v6, 0x1
 
-    .line 17
     invoke-interface {v0, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v8
 
     check-cast v8, Lcom/autonavi/amap/mapcore/DPoint;
 
-    .line 18
     invoke-virtual {v8, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v9
 
     if-eqz v9, :cond_3
 
-    .line 19
     new-instance v0, Landroid/util/Pair;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -285,7 +264,6 @@
 
     return-object v0
 
-    .line 20
     :cond_3
     iget-wide v9, v1, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
@@ -315,7 +293,6 @@
 
     if-nez v2, :cond_4
 
-    .line 21
     iget-object v1, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v1, Ljava/lang/Double;
@@ -324,7 +301,6 @@
 
     move-result-wide v1
 
-    .line 22
     new-instance v3, Landroid/util/Pair;
 
     invoke-static/range {v23 .. v23}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -342,7 +318,6 @@
 
     goto :goto_2
 
-    .line 23
     :cond_4
     iget-object v1, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
 
@@ -356,7 +331,6 @@
 
     if-lez v1, :cond_5
 
-    .line 24
     iget-object v1, v0, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v1, Ljava/lang/Double;
@@ -365,7 +339,6 @@
 
     move-result-wide v1
 
-    .line 25
     new-instance v3, Landroid/util/Pair;
 
     invoke-static/range {v23 .. v23}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -437,7 +410,6 @@
 
     if-gtz v20, :cond_0
 
-    .line 1
     new-instance v4, Landroid/util/Pair;
 
     mul-double v10, v10, v10
@@ -473,7 +445,6 @@
 
     if-ltz v16, :cond_1
 
-    .line 2
     new-instance v0, Landroid/util/Pair;
 
     sub-double v1, p0, v4
@@ -523,12 +494,10 @@
 
     add-double/2addr v4, v6
 
-    .line 3
     invoke-static {v4, v5}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v4
 
-    .line 4
     new-instance v6, Landroid/util/Pair;
 
     invoke-static {v4, v5}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;

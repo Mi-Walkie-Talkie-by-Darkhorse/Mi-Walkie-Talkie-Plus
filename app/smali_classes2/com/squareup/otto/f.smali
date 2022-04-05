@@ -1,6 +1,5 @@
 .class interface abstract Lcom/squareup/otto/f;
 .super Ljava/lang/Object;
-.source "HandlerFinder.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/squareup/otto/f$a;
 
     invoke-direct {v0}, Lcom/squareup/otto/f$a;-><init>()V

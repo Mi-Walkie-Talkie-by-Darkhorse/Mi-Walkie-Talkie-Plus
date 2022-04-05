@@ -1,13 +1,11 @@
 .class public Lcom/xiaomi/account/utils/LogEncryptUtils;
 .super Ljava/lang/Object;
-.source "LogEncryptUtils.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -16,7 +14,6 @@
 .method public static generateEncryptMessageLine(Ljava/lang/String;)Ljava/lang/String;
     .locals 5
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Lcom/xiaomi/accountsdk/diagnosis/encrypt/PassportEnvEncryptUtils;->encrypt(Ljava/lang/String;)Lcom/xiaomi/accountsdk/diagnosis/encrypt/PassportEnvEncryptUtils$EncryptResult;
 
@@ -30,7 +27,6 @@
 
     const/4 v3, 0x0
 
-    .line 2
     iget-object v4, v0, Lcom/xiaomi/accountsdk/diagnosis/encrypt/PassportEnvEncryptUtils$EncryptResult;->encryptedKey:Ljava/lang/String;
 
     aput-object v4, v2, v3
@@ -52,7 +48,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     return-object p0

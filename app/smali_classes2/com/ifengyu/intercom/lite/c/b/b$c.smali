@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/lite/c/b/b$c;
 .super Ljava/lang/Object;
-.source "ChannelDialogBuilder.java"
 
 
 # annotations

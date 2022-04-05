@@ -1,6 +1,5 @@
 .class La/a/a/b/b$b;
 .super La/a/a/b/b$e;
-.source "SafeIterableMap.java"
 
 
 # annotations
@@ -39,7 +38,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, La/a/a/b/b$e;-><init>(La/a/a/b/b$c;La/a/a/b/b$c;)V
 
     return-void
@@ -59,7 +57,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p1, La/a/a/b/b$c;->c:La/a/a/b/b$c;
 
     return-object p1
@@ -77,7 +74,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p1, La/a/a/b/b$c;->d:La/a/a/b/b$c;
 
     return-object p1

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/e/b/b$a$a;
 .super Ljava/lang/Object;
-.source "OsmClusterOverlayManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/e/b/b$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$a$a;->a:Lcom/ifengyu/intercom/ui/map/e/b/b$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$a$a;->a:Lcom/ifengyu/intercom/ui/map/e/b/b$a;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/map/e/b/b$a;->a:Lcom/ifengyu/intercom/ui/map/e/b/b;

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/reflect/TypeToken$4;
 .super Lcom/google/common/reflect/TypeVisitor;
-.source "TypeToken.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/common/collect/ImmutableSet$Builder;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/reflect/TypeToken$4;->val$builder:Lcom/google/common/collect/ImmutableSet$Builder;
 
     invoke-direct {p0}, Lcom/google/common/reflect/TypeVisitor;-><init>()V
@@ -42,7 +40,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$4;->val$builder:Lcom/google/common/collect/ImmutableSet$Builder;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ImmutableSet$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet$Builder;
@@ -53,7 +50,6 @@
 .method visitGenericArrayType(Ljava/lang/reflect/GenericArrayType;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$4;->val$builder:Lcom/google/common/collect/ImmutableSet$Builder;
 
     invoke-interface {p1}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
@@ -76,7 +72,6 @@
 .method visitParameterizedType(Ljava/lang/reflect/ParameterizedType;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$4;->val$builder:Lcom/google/common/collect/ImmutableSet$Builder;
 
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getRawType()Ljava/lang/reflect/Type;
@@ -100,7 +95,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/reflect/TypeVariable;->getBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -113,7 +107,6 @@
 .method visitWildcardType(Ljava/lang/reflect/WildcardType;)V
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p1

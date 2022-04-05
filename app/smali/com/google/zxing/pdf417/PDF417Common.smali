@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/pdf417/PDF417Common;
 .super Ljava/lang/Object;
-.source "PDF417Common.java"
 
 
 # static fields
@@ -33,21 +32,18 @@
 
     new-array v0, v0, [I
 
-    .line 1
     sput-object v0, Lcom/google/zxing/pdf417/PDF417Common;->EMPTY_INT_ARRAY:[I
 
     const/16 v0, 0xae3
 
     new-array v1, v0, [I
 
-    .line 2
     fill-array-data v1, :array_0
 
     sput-object v1, Lcom/google/zxing/pdf417/PDF417Common;->SYMBOL_TABLE:[I
 
     new-array v0, v0, [I
 
-    .line 3
     fill-array-data v0, :array_1
 
     sput-object v0, Lcom/google/zxing/pdf417/PDF417Common;->CODEWORD_TABLE:[I
@@ -5640,7 +5636,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -5651,7 +5646,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/zxing/common/detector/MathUtils;->sum([I)I
 
     move-result p0
@@ -5662,7 +5656,6 @@
 .method public static getCodeword(I)I
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/google/zxing/pdf417/PDF417Common;->SYMBOL_TABLE:[I
 
     const v1, 0x3ffff
@@ -5679,7 +5672,6 @@
 
     return p0
 
-    .line 2
     :cond_0
     sget-object v0, Lcom/google/zxing/pdf417/PDF417Common;->CODEWORD_TABLE:[I
 
@@ -5705,7 +5697,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 1
     invoke-interface {p0}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
@@ -5714,7 +5705,6 @@
 
     goto :goto_1
 
-    .line 2
     :cond_0
     invoke-interface {p0}, Ljava/util/Collection;->size()I
 
@@ -5724,7 +5714,6 @@
 
     const/4 v1, 0x0
 
-    .line 3
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -5744,7 +5733,6 @@
 
     add-int/lit8 v3, v1, 0x1
 
-    .line 4
     invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
     move-result v2
@@ -5758,7 +5746,6 @@
     :cond_1
     return-object v0
 
-    .line 5
     :cond_2
     :goto_1
     sget-object p0, Lcom/google/zxing/pdf417/PDF417Common;->EMPTY_INT_ARRAY:[I

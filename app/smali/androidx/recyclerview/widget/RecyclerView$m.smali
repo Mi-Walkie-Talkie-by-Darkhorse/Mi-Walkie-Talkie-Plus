@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/recyclerview/widget/RecyclerView$m;
 .super Ljava/lang/Object;
-.source "RecyclerView.java"
 
 
 # annotations

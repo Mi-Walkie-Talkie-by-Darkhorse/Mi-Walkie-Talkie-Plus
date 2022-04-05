@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/view/WindowInsetsAnimationCompat$Callback$DispatchMode;
 .super Ljava/lang/Object;
-.source "WindowInsetsAnimationCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

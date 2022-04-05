@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/Striped$SmallLazyStriped$ArrayReference;
 .super Ljava/lang/ref/WeakReference;
-.source "Striped.java"
 
 
 # annotations
@@ -45,10 +44,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p3}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;Ljava/lang/ref/ReferenceQueue;)V
 
-    .line 2
     iput p2, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped$ArrayReference;->index:I
 
     return-void

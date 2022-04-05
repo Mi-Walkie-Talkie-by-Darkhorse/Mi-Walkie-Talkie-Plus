@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/primitives/UnsignedInts;
 .super Ljava/lang/Object;
-.source "UnsignedInts.java"
 
 
 # annotations
@@ -25,7 +24,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +32,6 @@
 .method public static compare(II)I
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/primitives/UnsignedInts;->flip(I)I
 
     move-result p0
@@ -53,12 +50,10 @@
 .method public static decode(Ljava/lang/String;)I
     .locals 4
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/primitives/ParseRequest;->fromString(Ljava/lang/String;)Lcom/google/common/primitives/ParseRequest;
 
     move-result-object v0
 
-    .line 2
     :try_start_0
     iget-object v1, v0, Lcom/google/common/primitives/ParseRequest;->rawValue:Ljava/lang/String;
 
@@ -75,7 +70,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     new-instance v1, Ljava/lang/NumberFormatException;
 
     const-string v2, "Error parsing value: "
@@ -104,17 +98,14 @@
     :goto_0
     invoke-direct {v1, p0}, Ljava/lang/NumberFormatException;-><init>(Ljava/lang/String;)V
 
-    .line 4
     invoke-virtual {v1, v0}, Ljava/lang/NumberFormatException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    .line 5
     throw v1
 .end method
 
 .method public static divide(II)I
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/primitives/UnsignedInts;->toLong(I)J
 
     move-result-wide v0
@@ -143,10 +134,8 @@
 .method public static varargs join(Ljava/lang/String;[I)Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     array-length v0, p1
 
     if-nez v0, :cond_0
@@ -155,7 +144,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -167,7 +155,6 @@
 
     const/4 v1, 0x0
 
-    .line 4
     aget v1, p1, v1
 
     invoke-static {v1}, Lcom/google/common/primitives/UnsignedInts;->toString(I)Ljava/lang/String;
@@ -178,13 +165,11 @@
 
     const/4 v1, 0x1
 
-    .line 5
     :goto_0
     array-length v2, p1
 
     if-ge v1, v2, :cond_1
 
-    .line 6
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     aget v2, p1, v1
@@ -199,7 +184,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -218,7 +202,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/primitives/UnsignedInts$LexicographicalComparator;->INSTANCE:Lcom/google/common/primitives/UnsignedInts$LexicographicalComparator;
 
     return-object v0
@@ -227,7 +210,6 @@
 .method public static varargs max([I)I
     .locals 3
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -246,20 +228,17 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 2
     aget v0, p0, v1
 
     invoke-static {v0}, Lcom/google/common/primitives/UnsignedInts;->flip(I)I
 
     move-result v0
 
-    .line 3
     :goto_1
     array-length v1, p0
 
     if-ge v2, v1, :cond_2
 
-    .line 4
     aget v1, p0, v2
 
     invoke-static {v1}, Lcom/google/common/primitives/UnsignedInts;->flip(I)I
@@ -275,7 +254,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_2
     invoke-static {v0}, Lcom/google/common/primitives/UnsignedInts;->flip(I)I
 
@@ -287,7 +265,6 @@
 .method public static varargs min([I)I
     .locals 3
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -306,20 +283,17 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 2
     aget v0, p0, v1
 
     invoke-static {v0}, Lcom/google/common/primitives/UnsignedInts;->flip(I)I
 
     move-result v0
 
-    .line 3
     :goto_1
     array-length v1, p0
 
     if-ge v2, v1, :cond_2
 
-    .line 4
     aget v1, p0, v2
 
     invoke-static {v1}, Lcom/google/common/primitives/UnsignedInts;->flip(I)I
@@ -335,7 +309,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_2
     invoke-static {v0}, Lcom/google/common/primitives/UnsignedInts;->flip(I)I
 
@@ -349,7 +322,6 @@
 
     const/16 v0, 0xa
 
-    .line 1
     invoke-static {p0, v0}, Lcom/google/common/primitives/UnsignedInts;->parseUnsignedInt(Ljava/lang/String;I)I
 
     move-result p0
@@ -360,10 +332,8 @@
 .method public static parseUnsignedInt(Ljava/lang/String;I)I
     .locals 5
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     invoke-static {p0, p1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;I)J
 
     move-result-wide v0
@@ -380,7 +350,6 @@
 
     return p0
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/NumberFormatException;
 
@@ -430,7 +399,6 @@
 .method public static remainder(II)I
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/primitives/UnsignedInts;->toLong(I)J
 
     move-result-wide v0
@@ -463,7 +431,6 @@
 
     const/16 v0, 0xa
 
-    .line 1
     invoke-static {p0, v0}, Lcom/google/common/primitives/UnsignedInts;->toString(II)Ljava/lang/String;
 
     move-result-object p0
@@ -480,7 +447,6 @@
 
     and-long/2addr v0, v2
 
-    .line 2
     invoke-static {v0, v1, p1}, Ljava/lang/Long;->toString(JI)Ljava/lang/String;
 
     move-result-object p0

@@ -1,6 +1,5 @@
 .class public final Landroidx/core/widget/c;
 .super Ljava/lang/Object;
-.source "CompoundButtonCompat.java"
 
 
 # static fields
@@ -19,21 +18,18 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 9
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    .line 10
     invoke-virtual {p0}, Landroid/widget/CompoundButton;->getButtonDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
 
     return-object p0
 
-    .line 11
     :cond_0
     sget-boolean v0, Landroidx/core/widget/c;->b:Z
 
@@ -43,7 +39,6 @@
 
     const/4 v0, 0x1
 
-    .line 12
     :try_start_0
     const-class v2, Landroid/widget/CompoundButton;
 
@@ -55,7 +50,6 @@
 
     sput-object v2, Landroidx/core/widget/c;->a:Ljava/lang/reflect/Field;
 
-    .line 13
     invoke-virtual {v2, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
@@ -67,14 +61,11 @@
 
     const-string v3, "Failed to retrieve mButtonDrawable field"
 
-    .line 14
     invoke-static {v1, v3, v2}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 15
     :goto_0
     sput-boolean v0, Landroidx/core/widget/c;->b:Z
 
-    .line 16
     :cond_1
     sget-object v0, Landroidx/core/widget/c;->a:Ljava/lang/reflect/Field;
 
@@ -82,7 +73,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 17
     :try_start_1
     invoke-virtual {v0, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -99,10 +89,8 @@
 
     const-string v0, "Failed to get button drawable via reflection"
 
-    .line 18
     invoke-static {v1, v0, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 19
     sput-object v2, Landroidx/core/widget/c;->a:Ljava/lang/reflect/Field;
 
     :cond_2
@@ -120,25 +108,21 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1}, Landroid/widget/CompoundButton;->setButtonTintList(Landroid/content/res/ColorStateList;)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     instance-of v0, p0, Landroidx/core/widget/k;
 
     if-eqz v0, :cond_1
 
-    .line 4
     check-cast p0, Landroidx/core/widget/k;
 
     invoke-interface {p0, p1}, Landroidx/core/widget/k;->setSupportButtonTintList(Landroid/content/res/ColorStateList;)V
@@ -159,25 +143,21 @@
         .end annotation
     .end param
 
-    .line 5
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
     if-lt v0, v1, :cond_0
 
-    .line 6
     invoke-virtual {p0, p1}, Landroid/widget/CompoundButton;->setButtonTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
     goto :goto_0
 
-    .line 7
     :cond_0
     instance-of v0, p0, Landroidx/core/widget/k;
 
     if-eqz v0, :cond_1
 
-    .line 8
     check-cast p0, Landroidx/core/widget/k;
 
     invoke-interface {p0, p1}, Landroidx/core/widget/k;->setSupportButtonTintMode(Landroid/graphics/PorterDuff$Mode;)V
@@ -196,27 +176,23 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/CompoundButton;->getButtonTintList()Landroid/content/res/ColorStateList;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_0
     instance-of v0, p0, Landroidx/core/widget/k;
 
     if-eqz v0, :cond_1
 
-    .line 4
     check-cast p0, Landroidx/core/widget/k;
 
     invoke-interface {p0}, Landroidx/core/widget/k;->getSupportButtonTintList()Landroid/content/res/ColorStateList;

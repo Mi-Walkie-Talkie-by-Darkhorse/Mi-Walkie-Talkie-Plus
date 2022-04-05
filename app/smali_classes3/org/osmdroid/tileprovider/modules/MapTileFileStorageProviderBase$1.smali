@@ -1,6 +1,5 @@
 .class synthetic Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase$1;
 .super Ljava/lang/Object;
-.source "MapTileFileStorageProviderBase.java"
 
 
 # annotations

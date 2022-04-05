@@ -1,6 +1,5 @@
 .class public final enum Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$RequestMax;
 .super Ljava/lang/Enum;
-.source "FlowableInternalHelper.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -38,7 +37,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$RequestMax;
 
     const/4 v1, 0x0
@@ -55,7 +53,6 @@
 
     aput-object v0, v2, v1
 
-    .line 2
     sput-object v2, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$RequestMax;->$VALUES:[Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$RequestMax;
 
     return-void
@@ -69,7 +66,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -78,7 +74,6 @@
 .method public static valueOf(Ljava/lang/String;)Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$RequestMax;
     .locals 1
 
-    .line 1
     const-class v0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$RequestMax;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -93,7 +88,6 @@
 .method public static values()[Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$RequestMax;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$RequestMax;->$VALUES:[Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$RequestMax;
 
     invoke-virtual {v0}, [Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$RequestMax;->clone()Ljava/lang/Object;
@@ -117,7 +111,6 @@
 
     const-wide v0, 0x7fffffffffffffffL
 
-    .line 2
     invoke-interface {p1, v0, v1}, Lc/a/d;->request(J)V
 
     return-void
@@ -131,7 +124,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Lc/a/d;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$RequestMax;->accept(Lc/a/d;)V

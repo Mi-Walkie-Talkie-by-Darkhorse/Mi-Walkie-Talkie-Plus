@@ -1,6 +1,5 @@
 .class public final Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;
 .super Ljava/lang/Object;
-.source "ReflectiveTypeAdapterFactory.java"
 
 # interfaces
 .implements Lcom/google/gson/TypeAdapterFactory;
@@ -31,26 +30,20 @@
 .method public constructor <init>(Lcom/google/gson/internal/ConstructorConstructor;Lcom/google/gson/FieldNamingStrategy;Lcom/google/gson/internal/Excluder;Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {}, Lcom/google/gson/internal/reflect/ReflectionAccessor;->getInstance()Lcom/google/gson/internal/reflect/ReflectionAccessor;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->accessor:Lcom/google/gson/internal/reflect/ReflectionAccessor;
 
-    .line 3
     iput-object p1, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->constructorConstructor:Lcom/google/gson/internal/ConstructorConstructor;
 
-    .line 4
     iput-object p2, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->fieldNamingPolicy:Lcom/google/gson/FieldNamingStrategy;
 
-    .line 5
     iput-object p3, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->excluder:Lcom/google/gson/internal/Excluder;
 
-    .line 6
     iput-object p4, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->jsonAdapterFactory:Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;
 
     return-void
@@ -76,7 +69,6 @@
 
     move-object/from16 v9, p4
 
-    .line 1
     invoke-virtual/range {p4 .. p4}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object v0
@@ -85,7 +77,6 @@
 
     move-result v10
 
-    .line 2
     const-class v0, Lcom/google/gson/annotations/JsonAdapter;
 
     move-object v5, p2
@@ -98,7 +89,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v1, v11, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->jsonAdapterFactory:Lcom/google/gson/internal/bind/JsonAdapterAnnotationTypeAdapterFactory;
 
     iget-object v2, v11, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->constructorConstructor:Lcom/google/gson/internal/ConstructorConstructor;
@@ -129,7 +119,6 @@
     :goto_1
     if-nez v0, :cond_2
 
-    .line 4
     invoke-virtual {p1, v9}, Lcom/google/gson/Gson;->getAdapter(Lcom/google/gson/reflect/TypeToken;)Lcom/google/gson/TypeAdapter;
 
     move-result-object v0
@@ -137,7 +126,6 @@
     :cond_2
     move-object v7, v0
 
-    .line 5
     new-instance v12, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$1;
 
     move-object v0, v12
@@ -164,7 +152,6 @@
 .method static excludeField(Ljava/lang/reflect/Field;ZLcom/google/gson/internal/Excluder;)Z
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/reflect/Field;->getType()Ljava/lang/Class;
 
     move-result-object v0
@@ -211,12 +198,10 @@
 
     move-object/from16 v7, p0
 
-    .line 1
     new-instance v8, Ljava/util/LinkedHashMap;
 
     invoke-direct {v8}, Ljava/util/LinkedHashMap;-><init>()V
 
-    .line 2
     invoke-virtual/range {p3 .. p3}, Ljava/lang/Class;->isInterface()Z
 
     move-result v0
@@ -225,7 +210,6 @@
 
     return-object v8
 
-    .line 3
     :cond_0
     invoke-virtual/range {p2 .. p2}, Lcom/google/gson/reflect/TypeToken;->getType()Ljava/lang/reflect/Type;
 
@@ -235,18 +219,15 @@
 
     move-object/from16 v11, p3
 
-    .line 4
     :goto_0
     const-class v0, Ljava/lang/Object;
 
     if-eq v11, v0, :cond_7
 
-    .line 5
     invoke-virtual {v11}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
 
     move-result-object v12
 
-    .line 6
     array-length v13, v12
 
     const/4 v14, 0x0
@@ -260,12 +241,10 @@
 
     const/4 v0, 0x1
 
-    .line 7
     invoke-virtual {v7, v6, v0}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->excludeField(Ljava/lang/reflect/Field;Z)Z
 
     move-result v0
 
-    .line 8
     invoke-virtual {v7, v6, v14}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->excludeField(Ljava/lang/reflect/Field;Z)Z
 
     move-result v16
@@ -276,13 +255,11 @@
 
     goto/16 :goto_5
 
-    .line 9
     :cond_1
     iget-object v1, v7, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->accessor:Lcom/google/gson/internal/reflect/ReflectionAccessor;
 
     invoke-virtual {v1, v6}, Lcom/google/gson/internal/reflect/ReflectionAccessor;->makeAccessible(Ljava/lang/reflect/AccessibleObject;)V
 
-    .line 10
     invoke-virtual {v10}, Lcom/google/gson/reflect/TypeToken;->getType()Ljava/lang/reflect/Type;
 
     move-result-object v1
@@ -295,14 +272,12 @@
 
     move-result-object v17
 
-    .line 11
     invoke-direct {v7, v6}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->getFieldNames(Ljava/lang/reflect/Field;)Ljava/util/List;
 
     move-result-object v5
 
     const/4 v1, 0x0
 
-    .line 12
     invoke-interface {v5}, Ljava/util/List;->size()I
 
     move-result v4
@@ -314,7 +289,6 @@
     :goto_2
     if-ge v2, v4, :cond_4
 
-    .line 13
     invoke-interface {v5, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -330,7 +304,6 @@
     :cond_2
     move/from16 v18, v0
 
-    .line 14
     :goto_3
     invoke-static/range {v17 .. v17}, Lcom/google/gson/reflect/TypeToken;->get(Ljava/lang/reflect/Type;)Lcom/google/gson/reflect/TypeToken;
 
@@ -362,14 +335,12 @@
 
     move/from16 v6, v16
 
-    .line 15
     invoke-direct/range {v0 .. v6}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->createBoundField(Lcom/google/gson/Gson;Ljava/lang/reflect/Field;Ljava/lang/String;Lcom/google/gson/reflect/TypeToken;ZZ)Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$BoundField;
 
     move-result-object v0
 
     move-object/from16 v1, p2
 
-    .line 16
     invoke-interface {v8, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -412,7 +383,6 @@
 
     goto :goto_1
 
-    .line 17
     :cond_5
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -438,7 +408,6 @@
 
     throw v0
 
-    .line 18
     :cond_6
     invoke-virtual {v10}, Lcom/google/gson/reflect/TypeToken;->getType()Ljava/lang/reflect/Type;
 
@@ -456,7 +425,6 @@
 
     move-result-object v10
 
-    .line 19
     invoke-virtual {v10}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object v11
@@ -480,7 +448,6 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Lcom/google/gson/annotations/SerializedName;
 
     invoke-virtual {p1, v0}, Ljava/lang/reflect/Field;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
@@ -491,44 +458,37 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->fieldNamingPolicy:Lcom/google/gson/FieldNamingStrategy;
 
     invoke-interface {v0, p1}, Lcom/google/gson/FieldNamingStrategy;->translateName(Ljava/lang/reflect/Field;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 3
     invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
     return-object p1
 
-    .line 4
     :cond_0
     invoke-interface {v0}, Lcom/google/gson/annotations/SerializedName;->value()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 5
     invoke-interface {v0}, Lcom/google/gson/annotations/SerializedName;->alternate()[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 6
     array-length v1, v0
 
     if-nez v1, :cond_1
 
-    .line 7
     invoke-static {p1}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
     return-object p1
 
-    .line 8
     :cond_1
     new-instance v1, Ljava/util/ArrayList;
 
@@ -538,10 +498,8 @@
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 9
     invoke-interface {v1, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 10
     array-length p1, v0
 
     const/4 v2, 0x0
@@ -551,7 +509,6 @@
 
     aget-object v3, v0, v2
 
-    .line 11
     invoke-interface {v1, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v2, v2, 0x1
@@ -579,12 +536,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p2}, Lcom/google/gson/reflect/TypeToken;->getRawType()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 2
     const-class v1, Ljava/lang/Object;
 
     invoke-virtual {v1, v0}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -597,7 +552,6 @@
 
     return-object p1
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->constructorConstructor:Lcom/google/gson/internal/ConstructorConstructor;
 
@@ -605,7 +559,6 @@
 
     move-result-object v1
 
-    .line 4
     new-instance v2, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory$Adapter;
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->getBoundFields(Lcom/google/gson/Gson;Lcom/google/gson/reflect/TypeToken;Ljava/lang/Class;)Ljava/util/Map;
@@ -620,7 +573,6 @@
 .method public excludeField(Ljava/lang/reflect/Field;Z)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->excluder:Lcom/google/gson/internal/Excluder;
 
     invoke-static {p1, p2, v0}, Lcom/google/gson/internal/bind/ReflectiveTypeAdapterFactory;->excludeField(Ljava/lang/reflect/Field;ZLcom/google/gson/internal/Excluder;)Z

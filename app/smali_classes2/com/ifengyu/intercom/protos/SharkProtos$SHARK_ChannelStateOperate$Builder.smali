@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 .super Lcom/google/protobuf/GeneratedMessage$Builder;
-.source "SharkProtos.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperateOrBuilder;
@@ -74,39 +73,32 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;-><init>()V
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;->SHARK_ST_OK:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->result_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;->SHARK_ST_UPDATE:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->option_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;->SHARK_MODE_NORMAL:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->deviceMode_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 8
     invoke-direct {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->maybeForceBuilderInitialization()V
 
     return-void
@@ -115,39 +107,32 @@
 .method private constructor <init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)V
     .locals 0
 
-    .line 9
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage$Builder;-><init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)V
 
-    .line 10
     sget-object p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;->SHARK_ST_OK:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->result_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
 
-    .line 11
     sget-object p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;->SHARK_ST_UPDATE:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->option_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
-    .line 12
     sget-object p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;->SHARK_MODE_NORMAL:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->deviceMode_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 14
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 15
     invoke-direct {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->maybeForceBuilderInitialization()V
 
     return-void
@@ -156,7 +141,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;Lcom/ifengyu/intercom/protos/SharkProtos$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;-><init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)V
 
     return-void
@@ -165,7 +149,6 @@
 .method static synthetic access$6000()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->create()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -176,7 +159,6 @@
 .method private static create()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;-><init>()V
@@ -197,25 +179,20 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->getCh1()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v1
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->getParentForChildren()Lcom/google/protobuf/GeneratedMessage$BuilderParent;
 
     move-result-object v2
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->isClean()Z
 
     move-result v3
@@ -226,10 +203,8 @@
 
     const/4 v0, 0x0
 
-    .line 6
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
@@ -249,25 +224,20 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->getCh2()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v1
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->getParentForChildren()Lcom/google/protobuf/GeneratedMessage$BuilderParent;
 
     move-result-object v2
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->isClean()Z
 
     move-result v3
@@ -278,10 +248,8 @@
 
     const/4 v0, 0x0
 
-    .line 6
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
@@ -291,7 +259,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->o()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -302,17 +269,14 @@
 .method private maybeForceBuilderInitialization()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;->access$6200()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->getCh1FieldBuilder()Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->getCh2FieldBuilder()Lcom/google/protobuf/SingleFieldBuilder;
 
     :cond_0
@@ -324,7 +288,6 @@
 .method public bridge synthetic build()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->build()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     move-result-object v0
@@ -335,7 +298,6 @@
 .method public bridge synthetic build()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->build()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     move-result-object v0
@@ -346,12 +308,10 @@
 .method public build()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
     .locals 2
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->buildPartial()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessage;->isInitialized()Z
 
     move-result v1
@@ -360,7 +320,6 @@
 
     return-object v0
 
-    .line 5
     :cond_0
     invoke-static {v0}, Lcom/google/protobuf/AbstractMessage$Builder;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
 
@@ -372,7 +331,6 @@
 .method public bridge synthetic buildPartial()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->buildPartial()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     move-result-object v0
@@ -383,7 +341,6 @@
 .method public bridge synthetic buildPartial()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->buildPartial()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     move-result-object v0
@@ -394,14 +351,12 @@
 .method public buildPartial()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
     .locals 5
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p0, v1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;Lcom/ifengyu/intercom/protos/SharkProtos$a;)V
 
-    .line 4
     iget v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     and-int/lit8 v2, v1, 0x1
@@ -415,7 +370,6 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 5
     :goto_0
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->version_:I
 
@@ -429,7 +383,6 @@
 
     or-int/lit8 v3, v3, 0x2
 
-    .line 6
     :cond_1
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->result_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
 
@@ -443,7 +396,6 @@
 
     or-int/lit8 v3, v3, 0x4
 
-    .line 7
     :cond_2
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->option_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
@@ -457,7 +409,6 @@
 
     or-int/lit8 v3, v3, 0x8
 
-    .line 8
     :cond_3
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->deviceMode_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
 
@@ -471,7 +422,6 @@
 
     or-int/lit8 v3, v3, 0x10
 
-    .line 9
     :cond_4
     iget v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->stateMode_:I
 
@@ -485,20 +435,17 @@
 
     or-int/lit8 v3, v3, 0x20
 
-    .line 10
     :cond_5
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v2, :cond_6
 
-    .line 11
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     invoke-static {v0, v2}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;->access$6902(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     goto :goto_1
 
-    .line 12
     :cond_6
     invoke-virtual {v2}, Lcom/google/protobuf/SingleFieldBuilder;->build()Lcom/google/protobuf/GeneratedMessage;
 
@@ -517,20 +464,17 @@
 
     or-int/lit8 v3, v3, 0x40
 
-    .line 13
     :cond_7
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v2, :cond_8
 
-    .line 14
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     invoke-static {v0, v2}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;->access$7002(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     goto :goto_2
 
-    .line 15
     :cond_8
     invoke-virtual {v2}, Lcom/google/protobuf/SingleFieldBuilder;->build()Lcom/google/protobuf/GeneratedMessage;
 
@@ -549,16 +493,13 @@
 
     or-int/lit16 v3, v3, 0x80
 
-    .line 16
     :cond_9
     iget v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->currentChId_:I
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;->access$7102(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;I)I
 
-    .line 17
     invoke-static {v0, v3}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;->access$7202(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;I)I
 
-    .line 18
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onBuilt()V
 
     return-object v0
@@ -567,7 +508,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/AbstractMessage$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->clear()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -578,7 +518,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/GeneratedMessage$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->clear()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -589,7 +528,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->clear()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -600,7 +538,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 4
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->clear()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -611,65 +548,52 @@
 .method public clear()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 3
 
-    .line 5
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->clear()Lcom/google/protobuf/GeneratedMessage$Builder;
 
     const/4 v0, 0x0
 
-    .line 6
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->version_:I
 
-    .line 7
     iget v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     and-int/lit8 v1, v1, -0x2
 
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 8
     sget-object v2, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;->SHARK_ST_OK:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
 
     iput-object v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->result_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
 
     and-int/lit8 v1, v1, -0x3
 
-    .line 9
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 10
     sget-object v2, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;->SHARK_ST_UPDATE:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
     iput-object v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->option_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
     and-int/lit8 v1, v1, -0x5
 
-    .line 11
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 12
     sget-object v2, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;->SHARK_MODE_NORMAL:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
 
     iput-object v2, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->deviceMode_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
 
     and-int/lit8 v1, v1, -0x9
 
-    .line 13
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 14
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->stateMode_:I
 
     and-int/lit8 v1, v1, -0x11
 
-    .line 15
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 16
     iget-object v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v1, :cond_0
 
-    .line 17
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v1
@@ -678,11 +602,9 @@
 
     goto :goto_0
 
-    .line 18
     :cond_0
     invoke-virtual {v1}, Lcom/google/protobuf/SingleFieldBuilder;->clear()Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 19
     :goto_0
     iget v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
@@ -690,12 +612,10 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 20
     iget-object v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v1, :cond_1
 
-    .line 21
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v1
@@ -704,11 +624,9 @@
 
     goto :goto_1
 
-    .line 22
     :cond_1
     invoke-virtual {v1}, Lcom/google/protobuf/SingleFieldBuilder;->clear()Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 23
     :goto_1
     iget v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
@@ -716,12 +634,10 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 24
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->currentChId_:I
 
     and-int/lit16 v0, v1, -0x81
 
-    .line 25
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     return-object p0
@@ -730,28 +646,23 @@
 .method public clearCh1()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Lcom/google/protobuf/SingleFieldBuilder;->clear()Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 5
     :goto_0
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
@@ -765,28 +676,23 @@
 .method public clearCh2()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Lcom/google/protobuf/SingleFieldBuilder;->clear()Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 5
     :goto_0
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
@@ -800,7 +706,6 @@
 .method public clearCurrentChId()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x81
@@ -809,10 +714,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->currentChId_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -821,19 +724,16 @@
 .method public clearDeviceMode()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x9
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;->SHARK_MODE_NORMAL:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->deviceMode_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -842,19 +742,16 @@
 .method public clearOption()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x5
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;->SHARK_ST_UPDATE:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->option_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -863,19 +760,16 @@
 .method public clearResult()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x3
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;->SHARK_ST_OK:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->result_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -884,7 +778,6 @@
 .method public clearStateMode()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x11
@@ -893,10 +786,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->stateMode_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -905,7 +796,6 @@
 .method public clearVersion()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x2
@@ -914,10 +804,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->version_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -926,7 +814,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/AbstractMessage$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -937,7 +824,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/AbstractMessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -948,7 +834,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/GeneratedMessage$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -959,7 +844,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 4
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -970,7 +854,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 5
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -981,7 +864,6 @@
 .method public clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 2
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->create()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -1007,7 +889,6 @@
         }
     .end annotation
 
-    .line 6
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->clone()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
     move-result-object v0
@@ -1018,17 +899,14 @@
 .method public getCh1()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     return-object v0
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Lcom/google/protobuf/SingleFieldBuilder;->getMessage()Lcom/google/protobuf/GeneratedMessage;
 
@@ -1042,17 +920,14 @@
 .method public getCh1Builder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x20
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->getCh1FieldBuilder()Lcom/google/protobuf/SingleFieldBuilder;
 
     move-result-object v0
@@ -1069,12 +944,10 @@
 .method public getCh1OrBuilder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/google/protobuf/SingleFieldBuilder;->getMessageOrBuilder()Lcom/google/protobuf/MessageOrBuilder;
 
     move-result-object v0
@@ -1083,7 +956,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
@@ -1093,17 +965,14 @@
 .method public getCh2()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     return-object v0
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Lcom/google/protobuf/SingleFieldBuilder;->getMessage()Lcom/google/protobuf/GeneratedMessage;
 
@@ -1117,17 +986,14 @@
 .method public getCh2Builder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x40
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->getCh2FieldBuilder()Lcom/google/protobuf/SingleFieldBuilder;
 
     move-result-object v0
@@ -1144,12 +1010,10 @@
 .method public getCh2OrBuilder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/google/protobuf/SingleFieldBuilder;->getMessageOrBuilder()Lcom/google/protobuf/MessageOrBuilder;
 
     move-result-object v0
@@ -1158,7 +1022,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
@@ -1168,7 +1031,6 @@
 .method public getCurrentChId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->currentChId_:I
 
     return v0
@@ -1177,7 +1039,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     move-result-object v0
@@ -1188,7 +1049,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     move-result-object v0
@@ -1199,7 +1059,6 @@
 .method public getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
     .locals 1
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     move-result-object v0
@@ -1210,7 +1069,6 @@
 .method public getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->o()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -1221,7 +1079,6 @@
 .method public getDeviceMode()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->deviceMode_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
 
     return-object v0
@@ -1230,7 +1087,6 @@
 .method public getOption()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->option_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
     return-object v0
@@ -1239,7 +1095,6 @@
 .method public getResult()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->result_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
 
     return-object v0
@@ -1248,7 +1103,6 @@
 .method public getStateMode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->stateMode_:I
 
     return v0
@@ -1257,7 +1111,6 @@
 .method public getVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->version_:I
 
     return v0
@@ -1266,7 +1119,6 @@
 .method public hasCh1()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     const/16 v1, 0x20
@@ -1289,7 +1141,6 @@
 .method public hasCh2()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     const/16 v1, 0x40
@@ -1312,7 +1163,6 @@
 .method public hasCurrentChId()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     const/16 v1, 0x80
@@ -1335,7 +1185,6 @@
 .method public hasDeviceMode()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     const/16 v1, 0x8
@@ -1358,7 +1207,6 @@
 .method public hasOption()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     const/4 v1, 0x4
@@ -1381,7 +1229,6 @@
 .method public hasResult()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     const/4 v1, 0x2
@@ -1404,7 +1251,6 @@
 .method public hasStateMode()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     const/16 v1, 0x10
@@ -1427,7 +1273,6 @@
 .method public hasVersion()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     const/4 v1, 0x1
@@ -1448,7 +1293,6 @@
 .method protected internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->p()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -1457,7 +1301,6 @@
 
     const-class v2, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -1468,14 +1311,12 @@
 .method public mergeCh1(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     const/16 v1, 0x20
 
     if-nez v0, :cond_1
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     and-int/2addr v0, v1
@@ -1484,17 +1325,14 @@
 
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v2
 
     if-eq v0, v2, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 5
     invoke-static {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->newBuilder(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$Builder;
 
     move-result-object v0
@@ -1513,21 +1351,17 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 7
     :goto_0
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     goto :goto_1
 
-    .line 8
     :cond_1
     invoke-virtual {v0, p1}, Lcom/google/protobuf/SingleFieldBuilder;->mergeFrom(Lcom/google/protobuf/GeneratedMessage;)Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 9
     :goto_1
     iget p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
@@ -1541,14 +1375,12 @@
 .method public mergeCh2(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     const/16 v1, 0x40
 
     if-nez v0, :cond_1
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     and-int/2addr v0, v1
@@ -1557,17 +1389,14 @@
 
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v2
 
     if-eq v0, v2, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 5
     invoke-static {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->newBuilder(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$Builder;
 
     move-result-object v0
@@ -1586,21 +1415,17 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 7
     :goto_0
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     goto :goto_1
 
-    .line 8
     :cond_1
     invoke-virtual {v0, p1}, Lcom/google/protobuf/SingleFieldBuilder;->mergeFrom(Lcom/google/protobuf/GeneratedMessage;)Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 9
     :goto_1
     iget p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
@@ -1614,24 +1439,20 @@
 .method public setCh1(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$Builder;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v0, :cond_0
 
-    .line 8
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$Builder;->build()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 9
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     goto :goto_0
 
-    .line 10
     :cond_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$Builder;->build()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
@@ -1639,7 +1460,6 @@
 
     invoke-virtual {v0, p1}, Lcom/google/protobuf/SingleFieldBuilder;->setMessage(Lcom/google/protobuf/GeneratedMessage;)Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 11
     :goto_0
     iget p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
@@ -1653,17 +1473,14 @@
 .method public setCh1(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v0, :cond_1
 
     if-eqz p1, :cond_0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch1_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     goto :goto_0
@@ -1671,14 +1488,11 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 
-    .line 5
     :cond_1
     invoke-virtual {v0, p1}, Lcom/google/protobuf/SingleFieldBuilder;->setMessage(Lcom/google/protobuf/GeneratedMessage;)Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 6
     :goto_0
     iget p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
@@ -1692,24 +1506,20 @@
 .method public setCh2(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$Builder;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v0, :cond_0
 
-    .line 8
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$Builder;->build()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 9
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     goto :goto_0
 
-    .line 10
     :cond_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$Builder;->build()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
@@ -1717,7 +1527,6 @@
 
     invoke-virtual {v0, p1}, Lcom/google/protobuf/SingleFieldBuilder;->setMessage(Lcom/google/protobuf/GeneratedMessage;)Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 11
     :goto_0
     iget p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
@@ -1731,17 +1540,14 @@
 .method public setCh2(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2Builder_:Lcom/google/protobuf/SingleFieldBuilder;
 
     if-nez v0, :cond_1
 
     if-eqz p1, :cond_0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->ch2_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     goto :goto_0
@@ -1749,14 +1555,11 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 
-    .line 5
     :cond_1
     invoke-virtual {v0, p1}, Lcom/google/protobuf/SingleFieldBuilder;->setMessage(Lcom/google/protobuf/GeneratedMessage;)Lcom/google/protobuf/SingleFieldBuilder;
 
-    .line 6
     :goto_0
     iget p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
@@ -1770,17 +1573,14 @@
 .method public setCurrentChId(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x80
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->currentChId_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1791,17 +1591,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x8
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->deviceMode_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_MODE;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1809,7 +1606,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 .end method
 
@@ -1818,17 +1614,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x4
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->option_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1836,7 +1629,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 .end method
 
@@ -1845,17 +1637,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x2
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->result_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1863,24 +1652,20 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 .end method
 
 .method public setStateMode(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x10
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->stateMode_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1889,17 +1674,14 @@
 .method public setVersion(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$Builder;->version_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0

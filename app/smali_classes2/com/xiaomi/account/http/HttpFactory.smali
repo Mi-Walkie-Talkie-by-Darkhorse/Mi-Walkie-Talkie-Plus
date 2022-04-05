@@ -1,13 +1,11 @@
 .class public abstract Lcom/xiaomi/account/http/HttpFactory;
 .super Ljava/lang/Object;
-.source "HttpFactory.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -18,7 +16,6 @@
 .method public createHttpClient()Lcom/xiaomi/account/http/HttpClient;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/xiaomi/account/http/HttpClientConfig$Builder;
 
     invoke-direct {v0}, Lcom/xiaomi/account/http/HttpClientConfig$Builder;-><init>()V
@@ -37,7 +34,6 @@
 .method public createHttpClient(Landroid/net/Network;)Lcom/xiaomi/account/http/HttpClient;
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/xiaomi/account/http/HttpClientConfig$Builder;
 
     invoke-direct {v0}, Lcom/xiaomi/account/http/HttpClientConfig$Builder;-><init>()V

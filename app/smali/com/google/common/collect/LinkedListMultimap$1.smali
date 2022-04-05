@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/LinkedListMultimap$1;
 .super Ljava/util/AbstractSequentialList;
-.source "LinkedListMultimap.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/google/common/collect/LinkedListMultimap;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/LinkedListMultimap$1;->this$0:Lcom/google/common/collect/LinkedListMultimap;
 
     iput-object p2, p0, Lcom/google/common/collect/LinkedListMultimap$1;->val$key:Ljava/lang/Object;
@@ -53,7 +51,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/LinkedListMultimap$ValueForKeyIterator;
 
     iget-object v1, p0, Lcom/google/common/collect/LinkedListMultimap$1;->this$0:Lcom/google/common/collect/LinkedListMultimap;
@@ -68,7 +65,6 @@
 .method public size()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/LinkedListMultimap$1;->this$0:Lcom/google/common/collect/LinkedListMultimap;
 
     invoke-static {v0}, Lcom/google/common/collect/LinkedListMultimap;->access$600(Lcom/google/common/collect/LinkedListMultimap;)Ljava/util/Map;
@@ -89,7 +85,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget v0, v0, Lcom/google/common/collect/LinkedListMultimap$KeyList;->count:I
 

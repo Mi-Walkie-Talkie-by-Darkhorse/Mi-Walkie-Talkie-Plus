@@ -1,6 +1,5 @@
 .class Lcn/bingoogolapple/qrcode/core/CameraPreview$1;
 .super Ljava/lang/Object;
-.source "CameraPreview.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcn/bingoogolapple/qrcode/core/CameraPreview;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview$1;->this$0:Lcn/bingoogolapple/qrcode/core/CameraPreview;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview$1;->this$0:Lcn/bingoogolapple/qrcode/core/CameraPreview;
 
     invoke-virtual {v0}, Lcn/bingoogolapple/qrcode/core/CameraPreview;->showCameraPreview()V

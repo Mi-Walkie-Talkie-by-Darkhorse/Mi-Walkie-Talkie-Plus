@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/network/b;
 .super Ljava/lang/Object;
-.source "OnSettingActivityIsUpdate.java"
 
 
 # virtual methods

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/ServiceManager$1;
 .super Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
-.source "ServiceManager.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -37,7 +35,6 @@
 .method call(Lcom/google/common/util/concurrent/ServiceManager$Listener;)V
     .locals 0
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/ServiceManager$Listener;->healthy()V
 
     return-void
@@ -46,7 +43,6 @@
 .method bridge synthetic call(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/common/util/concurrent/ServiceManager$Listener;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/ServiceManager$1;->call(Lcom/google/common/util/concurrent/ServiceManager$Listener;)V

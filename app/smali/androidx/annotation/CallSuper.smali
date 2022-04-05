@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/CallSuper;
 .super Ljava/lang/Object;
-.source "CallSuper.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

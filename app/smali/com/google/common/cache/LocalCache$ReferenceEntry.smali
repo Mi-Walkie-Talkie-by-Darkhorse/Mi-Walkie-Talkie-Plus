@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/common/cache/LocalCache$ReferenceEntry;
 .super Ljava/lang/Object;
-.source "LocalCache.java"
 
 
 # annotations

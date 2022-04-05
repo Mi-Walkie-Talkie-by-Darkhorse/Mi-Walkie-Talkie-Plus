@@ -1,6 +1,5 @@
 .class final Lbutterknife/internal/ImmutableList;
 .super Ljava/util/AbstractList;
-.source "ImmutableList.java"
 
 # interfaces
 .implements Ljava/util/RandomAccess;
@@ -38,10 +37,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lbutterknife/internal/ImmutableList;->views:[Ljava/lang/Object;
 
     return-void
@@ -52,7 +49,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lbutterknife/internal/ImmutableList;->views:[Ljava/lang/Object;
 
     array-length v1, v0
@@ -89,7 +85,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lbutterknife/internal/ImmutableList;->views:[Ljava/lang/Object;
 
     aget-object p1, v0, p1
@@ -100,7 +95,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lbutterknife/internal/ImmutableList;->views:[Ljava/lang/Object;
 
     array-length v0, v0

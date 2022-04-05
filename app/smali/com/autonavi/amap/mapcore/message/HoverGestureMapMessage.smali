@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;
 .super Lcom/autonavi/amap/mapcore/message/GestureMapMessage;
-.source "HoverGestureMapMessage.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     const/16 v1, 0x100
@@ -38,15 +36,12 @@
 .method public constructor <init>(IF)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/amap/mapcore/message/GestureMapMessage;-><init>(I)V
 
     const/4 p1, 0x0
 
-    .line 2
     iput p1, p0, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;->angle_delta:F
 
-    .line 3
     iput p2, p0, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;->angle_delta:F
 
     return-void
@@ -55,7 +50,6 @@
 .method public static destory()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;->mPool:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/maploader/Pools$SimplePool;->destory()V
@@ -66,7 +60,6 @@
 .method public static obtain(IF)Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;->mPool:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->acquire()Ljava/lang/Object;
@@ -77,18 +70,15 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;
 
     invoke-direct {v0, p0, p1}, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;-><init>(IF)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/message/GestureMapMessage;->reset()V
 
-    .line 4
     :goto_0
     invoke-direct {v0, p0, p1}, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;->setParams(IF)V
 
@@ -98,10 +88,8 @@
 .method private setParams(IF)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/autonavi/amap/mapcore/message/GestureMapMessage;->setState(I)V
 
-    .line 2
     iput p2, p0, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;->angle_delta:F
 
     return-void
@@ -120,7 +108,6 @@
 .method public recycle()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/autonavi/amap/mapcore/message/HoverGestureMapMessage;->mPool:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0, p0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->release(Ljava/lang/Object;)Z
@@ -131,7 +118,6 @@
 .method public runCameraUpdate(Lcom/autonavi/ae/gmap/GLMapState;)V
     .locals 5
 
-    .line 1
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/GLMapState;->getCameraHeaderAngle()F
 
     move-result v0
@@ -163,7 +149,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/GLMapState;->getCameraHeaderAngle()F
 
@@ -177,7 +162,6 @@
 
     if-lez v1, :cond_2
 
-    .line 3
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/GLMapState;->getCameraHeaderAngle()F
 
     move-result v1
@@ -188,12 +172,10 @@
 
     const/high16 v0, 0x42200000    # 40.0f
 
-    .line 4
     :cond_2
     :goto_0
     invoke-virtual {p1, v0}, Lcom/autonavi/ae/gmap/GLMapState;->setCameraDegree(F)V
 
-    .line 5
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/GLMapState;->recalculate()V
 
     return-void

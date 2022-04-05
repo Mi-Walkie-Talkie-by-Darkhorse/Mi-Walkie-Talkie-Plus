@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/widget/RxSeekBar__SeekBarChangeObservableKt;
 .super Ljava/lang/Object;
-.source "SeekBarChangeObservable.kt"
 
 
 # annotations
@@ -60,7 +59,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/SeekBarChangeObservable;
 
     const/4 v1, 0x0
@@ -97,7 +95,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/SeekBarChangeObservable;
 
     const/4 v1, 0x0
@@ -138,7 +135,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/SeekBarChangeObservable;
 
     const/4 v1, 0x1

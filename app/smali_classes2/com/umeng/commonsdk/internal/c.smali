@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/internal/c;
 .super Ljava/lang/Object;
-.source "UMInternalDataProtocol.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/framework/UMLogDataProtocol;
@@ -39,7 +38,6 @@
 .method static constructor <clinit>()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/umeng/commonsdk/internal/c;->c()V
 
     return-void
@@ -48,12 +46,10 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
@@ -67,7 +63,6 @@
 .method static synthetic a(Lcom/umeng/commonsdk/internal/c;)Landroid/content/Context;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     return-object p0
@@ -85,7 +80,6 @@
         }
     .end annotation
 
-    .line 16
     :try_start_0
     invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -105,7 +99,6 @@
 .method private a(Landroid/content/Context;)V
     .locals 3
 
-    .line 5
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
@@ -113,7 +106,6 @@
 
     const-string v1, "appkey"
 
-    .line 6
     invoke-static {p1}, Lcom/umeng/commonsdk/service/UMGlobalContext;->getInstance(Landroid/content/Context;)Lcom/umeng/commonsdk/service/UMGlobalContext;
 
     move-result-object v2
@@ -126,7 +118,6 @@
 
     const-string v1, "app_version"
 
-    .line 7
     invoke-static {p1}, Lcom/umeng/commonsdk/service/UMGlobalContext;->getInstance(Landroid/content/Context;)Lcom/umeng/commonsdk/service/UMGlobalContext;
 
     move-result-object v2
@@ -141,12 +132,10 @@
 
     const-string v2, "Android"
 
-    .line 8
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const/4 v1, 0x0
 
-    .line 9
     sget-object v2, Lcom/umeng/commonsdk/statistics/UMServerURL;->ZCFG_PATH:Ljava/lang/String;
 
     invoke-static {p1, v0, v1, v2}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->buildZeroEnvelopeWithExtHeader(Landroid/content/Context;Lorg/json/JSONObject;Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
@@ -162,7 +151,6 @@
     :try_start_1
     const-string v1, "exception"
 
-    .line 10
     invoke-virtual {p1, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result p1
@@ -171,7 +159,6 @@
 
     const-string p1, "--->>> \u6784\u5efa\u96f6\u53f7\u62a5\u6587\u5931\u8d25."
 
-    .line 11
     invoke-static {v0, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -179,7 +166,6 @@
     :cond_0
     const-string p1, "--->>> \u6784\u5efa\u96f6\u53f7\u62a5\u6587 \u6210\u529f!!!"
 
-    .line 12
     invoke-static {v0, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -195,13 +181,11 @@
 
     return-void
 
-    .line 13
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p0
 
-    .line 14
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/umeng/commonsdk/internal/c$2;
@@ -210,7 +194,6 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 15
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     return-void
@@ -219,7 +202,6 @@
 .method public static b()Ljava/lang/String;
     .locals 5
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/internal/c;->e:Ljava/lang/Class;
 
     const-string v1, ""
@@ -239,14 +221,12 @@
     :try_start_0
     new-array v4, v3, [Ljava/lang/Object;
 
-    .line 2
     invoke-virtual {v2, v0, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     sget-object v2, Lcom/umeng/commonsdk/internal/c;->h:Ljava/lang/reflect/Method;
 
     new-array v3, v3, [Ljava/lang/Object;
@@ -269,7 +249,6 @@
 .method private static b(Landroid/content/Context;)V
     .locals 2
 
-    .line 4
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/umeng/commonsdk/internal/c$1;
@@ -278,7 +257,6 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     return-void
@@ -290,14 +268,12 @@
     :try_start_0
     const-string v0, "com.umeng.umzid.ZIDManager"
 
-    .line 1
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    .line 2
     sput-object v0, Lcom/umeng/commonsdk/internal/c;->e:Ljava/lang/Class;
 
     const-string v1, "getInstance"
@@ -306,17 +282,14 @@
 
     new-array v3, v2, [Ljava/lang/Class;
 
-    .line 3
     invoke-virtual {v0, v1, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     sput-object v0, Lcom/umeng/commonsdk/internal/c;->f:Ljava/lang/reflect/Method;
 
-    .line 5
     :cond_0
     sget-object v0, Lcom/umeng/commonsdk/internal/c;->e:Ljava/lang/Class;
 
@@ -336,10 +309,8 @@
 
     if-eqz v0, :cond_1
 
-    .line 6
     sput-object v0, Lcom/umeng/commonsdk/internal/c;->g:Ljava/lang/reflect/Method;
 
-    .line 7
     :cond_1
     sget-object v0, Lcom/umeng/commonsdk/internal/c;->e:Ljava/lang/Class;
 
@@ -353,7 +324,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 8
     sput-object v0, Lcom/umeng/commonsdk/internal/c;->h:Ljava/lang/reflect/Method;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -368,26 +338,22 @@
 
     const-string v0, "header_device_oaid"
 
-    .line 9
     invoke-static {v0}, Lcom/umeng/commonsdk/config/FieldManager;->allow(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 10
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-le v0, v1, :cond_0
 
-    .line 11
     new-instance v0, Lcom/umeng/commonsdk/internal/c$3;
 
     invoke-direct {v0, p0}, Lcom/umeng/commonsdk/internal/c$3;-><init>(Landroid/content/Context;)V
 
-    .line 12
     invoke-static {p0, v0}, Lcom/umeng/commonsdk/internal/c;->a(Landroid/content/Context;Lcom/umeng/commonsdk/listener/OnGetOaidListener;)V
 
     :cond_0
@@ -397,7 +363,6 @@
 .method private d()V
     .locals 12
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/ak;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/ak;
@@ -406,7 +371,6 @@
 
     const-string v1, "stf"
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/ak;->a(Ljava/lang/String;)Lcom/umeng/analytics/pro/al;
 
     move-result-object v2
@@ -417,42 +381,33 @@
 
     const-string v4, "--->>> [\u6709\u72b6\u6001]\u4e8c\u7ea7\u7f13\u5b58\u8bb0\u5f55\u6784\u5efa\u6210\u771f\u6b63\u4fe1\u5c01\u3002"
 
-    .line 3
     invoke-static {v3, v4}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     :try_start_0
     iget-object v4, v2, Lcom/umeng/analytics/pro/al;->a:Ljava/lang/String;
 
-    .line 5
     iget-object v10, v2, Lcom/umeng/analytics/pro/al;->b:Ljava/lang/String;
 
-    .line 6
     new-instance v7, Lorg/json/JSONObject;
 
     iget-object v5, v2, Lcom/umeng/analytics/pro/al;->c:Ljava/lang/String;
 
     invoke-direct {v7, v5}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 7
     new-instance v8, Lorg/json/JSONObject;
 
     iget-object v5, v2, Lcom/umeng/analytics/pro/al;->d:Ljava/lang/String;
 
     invoke-direct {v8, v5}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 8
     iget-object v9, v2, Lcom/umeng/analytics/pro/al;->e:Ljava/lang/String;
 
-    .line 9
     iget-object v11, v2, Lcom/umeng/analytics/pro/al;->f:Ljava/lang/String;
 
-    .line 10
     new-instance v5, Lcom/umeng/commonsdk/statistics/b;
 
     invoke-direct {v5}, Lcom/umeng/commonsdk/statistics/b;-><init>()V
 
-    .line 11
     iget-object v2, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -467,7 +422,6 @@
 
     const-string v5, "exception"
 
-    .line 12
     invoke-virtual {v2, v5}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v2
@@ -476,7 +430,6 @@
 
     const-string v2, "--->>> [\u6709\u72b6\u6001]\u4e8c\u7ea7\u7f13\u5b58\u8bb0\u5f55\u6784\u5efa\u771f\u6b63\u4fe1\u5c01 \u5931\u8d25\u3002\u5220\u9664\u4e8c\u7ea7\u7f13\u5b58\u8bb0\u5f55"
 
-    .line 13
     invoke-static {v3, v2}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
@@ -484,14 +437,11 @@
     :cond_0
     const-string v2, "--->>> [\u6709\u72b6\u6001]\u4e8c\u7ea7\u7f13\u5b58\u8bb0\u5f55\u6784\u5efa\u771f\u6b63\u4fe1\u5c01 \u6210\u529f! \u5220\u9664\u4e8c\u7ea7\u7f13\u5b58\u8bb0\u5f55\u3002"
 
-    .line 14
     invoke-static {v3, v2}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 15
     :goto_0
     invoke-virtual {v0, v1, v4}, Lcom/umeng/analytics/pro/ak;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 16
     invoke-virtual {v0}, Lcom/umeng/analytics/pro/ak;->b()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -504,12 +454,10 @@
 .method private d(Landroid/content/Context;)V
     .locals 10
 
-    .line 17
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 18
     invoke-static {p1}, Lcom/umeng/commonsdk/utils/UMUtils;->getAppkey(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p1
@@ -517,7 +465,6 @@
     :try_start_0
     const-string v1, "com.umeng.umzid.ZIDManager"
 
-    .line 19
     invoke-static {v1}, Lcom/umeng/commonsdk/internal/c;->a(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v1
@@ -528,7 +475,6 @@
 
     new-array v4, v3, [Ljava/lang/Class;
 
-    .line 20
     invoke-virtual {v1, v2, v4}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v2
@@ -537,7 +483,6 @@
 
     new-array v4, v3, [Ljava/lang/Object;
 
-    .line 21
     invoke-virtual {v2, v1, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -546,7 +491,6 @@
 
     const-string v4, "com.umeng.umzid.IZIDCompletionCallback"
 
-    .line 22
     invoke-static {v4}, Lcom/umeng/commonsdk/internal/c;->a(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v4
@@ -557,7 +501,6 @@
 
     new-array v7, v6, [Ljava/lang/Class;
 
-    .line 23
     const-class v8, Landroid/content/Context;
 
     aput-object v8, v7, v3
@@ -588,7 +531,6 @@
 
     aput-object p1, v4, v8
 
-    .line 24
     invoke-virtual {v1, v2, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -601,21 +543,18 @@
 .method private e()V
     .locals 2
 
-    .line 1
     sget-boolean v0, Lcom/umeng/commonsdk/internal/c;->i:Z
 
     const-string v1, "header_device_oaid"
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {v1}, Lcom/umeng/commonsdk/config/FieldManager;->allow(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
@@ -624,22 +563,18 @@
 
     const/4 v0, 0x1
 
-    .line 4
     sput-boolean v0, Lcom/umeng/commonsdk/internal/c;->i:Z
 
-    .line 5
     new-instance v0, Lcom/umeng/commonsdk/internal/c$4;
 
     invoke-direct {v0, p0}, Lcom/umeng/commonsdk/internal/c$4;-><init>(Lcom/umeng/commonsdk/internal/c;)V
 
-    .line 6
     iget-object v1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {v1, v0}, Lcom/umeng/commonsdk/internal/c;->a(Landroid/content/Context;Lcom/umeng/commonsdk/listener/OnGetOaidListener;)V
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-static {v1}, Lcom/umeng/commonsdk/config/FieldManager;->allow(Ljava/lang/String;)Z
 
@@ -649,7 +584,6 @@
 
     const/4 v0, 0x0
 
-    .line 8
     sput-boolean v0, Lcom/umeng/commonsdk/internal/c;->i:Z
 
     :cond_1
@@ -660,12 +594,10 @@
 .method private static e(Landroid/content/Context;)V
     .locals 2
 
-    .line 9
     invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
     move-result-object p0
 
-    .line 10
     new-instance v0, Ljava/io/File;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -692,14 +624,12 @@
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 11
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p0
 
     if-nez p0, :cond_0
 
-    .line 12
     :try_start_0
     invoke-virtual {v0}, Ljava/io/File;->createNewFile()Z
     :try_end_0
@@ -715,14 +645,12 @@
 
     const-string v0, "header_device_oaid"
 
-    .line 1
     invoke-static {v0}, Lcom/umeng/commonsdk/config/FieldManager;->allow(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
@@ -731,18 +659,14 @@
 
     const/4 v0, 0x1
 
-    .line 3
     sput-boolean v0, Lcom/umeng/commonsdk/internal/c;->i:Z
 
-    .line 4
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigureImpl;->registerInterruptFlag()V
 
-    .line 5
     iget-object v1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/umeng/commonsdk/UMConfigureImpl;->init(Landroid/content/Context;)V
 
-    .line 6
     sget v1, Lcom/umeng/commonsdk/internal/c;->b:I
 
     add-int/2addr v1, v0
@@ -753,18 +677,14 @@
 
     const-string v1, "--->>> \u8981\u8bfb\u53d6 oaid\uff0c\u9700\u7b49\u5f85\u8bfb\u53d6\u7ed3\u679c."
 
-    .line 7
     invoke-static {v0, v1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
     new-instance v0, Lcom/umeng/commonsdk/internal/c$5;
 
     invoke-direct {v0, p0}, Lcom/umeng/commonsdk/internal/c$5;-><init>(Lcom/umeng/commonsdk/internal/c;)V
 
-    .line 9
     invoke-static {v0}, Lcom/umeng/commonsdk/UMConfigureImpl;->registerMessageSendListener(Lcom/umeng/commonsdk/utils/onMessageSendListener;)V
 
-    .line 10
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/internal/c;->b(Landroid/content/Context;)V
@@ -776,15 +696,12 @@
 .method private g()V
     .locals 1
 
-    .line 1
     sget v0, Lcom/umeng/commonsdk/internal/c;->b:I
 
     if-gtz v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/umeng/commonsdk/internal/c;->h()V
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-direct {p0, v0}, Lcom/umeng/commonsdk/internal/c;->d(Landroid/content/Context;)V
@@ -800,10 +717,8 @@
 
     const-string v1, "--->>> \u771f\u5b9e\u6784\u5efa\u6761\u4ef6\u6ee1\u8db3\uff0c\u5f00\u59cb\u6784\u5efa\u4e1a\u52a1\u4fe1\u5c01\u3002"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/utils/UMUtils;->isMainProgress(Landroid/content/Context;)Z
@@ -812,37 +727,30 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/internal/c;->e(Landroid/content/Context;)V
 
-    .line 4
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/a;->a(Landroid/content/Context;)V
 
-    .line 5
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     const/16 v1, 0x2010
 
-    .line 6
     invoke-static {v0}, Lcom/umeng/analytics/CoreProtocol;->getInstance(Landroid/content/Context;)Lcom/umeng/analytics/CoreProtocol;
 
     move-result-object v2
 
     const/4 v3, 0x0
 
-    .line 7
     invoke-static {v0, v1, v2, v3}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
-    .line 8
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     const v1, 0x8011
 
-    .line 9
     invoke-static {v0}, Lcom/umeng/commonsdk/internal/b;->a(Landroid/content/Context;)Lcom/umeng/commonsdk/internal/b;
 
     move-result-object v2
@@ -851,7 +759,6 @@
 
     move-result-object v2
 
-    .line 10
     invoke-static {v0, v1, v2, v3}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
     :cond_0
@@ -863,7 +770,6 @@
 .method public a()Ljava/lang/String;
     .locals 6
 
-    .line 2
     sget-object v0, Lcom/umeng/commonsdk/internal/c;->e:Ljava/lang/Class;
 
     const-string v1, ""
@@ -883,14 +789,12 @@
     :try_start_0
     new-array v4, v3, [Ljava/lang/Object;
 
-    .line 3
     invoke-virtual {v2, v0, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     sget-object v2, Lcom/umeng/commonsdk/internal/c;->g:Ljava/lang/reflect/Method;
 
     const/4 v4, 0x1
@@ -935,7 +839,6 @@
 
     const-string v0, "com.umeng.commonsdk.internal.utils.UMInternalUtilsAgent"
 
-    .line 1
     const-class v1, Ljava/lang/String;
 
     const/4 v2, 0x1
@@ -963,7 +866,6 @@
     :pswitch_0
     goto/16 :goto_1
 
-    .line 2
     :pswitch_1
     :try_start_0
     iget-object p1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
@@ -977,20 +879,16 @@
     :pswitch_2
     const-string p1, "--->>> \u6b63\u5e38\u51b7\u542f\u52a8\u6d41\u7a0b\uff0c\u63a5\u6536\u5230\u4e91\u63a7\u914d\u7f6e\u52a0\u8f7d\u6210\u529f\u901a\u77e5\u3002"
 
-    .line 3
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     iget-object p1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/internal/c;->c(Landroid/content/Context;)V
 
-    .line 5
     iget-object p1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/a;->a(Landroid/content/Context;)V
 
-    .line 6
     iget-object p1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/umeng/commonsdk/internal/c;->d(Landroid/content/Context;)V
@@ -1000,17 +898,14 @@
     :pswitch_3
     const-string p1, "--->>> \u6210\u529f\u63a5\u6536\u5230(OAID)\u8bfb\u53d6\u7ed3\u675f\u901a\u77e5\u3002"
 
-    .line 7
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
     sget p1, Lcom/umeng/commonsdk/internal/c;->b:I
 
     sub-int/2addr p1, v2
 
     sput p1, Lcom/umeng/commonsdk/internal/c;->b:I
 
-    .line 9
     invoke-direct {p0}, Lcom/umeng/commonsdk/internal/c;->g()V
 
     goto/16 :goto_1
@@ -1018,25 +913,20 @@
     :pswitch_4
     const-string p1, "--->>> \u4e91\u63a7\u4e0b\u53d1\u53c2\u6570\u66f4\u65b0\uff0c\u89e6\u53d1 \u4f2a\u51b7\u542f\u52a8\u3002"
 
-    .line 10
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
     invoke-static {}, Lcom/umeng/commonsdk/statistics/b;->a()V
 
-    .line 12
     invoke-direct {p0}, Lcom/umeng/commonsdk/internal/c;->e()V
 
     const-string p1, "header_foreground_count"
 
-    .line 13
     invoke-static {p1}, Lcom/umeng/commonsdk/config/FieldManager;->allow(Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 14
     invoke-static {}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->eventHasExist()Z
 
     move-result p1
@@ -1045,15 +935,12 @@
 
     const-string p1, "--->>> \u4e91\u63a7\u4e0b\u53d1\u53c2\u6570\u66f4\u65b0 \u524d\u53f0\u8ba1\u6570\u5668\u529f\u80fd \u6253\u5f00\uff0c\u89e6\u53d1 5\u79d2\u5468\u671f\u68c0\u67e5\u673a\u5236"
 
-    .line 15
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 16
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     const/16 v1, 0x2015
 
-    .line 17
     invoke-static {v0}, Lcom/umeng/analytics/CoreProtocol;->getInstance(Landroid/content/Context;)Lcom/umeng/analytics/CoreProtocol;
 
     move-result-object v2
@@ -1062,13 +949,11 @@
 
     const-wide/16 v4, 0x1388
 
-    .line 18
     invoke-static/range {v0 .. v5}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEventEx(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;J)V
 
     :cond_0
     const-string p1, "header_first_resume"
 
-    .line 19
     invoke-static {p1}, Lcom/umeng/commonsdk/config/FieldManager;->allow(Ljava/lang/String;)Z
 
     move-result p1
@@ -1077,10 +962,8 @@
 
     const-string p1, "--->>> \u4e91\u63a7\u4e0b\u53d1\u53c2\u6570\u66f4\u65b0 FirstResume\u529f\u80fd \u6253\u5f00\uff0c\u89e6\u53d1 trigger"
 
-    .line 20
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 21
     iget-object p1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/analytics/pro/k;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/k;
@@ -1097,36 +980,30 @@
     :try_start_1
     const-string p1, "--->>> \u89e6\u53d12\u53f7\u4ed3\u9057\u7559\u4fe1\u5c01\u68c0\u67e5\u52a8\u4f5c\u3002"
 
-    .line 22
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 23
     iget-object p1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {p1, v5}, Lcom/umeng/commonsdk/stateless/d;->a(Landroid/content/Context;Z)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 24
     iget-object p2, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {p2, v2}, Lcom/umeng/commonsdk/stateless/d;->a(Landroid/content/Context;Z)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 25
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 26
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 27
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p1
@@ -1141,7 +1018,6 @@
 
     const/4 v5, 0x1
 
-    .line 28
     :cond_1
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1149,12 +1025,10 @@
 
     if-nez p1, :cond_2
 
-    .line 29
     new-instance p1, Ljava/io/File;
 
     invoke-direct {p1, p2}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 30
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result p2
@@ -1175,21 +1049,18 @@
     :goto_0
     if-eqz v2, :cond_4
 
-    .line 31
     invoke-static {}, Lcom/umeng/commonsdk/stateless/b;->a()Z
 
     move-result p1
 
     if-nez p1, :cond_3
 
-    .line 32
     new-instance p1, Lcom/umeng/commonsdk/stateless/b;
 
     iget-object p2, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-direct {p1, p2}, Lcom/umeng/commonsdk/stateless/b;-><init>(Landroid/content/Context;)V
 
-    .line 33
     invoke-static {}, Lcom/umeng/commonsdk/stateless/b;->b()V
 
     goto/16 :goto_1
@@ -1197,7 +1068,6 @@
     :cond_3
     const-string p1, "--->>> \u89e6\u53d12\u53f7\u4ed3\u9057\u7559\u4fe1\u5c01\u68c0\u67e5\uff0cSender\u5df2\u521b\u5efa\uff0c\u4e0d\u9700\u8981\u5904\u7406\u3002"
 
-    .line 34
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
@@ -1205,14 +1075,12 @@
     :cond_4
     const-string p1, "--->>> \u89e6\u53d12\u53f7\u4ed3\u9057\u7559\u4fe1\u5c01\u68c0\u67e5\uff0c\u6ca1\u6709\u9700\u8981\u5904\u7406\u7684\u76ee\u5f55\uff0c\u4e0d\u9700\u8981\u5904\u7406\u3002"
 
-    .line 35
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     goto/16 :goto_1
 
-    .line 36
     :pswitch_6
     iget-object p2, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
@@ -1223,10 +1091,8 @@
     :pswitch_7
     const-string p1, "--->>> [\u6709\u72b6\u6001]\u63a5\u6536\u5230\u6d88\u8d39\u4e8c\u7ea7\u7f13\u5b58\u6570\u636e\u901a\u77e5."
 
-    .line 37
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 38
     iget-object p1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/analytics/pro/ak;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/ak;
@@ -1241,28 +1107,23 @@
 
     const-string p1, "--->>> [\u6709\u72b6\u6001]\u5df2\u6d88\u8d39\u5b8c\u6bd5,\u4e8c\u7ea7\u7f13\u5b58\u6570\u636e\u5e93\u4e3a\u7a7a."
 
-    .line 39
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 40
     :cond_5
     invoke-direct {p0}, Lcom/umeng/commonsdk/internal/c;->d()V
 
     const p1, 0x8011
 
-    .line 41
     invoke-static {p1}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->eventHasExist(I)Z
 
     move-result p2
 
     if-nez p2, :cond_7
 
-    .line 42
     iget-object p2, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
-    .line 43
     invoke-static {p2}, Lcom/umeng/commonsdk/internal/b;->a(Landroid/content/Context;)Lcom/umeng/commonsdk/internal/b;
 
     move-result-object v0
@@ -1273,7 +1134,6 @@
 
     const/4 v1, 0x0
 
-    .line 44
     invoke-static {p2, p1, v0, v1}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
     goto/16 :goto_1
@@ -1281,25 +1141,20 @@
     :pswitch_8
     const-string p1, "--->>> \u96f6\u53f7\u62a5\u6587\u6d41\u7a0b\uff0c\u63a5\u6536\u5230\u4e91\u63a7\u914d\u7f6e\u52a0\u8f7d\u6210\u529f\u901a\u77e5(\u6210\u529f\u6536\u5230\u96f6\u53f7\u62a5\u6587\u5e94\u7b54)\u3002"
 
-    .line 45
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 46
     invoke-direct {p0}, Lcom/umeng/commonsdk/internal/c;->f()V
 
-    .line 47
     sget p1, Lcom/umeng/commonsdk/internal/c;->b:I
 
     sub-int/2addr p1, v2
 
     sput p1, Lcom/umeng/commonsdk/internal/c;->b:I
 
-    .line 48
     invoke-direct {p0}, Lcom/umeng/commonsdk/internal/c;->g()V
 
     goto/16 :goto_1
 
-    .line 49
     :pswitch_9
     iget-object p1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
@@ -1313,10 +1168,8 @@
 
     const-string p1, "--->>> \u6784\u5efa\u96f6\u53f7\u62a5\u6587"
 
-    .line 50
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 51
     iget-object p1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-direct {p0, p1}, Lcom/umeng/commonsdk/internal/c;->a(Landroid/content/Context;)V
@@ -1326,16 +1179,13 @@
     :cond_6
     const-string p1, "--->>> \u96f6\u53f7\u62a5\u6587\u4fe1\u5c01\u6587\u4ef6\u5df2\u5b58\u5728\uff0c\u5c1d\u8bd5\u53d1\u9001\u4e4b!"
 
-    .line 52
     invoke-static {v7, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
 
-    .line 53
     :pswitch_a
     check-cast p1, Lcom/umeng/commonsdk/vchannel/b;
 
-    .line 54
     iget-object p2, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {p2, p1}, Lcom/umeng/commonsdk/vchannel/Sender;->handleEvent(Landroid/content/Context;Lcom/umeng/commonsdk/vchannel/b;)V
@@ -1348,10 +1198,8 @@
 
     aput-object v3, p1, v5
 
-    .line 55
     invoke-static {v4, p1}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 56
     new-instance p1, Lorg/json/JSONObject;
 
     invoke-direct {p1}, Lorg/json/JSONObject;-><init>()V
@@ -1360,25 +1208,20 @@
 
     const-string v0, "1.2.0"
 
-    .line 57
     invoke-virtual {p1, p2, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 58
     new-instance p2, Lorg/json/JSONObject;
 
     invoke-direct {p2}, Lorg/json/JSONObject;-><init>()V
 
-    .line 59
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     const-string v1, "inner"
 
-    .line 60
     invoke-virtual {p2, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 61
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     invoke-static {v0, p1, p2}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->buildEnvelopeWithExtHeader(Landroid/content/Context;Lorg/json/JSONObject;Lorg/json/JSONObject;)Lorg/json/JSONObject;
@@ -1389,7 +1232,6 @@
 
     const-string p2, "exception"
 
-    .line 62
     invoke-virtual {p1, p2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result p1
@@ -1402,14 +1244,12 @@
 
     aput-object p2, p1, v5
 
-    .line 63
     invoke-static {v4, p1}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
     goto/16 :goto_1
 
-    .line 64
     :pswitch_c
     iget-object p2, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
@@ -1419,14 +1259,12 @@
 
     const-string v0, "info"
 
-    .line 65
     invoke-virtual {p2, v0, v5}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p2
 
     if-eqz p2, :cond_7
 
-    .line 66
     invoke-interface {p2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object p2
@@ -1447,7 +1285,6 @@
     :try_start_3
     const-string p2, "com.umeng.commonsdk.internal.utils.InfoPreferenceAgent"
 
-    .line 67
     invoke-static {p2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object p2
@@ -1458,7 +1295,6 @@
 
     new-array v3, v6, [Ljava/lang/Class;
 
-    .line 68
     const-class v4, Landroid/content/Context;
 
     aput-object v4, v3, v5
@@ -1469,12 +1305,10 @@
 
     move-result-object v0
 
-    .line 69
     check-cast p1, Ljava/lang/String;
 
     new-array v1, v6, [Ljava/lang/Object;
 
-    .line 70
     iget-object v3, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     aput-object v3, v1, v5
@@ -1488,7 +1322,6 @@
     :pswitch_e
     const-string p1, "com.umeng.commonsdk.internal.utils.ApplicationLayerUtilAgent"
 
-    .line 71
     invoke-static {p1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object p1
@@ -1499,7 +1332,6 @@
 
     new-array v0, v2, [Ljava/lang/Class;
 
-    .line 72
     const-class v1, Landroid/content/Context;
 
     aput-object v1, v0, v5
@@ -1510,7 +1342,6 @@
 
     new-array v0, v2, [Ljava/lang/Object;
 
-    .line 73
     iget-object v1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     aput-object v1, v0, v5
@@ -1525,7 +1356,6 @@
     :pswitch_f
     new-array p2, v2, [Ljava/lang/Object;
 
-    .line 74
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1548,7 +1378,6 @@
 
     invoke-static {v4, p2}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 75
     :try_start_4
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -1560,7 +1389,6 @@
 
     new-array v3, v6, [Ljava/lang/Class;
 
-    .line 76
     const-class v4, Landroid/content/Context;
 
     aput-object v4, v3, v5
@@ -1571,12 +1399,10 @@
 
     move-result-object v0
 
-    .line 77
     check-cast p1, Ljava/lang/String;
 
     new-array v1, v6, [Ljava/lang/Object;
 
-    .line 78
     iget-object v3, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     aput-object v3, v1, v5
@@ -1593,7 +1419,6 @@
     :pswitch_10
     new-array p2, v2, [Ljava/lang/Object;
 
-    .line 79
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1616,7 +1441,6 @@
 
     invoke-static {v4, p2}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 80
     :try_start_5
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -1628,7 +1452,6 @@
 
     new-array v3, v6, [Ljava/lang/Class;
 
-    .line 81
     const-class v4, Landroid/content/Context;
 
     aput-object v4, v3, v5
@@ -1639,12 +1462,10 @@
 
     move-result-object v0
 
-    .line 82
     check-cast p1, Ljava/lang/String;
 
     new-array v1, v6, [Ljava/lang/Object;
 
-    .line 83
     iget-object v3, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     aput-object v3, v1, v5
@@ -1664,7 +1485,6 @@
 
     aput-object v3, p1, v5
 
-    .line 84
     invoke-static {v4, p1}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_0
@@ -1672,7 +1492,6 @@
     :try_start_7
     const-string p1, "com.umeng.commonsdk.internal.UMInternalManagerAgent"
 
-    .line 85
     invoke-static {p1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object p1
@@ -1683,7 +1502,6 @@
 
     new-array v0, v2, [Ljava/lang/Class;
 
-    .line 86
     const-class v1, Landroid/content/Context;
 
     aput-object v1, v0, v5
@@ -1694,7 +1512,6 @@
 
     new-array v0, v2, [Ljava/lang/Object;
 
-    .line 87
     iget-object v1, p0, Lcom/umeng/commonsdk/internal/c;->a:Landroid/content/Context;
 
     aput-object v1, v0, v5

@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/ActionBarOverlayLayout$a;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "ActionBarOverlayLayout.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/ActionBarOverlayLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$a;->a:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -35,7 +33,6 @@
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$a;->a:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
     const/4 v0, 0x0
@@ -44,7 +41,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p1, Landroidx/appcompat/widget/ActionBarOverlayLayout;->k:Z
 
     return-void
@@ -53,7 +49,6 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/ActionBarOverlayLayout$a;->a:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 
     const/4 v0, 0x0
@@ -62,7 +57,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p1, Landroidx/appcompat/widget/ActionBarOverlayLayout;->k:Z
 
     return-void

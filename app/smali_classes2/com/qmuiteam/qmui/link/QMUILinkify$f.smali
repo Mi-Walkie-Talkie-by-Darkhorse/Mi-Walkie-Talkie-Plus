@@ -1,6 +1,5 @@
 .class final Lcom/qmuiteam/qmui/link/QMUILinkify$f;
 .super Ljava/lang/Object;
-.source "QMUILinkify.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public final a(Lcom/qmuiteam/qmui/link/QMUILinkify$g;Lcom/qmuiteam/qmui/link/QMUILinkify$g;)I
     .locals 4
 
-    .line 1
     iget v0, p1, Lcom/qmuiteam/qmui/link/QMUILinkify$g;->b:I
 
     iget v1, p2, Lcom/qmuiteam/qmui/link/QMUILinkify$g;->b:I
@@ -59,7 +56,6 @@
 
     return v3
 
-    .line 2
     :cond_1
     iget p1, p1, Lcom/qmuiteam/qmui/link/QMUILinkify$g;->c:I
 
@@ -83,7 +79,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/qmuiteam/qmui/link/QMUILinkify$g;
 
     check-cast p2, Lcom/qmuiteam/qmui/link/QMUILinkify$g;

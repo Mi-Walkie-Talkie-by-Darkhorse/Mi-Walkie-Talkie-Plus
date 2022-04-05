@@ -1,6 +1,5 @@
 .class Landroidx/media/MediaBrowserServiceCompat$d;
 .super Landroidx/media/MediaBrowserServiceCompat$m;
-.source "MediaBrowserServiceCompat.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>(Landroidx/media/MediaBrowserServiceCompat;Ljava/lang/Object;Landroid/support/v4/os/ResultReceiver;)V
     .locals 0
 
-    .line 1
     iput-object p3, p0, Landroidx/media/MediaBrowserServiceCompat$d;->f:Landroid/support/v4/os/ResultReceiver;
 
     invoke-direct {p0, p2}, Landroidx/media/MediaBrowserServiceCompat$m;-><init>(Ljava/lang/Object;)V
@@ -43,7 +41,6 @@
 .method a(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 2
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$d;->f:Landroid/support/v4/os/ResultReceiver;
 
     const/4 v1, -0x1
@@ -56,7 +53,6 @@
 .method bridge synthetic a(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Landroid/os/Bundle;
 
     invoke-virtual {p0, p1}, Landroidx/media/MediaBrowserServiceCompat$d;->c(Landroid/os/Bundle;)V
@@ -67,7 +63,6 @@
 .method c(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$d;->f:Landroid/support/v4/os/ResultReceiver;
 
     const/4 v1, 0x0

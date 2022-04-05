@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/escape/Escaper;
 .super Ljava/lang/Object;
-.source "Escaper.java"
 
 
 # annotations
@@ -28,10 +27,8 @@
 .method protected constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/common/escape/Escaper$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/escape/Escaper$1;-><init>(Lcom/google/common/escape/Escaper;)V
@@ -55,7 +52,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/escape/Escaper;->asFunction:Lcom/google/common/base/Function;
 
     return-object v0

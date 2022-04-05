@@ -1,6 +1,5 @@
 .class final Lcom/google/common/reflect/ClassPath$Scanner;
 .super Ljava/lang/Object;
-.source "ClassPath.java"
 
 
 # annotations
@@ -43,10 +42,8 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/ImmutableSortedSet$Builder;
 
     invoke-static {}, Lcom/google/common/collect/Ordering;->usingToString()Lcom/google/common/collect/Ordering;
@@ -57,7 +54,6 @@
 
     iput-object v0, p0, Lcom/google/common/reflect/ClassPath$Scanner;->resources:Lcom/google/common/collect/ImmutableSortedSet$Builder;
 
-    .line 3
     invoke-static {}, Lcom/google/common/collect/Sets;->newHashSet()Ljava/util/HashSet;
 
     move-result-object v0
@@ -78,12 +74,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/net/URI;
 
     invoke-direct {v0, p1}, Ljava/net/URI;-><init>(Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {v0}, Ljava/net/URI;->isAbsolute()Z
 
     move-result v1
@@ -92,7 +86,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/io/File;
 
@@ -140,20 +133,17 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->of()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p0
 
     return-object p0
 
-    .line 2
     :cond_0
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->builder()Lcom/google/common/collect/ImmutableSet$Builder;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {p1}, Ljava/util/jar/Manifest;->getMainAttributes()Ljava/util/jar/Attributes;
 
     move-result-object p1
@@ -170,7 +160,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 4
     invoke-static {}, Lcom/google/common/reflect/ClassPath;->access$200()Lcom/google/common/base/Splitter;
 
     move-result-object v1
@@ -196,7 +185,6 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 5
     :try_start_0
     invoke-static {p0, v1}, Lcom/google/common/reflect/ClassPath$Scanner;->getClassPathEntry(Ljava/io/File;Ljava/lang/String;)Ljava/net/URI;
 
@@ -204,12 +192,10 @@
     :try_end_0
     .catch Ljava/net/URISyntaxException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 6
     invoke-virtual {v0, v1}, Lcom/google/common/collect/ImmutableSet$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet$Builder;
 
     goto :goto_0
 
-    .line 7
     :catch_0
     invoke-static {}, Lcom/google/common/reflect/ClassPath;->access$100()Ljava/util/logging/Logger;
 
@@ -243,7 +229,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_2
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableSet$Builder;->build()Lcom/google/common/collect/ImmutableSet;
 
@@ -260,7 +245,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->of()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -292,12 +276,10 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p1}, Ljava/io/File;->getCanonicalFile()Ljava/io/File;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {p4, v0}, Lcom/google/common/collect/ImmutableCollection;->contains(Ljava/lang/Object;)Z
 
     move-result v1
@@ -306,7 +288,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
@@ -314,7 +295,6 @@
 
     if-nez v1, :cond_1
 
-    .line 5
     invoke-static {}, Lcom/google/common/reflect/ClassPath;->access$100()Ljava/util/logging/Logger;
 
     move-result-object p2
@@ -351,7 +331,6 @@
 
     return-void
 
-    .line 6
     :cond_1
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->builder()Lcom/google/common/collect/ImmutableSet$Builder;
 
@@ -369,7 +348,6 @@
 
     move-result-object p1
 
-    .line 7
     array-length p4, v1
 
     const/4 v0, 0x0
@@ -379,19 +357,16 @@
 
     aget-object v2, v1, v0
 
-    .line 8
     invoke-virtual {v2}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 9
     invoke-virtual {v2}, Ljava/io/File;->isDirectory()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 10
     invoke-static {p3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v4
@@ -440,7 +415,6 @@
 
     goto :goto_2
 
-    .line 11
     :cond_2
     invoke-static {p3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -472,14 +446,12 @@
     :goto_1
     const-string v3, "META-INF/MANIFEST.MF"
 
-    .line 12
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_4
 
-    .line 13
     iget-object v3, p0, Lcom/google/common/reflect/ClassPath$Scanner;->resources:Lcom/google/common/collect/ImmutableSortedSet$Builder;
 
     invoke-static {v2, p2}, Lcom/google/common/reflect/ClassPath$ResourceInfo;->of(Ljava/lang/String;Ljava/lang/ClassLoader;)Lcom/google/common/reflect/ClassPath$ResourceInfo;
@@ -506,7 +478,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/util/jar/JarFile;
 
@@ -514,7 +485,6 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 2
     :try_start_1
     invoke-virtual {v0}, Ljava/util/jar/JarFile;->getManifest()Ljava/util/jar/Manifest;
 
@@ -541,18 +511,15 @@
 
     check-cast v1, Ljava/net/URI;
 
-    .line 3
     invoke-virtual {p0, v1, p2}, Lcom/google/common/reflect/ClassPath$Scanner;->scan(Ljava/net/URI;Ljava/lang/ClassLoader;)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Ljava/util/jar/JarFile;->entries()Ljava/util/Enumeration;
 
     move-result-object p1
 
-    .line 5
     :cond_1
     :goto_1
     invoke-interface {p1}, Ljava/util/Enumeration;->hasMoreElements()Z
@@ -561,14 +528,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 6
     invoke-interface {p1}, Ljava/util/Enumeration;->nextElement()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/util/jar/JarEntry;
 
-    .line 7
     invoke-virtual {v1}, Ljava/util/jar/JarEntry;->isDirectory()Z
 
     move-result v2
@@ -589,7 +554,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_2
     iget-object v2, p0, Lcom/google/common/reflect/ClassPath$Scanner;->resources:Lcom/google/common/collect/ImmutableSortedSet$Builder;
 
@@ -607,7 +571,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_3
     :try_start_2
     invoke-virtual {v0}, Ljava/util/jar/JarFile;->close()V
@@ -625,7 +588,6 @@
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
 
-    .line 10
     :catch_1
     throw p1
 
@@ -646,7 +608,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/ClassPath$Scanner;->resources:Lcom/google/common/collect/ImmutableSortedSet$Builder;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableSortedSet$Builder;->build()Lcom/google/common/collect/ImmutableSortedSet;
@@ -664,7 +625,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/net/URI;->getScheme()Ljava/lang/String;
 
     move-result-object v0
@@ -685,7 +645,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/net/URI;)V
@@ -707,7 +666,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -716,7 +674,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Ljava/io/File;->isDirectory()Z
 
@@ -724,12 +681,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-direct {p0, p1, p2}, Lcom/google/common/reflect/ClassPath$Scanner;->scanDirectory(Ljava/io/File;Ljava/lang/ClassLoader;)V
 
     goto :goto_0
 
-    .line 4
     :cond_1
     invoke-direct {p0, p1, p2}, Lcom/google/common/reflect/ClassPath$Scanner;->scanJar(Ljava/io/File;Ljava/lang/ClassLoader;)V
 

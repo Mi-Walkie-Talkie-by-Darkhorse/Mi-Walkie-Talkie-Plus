@@ -1,6 +1,5 @@
 .class public Lcom/google/common/base/internal/Finalizer;
 .super Ljava/lang/Object;
-.source "Finalizer.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -50,7 +49,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/common/base/internal/Finalizer;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -63,7 +61,6 @@
 
     sput-object v0, Lcom/google/common/base/internal/Finalizer;->logger:Ljava/util/logging/Logger;
 
-    .line 2
     invoke-static {}, Lcom/google/common/base/internal/Finalizer;->getInheritableThreadLocalsField()Ljava/lang/reflect/Field;
 
     move-result-object v0
@@ -89,20 +86,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lcom/google/common/base/internal/Finalizer;->queue:Ljava/lang/ref/ReferenceQueue;
 
-    .line 3
     new-instance p2, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object p2, p0, Lcom/google/common/base/internal/Finalizer;->finalizableReferenceClassReference:Ljava/lang/ref/WeakReference;
 
-    .line 4
     iput-object p3, p0, Lcom/google/common/base/internal/Finalizer;->frqReference:Ljava/lang/ref/PhantomReference;
 
     return-void
@@ -118,7 +111,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/base/internal/Finalizer;->getFinalizeReferentMethod()Ljava/lang/reflect/Method;
 
     move-result-object v0
@@ -129,11 +121,9 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Ljava/lang/ref/Reference;->clear()V
 
-    .line 3
     iget-object v2, p0, Lcom/google/common/base/internal/Finalizer;->frqReference:Ljava/lang/ref/PhantomReference;
 
     if-ne p1, v2, :cond_1
@@ -144,7 +134,6 @@
     :try_start_0
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 4
     invoke-virtual {v0, p1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -154,7 +143,6 @@
     :catchall_0
     move-exception p1
 
-    .line 5
     sget-object v2, Lcom/google/common/base/internal/Finalizer;->logger:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
@@ -163,7 +151,6 @@
 
     invoke-virtual {v2, v3, v4, p1}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 6
     :goto_0
     iget-object p1, p0, Lcom/google/common/base/internal/Finalizer;->queue:Ljava/lang/ref/ReferenceQueue;
 
@@ -181,7 +168,6 @@
 .method private getFinalizeReferentMethod()Ljava/lang/reflect/Method;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/internal/Finalizer;->finalizableReferenceClassReference:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -204,7 +190,6 @@
 
     new-array v2, v2, [Ljava/lang/Class;
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
@@ -216,7 +201,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     new-instance v1, Ljava/lang/AssertionError;
 
     invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -227,7 +211,6 @@
 .method public static getInheritableThreadLocalsField()Ljava/lang/reflect/Field;
     .locals 3
 
-    .line 1
     :try_start_0
     const-class v0, Ljava/lang/Thread;
 
@@ -239,14 +222,12 @@
 
     const/4 v1, 0x1
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-object v0
 
-    .line 3
     :catchall_0
     sget-object v0, Lcom/google/common/base/internal/Finalizer;->logger:Ljava/util/logging/Logger;
 
@@ -277,7 +258,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -290,17 +270,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     new-instance v0, Lcom/google/common/base/internal/Finalizer;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/common/base/internal/Finalizer;-><init>(Ljava/lang/Class;Ljava/lang/ref/ReferenceQueue;Ljava/lang/ref/PhantomReference;)V
 
-    .line 3
     new-instance p0, Ljava/lang/Thread;
 
     invoke-direct {p0, v0}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 4
     const-class p1, Lcom/google/common/base/internal/Finalizer;
 
     invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -311,16 +288,13 @@
 
     const/4 p1, 0x1
 
-    .line 5
     invoke-virtual {p0, p1}, Ljava/lang/Thread;->setDaemon(Z)V
 
-    .line 6
     :try_start_0
     sget-object p1, Lcom/google/common/base/internal/Finalizer;->inheritableThreadLocals:Ljava/lang/reflect/Field;
 
     if-eqz p1, :cond_0
 
-    .line 7
     sget-object p1, Lcom/google/common/base/internal/Finalizer;->inheritableThreadLocals:Ljava/lang/reflect/Field;
 
     const/4 p2, 0x0
@@ -334,7 +308,6 @@
     :catchall_0
     move-exception p1
 
-    .line 8
     sget-object p2, Lcom/google/common/base/internal/Finalizer;->logger:Ljava/util/logging/Logger;
 
     sget-object v0, Ljava/util/logging/Level;->INFO:Ljava/util/logging/Level;
@@ -343,14 +316,12 @@
 
     invoke-virtual {p2, v0, v1, p1}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 9
     :cond_0
     :goto_0
     invoke-virtual {p0}, Ljava/lang/Thread;->start()V
 
     return-void
 
-    .line 10
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -366,7 +337,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     :catch_0
     :cond_0
     :try_start_0

@@ -1,6 +1,5 @@
 .class abstract Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;
 .super Ljava/lang/Object;
-.source "IndeterminateAnimatorDelegate.java"
 
 
 # annotations
@@ -26,17 +25,14 @@
 .method protected constructor <init>(I)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     mul-int/lit8 v0, p1, 0x2
 
-    .line 2
     new-array v0, v0, [F
 
     iput-object v0, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->segmentPositions:[F
 
-    .line 3
     new-array p1, p1, [I
 
     iput-object p1, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->segmentColors:[I
@@ -80,7 +76,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/progressindicator/IndeterminateAnimatorDelegate;->drawable:Lcom/google/android/material/progressindicator/IndeterminateDrawable;
 
     return-void

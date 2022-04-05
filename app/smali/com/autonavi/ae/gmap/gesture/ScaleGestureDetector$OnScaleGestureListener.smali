@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
 .super Ljava/lang/Object;
-.source "ScaleGestureDetector.java"
 
 
 # annotations

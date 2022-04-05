@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;
 .super Ljava/lang/Object;
-.source "TileDownloadStateDao.java"
 
 
 # annotations
@@ -46,7 +45,6 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    .line 1
     new-instance v6, Lorg/greenrobot/greendao/Property;
 
     const-class v2, Ljava/lang/Long;
@@ -65,7 +63,6 @@
 
     sput-object v6, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->Id:Lorg/greenrobot/greendao/Property;
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Double;
@@ -84,7 +81,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->LatitudeTopLeft:Lorg/greenrobot/greendao/Property;
 
-    .line 3
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Double;
@@ -103,7 +99,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->LongitudeTopLeft:Lorg/greenrobot/greendao/Property;
 
-    .line 4
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Double;
@@ -120,7 +115,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->LatitudeBottomRight:Lorg/greenrobot/greendao/Property;
 
-    .line 5
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Double;
@@ -137,7 +131,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->LongitudeBottomRight:Lorg/greenrobot/greendao/Property;
 
-    .line 6
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Integer;
@@ -154,7 +147,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->ZoomLevel:Lorg/greenrobot/greendao/Property;
 
-    .line 7
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -171,7 +163,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->All:Lorg/greenrobot/greendao/Property;
 
-    .line 8
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Integer;
@@ -188,7 +179,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->Sucess:Lorg/greenrobot/greendao/Property;
 
-    .line 9
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Integer;
@@ -205,7 +195,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->Failure:Lorg/greenrobot/greendao/Property;
 
-    .line 10
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/String;
@@ -222,7 +211,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->Size:Lorg/greenrobot/greendao/Property;
 
-    .line 11
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/String;
@@ -239,7 +227,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->DirName:Lorg/greenrobot/greendao/Property;
 
-    .line 12
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v9, Ljava/lang/Integer;
@@ -256,7 +243,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao$Properties;->MapType:Lorg/greenrobot/greendao/Property;
 
-    .line 13
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/Boolean;
@@ -279,7 +265,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/android/auth/SignatureCredential;
 .super Ljava/lang/Object;
-.source "SignatureCredential.java"
 
 # interfaces
 .implements Lcom/xiaomi/infra/galaxy/fds/android/auth/GalaxyFDSCredential;
@@ -28,7 +27,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/android/auth/SignatureCredential$1;
 
     invoke-direct {v0}, Lcom/xiaomi/infra/galaxy/fds/android/auth/SignatureCredential$1;-><init>()V
@@ -41,13 +39,10 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/auth/SignatureCredential;->accessKeyId:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Lcom/xiaomi/infra/galaxy/fds/android/auth/SignatureCredential;->secretAccessKeyId:Ljava/lang/String;
 
     return-void
@@ -65,7 +60,6 @@
 
     const-string v0, "Fail to get signature for request:"
 
-    .line 1
     sget-object v1, Lcom/xiaomi/infra/galaxy/fds/android/auth/SignatureCredential;->DATE_FORMAT:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -86,18 +80,15 @@
 
     invoke-virtual {p1, v2, v1}, Lorg/apache/http/client/methods/HttpRequestBase;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     :try_start_0
     invoke-virtual {p1}, Lorg/apache/http/client/methods/HttpRequestBase;->getURI()Ljava/net/URI;
 
     move-result-object v4
 
-    .line 3
     invoke-static {}, Lcom/google/common/collect/LinkedListMultimap;->create()Lcom/google/common/collect/LinkedListMultimap;
 
     move-result-object v5
 
-    .line 4
     invoke-virtual {p1}, Lorg/apache/http/client/methods/HttpRequestBase;->getAllHeaders()[Lorg/apache/http/Header;
 
     move-result-object v1
@@ -111,7 +102,6 @@
 
     aget-object v6, v1, v3
 
-    .line 5
     invoke-interface {v6}, Lorg/apache/http/Header;->getName()Ljava/lang/String;
 
     move-result-object v7
@@ -126,7 +116,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-virtual {p1}, Lorg/apache/http/client/methods/HttpRequestBase;->getMethod()Ljava/lang/String;
 
@@ -138,7 +127,6 @@
 
     const-string v1, "Authorization"
 
-    .line 7
     iget-object v6, p0, Lcom/xiaomi/infra/galaxy/fds/android/auth/SignatureCredential;->accessKeyId:Ljava/lang/String;
 
     iget-object v7, p0, Lcom/xiaomi/infra/galaxy/fds/android/auth/SignatureCredential;->secretAccessKeyId:Ljava/lang/String;
@@ -159,7 +147,6 @@
     :catch_0
     move-exception v1
 
-    .line 8
     new-instance v2, Lcom/xiaomi/infra/galaxy/fds/android/exception/GalaxyFDSClientException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -181,7 +168,6 @@
     :catch_1
     move-exception v1
 
-    .line 9
     new-instance v2, Lcom/xiaomi/infra/galaxy/fds/android/exception/GalaxyFDSClientException;
 
     new-instance v3, Ljava/lang/StringBuilder;

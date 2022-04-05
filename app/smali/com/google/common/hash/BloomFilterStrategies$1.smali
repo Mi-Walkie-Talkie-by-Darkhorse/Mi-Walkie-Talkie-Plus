@@ -1,6 +1,5 @@
 .class final enum Lcom/google/common/hash/BloomFilterStrategies$1;
 .super Lcom/google/common/hash/BloomFilterStrategies;
-.source "BloomFilterStrategies.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/hash/BloomFilterStrategies;-><init>(Ljava/lang/String;ILcom/google/common/hash/BloomFilterStrategies$1;)V
 
     return-void
@@ -42,12 +40,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p4}, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->bitSize()J
 
     move-result-wide v0
 
-    .line 2
     invoke-static {}, Lcom/google/common/hash/Hashing;->murmur3_128()Lcom/google/common/hash/HashFunction;
 
     move-result-object v2
@@ -86,7 +82,6 @@
     :cond_0
     int-to-long v4, v4
 
-    .line 3
     rem-long/2addr v4, v0
 
     invoke-virtual {p4, v4, v5}, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->get(J)Z
@@ -122,12 +117,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p4}, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->bitSize()J
 
     move-result-wide v0
 
-    .line 2
     invoke-static {}, Lcom/google/common/hash/Hashing;->murmur3_128()Lcom/google/common/hash/HashFunction;
 
     move-result-object v2
@@ -166,7 +159,6 @@
     :cond_0
     int-to-long v4, v4
 
-    .line 3
     rem-long/2addr v4, v0
 
     invoke-virtual {p4, v4, v5}, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->set(J)Z

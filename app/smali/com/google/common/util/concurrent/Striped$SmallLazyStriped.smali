@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;
 .super Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;
-.source "Striped.java"
 
 
 # annotations
@@ -86,17 +85,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;-><init>(I)V
 
-    .line 2
     new-instance p1, Ljava/lang/ref/ReferenceQueue;
 
     invoke-direct {p1}, Ljava/lang/ref/ReferenceQueue;-><init>()V
 
     iput-object p1, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->queue:Ljava/lang/ref/ReferenceQueue;
 
-    .line 3
     iget p1, p0, Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;->mask:I
 
     const/4 v0, -0x1
@@ -113,7 +109,6 @@
     :goto_0
     iput p1, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->size:I
 
-    .line 4
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     iget v0, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->size:I
@@ -122,7 +117,6 @@
 
     iput-object p1, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->locks:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
-    .line 5
     iput-object p2, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->supplier:Lcom/google/common/base/Supplier;
 
     return-void
@@ -131,7 +125,6 @@
 .method private drainQueue()V
     .locals 4
 
-    .line 1
     :goto_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->queue:Ljava/lang/ref/ReferenceQueue;
 
@@ -141,10 +134,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast v0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped$ArrayReference;
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->locks:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     iget v2, v0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped$ArrayReference;->index:I
@@ -170,21 +161,18 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->size:I
 
     const v1, 0x7fffffff
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->locks:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
@@ -202,7 +190,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -213,7 +200,6 @@
 
     return-object v2
 
-    .line 5
     :cond_2
     iget-object v2, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->supplier:Lcom/google/common/base/Supplier;
 
@@ -221,14 +207,12 @@
 
     move-result-object v2
 
-    .line 6
     new-instance v3, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped$ArrayReference;
 
     iget-object v4, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->queue:Ljava/lang/ref/ReferenceQueue;
 
     invoke-direct {v3, v2, p1, v4}, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped$ArrayReference;-><init>(Ljava/lang/Object;ILjava/lang/ref/ReferenceQueue;)V
 
-    .line 7
     :cond_3
     iget-object v4, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->locks:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
@@ -238,7 +222,6 @@
 
     if-nez v0, :cond_5
 
-    .line 8
     iget-object v0, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->locks:Ljava/util/concurrent/atomic/AtomicReferenceArray;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReferenceArray;->get(I)Ljava/lang/Object;
@@ -253,7 +236,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_4
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
@@ -264,7 +246,6 @@
 
     return-object v4
 
-    .line 10
     :cond_5
     invoke-direct {p0}, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->drainQueue()V
 
@@ -274,7 +255,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/util/concurrent/Striped$SmallLazyStriped;->size:I
 
     return v0

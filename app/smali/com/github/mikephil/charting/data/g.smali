@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/data/g;
 .super Lcom/github/mikephil/charting/data/b;
-.source "CandleData.java"
 
 
 # annotations
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/github/mikephil/charting/data/b;-><init>()V
 
     return-void

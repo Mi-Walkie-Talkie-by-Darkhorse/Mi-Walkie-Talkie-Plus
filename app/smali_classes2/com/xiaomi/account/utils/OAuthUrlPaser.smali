@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/utils/OAuthUrlPaser;
 .super Ljava/lang/Object;
-.source "OAuthUrlPaser.java"
 
 
 # static fields
@@ -13,7 +12,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +22,6 @@
 
     const-string v0, "/pass/sns/login/load"
 
-    .line 1
     invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -43,7 +40,6 @@
 
     goto/16 :goto_2
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/String;
 
@@ -51,7 +47,6 @@
 
     const/16 p0, 0x3f
 
-    .line 3
     invoke-virtual {v0, p0}, Ljava/lang/String;->indexOf(I)I
 
     move-result p0
@@ -64,14 +59,12 @@
 
     add-int/lit8 p0, p0, 0x1
 
-    .line 4
     invoke-virtual {v0, p0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
 
     const-string v4, "code="
 
-    .line 5
     invoke-virtual {p0, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
@@ -88,7 +81,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-virtual {p0, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -102,7 +94,6 @@
 
     if-eqz p0, :cond_8
 
-    .line 7
     :cond_2
     invoke-static {v0}, Lcom/xiaomi/account/utils/OAuthUrlPaser;->parseUrl(Ljava/lang/String;)Landroid/os/Bundle;
 
@@ -110,7 +101,6 @@
 
     return-object p0
 
-    .line 8
     :cond_3
     :goto_0
     invoke-static {v0}, Lcom/xiaomi/account/utils/OAuthUrlPaser;->parseUrl(Ljava/lang/String;)Landroid/os/Bundle;
@@ -122,7 +112,6 @@
     :cond_4
     const/16 p0, 0x23
 
-    .line 9
     invoke-virtual {v0, p0}, Ljava/lang/String;->indexOf(I)I
 
     move-result p0
@@ -131,14 +120,12 @@
 
     add-int/lit8 p0, p0, 0x1
 
-    .line 10
     invoke-virtual {v0, p0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
 
     const-string v4, "access_token="
 
-    .line 11
     invoke-virtual {p0, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v4
@@ -151,7 +138,6 @@
 
     const-string v4, "&access_token="
 
-    .line 12
     invoke-virtual {p0, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v4
@@ -160,7 +146,6 @@
 
     goto :goto_1
 
-    .line 13
     :cond_5
     invoke-virtual {p0, v3}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -174,7 +159,6 @@
 
     if-eqz p0, :cond_8
 
-    .line 14
     :cond_6
     invoke-virtual {v0, v6, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
@@ -186,7 +170,6 @@
 
     return-object p0
 
-    .line 15
     :cond_7
     :goto_1
     invoke-virtual {v0, v6, v5}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
@@ -207,14 +190,12 @@
 .method private static parseUrl(Ljava/lang/String;)Landroid/os/Bundle;
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     if-eqz p0, :cond_1
 
-    .line 2
     :try_start_0
     new-instance v1, Ljava/net/URI;
 
@@ -226,7 +207,6 @@
 
     move-result-object p0
 
-    .line 3
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -245,7 +225,6 @@
 
     check-cast v1, Lorg/apache/http/NameValuePair;
 
-    .line 4
     invoke-interface {v1}, Lorg/apache/http/NameValuePair;->getName()Ljava/lang/String;
 
     move-result-object v2
@@ -256,7 +235,6 @@
 
     if-nez v2, :cond_0
 
-    .line 5
     invoke-interface {v1}, Lorg/apache/http/NameValuePair;->getValue()Ljava/lang/String;
 
     move-result-object v2
@@ -267,7 +245,6 @@
 
     if-nez v2, :cond_0
 
-    .line 6
     invoke-interface {v1}, Lorg/apache/http/NameValuePair;->getName()Ljava/lang/String;
 
     move-result-object v2
@@ -285,7 +262,6 @@
     :catch_0
     move-exception p0
 
-    .line 7
     invoke-virtual {p0}, Ljava/net/URISyntaxException;->getMessage()Ljava/lang/String;
 
     move-result-object p0

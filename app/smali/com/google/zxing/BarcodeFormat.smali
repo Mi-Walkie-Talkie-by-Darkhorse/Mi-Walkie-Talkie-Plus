@@ -1,6 +1,5 @@
 .class public final enum Lcom/google/zxing/BarcodeFormat;
 .super Ljava/lang/Enum;
-.source "BarcodeFormat.java"
 
 
 # annotations
@@ -55,7 +54,6 @@
 .method static constructor <clinit>()V
     .locals 17
 
-    .line 1
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/4 v1, 0x0
@@ -66,7 +64,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->AZTEC:Lcom/google/zxing/BarcodeFormat;
 
-    .line 2
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/4 v2, 0x1
@@ -77,7 +74,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->CODABAR:Lcom/google/zxing/BarcodeFormat;
 
-    .line 3
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/4 v3, 0x2
@@ -88,7 +84,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->CODE_39:Lcom/google/zxing/BarcodeFormat;
 
-    .line 4
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/4 v4, 0x3
@@ -99,7 +94,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->CODE_93:Lcom/google/zxing/BarcodeFormat;
 
-    .line 5
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/4 v5, 0x4
@@ -110,7 +104,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->CODE_128:Lcom/google/zxing/BarcodeFormat;
 
-    .line 6
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/4 v6, 0x5
@@ -121,7 +114,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->DATA_MATRIX:Lcom/google/zxing/BarcodeFormat;
 
-    .line 7
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/4 v7, 0x6
@@ -132,7 +124,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->EAN_8:Lcom/google/zxing/BarcodeFormat;
 
-    .line 8
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/4 v8, 0x7
@@ -143,7 +134,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->EAN_13:Lcom/google/zxing/BarcodeFormat;
 
-    .line 9
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/16 v9, 0x8
@@ -154,7 +144,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->ITF:Lcom/google/zxing/BarcodeFormat;
 
-    .line 10
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/16 v10, 0x9
@@ -165,7 +154,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->MAXICODE:Lcom/google/zxing/BarcodeFormat;
 
-    .line 11
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/16 v11, 0xa
@@ -176,7 +164,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->PDF_417:Lcom/google/zxing/BarcodeFormat;
 
-    .line 12
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/16 v12, 0xb
@@ -187,7 +174,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->QR_CODE:Lcom/google/zxing/BarcodeFormat;
 
-    .line 13
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/16 v13, 0xc
@@ -198,7 +184,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->RSS_14:Lcom/google/zxing/BarcodeFormat;
 
-    .line 14
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/16 v14, 0xd
@@ -209,7 +194,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->RSS_EXPANDED:Lcom/google/zxing/BarcodeFormat;
 
-    .line 15
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/16 v15, 0xe
@@ -220,7 +204,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->UPC_A:Lcom/google/zxing/BarcodeFormat;
 
-    .line 16
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/16 v14, 0xf
@@ -231,7 +214,6 @@
 
     sput-object v0, Lcom/google/zxing/BarcodeFormat;->UPC_E:Lcom/google/zxing/BarcodeFormat;
 
-    .line 17
     new-instance v0, Lcom/google/zxing/BarcodeFormat;
 
     const/16 v15, 0x10
@@ -246,7 +228,6 @@
 
     new-array v14, v14, [Lcom/google/zxing/BarcodeFormat;
 
-    .line 18
     sget-object v16, Lcom/google/zxing/BarcodeFormat;->AZTEC:Lcom/google/zxing/BarcodeFormat;
 
     aput-object v16, v14, v1
@@ -332,7 +313,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -341,7 +321,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/zxing/BarcodeFormat;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/zxing/BarcodeFormat;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -356,7 +335,6 @@
 .method public static values()[Lcom/google/zxing/BarcodeFormat;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/zxing/BarcodeFormat;->$VALUES:[Lcom/google/zxing/BarcodeFormat;
 
     invoke-virtual {v0}, [Lcom/google/zxing/BarcodeFormat;->clone()Ljava/lang/Object;

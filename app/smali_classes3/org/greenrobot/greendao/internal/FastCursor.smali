@@ -1,6 +1,5 @@
 .class public final Lorg/greenrobot/greendao/internal/FastCursor;
 .super Ljava/lang/Object;
-.source "FastCursor.java"
 
 # interfaces
 .implements Landroid/database/Cursor;
@@ -18,13 +17,10 @@
 .method public constructor <init>(Landroid/database/CursorWindow;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->window:Landroid/database/CursorWindow;
 
-    .line 3
     invoke-virtual {p1}, Landroid/database/CursorWindow;->getNumRows()I
 
     move-result p1
@@ -39,7 +35,6 @@
 .method public close()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -50,7 +45,6 @@
 .method public copyStringToBuffer(ILandroid/database/CharArrayBuffer;)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -61,7 +55,6 @@
 .method public deactivate()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -72,7 +65,6 @@
 .method public getBlob(I)[B
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->window:Landroid/database/CursorWindow;
 
     iget v1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
@@ -87,7 +79,6 @@
 .method public getColumnCount()I
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -98,7 +89,6 @@
 .method public getColumnIndex(Ljava/lang/String;)I
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -114,7 +104,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -125,7 +114,6 @@
 .method public getColumnName(I)Ljava/lang/String;
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -136,7 +124,6 @@
 .method public getColumnNames()[Ljava/lang/String;
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -147,7 +134,6 @@
 .method public getCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->window:Landroid/database/CursorWindow;
 
     invoke-virtual {v0}, Landroid/database/CursorWindow;->getNumRows()I
@@ -160,7 +146,6 @@
 .method public getDouble(I)D
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->window:Landroid/database/CursorWindow;
 
     iget v1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
@@ -175,7 +160,6 @@
 .method public getExtras()Landroid/os/Bundle;
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -186,7 +170,6 @@
 .method public getFloat(I)F
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->window:Landroid/database/CursorWindow;
 
     iget v1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
@@ -201,7 +184,6 @@
 .method public getInt(I)I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->window:Landroid/database/CursorWindow;
 
     iget v1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
@@ -216,7 +198,6 @@
 .method public getLong(I)J
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->window:Landroid/database/CursorWindow;
 
     iget v1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
@@ -239,7 +220,6 @@
 .method public getPosition()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
 
     return v0
@@ -248,7 +228,6 @@
 .method public getShort(I)S
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->window:Landroid/database/CursorWindow;
 
     iget v1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
@@ -263,7 +242,6 @@
 .method public getString(I)Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->window:Landroid/database/CursorWindow;
 
     iget v1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
@@ -278,7 +256,6 @@
 .method public getType(I)I
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -289,7 +266,6 @@
 .method public getWantsAllOnMoveCalls()Z
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -300,7 +276,6 @@
 .method public isAfterLast()Z
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -311,7 +286,6 @@
 .method public isBeforeFirst()Z
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -322,7 +296,6 @@
 .method public isClosed()Z
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -333,7 +306,6 @@
 .method public isFirst()Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
 
     if-nez v0, :cond_0
@@ -352,7 +324,6 @@
 .method public isLast()Z
     .locals 3
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
 
     iget v1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->count:I
@@ -375,7 +346,6 @@
 .method public isNull(I)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->window:Landroid/database/CursorWindow;
 
     iget v1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
@@ -390,7 +360,6 @@
 .method public move(I)Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
 
     add-int/2addr v0, p1
@@ -407,10 +376,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
 
-    .line 2
     iget v1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->count:I
 
     if-lez v1, :cond_0
@@ -424,7 +391,6 @@
 .method public moveToLast()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->count:I
 
     if-lez v0, :cond_0
@@ -433,7 +399,6 @@
 
     sub-int/2addr v0, v1
 
-    .line 2
     iput v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
 
     return v1
@@ -447,7 +412,6 @@
 .method public moveToNext()Z
     .locals 3
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
 
     iget v1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->count:I
@@ -460,7 +424,6 @@
 
     add-int/2addr v0, v2
 
-    .line 2
     iput v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
 
     return v2
@@ -476,12 +439,10 @@
 
     if-ltz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->count:I
 
     if-ge p1, v0, :cond_0
 
-    .line 2
     iput p1, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
 
     const/4 p1, 0x1
@@ -497,7 +458,6 @@
 .method public moveToPrevious()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
 
     if-lez v0, :cond_0
@@ -506,7 +466,6 @@
 
     sub-int/2addr v0, v1
 
-    .line 2
     iput v0, p0, Lorg/greenrobot/greendao/internal/FastCursor;->position:I
 
     return v1
@@ -520,7 +479,6 @@
 .method public registerContentObserver(Landroid/database/ContentObserver;)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -531,7 +489,6 @@
 .method public registerDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -542,7 +499,6 @@
 .method public requery()Z
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -553,7 +509,6 @@
 .method public respond(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -564,7 +519,6 @@
 .method public setNotificationUri(Landroid/content/ContentResolver;Landroid/net/Uri;)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -575,7 +529,6 @@
 .method public unregisterContentObserver(Landroid/database/ContentObserver;)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -586,7 +539,6 @@
 .method public unregisterDataSetObserver(Landroid/database/DataSetObserver;)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V

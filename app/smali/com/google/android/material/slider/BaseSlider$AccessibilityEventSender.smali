@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/slider/BaseSlider$AccessibilityEventSender;
 .super Ljava/lang/Object;
-.source "BaseSlider.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,14 +26,12 @@
 .method private constructor <init>(Lcom/google/android/material/slider/BaseSlider;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/slider/BaseSlider$AccessibilityEventSender;->this$0:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, -0x1
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/slider/BaseSlider$AccessibilityEventSender;->virtualViewId:I
 
     return-void
@@ -43,7 +40,6 @@
 .method synthetic constructor <init>(Lcom/google/android/material/slider/BaseSlider;Lcom/google/android/material/slider/BaseSlider$1;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/google/android/material/slider/BaseSlider$AccessibilityEventSender;-><init>(Lcom/google/android/material/slider/BaseSlider;)V
 
     return-void
@@ -54,7 +50,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/slider/BaseSlider$AccessibilityEventSender;->this$0:Lcom/google/android/material/slider/BaseSlider;
 
     invoke-static {v0}, Lcom/google/android/material/slider/BaseSlider;->access$300(Lcom/google/android/material/slider/BaseSlider;)Lcom/google/android/material/slider/BaseSlider$AccessibilityHelper;
@@ -73,7 +68,6 @@
 .method setVirtualViewId(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/slider/BaseSlider$AccessibilityEventSender;->virtualViewId:I
 
     return-void

@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/solver/h$a;
 .super Ljava/lang/Object;
-.source "PriorityGoalRow.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -30,7 +29,6 @@
 .method constructor <init>(Landroidx/constraintlayout/solver/h;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public a(Landroidx/constraintlayout/solver/SolverVariable;Landroidx/constraintlayout/solver/SolverVariable;)I
     .locals 0
 
-    .line 1
     iget p1, p1, Landroidx/constraintlayout/solver/SolverVariable;->c:I
 
     iget p2, p2, Landroidx/constraintlayout/solver/SolverVariable;->c:I
@@ -54,7 +51,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Landroidx/constraintlayout/solver/SolverVariable;
 
     check-cast p2, Landroidx/constraintlayout/solver/SolverVariable;

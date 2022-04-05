@@ -1,6 +1,5 @@
 .class Lcom/umeng/analytics/process/c$a;
 .super Ljava/lang/Object;
-.source "UMProcessDBManager.java"
 
 
 # annotations
@@ -26,10 +25,8 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
@@ -42,17 +39,14 @@
 .method static a(Landroid/content/Context;Ljava/lang/String;)Lcom/umeng/analytics/process/c$a;
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/umeng/commonsdk/service/UMGlobalContext;->getAppContext(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p0
 
-    .line 2
     new-instance v0, Lcom/umeng/analytics/process/c$a;
 
     invoke-direct {v0}, Lcom/umeng/analytics/process/c$a;-><init>()V
 
-    .line 3
     invoke-static {p0, p1}, Lcom/umeng/analytics/process/b;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/umeng/analytics/process/b;
 
     move-result-object p0
@@ -69,7 +63,6 @@
 
     monitor-enter p0
 
-    .line 4
     :try_start_0
     iget-object v0, p0, Lcom/umeng/analytics/process/c$a;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -81,7 +74,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 5
     iget-object v0, p0, Lcom/umeng/analytics/process/c$a;->b:Landroid/database/sqlite/SQLiteOpenHelper;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -90,7 +82,6 @@
 
     iput-object v0, p0, Lcom/umeng/analytics/process/c$a;->c:Landroid/database/sqlite/SQLiteDatabase;
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/umeng/analytics/process/c$a;->c:Landroid/database/sqlite/SQLiteDatabase;
     :try_end_0
@@ -113,7 +104,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/umeng/analytics/process/c$a;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -123,14 +113,12 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/analytics/process/c$a;->c:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     :catchall_0
     :cond_0
     monitor-exit p0

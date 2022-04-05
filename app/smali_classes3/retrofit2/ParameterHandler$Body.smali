@@ -1,6 +1,5 @@
 .class final Lretrofit2/ParameterHandler$Body;
 .super Lretrofit2/ParameterHandler;
-.source "ParameterHandler.java"
 
 
 # annotations
@@ -50,10 +49,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lretrofit2/ParameterHandler;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lretrofit2/ParameterHandler$Body;->converter:Lretrofit2/Converter;
 
     return-void
@@ -77,7 +74,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lretrofit2/ParameterHandler$Body;->converter:Lretrofit2/Converter;
 
@@ -89,7 +85,6 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2
     invoke-virtual {p1, v0}, Lretrofit2/RequestBuilder;->setBody(Lokhttp3/RequestBody;)V
 
     return-void
@@ -97,7 +92,6 @@
     :catch_0
     move-exception p1
 
-    .line 3
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -122,7 +116,6 @@
 
     throw v0
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

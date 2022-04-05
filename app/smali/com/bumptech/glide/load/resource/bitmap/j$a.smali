@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/resource/bitmap/j$a;
 .super Ljava/lang/Object;
-.source "Downsampler.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/resource/bitmap/j$b;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

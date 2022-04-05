@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment_ViewBinding;
 .super Ljava/lang/Object;
-.source "ResetPasswordFragment_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment_ViewBinding;->a:Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;
 
-    .line 3
     const-class v0, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     const v1, 0x7f090426
@@ -37,7 +33,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
-    .line 4
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
     const v1, 0x7f090172
@@ -52,7 +47,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mEtPasswordNew:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
-    .line 5
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
     const v1, 0x7f090170
@@ -67,7 +61,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mEtPasswordConfirm:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
-    .line 6
     const-class v0, Landroidx/appcompat/widget/AppCompatButton;
 
     const v1, 0x7f090090
@@ -82,7 +75,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mBtnAction:Landroidx/appcompat/widget/AppCompatButton;
 
-    .line 7
     const-class v0, Landroid/widget/LinearLayout;
 
     const v1, 0x7f090233
@@ -97,7 +89,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mLlResetContainer:Landroid/widget/LinearLayout;
 
-    .line 8
     const-class v0, Landroid/widget/LinearLayout;
 
     const v1, 0x7f090234
@@ -112,7 +103,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mLlSuccessContainer:Landroid/widget/LinearLayout;
 
-    .line 9
     const-class v0, Landroidx/appcompat/widget/AppCompatButton;
 
     const v1, 0x7f09009a
@@ -137,40 +127,30 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment_ViewBinding;->a:Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment_ViewBinding;->a:Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mEtPasswordNew:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mEtPasswordConfirm:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mBtnAction:Landroidx/appcompat/widget/AppCompatButton;
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mLlResetContainer:Landroid/widget/LinearLayout;
 
-    .line 8
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mLlSuccessContainer:Landroid/widget/LinearLayout;
 
-    .line 9
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;->mBtnGotoLogin:Landroidx/appcompat/widget/AppCompatButton;
 
     return-void
 
-    .line 10
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

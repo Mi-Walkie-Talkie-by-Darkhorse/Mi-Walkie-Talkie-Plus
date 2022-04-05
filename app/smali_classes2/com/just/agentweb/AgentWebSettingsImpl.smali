@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/AgentWebSettingsImpl;
 .super Lcom/just/agentweb/AbsAgentWebSettings;
-.source "AgentWebSettingsImpl.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/just/agentweb/AbsAgentWebSettings;-><init>()V
 
     return-void
@@ -20,7 +18,6 @@
 .method private getActivityByContext(Landroid/content/Context;)Landroid/app/Activity;
     .locals 1
 
-    .line 1
     instance-of v0, p1, Landroid/app/Activity;
 
     if-eqz v0, :cond_0
@@ -29,24 +26,20 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     :goto_0
     instance-of v0, p1, Landroid/content/ContextWrapper;
 
     if-eqz v0, :cond_2
 
-    .line 3
     instance-of v0, p1, Landroid/app/Activity;
 
     if-eqz v0, :cond_1
 
-    .line 4
     check-cast p1, Landroid/app/Activity;
 
     return-object p1
 
-    .line 5
     :cond_1
     check-cast p1, Landroid/content/ContextWrapper;
 
@@ -67,7 +60,6 @@
 .method protected bindAgentWebSupport(Lcom/just/agentweb/AgentWeb;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/AgentWebSettingsImpl;->mAgentWeb:Lcom/just/agentweb/AgentWeb;
 
     return-void
@@ -78,7 +70,6 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     iget-object p2, p0, Lcom/just/agentweb/AgentWebSettingsImpl;->mAgentWeb:Lcom/just/agentweb/AgentWeb;
 
     invoke-virtual {p2}, Lcom/just/agentweb/AgentWeb;->getActivity()Landroid/app/Activity;
@@ -95,7 +86,6 @@
 
     move-result-object p2
 
-    .line 2
     :cond_0
     invoke-super {p0, p1, p2}, Lcom/just/agentweb/AbsAgentWebSettings;->setDownloader(Landroid/webkit/WebView;Landroid/webkit/DownloadListener;)Lcom/just/agentweb/WebListenerManager;
 

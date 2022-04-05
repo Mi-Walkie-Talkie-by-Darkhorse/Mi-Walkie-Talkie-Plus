@@ -1,6 +1,5 @@
 .class public final Landroidx/core/content/res/b;
 .super Ljava/lang/Object;
-.source "ComplexColorCompat.java"
 
 
 # annotations
@@ -27,16 +26,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/content/res/b;->a:Landroid/graphics/Shader;
 
-    .line 3
     iput-object p2, p0, Landroidx/core/content/res/b;->b:Landroid/content/res/ColorStateList;
 
-    .line 4
     iput p3, p0, Landroidx/core/content/res/b;->c:I
 
     return-void
@@ -49,7 +44,6 @@
         .end annotation
     .end param
 
-    .line 2
     new-instance v0, Landroidx/core/content/res/b;
 
     invoke-virtual {p0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
@@ -87,17 +81,14 @@
         }
     .end annotation
 
-    .line 11
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
 
     move-result-object p1
 
-    .line 12
     invoke-static {p1}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
 
     move-result-object v0
 
-    .line 13
     :goto_0
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -116,14 +107,12 @@
     :cond_0
     if-ne v1, v2, :cond_6
 
-    .line 14
     invoke-interface {p1}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v2, -0x1
 
-    .line 15
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
     move-result v4
@@ -168,7 +157,6 @@
 
     if-ne v2, v3, :cond_4
 
-    .line 16
     invoke-static {p0, p1, v0, p2}, Landroidx/core/content/res/c;->a(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)Landroid/graphics/Shader;
 
     move-result-object p0
@@ -179,7 +167,6 @@
 
     return-object p0
 
-    .line 17
     :cond_4
     new-instance p0, Lorg/xmlpull/v1/XmlPullParserException;
 
@@ -207,7 +194,6 @@
 
     throw p0
 
-    .line 18
     :cond_5
     invoke-static {p0, p1, v0, p2}, Landroidx/core/content/res/a;->a(Landroid/content/res/Resources;Lorg/xmlpull/v1/XmlPullParser;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;
 
@@ -219,7 +205,6 @@
 
     return-object p0
 
-    .line 19
     :cond_6
     new-instance p0, Lorg/xmlpull/v1/XmlPullParserException;
 
@@ -237,7 +222,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Landroidx/core/content/res/b;
 
     const/4 v1, 0x0
@@ -256,7 +240,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Landroidx/core/content/res/b;
 
     const/4 v1, 0x0
@@ -283,7 +266,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 3
     :try_start_0
     invoke-static {p0, p1, p2}, Landroidx/core/content/res/b;->a(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroidx/core/content/res/b;
 
@@ -300,7 +282,6 @@
 
     const-string p2, "Failed to inflate ComplexColor."
 
-    .line 4
     invoke-static {p1, p2, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     const/4 p0, 0x0
@@ -315,7 +296,6 @@
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 
-    .line 3
     iget v0, p0, Landroidx/core/content/res/b;->c:I
 
     return v0
@@ -328,7 +308,6 @@
         .end annotation
     .end param
 
-    .line 4
     iput p1, p0, Landroidx/core/content/res/b;->c:I
 
     return-void
@@ -337,34 +316,28 @@
 .method public a([I)Z
     .locals 2
 
-    .line 5
     invoke-virtual {p0}, Landroidx/core/content/res/b;->d()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 6
     iget-object v0, p0, Landroidx/core/content/res/b;->b:Landroid/content/res/ColorStateList;
 
-    .line 7
     invoke-virtual {v0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result v1
 
-    .line 8
     invoke-virtual {v0, p1, v1}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
     move-result p1
 
-    .line 9
     iget v0, p0, Landroidx/core/content/res/b;->c:I
 
     if-eq p1, v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 10
     iput p1, p0, Landroidx/core/content/res/b;->c:I
 
     goto :goto_0
@@ -381,7 +354,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/core/content/res/b;->a:Landroid/graphics/Shader;
 
     return-object v0
@@ -390,7 +362,6 @@
 .method public c()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/content/res/b;->a:Landroid/graphics/Shader;
 
     if-eqz v0, :cond_0
@@ -409,7 +380,6 @@
 .method public d()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/content/res/b;->a:Landroid/graphics/Shader;
 
     if-nez v0, :cond_0
@@ -438,7 +408,6 @@
 .method public e()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroidx/core/content/res/b;->c()Z
 
     move-result v0

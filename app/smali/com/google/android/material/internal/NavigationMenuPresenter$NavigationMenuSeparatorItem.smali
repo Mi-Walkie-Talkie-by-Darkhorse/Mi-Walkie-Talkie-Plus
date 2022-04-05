@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuSeparatorItem;
 .super Ljava/lang/Object;
-.source "NavigationMenuPresenter.java"
 
 # interfaces
 .implements Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuItem;
@@ -27,13 +26,10 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuSeparatorItem;->paddingTop:I
 
-    .line 3
     iput p2, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuSeparatorItem;->paddingBottom:I
 
     return-void
@@ -44,7 +40,6 @@
 .method public getPaddingBottom()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuSeparatorItem;->paddingBottom:I
 
     return v0
@@ -53,7 +48,6 @@
 .method public getPaddingTop()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuSeparatorItem;->paddingTop:I
 
     return v0

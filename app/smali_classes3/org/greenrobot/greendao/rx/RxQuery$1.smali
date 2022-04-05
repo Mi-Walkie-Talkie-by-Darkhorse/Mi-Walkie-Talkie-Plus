@@ -1,6 +1,5 @@
 .class Lorg/greenrobot/greendao/rx/RxQuery$1;
 .super Ljava/lang/Object;
-.source "RxQuery.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lorg/greenrobot/greendao/rx/RxQuery;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/greenrobot/greendao/rx/RxQuery$1;->this$0:Lorg/greenrobot/greendao/rx/RxQuery;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/rx/RxQuery$1;->call()Ljava/util/List;
 
     move-result-object v0
@@ -76,7 +73,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lorg/greenrobot/greendao/rx/RxQuery$1;->this$0:Lorg/greenrobot/greendao/rx/RxQuery;
 
     invoke-static {v0}, Lorg/greenrobot/greendao/rx/RxQuery;->access$000(Lorg/greenrobot/greendao/rx/RxQuery;)Lorg/greenrobot/greendao/query/Query;

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/m$a;
 .super Ljava/lang/Object;
-.source "SealCustomAdapter.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/adapter/m;Lcom/ifengyu/intercom/ui/adapter/m$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/m$a;->b:Lcom/ifengyu/intercom/ui/adapter/m;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/m$a;->a:Lcom/ifengyu/intercom/ui/adapter/m$c;
@@ -42,14 +40,12 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/m$a;->a:Lcom/ifengyu/intercom/ui/adapter/m$c;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$y;->getAdapterPosition()I
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$a;->b:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/m;->a(Lcom/ifengyu/intercom/ui/adapter/m;)Ljava/util/List;
@@ -62,7 +58,6 @@
 
     if-ge p1, v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$a;->b:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/m;->b(Lcom/ifengyu/intercom/ui/adapter/m;)Lcom/ifengyu/intercom/ui/adapter/m$d;

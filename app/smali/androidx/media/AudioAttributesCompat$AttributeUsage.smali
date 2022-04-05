@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/media/AudioAttributesCompat$AttributeUsage;
 .super Ljava/lang/Object;
-.source "AudioAttributesCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

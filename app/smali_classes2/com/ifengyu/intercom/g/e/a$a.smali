@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/g/e/a$a;
 .super Lokio/ForwardingSink;
-.source "CountingRequestBody.java"
 
 
 # annotations
@@ -24,15 +23,12 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/g/e/a;Lokio/Sink;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/g/e/a$a;->b:Lcom/ifengyu/intercom/g/e/a;
 
-    .line 2
     invoke-direct {p0, p2}, Lokio/ForwardingSink;-><init>(Lokio/Sink;)V
 
     const-wide/16 p1, 0x0
 
-    .line 3
     iput-wide p1, p0, Lcom/ifengyu/intercom/g/e/a$a;->a:J
 
     return-void
@@ -48,17 +44,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Lokio/ForwardingSink;->write(Lokio/Buffer;J)V
 
-    .line 2
     iget-wide v0, p0, Lcom/ifengyu/intercom/g/e/a$a;->a:J
 
     add-long/2addr v0, p2
 
     iput-wide v0, p0, Lcom/ifengyu/intercom/g/e/a$a;->a:J
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/g/e/a$a;->b:Lcom/ifengyu/intercom/g/e/a;
 
     iget-object p2, p1, Lcom/ifengyu/intercom/g/e/a;->b:Lcom/ifengyu/intercom/g/e/a$b;

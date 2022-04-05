@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/VisibleForTesting;
 .super Ljava/lang/Object;
-.source "VisibleForTesting.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

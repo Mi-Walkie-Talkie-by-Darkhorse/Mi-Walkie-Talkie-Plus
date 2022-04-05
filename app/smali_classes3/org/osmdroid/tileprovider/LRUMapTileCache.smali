@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/LRUMapTileCache;
 .super Ljava/util/LinkedHashMap;
-.source "LRUMapTileCache.java"
 
 
 # annotations
@@ -40,10 +39,8 @@
 
     const/4 v2, 0x1
 
-    .line 1
     invoke-direct {p0, v0, v1, v2}, Ljava/util/LinkedHashMap;-><init>(IFZ)V
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/tileprovider/LRUMapTileCache;->mCapacity:I
 
     return-void
@@ -54,7 +51,6 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     :goto_0
     invoke-virtual {p0}, Ljava/util/LinkedHashMap;->isEmpty()Z
 
@@ -62,7 +58,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
 
     move-result-object v0
@@ -79,7 +74,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-super {p0}, Ljava/util/LinkedHashMap;->clear()V
 
@@ -89,12 +83,10 @@
 .method public ensureCapacity(I)V
     .locals 2
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/tileprovider/LRUMapTileCache;->mCapacity:I
 
     if-le p1, v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -121,7 +113,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     iput p1, p0, Lorg/osmdroid/tileprovider/LRUMapTileCache;->mCapacity:I
 
     :cond_0
@@ -131,7 +122,6 @@
 .method public getTileRemovedListener()Lorg/osmdroid/tileprovider/LRUMapTileCache$TileRemovedListener;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/LRUMapTileCache;->mTileRemovedListener:Lorg/osmdroid/tileprovider/LRUMapTileCache$TileRemovedListener;
 
     return-object v0
@@ -140,26 +130,22 @@
 .method public remove(Ljava/lang/Object;)Landroid/graphics/drawable/Drawable;
     .locals 3
 
-    .line 2
     invoke-super {p0, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/graphics/drawable/Drawable;
 
-    .line 3
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x9
 
     if-ge v1, v2, :cond_0
 
-    .line 4
     instance-of v1, v0, Landroid/graphics/drawable/BitmapDrawable;
 
     if-eqz v1, :cond_0
 
-    .line 5
     move-object v1, v0
 
     check-cast v1, Landroid/graphics/drawable/BitmapDrawable;
@@ -170,10 +156,8 @@
 
     if-eqz v1, :cond_0
 
-    .line 6
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 7
     :cond_0
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/LRUMapTileCache;->getTileRemovedListener()Lorg/osmdroid/tileprovider/LRUMapTileCache$TileRemovedListener;
 
@@ -185,7 +169,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 8
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/LRUMapTileCache;->getTileRemovedListener()Lorg/osmdroid/tileprovider/LRUMapTileCache$TileRemovedListener;
 
     move-result-object v1
@@ -194,13 +177,11 @@
 
     invoke-interface {v1, p1}, Lorg/osmdroid/tileprovider/LRUMapTileCache$TileRemovedListener;->onTileRemoved(Lorg/osmdroid/tileprovider/MapTile;)V
 
-    .line 9
     :cond_1
     instance-of p1, v0, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;
 
     if-eqz p1, :cond_2
 
-    .line 10
     invoke-static {}, Lorg/osmdroid/tileprovider/BitmapPool;->getInstance()Lorg/osmdroid/tileprovider/BitmapPool;
 
     move-result-object p1
@@ -218,7 +199,6 @@
 .method public bridge synthetic remove(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/osmdroid/tileprovider/LRUMapTileCache;->remove(Ljava/lang/Object;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -238,7 +218,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/LinkedHashMap;->size()I
 
     move-result v0
@@ -247,14 +226,12 @@
 
     if-le v0, v1, :cond_1
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Lorg/osmdroid/tileprovider/MapTile;
 
-    .line 3
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -265,7 +242,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -284,7 +260,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     :cond_0
     invoke-virtual {p0, p1}, Lorg/osmdroid/tileprovider/LRUMapTileCache;->remove(Ljava/lang/Object;)Landroid/graphics/drawable/Drawable;
 
@@ -297,7 +272,6 @@
 .method public setTileRemovedListener(Lorg/osmdroid/tileprovider/LRUMapTileCache$TileRemovedListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/LRUMapTileCache;->mTileRemovedListener:Lorg/osmdroid/tileprovider/LRUMapTileCache$TileRemovedListener;
 
     return-void

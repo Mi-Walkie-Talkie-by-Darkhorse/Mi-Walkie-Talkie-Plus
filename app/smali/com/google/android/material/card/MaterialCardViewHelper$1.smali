@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/card/MaterialCardViewHelper$1;
 .super Landroid/graphics/drawable/InsetDrawable;
-.source "MaterialCardViewHelper.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/android/material/card/MaterialCardViewHelper;Landroid/graphics/drawable/Drawable;IIII)V
     .locals 6
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/card/MaterialCardViewHelper$1;->this$0:Lcom/google/android/material/card/MaterialCardViewHelper;
 
     move-object v0, p0

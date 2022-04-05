@@ -1,6 +1,5 @@
 .class public interface abstract La/g/a/b;
 .super Ljava/lang/Object;
-.source "SupportSQLiteDatabase.java"
 
 # interfaces
 .implements Ljava/io/Closeable;

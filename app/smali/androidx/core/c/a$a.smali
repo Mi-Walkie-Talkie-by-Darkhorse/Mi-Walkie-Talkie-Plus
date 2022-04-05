@@ -1,6 +1,5 @@
 .class public final Landroidx/core/c/a$a;
 .super Ljava/lang/Object;
-.source "BidiFormatter.java"
 
 
 # annotations
@@ -26,10 +25,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
@@ -48,7 +45,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     sget-object p0, Landroidx/core/c/a;->h:Landroidx/core/c/a;
 
     goto :goto_0
@@ -63,17 +59,14 @@
 .method private b(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Landroidx/core/c/a$a;->a:Z
 
-    .line 2
     sget-object p1, Landroidx/core/c/a;->d:Landroidx/core/c/d;
 
     iput-object p1, p0, Landroidx/core/c/a$a;->c:Landroidx/core/c/d;
 
     const/4 p1, 0x2
 
-    .line 3
     iput p1, p0, Landroidx/core/c/a$a;->b:I
 
     return-void
@@ -84,7 +77,6 @@
 .method public a()Landroidx/core/c/a;
     .locals 4
 
-    .line 2
     iget v0, p0, Landroidx/core/c/a$a;->b:I
 
     const/4 v1, 0x2
@@ -97,7 +89,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     iget-boolean v0, p0, Landroidx/core/c/a$a;->a:Z
 
     invoke-static {v0}, Landroidx/core/c/a$a;->a(Z)Landroidx/core/c/a;
@@ -106,7 +97,6 @@
 
     return-object v0
 
-    .line 4
     :cond_0
     new-instance v0, Landroidx/core/c/a;
 

@@ -1,6 +1,5 @@
 .class Landroidx/lifecycle/r$b;
 .super Ljava/lang/Object;
-.source "ProcessLifecycleOwner.java"
 
 # interfaces
 .implements Landroidx/lifecycle/ReportFragment$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/lifecycle/r;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/lifecycle/r$b;->a:Landroidx/lifecycle/r;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/r$b;->a:Landroidx/lifecycle/r;
 
     invoke-virtual {v0}, Landroidx/lifecycle/r;->c()V
@@ -55,7 +52,6 @@
 .method public onResume()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/r$b;->a:Landroidx/lifecycle/r;
 
     invoke-virtual {v0}, Landroidx/lifecycle/r;->b()V

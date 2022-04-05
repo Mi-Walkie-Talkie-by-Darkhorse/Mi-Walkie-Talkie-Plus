@@ -1,6 +1,5 @@
 .class public final Lcom/tencent/open/utils/j;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Cloneable;
@@ -14,10 +13,8 @@
 .method public constructor <init>(J)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-wide p1, p0, Lcom/tencent/open/utils/j;->a:J
 
     return-void
@@ -32,7 +29,6 @@
 
     new-array v0, v0, [B
 
-    .line 1
     iget-wide v1, p0, Lcom/tencent/open/utils/j;->a:J
 
     const-wide/16 v3, 0xff
@@ -101,7 +97,6 @@
 .method public b()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/tencent/open/utils/j;->a:J
 
     return-wide v0
@@ -114,14 +109,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     instance-of v1, p1, Lcom/tencent/open/utils/j;
 
     if-nez v1, :cond_0
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-wide v1, p0, Lcom/tencent/open/utils/j;->a:J
 
@@ -145,7 +138,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/tencent/open/utils/j;->a:J
 
     long-to-int v1, v0

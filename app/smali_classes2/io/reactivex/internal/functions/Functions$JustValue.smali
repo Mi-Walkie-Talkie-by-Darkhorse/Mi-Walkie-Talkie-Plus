@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/functions/Functions$JustValue;
 .super Ljava/lang/Object;
-.source "Functions.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -52,10 +51,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/functions/Functions$JustValue;->value:Ljava/lang/Object;
 
     return-void
@@ -77,7 +74,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lio/reactivex/internal/functions/Functions$JustValue;->value:Ljava/lang/Object;
 
     return-object p1
@@ -97,7 +93,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/functions/Functions$JustValue;->value:Ljava/lang/Object;
 
     return-object v0

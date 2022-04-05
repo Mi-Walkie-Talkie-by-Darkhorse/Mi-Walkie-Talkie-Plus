@@ -1,6 +1,5 @@
 .class public abstract Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector$SimpleOnScaleRotateGestureListener;
 .super Ljava/lang/Object;
-.source "ScaleRotateGestureDetector.java"
 
 # interfaces
 .implements Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public onScale(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector;
 
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector$SimpleOnScaleRotateGestureListener;->onScaleRotate(Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector;)Z
@@ -45,7 +42,6 @@
 .method public onScaleBegin(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector;
 
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector$SimpleOnScaleRotateGestureListener;->onScaleRotateBegin(Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector;)Z
@@ -58,7 +54,6 @@
 .method public onScaleEnd(Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector;
 
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector$SimpleOnScaleRotateGestureListener;->onScaleRotateEnd(Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector;)V

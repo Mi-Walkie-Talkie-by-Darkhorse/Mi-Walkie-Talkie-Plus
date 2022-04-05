@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/RestrictTo;
 .super Ljava/lang/Object;
-.source "RestrictTo.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

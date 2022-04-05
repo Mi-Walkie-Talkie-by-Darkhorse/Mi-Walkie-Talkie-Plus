@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/q/b;
 .super Landroid/database/sqlite/SQLiteOpenHelper;
-.source "ConnConfigsDBHelper.java"
 
 
 # static fields
@@ -21,7 +20,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/node/q/b;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -42,27 +40,22 @@
 
     const/4 v2, 0x3
 
-    .line 1
     invoke-direct {p0, p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
     const-string p1, "CREATE TABLE connConfigs (_id INTEGER PRIMARY KEY AUTOINCREMENT,name STRING NOT NULL,btAddress STRING NOT NULL,connectionEnabled INTEGER NOT NULL,nodeId TEXT, UNIQUE(btAddress) ON CONFLICT REPLACE)"
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/node/q/b;->a:Ljava/lang/String;
 
     const-string p1, "CREATE TABLE connConfigs (_id INTEGER PRIMARY KEY AUTOINCREMENT,name STRING NOT NULL,btAddress STRING NOT NULL,connectionEnabled INTEGER NOT NULL,nodeId TEXT,deviceType INTEGER DEFAULT 1, deviceColor INTEGER DEFAULT 0, UNIQUE(btAddress) ON CONFLICT REPLACE)"
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/node/q/b;->b:Ljava/lang/String;
 
     const-string p1, "ALTER TABLE connConfigs ADD deviceType INTEGER DEFAULT 1"
 
-    .line 4
     iput-object p1, p0, Lcom/ifengyu/intercom/node/q/b;->c:Ljava/lang/String;
 
     const-string p1, "ALTER TABLE connConfigs ADD deviceColor INTEGER DEFAULT 0"
 
-    .line 5
     iput-object p1, p0, Lcom/ifengyu/intercom/node/q/b;->d:Ljava/lang/String;
 
     return-void
@@ -71,7 +64,6 @@
 .method public static a(Landroid/content/Context;)Lcom/ifengyu/intercom/node/q/b;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/node/q/b;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/node/q/b;-><init>(Landroid/content/Context;)V
@@ -84,7 +76,6 @@
 .method public onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/node/q/b;->e:Ljava/lang/String;
 
     const-string v1, "ConnConfigsDBHelper onCreate"
@@ -94,7 +85,6 @@
     :try_start_0
     const-string v0, "CREATE TABLE connConfigs (_id INTEGER PRIMARY KEY AUTOINCREMENT,name STRING NOT NULL,btAddress STRING NOT NULL,connectionEnabled INTEGER NOT NULL,nodeId TEXT,deviceType INTEGER DEFAULT 1, deviceColor INTEGER DEFAULT 0, UNIQUE(btAddress) ON CONFLICT REPLACE)"
 
-    .line 2
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_0
     .catch Landroid/database/SQLException; {:try_start_0 .. :try_end_0} :catch_0
@@ -104,7 +94,6 @@
     :catch_0
     move-exception p1
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/node/q/b;->e:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -130,7 +119,6 @@
 .method public onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/node/q/b;->e:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -168,13 +156,11 @@
     :cond_0
     const-string p2, "ALTER TABLE connConfigs ADD deviceType INTEGER DEFAULT 1"
 
-    .line 2
     invoke-virtual {p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     :cond_1
     const-string p2, "ALTER TABLE connConfigs ADD deviceColor INTEGER DEFAULT 0"
 
-    .line 3
     invoke-virtual {p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     :goto_0

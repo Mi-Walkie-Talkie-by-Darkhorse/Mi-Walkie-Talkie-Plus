@@ -1,13 +1,11 @@
 .class public Lcom/wang/avi/indicators/LineSpinFadeLoaderIndicator;
 .super Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator;
-.source "LineSpinFadeLoaderIndicator.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator;-><init>()V
 
     return-void
@@ -18,7 +16,6 @@
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 9
 
-    .line 1
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v0
@@ -34,10 +31,8 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 3
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v4
@@ -70,14 +65,12 @@
 
     move-result-object v2
 
-    .line 4
     iget v3, v2, Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator$Point;->x:F
 
     iget v2, v2, Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator$Point;->y:F
 
     invoke-virtual {p1, v3, v2}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 5
     iget-object v2, p0, Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator;->scaleFloats:[F
 
     aget v3, v2, v1
@@ -90,17 +83,14 @@
 
     int-to-float v2, v2
 
-    .line 6
     invoke-virtual {p1, v2}, Landroid/graphics/Canvas;->rotate(F)V
 
-    .line 7
     iget-object v2, p0, Lcom/wang/avi/indicators/BallSpinFadeLoaderIndicator;->alphas:[I
 
     aget v2, v2, v1
 
     invoke-virtual {p2, v2}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 8
     new-instance v2, Landroid/graphics/RectF;
 
     neg-float v3, v0
@@ -117,10 +107,8 @@
 
     const/high16 v3, 0x40a00000    # 5.0f
 
-    .line 9
     invoke-virtual {p1, v2, v3, v3, p2}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
-    .line 10
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     add-int/lit8 v1, v1, 0x1

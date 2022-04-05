@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/progressindicator/CircularProgressIndicator$IndicatorDirection;
 .super Ljava/lang/Object;
-.source "CircularProgressIndicator.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

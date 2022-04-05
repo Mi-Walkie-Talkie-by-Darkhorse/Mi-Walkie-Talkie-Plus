@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState$1;
 .super Ljava/lang/Object;
-.source "ServiceManager.java"
 
 # interfaces
 .implements Lcom/google/common/base/Supplier;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState$1;->this$0:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +46,6 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState$1;->get()Ljava/util/Set;
 
     move-result-object v0
@@ -67,7 +64,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/Sets;->newLinkedHashSet()Ljava/util/LinkedHashSet;
 
     move-result-object v0

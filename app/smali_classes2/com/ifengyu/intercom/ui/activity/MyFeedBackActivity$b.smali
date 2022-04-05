@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b;
 .super Ljava/lang/Object;
-.source "MyFeedBackActivity.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemLongClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Lcom/ifengyu/intercom/lite/c/b/e;
 
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity;
@@ -56,7 +53,6 @@
 
     const p2, 0x7f110315
 
-    .line 2
     invoke-virtual {p1, p2}, Lcom/qmuiteam/qmui/widget/dialog/b$b;->d(I)Lcom/qmuiteam/qmui/widget/dialog/b$b;
 
     new-instance p2, Lcom/ifengyu/intercom/ui/activity/MyFeedBackActivity$b$b;
@@ -69,7 +65,6 @@
 
     const/4 v0, 0x2
 
-    .line 3
     invoke-virtual {p1, p4, p5, v0, p2}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(IIILcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     check-cast p1, Lcom/qmuiteam/qmui/widget/dialog/b$b;
@@ -80,14 +75,12 @@
 
     const p3, 0x7f11009c
 
-    .line 4
     invoke-virtual {p1, p4, p3, p4, p2}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(IIILcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     check-cast p1, Lcom/qmuiteam/qmui/widget/dialog/b$b;
 
     const p2, 0x7f1200fc
 
-    .line 5
     invoke-virtual {p1, p2}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/b;
 
     move-result-object p1

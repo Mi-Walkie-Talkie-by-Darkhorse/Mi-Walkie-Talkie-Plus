@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/utils/a;
 .super Ljava/lang/Object;
-.source "AesEncrypt.java"
 
 
 # direct methods
@@ -11,7 +10,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/a;->b(Ljava/lang/String;)[B
 
@@ -19,7 +17,6 @@
 
     const-string v2, "AES/ECB/PKCS5Padding"
 
-    .line 2
     invoke-static {v2}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object v2
@@ -28,7 +25,6 @@
 
     const-string v4, "Stark"
 
-    .line 3
     invoke-static {v4}, Lcom/sina/weibo/sdk/utils/a;->c(Ljava/lang/String;)Ljava/security/Key;
 
     move-result-object v4
@@ -37,13 +33,11 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
 
-    .line 4
     :try_start_1
     invoke-virtual {v2, p0}, Ljavax/crypto/Cipher;->doFinal([B)[B
 
     move-result-object p0
 
-    .line 5
     new-instance v2, Ljava/lang/String;
 
     const-string v3, "utf-8"
@@ -57,7 +51,6 @@
     :catch_0
     move-exception p0
 
-    .line 6
     :try_start_2
     invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
@@ -72,7 +65,6 @@
     :catch_1
     move-exception p0
 
-    .line 7
     invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object p0
@@ -85,7 +77,6 @@
 .method private static b(Ljava/lang/String;)[B
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
     move-result-object p0
@@ -102,7 +93,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Lcom/sina/weibo/sdk/utils/d;->a(Ljava/lang/String;)Ljava/lang/String;
 
@@ -125,12 +115,10 @@
     :try_start_1
     const-string p0, "Key\u4e3a\u7a7anull"
 
-    .line 2
     invoke-static {v1, p0}, Lcom/sina/weibo/sdk/utils/c;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -142,7 +130,6 @@
 
     const-string p0, "Key\u957f\u5ea6\u4e0d\u662f16\u4f4d"
 
-    .line 4
     invoke-static {v1, p0}, Lcom/sina/weibo/sdk/utils/c;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
@@ -150,12 +137,10 @@
     :cond_1
     const-string v1, "utf-8"
 
-    .line 5
     invoke-virtual {p0, v1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object p0
 
-    .line 6
     new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
 
     const-string v2, "AES"
@@ -169,7 +154,6 @@
     :catch_0
     move-exception p0
 
-    .line 7
     invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object p0

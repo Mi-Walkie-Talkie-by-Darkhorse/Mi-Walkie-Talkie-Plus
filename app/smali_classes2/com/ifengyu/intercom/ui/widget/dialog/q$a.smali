@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/q$a;
 .super Ljava/lang/Object;
-.source "ListDialog.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/q;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/q$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/q;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/q$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/q;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/q;->a(Lcom/ifengyu/intercom/ui/widget/dialog/q;)Lcom/ifengyu/intercom/ui/widget/dialog/q$c;
@@ -58,7 +55,6 @@
 
     invoke-interface {p1, p2, p3}, Lcom/ifengyu/intercom/ui/widget/dialog/q$c;->onClick(Landroid/content/DialogInterface;I)V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/q$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/q;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V

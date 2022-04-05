@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/tileprovider/MapTileProviderBase$ZoomOutTileLooper;
 .super Lorg/osmdroid/tileprovider/MapTileProviderBase$ScaleTileLooper;
-.source "MapTileProviderBase.java"
 
 
 # annotations
@@ -26,10 +25,8 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/MapTileProviderBase;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/MapTileProviderBase$ZoomOutTileLooper;->this$0:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lorg/osmdroid/tileprovider/MapTileProviderBase$ScaleTileLooper;-><init>(Lorg/osmdroid/tileprovider/MapTileProviderBase;I)V
 
     return-void
@@ -46,7 +43,6 @@
 
     move-object/from16 v2, p2
 
-    .line 1
     iget v3, v0, Lorg/osmdroid/tileprovider/MapTileProviderBase$ScaleTileLooper;->mDiff:I
 
     const/4 v4, 0x4
@@ -55,7 +51,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual/range {p2 .. p2}, Lorg/osmdroid/tileprovider/MapTile;->getX()I
 
@@ -65,7 +60,6 @@
 
     shl-int/2addr v3, v4
 
-    .line 3
     invoke-virtual/range {p2 .. p2}, Lorg/osmdroid/tileprovider/MapTile;->getY()I
 
     move-result v4
@@ -92,7 +86,6 @@
     :goto_1
     if-ge v11, v5, :cond_4
 
-    .line 4
     new-instance v12, Lorg/osmdroid/tileprovider/MapTile;
 
     iget v13, v0, Lorg/osmdroid/tileprovider/MapTileProviderBase$ScaleTileLooper;->mOldZoomLevel:I
@@ -103,7 +96,6 @@
 
     invoke-direct {v12, v13, v14, v15}, Lorg/osmdroid/tileprovider/MapTile;-><init>(III)V
 
-    .line 5
     iget-object v13, v0, Lorg/osmdroid/tileprovider/MapTileProviderBase$ZoomOutTileLooper;->this$0:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     iget-object v13, v13, Lorg/osmdroid/tileprovider/MapTileProviderBase;->mTileCache:Lorg/osmdroid/tileprovider/MapTileCache;
@@ -112,12 +104,10 @@
 
     move-result-object v12
 
-    .line 6
     instance-of v13, v12, Landroid/graphics/drawable/BitmapDrawable;
 
     if-eqz v13, :cond_3
 
-    .line 7
     check-cast v12, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v12}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
@@ -128,7 +118,6 @@
 
     if-nez v9, :cond_2
 
-    .line 8
     invoke-static {}, Lorg/osmdroid/tileprovider/BitmapPool;->getInstance()Lorg/osmdroid/tileprovider/BitmapPool;
 
     move-result-object v9
@@ -139,14 +128,12 @@
 
     if-nez v9, :cond_1
 
-    .line 9
     sget-object v9, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
     invoke-static {v1, v1, v9}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object v9
 
-    .line 10
     :cond_1
     new-instance v10, Landroid/graphics/Canvas;
 
@@ -154,10 +141,8 @@
 
     const v13, -0x333334
 
-    .line 11
     invoke-virtual {v10, v13}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 12
     :cond_2
     iget-object v13, v0, Lorg/osmdroid/tileprovider/MapTileProviderBase$ScaleTileLooper;->mDestRect:Landroid/graphics/Rect;
 
@@ -179,14 +164,12 @@
 
     if-eqz v12, :cond_3
 
-    .line 13
     iget-object v6, v0, Lorg/osmdroid/tileprovider/MapTileProviderBase$ScaleTileLooper;->mDestRect:Landroid/graphics/Rect;
 
     const/4 v7, 0x0
 
     invoke-virtual {v10, v12, v7, v6, v7}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;Landroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 14
     iget-object v6, v0, Lorg/osmdroid/tileprovider/MapTileProviderBase$ZoomOutTileLooper;->this$0:Lorg/osmdroid/tileprovider/MapTileProviderBase;
 
     iget-object v6, v6, Lorg/osmdroid/tileprovider/MapTileProviderBase;->mTileCache:Lorg/osmdroid/tileprovider/MapTileCache;
@@ -215,12 +198,10 @@
     :cond_5
     if-eqz v9, :cond_6
 
-    .line 15
     iget-object v1, v0, Lorg/osmdroid/tileprovider/MapTileProviderBase$ScaleTileLooper;->mNewTiles:Ljava/util/HashMap;
 
     invoke-virtual {v1, v2, v9}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 16
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v1
@@ -231,7 +212,6 @@
 
     if-eqz v1, :cond_6
 
-    .line 17
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -250,14 +230,12 @@
 
     invoke-static {v2, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 18
     iget-object v1, v0, Lorg/osmdroid/tileprovider/MapTileProviderBase$ScaleTileLooper;->mDebugPaint:Landroid/graphics/Paint;
 
     const/high16 v2, 0x42200000    # 40.0f
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 19
     iget-object v1, v0, Lorg/osmdroid/tileprovider/MapTileProviderBase$ScaleTileLooper;->mDebugPaint:Landroid/graphics/Paint;
 
     const/high16 v2, 0x42480000    # 50.0f

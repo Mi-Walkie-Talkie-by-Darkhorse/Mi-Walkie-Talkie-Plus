@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/data/PieEntry;
 .super Lcom/github/mikephil/charting/data/Entry;
-.source "PieEntry.java"
 
 
 # annotations
@@ -25,10 +24,8 @@
 
     const-string v1, "Pie entries do not have x values"
 
-    .line 1
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0}, Lcom/github/mikephil/charting/data/Entry;->c()F
 
     move-result v0
@@ -39,7 +36,6 @@
 .method public d()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/PieEntry;->d:Ljava/lang/String;
 
     return-object v0

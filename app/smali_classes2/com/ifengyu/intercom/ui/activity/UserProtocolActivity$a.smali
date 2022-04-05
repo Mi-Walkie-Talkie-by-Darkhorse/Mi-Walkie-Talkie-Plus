@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity$a;
 .super Lcom/liulishuo/okdownload/core/listener/DownloadListener2;
-.source "UserProtocolActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;
 
     invoke-direct {p0}, Lcom/liulishuo/okdownload/core/listener/DownloadListener2;-><init>()V
@@ -47,7 +45,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;
 
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;->b(Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;)Ljava/lang/String;
@@ -74,12 +71,10 @@
 
     invoke-static {p3, v0}, Lcom/ifengyu/blelib/a;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;
 
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;->c(Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;)V
 
-    .line 3
     sget-object p3, Lcom/liulishuo/okdownload/core/cause/EndCause;->COMPLETED:Lcom/liulishuo/okdownload/core/cause/EndCause;
 
     if-ne p2, p3, :cond_0
@@ -90,7 +85,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getFile()Ljava/io/File;
 
     move-result-object p1
@@ -99,7 +93,6 @@
 
     move-result-object p1
 
-    .line 5
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;
 
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;->a(Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;Ljava/lang/String;)V
@@ -109,7 +102,6 @@
     :cond_0
     const p1, 0x7f110387
 
-    .line 6
     invoke-static {p1}, Lcom/ifengyu/library/a/m;->d(I)V
 
     :goto_0
@@ -123,7 +115,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;->a(Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;)V

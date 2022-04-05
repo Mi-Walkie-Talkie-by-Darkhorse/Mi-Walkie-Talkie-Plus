@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/fk$2;
 .super Ljava/lang/Object;
-.source "OfflineMapPage.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/fk;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/fk$2;->a:Lcom/amap/api/col/l3/fk;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/amap/api/col/l3/fk$2;->a:Lcom/amap/api/col/l3/fk;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/fk;->d(Lcom/amap/api/col/l3/fk;)Landroid/widget/AutoCompleteTextView;
@@ -49,7 +46,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/AutoCompleteTextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/fk$2;->a:Lcom/amap/api/col/l3/fk;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/fk;->e(Lcom/amap/api/col/l3/fk;)Landroid/widget/ImageView;
@@ -60,7 +56,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/amap/api/col/l3/fk$2;->a:Lcom/amap/api/col/l3/fk;
 
     const/4 v0, 0x0

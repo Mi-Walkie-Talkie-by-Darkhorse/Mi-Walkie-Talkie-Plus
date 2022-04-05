@@ -1,6 +1,5 @@
 .class public Lorg/apache/commons/lang/ObjectUtils;
 .super Ljava/lang/Object;
-.source "ObjectUtils.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lorg/apache/commons/lang/ObjectUtils$Null;
 
     invoke-direct {v0}, Lorg/apache/commons/lang/ObjectUtils$Null;-><init>()V
@@ -38,7 +36,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 

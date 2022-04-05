@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/util/d;
 .super Ljava/lang/Object;
-.source "QMUIDisplayHelper.java"
 
 
 # static fields
@@ -11,12 +10,10 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     invoke-static {}, Landroid/content/res/Resources;->getSystem()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
     move-result-object v0
@@ -31,7 +28,6 @@
 .method public static a(Landroid/content/Context;)F
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -50,7 +46,6 @@
 
     int-to-float p0, p0
 
-    .line 1
     sget v0, Lcom/qmuiteam/qmui/util/d;->a:F
 
     mul-float p0, p0, v0
@@ -67,7 +62,6 @@
 .method public static a(Landroid/content/Context;I)I
     .locals 2
 
-    .line 3
     invoke-static {p0}, Lcom/qmuiteam/qmui/util/d;->a(Landroid/content/Context;)F
 
     move-result p0
@@ -92,7 +86,6 @@
 
     int-to-float p1, p1
 
-    .line 2
     invoke-static {p0}, Lcom/qmuiteam/qmui/util/d;->a(Landroid/content/Context;)F
 
     move-result p0
@@ -113,7 +106,6 @@
 .method public static b(Landroid/content/Context;)Landroid/util/DisplayMetrics;
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -128,7 +120,6 @@
 .method public static c(Landroid/content/Context;)F
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -145,7 +136,6 @@
 .method public static c(Landroid/content/Context;I)I
     .locals 2
 
-    .line 2
     invoke-static {p0}, Lcom/qmuiteam/qmui/util/d;->c(Landroid/content/Context;)F
 
     move-result p0
@@ -168,7 +158,6 @@
 .method private static d(Landroid/content/Context;)I
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -185,7 +174,6 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -205,14 +193,12 @@
 .method public static e(Landroid/content/Context;)I
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/qmuiteam/qmui/util/d;->b(Landroid/content/Context;)Landroid/util/DisplayMetrics;
 
     move-result-object v0
 
     iget v0, v0, Landroid/util/DisplayMetrics;->heightPixels:I
 
-    .line 2
     invoke-static {}, Lcom/qmuiteam/qmui/util/c;->m()Z
 
     move-result v1
@@ -225,7 +211,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-static {p0}, Lcom/qmuiteam/qmui/util/d;->d(Landroid/content/Context;)I
 
     move-result p0
@@ -239,7 +224,6 @@
 .method public static f(Landroid/content/Context;)I
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/qmuiteam/qmui/util/d;->b(Landroid/content/Context;)Landroid/util/DisplayMetrics;
 
     move-result-object p0
@@ -252,7 +236,6 @@
 .method public static g(Landroid/content/Context;)I
     .locals 5
 
-    .line 1
     invoke-static {}, Lcom/qmuiteam/qmui/util/c;->m()Z
 
     move-result v0
@@ -263,7 +246,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -278,7 +260,6 @@
 
     if-lez v0, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -296,22 +277,18 @@
     :try_start_0
     const-string v0, "com.android.internal.R$dimen"
 
-    .line 4
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 6
     invoke-virtual {v0, v2}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v0
 
-    .line 7
     invoke-virtual {v0, v3}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -326,7 +303,6 @@
 
     if-lez v0, :cond_2
 
-    .line 8
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -342,7 +318,6 @@
     :catch_0
     move-exception p0
 
-    .line 9
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_2
@@ -352,7 +327,6 @@
 .method public static h(Landroid/content/Context;)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p0
@@ -376,7 +350,6 @@
 .method public static i(Landroid/content/Context;)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p0

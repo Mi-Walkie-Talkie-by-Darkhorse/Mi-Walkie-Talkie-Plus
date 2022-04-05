@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/commonsdk/utils/FileLockCallback;
 .super Ljava/lang/Object;
-.source "FileLockCallback.java"
 
 
 # virtual methods

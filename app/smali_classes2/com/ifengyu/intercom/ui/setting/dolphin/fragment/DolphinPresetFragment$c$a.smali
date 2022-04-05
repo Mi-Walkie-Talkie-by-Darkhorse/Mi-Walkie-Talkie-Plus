@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c$a;
 .super Ljava/lang/Object;
-.source "DolphinPresetFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment;
@@ -49,7 +46,6 @@
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment;
@@ -62,7 +58,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment$c;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinPresetFragment;

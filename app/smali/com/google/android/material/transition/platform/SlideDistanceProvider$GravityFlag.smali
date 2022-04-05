@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/transition/platform/SlideDistanceProvider$GravityFlag;
 .super Ljava/lang/Object;
-.source "SlideDistanceProvider.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

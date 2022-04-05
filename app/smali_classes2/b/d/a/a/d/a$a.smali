@@ -1,6 +1,5 @@
 .class final Lb/d/a/a/d/a$a;
 .super Landroidx/recyclerview/widget/GridLayoutManager$b;
-.source "WrapperUtils.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lb/d/a/a/d/a$b;Landroidx/recyclerview/widget/GridLayoutManager;Landroidx/recyclerview/widget/GridLayoutManager$b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lb/d/a/a/d/a$a;->e:Lb/d/a/a/d/a$b;
 
     iput-object p2, p0, Lb/d/a/a/d/a$a;->f:Landroidx/recyclerview/widget/GridLayoutManager;
@@ -43,7 +41,6 @@
 .method public a(I)I
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lb/d/a/a/d/a$a;->e:Lb/d/a/a/d/a$b;
 
     iget-object v1, p0, Lb/d/a/a/d/a$a;->f:Landroidx/recyclerview/widget/GridLayoutManager;

@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/util/BoundingBox;
 .super Ljava/lang/Object;
-.source "BoundingBox.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -36,7 +35,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lorg/osmdroid/util/BoundingBox$1;
 
     invoke-direct {v0}, Lorg/osmdroid/util/BoundingBox$1;-><init>()V
@@ -49,19 +47,14 @@
 .method public constructor <init>(DDDD)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-wide p1, p0, Lorg/osmdroid/util/BoundingBox;->mLatNorth:D
 
-    .line 3
     iput-wide p3, p0, Lorg/osmdroid/util/BoundingBox;->mLonEast:D
 
-    .line 4
     iput-wide p5, p0, Lorg/osmdroid/util/BoundingBox;->mLatSouth:D
 
-    .line 5
     iput-wide p7, p0, Lorg/osmdroid/util/BoundingBox;->mLonWest:D
 
     return-void
@@ -70,7 +63,6 @@
 .method static synthetic access$000(Landroid/os/Parcel;)Lorg/osmdroid/util/BoundingBox;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lorg/osmdroid/util/BoundingBox;->readFromParcel(Landroid/os/Parcel;)Lorg/osmdroid/util/BoundingBox;
 
     move-result-object p0
@@ -91,7 +83,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -121,39 +112,32 @@
 
     check-cast v0, Lorg/osmdroid/api/IGeoPoint;
 
-    .line 2
     invoke-interface {v0}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide v1
 
-    .line 3
     invoke-interface {v0}, Lorg/osmdroid/api/IGeoPoint;->getLongitude()D
 
     move-result-wide v3
 
-    .line 4
     invoke-static {v9, v10, v1, v2}, Ljava/lang/Math;->min(DD)D
 
     move-result-wide v9
 
-    .line 5
     invoke-static {v11, v12, v3, v4}, Ljava/lang/Math;->min(DD)D
 
     move-result-wide v11
 
-    .line 6
     invoke-static {v5, v6, v1, v2}, Ljava/lang/Math;->max(DD)D
 
     move-result-wide v5
 
-    .line 7
     invoke-static {v7, v8, v3, v4}, Ljava/lang/Math;->max(DD)D
 
     move-result-wide v7
 
     goto :goto_0
 
-    .line 8
     :cond_0
     new-instance p0, Lorg/osmdroid/util/BoundingBox;
 
@@ -167,27 +151,22 @@
 .method private static readFromParcel(Landroid/os/Parcel;)Lorg/osmdroid/util/BoundingBox;
     .locals 9
 
-    .line 1
     invoke-virtual {p0}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v1
 
-    .line 2
     invoke-virtual {p0}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v3
 
-    .line 3
     invoke-virtual {p0}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v5
 
-    .line 4
     invoke-virtual {p0}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v7
 
-    .line 5
     new-instance p0, Lorg/osmdroid/util/BoundingBox;
 
     move-object v0, p0
@@ -202,7 +181,6 @@
 .method public bringToBoundingBox(DD)Lorg/osmdroid/util/GeoPoint;
     .locals 5
 
-    .line 1
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     iget-wide v1, p0, Lorg/osmdroid/util/BoundingBox;->mLatSouth:D
@@ -221,7 +199,6 @@
 
     iget-wide v3, p0, Lorg/osmdroid/util/BoundingBox;->mLonEast:D
 
-    .line 2
     invoke-static {v3, v4, p3, p4}, Ljava/lang/Math;->min(DD)D
 
     move-result-wide p3
@@ -238,7 +215,6 @@
 .method public contains(DD)Z
     .locals 3
 
-    .line 2
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLatNorth:D
 
     cmpg-double v2, p1, v0
@@ -277,7 +253,6 @@
 .method public contains(Lorg/osmdroid/api/IGeoPoint;)Z
     .locals 4
 
-    .line 1
     invoke-interface {p1}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide v0
@@ -304,7 +279,6 @@
 .method public getCenter()Lorg/osmdroid/util/GeoPoint;
     .locals 9
 
-    .line 1
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     iget-wide v1, p0, Lorg/osmdroid/util/BoundingBox;->mLatNorth:D
@@ -333,7 +307,6 @@
 .method public getDiagonalLengthInMeters()D
     .locals 6
 
-    .line 1
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     iget-wide v1, p0, Lorg/osmdroid/util/BoundingBox;->mLatNorth:D
@@ -362,14 +335,12 @@
 .method public getGeoPointOfRelativePositionWithExactGudermannInterpolation(FF)Lorg/osmdroid/util/GeoPoint;
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLatNorth:D
 
     invoke-static {v0, v1}, Lorg/osmdroid/util/MyMath;->gudermannInverse(D)D
 
     move-result-wide v0
 
-    .line 2
     iget-wide v2, p0, Lorg/osmdroid/util/BoundingBox;->mLatSouth:D
 
     invoke-static {v2, v3}, Lorg/osmdroid/util/MyMath;->gudermannInverse(D)D
@@ -388,12 +359,10 @@
 
     add-double/2addr v2, v4
 
-    .line 3
     invoke-static {v2, v3}, Lorg/osmdroid/util/MyMath;->gudermann(D)D
 
     move-result-wide v0
 
-    .line 4
     iget-wide v2, p0, Lorg/osmdroid/util/BoundingBox;->mLonWest:D
 
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBox;->getLongitudeSpan()D
@@ -453,7 +422,6 @@
 
     goto :goto_3
 
-    .line 5
     :cond_3
     new-instance p1, Lorg/osmdroid/util/GeoPoint;
 
@@ -465,7 +433,6 @@
 .method public getGeoPointOfRelativePositionWithLinearInterpolation(FF)Lorg/osmdroid/util/GeoPoint;
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLatNorth:D
 
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBox;->getLatitudeSpan()D
@@ -478,7 +445,6 @@
 
     sub-double/2addr v0, v2
 
-    .line 2
     iget-wide v2, p0, Lorg/osmdroid/util/BoundingBox;->mLonWest:D
 
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBox;->getLongitudeSpan()D
@@ -538,7 +504,6 @@
 
     goto :goto_3
 
-    .line 3
     :cond_3
     new-instance p1, Lorg/osmdroid/util/GeoPoint;
 
@@ -550,7 +515,6 @@
 .method public getLatNorth()D
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLatNorth:D
 
     return-wide v0
@@ -559,7 +523,6 @@
 .method public getLatSouth()D
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLatSouth:D
 
     return-wide v0
@@ -568,7 +531,6 @@
 .method public getLatitudeSpan()D
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLatNorth:D
 
     iget-wide v2, p0, Lorg/osmdroid/util/BoundingBox;->mLatSouth:D
@@ -587,7 +549,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBox;->getLatitudeSpan()D
 
     move-result-wide v0
@@ -604,7 +565,6 @@
 .method public getLonEast()D
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLonEast:D
 
     return-wide v0
@@ -613,7 +573,6 @@
 .method public getLonWest()D
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLonWest:D
 
     return-wide v0
@@ -622,7 +581,6 @@
 .method public getLongitudeSpan()D
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLonEast:D
 
     iget-wide v2, p0, Lorg/osmdroid/util/BoundingBox;->mLonWest:D
@@ -641,7 +599,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/util/BoundingBox;->getLongitudeSpan()D
 
     move-result-wide v0
@@ -662,13 +619,11 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     new-instance p5, Landroid/graphics/PointF;
 
     invoke-direct {p5}, Landroid/graphics/PointF;-><init>()V
 
-    .line 2
     :goto_0
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLatNorth:D
 
@@ -702,7 +657,6 @@
 
     const/high16 p2, 0x3f800000    # 1.0f
 
-    .line 3
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLonEast:D
 
     sub-double/2addr v0, p3
@@ -717,7 +671,6 @@
 
     sub-float/2addr p2, p3
 
-    .line 4
     invoke-virtual {p5, p2, p1}, Landroid/graphics/PointF;->set(FF)V
 
     return-object p5
@@ -730,13 +683,11 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     new-instance p5, Landroid/graphics/PointF;
 
     invoke-direct {p5}, Landroid/graphics/PointF;-><init>()V
 
-    .line 2
     :goto_0
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLatNorth:D
 
@@ -752,7 +703,6 @@
 
     const/high16 p2, 0x3f800000    # 1.0f
 
-    .line 3
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLonEast:D
 
     sub-double/2addr v0, p3
@@ -767,7 +717,6 @@
 
     sub-float/2addr p2, p3
 
-    .line 4
     invoke-virtual {p5, p2, p1}, Landroid/graphics/PointF;->set(FF)V
 
     return-object p5
@@ -776,12 +725,10 @@
 .method public increaseByScale(F)Lorg/osmdroid/util/BoundingBox;
     .locals 18
 
-    .line 1
     invoke-virtual/range {p0 .. p0}, Lorg/osmdroid/util/BoundingBox;->getCenter()Lorg/osmdroid/util/GeoPoint;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual/range {p0 .. p0}, Lorg/osmdroid/util/BoundingBox;->getLatitudeSpan()D
 
     move-result-wide v1
@@ -796,7 +743,6 @@
 
     div-double/2addr v1, v5
 
-    .line 3
     invoke-virtual/range {p0 .. p0}, Lorg/osmdroid/util/BoundingBox;->getLongitudeSpan()D
 
     move-result-wide v7
@@ -805,7 +751,6 @@
 
     div-double/2addr v7, v5
 
-    .line 4
     new-instance v3, Lorg/osmdroid/util/BoundingBox;
 
     invoke-virtual {v0}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
@@ -814,7 +759,6 @@
 
     add-double v10, v4, v1
 
-    .line 5
     invoke-virtual {v0}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
 
     move-result-wide v4
@@ -827,7 +771,6 @@
 
     sub-double v14, v4, v1
 
-    .line 6
     invoke-virtual {v0}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
 
     move-result-wide v0
@@ -844,7 +787,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuffer;
 
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
@@ -863,7 +805,6 @@
 
     iget-wide v1, p0, Lorg/osmdroid/util/BoundingBox;->mLonEast:D
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuffer;->append(D)Ljava/lang/StringBuffer;
 
     const-string v1, "; S:"
@@ -880,7 +821,6 @@
 
     iget-wide v1, p0, Lorg/osmdroid/util/BoundingBox;->mLonWest:D
 
-    .line 3
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuffer;->append(D)Ljava/lang/StringBuffer;
 
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
@@ -893,22 +833,18 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLatNorth:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
-    .line 2
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLonEast:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
-    .line 3
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLatSouth:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V
 
-    .line 4
     iget-wide v0, p0, Lorg/osmdroid/util/BoundingBox;->mLonWest:D
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeDouble(D)V

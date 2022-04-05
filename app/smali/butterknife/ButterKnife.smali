@@ -1,6 +1,5 @@
 .class public final Lbutterknife/ButterKnife;
 .super Ljava/lang/Object;
-.source "ButterKnife.java"
 
 
 # static fields
@@ -30,7 +29,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
@@ -43,10 +41,8 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/AssertionError;
 
     const-string v1, "No instances."
@@ -68,7 +64,6 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -77,7 +72,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     move-result-object p0
@@ -97,7 +91,6 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 4
     invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -106,7 +99,6 @@
 
     move-result-object v0
 
-    .line 5
     invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     move-result-object p0
@@ -126,7 +118,6 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 3
     invoke-static {p0, p0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     move-result-object p0
@@ -150,7 +141,6 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 6
     invoke-virtual {p1}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object p1
@@ -159,7 +149,6 @@
 
     move-result-object p1
 
-    .line 7
     invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     move-result-object p0
@@ -183,7 +172,6 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 8
     invoke-virtual {p1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object p1
@@ -192,7 +180,6 @@
 
     move-result-object p1
 
-    .line 9
     invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
     move-result-object p0
@@ -218,12 +205,10 @@
 
     const-string v0, "Unable to invoke "
 
-    .line 10
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 
-    .line 11
     sget-boolean v2, Lbutterknife/ButterKnife;->debug:Z
 
     if-eqz v2, :cond_0
@@ -250,7 +235,6 @@
 
     invoke-static {v3, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 12
     :cond_0
     invoke-static {v1}, Lbutterknife/ButterKnife;->findBindingConstructorForClass(Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
@@ -258,7 +242,6 @@
 
     if-nez v1, :cond_1
 
-    .line 13
     sget-object p0, Lbutterknife/Unbinder;->EMPTY:Lbutterknife/Unbinder;
 
     return-object p0
@@ -277,7 +260,6 @@
 
     aput-object p1, v2, p0
 
-    .line 14
     invoke-virtual {v1, v2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -293,27 +275,22 @@
     :catch_0
     move-exception p0
 
-    .line 15
     invoke-virtual {p0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
 
-    .line 16
     instance-of p1, p0, Ljava/lang/RuntimeException;
 
     if-nez p1, :cond_3
 
-    .line 17
     instance-of p1, p0, Ljava/lang/Error;
 
     if-eqz p1, :cond_2
 
-    .line 18
     check-cast p0, Ljava/lang/Error;
 
     throw p0
 
-    .line 19
     :cond_2
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -323,7 +300,6 @@
 
     throw p1
 
-    .line 20
     :cond_3
     check-cast p0, Ljava/lang/RuntimeException;
 
@@ -332,7 +308,6 @@
     :catch_1
     move-exception p0
 
-    .line 21
     new-instance p1, Ljava/lang/RuntimeException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -354,7 +329,6 @@
     :catch_2
     move-exception p0
 
-    .line 22
     new-instance p1, Ljava/lang/RuntimeException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -397,7 +371,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lbutterknife/ButterKnife;->BINDINGS:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -410,7 +383,6 @@
 
     if-nez v0, :cond_6
 
-    .line 2
     sget-object v2, Lbutterknife/ButterKnife;->BINDINGS:Ljava/util/Map;
 
     invoke-interface {v2, p0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -421,7 +393,6 @@
 
     goto/16 :goto_2
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -429,7 +400,6 @@
 
     const-string v2, "android."
 
-    .line 4
     invoke-virtual {v0, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -446,7 +416,6 @@
 
     const-string v2, "androidx."
 
-    .line 5
     invoke-virtual {v0, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -455,7 +424,6 @@
 
     goto/16 :goto_1
 
-    .line 6
     :cond_1
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -490,7 +458,6 @@
 
     const/4 v4, 0x1
 
-    .line 7
     const-class v5, Landroid/view/View;
 
     aput-object v5, v3, v4
@@ -499,7 +466,6 @@
 
     move-result-object v2
 
-    .line 8
     sget-boolean v3, Lbutterknife/ButterKnife;->debug:Z
 
     if-eqz v3, :cond_3
@@ -516,7 +482,6 @@
     :catch_0
     move-exception p0
 
-    .line 9
     new-instance v1, Ljava/lang/RuntimeException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -540,7 +505,6 @@
     :catch_1
     nop
 
-    .line 10
     sget-boolean v0, Lbutterknife/ButterKnife;->debug:Z
 
     if-eqz v0, :cond_2
@@ -569,7 +533,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 11
     :cond_2
     invoke-virtual {p0}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
 
@@ -579,7 +542,6 @@
 
     move-result-object v2
 
-    .line 12
     :cond_3
     :goto_0
     sget-object v0, Lbutterknife/ButterKnife;->BINDINGS:Ljava/util/Map;
@@ -588,7 +550,6 @@
 
     return-object v2
 
-    .line 13
     :cond_4
     :goto_1
     sget-boolean p0, Lbutterknife/ButterKnife;->debug:Z
@@ -604,7 +565,6 @@
 
     return-object p0
 
-    .line 14
     :cond_6
     :goto_2
     sget-boolean p0, Lbutterknife/ButterKnife;->debug:Z
@@ -622,7 +582,6 @@
 .method public static setDebug(Z)V
     .locals 0
 
-    .line 1
     sput-boolean p0, Lbutterknife/ButterKnife;->debug:Z
 
     return-void

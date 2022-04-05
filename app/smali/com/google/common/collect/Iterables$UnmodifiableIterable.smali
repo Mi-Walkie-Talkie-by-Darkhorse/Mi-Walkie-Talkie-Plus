@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Iterables$UnmodifiableIterable;
 .super Lcom/google/common/collect/FluentIterable;
-.source "Iterables.java"
 
 
 # annotations
@@ -46,10 +45,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/collect/FluentIterable;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/collect/Iterables$UnmodifiableIterable;->iterable:Ljava/lang/Iterable;
 
     return-void
@@ -58,7 +55,6 @@
 .method synthetic constructor <init>(Ljava/lang/Iterable;Lcom/google/common/collect/Iterables$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/Iterables$UnmodifiableIterable;-><init>(Ljava/lang/Iterable;)V
 
     return-void
@@ -76,7 +72,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Iterables$UnmodifiableIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -93,7 +88,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Iterables$UnmodifiableIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;

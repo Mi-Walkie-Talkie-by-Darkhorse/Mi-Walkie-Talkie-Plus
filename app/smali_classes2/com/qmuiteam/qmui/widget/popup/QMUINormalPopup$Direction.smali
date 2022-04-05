@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/widget/popup/QMUINormalPopup$Direction;
 .super Ljava/lang/Object;
-.source "QMUINormalPopup.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

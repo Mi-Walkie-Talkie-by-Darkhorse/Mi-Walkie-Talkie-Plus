@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/c/b/d$c;
 .super Ljava/lang/Object;
-.source "EditTextDialogBuilder.java"
 
 # interfaces
 .implements Landroid/view/View$OnAttachStateChangeListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/c/b/d;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/d$c;->a:Lcom/ifengyu/intercom/lite/c/b/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +42,6 @@
 .method public onViewDetachedFromWindow(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/d$c;->a:Lcom/ifengyu/intercom/lite/c/b/d;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/c/b/d;->c(Lcom/ifengyu/intercom/lite/c/b/d;)Landroid/widget/EditText;
@@ -59,7 +56,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/EditText;->removeTextChangedListener(Landroid/text/TextWatcher;)V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/d$c;->a:Lcom/ifengyu/intercom/lite/c/b/d;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/c/b/d;->d(Lcom/ifengyu/intercom/lite/c/b/d;)Landroid/widget/EditText;

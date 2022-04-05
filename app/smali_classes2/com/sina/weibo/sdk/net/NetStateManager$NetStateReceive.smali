@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/net/NetStateManager$NetStateReceive;
 .super Landroid/content/BroadcastReceiver;
-.source "NetStateManager.java"
 
 
 # annotations
@@ -18,10 +17,8 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 1
 
-    .line 1
     invoke-static {p1}, Lcom/sina/weibo/sdk/net/NetStateManager;->a(Landroid/content/Context;)V
 
-    .line 2
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p2
@@ -36,19 +33,16 @@
 
     const-string p2, "wifi"
 
-    .line 3
     invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Landroid/net/wifi/WifiManager;
 
-    .line 4
     invoke-virtual {p1}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
     move-result-object p2
 
-    .line 5
     invoke-virtual {p1}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
 
     move-result p1
@@ -63,7 +57,6 @@
 
     if-ne p1, p2, :cond_1
 
-    .line 6
     :cond_0
     sget-object p1, Lcom/sina/weibo/sdk/net/NetStateManager$NetState;->a:Lcom/sina/weibo/sdk/net/NetStateManager$NetState;
 

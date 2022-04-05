@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/fragment/LiteWebFragment$a;
 .super Lcom/just/agentweb/WebChromeClient;
-.source "LiteWebFragment.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/fragment/LiteWebFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteWebFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/LiteWebFragment;
 
     invoke-direct {p0}, Lcom/just/agentweb/WebChromeClient;-><init>()V
@@ -35,10 +33,8 @@
 .method public onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2}, Lcom/just/agentweb/WebChromeClientDelegate;->onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
 
-    .line 2
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -55,7 +51,6 @@
 
     if-nez p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteWebFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/LiteWebFragment;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/lite/fragment/LiteWebFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;

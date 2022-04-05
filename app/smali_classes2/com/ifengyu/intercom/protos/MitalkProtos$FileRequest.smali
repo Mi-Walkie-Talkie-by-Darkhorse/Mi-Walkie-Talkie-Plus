@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 .super Lcom/google/protobuf/GeneratedMessage;
-.source "MitalkProtos.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequestOrBuilder;
@@ -75,14 +74,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$a;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 
     const/4 v1, 0x1
@@ -91,7 +88,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->defaultInstance:Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 
-    .line 3
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->initFields()V
 
     return-void
@@ -107,10 +103,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessage$Builder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object p1
@@ -123,7 +117,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessage$Builder;Lcom/ifengyu/intercom/protos/MitalkProtos$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
     return-void
@@ -132,7 +125,6 @@
 .method private constructor <init>(Z)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage;-><init>()V
 
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
@@ -147,7 +139,6 @@
 .method static synthetic access$12200()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/google/protobuf/GeneratedMessage;->alwaysUseFieldBuilders:Z
 
     return v0
@@ -156,7 +147,6 @@
 .method static synthetic access$12402(Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->version_:I
 
     return p1
@@ -165,7 +155,6 @@
 .method static synthetic access$12502(Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;Lcom/ifengyu/intercom/protos/MitalkProtos$FILECMD;)Lcom/ifengyu/intercom/protos/MitalkProtos$FILECMD;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fCmd_:Lcom/ifengyu/intercom/protos/MitalkProtos$FILECMD;
 
     return-object p1
@@ -174,7 +163,6 @@
 .method static synthetic access$12602(Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;Lcom/ifengyu/intercom/protos/MitalkProtos$FILETYPE;)Lcom/ifengyu/intercom/protos/MitalkProtos$FILETYPE;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fType_:Lcom/ifengyu/intercom/protos/MitalkProtos$FILETYPE;
 
     return-object p1
@@ -183,7 +171,6 @@
 .method static synthetic access$12702(Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fSize_:I
 
     return p1
@@ -192,7 +179,6 @@
 .method static synthetic access$12802(Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fCrc32_:I
 
     return p1
@@ -201,7 +187,6 @@
 .method static synthetic access$12902(Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fVersion_:I
 
     return p1
@@ -210,7 +195,6 @@
 .method static synthetic access$13002(Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fPackNum_:I
 
     return p1
@@ -219,7 +203,6 @@
 .method static synthetic access$13102(Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->bitField0_:I
 
     return p1
@@ -228,7 +211,6 @@
 .method public static getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->defaultInstance:Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 
     return-object v0
@@ -237,7 +219,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos;->e()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -250,29 +231,22 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->version_:I
 
-    .line 2
     sget-object v1, Lcom/ifengyu/intercom/protos/MitalkProtos$FILECMD;->START:Lcom/ifengyu/intercom/protos/MitalkProtos$FILECMD;
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fCmd_:Lcom/ifengyu/intercom/protos/MitalkProtos$FILECMD;
 
-    .line 3
     sget-object v1, Lcom/ifengyu/intercom/protos/MitalkProtos$FILETYPE;->BLEUPFILE:Lcom/ifengyu/intercom/protos/MitalkProtos$FILETYPE;
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fType_:Lcom/ifengyu/intercom/protos/MitalkProtos$FILETYPE;
 
-    .line 4
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fSize_:I
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fCrc32_:I
 
-    .line 6
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fVersion_:I
 
-    .line 7
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fPackNum_:I
 
     return-void
@@ -281,7 +255,6 @@
 .method public static newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;->access$12000()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
 
     move-result-object v0
@@ -292,7 +265,6 @@
 .method public static newBuilder(Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;)Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
 
     move-result-object v0
@@ -314,7 +286,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -334,7 +305,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -354,7 +324,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
@@ -374,7 +343,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -394,7 +362,6 @@
         }
     .end annotation
 
-    .line 7
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;)Ljava/lang/Object;
@@ -414,7 +381,6 @@
         }
     .end annotation
 
-    .line 8
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -434,7 +400,6 @@
         }
     .end annotation
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -454,7 +419,6 @@
         }
     .end annotation
 
-    .line 6
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -474,7 +438,6 @@
         }
     .end annotation
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
@@ -494,7 +457,6 @@
         }
     .end annotation
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -511,7 +473,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 
     move-result-object v0
@@ -522,7 +483,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 
     move-result-object v0
@@ -533,7 +493,6 @@
 .method public getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
     .locals 1
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->defaultInstance:Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 
     return-object v0
@@ -542,7 +501,6 @@
 .method public getFCmd()Lcom/ifengyu/intercom/protos/MitalkProtos$FILECMD;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fCmd_:Lcom/ifengyu/intercom/protos/MitalkProtos$FILECMD;
 
     return-object v0
@@ -551,7 +509,6 @@
 .method public getFCrc32()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fCrc32_:I
 
     return v0
@@ -560,7 +517,6 @@
 .method public getFPackNum()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fPackNum_:I
 
     return v0
@@ -569,7 +525,6 @@
 .method public getFSize()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fSize_:I
 
     return v0
@@ -578,7 +533,6 @@
 .method public getFType()Lcom/ifengyu/intercom/protos/MitalkProtos$FILETYPE;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fType_:Lcom/ifengyu/intercom/protos/MitalkProtos$FILETYPE;
 
     return-object v0
@@ -587,7 +541,6 @@
 .method public getFVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->fVersion_:I
 
     return v0
@@ -604,7 +557,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -613,7 +565,6 @@
 .method public final getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
 
     return-object v0
@@ -622,7 +573,6 @@
 .method public getVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->version_:I
 
     return v0
@@ -631,7 +581,6 @@
 .method public hasFCmd()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->bitField0_:I
 
     const/4 v1, 0x2
@@ -654,7 +603,6 @@
 .method public hasFCrc32()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->bitField0_:I
 
     const/16 v1, 0x10
@@ -677,7 +625,6 @@
 .method public hasFPackNum()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->bitField0_:I
 
     const/16 v1, 0x40
@@ -700,7 +647,6 @@
 .method public hasFSize()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->bitField0_:I
 
     const/16 v1, 0x8
@@ -723,7 +669,6 @@
 .method public hasFType()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->bitField0_:I
 
     const/4 v1, 0x4
@@ -746,7 +691,6 @@
 .method public hasFVersion()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->bitField0_:I
 
     const/16 v1, 0x20
@@ -769,7 +713,6 @@
 .method public hasVersion()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->bitField0_:I
 
     const/4 v1, 0x1
@@ -790,7 +733,6 @@
 .method protected internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos;->f()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -799,7 +741,6 @@
 
     const-class v2, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -810,7 +751,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->newBuilderForType()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
 
     move-result-object v0
@@ -821,7 +761,6 @@
 .method protected bridge synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/google/protobuf/Message$Builder;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
 
     move-result-object p1
@@ -832,7 +771,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->newBuilderForType()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
 
     move-result-object v0
@@ -843,7 +781,6 @@
 .method public newBuilderForType()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
     .locals 1
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
 
     move-result-object v0
@@ -854,7 +791,6 @@
 .method protected newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
     .locals 2
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
 
     const/4 v1, 0x0
@@ -867,7 +803,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->toBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
 
     move-result-object v0
@@ -878,7 +813,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->toBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
 
     move-result-object v0
@@ -889,7 +823,6 @@
 .method public toBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
     .locals 1
 
-    .line 3
     invoke-static {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->newBuilder(Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;)Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest$Builder;
 
     move-result-object v0

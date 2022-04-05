@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;
 .super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
-.source "DolphinRelayEditActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -102,7 +101,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;-><init>()V
 
     return-void
@@ -111,7 +109,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;I)I
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->q:I
 
     return p1
@@ -120,7 +117,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a:Ljava/lang/String;
 
     return-object p0
@@ -133,7 +129,6 @@
 
     const/4 p1, 0x0
 
-    .line 4
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->t:I
 
     return-void
@@ -154,7 +149,6 @@
     :cond_1
     add-int/lit8 p2, p2, 0x7c
 
-    .line 5
     iput p2, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->t:I
 
     goto :goto_0
@@ -162,12 +156,10 @@
     :cond_2
     add-int/lit8 p2, p2, 0x28
 
-    .line 6
     iput p2, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->t:I
 
     goto :goto_0
 
-    .line 7
     :cond_3
     iput p2, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->t:I
 
@@ -201,7 +193,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;II)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->b(II)V
 
     return-void
@@ -210,7 +201,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;I)I
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->r:I
 
     return p1
@@ -219,7 +209,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a:Ljava/lang/String;
 
     return-object p0
@@ -232,7 +221,6 @@
 
     const/4 p1, 0x0
 
-    .line 4
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->s:I
 
     return-void
@@ -253,7 +241,6 @@
     :cond_1
     add-int/lit8 p2, p2, 0x7c
 
-    .line 5
     iput p2, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->s:I
 
     goto :goto_0
@@ -261,12 +248,10 @@
     :cond_2
     add-int/lit8 p2, p2, 0x28
 
-    .line 6
     iput p2, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->s:I
 
     goto :goto_0
 
-    .line 7
     :cond_3
     iput p2, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->s:I
 
@@ -277,7 +262,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;II)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->a(II)V
 
     return-void
@@ -286,7 +270,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a:Ljava/lang/String;
 
     return-object p0
@@ -295,7 +278,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a:Ljava/lang/String;
 
     return-object p0
@@ -304,7 +286,6 @@
 .method static synthetic e(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)Lcom/ifengyu/intercom/ui/setting/UserChannel;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->v:Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     return-object p0
@@ -313,12 +294,10 @@
 .method private w()V
     .locals 8
 
-    .line 1
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v1
@@ -337,14 +316,12 @@
 
     if-eqz v1, :cond_4
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mBtnRelayEditDelete:Landroid/widget/Button;
 
     invoke-virtual {v1, v4}, Landroid/widget/Button;->setVisibility(I)V
 
     const-string v1, "relayInfo"
 
-    .line 4
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object v0
@@ -355,14 +332,12 @@
 
     if-eqz v0, :cond_5
 
-    .line 5
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->u:I
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->v:Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a()I
@@ -371,7 +346,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->q:I
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->v:Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f()I
@@ -398,7 +372,6 @@
     :goto_0
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->s:I
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->v:Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b()I
@@ -407,7 +380,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->r:I
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->v:Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->g()I
@@ -434,14 +406,12 @@
     :goto_1
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->t:I
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarTitle:Landroid/widget/TextView;
 
     const v1, 0x7f110115
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mEtRelayEditName:Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->v:Lcom/ifengyu/intercom/ui/setting/UserChannel;
@@ -452,7 +422,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mEtRelayEditName:Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->v:Lcom/ifengyu/intercom/ui/setting/UserChannel;
@@ -467,7 +436,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setSelection(I)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mEtRelayEditName:Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
     new-array v1, v3, [Ljava/lang/Object;
@@ -488,7 +456,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditUpFreq:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->q:I
@@ -499,7 +466,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 15
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditUpTone:Landroid/widget/TextView;
 
     sget-object v1, Lcom/ifengyu/intercom/i/p;->d:[Ljava/lang/String;
@@ -510,7 +476,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditUpTone:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->s:I
@@ -533,7 +498,6 @@
 
     invoke-virtual {v0, v6, v1}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditDownFreq:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->r:I
@@ -544,7 +508,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 18
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditDownTone:Landroid/widget/TextView;
 
     sget-object v1, Lcom/ifengyu/intercom/i/p;->d:[Ljava/lang/String;
@@ -555,7 +518,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 19
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditDownTone:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->t:I
@@ -575,21 +537,18 @@
     :cond_4
     const-string v1, "channelNum"
 
-    .line 20
     invoke-virtual {v0, v1, v4}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->u:I
 
-    .line 21
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarTitle:Landroid/widget/TextView;
 
     const v1, 0x7f11002c
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 22
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mEtRelayEditName:Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
     new-array v1, v3, [Ljava/lang/Object;
@@ -610,7 +569,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->setHint(Ljava/lang/CharSequence;)V
 
-    .line 23
     :cond_5
     :goto_4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mEtRelayEditName:Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
@@ -631,72 +589,58 @@
 .method private x()V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/p;->a:Landroid/graphics/Typeface;
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditUpFreq:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditDownFreq:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditUpTone:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 5
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditDownTone:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarLeft:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarConfirm:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditUpFreq:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditDownFreq:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditUpTone:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditDownTone:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mBtnRelayEditDelete:Landroid/widget/Button;
 
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarConfirm:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTitleBarConfirm:Landroid/widget/TextView;
 
     const v1, 0x7f1100a2
@@ -711,7 +655,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 10
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -742,13 +685,11 @@
 
     goto/16 :goto_7
 
-    .line 2
     :pswitch_0
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     goto/16 :goto_7
 
-    .line 3
     :pswitch_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditUpFreq:Landroid/widget/TextView;
 
@@ -776,7 +717,6 @@
 
     goto/16 :goto_2
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mEtRelayEditName:Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
@@ -794,7 +734,6 @@
 
     new-array v0, v4, [Ljava/lang/Object;
 
-    .line 5
     iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->u:I
 
     add-int/2addr v1, v4
@@ -811,7 +750,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mEtRelayEditName:Lcom/ifengyu/intercom/ui/widget/view/ClearEditText;
 
@@ -823,18 +761,15 @@
 
     move-result-object p1
 
-    .line 7
     :goto_0
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 8
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;-><init>()V
 
-    .line 9
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
@@ -857,7 +792,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 10
     iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->u:I
 
     int-to-long v7, v1
@@ -870,38 +804,30 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(Ljava/lang/Long;)V
 
-    .line 11
     iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->u:I
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c(I)V
 
-    .line 12
     invoke-virtual {v0, v3}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f(I)V
 
-    .line 13
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(Ljava/lang/String;)V
 
-    .line 14
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->q:I
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(I)V
 
-    .line 15
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->s:I
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d(I)V
 
-    .line 16
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->r:I
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b(I)V
 
-    .line 17
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->t:I
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e(I)V
 
-    .line 18
     new-instance p1, Landroid/content/Intent;
 
     invoke-direct {p1}, Landroid/content/Intent;-><init>()V
@@ -914,7 +840,6 @@
 
     goto :goto_1
 
-    .line 19
     :cond_2
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
@@ -932,7 +857,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 20
     iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->u:I
 
     int-to-long v8, v1
@@ -945,38 +869,30 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(Ljava/lang/Long;)V
 
-    .line 21
     iget v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->u:I
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c(I)V
 
-    .line 22
     invoke-virtual {v0, v3}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f(I)V
 
-    .line 23
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(Ljava/lang/String;)V
 
-    .line 24
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->q:I
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(I)V
 
-    .line 25
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->s:I
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d(I)V
 
-    .line 26
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->r:I
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b(I)V
 
-    .line 27
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->t:I
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e(I)V
 
-    .line 28
     new-instance p1, Landroid/content/Intent;
 
     invoke-direct {p1}, Landroid/content/Intent;-><init>()V
@@ -987,7 +903,6 @@
 
     invoke-virtual {p0, v7, p1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
-    .line 29
     :cond_3
     :goto_1
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
@@ -998,7 +913,6 @@
     :goto_2
     const p1, 0x7f11033d
 
-    .line 30
     invoke-static {p1}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object p1
@@ -1007,13 +921,11 @@
 
     return-void
 
-    .line 31
     :pswitch_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditUpTone:Landroid/widget/FrameLayout;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->b(Landroid/view/View;)V
 
-    .line 32
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->s:I
 
     if-nez p1, :cond_5
@@ -1029,7 +941,6 @@
 
     goto :goto_3
 
-    .line 33
     :cond_6
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->s:I
 
@@ -1041,7 +952,6 @@
 
     goto :goto_4
 
-    .line 34
     :cond_7
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->s:I
 
@@ -1057,7 +967,6 @@
     :goto_3
     const/4 v4, 0x0
 
-    .line 35
     :goto_4
     new-instance p1, Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;
 
@@ -1075,14 +984,12 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;->b(ILcom/ifengyu/intercom/ui/widget/dialog/PickerDialog$b;)Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;
 
-    .line 36
     invoke-virtual {p1, v2, v3}, Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;->a(ILcom/ifengyu/intercom/ui/widget/dialog/PickerDialog$b;)Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
     return-void
 
-    .line 37
     :pswitch_3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditUpFreq:Landroid/widget/FrameLayout;
 
@@ -1101,13 +1008,11 @@
 
     return-void
 
-    .line 41
     :pswitch_4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditDownTone:Landroid/widget/FrameLayout;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->b(Landroid/view/View;)V
 
-    .line 42
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->t:I
 
     if-nez p1, :cond_a
@@ -1123,7 +1028,6 @@
 
     goto :goto_5
 
-    .line 43
     :cond_b
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->t:I
 
@@ -1135,7 +1039,6 @@
 
     goto :goto_6
 
-    .line 44
     :cond_c
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->t:I
 
@@ -1151,7 +1054,6 @@
     :goto_5
     const/4 v4, 0x0
 
-    .line 45
     :goto_6
     new-instance p1, Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;
 
@@ -1169,14 +1071,12 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;->b(ILcom/ifengyu/intercom/ui/widget/dialog/PickerDialog$b;)Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;
 
-    .line 46
     invoke-virtual {p1, v2, v3}, Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;->a(ILcom/ifengyu/intercom/ui/widget/dialog/PickerDialog$b;)Lcom/ifengyu/intercom/ui/widget/dialog/PickerDialog;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
     goto :goto_7
 
-    .line 47
     :pswitch_5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mFlRelayEditDownFreq:Landroid/widget/FrameLayout;
 
@@ -1190,7 +1090,6 @@
 
     goto :cond_9
 
-    .line 51
     :cond_f
     new-instance p1, Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
@@ -1214,7 +1113,6 @@
 
     invoke-virtual {p1, v1, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->c(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
-    .line 52
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a()Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->d()V
@@ -1240,21 +1138,16 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c0042
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->setContentView(I)V
 
-    .line 3
     invoke-static {p0}, Lbutterknife/ButterKnife;->bind(Landroid/app/Activity;)Lbutterknife/Unbinder;
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->x()V
 
-    .line 5
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->w()V
 
     return-void
@@ -1263,7 +1156,6 @@
 .method protected onDestroy()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onDestroy()V
 
     return-void

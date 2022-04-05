@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/j/e$c$a;
 .super Ljava/lang/Object;
-.source "DataUrlLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/e$a;
@@ -30,7 +29,6 @@
 .method constructor <init>(Lcom/bumptech/glide/load/j/e$c;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +41,6 @@
 
     const-string v0, "data:image"
 
-    .line 3
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
@@ -52,7 +49,6 @@
 
     const/16 v0, 0x2c
 
-    .line 4
     invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(I)I
 
     move-result v0
@@ -63,14 +59,12 @@
 
     const/4 v1, 0x0
 
-    .line 5
     invoke-virtual {p1, v1, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, ";base64"
 
-    .line 6
     invoke-virtual {v2, v3}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v2
@@ -79,24 +73,20 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 7
     invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 8
     invoke-static {p1, v1}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object p1
 
-    .line 9
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
     invoke-direct {v0, p1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
     return-object v0
 
-    .line 10
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -106,7 +96,6 @@
 
     throw p1
 
-    .line 11
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -116,7 +105,6 @@
 
     throw p1
 
-    .line 12
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -138,7 +126,6 @@
         }
     .end annotation
 
-    .line 14
     const-class v0, Ljava/io/InputStream;
 
     return-object v0
@@ -152,7 +139,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/j/e$c$a;->a(Ljava/lang/String;)Ljava/io/InputStream;
 
     move-result-object p1
@@ -168,7 +154,6 @@
         }
     .end annotation
 
-    .line 13
     invoke-virtual {p1}, Ljava/io/InputStream;->close()V
 
     return-void
@@ -182,7 +167,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/io/InputStream;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/j/e$c$a;->a(Ljava/io/InputStream;)V

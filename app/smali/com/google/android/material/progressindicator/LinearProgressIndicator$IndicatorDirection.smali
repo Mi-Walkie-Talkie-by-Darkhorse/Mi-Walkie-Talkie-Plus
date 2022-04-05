@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/progressindicator/LinearProgressIndicator$IndicatorDirection;
 .super Ljava/lang/Object;
-.source "LinearProgressIndicator.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

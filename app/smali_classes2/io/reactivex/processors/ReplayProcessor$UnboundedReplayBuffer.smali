@@ -1,6 +1,5 @@
 .class final Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;
 .super Ljava/lang/Object;
-.source "ReplayProcessor.java"
 
 # interfaces
 .implements Lio/reactivex/processors/ReplayProcessor$ReplayBuffer;
@@ -49,10 +48,8 @@
 .method constructor <init>(I)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     const-string v1, "capacityHint"
@@ -75,7 +72,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->done:Z
 
     return-void
@@ -84,12 +80,10 @@
 .method public error(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->error:Ljava/lang/Throwable;
 
     const/4 p1, 0x1
 
-    .line 2
     iput-boolean p1, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->done:Z
 
     return-void
@@ -98,7 +92,6 @@
 .method public getError()Ljava/lang/Throwable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->error:Ljava/lang/Throwable;
 
     return-object v0
@@ -115,7 +108,6 @@
     .annotation build Lio/reactivex/annotations/Nullable;
     .end annotation
 
-    .line 1
     iget v0, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->size:I
 
     if-nez v0, :cond_0
@@ -124,7 +116,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->buffer:Ljava/util/List;
 
@@ -145,7 +136,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->size:I
 
     const/4 v1, 0x0
@@ -154,27 +144,22 @@
 
     if-nez v0, :cond_1
 
-    .line 2
     array-length v0, p1
 
     if-eqz v0, :cond_0
 
-    .line 3
     aput-object v1, p1, v2
 
     :cond_0
     return-object p1
 
-    .line 4
     :cond_1
     iget-object v3, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->buffer:Ljava/util/List;
 
-    .line 5
     array-length v4, p1
 
     if-ge v4, v0, :cond_2
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -193,7 +178,6 @@
     :goto_0
     if-ge v2, v0, :cond_3
 
-    .line 7
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -204,13 +188,11 @@
 
     goto :goto_0
 
-    .line 8
     :cond_3
     array-length v2, p1
 
     if-le v2, v0, :cond_4
 
-    .line 9
     aput-object v1, p1, v0
 
     :cond_4
@@ -220,7 +202,6 @@
 .method public isDone()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->done:Z
 
     return v0
@@ -234,12 +215,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->buffer:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 2
     iget p1, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->size:I
 
     add-int/lit8 p1, p1, 0x1
@@ -259,7 +238,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
     move-result v0
@@ -268,14 +246,11 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->buffer:Ljava/util/List;
 
-    .line 3
     iget-object v1, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->downstream:Lc/a/c;
 
-    .line 4
     iget-object v2, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
     check-cast v2, Ljava/lang/Integer;
@@ -284,14 +259,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 5
     invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
     move-result v3
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -299,7 +272,6 @@
 
     iput-object v2, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
-    .line 7
     :goto_0
     iget-wide v4, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->emitted:J
 
@@ -307,7 +279,6 @@
 
     const/4 v6, 0x1
 
-    .line 8
     :cond_2
     iget-object v7, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
@@ -322,44 +293,35 @@
 
     if-eqz v10, :cond_7
 
-    .line 9
     iget-boolean v11, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->cancelled:Z
 
     if-eqz v11, :cond_3
 
-    .line 10
     iput-object v9, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
     return-void
 
-    .line 11
     :cond_3
     iget-boolean v11, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->done:Z
 
-    .line 12
     iget v12, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->size:I
 
     if-eqz v11, :cond_5
 
     if-ne v3, v12, :cond_5
 
-    .line 13
     iput-object v9, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
-    .line 14
     iput-boolean v2, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->cancelled:Z
 
-    .line 15
     iget-object p1, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->error:Ljava/lang/Throwable;
 
     if-nez p1, :cond_4
 
-    .line 16
     invoke-interface {v1}, Lc/a/c;->onComplete()V
 
     goto :goto_2
 
-    .line 17
     :cond_4
     invoke-interface {v1, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
@@ -371,7 +333,6 @@
 
     goto :goto_3
 
-    .line 18
     :cond_6
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -391,51 +352,41 @@
     :goto_3
     if-nez v10, :cond_a
 
-    .line 19
     iget-boolean v7, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->cancelled:Z
 
     if-eqz v7, :cond_8
 
-    .line 20
     iput-object v9, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
     return-void
 
-    .line 21
     :cond_8
     iget-boolean v7, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->done:Z
 
-    .line 22
     iget v8, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->size:I
 
     if-eqz v7, :cond_a
 
     if-ne v3, v8, :cond_a
 
-    .line 23
     iput-object v9, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
-    .line 24
     iput-boolean v2, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->cancelled:Z
 
-    .line 25
     iget-object p1, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->error:Ljava/lang/Throwable;
 
     if-nez p1, :cond_9
 
-    .line 26
     invoke-interface {v1}, Lc/a/c;->onComplete()V
 
     goto :goto_4
 
-    .line 27
     :cond_9
     invoke-interface {v1, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
     :goto_4
     return-void
 
-    .line 28
     :cond_a
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -443,12 +394,10 @@
 
     iput-object v7, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->index:Ljava/lang/Object;
 
-    .line 29
     iput-wide v4, p1, Lio/reactivex/processors/ReplayProcessor$ReplaySubscription;->emitted:J
 
     neg-int v6, v6
 
-    .line 30
     invoke-virtual {p1, v6}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
 
     move-result v6
@@ -461,7 +410,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/reactivex/processors/ReplayProcessor$UnboundedReplayBuffer;->size:I
 
     return v0

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/nostra13/universalimageloader/utils/IoUtils$CopyListener;
 .super Ljava/lang/Object;
-.source "IoUtils.java"
 
 
 # annotations

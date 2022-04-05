@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/blelib/d/f;
 .super Ljava/lang/Object;
-.source "PacketUtil.java"
 
 
 # direct methods
@@ -9,7 +8,6 @@
 
     const/4 v0, 0x4
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
@@ -51,7 +49,6 @@
 
     int-to-byte v0, v1
 
-    .line 4
     aput-byte v0, p0, p3
 
     goto :goto_1
@@ -65,7 +62,6 @@
 
     int-to-byte v0, v1
 
-    .line 5
     aput-byte v0, p0, p3
 
     :goto_1
@@ -80,12 +76,10 @@
 .method public static a([BII)[B
     .locals 2
 
-    .line 2
     new-array v0, p2, [B
 
     const/4 v1, 0x0
 
-    .line 3
     invoke-static {p0, p1, v0, v1, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-object v0
@@ -94,7 +88,6 @@
 .method public static b([B)[B
     .locals 2
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x2
@@ -111,7 +104,6 @@
 .method public static c([B)[B
     .locals 4
 
-    .line 1
     array-length v0, p0
 
     const/16 v1, 0x8
@@ -122,7 +114,6 @@
 
     new-array v0, v0, [B
 
-    .line 2
     array-length v2, p0
 
     sub-int/2addr v2, v1
@@ -141,7 +132,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
@@ -164,7 +154,6 @@
 
     const/4 v0, 0x2
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
@@ -187,7 +176,6 @@
 
     const/4 v0, 0x6
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
@@ -210,7 +198,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     aget-byte p0, p0, v0
 
     and-int/lit16 p0, p0, 0xff

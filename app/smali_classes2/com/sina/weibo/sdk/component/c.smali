@@ -1,6 +1,5 @@
 .class interface abstract Lcom/sina/weibo/sdk/component/c;
 .super Ljava/lang/Object;
-.source "WeiboWebViewClient.java"
 
 
 # virtual methods

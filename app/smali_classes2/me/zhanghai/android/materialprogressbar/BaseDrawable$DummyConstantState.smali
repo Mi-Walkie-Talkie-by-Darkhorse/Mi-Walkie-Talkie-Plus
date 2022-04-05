@@ -1,6 +1,5 @@
 .class Lme/zhanghai/android/materialprogressbar/BaseDrawable$DummyConstantState;
 .super Landroid/graphics/drawable/Drawable$ConstantState;
-.source "BaseDrawable.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Lme/zhanghai/android/materialprogressbar/BaseDrawable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lme/zhanghai/android/materialprogressbar/BaseDrawable$DummyConstantState;->this$0:Lme/zhanghai/android/materialprogressbar/BaseDrawable;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable$ConstantState;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lme/zhanghai/android/materialprogressbar/BaseDrawable;Lme/zhanghai/android/materialprogressbar/BaseDrawable$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseDrawable$DummyConstantState;-><init>(Lme/zhanghai/android/materialprogressbar/BaseDrawable;)V
 
     return-void
@@ -54,7 +51,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseDrawable$DummyConstantState;->this$0:Lme/zhanghai/android/materialprogressbar/BaseDrawable;
 
     return-object v0

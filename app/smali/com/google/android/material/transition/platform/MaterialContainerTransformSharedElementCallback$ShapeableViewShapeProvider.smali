@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$ShapeableViewShapeProvider;
 .super Ljava/lang/Object;
-.source "MaterialContainerTransformSharedElementCallback.java"
 
 # interfaces
 .implements Lcom/google/android/material/transition/platform/MaterialContainerTransformSharedElementCallback$ShapeProvider;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,14 +36,12 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     instance-of v0, p1, Lcom/google/android/material/shape/Shapeable;
 
     if-eqz v0, :cond_0
 
     check-cast p1, Lcom/google/android/material/shape/Shapeable;
 
-    .line 2
     invoke-interface {p1}, Lcom/google/android/material/shape/Shapeable;->getShapeAppearanceModel()Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     move-result-object p1

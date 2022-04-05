@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/engine/j$a;
 .super Ljava/lang/Object;
-.source "EngineJob.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +41,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/engine/n;
 
     const/4 v1, 0x1

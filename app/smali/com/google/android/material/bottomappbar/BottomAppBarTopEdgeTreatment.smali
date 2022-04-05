@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;
 .super Lcom/google/android/material/shape/EdgeTreatment;
-.source "BottomAppBarTopEdgeTreatment.java"
 
 # interfaces
 .implements Ljava/lang/Cloneable;
@@ -32,21 +31,16 @@
 .method public constructor <init>(FFF)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/shape/EdgeTreatment;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->fabMargin:F
 
-    .line 3
     iput p2, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->roundedCornerRadius:F
 
-    .line 4
     invoke-virtual {p0, p3}, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->setCradleVerticalOffset(F)V
 
     const/4 p1, 0x0
 
-    .line 5
     iput p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->horizontalOffset:F
 
     return-void
@@ -57,7 +51,6 @@
 .method getCradleVerticalOffset()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->cradleVerticalOffset:F
 
     return v0
@@ -76,7 +69,6 @@
 
     move-object/from16 v9, p4
 
-    .line 1
     iget v2, v0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->fabDiameter:F
 
     const/4 v10, 0x0
@@ -85,12 +77,10 @@
 
     if-nez v3, :cond_0
 
-    .line 2
     invoke-virtual {v9, v1, v10}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
     return-void
 
-    .line 3
     :cond_0
     iget v3, v0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->fabMargin:F
 
@@ -102,17 +92,14 @@
 
     div-float v12, v3, v11
 
-    .line 4
     iget v2, v0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->roundedCornerRadius:F
 
     mul-float v13, p3, v2
 
-    .line 5
     iget v2, v0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->horizontalOffset:F
 
     add-float v14, p2, v2
 
-    .line 6
     iget v2, v0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->cradleVerticalOffset:F
 
     mul-float v2, v2, p3
@@ -131,7 +118,6 @@
 
     if-ltz v2, :cond_1
 
-    .line 7
     invoke-virtual {v9, v1, v10}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
     return-void
@@ -149,7 +135,6 @@
 
     float-to-double v4, v2
 
-    .line 8
     invoke-static {v4, v5}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v4
@@ -164,7 +149,6 @@
 
     float-to-double v2, v2
 
-    .line 9
     invoke-static {v2, v3}, Ljava/lang/Math;->atan(D)D
 
     move-result-wide v2
@@ -179,7 +163,6 @@
 
     sub-float v17, v2, v8
 
-    .line 10
     invoke-virtual {v9, v4, v10}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
     sub-float v3, v4, v13
@@ -202,7 +185,6 @@
 
     move/from16 v19, v8
 
-    .line 11
     invoke-virtual/range {v2 .. v8}, Lcom/google/android/material/shape/ShapePath;->addArc(FFFFFF)V
 
     sub-float v3, v14, v12
@@ -225,7 +207,6 @@
 
     move-object/from16 v2, p4
 
-    .line 12
     invoke-virtual/range {v2 .. v8}, Lcom/google/android/material/shape/ShapePath;->addArc(FFFFFF)V
 
     sub-float v3, v16, v13
@@ -244,10 +225,8 @@
 
     move/from16 v8, v19
 
-    .line 13
     invoke-virtual/range {v2 .. v8}, Lcom/google/android/material/shape/ShapePath;->addArc(FFFFFF)V
 
-    .line 14
     invoke-virtual {v9, v1, v10}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
     return-void
@@ -256,7 +235,6 @@
 .method getFabCradleMargin()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->fabMargin:F
 
     return v0
@@ -265,7 +243,6 @@
 .method getFabCradleRoundedCornerRadius()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->roundedCornerRadius:F
 
     return v0
@@ -279,7 +256,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->fabDiameter:F
 
     return v0
@@ -293,7 +269,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->horizontalOffset:F
 
     return v0
@@ -313,12 +288,10 @@
 
     if-ltz v0, :cond_0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->cradleVerticalOffset:F
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -332,7 +305,6 @@
 .method setFabCradleMargin(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->fabMargin:F
 
     return-void
@@ -341,7 +313,6 @@
 .method setFabCradleRoundedCornerRadius(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->roundedCornerRadius:F
 
     return-void
@@ -355,7 +326,6 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->fabDiameter:F
 
     return-void
@@ -364,7 +334,6 @@
 .method setHorizontalOffset(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/bottomappbar/BottomAppBarTopEdgeTreatment;->horizontalOffset:F
 
     return-void

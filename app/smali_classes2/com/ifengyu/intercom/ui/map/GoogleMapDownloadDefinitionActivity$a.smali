@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;
 .super Ljava/lang/Object;
-.source "GoogleMapDownloadDefinitionActivity.java"
 
 # interfaces
 .implements Landroid/text/TextWatcher;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->d:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +42,6 @@
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->d:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
@@ -70,7 +67,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->d:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->b(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Landroid/view/View;
@@ -83,7 +79,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->d:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
@@ -95,7 +90,6 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 4
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->d:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
@@ -109,7 +103,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->b:I
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->d:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->a(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Landroid/widget/EditText;
@@ -122,7 +115,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->c:I
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->d:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->a(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Landroid/widget/EditText;
@@ -165,7 +157,6 @@
 
     if-le v0, v1, :cond_1
 
-    .line 7
     iget v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->b:I
 
     add-int/lit8 v0, v0, -0x1
@@ -174,7 +165,6 @@
 
     invoke-interface {p1, v0, v1}, Landroid/text/Editable;->delete(II)Landroid/text/Editable;
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->d:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->a(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Landroid/widget/EditText;
@@ -183,7 +173,6 @@
 
     invoke-virtual {v0, p1}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->d:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->a(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Landroid/widget/EditText;
@@ -203,7 +192,6 @@
     :catch_0
     move-exception p1
 
-    .line 10
     invoke-virtual {p1}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     :cond_1
@@ -214,7 +202,6 @@
 .method public beforeTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$a;->a:Ljava/lang/CharSequence;
 
     return-void

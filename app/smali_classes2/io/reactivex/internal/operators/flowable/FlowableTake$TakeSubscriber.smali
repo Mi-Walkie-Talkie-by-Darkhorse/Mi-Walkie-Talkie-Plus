@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;
 .super Ljava/util/concurrent/atomic/AtomicBoolean;
-.source "FlowableTake.java"
 
 # interfaces
 .implements Lio/reactivex/FlowableSubscriber;
@@ -64,16 +63,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->downstream:Lc/a/c;
 
-    .line 3
     iput-wide p2, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->limit:J
 
-    .line 4
     iput-wide p2, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->remaining:J
 
     return-void
@@ -84,7 +79,6 @@
 .method public cancel()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v0}, Lc/a/d;->cancel()V
@@ -95,17 +89,14 @@
 .method public onComplete()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->done:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->done:Z
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0}, Lc/a/c;->onComplete()V
@@ -117,29 +108,24 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->done:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->done:Z
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v0}, Lc/a/d;->cancel()V
 
-    .line 4
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
@@ -155,7 +141,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->done:Z
 
     if-nez v0, :cond_1
@@ -185,7 +170,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->downstream:Lc/a/c;
 
@@ -193,12 +177,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {p1}, Lc/a/d;->cancel()V
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->onComplete()V
 
     :cond_1
@@ -208,7 +190,6 @@
 .method public onSubscribe(Lc/a/d;)V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->upstream:Lc/a/d;
 
     invoke-static {v0, p1}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(Lc/a/d;Lc/a/d;)Z
@@ -217,10 +198,8 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->upstream:Lc/a/d;
 
-    .line 3
     iget-wide v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->limit:J
 
     const-wide/16 v2, 0x0
@@ -229,22 +208,18 @@
 
     if-nez v4, :cond_0
 
-    .line 4
     invoke-interface {p1}, Lc/a/d;->cancel()V
 
     const/4 p1, 0x1
 
-    .line 5
     iput-boolean p1, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->done:Z
 
-    .line 6
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->downstream:Lc/a/c;
 
     invoke-static {p1}, Lio/reactivex/internal/subscriptions/EmptySubscription;->complete(Lc/a/c;)V
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->downstream:Lc/a/c;
 
@@ -258,7 +233,6 @@
 .method public request(J)V
     .locals 3
 
-    .line 1
     invoke-static {p1, p2}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(J)Z
 
     move-result v0
@@ -267,7 +241,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -285,14 +258,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-wide v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->limit:J
 
     cmp-long v2, p1, v0
 
     if-ltz v2, :cond_1
 
-    .line 4
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->upstream:Lc/a/d;
 
     const-wide v0, 0x7fffffffffffffffL
@@ -301,7 +272,6 @@
 
     return-void
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableTake$TakeSubscriber;->upstream:Lc/a/d;
 

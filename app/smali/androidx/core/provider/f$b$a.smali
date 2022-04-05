@@ -1,6 +1,5 @@
 .class Landroidx/core/provider/f$b$a;
 .super Ljava/lang/Object;
-.source "RequestExecutor.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/core/provider/f$b;Landroidx/core/d/a;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/core/provider/f$b$a;->a:Landroidx/core/d/a;
 
     iput-object p3, p0, Landroidx/core/provider/f$b$a;->b:Ljava/lang/Object;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/core/provider/f$b$a;->a:Landroidx/core/d/a;
 
     iget-object v1, p0, Landroidx/core/provider/f$b$a;->b:Ljava/lang/Object;

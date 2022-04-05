@@ -1,13 +1,11 @@
 .class public final Lcom/google/zxing/common/detector/MathUtils;
 .super Ljava/lang/Object;
-.source "MathUtils.java"
 
 
 # direct methods
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 
     float-to-double p0, p0
 
-    .line 1
     invoke-static {p0, p1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide p0
@@ -53,7 +50,6 @@
 
     int-to-double p0, p0
 
-    .line 2
     invoke-static {p0, p1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide p0
@@ -90,7 +86,6 @@
 .method public static sum([I)I
     .locals 4
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0

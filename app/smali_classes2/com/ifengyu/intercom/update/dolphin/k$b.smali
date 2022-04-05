@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/update/dolphin/k$b;
 .super Ljava/lang/Object;
-.source "UpdateHelper.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;->values()[Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;
 
     move-result-object v0

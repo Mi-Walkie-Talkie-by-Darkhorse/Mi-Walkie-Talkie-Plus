@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/request/i/a;
 .super Ljava/lang/Object;
-.source "DrawableCrossFadeFactory.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/request/i/e;
@@ -35,13 +34,10 @@
 .method protected constructor <init>(IZ)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/bumptech/glide/request/i/a;->a:I
 
-    .line 3
     iput-boolean p2, p0, Lcom/bumptech/glide/request/i/a;->b:Z
 
     return-void
@@ -58,12 +54,10 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/request/i/a;->c:Lcom/bumptech/glide/request/i/b;
 
     if-nez v0, :cond_0
 
-    .line 4
     new-instance v0, Lcom/bumptech/glide/request/i/b;
 
     iget v1, p0, Lcom/bumptech/glide/request/i/a;->a:I
@@ -74,7 +68,6 @@
 
     iput-object v0, p0, Lcom/bumptech/glide/request/i/a;->c:Lcom/bumptech/glide/request/i/b;
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/bumptech/glide/request/i/a;->c:Lcom/bumptech/glide/request/i/b;
 
@@ -96,12 +89,10 @@
         }
     .end annotation
 
-    .line 1
     sget-object p2, Lcom/bumptech/glide/load/DataSource;->e:Lcom/bumptech/glide/load/DataSource;
 
     if-ne p1, p2, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/bumptech/glide/request/i/c;->a()Lcom/bumptech/glide/request/i/d;
 
     move-result-object p1

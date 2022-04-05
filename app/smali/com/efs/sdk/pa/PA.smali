@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/efs/sdk/pa/PA;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # virtual methods

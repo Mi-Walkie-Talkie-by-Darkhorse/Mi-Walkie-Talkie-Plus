@@ -1,6 +1,5 @@
 .class interface abstract Lcom/ifengyu/intercom/update/dolphin/g;
 .super Ljava/lang/Object;
-.source "IUpdateTransport.java"
 
 
 # virtual methods

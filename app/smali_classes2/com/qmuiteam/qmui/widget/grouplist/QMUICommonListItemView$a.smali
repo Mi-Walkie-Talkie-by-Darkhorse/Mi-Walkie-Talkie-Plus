@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/grouplist/QMUICommonListItemView$a;
 .super Ljava/lang/Object;
-.source "QMUICommonListItemView.java"
 
 
 # annotations

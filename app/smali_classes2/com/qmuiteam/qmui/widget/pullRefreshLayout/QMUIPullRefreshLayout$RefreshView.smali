@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;
 .super Landroidx/appcompat/widget/AppCompatImageView;
-.source "QMUIPullRefreshLayout.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$c;
@@ -41,7 +40,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, La/b/g;
 
     const/4 v1, 0x4
@@ -50,7 +48,6 @@
 
     sput-object v0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->c:La/b/g;
 
-    .line 2
     sget v1, Lcom/qmuiteam/qmui/R$attr;->qmui_skin_support_pull_refresh_view_color:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -67,10 +64,8 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;)V
 
-    .line 2
     new-instance v0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     invoke-direct {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;-><init>(Landroid/content/Context;)V
@@ -81,7 +76,6 @@
 
     new-array v0, v0, [I
 
-    .line 3
     sget v1, Lcom/qmuiteam/qmui/R$attr;->qmui_skin_support_pull_refresh_view_color:I
 
     invoke-static {p1, v1}, Lcom/qmuiteam/qmui/util/i;->a(Landroid/content/Context;I)I
@@ -94,31 +88,26 @@
 
     invoke-virtual {p0, v0}, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->setColorSchemeColors([I)V
 
-    .line 4
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     invoke-virtual {p1, v1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a(I)V
 
-    .line 5
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     const/16 v0, 0xff
 
     invoke-virtual {p1, v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->setAlpha(I)V
 
-    .line 6
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     const v0, 0x3f4ccccd    # 0.8f
 
     invoke-virtual {p1, v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a(F)V
 
-    .line 7
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/AppCompatImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 8
     invoke-virtual {p0}, Landroid/widget/ImageView;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -127,7 +116,6 @@
 
     move-result-object p1
 
-    .line 9
     iget p1, p1, Landroid/util/DisplayMetrics;->density:F
 
     const/high16 v0, 0x42200000    # 40.0f
@@ -146,7 +134,6 @@
 .method public a(III)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     invoke-virtual {v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->isRunning()Z
@@ -184,7 +171,6 @@
 
     add-float/2addr p1, p3
 
-    .line 2
     :cond_1
     iget-object p2, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
@@ -192,14 +178,12 @@
 
     invoke-virtual {p2, p3}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a(Z)V
 
-    .line 3
     iget-object p2, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     const/4 p3, 0x0
 
     invoke-virtual {p2, p3, v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a(FF)V
 
-    .line 4
     iget-object p2, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     invoke-virtual {p2, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->b(F)V
@@ -210,7 +194,6 @@
 .method public b()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     invoke-virtual {v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->start()V
@@ -230,7 +213,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->c:La/b/g;
 
     return-object v0
@@ -239,7 +221,6 @@
 .method protected onMeasure(II)V
     .locals 0
 
-    .line 1
     iget p1, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->b:I
 
     invoke-virtual {p0, p1, p1}, Landroid/widget/ImageView;->setMeasuredDimension(II)V
@@ -254,7 +235,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a([I)V
@@ -269,25 +249,21 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    .line 2
     array-length v1, p1
 
     new-array v1, v1, [I
 
     const/4 v2, 0x0
 
-    .line 3
     :goto_0
     array-length v3, p1
 
     if-ge v2, v3, :cond_0
 
-    .line 4
     aget v3, p1, v2
 
     invoke-static {v0, v3}, Landroidx/core/content/b;->a(Landroid/content/Context;I)I
@@ -300,7 +276,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-virtual {p0, v1}, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->setColorSchemeColors([I)V
 
@@ -318,7 +293,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/widget/ImageView;->getResources()Landroid/content/res/Resources;
 
@@ -332,7 +306,6 @@
 
     const/high16 v1, 0x42600000    # 56.0f
 
-    .line 2
     iget v0, v0, Landroid/util/DisplayMetrics;->density:F
 
     mul-float v0, v0, v1
@@ -346,7 +319,6 @@
     :cond_1
     const/high16 v1, 0x42200000    # 40.0f
 
-    .line 3
     iget v0, v0, Landroid/util/DisplayMetrics;->density:F
 
     mul-float v0, v0, v1
@@ -358,15 +330,12 @@
     :goto_0
     const/4 v0, 0x0
 
-    .line 4
     invoke-virtual {p0, v0}, Landroidx/appcompat/widget/AppCompatImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 5
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a(I)V
 
-    .line 6
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/AppCompatImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
@@ -377,7 +346,6 @@
 .method public stop()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$RefreshView;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 
     invoke-virtual {v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->stop()V

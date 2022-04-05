@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/badge/BadgeUtils$1;
 .super Ljava/lang/Object;
-.source "BadgeUtils.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -31,7 +30,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/Toolbar;ILcom/google/android/material/badge/BadgeDrawable;Landroid/widget/FrameLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/badge/BadgeUtils$1;->val$toolbar:Landroidx/appcompat/widget/Toolbar;
 
     iput p2, p0, Lcom/google/android/material/badge/BadgeUtils$1;->val$menuItemId:I
@@ -50,73 +48,60 @@
 .method public run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/badge/BadgeUtils$1;->val$toolbar:Landroidx/appcompat/widget/Toolbar;
 
     iget v1, p0, Lcom/google/android/material/badge/BadgeUtils$1;->val$menuItemId:I
 
-    .line 2
     invoke-static {v0, v1}, Lcom/google/android/material/internal/ToolbarUtils;->getActionMenuItemView(Landroidx/appcompat/widget/Toolbar;I)Landroidx/appcompat/view/menu/ActionMenuItemView;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v1, p0, Lcom/google/android/material/badge/BadgeUtils$1;->val$badgeDrawable:Lcom/google/android/material/badge/BadgeDrawable;
 
-    .line 4
     invoke-virtual {v1}, Lcom/google/android/material/badge/BadgeDrawable;->getHorizontalOffset()I
 
     move-result v2
 
     iget-object v3, p0, Lcom/google/android/material/badge/BadgeUtils$1;->val$toolbar:Landroidx/appcompat/widget/Toolbar;
 
-    .line 5
     invoke-virtual {v3}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
     sget v4, Lcom/google/android/material/R$dimen;->mtrl_badge_toolbar_action_menu_item_horizontal_offset:I
 
-    .line 6
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
     move-result v3
 
     add-int/2addr v2, v3
 
-    .line 7
     invoke-virtual {v1, v2}, Lcom/google/android/material/badge/BadgeDrawable;->setHorizontalOffset(I)V
 
-    .line 8
     iget-object v1, p0, Lcom/google/android/material/badge/BadgeUtils$1;->val$badgeDrawable:Lcom/google/android/material/badge/BadgeDrawable;
 
-    .line 9
     invoke-virtual {v1}, Lcom/google/android/material/badge/BadgeDrawable;->getVerticalOffset()I
 
     move-result v2
 
     iget-object v3, p0, Lcom/google/android/material/badge/BadgeUtils$1;->val$toolbar:Landroidx/appcompat/widget/Toolbar;
 
-    .line 10
     invoke-virtual {v3}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
     sget v4, Lcom/google/android/material/R$dimen;->mtrl_badge_toolbar_action_menu_item_vertical_offset:I
 
-    .line 11
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getDimensionPixelOffset(I)I
 
     move-result v3
 
     add-int/2addr v2, v3
 
-    .line 12
     invoke-virtual {v1, v2}, Lcom/google/android/material/badge/BadgeDrawable;->setVerticalOffset(I)V
 
-    .line 13
     iget-object v1, p0, Lcom/google/android/material/badge/BadgeUtils$1;->val$badgeDrawable:Lcom/google/android/material/badge/BadgeDrawable;
 
     iget-object v2, p0, Lcom/google/android/material/badge/BadgeUtils$1;->val$customBadgeParent:Landroid/widget/FrameLayout;

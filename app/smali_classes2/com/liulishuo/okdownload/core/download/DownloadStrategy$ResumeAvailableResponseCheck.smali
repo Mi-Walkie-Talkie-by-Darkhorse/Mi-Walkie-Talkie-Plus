@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/download/DownloadStrategy$ResumeAvailableResponseCheck;
 .super Ljava/lang/Object;
-.source "DownloadStrategy.java"
 
 
 # annotations
@@ -40,16 +39,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$ResumeAvailableResponseCheck;->connected:Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Connected;
 
-    .line 3
     iput-object p3, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$ResumeAvailableResponseCheck;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
-    .line 4
     iput p2, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$ResumeAvailableResponseCheck;->blockIndex:I
 
     return-void
@@ -65,7 +60,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$ResumeAvailableResponseCheck;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     iget v1, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$ResumeAvailableResponseCheck;->blockIndex:I
@@ -74,14 +68,12 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$ResumeAvailableResponseCheck;->connected:Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Connected;
 
     invoke-interface {v1}, Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Connected;->getResponseCode()I
 
     move-result v1
 
-    .line 3
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$ResumeAvailableResponseCheck;->connected:Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Connected;
 
     const-string v3, "Etag"
@@ -90,7 +82,6 @@
 
     move-result-object v2
 
-    .line 4
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v3
@@ -99,7 +90,6 @@
 
     move-result-object v3
 
-    .line 5
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->getCurrentOffset()J
 
     move-result-wide v4
@@ -130,7 +120,6 @@
 
     if-nez v2, :cond_3
 
-    .line 6
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v2
@@ -139,7 +128,6 @@
 
     move-result-object v2
 
-    .line 7
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->getCurrentOffset()J
 
     move-result-wide v3
@@ -162,7 +150,6 @@
 
     return-void
 
-    .line 8
     :cond_2
     new-instance v2, Lcom/liulishuo/okdownload/core/exception/ServerCanceledException;
 
@@ -174,7 +161,6 @@
 
     throw v2
 
-    .line 9
     :cond_3
     new-instance v0, Lcom/liulishuo/okdownload/core/exception/ResumeFailedException;
 

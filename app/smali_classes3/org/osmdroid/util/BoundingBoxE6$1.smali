@@ -1,6 +1,5 @@
 .class final Lorg/osmdroid/util/BoundingBoxE6$1;
 .super Ljava/lang/Object;
-.source "BoundingBoxE6.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/osmdroid/util/BoundingBoxE6$1;->createFromParcel(Landroid/os/Parcel;)Lorg/osmdroid/util/BoundingBoxE6;
 
     move-result-object p1
@@ -52,7 +49,6 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lorg/osmdroid/util/BoundingBoxE6;
     .locals 0
 
-    .line 2
     invoke-static {p1}, Lorg/osmdroid/util/BoundingBoxE6;->access$000(Landroid/os/Parcel;)Lorg/osmdroid/util/BoundingBoxE6;
 
     move-result-object p1
@@ -63,7 +59,6 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/osmdroid/util/BoundingBoxE6$1;->newArray(I)[Lorg/osmdroid/util/BoundingBoxE6;
 
     move-result-object p1
@@ -74,7 +69,6 @@
 .method public newArray(I)[Lorg/osmdroid/util/BoundingBoxE6;
     .locals 0
 
-    .line 2
     new-array p1, p1, [Lorg/osmdroid/util/BoundingBoxE6;
 
     return-object p1

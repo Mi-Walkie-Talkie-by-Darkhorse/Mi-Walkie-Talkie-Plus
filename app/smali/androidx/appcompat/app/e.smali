@@ -1,13 +1,11 @@
 .class public Landroidx/appcompat/app/e;
 .super Landroidx/fragment/app/DialogFragment;
-.source "AppCompatDialogFragment.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/fragment/app/DialogFragment;-><init>()V
 
     return-void
@@ -24,7 +22,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance p1, Landroidx/appcompat/app/d;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -52,12 +49,10 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p1, Landroidx/appcompat/app/d;
 
     if-eqz v0, :cond_2
 
-    .line 2
     move-object v0, p1
 
     check-cast v0, Landroidx/appcompat/app/d;
@@ -76,7 +71,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -86,13 +80,11 @@
 
     invoke-virtual {p1, p2}, Landroid/view/Window;->addFlags(I)V
 
-    .line 4
     :cond_1
     invoke-virtual {v0, v1}, Landroidx/appcompat/app/d;->supportRequestWindowFeature(I)Z
 
     goto :goto_0
 
-    .line 5
     :cond_2
     invoke-super {p0, p1, p2}, Landroidx/fragment/app/DialogFragment;->setupDialog(Landroid/app/Dialog;I)V
 

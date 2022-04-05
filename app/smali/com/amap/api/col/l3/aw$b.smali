@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/aw$b;
 .super Landroid/os/Handler;
-.source "OfflineDownloadManager.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/aw;Landroid/os/Looper;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/aw$b;->a:Lcom/amap/api/col/l3/aw;
 
-    .line 2
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -36,22 +33,17 @@
 .method public final handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
-    .line 2
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 3
     instance-of v0, p1, Lcom/amap/api/col/l3/av;
 
     if-eqz v0, :cond_0
 
-    .line 4
     check-cast p1, Lcom/amap/api/col/l3/av;
 
-    .line 5
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "OfflineMapHandler handleMessage CitObj  name: "
@@ -86,7 +78,6 @@
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$b;->a:Lcom/amap/api/col/l3/aw;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/aw;->d(Lcom/amap/api/col/l3/aw;)Lcom/amap/api/col/l3/aw$a;
@@ -95,7 +86,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/aw$b;->a:Lcom/amap/api/col/l3/aw;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/aw;->d(Lcom/amap/api/col/l3/aw;)Lcom/amap/api/col/l3/aw$a;
@@ -112,7 +102,6 @@
     :catchall_0
     move-exception p1
 
-    .line 8
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

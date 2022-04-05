@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/j;
 .super Ljava/lang/Object;
-.source "TwilightCalculator.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,19 +26,16 @@
 .method static a()Landroidx/appcompat/app/j;
     .locals 1
 
-    .line 1
     sget-object v0, Landroidx/appcompat/app/j;->d:Landroidx/appcompat/app/j;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Landroidx/appcompat/app/j;
 
     invoke-direct {v0}, Landroidx/appcompat/app/j;-><init>()V
 
     sput-object v0, Landroidx/appcompat/app/j;->d:Landroidx/appcompat/app/j;
 
-    .line 3
     :cond_0
     sget-object v0, Landroidx/appcompat/app/j;->d:Landroidx/appcompat/app/j;
 
@@ -74,7 +69,6 @@
 
     float-to-double v5, v4
 
-    .line 4
     invoke-static {v5, v6}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v7
@@ -91,7 +85,6 @@
 
     float-to-double v9, v9
 
-    .line 5
     invoke-static {v9, v10}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v9
@@ -142,7 +135,6 @@
 
     sub-double/2addr v11, v9
 
-    .line 6
     invoke-static {v11, v12}, Ljava/lang/Math;->round(D)J
 
     move-result-wide v11
@@ -155,7 +147,6 @@
 
     add-double/2addr v3, v9
 
-    .line 7
     invoke-static {v5, v6}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v5
@@ -170,7 +161,6 @@
 
     mul-double v5, v5, v7
 
-    .line 8
     invoke-static {v5, v6}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v5
@@ -181,7 +171,6 @@
 
     add-double/2addr v3, v5
 
-    .line 9
     invoke-static {v7, v8}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v5
@@ -204,7 +193,6 @@
 
     const-wide v9, -0x4045311600000000L    # -0.10471975803375244
 
-    .line 10
     invoke-static {v9, v10}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v9
@@ -213,7 +201,6 @@
 
     move-result-wide v11
 
-    .line 11
     invoke-static {v5, v6}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v13
@@ -244,13 +231,10 @@
 
     if-ltz v8, :cond_0
 
-    .line 12
     iput v5, v0, Landroidx/appcompat/app/j;->c:I
 
-    .line 13
     iput-wide v6, v0, Landroidx/appcompat/app/j;->a:J
 
-    .line 14
     iput-wide v6, v0, Landroidx/appcompat/app/j;->b:J
 
     return-void
@@ -264,18 +248,14 @@
 
     if-gtz v13, :cond_1
 
-    .line 15
     iput v8, v0, Landroidx/appcompat/app/j;->c:I
 
-    .line 16
     iput-wide v6, v0, Landroidx/appcompat/app/j;->a:J
 
-    .line 17
     iput-wide v6, v0, Landroidx/appcompat/app/j;->b:J
 
     return-void
 
-    .line 18
     :cond_1
     invoke-static {v9, v10}, Ljava/lang/Math;->acos(D)D
 
@@ -295,7 +275,6 @@
 
     mul-double v9, v9, v11
 
-    .line 19
     invoke-static {v9, v10}, Ljava/lang/Math;->round(D)J
 
     move-result-wide v9
@@ -308,7 +287,6 @@
 
     mul-double v3, v3, v11
 
-    .line 20
     invoke-static {v3, v4}, Ljava/lang/Math;->round(D)J
 
     move-result-wide v3
@@ -321,19 +299,16 @@
 
     if-gez v1, :cond_2
 
-    .line 21
     iget-wide v1, v0, Landroidx/appcompat/app/j;->a:J
 
     cmp-long v3, v1, p1
 
     if-lez v3, :cond_2
 
-    .line 22
     iput v8, v0, Landroidx/appcompat/app/j;->c:I
 
     goto :goto_0
 
-    .line 23
     :cond_2
     iput v5, v0, Landroidx/appcompat/app/j;->c:I
 

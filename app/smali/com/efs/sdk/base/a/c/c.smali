@@ -1,6 +1,5 @@
 .class public final Lcom/efs/sdk/base/a/c/c;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations
@@ -21,10 +20,8 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     invoke-static {}, Lcom/efs/sdk/base/a/d/a;->a()Lcom/efs/sdk/base/a/c/a;
 
     move-result-object v0
@@ -39,7 +36,6 @@
 .method synthetic constructor <init>(B)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/efs/sdk/base/a/c/c;-><init>()V
 
     return-void
@@ -50,7 +46,6 @@
 .method public final a()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/a/c/c;->a:Lcom/efs/sdk/base/a/c/b;
 
     const-string v1, "net"
@@ -61,7 +56,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0

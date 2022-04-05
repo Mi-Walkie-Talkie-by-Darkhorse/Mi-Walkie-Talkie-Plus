@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/blelib/utils/FooUtils;
 .super Ljava/lang/Object;
-.source "FooUtils.java"
 
 
 # direct methods
@@ -9,7 +8,6 @@
 
     const-string v0, "fooLib"
 
-    .line 1
     invoke-static {v0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
     return-void

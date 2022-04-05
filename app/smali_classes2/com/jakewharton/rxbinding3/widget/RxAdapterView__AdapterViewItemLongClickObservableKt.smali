@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/widget/RxAdapterView__AdapterViewItemLongClickObservableKt;
 .super Ljava/lang/Object;
-.source "AdapterViewItemLongClickObservable.kt"
 
 
 # annotations
@@ -118,7 +117,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable;
 
     invoke-direct {v0, p0, p1}, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable;-><init>(Landroid/widget/AdapterView;Lkotlin/jvm/a/a;)V
@@ -141,7 +139,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     sget-object p1, Lcom/jakewharton/rxbinding3/internal/AlwaysTrue;->INSTANCE:Lcom/jakewharton/rxbinding3/internal/AlwaysTrue;
 
     :cond_0

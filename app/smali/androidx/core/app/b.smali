@@ -1,6 +1,5 @@
 .class public Landroidx/core/app/b;
 .super Ljava/lang/Object;
-.source "ActivityOptionsCompat.java"
 
 
 # virtual methods

@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/android/material/slider/BaseSlider$TooltipDrawableFactory;
 .super Ljava/lang/Object;
-.source "BaseSlider.java"
 
 
 # annotations

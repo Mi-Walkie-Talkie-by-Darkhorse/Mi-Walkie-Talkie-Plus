@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/gb$1;
 .super Ljava/lang/Object;
-.source "DeviceInfo.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Ljava/lang/Class;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/gb$1;->a:Ljava/lang/Class;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/gb$1;->b:Landroid/content/Context;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 10
 
-    .line 1
     const-class v0, Ljava/lang/String;
 
     :try_start_0
@@ -58,7 +55,6 @@
 
     move-result-object v1
 
-    .line 2
     iget-object v2, p0, Lcom/amap/api/col/l3/gb$1;->a:Ljava/lang/Class;
 
     new-array v4, v3, [Ljava/lang/Object;
@@ -73,7 +69,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v2, p0, Lcom/amap/api/col/l3/gb$1;->a:Ljava/lang/Class;
 
@@ -101,7 +96,6 @@
 
     move-result-object v2
 
-    .line 4
     iget-object v4, p0, Lcom/amap/api/col/l3/gb$1;->a:Ljava/lang/Class;
 
     new-array v5, v5, [Ljava/lang/Object;
@@ -144,7 +138,6 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 5
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v4
@@ -153,7 +146,6 @@
 
     return-void
 
-    .line 6
     :cond_1
     invoke-static {}, Lcom/amap/api/col/l3/hx;->a()Lcom/amap/api/col/l3/hx;
 
@@ -169,7 +161,6 @@
 
     move-result-object v1
 
-    .line 7
     iget-object v2, p0, Lcom/amap/api/col/l3/gb$1;->a:Ljava/lang/Class;
 
     const-string v4, "parseResult"
@@ -186,7 +177,6 @@
 
     move-result-object v0
 
-    .line 8
     iget-object v2, p0, Lcom/amap/api/col/l3/gb$1;->a:Ljava/lang/Class;
 
     new-array v4, v8, [Ljava/lang/Object;

@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/ObservableTransformer;
 .super Ljava/lang/Object;
-.source "ObservableTransformer.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public Lcom/yalantis/ucrop/b$a;
 .super Ljava/lang/Object;
-.source "UCrop.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
@@ -42,7 +39,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/b$a;->a:Landroid/os/Bundle;
 
     return-object v0
@@ -56,7 +52,6 @@
         .end annotation
     .end param
 
-    .line 2
     iget-object v0, p0, Lcom/yalantis/ucrop/b$a;->a:Landroid/os/Bundle;
 
     const-string v1, "com.yalantis.ucrop.CompressionQuality"
@@ -69,7 +64,6 @@
 .method public a(Z)V
     .locals 2
 
-    .line 3
     iget-object v0, p0, Lcom/yalantis/ucrop/b$a;->a:Landroid/os/Bundle;
 
     const-string v1, "com.yalantis.ucrop.CircleDimmedLayer"
@@ -86,7 +80,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/b$a;->a:Landroid/os/Bundle;
 
     const-string v1, "com.yalantis.ucrop.StatusBarColor"
@@ -99,7 +92,6 @@
 .method public b(Z)V
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/yalantis/ucrop/b$a;->a:Landroid/os/Bundle;
 
     const-string v1, "com.yalantis.ucrop.FreeStyleCrop"
@@ -116,7 +108,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/b$a;->a:Landroid/os/Bundle;
 
     const-string v1, "com.yalantis.ucrop.ToolbarColor"
@@ -129,7 +120,6 @@
 .method public c(Z)V
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/yalantis/ucrop/b$a;->a:Landroid/os/Bundle;
 
     const-string v1, "com.yalantis.ucrop.HideBottomControls"
@@ -146,7 +136,6 @@
         .end annotation
     .end param
 
-    .line 2
     iget-object v0, p0, Lcom/yalantis/ucrop/b$a;->a:Landroid/os/Bundle;
 
     const-string v1, "com.yalantis.ucrop.UcropToolbarWidgetColor"
@@ -159,7 +148,6 @@
 .method public d(Z)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/b$a;->a:Landroid/os/Bundle;
 
     const-string v1, "com.yalantis.ucrop.ShowCropFrame"

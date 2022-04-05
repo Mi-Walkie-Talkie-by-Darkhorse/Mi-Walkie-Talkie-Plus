@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/service/ShareLocationService$d;
 .super Ljava/lang/Object;
-.source "ShareLocationService.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/node/h;
@@ -21,7 +20,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/ui/service/ShareLocationService;Lcom/ifengyu/intercom/ui/service/ShareLocationService$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/service/ShareLocationService$d;-><init>(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)V
 
     return-void
@@ -71,7 +68,6 @@
 .method public f(Ljava/lang/String;)V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1

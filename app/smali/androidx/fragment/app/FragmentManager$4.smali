@@ -1,6 +1,5 @@
 .class Landroidx/fragment/app/FragmentManager$4;
 .super Ljava/lang/Object;
-.source "FragmentManager.java"
 
 # interfaces
 .implements Landroidx/fragment/app/SpecialEffectsControllerFactory;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentManager$4;->this$0:Landroidx/fragment/app/FragmentManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +42,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Landroidx/fragment/app/DefaultSpecialEffectsController;
 
     invoke-direct {v0, p1}, Landroidx/fragment/app/DefaultSpecialEffectsController;-><init>(Landroid/view/ViewGroup;)V

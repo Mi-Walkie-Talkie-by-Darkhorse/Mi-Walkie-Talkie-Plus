@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/map/f/a/g;
 .super Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;
-.source "OfflineTileFilesystemProvider.java"
 
 
 # annotations
@@ -41,7 +40,6 @@
 
     const/4 v0, 0x0
 
-    .line 12
     invoke-direct {p0, p1, p2, v0}, Lcom/ifengyu/intercom/ui/map/f/a/g;-><init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;Lorg/osmdroid/tileprovider/tilesource/ITileSource;[Lorg/osmdroid/tileprovider/modules/IArchiveFile;)V
 
     return-void
@@ -50,7 +48,6 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;Lorg/osmdroid/tileprovider/tilesource/ITileSource;[Lorg/osmdroid/tileprovider/modules/IArchiveFile;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -59,7 +56,6 @@
 
     move-result v0
 
-    .line 2
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v1
@@ -68,34 +64,28 @@
 
     move-result v1
 
-    .line 3
     invoke-direct {p0, p1, v0, v1}, Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;-><init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;II)V
 
-    .line 4
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->a:Ljava/util/ArrayList;
 
-    .line 5
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->b:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 6
     invoke-virtual {p0, p2}, Lcom/ifengyu/intercom/ui/map/f/a/g;->setTileSource(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
 
     if-nez p3, :cond_0
 
     const/4 p1, 0x0
 
-    .line 7
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->c:Z
 
-    .line 8
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/map/f/a/g;->findArchiveFiles()V
 
     goto :goto_1
@@ -103,10 +93,8 @@
     :cond_0
     const/4 p1, 0x1
 
-    .line 9
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->c:Z
 
-    .line 10
     array-length p2, p3
 
     sub-int/2addr p2, p1
@@ -114,7 +102,6 @@
     :goto_0
     if-ltz p2, :cond_1
 
-    .line 11
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->a:Ljava/util/ArrayList;
 
     aget-object v0, p3, p2
@@ -133,7 +120,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/map/f/a/g;)Ljava/util/concurrent/atomic/AtomicReference;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->b:Ljava/util/concurrent/atomic/AtomicReference;
 
     return-object p0
@@ -142,12 +128,10 @@
 .method private findArchiveFiles()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 2
     invoke-static {}, Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;->isSdCardAvailable()Z
 
     move-result v0
@@ -156,7 +140,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
@@ -166,14 +149,12 @@
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    .line 5
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -183,14 +164,12 @@
 
     aget-object v3, v0, v2
 
-    .line 6
     invoke-static {v3}, Lorg/osmdroid/tileprovider/modules/ArchiveFileFactory;->getArchiveFile(Ljava/io/File;)Lorg/osmdroid/tileprovider/modules/IArchiveFile;
 
     move-result-object v3
 
     if-eqz v3, :cond_1
 
-    .line 7
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v4, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -209,7 +188,6 @@
 .method public detach()V
     .locals 2
 
-    .line 1
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->a:Ljava/util/ArrayList;
 
@@ -219,7 +197,6 @@
 
     if-nez v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->a:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
@@ -232,7 +209,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -243,7 +219,6 @@
 
     invoke-interface {v0}, Lorg/osmdroid/tileprovider/modules/IArchiveFile;->close()V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->a:Ljava/util/ArrayList;
 
@@ -251,7 +226,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-super {p0}, Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;->detach()V
 
@@ -261,7 +235,6 @@
 .method public getMaximumZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->b:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -272,14 +245,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->getMaximumZoomLevel()I
 
     move-result v0
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static {}, Lmicrosoft/mappoint/TileSystem;->getMaximumZoomLevel()I
 
@@ -292,7 +263,6 @@
 .method public getMinimumZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->b:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -303,7 +273,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->getMinimumZoomLevel()I
 
     move-result v0
@@ -336,7 +305,6 @@
 .method protected getTileLoader()Ljava/lang/Runnable;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/ui/map/f/a/g$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/map/f/a/g$a;-><init>(Lcom/ifengyu/intercom/ui/map/f/a/g;)V
@@ -355,12 +323,10 @@
 .method protected onMediaMounted()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->c:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/map/f/a/g;->findArchiveFiles()V
 
     :cond_0
@@ -370,12 +336,10 @@
 .method protected onMediaUnmounted()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->c:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/map/f/a/g;->findArchiveFiles()V
 
     :cond_0
@@ -385,7 +349,6 @@
 .method public setTileSource(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/g;->b:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V

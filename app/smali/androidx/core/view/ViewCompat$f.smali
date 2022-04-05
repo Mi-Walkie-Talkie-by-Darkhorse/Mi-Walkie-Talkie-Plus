@@ -1,6 +1,5 @@
 .class Landroidx/core/view/ViewCompat$f;
 .super Ljava/lang/Object;
-.source "ViewCompat.java"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
@@ -35,10 +34,8 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/WeakHashMap;
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
@@ -54,7 +51,6 @@
         value = 0x13
     .end annotation
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object p1
@@ -70,7 +66,6 @@
         value = 0x13
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getVisibility()I
 
     move-result v0
@@ -96,11 +91,9 @@
     :cond_1
     const/16 p2, 0x20
 
-    .line 2
     :goto_1
     invoke-static {p1, p2}, Landroidx/core/view/ViewCompat;->d(Landroid/view/View;I)V
 
-    .line 3
     iget-object p2, p0, Landroidx/core/view/ViewCompat$f;->a:Ljava/util/WeakHashMap;
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -121,14 +114,12 @@
         value = 0x13
     .end annotation
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/core/view/ViewCompat$f;->a:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0}, Ljava/util/WeakHashMap;->entrySet()Ljava/util/Set;
@@ -152,7 +143,6 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -183,7 +173,6 @@
         value = 0x13
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/core/view/ViewCompat$f;->a(Landroid/view/View;)V
 
     return-void

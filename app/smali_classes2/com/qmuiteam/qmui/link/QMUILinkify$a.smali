@@ -1,6 +1,5 @@
 .class final Lcom/qmuiteam/qmui/link/QMUILinkify$a;
 .super Ljava/lang/Object;
-.source "QMUILinkify.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/link/QMUILinkify$j;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public a()Ljava/util/regex/Pattern;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/qmuiteam/qmui/link/QMUILinkify$k;->a()Ljava/util/regex/Pattern;
 
     move-result-object v0

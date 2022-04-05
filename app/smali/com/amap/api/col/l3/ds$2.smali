@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ds$2;
 .super Lcom/amap/api/col/l3/ds$e;
-.source "AsyncTask.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/ds;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ds$2;->a:Lcom/amap/api/col/l3/ds;
 
     const/4 p1, 0x0
@@ -55,7 +53,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ds$2;->a:Lcom/amap/api/col/l3/ds;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/ds;->a(Lcom/amap/api/col/l3/ds;)Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -68,10 +65,8 @@
 
     const/16 v0, 0xa
 
-    .line 2
     invoke-static {v0}, Landroid/os/Process;->setThreadPriority(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/ds$2;->a:Lcom/amap/api/col/l3/ds;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/ds$e;->b:[Ljava/lang/Object;

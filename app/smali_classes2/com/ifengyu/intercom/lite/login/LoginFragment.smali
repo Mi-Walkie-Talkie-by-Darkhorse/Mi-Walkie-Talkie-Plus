@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/login/LoginFragment;
 .super Lcom/ifengyu/intercom/lite/base/e;
-.source "LoginFragment.java"
 
 
 # annotations
@@ -96,10 +95,8 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/base/e;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/lite/login/LoginFragment$i;
 
     const/4 v1, 0x0
@@ -108,7 +105,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->z:Lcom/ifengyu/intercom/lite/login/LoginFragment$i;
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/lite/login/k;->a:Lcom/ifengyu/intercom/lite/login/k;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->A:Lio/reactivex/functions/Function;
@@ -119,12 +115,10 @@
 .method private A()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->x()V
 
     const v0, 0x7f110249
 
-    .line 2
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->c(I)V
 
     return-void
@@ -133,7 +127,6 @@
 .method private B()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -150,12 +143,10 @@
 
     const v0, 0x7f1101c1
 
-    .line 1
     invoke-static {v0}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     new-instance v8, Lcom/ifengyu/intercom/lite/login/LoginFragment$a;
 
     iget-object v3, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mTvImprove:Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;
@@ -176,15 +167,12 @@
 
     const/4 v1, 0x1
 
-    .line 3
     invoke-virtual {v8, v1}, Lcom/qmuiteam/qmui/span/d;->b(Z)V
 
-    .line 4
     new-instance v1, Landroid/text/SpannableString;
 
     invoke-direct {v1, v0}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -203,19 +191,16 @@
 
     const v0, 0x7f1101c3
 
-    .line 1
     invoke-static {v0}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object v0
 
     const v1, 0x7f1101c2
 
-    .line 2
     invoke-static {v1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -228,12 +213,10 @@
 
     move-result-object v1
 
-    .line 4
     new-instance v2, Landroid/text/SpannableString;
 
     invoke-direct {v2, v1}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 5
     new-instance v10, Lcom/ifengyu/intercom/lite/login/LoginFragment$b;
 
     iget-object v5, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mTvUserProtocol:Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;
@@ -254,10 +237,8 @@
 
     const/4 v3, 0x1
 
-    .line 6
     invoke-virtual {v10, v3}, Lcom/qmuiteam/qmui/span/d;->b(Z)V
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -280,7 +261,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     return-object v0
@@ -297,14 +277,12 @@
 .method private F()V
     .locals 5
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/MiTalkiApp;->j()V
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -333,13 +311,10 @@
 
     const-string v0, "app"
 
-    .line 3
     invoke-static {v0}, Lcom/ifengyu/intercom/i/l0;->a(Ljava/lang/String;)V
 
-    .line 4
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->z()V
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/lite/login/LoginFragment$d;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment$d;-><init>(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
@@ -348,7 +323,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/ifengyu/library/a/m;->a(Ljava/lang/Runnable;J)V
 
-    .line 6
     new-instance v0, Ljava/lang/Thread;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/login/LoginFragment$e;
@@ -357,7 +331,6 @@
 
     invoke-direct {v0, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     return-void
@@ -366,31 +339,26 @@
 .method private G()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mBtnLogin:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaButton;->setChangeAlphaWhenPress(Z)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mBtnRegister:Lcom/qmuiteam/qmui/alpha/QMUIAlphaTextView;
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v2}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaTextView;->setChangeAlphaWhenPress(Z)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mBtnForget:Lcom/qmuiteam/qmui/alpha/QMUIAlphaTextView;
 
     invoke-virtual {v0, v2}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaTextView;->setChangeAlphaWhenPress(Z)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mTvUserProtocol:Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->setMovementMethodDefault()V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mTvUserProtocol:Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->D()Landroid/text/SpannableString;
@@ -399,12 +367,10 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mTvImprove:Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;->setMovementMethodDefault()V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mTvImprove:Lcom/qmuiteam/qmui/widget/textview/QMUISpanTouchFixTextView;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->C()Landroid/text/SpannableString;
@@ -413,7 +379,6 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mEtPhone:Lcom/ifengyu/intercom/ui/widget/view/FixedEditText;
 
     new-array v3, v2, [Landroid/text/InputFilter;
@@ -428,7 +393,6 @@
 
     invoke-virtual {v0, v3}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mEtPassword:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
     new-array v2, v2, [Landroid/text/InputFilter;
@@ -443,21 +407,18 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/EditText;->setFilters([Landroid/text/InputFilter;)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mEtPhone:Lcom/ifengyu/intercom/ui/widget/view/FixedEditText;
 
     invoke-static {v0}, Lcom/jakewharton/rxbinding3/widget/RxTextView;->textChanges(Landroid/widget/TextView;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     move-result-object v0
 
-    .line 11
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mEtPassword:Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 
     invoke-static {v1}, Lcom/jakewharton/rxbinding3/widget/RxTextView;->textChanges(Landroid/widget/TextView;)Lcom/jakewharton/rxbinding3/InitialValueObservable;
 
     move-result-object v1
 
-    .line 12
     sget-object v2, Lcom/ifengyu/intercom/lite/login/l;->a:Lcom/ifengyu/intercom/lite/login/l;
 
     invoke-static {v0, v1, v2}, Lio/reactivex/Observable;->combineLatest(Lio/reactivex/ObservableSource;Lio/reactivex/ObservableSource;Lio/reactivex/functions/BiFunction;)Lio/reactivex/Observable;
@@ -468,10 +429,8 @@
 
     invoke-direct {v1, p0}, Lcom/ifengyu/intercom/lite/login/h;-><init>(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
 
-    .line 13
     invoke-virtual {v0, v1}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mCbImprove:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     sget-object v1, Lcom/ifengyu/intercom/lite/login/m;->a:Lcom/ifengyu/intercom/lite/login/m;
@@ -484,7 +443,6 @@
 .method private H()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mCbUserProtocol:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -495,12 +453,10 @@
 
     const v0, 0x7f11027d
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/library/a/m;->d(I)V
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mEtPhone:Lcom/ifengyu/intercom/ui/widget/view/FixedEditText;
 
@@ -538,7 +494,6 @@
 .method private I()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mCbUserProtocol:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -549,12 +504,10 @@
 
     const v0, 0x7f11027d
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/library/a/m;->d(I)V
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
@@ -566,7 +519,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -581,7 +533,6 @@
 
     if-nez v0, :cond_1
 
-    .line 5
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -590,11 +541,9 @@
 
     return-void
 
-    .line 6
     :cond_1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->z()V
 
-    .line 7
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->J()V
 
     goto :goto_0
@@ -602,7 +551,6 @@
     :cond_2
     const v0, 0x7f11033c
 
-    .line 8
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v0
@@ -618,7 +566,6 @@
 .method private J()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -641,7 +588,6 @@
 .method private K()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mCbUserProtocol:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     invoke-virtual {v0}, Landroid/widget/CheckBox;->isChecked()Z
@@ -652,12 +598,10 @@
 
     const v0, 0x7f11027d
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/library/a/m;->d(I)V
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
@@ -669,10 +613,8 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->z()V
 
-    .line 5
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object v0
@@ -684,7 +626,6 @@
     :cond_1
     const v0, 0x7f11033c
 
-    .line 6
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v0
@@ -705,7 +646,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -724,7 +664,6 @@
 
     if-ne v0, v3, :cond_0
 
-    .line 5
     invoke-interface {p0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -744,7 +683,6 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 6
     :goto_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -777,7 +715,6 @@
     :cond_2
     const/4 v1, 0x0
 
-    .line 7
     :goto_2
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -794,21 +731,18 @@
         }
     .end annotation
 
-    .line 35
     invoke-virtual {p0}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->hasError()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 36
     invoke-virtual {p0}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getCode()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 37
     :cond_0
     new-instance v0, Lcom/ifengyu/intercom/lite/http/exception/ApiException;
 
@@ -828,26 +762,22 @@
 .method private a(Landroid/app/Activity;)V
     .locals 2
 
-    .line 22
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->b(Landroid/app/Activity;)Lio/reactivex/Observable;
 
     move-result-object p1
 
     sget-object v0, Lcom/ifengyu/intercom/lite/login/a;->a:Lcom/ifengyu/intercom/lite/login/a;
 
-    .line 23
     invoke-virtual {p1, v0}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
 
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->A:Lio/reactivex/functions/Function;
 
-    .line 24
     invoke-virtual {p1, v0}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
 
-    .line 25
     invoke-static {}, Lcom/ifengyu/intercom/lite/d/f;->c()Lio/reactivex/ObservableTransformer;
 
     move-result-object v0
@@ -864,7 +794,6 @@
 
     invoke-direct {v1, p0}, Lcom/ifengyu/intercom/lite/login/i;-><init>(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
 
-    .line 26
     invoke-virtual {p1, v0, v1}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
     return-void
@@ -873,47 +802,38 @@
 .method private a(Landroid/content/Context;)V
     .locals 2
 
-    .line 13
     new-instance v0, Lcom/afollestad/materialdialogs/MaterialDialog$d;
 
     invoke-direct {v0, p1}, Lcom/afollestad/materialdialogs/MaterialDialog$d;-><init>(Landroid/content/Context;)V
 
     const p1, 0x7f11010e
 
-    .line 14
     invoke-virtual {v0, p1}, Lcom/afollestad/materialdialogs/MaterialDialog$d;->a(I)Lcom/afollestad/materialdialogs/MaterialDialog$d;
 
     const p1, 0x7f060036
 
-    .line 15
     invoke-virtual {v0, p1}, Lcom/afollestad/materialdialogs/MaterialDialog$d;->c(I)Lcom/afollestad/materialdialogs/MaterialDialog$d;
 
     const p1, 0x7f110093
 
-    .line 16
     invoke-virtual {v0, p1}, Lcom/afollestad/materialdialogs/MaterialDialog$d;->e(I)Lcom/afollestad/materialdialogs/MaterialDialog$d;
 
     const p1, 0x7f0600de
 
-    .line 17
     invoke-virtual {v0, p1}, Lcom/afollestad/materialdialogs/MaterialDialog$d;->d(I)Lcom/afollestad/materialdialogs/MaterialDialog$d;
 
     const v1, 0x7f110097
 
-    .line 18
     invoke-virtual {v0, v1}, Lcom/afollestad/materialdialogs/MaterialDialog$d;->g(I)Lcom/afollestad/materialdialogs/MaterialDialog$d;
 
-    .line 19
     invoke-virtual {v0, p1}, Lcom/afollestad/materialdialogs/MaterialDialog$d;->f(I)Lcom/afollestad/materialdialogs/MaterialDialog$d;
 
     new-instance p1, Lcom/ifengyu/intercom/lite/login/LoginFragment$g;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment$g;-><init>(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
 
-    .line 20
     invoke-virtual {v0, p1}, Lcom/afollestad/materialdialogs/MaterialDialog$d;->a(Lcom/afollestad/materialdialogs/MaterialDialog$k;)Lcom/afollestad/materialdialogs/MaterialDialog$d;
 
-    .line 21
     invoke-virtual {v0}, Lcom/afollestad/materialdialogs/MaterialDialog$d;->c()Lcom/afollestad/materialdialogs/MaterialDialog;
 
     return-void
@@ -922,7 +842,6 @@
 .method static synthetic a(Landroid/widget/CompoundButton;Z)V
     .locals 1
 
-    .line 9
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -941,7 +860,6 @@
 
     invoke-static {v0, p0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     invoke-static {p1}, Lcom/ifengyu/intercom/i/d0;->h(Z)V
 
     return-void
@@ -950,7 +868,6 @@
 .method private a(Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;Ljava/lang/String;)V
     .locals 1
 
-    .line 11
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -959,7 +876,6 @@
 
     return-void
 
-    .line 12
     :cond_0
     new-instance v0, Lcom/ifengyu/intercom/lite/login/LoginFragment$c;
 
@@ -973,7 +889,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->B()V
 
     return-void
@@ -982,7 +897,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/lite/login/LoginFragment;I)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->c(I)V
 
     return-void
@@ -991,7 +905,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/lite/login/LoginFragment;Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;Ljava/lang/String;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->a(Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;Ljava/lang/String;)V
 
     return-void
@@ -1011,33 +924,28 @@
         }
     .end annotation
 
-    .line 5
     new-instance v0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize;
 
     invoke-direct {v0}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize;-><init>()V
 
     const/4 v1, 0x1
 
-    .line 6
     invoke-virtual {v0, v1}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize;->setUseSystemAccountLogin(Z)Lcom/xiaomi/account/openauth/XiaomiOAuthorize;
 
     move-result-object v0
 
     const-wide v2, 0x280000000005f8d3L    # 5.075883675072411E-116
 
-    .line 7
     invoke-virtual {v0, v2, v3}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize;->setAppId(J)Lcom/xiaomi/account/openauth/XiaomiOAuthorize;
 
     move-result-object v0
 
     const-string v2, "http://www.ifengyu.com"
 
-    .line 8
     invoke-virtual {v0, v2}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize;->setRedirectUrl(Ljava/lang/String;)Lcom/xiaomi/account/openauth/XiaomiOAuthorize;
 
     move-result-object v0
 
-    .line 9
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->E()[I
 
     move-result-object v2
@@ -1046,24 +954,20 @@
 
     move-result-object v0
 
-    .line 10
     invoke-virtual {v0, v1}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize;->setKeepCookies(Z)Lcom/xiaomi/account/openauth/XiaomiOAuthorize;
 
     move-result-object v0
 
     const-class v1, Lcom/ifengyu/intercom/ui/activity/CustomizedAuthorizedActivity;
 
-    .line 11
     invoke-virtual {v0, v1}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize;->setCustomizedAuthorizeActivityClass(Ljava/lang/Class;)Lcom/xiaomi/account/openauth/XiaomiOAuthorize;
 
     move-result-object v0
 
-    .line 12
     invoke-virtual {v0, p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize;->startGetOAuthCode(Landroid/app/Activity;)Lcom/xiaomi/account/openauth/XiaomiOAuthFuture;
 
     move-result-object p1
 
-    .line 13
     invoke-static {p1}, Lio/reactivex/Observable;->just(Ljava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -1074,7 +978,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->x()V
 
     return-void
@@ -1083,7 +986,6 @@
 .method private b(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/lite/login/LoginFragment$h;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment$h;-><init>(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
@@ -1096,7 +998,6 @@
 .method private c(I)V
     .locals 3
 
-    .line 2
     new-instance v0, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -1109,7 +1010,6 @@
 
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog$Builder;
 
-    .line 3
     invoke-static {p1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object p1
@@ -1122,10 +1022,8 @@
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/lite/login/LoginFragment$f;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/lite/login/LoginFragment$f;-><init>(Lcom/ifengyu/intercom/lite/login/LoginFragment;Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog;)V
@@ -1140,7 +1038,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->x()V
 
     return-void
@@ -1149,7 +1046,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->z()V
 
     return-void
@@ -1158,7 +1054,6 @@
 .method static synthetic e(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->A()V
 
     return-void
@@ -1167,7 +1062,6 @@
 .method static synthetic f(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->F()V
 
     return-void
@@ -1176,7 +1070,6 @@
 .method static synthetic g(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->x()V
 
     return-void
@@ -1185,7 +1078,6 @@
 .method static synthetic h(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->x()V
 
     return-void
@@ -1194,7 +1086,6 @@
 .method static synthetic i(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->z()V
 
     return-void
@@ -1210,7 +1101,6 @@
         }
     .end annotation
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mBtnLogin:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
@@ -1230,7 +1120,6 @@
         }
     .end annotation
 
-    .line 27
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1253,10 +1142,8 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 28
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->x()V
 
-    .line 29
     instance-of v0, p1, Landroid/accounts/OperationCanceledException;
 
     const/4 v1, 0x0
@@ -1265,7 +1152,6 @@
 
     const p1, 0x7f110068
 
-    .line 30
     invoke-static {p1}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object p1
@@ -1274,7 +1160,6 @@
 
     goto :goto_0
 
-    .line 31
     :cond_0
     instance-of v0, p1, Lcom/ifengyu/intercom/lite/http/exception/ApiException;
 
@@ -1282,10 +1167,8 @@
 
     if-eqz v0, :cond_1
 
-    .line 32
     check-cast p1, Lcom/ifengyu/intercom/lite/http/exception/ApiException;
 
-    .line 33
     invoke-static {v2}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object p1
@@ -1294,7 +1177,6 @@
 
     goto :goto_0
 
-    .line 34
     :cond_1
     invoke-static {v2}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
@@ -1314,7 +1196,6 @@
         }
     .end annotation
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1333,7 +1214,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;->e:Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
     invoke-direct {p0, v0, p1}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->a(Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;Ljava/lang/String;)V
@@ -1353,7 +1233,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -1370,25 +1249,21 @@
 
     goto :goto_0
 
-    .line 2
     :pswitch_0
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->K()V
 
     goto :goto_0
 
-    .line 3
     :pswitch_1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->I()V
 
     goto :goto_0
 
-    .line 4
     :pswitch_2
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->H()V
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->newInstance()Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
@@ -1398,7 +1273,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-static {}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->newInstance()Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
@@ -1424,17 +1298,14 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onCreate(Landroid/os/Bundle;)V
 
-    .line 2
     new-instance p1, Landroid/content/IntentFilter;
 
     const-string v0, "com.ifengyu.intercom.ACTION_LOGIN_WEIXIN"
 
     invoke-direct {p1, v0}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
-    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1453,10 +1324,8 @@
 .method public onDestroy()V
     .locals 2
 
-    .line 1
     invoke-super {p0}, Lcom/qmuiteam/qmui/arch/b;->onDestroy()V
 
-    .line 2
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1475,10 +1344,8 @@
 .method public onStart()V
     .locals 2
 
-    .line 1
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onStart()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment;->mCbImprove:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->b0()Z
@@ -1493,10 +1360,8 @@
 .method public onStop()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Landroidx/fragment/app/Fragment;->onStop()V
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->x()V
 
     return-void
@@ -1505,7 +1370,6 @@
 .method protected p()Landroid/view/View;
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1522,10 +1386,8 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->G()V
 
     return-object v0

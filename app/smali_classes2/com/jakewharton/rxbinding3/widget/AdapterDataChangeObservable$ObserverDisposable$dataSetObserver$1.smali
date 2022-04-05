@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable$ObserverDisposable$dataSetObserver$1;
 .super Landroid/database/DataSetObserver;
-.source "AdapterDataChangeObservable.kt"
 
 
 # annotations
@@ -55,7 +54,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable$ObserverDisposable$dataSetObserver$1;->this$0:Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable$ObserverDisposable;
 
     iput-object p2, p0, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable$ObserverDisposable$dataSetObserver$1;->$observer:Lio/reactivex/Observer;
@@ -70,7 +68,6 @@
 .method public onChanged()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable$ObserverDisposable$dataSetObserver$1;->this$0:Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable$ObserverDisposable;
 
     invoke-virtual {v0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
@@ -79,7 +76,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable$ObserverDisposable$dataSetObserver$1;->$observer:Lio/reactivex/Observer;
 
     iget-object v1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable$ObserverDisposable$dataSetObserver$1;->this$0:Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable$ObserverDisposable;

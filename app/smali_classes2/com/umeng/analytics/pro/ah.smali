@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/ah;
 .super Ljava/lang/Object;
-.source "Logger.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -54,7 +52,6 @@
 
     const-string p0, "%s:%s"
 
-    .line 5
     invoke-static {p0, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -65,12 +62,10 @@
 .method public static varargs a(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 1
 
-    .line 3
     sget-boolean v0, Lcom/umeng/analytics/pro/ah;->b:Z
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-static {p0, p1}, Lcom/umeng/analytics/pro/ah;->e(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -86,7 +81,6 @@
 .method public static a(Z)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -105,7 +99,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     sput-boolean p0, Lcom/umeng/analytics/pro/ah;->b:Z
 
     return-void
@@ -114,12 +107,10 @@
 .method public static varargs b(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/umeng/analytics/pro/ah;->b:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {p0, p1}, Lcom/umeng/analytics/pro/ah;->e(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -135,12 +126,10 @@
 .method public static varargs c(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/umeng/analytics/pro/ah;->b:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {p0, p1}, Lcom/umeng/analytics/pro/ah;->e(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -156,12 +145,10 @@
 .method public static varargs d(Ljava/lang/String;[Ljava/lang/Object;)V
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/umeng/analytics/pro/ah;->b:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {p0, p1}, Lcom/umeng/analytics/pro/ah;->e(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -185,7 +172,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -206,7 +192,6 @@
 
     const-string p0, "[%s] "
 
-    .line 2
     invoke-static {p0, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -215,18 +200,15 @@
 
     if-eqz p1, :cond_4
 
-    .line 3
     array-length p0, p1
 
     :goto_0
     add-int/lit8 v2, v3, 0x1
 
-    .line 4
     array-length v4, p1
 
     if-ge v2, v4, :cond_3
 
-    .line 5
     aget-object v3, p1, v3
 
     aget-object v4, p1, v2
@@ -243,7 +225,6 @@
 
     const-string v3, ","
 
-    .line 6
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_2
@@ -251,7 +232,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_3
     array-length p0, p1
 
@@ -259,12 +239,10 @@
 
     if-ne v3, p0, :cond_4
 
-    .line 8
     aget-object p0, p1, v3
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 9
     :cond_4
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

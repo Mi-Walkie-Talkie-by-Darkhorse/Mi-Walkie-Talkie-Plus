@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/hu$1;
 .super Ljava/io/ByteArrayOutputStream;
-.source "StrictLineReader.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/hu;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/hu$1;->a:Lcom/amap/api/col/l3/hu;
 
     invoke-direct {p0, p2}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
@@ -35,7 +33,6 @@
 .method public final toString()Ljava/lang/String;
     .locals 5
 
-    .line 1
     iget v0, p0, Ljava/io/ByteArrayOutputStream;->count:I
 
     if-lez v0, :cond_0
@@ -57,7 +54,6 @@
     :cond_0
     iget v0, p0, Ljava/io/ByteArrayOutputStream;->count:I
 
-    .line 2
     :goto_0
     :try_start_0
     new-instance v1, Ljava/lang/String;
@@ -85,7 +81,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     new-instance v1, Ljava/lang/AssertionError;
 
     invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V

@@ -1,6 +1,5 @@
 .class public Landroidx/transition/x;
 .super Ljava/lang/Object;
-.source "TransitionValues.java"
 
 
 # instance fields
@@ -34,17 +33,14 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Landroidx/transition/x;->a:Ljava/util/Map;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -61,24 +57,20 @@
         .end annotation
     .end param
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Landroidx/transition/x;->a:Ljava/util/Map;
 
-    .line 6
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/transition/x;->c:Ljava/util/ArrayList;
 
-    .line 7
     iput-object p1, p0, Landroidx/transition/x;->b:Landroid/view/View;
 
     return-void
@@ -89,12 +81,10 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 1
     instance-of v0, p1, Landroidx/transition/x;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/transition/x;->b:Landroid/view/View;
 
     check-cast p1, Landroidx/transition/x;
@@ -103,7 +93,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     iget-object v0, p0, Landroidx/transition/x;->a:Ljava/util/Map;
 
     iget-object p1, p1, Landroidx/transition/x;->a:Ljava/util/Map;
@@ -127,7 +116,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/transition/x;->b:Landroid/view/View;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -150,7 +138,6 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -177,7 +164,6 @@
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -200,7 +186,6 @@
 
     move-result-object v1
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -215,7 +200,6 @@
 
     move-result-object v1
 
-    .line 4
     iget-object v2, p0, Landroidx/transition/x;->a:Ljava/util/Map;
 
     invoke-interface {v2}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -239,7 +223,6 @@
 
     check-cast v3, Ljava/lang/String;
 
-    .line 5
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V

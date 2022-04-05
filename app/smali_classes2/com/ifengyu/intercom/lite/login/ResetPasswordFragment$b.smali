@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment$b;
 .super Ljava/lang/Object;
-.source "ResetPasswordFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment;Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment$b;->a:Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ResetPasswordFragment$b;->a:Lcom/qmuiteam/qmui/widget/dialog/QMUITipDialog;
 
     invoke-virtual {v0}, Landroidx/appcompat/app/d;->dismiss()V

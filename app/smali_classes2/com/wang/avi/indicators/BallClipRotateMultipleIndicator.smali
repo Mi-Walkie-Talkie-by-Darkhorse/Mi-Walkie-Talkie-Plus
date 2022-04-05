@@ -1,6 +1,5 @@
 .class public Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;
 .super Lcom/wang/avi/Indicator;
-.source "BallClipRotateMultipleIndicator.java"
 
 
 # instance fields
@@ -13,12 +12,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/wang/avi/Indicator;-><init>()V
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 2
     iput v0, p0, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;->scaleFloat:F
 
     return-void
@@ -31,15 +28,12 @@
 
     const/high16 v0, 0x40400000    # 3.0f
 
-    .line 1
     invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 2
     sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 3
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v0
@@ -50,7 +44,6 @@
 
     int-to-float v0, v0
 
-    .line 4
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getHeight()I
 
     move-result v2
@@ -59,25 +52,20 @@
 
     int-to-float v2, v2
 
-    .line 5
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 6
     invoke-virtual {p1, v0, v2}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 7
     iget v3, p0, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;->scaleFloat:F
 
     invoke-virtual {p1, v3, v3}, Landroid/graphics/Canvas;->scale(FF)V
 
-    .line 8
     iget v3, p0, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;->degrees:F
 
     invoke-virtual {p1, v3}, Landroid/graphics/Canvas;->rotate(F)V
 
     new-array v3, v1, [F
 
-    .line 9
     fill-array-data v3, :array_0
 
     const/4 v4, 0x0
@@ -89,7 +77,6 @@
 
     if-ge v5, v1, :cond_0
 
-    .line 10
     new-instance v8, Landroid/graphics/RectF;
 
     neg-float v7, v0
@@ -106,7 +93,6 @@
 
     invoke-direct {v8, v7, v9, v10, v6}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    .line 11
     aget v9, v3, v5
 
     const/high16 v10, 0x42b40000    # 90.0f
@@ -123,19 +109,15 @@
 
     goto :goto_0
 
-    .line 12
     :cond_0
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
-    .line 13
     invoke-virtual {p1, v0, v2}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 14
     iget v3, p0, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;->scaleFloat:F
 
     invoke-virtual {p1, v3, v3}, Landroid/graphics/Canvas;->scale(FF)V
 
-    .line 15
     iget v3, p0, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;->degrees:F
 
     neg-float v3, v3
@@ -144,13 +126,11 @@
 
     new-array v3, v1, [F
 
-    .line 16
     fill-array-data v3, :array_1
 
     :goto_1
     if-ge v4, v1, :cond_1
 
-    .line 17
     new-instance v8, Landroid/graphics/RectF;
 
     neg-float v5, v0
@@ -177,7 +157,6 @@
 
     invoke-direct {v8, v5, v9, v10, v7}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    .line 18
     aget v9, v3, v4
 
     const/high16 v10, 0x42b40000    # 90.0f
@@ -221,7 +200,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -230,7 +208,6 @@
 
     new-array v2, v1, [F
 
-    .line 2
     fill-array-data v2, :array_0
 
     invoke-static {v2}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
@@ -239,15 +216,12 @@
 
     const-wide/16 v3, 0x3e8
 
-    .line 3
     invoke-virtual {v2, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     const/4 v5, -0x1
 
-    .line 4
     invoke-virtual {v2, v5}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 5
     new-instance v6, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator$1;
 
     invoke-direct {v6, p0}, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator$1;-><init>(Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;)V
@@ -256,30 +230,24 @@
 
     new-array v1, v1, [F
 
-    .line 6
     fill-array-data v1, :array_1
 
     invoke-static {v1}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
     move-result-object v1
 
-    .line 7
     invoke-virtual {v1, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 8
     invoke-virtual {v1, v5}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 9
     new-instance v3, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator$2;
 
     invoke-direct {v3, p0}, Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator$2;-><init>(Lcom/wang/avi/indicators/BallClipRotateMultipleIndicator;)V
 
     invoke-virtual {p0, v1, v3}, Lcom/wang/avi/Indicator;->addUpdateListener(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 10
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 11
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-object v0

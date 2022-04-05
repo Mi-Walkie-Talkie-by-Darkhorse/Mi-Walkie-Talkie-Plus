@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$b$a;
 .super Ljava/lang/Object;
-.source "OffMapAddressSearchActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/network/d/a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$b$a;->a:Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a(Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$b$a;->a:Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$b;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity;

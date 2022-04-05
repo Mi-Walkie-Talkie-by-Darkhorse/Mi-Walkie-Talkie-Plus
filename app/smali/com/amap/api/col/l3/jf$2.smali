@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/jf$2;
 .super Ljava/lang/Object;
-.source "ConnectionServiceManager.java"
 
 # interfaces
 .implements Landroid/content/ServiceConnection;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/jf;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/jf$2;->a:Lcom/amap/api/col/l3/jf;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

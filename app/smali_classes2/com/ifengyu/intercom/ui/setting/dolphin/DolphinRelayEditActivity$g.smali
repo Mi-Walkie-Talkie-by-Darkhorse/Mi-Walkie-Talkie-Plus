@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$g;
 .super Ljava/lang/Object;
-.source "DolphinRelayEditActivity.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$g;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$g;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;
 
     new-instance p2, Landroid/content/Intent;
@@ -61,7 +58,6 @@
 
     invoke-virtual {p1, v0, p2}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$g;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V

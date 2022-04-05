@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableFromPublisher;
 .super Lio/reactivex/Flowable;
-.source "FlowableFromPublisher.java"
 
 
 # annotations
@@ -37,10 +36,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Flowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFromPublisher;->publisher:Lc/a/b;
 
     return-void
@@ -58,7 +55,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFromPublisher;->publisher:Lc/a/b;
 
     invoke-interface {v0, p1}, Lc/a/b;->subscribe(Lc/a/c;)V

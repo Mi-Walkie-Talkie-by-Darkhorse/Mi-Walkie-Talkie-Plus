@@ -1,6 +1,5 @@
 .class Landroidx/core/app/a$f;
 .super Landroid/app/SharedElementCallback;
-.source "ActivityCompat.java"
 
 
 # annotations
@@ -26,10 +25,8 @@
 .method constructor <init>(Landroidx/core/app/k;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/app/SharedElementCallback;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/app/a$f;->a:Landroidx/core/app/k;
 
     return-void
@@ -40,7 +37,6 @@
 .method public onCaptureSharedElementSnapshot(Landroid/view/View;Landroid/graphics/Matrix;Landroid/graphics/RectF;)Landroid/os/Parcelable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/a$f;->a:Landroidx/core/app/k;
 
     invoke-virtual {v0, p1, p2, p3}, Landroidx/core/app/k;->a(Landroid/view/View;Landroid/graphics/Matrix;Landroid/graphics/RectF;)Landroid/os/Parcelable;
@@ -53,7 +49,6 @@
 .method public onCreateSnapshotView(Landroid/content/Context;Landroid/os/Parcelable;)Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/a$f;->a:Landroidx/core/app/k;
 
     invoke-virtual {v0, p1, p2}, Landroidx/core/app/k;->a(Landroid/content/Context;Landroid/os/Parcelable;)Landroid/view/View;
@@ -78,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/a$f;->a:Landroidx/core/app/k;
 
     invoke-virtual {v0, p1, p2}, Landroidx/core/app/k;->a(Ljava/util/List;Ljava/util/Map;)V
@@ -97,7 +91,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/a$f;->a:Landroidx/core/app/k;
 
     invoke-virtual {v0, p1}, Landroidx/core/app/k;->a(Ljava/util/List;)V
@@ -122,7 +115,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/a$f;->a:Landroidx/core/app/k;
 
     invoke-virtual {v0, p1, p2, p3}, Landroidx/core/app/k;->a(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
@@ -147,7 +139,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/a$f;->a:Landroidx/core/app/k;
 
     invoke-virtual {v0, p1, p2, p3}, Landroidx/core/app/k;->b(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
@@ -175,7 +166,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/a$f;->a:Landroidx/core/app/k;
 
     new-instance v1, Landroidx/core/app/a$f$a;

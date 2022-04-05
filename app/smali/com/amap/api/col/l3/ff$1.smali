@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ff$1;
 .super Ljava/lang/Object;
-.source "SearchListAdapter.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/ff;Lcom/amap/api/col/l3/ff$a;Lcom/amap/api/maps/offlinemap/OfflineMapCity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ff$1;->c:Lcom/amap/api/col/l3/ff;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/ff$1;->a:Lcom/amap/api/col/l3/ff$a;
@@ -46,7 +44,6 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/amap/api/col/l3/ff$1;->a:Lcom/amap/api/col/l3/ff$a;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/ff$a;->d:Landroid/widget/ImageView;
@@ -55,7 +52,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/ff$1;->a:Lcom/amap/api/col/l3/ff$a;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/ff$a;->c:Landroid/widget/TextView;
@@ -64,7 +60,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/amap/api/col/l3/ff$1;->a:Lcom/amap/api/col/l3/ff$a;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/ff$a;->c:Landroid/widget/TextView;
@@ -73,7 +68,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 4
     :try_start_0
     iget-object p1, p0, Lcom/amap/api/col/l3/ff$1;->c:Lcom/amap/api/col/l3/ff;
 
@@ -96,7 +90,6 @@
     :catch_0
     move-exception p1
 
-    .line 5
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     return-void

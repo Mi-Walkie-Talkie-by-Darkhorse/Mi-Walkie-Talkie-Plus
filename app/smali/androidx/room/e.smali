@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/room/e;
 .super Ljava/lang/Object;
-.source "IMultiInstanceInvalidationService.java"
 
 # interfaces
 .implements Landroid/os/IInterface;

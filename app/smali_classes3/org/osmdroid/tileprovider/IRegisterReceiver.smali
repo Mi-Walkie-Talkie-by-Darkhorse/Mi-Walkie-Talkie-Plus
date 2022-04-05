@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/tileprovider/IRegisterReceiver;
 .super Ljava/lang/Object;
-.source "IRegisterReceiver.java"
 
 
 # virtual methods

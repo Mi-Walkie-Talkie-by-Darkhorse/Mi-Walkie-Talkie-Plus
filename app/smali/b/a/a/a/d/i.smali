@@ -1,6 +1,5 @@
 .class public Lb/a/a/a/d/i;
 .super Lb/a/a/a/d/h;
-.source "RadarHighlighter.java"
 
 
 # annotations
@@ -17,7 +16,6 @@
 .method public constructor <init>(Lcom/github/mikephil/charting/charts/RadarChart;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lb/a/a/a/d/h;-><init>(Lcom/github/mikephil/charting/charts/PieRadarChartBase;)V
 
     return-void
@@ -28,12 +26,10 @@
 .method protected a(IFF)Lb/a/a/a/d/d;
     .locals 5
 
-    .line 1
     invoke-virtual {p0, p1}, Lb/a/a/a/d/i;->a(I)Ljava/util/List;
 
     move-result-object p1
 
-    .line 2
     iget-object v0, p0, Lb/a/a/a/d/h;->a:Lcom/github/mikephil/charting/charts/PieRadarChartBase;
 
     check-cast v0, Lcom/github/mikephil/charting/charts/RadarChart;
@@ -58,7 +54,6 @@
 
     const/4 v1, 0x0
 
-    .line 3
     :goto_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -66,14 +61,12 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 4
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lb/a/a/a/d/d;
 
-    .line 5
     invoke-virtual {v2}, Lb/a/a/a/d/d;->i()F
 
     move-result v3
@@ -116,12 +109,10 @@
 
     move/from16 v1, p1
 
-    .line 6
     iget-object v2, v0, Lb/a/a/a/d/h;->b:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->clear()V
 
-    .line 7
     iget-object v2, v0, Lb/a/a/a/d/h;->a:Lcom/github/mikephil/charting/charts/PieRadarChartBase;
 
     check-cast v2, Lcom/github/mikephil/charting/charts/RadarChart;
@@ -134,7 +125,6 @@
 
     move-result v2
 
-    .line 8
     iget-object v3, v0, Lb/a/a/a/d/h;->a:Lcom/github/mikephil/charting/charts/PieRadarChartBase;
 
     check-cast v3, Lcom/github/mikephil/charting/charts/RadarChart;
@@ -147,7 +137,6 @@
 
     move-result v3
 
-    .line 9
     iget-object v4, v0, Lb/a/a/a/d/h;->a:Lcom/github/mikephil/charting/charts/PieRadarChartBase;
 
     check-cast v4, Lcom/github/mikephil/charting/charts/RadarChart;
@@ -156,7 +145,6 @@
 
     move-result v4
 
-    .line 10
     iget-object v5, v0, Lb/a/a/a/d/h;->a:Lcom/github/mikephil/charting/charts/PieRadarChartBase;
 
     check-cast v5, Lcom/github/mikephil/charting/charts/RadarChart;
@@ -167,14 +155,12 @@
 
     const/4 v6, 0x0
 
-    .line 11
     invoke-static {v6, v6}, Lb/a/a/a/g/e;->a(FF)Lb/a/a/a/g/e;
 
     move-result-object v6
 
     const/4 v7, 0x0
 
-    .line 12
     :goto_0
     iget-object v8, v0, Lb/a/a/a/d/h;->a:Lcom/github/mikephil/charting/charts/PieRadarChartBase;
 
@@ -192,7 +178,6 @@
 
     if-ge v7, v8, :cond_0
 
-    .line 13
     iget-object v8, v0, Lb/a/a/a/d/h;->a:Lcom/github/mikephil/charting/charts/PieRadarChartBase;
 
     check-cast v8, Lcom/github/mikephil/charting/charts/RadarChart;
@@ -207,12 +192,10 @@
 
     move-result-object v8
 
-    .line 14
     invoke-interface {v8, v1}, Lb/a/a/a/e/b/e;->a(I)Lcom/github/mikephil/charting/data/Entry;
 
     move-result-object v9
 
-    .line 15
     invoke-virtual {v9}, Lcom/github/mikephil/charting/data/e;->b()F
 
     move-result v10
@@ -227,12 +210,10 @@
 
     sub-float/2addr v10, v11
 
-    .line 16
     iget-object v11, v0, Lb/a/a/a/d/h;->a:Lcom/github/mikephil/charting/charts/PieRadarChartBase;
 
     check-cast v11, Lcom/github/mikephil/charting/charts/RadarChart;
 
-    .line 17
     invoke-virtual {v11}, Lcom/github/mikephil/charting/charts/Chart;->getCenterOffsets()Lb/a/a/a/g/e;
 
     move-result-object v11
@@ -251,17 +232,14 @@
 
     check-cast v14, Lcom/github/mikephil/charting/charts/RadarChart;
 
-    .line 18
     invoke-virtual {v14}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;->getRotationAngle()F
 
     move-result v14
 
     add-float/2addr v13, v14
 
-    .line 19
     invoke-static {v11, v10, v13, v6}, Lb/a/a/a/g/i;->a(Lb/a/a/a/g/e;FFLb/a/a/a/g/e;)V
 
-    .line 20
     iget-object v15, v0, Lb/a/a/a/d/h;->b:Ljava/util/List;
 
     new-instance v14, Lb/a/a/a/d/d;
@@ -300,7 +278,6 @@
 
     goto :goto_0
 
-    .line 21
     :cond_0
     iget-object v1, v0, Lb/a/a/a/d/h;->b:Ljava/util/List;
 

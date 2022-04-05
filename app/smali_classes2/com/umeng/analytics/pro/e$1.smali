@@ -1,6 +1,5 @@
 .class synthetic Lcom/umeng/analytics/pro/e$1;
 .super Ljava/lang/Object;
-.source "UMDBCreater.java"
 
 
 # annotations

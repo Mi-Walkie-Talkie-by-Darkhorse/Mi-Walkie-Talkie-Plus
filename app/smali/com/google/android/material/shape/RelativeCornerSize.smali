@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/shape/RelativeCornerSize;
 .super Ljava/lang/Object;
-.source "RelativeCornerSize.java"
 
 # interfaces
 .implements Lcom/google/android/material/shape/CornerSize;
@@ -20,10 +19,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/shape/RelativeCornerSize;->percent:F
 
     return-void
@@ -40,7 +37,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/google/android/material/shape/RelativeCornerSize;
 
@@ -50,11 +46,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/google/android/material/shape/RelativeCornerSize;
 
-    .line 3
     iget v1, p0, Lcom/google/android/material/shape/RelativeCornerSize;->percent:F
 
     iget p1, p1, Lcom/google/android/material/shape/RelativeCornerSize;->percent:F
@@ -79,7 +73,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/RelativeCornerSize;->percent:F
 
     invoke-virtual {p1}, Landroid/graphics/RectF;->height()F
@@ -98,7 +91,6 @@
         to = 1.0
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/RelativeCornerSize;->percent:F
 
     return v0
@@ -111,7 +103,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget v1, p0, Lcom/google/android/material/shape/RelativeCornerSize;->percent:F
 
     invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -122,7 +113,6 @@
 
     aput-object v1, v0, v2
 
-    .line 2
     invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     move-result v0

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/reflect/Types$NativeTypeVariableEquals;
 .super Ljava/lang/Object;
-.source "Types.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 1
     const-class v0, Lcom/google/common/reflect/Types$NativeTypeVariableEquals;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getTypeParameters()[Ljava/lang/reflect/TypeVariable;
@@ -64,7 +62,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

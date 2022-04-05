@@ -1,6 +1,5 @@
 .class final Lio/reactivex/exceptions/CompositeException$CompositeExceptionCausalChain;
 .super Ljava/lang/RuntimeException;
-.source "CompositeException.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
 
     return-void

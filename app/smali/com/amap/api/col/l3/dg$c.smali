@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/dg$c;
 .super Lcom/amap/api/col/l3/df;
-.source "GLShaderManager.java"
 
 
 # annotations
@@ -32,12 +31,10 @@
 .method constructor <init>(Lcom/amap/api/col/l3/dg;Ljava/lang/String;)V
     .locals 3
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/dg$c;->i:Lcom/amap/api/col/l3/dg;
 
     invoke-direct {p0}, Lcom/amap/api/col/l3/df;-><init>()V
 
-    .line 2
     invoke-virtual {p0, p2}, Lcom/amap/api/col/l3/df;->a(Ljava/lang/String;)Z
 
     move-result p1
@@ -49,7 +46,6 @@
     :cond_0
     const-string p1, "aMVP"
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/df;->c(Ljava/lang/String;)I
 
     move-result p1
@@ -58,7 +54,6 @@
 
     const-string p1, "getUniform"
 
-    .line 4
     invoke-static {}, Landroid/opengl/GLES20;->glGetError()I
 
     move-result p2
@@ -67,7 +62,6 @@
 
     const-string p1, "aMapBearing"
 
-    .line 5
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/df;->c(Ljava/lang/String;)I
 
     move-result p1
@@ -76,7 +70,6 @@
 
     const-string p1, "aVertex"
 
-    .line 6
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/df;->b(Ljava/lang/String;)I
 
     move-result p1
@@ -85,7 +78,6 @@
 
     const-string p1, "aTextureCoord"
 
-    .line 7
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/df;->b(Ljava/lang/String;)I
 
     move-result p1
@@ -94,7 +86,6 @@
 
     const-string p1, "aBearingTiltAlpha"
 
-    .line 8
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/df;->b(Ljava/lang/String;)I
 
     move-result p1
@@ -103,7 +94,6 @@
 
     return-void
 
-    .line 9
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 

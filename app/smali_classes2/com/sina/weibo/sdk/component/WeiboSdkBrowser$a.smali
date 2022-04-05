@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$a;
 .super Ljava/lang/Object;
-.source "WeiboSdkBrowser.java"
 
 # interfaces
 .implements Lcom/sina/weibo/sdk/net/d;
@@ -27,12 +26,10 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;Lcom/sina/weibo/sdk/component/f;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$a;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     iput-object p2, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$a;->b:Lcom/sina/weibo/sdk/component/f;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +40,6 @@
 .method public a(Lcom/sina/weibo/sdk/exception/WeiboException;)V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -66,7 +62,6 @@
 
     invoke-static {v0, v1}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$a;->b:Lcom/sina/weibo/sdk/component/f;
 
     iget-object v1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$a;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
@@ -77,7 +72,6 @@
 
     invoke-virtual {v0, v1, p1}, Lcom/sina/weibo/sdk/component/f;->a(Landroid/app/Activity;Ljava/lang/String;)V
 
-    .line 3
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$a;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V
@@ -88,7 +82,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 3
 
-    .line 4
     invoke-static {}, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -107,14 +100,12 @@
 
     invoke-static {v0, v1}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     invoke-static {p1}, Lcom/sina/weibo/sdk/component/f$a;->a(Ljava/lang/String;)Lcom/sina/weibo/sdk/component/f$a;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 6
     invoke-virtual {p1}, Lcom/sina/weibo/sdk/component/f$a;->a()I
 
     move-result v0
@@ -123,7 +114,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 7
     invoke-virtual {p1}, Lcom/sina/weibo/sdk/component/f$a;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -134,7 +124,6 @@
 
     if-nez v0, :cond_0
 
-    .line 8
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$a;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     iget-object v1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$a;->b:Lcom/sina/weibo/sdk/component/f;
@@ -151,7 +140,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$a;->b:Lcom/sina/weibo/sdk/component/f;
 
@@ -161,7 +149,6 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/sina/weibo/sdk/component/f;->a(Landroid/app/Activity;Ljava/lang/String;)V
 
-    .line 10
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/WeiboSdkBrowser$a;->a:Lcom/sina/weibo/sdk/component/WeiboSdkBrowser;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V

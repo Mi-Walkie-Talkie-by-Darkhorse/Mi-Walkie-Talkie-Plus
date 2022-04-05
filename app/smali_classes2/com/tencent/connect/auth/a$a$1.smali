@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/auth/a$a$1;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/tencent/connect/auth/a$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/a$a$1;->a:Lcom/tencent/connect/auth/a$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/connect/auth/a$a$1;->a:Lcom/tencent/connect/auth/a$a;
 
     iget-object v0, v0, Lcom/tencent/connect/auth/a$a;->a:Lcom/tencent/connect/auth/a;

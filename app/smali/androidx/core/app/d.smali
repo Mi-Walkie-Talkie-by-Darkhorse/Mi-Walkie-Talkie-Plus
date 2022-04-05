@@ -1,6 +1,5 @@
 .class public final Landroidx/core/app/d;
 .super Ljava/lang/Object;
-.source "AppOpsManagerCompat.java"
 
 
 # direct methods
@@ -19,14 +18,12 @@
         .end annotation
     .end param
 
-    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    .line 4
     const-class v0, Landroid/app/AppOpsManager;
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
@@ -35,7 +32,6 @@
 
     check-cast p0, Landroid/app/AppOpsManager;
 
-    .line 5
     invoke-virtual {p0, p1, p2}, Landroid/app/AppOpsManager;->noteProxyOp(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p0
@@ -57,14 +53,12 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-static {p0}, Landroid/app/AppOpsManager;->permissionToOp(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -92,14 +86,12 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     const-class v0, Landroid/app/AppOpsManager;
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/Class;)Ljava/lang/Object;
@@ -108,7 +100,6 @@
 
     check-cast p0, Landroid/app/AppOpsManager;
 
-    .line 3
     invoke-virtual {p0, p1, p2}, Landroid/app/AppOpsManager;->noteProxyOpNoThrow(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p0

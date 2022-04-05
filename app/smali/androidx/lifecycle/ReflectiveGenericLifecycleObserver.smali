@@ -1,6 +1,5 @@
 .class Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;
 .super Ljava/lang/Object;
-.source "ReflectiveGenericLifecycleObserver.java"
 
 # interfaces
 .implements Landroidx/lifecycle/i;
@@ -16,13 +15,10 @@
 .method constructor <init>(Ljava/lang/Object;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;->a:Ljava/lang/Object;
 
-    .line 3
     sget-object v0, Landroidx/lifecycle/b;->c:Landroidx/lifecycle/b;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -51,7 +47,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;->b:Landroidx/lifecycle/b$a;
 
     iget-object v1, p0, Landroidx/lifecycle/ReflectiveGenericLifecycleObserver;->a:Ljava/lang/Object;

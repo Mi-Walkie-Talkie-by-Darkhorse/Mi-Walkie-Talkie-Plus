@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/single/SingleFlatMapCompletable;
 .super Lio/reactivex/Completable;
-.source "SingleFlatMapCompletable.java"
 
 
 # annotations
@@ -57,13 +56,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleFlatMapCompletable;->source:Lio/reactivex/SingleSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/single/SingleFlatMapCompletable;->mapper:Lio/reactivex/functions/Function;
 
     return-void
@@ -74,17 +70,14 @@
 .method protected subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 2
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/single/SingleFlatMapCompletable$FlatMapCompletableObserver;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/single/SingleFlatMapCompletable;->mapper:Lio/reactivex/functions/Function;
 
     invoke-direct {v0, p1, v1}, Lio/reactivex/internal/operators/single/SingleFlatMapCompletable$FlatMapCompletableObserver;-><init>(Lio/reactivex/CompletableObserver;Lio/reactivex/functions/Function;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/CompletableObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     iget-object p1, p0, Lio/reactivex/internal/operators/single/SingleFlatMapCompletable;->source:Lio/reactivex/SingleSource;
 
     invoke-interface {p1, v0}, Lio/reactivex/SingleSource;->subscribe(Lio/reactivex/SingleObserver;)V

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;
 .super Ljava/lang/Object;
-.source "UpdateHelper.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;ZI)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;->c:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
     iput-boolean p2, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;->a:Z
@@ -46,7 +44,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;->c:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->d(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$e;
@@ -55,12 +52,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-boolean v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;->c:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->d(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$e;
@@ -71,7 +66,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$c;->c:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 

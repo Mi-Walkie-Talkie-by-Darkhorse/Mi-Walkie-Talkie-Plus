@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/a$b;
 .super Ljava/lang/Object;
-.source "GaoDeMapOperate.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/a$b;->a:Lcom/ifengyu/intercom/ui/map/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/a$b;->a:Lcom/ifengyu/intercom/ui/map/a;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/map/a;->b(Lcom/ifengyu/intercom/ui/map/a;)Ljava/util/List;
@@ -60,12 +57,10 @@
 
     check-cast p1, Lcom/ifengyu/intercom/ui/map/e/a/e;
 
-    .line 2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/e/a/e;->b()Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     move-result-object p1
 
-    .line 3
     new-instance p2, Lcom/ifengyu/intercom/ui/widget/dialog/s;
 
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/map/a$b;->a:Lcom/ifengyu/intercom/ui/map/a;
@@ -78,7 +73,6 @@
 
     invoke-direct {p2, p3, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/s;-><init>(Landroid/app/Activity;Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
-    .line 4
     invoke-virtual {p2}, Landroid/app/Dialog;->show()V
 
     return-void

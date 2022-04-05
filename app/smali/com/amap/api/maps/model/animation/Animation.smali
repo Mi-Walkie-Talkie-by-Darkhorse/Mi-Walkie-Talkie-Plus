@@ -1,6 +1,5 @@
 .class public abstract Lcom/amap/api/maps/model/animation/Animation;
 .super Ljava/lang/Object;
-.source "Animation.java"
 
 
 # annotations
@@ -19,15 +18,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/maps/model/animation/Animation;->glAnimation:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
-    .line 3
     new-instance v0, Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
     invoke-direct {v0}, Lcom/autonavi/amap/mapcore/animation/GLAnimation;-><init>()V
@@ -42,7 +38,6 @@
 .method public setAnimationListener(Lcom/amap/api/maps/model/animation/Animation$AnimationListener;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/animation/Animation;->glAnimation:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
     invoke-virtual {v0, p1}, Lcom/autonavi/amap/mapcore/animation/GLAnimation;->setAnimationListener(Lcom/amap/api/maps/model/animation/Animation$AnimationListener;)V

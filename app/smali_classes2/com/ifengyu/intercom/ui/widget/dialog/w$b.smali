@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/w$b;
 .super Landroid/widget/BaseAdapter;
-.source "SharkSetPowerListDialog.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/w;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$b;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
@@ -35,7 +33,6 @@
 .method public getCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$b;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/w;->b(Lcom/ifengyu/intercom/ui/widget/dialog/w;)[Ljava/lang/CharSequence;
@@ -44,7 +41,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$b;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/w;->b(Lcom/ifengyu/intercom/ui/widget/dialog/w;)[Ljava/lang/CharSequence;
@@ -80,7 +76,6 @@
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 3
 
-    .line 1
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$b;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/widget/dialog/w;->c(Lcom/ifengyu/intercom/ui/widget/dialog/w;)Landroid/view/LayoutInflater;
@@ -97,7 +92,6 @@
 
     const p3, 0x7f09012b
 
-    .line 2
     invoke-virtual {p2, p3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -106,7 +100,6 @@
 
     const/high16 p3, 0x42500000    # 52.0f
 
-    .line 3
     invoke-static {p3}, Lcom/ifengyu/intercom/i/c0;->a(F)F
 
     move-result p3
@@ -115,7 +108,6 @@
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setHeight(I)V
 
-    .line 4
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$b;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/widget/dialog/w;->b(Lcom/ifengyu/intercom/ui/widget/dialog/w;)[Ljava/lang/CharSequence;
@@ -126,7 +118,6 @@
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 5
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$b;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/widget/dialog/w;->d(Lcom/ifengyu/intercom/ui/widget/dialog/w;)I
@@ -141,7 +132,6 @@
 
     if-nez p1, :cond_1
 
-    .line 6
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$b;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/widget/dialog/w;->e(Lcom/ifengyu/intercom/ui/widget/dialog/w;)Landroid/app/Activity;
@@ -160,7 +150,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$b;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
@@ -174,7 +163,6 @@
 
     if-ne p1, v1, :cond_1
 
-    .line 8
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/widget/dialog/w$b;->a:Lcom/ifengyu/intercom/ui/widget/dialog/w;
 
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/widget/dialog/w;->e(Lcom/ifengyu/intercom/ui/widget/dialog/w;)Landroid/app/Activity;
@@ -191,7 +179,6 @@
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 9
     :cond_1
     :goto_0
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/dialog/w$b;->getCount()I
@@ -204,7 +191,6 @@
 
     const p1, 0x7f0800c9
 
-    .line 10
     invoke-virtual {p2, p1}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
     :cond_2

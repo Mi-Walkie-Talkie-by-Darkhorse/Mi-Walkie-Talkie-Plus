@@ -1,6 +1,5 @@
 .class public Lpl/droidsonroids/relinker/f/i;
 .super Ljava/lang/Object;
-.source "ElfParser.java"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -19,24 +18,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     new-instance v0, Ljava/io/FileInputStream;
 
     invoke-direct {v0, p1}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    .line 4
     invoke-virtual {v0}, Ljava/io/FileInputStream;->getChannel()Ljava/nio/channels/FileChannel;
 
     move-result-object p1
@@ -45,7 +40,6 @@
 
     return-void
 
-    .line 5
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -71,12 +65,10 @@
 
     if-gez v2, :cond_1
 
-    .line 11
     invoke-virtual {p1, v0, v1}, Lpl/droidsonroids/relinker/f/d;->a(J)Lpl/droidsonroids/relinker/f/e;
 
     move-result-object v2
 
-    .line 12
     iget-wide v3, v2, Lpl/droidsonroids/relinker/f/e;->a:J
 
     const-wide/16 v5, 0x1
@@ -85,7 +77,6 @@
 
     if-nez v7, :cond_0
 
-    .line 13
     iget-wide v3, v2, Lpl/droidsonroids/relinker/f/e;->c:J
 
     cmp-long v7, v3, p4
@@ -102,7 +93,6 @@
 
     sub-long/2addr p4, v3
 
-    .line 14
     iget-wide p1, v2, Lpl/droidsonroids/relinker/f/e;->b:J
 
     add-long/2addr p4, p1
@@ -114,7 +104,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -135,7 +124,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/relinker/f/i;->a:Ljava/nio/channels/FileChannel;
 
     const-wide/16 v1, 0x0
@@ -144,17 +132,14 @@
 
     const/16 v0, 0x8
 
-    .line 2
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
-    .line 3
     sget-object v3, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
     invoke-virtual {v0, v3}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 4
     invoke-virtual {p0, v0, v1, v2}, Lpl/droidsonroids/relinker/f/i;->e(Ljava/nio/ByteBuffer;J)J
 
     move-result-wide v1
@@ -167,14 +152,12 @@
 
     const-wide/16 v1, 0x4
 
-    .line 5
     invoke-virtual {p0, v0, v1, v2}, Lpl/droidsonroids/relinker/f/i;->a(Ljava/nio/ByteBuffer;J)S
 
     move-result v1
 
     const-wide/16 v2, 0x5
 
-    .line 6
     invoke-virtual {p0, v0, v2, v3}, Lpl/droidsonroids/relinker/f/i;->a(Ljava/nio/ByteBuffer;J)S
 
     move-result v0
@@ -195,7 +178,6 @@
     :goto_0
     if-ne v1, v2, :cond_1
 
-    .line 7
     new-instance v1, Lpl/droidsonroids/relinker/f/g;
 
     invoke-direct {v1, v0, p0}, Lpl/droidsonroids/relinker/f/g;-><init>(ZLpl/droidsonroids/relinker/f/i;)V
@@ -205,14 +187,12 @@
     :cond_1
     if-ne v1, v3, :cond_2
 
-    .line 8
     new-instance v1, Lpl/droidsonroids/relinker/f/h;
 
     invoke-direct {v1, v0, p0}, Lpl/droidsonroids/relinker/f/h;-><init>(ZLpl/droidsonroids/relinker/f/i;)V
 
     return-object v1
 
-    .line 9
     :cond_2
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -222,7 +202,6 @@
 
     throw v0
 
-    .line 10
     :cond_3
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -243,10 +222,8 @@
 
     const/4 v0, 0x1
 
-    .line 16
     invoke-virtual {p0, p1, p2, p3, v0}, Lpl/droidsonroids/relinker/f/i;->a(Ljava/nio/ByteBuffer;JI)V
 
-    .line 17
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->get()B
 
     move-result p1
@@ -268,10 +245,8 @@
 
     const/4 v0, 0x0
 
-    .line 18
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 19
     invoke-virtual {p1, p4}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
     const-wide/16 v1, 0x0
@@ -283,7 +258,6 @@
 
     if-gez v5, :cond_1
 
-    .line 20
     iget-object v3, p0, Lpl/droidsonroids/relinker/f/i;->a:Ljava/nio/channels/FileChannel;
 
     add-long v4, p2, v1
@@ -302,7 +276,6 @@
 
     goto :goto_0
 
-    .line 21
     :cond_0
     new-instance p1, Ljava/io/EOFException;
 
@@ -310,7 +283,6 @@
 
     throw p1
 
-    .line 22
     :cond_1
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
@@ -327,10 +299,8 @@
 
     const/4 v0, 0x2
 
-    .line 23
     invoke-virtual {p0, p1, p2, p3, v0}, Lpl/droidsonroids/relinker/f/i;->a(Ljava/nio/ByteBuffer;JI)V
 
-    .line 24
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getShort()S
 
     move-result p1
@@ -361,31 +331,26 @@
 
     move-object/from16 v6, p0
 
-    .line 1
     iget-object v0, v6, Lpl/droidsonroids/relinker/f/i;->a:Ljava/nio/channels/FileChannel;
 
     const-wide/16 v1, 0x0
 
     invoke-virtual {v0, v1, v2}, Ljava/nio/channels/FileChannel;->position(J)Ljava/nio/channels/FileChannel;
 
-    .line 2
     new-instance v7, Ljava/util/ArrayList;
 
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
     invoke-virtual/range {p0 .. p0}, Lpl/droidsonroids/relinker/f/i;->a()Lpl/droidsonroids/relinker/f/d;
 
     move-result-object v3
 
     const/16 v0, 0x8
 
-    .line 4
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v8
 
-    .line 5
     iget-boolean v0, v3, Lpl/droidsonroids/relinker/f/d;->a:Z
 
     if-eqz v0, :cond_0
@@ -400,7 +365,6 @@
     :goto_0
     invoke-virtual {v8, v0}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 6
     iget v0, v3, Lpl/droidsonroids/relinker/f/d;->e:I
 
     int-to-long v4, v0
@@ -413,12 +377,10 @@
 
     if-nez v11, :cond_1
 
-    .line 7
     invoke-virtual {v3, v0}, Lpl/droidsonroids/relinker/f/d;->a(I)Lpl/droidsonroids/relinker/f/f;
 
     move-result-object v4
 
-    .line 8
     iget-wide v4, v4, Lpl/droidsonroids/relinker/f/f;->a:J
 
     :cond_1
@@ -431,12 +393,10 @@
 
     if-gez v13, :cond_3
 
-    .line 9
     invoke-virtual {v3, v9, v10}, Lpl/droidsonroids/relinker/f/d;->a(J)Lpl/droidsonroids/relinker/f/e;
 
     move-result-object v13
 
-    .line 10
     iget-wide v14, v13, Lpl/droidsonroids/relinker/f/e;->a:J
 
     const-wide/16 v16, 0x2
@@ -445,7 +405,6 @@
 
     if-nez v18, :cond_2
 
-    .line 11
     iget-wide v9, v13, Lpl/droidsonroids/relinker/f/e;->b:J
 
     goto :goto_2
@@ -463,14 +422,12 @@
 
     if-nez v13, :cond_4
 
-    .line 12
     invoke-static {v7}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v0
 
     return-object v0
 
-    .line 13
     :cond_4
     new-instance v13, Ljava/util/ArrayList;
 
@@ -478,7 +435,6 @@
 
     move-wide v14, v1
 
-    .line 14
     :goto_3
     invoke-virtual {v3, v9, v10, v0}, Lpl/droidsonroids/relinker/f/d;->a(JI)Lpl/droidsonroids/relinker/f/c;
 
@@ -486,14 +442,12 @@
 
     move-wide/from16 v18, v9
 
-    .line 15
     iget-wide v9, v1, Lpl/droidsonroids/relinker/f/c;->a:J
 
     cmp-long v2, v9, v11
 
     if-nez v2, :cond_5
 
-    .line 16
     iget-wide v9, v1, Lpl/droidsonroids/relinker/f/c;->b:J
 
     invoke-static {v9, v10}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -511,7 +465,6 @@
 
     if-nez v2, :cond_6
 
-    .line 17
     iget-wide v9, v1, Lpl/droidsonroids/relinker/f/c;->b:J
 
     move-wide v14, v9
@@ -520,7 +473,6 @@
     :goto_4
     add-int/lit8 v0, v0, 0x1
 
-    .line 18
     iget-wide v1, v1, Lpl/droidsonroids/relinker/f/c;->a:J
 
     const-wide/16 v9, 0x0
@@ -541,12 +493,10 @@
 
     move-wide v4, v14
 
-    .line 19
     invoke-direct/range {v0 .. v5}, Lpl/droidsonroids/relinker/f/i;->a(Lpl/droidsonroids/relinker/f/d;JJ)J
 
     move-result-wide v0
 
-    .line 20
     invoke-interface {v13}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -564,7 +514,6 @@
 
     check-cast v3, Ljava/lang/Long;
 
-    .line 21
     invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v3
@@ -582,7 +531,6 @@
     :cond_7
     return-object v7
 
-    .line 22
     :cond_8
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -608,10 +556,8 @@
 
     const/16 v0, 0x8
 
-    .line 1
     invoke-virtual {p0, p1, p2, p3, v0}, Lpl/droidsonroids/relinker/f/i;->a(Ljava/nio/ByteBuffer;JI)V
 
-    .line 2
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getLong()J
 
     move-result-wide p1
@@ -627,7 +573,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/relinker/f/i;->a:Ljava/nio/channels/FileChannel;
 
     invoke-virtual {v0}, Ljava/nio/channels/FileChannel;->close()V
@@ -643,7 +588,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -653,7 +597,6 @@
 
     add-long/2addr v1, p2
 
-    .line 2
     invoke-virtual {p0, p1, p2, p3}, Lpl/droidsonroids/relinker/f/i;->a(Ljava/nio/ByteBuffer;J)S
 
     move-result p2
@@ -662,14 +605,12 @@
 
     int-to-char p2, p2
 
-    .line 3
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     move-wide p2, v1
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -688,10 +629,8 @@
 
     const/4 v0, 0x4
 
-    .line 1
     invoke-virtual {p0, p1, p2, p3, v0}, Lpl/droidsonroids/relinker/f/i;->a(Ljava/nio/ByteBuffer;JI)V
 
-    .line 2
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->getInt()I
 
     move-result p1

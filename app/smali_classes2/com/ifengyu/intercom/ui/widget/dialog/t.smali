@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/dialog/t;
 .super Lcom/ifengyu/intercom/ui/widget/dialog/d;
-.source "McuContinueUpdateDialog.java"
 
 
 # annotations
@@ -21,10 +20,8 @@
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;-><init>(Landroid/content/Context;)V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/t;->a:Landroid/app/Activity;
 
     return-void
@@ -45,18 +42,15 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/t;->b:Lcom/ifengyu/intercom/ui/widget/dialog/t$a;
 
     invoke-interface {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/t$a;->a()V
 
-    .line 2
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
 
     goto :goto_0
 
-    .line 3
     :cond_1
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
 
@@ -67,7 +61,6 @@
 .method public a(Lcom/ifengyu/intercom/ui/widget/dialog/t$a;)V
     .locals 0
 
-    .line 4
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/t;->b:Lcom/ifengyu/intercom/ui/widget/dialog/t$a;
 
     return-void
@@ -76,15 +69,12 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c0085
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;->setContentView(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/t;->a:Landroid/app/Activity;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;->a(Landroid/content/Context;)V
@@ -93,7 +83,6 @@
 
     new-array p1, p1, [I
 
-    .line 4
     fill-array-data p1, :array_0
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;->a([I)V

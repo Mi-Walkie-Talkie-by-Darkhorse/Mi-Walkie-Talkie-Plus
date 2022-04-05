@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/c$d;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "DiscoveryFragmentAdapter.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -35,15 +34,12 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/adapter/c;Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/c$d;->f:Lcom/ifengyu/intercom/ui/adapter/c;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
     const p1, 0x7f090203
 
-    .line 3
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -54,7 +50,6 @@
 
     const p1, 0x7f0901e8
 
-    .line 4
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -65,7 +60,6 @@
 
     const p1, 0x7f090201
 
-    .line 5
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -76,7 +70,6 @@
 
     const p1, 0x7f090202
 
-    .line 6
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -87,7 +80,6 @@
 
     const p1, 0x7f0901f4
 
-    .line 7
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -96,21 +88,18 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/c$d;->e:Landroid/widget/ImageView;
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/c$d;->c:Landroid/widget/TextView;
 
     sget-object v0, Lcom/ifengyu/intercom/i/p;->a:Landroid/graphics/Typeface;
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/c$d;->d:Landroid/widget/TextView;
 
     sget-object v0, Lcom/ifengyu/intercom/i/p;->a:Landroid/graphics/Typeface;
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 10
     invoke-virtual {p2, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     return-void
@@ -121,7 +110,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/c$d;->f:Lcom/ifengyu/intercom/ui/adapter/c;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/adapter/c;->b(Lcom/ifengyu/intercom/ui/adapter/c;)Lcom/ifengyu/intercom/ui/adapter/c$a;
@@ -130,7 +118,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/c$d;->f:Lcom/ifengyu/intercom/ui/adapter/c;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/adapter/c;->b(Lcom/ifengyu/intercom/ui/adapter/c;)Lcom/ifengyu/intercom/ui/adapter/c$a;

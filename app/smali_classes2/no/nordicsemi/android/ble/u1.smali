@@ -1,6 +1,5 @@
 .class public abstract Lno/nordicsemi/android/ble/u1;
 .super Ljava/lang/Object;
-.source "BleManager.java"
 
 
 # annotations
@@ -55,7 +54,6 @@
 
     const-string v0, "00002902-0000-1000-8000-00805f9b34fb"
 
-    .line 1
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     move-result-object v0
@@ -64,7 +62,6 @@
 
     const-string v0, "0000180F-0000-1000-8000-00805f9b34fb"
 
-    .line 2
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     move-result-object v0
@@ -73,7 +70,6 @@
 
     const-string v0, "00002A19-0000-1000-8000-00805f9b34fb"
 
-    .line 3
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     move-result-object v0
@@ -82,7 +78,6 @@
 
     const-string v0, "00001801-0000-1000-8000-00805f9b34fb"
 
-    .line 4
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     move-result-object v0
@@ -91,7 +86,6 @@
 
     const-string v0, "00002A05-0000-1000-8000-00805f9b34fb"
 
-    .line 5
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     move-result-object v0
@@ -108,7 +102,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -133,30 +126,24 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     new-instance v0, Lno/nordicsemi/android/ble/u1$a;
 
     invoke-direct {v0, p0}, Lno/nordicsemi/android/ble/u1$a;-><init>(Lno/nordicsemi/android/ble/u1;)V
 
     iput-object v0, p0, Lno/nordicsemi/android/ble/u1;->f:Landroid/content/BroadcastReceiver;
 
-    .line 4
     iput-object p1, p0, Lno/nordicsemi/android/ble/u1;->a:Landroid/content/Context;
 
-    .line 5
     invoke-virtual {p0}, Lno/nordicsemi/android/ble/u1;->h()Lno/nordicsemi/android/ble/u1$b;
 
     move-result-object v0
 
     iput-object v0, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
-    .line 6
     invoke-virtual {v0, p0, p2}, Lno/nordicsemi/android/ble/w1;->a(Lno/nordicsemi/android/ble/u1;Landroid/os/Handler;)V
 
-    .line 7
     iget-object p2, p0, Lno/nordicsemi/android/ble/u1;->f:Landroid/content/BroadcastReceiver;
 
     new-instance v0, Landroid/content/IntentFilter;
@@ -196,7 +183,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 6
     new-instance v0, Lno/nordicsemi/android/ble/k2;
 
     invoke-direct {v0}, Lno/nordicsemi/android/ble/k2;-><init>()V
@@ -216,7 +202,6 @@
         .end annotation
     .end param
 
-    .line 7
     invoke-static {p1, p2}, Lno/nordicsemi/android/ble/Request;->a(J)Lno/nordicsemi/android/ble/o2;
 
     move-result-object p1
@@ -237,14 +222,12 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-static {p1}, Lno/nordicsemi/android/ble/Request;->a(Landroid/bluetooth/BluetoothGattCharacteristic;)Lno/nordicsemi/android/ble/t2;
 
     move-result-object p1
 
     iget-object v0, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
-    .line 3
     invoke-virtual {p1, v0}, Lno/nordicsemi/android/ble/t2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/t2;
 
     return-object p1
@@ -263,14 +246,12 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 4
     invoke-static {p1, p2}, Lno/nordicsemi/android/ble/Request;->a(Landroid/bluetooth/BluetoothGattCharacteristic;[B)Lno/nordicsemi/android/ble/t2;
 
     move-result-object p1
 
     iget-object p2, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
-    .line 5
     invoke-virtual {p1, p2}, Lno/nordicsemi/android/ble/t2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/t2;
 
     return-object p1
@@ -290,7 +271,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lno/nordicsemi/android/ble/u1;->e:Lno/nordicsemi/android/ble/w2/b;
 
     return-void
@@ -305,7 +285,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-static {p1}, Lno/nordicsemi/android/ble/Request;->a(I)Lno/nordicsemi/android/ble/e2;
 
     move-result-object p1
@@ -326,7 +305,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
     invoke-virtual {v0, p1}, Lno/nordicsemi/android/ble/w1;->a(Ljava/lang/Object;)Lno/nordicsemi/android/ble/r2;
@@ -339,7 +317,6 @@
 .method protected final b()V
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
     invoke-virtual {v0}, Lno/nordicsemi/android/ble/w1;->a()V
@@ -352,7 +329,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-static {}, Lno/nordicsemi/android/ble/Request;->d()Lno/nordicsemi/android/ble/d2;
 
     move-result-object v0
@@ -385,12 +361,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-static {p1}, Lno/nordicsemi/android/ble/Request;->e(Landroid/bluetooth/BluetoothDevice;)Lno/nordicsemi/android/ble/b2;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0}, Lno/nordicsemi/android/ble/u1;->k()Z
 
     move-result v0
@@ -399,12 +373,10 @@
 
     iget-object v0, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
-    .line 3
     invoke-virtual {p1, v0}, Lno/nordicsemi/android/ble/b2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/b2;
 
     return-object p1
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -420,31 +392,26 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 5
     invoke-static {}, Lno/nordicsemi/android/ble/Request;->e()Lno/nordicsemi/android/ble/t2;
 
     move-result-object v0
 
     iget-object v1, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
-    .line 6
     invoke-virtual {v0, v1}, Lno/nordicsemi/android/ble/t2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/t2;
 
     new-instance v1, Lno/nordicsemi/android/ble/b;
 
     invoke-direct {v1, p0}, Lno/nordicsemi/android/ble/b;-><init>(Lno/nordicsemi/android/ble/u1;)V
 
-    .line 7
     invoke-virtual {v0, v1}, Lno/nordicsemi/android/ble/t2;->a(Lno/nordicsemi/android/ble/u2/a;)Lno/nordicsemi/android/ble/t2;
 
     new-instance v1, Lno/nordicsemi/android/ble/a;
 
     invoke-direct {v1, p0}, Lno/nordicsemi/android/ble/a;-><init>(Lno/nordicsemi/android/ble/u1;)V
 
-    .line 8
     invoke-virtual {v0, v1}, Lno/nordicsemi/android/ble/t2;->a(Lno/nordicsemi/android/ble/u2/j;)Lno/nordicsemi/android/ble/t2;
 
-    .line 9
     invoke-virtual {v0}, Lno/nordicsemi/android/ble/Request;->a()V
 
     return-void
@@ -455,7 +422,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
     invoke-virtual {v0}, Lno/nordicsemi/android/ble/w1;->d()Landroid/bluetooth/BluetoothDevice;
@@ -468,7 +434,6 @@
 .method public synthetic e(Landroid/bluetooth/BluetoothDevice;)V
     .locals 0
 
-    .line 2
     iget-object p1, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
     invoke-virtual {p1}, Lno/nordicsemi/android/ble/w1;->l()V
@@ -479,7 +444,6 @@
 .method public final f()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
     invoke-virtual {v0}, Lno/nordicsemi/android/ble/w1;->e()I
@@ -494,7 +458,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/u1;->a:Landroid/content/Context;
 
     return-object v0
@@ -507,7 +470,6 @@
 
     const-string v0, "Battery Level notifications enabled"
 
-    .line 2
     invoke-virtual {p0, p1, v0}, Lno/nordicsemi/android/ble/u1;->a(ILjava/lang/String;)V
 
     return-void
@@ -521,7 +483,6 @@
 .method public final i()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
     invoke-virtual {v0}, Lno/nordicsemi/android/ble/w1;->g()Z
@@ -536,26 +497,22 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-static {}, Lno/nordicsemi/android/ble/Request;->g()Lno/nordicsemi/android/ble/h2;
 
     move-result-object v0
 
     iget-object v1, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
-    .line 2
     invoke-virtual {v0, v1}, Lno/nordicsemi/android/ble/h2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/h2;
 
     iget-object v1, p0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
 
-    .line 3
     invoke-virtual {v1}, Lno/nordicsemi/android/ble/w1;->c()Lno/nordicsemi/android/ble/u2/b;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lno/nordicsemi/android/ble/h2;->a(Lno/nordicsemi/android/ble/u2/b;)Lno/nordicsemi/android/ble/h2;
 
-    .line 4
     invoke-virtual {v0}, Lno/nordicsemi/android/ble/Request;->a()V
 
     return-void

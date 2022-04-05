@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lokhttp3/internal/annotations/EverythingIsNonNull;
 .super Ljava/lang/Object;
-.source "EverythingIsNonNull.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

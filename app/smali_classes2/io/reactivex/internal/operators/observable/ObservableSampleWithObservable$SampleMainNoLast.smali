@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/ObservableSampleWithObservable$SampleMainNoLast;
 .super Lio/reactivex/internal/operators/observable/ObservableSampleWithObservable$SampleMainObserver;
-.source "ObservableSampleWithObservable.java"
 
 
 # annotations
@@ -41,7 +40,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lio/reactivex/internal/operators/observable/ObservableSampleWithObservable$SampleMainObserver;-><init>(Lio/reactivex/Observer;Lio/reactivex/ObservableSource;)V
 
     return-void
@@ -52,7 +50,6 @@
 .method completeMain()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableSampleWithObservable$SampleMainObserver;->downstream:Lio/reactivex/Observer;
 
     invoke-interface {v0}, Lio/reactivex/Observer;->onComplete()V
@@ -63,7 +60,6 @@
 .method completeOther()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableSampleWithObservable$SampleMainObserver;->downstream:Lio/reactivex/Observer;
 
     invoke-interface {v0}, Lio/reactivex/Observer;->onComplete()V
@@ -74,7 +70,6 @@
 .method run()V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/ObservableSampleWithObservable$SampleMainObserver;->emit()V
 
     return-void

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/bs$c;
 .super Ljava/lang/Object;
-.source "UnZipFile.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/internal/NavigationMenuPresenter$NormalViewHolder;
 .super Lcom/google/android/material/internal/NavigationMenuPresenter$ViewHolder;
-.source "NavigationMenuPresenter.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Lcom/google/android/material/R$layout;->design_navigation_item:I
 
     const/4 v1, 0x0
@@ -33,7 +31,6 @@
 
     invoke-direct {p0, p1}, Lcom/google/android/material/internal/NavigationMenuPresenter$ViewHolder;-><init>(Landroid/view/View;)V
 
-    .line 2
     iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;
 
     invoke-virtual {p1, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V

@@ -1,6 +1,5 @@
 .class synthetic Lme/zhanghai/android/materialprogressbar/IndeterminateCircularProgressDrawable$1;
 .super Ljava/lang/Object;
-.source "IndeterminateCircularProgressDrawable.java"
 
 
 # annotations

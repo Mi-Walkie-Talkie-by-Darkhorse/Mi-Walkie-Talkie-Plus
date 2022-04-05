@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/snackbar/BaseTransientBottomBar$BaseCallback$DismissEvent;
 .super Ljava/lang/Object;
-.source "BaseTransientBottomBar.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

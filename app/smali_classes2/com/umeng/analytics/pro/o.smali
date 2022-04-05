@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/o;
 .super Ljava/lang/Object;
-.source "CrashHandler.java"
 
 # interfaces
 .implements Ljava/lang/Thread$UncaughtExceptionHandler;
@@ -16,10 +15,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {}, Ljava/lang/Thread;->getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
 
     move-result-object v0
@@ -28,7 +25,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-static {}, Ljava/lang/Thread;->getDefaultUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
 
@@ -36,7 +32,6 @@
 
     iput-object v0, p0, Lcom/umeng/analytics/pro/o;->a:Ljava/lang/Thread$UncaughtExceptionHandler;
 
-    .line 4
     invoke-static {p0}, Ljava/lang/Thread;->setDefaultUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
     return-void
@@ -45,19 +40,16 @@
 .method private a(Ljava/lang/Throwable;)V
     .locals 1
 
-    .line 2
     sget-boolean v0, Lcom/umeng/analytics/AnalyticsConfig;->CATCH_EXCEPTION:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/analytics/pro/o;->b:Lcom/umeng/analytics/pro/s;
 
     invoke-interface {v0, p1}, Lcom/umeng/analytics/pro/s;->a(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/umeng/analytics/pro/o;->b:Lcom/umeng/analytics/pro/s;
 
@@ -74,7 +66,6 @@
 .method public a(Lcom/umeng/analytics/pro/s;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/analytics/pro/o;->b:Lcom/umeng/analytics/pro/s;
 
     return-void
@@ -83,10 +74,8 @@
 .method public uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p2}, Lcom/umeng/analytics/pro/o;->a(Ljava/lang/Throwable;)V
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/analytics/pro/o;->a:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     if-eqz v0, :cond_0
@@ -97,7 +86,6 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/analytics/pro/o;->a:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V

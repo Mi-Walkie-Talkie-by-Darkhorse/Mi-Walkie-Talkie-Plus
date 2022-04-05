@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/em;
 .super Ljava/lang/Object;
-.source "Util.java"
 
 
 # static fields
@@ -35,7 +34,6 @@
 
     new-array v1, v0, [Lcom/autonavi/amap/mapcore/FPoint;
 
-    .line 1
     invoke-static {}, Lcom/autonavi/amap/mapcore/FPoint;->obtain()Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v2
@@ -70,14 +68,12 @@
 
     sput-object v1, Lcom/amap/api/col/l3/em;->a:[Lcom/autonavi/amap/mapcore/FPoint;
 
-    .line 2
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
 
     sput-object v1, Lcom/amap/api/col/l3/em;->b:Ljava/util/List;
 
-    .line 3
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
@@ -96,7 +92,6 @@
 
     div-double/2addr p3, p1
 
-    .line 263
     invoke-static {p3, p4}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -187,7 +182,6 @@
 
     const-wide/high16 v2, 0x4000000000000000L    # 2.0
 
-    .line 264
     invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v0
@@ -216,7 +210,6 @@
 
     const-wide/high16 v2, 0x4000000000000000L    # 2.0
 
-    .line 265
     invoke-static {v2, v3, p1, p2}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide p1
@@ -241,7 +234,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 8
     iget v0, p0, Lcom/autonavi/amap/mapcore/MapConfig;->maxZoomLevel:F
 
     cmpl-float v1, p1, v0
@@ -252,7 +244,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     iget p0, p0, Lcom/autonavi/amap/mapcore/MapConfig;->minZoomLevel:F
 
@@ -288,7 +279,6 @@
 .method public static a(Lcom/autonavi/amap/mapcore/MapConfig;IIIIII)F
     .locals 5
 
-    .line 266
     invoke-virtual {p0}, Lcom/autonavi/amap/mapcore/MapConfig;->getS_z()F
 
     move-result v0
@@ -297,7 +287,6 @@
 
     if-eq p2, p4, :cond_0
 
-    .line 267
     invoke-virtual {p0}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapZoomScale()F
 
     move-result v0
@@ -318,7 +307,6 @@
 
     double-to-float p2, v0
 
-    .line 268
     invoke-virtual {p0}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapZoomScale()F
 
     move-result p0
@@ -339,7 +327,6 @@
 
     double-to-float p0, p0
 
-    .line 269
     invoke-static {p0, p2}, Ljava/lang/Math;->max(FF)F
 
     move-result v0
@@ -351,7 +338,6 @@
 .method public static a()I
     .locals 3
 
-    .line 22
     sget-object v0, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
     const/16 v1, 0x200
@@ -364,7 +350,6 @@
 
     const/4 v1, 0x1
 
-    .line 23
     invoke-static {v0, v1}, Lcom/amap/api/col/l3/em;->a(Landroid/graphics/Bitmap;Z)I
 
     move-result v0
@@ -379,7 +364,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 38
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->isRecycled()Z
 
     move-result v1
@@ -397,19 +381,15 @@
 
     aput v0, v1, v0
 
-    .line 39
     invoke-static {p0, v1, v0}, Landroid/opengl/GLES20;->glGenTextures(I[II)V
 
-    .line 40
     aget p0, v1, v0
 
     :cond_1
     const/16 v1, 0xde1
 
-    .line 41
     invoke-static {v1, p0}, Landroid/opengl/GLES20;->glBindTexture(II)V
 
-    .line 42
     invoke-static {v1, v0, p2, p3, p1}, Landroid/opengl/GLUtils;->texSubImage2D(IIIILandroid/graphics/Bitmap;)V
 
     return p0
@@ -426,7 +406,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 27
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->isRecycled()Z
 
     move-result v1
@@ -444,28 +423,23 @@
 
     aput v0, v1, v0
 
-    .line 28
     invoke-static {p0, v1, v0}, Landroid/opengl/GLES20;->glGenTextures(I[II)V
 
-    .line 29
     aget p0, v1, v0
 
     :cond_1
     const/16 v1, 0xde1
 
-    .line 30
     invoke-static {v1, p0}, Landroid/opengl/GLES20;->glBindTexture(II)V
 
     const/16 v2, 0x2801
 
     const v3, 0x46180400    # 9729.0f
 
-    .line 31
     invoke-static {v1, v2, v3}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
 
     const/16 v2, 0x2800
 
-    .line 32
     invoke-static {v1, v2, v3}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
 
     const/16 v2, 0x2803
@@ -476,10 +450,8 @@
 
     const p2, 0x46240400    # 10497.0f
 
-    .line 33
     invoke-static {v1, v3, p2}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
 
-    .line 34
     invoke-static {v1, v2, p2}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
 
     goto :goto_0
@@ -487,13 +459,10 @@
     :cond_2
     const p2, 0x47012f00    # 33071.0f
 
-    .line 35
     invoke-static {v1, v3, p2}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
 
-    .line 36
     invoke-static {v1, v2, p2}, Landroid/opengl/GLES20;->glTexParameterf(IIF)V
 
-    .line 37
     :goto_0
     invoke-static {v1, v0, p1, v0}, Landroid/opengl/GLUtils;->texImage2D(IILandroid/graphics/Bitmap;I)V
 
@@ -509,7 +478,6 @@
 
     const/4 v0, 0x0
 
-    .line 24
     invoke-static {p0, v0}, Lcom/amap/api/col/l3/em;->a(Landroid/graphics/Bitmap;Z)I
 
     move-result p0
@@ -522,14 +490,12 @@
 
     const/4 v0, 0x0
 
-    .line 25
     invoke-static {v0, p0, p1}, Lcom/amap/api/col/l3/em;->a(ILandroid/graphics/Bitmap;Z)I
 
     move-result p1
 
     if-eqz p0, :cond_0
 
-    .line 26
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->recycle()V
 
     :cond_0
@@ -539,7 +505,6 @@
 .method public static a([Ljava/lang/Object;)I
     .locals 0
 
-    .line 49
     invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     move-result p0
@@ -552,21 +517,17 @@
 
     mul-int v0, p0, p1
 
-    .line 206
     :try_start_0
     new-array v1, v0, [I
 
-    .line 207
     new-array v3, v0, [I
 
-    .line 208
     invoke-static {v1}, Ljava/nio/IntBuffer;->wrap([I)Ljava/nio/IntBuffer;
 
     move-result-object v10
 
     const/4 v0, 0x0
 
-    .line 209
     invoke-virtual {v10, v0}, Ljava/nio/IntBuffer;->position(I)Ljava/nio/Buffer;
 
     const/4 v4, 0x0
@@ -581,7 +542,6 @@
 
     move v7, p1
 
-    .line 210
     invoke-static/range {v4 .. v10}, Landroid/opengl/GLES20;->glReadPixels(IIIIIILjava/nio/Buffer;)V
 
     const/4 v2, 0x0
@@ -598,7 +558,6 @@
 
     add-int/2addr v5, v4
 
-    .line 211
     aget v5, v1, v5
 
     shr-int/lit8 v6, v5, 0x10
@@ -627,7 +586,6 @@
 
     add-int/2addr v6, v4
 
-    .line 212
     aput v5, v3, v6
 
     add-int/lit8 v4, v4, 0x1
@@ -639,7 +597,6 @@
 
     goto :goto_0
 
-    .line 213
     :cond_1
     sget-object v0, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
@@ -661,7 +618,6 @@
 
     move v9, p1
 
-    .line 214
     invoke-virtual/range {v2 .. v9}, Landroid/graphics/Bitmap;->setPixels([IIIIIII)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -675,10 +631,8 @@
 
     const-string v0, "SavePixels"
 
-    .line 215
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 216
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p0, 0x0
@@ -689,23 +643,19 @@
 .method public static a(Landroid/content/Context;Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Lcom/amap/api/col/l3/eh;->a(Landroid/content/Context;)Landroid/content/res/AssetManager;
 
     move-result-object p0
 
-    .line 2
     invoke-virtual {p0, p1}, Landroid/content/res/AssetManager;->open(Ljava/lang/String;)Ljava/io/InputStream;
 
     move-result-object p0
 
-    .line 3
     invoke-static {p0}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;)Landroid/graphics/Bitmap;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p0}, Ljava/io/InputStream;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -719,7 +669,6 @@
 
     const-string v0, "fromAsset"
 
-    .line 5
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p0, 0x0
@@ -736,7 +685,6 @@
 
     return-object p0
 
-    .line 50
     :cond_0
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -748,7 +696,6 @@
 
     float-to-int v0, v0
 
-    .line 51
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v1
@@ -761,7 +708,6 @@
 
     const/4 v1, 0x1
 
-    .line 52
     invoke-static {p0, v0, p1, v1}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
 
     move-result-object p0
@@ -774,29 +720,23 @@
 
     const/4 v0, 0x0
 
-    .line 217
     :try_start_0
     invoke-static {p0}, Lcom/amap/api/col/l3/em;->b(Landroid/view/View;)V
 
-    .line 218
     invoke-virtual {p0}, Landroid/view/View;->destroyDrawingCache()V
 
     const/4 v1, 0x0
 
-    .line 219
     invoke-static {v1, v1}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v2
 
-    .line 220
     invoke-static {v1, v1}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v3
 
-    .line 221
     invoke-virtual {p0, v2, v3}, Landroid/view/View;->measure(II)V
 
-    .line 222
     invoke-virtual {p0}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v2
@@ -807,14 +747,12 @@
 
     invoke-virtual {p0, v1, v1, v2, v3}, Landroid/view/View;->layout(IIII)V
 
-    .line 223
     invoke-virtual {p0}, Landroid/view/View;->getDrawingCache()Landroid/graphics/Bitmap;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 224
     sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
     invoke-virtual {p0, v2, v1}, Landroid/graphics/Bitmap;->copy(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
@@ -835,10 +773,8 @@
 
     const-string v2, "getBitmapFromView"
 
-    .line 225
     invoke-static {p0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 226
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-object v0
@@ -859,16 +795,12 @@
         }
     .end annotation
 
-    .line 232
     iget-object v5, p0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->bounds:Lcom/amap/api/maps/model/LatLngBounds;
 
-    .line 233
     iget v6, p0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->width:I
 
-    .line 234
     iget v7, p0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->height:I
 
-    .line 235
     iget v0, p0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->paddingLeft:I
 
     const/4 v1, 0x1
@@ -877,22 +809,18 @@
 
     move-result v2
 
-    .line 236
     iget v0, p0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->paddingRight:I
 
-    .line 237
     invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
 
     move-result v3
 
-    .line 238
     iget v0, p0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->paddingTop:I
 
     invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
 
     move-result v4
 
-    .line 239
     iget p0, p0, Lcom/autonavi/amap/mapcore/CameraUpdateMessage;->paddingBottom:I
 
     invoke-static {p0, v1}, Ljava/lang/Math;->max(II)I
@@ -909,7 +837,6 @@
 
     move v4, p0
 
-    .line 240
     invoke-static/range {v0 .. v7}, Lcom/amap/api/col/l3/em;->a(Lcom/autonavi/amap/mapcore/MapConfig;IIIILcom/amap/api/maps/model/LatLngBounds;II)Landroid/util/Pair;
 
     move-result-object p0
@@ -935,7 +862,6 @@
 
     move-object/from16 v0, p5
 
-    .line 241
     iget-object v1, v0, Lcom/amap/api/maps/model/LatLngBounds;->northeast:Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v2, v1, Lcom/amap/api/maps/model/LatLng;->latitude:D
@@ -948,7 +874,6 @@
 
     move-result-object v2
 
-    .line 242
     iget-object v0, v0, Lcom/amap/api/maps/model/LatLngBounds;->southwest:Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v3, v0, Lcom/amap/api/maps/model/LatLng;->latitude:D
@@ -959,14 +884,12 @@
 
     move-result-object v0
 
-    .line 243
     iget v1, v2, Landroid/graphics/Point;->x:I
 
     iget v3, v0, Landroid/graphics/Point;->x:I
 
     sub-int/2addr v1, v3
 
-    .line 244
     iget v3, v0, Landroid/graphics/Point;->y:I
 
     iget v4, v2, Landroid/graphics/Point;->y:I
@@ -1011,7 +934,6 @@
 
     const/4 v5, 0x1
 
-    .line 245
     :cond_4
     iget v7, v2, Landroid/graphics/Point;->x:I
 
@@ -1127,7 +1049,6 @@
 
     invoke-direct {v7, v4, v5}, Landroid/util/Pair;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 246
     iget-object v4, v7, Landroid/util/Pair;->first:Ljava/lang/Object;
 
     check-cast v4, Ljava/lang/Float;
@@ -1136,7 +1057,6 @@
 
     move-result v4
 
-    .line 247
     iget-object v5, v7, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v5, Ljava/lang/Boolean;
@@ -1145,7 +1065,6 @@
 
     move-result v5
 
-    .line 248
     invoke-virtual/range {p0 .. p0}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapZoomScale()F
 
     move-result v7
@@ -1156,7 +1075,6 @@
 
     move-result v7
 
-    .line 249
     invoke-virtual/range {p0 .. p0}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapZoomScale()F
 
     move-result v8
@@ -1169,7 +1087,6 @@
 
     move-object/from16 v9, p0
 
-    .line 250
     iget v10, v9, Lcom/autonavi/amap/mapcore/MapConfig;->maxZoomLevel:F
 
     const/high16 v11, 0x40000000    # 2.0f
@@ -1178,7 +1095,6 @@
 
     if-ltz v10, :cond_7
 
-    .line 251
     iget v0, v0, Landroid/graphics/Point;->x:I
 
     int-to-float v0, v0
@@ -1201,7 +1117,6 @@
 
     float-to-int v0, v0
 
-    .line 252
     iget v1, v2, Landroid/graphics/Point;->y:I
 
     :goto_2
@@ -1231,7 +1146,6 @@
     :cond_7
     if-eqz v5, :cond_8
 
-    .line 253
     iget v0, v0, Landroid/graphics/Point;->x:I
 
     int-to-float v0, v0
@@ -1252,12 +1166,10 @@
 
     float-to-int v0, v0
 
-    .line 254
     iget v1, v2, Landroid/graphics/Point;->y:I
 
     goto :goto_2
 
-    .line 255
     :cond_8
     iget v0, v0, Landroid/graphics/Point;->x:I
 
@@ -1281,7 +1193,6 @@
 
     float-to-int v0, v0
 
-    .line 256
     iget v1, v2, Landroid/graphics/Point;->y:I
 
     int-to-float v1, v1
@@ -1300,7 +1211,6 @@
 
     goto :goto_3
 
-    .line 257
     :goto_4
     invoke-virtual/range {p0 .. p0}, Lcom/autonavi/amap/mapcore/MapConfig;->getAnchorX()I
 
@@ -1316,7 +1226,6 @@
 
     int-to-float v2, v2
 
-    .line 258
     invoke-virtual/range {p0 .. p0}, Lcom/autonavi/amap/mapcore/MapConfig;->getAnchorY()I
 
     move-result v3
@@ -1333,7 +1242,6 @@
 
     int-to-float v0, v0
 
-    .line 259
     invoke-virtual/range {p0 .. p0}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapZoomScale()F
 
     move-result v5
@@ -1348,7 +1256,6 @@
 
     int-to-float v1, v1
 
-    .line 260
     invoke-virtual/range {p0 .. p0}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapZoomScale()F
 
     move-result v2
@@ -1361,14 +1268,12 @@
 
     float-to-int v1, v1
 
-    .line 261
     new-instance v2, Landroid/util/Pair;
 
     invoke-static {v4}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object v3
 
-    .line 262
     invoke-static {v0, v1}, Lcom/autonavi/amap/mapcore/IPoint;->obtain(II)Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v0
@@ -1381,7 +1286,6 @@
 .method public static a(Lcom/amap/api/maps/model/LatLng;)Lcom/autonavi/amap/mapcore/DPoint;
     .locals 10
 
-    .line 227
     iget-wide v0, p0, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
     const-wide v2, 0x4076800000000000L    # 360.0
@@ -1392,7 +1296,6 @@
 
     add-double/2addr v0, v2
 
-    .line 228
     iget-wide v4, p0, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
     invoke-static {v4, v5}, Ljava/lang/Math;->toRadians(D)D
@@ -1411,7 +1314,6 @@
 
     div-double/2addr v8, v4
 
-    .line 229
     invoke-static {v8, v9}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v4
@@ -1428,7 +1330,6 @@
 
     mul-double v4, v4, v6
 
-    .line 230
     invoke-static {v0, v1, v4, v5}, Lcom/autonavi/amap/mapcore/DPoint;->obtain(DD)Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object p0
@@ -1439,14 +1340,12 @@
 .method private static a(Lcom/autonavi/amap/mapcore/FPoint;Lcom/autonavi/amap/mapcore/FPoint;Lcom/autonavi/amap/mapcore/FPoint3;Lcom/autonavi/amap/mapcore/FPoint3;I)Lcom/autonavi/amap/mapcore/FPoint3;
     .locals 8
 
-    .line 166
     new-instance v0, Lcom/autonavi/amap/mapcore/FPoint3;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1, v1, p4}, Lcom/autonavi/amap/mapcore/FPoint3;-><init>(FFI)V
 
-    .line 167
     iget p4, p1, Landroid/graphics/PointF;->y:F
 
     iget v1, p0, Landroid/graphics/PointF;->y:F
@@ -1477,7 +1376,6 @@
 
     sub-float/2addr p4, v1
 
-    .line 168
     iget v1, p3, Landroid/graphics/PointF;->x:F
 
     sub-float v2, v1, v3
@@ -1510,7 +1408,6 @@
 
     double-to-float p1, v6
 
-    .line 169
     iput p1, v0, Landroid/graphics/PointF;->x:F
 
     float-to-double v1, p2
@@ -1527,7 +1424,6 @@
 
     double-to-float p0, v1
 
-    .line 170
     iput p0, v0, Landroid/graphics/PointF;->y:F
 
     return-object v0
@@ -1538,12 +1434,10 @@
 
     const/4 v0, 0x0
 
-    .line 171
     invoke-static {v0, v0}, Lcom/autonavi/amap/mapcore/FPoint;->obtain(FF)Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v0
 
-    .line 172
     iget v1, p1, Landroid/graphics/PointF;->y:F
 
     iget v2, p0, Landroid/graphics/PointF;->y:F
@@ -1574,7 +1468,6 @@
 
     sub-float/2addr v1, v2
 
-    .line 173
     iget v2, p3, Landroid/graphics/PointF;->x:F
 
     sub-float v3, v2, v4
@@ -1607,7 +1500,6 @@
 
     double-to-float p1, v9
 
-    .line 174
     iput p1, v0, Landroid/graphics/PointF;->x:F
 
     float-to-double v1, p2
@@ -1624,7 +1516,6 @@
 
     double-to-float p0, v1
 
-    .line 175
     iput p0, v0, Landroid/graphics/PointF;->y:F
 
     return-object v0
@@ -1635,12 +1526,10 @@
 
     const/4 v0, 0x0
 
-    .line 197
     invoke-static {v0, v0}, Lcom/autonavi/amap/mapcore/IPoint;->obtain(II)Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v0
 
-    .line 198
     iget v1, p1, Landroid/graphics/Point;->y:I
 
     iget v2, p0, Landroid/graphics/Point;->y:I
@@ -1679,7 +1568,6 @@
 
     int-to-double v1, v1
 
-    .line 199
     iget v6, p3, Landroid/graphics/Point;->x:I
 
     sub-int v7, v6, v5
@@ -1716,7 +1604,6 @@
 
     double-to-int p0, p0
 
-    .line 200
     iput p0, v0, Landroid/graphics/Point;->x:I
 
     int-to-double p0, p2
@@ -1733,7 +1620,6 @@
 
     double-to-int p0, p0
 
-    .line 201
     iput p0, v0, Landroid/graphics/Point;->y:I
 
     return-object v0
@@ -1746,7 +1632,6 @@
 
     if-ge p0, v0, :cond_0
 
-    .line 61
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1763,7 +1648,6 @@
 
     goto :goto_0
 
-    .line 62
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1788,7 +1672,6 @@
 .method public static a(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    .line 53
     new-instance v0, Ljava/io/File;
 
     invoke-static {p0}, Lcom/autonavi/amap/mapcore/FileUtil;->getMapBaseStorage(Landroid/content/Context;)Ljava/lang/String;
@@ -1799,17 +1682,14 @@
 
     invoke-direct {v0, p0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 54
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p0
 
     if-nez p0, :cond_0
 
-    .line 55
     invoke-virtual {v0}, Ljava/io/File;->mkdir()Z
 
-    .line 56
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -1829,22 +1709,18 @@
 
     move-result-object p0
 
-    .line 57
     new-instance v1, Ljava/io/File;
 
     invoke-direct {v1, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 58
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result p0
 
     if-nez p0, :cond_1
 
-    .line 59
     invoke-virtual {v1}, Ljava/io/File;->mkdir()Z
 
-    .line 60
     :cond_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -1872,14 +1748,12 @@
 
     const-string v0, "Util"
 
-    .line 66
     new-instance v1, Ljava/lang/StringBuffer;
 
     invoke-direct {v1}, Ljava/lang/StringBuffer;-><init>()V
 
     const/4 v2, 0x0
 
-    .line 67
     :try_start_0
     new-instance v3, Ljava/io/FileInputStream;
 
@@ -1889,7 +1763,6 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_6
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 68
     :try_start_1
     new-instance p0, Ljava/io/BufferedReader;
 
@@ -1905,7 +1778,6 @@
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_4
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 69
     :goto_0
     :try_start_2
     invoke-virtual {p0}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
@@ -1914,7 +1786,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 70
     invoke-virtual {v1, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
     :try_end_2
     .catch Ljava/io/FileNotFoundException; {:try_start_2 .. :try_end_2} :catch_3
@@ -1923,7 +1794,6 @@
 
     goto :goto_0
 
-    .line 71
     :cond_0
     :try_start_3
     invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
@@ -1931,7 +1801,6 @@
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 72
     :try_start_4
     invoke-virtual {p0}, Ljava/io/BufferedReader;->close()V
     :try_end_4
@@ -1947,13 +1816,11 @@
     :catch_0
     move-exception v0
 
-    .line 73
     :try_start_5
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 74
     :try_start_6
     invoke-virtual {p0}, Ljava/io/BufferedReader;->close()V
     :try_end_6
@@ -1961,7 +1828,6 @@
 
     goto/16 :goto_c
 
-    .line 75
     :goto_1
     :try_start_7
     invoke-virtual {p0}, Ljava/io/BufferedReader;->close()V
@@ -1973,10 +1839,8 @@
     :catch_1
     move-exception p0
 
-    .line 76
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 77
     :goto_2
     throw v0
 
@@ -2042,17 +1906,14 @@
     :try_start_8
     const-string v4, "readFile io"
 
-    .line 78
     invoke-static {v2, v0, v4}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 79
     invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_5
 
     if-eqz v3, :cond_2
 
-    .line 80
     :try_start_9
     invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
     :try_end_9
@@ -2069,7 +1930,6 @@
     :catch_7
     move-exception v0
 
-    .line 81
     :try_start_a
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
     :try_end_a
@@ -2077,7 +1937,6 @@
 
     if-eqz p0, :cond_5
 
-    .line 82
     :try_start_b
     invoke-virtual {p0}, Ljava/io/BufferedReader;->close()V
     :try_end_b
@@ -2098,10 +1957,8 @@
     :catch_8
     move-exception p0
 
-    .line 83
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 84
     :cond_1
     :goto_6
     throw v0
@@ -2110,7 +1967,6 @@
     :goto_7
     if-eqz p0, :cond_5
 
-    .line 85
     :try_start_d
     invoke-virtual {p0}, Ljava/io/BufferedReader;->close()V
     :try_end_d
@@ -2131,17 +1987,14 @@
     :try_start_e
     const-string v4, "readFile fileNotFound"
 
-    .line 86
     invoke-static {v2, v0, v4}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 87
     invoke-virtual {v2}, Ljava/io/FileNotFoundException;->printStackTrace()V
     :try_end_e
     .catchall {:try_start_e .. :try_end_e} :catchall_5
 
     if-eqz v3, :cond_4
 
-    .line 88
     :try_start_f
     invoke-virtual {v3}, Ljava/io/FileInputStream;->close()V
     :try_end_f
@@ -2158,7 +2011,6 @@
     :catch_a
     move-exception v0
 
-    .line 89
     :try_start_10
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
     :try_end_10
@@ -2166,7 +2018,6 @@
 
     if-eqz p0, :cond_5
 
-    .line 90
     :try_start_11
     invoke-virtual {p0}, Ljava/io/BufferedReader;->close()V
     :try_end_11
@@ -2187,10 +2038,8 @@
     :catch_b
     move-exception p0
 
-    .line 91
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 92
     :cond_3
     :goto_a
     throw v0
@@ -2199,7 +2048,6 @@
     :goto_b
     if-eqz p0, :cond_5
 
-    .line 93
     :try_start_13
     invoke-virtual {p0}, Ljava/io/BufferedReader;->close()V
     :try_end_13
@@ -2210,10 +2058,8 @@
     :catch_c
     move-exception p0
 
-    .line 94
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 95
     :cond_5
     :goto_c
     invoke-virtual {v1}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
@@ -2230,7 +2076,6 @@
     :goto_d
     if-eqz v2, :cond_7
 
-    .line 96
     :try_start_14
     invoke-virtual {v2}, Ljava/io/FileInputStream;->close()V
     :try_end_14
@@ -2247,7 +2092,6 @@
     :catch_d
     move-exception v1
 
-    .line 97
     :try_start_15
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
     :try_end_15
@@ -2255,7 +2099,6 @@
 
     if-eqz p0, :cond_8
 
-    .line 98
     :try_start_16
     invoke-virtual {p0}, Ljava/io/BufferedReader;->close()V
     :try_end_16
@@ -2276,10 +2119,8 @@
     :catch_e
     move-exception p0
 
-    .line 99
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 100
     :cond_6
     :goto_f
     throw v0
@@ -2288,7 +2129,6 @@
     :goto_10
     if-eqz p0, :cond_8
 
-    .line 101
     :try_start_18
     invoke-virtual {p0}, Ljava/io/BufferedReader;->close()V
     :try_end_18
@@ -2299,10 +2139,8 @@
     :catch_f
     move-exception p0
 
-    .line 102
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 103
     :cond_8
     :goto_11
     throw v0
@@ -2311,7 +2149,6 @@
 .method public static a(Ljava/io/InputStream;)Ljava/lang/String;
     .locals 2
 
-    .line 63
     :try_start_0
     new-instance v0, Ljava/lang/String;
 
@@ -2334,10 +2171,8 @@
 
     const-string v1, "decodeAssetResData"
 
-    .line 64
     invoke-static {p0, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 65
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -2349,7 +2184,6 @@
 .method public static a(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
     .locals 1
 
-    .line 7
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2376,12 +2210,10 @@
 .method public static varargs a([Ljava/lang/String;)Ljava/lang/String;
     .locals 5
 
-    .line 43
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 44
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -2393,10 +2225,8 @@
 
     aget-object v4, p0, v2
 
-    .line 45
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 46
     array-length v4, p0
 
     add-int/lit8 v4, v4, -0x1
@@ -2405,7 +2235,6 @@
 
     const-string v4, ","
 
-    .line 47
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_0
@@ -2415,7 +2244,6 @@
 
     goto :goto_0
 
-    .line 48
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -2427,7 +2255,6 @@
 .method public static a([F)Ljava/nio/FloatBuffer;
     .locals 2
 
-    .line 10
     :try_start_0
     array-length v0, p0
 
@@ -2437,24 +2264,20 @@
 
     move-result-object v0
 
-    .line 11
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 12
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->asFloatBuffer()Ljava/nio/FloatBuffer;
 
     move-result-object v0
 
-    .line 13
     invoke-virtual {v0, p0}, Ljava/nio/FloatBuffer;->put([F)Ljava/nio/FloatBuffer;
 
     const/4 p0, 0x0
 
-    .line 14
     invoke-virtual {v0, p0}, Ljava/nio/FloatBuffer;->position(I)Ljava/nio/Buffer;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2468,10 +2291,8 @@
 
     const-string v1, "makeFloatBuffer1"
 
-    .line 15
     invoke-static {p0, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 16
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p0, 0x0
@@ -2482,16 +2303,13 @@
 .method public static a([FLjava/nio/FloatBuffer;)Ljava/nio/FloatBuffer;
     .locals 1
 
-    .line 17
     :try_start_0
     invoke-virtual {p1}, Ljava/nio/FloatBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 18
     invoke-virtual {p1, p0}, Ljava/nio/FloatBuffer;->put([F)Ljava/nio/FloatBuffer;
 
     const/4 p0, 0x0
 
-    .line 19
     invoke-virtual {p1, p0}, Ljava/nio/FloatBuffer;->position(I)Ljava/nio/Buffer;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2505,10 +2323,8 @@
 
     const-string v0, "makeFloatBuffer2"
 
-    .line 20
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 21
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p0, 0x0
@@ -2531,12 +2347,10 @@
         }
     .end annotation
 
-    .line 129
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 130
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
@@ -2550,10 +2364,8 @@
 
     if-ge v2, v3, :cond_6
 
-    .line 131
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 132
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v3
@@ -2565,7 +2377,6 @@
 
     if-ge v4, v5, :cond_4
 
-    .line 133
     rem-int v5, v4, v3
 
     invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2576,7 +2387,6 @@
 
     add-int/lit8 v6, v4, 0x1
 
-    .line 134
     rem-int v7, v6, v3
 
     invoke-interface {v1, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2587,7 +2397,6 @@
 
     if-nez v4, :cond_0
 
-    .line 135
     aget-object v4, p0, v2
 
     add-int/lit8 v8, v2, 0x1
@@ -2604,10 +2413,8 @@
 
     if-eqz v4, :cond_0
 
-    .line 136
     invoke-interface {v0, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 137
     :cond_0
     aget-object v4, p0, v2
 
@@ -2625,7 +2432,6 @@
 
     if-eqz v4, :cond_2
 
-    .line 138
     aget-object v4, p0, v2
 
     array-length v9, p0
@@ -2640,12 +2446,10 @@
 
     if-eqz v4, :cond_1
 
-    .line 139
     invoke-interface {v0, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 140
     :cond_1
     aget-object v4, p0, v2
 
@@ -2663,7 +2467,6 @@
 
     goto :goto_2
 
-    .line 141
     :cond_2
     aget-object v4, p0, v2
 
@@ -2679,7 +2482,6 @@
 
     if-eqz v4, :cond_3
 
-    .line 142
     aget-object v4, p0, v2
 
     array-length v9, p0
@@ -2694,7 +2496,6 @@
 
     invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 143
     invoke-interface {v0, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_3
@@ -2703,13 +2504,11 @@
 
     goto :goto_1
 
-    .line 144
     :cond_4
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
     const/4 v3, 0x0
 
-    .line 145
     :goto_3
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -2717,7 +2516,6 @@
 
     if-ge v3, v4, :cond_5
 
-    .line 146
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -2754,12 +2552,10 @@
         }
     .end annotation
 
-    .line 179
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 180
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
@@ -2773,10 +2569,8 @@
 
     if-ge v2, v3, :cond_6
 
-    .line 181
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 182
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v3
@@ -2786,7 +2580,6 @@
     :goto_1
     if-ge v4, v3, :cond_4
 
-    .line 183
     rem-int v5, v4, v3
 
     invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2797,7 +2590,6 @@
 
     add-int/lit8 v6, v4, 0x1
 
-    .line 184
     rem-int v7, v6, v3
 
     invoke-interface {v1, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -2808,7 +2600,6 @@
 
     if-nez v4, :cond_0
 
-    .line 185
     aget-object v4, p0, v2
 
     add-int/lit8 v8, v2, 0x1
@@ -2825,10 +2616,8 @@
 
     if-eqz v4, :cond_0
 
-    .line 186
     invoke-interface {v0, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 187
     :cond_0
     aget-object v4, p0, v2
 
@@ -2846,7 +2635,6 @@
 
     if-eqz v4, :cond_2
 
-    .line 188
     aget-object v4, p0, v2
 
     array-length v9, p0
@@ -2861,12 +2649,10 @@
 
     if-eqz v4, :cond_1
 
-    .line 189
     invoke-interface {v0, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 190
     :cond_1
     aget-object v4, p0, v2
 
@@ -2884,7 +2670,6 @@
 
     goto :goto_2
 
-    .line 191
     :cond_2
     aget-object v4, p0, v2
 
@@ -2900,7 +2685,6 @@
 
     if-eqz v4, :cond_3
 
-    .line 192
     aget-object v4, p0, v2
 
     array-length v9, p0
@@ -2915,7 +2699,6 @@
 
     invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 193
     invoke-interface {v0, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_3
@@ -2924,13 +2707,11 @@
 
     goto :goto_1
 
-    .line 194
     :cond_4
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
     const/4 v3, 0x0
 
-    .line 195
     :goto_3
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -2938,7 +2719,6 @@
 
     if-ge v3, v4, :cond_5
 
-    .line 196
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -2969,7 +2749,6 @@
 
     const v1, 0x7fffffff
 
-    .line 281
     invoke-virtual {p0, v1, v0, v0, v1}, Landroid/graphics/Rect;->set(IIII)V
 
     :cond_0
@@ -2983,7 +2762,6 @@
 
     const/4 v0, 0x0
 
-    .line 6
     invoke-virtual {p0, v0}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
     :cond_0
@@ -3007,7 +2785,6 @@
 
     sub-double/2addr v0, v2
 
-    .line 119
     invoke-static {v0, v1}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v0
@@ -3054,7 +2831,6 @@
 .method public static a(Landroid/graphics/Rect;II)Z
     .locals 0
 
-    .line 231
     invoke-virtual {p0, p1, p2}, Landroid/graphics/Rect;->contains(II)Z
 
     move-result p0
@@ -3065,22 +2841,18 @@
 .method public static a(Lcom/amap/api/maps/model/BaseHoleOptions;Lcom/amap/api/maps/model/LatLng;)Z
     .locals 4
 
-    .line 120
     instance-of v0, p0, Lcom/amap/api/maps/model/CircleHoleOptions;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_2
 
-    .line 121
     check-cast p0, Lcom/amap/api/maps/model/CircleHoleOptions;
 
-    .line 122
     invoke-virtual {p0}, Lcom/amap/api/maps/model/CircleHoleOptions;->getCenter()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object v0
 
-    .line 123
     invoke-virtual {p0}, Lcom/amap/api/maps/model/CircleHoleOptions;->getRadius()D
 
     move-result-wide v2
@@ -3089,7 +2861,6 @@
 
     return v1
 
-    .line 124
     :cond_0
     invoke-static {v0, p1}, Lcom/amap/api/maps/AMapUtils;->calculateLineDistance(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)F
 
@@ -3108,18 +2879,15 @@
     :cond_1
     return v1
 
-    .line 125
     :cond_2
     check-cast p0, Lcom/amap/api/maps/model/PolygonHoleOptions;
 
-    .line 126
     invoke-virtual {p0}, Lcom/amap/api/maps/model/PolygonHoleOptions;->getPoints()Ljava/util/List;
 
     move-result-object p0
 
     if-eqz p0, :cond_4
 
-    .line 127
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -3128,7 +2896,6 @@
 
     goto :goto_0
 
-    .line 128
     :cond_3
     invoke-static {p1, p0}, Lcom/amap/api/col/l3/em;->a(Lcom/amap/api/maps/model/LatLng;Ljava/util/List;)Z
 
@@ -3146,7 +2913,6 @@
 
     const/4 v0, 0x0
 
-    .line 298
     :try_start_0
     invoke-virtual {p1}, Lcom/amap/api/maps/model/CircleHoleOptions;->getCenter()Lcom/amap/api/maps/model/LatLng;
 
@@ -3162,7 +2928,6 @@
 
     float-to-double v1, v1
 
-    .line 299
     invoke-virtual {p0}, Lcom/amap/api/maps/model/CircleHoleOptions;->getRadius()D
 
     move-result-wide v3
@@ -3193,10 +2958,8 @@
 
     const-string v1, "isPolygon2CircleIntersect"
 
-    .line 300
     invoke-static {p0, p1, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 301
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return v0
@@ -3218,13 +2981,10 @@
 
     move-object/from16 v1, p1
 
-    .line 104
     iget-wide v14, v0, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
-    .line 105
     iget-wide v12, v0, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
-    .line 106
     invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -3237,7 +2997,6 @@
 
     return v10
 
-    .line 107
     :cond_0
     invoke-interface {v1, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -3263,7 +3022,6 @@
 
     if-nez v0, :cond_1
 
-    .line 108
     invoke-interface {v1, v10}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -3275,7 +3033,6 @@
 
     const/16 v17, 0x0
 
-    .line 109
     :goto_0
     invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
 
@@ -3285,7 +3042,6 @@
 
     if-ge v0, v2, :cond_7
 
-    .line 110
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -3294,7 +3050,6 @@
 
     iget-wide v8, v2, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
-    .line 111
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -3305,7 +3060,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 112
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -3314,7 +3068,6 @@
 
     iget-wide v4, v2, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
-    .line 113
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -3347,7 +3100,6 @@
 
     move-wide/from16 v12, v18
 
-    .line 114
     invoke-static/range {v2 .. v13}, Lcom/amap/api/col/l3/em;->a(DDDDDD)Z
 
     move-result v2
@@ -3359,7 +3111,6 @@
     :cond_2
     sub-double v29, v18, v22
 
-    .line 115
     invoke-static/range {v29 .. v30}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v2
@@ -3382,7 +3133,6 @@
 
     move-wide/from16 v12, v27
 
-    .line 116
     invoke-static/range {v2 .. v13}, Lcom/amap/api/col/l3/em;->a(DDDDDD)Z
 
     move-result v2
@@ -3411,7 +3161,6 @@
 
     move-wide/from16 v12, v27
 
-    .line 117
     invoke-static/range {v2 .. v13}, Lcom/amap/api/col/l3/em;->a(DDDDDD)Z
 
     move-result v2
@@ -3506,7 +3255,6 @@
     :cond_7
     const/16 v26, 0x0
 
-    .line 118
     rem-int/lit8 v17, v17, 0x2
 
     if-eqz v17, :cond_8
@@ -3525,7 +3273,6 @@
 .method private static a(Lcom/autonavi/amap/mapcore/FPoint;Lcom/autonavi/amap/mapcore/FPoint;Lcom/autonavi/amap/mapcore/FPoint;)Z
     .locals 3
 
-    .line 178
     iget v0, p2, Landroid/graphics/PointF;->x:F
 
     iget v1, p1, Landroid/graphics/PointF;->x:F
@@ -3582,13 +3329,11 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 176
     :goto_0
     array-length v2, p1
 
     if-ge v1, v2, :cond_2
 
-    .line 177
     aget-object v2, p1, v1
 
     add-int/lit8 v1, v1, 0x1
@@ -3621,7 +3366,6 @@
 .method private static a(Lcom/autonavi/amap/mapcore/IPoint;Lcom/autonavi/amap/mapcore/IPoint;Lcom/autonavi/amap/mapcore/IPoint;)Z
     .locals 7
 
-    .line 205
     iget v0, p0, Landroid/graphics/Point;->x:I
 
     iget p0, p0, Landroid/graphics/Point;->y:I
@@ -3707,21 +3451,18 @@
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 202
     invoke-interface {v0, v6}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
     check-cast v6, Lcom/autonavi/amap/mapcore/IPoint;
 
-    .line 203
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
     check-cast v9, Lcom/autonavi/amap/mapcore/IPoint;
 
-    .line 204
     iget v10, v6, Landroid/graphics/Point;->x:I
 
     int-to-double v10, v10
@@ -3796,7 +3537,6 @@
 
     const/4 v1, 0x0
 
-    .line 290
     :goto_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -3804,24 +3544,20 @@
 
     if-ge v0, v2, :cond_2
 
-    .line 291
     invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/amap/api/maps/model/BaseHoleOptions;
 
-    .line 292
     instance-of v3, v2, Lcom/amap/api/maps/model/PolygonHoleOptions;
 
     const/4 v4, 0x1
 
     if-eqz v3, :cond_0
 
-    .line 293
     check-cast v2, Lcom/amap/api/maps/model/PolygonHoleOptions;
 
-    .line 294
     invoke-virtual {v2}, Lcom/amap/api/maps/model/PolygonHoleOptions;->getPoints()Ljava/util/List;
 
     move-result-object v1
@@ -3834,16 +3570,13 @@
 
     return v4
 
-    .line 295
     :cond_0
     instance-of v3, v2, Lcom/amap/api/maps/model/CircleHoleOptions;
 
     if-eqz v3, :cond_1
 
-    .line 296
     check-cast v2, Lcom/amap/api/maps/model/CircleHoleOptions;
 
-    .line 297
     invoke-static {p1, v2}, Lcom/amap/api/col/l3/em;->a(Lcom/amap/api/maps/model/CircleHoleOptions;Lcom/amap/api/maps/model/CircleHoleOptions;)Z
 
     move-result v1
@@ -3878,7 +3611,6 @@
 
     const/4 v1, 0x0
 
-    .line 282
     :goto_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -3886,24 +3618,20 @@
 
     if-ge v0, v2, :cond_2
 
-    .line 283
     invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/amap/api/maps/model/BaseHoleOptions;
 
-    .line 284
     instance-of v3, v2, Lcom/amap/api/maps/model/PolygonHoleOptions;
 
     const/4 v4, 0x1
 
     if-eqz v3, :cond_0
 
-    .line 285
     check-cast v2, Lcom/amap/api/maps/model/PolygonHoleOptions;
 
-    .line 286
     invoke-virtual {v2}, Lcom/amap/api/maps/model/PolygonHoleOptions;->getPoints()Ljava/util/List;
 
     move-result-object v1
@@ -3920,16 +3648,13 @@
 
     return v4
 
-    .line 287
     :cond_0
     instance-of v3, v2, Lcom/amap/api/maps/model/CircleHoleOptions;
 
     if-eqz v3, :cond_1
 
-    .line 288
     check-cast v2, Lcom/amap/api/maps/model/CircleHoleOptions;
 
-    .line 289
     invoke-virtual {p1}, Lcom/amap/api/maps/model/PolygonHoleOptions;->getPoints()Ljava/util/List;
 
     move-result-object v1
@@ -3969,7 +3694,6 @@
 
     const/4 v1, 0x0
 
-    .line 302
     :goto_0
     :try_start_0
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -3980,7 +3704,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 303
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -4003,7 +3726,6 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 304
     :goto_1
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -4011,7 +3733,6 @@
 
     if-ge v1, v2, :cond_3
 
-    .line 305
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -4031,7 +3752,6 @@
 
     goto :goto_1
 
-    .line 306
     :cond_3
     invoke-static {p0, p1}, Lcom/amap/api/col/l3/em;->b(Ljava/util/List;Ljava/util/List;)Z
 
@@ -4048,10 +3768,8 @@
 
     const-string v1, "isPolygon2PolygonIntersect"
 
-    .line 307
     invoke-static {p0, p1, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 308
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return v0
@@ -4064,28 +3782,23 @@
 
     monitor-enter v0
 
-    .line 270
     :try_start_0
     invoke-virtual {p4}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapWidth()I
 
     move-result v1
 
-    .line 271
     invoke-virtual {p4}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapHeight()I
 
     move-result v2
 
-    .line 272
     invoke-virtual {p4}, Lcom/autonavi/amap/mapcore/MapConfig;->getAnchorX()I
 
     move-result v3
 
-    .line 273
     invoke-virtual {p4}, Lcom/autonavi/amap/mapcore/MapConfig;->getAnchorY()I
 
     move-result v4
 
-    .line 274
     invoke-virtual {p4}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapZoomScale()F
 
     move-result v5
@@ -4100,7 +3813,6 @@
 
     move-result v5
 
-    .line 275
     invoke-virtual {p4}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapZoomScale()F
 
     move-result v6
@@ -4117,7 +3829,6 @@
 
     move-result v1
 
-    .line 276
     invoke-virtual {p4}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapZoomScale()F
 
     move-result v3
@@ -4132,7 +3843,6 @@
 
     move-result v3
 
-    .line 277
     invoke-virtual {p4}, Lcom/autonavi/amap/mapcore/MapConfig;->getMapZoomScale()F
 
     move-result p4
@@ -4173,7 +3883,6 @@
 
     int-to-float p6, p6
 
-    .line 278
     invoke-static {p6, p0}, Ljava/lang/Math;->min(FF)F
 
     move-result p0
@@ -4190,7 +3899,6 @@
 
     int-to-float p2, p7
 
-    .line 279
     invoke-static {p2, p3}, Ljava/lang/Math;->min(FF)F
 
     move-result p2
@@ -4205,7 +3913,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 280
     monitor-exit v0
 
     return-object p4
@@ -4221,7 +3928,6 @@
 .method public static a(Lcom/amap/api/col/l3/u;)[Lcom/autonavi/amap/mapcore/FPoint;
     .locals 7
 
-    .line 147
     invoke-interface {p0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getCameraAngle()F
 
     move-result v0
@@ -4275,7 +3981,6 @@
     :goto_0
     float-to-double v0, v0
 
-    .line 148
     invoke-interface {p0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapHeight()I
 
     move-result v2
@@ -4286,7 +3991,6 @@
 
     double-to-float v0, v2
 
-    .line 149
     invoke-static {}, Lcom/autonavi/amap/mapcore/FPoint;->obtain()Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v1
@@ -4299,10 +4003,8 @@
 
     const/16 v2, -0x64
 
-    .line 150
     invoke-interface {p0, v2, v0, v1}, Lcom/amap/api/col/l3/u;->a(IILandroid/graphics/PointF;)V
 
-    .line 151
     sget-object v3, Lcom/amap/api/col/l3/em;->a:[Lcom/autonavi/amap/mapcore/FPoint;
 
     const/4 v4, 0x0
@@ -4315,12 +4017,10 @@
 
     invoke-virtual {v3, v4, v5}, Landroid/graphics/PointF;->set(FF)V
 
-    .line 152
     invoke-static {}, Lcom/autonavi/amap/mapcore/FPoint;->obtain()Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v3
 
-    .line 153
     invoke-interface {p0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapWidth()I
 
     move-result v4
@@ -4329,7 +4029,6 @@
 
     invoke-interface {p0, v4, v0, v3}, Lcom/amap/api/col/l3/u;->a(IILandroid/graphics/PointF;)V
 
-    .line 154
     sget-object v0, Lcom/amap/api/col/l3/em;->a:[Lcom/autonavi/amap/mapcore/FPoint;
 
     const/4 v4, 0x1
@@ -4342,12 +4041,10 @@
 
     invoke-virtual {v0, v4, v5}, Landroid/graphics/PointF;->set(FF)V
 
-    .line 155
     invoke-static {}, Lcom/autonavi/amap/mapcore/FPoint;->obtain()Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v0
 
-    .line 156
     invoke-interface {p0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapWidth()I
 
     move-result v4
@@ -4362,7 +4059,6 @@
 
     invoke-interface {p0, v4, v5, v0}, Lcom/amap/api/col/l3/u;->a(IILandroid/graphics/PointF;)V
 
-    .line 157
     sget-object v4, Lcom/amap/api/col/l3/em;->a:[Lcom/autonavi/amap/mapcore/FPoint;
 
     const/4 v5, 0x2
@@ -4375,12 +4071,10 @@
 
     invoke-virtual {v4, v5, v6}, Landroid/graphics/PointF;->set(FF)V
 
-    .line 158
     invoke-static {}, Lcom/autonavi/amap/mapcore/FPoint;->obtain()Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v4
 
-    .line 159
     invoke-interface {p0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapHeight()I
 
     move-result v5
@@ -4389,7 +4083,6 @@
 
     invoke-interface {p0, v2, v5, v4}, Lcom/amap/api/col/l3/u;->a(IILandroid/graphics/PointF;)V
 
-    .line 160
     sget-object p0, Lcom/amap/api/col/l3/em;->a:[Lcom/autonavi/amap/mapcore/FPoint;
 
     const/4 v2, 0x3
@@ -4402,19 +4095,14 @@
 
     invoke-virtual {p0, v2, v5}, Landroid/graphics/PointF;->set(FF)V
 
-    .line 161
     invoke-virtual {v1}, Lcom/autonavi/amap/mapcore/FPoint;->recycle()V
 
-    .line 162
     invoke-virtual {v3}, Lcom/autonavi/amap/mapcore/FPoint;->recycle()V
 
-    .line 163
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/FPoint;->recycle()V
 
-    .line 164
     invoke-virtual {v4}, Lcom/autonavi/amap/mapcore/FPoint;->recycle()V
 
-    .line 165
     sget-object p0, Lcom/amap/api/col/l3/em;->a:[Lcom/autonavi/amap/mapcore/FPoint;
 
     return-object p0
@@ -4425,7 +4113,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p0, v0}, Lcom/amap/api/col/l3/em;->a(Landroid/graphics/Bitmap;Z)I
 
     move-result p0
@@ -4436,7 +4123,6 @@
 .method public static b(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    .line 2
     invoke-static {p0}, Lcom/amap/api/col/l3/em;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p0
@@ -4447,7 +4133,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/io/File;
 
@@ -4455,17 +4140,14 @@
 
     invoke-direct {v0, p0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p0
 
     if-nez p0, :cond_1
 
-    .line 5
     invoke-virtual {v0}, Ljava/io/File;->mkdir()Z
 
-    .line 6
     :cond_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -4503,12 +4185,10 @@
         }
     .end annotation
 
-    .line 13
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 14
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
@@ -4522,10 +4202,8 @@
 
     if-ge v2, v3, :cond_6
 
-    .line 15
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 16
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v3
@@ -4537,7 +4215,6 @@
 
     if-ge v4, v5, :cond_4
 
-    .line 17
     rem-int v5, v4, v3
 
     invoke-interface {v1, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -4548,7 +4225,6 @@
 
     add-int/lit8 v6, v4, 0x1
 
-    .line 18
     rem-int v7, v6, v3
 
     invoke-interface {v1, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -4559,7 +4235,6 @@
 
     if-nez v4, :cond_0
 
-    .line 19
     aget-object v4, p0, v2
 
     add-int/lit8 v8, v2, 0x1
@@ -4576,10 +4251,8 @@
 
     if-eqz v4, :cond_0
 
-    .line 20
     invoke-interface {v0, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 21
     :cond_0
     aget-object v4, p0, v2
 
@@ -4597,7 +4270,6 @@
 
     if-eqz v4, :cond_2
 
-    .line 22
     aget-object v4, p0, v2
 
     array-length v9, p0
@@ -4612,12 +4284,10 @@
 
     if-eqz v4, :cond_1
 
-    .line 23
     invoke-interface {v0, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 24
     :cond_1
     aget-object v4, p0, v2
 
@@ -4637,7 +4307,6 @@
 
     goto :goto_2
 
-    .line 25
     :cond_2
     aget-object v4, p0, v2
 
@@ -4653,7 +4322,6 @@
 
     if-eqz v4, :cond_3
 
-    .line 26
     aget-object v4, p0, v2
 
     array-length v9, p0
@@ -4670,7 +4338,6 @@
 
     invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 27
     invoke-interface {v0, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_3
@@ -4679,13 +4346,11 @@
 
     goto :goto_1
 
-    .line 28
     :cond_4
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
     const/4 v3, 0x0
 
-    .line 29
     :goto_3
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -4693,7 +4358,6 @@
 
     if-ge v3, v4, :cond_5
 
-    .line 30
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -4726,7 +4390,6 @@
 
     aput p0, v1, v2
 
-    .line 8
     invoke-static {v0, v1, v2}, Landroid/opengl/GLES20;->glDeleteTextures(I[II)V
 
     return-void
@@ -4737,39 +4400,31 @@
 
     if-eqz p0, :cond_3
 
-    .line 36
     iget v0, p0, Landroid/graphics/Rect;->left:I
 
     if-ge p1, v0, :cond_0
 
-    .line 37
     iput p1, p0, Landroid/graphics/Rect;->left:I
 
-    .line 38
     :cond_0
     iget v0, p0, Landroid/graphics/Rect;->right:I
 
     if-le p1, v0, :cond_1
 
-    .line 39
     iput p1, p0, Landroid/graphics/Rect;->right:I
 
-    .line 40
     :cond_1
     iget p1, p0, Landroid/graphics/Rect;->top:I
 
     if-le p2, p1, :cond_2
 
-    .line 41
     iput p2, p0, Landroid/graphics/Rect;->top:I
 
-    .line 42
     :cond_2
     iget p1, p0, Landroid/graphics/Rect;->bottom:I
 
     if-ge p2, p1, :cond_3
 
-    .line 43
     iput p2, p0, Landroid/graphics/Rect;->bottom:I
 
     :cond_3
@@ -4779,14 +4434,12 @@
 .method private static b(Landroid/view/View;)V
     .locals 3
 
-    .line 31
     instance-of v0, p0, Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
-    .line 32
     :goto_0
     move-object v0, p0
 
@@ -4798,7 +4451,6 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 33
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
@@ -4812,13 +4464,11 @@
     :cond_0
     return-void
 
-    .line 34
     :cond_1
     instance-of v0, p0, Landroid/widget/TextView;
 
     if-eqz v0, :cond_2
 
-    .line 35
     check-cast p0, Landroid/widget/TextView;
 
     invoke-virtual {p0, v1}, Landroid/widget/TextView;->setHorizontallyScrolling(Z)V
@@ -4830,7 +4480,6 @@
 .method public static b()Z
     .locals 2
 
-    .line 7
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x8
@@ -4879,7 +4528,6 @@
 
     const/4 v0, 0x0
 
-    .line 44
     :try_start_0
     new-instance v1, Ljava/util/ArrayList;
 
@@ -4887,7 +4535,6 @@
 
     const/4 v2, 0x0
 
-    .line 45
     :goto_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -4895,7 +4542,6 @@
 
     if-ge v2, v3, :cond_0
 
-    .line 46
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -4906,7 +4552,6 @@
 
     goto :goto_0
 
-    .line 47
     :cond_0
     invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -4914,14 +4559,12 @@
 
     invoke-interface {v1, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 48
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
     const/4 v2, 0x0
 
-    .line 49
     :goto_1
     invoke-interface {v1}, Ljava/util/List;->size()I
 
@@ -4931,14 +4574,12 @@
 
     add-int/lit8 v3, v2, 0x1
 
-    .line 50
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v4
 
     if-ge v3, v4, :cond_5
 
-    .line 51
     invoke-virtual {p1}, Lcom/amap/api/maps/model/CircleHoleOptions;->getRadius()D
 
     move-result-wide v4
@@ -4965,7 +4606,6 @@
 
     if-gez v9, :cond_4
 
-    .line 52
     invoke-virtual {p1}, Lcom/amap/api/maps/model/CircleHoleOptions;->getRadius()D
 
     move-result-wide v4
@@ -4992,25 +4632,21 @@
 
     goto :goto_3
 
-    .line 53
     :cond_1
     invoke-interface {p0}, Ljava/util/List;->clear()V
 
-    .line 54
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     invoke-interface {p0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 55
     invoke-interface {v1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     invoke-interface {p0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 56
     invoke-virtual {p1}, Lcom/amap/api/maps/model/CircleHoleOptions;->getCenter()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object v2
@@ -5019,7 +4655,6 @@
 
     move-result-object v2
 
-    .line 57
     invoke-virtual {p1}, Lcom/amap/api/maps/model/CircleHoleOptions;->getCenter()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object v4
@@ -5032,7 +4667,6 @@
 
     move-result v2
 
-    .line 58
     invoke-virtual {p1}, Lcom/amap/api/maps/model/CircleHoleOptions;->getRadius()D
 
     move-result-wide v4
@@ -5073,10 +4707,8 @@
 
     const-string v1, "isPolygon2CircleIntersect"
 
-    .line 59
     invoke-static {p0, p1, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 60
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_5
@@ -5101,7 +4733,6 @@
 
     const/4 v1, 0x0
 
-    .line 61
     :goto_0
     :try_start_0
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -5112,7 +4743,6 @@
 
     add-int/lit8 v2, v1, 0x1
 
-    .line 62
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v3
@@ -5121,7 +4751,6 @@
 
     const/4 v3, 0x0
 
-    .line 63
     :goto_1
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -5131,14 +4760,12 @@
 
     add-int/lit8 v4, v3, 0x1
 
-    .line 64
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v5
 
     if-ge v4, v5, :cond_1
 
-    .line 65
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -5190,10 +4817,8 @@
 
     const-string v1, "isSegmentsIntersect"
 
-    .line 66
     invoke-static {p0, p1, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 67
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_2
@@ -5208,7 +4833,6 @@
         }
     .end annotation
 
-    .line 9
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
@@ -5220,7 +4844,6 @@
     :goto_0
     const/4 v3, 0x0
 
-    .line 10
     invoke-virtual {p0, v2, v3, v1}, Ljava/io/InputStream;->read([BII)I
 
     move-result v4
@@ -5229,12 +4852,10 @@
 
     if-eq v4, v5, :cond_0
 
-    .line 11
     invoke-virtual {v0, v2, v3, v4}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
     goto :goto_0
 
-    .line 12
     :cond_0
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
@@ -5246,7 +4867,6 @@
 .method public static c()Z
     .locals 2
 
-    .line 5
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x9
@@ -5275,7 +4895,6 @@
     :cond_0
     const-string v1, "connectivity"
 
-    .line 1
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -5286,7 +4905,6 @@
 
     return v0
 
-    .line 2
     :cond_1
     invoke-virtual {p0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
@@ -5296,7 +4914,6 @@
 
     return v0
 
-    .line 3
     :cond_2
     invoke-virtual {p0}, Landroid/net/NetworkInfo;->getState()Landroid/net/NetworkInfo$State;
 
@@ -5304,7 +4921,6 @@
 
     if-eqz p0, :cond_4
 
-    .line 4
     sget-object v1, Landroid/net/NetworkInfo$State;->DISCONNECTED:Landroid/net/NetworkInfo$State;
 
     if-eq p0, v1, :cond_4
@@ -5328,7 +4944,6 @@
 .method public static d()Z
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xb
@@ -5348,7 +4963,6 @@
 .method public static e()Z
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xc
@@ -5370,13 +4984,11 @@
 
     const-string v0, "5.8.0"
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/p;->e:Lcom/amap/api/col/l3/gh;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/amap/api/col/l3/gh$a;
 
     const-string v2, "3dmap"
@@ -5401,12 +5013,10 @@
 
     move-result-object v2
 
-    .line 3
     invoke-virtual {v1, v2}, Lcom/amap/api/col/l3/gh$a;->a([Ljava/lang/String;)Lcom/amap/api/col/l3/gh$a;
 
     move-result-object v1
 
-    .line 4
     invoke-virtual {v1, v0}, Lcom/amap/api/col/l3/gh$a;->a(Ljava/lang/String;)Lcom/amap/api/col/l3/gh$a;
 
     move-result-object v0
@@ -5419,7 +5029,6 @@
 
     return-object v0
 
-    .line 5
     :cond_0
     sget-object v0, Lcom/amap/api/col/l3/p;->e:Lcom/amap/api/col/l3/gh;
 

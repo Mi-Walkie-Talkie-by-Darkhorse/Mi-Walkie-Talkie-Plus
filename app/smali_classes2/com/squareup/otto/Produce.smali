@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/squareup/otto/Produce;
 .super Ljava/lang/Object;
-.source "Produce.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

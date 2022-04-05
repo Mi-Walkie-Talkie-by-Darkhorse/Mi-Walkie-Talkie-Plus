@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$p;
 .super Ljava/lang/Object;
-.source "ConnectDeviceActivity.java"
 
 # interfaces
 .implements Landroid/widget/AbsListView$OnScrollListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$p;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +42,6 @@
 .method public onScrollStateChanged(Landroid/widget/AbsListView;I)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$p;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->f(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)Landroid/widget/ListView;
@@ -65,7 +62,6 @@
 
     if-nez p2, :cond_1
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$p;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->f(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)Landroid/widget/ListView;
@@ -94,7 +90,6 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$p;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->g(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)Landroid/widget/ImageView;
@@ -107,7 +102,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$p;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 

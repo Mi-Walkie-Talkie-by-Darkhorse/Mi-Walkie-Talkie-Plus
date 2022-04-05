@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/protobuf/Service;
 .super Ljava/lang/Object;
-.source "Service.java"
 
 
 # virtual methods

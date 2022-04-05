@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/lite/d/g/a;
 .super Ljava/lang/Object;
-.source "ApiService.java"
 
 
 # virtual methods

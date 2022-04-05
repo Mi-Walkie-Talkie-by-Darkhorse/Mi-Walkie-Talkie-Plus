@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ii$1;
 .super Ljava/lang/Object;
-.source "MarkInfoManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ii$1;->a:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public final run()V
     .locals 12
 
-    .line 1
     const-class v0, Lcom/amap/api/col/l3/ii;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/ii;->a:Ljava/lang/ref/WeakReference;
 
@@ -51,7 +47,6 @@
 
     move-result-object v1
 
-    .line 3
     iget-object v2, p0, Lcom/amap/api/col/l3/ii$1;->a:Landroid/content/Context;
 
     sget-object v4, Lcom/amap/api/col/l3/gt;->i:Ljava/lang/String;
@@ -66,19 +61,16 @@
 
     invoke-static/range {v2 .. v7}, Lcom/amap/api/col/l3/in;->a(Landroid/content/Context;Lcom/amap/api/col/l3/ig;Ljava/lang/String;IILjava/lang/String;)V
 
-    .line 4
     iget-object v2, v1, Lcom/amap/api/col/l3/ig;->g:Lcom/amap/api/col/l3/iu;
 
     if-nez v2, :cond_0
 
-    .line 5
     iget-object v2, p0, Lcom/amap/api/col/l3/ii$1;->a:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/amap/api/col/l3/ii;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 6
     new-instance v3, Lcom/amap/api/col/l3/ir;
 
     new-instance v10, Lcom/amap/api/col/l3/iq;
@@ -111,7 +103,6 @@
 
     iget-object v11, p0, Lcom/amap/api/col/l3/ii$1;->a:Landroid/content/Context;
 
-    .line 7
     invoke-static {v11}, Lcom/amap/api/col/l3/fw;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v11
@@ -143,10 +134,8 @@
     :cond_0
     const v2, 0xdbba00
 
-    .line 8
     iput v2, v1, Lcom/amap/api/col/l3/ig;->h:I
 
-    .line 9
     iget-object v2, v1, Lcom/amap/api/col/l3/ig;->i:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -157,16 +146,13 @@
 
     const-string v2, "eKey"
 
-    .line 10
     iput-object v2, v1, Lcom/amap/api/col/l3/ig;->i:Ljava/lang/String;
 
-    .line 11
     :cond_1
     iget-object v2, v1, Lcom/amap/api/col/l3/ig;->f:Lcom/amap/api/col/l3/ja;
 
     if-nez v2, :cond_2
 
-    .line 12
     new-instance v2, Lcom/amap/api/col/l3/iz;
 
     iget-object v3, p0, Lcom/amap/api/col/l3/ii$1;->a:Landroid/content/Context;
@@ -193,11 +179,9 @@
 
     iput-object v2, v1, Lcom/amap/api/col/l3/ig;->f:Lcom/amap/api/col/l3/ja;
 
-    .line 13
     :cond_2
     invoke-static {v1}, Lcom/amap/api/col/l3/ih;->a(Lcom/amap/api/col/l3/ig;)V
 
-    .line 14
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

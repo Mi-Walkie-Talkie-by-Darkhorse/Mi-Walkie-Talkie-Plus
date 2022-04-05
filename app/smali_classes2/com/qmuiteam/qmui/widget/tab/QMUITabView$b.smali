@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/tab/QMUITabView$b;
 .super Ljava/lang/Object;
-.source "QMUITabView.java"
 
 
 # annotations

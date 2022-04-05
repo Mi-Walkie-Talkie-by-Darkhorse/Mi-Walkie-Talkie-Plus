@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/widget/NestedScrollView$b;
 .super Ljava/lang/Object;
-.source "NestedScrollView.java"
 
 
 # annotations

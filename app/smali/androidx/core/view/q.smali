@@ -1,6 +1,5 @@
 .class public Landroidx/core/view/q;
 .super Ljava/lang/Object;
-.source "NestedScrollingParentHelper.java"
 
 
 # instance fields
@@ -17,7 +16,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 .method public a()I
     .locals 2
 
-    .line 4
     iget v0, p0, Landroidx/core/view/q;->a:I
 
     iget v1, p0, Landroidx/core/view/q;->b:I
@@ -47,7 +44,6 @@
 
     const/4 v0, 0x0
 
-    .line 5
     invoke-virtual {p0, p1, v0}, Landroidx/core/view/q;->a(Landroid/view/View;I)V
 
     return-void
@@ -66,12 +62,10 @@
 
     if-ne p2, v0, :cond_0
 
-    .line 6
     iput p1, p0, Landroidx/core/view/q;->b:I
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iput p1, p0, Landroidx/core/view/q;->a:I
 
@@ -92,7 +86,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, p2, p3, v0}, Landroidx/core/view/q;->a(Landroid/view/View;Landroid/view/View;II)V
 
     return-void
@@ -113,12 +106,10 @@
 
     if-ne p4, p1, :cond_0
 
-    .line 2
     iput p3, p0, Landroidx/core/view/q;->b:I
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iput p3, p0, Landroidx/core/view/q;->a:I
 

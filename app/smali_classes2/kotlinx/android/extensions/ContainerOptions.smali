@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlinx/android/extensions/ContainerOptions;
 .super Ljava/lang/Object;
-.source "ContainerOptions.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

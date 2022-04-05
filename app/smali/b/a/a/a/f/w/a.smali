@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/f/w/a;
 .super Ljava/lang/Object;
-.source "IShapeRenderer.java"
 
 
 # virtual methods

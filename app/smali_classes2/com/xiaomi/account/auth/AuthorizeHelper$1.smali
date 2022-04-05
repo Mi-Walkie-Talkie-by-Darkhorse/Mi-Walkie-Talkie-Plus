@@ -1,6 +1,5 @@
 .class final Lcom/xiaomi/account/auth/AuthorizeHelper$1;
 .super Ljava/lang/Object;
-.source "AuthorizeHelper.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lorg/apache/http/NameValuePair;
 
     check-cast p2, Lorg/apache/http/NameValuePair;
@@ -56,7 +53,6 @@
 .method public compare(Lorg/apache/http/NameValuePair;Lorg/apache/http/NameValuePair;)I
     .locals 0
 
-    .line 2
     invoke-interface {p1}, Lorg/apache/http/NameValuePair;->getName()Ljava/lang/String;
 
     move-result-object p1

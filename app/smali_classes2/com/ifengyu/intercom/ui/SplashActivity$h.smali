@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/SplashActivity$h;
 .super Ljava/lang/Object;
-.source "SplashActivity.java"
 
 # interfaces
 .implements Lio/reactivex/Observer;
@@ -36,7 +35,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/SplashActivity;Lpl/droidsonroids/gif/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$h;->b:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/SplashActivity$h;->a:Lpl/droidsonroids/gif/c;
@@ -55,7 +53,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v0
@@ -66,7 +63,6 @@
 
     if-lez v4, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/SplashActivity$h;->b:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/SplashActivity;->f(Lcom/ifengyu/intercom/ui/SplashActivity;)Landroid/widget/TextView;
@@ -91,16 +87,13 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$h;->a:Lpl/droidsonroids/gif/c;
 
     if-eqz p1, :cond_1
 
-    .line 4
     invoke-virtual {p1}, Lpl/droidsonroids/gif/c;->pause()V
 
-    .line 5
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$h;->b:Lcom/ifengyu/intercom/ui/SplashActivity;
 
@@ -123,7 +116,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -156,7 +148,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Ljava/lang/Long;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/SplashActivity$h;->a(Ljava/lang/Long;)V
@@ -171,7 +162,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/SplashActivity$h;->b:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/ui/SplashActivity;->a(Lcom/ifengyu/intercom/ui/SplashActivity;Lio/reactivex/disposables/Disposable;)Lio/reactivex/disposables/Disposable;

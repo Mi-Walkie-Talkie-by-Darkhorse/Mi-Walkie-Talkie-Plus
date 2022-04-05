@@ -1,13 +1,11 @@
 .class public Lorg/osmdroid/tileprovider/util/ManifestUtil;
 .super Ljava/lang/Object;
-.source "ManifestUtil.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -20,12 +18,10 @@
 
     const-string v1, "OsmDroid"
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -37,12 +33,10 @@
 
     move-result-object p0
 
-    .line 3
     iget-object v2, p0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
 
     if-nez v2, :cond_0
 
-    .line 4
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -59,7 +53,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object p0, p0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
 
@@ -69,7 +62,6 @@
 
     if-nez p0, :cond_1
 
-    .line 6
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -86,7 +78,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -96,7 +87,6 @@
 
     return-object p0
 
-    .line 8
     :catch_0
     new-instance p0, Ljava/lang/StringBuilder;
 

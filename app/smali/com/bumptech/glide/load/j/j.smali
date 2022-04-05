@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/j/j;
 .super Ljava/lang/Object;
-.source "LazyHeaders.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/h;
@@ -54,10 +53,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
@@ -86,12 +83,10 @@
         }
     .end annotation
 
-    .line 7
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 8
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v1
@@ -101,29 +96,24 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 9
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/bumptech/glide/load/j/i;
 
-    .line 10
     invoke-interface {v3}, Lcom/bumptech/glide/load/j/i;->a()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 11
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 12
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 13
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v3
@@ -134,7 +124,6 @@
 
     const/16 v3, 0x2c
 
-    .line 14
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     :cond_0
@@ -142,7 +131,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -163,12 +151,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/bumptech/glide/load/j/j;->b:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -193,7 +179,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -204,14 +189,12 @@
 
     move-result-object v3
 
-    .line 4
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 5
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -238,21 +221,17 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/j/j;->c:Ljava/util/Map;
 
     if-nez v0, :cond_1
 
-    .line 2
     monitor-enter p0
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/bumptech/glide/load/j/j;->c:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
-    .line 4
     invoke-direct {p0}, Lcom/bumptech/glide/load/j/j;->b()Ljava/util/Map;
 
     move-result-object v0
@@ -263,7 +242,6 @@
 
     iput-object v0, p0, Lcom/bumptech/glide/load/j/j;->c:Ljava/util/Map;
 
-    .line 5
     :cond_0
     monitor-exit p0
 
@@ -278,7 +256,6 @@
 
     throw v0
 
-    .line 6
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/bumptech/glide/load/j/j;->c:Ljava/util/Map;
@@ -289,15 +266,12 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lcom/bumptech/glide/load/j/j;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/bumptech/glide/load/j/j;
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/load/j/j;->b:Ljava/util/Map;
 
     iget-object p1, p1, Lcom/bumptech/glide/load/j/j;->b:Ljava/util/Map;
@@ -317,7 +291,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/j/j;->b:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->hashCode()I
@@ -330,7 +303,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

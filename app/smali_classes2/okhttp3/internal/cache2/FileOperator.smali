@@ -1,6 +1,5 @@
 .class final Lokhttp3/internal/cache2/FileOperator;
 .super Ljava/lang/Object;
-.source "FileOperator.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method constructor <init>(Ljava/nio/channels/FileChannel;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lokhttp3/internal/cache2/FileOperator;->fileChannel:Ljava/nio/channels/FileChannel;
 
     return-void
@@ -41,7 +38,6 @@
 
     if-lez v2, :cond_0
 
-    .line 1
     iget-object v3, p0, Lokhttp3/internal/cache2/FileOperator;->fileChannel:Ljava/nio/channels/FileChannel;
 
     move-wide v4, p1
@@ -63,7 +59,6 @@
     :cond_0
     return-void
 
-    .line 2
     :cond_1
     new-instance p1, Ljava/lang/IndexOutOfBoundsException;
 
@@ -86,7 +81,6 @@
 
     if-ltz v2, :cond_1
 
-    .line 1
     invoke-virtual/range {p3 .. p3}, Lokio/Buffer;->size()J
 
     move-result-wide v2
@@ -106,7 +100,6 @@
 
     move-object v4, p0
 
-    .line 2
     iget-object v5, v4, Lokhttp3/internal/cache2/FileOperator;->fileChannel:Ljava/nio/channels/FileChannel;
 
     move-object/from16 v6, p3
@@ -133,7 +126,6 @@
     :cond_1
     move-object v4, p0
 
-    .line 3
     new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
     invoke-direct {v0}, Ljava/lang/IndexOutOfBoundsException;-><init>()V

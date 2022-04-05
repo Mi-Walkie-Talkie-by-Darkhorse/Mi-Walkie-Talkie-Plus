@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;
 .super Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;
-.source "CacheManager.java"
 
 
 # annotations
@@ -33,10 +32,8 @@
         }
     .end annotation
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
-    .line 4
     invoke-direct/range {p0 .. p7}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;-><init>(Lorg/osmdroid/tileprovider/cachemanager/CacheManager;Landroid/content/Context;Ljava/util/ArrayList;IILorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;Z)V
 
     return-void
@@ -45,10 +42,8 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/cachemanager/CacheManager;Landroid/content/Context;Lorg/osmdroid/util/BoundingBox;IILorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
-    .line 2
     invoke-direct/range {p0 .. p7}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;-><init>(Lorg/osmdroid/tileprovider/cachemanager/CacheManager;Landroid/content/Context;Lorg/osmdroid/util/BoundingBox;IILorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;Z)V
 
     return-void
@@ -59,12 +54,10 @@
 .method protected varargs doInBackground([Ljava/lang/Object;)Ljava/lang/Integer;
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->downloadArea()I
 
     move-result p1
 
-    .line 3
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -75,7 +68,6 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->doInBackground([Ljava/lang/Object;)Ljava/lang/Integer;
 
     move-result-object p1
@@ -88,7 +80,6 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     iget-object v1, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
     iget-object v1, v1, Lorg/osmdroid/tileprovider/cachemanager/CacheManager;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
@@ -105,7 +96,6 @@
 
     if-eqz v1, :cond_24
 
-    .line 2
     iget-object v1, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
     iget-object v1, v1, Lorg/osmdroid/tileprovider/cachemanager/CacheManager;->mTileProvider:Lorg/osmdroid/tileprovider/MapTileProviderBase;
@@ -116,7 +106,6 @@
 
     check-cast v1, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 3
     iget-object v4, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mBB:Lorg/osmdroid/util/BoundingBox;
 
     const/4 v5, 0x2
@@ -125,7 +114,6 @@
 
     if-eqz v4, :cond_6
 
-    .line 4
     iget v2, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mZoomMin:I
 
     const/4 v4, 0x0
@@ -137,7 +125,6 @@
 
     if-gt v2, v8, :cond_5
 
-    .line 5
     iget-object v8, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mBB:Lorg/osmdroid/util/BoundingBox;
 
     invoke-virtual {v8}, Lorg/osmdroid/util/BoundingBox;->getLatSouth()D
@@ -154,7 +141,6 @@
 
     move-result-object v8
 
-    .line 6
     iget-object v9, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mBB:Lorg/osmdroid/util/BoundingBox;
 
     invoke-virtual {v9}, Lorg/osmdroid/util/BoundingBox;->getLatNorth()D
@@ -173,7 +159,6 @@
 
     shl-int v10, v6, v2
 
-    .line 7
     iget v11, v9, Landroid/graphics/Point;->y:I
 
     :goto_1
@@ -181,7 +166,6 @@
 
     if-gt v11, v12, :cond_4
 
-    .line 8
     iget v12, v9, Landroid/graphics/Point;->x:I
 
     :goto_2
@@ -189,22 +173,18 @@
 
     if-gt v12, v13, :cond_3
 
-    .line 9
     invoke-static {v11, v10}, Lorg/osmdroid/util/MyMath;->mod(II)I
 
     move-result v13
 
-    .line 10
     invoke-static {v12, v10}, Lorg/osmdroid/util/MyMath;->mod(II)I
 
     move-result v14
 
-    .line 11
     new-instance v15, Lorg/osmdroid/tileprovider/MapTile;
 
     invoke-direct {v15, v2, v14, v13}, Lorg/osmdroid/tileprovider/MapTile;-><init>(III)V
 
-    .line 12
     iget-object v13, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
     invoke-virtual {v13, v1, v15}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager;->loadTile(Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;Lorg/osmdroid/tileprovider/MapTile;)Z
@@ -218,12 +198,10 @@
     :cond_0
     add-int/lit8 v7, v7, 0x1
 
-    .line 13
     rem-int/lit8 v13, v7, 0xa
 
     if-nez v13, :cond_2
 
-    .line 14
     invoke-virtual/range {p0 .. p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
     move-result v13
@@ -235,7 +213,6 @@
     :cond_1
     new-array v13, v5, [Ljava/lang/Integer;
 
-    .line 15
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v14
@@ -270,18 +247,15 @@
 
     goto/16 :goto_16
 
-    .line 16
     :cond_6
     iget-object v4, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mGeoPoints:Ljava/util/ArrayList;
 
     if-eqz v4, :cond_23
 
-    .line 17
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
 
-    .line 18
     iget v7, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mZoomMin:I
 
     const/4 v8, 0x0
@@ -299,7 +273,6 @@
 
     shl-int v15, v6, v7
 
-    .line 19
     iget-object v12, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mGeoPoints:Ljava/util/ArrayList;
 
     invoke-virtual {v12}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -321,7 +294,6 @@
 
     check-cast v17, Lorg/osmdroid/util/GeoPoint;
 
-    .line 20
     invoke-virtual/range {v17 .. v17}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v12
@@ -334,7 +306,6 @@
 
     if-eqz v8, :cond_18
 
-    .line 21
     invoke-virtual/range {v17 .. v17}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v12
@@ -357,7 +328,6 @@
 
     div-double v12, v12, v20
 
-    .line 22
     invoke-virtual/range {v17 .. v17}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
 
     move-result-wide v20
@@ -372,7 +342,6 @@
 
     const-wide v20, 0x3ff921fb54442d18L    # 1.5707963267948966
 
-    .line 23
     invoke-static {v12, v13}, Ljava/lang/Math;->atan(D)D
 
     move-result-wide v12
@@ -382,7 +351,6 @@
     :cond_7
     const-wide v20, 0x4012d97c7f3321d2L    # 4.71238898038469
 
-    .line 24
     invoke-static {v12, v13}, Ljava/lang/Math;->atan(D)D
 
     move-result-wide v12
@@ -390,7 +358,6 @@
     :goto_5
     sub-double v20, v20, v12
 
-    .line 25
     new-instance v14, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {v8}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
@@ -411,7 +378,6 @@
 
     move/from16 v24, v11
 
-    .line 26
     :goto_6
     invoke-virtual/range {v17 .. v17}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
@@ -437,7 +403,6 @@
 
     if-ltz v13, :cond_9
 
-    .line 27
     :cond_8
     invoke-virtual/range {v17 .. v17}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
@@ -463,7 +428,6 @@
 
     if-lez v13, :cond_17
 
-    .line 28
     :cond_9
     invoke-virtual/range {v17 .. v17}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
 
@@ -489,7 +453,6 @@
 
     if-ltz v13, :cond_b
 
-    .line 29
     :cond_a
     invoke-virtual/range {v17 .. v17}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
 
@@ -515,13 +478,11 @@
 
     if-lez v13, :cond_17
 
-    .line 30
     :cond_b
     new-instance v25, Landroid/graphics/Point;
 
     invoke-direct/range {v25 .. v25}, Landroid/graphics/Point;-><init>()V
 
-    .line 31
     invoke-virtual/range {v17 .. v17}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v9
@@ -538,7 +499,6 @@
 
     invoke-static/range {v9 .. v14}, Lorg/osmdroid/util/TileSystem;->LatLongToPixelXY(DDILandroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 32
     invoke-virtual/range {v26 .. v26}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v9
@@ -551,7 +511,6 @@
 
     div-double/2addr v9, v13
 
-    .line 33
     invoke-virtual/range {v26 .. v26}, Lorg/osmdroid/util/GeoPoint;->getLongitude()D
 
     move-result-wide v27
@@ -560,7 +519,6 @@
 
     div-double v27, v27, v13
 
-    .line 34
     invoke-static {v9, v10}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v29
@@ -597,7 +555,6 @@
 
     move-result-wide v29
 
-    .line 35
     invoke-static/range {v20 .. v21}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v33
@@ -642,17 +599,14 @@
 
     move-object/from16 v9, v26
 
-    .line 36
     invoke-virtual {v9, v5, v6}, Lorg/osmdroid/util/GeoPoint;->setLatitude(D)V
 
     mul-double v27, v27, v13
 
     div-double v5, v27, v11
 
-    .line 37
     invoke-virtual {v9, v5, v6}, Lorg/osmdroid/util/GeoPoint;->setLongitude(D)V
 
-    .line 38
     invoke-virtual {v9}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v5
@@ -665,14 +619,12 @@
 
     move-result-object v5
 
-    .line 39
     invoke-virtual {v5, v3}, Landroid/graphics/Point;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
     if-nez v6, :cond_16
 
-    .line 40
     iget v3, v5, Landroid/graphics/Point;->x:I
 
     if-ltz v3, :cond_c
@@ -684,7 +636,6 @@
     :cond_c
     neg-int v3, v3
 
-    .line 41
     :goto_7
     iget v6, v5, Landroid/graphics/Point;->y:I
 
@@ -697,7 +648,6 @@
     :cond_d
     neg-int v6, v6
 
-    .line 42
     :goto_8
     iget v10, v5, Landroid/graphics/Point;->x:I
 
@@ -714,7 +664,6 @@
 
     if-gt v10, v11, :cond_15
 
-    .line 43
     iget v11, v5, Landroid/graphics/Point;->y:I
 
     add-int/2addr v11, v6
@@ -728,12 +677,10 @@
 
     if-gt v11, v13, :cond_14
 
-    .line 44
     new-instance v12, Landroid/graphics/Point;
 
     invoke-direct {v12, v10, v11}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 45
     invoke-virtual/range {v23 .. v23}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v13
@@ -753,7 +700,6 @@
 
     move/from16 v26, v3
 
-    .line 46
     iget v3, v14, Landroid/graphics/Point;->x:I
 
     iget v14, v14, Landroid/graphics/Point;->y:I
@@ -781,26 +727,22 @@
     :goto_c
     if-nez v3, :cond_13
 
-    .line 47
     iget v3, v12, Landroid/graphics/Point;->y:I
 
     invoke-static {v3, v15}, Lorg/osmdroid/util/MyMath;->mod(II)I
 
     move-result v3
 
-    .line 48
     iget v13, v12, Landroid/graphics/Point;->x:I
 
     invoke-static {v13, v15}, Lorg/osmdroid/util/MyMath;->mod(II)I
 
     move-result v13
 
-    .line 49
     new-instance v14, Lorg/osmdroid/tileprovider/MapTile;
 
     invoke-direct {v14, v7, v13, v3}, Lorg/osmdroid/tileprovider/MapTile;-><init>(III)V
 
-    .line 50
     iget-object v3, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
     invoke-virtual {v3, v1, v14}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager;->loadTile(Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;Lorg/osmdroid/tileprovider/MapTile;)Z
@@ -814,12 +756,10 @@
     :cond_10
     add-int/lit8 v24, v24, 0x1
 
-    .line 51
     rem-int/lit8 v3, v24, 0xa
 
     if-nez v3, :cond_12
 
-    .line 52
     invoke-virtual/range {p0 .. p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
     move-result v3
@@ -833,7 +773,6 @@
 
     new-array v13, v3, [Ljava/lang/Integer;
 
-    .line 53
     invoke-static/range {v24 .. v24}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -860,7 +799,6 @@
     :goto_d
     move-object/from16 v13, v23
 
-    .line 54
     invoke-virtual {v13, v14, v12}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
     goto :goto_e
@@ -923,7 +861,6 @@
     :cond_1a
     move-object v13, v4
 
-    .line 55
     invoke-virtual/range {v17 .. v17}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v3
@@ -936,7 +873,6 @@
 
     move-result-object v9
 
-    .line 56
     iget v3, v9, Landroid/graphics/Point;->x:I
 
     if-ltz v3, :cond_1b
@@ -950,7 +886,6 @@
 
     move v14, v3
 
-    .line 57
     :goto_10
     iget v3, v9, Landroid/graphics/Point;->y:I
 
@@ -963,7 +898,6 @@
     :cond_1c
     neg-int v3, v3
 
-    .line 58
     :goto_11
     iget v4, v9, Landroid/graphics/Point;->x:I
 
@@ -980,7 +914,6 @@
 
     if-gt v4, v5, :cond_19
 
-    .line 59
     iget v5, v9, Landroid/graphics/Point;->y:I
 
     add-int/2addr v5, v3
@@ -994,19 +927,16 @@
 
     if-gt v5, v8, :cond_20
 
-    .line 60
     new-instance v6, Landroid/graphics/Point;
 
     invoke-direct {v6, v4, v5}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 61
     iget v8, v6, Landroid/graphics/Point;->y:I
 
     invoke-static {v8, v15}, Lorg/osmdroid/util/MyMath;->mod(II)I
 
     move-result v8
 
-    .line 62
     iget v12, v6, Landroid/graphics/Point;->x:I
 
     invoke-static {v12, v15}, Lorg/osmdroid/util/MyMath;->mod(II)I
@@ -1015,12 +945,10 @@
 
     move/from16 v18, v3
 
-    .line 63
     new-instance v3, Lorg/osmdroid/tileprovider/MapTile;
 
     invoke-direct {v3, v7, v12, v8}, Lorg/osmdroid/tileprovider/MapTile;-><init>(III)V
 
-    .line 64
     iget-object v8, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
     invoke-virtual {v8, v1, v3}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager;->loadTile(Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;Lorg/osmdroid/tileprovider/MapTile;)Z
@@ -1034,12 +962,10 @@
     :cond_1d
     add-int/lit8 v11, v11, 0x1
 
-    .line 65
     rem-int/lit8 v3, v11, 0xa
 
     if-nez v3, :cond_1f
 
-    .line 66
     invoke-virtual/range {p0 .. p0}, Landroid/os/AsyncTask;->isCancelled()Z
 
     move-result v3
@@ -1053,7 +979,6 @@
 
     new-array v8, v3, [Ljava/lang/Integer;
 
-    .line 67
     invoke-static {v11}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v12
@@ -1079,7 +1004,6 @@
 
     const/16 v19, 0x1
 
-    .line 68
     :goto_14
     invoke-virtual {v13, v3, v6}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
@@ -1131,7 +1055,6 @@
     :cond_22
     move-object v13, v4
 
-    .line 69
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1169,7 +1092,6 @@
     :cond_24
     const-string v1, "TileSource is not an online tile source"
 
-    .line 70
     invoke-static {v2, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 v1, 0x0
@@ -1180,19 +1102,16 @@
 .method protected onPostExecute(Ljava/lang/Integer;)V
     .locals 3
 
-    .line 2
     iget-boolean v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->showUI:Z
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mCtx:Landroid/content/Context;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1221,7 +1140,6 @@
 
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mProgressDialog:Landroid/app/ProgressDialog;
 
@@ -1231,18 +1149,15 @@
 
     if-eqz v0, :cond_1
 
-    .line 6
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mProgressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v0}, Landroid/app/ProgressDialog;->dismiss()V
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->callback:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;
 
     if-eqz v0, :cond_3
 
-    .line 8
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
@@ -1250,14 +1165,12 @@
 
     if-nez v0, :cond_2
 
-    .line 9
     iget-object p1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->callback:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;
 
     invoke-interface {p1}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;->onTaskComplete()V
 
     goto :goto_0
 
-    .line 10
     :cond_2
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->callback:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;
 
@@ -1278,10 +1191,8 @@
 
     const-string v1, "Error caught processing cachemanager callback, your implementation is faulty"
 
-    .line 11
     invoke-static {v0, v1, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 12
     :cond_3
     :goto_0
     iget-object p1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
@@ -1296,7 +1207,6 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->onPostExecute(Ljava/lang/Integer;)V
@@ -1307,15 +1217,12 @@
 .method protected onPreExecute()V
     .locals 5
 
-    .line 1
     invoke-super {p0}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->onPreExecute()V
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mBB:Lorg/osmdroid/util/BoundingBox;
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
     iget v2, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mZoomMin:I
@@ -1328,13 +1235,11 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mGeoPoints:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_1
 
-    .line 5
     iget-object v1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
     iget v2, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mZoomMin:I
@@ -1350,20 +1255,17 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 6
     :goto_0
     iget-boolean v1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->showUI:Z
 
     if-eqz v1, :cond_2
 
-    .line 7
     iget-object v1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mProgressDialog:Landroid/app/ProgressDialog;
 
     const-string v2, "Downloading tiles"
 
     invoke-virtual {v1, v2}, Landroid/app/ProgressDialog;->setTitle(Ljava/lang/CharSequence;)V
 
-    .line 8
     iget-object v1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mProgressDialog:Landroid/app/ProgressDialog;
 
     iget-object v2, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$DownloadingTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
@@ -1378,27 +1280,22 @@
 
     invoke-virtual {v1, v2}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 9
     iget-object v1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mProgressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v1, v0}, Landroid/app/ProgressDialog;->setMax(I)V
 
-    .line 10
     iget-object v1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mProgressDialog:Landroid/app/ProgressDialog;
 
     invoke-virtual {v1}, Landroid/app/ProgressDialog;->show()V
 
-    .line 11
     :cond_2
     iget-object v1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->callback:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;
 
     if-eqz v1, :cond_3
 
-    .line 12
     :try_start_0
     invoke-interface {v1, v0}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;->setPossibleTilesInArea(I)V
 
-    .line 13
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->callback:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;
 
     invoke-interface {v0}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;->downloadStarted()V
@@ -1414,7 +1311,6 @@
 
     const-string v2, "Error caught processing cachemanager callback, your implementation is faulty"
 
-    .line 14
     invoke-static {v1, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_3

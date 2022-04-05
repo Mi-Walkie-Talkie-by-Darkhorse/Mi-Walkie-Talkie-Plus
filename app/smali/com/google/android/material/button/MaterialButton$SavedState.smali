@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/button/MaterialButton$SavedState;
 .super Landroidx/customview/view/AbsSavedState;
-.source "MaterialButton.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/material/button/MaterialButton$SavedState$1;
 
     invoke-direct {v0}, Lcom/google/android/material/button/MaterialButton$SavedState$1;-><init>()V
@@ -51,17 +49,14 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-direct {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;-><init>(Landroid/os/Parcel;Ljava/lang/ClassLoader;)V
 
     if-nez p2, :cond_0
 
-    .line 3
     const-class p2, Lcom/google/android/material/button/MaterialButton$SavedState;
 
     invoke-virtual {p2}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
-    .line 4
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/android/material/button/MaterialButton$SavedState;->readFromParcel(Landroid/os/Parcel;)V
 
@@ -71,7 +66,6 @@
 .method public constructor <init>(Landroid/os/Parcelable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/customview/view/AbsSavedState;-><init>(Landroid/os/Parcelable;)V
 
     return-void
@@ -84,7 +78,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
@@ -113,10 +106,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/customview/view/AbsSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 2
     iget-boolean p2, p0, Lcom/google/android/material/button/MaterialButton$SavedState;->checked:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/arch/c;
 .super Ljava/lang/Object;
-.source "QMUIFragmentContainerProvider.java"
 
 
 # virtual methods

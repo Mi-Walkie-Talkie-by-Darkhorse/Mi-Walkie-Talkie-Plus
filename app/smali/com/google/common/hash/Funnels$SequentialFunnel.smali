@@ -1,6 +1,5 @@
 .class Lcom/google/common/hash/Funnels$SequentialFunnel;
 .super Ljava/lang/Object;
-.source "Funnels.java"
 
 # interfaces
 .implements Lcom/google/common/hash/Funnel;
@@ -53,10 +52,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -77,15 +74,12 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Lcom/google/common/hash/Funnels$SequentialFunnel;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/common/hash/Funnels$SequentialFunnel;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/hash/Funnels$SequentialFunnel;->elementFunnel:Lcom/google/common/hash/Funnel;
 
     iget-object p1, p1, Lcom/google/common/hash/Funnels$SequentialFunnel;->elementFunnel:Lcom/google/common/hash/Funnel;
@@ -114,7 +108,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -130,7 +123,6 @@
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/hash/Funnels$SequentialFunnel;->elementFunnel:Lcom/google/common/hash/Funnel;
 
     invoke-interface {v1, v0, p2}, Lcom/google/common/hash/Funnel;->funnel(Ljava/lang/Object;Lcom/google/common/hash/PrimitiveSink;)V
@@ -144,7 +136,6 @@
 .method public bridge synthetic funnel(Ljava/lang/Object;Lcom/google/common/hash/PrimitiveSink;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Iterable;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/common/hash/Funnels$SequentialFunnel;->funnel(Ljava/lang/Iterable;Lcom/google/common/hash/PrimitiveSink;)V
@@ -155,7 +146,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     const-class v0, Lcom/google/common/hash/Funnels$SequentialFunnel;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -176,7 +166,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/hash/Funnels$SequentialFunnel;->elementFunnel:Lcom/google/common/hash/Funnel;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/maps/SwipeDismissTouchListener$DismissCallbacks;
 .super Ljava/lang/Object;
-.source "SwipeDismissTouchListener.java"
 
 
 # annotations

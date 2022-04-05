@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/jj;
 .super Ljava/lang/Object;
-.source "CellAgeEstimator.java"
 
 
 # instance fields
@@ -22,10 +21,8 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -34,7 +31,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 3
     iput-wide v0, p0, Lcom/amap/api/col/l3/jj;->b:J
 
     return-void
@@ -71,18 +67,15 @@
 
     if-eqz p1, :cond_5
 
-    .line 1
     iget-boolean v2, p1, Lcom/amap/api/col/l3/jk;->p:Z
 
     if-nez v2, :cond_0
 
     goto :goto_1
 
-    .line 2
     :cond_0
     iget-object v2, p0, Lcom/amap/api/col/l3/jj;->a:Ljava/util/HashMap;
 
-    .line 3
     iget v3, p1, Lcom/amap/api/col/l3/jk;->k:I
 
     const/4 v4, 0x1
@@ -105,7 +98,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget v3, p1, Lcom/amap/api/col/l3/jk;->h:I
 
@@ -117,7 +109,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     iget v3, p1, Lcom/amap/api/col/l3/jk;->c:I
 
@@ -127,7 +118,6 @@
 
     move-result-wide v3
 
-    .line 6
     :goto_0
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -141,14 +131,12 @@
 
     if-nez v5, :cond_3
 
-    .line 7
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v5
 
     iput-wide v5, p1, Lcom/amap/api/col/l3/jk;->m:J
 
-    .line 8
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v3
@@ -157,7 +145,6 @@
 
     return-wide v0
 
-    .line 9
     :cond_3
     iget v6, v5, Lcom/amap/api/col/l3/jk;->j:I
 
@@ -165,14 +152,12 @@
 
     if-eq v6, v7, :cond_4
 
-    .line 10
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v5
 
     iput-wide v5, p1, Lcom/amap/api/col/l3/jk;->m:J
 
-    .line 11
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v3
@@ -181,20 +166,17 @@
 
     return-wide v0
 
-    .line 12
     :cond_4
     iget-wide v0, v5, Lcom/amap/api/col/l3/jk;->m:J
 
     iput-wide v0, p1, Lcom/amap/api/col/l3/jk;->m:J
 
-    .line 13
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0
 
     invoke-virtual {v2, v0, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 14
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v0
@@ -215,14 +197,12 @@
 .method public final a()V
     .locals 2
 
-    .line 37
     iget-object v0, p0, Lcom/amap/api/col/l3/jj;->a:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
 
     const-wide/16 v0, 0x0
 
-    .line 38
     iput-wide v0, p0, Lcom/amap/api/col/l3/jj;->b:J
 
     return-void
@@ -242,12 +222,10 @@
 
     if-eqz p1, :cond_a
 
-    .line 15
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v0
 
-    .line 16
     iget-wide v2, p0, Lcom/amap/api/col/l3/jj;->b:J
 
     const-wide/16 v4, 0x0
@@ -266,11 +244,9 @@
 
     return-void
 
-    .line 17
     :cond_0
     iget-object v2, p0, Lcom/amap/api/col/l3/jj;->a:Ljava/util/HashMap;
 
-    .line 18
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result v3
@@ -290,19 +266,16 @@
 
     if-ge v7, v3, :cond_5
 
-    .line 19
     invoke-virtual {p1, v7}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v12
 
     check-cast v12, Lcom/amap/api/col/l3/jk;
 
-    .line 20
     iget-boolean v13, v12, Lcom/amap/api/col/l3/jk;->p:Z
 
     if-eqz v13, :cond_4
 
-    .line 21
     iget v13, v12, Lcom/amap/api/col/l3/jk;->k:I
 
     if-eq v13, v11, :cond_2
@@ -315,7 +288,6 @@
 
     goto :goto_1
 
-    .line 22
     :cond_1
     iget v4, v12, Lcom/amap/api/col/l3/jk;->h:I
 
@@ -327,7 +299,6 @@
 
     goto :goto_1
 
-    .line 23
     :cond_2
     iget v4, v12, Lcom/amap/api/col/l3/jk;->c:I
 
@@ -337,7 +308,6 @@
 
     move-result-wide v4
 
-    .line 24
     :goto_1
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -351,21 +321,18 @@
 
     if-eqz v8, :cond_4
 
-    .line 25
     iget v9, v8, Lcom/amap/api/col/l3/jk;->j:I
 
     iget v10, v12, Lcom/amap/api/col/l3/jk;->j:I
 
     if-ne v9, v10, :cond_3
 
-    .line 26
     iget-wide v8, v8, Lcom/amap/api/col/l3/jk;->m:J
 
     iput-wide v8, v12, Lcom/amap/api/col/l3/jk;->m:J
 
     goto :goto_2
 
-    .line 27
     :cond_3
     iput-wide v0, v12, Lcom/amap/api/col/l3/jk;->m:J
 
@@ -375,11 +342,9 @@
 
     goto :goto_0
 
-    .line 28
     :cond_5
     invoke-virtual {v2}, Ljava/util/HashMap;->clear()V
 
-    .line 29
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
     move-result v3
@@ -387,19 +352,16 @@
     :goto_3
     if-ge v6, v3, :cond_9
 
-    .line 30
     invoke-virtual {p1, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
     check-cast v7, Lcom/amap/api/col/l3/jk;
 
-    .line 31
     iget-boolean v12, v7, Lcom/amap/api/col/l3/jk;->p:Z
 
     if-eqz v12, :cond_8
 
-    .line 32
     iget v12, v7, Lcom/amap/api/col/l3/jk;->k:I
 
     if-eq v12, v11, :cond_7
@@ -412,7 +374,6 @@
 
     goto :goto_4
 
-    .line 33
     :cond_6
     iget v4, v7, Lcom/amap/api/col/l3/jk;->h:I
 
@@ -424,7 +385,6 @@
 
     goto :goto_4
 
-    .line 34
     :cond_7
     iget v4, v7, Lcom/amap/api/col/l3/jk;->c:I
 
@@ -434,7 +394,6 @@
 
     move-result-wide v4
 
-    .line 35
     :goto_4
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -447,7 +406,6 @@
 
     goto :goto_3
 
-    .line 36
     :cond_9
     iput-wide v0, p0, Lcom/amap/api/col/l3/jj;->b:J
 

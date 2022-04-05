@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/maps/offlinemap/OfflineMapManager$2;
 .super Ljava/lang/Object;
-.source "OfflineMapManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/maps/offlinemap/OfflineMapManager;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager$2;->b:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     iput-object p2, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager$2;->a:Ljava/lang/String;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/offlinemap/OfflineMapManager$2;->b:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
@@ -63,7 +60,6 @@
 
     const-string v2, "downloadByProvinceName"
 
-    .line 2
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

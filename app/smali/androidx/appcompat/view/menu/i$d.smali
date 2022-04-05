@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/view/menu/i$d;
 .super Ljava/lang/Object;
-.source "MenuItemWrapperICS.java"
 
 # interfaces
 .implements Landroid/view/MenuItem$OnActionExpandListener;
@@ -27,12 +26,10 @@
 .method constructor <init>(Landroidx/appcompat/view/menu/i;Landroid/view/MenuItem$OnActionExpandListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/i$d;->b:Landroidx/appcompat/view/menu/i;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Landroidx/appcompat/view/menu/i$d;->a:Landroid/view/MenuItem$OnActionExpandListener;
 
     return-void
@@ -43,7 +40,6 @@
 .method public onMenuItemActionCollapse(Landroid/view/MenuItem;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/i$d;->a:Landroid/view/MenuItem$OnActionExpandListener;
 
     iget-object v1, p0, Landroidx/appcompat/view/menu/i$d;->b:Landroidx/appcompat/view/menu/i;
@@ -62,7 +58,6 @@
 .method public onMenuItemActionExpand(Landroid/view/MenuItem;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/i$d;->a:Landroid/view/MenuItem$OnActionExpandListener;
 
     iget-object v1, p0, Landroidx/appcompat/view/menu/i$d;->b:Landroidx/appcompat/view/menu/i;

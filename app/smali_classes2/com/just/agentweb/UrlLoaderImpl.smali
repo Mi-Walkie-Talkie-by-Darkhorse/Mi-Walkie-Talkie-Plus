@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/UrlLoaderImpl;
 .super Ljava/lang/Object;
-.source "UrlLoaderImpl.java"
 
 # interfaces
 .implements Lcom/just/agentweb/IUrlLoader;
@@ -28,40 +27,33 @@
 .method constructor <init>(Landroid/webkit/WebView;Lcom/just/agentweb/HttpHeaders;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHandler:Landroid/os/Handler;
 
-    .line 3
     iput-object p1, p0, Lcom/just/agentweb/UrlLoaderImpl;->mWebView:Landroid/webkit/WebView;
 
     if-nez p1, :cond_0
 
-    .line 4
     new-instance p1, Ljava/lang/NullPointerException;
 
     const-string v0, "webview cannot be null ."
 
     invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
-    .line 5
     :cond_0
     iput-object p2, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHttpHeaders:Lcom/just/agentweb/HttpHeaders;
 
     if-nez p2, :cond_1
 
-    .line 6
     invoke-static {}, Lcom/just/agentweb/HttpHeaders;->create()Lcom/just/agentweb/HttpHeaders;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHttpHeaders:Lcom/just/agentweb/HttpHeaders;
 
-    .line 7
     :cond_1
     new-instance p1, Landroid/os/Handler;
 
@@ -79,7 +71,6 @@
 .method private safeLoadUrl(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/just/agentweb/UrlLoaderImpl$1;
@@ -94,7 +85,6 @@
 .method private safeReload()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/just/agentweb/UrlLoaderImpl$2;
@@ -111,7 +101,6 @@
 .method public getHttpHeaders()Lcom/just/agentweb/HttpHeaders;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHttpHeaders:Lcom/just/agentweb/HttpHeaders;
 
     if-nez v0, :cond_0
@@ -129,14 +118,12 @@
 .method public loadData(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/just/agentweb/AgentWebUtils;->isUIThread()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/just/agentweb/UrlLoaderImpl$5;
@@ -147,7 +134,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mWebView:Landroid/webkit/WebView;
 
@@ -159,14 +145,12 @@
 .method public loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 9
 
-    .line 1
     invoke-static {}, Lcom/just/agentweb/AgentWebUtils;->isUIThread()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHandler:Landroid/os/Handler;
 
     new-instance v8, Lcom/just/agentweb/UrlLoaderImpl$7;
@@ -191,7 +175,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lcom/just/agentweb/UrlLoaderImpl;->mWebView:Landroid/webkit/WebView;
 
@@ -213,7 +196,6 @@
 .method public loadUrl(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHttpHeaders:Lcom/just/agentweb/HttpHeaders;
 
     invoke-virtual {v0, p1}, Lcom/just/agentweb/HttpHeaders;->getHeaders(Ljava/lang/String;)Ljava/util/Map;
@@ -238,21 +220,18 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/just/agentweb/AgentWebUtils;->isUIThread()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Lcom/just/agentweb/UrlLoaderImpl$3;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/just/agentweb/UrlLoaderImpl$3;-><init>(Lcom/just/agentweb/UrlLoaderImpl;Ljava/lang/String;Ljava/util/Map;)V
 
     invoke-static {v0}, Lcom/just/agentweb/AgentWebUtils;->runInUiThread(Ljava/lang/Runnable;)V
 
-    .line 4
     :cond_0
     sget-object v0, Lcom/just/agentweb/UrlLoaderImpl;->TAG:Ljava/lang/String;
 
@@ -280,7 +259,6 @@
 
     if-eqz p2, :cond_2
 
-    .line 5
     invoke-interface {p2}, Ljava/util/Map;->isEmpty()Z
 
     move-result v0
@@ -289,7 +267,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mWebView:Landroid/webkit/WebView;
 
@@ -297,7 +274,6 @@
 
     goto :goto_1
 
-    .line 7
     :cond_2
     :goto_0
     iget-object p2, p0, Lcom/just/agentweb/UrlLoaderImpl;->mWebView:Landroid/webkit/WebView;
@@ -311,14 +287,12 @@
 .method public postUrl(Ljava/lang/String;[B)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/just/agentweb/AgentWebUtils;->isUIThread()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/just/agentweb/UrlLoaderImpl$8;
@@ -329,7 +303,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mWebView:Landroid/webkit/WebView;
 
@@ -341,14 +314,12 @@
 .method public reload()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/just/agentweb/AgentWebUtils;->isUIThread()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/just/agentweb/UrlLoaderImpl$4;
@@ -359,7 +330,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mWebView:Landroid/webkit/WebView;
 
@@ -371,14 +341,12 @@
 .method public stopLoading()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/just/agentweb/AgentWebUtils;->isUIThread()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/just/agentweb/UrlLoaderImpl$6;
@@ -389,7 +357,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl;->mWebView:Landroid/webkit/WebView;
 

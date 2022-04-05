@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;
 .super Lorg/osmdroid/util/GeoPoint;
-.source "LabelledGeoPoint.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint$1;
 
     invoke-direct {v0}, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint$1;-><init>()V
@@ -36,7 +34,6 @@
 .method public constructor <init>(DD)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p1, p2, p3, p4}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
     return-void
@@ -45,7 +42,6 @@
 .method public constructor <init>(DDD)V
     .locals 0
 
-    .line 5
     invoke-direct/range {p0 .. p6}, Lorg/osmdroid/util/GeoPoint;-><init>(DDD)V
 
     return-void
@@ -54,10 +50,8 @@
 .method public constructor <init>(DDDLjava/lang/String;)V
     .locals 0
 
-    .line 6
     invoke-direct/range {p0 .. p6}, Lorg/osmdroid/util/GeoPoint;-><init>(DDD)V
 
-    .line 7
     iput-object p7, p0, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;->mLabel:Ljava/lang/String;
 
     return-void
@@ -66,10 +60,8 @@
 .method public constructor <init>(DDLjava/lang/String;)V
     .locals 0
 
-    .line 10
     invoke-direct {p0, p1, p2, p3, p4}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
-    .line 11
     iput-object p5, p0, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;->mLabel:Ljava/lang/String;
 
     return-void
@@ -78,7 +70,6 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lorg/osmdroid/util/GeoPoint;-><init>(II)V
 
     return-void
@@ -87,7 +78,6 @@
 .method public constructor <init>(III)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Lorg/osmdroid/util/GeoPoint;-><init>(III)V
 
     return-void
@@ -96,7 +86,6 @@
 .method public constructor <init>(Landroid/location/Location;)V
     .locals 0
 
-    .line 8
     invoke-direct {p0, p1}, Lorg/osmdroid/util/GeoPoint;-><init>(Landroid/location/Location;)V
 
     return-void
@@ -105,7 +94,6 @@
 .method private constructor <init>(Landroid/os/Parcel;)V
     .locals 7
 
-    .line 15
     invoke-virtual {p1}, Landroid/os/Parcel;->readDouble()D
 
     move-result-wide v1
@@ -122,7 +110,6 @@
 
     invoke-direct/range {v0 .. v6}, Lorg/osmdroid/util/GeoPoint;-><init>(DDD)V
 
-    .line 16
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
@@ -135,7 +122,6 @@
 .method synthetic constructor <init>(Landroid/os/Parcel;Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;-><init>(Landroid/os/Parcel;)V
 
     return-void
@@ -144,7 +130,6 @@
 .method public constructor <init>(Lorg/osmdroid/util/GeoPoint;)V
     .locals 0
 
-    .line 9
     invoke-direct {p0, p1}, Lorg/osmdroid/util/GeoPoint;-><init>(Lorg/osmdroid/util/GeoPoint;)V
 
     return-void
@@ -153,7 +138,6 @@
 .method public constructor <init>(Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;)V
     .locals 8
 
-    .line 12
     invoke-virtual {p1}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v1
@@ -162,7 +146,6 @@
 
     move-result-wide v3
 
-    .line 13
     invoke-virtual {p1}, Lorg/osmdroid/util/GeoPoint;->getAltitude()D
 
     move-result-wide v5
@@ -173,7 +156,6 @@
 
     move-object v0, p0
 
-    .line 14
     invoke-direct/range {v0 .. v7}, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;-><init>(DDDLjava/lang/String;)V
 
     return-void
@@ -189,7 +171,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;->clone()Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;
 
     move-result-object v0
@@ -200,7 +181,6 @@
 .method public bridge synthetic clone()Lorg/osmdroid/util/GeoPoint;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;->clone()Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;
 
     move-result-object v0
@@ -211,7 +191,6 @@
 .method public clone()Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;
     .locals 9
 
-    .line 3
     new-instance v8, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;
 
     invoke-virtual {p0}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
@@ -238,7 +217,6 @@
 .method public getLabel()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;->mLabel:Ljava/lang/String;
 
     return-object v0
@@ -247,7 +225,6 @@
 .method public setLabel(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;->mLabel:Ljava/lang/String;
 
     return-void
@@ -256,10 +233,8 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Lorg/osmdroid/util/GeoPoint;->writeToParcel(Landroid/os/Parcel;I)V
 
-    .line 2
     iget-object p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;->mLabel:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V

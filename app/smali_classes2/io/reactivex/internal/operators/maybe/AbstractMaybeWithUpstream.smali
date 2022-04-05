@@ -1,6 +1,5 @@
 .class abstract Lio/reactivex/internal/operators/maybe/AbstractMaybeWithUpstream;
 .super Lio/reactivex/Maybe;
-.source "AbstractMaybeWithUpstream.java"
 
 # interfaces
 .implements Lio/reactivex/internal/fuseable/HasUpstreamMaybeSource;
@@ -44,10 +43,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Maybe;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/maybe/AbstractMaybeWithUpstream;->source:Lio/reactivex/MaybeSource;
 
     return-void
@@ -65,7 +62,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/maybe/AbstractMaybeWithUpstream;->source:Lio/reactivex/MaybeSource;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class public Landroidx/core/app/NotificationCompat$b;
 .super Ljava/lang/Object;
-.source "NotificationCompat.java"
 
 
 # annotations
@@ -180,7 +179,6 @@
 
     const/4 v0, 0x0
 
-    .line 19
     invoke-direct {p0, p1, v0}, Landroidx/core/app/NotificationCompat$b;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 
     return-void
@@ -197,24 +195,20 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/core/app/NotificationCompat$b;->b:Ljava/util/ArrayList;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/core/app/NotificationCompat$b;->c:Ljava/util/ArrayList;
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -223,64 +217,50 @@
 
     const/4 v0, 0x1
 
-    .line 5
     iput-boolean v0, p0, Landroidx/core/app/NotificationCompat$b;->n:Z
 
     const/4 v1, 0x0
 
-    .line 6
     iput-boolean v1, p0, Landroidx/core/app/NotificationCompat$b;->z:Z
 
-    .line 7
     iput v1, p0, Landroidx/core/app/NotificationCompat$b;->E:I
 
-    .line 8
     iput v1, p0, Landroidx/core/app/NotificationCompat$b;->F:I
 
-    .line 9
     iput v1, p0, Landroidx/core/app/NotificationCompat$b;->L:I
 
-    .line 10
     iput v1, p0, Landroidx/core/app/NotificationCompat$b;->P:I
 
-    .line 11
     new-instance v2, Landroid/app/Notification;
 
     invoke-direct {v2}, Landroid/app/Notification;-><init>()V
 
     iput-object v2, p0, Landroidx/core/app/NotificationCompat$b;->S:Landroid/app/Notification;
 
-    .line 12
     iput-object p1, p0, Landroidx/core/app/NotificationCompat$b;->a:Landroid/content/Context;
 
-    .line 13
     iput-object p2, p0, Landroidx/core/app/NotificationCompat$b;->K:Ljava/lang/String;
 
-    .line 14
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide p1
 
     iput-wide p1, v2, Landroid/app/Notification;->when:J
 
-    .line 15
     iget-object p1, p0, Landroidx/core/app/NotificationCompat$b;->S:Landroid/app/Notification;
 
     const/4 p2, -0x1
 
     iput p2, p1, Landroid/app/Notification;->audioStreamType:I
 
-    .line 16
     iput v1, p0, Landroidx/core/app/NotificationCompat$b;->m:I
 
-    .line 17
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Landroidx/core/app/NotificationCompat$b;->V:Ljava/util/ArrayList;
 
-    .line 18
     iput-boolean v0, p0, Landroidx/core/app/NotificationCompat$b;->Q:Z
 
     return-void
@@ -291,7 +271,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 19
     iget-object p2, p0, Landroidx/core/app/NotificationCompat$b;->S:Landroid/app/Notification;
 
     iget v0, p2, Landroid/app/Notification;->flags:I
@@ -302,7 +281,6 @@
 
     goto :goto_0
 
-    .line 20
     :cond_0
     iget-object p2, p0, Landroidx/core/app/NotificationCompat$b;->S:Landroid/app/Notification;
 
@@ -329,7 +307,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1b
@@ -338,7 +315,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$b;->a:Landroid/content/Context;
 
@@ -346,23 +322,18 @@
 
     move-result-object v0
 
-    .line 4
     sget v1, Landroidx/core/R$dimen;->compat_notification_large_icon_max_width:I
 
-    .line 5
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v1
 
-    .line 6
     sget v2, Landroidx/core/R$dimen;->compat_notification_large_icon_max_height:I
 
-    .line 7
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result v0
 
-    .line 8
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v2
@@ -380,7 +351,6 @@
     :cond_1
     int-to-double v1, v1
 
-    .line 9
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v3
@@ -397,7 +367,6 @@
 
     int-to-double v5, v0
 
-    .line 10
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v0
@@ -410,12 +379,10 @@
 
     div-double/2addr v5, v7
 
-    .line 11
     invoke-static {v1, v2, v5, v6}, Ljava/lang/Math;->min(DD)D
 
     move-result-wide v0
 
-    .line 12
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v2
@@ -430,7 +397,6 @@
 
     double-to-int v2, v2
 
-    .line 13
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v3
@@ -445,7 +411,6 @@
 
     double-to-int v0, v0
 
-    .line 14
     invoke-static {p1, v2, v0, v4}, Landroid/graphics/Bitmap;->createScaledBitmap(Landroid/graphics/Bitmap;IIZ)Landroid/graphics/Bitmap;
 
     move-result-object p1
@@ -468,7 +433,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
@@ -480,7 +444,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-interface {p0, v0, v1}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
 
     move-result-object p0
@@ -496,7 +459,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 21
     new-instance v0, Landroidx/core/app/h;
 
     invoke-direct {v0, p0}, Landroidx/core/app/h;-><init>(Landroidx/core/app/NotificationCompat$b;)V
@@ -513,7 +475,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$b;->S:Landroid/app/Notification;
 
     iput p1, v0, Landroid/app/Notification;->icon:I
@@ -526,13 +487,10 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 4
     iput p1, p0, Landroidx/core/app/NotificationCompat$b;->t:I
 
-    .line 5
     iput p2, p0, Landroidx/core/app/NotificationCompat$b;->u:I
 
-    .line 6
     iput-boolean p3, p0, Landroidx/core/app/NotificationCompat$b;->v:Z
 
     return-object p0
@@ -543,7 +501,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$b;->S:Landroid/app/Notification;
 
     iput-wide p1, v0, Landroid/app/Notification;->when:J
@@ -560,7 +517,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 8
     iput-object p1, p0, Landroidx/core/app/NotificationCompat$b;->g:Landroid/app/PendingIntent;
 
     return-object p0
@@ -575,7 +531,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 9
     invoke-direct {p0, p1}, Landroidx/core/app/NotificationCompat$b;->b(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     move-result-object p1
@@ -594,43 +549,36 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 10
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$b;->S:Landroid/app/Notification;
 
     iput-object p1, v0, Landroid/app/Notification;->sound:Landroid/net/Uri;
 
     const/4 p1, -0x1
 
-    .line 11
     iput p1, v0, Landroid/app/Notification;->audioStreamType:I
 
-    .line 12
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
     if-lt p1, v1, :cond_0
 
-    .line 13
     new-instance p1, Landroid/media/AudioAttributes$Builder;
 
     invoke-direct {p1}, Landroid/media/AudioAttributes$Builder;-><init>()V
 
     const/4 v1, 0x4
 
-    .line 14
     invoke-virtual {p1, v1}, Landroid/media/AudioAttributes$Builder;->setContentType(I)Landroid/media/AudioAttributes$Builder;
 
     move-result-object p1
 
     const/4 v1, 0x5
 
-    .line 15
     invoke-virtual {p1, v1}, Landroid/media/AudioAttributes$Builder;->setUsage(I)Landroid/media/AudioAttributes$Builder;
 
     move-result-object p1
 
-    .line 16
     invoke-virtual {p1}, Landroid/media/AudioAttributes$Builder;->build()Landroid/media/AudioAttributes;
 
     move-result-object p1
@@ -650,7 +598,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 7
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$b;->S:Landroid/app/Notification;
 
     iput-object p1, v0, Landroid/app/Notification;->contentView:Landroid/widget/RemoteViews;
@@ -667,7 +614,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 3
     invoke-static {p1}, Landroidx/core/app/NotificationCompat$b;->d(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object p1
@@ -684,7 +630,6 @@
 
     const/16 v0, 0x10
 
-    .line 18
     invoke-direct {p0, v0, p1}, Landroidx/core/app/NotificationCompat$b;->a(IZ)V
 
     return-object p0
@@ -699,7 +644,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 17
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$b;->S:Landroid/app/Notification;
 
     iput-object p1, v0, Landroid/app/Notification;->vibrate:[J
@@ -712,19 +656,16 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 16
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$b;->D:Landroid/os/Bundle;
 
     if-nez v0, :cond_0
 
-    .line 17
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     iput-object v0, p0, Landroidx/core/app/NotificationCompat$b;->D:Landroid/os/Bundle;
 
-    .line 18
     :cond_0
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$b;->D:Landroid/os/Bundle;
 
@@ -740,7 +681,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-static {p1}, Landroidx/core/app/NotificationCompat$b;->d(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object p1
@@ -757,7 +697,6 @@
 
     const/4 v0, 0x2
 
-    .line 15
     invoke-direct {p0, v0, p1}, Landroidx/core/app/NotificationCompat$b;->a(IZ)V
 
     return-object p0
@@ -772,7 +711,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Landroidx/core/app/NotificationCompat$b;->S:Landroid/app/Notification;
 
     invoke-static {p1}, Landroidx/core/app/NotificationCompat$b;->d(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
@@ -789,7 +727,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Landroidx/core/app/NotificationCompat$b;->n:Z
 
     return-object p0

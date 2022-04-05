@@ -1,6 +1,5 @@
 .class Landroidx/viewpager2/widget/ViewPager2$l;
 .super Landroidx/recyclerview/widget/k;
-.source "ViewPager2.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/viewpager2/widget/ViewPager2;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$l;->e:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/k;-><init>()V
@@ -37,7 +35,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$l;->e:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-virtual {v0}, Landroidx/viewpager2/widget/ViewPager2;->a()Z

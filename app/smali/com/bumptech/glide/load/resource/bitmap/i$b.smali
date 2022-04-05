@@ -1,6 +1,5 @@
 .class final Lcom/bumptech/glide/load/resource/bitmap/i$b;
 .super Ljava/lang/Object;
-.source "DefaultImageHeaderParser.java"
 
 
 # annotations
@@ -22,22 +21,18 @@
 .method constructor <init>([BI)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object p1
 
     sget-object v0, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
 
-    .line 3
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1, p2}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
     move-result-object p1
@@ -52,7 +47,6 @@
 .method private a(II)Z
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/i$b;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
@@ -79,7 +73,6 @@
 .method a()I
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/i$b;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
@@ -94,7 +87,6 @@
 
     const/4 v0, 0x2
 
-    .line 3
     invoke-direct {p0, p1, v0}, Lcom/bumptech/glide/load/resource/bitmap/i$b;->a(II)Z
 
     move-result v0
@@ -119,7 +111,6 @@
 .method a(Ljava/nio/ByteOrder;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/i$b;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
@@ -132,7 +123,6 @@
 
     const/4 v0, 0x4
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/bumptech/glide/load/resource/bitmap/i$b;->a(II)Z
 
     move-result v0

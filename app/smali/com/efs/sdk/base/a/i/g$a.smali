@@ -1,6 +1,5 @@
 .class final Lcom/efs/sdk/base/a/i/g$a;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations
@@ -28,10 +27,8 @@
 .method constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x0
@@ -40,13 +37,10 @@
 
     iput-object v0, p0, Lcom/efs/sdk/base/a/i/g$a;->d:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 3
     iput-object p1, p0, Lcom/efs/sdk/base/a/i/g$a;->a:Ljava/lang/String;
 
-    .line 4
     iput-object p2, p0, Lcom/efs/sdk/base/a/i/g$a;->b:Ljava/lang/String;
 
-    .line 5
     iput-object p3, p0, Lcom/efs/sdk/base/a/i/g$a;->c:Ljava/lang/String;
 
     return-void

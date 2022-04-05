@@ -1,6 +1,5 @@
 .class abstract Landroidx/viewpager2/widget/ViewPager2$g;
 .super Landroidx/recyclerview/widget/RecyclerView$i;
-.source "ViewPager2.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$i;-><init>()V
 
     return-void
@@ -27,7 +25,6 @@
 .method synthetic constructor <init>(Landroidx/viewpager2/widget/ViewPager2$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Landroidx/viewpager2/widget/ViewPager2$g;-><init>()V
 
     return-void
@@ -38,7 +35,6 @@
 .method public final onItemRangeChanged(II)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$i;->onChanged()V
 
     return-void
@@ -51,7 +47,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$i;->onChanged()V
 
     return-void
@@ -60,7 +55,6 @@
 .method public final onItemRangeInserted(II)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$i;->onChanged()V
 
     return-void
@@ -69,7 +63,6 @@
 .method public final onItemRangeMoved(III)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$i;->onChanged()V
 
     return-void
@@ -78,7 +71,6 @@
 .method public final onItemRangeRemoved(II)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$i;->onChanged()V
 
     return-void

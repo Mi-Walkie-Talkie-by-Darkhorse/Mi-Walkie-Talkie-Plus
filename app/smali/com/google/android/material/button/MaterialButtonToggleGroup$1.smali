@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/button/MaterialButtonToggleGroup$1;
 .super Ljava/lang/Object;
-.source "MaterialButtonToggleGroup.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/google/android/material/button/MaterialButtonToggleGroup;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$1;->this$0:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public compare(Lcom/google/android/material/button/MaterialButton;Lcom/google/android/material/button/MaterialButton;)I
     .locals 2
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/android/material/button/MaterialButton;->isChecked()Z
 
     move-result v0
@@ -72,7 +69,6 @@
 
     return v0
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Landroid/widget/Button;->isPressed()Z
 
@@ -98,7 +94,6 @@
 
     return v0
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/google/android/material/button/MaterialButtonToggleGroup$1;->this$0:Lcom/google/android/material/button/MaterialButtonToggleGroup;
 
@@ -130,7 +125,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/android/material/button/MaterialButton;
 
     check-cast p2, Lcom/google/android/material/button/MaterialButton;

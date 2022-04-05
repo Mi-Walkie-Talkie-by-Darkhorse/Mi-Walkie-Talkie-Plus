@@ -1,6 +1,5 @@
 .class Lcom/autonavi/ae/gmap/GLMapEngine$4;
 .super Ljava/lang/Object;
-.source "GLMapEngine.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/autonavi/ae/gmap/GLMapEngine;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$4;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$4;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-static {v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->access$300(Lcom/autonavi/ae/gmap/GLMapEngine;)Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;

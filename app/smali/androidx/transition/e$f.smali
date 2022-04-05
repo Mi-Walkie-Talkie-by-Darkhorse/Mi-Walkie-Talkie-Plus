@@ -1,6 +1,5 @@
 .class Landroidx/transition/e$f;
 .super Landroidx/transition/Transition$f;
-.source "FragmentTransitionSupport.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/transition/e;Landroid/graphics/Rect;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/transition/e$f;->a:Landroid/graphics/Rect;
 
     invoke-direct {p0}, Landroidx/transition/Transition$f;-><init>()V
@@ -39,7 +37,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Landroidx/transition/e$f;->a:Landroid/graphics/Rect;
 
     if-eqz p1, :cond_1
@@ -52,7 +49,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Landroidx/transition/e$f;->a:Landroid/graphics/Rect;
 

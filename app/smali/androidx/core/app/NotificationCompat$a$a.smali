@@ -1,6 +1,5 @@
 .class Landroidx/core/app/NotificationCompat$a$a;
 .super Ljava/lang/Object;
-.source "NotificationCompat.java"
 
 
 # annotations
@@ -38,7 +37,6 @@
 
     return-object v0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroidx/core/app/NotificationCompat$a;->a()Landroid/app/PendingIntent;
 

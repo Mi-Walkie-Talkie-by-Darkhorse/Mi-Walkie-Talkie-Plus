@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/internal/disposables/DisposableContainer;
 .super Ljava/lang/Object;
-.source "DisposableContainer.java"
 
 
 # virtual methods

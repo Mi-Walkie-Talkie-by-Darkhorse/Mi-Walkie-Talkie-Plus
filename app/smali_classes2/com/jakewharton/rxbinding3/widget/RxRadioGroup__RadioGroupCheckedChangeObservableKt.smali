@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/widget/RxRadioGroup__RadioGroupCheckedChangeObservableKt;
 .super Ljava/lang/Object;
-.source "RadioGroupCheckedChangeObservable.kt"
 
 
 # annotations
@@ -58,7 +57,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/RadioGroupCheckedChangeObservable;
 
     invoke-direct {v0, p0}, Lcom/jakewharton/rxbinding3/widget/RadioGroupCheckedChangeObservable;-><init>(Landroid/widget/RadioGroup;)V

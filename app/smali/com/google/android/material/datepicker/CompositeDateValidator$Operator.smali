@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/android/material/datepicker/CompositeDateValidator$Operator;
 .super Ljava/lang/Object;
-.source "CompositeDateValidator.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;
 .super Landroid/view/animation/AnimationSet;
-.source "FragmentAnim.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -47,24 +46,18 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Landroid/view/animation/AnimationSet;-><init>(Z)V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mAnimating:Z
 
-    .line 3
     iput-object p2, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mParent:Landroid/view/ViewGroup;
 
-    .line 4
     iput-object p3, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mChild:Landroid/view/View;
 
-    .line 5
     invoke-virtual {p0, p1}, Landroid/view/animation/AnimationSet;->addAnimation(Landroid/view/animation/Animation;)V
 
-    .line 6
     iget-object p1, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mParent:Landroid/view/ViewGroup;
 
     invoke-virtual {p1, p0}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
@@ -83,22 +76,18 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mAnimating:Z
 
-    .line 2
     iget-boolean v1, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mEnded:Z
 
     if-eqz v1, :cond_0
 
-    .line 3
     iget-boolean p1, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mTransitionEnded:Z
 
     xor-int/2addr p1, v0
 
     return p1
 
-    .line 4
     :cond_0
     invoke-super {p0, p1, p2, p3}, Landroid/view/animation/AnimationSet;->getTransformation(JLandroid/view/animation/Transformation;)Z
 
@@ -106,10 +95,8 @@
 
     if-nez p1, :cond_1
 
-    .line 5
     iput-boolean v0, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mEnded:Z
 
-    .line 6
     iget-object p1, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mParent:Landroid/view/ViewGroup;
 
     invoke-static {p1, p0}, Landroidx/core/view/u;->a(Landroid/view/View;Ljava/lang/Runnable;)Landroidx/core/view/u;
@@ -127,22 +114,18 @@
 
     const/4 v0, 0x1
 
-    .line 7
     iput-boolean v0, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mAnimating:Z
 
-    .line 8
     iget-boolean v1, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mEnded:Z
 
     if-eqz v1, :cond_0
 
-    .line 9
     iget-boolean p1, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mTransitionEnded:Z
 
     xor-int/2addr p1, v0
 
     return p1
 
-    .line 10
     :cond_0
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/animation/AnimationSet;->getTransformation(JLandroid/view/animation/Transformation;F)Z
 
@@ -150,10 +133,8 @@
 
     if-nez p1, :cond_1
 
-    .line 11
     iput-boolean v0, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mEnded:Z
 
-    .line 12
     iget-object p1, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mParent:Landroid/view/ViewGroup;
 
     invoke-static {p1, p0}, Landroidx/core/view/u;->a(Landroid/view/View;Ljava/lang/Runnable;)Landroidx/core/view/u;
@@ -165,7 +146,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mEnded:Z
 
     if-nez v0, :cond_0
@@ -176,17 +156,14 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mAnimating:Z
 
-    .line 3
     iget-object v0, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mParent:Landroid/view/ViewGroup;
 
     invoke-virtual {v0, p0}, Landroid/view/ViewGroup;->post(Ljava/lang/Runnable;)Z
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mParent:Landroid/view/ViewGroup;
 
@@ -196,7 +173,6 @@
 
     const/4 v0, 0x1
 
-    .line 5
     iput-boolean v0, p0, Landroidx/fragment/app/FragmentAnim$EndViewTransitionAnimation;->mTransitionEnded:Z
 
     :goto_0

@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/jl$a;
 .super Landroid/os/HandlerThread;
-.source "CgiManager.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/jl;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/jl$a;->a:Lcom/amap/api/col/l3/jl;
 
-    .line 2
     invoke-direct {p0, p2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -36,11 +33,9 @@
 .method protected final onLooperPrepared()V
     .locals 6
 
-    .line 1
     :try_start_0
     invoke-super {p0}, Landroid/os/HandlerThread;->onLooperPrepared()V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/jl$a;->a:Lcom/amap/api/col/l3/jl;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/jl;->a(Lcom/amap/api/col/l3/jl;)Ljava/lang/Object;
@@ -51,7 +46,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
-    .line 3
     :try_start_1
     iget-object v1, p0, Lcom/amap/api/col/l3/jl$a;->a:Lcom/amap/api/col/l3/jl;
 
@@ -61,7 +55,6 @@
 
     if-nez v1, :cond_2
 
-    .line 4
     iget-object v1, p0, Lcom/amap/api/col/l3/jl$a;->a:Lcom/amap/api/col/l3/jl;
 
     new-instance v2, Lcom/amap/api/col/l3/jl$1;
@@ -134,7 +127,6 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 5
     :catchall_1
     :cond_2
     :goto_2
@@ -162,7 +154,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-super {p0}, Landroid/os/HandlerThread;->run()V
     :try_end_0
@@ -170,7 +161,6 @@
 
     return-void
 
-    .line 2
     :catchall_0
     :try_start_1
     iget-object v0, p0, Lcom/amap/api/col/l3/jl$a;->a:Lcom/amap/api/col/l3/jl;
@@ -185,14 +175,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/jl$a;->a:Lcom/amap/api/col/l3/jl;
 
     const/4 v1, 0x0
 
     iput-object v1, v0, Lcom/amap/api/col/l3/jl;->g:Landroid/telephony/PhoneStateListener;
 
-    .line 4
     invoke-virtual {p0}, Landroid/os/HandlerThread;->quit()Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1

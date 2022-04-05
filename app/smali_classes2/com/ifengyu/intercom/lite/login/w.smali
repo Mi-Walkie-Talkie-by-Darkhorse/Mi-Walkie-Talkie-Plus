@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/lite/login/w;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;

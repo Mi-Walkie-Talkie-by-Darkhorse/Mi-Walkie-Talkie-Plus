@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/datepicker/CalendarConstraints$1;
 .super Ljava/lang/Object;
-.source "CalendarConstraints.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,7 +45,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     const-class v0, Lcom/google/android/material/datepicker/Month;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -62,7 +59,6 @@
 
     check-cast v2, Lcom/google/android/material/datepicker/Month;
 
-    .line 3
     const-class v0, Lcom/google/android/material/datepicker/Month;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -77,7 +73,6 @@
 
     check-cast v3, Lcom/google/android/material/datepicker/Month;
 
-    .line 4
     const-class v0, Lcom/google/android/material/datepicker/Month;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -92,7 +87,6 @@
 
     check-cast v5, Lcom/google/android/material/datepicker/Month;
 
-    .line 5
     const-class v0, Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -107,7 +101,6 @@
 
     check-cast v4, Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
-    .line 6
     new-instance p1, Lcom/google/android/material/datepicker/CalendarConstraints;
 
     const/4 v6, 0x0
@@ -128,7 +121,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/CalendarConstraints$1;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/datepicker/CalendarConstraints;
 
     move-result-object p1
@@ -141,7 +133,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-array p1, p1, [Lcom/google/android/material/datepicker/CalendarConstraints;
 
     return-object p1
@@ -152,7 +143,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/datepicker/CalendarConstraints$1;->newArray(I)[Lcom/google/android/material/datepicker/CalendarConstraints;
 
     move-result-object p1

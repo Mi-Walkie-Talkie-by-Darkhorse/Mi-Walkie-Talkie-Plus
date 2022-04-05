@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;
 .super Lcom/google/common/util/concurrent/Striped;
-.source "Striped.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/Striped;-><init>(Lcom/google/common/util/concurrent/Striped$1;)V
 
     const/4 v0, 0x1
@@ -53,7 +51,6 @@
     :goto_0
     const-string v2, "Stripes must be positive"
 
-    .line 2
     invoke-static {v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
     const/high16 v1, 0x40000000    # 2.0f
@@ -64,7 +61,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-static {p1}, Lcom/google/common/util/concurrent/Striped;->access$200(I)I
 
@@ -91,7 +87,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;->indexFor(Ljava/lang/Object;)I
 
     move-result p1
@@ -106,7 +101,6 @@
 .method final indexFor(Ljava/lang/Object;)I
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
     move-result p1
@@ -115,7 +109,6 @@
 
     move-result p1
 
-    .line 2
     iget v0, p0, Lcom/google/common/util/concurrent/Striped$PowerOfTwoStriped;->mask:I
 
     and-int/2addr p1, v0

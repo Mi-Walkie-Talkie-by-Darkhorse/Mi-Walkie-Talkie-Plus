@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/ImmutableMapEntry$TerminalEntry;
 .super Lcom/google/common/collect/ImmutableMapEntry;
-.source "ImmutableMapEntry.java"
 
 
 # annotations
@@ -37,7 +36,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/ImmutableMapEntry;-><init>(Lcom/google/common/collect/ImmutableMapEntry;)V
 
     return-void
@@ -51,7 +49,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/ImmutableMapEntry;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-void

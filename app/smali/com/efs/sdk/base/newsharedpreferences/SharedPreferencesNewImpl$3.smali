@@ -1,6 +1,5 @@
 .class Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$3;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$3;->this$0:Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;
 
     iput-boolean p2, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$3;->val$force:Z
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$3;->this$0:Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;
 
     iget-boolean v1, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$3;->val$force:Z

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$i$a;
 .super Ljava/lang/Object;
-.source "DiscoveryFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$i;ILcom/ifengyu/intercom/bean/DiscoverResult;)V
     .locals 0
 
-    .line 1
     iput p2, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$i$a;->a:I
 
     iput-object p3, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$i$a;->b:Lcom/ifengyu/intercom/bean/DiscoverResult;
@@ -44,13 +42,11 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     iget v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$i$a;->a:I
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$i$a;->b:Lcom/ifengyu/intercom/bean/DiscoverResult;
 
     iget-object v1, v1, Lcom/ifengyu/intercom/bean/DiscoverResult;->items:Ljava/util/List;
@@ -61,7 +57,6 @@
 
     check-cast v1, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;
 
-    .line 3
     invoke-virtual {v1}, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->getExcerpt()Ljava/lang/String;
 
     move-result-object v2
@@ -80,10 +75,8 @@
 
     move-result-object v2
 
-    .line 4
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->setExcerpt(Ljava/lang/String;)V
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -94,7 +87,6 @@
 
     move-result-object v2
 
-    .line 6
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V

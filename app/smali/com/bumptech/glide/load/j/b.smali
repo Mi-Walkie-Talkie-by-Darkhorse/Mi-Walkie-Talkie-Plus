@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/b;
 .super Ljava/lang/Object;
-.source "ByteArrayLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/n;
@@ -50,10 +49,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/j/b;->a:Lcom/bumptech/glide/load/j/b$b;
 
     return-void
@@ -72,7 +69,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, [B
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/j/b;->a([BIILcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/j/n$a;
@@ -102,7 +98,6 @@
         }
     .end annotation
 
-    .line 3
     new-instance p2, Lcom/bumptech/glide/load/j/n$a;
 
     new-instance p3, Lcom/bumptech/glide/l/b;
@@ -127,7 +122,6 @@
         .end annotation
     .end param
 
-    .line 2
     check-cast p1, [B
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/j/b;->a([B)Z

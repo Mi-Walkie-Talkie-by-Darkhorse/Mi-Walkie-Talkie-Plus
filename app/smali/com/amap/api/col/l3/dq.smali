@@ -1,6 +1,5 @@
 .class public final enum Lcom/amap/api/col/l3/dq;
 .super Ljava/lang/Enum;
-.source "StyleType.java"
 
 
 # annotations
@@ -111,7 +110,6 @@
 .method static constructor <clinit>()V
     .locals 16
 
-    .line 1
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/4 v1, 0x0
@@ -124,7 +122,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->a:Lcom/amap/api/col/l3/dq;
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/4 v2, 0x1
@@ -137,7 +134,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->b:Lcom/amap/api/col/l3/dq;
 
-    .line 3
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/4 v3, 0x2
@@ -150,7 +146,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->c:Lcom/amap/api/col/l3/dq;
 
-    .line 4
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/4 v4, 0x3
@@ -163,7 +158,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->d:Lcom/amap/api/col/l3/dq;
 
-    .line 5
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/4 v5, 0x4
@@ -176,7 +170,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->e:Lcom/amap/api/col/l3/dq;
 
-    .line 6
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/4 v6, 0x5
@@ -189,7 +182,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->f:Lcom/amap/api/col/l3/dq;
 
-    .line 7
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/4 v7, 0x6
@@ -202,7 +194,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->g:Lcom/amap/api/col/l3/dq;
 
-    .line 8
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/4 v8, 0x7
@@ -215,7 +206,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->h:Lcom/amap/api/col/l3/dq;
 
-    .line 9
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v9, 0x8
@@ -228,7 +218,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->i:Lcom/amap/api/col/l3/dq;
 
-    .line 10
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v10, 0x9
@@ -241,7 +230,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->j:Lcom/amap/api/col/l3/dq;
 
-    .line 11
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v11, 0xa
@@ -254,7 +242,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->k:Lcom/amap/api/col/l3/dq;
 
-    .line 12
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v12, 0xb
@@ -267,7 +254,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->l:Lcom/amap/api/col/l3/dq;
 
-    .line 13
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v13, 0xc
@@ -280,7 +266,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->m:Lcom/amap/api/col/l3/dq;
 
-    .line 14
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v14, 0xd
@@ -293,7 +278,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->n:Lcom/amap/api/col/l3/dq;
 
-    .line 15
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v13, 0xe
@@ -306,7 +290,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->o:Lcom/amap/api/col/l3/dq;
 
-    .line 16
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v14, 0xf
@@ -319,7 +302,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->p:Lcom/amap/api/col/l3/dq;
 
-    .line 17
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v13, 0x10
@@ -332,7 +314,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->q:Lcom/amap/api/col/l3/dq;
 
-    .line 18
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v14, 0x11
@@ -345,7 +326,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->r:Lcom/amap/api/col/l3/dq;
 
-    .line 19
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v13, 0x12
@@ -358,7 +338,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->s:Lcom/amap/api/col/l3/dq;
 
-    .line 20
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v14, 0x13
@@ -371,7 +350,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->t:Lcom/amap/api/col/l3/dq;
 
-    .line 21
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v13, 0x14
@@ -384,7 +362,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->u:Lcom/amap/api/col/l3/dq;
 
-    .line 22
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const/16 v14, 0x15
@@ -397,7 +374,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->v:Lcom/amap/api/col/l3/dq;
 
-    .line 23
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v13, "TYPE_RAILWAY"
@@ -412,7 +388,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->w:Lcom/amap/api/col/l3/dq;
 
-    .line 24
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_HIGHSPEEDRAILWAY"
@@ -427,7 +402,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->x:Lcom/amap/api/col/l3/dq;
 
-    .line 25
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_SUBWAYLINE"
@@ -442,7 +416,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->y:Lcom/amap/api/col/l3/dq;
 
-    .line 26
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_SUBWAYBEBUILT"
@@ -457,7 +430,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->z:Lcom/amap/api/col/l3/dq;
 
-    .line 27
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_OVERPASS"
@@ -472,7 +444,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->A:Lcom/amap/api/col/l3/dq;
 
-    .line 28
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_UNDERPASS"
@@ -487,7 +458,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->B:Lcom/amap/api/col/l3/dq;
 
-    .line 29
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_OTHERROAD"
@@ -502,7 +472,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->C:Lcom/amap/api/col/l3/dq;
 
-    .line 30
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_GUIDEBOARDS"
@@ -517,7 +486,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->D:Lcom/amap/api/col/l3/dq;
 
-    .line 31
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_POIS"
@@ -532,7 +500,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->E:Lcom/amap/api/col/l3/dq;
 
-    .line 32
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_AOIS"
@@ -547,7 +514,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->F:Lcom/amap/api/col/l3/dq;
 
-    .line 33
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_CONTINENT"
@@ -562,7 +528,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->G:Lcom/amap/api/col/l3/dq;
 
-    .line 34
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_COUNTRY"
@@ -577,7 +542,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->H:Lcom/amap/api/col/l3/dq;
 
-    .line 35
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_PROVINCE"
@@ -592,7 +556,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->I:Lcom/amap/api/col/l3/dq;
 
-    .line 36
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_CITY"
@@ -607,7 +570,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->J:Lcom/amap/api/col/l3/dq;
 
-    .line 37
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_DISTRICT"
@@ -622,7 +584,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->K:Lcom/amap/api/col/l3/dq;
 
-    .line 38
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_TOWN"
@@ -637,7 +598,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->L:Lcom/amap/api/col/l3/dq;
 
-    .line 39
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_VILLAGE"
@@ -652,7 +612,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->M:Lcom/amap/api/col/l3/dq;
 
-    .line 40
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_CHINA"
@@ -667,7 +626,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->N:Lcom/amap/api/col/l3/dq;
 
-    .line 41
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_FOREIGN"
@@ -682,7 +640,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/dq;->O:Lcom/amap/api/col/l3/dq;
 
-    .line 42
     new-instance v0, Lcom/amap/api/col/l3/dq;
 
     const-string v12, "TYPE_PROVINCIAL"
@@ -701,7 +658,6 @@
 
     new-array v12, v12, [Lcom/amap/api/col/l3/dq;
 
-    .line 43
     sget-object v13, Lcom/amap/api/col/l3/dq;->a:Lcom/amap/api/col/l3/dq;
 
     aput-object v13, v12, v1
@@ -945,13 +901,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/amap/api/col/l3/dq;->Q:Ljava/lang/String;
 
-    .line 3
     iput p4, p0, Lcom/amap/api/col/l3/dq;->R:I
 
     return-void
@@ -960,7 +913,6 @@
 .method public static a(Ljava/lang/String;)I
     .locals 5
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/dq;->values()[Lcom/amap/api/col/l3/dq;
 
     move-result-object v0
@@ -974,7 +926,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     iget-object v4, v3, Lcom/amap/api/col/l3/dq;->Q:Ljava/lang/String;
 
     invoke-virtual {v4, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -983,7 +934,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 3
     iget p0, v3, Lcom/amap/api/col/l3/dq;->R:I
 
     return p0
@@ -1002,7 +952,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/amap/api/col/l3/dq;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/amap/api/col/l3/dq;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -1017,7 +966,6 @@
 .method public static values()[Lcom/amap/api/col/l3/dq;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/dq;->S:[Lcom/amap/api/col/l3/dq;
 
     invoke-virtual {v0}, [Lcom/amap/api/col/l3/dq;->clone()Ljava/lang/Object;

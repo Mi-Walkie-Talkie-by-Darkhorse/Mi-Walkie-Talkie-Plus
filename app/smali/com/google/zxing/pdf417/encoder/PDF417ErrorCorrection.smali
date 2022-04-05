@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/pdf417/encoder/PDF417ErrorCorrection;
 .super Ljava/lang/Object;
-.source "PDF417ErrorCorrection.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 
     new-array v2, v1, [I
 
-    .line 1
     fill-array-data v2, :array_0
 
     const/4 v3, 0x0
@@ -1166,7 +1164,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -1175,15 +1172,12 @@
 .method static generateErrorCorrection(Ljava/lang/CharSequence;I)Ljava/lang/String;
     .locals 9
 
-    .line 1
     invoke-static {p1}, Lcom/google/zxing/pdf417/encoder/PDF417ErrorCorrection;->getErrorCorrectionCodewordCount(I)I
 
     move-result v0
 
-    .line 2
     new-array v1, v0, [C
 
-    .line 3
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v2
@@ -1195,7 +1189,6 @@
     :goto_0
     if-ge v4, v2, :cond_1
 
-    .line 4
     invoke-interface {p0, v4}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v5
@@ -1211,7 +1204,6 @@
     :goto_1
     if-lez v6, :cond_0
 
-    .line 5
     sget-object v7, Lcom/google/zxing/pdf417/encoder/PDF417ErrorCorrection;->EC_COEFFICIENTS:[[I
 
     aget-object v7, v7, p1
@@ -1226,7 +1218,6 @@
 
     add-int/lit8 v8, v6, -0x1
 
-    .line 6
     aget-char v8, v1, v8
 
     add-int/2addr v8, v7
@@ -1241,7 +1232,6 @@
 
     goto :goto_1
 
-    .line 7
     :cond_0
     sget-object v6, Lcom/google/zxing/pdf417/encoder/PDF417ErrorCorrection;->EC_COEFFICIENTS:[[I
 
@@ -1255,7 +1245,6 @@
 
     rsub-int v5, v5, 0x3a1
 
-    .line 8
     rem-int/lit16 v5, v5, 0x3a1
 
     int-to-char v5, v5
@@ -1266,7 +1255,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -1277,12 +1265,10 @@
     :goto_2
     if-ltz v0, :cond_3
 
-    .line 10
     aget-char p1, v1, v0
 
     if-eqz p1, :cond_2
 
-    .line 11
     aget-char p1, v1, v0
 
     rsub-int p1, p1, 0x3a1
@@ -1291,7 +1277,6 @@
 
     aput-char p1, v1, v0
 
-    .line 12
     :cond_2
     aget-char p1, v1, v0
 
@@ -1301,7 +1286,6 @@
 
     goto :goto_2
 
-    .line 13
     :cond_3
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -1327,7 +1311,6 @@
 
     return p0
 
-    .line 1
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1383,7 +1366,6 @@
 
     return p0
 
-    .line 1
     :cond_3
     new-instance p0, Lcom/google/zxing/WriterException;
 
@@ -1393,7 +1375,6 @@
 
     throw p0
 
-    .line 2
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

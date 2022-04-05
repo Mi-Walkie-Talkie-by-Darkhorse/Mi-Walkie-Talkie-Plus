@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/auth/WebViewOauth$1;
 .super Lcom/xiaomi/account/IXiaomiAuthResponse$Stub;
-.source "WebViewOauth.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lcom/xiaomi/account/auth/WebViewOauth;Ljava/util/List;Ljava/util/concurrent/CountDownLatch;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/auth/WebViewOauth$1;->this$0:Lcom/xiaomi/account/auth/WebViewOauth;
 
     iput-object p2, p0, Lcom/xiaomi/account/auth/WebViewOauth$1;->val$list:Ljava/util/List;
@@ -48,7 +46,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/account/auth/WebViewOauth$1;->val$countDownLatch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
@@ -64,17 +61,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->parseBundle(Landroid/os/Bundle;)Lcom/xiaomi/account/openauth/XiaomiOAuthResults;
 
     move-result-object p1
 
-    .line 2
     iget-object v0, p0, Lcom/xiaomi/account/auth/WebViewOauth$1;->val$list:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 3
     iget-object p1, p0, Lcom/xiaomi/account/auth/WebViewOauth$1;->val$countDownLatch:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V

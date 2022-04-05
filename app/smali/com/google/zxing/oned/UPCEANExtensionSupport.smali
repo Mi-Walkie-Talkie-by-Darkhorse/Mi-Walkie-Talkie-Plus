@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/oned/UPCEANExtensionSupport;
 .super Ljava/lang/Object;
-.source "UPCEANExtensionSupport.java"
 
 
 # static fields
@@ -21,7 +20,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/google/zxing/oned/UPCEANExtensionSupport;->EXTENSION_START_PATTERN:[I
@@ -41,17 +39,14 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/zxing/oned/UPCEANExtension2Support;
 
     invoke-direct {v0}, Lcom/google/zxing/oned/UPCEANExtension2Support;-><init>()V
 
     iput-object v0, p0, Lcom/google/zxing/oned/UPCEANExtensionSupport;->twoSupport:Lcom/google/zxing/oned/UPCEANExtension2Support;
 
-    .line 3
     new-instance v0, Lcom/google/zxing/oned/UPCEANExtension5Support;
 
     invoke-direct {v0}, Lcom/google/zxing/oned/UPCEANExtension5Support;-><init>()V
@@ -71,7 +66,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/zxing/oned/UPCEANExtensionSupport;->EXTENSION_START_PATTERN:[I
 
     const/4 v1, 0x0
@@ -80,7 +74,6 @@
 
     move-result-object p3
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/google/zxing/oned/UPCEANExtensionSupport;->fiveSupport:Lcom/google/zxing/oned/UPCEANExtension5Support;
 
@@ -92,7 +85,6 @@
 
     return-object p1
 
-    .line 3
     :catch_0
     iget-object v0, p0, Lcom/google/zxing/oned/UPCEANExtensionSupport;->twoSupport:Lcom/google/zxing/oned/UPCEANExtension2Support;
 

@@ -1,6 +1,5 @@
 .class Lb/d/a/a/a$a;
 .super Ljava/lang/Object;
-.source "CommonAdapter.java"
 
 # interfaces
 .implements Lb/d/a/a/c/a;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lb/d/a/a/a;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lb/d/a/a/a$a;->b:Lb/d/a/a/a;
 
     iput p2, p0, Lb/d/a/a/a$a;->a:I
@@ -50,7 +48,6 @@
 .method public a()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lb/d/a/a/a$a;->a:I
 
     return v0
@@ -66,7 +63,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lb/d/a/a/a$a;->b:Lb/d/a/a/a;
 
     invoke-virtual {v0, p1, p2, p3}, Lb/d/a/a/a;->a(Lb/d/a/a/c/c;Ljava/lang/Object;I)V

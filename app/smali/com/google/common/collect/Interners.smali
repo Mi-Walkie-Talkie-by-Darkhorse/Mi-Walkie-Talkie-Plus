@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/collect/Interners;
 .super Ljava/lang/Object;
-.source "Interners.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +37,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Interners$InternerFunction;
 
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -65,7 +62,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/MapMaker;
 
     invoke-direct {v0}, Lcom/google/common/collect/MapMaker;-><init>()V
@@ -74,7 +70,6 @@
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Lcom/google/common/collect/Interners$1;
 
     invoke-direct {v1, v0}, Lcom/google/common/collect/Interners$1;-><init>(Ljava/util/concurrent/ConcurrentMap;)V
@@ -98,7 +93,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Interners$WeakInterner;
 
     const/4 v1, 0x0

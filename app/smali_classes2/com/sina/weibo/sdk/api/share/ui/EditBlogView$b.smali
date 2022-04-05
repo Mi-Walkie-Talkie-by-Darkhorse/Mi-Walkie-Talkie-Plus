@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/sina/weibo/sdk/api/share/ui/EditBlogView$b;
 .super Ljava/lang/Object;
-.source "EditBlogView.java"
 
 
 # annotations

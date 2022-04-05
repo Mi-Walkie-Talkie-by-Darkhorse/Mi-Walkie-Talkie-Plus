@@ -1,13 +1,11 @@
 .class public Lb/a/a/a/b/c;
 .super Lb/a/a/a/b/b;
-.source "HorizontalBarBuffer.java"
 
 
 # direct methods
 .method public constructor <init>(IIZ)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lb/a/a/a/b/b;-><init>(IIZ)V
 
     return-void
@@ -20,7 +18,6 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     invoke-interface/range {p1 .. p1}, Lb/a/a/a/e/b/e;->q0()I
 
     move-result v1
@@ -31,7 +28,6 @@
 
     mul-float v1, v1, v2
 
-    .line 2
     iget v2, v0, Lb/a/a/a/b/b;->g:F
 
     const/high16 v3, 0x40000000    # 2.0f
@@ -49,7 +45,6 @@
 
     move-object/from16 v5, p1
 
-    .line 3
     invoke-interface {v5, v4}, Lb/a/a/a/e/b/e;->a(I)Lcom/github/mikephil/charting/data/Entry;
 
     move-result-object v6
@@ -60,23 +55,19 @@
 
     goto/16 :goto_d
 
-    .line 4
     :cond_0
     invoke-virtual {v6}, Lcom/github/mikephil/charting/data/Entry;->c()F
 
     move-result v7
 
-    .line 5
     invoke-virtual {v6}, Lcom/github/mikephil/charting/data/BarEntry;->b()F
 
     move-result v8
 
-    .line 6
     invoke-virtual {v6}, Lcom/github/mikephil/charting/data/BarEntry;->g()[F
 
     move-result-object v9
 
-    .line 7
     iget-boolean v10, v0, Lb/a/a/a/b/b;->e:Z
 
     const/4 v11, 0x0
@@ -87,7 +78,6 @@
 
     goto/16 :goto_7
 
-    .line 8
     :cond_1
     invoke-virtual {v6}, Lcom/github/mikephil/charting/data/BarEntry;->d()F
 
@@ -99,13 +89,11 @@
 
     const/4 v10, 0x0
 
-    .line 9
     :goto_1
     array-length v12, v9
 
     if-ge v8, v12, :cond_f
 
-    .line 10
     aget v12, v9, v8
 
     cmpl-float v13, v12, v11
@@ -124,7 +112,6 @@
 
     goto :goto_2
 
-    .line 11
     :cond_2
     invoke-static {v12}, Ljava/lang/Math;->abs(F)F
 
@@ -132,7 +119,6 @@
 
     add-float/2addr v13, v6
 
-    .line 12
     invoke-static {v12}, Ljava/lang/Math;->abs(F)F
 
     move-result v12
@@ -144,7 +130,6 @@
 
     add-float v15, v7, v2
 
-    .line 13
     iget-boolean v3, v0, Lb/a/a/a/b/b;->f:Z
 
     if-eqz v3, :cond_5
@@ -201,7 +186,6 @@
 
     move/from16 v3, v17
 
-    .line 14
     :goto_6
     iget v13, v0, Lb/a/a/a/b/a;->d:F
 
@@ -209,7 +193,6 @@
 
     mul-float v3, v3, v13
 
-    .line 15
     invoke-virtual {v0, v3, v15, v6, v14}, Lb/a/a/a/b/b;->a(FFFF)V
 
     add-int/lit8 v8, v8, 0x1
@@ -224,7 +207,6 @@
 
     add-float/2addr v7, v2
 
-    .line 16
     iget-boolean v6, v0, Lb/a/a/a/b/b;->f:Z
 
     if-eqz v6, :cond_b
@@ -286,20 +268,17 @@
 
     if-lez v9, :cond_e
 
-    .line 17
     iget v9, v0, Lb/a/a/a/b/a;->d:F
 
     mul-float v8, v8, v9
 
     goto :goto_c
 
-    .line 18
     :cond_e
     iget v9, v0, Lb/a/a/a/b/a;->d:F
 
     mul-float v6, v6, v9
 
-    .line 19
     :goto_c
     invoke-virtual {v0, v6, v7, v8, v3}, Lb/a/a/a/b/b;->a(FFFF)V
 
@@ -309,7 +288,6 @@
 
     goto/16 :goto_0
 
-    .line 20
     :cond_10
     invoke-virtual/range {p0 .. p0}, Lb/a/a/a/b/a;->a()V
 

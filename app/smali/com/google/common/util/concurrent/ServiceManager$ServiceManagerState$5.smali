@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState$5;
 .super Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
-.source "ServiceManager.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;Ljava/lang/String;Lcom/google/common/util/concurrent/Service;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState$5;->this$0:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     iput-object p3, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState$5;->val$service:Lcom/google/common/util/concurrent/Service;
@@ -47,7 +45,6 @@
 .method call(Lcom/google/common/util/concurrent/ServiceManager$Listener;)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState$5;->val$service:Lcom/google/common/util/concurrent/Service;
 
     invoke-virtual {p1, v0}, Lcom/google/common/util/concurrent/ServiceManager$Listener;->failure(Lcom/google/common/util/concurrent/Service;)V
@@ -58,7 +55,6 @@
 .method bridge synthetic call(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/common/util/concurrent/ServiceManager$Listener;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState$5;->call(Lcom/google/common/util/concurrent/ServiceManager$Listener;)V

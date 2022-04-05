@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;
 .super Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;
-.source "CircularProgressIndicatorSpec.java"
 
 
 # instance fields
@@ -29,7 +28,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Lcom/google/android/material/R$attr;->circularProgressIndicatorStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -52,7 +50,6 @@
         .end annotation
     .end param
 
-    .line 2
     sget v0, Lcom/google/android/material/progressindicator/CircularProgressIndicator;->DEF_STYLE_RES:I
 
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
@@ -79,10 +76,8 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
-    .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -93,7 +88,6 @@
 
     move-result v0
 
-    .line 5
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -104,7 +98,6 @@
 
     move-result v1
 
-    .line 6
     sget-object v4, Lcom/google/android/material/R$styleable;->CircularProgressIndicator:[I
 
     const/4 v8, 0x0
@@ -119,45 +112,36 @@
 
     move v6, p4
 
-    .line 7
     invoke-static/range {v2 .. v7}, Lcom/google/android/material/internal/ThemeEnforcement;->obtainStyledAttributes(Landroid/content/Context;Landroid/util/AttributeSet;[III[I)Landroid/content/res/TypedArray;
 
     move-result-object p2
 
-    .line 8
     sget p3, Lcom/google/android/material/R$styleable;->CircularProgressIndicator_indicatorSize:I
 
-    .line 9
     invoke-static {p1, p2, p3, v0}, Lcom/google/android/material/resources/MaterialResources;->getDimensionPixelSize(Landroid/content/Context;Landroid/content/res/TypedArray;II)I
 
     move-result p3
 
     iput p3, p0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->indicatorSize:I
 
-    .line 10
     sget p3, Lcom/google/android/material/R$styleable;->CircularProgressIndicator_indicatorInset:I
 
-    .line 11
     invoke-static {p1, p2, p3, v1}, Lcom/google/android/material/resources/MaterialResources;->getDimensionPixelSize(Landroid/content/Context;Landroid/content/res/TypedArray;II)I
 
     move-result p1
 
     iput p1, p0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->indicatorInset:I
 
-    .line 12
     sget p1, Lcom/google/android/material/R$styleable;->CircularProgressIndicator_indicatorDirectionCircular:I
 
-    .line 13
     invoke-virtual {p2, p1, v8}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result p1
 
     iput p1, p0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->indicatorDirection:I
 
-    .line 14
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 15
     invoke-virtual {p0}, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->validateSpec()V
 
     return-void
@@ -168,7 +152,6 @@
 .method validateSpec()V
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/progressindicator/CircularProgressIndicatorSpec;->indicatorSize:I
 
     iget v1, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicatorSpec;->trackThickness:I
@@ -179,7 +162,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

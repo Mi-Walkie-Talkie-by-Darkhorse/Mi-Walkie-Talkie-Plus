@@ -1,6 +1,5 @@
 .class abstract Landroidx/loader/content/ModernAsyncTask$g;
 .super Ljava/lang/Object;
-.source "ModernAsyncTask.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -44,7 +43,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

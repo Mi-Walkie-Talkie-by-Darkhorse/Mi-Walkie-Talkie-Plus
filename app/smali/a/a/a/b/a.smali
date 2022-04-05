@@ -1,6 +1,5 @@
 .class public La/a/a/b/a;
 .super La/a/a/b/b;
-.source "FastSafeIterableMap.java"
 
 
 # annotations
@@ -40,10 +39,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, La/a/a/b/b;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -65,7 +62,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/a/a/b/a;->e:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -93,19 +89,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, La/a/a/b/a;->a(Ljava/lang/Object;)La/a/a/b/b$c;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object p1, v0, La/a/a/b/b$c;->b:Ljava/lang/Object;
 
     return-object p1
 
-    .line 3
     :cond_0
     iget-object v0, p0, La/a/a/b/a;->e:Ljava/util/HashMap;
 
@@ -130,14 +123,12 @@
         }
     .end annotation
 
-    .line 4
     invoke-virtual {p0, p1}, La/a/a/b/a;->contains(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 5
     iget-object v0, p0, La/a/a/b/a;->e:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -164,7 +155,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/a/a/b/a;->e:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
@@ -186,12 +176,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, La/a/a/b/b;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, La/a/a/b/a;->e:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;

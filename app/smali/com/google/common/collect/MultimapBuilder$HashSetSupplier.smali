@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/MultimapBuilder$HashSetSupplier;
 .super Ljava/lang/Object;
-.source "MultimapBuilder.java"
 
 # interfaces
 .implements Lcom/google/common/base/Supplier;
@@ -39,12 +38,10 @@
 .method constructor <init>(I)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "expectedValuesPerKey"
 
-    .line 2
     invoke-static {p1, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
     move-result p1
@@ -59,7 +56,6 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MultimapBuilder$HashSetSupplier;->get()Ljava/util/Set;
 
     move-result-object v0
@@ -77,7 +73,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/util/HashSet;
 
     iget v1, p0, Lcom/google/common/collect/MultimapBuilder$HashSetSupplier;->expectedValuesPerKey:I

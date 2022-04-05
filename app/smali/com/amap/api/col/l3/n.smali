@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/n;
 .super Ljava/lang/Object;
-.source "AMapOnLocationChangedListener.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/LocationSource$OnLocationChangedListener;
@@ -16,10 +15,8 @@
 .method constructor <init>(Lcom/amap/api/col/l3/u;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/n;->b:Lcom/amap/api/col/l3/u;
 
     return-void
@@ -30,10 +27,8 @@
 .method public final onLocationChanged(Landroid/location/Location;)V
     .locals 2
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/n;->a:Landroid/location/Location;
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/n;->b:Lcom/amap/api/col/l3/u;
 
@@ -43,7 +38,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/n;->b:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0, p1}, Lcom/amap/api/col/l3/u;->a(Landroid/location/Location;)V
@@ -60,10 +54,8 @@
 
     const-string v1, "onLocationChanged"
 
-    .line 4
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

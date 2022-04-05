@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/yalantis/ucrop/UCropActivity$GestureTypes;
 .super Ljava/lang/Object;
-.source "UCropActivity.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

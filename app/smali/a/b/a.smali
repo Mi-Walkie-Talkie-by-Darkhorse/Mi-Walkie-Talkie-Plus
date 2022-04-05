@@ -1,6 +1,5 @@
 .class public La/b/a;
 .super La/b/g;
-.source "ArrayMap.java"
 
 # interfaces
 .implements Ljava/util/Map;
@@ -40,7 +39,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, La/b/g;-><init>()V
 
     return-void
@@ -49,7 +47,6 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, La/b/g;-><init>(I)V
 
     return-void
@@ -58,7 +55,6 @@
 .method public constructor <init>(La/b/g;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1}, La/b/g;-><init>(La/b/g;)V
 
     return-void
@@ -74,19 +70,16 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/b/a;->h:La/b/f;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, La/b/a$a;
 
     invoke-direct {v0, p0}, La/b/a$a;-><init>(La/b/a;)V
 
     iput-object v0, p0, La/b/a;->h:La/b/f;
 
-    .line 3
     :cond_0
     iget-object v0, p0, La/b/a;->h:La/b/f;
 
@@ -109,7 +102,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, La/b/f;->c(Ljava/util/Map;Ljava/util/Collection;)Z
 
     move-result p1
@@ -128,7 +120,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, La/b/a;->b()La/b/f;
 
     move-result-object v0
@@ -150,7 +141,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, La/b/a;->b()La/b/f;
 
     move-result-object v0
@@ -172,7 +162,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, La/b/g;->c:I
 
     invoke-interface {p1}, Ljava/util/Map;->size()I
@@ -183,7 +172,6 @@
 
     invoke-virtual {p0, v0}, La/b/g;->a(I)V
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -205,7 +193,6 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -232,7 +219,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, La/b/a;->b()La/b/f;
 
     move-result-object v0

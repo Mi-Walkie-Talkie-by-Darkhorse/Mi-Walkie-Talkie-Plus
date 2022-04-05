@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealScrimColorProperty;
 .super Landroid/util/Property;
-.source "CircularRevealWidget.java"
 
 
 # annotations
@@ -40,7 +39,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealScrimColorProperty;
 
     const-string v1, "circularRevealScrimColor"
@@ -55,7 +53,6 @@
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     const-class v0, Ljava/lang/Integer;
 
     invoke-direct {p0, v0, p1}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
@@ -74,7 +71,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-interface {p1}, Lcom/google/android/material/circularreveal/CircularRevealWidget;->getCircularRevealScrimColor()I
 
     move-result p1
@@ -95,7 +91,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     check-cast p1, Lcom/google/android/material/circularreveal/CircularRevealWidget;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/circularreveal/CircularRevealWidget$CircularRevealScrimColorProperty;->get(Lcom/google/android/material/circularreveal/CircularRevealWidget;)Ljava/lang/Integer;
@@ -116,7 +111,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
 
     move-result p2
@@ -137,7 +131,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/google/android/material/circularreveal/CircularRevealWidget;
 
     check-cast p2, Ljava/lang/Integer;

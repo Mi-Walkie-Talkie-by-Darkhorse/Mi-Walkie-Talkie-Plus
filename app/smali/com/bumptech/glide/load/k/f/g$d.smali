@@ -1,6 +1,5 @@
 .class interface abstract Lcom/bumptech/glide/load/k/f/g$d;
 .super Ljava/lang/Object;
-.source "GifFrameLoader.java"
 
 
 # annotations

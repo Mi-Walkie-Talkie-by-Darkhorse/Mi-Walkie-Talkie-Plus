@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$b;
 .super Ljava/lang/Object;
-.source "TrackInfoDetailActivity.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/AMap$OnMapScreenShotListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,18 +42,14 @@
 .method public onMapScreenShot(Landroid/graphics/Bitmap;I)V
     .locals 4
 
-    .line 1
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/d;->a(Landroid/app/Activity;)V
 
-    .line 2
     sget p2, Lcom/ifengyu/intercom/d;->b:I
 
-    .line 3
     div-int/lit8 v0, p2, 0x2
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;->d(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;)Lcom/amap/api/maps/MapView;
@@ -76,13 +70,11 @@
 
     move-result-object p1
 
-    .line 5
     :try_start_0
     new-instance p2, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {p2}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 6
     sget-object v0, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
     const/16 v1, 0x32
@@ -91,7 +83,6 @@
 
     const/16 v0, 0x5a
 
-    .line 7
     :goto_0
     invoke-virtual {p2}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
@@ -105,10 +96,8 @@
 
     if-le v1, v2, :cond_0
 
-    .line 8
     invoke-virtual {p2}, Ljava/io/ByteArrayOutputStream;->reset()V
 
-    .line 9
     sget-object v1, Landroid/graphics/Bitmap$CompressFormat;->JPEG:Landroid/graphics/Bitmap$CompressFormat;
 
     invoke-virtual {p1, v1, v0, p2}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
@@ -117,7 +106,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     new-instance v0, Ljava/io/File;
 
@@ -151,17 +139,14 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 11
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 12
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
-    .line 13
     :cond_1
     new-instance v1, Ljava/io/File;
 
@@ -187,28 +172,22 @@
 
     invoke-direct {v1, v0, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 14
     invoke-virtual {v1}, Ljava/io/File;->createNewFile()Z
 
-    .line 15
     new-instance v0, Ljava/io/FileOutputStream;
 
     invoke-direct {v0, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
-    .line 16
     invoke-virtual {p2}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p2
 
     invoke-virtual {v0, p2}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 17
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->flush()V
 
-    .line 18
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
 
-    .line 19
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;->h(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;)Lcom/ifengyu/intercom/greendao/bean/b;
@@ -221,7 +200,6 @@
 
     invoke-virtual {p2, v0}, Lcom/ifengyu/intercom/greendao/bean/b;->h(Ljava/lang/String;)V
 
-    .line 20
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;->h(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;)Lcom/ifengyu/intercom/greendao/bean/b;
@@ -236,7 +214,6 @@
 
     invoke-virtual {p2, v0}, Lcom/ifengyu/intercom/greendao/bean/b;->b(Ljava/lang/Boolean;)V
 
-    .line 21
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p2
@@ -257,7 +234,6 @@
 
     invoke-virtual {p2, v0}, Lorg/greenrobot/greendao/AbstractDao;->insertOrReplace(Ljava/lang/Object;)J
 
-    .line 22
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;->i(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;)V
@@ -270,7 +246,6 @@
     :catch_0
     move-exception p2
 
-    .line 23
     invoke-virtual {p2}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_1
@@ -278,10 +253,8 @@
     :catch_1
     move-exception p2
 
-    .line 24
     invoke-virtual {p2}, Ljava/io/FileNotFoundException;->printStackTrace()V
 
-    .line 25
     :goto_1
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->isRecycled()Z
 
@@ -289,7 +262,6 @@
 
     if-nez p2, :cond_2
 
-    .line 26
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
 
     :cond_2

@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;
 .super Ljava/lang/Object;
-.source "GADAREAEXTRAINFO.java"
 
 
 # instance fields
@@ -23,28 +22,20 @@
 .method private constructor <init>(Lcom/autonavi/ae/search/model/GADMINCODE;Landroid/graphics/PointF;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->stAdCode:Lcom/autonavi/ae/search/model/GADMINCODE;
 
-    .line 3
     iput-object p2, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->stCenterPoint:Landroid/graphics/PointF;
 
-    .line 4
     iput p3, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->nTelRegionCode:I
 
-    .line 5
     iput p4, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->nTelAreaCode:I
 
-    .line 6
     iput-object p5, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->pzProvName:Ljava/lang/String;
 
-    .line 7
     iput-object p6, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->pzCityName:Ljava/lang/String;
 
-    .line 8
     iput-object p7, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->pzTownName:Ljava/lang/String;
 
     return-void
@@ -55,7 +46,6 @@
 .method public getAdCode()Lcom/autonavi/ae/search/model/GADMINCODE;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->stAdCode:Lcom/autonavi/ae/search/model/GADMINCODE;
 
     return-object v0
@@ -64,7 +54,6 @@
 .method public getCenterPoint()Landroid/graphics/PointF;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->stCenterPoint:Landroid/graphics/PointF;
 
     return-object v0
@@ -73,7 +62,6 @@
 .method public getCityName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->pzCityName:Ljava/lang/String;
 
     return-object v0
@@ -82,7 +70,6 @@
 .method public getProvName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->pzProvName:Ljava/lang/String;
 
     return-object v0
@@ -91,7 +78,6 @@
 .method public getTelAreaCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->nTelAreaCode:I
 
     return v0
@@ -100,7 +86,6 @@
 .method public getTelRegionCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->nTelRegionCode:I
 
     return v0
@@ -109,7 +94,6 @@
 .method public getTownName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;->pzTownName:Ljava/lang/String;
 
     return-object v0

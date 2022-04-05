@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/util/ExceptionHelper;
 .super Ljava/lang/Object;
-.source "ExceptionHelper.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/util/ExceptionHelper$Termination;
 
     invoke-direct {v0}, Lio/reactivex/internal/util/ExceptionHelper$Termination;-><init>()V
@@ -32,10 +30,8 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "No instances!"
@@ -60,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
@@ -68,7 +63,6 @@
 
     check-cast v0, Ljava/lang/Throwable;
 
-    .line 2
     sget-object v1, Lio/reactivex/internal/util/ExceptionHelper;->TERMINATED:Ljava/lang/Throwable;
 
     const/4 v2, 0x0
@@ -86,7 +80,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_2
     new-instance v3, Lio/reactivex/exceptions/CompositeException;
 
@@ -100,7 +93,6 @@
 
     invoke-direct {v3, v4}, Lio/reactivex/exceptions/CompositeException;-><init>([Ljava/lang/Throwable;)V
 
-    .line 4
     :goto_0
     invoke-virtual {p0, v0, v3}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -124,20 +116,16 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     new-instance v1, Ljava/util/ArrayDeque;
 
     invoke-direct {v1}, Ljava/util/ArrayDeque;-><init>()V
 
-    .line 3
     invoke-virtual {v1, p0}, Ljava/util/ArrayDeque;->offer(Ljava/lang/Object;)Z
 
-    .line 4
     :cond_0
     :goto_0
     invoke-virtual {v1}, Ljava/util/ArrayDeque;->isEmpty()Z
@@ -146,27 +134,22 @@
 
     if-nez p0, :cond_2
 
-    .line 5
     invoke-virtual {v1}, Ljava/util/ArrayDeque;->removeFirst()Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Ljava/lang/Throwable;
 
-    .line 6
     instance-of v2, p0, Lio/reactivex/exceptions/CompositeException;
 
     if-eqz v2, :cond_1
 
-    .line 7
     check-cast p0, Lio/reactivex/exceptions/CompositeException;
 
-    .line 8
     invoke-virtual {p0}, Lio/reactivex/exceptions/CompositeException;->getExceptions()Ljava/util/List;
 
     move-result-object p0
 
-    .line 9
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v2
@@ -176,7 +159,6 @@
     :goto_1
     if-ltz v2, :cond_0
 
-    .line 10
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -187,7 +169,6 @@
 
     goto :goto_1
 
-    .line 11
     :cond_1
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -211,19 +192,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Ljava/lang/Throwable;
 
-    .line 2
     sget-object v1, Lio/reactivex/internal/util/ExceptionHelper;->TERMINATED:Ljava/lang/Throwable;
 
     if-eq v0, v1, :cond_0
 
-    .line 3
     invoke-virtual {p0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -256,17 +234,14 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Ljava/lang/Exception;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, Ljava/lang/Exception;
 
     return-object p0
 
-    .line 3
     :cond_0
     throw p0
 .end method
@@ -274,22 +249,18 @@
 .method public static wrapOrThrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
     .locals 1
 
-    .line 1
     instance-of v0, p0, Ljava/lang/Error;
 
     if-nez v0, :cond_1
 
-    .line 2
     instance-of v0, p0, Ljava/lang/RuntimeException;
 
     if-eqz v0, :cond_0
 
-    .line 3
     check-cast p0, Ljava/lang/RuntimeException;
 
     return-object p0
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -297,7 +268,6 @@
 
     return-object v0
 
-    .line 5
     :cond_1
     check-cast p0, Ljava/lang/Error;
 

@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/common/detector/MonochromeRectangleDetector;
 .super Ljava/lang/Object;
-.source "MonochromeRectangleDetector.java"
 
 
 # annotations
@@ -20,10 +19,8 @@
 .method public constructor <init>(Lcom/google/zxing/common/BitMatrix;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/zxing/common/detector/MonochromeRectangleDetector;->image:Lcom/google/zxing/common/BitMatrix;
 
     return-void
@@ -36,7 +33,6 @@
 
     const/4 v1, 0x2
 
-    .line 1
     div-int/2addr v0, v1
 
     move v2, v0
@@ -44,7 +40,6 @@
     :goto_0
     if-lt v2, p3, :cond_6
 
-    .line 2
     iget-object v3, p0, Lcom/google/zxing/common/detector/MonochromeRectangleDetector;->image:Lcom/google/zxing/common/BitMatrix;
 
     if-eqz p5, :cond_0
@@ -77,7 +72,6 @@
 
     if-lt v3, p3, :cond_4
 
-    .line 3
     iget-object v4, p0, Lcom/google/zxing/common/detector/MonochromeRectangleDetector;->image:Lcom/google/zxing/common/BitMatrix;
 
     if-eqz p5, :cond_3
@@ -90,7 +84,6 @@
 
     goto :goto_2
 
-    .line 4
     :cond_3
     invoke-virtual {v4, p1, v3}, Lcom/google/zxing/common/BitMatrix;->get(II)Z
 
@@ -122,7 +115,6 @@
     :goto_4
     if-ge v0, p4, :cond_d
 
-    .line 5
     iget-object v3, p0, Lcom/google/zxing/common/detector/MonochromeRectangleDetector;->image:Lcom/google/zxing/common/BitMatrix;
 
     if-eqz p5, :cond_7
@@ -155,7 +147,6 @@
 
     if-ge v3, p4, :cond_b
 
-    .line 6
     iget-object v4, p0, Lcom/google/zxing/common/detector/MonochromeRectangleDetector;->image:Lcom/google/zxing/common/BitMatrix;
 
     if-eqz p5, :cond_a
@@ -168,7 +159,6 @@
 
     goto :goto_6
 
-    .line 7
     :cond_a
     invoke-virtual {v4, p1, v3}, Lcom/google/zxing/common/BitMatrix;->get(II)Z
 
@@ -262,7 +252,6 @@
 
     move/from16 v7, p4
 
-    .line 1
     invoke-direct/range {v3 .. v8}, Lcom/google/zxing/common/detector/MonochromeRectangleDetector;->blackWhiteRange(IIIIZ)[I
 
     move-result-object v3
@@ -282,7 +271,6 @@
 
     move/from16 v7, p8
 
-    .line 2
     invoke-direct/range {v3 .. v8}, Lcom/google/zxing/common/detector/MonochromeRectangleDetector;->blackWhiteRange(IIIIZ)[I
 
     move-result-object v3
@@ -300,17 +288,14 @@
 
     sub-int v10, v10, p6
 
-    .line 3
     aget v1, v2, v4
 
     if-ge v1, v0, :cond_3
 
-    .line 4
     aget v1, v2, v3
 
     if-le v1, v0, :cond_2
 
-    .line 5
     new-instance v0, Lcom/google/zxing/ResultPoint;
 
     if-lez p6, :cond_1
@@ -328,7 +313,6 @@
 
     return-object v0
 
-    .line 6
     :cond_2
     new-instance v0, Lcom/google/zxing/ResultPoint;
 
@@ -342,7 +326,6 @@
 
     return-object v0
 
-    .line 7
     :cond_3
     new-instance v0, Lcom/google/zxing/ResultPoint;
 
@@ -359,17 +342,14 @@
     :cond_4
     sub-int v11, v11, p2
 
-    .line 8
     aget v0, v2, v4
 
     if-ge v0, v1, :cond_7
 
-    .line 9
     aget v0, v2, v3
 
     if-le v0, v1, :cond_6
 
-    .line 10
     new-instance v0, Lcom/google/zxing/ResultPoint;
 
     int-to-float v1, v11
@@ -387,7 +367,6 @@
 
     return-object v0
 
-    .line 11
     :cond_6
     new-instance v0, Lcom/google/zxing/ResultPoint;
 
@@ -401,7 +380,6 @@
 
     return-object v0
 
-    .line 12
     :cond_7
     new-instance v0, Lcom/google/zxing/ResultPoint;
 
@@ -415,7 +393,6 @@
 
     return-object v0
 
-    .line 13
     :cond_8
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -432,7 +409,6 @@
 
     goto/16 :goto_0
 
-    .line 14
     :cond_a
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -453,27 +429,22 @@
 
     move-object/from16 v10, p0
 
-    .line 1
     iget-object v0, v10, Lcom/google/zxing/common/detector/MonochromeRectangleDetector;->image:Lcom/google/zxing/common/BitMatrix;
 
     invoke-virtual {v0}, Lcom/google/zxing/common/BitMatrix;->getHeight()I
 
     move-result v11
 
-    .line 2
     iget-object v0, v10, Lcom/google/zxing/common/detector/MonochromeRectangleDetector;->image:Lcom/google/zxing/common/BitMatrix;
 
     invoke-virtual {v0}, Lcom/google/zxing/common/BitMatrix;->getWidth()I
 
     move-result v12
 
-    .line 3
     div-int/lit8 v13, v11, 0x2
 
-    .line 4
     div-int/lit8 v14, v12, 0x2
 
-    .line 5
     div-int/lit16 v0, v11, 0x100
 
     const/4 v15, 0x1
@@ -482,7 +453,6 @@
 
     move-result v9
 
-    .line 6
     div-int/lit16 v0, v12, 0x100
 
     invoke-static {v15, v0}, Ljava/lang/Math;->max(II)I
@@ -491,7 +461,6 @@
 
     neg-int v7, v9
 
-    .line 7
     div-int/lit8 v16, v14, 0x2
 
     const/4 v2, 0x0
@@ -526,7 +495,6 @@
 
     move-result-object v0
 
-    .line 8
     invoke-virtual {v0}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result v0
@@ -539,7 +507,6 @@
 
     neg-int v2, v9
 
-    .line 9
     div-int/lit8 v19, v13, 0x2
 
     const/4 v6, 0x0
@@ -556,7 +523,6 @@
 
     move-result-object v22
 
-    .line 10
     invoke-virtual/range {v22 .. v22}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v0
@@ -571,12 +537,10 @@
 
     move/from16 v3, v23
 
-    .line 11
     invoke-direct/range {v0 .. v9}, Lcom/google/zxing/common/detector/MonochromeRectangleDetector;->findCornerFromCenter(IIIIIIIII)Lcom/google/zxing/ResultPoint;
 
     move-result-object v12
 
-    .line 12
     invoke-virtual {v12}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v0
@@ -595,12 +559,10 @@
 
     move/from16 v9, v16
 
-    .line 13
     invoke-direct/range {v0 .. v9}, Lcom/google/zxing/common/detector/MonochromeRectangleDetector;->findCornerFromCenter(IIIIIIIII)Lcom/google/zxing/ResultPoint;
 
     move-result-object v11
 
-    .line 14
     invoke-virtual {v11}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result v0
@@ -609,7 +571,6 @@
 
     add-int/lit8 v8, v0, 0x1
 
-    .line 15
     div-int/lit8 v9, v14, 0x4
 
     move-object/from16 v0, p0

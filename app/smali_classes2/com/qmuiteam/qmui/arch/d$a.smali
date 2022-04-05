@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/d$a;
 .super Ljava/lang/Object;
-.source "QMUILatestVisit.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/arch/record/RecordIdClassMap;
@@ -21,7 +20,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/d;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

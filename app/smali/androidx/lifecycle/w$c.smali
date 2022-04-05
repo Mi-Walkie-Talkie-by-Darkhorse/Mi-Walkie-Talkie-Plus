@@ -1,6 +1,5 @@
 .class abstract Landroidx/lifecycle/w$c;
 .super Landroidx/lifecycle/w$e;
-.source "ViewModelProvider.java"
 
 # interfaces
 .implements Landroidx/lifecycle/w$b;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/lifecycle/w$e;-><init>()V
 
     return-void
@@ -72,7 +70,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "create(String, Class<?>) must be called on implementaions of KeyedFactory"

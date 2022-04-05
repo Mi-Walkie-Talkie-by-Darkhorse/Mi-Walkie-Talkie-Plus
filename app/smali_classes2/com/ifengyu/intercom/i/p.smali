@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/p;
 .super Ljava/lang/Object;
-.source "Constants.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -34,7 +32,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/i/p;->a:Landroid/graphics/Typeface;
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -51,7 +48,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/i/p;->b:Landroid/graphics/Typeface;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -70,7 +66,6 @@
 
     const/4 v0, 0x1
 
-    .line 4
     :try_start_0
     sget-object v1, Lcom/ifengyu/intercom/i/p;->b:Landroid/graphics/Typeface;
 
@@ -83,7 +78,6 @@
     :catch_0
     move-exception v1
 
-    .line 5
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
     :goto_0

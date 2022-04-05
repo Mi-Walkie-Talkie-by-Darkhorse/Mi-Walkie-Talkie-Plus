@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/http/UrlConnHttpFactory$HttpUrlConnClient;
 .super Ljava/lang/Object;
-.source "UrlConnHttpFactory.java"
 
 # interfaces
 .implements Lcom/xiaomi/account/http/HttpClient;
@@ -33,22 +32,18 @@
 .method private constructor <init>(Lcom/xiaomi/account/http/UrlConnHttpFactory;Lcom/xiaomi/account/http/HttpClientConfig;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/xiaomi/account/http/UrlConnHttpFactory$HttpUrlConnClient;->this$0:Lcom/xiaomi/account/http/UrlConnHttpFactory;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p2, p0, Lcom/xiaomi/account/http/UrlConnHttpFactory$HttpUrlConnClient;->config:Lcom/xiaomi/account/http/HttpClientConfig;
 
-    .line 4
     new-instance p1, Ljava/net/CookieManager;
 
     invoke-direct {p1}, Ljava/net/CookieManager;-><init>()V
 
     invoke-static {p1}, Ljava/net/CookieHandler;->setDefault(Ljava/net/CookieHandler;)V
 
-    .line 5
     invoke-static {}, Ljava/net/CookieHandler;->getDefault()Ljava/net/CookieHandler;
 
     move-result-object p1
@@ -65,7 +60,6 @@
 .method synthetic constructor <init>(Lcom/xiaomi/account/http/UrlConnHttpFactory;Lcom/xiaomi/account/http/HttpClientConfig;Lcom/xiaomi/account/http/UrlConnHttpFactory$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/xiaomi/account/http/UrlConnHttpFactory$HttpUrlConnClient;-><init>(Lcom/xiaomi/account/http/UrlConnHttpFactory;Lcom/xiaomi/account/http/HttpClientConfig;)V
 
     return-void
@@ -81,7 +75,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/net/URL;
 
     iget-object v1, p1, Lcom/xiaomi/account/http/Request;->url:Ljava/lang/String;
@@ -94,7 +87,6 @@
 
     check-cast v0, Ljava/net/HttpURLConnection;
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/xiaomi/account/http/UrlConnHttpFactory$HttpUrlConnClient;->config:Lcom/xiaomi/account/http/HttpClientConfig;
 
@@ -104,7 +96,6 @@
 
     invoke-virtual {v0, v2}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
 
-    .line 3
     iget-object v1, p0, Lcom/xiaomi/account/http/UrlConnHttpFactory$HttpUrlConnClient;->config:Lcom/xiaomi/account/http/HttpClientConfig;
 
     iget-wide v1, v1, Lcom/xiaomi/account/http/HttpClientConfig;->readTimeoutMs:J
@@ -113,22 +104,18 @@
 
     invoke-virtual {v0, v2}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
 
-    .line 4
     iget-object v1, p1, Lcom/xiaomi/account/http/Request;->formBody:Ljava/util/Map;
 
     if-eqz v1, :cond_0
 
     const/4 v1, 0x1
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setDoInput(Z)V
 
-    .line 6
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setDoOutput(Z)V
 
     const-string v1, "POST"
 
-    .line 7
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
     goto :goto_0
@@ -136,21 +123,17 @@
     :cond_0
     const-string v1, "GET"
 
-    .line 8
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
-    .line 9
     :goto_0
     iget-boolean v1, p1, Lcom/xiaomi/account/http/Request;->followRedirects:Z
 
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->setInstanceFollowRedirects(Z)V
 
-    .line 10
     iget-object v1, p1, Lcom/xiaomi/account/http/Request;->headers:Ljava/util/Map;
 
     if-eqz v1, :cond_1
 
-    .line 11
     iget-object v1, p1, Lcom/xiaomi/account/http/Request;->headers:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -174,7 +157,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 12
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -191,21 +173,17 @@
 
     goto :goto_1
 
-    .line 13
     :cond_1
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->connect()V
 
-    .line 14
     iget-object v1, p1, Lcom/xiaomi/account/http/Request;->formBody:Ljava/util/Map;
 
     if-eqz v1, :cond_2
 
-    .line 15
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v1
 
-    .line 16
     new-instance v2, Ljava/io/BufferedWriter;
 
     new-instance v3, Ljava/io/OutputStreamWriter;
@@ -216,7 +194,6 @@
 
     invoke-direct {v2, v3}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;)V
 
-    .line 17
     iget-object p1, p1, Lcom/xiaomi/account/http/Request;->formBody:Ljava/util/Map;
 
     invoke-static {p1}, Lcom/xiaomi/account/http/UrlConnHttpFactory;->joinToQuery(Ljava/util/Map;)Ljava/lang/String;
@@ -225,34 +202,27 @@
 
     invoke-virtual {v2, p1}, Ljava/io/BufferedWriter;->write(Ljava/lang/String;)V
 
-    .line 18
     invoke-virtual {v2}, Ljava/io/BufferedWriter;->flush()V
 
-    .line 19
     invoke-virtual {v2}, Ljava/io/BufferedWriter;->close()V
 
-    .line 20
     invoke-virtual {v1}, Ljava/io/OutputStream;->close()V
 
-    .line 21
     :cond_2
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result p1
 
-    .line 22
     new-instance v1, Lcom/xiaomi/account/http/Response$Builder;
 
     invoke-direct {v1}, Lcom/xiaomi/account/http/Response$Builder;-><init>()V
 
-    .line 23
     invoke-virtual {v1, p1}, Lcom/xiaomi/account/http/Response$Builder;->code(I)Lcom/xiaomi/account/http/Response$Builder;
 
     move-result-object v1
 
     const-string v2, "Location"
 
-    .line 24
     invoke-virtual {v0, v2}, Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -263,7 +233,6 @@
 
     const-string v2, "Set-Cookie"
 
-    .line 25
     invoke-virtual {v0, v2}, Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -272,7 +241,6 @@
 
     move-result-object v1
 
-    .line 26
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getHeaderFields()Ljava/util/Map;
 
     move-result-object v2
@@ -289,7 +257,6 @@
 
     const/4 p1, 0x0
 
-    .line 27
     :try_start_1
     new-instance v2, Ljava/io/BufferedReader;
 
@@ -307,13 +274,11 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 28
     :try_start_2
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 29
     :goto_2
     invoke-virtual {v2}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
@@ -321,12 +286,10 @@
 
     if-eqz v3, :cond_3
 
-    .line 30
     invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_2
 
-    .line 31
     :cond_3
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -342,13 +305,11 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 32
     :try_start_3
     invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 33
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 
     return-object p1
@@ -368,14 +329,12 @@
     :goto_3
     if-eqz v2, :cond_4
 
-    .line 34
     :try_start_4
     invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
 
     :cond_4
     throw p1
 
-    .line 35
     :cond_5
     invoke-virtual {v1}, Lcom/xiaomi/account/http/Response$Builder;->build()Lcom/xiaomi/account/http/Response;
 
@@ -383,7 +342,6 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 36
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 
     return-object p1

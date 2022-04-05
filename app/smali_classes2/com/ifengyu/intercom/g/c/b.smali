@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/intercom/g/c/b;
 .super Ljava/lang/Object;
-.source "OkHttpRequestBuilder.java"
 
 
 # annotations
@@ -48,7 +47,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -66,7 +64,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/g/c/b;->a:Ljava/lang/String;
 
     return-object p0

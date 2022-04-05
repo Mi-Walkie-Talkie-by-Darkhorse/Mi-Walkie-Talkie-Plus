@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/b$a;
 .super Ljava/lang/Object;
-.source "BtKeyCommand.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,7 +31,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/node/b$a;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/node/b$a;->a:I
 
     return p0
@@ -42,7 +39,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/node/b$a;)Lcom/ifengyu/intercom/node/btkey/a;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/node/b$a;->b:Lcom/ifengyu/intercom/node/btkey/a;
 
     return-object p0
@@ -53,7 +49,6 @@
 .method public a(I)Lcom/ifengyu/intercom/node/b$a;
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/node/b$a;->a:I
 
     return-object p0
@@ -62,7 +57,6 @@
 .method public a(Lcom/ifengyu/intercom/node/btkey/a;)Lcom/ifengyu/intercom/node/b$a;
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/node/b$a;->b:Lcom/ifengyu/intercom/node/btkey/a;
 
     return-object p0
@@ -71,7 +65,6 @@
 .method public a()Lcom/ifengyu/intercom/node/b;
     .locals 1
 
-    .line 4
     new-instance v0, Lcom/ifengyu/intercom/node/b;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/node/b;-><init>(Lcom/ifengyu/intercom/node/b$a;)V

@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/util/Mercator;
 .super Ljava/lang/Object;
-.source "Mercator.java"
 
 # interfaces
 .implements Lorg/osmdroid/views/util/constants/MapViewConstants;
@@ -19,7 +18,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 .method public static getBoundingBoxFromCoords(DDDDI)Lorg/osmdroid/util/BoundingBox;
     .locals 3
 
-    .line 1
     new-instance v0, Lorg/osmdroid/util/BoundingBox;
 
     double-to-int p2, p2
@@ -45,7 +42,6 @@
 
     double-to-int p6, p6
 
-    .line 2
     invoke-static {p6, p8}, Lorg/osmdroid/views/util/Mercator;->tile2lat(II)D
 
     move-result-wide p6
@@ -74,7 +70,6 @@
 .method public static getBoundingBoxFromPointInMapTile(Landroid/graphics/Point;I)Lorg/osmdroid/util/BoundingBox;
     .locals 10
 
-    .line 1
     new-instance v9, Lorg/osmdroid/util/BoundingBox;
 
     iget v0, p0, Landroid/graphics/Point;->y:I
@@ -95,7 +90,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 2
     invoke-static {v0, p1}, Lorg/osmdroid/views/util/Mercator;->tile2lat(II)D
 
     move-result-wide v5
@@ -120,7 +114,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance p5, Landroid/graphics/Point;
 
@@ -145,7 +138,6 @@
 
     mul-double p2, p2, v0
 
-    .line 3
     invoke-static {p2, p3}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide p2
@@ -158,12 +150,10 @@
 
     mul-double p0, p0, p2
 
-    .line 4
     invoke-static {p0, p1}, Ljava/lang/Math;->tan(D)D
 
     move-result-wide p2
 
-    .line 5
     invoke-static {p0, p1}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide p0
@@ -174,7 +164,6 @@
 
     add-double/2addr p2, p0
 
-    .line 6
     invoke-static {p2, p3}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -205,7 +194,6 @@
 .method public static projectGeoPoint(Lorg/osmdroid/api/IGeoPoint;ILandroid/graphics/Point;)Landroid/graphics/Point;
     .locals 6
 
-    .line 1
     invoke-interface {p0}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide v0
@@ -228,7 +216,6 @@
 .method public static projectPoint(III)Lorg/osmdroid/util/GeoPoint;
     .locals 3
 
-    .line 1
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     invoke-static {p1, p2}, Lorg/osmdroid/views/util/Mercator;->tile2lat(II)D
@@ -265,7 +252,6 @@
 
     sub-double/2addr p0, v0
 
-    .line 1
     invoke-static {p0, p1}, Ljava/lang/Math;->exp(D)D
 
     move-result-wide v0

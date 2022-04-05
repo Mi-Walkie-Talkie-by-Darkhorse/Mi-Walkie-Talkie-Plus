@@ -1,6 +1,5 @@
 .class synthetic Lcom/umeng/analytics/pro/q$1;
 .super Ljava/lang/Object;
-.source "DefconProcesser.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public abstract Lcom/amap/api/col/l3/jd;
 .super Ljava/lang/Object;
-.source "ThreadTask.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -22,7 +21,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,13 +34,11 @@
 .method public final e()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jd;->a:Lcom/amap/api/col/l3/jd$a;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/jd;->a:Lcom/amap/api/col/l3/jd$a;
 
     invoke-interface {v0, p0}, Lcom/amap/api/col/l3/jd$a;->b(Lcom/amap/api/col/l3/jd;)V
@@ -59,10 +55,8 @@
 
     const-string v2, "cancelTask"
 
-    .line 3
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -71,11 +65,9 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jd;->a:Lcom/amap/api/col/l3/jd$a;
 
-    .line 2
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result v0
@@ -84,11 +76,9 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Lcom/amap/api/col/l3/jd;->a()V
 
-    .line 4
     invoke-static {}, Ljava/lang/Thread;->interrupted()Z
 
     move-result v0
@@ -97,13 +87,11 @@
 
     return-void
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/jd;->a:Lcom/amap/api/col/l3/jd$a;
 
     if-eqz v0, :cond_2
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/jd;->a:Lcom/amap/api/col/l3/jd$a;
 
     invoke-interface {v0, p0}, Lcom/amap/api/col/l3/jd$a;->a(Lcom/amap/api/col/l3/jd;)V
@@ -120,10 +108,8 @@
 
     const-string v2, "run"
 
-    .line 7
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

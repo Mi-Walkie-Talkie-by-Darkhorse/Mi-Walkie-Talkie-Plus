@@ -1,6 +1,5 @@
 .class public final Landroidx/core/app/NotificationCompat$a;
 .super Ljava/lang/Object;
-.source "NotificationCompat.java"
 
 
 # annotations
@@ -37,7 +36,6 @@
 
     return-object v0
 
-    .line 1
     :cond_0
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -45,7 +43,6 @@
 
     if-lt v1, v2, :cond_1
 
-    .line 2
     invoke-static {p0}, Landroidx/core/app/NotificationCompat$a$b;->a(Landroidx/core/app/NotificationCompat$a;)Landroid/app/Notification$BubbleMetadata;
 
     move-result-object p0
@@ -57,7 +54,6 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 3
     invoke-static {p0}, Landroidx/core/app/NotificationCompat$a$a;->a(Landroidx/core/app/NotificationCompat$a;)Landroid/app/Notification$BubbleMetadata;
 
     move-result-object p0

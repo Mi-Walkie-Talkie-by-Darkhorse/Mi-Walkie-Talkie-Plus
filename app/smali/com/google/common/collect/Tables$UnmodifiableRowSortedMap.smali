@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;
 .super Lcom/google/common/collect/Tables$UnmodifiableTable;
-.source "Tables.java"
 
 # interfaces
 .implements Lcom/google/common/collect/RowSortedTable;
@@ -48,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/Tables$UnmodifiableTable;-><init>(Lcom/google/common/collect/Table;)V
 
     return-void
@@ -66,7 +64,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-super {p0}, Lcom/google/common/collect/Tables$UnmodifiableTable;->delegate()Lcom/google/common/collect/Table;
 
     move-result-object v0
@@ -79,7 +76,6 @@
 .method protected bridge synthetic delegate()Lcom/google/common/collect/Table;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->delegate()Lcom/google/common/collect/RowSortedTable;
 
     move-result-object v0
@@ -90,7 +86,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->delegate()Lcom/google/common/collect/RowSortedTable;
 
     move-result-object v0
@@ -101,7 +96,6 @@
 .method public bridge synthetic rowKeySet()Ljava/util/Set;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->rowKeySet()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -119,7 +113,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->delegate()Lcom/google/common/collect/RowSortedTable;
 
     move-result-object v0
@@ -138,7 +131,6 @@
 .method public bridge synthetic rowMap()Ljava/util/Map;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->rowMap()Ljava/util/SortedMap;
 
     move-result-object v0
@@ -158,12 +150,10 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/Tables;->access$000()Lcom/google/common/base/Function;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/common/collect/Tables$UnmodifiableRowSortedMap;->delegate()Lcom/google/common/collect/RowSortedTable;
 
     move-result-object v1

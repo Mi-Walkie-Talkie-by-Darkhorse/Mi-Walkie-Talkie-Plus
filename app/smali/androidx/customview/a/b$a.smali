@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/customview/a/b$a;
 .super Ljava/lang/Object;
-.source "FocusStrategy.java"
 
 
 # annotations

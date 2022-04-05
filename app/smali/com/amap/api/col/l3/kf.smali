@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kf;
 .super Ljava/lang/Object;
-.source "ReportUtil.java"
 
 
 # static fields
@@ -47,7 +46,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -56,15 +54,12 @@
 
     const/4 v0, 0x0
 
-    .line 2
     sput-object v0, Lcom/amap/api/col/l3/kf;->j:Lorg/json/JSONArray;
 
-    .line 3
     sput-object v0, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
     const/4 v0, 0x0
 
-    .line 4
     sput-boolean v0, Lcom/amap/api/col/l3/kf;->h:Z
 
     return-void
@@ -73,10 +68,8 @@
 .method public constructor <init>()V
     .locals 9
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
@@ -85,12 +78,10 @@
 
     const/4 v0, -0x1
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/kf;->b:I
 
     const-wide/16 v1, 0x0
 
-    .line 4
     iput-wide v1, p0, Lcom/amap/api/col/l3/kf;->c:J
 
     const-string v3, "ol"
@@ -105,19 +96,16 @@
 
     const-string v8, "ds"
 
-    .line 5
     filled-new-array/range {v3 .. v8}, [Ljava/lang/String;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
-    .line 6
     iput v0, p0, Lcom/amap/api/col/l3/kf;->e:I
 
     const-wide/16 v0, -0x1
 
-    .line 7
     iput-wide v0, p0, Lcom/amap/api/col/l3/kf;->f:J
 
     return-void
@@ -130,7 +118,6 @@
 
     const-string v1, "yyyy-MM-dd HH:mm:ss.SSS"
 
-    .line 132
     :try_start_0
     sget-boolean v2, Lcom/amap/api/col/l3/kf;->h:Z
 
@@ -138,7 +125,6 @@
 
     return-void
 
-    .line 133
     :cond_0
     new-instance v2, Ljava/lang/StringBuffer;
 
@@ -146,7 +132,6 @@
 
     const-string v3, "gpsTime:"
 
-    .line 134
     invoke-virtual {v2, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     invoke-static {p0, p1, v1}, Lcom/amap/api/col/l3/ki;->a(JLjava/lang/String;)Ljava/lang/String;
@@ -159,7 +144,6 @@
 
     const-string v3, "sysTime:"
 
-    .line 135
     invoke-virtual {v2, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     invoke-static {p2, p3, v1}, Lcom/amap/api/col/l3/ki;->a(JLjava/lang/String;)Ljava/lang/String;
@@ -170,7 +154,6 @@
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 136
     invoke-static {}, Lcom/amap/api/col/l3/jy;->G()J
 
     move-result-wide p2
@@ -183,7 +166,6 @@
 
     if-eqz v5, :cond_1
 
-    .line 137
     invoke-static {p2, p3, v1}, Lcom/amap/api/col/l3/ki;->a(JLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -191,14 +173,12 @@
     :cond_1
     const-string v1, "serverTime:"
 
-    .line 138
     invoke-virtual {v2, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     invoke-virtual {v2, v0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     const-string v0, "checkgpstime"
 
-    .line 139
     invoke-virtual {v2}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -209,7 +189,6 @@
 
     sub-long/2addr p0, p2
 
-    .line 140
     invoke-static {p0, p1}, Ljava/lang/Math;->abs(J)J
 
     move-result-wide p0
@@ -222,12 +201,10 @@
 
     const-string p0, ", correctError"
 
-    .line 141
     invoke-virtual {v2, p0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     const-string p0, "checkgpstimeerror"
 
-    .line 142
     invoke-virtual {v2}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -237,7 +214,6 @@
     :cond_2
     const/4 p0, 0x0
 
-    .line 143
     invoke-virtual {v2}, Ljava/lang/StringBuffer;->length()I
 
     move-result p1
@@ -246,7 +222,6 @@
 
     const/4 p0, 0x1
 
-    .line 144
     sput-boolean p0, Lcom/amap/api/col/l3/kf;->h:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -260,7 +235,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 57
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/jy;->i()Z
 
@@ -270,7 +244,6 @@
 
     goto :goto_0
 
-    .line 58
     :cond_0
     sget-object v0, Lcom/amap/api/col/l3/kf;->i:Ljava/util/List;
 
@@ -284,25 +257,20 @@
 
     if-lez v0, :cond_1
 
-    .line 59
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 60
     sget-object v1, Lcom/amap/api/col/l3/kf;->i:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 61
     invoke-static {v0, p0}, Lcom/amap/api/col/l3/im;->a(Ljava/util/List;Landroid/content/Context;)V
 
-    .line 62
     sget-object v0, Lcom/amap/api/col/l3/kf;->i:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 63
     :cond_1
     invoke-static {p0}, Lcom/amap/api/col/l3/kf;->f(Landroid/content/Context;)V
     :try_end_0
@@ -317,7 +285,6 @@
 
     const-string v1, "destroy"
 
-    .line 64
     invoke-static {p0, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_2
@@ -346,7 +313,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 90
     :try_start_1
     invoke-static {}, Lcom/amap/api/col/l3/jy;->i()Z
 
@@ -402,7 +368,6 @@
 
     const-string p1, "reportServiceAliveTime"
 
-    .line 91
     invoke-static {p0, v0, p1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_3
@@ -415,7 +380,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 26
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/jy;->i()Z
 
@@ -425,7 +389,6 @@
 
     goto :goto_0
 
-    .line 27
     :cond_0
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -452,7 +415,6 @@
 
     move-object v0, p0
 
-    .line 28
     invoke-static/range {v0 .. v5}, Lcom/amap/api/col/l3/kf;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -466,7 +428,6 @@
 
     const-string p2, "reportGPSLocUseTime"
 
-    .line 29
     invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_2
@@ -479,7 +440,6 @@
 
     if-eqz p0, :cond_7
 
-    .line 12
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/jy;->i()Z
 
@@ -489,13 +449,11 @@
 
     goto/16 :goto_3
 
-    .line 13
     :cond_0
     invoke-virtual {p1}, Lcom/amap/api/col/l3/ke;->c()Lcom/amap/api/col/l3/jh;
 
     move-result-object v0
 
-    .line 14
     invoke-static {v0}, Lcom/amap/api/col/l3/ki;->a(Lcom/amap/api/col/l3/jh;)Z
 
     move-result v1
@@ -507,7 +465,6 @@
     :cond_1
     const-string v1, "gps"
 
-    .line 15
     invoke-virtual {v0}, Lcom/amap/api/location/AMapLocation;->getProvider()Ljava/lang/String;
 
     move-result-object v2
@@ -518,7 +475,6 @@
 
     if-nez v1, :cond_6
 
-    .line 16
     invoke-virtual {v0}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
     move-result v1
@@ -529,20 +485,17 @@
 
     goto :goto_2
 
-    .line 17
     :cond_2
     invoke-virtual {p1}, Lcom/amap/api/col/l3/ke;->a()J
 
     move-result-wide v3
 
-    .line 18
     invoke-virtual {p1}, Lcom/amap/api/col/l3/ke;->b()J
 
     move-result-wide v5
 
     sub-long/2addr v5, v3
 
-    .line 19
     invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -553,7 +506,6 @@
 
     const/4 v1, 0x0
 
-    .line 20
     invoke-virtual {v0}, Lcom/amap/api/col/l3/jh;->k()J
 
     move-result-wide v3
@@ -566,7 +518,6 @@
 
     move-result v7
 
-    .line 21
     invoke-virtual {v0}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
     move-result v3
@@ -593,7 +544,6 @@
     :goto_0
     const-string v3, "domestic"
 
-    .line 22
     invoke-static {v0}, Lcom/amap/api/col/l3/kf;->a(Lcom/amap/api/location/AMapLocation;)Z
 
     move-result v0
@@ -620,7 +570,6 @@
 
     move v8, p1
 
-    .line 23
     invoke-static/range {v3 .. v8}, Lcom/amap/api/col/l3/kf;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
 
     :cond_5
@@ -636,7 +585,6 @@
 
     move v7, p1
 
-    .line 24
     invoke-static/range {v3 .. v8}, Lcom/amap/api/col/l3/kf;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -652,7 +600,6 @@
 
     const-string v0, "reportLBSLocUseTime"
 
-    .line 25
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_7
@@ -671,7 +618,6 @@
     :try_start_0
     const-string v0, "gps"
 
-    .line 4
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getProvider()Ljava/lang/String;
 
     move-result-object v1
@@ -682,7 +628,6 @@
 
     if-nez v0, :cond_6
 
-    .line 5
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
     move-result v0
@@ -696,7 +641,6 @@
     :cond_1
     const-string v0, "domestic"
 
-    .line 6
     invoke-static {p1}, Lcom/amap/api/col/l3/kf;->a(Lcom/amap/api/location/AMapLocation;)Z
 
     move-result v2
@@ -708,7 +652,6 @@
     :cond_2
     move-object v3, v0
 
-    .line 7
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getErrorCode()I
 
     move-result v0
@@ -727,7 +670,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 8
     :try_start_1
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getErrorCode()I
 
@@ -755,7 +697,6 @@
 
     goto :goto_2
 
-    .line 9
     :cond_4
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
@@ -780,7 +721,6 @@
 
     move-object v0, p0
 
-    .line 10
     invoke-static/range {v0 .. v5}, Lcom/amap/api/col/l3/kf;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -796,7 +736,6 @@
 
     const-string v0, "reportBatting"
 
-    .line 11
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -808,7 +747,6 @@
     :try_start_0
     const-string v0, "O009"
 
-    .line 69
     invoke-static {p0, v0, p2, p1}, Lcom/amap/api/col/l3/kf;->a(Landroid/content/Context;Ljava/lang/String;ILjava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -822,7 +760,6 @@
 
     const-string p2, "reportDexLoadDexClass"
 
-    .line 70
     invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -833,7 +770,6 @@
 
     if-eqz p0, :cond_3
 
-    .line 30
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/jy;->i()Z
 
@@ -843,13 +779,11 @@
 
     goto :goto_0
 
-    .line 31
     :cond_0
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 32
     invoke-static {p3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -858,7 +792,6 @@
 
     const-string v1, "param_string_first"
 
-    .line 33
     invoke-virtual {v0, v1, p3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     :cond_1
@@ -868,10 +801,8 @@
 
     const-string p3, "param_int_first"
 
-    .line 34
     invoke-virtual {v0, p3, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    .line 35
     :cond_2
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/kf;->a(Landroid/content/Context;Ljava/lang/String;Lorg/json/JSONObject;)V
     :try_end_0
@@ -886,7 +817,6 @@
 
     const-string p2, "applyStatisticsEx"
 
-    .line 36
     invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_3
@@ -899,7 +829,6 @@
 
     if-eqz p0, :cond_5
 
-    .line 37
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/jy;->i()Z
 
@@ -909,13 +838,11 @@
 
     goto :goto_0
 
-    .line 38
     :cond_0
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 39
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -924,10 +851,8 @@
 
     const-string v1, "param_string_first"
 
-    .line 40
     invoke-virtual {v0, v1, p2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 41
     :cond_1
     invoke-static {p3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -937,7 +862,6 @@
 
     const-string p2, "param_string_second"
 
-    .line 42
     invoke-virtual {v0, p2, p3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     :cond_2
@@ -947,7 +871,6 @@
 
     const-string p3, "param_int_first"
 
-    .line 43
     invoke-virtual {v0, p3, p4}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     :cond_3
@@ -955,10 +878,8 @@
 
     const-string p2, "param_int_second"
 
-    .line 44
     invoke-virtual {v0, p2, p5}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    .line 45
     :cond_4
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/kf;->a(Landroid/content/Context;Ljava/lang/String;Lorg/json/JSONObject;)V
     :try_end_0
@@ -973,7 +894,6 @@
 
     const-string p2, "applyStatisticsEx"
 
-    .line 46
     invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_5
@@ -986,7 +906,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 47
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/jy;->i()Z
 
@@ -996,7 +915,6 @@
 
     goto :goto_0
 
-    .line 48
     :cond_0
     new-instance v0, Lcom/amap/api/col/l3/il;
 
@@ -1006,19 +924,16 @@
 
     invoke-direct {v0, p0, v1, v2, p1}, Lcom/amap/api/col/l3/il;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 49
     invoke-virtual {p2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/il;->a(Ljava/lang/String;)V
 
-    .line 50
     sget-object p1, Lcom/amap/api/col/l3/kf;->i:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 51
     sget-object p1, Lcom/amap/api/col/l3/kf;->i:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -1029,20 +944,16 @@
 
     if-lt p1, p2, :cond_1
 
-    .line 52
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 53
     sget-object p2, Lcom/amap/api/col/l3/kf;->i:Ljava/util/List;
 
     invoke-interface {p1, p2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 54
     invoke-static {p1, p0}, Lcom/amap/api/col/l3/im;->a(Ljava/util/List;Landroid/content/Context;)V
 
-    .line 55
     sget-object p0, Lcom/amap/api/col/l3/kf;->i:Ljava/util/List;
 
     invoke-interface {p0}, Ljava/util/List;->clear()V
@@ -1059,7 +970,6 @@
 
     const-string p2, "applyStatistics"
 
-    .line 56
     invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_2
@@ -1074,25 +984,21 @@
 
     const-string v1, ","
 
-    .line 96
     :try_start_0
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
     if-nez v2, :cond_1
 
-    .line 97
     invoke-static {p0}, Lcom/amap/api/col/l3/ki;->a(Lcom/amap/api/location/AMapLocation;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 98
     sput-object p1, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
     return-void
 
-    .line 99
     :cond_0
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->clone()Lcom/amap/api/location/AMapLocation;
 
@@ -1100,7 +1006,6 @@
 
     sput-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
-    .line 100
     :cond_1
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
@@ -1110,19 +1015,16 @@
 
     if-eqz v2, :cond_6
 
-    .line 101
     invoke-static {p1}, Lcom/amap/api/col/l3/ki;->a(Lcom/amap/api/location/AMapLocation;)Z
 
     move-result v2
 
     if-eqz v2, :cond_6
 
-    .line 102
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->clone()Lcom/amap/api/location/AMapLocation;
 
     move-result-object p1
 
-    .line 103
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
     invoke-virtual {v2}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
@@ -1135,7 +1037,6 @@
 
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
-    .line 104
     invoke-virtual {v2}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
     move-result v2
@@ -1146,7 +1047,6 @@
 
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
-    .line 105
     invoke-virtual {v2}, Lcom/amap/api/location/AMapLocation;->getProvider()Ljava/lang/String;
 
     move-result-object v2
@@ -1159,7 +1059,6 @@
 
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
-    .line 106
     invoke-virtual {v2}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
     move-result v2
@@ -1168,21 +1067,18 @@
 
     if-eq v2, v5, :cond_5
 
-    .line 107
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
     move-result v2
 
     if-eq v2, v3, :cond_5
 
-    .line 108
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
     move-result v2
 
     if-eq v2, v4, :cond_5
 
-    .line 109
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getProvider()Ljava/lang/String;
 
     move-result-object v2
@@ -1193,14 +1089,12 @@
 
     if-nez v0, :cond_5
 
-    .line 110
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
     move-result v0
 
     if-eq v0, v5, :cond_5
 
-    .line 111
     invoke-virtual {p1}, Landroid/location/Location;->getTime()J
 
     move-result-wide v2
@@ -1236,7 +1130,6 @@
 
     if-gtz v0, :cond_5
 
-    .line 112
     sget-object v0, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
     invoke-static {v0, p1}, Lcom/amap/api/col/l3/ki;->a(Lcom/amap/api/location/AMapLocation;Lcom/amap/api/location/AMapLocation;)F
@@ -1259,12 +1152,10 @@
 
     if-lez v0, :cond_5
 
-    .line 113
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 114
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
     invoke-virtual {v2}, Lcom/amap/api/location/AMapLocation;->getLatitude()D
@@ -1275,7 +1166,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 115
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
     invoke-virtual {v2}, Lcom/amap/api/location/AMapLocation;->getLongitude()D
@@ -1286,7 +1176,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 116
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
     invoke-virtual {v2}, Lcom/amap/api/location/AMapLocation;->getAccuracy()F
@@ -1297,7 +1186,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 117
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
     invoke-virtual {v2}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
@@ -1308,7 +1196,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 118
     invoke-virtual {p0}, Landroid/location/Location;->getTime()J
 
     move-result-wide v2
@@ -1321,7 +1208,6 @@
 
     if-eqz v6, :cond_3
 
-    .line 119
     :try_start_1
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
@@ -1337,7 +1223,6 @@
 
     goto :goto_0
 
-    .line 120
     :cond_3
     sget-object v2, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
 
@@ -1350,10 +1235,8 @@
     :goto_0
     const-string v2, "#"
 
-    .line 121
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 122
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLatitude()D
 
     move-result-wide v2
@@ -1362,7 +1245,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 123
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLongitude()D
 
     move-result-wide v2
@@ -1371,7 +1253,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 124
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAccuracy()F
 
     move-result v2
@@ -1380,7 +1261,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 125
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
     move-result v2
@@ -1389,7 +1269,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 126
     invoke-virtual {p1}, Landroid/location/Location;->getTime()J
 
     move-result-wide v1
@@ -1398,7 +1277,6 @@
 
     if-eqz v3, :cond_4
 
-    .line 127
     invoke-virtual {p1}, Landroid/location/Location;->getTime()J
 
     move-result-wide v1
@@ -1411,7 +1289,6 @@
 
     goto :goto_1
 
-    .line 128
     :cond_4
     invoke-virtual {p1}, Landroid/location/Location;->getTime()J
 
@@ -1422,7 +1299,6 @@
     :goto_1
     const-string p0, "bigshiftstatistics"
 
-    .line 129
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -1431,14 +1307,12 @@
 
     const/4 p0, 0x0
 
-    .line 130
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
     move-result v1
 
     invoke-virtual {v0, p0, v1}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
 
-    .line 131
     :cond_5
     sput-object p1, Lcom/amap/api/col/l3/kf;->g:Lcom/amap/api/location/AMapLocation;
     :try_end_1
@@ -1452,7 +1326,6 @@
 .method public static a(Ljava/lang/String;I)V
     .locals 2
 
-    .line 92
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v0
@@ -1674,13 +1547,11 @@
 .method public static a(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 65
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/jz;->b()Lcom/amap/api/col/l3/gh;
 
     move-result-object v0
 
-    .line 66
     invoke-static {v0, p1, p0}, Lcom/amap/api/col/l3/gv;->b(Lcom/amap/api/col/l3/gh;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1694,7 +1565,6 @@
 
     const-string v0, "reportLog"
 
-    .line 67
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -1703,7 +1573,6 @@
 .method public static a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 93
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/jz;->b()Lcom/amap/api/col/l3/gh;
 
@@ -1722,13 +1591,11 @@
 .method public static a(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 1
 
-    .line 94
     :try_start_0
     instance-of v0, p1, Lcom/amap/api/col/l3/fv;
 
     if-eqz v0, :cond_0
 
-    .line 95
     invoke-static {}, Lcom/amap/api/col/l3/jz;->b()Lcom/amap/api/col/l3/gh;
 
     move-result-object v0
@@ -1747,7 +1614,6 @@
 .method public static a(Landroid/content/Context;Lcom/amap/api/col/l3/gh;)Z
     .locals 0
 
-    .line 68
     :try_start_0
     invoke-static {p0, p1}, Lcom/amap/api/col/l3/hl;->b(Landroid/content/Context;Lcom/amap/api/col/l3/gh;)Z
 
@@ -1767,7 +1633,6 @@
 .method private static a(Lcom/amap/api/location/AMapLocation;)Z
     .locals 7
 
-    .line 1
     invoke-static {p0}, Lcom/amap/api/col/l3/ki;->a(Lcom/amap/api/location/AMapLocation;)Z
 
     move-result v0
@@ -1778,7 +1643,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getLatitude()D
 
     move-result-wide v3
@@ -1798,7 +1662,6 @@
     :cond_0
     return v1
 
-    .line 3
     :cond_1
     sget-object p0, Lcom/amap/api/col/l3/jz;->a:Ljava/lang/String;
 
@@ -1819,7 +1682,6 @@
 .method public static b(Landroid/content/Context;Lcom/amap/api/location/AMapLocation;)V
     .locals 7
 
-    .line 16
     :try_start_0
     invoke-static {p1}, Lcom/amap/api/col/l3/ki;->a(Lcom/amap/api/location/AMapLocation;)Z
 
@@ -1829,7 +1691,6 @@
 
     return-void
 
-    .line 17
     :cond_0
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
@@ -1887,19 +1748,16 @@
     :goto_1
     if-eqz v2, :cond_8
 
-    .line 18
     sget-object v2, Lcom/amap/api/col/l3/kf;->j:Lorg/json/JSONArray;
 
     if-nez v2, :cond_5
 
-    .line 19
     new-instance v2, Lorg/json/JSONArray;
 
     invoke-direct {v2}, Lorg/json/JSONArray;-><init>()V
 
     sput-object v2, Lcom/amap/api/col/l3/kf;->j:Lorg/json/JSONArray;
 
-    .line 20
     :cond_5
     new-instance v2, Lorg/json/JSONObject;
 
@@ -1907,7 +1765,6 @@
 
     const-string v4, "lon"
 
-    .line 21
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLongitude()D
 
     move-result-wide v5
@@ -1920,7 +1777,6 @@
 
     const-string v4, "lat"
 
-    .line 22
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLatitude()D
 
     move-result-wide v5
@@ -1933,19 +1789,16 @@
 
     const-string v4, "type"
 
-    .line 23
     invoke-virtual {v2, v4, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     const-string v4, "timestamp"
 
-    .line 24
     invoke-static {}, Lcom/amap/api/col/l3/ki;->b()J
 
     move-result-wide v5
 
     invoke-virtual {v2, v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
-    .line 25
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getCoordType()Ljava/lang/String;
 
     move-result-object v4
@@ -1962,27 +1815,23 @@
 
     if-eqz v4, :cond_6
 
-    .line 26
     :try_start_1
     invoke-virtual {v2, v5, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     goto :goto_2
 
-    .line 27
     :cond_6
     invoke-virtual {v2, v5, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
     :goto_2
     if-nez v0, :cond_7
 
-    .line 28
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     const-string v1, "accuracy"
 
-    .line 29
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAccuracy()F
 
     move-result v3
@@ -1997,7 +1846,6 @@
 
     const-string v1, "altitude"
 
-    .line 30
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAltitude()D
 
     move-result-wide v3
@@ -2010,7 +1858,6 @@
 
     const-string v1, "bearing"
 
-    .line 31
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getBearing()F
 
     move-result v3
@@ -2025,7 +1872,6 @@
 
     const-string v1, "speed"
 
-    .line 32
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getSpeed()F
 
     move-result p1
@@ -2040,10 +1886,8 @@
 
     const-string p1, "extension"
 
-    .line 33
     invoke-virtual {v2, p1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 34
     :cond_7
     sget-object p1, Lcom/amap/api/col/l3/kf;->j:Lorg/json/JSONArray;
 
@@ -2051,7 +1895,6 @@
 
     move-result-object p1
 
-    .line 35
     sput-object p1, Lcom/amap/api/col/l3/kf;->j:Lorg/json/JSONArray;
 
     invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
@@ -2064,7 +1907,6 @@
 
     if-lt p1, v0, :cond_8
 
-    .line 36
     invoke-static {p0}, Lcom/amap/api/col/l3/kf;->f(Landroid/content/Context;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -2079,7 +1921,6 @@
 
     const-string v0, "recordOfflineLocLog"
 
-    .line 37
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -2091,7 +1932,6 @@
     :try_start_0
     const-string v0, "O010"
 
-    .line 1
     invoke-static {p0, v0, p2, p1}, Lcom/amap/api/col/l3/kf;->a(Landroid/content/Context;Ljava/lang/String;ILjava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2105,7 +1945,6 @@
 
     const-string p2, "reportDexFunction"
 
-    .line 2
     invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -2114,7 +1953,6 @@
 .method private static f(Landroid/content/Context;)V
     .locals 3
 
-    .line 1
     :try_start_0
     sget-object v0, Lcom/amap/api/col/l3/kf;->j:Lorg/json/JSONArray;
 
@@ -2122,36 +1960,30 @@
 
     sget-object v0, Lcom/amap/api/col/l3/kf;->j:Lorg/json/JSONArray;
 
-    .line 2
     invoke-virtual {v0}, Lorg/json/JSONArray;->length()I
 
     move-result v0
 
     if-lez v0, :cond_0
 
-    .line 3
     invoke-static {}, Lcom/amap/api/col/l3/jz;->b()Lcom/amap/api/col/l3/gh;
 
     move-result-object v0
 
-    .line 4
     new-instance v1, Lcom/amap/api/col/l3/ij;
 
     sget-object v2, Lcom/amap/api/col/l3/kf;->j:Lorg/json/JSONArray;
 
-    .line 5
     invoke-virtual {v2}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-direct {v1, p0, v0, v2}, Lcom/amap/api/col/l3/ij;-><init>(Landroid/content/Context;Lcom/amap/api/col/l3/gh;Ljava/lang/String;)V
 
-    .line 6
     invoke-static {v1, p0}, Lcom/amap/api/col/l3/ik;->a(Lcom/amap/api/col/l3/ij;Landroid/content/Context;)V
 
     const/4 p0, 0x0
 
-    .line 7
     sput-object p0, Lcom/amap/api/col/l3/kf;->j:Lorg/json/JSONArray;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2166,7 +1998,6 @@
 
     const-string v1, "writeOfflineLocLog"
 
-    .line 8
     invoke-static {p0, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -2177,7 +2008,6 @@
 .method public final a(Landroid/content/Context;I)V
     .locals 8
 
-    .line 71
     :try_start_0
     iget v0, p0, Lcom/amap/api/col/l3/kf;->b:I
 
@@ -2185,7 +2015,6 @@
 
     return-void
 
-    .line 72
     :cond_0
     iget v0, p0, Lcom/amap/api/col/l3/kf;->b:I
 
@@ -2199,7 +2028,6 @@
 
     if-eq v0, p2, :cond_1
 
-    .line 73
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v0
@@ -2208,7 +2036,6 @@
 
     sub-long/2addr v0, v4
 
-    .line 74
     iget-object v4, p0, Lcom/amap/api/col/l3/kf;->a:Landroid/util/SparseArray;
 
     iget v5, p0, Lcom/amap/api/col/l3/kf;->b:I
@@ -2227,7 +2054,6 @@
 
     move-result-wide v4
 
-    .line 75
     iget-object v6, p0, Lcom/amap/api/col/l3/kf;->a:Landroid/util/SparseArray;
 
     iget v7, p0, Lcom/amap/api/col/l3/kf;->b:I
@@ -2243,7 +2069,6 @@
     :cond_1
     const-string v0, "pref"
 
-    .line 76
     iget-object v1, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
     aget-object v1, v1, p2
@@ -2252,7 +2077,6 @@
 
     move-result-wide v0
 
-    .line 77
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v2
@@ -2261,7 +2085,6 @@
 
     iput-wide v2, p0, Lcom/amap/api/col/l3/kf;->c:J
 
-    .line 78
     iput p2, p0, Lcom/amap/api/col/l3/kf;->b:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2275,7 +2098,6 @@
 
     const-string v0, "setLocationType"
 
-    .line 79
     invoke-static {p1, p2, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -2284,7 +2106,6 @@
 .method public final a(Landroid/content/Context;Lcom/amap/api/location/AMapLocationClientOption;)V
     .locals 9
 
-    .line 80
     :try_start_0
     sget-object v0, Lcom/amap/api/col/l3/kf$1;->a:[I
 
@@ -2324,7 +2145,6 @@
     :cond_1
     const/4 v1, 0x4
 
-    .line 81
     :cond_2
     :goto_0
     iget p2, p0, Lcom/amap/api/col/l3/kf;->e:I
@@ -2333,7 +2153,6 @@
 
     return-void
 
-    .line 82
     :cond_3
     iget p2, p0, Lcom/amap/api/col/l3/kf;->e:I
 
@@ -2345,7 +2164,6 @@
 
     if-eq p2, v1, :cond_4
 
-    .line 83
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v5
@@ -2354,7 +2172,6 @@
 
     sub-long/2addr v5, v7
 
-    .line 84
     iget-object p2, p0, Lcom/amap/api/col/l3/kf;->a:Landroid/util/SparseArray;
 
     iget v0, p0, Lcom/amap/api/col/l3/kf;->e:I
@@ -2373,7 +2190,6 @@
 
     move-result-wide v7
 
-    .line 85
     iget-object p2, p0, Lcom/amap/api/col/l3/kf;->a:Landroid/util/SparseArray;
 
     iget v0, p0, Lcom/amap/api/col/l3/kf;->e:I
@@ -2389,7 +2205,6 @@
     :cond_4
     const-string p2, "pref"
 
-    .line 86
     iget-object v0, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
     aget-object v0, v0, v1
@@ -2398,7 +2213,6 @@
 
     move-result-wide p1
 
-    .line 87
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v2
@@ -2407,7 +2221,6 @@
 
     iput-wide v2, p0, Lcom/amap/api/col/l3/kf;->f:J
 
-    .line 88
     iput v1, p0, Lcom/amap/api/col/l3/kf;->e:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2421,7 +2234,6 @@
 
     const-string v0, "setLocationMode"
 
-    .line 89
     invoke-static {p1, p2, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -2432,7 +2244,6 @@
 
     const-string v0, "pref"
 
-    .line 3
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -2442,7 +2253,6 @@
 
     sub-long/2addr v1, v3
 
-    .line 4
     iget v3, p0, Lcom/amap/api/col/l3/kf;->b:I
 
     const/4 v4, -0x1
@@ -2451,7 +2261,6 @@
 
     if-eq v3, v4, :cond_0
 
-    .line 5
     iget-object v3, p0, Lcom/amap/api/col/l3/kf;->a:Landroid/util/SparseArray;
 
     iget v7, p0, Lcom/amap/api/col/l3/kf;->b:I
@@ -2470,7 +2279,6 @@
 
     move-result-wide v7
 
-    .line 6
     iget-object v3, p0, Lcom/amap/api/col/l3/kf;->a:Landroid/util/SparseArray;
 
     iget v9, p0, Lcom/amap/api/col/l3/kf;->b:I
@@ -2483,7 +2291,6 @@
 
     invoke-virtual {v3, v9, v1}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
 
-    .line 7
     :cond_0
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -2493,12 +2300,10 @@
 
     sub-long/2addr v1, v7
 
-    .line 8
     iget v3, p0, Lcom/amap/api/col/l3/kf;->e:I
 
     if-eq v3, v4, :cond_1
 
-    .line 9
     iget-object v3, p0, Lcom/amap/api/col/l3/kf;->a:Landroid/util/SparseArray;
 
     iget v4, p0, Lcom/amap/api/col/l3/kf;->e:I
@@ -2517,7 +2322,6 @@
 
     move-result-wide v3
 
-    .line 10
     iget-object v7, p0, Lcom/amap/api/col/l3/kf;->a:Landroid/util/SparseArray;
 
     iget v8, p0, Lcom/amap/api/col/l3/kf;->e:I
@@ -2533,7 +2337,6 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 11
     :goto_0
     iget-object v2, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
@@ -2541,7 +2344,6 @@
 
     if-ge v1, v2, :cond_3
 
-    .line 12
     iget-object v2, p0, Lcom/amap/api/col/l3/kf;->a:Landroid/util/SparseArray;
 
     invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -2562,7 +2364,6 @@
 
     if-lez v4, :cond_2
 
-    .line 13
     iget-object v4, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
     aget-object v4, v4, v1
@@ -2575,7 +2376,6 @@
 
     if-lez v4, :cond_2
 
-    .line 14
     iget-object v4, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
     aget-object v4, v4, v1
@@ -2599,7 +2399,6 @@
 
     const-string v1, "saveLocationTypeAndMode"
 
-    .line 15
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -2612,7 +2411,6 @@
 
     const/4 v1, -0x1
 
-    .line 1
     :try_start_0
     iget-object v2, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
@@ -2626,7 +2424,6 @@
 
     move-result-wide v6
 
-    .line 2
     iget-object v2, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
     const/4 v8, 0x0
@@ -2637,7 +2434,6 @@
 
     move-result-wide v9
 
-    .line 3
     iget-object v2, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
     const/4 v11, 0x1
@@ -2703,7 +2499,6 @@
 
     const/4 v1, -0x1
 
-    .line 1
     :try_start_0
     iget-object v2, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
@@ -2717,7 +2512,6 @@
 
     move-result-wide v6
 
-    .line 2
     iget-object v2, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
     const/4 v8, 0x4
@@ -2728,7 +2522,6 @@
 
     move-result-wide v9
 
-    .line 3
     iget-object v2, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
     const/4 v11, 0x5
@@ -2788,7 +2581,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
@@ -2799,7 +2591,6 @@
 
     const-string v1, "pref"
 
-    .line 2
     iget-object v2, p0, Lcom/amap/api/col/l3/kf;->d:[Ljava/lang/String;
 
     aget-object v2, v2, v0

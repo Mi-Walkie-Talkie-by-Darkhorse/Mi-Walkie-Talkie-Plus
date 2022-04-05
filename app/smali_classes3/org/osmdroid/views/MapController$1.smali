@@ -1,6 +1,5 @@
 .class synthetic Lorg/osmdroid/views/MapController$1;
 .super Ljava/lang/Object;
-.source "MapController.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/views/MapController$ReplayType;->values()[Lorg/osmdroid/views/MapController$ReplayType;
 
     move-result-object v0

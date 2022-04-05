@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/common/collect/AbstractIterator$1;
 .super Ljava/lang/Object;
-.source "AbstractIterator.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/AbstractIterator$State;->values()[Lcom/google/common/collect/AbstractIterator$State;
 
     move-result-object v0

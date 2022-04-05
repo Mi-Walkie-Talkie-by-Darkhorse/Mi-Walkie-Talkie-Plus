@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/Provider;
 .super Ljava/lang/Object;
-.source "Provider.java"
 
 
 # annotations

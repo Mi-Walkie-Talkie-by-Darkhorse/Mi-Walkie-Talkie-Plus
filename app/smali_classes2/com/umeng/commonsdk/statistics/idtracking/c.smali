@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/idtracking/c;
 .super Lcom/umeng/commonsdk/statistics/idtracking/a;
-.source "IDFATracker.java"
 
 
 # static fields
@@ -17,10 +16,8 @@
 
     const-string v0, "idfa"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/umeng/commonsdk/statistics/idtracking/a;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/idtracking/c;->b:Landroid/content/Context;
 
     return-void
@@ -33,14 +30,12 @@
 
     const-string v0, "header_tracking_idfa"
 
-    .line 1
     invoke-static {v0}, Lcom/umeng/commonsdk/config/FieldManager;->allow(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/c;->b:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/a;->a(Landroid/content/Context;)Ljava/lang/String;

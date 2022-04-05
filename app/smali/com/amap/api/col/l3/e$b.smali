@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/e$b;
 .super Landroid/os/HandlerThread;
-.source "ApsManager.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/e;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/e$b;->a:Lcom/amap/api/col/l3/e;
 
-    .line 2
     invoke-direct {p0, p2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -38,7 +35,6 @@
 
     const-string v0, "APSManager$ActionThread"
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/e$b;->a:Lcom/amap/api/col/l3/e;
 
@@ -62,10 +58,8 @@
     :try_start_1
     const-string v2, "init 2"
 
-    .line 2
     invoke-static {v1, v0, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     :goto_0
     iget-object v1, p0, Lcom/amap/api/col/l3/e$b;->a:Lcom/amap/api/col/l3/e;
 
@@ -75,7 +69,6 @@
 
     iput-object v2, v1, Lcom/amap/api/col/l3/e;->f:Lcom/amap/api/col/l3/je;
 
-    .line 4
     invoke-super {p0}, Landroid/os/HandlerThread;->onLooperPrepared()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
@@ -87,7 +80,6 @@
 
     const-string v2, "onLooperPrepared"
 
-    .line 5
     invoke-static {v1, v0, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -96,7 +88,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-super {p0}, Landroid/os/HandlerThread;->run()V
     :try_end_0
@@ -111,7 +102,6 @@
 
     const-string v2, "run"
 
-    .line 2
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

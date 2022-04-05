@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/snackbar/BaseTransientBottomBar$7;
 .super Ljava/lang/Object;
-.source "BaseTransientBottomBar.java"
 
 # interfaces
 .implements Lcom/google/android/material/snackbar/BaseTransientBottomBar$OnAttachStateChangeListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$7;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public onViewAttachedToWindow(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v0, 0x1d
 
     if-lt p1, v0, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$7;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     iget-object p1, p1, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->view:Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;
@@ -56,7 +52,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$7;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-virtual {p1}, Landroid/view/WindowInsets;->getMandatorySystemGestureInsets()Landroid/graphics/Insets;
@@ -67,7 +62,6 @@
 
     invoke-static {v0, p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->access$702(Lcom/google/android/material/snackbar/BaseTransientBottomBar;I)I
 
-    .line 4
     iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$7;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-static {p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->access$300(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
@@ -79,7 +73,6 @@
 .method public onViewDetachedFromWindow(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$7;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-virtual {p1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->isShownOrQueued()Z
@@ -88,7 +81,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     sget-object p1, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->handler:Landroid/os/Handler;
 
     new-instance v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$7$1;

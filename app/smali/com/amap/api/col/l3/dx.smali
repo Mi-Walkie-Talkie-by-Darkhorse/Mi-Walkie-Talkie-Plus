@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/dx;
 .super Ljava/lang/Object;
-.source "GLMapSurfaceConfigChooser.java"
 
 # interfaces
 .implements Landroid/opengl/GLSurfaceView$EGLConfigChooser;
@@ -11,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -1,6 +1,5 @@
 .class interface abstract Lcom/bumptech/glide/load/engine/x/a;
 .super Ljava/lang/Object;
-.source "ArrayAdapterInterface.java"
 
 
 # annotations

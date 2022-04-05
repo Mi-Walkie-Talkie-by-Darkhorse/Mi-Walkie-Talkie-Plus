@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$8;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j;IZ)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$8;->c:Lcom/amap/api/col/l3/j;
 
     iput p2, p0, Lcom/amap/api/col/l3/j$8;->a:I
@@ -46,7 +44,6 @@
 .method public final run()V
     .locals 8
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/j$8;->c:Lcom/amap/api/col/l3/j;
 
@@ -56,7 +53,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/j;->a(Lcom/amap/api/col/l3/j;IZ)V
 
-    .line 2
     iget-boolean v0, p0, Lcom/amap/api/col/l3/j$8;->b:Z
 
     if-eqz v0, :cond_0
@@ -72,7 +68,6 @@
 
     const/4 v4, 0x1
 
-    .line 3
     :goto_0
     iget-object v0, p0, Lcom/amap/api/col/l3/j$8;->c:Lcom/amap/api/col/l3/j;
 
@@ -90,7 +85,6 @@
 
     invoke-virtual/range {v1 .. v7}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/j$8;->c:Lcom/amap/api/col/l3/j;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/j;->resetRenderTimeLong()V
@@ -102,7 +96,6 @@
     :catchall_0
     move-exception v0
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

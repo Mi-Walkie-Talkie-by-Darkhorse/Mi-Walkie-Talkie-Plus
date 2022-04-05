@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/bn;
 .super Ljava/lang/Object;
-.source "FileCopy.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,20 +40,16 @@
 
     if-eqz v12, :cond_0
 
-    .line 1
     invoke-interface/range {p7 .. p7}, Lcom/amap/api/col/l3/bn$a;->b()V
 
     :cond_0
     return-wide v2
 
-    .line 2
     :cond_1
     invoke-virtual/range {p1 .. p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    .line 3
     invoke-virtual/range {p2 .. p2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
-    .line 4
     :try_start_0
     invoke-virtual/range {p1 .. p1}, Ljava/io/File;->isDirectory()Z
 
@@ -69,7 +63,6 @@
 
     if-eqz v2, :cond_4
 
-    .line 5
     :try_start_1
     invoke-virtual/range {p2 .. p2}, Ljava/io/File;->exists()Z
 
@@ -85,7 +78,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_2
     new-instance v0, Ljava/io/IOException;
 
@@ -93,7 +85,6 @@
 
     invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 7
     invoke-virtual/range {p2 .. p2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v1
@@ -108,7 +99,6 @@
 
     throw v0
 
-    .line 8
     :cond_3
     :goto_0
     invoke-virtual/range {p1 .. p1}, Ljava/io/File;->list()[Ljava/lang/String;
@@ -123,14 +113,12 @@
 
     const/4 v9, 0x0
 
-    .line 9
     :goto_1
     :try_start_2
     array-length v2, v13
 
     if-ge v9, v2, :cond_a
 
-    .line 10
     new-instance v3, Ljava/io/File;
 
     aget-object v2, v13, v9
@@ -168,7 +156,6 @@
 
     goto/16 :goto_4
 
-    .line 11
     :cond_4
     :try_start_3
     invoke-virtual/range {p2 .. p2}, Ljava/io/File;->getParentFile()Ljava/io/File;
@@ -177,14 +164,12 @@
 
     if-eqz v2, :cond_6
 
-    .line 12
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v5
 
     if-nez v5, :cond_6
 
-    .line 13
     invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
 
     move-result v5
@@ -193,7 +178,6 @@
 
     goto :goto_2
 
-    .line 14
     :cond_5
     new-instance v0, Ljava/io/IOException;
 
@@ -201,7 +185,6 @@
 
     invoke-direct {v1, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 15
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v2
@@ -216,14 +199,12 @@
 
     throw v0
 
-    .line 16
     :cond_6
     :goto_2
     new-instance v2, Ljava/io/FileInputStream;
 
     invoke-direct {v2, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
-    .line 17
     new-instance v0, Ljava/io/FileOutputStream;
 
     invoke-direct {v0, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
@@ -236,7 +217,6 @@
 
     move-wide/from16 v5, p3
 
-    .line 18
     :cond_7
     :goto_3
     :try_start_4
@@ -246,7 +226,6 @@
 
     if-lez v3, :cond_8
 
-    .line 19
     invoke-virtual {v0, v1, v4, v3}, Ljava/io/OutputStream;->write([BII)V
 
     int-to-long v7, v3
@@ -265,19 +244,15 @@
 
     mul-float v3, v3, v7
 
-    .line 20
     invoke-interface {v12, v3}, Lcom/amap/api/col/l3/bn$a;->a(F)V
 
     goto :goto_3
 
-    .line 21
     :cond_8
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
 
-    .line 22
     invoke-virtual {v0}, Ljava/io/OutputStream;->flush()V
 
-    .line 23
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
 
     if-eqz v12, :cond_9
@@ -290,7 +265,6 @@
 
     if-ltz v2, :cond_9
 
-    .line 24
     invoke-interface/range {p7 .. p7}, Lcom/amap/api/col/l3/bn$a;->a()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
@@ -312,13 +286,11 @@
 
     move-wide/from16 v14, p3
 
-    .line 25
     :goto_4
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     if-eqz v12, :cond_a
 
-    .line 26
     invoke-interface/range {p7 .. p7}, Lcom/amap/api/col/l3/bn$a;->b()V
 
     :cond_a

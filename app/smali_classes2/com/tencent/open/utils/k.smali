@@ -1,6 +1,5 @@
 .class public final Lcom/tencent/open/utils/k;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Cloneable;
@@ -14,10 +13,8 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
     iput p1, p0, Lcom/tencent/open/utils/k;->a:I
 
     return-void
@@ -28,7 +25,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/tencent/open/utils/k;-><init>([BI)V
 
     return-void
@@ -37,12 +33,10 @@
 .method public constructor <init>([BI)V
     .locals 2
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     add-int/lit8 v0, p2, 0x1
 
-    .line 3
     aget-byte v0, p1, v0
 
     shl-int/lit8 v0, v0, 0x8
@@ -53,7 +47,6 @@
 
     iput v0, p0, Lcom/tencent/open/utils/k;->a:I
 
-    .line 4
     aget-byte p1, p1, p2
 
     and-int/lit16 p1, p1, 0xff
@@ -74,7 +67,6 @@
 
     new-array v0, v0, [B
 
-    .line 1
     iget v1, p0, Lcom/tencent/open/utils/k;->a:I
 
     and-int/lit16 v2, v1, 0xff
@@ -103,7 +95,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/tencent/open/utils/k;->a:I
 
     return v0
@@ -116,14 +107,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     instance-of v1, p1, Lcom/tencent/open/utils/k;
 
     if-nez v1, :cond_0
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget v1, p0, Lcom/tencent/open/utils/k;->a:I
 
@@ -145,7 +134,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/tencent/open/utils/k;->a:I
 
     return v0

@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/common/StringUtils;
 .super Ljava/lang/Object;
-.source "StringUtils.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     invoke-static {}, Ljava/nio/charset/Charset;->defaultCharset()Ljava/nio/charset/Charset;
 
     move-result-object v0
@@ -36,7 +34,6 @@
 
     const-string v1, "SJIS"
 
-    .line 2
     invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -47,7 +44,6 @@
 
     const-string v1, "EUC_JP"
 
-    .line 3
     invoke-virtual {v1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -74,7 +70,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -98,7 +93,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 1
     sget-object v2, Lcom/google/zxing/DecodeHintType;->CHARACTER_SET:Lcom/google/zxing/DecodeHintType;
 
     invoke-interface {v1, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -107,7 +101,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 2
     sget-object v0, Lcom/google/zxing/DecodeHintType;->CHARACTER_SET:Lcom/google/zxing/DecodeHintType;
 
     invoke-interface {v1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -120,11 +113,9 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     array-length v1, v0
 
-    .line 4
     array-length v2, v0
 
     const/4 v3, 0x2
@@ -198,7 +189,6 @@
 
     if-eqz v8, :cond_14
 
-    .line 5
     :cond_2
     aget-byte v4, v0, v9
 
@@ -444,7 +434,6 @@
 
     if-eqz v7, :cond_1a
 
-    .line 6
     sget-boolean v4, Lcom/google/zxing/common/StringUtils;->ASSUME_SHIFT_JIS:Z
 
     if-nez v4, :cond_19
@@ -497,7 +486,6 @@
 
     return-object v0
 
-    .line 7
     :cond_21
     sget-object v0, Lcom/google/zxing/common/StringUtils;->PLATFORM_DEFAULT_ENCODING:Ljava/lang/String;
 

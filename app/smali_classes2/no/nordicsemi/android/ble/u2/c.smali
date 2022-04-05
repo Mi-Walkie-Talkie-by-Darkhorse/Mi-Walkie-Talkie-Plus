@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/u2/c;
 .super Ljava/lang/Object;
-.source "DataSentCallback.java"
 
 
 # virtual methods

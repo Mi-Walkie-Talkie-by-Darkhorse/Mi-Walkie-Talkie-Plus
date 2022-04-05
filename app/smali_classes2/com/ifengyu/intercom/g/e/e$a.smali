@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/g/e/e$a;
 .super Ljava/lang/Object;
-.source "PutFormRequest.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/g/e/a$b;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/g/e/e;Lcom/ifengyu/intercom/g/d/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/g/e/e$a;->b:Lcom/ifengyu/intercom/g/e/e;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/g/e/e$a;->a:Lcom/ifengyu/intercom/g/d/b;
@@ -42,7 +40,6 @@
 .method public a(JJ)V
     .locals 8
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/g/b;->d()Lcom/ifengyu/intercom/g/b;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/widget/AdapterViewItemSelectionEvent;
 .super Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionEvent;
-.source "AdapterViewSelectionEvent.kt"
 
 
 # annotations
@@ -106,7 +105,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionEvent;-><init>(Lkotlin/jvm/b/a;)V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemSelectionEvent;->view:Landroid/widget/AdapterView;
@@ -361,7 +359,6 @@
 .method public final getId()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemSelectionEvent;->id:J
 
     return-wide v0
@@ -370,7 +367,6 @@
 .method public final getPosition()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemSelectionEvent;->position:I
 
     return v0
@@ -381,7 +377,6 @@
     .annotation build Lorg/jetbrains/annotations/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemSelectionEvent;->selectedView:Landroid/view/View;
 
     return-object v0
@@ -400,7 +395,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemSelectionEvent;->view:Landroid/widget/AdapterView;
 
     return-object v0

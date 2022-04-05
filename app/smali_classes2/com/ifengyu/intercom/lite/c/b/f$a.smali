@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/c/b/f$a;
 .super Ljava/lang/Object;
-.source "PickerDialogBuilder.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$d;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/c/b/f;Lcom/qmuiteam/qmui/widget/dialog/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/f$a;->b:Lcom/ifengyu/intercom/lite/c/b/f;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/f$a;->a:Lcom/qmuiteam/qmui/widget/dialog/b;
@@ -42,7 +40,6 @@
 .method public a(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;II)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/f$a;->b:Lcom/ifengyu/intercom/lite/c/b/f;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/c/b/f;->a(Lcom/ifengyu/intercom/lite/c/b/f;)[[Ljava/lang/String;
@@ -53,7 +50,6 @@
 
     if-ge p3, v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/f$a;->b:Lcom/ifengyu/intercom/lite/c/b/f;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/c/b/f;->b(Lcom/ifengyu/intercom/lite/c/b/f;)Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
@@ -70,7 +66,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a([Ljava/lang/String;)V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/f$a;->b:Lcom/ifengyu/intercom/lite/c/b/f;
 
@@ -80,7 +75,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/f$a;->b:Lcom/ifengyu/intercom/lite/c/b/f;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/c/b/f;->c(Lcom/ifengyu/intercom/lite/c/b/f;)Lcom/ifengyu/intercom/lite/c/b/f$c;

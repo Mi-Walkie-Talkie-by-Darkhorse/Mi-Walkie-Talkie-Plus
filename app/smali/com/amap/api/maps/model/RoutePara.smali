@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/RoutePara;
 .super Ljava/lang/Object;
-.source "RoutePara.java"
 
 
 # instance fields
@@ -21,15 +20,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/amap/api/maps/model/RoutePara;->a:I
 
-    .line 3
     iput v0, p0, Lcom/amap/api/maps/model/RoutePara;->b:I
 
     return-void
@@ -40,7 +36,6 @@
 .method public getDrivingRouteStyle()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/RoutePara;->a:I
 
     return v0
@@ -49,7 +44,6 @@
 .method public getEndName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/RoutePara;->f:Ljava/lang/String;
 
     return-object v0
@@ -58,7 +52,6 @@
 .method public getEndPoint()Lcom/amap/api/maps/model/LatLng;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/RoutePara;->d:Lcom/amap/api/maps/model/LatLng;
 
     return-object v0
@@ -67,7 +60,6 @@
 .method public getStartName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/RoutePara;->e:Ljava/lang/String;
 
     return-object v0
@@ -76,7 +68,6 @@
 .method public getStartPoint()Lcom/amap/api/maps/model/LatLng;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/RoutePara;->c:Lcom/amap/api/maps/model/LatLng;
 
     return-object v0
@@ -85,7 +76,6 @@
 .method public getTransitRouteStyle()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/RoutePara;->b:I
 
     return v0
@@ -100,7 +90,6 @@
 
     if-ge p1, v0, :cond_0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/RoutePara;->a:I
 
     :cond_0
@@ -110,7 +99,6 @@
 .method public setEndName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/RoutePara;->f:Ljava/lang/String;
 
     return-void
@@ -119,7 +107,6 @@
 .method public setEndPoint(Lcom/amap/api/maps/model/LatLng;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/RoutePara;->d:Lcom/amap/api/maps/model/LatLng;
 
     return-void
@@ -128,7 +115,6 @@
 .method public setStartName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/RoutePara;->e:Ljava/lang/String;
 
     return-void
@@ -137,7 +123,6 @@
 .method public setStartPoint(Lcom/amap/api/maps/model/LatLng;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/RoutePara;->c:Lcom/amap/api/maps/model/LatLng;
 
     return-void
@@ -152,7 +137,6 @@
 
     if-ge p1, v0, :cond_0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/RoutePara;->b:I
 
     :cond_0

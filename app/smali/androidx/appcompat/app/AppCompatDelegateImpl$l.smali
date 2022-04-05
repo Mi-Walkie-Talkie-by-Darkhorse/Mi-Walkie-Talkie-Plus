@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/AppCompatDelegateImpl$l;
 .super Ljava/lang/Object;
-.source "AppCompatDelegateImpl.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static a(Landroid/os/PowerManager;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroid/os/PowerManager;->isPowerSaveMode()Z
 
     move-result p0

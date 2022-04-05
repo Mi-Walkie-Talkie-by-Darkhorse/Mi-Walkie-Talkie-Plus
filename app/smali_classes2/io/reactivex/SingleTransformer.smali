@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/SingleTransformer;
 .super Ljava/lang/Object;
-.source "SingleTransformer.java"
 
 
 # annotations

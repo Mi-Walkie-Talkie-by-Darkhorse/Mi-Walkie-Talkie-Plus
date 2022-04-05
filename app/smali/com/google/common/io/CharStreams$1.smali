@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/CharStreams$1;
 .super Ljava/io/Reader;
-.source "CharStreams.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Ljava/lang/Readable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/io/CharStreams$1;->val$readable:Ljava/lang/Readable;
 
     invoke-direct {p0}, Ljava/io/Reader;-><init>()V
@@ -40,14 +38,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/CharStreams$1;->val$readable:Ljava/lang/Readable;
 
     instance-of v1, v0, Ljava/io/Closeable;
 
     if-eqz v1, :cond_0
 
-    .line 2
     check-cast v0, Ljava/io/Closeable;
 
     invoke-interface {v0}, Ljava/io/Closeable;->close()V
@@ -64,7 +60,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/io/CharStreams$1;->val$readable:Ljava/lang/Readable;
 
     invoke-interface {v0, p1}, Ljava/lang/Readable;->read(Ljava/nio/CharBuffer;)I
@@ -82,7 +77,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1, p2, p3}, Ljava/nio/CharBuffer;->wrap([CII)Ljava/nio/CharBuffer;
 
     move-result-object p1

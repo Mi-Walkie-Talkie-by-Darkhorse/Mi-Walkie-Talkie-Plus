@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/subjects/ReplaySubject;
 .super Lio/reactivex/subjects/Subject;
-.source "ReplaySubject.java"
 
 
 # annotations
@@ -67,17 +66,14 @@
 
     new-array v1, v0, [Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
-    .line 1
     sput-object v1, Lio/reactivex/subjects/ReplaySubject;->EMPTY:[Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
     new-array v1, v0, [Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
-    .line 2
     sput-object v1, Lio/reactivex/subjects/ReplaySubject;->TERMINATED:[Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 3
     sput-object v0, Lio/reactivex/subjects/ReplaySubject;->EMPTY_ARRAY:[Ljava/lang/Object;
 
     return-void
@@ -93,13 +89,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/subjects/Subject;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
-    .line 3
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object v0, Lio/reactivex/subjects/ReplaySubject;->EMPTY:[Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
@@ -129,7 +122,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/subjects/ReplaySubject;
 
     new-instance v1, Lio/reactivex/subjects/ReplaySubject$UnboundedReplayBuffer;
@@ -161,7 +153,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 2
     new-instance v0, Lio/reactivex/subjects/ReplaySubject;
 
     new-instance v1, Lio/reactivex/subjects/ReplaySubject$UnboundedReplayBuffer;
@@ -185,7 +176,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/subjects/ReplaySubject;
 
     new-instance v1, Lio/reactivex/subjects/ReplaySubject$SizeBoundReplayBuffer;
@@ -217,7 +207,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/subjects/ReplaySubject;
 
     new-instance v1, Lio/reactivex/subjects/ReplaySubject$SizeBoundReplayBuffer;
@@ -250,7 +239,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/subjects/ReplaySubject;
 
     new-instance v7, Lio/reactivex/subjects/ReplaySubject$SizeAndTimeBoundReplayBuffer;
@@ -293,7 +281,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/subjects/ReplaySubject;
 
     new-instance v7, Lio/reactivex/subjects/ReplaySubject$SizeAndTimeBoundReplayBuffer;
@@ -327,7 +314,6 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -337,7 +323,6 @@
 
     check-cast v0, [Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
-    .line 2
     sget-object v1, Lio/reactivex/subjects/ReplaySubject;->TERMINATED:[Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
     const/4 v2, 0x0
@@ -346,22 +331,17 @@
 
     return v2
 
-    .line 3
     :cond_1
     array-length v1, v0
 
     add-int/lit8 v3, v1, 0x1
 
-    .line 4
     new-array v3, v3, [Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
-    .line 5
     invoke-static {v0, v2, v3, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 6
     aput-object p1, v3, v1
 
-    .line 7
     iget-object v1, p0, Lio/reactivex/subjects/ReplaySubject;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v1, v0, v3}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -378,7 +358,6 @@
 .method public cleanupBuffer()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
     invoke-interface {v0}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->trimHead()V
@@ -391,21 +370,18 @@
     .annotation build Lio/reactivex/annotations/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
     invoke-interface {v0}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Lio/reactivex/internal/util/NotificationLite;->isError(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-static {v0}, Lio/reactivex/internal/util/NotificationLite;->getError(Ljava/lang/Object;)Ljava/lang/Throwable;
 
     move-result-object v0
@@ -429,7 +405,6 @@
     .annotation build Lio/reactivex/annotations/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
     invoke-interface {v0}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->getValue()Ljava/lang/Object;
@@ -442,15 +417,12 @@
 .method public getValues()[Ljava/lang/Object;
     .locals 2
 
-    .line 1
     sget-object v0, Lio/reactivex/subjects/ReplaySubject;->EMPTY_ARRAY:[Ljava/lang/Object;
 
-    .line 2
     invoke-virtual {p0, v0}, Lio/reactivex/subjects/ReplaySubject;->getValues([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 3
     sget-object v1, Lio/reactivex/subjects/ReplaySubject;->EMPTY_ARRAY:[Ljava/lang/Object;
 
     if-ne v0, v1, :cond_0
@@ -471,7 +443,6 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
     invoke-interface {v0, p1}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->getValues([Ljava/lang/Object;)[Ljava/lang/Object;
@@ -484,14 +455,12 @@
 .method public hasComplete()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
     invoke-interface {v0}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Lio/reactivex/internal/util/NotificationLite;->isComplete(Ljava/lang/Object;)Z
 
     move-result v0
@@ -502,7 +471,6 @@
 .method public hasObservers()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -529,14 +497,12 @@
 .method public hasThrowable()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
     invoke-interface {v0}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Lio/reactivex/internal/util/NotificationLite;->isError(Ljava/lang/Object;)Z
 
     move-result v0
@@ -547,7 +513,6 @@
 .method public hasValue()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
     invoke-interface {v0}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->size()I
@@ -570,7 +535,6 @@
 .method observerCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -587,7 +551,6 @@
 .method public onComplete()V
     .locals 5
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/subjects/ReplaySubject;->done:Z
 
     if-eqz v0, :cond_0
@@ -597,21 +560,16 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lio/reactivex/subjects/ReplaySubject;->done:Z
 
-    .line 3
     invoke-static {}, Lio/reactivex/internal/util/NotificationLite;->complete()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
     iget-object v1, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
-    .line 5
     invoke-interface {v1, v0}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->addFinal(Ljava/lang/Object;)V
 
-    .line 6
     invoke-virtual {p0, v0}, Lio/reactivex/subjects/ReplaySubject;->terminate(Ljava/lang/Object;)[Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
     move-result-object v0
@@ -625,7 +583,6 @@
 
     aget-object v4, v0, v3
 
-    .line 7
     invoke-interface {v1, v4}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->replay(Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;)V
 
     add-int/lit8 v3, v3, 0x1
@@ -641,15 +598,12 @@
 
     const-string v0, "onError called with null. Null values are generally not allowed in 2.x operators and sources."
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     iget-boolean v0, p0, Lio/reactivex/subjects/ReplaySubject;->done:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
     return-void
@@ -657,21 +611,16 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lio/reactivex/subjects/ReplaySubject;->done:Z
 
-    .line 5
     invoke-static {p1}, Lio/reactivex/internal/util/NotificationLite;->error(Ljava/lang/Throwable;)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 6
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
-    .line 7
     invoke-interface {v0, p1}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->addFinal(Ljava/lang/Object;)V
 
-    .line 8
     invoke-virtual {p0, p1}, Lio/reactivex/subjects/ReplaySubject;->terminate(Ljava/lang/Object;)[Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
     move-result-object p1
@@ -685,7 +634,6 @@
 
     aget-object v3, p1, v2
 
-    .line 9
     invoke-interface {v0, v3}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->replay(Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;)V
 
     add-int/lit8 v2, v2, 0x1
@@ -706,24 +654,19 @@
 
     const-string v0, "onNext called with null. Null values are generally not allowed in 2.x operators and sources."
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     iget-boolean v0, p0, Lio/reactivex/subjects/ReplaySubject;->done:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
-    .line 4
     invoke-interface {v0, p1}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->add(Ljava/lang/Object;)V
 
-    .line 5
     iget-object p1, p0, Lio/reactivex/subjects/ReplaySubject;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -741,7 +684,6 @@
 
     aget-object v3, p1, v2
 
-    .line 6
     invoke-interface {v0, v3}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->replay(Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;)V
 
     add-int/lit8 v2, v2, 0x1
@@ -755,12 +697,10 @@
 .method public onSubscribe(Lio/reactivex/disposables/Disposable;)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/subjects/ReplaySubject;->done:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {p1}, Lio/reactivex/disposables/Disposable;->dispose()V
 
     :cond_0
@@ -777,7 +717,6 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -787,7 +726,6 @@
 
     check-cast v0, [Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
-    .line 2
     sget-object v1, Lio/reactivex/subjects/ReplaySubject;->TERMINATED:[Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
     if-eq v0, v1, :cond_6
@@ -798,7 +736,6 @@
 
     goto :goto_3
 
-    .line 3
     :cond_1
     array-length v1, v0
 
@@ -811,7 +748,6 @@
     :goto_0
     if-ge v4, v1, :cond_3
 
-    .line 4
     aget-object v5, v0, v4
 
     if-ne v5, p1, :cond_2
@@ -836,7 +772,6 @@
 
     if-ne v1, v4, :cond_5
 
-    .line 5
     sget-object v1, Lio/reactivex/subjects/ReplaySubject;->EMPTY:[Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
     goto :goto_2
@@ -844,10 +779,8 @@
     :cond_5
     add-int/lit8 v5, v1, -0x1
 
-    .line 6
     new-array v5, v5, [Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
-    .line 7
     invoke-static {v0, v3, v5, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/lit8 v3, v2, 0x1
@@ -856,12 +789,10 @@
 
     sub-int/2addr v1, v4
 
-    .line 8
     invoke-static {v0, v3, v5, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     move-object v1, v5
 
-    .line 9
     :goto_2
     iget-object v2, p0, Lio/reactivex/subjects/ReplaySubject;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -879,7 +810,6 @@
 .method size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
     invoke-interface {v0}, Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;->size()I
@@ -899,37 +829,30 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 
     invoke-direct {v0, p1, p0}, Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;-><init>(Lio/reactivex/Observer;Lio/reactivex/subjects/ReplaySubject;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     iget-boolean p1, v0, Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;->cancelled:Z
 
     if-nez p1, :cond_1
 
-    .line 4
     invoke-virtual {p0, v0}, Lio/reactivex/subjects/ReplaySubject;->add(Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 5
     iget-boolean p1, v0, Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;->cancelled:Z
 
     if-eqz p1, :cond_0
 
-    .line 6
     invoke-virtual {p0, v0}, Lio/reactivex/subjects/ReplaySubject;->remove(Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;)V
 
     return-void
 
-    .line 7
     :cond_0
     iget-object p1, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
@@ -951,7 +874,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/ReplaySubject;->buffer:Lio/reactivex/subjects/ReplaySubject$ReplayBuffer;
 
     const/4 v1, 0x0
@@ -962,7 +884,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lio/reactivex/subjects/ReplaySubject;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object v0, Lio/reactivex/subjects/ReplaySubject;->TERMINATED:[Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
@@ -975,7 +896,6 @@
 
     return-object p1
 
-    .line 3
     :cond_0
     sget-object p1, Lio/reactivex/subjects/ReplaySubject;->TERMINATED:[Lio/reactivex/subjects/ReplaySubject$ReplayDisposable;
 

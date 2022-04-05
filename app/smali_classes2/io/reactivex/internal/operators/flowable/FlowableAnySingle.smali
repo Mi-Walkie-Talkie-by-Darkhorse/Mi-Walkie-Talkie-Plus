@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableAnySingle;
 .super Lio/reactivex/Single;
-.source "FlowableAnySingle.java"
 
 # interfaces
 .implements Lio/reactivex/internal/fuseable/FuseToFlowable;
@@ -61,13 +60,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableAnySingle;->source:Lio/reactivex/Flowable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/flowable/FlowableAnySingle;->predicate:Lio/reactivex/functions/Predicate;
 
     return-void
@@ -86,7 +82,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableAny;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableAnySingle;->source:Lio/reactivex/Flowable;
@@ -114,7 +109,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableAnySingle;->source:Lio/reactivex/Flowable;
 
     new-instance v1, Lio/reactivex/internal/operators/flowable/FlowableAnySingle$AnySubscriber;

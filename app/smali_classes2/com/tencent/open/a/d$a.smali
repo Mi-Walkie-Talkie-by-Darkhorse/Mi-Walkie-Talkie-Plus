@@ -1,6 +1,5 @@
 .class public final Lcom/tencent/open/a/d$a;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # annotations

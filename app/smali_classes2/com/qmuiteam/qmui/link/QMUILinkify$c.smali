@@ -1,6 +1,5 @@
 .class final Lcom/qmuiteam/qmui/link/QMUILinkify$c;
 .super Ljava/lang/Object;
-.source "QMUILinkify.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/link/QMUILinkify$h;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +41,6 @@
 
     if-ge v0, p3, :cond_1
 
-    .line 1
     :try_start_0
     invoke-interface {p1, v0}, Ljava/lang/CharSequence;->charAt(I)C
 
@@ -60,7 +57,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     :try_start_1
     invoke-interface {p1, p3}, Ljava/lang/CharSequence;->charAt(I)C
@@ -71,7 +67,6 @@
 
     const-string v0, "[$]"
 
-    .line 3
     invoke-virtual {v0, p3}, Ljava/lang/String;->indexOf(I)I
 
     move-result v0
@@ -99,7 +94,6 @@
     :cond_3
     sub-int/2addr p2, v3
 
-    .line 4
     :try_start_2
     invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
 

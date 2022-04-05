@@ -1,6 +1,5 @@
 .class synthetic Lno/nordicsemi/android/ble/w1$d;
 .super Ljava/lang/Object;
-.source "BleManagerHandler.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lno/nordicsemi/android/ble/Request$Type;->values()[Lno/nordicsemi/android/ble/Request$Type;
 
     move-result-object v0

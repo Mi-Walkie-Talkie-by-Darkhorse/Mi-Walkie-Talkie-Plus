@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/hn$1;
 .super Ljava/lang/Object;
-.source "Utils.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -33,7 +32,6 @@
 .method constructor <init>(Landroid/content/Context;Lcom/amap/api/col/l3/gz;Lcom/amap/api/col/l3/gh;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/hn$1;->a:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/hn$1;->b:Lcom/amap/api/col/l3/gz;
@@ -54,7 +52,6 @@
 .method public final run()V
     .locals 5
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/hn$1;->a:Landroid/content/Context;
 
@@ -68,7 +65,6 @@
 
     invoke-static {v0, v1, v2, v3, v4}, Lcom/amap/api/col/l3/hh;->a(Landroid/content/Context;Lcom/amap/api/col/l3/gz;Lcom/amap/api/col/l3/gh;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/hn$1;->a:Landroid/content/Context;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/hn$1;->c:Lcom/amap/api/col/l3/gh;
@@ -86,7 +82,6 @@
 
     const-string v2, "processDownloadedFile()"
 
-    .line 3
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

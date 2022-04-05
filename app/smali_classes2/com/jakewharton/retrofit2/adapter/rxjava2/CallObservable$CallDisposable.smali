@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/retrofit2/adapter/rxjava2/CallObservable$CallDisposable;
 .super Ljava/lang/Object;
-.source "CallObservable.java"
 
 # interfaces
 .implements Lio/reactivex/disposables/Disposable;
@@ -39,10 +38,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/CallObservable$CallDisposable;->call:Lretrofit2/Call;
 
     return-void
@@ -53,7 +50,6 @@
 .method public dispose()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/CallObservable$CallDisposable;->call:Lretrofit2/Call;
 
     invoke-interface {v0}, Lretrofit2/Call;->cancel()V
@@ -64,7 +60,6 @@
 .method public isDisposed()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/CallObservable$CallDisposable;->call:Lretrofit2/Call;
 
     invoke-interface {v0}, Lretrofit2/Call;->isCanceled()Z

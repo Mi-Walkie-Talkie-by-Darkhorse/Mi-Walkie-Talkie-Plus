@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/update/dolphin/d;
 .super Lcom/ifengyu/intercom/update/dolphin/b;
-.source "BleUpdateTransport.java"
 
 
 # annotations
@@ -16,7 +15,6 @@
 .method constructor <init>(Landroid/content/Context;Landroid/app/AlarmManager;)V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/update/dolphin/c;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/update/dolphin/c;-><init>()V
@@ -33,7 +31,6 @@
 
     const/16 v0, 0x2710
 
-    .line 17
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/update/dolphin/d;->a([BI)Z
 
     move-result p1
@@ -48,15 +45,12 @@
 
     const-string v1, "sendBinaryData..."
 
-    .line 18
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     if-eqz p2, :cond_0
 
-    .line 19
     invoke-virtual {p0, p2}, Lcom/ifengyu/intercom/update/dolphin/b;->d(I)V
 
-    .line 20
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/h/a;->a()Lcom/ifengyu/intercom/h/a;
 
@@ -66,7 +60,6 @@
 
     if-eqz p2, :cond_2
 
-    .line 21
     invoke-virtual {p2, p1}, Lcom/ifengyu/intercom/h/a;->a([B)Z
 
     move-result p1
@@ -75,7 +68,6 @@
 
     const-string p1, "sendDolphinData error"
 
-    .line 22
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
     return v1
@@ -92,10 +84,8 @@
 .method private j()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
-    .line 2
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/dolphin/e;->a()[B
 
     move-result-object v0
@@ -120,7 +110,6 @@
     :goto_0
     const-string v1, "you should call prepareForUpdate() first."
 
-    .line 3
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/o;->a(ZLjava/lang/Object;)V
 
     return-void
@@ -131,24 +120,20 @@
 .method public a()Z
     .locals 9
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/dolphin/d;->j()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/dolphin/e;->d()I
 
     move-result v0
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
     invoke-interface {v1}, Lcom/ifengyu/intercom/update/dolphin/e;->b()I
 
     move-result v1
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/h;->a()Lcom/ifengyu/intercom/i/h;
 
     move-result-object v2
@@ -161,26 +146,22 @@
 
     iget-object v4, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
-    .line 5
     invoke-interface {v4}, Lcom/ifengyu/intercom/update/dolphin/e;->b()I
 
     move-result v4
 
     const/4 v5, 0x0
 
-    .line 6
     invoke-virtual {v2, v3, v5, v4}, Lcom/ifengyu/intercom/i/h;->a([BII)J
 
     move-result-wide v2
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 8
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -216,10 +197,8 @@
 
     new-array v4, v4, [B
 
-    .line 9
     iput-object v4, p0, Lcom/ifengyu/intercom/update/dolphin/b;->h:Ljava/lang/Object;
 
-    .line 10
     check-cast v4, [B
 
     sget-object v6, Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;->REQUEST:Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;
@@ -234,7 +213,6 @@
 
     invoke-static {v4, v6, v7, v5, v8}, Lcom/ifengyu/intercom/node/transport/e;->a([BJII)V
 
-    .line 11
     iget-object v4, p0, Lcom/ifengyu/intercom/update/dolphin/b;->h:Ljava/lang/Object;
 
     check-cast v4, [B
@@ -249,7 +227,6 @@
 
     invoke-static {v4, v5, v6, v8, v8}, Lcom/ifengyu/intercom/node/transport/e;->a([BJII)V
 
-    .line 12
     iget-object v4, p0, Lcom/ifengyu/intercom/update/dolphin/b;->h:Ljava/lang/Object;
 
     check-cast v4, [B
@@ -260,7 +237,6 @@
 
     invoke-static {v4, v5, v6, v0, v0}, Lcom/ifengyu/intercom/node/transport/e;->a([BJII)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->h:Ljava/lang/Object;
 
     check-cast v0, [B
@@ -271,7 +247,6 @@
 
     invoke-static {v0, v4, v5, v1, v1}, Lcom/ifengyu/intercom/node/transport/e;->a([BJII)V
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->h:Ljava/lang/Object;
 
     check-cast v0, [B
@@ -280,7 +255,6 @@
 
     invoke-static {v0, v2, v3, v4, v1}, Lcom/ifengyu/intercom/node/transport/e;->a([BJII)V
 
-    .line 15
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->h:Ljava/lang/Object;
 
     check-cast v0, [B
@@ -293,7 +267,6 @@
 
     invoke-static {v0, v2, v3, v4, v1}, Lcom/ifengyu/intercom/node/transport/e;->a([BJII)V
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->h:Ljava/lang/Object;
 
     check-cast v0, [B
@@ -312,10 +285,8 @@
 
     new-array v1, v0, [B
 
-    .line 1
     iput-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->h:Ljava/lang/Object;
 
-    .line 2
     check-cast v1, [B
 
     sget-object v2, Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;->RESTART:Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;
@@ -330,7 +301,6 @@
 
     invoke-static {v1, v2, v3, v4, v0}, Lcom/ifengyu/intercom/node/transport/e;->a([BJII)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->h:Ljava/lang/Object;
 
     check-cast v0, [B
@@ -349,10 +319,8 @@
 
     new-array v1, v0, [B
 
-    .line 1
     iput-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->h:Ljava/lang/Object;
 
-    .line 2
     check-cast v1, [B
 
     sget-object v2, Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;->FINISH:Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;
@@ -367,7 +335,6 @@
 
     invoke-static {v1, v2, v3, v4, v0}, Lcom/ifengyu/intercom/node/transport/e;->a([BJII)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->h:Ljava/lang/Object;
 
     check-cast v0, [B
@@ -384,7 +351,6 @@
 .method public e()Z
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/update/dolphin/b;->d()Z
 
     move-result v0
@@ -393,7 +359,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->g:Landroid/util/SparseArray;
 
     iget v2, p0, Lcom/ifengyu/intercom/update/dolphin/b;->i:I
@@ -406,7 +371,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     check-cast v0, [B
 
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/update/dolphin/d;->a([B)Z
@@ -415,7 +379,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->i:I
 
     add-int/2addr v0, v1
@@ -424,7 +387,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
@@ -434,7 +396,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->i:I
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/dolphin/e;->e()Ljava/lang/Object;
@@ -445,7 +406,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 7
     check-cast v0, [B
 
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/update/dolphin/d;->a([B)Z
@@ -454,10 +414,8 @@
 
     if-eqz v0, :cond_1
 
-    .line 8
     invoke-virtual {p0}, Lcom/ifengyu/intercom/update/dolphin/b;->i()V
 
-    .line 9
     iget v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->i:I
 
     add-int/2addr v0, v1

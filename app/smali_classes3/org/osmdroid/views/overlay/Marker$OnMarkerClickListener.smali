@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/Marker$OnMarkerClickListener;
 .super Ljava/lang/Object;
-.source "Marker.java"
 
 
 # annotations

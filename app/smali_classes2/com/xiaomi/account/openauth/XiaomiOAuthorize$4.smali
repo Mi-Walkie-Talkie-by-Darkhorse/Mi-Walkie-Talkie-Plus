@@ -1,6 +1,5 @@
 .class final Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;
 .super Landroid/os/AsyncTask;
-.source "XiaomiOAuthorize.java"
 
 
 # annotations
@@ -40,7 +39,6 @@
 .method constructor <init>(Lcom/xiaomi/account/openauth/XiaomiOAuthFuture;Ljava/lang/String;Landroid/app/Activity;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->val$y:Lcom/xiaomi/account/openauth/XiaomiOAuthFuture;
 
     iput-object p2, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->val$typeCode:Ljava/lang/String;
@@ -59,7 +57,6 @@
 .method protected varargs doInBackground([Ljava/lang/Void;)Lcom/xiaomi/account/openauth/XiaomiOAuthResults;
     .locals 0
 
-    .line 2
     :try_start_0
     iget-object p1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->val$y:Lcom/xiaomi/account/openauth/XiaomiOAuthFuture;
 
@@ -78,7 +75,6 @@
     :catch_0
     move-exception p1
 
-    .line 3
     iput-object p1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->e:Ljava/lang/Exception;
 
     goto :goto_0
@@ -86,7 +82,6 @@
     :catch_1
     move-exception p1
 
-    .line 4
     iput-object p1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->e:Ljava/lang/Exception;
 
     goto :goto_0
@@ -94,7 +89,6 @@
     :catch_2
     move-exception p1
 
-    .line 5
     invoke-virtual {p1}, Landroid/accounts/OperationCanceledException;->printStackTrace()V
 
     :goto_0
@@ -106,7 +100,6 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, [Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->doInBackground([Ljava/lang/Void;)Lcom/xiaomi/account/openauth/XiaomiOAuthResults;
@@ -119,7 +112,6 @@
 .method protected onPostExecute(Lcom/xiaomi/account/openauth/XiaomiOAuthResults;)V
     .locals 8
 
-    .line 2
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
@@ -130,32 +122,25 @@
 
     if-nez p1, :cond_1
 
-    .line 3
     iget-object p1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->e:Ljava/lang/Exception;
 
     if-nez p1, :cond_0
 
-    .line 4
     sget p1, Lcom/xiaomi/account/openauth/AuthorizeActivityBase;->RESULT_CANCEL:I
 
-    .line 5
     invoke-virtual {v0, v2, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     const-string v2, "canceled"
 
-    .line 6
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_1
 
-    .line 7
     :cond_0
     sget p1, Lcom/xiaomi/account/openauth/AuthorizeActivityBase;->RESULT_FAIL:I
 
-    .line 8
     invoke-virtual {v0, v2, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 9
     iget-object v2, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->e:Ljava/lang/Exception;
 
     invoke-virtual {v2}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
@@ -166,7 +151,6 @@
 
     goto/16 :goto_1
 
-    .line 10
     :cond_1
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->hasError()Z
 
@@ -174,17 +158,14 @@
 
     if-eqz v3, :cond_2
 
-    .line 11
     sget v3, Lcom/xiaomi/account/openauth/AuthorizeActivityBase;->RESULT_FAIL:I
 
-    .line 12
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getErrorCode()I
 
     move-result v4
 
     invoke-virtual {v0, v2, v4}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 13
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getErrorMessage()Ljava/lang/String;
 
     move-result-object p1
@@ -195,11 +176,9 @@
 
     goto :goto_1
 
-    .line 14
     :cond_2
     sget v1, Lcom/xiaomi/account/openauth/AuthorizeActivityBase;->RESULT_SUCCESS:I
 
-    .line 15
     iget-object v2, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->val$typeCode:Ljava/lang/String;
 
     const-string v3, "code"
@@ -218,35 +197,30 @@
 
     if-eqz v2, :cond_3
 
-    .line 16
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getCode()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 17
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getState()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v7, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 18
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getTokenType()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v6, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 19
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getMacKey()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v5, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 20
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getMacAlgorithm()Ljava/lang/String;
 
     move-result-object p1
@@ -255,7 +229,6 @@
 
     goto :goto_0
 
-    .line 21
     :cond_3
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getAccessToken()Ljava/lang/String;
 
@@ -265,7 +238,6 @@
 
     invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 22
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getExpiresIn()Ljava/lang/String;
 
     move-result-object v2
@@ -274,7 +246,6 @@
 
     invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 23
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getScopes()Ljava/lang/String;
 
     move-result-object v2
@@ -283,28 +254,24 @@
 
     invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 24
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getState()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v7, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 25
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getTokenType()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v6, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 26
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getMacKey()Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v0, v5, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 27
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;->getMacAlgorithm()Ljava/lang/String;
 
     move-result-object p1
@@ -314,23 +281,19 @@
     :goto_0
     move p1, v1
 
-    .line 28
     :goto_1
     iget-object v1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->val$activity:Landroid/app/Activity;
 
-    .line 29
     invoke-static {}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize;->access$100()Ljava/lang/Class;
 
     move-result-object v2
 
-    .line 30
     invoke-static {v1, p1, v0, v2}, Lcom/xiaomi/account/openauth/AuthorizeActivityBase;->asMiddleActivity(Landroid/content/Context;ILandroid/os/Bundle;Ljava/lang/Class;)Landroid/content/Intent;
 
     move-result-object p1
 
     iget v0, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->val$requestCode:I
 
-    .line 31
     invoke-virtual {v1, p1, v0}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 
     return-void
@@ -339,7 +302,6 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/xiaomi/account/openauth/XiaomiOAuthResults;
 
     invoke-virtual {p0, p1}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$4;->onPostExecute(Lcom/xiaomi/account/openauth/XiaomiOAuthResults;)V

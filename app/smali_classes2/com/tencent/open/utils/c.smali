@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/tencent/open/utils/c;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # virtual methods

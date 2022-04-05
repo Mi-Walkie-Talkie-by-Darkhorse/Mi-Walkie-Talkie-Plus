@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/exception/PreAllocateException;
 .super Ljava/io/IOException;
-.source "PreAllocateException.java"
 
 
 # instance fields
@@ -13,7 +12,6 @@
 .method public constructor <init>(JJ)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -36,10 +34,8 @@
 
     invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-wide p1, p0, Lcom/liulishuo/okdownload/core/exception/PreAllocateException;->requireSpace:J
 
-    .line 3
     iput-wide p3, p0, Lcom/liulishuo/okdownload/core/exception/PreAllocateException;->freeSpace:J
 
     return-void
@@ -50,7 +46,6 @@
 .method public getFreeSpace()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/liulishuo/okdownload/core/exception/PreAllocateException;->freeSpace:J
 
     return-wide v0
@@ -59,7 +54,6 @@
 .method public getRequireSpace()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/liulishuo/okdownload/core/exception/PreAllocateException;->requireSpace:J
 
     return-wide v0

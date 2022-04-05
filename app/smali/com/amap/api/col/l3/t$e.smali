@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/t$e;
 .super Ljava/lang/Object;
-.source "GLTextureView.java"
 
 
 # annotations

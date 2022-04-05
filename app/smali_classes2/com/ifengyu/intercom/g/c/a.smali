@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/g/c/a;
 .super Lcom/ifengyu/intercom/g/c/b;
-.source "GetBuilder.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/c/b;-><init>()V
 
     return-void
@@ -29,19 +27,16 @@
 .method public a(Ljava/lang/String;Ljava/lang/String;)Lcom/ifengyu/intercom/g/c/a;
     .locals 1
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/g/c/b;->d:Ljava/util/Map;
 
     if-nez v0, :cond_0
 
-    .line 13
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/g/c/b;->d:Ljava/util/Map;
 
-    .line 14
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/g/c/b;->d:Ljava/util/Map;
 
@@ -53,12 +48,10 @@
 .method public a()Lcom/ifengyu/intercom/g/e/f;
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/g/c/b;->d:Ljava/util/Map;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/g/c/b;->a:Ljava/lang/String;
 
     invoke-virtual {p0, v1, v0}, Lcom/ifengyu/intercom/g/c/a;->a(Ljava/lang/String;Ljava/util/Map;)Ljava/lang/String;
@@ -67,7 +60,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/g/c/b;->a:Ljava/lang/String;
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/ifengyu/intercom/g/e/b;
 
@@ -110,7 +102,6 @@
 
     if-eqz p2, :cond_2
 
-    .line 4
     invoke-interface {p2}, Ljava/util/Map;->isEmpty()Z
 
     move-result v0
@@ -119,7 +110,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_0
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
@@ -129,17 +119,14 @@
 
     move-result-object p1
 
-    .line 6
     invoke-interface {p2}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v0
 
-    .line 7
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 8
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -147,14 +134,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 9
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/String;
 
-    .line 10
     invoke-interface {p2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -165,7 +150,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_1
     invoke-virtual {p1}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 

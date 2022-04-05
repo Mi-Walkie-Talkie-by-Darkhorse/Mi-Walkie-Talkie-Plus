@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;
 .super Lcom/autonavi/ae/gmap/gesture/TwoFingerGestureDetector;
-.source "ZoomOutGestureDetector.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/graphics/PointF;
 
     invoke-direct {v0}, Landroid/graphics/PointF;-><init>()V
@@ -47,24 +45,20 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector$OnZoomOutGestureListener;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/gesture/TwoFingerGestureDetector;-><init>(Landroid/content/Context;)V
 
-    .line 2
     new-instance p1, Landroid/graphics/PointF;
 
     invoke-direct {p1}, Landroid/graphics/PointF;-><init>()V
 
     iput-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mFocusExternal:Landroid/graphics/PointF;
 
-    .line 3
     new-instance p1, Landroid/graphics/PointF;
 
     invoke-direct {p1}, Landroid/graphics/PointF;-><init>()V
 
     iput-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mFocusDeltaExternal:Landroid/graphics/PointF;
 
-    .line 4
     iput-object p2, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector$OnZoomOutGestureListener;
 
     return-void
@@ -75,7 +69,6 @@
 .method public getFocusX()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mFocusExternal:Landroid/graphics/PointF;
 
     iget v0, v0, Landroid/graphics/PointF;->x:F
@@ -86,7 +79,6 @@
 .method public getFocusY()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mFocusExternal:Landroid/graphics/PointF;
 
     iget v0, v0, Landroid/graphics/PointF;->y:F
@@ -107,27 +99,22 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-virtual {p0, p2}, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->updateStateByEvent(Landroid/view/MotionEvent;)V
 
-    .line 2
     iget-boolean p1, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mSloppyGesture:Z
 
     if-nez p1, :cond_1
 
-    .line 3
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector$OnZoomOutGestureListener;
 
     invoke-interface {p1, p0}, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector$OnZoomOutGestureListener;->onZoomOut(Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;)V
 
-    .line 4
     :cond_1
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->resetState()V
 
     return-void
 
-    .line 5
     :cond_2
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->resetState()V
 
@@ -144,11 +131,9 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->resetState()V
 
-    .line 2
     invoke-static {p2}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object p1
@@ -157,13 +142,10 @@
 
     const-wide/16 v0, 0x0
 
-    .line 3
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/gesture/BaseGestureDetector;->mTimeDelta:J
 
-    .line 4
     invoke-virtual {p0, p2}, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->updateStateByEvent(Landroid/view/MotionEvent;)V
 
-    .line 5
     invoke-virtual {p0, p2}, Lcom/autonavi/ae/gmap/gesture/TwoFingerGestureDetector;->isSloppyGesture(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -172,7 +154,6 @@
 
     if-nez p1, :cond_1
 
-    .line 6
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mListener:Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector$OnZoomOutGestureListener;
 
     invoke-interface {p1, p0}, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector$OnZoomOutGestureListener;->onZoomOutBegin(Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;)Z
@@ -189,30 +170,24 @@
 .method protected resetState()V
     .locals 3
 
-    .line 1
     invoke-super {p0}, Lcom/autonavi/ae/gmap/gesture/BaseGestureDetector;->resetState()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mSloppyGesture:Z
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mFocusExternal:Landroid/graphics/PointF;
 
     const/4 v1, 0x0
 
     iput v1, v0, Landroid/graphics/PointF;->x:F
 
-    .line 4
     iget-object v2, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mFocusDeltaExternal:Landroid/graphics/PointF;
 
     iput v1, v2, Landroid/graphics/PointF;->x:F
 
-    .line 5
     iput v1, v0, Landroid/graphics/PointF;->y:F
 
-    .line 6
     iput v1, v2, Landroid/graphics/PointF;->y:F
 
     return-void
@@ -221,34 +196,28 @@
 .method protected updateStateByEvent(Landroid/view/MotionEvent;)V
     .locals 4
 
-    .line 1
     invoke-super {p0, p1}, Lcom/autonavi/ae/gmap/gesture/TwoFingerGestureDetector;->updateStateByEvent(Landroid/view/MotionEvent;)V
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/BaseGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
-    .line 3
     invoke-static {p1}, Lcom/autonavi/ae/gmap/gesture/BaseGestureDetector;->determineFocalPoint(Landroid/view/MotionEvent;)Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mCurrFocusInternal:Lcom/autonavi/amap/mapcore/FPoint;
 
-    .line 4
     invoke-static {v0}, Lcom/autonavi/ae/gmap/gesture/BaseGestureDetector;->determineFocalPoint(Landroid/view/MotionEvent;)Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mPrevFocusInternal:Lcom/autonavi/amap/mapcore/FPoint;
 
-    .line 5
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gesture/BaseGestureDetector;->mPrevEvent:Landroid/view/MotionEvent;
 
     invoke-virtual {v0}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v0
 
-    .line 6
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result p1
@@ -265,7 +234,6 @@
     :goto_0
     if-eqz p1, :cond_1
 
-    .line 7
     sget-object p1, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->FOCUS_DELTA_ZERO:Landroid/graphics/PointF;
 
     goto :goto_1
@@ -294,17 +262,14 @@
     :goto_1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mFocusDeltaExternal:Landroid/graphics/PointF;
 
-    .line 8
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mCurrFocusInternal:Lcom/autonavi/amap/mapcore/FPoint;
 
     invoke-virtual {p1}, Lcom/autonavi/amap/mapcore/FPoint;->recycle()V
 
-    .line 9
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mPrevFocusInternal:Lcom/autonavi/amap/mapcore/FPoint;
 
     invoke-virtual {p1}, Lcom/autonavi/amap/mapcore/FPoint;->recycle()V
 
-    .line 10
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->mFocusExternal:Landroid/graphics/PointF;
 
     iget v0, p1, Landroid/graphics/PointF;->x:F
@@ -317,7 +282,6 @@
 
     iput v0, p1, Landroid/graphics/PointF;->x:F
 
-    .line 11
     iget v0, p1, Landroid/graphics/PointF;->y:F
 
     iget v1, v1, Landroid/graphics/PointF;->y:F

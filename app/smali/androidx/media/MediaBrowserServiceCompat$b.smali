@@ -1,6 +1,5 @@
 .class Landroidx/media/MediaBrowserServiceCompat$b;
 .super Landroidx/media/MediaBrowserServiceCompat$m;
-.source "MediaBrowserServiceCompat.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>(Landroidx/media/MediaBrowserServiceCompat;Ljava/lang/Object;Landroid/support/v4/os/ResultReceiver;)V
     .locals 0
 
-    .line 1
     iput-object p3, p0, Landroidx/media/MediaBrowserServiceCompat$b;->f:Landroid/support/v4/os/ResultReceiver;
 
     invoke-direct {p0, p2}, Landroidx/media/MediaBrowserServiceCompat$m;-><init>(Ljava/lang/Object;)V
@@ -43,7 +41,6 @@
 .method a(Landroid/support/v4/media/MediaBrowserCompat$MediaItem;)V
     .locals 2
 
-    .line 2
     invoke-virtual {p0}, Landroidx/media/MediaBrowserServiceCompat$m;->a()I
 
     move-result v0
@@ -52,7 +49,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$b;->f:Landroid/support/v4/os/ResultReceiver;
 
     const/4 v0, -0x1
@@ -63,7 +59,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     new-instance v0, Landroid/os/Bundle;
 
@@ -71,10 +66,8 @@
 
     const-string v1, "media_item"
 
-    .line 5
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 6
     iget-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$b;->f:Landroid/support/v4/os/ResultReceiver;
 
     const/4 v1, 0x0
@@ -87,7 +80,6 @@
 .method bridge synthetic a(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Landroid/support/v4/media/MediaBrowserCompat$MediaItem;
 
     invoke-virtual {p0, p1}, Landroidx/media/MediaBrowserServiceCompat$b;->a(Landroid/support/v4/media/MediaBrowserCompat$MediaItem;)V

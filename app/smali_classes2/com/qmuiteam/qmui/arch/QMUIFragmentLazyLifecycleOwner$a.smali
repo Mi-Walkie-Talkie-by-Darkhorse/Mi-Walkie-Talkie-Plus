@@ -1,6 +1,5 @@
 .class interface abstract Lcom/qmuiteam/qmui/arch/QMUIFragmentLazyLifecycleOwner$a;
 .super Ljava/lang/Object;
-.source "QMUIFragmentLazyLifecycleOwner.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/SwipeBackLayout$b;
 .super Ljava/lang/Object;
-.source "SwipeBackLayout.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/arch/SwipeBackLayout$d;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/SwipeBackLayout;Lcom/qmuiteam/qmui/arch/SwipeBackLayout$e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$b;->b:Lcom/qmuiteam/qmui/arch/SwipeBackLayout;
 
     iput-object p2, p0, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$b;->a:Lcom/qmuiteam/qmui/arch/SwipeBackLayout$e;
@@ -42,7 +40,6 @@
 .method public remove()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/SwipeBackLayout$b;->b:Lcom/qmuiteam/qmui/arch/SwipeBackLayout;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/arch/SwipeBackLayout;->a(Lcom/qmuiteam/qmui/arch/SwipeBackLayout;)Ljava/util/List;

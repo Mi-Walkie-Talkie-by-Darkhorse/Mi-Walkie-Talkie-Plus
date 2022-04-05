@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultWebClient$2;
 .super Ljava/lang/Object;
-.source "DefaultWebClient.java"
 
 # interfaces
 .implements Landroid/os/Handler$Callback;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/just/agentweb/DefaultWebClient;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultWebClient$2;->this$0:Lcom/just/agentweb/DefaultWebClient;
 
     iput-object p2, p0, Lcom/just/agentweb/DefaultWebClient$2;->val$url:Ljava/lang/String;
@@ -42,7 +40,6 @@
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 2
 
-    .line 1
     iget p1, p1, Landroid/os/Message;->what:I
 
     const/4 v0, 0x1
@@ -51,7 +48,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/just/agentweb/DefaultWebClient$2;->this$0:Lcom/just/agentweb/DefaultWebClient;
 

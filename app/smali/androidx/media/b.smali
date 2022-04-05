@@ -1,6 +1,5 @@
 .class Landroidx/media/b;
 .super Ljava/lang/Object;
-.source "MediaBrowserServiceCompatApi21.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method public static a(Ljava/lang/Object;Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 0
 
-    .line 3
     check-cast p0, Landroid/service/media/MediaBrowserService;
 
     invoke-virtual {p0, p1}, Landroid/service/media/MediaBrowserService;->onBind(Landroid/content/Intent;)Landroid/os/IBinder;
@@ -35,7 +33,6 @@
 .method public static a(Landroid/content/Context;Landroidx/media/b$d;)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/media/b$b;
 
     invoke-direct {v0, p0, p1}, Landroidx/media/b$b;-><init>(Landroid/content/Context;Landroidx/media/b$d;)V
@@ -46,7 +43,6 @@
 .method public static a(Ljava/lang/Object;)V
     .locals 0
 
-    .line 2
     check-cast p0, Landroid/service/media/MediaBrowserService;
 
     invoke-virtual {p0}, Landroid/service/media/MediaBrowserService;->onCreate()V

@@ -1,6 +1,5 @@
 .class final Lcom/tencent/connect/share/a$2;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Ljava/lang/String;Landroid/os/Handler;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/share/a$2;->a:Ljava/lang/String;
 
     iput-object p2, p0, Lcom/tencent/connect/share/a$2;->b:Landroid/os/Handler;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/connect/share/a$2;->a:Ljava/lang/String;
 
     const/16 v1, 0x8c
@@ -53,7 +50,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -72,14 +68,12 @@
 
     move-result-object v2
 
-    .line 3
     iget-object v3, p0, Lcom/tencent/connect/share/a$2;->a:Ljava/lang/String;
 
     invoke-static {v3}, Lcom/tencent/open/utils/i;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 4
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -98,7 +92,6 @@
 
     move-result-object v3
 
-    .line 5
     iget-object v4, p0, Lcom/tencent/connect/share/a$2;->a:Ljava/lang/String;
 
     invoke-static {v4, v1, v1}, Lcom/tencent/connect/share/a;->a(Ljava/lang/String;II)Z
@@ -111,10 +104,8 @@
 
     const-string v0, "not out of bound,not compress!"
 
-    .line 6
     invoke-static {v4, v0}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
     iget-object v0, p0, Lcom/tencent/connect/share/a$2;->a:Ljava/lang/String;
 
     goto :goto_0
@@ -122,15 +113,12 @@
     :cond_0
     const-string v1, "out of bound,compress!"
 
-    .line 8
     invoke-static {v4, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
     invoke-static {v0, v2, v3}, Lcom/tencent/connect/share/a;->a(Landroid/graphics/Bitmap;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 10
     :goto_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -150,7 +138,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 11
     iget-object v1, p0, Lcom/tencent/connect/share/a$2;->b:Landroid/os/Handler;
 
     const/16 v2, 0x65
@@ -159,17 +146,14 @@
 
     move-result-object v1
 
-    .line 12
     iput-object v0, v1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
-    .line 13
     iget-object v0, p0, Lcom/tencent/connect/share/a$2;->b:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     return-void
 
-    .line 14
     :cond_1
     iget-object v0, p0, Lcom/tencent/connect/share/a$2;->b:Landroid/os/Handler;
 
@@ -181,10 +165,8 @@
 
     const/4 v1, 0x3
 
-    .line 15
     iput v1, v0, Landroid/os/Message;->arg1:I
 
-    .line 16
     iget-object v1, p0, Lcom/tencent/connect/share/a$2;->b:Landroid/os/Handler;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z

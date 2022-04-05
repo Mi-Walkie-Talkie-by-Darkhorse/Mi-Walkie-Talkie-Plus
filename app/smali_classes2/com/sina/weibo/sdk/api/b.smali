@@ -1,6 +1,5 @@
 .class public final Lcom/sina/weibo/sdk/api/b;
 .super Ljava/lang/Object;
-.source "WeiboMultiMessage.java"
 
 
 # instance fields
@@ -23,7 +22,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,17 +32,14 @@
 .method public a(Landroid/os/Bundle;)Landroid/os/Bundle;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/b;->a:Lcom/sina/weibo/sdk/api/TextObject;
 
     if-eqz v0, :cond_0
 
     const-string v1, "_weibo_message_text"
 
-    .line 2
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 3
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/b;->a:Lcom/sina/weibo/sdk/api/TextObject;
 
     invoke-virtual {v0}, Lcom/sina/weibo/sdk/api/TextObject;->b()Ljava/lang/String;
@@ -55,7 +50,6 @@
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/b;->b:Lcom/sina/weibo/sdk/api/ImageObject;
 
@@ -63,10 +57,8 @@
 
     const-string v1, "_weibo_message_image"
 
-    .line 5
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 6
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/b;->b:Lcom/sina/weibo/sdk/api/ImageObject;
 
     invoke-virtual {v0}, Lcom/sina/weibo/sdk/api/ImageObject;->b()Ljava/lang/String;
@@ -77,7 +69,6 @@
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/b;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
@@ -85,10 +76,8 @@
 
     const-string v1, "_weibo_message_media"
 
-    .line 8
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 9
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/b;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
     invoke-virtual {v0}, Lcom/sina/weibo/sdk/api/BaseMediaObject;->b()Ljava/lang/String;
@@ -106,7 +95,6 @@
 .method public a()Z
     .locals 3
 
-    .line 10
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/b;->a:Lcom/sina/weibo/sdk/api/TextObject;
 
     const/4 v1, 0x0
@@ -123,12 +111,10 @@
 
     const-string v0, "checkArgs fail, textObject is invalid"
 
-    .line 11
     invoke-static {v2, v0}, Lcom/sina/weibo/sdk/utils/c;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     return v1
 
-    .line 12
     :cond_0
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/b;->b:Lcom/sina/weibo/sdk/api/ImageObject;
 
@@ -142,12 +128,10 @@
 
     const-string v0, "checkArgs fail, imageObject is invalid"
 
-    .line 13
     invoke-static {v2, v0}, Lcom/sina/weibo/sdk/utils/c;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     return v1
 
-    .line 14
     :cond_1
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/b;->c:Lcom/sina/weibo/sdk/api/BaseMediaObject;
 
@@ -161,12 +145,10 @@
 
     const-string v0, "checkArgs fail, mediaObject is invalid"
 
-    .line 15
     invoke-static {v2, v0}, Lcom/sina/weibo/sdk/utils/c;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     return v1
 
-    .line 16
     :cond_2
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/b;->a:Lcom/sina/weibo/sdk/api/TextObject;
 
@@ -182,7 +164,6 @@
 
     const-string v0, "checkArgs fail, textObject and imageObject and mediaObject is null"
 
-    .line 17
     invoke-static {v2, v0}, Lcom/sina/weibo/sdk/utils/c;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     return v1
@@ -196,7 +177,6 @@
 .method public b()I
     .locals 1
 
-    .line 7
     iget v0, p0, Lcom/sina/weibo/sdk/api/b;->d:I
 
     return v0
@@ -207,7 +187,6 @@
 
     const-string v0, "_weibo_message_text"
 
-    .line 1
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object v0
@@ -220,7 +199,6 @@
 
     const-string v1, "_weibo_message_text_extra"
 
-    .line 2
     invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -230,7 +208,6 @@
     :cond_0
     const-string v0, "_weibo_message_image"
 
-    .line 3
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object v0
@@ -243,7 +220,6 @@
 
     const-string v1, "_weibo_message_image_extra"
 
-    .line 4
     invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -253,7 +229,6 @@
     :cond_1
     const-string v0, "_weibo_message_media"
 
-    .line 5
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object v0
@@ -266,7 +241,6 @@
 
     const-string v1, "_weibo_message_media_extra"
 
-    .line 6
     invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1

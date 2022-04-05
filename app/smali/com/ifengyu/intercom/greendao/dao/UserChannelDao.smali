@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;
 .super Lorg/greenrobot/greendao/AbstractDao;
-.source "UserChannelDao.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method public constructor <init>(Lorg/greenrobot/greendao/internal/DaoConfig;Lcom/ifengyu/intercom/greendao/dao/b;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lorg/greenrobot/greendao/AbstractDao;-><init>(Lorg/greenrobot/greendao/internal/DaoConfig;Lorg/greenrobot/greendao/AbstractDaoSession;)V
 
     return-void
@@ -46,7 +44,6 @@
     :cond_0
     const-string p1, ""
 
-    .line 1
     :goto_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -78,7 +75,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 34
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c()Ljava/lang/Long;
 
     move-result-object p1
@@ -94,14 +90,12 @@
 .method protected final a(Lcom/ifengyu/intercom/ui/setting/UserChannel;J)Ljava/lang/Long;
     .locals 1
 
-    .line 32
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(Ljava/lang/Long;)V
 
-    .line 33
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -114,7 +108,6 @@
 
     add-int/lit8 v0, p3, 0x0
 
-    .line 24
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -141,7 +134,6 @@
 
     add-int/lit8 v0, p3, 0x1
 
-    .line 25
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -150,7 +142,6 @@
 
     add-int/lit8 v0, p3, 0x2
 
-    .line 26
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -159,7 +150,6 @@
 
     add-int/lit8 v0, p3, 0x3
 
-    .line 27
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -178,7 +168,6 @@
 
     add-int/lit8 v0, p3, 0x4
 
-    .line 28
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -187,7 +176,6 @@
 
     add-int/lit8 v0, p3, 0x5
 
-    .line 29
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -196,7 +184,6 @@
 
     add-int/lit8 v0, p3, 0x6
 
-    .line 30
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -205,7 +192,6 @@
 
     add-int/lit8 p3, p3, 0x7
 
-    .line 31
     invoke-interface {p1, p3}, Landroid/database/Cursor;->getInt(I)I
 
     move-result p1
@@ -218,10 +204,8 @@
 .method protected final a(Landroid/database/sqlite/SQLiteStatement;Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
     .locals 4
 
-    .line 13
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteStatement;->clearBindings()V
 
-    .line 14
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c()Ljava/lang/Long;
 
     move-result-object v0
@@ -230,7 +214,6 @@
 
     const/4 v1, 0x1
 
-    .line 15
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
@@ -240,7 +223,6 @@
     :cond_0
     const/4 v0, 0x2
 
-    .line 16
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e()I
 
     move-result v1
@@ -251,7 +233,6 @@
 
     const/4 v0, 0x3
 
-    .line 17
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->h()I
 
     move-result v1
@@ -260,7 +241,6 @@
 
     invoke-virtual {p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 18
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d()Ljava/lang/String;
 
     move-result-object v0
@@ -269,13 +249,11 @@
 
     const/4 v1, 0x4
 
-    .line 19
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
     :cond_1
     const/4 v0, 0x5
 
-    .line 20
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a()I
 
     move-result v1
@@ -286,7 +264,6 @@
 
     const/4 v0, 0x6
 
-    .line 21
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f()I
 
     move-result v1
@@ -297,7 +274,6 @@
 
     const/4 v0, 0x7
 
-    .line 22
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b()I
 
     move-result v1
@@ -308,7 +284,6 @@
 
     const/16 v0, 0x8
 
-    .line 23
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->g()I
 
     move-result p2
@@ -323,10 +298,8 @@
 .method protected final a(Lorg/greenrobot/greendao/database/DatabaseStatement;Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
     .locals 4
 
-    .line 2
     invoke-interface {p1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->clearBindings()V
 
-    .line 3
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c()Ljava/lang/Long;
 
     move-result-object v0
@@ -335,7 +308,6 @@
 
     const/4 v1, 0x1
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
@@ -345,7 +317,6 @@
     :cond_0
     const/4 v0, 0x2
 
-    .line 5
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e()I
 
     move-result v1
@@ -356,7 +327,6 @@
 
     const/4 v0, 0x3
 
-    .line 6
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->h()I
 
     move-result v1
@@ -365,7 +335,6 @@
 
     invoke-interface {p1, v0, v1, v2}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 7
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d()Ljava/lang/String;
 
     move-result-object v0
@@ -374,13 +343,11 @@
 
     const/4 v1, 0x4
 
-    .line 8
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
     :cond_1
     const/4 v0, 0x5
 
-    .line 9
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a()I
 
     move-result v1
@@ -391,7 +358,6 @@
 
     const/4 v0, 0x6
 
-    .line 10
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f()I
 
     move-result v1
@@ -402,7 +368,6 @@
 
     const/4 v0, 0x7
 
-    .line 11
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b()I
 
     move-result v1
@@ -413,7 +378,6 @@
 
     const/16 v0, 0x8
 
-    .line 12
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->g()I
 
     move-result p2
@@ -428,7 +392,6 @@
 .method public b(Lcom/ifengyu/intercom/ui/setting/UserChannel;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c()Ljava/lang/Long;
 
     move-result-object p1
@@ -449,7 +412,6 @@
 .method protected bridge synthetic bindValues(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;->a(Landroid/database/sqlite/SQLiteStatement;Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
@@ -460,7 +422,6 @@
 .method protected bridge synthetic bindValues(Lorg/greenrobot/greendao/database/DatabaseStatement;Ljava/lang/Object;)V
     .locals 0
 
-    .line 2
     check-cast p2, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;->a(Lorg/greenrobot/greendao/database/DatabaseStatement;Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
@@ -471,7 +432,6 @@
 .method public bridge synthetic getKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;->a(Lcom/ifengyu/intercom/ui/setting/UserChannel;)Ljava/lang/Long;
@@ -484,7 +444,6 @@
 .method public bridge synthetic hasKey(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;->b(Lcom/ifengyu/intercom/ui/setting/UserChannel;)Z
@@ -505,12 +464,10 @@
 .method public readEntity(Landroid/database/Cursor;I)Lcom/ifengyu/intercom/ui/setting/UserChannel;
     .locals 10
 
-    .line 3
     new-instance v9, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     add-int/lit8 v0, p2, 0x0
 
-    .line 4
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -537,21 +494,18 @@
     :goto_0
     add-int/lit8 v0, p2, 0x1
 
-    .line 5
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v3
 
     add-int/lit8 v0, p2, 0x2
 
-    .line 6
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v4
 
     add-int/lit8 v0, p2, 0x3
 
-    .line 7
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v5
@@ -572,28 +526,24 @@
     :goto_1
     add-int/lit8 v0, p2, 0x4
 
-    .line 8
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v6
 
     add-int/lit8 v0, p2, 0x5
 
-    .line 9
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v7
 
     add-int/lit8 v0, p2, 0x6
 
-    .line 10
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v8
 
     add-int/lit8 p2, p2, 0x7
 
-    .line 11
     invoke-interface {p1, p2}, Landroid/database/Cursor;->getInt(I)I
 
     move-result p1
@@ -622,7 +572,6 @@
 .method public bridge synthetic readEntity(Landroid/database/Cursor;I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;->readEntity(Landroid/database/Cursor;I)Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     move-result-object p1
@@ -633,7 +582,6 @@
 .method public bridge synthetic readEntity(Landroid/database/Cursor;Ljava/lang/Object;I)V
     .locals 0
 
-    .line 2
     check-cast p2, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;->a(Landroid/database/Cursor;Lcom/ifengyu/intercom/ui/setting/UserChannel;I)V
@@ -646,7 +594,6 @@
 
     add-int/lit8 p2, p2, 0x0
 
-    .line 2
     invoke-interface {p1, p2}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v0
@@ -673,7 +620,6 @@
 .method public bridge synthetic readKey(Landroid/database/Cursor;I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;->readKey(Landroid/database/Cursor;I)Ljava/lang/Long;
 
     move-result-object p1
@@ -684,7 +630,6 @@
 .method protected bridge synthetic updateKeyAfterInsert(Ljava/lang/Object;J)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/ifengyu/intercom/greendao/dao/UserChannelDao;->a(Lcom/ifengyu/intercom/ui/setting/UserChannel;J)Ljava/lang/Long;

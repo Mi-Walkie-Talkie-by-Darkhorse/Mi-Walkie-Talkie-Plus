@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/request/h/c;
 .super Lcom/bumptech/glide/request/h/d;
-.source "DrawableImageViewTarget.java"
 
 
 # annotations
@@ -17,7 +16,6 @@
 .method public constructor <init>(Landroid/widget/ImageView;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/bumptech/glide/request/h/d;-><init>(Landroid/widget/ImageView;)V
 
     return-void
@@ -32,7 +30,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/request/h/c;->e(Landroid/graphics/drawable/Drawable;)V
@@ -47,7 +44,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/request/h/i;->b:Landroid/view/View;
 
     check-cast v0, Landroid/widget/ImageView;

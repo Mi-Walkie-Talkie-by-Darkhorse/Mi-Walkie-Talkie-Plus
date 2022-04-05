@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$b;
 .super Ljava/lang/Object;
-.source "MapFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment;Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$b;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$b;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
@@ -42,12 +40,10 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$b;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->l()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$b;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->e(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)Z
@@ -76,14 +72,12 @@
 
     if-lez v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$b;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->a(Lcom/ifengyu/intercom/ui/fragment/MapFragment;Z)Z
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/w;->b()Lcom/ifengyu/intercom/i/w;
 
     move-result-object v0

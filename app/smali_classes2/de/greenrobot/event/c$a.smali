@@ -1,6 +1,5 @@
 .class Lde/greenrobot/event/c$a;
 .super Ljava/lang/ThreadLocal;
-.source "EventBus.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lde/greenrobot/event/c;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
 .method protected initialValue()Lde/greenrobot/event/c$c;
     .locals 1
 
-    .line 2
     new-instance v0, Lde/greenrobot/event/c$c;
 
     invoke-direct {v0}, Lde/greenrobot/event/c$c;-><init>()V
@@ -48,7 +45,6 @@
 .method protected bridge synthetic initialValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lde/greenrobot/event/c$a;->initialValue()Lde/greenrobot/event/c$c;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m$a;
 .super Ljava/lang/Object;
-.source "DolphinSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public run()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object v0
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/e;->c()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
@@ -70,7 +66,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$m;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;

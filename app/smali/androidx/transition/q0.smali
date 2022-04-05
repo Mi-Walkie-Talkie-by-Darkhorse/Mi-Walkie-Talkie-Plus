@@ -1,6 +1,5 @@
 .class Landroidx/transition/q0;
 .super Ljava/lang/Object;
-.source "WindowIdApi14.java"
 
 # interfaces
 .implements Landroidx/transition/s0;
@@ -14,10 +13,8 @@
 .method constructor <init>(Landroid/os/IBinder;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/transition/q0;->a:Landroid/os/IBinder;
 
     return-void
@@ -28,7 +25,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p1, Landroidx/transition/q0;
 
     if-eqz v0, :cond_0
@@ -59,7 +55,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/transition/q0;->a:Landroid/os/IBinder;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I

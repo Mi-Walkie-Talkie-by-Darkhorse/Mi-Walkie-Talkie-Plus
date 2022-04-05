@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportRealtime;
 .super Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
-.source "ReportPolicy.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;-><init>()V
 
     return-void

@@ -1,6 +1,5 @@
 .class Landroidx/transition/j0;
 .super Landroidx/transition/o0;
-.source "ViewUtilsApi19.java"
 
 
 # annotations
@@ -23,7 +22,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/transition/o0;-><init>()V
 
     return-void
@@ -53,12 +51,10 @@
         }
     .end annotation
 
-    .line 1
     sget-boolean v0, Landroidx/transition/j0;->f:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     invoke-virtual {p1, p2}, Landroid/view/View;->setTransitionAlpha(F)V
     :try_end_0
@@ -69,10 +65,8 @@
     :catch_0
     const/4 v0, 0x0
 
-    .line 3
     sput-boolean v0, Landroidx/transition/j0;->f:Z
 
-    .line 4
     :cond_0
     invoke-virtual {p1, p2}, Landroid/view/View;->setAlpha(F)V
 
@@ -91,12 +85,10 @@
         }
     .end annotation
 
-    .line 1
     sget-boolean v0, Landroidx/transition/j0;->f:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     invoke-virtual {p1}, Landroid/view/View;->getTransitionAlpha()F
 
@@ -109,10 +101,8 @@
     :catch_0
     const/4 v0, 0x0
 
-    .line 3
     sput-boolean v0, Landroidx/transition/j0;->f:Z
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->getAlpha()F
 

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$m;
 .super Lcom/ifengyu/intercom/g/d/h;
-.source "MapFragment.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$m;->c:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$m;->b:Ljava/lang/String;
@@ -39,7 +37,6 @@
 .method public a(Lcom/ifengyu/intercom/bean/PrivacyInfoBean;I)V
     .locals 1
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/PrivacyInfoBean;->getVersion()Ljava/lang/String;
 
     move-result-object p1
@@ -48,7 +45,6 @@
 
     move-result p1
 
-    .line 4
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$m;->b:Ljava/lang/String;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/i/d0;->b(Ljava/lang/String;)I
@@ -57,7 +53,6 @@
 
     if-le p1, p2, :cond_0
 
-    .line 5
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$m;->c:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$m;->b:Ljava/lang/String;
@@ -71,7 +66,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/bean/PrivacyInfoBean;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/fragment/MapFragment$m;->a(Lcom/ifengyu/intercom/bean/PrivacyInfoBean;I)V
@@ -82,7 +76,6 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 0
 
-    .line 2
     invoke-virtual {p2}, Ljava/lang/Exception;->printStackTrace()V
 
     return-void

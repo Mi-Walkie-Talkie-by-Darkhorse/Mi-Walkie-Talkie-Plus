@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/common/DataHelper;
 .super Ljava/lang/Object;
-.source "DataHelper.java"
 
 
 # static fields
@@ -23,29 +22,24 @@
 
     new-array v0, v0, [B
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/common/DataHelper;->iv:[B
 
     const-wide/32 v0, 0x96000
 
-    .line 2
     sput-wide v0, Lcom/umeng/commonsdk/statistics/common/DataHelper;->ENVELOPE_EXTRA_LENGTH:J
 
     const-wide/32 v0, 0x200000
 
-    .line 3
     sput-wide v0, Lcom/umeng/commonsdk/statistics/common/DataHelper;->ENVELOPE_ENTITY_RAW_LENGTH_MAX:J
 
     const-wide/32 v0, 0x32000
 
-    .line 4
     sput-wide v0, Lcom/umeng/commonsdk/statistics/common/DataHelper;->ENVELOPE_LENGTH_MAX:J
 
     const-string v0, "umeng+0123456789"
 
-    .line 5
     sput-object v0, Lcom/umeng/commonsdk/statistics/common/DataHelper;->UMENG_PLUS:Ljava/lang/String;
 
     return-void
@@ -76,7 +70,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,7 +78,6 @@
 .method public static assembleStatelessURL(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -106,7 +98,6 @@
 .method public static assembleURL(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -131,13 +122,11 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :goto_0
     array-length v2, p0
 
     if-ge v1, v2, :cond_1
 
-    .line 2
     aget-byte v2, p0, v1
 
     and-int/lit16 v2, v2, 0xff
@@ -146,7 +135,6 @@
 
     move-result-object v2
 
-    .line 3
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -155,7 +143,6 @@
 
     if-ne v3, v4, :cond_0
 
-    .line 4
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -170,7 +157,6 @@
 
     move-result-object v0
 
-    .line 5
     :cond_0
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -201,22 +187,18 @@
 
     return-object v0
 
-    .line 1
     :cond_0
     :try_start_0
     new-instance v1, Ljava/io/StringWriter;
 
     invoke-direct {v1}, Ljava/io/StringWriter;-><init>()V
 
-    .line 2
     new-instance v2, Ljava/io/PrintWriter;
 
     invoke-direct {v2, v1}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
-    .line 3
     invoke-virtual {p0, v2}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
 
-    .line 4
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
@@ -224,26 +206,21 @@
     :goto_0
     if-eqz p0, :cond_1
 
-    .line 5
     invoke-virtual {p0, v2}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
 
-    .line 6
     invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 7
     :cond_1
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 8
     invoke-virtual {v2}, Ljava/io/PrintWriter;->close()V
 
-    .line 9
     invoke-virtual {v1}, Ljava/io/Writer;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -262,19 +239,16 @@
 
     const-string v0, "AES/CBC/PKCS7Padding"
 
-    .line 1
     invoke-static {v0}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
 
     const-string v2, "AES"
 
     invoke-direct {v1, p1, v2}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 
-    .line 3
     new-instance p1, Ljavax/crypto/spec/IvParameterSpec;
 
     sget-object v2, Lcom/umeng/commonsdk/statistics/common/DataHelper;->iv:[B
@@ -283,10 +257,8 @@
 
     const/4 v2, 0x2
 
-    .line 4
     invoke-virtual {v0, v2, v1, p1}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
 
-    .line 5
     invoke-virtual {v0, p0}, Ljavax/crypto/Cipher;->doFinal([B)[B
 
     move-result-object p0
@@ -297,7 +269,6 @@
 .method public static decryptEx(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
@@ -309,7 +280,6 @@
 
     move-result-object p0
 
-    .line 2
     new-instance v0, Ljava/lang/String;
 
     sget-object v1, Lcom/umeng/commonsdk/statistics/common/DataHelper;->UMENG_PLUS:Ljava/lang/String;
@@ -345,19 +315,16 @@
 
     const-string v0, "AES/CBC/PKCS7Padding"
 
-    .line 1
     invoke-static {v0}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
 
     const-string v2, "AES"
 
     invoke-direct {v1, p1, v2}, Ljavax/crypto/spec/SecretKeySpec;-><init>([BLjava/lang/String;)V
 
-    .line 3
     new-instance p1, Ljavax/crypto/spec/IvParameterSpec;
 
     sget-object v2, Lcom/umeng/commonsdk/statistics/common/DataHelper;->iv:[B
@@ -366,10 +333,8 @@
 
     const/4 v2, 0x1
 
-    .line 4
     invoke-virtual {v0, v2, v1, p1}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
 
-    .line 5
     invoke-virtual {v0, p0}, Ljavax/crypto/Cipher;->doFinal([B)[B
 
     move-result-object p0
@@ -380,7 +345,6 @@
 .method public static encryptBySHA1(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
     move-result-object p0
@@ -388,15 +352,12 @@
     :try_start_0
     const-string v0, "SHA1"
 
-    .line 2
     invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0, p0}, Ljava/security/MessageDigest;->update([B)V
 
-    .line 4
     invoke-virtual {v0}, Ljava/security/MessageDigest;->digest()[B
 
     move-result-object p0
@@ -418,7 +379,6 @@
 .method public static encryptEx(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/String;->getBytes()[B
 
@@ -436,7 +396,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-static {p0, v0}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
     move-result-object p0
@@ -458,18 +417,14 @@
     :try_start_0
     const-string v0, "MD5"
 
-    .line 1
     invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/security/MessageDigest;->reset()V
 
-    .line 3
     invoke-virtual {v0, p0}, Ljava/security/MessageDigest;->update([B)V
 
-    .line 4
     invoke-virtual {v0}, Ljava/security/MessageDigest;->digest()[B
 
     move-result-object p0
@@ -504,7 +459,6 @@
 .method public static random(ILjava/lang/String;)I
     .locals 5
 
-    .line 1
     new-instance v0, Ljava/util/Random;
 
     invoke-direct {v0}, Ljava/util/Random;-><init>()V
@@ -535,7 +489,6 @@
 
     const-string v1, "--->"
 
-    .line 2
     invoke-static {v1, v0}, Lcom/umeng/commonsdk/statistics/common/MLog;->e(Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_0
@@ -543,7 +496,6 @@
 
     const/16 v1, 0xb
 
-    .line 3
     :try_start_0
     invoke-virtual {p1, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
@@ -564,7 +516,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     new-instance p1, Ljava/util/Random;
 
@@ -598,20 +549,17 @@
 
     return-object v0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
 
-    .line 2
     rem-int/lit8 v2, v1, 0x2
 
     if-eqz v2, :cond_1
 
     return-object v0
 
-    .line 3
     :cond_1
     div-int/lit8 v0, v1, 0x2
 
@@ -622,7 +570,6 @@
     :goto_0
     if-ge v2, v1, :cond_2
 
-    .line 4
     div-int/lit8 v3, v2, 0x2
 
     add-int/lit8 v4, v2, 0x2
@@ -662,7 +609,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -672,7 +618,6 @@
 
     const/4 v2, 0x0
 
-    .line 2
     :goto_0
     array-length v3, p0
 
@@ -682,7 +627,6 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    .line 3
     aget-byte v4, p0, v2
 
     invoke-static {v4}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -703,7 +647,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 

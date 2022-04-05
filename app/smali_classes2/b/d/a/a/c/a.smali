@@ -1,6 +1,5 @@
 .class public interface abstract Lb/d/a/a/c/a;
 .super Ljava/lang/Object;
-.source "ItemViewDelegate.java"
 
 
 # annotations

@@ -1,13 +1,11 @@
 .class abstract Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;
 .super Lcom/google/zxing/client/result/ResultParser;
-.source "AbstractDoCoMoResultParser.java"
 
 
 # direct methods
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/client/result/ResultParser;-><init>()V
 
     return-void
@@ -18,7 +16,6 @@
 
     const/16 v0, 0x3b
 
-    .line 1
     invoke-static {p0, p1, v0, p2}, Lcom/google/zxing/client/result/ResultParser;->matchPrefixedField(Ljava/lang/String;Ljava/lang/String;CZ)[Ljava/lang/String;
 
     move-result-object p0
@@ -31,7 +28,6 @@
 
     const/16 v0, 0x3b
 
-    .line 1
     invoke-static {p0, p1, v0, p2}, Lcom/google/zxing/client/result/ResultParser;->matchSinglePrefixedField(Ljava/lang/String;Ljava/lang/String;CZ)Ljava/lang/String;
 
     move-result-object p0

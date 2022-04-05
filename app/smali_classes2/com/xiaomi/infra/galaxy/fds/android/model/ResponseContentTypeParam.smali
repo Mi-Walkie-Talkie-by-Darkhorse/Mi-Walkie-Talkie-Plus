@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/android/model/ResponseContentTypeParam;
 .super Lcom/xiaomi/infra/galaxy/fds/android/model/UserParam;
-.source "ResponseContentTypeParam.java"
 
 
 # static fields
@@ -11,10 +10,8 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Lcom/xiaomi/infra/galaxy/fds/android/model/UserParam;-><init>()V
 
-    .line 2
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/UserParam;->params:Ljava/util/Map;
 
     const-string v1, "response-content-type"

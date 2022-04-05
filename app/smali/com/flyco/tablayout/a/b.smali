@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/flyco/tablayout/a/b;
 .super Ljava/lang/Object;
-.source "OnTabSelectListener.java"
 
 
 # virtual methods

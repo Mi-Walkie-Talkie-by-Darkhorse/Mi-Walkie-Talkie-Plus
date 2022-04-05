@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment2$b;
 .super Ljava/lang/Object;
-.source "QMUITabSegment2.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$e;
@@ -25,10 +24,8 @@
 .method public constructor <init>(Landroidx/viewpager2/widget/ViewPager2;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment2$b;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     return-void
@@ -51,7 +48,6 @@
 .method public c(I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabSegment2$b;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     const/4 v1, 0x0

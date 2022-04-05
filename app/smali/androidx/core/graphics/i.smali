@@ -1,6 +1,5 @@
 .class public Landroidx/core/graphics/i;
 .super Landroidx/core/graphics/g;
-.source "TypefaceCompatApi26Impl.java"
 
 
 # annotations
@@ -49,43 +48,35 @@
 .method public constructor <init>()V
     .locals 8
 
-    .line 1
     invoke-direct {p0}, Landroidx/core/graphics/g;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Landroidx/core/graphics/i;->a()Ljava/lang/Class;
 
     move-result-object v1
 
-    .line 3
     invoke-virtual {p0, v1}, Landroidx/core/graphics/i;->e(Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object v2
 
-    .line 4
     invoke-virtual {p0, v1}, Landroidx/core/graphics/i;->b(Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v3
 
-    .line 5
     invoke-virtual {p0, v1}, Landroidx/core/graphics/i;->c(Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v4
 
-    .line 6
     invoke-virtual {p0, v1}, Landroidx/core/graphics/i;->f(Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v5
 
-    .line 7
     invoke-virtual {p0, v1}, Landroidx/core/graphics/i;->a(Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v6
 
-    .line 8
     invoke-virtual {p0, v1}, Landroidx/core/graphics/i;->d(Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
@@ -109,7 +100,6 @@
     :catch_1
     move-exception v1
 
-    .line 9
     :goto_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -149,26 +139,19 @@
 
     move-object v6, v5
 
-    .line 10
     :goto_1
     iput-object v0, p0, Landroidx/core/graphics/i;->g:Ljava/lang/Class;
 
-    .line 11
     iput-object v2, p0, Landroidx/core/graphics/i;->h:Ljava/lang/reflect/Constructor;
 
-    .line 12
     iput-object v3, p0, Landroidx/core/graphics/i;->i:Ljava/lang/reflect/Method;
 
-    .line 13
     iput-object v4, p0, Landroidx/core/graphics/i;->j:Ljava/lang/reflect/Method;
 
-    .line 14
     iput-object v5, p0, Landroidx/core/graphics/i;->k:Ljava/lang/reflect/Method;
 
-    .line 15
     iput-object v6, p0, Landroidx/core/graphics/i;->l:Ljava/lang/reflect/Method;
 
-    .line 16
     iput-object v1, p0, Landroidx/core/graphics/i;->m:Ljava/lang/reflect/Method;
 
     return-void
@@ -183,7 +166,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Landroidx/core/graphics/i;->i:Ljava/lang/reflect/Method;
 
@@ -191,7 +173,6 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object p1
@@ -228,7 +209,6 @@
 
     const/4 p1, 0x5
 
-    .line 3
     invoke-static {p5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p3
@@ -247,7 +227,6 @@
 
     aput-object p7, v2, p1
 
-    .line 4
     invoke-virtual {v1, p2, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -272,7 +251,6 @@
 
     const/4 v0, 0x0
 
-    .line 5
     :try_start_0
     iget-object v1, p0, Landroidx/core/graphics/i;->j:Ljava/lang/reflect/Method;
 
@@ -284,7 +262,6 @@
 
     const/4 p2, 0x1
 
-    .line 6
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p3
@@ -313,7 +290,6 @@
 
     aput-object p3, v2, p2
 
-    .line 7
     invoke-virtual {v1, p1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -336,7 +312,6 @@
 .method private b(Ljava/lang/Object;)V
     .locals 2
 
-    .line 4
     :try_start_0
     iget-object v0, p0, Landroidx/core/graphics/i;->l:Ljava/lang/reflect/Method;
 
@@ -356,7 +331,6 @@
 .method private b()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/core/graphics/i;->i:Ljava/lang/reflect/Method;
 
     if-nez v0, :cond_0
@@ -365,10 +339,8 @@
 
     const-string v1, "Unable to collect necessary private methods. Fallback to legacy implementation."
 
-    .line 2
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     :cond_0
     iget-object v0, p0, Landroidx/core/graphics/i;->i:Ljava/lang/reflect/Method;
 
@@ -390,7 +362,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Landroidx/core/graphics/i;->h:Ljava/lang/reflect/Constructor;
 
@@ -419,7 +390,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Landroidx/core/graphics/i;->k:Ljava/lang/reflect/Method;
 
@@ -451,21 +421,18 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 47
     invoke-direct {p0}, Landroidx/core/graphics/i;->b()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 48
     invoke-super/range {p0 .. p5}, Landroidx/core/graphics/l;->a(Landroid/content/Context;Landroid/content/res/Resources;ILjava/lang/String;I)Landroid/graphics/Typeface;
 
     move-result-object p1
 
     return-object p1
 
-    .line 49
     :cond_0
     invoke-direct {p0}, Landroidx/core/graphics/i;->c()Ljava/lang/Object;
 
@@ -494,19 +461,16 @@
 
     move-object v3, p4
 
-    .line 50
     invoke-direct/range {v0 .. v7}, Landroidx/core/graphics/i;->a(Landroid/content/Context;Ljava/lang/Object;Ljava/lang/String;III[Landroid/graphics/fonts/FontVariationAxis;)Z
 
     move-result p1
 
     if-nez p1, :cond_2
 
-    .line 51
     invoke-direct {p0, p2}, Landroidx/core/graphics/i;->b(Ljava/lang/Object;)V
 
     return-object p3
 
-    .line 52
     :cond_2
     invoke-direct {p0, p2}, Landroidx/core/graphics/i;->c(Ljava/lang/Object;)Z
 
@@ -516,7 +480,6 @@
 
     return-object p3
 
-    .line 53
     :cond_3
     invoke-virtual {p0, p2}, Landroidx/core/graphics/i;->a(Ljava/lang/Object;)Landroid/graphics/Typeface;
 
@@ -538,7 +501,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 24
     array-length v0, p3
 
     const/4 v1, 0x1
@@ -549,7 +511,6 @@
 
     return-object v2
 
-    .line 25
     :cond_0
     invoke-direct {p0}, Landroidx/core/graphics/i;->b()Z
 
@@ -557,17 +518,14 @@
 
     if-nez v0, :cond_5
 
-    .line 26
     invoke-virtual {p0, p3, p4}, Landroidx/core/graphics/l;->a([Landroidx/core/provider/FontsContractCompat$b;I)Landroidx/core/provider/FontsContractCompat$b;
 
     move-result-object p3
 
-    .line 27
     invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p1
 
-    .line 28
     :try_start_0
     invoke-virtual {p3}, Landroidx/core/provider/FontsContractCompat$b;->c()Landroid/net/Uri;
 
@@ -583,7 +541,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 29
     invoke-virtual {p1}, Landroid/os/ParcelFileDescriptor;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -591,7 +548,6 @@
     :cond_1
     return-object v2
 
-    .line 30
     :cond_2
     :try_start_1
     new-instance p2, Landroid/graphics/Typeface$Builder;
@@ -602,7 +558,6 @@
 
     invoke-direct {p2, p4}, Landroid/graphics/Typeface$Builder;-><init>(Ljava/io/FileDescriptor;)V
 
-    .line 31
     invoke-virtual {p3}, Landroidx/core/provider/FontsContractCompat$b;->d()I
 
     move-result p4
@@ -611,7 +566,6 @@
 
     move-result-object p2
 
-    .line 32
     invoke-virtual {p3}, Landroidx/core/provider/FontsContractCompat$b;->e()Z
 
     move-result p3
@@ -620,7 +574,6 @@
 
     move-result-object p2
 
-    .line 33
     invoke-virtual {p2}, Landroid/graphics/Typeface$Builder;->build()Landroid/graphics/Typeface;
 
     move-result-object p2
@@ -629,7 +582,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 34
     :try_start_2
     invoke-virtual {p1}, Landroid/os/ParcelFileDescriptor;->close()V
     :try_end_2
@@ -643,7 +595,6 @@
 
     if-eqz p1, :cond_4
 
-    .line 35
     :try_start_3
     invoke-virtual {p1}, Landroid/os/ParcelFileDescriptor;->close()V
     :try_end_3
@@ -666,13 +617,11 @@
     :catch_0
     return-object v2
 
-    .line 36
     :cond_5
     invoke-static {p1, p3, p2}, Landroidx/core/graphics/m;->a(Landroid/content/Context;[Landroidx/core/provider/FontsContractCompat$b;Landroid/os/CancellationSignal;)Ljava/util/Map;
 
     move-result-object p1
 
-    .line 37
     invoke-direct {p0}, Landroidx/core/graphics/i;->c()Ljava/lang/Object;
 
     move-result-object p2
@@ -681,7 +630,6 @@
 
     return-object v2
 
-    .line 38
     :cond_6
     array-length v0, p3
 
@@ -694,7 +642,6 @@
 
     aget-object v4, p3, v9
 
-    .line 39
     invoke-virtual {v4}, Landroidx/core/provider/FontsContractCompat$b;->c()Landroid/net/Uri;
 
     move-result-object v5
@@ -709,7 +656,6 @@
 
     goto :goto_2
 
-    .line 40
     :cond_7
     invoke-virtual {v4}, Landroidx/core/provider/FontsContractCompat$b;->b()I
 
@@ -727,14 +673,12 @@
 
     move-object v4, p2
 
-    .line 41
     invoke-direct/range {v3 .. v8}, Landroidx/core/graphics/i;->a(Ljava/lang/Object;Ljava/nio/ByteBuffer;III)Z
 
     move-result v3
 
     if-nez v3, :cond_8
 
-    .line 42
     invoke-direct {p0, p2}, Landroidx/core/graphics/i;->b(Ljava/lang/Object;)V
 
     return-object v2
@@ -750,12 +694,10 @@
     :cond_9
     if-nez v3, :cond_a
 
-    .line 43
     invoke-direct {p0, p2}, Landroidx/core/graphics/i;->b(Ljava/lang/Object;)V
 
     return-object v2
 
-    .line 44
     :cond_a
     invoke-direct {p0, p2}, Landroidx/core/graphics/i;->c(Ljava/lang/Object;)Z
 
@@ -765,7 +707,6 @@
 
     return-object v2
 
-    .line 45
     :cond_b
     invoke-virtual {p0, p2}, Landroidx/core/graphics/i;->a(Ljava/lang/Object;)Landroid/graphics/Typeface;
 
@@ -775,7 +716,6 @@
 
     return-object v2
 
-    .line 46
     :cond_c
     invoke-static {p1, p4}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;
 
@@ -789,21 +729,18 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 13
     invoke-direct {p0}, Landroidx/core/graphics/i;->b()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 14
     invoke-super {p0, p1, p2, p3, p4}, Landroidx/core/graphics/g;->a(Landroid/content/Context;Landroidx/core/content/res/FontResourcesParserCompat$b;Landroid/content/res/Resources;I)Landroid/graphics/Typeface;
 
     move-result-object p1
 
     return-object p1
 
-    .line 15
     :cond_0
     invoke-direct {p0}, Landroidx/core/graphics/i;->c()Ljava/lang/Object;
 
@@ -815,7 +752,6 @@
 
     return-object p4
 
-    .line 16
     :cond_1
     invoke-virtual {p2}, Landroidx/core/content/res/FontResourcesParserCompat$b;->a()[Landroidx/core/content/res/FontResourcesParserCompat$c;
 
@@ -832,12 +768,10 @@
 
     aget-object v0, p2, v9
 
-    .line 17
     invoke-virtual {v0}, Landroidx/core/content/res/FontResourcesParserCompat$c;->a()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 18
     invoke-virtual {v0}, Landroidx/core/content/res/FontResourcesParserCompat$c;->c()I
 
     move-result v4
@@ -850,7 +784,6 @@
 
     move-result v6
 
-    .line 19
     invoke-virtual {v0}, Landroidx/core/content/res/FontResourcesParserCompat$c;->d()Ljava/lang/String;
 
     move-result-object v0
@@ -865,14 +798,12 @@
 
     move-object v2, p3
 
-    .line 20
     invoke-direct/range {v0 .. v7}, Landroidx/core/graphics/i;->a(Landroid/content/Context;Ljava/lang/Object;Ljava/lang/String;III[Landroid/graphics/fonts/FontVariationAxis;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 21
     invoke-direct {p0, p3}, Landroidx/core/graphics/i;->b(Ljava/lang/Object;)V
 
     return-object p4
@@ -882,7 +813,6 @@
 
     goto :goto_0
 
-    .line 22
     :cond_3
     invoke-direct {p0, p3}, Landroidx/core/graphics/i;->c(Ljava/lang/Object;)Z
 
@@ -892,7 +822,6 @@
 
     return-object p4
 
-    .line 23
     :cond_4
     invoke-virtual {p0, p3}, Landroidx/core/graphics/i;->a(Ljava/lang/Object;)Landroid/graphics/Typeface;
 
@@ -908,7 +837,6 @@
 
     const/4 v0, 0x0
 
-    .line 8
     :try_start_0
     iget-object v1, p0, Landroidx/core/graphics/i;->g:Ljava/lang/Class;
 
@@ -920,10 +848,8 @@
 
     const/4 v3, 0x0
 
-    .line 9
     invoke-static {v1, v3, p1}, Ljava/lang/reflect/Array;->set(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    .line 10
     iget-object p1, p0, Landroidx/core/graphics/i;->m:Ljava/lang/reflect/Method;
 
     const/4 v4, 0x3
@@ -934,7 +860,6 @@
 
     const/4 v1, -0x1
 
-    .line 11
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -949,7 +874,6 @@
 
     aput-object v1, v4, v2
 
-    .line 12
     invoke-virtual {p1, v0, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -983,7 +907,6 @@
 
     const-string v0, "android.graphics.FontFamily"
 
-    .line 54
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
@@ -1014,7 +937,6 @@
 
     const-string v1, "abortCreation"
 
-    .line 55
     invoke-virtual {p1, v1, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p1
@@ -1045,7 +967,6 @@
 
     const/4 v1, 0x0
 
-    .line 5
     const-class v2, Landroid/content/res/AssetManager;
 
     aput-object v2, v0, v1
@@ -1120,7 +1041,6 @@
 
     const/4 v1, 0x0
 
-    .line 3
     const-class v2, Ljava/nio/ByteBuffer;
 
     aput-object v2, v0, v1
@@ -1173,19 +1093,16 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p1, v0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 2
     const-class v1, Landroid/graphics/Typeface;
 
     const/4 v2, 0x3
 
     new-array v2, v2, [Ljava/lang/Class;
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -1204,12 +1121,10 @@
 
     const-string p1, "createFromFamiliesWithDefault"
 
-    .line 4
     invoke-virtual {v1, p1, v2}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1, v0}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
     return-object p1
@@ -1237,7 +1152,6 @@
 
     new-array v0, v0, [Ljava/lang/Class;
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object p1
@@ -1268,7 +1182,6 @@
 
     const-string v1, "freeze"
 
-    .line 1
     invoke-virtual {p1, v1, v0}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p1

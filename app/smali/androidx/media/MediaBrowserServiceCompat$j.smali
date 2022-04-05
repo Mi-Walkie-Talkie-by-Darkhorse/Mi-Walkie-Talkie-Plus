@@ -1,6 +1,5 @@
 .class Landroidx/media/MediaBrowserServiceCompat$j;
 .super Landroidx/media/MediaBrowserServiceCompat$i;
-.source "MediaBrowserServiceCompat.java"
 
 # interfaces
 .implements Landroidx/media/d$c;
@@ -29,7 +28,6 @@
 .method constructor <init>(Landroidx/media/MediaBrowserServiceCompat;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$j;->f:Landroidx/media/MediaBrowserServiceCompat;
 
     invoke-direct {p0, p1}, Landroidx/media/MediaBrowserServiceCompat$i;-><init>(Landroidx/media/MediaBrowserServiceCompat;)V
@@ -42,12 +40,10 @@
 .method public a(Ljava/lang/String;Landroidx/media/d$b;Landroid/os/Bundle;)V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/media/MediaBrowserServiceCompat$j$a;
 
     invoke-direct {v0, p0, p1, p2}, Landroidx/media/MediaBrowserServiceCompat$j$a;-><init>(Landroidx/media/MediaBrowserServiceCompat$j;Ljava/lang/Object;Landroidx/media/d$b;)V
 
-    .line 2
     iget-object p2, p0, Landroidx/media/MediaBrowserServiceCompat$j;->f:Landroidx/media/MediaBrowserServiceCompat;
 
     invoke-virtual {p2, p1, v0, p3}, Landroidx/media/MediaBrowserServiceCompat;->a(Ljava/lang/String;Landroidx/media/MediaBrowserServiceCompat$m;Landroid/os/Bundle;)V
@@ -58,7 +54,6 @@
 .method public onCreate()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$j;->f:Landroidx/media/MediaBrowserServiceCompat;
 
     invoke-static {v0, p0}, Landroidx/media/d;->a(Landroid/content/Context;Landroidx/media/d$c;)Ljava/lang/Object;
@@ -67,7 +62,6 @@
 
     iput-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$h;->b:Ljava/lang/Object;
 
-    .line 2
     invoke-static {v0}, Landroidx/media/b;->a(Ljava/lang/Object;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/a0$a$a;
 .super Ljava/lang/Object;
-.source "UpdateApkInfoDialog.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/a0$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/a0$a$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/a0$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/a0$a$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/a0$a;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/widget/dialog/a0$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/a0;

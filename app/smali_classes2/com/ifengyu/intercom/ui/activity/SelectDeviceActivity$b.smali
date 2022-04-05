@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$b;
 .super Ljava/lang/Object;
-.source "SelectDeviceActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/lite/dialog/list/d$c;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +44,6 @@
 
     goto/16 :goto_0
 
-    .line 1
     :cond_0
     new-instance p2, Landroid/content/Intent;
 
@@ -58,17 +55,14 @@
 
     const-string p3, "com.ifengyu.intercom.action.CONNECT_HELP"
 
-    .line 2
     invoke-virtual {p2, p3}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 3
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-virtual {p3, p2}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
@@ -80,7 +74,6 @@
 
     return-void
 
-    .line 5
     :cond_2
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
@@ -90,12 +83,10 @@
 
     if-eqz p2, :cond_4
 
-    .line 6
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->v()V
 
-    .line 7
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->l(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)Lcom/ifengyu/intercom/node/ConnectionConfiguration;
@@ -110,7 +101,6 @@
 
     if-ne p2, p3, :cond_3
 
-    .line 8
     invoke-static {}, Landroid/bluetooth/BluetoothAdapter;->getDefaultAdapter()Landroid/bluetooth/BluetoothAdapter;
 
     move-result-object p2
@@ -129,7 +119,6 @@
 
     move-result-object p2
 
-    .line 9
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-static {p3}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->j(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)Lcom/ifengyu/intercom/lite/h/h0;
@@ -140,13 +129,11 @@
 
     goto :goto_0
 
-    .line 10
     :cond_3
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->v()V
 
-    .line 11
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->l(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)Lcom/ifengyu/intercom/node/ConnectionConfiguration;
@@ -155,7 +142,6 @@
 
     invoke-static {p2, p3}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->d(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
 
-    .line 12
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->b(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)Landroid/os/Handler;
@@ -186,7 +172,6 @@
 
     invoke-virtual {p2, p3, v0, v1}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 13
     :cond_4
     :goto_0
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V

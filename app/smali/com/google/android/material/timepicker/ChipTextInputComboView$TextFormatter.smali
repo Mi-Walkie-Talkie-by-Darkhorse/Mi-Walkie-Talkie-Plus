@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/timepicker/ChipTextInputComboView$TextFormatter;
 .super Lcom/google/android/material/internal/TextWatcherAdapter;
-.source "ChipTextInputComboView.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method private constructor <init>(Lcom/google/android/material/timepicker/ChipTextInputComboView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/timepicker/ChipTextInputComboView$TextFormatter;->this$0:Lcom/google/android/material/timepicker/ChipTextInputComboView;
 
     invoke-direct {p0}, Lcom/google/android/material/internal/TextWatcherAdapter;-><init>()V
@@ -37,7 +35,6 @@
 .method synthetic constructor <init>(Lcom/google/android/material/timepicker/ChipTextInputComboView;Lcom/google/android/material/timepicker/ChipTextInputComboView$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/android/material/timepicker/ChipTextInputComboView$TextFormatter;-><init>(Lcom/google/android/material/timepicker/ChipTextInputComboView;)V
 
     return-void
@@ -48,14 +45,12 @@
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 2
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/timepicker/ChipTextInputComboView$TextFormatter;->this$0:Lcom/google/android/material/timepicker/ChipTextInputComboView;
 
     invoke-static {p1}, Lcom/google/android/material/timepicker/ChipTextInputComboView;->access$200(Lcom/google/android/material/timepicker/ChipTextInputComboView;)Lcom/google/android/material/chip/Chip;
@@ -74,7 +69,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/timepicker/ChipTextInputComboView$TextFormatter;->this$0:Lcom/google/android/material/timepicker/ChipTextInputComboView;
 

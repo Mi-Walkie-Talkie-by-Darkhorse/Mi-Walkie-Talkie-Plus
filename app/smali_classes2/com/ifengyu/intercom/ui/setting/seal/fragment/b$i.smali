@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$i;
 .super Ljava/lang/Object;
-.source "SealPresetFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$i;->a:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$i;->a:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     const v1, 0x7f1102c8

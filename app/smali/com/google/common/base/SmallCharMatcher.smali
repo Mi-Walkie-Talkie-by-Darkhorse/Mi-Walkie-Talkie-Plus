@@ -1,6 +1,5 @@
 .class final Lcom/google/common/base/SmallCharMatcher;
 .super Lcom/google/common/base/CharMatcher$FastMatcher;
-.source "SmallCharMatcher.java"
 
 
 # annotations
@@ -31,16 +30,12 @@
 .method private constructor <init>([CJZLjava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p5}, Lcom/google/common/base/CharMatcher$FastMatcher;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/base/SmallCharMatcher;->table:[C
 
-    .line 3
     iput-wide p2, p0, Lcom/google/common/base/SmallCharMatcher;->filter:J
 
-    .line 4
     iput-boolean p4, p0, Lcom/google/common/base/SmallCharMatcher;->containsZero:Z
 
     return-void
@@ -49,7 +44,6 @@
 .method private checkFilter(I)Z
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/base/SmallCharMatcher;->filter:J
 
     shr-long/2addr v0, p1
@@ -89,7 +83,6 @@
     :cond_0
     add-int/lit8 v1, p0, -0x1
 
-    .line 1
     invoke-static {v1}, Ljava/lang/Integer;->highestOneBit(I)I
 
     move-result v1
@@ -120,19 +113,16 @@
 .method static from(Ljava/util/BitSet;Ljava/lang/String;)Lcom/google/common/base/CharMatcher;
     .locals 9
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/BitSet;->cardinality()I
 
     move-result v0
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-virtual {p0, v1}, Ljava/util/BitSet;->get(I)Z
 
     move-result v6
 
-    .line 3
     invoke-static {v0}, Lcom/google/common/base/SmallCharMatcher;->chooseTableSize(I)I
 
     move-result v0
@@ -141,7 +131,6 @@
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 4
     invoke-virtual {p0, v1}, Ljava/util/BitSet;->nextSetBit(I)I
 
     move-result v1
@@ -159,7 +148,6 @@
 
     or-long/2addr v7, v4
 
-    .line 5
     invoke-static {v1}, Lcom/google/common/base/SmallCharMatcher;->smear(I)I
 
     move-result v2
@@ -167,19 +155,16 @@
     :goto_1
     and-int/2addr v2, v0
 
-    .line 6
     aget-char v4, v3, v2
 
     if-nez v4, :cond_0
 
     int-to-char v4, v1
 
-    .line 7
     aput-char v4, v3, v2
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 8
     invoke-virtual {p0, v1}, Ljava/util/BitSet;->nextSetBit(I)I
 
     move-result v1
@@ -193,7 +178,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_1
     new-instance p0, Lcom/google/common/base/SmallCharMatcher;
 
@@ -215,7 +199,6 @@
 
     const/16 v0, 0xf
 
-    .line 1
     invoke-static {p0, v0}, Ljava/lang/Integer;->rotateLeft(II)I
 
     move-result p0
@@ -234,12 +217,10 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     iget-boolean p1, p0, Lcom/google/common/base/SmallCharMatcher;->containsZero:Z
 
     return p1
 
-    .line 2
     :cond_0
     invoke-direct {p0, p1}, Lcom/google/common/base/SmallCharMatcher;->checkFilter(I)Z
 
@@ -251,7 +232,6 @@
 
     return v1
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/google/common/base/SmallCharMatcher;->table:[C
 
@@ -261,7 +241,6 @@
 
     sub-int/2addr v0, v2
 
-    .line 4
     invoke-static {p1}, Lcom/google/common/base/SmallCharMatcher;->smear(I)I
 
     move-result v3
@@ -270,7 +249,6 @@
 
     move v4, v3
 
-    .line 5
     :cond_2
     iget-object v5, p0, Lcom/google/common/base/SmallCharMatcher;->table:[C
 
@@ -280,7 +258,6 @@
 
     return v1
 
-    .line 6
     :cond_3
     aget-char v5, v5, v4
 
@@ -301,17 +278,14 @@
 .method setBits(Ljava/util/BitSet;)V
     .locals 4
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/common/base/SmallCharMatcher;->containsZero:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p1, v1}, Ljava/util/BitSet;->set(I)V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/common/base/SmallCharMatcher;->table:[C
 
@@ -324,7 +298,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 4
     invoke-virtual {p1, v3}, Ljava/util/BitSet;->set(I)V
 
     :cond_1

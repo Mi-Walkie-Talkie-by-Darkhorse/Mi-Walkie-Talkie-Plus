@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/AlertController$b;
 .super Ljava/lang/Object;
-.source "AlertController.java"
 
 # interfaces
 .implements Landroidx/core/widget/NestedScrollView$b;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/appcompat/app/AlertController;Landroid/view/View;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/appcompat/app/AlertController$b;->a:Landroid/view/View;
 
     iput-object p3, p0, Landroidx/appcompat/app/AlertController$b;->b:Landroid/view/View;
@@ -42,7 +40,6 @@
 .method public a(Landroidx/core/widget/NestedScrollView;IIII)V
     .locals 0
 
-    .line 1
     iget-object p2, p0, Landroidx/appcompat/app/AlertController$b;->a:Landroid/view/View;
 
     iget-object p3, p0, Landroidx/appcompat/app/AlertController$b;->b:Landroid/view/View;

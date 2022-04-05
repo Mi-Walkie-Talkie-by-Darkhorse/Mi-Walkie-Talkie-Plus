@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/view/ViewTreeObserverDrawObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "ViewTreeObserverDrawObservable.kt"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnDrawListener;
@@ -93,7 +92,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/view/ViewTreeObserverDrawObservable$Listener;->view:Landroid/view/View;
@@ -108,7 +106,6 @@
 .method protected onDispose()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/ViewTreeObserverDrawObservable$Listener;->view:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
@@ -123,14 +120,12 @@
 .method public onDraw()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/ViewTreeObserverDrawObservable$Listener;->observer:Lio/reactivex/Observer;
 
     sget-object v1, Lkotlin/a;->a:Lkotlin/a;

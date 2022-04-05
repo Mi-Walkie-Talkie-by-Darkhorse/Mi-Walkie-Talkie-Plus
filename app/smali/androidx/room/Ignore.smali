@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Ignore;
 .super Ljava/lang/Object;
-.source "Ignore.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

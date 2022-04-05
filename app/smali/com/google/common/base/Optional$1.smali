@@ -1,6 +1,5 @@
 .class final Lcom/google/common/base/Optional$1;
 .super Ljava/lang/Object;
-.source "Optional.java"
 
 # interfaces
 .implements Ljava/lang/Iterable;
@@ -33,7 +32,6 @@
 .method constructor <init>(Ljava/lang/Iterable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/base/Optional$1;->val$optionals:Ljava/lang/Iterable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -53,7 +51,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/base/Optional$1$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/base/Optional$1$1;-><init>(Lcom/google/common/base/Optional$1;)V

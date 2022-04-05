@@ -1,6 +1,5 @@
 .class Lcom/yalantis/ucrop/UCropActivity$h;
 .super Ljava/lang/Object;
-.source "UCropActivity.java"
 
 # interfaces
 .implements Lcom/yalantis/ucrop/c/a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/yalantis/ucrop/UCropActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/UCropActivity$h;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$h;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/UCropActivity;->c(Lcom/yalantis/ucrop/UCropActivity;)Lcom/yalantis/ucrop/view/GestureCropImageView;
@@ -65,7 +62,6 @@
 
     invoke-virtual/range {v0 .. v6}, Lcom/yalantis/ucrop/UCropActivity;->a(Landroid/net/Uri;FIIII)V
 
-    .line 2
     iget-object p1, p0, Lcom/yalantis/ucrop/UCropActivity$h;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V
@@ -80,12 +76,10 @@
         .end annotation
     .end param
 
-    .line 3
     iget-object v0, p0, Lcom/yalantis/ucrop/UCropActivity$h;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-virtual {v0, p1}, Lcom/yalantis/ucrop/UCropActivity;->a(Ljava/lang/Throwable;)V
 
-    .line 4
     iget-object p1, p0, Lcom/yalantis/ucrop/UCropActivity$h;->a:Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V

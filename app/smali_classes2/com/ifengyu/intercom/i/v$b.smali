@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/i/v$b;
 .super Ljava/lang/Object;
-.source "GaoDeOfflineMapManagerInstance.java"
 
 
 # annotations

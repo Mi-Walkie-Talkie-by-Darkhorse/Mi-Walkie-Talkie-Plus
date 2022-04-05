@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/jetbrains/annotations/Contract;
 .super Ljava/lang/Object;
-.source "Contract.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

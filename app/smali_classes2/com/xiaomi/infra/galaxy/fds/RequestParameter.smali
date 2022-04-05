@@ -1,6 +1,5 @@
 .class public final enum Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 .super Ljava/lang/Enum;
-.source "RequestParameter.java"
 
 
 # annotations
@@ -37,7 +36,6 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
     const/4 v1, 0x0
@@ -52,7 +50,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;->RESPONSE_CONTENT_TYPE:Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
-    .line 2
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
     const/4 v2, 0x1
@@ -67,7 +64,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;->RESPONSE_CACHE_CONTROL:Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
-    .line 3
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
     const/4 v3, 0x2
@@ -82,7 +78,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;->RESPONSE_EXPIRES:Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
-    .line 4
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
     const/4 v4, 0x3
@@ -97,7 +92,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;->RESPONSE_CONTENT_ENCODING:Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
-    .line 5
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
     const/4 v5, 0x4
@@ -116,7 +110,6 @@
 
     new-array v6, v6, [Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
-    .line 6
     sget-object v7, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;->RESPONSE_CONTENT_TYPE:Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
     aput-object v7, v6, v1
@@ -151,13 +144,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;->param:Ljava/lang/String;
 
-    .line 3
     iput-object p4, p0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;->header:Ljava/lang/String;
 
     return-void
@@ -166,7 +156,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -181,7 +170,6 @@
 .method public static values()[Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;->$VALUES:[Lcom/xiaomi/infra/galaxy/fds/RequestParameter;
 
     invoke-virtual {v0}, [Lcom/xiaomi/infra/galaxy/fds/RequestParameter;->clone()Ljava/lang/Object;
@@ -198,7 +186,6 @@
 .method public getHeader()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;->header:Ljava/lang/String;
 
     return-object v0
@@ -207,7 +194,6 @@
 .method public getParam()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/RequestParameter;->param:Ljava/lang/String;
 
     return-object v0

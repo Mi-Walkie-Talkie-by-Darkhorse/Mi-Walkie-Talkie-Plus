@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/u2/d;
 .super Ljava/lang/Object;
-.source "FailCallback.java"
 
 
 # virtual methods

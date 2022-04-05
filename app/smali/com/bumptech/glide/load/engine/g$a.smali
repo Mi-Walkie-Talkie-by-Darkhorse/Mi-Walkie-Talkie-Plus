@@ -1,6 +1,5 @@
 .class interface abstract Lcom/bumptech/glide/load/engine/g$a;
 .super Ljava/lang/Object;
-.source "DecodePath.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Lcom/jakewharton/retrofit2/adapter/rxjava2/ResultObservable$ResultObserver;
 .super Ljava/lang/Object;
-.source "ResultObservable.java"
 
 # interfaces
 .implements Lio/reactivex/Observer;
@@ -55,10 +54,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/ResultObservable$ResultObserver;->observer:Lio/reactivex/Observer;
 
     return-void
@@ -69,7 +66,6 @@
 .method public onComplete()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/ResultObservable$ResultObserver;->observer:Lio/reactivex/Observer;
 
     invoke-interface {v0}, Lio/reactivex/Observer;->onComplete()V
@@ -80,7 +76,6 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 4
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/ResultObservable$ResultObserver;->observer:Lio/reactivex/Observer;
 
@@ -92,7 +87,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     iget-object p1, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/ResultObservable$ResultObserver;->observer:Lio/reactivex/Observer;
 
     invoke-interface {p1}, Lio/reactivex/Observer;->onComplete()V
@@ -102,7 +96,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     :try_start_1
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/ResultObservable$ResultObserver;->observer:Lio/reactivex/Observer;
 
@@ -115,10 +108,8 @@
     :catchall_1
     move-exception v0
 
-    .line 4
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 5
     new-instance v1, Lio/reactivex/exceptions/CompositeException;
 
     const/4 v2, 0x2
@@ -144,7 +135,6 @@
 .method public bridge synthetic onNext(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lretrofit2/Response;
 
     invoke-virtual {p0, p1}, Lcom/jakewharton/retrofit2/adapter/rxjava2/ResultObservable$ResultObserver;->onNext(Lretrofit2/Response;)V
@@ -162,7 +152,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/ResultObservable$ResultObserver;->observer:Lio/reactivex/Observer;
 
     invoke-static {p1}, Lcom/jakewharton/retrofit2/adapter/rxjava2/Result;->response(Lretrofit2/Response;)Lcom/jakewharton/retrofit2/adapter/rxjava2/Result;
@@ -177,7 +166,6 @@
 .method public onSubscribe(Lio/reactivex/disposables/Disposable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/ResultObservable$ResultObserver;->observer:Lio/reactivex/Observer;
 
     invoke-interface {v0, p1}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V

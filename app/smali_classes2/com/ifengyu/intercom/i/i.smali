@@ -1,13 +1,11 @@
 .class public final Lcom/ifengyu/intercom/i/i;
 .super Ljava/lang/Object;
-.source "APIUtils.java"
 
 
 # direct methods
 .method public static a()Z
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
@@ -28,7 +26,6 @@
 .method public static b()Z
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
@@ -49,7 +46,6 @@
 .method public static c()Z
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18

@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;
 .super Ljava/lang/Object;
-.source "BaseImageDownloader.java"
 
 # interfaces
 .implements Lcom/nostra13/universalimageloader/core/download/ImageDownloader;
@@ -38,7 +37,6 @@
 
     const/16 v1, 0x4e20
 
-    .line 1
     invoke-direct {p0, p1, v0, v1}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;-><init>(Landroid/content/Context;II)V
 
     return-void
@@ -47,20 +45,16 @@
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->context:Landroid/content/Context;
 
-    .line 4
     iput p2, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->connectTimeout:I
 
-    .line 5
     iput p3, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->readTimeout:I
 
     return-void
@@ -72,7 +66,6 @@
         value = 0x8
     .end annotation
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x8
@@ -81,26 +74,22 @@
 
     const/4 v0, 0x2
 
-    .line 2
     invoke-static {p1, v0}, Landroid/media/ThumbnailUtils;->createVideoThumbnail(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 3
     new-instance v0, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 4
     sget-object v1, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
     const/4 v2, 0x0
 
     invoke-virtual {p1, v1, v2, v0}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 5
     new-instance p1, Ljava/io/ByteArrayInputStream;
 
     invoke-virtual {v0}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
@@ -120,7 +109,6 @@
 .method private isVideoContentUri(Landroid/net/Uri;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -135,7 +123,6 @@
 
     const-string v0, "video/"
 
-    .line 2
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result p1
@@ -156,12 +143,10 @@
 .method private isVideoFileUri(Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     invoke-static {p1}, Landroid/webkit/MimeTypeMap;->getFileExtensionFromUrl(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-static {}, Landroid/webkit/MimeTypeMap;->getSingleton()Landroid/webkit/MimeTypeMap;
 
     move-result-object v0
@@ -174,7 +159,6 @@
 
     const-string v0, "video/"
 
-    .line 3
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result p1
@@ -204,12 +188,10 @@
 
     const-string p2, "@#&=*+-_.,:!?()/~\'%"
 
-    .line 1
     invoke-static {p1, p2}, Landroid/net/Uri;->encode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     new-instance p2, Ljava/net/URL;
 
     invoke-direct {p2, p1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
@@ -220,12 +202,10 @@
 
     check-cast p1, Ljava/net/HttpURLConnection;
 
-    .line 3
     iget p2, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->connectTimeout:I
 
     invoke-virtual {p1, p2}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
 
-    .line 4
     iget p2, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->readTimeout:I
 
     invoke-virtual {p1, p2}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
@@ -239,14 +219,12 @@
         value = 0xe
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    .line 2
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0xe
@@ -255,14 +233,12 @@
 
     const/4 v1, 0x1
 
-    .line 3
     invoke-static {v0, p1, v1}, Landroid/provider/ContactsContract$Contacts;->openContactPhotoInputStream(Landroid/content/ContentResolver;Landroid/net/Uri;Z)Ljava/io/InputStream;
 
     move-result-object p1
 
     return-object p1
 
-    .line 4
     :cond_0
     invoke-static {v0, p1}, Landroid/provider/ContactsContract$Contacts;->openContactPhotoInputStream(Landroid/content/ContentResolver;Landroid/net/Uri;)Ljava/io/InputStream;
 
@@ -279,7 +255,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$1;->$SwitchMap$com$nostra13$universalimageloader$core$download$ImageDownloader$Scheme:[I
 
     invoke-static {p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->ofUri(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
@@ -294,14 +269,12 @@
 
     packed-switch v0, :pswitch_data_0
 
-    .line 2
     invoke-virtual {p0, p1, p2}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->getStreamFromOtherSource(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/InputStream;
 
     move-result-object p1
 
     return-object p1
 
-    .line 3
     :pswitch_0
     invoke-virtual {p0, p1, p2}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->getStreamFromDrawable(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/InputStream;
 
@@ -309,7 +282,6 @@
 
     return-object p1
 
-    .line 4
     :pswitch_1
     invoke-virtual {p0, p1, p2}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->getStreamFromAssets(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/InputStream;
 
@@ -317,7 +289,6 @@
 
     return-object p1
 
-    .line 5
     :pswitch_2
     invoke-virtual {p0, p1, p2}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->getStreamFromContent(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/InputStream;
 
@@ -325,7 +296,6 @@
 
     return-object p1
 
-    .line 6
     :pswitch_3
     invoke-virtual {p0, p1, p2}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->getStreamFromFile(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/InputStream;
 
@@ -333,7 +303,6 @@
 
     return-object p1
 
-    .line 7
     :pswitch_4
     invoke-virtual {p0, p1, p2}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->getStreamFromNetwork(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/InputStream;
 
@@ -362,14 +331,12 @@
         }
     .end annotation
 
-    .line 1
     sget-object p2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->ASSETS:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
     invoke-virtual {p2, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->crop(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     iget-object p2, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->context:Landroid/content/Context;
 
     invoke-virtual {p2}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
@@ -391,26 +358,22 @@
         }
     .end annotation
 
-    .line 1
     iget-object p2, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->context:Landroid/content/Context;
 
     invoke-virtual {p2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object p2
 
-    .line 2
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v0
 
-    .line 3
     invoke-direct {p0, v0}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->isVideoContentUri(Landroid/net/Uri;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
     move-result-object p1
@@ -419,7 +382,6 @@
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v1
@@ -434,19 +396,16 @@
 
     if-eqz p1, :cond_1
 
-    .line 6
     new-instance p2, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {p2}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 7
     sget-object v0, Landroid/graphics/Bitmap$CompressFormat;->PNG:Landroid/graphics/Bitmap$CompressFormat;
 
     const/4 v1, 0x0
 
     invoke-virtual {p1, v0, v1, p2}, Landroid/graphics/Bitmap;->compress(Landroid/graphics/Bitmap$CompressFormat;ILjava/io/OutputStream;)Z
 
-    .line 8
     new-instance p1, Ljava/io/ByteArrayInputStream;
 
     invoke-virtual {p2}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
@@ -460,21 +419,18 @@
     :cond_0
     const-string v1, "content://com.android.contacts/"
 
-    .line 9
     invoke-virtual {p1, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 10
     invoke-virtual {p0, v0}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->getContactPhotoStream(Landroid/net/Uri;)Ljava/io/InputStream;
 
     move-result-object p1
 
     return-object p1
 
-    .line 11
     :cond_1
     invoke-virtual {p2, v0}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
 
@@ -486,19 +442,16 @@
 .method protected getStreamFromDrawable(Ljava/lang/String;Ljava/lang/Object;)Ljava/io/InputStream;
     .locals 0
 
-    .line 1
     sget-object p2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->DRAWABLE:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
     invoke-virtual {p2, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->crop(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result p1
 
-    .line 3
     iget-object p2, p0, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->context:Landroid/content/Context;
 
     invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -520,28 +473,24 @@
         }
     .end annotation
 
-    .line 1
     sget-object p2, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->FILE:Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
     invoke-virtual {p2, p1}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->crop(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->isVideoFileUri(Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-direct {p0, p2}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->getVideoThumbnailStream(Ljava/lang/String;)Ljava/io/InputStream;
 
     move-result-object p1
 
     return-object p1
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/io/BufferedInputStream;
 
@@ -553,7 +502,6 @@
 
     invoke-direct {p1, v0, v1}, Ljava/io/BufferedInputStream;-><init>(Ljava/io/InputStream;I)V
 
-    .line 5
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;
 
     new-instance v1, Ljava/io/File;
@@ -579,14 +527,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->createConnection(Ljava/lang/String;Ljava/lang/Object;)Ljava/net/HttpURLConnection;
 
     move-result-object p1
 
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
@@ -604,7 +550,6 @@
 
     const-string v1, "Location"
 
-    .line 3
     invoke-virtual {p1, v1}, Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -617,7 +562,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
@@ -626,14 +570,12 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 5
     invoke-virtual {p0, p1}, Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader;->shouldBeProcessed(Ljava/net/HttpURLConnection;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 6
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;
 
     new-instance v1, Ljava/io/BufferedInputStream;
@@ -650,11 +592,9 @@
 
     return-object v0
 
-    .line 7
     :cond_1
     invoke-static {p2}, Lcom/nostra13/universalimageloader/utils/IoUtils;->closeSilently(Ljava/io/Closeable;)V
 
-    .line 8
     new-instance p2, Ljava/io/IOException;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -682,14 +622,12 @@
     :catch_0
     move-exception p2
 
-    .line 9
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/nostra13/universalimageloader/utils/IoUtils;->readAndCloseStream(Ljava/io/InputStream;)V
 
-    .line 10
     throw p2
 .end method
 
@@ -701,7 +639,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p2, Ljava/lang/UnsupportedOperationException;
 
     const/4 v0, 0x1
@@ -731,7 +668,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result p1

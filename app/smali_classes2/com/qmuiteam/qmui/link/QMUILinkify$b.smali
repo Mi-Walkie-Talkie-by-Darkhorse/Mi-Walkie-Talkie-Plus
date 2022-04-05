@@ -1,6 +1,5 @@
 .class final Lcom/qmuiteam/qmui/link/QMUILinkify$b;
 .super Ljava/lang/Object;
-.source "QMUILinkify.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/link/QMUILinkify$j;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public a()Ljava/util/regex/Pattern;
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/util/Patterns;->WEB_URL:Ljava/util/regex/Pattern;
 
     return-object v0

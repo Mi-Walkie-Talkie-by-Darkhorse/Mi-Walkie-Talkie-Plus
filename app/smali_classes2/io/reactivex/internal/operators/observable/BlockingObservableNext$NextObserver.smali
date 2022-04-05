@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/BlockingObservableNext$NextObserver;
 .super Lio/reactivex/observers/DisposableObserver;
-.source "BlockingObservableNext.java"
 
 
 # annotations
@@ -43,10 +42,8 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/observers/DisposableObserver;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/ArrayBlockingQueue;
 
     const/4 v1, 0x1
@@ -55,7 +52,6 @@
 
     iput-object v0, p0, Lio/reactivex/internal/operators/observable/BlockingObservableNext$NextObserver;->buf:Ljava/util/concurrent/BlockingQueue;
 
-    .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
@@ -76,7 +72,6 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
     return-void
@@ -92,7 +87,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/BlockingObservableNext$NextObserver;->waiting:Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x0
@@ -111,7 +105,6 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     :cond_0
     :goto_0
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/BlockingObservableNext$NextObserver;->buf:Ljava/util/concurrent/BlockingQueue;
@@ -122,7 +115,6 @@
 
     if-nez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/BlockingObservableNext$NextObserver;->buf:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v0}, Ljava/util/concurrent/BlockingQueue;->poll()Ljava/lang/Object;
@@ -133,7 +125,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
     invoke-virtual {v0}, Lio/reactivex/Notification;->isOnNext()Z
 
     move-result v1
@@ -151,7 +142,6 @@
 .method public bridge synthetic onNext(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lio/reactivex/Notification;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/operators/observable/BlockingObservableNext$NextObserver;->onNext(Lio/reactivex/Notification;)V
@@ -162,7 +152,6 @@
 .method setWaiting()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/BlockingObservableNext$NextObserver;->waiting:Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x1
@@ -188,13 +177,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/BlockingObservableNext$NextObserver;->setWaiting()V
 
-    .line 2
     invoke-static {}, Lio/reactivex/internal/util/BlockingHelper;->verifyNonBlocking()V
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/BlockingObservableNext$NextObserver;->buf:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v0}, Ljava/util/concurrent/BlockingQueue;->take()Ljava/lang/Object;

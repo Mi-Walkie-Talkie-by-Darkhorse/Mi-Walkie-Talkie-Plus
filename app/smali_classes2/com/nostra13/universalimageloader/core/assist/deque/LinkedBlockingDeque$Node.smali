@@ -1,6 +1,5 @@
 .class final Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$Node;
 .super Ljava/lang/Object;
-.source "LinkedBlockingDeque.java"
 
 
 # annotations
@@ -60,10 +59,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/assist/deque/LinkedBlockingDeque$Node;->item:Ljava/lang/Object;
 
     return-void

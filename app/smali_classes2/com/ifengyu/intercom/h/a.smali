@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/h/a;
 .super Ljava/lang/Object;
-.source "UpdateDeviceService.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/node/g;
@@ -28,7 +27,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,19 +35,16 @@
 .method public static a()Lcom/ifengyu/intercom/h/a;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/h/a;->d:Lcom/ifengyu/intercom/h/a;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/h/a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/h/a;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/h/a;->d:Lcom/ifengyu/intercom/h/a;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/h/a;->d:Lcom/ifengyu/intercom/h/a;
 
@@ -61,13 +56,11 @@
 
     const-string v0, "UpdateDeviceService"
 
-    .line 40
     :try_start_0
     iget-object v1, p0, Lcom/ifengyu/intercom/h/a;->a:Lcom/ifengyu/intercom/node/i;
 
     if-eqz v1, :cond_0
 
-    .line 41
     iget-object v1, p0, Lcom/ifengyu/intercom/h/a;->a:Lcom/ifengyu/intercom/node/i;
 
     const/4 v2, 0x3
@@ -81,7 +74,6 @@
     :cond_0
     const-string p1, "Device has disconnected."
 
-    .line 42
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->e(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
@@ -100,7 +92,6 @@
     :goto_0
     const-string v1, "Got exception while sending Data, "
 
-    .line 43
     invoke-static {v0, v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :goto_1
@@ -124,10 +115,8 @@
 
     const-string v1, "onDeviceConnected"
 
-    .line 4
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     iput-object p1, p0, Lcom/ifengyu/intercom/h/a;->a:Lcom/ifengyu/intercom/node/i;
 
     return-void
@@ -136,7 +125,6 @@
 .method public a(Lcom/ifengyu/intercom/update/dolphin/f;)V
     .locals 0
 
-    .line 19
     iput-object p1, p0, Lcom/ifengyu/intercom/h/a;->b:Lcom/ifengyu/intercom/update/dolphin/f;
 
     return-void
@@ -145,7 +133,6 @@
 .method public a(Lcom/ifengyu/intercom/update/sealshark/d;)V
     .locals 0
 
-    .line 36
     iput-object p1, p0, Lcom/ifengyu/intercom/h/a;->c:Lcom/ifengyu/intercom/update/sealshark/d;
 
     return-void
@@ -158,12 +145,10 @@
 
     const-string v0, "onDeviceDisConnected"
 
-    .line 6
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 p1, 0x0
 
-    .line 7
     iput-object p1, p0, Lcom/ifengyu/intercom/h/a;->a:Lcom/ifengyu/intercom/node/i;
 
     return-void
@@ -188,10 +173,8 @@
 
     const-string v0, "onSealCmdReceived"
 
-    .line 20
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 21
     invoke-virtual {p2}, Lcom/ifengyu/intercom/node/a;->a()I
 
     move-result p1
@@ -208,34 +191,28 @@
 
     if-eqz p1, :cond_2
 
-    .line 22
     invoke-virtual {p2}, Lcom/ifengyu/intercom/node/a;->b()Lcom/google/protobuf/Message;
 
     move-result-object p1
 
     check-cast p1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFileResponse;
 
-    .line 23
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFileResponse;->getResult()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFileResponse$SEAL_UP_UERR;
 
     move-result-object p2
 
-    .line 24
     iget-object v0, p0, Lcom/ifengyu/intercom/h/a;->c:Lcom/ifengyu/intercom/update/sealshark/d;
 
     if-eqz v0, :cond_2
 
-    .line 25
     sget-object v1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFileResponse$SEAL_UP_UERR;->SEAL_UP_RESULT_LOW_POWER:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFileResponse$SEAL_UP_UERR;
 
     if-ne p2, v1, :cond_0
 
-    .line 26
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/sealshark/d;->a()V
 
     goto :goto_1
 
-    .line 27
     :cond_0
     sget-object v1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFileResponse$SEAL_UP_UERR;->SEAL_UP_RESULT_OK:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFileResponse$SEAL_UP_UERR;
 
@@ -267,10 +244,8 @@
 
     const-string v0, "onSharkCmdReceived"
 
-    .line 28
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 29
     invoke-virtual {p2}, Lcom/ifengyu/intercom/node/a;->a()I
 
     move-result p1
@@ -287,34 +262,28 @@
 
     if-eqz p1, :cond_2
 
-    .line 30
     invoke-virtual {p2}, Lcom/ifengyu/intercom/node/a;->b()Lcom/google/protobuf/Message;
 
     move-result-object p1
 
     check-cast p1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileResponse;
 
-    .line 31
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileResponse;->getResult()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileResponse$SHARK_UP_UERR;
 
     move-result-object p2
 
-    .line 32
     iget-object v0, p0, Lcom/ifengyu/intercom/h/a;->c:Lcom/ifengyu/intercom/update/sealshark/d;
 
     if-eqz v0, :cond_2
 
-    .line 33
     sget-object v1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileResponse$SHARK_UP_UERR;->SHARK_UP_RESULT_LOW_POWER:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileResponse$SHARK_UP_UERR;
 
     if-ne p2, v1, :cond_0
 
-    .line 34
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/sealshark/d;->a()V
 
     goto :goto_1
 
-    .line 35
     :cond_0
     sget-object v1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileResponse$SHARK_UP_UERR;->SHARK_UP_RESULT_OK:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UpGradeFileResponse$SHARK_UP_UERR;
 
@@ -346,10 +315,8 @@
 
     const-string v0, "onDolphinCmdReceived"
 
-    .line 8
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9
     invoke-virtual {p2}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->hasFileResp()Z
 
     move-result v0
@@ -358,20 +325,16 @@
 
     const-string v0, "received a FileResp"
 
-    .line 10
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/h/a;->b:Lcom/ifengyu/intercom/update/dolphin/f;
 
     if-eqz v0, :cond_0
 
-    .line 12
     invoke-virtual {p2}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->getFileResp()Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponse;
 
     move-result-object v0
 
-    .line 13
     iget-object v1, p0, Lcom/ifengyu/intercom/h/a;->b:Lcom/ifengyu/intercom/update/dolphin/f;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponse;->getResult()Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
@@ -384,7 +347,6 @@
 
     invoke-interface {v1, v2, v0}, Lcom/ifengyu/intercom/update/dolphin/f;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;I)V
 
-    .line 14
     :cond_0
     invoke-virtual {p2}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->hasUpdateResponse()Z
 
@@ -394,20 +356,16 @@
 
     const-string v0, "received a updateResponse."
 
-    .line 15
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 16
     iget-object p1, p0, Lcom/ifengyu/intercom/h/a;->b:Lcom/ifengyu/intercom/update/dolphin/f;
 
     if-eqz p1, :cond_1
 
-    .line 17
     invoke-virtual {p2}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->getUpdateResponse()Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse;
 
     move-result-object p1
 
-    .line 18
     iget-object p2, p0, Lcom/ifengyu/intercom/h/a;->b:Lcom/ifengyu/intercom/update/dolphin/f;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse;->getState()Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;
@@ -431,7 +389,6 @@
 .method public a(ILcom/ifengyu/intercom/node/a;)Z
     .locals 1
 
-    .line 39
     invoke-virtual {p2}, Lcom/ifengyu/intercom/node/a;->b()Lcom/google/protobuf/Message;
 
     move-result-object v0
@@ -458,7 +415,6 @@
 
     const/4 v1, -0x1
 
-    .line 38
     invoke-static {v0, p1, v1}, Lcom/ifengyu/intercom/node/SendDataWrap;->a(ILcom/google/protobuf/Message;I)Lcom/ifengyu/intercom/node/SendDataWrap;
 
     move-result-object p1
@@ -473,7 +429,6 @@
 .method public a([B)Z
     .locals 0
 
-    .line 37
     invoke-static {p1}, Lcom/ifengyu/intercom/node/SendDataWrap;->a([B)Lcom/ifengyu/intercom/node/SendDataWrap;
 
     move-result-object p1

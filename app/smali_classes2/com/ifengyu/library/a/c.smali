@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/library/a/c;
 .super Ljava/lang/Object;
-.source "CountDownTimer.java"
 
 
 # instance fields
@@ -15,13 +14,10 @@
 .method public constructor <init>(Ljava/lang/Long;Ljava/util/concurrent/TimeUnit;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/library/a/c;->b:Ljava/lang/Long;
 
-    .line 3
     iput-object p2, p0, Lcom/ifengyu/library/a/c;->a:Ljava/util/concurrent/TimeUnit;
 
     return-void
@@ -30,7 +26,6 @@
 .method static synthetic a(Lcom/ifengyu/library/a/c;Lio/reactivex/disposables/Disposable;)Lio/reactivex/disposables/Disposable;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/library/a/c;->c:Lio/reactivex/disposables/Disposable;
 
     return-object p1
@@ -46,7 +41,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/library/a/c;->b:Ljava/lang/Long;
 
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
@@ -69,7 +63,6 @@
 .method public a()V
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/library/a/c;->c:Lio/reactivex/disposables/Disposable;
 
     if-eqz v0, :cond_0
@@ -80,7 +73,6 @@
 
     if-nez v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/library/a/c;->c:Lio/reactivex/disposables/Disposable;
 
     invoke-interface {v0}, Lio/reactivex/disposables/Disposable;->dispose()V
@@ -95,7 +87,6 @@
 .method public b()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/library/a/c;->c:Lio/reactivex/disposables/Disposable;
 
     if-eqz v0, :cond_1
@@ -127,7 +118,6 @@
 .method public d()V
     .locals 5
 
-    .line 1
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x1
@@ -140,7 +130,6 @@
 
     iget-object v3, p0, Lcom/ifengyu/library/a/c;->b:Ljava/lang/Long;
 
-    .line 2
     invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v3
@@ -155,12 +144,10 @@
 
     invoke-direct {v1, p0}, Lcom/ifengyu/library/a/a;-><init>(Lcom/ifengyu/library/a/c;)V
 
-    .line 3
     invoke-virtual {v0, v1}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object v0
 
-    .line 4
     invoke-static {}, Lio/reactivex/android/schedulers/AndroidSchedulers;->mainThread()Lio/reactivex/Scheduler;
 
     move-result-object v1
@@ -173,7 +160,6 @@
 
     invoke-direct {v1, p0}, Lcom/ifengyu/library/a/c$a;-><init>(Lcom/ifengyu/library/a/c;)V
 
-    .line 5
     invoke-virtual {v0, v1}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/Observer;)V
 
     return-void

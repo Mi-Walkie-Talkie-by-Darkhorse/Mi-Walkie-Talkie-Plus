@@ -1,6 +1,5 @@
 .class final Landroidx/viewpager2/widget/e$a;
 .super Ljava/lang/Object;
-.source "ScrollEventAdapter.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,17 +37,14 @@
 
     const/4 v0, -0x1
 
-    .line 1
     iput v0, p0, Landroidx/viewpager2/widget/e$a;->a:I
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Landroidx/viewpager2/widget/e$a;->b:F
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Landroidx/viewpager2/widget/e$a;->c:I
 
     return-void

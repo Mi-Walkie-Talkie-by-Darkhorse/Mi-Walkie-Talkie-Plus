@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/shape/MarkerEdgeTreatment;
 .super Lcom/google/android/material/shape/EdgeTreatment;
-.source "MarkerEdgeTreatment.java"
 
 
 # instance fields
@@ -11,14 +10,12 @@
 .method public constructor <init>(F)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/shape/EdgeTreatment;-><init>()V
 
     const v0, 0x3a83126f    # 0.001f
 
     sub-float/2addr p1, v0
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/shape/MarkerEdgeTreatment;->radius:F
 
     return-void
@@ -41,7 +38,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget p1, p0, Lcom/google/android/material/shape/MarkerEdgeTreatment;->radius:F
 
     float-to-double v0, p1
@@ -58,7 +54,6 @@
 
     double-to-float p1, v0
 
-    .line 2
     iget p3, p0, Lcom/google/android/material/shape/MarkerEdgeTreatment;->radius:F
 
     float-to-double v0, p3
@@ -83,7 +78,6 @@
 
     sub-float v0, p2, p1
 
-    .line 3
     iget v1, p0, Lcom/google/android/material/shape/MarkerEdgeTreatment;->radius:F
 
     float-to-double v4, v1
@@ -108,7 +102,6 @@
 
     invoke-virtual {p4, v0, v1}, Lcom/google/android/material/shape/ShapePath;->reset(FF)V
 
-    .line 4
     iget v0, p0, Lcom/google/android/material/shape/MarkerEdgeTreatment;->radius:F
 
     float-to-double v0, v0
@@ -133,7 +126,6 @@
 
     add-float/2addr p2, p1
 
-    .line 5
     iget p1, p0, Lcom/google/android/material/shape/MarkerEdgeTreatment;->radius:F
 
     float-to-double v0, p1

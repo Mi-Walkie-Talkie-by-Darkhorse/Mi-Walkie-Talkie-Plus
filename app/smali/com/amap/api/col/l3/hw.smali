@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/hw;
 .super Lcom/amap/api/col/l3/ic;
-.source "ADIURequest.java"
 
 
 # instance fields
@@ -31,13 +30,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/ic;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/hw;->a:[B
 
-    .line 3
     iput-object p2, p0, Lcom/amap/api/col/l3/hw;->b:Ljava/util/Map;
 
     return-void
@@ -74,7 +70,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/hw;->b:Ljava/util/Map;
 
     return-object v0
@@ -91,7 +86,6 @@
 .method public final f()[B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/hw;->a:[B
 
     return-object v0

@@ -1,6 +1,5 @@
 .class Lcom/umeng/analytics/pro/f;
 .super Ljava/lang/Object;
-.source "UMDBManager.java"
 
 
 # annotations
@@ -27,10 +26,8 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
@@ -43,7 +40,6 @@
 .method synthetic constructor <init>(Lcom/umeng/analytics/pro/f$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/umeng/analytics/pro/f;-><init>()V
 
     return-void
@@ -52,28 +48,24 @@
 .method public static a(Landroid/content/Context;)Lcom/umeng/analytics/pro/f;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/pro/f;->d:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
     if-eqz p0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p0
 
     sput-object p0, Lcom/umeng/analytics/pro/f;->d:Landroid/content/Context;
 
-    .line 3
     invoke-static {p0}, Lcom/umeng/analytics/pro/e;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/e;
 
     move-result-object p0
 
     sput-object p0, Lcom/umeng/analytics/pro/f;->b:Landroid/database/sqlite/SQLiteOpenHelper;
 
-    .line 4
     :cond_0
     invoke-static {}, Lcom/umeng/analytics/pro/f$a;->a()Lcom/umeng/analytics/pro/f;
 
@@ -89,7 +81,6 @@
 
     monitor-enter p0
 
-    .line 5
     :try_start_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/f;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -101,7 +92,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 6
     sget-object v0, Lcom/umeng/analytics/pro/f;->b:Landroid/database/sqlite/SQLiteOpenHelper;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -110,7 +100,6 @@
 
     iput-object v0, p0, Lcom/umeng/analytics/pro/f;->c:Landroid/database/sqlite/SQLiteDatabase;
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/f;->c:Landroid/database/sqlite/SQLiteDatabase;
     :try_end_0
@@ -133,7 +122,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/f;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -143,14 +131,12 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/analytics/pro/f;->c:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     :catchall_0
     :cond_0
     monitor-exit p0

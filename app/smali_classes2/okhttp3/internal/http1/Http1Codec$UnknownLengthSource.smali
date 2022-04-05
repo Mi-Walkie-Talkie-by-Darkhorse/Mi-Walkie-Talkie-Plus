@@ -1,6 +1,5 @@
 .class Lokhttp3/internal/http1/Http1Codec$UnknownLengthSource;
 .super Lokhttp3/internal/http1/Http1Codec$AbstractSource;
-.source "Http1Codec.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lokhttp3/internal/http1/Http1Codec;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/http1/Http1Codec$UnknownLengthSource;->this$0:Lokhttp3/internal/http1/Http1Codec;
 
     const/4 v0, 0x0
@@ -44,14 +42,12 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->closed:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iget-boolean v0, p0, Lokhttp3/internal/http1/Http1Codec$UnknownLengthSource;->inputExhausted:Z
 
@@ -61,13 +57,11 @@
 
     const/4 v1, 0x0
 
-    .line 3
     invoke-virtual {p0, v0, v1}, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->endOfInput(ZLjava/io/IOException;)V
 
     :cond_1
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->closed:Z
 
     return-void
@@ -87,12 +81,10 @@
 
     if-ltz v2, :cond_3
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->closed:Z
 
     if-nez v0, :cond_2
 
-    .line 2
     iget-boolean v0, p0, Lokhttp3/internal/http1/Http1Codec$UnknownLengthSource;->inputExhausted:Z
 
     const-wide/16 v1, -0x1
@@ -101,7 +93,6 @@
 
     return-wide v1
 
-    .line 3
     :cond_0
     invoke-super {p0, p1, p2, p3}, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->read(Lokio/Buffer;J)J
 
@@ -113,12 +104,10 @@
 
     const/4 p1, 0x1
 
-    .line 4
     iput-boolean p1, p0, Lokhttp3/internal/http1/Http1Codec$UnknownLengthSource;->inputExhausted:Z
 
     const/4 p2, 0x0
 
-    .line 5
     invoke-virtual {p0, p1, p2}, Lokhttp3/internal/http1/Http1Codec$AbstractSource;->endOfInput(ZLjava/io/IOException;)V
 
     return-wide v1
@@ -126,7 +115,6 @@
     :cond_1
     return-wide p1
 
-    .line 6
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -136,7 +124,6 @@
 
     throw p1
 
-    .line 7
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

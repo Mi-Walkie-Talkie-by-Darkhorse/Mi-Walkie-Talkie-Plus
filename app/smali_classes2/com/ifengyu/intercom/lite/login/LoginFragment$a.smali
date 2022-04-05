@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/LoginFragment$a;
 .super Lcom/qmuiteam/qmui/span/d;
-.source "LoginFragment.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/LoginFragment;Landroid/view/View;IIII)V
     .locals 6
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$a;->k:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     move-object v0, p0
@@ -47,7 +45,6 @@
 .method public a(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$a;->k:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;

@@ -1,6 +1,5 @@
 .class public interface abstract Lcn/bingoogolapple/qrcode/core/ProcessDataTask$Delegate;
 .super Ljava/lang/Object;
-.source "ProcessDataTask.java"
 
 
 # annotations

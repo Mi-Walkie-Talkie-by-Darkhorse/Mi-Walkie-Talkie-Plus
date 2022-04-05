@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView;
 .super Lcom/qmuiteam/qmui/layout/QMUIConstraintLayout;
-.source "QMUIDialogView.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -36,7 +34,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -49,7 +46,6 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Lcom/qmuiteam/qmui/layout/QMUIConstraintLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -60,15 +56,12 @@
 .method public dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Lcom/qmuiteam/qmui/layout/QMUIConstraintLayout;->dispatchDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView;->c:Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView$a;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0, p1, p0}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView$a;->a(Landroid/graphics/Canvas;Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView;)V
 
     :cond_0
@@ -78,15 +71,12 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView;->c:Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView$a;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0, p1, p0}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView$a;->b(Landroid/graphics/Canvas;Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView;)V
 
     :cond_0
@@ -96,7 +86,6 @@
 .method public setOnDecorationListener(Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView;->c:Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogView$a;
 
     return-void

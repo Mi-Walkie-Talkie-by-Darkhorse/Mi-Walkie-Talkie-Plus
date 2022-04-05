@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/SwipeBackgroundView$a;
 .super Ljava/lang/Object;
-.source "SwipeBackgroundView.java"
 
 
 # annotations
@@ -44,27 +43,22 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x2
 
     new-array v0, v0, [I
 
-    .line 2
     iput-object v0, p0, Lcom/qmuiteam/qmui/arch/SwipeBackgroundView$a;->d:[I
 
-    .line 3
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/arch/SwipeBackgroundView$a;->a:Ljava/lang/ref/WeakReference;
 
-    .line 4
     iput-object p2, p0, Lcom/qmuiteam/qmui/arch/SwipeBackgroundView$a;->b:Landroid/view/WindowManager$LayoutParams;
 
-    .line 5
     iput-boolean p3, p0, Lcom/qmuiteam/qmui/arch/SwipeBackgroundView$a;->c:Z
 
     return-void
@@ -75,7 +69,6 @@
 .method a(Landroid/graphics/Canvas;)V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/SwipeBackgroundView$a;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -86,7 +79,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     iget-boolean v1, p0, Lcom/qmuiteam/qmui/arch/SwipeBackgroundView$a;->c:Z
 
     if-nez v1, :cond_1
@@ -100,7 +92,6 @@
     :cond_0
     const/high16 v2, -0x1000000
 
-    .line 3
     iget v1, v1, Landroid/view/WindowManager$LayoutParams;->dimAmount:F
 
     invoke-static {v2, v1}, Lcom/qmuiteam/qmui/util/b;->a(IF)I
@@ -109,12 +100,10 @@
 
     invoke-virtual {p1, v1}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 4
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/SwipeBackgroundView$a;->d:[I
 
     invoke-virtual {v0, v1}, Landroid/view/View;->getLocationOnScreen([I)V
 
-    .line 5
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/SwipeBackgroundView$a;->d:[I
 
     const/4 v2, 0x0
@@ -131,10 +120,8 @@
 
     invoke-virtual {p1, v3, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 6
     invoke-virtual {v0, p1}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V
 
-    .line 7
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/SwipeBackgroundView$a;->d:[I
 
     aget v1, v0, v2
@@ -153,7 +140,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_1
     :goto_0
     invoke-virtual {v0, p1}, Landroid/view/View;->draw(Landroid/graphics/Canvas;)V

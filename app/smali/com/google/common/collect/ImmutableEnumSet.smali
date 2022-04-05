@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/ImmutableEnumSet;
 .super Lcom/google/common/collect/ImmutableSet;
-.source "ImmutableEnumSet.java"
 
 
 # annotations
@@ -50,10 +49,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSet;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     return-void
@@ -62,7 +59,6 @@
 .method synthetic constructor <init>(Ljava/util/EnumSet;Lcom/google/common/collect/ImmutableEnumSet$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/ImmutableEnumSet;-><init>(Ljava/util/EnumSet;)V
 
     return-void
@@ -82,7 +78,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/EnumSet;->size()I
 
     move-result v0
@@ -93,14 +88,12 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/ImmutableEnumSet;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ImmutableEnumSet;-><init>(Ljava/util/EnumSet;)V
 
     return-object v0
 
-    .line 3
     :cond_0
     invoke-static {p0}, Lcom/google/common/collect/Iterables;->getOnlyElement(Ljava/lang/Iterable;)Ljava/lang/Object;
 
@@ -112,7 +105,6 @@
 
     return-object p0
 
-    .line 4
     :cond_1
     invoke-static {}, Lcom/google/common/collect/ImmutableSet;->of()Lcom/google/common/collect/ImmutableSet;
 
@@ -126,7 +118,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {v0, p1}, Ljava/util/EnumSet;->contains(Ljava/lang/Object;)Z
@@ -146,7 +137,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {v0, p1}, Ljava/util/EnumSet;->containsAll(Ljava/util/Collection;)Z
@@ -161,7 +151,6 @@
 
     if-eq p1, p0, :cond_1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {v0, p1}, Ljava/util/EnumSet;->equals(Ljava/lang/Object;)Z
@@ -188,12 +177,10 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/ImmutableEnumSet;->hashCode:I
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {v0}, Ljava/util/EnumSet;->hashCode()I
@@ -209,7 +196,6 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {v0}, Ljava/util/EnumSet;->isEmpty()Z
@@ -237,7 +223,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {v0}, Ljava/util/EnumSet;->iterator()Ljava/util/Iterator;
@@ -254,7 +239,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableEnumSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -265,7 +249,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {v0}, Ljava/util/EnumSet;->size()I
@@ -278,7 +261,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;
 
     invoke-virtual {v0}, Ljava/util/EnumSet;->toString()Ljava/lang/String;
@@ -291,7 +273,6 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ImmutableEnumSet$EnumSerializedForm;
 
     iget-object v1, p0, Lcom/google/common/collect/ImmutableEnumSet;->delegate:Ljava/util/EnumSet;

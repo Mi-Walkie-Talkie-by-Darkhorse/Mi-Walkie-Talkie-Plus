@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/collect/ImmutableMapEntry;
 .super Lcom/google/common/collect/ImmutableEntry;
-.source "ImmutableMapEntry.java"
 
 
 # annotations
@@ -38,7 +37,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableEntry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -60,10 +58,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/ImmutableEntry;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 2
     invoke-static {p1, p2}, Lcom/google/common/collect/CollectPreconditions;->checkEntryNotNull(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-void

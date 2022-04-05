@@ -1,6 +1,5 @@
 .class abstract Landroidx/appcompat/graphics/drawable/b$d;
 .super Landroid/graphics/drawable/Drawable$ConstantState;
-.source "DrawableContainer.java"
 
 
 # annotations
@@ -98,29 +97,22 @@
 .method constructor <init>(Landroidx/appcompat/graphics/drawable/b$d;Landroidx/appcompat/graphics/drawable/b;Landroid/content/res/Resources;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable$ConstantState;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->i:Z
 
-    .line 3
     iput-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->l:Z
 
     const/4 v1, 0x1
 
-    .line 4
     iput-boolean v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->x:Z
 
-    .line 5
     iput v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->A:I
 
-    .line 6
     iput v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->B:I
 
-    .line 7
     iput-object p2, p0, Landroidx/appcompat/graphics/drawable/b$d;->a:Landroidx/appcompat/graphics/drawable/b;
 
     const/4 p2, 0x0
@@ -134,7 +126,6 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 8
     iget-object v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->b:Landroid/content/res/Resources;
 
     goto :goto_0
@@ -147,7 +138,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 9
     iget v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->c:I
 
     goto :goto_1
@@ -164,108 +154,86 @@
 
     if-eqz p1, :cond_b
 
-    .line 10
     iget v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->d:I
 
     iput v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->d:I
 
-    .line 11
     iget v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->e:I
 
     iput v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->e:I
 
-    .line 12
     iput-boolean v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->v:Z
 
-    .line 13
     iput-boolean v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->w:Z
 
-    .line 14
     iget-boolean v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->i:Z
 
     iput-boolean v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->i:Z
 
-    .line 15
     iget-boolean v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->l:Z
 
     iput-boolean v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->l:Z
 
-    .line 16
     iget-boolean v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->x:Z
 
     iput-boolean v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->x:Z
 
-    .line 17
     iget-boolean v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->y:Z
 
     iput-boolean v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->y:Z
 
-    .line 18
     iget v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->z:I
 
     iput v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->z:I
 
-    .line 19
     iget v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->A:I
 
     iput v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->A:I
 
-    .line 20
     iget v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->B:I
 
     iput v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->B:I
 
-    .line 21
     iget-boolean v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->C:Z
 
     iput-boolean v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->C:Z
 
-    .line 22
     iget-object v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->D:Landroid/graphics/ColorFilter;
 
     iput-object v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->D:Landroid/graphics/ColorFilter;
 
-    .line 23
     iget-boolean v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->E:Z
 
     iput-boolean v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->E:Z
 
-    .line 24
     iget-object v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->F:Landroid/content/res/ColorStateList;
 
     iput-object v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->F:Landroid/content/res/ColorStateList;
 
-    .line 25
     iget-object v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->G:Landroid/graphics/PorterDuff$Mode;
 
     iput-object v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->G:Landroid/graphics/PorterDuff$Mode;
 
-    .line 26
     iget-boolean v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->H:Z
 
     iput-boolean v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->H:Z
 
-    .line 27
     iget-boolean v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->I:Z
 
     iput-boolean v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->I:Z
 
-    .line 28
     iget v2, p1, Landroidx/appcompat/graphics/drawable/b$d;->c:I
 
     if-ne v2, p3, :cond_5
 
-    .line 29
     iget-boolean p3, p1, Landroidx/appcompat/graphics/drawable/b$d;->j:Z
 
     if-eqz p3, :cond_4
 
-    .line 30
     iget-object p3, p1, Landroidx/appcompat/graphics/drawable/b$d;->k:Landroid/graphics/Rect;
 
     if-eqz p3, :cond_3
 
-    .line 31
     new-instance p2, Landroid/graphics/Rect;
 
     iget-object p3, p1, Landroidx/appcompat/graphics/drawable/b$d;->k:Landroid/graphics/Rect;
@@ -275,88 +243,70 @@
     :cond_3
     iput-object p2, p0, Landroidx/appcompat/graphics/drawable/b$d;->k:Landroid/graphics/Rect;
 
-    .line 32
     iput-boolean v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->j:Z
 
-    .line 33
     :cond_4
     iget-boolean p2, p1, Landroidx/appcompat/graphics/drawable/b$d;->m:Z
 
     if-eqz p2, :cond_5
 
-    .line 34
     iget p2, p1, Landroidx/appcompat/graphics/drawable/b$d;->n:I
 
     iput p2, p0, Landroidx/appcompat/graphics/drawable/b$d;->n:I
 
-    .line 35
     iget p2, p1, Landroidx/appcompat/graphics/drawable/b$d;->o:I
 
     iput p2, p0, Landroidx/appcompat/graphics/drawable/b$d;->o:I
 
-    .line 36
     iget p2, p1, Landroidx/appcompat/graphics/drawable/b$d;->p:I
 
     iput p2, p0, Landroidx/appcompat/graphics/drawable/b$d;->p:I
 
-    .line 37
     iget p2, p1, Landroidx/appcompat/graphics/drawable/b$d;->q:I
 
     iput p2, p0, Landroidx/appcompat/graphics/drawable/b$d;->q:I
 
-    .line 38
     iput-boolean v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->m:Z
 
-    .line 39
     :cond_5
     iget-boolean p2, p1, Landroidx/appcompat/graphics/drawable/b$d;->r:Z
 
     if-eqz p2, :cond_6
 
-    .line 40
     iget p2, p1, Landroidx/appcompat/graphics/drawable/b$d;->s:I
 
     iput p2, p0, Landroidx/appcompat/graphics/drawable/b$d;->s:I
 
-    .line 41
     iput-boolean v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->r:Z
 
-    .line 42
     :cond_6
     iget-boolean p2, p1, Landroidx/appcompat/graphics/drawable/b$d;->t:Z
 
     if-eqz p2, :cond_7
 
-    .line 43
     iget-boolean p2, p1, Landroidx/appcompat/graphics/drawable/b$d;->u:Z
 
     iput-boolean p2, p0, Landroidx/appcompat/graphics/drawable/b$d;->u:Z
 
-    .line 44
     iput-boolean v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->t:Z
 
-    .line 45
     :cond_7
     iget-object p2, p1, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
-    .line 46
     array-length p3, p2
 
     new-array p3, p3, [Landroid/graphics/drawable/Drawable;
 
     iput-object p3, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
-    .line 47
     iget p3, p1, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
     iput p3, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
-    .line 48
     iget-object p1, p1, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
     if-eqz p1, :cond_8
 
-    .line 49
     invoke-virtual {p1}, Landroid/util/SparseArray;->clone()Landroid/util/SparseArray;
 
     move-result-object p1
@@ -365,7 +315,6 @@
 
     goto :goto_2
 
-    .line 50
     :cond_8
     new-instance p1, Landroid/util/SparseArray;
 
@@ -375,19 +324,16 @@
 
     iput-object p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
-    .line 51
     :goto_2
     iget p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
     :goto_3
     if-ge v0, p1, :cond_c
 
-    .line 52
     aget-object p3, p2, v0
 
     if-eqz p3, :cond_a
 
-    .line 53
     aget-object p3, p2, v0
 
     invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
@@ -396,14 +342,12 @@
 
     if-eqz p3, :cond_9
 
-    .line 54
     iget-object v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
     invoke-virtual {v1, v0, p3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
     goto :goto_4
 
-    .line 55
     :cond_9
     iget-object p3, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
@@ -422,10 +366,8 @@
 
     new-array p1, p1, [Landroid/graphics/drawable/Drawable;
 
-    .line 56
     iput-object p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
-    .line 57
     iput v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
     :cond_c
@@ -435,25 +377,21 @@
 .method private b(Landroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->z:I
 
     invoke-static {p1, v0}, Landroidx/core/graphics/drawable/a;->a(Landroid/graphics/drawable/Drawable;I)Z
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
-    .line 4
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->a:Landroidx/appcompat/graphics/drawable/b;
 
     invoke-virtual {p1, v0}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
@@ -464,12 +402,10 @@
 .method private n()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
     move-result v0
@@ -479,14 +415,12 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 3
     iget-object v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
     invoke-virtual {v2, v1}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v2
 
-    .line 4
     iget-object v3, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
     invoke-virtual {v3, v1}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
@@ -495,7 +429,6 @@
 
     check-cast v3, Landroid/graphics/drawable/Drawable$ConstantState;
 
-    .line 5
     iget-object v4, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     iget-object v5, p0, Landroidx/appcompat/graphics/drawable/b$d;->b:Landroid/content/res/Resources;
@@ -517,7 +450,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 6
     iput-object v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
     :cond_1
@@ -529,10 +461,8 @@
 .method public final a(Landroid/graphics/drawable/Drawable;)I
     .locals 4
 
-    .line 1
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
-    .line 2
     iget-object v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     array-length v1, v1
@@ -541,10 +471,8 @@
 
     add-int/lit8 v1, v0, 0xa
 
-    .line 3
     invoke-virtual {p0, v0, v1}, Landroidx/appcompat/graphics/drawable/b$d;->a(II)V
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->mutate()Landroid/graphics/drawable/Drawable;
 
@@ -552,27 +480,22 @@
 
     const/4 v2, 0x0
 
-    .line 5
     invoke-virtual {p1, v2, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
-    .line 6
     iget-object v3, p0, Landroidx/appcompat/graphics/drawable/b$d;->a:Landroidx/appcompat/graphics/drawable/b;
 
     invoke-virtual {p1, v3}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
-    .line 7
     iget-object v3, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     aput-object p1, v3, v0
 
-    .line 8
     iget v3, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
     add-int/2addr v3, v1
 
     iput v3, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
-    .line 9
     iget v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->e:I
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getChangingConfigurations()I
@@ -583,21 +506,16 @@
 
     iput p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->e:I
 
-    .line 10
     invoke-virtual {p0}, Landroidx/appcompat/graphics/drawable/b$d;->k()V
 
     const/4 p1, 0x0
 
-    .line 11
     iput-object p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->k:Landroid/graphics/Rect;
 
-    .line 12
     iput-boolean v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->j:Z
 
-    .line 13
     iput-boolean v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->m:Z
 
-    .line 14
     iput-boolean v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->v:Z
 
     return v0
@@ -606,7 +524,6 @@
 .method public final a(I)Landroid/graphics/drawable/Drawable;
     .locals 4
 
-    .line 15
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     aget-object v0, v0, p1
@@ -615,7 +532,6 @@
 
     return-object v0
 
-    .line 16
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
@@ -623,14 +539,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 17
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->indexOfKey(I)I
 
     move-result v0
 
     if-ltz v0, :cond_2
 
-    .line 18
     iget-object v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
     invoke-virtual {v2, v0}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
@@ -639,7 +553,6 @@
 
     check-cast v2, Landroid/graphics/drawable/Drawable$ConstantState;
 
-    .line 19
     iget-object v3, p0, Landroidx/appcompat/graphics/drawable/b$d;->b:Landroid/content/res/Resources;
 
     invoke-virtual {v2, v3}, Landroid/graphics/drawable/Drawable$ConstantState;->newDrawable(Landroid/content/res/Resources;)Landroid/graphics/drawable/Drawable;
@@ -650,17 +563,14 @@
 
     move-result-object v2
 
-    .line 20
     iget-object v3, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     aput-object v2, v3, p1
 
-    .line 21
     iget-object p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
     invoke-virtual {p1, v0}, Landroid/util/SparseArray;->removeAt(I)V
 
-    .line 22
     iget-object p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
     invoke-virtual {p1}, Landroid/util/SparseArray;->size()I
@@ -669,7 +579,6 @@
 
     if-nez p1, :cond_1
 
-    .line 23
     iput-object v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
     :cond_1
@@ -682,20 +591,16 @@
 .method public a(II)V
     .locals 2
 
-    .line 38
     new-array p2, p2, [Landroid/graphics/drawable/Drawable;
 
-    .line 39
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 40
     invoke-static {v0, v1, p2, v1, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 41
     :cond_0
     iput-object p2, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
@@ -710,13 +615,10 @@
 
     if-eqz p1, :cond_2
 
-    .line 30
     invoke-direct {p0}, Landroidx/appcompat/graphics/drawable/b$d;->n()V
 
-    .line 31
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
-    .line 32
     iget-object v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x0
@@ -724,7 +626,6 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 33
     aget-object v3, v1, v2
 
     if-eqz v3, :cond_0
@@ -737,12 +638,10 @@
 
     if-eqz v3, :cond_0
 
-    .line 34
     aget-object v3, v1, v2
 
     invoke-static {v3, p1}, Landroidx/core/graphics/drawable/a;->a(Landroid/graphics/drawable/Drawable;Landroid/content/res/Resources$Theme;)V
 
-    .line 35
     iget v3, p0, Landroidx/appcompat/graphics/drawable/b$d;->e:I
 
     aget-object v4, v1, v2
@@ -760,7 +659,6 @@
 
     goto :goto_0
 
-    .line 36
     :cond_1
     invoke-static {p1}, Landroidx/appcompat/graphics/drawable/b$b;->a(Landroid/content/res/Resources$Theme;)Landroid/content/res/Resources;
 
@@ -777,30 +675,24 @@
 
     if-eqz p1, :cond_0
 
-    .line 24
     iput-object p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->b:Landroid/content/res/Resources;
 
-    .line 25
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->c:I
 
     invoke-static {p1, v0}, Landroidx/appcompat/graphics/drawable/b;->a(Landroid/content/res/Resources;I)I
 
     move-result p1
 
-    .line 26
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->c:I
 
-    .line 27
     iput p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->c:I
 
     if-eq v0, p1, :cond_0
 
     const/4 p1, 0x0
 
-    .line 28
     iput-boolean p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->m:Z
 
-    .line 29
     iput-boolean p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->j:Z
 
     :cond_0
@@ -810,7 +702,6 @@
 .method public final a(Z)V
     .locals 0
 
-    .line 37
     iput-boolean p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->l:Z
 
     return-void
@@ -819,29 +710,23 @@
 .method public a()Z
     .locals 6
 
-    .line 42
     iget-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->v:Z
 
     if-eqz v0, :cond_0
 
-    .line 43
     iget-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->w:Z
 
     return v0
 
-    .line 44
     :cond_0
     invoke-direct {p0}, Landroidx/appcompat/graphics/drawable/b$d;->n()V
 
     const/4 v0, 0x1
 
-    .line 45
     iput-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->v:Z
 
-    .line 46
     iget v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
-    .line 47
     iget-object v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     const/4 v3, 0x0
@@ -851,7 +736,6 @@
     :goto_0
     if-ge v4, v1, :cond_2
 
-    .line 48
     aget-object v5, v2, v4
 
     invoke-virtual {v5}, Landroid/graphics/drawable/Drawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
@@ -860,7 +744,6 @@
 
     if-nez v5, :cond_1
 
-    .line 49
     iput-boolean v3, p0, Landroidx/appcompat/graphics/drawable/b$d;->w:Z
 
     return v3
@@ -870,7 +753,6 @@
 
     goto :goto_0
 
-    .line 50
     :cond_2
     iput-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->w:Z
 
@@ -882,28 +764,22 @@
 
     const/4 v0, 0x1
 
-    .line 13
     iput-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->m:Z
 
-    .line 14
     invoke-direct {p0}, Landroidx/appcompat/graphics/drawable/b$d;->n()V
 
-    .line 15
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
-    .line 16
     iget-object v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     const/4 v2, -0x1
 
-    .line 17
     iput v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->o:I
 
     iput v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->n:I
 
     const/4 v2, 0x0
 
-    .line 18
     iput v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->q:I
 
     iput v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->p:I
@@ -911,54 +787,45 @@
     :goto_0
     if-ge v2, v0, :cond_4
 
-    .line 19
     aget-object v3, v1, v2
 
-    .line 20
     invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v4
 
-    .line 21
     iget v5, p0, Landroidx/appcompat/graphics/drawable/b$d;->n:I
 
     if-le v4, v5, :cond_0
 
     iput v4, p0, Landroidx/appcompat/graphics/drawable/b$d;->n:I
 
-    .line 22
     :cond_0
     invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v4
 
-    .line 23
     iget v5, p0, Landroidx/appcompat/graphics/drawable/b$d;->o:I
 
     if-le v4, v5, :cond_1
 
     iput v4, p0, Landroidx/appcompat/graphics/drawable/b$d;->o:I
 
-    .line 24
     :cond_1
     invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getMinimumWidth()I
 
     move-result v4
 
-    .line 25
     iget v5, p0, Landroidx/appcompat/graphics/drawable/b$d;->p:I
 
     if-le v4, v5, :cond_2
 
     iput v4, p0, Landroidx/appcompat/graphics/drawable/b$d;->p:I
 
-    .line 26
     :cond_2
     invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getMinimumHeight()I
 
     move-result v3
 
-    .line 27
     iget v4, p0, Landroidx/appcompat/graphics/drawable/b$d;->q:I
 
     if-le v3, v4, :cond_3
@@ -977,7 +844,6 @@
 .method public final b(I)V
     .locals 0
 
-    .line 28
     iput p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->A:I
 
     return-void
@@ -986,7 +852,6 @@
 .method public final b(Z)V
     .locals 0
 
-    .line 12
     iput-boolean p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->i:Z
 
     return-void
@@ -995,10 +860,8 @@
 .method final b(II)Z
     .locals 7
 
-    .line 5
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
-    .line 6
     iget-object v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x0
@@ -1010,22 +873,18 @@
     :goto_0
     if-ge v3, v0, :cond_2
 
-    .line 7
     aget-object v5, v1, v3
 
     if-eqz v5, :cond_1
 
-    .line 8
     sget v5, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v6, 0x17
 
     if-lt v5, v6, :cond_0
 
-    .line 9
     aget-object v5, v1, v3
 
-    .line 10
     invoke-static {v5, p1}, Landroidx/core/graphics/drawable/a;->a(Landroid/graphics/drawable/Drawable;I)Z
 
     move-result v5
@@ -1045,7 +904,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_2
     iput p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->z:I
 
@@ -1055,7 +913,6 @@
 .method final c()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     array-length v0, v0
@@ -1066,7 +923,6 @@
 .method public final c(I)V
     .locals 0
 
-    .line 2
     iput p1, p0, Landroidx/appcompat/graphics/drawable/b$d;->B:I
 
     return-void
@@ -1078,10 +934,8 @@
         value = 0x15
     .end annotation
 
-    .line 1
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
-    .line 2
     iget-object v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x0
@@ -1091,14 +945,12 @@
     :goto_0
     if-ge v3, v0, :cond_2
 
-    .line 3
     aget-object v4, v1, v3
 
     const/4 v5, 0x1
 
     if-eqz v4, :cond_0
 
-    .line 4
     invoke-static {v4}, Landroidx/core/graphics/drawable/a;->a(Landroid/graphics/drawable/Drawable;)Z
 
     move-result v4
@@ -1107,7 +959,6 @@
 
     return v5
 
-    .line 5
     :cond_0
     iget-object v4, p0, Landroidx/appcompat/graphics/drawable/b$d;->f:Landroid/util/SparseArray;
 
@@ -1119,7 +970,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 6
     invoke-static {v4}, Landroidx/appcompat/graphics/drawable/b$b;->a(Landroid/graphics/drawable/Drawable$ConstantState;)Z
 
     move-result v4
@@ -1140,7 +990,6 @@
 .method public final d()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
     return v0
@@ -1149,15 +998,12 @@
 .method public final e()I
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->m:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/appcompat/graphics/drawable/b$d;->b()V
 
-    .line 3
     :cond_0
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->o:I
 
@@ -1167,15 +1013,12 @@
 .method public final f()I
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->m:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/appcompat/graphics/drawable/b$d;->b()V
 
-    .line 3
     :cond_0
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->q:I
 
@@ -1185,15 +1028,12 @@
 .method public final g()I
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->m:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/appcompat/graphics/drawable/b$d;->b()V
 
-    .line 3
     :cond_0
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->p:I
 
@@ -1203,7 +1043,6 @@
 .method public getChangingConfigurations()I
     .locals 2
 
-    .line 1
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->d:I
 
     iget v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->e:I
@@ -1216,7 +1055,6 @@
 .method public final h()Landroid/graphics/Rect;
     .locals 8
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->i:Z
 
     const/4 v1, 0x0
@@ -1225,7 +1063,6 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->k:Landroid/graphics/Rect;
 
@@ -1237,19 +1074,15 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-direct {p0}, Landroidx/appcompat/graphics/drawable/b$d;->n()V
 
-    .line 4
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    .line 5
     iget v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
-    .line 6
     iget-object v3, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     const/4 v4, 0x0
@@ -1259,7 +1092,6 @@
     :goto_0
     if-ge v5, v2, :cond_7
 
-    .line 7
     aget-object v6, v3, v5
 
     invoke-virtual {v6, v0}, Landroid/graphics/drawable/Drawable;->getPadding(Landroid/graphics/Rect;)Z
@@ -1270,12 +1102,10 @@
 
     if-nez v1, :cond_2
 
-    .line 8
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1, v4, v4, v4, v4}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 9
     :cond_2
     iget v6, v0, Landroid/graphics/Rect;->left:I
 
@@ -1285,7 +1115,6 @@
 
     iput v6, v1, Landroid/graphics/Rect;->left:I
 
-    .line 10
     :cond_3
     iget v6, v0, Landroid/graphics/Rect;->top:I
 
@@ -1295,7 +1124,6 @@
 
     iput v6, v1, Landroid/graphics/Rect;->top:I
 
-    .line 11
     :cond_4
     iget v6, v0, Landroid/graphics/Rect;->right:I
 
@@ -1305,7 +1133,6 @@
 
     iput v6, v1, Landroid/graphics/Rect;->right:I
 
-    .line 12
     :cond_5
     iget v6, v0, Landroid/graphics/Rect;->bottom:I
 
@@ -1323,15 +1150,12 @@
     :cond_7
     const/4 v0, 0x1
 
-    .line 13
     iput-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->j:Z
 
-    .line 14
     iput-object v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->k:Landroid/graphics/Rect;
 
     return-object v1
 
-    .line 15
     :cond_8
     :goto_1
     iget-object v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->k:Landroid/graphics/Rect;
@@ -1342,15 +1166,12 @@
 .method public final i()I
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->m:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/appcompat/graphics/drawable/b$d;->b()V
 
-    .line 3
     :cond_0
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->n:I
 
@@ -1360,31 +1181,25 @@
 .method public final j()I
     .locals 6
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->r:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->s:I
 
     return v0
 
-    .line 3
     :cond_0
     invoke-direct {p0}, Landroidx/appcompat/graphics/drawable/b$d;->n()V
 
-    .line 4
     iget v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->h:I
 
-    .line 5
     iget-object v1, p0, Landroidx/appcompat/graphics/drawable/b$d;->g:[Landroid/graphics/drawable/Drawable;
 
     if-lez v0, :cond_1
 
     const/4 v2, 0x0
 
-    .line 6
     aget-object v2, v1, v2
 
     invoke-virtual {v2}, Landroid/graphics/drawable/Drawable;->getOpacity()I
@@ -1404,7 +1219,6 @@
     :goto_1
     if-ge v4, v0, :cond_2
 
-    .line 7
     aget-object v5, v1, v4
 
     invoke-virtual {v5}, Landroid/graphics/drawable/Drawable;->getOpacity()I
@@ -1419,11 +1233,9 @@
 
     goto :goto_1
 
-    .line 8
     :cond_2
     iput v2, p0, Landroidx/appcompat/graphics/drawable/b$d;->s:I
 
-    .line 9
     iput-boolean v3, p0, Landroidx/appcompat/graphics/drawable/b$d;->r:Z
 
     return v2
@@ -1434,10 +1246,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->r:Z
 
-    .line 2
     iput-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->t:Z
 
     return-void
@@ -1446,7 +1256,6 @@
 .method public final l()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/graphics/drawable/b$d;->l:Z
 
     return v0

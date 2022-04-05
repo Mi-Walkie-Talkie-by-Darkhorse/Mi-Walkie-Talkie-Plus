@@ -1,6 +1,5 @@
 .class final Lcom/efs/sdk/base/a/c/a/c$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/efs/sdk/base/a/c/a/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/base/a/c/a/c$1;->a:Lcom/efs/sdk/base/a/c/a/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final run()V
     .locals 10
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/efs/sdk/base/a/c/a/c$1;->a:Lcom/efs/sdk/base/a/c/a/c;
 
@@ -67,7 +64,6 @@
 
     check-cast v1, Lcom/efs/sdk/base/observer/IConfigCallback;
 
-    .line 2
     iget-object v2, p0, Lcom/efs/sdk/base/a/c/a/c$1;->a:Lcom/efs/sdk/base/a/c/a/c;
 
     invoke-static {v2}, Lcom/efs/sdk/base/a/c/a/c;->a(Lcom/efs/sdk/base/a/c/a/c;)Ljava/util/Map;
@@ -80,19 +76,16 @@
 
     check-cast v2, [Ljava/lang/String;
 
-    .line 3
     new-instance v3, Ljava/util/HashMap;
 
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
     if-eqz v2, :cond_1
 
-    .line 4
     array-length v4, v2
 
     if-eqz v4, :cond_1
 
-    .line 5
     array-length v4, v2
 
     const/4 v5, 0x0
@@ -102,24 +95,20 @@
 
     aget-object v6, v2, v5
 
-    .line 6
     iget-object v7, p0, Lcom/efs/sdk/base/a/c/a/c$1;->a:Lcom/efs/sdk/base/a/c/a/c;
 
     invoke-static {v7}, Lcom/efs/sdk/base/a/c/a/c;->b(Lcom/efs/sdk/base/a/c/a/c;)Lcom/efs/sdk/base/a/c/a/b;
 
     move-result-object v7
 
-    .line 7
     iget-object v7, v7, Lcom/efs/sdk/base/a/c/a/b;->e:Ljava/util/Map;
 
-    .line 8
     invoke-interface {v7, v6}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v7
 
     if-eqz v7, :cond_0
 
-    .line 9
     iget-object v7, p0, Lcom/efs/sdk/base/a/c/a/c$1;->a:Lcom/efs/sdk/base/a/c/a/c;
 
     invoke-virtual {v7}, Lcom/efs/sdk/base/a/c/a/c;->c()Ljava/util/Map;
@@ -134,7 +123,6 @@
 
     const-string v7, "efs.config"
 
-    .line 10
     new-instance v8, Ljava/lang/StringBuilder;
 
     const-string v9, "--->>> configCallback key is "
@@ -165,7 +153,6 @@
 
     move-result-object v6
 
-    .line 11
     invoke-static {v7, v6}, Lcom/efs/sdk/base/a/h/d;->a(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
@@ -173,13 +160,11 @@
 
     goto :goto_1
 
-    .line 12
     :cond_1
     invoke-interface {v1, v3}, Lcom/efs/sdk/base/observer/IConfigCallback;->onChange(Ljava/util/Map;)V
 
     goto :goto_0
 
-    .line 13
     :cond_2
     iget-object v0, p0, Lcom/efs/sdk/base/a/c/a/c$1;->a:Lcom/efs/sdk/base/a/c/a/c;
 

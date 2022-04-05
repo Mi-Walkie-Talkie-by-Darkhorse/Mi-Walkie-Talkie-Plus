@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 .super Ljava/lang/Object;
-.source "BreakpointInfo.java"
 
 
 # instance fields
@@ -53,33 +52,26 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->id:I
 
-    .line 3
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->url:Ljava/lang/String;
 
-    .line 4
     iput-object p3, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->parentFile:Ljava/io/File;
 
-    .line 5
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
-    .line 6
     invoke-static {p4}, Lcom/liulishuo/okdownload/core/Util;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 7
     new-instance p1, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     invoke-direct {p1}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;-><init>()V
@@ -88,12 +80,10 @@
 
     const/4 p1, 0x1
 
-    .line 8
     iput-boolean p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->taskOnlyProvidedParentPath:Z
 
     goto :goto_0
 
-    .line 9
     :cond_0
     new-instance p1, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
@@ -103,10 +93,8 @@
 
     const/4 p1, 0x0
 
-    .line 10
     iput-boolean p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->taskOnlyProvidedParentPath:Z
 
-    .line 11
     new-instance p1, Ljava/io/File;
 
     invoke-direct {p1, p3, p4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
@@ -132,33 +120,26 @@
         .end annotation
     .end param
 
-    .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 13
     iput p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->id:I
 
-    .line 14
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->url:Ljava/lang/String;
 
-    .line 15
     iput-object p3, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->parentFile:Ljava/io/File;
 
-    .line 16
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
-    .line 17
     invoke-static {p4}, Lcom/liulishuo/okdownload/core/Util;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 18
     new-instance p1, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     invoke-direct {p1}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;-><init>()V
@@ -167,7 +148,6 @@
 
     goto :goto_0
 
-    .line 19
     :cond_0
     new-instance p1, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
@@ -175,7 +155,6 @@
 
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
-    .line 20
     :goto_0
     iput-boolean p5, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->taskOnlyProvidedParentPath:Z
 
@@ -187,7 +166,6 @@
 .method public addBlock(Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -198,7 +176,6 @@
 .method public copy()Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
     .locals 7
 
-    .line 1
     new-instance v6, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     iget v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->id:I
@@ -219,12 +196,10 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;-><init>(ILjava/lang/String;Ljava/io/File;Ljava/lang/String;Z)V
 
-    .line 2
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->chunked:Z
 
     iput-boolean v0, v6, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->chunked:Z
 
-    .line 3
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -244,7 +219,6 @@
 
     check-cast v1, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
-    .line 4
     iget-object v2, v6, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->copy()Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
@@ -262,7 +236,6 @@
 .method public copyWithReplaceId(I)Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
     .locals 7
 
-    .line 1
     new-instance v6, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->url:Ljava/lang/String;
@@ -271,7 +244,6 @@
 
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
-    .line 2
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
 
     move-result-object v4
@@ -284,12 +256,10 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;-><init>(ILjava/lang/String;Ljava/io/File;Ljava/lang/String;Z)V
 
-    .line 3
     iget-boolean p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->chunked:Z
 
     iput-boolean p1, v6, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->chunked:Z
 
-    .line 4
     iget-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -309,7 +279,6 @@
 
     check-cast v0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
-    .line 5
     iget-object v1, v6, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->copy()Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
@@ -327,14 +296,12 @@
 .method public copyWithReplaceIdAndUrl(ILjava/lang/String;)Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
     .locals 7
 
-    .line 1
     new-instance v6, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->parentFile:Ljava/io/File;
 
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
-    .line 2
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
 
     move-result-object v4
@@ -349,12 +316,10 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;-><init>(ILjava/lang/String;Ljava/io/File;Ljava/lang/String;Z)V
 
-    .line 3
     iget-boolean p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->chunked:Z
 
     iput-boolean p1, v6, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->chunked:Z
 
-    .line 4
     iget-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -374,7 +339,6 @@
 
     check-cast p2, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
-    .line 5
     iget-object v0, v6, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-virtual {p2}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->copy()Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
@@ -392,7 +356,6 @@
 .method public getBlock(I)Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -407,7 +370,6 @@
 .method public getBlockCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -422,7 +384,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->etag:Ljava/lang/String;
 
     return-object v0
@@ -433,7 +394,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
@@ -446,7 +406,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->targetFile:Ljava/io/File;
 
@@ -460,7 +419,6 @@
 
     iput-object v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->targetFile:Ljava/io/File;
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->targetFile:Ljava/io/File;
 
@@ -472,7 +430,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
@@ -485,7 +442,6 @@
 .method public getFilenameHolder()Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     return-object v0
@@ -494,7 +450,6 @@
 .method public getId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->id:I
 
     return v0
@@ -503,7 +458,6 @@
 .method public getTotalLength()J
     .locals 7
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->isChunked()Z
 
     move-result v0
@@ -519,7 +473,6 @@
     :cond_0
     const-wide/16 v0, 0x0
 
-    .line 2
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->toArray()[Ljava/lang/Object;
@@ -528,7 +481,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 3
     array-length v3, v2
 
     const/4 v4, 0x0
@@ -538,12 +490,10 @@
 
     aget-object v5, v2, v4
 
-    .line 4
     instance-of v6, v5, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
     if-eqz v6, :cond_1
 
-    .line 5
     check-cast v5, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
     invoke-virtual {v5}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->getContentLength()J
@@ -564,7 +514,6 @@
 .method public getTotalOffset()J
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->toArray()[Ljava/lang/Object;
@@ -575,7 +524,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     array-length v3, v0
 
     const/4 v4, 0x0
@@ -585,12 +533,10 @@
 
     aget-object v5, v0, v4
 
-    .line 3
     instance-of v6, v5, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
     if-eqz v6, :cond_0
 
-    .line 4
     check-cast v5, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
     invoke-virtual {v5}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->getCurrentOffset()J
@@ -611,7 +557,6 @@
 .method public getUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->url:Ljava/lang/String;
 
     return-object v0
@@ -620,7 +565,6 @@
 .method public isChunked()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->chunked:Z
 
     return v0
@@ -629,7 +573,6 @@
 .method public isLastBlock(I)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -654,7 +597,6 @@
 .method public isSameFrom(Lcom/liulishuo/okdownload/DownloadTask;)Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->parentFile:Ljava/io/File;
 
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getParentFile()Ljava/io/File;
@@ -671,7 +613,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->url:Ljava/lang/String;
 
@@ -687,7 +628,6 @@
 
     return v1
 
-    .line 3
     :cond_1
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getFilename()Ljava/lang/String;
 
@@ -697,7 +637,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 4
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     invoke-virtual {v3}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
@@ -712,13 +651,11 @@
 
     return v2
 
-    .line 5
     :cond_2
     iget-boolean v3, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->taskOnlyProvidedParentPath:Z
 
     if-eqz v3, :cond_5
 
-    .line 6
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->isFilenameFromResponse()Z
 
     move-result p1
@@ -730,7 +667,6 @@
     :cond_3
     if-eqz v0, :cond_4
 
-    .line 7
     iget-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
@@ -753,7 +689,6 @@
 .method public isSingleBlock()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -776,7 +711,6 @@
 .method isTaskOnlyProvidedParentPath()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->taskOnlyProvidedParentPath:Z
 
     return v0
@@ -785,7 +719,6 @@
 .method public resetBlockInfos()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
@@ -796,14 +729,12 @@
 .method public resetInfo()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->etag:Ljava/lang/String;
 
     return-void
@@ -812,12 +743,10 @@
 .method public reuseBlocks(Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
     iget-object p1, p1, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
@@ -830,7 +759,6 @@
 .method public setChunked(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->chunked:Z
 
     return-void
@@ -839,7 +767,6 @@
 .method public setEtag(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->etag:Ljava/lang/String;
 
     return-void
@@ -848,7 +775,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -899,7 +825,6 @@
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
-    .line 2
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
 
     move-result-object v1
@@ -912,7 +837,6 @@
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->blockInfoList:Ljava/util/List;
 
-    .line 3
     invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1

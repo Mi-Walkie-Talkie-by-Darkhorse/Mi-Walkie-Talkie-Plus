@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ft$a;
 .super Ljava/lang/Object;
-.source "TraceManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -63,35 +62,28 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ft$a;->a:Lcom/amap/api/col/l3/ft;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/amap/api/col/l3/ft$a;->b:Ljava/util/List;
 
-    .line 3
     iput p4, p0, Lcom/amap/api/col/l3/ft$a;->c:I
 
-    .line 4
     iput p2, p0, Lcom/amap/api/col/l3/ft$a;->d:I
 
-    .line 5
     iput-object p3, p0, Lcom/amap/api/col/l3/ft$a;->e:Ljava/util/List;
 
-    .line 6
     invoke-static {}, Lcom/amap/api/col/l3/ef;->a()Ljava/lang/String;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/amap/api/col/l3/ft$a;->f:Ljava/lang/String;
 
-    .line 7
     iput-object p5, p0, Lcom/amap/api/col/l3/ft$a;->g:Lcom/amap/api/trace/TraceListener;
 
     return-void
@@ -104,7 +96,6 @@
 
     move-object/from16 v1, p0
 
-    .line 1
     :try_start_0
     iget-object v0, v1, Lcom/amap/api/col/l3/ft$a;->a:Lcom/amap/api/col/l3/ft;
 
@@ -116,7 +107,6 @@
 
     invoke-virtual {v0, v2}, Lcom/amap/api/col/l3/ft$c;->a(Lcom/amap/api/trace/TraceListener;)V
 
-    .line 2
     iget-object v0, v1, Lcom/amap/api/col/l3/ft$a;->e:Ljava/util/List;
 
     const/4 v2, 0x1
@@ -246,7 +236,6 @@
     :goto_3
     const/4 v5, 0x0
 
-    .line 3
     :cond_7
     iget-object v0, v1, Lcom/amap/api/col/l3/ft$a;->e:Ljava/util/List;
 
@@ -264,7 +253,6 @@
 
     goto/16 :goto_9
 
-    .line 4
     :cond_8
     iget-object v0, v1, Lcom/amap/api/col/l3/ft$a;->e:Ljava/util/List;
 
@@ -286,14 +274,12 @@
 
     check-cast v6, Lcom/amap/api/trace/TraceLocation;
 
-    .line 5
     invoke-virtual {v6}, Lcom/amap/api/trace/TraceLocation;->copy()Lcom/amap/api/trace/TraceLocation;
 
     move-result-object v6
 
     if-eqz v6, :cond_9
 
-    .line 6
     invoke-virtual {v6}, Lcom/amap/api/trace/TraceLocation;->getLatitude()D
 
     move-result-wide v7
@@ -304,7 +290,6 @@
 
     if-lez v11, :cond_9
 
-    .line 7
     invoke-virtual {v6}, Lcom/amap/api/trace/TraceLocation;->getLongitude()D
 
     move-result-wide v7
@@ -313,14 +298,12 @@
 
     if-lez v11, :cond_9
 
-    .line 8
     iget-object v7, v1, Lcom/amap/api/col/l3/ft$a;->b:Ljava/util/List;
 
     invoke-interface {v7, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_4
 
-    .line 9
     :cond_a
     iget-object v0, v1, Lcom/amap/api/col/l3/ft$a;->b:Ljava/util/List;
 
@@ -332,10 +315,8 @@
 
     const/16 v6, 0x1f4
 
-    .line 10
     div-int/lit16 v7, v0, 0x1f4
 
-    .line 11
     invoke-static {}, Lcom/amap/api/col/l3/fu;->a()Lcom/amap/api/col/l3/fu;
 
     move-result-object v0
@@ -356,14 +337,12 @@
 
     if-ne v0, v7, :cond_c
 
-    .line 12
     iget-object v5, v1, Lcom/amap/api/col/l3/ft$a;->b:Ljava/util/List;
 
     invoke-interface {v5}, Ljava/util/List;->size()I
 
     move-result v5
 
-    .line 13
     :cond_c
     new-instance v13, Ljava/util/ArrayList;
 
@@ -374,7 +353,6 @@
     :goto_6
     if-ge v8, v5, :cond_11
 
-    .line 14
     iget-object v9, v1, Lcom/amap/api/col/l3/ft$a;->b:Ljava/util/List;
 
     invoke-interface {v9, v3}, Ljava/util/List;->remove(I)Ljava/lang/Object;
@@ -385,19 +363,16 @@
 
     if-eqz v9, :cond_10
 
-    .line 15
     iget v10, v1, Lcom/amap/api/col/l3/ft$a;->c:I
 
     if-eq v10, v2, :cond_f
 
-    .line 16
     iget v10, v1, Lcom/amap/api/col/l3/ft$a;->c:I
 
     const/4 v11, 0x3
 
     if-ne v10, v11, :cond_d
 
-    .line 17
     iget-object v10, v1, Lcom/amap/api/col/l3/ft$a;->a:Lcom/amap/api/col/l3/ft;
 
     invoke-static {v10}, Lcom/amap/api/col/l3/ft;->c(Lcom/amap/api/col/l3/ft;)Lcom/amap/api/maps/CoordinateConverter;
@@ -410,13 +385,11 @@
 
     goto :goto_7
 
-    .line 18
     :cond_d
     iget v10, v1, Lcom/amap/api/col/l3/ft$a;->c:I
 
     if-ne v10, v4, :cond_e
 
-    .line 19
     iget-object v10, v1, Lcom/amap/api/col/l3/ft$a;->a:Lcom/amap/api/col/l3/ft;
 
     invoke-static {v10}, Lcom/amap/api/col/l3/ft;->c(Lcom/amap/api/col/l3/ft;)Lcom/amap/api/maps/CoordinateConverter;
@@ -427,24 +400,20 @@
 
     invoke-virtual {v10, v11}, Lcom/amap/api/maps/CoordinateConverter;->from(Lcom/amap/api/maps/CoordinateConverter$CoordType;)Lcom/amap/api/maps/CoordinateConverter;
 
-    .line 20
     :cond_e
     :goto_7
     new-instance v10, Lcom/amap/api/maps/model/LatLng;
 
-    .line 21
     invoke-virtual {v9}, Lcom/amap/api/trace/TraceLocation;->getLatitude()D
 
     move-result-wide v11
 
-    .line 22
     invoke-virtual {v9}, Lcom/amap/api/trace/TraceLocation;->getLongitude()D
 
     move-result-wide v14
 
     invoke-direct {v10, v11, v12, v14, v15}, Lcom/amap/api/maps/model/LatLng;-><init>(DD)V
 
-    .line 23
     iget-object v11, v1, Lcom/amap/api/col/l3/ft$a;->a:Lcom/amap/api/col/l3/ft;
 
     invoke-static {v11}, Lcom/amap/api/col/l3/ft;->c(Lcom/amap/api/col/l3/ft;)Lcom/amap/api/maps/CoordinateConverter;
@@ -453,31 +422,26 @@
 
     invoke-virtual {v11, v10}, Lcom/amap/api/maps/CoordinateConverter;->coord(Lcom/amap/api/maps/model/LatLng;)Lcom/amap/api/maps/CoordinateConverter;
 
-    .line 24
     iget-object v10, v1, Lcom/amap/api/col/l3/ft$a;->a:Lcom/amap/api/col/l3/ft;
 
     invoke-static {v10}, Lcom/amap/api/col/l3/ft;->c(Lcom/amap/api/col/l3/ft;)Lcom/amap/api/maps/CoordinateConverter;
 
     move-result-object v10
 
-    .line 25
     invoke-virtual {v10}, Lcom/amap/api/maps/CoordinateConverter;->convert()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object v10
 
     if-eqz v10, :cond_f
 
-    .line 26
     iget-wide v11, v10, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
     invoke-virtual {v9, v11, v12}, Lcom/amap/api/trace/TraceLocation;->setLatitude(D)V
 
-    .line 27
     iget-wide v10, v10, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
     invoke-virtual {v9, v10, v11}, Lcom/amap/api/trace/TraceLocation;->setLongitude(D)V
 
-    .line 28
     :cond_f
     invoke-interface {v13, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -486,7 +450,6 @@
 
     goto :goto_6
 
-    .line 29
     :cond_11
     invoke-interface {v13}, Ljava/util/List;->size()I
 
@@ -494,14 +457,12 @@
 
     if-lt v8, v4, :cond_b
 
-    .line 30
     invoke-interface {v13}, Ljava/util/List;->size()I
 
     move-result v8
 
     if-gt v8, v6, :cond_b
 
-    .line 31
     new-instance v8, Lcom/amap/api/col/l3/fs;
 
     iget-object v9, v1, Lcom/amap/api/col/l3/ft$a;->a:Lcom/amap/api/col/l3/ft;
@@ -526,7 +487,6 @@
 
     invoke-direct/range {v10 .. v16}, Lcom/amap/api/col/l3/fs;-><init>(Landroid/content/Context;Landroid/os/Handler;Ljava/util/List;Ljava/lang/String;II)V
 
-    .line 32
     iget-object v9, v1, Lcom/amap/api/col/l3/ft$a;->a:Lcom/amap/api/col/l3/ft;
 
     invoke-static {v9}, Lcom/amap/api/col/l3/ft;->e(Lcom/amap/api/col/l3/ft;)Ljava/util/concurrent/ExecutorService;
@@ -541,7 +501,6 @@
 
     const-wide/16 v9, 0x32
 
-    .line 33
     :try_start_1
     invoke-static {v9, v10}, Ljava/lang/Thread;->sleep(J)V
     :try_end_1
@@ -555,7 +514,6 @@
 
     move-object v9, v0
 
-    .line 34
     :try_start_2
     invoke-virtual {v9}, Ljava/lang/InterruptedException;->printStackTrace()V
 
@@ -567,7 +525,6 @@
     :cond_12
     return-void
 
-    .line 35
     :cond_13
     :goto_9
     invoke-static {}, Lcom/amap/api/col/l3/fu;->a()Lcom/amap/api/col/l3/fu;
@@ -591,7 +548,6 @@
     :catchall_0
     move-exception v0
 
-    .line 36
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

@@ -1,6 +1,5 @@
 .class public abstract Landroidx/dynamicanimation/a/c;
 .super Ljava/lang/Object;
-.source "FloatPropertyCompat.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/dynamicanimation/a/c;->mPropertyName:Ljava/lang/String;
 
     return-void
@@ -49,7 +46,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Landroidx/dynamicanimation/a/c$a;
 
     invoke-virtual {p0}, Landroid/util/FloatProperty;->getName()Ljava/lang/String;

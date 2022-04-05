@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/pdf417/PDF417Writer;
 .super Ljava/lang/Object;
-.source "PDF417Writer.java"
 
 # interfaces
 .implements Lcom/google/zxing/Writer;
@@ -16,7 +15,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,7 +23,6 @@
 .method private static bitMatrixFromBitArray([[BI)Lcom/google/zxing/common/BitMatrix;
     .locals 8
 
-    .line 1
     new-instance v0, Lcom/google/zxing/common/BitMatrix;
 
     const/4 v1, 0x0
@@ -44,10 +41,8 @@
 
     invoke-direct {v0, v2, v4}, Lcom/google/zxing/common/BitMatrix;-><init>(II)V
 
-    .line 2
     invoke-virtual {v0}, Lcom/google/zxing/common/BitMatrix;->clear()V
 
-    .line 3
     invoke-virtual {v0}, Lcom/google/zxing/common/BitMatrix;->getHeight()I
 
     move-result v2
@@ -65,12 +60,10 @@
 
     if-ge v4, v5, :cond_2
 
-    .line 4
     aget-object v5, p0, v4
 
     const/4 v6, 0x0
 
-    .line 5
     :goto_1
     aget-object v7, p0, v1
 
@@ -78,14 +71,12 @@
 
     if-ge v6, v7, :cond_1
 
-    .line 6
     aget-byte v7, v5, v6
 
     if-ne v7, v3, :cond_0
 
     add-int v7, v6, p1
 
-    .line 7
     invoke-virtual {v0, v7, v2}, Lcom/google/zxing/common/BitMatrix;->set(II)V
 
     :cond_0
@@ -112,10 +103,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/zxing/pdf417/encoder/PDF417;->generateBarcodeLogic(Ljava/lang/String;I)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/pdf417/encoder/PDF417;->getBarcodeMatrix()Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;
 
     move-result-object p1
@@ -139,7 +128,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 3
     :goto_0
     aget-object v2, p1, v0
 
@@ -159,7 +147,6 @@
     :goto_1
     if-eq v1, v2, :cond_2
 
-    .line 4
     invoke-static {p1}, Lcom/google/zxing/pdf417/PDF417Writer;->rotateArray([[B)[[B
 
     move-result-object p1
@@ -171,7 +158,6 @@
     :cond_2
     const/4 v1, 0x0
 
-    .line 5
     :goto_2
     aget-object v0, p1, v0
 
@@ -179,7 +165,6 @@
 
     div-int/2addr p3, v0
 
-    .line 6
     array-length v0, p1
 
     div-int/2addr p4, v0
@@ -194,7 +179,6 @@
     :goto_3
     if-le p3, p2, :cond_5
 
-    .line 7
     invoke-virtual {p0}, Lcom/google/zxing/pdf417/encoder/PDF417;->getBarcodeMatrix()Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;
 
     move-result-object p0
@@ -207,12 +191,10 @@
 
     if-eqz v1, :cond_4
 
-    .line 8
     invoke-static {p0}, Lcom/google/zxing/pdf417/PDF417Writer;->rotateArray([[B)[[B
 
     move-result-object p0
 
-    .line 9
     :cond_4
     invoke-static {p0, p5}, Lcom/google/zxing/pdf417/PDF417Writer;->bitMatrixFromBitArray([[BI)Lcom/google/zxing/common/BitMatrix;
 
@@ -220,7 +202,6 @@
 
     return-object p0
 
-    .line 10
     :cond_5
     invoke-static {p1, p5}, Lcom/google/zxing/pdf417/PDF417Writer;->bitMatrixFromBitArray([[BI)Lcom/google/zxing/common/BitMatrix;
 
@@ -234,7 +215,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget-object v1, p0, v0
 
     array-length v1, v1
@@ -261,13 +241,11 @@
 
     const/4 v2, 0x0
 
-    .line 2
     :goto_0
     array-length v3, p0
 
     if-ge v2, v3, :cond_1
 
-    .line 3
     array-length v3, p0
 
     sub-int/2addr v3, v2
@@ -276,7 +254,6 @@
 
     const/4 v5, 0x0
 
-    .line 4
     :goto_1
     aget-object v6, p0, v0
 
@@ -284,7 +261,6 @@
 
     if-ge v5, v6, :cond_0
 
-    .line 5
     aget-object v6, v1, v5
 
     aget-object v7, p0, v2
@@ -328,7 +304,6 @@
 
     move v4, p4
 
-    .line 23
     invoke-virtual/range {v0 .. v5}, Lcom/google/zxing/pdf417/PDF417Writer;->encode(Ljava/lang/String;Lcom/google/zxing/BarcodeFormat;IILjava/util/Map;)Lcom/google/zxing/common/BitMatrix;
 
     move-result-object p1
@@ -357,12 +332,10 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/zxing/BarcodeFormat;->PDF_417:Lcom/google/zxing/BarcodeFormat;
 
     if-ne p2, v0, :cond_7
 
-    .line 2
     new-instance v1, Lcom/google/zxing/pdf417/encoder/PDF417;
 
     invoke-direct {v1}, Lcom/google/zxing/pdf417/encoder/PDF417;-><init>()V
@@ -373,7 +346,6 @@
 
     if-eqz p5, :cond_6
 
-    .line 3
     sget-object v2, Lcom/google/zxing/EncodeHintType;->PDF417_COMPACT:Lcom/google/zxing/EncodeHintType;
 
     invoke-interface {p5, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -382,7 +354,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 4
     sget-object v2, Lcom/google/zxing/EncodeHintType;->PDF417_COMPACT:Lcom/google/zxing/EncodeHintType;
 
     invoke-interface {p5, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -403,7 +374,6 @@
 
     invoke-virtual {v1, v2}, Lcom/google/zxing/pdf417/encoder/PDF417;->setCompact(Z)V
 
-    .line 5
     :cond_0
     sget-object v2, Lcom/google/zxing/EncodeHintType;->PDF417_COMPACTION:Lcom/google/zxing/EncodeHintType;
 
@@ -413,7 +383,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 6
     sget-object v2, Lcom/google/zxing/EncodeHintType;->PDF417_COMPACTION:Lcom/google/zxing/EncodeHintType;
 
     invoke-interface {p5, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -430,7 +399,6 @@
 
     invoke-virtual {v1, v2}, Lcom/google/zxing/pdf417/encoder/PDF417;->setCompaction(Lcom/google/zxing/pdf417/encoder/Compaction;)V
 
-    .line 7
     :cond_1
     sget-object v2, Lcom/google/zxing/EncodeHintType;->PDF417_DIMENSIONS:Lcom/google/zxing/EncodeHintType;
 
@@ -440,7 +408,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 8
     sget-object v2, Lcom/google/zxing/EncodeHintType;->PDF417_DIMENSIONS:Lcom/google/zxing/EncodeHintType;
 
     invoke-interface {p5, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -449,30 +416,24 @@
 
     check-cast v2, Lcom/google/zxing/pdf417/encoder/Dimensions;
 
-    .line 9
     invoke-virtual {v2}, Lcom/google/zxing/pdf417/encoder/Dimensions;->getMaxCols()I
 
     move-result v3
 
-    .line 10
     invoke-virtual {v2}, Lcom/google/zxing/pdf417/encoder/Dimensions;->getMinCols()I
 
     move-result v4
 
-    .line 11
     invoke-virtual {v2}, Lcom/google/zxing/pdf417/encoder/Dimensions;->getMaxRows()I
 
     move-result v5
 
-    .line 12
     invoke-virtual {v2}, Lcom/google/zxing/pdf417/encoder/Dimensions;->getMinRows()I
 
     move-result v2
 
-    .line 13
     invoke-virtual {v1, v3, v4, v5, v2}, Lcom/google/zxing/pdf417/encoder/PDF417;->setDimensions(IIII)V
 
-    .line 14
     :cond_2
     sget-object v2, Lcom/google/zxing/EncodeHintType;->MARGIN:Lcom/google/zxing/EncodeHintType;
 
@@ -482,7 +443,6 @@
 
     if-eqz v2, :cond_3
 
-    .line 15
     sget-object p2, Lcom/google/zxing/EncodeHintType;->MARGIN:Lcom/google/zxing/EncodeHintType;
 
     invoke-interface {p5, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -497,7 +457,6 @@
 
     move-result p2
 
-    .line 16
     :cond_3
     sget-object v2, Lcom/google/zxing/EncodeHintType;->ERROR_CORRECTION:Lcom/google/zxing/EncodeHintType;
 
@@ -507,7 +466,6 @@
 
     if-eqz v2, :cond_4
 
-    .line 17
     sget-object v0, Lcom/google/zxing/EncodeHintType;->ERROR_CORRECTION:Lcom/google/zxing/EncodeHintType;
 
     invoke-interface {p5, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -522,7 +480,6 @@
 
     move-result v0
 
-    .line 18
     :cond_4
     sget-object v2, Lcom/google/zxing/EncodeHintType;->CHARACTER_SET:Lcom/google/zxing/EncodeHintType;
 
@@ -532,7 +489,6 @@
 
     if-eqz v2, :cond_5
 
-    .line 19
     sget-object v2, Lcom/google/zxing/EncodeHintType;->CHARACTER_SET:Lcom/google/zxing/EncodeHintType;
 
     invoke-interface {p5, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -547,7 +503,6 @@
 
     move-result-object p5
 
-    .line 20
     invoke-virtual {v1, p5}, Lcom/google/zxing/pdf417/encoder/PDF417;->setEncoding(Ljava/nio/charset/Charset;)V
 
     :cond_5
@@ -569,14 +524,12 @@
 
     move v5, p4
 
-    .line 21
     invoke-static/range {v1 .. v6}, Lcom/google/zxing/pdf417/PDF417Writer;->bitMatrixFromEncoder(Lcom/google/zxing/pdf417/encoder/PDF417;Ljava/lang/String;IIII)Lcom/google/zxing/common/BitMatrix;
 
     move-result-object p1
 
     return-object p1
 
-    .line 22
     :cond_7
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

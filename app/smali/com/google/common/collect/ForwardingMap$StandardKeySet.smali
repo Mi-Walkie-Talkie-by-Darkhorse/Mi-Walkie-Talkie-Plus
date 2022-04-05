@@ -1,6 +1,5 @@
 .class public Lcom/google/common/collect/ForwardingMap$StandardKeySet;
 .super Lcom/google/common/collect/Maps$KeySet;
-.source "ForwardingMap.java"
 
 
 # annotations
@@ -32,10 +31,8 @@
 .method public constructor <init>(Lcom/google/common/collect/ForwardingMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ForwardingMap$StandardKeySet;->this$0:Lcom/google/common/collect/ForwardingMap;
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/collect/Maps$KeySet;-><init>(Ljava/util/Map;)V
 
     return-void

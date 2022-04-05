@@ -1,6 +1,5 @@
 .class final Lno/nordicsemi/android/ble/y1;
 .super Ljava/lang/Object;
-.source "Bytes.java"
 
 
 # direct methods
@@ -23,14 +22,12 @@
 
     if-eqz p0, :cond_1
 
-    .line 1
     array-length v0, p0
 
     if-le p1, v0, :cond_0
 
     goto :goto_0
 
-    .line 2
     :cond_0
     array-length v0, p0
 
@@ -40,12 +37,10 @@
 
     move-result p2
 
-    .line 3
     new-array v0, p2, [B
 
     const/4 v1, 0x0
 
-    .line 4
     invoke-static {p0, p1, v0, v1, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-object v0

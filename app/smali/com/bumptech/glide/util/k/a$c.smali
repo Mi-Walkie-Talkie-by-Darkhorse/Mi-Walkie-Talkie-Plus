@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/util/k/a$c;
 .super Ljava/lang/Object;
-.source "FactoryPools.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/util/k/a$g;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +43,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Ljava/util/List;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/util/k/a$c;->a(Ljava/util/List;)V
@@ -67,7 +64,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
     return-void

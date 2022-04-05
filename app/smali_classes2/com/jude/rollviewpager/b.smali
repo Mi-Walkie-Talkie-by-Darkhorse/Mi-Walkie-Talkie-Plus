@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/jude/rollviewpager/b;
 .super Ljava/lang/Object;
-.source "OnItemClickListener.java"
 
 
 # virtual methods

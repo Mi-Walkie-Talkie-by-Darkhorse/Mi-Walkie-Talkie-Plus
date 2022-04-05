@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;
 .super Lorg/osmdroid/tileprovider/ExpirableBitmapDrawable;
-.source "ReusableBitmapDrawable.java"
 
 
 # instance fields
@@ -13,15 +12,12 @@
 .method public constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lorg/osmdroid/tileprovider/ExpirableBitmapDrawable;-><init>(Landroid/graphics/Bitmap;)V
 
     const/4 p1, 0x0
 
-    .line 2
     iput-boolean p1, p0, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;->mBitmapRecycled:Z
 
-    .line 3
     iput p1, p0, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;->mUsageRefCount:I
 
     return-void
@@ -32,10 +28,8 @@
 .method public beginUsingDrawable()V
     .locals 1
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget v0, p0, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;->mUsageRefCount:I
 
@@ -43,7 +37,6 @@
 
     iput v0, p0, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;->mUsageRefCount:I
 
-    .line 3
     monitor-exit p0
 
     return-void
@@ -61,10 +54,8 @@
 .method public finishUsingDrawable()V
     .locals 2
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget v0, p0, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;->mUsageRefCount:I
 
@@ -74,12 +65,10 @@
 
     if-ltz v0, :cond_0
 
-    .line 3
     monitor-exit p0
 
     return-void
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -92,7 +81,6 @@
     :catchall_0
     move-exception v0
 
-    .line 5
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -103,10 +91,8 @@
 .method public isBitmapValid()Z
     .locals 1
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget-boolean v0, p0, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;->mBitmapRecycled:Z
 
@@ -127,7 +113,6 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -138,10 +123,8 @@
 .method public tryRecycle()Landroid/graphics/Bitmap;
     .locals 1
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget v0, p0, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;->mUsageRefCount:I
 
@@ -149,10 +132,8 @@
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;->mBitmapRecycled:Z
 
-    .line 4
     invoke-virtual {p0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
     move-result-object v0
@@ -161,7 +142,6 @@
 
     return-object v0
 
-    .line 5
     :cond_0
     monitor-exit p0
 

@@ -1,6 +1,5 @@
 .class public La/b/e;
 .super Ljava/lang/Object;
-.source "LruCache.java"
 
 
 # annotations
@@ -45,15 +44,12 @@
 .method public constructor <init>(I)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-lez p1, :cond_0
 
-    .line 2
     iput p1, p0, La/b/e;->c:I
 
-    .line 3
     new-instance p1, Ljava/util/LinkedHashMap;
 
     const/4 v0, 0x0
@@ -68,7 +64,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -87,7 +82,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1, p2}, La/b/e;->b(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
@@ -96,7 +90,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -170,10 +163,8 @@
 
     if-eqz p2, :cond_2
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget v0, p0, La/b/e;->d:I
 
@@ -181,7 +172,6 @@
 
     iput v0, p0, La/b/e;->d:I
 
-    .line 3
     iget v0, p0, La/b/e;->b:I
 
     invoke-direct {p0, p1, p2}, La/b/e;->c(Ljava/lang/Object;Ljava/lang/Object;)I
@@ -192,7 +182,6 @@
 
     iput v0, p0, La/b/e;->b:I
 
-    .line 4
     iget-object v0, p0, La/b/e;->a:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -201,7 +190,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
     iget v1, p0, La/b/e;->b:I
 
     invoke-direct {p0, p1, v0}, La/b/e;->c(Ljava/lang/Object;Ljava/lang/Object;)I
@@ -212,7 +200,6 @@
 
     iput v1, p0, La/b/e;->b:I
 
-    .line 6
     :cond_0
     monitor-exit p0
     :try_end_0
@@ -222,10 +209,8 @@
 
     const/4 v1, 0x0
 
-    .line 7
     invoke-virtual {p0, v1, p1, v0, p2}, La/b/e;->a(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 8
     :cond_1
     iget p1, p0, La/b/e;->c:I
 
@@ -236,7 +221,6 @@
     :catchall_0
     move-exception p1
 
-    .line 9
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -244,7 +228,6 @@
 
     throw p1
 
-    .line 10
     :cond_2
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -258,11 +241,9 @@
 .method public a(I)V
     .locals 4
 
-    .line 11
     :goto_0
     monitor-enter p0
 
-    .line 12
     :try_start_0
     iget v0, p0, La/b/e;->b:I
 
@@ -280,7 +261,6 @@
 
     if-nez v0, :cond_3
 
-    .line 13
     :cond_0
     iget v0, p0, La/b/e;->b:I
 
@@ -296,7 +276,6 @@
 
     goto :goto_1
 
-    .line 14
     :cond_1
     iget-object v0, p0, La/b/e;->a:Ljava/util/LinkedHashMap;
 
@@ -314,22 +293,18 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 15
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 16
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 17
     iget-object v2, p0, La/b/e;->a:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v2, v1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 18
     iget v2, p0, La/b/e;->b:I
 
     invoke-direct {p0, v1, v0}, La/b/e;->c(Ljava/lang/Object;Ljava/lang/Object;)I
@@ -340,7 +315,6 @@
 
     iput v2, p0, La/b/e;->b:I
 
-    .line 19
     iget v2, p0, La/b/e;->f:I
 
     const/4 v3, 0x1
@@ -349,19 +323,16 @@
 
     iput v2, p0, La/b/e;->f:I
 
-    .line 20
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     const/4 v2, 0x0
 
-    .line 21
     invoke-virtual {p0, v3, v1, v0, v2}, La/b/e;->a(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 22
     :cond_2
     :goto_1
     :try_start_1
@@ -369,7 +340,6 @@
 
     return-void
 
-    .line 23
     :cond_3
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -402,7 +372,6 @@
     :catchall_0
     move-exception p1
 
-    .line 24
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -471,10 +440,8 @@
 
     if-eqz p1, :cond_4
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, La/b/e;->a:Ljava/util/LinkedHashMap;
 
@@ -484,19 +451,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget p1, p0, La/b/e;->g:I
 
     add-int/lit8 p1, p1, 0x1
 
     iput p1, p0, La/b/e;->g:I
 
-    .line 4
     monitor-exit p0
 
     return-object v0
 
-    .line 5
     :cond_0
     iget v0, p0, La/b/e;->h:I
 
@@ -504,12 +468,10 @@
 
     iput v0, p0, La/b/e;->h:I
 
-    .line 6
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 7
     invoke-virtual {p0, p1}, La/b/e;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -520,11 +482,9 @@
 
     return-object p1
 
-    .line 8
     :cond_1
     monitor-enter p0
 
-    .line 9
     :try_start_1
     iget v1, p0, La/b/e;->e:I
 
@@ -532,7 +492,6 @@
 
     iput v1, p0, La/b/e;->e:I
 
-    .line 10
     iget-object v1, p0, La/b/e;->a:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -541,14 +500,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 11
     iget-object v2, p0, La/b/e;->a:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v2, p1, v1}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 12
     :cond_2
     iget v2, p0, La/b/e;->b:I
 
@@ -560,7 +517,6 @@
 
     iput v2, p0, La/b/e;->b:I
 
-    .line 13
     :goto_0
     monitor-exit p0
     :try_end_1
@@ -570,12 +526,10 @@
 
     const/4 v2, 0x0
 
-    .line 14
     invoke-virtual {p0, v2, p1, v0, v1}, La/b/e;->a(ZLjava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object v1
 
-    .line 15
     :cond_3
     iget p1, p0, La/b/e;->c:I
 
@@ -586,7 +540,6 @@
     :catchall_0
     move-exception p1
 
-    .line 16
     :try_start_2
     monitor-exit p0
     :try_end_2
@@ -597,7 +550,6 @@
     :catchall_1
     move-exception p1
 
-    .line 17
     :try_start_3
     monitor-exit p0
     :try_end_3
@@ -605,7 +557,6 @@
 
     throw p1
 
-    .line 18
     :cond_4
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -621,7 +572,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget v0, p0, La/b/e;->g:I
 
@@ -633,7 +583,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget v2, p0, La/b/e;->g:I
 
     mul-int/lit8 v2, v2, 0x64
@@ -645,7 +594,6 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 3
     :goto_0
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
@@ -657,7 +605,6 @@
 
     iget v5, p0, La/b/e;->c:I
 
-    .line 4
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
@@ -692,7 +639,6 @@
 
     aput-object v2, v4, v1
 
-    .line 5
     invoke-static {v0, v3, v4}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0

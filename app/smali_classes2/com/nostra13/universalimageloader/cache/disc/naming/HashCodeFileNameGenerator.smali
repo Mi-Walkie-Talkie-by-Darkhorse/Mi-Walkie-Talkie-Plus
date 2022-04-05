@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/cache/disc/naming/HashCodeFileNameGenerator;
 .super Ljava/lang/Object;
-.source "HashCodeFileNameGenerator.java"
 
 # interfaces
 .implements Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -21,7 +19,6 @@
 .method public generate(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
 
     move-result p1

@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/ObservableRefCount$RefConnection;
 .super Ljava/util/concurrent/atomic/AtomicReference;
-.source "ObservableRefCount.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -62,10 +61,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableRefCount$RefConnection;->parent:Lio/reactivex/internal/operators/observable/ObservableRefCount;
 
     return-void
@@ -81,7 +78,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0, p1}, Lio/reactivex/internal/disposables/DisposableHelper;->replace(Ljava/util/concurrent/atomic/AtomicReference;Lio/reactivex/disposables/Disposable;)Z
 
     return-void
@@ -95,7 +91,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Lio/reactivex/disposables/Disposable;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/operators/observable/ObservableRefCount$RefConnection;->accept(Lio/reactivex/disposables/Disposable;)V
@@ -106,7 +101,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableRefCount$RefConnection;->parent:Lio/reactivex/internal/operators/observable/ObservableRefCount;
 
     invoke-virtual {v0, p0}, Lio/reactivex/internal/operators/observable/ObservableRefCount;->timeout(Lio/reactivex/internal/operators/observable/ObservableRefCount$RefConnection;)V

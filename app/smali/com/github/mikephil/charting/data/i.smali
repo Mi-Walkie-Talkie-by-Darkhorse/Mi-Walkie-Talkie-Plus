@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/data/i;
 .super Lcom/github/mikephil/charting/data/b;
-.source "CombinedData.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/github/mikephil/charting/data/b;-><init>()V
 
     return-void
@@ -42,12 +40,10 @@
 .method public a(Lb/a/a/a/d/d;)Lcom/github/mikephil/charting/data/Entry;
     .locals 5
 
-    .line 33
     invoke-virtual {p0}, Lcom/github/mikephil/charting/data/i;->k()Ljava/util/List;
 
     move-result-object v0
 
-    .line 34
     invoke-virtual {p1}, Lb/a/a/a/d/d;->b()I
 
     move-result v1
@@ -62,7 +58,6 @@
 
     return-object v3
 
-    .line 35
     :cond_0
     invoke-virtual {p1}, Lb/a/a/a/d/d;->b()I
 
@@ -74,7 +69,6 @@
 
     check-cast v0, Lcom/github/mikephil/charting/data/h;
 
-    .line 36
     invoke-virtual {p1}, Lb/a/a/a/d/d;->c()I
 
     move-result v1
@@ -87,7 +81,6 @@
 
     return-object v3
 
-    .line 37
     :cond_1
     invoke-virtual {p1}, Lb/a/a/a/d/d;->c()I
 
@@ -97,7 +90,6 @@
 
     move-result-object v0
 
-    .line 38
     invoke-virtual {p1}, Lb/a/a/a/d/d;->g()F
 
     move-result v1
@@ -106,7 +98,6 @@
 
     move-result-object v0
 
-    .line 39
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -124,7 +115,6 @@
 
     check-cast v1, Lcom/github/mikephil/charting/data/Entry;
 
-    .line 40
     invoke-virtual {v1}, Lcom/github/mikephil/charting/data/e;->b()F
 
     move-result v2
@@ -137,7 +127,6 @@
 
     if-eqz v2, :cond_3
 
-    .line 41
     invoke-virtual {p1}, Lb/a/a/a/d/d;->i()F
 
     move-result v2
@@ -158,19 +147,16 @@
 .method public a()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/h;->i:Ljava/util/List;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/github/mikephil/charting/data/h;->i:Ljava/util/List;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/github/mikephil/charting/data/h;->i:Ljava/util/List;
 
@@ -178,38 +164,28 @@
 
     const v0, -0x800001
 
-    .line 4
     iput v0, p0, Lcom/github/mikephil/charting/data/h;->a:F
 
     const v1, 0x7f7fffff    # Float.MAX_VALUE
 
-    .line 5
     iput v1, p0, Lcom/github/mikephil/charting/data/h;->b:F
 
-    .line 6
     iput v0, p0, Lcom/github/mikephil/charting/data/h;->c:F
 
-    .line 7
     iput v1, p0, Lcom/github/mikephil/charting/data/h;->d:F
 
-    .line 8
     iput v0, p0, Lcom/github/mikephil/charting/data/h;->e:F
 
-    .line 9
     iput v1, p0, Lcom/github/mikephil/charting/data/h;->f:F
 
-    .line 10
     iput v0, p0, Lcom/github/mikephil/charting/data/h;->g:F
 
-    .line 11
     iput v1, p0, Lcom/github/mikephil/charting/data/h;->h:F
 
-    .line 12
     invoke-virtual {p0}, Lcom/github/mikephil/charting/data/i;->k()Ljava/util/List;
 
     move-result-object v0
 
-    .line 13
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -228,20 +204,16 @@
 
     check-cast v1, Lcom/github/mikephil/charting/data/h;
 
-    .line 14
     invoke-virtual {v1}, Lcom/github/mikephil/charting/data/h;->a()V
 
-    .line 15
     invoke-virtual {v1}, Lcom/github/mikephil/charting/data/h;->c()Ljava/util/List;
 
     move-result-object v2
 
-    .line 16
     iget-object v3, p0, Lcom/github/mikephil/charting/data/h;->i:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 17
     invoke-virtual {v1}, Lcom/github/mikephil/charting/data/h;->h()F
 
     move-result v2
@@ -252,14 +224,12 @@
 
     if-lez v2, :cond_2
 
-    .line 18
     invoke-virtual {v1}, Lcom/github/mikephil/charting/data/h;->h()F
 
     move-result v2
 
     iput v2, p0, Lcom/github/mikephil/charting/data/h;->a:F
 
-    .line 19
     :cond_2
     invoke-virtual {v1}, Lcom/github/mikephil/charting/data/h;->i()F
 
@@ -271,14 +241,12 @@
 
     if-gez v2, :cond_3
 
-    .line 20
     invoke-virtual {v1}, Lcom/github/mikephil/charting/data/h;->i()F
 
     move-result v2
 
     iput v2, p0, Lcom/github/mikephil/charting/data/h;->b:F
 
-    .line 21
     :cond_3
     invoke-virtual {v1}, Lcom/github/mikephil/charting/data/h;->f()F
 
@@ -290,14 +258,12 @@
 
     if-lez v2, :cond_4
 
-    .line 22
     invoke-virtual {v1}, Lcom/github/mikephil/charting/data/h;->f()F
 
     move-result v2
 
     iput v2, p0, Lcom/github/mikephil/charting/data/h;->c:F
 
-    .line 23
     :cond_4
     invoke-virtual {v1}, Lcom/github/mikephil/charting/data/h;->g()F
 
@@ -309,14 +275,12 @@
 
     if-gez v2, :cond_5
 
-    .line 24
     invoke-virtual {v1}, Lcom/github/mikephil/charting/data/h;->g()F
 
     move-result v2
 
     iput v2, p0, Lcom/github/mikephil/charting/data/h;->d:F
 
-    .line 25
     :cond_5
     iget v2, v1, Lcom/github/mikephil/charting/data/h;->e:F
 
@@ -326,10 +290,8 @@
 
     if-lez v3, :cond_6
 
-    .line 26
     iput v2, p0, Lcom/github/mikephil/charting/data/h;->e:F
 
-    .line 27
     :cond_6
     iget v2, v1, Lcom/github/mikephil/charting/data/h;->f:F
 
@@ -339,10 +301,8 @@
 
     if-gez v3, :cond_7
 
-    .line 28
     iput v2, p0, Lcom/github/mikephil/charting/data/h;->f:F
 
-    .line 29
     :cond_7
     iget v2, v1, Lcom/github/mikephil/charting/data/h;->g:F
 
@@ -352,10 +312,8 @@
 
     if-lez v3, :cond_8
 
-    .line 30
     iput v2, p0, Lcom/github/mikephil/charting/data/h;->g:F
 
-    .line 31
     :cond_8
     iget v1, v1, Lcom/github/mikephil/charting/data/h;->h:F
 
@@ -365,7 +323,6 @@
 
     if-gez v2, :cond_1
 
-    .line 32
     iput v1, p0, Lcom/github/mikephil/charting/data/h;->h:F
 
     goto/16 :goto_0
@@ -377,51 +334,40 @@
 .method public j()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/i;->j:Lcom/github/mikephil/charting/data/j;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/github/mikephil/charting/data/h;->j()V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/github/mikephil/charting/data/i;->k:Lcom/github/mikephil/charting/data/a;
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {v0}, Lcom/github/mikephil/charting/data/h;->j()V
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/i;->m:Lcom/github/mikephil/charting/data/g;
 
     if-eqz v0, :cond_2
 
-    .line 6
     invoke-virtual {v0}, Lcom/github/mikephil/charting/data/h;->j()V
 
-    .line 7
     :cond_2
     iget-object v0, p0, Lcom/github/mikephil/charting/data/i;->l:Lcom/github/mikephil/charting/data/o;
 
     if-eqz v0, :cond_3
 
-    .line 8
     invoke-virtual {v0}, Lcom/github/mikephil/charting/data/h;->j()V
 
-    .line 9
     :cond_3
     iget-object v0, p0, Lcom/github/mikephil/charting/data/i;->n:Lcom/github/mikephil/charting/data/f;
 
     if-eqz v0, :cond_4
 
-    .line 10
     invoke-virtual {v0}, Lcom/github/mikephil/charting/data/h;->j()V
 
-    .line 11
     :cond_4
     invoke-virtual {p0}, Lcom/github/mikephil/charting/data/i;->a()V
 
@@ -439,53 +385,42 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/github/mikephil/charting/data/i;->j:Lcom/github/mikephil/charting/data/j;
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/github/mikephil/charting/data/i;->k:Lcom/github/mikephil/charting/data/a;
 
     if-eqz v1, :cond_1
 
-    .line 5
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 6
     :cond_1
     iget-object v1, p0, Lcom/github/mikephil/charting/data/i;->l:Lcom/github/mikephil/charting/data/o;
 
     if-eqz v1, :cond_2
 
-    .line 7
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 8
     :cond_2
     iget-object v1, p0, Lcom/github/mikephil/charting/data/i;->m:Lcom/github/mikephil/charting/data/g;
 
     if-eqz v1, :cond_3
 
-    .line 9
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 10
     :cond_3
     iget-object v1, p0, Lcom/github/mikephil/charting/data/i;->n:Lcom/github/mikephil/charting/data/f;
 
     if-eqz v1, :cond_4
 
-    .line 11
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_4
@@ -495,7 +430,6 @@
 .method public l()Lcom/github/mikephil/charting/data/a;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/i;->k:Lcom/github/mikephil/charting/data/a;
 
     return-object v0
@@ -504,7 +438,6 @@
 .method public m()Lcom/github/mikephil/charting/data/f;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/i;->n:Lcom/github/mikephil/charting/data/f;
 
     return-object v0
@@ -513,7 +446,6 @@
 .method public n()Lcom/github/mikephil/charting/data/g;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/i;->m:Lcom/github/mikephil/charting/data/g;
 
     return-object v0
@@ -522,7 +454,6 @@
 .method public o()Lcom/github/mikephil/charting/data/j;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/i;->j:Lcom/github/mikephil/charting/data/j;
 
     return-object v0
@@ -531,7 +462,6 @@
 .method public p()Lcom/github/mikephil/charting/data/o;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/i;->l:Lcom/github/mikephil/charting/data/o;
 
     return-object v0

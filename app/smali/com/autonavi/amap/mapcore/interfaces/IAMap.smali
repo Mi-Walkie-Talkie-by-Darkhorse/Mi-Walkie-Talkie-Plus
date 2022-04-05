@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 .super Ljava/lang/Object;
-.source "IAMap.java"
 
 
 # virtual methods

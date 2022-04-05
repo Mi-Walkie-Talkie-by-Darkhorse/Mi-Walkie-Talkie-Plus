@@ -1,6 +1,5 @@
 .class interface abstract Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
 .super Ljava/lang/Object;
-.source "ListenerModelHandler.java"
 
 
 # annotations

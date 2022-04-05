@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/MultimapBuilder$TreeSetSupplier;
 .super Ljava/lang/Object;
-.source "MultimapBuilder.java"
 
 # interfaces
 .implements Lcom/google/common/base/Supplier;
@@ -53,10 +52,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -73,7 +70,6 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MultimapBuilder$TreeSetSupplier;->get()Ljava/util/SortedSet;
 
     move-result-object v0
@@ -91,7 +87,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/util/TreeSet;
 
     iget-object v1, p0, Lcom/google/common/collect/MultimapBuilder$TreeSetSupplier;->comparator:Ljava/util/Comparator;

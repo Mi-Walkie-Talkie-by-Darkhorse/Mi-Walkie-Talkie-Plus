@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/http/Request$Builder;
 .super Ljava/lang/Object;
-.source "Request.java"
 
 
 # annotations
@@ -46,12 +45,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/xiaomi/account/http/Request$Builder;->followRedirects:Z
 
     return-void
@@ -66,7 +63,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -75,11 +71,9 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/xiaomi/account/http/Request$Builder;->uri:Ljava/net/URI;
 
-    .line 3
     invoke-virtual {v0}, Ljava/net/URI;->getQuery()Ljava/lang/String;
 
     move-result-object v1
@@ -90,7 +84,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -110,7 +103,6 @@
 
     move-object v6, v1
 
-    .line 5
     :goto_0
     :try_start_0
     new-instance v1, Ljava/net/URI;
@@ -123,7 +115,6 @@
 
     move-result-object v4
 
-    .line 6
     invoke-virtual {v0}, Ljava/net/URI;->getPath()Ljava/lang/String;
 
     move-result-object v5
@@ -142,7 +133,6 @@
 
     return-object p0
 
-    .line 7
     :catch_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -168,7 +158,6 @@
 .method public build()Lcom/xiaomi/account/http/Request;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/xiaomi/account/http/Request;
 
     const/4 v1, 0x0
@@ -181,7 +170,6 @@
 .method public followRedirects(Z)Lcom/xiaomi/account/http/Request$Builder;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/xiaomi/account/http/Request$Builder;->followRedirects:Z
 
     return-object p0
@@ -204,7 +192,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/http/Request$Builder;->formBody:Ljava/util/Map;
 
     return-object p0
@@ -227,7 +214,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/http/Request$Builder;->headers:Ljava/util/Map;
 
     return-object p0
@@ -236,7 +222,6 @@
 .method public url(Ljava/lang/String;)Lcom/xiaomi/account/http/Request$Builder;
     .locals 3
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/net/URI;
 
@@ -248,7 +233,6 @@
 
     return-object p0
 
-    .line 2
     :catch_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

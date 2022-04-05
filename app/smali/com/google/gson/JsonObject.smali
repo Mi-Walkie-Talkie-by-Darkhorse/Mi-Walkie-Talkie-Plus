@@ -1,6 +1,5 @@
 .class public final Lcom/google/gson/JsonObject;
 .super Lcom/google/gson/JsonElement;
-.source "JsonObject.java"
 
 
 # instance fields
@@ -20,10 +19,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/gson/JsonElement;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-direct {v0}, Lcom/google/gson/internal/LinkedTreeMap;-><init>()V
@@ -38,7 +35,6 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     sget-object p1, Lcom/google/gson/JsonNull;->INSTANCE:Lcom/google/gson/JsonNull;
 
     goto :goto_0
@@ -61,10 +57,8 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     sget-object p2, Lcom/google/gson/JsonNull;->INSTANCE:Lcom/google/gson/JsonNull;
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
@@ -76,7 +70,6 @@
 .method public addProperty(Ljava/lang/String;Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p2}, Lcom/google/gson/JsonObject;->createJsonElement(Ljava/lang/Object;)Lcom/google/gson/JsonElement;
 
     move-result-object p2
@@ -89,7 +82,6 @@
 .method public addProperty(Ljava/lang/String;Ljava/lang/Character;)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p2}, Lcom/google/gson/JsonObject;->createJsonElement(Ljava/lang/Object;)Lcom/google/gson/JsonElement;
 
     move-result-object p2
@@ -102,7 +94,6 @@
 .method public addProperty(Ljava/lang/String;Ljava/lang/Number;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p2}, Lcom/google/gson/JsonObject;->createJsonElement(Ljava/lang/Object;)Lcom/google/gson/JsonElement;
 
     move-result-object p2
@@ -115,7 +106,6 @@
 .method public addProperty(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2}, Lcom/google/gson/JsonObject;->createJsonElement(Ljava/lang/Object;)Lcom/google/gson/JsonElement;
 
     move-result-object p2
@@ -128,7 +118,6 @@
 .method public bridge synthetic deepCopy()Lcom/google/gson/JsonElement;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/gson/JsonObject;->deepCopy()Lcom/google/gson/JsonObject;
 
     move-result-object v0
@@ -139,12 +128,10 @@
 .method public deepCopy()Lcom/google/gson/JsonObject;
     .locals 4
 
-    .line 2
     new-instance v0, Lcom/google/gson/JsonObject;
 
     invoke-direct {v0}, Lcom/google/gson/JsonObject;-><init>()V
 
-    .line 3
     iget-object v1, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-virtual {v1}, Lcom/google/gson/internal/LinkedTreeMap;->entrySet()Ljava/util/Set;
@@ -168,7 +155,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 4
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -206,7 +192,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-virtual {v0}, Lcom/google/gson/internal/LinkedTreeMap;->entrySet()Ljava/util/Set;
@@ -221,7 +206,6 @@
 
     if-eq p1, p0, :cond_1
 
-    .line 1
     instance-of v0, p1, Lcom/google/gson/JsonObject;
 
     if-eqz v0, :cond_0
@@ -232,7 +216,6 @@
 
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
-    .line 2
     invoke-virtual {p1, v0}, Ljava/util/AbstractMap;->equals(Ljava/lang/Object;)Z
 
     move-result p1
@@ -257,7 +240,6 @@
 .method public get(Ljava/lang/String;)Lcom/google/gson/JsonElement;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-virtual {v0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -272,7 +254,6 @@
 .method public getAsJsonArray(Ljava/lang/String;)Lcom/google/gson/JsonArray;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-virtual {v0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -287,7 +268,6 @@
 .method public getAsJsonObject(Ljava/lang/String;)Lcom/google/gson/JsonObject;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-virtual {v0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -302,7 +282,6 @@
 .method public getAsJsonPrimitive(Ljava/lang/String;)Lcom/google/gson/JsonPrimitive;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-virtual {v0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -317,7 +296,6 @@
 .method public has(Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-virtual {v0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->containsKey(Ljava/lang/Object;)Z
@@ -330,7 +308,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-virtual {v0}, Ljava/util/AbstractMap;->hashCode()I
@@ -351,7 +328,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-virtual {v0}, Lcom/google/gson/internal/LinkedTreeMap;->keySet()Ljava/util/Set;
@@ -364,7 +340,6 @@
 .method public remove(Ljava/lang/String;)Lcom/google/gson/JsonElement;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-virtual {v0, p1}, Lcom/google/gson/internal/LinkedTreeMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -379,7 +354,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/gson/JsonObject;->members:Lcom/google/gson/internal/LinkedTreeMap;
 
     invoke-virtual {v0}, Lcom/google/gson/internal/LinkedTreeMap;->size()I

@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/layout/a$a;
 .super Landroid/view/ViewOutlineProvider;
-.source "QMUILayoutHelper.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/layout/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-direct {p0}, Landroid/view/ViewOutlineProvider;-><init>()V
@@ -38,7 +36,6 @@
         value = 0x15
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -53,7 +50,6 @@
 
     goto/16 :goto_3
 
-    .line 2
     :cond_0
     iget-object v2, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
@@ -61,7 +57,6 @@
 
     move-result v2
 
-    .line 3
     iget-object v3, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-static {v3}, Lcom/qmuiteam/qmui/layout/a;->b(Lcom/qmuiteam/qmui/layout/a;)Z
@@ -70,7 +65,6 @@
 
     if-eqz v3, :cond_5
 
-    .line 4
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/layout/a;->c(Lcom/qmuiteam/qmui/layout/a;)I
@@ -96,7 +90,6 @@
 
     goto :goto_2
 
-    .line 5
     :cond_1
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
@@ -120,7 +113,6 @@
 
     goto :goto_2
 
-    .line 6
     :cond_2
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
@@ -136,7 +128,6 @@
 
     goto :goto_1
 
-    .line 7
     :cond_3
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
@@ -165,12 +156,10 @@
 
     move-object v5, p2
 
-    .line 8
     invoke-virtual/range {v5 .. v10}, Landroid/graphics/Outline;->setRoundRect(IIIIF)V
 
     return-void
 
-    .line 9
     :cond_5
     iget-object v3, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
@@ -192,7 +181,6 @@
 
     move-result v1
 
-    .line 10
     iget-object v4, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-static {v4}, Lcom/qmuiteam/qmui/layout/a;->f(Lcom/qmuiteam/qmui/layout/a;)I
@@ -207,7 +195,6 @@
 
     sub-int/2addr v0, v5
 
-    .line 11
     iget-object v5, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-static {v5}, Lcom/qmuiteam/qmui/layout/a;->h(Lcom/qmuiteam/qmui/layout/a;)Z
@@ -216,14 +203,12 @@
 
     if-eqz v5, :cond_6
 
-    .line 12
     invoke-virtual {p1}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v5
 
     add-int/2addr v4, v5
 
-    .line 13
     invoke-virtual {p1}, Landroid/view/View;->getPaddingTop()I
 
     move-result v5
@@ -232,7 +217,6 @@
 
     add-int/lit8 v5, v4, 0x1
 
-    .line 14
     invoke-virtual {p1}, Landroid/view/View;->getPaddingRight()I
 
     move-result v6
@@ -245,7 +229,6 @@
 
     add-int/lit8 v5, v3, 0x1
 
-    .line 15
     invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
 
     move-result p1
@@ -265,14 +248,12 @@
 
     move v6, v4
 
-    .line 16
     iget-object p1, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/layout/a;->i(Lcom/qmuiteam/qmui/layout/a;)F
 
     move-result p1
 
-    .line 17
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/a$a;->a:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/layout/a;->j(Lcom/qmuiteam/qmui/layout/a;)I
@@ -283,13 +264,11 @@
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 18
     :cond_7
     invoke-virtual {p2, p1}, Landroid/graphics/Outline;->setAlpha(F)V
 
     if-gtz v2, :cond_8
 
-    .line 19
     invoke-virtual {p2, v6, v7, v8, v9}, Landroid/graphics/Outline;->setRect(IIII)V
 
     goto :goto_3
@@ -299,7 +278,6 @@
 
     move-object v5, p2
 
-    .line 20
     invoke-virtual/range {v5 .. v10}, Landroid/graphics/Outline;->setRoundRect(IIIIF)V
 
     :cond_9

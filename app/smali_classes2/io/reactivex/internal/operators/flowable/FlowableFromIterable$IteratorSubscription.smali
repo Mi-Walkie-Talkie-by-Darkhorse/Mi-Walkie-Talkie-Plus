@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableFromIterable$IteratorSubscription;
 .super Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;
-.source "FlowableFromIterable.java"
 
 
 # annotations
@@ -52,10 +51,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p2}, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;-><init>(Ljava/util/Iterator;)V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$IteratorSubscription;->downstream:Lc/a/c;
 
     return-void
@@ -66,13 +63,10 @@
 .method fastPath()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->it:Ljava/util/Iterator;
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$IteratorSubscription;->downstream:Lc/a/c;
 
-    .line 3
     :cond_0
     iget-boolean v2, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->cancelled:Z
 
@@ -80,7 +74,6 @@
 
     return-void
 
-    .line 4
     :cond_1
     :try_start_0
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -89,7 +82,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 5
     iget-boolean v3, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->cancelled:Z
 
     if-eqz v3, :cond_2
@@ -99,7 +91,6 @@
     :cond_2
     if-nez v2, :cond_3
 
-    .line 6
     new-instance v0, Ljava/lang/NullPointerException;
 
     const-string v2, "Iterator.next() returned a null value"
@@ -110,18 +101,15 @@
 
     return-void
 
-    .line 7
     :cond_3
     invoke-interface {v1, v2}, Lc/a/c;->onNext(Ljava/lang/Object;)V
 
-    .line 8
     iget-boolean v2, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->cancelled:Z
 
     if-eqz v2, :cond_4
 
     return-void
 
-    .line 9
     :cond_4
     :try_start_1
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -132,12 +120,10 @@
 
     if-nez v2, :cond_0
 
-    .line 10
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->cancelled:Z
 
     if-nez v0, :cond_5
 
-    .line 11
     invoke-interface {v1}, Lc/a/c;->onComplete()V
 
     :cond_5
@@ -146,10 +132,8 @@
     :catchall_0
     move-exception v0
 
-    .line 12
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 13
     invoke-interface {v1, v0}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
     return-void
@@ -157,10 +141,8 @@
     :catchall_1
     move-exception v0
 
-    .line 14
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 15
     invoke-interface {v1, v0}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
     return-void
@@ -169,10 +151,8 @@
 .method slowPath(J)V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->it:Ljava/util/Iterator;
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$IteratorSubscription;->downstream:Lc/a/c;
 
     const-wide/16 v2, 0x0
@@ -186,14 +166,12 @@
 
     if-eqz v6, :cond_8
 
-    .line 3
     iget-boolean v6, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->cancelled:Z
 
     if-eqz v6, :cond_2
 
     return-void
 
-    .line 4
     :cond_2
     :try_start_0
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -202,7 +180,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 5
     iget-boolean v7, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->cancelled:Z
 
     if-eqz v7, :cond_3
@@ -212,7 +189,6 @@
     :cond_3
     if-nez v6, :cond_4
 
-    .line 6
     new-instance p1, Ljava/lang/NullPointerException;
 
     const-string p2, "Iterator.next() returned a null value"
@@ -223,18 +199,15 @@
 
     return-void
 
-    .line 7
     :cond_4
     invoke-interface {v1, v6}, Lc/a/c;->onNext(Ljava/lang/Object;)V
 
-    .line 8
     iget-boolean v6, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->cancelled:Z
 
     if-eqz v6, :cond_5
 
     return-void
 
-    .line 9
     :cond_5
     :try_start_1
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -245,12 +218,10 @@
 
     if-nez v6, :cond_7
 
-    .line 10
     iget-boolean p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFromIterable$BaseRangeSubscription;->cancelled:Z
 
     if-nez p1, :cond_6
 
-    .line 11
     invoke-interface {v1}, Lc/a/c;->onComplete()V
 
     :cond_6
@@ -266,10 +237,8 @@
     :catchall_0
     move-exception p1
 
-    .line 12
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 13
     invoke-interface {v1, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
     return-void
@@ -277,15 +246,12 @@
     :catchall_1
     move-exception p1
 
-    .line 14
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 15
     invoke-interface {v1, p1}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
     return-void
 
-    .line 16
     :cond_8
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
@@ -297,7 +263,6 @@
 
     neg-long p1, v4
 
-    .line 17
     invoke-virtual {p0, p1, p2}, Ljava/util/concurrent/atomic/AtomicLong;->addAndGet(J)J
 
     move-result-wide p1

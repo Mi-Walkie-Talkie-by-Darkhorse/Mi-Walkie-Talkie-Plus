@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/j/b$d$a;
 .super Ljava/lang/Object;
-.source "ByteArrayLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/b$b;
@@ -30,7 +29,6 @@
 .method constructor <init>(Lcom/bumptech/glide/load/j/b$d;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public a([B)Ljava/io/InputStream;
     .locals 1
 
-    .line 2
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
     invoke-direct {v0, p1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
@@ -60,7 +57,6 @@
         }
     .end annotation
 
-    .line 3
     const-class v0, Ljava/io/InputStream;
 
     return-object v0
@@ -69,7 +65,6 @@
 .method public bridge synthetic a([B)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/j/b$d$a;->a([B)Ljava/io/InputStream;
 
     move-result-object p1

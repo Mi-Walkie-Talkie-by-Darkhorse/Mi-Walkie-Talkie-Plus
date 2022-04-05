@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/zxing/MultiFormatWriter$1;
 .super Ljava/lang/Object;
-.source "MultiFormatWriter.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/zxing/BarcodeFormat;->values()[Lcom/google/zxing/BarcodeFormat;
 
     move-result-object v0

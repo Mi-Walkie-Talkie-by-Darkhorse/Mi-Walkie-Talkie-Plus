@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$a;
 .super Landroid/os/CountDownTimer;
-.source "MobileRegisterActivity.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;JJ)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$a;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
-    .line 2
     invoke-direct {p0, p2, p3, p4, p5}, Landroid/os/CountDownTimer;-><init>(JJ)V
 
     return-void
@@ -36,7 +33,6 @@
 .method public onFinish()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$a;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->i(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;)Landroid/widget/Button;
@@ -61,7 +57,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
-    .line 2
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$a;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->j(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;)V
@@ -72,7 +67,6 @@
 .method public onTick(J)V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$a;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->i(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;)Landroid/widget/Button;
@@ -105,7 +99,6 @@
 
     const-string v2, "("
 
-    .line 2
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-wide/16 v2, 0x3e8
@@ -122,7 +115,6 @@
 
     move-result-object p1
 
-    .line 3
     invoke-virtual {v0, p1}, Landroid/widget/Button;->setText(Ljava/lang/CharSequence;)V
 
     return-void

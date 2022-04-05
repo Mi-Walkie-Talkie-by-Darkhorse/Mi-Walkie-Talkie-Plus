@@ -1,6 +1,5 @@
 .class public abstract Lcom/autonavi/ae/gmap/MapMessage;
 .super Ljava/lang/Object;
-.source "MapMessage.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

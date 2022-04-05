@@ -1,6 +1,5 @@
 .class public Lb/a/a/a/c/c;
 .super Ljava/lang/Object;
-.source "DefaultValueFormatter.java"
 
 # interfaces
 .implements Lb/a/a/a/c/f;
@@ -14,10 +13,8 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p0, p1}, Lb/a/a/a/c/c;->a(I)V
 
     return-void
@@ -28,7 +25,6 @@
 .method public a(FLcom/github/mikephil/charting/data/Entry;ILb/a/a/a/g/j;)Ljava/lang/String;
     .locals 0
 
-    .line 5
     iget-object p2, p0, Lb/a/a/a/c/c;->a:Ljava/text/DecimalFormat;
 
     float-to-double p3, p1
@@ -43,7 +39,6 @@
 .method public a(I)V
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuffer;
 
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
@@ -57,20 +52,17 @@
 
     const-string v2, "."
 
-    .line 2
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     :cond_0
     const-string v2, "0"
 
-    .line 3
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 4
     :cond_1
     new-instance p1, Ljava/text/DecimalFormat;
 

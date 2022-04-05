@@ -1,6 +1,5 @@
 .class synthetic Lio/reactivex/internal/operators/flowable/FlowableOnBackpressureBufferStrategy$1;
 .super Ljava/lang/Object;
-.source "FlowableOnBackpressureBufferStrategy.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lio/reactivex/BackpressureOverflowStrategy;->values()[Lio/reactivex/BackpressureOverflowStrategy;
 
     move-result-object v0

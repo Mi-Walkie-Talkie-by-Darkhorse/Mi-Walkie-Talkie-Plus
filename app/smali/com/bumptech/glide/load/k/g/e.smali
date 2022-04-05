@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/k/g/e;
 .super Ljava/lang/Object;
-.source "ResourceTranscoder.java"
 
 
 # annotations

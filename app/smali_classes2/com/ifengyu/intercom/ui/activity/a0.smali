@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/ui/activity/a0;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Ljava/lang/Runnable;

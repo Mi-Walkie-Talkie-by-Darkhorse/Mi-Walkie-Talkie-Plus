@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$g;
 .super Ljava/lang/Object;
-.source "MapFragment.java"
 
 # interfaces
 .implements Landroid/widget/PopupWindow$OnDismissListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$g;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onDismiss()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$g;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;

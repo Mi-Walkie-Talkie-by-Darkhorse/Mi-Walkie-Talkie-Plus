@@ -1,6 +1,5 @@
 .class synthetic Lcom/bumptech/glide/util/k/c$a;
 .super Ljava/lang/Object;
-.source "StateVerifier.java"
 
 
 # annotations

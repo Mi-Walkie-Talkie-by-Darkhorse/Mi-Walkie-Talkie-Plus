@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable;
 .super Lio/reactivex/Observable;
-.source "AdapterViewItemLongClickObservable.kt"
 
 
 # annotations
@@ -104,7 +103,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable;->view:Landroid/widget/AdapterView;
@@ -136,7 +134,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-static {p1}, Lcom/jakewharton/rxbinding3/internal/Preconditions;->checkMainThread(Lio/reactivex/Observer;)Z
 
     move-result v0
@@ -145,7 +142,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable$Listener;
 
@@ -155,10 +151,8 @@
 
     invoke-direct {v0, v1, p1, v2}, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable$Listener;-><init>(Landroid/widget/AdapterView;Lio/reactivex/Observer;Lkotlin/jvm/a/a;)V
 
-    .line 3
     invoke-interface {p1, v0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 4
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewItemLongClickObservable;->view:Landroid/widget/AdapterView;
 
     invoke-virtual {p1, v0}, Landroid/widget/AdapterView;->setOnItemLongClickListener(Landroid/widget/AdapterView$OnItemLongClickListener;)V

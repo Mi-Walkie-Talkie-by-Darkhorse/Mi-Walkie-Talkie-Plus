@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lio/reactivex/annotations/SchedulerSupport;
 .super Ljava/lang/Object;
-.source "SchedulerSupport.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

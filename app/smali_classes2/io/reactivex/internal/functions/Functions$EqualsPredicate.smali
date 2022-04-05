@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/functions/Functions$EqualsPredicate;
 .super Ljava/lang/Object;
-.source "Functions.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Predicate;
@@ -47,10 +46,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/functions/Functions$EqualsPredicate;->value:Ljava/lang/Object;
 
     return-void
@@ -72,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/functions/Functions$EqualsPredicate;->value:Ljava/lang/Object;
 
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z

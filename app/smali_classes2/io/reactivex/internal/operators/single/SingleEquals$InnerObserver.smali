@@ -1,6 +1,5 @@
 .class Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;
 .super Ljava/lang/Object;
-.source "SingleEquals.java"
 
 # interfaces
 .implements Lio/reactivex/SingleObserver;
@@ -67,22 +66,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->index:I
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->set:Lio/reactivex/disposables/CompositeDisposable;
 
-    .line 4
     iput-object p3, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->values:[Ljava/lang/Object;
 
-    .line 5
     iput-object p4, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->downstream:Lio/reactivex/SingleObserver;
 
-    .line 6
     iput-object p5, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->count:Ljava/util/concurrent/atomic/AtomicInteger;
 
     return-void
@@ -93,7 +86,6 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 3
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->count:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -105,12 +97,10 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 2
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
     return-void
 
-    .line 3
     :cond_1
     iget-object v2, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->count:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -120,12 +110,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->set:Lio/reactivex/disposables/CompositeDisposable;
 
     invoke-virtual {v0}, Lio/reactivex/disposables/CompositeDisposable;->dispose()V
 
-    .line 5
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->downstream:Lio/reactivex/SingleObserver;
 
     invoke-interface {v0, p1}, Lio/reactivex/SingleObserver;->onError(Ljava/lang/Throwable;)V
@@ -136,7 +124,6 @@
 .method public onSubscribe(Lio/reactivex/disposables/Disposable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->set:Lio/reactivex/disposables/CompositeDisposable;
 
     invoke-virtual {v0, p1}, Lio/reactivex/disposables/CompositeDisposable;->add(Lio/reactivex/disposables/Disposable;)Z
@@ -152,14 +139,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->values:[Ljava/lang/Object;
 
     iget v1, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->index:I
 
     aput-object p1, v0, v1
 
-    .line 2
     iget-object p1, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->count:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
@@ -170,7 +155,6 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 3
     iget-object p1, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->downstream:Lio/reactivex/SingleObserver;
 
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleEquals$InnerObserver;->values:[Ljava/lang/Object;

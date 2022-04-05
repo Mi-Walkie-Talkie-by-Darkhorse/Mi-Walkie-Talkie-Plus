@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/mixed/FlowableSwitchMapSingle;
 .super Lio/reactivex/Flowable;
-.source "FlowableSwitchMapSingle.java"
 
 
 # annotations
@@ -62,16 +61,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Flowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/mixed/FlowableSwitchMapSingle;->source:Lio/reactivex/Flowable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/mixed/FlowableSwitchMapSingle;->mapper:Lio/reactivex/functions/Function;
 
-    .line 4
     iput-boolean p3, p0, Lio/reactivex/internal/operators/mixed/FlowableSwitchMapSingle;->delayErrors:Z
 
     return-void
@@ -89,7 +84,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/mixed/FlowableSwitchMapSingle;->source:Lio/reactivex/Flowable;
 
     new-instance v1, Lio/reactivex/internal/operators/mixed/FlowableSwitchMapSingle$SwitchMapSingleSubscriber;

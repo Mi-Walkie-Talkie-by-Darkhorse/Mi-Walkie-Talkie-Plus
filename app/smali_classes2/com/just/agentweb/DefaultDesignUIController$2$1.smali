@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultDesignUIController$2$1;
 .super Ljava/lang/Object;
-.source "DefaultDesignUIController.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/just/agentweb/DefaultDesignUIController$2;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultDesignUIController$2$1;->this$1:Lcom/just/agentweb/DefaultDesignUIController$2;
 
     iput p2, p0, Lcom/just/agentweb/DefaultDesignUIController$2$1;->val$i:I
@@ -42,7 +40,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/just/agentweb/DefaultDesignUIController$2$1;->this$1:Lcom/just/agentweb/DefaultDesignUIController$2;
 
     iget-object p1, p1, Lcom/just/agentweb/DefaultDesignUIController$2;->this$0:Lcom/just/agentweb/DefaultDesignUIController;
@@ -67,7 +64,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/just/agentweb/DefaultDesignUIController$2$1;->this$1:Lcom/just/agentweb/DefaultDesignUIController$2;
 
     iget-object p1, p1, Lcom/just/agentweb/DefaultDesignUIController$2;->this$0:Lcom/just/agentweb/DefaultDesignUIController;
@@ -78,18 +74,15 @@
 
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
-    .line 3
     :cond_0
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object p1
 
-    .line 4
     iget v0, p0, Lcom/just/agentweb/DefaultDesignUIController$2$1;->val$i:I
 
     iput v0, p1, Landroid/os/Message;->what:I
 
-    .line 5
     iget-object v0, p0, Lcom/just/agentweb/DefaultDesignUIController$2$1;->this$1:Lcom/just/agentweb/DefaultDesignUIController$2;
 
     iget-object v0, v0, Lcom/just/agentweb/DefaultDesignUIController$2;->val$callback:Landroid/os/Handler$Callback;

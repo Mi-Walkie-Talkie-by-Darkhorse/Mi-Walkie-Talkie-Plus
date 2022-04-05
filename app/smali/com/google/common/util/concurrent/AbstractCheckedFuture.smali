@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/util/concurrent/AbstractCheckedFuture;
 .super Lcom/google/common/util/concurrent/ForwardingListenableFuture$SimpleForwardingListenableFuture;
-.source "AbstractCheckedFuture.java"
 
 # interfaces
 .implements Lcom/google/common/util/concurrent/CheckedFuture;
@@ -36,7 +35,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/ForwardingListenableFuture$SimpleForwardingListenableFuture;-><init>(Lcom/google/common/util/concurrent/ListenableFuture;)V
 
     return-void
@@ -58,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/ForwardingFuture;->get()Ljava/lang/Object;
 
@@ -73,7 +70,6 @@
     :catch_0
     move-exception v0
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/google/common/util/concurrent/AbstractCheckedFuture;->mapException(Ljava/lang/Exception;)Ljava/lang/Exception;
 
     move-result-object v0
@@ -83,7 +79,6 @@
     :catch_1
     move-exception v0
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/google/common/util/concurrent/AbstractCheckedFuture;->mapException(Ljava/lang/Exception;)Ljava/lang/Exception;
 
     move-result-object v0
@@ -93,14 +88,12 @@
     :catch_2
     move-exception v0
 
-    .line 4
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 5
     invoke-virtual {p0, v0}, Lcom/google/common/util/concurrent/AbstractCheckedFuture;->mapException(Ljava/lang/Exception;)Ljava/lang/Exception;
 
     move-result-object v0
@@ -127,7 +120,6 @@
         }
     .end annotation
 
-    .line 6
     :try_start_0
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/util/concurrent/ForwardingFuture;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
 
@@ -142,7 +134,6 @@
     :catch_0
     move-exception p1
 
-    .line 7
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/AbstractCheckedFuture;->mapException(Ljava/lang/Exception;)Ljava/lang/Exception;
 
     move-result-object p1
@@ -152,7 +143,6 @@
     :catch_1
     move-exception p1
 
-    .line 8
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/AbstractCheckedFuture;->mapException(Ljava/lang/Exception;)Ljava/lang/Exception;
 
     move-result-object p1
@@ -162,14 +152,12 @@
     :catch_2
     move-exception p1
 
-    .line 9
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p2
 
     invoke-virtual {p2}, Ljava/lang/Thread;->interrupt()V
 
-    .line 10
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/AbstractCheckedFuture;->mapException(Ljava/lang/Exception;)Ljava/lang/Exception;
 
     move-result-object p1

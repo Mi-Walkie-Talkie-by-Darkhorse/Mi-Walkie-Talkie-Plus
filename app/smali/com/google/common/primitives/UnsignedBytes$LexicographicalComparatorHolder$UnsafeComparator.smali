@@ -1,6 +1,5 @@
 .class final enum Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
 .super Ljava/lang/Enum;
-.source "UnsignedBytes.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -46,7 +45,6 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1
     const-class v0, [B
 
     new-instance v1, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
@@ -65,10 +63,8 @@
 
     aput-object v1, v4, v2
 
-    .line 2
     sput-object v4, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->$VALUES:[Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
 
-    .line 3
     invoke-static {}, Ljava/nio/ByteOrder;->nativeOrder()Ljava/nio/ByteOrder;
 
     move-result-object v1
@@ -81,21 +77,18 @@
 
     sput-boolean v1, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->BIG_ENDIAN:Z
 
-    .line 4
     invoke-static {}, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->getUnsafe()Lsun/misc/Unsafe;
 
     move-result-object v1
 
     sput-object v1, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->theUnsafe:Lsun/misc/Unsafe;
 
-    .line 5
     invoke-virtual {v1, v0}, Lsun/misc/Unsafe;->arrayBaseOffset(Ljava/lang/Class;)I
 
     move-result v1
 
     sput v1, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->BYTE_ARRAY_BASE_OFFSET:I
 
-    .line 6
     sget-object v1, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->theUnsafe:Lsun/misc/Unsafe;
 
     invoke-virtual {v1, v0}, Lsun/misc/Unsafe;->arrayIndexScale(Ljava/lang/Class;)I
@@ -106,7 +99,6 @@
 
     return-void
 
-    .line 7
     :cond_0
     new-instance v0, Ljava/lang/AssertionError;
 
@@ -123,7 +115,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -132,7 +123,6 @@
 .method private static getUnsafe()Lsun/misc/Unsafe;
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {}, Lsun/misc/Unsafe;->getUnsafe()Lsun/misc/Unsafe;
 
@@ -142,7 +132,6 @@
 
     return-object v0
 
-    .line 2
     :catch_0
     :try_start_1
     new-instance v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator$1;
@@ -162,7 +151,6 @@
     :catch_1
     move-exception v0
 
-    .line 3
     new-instance v1, Ljava/lang/RuntimeException;
 
     invoke-virtual {v0}, Ljava/security/PrivilegedActionException;->getCause()Ljava/lang/Throwable;
@@ -179,7 +167,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -194,7 +181,6 @@
 .method public static values()[Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->$VALUES:[Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;
 
     invoke-virtual {v0}, [Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->clone()Ljava/lang/Object;
@@ -211,7 +197,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, [B
 
     check-cast p2, [B
@@ -226,7 +211,6 @@
 .method public compare([B[B)I
     .locals 10
 
-    .line 2
     array-length v0, p1
 
     array-length v1, p2
@@ -235,7 +219,6 @@
 
     move-result v0
 
-    .line 3
     div-int/lit8 v1, v0, 0x8
 
     const/4 v2, 0x0
@@ -245,7 +228,6 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 4
     sget-object v3, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->theUnsafe:Lsun/misc/Unsafe;
 
     sget v4, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->BYTE_ARRAY_BASE_OFFSET:I
@@ -260,7 +242,6 @@
 
     move-result-wide v3
 
-    .line 5
     sget-object v5, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->theUnsafe:Lsun/misc/Unsafe;
 
     sget v8, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->BYTE_ARRAY_BASE_OFFSET:I
@@ -277,12 +258,10 @@
 
     if-eqz v7, :cond_1
 
-    .line 6
     sget-boolean p1, Lcom/google/common/primitives/UnsignedBytes$LexicographicalComparatorHolder$UnsafeComparator;->BIG_ENDIAN:Z
 
     if-eqz p1, :cond_0
 
-    .line 7
     invoke-static {v3, v4, v5, v6}, Lcom/google/common/primitives/UnsignedLongs;->compare(JJ)I
 
     move-result p1
@@ -292,7 +271,6 @@
     :cond_0
     xor-long p1, v3, v5
 
-    .line 8
     invoke-static {p1, p2}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result p1
@@ -324,7 +302,6 @@
     :goto_1
     if-ge v3, v0, :cond_4
 
-    .line 9
     aget-byte v1, p1, v3
 
     aget-byte v2, p2, v3
@@ -342,7 +319,6 @@
 
     goto :goto_1
 
-    .line 10
     :cond_4
     array-length p1, p1
 

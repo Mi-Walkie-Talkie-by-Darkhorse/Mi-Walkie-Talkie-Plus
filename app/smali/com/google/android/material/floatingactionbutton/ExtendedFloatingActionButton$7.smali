@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$7;
 .super Landroid/util/Property;
-.source "ExtendedFloatingActionButton.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
 .method constructor <init>(Ljava/lang/Class;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
     return-void
@@ -44,7 +42,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->x(Landroid/view/View;)I
 
     move-result p1
@@ -67,7 +64,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     check-cast p1, Landroid/view/View;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$7;->get(Landroid/view/View;)Ljava/lang/Float;
@@ -88,27 +84,22 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->y(Landroid/view/View;)I
 
     move-result v0
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/View;->getPaddingTop()I
 
     move-result v1
 
-    .line 4
     invoke-virtual {p2}, Ljava/lang/Float;->intValue()I
 
     move-result p2
 
-    .line 5
     invoke-virtual {p1}, Landroid/view/View;->getPaddingBottom()I
 
     move-result v2
 
-    .line 6
     invoke-static {p1, v0, v1, p2, v2}, Landroidx/core/view/ViewCompat;->b(Landroid/view/View;IIII)V
 
     return-void
@@ -125,7 +116,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Landroid/view/View;
 
     check-cast p2, Ljava/lang/Float;

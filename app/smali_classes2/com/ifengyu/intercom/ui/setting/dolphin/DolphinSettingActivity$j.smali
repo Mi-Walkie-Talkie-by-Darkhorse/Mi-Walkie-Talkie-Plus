@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$j;
 .super Ljava/lang/Object;
-.source "DolphinSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$j;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$j;->a:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$j;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$j;->a:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;

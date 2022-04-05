@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/btle/c;
 .super Ljava/lang/Object;
-.source "BtOperationLock.java"
 
 
 # static fields
@@ -13,7 +12,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/locks/ReentrantLock;
 
     const/4 v1, 0x1
@@ -22,7 +20,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/node/btle/c;->a:Ljava/util/concurrent/locks/ReentrantLock;
 
-    .line 2
     sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     const-wide/16 v1, 0x1
@@ -44,7 +41,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     sget-object v0, Lcom/ifengyu/intercom/node/btle/c;->a:Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -60,7 +56,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/ifengyu/intercom/node/btle/LockAcquireFailException;
 
@@ -74,14 +69,12 @@
 
     sget-wide v4, Lcom/ifengyu/intercom/node/btle/c;->b:J
 
-    .line 3
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v4
 
     aput-object v4, v2, v3
 
-    .line 4
     invoke-static {v1, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
@@ -95,14 +88,12 @@
     :catch_0
     move-exception v0
 
-    .line 5
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v1
 
     invoke-virtual {v1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 6
     new-instance v1, Ljava/lang/RuntimeException;
 
     invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -113,7 +104,6 @@
 .method protected static b()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/node/btle/c;->a:Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->unlock()V

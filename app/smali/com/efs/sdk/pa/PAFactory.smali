@@ -1,6 +1,5 @@
 .class public Lcom/efs/sdk/pa/PAFactory;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations
@@ -64,7 +63,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
@@ -95,31 +93,22 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p3, p0, Lcom/efs/sdk/pa/PAFactory;->mReporterFactory:Lcom/efs/sdk/pa/config/IEfsReporter;
 
-    .line 4
     iput-object p5, p0, Lcom/efs/sdk/pa/PAFactory;->mSerial:Ljava/lang/String;
 
-    .line 5
     iput-object p6, p0, Lcom/efs/sdk/pa/PAFactory;->mExtend:Ljava/util/HashMap;
 
-    .line 6
     iput-object p7, p0, Lcom/efs/sdk/pa/PAFactory;->mSver:Ljava/lang/String;
 
-    .line 7
     iput-object p1, p0, Lcom/efs/sdk/pa/PAFactory;->mContext:Landroid/content/Context;
 
-    .line 8
     iput-object p10, p0, Lcom/efs/sdk/pa/PAFactory;->mTraceListener:Lcom/efs/sdk/pa/PATraceListener;
 
-    .line 9
     iput-wide p8, p0, Lcom/efs/sdk/pa/PAFactory;->mTimeOutTime:J
 
-    .line 10
     new-instance p5, Lcom/efs/sdk/pa/config/ConfigManager;
 
     invoke-direct {p5, p1, p2, p3, p4}, Lcom/efs/sdk/pa/config/ConfigManager;-><init>(Landroid/content/Context;Lcom/efs/sdk/pa/config/PackageLevel;Lcom/efs/sdk/pa/config/IEfsReporter;Z)V
@@ -132,7 +121,6 @@
 .method synthetic constructor <init>(Landroid/content/Context;Lcom/efs/sdk/pa/config/PackageLevel;Lcom/efs/sdk/pa/config/IEfsReporter;ZLjava/lang/String;Ljava/util/HashMap;Ljava/lang/String;JLcom/efs/sdk/pa/PATraceListener;Lcom/efs/sdk/pa/PAFactory$1;)V
     .locals 0
 
-    .line 1
     invoke-direct/range {p0 .. p10}, Lcom/efs/sdk/pa/PAFactory;-><init>(Landroid/content/Context;Lcom/efs/sdk/pa/config/PackageLevel;Lcom/efs/sdk/pa/config/IEfsReporter;ZLjava/lang/String;Ljava/util/HashMap;Ljava/lang/String;JLcom/efs/sdk/pa/PATraceListener;)V
 
     return-void
@@ -143,7 +131,6 @@
 .method public getConfigManager()Lcom/efs/sdk/pa/config/ConfigManager;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/pa/PAFactory;->mConfigManager:Lcom/efs/sdk/pa/config/ConfigManager;
 
     return-object v0
@@ -161,7 +148,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/pa/PAFactory;->mExtend:Ljava/util/HashMap;
 
     return-object v0
@@ -172,7 +158,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     sget-object v0, Lcom/efs/sdk/pa/PAFactory;->sThreadLocal:Ljava/lang/ThreadLocal;
 
@@ -184,7 +169,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/efs/sdk/pa/a/c;
 
     iget-object v1, p0, Lcom/efs/sdk/pa/PAFactory;->mConfigManager:Lcom/efs/sdk/pa/config/ConfigManager;
@@ -195,7 +179,6 @@
 
     invoke-direct {v0, v1}, Lcom/efs/sdk/pa/a/c;-><init>(Z)V
 
-    .line 3
     iget-object v1, p0, Lcom/efs/sdk/pa/PAFactory;->mContext:Landroid/content/Context;
 
     new-instance v2, Lcom/efs/sdk/pa/a;
@@ -206,14 +189,12 @@
 
     invoke-interface {v0, v1, v2, v3, v4}, Lcom/efs/sdk/pa/PA;->registerPAANRListener(Landroid/content/Context;Lcom/efs/sdk/pa/PAANRListener;J)V
 
-    .line 4
     sget-object v1, Lcom/efs/sdk/pa/PAFactory;->sThreadLocal:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1, v0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     :cond_0
     monitor-exit p0
 
@@ -230,12 +211,10 @@
 .method public getReporter()Lcom/efs/sdk/base/EfsReporter;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/pa/PAFactory;->mReporter:Lcom/efs/sdk/base/EfsReporter;
 
     if-nez v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/efs/sdk/pa/PAFactory;->mReporterFactory:Lcom/efs/sdk/pa/config/IEfsReporter;
 
     if-eqz v0, :cond_0
@@ -252,7 +231,6 @@
     :goto_0
     iput-object v0, p0, Lcom/efs/sdk/pa/PAFactory;->mReporter:Lcom/efs/sdk/base/EfsReporter;
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/efs/sdk/pa/PAFactory;->mReporter:Lcom/efs/sdk/base/EfsReporter;
 
@@ -262,7 +240,6 @@
 .method public getSerial()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/pa/PAFactory;->mSerial:Ljava/lang/String;
 
     return-object v0
@@ -271,7 +248,6 @@
 .method public getSver()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/pa/PAFactory;->mSver:Ljava/lang/String;
 
     return-object v0
@@ -280,7 +256,6 @@
 .method public getTraceListener()Lcom/efs/sdk/pa/PATraceListener;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/pa/PAFactory;->mTraceListener:Lcom/efs/sdk/pa/PATraceListener;
 
     return-object v0

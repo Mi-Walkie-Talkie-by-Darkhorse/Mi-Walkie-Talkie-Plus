@@ -1,6 +1,5 @@
 .class public abstract Lio/reactivex/observers/BaseTestConsumer;
 .super Ljava/lang/Object;
-.source "BaseTestConsumer.java"
 
 # interfaces
 .implements Lio/reactivex/disposables/Disposable;
@@ -67,24 +66,20 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/util/VolatileSizeArrayList;
 
     invoke-direct {v0}, Lio/reactivex/internal/util/VolatileSizeArrayList;-><init>()V
 
     iput-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
-    .line 3
     new-instance v0, Lio/reactivex/internal/util/VolatileSizeArrayList;
 
     invoke-direct {v0}, Lio/reactivex/internal/util/VolatileSizeArrayList;-><init>()V
 
     iput-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
-    .line 4
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
 
     const/4 v1, 0x1
@@ -101,7 +96,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -148,7 +142,6 @@
         }
     .end annotation
 
-    .line 1
     iget-wide v0, p0, Lio/reactivex/observers/BaseTestConsumer;->completions:J
 
     const-wide/16 v2, 0x0
@@ -165,7 +158,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -190,7 +182,6 @@
     :cond_1
     const-string v0, "Not completed"
 
-    .line 3
     invoke-virtual {p0, v0}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object v0
@@ -206,22 +197,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->assertSubscribed()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Lio/reactivex/observers/BaseTestConsumer;->assertNoValues()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Lio/reactivex/observers/BaseTestConsumer;->assertNoErrors()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Lio/reactivex/observers/BaseTestConsumer;->assertNotComplete()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
@@ -240,7 +227,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -251,7 +237,6 @@
 
     const/4 v1, 0x0
 
-    .line 4
     iget-object v2, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -273,7 +258,6 @@
 
     check-cast v3, Ljava/lang/Throwable;
 
-    .line 5
     :try_start_0
     invoke-interface {p1, v3}, Lio/reactivex/functions/Predicate;->test(Ljava/lang/Object;)Z
 
@@ -290,7 +274,6 @@
     :catch_0
     move-exception p1
 
-    .line 6
     invoke-static {p1}, Lio/reactivex/internal/util/ExceptionHelper;->wrapOrThrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     move-result-object p1
@@ -308,7 +291,6 @@
     :cond_2
     const-string p1, "Error present but other errors as well"
 
-    .line 7
     invoke-virtual {p0, p1}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object p1
@@ -318,7 +300,6 @@
     :cond_3
     const-string p1, "Error not present"
 
-    .line 8
     invoke-virtual {p0, p1}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object p1
@@ -328,7 +309,6 @@
     :cond_4
     const-string p1, "No errors"
 
-    .line 9
     invoke-virtual {p0, p1}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object p1
@@ -348,7 +328,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p1}, Lio/reactivex/internal/functions/Functions;->isInstanceOf(Ljava/lang/Class;)Lio/reactivex/functions/Predicate;
 
     move-result-object p1
@@ -370,7 +349,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/reactivex/internal/functions/Functions;->equalsWith(Ljava/lang/Object;)Lio/reactivex/functions/Predicate;
 
     move-result-object p1
@@ -392,7 +370,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -405,7 +382,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
     const/4 v1, 0x0
@@ -416,12 +392,10 @@
 
     check-cast v0, Ljava/lang/Throwable;
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
@@ -430,7 +404,6 @@
 
     return-object p0
 
-    .line 5
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -461,7 +434,6 @@
     :cond_1
     const-string p1, "Multiple errors"
 
-    .line 6
     invoke-virtual {p0, p1}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object p1
@@ -471,7 +443,6 @@
     :cond_2
     const-string p1, "No errors"
 
-    .line 7
     invoke-virtual {p0, p1}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object p1
@@ -490,22 +461,18 @@
         }
     .end annotation
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->assertSubscribed()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
 
-    .line 6
     invoke-virtual {v0, p2}, Lio/reactivex/observers/BaseTestConsumer;->assertValues([Ljava/lang/Object;)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p2
 
-    .line 7
     invoke-virtual {p2, p1}, Lio/reactivex/observers/BaseTestConsumer;->assertError(Lio/reactivex/functions/Predicate;)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 8
     invoke-virtual {p1}, Lio/reactivex/observers/BaseTestConsumer;->assertNotComplete()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
@@ -525,22 +492,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->assertSubscribed()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p2}, Lio/reactivex/observers/BaseTestConsumer;->assertValues([Ljava/lang/Object;)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p2
 
-    .line 3
     invoke-virtual {p2, p1}, Lio/reactivex/observers/BaseTestConsumer;->assertError(Ljava/lang/Class;)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1}, Lio/reactivex/observers/BaseTestConsumer;->assertNotComplete()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
@@ -562,27 +525,22 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->assertSubscribed()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p3}, Lio/reactivex/observers/BaseTestConsumer;->assertValues([Ljava/lang/Object;)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p3
 
-    .line 3
     invoke-virtual {p3, p1}, Lio/reactivex/observers/BaseTestConsumer;->assertError(Ljava/lang/Class;)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1, p2}, Lio/reactivex/observers/BaseTestConsumer;->assertErrorMessage(Ljava/lang/String;)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1}, Lio/reactivex/observers/BaseTestConsumer;->assertNotComplete()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
@@ -600,7 +558,6 @@
         }
     .end annotation
 
-    .line 5
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -612,14 +569,12 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 6
     iget-object v2, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 7
     :try_start_0
     invoke-interface {p1, v2}, Lio/reactivex/functions/Predicate;->test(Ljava/lang/Object;)Z
 
@@ -631,7 +586,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -672,7 +626,6 @@
     :catch_0
     move-exception p1
 
-    .line 9
     invoke-static {p1}, Lio/reactivex/internal/util/ExceptionHelper;->wrapOrThrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     move-result-object p1
@@ -691,7 +644,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -703,14 +655,12 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 2
     iget-object v2, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 3
     invoke-static {v2, p1}, Lio/reactivex/internal/functions/ObjectHelper;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
@@ -721,7 +671,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -769,7 +718,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -780,7 +728,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -813,7 +760,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/observers/BaseTestConsumer;->timeout:Z
 
     if-nez v0, :cond_0
@@ -823,7 +769,6 @@
     :cond_0
     const-string v0, "Timeout?!"
 
-    .line 2
     invoke-virtual {p0, v0}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object v0
@@ -841,7 +786,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Lio/reactivex/observers/BaseTestConsumer;->assertValueCount(I)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
@@ -857,7 +801,6 @@
         }
     .end annotation
 
-    .line 1
     iget-wide v0, p0, Lio/reactivex/observers/BaseTestConsumer;->completions:J
 
     const-wide/16 v2, 0x1
@@ -870,7 +813,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -895,7 +837,6 @@
     :cond_1
     const-string v0, "Completed!"
 
-    .line 3
     invoke-virtual {p0, v0}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object v0
@@ -919,7 +860,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->done:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->getCount()J
@@ -937,7 +877,6 @@
     :cond_0
     const-string v0, "Subscriber terminated!"
 
-    .line 2
     invoke-virtual {p0, v0}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object v0
@@ -953,22 +892,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->assertSubscribed()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1}, Lio/reactivex/observers/BaseTestConsumer;->assertValues([Ljava/lang/Object;)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 3
     invoke-virtual {p1}, Lio/reactivex/observers/BaseTestConsumer;->assertNoErrors()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1}, Lio/reactivex/observers/BaseTestConsumer;->assertComplete()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
@@ -992,7 +927,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->done:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->getCount()J
@@ -1005,7 +939,6 @@
 
     if-nez v4, :cond_4
 
-    .line 2
     iget-wide v0, p0, Lio/reactivex/observers/BaseTestConsumer;->completions:J
 
     const-wide/16 v4, 0x1
@@ -1014,7 +947,6 @@
 
     if-gtz v6, :cond_3
 
-    .line 3
     iget-object v4, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
     invoke-interface {v4}, Ljava/util/List;->size()I
@@ -1033,7 +965,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1059,7 +990,6 @@
     :goto_0
     return-object p0
 
-    .line 5
     :cond_2
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1081,7 +1011,6 @@
 
     throw v0
 
-    .line 6
     :cond_3
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1106,7 +1035,6 @@
     :cond_4
     const-string v0, "Subscriber still running!"
 
-    .line 7
     invoke-virtual {p0, v0}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object v0
@@ -1122,7 +1050,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/observers/BaseTestConsumer;->timeout:Z
 
     if-eqz v0, :cond_0
@@ -1132,7 +1059,6 @@
     :cond_0
     const-string v0, "No timeout?!"
 
-    .line 2
     invoke-virtual {p0, v0}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object v0
@@ -1152,10 +1078,8 @@
 
     const/4 v0, 0x0
 
-    .line 6
     invoke-virtual {p0, v0, p1}, Lio/reactivex/observers/BaseTestConsumer;->assertValueAt(ILio/reactivex/functions/Predicate;)Lio/reactivex/observers/BaseTestConsumer;
 
-    .line 7
     iget-object p1, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -1171,7 +1095,6 @@
     :cond_0
     const-string p1, "Value present but other values as well"
 
-    .line 8
     invoke-virtual {p0, p1}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object p1
@@ -1187,7 +1110,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1202,7 +1124,6 @@
 
     if-ne v0, v3, :cond_1
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     const/4 v3, 0x0
@@ -1211,7 +1132,6 @@
 
     move-result-object v0
 
-    .line 3
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
@@ -1220,7 +1140,6 @@
 
     return-object p0
 
-    .line 4
     :cond_0
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -1252,7 +1171,6 @@
 
     throw p1
 
-    .line 5
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1293,7 +1211,6 @@
         }
     .end annotation
 
-    .line 7
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1302,7 +1219,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 8
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1311,7 +1227,6 @@
 
     if-ge p1, v0, :cond_1
 
-    .line 9
     :try_start_0
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
@@ -1332,7 +1247,6 @@
     :cond_0
     const-string p1, "Value not present"
 
-    .line 10
     invoke-virtual {p0, p1}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object p1
@@ -1342,14 +1256,12 @@
     :catch_0
     move-exception p1
 
-    .line 11
     invoke-static {p1}, Lio/reactivex/internal/util/ExceptionHelper;->wrapOrThrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     move-result-object p1
 
     throw p1
 
-    .line 12
     :cond_1
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -1374,7 +1286,6 @@
     :cond_2
     const-string p1, "No values"
 
-    .line 13
     invoke-virtual {p0, p1}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object p1
@@ -1390,7 +1301,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1401,14 +1311,12 @@
 
     if-ge p1, v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 3
     invoke-static {p2, p1}, Lio/reactivex/internal/functions/ObjectHelper;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
@@ -1417,7 +1325,6 @@
 
     return-object p0
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1453,7 +1360,6 @@
 
     throw p1
 
-    .line 5
     :cond_1
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -1478,7 +1384,6 @@
     :cond_2
     const-string p1, "No values"
 
-    .line 6
     invoke-virtual {p0, p1}, Lio/reactivex/observers/BaseTestConsumer;->fail(Ljava/lang/String;)Ljava/lang/AssertionError;
 
     move-result-object p1
@@ -1494,7 +1399,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1505,7 +1409,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1544,27 +1447,23 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
     const/4 v1, 0x0
 
-    .line 3
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
-    .line 4
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v3
@@ -1575,18 +1474,15 @@
 
     goto :goto_1
 
-    .line 5
     :cond_0
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 6
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 7
     invoke-static {v2, v3}, Lio/reactivex/internal/functions/ObjectHelper;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
@@ -1597,7 +1493,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -1649,7 +1544,6 @@
 
     return-object p0
 
-    .line 9
     :cond_3
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1673,7 +1567,6 @@
 
     throw p1
 
-    .line 10
     :cond_4
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1708,22 +1601,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->assertSubscribed()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1}, Lio/reactivex/observers/BaseTestConsumer;->assertValueSequence(Ljava/lang/Iterable;)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 3
     invoke-virtual {p1}, Lio/reactivex/observers/BaseTestConsumer;->assertNoErrors()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1}, Lio/reactivex/observers/BaseTestConsumer;->assertNotComplete()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
@@ -1741,19 +1630,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->assertNoValues()Lio/reactivex/observers/BaseTestConsumer;
 
     return-object p0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
@@ -1772,7 +1658,6 @@
 
     move-result-object v1
 
-    .line 4
     invoke-interface {p1, v1}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
     move-result v2
@@ -1781,7 +1666,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -1821,22 +1705,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->assertSubscribed()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1}, Lio/reactivex/observers/BaseTestConsumer;->assertValueSet(Ljava/util/Collection;)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 3
     invoke-virtual {p1}, Lio/reactivex/observers/BaseTestConsumer;->assertNoErrors()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1}, Lio/reactivex/observers/BaseTestConsumer;->assertNotComplete()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
@@ -1852,14 +1732,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v0
 
-    .line 2
     array-length v1, p1
 
     const-string v2, ", Actual: "
@@ -1871,17 +1749,14 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 3
     iget-object v3, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 4
     aget-object v4, p1, v1
 
-    .line 5
     invoke-static {v4, v3}, Lio/reactivex/internal/functions/ObjectHelper;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
@@ -1892,7 +1767,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -1935,7 +1809,6 @@
     :cond_1
     return-object p0
 
-    .line 7
     :cond_2
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1988,22 +1861,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->assertSubscribed()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1}, Lio/reactivex/observers/BaseTestConsumer;->assertValues([Ljava/lang/Object;)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 3
     invoke-virtual {p1}, Lio/reactivex/observers/BaseTestConsumer;->assertNoErrors()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1}, Lio/reactivex/observers/BaseTestConsumer;->assertNotComplete()Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
@@ -2025,7 +1894,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->done:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->getCount()J
@@ -2040,7 +1908,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->done:Ljava/util/concurrent/CountDownLatch;
 
@@ -2057,7 +1924,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->done:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->getCount()J
@@ -2092,7 +1958,6 @@
     :goto_1
     xor-int/lit8 p2, p1, 0x1
 
-    .line 4
     iput-boolean p2, p0, Lio/reactivex/observers/BaseTestConsumer;->timeout:Z
 
     return p1
@@ -2106,7 +1971,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;->SLEEP_10MS:Lio/reactivex/observers/BaseTestConsumer$TestWaitStrategy;
 
     const-wide/16 v1, 0x1388
@@ -2130,7 +1994,6 @@
 
     const-wide/16 v0, 0x1388
 
-    .line 2
     invoke-virtual {p0, p1, p2, v0, v1}, Lio/reactivex/observers/BaseTestConsumer;->awaitCount(ILjava/lang/Runnable;J)Lio/reactivex/observers/BaseTestConsumer;
 
     move-result-object p1
@@ -2148,7 +2011,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -2160,7 +2022,6 @@
 
     if-lez v4, :cond_0
 
-    .line 4
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v4
@@ -2173,12 +2034,10 @@
 
     const/4 p1, 0x1
 
-    .line 5
     iput-boolean p1, p0, Lio/reactivex/observers/BaseTestConsumer;->timeout:Z
 
     goto :goto_1
 
-    .line 6
     :cond_0
     iget-object v4, p0, Lio/reactivex/observers/BaseTestConsumer;->done:Ljava/util/concurrent/CountDownLatch;
 
@@ -2192,7 +2051,6 @@
 
     goto :goto_1
 
-    .line 7
     :cond_1
     iget-object v2, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
@@ -2205,7 +2063,6 @@
     :goto_1
     return-object p0
 
-    .line 8
     :cond_2
     invoke-interface {p2}, Ljava/lang/Runnable;->run()V
 
@@ -2222,7 +2079,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->done:Ljava/util/concurrent/CountDownLatch;
 
@@ -2234,10 +2090,8 @@
 
     const/4 p1, 0x1
 
-    .line 2
     iput-boolean p1, p0, Lio/reactivex/observers/BaseTestConsumer;->timeout:Z
 
-    .line 3
     invoke-interface {p0}, Lio/reactivex/disposables/Disposable;->dispose()V
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
@@ -2248,10 +2102,8 @@
     :catch_0
     move-exception p1
 
-    .line 4
     invoke-interface {p0}, Lio/reactivex/disposables/Disposable;->dispose()V
 
-    .line 5
     invoke-static {p1}, Lio/reactivex/internal/util/ExceptionHelper;->wrapOrThrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     move-result-object p1
@@ -2262,7 +2114,6 @@
 .method public final awaitTerminalEvent()Z
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->await()Lio/reactivex/observers/BaseTestConsumer;
     :try_end_0
@@ -2272,7 +2123,6 @@
 
     return v0
 
-    .line 2
     :catch_0
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -2288,7 +2138,6 @@
 .method public final awaitTerminalEvent(JLjava/util/concurrent/TimeUnit;)Z
     .locals 0
 
-    .line 3
     :try_start_0
     invoke-virtual {p0, p1, p2, p3}, Lio/reactivex/observers/BaseTestConsumer;->await(JLjava/util/concurrent/TimeUnit;)Z
 
@@ -2298,7 +2147,6 @@
 
     return p1
 
-    .line 4
     :catch_0
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -2321,7 +2169,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lio/reactivex/observers/BaseTestConsumer;->timeout:Z
 
     return-object p0
@@ -2330,7 +2177,6 @@
 .method public final completions()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lio/reactivex/observers/BaseTestConsumer;->completions:J
 
     return-wide v0
@@ -2339,7 +2185,6 @@
 .method public final errorCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -2360,7 +2205,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
     return-object v0
@@ -2369,7 +2213,6 @@
 .method protected final fail(Ljava/lang/String;)Ljava/lang/AssertionError;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
@@ -2380,17 +2223,14 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string p1, " ("
 
-    .line 3
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string p1, "latch = "
 
-    .line 4
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object p1, p0, Lio/reactivex/observers/BaseTestConsumer;->done:Ljava/util/concurrent/CountDownLatch;
@@ -2407,7 +2247,6 @@
 
     const-string v1, "values = "
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object v1, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
@@ -2422,7 +2261,6 @@
 
     const-string v1, "errors = "
 
-    .line 6
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-object v1, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
@@ -2437,24 +2275,20 @@
 
     const-string p1, "completions = "
 
-    .line 7
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget-wide v1, p0, Lio/reactivex/observers/BaseTestConsumer;->completions:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 8
     iget-boolean p1, p0, Lio/reactivex/observers/BaseTestConsumer;->timeout:Z
 
     if-eqz p1, :cond_0
 
     const-string p1, ", timeout!"
 
-    .line 9
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 10
     :cond_0
     invoke-interface {p0}, Lio/reactivex/disposables/Disposable;->isDisposed()Z
 
@@ -2464,10 +2298,8 @@
 
     const-string p1, ", disposed!"
 
-    .line 11
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 12
     :cond_1
     iget-object p1, p0, Lio/reactivex/observers/BaseTestConsumer;->tag:Ljava/lang/CharSequence;
 
@@ -2475,19 +2307,15 @@
 
     const-string v1, ", tag = "
 
-    .line 13
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 14
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
 
     :cond_2
     const/16 p1, 0x29
 
-    .line 15
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 16
     new-instance p1, Ljava/lang/AssertionError;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -2496,7 +2324,6 @@
 
     invoke-direct {p1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
-    .line 17
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
@@ -2505,7 +2332,6 @@
 
     if-nez v0, :cond_4
 
-    .line 18
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -2516,7 +2342,6 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 19
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->errors:Ljava/util/List;
 
     const/4 v1, 0x0
@@ -2531,7 +2356,6 @@
 
     goto :goto_0
 
-    .line 20
     :cond_3
     new-instance v0, Lio/reactivex/exceptions/CompositeException;
 
@@ -2539,7 +2363,6 @@
 
     invoke-direct {v0, v1}, Lio/reactivex/exceptions/CompositeException;-><init>(Ljava/lang/Iterable;)V
 
-    .line 21
     invoke-virtual {p1, v0}, Ljava/lang/AssertionError;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     :cond_4
@@ -2559,33 +2382,28 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->values()Ljava/util/List;
 
     move-result-object v1
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/observers/BaseTestConsumer;->errors()Ljava/util/List;
 
     move-result-object v1
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 4
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     const-wide/16 v2, 0x0
 
-    .line 5
     :goto_0
     iget-wide v4, p0, Lio/reactivex/observers/BaseTestConsumer;->completions:J
 
@@ -2593,7 +2411,6 @@
 
     if-gez v6, :cond_0
 
-    .line 6
     invoke-static {}, Lio/reactivex/Notification;->createOnComplete()Lio/reactivex/Notification;
 
     move-result-object v4
@@ -2606,7 +2423,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -2616,7 +2432,6 @@
 .method public final isTerminated()Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->done:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->getCount()J
@@ -2643,7 +2458,6 @@
 .method public final isTimeout()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/observers/BaseTestConsumer;->timeout:Z
 
     return v0
@@ -2652,7 +2466,6 @@
 .method public final lastThread()Ljava/lang/Thread;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->lastThread:Ljava/lang/Thread;
 
     return-object v0
@@ -2661,7 +2474,6 @@
 .method public final valueCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -2681,7 +2493,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/BaseTestConsumer;->values:Ljava/util/List;
 
     return-object v0
@@ -2697,7 +2508,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/reactivex/observers/BaseTestConsumer;->tag:Ljava/lang/CharSequence;
 
     return-object p0

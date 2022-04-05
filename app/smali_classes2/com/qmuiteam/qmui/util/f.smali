@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/util/f;
 .super Ljava/lang/Object;
-.source "QMUIKeyboardHelper.java"
 
 
 # direct methods
@@ -13,7 +12,6 @@
 
     return p0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -25,14 +23,12 @@
 
     const-string v1, "input_method"
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object p0

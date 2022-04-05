@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/internal/utils/g;
 .super Ljava/lang/Object;
-.source "ProcessUtil.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 
     const-string v0, "\nexit\n"
 
-    .line 1
     invoke-virtual {v0}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v0
@@ -28,7 +26,6 @@
 
     new-array v0, v0, [B
 
-    .line 2
     sput-object v0, Lcom/umeng/commonsdk/internal/utils/g;->c:[B
 
     return-void
@@ -37,7 +34,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +44,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     new-instance v1, Ljava/lang/ProcessBuilder;
 
@@ -58,12 +53,10 @@
 
     invoke-direct {v1, v2}, Ljava/lang/ProcessBuilder;-><init>([Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {v1, p0}, Ljava/lang/ProcessBuilder;->command([Ljava/lang/String;)Ljava/lang/ProcessBuilder;
 
     move-result-object p0
 
-    .line 3
     invoke-virtual {p0}, Ljava/lang/ProcessBuilder;->start()Ljava/lang/Process;
 
     move-result-object p0
@@ -72,7 +65,6 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_e
     .catchall {:try_start_0 .. :try_end_0} :catchall_6
 
-    .line 4
     :try_start_1
     invoke-virtual {p0}, Ljava/lang/Process;->getOutputStream()Ljava/io/OutputStream;
 
@@ -82,7 +74,6 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_c
     .catchall {:try_start_1 .. :try_end_1} :catchall_5
 
-    .line 5
     :try_start_2
     invoke-virtual {p0}, Ljava/lang/Process;->getInputStream()Ljava/io/InputStream;
 
@@ -92,7 +83,6 @@
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_a
     .catchall {:try_start_2 .. :try_end_2} :catchall_4
 
-    .line 6
     :try_start_3
     invoke-virtual {p0}, Ljava/lang/Process;->getErrorStream()Ljava/io/InputStream;
 
@@ -102,19 +92,15 @@
     .catch Ljava/lang/Exception; {:try_start_3 .. :try_end_3} :catch_8
     .catchall {:try_start_3 .. :try_end_3} :catchall_3
 
-    .line 7
     :try_start_4
     sget-object v4, Lcom/umeng/commonsdk/internal/utils/g;->b:[B
 
     invoke-virtual {v1, v4}, Ljava/io/OutputStream;->write([B)V
 
-    .line 8
     invoke-virtual {v1}, Ljava/io/OutputStream;->flush()V
 
-    .line 9
     invoke-virtual {p0}, Ljava/lang/Process;->waitFor()I
 
-    .line 10
     new-instance v4, Ljava/io/InputStreamReader;
 
     invoke-direct {v4, v2}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
@@ -123,7 +109,6 @@
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_6
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 11
     :try_start_5
     new-instance v5, Ljava/io/BufferedReader;
 
@@ -133,7 +118,6 @@
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_4
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 12
     :try_start_6
     invoke-virtual {v5}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
@@ -141,7 +125,6 @@
 
     if-eqz v6, :cond_0
 
-    .line 13
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -150,16 +133,13 @@
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_2
     .catchall {:try_start_6 .. :try_end_6} :catchall_0
 
-    .line 14
     :try_start_7
     invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 15
     sget-object v6, Lcom/umeng/commonsdk/internal/utils/g;->a:Ljava/lang/String;
 
     invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 16
     :goto_0
     invoke-virtual {v5}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
@@ -167,10 +147,8 @@
 
     if-eqz v6, :cond_1
 
-    .line 17
     invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 18
     sget-object v6, Lcom/umeng/commonsdk/internal/utils/g;->a:Ljava/lang/String;
 
     invoke-virtual {v7, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -180,7 +158,6 @@
     :cond_0
     move-object v7, v0
 
-    .line 19
     :cond_1
     :goto_1
     sget-object v6, Lcom/umeng/commonsdk/internal/utils/g;->c:[B
@@ -197,13 +174,11 @@
 
     goto :goto_1
 
-    .line 20
     :cond_2
     invoke-static {v1, v3, v2, v4, v5}, Lcom/umeng/commonsdk/internal/utils/g;->a(Ljava/io/OutputStream;Ljava/io/InputStream;Ljava/io/InputStream;Ljava/io/InputStreamReader;Ljava/io/BufferedReader;)V
 
     if-eqz p0, :cond_4
 
-    .line 21
     :goto_2
     invoke-static {p0}, Lcom/umeng/commonsdk/internal/utils/g;->c(Ljava/lang/Process;)V
 
@@ -368,16 +343,13 @@
 
     move-object p0, v5
 
-    .line 22
     :goto_3
     invoke-static {v1, v3, v2, v4, v5}, Lcom/umeng/commonsdk/internal/utils/g;->a(Ljava/io/OutputStream;Ljava/io/InputStream;Ljava/io/InputStream;Ljava/io/InputStreamReader;Ljava/io/BufferedReader;)V
 
     if-eqz p0, :cond_3
 
-    .line 23
     invoke-static {p0}, Lcom/umeng/commonsdk/internal/utils/g;->c(Ljava/lang/Process;)V
 
-    .line 24
     :cond_3
     throw v0
 
@@ -401,7 +373,6 @@
     :goto_8
     move-object v7, v5
 
-    .line 25
     :goto_9
     invoke-static {v1, v3, v2, v4, v5}, Lcom/umeng/commonsdk/internal/utils/g;->a(Ljava/io/OutputStream;Ljava/io/InputStream;Ljava/io/InputStream;Ljava/io/InputStreamReader;Ljava/io/BufferedReader;)V
 
@@ -442,7 +413,6 @@
 
     return-object v0
 
-    .line 26
     :cond_5
     invoke-virtual {v7}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -456,7 +426,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 27
     :try_start_0
     invoke-virtual {p0}, Ljava/io/OutputStream;->close()V
     :try_end_0
@@ -471,7 +440,6 @@
     :goto_0
     if-eqz p1, :cond_1
 
-    .line 28
     :try_start_1
     invoke-virtual {p1}, Ljava/io/InputStream;->close()V
     :try_end_1
@@ -486,7 +454,6 @@
     :goto_1
     if-eqz p2, :cond_2
 
-    .line 29
     :try_start_2
     invoke-virtual {p2}, Ljava/io/InputStream;->close()V
     :try_end_2
@@ -501,7 +468,6 @@
     :goto_2
     if-eqz p3, :cond_3
 
-    .line 30
     :try_start_3
     invoke-virtual {p3}, Ljava/io/InputStreamReader;->close()V
     :try_end_3
@@ -516,7 +482,6 @@
     :goto_3
     if-eqz p4, :cond_4
 
-    .line 31
     :try_start_4
     invoke-virtual {p4}, Ljava/io/BufferedReader;->close()V
     :try_end_4
@@ -530,14 +495,12 @@
 .method private static a(Ljava/lang/Process;)V
     .locals 1
 
-    .line 32
     invoke-static {p0}, Lcom/umeng/commonsdk/internal/utils/g;->b(Ljava/lang/Process;)I
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 33
     :try_start_0
     invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
     :try_end_0
@@ -545,7 +508,6 @@
 
     goto :goto_0
 
-    .line 34
     :catch_0
     :try_start_1
     invoke-virtual {p0}, Ljava/lang/Process;->destroy()V
@@ -561,7 +523,6 @@
 .method private static b(Ljava/lang/Process;)I
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -569,7 +530,6 @@
     :try_start_0
     const-string v0, "="
 
-    .line 2
     invoke-virtual {p0, v0}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v0
@@ -578,17 +538,14 @@
 
     const-string v1, "]"
 
-    .line 3
     invoke-virtual {p0, v1}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 4
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 5
     invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result p0
@@ -608,7 +565,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Process;->exitValue()I
 
@@ -616,14 +572,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {p0}, Lcom/umeng/commonsdk/internal/utils/g;->a(Ljava/lang/Process;)V
     :try_end_0
     .catch Ljava/lang/IllegalThreadStateException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 3
     :catch_0
     invoke-static {p0}, Lcom/umeng/commonsdk/internal/utils/g;->a(Ljava/lang/Process;)V
 

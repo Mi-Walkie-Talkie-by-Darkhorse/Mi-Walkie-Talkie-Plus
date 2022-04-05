@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;
 .super Landroid/webkit/WebChromeClient;
-.source "WebViewActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-direct {p0}, Landroid/webkit/WebChromeClient;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;Lcom/ifengyu/intercom/ui/activity/WebViewActivity$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;-><init>(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)V
 
     return-void
@@ -44,7 +41,6 @@
 .method public onProgressChanged(Landroid/webkit/WebView;I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->e(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/widget/ProgressBar;
@@ -61,7 +57,6 @@
 
     if-lt p2, v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->f(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Z
@@ -70,14 +65,12 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     const/4 v1, 0x1
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->a(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;Z)Z
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->e(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/widget/ProgressBar;
@@ -86,7 +79,6 @@
 
     invoke-virtual {v0, p2}, Landroid/widget/ProgressBar;->setProgress(I)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->e(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/widget/ProgressBar;
@@ -101,13 +93,11 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {v0, p2}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->c(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;I)V
 
-    .line 7
     :goto_0
     invoke-super {p0, p1, p2}, Landroid/webkit/WebChromeClient;->onProgressChanged(Landroid/webkit/WebView;I)V
 
@@ -117,10 +107,8 @@
 .method public onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/webkit/WebChromeClient;->onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
 
-    .line 2
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -139,7 +127,6 @@
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->g(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/widget/TextView;
@@ -148,7 +135,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 4
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result p1
@@ -163,7 +149,6 @@
 
     if-nez p1, :cond_0
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/WebViewActivity;->g(Lcom/ifengyu/intercom/ui/activity/WebViewActivity;)Landroid/widget/TextView;
@@ -174,7 +159,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/WebViewActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/WebViewActivity;
 

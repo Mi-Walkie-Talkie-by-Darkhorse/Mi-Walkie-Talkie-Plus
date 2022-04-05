@@ -1,6 +1,5 @@
 .class Landroidx/core/view/accessibility/c$a;
 .super Landroid/view/accessibility/AccessibilityNodeProvider;
-.source "AccessibilityNodeProviderCompat.java"
 
 
 # annotations
@@ -26,10 +25,8 @@
 .method constructor <init>(Landroidx/core/view/accessibility/c;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/view/accessibility/AccessibilityNodeProvider;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/view/accessibility/c$a;->a:Landroidx/core/view/accessibility/c;
 
     return-void
@@ -40,10 +37,8 @@
 .method public createAccessibilityNodeInfo(I)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/accessibility/c$a;->a:Landroidx/core/view/accessibility/c;
 
-    .line 2
     invoke-virtual {v0, p1}, Landroidx/core/view/accessibility/c;->a(I)Landroidx/core/view/accessibility/b;
 
     move-result-object p1
@@ -54,7 +49,6 @@
 
     return-object p1
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Landroidx/core/view/accessibility/b;->y()Landroid/view/accessibility/AccessibilityNodeInfo;
 
@@ -76,10 +70,8 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/accessibility/c$a;->a:Landroidx/core/view/accessibility/c;
 
-    .line 2
     invoke-virtual {v0, p1, p2}, Landroidx/core/view/accessibility/c;->a(Ljava/lang/String;I)Ljava/util/List;
 
     move-result-object p1
@@ -90,13 +82,11 @@
 
     return-object p1
 
-    .line 3
     :cond_0
     new-instance p2, Ljava/util/ArrayList;
 
     invoke-direct {p2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 4
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -106,14 +96,12 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 5
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroidx/core/view/accessibility/b;
 
-    .line 6
     invoke-virtual {v2}, Landroidx/core/view/accessibility/b;->y()Landroid/view/accessibility/AccessibilityNodeInfo;
 
     move-result-object v2
@@ -131,7 +119,6 @@
 .method public performAction(IILandroid/os/Bundle;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/accessibility/c$a;->a:Landroidx/core/view/accessibility/c;
 
     invoke-virtual {v0, p1, p2, p3}, Landroidx/core/view/accessibility/c;->a(IILandroid/os/Bundle;)Z

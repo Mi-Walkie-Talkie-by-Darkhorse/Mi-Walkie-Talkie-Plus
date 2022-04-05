@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/RecyclerView$f;
 .super Ljava/lang/Object;
-.source "RecyclerView.java"
 
 # interfaces
 .implements Landroidx/recyclerview/widget/a$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a(I)Landroidx/recyclerview/widget/RecyclerView$y;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v1, 0x1
@@ -53,7 +50,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     iget-object v1, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
@@ -76,12 +72,10 @@
 .method public a(II)V
     .locals 1
 
-    .line 6
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->offsetPositionRecordsForMove(II)V
 
-    .line 7
     iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 p2, 0x1
@@ -94,12 +88,10 @@
 .method public a(IILjava/lang/Object;)V
     .locals 1
 
-    .line 3
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView;->viewRangeUpdate(IILjava/lang/Object;)V
 
-    .line 4
     iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 p2, 0x1
@@ -112,7 +104,6 @@
 .method public a(Landroidx/recyclerview/widget/a$b;)V
     .locals 0
 
-    .line 5
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$f;->c(Landroidx/recyclerview/widget/a$b;)V
 
     return-void
@@ -121,14 +112,12 @@
 .method public b(II)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, p1, p2, v1}, Landroidx/recyclerview/widget/RecyclerView;->offsetPositionRecordsForRemove(IIZ)V
 
-    .line 2
     iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 p2, 0x1
@@ -141,7 +130,6 @@
 .method public b(Landroidx/recyclerview/widget/a$b;)V
     .locals 0
 
-    .line 3
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$f;->c(Landroidx/recyclerview/widget/a$b;)V
 
     return-void
@@ -150,12 +138,10 @@
 .method public c(II)V
     .locals 1
 
-    .line 6
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView;->offsetPositionRecordsForInsert(II)V
 
-    .line 7
     iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 p2, 0x1
@@ -168,7 +154,6 @@
 .method c(Landroidx/recyclerview/widget/a$b;)V
     .locals 4
 
-    .line 1
     iget v0, p1, Landroidx/recyclerview/widget/a$b;->a:I
 
     const/4 v1, 0x1
@@ -189,7 +174,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
@@ -203,7 +187,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
@@ -219,7 +202,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_2
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
@@ -233,7 +215,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_3
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
@@ -252,19 +233,16 @@
 .method public d(II)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, p1, p2, v1}, Landroidx/recyclerview/widget/RecyclerView;->offsetPositionRecordsForRemove(IIZ)V
 
-    .line 2
     iget-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$f;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     iput-boolean v1, p1, Landroidx/recyclerview/widget/RecyclerView;->mItemsAddedOrRemoved:Z
 
-    .line 3
     iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView;->mState:Landroidx/recyclerview/widget/RecyclerView$v;
 
     iget v0, p1, Landroidx/recyclerview/widget/RecyclerView$v;->d:I

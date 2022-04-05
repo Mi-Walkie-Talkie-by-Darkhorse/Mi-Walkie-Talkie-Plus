@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/library/a/m;
 .super Ljava/lang/Object;
-.source "UIUtils.java"
 
 
 # static fields
@@ -13,7 +12,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x1
@@ -28,7 +26,6 @@
 .method public static a(F)I
     .locals 1
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/library/a/m;->f()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -57,7 +54,6 @@
         .end annotation
     .end param
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/library/a/m;->c()Landroid/content/Context;
 
     move-result-object v0
@@ -72,7 +68,6 @@
 .method static synthetic a()Landroid/widget/Toast;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/library/a/m;->a:Landroid/widget/Toast;
 
     return-object v0
@@ -81,7 +76,6 @@
 .method static synthetic a(Landroid/widget/Toast;)Landroid/widget/Toast;
     .locals 0
 
-    .line 2
     sput-object p0, Lcom/ifengyu/library/a/m;->a:Landroid/widget/Toast;
 
     return-object p0
@@ -94,7 +88,6 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/library/a/m;->f()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -111,7 +104,6 @@
 
     const/4 v0, 0x0
 
-    .line 7
     invoke-static {p0, v0}, Lcom/ifengyu/library/a/m;->a(Ljava/lang/CharSequence;Z)V
 
     return-void
@@ -120,12 +112,10 @@
 .method private static a(Ljava/lang/CharSequence;Z)V
     .locals 1
 
-    .line 8
     new-instance v0, Lcom/ifengyu/library/a/m$a;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/library/a/m$a;-><init>(Ljava/lang/CharSequence;Z)V
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->a()Landroid/os/Handler;
 
     move-result-object p0
@@ -138,7 +128,6 @@
 .method public static a(Ljava/lang/Runnable;J)V
     .locals 1
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/library/a/m;->d()Landroid/os/Handler;
 
     move-result-object v0
@@ -151,21 +140,18 @@
 .method public static b()I
     .locals 3
 
-    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 4
     invoke-static {}, Landroid/view/View;->generateViewId()I
 
     move-result v0
 
     return v0
 
-    .line 5
     :cond_0
     sget-object v0, Lcom/ifengyu/library/a/m;->b:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -181,7 +167,6 @@
 
     const/4 v1, 0x1
 
-    .line 6
     :cond_1
     sget-object v2, Lcom/ifengyu/library/a/m;->b:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -197,7 +182,6 @@
 .method public static b(F)I
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/library/a/m;->f()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -226,7 +210,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/library/a/m;->f()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -241,7 +224,6 @@
 .method public static c()Landroid/content/Context;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->b()Lcom/ifengyu/library/base/BaseApp;
 
     move-result-object v0
@@ -256,7 +238,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/library/a/m;->f()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -271,7 +252,6 @@
 .method private static d()Landroid/os/Handler;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->a()Landroid/os/Handler;
 
     move-result-object v0
@@ -286,7 +266,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-static {p0}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object p0
@@ -301,7 +280,6 @@
 .method public static e()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/library/a/m;->c()Landroid/content/Context;
 
     move-result-object v0
@@ -316,7 +294,6 @@
 .method public static f()Landroid/content/res/Resources;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/library/a/m;->c()Landroid/content/Context;
 
     move-result-object v0

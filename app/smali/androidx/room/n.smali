@@ -1,6 +1,5 @@
 .class Landroidx/room/n;
 .super Ljava/lang/Object;
-.source "SQLiteCopyOpenHelperFactory.java"
 
 # interfaces
 .implements La/g/a/c$c;
@@ -39,16 +38,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/room/n;->a:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Landroidx/room/n;->b:Ljava/io/File;
 
-    .line 4
     iput-object p3, p0, Landroidx/room/n;->c:La/g/a/c$c;
 
     return-void
@@ -59,7 +54,6 @@
 .method public a(La/g/a/c$b;)La/g/a/c;
     .locals 7
 
-    .line 1
     new-instance v6, Landroidx/room/m;
 
     iget-object v1, p1, La/g/a/c$b;->a:Landroid/content/Context;
@@ -74,7 +68,6 @@
 
     iget-object v0, p0, Landroidx/room/n;->c:La/g/a/c$c;
 
-    .line 2
     invoke-interface {v0, p1}, La/g/a/c$c;->a(La/g/a/c$b;)La/g/a/c;
 
     move-result-object v5

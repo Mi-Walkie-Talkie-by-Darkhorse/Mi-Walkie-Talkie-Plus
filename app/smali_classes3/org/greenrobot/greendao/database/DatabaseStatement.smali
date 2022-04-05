@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/greenrobot/greendao/database/DatabaseStatement;
 .super Ljava/lang/Object;
-.source "DatabaseStatement.java"
 
 
 # virtual methods

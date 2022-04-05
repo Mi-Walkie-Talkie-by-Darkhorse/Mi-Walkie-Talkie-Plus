@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet$1;
 .super Lcom/google/common/collect/HashBiMap$Itr;
-.source "HashBiMap.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet$1;->this$2:Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet;
 
     iget-object p1, p1, Lcom/google/common/collect/HashBiMap$Inverse$InverseKeySet;->this$1:Lcom/google/common/collect/HashBiMap$Inverse;
@@ -53,7 +51,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p1, Lcom/google/common/collect/ImmutableEntry;->value:Ljava/lang/Object;
 
     return-object p1

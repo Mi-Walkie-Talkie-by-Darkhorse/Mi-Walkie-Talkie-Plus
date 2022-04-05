@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/schedulers/ImmediateThinScheduler$ImmediateThinWorker;
 .super Lio/reactivex/Scheduler$Worker;
-.source "ImmediateThinScheduler.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Scheduler$Worker;-><init>()V
 
     return-void
@@ -49,10 +47,8 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
-    .line 2
     sget-object p1, Lio/reactivex/internal/schedulers/ImmediateThinScheduler;->DISPOSED:Lio/reactivex/disposables/Disposable;
 
     return-object p1
@@ -71,7 +67,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 3
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "This scheduler doesn\'t support delayed execution"
@@ -90,7 +85,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "This scheduler doesn\'t support periodic execution"

@@ -1,6 +1,5 @@
 .class public abstract Lcom/bumptech/glide/util/k/c;
 .super Ljava/lang/Object;
-.source "StateVerifier.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +22,6 @@
 .method synthetic constructor <init>(Lcom/bumptech/glide/util/k/c$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/util/k/c;-><init>()V
 
     return-void
@@ -35,7 +32,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/util/k/c$b;
 
     invoke-direct {v0}, Lcom/bumptech/glide/util/k/c$b;-><init>()V

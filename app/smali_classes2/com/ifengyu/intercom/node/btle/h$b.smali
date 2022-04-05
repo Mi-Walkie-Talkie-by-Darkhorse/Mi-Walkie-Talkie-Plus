@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/node/btle/h$b;
 .super Ljava/lang/Object;
-.source "DataReceiver.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/node/btle/h;Lcom/ifengyu/intercom/protos/MitalkProtos$Command;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/ifengyu/intercom/node/btle/h$b;->a:Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/h/a;->a()Lcom/ifengyu/intercom/h/a;
 
     move-result-object v0

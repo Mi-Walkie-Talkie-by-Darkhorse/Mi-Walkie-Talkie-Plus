@@ -1,6 +1,5 @@
 .class public abstract Lorg/osmdroid/views/overlay/Overlay;
 .super Ljava/lang/Object;
-.source "Overlay.java"
 
 # interfaces
 .implements Lorg/osmdroid/views/util/constants/OverlayConstants;
@@ -32,14 +31,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
     sput-object v0, Lorg/osmdroid/views/overlay/Overlay;->sOrdinal:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 2
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
@@ -52,12 +49,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/Overlay;->mEnabled:Z
 
     return-void
@@ -68,12 +63,10 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x1
 
-    .line 2
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/Overlay;->mEnabled:Z
 
     return-void
@@ -86,7 +79,6 @@
 
     monitor-enter p4
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Landroid/graphics/Canvas;->save()I
 
@@ -96,15 +88,12 @@
 
     int-to-float v1, p3
 
-    .line 2
     invoke-virtual {p0, p5, v0, v1}, Landroid/graphics/Canvas;->rotate(FFF)V
 
-    .line 3
     sget-object p5, Lorg/osmdroid/views/overlay/Overlay;->mRect:Landroid/graphics/Rect;
 
     invoke-virtual {p1, p5}, Landroid/graphics/drawable/Drawable;->copyBounds(Landroid/graphics/Rect;)V
 
-    .line 4
     sget-object p5, Lorg/osmdroid/views/overlay/Overlay;->mRect:Landroid/graphics/Rect;
 
     iget p5, p5, Landroid/graphics/Rect;->left:I
@@ -131,20 +120,16 @@
 
     invoke-virtual {p1, p5, v0, v1, p2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 5
     invoke-virtual {p1, p0}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 6
     sget-object p2, Lorg/osmdroid/views/overlay/Overlay;->mRect:Landroid/graphics/Rect;
 
     invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
-    .line 7
     invoke-virtual {p0}, Landroid/graphics/Canvas;->restore()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     monitor-exit p4
 
     return-void
@@ -160,7 +145,6 @@
 .method protected static final getSafeMenuId()I
     .locals 1
 
-    .line 1
     sget-object v0, Lorg/osmdroid/views/overlay/Overlay;->sOrdinal:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
@@ -173,7 +157,6 @@
 .method protected static final getSafeMenuIdSequence(I)I
     .locals 1
 
-    .line 1
     sget-object v0, Lorg/osmdroid/views/overlay/Overlay;->sOrdinal:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndAdd(I)I
@@ -191,7 +174,6 @@
 .method public isEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/Overlay;->mEnabled:Z
 
     return v0
@@ -308,7 +290,6 @@
 .method public setEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/Overlay;->mEnabled:Z
 
     return-void

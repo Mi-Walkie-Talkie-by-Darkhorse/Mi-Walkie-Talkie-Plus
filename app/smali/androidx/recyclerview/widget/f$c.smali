@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/f$c;
 .super Ljava/lang/Object;
-.source "GapWorker.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,21 +41,16 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Landroidx/recyclerview/widget/f$c;->a:Z
 
-    .line 2
     iput v0, p0, Landroidx/recyclerview/widget/f$c;->b:I
 
-    .line 3
     iput v0, p0, Landroidx/recyclerview/widget/f$c;->c:I
 
     const/4 v1, 0x0
 
-    .line 4
     iput-object v1, p0, Landroidx/recyclerview/widget/f$c;->d:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 5
     iput v0, p0, Landroidx/recyclerview/widget/f$c;->e:I
 
     return-void

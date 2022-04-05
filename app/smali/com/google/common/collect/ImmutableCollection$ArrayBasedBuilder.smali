@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;
 .super Lcom/google/common/collect/ImmutableCollection$Builder;
-.source "ImmutableCollection.java"
 
 
 # annotations
@@ -34,22 +33,18 @@
 .method constructor <init>(I)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableCollection$Builder;-><init>()V
 
     const-string v0, "initialCapacity"
 
-    .line 2
     invoke-static {p1, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
-    .line 3
     new-array p1, p1, [Ljava/lang/Object;
 
     iput-object p1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
 
     const/4 p1, 0x0
 
-    .line 4
     iput p1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
 
     return-void
@@ -58,14 +53,12 @@
 .method private ensureCapacity(I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
 
     array-length v1, v0
 
     if-ge v1, p1, :cond_0
 
-    .line 2
     array-length v1, v0
 
     invoke-static {v1, p1}, Lcom/google/common/collect/ImmutableCollection$Builder;->expandedCapacity(II)I
@@ -94,17 +87,14 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     iget v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
 
     add-int/lit8 v0, v0, 0x1
 
     invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->ensureCapacity(I)V
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
@@ -121,7 +111,6 @@
 .method public bridge synthetic add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$Builder;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;
 
     move-result-object p1
@@ -139,10 +128,8 @@
         }
     .end annotation
 
-    .line 5
     invoke-static {p1}, Lcom/google/common/collect/ObjectArrays;->checkElementsNotNull([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    .line 6
     iget v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
 
     array-length v1, p1
@@ -151,7 +138,6 @@
 
     invoke-direct {p0, v0}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->ensureCapacity(I)V
 
-    .line 7
     iget-object v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->contents:[Ljava/lang/Object;
 
     iget v1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
@@ -162,7 +148,6 @@
 
     invoke-static {p1, v3, v0, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 8
     iget v0, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
 
     array-length p1, p1
@@ -186,17 +171,14 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p1, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
 
-    .line 2
     move-object v0, p1
 
     check-cast v0, Ljava/util/Collection;
 
-    .line 3
     iget v1, p0, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->size:I
 
     invoke-interface {v0}, Ljava/util/Collection;->size()I
@@ -207,7 +189,6 @@
 
     invoke-direct {p0, v1}, Lcom/google/common/collect/ImmutableCollection$ArrayBasedBuilder;->ensureCapacity(I)V
 
-    .line 4
     :cond_0
     invoke-super {p0, p1}, Lcom/google/common/collect/ImmutableCollection$Builder;->addAll(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableCollection$Builder;
 

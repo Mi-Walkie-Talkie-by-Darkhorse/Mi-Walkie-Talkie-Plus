@@ -1,6 +1,5 @@
 .class final Lcom/google/gson/Gson$4;
 .super Lcom/google/gson/TypeAdapter;
-.source "Gson.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>(Lcom/google/gson/TypeAdapter;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/gson/Gson$4;->val$longAdapter:Lcom/google/gson/TypeAdapter;
 
     invoke-direct {p0}, Lcom/google/gson/TypeAdapter;-><init>()V
@@ -48,7 +46,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/gson/Gson$4;->read(Lcom/google/gson/stream/JsonReader;)Ljava/util/concurrent/atomic/AtomicLong;
 
     move-result-object p1
@@ -64,7 +61,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/gson/Gson$4;->val$longAdapter:Lcom/google/gson/TypeAdapter;
 
     invoke-virtual {v0, p1}, Lcom/google/gson/TypeAdapter;->read(Lcom/google/gson/stream/JsonReader;)Ljava/lang/Object;
@@ -73,7 +69,6 @@
 
     check-cast p1, Ljava/lang/Number;
 
-    .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p1}, Ljava/lang/Number;->longValue()J
@@ -93,7 +88,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p2, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p0, p1, p2}, Lcom/google/gson/Gson$4;->write(Lcom/google/gson/stream/JsonWriter;Ljava/util/concurrent/atomic/AtomicLong;)V
@@ -109,7 +103,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/gson/Gson$4;->val$longAdapter:Lcom/google/gson/TypeAdapter;
 
     invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicLong;->get()J

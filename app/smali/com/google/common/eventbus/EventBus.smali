@@ -1,6 +1,5 @@
 .class public Lcom/google/common/eventbus/EventBus;
 .super Ljava/lang/Object;
-.source "EventBus.java"
 
 
 # annotations
@@ -75,7 +74,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/google/common/cache/CacheBuilder;->newBuilder()Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
@@ -102,7 +100,6 @@
 
     const-string v0, "default"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/common/eventbus/EventBus;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -111,45 +108,38 @@
 .method public constructor <init>(Lcom/google/common/eventbus/SubscriberExceptionHandler;)V
     .locals 1
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     invoke-static {}, Lcom/google/common/collect/HashMultimap;->create()Lcom/google/common/collect/HashMultimap;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/eventbus/EventBus;->subscribersByType:Lcom/google/common/collect/SetMultimap;
 
-    .line 5
     new-instance v0, Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;-><init>()V
 
     iput-object v0, p0, Lcom/google/common/eventbus/EventBus;->subscribersByTypeLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
-    .line 6
     new-instance v0, Lcom/google/common/eventbus/AnnotatedSubscriberFinder;
 
     invoke-direct {v0}, Lcom/google/common/eventbus/AnnotatedSubscriberFinder;-><init>()V
 
     iput-object v0, p0, Lcom/google/common/eventbus/EventBus;->finder:Lcom/google/common/eventbus/SubscriberFindingStrategy;
 
-    .line 7
     new-instance v0, Lcom/google/common/eventbus/EventBus$2;
 
     invoke-direct {v0, p0}, Lcom/google/common/eventbus/EventBus$2;-><init>(Lcom/google/common/eventbus/EventBus;)V
 
     iput-object v0, p0, Lcom/google/common/eventbus/EventBus;->eventsToDispatch:Ljava/lang/ThreadLocal;
 
-    .line 8
     new-instance v0, Lcom/google/common/eventbus/EventBus$3;
 
     invoke-direct {v0, p0}, Lcom/google/common/eventbus/EventBus$3;-><init>(Lcom/google/common/eventbus/EventBus;)V
 
     iput-object v0, p0, Lcom/google/common/eventbus/EventBus;->isDispatching:Ljava/lang/ThreadLocal;
 
-    .line 9
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -164,7 +154,6 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/google/common/eventbus/EventBus$LoggingSubscriberExceptionHandler;
 
     invoke-direct {v0, p1}, Lcom/google/common/eventbus/EventBus$LoggingSubscriberExceptionHandler;-><init>(Ljava/lang/String;)V
@@ -179,7 +168,6 @@
 .method dispatch(Ljava/lang/Object;Lcom/google/common/eventbus/EventSubscriber;)V
     .locals 5
 
-    .line 1
     :try_start_0
     invoke-virtual {p2, p1}, Lcom/google/common/eventbus/EventSubscriber;->handleEvent(Ljava/lang/Object;)V
     :try_end_0
@@ -190,7 +178,6 @@
     :catch_0
     move-exception v0
 
-    .line 2
     :try_start_1
     iget-object v1, p0, Lcom/google/common/eventbus/EventBus;->subscriberExceptionHandler:Lcom/google/common/eventbus/SubscriberExceptionHandler;
 
@@ -219,7 +206,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     const-class p2, Lcom/google/common/eventbus/EventBus;
 
     invoke-virtual {p2}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -263,7 +249,6 @@
 .method dispatchQueuedEvents()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->isDispatching:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -280,7 +265,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->isDispatching:Ljava/lang/ThreadLocal;
 
@@ -292,7 +276,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->eventsToDispatch:Ljava/lang/ThreadLocal;
 
@@ -302,7 +285,6 @@
 
     check-cast v0, Ljava/util/Queue;
 
-    .line 4
     :goto_0
     invoke-interface {v0}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
@@ -312,7 +294,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
     iget-object v2, v1, Lcom/google/common/eventbus/EventBus$EventWithSubscriber;->event:Ljava/lang/Object;
 
     iget-object v1, v1, Lcom/google/common/eventbus/EventBus$EventWithSubscriber;->subscriber:Lcom/google/common/eventbus/EventSubscriber;
@@ -323,13 +304,11 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->isDispatching:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->remove()V
 
-    .line 7
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->eventsToDispatch:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->remove()V
@@ -339,12 +318,10 @@
     :catchall_0
     move-exception v0
 
-    .line 8
     iget-object v1, p0, Lcom/google/common/eventbus/EventBus;->isDispatching:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1}, Ljava/lang/ThreadLocal;->remove()V
 
-    .line 9
     iget-object v1, p0, Lcom/google/common/eventbus/EventBus;->eventsToDispatch:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1}, Ljava/lang/ThreadLocal;->remove()V
@@ -355,7 +332,6 @@
 .method enqueueEvent(Ljava/lang/Object;Lcom/google/common/eventbus/EventSubscriber;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->eventsToDispatch:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -389,7 +365,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     sget-object v0, Lcom/google/common/eventbus/EventBus;->flattenHierarchyCache:Lcom/google/common/cache/LoadingCache;
 
@@ -406,7 +381,6 @@
     :catch_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/RuntimeException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p1
@@ -421,7 +395,6 @@
 .method public post(Ljava/lang/Object;)V
     .locals 4
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -430,7 +403,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -450,7 +422,6 @@
 
     check-cast v2, Ljava/lang/Class;
 
-    .line 3
     iget-object v3, p0, Lcom/google/common/eventbus/EventBus;->subscribersByTypeLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     invoke-interface {v3}, Ljava/util/concurrent/locks/ReadWriteLock;->readLock()Ljava/util/concurrent/locks/Lock;
@@ -459,7 +430,6 @@
 
     invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 4
     :try_start_0
     iget-object v3, p0, Lcom/google/common/eventbus/EventBus;->subscribersByType:Lcom/google/common/collect/SetMultimap;
 
@@ -467,7 +437,6 @@
 
     move-result-object v2
 
-    .line 5
     invoke-interface {v2}, Ljava/util/Set;->isEmpty()Z
 
     move-result v3
@@ -476,7 +445,6 @@
 
     const/4 v1, 0x1
 
-    .line 6
     invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -494,14 +462,12 @@
 
     check-cast v3, Lcom/google/common/eventbus/EventSubscriber;
 
-    .line 7
     invoke-virtual {p0, p1, v3}, Lcom/google/common/eventbus/EventBus;->enqueueEvent(Ljava/lang/Object;Lcom/google/common/eventbus/EventSubscriber;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_1
 
-    .line 8
     :cond_0
     iget-object v2, p0, Lcom/google/common/eventbus/EventBus;->subscribersByTypeLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
@@ -529,19 +495,16 @@
     :cond_1
     if-nez v1, :cond_2
 
-    .line 9
     instance-of v0, p1, Lcom/google/common/eventbus/DeadEvent;
 
     if-nez v0, :cond_2
 
-    .line 10
     new-instance v0, Lcom/google/common/eventbus/DeadEvent;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/eventbus/DeadEvent;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     invoke-virtual {p0, v0}, Lcom/google/common/eventbus/EventBus;->post(Ljava/lang/Object;)V
 
-    .line 11
     :cond_2
     invoke-virtual {p0}, Lcom/google/common/eventbus/EventBus;->dispatchQueuedEvents()V
 
@@ -551,14 +514,12 @@
 .method public register(Ljava/lang/Object;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->finder:Lcom/google/common/eventbus/SubscriberFindingStrategy;
 
     invoke-interface {v0, p1}, Lcom/google/common/eventbus/SubscriberFindingStrategy;->findAllSubscribers(Ljava/lang/Object;)Lcom/google/common/collect/Multimap;
 
     move-result-object p1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->subscribersByTypeLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
@@ -567,7 +528,6 @@
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->subscribersByType:Lcom/google/common/collect/SetMultimap;
 
@@ -575,7 +535,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     iget-object p1, p0, Lcom/google/common/eventbus/EventBus;->subscribersByTypeLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     invoke-interface {p1}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
@@ -603,14 +562,12 @@
 .method public unregister(Ljava/lang/Object;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->finder:Lcom/google/common/eventbus/SubscriberFindingStrategy;
 
     invoke-interface {v0, p1}, Lcom/google/common/eventbus/SubscriberFindingStrategy;->findAllSubscribers(Ljava/lang/Object;)Lcom/google/common/collect/Multimap;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->asMap()Ljava/util/Map;
 
     move-result-object v0
@@ -636,21 +593,18 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/Class;
 
-    .line 4
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 5
     iget-object v3, p0, Lcom/google/common/eventbus/EventBus;->subscribersByTypeLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     invoke-interface {v3}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
@@ -659,7 +613,6 @@
 
     invoke-interface {v3}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 6
     :try_start_0
     iget-object v3, p0, Lcom/google/common/eventbus/EventBus;->subscribersByType:Lcom/google/common/collect/SetMultimap;
 
@@ -667,19 +620,16 @@
 
     move-result-object v2
 
-    .line 7
     invoke-interface {v2, v1}, Ljava/util/Set;->containsAll(Ljava/util/Collection;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 8
     invoke-interface {v2, v1}, Ljava/util/Set;->removeAll(Ljava/util/Collection;)Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 9
     iget-object v1, p0, Lcom/google/common/eventbus/EventBus;->subscribersByTypeLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     invoke-interface {v1}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;
@@ -690,7 +640,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     :try_start_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -736,7 +685,6 @@
     :catchall_0
     move-exception p1
 
-    .line 11
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus;->subscribersByTypeLock:Ljava/util/concurrent/locks/ReadWriteLock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/ReadWriteLock;->writeLock()Ljava/util/concurrent/locks/Lock;

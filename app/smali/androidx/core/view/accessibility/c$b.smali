@@ -1,6 +1,5 @@
 .class Landroidx/core/view/accessibility/c$b;
 .super Landroidx/core/view/accessibility/c$a;
-.source "AccessibilityNodeProviderCompat.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/core/view/accessibility/c;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/core/view/accessibility/c$a;-><init>(Landroidx/core/view/accessibility/c;)V
 
     return-void
@@ -33,7 +31,6 @@
 .method public findFocus(I)Landroid/view/accessibility/AccessibilityNodeInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/accessibility/c$a;->a:Landroidx/core/view/accessibility/c;
 
     invoke-virtual {v0, p1}, Landroidx/core/view/accessibility/c;->b(I)Landroidx/core/view/accessibility/b;
@@ -46,7 +43,6 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Landroidx/core/view/accessibility/b;->y()Landroid/view/accessibility/AccessibilityNodeInfo;
 

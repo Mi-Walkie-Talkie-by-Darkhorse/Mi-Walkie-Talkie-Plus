@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/bumptech/glide/annotation/Excludes;
 .super Ljava/lang/Object;
-.source "Excludes.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

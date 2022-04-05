@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;
 .super Landroidx/appcompat/widget/AppCompatEditText;
-.source "PasswordToggleEditText.java"
 
 
 # instance fields
@@ -17,7 +16,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -28,7 +26,6 @@
 
     const v0, 0x101006e
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -37,15 +34,12 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 v0, 0x0
 
-    .line 4
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->a:Z
 
-    .line 5
     invoke-direct {p0, p1, p2, p3}, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->a(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -54,12 +48,10 @@
 .method private a(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p1
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/R$styleable;->PasswordToggleEditText:[I
 
     const/4 v1, 0x0
@@ -70,24 +62,20 @@
 
     const/4 p2, 0x1
 
-    .line 3
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->b:Landroid/graphics/drawable/Drawable;
 
-    .line 4
     invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->c:Landroid/graphics/drawable/Drawable;
 
-    .line 5
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->b:Landroid/graphics/drawable/Drawable;
 
     if-eqz p1, :cond_1
@@ -98,7 +86,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-direct {p0, v1}, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->a(Z)V
 
@@ -112,7 +99,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->b:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
@@ -120,7 +106,6 @@
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->c:Landroid/graphics/drawable/Drawable;
 
-    .line 9
     :goto_0
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
@@ -134,14 +119,12 @@
 
     invoke-virtual {p1, v2, v2, v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 10
     invoke-virtual {p0}, Landroid/widget/EditText;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     aget-object v0, v0, v2
 
-    .line 11
     invoke-virtual {p0}, Landroid/widget/EditText;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
@@ -158,7 +141,6 @@
 
     aget-object v2, v2, v3
 
-    .line 12
     invoke-virtual {p0, v0, v1, p1, v2}, Landroid/widget/EditText;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     return-void
@@ -169,7 +151,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/EditText;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -180,7 +161,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 2
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->a:Z
 
     if-eqz v0, :cond_0
@@ -192,7 +172,6 @@
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->c:Landroid/graphics/drawable/Drawable;
 
-    .line 3
     :goto_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -251,7 +230,6 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 4
     :goto_1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -261,28 +239,22 @@
 
     if-eqz v0, :cond_3
 
-    .line 5
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->a:Z
 
     if-eqz v0, :cond_2
 
-    .line 6
     iput-boolean v2, p0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->a:Z
 
-    .line 7
     invoke-direct {p0, v2}, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->a(Z)V
 
-    .line 8
     invoke-static {}, Landroid/text/method/PasswordTransformationMethod;->getInstance()Landroid/text/method/PasswordTransformationMethod;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Landroid/widget/EditText;->setTransformationMethod(Landroid/text/method/TransformationMethod;)V
 
-    .line 9
     invoke-virtual {p0}, Landroid/widget/EditText;->postInvalidate()V
 
-    .line 10
     invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatEditText;->getText()Landroid/text/Editable;
 
     move-result-object v0
@@ -295,38 +267,31 @@
 
     goto :goto_2
 
-    .line 11
     :cond_2
     iput-boolean v3, p0, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->a:Z
 
-    .line 12
     invoke-direct {p0, v3}, Lcom/ifengyu/intercom/ui/widget/view/PasswordToggleEditText;->a(Z)V
 
-    .line 13
     invoke-static {}, Landroid/text/method/HideReturnsTransformationMethod;->getInstance()Landroid/text/method/HideReturnsTransformationMethod;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Landroid/widget/EditText;->setTransformationMethod(Landroid/text/method/TransformationMethod;)V
 
-    .line 14
     invoke-virtual {p0}, Landroid/widget/EditText;->postInvalidate()V
 
-    .line 15
     invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatEditText;->getText()Landroid/text/Editable;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
-    .line 16
     invoke-interface {v0}, Ljava/lang/CharSequence;->length()I
 
     move-result v1
 
     invoke-static {v0, v1}, Landroid/text/Selection;->setSelection(Landroid/text/Spannable;I)V
 
-    .line 17
     :cond_3
     :goto_2
     invoke-super {p0, p1}, Landroid/widget/EditText;->onTouchEvent(Landroid/view/MotionEvent;)Z

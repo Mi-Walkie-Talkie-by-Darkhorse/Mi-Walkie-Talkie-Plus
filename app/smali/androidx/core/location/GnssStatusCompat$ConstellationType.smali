@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/location/GnssStatusCompat$ConstellationType;
 .super Ljava/lang/Object;
-.source "GnssStatusCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

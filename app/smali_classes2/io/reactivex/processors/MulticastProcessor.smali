@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/processors/MulticastProcessor;
 .super Lio/reactivex/processors/FlowableProcessor;
-.source "MulticastProcessor.java"
 
 
 # annotations
@@ -93,12 +92,10 @@
 
     new-array v1, v0, [Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
-    .line 1
     sput-object v1, Lio/reactivex/processors/MulticastProcessor;->EMPTY:[Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
     new-array v0, v0, [Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
-    .line 2
     sput-object v0, Lio/reactivex/processors/MulticastProcessor;->TERMINATED:[Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
     return-void
@@ -107,32 +104,26 @@
 .method constructor <init>(IZ)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/processors/FlowableProcessor;-><init>()V
 
     const-string v0, "bufferSize"
 
-    .line 2
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->verifyPositive(ILjava/lang/String;)I
 
-    .line 3
     iput p1, p0, Lio/reactivex/processors/MulticastProcessor;->bufferSize:I
 
     shr-int/lit8 v0, p1, 0x2
 
     sub-int/2addr p1, v0
 
-    .line 4
     iput p1, p0, Lio/reactivex/processors/MulticastProcessor;->limit:I
 
-    .line 5
     new-instance p1, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/processors/MulticastProcessor;->wip:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 6
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object v0, Lio/reactivex/processors/MulticastProcessor;->EMPTY:[Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
@@ -141,17 +132,14 @@
 
     iput-object p1, p0, Lio/reactivex/processors/MulticastProcessor;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 7
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/processors/MulticastProcessor;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 8
     iput-boolean p2, p0, Lio/reactivex/processors/MulticastProcessor;->refcount:Z
 
-    .line 9
     new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
@@ -179,7 +167,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/processors/MulticastProcessor;
 
     invoke-static {}, Lio/reactivex/Flowable;->bufferSize()I
@@ -211,7 +198,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 3
     new-instance v0, Lio/reactivex/processors/MulticastProcessor;
 
     const/4 v1, 0x0
@@ -239,7 +225,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 4
     new-instance v0, Lio/reactivex/processors/MulticastProcessor;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/processors/MulticastProcessor;-><init>(IZ)V
@@ -265,7 +250,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 2
     new-instance v0, Lio/reactivex/processors/MulticastProcessor;
 
     invoke-static {}, Lio/reactivex/Flowable;->bufferSize()I
@@ -289,7 +273,6 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -299,7 +282,6 @@
 
     check-cast v0, [Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
-    .line 2
     sget-object v1, Lio/reactivex/processors/MulticastProcessor;->TERMINATED:[Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
     const/4 v2, 0x0
@@ -308,22 +290,17 @@
 
     return v2
 
-    .line 3
     :cond_1
     array-length v1, v0
 
     add-int/lit8 v3, v1, 0x1
 
-    .line 4
     new-array v3, v3, [Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
-    .line 5
     invoke-static {v0, v2, v3, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 6
     aput-object p1, v3, v1
 
-    .line 7
     iget-object v1, p0, Lio/reactivex/processors/MulticastProcessor;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v1, v0, v3}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -342,7 +319,6 @@
 
     move-object/from16 v1, p0
 
-    .line 1
     iget-object v0, v1, Lio/reactivex/processors/MulticastProcessor;->wip:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
@@ -353,43 +329,35 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v2, v1, Lio/reactivex/processors/MulticastProcessor;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 3
     iget v0, v1, Lio/reactivex/processors/MulticastProcessor;->consumed:I
 
-    .line 4
     iget v3, v1, Lio/reactivex/processors/MulticastProcessor;->limit:I
 
-    .line 5
     iget v4, v1, Lio/reactivex/processors/MulticastProcessor;->fusionMode:I
 
     const/4 v5, 0x1
 
     const/4 v6, 0x1
 
-    .line 6
     :cond_1
     :goto_0
     iget-object v7, v1, Lio/reactivex/processors/MulticastProcessor;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
     if-eqz v7, :cond_14
 
-    .line 7
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v8
 
     check-cast v8, [Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
-    .line 8
     array-length v9, v8
 
     if-eqz v9, :cond_14
 
-    .line 9
     array-length v9, v8
 
     const-wide/16 v10, -0x1
@@ -405,7 +373,6 @@
 
     aget-object v12, v8, v13
 
-    .line 10
     invoke-virtual {v12}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v18
@@ -418,14 +385,12 @@
 
     if-nez v16, :cond_2
 
-    .line 11
     iget-wide v14, v12, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->emitted:J
 
     sub-long v14, v18, v14
 
     goto :goto_2
 
-    .line 12
     :cond_2
     iget-wide v10, v12, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->emitted:J
 
@@ -452,19 +417,16 @@
 
     if-lez v10, :cond_e
 
-    .line 13
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
-    .line 14
     sget-object v11, Lio/reactivex/processors/MulticastProcessor;->TERMINATED:[Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
     if-ne v0, v11, :cond_6
 
-    .line 15
     invoke-interface {v7}, Lio/reactivex/internal/fuseable/SimpleQueue;->clear()V
 
     return-void
@@ -474,11 +436,9 @@
 
     goto/16 :goto_a
 
-    .line 16
     :cond_7
     iget-boolean v0, v1, Lio/reactivex/processors/MulticastProcessor;->done:Z
 
-    .line 17
     :try_start_0
     invoke-interface {v7}, Lio/reactivex/internal/fuseable/SimpleQueue;->poll()Ljava/lang/Object;
 
@@ -493,20 +453,16 @@
 
     move-object v11, v0
 
-    .line 18
     invoke-static {v11}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 19
     iget-object v0, v1, Lio/reactivex/processors/MulticastProcessor;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-static {v0}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->cancel(Ljava/util/concurrent/atomic/AtomicReference;)Z
 
     const/4 v0, 0x0
 
-    .line 20
     iput-object v11, v1, Lio/reactivex/processors/MulticastProcessor;->error:Ljava/lang/Throwable;
 
-    .line 21
     iput-boolean v5, v1, Lio/reactivex/processors/MulticastProcessor;->done:Z
 
     move-object v11, v0
@@ -528,12 +484,10 @@
 
     if-eqz v12, :cond_b
 
-    .line 22
     iget-object v0, v1, Lio/reactivex/processors/MulticastProcessor;->error:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_9
 
-    .line 23
     sget-object v3, Lio/reactivex/processors/MulticastProcessor;->TERMINATED:[Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
     invoke-virtual {v2, v3}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
@@ -551,14 +505,12 @@
 
     aget-object v4, v2, v12
 
-    .line 24
     invoke-virtual {v4, v0}, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->onError(Ljava/lang/Throwable;)V
 
     add-int/lit8 v12, v12, 0x1
 
     goto :goto_6
 
-    .line 25
     :cond_9
     sget-object v0, Lio/reactivex/processors/MulticastProcessor;->TERMINATED:[Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
@@ -577,7 +529,6 @@
 
     aget-object v3, v0, v12
 
-    .line 26
     invoke-virtual {v3}, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->onComplete()V
 
     add-int/lit8 v12, v12, 0x1
@@ -592,7 +543,6 @@
 
     goto :goto_9
 
-    .line 27
     :cond_c
     array-length v0, v8
 
@@ -603,7 +553,6 @@
 
     aget-object v12, v8, v10
 
-    .line 28
     invoke-virtual {v12, v11}, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->onNext(Ljava/lang/Object;)V
 
     add-int/lit8 v10, v10, 0x1
@@ -621,7 +570,6 @@
 
     if-ne v9, v3, :cond_5
 
-    .line 29
     iget-object v0, v1, Lio/reactivex/processors/MulticastProcessor;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -642,19 +590,16 @@
     :goto_9
     if-nez v10, :cond_13
 
-    .line 30
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
-    .line 31
     sget-object v10, Lio/reactivex/processors/MulticastProcessor;->TERMINATED:[Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
     if-ne v0, v10, :cond_f
 
-    .line 32
     invoke-interface {v7}, Lio/reactivex/internal/fuseable/SimpleQueue;->clear()V
 
     return-void
@@ -667,7 +612,6 @@
 
     goto/16 :goto_0
 
-    .line 33
     :cond_10
     iget-boolean v0, v1, Lio/reactivex/processors/MulticastProcessor;->done:Z
 
@@ -679,12 +623,10 @@
 
     if-eqz v0, :cond_13
 
-    .line 34
     iget-object v0, v1, Lio/reactivex/processors/MulticastProcessor;->error:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_11
 
-    .line 35
     sget-object v3, Lio/reactivex/processors/MulticastProcessor;->TERMINATED:[Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
     invoke-virtual {v2, v3}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
@@ -702,14 +644,12 @@
 
     aget-object v4, v2, v12
 
-    .line 36
     invoke-virtual {v4, v0}, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->onError(Ljava/lang/Throwable;)V
 
     add-int/lit8 v12, v12, 0x1
 
     goto :goto_b
 
-    .line 37
     :cond_11
     sget-object v0, Lio/reactivex/processors/MulticastProcessor;->TERMINATED:[Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
@@ -728,7 +668,6 @@
 
     aget-object v3, v0, v12
 
-    .line 38
     invoke-virtual {v3}, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;->onComplete()V
 
     add-int/lit8 v12, v12, 0x1
@@ -741,7 +680,6 @@
     :cond_13
     move v0, v9
 
-    .line 39
     :cond_14
     iget-object v7, v1, Lio/reactivex/processors/MulticastProcessor;->wip:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -759,7 +697,6 @@
 .method public getThrowable()Ljava/lang/Throwable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -782,7 +719,6 @@
 .method public hasComplete()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -809,7 +745,6 @@
 .method public hasSubscribers()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -836,7 +771,6 @@
 .method public hasThrowable()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -868,7 +802,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -884,15 +817,12 @@
     :cond_0
     const-string v0, "offer called with null. Null values are generally not allowed in 2.x operators and sources."
 
-    .line 2
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 3
     iget v0, p0, Lio/reactivex/processors/MulticastProcessor;->fusionMode:I
 
     if-nez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
     invoke-interface {v0, p1}, Lio/reactivex/internal/fuseable/SimpleQueue;->offer(Ljava/lang/Object;)Z
@@ -901,7 +831,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/processors/MulticastProcessor;->drain()V
 
     const/4 p1, 0x1
@@ -915,7 +844,6 @@
 .method public onComplete()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
@@ -928,10 +856,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput-boolean v1, p0, Lio/reactivex/processors/MulticastProcessor;->done:Z
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/processors/MulticastProcessor;->drain()V
 
     :cond_0
@@ -943,10 +869,8 @@
 
     const-string v0, "onError called with null. Null values are generally not allowed in 2.x operators and sources."
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
@@ -959,18 +883,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iput-object p1, p0, Lio/reactivex/processors/MulticastProcessor;->error:Ljava/lang/Throwable;
 
-    .line 4
     iput-boolean v1, p0, Lio/reactivex/processors/MulticastProcessor;->done:Z
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/processors/MulticastProcessor;->drain()V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
@@ -986,7 +906,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -997,7 +916,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget v0, p0, Lio/reactivex/processors/MulticastProcessor;->fusionMode:I
 
@@ -1005,10 +923,8 @@
 
     const-string v0, "onNext called with null. Null values are generally not allowed in 2.x operators and sources."
 
-    .line 3
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 4
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
     invoke-interface {v0, p1}, Lio/reactivex/internal/fuseable/SimpleQueue;->offer(Ljava/lang/Object;)Z
@@ -1017,12 +933,10 @@
 
     if-nez p1, :cond_1
 
-    .line 5
     iget-object p1, p0, Lio/reactivex/processors/MulticastProcessor;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-static {p1}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->cancel(Ljava/util/concurrent/atomic/AtomicReference;)Z
 
-    .line 6
     new-instance p1, Lio/reactivex/exceptions/MissingBackpressureException;
 
     invoke-direct {p1}, Lio/reactivex/exceptions/MissingBackpressureException;-><init>()V
@@ -1031,7 +945,6 @@
 
     return-void
 
-    .line 7
     :cond_1
     invoke-virtual {p0}, Lio/reactivex/processors/MulticastProcessor;->drain()V
 
@@ -1041,7 +954,6 @@
 .method public onSubscribe(Lc/a/d;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-static {v0, p1}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->setOnce(Ljava/util/concurrent/atomic/AtomicReference;Lc/a/d;)Z
@@ -1050,19 +962,16 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     instance-of v0, p1, Lio/reactivex/internal/fuseable/QueueSubscription;
 
     if-eqz v0, :cond_1
 
-    .line 3
     move-object v0, p1
 
     check-cast v0, Lio/reactivex/internal/fuseable/QueueSubscription;
 
     const/4 v1, 0x3
 
-    .line 4
     invoke-interface {v0, v1}, Lio/reactivex/internal/fuseable/QueueFuseable;->requestFusion(I)I
 
     move-result v1
@@ -1071,16 +980,12 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 5
     iput v1, p0, Lio/reactivex/processors/MulticastProcessor;->fusionMode:I
 
-    .line 6
     iput-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
-    .line 7
     iput-boolean v2, p0, Lio/reactivex/processors/MulticastProcessor;->done:Z
 
-    .line 8
     invoke-virtual {p0}, Lio/reactivex/processors/MulticastProcessor;->drain()V
 
     return-void
@@ -1090,13 +995,10 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 9
     iput v1, p0, Lio/reactivex/processors/MulticastProcessor;->fusionMode:I
 
-    .line 10
     iput-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
-    .line 11
     iget v0, p0, Lio/reactivex/processors/MulticastProcessor;->bufferSize:I
 
     int-to-long v0, v0
@@ -1105,7 +1007,6 @@
 
     return-void
 
-    .line 12
     :cond_1
     new-instance v0, Lio/reactivex/internal/queue/SpscArrayQueue;
 
@@ -1115,7 +1016,6 @@
 
     iput-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
-    .line 13
     iget v0, p0, Lio/reactivex/processors/MulticastProcessor;->bufferSize:I
 
     int-to-long v0, v0
@@ -1136,7 +1036,6 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -1146,7 +1045,6 @@
 
     check-cast v0, [Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
-    .line 2
     array-length v1, v0
 
     if-nez v1, :cond_1
@@ -1163,7 +1061,6 @@
     :goto_0
     if-ge v4, v1, :cond_3
 
-    .line 3
     aget-object v5, v0, v4
 
     if-ne v5, p1, :cond_2
@@ -1188,12 +1085,10 @@
 
     if-ne v1, v4, :cond_6
 
-    .line 4
     iget-boolean v1, p0, Lio/reactivex/processors/MulticastProcessor;->refcount:Z
 
     if-eqz v1, :cond_5
 
-    .line 5
     iget-object v1, p0, Lio/reactivex/processors/MulticastProcessor;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object v2, Lio/reactivex/processors/MulticastProcessor;->TERMINATED:[Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
@@ -1204,19 +1099,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 6
     iget-object p1, p0, Lio/reactivex/processors/MulticastProcessor;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-static {p1}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->cancel(Ljava/util/concurrent/atomic/AtomicReference;)Z
 
-    .line 7
     iget-object p1, p0, Lio/reactivex/processors/MulticastProcessor;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1, v4}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     goto :goto_2
 
-    .line 8
     :cond_5
     iget-object v1, p0, Lio/reactivex/processors/MulticastProcessor;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -1233,10 +1125,8 @@
     :cond_6
     add-int/lit8 v5, v1, -0x1
 
-    .line 9
     new-array v5, v5, [Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
-    .line 10
     invoke-static {v0, v3, v5, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/lit8 v3, v2, 0x1
@@ -1245,10 +1135,8 @@
 
     sub-int/2addr v1, v4
 
-    .line 11
     invoke-static {v0, v3, v5, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 12
     iget-object v1, p0, Lio/reactivex/processors/MulticastProcessor;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v1, v0, v5}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -1264,7 +1152,6 @@
 .method public start()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object v1, Lio/reactivex/internal/subscriptions/EmptySubscription;->INSTANCE:Lio/reactivex/internal/subscriptions/EmptySubscription;
@@ -1275,7 +1162,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/queue/SpscArrayQueue;
 
     iget v1, p0, Lio/reactivex/processors/MulticastProcessor;->bufferSize:I
@@ -1291,7 +1177,6 @@
 .method public startUnbounded()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->upstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object v1, Lio/reactivex/internal/subscriptions/EmptySubscription;->INSTANCE:Lio/reactivex/internal/subscriptions/EmptySubscription;
@@ -1302,7 +1187,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/queue/SpscLinkedArrayQueue;
 
     iget v1, p0, Lio/reactivex/processors/MulticastProcessor;->bufferSize:I
@@ -1325,22 +1209,18 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;
 
     invoke-direct {v0, p1, p0}, Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;-><init>(Lc/a/c;Lio/reactivex/processors/MulticastProcessor;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 3
     invoke-virtual {p0, v0}, Lio/reactivex/processors/MulticastProcessor;->add(Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 4
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v1
@@ -1351,18 +1231,15 @@
 
     if-nez p1, :cond_0
 
-    .line 5
     invoke-virtual {p0, v0}, Lio/reactivex/processors/MulticastProcessor;->remove(Lio/reactivex/processors/MulticastProcessor$MulticastSubscription;)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-virtual {p0}, Lio/reactivex/processors/MulticastProcessor;->drain()V
 
     goto :goto_0
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -1376,18 +1253,15 @@
 
     if-nez v0, :cond_3
 
-    .line 8
     :cond_2
     iget-object v0, p0, Lio/reactivex/processors/MulticastProcessor;->error:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_3
 
-    .line 9
     invoke-interface {p1, v0}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
     return-void
 
-    .line 10
     :cond_3
     invoke-interface {p1}, Lc/a/c;->onComplete()V
 

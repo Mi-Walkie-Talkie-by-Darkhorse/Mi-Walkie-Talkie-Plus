@@ -1,6 +1,5 @@
 .class Lokhttp3/CipherSuite$1;
 .super Ljava/lang/Object;
-.source "CipherSuite.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     check-cast p2, Ljava/lang/String;
@@ -56,7 +53,6 @@
 .method public compare(Ljava/lang/String;Ljava/lang/String;)I
     .locals 6
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -78,12 +74,10 @@
 
     if-ge v1, v0, :cond_2
 
-    .line 3
     invoke-virtual {p1, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
 
-    .line 4
     invoke-virtual {p2, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
@@ -105,13 +99,11 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result p1
 
-    .line 6
     invoke-virtual {p2}, Ljava/lang/String;->length()I
 
     move-result p2

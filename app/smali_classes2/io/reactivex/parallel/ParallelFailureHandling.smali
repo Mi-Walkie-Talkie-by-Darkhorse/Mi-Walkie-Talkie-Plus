@@ -1,6 +1,5 @@
 .class public final enum Lio/reactivex/parallel/ParallelFailureHandling;
 .super Ljava/lang/Enum;
-.source "ParallelFailureHandling.java"
 
 # interfaces
 .implements Lio/reactivex/functions/BiFunction;
@@ -37,7 +36,6 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 1
     new-instance v0, Lio/reactivex/parallel/ParallelFailureHandling;
 
     const/4 v1, 0x0
@@ -48,7 +46,6 @@
 
     sput-object v0, Lio/reactivex/parallel/ParallelFailureHandling;->STOP:Lio/reactivex/parallel/ParallelFailureHandling;
 
-    .line 2
     new-instance v0, Lio/reactivex/parallel/ParallelFailureHandling;
 
     const/4 v2, 0x1
@@ -59,7 +56,6 @@
 
     sput-object v0, Lio/reactivex/parallel/ParallelFailureHandling;->ERROR:Lio/reactivex/parallel/ParallelFailureHandling;
 
-    .line 3
     new-instance v0, Lio/reactivex/parallel/ParallelFailureHandling;
 
     const/4 v3, 0x2
@@ -70,7 +66,6 @@
 
     sput-object v0, Lio/reactivex/parallel/ParallelFailureHandling;->SKIP:Lio/reactivex/parallel/ParallelFailureHandling;
 
-    .line 4
     new-instance v0, Lio/reactivex/parallel/ParallelFailureHandling;
 
     const/4 v4, 0x3
@@ -85,7 +80,6 @@
 
     new-array v5, v5, [Lio/reactivex/parallel/ParallelFailureHandling;
 
-    .line 5
     sget-object v6, Lio/reactivex/parallel/ParallelFailureHandling;->STOP:Lio/reactivex/parallel/ParallelFailureHandling;
 
     aput-object v6, v5, v1
@@ -113,7 +107,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -122,7 +115,6 @@
 .method public static valueOf(Ljava/lang/String;)Lio/reactivex/parallel/ParallelFailureHandling;
     .locals 1
 
-    .line 1
     const-class v0, Lio/reactivex/parallel/ParallelFailureHandling;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -137,7 +129,6 @@
 .method public static values()[Lio/reactivex/parallel/ParallelFailureHandling;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/reactivex/parallel/ParallelFailureHandling;->$VALUES:[Lio/reactivex/parallel/ParallelFailureHandling;
 
     invoke-virtual {v0}, [Lio/reactivex/parallel/ParallelFailureHandling;->clone()Ljava/lang/Object;
@@ -165,7 +156,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/lang/Long;
 
     check-cast p2, Ljava/lang/Throwable;

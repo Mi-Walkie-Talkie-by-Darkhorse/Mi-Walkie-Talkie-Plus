@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/sina/weibo/sdk/api/c/d;
 .super Ljava/lang/Object;
-.source "IWeiboShareAPI.java"
 
 
 # virtual methods

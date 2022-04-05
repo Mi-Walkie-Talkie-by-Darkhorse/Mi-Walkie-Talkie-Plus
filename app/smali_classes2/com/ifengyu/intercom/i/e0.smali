@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/e0;
 .super Ljava/lang/Object;
-.source "PermissionUtils.java"
 
 
 # direct methods
@@ -9,7 +8,6 @@
 
     const-string v0, "location"
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -18,14 +16,12 @@
 
     const-string v0, "gps"
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/location/LocationManager;->isProviderEnabled(Ljava/lang/String;)Z
 
     move-result v0
 
     const-string v1, "network"
 
-    .line 3
     invoke-virtual {p0, v1}, Landroid/location/LocationManager;->isProviderEnabled(Ljava/lang/String;)Z
 
     move-result p0

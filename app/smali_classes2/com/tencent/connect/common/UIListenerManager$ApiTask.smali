@@ -1,6 +1,5 @@
 .class public Lcom/tencent/connect/common/UIListenerManager$ApiTask;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # annotations
@@ -26,15 +25,12 @@
 .method public constructor <init>(Lcom/tencent/connect/common/UIListenerManager;ILcom/tencent/tauth/IUiListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/common/UIListenerManager$ApiTask;->a:Lcom/tencent/connect/common/UIListenerManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p2, p0, Lcom/tencent/connect/common/UIListenerManager$ApiTask;->mRequestCode:I
 
-    .line 3
     iput-object p3, p0, Lcom/tencent/connect/common/UIListenerManager$ApiTask;->mListener:Lcom/tencent/tauth/IUiListener;
 
     return-void

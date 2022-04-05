@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/c/e;
 .super Ljava/lang/Object;
-.source "IFillFormatter.java"
 
 
 # virtual methods

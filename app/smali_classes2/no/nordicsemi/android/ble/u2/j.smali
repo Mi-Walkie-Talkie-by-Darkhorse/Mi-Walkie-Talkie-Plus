@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/u2/j;
 .super Ljava/lang/Object;
-.source "SuccessCallback.java"
 
 
 # virtual methods

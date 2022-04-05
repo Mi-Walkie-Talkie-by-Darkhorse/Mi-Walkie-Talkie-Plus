@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/timepicker/MaxInputValidator;
 .super Ljava/lang/Object;
-.source "MaxInputValidator.java"
 
 # interfaces
 .implements Landroid/text/InputFilter;
@@ -14,10 +13,8 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/timepicker/MaxInputValidator;->max:I
 
     return-void
@@ -28,13 +25,11 @@
 .method public filter(Ljava/lang/CharSequence;IILandroid/text/Spanned;II)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0, p4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/CharSequence;)V
 
-    .line 2
     invoke-interface {p1, p2, p3}, Ljava/lang/CharSequence;->subSequence(II)Ljava/lang/CharSequence;
 
     move-result-object p1
@@ -45,17 +40,14 @@
 
     invoke-virtual {v0, p5, p6, p1}, Ljava/lang/StringBuilder;->replace(IILjava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 4
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result p1
 
-    .line 5
     iget p2, p0, Lcom/google/android/material/timepicker/MaxInputValidator;->max:I
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
@@ -76,7 +68,6 @@
 .method public getMax()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/timepicker/MaxInputValidator;->max:I
 
     return v0
@@ -85,7 +76,6 @@
 .method public setMax(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/timepicker/MaxInputValidator;->max:I
 
     return-void

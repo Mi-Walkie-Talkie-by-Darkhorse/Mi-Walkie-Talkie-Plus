@@ -1,6 +1,5 @@
 .class public final Landroidx/core/content/res/e;
 .super Ljava/lang/Object;
-.source "ResourcesCompat.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-virtual {p0}, Landroid/content/Context;->isRestricted()Z
 
     move-result v0
@@ -43,7 +41,6 @@
 
     return-object p0
 
-    .line 5
     :cond_0
     new-instance v2, Landroid/util/TypedValue;
 
@@ -96,7 +93,6 @@
         }
     .end annotation
 
-    .line 10
     invoke-virtual {p0}, Landroid/content/Context;->isRestricted()Z
 
     move-result v0
@@ -124,7 +120,6 @@
 
     move-object v4, p4
 
-    .line 11
     invoke-static/range {v0 .. v7}, Landroidx/core/content/res/e;->a(Landroid/content/Context;ILandroid/util/TypedValue;ILandroidx/core/content/res/e$a;Landroid/os/Handler;ZZ)Landroid/graphics/Typeface;
 
     move-result-object p0
@@ -147,7 +142,6 @@
         .end annotation
     .end param
 
-    .line 12
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -158,7 +152,6 @@
 
     move-object v2, p2
 
-    .line 13
     invoke-virtual {v1, p1, p2, v0}, Landroid/content/res/Resources;->getValue(ILandroid/util/TypedValue;Z)V
 
     move-object v0, p0
@@ -175,7 +168,6 @@
 
     move/from16 v8, p7
 
-    .line 14
     invoke-static/range {v0 .. v8}, Landroidx/core/content/res/e;->a(Landroid/content/Context;Landroid/content/res/Resources;Landroid/util/TypedValue;IILandroidx/core/content/res/e$a;Landroid/os/Handler;ZZ)Landroid/graphics/Typeface;
 
     move-result-object v0
@@ -188,7 +180,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_0
     new-instance v0, Landroid/content/res/Resources$NotFoundException;
 
@@ -200,7 +191,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 16
     invoke-static {p1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v2
@@ -253,19 +243,16 @@
 
     const-string v11, "ResourcesCompat"
 
-    .line 17
     iget-object v2, v1, Landroid/util/TypedValue;->string:Ljava/lang/CharSequence;
 
     if-eqz v2, :cond_b
 
-    .line 18
     invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v12
 
     const-string v1, "res/"
 
-    .line 19
     invoke-virtual {v12, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
@@ -278,13 +265,11 @@
 
     if-eqz v9, :cond_0
 
-    .line 20
     invoke-virtual {v9, v13, v10}, Landroidx/core/content/res/e$a;->callbackFailAsync(ILandroid/os/Handler;)V
 
     :cond_0
     return-object v14
 
-    .line 21
     :cond_1
     invoke-static {v0, v4, v5}, Landroidx/core/graphics/f;->b(Landroid/content/res/Resources;II)Landroid/graphics/Typeface;
 
@@ -294,7 +279,6 @@
 
     if-eqz v9, :cond_2
 
-    .line 22
     invoke-virtual {v9, v1, v10}, Landroidx/core/content/res/e$a;->callbackSuccessAsync(Landroid/graphics/Typeface;Landroid/os/Handler;)V
 
     :cond_2
@@ -305,7 +289,6 @@
 
     return-object v14
 
-    .line 23
     :cond_4
     :try_start_0
     invoke-virtual {v12}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
@@ -320,12 +303,10 @@
 
     if-eqz v1, :cond_7
 
-    .line 24
     invoke-virtual {v0, v4}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
 
     move-result-object v1
 
-    .line 25
     invoke-static {v1, v0}, Landroidx/core/content/res/FontResourcesParserCompat;->a(Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources;)Landroidx/core/content/res/FontResourcesParserCompat$a;
 
     move-result-object v2
@@ -334,12 +315,10 @@
 
     const-string v0, "Failed to find font-family tag"
 
-    .line 26
     invoke-static {v11, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     if-eqz v9, :cond_5
 
-    .line 27
     invoke-virtual {v9, v13, v10}, Landroidx/core/content/res/e$a;->callbackFailAsync(ILandroid/os/Handler;)V
 
     :cond_5
@@ -360,7 +339,6 @@
 
     move/from16 v8, p7
 
-    .line 28
     invoke-static/range {v1 .. v8}, Landroidx/core/graphics/f;->a(Landroid/content/Context;Landroidx/core/content/res/FontResourcesParserCompat$a;Landroid/content/res/Resources;IILandroidx/core/content/res/e$a;Landroid/os/Handler;Z)Landroid/graphics/Typeface;
 
     move-result-object v0
@@ -370,7 +348,6 @@
     :cond_7
     move-object v1, p0
 
-    .line 29
     invoke-static {p0, v0, v4, v12, v5}, Landroidx/core/graphics/f;->a(Landroid/content/Context;Landroid/content/res/Resources;ILjava/lang/String;I)Landroid/graphics/Typeface;
 
     move-result-object v0
@@ -379,12 +356,10 @@
 
     if-eqz v0, :cond_8
 
-    .line 30
     invoke-virtual {v9, v0, v10}, Landroidx/core/content/res/e$a;->callbackSuccessAsync(Landroid/graphics/Typeface;Landroid/os/Handler;)V
 
     goto :goto_0
 
-    .line 31
     :cond_8
     invoke-virtual {v9, v13, v10}, Landroidx/core/content/res/e$a;->callbackFailAsync(ILandroid/os/Handler;)V
     :try_end_0
@@ -398,7 +373,6 @@
     :catch_0
     move-exception v0
 
-    .line 32
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -420,7 +394,6 @@
     :catch_1
     move-exception v0
 
-    .line 33
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -440,13 +413,11 @@
     :goto_1
     if-eqz v9, :cond_a
 
-    .line 34
     invoke-virtual {v9, v13, v10}, Landroidx/core/content/res/e$a;->callbackFailAsync(ILandroid/os/Handler;)V
 
     :cond_a
     return-object v14
 
-    .line 35
     :cond_b
     new-instance v2, Landroid/content/res/Resources$NotFoundException;
 
@@ -468,7 +439,6 @@
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 36
     invoke-static/range {p3 .. p3}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -513,21 +483,18 @@
         }
     .end annotation
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1, p2}, Landroid/content/res/Resources;->getDrawable(ILandroid/content/res/Resources$Theme;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -560,10 +527,8 @@
         }
     .end annotation
 
-    .line 6
     invoke-static {p2}, Landroidx/core/d/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
     invoke-virtual {p0}, Landroid/content/Context;->isRestricted()Z
 
     move-result v0
@@ -572,12 +537,10 @@
 
     const/4 p0, -0x4
 
-    .line 8
     invoke-virtual {p2, p0, p3}, Landroidx/core/content/res/e$a;->callbackFailAsync(ILandroid/os/Handler;)V
 
     return-void
 
-    .line 9
     :cond_0
     new-instance v2, Landroid/util/TypedValue;
 

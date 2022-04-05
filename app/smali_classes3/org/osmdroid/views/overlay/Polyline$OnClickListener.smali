@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/Polyline$OnClickListener;
 .super Ljava/lang/Object;
-.source "Polyline.java"
 
 
 # annotations

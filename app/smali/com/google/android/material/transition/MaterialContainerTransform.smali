@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/transition/MaterialContainerTransform;
 .super Landroidx/transition/Transition;
-.source "MaterialContainerTransform.java"
 
 
 # annotations
@@ -153,7 +152,6 @@
 .method static constructor <clinit>()V
     .locals 21
 
-    .line 1
     const-class v0, Lcom/google/android/material/transition/MaterialContainerTransform;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -166,14 +164,12 @@
 
     const-string v1, "materialContainerTransition:shapeAppearance"
 
-    .line 2
     filled-new-array {v0, v1}, [Ljava/lang/String;
 
     move-result-object v0
 
     sput-object v0, Lcom/google/android/material/transition/MaterialContainerTransform;->TRANSITION_PROPS:[Ljava/lang/String;
 
-    .line 3
     new-instance v0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
     new-instance v2, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
@@ -208,7 +204,6 @@
 
     sput-object v0, Lcom/google/android/material/transition/MaterialContainerTransform;->DEFAULT_ENTER_THRESHOLDS:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
-    .line 4
     new-instance v0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
     new-instance v10, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
@@ -241,7 +236,6 @@
 
     sput-object v0, Lcom/google/android/material/transition/MaterialContainerTransform;->DEFAULT_RETURN_THRESHOLDS:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
-    .line 5
     new-instance v0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
     new-instance v3, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
@@ -280,7 +274,6 @@
 
     sput-object v0, Lcom/google/android/material/transition/MaterialContainerTransform;->DEFAULT_ENTER_THRESHOLDS_ARC:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
-    .line 6
     new-instance v0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
     new-instance v10, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
@@ -313,54 +306,40 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Landroidx/transition/Transition;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->drawDebugEnabled:Z
 
-    .line 3
     iput-boolean v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->holdAtEndEnabled:Z
 
     const v1, 0x1020002
 
-    .line 4
     iput v1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->drawingViewId:I
 
     const/4 v1, -0x1
 
-    .line 5
     iput v1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startViewId:I
 
-    .line 6
     iput v1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endViewId:I
 
-    .line 7
     iput v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->containerColor:I
 
-    .line 8
     iput v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startContainerColor:I
 
-    .line 9
     iput v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endContainerColor:I
 
     const/high16 v1, 0x52000000
 
-    .line 10
     iput v1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->scrimColor:I
 
-    .line 11
     iput v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->transitionDirection:I
 
-    .line 12
     iput v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->fadeMode:I
 
-    .line 13
     iput v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->fitMode:I
 
-    .line 14
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x1c
@@ -374,13 +353,10 @@
 
     const/high16 v0, -0x40800000    # -1.0f
 
-    .line 15
     iput v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startElevation:F
 
-    .line 16
     iput v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endElevation:F
 
-    .line 17
     sget-object v0, Lcom/google/android/material/animation/AnimationUtils;->FAST_OUT_SLOW_IN_INTERPOLATOR:Landroid/animation/TimeInterpolator;
 
     invoke-virtual {p0, v0}, Landroidx/transition/Transition;->setInterpolator(Landroid/animation/TimeInterpolator;)Landroidx/transition/Transition;
@@ -391,7 +367,6 @@
 .method static synthetic access$300(Lcom/google/android/material/transition/MaterialContainerTransform;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->holdAtEndEnabled:Z
 
     return p0
@@ -400,12 +375,10 @@
 .method private buildThresholdsGroup(Z)Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/Transition;->getPathMotion()Landroidx/transition/PathMotion;
 
     move-result-object v0
 
-    .line 2
     instance-of v1, v0, Landroidx/transition/ArcMotion;
 
     if-nez v1, :cond_1
@@ -416,7 +389,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/google/android/material/transition/MaterialContainerTransform;->DEFAULT_ENTER_THRESHOLDS:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
@@ -428,7 +400,6 @@
 
     return-object p1
 
-    .line 4
     :cond_1
     :goto_0
     sget-object v0, Lcom/google/android/material/transition/MaterialContainerTransform;->DEFAULT_ENTER_THRESHOLDS_ARC:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
@@ -451,17 +422,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-static {p1}, Lcom/google/android/material/transition/TransitionUtils;->getLocationOnScreen(Landroid/view/View;)Landroid/graphics/RectF;
 
     move-result-object p0
 
-    .line 2
     invoke-virtual {p0, p2, p3}, Landroid/graphics/RectF;->offset(FF)V
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance p1, Landroid/graphics/RectF;
 
@@ -499,12 +467,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0, p2}, Lcom/google/android/material/transition/MaterialContainerTransform;->getShapeAppearance(Landroid/view/View;Lcom/google/android/material/shape/ShapeAppearanceModel;)Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     move-result-object p0
 
-    .line 2
     invoke-static {p0, p1}, Lcom/google/android/material/transition/TransitionUtils;->convertToRelativeCornerSizes(Lcom/google/android/material/shape/ShapeAppearanceModel;Landroid/graphics/RectF;)Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     move-result-object p0
@@ -535,7 +501,6 @@
 
     if-eq p2, v0, :cond_0
 
-    .line 1
     iget-object p1, p0, Landroidx/transition/x;->b:Landroid/view/View;
 
     invoke-static {p1, p2}, Lcom/google/android/material/transition/TransitionUtils;->findDescendantOrAncestorById(Landroid/view/View;I)Landroid/view/View;
@@ -549,12 +514,10 @@
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 2
     iput-object p1, p0, Landroidx/transition/x;->b:Landroid/view/View;
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget-object p1, p0, Landroidx/transition/x;->b:Landroid/view/View;
 
@@ -568,7 +531,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 4
     iget-object p1, p0, Landroidx/transition/x;->b:Landroid/view/View;
 
     sget p2, Lcom/google/android/material/R$id;->mtrl_motion_snapshot_view:I
@@ -579,7 +541,6 @@
 
     check-cast p1, Landroid/view/View;
 
-    .line 5
     iget-object p2, p0, Landroidx/transition/x;->b:Landroid/view/View;
 
     sget v0, Lcom/google/android/material/R$id;->mtrl_motion_snapshot_view:I
@@ -588,15 +549,12 @@
 
     invoke-virtual {p2, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
-    .line 6
     iput-object p1, p0, Landroidx/transition/x;->b:Landroid/view/View;
 
-    .line 7
     :cond_2
     :goto_0
     iget-object p1, p0, Landroidx/transition/x;->b:Landroid/view/View;
 
-    .line 8
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->N(Landroid/view/View;)Z
 
     move-result p2
@@ -615,7 +573,6 @@
 
     if-eqz p2, :cond_5
 
-    .line 9
     :cond_3
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -634,7 +591,6 @@
 
     move-result-object p2
 
-    .line 10
     :goto_1
     iget-object v0, p0, Landroidx/transition/x;->a:Ljava/util/Map;
 
@@ -642,17 +598,14 @@
 
     invoke-interface {v0, v1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
     iget-object p0, p0, Landroidx/transition/x;->a:Ljava/util/Map;
 
-    .line 12
     invoke-static {p1, p2, p3}, Lcom/google/android/material/transition/MaterialContainerTransform;->captureShapeAppearance(Landroid/view/View;Landroid/graphics/RectF;Lcom/google/android/material/shape/ShapeAppearanceModel;)Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     move-result-object p1
 
     const-string p2, "materialContainerTransition:shapeAppearance"
 
-    .line 13
     invoke-interface {p0, p2, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_5
@@ -670,7 +623,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->n(Landroid/view/View;)F
 
@@ -695,7 +647,6 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     sget p1, Lcom/google/android/material/R$id;->mtrl_motion_snapshot_view:I
 
@@ -707,7 +658,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 2
     sget p1, Lcom/google/android/material/R$id;->mtrl_motion_snapshot_view:I
 
     invoke-virtual {p0, p1}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
@@ -718,13 +668,11 @@
 
     return-object p0
 
-    .line 3
     :cond_1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    .line 4
     invoke-static {p1}, Lcom/google/android/material/transition/MaterialContainerTransform;->getTransitionShapeAppearanceResId(Landroid/content/Context;)I
 
     move-result v0
@@ -735,7 +683,6 @@
 
     const/4 p0, 0x0
 
-    .line 5
     invoke-static {p1, v0, p0}, Lcom/google/android/material/shape/ShapeAppearanceModel;->builder(Landroid/content/Context;II)Lcom/google/android/material/shape/ShapeAppearanceModel$Builder;
 
     move-result-object p0
@@ -746,13 +693,11 @@
 
     return-object p0
 
-    .line 6
     :cond_2
     instance-of p1, p0, Lcom/google/android/material/shape/Shapeable;
 
     if-eqz p1, :cond_3
 
-    .line 7
     check-cast p0, Lcom/google/android/material/shape/Shapeable;
 
     invoke-interface {p0}, Lcom/google/android/material/shape/Shapeable;->getShapeAppearanceModel()Lcom/google/android/material/shape/ShapeAppearanceModel;
@@ -761,7 +706,6 @@
 
     return-object p0
 
-    .line 8
     :cond_3
     invoke-static {}, Lcom/google/android/material/shape/ShapeAppearanceModel;->builder()Lcom/google/android/material/shape/ShapeAppearanceModel$Builder;
 
@@ -784,13 +728,11 @@
     :cond_0
     move-object p2, p3
 
-    .line 1
     :goto_0
     new-instance p1, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
     iget-object p3, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->fadeProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    .line 2
     invoke-static {p2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;->access$400(Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;)Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     move-result-object v0
@@ -805,7 +747,6 @@
 
     iget-object p3, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->scaleProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    .line 3
     invoke-static {p2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;->access$500(Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;)Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     move-result-object v0
@@ -820,7 +761,6 @@
 
     iget-object p3, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->scaleMaskProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    .line 4
     invoke-static {p2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;->access$600(Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;)Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     move-result-object v0
@@ -835,7 +775,6 @@
 
     iget-object p3, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->shapeMaskProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
-    .line 5
     invoke-static {p2}, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;->access$700(Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;)Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     move-result-object p2
@@ -866,7 +805,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     sget v1, Lcom/google/android/material/R$attr;->transitionShapeAppearance:I
 
     const/4 v2, 0x0
@@ -879,12 +817,10 @@
 
     const/4 v0, -0x1
 
-    .line 2
     invoke-virtual {p0, v2, v0}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result v0
 
-    .line 3
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     return v0
@@ -901,7 +837,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->transitionDirection:I
 
     const/4 v1, 0x0
@@ -918,7 +853,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -945,7 +879,6 @@
     :cond_1
     return v2
 
-    .line 3
     :cond_2
     invoke-static {p2}, Lcom/google/android/material/transition/TransitionUtils;->calculateArea(Landroid/graphics/RectF;)F
 
@@ -974,7 +907,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endView:Landroid/view/View;
 
     iget v1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endViewId:I
@@ -993,7 +925,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startView:Landroid/view/View;
 
     iget v1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startViewId:I
@@ -1036,7 +967,6 @@
 
     goto/16 :goto_4
 
-    .line 1
     :cond_0
     iget-object v3, v0, Landroidx/transition/x;->a:Ljava/util/Map;
 
@@ -1050,12 +980,10 @@
 
     check-cast v10, Landroid/graphics/RectF;
 
-    .line 2
     iget-object v3, v0, Landroidx/transition/x;->a:Ljava/util/Map;
 
     const-string v5, "materialContainerTransition:shapeAppearance"
 
-    .line 3
     invoke-interface {v3, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -1070,7 +998,6 @@
 
     goto/16 :goto_3
 
-    .line 4
     :cond_1
     iget-object v3, v1, Landroidx/transition/x;->a:Ljava/util/Map;
 
@@ -1082,10 +1009,8 @@
 
     check-cast v14, Landroid/graphics/RectF;
 
-    .line 5
     iget-object v3, v1, Landroidx/transition/x;->a:Ljava/util/Map;
 
-    .line 6
     invoke-interface {v3, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -1100,14 +1025,11 @@
 
     goto/16 :goto_2
 
-    .line 7
     :cond_2
     iget-object v4, v0, Landroidx/transition/x;->b:Landroid/view/View;
 
-    .line 8
     iget-object v5, v1, Landroidx/transition/x;->b:Landroid/view/View;
 
-    .line 9
     invoke-virtual {v5}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
@@ -1121,7 +1043,6 @@
     :cond_3
     move-object v0, v4
 
-    .line 10
     :goto_0
     iget v1, v6, Lcom/google/android/material/transition/MaterialContainerTransform;->drawingViewId:I
 
@@ -1131,7 +1052,6 @@
 
     if-ne v1, v3, :cond_4
 
-    .line 11
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v1
@@ -1142,7 +1062,6 @@
 
     goto :goto_1
 
-    .line 12
     :cond_4
     iget v1, v6, Lcom/google/android/material/transition/MaterialContainerTransform;->drawingViewId:I
 
@@ -1156,60 +1075,49 @@
 
     move-object/from16 v0, v28
 
-    .line 13
     :goto_1
     invoke-static {v2}, Lcom/google/android/material/transition/TransitionUtils;->getLocationOnScreen(Landroid/view/View;)Landroid/graphics/RectF;
 
     move-result-object v1
 
-    .line 14
     iget v3, v1, Landroid/graphics/RectF;->left:F
 
     neg-float v3, v3
 
-    .line 15
     iget v1, v1, Landroid/graphics/RectF;->top:F
 
     neg-float v1, v1
 
-    .line 16
     invoke-static {v2, v0, v3, v1}, Lcom/google/android/material/transition/MaterialContainerTransform;->calculateDrawableBounds(Landroid/view/View;Landroid/view/View;FF)Landroid/graphics/RectF;
 
     move-result-object v0
 
-    .line 17
     invoke-virtual {v10, v3, v1}, Landroid/graphics/RectF;->offset(FF)V
 
-    .line 18
     invoke-virtual {v14, v3, v1}, Landroid/graphics/RectF;->offset(FF)V
 
-    .line 19
     invoke-direct {v6, v10, v14}, Lcom/google/android/material/transition/MaterialContainerTransform;->isEntering(Landroid/graphics/RectF;Landroid/graphics/RectF;)Z
 
     move-result v1
 
     move/from16 v21, v1
 
-    .line 20
     new-instance v3, Lcom/google/android/material/transition/MaterialContainerTransform$TransitionDrawable;
 
     move-object v7, v3
 
-    .line 21
     invoke-virtual/range {p0 .. p0}, Landroidx/transition/Transition;->getPathMotion()Landroidx/transition/PathMotion;
 
     move-result-object v8
 
     iget v9, v6, Lcom/google/android/material/transition/MaterialContainerTransform;->startElevation:F
 
-    .line 22
     invoke-static {v9, v4}, Lcom/google/android/material/transition/MaterialContainerTransform;->getElevationOrDefault(FLandroid/view/View;)F
 
     move-result v12
 
     iget v9, v6, Lcom/google/android/material/transition/MaterialContainerTransform;->endElevation:F
 
-    .line 23
     invoke-static {v9, v5}, Lcom/google/android/material/transition/MaterialContainerTransform;->getElevationOrDefault(FLandroid/view/View;)F
 
     move-result v16
@@ -1236,19 +1144,16 @@
 
     iget v9, v6, Lcom/google/android/material/transition/MaterialContainerTransform;->fadeMode:I
 
-    .line 24
     invoke-static {v9, v1}, Lcom/google/android/material/transition/FadeModeEvaluators;->get(IZ)Lcom/google/android/material/transition/FadeModeEvaluator;
 
     move-result-object v23
 
     iget v9, v6, Lcom/google/android/material/transition/MaterialContainerTransform;->fitMode:I
 
-    .line 25
     invoke-static {v9, v1, v10, v14}, Lcom/google/android/material/transition/FitModeEvaluators;->get(IZLandroid/graphics/RectF;Landroid/graphics/RectF;)Lcom/google/android/material/transition/FitModeEvaluator;
 
     move-result-object v24
 
-    .line 26
     invoke-direct {v6, v1}, Lcom/google/android/material/transition/MaterialContainerTransform;->buildThresholdsGroup(Z)Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;
 
     move-result-object v25
@@ -1265,57 +1170,48 @@
 
     invoke-direct/range {v7 .. v27}, Lcom/google/android/material/transition/MaterialContainerTransform$TransitionDrawable;-><init>(Landroidx/transition/PathMotion;Landroid/view/View;Landroid/graphics/RectF;Lcom/google/android/material/shape/ShapeAppearanceModel;FLandroid/view/View;Landroid/graphics/RectF;Lcom/google/android/material/shape/ShapeAppearanceModel;FIIIIZZLcom/google/android/material/transition/FadeModeEvaluator;Lcom/google/android/material/transition/FitModeEvaluator;Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholdsGroup;ZLcom/google/android/material/transition/MaterialContainerTransform$1;)V
 
-    .line 27
     iget v1, v0, Landroid/graphics/RectF;->left:F
 
-    .line 28
     invoke-static {v1}, Ljava/lang/Math;->round(F)I
 
     move-result v1
 
     iget v7, v0, Landroid/graphics/RectF;->top:F
 
-    .line 29
     invoke-static {v7}, Ljava/lang/Math;->round(F)I
 
     move-result v7
 
     iget v8, v0, Landroid/graphics/RectF;->right:F
 
-    .line 30
     invoke-static {v8}, Ljava/lang/Math;->round(F)I
 
     move-result v8
 
     iget v0, v0, Landroid/graphics/RectF;->bottom:F
 
-    .line 31
     invoke-static {v0}, Ljava/lang/Math;->round(F)I
 
     move-result v0
 
-    .line 32
     invoke-virtual {v3, v1, v7, v8, v0}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     const/4 v0, 0x2
 
     new-array v0, v0, [F
 
-    .line 33
     fill-array-data v0, :array_0
 
     invoke-static {v0}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
     move-result-object v7
 
-    .line 34
     new-instance v0, Lcom/google/android/material/transition/MaterialContainerTransform$1;
 
     invoke-direct {v0, v6, v3}, Lcom/google/android/material/transition/MaterialContainerTransform$1;-><init>(Lcom/google/android/material/transition/MaterialContainerTransform;Lcom/google/android/material/transition/MaterialContainerTransform$TransitionDrawable;)V
 
     invoke-virtual {v7, v0}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 35
     new-instance v8, Lcom/google/android/material/transition/MaterialContainerTransform$2;
 
     move-object v0, v8
@@ -1328,7 +1224,6 @@
 
     return-object v7
 
-    .line 36
     :cond_5
     :goto_2
     sget-object v0, Lcom/google/android/material/transition/MaterialContainerTransform;->TAG:Ljava/lang/String;
@@ -1339,7 +1234,6 @@
 
     return-object v2
 
-    .line 37
     :cond_6
     :goto_3
     sget-object v0, Lcom/google/android/material/transition/MaterialContainerTransform;->TAG:Ljava/lang/String;
@@ -1364,7 +1258,6 @@
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->containerColor:I
 
     return v0
@@ -1375,7 +1268,6 @@
     .annotation build Landroidx/annotation/IdRes;
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->drawingViewId:I
 
     return v0
@@ -1386,7 +1278,6 @@
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endContainerColor:I
 
     return v0
@@ -1395,7 +1286,6 @@
 .method public getEndElevation()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endElevation:F
 
     return v0
@@ -1406,7 +1296,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endShapeAppearanceModel:Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     return-object v0
@@ -1417,7 +1306,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endView:Landroid/view/View;
 
     return-object v0
@@ -1428,7 +1316,6 @@
     .annotation build Landroidx/annotation/IdRes;
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endViewId:I
 
     return v0
@@ -1437,7 +1324,6 @@
 .method public getFadeMode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->fadeMode:I
 
     return v0
@@ -1448,7 +1334,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->fadeProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     return-object v0
@@ -1457,7 +1342,6 @@
 .method public getFitMode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->fitMode:I
 
     return v0
@@ -1468,7 +1352,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->scaleMaskProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     return-object v0
@@ -1479,7 +1362,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->scaleProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     return-object v0
@@ -1490,7 +1372,6 @@
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->scrimColor:I
 
     return v0
@@ -1501,7 +1382,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->shapeMaskProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     return-object v0
@@ -1512,7 +1392,6 @@
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startContainerColor:I
 
     return v0
@@ -1521,7 +1400,6 @@
 .method public getStartElevation()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startElevation:F
 
     return v0
@@ -1532,7 +1410,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startShapeAppearanceModel:Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     return-object v0
@@ -1543,7 +1420,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startView:Landroid/view/View;
 
     return-object v0
@@ -1554,7 +1430,6 @@
     .annotation build Landroidx/annotation/IdRes;
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startViewId:I
 
     return v0
@@ -1563,7 +1438,6 @@
 .method public getTransitionDirection()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->transitionDirection:I
 
     return v0
@@ -1574,7 +1448,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/android/material/transition/MaterialContainerTransform;->TRANSITION_PROPS:[Ljava/lang/String;
 
     return-object v0
@@ -1583,7 +1456,6 @@
 .method public isDrawDebugEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->drawDebugEnabled:Z
 
     return v0
@@ -1592,7 +1464,6 @@
 .method public isElevationShadowEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->elevationShadowEnabled:Z
 
     return v0
@@ -1601,7 +1472,6 @@
 .method public isHoldAtEndEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->holdAtEndEnabled:Z
 
     return v0
@@ -1614,13 +1484,10 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->containerColor:I
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startContainerColor:I
 
-    .line 3
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endContainerColor:I
 
     return-void
@@ -1633,7 +1500,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->containerColor:I
 
     return-void
@@ -1642,7 +1508,6 @@
 .method public setDrawDebugEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->drawDebugEnabled:Z
 
     return-void
@@ -1655,7 +1520,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->drawingViewId:I
 
     return-void
@@ -1664,7 +1528,6 @@
 .method public setElevationShadowEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->elevationShadowEnabled:Z
 
     return-void
@@ -1677,7 +1540,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endContainerColor:I
 
     return-void
@@ -1686,7 +1548,6 @@
 .method public setEndElevation(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endElevation:F
 
     return-void
@@ -1699,7 +1560,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endShapeAppearanceModel:Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     return-void
@@ -1712,7 +1572,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endView:Landroid/view/View;
 
     return-void
@@ -1725,7 +1584,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->endViewId:I
 
     return-void
@@ -1734,7 +1592,6 @@
 .method public setFadeMode(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->fadeMode:I
 
     return-void
@@ -1747,7 +1604,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->fadeProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     return-void
@@ -1756,7 +1612,6 @@
 .method public setFitMode(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->fitMode:I
 
     return-void
@@ -1765,7 +1620,6 @@
 .method public setHoldAtEndEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->holdAtEndEnabled:Z
 
     return-void
@@ -1778,7 +1632,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->scaleMaskProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     return-void
@@ -1791,7 +1644,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->scaleProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     return-void
@@ -1804,7 +1656,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->scrimColor:I
 
     return-void
@@ -1817,7 +1668,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->shapeMaskProgressThresholds:Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 
     return-void
@@ -1830,7 +1680,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startContainerColor:I
 
     return-void
@@ -1839,7 +1688,6 @@
 .method public setStartElevation(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startElevation:F
 
     return-void
@@ -1852,7 +1700,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startShapeAppearanceModel:Lcom/google/android/material/shape/ShapeAppearanceModel;
 
     return-void
@@ -1865,7 +1712,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startView:Landroid/view/View;
 
     return-void
@@ -1878,7 +1724,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->startViewId:I
 
     return-void
@@ -1887,7 +1732,6 @@
 .method public setTransitionDirection(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform;->transitionDirection:I
 
     return-void

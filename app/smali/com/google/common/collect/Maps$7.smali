@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Maps$7;
 .super Ljava/lang/Object;
-.source "Maps.java"
 
 # interfaces
 .implements Lcom/google/common/collect/Maps$EntryTransformer;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/google/common/base/Function;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Maps$7;->val$function:Lcom/google/common/base/Function;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +49,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/google/common/collect/Maps$7;->val$function:Lcom/google/common/base/Function;
 
     invoke-interface {p1, p2}, Lcom/google/common/base/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;

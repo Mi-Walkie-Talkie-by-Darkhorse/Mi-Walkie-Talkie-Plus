@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/util/constants/OverlayConstants;
 .super Ljava/lang/Object;
-.source "OverlayConstants.java"
 
 
 # static fields

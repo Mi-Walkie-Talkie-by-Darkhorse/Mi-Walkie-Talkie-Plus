@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/intercom/g/d/g;
 .super Lcom/ifengyu/intercom/g/d/b;
-.source "MessageCallback.java"
 
 
 # annotations
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/b;-><init>()V
 
     return-void
@@ -33,7 +31,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance p2, Lcom/google/gson/Gson;
 
     invoke-direct {p2}, Lcom/google/gson/Gson;-><init>()V
@@ -65,7 +62,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/g/d/g;->a(Lokhttp3/Response;I)Lcom/ifengyu/intercom/bean/Message;
 
     move-result-object p1

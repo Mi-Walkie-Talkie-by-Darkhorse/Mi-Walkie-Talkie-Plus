@@ -1,6 +1,5 @@
 .class public abstract Lcom/amap/api/col/l3/bx;
 .super Ljava/lang/Object;
-.source "ProtocalHandler.java"
 
 
 # annotations
@@ -41,15 +40,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x3
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/bx;->b:I
 
-    .line 3
     iput-object p1, p0, Lcom/amap/api/col/l3/bx;->c:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/bx;->a:Ljava/lang/Object;
@@ -79,14 +75,12 @@
 
     move-object v3, v2
 
-    .line 1
     :cond_0
     :goto_0
     iget v4, p0, Lcom/amap/api/col/l3/bx;->b:I
 
     if-ge v1, v4, :cond_3
 
-    .line 2
     :try_start_0
     iget-object v4, p0, Lcom/amap/api/col/l3/bx;->c:Landroid/content/Context;
 
@@ -106,17 +100,14 @@
 
     move-result-object v3
 
-    .line 3
     invoke-virtual {p0, v3}, Lcom/amap/api/col/l3/bx;->a(Lcom/amap/api/col/l3/fx$a;)Lorg/json/JSONObject;
 
     move-result-object v4
 
-    .line 4
     invoke-virtual {p0, v4}, Lcom/amap/api/col/l3/bx;->a(Lorg/json/JSONObject;)Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 5
     iget v1, p0, Lcom/amap/api/col/l3/bx;->b:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -130,29 +121,24 @@
 
     const-string v6, "getDataMayThrow AMapException"
 
-    .line 6
     invoke-static {v4, v5, v6}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
     invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 8
     iget v4, p0, Lcom/amap/api/col/l3/bx;->b:I
 
     if-lt v1, v4, :cond_0
 
     if-eqz v3, :cond_2
 
-    .line 9
     iget-object v2, v3, Lcom/amap/api/col/l3/fx$a;->a:Ljava/lang/String;
 
     if-nez v2, :cond_1
 
     goto :goto_1
 
-    .line 10
     :cond_1
     new-instance v0, Lcom/amap/api/maps/AMapException;
 
@@ -222,12 +208,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bx;->a:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/amap/api/col/l3/bx;->d()Ljava/lang/Object;
 
     move-result-object v0

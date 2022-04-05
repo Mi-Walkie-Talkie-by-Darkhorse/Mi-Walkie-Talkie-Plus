@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableBuffer;
 .super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
-.source "ObservableBuffer.java"
 
 
 # annotations
@@ -52,16 +51,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
 
-    .line 2
     iput p2, p0, Lio/reactivex/internal/operators/observable/ObservableBuffer;->count:I
 
-    .line 3
     iput p3, p0, Lio/reactivex/internal/operators/observable/ObservableBuffer;->skip:I
 
-    .line 4
     iput-object p4, p0, Lio/reactivex/internal/operators/observable/ObservableBuffer;->bufferSupplier:Ljava/util/concurrent/Callable;
 
     return-void
@@ -79,35 +74,30 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lio/reactivex/internal/operators/observable/ObservableBuffer;->skip:I
 
     iget v1, p0, Lio/reactivex/internal/operators/observable/ObservableBuffer;->count:I
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableBuffer$BufferExactObserver;
 
     iget-object v2, p0, Lio/reactivex/internal/operators/observable/ObservableBuffer;->bufferSupplier:Ljava/util/concurrent/Callable;
 
     invoke-direct {v0, p1, v1, v2}, Lio/reactivex/internal/operators/observable/ObservableBuffer$BufferExactObserver;-><init>(Lio/reactivex/Observer;ILjava/util/concurrent/Callable;)V
 
-    .line 3
     invoke-virtual {v0}, Lio/reactivex/internal/operators/observable/ObservableBuffer$BufferExactObserver;->createBuffer()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 4
     iget-object p1, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     invoke-interface {p1, v0}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 

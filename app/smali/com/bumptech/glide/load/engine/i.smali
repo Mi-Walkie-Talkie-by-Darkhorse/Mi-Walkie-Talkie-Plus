@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/engine/i;
 .super Ljava/lang/Object;
-.source "Engine.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/k;
@@ -49,7 +48,6 @@
 
     const/4 v1, 0x2
 
-    .line 1
     invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
@@ -68,13 +66,10 @@
 
     move-object v7, p1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object v7, v6, Lcom/bumptech/glide/load/engine/i;->c:Lcom/bumptech/glide/load/engine/y/h;
 
-    .line 4
     new-instance v0, Lcom/bumptech/glide/load/engine/i$c;
 
     move-object v1, p2
@@ -85,7 +80,6 @@
 
     if-nez p9, :cond_0
 
-    .line 5
     new-instance v0, Lcom/bumptech/glide/load/engine/a;
 
     move/from16 v1, p13
@@ -97,16 +91,13 @@
     :cond_0
     move-object/from16 v0, p9
 
-    .line 6
     :goto_0
     iput-object v0, v6, Lcom/bumptech/glide/load/engine/i;->h:Lcom/bumptech/glide/load/engine/a;
 
-    .line 7
     invoke-virtual {v0, p0}, Lcom/bumptech/glide/load/engine/a;->a(Lcom/bumptech/glide/load/engine/n$a;)V
 
     if-nez p8, :cond_1
 
-    .line 8
     new-instance v0, Lcom/bumptech/glide/load/engine/m;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/engine/m;-><init>()V
@@ -116,13 +107,11 @@
     :cond_1
     move-object/from16 v0, p8
 
-    .line 9
     :goto_1
     iput-object v0, v6, Lcom/bumptech/glide/load/engine/i;->b:Lcom/bumptech/glide/load/engine/m;
 
     if-nez p7, :cond_2
 
-    .line 10
     new-instance v0, Lcom/bumptech/glide/load/engine/p;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/engine/p;-><init>()V
@@ -132,13 +121,11 @@
     :cond_2
     move-object/from16 v0, p7
 
-    .line 11
     :goto_2
     iput-object v0, v6, Lcom/bumptech/glide/load/engine/i;->a:Lcom/bumptech/glide/load/engine/p;
 
     if-nez p10, :cond_3
 
-    .line 12
     new-instance v8, Lcom/bumptech/glide/load/engine/i$b;
 
     move-object v0, v8
@@ -160,13 +147,11 @@
     :cond_3
     move-object/from16 v8, p10
 
-    .line 13
     :goto_3
     iput-object v8, v6, Lcom/bumptech/glide/load/engine/i;->d:Lcom/bumptech/glide/load/engine/i$b;
 
     if-nez p11, :cond_4
 
-    .line 14
     new-instance v0, Lcom/bumptech/glide/load/engine/i$a;
 
     iget-object v1, v6, Lcom/bumptech/glide/load/engine/i;->f:Lcom/bumptech/glide/load/engine/i$c;
@@ -178,13 +163,11 @@
     :cond_4
     move-object/from16 v0, p11
 
-    .line 15
     :goto_4
     iput-object v0, v6, Lcom/bumptech/glide/load/engine/i;->g:Lcom/bumptech/glide/load/engine/i$a;
 
     if-nez p12, :cond_5
 
-    .line 16
     new-instance v0, Lcom/bumptech/glide/load/engine/v;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/engine/v;-><init>()V
@@ -194,11 +177,9 @@
     :cond_5
     move-object/from16 v0, p12
 
-    .line 17
     :goto_5
     iput-object v0, v6, Lcom/bumptech/glide/load/engine/i;->e:Lcom/bumptech/glide/load/engine/v;
 
-    .line 18
     invoke-interface {p1, p0}, Lcom/bumptech/glide/load/engine/y/h;->a(Lcom/bumptech/glide/load/engine/y/h$a;)V
 
     return-void
@@ -235,7 +216,6 @@
 
     move/from16 v13, p7
 
-    .line 1
     invoke-direct/range {v0 .. v13}, Lcom/bumptech/glide/load/engine/i;-><init>(Lcom/bumptech/glide/load/engine/y/h;Lcom/bumptech/glide/load/engine/y/a$a;Lcom/bumptech/glide/load/engine/z/a;Lcom/bumptech/glide/load/engine/z/a;Lcom/bumptech/glide/load/engine/z/a;Lcom/bumptech/glide/load/engine/z/a;Lcom/bumptech/glide/load/engine/p;Lcom/bumptech/glide/load/engine/m;Lcom/bumptech/glide/load/engine/a;Lcom/bumptech/glide/load/engine/i$b;Lcom/bumptech/glide/load/engine/i$a;Lcom/bumptech/glide/load/engine/v;Z)V
 
     return-void
@@ -253,7 +233,6 @@
         }
     .end annotation
 
-    .line 30
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/i;->c:Lcom/bumptech/glide/load/engine/y/h;
 
     invoke-interface {v0, p1}, Lcom/bumptech/glide/load/engine/y/h;->a(Lcom/bumptech/glide/load/c;)Lcom/bumptech/glide/load/engine/s;
@@ -266,18 +245,15 @@
 
     goto :goto_0
 
-    .line 31
     :cond_0
     instance-of v0, p1, Lcom/bumptech/glide/load/engine/n;
 
     if-eqz v0, :cond_1
 
-    .line 32
     check-cast p1, Lcom/bumptech/glide/load/engine/n;
 
     goto :goto_0
 
-    .line 33
     :cond_1
     new-instance v0, Lcom/bumptech/glide/load/engine/n;
 
@@ -312,7 +288,6 @@
 
     return-object p1
 
-    .line 28
     :cond_0
     iget-object p2, p0, Lcom/bumptech/glide/load/engine/i;->h:Lcom/bumptech/glide/load/engine/a;
 
@@ -322,7 +297,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 29
     invoke-virtual {p1}, Lcom/bumptech/glide/load/engine/n;->d()V
 
     :cond_1
@@ -332,7 +306,6 @@
 .method private static a(Ljava/lang/String;JLcom/bumptech/glide/load/c;)V
     .locals 1
 
-    .line 27
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -384,7 +357,6 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     invoke-direct {p0, p1}, Lcom/bumptech/glide/load/engine/i;->a(Lcom/bumptech/glide/load/c;)Lcom/bumptech/glide/load/engine/n;
 
@@ -392,10 +364,8 @@
 
     if-eqz p2, :cond_1
 
-    .line 2
     invoke-virtual {p2}, Lcom/bumptech/glide/load/engine/n;->d()V
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/i;->h:Lcom/bumptech/glide/load/engine/a;
 
     invoke-virtual {v0, p1, p2}, Lcom/bumptech/glide/load/engine/a;->a(Lcom/bumptech/glide/load/c;Lcom/bumptech/glide/load/engine/n;)V
@@ -442,10 +412,8 @@
 
     move-object/from16 v7, p18
 
-    .line 1
     invoke-static {}, Lcom/bumptech/glide/util/j;->a()V
 
-    .line 2
     sget-boolean v1, Lcom/bumptech/glide/load/engine/i;->i:Z
 
     if-eqz v1, :cond_0
@@ -462,7 +430,6 @@
     :goto_0
     move-wide v8, v1
 
-    .line 3
     iget-object v10, v0, Lcom/bumptech/glide/load/engine/i;->b:Lcom/bumptech/glide/load/engine/m;
 
     move-object/from16 v11, p2
@@ -485,7 +452,6 @@
 
     move-result-object v10
 
-    .line 4
     invoke-direct {v0, v10, v3}, Lcom/bumptech/glide/load/engine/i;->a(Lcom/bumptech/glide/load/c;Z)Lcom/bumptech/glide/load/engine/n;
 
     move-result-object v1
@@ -494,25 +460,21 @@
 
     if-eqz v1, :cond_2
 
-    .line 5
     sget-object v3, Lcom/bumptech/glide/load/DataSource;->e:Lcom/bumptech/glide/load/DataSource;
 
     invoke-interface {v7, v1, v3}, Lcom/bumptech/glide/request/f;->a(Lcom/bumptech/glide/load/engine/s;Lcom/bumptech/glide/load/DataSource;)V
 
-    .line 6
     sget-boolean v1, Lcom/bumptech/glide/load/engine/i;->i:Z
 
     if-eqz v1, :cond_1
 
     const-string v1, "Loaded resource from active resources"
 
-    .line 7
     invoke-static {v1, v8, v9, v10}, Lcom/bumptech/glide/load/engine/i;->a(Ljava/lang/String;JLcom/bumptech/glide/load/c;)V
 
     :cond_1
     return-object v2
 
-    .line 8
     :cond_2
     invoke-direct {v0, v10, v3}, Lcom/bumptech/glide/load/engine/i;->b(Lcom/bumptech/glide/load/c;Z)Lcom/bumptech/glide/load/engine/n;
 
@@ -520,25 +482,21 @@
 
     if-eqz v1, :cond_4
 
-    .line 9
     sget-object v3, Lcom/bumptech/glide/load/DataSource;->e:Lcom/bumptech/glide/load/DataSource;
 
     invoke-interface {v7, v1, v3}, Lcom/bumptech/glide/request/f;->a(Lcom/bumptech/glide/load/engine/s;Lcom/bumptech/glide/load/DataSource;)V
 
-    .line 10
     sget-boolean v1, Lcom/bumptech/glide/load/engine/i;->i:Z
 
     if-eqz v1, :cond_3
 
     const-string v1, "Loaded resource from cache"
 
-    .line 11
     invoke-static {v1, v8, v9, v10}, Lcom/bumptech/glide/load/engine/i;->a(Ljava/lang/String;JLcom/bumptech/glide/load/c;)V
 
     :cond_3
     return-object v2
 
-    .line 12
     :cond_4
     iget-object v1, v0, Lcom/bumptech/glide/load/engine/i;->a:Lcom/bumptech/glide/load/engine/p;
 
@@ -550,20 +508,16 @@
 
     if-eqz v1, :cond_6
 
-    .line 13
     invoke-virtual {v1, v7}, Lcom/bumptech/glide/load/engine/j;->a(Lcom/bumptech/glide/request/f;)V
 
-    .line 14
     sget-boolean v2, Lcom/bumptech/glide/load/engine/i;->i:Z
 
     if-eqz v2, :cond_5
 
     const-string v2, "Added to existing load"
 
-    .line 15
     invoke-static {v2, v8, v9, v10}, Lcom/bumptech/glide/load/engine/i;->a(Ljava/lang/String;JLcom/bumptech/glide/load/c;)V
 
-    .line 16
     :cond_5
     new-instance v2, Lcom/bumptech/glide/load/engine/i$d;
 
@@ -571,7 +525,6 @@
 
     return-object v2
 
-    .line 17
     :cond_6
     iget-object v1, v0, Lcom/bumptech/glide/load/engine/i;->d:Lcom/bumptech/glide/load/engine/i$b;
 
@@ -585,14 +538,12 @@
 
     move/from16 v6, p17
 
-    .line 18
     invoke-virtual/range {v1 .. v6}, Lcom/bumptech/glide/load/engine/i$b;->a(Lcom/bumptech/glide/load/c;ZZZZ)Lcom/bumptech/glide/load/engine/j;
 
     move-result-object v1
 
     move-object/from16 v27, v1
 
-    .line 19
     iget-object v11, v0, Lcom/bumptech/glide/load/engine/i;->g:Lcom/bumptech/glide/load/engine/i$a;
 
     move-object/from16 v12, p1
@@ -625,33 +576,26 @@
 
     move-object/from16 v26, p13
 
-    .line 20
     invoke-virtual/range {v11 .. v27}, Lcom/bumptech/glide/load/engine/i$a;->a(Lcom/bumptech/glide/e;Ljava/lang/Object;Lcom/bumptech/glide/load/engine/l;Lcom/bumptech/glide/load/c;IILjava/lang/Class;Ljava/lang/Class;Lcom/bumptech/glide/Priority;Lcom/bumptech/glide/load/engine/h;Ljava/util/Map;ZZZLcom/bumptech/glide/load/e;Lcom/bumptech/glide/load/engine/DecodeJob$b;)Lcom/bumptech/glide/load/engine/DecodeJob;
 
     move-result-object v2
 
-    .line 21
     iget-object v3, v0, Lcom/bumptech/glide/load/engine/i;->a:Lcom/bumptech/glide/load/engine/p;
 
     invoke-virtual {v3, v10, v1}, Lcom/bumptech/glide/load/engine/p;->a(Lcom/bumptech/glide/load/c;Lcom/bumptech/glide/load/engine/j;)V
 
-    .line 22
     invoke-virtual {v1, v7}, Lcom/bumptech/glide/load/engine/j;->a(Lcom/bumptech/glide/request/f;)V
 
-    .line 23
     invoke-virtual {v1, v2}, Lcom/bumptech/glide/load/engine/j;->b(Lcom/bumptech/glide/load/engine/DecodeJob;)V
 
-    .line 24
     sget-boolean v2, Lcom/bumptech/glide/load/engine/i;->i:Z
 
     if-eqz v2, :cond_7
 
     const-string v2, "Started new load"
 
-    .line 25
     invoke-static {v2, v8, v9, v10}, Lcom/bumptech/glide/load/engine/i;->a(Ljava/lang/String;JLcom/bumptech/glide/load/c;)V
 
-    .line 26
     :cond_7
     new-instance v2, Lcom/bumptech/glide/load/engine/i$d;
 
@@ -671,29 +615,24 @@
         }
     .end annotation
 
-    .line 43
     invoke-static {}, Lcom/bumptech/glide/util/j;->a()V
 
-    .line 44
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/i;->h:Lcom/bumptech/glide/load/engine/a;
 
     invoke-virtual {v0, p1}, Lcom/bumptech/glide/load/engine/a;->a(Lcom/bumptech/glide/load/c;)V
 
-    .line 45
     invoke-virtual {p2}, Lcom/bumptech/glide/load/engine/n;->f()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 46
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/i;->c:Lcom/bumptech/glide/load/engine/y/h;
 
     invoke-interface {v0, p1, p2}, Lcom/bumptech/glide/load/engine/y/h;->a(Lcom/bumptech/glide/load/c;Lcom/bumptech/glide/load/engine/s;)Lcom/bumptech/glide/load/engine/s;
 
     goto :goto_0
 
-    .line 47
     :cond_0
     iget-object p1, p0, Lcom/bumptech/glide/load/engine/i;->e:Lcom/bumptech/glide/load/engine/v;
 
@@ -715,10 +654,8 @@
         }
     .end annotation
 
-    .line 39
     invoke-static {}, Lcom/bumptech/glide/util/j;->a()V
 
-    .line 40
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/i;->a:Lcom/bumptech/glide/load/engine/p;
 
     invoke-virtual {v0, p2, p1}, Lcom/bumptech/glide/load/engine/p;->b(Lcom/bumptech/glide/load/c;Lcom/bumptech/glide/load/engine/j;)V
@@ -739,27 +676,22 @@
         }
     .end annotation
 
-    .line 34
     invoke-static {}, Lcom/bumptech/glide/util/j;->a()V
 
     if-eqz p3, :cond_0
 
-    .line 35
     invoke-virtual {p3, p2, p0}, Lcom/bumptech/glide/load/engine/n;->a(Lcom/bumptech/glide/load/c;Lcom/bumptech/glide/load/engine/n$a;)V
 
-    .line 36
     invoke-virtual {p3}, Lcom/bumptech/glide/load/engine/n;->f()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 37
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/i;->h:Lcom/bumptech/glide/load/engine/a;
 
     invoke-virtual {v0, p2, p3}, Lcom/bumptech/glide/load/engine/a;->a(Lcom/bumptech/glide/load/c;Lcom/bumptech/glide/load/engine/n;)V
 
-    .line 38
     :cond_0
     iget-object p3, p0, Lcom/bumptech/glide/load/engine/i;->a:Lcom/bumptech/glide/load/engine/p;
 
@@ -782,10 +714,8 @@
         }
     .end annotation
 
-    .line 41
     invoke-static {}, Lcom/bumptech/glide/util/j;->a()V
 
-    .line 42
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/i;->e:Lcom/bumptech/glide/load/engine/v;
 
     invoke-virtual {v0, p1}, Lcom/bumptech/glide/load/engine/v;->a(Lcom/bumptech/glide/load/engine/s;)V
@@ -803,22 +733,18 @@
         }
     .end annotation
 
-    .line 4
     invoke-static {}, Lcom/bumptech/glide/util/j;->a()V
 
-    .line 5
     instance-of v0, p1, Lcom/bumptech/glide/load/engine/n;
 
     if-eqz v0, :cond_0
 
-    .line 6
     check-cast p1, Lcom/bumptech/glide/load/engine/n;
 
     invoke-virtual {p1}, Lcom/bumptech/glide/load/engine/n;->g()V
 
     return-void
 
-    .line 7
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

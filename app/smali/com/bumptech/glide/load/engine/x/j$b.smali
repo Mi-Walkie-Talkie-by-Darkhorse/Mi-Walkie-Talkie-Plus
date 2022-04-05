@@ -1,6 +1,5 @@
 .class final Lcom/bumptech/glide/load/engine/x/j$b;
 .super Lcom/bumptech/glide/load/engine/x/d;
-.source "LruArrayPool.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/load/engine/x/d;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
 .method protected a()Lcom/bumptech/glide/load/engine/x/j$a;
     .locals 1
 
-    .line 4
     new-instance v0, Lcom/bumptech/glide/load/engine/x/j$a;
 
     invoke-direct {v0, p0}, Lcom/bumptech/glide/load/engine/x/j$a;-><init>(Lcom/bumptech/glide/load/engine/x/j$b;)V
@@ -56,14 +53,12 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/bumptech/glide/load/engine/x/d;->b()Lcom/bumptech/glide/load/engine/x/m;
 
     move-result-object v0
 
     check-cast v0, Lcom/bumptech/glide/load/engine/x/j$a;
 
-    .line 3
     invoke-virtual {v0, p1, p2}, Lcom/bumptech/glide/load/engine/x/j$a;->a(ILjava/lang/Class;)V
 
     return-object v0
@@ -72,7 +67,6 @@
 .method protected bridge synthetic a()Lcom/bumptech/glide/load/engine/x/m;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/bumptech/glide/load/engine/x/j$b;->a()Lcom/bumptech/glide/load/engine/x/j$a;
 
     move-result-object v0

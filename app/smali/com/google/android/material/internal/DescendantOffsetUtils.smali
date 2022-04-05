@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/internal/DescendantOffsetUtils;
 .super Ljava/lang/Object;
-.source "DescendantOffsetUtils.java"
 
 
 # annotations
@@ -37,14 +36,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
     sput-object v0, Lcom/google/android/material/internal/DescendantOffsetUtils;->matrix:Ljava/lang/ThreadLocal;
 
-    .line 2
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
@@ -57,7 +54,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -78,7 +74,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -91,7 +86,6 @@
 
     invoke-virtual {p2, v2, v2, v0, v1}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 2
     invoke-static {p0, p1, p2}, Lcom/google/android/material/internal/DescendantOffsetUtils;->offsetDescendantRect(Landroid/view/ViewGroup;Landroid/view/View;Landroid/graphics/Rect;)V
 
     return-void
@@ -108,25 +102,20 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
-    .line 2
     instance-of v1, v0, Landroid/view/View;
 
     if-eqz v1, :cond_0
 
     if-eq v0, p0, :cond_0
 
-    .line 3
     check-cast v0, Landroid/view/View;
 
-    .line 4
     invoke-static {p0, v0, p2}, Lcom/google/android/material/internal/DescendantOffsetUtils;->offsetDescendantMatrix(Landroid/view/ViewParent;Landroid/view/View;Landroid/graphics/Matrix;)V
 
-    .line 5
     invoke-virtual {v0}, Landroid/view/View;->getScrollX()I
 
     move-result p0
@@ -145,7 +134,6 @@
 
     invoke-virtual {p2, p0, v0}, Landroid/graphics/Matrix;->preTranslate(FF)Z
 
-    .line 6
     :cond_0
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
@@ -161,7 +149,6 @@
 
     invoke-virtual {p2, p0, v0}, Landroid/graphics/Matrix;->preTranslate(FF)Z
 
-    .line 7
     invoke-virtual {p1}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
 
     move-result-object p0
@@ -172,7 +159,6 @@
 
     if-nez p0, :cond_1
 
-    .line 8
     invoke-virtual {p1}, Landroid/view/View;->getMatrix()Landroid/graphics/Matrix;
 
     move-result-object p0
@@ -198,7 +184,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object v0, Lcom/google/android/material/internal/DescendantOffsetUtils;->matrix:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -209,27 +194,22 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 3
     sget-object v1, Lcom/google/android/material/internal/DescendantOffsetUtils;->matrix:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v1, v0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Landroid/graphics/Matrix;->reset()V
 
-    .line 5
     :goto_0
     invoke-static {p0, p1, v0}, Lcom/google/android/material/internal/DescendantOffsetUtils;->offsetDescendantMatrix(Landroid/view/ViewParent;Landroid/view/View;Landroid/graphics/Matrix;)V
 
-    .line 6
     sget-object p0, Lcom/google/android/material/internal/DescendantOffsetUtils;->rectF:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -240,24 +220,19 @@
 
     if-nez p0, :cond_1
 
-    .line 7
     new-instance p0, Landroid/graphics/RectF;
 
     invoke-direct {p0}, Landroid/graphics/RectF;-><init>()V
 
-    .line 8
     sget-object p1, Lcom/google/android/material/internal/DescendantOffsetUtils;->rectF:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p1, p0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
-    .line 9
     :cond_1
     invoke-virtual {p0, p2}, Landroid/graphics/RectF;->set(Landroid/graphics/Rect;)V
 
-    .line 10
     invoke-virtual {v0, p0}, Landroid/graphics/Matrix;->mapRect(Landroid/graphics/RectF;)Z
 
-    .line 11
     iget p1, p0, Landroid/graphics/RectF;->left:F
 
     const/high16 v0, 0x3f000000    # 0.5f

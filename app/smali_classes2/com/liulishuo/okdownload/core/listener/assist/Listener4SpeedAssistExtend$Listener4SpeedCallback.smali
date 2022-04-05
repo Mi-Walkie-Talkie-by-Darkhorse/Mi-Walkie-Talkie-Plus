@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/core/listener/assist/Listener4SpeedAssistExtend$Listener4SpeedCallback;
 .super Ljava/lang/Object;
-.source "Listener4SpeedAssistExtend.java"
 
 
 # annotations

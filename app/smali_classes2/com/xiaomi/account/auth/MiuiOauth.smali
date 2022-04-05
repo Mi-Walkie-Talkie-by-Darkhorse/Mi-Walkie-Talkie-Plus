@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/auth/MiuiOauth;
 .super Ljava/lang/Object;
-.source "MiuiOauth.java"
 
 # interfaces
 .implements Lcom/xiaomi/account/auth/XiaomiOAuth;
@@ -32,16 +31,12 @@
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/xiaomi/account/auth/MiuiOauth;->mContext:Landroid/content/Context;
 
-    .line 3
     iput-object p2, p0, Lcom/xiaomi/account/auth/MiuiOauth;->mAppId:Ljava/lang/String;
 
-    .line 4
     iput-object p3, p0, Lcom/xiaomi/account/auth/MiuiOauth;->mRedirectUrl:Ljava/lang/String;
 
     return-void
@@ -50,7 +45,6 @@
 .method static synthetic access$000(Lcom/xiaomi/account/auth/MiuiOauth;)Landroid/content/Context;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/xiaomi/account/auth/MiuiOauth;->mContext:Landroid/content/Context;
 
     return-object p0
@@ -66,12 +60,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession;-><init>(Lcom/xiaomi/account/auth/MiuiOauth;Landroid/app/Activity;Lcom/xiaomi/account/auth/OAuthConfig;)V
 
-    .line 2
     :try_start_0
     invoke-virtual {v0}, Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession;->bind()Z
 
@@ -79,7 +71,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession;->getResult()Lcom/xiaomi/account/openauth/XiaomiOAuthResults;
 
     move-result-object p1
@@ -94,10 +85,8 @@
 
     const-string v1, "fallBack to WebView OAuth"
 
-    .line 4
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     new-instance v0, Lcom/xiaomi/account/auth/WebViewOauth;
 
     iget-object v1, p0, Lcom/xiaomi/account/auth/MiuiOauth;->mContext:Landroid/content/Context;
@@ -108,7 +97,6 @@
 
     invoke-direct {v0, v1, v2, v3}, Lcom/xiaomi/account/auth/WebViewOauth;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {v0, p1, p2}, Lcom/xiaomi/account/auth/WebViewOauth;->startOAuth(Landroid/app/Activity;Lcom/xiaomi/account/auth/OAuthConfig;)Lcom/xiaomi/account/openauth/XiaomiOAuthResults;
 
     move-result-object p1

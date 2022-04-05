@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/tabs/TabLayout$AdapterChangeListener;
 .super Ljava/lang/Object;
-.source "TabLayout.java"
 
 # interfaces
 .implements Landroidx/viewpager/widget/ViewPager$g;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/google/android/material/tabs/TabLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/tabs/TabLayout$AdapterChangeListener;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,14 +50,12 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p2, p0, Lcom/google/android/material/tabs/TabLayout$AdapterChangeListener;->this$0:Lcom/google/android/material/tabs/TabLayout;
 
     iget-object v0, p2, Lcom/google/android/material/tabs/TabLayout;->viewPager:Landroidx/viewpager/widget/ViewPager;
 
     if-ne v0, p1, :cond_0
 
-    .line 2
     iget-boolean p1, p0, Lcom/google/android/material/tabs/TabLayout$AdapterChangeListener;->autoRefresh:Z
 
     invoke-virtual {p2, p3, p1}, Lcom/google/android/material/tabs/TabLayout;->setPagerAdapter(Landroidx/viewpager/widget/a;Z)V
@@ -71,7 +67,6 @@
 .method setAutoRefresh(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/google/android/material/tabs/TabLayout$AdapterChangeListener;->autoRefresh:Z
 
     return-void

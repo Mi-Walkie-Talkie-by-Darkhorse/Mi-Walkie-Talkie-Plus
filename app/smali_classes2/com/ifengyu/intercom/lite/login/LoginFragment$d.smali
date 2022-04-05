@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/LoginFragment$d;
 .super Ljava/lang/Object;
-.source "LoginFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$d;->a:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public run()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$d;->a:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->g(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$d;->a:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -62,7 +58,6 @@
 
     const-string v1, "url"
 
-    .line 3
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -73,7 +68,6 @@
 
     if-nez v1, :cond_0
 
-    .line 4
     new-instance v1, Landroid/content/Intent;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$d;->a:Lcom/ifengyu/intercom/lite/login/LoginFragment;
@@ -88,13 +82,10 @@
 
     const-string v2, "com.ifengyu.intercom.action.MESSAGE_CENTER"
 
-    .line 5
     invoke-virtual {v1, v2}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 6
     invoke-virtual {v1, v0}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
-    .line 7
     new-instance v0, Landroid/content/Intent;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$d;->a:Lcom/ifengyu/intercom/lite/login/LoginFragment;
@@ -119,7 +110,6 @@
 
     aput-object v1, v2, v0
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$d;->a:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -128,7 +118,6 @@
 
     invoke-virtual {v0, v2}, Landroid/content/Context;->startActivities([Landroid/content/Intent;)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$d;->a:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -139,7 +128,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
@@ -155,15 +143,12 @@
 
     const-string v1, "com.ifengyu.intercom.FROM_LOGIN"
 
-    .line 11
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 12
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$d;->a:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-virtual {v1, v0}, Landroidx/fragment/app/Fragment;->startActivity(Landroid/content/Intent;)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$d;->a:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;

@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/view/o;
 .super Ljava/lang/Object;
-.source "NestedScrollingParent3.java"
 
 # interfaces
 .implements Landroidx/core/view/n;

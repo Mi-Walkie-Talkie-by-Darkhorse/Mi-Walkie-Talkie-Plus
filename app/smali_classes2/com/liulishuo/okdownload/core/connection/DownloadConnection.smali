@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/core/connection/DownloadConnection;
 .super Ljava/lang/Object;
-.source "DownloadConnection.java"
 
 
 # annotations

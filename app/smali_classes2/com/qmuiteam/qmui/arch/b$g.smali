@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/b$g;
 .super Ljava/lang/Object;
-.source "QMUIFragment.java"
 
 # interfaces
 .implements Landroid/view/animation/Animation$AnimationListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/b$g;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$g;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-static {v0, p1}, Lcom/qmuiteam/qmui/arch/b;->a(Lcom/qmuiteam/qmui/arch/b;Landroid/view/animation/Animation;)V
@@ -55,7 +52,6 @@
 .method public onAnimationStart(Landroid/view/animation/Animation;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$g;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/arch/b;->b(Landroid/view/animation/Animation;)V

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/DenseImmutableTable;
 .super Lcom/google/common/collect/RegularImmutableTable;
-.source "DenseImmutableTable.java"
 
 
 # annotations
@@ -113,10 +112,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/RegularImmutableTable;-><init>()V
 
-    .line 2
     invoke-virtual {p2}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
@@ -145,24 +142,20 @@
 
     check-cast v0, [[Ljava/lang/Object;
 
-    .line 3
     iput-object v0, p0, Lcom/google/common/collect/DenseImmutableTable;->values:[[Ljava/lang/Object;
 
-    .line 4
     invoke-static {p2}, Lcom/google/common/collect/DenseImmutableTable;->makeIndex(Lcom/google/common/collect/ImmutableSet;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/google/common/collect/DenseImmutableTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
-    .line 5
     invoke-static {p3}, Lcom/google/common/collect/DenseImmutableTable;->makeIndex(Lcom/google/common/collect/ImmutableSet;)Lcom/google/common/collect/ImmutableMap;
 
     move-result-object p2
 
     iput-object p2, p0, Lcom/google/common/collect/DenseImmutableTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
-    .line 6
     iget-object p2, p0, Lcom/google/common/collect/DenseImmutableTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-interface {p2}, Ljava/util/Map;->size()I
@@ -173,7 +166,6 @@
 
     iput-object p2, p0, Lcom/google/common/collect/DenseImmutableTable;->rowCounts:[I
 
-    .line 7
     iget-object p2, p0, Lcom/google/common/collect/DenseImmutableTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-interface {p2}, Ljava/util/Map;->size()I
@@ -184,14 +176,12 @@
 
     iput-object p2, p0, Lcom/google/common/collect/DenseImmutableTable;->columnCounts:[I
 
-    .line 8
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
 
     move-result p2
 
     new-array p2, p2, [I
 
-    .line 9
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
 
     move-result p3
@@ -200,7 +190,6 @@
 
     const/4 v0, 0x0
 
-    .line 10
     :goto_0
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
 
@@ -208,24 +197,20 @@
 
     if-ge v0, v3, :cond_1
 
-    .line 11
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/google/common/collect/Table$Cell;
 
-    .line 12
     invoke-interface {v3}, Lcom/google/common/collect/Table$Cell;->getRowKey()Ljava/lang/Object;
 
     move-result-object v5
 
-    .line 13
     invoke-interface {v3}, Lcom/google/common/collect/Table$Cell;->getColumnKey()Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 14
     iget-object v7, p0, Lcom/google/common/collect/DenseImmutableTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v7, v5}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -238,7 +223,6 @@
 
     move-result v7
 
-    .line 15
     iget-object v8, p0, Lcom/google/common/collect/DenseImmutableTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v8, v6}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -251,7 +235,6 @@
 
     move-result v8
 
-    .line 16
     iget-object v9, p0, Lcom/google/common/collect/DenseImmutableTable;->values:[[Ljava/lang/Object;
 
     aget-object v9, v9, v7
@@ -276,10 +259,8 @@
 
     const-string v5, "duplicate key: (%s, %s)"
 
-    .line 17
     invoke-static {v9, v5, v10}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 18
     iget-object v5, p0, Lcom/google/common/collect/DenseImmutableTable;->values:[[Ljava/lang/Object;
 
     aget-object v5, v5, v7
@@ -290,7 +271,6 @@
 
     aput-object v3, v5, v8
 
-    .line 19
     iget-object v3, p0, Lcom/google/common/collect/DenseImmutableTable;->rowCounts:[I
 
     aget v5, v3, v7
@@ -299,7 +279,6 @@
 
     aput v5, v3, v7
 
-    .line 20
     iget-object v3, p0, Lcom/google/common/collect/DenseImmutableTable;->columnCounts:[I
 
     aget v5, v3, v8
@@ -308,24 +287,19 @@
 
     aput v5, v3, v8
 
-    .line 21
     aput v7, p2, v0
 
-    .line 22
     aput v8, p3, v0
 
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 23
     :cond_1
     iput-object p2, p0, Lcom/google/common/collect/DenseImmutableTable;->iterationOrderRow:[I
 
-    .line 24
     iput-object p3, p0, Lcom/google/common/collect/DenseImmutableTable;->iterationOrderColumn:[I
 
-    .line 25
     new-instance p1, Lcom/google/common/collect/DenseImmutableTable$RowMap;
 
     const/4 p2, 0x0
@@ -334,7 +308,6 @@
 
     iput-object p1, p0, Lcom/google/common/collect/DenseImmutableTable;->rowMap:Lcom/google/common/collect/ImmutableMap;
 
-    .line 26
     new-instance p1, Lcom/google/common/collect/DenseImmutableTable$ColumnMap;
 
     invoke-direct {p1, p0, p2}, Lcom/google/common/collect/DenseImmutableTable$ColumnMap;-><init>(Lcom/google/common/collect/DenseImmutableTable;Lcom/google/common/collect/DenseImmutableTable$1;)V
@@ -347,7 +320,6 @@
 .method static synthetic access$200(Lcom/google/common/collect/DenseImmutableTable;)[I
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/common/collect/DenseImmutableTable;->rowCounts:[I
 
     return-object p0
@@ -356,7 +328,6 @@
 .method static synthetic access$300(Lcom/google/common/collect/DenseImmutableTable;)Lcom/google/common/collect/ImmutableMap;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/common/collect/DenseImmutableTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     return-object p0
@@ -365,7 +336,6 @@
 .method static synthetic access$400(Lcom/google/common/collect/DenseImmutableTable;)[[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/common/collect/DenseImmutableTable;->values:[[Ljava/lang/Object;
 
     return-object p0
@@ -374,7 +344,6 @@
 .method static synthetic access$500(Lcom/google/common/collect/DenseImmutableTable;)[I
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/common/collect/DenseImmutableTable;->columnCounts:[I
 
     return-object p0
@@ -383,7 +352,6 @@
 .method static synthetic access$600(Lcom/google/common/collect/DenseImmutableTable;)Lcom/google/common/collect/ImmutableMap;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/common/collect/DenseImmutableTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     return-object p0
@@ -405,12 +373,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->builder()Lcom/google/common/collect/ImmutableMap$Builder;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSet;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -428,7 +394,6 @@
 
     move-result-object v2
 
-    .line 3
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -439,7 +404,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap$Builder;->build()Lcom/google/common/collect/ImmutableMap;
 
@@ -462,7 +426,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/DenseImmutableTable;->columnMap:Lcom/google/common/collect/ImmutableMap;
 
     return-object v0
@@ -471,7 +434,6 @@
 .method public bridge synthetic columnMap()Ljava/util/Map;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/DenseImmutableTable;->columnMap()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
@@ -498,7 +460,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/DenseImmutableTable;->rowKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -507,7 +468,6 @@
 
     check-cast p1, Ljava/lang/Integer;
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/DenseImmutableTable;->columnKeyToIndex:Lcom/google/common/collect/ImmutableMap;
 
     invoke-virtual {v0, p2}, Lcom/google/common/collect/ImmutableMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -522,7 +482,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/DenseImmutableTable;->values:[[Ljava/lang/Object;
 
@@ -558,17 +517,14 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/DenseImmutableTable;->iterationOrderRow:[I
 
     aget v0, v0, p1
 
-    .line 2
     iget-object v1, p0, Lcom/google/common/collect/DenseImmutableTable;->iterationOrderColumn:[I
 
     aget p1, v1, p1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableTable;->rowKeySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v1
@@ -581,7 +537,6 @@
 
     move-result-object v1
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableTable;->columnKeySet()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v2
@@ -594,14 +549,12 @@
 
     move-result-object v2
 
-    .line 5
     iget-object v3, p0, Lcom/google/common/collect/DenseImmutableTable;->values:[[Ljava/lang/Object;
 
     aget-object v0, v3, v0
 
     aget-object p1, v0, p1
 
-    .line 6
     invoke-static {v1, v2, p1}, Lcom/google/common/collect/ImmutableTable;->cellOf(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/Table$Cell;
 
     move-result-object p1
@@ -617,7 +570,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/DenseImmutableTable;->values:[[Ljava/lang/Object;
 
     iget-object v1, p0, Lcom/google/common/collect/DenseImmutableTable;->iterationOrderRow:[I
@@ -647,7 +599,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/DenseImmutableTable;->rowMap:Lcom/google/common/collect/ImmutableMap;
 
     return-object v0
@@ -656,7 +607,6 @@
 .method public bridge synthetic rowMap()Ljava/util/Map;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/DenseImmutableTable;->rowMap()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
@@ -667,7 +617,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/DenseImmutableTable;->iterationOrderRow:[I
 
     array-length v0, v0

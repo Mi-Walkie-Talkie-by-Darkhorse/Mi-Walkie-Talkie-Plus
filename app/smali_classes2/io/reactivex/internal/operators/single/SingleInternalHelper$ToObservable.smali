@@ -1,6 +1,5 @@
 .class final enum Lio/reactivex/internal/operators/single/SingleInternalHelper$ToObservable;
 .super Ljava/lang/Enum;
-.source "SingleInternalHelper.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;
@@ -39,7 +38,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToObservable;
 
     const/4 v1, 0x0
@@ -56,7 +54,6 @@
 
     aput-object v0, v2, v1
 
-    .line 2
     sput-object v2, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToObservable;->$VALUES:[Lio/reactivex/internal/operators/single/SingleInternalHelper$ToObservable;
 
     return-void
@@ -70,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -79,7 +75,6 @@
 .method public static valueOf(Ljava/lang/String;)Lio/reactivex/internal/operators/single/SingleInternalHelper$ToObservable;
     .locals 1
 
-    .line 1
     const-class v0, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToObservable;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -94,7 +89,6 @@
 .method public static values()[Lio/reactivex/internal/operators/single/SingleInternalHelper$ToObservable;
     .locals 1
 
-    .line 1
     sget-object v0, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToObservable;->$VALUES:[Lio/reactivex/internal/operators/single/SingleInternalHelper$ToObservable;
 
     invoke-virtual {v0}, [Lio/reactivex/internal/operators/single/SingleInternalHelper$ToObservable;->clone()Ljava/lang/Object;
@@ -111,7 +105,6 @@
 .method public apply(Lio/reactivex/SingleSource;)Lio/reactivex/Observable;
     .locals 1
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/single/SingleToObservable;
 
     invoke-direct {v0, p1}, Lio/reactivex/internal/operators/single/SingleToObservable;-><init>(Lio/reactivex/SingleSource;)V
@@ -127,7 +120,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Lio/reactivex/SingleSource;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToObservable;->apply(Lio/reactivex/SingleSource;)Lio/reactivex/Observable;

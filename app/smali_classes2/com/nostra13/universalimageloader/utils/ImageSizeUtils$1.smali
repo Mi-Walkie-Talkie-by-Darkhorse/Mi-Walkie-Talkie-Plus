@@ -1,6 +1,5 @@
 .class synthetic Lcom/nostra13/universalimageloader/utils/ImageSizeUtils$1;
 .super Ljava/lang/Object;
-.source "ImageSizeUtils.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->values()[Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     move-result-object v0

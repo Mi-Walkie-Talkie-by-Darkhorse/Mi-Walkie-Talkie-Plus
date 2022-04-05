@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/js;
 .super Ljava/lang/Object;
-.source "DnsManager.java"
 
 
 # annotations
@@ -53,58 +52,44 @@
 .method private constructor <init>()V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/js;->d:Ljava/lang/Object;
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/col/l3/js;->f:Ljava/util/concurrent/ExecutorService;
 
     const/4 v1, 0x0
 
-    .line 5
     iput-boolean v1, p0, Lcom/amap/api/col/l3/js;->g:Z
 
     const/4 v2, 0x1
 
-    .line 6
     iput-boolean v2, p0, Lcom/amap/api/col/l3/js;->h:Z
 
-    .line 7
     iput-object v0, p0, Lcom/amap/api/col/l3/js;->a:Lcom/amap/api/col/l3/jv;
 
     const/4 v2, 0x2
 
-    .line 8
     iput v2, p0, Lcom/amap/api/col/l3/js;->i:I
 
     const-string v3, ""
 
-    .line 9
     iput-object v3, p0, Lcom/amap/api/col/l3/js;->j:Ljava/lang/String;
 
-    .line 10
     iput-object v3, p0, Lcom/amap/api/col/l3/js;->k:Ljava/lang/String;
 
-    .line 11
     iput-object v0, p0, Lcom/amap/api/col/l3/js;->l:[Ljava/lang/String;
 
-    .line 12
     iput v1, p0, Lcom/amap/api/col/l3/js;->b:I
 
     const/4 v0, 0x5
 
-    .line 13
     iput v0, p0, Lcom/amap/api/col/l3/js;->m:I
 
-    .line 14
     iput v2, p0, Lcom/amap/api/col/l3/js;->n:I
 
     return-void
@@ -123,64 +108,48 @@
 
     const-string v11, "pref"
 
-    .line 15
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 16
     iput-object v0, v1, Lcom/amap/api/col/l3/js;->d:Ljava/lang/Object;
 
-    .line 17
     iput-object v0, v1, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
-    .line 18
     iput-object v0, v1, Lcom/amap/api/col/l3/js;->f:Ljava/util/concurrent/ExecutorService;
 
     const/4 v12, 0x0
 
-    .line 19
     iput-boolean v12, v1, Lcom/amap/api/col/l3/js;->g:Z
 
     const/4 v13, 0x1
 
-    .line 20
     iput-boolean v13, v1, Lcom/amap/api/col/l3/js;->h:Z
 
-    .line 21
     iput-object v0, v1, Lcom/amap/api/col/l3/js;->a:Lcom/amap/api/col/l3/jv;
 
     const/4 v2, 0x2
 
-    .line 22
     iput v2, v1, Lcom/amap/api/col/l3/js;->i:I
 
     const-string v3, ""
 
-    .line 23
     iput-object v3, v1, Lcom/amap/api/col/l3/js;->j:Ljava/lang/String;
 
-    .line 24
     iput-object v3, v1, Lcom/amap/api/col/l3/js;->k:Ljava/lang/String;
 
-    .line 25
     iput-object v0, v1, Lcom/amap/api/col/l3/js;->l:[Ljava/lang/String;
 
-    .line 26
     iput v12, v1, Lcom/amap/api/col/l3/js;->b:I
 
     const/4 v0, 0x5
 
-    .line 27
     iput v0, v1, Lcom/amap/api/col/l3/js;->m:I
 
-    .line 28
     iput v2, v1, Lcom/amap/api/col/l3/js;->n:I
 
-    .line 29
     iput-object v8, v1, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
-    .line 30
     invoke-static {}, Lcom/amap/api/col/l3/ki;->a()V
 
     :try_start_0
@@ -384,19 +353,16 @@
 .method public static a(Landroid/content/Context;)Lcom/amap/api/col/l3/js;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/js;->c:Lcom/amap/api/col/l3/js;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/amap/api/col/l3/js;
 
     invoke-direct {v0, p0}, Lcom/amap/api/col/l3/js;-><init>(Landroid/content/Context;)V
 
     sput-object v0, Lcom/amap/api/col/l3/js;->c:Lcom/amap/api/col/l3/js;
 
-    .line 3
     :cond_0
     sget-object p0, Lcom/amap/api/col/l3/js;->c:Lcom/amap/api/col/l3/js;
 
@@ -406,7 +372,6 @@
 .method private a(Ljava/lang/String;)Ljava/lang/String;
     .locals 6
 
-    .line 30
     invoke-direct {p0}, Lcom/amap/api/col/l3/js;->f()Z
 
     move-result v0
@@ -419,7 +384,6 @@
 
     const/4 v2, 0x0
 
-    .line 31
     :try_start_0
     iget-object v3, p0, Lcom/amap/api/col/l3/js;->d:Ljava/lang/Object;
 
@@ -437,25 +401,20 @@
 
     if-eqz v3, :cond_2
 
-    .line 32
     array-length v4, v3
 
     if-lez v4, :cond_2
 
-    .line 33
     iget-object v4, p0, Lcom/amap/api/col/l3/js;->l:[Ljava/lang/String;
 
     if-nez v4, :cond_0
 
-    .line 34
     iput-object v3, p0, Lcom/amap/api/col/l3/js;->l:[Ljava/lang/String;
 
-    .line 35
     aget-object v1, v3, v2
 
     goto :goto_0
 
-    .line 36
     :cond_0
     iget-object v4, p0, Lcom/amap/api/col/l3/js;->l:[Ljava/lang/String;
 
@@ -465,18 +424,15 @@
 
     if-eqz v4, :cond_1
 
-    .line 37
     iget-object v3, p0, Lcom/amap/api/col/l3/js;->l:[Ljava/lang/String;
 
     aget-object v1, v3, v2
 
     goto :goto_0
 
-    .line 38
     :cond_1
     iput-object v3, p0, Lcom/amap/api/col/l3/js;->l:[Ljava/lang/String;
 
-    .line 39
     aget-object v1, v3, v2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -486,7 +442,6 @@
     :catchall_0
     const/4 v0, 0x0
 
-    .line 40
     :cond_2
     :goto_0
     iget-object v2, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
@@ -495,7 +450,6 @@
 
     invoke-static {v2, v3, v0}, Lcom/amap/api/col/l3/kf;->b(Landroid/content/Context;Ljava/lang/String;I)V
 
-    .line 41
     :cond_3
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -545,7 +499,6 @@
 
     return v1
 
-    .line 42
     :cond_2
     :try_start_0
     array-length v2, p0
@@ -556,7 +509,6 @@
 
     return v0
 
-    .line 43
     :cond_3
     new-instance v2, Ljava/util/ArrayList;
 
@@ -564,34 +516,28 @@
 
     invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 44
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 45
     invoke-static {p0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
     invoke-interface {v2, p0}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 46
     invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
     invoke-interface {v4, p0}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 47
     invoke-static {v2}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
-    .line 48
     invoke-static {v4}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
     const/4 p0, 0x0
 
-    .line 49
     :goto_0
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -599,7 +545,6 @@
 
     if-ge p0, p1, :cond_5
 
-    .line 50
     invoke-interface {v2, p0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -638,7 +583,6 @@
     :try_start_0
     const-string v0, "com.autonavi.httpdns.HttpDnsManager"
 
-    .line 1
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -659,7 +603,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     sput-object v0, Lcom/amap/api/col/l3/js;->c:Lcom/amap/api/col/l3/js;
 
     return-void
@@ -668,7 +611,6 @@
 .method private f()Z
     .locals 6
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/jy;->p()Z
 
     move-result v0
@@ -679,7 +621,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->d:Ljava/lang/Object;
 
@@ -687,7 +628,6 @@
 
     return v1
 
-    .line 3
     :cond_1
     invoke-direct {p0}, Lcom/amap/api/col/l3/js;->g()Z
 
@@ -697,7 +637,6 @@
 
     return v1
 
-    .line 4
     :cond_2
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
@@ -736,7 +675,6 @@
 
     const/4 v3, 0x0
 
-    .line 1
     :try_start_0
     sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -756,14 +694,12 @@
 
     const-string v4, "http.proxyHost"
 
-    .line 2
     invoke-static {v4}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     const-string v4, "http.proxyPort"
 
-    .line 3
     invoke-static {v4}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
@@ -775,7 +711,6 @@
     :cond_1
     const-string v4, "-1"
 
-    .line 4
     :goto_1
     invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
@@ -783,7 +718,6 @@
 
     goto :goto_2
 
-    .line 5
     :cond_2
     iget-object v4, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
@@ -791,7 +725,6 @@
 
     move-result-object v3
 
-    .line 6
     iget-object v4, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
     invoke-static {v4}, Landroid/net/Proxy;->getPort(Landroid/content/Context;)I
@@ -805,7 +738,6 @@
     :catchall_0
     move-exception v4
 
-    .line 7
     invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v4, -0x1
@@ -826,7 +758,6 @@
 .method public final a()V
     .locals 4
 
-    .line 25
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->k:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -835,7 +766,6 @@
 
     if-nez v0, :cond_1
 
-    .line 26
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->j:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -848,20 +778,17 @@
 
     iget-object v1, p0, Lcom/amap/api/col/l3/js;->j:Ljava/lang/String;
 
-    .line 27
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 28
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->k:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/amap/api/col/l3/js;->j:Ljava/lang/String;
 
-    .line 29
     iget-object v1, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
     const-string v2, "ip"
@@ -879,11 +806,9 @@
 
     const/4 v0, 0x0
 
-    .line 4
     :try_start_0
     iput-boolean v0, p0, Lcom/amap/api/col/l3/js;->g:Z
 
-    .line 5
     invoke-direct {p0}, Lcom/amap/api/col/l3/js;->f()Z
 
     move-result v1
@@ -895,27 +820,22 @@
     :cond_0
     if-eqz p1, :cond_4
 
-    .line 6
     iput-object p1, p0, Lcom/amap/api/col/l3/js;->a:Lcom/amap/api/col/l3/jv;
 
-    .line 7
     invoke-virtual {p1}, Lcom/amap/api/col/l3/jv;->c()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 8
     new-instance v2, Ljava/net/URL;
 
     invoke-direct {v2, v1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    .line 9
     invoke-virtual {v2}, Ljava/net/URL;->getHost()Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, "http://abroad.apilocate.amap.com/mobile/binary"
 
-    .line 10
     invoke-virtual {v3, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -924,7 +844,6 @@
 
     const-string v3, "abroad.apilocate.amap.com"
 
-    .line 11
     invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -936,7 +855,6 @@
     :cond_1
     const-string v3, "apilocate.amap.com"
 
-    .line 12
     invoke-virtual {v3, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v3
@@ -950,13 +868,11 @@
     :cond_2
     move-object v3, v2
 
-    .line 13
     :goto_0
     invoke-direct {p0, v3}, Lcom/amap/api/col/l3/js;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 14
     iget-boolean v5, p0, Lcom/amap/api/col/l3/js;->h:Z
 
     if-eqz v5, :cond_3
@@ -967,10 +883,8 @@
 
     if-eqz v5, :cond_3
 
-    .line 15
     iput-boolean v0, p0, Lcom/amap/api/col/l3/js;->h:Z
 
-    .line 16
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
     const-string v4, "ip"
@@ -983,17 +897,14 @@
 
     move-result-object v4
 
-    .line 17
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_3
 
-    .line 18
     iput-object v4, p0, Lcom/amap/api/col/l3/js;->j:Ljava/lang/String;
 
-    .line 19
     :cond_3
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1001,17 +912,14 @@
 
     if-nez v0, :cond_4
 
-    .line 20
     iput-object v4, p0, Lcom/amap/api/col/l3/js;->k:Ljava/lang/String;
 
-    .line 21
     invoke-virtual {v1, v2, v4}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p1, Lcom/amap/api/col/l3/jv;->d:Ljava/lang/String;
 
-    .line 22
     invoke-virtual {p1}, Lcom/amap/api/col/l3/jv;->a()Ljava/util/Map;
 
     move-result-object v0
@@ -1020,12 +928,10 @@
 
     invoke-interface {v0, v1, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 23
     invoke-virtual {p1, v3}, Lcom/amap/api/col/l3/jv;->a(Ljava/lang/String;)V
 
     const/4 p1, 0x1
 
-    .line 24
     iput-boolean p1, p0, Lcom/amap/api/col/l3/js;->g:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1041,12 +947,10 @@
 .method public final b()V
     .locals 5
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/js;->g:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
     const-wide/16 v1, 0x0
@@ -1068,7 +972,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 3
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/jz;->a()Ljava/lang/String;
 
@@ -1076,7 +979,6 @@
 
     iput-object v2, p1, Lcom/amap/api/col/l3/jv;->d:Ljava/lang/String;
 
-    .line 4
     iget-object v2, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
     const-string v3, "pref"
@@ -1095,12 +997,10 @@
 
     if-ltz v6, :cond_0
 
-    .line 5
     monitor-exit p0
 
     return-void
 
-    .line 6
     :cond_0
     :try_start_1
     invoke-static {}, Lcom/amap/api/col/l3/hx;->a()Lcom/amap/api/col/l3/hx;
@@ -1117,7 +1017,6 @@
 
     if-ltz p1, :cond_1
 
-    .line 7
     iget-object p1, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
     const-string v4, "HttpDNS"
@@ -1126,7 +1025,6 @@
 
     invoke-static {p1, v4, v5}, Lcom/amap/api/col/l3/kg;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
     :cond_1
     iget-object p1, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
 
@@ -1138,12 +1036,10 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 9
     monitor-exit p0
 
     return-void
 
-    .line 10
     :catchall_0
     :try_start_2
     iget-object p1, p0, Lcom/amap/api/col/l3/js;->e:Landroid/content/Context;
@@ -1156,7 +1052,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 11
     monitor-exit p0
 
     return-void
@@ -1172,7 +1067,6 @@
 .method public final d()V
     .locals 4
 
-    .line 1
     :try_start_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/js;->f()Z
 
@@ -1182,18 +1076,15 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-boolean v0, p0, Lcom/amap/api/col/l3/js;->g:Z
 
     if-eqz v0, :cond_2
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->l:[Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->l:[Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
@@ -1240,7 +1131,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5
     :catchall_0
     :cond_2
     :goto_0
@@ -1255,19 +1145,16 @@
 
     if-eqz v0, :cond_4
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->f:Ljava/util/concurrent/ExecutorService;
 
     if-nez v0, :cond_3
 
-    .line 7
     invoke-static {}, Lcom/amap/api/col/l3/gv;->d()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/amap/api/col/l3/js;->f:Ljava/util/concurrent/ExecutorService;
 
-    .line 8
     :cond_3
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->f:Ljava/util/concurrent/ExecutorService;
 
@@ -1277,7 +1164,6 @@
 
     if-nez v0, :cond_4
 
-    .line 9
     iget-object v0, p0, Lcom/amap/api/col/l3/js;->f:Ljava/util/concurrent/ExecutorService;
 
     new-instance v1, Lcom/amap/api/col/l3/js$a;

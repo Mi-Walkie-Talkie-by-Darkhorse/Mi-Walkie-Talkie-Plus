@@ -1,6 +1,5 @@
 .class public final Landroidx/core/content/res/e$b;
 .super Ljava/lang/Object;
-.source "ResourcesCompat.java"
 
 
 # annotations
@@ -29,14 +28,12 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1d
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-static {p0}, Landroidx/core/content/res/e$b$b;->a(Landroid/content/res/Resources$Theme;)V
 
     goto :goto_0
@@ -46,7 +43,6 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 3
     invoke-static {p0}, Landroidx/core/content/res/e$b$a;->a(Landroid/content/res/Resources$Theme;)V
 
     :cond_1

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/RegisterFragment$g;
 .super Lcom/qmuiteam/qmui/span/d;
-.source "RegisterFragment.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/RegisterFragment;Landroid/view/View;IIII)V
     .locals 6
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$g;->k:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     move-object v0, p0
@@ -47,7 +45,6 @@
 .method public a(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/RegisterFragment$g;->k:Lcom/ifengyu/intercom/lite/login/RegisterFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/RegisterFragment;->i(Lcom/ifengyu/intercom/lite/login/RegisterFragment;)V

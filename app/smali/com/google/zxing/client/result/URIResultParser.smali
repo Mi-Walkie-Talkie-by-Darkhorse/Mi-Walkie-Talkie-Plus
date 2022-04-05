@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/client/result/URIResultParser;
 .super Lcom/google/zxing/client/result/ResultParser;
-.source "URIResultParser.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 
     const-string v0, "[a-zA-Z][a-zA-Z0-9+-.]+:"
 
-    .line 1
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
@@ -24,7 +22,6 @@
 
     const-string v0, "([a-zA-Z0-9\\-]+\\.){1,6}[a-zA-Z]{2,}(:\\d{1,5})?(/|\\?|$)"
 
-    .line 2
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
@@ -37,7 +34,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/client/result/ResultParser;-><init>()V
 
     return-void
@@ -48,7 +44,6 @@
 
     const-string v0, " "
 
-    .line 1
     invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -59,7 +54,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     sget-object v0, Lcom/google/zxing/client/result/URIResultParser;->URL_WITH_PROTOCOL_PATTERN:Ljava/util/regex/Pattern;
 
@@ -67,7 +61,6 @@
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->find()Z
 
     move-result v2
@@ -84,7 +77,6 @@
 
     return v3
 
-    .line 4
     :cond_1
     sget-object v0, Lcom/google/zxing/client/result/URIResultParser;->URL_WITHOUT_PROTOCOL_PATTERN:Ljava/util/regex/Pattern;
 
@@ -92,7 +84,6 @@
 
     move-result-object p0
 
-    .line 5
     invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
 
     move-result v0
@@ -116,7 +107,6 @@
 .method public bridge synthetic parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/ParsedResult;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/zxing/client/result/URIResultParser;->parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/URIParsedResult;
 
     move-result-object p1
@@ -127,14 +117,12 @@
 .method public parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/URIParsedResult;
     .locals 3
 
-    .line 2
     invoke-static {p1}, Lcom/google/zxing/client/result/ResultParser;->getMassagedText(Lcom/google/zxing/Result;)Ljava/lang/String;
 
     move-result-object p1
 
     const-string v0, "URL:"
 
-    .line 3
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
@@ -153,13 +141,11 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 5
     invoke-static {p1}, Lcom/google/zxing/client/result/URIResultParser;->isBasicallyValidURI(Ljava/lang/String;)Z
 
     move-result v0
@@ -175,7 +161,6 @@
     :cond_1
     return-object v1
 
-    .line 6
     :cond_2
     :goto_0
     new-instance v0, Lcom/google/zxing/client/result/URIParsedResult;

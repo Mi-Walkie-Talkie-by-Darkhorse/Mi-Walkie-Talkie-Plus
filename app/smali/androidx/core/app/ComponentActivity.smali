@@ -1,6 +1,5 @@
 .class public Landroidx/core/app/ComponentActivity;
 .super Landroid/app/Activity;
-.source "ComponentActivity.java"
 
 # interfaces
 .implements Landroidx/lifecycle/k;
@@ -43,17 +42,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
-    .line 2
     new-instance v0, La/b/g;
 
     invoke-direct {v0}, La/b/g;-><init>()V
 
     iput-object v0, p0, Landroidx/core/app/ComponentActivity;->mExtraDataMap:La/b/g;
 
-    .line 3
     new-instance v0, Landroidx/lifecycle/l;
 
     invoke-direct {v0, p0}, Landroidx/lifecycle/l;-><init>(Landroidx/lifecycle/k;)V
@@ -68,7 +64,6 @@
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -79,7 +74,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {v0, p1}, Landroidx/core/view/e;->a(Landroid/view/View;Landroid/view/KeyEvent;)Z
 
     move-result v1
@@ -90,7 +84,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     invoke-static {p0, v0, p0, p1}, Landroidx/core/view/e;->a(Landroidx/core/view/e$a;Landroid/view/View;Landroid/view/Window$Callback;Landroid/view/KeyEvent;)Z
 
@@ -102,7 +95,6 @@
 .method public dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v0
@@ -113,7 +105,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {v0, p1}, Landroidx/core/view/e;->a(Landroid/view/View;Landroid/view/KeyEvent;)Z
 
     move-result v0
@@ -124,7 +115,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyShortcutEvent(Landroid/view/KeyEvent;)Z
 
@@ -154,7 +144,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mExtraDataMap:La/b/g;
 
     invoke-virtual {v0, p1}, La/b/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -171,7 +160,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mLifecycleRegistry:Landroidx/lifecycle/l;
 
     return-object v0
@@ -189,10 +177,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 2
     invoke-static {p0}, Landroidx/lifecycle/ReportFragment;->b(Landroid/app/Activity;)V
 
     return-void
@@ -207,14 +193,12 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mLifecycleRegistry:Landroidx/lifecycle/l;
 
     sget-object v1, Landroidx/lifecycle/Lifecycle$State;->c:Landroidx/lifecycle/Lifecycle$State;
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/l;->a(Landroidx/lifecycle/Lifecycle$State;)V
 
-    .line 2
     invoke-super {p0, p1}, Landroid/app/Activity;->onSaveInstanceState(Landroid/os/Bundle;)V
 
     return-void
@@ -231,7 +215,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mExtraDataMap:La/b/g;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -251,7 +234,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result p1

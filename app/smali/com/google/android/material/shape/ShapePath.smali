@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/shape/ShapePath;
 .super Ljava/lang/Object;
-.source "ShapePath.java"
 
 
 # annotations
@@ -82,17 +81,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/google/android/material/shape/ShapePath;->operations:Ljava/util/List;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -101,7 +97,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-virtual {p0, v0, v0}, Lcom/google/android/material/shape/ShapePath;->reset(FF)V
 
     return-void
@@ -110,24 +105,20 @@
 .method public constructor <init>(FF)V
     .locals 1
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/google/android/material/shape/ShapePath;->operations:Ljava/util/List;
 
-    .line 7
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/google/android/material/shape/ShapePath;->shadowCompatOperations:Ljava/util/List;
 
-    .line 8
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/shape/ShapePath;->reset(FF)V
 
     return-void
@@ -136,7 +127,6 @@
 .method private addConnectingShadowIfNecessary(F)V
     .locals 6
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/shape/ShapePath;->getCurrentShadowAngle()F
 
     move-result v0
@@ -147,7 +137,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-direct {p0}, Lcom/google/android/material/shape/ShapePath;->getCurrentShadowAngle()F
 
@@ -169,11 +158,9 @@
 
     return-void
 
-    .line 3
     :cond_1
     new-instance v1, Lcom/google/android/material/shape/ShapePath$PathArcOperation;
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/android/material/shape/ShapePath;->getEndX()F
 
     move-result v2
@@ -192,17 +179,14 @@
 
     invoke-direct {v1, v2, v3, v4, v5}, Lcom/google/android/material/shape/ShapePath$PathArcOperation;-><init>(FFFF)V
 
-    .line 5
     invoke-direct {p0}, Lcom/google/android/material/shape/ShapePath;->getCurrentShadowAngle()F
 
     move-result v2
 
     invoke-static {v1, v2}, Lcom/google/android/material/shape/ShapePath$PathArcOperation;->access$600(Lcom/google/android/material/shape/ShapePath$PathArcOperation;F)V
 
-    .line 6
     invoke-static {v1, v0}, Lcom/google/android/material/shape/ShapePath$PathArcOperation;->access$700(Lcom/google/android/material/shape/ShapePath$PathArcOperation;F)V
 
-    .line 7
     iget-object v0, p0, Lcom/google/android/material/shape/ShapePath;->shadowCompatOperations:Ljava/util/List;
 
     new-instance v2, Lcom/google/android/material/shape/ShapePath$ArcShadowOperation;
@@ -211,7 +195,6 @@
 
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 8
     invoke-direct {p0, p1}, Lcom/google/android/material/shape/ShapePath;->setCurrentShadowAngle(F)V
 
     return-void
@@ -220,15 +203,12 @@
 .method private addShadowCompatOperation(Lcom/google/android/material/shape/ShapePath$ShadowCompatOperation;FF)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2}, Lcom/google/android/material/shape/ShapePath;->addConnectingShadowIfNecessary(F)V
 
-    .line 2
     iget-object p2, p0, Lcom/google/android/material/shape/ShapePath;->shadowCompatOperations:Ljava/util/List;
 
     invoke-interface {p2, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 3
     invoke-direct {p0, p3}, Lcom/google/android/material/shape/ShapePath;->setCurrentShadowAngle(F)V
 
     return-void
@@ -237,7 +217,6 @@
 .method private getCurrentShadowAngle()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/ShapePath;->currentShadowAngle:F
 
     return v0
@@ -246,7 +225,6 @@
 .method private getEndShadowAngle()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/ShapePath;->endShadowAngle:F
 
     return v0
@@ -255,7 +233,6 @@
 .method private setCurrentShadowAngle(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/shape/ShapePath;->currentShadowAngle:F
 
     return-void
@@ -264,7 +241,6 @@
 .method private setEndShadowAngle(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/shape/ShapePath;->endShadowAngle:F
 
     return-void
@@ -273,7 +249,6 @@
 .method private setEndX(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/shape/ShapePath;->endX:F
 
     return-void
@@ -282,7 +257,6 @@
 .method private setEndY(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/shape/ShapePath;->endY:F
 
     return-void
@@ -291,7 +265,6 @@
 .method private setStartX(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/shape/ShapePath;->startX:F
 
     return-void
@@ -300,7 +273,6 @@
 .method private setStartY(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/shape/ShapePath;->startY:F
 
     return-void
@@ -311,23 +283,18 @@
 .method public addArc(FFFFFF)V
     .locals 4
 
-    .line 1
     new-instance v0, Lcom/google/android/material/shape/ShapePath$PathArcOperation;
 
     invoke-direct {v0, p1, p2, p3, p4}, Lcom/google/android/material/shape/ShapePath$PathArcOperation;-><init>(FFFF)V
 
-    .line 2
     invoke-static {v0, p5}, Lcom/google/android/material/shape/ShapePath$PathArcOperation;->access$600(Lcom/google/android/material/shape/ShapePath$PathArcOperation;F)V
 
-    .line 3
     invoke-static {v0, p6}, Lcom/google/android/material/shape/ShapePath$PathArcOperation;->access$700(Lcom/google/android/material/shape/ShapePath$PathArcOperation;F)V
 
-    .line 4
     iget-object v1, p0, Lcom/google/android/material/shape/ShapePath;->operations:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 5
     new-instance v1, Lcom/google/android/material/shape/ShapePath$ArcShadowOperation;
 
     invoke-direct {v1, v0}, Lcom/google/android/material/shape/ShapePath$ArcShadowOperation;-><init>(Lcom/google/android/material/shape/ShapePath$PathArcOperation;)V
@@ -370,7 +337,6 @@
     :cond_2
     move v3, v0
 
-    .line 6
     :goto_1
     invoke-direct {p0, v1, p5, v3}, Lcom/google/android/material/shape/ShapePath;->addShadowCompatOperation(Lcom/google/android/material/shape/ShapePath$ShadowCompatOperation;FF)V
 
@@ -388,7 +354,6 @@
 
     float-to-double v0, v0
 
-    .line 7
     invoke-static {v0, v1}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v2
@@ -403,7 +368,6 @@
 
     add-float/2addr p5, p3
 
-    .line 8
     invoke-direct {p0, p5}, Lcom/google/android/material/shape/ShapePath;->setEndX(F)V
 
     add-float p3, p2, p4
@@ -414,7 +378,6 @@
 
     div-float/2addr p4, p1
 
-    .line 9
     invoke-static {v0, v1}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide p1
@@ -429,7 +392,6 @@
 
     add-float/2addr p3, p4
 
-    .line 10
     invoke-direct {p0, p3}, Lcom/google/android/material/shape/ShapePath;->setEndY(F)V
 
     return-void
@@ -438,7 +400,6 @@
 .method public applyToPath(Landroid/graphics/Matrix;Landroid/graphics/Path;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/shape/ShapePath;->operations:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -450,7 +411,6 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 2
     iget-object v2, p0, Lcom/google/android/material/shape/ShapePath;->operations:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -459,7 +419,6 @@
 
     check-cast v2, Lcom/google/android/material/shape/ShapePath$PathOperation;
 
-    .line 3
     invoke-virtual {v2, p1, p2}, Lcom/google/android/material/shape/ShapePath$PathOperation;->applyToPath(Landroid/graphics/Matrix;Landroid/graphics/Path;)V
 
     add-int/lit8 v1, v1, 0x1
@@ -473,7 +432,6 @@
 .method containsIncompatibleShadowOp()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/android/material/shape/ShapePath;->containsIncompatibleShadowOp:Z
 
     return v0
@@ -484,26 +442,22 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/shape/ShapePath;->getEndShadowAngle()F
 
     move-result v0
 
     invoke-direct {p0, v0}, Lcom/google/android/material/shape/ShapePath;->addConnectingShadowIfNecessary(F)V
 
-    .line 2
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0, p1}, Landroid/graphics/Matrix;-><init>(Landroid/graphics/Matrix;)V
 
-    .line 3
     new-instance p1, Ljava/util/ArrayList;
 
     iget-object v1, p0, Lcom/google/android/material/shape/ShapePath;->shadowCompatOperations:Ljava/util/List;
 
     invoke-direct {p1, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 4
     new-instance v1, Lcom/google/android/material/shape/ShapePath$1;
 
     invoke-direct {v1, p0, p1, v0}, Lcom/google/android/material/shape/ShapePath$1;-><init>(Lcom/google/android/material/shape/ShapePath;Ljava/util/List;Landroid/graphics/Matrix;)V
@@ -517,7 +471,6 @@
         value = 0x15
     .end annotation
 
-    .line 1
     new-instance v7, Lcom/google/android/material/shape/ShapePath$PathCubicOperation;
 
     move-object v0, v7
@@ -536,20 +489,16 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/google/android/material/shape/ShapePath$PathCubicOperation;-><init>(FFFFFF)V
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/shape/ShapePath;->operations:Ljava/util/List;
 
     invoke-interface {p1, v7}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     const/4 p1, 0x1
 
-    .line 3
     iput-boolean p1, p0, Lcom/google/android/material/shape/ShapePath;->containsIncompatibleShadowOp:Z
 
-    .line 4
     invoke-direct {p0, p5}, Lcom/google/android/material/shape/ShapePath;->setEndX(F)V
 
-    .line 5
     invoke-direct {p0, p6}, Lcom/google/android/material/shape/ShapePath;->setEndY(F)V
 
     return-void
@@ -558,7 +507,6 @@
 .method getEndX()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/ShapePath;->endX:F
 
     return v0
@@ -567,7 +515,6 @@
 .method getEndY()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/ShapePath;->endY:F
 
     return v0
@@ -576,7 +523,6 @@
 .method getStartX()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/ShapePath;->startX:F
 
     return v0
@@ -585,7 +531,6 @@
 .method getStartY()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/ShapePath;->startY:F
 
     return v0
@@ -594,23 +539,18 @@
 .method public lineTo(FF)V
     .locals 4
 
-    .line 1
     new-instance v0, Lcom/google/android/material/shape/ShapePath$PathLineOperation;
 
     invoke-direct {v0}, Lcom/google/android/material/shape/ShapePath$PathLineOperation;-><init>()V
 
-    .line 2
     invoke-static {v0, p1}, Lcom/google/android/material/shape/ShapePath$PathLineOperation;->access$002(Lcom/google/android/material/shape/ShapePath$PathLineOperation;F)F
 
-    .line 3
     invoke-static {v0, p2}, Lcom/google/android/material/shape/ShapePath$PathLineOperation;->access$102(Lcom/google/android/material/shape/ShapePath$PathLineOperation;F)F
 
-    .line 4
     iget-object v1, p0, Lcom/google/android/material/shape/ShapePath;->operations:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 5
     new-instance v1, Lcom/google/android/material/shape/ShapePath$LineShadowOperation;
 
     invoke-virtual {p0}, Lcom/google/android/material/shape/ShapePath;->getEndX()F
@@ -623,7 +563,6 @@
 
     invoke-direct {v1, v0, v2, v3}, Lcom/google/android/material/shape/ShapePath$LineShadowOperation;-><init>(Lcom/google/android/material/shape/ShapePath$PathLineOperation;FF)V
 
-    .line 6
     invoke-virtual {v1}, Lcom/google/android/material/shape/ShapePath$LineShadowOperation;->getAngle()F
 
     move-result v0
@@ -632,20 +571,16 @@
 
     add-float/2addr v0, v2
 
-    .line 7
     invoke-virtual {v1}, Lcom/google/android/material/shape/ShapePath$LineShadowOperation;->getAngle()F
 
     move-result v3
 
     add-float/2addr v3, v2
 
-    .line 8
     invoke-direct {p0, v1, v0, v3}, Lcom/google/android/material/shape/ShapePath;->addShadowCompatOperation(Lcom/google/android/material/shape/ShapePath$ShadowCompatOperation;FF)V
 
-    .line 9
     invoke-direct {p0, p1}, Lcom/google/android/material/shape/ShapePath;->setEndX(F)V
 
-    .line 10
     invoke-direct {p0, p2}, Lcom/google/android/material/shape/ShapePath;->setEndY(F)V
 
     return-void
@@ -657,37 +592,28 @@
         value = 0x15
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;
 
     invoke-direct {v0}, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;-><init>()V
 
-    .line 2
     invoke-static {v0, p1}, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->access$200(Lcom/google/android/material/shape/ShapePath$PathQuadOperation;F)V
 
-    .line 3
     invoke-static {v0, p2}, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->access$300(Lcom/google/android/material/shape/ShapePath$PathQuadOperation;F)V
 
-    .line 4
     invoke-static {v0, p3}, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->access$400(Lcom/google/android/material/shape/ShapePath$PathQuadOperation;F)V
 
-    .line 5
     invoke-static {v0, p4}, Lcom/google/android/material/shape/ShapePath$PathQuadOperation;->access$500(Lcom/google/android/material/shape/ShapePath$PathQuadOperation;F)V
 
-    .line 6
     iget-object p1, p0, Lcom/google/android/material/shape/ShapePath;->operations:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     const/4 p1, 0x1
 
-    .line 7
     iput-boolean p1, p0, Lcom/google/android/material/shape/ShapePath;->containsIncompatibleShadowOp:Z
 
-    .line 8
     invoke-direct {p0, p3}, Lcom/google/android/material/shape/ShapePath;->setEndX(F)V
 
-    .line 9
     invoke-direct {p0, p4}, Lcom/google/android/material/shape/ShapePath;->setEndY(F)V
 
     return-void
@@ -700,7 +626,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, p2, v0, v1}, Lcom/google/android/material/shape/ShapePath;->reset(FFFF)V
 
     return-void
@@ -709,19 +634,14 @@
 .method public reset(FFFF)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/android/material/shape/ShapePath;->setStartX(F)V
 
-    .line 3
     invoke-direct {p0, p2}, Lcom/google/android/material/shape/ShapePath;->setStartY(F)V
 
-    .line 4
     invoke-direct {p0, p1}, Lcom/google/android/material/shape/ShapePath;->setEndX(F)V
 
-    .line 5
     invoke-direct {p0, p2}, Lcom/google/android/material/shape/ShapePath;->setEndY(F)V
 
-    .line 6
     invoke-direct {p0, p3}, Lcom/google/android/material/shape/ShapePath;->setCurrentShadowAngle(F)V
 
     add-float/2addr p3, p4
@@ -730,22 +650,18 @@
 
     rem-float/2addr p3, p1
 
-    .line 7
     invoke-direct {p0, p3}, Lcom/google/android/material/shape/ShapePath;->setEndShadowAngle(F)V
 
-    .line 8
     iget-object p1, p0, Lcom/google/android/material/shape/ShapePath;->operations:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
-    .line 9
     iget-object p1, p0, Lcom/google/android/material/shape/ShapePath;->shadowCompatOperations:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
     const/4 p1, 0x0
 
-    .line 10
     iput-boolean p1, p0, Lcom/google/android/material/shape/ShapePath;->containsIncompatibleShadowOp:Z
 
     return-void

@@ -1,6 +1,5 @@
 .class Lme/zhanghai/android/materialprogressbar/internal/ObjectAnimatorCompatLollipop;
 .super Ljava/lang/Object;
-.source "ObjectAnimatorCompatLollipop.java"
 
 
 # annotations
@@ -13,7 +12,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +32,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0, p1, p2}, Landroid/animation/ObjectAnimator;->ofArgb(Ljava/lang/Object;Landroid/util/Property;[I)Landroid/animation/ObjectAnimator;
 
     move-result-object p0
@@ -45,7 +42,6 @@
 .method public static varargs ofArgb(Ljava/lang/Object;Ljava/lang/String;[I)Landroid/animation/ObjectAnimator;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Landroid/animation/ObjectAnimator;->ofArgb(Ljava/lang/Object;Ljava/lang/String;[I)Landroid/animation/ObjectAnimator;
 
     move-result-object p0
@@ -74,7 +70,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0, p1, p2, p3}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Landroid/util/Property;Landroid/util/Property;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
 
     move-result-object p0
@@ -85,7 +80,6 @@
 .method public static ofFloat(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Landroid/animation/ObjectAnimator;->ofFloat(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
 
     move-result-object p0
@@ -114,7 +108,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0, p1, p2, p3}, Landroid/animation/ObjectAnimator;->ofInt(Ljava/lang/Object;Landroid/util/Property;Landroid/util/Property;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
 
     move-result-object p0
@@ -125,7 +118,6 @@
 .method public static ofInt(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Landroid/animation/ObjectAnimator;->ofInt(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;Landroid/graphics/Path;)Landroid/animation/ObjectAnimator;
 
     move-result-object p0

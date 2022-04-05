@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/idtracking/h;
 .super Lcom/umeng/commonsdk/statistics/idtracking/a;
-.source "NewUMIDTracker.java"
 
 
 # static fields
@@ -17,10 +16,8 @@
 
     const-string v0, "newumid"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/umeng/commonsdk/statistics/idtracking/a;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/idtracking/h;->b:Landroid/content/Context;
 
     return-void
@@ -31,7 +28,6 @@
 .method public f()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/h;->b:Landroid/content/Context;
 
     const-string v1, "umid"

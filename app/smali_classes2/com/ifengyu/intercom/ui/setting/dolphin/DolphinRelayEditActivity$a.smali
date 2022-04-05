@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$a;
 .super Ljava/lang/Object;
-.source "DolphinRelayEditActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/o$k;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +44,6 @@
 .method public b(Ljava/lang/String;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->a(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;)Ljava/lang/String;
@@ -69,7 +66,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->c(Ljava/lang/String;)I
@@ -78,7 +74,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->a(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;I)I
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinRelayEditActivity;->mTvRelayEditUpFreq:Landroid/widget/TextView;

@@ -1,6 +1,5 @@
 .class public final Landroidx/multidex/a;
 .super Ljava/lang/Object;
-.source "MultiDex.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
@@ -40,7 +38,6 @@
 
     const-string v0, "java.vm.version"
 
-    .line 2
     invoke-static {v0}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -62,14 +59,12 @@
         }
     .end annotation
 
-    .line 56
     new-instance v0, Ljava/io/File;
 
     const-string v1, "code_cache"
 
     invoke-direct {v0, p1, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 57
     :try_start_0
     invoke-static {v0}, Landroidx/multidex/a;->a(Ljava/io/File;)V
     :try_end_0
@@ -77,7 +72,6 @@
 
     goto :goto_0
 
-    .line 58
     :catch_0
     new-instance v0, Ljava/io/File;
 
@@ -87,16 +81,13 @@
 
     invoke-direct {v0, p0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 59
     invoke-static {v0}, Landroidx/multidex/a;->a(Ljava/io/File;)V
 
-    .line 60
     :goto_0
     new-instance p0, Ljava/io/File;
 
     invoke-direct {p0, v0, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 61
     invoke-static {p0}, Landroidx/multidex/a;->a(Ljava/io/File;)V
 
     return-object p0
@@ -110,7 +101,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Landroidx/multidex/a;->b(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p0
@@ -126,7 +116,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {p0, p1, p2}, Landroidx/multidex/a;->b(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p0
@@ -142,7 +131,6 @@
         }
     .end annotation
 
-    .line 41
     new-instance v0, Ljava/io/File;
 
     invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
@@ -153,14 +141,12 @@
 
     invoke-direct {v0, p0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 42
     invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
 
     move-result p0
 
     if-eqz p0, :cond_4
 
-    .line 43
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -187,14 +173,12 @@
 
     invoke-static {v2, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 44
     invoke-virtual {v0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object p0
 
     if-nez p0, :cond_0
 
-    .line 45
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -219,7 +203,6 @@
 
     return-void
 
-    .line 46
     :cond_0
     array-length v1, p0
 
@@ -230,7 +213,6 @@
 
     aget-object v4, p0, v3
 
-    .line 47
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -249,7 +231,6 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 48
     invoke-virtual {v4}, Ljava/io/File;->length()J
 
     move-result-wide v6
@@ -260,17 +241,14 @@
 
     move-result-object v5
 
-    .line 49
     invoke-static {v2, v5}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 50
     invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
     move-result v5
 
     if-nez v5, :cond_1
 
-    .line 51
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -293,7 +271,6 @@
 
     goto :goto_1
 
-    .line 52
     :cond_1
     new-instance v5, Ljava/lang/StringBuilder;
 
@@ -320,7 +297,6 @@
 
     goto :goto_0
 
-    .line 53
     :cond_2
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
@@ -328,7 +304,6 @@
 
     if-nez p0, :cond_3
 
-    .line 54
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -351,7 +326,6 @@
 
     goto :goto_2
 
-    .line 55
     :cond_3
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -394,12 +368,10 @@
         }
     .end annotation
 
-    .line 4
     sget-object v0, Landroidx/multidex/a;->a:Ljava/util/Set;
 
     monitor-enter v0
 
-    .line 5
     :try_start_0
     sget-object v1, Landroidx/multidex/a;->a:Ljava/util/Set;
 
@@ -409,18 +381,15 @@
 
     if-eqz v1, :cond_0
 
-    .line 6
     monitor-exit v0
 
     return-void
 
-    .line 7
     :cond_0
     sget-object v1, Landroidx/multidex/a;->a:Ljava/util/Set;
 
     invoke-interface {v1, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
-    .line 8
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x14
@@ -429,7 +398,6 @@
 
     const-string v1, "MultiDex"
 
-    .line 9
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -462,7 +430,6 @@
 
     const-string v2, "java.vm.version"
 
-    .line 10
     invoke-static {v2}, Ljava/lang/System;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -477,10 +444,8 @@
 
     move-result-object v2
 
-    .line 11
     invoke-static {v1, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 12
     :cond_1
     invoke-static {p0}, Landroidx/multidex/a;->c(Landroid/content/Context;)Ljava/lang/ClassLoader;
 
@@ -488,14 +453,12 @@
 
     if-nez v1, :cond_2
 
-    .line 13
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     return-void
 
-    .line 14
     :cond_2
     :try_start_1
     invoke-static {p0}, Landroidx/multidex/a;->a(Landroid/content/Context;)V
@@ -512,16 +475,13 @@
 
     const-string v4, "Something went wrong when trying to clear old MultiDex extraction, continuing without cleaning."
 
-    .line 15
     invoke-static {v3, v4, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 16
     :goto_0
     invoke-static {p0, p2, p3}, Landroidx/multidex/a;->a(Landroid/content/Context;Ljava/io/File;Ljava/lang/String;)Ljava/io/File;
 
     move-result-object p2
 
-    .line 17
     new-instance p3, Landroidx/multidex/MultiDexExtractor;
 
     invoke-direct {p3, p1, p2}, Landroidx/multidex/MultiDexExtractor;-><init>(Ljava/io/File;Ljava/io/File;)V
@@ -532,7 +492,6 @@
 
     const/4 v2, 0x0
 
-    .line 18
     :try_start_3
     invoke-virtual {p3, p0, p4, v2}, Landroidx/multidex/MultiDexExtractor;->a(Landroid/content/Context;Ljava/lang/String;Z)Ljava/util/List;
 
@@ -540,7 +499,6 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 19
     :try_start_4
     invoke-static {v1, p2, v2}, Landroidx/multidex/a;->a(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/util/List;)V
     :try_end_4
@@ -559,22 +517,18 @@
 
     const-string v3, "Failed to install extracted secondary dex files, retrying with forced extraction"
 
-    .line 20
     invoke-static {p5, v3, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     const/4 p5, 0x1
 
-    .line 21
     invoke-virtual {p3, p0, p4, p5}, Landroidx/multidex/MultiDexExtractor;->a(Landroid/content/Context;Ljava/lang/String;Z)Ljava/util/List;
 
     move-result-object p0
 
-    .line 22
     invoke-static {v1, p2, p0}, Landroidx/multidex/a;->a(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/util/List;)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 23
     :goto_1
     :try_start_6
     invoke-virtual {p3}, Landroidx/multidex/MultiDexExtractor;->close()V
@@ -590,19 +544,16 @@
     :goto_2
     if-nez p1, :cond_3
 
-    .line 24
     :try_start_7
     monitor-exit v0
 
     return-void
 
-    .line 25
     :cond_3
     throw p1
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_2
 
-    .line 26
     :cond_4
     :try_start_8
     throw v2
@@ -612,14 +563,12 @@
     :catchall_1
     move-exception p0
 
-    .line 27
     :try_start_9
     invoke-virtual {p3}, Landroidx/multidex/MultiDexExtractor;->close()V
     :try_end_9
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_2
     .catchall {:try_start_9 .. :try_end_9} :catchall_2
 
-    .line 28
     :catch_2
     :try_start_a
     throw p0
@@ -627,7 +576,6 @@
     :catchall_2
     move-exception p0
 
-    .line 29
     monitor-exit v0
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_2
@@ -643,17 +591,14 @@
         }
     .end annotation
 
-    .line 62
     invoke-virtual {p0}, Ljava/io/File;->mkdir()Z
 
-    .line 63
     invoke-virtual {p0}, Ljava/io/File;->isDirectory()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 64
     invoke-virtual {p0}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
     move-result-object v0
@@ -664,7 +609,6 @@
 
     if-nez v0, :cond_0
 
-    .line 65
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -689,7 +633,6 @@
 
     goto :goto_0
 
-    .line 66
     :cond_0
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -707,7 +650,6 @@
 
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 67
     invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
 
     move-result v1
@@ -718,7 +660,6 @@
 
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 68
     invoke-virtual {v0}, Ljava/io/File;->isFile()Z
 
     move-result v1
@@ -729,7 +670,6 @@
 
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 69
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
@@ -740,7 +680,6 @@
 
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 70
     invoke-virtual {v0}, Ljava/io/File;->canRead()Z
 
     move-result v1
@@ -751,7 +690,6 @@
 
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 71
     invoke-virtual {v0}, Ljava/io/File;->canWrite()Z
 
     move-result v0
@@ -762,10 +700,8 @@
 
     move-result-object v0
 
-    .line 72
     invoke-static {v2, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 73
     :goto_0
     new-instance v0, Ljava/io/IOException;
 
@@ -823,21 +759,18 @@
         }
     .end annotation
 
-    .line 36
     invoke-interface {p2}, Ljava/util/List;->isEmpty()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 37
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
 
     if-lt v0, v1, :cond_0
 
-    .line 38
     invoke-static {p0, p2, p1}, Landroidx/multidex/a$b;->a(Ljava/lang/ClassLoader;Ljava/util/List;Ljava/io/File;)V
 
     goto :goto_0
@@ -847,12 +780,10 @@
 
     if-lt v0, p1, :cond_1
 
-    .line 39
     invoke-static {p0, p2}, Landroidx/multidex/a$a;->a(Ljava/lang/ClassLoader;Ljava/util/List;)V
 
     goto :goto_0
 
-    .line 40
     :cond_1
     invoke-static {p0, p2}, Landroidx/multidex/a$c;->a(Ljava/lang/ClassLoader;Ljava/util/List;)V
 
@@ -871,7 +802,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0, p1, p2}, Landroidx/multidex/a;->b(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-void
@@ -884,14 +814,12 @@
 
     if-eqz p0, :cond_3
 
-    .line 30
     new-instance v1, Ljava/util/StringTokenizer;
 
     const-string v2, "."
 
     invoke-direct {v1, p0, v2}, Ljava/util/StringTokenizer;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 31
     invoke-virtual {v1}, Ljava/util/StringTokenizer;->hasMoreTokens()Z
 
     move-result v2
@@ -909,7 +837,6 @@
     :cond_0
     move-object v2, v3
 
-    .line 32
     :goto_0
     invoke-virtual {v1}, Ljava/util/StringTokenizer;->hasMoreTokens()Z
 
@@ -926,13 +853,11 @@
 
     if-eqz v3, :cond_3
 
-    .line 33
     :try_start_0
     invoke-static {v2}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v1
 
-    .line 34
     invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v2
@@ -957,7 +882,6 @@
     :catch_0
     nop
 
-    .line 35
     :cond_3
     :goto_1
     new-instance v1, Ljava/lang/StringBuilder;
@@ -996,7 +920,6 @@
 .method private static b(Landroid/content/Context;)Landroid/content/pm/ApplicationInfo;
     .locals 2
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationInfo()Landroid/content/pm/ApplicationInfo;
 
@@ -1013,7 +936,6 @@
 
     const-string v1, "Failure while trying to obtain ApplicationInfo from Context. Must be running in test mode. Skip patching."
 
-    .line 2
     invoke-static {v0, v1, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     const/4 p0, 0x0
@@ -1029,7 +951,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -1037,13 +958,11 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 4
     :try_start_0
     invoke-virtual {v0, p1}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v1
 
-    .line 5
     invoke-virtual {v1}, Ljava/lang/reflect/Field;->isAccessible()Z
 
     move-result v2
@@ -1052,7 +971,6 @@
 
     const/4 v2, 0x1
 
-    .line 6
     invoke-virtual {v1, v2}, Ljava/lang/reflect/Field;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1060,7 +978,6 @@
     :cond_0
     return-object v1
 
-    .line 7
     :catch_0
     invoke-virtual {v0}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
 
@@ -1068,7 +985,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     new-instance v0, Ljava/lang/NoSuchFieldException;
 
@@ -1121,7 +1037,6 @@
         }
     .end annotation
 
-    .line 9
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -1129,13 +1044,11 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 10
     :try_start_0
     invoke-virtual {v0, p1, p2}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v1
 
-    .line 11
     invoke-virtual {v1}, Ljava/lang/reflect/Method;->isAccessible()Z
 
     move-result v2
@@ -1144,7 +1057,6 @@
 
     const/4 v2, 0x1
 
-    .line 12
     invoke-virtual {v1, v2}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1152,7 +1064,6 @@
     :cond_0
     return-object v1
 
-    .line 13
     :catch_0
     invoke-virtual {v0}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
 
@@ -1160,7 +1071,6 @@
 
     goto :goto_0
 
-    .line 14
     :cond_1
     new-instance v0, Ljava/lang/NoSuchMethodException;
 
@@ -1178,7 +1088,6 @@
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 15
     invoke-static {p2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
@@ -1214,19 +1123,16 @@
         }
     .end annotation
 
-    .line 16
     invoke-static {p0, p1}, Landroidx/multidex/a;->b(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p1
 
-    .line 17
     invoke-virtual {p1, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Ljava/lang/Object;
 
-    .line 18
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
@@ -1241,28 +1147,24 @@
 
     add-int/2addr v2, v3
 
-    .line 19
     invoke-static {v1, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, [Ljava/lang/Object;
 
-    .line 20
     array-length v2, v0
 
     const/4 v3, 0x0
 
     invoke-static {v0, v3, v1, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 21
     array-length v0, v0
 
     array-length v2, p2
 
     invoke-static {p2, v3, v1, v0, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 22
     invoke-virtual {p1, p0, v1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-void
@@ -1275,7 +1177,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -1283,21 +1184,18 @@
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0xe
 
     if-lt v2, v3, :cond_0
 
-    .line 3
     instance-of v2, p0, Ldalvik/system/BaseDexClassLoader;
 
     if-eqz v2, :cond_1
 
     return-object p0
 
-    .line 4
     :cond_0
     instance-of v2, p0, Ldalvik/system/DexClassLoader;
 
@@ -1312,7 +1210,6 @@
     :cond_1
     const-string p0, "Context class loader is null or not dex-capable. Must be running in test mode. Skip patching."
 
-    .line 5
     invoke-static {v0, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     return-object v1
@@ -1326,7 +1223,6 @@
 
     const-string v2, "Failure while trying to obtain Context class loader. Must be running in test mode. Skip patching."
 
-    .line 6
     invoke-static {v0, v2, p0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     return-object v1
@@ -1339,22 +1235,18 @@
 
     const-string v1, "Installing application"
 
-    .line 1
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     sget-boolean v1, Landroidx/multidex/a;->b:Z
 
     if-eqz v1, :cond_0
 
     const-string p0, "VM has multidex support, MultiDex support library is disabled."
 
-    .line 3
     invoke-static {v0, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
-    .line 4
     :cond_0
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -1362,7 +1254,6 @@
 
     if-lt v1, v2, :cond_2
 
-    .line 5
     :try_start_0
     invoke-static {p0}, Landroidx/multidex/a;->b(Landroid/content/Context;)Landroid/content/pm/ApplicationInfo;
 
@@ -1372,12 +1263,10 @@
 
     const-string p0, "No ApplicationInfo available, i.e. running on a test Context: MultiDex support library is disabled."
 
-    .line 6
     invoke-static {v0, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
-    .line 7
     :cond_1
     new-instance v2, Ljava/io/File;
 
@@ -1405,7 +1294,6 @@
 
     const-string p0, "install done"
 
-    .line 8
     invoke-static {v0, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
@@ -1415,10 +1303,8 @@
 
     const-string v1, "MultiDex installation failure"
 
-    .line 9
     invoke-static {v0, v1, p0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 10
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1447,7 +1333,6 @@
 
     throw v0
 
-    .line 11
     :cond_2
     new-instance p0, Ljava/lang/RuntimeException;
 

@@ -1,6 +1,5 @@
 .class final Landroidx/dynamicanimation/a/b$c;
 .super Landroidx/dynamicanimation/a/b$r;
-.source "DynamicAnimation.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Landroidx/dynamicanimation/a/b$r;-><init>(Ljava/lang/String;Landroidx/dynamicanimation/a/b$f;)V
 
     return-void
@@ -31,7 +29,6 @@
 .method public a(Landroid/view/View;)F
     .locals 0
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/View;->getAlpha()F
 
     move-result p1
@@ -42,7 +39,6 @@
 .method public a(Landroid/view/View;F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1, p2}, Landroid/view/View;->setAlpha(F)V
 
     return-void
@@ -51,7 +47,6 @@
 .method public bridge synthetic getValue(Ljava/lang/Object;)F
     .locals 0
 
-    .line 1
     check-cast p1, Landroid/view/View;
 
     invoke-virtual {p0, p1}, Landroidx/dynamicanimation/a/b$c;->a(Landroid/view/View;)F
@@ -64,7 +59,6 @@
 .method public bridge synthetic setValue(Ljava/lang/Object;F)V
     .locals 0
 
-    .line 1
     check-cast p1, Landroid/view/View;
 
     invoke-virtual {p0, p1, p2}, Landroidx/dynamicanimation/a/b$c;->a(Landroid/view/View;F)V

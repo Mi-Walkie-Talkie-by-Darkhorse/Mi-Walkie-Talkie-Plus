@@ -1,6 +1,5 @@
 .class Lcom/github/mikephil/charting/charts/BarLineChartBase$a;
 .super Ljava/lang/Object;
-.source "BarLineChartBase.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/github/mikephil/charting/charts/BarLineChartBase;FFFF)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/github/mikephil/charting/charts/BarLineChartBase$a;->e:Lcom/github/mikephil/charting/charts/BarLineChartBase;
 
     iput p2, p0, Lcom/github/mikephil/charting/charts/BarLineChartBase$a;->a:F
@@ -54,7 +52,6 @@
 .method public run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/BarLineChartBase$a;->e:Lcom/github/mikephil/charting/charts/BarLineChartBase;
 
     iget-object v0, v0, Lcom/github/mikephil/charting/charts/Chart;->t:Lb/a/a/a/g/j;
@@ -69,12 +66,10 @@
 
     invoke-virtual {v0, v1, v2, v3, v4}, Lb/a/a/a/g/j;->a(FFFF)V
 
-    .line 2
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/BarLineChartBase$a;->e:Lcom/github/mikephil/charting/charts/BarLineChartBase;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/BarLineChartBase;->z()V
 
-    .line 3
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/BarLineChartBase$a;->e:Lcom/github/mikephil/charting/charts/BarLineChartBase;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/BarLineChartBase;->A()V

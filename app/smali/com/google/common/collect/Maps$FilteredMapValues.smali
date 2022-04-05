@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Maps$FilteredMapValues;
 .super Lcom/google/common/collect/Maps$Values;
-.source "Maps.java"
 
 
 # annotations
@@ -65,13 +64,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/Maps$Values;-><init>(Ljava/util/Map;)V
 
-    .line 2
     iput-object p2, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->unfiltered:Ljava/util/Map;
 
-    .line 3
     iput-object p3, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->predicate:Lcom/google/common/base/Predicate;
 
     return-void
@@ -87,7 +83,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->unfiltered:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -116,7 +111,6 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Maps$FilteredMapValues;->unfiltered:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -164,7 +158,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Predicates;->in(Ljava/util/Collection;)Lcom/google/common/base/Predicate;
 
     move-result-object p1
@@ -186,7 +179,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Predicates;->in(Ljava/util/Collection;)Lcom/google/common/base/Predicate;
 
     move-result-object p1
@@ -205,7 +197,6 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$Values;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -231,7 +222,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/Maps$Values;->iterator()Ljava/util/Iterator;
 
     move-result-object v0

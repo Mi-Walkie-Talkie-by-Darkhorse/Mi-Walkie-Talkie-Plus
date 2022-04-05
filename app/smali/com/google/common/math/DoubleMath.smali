@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/math/DoubleMath;
 .super Ljava/lang/Object;
-.source "DoubleMath.java"
 
 
 # annotations
@@ -43,7 +42,6 @@
 
     const-wide/high16 v0, 0x4000000000000000L    # 2.0
 
-    .line 1
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -54,7 +52,6 @@
 
     new-array v0, v0, [D
 
-    .line 2
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/google/common/math/DoubleMath;->everySixteenthFactorial:[D
@@ -80,7 +77,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -91,7 +87,6 @@
 
     const-string v0, "n"
 
-    .line 1
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
 
     const/16 v0, 0xaa
@@ -118,7 +113,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     sget-object v2, Lcom/google/common/math/DoubleMath;->everySixteenthFactorial:[D
 
@@ -134,7 +128,6 @@
 .method public static fuzzyCompare(DDD)I
     .locals 0
 
-    .line 1
     invoke-static/range {p0 .. p5}, Lcom/google/common/math/DoubleMath;->fuzzyEquals(DDD)Z
 
     move-result p4
@@ -163,7 +156,6 @@
 
     return p0
 
-    .line 2
     :cond_2
     invoke-static {p0, p1}, Ljava/lang/Double;->isNaN(D)Z
 
@@ -185,14 +177,12 @@
 
     const-string v0, "tolerance"
 
-    .line 1
     invoke-static {v0, p4, p5}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;D)D
 
     sub-double v0, p0, p2
 
     const-wide/high16 v2, 0x3ff0000000000000L    # 1.0
 
-    .line 2
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->copySign(DD)D
 
     move-result-wide v0
@@ -238,7 +228,6 @@
         value = "java.lang.Math.getExponent, com.google.common.math.DoubleUtils"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v0
@@ -291,7 +280,6 @@
 
     if-lez v2, :cond_0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v0
@@ -322,7 +310,6 @@
 .method public static log2(D)D
     .locals 2
 
-    .line 1
     invoke-static {p0, p1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide p0
@@ -350,7 +337,6 @@
 
     if-lez v4, :cond_0
 
-    .line 2
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v2
@@ -369,12 +355,10 @@
 
     invoke-static {v2, v3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 3
     invoke-static {p0, p1}, Ljava/lang/Math;->getExponent(D)I
 
     move-result v2
 
-    .line 4
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isNormal(D)Z
 
     move-result v3
@@ -385,7 +369,6 @@
 
     mul-double p0, p0, v0
 
-    .line 5
     invoke-static {p0, p1, p2}, Lcom/google/common/math/DoubleMath;->log2(DLjava/math/RoundingMode;)I
 
     move-result p0
@@ -394,7 +377,6 @@
 
     return p0
 
-    .line 6
     :cond_1
     sget-object v3, Lcom/google/common/math/DoubleMath$1;->$SwitchMap$java$math$RoundingMode:[I
 
@@ -406,14 +388,12 @@
 
     packed-switch p2, :pswitch_data_0
 
-    .line 7
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
 
     throw p0
 
-    .line 8
     :pswitch_0
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->scaleNormalize(D)D
 
@@ -436,7 +416,6 @@
 
     const/4 v0, 0x1
 
-    .line 9
     :cond_2
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isPowerOfTwo(D)Z
 
@@ -449,7 +428,6 @@
 
     const/4 v0, 0x1
 
-    .line 10
     :cond_3
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isPowerOfTwo(D)Z
 
@@ -462,7 +440,6 @@
 
     goto :goto_2
 
-    .line 11
     :pswitch_3
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isPowerOfTwo(D)Z
 
@@ -472,7 +449,6 @@
 
     goto :goto_2
 
-    .line 12
     :pswitch_4
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isPowerOfTwo(D)Z
 
@@ -521,14 +497,12 @@
         }
     .end annotation
 
-    .line 13
     new-instance v0, Lcom/google/common/math/DoubleMath$MeanAccumulator;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Lcom/google/common/math/DoubleMath$MeanAccumulator;-><init>(Lcom/google/common/math/DoubleMath$1;)V
 
-    .line 14
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -546,7 +520,6 @@
 
     check-cast v1, Ljava/lang/Number;
 
-    .line 15
     invoke-virtual {v1}, Ljava/lang/Number;->doubleValue()D
 
     move-result-wide v1
@@ -555,7 +528,6 @@
 
     goto :goto_0
 
-    .line 16
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/math/DoubleMath$MeanAccumulator;->mean()D
 
@@ -580,14 +552,12 @@
         }
     .end annotation
 
-    .line 17
     new-instance v0, Lcom/google/common/math/DoubleMath$MeanAccumulator;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Lcom/google/common/math/DoubleMath$MeanAccumulator;-><init>(Lcom/google/common/math/DoubleMath$1;)V
 
-    .line 18
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -595,7 +565,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 19
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
@@ -610,7 +579,6 @@
 
     goto :goto_0
 
-    .line 20
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/math/DoubleMath$MeanAccumulator;->mean()D
 
@@ -625,14 +593,12 @@
         value = "MeanAccumulator"
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/math/DoubleMath$MeanAccumulator;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Lcom/google/common/math/DoubleMath$MeanAccumulator;-><init>(Lcom/google/common/math/DoubleMath$1;)V
 
-    .line 2
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -642,14 +608,12 @@
 
     aget-wide v3, p0, v2
 
-    .line 3
     invoke-virtual {v0, v3, v4}, Lcom/google/common/math/DoubleMath$MeanAccumulator;->add(D)V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/math/DoubleMath$MeanAccumulator;->mean()D
 
@@ -664,14 +628,12 @@
         value = "MeanAccumulator"
     .end annotation
 
-    .line 5
     new-instance v0, Lcom/google/common/math/DoubleMath$MeanAccumulator;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Lcom/google/common/math/DoubleMath$MeanAccumulator;-><init>(Lcom/google/common/math/DoubleMath$1;)V
 
-    .line 6
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -683,14 +645,12 @@
 
     int-to-double v3, v3
 
-    .line 7
     invoke-virtual {v0, v3, v4}, Lcom/google/common/math/DoubleMath$MeanAccumulator;->add(D)V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 8
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/math/DoubleMath$MeanAccumulator;->mean()D
 
@@ -705,14 +665,12 @@
         value = "MeanAccumulator"
     .end annotation
 
-    .line 9
     new-instance v0, Lcom/google/common/math/DoubleMath$MeanAccumulator;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, v1}, Lcom/google/common/math/DoubleMath$MeanAccumulator;-><init>(Lcom/google/common/math/DoubleMath$1;)V
 
-    .line 10
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -724,14 +682,12 @@
 
     long-to-double v3, v3
 
-    .line 11
     invoke-virtual {v0, v3, v4}, Lcom/google/common/math/DoubleMath$MeanAccumulator;->add(D)V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 12
     :cond_0
     invoke-virtual {v0}, Lcom/google/common/math/DoubleMath$MeanAccumulator;->mean()D
 
@@ -746,14 +702,12 @@
         value = "#isMathematicalInteger, com.google.common.math.DoubleUtils"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->isFinite(D)Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
-    .line 2
     sget-object v0, Lcom/google/common/math/DoubleMath$1;->$SwitchMap$java$math$RoundingMode:[I
 
     invoke-virtual {p2}, Ljava/math/RoundingMode;->ordinal()I
@@ -770,14 +724,12 @@
 
     packed-switch p2, :pswitch_data_0
 
-    .line 3
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
 
     throw p0
 
-    .line 4
     :pswitch_0
     invoke-static {p0, p1}, Ljava/lang/Math;->rint(D)D
 
@@ -785,7 +737,6 @@
 
     sub-double v2, p0, v0
 
-    .line 5
     invoke-static {v2, v3}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v2
@@ -799,7 +750,6 @@
     :cond_0
     return-wide v0
 
-    .line 6
     :pswitch_1
     invoke-static {p0, p1}, Ljava/lang/Math;->rint(D)D
 
@@ -807,7 +757,6 @@
 
     sub-double v2, p0, v0
 
-    .line 7
     invoke-static {v2, v3}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v2
@@ -816,7 +765,6 @@
 
     if-nez p2, :cond_1
 
-    .line 8
     invoke-static {v4, v5, p0, p1}, Ljava/lang/Math;->copySign(DD)D
 
     move-result-wide v0
@@ -828,7 +776,6 @@
     :cond_1
     return-wide v0
 
-    .line 9
     :pswitch_2
     invoke-static {p0, p1}, Ljava/lang/Math;->rint(D)D
 
@@ -836,7 +783,6 @@
 
     return-wide p0
 
-    .line 10
     :pswitch_3
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isMathematicalInteger(D)Z
 
@@ -846,7 +792,6 @@
 
     return-wide p0
 
-    .line 11
     :cond_2
     invoke-static {v2, v3, p0, p1}, Ljava/lang/Math;->copySign(DD)D
 
@@ -862,7 +807,6 @@
 
     if-lez p2, :cond_4
 
-    .line 12
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isMathematicalInteger(D)Z
 
     move-result p2
@@ -883,7 +827,6 @@
 
     if-gez p2, :cond_6
 
-    .line 13
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isMathematicalInteger(D)Z
 
     move-result p2
@@ -899,7 +842,6 @@
     :goto_1
     return-wide p0
 
-    .line 14
     :pswitch_7
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleMath;->isMathematicalInteger(D)Z
 
@@ -909,7 +851,6 @@
 
     return-wide p0
 
-    .line 15
     :cond_7
     new-instance p0, Ljava/lang/ArithmeticException;
 
@@ -938,7 +879,6 @@
         value = "#roundIntermediate, java.lang.Math.getExponent, com.google.common.math.DoubleUtils"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/google/common/math/DoubleMath;->roundIntermediate(DLjava/math/RoundingMode;)D
 
     move-result-wide p0
@@ -983,25 +923,21 @@
 
     double-to-long p0, p0
 
-    .line 2
     invoke-static {p0, p1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_2
     invoke-static {p0, p1}, Ljava/lang/Math;->getExponent(D)I
 
     move-result p2
 
-    .line 4
     invoke-static {p0, p1}, Lcom/google/common/math/DoubleUtils;->getSignificand(D)J
 
     move-result-wide v0
 
-    .line 5
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
@@ -1018,7 +954,6 @@
 
     if-gez v2, :cond_3
 
-    .line 6
     invoke-virtual {p2}, Ljava/math/BigInteger;->negate()Ljava/math/BigInteger;
 
     move-result-object p2
@@ -1033,7 +968,6 @@
         value = "#roundIntermediate"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/google/common/math/DoubleMath;->roundIntermediate(DLjava/math/RoundingMode;)D
 
     move-result-wide p0
@@ -1070,7 +1004,6 @@
     :goto_1
     and-int/2addr p2, v1
 
-    .line 2
     invoke-static {p2}, Lcom/google/common/math/MathPreconditions;->checkInRange(Z)V
 
     double-to-int p0, p0
@@ -1084,7 +1017,6 @@
         value = "#roundIntermediate"
     .end annotation
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/google/common/math/DoubleMath;->roundIntermediate(DLjava/math/RoundingMode;)D
 
     move-result-wide p0
@@ -1125,7 +1057,6 @@
     :goto_1
     and-int/2addr p2, v0
 
-    .line 2
     invoke-static {p2}, Lcom/google/common/math/MathPreconditions;->checkInRange(Z)V
 
     double-to-long p0, p0

@@ -1,6 +1,5 @@
 .class public abstract Lcom/efs/sdk/base/http/AbsHttpListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
 .implements Lcom/efs/sdk/base/a/h/a/b;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -52,17 +50,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-boolean v0, p1, Lcom/efs/sdk/base/a/f/d;->succ:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/efs/sdk/base/http/AbsHttpListener;->onSuccess(Lcom/efs/sdk/base/http/HttpResponse;)V
 
     return-void
 
-    .line 4
     :cond_0
     invoke-virtual {p0, p1}, Lcom/efs/sdk/base/http/AbsHttpListener;->onError(Lcom/efs/sdk/base/http/HttpResponse;)V
 
@@ -76,7 +71,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/efs/sdk/base/http/HttpResponse;
 
     invoke-virtual {p0, p1}, Lcom/efs/sdk/base/http/AbsHttpListener;->result(Lcom/efs/sdk/base/http/HttpResponse;)V

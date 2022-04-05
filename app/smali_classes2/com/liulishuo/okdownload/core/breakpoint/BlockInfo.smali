@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 .super Ljava/lang/Object;
-.source "BlockInfo.java"
 
 
 # instance fields
@@ -31,7 +30,6 @@
 
     move-wide v3, p3
 
-    .line 1
     invoke-direct/range {v0 .. v6}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;-><init>(JJJ)V
 
     return-void
@@ -45,7 +43,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
@@ -69,13 +66,10 @@
 
     if-ltz v2, :cond_1
 
-    .line 3
     iput-wide p1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->startOffset:J
 
-    .line 4
     iput-wide p3, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->contentLength:J
 
-    .line 5
     new-instance p1, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {p1, p5, p6}, Ljava/util/concurrent/atomic/AtomicLong;-><init>(J)V
@@ -84,7 +78,6 @@
 
     return-void
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -98,7 +91,6 @@
 .method public copy()Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
     .locals 8
 
-    .line 1
     new-instance v7, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
     iget-wide v1, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->startOffset:J
@@ -121,7 +113,6 @@
 .method public getContentLength()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->contentLength:J
 
     return-wide v0
@@ -130,7 +121,6 @@
 .method public getCurrentOffset()J
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->currentOffset:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
@@ -143,7 +133,6 @@
 .method public getRangeLeft()J
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->startOffset:J
 
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->currentOffset:Ljava/util/concurrent/atomic/AtomicLong;
@@ -160,7 +149,6 @@
 .method public getRangeRight()J
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->startOffset:J
 
     iget-wide v2, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->contentLength:J
@@ -177,7 +165,6 @@
 .method public getStartOffset()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->startOffset:J
 
     return-wide v0
@@ -191,7 +178,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->currentOffset:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/concurrent/atomic/AtomicLong;->addAndGet(J)J
@@ -202,7 +188,6 @@
 .method public resetBlock()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->currentOffset:Ljava/util/concurrent/atomic/AtomicLong;
 
     const-wide/16 v1, 0x0
@@ -215,7 +200,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

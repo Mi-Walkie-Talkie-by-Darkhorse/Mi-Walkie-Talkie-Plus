@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/utils/a$1;
 .super Ljava/lang/Object;
-.source "CountDownTimer.java"
 
 # interfaces
 .implements Landroid/os/Handler$Callback;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/umeng/commonsdk/utils/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 8
 
-    .line 1
     iget-object p1, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
     monitor-enter p1
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
@@ -55,12 +51,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     monitor-exit p1
 
     return v1
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
@@ -80,12 +74,10 @@
 
     if-gtz v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
     invoke-virtual {v0}, Lcom/umeng/commonsdk/utils/a;->c()V
 
-    .line 6
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/utils/a;->c(Lcom/umeng/commonsdk/utils/a;)Landroid/os/HandlerThread;
@@ -104,7 +96,6 @@
 
     goto :goto_1
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
@@ -116,7 +107,6 @@
 
     if-gez v0, :cond_2
 
-    .line 8
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/utils/a;->e(Lcom/umeng/commonsdk/utils/a;)Landroid/os/Handler;
@@ -137,18 +127,15 @@
 
     goto :goto_1
 
-    .line 9
     :cond_2
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v6
 
-    .line 10
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
     invoke-virtual {v0, v2, v3}, Lcom/umeng/commonsdk/utils/a;->a(J)V
 
-    .line 11
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/utils/a;->d(Lcom/umeng/commonsdk/utils/a;)J
@@ -168,7 +155,6 @@
 
     if-gez v0, :cond_3
 
-    .line 12
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/utils/a;->d(Lcom/umeng/commonsdk/utils/a;)J
@@ -179,7 +165,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_3
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/a$1;->a:Lcom/umeng/commonsdk/utils/a;
 
@@ -199,7 +184,6 @@
 
     invoke-virtual {v0, v1, v6, v7}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 14
     :cond_4
     :goto_1
     monitor-exit p1

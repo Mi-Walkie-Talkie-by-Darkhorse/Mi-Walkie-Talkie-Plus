@@ -1,6 +1,5 @@
 .class public Lcom/yalantis/ucrop/d/b;
 .super Landroid/os/AsyncTask;
-.source "BitmapLoadTask.java"
 
 
 # annotations
@@ -59,29 +58,22 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/yalantis/ucrop/d/b;->a:Ljava/lang/ref/WeakReference;
 
-    .line 3
     iput-object p2, p0, Lcom/yalantis/ucrop/d/b;->b:Landroid/net/Uri;
 
-    .line 4
     iput-object p3, p0, Lcom/yalantis/ucrop/d/b;->c:Landroid/net/Uri;
 
-    .line 5
     iput p4, p0, Lcom/yalantis/ucrop/d/b;->d:I
 
-    .line 6
     iput p5, p0, Lcom/yalantis/ucrop/d/b;->e:I
 
-    .line 7
     iput-object p6, p0, Lcom/yalantis/ucrop/d/b;->f:Lcom/yalantis/ucrop/c/b;
 
     return-void
@@ -96,14 +88,12 @@
         }
     .end annotation
 
-    .line 34
     iget-object v0, p0, Lcom/yalantis/ucrop/d/b;->b:Landroid/net/Uri;
 
     invoke-virtual {v0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 35
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -124,7 +114,6 @@
 
     const-string v1, "http"
 
-    .line 36
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -144,7 +133,6 @@
     :cond_0
     const-string v1, "file"
 
-    .line 37
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -161,7 +149,6 @@
 
     goto :goto_1
 
-    .line 38
     :cond_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -179,7 +166,6 @@
 
     invoke-static {v2, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 39
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -200,7 +186,6 @@
 
     throw v1
 
-    .line 40
     :cond_2
     :goto_0
     :try_start_0
@@ -228,10 +213,8 @@
     :goto_2
     const-string v1, "Downloading failed"
 
-    .line 41
     invoke-static {v2, v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 42
     throw v0
 .end method
 
@@ -256,12 +239,10 @@
 
     const-string v1, "downloadFile"
 
-    .line 43
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     if-eqz p2, :cond_4
 
-    .line 44
     iget-object v0, p0, Lcom/yalantis/ucrop/d/b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -272,7 +253,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 45
     sget-object v1, Lcom/yalantis/ucrop/a;->b:Lcom/yalantis/ucrop/a;
 
     invoke-virtual {v1}, Lcom/yalantis/ucrop/a;->a()Lokhttp3/OkHttpClient;
@@ -281,13 +261,11 @@
 
     const/4 v2, 0x0
 
-    .line 46
     :try_start_0
     new-instance v3, Lokhttp3/Request$Builder;
 
     invoke-direct {v3}, Lokhttp3/Request$Builder;-><init>()V
 
-    .line 47
     invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -296,12 +274,10 @@
 
     move-result-object p1
 
-    .line 48
     invoke-virtual {p1}, Lokhttp3/Request$Builder;->build()Lokhttp3/Request;
 
     move-result-object p1
 
-    .line 49
     invoke-virtual {v1, p1}, Lokhttp3/OkHttpClient;->newCall(Lokhttp3/Request;)Lokhttp3/Call;
 
     move-result-object p1
@@ -312,7 +288,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 50
     :try_start_1
     invoke-virtual {p1}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
@@ -324,7 +299,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 51
     :try_start_2
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -336,32 +310,26 @@
 
     if-eqz p2, :cond_1
 
-    .line 52
     invoke-static {p2}, Lokio/Okio;->sink(Ljava/io/OutputStream;)Lokio/Sink;
 
     move-result-object v2
 
-    .line 53
     invoke-interface {v3, v2}, Lokio/BufferedSource;->readAll(Lokio/Sink;)J
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 54
     invoke-static {v3}, Lcom/yalantis/ucrop/e/a;->a(Ljava/io/Closeable;)V
 
-    .line 55
     invoke-static {v2}, Lcom/yalantis/ucrop/e/a;->a(Ljava/io/Closeable;)V
 
     if-eqz p1, :cond_0
 
-    .line 56
     invoke-virtual {p1}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/yalantis/ucrop/e/a;->a(Ljava/io/Closeable;)V
 
-    .line 57
     :cond_0
     invoke-virtual {v1}, Lokhttp3/OkHttpClient;->dispatcher()Lokhttp3/Dispatcher;
 
@@ -369,14 +337,12 @@
 
     invoke-virtual {p1}, Lokhttp3/Dispatcher;->cancelAll()V
 
-    .line 58
     iget-object p1, p0, Lcom/yalantis/ucrop/d/b;->c:Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/yalantis/ucrop/d/b;->b:Landroid/net/Uri;
 
     return-void
 
-    .line 59
     :cond_1
     :try_start_3
     new-instance p2, Ljava/lang/NullPointerException;
@@ -416,23 +382,19 @@
 
     move-object v0, p1
 
-    .line 60
     :goto_0
     invoke-static {v2}, Lcom/yalantis/ucrop/e/a;->a(Ljava/io/Closeable;)V
 
-    .line 61
     invoke-static {p1}, Lcom/yalantis/ucrop/e/a;->a(Ljava/io/Closeable;)V
 
     if-eqz v0, :cond_2
 
-    .line 62
     invoke-virtual {v0}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
     move-result-object p1
 
     invoke-static {p1}, Lcom/yalantis/ucrop/e/a;->a(Ljava/io/Closeable;)V
 
-    .line 63
     :cond_2
     invoke-virtual {v1}, Lokhttp3/OkHttpClient;->dispatcher()Lokhttp3/Dispatcher;
 
@@ -440,15 +402,12 @@
 
     invoke-virtual {p1}, Lokhttp3/Dispatcher;->cancelAll()V
 
-    .line 64
     iget-object p1, p0, Lcom/yalantis/ucrop/d/b;->c:Landroid/net/Uri;
 
     iput-object p1, p0, Lcom/yalantis/ucrop/d/b;->b:Landroid/net/Uri;
 
-    .line 65
     throw p2
 
-    .line 66
     :cond_3
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -458,7 +417,6 @@
 
     throw p1
 
-    .line 67
     :cond_4
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -476,7 +434,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 71
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getByteCount()I
 
     move-result p1
@@ -491,7 +448,6 @@
 
     if-le p1, v1, :cond_1
 
-    .line 72
     iget p1, p2, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
     mul-int/lit8 p1, p1, 0x2
@@ -515,7 +471,6 @@
 
     const-string p1, "BitmapWorkerTask"
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/d/b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -526,7 +481,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance p1, Lcom/yalantis/ucrop/d/b$a;
 
     new-instance v0, Ljava/lang/NullPointerException;
@@ -539,13 +493,11 @@
 
     return-object p1
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lcom/yalantis/ucrop/d/b;->b:Landroid/net/Uri;
 
     if-nez v1, :cond_1
 
-    .line 4
     new-instance p1, Lcom/yalantis/ucrop/d/b$a;
 
     new-instance v0, Ljava/lang/NullPointerException;
@@ -558,7 +510,6 @@
 
     return-object p1
 
-    .line 5
     :cond_1
     :try_start_0
     invoke-direct {p0}, Lcom/yalantis/ucrop/d/b;->a()V
@@ -566,17 +517,14 @@
     .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_3
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
 
-    .line 6
     new-instance v1, Landroid/graphics/BitmapFactory$Options;
 
     invoke-direct {v1}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
     const/4 v2, 0x1
 
-    .line 7
     iput-boolean v2, v1, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
 
-    .line 8
     iget v3, p0, Lcom/yalantis/ucrop/d/b;->d:I
 
     iget v4, p0, Lcom/yalantis/ucrop/d/b;->e:I
@@ -589,7 +537,6 @@
 
     const/4 v3, 0x0
 
-    .line 9
     iput-boolean v3, v1, Landroid/graphics/BitmapFactory$Options;->inJustDecodeBounds:Z
 
     const/4 v4, 0x0
@@ -603,7 +550,6 @@
 
     if-nez v3, :cond_5
 
-    .line 10
     :try_start_1
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -618,13 +564,11 @@
     .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 11
     :try_start_2
     invoke-static {v8, v4, v1}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
 
     move-result-object v5
 
-    .line 12
     iget v9, v1, Landroid/graphics/BitmapFactory$Options;->outWidth:I
 
     const/4 v10, -0x1
@@ -639,12 +583,10 @@
 
     goto :goto_1
 
-    .line 13
     :cond_2
     :try_start_3
     invoke-static {v8}, Lcom/yalantis/ucrop/e/a;->a(Ljava/io/Closeable;)V
 
-    .line 14
     invoke-direct {p0, v5, v1}, Lcom/yalantis/ucrop/d/b;->a(Landroid/graphics/Bitmap;Landroid/graphics/BitmapFactory$Options;)Z
 
     move-result v6
@@ -661,7 +603,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_4
     :goto_1
     :try_start_4
@@ -693,7 +634,6 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 16
     :try_start_5
     invoke-static {v8}, Lcom/yalantis/ucrop/e/a;->a(Ljava/io/Closeable;)V
 
@@ -704,7 +644,6 @@
 
     invoke-static {v8}, Lcom/yalantis/ucrop/e/a;->a(Ljava/io/Closeable;)V
 
-    .line 17
     throw v9
     :try_end_5
     .catch Ljava/lang/OutOfMemoryError; {:try_start_5 .. :try_end_5} :catch_1
@@ -715,10 +654,8 @@
 
     const-string v1, "doInBackground: ImageDecoder.createSource: "
 
-    .line 18
     invoke-static {p1, v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 19
     new-instance p1, Lcom/yalantis/ucrop/d/b$a;
 
     new-instance v1, Ljava/lang/IllegalArgumentException;
@@ -750,10 +687,8 @@
 
     const-string v7, "doInBackground: BitmapFactory.decodeFileDescriptor: "
 
-    .line 20
     invoke-static {p1, v7, v6}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 21
     iget v6, v1, Landroid/graphics/BitmapFactory$Options;->inSampleSize:I
 
     mul-int/lit8 v6, v6, 0x2
@@ -765,7 +700,6 @@
     :cond_5
     if-nez v5, :cond_6
 
-    .line 22
     new-instance p1, Lcom/yalantis/ucrop/d/b$a;
 
     new-instance v0, Ljava/lang/IllegalArgumentException;
@@ -792,7 +726,6 @@
 
     return-object p1
 
-    .line 23
     :cond_6
     iget-object p1, p0, Lcom/yalantis/ucrop/d/b;->b:Landroid/net/Uri;
 
@@ -800,22 +733,18 @@
 
     move-result p1
 
-    .line 24
     invoke-static {p1}, Lcom/yalantis/ucrop/e/a;->a(I)I
 
     move-result v0
 
-    .line 25
     invoke-static {p1}, Lcom/yalantis/ucrop/e/a;->b(I)I
 
     move-result v1
 
-    .line 26
     new-instance v3, Lcom/yalantis/ucrop/model/b;
 
     invoke-direct {v3, p1, v0, v1}, Lcom/yalantis/ucrop/model/b;-><init>(III)V
 
-    .line 27
     new-instance p1, Landroid/graphics/Matrix;
 
     invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
@@ -824,7 +753,6 @@
 
     int-to-float v0, v0
 
-    .line 28
     invoke-virtual {p1, v0}, Landroid/graphics/Matrix;->preRotate(F)Z
 
     :cond_7
@@ -834,10 +762,8 @@
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 29
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Matrix;->postScale(FF)Z
 
-    .line 30
     :cond_8
     invoke-virtual {p1}, Landroid/graphics/Matrix;->isIdentity()Z
 
@@ -845,7 +771,6 @@
 
     if-nez v0, :cond_9
 
-    .line 31
     new-instance v0, Lcom/yalantis/ucrop/d/b$a;
 
     invoke-static {v5, p1}, Lcom/yalantis/ucrop/e/a;->a(Landroid/graphics/Bitmap;Landroid/graphics/Matrix;)Landroid/graphics/Bitmap;
@@ -856,7 +781,6 @@
 
     return-object v0
 
-    .line 32
     :cond_9
     new-instance p1, Lcom/yalantis/ucrop/d/b$a;
 
@@ -872,7 +796,6 @@
     :catch_3
     move-exception p1
 
-    .line 33
     :goto_2
     new-instance v0, Lcom/yalantis/ucrop/d/b$a;
 
@@ -888,12 +811,10 @@
         .end annotation
     .end param
 
-    .line 68
     iget-object v0, p1, Lcom/yalantis/ucrop/d/b$a;->c:Ljava/lang/Exception;
 
     if-nez v0, :cond_0
 
-    .line 69
     iget-object v0, p0, Lcom/yalantis/ucrop/d/b;->f:Lcom/yalantis/ucrop/c/b;
 
     iget-object v1, p1, Lcom/yalantis/ucrop/d/b$a;->a:Landroid/graphics/Bitmap;
@@ -908,7 +829,6 @@
 
     goto :goto_0
 
-    .line 70
     :cond_0
     iget-object p1, p0, Lcom/yalantis/ucrop/d/b;->f:Lcom/yalantis/ucrop/c/b;
 
@@ -923,7 +843,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     check-cast p1, [Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Lcom/yalantis/ucrop/d/b;->a([Ljava/lang/Void;)Lcom/yalantis/ucrop/d/b$a;
@@ -940,7 +859,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/yalantis/ucrop/d/b$a;
 
     invoke-virtual {p0, p1}, Lcom/yalantis/ucrop/d/b;->a(Lcom/yalantis/ucrop/d/b$a;)V

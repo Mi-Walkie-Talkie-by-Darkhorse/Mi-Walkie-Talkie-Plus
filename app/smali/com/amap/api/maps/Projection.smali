@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/Projection;
 .super Ljava/lang/Object;
-.source "Projection.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(Lcom/autonavi/amap/mapcore/interfaces/IProjection;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/maps/Projection;->a:Lcom/autonavi/amap/mapcore/interfaces/IProjection;
 
     return-void
@@ -25,7 +22,6 @@
 .method public fromBoundsToTile(Lcom/amap/api/maps/model/LatLngBounds;II)Lcom/amap/api/maps/model/TileProjection;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/Projection;->a:Lcom/autonavi/amap/mapcore/interfaces/IProjection;
 
@@ -40,7 +36,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -51,7 +46,6 @@
 .method public fromScreenLocation(Landroid/graphics/Point;)Lcom/amap/api/maps/model/LatLng;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/Projection;->a:Lcom/autonavi/amap/mapcore/interfaces/IProjection;
 
@@ -66,7 +60,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -77,7 +70,6 @@
 .method public getCameraInfo()Lcom/amap/api/maps/model/AMapCameraInfo;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/Projection;->a:Lcom/autonavi/amap/mapcore/interfaces/IProjection;
 
@@ -92,7 +84,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -103,7 +94,6 @@
 .method public getMapBounds(Lcom/amap/api/maps/model/LatLng;F)Lcom/amap/api/maps/model/LatLngBounds;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/Projection;->a:Lcom/autonavi/amap/mapcore/interfaces/IProjection;
 
@@ -118,7 +108,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -129,7 +118,6 @@
 .method public getVisibleRegion()Lcom/amap/api/maps/model/VisibleRegion;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/Projection;->a:Lcom/autonavi/amap/mapcore/interfaces/IProjection;
 
@@ -144,7 +132,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -157,7 +144,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/Projection;->a:Lcom/autonavi/amap/mapcore/interfaces/IProjection;
 
@@ -172,7 +158,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -183,7 +168,6 @@
 .method public toOpenGLLocation(Lcom/amap/api/maps/model/LatLng;)Landroid/graphics/PointF;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/Projection;->a:Lcom/autonavi/amap/mapcore/interfaces/IProjection;
 
@@ -198,7 +182,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -209,7 +192,6 @@
 .method public toOpenGLWidth(I)F
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/Projection;->a:Lcom/autonavi/amap/mapcore/interfaces/IProjection;
 
@@ -224,7 +206,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -235,7 +216,6 @@
 .method public toScreenLocation(Lcom/amap/api/maps/model/LatLng;)Landroid/graphics/Point;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/Projection;->a:Lcom/autonavi/amap/mapcore/interfaces/IProjection;
 
@@ -250,7 +230,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/xiaomi/account/http/HttpClient;
 .super Ljava/lang/Object;
-.source "HttpClient.java"
 
 
 # virtual methods

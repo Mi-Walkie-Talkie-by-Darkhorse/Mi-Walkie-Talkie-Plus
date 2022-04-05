@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/math/MathUtils;
 .super Ljava/lang/Object;
-.source "MathUtils.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 
     float-to-double p2, p3
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Ljava/lang/Math;->hypot(DD)D
 
     move-result-wide p0
@@ -41,27 +38,22 @@
 .method public static distanceToFurthestCorner(FFFFFF)F
     .locals 1
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/google/android/material/math/MathUtils;->dist(FFFF)F
 
     move-result v0
 
-    .line 2
     invoke-static {p0, p1, p4, p3}, Lcom/google/android/material/math/MathUtils;->dist(FFFF)F
 
     move-result p3
 
-    .line 3
     invoke-static {p0, p1, p4, p5}, Lcom/google/android/material/math/MathUtils;->dist(FFFF)F
 
     move-result p4
 
-    .line 4
     invoke-static {p0, p1, p2, p5}, Lcom/google/android/material/math/MathUtils;->dist(FFFF)F
 
     move-result p0
 
-    .line 5
     invoke-static {v0, p3, p4, p0}, Lcom/google/android/material/math/MathUtils;->max(FFFF)F
 
     move-result p0
@@ -78,7 +70,6 @@
 
     float-to-int v1, v1
 
-    .line 1
     invoke-static {p0}, Ljava/lang/Math;->signum(F)F
 
     move-result v2
@@ -114,7 +105,6 @@
 .method public static floorMod(II)I
     .locals 2
 
-    .line 2
     div-int v0, p0, p1
 
     xor-int v1, p0, p1

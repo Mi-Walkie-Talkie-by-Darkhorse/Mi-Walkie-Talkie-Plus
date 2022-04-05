@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Collections2$OrderedPermutationCollection;
 .super Ljava/util/AbstractCollection;
-.source "Collections2.java"
 
 
 # annotations
@@ -60,10 +59,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
 
-    .line 2
     invoke-static {p2}, Lcom/google/common/collect/Ordering;->from(Ljava/util/Comparator;)Lcom/google/common/collect/Ordering;
 
     move-result-object v0
@@ -74,10 +71,8 @@
 
     iput-object p1, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
 
-    .line 3
     iput-object p2, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->comparator:Ljava/util/Comparator;
 
-    .line 4
     invoke-static {p1, p2}, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->calculateSize(Ljava/util/List;Ljava/util/Comparator;)I
 
     move-result p1
@@ -109,7 +104,6 @@
 
     const/4 v4, 0x1
 
-    .line 1
     :goto_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -121,7 +115,6 @@
 
     add-int/lit8 v5, v3, -0x1
 
-    .line 2
     invoke-interface {p0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -136,7 +129,6 @@
 
     if-gez v5, :cond_0
 
-    .line 3
     invoke-static {v3, v4}, Lcom/google/common/math/LongMath;->binomial(II)J
 
     move-result-wide v4
@@ -145,7 +137,6 @@
 
     const/4 v4, 0x0
 
-    .line 4
     invoke-static {v1, v2}, Lcom/google/common/collect/Collections2;->access$000(J)Z
 
     move-result v5
@@ -161,7 +152,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-static {v3, v4}, Lcom/google/common/math/LongMath;->binomial(II)J
 
@@ -169,7 +159,6 @@
 
     mul-long v1, v1, p0
 
-    .line 6
     invoke-static {v1, v2}, Lcom/google/common/collect/Collections2;->access$000(J)Z
 
     move-result p0
@@ -193,15 +182,12 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Ljava/util/List;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Collections2;->access$100(Ljava/util/List;Ljava/util/List;)Z
@@ -235,7 +221,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Collections2$OrderedPermutationIterator;
 
     iget-object v1, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
@@ -250,7 +235,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->size:I
 
     return v0
@@ -259,7 +243,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Collections2$OrderedPermutationCollection;->inputList:Lcom/google/common/collect/ImmutableList;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;

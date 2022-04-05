@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/Futures$CombinedFuture;
 .super Lcom/google/common/util/concurrent/AbstractFuture;
-.source "Futures.java"
 
 
 # annotations
@@ -82,7 +81,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -113,23 +111,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractFuture;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->seenExceptionsLock:Ljava/lang/Object;
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->futures:Lcom/google/common/collect/ImmutableCollection;
 
-    .line 4
     iput-boolean p2, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->allMustSucceed:Z
 
-    .line 5
     new-instance p2, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
@@ -140,10 +133,8 @@
 
     iput-object p2, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->remaining:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 6
     iput-object p4, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->combiner:Lcom/google/common/util/concurrent/Futures$FutureCombiner;
 
-    .line 7
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
 
     move-result p1
@@ -154,7 +145,6 @@
 
     iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->values:Ljava/util/List;
 
-    .line 8
     invoke-virtual {p0, p3}, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->init(Ljava/util/concurrent/Executor;)V
 
     return-void
@@ -163,7 +153,6 @@
 .method static synthetic access$400(Lcom/google/common/util/concurrent/Futures$CombinedFuture;ILjava/util/concurrent/Future;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->setOneValue(ILjava/util/concurrent/Future;)V
 
     return-void
@@ -172,35 +161,29 @@
 .method private setExceptionAndMaybeLog(Ljava/lang/Throwable;)V
     .locals 3
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->allMustSucceed:Z
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-super {p0, p1}, Lcom/google/common/util/concurrent/AbstractFuture;->setException(Ljava/lang/Throwable;)Z
 
     move-result v0
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->seenExceptionsLock:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 4
     :try_start_0
     iget-object v2, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->seenExceptions:Ljava/util/Set;
 
     if-nez v2, :cond_0
 
-    .line 5
     invoke-static {}, Lcom/google/common/collect/Sets;->newHashSet()Ljava/util/HashSet;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->seenExceptions:Ljava/util/Set;
 
-    .line 6
     :cond_0
     iget-object v2, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->seenExceptions:Ljava/util/Set;
 
@@ -208,7 +191,6 @@
 
     move-result v2
 
-    .line 7
     monitor-exit v1
 
     goto :goto_0
@@ -227,7 +209,6 @@
 
     const/4 v2, 0x1
 
-    .line 8
     :goto_0
     instance-of v1, p1, Ljava/lang/Error;
 
@@ -241,7 +222,6 @@
 
     if-eqz v2, :cond_3
 
-    .line 9
     :cond_2
     sget-object v0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->logger:Ljava/util/logging/Logger;
 
@@ -267,10 +247,8 @@
 
     const-string v0, "Less than 0 remaining futures"
 
-    .line 1
     iget-object v1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->values:Ljava/util/List;
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractFuture;->isDone()Z
 
     move-result v2
@@ -283,7 +261,6 @@
 
     if-nez v1, :cond_3
 
-    .line 3
     :cond_0
     iget-boolean v2, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->allMustSucceed:Z
 
@@ -311,7 +288,6 @@
 
     invoke-static {v2, v5}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
-    .line 4
     :cond_3
     :try_start_0
     invoke-interface {p2}, Ljava/util/concurrent/Future;->isDone()Z
@@ -322,14 +298,12 @@
 
     invoke-static {v2, v5}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
-    .line 5
     invoke-static {p2}, Lcom/google/common/util/concurrent/Uninterruptibles;->getUninterruptibly(Ljava/util/concurrent/Future;)Ljava/lang/Object;
 
     move-result-object p2
 
     if-eqz v1, :cond_4
 
-    .line 6
     invoke-static {p2}, Lcom/google/common/base/Optional;->fromNullable(Ljava/lang/Object;)Lcom/google/common/base/Optional;
 
     move-result-object p2
@@ -340,7 +314,6 @@
     .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 7
     :cond_4
     iget-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->remaining:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -355,20 +328,17 @@
     :cond_5
     const/4 v3, 0x0
 
-    .line 8
     :goto_2
     invoke-static {v3, v0}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
     if-nez p1, :cond_b
 
-    .line 9
     iget-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->combiner:Lcom/google/common/util/concurrent/Futures$FutureCombiner;
 
     if-eqz p1, :cond_6
 
     if-eqz v1, :cond_6
 
-    .line 10
     :goto_3
     invoke-interface {p1, v1}, Lcom/google/common/util/concurrent/Futures$FutureCombiner;->combine(Ljava/util/List;)Ljava/lang/Object;
 
@@ -378,7 +348,6 @@
 
     goto :goto_7
 
-    .line 11
     :cond_6
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractFuture;->isDone()Z
 
@@ -391,13 +360,11 @@
     :catchall_0
     move-exception p1
 
-    .line 12
     :try_start_1
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->setExceptionAndMaybeLog(Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 13
     iget-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->remaining:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
@@ -411,13 +378,11 @@
     :cond_7
     const/4 v3, 0x0
 
-    .line 14
     :goto_4
     invoke-static {v3, v0}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
     if-nez p1, :cond_b
 
-    .line 15
     iget-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->combiner:Lcom/google/common/util/concurrent/Futures$FutureCombiner;
 
     if-eqz p1, :cond_6
@@ -429,7 +394,6 @@
     :catch_0
     move-exception p1
 
-    .line 16
     :try_start_2
     invoke-virtual {p1}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
 
@@ -439,7 +403,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 17
     iget-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->remaining:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
@@ -453,13 +416,11 @@
     :cond_8
     const/4 v3, 0x0
 
-    .line 18
     :goto_5
     invoke-static {v3, v0}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
     if-nez p1, :cond_b
 
-    .line 19
     iget-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->combiner:Lcom/google/common/util/concurrent/Futures$FutureCombiner;
 
     if-eqz p1, :cond_6
@@ -468,19 +429,16 @@
 
     goto :goto_3
 
-    .line 20
     :catch_1
     :try_start_3
     iget-boolean p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->allMustSucceed:Z
 
     if-eqz p1, :cond_9
 
-    .line 21
     invoke-virtual {p0, v4}, Lcom/google/common/util/concurrent/AbstractFuture;->cancel(Z)Z
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 22
     :cond_9
     iget-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->remaining:Ljava/util/concurrent/atomic/AtomicInteger;
 
@@ -495,13 +453,11 @@
     :cond_a
     const/4 v3, 0x0
 
-    .line 23
     :goto_6
     invoke-static {v3, v0}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
     if-nez p1, :cond_b
 
-    .line 24
     iget-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->combiner:Lcom/google/common/util/concurrent/Futures$FutureCombiner;
 
     if-eqz p1, :cond_6
@@ -517,7 +473,6 @@
     :catchall_1
     move-exception p1
 
-    .line 25
     iget-object p2, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->remaining:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
@@ -531,20 +486,17 @@
     :cond_c
     const/4 v3, 0x0
 
-    .line 26
     :goto_8
     invoke-static {v3, v0}, Lcom/google/common/base/Preconditions;->checkState(ZLjava/lang/Object;)V
 
     if-nez p2, :cond_e
 
-    .line 27
     iget-object p2, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->combiner:Lcom/google/common/util/concurrent/Futures$FutureCombiner;
 
     if-eqz p2, :cond_d
 
     if-eqz v1, :cond_d
 
-    .line 28
     invoke-interface {p2, v1}, Lcom/google/common/util/concurrent/Futures$FutureCombiner;->combine(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object p2
@@ -553,7 +505,6 @@
 
     goto :goto_9
 
-    .line 29
     :cond_d
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractFuture;->isDone()Z
 
@@ -561,7 +512,6 @@
 
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 30
     :cond_e
     :goto_9
     throw p1
@@ -572,7 +522,6 @@
 .method protected init(Ljava/util/concurrent/Executor;)V
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Futures$CombinedFuture$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/Futures$CombinedFuture$1;-><init>(Lcom/google/common/util/concurrent/Futures$CombinedFuture;)V
@@ -583,7 +532,6 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/google/common/util/concurrent/AbstractFuture;->addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->futures:Lcom/google/common/collect/ImmutableCollection;
 
     invoke-virtual {v0}, Ljava/util/AbstractCollection;->isEmpty()Z
@@ -592,7 +540,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->combiner:Lcom/google/common/util/concurrent/Futures$FutureCombiner;
 
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
@@ -612,7 +559,6 @@
 
     const/4 v1, 0x0
 
-    .line 4
     :goto_0
     iget-object v2, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->futures:Lcom/google/common/collect/ImmutableCollection;
 
@@ -622,7 +568,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 5
     iget-object v2, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->values:Ljava/util/List;
 
     const/4 v3, 0x0
@@ -633,7 +578,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-object v1, p0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;->futures:Lcom/google/common/collect/ImmutableCollection;
 
@@ -656,7 +600,6 @@
 
     add-int/lit8 v3, v0, 0x1
 
-    .line 7
     new-instance v4, Lcom/google/common/util/concurrent/Futures$CombinedFuture$2;
 
     invoke-direct {v4, p0, v0, v2}, Lcom/google/common/util/concurrent/Futures$CombinedFuture$2;-><init>(Lcom/google/common/util/concurrent/Futures$CombinedFuture;ILcom/google/common/util/concurrent/ListenableFuture;)V

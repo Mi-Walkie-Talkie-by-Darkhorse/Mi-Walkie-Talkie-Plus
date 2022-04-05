@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/net/a;
 .super Ljava/lang/Object;
-.source "AsyncWeiboRunner.java"
 
 
 # annotations
@@ -20,10 +19,8 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/sina/weibo/sdk/net/a;->a:Landroid/content/Context;
 
     return-void
@@ -34,7 +31,6 @@
 .method public a(Ljava/lang/String;Lcom/sina/weibo/sdk/net/f;Ljava/lang/String;Lcom/sina/weibo/sdk/net/d;)V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/net/a;->a:Landroid/content/Context;
 
     invoke-virtual {p2}, Lcom/sina/weibo/sdk/net/f;->b()Ljava/lang/String;
@@ -47,7 +43,6 @@
 
     invoke-virtual {v0}, Lb/b/a/a/d/g;->a()V
 
-    .line 2
     new-instance v0, Lcom/sina/weibo/sdk/net/a$b;
 
     iget-object v2, p0, Lcom/sina/weibo/sdk/net/a;->a:Landroid/content/Context;

@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/SerializingExecutor$TaskRunner;
 .super Ljava/lang/Object;
-.source "SerializingExecutor.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lcom/google/common/util/concurrent/SerializingExecutor;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/SerializingExecutor$TaskRunner;->this$0:Lcom/google/common/util/concurrent/SerializingExecutor;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lcom/google/common/util/concurrent/SerializingExecutor;Lcom/google/common/util/concurrent/SerializingExecutor$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/SerializingExecutor$TaskRunner;-><init>(Lcom/google/common/util/concurrent/SerializingExecutor;)V
 
     return-void
@@ -52,7 +49,6 @@
 
     const/4 v1, 0x1
 
-    .line 1
     :try_start_0
     iget-object v2, p0, Lcom/google/common/util/concurrent/SerializingExecutor$TaskRunner;->this$0:Lcom/google/common/util/concurrent/SerializingExecutor;
 
@@ -62,7 +58,6 @@
 
     invoke-static {v2}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 2
     iget-object v2, p0, Lcom/google/common/util/concurrent/SerializingExecutor$TaskRunner;->this$0:Lcom/google/common/util/concurrent/SerializingExecutor;
 
     invoke-static {v2}, Lcom/google/common/util/concurrent/SerializingExecutor;->access$200(Lcom/google/common/util/concurrent/SerializingExecutor;)Ljava/lang/Object;
@@ -73,7 +68,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_4
 
-    .line 3
     :try_start_1
     iget-object v3, p0, Lcom/google/common/util/concurrent/SerializingExecutor$TaskRunner;->this$0:Lcom/google/common/util/concurrent/SerializingExecutor;
 
@@ -89,14 +83,12 @@
 
     if-nez v3, :cond_0
 
-    .line 4
     iget-object v3, p0, Lcom/google/common/util/concurrent/SerializingExecutor$TaskRunner;->this$0:Lcom/google/common/util/concurrent/SerializingExecutor;
 
     invoke-static {v3, v0}, Lcom/google/common/util/concurrent/SerializingExecutor;->access$102(Lcom/google/common/util/concurrent/SerializingExecutor;Z)Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 5
     :try_start_2
     monitor-exit v2
     :try_end_2
@@ -111,14 +103,12 @@
 
     goto :goto_1
 
-    .line 6
     :cond_0
     :try_start_3
     monitor-exit v2
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 7
     :try_start_4
     invoke-interface {v3}, Ljava/lang/Runnable;->run()V
     :try_end_4
@@ -130,7 +120,6 @@
     :catch_0
     move-exception v2
 
-    .line 8
     :try_start_5
     invoke-static {}, Lcom/google/common/util/concurrent/SerializingExecutor;->access$400()Ljava/util/logging/Logger;
 
@@ -179,7 +168,6 @@
 
     const/4 v3, 0x1
 
-    .line 9
     :goto_1
     :try_start_6
     monitor-exit v2
@@ -209,7 +197,6 @@
     :goto_2
     if-eqz v1, :cond_1
 
-    .line 10
     iget-object v1, p0, Lcom/google/common/util/concurrent/SerializingExecutor$TaskRunner;->this$0:Lcom/google/common/util/concurrent/SerializingExecutor;
 
     invoke-static {v1}, Lcom/google/common/util/concurrent/SerializingExecutor;->access$200(Lcom/google/common/util/concurrent/SerializingExecutor;)Ljava/lang/Object;
@@ -218,13 +205,11 @@
 
     monitor-enter v1
 
-    .line 11
     :try_start_8
     iget-object v3, p0, Lcom/google/common/util/concurrent/SerializingExecutor$TaskRunner;->this$0:Lcom/google/common/util/concurrent/SerializingExecutor;
 
     invoke-static {v3, v0}, Lcom/google/common/util/concurrent/SerializingExecutor;->access$102(Lcom/google/common/util/concurrent/SerializingExecutor;Z)Z
 
-    .line 12
     monitor-exit v1
 
     goto :goto_3

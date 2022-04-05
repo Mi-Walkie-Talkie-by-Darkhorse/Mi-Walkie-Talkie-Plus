@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/reflect/TypeToInstanceMap;
 .super Ljava/lang/Object;
-.source "TypeToInstanceMap.java"
 
 # interfaces
 .implements Ljava/util/Map;

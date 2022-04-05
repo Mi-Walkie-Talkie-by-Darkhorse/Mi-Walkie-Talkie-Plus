@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c$a;
 .super Ljava/lang/Object;
-.source "SetMyOtherInfoActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c$a;->a:Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c$a;->a:Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c$a;->a:Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;
@@ -56,7 +52,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c$a;->a:Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;

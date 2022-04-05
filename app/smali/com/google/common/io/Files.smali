@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/io/Files;
 .super Ljava/lang/Object;
-.source "Files.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/io/Files$2;
 
     invoke-direct {v0}, Lcom/google/common/io/Files$2;-><init>()V
@@ -47,7 +45,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -63,7 +60,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p0, p1, p2, v0}, Lcom/google/common/io/Files;->write(Ljava/lang/CharSequence;Ljava/io/File;Ljava/nio/charset/Charset;Z)V
 
     return-void
@@ -72,7 +68,6 @@
 .method public static varargs asByteSink(Ljava/io/File;[Lcom/google/common/io/FileWriteMode;)Lcom/google/common/io/ByteSink;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/io/Files$FileByteSink;
 
     const/4 v1, 0x0
@@ -85,7 +80,6 @@
 .method public static asByteSource(Ljava/io/File;)Lcom/google/common/io/ByteSource;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/io/Files$FileByteSource;
 
     const/4 v1, 0x0
@@ -98,7 +92,6 @@
 .method public static varargs asCharSink(Ljava/io/File;Ljava/nio/charset/Charset;[Lcom/google/common/io/FileWriteMode;)Lcom/google/common/io/CharSink;
     .locals 0
 
-    .line 1
     invoke-static {p0, p2}, Lcom/google/common/io/Files;->asByteSink(Ljava/io/File;[Lcom/google/common/io/FileWriteMode;)Lcom/google/common/io/ByteSink;
 
     move-result-object p0
@@ -113,7 +106,6 @@
 .method public static asCharSource(Ljava/io/File;Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/io/Files;->asByteSource(Ljava/io/File;)Lcom/google/common/io/ByteSource;
 
     move-result-object p0
@@ -133,7 +125,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0, p1}, Ljava/io/File;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -156,7 +147,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     invoke-static {p0}, Lcom/google/common/io/Files;->asByteSource(Ljava/io/File;)Lcom/google/common/io/ByteSource;
 
     move-result-object p0
@@ -180,7 +170,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/io/Files;->asByteSource(Ljava/io/File;)Lcom/google/common/io/ByteSource;
 
     move-result-object p0
@@ -198,7 +187,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-static {p0, p1}, Lcom/google/common/io/Files;->asCharSource(Ljava/io/File;Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
 
     move-result-object p0
@@ -216,10 +204,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-virtual {p0}, Ljava/io/File;->getCanonicalFile()Ljava/io/File;
 
     move-result-object v0
@@ -232,11 +218,9 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
-    .line 4
     invoke-virtual {v0}, Ljava/io/File;->isDirectory()Z
 
     move-result v0
@@ -245,7 +229,6 @@
 
     return-void
 
-    .line 5
     :cond_1
     new-instance v0, Ljava/io/IOException;
 
@@ -285,7 +268,6 @@
 .method public static createTempDir()Ljava/io/File;
     .locals 8
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     const-string v1, "java.io.tmpdir"
@@ -296,7 +278,6 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 2
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
@@ -324,7 +305,6 @@
 
     if-ge v2, v3, :cond_1
 
-    .line 3
     new-instance v3, Ljava/io/File;
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -355,7 +335,6 @@
 
     invoke-direct {v3, v0, v4}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 4
     invoke-virtual {v3}, Ljava/io/File;->mkdir()Z
 
     move-result v4
@@ -369,7 +348,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -448,15 +426,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-eq p0, p1, :cond_2
 
-    .line 3
     invoke-virtual {p0, p1}, Ljava/io/File;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -465,13 +440,11 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {p0}, Ljava/io/File;->length()J
 
     move-result-wide v0
 
-    .line 5
     invoke-virtual {p1}, Ljava/io/File;->length()J
 
     move-result-wide v2
@@ -494,7 +467,6 @@
 
     return p0
 
-    .line 6
     :cond_1
     invoke-static {p0}, Lcom/google/common/io/Files;->asByteSource(Ljava/io/File;)Lcom/google/common/io/ByteSource;
 
@@ -528,7 +500,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/io/Files;->FILE_TREE_TRAVERSER:Lcom/google/common/collect/TreeTraverser;
 
     return-object v0
@@ -537,10 +508,8 @@
 .method public static getFileExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -551,7 +520,6 @@
 
     const/16 v0, 0x2e
 
-    .line 3
     invoke-virtual {p0, v0}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v0
@@ -567,7 +535,6 @@
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
-    .line 4
     invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
@@ -579,10 +546,8 @@
 .method public static getNameWithoutExtension(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -593,7 +558,6 @@
 
     const/16 v0, 0x2e
 
-    .line 3
     invoke-virtual {p0, v0}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v0
@@ -607,7 +571,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 4
     invoke-virtual {p0, v1, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p0
@@ -624,7 +587,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/io/Files;->asByteSource(Ljava/io/File;)Lcom/google/common/io/ByteSource;
 
     move-result-object p0
@@ -647,7 +609,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/io/Files$FilePredicate;->IS_DIRECTORY:Lcom/google/common/io/Files$FilePredicate;
 
     return-object v0
@@ -664,7 +625,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/io/Files$FilePredicate;->IS_FILE:Lcom/google/common/io/Files$FilePredicate;
 
     return-object v0
@@ -678,10 +638,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     sget-object v0, Ljava/nio/channels/FileChannel$MapMode;->READ_ONLY:Ljava/nio/channels/FileChannel$MapMode;
 
     invoke-static {p0, v0}, Lcom/google/common/io/Files;->map(Ljava/io/File;Ljava/nio/channels/FileChannel$MapMode;)Ljava/nio/MappedByteBuffer;
@@ -699,20 +657,16 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
     invoke-virtual {p0}, Ljava/io/File;->exists()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 6
     invoke-virtual {p0}, Ljava/io/File;->length()J
 
     move-result-wide v0
@@ -723,7 +677,6 @@
 
     return-object p0
 
-    .line 7
     :cond_0
     new-instance p1, Ljava/io/FileNotFoundException;
 
@@ -745,18 +698,14 @@
         }
     .end annotation
 
-    .line 8
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 9
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
     invoke-static {}, Lcom/google/common/io/Closer;->create()Lcom/google/common/io/Closer;
 
     move-result-object v0
 
-    .line 11
     :try_start_0
     new-instance v1, Ljava/io/RandomAccessFile;
 
@@ -780,14 +729,12 @@
 
     check-cast p0, Ljava/io/RandomAccessFile;
 
-    .line 12
     invoke-static {p0, p1, p2, p3}, Lcom/google/common/io/Files;->map(Ljava/io/RandomAccessFile;Ljava/nio/channels/FileChannel$MapMode;J)Ljava/nio/MappedByteBuffer;
 
     move-result-object p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 13
     invoke-virtual {v0}, Lcom/google/common/io/Closer;->close()V
 
     return-object p0
@@ -795,7 +742,6 @@
     :catchall_0
     move-exception p0
 
-    .line 14
     :try_start_1
     invoke-virtual {v0, p0}, Lcom/google/common/io/Closer;->rethrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
@@ -808,7 +754,6 @@
     :catchall_1
     move-exception p0
 
-    .line 15
     invoke-virtual {v0}, Lcom/google/common/io/Closer;->close()V
 
     throw p0
@@ -822,12 +767,10 @@
         }
     .end annotation
 
-    .line 16
     invoke-static {}, Lcom/google/common/io/Closer;->create()Lcom/google/common/io/Closer;
 
     move-result-object v0
 
-    .line 17
     :try_start_0
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
 
@@ -847,14 +790,12 @@
 
     move-wide v5, p2
 
-    .line 18
     invoke-virtual/range {v1 .. v6}, Ljava/nio/channels/FileChannel;->map(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;
 
     move-result-object p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 19
     invoke-virtual {v0}, Lcom/google/common/io/Closer;->close()V
 
     return-object p0
@@ -862,7 +803,6 @@
     :catchall_0
     move-exception p0
 
-    .line 20
     :try_start_1
     invoke-virtual {v0, p0}, Lcom/google/common/io/Closer;->rethrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
@@ -875,7 +815,6 @@
     :catchall_1
     move-exception p0
 
-    .line 21
     invoke-virtual {v0}, Lcom/google/common/io/Closer;->close()V
 
     throw p0
@@ -892,7 +831,6 @@
 
     new-array p0, p0, [Lcom/google/common/io/FileWriteMode;
 
-    .line 1
     sget-object v1, Lcom/google/common/io/FileWriteMode;->APPEND:Lcom/google/common/io/FileWriteMode;
 
     aput-object v1, p0, v0
@@ -914,13 +852,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     invoke-virtual {p0, p1}, Ljava/io/File;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -943,24 +878,20 @@
 
     invoke-static {v0, v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 4
     invoke-virtual {p0, p1}, Ljava/io/File;->renameTo(Ljava/io/File;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 5
     invoke-static {p0, p1}, Lcom/google/common/io/Files;->copy(Ljava/io/File;Ljava/io/File;)V
 
-    .line 6
     invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 7
     invoke-virtual {p1}, Ljava/io/File;->delete()Z
 
     move-result v0
@@ -969,7 +900,6 @@
 
     if-nez v0, :cond_0
 
-    .line 8
     new-instance p0, Ljava/io/IOException;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -1002,7 +932,6 @@
 
     throw p0
 
-    .line 9
     :cond_0
     new-instance p1, Ljava/io/IOException;
 
@@ -1048,13 +977,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     new-instance v0, Ljava/io/BufferedReader;
 
     new-instance v1, Ljava/io/InputStreamReader;
@@ -1078,13 +1004,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     new-instance v0, Ljava/io/BufferedWriter;
 
     new-instance v1, Ljava/io/OutputStreamWriter;
@@ -1119,7 +1042,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/io/Files;->asByteSource(Ljava/io/File;)Lcom/google/common/io/ByteSource;
 
     move-result-object p0
@@ -1151,7 +1073,6 @@
 
     if-nez v2, :cond_0
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/io/ByteStreams;->toByteArray(Ljava/io/InputStream;)[B
 
     move-result-object p0
@@ -1168,7 +1089,6 @@
     :goto_0
     return-object p0
 
-    .line 2
     :cond_1
     new-instance p0, Ljava/lang/OutOfMemoryError;
 
@@ -1205,7 +1125,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/io/Files;->asCharSource(Ljava/io/File;Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
 
     move-result-object p0
@@ -1237,7 +1156,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0, p1}, Lcom/google/common/io/Files;->asCharSource(Ljava/io/File;Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
 
     move-result-object p0
@@ -1269,7 +1187,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/io/Files$1;
 
     invoke-direct {v0}, Lcom/google/common/io/Files$1;-><init>()V
@@ -1286,10 +1203,8 @@
 .method public static simplifyPath(Ljava/lang/String;)Ljava/lang/String;
     .locals 7
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -1303,7 +1218,6 @@
     :cond_0
     const/16 v0, 0x2f
 
-    .line 3
     invoke-static {v0}, Lcom/google/common/base/Splitter;->on(C)Lcom/google/common/base/Splitter;
 
     move-result-object v2
@@ -1316,12 +1230,10 @@
 
     move-result-object v2
 
-    .line 4
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    .line 5
     invoke-interface {v2}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -1339,7 +1251,6 @@
 
     check-cast v4, Ljava/lang/String;
 
-    .line 6
     invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v5
@@ -1351,14 +1262,12 @@
     :cond_1
     const-string v5, ".."
 
-    .line 7
     invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v6
 
     if-eqz v6, :cond_3
 
-    .line 8
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v4
@@ -1383,7 +1292,6 @@
 
     if-nez v4, :cond_2
 
-    .line 9
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v4
@@ -1394,19 +1302,16 @@
 
     goto :goto_0
 
-    .line 10
     :cond_2
     invoke-interface {v3, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 11
     :cond_3
     invoke-interface {v3, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 12
     :cond_4
     invoke-static {v0}, Lcom/google/common/base/Joiner;->on(C)Lcom/google/common/base/Joiner;
 
@@ -1418,7 +1323,6 @@
 
     const/4 v3, 0x0
 
-    .line 13
     invoke-virtual {p0, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result p0
@@ -1427,7 +1331,6 @@
 
     if-ne p0, v0, :cond_6
 
-    .line 14
     invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -1456,7 +1359,6 @@
     :goto_2
     const-string p0, "/../"
 
-    .line 15
     invoke-virtual {v2, p0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result p0
@@ -1465,7 +1367,6 @@
 
     const/4 p0, 0x3
 
-    .line 16
     invoke-virtual {v2, p0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object v2
@@ -1475,7 +1376,6 @@
     :cond_7
     const-string p0, "/.."
 
-    .line 17
     invoke-virtual {v2, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -1489,7 +1389,6 @@
     :cond_8
     const-string p0, ""
 
-    .line 18
     invoke-virtual {p0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -1513,7 +1412,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/io/Files;->asByteSource(Ljava/io/File;)Lcom/google/common/io/ByteSource;
 
     move-result-object p0
@@ -1533,7 +1431,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/io/Files;->asCharSource(Ljava/io/File;Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
 
     move-result-object p0
@@ -1553,10 +1450,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-virtual {p0}, Ljava/io/File;->createNewFile()Z
 
     move-result v0
@@ -1575,7 +1470,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/io/IOException;
 
@@ -1628,7 +1522,6 @@
 
     new-array v0, v0, [Lcom/google/common/io/FileWriteMode;
 
-    .line 2
     invoke-static {p1, p2, v0}, Lcom/google/common/io/Files;->asCharSink(Ljava/io/File;Ljava/nio/charset/Charset;[Lcom/google/common/io/FileWriteMode;)Lcom/google/common/io/CharSink;
 
     move-result-object p1
@@ -1646,7 +1539,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {p3}, Lcom/google/common/io/Files;->modes(Z)[Lcom/google/common/io/FileWriteMode;
 
     move-result-object p3
@@ -1672,7 +1564,6 @@
 
     new-array v0, v0, [Lcom/google/common/io/FileWriteMode;
 
-    .line 1
     invoke-static {p1, v0}, Lcom/google/common/io/Files;->asByteSink(Ljava/io/File;[Lcom/google/common/io/FileWriteMode;)Lcom/google/common/io/ByteSink;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class public final Lcom/google/protobuf/WireFormat;
 .super Ljava/lang/Object;
-.source "WireFormat.java"
 
 
 # annotations
@@ -52,7 +51,6 @@
 
     const/4 v1, 0x1
 
-    .line 1
     invoke-static {v1, v0}, Lcom/google/protobuf/WireFormat;->makeTag(II)I
 
     move-result v2
@@ -61,7 +59,6 @@
 
     const/4 v2, 0x4
 
-    .line 2
     invoke-static {v1, v2}, Lcom/google/protobuf/WireFormat;->makeTag(II)I
 
     move-result v1
@@ -72,14 +69,12 @@
 
     const/4 v2, 0x0
 
-    .line 3
     invoke-static {v1, v2}, Lcom/google/protobuf/WireFormat;->makeTag(II)I
 
     move-result v2
 
     sput v2, Lcom/google/protobuf/WireFormat;->MESSAGE_SET_TYPE_ID_TAG:I
 
-    .line 4
     invoke-static {v0, v1}, Lcom/google/protobuf/WireFormat;->makeTag(II)I
 
     move-result v0
@@ -92,7 +87,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

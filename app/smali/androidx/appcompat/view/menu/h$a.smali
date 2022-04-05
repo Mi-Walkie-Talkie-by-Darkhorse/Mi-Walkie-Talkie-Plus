@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/view/menu/h$a;
 .super Ljava/lang/Object;
-.source "MenuItemImpl.java"
 
 # interfaces
 .implements Landroidx/core/view/b$b;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/view/menu/h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/h$a;->a:Landroidx/appcompat/view/menu/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onActionProviderVisibilityChanged(Z)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/view/menu/h$a;->a:Landroidx/appcompat/view/menu/h;
 
     iget-object v0, p1, Landroidx/appcompat/view/menu/h;->n:Landroidx/appcompat/view/menu/f;

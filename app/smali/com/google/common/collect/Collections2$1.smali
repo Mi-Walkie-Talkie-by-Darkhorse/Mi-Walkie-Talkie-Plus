@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Collections2$1;
 .super Ljava/lang/Object;
-.source "Collections2.java"
 
 # interfaces
 .implements Lcom/google/common/base/Function;
@@ -35,7 +34,6 @@
 .method constructor <init>(Ljava/util/Collection;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Collections2$1;->val$collection:Ljava/util/Collection;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +46,6 @@
 .method public apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Collections2$1;->val$collection:Ljava/util/Collection;
 
     if-ne p1, v0, :cond_0

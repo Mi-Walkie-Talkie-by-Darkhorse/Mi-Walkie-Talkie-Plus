@@ -1,6 +1,5 @@
 .class Lcom/jude/rollviewpager/d/a$b;
 .super Ljava/lang/Object;
-.source "LoopPagerAdapter.java"
 
 # interfaces
 .implements Lcom/jude/rollviewpager/RollPagerView$e;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lcom/jude/rollviewpager/d/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/jude/rollviewpager/d/a$b;->a:Lcom/jude/rollviewpager/d/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lcom/jude/rollviewpager/d/a;Lcom/jude/rollviewpager/d/a$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/jude/rollviewpager/d/a$b;-><init>(Lcom/jude/rollviewpager/d/a;)V
 
     return-void
@@ -49,7 +46,6 @@
 
     if-eqz p3, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/jude/rollviewpager/d/a$b;->a:Lcom/jude/rollviewpager/d/a;
 
     invoke-virtual {p1}, Lcom/jude/rollviewpager/d/a;->a()I
@@ -67,7 +63,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/jude/rollviewpager/d/a$b;->a:Lcom/jude/rollviewpager/d/a;
 
     invoke-virtual {v0}, Lcom/jude/rollviewpager/d/a;->a()I
@@ -76,7 +71,6 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/jude/rollviewpager/d/a$b;->a:Lcom/jude/rollviewpager/d/a;
 
     invoke-virtual {v0}, Lcom/jude/rollviewpager/d/a;->a()I

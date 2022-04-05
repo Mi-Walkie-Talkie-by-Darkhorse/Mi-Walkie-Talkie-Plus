@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/d$a;
 .super Landroid/os/Handler;
-.source "AmapLocationManager.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/d;Landroid/os/Looper;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
-    .line 2
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -38,11 +35,9 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 2
     iget v1, p1, Landroid/os/Message;->what:I
 
     const/16 v2, 0xb
@@ -80,7 +75,6 @@
     :pswitch_0
     const-string v0, "handleMessage ACTION_REBOOT_GPS_LOCATION"
 
-    .line 3
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/d;->c:Lcom/amap/api/col/l3/g;
@@ -91,14 +85,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 4
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/d;->c:Lcom/amap/api/col/l3/g;
 
     invoke-virtual {p1}, Lcom/amap/api/col/l3/g;->a()V
 
-    .line 5
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/d;->c:Lcom/amap/api/col/l3/g;
@@ -109,7 +101,6 @@
 
     invoke-virtual {p1, v1}, Lcom/amap/api/col/l3/g;->a(Lcom/amap/api/location/AMapLocationClientOption;)V
 
-    .line 6
     :cond_0
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
@@ -120,7 +111,6 @@
     :pswitch_1
     const-string v0, "handleMessage ACTION_DISABLE_BACKGROUND"
 
-    .line 7
     iget-object v1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {v1, p1}, Lcom/amap/api/col/l3/d;->d(Lcom/amap/api/col/l3/d;Landroid/os/Message;)V
@@ -130,7 +120,6 @@
     :pswitch_2
     const-string v0, "handleMessage ACTION_ENABLE_BACKGROUND"
 
-    .line 8
     iget-object v1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {v1, p1}, Lcom/amap/api/col/l3/d;->c(Lcom/amap/api/col/l3/d;Landroid/os/Message;)V
@@ -140,7 +129,6 @@
     :pswitch_3
     const-string v0, "handleMessage SET_OPTION"
 
-    .line 9
     iget-object v1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -149,14 +137,12 @@
 
     iput-object p1, v1, Lcom/amap/api/col/l3/d;->a:Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 10
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/d;->a:Lcom/amap/api/location/AMapLocationClientOption;
 
     if-eqz p1, :cond_1
 
-    .line 11
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/d;->f(Lcom/amap/api/col/l3/d;)V
@@ -168,14 +154,12 @@
     :pswitch_4
     const-string v0, "handleMessage STOP_GPS_LOCATION"
 
-    .line 12
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/d;->c:Lcom/amap/api/col/l3/g;
 
     invoke-virtual {p1}, Lcom/amap/api/col/l3/g;->a()V
 
-    .line 13
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/d;->e(Lcom/amap/api/col/l3/d;)V
@@ -185,7 +169,6 @@
     :pswitch_5
     const-string v0, "handleMessage START_LBS_LOCATION"
 
-    .line 14
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/d;->c:Lcom/amap/api/col/l3/g;
@@ -196,7 +179,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 15
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     const/16 v1, 0x3f8
@@ -207,7 +189,6 @@
 
     return-void
 
-    .line 16
     :cond_2
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
@@ -218,7 +199,6 @@
     :pswitch_6
     const-string v0, "handleMessage START_GPS_LOCATION"
 
-    .line 17
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/d;->c:Lcom/amap/api/col/l3/g;
@@ -229,7 +209,6 @@
 
     invoke-virtual {p1, v1}, Lcom/amap/api/col/l3/g;->a(Lcom/amap/api/location/AMapLocationClientOption;)V
 
-    .line 18
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {p1, v4, v2, v3}, Lcom/amap/api/col/l3/d;->a(Lcom/amap/api/col/l3/d;IJ)V
@@ -239,7 +218,6 @@
     :pswitch_7
     const-string v0, "handleMessage ACTION_SAVE_LAST_LOCATION"
 
-    .line 19
     iget-object v1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {v1, p1}, Lcom/amap/api/col/l3/d;->b(Lcom/amap/api/col/l3/d;Landroid/os/Message;)V
@@ -249,7 +227,6 @@
     :pswitch_8
     const-string v0, "handleMessage REMOVE_LISTENER"
 
-    .line 20
     iget-object v1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -263,7 +240,6 @@
     :pswitch_9
     const-string v0, "handleMessage STOP_LOCATION"
 
-    .line 21
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/d;->c(Lcom/amap/api/col/l3/d;)V
@@ -273,7 +249,6 @@
     :pswitch_a
     const-string v0, "handleMessage START_LOCATION"
 
-    .line 22
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/d;->b(Lcom/amap/api/col/l3/d;)V
@@ -283,7 +258,6 @@
     :pswitch_b
     const-string v0, "handleMessage SET_LISTENER"
 
-    .line 23
     iget-object v1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
@@ -297,7 +271,6 @@
     :cond_3
     const-string v0, "handleMessage DESTROY"
 
-    .line 24
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-virtual {p1}, Lcom/amap/api/col/l3/d;->a()V
@@ -307,7 +280,6 @@
     :cond_4
     const-string v0, "handleMessage STOP_SOCKET"
 
-    .line 25
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/d;->h(Lcom/amap/api/col/l3/d;)V
@@ -317,7 +289,6 @@
     :cond_5
     const-string v0, "handleMessage START_SOCKET"
 
-    .line 26
     iget-object p1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/d;->g(Lcom/amap/api/col/l3/d;)V
@@ -327,7 +298,6 @@
     :cond_6
     const-string v0, "handleMessage ACTION_GPS_LOCATIONSUCCESS"
 
-    .line 27
     iget-object v1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {v1, p1}, Lcom/amap/api/col/l3/d;->a(Lcom/amap/api/col/l3/d;Landroid/os/Message;)V
@@ -337,12 +307,10 @@
     :cond_7
     const-string v0, "handleMessage ACTION_LBS_LOCATIONSUCCES"
 
-    .line 28
     invoke-virtual {p1}, Landroid/os/Message;->getData()Landroid/os/Bundle;
 
     move-result-object p1
 
-    .line 29
     iget-object v1, p0, Lcom/amap/api/col/l3/d$a;->a:Lcom/amap/api/col/l3/d;
 
     invoke-static {v1, p1}, Lcom/amap/api/col/l3/d;->b(Lcom/amap/api/col/l3/d;Landroid/os/Bundle;)V
@@ -361,7 +329,6 @@
     :cond_8
     const-string v1, "AMapLocationManage$MHandlerr"
 
-    .line 30
     invoke-static {p1, v1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

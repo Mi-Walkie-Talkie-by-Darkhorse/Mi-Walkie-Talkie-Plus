@@ -1,6 +1,5 @@
 .class public enum Lcom/google/protobuf/WireFormat$FieldType;
 .super Ljava/lang/Enum;
-.source "WireFormat.java"
 
 
 # annotations
@@ -72,7 +71,6 @@
 .method static constructor <clinit>()V
     .locals 16
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->DOUBLE:Lcom/google/protobuf/WireFormat$JavaType;
@@ -87,7 +85,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->DOUBLE:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->FLOAT:Lcom/google/protobuf/WireFormat$JavaType;
@@ -100,7 +97,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->FLOAT:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 3
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->LONG:Lcom/google/protobuf/WireFormat$JavaType;
@@ -113,7 +109,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->INT64:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 4
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->LONG:Lcom/google/protobuf/WireFormat$JavaType;
@@ -126,7 +121,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->UINT64:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 5
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->INT:Lcom/google/protobuf/WireFormat$JavaType;
@@ -139,7 +133,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->INT32:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 6
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->LONG:Lcom/google/protobuf/WireFormat$JavaType;
@@ -150,7 +143,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->FIXED64:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 7
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->INT:Lcom/google/protobuf/WireFormat$JavaType;
@@ -163,7 +155,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->FIXED32:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 8
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->BOOLEAN:Lcom/google/protobuf/WireFormat$JavaType;
@@ -176,7 +167,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->BOOL:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 9
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType$1;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->STRING:Lcom/google/protobuf/WireFormat$JavaType;
@@ -189,7 +179,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->STRING:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 10
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType$2;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->MESSAGE:Lcom/google/protobuf/WireFormat$JavaType;
@@ -202,7 +191,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->GROUP:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 11
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType$3;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->MESSAGE:Lcom/google/protobuf/WireFormat$JavaType;
@@ -215,7 +203,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->MESSAGE:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 12
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType$4;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->BYTE_STRING:Lcom/google/protobuf/WireFormat$JavaType;
@@ -228,7 +215,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->BYTES:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 13
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->INT:Lcom/google/protobuf/WireFormat$JavaType;
@@ -241,7 +227,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->UINT32:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 14
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->ENUM:Lcom/google/protobuf/WireFormat$JavaType;
@@ -254,7 +239,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->ENUM:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 15
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->INT:Lcom/google/protobuf/WireFormat$JavaType;
@@ -267,7 +251,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->SFIXED32:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 16
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->LONG:Lcom/google/protobuf/WireFormat$JavaType;
@@ -280,7 +263,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->SFIXED64:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 17
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->INT:Lcom/google/protobuf/WireFormat$JavaType;
@@ -293,7 +275,6 @@
 
     sput-object v0, Lcom/google/protobuf/WireFormat$FieldType;->SINT32:Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 18
     new-instance v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     sget-object v1, Lcom/google/protobuf/WireFormat$JavaType;->LONG:Lcom/google/protobuf/WireFormat$JavaType;
@@ -310,7 +291,6 @@
 
     new-array v1, v1, [Lcom/google/protobuf/WireFormat$FieldType;
 
-    .line 19
     sget-object v14, Lcom/google/protobuf/WireFormat$FieldType;->DOUBLE:Lcom/google/protobuf/WireFormat$FieldType;
 
     aput-object v14, v1, v3
@@ -406,13 +386,10 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 3
     iput-object p3, p0, Lcom/google/protobuf/WireFormat$FieldType;->javaType:Lcom/google/protobuf/WireFormat$JavaType;
 
-    .line 4
     iput p4, p0, Lcom/google/protobuf/WireFormat$FieldType;->wireType:I
 
     return-void
@@ -421,7 +398,6 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/google/protobuf/WireFormat$JavaType;ILcom/google/protobuf/WireFormat$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/google/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILcom/google/protobuf/WireFormat$JavaType;I)V
 
     return-void
@@ -430,7 +406,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/google/protobuf/WireFormat$FieldType;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/protobuf/WireFormat$FieldType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -445,7 +420,6 @@
 .method public static values()[Lcom/google/protobuf/WireFormat$FieldType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/WireFormat$FieldType;->$VALUES:[Lcom/google/protobuf/WireFormat$FieldType;
 
     invoke-virtual {v0}, [Lcom/google/protobuf/WireFormat$FieldType;->clone()Ljava/lang/Object;
@@ -462,7 +436,6 @@
 .method public getJavaType()Lcom/google/protobuf/WireFormat$JavaType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/WireFormat$FieldType;->javaType:Lcom/google/protobuf/WireFormat$JavaType;
 
     return-object v0
@@ -471,7 +444,6 @@
 .method public getWireType()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/WireFormat$FieldType;->wireType:I
 
     return v0

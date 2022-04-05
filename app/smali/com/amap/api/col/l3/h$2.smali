@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/h$2;
 .super Ljava/lang/Object;
-.source "H5LocationClient.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/h;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/h$2;->b:Lcom/amap/api/col/l3/h;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/h$2;->a:Ljava/lang/String;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/h$2;->b:Lcom/amap/api/col/l3/h;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/h;->b(Lcom/amap/api/col/l3/h;)Landroid/webkit/WebView;

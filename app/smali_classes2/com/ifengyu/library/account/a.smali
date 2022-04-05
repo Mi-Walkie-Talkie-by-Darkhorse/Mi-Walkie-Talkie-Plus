@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/library/account/a;
 .super Ljava/lang/Object;
-.source "UserCache.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 
     const-string v0, "sp_login"
 
-    .line 5
     invoke-static {v0}, Lcom/ifengyu/library/a/j;->a(Ljava/lang/String;)Lcom/ifengyu/library/a/j;
 
     move-result-object v0
@@ -24,10 +22,8 @@
 
     const/4 v0, 0x0
 
-    .line 6
     sput-object v0, Lcom/ifengyu/library/account/a;->a:Lcom/ifengyu/library/account/UserInfo;
 
-    .line 7
     sput-object v0, Lcom/ifengyu/library/account/a;->b:Ljava/lang/String;
 
     return-void
@@ -40,7 +36,6 @@
 
     const-string v0, "sp_login"
 
-    .line 1
     invoke-static {v0}, Lcom/ifengyu/library/a/j;->a(Ljava/lang/String;)Lcom/ifengyu/library/a/j;
 
     move-result-object v0
@@ -53,10 +48,8 @@
 
     invoke-virtual {v0, v2, v1}, Lcom/ifengyu/library/a/j;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sput-object p0, Lcom/ifengyu/library/account/a;->a:Lcom/ifengyu/library/account/UserInfo;
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/library/account/UserInfo;->a:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -65,7 +58,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 4
     sput-object v0, Lcom/ifengyu/library/account/a;->b:Ljava/lang/String;
 
     :cond_0
@@ -75,14 +67,12 @@
 .method public static b()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/library/account/a;->b:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     return-object v0
 
-    .line 2
     :cond_0
     invoke-static {}, Lcom/ifengyu/library/account/a;->c()Lcom/ifengyu/library/account/UserInfo;
 
@@ -90,7 +80,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/library/account/a;->c()Lcom/ifengyu/library/account/UserInfo;
 
     move-result-object v0
@@ -108,15 +97,12 @@
 .method public static c()Lcom/ifengyu/library/account/UserInfo;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/library/account/a;->a:Lcom/ifengyu/library/account/UserInfo;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/library/account/a;->d()V
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/library/account/a;->a:Lcom/ifengyu/library/account/UserInfo;
 
@@ -128,7 +114,6 @@
 
     const-string v0, "sp_login"
 
-    .line 1
     invoke-static {v0}, Lcom/ifengyu/library/a/j;->a(Ljava/lang/String;)Lcom/ifengyu/library/a/j;
 
     move-result-object v0
@@ -145,7 +130,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {v0}, Lcom/ifengyu/library/a/k;->a(Ljava/lang/String;)Ljava/lang/Object;
 
@@ -157,7 +141,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object v1, v0, Lcom/ifengyu/library/account/UserInfo;->a:Ljava/lang/String;
 
     if-eqz v1, :cond_1
@@ -166,7 +149,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     sput-object v1, Lcom/ifengyu/library/account/a;->b:Ljava/lang/String;
 
     :cond_1

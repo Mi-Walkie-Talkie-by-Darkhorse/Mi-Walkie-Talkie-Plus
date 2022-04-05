@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/jetbrains/annotations/NotNull;
 .super Ljava/lang/Object;
-.source "NotNull.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

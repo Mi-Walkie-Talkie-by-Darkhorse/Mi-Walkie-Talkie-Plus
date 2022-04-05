@@ -1,6 +1,5 @@
 .class public final Landroidx/core/content/PermissionChecker;
 .super Ljava/lang/Object;
-.source "PermissionChecker.java"
 
 
 # annotations
@@ -23,12 +22,10 @@
         .end annotation
     .end param
 
-    .line 7
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v0
 
-    .line 8
     invoke-static {}, Landroid/os/Process;->myUid()I
 
     move-result v1
@@ -37,7 +34,6 @@
 
     move-result-object v2
 
-    .line 9
     invoke-static {p0, p1, v0, v1, v2}, Landroidx/core/content/PermissionChecker;->a(Landroid/content/Context;Ljava/lang/String;IILjava/lang/String;)I
 
     move-result p0
@@ -60,7 +56,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p1, p2, p3}, Landroid/content/Context;->checkPermission(Ljava/lang/String;II)I
 
     move-result p2
@@ -71,7 +66,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-static {p1}, Landroidx/core/app/d;->a(Ljava/lang/String;)Ljava/lang/String;
 
@@ -86,7 +80,6 @@
     :cond_1
     if-nez p4, :cond_4
 
-    .line 3
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object p4
@@ -97,14 +90,12 @@
 
     if-eqz p3, :cond_3
 
-    .line 4
     array-length p4, p3
 
     if-gtz p4, :cond_2
 
     goto :goto_0
 
-    .line 5
     :cond_2
     aget-object p4, p3, p2
 
@@ -114,7 +105,6 @@
     :goto_0
     return v0
 
-    .line 6
     :cond_4
     :goto_1
     invoke-static {p0, p1, p4}, Landroidx/core/app/d;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)I

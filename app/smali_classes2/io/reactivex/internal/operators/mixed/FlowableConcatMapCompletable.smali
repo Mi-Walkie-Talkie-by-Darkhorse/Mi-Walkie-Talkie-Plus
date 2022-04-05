@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/mixed/FlowableConcatMapCompletable;
 .super Lio/reactivex/Completable;
-.source "FlowableConcatMapCompletable.java"
 
 
 # annotations
@@ -63,19 +62,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/mixed/FlowableConcatMapCompletable;->source:Lio/reactivex/Flowable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/mixed/FlowableConcatMapCompletable;->mapper:Lio/reactivex/functions/Function;
 
-    .line 4
     iput-object p3, p0, Lio/reactivex/internal/operators/mixed/FlowableConcatMapCompletable;->errorMode:Lio/reactivex/internal/util/ErrorMode;
 
-    .line 5
     iput p4, p0, Lio/reactivex/internal/operators/mixed/FlowableConcatMapCompletable;->prefetch:I
 
     return-void
@@ -86,7 +80,6 @@
 .method protected subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/mixed/FlowableConcatMapCompletable;->source:Lio/reactivex/Flowable;
 
     new-instance v1, Lio/reactivex/internal/operators/mixed/FlowableConcatMapCompletable$ConcatMapCompletableObserver;

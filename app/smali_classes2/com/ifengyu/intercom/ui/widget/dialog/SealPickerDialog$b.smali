@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog$b;
 .super Ljava/lang/Object;
-.source "SealPickerDialog.java"
 
 
 # annotations

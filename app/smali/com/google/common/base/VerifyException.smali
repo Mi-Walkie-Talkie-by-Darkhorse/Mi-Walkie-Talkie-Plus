@@ -1,6 +1,5 @@
 .class public Lcom/google/common/base/VerifyException;
 .super Ljava/lang/RuntimeException;
-.source "VerifyException.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/RuntimeException;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     return-void

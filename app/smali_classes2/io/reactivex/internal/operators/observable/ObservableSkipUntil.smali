@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableSkipUntil;
 .super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
-.source "ObservableSkipUntil.java"
 
 
 # annotations
@@ -48,10 +47,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableSkipUntil;->other:Lio/reactivex/ObservableSource;
 
     return-void
@@ -69,27 +66,22 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/observers/SerializedObserver;
 
     invoke-direct {v0, p1}, Lio/reactivex/observers/SerializedObserver;-><init>(Lio/reactivex/Observer;)V
 
-    .line 2
     new-instance p1, Lio/reactivex/internal/disposables/ArrayCompositeDisposable;
 
     const/4 v1, 0x2
 
     invoke-direct {p1, v1}, Lio/reactivex/internal/disposables/ArrayCompositeDisposable;-><init>(I)V
 
-    .line 3
     invoke-virtual {v0, p1}, Lio/reactivex/observers/SerializedObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 4
     new-instance v1, Lio/reactivex/internal/operators/observable/ObservableSkipUntil$SkipUntilObserver;
 
     invoke-direct {v1, v0, p1}, Lio/reactivex/internal/operators/observable/ObservableSkipUntil$SkipUntilObserver;-><init>(Lio/reactivex/Observer;Lio/reactivex/internal/disposables/ArrayCompositeDisposable;)V
 
-    .line 5
     iget-object v2, p0, Lio/reactivex/internal/operators/observable/ObservableSkipUntil;->other:Lio/reactivex/ObservableSource;
 
     new-instance v3, Lio/reactivex/internal/operators/observable/ObservableSkipUntil$SkipUntil;
@@ -98,7 +90,6 @@
 
     invoke-interface {v2, v3}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V
 
-    .line 6
     iget-object p1, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     invoke-interface {p1, v1}, Lio/reactivex/ObservableSource;->subscribe(Lio/reactivex/Observer;)V

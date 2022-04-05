@@ -1,6 +1,5 @@
 .class Lcom/google/common/base/FinalizableReferenceQueue$DecoupledLoader;
 .super Ljava/lang/Object;
-.source "FinalizableReferenceQueue.java"
 
 # interfaces
 .implements Lcom/google/common/base/FinalizableReferenceQueue$FinalizerLoader;
@@ -25,7 +24,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,7 +45,6 @@
 
     const/16 v2, 0x2f
 
-    .line 1
     invoke-virtual {v0, v1, v2}, Ljava/lang/String;->replace(CC)Ljava/lang/String;
 
     move-result-object v0
@@ -62,7 +59,6 @@
 
     move-result-object v0
 
-    .line 2
     const-class v1, Lcom/google/common/base/FinalizableReferenceQueue$DecoupledLoader;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -75,19 +71,16 @@
 
     if-eqz v1, :cond_2
 
-    .line 3
     invoke-virtual {v1}, Ljava/net/URL;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 4
     invoke-virtual {v2, v0}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    .line 5
     new-instance v0, Ljava/io/IOException;
 
     const-string v1, "Unsupported path style: "
@@ -123,7 +116,6 @@
     :cond_1
     const/4 v3, 0x0
 
-    .line 6
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     move-result v4
@@ -138,14 +130,12 @@
 
     move-result-object v0
 
-    .line 7
     new-instance v2, Ljava/net/URL;
 
     invoke-direct {v2, v1, v0}, Ljava/net/URL;-><init>(Ljava/net/URL;Ljava/lang/String;)V
 
     return-object v2
 
-    .line 8
     :cond_2
     new-instance v1, Ljava/io/FileNotFoundException;
 
@@ -164,7 +154,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/base/FinalizableReferenceQueue$DecoupledLoader;->getBaseUrl()Ljava/net/URL;
 
@@ -176,7 +165,6 @@
 
     const-string v1, "com.google.common.base.internal.Finalizer"
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
@@ -188,7 +176,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     invoke-static {}, Lcom/google/common/base/FinalizableReferenceQueue;->access$000()Ljava/util/logging/Logger;
 
     move-result-object v1
@@ -207,7 +194,6 @@
 .method newLoader(Ljava/net/URL;)Ljava/net/URLClassLoader;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/net/URLClassLoader;
 
     const/4 v1, 0x1

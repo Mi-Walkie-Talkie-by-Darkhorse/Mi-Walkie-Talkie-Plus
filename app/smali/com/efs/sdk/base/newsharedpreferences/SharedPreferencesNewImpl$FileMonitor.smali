@@ -1,6 +1,5 @@
 .class final Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$FileMonitor;
 .super Landroid/os/FileObserver;
-.source "SourceFile"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;Ljava/lang/String;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$FileMonitor;->this$0:Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;
 
-    .line 2
     invoke-direct {p0, p2, p3}, Landroid/os/FileObserver;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -36,7 +33,6 @@
 .method public final onEvent(ILjava/lang/String;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$FileMonitor;->this$0:Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;
 
     invoke-static {p1}, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;->access$500(Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;)Ljava/util/ArrayList;
@@ -49,14 +45,12 @@
 
     if-lez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$FileMonitor;->this$0:Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;
 
     invoke-static {p1}, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;->access$600(Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;)V
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/os/FileObserver;->stopWatching()V
 

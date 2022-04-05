@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/node/btle/f$a;
 .super Ljava/lang/Object;
-.source "ConnectionThread.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/node/btle/f;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btle/f$a;->a:Lcom/ifengyu/intercom/node/btle/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,10 +40,8 @@
 
     const-string v1, "sending retry broadcast"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/f$a;->a:Lcom/ifengyu/intercom/node/btle/f;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/node/btle/f;->a(Lcom/ifengyu/intercom/node/btle/f;)Landroid/content/Context;
@@ -60,7 +56,6 @@
 
     check-cast v0, Landroid/app/AlarmManager;
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/node/btle/f$a;->a:Lcom/ifengyu/intercom/node/btle/f;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/node/btle/f;->b(Lcom/ifengyu/intercom/node/btle/f;)Landroid/app/PendingIntent;
@@ -69,7 +64,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/f$a;->a:Lcom/ifengyu/intercom/node/btle/f;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/node/btle/f;->a(Lcom/ifengyu/intercom/node/btle/f;)Landroid/content/Context;
@@ -84,7 +78,6 @@
 
     const-string v3, "content"
 
-    .line 5
     invoke-virtual {v2, v3}, Landroid/net/Uri$Builder;->scheme(Ljava/lang/String;)Landroid/net/Uri$Builder;
 
     move-result-object v2
@@ -111,7 +104,6 @@
 
     invoke-direct {v1, v3, v2}, Landroid/content/Intent;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
-    .line 6
     invoke-virtual {v0, v1}, Landroid/content/Context;->sendBroadcast(Landroid/content/Intent;)V
 
     return-void

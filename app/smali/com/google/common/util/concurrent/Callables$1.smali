@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/Callables$1;
 .super Ljava/lang/Object;
-.source "Callables.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -33,7 +32,6 @@
 .method constructor <init>(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/Callables$1;->val$value:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +49,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Callables$1;->val$value:Ljava/lang/Object;
 
     return-object v0

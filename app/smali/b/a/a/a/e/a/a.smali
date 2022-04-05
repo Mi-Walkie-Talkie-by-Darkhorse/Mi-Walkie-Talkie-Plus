@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/a/a;
 .super Ljava/lang/Object;
-.source "BarDataProvider.java"
 
 # interfaces
 .implements Lb/a/a/a/e/a/b;

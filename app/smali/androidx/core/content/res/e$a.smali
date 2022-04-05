@@ -1,6 +1,5 @@
 .class public abstract Landroidx/core/content/res/e$a;
 .super Ljava/lang/Object;
-.source "ResourcesCompat.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 
     if-nez p0, :cond_0
 
-    .line 1
     new-instance p0, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -68,7 +65,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p2}, Landroidx/core/content/res/e$a;->getHandler(Landroid/os/Handler;)Landroid/os/Handler;
 
     move-result-object p2
@@ -94,7 +90,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p2}, Landroidx/core/content/res/e$a;->getHandler(Landroid/os/Handler;)Landroid/os/Handler;
 
     move-result-object p2

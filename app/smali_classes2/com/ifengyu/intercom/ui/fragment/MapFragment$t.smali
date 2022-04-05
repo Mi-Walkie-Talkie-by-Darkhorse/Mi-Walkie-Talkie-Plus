@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$t;
 .super Ljava/lang/Object;
-.source "MapFragment.java"
 
 # interfaces
 .implements Landroidx/lifecycle/q;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$t;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public a(Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -58,7 +55,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$t;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->titleBarTitle:Landroid/widget/TextView;
@@ -76,7 +72,6 @@
 .method public bridge synthetic onChanged(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/fragment/MapFragment$t;->a(Lcom/ifengyu/intercom/lite/models/DeviceParamLiveData;)V

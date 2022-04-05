@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 .super Landroid/view/View;
-.source "QMUIQQFaceView.java"
 
 
 # annotations
@@ -146,7 +145,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -155,7 +153,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 2
     sget v0, Lcom/qmuiteam/qmui/R$attr;->QMUIQQFaceStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -166,156 +163,114 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 7
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d:Z
 
     const/4 v1, -0x1
 
-    .line 5
     iput v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i:I
 
     const/4 v2, 0x0
 
-    .line 6
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->k:I
 
     const v3, 0x7fffffff
 
-    .line 7
     iput v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->m:I
 
-    .line 8
     iput-boolean v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->n:Z
 
-    .line 9
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
-    .line 10
     new-instance v4, Ljava/util/HashMap;
 
     invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
 
     iput-object v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->p:Ljava/util/HashMap;
 
-    .line 11
     iput-boolean v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
-    .line 12
     new-instance v4, Landroid/graphics/Rect;
 
     invoke-direct {v4}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->r:Landroid/graphics/Rect;
 
-    .line 13
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->v:I
 
-    .line 14
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
 
-    .line 15
     sget-object v4, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     iput-object v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
-    .line 16
     iput-boolean v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->y:Z
 
-    .line 17
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->z:I
 
-    .line 18
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->A:I
 
-    .line 19
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->B:I
 
-    .line 20
     iput v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->D:I
 
     const/4 v3, 0x0
 
-    .line 21
     iput-object v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->E:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;
 
-    .line 22
     iput-boolean v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->F:Z
 
-    .line 23
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->G:Z
 
-    .line 24
     iput-object v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->H:Landroid/graphics/Typeface;
 
-    .line 25
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->I:I
 
-    .line 26
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->J:I
 
-    .line 27
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->K:I
 
     const/4 v4, 0x2
 
     new-array v5, v4, [I
 
-    .line 28
     fill-array-data v5, :array_0
 
     iput-object v5, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->L:[I
 
-    .line 29
     iput-boolean v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->M:Z
 
-    .line 30
     iput v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->O:I
 
-    .line 31
     iput-object v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
-    .line 32
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->Q:Z
 
-    .line 33
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
-    .line 34
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->S:I
 
-    .line 35
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->T:I
 
-    .line 36
     iput-boolean v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->U:Z
 
-    .line 37
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->V:I
 
-    .line 38
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->W:I
 
-    .line 39
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b0:I
 
-    .line 40
     iput-boolean v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f0:Z
 
-    .line 41
     iput v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h0:I
 
-    .line 42
     iput-boolean v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i0:Z
 
-    .line 43
     iput v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j0:I
 
-    .line 44
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v5
@@ -326,7 +281,6 @@
 
     move-result-object p2
 
-    .line 45
     invoke-static {p1, v4}, Lcom/qmuiteam/qmui/util/d;->a(Landroid/content/Context;I)I
 
     move-result p3
@@ -335,24 +289,20 @@
 
     iput p3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->B:I
 
-    .line 46
     sget p3, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_android_textSize:I
 
     const/16 v5, 0xe
 
-    .line 47
     invoke-static {p1, v5}, Lcom/qmuiteam/qmui/util/d;->a(Landroid/content/Context;I)I
 
     move-result p1
 
-    .line 48
     invoke-virtual {p2, p3, p1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p1
 
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g:I
 
-    .line 49
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_android_textColor:I
 
     invoke-virtual {p2, p1}, Landroid/content/res/TypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
@@ -361,7 +311,6 @@
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h:Landroid/content/res/ColorStateList;
 
-    .line 50
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_android_singleLine:I
 
     invoke-virtual {p2, p1, v2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -370,7 +319,6 @@
 
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->n:Z
 
-    .line 51
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_android_maxLines:I
 
     iget p3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->m:I
@@ -381,17 +329,14 @@
 
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->m:I
 
-    .line 52
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_android_lineSpacingExtra:I
 
     invoke-virtual {p2, p1, v2}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
 
     move-result p1
 
-    .line 53
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->setLineSpace(I)V
 
-    .line 54
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_android_ellipsize:I
 
     invoke-virtual {p2, p1, v1}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -406,12 +351,10 @@
 
     if-eq p1, p3, :cond_0
 
-    .line 55
     iput-object v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
     goto :goto_0
 
-    .line 56
     :cond_0
     sget-object p1, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
@@ -419,7 +362,6 @@
 
     goto :goto_0
 
-    .line 57
     :cond_1
     sget-object p1, Landroid/text/TextUtils$TruncateAt;->MIDDLE:Landroid/text/TextUtils$TruncateAt;
 
@@ -427,13 +369,11 @@
 
     goto :goto_0
 
-    .line 58
     :cond_2
     sget-object p1, Landroid/text/TextUtils$TruncateAt;->START:Landroid/text/TextUtils$TruncateAt;
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
-    .line 59
     :goto_0
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_android_maxWidth:I
 
@@ -445,7 +385,6 @@
 
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->D:I
 
-    .line 60
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_qmui_special_drawable_padding:I
 
     invoke-virtual {p2, p1, v2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
@@ -454,24 +393,20 @@
 
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->J:I
 
-    .line 61
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_android_text:I
 
     invoke-virtual {p2, p1}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 62
     invoke-static {p1}, Lcom/qmuiteam/qmui/util/g;->a(Ljava/lang/CharSequence;)Z
 
     move-result p3
 
     if-nez p3, :cond_3
 
-    .line 63
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a:Ljava/lang/CharSequence;
 
-    .line 64
     :cond_3
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_qmui_more_action_text:I
 
@@ -481,7 +416,6 @@
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->s:Ljava/lang/String;
 
-    .line 65
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_qmui_more_action_color:I
 
     invoke-virtual {p2, p1}, Landroid/content/res/TypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
@@ -490,7 +424,6 @@
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->t:Landroid/content/res/ColorStateList;
 
-    .line 66
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUIQQFaceView_qmui_more_action_bg_color:I
 
     invoke-virtual {p2, p1}, Landroid/content/res/TypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
@@ -499,20 +432,16 @@
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->u:Landroid/content/res/ColorStateList;
 
-    .line 67
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 68
     new-instance p1, Landroid/text/TextPaint;
 
     invoke-direct {p1}, Landroid/text/TextPaint;-><init>()V
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
-    .line 69
     invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setAntiAlias(Z)V
 
-    .line 70
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g:I
@@ -521,7 +450,6 @@
 
     invoke-virtual {p1, p2}, Landroid/text/TextPaint;->setTextSize(F)V
 
-    .line 71
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     const-string p2, "..."
@@ -540,27 +468,22 @@
 
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
 
-    .line 72
     invoke-direct {p0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c()V
 
-    .line 73
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
-    .line 74
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 75
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     sget-object p2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 76
     invoke-static {}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler;->b()Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler;
 
     move-result-object p1
@@ -581,7 +504,6 @@
 .method static synthetic a(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;)Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->E:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;
 
     return-object p0
@@ -590,17 +512,14 @@
 .method private a(II)V
     .locals 2
 
-    .line 223
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->y:Z
 
     if-eqz v0, :cond_0
 
-    .line 224
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     return-void
 
-    .line 225
     :cond_0
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
@@ -608,14 +527,12 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 226
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->K:I
 
     const/16 v1, 0x11
 
     if-ne v0, v1, :cond_1
 
-    .line 227
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     sub-int/2addr v0, p1
@@ -635,7 +552,6 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 228
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     sub-int/2addr v0, p1
@@ -648,13 +564,11 @@
 
     goto :goto_0
 
-    .line 229
     :cond_2
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     goto :goto_0
 
-    .line 230
     :cond_3
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
@@ -665,29 +579,24 @@
 .method private a(IZ)V
     .locals 1
 
-    .line 116
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->S:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->S:I
 
-    .line 117
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     invoke-direct {p0, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->setContentCalMaxWidth(I)V
 
-    .line 118
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     if-eqz p2, :cond_1
 
-    .line 119
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
     if-nez p1, :cond_0
 
-    .line 120
     iget p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->A:I
 
     add-int/lit8 p1, p1, 0x1
@@ -696,20 +605,17 @@
 
     goto :goto_0
 
-    .line 121
     :cond_0
     sget-object p2, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     if-ne p1, p2, :cond_1
 
-    .line 122
     iget p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->S:I
 
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->m:I
 
     if-gt p1, p2, :cond_1
 
-    .line 123
     iget p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->A:I
 
     add-int/lit8 p1, p1, 0x1
@@ -728,7 +634,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 205
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
     if-eqz p2, :cond_0
@@ -750,7 +655,6 @@
 
     add-int/2addr p2, v1
 
-    .line 206
     iget v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     const/4 v2, 0x1
@@ -759,19 +663,16 @@
 
     iput v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
-    .line 207
     iget-boolean v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->y:Z
 
     if-eqz v3, :cond_6
 
-    .line 208
     iget-object v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
     sget-object v4, Landroid/text/TextUtils$TruncateAt;->START:Landroid/text/TextUtils$TruncateAt;
 
     if-ne v3, v4, :cond_2
 
-    .line 209
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->z:I
@@ -782,7 +683,6 @@
 
     if-le v1, v3, :cond_5
 
-    .line 210
     iget v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c0:I
 
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
@@ -795,13 +695,11 @@
 
     goto :goto_1
 
-    .line 211
     :cond_2
     sget-object v1, Landroid/text/TextUtils$TruncateAt;->MIDDLE:Landroid/text/TextUtils$TruncateAt;
 
     if-ne v3, v1, :cond_4
 
-    .line 212
     iget-boolean v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i0:Z
 
     if-eqz v1, :cond_3
@@ -812,7 +710,6 @@
 
     if-ne v1, v3, :cond_5
 
-    .line 213
     :cond_3
     iget v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c0:I
 
@@ -826,7 +723,6 @@
 
     goto :goto_1
 
-    .line 214
     :cond_4
     iget v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c0:I
 
@@ -838,7 +734,6 @@
 
     iput v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c0:I
 
-    .line 215
     :cond_5
     :goto_1
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
@@ -867,10 +762,8 @@
 
     new-array p2, p2, [Ljava/lang/Object;
 
-    .line 216
     iget-object v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
-    .line 217
     invoke-virtual {v1}, Landroid/text/TextUtils$TruncateAt;->name()Ljava/lang/String;
 
     move-result-object v1
@@ -897,7 +790,6 @@
 
     const/4 v0, 0x3
 
-    .line 218
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v1
@@ -946,7 +838,6 @@
 
     const/4 v0, 0x7
 
-    .line 219
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v1
@@ -979,12 +870,10 @@
 
     const-string v1, "draw outside the visible height, the ellipsize is inaccurate: mEllipsize = %s; mCurrentDrawLine = %d; mNeedDrawLine = %d;viewWidth = %d; viewHeight = %d; paddingLeft = %d; paddingRight = %d; paddingTop = %d; paddingBottom = %d; text = %s"
 
-    .line 220
     invoke-static {v0, v1, p2}, Lcom/qmuiteam/qmui/b;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_2
 
-    .line 221
     :cond_6
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c0:I
 
@@ -996,7 +885,6 @@
 
     iput v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c0:I
 
-    .line 222
     :cond_7
     :goto_2
     invoke-direct {p0, p1, p3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(II)V
@@ -1007,7 +895,6 @@
 .method private a(Landroid/graphics/Canvas;I)V
     .locals 9
 
-    .line 177
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->s:Ljava/lang/String;
 
     invoke-static {p2}, Lcom/qmuiteam/qmui/util/g;->a(Ljava/lang/CharSequence;)Z
@@ -1016,7 +903,6 @@
 
     if-nez p2, :cond_9
 
-    .line 178
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->t:Landroid/content/res/ColorStateList;
 
     if-nez p2, :cond_0
@@ -1028,17 +914,14 @@
 
     if-eqz p2, :cond_1
 
-    .line 179
     invoke-virtual {p2}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result v1
 
-    .line 180
     iget-boolean v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
     if-eqz v2, :cond_2
 
-    .line 181
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->L:[I
 
     invoke-virtual {p2, v2, v1}, Landroid/content/res/ColorStateList;->getColorForState([II)I
@@ -1050,24 +933,20 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 182
     :cond_2
     :goto_0
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->u:Landroid/content/res/ColorStateList;
 
     if-eqz p2, :cond_3
 
-    .line 183
     invoke-virtual {p2}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result v0
 
-    .line 184
     iget-boolean p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
     if-eqz p2, :cond_3
 
-    .line 185
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->u:Landroid/content/res/ColorStateList;
 
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->L:[I
@@ -1076,13 +955,11 @@
 
     move-result v0
 
-    .line 186
     :cond_3
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result p2
 
-    .line 187
     iget v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     const/4 v3, 0x1
@@ -1091,7 +968,6 @@
 
     sub-int/2addr v2, v3
 
-    .line 188
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i:I
@@ -1102,7 +978,6 @@
 
     add-int/2addr p2, v2
 
-    .line 189
     :cond_4
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->r:Landroid/graphics/Rect;
 
@@ -1120,32 +995,27 @@
 
     if-eqz v0, :cond_5
 
-    .line 190
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 191
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     sget-object v0, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 192
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->r:Landroid/graphics/Rect;
 
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p1, p2, v0}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 193
     :cond_5
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     invoke-virtual {p2, v1}, Landroid/text/TextPaint;->setColor(I)V
 
-    .line 194
     iget-object v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->s:Ljava/lang/String;
 
     const/4 v4, 0x0
@@ -1168,7 +1038,6 @@
 
     invoke-virtual/range {v2 .. v8}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;IIFFLandroid/graphics/Paint;)V
 
-    .line 195
     iget-boolean p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->M:Z
 
     if-eqz p2, :cond_8
@@ -1177,7 +1046,6 @@
 
     if-lez p2, :cond_8
 
-    .line 196
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->N:Landroid/content/res/ColorStateList;
 
     if-nez p2, :cond_6
@@ -1187,37 +1055,31 @@
     :cond_6
     if-eqz p2, :cond_8
 
-    .line 197
     invoke-virtual {p2}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result v0
 
-    .line 198
     iget-boolean v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
     if-eqz v1, :cond_7
 
-    .line 199
     iget-object v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->L:[I
 
     invoke-virtual {p2, v1, v0}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
     move-result v0
 
-    .line 200
     :cond_7
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 201
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 202
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->O:I
@@ -1226,7 +1088,6 @@
 
     invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 203
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->r:Landroid/graphics/Rect;
 
     iget v0, p2, Landroid/graphics/Rect;->left:I
@@ -1249,7 +1110,6 @@
 
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 204
     :cond_8
     invoke-direct {p0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d()V
 
@@ -1268,7 +1128,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 392
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->k:I
 
     goto :goto_2
@@ -1298,7 +1157,6 @@
     :goto_1
     add-int/2addr v0, v1
 
-    .line 393
     :goto_2
     iget v1, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h0:I
 
@@ -1306,7 +1164,6 @@
 
     if-ne v1, v2, :cond_3
 
-    .line 394
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j0:I
 
     sub-int v4, p6, v0
@@ -1331,13 +1188,11 @@
 
     return-void
 
-    .line 395
     :cond_3
     iget v3, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->z:I
 
     sub-int v3, v3, p6
 
-    .line 396
     iget v4, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     sub-int v4, v6, v4
@@ -1348,7 +1203,6 @@
 
     const/4 v1, 0x1
 
-    .line 397
     iget v7, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
     sub-int/2addr v7, v3
@@ -1364,7 +1218,6 @@
 
     goto :goto_3
 
-    .line 398
     :cond_5
     iget v3, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h0:I
 
@@ -1374,13 +1227,11 @@
 
     sub-int/2addr v3, v4
 
-    .line 399
     :goto_3
     iget v4, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     if-ge v4, v7, :cond_7
 
-    .line 400
     iget v1, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int v2, v0, v1
@@ -1389,7 +1240,6 @@
 
     sub-int v0, v6, v5
 
-    .line 401
     invoke-direct {p0, p4, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(II)V
 
     move-object v0, p0
@@ -1408,7 +1258,6 @@
 
     move/from16 v7, p8
 
-    .line 402
     invoke-direct/range {v0 .. v7}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IIZZ)V
 
     goto :goto_5
@@ -1416,7 +1265,6 @@
     :cond_6
     add-int/2addr v1, v0
 
-    .line 403
     iput v1, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     goto :goto_5
@@ -1424,7 +1272,6 @@
     :cond_7
     if-ne v4, v7, :cond_a
 
-    .line 404
     iget v4, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int v8, v0, v4
@@ -1433,7 +1280,6 @@
 
     add-int/2addr v4, v0
 
-    .line 405
     iput v4, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     goto :goto_5
@@ -1448,16 +1294,13 @@
     :cond_9
     const/4 v1, 0x0
 
-    .line 406
     :goto_4
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h0:I
 
     iput v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
-    .line 407
     iput v2, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h0:I
 
-    .line 408
     iput v7, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j0:I
 
     if-eqz v1, :cond_b
@@ -1478,7 +1321,6 @@
 
     move/from16 v7, p8
 
-    .line 409
     invoke-direct/range {v0 .. v7}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IIZZ)V
 
     goto :goto_5
@@ -1502,7 +1344,6 @@
 
     move/from16 v8, p8
 
-    .line 410
     invoke-direct/range {v0 .. v8}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IIIZZ)V
 
     :cond_b
@@ -1533,7 +1374,6 @@
 
     goto :goto_2
 
-    .line 342
     :cond_0
     invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
@@ -1568,19 +1408,16 @@
     :goto_3
     move v10, v0
 
-    .line 343
     iget-boolean v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->y:Z
 
     if-eqz v0, :cond_15
 
-    .line 344
     iget-object v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
     sget-object v1, Landroid/text/TextUtils$TruncateAt;->START:Landroid/text/TextUtils$TruncateAt;
 
     if-ne v0, v1, :cond_8
 
-    .line 345
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     iget v1, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
@@ -1609,7 +1446,6 @@
 
     move/from16 v8, p7
 
-    .line 346
     invoke-direct/range {v0 .. v8}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IIIZZ)V
 
     goto/16 :goto_4
@@ -1619,7 +1455,6 @@
 
     if-ge v0, v1, :cond_6
 
-    .line 347
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int v1, v10, v0
@@ -1628,10 +1463,8 @@
 
     sub-int v0, v8, v7
 
-    .line 348
     invoke-direct {p0, v7, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(II)V
 
-    .line 349
     invoke-direct/range {p0 .. p7}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IIZZ)V
 
     goto/16 :goto_4
@@ -1639,12 +1472,10 @@
     :cond_5
     add-int/2addr v0, v10
 
-    .line 350
     iput v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     goto/16 :goto_4
 
-    .line 351
     :cond_6
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
@@ -1652,7 +1483,6 @@
 
     add-int/2addr v0, v1
 
-    .line 352
     iget v2, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int v3, v10, v2
@@ -1661,7 +1491,6 @@
 
     add-int/2addr v2, v10
 
-    .line 353
     iput v2, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     goto/16 :goto_4
@@ -1671,28 +1500,23 @@
 
     sub-int v1, v8, v7
 
-    .line 354
     invoke-direct {p0, v0, v1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(II)V
 
     goto/16 :goto_4
 
-    .line 355
     :cond_8
     sget-object v1, Landroid/text/TextUtils$TruncateAt;->MIDDLE:Landroid/text/TextUtils$TruncateAt;
 
     if-ne v0, v1, :cond_e
 
-    .line 356
     invoke-direct {p0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->getMiddleEllipsizeLine()I
 
     move-result v11
 
-    .line 357
     iget v4, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     if-ge v4, v11, :cond_a
 
-    .line 358
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int/2addr v0, v10
@@ -1717,7 +1541,6 @@
 
     move/from16 v8, p7
 
-    .line 359
     invoke-direct/range {v0 .. v8}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IIIZZ)V
 
     goto/16 :goto_4
@@ -1735,10 +1558,8 @@
 
     move/from16 v6, p7
 
-    .line 360
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IZZ)V
 
-    .line 361
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int/2addr v0, v10
@@ -1750,7 +1571,6 @@
     :cond_a
     if-ne v4, v11, :cond_d
 
-    .line 362
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -1763,7 +1583,6 @@
 
     sub-int/2addr v0, v1
 
-    .line 363
     iget-boolean v1, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i0:Z
 
     if-eqz v1, :cond_b
@@ -1786,12 +1605,10 @@
 
     move/from16 v8, p7
 
-    .line 364
     invoke-direct/range {v0 .. v8}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IIIZZ)V
 
     goto/16 :goto_4
 
-    .line 365
     :cond_b
     iget v1, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
@@ -1799,7 +1616,6 @@
 
     if-gt v1, v0, :cond_c
 
-    .line 366
     iget v4, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     move-object v0, p0
@@ -1816,7 +1632,6 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IZZ)V
 
-    .line 367
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int/2addr v0, v10
@@ -1836,10 +1651,8 @@
 
     move-object v1, p1
 
-    .line 368
     invoke-direct/range {v0 .. v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 369
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     iget v1, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
@@ -1850,7 +1663,6 @@
 
     const/4 v0, 0x1
 
-    .line 370
     iput-boolean v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i0:Z
 
     move-object v0, p0
@@ -1871,7 +1683,6 @@
 
     move/from16 v8, p7
 
-    .line 371
     invoke-direct/range {v0 .. v8}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IIIZZ)V
 
     goto/16 :goto_4
@@ -1895,12 +1706,10 @@
 
     move/from16 v8, p7
 
-    .line 372
     invoke-direct/range {v0 .. v8}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IIIZZ)V
 
     goto/16 :goto_4
 
-    .line 373
     :cond_e
     iget v4, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
@@ -1908,20 +1717,16 @@
 
     if-ne v4, v1, :cond_13
 
-    .line 374
     iget v1, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->v:I
 
-    .line 375
     sget-object v2, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     if-ne v0, v2, :cond_f
 
-    .line 376
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
 
     add-int/2addr v1, v0
 
-    .line 377
     :cond_f
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
@@ -1935,7 +1740,6 @@
 
     if-ne v0, v1, :cond_10
 
-    .line 378
     iget v4, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     move-object v0, p0
@@ -1952,14 +1756,12 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IZZ)V
 
-    .line 379
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int/2addr v0, v10
 
     iput v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
-    .line 380
     :cond_10
     iget-object v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
@@ -1971,7 +1773,6 @@
 
     const/4 v4, 0x3
 
-    .line 381
     iget v5, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
 
     const-string v2, "..."
@@ -1982,7 +1783,6 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 382
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     iget v1, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
@@ -1994,12 +1794,10 @@
     :cond_11
     move-object v2, p1
 
-    .line 383
     invoke-direct {p0, p1, v8}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;I)V
 
     sub-int v0, v8, v7
 
-    .line 384
     invoke-direct {p0, v7, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(II)V
 
     goto/16 :goto_4
@@ -2007,7 +1805,6 @@
     :cond_12
     move-object v2, p1
 
-    .line 385
     iget v4, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     move-object v0, p0
@@ -2024,7 +1821,6 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IZZ)V
 
-    .line 386
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int/2addr v0, v10
@@ -2038,7 +1834,6 @@
 
     if-ge v4, v1, :cond_16
 
-    .line 387
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int/2addr v0, v10
@@ -2063,7 +1858,6 @@
 
     move/from16 v8, p7
 
-    .line 388
     invoke-direct/range {v0 .. v8}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IIIZZ)V
 
     goto :goto_4
@@ -2081,10 +1875,8 @@
 
     move/from16 v6, p7
 
-    .line 389
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IZZ)V
 
-    .line 390
     iget v0, v9, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int/2addr v0, v10
@@ -2114,7 +1906,6 @@
 
     move/from16 v8, p7
 
-    .line 391
     invoke-direct/range {v0 .. v8}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IIIZZ)V
 
     :cond_16
@@ -2131,7 +1922,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 411
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -2152,7 +1942,6 @@
 
     goto :goto_3
 
-    .line 412
     :cond_1
     invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
@@ -2194,7 +1983,6 @@
 
     if-eqz p2, :cond_6
 
-    .line 413
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     iget p6, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->k:I
@@ -2205,7 +1993,6 @@
 
     add-int v1, p2, p6
 
-    .line 414
     invoke-virtual {v0, p5, p2, p6, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     goto :goto_5
@@ -2213,21 +2000,17 @@
     :cond_6
     if-eqz p6, :cond_7
 
-    .line 415
     iget p5, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->J:I
 
-    .line 416
     :cond_7
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result p2
 
-    .line 417
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result p6
 
-    .line 418
     iget v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     if-le p6, v1, :cond_8
@@ -2246,7 +2029,6 @@
 
     move p6, v1
 
-    .line 419
     :cond_8
     iget v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
@@ -2258,10 +2040,8 @@
 
     add-int/2addr p6, v1
 
-    .line 420
     invoke-virtual {v0, p5, v1, p2, p6}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 421
     :goto_5
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
@@ -2271,18 +2051,15 @@
 
     if-le p4, p5, :cond_9
 
-    .line 422
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c0:I
 
     iget p4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->l:I
 
     sub-int/2addr p2, p4
 
-    .line 423
     :cond_9
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 424
     iget p4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     int-to-float p4, p4
@@ -2291,7 +2068,6 @@
 
     invoke-virtual {p1, p4, p2}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 425
     iget-boolean p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f0:Z
 
     if-eqz p2, :cond_b
@@ -2300,7 +2076,6 @@
 
     if-eqz p2, :cond_b
 
-    .line 426
     invoke-virtual {p2}, Lcom/qmuiteam/qmui/span/d;->f()Z
 
     move-result p2
@@ -2318,7 +2093,6 @@
     :cond_a
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g0:Lcom/qmuiteam/qmui/span/d;
 
-    .line 427
     invoke-virtual {p2}, Lcom/qmuiteam/qmui/span/d;->a()I
 
     move-result p2
@@ -2326,12 +2100,10 @@
     :goto_6
     if-eqz p2, :cond_b
 
-    .line 428
     iget-object p4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p4, p2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 429
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     sget-object p4, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
@@ -2344,7 +2116,6 @@
 
     int-to-float v4, p3
 
-    .line 430
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     int-to-float v5, p2
@@ -2355,11 +2126,9 @@
 
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 431
     :cond_b
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
-    .line 432
     iget-boolean p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f0:Z
 
     if-eqz p2, :cond_e
@@ -2368,7 +2137,6 @@
 
     if-eqz p2, :cond_e
 
-    .line 433
     invoke-virtual {p2}, Lcom/qmuiteam/qmui/span/d;->e()Z
 
     move-result p2
@@ -2379,7 +2147,6 @@
 
     if-lez p2, :cond_e
 
-    .line 434
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->N:Landroid/content/res/ColorStateList;
 
     if-nez p2, :cond_c
@@ -2389,12 +2156,10 @@
     :cond_c
     if-eqz p2, :cond_e
 
-    .line 435
     invoke-virtual {p2}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result p4
 
-    .line 436
     iget-object p5, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g0:Lcom/qmuiteam/qmui/span/d;
 
     invoke-virtual {p5}, Lcom/qmuiteam/qmui/span/d;->f()Z
@@ -2403,27 +2168,23 @@
 
     if-eqz p5, :cond_d
 
-    .line 437
     iget-object p5, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->L:[I
 
     invoke-virtual {p2, p5, p4}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
     move-result p4
 
-    .line 438
     :cond_d
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p2, p4}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 439
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     sget-object p4, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p2, p4}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 440
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     iget p4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->O:I
@@ -2434,7 +2195,6 @@
 
     const/4 v1, 0x0
 
-    .line 441
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     int-to-float v2, p2
@@ -2449,7 +2209,6 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 442
     :cond_e
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
@@ -2461,7 +2220,6 @@
 
     if-le p4, p3, :cond_5
 
-    .line 323
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -2476,7 +2234,6 @@
 
     goto/16 :goto_1
 
-    .line 324
     :cond_0
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f0:Z
 
@@ -2486,7 +2243,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 325
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/span/d;->f()Z
 
     move-result v0
@@ -2504,7 +2260,6 @@
     :cond_1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g0:Lcom/qmuiteam/qmui/span/d;
 
-    .line 326
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/span/d;->a()I
 
     move-result v0
@@ -2512,19 +2267,16 @@
     :goto_0
     if-eqz v0, :cond_2
 
-    .line 327
     iget-object v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 328
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 329
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     int-to-float v2, v0
@@ -2559,7 +2311,6 @@
 
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 330
     :cond_2
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
@@ -2581,7 +2332,6 @@
 
     invoke-virtual/range {v1 .. v7}, Landroid/graphics/Canvas;->drawText(Ljava/lang/CharSequence;IIFFLandroid/graphics/Paint;)V
 
-    .line 331
     iget-boolean p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f0:Z
 
     if-eqz p2, :cond_5
@@ -2590,7 +2340,6 @@
 
     if-eqz p2, :cond_5
 
-    .line 332
     invoke-virtual {p2}, Lcom/qmuiteam/qmui/span/d;->e()Z
 
     move-result p2
@@ -2601,7 +2350,6 @@
 
     if-lez p2, :cond_5
 
-    .line 333
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->N:Landroid/content/res/ColorStateList;
 
     if-nez p2, :cond_3
@@ -2611,12 +2359,10 @@
     :cond_3
     if-eqz p2, :cond_5
 
-    .line 334
     invoke-virtual {p2}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result p3
 
-    .line 335
     iget-object p4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g0:Lcom/qmuiteam/qmui/span/d;
 
     invoke-virtual {p4}, Lcom/qmuiteam/qmui/span/d;->f()Z
@@ -2625,27 +2371,23 @@
 
     if-eqz p4, :cond_4
 
-    .line 336
     iget-object p4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->L:[I
 
     invoke-virtual {p2, p4, p3}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
     move-result p3
 
-    .line 337
     :cond_4
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p2, p3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 338
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     sget-object p3, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p2, p3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 339
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f:Landroid/graphics/Paint;
 
     iget p3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->O:I
@@ -2654,7 +2396,6 @@
 
     invoke-virtual {p2, p3}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 340
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c0:I
 
     iget p3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->l:I
@@ -2665,7 +2406,6 @@
 
     add-int/2addr p2, p3
 
-    .line 341
     iget p3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     int-to-float v1, p3
@@ -2700,7 +2440,6 @@
 
     move/from16 v9, p6
 
-    .line 231
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -2711,20 +2450,17 @@
 
     return-void
 
-    .line 232
     :cond_0
     iget-boolean v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->y:Z
 
     if-eqz v0, :cond_16
 
-    .line 233
     iget-object v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
     sget-object v1, Landroid/text/TextUtils$TruncateAt;->START:Landroid/text/TextUtils$TruncateAt;
 
     if-ne v0, v1, :cond_6
 
-    .line 234
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     iget v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
@@ -2735,7 +2471,6 @@
 
     if-le v0, v3, :cond_1
 
-    .line 235
     invoke-direct/range {p0 .. p6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIII)V
 
     goto/16 :goto_7
@@ -2745,7 +2480,6 @@
 
     if-ge v0, v1, :cond_3
 
-    .line 236
     :goto_0
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
@@ -2753,7 +2487,6 @@
 
     if-ge v4, v0, :cond_17
 
-    .line 237
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     int-to-float v1, v0
@@ -2770,7 +2503,6 @@
 
     int-to-float v0, v0
 
-    .line 238
     aget v1, v6, v4
 
     add-float/2addr v0, v1
@@ -2786,7 +2518,6 @@
     :cond_2
     sub-int v0, v9, v7
 
-    .line 239
     invoke-direct {p0, v7, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(II)V
 
     move-object v0, p0
@@ -2801,12 +2532,10 @@
 
     move/from16 v6, p6
 
-    .line 240
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIII)V
 
     return-void
 
-    .line 241
     :cond_3
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
@@ -2814,7 +2543,6 @@
 
     add-int/2addr v0, v1
 
-    .line 242
     :goto_1
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
@@ -2822,7 +2550,6 @@
 
     if-ge v4, v1, :cond_17
 
-    .line 243
     iget v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     int-to-float v2, v1
@@ -2839,7 +2566,6 @@
 
     int-to-float v1, v1
 
-    .line 244
     aget v2, v6, v4
 
     add-float/2addr v1, v2
@@ -2862,7 +2588,6 @@
     :cond_5
     move v4, v2
 
-    .line 245
     :goto_2
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
 
@@ -2884,35 +2609,29 @@
 
     move/from16 v6, p6
 
-    .line 246
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIII)V
 
     return-void
 
-    .line 247
     :cond_6
     sget-object v1, Landroid/text/TextUtils$TruncateAt;->MIDDLE:Landroid/text/TextUtils$TruncateAt;
 
     if-ne v0, v1, :cond_e
 
-    .line 248
     invoke-direct {p0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->getMiddleEllipsizeLine()I
 
     move-result v10
 
-    .line 249
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     if-ge v0, v10, :cond_9
 
-    .line 250
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     move v10, v0
 
     move v11, v4
 
-    .line 251
     :goto_3
     array-length v0, v6
 
@@ -2920,7 +2639,6 @@
 
     int-to-float v0, v10
 
-    .line 252
     aget v1, v6, v11
 
     add-float/2addr v1, v0
@@ -2931,7 +2649,6 @@
 
     if-gtz v1, :cond_7
 
-    .line 253
     aget v1, v6, v11
 
     add-float/2addr v0, v1
@@ -2942,7 +2659,6 @@
 
     goto :goto_3
 
-    .line 254
     :cond_7
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
@@ -2962,7 +2678,6 @@
 
     sub-int v0, v9, v7
 
-    .line 255
     invoke-direct {p0, v7, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(II)V
 
     move-object v0, p0
@@ -2973,12 +2688,10 @@
 
     move/from16 v6, p6
 
-    .line 256
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIII)V
 
     return-void
 
-    .line 257
     :cond_8
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
@@ -3002,7 +2715,6 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 258
     iput v10, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     goto/16 :goto_7
@@ -3010,7 +2722,6 @@
     :cond_9
     if-ne v0, v10, :cond_d
 
-    .line 259
     iget-boolean v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i0:Z
 
     if-eqz v0, :cond_a
@@ -3031,7 +2742,6 @@
 
     move/from16 v7, p6
 
-    .line 260
     invoke-direct/range {v0 .. v7}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIIII)V
 
     goto/16 :goto_7
@@ -3039,7 +2749,6 @@
     :cond_a
     add-int v0, v9, v7
 
-    .line 261
     div-int/lit8 v0, v0, 0x2
 
     iget v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
@@ -3048,14 +2757,12 @@
 
     sub-int/2addr v0, v1
 
-    .line 262
     iget v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     move v11, v1
 
     move v12, v4
 
-    .line 263
     :goto_4
     array-length v1, v6
 
@@ -3063,7 +2770,6 @@
 
     int-to-float v1, v11
 
-    .line 264
     aget v2, v6, v12
 
     add-float/2addr v2, v1
@@ -3074,7 +2780,6 @@
 
     if-gtz v2, :cond_b
 
-    .line 265
     aget v2, v6, v12
 
     add-float/2addr v1, v2
@@ -3085,7 +2790,6 @@
 
     goto :goto_4
 
-    .line 266
     :cond_b
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
@@ -3103,21 +2807,18 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 267
     iput v11, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     const/4 v3, 0x0
 
     const/4 v4, 0x3
 
-    .line 268
     iget v5, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
 
     const-string v2, "..."
 
     invoke-direct/range {v0 .. v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 269
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     iget v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
@@ -3128,7 +2829,6 @@
 
     const/4 v0, 0x1
 
-    .line 270
     iput-boolean v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i0:Z
 
     move-object v0, p0
@@ -3147,12 +2847,10 @@
 
     move/from16 v7, p6
 
-    .line 271
     invoke-direct/range {v0 .. v7}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIIII)V
 
     return-void
 
-    .line 272
     :cond_c
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
@@ -3176,7 +2874,6 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 273
     iput v11, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     goto/16 :goto_7
@@ -3198,12 +2895,10 @@
 
     move/from16 v7, p6
 
-    .line 274
     invoke-direct/range {v0 .. v7}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIIII)V
 
     goto/16 :goto_7
 
-    .line 275
     :cond_e
     iget v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
@@ -3211,14 +2906,12 @@
 
     if-ge v1, v2, :cond_11
 
-    .line 276
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     move v10, v0
 
     move v11, v4
 
-    .line 277
     :goto_5
     array-length v0, v6
 
@@ -3226,7 +2919,6 @@
 
     int-to-float v0, v10
 
-    .line 278
     aget v1, v6, v11
 
     add-float/2addr v1, v0
@@ -3237,7 +2929,6 @@
 
     if-gtz v1, :cond_f
 
-    .line 279
     aget v1, v6, v11
 
     add-float/2addr v0, v1
@@ -3248,7 +2939,6 @@
 
     goto :goto_5
 
-    .line 280
     :cond_f
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
@@ -3268,7 +2958,6 @@
 
     sub-int v0, v9, v7
 
-    .line 281
     invoke-direct {p0, v7, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(II)V
 
     move-object v0, p0
@@ -3279,12 +2968,10 @@
 
     move/from16 v6, p6
 
-    .line 282
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIII)V
 
     return-void
 
-    .line 283
     :cond_10
     array-length v5, v6
 
@@ -3306,7 +2993,6 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 284
     iput v10, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     goto/16 :goto_7
@@ -3314,20 +3000,16 @@
     :cond_11
     if-ne v1, v2, :cond_17
 
-    .line 285
     iget v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->v:I
 
-    .line 286
     sget-object v2, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     if-ne v0, v2, :cond_12
 
-    .line 287
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
 
     add-int/2addr v1, v0
 
-    .line 288
     :cond_12
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
@@ -3335,7 +3017,6 @@
 
     move v5, v4
 
-    .line 289
     :goto_6
     array-length v0, v6
 
@@ -3343,7 +3024,6 @@
 
     int-to-float v0, v10
 
-    .line 290
     aget v2, v6, v5
 
     add-float/2addr v2, v0
@@ -3356,7 +3036,6 @@
 
     if-gtz v2, :cond_13
 
-    .line 291
     aget v2, v6, v5
 
     add-float/2addr v0, v2
@@ -3367,7 +3046,6 @@
 
     goto :goto_6
 
-    .line 292
     :cond_13
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
@@ -3387,10 +3065,8 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 293
     iput v10, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
-    .line 294
     iget-object v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
     sget-object v1, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
@@ -3401,7 +3077,6 @@
 
     const/4 v4, 0x3
 
-    .line 295
     iget v5, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
 
     const-string v2, "..."
@@ -3412,7 +3087,6 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 296
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     iget v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
@@ -3424,12 +3098,10 @@
     :cond_14
     move-object v1, p1
 
-    .line 297
     invoke-direct {p0, p1, v9}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;I)V
 
     sub-int v0, v9, v7
 
-    .line 298
     invoke-direct {p0, v7, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(II)V
 
     return-void
@@ -3437,7 +3109,6 @@
     :cond_15
     move-object v1, p1
 
-    .line 299
     array-length v5, v6
 
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
@@ -3456,7 +3127,6 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 300
     iput v10, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     goto :goto_7
@@ -3476,7 +3146,6 @@
 
     move/from16 v6, p6
 
-    .line 301
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIII)V
 
     :cond_17
@@ -3495,7 +3164,6 @@
 
     move/from16 v7, p7
 
-    .line 302
     invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -3506,7 +3174,6 @@
 
     return-void
 
-    .line 303
     :cond_0
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h0:I
 
@@ -3528,18 +3195,15 @@
 
     move/from16 v6, p7
 
-    .line 304
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIII)V
 
     return-void
 
-    .line 305
     :cond_1
     iget v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->z:I
 
     sub-int v2, v2, p5
 
-    .line 306
     iget v5, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     sub-int v5, v7, v5
@@ -3548,7 +3212,6 @@
 
     sub-int/2addr v5, v0
 
-    .line 307
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
     sub-int/2addr v0, v2
@@ -3564,7 +3227,6 @@
 
     goto :goto_0
 
-    .line 308
     :cond_3
     iget v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h0:I
 
@@ -3574,19 +3236,16 @@
 
     sub-int/2addr v2, v5
 
-    .line 309
     :goto_0
     iget v5, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     if-ge v5, v0, :cond_5
 
-    .line 310
     :goto_1
     array-length v0, v3
 
     if-ge v4, v0, :cond_9
 
-    .line 311
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     int-to-float v1, v0
@@ -3603,7 +3262,6 @@
 
     int-to-float v0, v0
 
-    .line 312
     aget v1, v3, v4
 
     add-float/2addr v0, v1
@@ -3619,7 +3277,6 @@
     :cond_4
     sub-int v0, v6, v7
 
-    .line 313
     invoke-direct {p0, v6, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(II)V
 
     move-object v0, p0
@@ -3636,7 +3293,6 @@
 
     move/from16 v7, p7
 
-    .line 314
     invoke-direct/range {v0 .. v7}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIIII)V
 
     return-void
@@ -3644,13 +3300,11 @@
     :cond_5
     if-ne v5, v0, :cond_8
 
-    .line 315
     :goto_2
     array-length v5, v3
 
     if-ge v4, v5, :cond_9
 
-    .line 316
     iget v5, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     int-to-float v9, v5
@@ -3667,7 +3321,6 @@
 
     int-to-float v5, v5
 
-    .line 317
     aget v9, v3, v4
 
     add-float/2addr v5, v9
@@ -3690,16 +3343,13 @@
     :cond_7
     move v4, v9
 
-    .line 318
     :goto_3
     iget v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h0:I
 
     iput v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
-    .line 319
     iput v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h0:I
 
-    .line 320
     iput v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j0:I
 
     move-object v0, p0
@@ -3714,7 +3364,6 @@
 
     move/from16 v6, p7
 
-    .line 321
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIII)V
 
     return-void
@@ -3734,7 +3383,6 @@
 
     move/from16 v6, p7
 
-    .line 322
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIII)V
 
     :cond_9
@@ -3759,14 +3407,12 @@
 
     move/from16 v10, p3
 
-    .line 137
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v11
 
     add-int v12, v10, v11
 
-    .line 138
     iget-boolean v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->y:Z
 
     if-eqz v0, :cond_0
@@ -3783,7 +3429,6 @@
 
     int-to-float v4, v11
 
-    .line 139
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->l:I
 
     int-to-float v5, v0
@@ -3801,7 +3446,6 @@
 
     const/4 v14, 0x0
 
-    .line 140
     :goto_0
     invoke-interface/range {p2 .. p2}, Ljava/util/List;->size()I
 
@@ -3811,26 +3455,22 @@
 
     move-object/from16 v15, p2
 
-    .line 141
     invoke-interface {v15, v14}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;
 
-    .line 142
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->f()Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
     move-result-object v1
 
-    .line 143
     sget-object v2, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;->b:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
     const/4 v3, 0x1
 
     if-ne v1, v2, :cond_3
 
-    .line 144
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->b()I
 
     move-result v2
@@ -3877,7 +3517,6 @@
 
     goto/16 :goto_7
 
-    .line 145
     :cond_3
     sget-object v2, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;->c:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
@@ -3885,7 +3524,6 @@
 
     const/4 v2, 0x0
 
-    .line 146
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->c()Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
@@ -3930,25 +3568,21 @@
 
     goto/16 :goto_7
 
-    .line 147
     :cond_6
     sget-object v2, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;->a:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
     if-ne v1, v2, :cond_7
 
-    .line 148
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->d()Ljava/lang/CharSequence;
 
     move-result-object v2
 
-    .line 149
     invoke-interface {v2}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
 
     new-array v3, v0, [F
 
-    .line 150
     iget-object v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -3967,30 +3601,25 @@
 
     move v6, v12
 
-    .line 151
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIII)V
 
     goto/16 :goto_7
 
-    .line 152
     :cond_7
     sget-object v2, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;->d:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
     if-ne v1, v2, :cond_d
 
-    .line 153
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->a()Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
     move-result-object v1
 
-    .line 154
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->e()Lcom/qmuiteam/qmui/span/d;
 
     move-result-object v2
 
     iput-object v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g0:Lcom/qmuiteam/qmui/span/d;
 
-    .line 155
     iget-object v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->p:Ljava/util/HashMap;
 
     invoke-virtual {v2, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -4001,7 +3630,6 @@
 
     if-eqz v1, :cond_f
 
-    .line 156
     invoke-virtual {v1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a()Ljava/util/List;
 
     move-result-object v2
@@ -4012,12 +3640,10 @@
 
     if-nez v2, :cond_f
 
-    .line 157
     iget-object v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g0:Lcom/qmuiteam/qmui/span/d;
 
     if-nez v2, :cond_8
 
-    .line 158
     invoke-virtual {v1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a()Ljava/util/List;
 
     move-result-object v0
@@ -4026,20 +3652,17 @@
 
     goto/16 :goto_7
 
-    .line 159
     :cond_8
     iput-boolean v3, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f0:Z
 
     if-eqz v0, :cond_9
 
-    .line 160
     iget v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     iget v3, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     invoke-virtual {v0, v2, v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->c(II)V
 
-    .line 161
     :cond_9
     iget-object v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g0:Lcom/qmuiteam/qmui/span/d;
 
@@ -4051,7 +3674,6 @@
 
     iget-object v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g0:Lcom/qmuiteam/qmui/span/d;
 
-    .line 162
     invoke-virtual {v2}, Lcom/qmuiteam/qmui/span/d;->d()I
 
     move-result v2
@@ -4061,7 +3683,6 @@
     :cond_a
     iget-object v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g0:Lcom/qmuiteam/qmui/span/d;
 
-    .line 163
     invoke-virtual {v2}, Lcom/qmuiteam/qmui/span/d;->b()I
 
     move-result v2
@@ -4069,18 +3690,15 @@
     :goto_5
     if-nez v2, :cond_b
 
-    .line 164
     invoke-direct/range {p0 .. p0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d()V
 
     goto :goto_6
 
-    .line 165
     :cond_b
     iget-object v3, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     invoke-virtual {v3, v2}, Landroid/text/TextPaint;->setColor(I)V
 
-    .line 166
     :goto_6
     invoke-virtual {v1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a()Ljava/util/List;
 
@@ -4088,38 +3706,32 @@
 
     invoke-direct {v8, v9, v1, v10}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/util/List;I)V
 
-    .line 167
     invoke-direct/range {p0 .. p0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d()V
 
     if-eqz v0, :cond_c
 
-    .line 168
     iget v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
     iget v2, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     invoke-virtual {v0, v1, v2}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->b(II)V
 
-    .line 169
     :cond_c
     iput-boolean v13, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->f0:Z
 
     goto :goto_7
 
-    .line 170
     :cond_d
     sget-object v0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;->e:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
     if-ne v1, v0, :cond_f
 
-    .line 171
     iget v5, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
 
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->v:I
 
     add-int/2addr v0, v5
 
-    .line 172
     iget-boolean v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->y:Z
 
     if-eqz v1, :cond_e
@@ -4152,10 +3764,8 @@
 
     move-object/from16 v1, p1
 
-    .line 173
     invoke-direct/range {v0 .. v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 174
     iget v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     iget v1, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
@@ -4164,12 +3774,10 @@
 
     iput v0, v8, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
-    .line 175
     invoke-direct {v8, v9, v12}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;I)V
 
     return-void
 
-    .line 176
     :cond_e
     invoke-direct {v8, v11, v3, v10}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(IZI)V
 
@@ -4192,14 +3800,12 @@
 
     move/from16 v2, p3
 
-    .line 124
     invoke-interface/range {p1 .. p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v3
 
     new-array v4, v3, [F
 
-    .line 125
     iget-object v5, v0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     invoke-interface/range {p1 .. p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -4210,7 +3816,6 @@
 
     sub-int v5, v2, v1
 
-    .line 126
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v6
@@ -4224,7 +3829,6 @@
 
     int-to-float v10, v5
 
-    .line 127
     aget v11, v4, v9
 
     const/4 v12, 0x1
@@ -4233,12 +3837,10 @@
 
     if-gez v10, :cond_0
 
-    .line 128
     iput-boolean v12, v0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->F:Z
 
     return-void
 
-    .line 129
     :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -4258,10 +3860,8 @@
 
     aput-object p1, v3, v8
 
-    .line 130
     iget v4, v0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
-    .line 131
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -4288,15 +3888,12 @@
 
     const-string v2, "measureText: text = %s, mCurrentCalWidth = %d, widthStart = %d, widthEnd = %d"
 
-    .line 132
     invoke-static {v1, v2, v3}, Lcom/qmuiteam/qmui/b;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 133
     iput-boolean v12, v0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->F:Z
 
     goto :goto_1
 
-    .line 134
     :cond_1
     iget v10, v0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
@@ -4312,10 +3909,8 @@
 
     if-lez v10, :cond_2
 
-    .line 135
     invoke-direct {v0, v1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c(I)V
 
-    .line 136
     :cond_2
     iget v10, v0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
@@ -4349,7 +3944,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 2
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a:Ljava/lang/CharSequence;
 
     invoke-static {p1, p2}, Lcom/qmuiteam/qmui/util/g;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -4360,14 +3954,11 @@
 
     return-void
 
-    .line 3
     :cond_0
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a:Ljava/lang/CharSequence;
 
-    .line 4
     invoke-virtual {p0, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
-    .line 5
     iget-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d:Z
 
     if-eqz p1, :cond_2
@@ -4378,7 +3969,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -4388,14 +3978,12 @@
 
     throw p1
 
-    .line 7
     :cond_2
     :goto_0
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->p:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Ljava/util/HashMap;->clear()V
 
-    .line 8
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a:Ljava/lang/CharSequence;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/util/g;->a(Ljava/lang/CharSequence;)Z
@@ -4406,18 +3994,14 @@
 
     const/4 p1, 0x0
 
-    .line 9
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
-    .line 10
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 11
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
 
-    .line 12
     :cond_3
     iget-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d:Z
 
@@ -4431,7 +4015,6 @@
 
     if-eqz p1, :cond_5
 
-    .line 13
     iget-object v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a:Ljava/lang/CharSequence;
 
     invoke-virtual {p1, v1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler;->a(Ljava/lang/CharSequence;)Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
@@ -4440,7 +4023,6 @@
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
-    .line 14
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a()Ljava/util/List;
 
     move-result-object p1
@@ -4449,7 +4031,6 @@
 
     const/4 v1, 0x0
 
-    .line 15
     :goto_1
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -4457,14 +4038,12 @@
 
     if-ge v1, v2, :cond_7
 
-    .line 16
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;
 
-    .line 17
     invoke-virtual {v2}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->f()Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
     move-result-object v3
@@ -4473,7 +4052,6 @@
 
     if-ne v3, v4, :cond_4
 
-    .line 18
     iget-object v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->p:Ljava/util/HashMap;
 
     new-instance v4, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
@@ -4491,7 +4069,6 @@
 
     goto :goto_1
 
-    .line 19
     :cond_5
     new-instance p1, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
@@ -4505,7 +4082,6 @@
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
-    .line 20
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a:Ljava/lang/CharSequence;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -4520,13 +4096,11 @@
 
     const/4 v1, 0x0
 
-    .line 21
     :goto_2
     array-length v2, p1
 
     if-ge v1, v2, :cond_7
 
-    .line 22
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
     aget-object v3, p1, v1
@@ -4537,14 +4111,12 @@
 
     invoke-virtual {v2, v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;)V
 
-    .line 23
     array-length v2, p1
 
     sub-int/2addr v2, p2
 
     if-eq v1, v2, :cond_6
 
-    .line 24
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
     invoke-static {}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->g()Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;
@@ -4558,11 +4130,9 @@
 
     goto :goto_2
 
-    .line 25
     :cond_7
     iput-boolean p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->U:Z
 
-    .line 26
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
@@ -4571,7 +4141,6 @@
 
     return-void
 
-    .line 27
     :cond_8
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -4583,7 +4152,6 @@
 
     if-eq p1, p2, :cond_c
 
-    .line 28
     invoke-virtual {p0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
@@ -4594,7 +4162,6 @@
 
     goto :goto_4
 
-    .line 29
     :cond_9
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
@@ -4606,7 +4173,6 @@
 
     add-int/2addr p1, p2
 
-    .line 30
     invoke-virtual {p0}, Landroid/view/View;->getPaddingBottom()I
 
     move-result p2
@@ -4617,7 +4183,6 @@
 
     add-int/2addr p2, v1
 
-    .line 31
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v1
@@ -4630,20 +4195,16 @@
 
     if-le p1, p2, :cond_b
 
-    .line 32
     iput v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
-    .line 33
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result p1
 
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(I)I
 
-    .line 34
     iget p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->z:I
 
-    .line 35
     invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result v0
@@ -4666,36 +4227,29 @@
 
     move-result p2
 
-    .line 36
     invoke-direct {p0, p2}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(I)V
 
-    .line 37
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->z:I
 
     if-ne p1, p2, :cond_a
 
-    .line 38
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     goto :goto_3
 
-    .line 39
     :cond_a
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 40
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_b
     :goto_3
     return-void
 
-    .line 41
     :cond_c
     :goto_4
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 42
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
@@ -4712,7 +4266,6 @@
         }
     .end annotation
 
-    .line 80
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v0
@@ -4725,7 +4278,6 @@
 
     const/4 v2, 0x0
 
-    .line 81
     :goto_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -4733,14 +4285,12 @@
 
     if-ge v2, v3, :cond_e
 
-    .line 82
     iget-boolean v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->F:Z
 
     if-eqz v3, :cond_0
 
     goto/16 :goto_6
 
-    .line 83
     :cond_0
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->S:I
 
@@ -4762,7 +4312,6 @@
 
     goto/16 :goto_6
 
-    .line 84
     :cond_1
     invoke-interface {p1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -4770,7 +4319,6 @@
 
     check-cast v3, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;
 
-    .line 85
     invoke-virtual {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->f()Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
     move-result-object v4
@@ -4781,7 +4329,6 @@
 
     if-ne v4, v5, :cond_4
 
-    .line 86
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->k:I
@@ -4790,10 +4337,8 @@
 
     if-le v5, v1, :cond_2
 
-    .line 87
     invoke-direct {p0, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c(I)V
 
-    .line 88
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->k:I
@@ -4809,7 +4354,6 @@
 
     if-ne v5, v1, :cond_3
 
-    .line 89
     invoke-direct {p0, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c(I)V
 
     goto :goto_1
@@ -4817,23 +4361,19 @@
     :cond_3
     add-int/2addr v3, v4
 
-    .line 90
     iput v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     :goto_1
     sub-int v3, v1, v0
 
-    .line 91
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->k:I
 
     if-ge v3, v4, :cond_d
 
-    .line 92
     iput-boolean v6, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->F:Z
 
     goto/16 :goto_5
 
-    .line 93
     :cond_4
     invoke-virtual {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->f()Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
@@ -4843,17 +4383,14 @@
 
     if-ne v4, v5, :cond_5
 
-    .line 94
     invoke-virtual {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->d()Ljava/lang/CharSequence;
 
     move-result-object v3
 
-    .line 95
     invoke-direct {p0, v3, v0, v1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Ljava/lang/CharSequence;II)V
 
     goto/16 :goto_5
 
-    .line 96
     :cond_5
     invoke-virtual {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->f()Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
@@ -4863,19 +4400,16 @@
 
     if-ne v4, v5, :cond_7
 
-    .line 97
     invoke-virtual {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->a()Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
     move-result-object v4
 
-    .line 98
     invoke-virtual {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->e()Lcom/qmuiteam/qmui/span/d;
 
     move-result-object v3
 
     if-eqz v4, :cond_d
 
-    .line 99
     invoke-virtual {v4}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a()Ljava/util/List;
 
     move-result-object v5
@@ -4888,7 +4422,6 @@
 
     if-nez v3, :cond_6
 
-    .line 100
     invoke-virtual {v4}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a()Ljava/util/List;
 
     move-result-object v3
@@ -4897,7 +4430,6 @@
 
     goto :goto_5
 
-    .line 101
     :cond_6
     invoke-virtual {v4}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a()Ljava/util/List;
 
@@ -4907,7 +4439,6 @@
 
     goto :goto_5
 
-    .line 102
     :cond_7
     invoke-virtual {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->f()Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
@@ -4917,12 +4448,10 @@
 
     if-ne v4, v5, :cond_8
 
-    .line 103
     invoke-direct {p0, v0, v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(IZ)V
 
     goto :goto_5
 
-    .line 104
     :cond_8
     invoke-virtual {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->f()Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$ElementType;
 
@@ -4932,19 +4461,16 @@
 
     if-ne v4, v5, :cond_d
 
-    .line 105
     invoke-virtual {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$b;->c()Landroid/graphics/drawable/Drawable;
 
     move-result-object v3
 
-    .line 106
     invoke-virtual {v3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v3
 
     if-eqz v2, :cond_a
 
-    .line 107
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v4
@@ -4955,7 +4481,6 @@
 
     goto :goto_2
 
-    .line 108
     :cond_9
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->J:I
 
@@ -4963,7 +4488,6 @@
 
     goto :goto_3
 
-    .line 109
     :cond_a
     :goto_2
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->J:I
@@ -4971,17 +4495,14 @@
     :goto_3
     add-int/2addr v3, v4
 
-    .line 110
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     add-int v5, v4, v3
 
     if-le v5, v1, :cond_b
 
-    .line 111
     invoke-direct {p0, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c(I)V
 
-    .line 112
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     add-int/2addr v4, v3
@@ -4995,7 +4516,6 @@
 
     if-ne v5, v1, :cond_c
 
-    .line 113
     invoke-direct {p0, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c(I)V
 
     goto :goto_4
@@ -5003,7 +4523,6 @@
     :cond_c
     add-int/2addr v4, v3
 
-    .line 114
     iput v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     :goto_4
@@ -5011,7 +4530,6 @@
 
     if-ge v4, v3, :cond_d
 
-    .line 115
     iput-boolean v6, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->F:Z
 
     :cond_d
@@ -5028,7 +4546,6 @@
 .method static synthetic b(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     return p0
@@ -5037,19 +4554,16 @@
 .method private b(I)V
     .locals 3
 
-    .line 3
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
     iput v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->z:I
 
-    .line 4
     iget-boolean v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->n:Z
 
     const/4 v2, 0x1
 
     if-eqz v1, :cond_0
 
-    .line 5
     invoke-static {v2, v0}, Ljava/lang/Math;->min(II)I
 
     move-result p1
@@ -5061,10 +4575,8 @@
     :cond_0
     if-ge p1, v0, :cond_1
 
-    .line 6
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->z:I
 
-    .line 7
     :cond_1
     :goto_0
     iget p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
@@ -5089,7 +4601,6 @@
 
     const/4 v0, 0x0
 
-    .line 11
     invoke-direct {p0, p1, v0, p2}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(IZI)V
 
     return-void
@@ -5114,7 +4625,6 @@
 
     goto :goto_2
 
-    .line 22
     :cond_0
     invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
@@ -5149,7 +4659,6 @@
     :goto_3
     move v8, v2
 
-    .line 23
     iget v2, v7, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int/2addr v2, v8
@@ -5158,10 +4667,8 @@
 
     sub-int/2addr v1, v0
 
-    .line 24
     invoke-direct {p0, p5, v1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(II)V
 
-    .line 25
     :cond_4
     iget v0, v7, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
@@ -5181,7 +4688,6 @@
 
     invoke-direct/range {v0 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;ILandroid/graphics/drawable/Drawable;IZZ)V
 
-    .line 26
     iget v0, v7, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     add-int/2addr v0, v8
@@ -5194,12 +4700,10 @@
 .method private b(Landroid/graphics/Canvas;Ljava/lang/CharSequence;[FIII)V
     .locals 7
 
-    .line 12
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     move v4, p4
 
-    .line 13
     :goto_0
     array-length v1, p3
 
@@ -5207,7 +4711,6 @@
 
     int-to-float v1, v0
 
-    .line 14
     aget v2, p3, p4
 
     add-float/2addr v1, v2
@@ -5218,7 +4721,6 @@
 
     if-lez v1, :cond_0
 
-    .line 15
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     sub-int v6, p6, v0
@@ -5235,10 +4737,8 @@
 
     sub-int v0, p6, p5
 
-    .line 16
     invoke-direct {p0, p5, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(II)V
 
-    .line 17
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     move v4, p4
@@ -5246,7 +4746,6 @@
     :cond_0
     int-to-float v0, v0
 
-    .line 18
     aget v1, p3, p4
 
     add-float/2addr v0, v1
@@ -5257,13 +4756,11 @@
 
     goto :goto_0
 
-    .line 19
     :cond_1
     array-length p4, p3
 
     if-ge v4, p4, :cond_2
 
-    .line 20
     array-length v5, p3
 
     iget p3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
@@ -5278,7 +4775,6 @@
 
     invoke-direct/range {v1 .. v6}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/lang/CharSequence;III)V
 
-    .line 21
     iput v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e0:I
 
     :cond_2
@@ -5288,12 +4784,10 @@
 .method private b()Z
     .locals 1
 
-    .line 8
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
     if-eqz v0, :cond_1
 
-    .line 9
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a()Ljava/util/List;
 
     move-result-object v0
@@ -5302,7 +4796,6 @@
 
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
-    .line 10
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a()Ljava/util/List;
 
     move-result-object v0
@@ -5331,7 +4824,6 @@
 .method static synthetic c(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i:I
 
     return p0
@@ -5340,7 +4832,6 @@
 .method private c()V
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->s:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/util/g;->a(Ljava/lang/CharSequence;)Z
@@ -5351,12 +4842,10 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->v:I
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
@@ -5385,7 +4874,6 @@
 
     const/4 v0, 0x0
 
-    .line 5
     invoke-direct {p0, p1, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(IZ)V
 
     return-void
@@ -5394,24 +4882,20 @@
 .method private d()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h:Landroid/content/res/ColorStateList;
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {v0}, Landroid/content/res/ColorStateList;->getDefaultColor()I
 
     move-result v0
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->isPressed()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 4
     iget-object v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h:Landroid/content/res/ColorStateList;
@@ -5426,7 +4910,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
@@ -5440,14 +4923,12 @@
 .method private getMiddleEllipsizeLine()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->z:I
 
     rem-int/lit8 v1, v0, 0x2
 
     if-nez v1, :cond_0
 
-    .line 2
     div-int/lit8 v0, v0, 0x2
 
     goto :goto_0
@@ -5455,7 +4936,6 @@
     :cond_0
     add-int/lit8 v0, v0, 0x1
 
-    .line 3
     div-int/lit8 v0, v0, 0x2
 
     :goto_0
@@ -5465,7 +4945,6 @@
 .method private setContentCalMaxWidth(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->T:I
 
     invoke-static {p1, v0}, Ljava/lang/Math;->max(II)I
@@ -5482,12 +4961,10 @@
 .method protected a()I
     .locals 4
 
-    .line 43
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->Q:Z
 
     if-eqz v0, :cond_2
 
-    .line 44
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     invoke-virtual {v0}, Landroid/text/TextPaint;->getFontMetricsInt()Landroid/graphics/Paint$FontMetricsInt;
@@ -5498,25 +4975,21 @@
 
     if-nez v0, :cond_0
 
-    .line 45
     iput v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->k:I
 
     iput v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     goto :goto_0
 
-    .line 46
     :cond_0
     iput-boolean v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->Q:Z
 
-    .line 47
     iget-boolean v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->G:Z
 
     invoke-virtual {p0, v0, v1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Landroid/graphics/Paint$FontMetricsInt;Z)I
 
     move-result v1
 
-    .line 48
     iget-boolean v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->G:Z
 
     invoke-virtual {p0, v0, v2}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Paint$FontMetricsInt;Z)I
@@ -5525,21 +4998,18 @@
 
     sub-int/2addr v0, v1
 
-    .line 49
     iget v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->B:I
 
     add-int/2addr v2, v0
 
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->k:I
 
-    .line 50
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler;
 
     invoke-virtual {v2}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler;->a()I
 
     move-result v2
 
-    .line 51
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->k:I
 
     invoke-static {v3, v2}, Ljava/lang/Math;->max(II)I
@@ -5548,17 +5018,14 @@
 
     if-lt v0, v2, :cond_1
 
-    .line 52
     iput v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     neg-int v0, v1
 
-    .line 53
     iput v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->l:I
 
     goto :goto_0
 
-    .line 54
     :cond_1
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
@@ -5566,14 +5033,12 @@
 
     sub-int/2addr v2, v0
 
-    .line 55
     div-int/lit8 v2, v2, 0x2
 
     add-int/2addr v1, v2
 
     iput v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->l:I
 
-    .line 56
     :cond_2
     :goto_0
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
@@ -5584,7 +5049,6 @@
 .method protected a(I)I
     .locals 3
 
-    .line 58
     invoke-virtual {p0}, Landroid/view/View;->getPaddingRight()I
 
     move-result v0
@@ -5605,7 +5069,6 @@
 
     goto :goto_1
 
-    .line 59
     :cond_0
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->U:Z
 
@@ -5615,21 +5078,17 @@
 
     if-ne v0, p1, :cond_1
 
-    .line 60
     iget p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b0:I
 
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
-    .line 61
     iget p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->W:I
 
     return p1
 
-    .line 62
     :cond_1
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->V:I
 
-    .line 63
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a()Ljava/util/List;
@@ -5638,47 +5097,38 @@
 
     const/4 v1, 0x1
 
-    .line 64
     iput v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->S:I
 
-    .line 65
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v2
 
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
-    .line 66
     invoke-direct {p0, v0, p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Ljava/util/List;I)V
 
-    .line 67
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->S:I
 
     iget v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
     if-eq v0, v2, :cond_3
 
-    .line 68
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->C:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$c;
 
     if-eqz v2, :cond_2
 
-    .line 69
     invoke-interface {v2, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$c;->a(I)V
 
-    .line 70
     :cond_2
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->S:I
 
     iput v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
-    .line 71
     :cond_3
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
     if-ne v0, v1, :cond_4
 
-    .line 72
     iget p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->R:I
 
     invoke-virtual {p0}, Landroid/view/View;->getPaddingRight()I
@@ -5691,17 +5141,14 @@
 
     goto :goto_0
 
-    .line 73
     :cond_4
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->W:I
 
-    .line 74
     :goto_0
     iget p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b0:I
 
-    .line 75
     iget p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->W:I
 
     return p1
@@ -5710,16 +5157,12 @@
     :goto_1
     const/4 p1, 0x0
 
-    .line 76
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
-    .line 77
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->A:I
 
-    .line 78
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b0:I
 
-    .line 79
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->W:I
 
     return p1
@@ -5730,7 +5173,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 57
     iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->bottom:I
 
     goto :goto_0
@@ -5747,7 +5189,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 2
     iget p1, p1, Landroid/graphics/Paint$FontMetricsInt;->top:I
 
     goto :goto_0
@@ -5762,7 +5203,6 @@
 .method public getFontHeight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     return v0
@@ -5771,7 +5211,6 @@
 .method public getGravity()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->K:I
 
     return v0
@@ -5780,7 +5219,6 @@
 .method public getLineCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
     return v0
@@ -5789,7 +5227,6 @@
 .method public getLineSpace()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i:I
 
     return v0
@@ -5798,7 +5235,6 @@
 .method public getMaxLine()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->m:I
 
     return v0
@@ -5807,7 +5243,6 @@
 .method public getMaxWidth()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->D:I
 
     return v0
@@ -5816,7 +5251,6 @@
 .method public getMoreHitRect()Landroid/graphics/Rect;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->r:Landroid/graphics/Rect;
 
     return-object v0
@@ -5825,7 +5259,6 @@
 .method public getPaint()Landroid/text/TextPaint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     return-object v0
@@ -5834,7 +5267,6 @@
 .method public getText()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a:Ljava/lang/CharSequence;
 
     return-object v0
@@ -5843,7 +5275,6 @@
 .method public getTextSize()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g:I
 
     return v0
@@ -5852,7 +5283,6 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 6
 
-    .line 1
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->F:Z
 
     if-nez v0, :cond_1
@@ -5873,23 +5303,19 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-direct {p0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d()V
 
-    .line 3
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 4
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;
 
     invoke-virtual {v2}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$c;->a()Ljava/util/List;
 
     move-result-object v2
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v3
@@ -5902,10 +5328,8 @@
 
     const/4 v3, 0x1
 
-    .line 6
     iput v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d0:I
 
-    .line 7
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v3
@@ -5930,10 +5354,8 @@
 
     const/4 v3, 0x0
 
-    .line 8
     iput-boolean v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i0:Z
 
-    .line 9
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v3
@@ -5952,7 +5374,6 @@
 
     invoke-direct {p0, p1, v2, v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Landroid/graphics/Canvas;Ljava/util/List;I)V
 
-    .line 10
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -5985,43 +5406,34 @@
 .method protected onMeasure(II)V
     .locals 7
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
     const/4 v2, 0x0
 
-    .line 2
     iput-boolean v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->F:Z
 
-    .line 3
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a()I
 
-    .line 4
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v3
 
-    .line 5
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v4
 
-    .line 6
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result p1
 
-    .line 7
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result p2
 
-    .line 8
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->o:I
 
-    .line 9
     iput v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->A:I
 
     const/high16 v5, 0x40000000    # 2.0f
@@ -6030,7 +5442,6 @@
 
     if-eq v3, v5, :cond_2
 
-    .line 10
     iget-object v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a:Ljava/lang/CharSequence;
 
     if-eqz v3, :cond_1
@@ -6043,7 +5454,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_0
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->D:I
 
@@ -6063,11 +5473,9 @@
 
     goto :goto_1
 
-    .line 12
     :cond_2
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(I)I
 
-    .line 13
     :goto_1
     iget-boolean v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->F:Z
 
@@ -6082,13 +5490,11 @@
     :cond_3
     move v2, p2
 
-    .line 14
     :goto_2
     invoke-virtual {p0, p1, v2}, Landroid/view/View;->setMeasuredDimension(II)V
 
     return-void
 
-    .line 15
     :cond_4
     iget v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->m:I
 
@@ -6098,10 +5504,8 @@
 
     if-eq v4, v5, :cond_6
 
-    .line 16
     invoke-direct {p0, v2}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(I)V
 
-    .line 17
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result p2
@@ -6112,12 +5516,10 @@
 
     add-int/2addr p2, v4
 
-    .line 18
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->z:I
 
     if-ge v4, v3, :cond_5
 
-    .line 19
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     goto :goto_3
@@ -6125,7 +5527,6 @@
     :cond_5
     add-int/lit8 v4, v4, -0x1
 
-    .line 20
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     iget v5, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i:I
@@ -6142,7 +5543,6 @@
 
     goto :goto_4
 
-    .line 21
     :cond_6
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
@@ -6166,19 +5566,16 @@
 
     div-int/2addr v2, v4
 
-    .line 22
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->m:I
 
     invoke-static {v2, v3}, Ljava/lang/Math;->min(II)I
 
     move-result v2
 
-    .line 23
     invoke-direct {p0, v2}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(I)V
 
     goto :goto_6
 
-    .line 24
     :cond_7
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
@@ -6202,17 +5599,14 @@
 
     div-int/2addr p2, v4
 
-    .line 25
     iget v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->m:I
 
     invoke-static {p2, v2}, Ljava/lang/Math;->min(II)I
 
     move-result v2
 
-    .line 26
     invoke-direct {p0, v2}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(I)V
 
-    .line 27
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result p2
@@ -6223,12 +5617,10 @@
 
     add-int/2addr p2, v4
 
-    .line 28
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->z:I
 
     if-ge v4, v3, :cond_8
 
-    .line 29
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     :goto_3
@@ -6239,7 +5631,6 @@
     :cond_8
     add-int/lit8 v4, v4, -0x1
 
-    .line 30
     iget v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->j:I
 
     iget v5, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i:I
@@ -6262,11 +5653,9 @@
     :goto_5
     add-int/2addr p2, v4
 
-    .line 31
     :goto_6
     invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
-    .line 32
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -6301,7 +5690,6 @@
 
     invoke-virtual {v3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 33
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide p1
@@ -6316,7 +5704,6 @@
 
     const-string p2, "QMUIQQFaceView"
 
-    .line 34
     invoke-static {p2, p1}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
@@ -6325,21 +5712,18 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 6
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
 
     float-to-int v0, v0
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v1
 
     float-to-int v1, v1
 
-    .line 3
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->p:Ljava/util/HashMap;
 
     invoke-virtual {v2}, Ljava/util/HashMap;->isEmpty()Z
@@ -6356,14 +5740,12 @@
 
     if-eqz v2, :cond_0
 
-    .line 4
     invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
 
     return p1
 
-    .line 5
     :cond_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -6371,7 +5753,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 6
     iget-boolean v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
     if-nez v3, :cond_1
@@ -6380,14 +5761,12 @@
 
     if-nez v3, :cond_1
 
-    .line 7
     invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
 
     return p1
 
-    .line 8
     :cond_1
     iget-object v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->E:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;
 
@@ -6395,10 +5774,8 @@
 
     if-eqz v3, :cond_2
 
-    .line 9
     invoke-virtual {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;->run()V
 
-    .line 10
     iput-object v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->E:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;
 
     :cond_2
@@ -6420,42 +5797,34 @@
 
     goto/16 :goto_2
 
-    .line 11
     :cond_3
     iput-object v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->E:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;
 
-    .line 12
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
     if-eqz p1, :cond_4
 
-    .line 13
     invoke-virtual {p1, v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a(Z)V
 
-    .line 14
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a()V
 
     goto/16 :goto_2
 
-    .line 15
     :cond_4
     iget-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
     if-eqz p1, :cond_10
 
-    .line 16
     iput-boolean v5, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
-    .line 17
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->r:Landroid/graphics/Rect;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->invalidate(Landroid/graphics/Rect;)V
 
     goto/16 :goto_2
 
-    .line 18
     :cond_5
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
@@ -6467,22 +5836,18 @@
 
     if-nez p1, :cond_6
 
-    .line 19
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
     invoke-virtual {p1, v5}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a(Z)V
 
-    .line 20
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a()V
 
-    .line 21
     iput-object v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
     goto/16 :goto_2
 
-    .line 22
     :cond_6
     iget-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
@@ -6496,26 +5861,21 @@
 
     if-nez p1, :cond_10
 
-    .line 23
     iput-boolean v5, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
-    .line 24
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->r:Landroid/graphics/Rect;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->invalidate(Landroid/graphics/Rect;)V
 
     goto/16 :goto_2
 
-    .line 25
     :cond_7
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
     if-eqz p1, :cond_8
 
-    .line 26
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->b()V
 
-    .line 27
     new-instance p1, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;
 
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
@@ -6524,7 +5884,6 @@
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->E:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;
 
-    .line 28
     new-instance p1, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$a;
 
     invoke-direct {p1, p0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$a;-><init>(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;)V
@@ -6535,23 +5894,19 @@
 
     goto :goto_2
 
-    .line 29
     :cond_8
     iget-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
     if-eqz p1, :cond_10
 
-    .line 30
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->C:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$c;
 
     if-eqz p1, :cond_9
 
-    .line 31
     invoke-interface {p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$c;->a()V
 
     goto :goto_0
 
-    .line 32
     :cond_9
     invoke-virtual {p0}, Landroid/view/View;->isClickable()Z
 
@@ -6559,29 +5914,23 @@
 
     if-eqz p1, :cond_a
 
-    .line 33
     invoke-virtual {p0}, Landroid/view/View;->performClick()Z
 
-    .line 34
     :cond_a
     :goto_0
     iput-boolean v5, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
-    .line 35
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->r:Landroid/graphics/Rect;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->invalidate(Landroid/graphics/Rect;)V
 
     goto :goto_2
 
-    .line 36
     :cond_b
     iput-object v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
-    .line 37
     iput-boolean v5, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
-    .line 38
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->r:Landroid/graphics/Rect;
 
     invoke-virtual {v2, v0, v1}, Landroid/graphics/Rect;->contains(II)Z
@@ -6590,17 +5939,14 @@
 
     if-eqz v2, :cond_c
 
-    .line 39
     iput-boolean v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
-    .line 40
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->r:Landroid/graphics/Rect;
 
     invoke-virtual {p0, v0}, Landroid/view/View;->invalidate(Landroid/graphics/Rect;)V
 
     goto :goto_1
 
-    .line 41
     :cond_c
     iget-object v2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->p:Ljava/util/HashMap;
 
@@ -6625,40 +5971,33 @@
 
     check-cast v4, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
-    .line 42
     invoke-virtual {v4, v0, v1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a(II)Z
 
     move-result v5
 
     if-eqz v5, :cond_d
 
-    .line 43
     iput-object v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
-    .line 44
     :cond_e
     :goto_1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
     if-eqz v0, :cond_f
 
-    .line 45
     invoke-virtual {v0, v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a(Z)V
 
-    .line 46
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->P:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a()V
 
     goto :goto_2
 
-    .line 47
     :cond_f
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->q:Z
 
     if-nez v0, :cond_10
 
-    .line 48
     invoke-super {p0, p1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result p1
@@ -6673,15 +6012,12 @@
 .method public setCompiler(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler;
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler;
 
-    .line 3
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a:Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
@@ -6695,18 +6031,14 @@
 .method public setEllipsize(Landroid/text/TextUtils$TruncateAt;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->x:Landroid/text/TextUtils$TruncateAt;
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -6716,7 +6048,6 @@
 .method public setGravity(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->K:I
 
     return-void
@@ -6725,23 +6056,18 @@
 .method public setIncludeFontPadding(Z)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->G:Z
 
     if-eq v0, p1, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->Q:Z
 
-    .line 3
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->G:Z
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -6751,18 +6077,14 @@
 .method public setLineSpace(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i:I
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->i:I
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -6772,7 +6094,6 @@
 .method public setLinkUnderLineColor(I)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
@@ -6785,15 +6106,12 @@
 .method public setLinkUnderLineColor(Landroid/content/res/ColorStateList;)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->N:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_0
 
-    .line 3
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->N:Landroid/content/res/ColorStateList;
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -6803,15 +6121,12 @@
 .method public setLinkUnderLineHeight(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->O:I
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->O:I
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -6821,7 +6136,6 @@
 .method public setListener(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->C:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$c;
 
     return-void
@@ -6830,18 +6144,14 @@
 .method public setMaxLine(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->m:I
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->m:I
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -6851,15 +6161,12 @@
 .method public setMaxWidth(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->D:I
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->D:I
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
     :cond_0
@@ -6869,7 +6176,6 @@
 .method public setMoreActionBgColor(I)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
@@ -6882,15 +6188,12 @@
 .method public setMoreActionBgColor(Landroid/content/res/ColorStateList;)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->u:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_0
 
-    .line 3
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->u:Landroid/content/res/ColorStateList;
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -6900,7 +6203,6 @@
 .method public setMoreActionColor(I)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
@@ -6913,15 +6215,12 @@
 .method public setMoreActionColor(Landroid/content/res/ColorStateList;)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->t:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_0
 
-    .line 3
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->t:Landroid/content/res/ColorStateList;
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -6931,7 +6230,6 @@
 .method public setMoreActionText(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->s:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -6942,17 +6240,13 @@
 
     if-nez v0, :cond_1
 
-    .line 2
     :cond_0
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->s:Ljava/lang/String;
 
-    .line 3
     invoke-direct {p0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c()V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_1
@@ -6962,15 +6256,12 @@
 .method public setNeedUnderlineForMoreText(Z)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->M:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->M:Z
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -6980,7 +6271,6 @@
 .method public setOpenQQFace(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->d:Z
 
     return-void
@@ -6989,7 +6279,6 @@
 .method public setPadding(IIII)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v0
@@ -7005,10 +6294,8 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->U:Z
 
-    .line 3
     :cond_1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->setPadding(IIII)V
 
@@ -7018,18 +6305,14 @@
 .method public setParagraphSpace(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->I:I
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->I:I
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -7039,23 +6322,18 @@
 .method public setQQFaceSizeAddon(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->B:I
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->B:I
 
     const/4 p1, 0x1
 
-    .line 3
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->U:Z
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -7065,18 +6343,14 @@
 .method public setSingleLine(Z)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->n:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->n:Z
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -7086,18 +6360,14 @@
 .method public setSpecialDrawablePadding(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->J:I
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->J:I
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -7109,7 +6379,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Ljava/lang/CharSequence;Z)V
 
     return-void
@@ -7122,7 +6391,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p1}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object p1
@@ -7135,15 +6403,12 @@
 .method public setTextColor(Landroid/content/res/ColorStateList;)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h:Landroid/content/res/ColorStateList;
 
     if-eq v0, p1, :cond_0
 
-    .line 3
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->h:Landroid/content/res/ColorStateList;
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -7153,15 +6418,12 @@
 .method public setTextSize(I)V
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g:I
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->g:I
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     int-to-float p1, p1
@@ -7170,13 +6432,10 @@
 
     const/4 p1, 0x1
 
-    .line 4
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->Q:Z
 
-    .line 5
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->U:Z
 
-    .line 6
     iget-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     const-string v0, "..."
@@ -7195,13 +6454,10 @@
 
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->w:I
 
-    .line 7
     invoke-direct {p0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->c()V
 
-    .line 8
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 9
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -7211,28 +6467,22 @@
 .method public setTypeface(Landroid/graphics/Typeface;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->H:Landroid/graphics/Typeface;
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->H:Landroid/graphics/Typeface;
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->Q:Z
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     invoke-virtual {v0, p1}, Landroid/text/TextPaint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
-    .line 6
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     :cond_0
@@ -7250,26 +6500,22 @@
 
     if-nez p1, :cond_0
 
-    .line 7
     invoke-static {p2}, Landroid/graphics/Typeface;->defaultFromStyle(I)Landroid/graphics/Typeface;
 
     move-result-object p1
 
     goto :goto_0
 
-    .line 8
     :cond_0
     invoke-static {p1, p2}, Landroid/graphics/Typeface;->create(Landroid/graphics/Typeface;I)Landroid/graphics/Typeface;
 
     move-result-object p1
 
-    .line 9
     :goto_0
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->setTypeface(Landroid/graphics/Typeface;)V
 
     if-eqz p1, :cond_1
 
-    .line 10
     invoke-virtual {p1}, Landroid/graphics/Typeface;->getStyle()I
 
     move-result p1
@@ -7284,7 +6530,6 @@
 
     and-int/2addr p1, p2
 
-    .line 11
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     and-int/lit8 v2, p1, 0x1
@@ -7296,7 +6541,6 @@
     :cond_2
     invoke-virtual {p2, v1}, Landroid/text/TextPaint;->setFakeBoldText(Z)V
 
-    .line 12
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     and-int/lit8 p1, p1, 0x2
@@ -7310,18 +6554,15 @@
 
     goto :goto_2
 
-    .line 13
     :cond_4
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     invoke-virtual {p2, v1}, Landroid/text/TextPaint;->setFakeBoldText(Z)V
 
-    .line 14
     iget-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->e:Landroid/text/TextPaint;
 
     invoke-virtual {p2, v0}, Landroid/text/TextPaint;->setTextSkewX(F)V
 
-    .line 15
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->setTypeface(Landroid/graphics/Typeface;)V
 
     :goto_2

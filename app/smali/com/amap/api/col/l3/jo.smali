@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/jo;
 .super Ljava/lang/Object;
-.source "Encrypt.java"
 
 
 # static fields
@@ -19,19 +18,16 @@
 
     new-array v1, v0, [C
 
-    .line 1
     fill-array-data v1, :array_0
 
     sput-object v1, Lcom/amap/api/col/l3/jo;->a:[C
 
     new-array v0, v0, [B
 
-    .line 2
     fill-array-data v0, :array_1
 
     sput-object v0, Lcom/amap/api/col/l3/jo;->b:[B
 
-    .line 3
     new-instance v0, Ljavax/crypto/spec/IvParameterSpec;
 
     sget-object v1, Lcom/amap/api/col/l3/jo;->b:[B
@@ -90,7 +86,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 15
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -103,14 +98,12 @@
     :cond_0
     const-string v1, "SHA1"
 
-    .line 16
     invoke-static {v1, p0}, Lcom/amap/api/col/l3/jo;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     const-string v2, "MD5"
 
-    .line 17
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -138,7 +131,6 @@
 
     const-string v2, "generatorKey"
 
-    .line 18
     invoke-static {p0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
@@ -159,7 +151,6 @@
     :try_start_0
     const-string v1, "UTF-8"
 
-    .line 19
     invoke-virtual {p1, v1}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object p1
@@ -168,7 +159,6 @@
 
     move-result-object p0
 
-    .line 20
     array-length p1, p0
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -224,7 +214,6 @@
 
     const-string v1, "encode"
 
-    .line 21
     invoke-static {p0, p1, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
@@ -240,24 +229,20 @@
     :try_start_0
     new-array v2, v1, [B
 
-    .line 25
     array-length v3, p0
 
     sub-int/2addr v3, v1
 
     new-array v3, v3, [B
 
-    .line 26
     invoke-static {p0, v0, v2, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 27
     array-length v4, p0
 
     sub-int/2addr v4, v1
 
     invoke-static {p0, v1, v3, v0, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 28
     new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
 
     const-string v4, "AES"
@@ -266,12 +251,10 @@
 
     const-string v2, "AES/CBC/PKCS5Padding"
 
-    .line 29
     invoke-static {v2}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object v2
 
-    .line 30
     new-instance v4, Ljavax/crypto/spec/IvParameterSpec;
 
     invoke-static {}, Lcom/amap/api/col/l3/gi;->c()[B
@@ -282,10 +265,8 @@
 
     const/4 v5, 0x2
 
-    .line 31
     invoke-virtual {v2, v5, v1, v4}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
 
-    .line 32
     invoke-virtual {v2, v3}, Ljavax/crypto/Cipher;->doFinal([B)[B
 
     move-result-object p0
@@ -299,10 +280,8 @@
 
     if-eqz p0, :cond_0
 
-    .line 33
     array-length v0, p0
 
-    .line 34
     :cond_0
     new-instance p0, Ljava/lang/StringBuilder;
 
@@ -337,45 +316,37 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     invoke-static {p1}, Lcom/amap/api/col/l3/gc;->b(Ljava/lang/String;)[B
 
     move-result-object p1
 
-    .line 2
     new-instance v1, Ljava/security/spec/PKCS8EncodedKeySpec;
 
     invoke-direct {v1, p1}, Ljava/security/spec/PKCS8EncodedKeySpec;-><init>([B)V
 
     const-string p1, "RSA"
 
-    .line 3
     invoke-static {p1}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1, v1}, Ljava/security/KeyFactory;->generatePrivate(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;
 
     move-result-object p1
 
     const-string v1, "RSA/ECB/PKCS1Padding"
 
-    .line 5
     invoke-static {v1}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object v1
 
     const/4 v2, 0x1
 
-    .line 6
     invoke-virtual {v1, v2, p1}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;)V
 
-    .line 7
     array-length p1, p0
 
-    .line 8
     new-instance v3, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v3}, Ljava/io/ByteArrayOutputStream;-><init>()V
@@ -395,20 +366,17 @@
 
     if-le v7, v8, :cond_0
 
-    .line 9
     invoke-virtual {v1, p0, v5, v8}, Ljavax/crypto/Cipher;->doFinal([BII)[B
 
     move-result-object v5
 
     goto :goto_1
 
-    .line 10
     :cond_0
     invoke-virtual {v1, p0, v5, v7}, Ljavax/crypto/Cipher;->doFinal([BII)[B
 
     move-result-object v5
 
-    .line 11
     :goto_1
     array-length v7, v5
 
@@ -420,18 +388,15 @@
 
     goto :goto_0
 
-    .line 12
     :cond_1
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
 
-    .line 13
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 14
     monitor-exit v0
 
     return-object p0
@@ -454,12 +419,10 @@
 
     const-string v0, "AES/CBC/PKCS5Padding"
 
-    .line 22
     invoke-static {v0}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object v0
 
-    .line 23
     new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
 
     const-string v2, "AES"
@@ -472,7 +435,6 @@
 
     invoke-virtual {v0, v2, v1, p0}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
 
-    .line 24
     invoke-virtual {v0, p1}, Ljavax/crypto/Cipher;->doFinal([B)[B
 
     move-result-object p0
@@ -487,7 +449,6 @@
 
     const-string p0, ""
 
-    .line 15
     :cond_0
     new-instance v0, Ljava/lang/StringBuffer;
 
@@ -495,10 +456,8 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuffer;-><init>(I)V
 
-    .line 16
     invoke-virtual {v0, p0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 17
     :goto_0
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->length()I
 
@@ -508,12 +467,10 @@
 
     const-string p0, "0"
 
-    .line 18
     invoke-virtual {v0, p0}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     goto :goto_0
 
-    .line 19
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->length()I
 
@@ -521,10 +478,8 @@
 
     if-le p0, v1, :cond_2
 
-    .line 20
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->setLength(I)V
 
-    .line 21
     :cond_2
     :try_start_0
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
@@ -548,12 +503,10 @@
 
     const-string v1, "createKey"
 
-    .line 22
     invoke-static {p0, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p0, 0x0
 
-    .line 23
     :goto_1
     new-instance v0, Ljavax/crypto/spec/SecretKeySpec;
 
@@ -576,45 +529,37 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     invoke-static {p1}, Lcom/amap/api/col/l3/gc;->b(Ljava/lang/String;)[B
 
     move-result-object p1
 
-    .line 2
     new-instance v1, Ljava/security/spec/PKCS8EncodedKeySpec;
 
     invoke-direct {v1, p1}, Ljava/security/spec/PKCS8EncodedKeySpec;-><init>([B)V
 
     const-string p1, "RSA"
 
-    .line 3
     invoke-static {p1}, Ljava/security/KeyFactory;->getInstance(Ljava/lang/String;)Ljava/security/KeyFactory;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1, v1}, Ljava/security/KeyFactory;->generatePrivate(Ljava/security/spec/KeySpec;)Ljava/security/PrivateKey;
 
     move-result-object p1
 
     const-string v1, "RSA/ECB/PKCS1Padding"
 
-    .line 5
     invoke-static {v1}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object v1
 
     const/4 v2, 0x2
 
-    .line 6
     invoke-virtual {v1, v2, p1}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;)V
 
-    .line 7
     array-length p1, p0
 
-    .line 8
     new-instance v2, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v2}, Ljava/io/ByteArrayOutputStream;-><init>()V
@@ -634,20 +579,17 @@
 
     if-le v6, v7, :cond_0
 
-    .line 9
     invoke-virtual {v1, p0, v4, v7}, Ljavax/crypto/Cipher;->doFinal([BII)[B
 
     move-result-object v4
 
     goto :goto_1
 
-    .line 10
     :cond_0
     invoke-virtual {v1, p0, v4, v6}, Ljavax/crypto/Cipher;->doFinal([BII)[B
 
     move-result-object v4
 
-    .line 11
     :goto_1
     array-length v6, v4
 
@@ -659,18 +601,15 @@
 
     goto :goto_0
 
-    .line 12
     :cond_1
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
 
-    .line 13
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 14
     monitor-exit v0
 
     return-object p0
@@ -686,35 +625,29 @@
 .method public static c([BLjava/lang/String;)[B
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {p1}, Lcom/amap/api/col/l3/jo;->b(Ljava/lang/String;)Ljavax/crypto/spec/SecretKeySpec;
 
     move-result-object p1
 
-    .line 2
     invoke-static {}, Lcom/amap/api/col/l3/gi;->c()[B
 
     move-result-object v0
 
-    .line 3
     new-instance v1, Ljavax/crypto/spec/IvParameterSpec;
 
     invoke-direct {v1, v0}, Ljavax/crypto/spec/IvParameterSpec;-><init>([B)V
 
     const-string v0, "AES/CBC/PKCS5Padding"
 
-    .line 4
     invoke-static {v0}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object v0
 
     const/4 v2, 0x1
 
-    .line 5
     invoke-virtual {v0, v2, p1, v1}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
 
-    .line 6
     invoke-virtual {v0, p0}, Ljavax/crypto/Cipher;->doFinal([B)[B
 
     move-result-object p0
@@ -730,7 +663,6 @@
 
     const-string v0, "aesEncrypt"
 
-    .line 7
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p0, 0x0
@@ -741,35 +673,29 @@
 .method public static d([BLjava/lang/String;)[B
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {p1}, Lcom/amap/api/col/l3/jo;->b(Ljava/lang/String;)Ljavax/crypto/spec/SecretKeySpec;
 
     move-result-object p1
 
-    .line 2
     invoke-static {}, Lcom/amap/api/col/l3/gi;->c()[B
 
     move-result-object v0
 
-    .line 3
     new-instance v1, Ljavax/crypto/spec/IvParameterSpec;
 
     invoke-direct {v1, v0}, Ljavax/crypto/spec/IvParameterSpec;-><init>([B)V
 
     const-string v0, "AES/CBC/PKCS5Padding"
 
-    .line 4
     invoke-static {v0}, Ljavax/crypto/Cipher;->getInstance(Ljava/lang/String;)Ljavax/crypto/Cipher;
 
     move-result-object v0
 
     const/4 v2, 0x2
 
-    .line 5
     invoke-virtual {v0, v2, p1, v1}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;Ljava/security/spec/AlgorithmParameterSpec;)V
 
-    .line 6
     invoke-virtual {v0, p0}, Ljavax/crypto/Cipher;->doFinal([B)[B
 
     move-result-object p0
@@ -785,7 +711,6 @@
 
     const-string v0, "aesDecrypt"
 
-    .line 7
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p0, 0x0

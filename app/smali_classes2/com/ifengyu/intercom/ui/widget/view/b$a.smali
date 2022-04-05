@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/view/b$a;
 .super Ljava/lang/Object;
-.source "ProductDeviceSelectorDialog.java"
 
 
 # annotations

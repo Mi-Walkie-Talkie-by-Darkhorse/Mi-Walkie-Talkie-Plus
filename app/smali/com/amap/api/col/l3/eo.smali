@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/eo;
 .super Lcom/amap/api/col/l3/ep;
-.source "ImageFetcher.java"
 
 
 # instance fields
@@ -11,17 +10,14 @@
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/amap/api/col/l3/ep;-><init>(Landroid/content/Context;II)V
 
     const/4 p2, 0x0
 
-    .line 2
     iput-object p2, p0, Lcom/amap/api/col/l3/eo;->e:Lcom/amap/api/maps/model/TileProvider;
 
     const-string p2, "connectivity"
 
-    .line 3
     invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -45,7 +41,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/eo;->e:Lcom/amap/api/maps/model/TileProvider;
 
@@ -61,12 +56,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     sget-object v1, Lcom/amap/api/maps/model/TileProvider;->NO_TILE:Lcom/amap/api/maps/model/Tile;
 
     if-eq p1, v1, :cond_0
 
-    .line 3
     iget-object v1, p1, Lcom/amap/api/maps/model/Tile;->data:[B
 
     const/4 v2, 0x0
@@ -93,7 +86,6 @@
 .method protected final a(Ljava/lang/Object;)Landroid/graphics/Bitmap;
     .locals 0
 
-    .line 2
     check-cast p1, Lcom/amap/api/col/l3/de$a;
 
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/eo;->c(Lcom/amap/api/col/l3/de$a;)Landroid/graphics/Bitmap;
@@ -106,7 +98,6 @@
 .method public final a(Lcom/amap/api/maps/model/TileProvider;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/eo;->e:Lcom/amap/api/maps/model/TileProvider;
 
     return-void

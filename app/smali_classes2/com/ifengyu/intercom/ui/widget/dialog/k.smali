@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/dialog/k;
 .super Lcom/ifengyu/intercom/ui/widget/dialog/d;
-.source "GaoDeMapDownloadItemClickDialog.java"
 
 
 # annotations
@@ -25,16 +24,12 @@
 .method public constructor <init>(Landroid/content/Context;ZZ)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;-><init>(Landroid/content/Context;)V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->a:Landroid/content/Context;
 
-    .line 3
     iput-boolean p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->c:Z
 
-    .line 4
     iput-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->d:Z
 
     return-void
@@ -59,25 +54,21 @@
 
     goto :goto_1
 
-    .line 1
     :cond_0
     iget-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->c:Z
 
     if-eqz p1, :cond_2
 
-    .line 2
     iget-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->d:Z
 
     if-eqz p1, :cond_1
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->b:Lcom/ifengyu/intercom/ui/widget/dialog/k$a;
 
     invoke-interface {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/k$a;->b()V
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->b:Lcom/ifengyu/intercom/ui/widget/dialog/k$a;
 
@@ -85,30 +76,25 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->b:Lcom/ifengyu/intercom/ui/widget/dialog/k$a;
 
     invoke-interface {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/k$a;->a()V
 
-    .line 6
     :goto_0
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
 
     goto :goto_1
 
-    .line 7
     :cond_3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->b:Lcom/ifengyu/intercom/ui/widget/dialog/k$a;
 
     invoke-interface {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/k$a;->a()V
 
-    .line 8
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
 
     goto :goto_1
 
-    .line 9
     :cond_4
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
 
@@ -127,15 +113,12 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c008c
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;->setContentView(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->a:Landroid/content/Context;
 
     check-cast p1, Landroid/app/Activity;
@@ -144,7 +127,6 @@
 
     const p1, 0x7f09042d
 
-    .line 4
     invoke-virtual {p0, p1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -153,7 +135,6 @@
 
     const v0, 0x7f0900c2
 
-    .line 5
     invoke-virtual {p0, v0}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
@@ -162,7 +143,6 @@
 
     const v1, 0x7f0900c1
 
-    .line 6
     invoke-virtual {p0, v1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
@@ -171,14 +151,12 @@
 
     const v2, 0x7f090085
 
-    .line 7
     invoke-virtual {p0, v2}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
 
     check-cast v2, Landroid/widget/TextView;
 
-    .line 8
     iget-boolean v3, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->c:Z
 
     const v4, 0x7f110093
@@ -187,12 +165,10 @@
 
     if-eqz v3, :cond_1
 
-    .line 9
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->d:Z
 
     if-eqz v0, :cond_0
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->a:Landroid/content/Context;
 
     const v3, 0x7f11009d
@@ -205,7 +181,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->a:Landroid/content/Context;
 
@@ -217,7 +192,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 12
     :goto_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->a:Landroid/content/Context;
 
@@ -227,7 +201,6 @@
 
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->a:Landroid/content/Context;
 
     invoke-virtual {p1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -241,10 +214,8 @@
     :cond_1
     const/16 v1, 0x8
 
-    .line 14
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 15
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->a:Landroid/content/Context;
 
     invoke-virtual {v0, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -253,7 +224,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 16
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->a:Landroid/content/Context;
 
     invoke-virtual {p1, v4}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -267,7 +237,6 @@
 
     new-array p1, p1, [I
 
-    .line 17
     fill-array-data p1, :array_0
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/d;->a([I)V
@@ -287,7 +256,6 @@
 .method public setOnClickListener(Lcom/ifengyu/intercom/ui/widget/dialog/k$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/k;->b:Lcom/ifengyu/intercom/ui/widget/dialog/k$a;
 
     return-void

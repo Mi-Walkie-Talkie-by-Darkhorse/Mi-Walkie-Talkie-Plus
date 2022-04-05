@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$d;
 .super Ljava/lang/Object;
-.source "SharkCustomFragment.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;Lcom/ifengyu/intercom/ui/widget/dialog/f;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$d;->c:Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$d;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
@@ -46,19 +44,16 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$d;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->b()V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$d;->c:Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;
 
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$d;->b:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;->b(Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment$d;->c:Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;->g(Lcom/ifengyu/intercom/ui/setting/shark/fragment/SharkCustomFragment;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;

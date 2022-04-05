@@ -1,6 +1,5 @@
 .class Lcom/google/common/cache/CacheBuilderSpec$ConcurrencyLevelParser;
 .super Lcom/google/common/cache/CacheBuilderSpec$IntegerParser;
-.source "CacheBuilderSpec.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/cache/CacheBuilderSpec$IntegerParser;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
 .method protected parseInteger(Lcom/google/common/cache/CacheBuilderSpec;I)V
     .locals 4
 
-    .line 1
     iget-object v0, p1, Lcom/google/common/cache/CacheBuilderSpec;->concurrencyLevel:Ljava/lang/Integer;
 
     const/4 v1, 0x1
@@ -56,7 +53,6 @@
 
     invoke-static {v0, v2, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p2

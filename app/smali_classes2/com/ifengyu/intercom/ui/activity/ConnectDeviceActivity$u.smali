@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;
 .super Ljava/lang/Object;
-.source "ConnectDeviceActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/node/h;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -63,7 +60,6 @@
 .method public b(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -82,7 +78,6 @@
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     new-instance p1, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;-><init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;)V
@@ -95,7 +90,6 @@
 .method public c(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -114,7 +108,6 @@
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     new-instance p1, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$a;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$a;-><init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;)V
@@ -127,7 +120,6 @@
 .method public d(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -146,7 +138,6 @@
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->e(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$v;
@@ -157,7 +148,6 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->a()Landroid/os/Handler;
 
     move-result-object p1
@@ -170,7 +160,6 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result p1
@@ -179,7 +168,6 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object p1
@@ -198,7 +186,6 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/ifengyu/intercom/node/e;->a(ILjava/lang/String;)V
 
-    .line 6
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
@@ -210,7 +197,6 @@
 .method public e(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->u(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;)V
@@ -221,7 +207,6 @@
 .method public f(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

@@ -1,6 +1,5 @@
 .class Lcom/google/common/io/ByteSource$ByteArrayByteSource;
 .super Lcom/google/common/io/ByteSource;
-.source "ByteSource.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method protected constructor <init>([B)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/io/ByteSource;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -47,12 +44,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     invoke-virtual {p1, v0}, Ljava/io/OutputStream;->write([B)V
 
-    .line 2
     iget-object p1, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     array-length p1, p1
@@ -70,7 +65,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     invoke-interface {p1, v0}, Lcom/google/common/hash/HashFunction;->hashBytes([B)Lcom/google/common/hash/HashCode;
@@ -83,7 +77,6 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     array-length v0, v0
@@ -109,7 +102,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->openStream()Ljava/io/InputStream;
 
     move-result-object v0
@@ -120,7 +112,6 @@
 .method public openStream()Ljava/io/InputStream;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/io/ByteArrayInputStream;
 
     iget-object v1, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
@@ -148,7 +139,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     array-length v1, v0
@@ -157,7 +147,6 @@
 
     invoke-interface {p1, v0, v2, v1}, Lcom/google/common/io/ByteProcessor;->processBytes([BII)Z
 
-    .line 3
     invoke-interface {p1}, Lcom/google/common/io/ByteProcessor;->getResult()Ljava/lang/Object;
 
     move-result-object p1
@@ -168,7 +157,6 @@
 .method public read()[B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     invoke-virtual {v0}, [B->clone()Ljava/lang/Object;
@@ -183,7 +171,6 @@
 .method public size()J
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     array-length v0, v0
@@ -196,7 +183,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/common/io/BaseEncoding;->base16()Lcom/google/common/io/BaseEncoding;
 
     move-result-object v0

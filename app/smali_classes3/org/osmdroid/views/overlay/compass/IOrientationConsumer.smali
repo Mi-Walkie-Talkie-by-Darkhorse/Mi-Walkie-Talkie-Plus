@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/compass/IOrientationConsumer;
 .super Ljava/lang/Object;
-.source "IOrientationConsumer.java"
 
 
 # virtual methods

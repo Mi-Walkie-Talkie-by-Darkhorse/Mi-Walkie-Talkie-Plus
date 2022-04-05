@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/ImmutableBiMap;
 .super Lcom/google/common/collect/ImmutableMap;
-.source "ImmutableBiMap.java"
 
 # interfaces
 .implements Lcom/google/common/collect/BiMap;
@@ -54,7 +53,6 @@
 
     new-array v0, v0, [Ljava/util/Map$Entry;
 
-    .line 1
     sput-object v0, Lcom/google/common/collect/ImmutableBiMap;->EMPTY_ENTRY_ARRAY:[Ljava/util/Map$Entry;
 
     return-void
@@ -63,7 +61,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableMap;-><init>()V
 
     return-void
@@ -83,7 +80,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ImmutableBiMap$Builder;
 
     invoke-direct {v0}, Lcom/google/common/collect/ImmutableBiMap$Builder;-><init>()V
@@ -107,17 +103,14 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/collect/ImmutableBiMap;
 
     if-eqz v0, :cond_0
 
-    .line 2
     move-object v0, p0
 
     check-cast v0, Lcom/google/common/collect/ImmutableBiMap;
 
-    .line 3
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableMap;->isPartialView()Z
 
     move-result v1
@@ -126,7 +119,6 @@
 
     return-object v0
 
-    .line 4
     :cond_0
     invoke-interface {p0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -140,7 +132,6 @@
 
     check-cast p0, [Ljava/util/Map$Entry;
 
-    .line 5
     array-length v0, p0
 
     if-eqz v0, :cond_2
@@ -149,7 +140,6 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 6
     new-instance v0, Lcom/google/common/collect/RegularImmutableBiMap;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/RegularImmutableBiMap;-><init>([Ljava/util/Map$Entry;)V
@@ -159,10 +149,8 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 7
     aget-object p0, p0, v0
 
-    .line 8
     invoke-interface {p0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -177,7 +165,6 @@
 
     return-object p0
 
-    .line 9
     :cond_2
     invoke-static {}, Lcom/google/common/collect/ImmutableBiMap;->of()Lcom/google/common/collect/ImmutableBiMap;
 
@@ -200,7 +187,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/EmptyImmutableBiMap;->INSTANCE:Lcom/google/common/collect/EmptyImmutableBiMap;
 
     return-object v0
@@ -220,7 +206,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/SingletonImmutableBiMap;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/SingletonImmutableBiMap;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
@@ -242,7 +227,6 @@
         }
     .end annotation
 
-    .line 3
     new-instance v0, Lcom/google/common/collect/RegularImmutableBiMap;
 
     const/4 v1, 0x2
@@ -284,7 +268,6 @@
         }
     .end annotation
 
-    .line 4
     new-instance v0, Lcom/google/common/collect/RegularImmutableBiMap;
 
     const/4 v1, 0x3
@@ -334,7 +317,6 @@
         }
     .end annotation
 
-    .line 5
     new-instance v0, Lcom/google/common/collect/RegularImmutableBiMap;
 
     const/4 v1, 0x4
@@ -392,7 +374,6 @@
         }
     .end annotation
 
-    .line 6
     new-instance v0, Lcom/google/common/collect/RegularImmutableBiMap;
 
     const/4 v1, 0x5
@@ -457,7 +438,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -468,7 +448,6 @@
 .method public bridge synthetic inverse()Lcom/google/common/collect/BiMap;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableBiMap;->inverse()Lcom/google/common/collect/ImmutableBiMap;
 
     move-result-object v0
@@ -489,7 +468,6 @@
 .method public bridge synthetic values()Lcom/google/common/collect/ImmutableCollection;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableBiMap;->values()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -507,7 +485,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableBiMap;->inverse()Lcom/google/common/collect/ImmutableBiMap;
 
     move-result-object v0
@@ -522,7 +499,6 @@
 .method public bridge synthetic values()Ljava/util/Collection;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableBiMap;->values()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -533,7 +509,6 @@
 .method public bridge synthetic values()Ljava/util/Set;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableBiMap;->values()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0
@@ -544,7 +519,6 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ImmutableBiMap$SerializedForm;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ImmutableBiMap$SerializedForm;-><init>(Lcom/google/common/collect/ImmutableBiMap;)V

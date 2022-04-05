@@ -1,6 +1,5 @@
 .class public Landroidx/core/d/g;
 .super Landroidx/core/d/f;
-.source "Pools.java"
 
 
 # annotations
@@ -23,10 +22,8 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/core/d/f;-><init>(I)V
 
-    .line 2
     new-instance p1, Ljava/lang/Object;
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
@@ -46,12 +43,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/d/g;->c:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     invoke-super {p0}, Landroidx/core/d/f;->acquire()Ljava/lang/Object;
 
@@ -64,7 +59,6 @@
     :catchall_0
     move-exception v1
 
-    .line 3
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -84,12 +78,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/d/g;->c:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     invoke-super {p0, p1}, Landroidx/core/d/f;->release(Ljava/lang/Object;)Z
 
@@ -102,7 +94,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

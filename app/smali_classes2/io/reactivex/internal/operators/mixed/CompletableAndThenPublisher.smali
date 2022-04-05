@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/mixed/CompletableAndThenPublisher;
 .super Lio/reactivex/Flowable;
-.source "CompletableAndThenPublisher.java"
 
 
 # annotations
@@ -46,13 +45,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Flowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/mixed/CompletableAndThenPublisher;->source:Lio/reactivex/CompletableSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/mixed/CompletableAndThenPublisher;->other:Lc/a/b;
 
     return-void
@@ -70,7 +66,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/mixed/CompletableAndThenPublisher;->source:Lio/reactivex/CompletableSource;
 
     new-instance v1, Lio/reactivex/internal/operators/mixed/CompletableAndThenPublisher$AndThenPublisherSubscriber;

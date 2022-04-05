@@ -1,6 +1,5 @@
 .class public final Lokhttp3/Response;
 .super Ljava/lang/Object;
-.source "Response.java"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -64,35 +63,28 @@
 .method constructor <init>(Lokhttp3/Response$Builder;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iget-object v0, p1, Lokhttp3/Response$Builder;->request:Lokhttp3/Request;
 
     iput-object v0, p0, Lokhttp3/Response;->request:Lokhttp3/Request;
 
-    .line 3
     iget-object v0, p1, Lokhttp3/Response$Builder;->protocol:Lokhttp3/Protocol;
 
     iput-object v0, p0, Lokhttp3/Response;->protocol:Lokhttp3/Protocol;
 
-    .line 4
     iget v0, p1, Lokhttp3/Response$Builder;->code:I
 
     iput v0, p0, Lokhttp3/Response;->code:I
 
-    .line 5
     iget-object v0, p1, Lokhttp3/Response$Builder;->message:Ljava/lang/String;
 
     iput-object v0, p0, Lokhttp3/Response;->message:Ljava/lang/String;
 
-    .line 6
     iget-object v0, p1, Lokhttp3/Response$Builder;->handshake:Lokhttp3/Handshake;
 
     iput-object v0, p0, Lokhttp3/Response;->handshake:Lokhttp3/Handshake;
 
-    .line 7
     iget-object v0, p1, Lokhttp3/Response$Builder;->headers:Lokhttp3/Headers$Builder;
 
     invoke-virtual {v0}, Lokhttp3/Headers$Builder;->build()Lokhttp3/Headers;
@@ -101,32 +93,26 @@
 
     iput-object v0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
 
-    .line 8
     iget-object v0, p1, Lokhttp3/Response$Builder;->body:Lokhttp3/ResponseBody;
 
     iput-object v0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
 
-    .line 9
     iget-object v0, p1, Lokhttp3/Response$Builder;->networkResponse:Lokhttp3/Response;
 
     iput-object v0, p0, Lokhttp3/Response;->networkResponse:Lokhttp3/Response;
 
-    .line 10
     iget-object v0, p1, Lokhttp3/Response$Builder;->cacheResponse:Lokhttp3/Response;
 
     iput-object v0, p0, Lokhttp3/Response;->cacheResponse:Lokhttp3/Response;
 
-    .line 11
     iget-object v0, p1, Lokhttp3/Response$Builder;->priorResponse:Lokhttp3/Response;
 
     iput-object v0, p0, Lokhttp3/Response;->priorResponse:Lokhttp3/Response;
 
-    .line 12
     iget-wide v0, p1, Lokhttp3/Response$Builder;->sentRequestAtMillis:J
 
     iput-wide v0, p0, Lokhttp3/Response;->sentRequestAtMillis:J
 
-    .line 13
     iget-wide v0, p1, Lokhttp3/Response$Builder;->receivedResponseAtMillis:J
 
     iput-wide v0, p0, Lokhttp3/Response;->receivedResponseAtMillis:J
@@ -141,7 +127,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
 
     return-object v0
@@ -150,14 +135,12 @@
 .method public cacheControl()Lokhttp3/CacheControl;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->cacheControl:Lokhttp3/CacheControl;
 
     if-eqz v0, :cond_0
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
 
@@ -176,7 +159,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->cacheResponse:Lokhttp3/Response;
 
     return-object v0
@@ -193,7 +175,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lokhttp3/Response;->code:I
 
     const/16 v1, 0x191
@@ -211,7 +192,6 @@
 
     const-string v0, "Proxy-Authenticate"
 
-    .line 2
     :goto_0
     invoke-virtual {p0}, Lokhttp3/Response;->headers()Lokhttp3/Headers;
 
@@ -223,7 +203,6 @@
 
     return-object v0
 
-    .line 3
     :cond_1
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
@@ -235,17 +214,14 @@
 .method public close()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lokhttp3/ResponseBody;->close()V
 
     return-void
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -259,7 +235,6 @@
 .method public code()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lokhttp3/Response;->code:I
 
     return v0
@@ -270,7 +245,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->handshake:Lokhttp3/Handshake;
 
     return-object v0
@@ -283,7 +257,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lokhttp3/Response;->header(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -300,7 +273,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
 
     invoke-virtual {v0, p1}, Lokhttp3/Headers;->get(Ljava/lang/String;)Ljava/lang/String;
@@ -328,7 +300,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
 
     invoke-virtual {v0, p1}, Lokhttp3/Headers;->values(Ljava/lang/String;)Ljava/util/List;
@@ -341,7 +312,6 @@
 .method public headers()Lokhttp3/Headers;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lokhttp3/Response;->headers:Lokhttp3/Headers;
 
     return-object v0
@@ -350,7 +320,6 @@
 .method public isRedirect()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lokhttp3/Response;->code:I
 
     const/16 v1, 0x133
@@ -387,7 +356,6 @@
 .method public isSuccessful()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lokhttp3/Response;->code:I
 
     const/16 v1, 0xc8
@@ -412,7 +380,6 @@
 .method public message()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->message:Ljava/lang/String;
 
     return-object v0
@@ -423,7 +390,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->networkResponse:Lokhttp3/Response;
 
     return-object v0
@@ -432,7 +398,6 @@
 .method public newBuilder()Lokhttp3/Response$Builder;
     .locals 1
 
-    .line 1
     new-instance v0, Lokhttp3/Response$Builder;
 
     invoke-direct {v0, p0}, Lokhttp3/Response$Builder;-><init>(Lokhttp3/Response;)V
@@ -448,17 +413,14 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
 
     invoke-virtual {v0}, Lokhttp3/ResponseBody;->source()Lokio/BufferedSource;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {v0, p1, p2}, Lokio/BufferedSource;->request(J)Z
 
-    .line 3
     invoke-interface {v0}, Lokio/BufferedSource;->buffer()Lokio/Buffer;
 
     move-result-object v0
@@ -467,7 +429,6 @@
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Lokio/Buffer;->size()J
 
     move-result-wide v1
@@ -476,20 +437,16 @@
 
     if-lez v3, :cond_0
 
-    .line 5
     new-instance v1, Lokio/Buffer;
 
     invoke-direct {v1}, Lokio/Buffer;-><init>()V
 
-    .line 6
     invoke-virtual {v1, v0, p1, p2}, Lokio/Buffer;->write(Lokio/Buffer;J)V
 
-    .line 7
     invoke-virtual {v0}, Lokio/Buffer;->clear()V
 
     move-object v0, v1
 
-    .line 8
     :cond_0
     iget-object p1, p0, Lokhttp3/Response;->body:Lokhttp3/ResponseBody;
 
@@ -513,7 +470,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->priorResponse:Lokhttp3/Response;
 
     return-object v0
@@ -522,7 +478,6 @@
 .method public protocol()Lokhttp3/Protocol;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->protocol:Lokhttp3/Protocol;
 
     return-object v0
@@ -531,7 +486,6 @@
 .method public receivedResponseAtMillis()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lokhttp3/Response;->receivedResponseAtMillis:J
 
     return-wide v0
@@ -540,7 +494,6 @@
 .method public request()Lokhttp3/Request;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/Response;->request:Lokhttp3/Request;
 
     return-object v0
@@ -549,7 +502,6 @@
 .method public sentRequestAtMillis()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lokhttp3/Response;->sentRequestAtMillis:J
 
     return-wide v0
@@ -558,7 +510,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -593,7 +544,6 @@
 
     iget-object v1, p0, Lokhttp3/Response;->request:Lokhttp3/Request;
 
-    .line 2
     invoke-virtual {v1}, Lokhttp3/Request;->url()Lokhttp3/HttpUrl;
 
     move-result-object v1

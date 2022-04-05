@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 .super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
-.source "GoogleMapDownloadDefinitionActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -48,34 +47,28 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;-><init>()V
 
     const/4 v0, 0x3
 
     new-array v1, v0, [Landroid/widget/CheckBox;
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->u:[Landroid/widget/CheckBox;
 
     const/4 v1, 0x1
 
-    .line 3
     iput v1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->x:I
 
     new-array v1, v0, [I
 
-    .line 4
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->y:[I
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 5
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->z:[Ljava/lang/String;
 
     const/16 v0, 0x1e
 
-    .line 6
     iput v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->D:I
 
     return-void
@@ -84,7 +77,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Landroid/widget/EditText;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->q:Landroid/widget/EditText;
 
     return-object p0
@@ -93,7 +85,6 @@
 .method private a(Landroid/widget/CheckBox;)V
     .locals 5
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->u:[Landroid/widget/CheckBox;
 
     array-length v1, v0
@@ -105,7 +96,6 @@
 
     aget-object v3, v0, v2
 
-    .line 3
     invoke-virtual {p1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -123,7 +113,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Landroid/view/View;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->B:Landroid/view/View;
 
     return-object p0
@@ -132,7 +121,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->D:I
 
     return p0
@@ -141,7 +129,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)[Lorg/osmdroid/util/GeoPoint;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->t:[Lorg/osmdroid/util/GeoPoint;
 
     return-object p0
@@ -150,7 +137,6 @@
 .method static synthetic e(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->x:I
 
     return p0
@@ -159,7 +145,6 @@
 .method static synthetic f(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)[I
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->y:[I
 
     return-object p0
@@ -168,7 +153,6 @@
 .method static synthetic g(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)[Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->z:[Ljava/lang/String;
 
     return-object p0
@@ -177,7 +161,6 @@
 .method static synthetic h(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->C:Ljava/lang/String;
 
     return-object p0
@@ -186,7 +169,6 @@
 .method static synthetic i(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Lcom/ifengyu/intercom/greendao/dao/b;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->w:Lcom/ifengyu/intercom/greendao/dao/b;
 
     return-object p0
@@ -195,7 +177,6 @@
 .method static synthetic j(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)Lcom/ifengyu/intercom/greendao/dao/a$a;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->v:Lcom/ifengyu/intercom/greendao/dao/a$a;
 
     return-object p0
@@ -204,12 +185,10 @@
 .method private w()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->r()V
 
     const v0, 0x7f09041d
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -220,7 +199,6 @@
 
     const v0, 0x7f090418
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -229,7 +207,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->s:Landroid/widget/TextView;
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->r:Landroid/widget/TextView;
 
     const v1, 0x7f1102bf
@@ -240,14 +217,12 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->s:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->s:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -269,7 +244,6 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 1
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->y:[I
 
     aget v4, v1, v3
@@ -300,7 +274,6 @@
     :goto_1
     if-lt v0, v1, :cond_1
 
-    .line 2
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->y:[I
 
     aget v5, v4, v2
@@ -333,7 +306,6 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 3
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->y:[I
 
     aget v6, v5, v4
@@ -358,7 +330,6 @@
 
     goto :goto_2
 
-    .line 4
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->z:[Ljava/lang/String;
 
@@ -376,7 +347,6 @@
 
     aput-object v1, v0, v3
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->z:[Ljava/lang/String;
 
     invoke-static {}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->b()Lcom/ifengyu/intercom/ui/map/MapDataProvider;
@@ -393,7 +363,6 @@
 
     aput-object v1, v0, v2
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->z:[Ljava/lang/String;
 
     invoke-static {}, Lcom/ifengyu/intercom/ui/map/MapDataProvider;->b()Lcom/ifengyu/intercom/ui/map/MapDataProvider;
@@ -420,7 +389,6 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     invoke-virtual/range {p1 .. p1}, Landroid/view/View;->getId()I
 
     move-result v1
@@ -431,7 +399,6 @@
 
     const/4 v4, 0x0
 
-    .line 2
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v17
@@ -440,7 +407,6 @@
 
     goto/16 :goto_1
 
-    .line 3
     :sswitch_0
     invoke-static/range {p0 .. p0}, Lcom/ifengyu/intercom/i/c0;->b(Landroid/content/Context;)Z
 
@@ -450,7 +416,6 @@
 
     const v1, 0x7f110248
 
-    .line 4
     invoke-virtual {v0, v1}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -459,7 +424,6 @@
 
     return-void
 
-    .line 5
     :cond_0
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->q:Landroid/widget/EditText;
 
@@ -477,14 +441,12 @@
 
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->C:Ljava/lang/String;
 
-    .line 6
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 7
     invoke-virtual/range {p0 .. p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -499,7 +461,6 @@
 
     return-void
 
-    .line 8
     :cond_1
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->A:Ljava/util/ArrayList;
 
@@ -520,7 +481,6 @@
 
     check-cast v5, Ljava/lang/String;
 
-    .line 9
     iget-object v6, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->C:Ljava/lang/String;
 
     invoke-virtual {v6, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -531,7 +491,6 @@
 
     const v1, 0x7f110344
 
-    .line 10
     invoke-static {v1}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v1
@@ -540,7 +499,6 @@
 
     return-void
 
-    .line 11
     :cond_3
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->C:Ljava/lang/String;
 
@@ -552,7 +510,6 @@
 
     const v1, 0x7f11032f
 
-    .line 12
     invoke-static {v1}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v1
@@ -561,7 +518,6 @@
 
     return-void
 
-    .line 13
     :cond_4
     new-instance v1, Lcom/ifengyu/intercom/greendao/dao/a$a;
 
@@ -573,7 +529,6 @@
 
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->v:Lcom/ifengyu/intercom/greendao/dao/a$a;
 
-    .line 14
     new-instance v6, Lcom/ifengyu/intercom/greendao/dao/a;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
@@ -582,21 +537,18 @@
 
     invoke-direct {v6, v1}, Lcom/ifengyu/intercom/greendao/dao/a;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
-    .line 15
     invoke-virtual {v6}, Lcom/ifengyu/intercom/greendao/dao/a;->newSession()Lcom/ifengyu/intercom/greendao/dao/b;
 
     move-result-object v1
 
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->w:Lcom/ifengyu/intercom/greendao/dao/b;
 
-    .line 16
     invoke-static/range {p0 .. p0}, Lcom/ifengyu/intercom/i/c0;->d(Landroid/content/Context;)Z
 
     move-result v1
 
     if-eqz v1, :cond_7
 
-    .line 17
     new-instance v1, Lcom/ifengyu/intercom/greendao/bean/a;
 
     const/4 v6, 0x0
@@ -704,7 +656,6 @@
 
     invoke-direct/range {v5 .. v18}, Lcom/ifengyu/intercom/greendao/bean/a;-><init>(Ljava/lang/Long;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Double;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Boolean;)V
 
-    .line 18
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->w:Lcom/ifengyu/intercom/greendao/dao/b;
 
     invoke-virtual {v2}, Lcom/ifengyu/intercom/greendao/dao/b;->c()Lcom/ifengyu/intercom/greendao/dao/TileDownloadStateDao;
@@ -713,25 +664,20 @@
 
     invoke-virtual {v2, v1}, Lorg/greenrobot/greendao/AbstractDao;->insert(Ljava/lang/Object;)J
 
-    .line 19
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->w:Lcom/ifengyu/intercom/greendao/dao/b;
 
     invoke-virtual {v1}, Lcom/ifengyu/intercom/greendao/dao/b;->a()V
 
-    .line 20
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->v:Lcom/ifengyu/intercom/greendao/dao/a$a;
 
     invoke-virtual {v1}, Landroid/database/sqlite/SQLiteOpenHelper;->close()V
 
-    .line 21
     invoke-virtual {v0, v3}, Landroid/app/Activity;->setResult(I)V
 
-    .line 22
     invoke-virtual/range {p0 .. p0}, Landroid/app/Activity;->finish()V
 
     goto :goto_1
 
-    .line 23
     :cond_7
     new-instance v1, Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
@@ -747,7 +693,6 @@
 
     const v2, 0x7f110093
 
-    .line 24
     invoke-virtual {v1, v2, v5}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     const v2, 0x7f110312
@@ -758,18 +703,15 @@
 
     invoke-virtual {v1, v2, v3}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->c(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
-    .line 25
     invoke-virtual {v1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a()Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-virtual {v1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->d()V
 
     goto :goto_1
 
-    .line 26
     :sswitch_1
     iput v3, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->x:I
 
-    .line 27
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->u:[Landroid/widget/CheckBox;
 
     aget-object v1, v1, v3
@@ -778,11 +720,9 @@
 
     goto :goto_1
 
-    .line 28
     :sswitch_2
     iput v2, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->x:I
 
-    .line 29
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->u:[Landroid/widget/CheckBox;
 
     aget-object v1, v1, v2
@@ -791,11 +731,9 @@
 
     goto :goto_1
 
-    .line 30
     :sswitch_3
     iput v4, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->x:I
 
-    .line 31
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->u:[Landroid/widget/CheckBox;
 
     aget-object v1, v1, v4
@@ -804,7 +742,6 @@
 
     goto :goto_1
 
-    .line 32
     :sswitch_4
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->q:Landroid/widget/EditText;
 
@@ -833,20 +770,16 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 6
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c0038
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->setContentView(I)V
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->w()V
 
     const p1, 0x7f0902f4
 
-    .line 4
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -855,7 +788,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->q:Landroid/widget/EditText;
 
-    .line 5
     invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
     move-result-object v0
@@ -866,7 +798,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/EditText;->setSelection(I)V
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->u:[Landroid/widget/CheckBox;
 
     const v0, 0x7f0901bf
@@ -881,7 +812,6 @@
 
     aput-object v0, p1, v1
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->u:[Landroid/widget/CheckBox;
 
     const v0, 0x7f09029d
@@ -896,7 +826,6 @@
 
     aput-object v0, p1, v2
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->u:[Landroid/widget/CheckBox;
 
     const v0, 0x7f09024a
@@ -911,7 +840,6 @@
 
     aput-object v0, p1, v3
 
-    .line 9
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object p1
@@ -922,7 +850,6 @@
 
     move-result-object p1
 
-    .line 10
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
@@ -935,7 +862,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->A:Ljava/util/ArrayList;
 
-    .line 11
     array-length v0, p1
 
     new-array v0, v0, [Lorg/osmdroid/util/GeoPoint;
@@ -949,7 +875,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 12
     :goto_0
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->t:[Lorg/osmdroid/util/GeoPoint;
 
@@ -957,7 +882,6 @@
 
     if-ge v0, v5, :cond_1
 
-    .line 13
     aget-object v5, p1, v0
 
     check-cast v5, Lorg/osmdroid/util/GeoPoint;
@@ -968,23 +892,19 @@
 
     goto :goto_0
 
-    .line 14
     :cond_1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->x()V
 
     const p1, 0x7f090108
 
-    .line 15
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->B:Landroid/view/View;
 
-    .line 16
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 17
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->q:Landroid/widget/EditText;
 
     invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -1005,7 +925,6 @@
 
     if-nez p1, :cond_2
 
-    .line 18
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->B:Landroid/view/View;
 
     const/16 v0, 0x8
@@ -1014,13 +933,11 @@
 
     goto :goto_1
 
-    .line 19
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->B:Landroid/view/View;
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
 
-    .line 20
     :goto_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->q:Landroid/widget/EditText;
 
@@ -1032,7 +949,6 @@
 
     const p1, 0x7f09024b
 
-    .line 21
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -1041,7 +957,6 @@
 
     const p1, 0x7f09029e
 
-    .line 22
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -1050,14 +965,12 @@
 
     const p1, 0x7f0901c0
 
-    .line 23
     invoke-virtual {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 24
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;->u:[Landroid/widget/CheckBox;
 
     array-length v0, p1
@@ -1069,7 +982,6 @@
 
     aget-object v5, p1, v4
 
-    .line 25
     invoke-virtual {v5, p0}, Landroid/widget/CheckBox;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     add-int/lit8 v4, v4, 0x1
@@ -1079,7 +991,6 @@
     :cond_3
     const p1, 0x7f0901c1
 
-    .line 26
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -1094,7 +1005,6 @@
 
     const p1, 0x7f09029f
 
-    .line 27
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -1109,7 +1019,6 @@
 
     const p1, 0x7f09024c
 
-    .line 28
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object p1
@@ -1128,7 +1037,6 @@
 .method protected onDestroy()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onDestroy()V
 
     return-void
@@ -1139,7 +1047,6 @@
 
     const v0, 0x7f090419
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -1148,7 +1055,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c:Landroid/widget/ImageView;
 
-    .line 2
     new-instance v1, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$c;
 
     invoke-direct {v1, p0}, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$c;-><init>(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)V

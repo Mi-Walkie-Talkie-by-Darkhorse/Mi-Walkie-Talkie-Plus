@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/Marker;
 .super Lorg/osmdroid/views/overlay/OverlayWithIW;
-.source "Marker.java"
 
 
 # annotations
@@ -82,7 +81,6 @@
 .method public constructor <init>(Lorg/osmdroid/views/MapView;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -95,25 +93,20 @@
 .method public constructor <init>(Lorg/osmdroid/views/MapView;Landroid/content/Context;)V
     .locals 4
 
-    .line 2
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/OverlayWithIW;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 3
     iput v0, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelBackgroundColor:I
 
     const/high16 v0, -0x1000000
 
-    .line 4
     iput v0, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelForegroundColor:I
 
     const/16 v0, 0x18
 
-    .line 5
     iput v0, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelFontSize:I
 
-    .line 6
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -126,15 +119,12 @@
 
     const/4 v0, 0x0
 
-    .line 7
     iput v0, p0, Lorg/osmdroid/views/overlay/Marker;->mBearing:F
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 8
     iput v1, p0, Lorg/osmdroid/views/overlay/Marker;->mAlpha:F
 
-    .line 9
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
     const-wide/16 v2, 0x0
@@ -145,27 +135,20 @@
 
     const/high16 v1, 0x3f000000    # 0.5f
 
-    .line 10
     iput v1, p0, Lorg/osmdroid/views/overlay/Marker;->mAnchorU:F
 
-    .line 11
     iput v1, p0, Lorg/osmdroid/views/overlay/Marker;->mAnchorV:F
 
-    .line 12
     iput v1, p0, Lorg/osmdroid/views/overlay/Marker;->mIWAnchorU:F
 
-    .line 13
     iput v0, p0, Lorg/osmdroid/views/overlay/Marker;->mIWAnchorV:F
 
     const/4 v0, 0x0
 
-    .line 14
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/Marker;->mDraggable:Z
 
-    .line 15
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/Marker;->mIsDragged:Z
 
-    .line 16
     new-instance v1, Landroid/graphics/Point;
 
     invoke-direct {v1}, Landroid/graphics/Point;-><init>()V
@@ -174,26 +157,20 @@
 
     const/4 v1, 0x1
 
-    .line 17
     iput-boolean v1, p0, Lorg/osmdroid/views/overlay/Marker;->mPanToView:Z
 
-    .line 18
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/Marker;->mFlat:Z
 
     const/4 v0, 0x0
 
-    .line 19
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mOnMarkerClickListener:Lorg/osmdroid/views/overlay/Marker$OnMarkerClickListener;
 
-    .line 20
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mOnMarkerDragListener:Lorg/osmdroid/views/overlay/Marker$OnMarkerDragListener;
 
-    .line 21
     sget-object v0, Lorg/osmdroid/views/overlay/Marker;->mDefaultIcon:Landroid/graphics/drawable/Drawable;
 
     if-nez v0, :cond_0
 
-    .line 22
     invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p2
@@ -206,13 +183,11 @@
 
     sput-object p2, Lorg/osmdroid/views/overlay/Marker;->mDefaultIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 23
     :cond_0
     sget-object p2, Lorg/osmdroid/views/overlay/Marker;->mDefaultIcon:Landroid/graphics/drawable/Drawable;
 
     iput-object p2, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 24
     sget-object p2, Lorg/osmdroid/views/overlay/Marker;->mDefaultInfoWindow:Lorg/osmdroid/views/overlay/infowindow/MarkerInfoWindow;
 
     if-eqz p2, :cond_1
@@ -223,7 +198,6 @@
 
     if-eq p2, p1, :cond_2
 
-    .line 25
     :cond_1
     new-instance p2, Lorg/osmdroid/views/overlay/infowindow/MarkerInfoWindow;
 
@@ -233,7 +207,6 @@
 
     sput-object p2, Lorg/osmdroid/views/overlay/Marker;->mDefaultInfoWindow:Lorg/osmdroid/views/overlay/infowindow/MarkerInfoWindow;
 
-    .line 26
     :cond_2
     sget-object p1, Lorg/osmdroid/views/overlay/Marker;->mDefaultInfoWindow:Lorg/osmdroid/views/overlay/infowindow/MarkerInfoWindow;
 
@@ -247,10 +220,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     sput-object v0, Lorg/osmdroid/views/overlay/Marker;->mDefaultIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 2
     sput-object v0, Lorg/osmdroid/views/overlay/Marker;->mDefaultInfoWindow:Lorg/osmdroid/views/overlay/infowindow/MarkerInfoWindow;
 
     return-void
@@ -265,7 +236,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget-object p3, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
@@ -273,41 +243,35 @@
 
     return-void
 
-    .line 2
     :cond_1
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object p3
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mPosition:Lorg/osmdroid/util/GeoPoint;
 
     iget-object v1, p0, Lorg/osmdroid/views/overlay/Marker;->mPositionPixels:Landroid/graphics/Point;
 
     invoke-virtual {p3, v0, v1}, Lorg/osmdroid/views/Projection;->toPixels(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 4
     iget-object p3, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p3}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result p3
 
-    .line 5
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v0
 
-    .line 6
     new-instance v1, Landroid/graphics/Rect;
 
     const/4 v2, 0x0
 
     invoke-direct {v1, v2, v2, p3, v0}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    .line 7
     iget v2, p0, Lorg/osmdroid/views/overlay/Marker;->mAnchorU:F
 
     int-to-float p3, p3
@@ -330,12 +294,10 @@
 
     invoke-virtual {v1, p3, v0}, Landroid/graphics/Rect;->offset(II)V
 
-    .line 8
     iget-object p3, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p3, v1}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
-    .line 9
     iget-object p3, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
     iget v0, p0, Lorg/osmdroid/views/overlay/Marker;->mAlpha:F
@@ -348,7 +310,6 @@
 
     invoke-virtual {p3, v0}, Landroid/graphics/drawable/Drawable;->setAlpha(I)V
 
-    .line 10
     iget-boolean p3, p0, Lorg/osmdroid/views/overlay/Marker;->mFlat:Z
 
     if-eqz p3, :cond_2
@@ -371,7 +332,6 @@
     :goto_0
     move v5, p2
 
-    .line 11
     iget-object v1, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
     iget-object p2, p0, Lorg/osmdroid/views/overlay/Marker;->mPositionPixels:Landroid/graphics/Point;
@@ -392,7 +352,6 @@
 .method public getAlpha()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/Marker;->mAlpha:F
 
     return v0
@@ -401,7 +360,6 @@
 .method public getImage()Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mImage:Landroid/graphics/drawable/Drawable;
 
     return-object v0
@@ -410,7 +368,6 @@
 .method public getPosition()Lorg/osmdroid/util/GeoPoint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mPosition:Lorg/osmdroid/util/GeoPoint;
 
     return-object v0
@@ -419,7 +376,6 @@
 .method public getRotation()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/Marker;->mBearing:F
 
     return v0
@@ -428,7 +384,6 @@
 .method public getTextLabelBackgroundColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelBackgroundColor:I
 
     return v0
@@ -437,7 +392,6 @@
 .method public getTextLabelFontSize()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelFontSize:I
 
     return v0
@@ -446,7 +400,6 @@
 .method public getTextLabelForegroundColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelForegroundColor:I
 
     return v0
@@ -455,24 +408,20 @@
 .method public hitTest(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object p2
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mPosition:Lorg/osmdroid/util/GeoPoint;
 
     iget-object v1, p0, Lorg/osmdroid/views/overlay/Marker;->mPositionPixels:Landroid/graphics/Point;
 
     invoke-virtual {p2, v0, v1}, Lorg/osmdroid/views/Projection;->toPixels(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 3
     invoke-virtual {p2}, Lorg/osmdroid/views/Projection;->getIntrinsicScreenRect()Landroid/graphics/Rect;
 
     move-result-object p2
 
-    .line 4
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mPositionPixels:Landroid/graphics/Point;
 
     iget v0, v0, Landroid/graphics/Point;->x:I
@@ -491,7 +440,6 @@
 
     add-int/2addr v0, v1
 
-    .line 5
     iget-object v1, p0, Lorg/osmdroid/views/overlay/Marker;->mPositionPixels:Landroid/graphics/Point;
 
     iget v1, v1, Landroid/graphics/Point;->y:I
@@ -510,7 +458,6 @@
 
     add-int/2addr v1, p1
 
-    .line 6
     iget-object p1, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
@@ -527,7 +474,6 @@
 .method public isDraggable()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/Marker;->mDraggable:Z
 
     return v0
@@ -536,7 +482,6 @@
 .method public isFlat()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/Marker;->mFlat:Z
 
     return v0
@@ -545,19 +490,16 @@
 .method public isInfoWindowShown()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayWithIW;->mInfoWindow:Lorg/osmdroid/views/overlay/infowindow/InfoWindow;
 
     instance-of v1, v0, Lorg/osmdroid/views/overlay/infowindow/MarkerInfoWindow;
 
     if-eqz v1, :cond_1
 
-    .line 2
     check-cast v0, Lorg/osmdroid/views/overlay/infowindow/MarkerInfoWindow;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Lorg/osmdroid/views/overlay/infowindow/InfoWindow;->isOpen()Z
 
     move-result v1
@@ -580,7 +522,6 @@
     :goto_0
     return v0
 
-    .line 4
     :cond_1
     invoke-super {p0}, Lorg/osmdroid/views/overlay/OverlayWithIW;->isInfoWindowOpen()Z
 
@@ -592,12 +533,10 @@
 .method public moveToEventPosition(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v1
@@ -618,7 +557,6 @@
 
     iput-object p1, p0, Lorg/osmdroid/views/overlay/Marker;->mPosition:Lorg/osmdroid/util/GeoPoint;
 
-    .line 3
     invoke-virtual {p2}, Landroid/view/ViewGroup;->invalidate()V
 
     return-void
@@ -627,21 +565,18 @@
 .method public onDetach(Lorg/osmdroid/views/MapView;)V
     .locals 3
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x9
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
     instance-of v2, v0, Landroid/graphics/drawable/BitmapDrawable;
 
     if-eqz v2, :cond_0
 
-    .line 3
     check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
@@ -650,28 +585,23 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
     :cond_0
     const/4 v0, 0x0
 
-    .line 5
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
-    .line 6
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-ge v2, v1, :cond_1
 
-    .line 7
     iget-object v1, p0, Lorg/osmdroid/views/overlay/Marker;->mImage:Landroid/graphics/drawable/Drawable;
 
     instance-of v2, v1, Landroid/graphics/drawable/BitmapDrawable;
 
     if-eqz v2, :cond_1
 
-    .line 8
     check-cast v1, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
@@ -680,47 +610,36 @@
 
     if-eqz v1, :cond_1
 
-    .line 9
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 10
     :cond_1
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mOnMarkerClickListener:Lorg/osmdroid/views/overlay/Marker$OnMarkerClickListener;
 
-    .line 11
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mOnMarkerDragListener:Lorg/osmdroid/views/overlay/Marker$OnMarkerDragListener;
 
-    .line 12
     iput-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->resource:Landroid/content/res/Resources;
 
-    .line 13
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/OverlayWithIW;->setRelatedObject(Ljava/lang/Object;)V
 
-    .line 14
     iget-object v1, p0, Lorg/osmdroid/views/overlay/OverlayWithIW;->mInfoWindow:Lorg/osmdroid/views/overlay/infowindow/InfoWindow;
 
     sget-object v2, Lorg/osmdroid/views/overlay/Marker;->mDefaultInfoWindow:Lorg/osmdroid/views/overlay/infowindow/MarkerInfoWindow;
 
     if-eq v1, v2, :cond_2
 
-    .line 15
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/Marker;->isInfoWindowShown()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 16
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/OverlayWithIW;->closeInfoWindow()V
 
-    .line 17
     :cond_2
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/Marker;->setInfoWindow(Lorg/osmdroid/views/overlay/infowindow/MarkerInfoWindow;)V
 
-    .line 18
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/OverlayWithIW;->onDestroy()V
 
-    .line 19
     invoke-super {p0, p1}, Lorg/osmdroid/views/overlay/Overlay;->onDetach(Lorg/osmdroid/views/MapView;)V
 
     return-void
@@ -729,35 +648,28 @@
 .method public onLongPress(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lorg/osmdroid/views/overlay/Marker;->hitTest(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-boolean v1, p0, Lorg/osmdroid/views/overlay/Marker;->mDraggable:Z
 
     if-eqz v1, :cond_1
 
     const/4 v1, 0x1
 
-    .line 3
     iput-boolean v1, p0, Lorg/osmdroid/views/overlay/Marker;->mIsDragged:Z
 
-    .line 4
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/OverlayWithIW;->closeInfoWindow()V
 
-    .line 5
     iget-object v1, p0, Lorg/osmdroid/views/overlay/Marker;->mOnMarkerDragListener:Lorg/osmdroid/views/overlay/Marker$OnMarkerDragListener;
 
     if-eqz v1, :cond_0
 
-    .line 6
     invoke-interface {v1, p0}, Lorg/osmdroid/views/overlay/Marker$OnMarkerDragListener;->onMarkerDragStart(Lorg/osmdroid/views/overlay/Marker;)V
 
-    .line 7
     :cond_0
     invoke-virtual {p0, p1, p2}, Lorg/osmdroid/views/overlay/Marker;->moveToEventPosition(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)V
 
@@ -768,15 +680,12 @@
 .method protected onMarkerClickDefault(Lorg/osmdroid/views/overlay/Marker;Lorg/osmdroid/views/MapView;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Lorg/osmdroid/views/overlay/Marker;->showInfoWindow()V
 
-    .line 2
     iget-boolean v0, p1, Lorg/osmdroid/views/overlay/Marker;->mPanToView:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
     move-result-object p2
@@ -796,26 +705,22 @@
 .method public onSingleTapConfirmed(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lorg/osmdroid/views/overlay/Marker;->hitTest(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 2
     iget-object p1, p0, Lorg/osmdroid/views/overlay/Marker;->mOnMarkerClickListener:Lorg/osmdroid/views/overlay/Marker$OnMarkerClickListener;
 
     if-nez p1, :cond_0
 
-    .line 3
     invoke-virtual {p0, p0, p2}, Lorg/osmdroid/views/overlay/Marker;->onMarkerClickDefault(Lorg/osmdroid/views/overlay/Marker;Lorg/osmdroid/views/MapView;)Z
 
     move-result p1
 
     return p1
 
-    .line 4
     :cond_0
     invoke-interface {p1, p0, p2}, Lorg/osmdroid/views/overlay/Marker$OnMarkerClickListener;->onMarkerClick(Lorg/osmdroid/views/overlay/Marker;Lorg/osmdroid/views/MapView;)Z
 
@@ -828,7 +733,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 4
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/Marker;->mDraggable:Z
 
     const/4 v1, 0x0
@@ -839,7 +743,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
@@ -848,21 +751,17 @@
 
     if-ne v0, v2, :cond_1
 
-    .line 3
     iput-boolean v1, p0, Lorg/osmdroid/views/overlay/Marker;->mIsDragged:Z
 
-    .line 4
     iget-object p1, p0, Lorg/osmdroid/views/overlay/Marker;->mOnMarkerDragListener:Lorg/osmdroid/views/overlay/Marker$OnMarkerDragListener;
 
     if-eqz p1, :cond_0
 
-    .line 5
     invoke-interface {p1, p0}, Lorg/osmdroid/views/overlay/Marker$OnMarkerDragListener;->onMarkerDragEnd(Lorg/osmdroid/views/overlay/Marker;)V
 
     :cond_0
     return v2
 
-    .line 6
     :cond_1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -872,15 +771,12 @@
 
     if-ne v0, v3, :cond_3
 
-    .line 7
     invoke-virtual {p0, p1, p2}, Lorg/osmdroid/views/overlay/Marker;->moveToEventPosition(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)V
 
-    .line 8
     iget-object p1, p0, Lorg/osmdroid/views/overlay/Marker;->mOnMarkerDragListener:Lorg/osmdroid/views/overlay/Marker$OnMarkerDragListener;
 
     if-eqz p1, :cond_2
 
-    .line 9
     invoke-interface {p1, p0}, Lorg/osmdroid/views/overlay/Marker$OnMarkerDragListener;->onMarkerDrag(Lorg/osmdroid/views/overlay/Marker;)V
 
     :cond_2
@@ -893,7 +789,6 @@
 .method public remove(Lorg/osmdroid/views/MapView;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lorg/osmdroid/views/MapView;->getOverlays()Ljava/util/List;
 
     move-result-object p1
@@ -906,7 +801,6 @@
 .method public setAlpha(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/Marker;->mAlpha:F
 
     return-void
@@ -915,10 +809,8 @@
 .method public setAnchor(FF)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/Marker;->mAnchorU:F
 
-    .line 2
     iput p2, p0, Lorg/osmdroid/views/overlay/Marker;->mAnchorV:F
 
     return-void
@@ -927,7 +819,6 @@
 .method public setDraggable(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/Marker;->mDraggable:Z
 
     return-void
@@ -936,7 +827,6 @@
 .method public setFlat(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/Marker;->mFlat:Z
 
     return-void
@@ -945,7 +835,6 @@
 .method public setIcon(Landroid/graphics/drawable/Drawable;)V
     .locals 5
 
-    .line 1
     sget-boolean v0, Lorg/osmdroid/views/overlay/Marker;->ENABLE_TEXT_LABELS_WHEN_NO_IMAGE:Z
 
     if-eqz v0, :cond_0
@@ -962,49 +851,40 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
 
-    .line 3
     iget v0, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelBackgroundColor:I
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 4
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
-    .line 5
     iget v1, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelFontSize:I
 
     int-to-float v1, v1
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 6
     iget v1, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelForegroundColor:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
     const/4 v1, 0x1
 
-    .line 7
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 8
     sget-object v1, Landroid/graphics/Typeface;->DEFAULT_BOLD:Landroid/graphics/Typeface;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
-    .line 9
     sget-object v1, Landroid/graphics/Paint$Align;->LEFT:Landroid/graphics/Paint$Align;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    .line 10
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/OverlayWithIW;->getTitle()Ljava/lang/String;
 
     move-result-object v1
@@ -1019,7 +899,6 @@
 
     float-to-int v1, v1
 
-    .line 11
     invoke-virtual {v0}, Landroid/graphics/Paint;->ascent()F
 
     move-result v3
@@ -1032,7 +911,6 @@
 
     int-to-float v3, v3
 
-    .line 12
     invoke-virtual {v0}, Landroid/graphics/Paint;->descent()F
 
     move-result v4
@@ -1043,22 +921,18 @@
 
     float-to-int v2, v4
 
-    .line 13
     sget-object v4, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
     invoke-static {v1, v2, v4}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
 
     move-result-object v1
 
-    .line 14
     new-instance v2, Landroid/graphics/Canvas;
 
     invoke-direct {v2, v1}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
 
-    .line 15
     invoke-virtual {v2, p1}, Landroid/graphics/Canvas;->drawPaint(Landroid/graphics/Paint;)V
 
-    .line 16
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/OverlayWithIW;->getTitle()Ljava/lang/String;
 
     move-result-object p1
@@ -1067,7 +941,6 @@
 
     invoke-virtual {v2, p1, v4, v3, v0}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 17
     new-instance p1, Landroid/graphics/drawable/BitmapDrawable;
 
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->resource:Landroid/content/res/Resources;
@@ -1078,7 +951,6 @@
 
     goto :goto_0
 
-    .line 18
     :cond_0
     sget-boolean v0, Lorg/osmdroid/views/overlay/Marker;->ENABLE_TEXT_LABELS_WHEN_NO_IMAGE:Z
 
@@ -1086,23 +958,19 @@
 
     if-eqz p1, :cond_1
 
-    .line 19
     iput-object p1, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 
-    .line 20
     :cond_1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_2
 
-    .line 21
     iput-object p1, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
 
-    .line 22
     :cond_2
     sget-object p1, Lorg/osmdroid/views/overlay/Marker;->mDefaultIcon:Landroid/graphics/drawable/Drawable;
 
@@ -1115,7 +983,6 @@
 .method public setImage(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/Marker;->mImage:Landroid/graphics/drawable/Drawable;
 
     return-void
@@ -1124,7 +991,6 @@
 .method public setInfoWindow(Lorg/osmdroid/views/overlay/infowindow/MarkerInfoWindow;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayWithIW;->mInfoWindow:Lorg/osmdroid/views/overlay/infowindow/InfoWindow;
 
     if-eqz v0, :cond_0
@@ -1133,10 +999,8 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lorg/osmdroid/views/overlay/infowindow/InfoWindow;->onDetach()V
 
-    .line 3
     :cond_0
     iput-object p1, p0, Lorg/osmdroid/views/overlay/OverlayWithIW;->mInfoWindow:Lorg/osmdroid/views/overlay/infowindow/InfoWindow;
 
@@ -1146,10 +1010,8 @@
 .method public setInfoWindowAnchor(FF)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/Marker;->mIWAnchorU:F
 
-    .line 2
     iput p2, p0, Lorg/osmdroid/views/overlay/Marker;->mIWAnchorV:F
 
     return-void
@@ -1158,7 +1020,6 @@
 .method public setOnMarkerClickListener(Lorg/osmdroid/views/overlay/Marker$OnMarkerClickListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/Marker;->mOnMarkerClickListener:Lorg/osmdroid/views/overlay/Marker$OnMarkerClickListener;
 
     return-void
@@ -1167,7 +1028,6 @@
 .method public setOnMarkerDragListener(Lorg/osmdroid/views/overlay/Marker$OnMarkerDragListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/Marker;->mOnMarkerDragListener:Lorg/osmdroid/views/overlay/Marker$OnMarkerDragListener;
 
     return-void
@@ -1176,7 +1036,6 @@
 .method public setPanToView(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/Marker;->mPanToView:Z
 
     return-void
@@ -1185,7 +1044,6 @@
 .method public setPosition(Lorg/osmdroid/util/GeoPoint;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lorg/osmdroid/util/GeoPoint;->clone()Lorg/osmdroid/util/GeoPoint;
 
     move-result-object p1
@@ -1198,7 +1056,6 @@
 .method public setRotation(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/Marker;->mBearing:F
 
     return-void
@@ -1207,7 +1064,6 @@
 .method public setTextLabelBackgroundColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelBackgroundColor:I
 
     return-void
@@ -1216,7 +1072,6 @@
 .method public setTextLabelFontSize(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelFontSize:I
 
     return-void
@@ -1225,7 +1080,6 @@
 .method public setTextLabelForegroundColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/Marker;->mTextLabelForegroundColor:I
 
     return-void
@@ -1234,14 +1088,12 @@
 .method public showInfoWindow()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayWithIW;->mInfoWindow:Lorg/osmdroid/views/overlay/infowindow/InfoWindow;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
@@ -1249,14 +1101,12 @@
 
     move-result v0
 
-    .line 3
     iget-object v1, p0, Lorg/osmdroid/views/overlay/Marker;->mIcon:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v1
 
-    .line 4
     iget v2, p0, Lorg/osmdroid/views/overlay/Marker;->mIWAnchorU:F
 
     int-to-float v0, v0
@@ -1273,7 +1123,6 @@
 
     sub-int/2addr v2, v0
 
-    .line 5
     iget v0, p0, Lorg/osmdroid/views/overlay/Marker;->mIWAnchorV:F
 
     int-to-float v1, v1
@@ -1290,7 +1139,6 @@
 
     sub-int/2addr v0, v1
 
-    .line 6
     iget-object v1, p0, Lorg/osmdroid/views/overlay/OverlayWithIW;->mInfoWindow:Lorg/osmdroid/views/overlay/infowindow/InfoWindow;
 
     iget-object v3, p0, Lorg/osmdroid/views/overlay/Marker;->mPosition:Lorg/osmdroid/util/GeoPoint;

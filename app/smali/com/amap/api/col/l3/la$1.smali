@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/la$1;
 .super Landroid/telephony/PhoneStateListener;
-.source "CgiManager.java"
 
 
 # annotations

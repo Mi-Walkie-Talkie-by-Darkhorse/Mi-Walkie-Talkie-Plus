@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/ActionMenuPresenter$SavedState$a;
 .super Ljava/lang/Object;
-.source "ActionMenuPresenter.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public createFromParcel(Landroid/os/Parcel;)Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;
     .locals 1
 
-    .line 2
     new-instance v0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;
 
     invoke-direct {v0, p1}, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;-><init>(Landroid/os/Parcel;)V
@@ -52,7 +49,6 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState$a;->createFromParcel(Landroid/os/Parcel;)Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;
 
     move-result-object p1
@@ -63,7 +59,6 @@
 .method public newArray(I)[Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;
     .locals 0
 
-    .line 2
     new-array p1, p1, [Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;
 
     return-object p1
@@ -72,7 +67,6 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState$a;->newArray(I)[Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/loader/content/c$c;
 .super Ljava/lang/Object;
-.source "Loader.java"
 
 
 # annotations

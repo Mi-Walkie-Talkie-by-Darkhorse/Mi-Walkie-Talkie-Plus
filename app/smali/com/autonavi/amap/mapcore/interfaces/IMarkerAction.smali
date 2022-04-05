@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IMarkerAction;
 .super Ljava/lang/Object;
-.source "IMarkerAction.java"
 
 
 # virtual methods

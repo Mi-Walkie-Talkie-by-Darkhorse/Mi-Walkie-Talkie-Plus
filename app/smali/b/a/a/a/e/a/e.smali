@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/a/e;
 .super Ljava/lang/Object;
-.source "ChartInterface.java"
 
 
 # virtual methods

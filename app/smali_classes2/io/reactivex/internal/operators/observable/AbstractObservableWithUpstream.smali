@@ -1,6 +1,5 @@
 .class abstract Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
 .super Lio/reactivex/Observable;
-.source "AbstractObservableWithUpstream.java"
 
 # interfaces
 .implements Lio/reactivex/internal/fuseable/HasUpstreamObservableSource;
@@ -44,10 +43,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     return-void
@@ -65,7 +62,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/OnTouch;
 .super Ljava/lang/Object;
-.source "OnTouch.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/greenrobot/greendao/query/CloseableListIterator;
 .super Ljava/lang/Object;
-.source "CloseableListIterator.java"
 
 # interfaces
 .implements Ljava/util/ListIterator;

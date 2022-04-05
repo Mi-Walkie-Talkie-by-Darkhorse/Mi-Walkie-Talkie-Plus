@@ -31,7 +31,6 @@
 .method public static synthetic a(Lcom/umeng/umzid/ZIDManager;Landroid/content/Context;)Ljava/lang/String;
     .locals 7
 
-    .line 1
     iget-boolean v0, p0, Lcom/umeng/umzid/ZIDManager;->a:Z
 
     const/4 v1, 0x0
@@ -182,7 +181,6 @@
 
     const-string v0, "aaid"
 
-    .line 1
     iget-boolean v1, p0, Lcom/umeng/umzid/ZIDManager;->b:Z
 
     const/4 v2, 0x0
@@ -225,7 +223,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 2
     :try_start_1
     invoke-static {p1}, Lcom/umeng/umzid/a;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -242,7 +239,6 @@
     :cond_1
     move-object v7, v6
 
-    .line 3
     :goto_0
     invoke-static {p1}, Lcom/umeng/umzid/c;->d(Landroid/content/Context;)Ljava/lang/String;
 
@@ -260,7 +256,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 4
     :try_start_2
     invoke-static {p1}, Lcom/umeng/umzid/a;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -277,7 +272,6 @@
     :cond_2
     move-object v7, v6
 
-    .line 5
     :goto_1
     invoke-static {p1}, Lcom/umeng/umzid/c;->c(Landroid/content/Context;)Ljava/lang/String;
 
@@ -303,7 +297,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 6
     :try_start_3
     invoke-static {p1}, Lcom/umeng/umzid/a;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -320,7 +313,6 @@
     :cond_3
     move-object v7, v6
 
-    .line 7
     :goto_2
     invoke-virtual {v3, v4, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_3
@@ -330,7 +322,6 @@
 
     if-eqz p1, :cond_4
 
-    .line 8
     :try_start_4
     invoke-static {p1}, Lcom/umeng/umzid/a;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -342,7 +333,6 @@
 
     move-result-object v6
 
-    .line 9
     :cond_4
     invoke-static {v6}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -512,7 +502,6 @@
 
     const/4 v3, 0x1
 
-    .line 2
     :try_start_0
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -566,12 +555,10 @@
     :goto_0
     const-string v5, "android_id"
 
-    .line 3
     invoke-virtual {p2, v5, v4}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-wide/16 v4, 0x0
 
-    .line 4
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
 
     move-result-object v6
@@ -606,7 +593,6 @@
     :goto_2
     if-eqz v6, :cond_3
 
-    .line 5
     sget v6, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v7, 0x9
@@ -621,7 +607,6 @@
 
     move-result-wide v4
 
-    .line 6
     :cond_3
     invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -643,7 +628,6 @@
 
     goto :goto_4
 
-    .line 7
     :cond_4
     :try_start_2
     new-instance v5, Landroid/content/res/Configuration;
@@ -675,7 +659,6 @@
 
     move-result-object v5
 
-    .line 8
     :cond_5
     invoke-static {v5}, Ljava/util/Calendar;->getInstance(Ljava/util/Locale;)Ljava/util/Calendar;
 
@@ -704,7 +687,6 @@
     :goto_4
     const/16 v5, 0x8
 
-    .line 9
     :goto_5
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -720,7 +702,6 @@
 
     invoke-virtual {p2, v6, v5}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 10
     :try_start_4
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -774,10 +755,8 @@
     :goto_6
     const-string v5, "imei"
 
-    .line 11
     invoke-virtual {p2, v5, v0}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 12
     :try_start_6
     const-class v0, Landroid/os/Build;
     :try_end_6
@@ -828,7 +807,6 @@
     :try_start_9
     const-string v3, "MD5"
 
-    .line 13
     invoke-static {v3}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object v3
@@ -894,7 +872,6 @@
     :goto_8
     const-string v3, "hostname"
 
-    .line 14
     invoke-virtual {p2, v3, v0}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v0, "sdk_version"
@@ -909,7 +886,6 @@
 
     goto :goto_9
 
-    .line 15
     :cond_a
     invoke-virtual {p1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
@@ -918,7 +894,6 @@
     :goto_9
     const-string v3, "package_name"
 
-    .line 16
     invoke-virtual {p2, v3, v0}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v0, "sdk_type"
@@ -927,7 +902,6 @@
 
     invoke-virtual {p2, v0, v3}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 17
     invoke-static {p1}, Lcom/umeng/umzid/a;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -940,7 +914,6 @@
 
     move-result-object v1
 
-    .line 18
     :cond_b
     invoke-virtual {p2, v3, v1}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -950,7 +923,6 @@
 
     invoke-virtual {p2, v0, v1}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 19
     :try_start_a
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -980,10 +952,8 @@
     :goto_a
     const-string v1, "app_version"
 
-    .line 20
     invoke-virtual {p2, v1, v0}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 21
     :try_start_b
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -1023,10 +993,8 @@
     :goto_b
     const-string v1, "app_name"
 
-    .line 22
     invoke-virtual {p2, v1, v0}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 23
     :try_start_c
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -1056,14 +1024,12 @@
     :goto_c
     const-string v1, "country"
 
-    .line 24
     invoke-virtual {p2, v1, v0}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v0, "appkey"
 
     if-eqz p1, :cond_c
 
-    .line 25
     invoke-static {p1}, Lcom/umeng/umzid/a;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object p1
@@ -1074,7 +1040,6 @@
 
     move-result-object v4
 
-    .line 26
     :cond_c
     invoke-virtual {p2, v0, v4}, Lorg/json/JSONObject;->putOpt(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -1130,7 +1095,6 @@
     :cond_1
     if-eqz p1, :cond_2
 
-    .line 1
     :try_start_2
     invoke-static {p1}, Lcom/umeng/umzid/a;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
@@ -1151,7 +1115,6 @@
     :cond_2
     const-string v1, ""
 
-    .line 2
     :goto_0
     invoke-static {}, Lcom/umeng/umzid/Spy;->getID()Ljava/lang/String;
 
@@ -1240,7 +1203,6 @@
 
     if-eqz p2, :cond_4
 
-    .line 1
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -1267,7 +1229,6 @@
 
     invoke-interface {p2}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 2
     :cond_4
     invoke-static {v0}, Lcom/umeng/umzid/c;->a(Landroid/content/Context;)Ljava/lang/String;
 
@@ -1308,7 +1269,6 @@
     :goto_1
     const-string p2, ""
 
-    .line 3
     invoke-static {p1}, Lcom/umeng/umzid/a;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object p3
@@ -1323,7 +1283,6 @@
 
     move-result-object p2
 
-    .line 4
     :cond_8
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1333,7 +1292,6 @@
 
     const-string p2, ""
 
-    .line 5
     invoke-static {p1}, Lcom/umeng/umzid/a;->a(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/bq$a;
 .super Ljava/lang/Object;
-.source "NetFileFetch.java"
 
 
 # annotations

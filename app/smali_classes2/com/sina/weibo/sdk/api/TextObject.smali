@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/api/TextObject;
 .super Lcom/sina/weibo/sdk/api/BaseMediaObject;
-.source "TextObject.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/sina/weibo/sdk/api/TextObject$a;
 
     invoke-direct {v0}, Lcom/sina/weibo/sdk/api/TextObject$a;-><init>()V
@@ -36,7 +34,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/sina/weibo/sdk/api/BaseMediaObject;-><init>()V
 
     return-void
@@ -45,10 +42,8 @@
 .method public constructor <init>(Landroid/os/Parcel;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/sina/weibo/sdk/api/BaseMediaObject;-><init>()V
 
-    .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object p1
@@ -69,7 +64,6 @@
 .method public a()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/api/TextObject;->g:Ljava/lang/String;
 
     if-eqz v0, :cond_1
@@ -103,7 +97,6 @@
 
     const-string v1, "checkArgs fail, text is invalid"
 
-    .line 2
     invoke-static {v0, v1}, Lcom/sina/weibo/sdk/utils/c;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
@@ -130,7 +123,6 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 1
     iget-object p2, p0, Lcom/sina/weibo/sdk/api/TextObject;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V

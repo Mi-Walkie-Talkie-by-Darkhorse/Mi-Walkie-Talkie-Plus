@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
 .super Ljava/lang/Object;
-.source "ImageAware.java"
 
 
 # virtual methods

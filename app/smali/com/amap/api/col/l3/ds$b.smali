@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ds$b;
 .super Landroid/os/Handler;
-.source "AsyncTask.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>(Landroid/os/Looper;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
@@ -29,7 +27,6 @@
 .method public final handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    .line 1
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     if-eqz v0, :cond_2
@@ -38,10 +35,8 @@
 
     if-eqz v1, :cond_2
 
-    .line 2
     check-cast v0, Lcom/amap/api/col/l3/ds$a;
 
-    .line 3
     iget p1, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x1
@@ -54,7 +49,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object p1, v0, Lcom/amap/api/col/l3/ds$a;->a:Lcom/amap/api/col/l3/ds;
 
@@ -64,7 +58,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object p1, v0, Lcom/amap/api/col/l3/ds$a;->a:Lcom/amap/api/col/l3/ds;
 

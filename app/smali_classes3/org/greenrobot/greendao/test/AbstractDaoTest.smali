@@ -1,6 +1,5 @@
 .class public abstract Lorg/greenrobot/greendao/test/AbstractDaoTest;
 .super Lorg/greenrobot/greendao/test/DbTest;
-.source "AbstractDaoTest.java"
 
 
 # annotations
@@ -70,7 +69,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lorg/greenrobot/greendao/test/AbstractDaoTest;-><init>(Ljava/lang/Class;Z)V
 
     return-void
@@ -86,10 +84,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p2}, Lorg/greenrobot/greendao/test/DbTest;-><init>(Z)V
 
-    .line 3
     iput-object p1, p0, Lorg/greenrobot/greendao/test/AbstractDaoTest;->daoClass:Ljava/lang/Class;
 
     return-void
@@ -100,17 +96,14 @@
 .method protected clearIdentityScopeIfAny()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/test/AbstractDaoTest;->identityScopeForDao:Lorg/greenrobot/greendao/identityscope/IdentityScope;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lorg/greenrobot/greendao/identityscope/IdentityScope;->clear()V
 
     const-string v0, "Identity scope cleared"
 
-    .line 3
     invoke-static {v0}, Lorg/greenrobot/greendao/DaoLog;->d(Ljava/lang/String;)I
 
     goto :goto_0
@@ -118,7 +111,6 @@
     :cond_0
     const-string v0, "No identity scope to clear"
 
-    .line 4
     invoke-static {v0}, Lorg/greenrobot/greendao/DaoLog;->d(Ljava/lang/String;)I
 
     :goto_0
@@ -128,7 +120,6 @@
 .method protected logTableDump()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/test/AbstractDaoTest;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     invoke-virtual {v0}, Lorg/greenrobot/greendao/AbstractDao;->getTablename()Ljava/lang/String;
@@ -150,7 +141,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lorg/greenrobot/greendao/test/AbstractDaoTest;->identityScopeForDao:Lorg/greenrobot/greendao/identityscope/IdentityScope;
 
     return-void
@@ -164,14 +154,11 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0}, Lorg/greenrobot/greendao/test/DbTest;->setUp()V
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Lorg/greenrobot/greendao/test/AbstractDaoTest;->setUpTableForDao()V
 
-    .line 3
     new-instance v0, Lorg/greenrobot/greendao/InternalUnitTestDaoAccess;
 
     iget-object v1, p0, Lorg/greenrobot/greendao/test/DbTest;->db:Lorg/greenrobot/greendao/database/Database;
@@ -184,7 +171,6 @@
 
     iput-object v0, p0, Lorg/greenrobot/greendao/test/AbstractDaoTest;->daoAccess:Lorg/greenrobot/greendao/InternalUnitTestDaoAccess;
 
-    .line 4
     invoke-virtual {v0}, Lorg/greenrobot/greendao/InternalUnitTestDaoAccess;->getDao()Lorg/greenrobot/greendao/AbstractDao;
 
     move-result-object v0
@@ -198,7 +184,6 @@
     :catch_0
     move-exception v0
 
-    .line 5
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Could not prepare DAO Test"
@@ -216,7 +201,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lorg/greenrobot/greendao/test/AbstractDaoTest;->daoClass:Ljava/lang/Class;
 
@@ -246,7 +230,6 @@
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    .line 2
     iget-object v3, p0, Lorg/greenrobot/greendao/test/DbTest;->db:Lorg/greenrobot/greendao/database/Database;
 
     aput-object v3, v2, v5
@@ -266,7 +249,6 @@
     :catch_0
     const-string v0, "No createTable method"
 
-    .line 3
     invoke-static {v0}, Lorg/greenrobot/greendao/DaoLog;->i(Ljava/lang/String;)I
 
     :goto_0

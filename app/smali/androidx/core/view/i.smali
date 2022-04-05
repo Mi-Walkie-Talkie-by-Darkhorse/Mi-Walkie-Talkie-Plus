@@ -1,6 +1,5 @@
 .class public final Landroidx/core/view/i;
 .super Ljava/lang/Object;
-.source "MotionEventCompat.java"
 
 
 # direct methods
@@ -9,7 +8,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getActionMasked()I
 
     move-result p0
@@ -20,7 +18,6 @@
 .method public static a(Landroid/view/MotionEvent;I)Z
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/MotionEvent;->getSource()I
 
     move-result p0

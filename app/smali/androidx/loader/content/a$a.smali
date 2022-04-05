@@ -1,6 +1,5 @@
 .class final Landroidx/loader/content/a$a;
 .super Landroidx/loader/content/ModernAsyncTask;
-.source "AsyncTaskLoader.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -39,12 +38,10 @@
 .method constructor <init>(Landroidx/loader/content/a;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Landroidx/loader/content/a$a;->l:Landroidx/loader/content/a;
 
     invoke-direct {p0}, Landroidx/loader/content/ModernAsyncTask;-><init>()V
 
-    .line 2
     new-instance p1, Ljava/util/concurrent/CountDownLatch;
 
     const/4 v0, 0x1
@@ -61,7 +58,6 @@
 .method protected bridge synthetic a([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, [Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Landroidx/loader/content/a$a;->a([Ljava/lang/Void;)Ljava/lang/Object;
@@ -81,7 +77,6 @@
         }
     .end annotation
 
-    .line 2
     :try_start_0
     iget-object p1, p0, Landroidx/loader/content/a$a;->l:Landroidx/loader/content/a;
 
@@ -96,7 +91,6 @@
     :catch_0
     move-exception p1
 
-    .line 3
     invoke-virtual {p0}, Landroidx/loader/content/ModernAsyncTask;->a()Z
 
     move-result v0
@@ -107,7 +101,6 @@
 
     return-object p1
 
-    .line 4
     :cond_0
     throw p1
 .end method
@@ -120,7 +113,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Landroidx/loader/content/a$a;->l:Landroidx/loader/content/a;
 
@@ -128,7 +120,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     iget-object p1, p0, Landroidx/loader/content/a$a;->j:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
@@ -153,7 +144,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Landroidx/loader/content/a$a;->l:Landroidx/loader/content/a;
 
@@ -161,7 +151,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     iget-object p1, p0, Landroidx/loader/content/a$a;->j:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
@@ -183,10 +172,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Landroidx/loader/content/a$a;->k:Z
 
-    .line 2
     iget-object v0, p0, Landroidx/loader/content/a$a;->l:Landroidx/loader/content/a;
 
     invoke-virtual {v0}, Landroidx/loader/content/a;->w()V

@@ -1,6 +1,5 @@
 .class public Lcom/google/protobuf/UninitializedMessageException;
 .super Ljava/lang/RuntimeException;
-.source "UninitializedMessageException.java"
 
 
 # static fields
@@ -25,12 +24,10 @@
 
     const-string p1, "Message was missing required fields.  (Lite runtime could not determine which fields were missing)."
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, p0, Lcom/google/protobuf/UninitializedMessageException;->missingFields:Ljava/util/List;
 
     return-void
@@ -47,14 +44,12 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {p1}, Lcom/google/protobuf/UninitializedMessageException;->buildDescription(Ljava/util/List;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    .line 4
     iput-object p1, p0, Lcom/google/protobuf/UninitializedMessageException;->missingFields:Ljava/util/List;
 
     return-void
@@ -72,14 +67,12 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Message missing required fields: "
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 2
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -108,16 +101,13 @@
     :cond_0
     const-string v3, ", "
 
-    .line 3
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4
     :goto_1
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -131,7 +121,6 @@
 .method public asInvalidProtocolBufferException()Lcom/google/protobuf/InvalidProtocolBufferException;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/InvalidProtocolBufferException;
 
     invoke-virtual {p0}, Ljava/lang/RuntimeException;->getMessage()Ljava/lang/String;
@@ -154,7 +143,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UninitializedMessageException;->missingFields:Ljava/util/List;
 
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;

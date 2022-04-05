@@ -1,6 +1,5 @@
 .class public abstract Lio/reactivex/observables/ConnectableObservable;
 .super Lio/reactivex/Observable;
-.source "ConnectableObservable.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
     return-void
@@ -42,7 +40,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0}, Lio/reactivex/observables/ConnectableObservable;->autoConnect(I)Lio/reactivex/Observable;
 
     move-result-object v0
@@ -63,7 +60,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 2
     invoke-static {}, Lio/reactivex/internal/functions/Functions;->emptyConsumer()Lio/reactivex/functions/Consumer;
 
     move-result-object v0
@@ -98,17 +94,14 @@
 
     if-gtz p1, :cond_0
 
-    .line 3
     invoke-virtual {p0, p2}, Lio/reactivex/observables/ConnectableObservable;->connect(Lio/reactivex/functions/Consumer;)V
 
-    .line 4
     invoke-static {p0}, Lio/reactivex/plugins/RxJavaPlugins;->onAssembly(Lio/reactivex/observables/ConnectableObservable;)Lio/reactivex/observables/ConnectableObservable;
 
     move-result-object p1
 
     return-object p1
 
-    .line 5
     :cond_0
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableAutoConnect;
 
@@ -124,15 +117,12 @@
 .method public final connect()Lio/reactivex/disposables/Disposable;
     .locals 1
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/util/ConnectConsumer;
 
     invoke-direct {v0}, Lio/reactivex/internal/util/ConnectConsumer;-><init>()V
 
-    .line 2
     invoke-virtual {p0, v0}, Lio/reactivex/observables/ConnectableObservable;->connect(Lio/reactivex/functions/Consumer;)V
 
-    .line 3
     iget-object v0, v0, Lio/reactivex/internal/util/ConnectConsumer;->disposable:Lio/reactivex/disposables/Disposable;
 
     return-object v0
@@ -174,7 +164,6 @@
         value = "none"
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableRefCount;
 
     invoke-direct {v0, p0}, Lio/reactivex/internal/operators/observable/ObservableRefCount;-><init>(Lio/reactivex/observables/ConnectableObservable;)V
@@ -203,7 +192,6 @@
         value = "none"
     .end annotation
 
-    .line 2
     sget-object v4, Ljava/util/concurrent/TimeUnit;->NANOSECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->trampoline()Lio/reactivex/Scheduler;
@@ -242,7 +230,6 @@
         value = "io.reactivex:computation"
     .end annotation
 
-    .line 5
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->computation()Lio/reactivex/Scheduler;
 
     move-result-object v5
@@ -284,20 +271,16 @@
 
     const-string v0, "subscriberCount"
 
-    .line 6
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->verifyPositive(ILjava/lang/String;)I
 
     const-string v0, "unit is null"
 
-    .line 7
     invoke-static {p4, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     const-string v0, "scheduler is null"
 
-    .line 8
     invoke-static {p5, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 9
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableRefCount;
 
     move-object v1, v0
@@ -340,7 +323,6 @@
         value = "io.reactivex:computation"
     .end annotation
 
-    .line 3
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->computation()Lio/reactivex/Scheduler;
 
     move-result-object v5
@@ -390,7 +372,6 @@
 
     move-object v5, p4
 
-    .line 4
     invoke-virtual/range {v0 .. v5}, Lio/reactivex/observables/ConnectableObservable;->refCount(IJLjava/util/concurrent/TimeUnit;Lio/reactivex/Scheduler;)Lio/reactivex/Observable;
 
     move-result-object p1

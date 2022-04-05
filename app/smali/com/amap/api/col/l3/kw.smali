@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kw;
 .super Ljava/lang/Object;
-.source "Util.java"
 
 
 # static fields

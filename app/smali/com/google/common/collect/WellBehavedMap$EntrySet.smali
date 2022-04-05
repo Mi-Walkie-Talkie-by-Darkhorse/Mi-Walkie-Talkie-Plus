@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/WellBehavedMap$EntrySet;
 .super Lcom/google/common/collect/Maps$EntrySet;
-.source "WellBehavedMap.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method private constructor <init>(Lcom/google/common/collect/WellBehavedMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/WellBehavedMap$EntrySet;->this$0:Lcom/google/common/collect/WellBehavedMap;
 
     invoke-direct {p0}, Lcom/google/common/collect/Maps$EntrySet;-><init>()V
@@ -40,7 +38,6 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/WellBehavedMap;Lcom/google/common/collect/WellBehavedMap$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/collect/WellBehavedMap$EntrySet;-><init>(Lcom/google/common/collect/WellBehavedMap;)V
 
     return-void
@@ -59,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/WellBehavedMap$EntrySet$1;
 
     iget-object v1, p0, Lcom/google/common/collect/WellBehavedMap$EntrySet;->this$0:Lcom/google/common/collect/WellBehavedMap;
@@ -87,7 +83,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/WellBehavedMap$EntrySet;->this$0:Lcom/google/common/collect/WellBehavedMap;
 
     return-object v0

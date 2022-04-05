@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/bean/DiscoverResult$Meta;
 .super Ljava/lang/Object;
-.source "DiscoverResult.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/bean/DiscoverResult;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/DiscoverResult$Meta;->this$0:Lcom/ifengyu/intercom/bean/DiscoverResult;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

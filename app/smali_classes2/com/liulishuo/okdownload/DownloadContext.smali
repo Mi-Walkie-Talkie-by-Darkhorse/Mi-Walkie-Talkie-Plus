@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/DownloadContext;
 .super Ljava/lang/Object;
-.source "DownloadContext.java"
 
 
 # annotations
@@ -39,7 +38,6 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1
     new-instance v8, Ljava/util/concurrent/ThreadPoolExecutor;
 
     sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
@@ -52,7 +50,6 @@
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-static {v0, v1}, Lcom/liulishuo/okdownload/core/Util;->threadFactory(Ljava/lang/String;Z)Ljava/util/concurrent/ThreadFactory;
 
     move-result-object v7
@@ -85,21 +82,16 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 4
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/DownloadContext;->started:Z
 
-    .line 5
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext;->tasks:[Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 6
     iput-object p2, p0, Lcom/liulishuo/okdownload/DownloadContext;->contextListener:Lcom/liulishuo/okdownload/DownloadContextListener;
 
-    .line 7
     iput-object p3, p0, Lcom/liulishuo/okdownload/DownloadContext;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
 
     return-void
@@ -124,10 +116,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/liulishuo/okdownload/DownloadContext;-><init>([Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/DownloadContextListener;Lcom/liulishuo/okdownload/DownloadContext$QueueSet;)V
 
-    .line 2
     iput-object p4, p0, Lcom/liulishuo/okdownload/DownloadContext;->uiHandler:Landroid/os/Handler;
 
     return-void
@@ -136,7 +126,6 @@
 .method static synthetic access$000(Lcom/liulishuo/okdownload/DownloadContext;Z)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/liulishuo/okdownload/DownloadContext;->callbackQueueEndOnSerialLoop(Z)V
 
     return-void
@@ -145,7 +134,6 @@
 .method static synthetic access$1200(Lcom/liulishuo/okdownload/DownloadContext;)[Lcom/liulishuo/okdownload/DownloadTask;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadContext;->tasks:[Lcom/liulishuo/okdownload/DownloadTask;
 
     return-object p0
@@ -154,7 +142,6 @@
 .method private callbackQueueEndOnSerialLoop(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext;->contextListener:Lcom/liulishuo/okdownload/DownloadContextListener;
 
     if-nez v0, :cond_0
@@ -164,7 +151,6 @@
     :cond_0
     if-eqz p1, :cond_2
 
-    .line 2
     iget-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext;->uiHandler:Landroid/os/Handler;
 
     if-nez p1, :cond_1
@@ -179,7 +165,6 @@
 
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext;->uiHandler:Landroid/os/Handler;
 
-    .line 3
     :cond_1
     iget-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext;->uiHandler:Landroid/os/Handler;
 
@@ -191,7 +176,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_2
     invoke-interface {v0, p0}, Lcom/liulishuo/okdownload/DownloadContextListener;->queueEnd(Lcom/liulishuo/okdownload/DownloadContext;)V
 
@@ -204,7 +188,6 @@
 .method public alter()Lcom/liulishuo/okdownload/DownloadContext$AlterContext;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/DownloadContext$AlterContext;
 
     invoke-direct {v0, p0}, Lcom/liulishuo/okdownload/DownloadContext$AlterContext;-><init>(Lcom/liulishuo/okdownload/DownloadContext;)V
@@ -215,7 +198,6 @@
 .method executeOnSerialExecutor(Ljava/lang/Runnable;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/liulishuo/okdownload/DownloadContext;->SERIAL_EXECUTOR:Ljava/util/concurrent/Executor;
 
     invoke-interface {v0, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
@@ -232,7 +214,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext;->tasks:[Lcom/liulishuo/okdownload/DownloadTask;
 
     return-object v0
@@ -241,7 +222,6 @@
 .method public isStarted()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/DownloadContext;->started:Z
 
     return v0
@@ -254,12 +234,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
-    .line 2
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -280,20 +258,16 @@
 
     const/4 v2, 0x1
 
-    .line 3
     iput-boolean v2, p0, Lcom/liulishuo/okdownload/DownloadContext;->started:Z
 
-    .line 4
     iget-object v2, p0, Lcom/liulishuo/okdownload/DownloadContext;->contextListener:Lcom/liulishuo/okdownload/DownloadContextListener;
 
     if-eqz v2, :cond_0
 
-    .line 5
     new-instance v2, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;
 
     invoke-direct {v2}, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;-><init>()V
 
-    .line 6
     invoke-virtual {v2, p1}, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;->append(Lcom/liulishuo/okdownload/DownloadListener;)Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;
 
     move-result-object p1
@@ -308,12 +282,10 @@
 
     invoke-direct {v2, p0, v4, v5}, Lcom/liulishuo/okdownload/DownloadContext$QueueAttachListener;-><init>(Lcom/liulishuo/okdownload/DownloadContext;Lcom/liulishuo/okdownload/DownloadContextListener;I)V
 
-    .line 7
     invoke-virtual {p1, v2}, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;->append(Lcom/liulishuo/okdownload/DownloadListener;)Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;
 
     move-result-object p1
 
-    .line 8
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;->build()Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;
 
     move-result-object p1
@@ -321,20 +293,16 @@
     :cond_0
     if-eqz p2, :cond_1
 
-    .line 9
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 10
     iget-object v4, p0, Lcom/liulishuo/okdownload/DownloadContext;->tasks:[Lcom/liulishuo/okdownload/DownloadTask;
 
     invoke-static {v2, v4}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
-    .line 11
     invoke-static {v2}, Ljava/util/Collections;->sort(Ljava/util/List;)V
 
-    .line 12
     new-instance v4, Lcom/liulishuo/okdownload/DownloadContext$1;
 
     invoke-direct {v4, p0, v2, p1}, Lcom/liulishuo/okdownload/DownloadContext$1;-><init>(Lcom/liulishuo/okdownload/DownloadContext;Ljava/util/List;Lcom/liulishuo/okdownload/DownloadListener;)V
@@ -343,13 +311,11 @@
 
     goto :goto_0
 
-    .line 13
     :cond_1
     iget-object v2, p0, Lcom/liulishuo/okdownload/DownloadContext;->tasks:[Lcom/liulishuo/okdownload/DownloadTask;
 
     invoke-static {v2, p1}, Lcom/liulishuo/okdownload/DownloadTask;->enqueue([Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/DownloadListener;)V
 
-    .line 14
     :goto_0
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -365,7 +331,6 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 15
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v4
@@ -382,7 +347,6 @@
 
     move-result-object p1
 
-    .line 16
     invoke-static {v3, p1}, Lcom/liulishuo/okdownload/core/Util;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -393,7 +357,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/liulishuo/okdownload/DownloadContext;->start(Lcom/liulishuo/okdownload/DownloadListener;Z)V
 
     return-void
@@ -404,7 +367,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/liulishuo/okdownload/DownloadContext;->start(Lcom/liulishuo/okdownload/DownloadListener;Z)V
 
     return-void
@@ -413,7 +375,6 @@
 .method public stop()V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/DownloadContext;->started:Z
 
     if-eqz v0, :cond_0
@@ -433,7 +394,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/DownloadContext;->started:Z
 
     return-void
@@ -442,7 +402,6 @@
 .method public toBuilder()Lcom/liulishuo/okdownload/DownloadContext$Builder;
     .locals 4
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/DownloadContext$Builder;
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/DownloadContext;->set:Lcom/liulishuo/okdownload/DownloadContext$QueueSet;
@@ -461,7 +420,6 @@
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/DownloadContext;->contextListener:Lcom/liulishuo/okdownload/DownloadContextListener;
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/liulishuo/okdownload/DownloadContext$Builder;->setListener(Lcom/liulishuo/okdownload/DownloadContextListener;)Lcom/liulishuo/okdownload/DownloadContext$Builder;
 
     move-result-object v0

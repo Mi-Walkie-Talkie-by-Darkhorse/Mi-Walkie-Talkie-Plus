@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/widget/RxAdapter__AdapterDataChangeObservableKt;
 .super Ljava/lang/Object;
-.source "AdapterDataChangeObservable.kt"
 
 
 # annotations
@@ -58,7 +57,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable;
 
     invoke-direct {v0, p0}, Lcom/jakewharton/rxbinding3/widget/AdapterDataChangeObservable;-><init>(Landroid/widget/Adapter;)V

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/network/d/c$a;
 .super Ljava/lang/Object;
-.source "HttpGetMap.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/network/d/c;Lcom/ifengyu/intercom/network/d/d;Lcom/ifengyu/intercom/network/d/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/network/d/c$a;->c:Lcom/ifengyu/intercom/network/d/c;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/network/d/c$a;->a:Lcom/ifengyu/intercom/network/d/d;
@@ -46,12 +44,10 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/network/d/c$a;->a:Lcom/ifengyu/intercom/network/d/d;
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/network/d/c$a;->b:Lcom/ifengyu/intercom/network/d/a;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/network/d/c$a;->c:Lcom/ifengyu/intercom/network/d/c;

@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/b$b;
 .super Landroidx/activity/b;
-.source "QMUIFragment.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/b;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/b$b;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-direct {p0, p2}, Landroidx/activity/b;-><init>(Z)V
@@ -35,7 +33,6 @@
 .method public handleOnBackPressed()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$b;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/arch/b;->o()V

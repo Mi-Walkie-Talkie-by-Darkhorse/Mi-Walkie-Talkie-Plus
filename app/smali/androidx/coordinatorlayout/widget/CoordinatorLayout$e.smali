@@ -1,6 +1,5 @@
 .class Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;
 .super Ljava/lang/Object;
-.source "CoordinatorLayout.java"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnPreDrawListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onPreDraw()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$e;->a:Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
     const/4 v1, 0x0

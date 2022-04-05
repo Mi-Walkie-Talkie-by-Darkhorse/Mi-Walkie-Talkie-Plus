@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/greenrobot/greendao/annotation/OrderBy;
 .super Ljava/lang/Object;
-.source "OrderBy.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

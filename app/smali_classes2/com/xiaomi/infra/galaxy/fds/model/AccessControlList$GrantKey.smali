@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;
 .super Ljava/lang/Object;
-.source "AccessControlList.java"
 
 # interfaces
 .implements Ljava/lang/Comparable;
@@ -36,13 +35,10 @@
 .method public constructor <init>(Ljava/lang/String;Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;->granteeId:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;->type:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;
 
     return-void
@@ -53,7 +49,6 @@
 
     const-string v0, ":"
 
-    .line 1
     invoke-virtual {p0, v0}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
 
     move-result v0
@@ -71,11 +66,9 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 2
     :goto_0
     invoke-static {v3}, Lcom/google/common/base/Preconditions;->checkState(Z)V
 
-    .line 3
     new-instance v3, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;
 
     invoke-virtual {p0, v2, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
@@ -102,7 +95,6 @@
 .method public compareTo(Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;)I
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;->granteeId:Ljava/lang/String;
 
     iget-object v1, p1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;->granteeId:Ljava/lang/String;
@@ -113,7 +105,6 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;->type:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;
 
     iget-object p1, p1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;->type:Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantType;
@@ -131,7 +122,6 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;
 
     invoke-virtual {p0, p1}, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;->compareTo(Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;)I
@@ -150,7 +140,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;
 
@@ -160,11 +149,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;
 
-    .line 3
     iget-object v1, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;->granteeId:Ljava/lang/String;
 
     iget-object v3, p1, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;->granteeId:Ljava/lang/String;
@@ -197,7 +184,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/model/AccessControlList$GrantKey;->granteeId:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -226,7 +212,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

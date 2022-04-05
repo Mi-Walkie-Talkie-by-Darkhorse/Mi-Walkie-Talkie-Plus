@@ -1,6 +1,5 @@
 .class Landroidx/media/b$b;
 .super Landroid/service/media/MediaBrowserService;
-.source "MediaBrowserServiceCompatApi21.java"
 
 
 # annotations
@@ -22,13 +21,10 @@
 .method constructor <init>(Landroid/content/Context;Landroidx/media/b$d;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/service/media/MediaBrowserService;-><init>()V
 
-    .line 2
     invoke-virtual {p0, p1}, Landroid/service/media/MediaBrowserService;->attachBaseContext(Landroid/content/Context;)V
 
-    .line 3
     iput-object p2, p0, Landroidx/media/b$b;->a:Landroidx/media/b$d;
 
     return-void
@@ -39,10 +35,8 @@
 .method public onGetRoot(Ljava/lang/String;ILandroid/os/Bundle;)Landroid/service/media/MediaBrowserService$BrowserRoot;
     .locals 3
 
-    .line 1
     invoke-static {p3}, Landroid/support/v4/media/session/MediaSessionCompat;->ensureClassLoader(Landroid/os/Bundle;)V
 
-    .line 2
     iget-object v0, p0, Landroidx/media/b$b;->a:Landroidx/media/b$d;
 
     const/4 v1, 0x0
@@ -67,7 +61,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     new-instance v1, Landroid/service/media/MediaBrowserService$BrowserRoot;
 
@@ -94,7 +87,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/media/b$b;->a:Landroidx/media/b$d;
 
     new-instance v1, Landroidx/media/b$c;

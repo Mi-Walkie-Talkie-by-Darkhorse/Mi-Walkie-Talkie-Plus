@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;
 .super Ljava/lang/Object;
-.source "QMUIBasicTabSegment.java"
 
 # interfaces
 .implements Landroid/animation/Animator$AnimatorListener;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;Lcom/qmuiteam/qmui/widget/tab/QMUITabView;Lcom/qmuiteam/qmui/widget/tab/QMUITabView;IILcom/qmuiteam/qmui/widget/tab/QMUITab;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->f:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     iput-object p2, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
@@ -58,28 +56,24 @@
 .method public onAnimationCancel(Landroid/animation/Animator;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->f:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     const/4 v0, 0x0
 
     iput-object v0, p1, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->l:Landroid/animation/Animator;
 
-    .line 2
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     const/high16 v0, 0x3f800000    # 1.0f
 
     invoke-virtual {p1, v0}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->setSelectFraction(F)V
 
-    .line 3
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->b:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->setSelectFraction(F)V
 
-    .line 4
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->f:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->e:Lcom/qmuiteam/qmui/widget/tab/QMUITab;
@@ -94,49 +88,42 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 4
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->f:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     const/4 v0, 0x0
 
     iput-object v0, p1, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->l:Landroid/animation/Animator;
 
-    .line 2
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->setSelectFraction(F)V
 
-    .line 3
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->b:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     const/high16 v0, 0x3f800000    # 1.0f
 
     invoke-virtual {p1, v0}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->setSelectFraction(F)V
 
-    .line 4
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->f:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     iget v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->c:I
 
     invoke-static {p1, v0}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->a(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;I)V
 
-    .line 5
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->f:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     iget v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->d:I
 
     invoke-static {p1, v0}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->b(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;I)V
 
-    .line 6
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->f:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     iget v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->c:I
 
     iput v0, p1, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->c:I
 
-    .line 7
     iget v0, p1, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->d:I
 
     const/4 v1, -0x1
@@ -149,7 +136,6 @@
 
     if-nez p1, :cond_0
 
-    .line 8
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->f:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     iget v0, p1, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->d:I
@@ -160,7 +146,6 @@
 
     invoke-virtual {p1, v0, v2, v3}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->a(IZZ)V
 
-    .line 9
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->f:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     iput v1, p1, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->d:I
@@ -178,7 +163,6 @@
 .method public onAnimationStart(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$b;->f:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     iput-object p1, v0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->l:Landroid/animation/Animator;

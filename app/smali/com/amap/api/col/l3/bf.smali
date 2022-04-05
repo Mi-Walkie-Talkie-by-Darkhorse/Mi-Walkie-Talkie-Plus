@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/bf;
 .super Ljava/lang/Object;
-.source "TaskManager.java"
 
 
 # static fields
@@ -28,10 +27,8 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/LinkedHashMap;
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
@@ -40,10 +37,8 @@
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Lcom/amap/api/col/l3/bf;->d:Z
 
-    .line 4
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/jc;->a()Lcom/amap/api/col/l3/jc;
 
@@ -58,7 +53,6 @@
     :catchall_0
     move-exception v0
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -67,7 +61,6 @@
 .method public static a()Lcom/amap/api/col/l3/bf;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/bf;->c()Lcom/amap/api/col/l3/bf;
 
     move-result-object v0
@@ -82,13 +75,11 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/bf;->a:Lcom/amap/api/col/l3/bf;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/amap/api/col/l3/bf;
 
     invoke-direct {v1}, Lcom/amap/api/col/l3/bf;-><init>()V
@@ -97,7 +88,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     sget-object v1, Lcom/amap/api/col/l3/bf;->a:Lcom/amap/api/col/l3/bf;
 
@@ -105,10 +95,8 @@
 
     if-nez v1, :cond_1
 
-    .line 4
     sget-object v1, Lcom/amap/api/col/l3/bf;->a:Lcom/amap/api/col/l3/bf;
 
-    .line 5
     invoke-static {}, Lcom/amap/api/col/l3/jc;->a()Lcom/amap/api/col/l3/jc;
 
     move-result-object v2
@@ -122,11 +110,9 @@
     :catchall_0
     move-exception v1
 
-    .line 6
     :try_start_1
     invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 7
     :cond_1
     :goto_0
     sget-object v1, Lcom/amap/api/col/l3/bf;->a:Lcom/amap/api/col/l3/bf;
@@ -150,16 +136,13 @@
 .method public final a(Lcom/amap/api/col/l3/be;)V
     .locals 3
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/bf;->c:Ljava/util/LinkedHashMap;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/bf;->c:Ljava/util/LinkedHashMap;
 
-    .line 4
     invoke-interface {p1}, Lcom/amap/api/col/l3/be;->b()Ljava/lang/String;
 
     move-result-object v2
@@ -172,16 +155,13 @@
 
     if-nez v1, :cond_0
 
-    .line 5
     monitor-exit v0
 
     return-void
 
-    .line 6
     :cond_0
     invoke-virtual {v1}, Lcom/amap/api/col/l3/bb;->b()V
 
-    .line 7
     iget-object v1, p0, Lcom/amap/api/col/l3/bf;->c:Ljava/util/LinkedHashMap;
 
     invoke-interface {p1}, Lcom/amap/api/col/l3/be;->b()Ljava/lang/String;
@@ -190,7 +170,6 @@
 
     invoke-virtual {v1, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -213,7 +192,6 @@
         }
     .end annotation
 
-    .line 9
     iget-object v0, p0, Lcom/amap/api/col/l3/bf;->c:Ljava/util/LinkedHashMap;
 
     invoke-interface {p1}, Lcom/amap/api/col/l3/be;->b()Ljava/lang/String;
@@ -226,14 +204,12 @@
 
     if-nez v0, :cond_0
 
-    .line 10
     new-instance v0, Lcom/amap/api/col/l3/bb;
 
     move-object v1, p1
 
     check-cast v1, Lcom/amap/api/col/l3/bu;
 
-    .line 11
     invoke-virtual {p2}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p2
@@ -242,12 +218,10 @@
 
     invoke-direct {v0, v1, p2, v2}, Lcom/amap/api/col/l3/bb;-><init>(Lcom/amap/api/col/l3/bu;Landroid/content/Context;B)V
 
-    .line 12
     iget-object p2, p0, Lcom/amap/api/col/l3/bf;->c:Ljava/util/LinkedHashMap;
 
     monitor-enter p2
 
-    .line 13
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/bf;->c:Ljava/util/LinkedHashMap;
 
@@ -257,7 +231,6 @@
 
     invoke-virtual {v1, v2, v0}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 14
     monitor-exit p2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -271,7 +244,6 @@
 
     throw p1
 
-    .line 15
     :cond_0
     :goto_0
     iget-object p2, p0, Lcom/amap/api/col/l3/bf;->b:Lcom/amap/api/col/l3/jc;
@@ -296,7 +268,6 @@
 .method public final b()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bf;->c:Ljava/util/LinkedHashMap;
 
     monitor-enter v0
@@ -360,16 +331,13 @@
 
     goto :goto_0
 
-    .line 2
     :goto_2
     invoke-static {}, Lcom/amap/api/col/l3/jc;->b()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/col/l3/bf;->b:Lcom/amap/api/col/l3/jc;
 
-    .line 4
     sput-object v0, Lcom/amap/api/col/l3/bf;->a:Lcom/amap/api/col/l3/bf;
 
     return-void
@@ -377,7 +345,6 @@
     :catchall_0
     move-exception v1
 
-    .line 5
     monitor-exit v0
 
     throw v1
@@ -386,10 +353,8 @@
 .method public final b(Lcom/amap/api/col/l3/be;)V
     .locals 2
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/bf;->c:Ljava/util/LinkedHashMap;
 
-    .line 7
     invoke-interface {p1}, Lcom/amap/api/col/l3/be;->b()Ljava/lang/String;
 
     move-result-object v1
@@ -402,16 +367,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 8
     iget-object v1, p0, Lcom/amap/api/col/l3/bf;->c:Ljava/util/LinkedHashMap;
 
     monitor-enter v1
 
-    .line 9
     :try_start_0
     invoke-virtual {v0}, Lcom/amap/api/col/l3/bb;->c()V
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/col/l3/bf;->c:Ljava/util/LinkedHashMap;
 
     invoke-interface {p1}, Lcom/amap/api/col/l3/be;->b()Ljava/lang/String;
@@ -420,7 +382,6 @@
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

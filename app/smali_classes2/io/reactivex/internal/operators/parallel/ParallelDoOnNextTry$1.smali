@@ -1,6 +1,5 @@
 .class synthetic Lio/reactivex/internal/operators/parallel/ParallelDoOnNextTry$1;
 .super Ljava/lang/Object;
-.source "ParallelDoOnNextTry.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lio/reactivex/parallel/ParallelFailureHandling;->values()[Lio/reactivex/parallel/ParallelFailureHandling;
 
     move-result-object v0

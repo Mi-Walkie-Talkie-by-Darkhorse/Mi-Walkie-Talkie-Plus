@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/dialog/list/d$b;
 .super Ljava/lang/Object;
-.source "ItemListBuilder.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/lite/dialog/list/a$b;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/dialog/list/d;Lcom/qmuiteam/qmui/widget/dialog/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/dialog/list/d$b;->b:Lcom/ifengyu/intercom/lite/dialog/list/d;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/lite/dialog/list/d$b;->a:Lcom/qmuiteam/qmui/widget/dialog/b;
@@ -42,7 +40,6 @@
 .method public a(Lcom/ifengyu/intercom/lite/dialog/list/a$c;ILcom/ifengyu/intercom/lite/dialog/list/c;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/dialog/list/d$b;->b:Lcom/ifengyu/intercom/lite/dialog/list/d;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/dialog/list/d;->a(Lcom/ifengyu/intercom/lite/dialog/list/d;)Lcom/ifengyu/intercom/lite/dialog/list/d$c;
@@ -51,7 +48,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/dialog/list/d$b;->b:Lcom/ifengyu/intercom/lite/dialog/list/d;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/dialog/list/d;->a(Lcom/ifengyu/intercom/lite/dialog/list/d;)Lcom/ifengyu/intercom/lite/dialog/list/d$c;

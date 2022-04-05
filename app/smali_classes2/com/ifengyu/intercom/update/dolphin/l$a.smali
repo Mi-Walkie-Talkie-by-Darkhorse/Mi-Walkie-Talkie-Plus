@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/update/dolphin/l$a;
 .super Ljava/lang/Object;
-.source "UpdateMcuTask.java"
 
 
 # annotations

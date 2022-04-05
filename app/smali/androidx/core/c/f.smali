@@ -1,6 +1,5 @@
 .class public final Landroidx/core/c/f;
 .super Ljava/lang/Object;
-.source "TextUtilsCompat.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/util/Locale;
 
     const-string v1, ""
@@ -30,7 +28,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p0}, Ljava/util/Locale;->getDisplayName(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object p0
@@ -66,14 +63,12 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x11
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-static {p0}, Landroid/text/TextUtils;->getLayoutDirectionFromLocale(Ljava/util/Locale;)I
 
     move-result p0
@@ -83,7 +78,6 @@
     :cond_0
     if-eqz p0, :cond_3
 
-    .line 3
     sget-object v0, Landroidx/core/c/f;->a:Ljava/util/Locale;
 
     invoke-virtual {p0, v0}, Ljava/util/Locale;->equals(Ljava/lang/Object;)Z
@@ -92,14 +86,12 @@
 
     if-nez v0, :cond_3
 
-    .line 4
     invoke-static {p0}, Landroidx/core/c/b;->b(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
-    .line 5
     invoke-static {p0}, Landroidx/core/c/f;->a(Ljava/util/Locale;)I
 
     move-result p0
@@ -109,7 +101,6 @@
     :cond_1
     const-string p0, "Arab"
 
-    .line 6
     invoke-virtual {v0, p0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p0
@@ -118,7 +109,6 @@
 
     const-string p0, "Hebr"
 
-    .line 7
     invoke-virtual {v0, p0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p0

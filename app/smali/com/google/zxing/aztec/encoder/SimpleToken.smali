@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/aztec/encoder/SimpleToken;
 .super Lcom/google/zxing/aztec/encoder/Token;
-.source "SimpleToken.java"
 
 
 # instance fields
@@ -13,17 +12,14 @@
 .method constructor <init>(Lcom/google/zxing/aztec/encoder/Token;II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/zxing/aztec/encoder/Token;-><init>(Lcom/google/zxing/aztec/encoder/Token;)V
 
     int-to-short p1, p2
 
-    .line 2
     iput-short p1, p0, Lcom/google/zxing/aztec/encoder/SimpleToken;->value:S
 
     int-to-short p1, p3
 
-    .line 3
     iput-short p1, p0, Lcom/google/zxing/aztec/encoder/SimpleToken;->bitCount:S
 
     return-void
@@ -34,7 +30,6 @@
 .method appendTo(Lcom/google/zxing/common/BitArray;[B)V
     .locals 1
 
-    .line 1
     iget-short p2, p0, Lcom/google/zxing/aztec/encoder/SimpleToken;->value:S
 
     iget-short v0, p0, Lcom/google/zxing/aztec/encoder/SimpleToken;->bitCount:S
@@ -47,7 +42,6 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 1
     iget-short v0, p0, Lcom/google/zxing/aztec/encoder/SimpleToken;->value:S
 
     iget-short v1, p0, Lcom/google/zxing/aztec/encoder/SimpleToken;->bitCount:S
@@ -64,7 +58,6 @@
 
     or-int/2addr v0, v1
 
-    .line 2
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v3, "<"

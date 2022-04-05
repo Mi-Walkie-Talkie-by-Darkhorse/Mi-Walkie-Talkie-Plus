@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/events/ZoomEvent;
 .super Ljava/lang/Object;
-.source "ZoomEvent.java"
 
 # interfaces
 .implements Lorg/osmdroid/events/MapEvent;
@@ -16,13 +15,10 @@
 .method public constructor <init>(Lorg/osmdroid/views/MapView;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lorg/osmdroid/events/ZoomEvent;->source:Lorg/osmdroid/views/MapView;
 
-    .line 3
     iput p2, p0, Lorg/osmdroid/events/ZoomEvent;->zoomLevel:I
 
     return-void
@@ -33,7 +29,6 @@
 .method public getSource()Lorg/osmdroid/views/MapView;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/events/ZoomEvent;->source:Lorg/osmdroid/views/MapView;
 
     return-object v0
@@ -42,7 +37,6 @@
 .method public getZoomLevel()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/events/ZoomEvent;->zoomLevel:I
 
     return v0
@@ -51,7 +45,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

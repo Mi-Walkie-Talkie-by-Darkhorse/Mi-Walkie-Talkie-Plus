@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/util/constants/MapViewConstants;
 .super Ljava/lang/Object;
-.source "MapViewConstants.java"
 
 
 # static fields
@@ -32,7 +31,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/engine/x/h$a;
 .super Ljava/lang/Object;
-.source "GroupedLinkedMap.java"
 
 
 # annotations
@@ -68,7 +67,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/bumptech/glide/load/engine/x/h$a;-><init>(Ljava/lang/Object;)V
 
     return-void
@@ -82,15 +80,12 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p0, p0, Lcom/bumptech/glide/load/engine/x/h$a;->d:Lcom/bumptech/glide/load/engine/x/h$a;
 
     iput-object p0, p0, Lcom/bumptech/glide/load/engine/x/h$a;->c:Lcom/bumptech/glide/load/engine/x/h$a;
 
-    .line 4
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/x/h$a;->a:Ljava/lang/Object;
 
     return-void
@@ -109,14 +104,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/bumptech/glide/load/engine/x/h$a;->b()I
 
     move-result v0
 
     if-lez v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Lcom/bumptech/glide/load/engine/x/h$a;->b:Ljava/util/List;
 
     add-int/lit8 v0, v0, -0x1
@@ -142,19 +135,16 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/h$a;->b:Ljava/util/List;
 
     if-nez v0, :cond_0
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/bumptech/glide/load/engine/x/h$a;->b:Ljava/util/List;
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/h$a;->b:Ljava/util/List;
 
@@ -166,7 +156,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/h$a;->b:Ljava/util/List;
 
     if-eqz v0, :cond_0

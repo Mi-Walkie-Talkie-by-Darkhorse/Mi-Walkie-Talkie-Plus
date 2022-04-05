@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/functions/BiPredicate;
 .super Ljava/lang/Object;
-.source "BiPredicate.java"
 
 
 # annotations

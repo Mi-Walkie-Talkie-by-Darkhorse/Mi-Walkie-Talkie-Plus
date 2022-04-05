@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Maps$1;
 .super Lcom/google/common/collect/UnmodifiableIterator;
-.source "Maps.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/collect/UnmodifiableIterator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/Maps$1;->val$entryIterator:Lcom/google/common/collect/UnmodifiableIterator;
 
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableIterator;-><init>()V
@@ -42,7 +40,6 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Maps$1;->val$entryIterator:Lcom/google/common/collect/UnmodifiableIterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -60,7 +57,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Maps$1;->val$entryIterator:Lcom/google/common/collect/UnmodifiableIterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;

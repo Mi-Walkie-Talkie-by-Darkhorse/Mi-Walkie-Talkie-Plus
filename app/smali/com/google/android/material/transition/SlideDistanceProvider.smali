@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/transition/SlideDistanceProvider;
 .super Ljava/lang/Object;
-.source "SlideDistanceProvider.java"
 
 # interfaces
 .implements Lcom/google/android/material/transition/VisibilityAnimatorProvider;
@@ -31,15 +30,12 @@
 .method public constructor <init>(I)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Lcom/google/android/material/transition/SlideDistanceProvider;->slideDistance:I
 
-    .line 3
     iput p1, p0, Lcom/google/android/material/transition/SlideDistanceProvider;->slideEdge:I
 
     return-void
@@ -52,12 +48,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
 
     move-result v0
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
 
     move-result v1
@@ -86,7 +80,6 @@
 
     if-ne p2, v1, :cond_1
 
-    .line 3
     invoke-static {p0}, Lcom/google/android/material/transition/SlideDistanceProvider;->isRtl(Landroid/view/View;)Z
 
     move-result p0
@@ -104,7 +97,6 @@
 
     add-float/2addr p0, v0
 
-    .line 4
     :goto_0
     invoke-static {p1, p0, v0, v0}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationXAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
@@ -112,7 +104,6 @@
 
     return-object p0
 
-    .line 5
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -134,7 +125,6 @@
 
     throw p0
 
-    .line 6
     :cond_2
     invoke-static {p0}, Lcom/google/android/material/transition/SlideDistanceProvider;->isRtl(Landroid/view/View;)Z
 
@@ -153,7 +143,6 @@
 
     sub-float p0, v0, p0
 
-    .line 7
     :goto_1
     invoke-static {p1, p0, v0, v0}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationXAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
@@ -166,7 +155,6 @@
 
     add-float/2addr p0, v1
 
-    .line 8
     invoke-static {p1, p0, v1, v1}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationYAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
     move-result-object p0
@@ -178,7 +166,6 @@
 
     sub-float p0, v1, p0
 
-    .line 9
     invoke-static {p1, p0, v1, v1}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationYAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
     move-result-object p0
@@ -190,7 +177,6 @@
 
     sub-float p0, v0, p0
 
-    .line 10
     invoke-static {p1, p0, v0, v0}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationXAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
     move-result-object p0
@@ -202,7 +188,6 @@
 
     add-float/2addr p0, v0
 
-    .line 11
     invoke-static {p1, p0, v0, v0}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationXAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
     move-result-object p0
@@ -217,12 +202,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getTranslationX()F
 
     move-result v0
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/View;->getTranslationY()F
 
     move-result v1
@@ -251,7 +234,6 @@
 
     if-ne p2, v1, :cond_1
 
-    .line 3
     invoke-static {p0}, Lcom/google/android/material/transition/SlideDistanceProvider;->isRtl(Landroid/view/View;)Z
 
     move-result p0
@@ -269,7 +251,6 @@
 
     sub-float p0, v0, p0
 
-    .line 4
     :goto_0
     invoke-static {p1, v0, p0, v0}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationXAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
@@ -277,7 +258,6 @@
 
     return-object p0
 
-    .line 5
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -299,7 +279,6 @@
 
     throw p0
 
-    .line 6
     :cond_2
     invoke-static {p0}, Lcom/google/android/material/transition/SlideDistanceProvider;->isRtl(Landroid/view/View;)Z
 
@@ -318,7 +297,6 @@
 
     add-float/2addr p0, v0
 
-    .line 7
     :goto_1
     invoke-static {p1, v0, p0, v0}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationXAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
@@ -331,7 +309,6 @@
 
     sub-float p0, v1, p0
 
-    .line 8
     invoke-static {p1, v1, p0, v1}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationYAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
     move-result-object p0
@@ -343,7 +320,6 @@
 
     add-float/2addr p0, v1
 
-    .line 9
     invoke-static {p1, v1, p0, v1}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationYAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
     move-result-object p0
@@ -355,7 +331,6 @@
 
     add-float/2addr p0, v0
 
-    .line 10
     invoke-static {p1, v0, p0, v0}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationXAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
     move-result-object p0
@@ -367,7 +342,6 @@
 
     sub-float p0, v0, p0
 
-    .line 11
     invoke-static {p1, v0, p0, v0}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationXAnimator(Landroid/view/View;FFF)Landroid/animation/Animator;
 
     move-result-object p0
@@ -382,7 +356,6 @@
 
     new-array v1, v0, [Landroid/animation/PropertyValuesHolder;
 
-    .line 1
     sget-object v2, Landroid/view/View;->TRANSLATION_X:Landroid/util/Property;
 
     const/4 v3, 0x2
@@ -395,19 +368,16 @@
 
     aput p2, v3, v0
 
-    .line 2
     invoke-static {v2, v3}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
 
     move-result-object p1
 
     aput-object p1, v1, v4
 
-    .line 3
     invoke-static {p0, v1}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
 
     move-result-object p1
 
-    .line 4
     new-instance p2, Lcom/google/android/material/transition/SlideDistanceProvider$1;
 
     invoke-direct {p2, p0, p3}, Lcom/google/android/material/transition/SlideDistanceProvider$1;-><init>(Landroid/view/View;F)V
@@ -424,7 +394,6 @@
 
     new-array v1, v0, [Landroid/animation/PropertyValuesHolder;
 
-    .line 1
     sget-object v2, Landroid/view/View;->TRANSLATION_Y:Landroid/util/Property;
 
     const/4 v3, 0x2
@@ -437,19 +406,16 @@
 
     aput p2, v3, v0
 
-    .line 2
     invoke-static {v2, v3}, Landroid/animation/PropertyValuesHolder;->ofFloat(Landroid/util/Property;[F)Landroid/animation/PropertyValuesHolder;
 
     move-result-object p1
 
     aput-object p1, v1, v4
 
-    .line 3
     invoke-static {p0, v1}, Landroid/animation/ObjectAnimator;->ofPropertyValuesHolder(Ljava/lang/Object;[Landroid/animation/PropertyValuesHolder;)Landroid/animation/ObjectAnimator;
 
     move-result-object p1
 
-    .line 4
     new-instance p2, Lcom/google/android/material/transition/SlideDistanceProvider$2;
 
     invoke-direct {p2, p0, p3}, Lcom/google/android/material/transition/SlideDistanceProvider$2;-><init>(Landroid/view/View;F)V
@@ -462,7 +428,6 @@
 .method private getSlideDistanceOrDefault(Landroid/content/Context;)I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/SlideDistanceProvider;->slideDistance:I
 
     const/4 v1, -0x1
@@ -471,7 +436,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -479,7 +443,6 @@
 
     sget v0, Lcom/google/android/material/R$dimen;->mtrl_transition_shared_axis_slide_distance:I
 
-    .line 3
     invoke-virtual {p1, v0}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p1
@@ -490,7 +453,6 @@
 .method private static isRtl(Landroid/view/View;)Z
     .locals 1
 
-    .line 1
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->s(Landroid/view/View;)I
 
     move-result p0
@@ -523,10 +485,8 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/SlideDistanceProvider;->slideEdge:I
 
-    .line 2
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -535,7 +495,6 @@
 
     move-result v1
 
-    .line 3
     invoke-static {p1, p2, v0, v1}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationAppearAnimator(Landroid/view/View;Landroid/view/View;II)Landroid/animation/Animator;
 
     move-result-object p1
@@ -556,10 +515,8 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/SlideDistanceProvider;->slideEdge:I
 
-    .line 2
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -568,7 +525,6 @@
 
     move-result v1
 
-    .line 3
     invoke-static {p1, p2, v0, v1}, Lcom/google/android/material/transition/SlideDistanceProvider;->createTranslationDisappearAnimator(Landroid/view/View;Landroid/view/View;II)Landroid/animation/Animator;
 
     move-result-object p1
@@ -581,7 +537,6 @@
     .annotation build Landroidx/annotation/Px;
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/SlideDistanceProvider;->slideDistance:I
 
     return v0
@@ -590,7 +545,6 @@
 .method public getSlideEdge()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/SlideDistanceProvider;->slideEdge:I
 
     return v0
@@ -605,12 +559,10 @@
 
     if-ltz p1, :cond_0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/SlideDistanceProvider;->slideDistance:I
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -624,7 +576,6 @@
 .method public setSlideEdge(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/android/material/transition/SlideDistanceProvider;->slideEdge:I
 
     return-void

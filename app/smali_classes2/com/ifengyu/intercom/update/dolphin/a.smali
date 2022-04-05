@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/intercom/update/dolphin/a;
 .super Ljava/lang/Object;
-.source "AbsDataSplitManager.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/update/dolphin/e;
@@ -35,20 +34,16 @@
 .method protected constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->a:[B
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->b:I
 
-    .line 4
     iput v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->c:I
 
     return-void
@@ -57,17 +52,14 @@
 .method private f()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->a:[B
 
     if-eqz v0, :cond_0
 
-    .line 2
     array-length v1, v0
 
     div-int/lit16 v1, v1, 0x80
 
-    .line 3
     array-length v0, v0
 
     rem-int/lit16 v0, v0, 0x80
@@ -91,7 +83,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 3
 
-    .line 1
     invoke-static {p1}, Lcom/ifengyu/intercom/i/r;->b(Ljava/lang/String;)[B
 
     move-result-object p1
@@ -102,24 +93,18 @@
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/a;->a:[B
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->c:I
 
-    .line 4
     iput v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->b:I
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->d:I
 
-    .line 6
     iput v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->e:I
 
     goto :goto_0
 
-    .line 7
     :cond_0
     array-length v1, p1
 
@@ -127,23 +112,18 @@
 
     iput-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/a;->a:[B
 
-    .line 8
     array-length v2, p1
 
     invoke-static {p1, v0, v1, v0, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 9
     array-length p1, p1
 
     iput p1, p0, Lcom/ifengyu/intercom/update/dolphin/a;->c:I
 
-    .line 10
     iput v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->b:I
 
-    .line 11
     iput v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->d:I
 
-    .line 12
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/dolphin/a;->f()I
 
     move-result p1
@@ -157,7 +137,6 @@
 .method public a()[B
     .locals 1
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->a:[B
 
     return-object v0
@@ -166,12 +145,10 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->a:[B
 
     if-eqz v0, :cond_0
 
-    .line 2
     array-length v0, v0
 
     return v0
@@ -185,7 +162,6 @@
 .method public c()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->d:I
 
     return v0
@@ -194,7 +170,6 @@
 .method public d()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/update/dolphin/a;->e:I
 
     return v0

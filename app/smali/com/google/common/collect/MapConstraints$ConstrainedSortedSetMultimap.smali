@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/MapConstraints$ConstrainedSortedSetMultimap;
 .super Lcom/google/common/collect/MapConstraints$ConstrainedSetMultimap;
-.source "MapConstraints.java"
 
 # interfaces
 .implements Lcom/google/common/collect/SortedSetMultimap;
@@ -44,7 +43,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/MapConstraints$ConstrainedSetMultimap;-><init>(Lcom/google/common/collect/SetMultimap;Lcom/google/common/collect/MapConstraint;)V
 
     return-void
@@ -55,7 +53,6 @@
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MapConstraints$ConstrainedSortedSetMultimap;->get(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -66,7 +63,6 @@
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MapConstraints$ConstrainedSortedSetMultimap;->get(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -84,7 +80,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-super {p0, p1}, Lcom/google/common/collect/MapConstraints$ConstrainedSetMultimap;->get(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p1
@@ -97,7 +92,6 @@
 .method public bridge synthetic removeAll(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MapConstraints$ConstrainedSortedSetMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -108,7 +102,6 @@
 .method public bridge synthetic removeAll(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/MapConstraints$ConstrainedSortedSetMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -128,7 +121,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-super {p0, p1}, Lcom/google/common/collect/MapConstraints$ConstrainedSetMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object p1
@@ -141,7 +133,6 @@
 .method public bridge synthetic replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/MapConstraints$ConstrainedSortedSetMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -152,7 +143,6 @@
 .method public bridge synthetic replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Set;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/MapConstraints$ConstrainedSortedSetMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -172,7 +162,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/MapConstraints$ConstrainedSetMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object p1
@@ -192,7 +181,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/MapConstraints$ConstrainedMultimap;->delegate()Lcom/google/common/collect/Multimap;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class Lcom/google/common/hash/Hashing$Sha256Holder;
 .super Ljava/lang/Object;
-.source "Hashing.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/google/common/hash/MessageDigestHashFunction;
 
     const-string v1, "SHA-256"
@@ -39,7 +37,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

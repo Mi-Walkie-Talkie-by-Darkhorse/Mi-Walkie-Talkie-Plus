@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/QMUIActivity$b;
 .super Ljava/lang/Object;
-.source "QMUIActivity.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/arch/SwipeBackLayout$c;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/QMUIActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/QMUIActivity$b;->a:Lcom/qmuiteam/qmui/arch/QMUIActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a(Lcom/qmuiteam/qmui/arch/SwipeBackLayout;Lcom/qmuiteam/qmui/arch/SwipeBackLayout$f;FFFFF)I
     .locals 8
 
-    .line 1
     invoke-static {}, Lcom/qmuiteam/qmui/arch/f;->b()Lcom/qmuiteam/qmui/arch/f;
 
     move-result-object v0
@@ -53,7 +50,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/QMUIActivity$b;->a:Lcom/qmuiteam/qmui/arch/QMUIActivity;
 

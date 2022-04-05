@@ -1,6 +1,5 @@
 .class public abstract Lorg/osmdroid/events/MapAdapter;
 .super Ljava/lang/Object;
-.source "MapAdapter.java"
 
 # interfaces
 .implements Lorg/osmdroid/events/MapListener;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

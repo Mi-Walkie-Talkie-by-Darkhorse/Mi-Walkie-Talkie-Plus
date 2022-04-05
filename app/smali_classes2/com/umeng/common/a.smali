@@ -1,6 +1,5 @@
 .class public Lcom/umeng/common/a;
 .super Ljava/lang/Object;
-.source "EncryptHelper.java"
 
 
 # static fields
@@ -31,7 +30,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,30 +38,25 @@
 .method public static a()Lcom/umeng/common/a;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/umeng/common/a;->h:Lcom/umeng/common/a;
 
     if-nez v0, :cond_1
 
-    .line 2
     const-class v0, Lcom/umeng/common/a;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     sget-object v1, Lcom/umeng/common/a;->h:Lcom/umeng/common/a;
 
     if-nez v1, :cond_0
 
-    .line 4
     new-instance v1, Lcom/umeng/common/a;
 
     invoke-direct {v1}, Lcom/umeng/common/a;-><init>()V
 
     sput-object v1, Lcom/umeng/common/a;->h:Lcom/umeng/common/a;
 
-    .line 5
     :cond_0
     monitor-exit v0
 
@@ -78,7 +71,6 @@
 
     throw v1
 
-    .line 6
     :cond_1
     :goto_0
     sget-object v0, Lcom/umeng/common/a;->h:Lcom/umeng/common/a;
@@ -95,13 +87,11 @@
 
     const/4 v2, 0x1
 
-    .line 1
     :try_start_0
     invoke-virtual {p1, v2, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -110,7 +100,6 @@
 
     const/4 v3, 0x0
 
-    .line 3
     :goto_0
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -118,19 +107,16 @@
 
     if-ge v3, v4, :cond_2
 
-    .line 4
     invoke-virtual {p1, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
 
-    .line 5
     invoke-static {v4}, Ljava/lang/Character;->isDigit(C)Z
 
     move-result v5
 
     if-eqz v5, :cond_1
 
-    .line 6
     invoke-static {v4}, Ljava/lang/Character;->toString(C)Ljava/lang/String;
 
     move-result-object v5
@@ -141,12 +127,10 @@
 
     if-nez v5, :cond_0
 
-    .line 7
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 8
     :cond_0
     invoke-static {v4}, Ljava/lang/Character;->toString(C)Ljava/lang/String;
 
@@ -162,7 +146,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_1
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
@@ -171,13 +154,11 @@
 
     goto :goto_0
 
-    .line 10
     :cond_2
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 11
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -218,7 +199,6 @@
 .method public a(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 18
     :try_start_0
     sget-object v0, Lcom/umeng/common/a;->a:Ljava/lang/String;
 
@@ -230,7 +210,6 @@
 
     goto :goto_0
 
-    .line 19
     :cond_0
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
@@ -248,7 +227,6 @@
 
     const/4 v0, 0x0
 
-    .line 20
     invoke-static {p1, v0}, Landroid/util/Base64;->encodeToString([BI)Ljava/lang/String;
 
     move-result-object p1
@@ -269,7 +247,6 @@
 
     const-string v0, "ek__id"
 
-    .line 7
     :try_start_0
     sget-object v1, Lcom/umeng/common/a;->a:Ljava/lang/String;
 
@@ -279,12 +256,10 @@
 
     if-eqz v1, :cond_2
 
-    .line 8
     invoke-static {p1, v0}, Lcom/umeng/commonsdk/utils/UMUtils;->getMultiProcessSP(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 9
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -295,7 +270,6 @@
 
     if-nez v2, :cond_0
 
-    .line 10
     :try_start_1
     invoke-direct {p0, v1}, Lcom/umeng/common/a;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -303,7 +277,6 @@
 
     sput-object v1, Lcom/umeng/common/a;->e:Ljava/lang/String;
 
-    .line 11
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -322,7 +295,6 @@
 
     invoke-static {v3, v1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12
     :cond_0
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -332,7 +304,6 @@
 
     const/4 v2, 0x0
 
-    .line 13
     invoke-virtual {p1, v1, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p1
@@ -341,14 +312,12 @@
 
     const/4 v1, 0x0
 
-    .line 14
     invoke-interface {p1, v0, v1}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     sput-object p1, Lcom/umeng/common/a;->g:Ljava/lang/String;
 
-    .line 15
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -367,7 +336,6 @@
 
     invoke-static {v3, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 16
     :cond_1
     invoke-static {}, Lcom/umeng/commonsdk/utils/UMUtils;->genId()Ljava/lang/String;
 
@@ -379,7 +347,6 @@
 
     sput-object p1, Lcom/umeng/common/a;->a:Ljava/lang/String;
 
-    .line 17
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -412,7 +379,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
     sget-object v2, Lcom/umeng/common/a;->a:Ljava/lang/String;
 
@@ -424,7 +390,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
@@ -434,7 +399,6 @@
 
     move-result-object v2
 
-    .line 3
     new-instance v3, Ljava/lang/String;
 
     sget-object v4, Lcom/umeng/common/a;->a:Ljava/lang/String;
@@ -465,10 +429,8 @@
 
     const-string v3, "--->>> \u5b50\u8fdb\u7a0b\u4e8b\u4ef6\u6570\u636e\u89e3\u5bc6\u5931\u8d25!"
 
-    .line 4
     invoke-static {v2, v3}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     sget-object v3, Lcom/umeng/common/a;->e:Ljava/lang/String;
 
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -479,10 +441,8 @@
 
     const-string v3, "--->>> \u5b50\u8fdb\u7a0b\u4e8b\u4ef6\u6570\u636e\u89e3\u5bc6\u5931\u8d25\uff0c\u6362\u8001\u79d8\u94a5\u91cd\u8bd5"
 
-    .line 6
     invoke-static {v2, v3}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
     :try_start_1
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
@@ -492,7 +452,6 @@
 
     move-result-object v3
 
-    .line 8
     new-instance v4, Ljava/lang/String;
 
     sget-object v5, Lcom/umeng/common/a;->e:Ljava/lang/String;
@@ -512,7 +471,6 @@
     :try_start_2
     const-string v1, "--->>> \u5b50\u8fdb\u7a0b\u4e8b\u4ef6\u6570\u636e\u89e3\u5bc6\u5931\u8d25\uff0c\u6362\u8001\u79d8\u94a5\u91cd\u8bd5\u6210\u529f\u3002"
 
-    .line 9
     invoke-static {v2, v1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
@@ -527,10 +485,8 @@
     :catch_2
     const-string v3, "--->>> \u5b50\u8fdb\u7a0b\u4e8b\u4ef6\u6570\u636e\u89e3\u5bc6\u5931\u8d25\uff0c\u6362\u8001\u79d8\u94a5\u91cd\u8bd5\u5931\u8d25\u3002\u6362\u5b50\u8fdb\u7a0b\u5907\u4efdkey\u91cd\u8bd5\u3002"
 
-    .line 10
     invoke-static {v2, v3}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
     :try_start_3
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
@@ -540,7 +496,6 @@
 
     move-result-object p1
 
-    .line 12
     new-instance v0, Ljava/lang/String;
 
     sget-object v3, Lcom/umeng/common/a;->g:Ljava/lang/String;
@@ -560,7 +515,6 @@
     :try_start_4
     const-string p1, "--->>> \u5b50\u8fdb\u7a0b\u4e8b\u4ef6\u6570\u636e\u89e3\u5bc6\u5931\u8d25\uff0c\u5b50\u8fdb\u7a0b\u5907\u4efdkey\u91cd\u8bd5\u6210\u529f\u3002"
 
-    .line 13
     invoke-static {v2, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
@@ -575,7 +529,6 @@
     :catchall_1
     const-string p1, "--->>> \u5b50\u8fdb\u7a0b\u4e8b\u4ef6\u6570\u636e\u89e3\u5bc6\u5931\u8d25\uff0c\u5b50\u8fdb\u7a0b\u5907\u4efdkey\u91cd\u8bd5\u5931\u8d25\u3002"
 
-    .line 14
     invoke-static {v2, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1

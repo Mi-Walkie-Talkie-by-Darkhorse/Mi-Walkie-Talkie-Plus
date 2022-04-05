@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/c$c$a;
 .super Ljava/lang/Object;
-.source "DiscoveryFragmentAdapter.java"
 
 # interfaces
 .implements Lcom/jude/rollviewpager/b;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/adapter/c$c;Lcom/ifengyu/intercom/ui/adapter/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/c$c$a;->a:Lcom/ifengyu/intercom/ui/adapter/c$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/c$c$a;->a:Lcom/ifengyu/intercom/ui/adapter/c$c;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/adapter/c$c;->b:Lcom/ifengyu/intercom/ui/adapter/c;
@@ -49,7 +46,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/c$c$a;->a:Lcom/ifengyu/intercom/ui/adapter/c$c;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/adapter/c$c;->b:Lcom/ifengyu/intercom/ui/adapter/c;

@@ -1,6 +1,5 @@
 .class Lcom/jude/rollviewpager/RollPagerView$h;
 .super Ljava/util/TimerTask;
-.source "RollPagerView.java"
 
 
 # annotations
@@ -30,10 +29,8 @@
 .method public constructor <init>(Lcom/jude/rollviewpager/RollPagerView;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -48,7 +45,6 @@
 .method public run()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/jude/rollviewpager/RollPagerView$h;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -59,7 +55,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroid/widget/RelativeLayout;->isShown()Z
 
     move-result v1
@@ -86,7 +81,6 @@
 
     if-lez v5, :cond_1
 
-    .line 3
     invoke-static {v0}, Lcom/jude/rollviewpager/RollPagerView;->j(Lcom/jude/rollviewpager/RollPagerView;)Lcom/jude/rollviewpager/RollPagerView$g;
 
     move-result-object v0
@@ -97,7 +91,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {p0}, Ljava/util/TimerTask;->cancel()Z
 

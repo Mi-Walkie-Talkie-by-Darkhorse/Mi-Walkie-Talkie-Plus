@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/badge/BadgeDrawable$BadgeGravity;
 .super Ljava/lang/Object;
-.source "BadgeDrawable.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class final Lio/reactivex/disposables/SubscriptionDisposable;
 .super Lio/reactivex/disposables/ReferenceDisposable;
-.source "SubscriptionDisposable.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method constructor <init>(Lc/a/d;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/disposables/ReferenceDisposable;-><init>(Ljava/lang/Object;)V
 
     return-void
@@ -36,7 +34,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-interface {p1}, Lc/a/d;->cancel()V
 
     return-void
@@ -49,7 +46,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lc/a/d;
 
     invoke-virtual {p0, p1}, Lio/reactivex/disposables/SubscriptionDisposable;->onDisposed(Lc/a/d;)V

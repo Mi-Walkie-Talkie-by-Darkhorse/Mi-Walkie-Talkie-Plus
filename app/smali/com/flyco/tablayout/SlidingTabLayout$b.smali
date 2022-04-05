@@ -1,6 +1,5 @@
 .class Lcom/flyco/tablayout/SlidingTabLayout$b;
 .super Landroidx/fragment/app/FragmentPagerAdapter;
-.source "SlidingTabLayout.java"
 
 
 # annotations
@@ -45,23 +44,18 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout$b;->c:Lcom/flyco/tablayout/SlidingTabLayout;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/fragment/app/FragmentPagerAdapter;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
-    .line 3
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout$b;->a:Ljava/util/ArrayList;
 
-    .line 4
     iput-object p3, p0, Lcom/flyco/tablayout/SlidingTabLayout$b;->a:Ljava/util/ArrayList;
 
-    .line 5
     iput-object p4, p0, Lcom/flyco/tablayout/SlidingTabLayout$b;->b:[Ljava/lang/String;
 
     return-void
@@ -78,7 +72,6 @@
 .method public getCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$b;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -91,7 +84,6 @@
 .method public getItem(I)Landroidx/fragment/app/Fragment;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$b;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -114,7 +106,6 @@
 .method public getPageTitle(I)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout$b;->b:[Ljava/lang/String;
 
     aget-object p1, v0, p1

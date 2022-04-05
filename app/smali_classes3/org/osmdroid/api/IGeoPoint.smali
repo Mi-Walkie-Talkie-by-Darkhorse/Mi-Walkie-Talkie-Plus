@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/api/IGeoPoint;
 .super Ljava/lang/Object;
-.source "IGeoPoint.java"
 
 
 # virtual methods

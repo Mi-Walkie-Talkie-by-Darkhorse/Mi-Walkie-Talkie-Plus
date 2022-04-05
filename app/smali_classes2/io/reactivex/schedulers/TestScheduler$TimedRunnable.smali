@@ -1,6 +1,5 @@
 .class final Lio/reactivex/schedulers/TestScheduler$TimedRunnable;
 .super Ljava/lang/Object;
-.source "TestScheduler.java"
 
 # interfaces
 .implements Ljava/lang/Comparable;
@@ -40,19 +39,14 @@
 .method constructor <init>(Lio/reactivex/schedulers/TestScheduler$TestWorker;JLjava/lang/Runnable;J)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-wide p2, p0, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;->time:J
 
-    .line 3
     iput-object p4, p0, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;->run:Ljava/lang/Runnable;
 
-    .line 4
     iput-object p1, p0, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;->scheduler:Lio/reactivex/schedulers/TestScheduler$TestWorker;
 
-    .line 5
     iput-wide p5, p0, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;->count:J
 
     return-void
@@ -63,7 +57,6 @@
 .method public compareTo(Lio/reactivex/schedulers/TestScheduler$TimedRunnable;)I
     .locals 5
 
-    .line 2
     iget-wide v0, p0, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;->time:J
 
     iget-wide v2, p1, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;->time:J
@@ -72,7 +65,6 @@
 
     if-nez v4, :cond_0
 
-    .line 3
     iget-wide v0, p0, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;->count:J
 
     iget-wide v2, p1, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;->count:J
@@ -83,7 +75,6 @@
 
     return p1
 
-    .line 4
     :cond_0
     invoke-static {v0, v1, v2, v3}, Lio/reactivex/internal/functions/ObjectHelper;->compare(JJ)I
 
@@ -95,7 +86,6 @@
 .method public bridge synthetic compareTo(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;
 
     invoke-virtual {p0, p1}, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;->compareTo(Lio/reactivex/schedulers/TestScheduler$TimedRunnable;)I
@@ -112,7 +102,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-wide v1, p0, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;->time:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;

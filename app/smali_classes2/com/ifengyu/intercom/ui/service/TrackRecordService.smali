@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 .super Landroid/app/Service;
-.source "TrackRecordService.java"
 
 # interfaces
 .implements Lcom/amap/api/location/AMapLocationListener;
@@ -72,25 +71,20 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->c:D
 
-    .line 3
     iput-wide v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->d:D
 
     const/4 v0, -0x1
 
-    .line 4
     iput v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->i:I
 
     const/16 v0, 0x2711
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->q:I
 
     return-void
@@ -99,7 +93,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/service/TrackRecordService;F)F
     .locals 0
 
-    .line 3
     iput p1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->u:F
 
     return p1
@@ -108,7 +101,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/service/TrackRecordService;I)I
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->g:I
 
     return p1
@@ -120,7 +112,6 @@
         value = 0x1a
     .end annotation
 
-    .line 4
     new-instance v0, Landroid/app/NotificationChannel;
 
     const/4 v1, 0x0
@@ -129,10 +120,8 @@
 
     const p1, -0xffff01
 
-    .line 5
     invoke-virtual {v0, p1}, Landroid/app/NotificationChannel;->setLightColor(I)V
 
-    .line 6
     invoke-virtual {v0, v1}, Landroid/app/NotificationChannel;->setLockscreenVisibility(I)V
 
     return-object v0
@@ -141,7 +130,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->j:Z
 
     return p0
@@ -150,7 +138,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->g:I
 
     return p0
@@ -159,7 +146,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Lcom/ifengyu/intercom/greendao/bean/b;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     return-object p0
@@ -168,7 +154,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->t:Ljava/lang/String;
 
     return-object p0
@@ -177,7 +162,6 @@
 .method static synthetic e(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->e:Ljava/lang/String;
 
     return-object p0
@@ -186,28 +170,24 @@
 .method private e()V
     .locals 6
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/greendao/bean/b;->g()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {v1}, Lcom/ifengyu/intercom/greendao/bean/b;->h()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {v2}, Lcom/ifengyu/intercom/greendao/bean/b;->e()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 5
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {v3}, Lcom/ifengyu/intercom/greendao/bean/b;->i()Ljava/lang/String;
@@ -218,12 +198,10 @@
 
     if-nez v0, :cond_0
 
-    .line 6
     invoke-virtual {p0, v4}, Landroid/app/Service;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 7
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {v5, v0}, Lcom/ifengyu/intercom/greendao/bean/b;->b(Ljava/lang/String;)V
@@ -231,12 +209,10 @@
     :cond_0
     if-nez v1, :cond_1
 
-    .line 8
     invoke-virtual {p0, v4}, Landroid/app/Service;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 9
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {v5, v1}, Lcom/ifengyu/intercom/greendao/bean/b;->c(Ljava/lang/String;)V
@@ -250,7 +226,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 10
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -269,7 +244,6 @@
 
     goto/16 :goto_0
 
-    .line 11
     :cond_2
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -296,7 +270,6 @@
     :cond_3
     if-eqz v3, :cond_4
 
-    .line 12
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -319,7 +292,6 @@
 
     goto/16 :goto_0
 
-    .line 13
     :cond_4
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -352,7 +324,6 @@
 
     if-eqz v3, :cond_6
 
-    .line 14
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -369,7 +340,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_6
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -394,7 +364,6 @@
     :cond_7
     if-eqz v3, :cond_8
 
-    .line 16
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -415,7 +384,6 @@
 
     goto :goto_0
 
-    .line 17
     :cond_8
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -439,7 +407,6 @@
 
     move-result-object v0
 
-    .line 18
     :goto_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
@@ -451,7 +418,6 @@
 .method static synthetic f(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->u:F
 
     return p0
@@ -460,7 +426,6 @@
 .method static synthetic g(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->b:Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
 
     return-object p0
@@ -469,7 +434,6 @@
 .method static synthetic h(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->i:I
 
     return p0
@@ -478,7 +442,6 @@
 .method static synthetic i(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->f:I
 
     return p0
@@ -487,7 +450,6 @@
 .method static synthetic j(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Landroid/widget/RemoteViews;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->r:Landroid/widget/RemoteViews;
 
     return-object p0
@@ -496,7 +458,6 @@
 .method static synthetic k(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->q:I
 
     return p0
@@ -505,7 +466,6 @@
 .method static synthetic l(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Landroid/app/Notification;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->s:Landroid/app/Notification;
 
     return-object p0
@@ -514,7 +474,6 @@
 .method static synthetic m(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Landroid/app/NotificationManager;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->p:Landroid/app/NotificationManager;
 
     return-object p0
@@ -527,10 +486,8 @@
 
     const/4 v0, 0x0
 
-    .line 7
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->j:Z
 
-    .line 8
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->l:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
@@ -539,7 +496,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->m:I
 
-    .line 9
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->l:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
@@ -560,7 +516,6 @@
 
     if-lez v1, :cond_0
 
-    .line 10
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->l:Ljava/util/ArrayList;
 
     new-instance v2, Ljava/util/ArrayList;
@@ -569,13 +524,11 @@
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 11
     :cond_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a:Lcom/amap/api/location/AMapLocationClient;
 
     invoke-virtual {v1}, Lcom/amap/api/location/AMapLocationClient;->startLocation()V
 
-    .line 12
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -584,7 +537,6 @@
 
     invoke-virtual {v1, v0}, Lcom/ifengyu/intercom/greendao/bean/b;->a(Ljava/lang/Boolean;)V
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -611,10 +563,8 @@
 
     const-string v1, "setListener"
 
-    .line 36
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 37
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->b:Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
 
     return-void
@@ -623,38 +573,31 @@
 .method public a(ZZ)V
     .locals 3
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->p:Landroid/app/NotificationManager;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->q:I
 
     invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->cancel(I)V
 
-    .line 15
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a:Lcom/amap/api/location/AMapLocationClient;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 16
     invoke-virtual {v0}, Lcom/amap/api/location/AMapLocationClient;->stopLocation()V
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a:Lcom/amap/api/location/AMapLocationClient;
 
     invoke-virtual {v0}, Lcom/amap/api/location/AMapLocationClient;->onDestroy()V
 
-    .line 18
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a:Lcom/amap/api/location/AMapLocationClient;
 
-    .line 19
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->h:Ljava/util/Timer;
 
     invoke-virtual {v0}, Ljava/util/Timer;->cancel()V
 
-    .line 20
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->h:Ljava/util/Timer;
 
     const/4 v0, 0x0
@@ -665,7 +608,6 @@
 
     goto/16 :goto_0
 
-    .line 21
     :cond_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -677,7 +619,6 @@
 
     long-to-int p2, p1
 
-    .line 22
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -686,7 +627,6 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/greendao/bean/b;->e(Ljava/lang/Integer;)V
 
-    .line 23
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -695,12 +635,10 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/greendao/bean/b;->a(Ljava/lang/Boolean;)V
 
-    .line 24
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->e()V
 
     const/4 p1, 0x0
 
-    .line 25
     iget p2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->g:I
 
     if-lez p2, :cond_2
@@ -709,7 +647,6 @@
 
     if-lez p2, :cond_2
 
-    .line 26
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/greendao/bean/b;->q()Ljava/lang/Integer;
@@ -746,7 +683,6 @@
 
     div-float/2addr p1, p2
 
-    .line 27
     new-instance p2, Ljava/text/DecimalFormat;
 
     const-string v0, "#.0"
@@ -767,7 +703,6 @@
 
     move-result p1
 
-    .line 28
     :cond_2
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
@@ -777,7 +712,6 @@
 
     invoke-virtual {p2, p1}, Lcom/ifengyu/intercom/greendao/bean/b;->a(Ljava/lang/Float;)V
 
-    .line 29
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1
@@ -794,12 +728,10 @@
 
     invoke-virtual {p1, p2}, Lorg/greenrobot/greendao/AbstractDao;->insertOrReplace(Ljava/lang/Object;)J
 
-    .line 30
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->b:Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
 
     if-eqz p1, :cond_3
 
-    .line 31
     iget-wide v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->o:J
 
     const/4 p2, 0x1
@@ -809,19 +741,16 @@
     :cond_3
     return-void
 
-    .line 32
     :cond_4
     :goto_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->b:Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
 
     if-eqz p1, :cond_5
 
-    .line 33
     iget-wide v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->o:J
 
     invoke-interface {p1, v1, v2, v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;->a(JZ)V
 
-    .line 34
     :cond_5
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
@@ -843,7 +772,6 @@
 
     invoke-virtual {p1, p2}, Lorg/greenrobot/greendao/AbstractDao;->deleteByKey(Ljava/lang/Object;)V
 
-    .line 35
     invoke-static {}, Lcom/ifengyu/intercom/network/d/e;->a()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p1
@@ -860,7 +788,6 @@
 .method public b()V
     .locals 14
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->l:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -887,12 +814,10 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->b:Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
 
     if-eqz v1, :cond_0
 
-    .line 4
     iget-wide v2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->o:J
 
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->e:Ljava/lang/String;
@@ -906,7 +831,6 @@
     :cond_0
     return-void
 
-    .line 5
     :cond_1
     iget v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->f:I
 
@@ -914,12 +838,10 @@
 
     if-ge v0, v1, :cond_3
 
-    .line 6
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->b:Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
 
     if-eqz v2, :cond_2
 
-    .line 7
     iget-wide v3, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->o:J
 
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->e:Ljava/lang/String;
@@ -933,13 +855,11 @@
     :cond_2
     return-void
 
-    .line 8
     :cond_3
     iget-object v8, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->b:Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
 
     if-eqz v8, :cond_4
 
-    .line 9
     iget-wide v9, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->o:J
 
     iget-object v11, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->e:Ljava/lang/String;
@@ -959,23 +879,18 @@
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->j:Z
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a:Lcom/amap/api/location/AMapLocationClient;
 
     invoke-virtual {v1}, Lcom/amap/api/location/AMapLocationClient;->stopLocation()V
 
     const-wide/16 v1, 0x0
 
-    .line 4
     iput-wide v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->c:D
 
-    .line 5
     iput-wide v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->d:D
 
-    .line 6
     iget-wide v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->k:J
 
     const-wide/16 v3, 0x0
@@ -984,7 +899,6 @@
 
     if-lez v5, :cond_0
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v1
@@ -1009,10 +923,8 @@
 
     check-cast v1, Lcom/ifengyu/intercom/greendao/bean/c;
 
-    .line 8
     invoke-virtual {v1, v0}, Lcom/ifengyu/intercom/greendao/bean/c;->a(Z)V
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v2
@@ -1027,7 +939,6 @@
 
     invoke-virtual {v2, v1}, Lorg/greenrobot/greendao/AbstractDao;->insertOrReplace(Ljava/lang/Object;)J
 
-    .line 10
     :cond_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
@@ -1037,7 +948,6 @@
 
     invoke-virtual {v1, v0}, Lcom/ifengyu/intercom/greendao/bean/b;->a(Ljava/lang/Boolean;)V
 
-    .line 11
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -1064,12 +974,10 @@
 
     const-string v1, "removeListener"
 
-    .line 2
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->b:Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
 
     return-void
@@ -1084,10 +992,8 @@
 
     const-string v0, "onBind"
 
-    .line 1
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     new-instance p1, Lcom/ifengyu/intercom/ui/service/TrackRecordService$d;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService$d;-><init>(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)V
@@ -1098,24 +1004,20 @@
 .method public onCreate()V
     .locals 5
 
-    .line 1
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
     const-string v0, "TrackRecordService"
 
     const-string v1, "onCreate"
 
-    .line 2
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->l:Ljava/util/ArrayList;
 
-    .line 4
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
@@ -1124,70 +1026,54 @@
 
     const/4 v0, 0x1
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->m:I
 
-    .line 6
     new-instance v1, Lcom/amap/api/location/AMapLocationClient;
 
     invoke-direct {v1, p0}, Lcom/amap/api/location/AMapLocationClient;-><init>(Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a:Lcom/amap/api/location/AMapLocationClient;
 
-    .line 7
     new-instance v1, Lcom/amap/api/location/AMapLocationClientOption;
 
     invoke-direct {v1}, Lcom/amap/api/location/AMapLocationClientOption;-><init>()V
 
-    .line 8
     sget-object v2, Lcom/amap/api/location/AMapLocationClientOption$AMapLocationMode;->Hight_Accuracy:Lcom/amap/api/location/AMapLocationClientOption$AMapLocationMode;
 
     invoke-virtual {v1, v2}, Lcom/amap/api/location/AMapLocationClientOption;->setLocationMode(Lcom/amap/api/location/AMapLocationClientOption$AMapLocationMode;)Lcom/amap/api/location/AMapLocationClientOption;
 
     const-wide/16 v2, 0x7d0
 
-    .line 9
     invoke-virtual {v1, v2, v3}, Lcom/amap/api/location/AMapLocationClientOption;->setInterval(J)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 10
     invoke-virtual {v1, v0}, Lcom/amap/api/location/AMapLocationClientOption;->setNeedAddress(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
     const/4 v2, 0x0
 
-    .line 11
     invoke-virtual {v1, v2}, Lcom/amap/api/location/AMapLocationClientOption;->setGpsFirst(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 12
     invoke-virtual {v1, v2}, Lcom/amap/api/location/AMapLocationClientOption;->setOnceLocation(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 13
     invoke-virtual {v1, v2}, Lcom/amap/api/location/AMapLocationClientOption;->setOnceLocationLatest(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
     const-wide/16 v3, 0x2710
 
-    .line 14
     invoke-virtual {v1, v3, v4}, Lcom/amap/api/location/AMapLocationClientOption;->setHttpTimeOut(J)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 15
     sget-object v3, Lcom/amap/api/location/AMapLocationClientOption$AMapLocationProtocol;->HTTP:Lcom/amap/api/location/AMapLocationClientOption$AMapLocationProtocol;
 
     invoke-static {v3}, Lcom/amap/api/location/AMapLocationClientOption;->setLocationProtocol(Lcom/amap/api/location/AMapLocationClientOption$AMapLocationProtocol;)V
 
-    .line 16
     invoke-virtual {v1, v2}, Lcom/amap/api/location/AMapLocationClientOption;->setSensorEnable(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 17
     invoke-virtual {v1, v0}, Lcom/amap/api/location/AMapLocationClientOption;->setWifiScan(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 18
     invoke-virtual {v1, v0}, Lcom/amap/api/location/AMapLocationClientOption;->setLocationCacheEnable(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 19
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a:Lcom/amap/api/location/AMapLocationClient;
 
     invoke-virtual {v0, v1}, Lcom/amap/api/location/AMapLocationClient;->setLocationOption(Lcom/amap/api/location/AMapLocationClientOption;)V
 
-    .line 20
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a:Lcom/amap/api/location/AMapLocationClient;
 
     invoke-virtual {v0, p0}, Lcom/amap/api/location/AMapLocationClient;->setLocationListener(Lcom/amap/api/location/AMapLocationListener;)V
@@ -1202,15 +1088,12 @@
 
     const-string v1, "onDestroy"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 v0, 0x1
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/app/Service;->stopForeground(Z)V
 
-    .line 3
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
 
     return-void
@@ -1225,29 +1108,24 @@
 
     const-string v2, "onLocationChanged"
 
-    .line 1
     invoke-static {v1, v2}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 v1, -0x1
 
-    .line 2
     iput v1, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->i:I
 
     const/4 v1, 0x0
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->t:Ljava/lang/String;
 
     if-eqz p1, :cond_8
 
-    .line 4
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getErrorCode()I
 
     move-result v1
 
     if-nez v1, :cond_8
 
-    .line 5
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getStreet()Ljava/lang/String;
 
     move-result-object v1
@@ -1264,7 +1142,6 @@
 
     if-lez v1, :cond_0
 
-    .line 6
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getStreet()Ljava/lang/String;
 
     move-result-object v1
@@ -1274,15 +1151,12 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 7
     iput v1, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->u:F
 
-    .line 8
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
     move-result v1
 
-    .line 9
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getAccuracy()F
 
     move-result v2
@@ -1299,17 +1173,14 @@
 
     float-to-int v1, v2
 
-    .line 10
     iput v1, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->i:I
 
-    .line 11
     invoke-virtual/range {p1 .. p1}, Landroid/location/Location;->hasSpeed()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 12
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getSpeed()F
 
     move-result v1
@@ -1320,20 +1191,17 @@
 
     iput v1, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->u:F
 
-    .line 13
     :cond_1
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getLatitude()D
 
     move-result-wide v1
 
-    .line 14
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getLongitude()D
 
     move-result-wide v13
 
     new-array v15, v3, [F
 
-    .line 15
     iget-wide v4, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->c:D
 
     iget-wide v6, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->d:D
@@ -1348,7 +1216,6 @@
 
     const/4 v12, 0x0
 
-    .line 16
     aget v4, v15, v12
 
     const/high16 v5, 0x40a00000    # 5.0f
@@ -1357,7 +1224,6 @@
 
     if-lez v4, :cond_8
 
-    .line 17
     iget-object v4, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->l:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Ljava/util/ArrayList;->size()I
@@ -1378,7 +1244,6 @@
 
     invoke-virtual {v4, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 18
     iget-object v4, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {v4}, Lcom/ifengyu/intercom/greendao/bean/b;->g()Ljava/lang/String;
@@ -1387,7 +1252,6 @@
 
     if-nez v4, :cond_2
 
-    .line 19
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getCity()Ljava/lang/String;
 
     move-result-object v4
@@ -1404,7 +1268,6 @@
 
     if-lez v4, :cond_2
 
-    .line 20
     iget-object v4, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getCity()Ljava/lang/String;
@@ -1413,7 +1276,6 @@
 
     invoke-virtual {v4, v5}, Lcom/ifengyu/intercom/greendao/bean/b;->b(Ljava/lang/String;)V
 
-    .line 21
     :cond_2
     iget-object v4, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
@@ -1423,7 +1285,6 @@
 
     if-nez v4, :cond_3
 
-    .line 22
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getDistrict()Ljava/lang/String;
 
     move-result-object v4
@@ -1440,7 +1301,6 @@
 
     if-lez v4, :cond_3
 
-    .line 23
     iget-object v4, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/location/AMapLocation;->getDistrict()Ljava/lang/String;
@@ -1449,7 +1309,6 @@
 
     invoke-virtual {v4, v5}, Lcom/ifengyu/intercom/greendao/bean/b;->c(Ljava/lang/String;)V
 
-    .line 24
     :cond_3
     iget-object v4, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->l:Ljava/util/ArrayList;
 
@@ -1473,14 +1332,12 @@
 
     if-ne v4, v3, :cond_4
 
-    .line 25
     iget-object v4, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     iget-object v5, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->t:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Lcom/ifengyu/intercom/greendao/bean/b;->a(Ljava/lang/String;)V
 
-    .line 26
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v4
@@ -1499,7 +1356,6 @@
 
     goto :goto_0
 
-    .line 27
     :cond_4
     iget-wide v4, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->c:D
 
@@ -1525,13 +1381,10 @@
 
     move-object v12, v15
 
-    .line 28
     invoke-static/range {v4 .. v12}, Landroid/location/Location;->distanceBetween(DDDD[F)V
 
-    .line 29
     aget v4, v15, v16
 
-    .line 30
     iget v5, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->f:I
 
     int-to-float v5, v5
@@ -1548,7 +1401,6 @@
     :goto_0
     const/16 v16, 0x0
 
-    .line 31
     :goto_1
     new-instance v4, Lcom/ifengyu/intercom/greendao/bean/c;
 
@@ -1612,7 +1464,6 @@
 
     invoke-direct/range {v17 .. v25}, Lcom/ifengyu/intercom/greendao/bean/c;-><init>(Ljava/lang/Long;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Z)V
 
-    .line 32
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v5
@@ -1631,12 +1482,10 @@
 
     iput-wide v4, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->k:J
 
-    .line 33
     iget-object v4, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->b:Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
 
     if-eqz v4, :cond_7
 
-    .line 34
     iget-object v5, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->l:Ljava/util/ArrayList;
 
     iget v6, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->m:I
@@ -1655,7 +1504,6 @@
     :goto_2
     invoke-interface {v4, v5, v3}, Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;->a(Ljava/util/ArrayList;Z)V
 
-    .line 35
     iget-object v3, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->l:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
@@ -1664,11 +1512,9 @@
 
     iput v3, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->m:I
 
-    .line 36
     :cond_7
     iput-wide v1, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->c:D
 
-    .line 37
     iput-wide v13, v0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->d:D
 
     :cond_8
@@ -1682,10 +1528,8 @@
 
     const-string v1, "onStartCommand"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     new-instance v0, Landroid/widget/RemoteViews;
 
     invoke-virtual {p0}, Landroid/app/Service;->getPackageName()Ljava/lang/String;
@@ -1702,10 +1546,8 @@
 
     const-string v2, "00:00:00"
 
-    .line 3
     invoke-virtual {v0, v1, v2}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->r:Landroid/widget/RemoteViews;
 
     const v1, 0x7f09044b
@@ -1714,7 +1556,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->r:Landroid/widget/RemoteViews;
 
     const v1, 0x7f09044c
@@ -1725,7 +1566,6 @@
 
     const-string v0, "notification"
 
-    .line 6
     invoke-virtual {p0, v0}, Landroid/app/Service;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1734,7 +1574,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->p:Landroid/app/NotificationManager;
 
-    .line 7
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const-string v1, "track_service"
@@ -1745,17 +1584,14 @@
 
     const-string v0, "track_foreground_service"
 
-    .line 8
     invoke-direct {p0, v1, v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a(Ljava/lang/String;Ljava/lang/String;)Landroid/app/NotificationChannel;
 
     move-result-object v0
 
-    .line 9
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->p:Landroid/app/NotificationManager;
 
     invoke-virtual {v2, v0}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
-    .line 10
     :cond_0
     new-instance v0, Landroidx/core/app/NotificationCompat$b;
 
@@ -1767,25 +1603,20 @@
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->r:Landroid/widget/RemoteViews;
 
-    .line 11
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->a(Landroid/widget/RemoteViews;)Landroidx/core/app/NotificationCompat$b;
 
     const/4 v1, 0x0
 
-    .line 12
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->a(Z)Landroidx/core/app/NotificationCompat$b;
 
-    .line 13
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->c(Z)Landroidx/core/app/NotificationCompat$b;
 
     const/4 v2, 0x1
 
-    .line 14
     invoke-virtual {v0, v2}, Landroidx/core/app/NotificationCompat$b;->b(Z)Landroidx/core/app/NotificationCompat$b;
 
     const v3, 0x7f110048
 
-    .line 15
     invoke-virtual {p0, v3}, Landroid/app/Service;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -1794,7 +1625,6 @@
 
     const v3, 0x7f110351
 
-    .line 16
     invoke-virtual {p0, v3}, Landroid/app/Service;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -1803,10 +1633,8 @@
 
     const v3, 0x7f0e0005
 
-    .line 17
     invoke-virtual {v0, v3}, Landroidx/core/app/NotificationCompat$b;->a(I)Landroidx/core/app/NotificationCompat$b;
 
-    .line 18
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v4
@@ -1821,14 +1649,12 @@
 
     invoke-virtual {v0, v3}, Landroidx/core/app/NotificationCompat$b;->a(Landroid/graphics/Bitmap;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 19
     invoke-virtual {v0}, Landroidx/core/app/NotificationCompat$b;->a()Landroid/app/Notification;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->s:Landroid/app/Notification;
 
-    .line 20
     new-instance v0, Landroid/content/Intent;
 
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
@@ -1839,7 +1665,6 @@
 
     invoke-direct {v0, v3, v4}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 21
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->s:Landroid/app/Notification;
 
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
@@ -1852,14 +1677,12 @@
 
     iput-object v0, v3, Landroid/app/Notification;->contentIntent:Landroid/app/PendingIntent;
 
-    .line 22
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->s:Landroid/app/Notification;
 
     const/16 v3, 0x20
 
     iput v3, v0, Landroid/app/Notification;->flags:I
 
-    .line 23
     iget v3, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->q:I
 
     invoke-virtual {p0, v3, v0}, Landroid/app/Service;->startForeground(ILandroid/app/Notification;)V
@@ -1868,19 +1691,16 @@
 
     const-string v0, "is_load_last_not_saved_track"
 
-    .line 24
     invoke-virtual {p1, v0, v1}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 25
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->N()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 26
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
@@ -1891,7 +1711,6 @@
 
     long-to-int v3, v2
 
-    .line 27
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1910,24 +1729,20 @@
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->e:Ljava/lang/String;
 
-    .line 28
     new-instance v2, Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-direct {v2}, Lcom/ifengyu/intercom/greendao/bean/b;-><init>()V
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
-    .line 29
     invoke-virtual {v2, v0}, Lcom/ifengyu/intercom/greendao/bean/b;->j(Ljava/lang/String;)V
 
-    .line 30
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->e:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Lcom/ifengyu/intercom/greendao/bean/b;->g(Ljava/lang/String;)V
 
-    .line 31
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1936,7 +1751,6 @@
 
     invoke-virtual {v0, v2}, Lcom/ifengyu/intercom/greendao/bean/b;->d(Ljava/lang/Integer;)V
 
-    .line 32
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1945,7 +1759,6 @@
 
     invoke-virtual {v0, v2}, Lcom/ifengyu/intercom/greendao/bean/b;->a(Ljava/lang/Boolean;)V
 
-    .line 33
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1954,7 +1767,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/greendao/bean/b;->b(Ljava/lang/Boolean;)V
 
-    .line 34
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -1975,7 +1787,6 @@
 
     iput-wide v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->o:J
 
-    .line 35
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -1984,12 +1795,10 @@
 
     invoke-virtual {v2, v0}, Lcom/ifengyu/intercom/greendao/bean/b;->a(Ljava/lang/Long;)V
 
-    .line 36
     iget-wide v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->o:J
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/d0;->a(J)V
 
-    .line 37
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a:Lcom/amap/api/location/AMapLocationClient;
 
     invoke-virtual {v0}, Lcom/amap/api/location/AMapLocationClient;->startLocation()V
@@ -2001,14 +1810,12 @@
 
     const-string v0, "last_not_saved_track_primary_key_id"
 
-    .line 38
     invoke-virtual {p1, v0, v3, v4}, Landroid/content/Intent;->getLongExtra(Ljava/lang/String;J)J
 
     move-result-wide v3
 
     iput-wide v3, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->o:J
 
-    .line 39
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -2035,14 +1842,12 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
-    .line 40
     invoke-virtual {v0}, Lcom/ifengyu/intercom/greendao/bean/b;->v()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->e:Ljava/lang/String;
 
-    .line 41
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/greendao/bean/b;->i()Ljava/lang/String;
@@ -2051,7 +1856,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->t:Ljava/lang/String;
 
-    .line 42
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/greendao/bean/b;->r()Ljava/lang/Integer;
@@ -2064,7 +1868,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->g:I
 
-    .line 43
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->n:Lcom/ifengyu/intercom/greendao/bean/b;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/greendao/bean/b;->q()Ljava/lang/Integer;
@@ -2077,10 +1880,8 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->f:I
 
-    .line 44
     iput-boolean v2, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->j:Z
 
-    .line 45
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -2101,7 +1902,6 @@
 
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->e:Ljava/lang/String;
 
-    .line 46
     invoke-virtual {v3, v4}, Lorg/greenrobot/greendao/Property;->eq(Ljava/lang/Object;)Lorg/greenrobot/greendao/query/WhereCondition;
 
     move-result-object v3
@@ -2126,7 +1926,6 @@
 
     move-result-object v0
 
-    .line 47
     :goto_0
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -2134,14 +1933,12 @@
 
     if-ge v1, v3, :cond_3
 
-    .line 48
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/ifengyu/intercom/greendao/bean/c;
 
-    .line 49
     new-instance v4, Lcom/ifengyu/intercom/bean/LocationBean;
 
     invoke-virtual {v3}, Lcom/ifengyu/intercom/greendao/bean/c;->f()Ljava/lang/Integer;
@@ -2172,7 +1969,6 @@
 
     invoke-direct {v4, v5, v6, v9, v10}, Lcom/ifengyu/intercom/bean/LocationBean;-><init>(DD)V
 
-    .line 50
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->l:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
@@ -2189,7 +1985,6 @@
 
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 51
     invoke-virtual {v3}, Lcom/ifengyu/intercom/greendao/bean/c;->e()Z
 
     move-result v3
@@ -2204,7 +1999,6 @@
 
     if-eq v1, v3, :cond_2
 
-    .line 52
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->l:Ljava/util/ArrayList;
 
     new-instance v4, Ljava/util/ArrayList;
@@ -2218,21 +2012,18 @@
 
     goto :goto_0
 
-    .line 53
     :cond_3
     :goto_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->h:Ljava/util/Timer;
 
     if-nez v0, :cond_4
 
-    .line 54
     new-instance v1, Ljava/util/Timer;
 
     invoke-direct {v1}, Ljava/util/Timer;-><init>()V
 
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->h:Ljava/util/Timer;
 
-    .line 55
     new-instance v2, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;
 
     invoke-direct {v2, p0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;-><init>(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)V
@@ -2243,7 +2034,6 @@
 
     invoke-virtual/range {v1 .. v6}, Ljava/util/Timer;->schedule(Ljava/util/TimerTask;JJ)V
 
-    .line 56
     :cond_4
     invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
 
@@ -2259,10 +2049,8 @@
 
     const-string v1, "onUnbind"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0, p1}, Landroid/app/Service;->onUnbind(Landroid/content/Intent;)Z
 
     move-result p1

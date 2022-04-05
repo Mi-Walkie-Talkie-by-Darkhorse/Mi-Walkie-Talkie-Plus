@@ -1,6 +1,5 @@
 .class public final Landroid/support/v4/graphics/drawable/IconCompatParcelizer;
 .super Landroidx/core/graphics/drawable/IconCompatParcelizer;
-.source "IconCompatParcelizer.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/core/graphics/drawable/IconCompatParcelizer;-><init>()V
 
     return-void
@@ -24,7 +22,6 @@
 .method public static read(Landroidx/versionedparcelable/a;)Landroidx/core/graphics/drawable/IconCompat;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Landroidx/core/graphics/drawable/IconCompatParcelizer;->read(Landroidx/versionedparcelable/a;)Landroidx/core/graphics/drawable/IconCompat;
 
     move-result-object p0
@@ -35,7 +32,6 @@
 .method public static write(Landroidx/core/graphics/drawable/IconCompat;Landroidx/versionedparcelable/a;)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Landroidx/core/graphics/drawable/IconCompatParcelizer;->write(Landroidx/core/graphics/drawable/IconCompat;Landroidx/versionedparcelable/a;)V
 
     return-void

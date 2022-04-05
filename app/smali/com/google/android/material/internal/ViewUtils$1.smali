@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/internal/ViewUtils$1;
 .super Ljava/lang/Object;
-.source "ViewUtils.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/internal/ViewUtils$1;->val$view:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,10 +36,8 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/internal/ViewUtils$1;->val$view:Landroid/view/View;
 
-    .line 2
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -54,7 +50,6 @@
 
     check-cast v0, Landroid/view/inputmethod/InputMethodManager;
 
-    .line 3
     iget-object v1, p0, Lcom/google/android/material/internal/ViewUtils$1;->val$view:Landroid/view/View;
 
     const/4 v2, 0x1

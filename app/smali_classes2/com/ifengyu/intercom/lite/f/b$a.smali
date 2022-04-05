@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/f/b$a;
 .super Landroidx/room/c;
-.source "ChannelDao_Impl.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/f/b;Landroidx/room/RoomDatabase;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2}, Landroidx/room/c;-><init>(Landroidx/room/RoomDatabase;)V
 
     return-void
@@ -37,7 +35,6 @@
 .method public a(La/g/a/f;Lcom/ifengyu/intercom/lite/models/ChannelModel;)V
     .locals 4
 
-    .line 2
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getId()Ljava/lang/Long;
 
     move-result-object v0
@@ -46,12 +43,10 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-interface {p1, v1}, La/g/a/d;->bindNull(I)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getId()Ljava/lang/Long;
 
@@ -63,7 +58,6 @@
 
     invoke-interface {p1, v1, v2, v3}, La/g/a/d;->bindLong(IJ)V
 
-    .line 5
     :goto_0
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getConfigId()Ljava/lang/Long;
 
@@ -73,12 +67,10 @@
 
     if-nez v0, :cond_1
 
-    .line 6
     invoke-interface {p1, v1}, La/g/a/d;->bindNull(I)V
 
     goto :goto_1
 
-    .line 7
     :cond_1
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getConfigId()Ljava/lang/Long;
 
@@ -93,7 +85,6 @@
     :goto_1
     const/4 v0, 0x3
 
-    .line 8
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getChannelSeq()I
 
     move-result v1
@@ -104,7 +95,6 @@
 
     const/4 v0, 0x4
 
-    .line 9
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveFreq()I
 
     move-result v1
@@ -115,7 +105,6 @@
 
     const/4 v0, 0x5
 
-    .line 10
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendFreq()I
 
     move-result v1
@@ -126,7 +115,6 @@
 
     const/4 v0, 0x6
 
-    .line 11
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveToneType()I
 
     move-result v1
@@ -137,7 +125,6 @@
 
     const/4 v0, 0x7
 
-    .line 12
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveToneValue()I
 
     move-result v1
@@ -148,7 +135,6 @@
 
     const/16 v0, 0x8
 
-    .line 13
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendToneType()I
 
     move-result v1
@@ -159,7 +145,6 @@
 
     const/16 v0, 0x9
 
-    .line 14
     invoke-virtual {p2}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendToneValue()I
 
     move-result p2
@@ -174,7 +159,6 @@
 .method public bridge synthetic a(La/g/a/f;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/lite/f/b$a;->a(La/g/a/f;Lcom/ifengyu/intercom/lite/models/ChannelModel;)V

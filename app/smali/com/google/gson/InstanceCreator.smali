@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/gson/InstanceCreator;
 .super Ljava/lang/Object;
-.source "InstanceCreator.java"
 
 
 # annotations

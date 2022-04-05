@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ItemDelayFunction;
 .super Ljava/lang/Object;
-.source "ObservableInternalHelper.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;
@@ -58,10 +57,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ItemDelayFunction;->itemDelay:Lio/reactivex/functions/Function;
 
     return-void
@@ -85,7 +82,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ItemDelayFunction;->itemDelay:Lio/reactivex/functions/Function;
 
     invoke-interface {v0, p1}, Lio/reactivex/functions/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
@@ -100,7 +96,6 @@
 
     check-cast v0, Lio/reactivex/ObservableSource;
 
-    .line 3
     new-instance v1, Lio/reactivex/internal/operators/observable/ObservableTake;
 
     const-wide/16 v2, 0x1
@@ -130,7 +125,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lio/reactivex/internal/operators/observable/ObservableInternalHelper$ItemDelayFunction;->apply(Ljava/lang/Object;)Lio/reactivex/ObservableSource;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class public Lcom/google/protobuf/TextFormat$ParseException;
 .super Ljava/io/IOException;
-.source "TextFormat.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method public constructor <init>(IILjava/lang/String;)V
     .locals 4
 
-    .line 2
     invoke-static {p1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -85,10 +83,8 @@
 
     invoke-direct {p0, p3}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    .line 3
     iput p1, p0, Lcom/google/protobuf/TextFormat$ParseException;->line:I
 
-    .line 4
     iput p2, p0, Lcom/google/protobuf/TextFormat$ParseException;->column:I
 
     return-void
@@ -99,7 +95,6 @@
 
     const/4 v0, -0x1
 
-    .line 1
     invoke-direct {p0, v0, v0, p1}, Lcom/google/protobuf/TextFormat$ParseException;-><init>(IILjava/lang/String;)V
 
     return-void
@@ -110,7 +105,6 @@
 .method public getColumn()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/TextFormat$ParseException;->column:I
 
     return v0
@@ -119,7 +113,6 @@
 .method public getLine()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/TextFormat$ParseException;->line:I
 
     return v0

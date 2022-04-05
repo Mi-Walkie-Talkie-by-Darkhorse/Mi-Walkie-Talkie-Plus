@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/io/CountingOutputStream;
 .super Ljava/io/FilterOutputStream;
-.source "CountingOutputStream.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
 
     return-void
@@ -36,7 +34,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     invoke-virtual {v0}, Ljava/io/OutputStream;->close()V
@@ -47,7 +44,6 @@
 .method public getCount()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/io/CountingOutputStream;->count:J
 
     return-wide v0
@@ -61,12 +57,10 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/OutputStream;->write(I)V
 
-    .line 4
     iget-wide v0, p0, Lcom/google/common/io/CountingOutputStream;->count:J
 
     const-wide/16 v2, 0x1
@@ -86,12 +80,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/OutputStream;->write([BII)V
 
-    .line 2
     iget-wide p1, p0, Lcom/google/common/io/CountingOutputStream;->count:J
 
     int-to-long v0, p3

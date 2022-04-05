@@ -1,13 +1,11 @@
 .class public Lcom/qmuiteam/qmui/c/e;
 .super Ljava/lang/Object;
-.source "QMUISkinHelper.java"
 
 
 # direct methods
 .method static constructor <clinit>()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/qmuiteam/qmui/c/h;->e()Lcom/qmuiteam/qmui/c/h;
 
     return-void
@@ -20,7 +18,6 @@
         .end annotation
     .end param
 
-    .line 5
     invoke-static {p0}, Lcom/qmuiteam/qmui/c/e;->a(Landroid/view/View;)Landroid/content/res/Resources$Theme;
 
     move-result-object p0
@@ -39,21 +36,18 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0}, Lcom/qmuiteam/qmui/c/g;->b(Landroid/view/View;)Lcom/qmuiteam/qmui/c/g$e;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget v1, v0, Lcom/qmuiteam/qmui/c/g$e;->b:I
 
     if-gez v1, :cond_0
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v1, v0, Lcom/qmuiteam/qmui/c/g$e;->a:Ljava/lang/String;
 
@@ -73,7 +67,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_1
     :goto_0
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -95,7 +88,6 @@
         .end annotation
     .end param
 
-    .line 6
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/c/h;->a()Ljava/lang/String;
 
     move-result-object p1
@@ -112,7 +104,6 @@
         .end annotation
     .end param
 
-    .line 9
     sget v0, Lcom/qmuiteam/qmui/R$id;->qmui_skin_default_attr_provider:I
 
     invoke-virtual {p0, v0, p1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
@@ -127,12 +118,10 @@
         .end annotation
     .end param
 
-    .line 7
     sget v0, Lcom/qmuiteam/qmui/R$id;->qmui_skin_value:I
 
     invoke-virtual {p0, v0, p1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
-    .line 8
     invoke-static {p0}, Lcom/qmuiteam/qmui/c/e;->b(Landroid/view/View;)V
 
     return-void
@@ -145,7 +134,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -168,14 +156,12 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-static {p0}, Lcom/qmuiteam/qmui/c/g;->b(Landroid/view/View;)Lcom/qmuiteam/qmui/c/g$e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v1, v0, Lcom/qmuiteam/qmui/c/g$e;->a:Ljava/lang/String;
 
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -197,12 +183,10 @@
 .method public static b(Landroid/view/View;Ljava/lang/String;)V
     .locals 1
 
-    .line 4
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 5
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -229,7 +213,6 @@
 
     const-string v0, "QMUISkinManager"
 
-    .line 6
     invoke-static {v0, p0, p1}, Lcom/qmuiteam/qmui/b;->d(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-void
@@ -244,7 +227,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0

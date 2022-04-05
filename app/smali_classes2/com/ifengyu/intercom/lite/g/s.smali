@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/g/s;
 .super Ljava/lang/Object;
-.source "UpgradeManager.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 .method static synthetic a()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/g/s;->a:Ljava/lang/String;
 
     return-object v0
@@ -37,7 +34,6 @@
 .method private a(Ljava/lang/String;)V
     .locals 2
 
-    .line 22
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->b()Lcom/ifengyu/library/base/BaseApp;
 
     move-result-object v0
@@ -52,7 +48,6 @@
 
     return-void
 
-    .line 23
     :cond_0
     new-instance v1, Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
@@ -60,12 +55,10 @@
 
     const/4 p1, 0x1
 
-    .line 24
     invoke-virtual {v1, p1}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setAutoCallbackToUIThread(Z)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     move-result-object p1
 
-    .line 25
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->build()Lcom/liulishuo/okdownload/DownloadTask;
 
     move-result-object p1
@@ -74,7 +67,6 @@
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/g/s$a;-><init>(Lcom/ifengyu/intercom/lite/g/s;)V
 
-    .line 26
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask;->enqueue(Lcom/liulishuo/okdownload/DownloadListener;)V
 
     return-void
@@ -88,7 +80,6 @@
         }
     .end annotation
 
-    .line 21
     sget-object v0, Lcom/ifengyu/intercom/lite/g/s;->a:Ljava/lang/String;
 
     const-string v1, "checkLiteVersion"
@@ -101,19 +92,16 @@
 .method public static b()Lcom/ifengyu/intercom/lite/g/s;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/g/s;->b:Lcom/ifengyu/intercom/lite/g/s;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/lite/g/s;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/lite/g/s;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/lite/g/s;->b:Lcom/ifengyu/intercom/lite/g/s;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/lite/g/s;->b:Lcom/ifengyu/intercom/lite/g/s;
 
@@ -130,7 +118,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -139,7 +126,6 @@
 
     move-result-object v6
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -160,14 +146,12 @@
 
     move-result-object v7
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/lite/d/e;->a()Lcom/ifengyu/intercom/lite/d/g/a;
 
     move-result-object v2
 
     sget-object v0, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;->e:Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;
 
-    .line 5
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/enums/DeviceTypeEnum;->a()Ljava/lang/String;
 
     move-result-object v3
@@ -184,7 +168,6 @@
 
     move-result-object p1
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/lite/d/f;->a()Lio/reactivex/ObservableTransformer;
 
     move-result-object v0
@@ -193,7 +176,6 @@
 
     move-result-object p1
 
-    .line 7
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->io()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -208,7 +190,6 @@
 
     sget-object v1, Lcom/ifengyu/intercom/lite/g/b;->a:Lcom/ifengyu/intercom/lite/g/b;
 
-    .line 8
     invoke-virtual {p1, v0, v1}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
     return-void
@@ -222,7 +203,6 @@
         }
     .end annotation
 
-    .line 9
     sget-object v0, Lcom/ifengyu/intercom/lite/g/s;->a:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -245,14 +225,12 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/blelib/a;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/http/entity/WrapFirmwareInfo;->getLite()Lcom/ifengyu/intercom/lite/http/entity/FirmwareInfo;
 
     move-result-object p1
 
     if-nez p1, :cond_0
 
-    .line 11
     sget-object p1, Lcom/ifengyu/intercom/lite/g/s;->a:Ljava/lang/String;
 
     const-string v0, "checkLiteVersion->lite is null"
@@ -261,7 +239,6 @@
 
     return-void
 
-    .line 12
     :cond_0
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->b()Lcom/ifengyu/library/base/BaseApp;
 
@@ -271,20 +248,16 @@
 
     move-result-object v0
 
-    .line 13
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/lite/g/r;->a(Lcom/ifengyu/intercom/lite/http/entity/FirmwareInfo;)V
 
-    .line 14
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/g/r;->b()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 15
     invoke-static {v0}, Lcom/ifengyu/intercom/i/a0;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 16
     invoke-static {v0}, Lcom/ifengyu/library/a/l;->b(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -301,7 +274,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 17
     sget-object p1, Lcom/ifengyu/intercom/lite/g/s;->a:Ljava/lang/String;
 
     const-string v0, "checkLiteVersion->lite latest firmware already exists, no need to download repeatedly"
@@ -310,7 +282,6 @@
 
     return-void
 
-    .line 18
     :cond_1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/http/entity/FirmwareInfo;->getSource()Ljava/lang/String;
 
@@ -322,7 +293,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 19
     sget-object p1, Lcom/ifengyu/intercom/lite/g/s;->a:Ljava/lang/String;
 
     const-string v0, "checkLiteVersion->lite source is null"
@@ -331,7 +301,6 @@
 
     return-void
 
-    .line 20
     :cond_2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/http/entity/FirmwareInfo;->getSource()Ljava/lang/String;
 

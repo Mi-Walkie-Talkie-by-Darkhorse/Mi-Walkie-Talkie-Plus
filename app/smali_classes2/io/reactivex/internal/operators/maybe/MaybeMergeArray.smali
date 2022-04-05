@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/maybe/MaybeMergeArray;
 .super Lio/reactivex/Flowable;
-.source "MaybeMergeArray.java"
 
 
 # annotations
@@ -47,10 +46,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Flowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/maybe/MaybeMergeArray;->sources:[Lio/reactivex/MaybeSource;
 
     return-void
@@ -68,45 +65,36 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/maybe/MaybeMergeArray;->sources:[Lio/reactivex/MaybeSource;
 
-    .line 2
     array-length v1, v0
 
-    .line 3
     invoke-static {}, Lio/reactivex/Flowable;->bufferSize()I
 
     move-result v2
 
     if-gt v1, v2, :cond_0
 
-    .line 4
     new-instance v2, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$MpscFillOnceSimpleQueue;
 
     invoke-direct {v2, v1}, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$MpscFillOnceSimpleQueue;-><init>(I)V
 
     goto :goto_0
 
-    .line 5
     :cond_0
     new-instance v2, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$ClqSimpleQueue;
 
     invoke-direct {v2}, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$ClqSimpleQueue;-><init>()V
 
-    .line 6
     :goto_0
     new-instance v3, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;
 
     invoke-direct {v3, p1, v1, v2}, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;-><init>(Lc/a/c;ILio/reactivex/internal/operators/maybe/MaybeMergeArray$SimpleQueueWithConsumerIndex;)V
 
-    .line 7
     invoke-interface {p1, v3}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 8
     iget-object p1, v3, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->error:Lio/reactivex/internal/util/AtomicThrowable;
 
-    .line 9
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -116,7 +104,6 @@
 
     aget-object v4, v0, v2
 
-    .line 10
     invoke-virtual {v3}, Lio/reactivex/internal/operators/maybe/MaybeMergeArray$MergeMaybeObserver;->isCancelled()Z
 
     move-result v5
@@ -131,7 +118,6 @@
 
     goto :goto_2
 
-    .line 11
     :cond_1
     invoke-interface {v4, v3}, Lio/reactivex/MaybeSource;->subscribe(Lio/reactivex/MaybeObserver;)V
 

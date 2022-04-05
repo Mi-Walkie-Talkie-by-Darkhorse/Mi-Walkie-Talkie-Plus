@@ -1,6 +1,5 @@
 .class Landroidx/core/view/ViewCompat$i;
 .super Ljava/lang/Object;
-.source "ViewCompat.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getRootWindowInsets()Landroid/view/WindowInsets;
 
     move-result-object v0
@@ -39,16 +37,13 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     invoke-static {v0}, Landroidx/core/view/WindowInsetsCompat;->a(Landroid/view/WindowInsets;)Landroidx/core/view/WindowInsetsCompat;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0, v0}, Landroidx/core/view/WindowInsetsCompat;->a(Landroidx/core/view/WindowInsetsCompat;)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->getRootView()Landroid/view/View;
 
     move-result-object p0

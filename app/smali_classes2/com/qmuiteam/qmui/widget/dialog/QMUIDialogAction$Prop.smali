@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$Prop;
 .super Ljava/lang/Object;
-.source "QMUIDialogAction.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

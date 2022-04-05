@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/node/i;
 .super Ljava/lang/Object;
-.source "IPeerTx.java"
 
 
 # virtual methods

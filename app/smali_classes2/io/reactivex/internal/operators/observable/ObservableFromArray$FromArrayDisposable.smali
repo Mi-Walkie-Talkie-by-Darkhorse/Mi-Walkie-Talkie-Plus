@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;
 .super Lio/reactivex/internal/observers/BasicQueueDisposable;
-.source "ObservableFromArray.java"
 
 
 # annotations
@@ -60,13 +59,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/internal/observers/BasicQueueDisposable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->downstream:Lio/reactivex/Observer;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->array:[Ljava/lang/Object;
 
     return-void
@@ -77,7 +73,6 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->array:[Ljava/lang/Object;
 
     array-length v0, v0
@@ -92,7 +87,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->disposed:Z
 
     return-void
@@ -101,7 +95,6 @@
 .method public isDisposed()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->disposed:Z
 
     return v0
@@ -110,7 +103,6 @@
 .method public isEmpty()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->index:I
 
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->array:[Ljava/lang/Object;
@@ -141,23 +133,18 @@
     .annotation build Lio/reactivex/annotations/Nullable;
     .end annotation
 
-    .line 1
     iget v0, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->index:I
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->array:[Ljava/lang/Object;
 
-    .line 3
     array-length v2, v1
 
     if-eq v0, v2, :cond_0
 
     add-int/lit8 v2, v0, 0x1
 
-    .line 4
     iput v2, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->index:I
 
-    .line 5
     aget-object v0, v1, v0
 
     const-string v1, "The array element is null"
@@ -183,7 +170,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iput-boolean v0, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->fusionMode:Z
 
     return v0
@@ -197,10 +183,8 @@
 .method run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->array:[Ljava/lang/Object;
 
-    .line 2
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -208,19 +192,16 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->isDisposed()Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    .line 4
     aget-object v3, v0, v2
 
     if-nez v3, :cond_0
 
-    .line 5
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->downstream:Lio/reactivex/Observer;
 
     new-instance v1, Ljava/lang/NullPointerException;
@@ -249,7 +230,6 @@
 
     return-void
 
-    .line 6
     :cond_0
     iget-object v4, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->downstream:Lio/reactivex/Observer;
 
@@ -259,7 +239,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     invoke-virtual {p0}, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->isDisposed()Z
 
@@ -267,7 +246,6 @@
 
     if-nez v0, :cond_2
 
-    .line 8
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableFromArray$FromArrayDisposable;->downstream:Lio/reactivex/Observer;
 
     invoke-interface {v0}, Lio/reactivex/Observer;->onComplete()V

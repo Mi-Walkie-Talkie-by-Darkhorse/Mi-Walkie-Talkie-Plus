@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/engine/j$b;
 .super Ljava/lang/Object;
-.source "EngineJob.java"
 
 # interfaces
 .implements Landroid/os/Handler$Callback;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,12 +30,10 @@
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 4
 
-    .line 1
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Lcom/bumptech/glide/load/engine/j;
 
-    .line 2
     iget v1, p1, Landroid/os/Message;->what:I
 
     const/4 v2, 0x1
@@ -52,12 +48,10 @@
 
     if-ne v1, v3, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Lcom/bumptech/glide/load/engine/j;->b()V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -81,13 +75,11 @@
 
     throw v0
 
-    .line 5
     :cond_1
     invoke-virtual {v0}, Lcom/bumptech/glide/load/engine/j;->c()V
 
     goto :goto_0
 
-    .line 6
     :cond_2
     invoke-virtual {v0}, Lcom/bumptech/glide/load/engine/j;->d()V
 

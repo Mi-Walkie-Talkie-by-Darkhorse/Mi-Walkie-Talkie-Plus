@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lio/reactivex/annotations/CheckReturnValue;
 .super Ljava/lang/Object;
-.source "CheckReturnValue.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/transition/MaterialContainerTransform$TransitionDrawable$1;
 .super Ljava/lang/Object;
-.source "MaterialContainerTransform.java"
 
 # interfaces
 .implements Lcom/google/android/material/transition/TransitionUtils$CanvasOperation;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/transition/MaterialContainerTransform$TransitionDrawable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform$TransitionDrawable$1;->this$0:Lcom/google/android/material/transition/MaterialContainerTransform$TransitionDrawable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run(Landroid/graphics/Canvas;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform$TransitionDrawable$1;->this$0:Lcom/google/android/material/transition/MaterialContainerTransform$TransitionDrawable;
 
     invoke-static {v0}, Lcom/google/android/material/transition/MaterialContainerTransform$TransitionDrawable;->access$800(Lcom/google/android/material/transition/MaterialContainerTransform$TransitionDrawable;)Landroid/view/View;

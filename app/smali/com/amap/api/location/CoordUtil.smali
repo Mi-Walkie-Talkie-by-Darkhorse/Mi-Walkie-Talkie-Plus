@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/location/CoordUtil;
 .super Ljava/lang/Object;
-.source "CoordUtil.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
 .method public static isLoadedSo()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/amap/api/location/CoordUtil;->a:Z
 
     return v0
@@ -38,7 +35,6 @@
 .method public static setLoadedSo(Z)V
     .locals 0
 
-    .line 1
     sput-boolean p0, Lcom/amap/api/location/CoordUtil;->a:Z
 
     return-void

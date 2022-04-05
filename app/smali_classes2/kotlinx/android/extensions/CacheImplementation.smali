@@ -1,6 +1,5 @@
 .class public final enum Lkotlinx/android/extensions/CacheImplementation;
 .super Ljava/lang/Enum;
-.source "CacheImplementation.kt"
 
 
 # annotations
@@ -105,7 +104,6 @@
 
     invoke-direct {v0, v1}, Lkotlinx/android/extensions/CacheImplementation$a;-><init>(Lkotlin/jvm/b/a;)V
 
-    .line 1
     sget-object v0, Lkotlinx/android/extensions/CacheImplementation;->a:Lkotlinx/android/extensions/CacheImplementation;
 
     sput-object v0, Lkotlinx/android/extensions/CacheImplementation;->c:Lkotlinx/android/extensions/CacheImplementation;
@@ -121,7 +119,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void

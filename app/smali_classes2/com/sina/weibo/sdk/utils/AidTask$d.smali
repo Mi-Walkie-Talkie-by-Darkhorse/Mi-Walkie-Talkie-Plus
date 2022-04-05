@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/sina/weibo/sdk/utils/AidTask$d;
 .super Ljava/lang/Object;
-.source "AidTask.java"
 
 
 # annotations

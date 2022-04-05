@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/jetbrains/annotations/NonNls;
 .super Ljava/lang/Object;
-.source "NonNls.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

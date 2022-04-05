@@ -1,6 +1,5 @@
 .class public Lb/b/a/a/a;
 .super Ljava/lang/Object;
-.source "ApiUtils.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 .method public static a(Landroid/content/Context;Ljava/lang/String;)Z
     .locals 2
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -28,7 +26,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -43,7 +40,6 @@
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 3
     iget-object p0, p0, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
     const-string p1, "18da2bf10352443a00a5e046d9fca6bd"
@@ -69,7 +65,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_0
     array-length v1, p0
 
@@ -83,7 +78,6 @@
     :cond_1
     aget-object v3, p0, v2
 
-    .line 5
     invoke-virtual {v3}, Landroid/content/pm/Signature;->toByteArray()[B
 
     move-result-object v3
@@ -92,14 +86,12 @@
 
     move-result-object v3
 
-    .line 6
     invoke-virtual {p1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 7
     sget-object p0, Lb/b/a/a/a;->a:Ljava/lang/String;
 
     const-string p1, "check pass"

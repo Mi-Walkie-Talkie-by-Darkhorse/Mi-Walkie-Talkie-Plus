@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/GwtWorkarounds$5;
 .super Ljava/lang/Object;
-.source "GwtWorkarounds.java"
 
 # interfaces
 .implements Lcom/google/common/io/GwtWorkarounds$CharOutput;
@@ -25,7 +24,6 @@
 .method constructor <init>(Ljava/io/Writer;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/io/GwtWorkarounds$5;->val$writer:Ljava/io/Writer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -43,7 +41,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/GwtWorkarounds$5;->val$writer:Ljava/io/Writer;
 
     invoke-virtual {v0}, Ljava/io/Writer;->close()V
@@ -59,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/GwtWorkarounds$5;->val$writer:Ljava/io/Writer;
 
     invoke-virtual {v0}, Ljava/io/Writer;->flush()V
@@ -75,7 +71,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/GwtWorkarounds$5;->val$writer:Ljava/io/Writer;
 
     invoke-virtual {v0, p1}, Ljava/io/Writer;->append(C)Ljava/io/Writer;

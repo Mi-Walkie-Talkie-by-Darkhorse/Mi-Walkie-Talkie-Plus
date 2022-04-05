@@ -1,6 +1,5 @@
 .class public Lcom/yalantis/ucrop/view/OverlayView;
 .super Landroid/view/View;
-.source "OverlayView.java"
 
 
 # annotations
@@ -73,7 +72,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/yalantis/ucrop/view/OverlayView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -84,7 +82,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/yalantis/ucrop/view/OverlayView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -93,17 +90,14 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 4
     new-instance p1, Landroid/graphics/RectF;
 
     invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
 
     iput-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
-    .line 5
     new-instance p1, Landroid/graphics/RectF;
 
     invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
@@ -112,17 +106,14 @@
 
     const/4 p1, 0x0
 
-    .line 6
     iput-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->i:[F
 
-    .line 7
     new-instance p1, Landroid/graphics/Path;
 
     invoke-direct {p1}, Landroid/graphics/Path;-><init>()V
 
     iput-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->n:Landroid/graphics/Path;
 
-    .line 8
     new-instance p1, Landroid/graphics/Paint;
 
     const/4 p2, 0x1
@@ -131,21 +122,18 @@
 
     iput-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->o:Landroid/graphics/Paint;
 
-    .line 9
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1, p2}, Landroid/graphics/Paint;-><init>(I)V
 
     iput-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->p:Landroid/graphics/Paint;
 
-    .line 10
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1, p2}, Landroid/graphics/Paint;-><init>(I)V
 
     iput-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->q:Landroid/graphics/Paint;
 
-    .line 11
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1, p2}, Landroid/graphics/Paint;-><init>(I)V
@@ -154,22 +142,18 @@
 
     const/4 p1, 0x0
 
-    .line 12
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->s:I
 
     const/high16 p1, -0x40800000    # -1.0f
 
-    .line 13
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->t:F
 
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->u:F
 
     const/4 p1, -0x1
 
-    .line 14
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->v:I
 
-    .line 15
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -182,7 +166,6 @@
 
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->w:I
 
-    .line 16
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -195,7 +178,6 @@
 
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->x:I
 
-    .line 17
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -208,7 +190,6 @@
 
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->y:I
 
-    .line 18
     invoke-virtual {p0}, Lcom/yalantis/ucrop/view/OverlayView;->a()V
 
     return-void
@@ -217,7 +198,6 @@
 .method private a(FF)I
     .locals 10
 
-    .line 3
     iget v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->w:I
 
     int-to-double v0, v0
@@ -231,7 +211,6 @@
 
     if-ge v3, v4, :cond_1
 
-    .line 4
     iget-object v4, p0, Lcom/yalantis/ucrop/view/OverlayView;->e:[F
 
     aget v4, v4, v3
@@ -256,14 +235,12 @@
 
     float-to-double v8, v8
 
-    .line 5
     invoke-static {v8, v9, v6, v7}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v6
 
     add-double/2addr v4, v6
 
-    .line 6
     invoke-static {v4, v5}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v4
@@ -272,7 +249,6 @@
 
     if-gez v6, :cond_0
 
-    .line 7
     div-int/lit8 v0, v3, 0x2
 
     move v2, v0
@@ -284,7 +260,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     iget v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->s:I
 
@@ -313,7 +288,6 @@
 .method private b()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/e/g;->b(Landroid/graphics/RectF;)[F
@@ -322,22 +296,18 @@
 
     iput-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->e:[F
 
-    .line 2
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     invoke-static {v0}, Lcom/yalantis/ucrop/e/g;->a(Landroid/graphics/RectF;)[F
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->i:[F
 
-    .line 4
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->n:Landroid/graphics/Path;
 
     invoke-virtual {v0}, Landroid/graphics/Path;->reset()V
 
-    .line 5
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->n:Landroid/graphics/Path;
 
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
@@ -354,7 +324,6 @@
 
     iget-object v3, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
-    .line 6
     invoke-virtual {v3}, Landroid/graphics/RectF;->width()F
 
     move-result v3
@@ -375,7 +344,6 @@
 
     sget-object v4, Landroid/graphics/Path$Direction;->CW:Landroid/graphics/Path$Direction;
 
-    .line 7
     invoke-virtual {v0, v1, v2, v3, v4}, Landroid/graphics/Path;->addCircle(FFFLandroid/graphics/Path$Direction;)V
 
     return-void
@@ -384,14 +352,12 @@
 .method private b(FF)V
     .locals 5
 
-    .line 8
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     invoke-virtual {v0, v1}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
 
-    .line 9
     iget v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->v:I
 
     const/4 v1, 0x1
@@ -414,7 +380,6 @@
 
     goto/16 :goto_0
 
-    .line 10
     :cond_0
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
@@ -428,7 +393,6 @@
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/RectF;->offset(FF)V
 
-    .line 11
     iget-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
     iget p1, p1, Landroid/graphics/RectF;->left:F
@@ -461,7 +425,6 @@
 
     iget p1, p1, Landroid/graphics/RectF;->right:F
 
-    .line 12
     invoke-virtual {p0}, Landroid/view/View;->getRight()I
 
     move-result p2
@@ -486,23 +449,19 @@
 
     if-gez p1, :cond_1
 
-    .line 13
     iget-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     iget-object p2, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
     invoke-virtual {p1, p2}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
 
-    .line 14
     invoke-direct {p0}, Lcom/yalantis/ucrop/view/OverlayView;->b()V
 
-    .line 15
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     :cond_1
     return-void
 
-    .line 16
     :cond_2
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
@@ -516,7 +475,6 @@
 
     goto :goto_0
 
-    .line 17
     :cond_3
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
@@ -530,7 +488,6 @@
 
     goto :goto_0
 
-    .line 18
     :cond_4
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
@@ -544,7 +501,6 @@
 
     goto :goto_0
 
-    .line 19
     :cond_5
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
@@ -556,7 +512,6 @@
 
     invoke-virtual {v0, p1, p2, v3, v2}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 20
     :goto_0
     iget-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
@@ -581,7 +536,6 @@
     :cond_6
     const/4 p1, 0x0
 
-    .line 21
     :goto_1
     iget-object p2, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
@@ -602,7 +556,6 @@
     :cond_7
     const/4 v1, 0x0
 
-    .line 22
     :goto_2
     iget-object p2, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
@@ -660,11 +613,9 @@
 
     if-eqz v1, :cond_d
 
-    .line 23
     :cond_c
     invoke-direct {p0}, Lcom/yalantis/ucrop/view/OverlayView;->b()V
 
-    .line 24
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     :cond_d
@@ -678,10 +629,8 @@
         .end annotation
     .end param
 
-    .line 35
     sget v0, Lcom/yalantis/ucrop/R$styleable;->ucrop_UCropView_ucrop_frame_stroke_size:I
 
-    .line 36
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -692,15 +641,12 @@
 
     move-result v1
 
-    .line 37
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
 
-    .line 38
     sget v1, Lcom/yalantis/ucrop/R$styleable;->ucrop_UCropView_ucrop_frame_color:I
 
-    .line 39
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -711,31 +657,26 @@
 
     move-result v2
 
-    .line 40
     invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result p1
 
-    .line 41
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->q:Landroid/graphics/Paint;
 
     int-to-float v2, v0
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 42
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->q:Landroid/graphics/Paint;
 
     invoke-virtual {v1, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 43
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->q:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 44
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->r:Landroid/graphics/Paint;
 
     mul-int/lit8 v0, v0, 0x3
@@ -744,12 +685,10 @@
 
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 45
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->r:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 46
     iget-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->r:Landroid/graphics/Paint;
 
     sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
@@ -766,10 +705,8 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Lcom/yalantis/ucrop/R$styleable;->ucrop_UCropView_ucrop_grid_stroke_size:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -780,15 +717,12 @@
 
     move-result v1
 
-    .line 3
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
 
-    .line 4
     sget v1, Lcom/yalantis/ucrop/R$styleable;->ucrop_UCropView_ucrop_grid_color:I
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
@@ -799,24 +733,20 @@
 
     move-result v2
 
-    .line 6
     invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result v1
 
-    .line 7
     iget-object v2, p0, Lcom/yalantis/ucrop/view/OverlayView;->p:Landroid/graphics/Paint;
 
     int-to-float v0, v0
 
     invoke-virtual {v2, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 8
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->p:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 9
     sget v0, Lcom/yalantis/ucrop/R$styleable;->ucrop_UCropView_ucrop_grid_row_count:I
 
     const/4 v1, 0x2
@@ -827,7 +757,6 @@
 
     iput v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->f:I
 
-    .line 10
     sget v0, Lcom/yalantis/ucrop/R$styleable;->ucrop_UCropView_ucrop_grid_column_count:I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -844,7 +773,6 @@
 .method protected a()V
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x12
@@ -855,7 +783,6 @@
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
     :cond_0
@@ -869,7 +796,6 @@
         .end annotation
     .end param
 
-    .line 36
     sget v0, Lcom/yalantis/ucrop/R$styleable;->ucrop_UCropView_ucrop_circle_dimmed_layer:I
 
     const/4 v1, 0x0
@@ -880,10 +806,8 @@
 
     iput-boolean v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->l:Z
 
-    .line 37
     sget v0, Lcom/yalantis/ucrop/R$styleable;->ucrop_UCropView_ucrop_dimmed_color:I
 
-    .line 38
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -894,36 +818,30 @@
 
     move-result v1
 
-    .line 39
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result v0
 
     iput v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->m:I
 
-    .line 40
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->o:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 41
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->o:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 42
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->o:Landroid/graphics/Paint;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 43
     invoke-direct {p0, p1}, Lcom/yalantis/ucrop/view/OverlayView;->b(Landroid/content/res/TypedArray;)V
 
-    .line 44
     sget v0, Lcom/yalantis/ucrop/R$styleable;->ucrop_UCropView_ucrop_show_frame:I
 
     const/4 v1, 0x1
@@ -934,10 +852,8 @@
 
     iput-boolean v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->j:Z
 
-    .line 45
     invoke-direct {p0, p1}, Lcom/yalantis/ucrop/view/OverlayView;->c(Landroid/content/res/TypedArray;)V
 
-    .line 46
     sget v0, Lcom/yalantis/ucrop/R$styleable;->ucrop_UCropView_ucrop_show_grid:I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -956,12 +872,10 @@
         .end annotation
     .end param
 
-    .line 9
     iget-boolean v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->k:Z
 
     if-eqz v0, :cond_2
 
-    .line 10
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->i:[F
 
     if-nez v0, :cond_1
@@ -974,7 +888,6 @@
 
     if-nez v0, :cond_1
 
-    .line 11
     iget v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->f:I
 
     mul-int/lit8 v0, v0, 0x4
@@ -995,7 +908,6 @@
 
     const/4 v2, 0x0
 
-    .line 12
     :goto_0
     iget v3, p0, Lcom/yalantis/ucrop/view/OverlayView;->f:I
 
@@ -1003,7 +915,6 @@
 
     if-ge v1, v3, :cond_0
 
-    .line 13
     iget-object v3, p0, Lcom/yalantis/ucrop/view/OverlayView;->i:[F
 
     add-int/lit8 v5, v2, 0x1
@@ -1016,7 +927,6 @@
 
     add-int/lit8 v2, v5, 0x1
 
-    .line 14
     invoke-virtual {v6}, Landroid/graphics/RectF;->height()F
 
     move-result v6
@@ -1043,7 +953,6 @@
 
     aput v6, v3, v5
 
-    .line 15
     iget-object v3, p0, Lcom/yalantis/ucrop/view/OverlayView;->i:[F
 
     add-int/lit8 v5, v2, 0x1
@@ -1054,7 +963,6 @@
 
     add-int/lit8 v2, v5, 0x1
 
-    .line 16
     invoke-virtual {v4}, Landroid/graphics/RectF;->height()F
 
     move-result v4
@@ -1081,14 +989,12 @@
 
     goto :goto_0
 
-    .line 17
     :cond_0
     :goto_1
     iget v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->g:I
 
     if-ge v0, v1, :cond_1
 
-    .line 18
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->i:[F
 
     add-int/lit8 v3, v2, 0x1
@@ -1121,7 +1027,6 @@
 
     aput v5, v1, v2
 
-    .line 19
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->i:[F
 
     add-int/lit8 v2, v3, 0x1
@@ -1132,7 +1037,6 @@
 
     add-int/lit8 v3, v2, 0x1
 
-    .line 20
     invoke-virtual {v7}, Landroid/graphics/RectF;->width()F
 
     move-result v5
@@ -1155,7 +1059,6 @@
 
     aput v5, v1, v2
 
-    .line 21
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->i:[F
 
     add-int/lit8 v2, v3, 0x1
@@ -1168,47 +1071,39 @@
 
     goto :goto_1
 
-    .line 22
     :cond_1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->i:[F
 
     if-eqz v0, :cond_2
 
-    .line 23
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->p:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawLines([FLandroid/graphics/Paint;)V
 
-    .line 24
     :cond_2
     iget-boolean v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->j:Z
 
     if-eqz v0, :cond_3
 
-    .line 25
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->q:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
-    .line 26
     :cond_3
     iget v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->s:I
 
     if-eqz v0, :cond_4
 
-    .line 27
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 28
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     invoke-virtual {v0, v1}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
 
-    .line 29
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
     iget v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->y:I
@@ -1221,21 +1116,18 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/graphics/RectF;->inset(FF)V
 
-    .line 30
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
     sget-object v1, Landroid/graphics/Region$Op;->DIFFERENCE:Landroid/graphics/Region$Op;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->clipRect(Landroid/graphics/RectF;Landroid/graphics/Region$Op;)Z
 
-    .line 31
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     invoke-virtual {v0, v1}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
 
-    .line 32
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
     iget v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->y:I
@@ -1248,21 +1140,18 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/graphics/RectF;->inset(FF)V
 
-    .line 33
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->b:Landroid/graphics/RectF;
 
     sget-object v1, Landroid/graphics/Region$Op;->DIFFERENCE:Landroid/graphics/Region$Op;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->clipRect(Landroid/graphics/RectF;Landroid/graphics/Region$Op;)Z
 
-    .line 34
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->r:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
-    .line 35
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     :cond_4
@@ -1276,15 +1165,12 @@
         .end annotation
     .end param
 
-    .line 25
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 26
     iget-boolean v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->l:Z
 
     if-eqz v0, :cond_0
 
-    .line 27
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->n:Landroid/graphics/Path;
 
     sget-object v1, Landroid/graphics/Region$Op;->DIFFERENCE:Landroid/graphics/Region$Op;
@@ -1293,7 +1179,6 @@
 
     goto :goto_0
 
-    .line 28
     :cond_0
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
@@ -1301,21 +1186,17 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->clipRect(Landroid/graphics/RectF;Landroid/graphics/Region$Op;)Z
 
-    .line 29
     :goto_0
     iget v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->m:I
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->drawColor(I)V
 
-    .line 30
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
-    .line 31
     iget-boolean v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->l:Z
 
     if-eqz v0, :cond_1
 
-    .line 32
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->centerX()F
@@ -1330,7 +1211,6 @@
 
     iget-object v2, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
-    .line 33
     invoke-virtual {v2}, Landroid/graphics/RectF;->width()F
 
     move-result v2
@@ -1351,7 +1231,6 @@
 
     iget-object v3, p0, Lcom/yalantis/ucrop/view/OverlayView;->o:Landroid/graphics/Paint;
 
-    .line 34
     invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
     :cond_1
@@ -1363,7 +1242,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     return-object v0
@@ -1372,7 +1250,6 @@
 .method public getFreestyleCropMode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->s:I
 
     return v0
@@ -1381,7 +1258,6 @@
 .method public getOverlayViewChangeListener()Lcom/yalantis/ucrop/c/d;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->z:Lcom/yalantis/ucrop/c/d;
 
     return-object v0
@@ -1390,13 +1266,10 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/yalantis/ucrop/view/OverlayView;->b(Landroid/graphics/Canvas;)V
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/yalantis/ucrop/view/OverlayView;->a(Landroid/graphics/Canvas;)V
 
     return-void
@@ -1405,22 +1278,18 @@
 .method protected onLayout(ZIIII)V
     .locals 0
 
-    .line 1
     invoke-super/range {p0 .. p5}, Landroid/view/View;->onLayout(ZIIII)V
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result p1
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result p2
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result p3
@@ -1431,7 +1300,6 @@
 
     sub-int/2addr p3, p4
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->getHeight()I
 
     move-result p4
@@ -1444,25 +1312,20 @@
 
     sub-int/2addr p3, p1
 
-    .line 6
     iput p3, p0, Lcom/yalantis/ucrop/view/OverlayView;->c:I
 
     sub-int/2addr p4, p2
 
-    .line 7
     iput p4, p0, Lcom/yalantis/ucrop/view/OverlayView;->d:I
 
-    .line 8
     iget-boolean p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->A:Z
 
     if-eqz p1, :cond_0
 
     const/4 p1, 0x0
 
-    .line 9
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->A:Z
 
-    .line 10
     iget p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->h:F
 
     invoke-virtual {p0, p1}, Lcom/yalantis/ucrop/view/OverlayView;->setTargetAspectRatio(F)V
@@ -1474,7 +1337,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->isEmpty()Z
@@ -1491,18 +1353,15 @@
 
     goto/16 :goto_1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v2
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v3
@@ -1517,7 +1376,6 @@
 
     if-nez v3, :cond_4
 
-    .line 5
     invoke-direct {p0, v0, v2}, Lcom/yalantis/ucrop/view/OverlayView;->a(FF)I
 
     move-result p1
@@ -1531,15 +1389,12 @@
     :cond_1
     if-nez v1, :cond_2
 
-    .line 6
     iput v5, p0, Lcom/yalantis/ucrop/view/OverlayView;->t:F
 
-    .line 7
     iput v5, p0, Lcom/yalantis/ucrop/view/OverlayView;->u:F
 
     goto :goto_0
 
-    .line 8
     :cond_2
     iget p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->t:F
 
@@ -1549,17 +1404,14 @@
 
     if-gez p1, :cond_3
 
-    .line 9
     iput v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->t:F
 
-    .line 10
     iput v2, p0, Lcom/yalantis/ucrop/view/OverlayView;->u:F
 
     :cond_3
     :goto_0
     return v1
 
-    .line 11
     :cond_4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1571,7 +1423,6 @@
 
     if-ne v3, v7, :cond_5
 
-    .line 12
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v3
@@ -1582,7 +1433,6 @@
 
     if-eq v3, v4, :cond_5
 
-    .line 13
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result p1
@@ -1609,7 +1459,6 @@
 
     move-result p1
 
-    .line 14
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v0
@@ -1636,18 +1485,14 @@
 
     move-result v0
 
-    .line 15
     invoke-direct {p0, p1, v0}, Lcom/yalantis/ucrop/view/OverlayView;->b(FF)V
 
-    .line 16
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->t:F
 
-    .line 17
     iput v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->u:F
 
     return v6
 
-    .line 18
     :cond_5
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -1657,21 +1502,16 @@
 
     if-ne p1, v6, :cond_6
 
-    .line 19
     iput v5, p0, Lcom/yalantis/ucrop/view/OverlayView;->t:F
 
-    .line 20
     iput v5, p0, Lcom/yalantis/ucrop/view/OverlayView;->u:F
 
-    .line 21
     iput v4, p0, Lcom/yalantis/ucrop/view/OverlayView;->v:I
 
-    .line 22
     iget-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->z:Lcom/yalantis/ucrop/c/d;
 
     if-eqz p1, :cond_6
 
-    .line 23
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     invoke-interface {p1, v0}, Lcom/yalantis/ucrop/c/d;->a(Landroid/graphics/RectF;)V
@@ -1684,7 +1524,6 @@
 .method public setCircleDimmedLayer(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->l:Z
 
     return-void
@@ -1697,7 +1536,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->q:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
@@ -1713,7 +1551,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->q:Landroid/graphics/Paint;
 
     int-to-float p1, p1
@@ -1730,7 +1567,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->p:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
@@ -1746,12 +1582,10 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->g:I
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->i:[F
 
     return-void
@@ -1765,12 +1599,10 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->f:I
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->i:[F
 
     return-void
@@ -1784,7 +1616,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->p:Landroid/graphics/Paint;
 
     int-to-float p1, p1
@@ -1801,7 +1632,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->m:I
 
     return-void
@@ -1812,7 +1642,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->s:I
 
     return-void
@@ -1821,10 +1650,8 @@
 .method public setFreestyleCropMode(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->s:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
@@ -1833,7 +1660,6 @@
 .method public setOverlayViewChangeListener(Lcom/yalantis/ucrop/c/d;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->z:Lcom/yalantis/ucrop/c/d;
 
     return-void
@@ -1842,7 +1668,6 @@
 .method public setShowCropFrame(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->j:Z
 
     return-void
@@ -1851,7 +1676,6 @@
 .method public setShowCropGrid(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->k:Z
 
     return-void
@@ -1860,18 +1684,14 @@
 .method public setTargetAspectRatio(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->h:F
 
-    .line 2
     iget p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->c:I
 
     if-lez p1, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Lcom/yalantis/ucrop/view/OverlayView;->setupCropBounds()V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     goto :goto_0
@@ -1879,7 +1699,6 @@
     :cond_0
     const/4 p1, 0x1
 
-    .line 5
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/OverlayView;->A:Z
 
     :goto_0
@@ -1889,7 +1708,6 @@
 .method public setupCropBounds()V
     .locals 7
 
-    .line 1
     iget v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->c:I
 
     int-to-float v1, v0
@@ -1900,7 +1718,6 @@
 
     float-to-int v1, v1
 
-    .line 2
     iget v3, p0, Lcom/yalantis/ucrop/view/OverlayView;->d:I
 
     if-le v1, v3, :cond_0
@@ -1913,10 +1730,8 @@
 
     sub-int/2addr v0, v1
 
-    .line 3
     div-int/lit8 v0, v0, 0x2
 
-    .line 4
     iget-object v2, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
@@ -1933,7 +1748,6 @@
 
     int-to-float v4, v4
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v5
@@ -1954,7 +1768,6 @@
 
     int-to-float v1, v1
 
-    .line 6
     invoke-virtual {v2, v3, v4, v0, v1}, Landroid/graphics/RectF;->set(FFFF)V
 
     goto :goto_0
@@ -1962,10 +1775,8 @@
     :cond_0
     sub-int/2addr v3, v1
 
-    .line 7
     div-int/lit8 v3, v3, 0x2
 
-    .line 8
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
@@ -1982,7 +1793,6 @@
 
     int-to-float v4, v4
 
-    .line 9
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v5
@@ -2003,21 +1813,17 @@
 
     int-to-float v1, v6
 
-    .line 10
     invoke-virtual {v0, v2, v4, v5, v1}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 11
     :goto_0
     iget-object v0, p0, Lcom/yalantis/ucrop/view/OverlayView;->z:Lcom/yalantis/ucrop/c/d;
 
     if-eqz v0, :cond_1
 
-    .line 12
     iget-object v1, p0, Lcom/yalantis/ucrop/view/OverlayView;->a:Landroid/graphics/RectF;
 
     invoke-interface {v0, v1}, Lcom/yalantis/ucrop/c/d;->a(Landroid/graphics/RectF;)V
 
-    .line 13
     :cond_1
     invoke-direct {p0}, Lcom/yalantis/ucrop/view/OverlayView;->b()V
 

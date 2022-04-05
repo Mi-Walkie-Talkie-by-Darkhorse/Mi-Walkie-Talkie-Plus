@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/FluentIterable;
 .super Ljava/lang/Object;
-.source "FluentIterable.java"
 
 # interfaces
 .implements Ljava/lang/Iterable;
@@ -44,10 +43,8 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     return-void
@@ -63,10 +60,8 @@
         }
     .end annotation
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -95,7 +90,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -119,7 +113,6 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/collect/FluentIterable;
 
     if-eqz v0, :cond_0
@@ -154,7 +147,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Lists;->newArrayList([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object p0
@@ -178,7 +170,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->all(Ljava/lang/Iterable;Lcom/google/common/base/Predicate;)Z
@@ -198,7 +189,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->any(Ljava/lang/Iterable;Lcom/google/common/base/Predicate;)Z
@@ -226,7 +216,6 @@
     .annotation runtime Ljavax/annotation/CheckReturnValue;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->concat(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/lang/Iterable;
@@ -256,7 +245,6 @@
     .annotation runtime Ljavax/annotation/CheckReturnValue;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -281,7 +269,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->contains(Ljava/lang/Iterable;Ljava/lang/Object;)Z
@@ -301,17 +288,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     instance-of v1, v0, Ljava/util/Collection;
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-static {v0}, Lcom/google/common/collect/Collections2;->cast(Ljava/lang/Iterable;)Ljava/util/Collection;
 
     move-result-object v0
@@ -320,7 +304,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_0
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -337,7 +320,6 @@
 
     move-result-object v1
 
-    .line 5
     invoke-interface {p1, v1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
@@ -360,7 +342,6 @@
     .annotation runtime Ljavax/annotation/CheckReturnValue;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0}, Lcom/google/common/collect/Iterables;->cycle(Ljava/lang/Iterable;)Ljava/lang/Iterable;
@@ -389,7 +370,6 @@
     .annotation runtime Ljavax/annotation/CheckReturnValue;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->filter(Ljava/lang/Iterable;Lcom/google/common/base/Predicate;)Ljava/lang/Iterable;
@@ -424,7 +404,6 @@
     .annotation runtime Ljavax/annotation/CheckReturnValue;
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->filter(Ljava/lang/Iterable;Ljava/lang/Class;)Ljava/lang/Iterable;
@@ -448,14 +427,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
@@ -493,7 +470,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->tryFind(Ljava/lang/Iterable;Lcom/google/common/base/Predicate;)Lcom/google/common/base/Optional;
@@ -511,7 +487,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->get(Ljava/lang/Iterable;I)Ljava/lang/Object;
@@ -535,7 +510,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Multimaps;->index(Ljava/lang/Iterable;Lcom/google/common/base/Function;)Lcom/google/common/collect/ImmutableListMultimap;
@@ -548,7 +522,6 @@
 .method public final isEmpty()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -569,7 +542,6 @@
     .annotation build Lcom/google/common/annotations/Beta;
     .end annotation
 
-    .line 1
     invoke-virtual {p1, p0}, Lcom/google/common/base/Joiner;->join(Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object p1
@@ -587,31 +559,26 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     instance-of v1, v0, Ljava/util/List;
 
     if-eqz v1, :cond_1
 
-    .line 2
     check-cast v0, Ljava/util/List;
 
-    .line 3
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 4
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object v0
 
     return-object v0
 
-    .line 5
     :cond_0
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -629,27 +596,23 @@
 
     return-object v0
 
-    .line 6
     :cond_1
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 7
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    .line 8
     invoke-static {}, Lcom/google/common/base/Optional;->absent()Lcom/google/common/base/Optional;
 
     move-result-object v0
 
     return-object v0
 
-    .line 9
     :cond_2
     iget-object v1, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
@@ -657,10 +620,8 @@
 
     if-eqz v2, :cond_3
 
-    .line 10
     check-cast v1, Ljava/util/SortedSet;
 
-    .line 11
     invoke-interface {v1}, Ljava/util/SortedSet;->last()Ljava/lang/Object;
 
     move-result-object v0
@@ -671,20 +632,17 @@
 
     return-object v0
 
-    .line 12
     :cond_3
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 13
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-nez v2, :cond_3
 
-    .line 14
     invoke-static {v1}, Lcom/google/common/base/Optional;->of(Ljava/lang/Object;)Lcom/google/common/base/Optional;
 
     move-result-object v0
@@ -705,7 +663,6 @@
     .annotation runtime Ljavax/annotation/CheckReturnValue;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->limit(Ljava/lang/Iterable;I)Ljava/lang/Iterable;
@@ -722,7 +679,6 @@
 .method public final size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0}, Lcom/google/common/collect/Iterables;->size(Ljava/lang/Iterable;)I
@@ -745,7 +701,6 @@
     .annotation runtime Ljavax/annotation/CheckReturnValue;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->skip(Ljava/lang/Iterable;I)Ljava/lang/Iterable;
@@ -773,7 +728,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->toArray(Ljava/lang/Iterable;Ljava/lang/Class;)[Ljava/lang/Object;
@@ -793,7 +747,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
@@ -817,7 +770,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Maps;->toMap(Ljava/lang/Iterable;Lcom/google/common/base/Function;)Lcom/google/common/collect/ImmutableMap;
@@ -837,7 +789,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0}, Lcom/google/common/collect/ImmutableSet;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableSet;
@@ -859,7 +810,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/collect/Ordering;->from(Ljava/util/Comparator;)Lcom/google/common/collect/Ordering;
 
     move-result-object p1
@@ -885,7 +835,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {p1, v0}, Lcom/google/common/collect/ImmutableSortedSet;->copyOf(Ljava/util/Comparator;Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableSortedSet;
@@ -898,7 +847,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0}, Lcom/google/common/collect/Iterables;->toString(Ljava/lang/Iterable;)Ljava/lang/String;
@@ -922,7 +870,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Iterables;->transform(Ljava/lang/Iterable;Lcom/google/common/base/Function;)Ljava/lang/Iterable;
@@ -952,7 +899,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/FluentIterable;->transform(Lcom/google/common/base/Function;)Lcom/google/common/collect/FluentIterable;
 
     move-result-object p1
@@ -982,7 +928,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/FluentIterable;->iterable:Ljava/lang/Iterable;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Maps;->uniqueIndex(Ljava/lang/Iterable;Lcom/google/common/base/Function;)Lcom/google/common/collect/ImmutableMap;

@@ -1,6 +1,5 @@
 .class Lcom/autonavi/ae/gmap/GLMapEngine$14;
 .super Ljava/lang/Object;
-.source "GLMapEngine.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/autonavi/ae/gmap/GLMapEngine;ILcom/autonavi/ae/gmap/scenic/ScenicInfor;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$14;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iput p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine$14;->val$engineID:I
@@ -46,7 +44,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$14;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-static {v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->access$1000(Lcom/autonavi/ae/gmap/GLMapEngine;)Lcom/autonavi/ae/gmap/scenic/ScenicListener;
@@ -55,7 +52,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$14;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-static {v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->access$1000(Lcom/autonavi/ae/gmap/GLMapEngine;)Lcom/autonavi/ae/gmap/scenic/ScenicListener;

@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/TextViewTextChangesObservable;
 .super Lcom/jakewharton/rxbinding3/InitialValueObservable;
-.source "TextViewTextChangesObservable.kt"
 
 
 # annotations
@@ -70,7 +69,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lcom/jakewharton/rxbinding3/InitialValueObservable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangesObservable;->view:Landroid/widget/TextView;
@@ -83,7 +81,6 @@
 .method protected getInitialValue()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangesObservable;->view:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -96,7 +93,6 @@
 .method public bridge synthetic getInitialValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangesObservable;->getInitialValue()Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -124,17 +120,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangesObservable$Listener;
 
     iget-object v1, p0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangesObservable;->view:Landroid/widget/TextView;
 
     invoke-direct {v0, v1, p1}, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangesObservable$Listener;-><init>(Landroid/widget/TextView;Lio/reactivex/Observer;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangesObservable;->view:Landroid/widget/TextView;
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V

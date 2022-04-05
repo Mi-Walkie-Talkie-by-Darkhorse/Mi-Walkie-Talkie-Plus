@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/versionedparcelable/ParcelField;
 .super Ljava/lang/Object;
-.source "ParcelField.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

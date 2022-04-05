@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/maps/model/BitmapDescriptor;
 .super Ljava/lang/Object;
-.source "BitmapDescriptor.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -23,7 +22,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/model/BitmapDescriptorCreator;
 
     invoke-direct {v0}, Lcom/amap/api/maps/model/BitmapDescriptorCreator;-><init>()V
@@ -36,34 +34,28 @@
 .method constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->a:I
 
-    .line 3
     iput v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->b:I
 
     if-eqz p1, :cond_1
 
-    .line 4
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v0
 
     iput v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->a:I
 
-    .line 5
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v0
 
     iput v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->b:I
 
-    .line 6
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
 
     move-result-object v0
@@ -72,7 +64,6 @@
 
     if-nez v0, :cond_0
 
-    .line 7
     sget-object v0, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Bitmap;->copy(Landroid/graphics/Bitmap$Config;Z)Landroid/graphics/Bitmap;
@@ -83,7 +74,6 @@
 
     return-void
 
-    .line 8
     :cond_0
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
 
@@ -102,24 +92,18 @@
 .method private constructor <init>(Landroid/graphics/Bitmap;II)V
     .locals 1
 
-    .line 9
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 10
     iput v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->a:I
 
-    .line 11
     iput v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->b:I
 
-    .line 12
     iput p2, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->a:I
 
-    .line 13
     iput p3, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->b:I
 
-    .line 14
     iput-object p1, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->c:Landroid/graphics/Bitmap;
 
     return-void
@@ -130,7 +114,6 @@
 .method public final clone()Lcom/amap/api/maps/model/BitmapDescriptor;
     .locals 4
 
-    .line 2
     :try_start_0
     new-instance v0, Lcom/amap/api/maps/model/BitmapDescriptor;
 
@@ -138,7 +121,6 @@
 
     iget-object v2, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->c:Landroid/graphics/Bitmap;
 
-    .line 3
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getConfig()Landroid/graphics/Bitmap$Config;
 
     move-result-object v2
@@ -162,7 +144,6 @@
     :catchall_0
     move-exception v0
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -178,7 +159,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/amap/api/maps/model/BitmapDescriptor;->clone()Lcom/amap/api/maps/model/BitmapDescriptor;
 
     move-result-object v0
@@ -197,7 +177,6 @@
 .method public final equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->c:Landroid/graphics/Bitmap;
 
     const/4 v1, 0x0
@@ -224,7 +203,6 @@
 
     return p1
 
-    .line 2
     :cond_2
     const-class v0, Lcom/amap/api/maps/model/BitmapDescriptor;
 
@@ -236,11 +214,9 @@
 
     return v1
 
-    .line 3
     :cond_3
     check-cast p1, Lcom/amap/api/maps/model/BitmapDescriptor;
 
-    .line 4
     iget-object v0, p1, Lcom/amap/api/maps/model/BitmapDescriptor;->c:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_6
@@ -253,7 +229,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_4
     iget v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->a:I
 
@@ -273,7 +248,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_5
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->c:Landroid/graphics/Bitmap;
@@ -297,7 +271,6 @@
 .method public final getBitmap()Landroid/graphics/Bitmap;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->c:Landroid/graphics/Bitmap;
 
     return-object v0
@@ -306,7 +279,6 @@
 .method public final getHeight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->b:I
 
     return v0
@@ -315,7 +287,6 @@
 .method public final getWidth()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->a:I
 
     return v0
@@ -324,7 +295,6 @@
 .method public final hashCode()I
     .locals 1
 
-    .line 1
     invoke-super {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
@@ -335,7 +305,6 @@
 .method public final recycle()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->c:Landroid/graphics/Bitmap;
 
     if-eqz v0, :cond_0
@@ -346,14 +315,12 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->c:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->c:Landroid/graphics/Bitmap;
 
     :cond_0
@@ -363,17 +330,14 @@
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->c:Landroid/graphics/Bitmap;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 2
     iget p2, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->a:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 3
     iget p2, p0, Lcom/amap/api/maps/model/BitmapDescriptor;->b:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

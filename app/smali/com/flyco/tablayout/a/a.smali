@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/flyco/tablayout/a/a;
 .super Ljava/lang/Object;
-.source "CustomTabEntity.java"
 
 
 # virtual methods

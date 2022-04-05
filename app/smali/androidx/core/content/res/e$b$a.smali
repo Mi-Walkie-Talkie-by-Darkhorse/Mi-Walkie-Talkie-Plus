@@ -1,6 +1,5 @@
 .class Landroidx/core/content/res/e$b$a;
 .super Ljava/lang/Object;
-.source "ResourcesCompat.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -47,12 +45,10 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object v0, Landroidx/core/content/res/e$b$a;->a:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     sget-boolean v1, Landroidx/core/content/res/e$b$a;->c:Z
     :try_end_0
@@ -64,7 +60,6 @@
 
     const/4 v1, 0x1
 
-    .line 3
     :try_start_1
     const-class v3, Landroid/content/res/Resources$Theme;
 
@@ -78,7 +73,6 @@
 
     sput-object v3, Landroidx/core/content/res/e$b$a;->b:Ljava/lang/reflect/Method;
 
-    .line 4
     invoke-virtual {v3, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_1
     .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_0
@@ -94,14 +88,11 @@
 
     const-string v5, "Failed to retrieve rebase() method"
 
-    .line 5
     invoke-static {v4, v5, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 6
     :goto_0
     sput-boolean v1, Landroidx/core/content/res/e$b$a;->c:Z
 
-    .line 7
     :cond_0
     sget-object v1, Landroidx/core/content/res/e$b$a;->b:Ljava/lang/reflect/Method;
     :try_end_2
@@ -109,7 +100,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 8
     :try_start_3
     sget-object v1, Landroidx/core/content/res/e$b$a;->b:Ljava/lang/reflect/Method;
 
@@ -137,15 +127,12 @@
 
     const-string v2, "Failed to invoke rebase() method via reflection"
 
-    .line 9
     invoke-static {v1, v2, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     const/4 p0, 0x0
 
-    .line 10
     sput-object p0, Landroidx/core/content/res/e$b$a;->b:Ljava/lang/reflect/Method;
 
-    .line 11
     :cond_1
     :goto_2
     monitor-exit v0

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/e/b/b$d;
 .super Ljava/lang/Object;
-.source "OsmClusterOverlayManager.java"
 
 # interfaces
 .implements Lcom/nostra13/universalimageloader/core/listener/ImageLoadingListener;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/e/b/b;ZILcom/ifengyu/intercom/ui/map/f/a/f;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$d;->d:Lcom/ifengyu/intercom/ui/map/e/b/b;
 
     iput-boolean p2, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$d;->a:Z
@@ -58,7 +56,6 @@
 
     if-eqz p3, :cond_1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$d;->d:Lcom/ifengyu/intercom/ui/map/e/b/b;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->b(Lcom/ifengyu/intercom/ui/map/e/b/b;)Landroid/content/Context;
@@ -75,7 +72,6 @@
 
     const p2, 0x7f090257
 
-    .line 2
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -84,19 +80,16 @@
 
     const v0, 0x7f090256
 
-    .line 3
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 4
     iget-boolean v1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$d;->a:Z
 
     if-eqz v1, :cond_0
 
-    .line 5
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$d;->d:Lcom/ifengyu/intercom/ui/map/e/b/b;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/map/e/b/b;->b(Lcom/ifengyu/intercom/ui/map/e/b/b;)Landroid/content/Context;
@@ -115,7 +108,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 6
     invoke-static {p3}, Lcom/ifengyu/intercom/i/c0;->a(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
 
     move-result-object p3
@@ -123,7 +115,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 7
     invoke-virtual {p2, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     const v2, 0x7f110273
@@ -132,7 +123,6 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    .line 8
     iget v4, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$d;->b:I
 
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -147,17 +137,14 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 9
     invoke-virtual {p2, p3}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 10
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->a(Landroid/view/View;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    .line 11
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/map/e/b/b$d;->c:Lcom/ifengyu/intercom/ui/map/f/a/f;
 
     invoke-virtual {p2, p1}, Lorg/osmdroid/views/overlay/OverlayItem;->setMarker(Landroid/graphics/drawable/Drawable;)V

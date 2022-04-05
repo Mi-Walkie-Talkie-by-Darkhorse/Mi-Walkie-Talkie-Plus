@@ -1,6 +1,5 @@
 .class Lcom/google/common/eventbus/AsyncEventBus$1;
 .super Ljava/lang/Object;
-.source "AsyncEventBus.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/eventbus/AsyncEventBus;Ljava/lang/Object;Lcom/google/common/eventbus/EventSubscriber;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/eventbus/AsyncEventBus$1;->this$0:Lcom/google/common/eventbus/AsyncEventBus;
 
     iput-object p2, p0, Lcom/google/common/eventbus/AsyncEventBus$1;->val$event:Ljava/lang/Object;
@@ -46,7 +44,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/eventbus/AsyncEventBus$1;->this$0:Lcom/google/common/eventbus/AsyncEventBus;
 
     iget-object v1, p0, Lcom/google/common/eventbus/AsyncEventBus$1;->val$event:Ljava/lang/Object;

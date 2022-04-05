@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/dh;
 .super Lcom/amap/api/col/l3/fp;
-.source "CustomStyleRequest.java"
 
 
 # annotations
@@ -32,15 +31,12 @@
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/amap/api/col/l3/fp;-><init>(Landroid/content/Context;Ljava/lang/Object;)V
 
     const-string p2, "/map/styles"
 
-    .line 2
     iput-object p2, p0, Lcom/amap/api/col/l3/dh;->a:Ljava/lang/String;
 
-    .line 3
     iput-object p1, p0, Lcom/amap/api/col/l3/dh;->b:Landroid/content/Context;
 
     return-void
@@ -56,7 +52,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/amap/api/col/l3/dh$a;
 
     invoke-direct {v0, p0}, Lcom/amap/api/col/l3/dh$a;-><init>(Lcom/amap/api/col/l3/dh;)V
@@ -78,22 +73,18 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {}, Lcom/amap/api/col/l3/em;->f()Lcom/amap/api/col/l3/gh;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Lcom/amap/api/col/l3/gh;->b()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 5
     sget-object v2, Lcom/amap/api/col/l3/p;->c:Ljava/lang/String;
 
     const-string v3, "User-Agent"
@@ -104,10 +95,8 @@
 
     const-string v3, "gzip"
 
-    .line 6
     invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
     sget-object v2, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     const/4 v3, 0x2
@@ -134,20 +123,16 @@
 
     invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/dh;->b:Landroid/content/Context;
 
-    .line 9
     invoke-static {v0}, Lcom/amap/api/col/l3/fz;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
     const-string v2, "X-INFO"
 
-    .line 10
     invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
     iget-object v0, p0, Lcom/amap/api/col/l3/dh;->b:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/fw;->f(Landroid/content/Context;)Ljava/lang/String;
@@ -162,7 +147,6 @@
 
     const-string v2, "2.1"
 
-    .line 12
     invoke-interface {v1, v0, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object v1
@@ -171,7 +155,6 @@
 .method public final a(Ljava/lang/String;)V
     .locals 0
 
-    .line 13
     iput-object p1, p0, Lcom/amap/api/col/l3/dh;->k:Ljava/lang/String;
 
     return-void
@@ -202,12 +185,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/dh;->b:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/amap/api/col/l3/fw;->f(Landroid/content/Context;)Ljava/lang/String;
@@ -222,22 +203,18 @@
 
     const-string v2, "bin"
 
-    .line 3
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
     iget-object v1, p0, Lcom/amap/api/col/l3/dh;->k:Ljava/lang/String;
 
     const-string v2, "styleid"
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
     invoke-static {}, Lcom/amap/api/col/l3/fz;->a()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 6
     iget-object v2, p0, Lcom/amap/api/col/l3/dh;->b:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/gi;->b(Ljava/util/Map;)Ljava/lang/String;
@@ -250,12 +227,10 @@
 
     const-string v3, "ts"
 
-    .line 7
     invoke-interface {v0, v3, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v1, "scode"
 
-    .line 8
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object v0
@@ -264,7 +239,6 @@
 .method public final c()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

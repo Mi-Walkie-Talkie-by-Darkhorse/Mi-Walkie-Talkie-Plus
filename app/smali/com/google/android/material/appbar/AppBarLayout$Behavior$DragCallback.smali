@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/android/material/appbar/AppBarLayout$Behavior$DragCallback;
 .super Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$BaseDragCallback;
-.source "AppBarLayout.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$BaseDragCallback;-><init>()V
 
     return-void

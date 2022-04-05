@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo;
 .super Ljava/lang/Object;
-.source "MiAccountPhoneInfo.java"
 
 # interfaces
 .implements Lcom/xiaomi/account/auth/PhoneInfo;
@@ -20,26 +19,20 @@
 .method public constructor <init>(Landroid/content/Context;J)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "MiAccountPhoneInfo"
 
-    .line 2
     iput-object v0, p0, Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo;->TAG:Ljava/lang/String;
 
     const-wide/16 v0, 0x7d0
 
-    .line 3
     iput-wide v0, p0, Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo;->timeOutMs:J
 
-    .line 4
     iput-object p1, p0, Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo;->mContext:Landroid/content/Context;
 
-    .line 5
     iput-wide p2, p0, Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo;->timeOutMs:J
 
-    .line 6
     new-instance p1, Lcom/xiaomi/phonenum/PhoneNumKeeperFactory;
 
     invoke-direct {p1}, Lcom/xiaomi/phonenum/PhoneNumKeeperFactory;-><init>()V
@@ -54,7 +47,6 @@
 
     iput-object p1, p0, Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo;->mPhoneNumKeeper:Lcom/xiaomi/phonenum/PhoneNumKeeper;
 
-    .line 7
     new-instance p2, Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo$1;
 
     invoke-direct {p2, p0}, Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo$1;-><init>(Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo;)V
@@ -69,12 +61,10 @@
 .method public blokingGetPhoneInfo(I)Landroid/os/Bundle;
     .locals 4
 
-    .line 1
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo;->mPhoneNumKeeper:Lcom/xiaomi/phonenum/PhoneNumKeeper;
 
@@ -94,14 +84,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget v1, p1, Lcom/xiaomi/phonenum/bean/PhoneNum;->errorCode:I
 
     if-nez v1, :cond_0
 
     const-string v1, "activatorToken"
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -122,7 +110,6 @@
 
     const-string v1, "hash"
 
-    .line 5
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -143,7 +130,6 @@
 
     const-string v1, "operator"
 
-    .line 6
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -168,7 +154,6 @@
 
     const-string v1, "operatorLink"
 
-    .line 7
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -189,7 +174,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_0
     iget-object v1, p0, Lcom/xiaomi/account/openauth/internal/MiAccountPhoneInfo;->TAG:Ljava/lang/String;
 
@@ -218,7 +202,6 @@
     :catch_0
     move-exception p1
 
-    .line 9
     invoke-virtual {p1}, Ljava/util/concurrent/TimeoutException;->printStackTrace()V
 
     goto :goto_0
@@ -226,7 +209,6 @@
     :catch_1
     move-exception p1
 
-    .line 10
     invoke-virtual {p1}, Ljava/util/concurrent/ExecutionException;->printStackTrace()V
 
     goto :goto_0
@@ -234,7 +216,6 @@
     :catch_2
     move-exception p1
 
-    .line 11
     invoke-virtual {p1}, Ljava/lang/InterruptedException;->printStackTrace()V
 
     :goto_0

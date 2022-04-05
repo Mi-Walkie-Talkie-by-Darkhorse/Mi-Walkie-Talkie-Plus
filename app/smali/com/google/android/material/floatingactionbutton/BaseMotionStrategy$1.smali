@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/floatingactionbutton/BaseMotionStrategy$1;
 .super Landroid/util/Property;
-.source "BaseMotionStrategy.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/google/android/material/floatingactionbutton/BaseMotionStrategy;Ljava/lang/Class;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/floatingactionbutton/BaseMotionStrategy$1;->this$0:Lcom/google/android/material/floatingactionbutton/BaseMotionStrategy;
 
     invoke-direct {p0, p2, p3}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
@@ -44,10 +42,8 @@
 .method public get(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;)Ljava/lang/Float;
     .locals 3
 
-    .line 2
     iget-object v0, p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->originalTextCsl:Landroid/content/res/ColorStateList;
 
-    .line 3
     invoke-virtual {p1}, Landroid/widget/Button;->getDrawableState()[I
 
     move-result-object v1
@@ -64,17 +60,14 @@
 
     move-result v2
 
-    .line 4
     invoke-virtual {v0, v1, v2}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
     move-result v0
 
-    .line 5
     invoke-static {v0}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v0
 
-    .line 6
     invoke-virtual {p1}, Landroid/widget/Button;->getCurrentTextColor()I
 
     move-result p1
@@ -97,7 +90,6 @@
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 7
     invoke-static {v0, v1, p1}, Lcom/google/android/material/animation/AnimationUtils;->lerp(FFF)F
 
     move-result p1
@@ -112,7 +104,6 @@
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/floatingactionbutton/BaseMotionStrategy$1;->get(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;)Ljava/lang/Float;
@@ -125,10 +116,8 @@
 .method public set(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Ljava/lang/Float;)V
     .locals 5
 
-    .line 2
     iget-object v0, p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->originalTextCsl:Landroid/content/res/ColorStateList;
 
-    .line 3
     invoke-virtual {p1}, Landroid/widget/Button;->getDrawableState()[I
 
     move-result-object v1
@@ -145,12 +134,10 @@
 
     move-result v2
 
-    .line 4
     invoke-virtual {v0, v1, v2}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
     move-result v0
 
-    .line 5
     invoke-static {v0}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v1
@@ -175,32 +162,26 @@
 
     float-to-int v1, v1
 
-    .line 6
     invoke-static {v0}, Landroid/graphics/Color;->red(I)I
 
     move-result v2
 
-    .line 7
     invoke-static {v0}, Landroid/graphics/Color;->green(I)I
 
     move-result v3
 
-    .line 8
     invoke-static {v0}, Landroid/graphics/Color;->blue(I)I
 
     move-result v0
 
-    .line 9
     invoke-static {v1, v2, v3, v0}, Landroid/graphics/Color;->argb(IIII)I
 
     move-result v0
 
-    .line 10
     invoke-static {v0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
-    .line 11
     invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
 
     move-result p2
@@ -211,14 +192,12 @@
 
     if-nez p2, :cond_0
 
-    .line 12
     iget-object p2, p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->originalTextCsl:Landroid/content/res/ColorStateList;
 
     invoke-virtual {p1, p2}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->silentlyUpdateTextColor(Landroid/content/res/ColorStateList;)V
 
     goto :goto_0
 
-    .line 13
     :cond_0
     invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->silentlyUpdateTextColor(Landroid/content/res/ColorStateList;)V
 
@@ -229,7 +208,6 @@
 .method public bridge synthetic set(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
     check-cast p2, Ljava/lang/Float;

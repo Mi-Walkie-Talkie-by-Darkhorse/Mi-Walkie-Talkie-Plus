@@ -1,6 +1,5 @@
 .class public abstract Landroidx/room/RoomDatabase;
 .super Ljava/lang/Object;
-.source "RoomDatabase.java"
 
 
 # annotations
@@ -63,29 +62,24 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-direct {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;-><init>()V
 
     iput-object v0, p0, Landroidx/room/RoomDatabase;->h:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
-    .line 3
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
     iput-object v0, p0, Landroidx/room/RoomDatabase;->i:Ljava/lang/ThreadLocal;
 
-    .line 4
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
 
-    .line 5
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->d()Landroidx/room/g;
 
     move-result-object v0
@@ -98,7 +92,6 @@
 .method private static l()Z
     .locals 2
 
-    .line 1
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -138,13 +131,10 @@
         .end annotation
     .end param
 
-    .line 10
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->a()V
 
-    .line 11
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->b()V
 
-    .line 12
     iget-object v0, p0, Landroidx/room/RoomDatabase;->c:La/g/a/c;
 
     invoke-interface {v0}, La/g/a/c;->a()La/g/a/b;
@@ -169,7 +159,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-virtual {p0, p1, v0}, Landroidx/room/RoomDatabase;->a(La/g/a/e;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
 
     move-result-object p1
@@ -190,22 +179,18 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 5
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->a()V
 
-    .line 6
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->b()V
 
     if-eqz p2, :cond_0
 
-    .line 7
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
 
     if-lt v0, v1, :cond_0
 
-    .line 8
     iget-object v0, p0, Landroidx/room/RoomDatabase;->c:La/g/a/c;
 
     invoke-interface {v0}, La/g/a/c;->a()La/g/a/b;
@@ -218,7 +203,6 @@
 
     return-object p1
 
-    .line 9
     :cond_0
     iget-object p2, p0, Landroidx/room/RoomDatabase;->c:La/g/a/c;
 
@@ -249,23 +233,19 @@
         }
     .end annotation
 
-    .line 13
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->c()V
 
-    .line 14
     :try_start_0
     invoke-interface {p1}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 15
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->k()V
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 16
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->e()V
 
     return-object p1
@@ -278,7 +258,6 @@
     :catch_0
     move-exception p1
 
-    .line 17
     :try_start_1
     invoke-static {p1}, Landroidx/room/r/e;->a(Ljava/lang/Exception;)V
     :try_end_1
@@ -291,17 +270,14 @@
     :catch_1
     move-exception p1
 
-    .line 18
     :try_start_2
     throw p1
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 19
     :goto_0
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->e()V
 
-    .line 20
     throw p1
 .end method
 
@@ -313,14 +289,12 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Landroidx/room/RoomDatabase;->e:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {}, Landroidx/room/RoomDatabase;->l()Z
 
@@ -330,7 +304,6 @@
 
     return-void
 
-    .line 3
     :cond_1
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -348,7 +321,6 @@
         .end annotation
     .end param
 
-    .line 21
     iget-object v0, p0, Landroidx/room/RoomDatabase;->d:Landroidx/room/g;
 
     invoke-virtual {v0, p1}, Landroidx/room/g;->a(La/g/a/b;)V
@@ -364,7 +336,6 @@
         }
     .end annotation
 
-    .line 15
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->i()Z
 
     move-result v0
@@ -381,7 +352,6 @@
 
     goto :goto_0
 
-    .line 16
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -405,25 +375,20 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Landroidx/room/RoomDatabase;->a(Landroidx/room/a;)La/g/a/c;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/room/RoomDatabase;->c:La/g/a/c;
 
-    .line 2
     instance-of v1, v0, Landroidx/room/m;
 
     if-eqz v1, :cond_0
 
-    .line 3
     check-cast v0, Landroidx/room/m;
 
-    .line 4
     invoke-virtual {v0, p1}, Landroidx/room/m;->a(Landroidx/room/a;)V
 
-    .line 5
     :cond_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -433,7 +398,6 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 6
     iget-object v0, p1, Landroidx/room/a;->g:Landroidx/room/RoomDatabase$JournalMode;
 
     sget-object v1, Landroidx/room/RoomDatabase$JournalMode;->c:Landroidx/room/RoomDatabase$JournalMode;
@@ -444,44 +408,36 @@
 
     const/4 v2, 0x1
 
-    .line 7
     :cond_1
     iget-object v0, p0, Landroidx/room/RoomDatabase;->c:La/g/a/c;
 
     invoke-interface {v0, v2}, La/g/a/c;->a(Z)V
 
-    .line 8
     :cond_2
     iget-object v0, p1, Landroidx/room/a;->e:Ljava/util/List;
 
     iput-object v0, p0, Landroidx/room/RoomDatabase;->g:Ljava/util/List;
 
-    .line 9
     iget-object v0, p1, Landroidx/room/a;->h:Ljava/util/concurrent/Executor;
 
     iput-object v0, p0, Landroidx/room/RoomDatabase;->b:Ljava/util/concurrent/Executor;
 
-    .line 10
     new-instance v0, Landroidx/room/p;
 
     iget-object v1, p1, Landroidx/room/a;->i:Ljava/util/concurrent/Executor;
 
     invoke-direct {v0, v1}, Landroidx/room/p;-><init>(Ljava/util/concurrent/Executor;)V
 
-    .line 11
     iget-boolean v0, p1, Landroidx/room/a;->f:Z
 
     iput-boolean v0, p0, Landroidx/room/RoomDatabase;->e:Z
 
-    .line 12
     iput-boolean v2, p0, Landroidx/room/RoomDatabase;->f:Z
 
-    .line 13
     iget-boolean v0, p1, Landroidx/room/a;->j:Z
 
     if-eqz v0, :cond_3
 
-    .line 14
     iget-object v0, p0, Landroidx/room/RoomDatabase;->d:Landroidx/room/g;
 
     iget-object v1, p1, Landroidx/room/a;->b:Landroid/content/Context;
@@ -499,22 +455,18 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->a()V
 
-    .line 2
     iget-object v0, p0, Landroidx/room/RoomDatabase;->c:La/g/a/c;
 
     invoke-interface {v0}, La/g/a/c;->a()La/g/a/b;
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, Landroidx/room/RoomDatabase;->d:Landroidx/room/g;
 
     invoke-virtual {v1, v0}, Landroidx/room/g;->b(La/g/a/b;)V
 
-    .line 4
     invoke-interface {v0}, La/g/a/b;->beginTransaction()V
 
     return-void
@@ -530,7 +482,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/room/RoomDatabase;->c:La/g/a/c;
 
     invoke-interface {v0}, La/g/a/c;->a()La/g/a/b;
@@ -539,14 +490,12 @@
 
     invoke-interface {v0}, La/g/a/b;->endTransaction()V
 
-    .line 2
     invoke-virtual {p0}, Landroidx/room/RoomDatabase;->i()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Landroidx/room/RoomDatabase;->d:Landroidx/room/g;
 
     invoke-virtual {v0}, Landroidx/room/g;->b()V
@@ -558,7 +507,6 @@
 .method f()Ljava/util/concurrent/locks/Lock;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/room/RoomDatabase;->h:Ljava/util/concurrent/locks/ReentrantReadWriteLock;
 
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantReadWriteLock;->readLock()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;
@@ -573,7 +521,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/room/RoomDatabase;->c:La/g/a/c;
 
     return-object v0
@@ -584,7 +531,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/room/RoomDatabase;->b:Ljava/util/concurrent/Executor;
 
     return-object v0
@@ -593,7 +539,6 @@
 .method public i()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/room/RoomDatabase;->c:La/g/a/c;
 
     invoke-interface {v0}, La/g/a/c;->a()La/g/a/b;
@@ -610,12 +555,10 @@
 .method public j()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/room/RoomDatabase;->a:La/g/a/b;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, La/g/a/b;->isOpen()Z
 
     move-result v0
@@ -638,7 +581,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/room/RoomDatabase;->c:La/g/a/c;
 
     invoke-interface {v0}, La/g/a/c;->a()La/g/a/b;

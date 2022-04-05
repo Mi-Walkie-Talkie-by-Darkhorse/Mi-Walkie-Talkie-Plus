@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/protobuf/AbstractMessage;
 .super Lcom/google/protobuf/AbstractMessageLite;
-.source "AbstractMessage.java"
 
 # interfaces
 .implements Lcom/google/protobuf/Message;
@@ -22,12 +21,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/AbstractMessageLite;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Lcom/google/protobuf/AbstractMessage;->memoizedSize:I
 
     return-void
@@ -36,7 +33,6 @@
 .method private static compareBytes(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p0, [B
 
     if-eqz v0, :cond_0
@@ -45,7 +41,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, [B
 
     check-cast p1, [B
@@ -56,7 +51,6 @@
 
     return p0
 
-    .line 3
     :cond_0
     invoke-static {p0}, Lcom/google/protobuf/AbstractMessage;->toByteString(Ljava/lang/Object;)Lcom/google/protobuf/ByteString;
 
@@ -89,7 +83,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
     move-result v0
@@ -104,7 +97,6 @@
 
     return v2
 
-    .line 2
     :cond_0
     invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -127,7 +119,6 @@
 
     check-cast v1, Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
-    .line 3
     invoke-interface {p1, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v3
@@ -136,18 +127,15 @@
 
     return v2
 
-    .line 4
     :cond_2
     invoke-interface {p0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 5
     invoke-interface {p1, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v4
 
-    .line 6
     invoke-virtual {v1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getType()Lcom/google/protobuf/Descriptors$FieldDescriptor$Type;
 
     move-result-object v5
@@ -156,20 +144,16 @@
 
     if-ne v5, v6, :cond_6
 
-    .line 7
     invoke-virtual {v1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->isRepeated()Z
 
     move-result v1
 
     if-eqz v1, :cond_5
 
-    .line 8
     check-cast v3, Ljava/util/List;
 
-    .line 9
     check-cast v4, Ljava/util/List;
 
-    .line 10
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v1
@@ -185,7 +169,6 @@
     :cond_3
     const/4 v1, 0x0
 
-    .line 11
     :goto_0
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -193,7 +176,6 @@
 
     if-ge v1, v5, :cond_1
 
-    .line 12
     invoke-interface {v3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -215,7 +197,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_5
     invoke-static {v3, v4}, Lcom/google/protobuf/AbstractMessage;->compareBytes(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -225,7 +206,6 @@
 
     return v2
 
-    .line 14
     :cond_6
     invoke-virtual {v3, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -253,7 +233,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p1
@@ -275,28 +254,24 @@
 
     check-cast v0, Ljava/util/Map$Entry;
 
-    .line 2
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
-    .line 3
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
     mul-int/lit8 p0, p0, 0x25
 
-    .line 4
     invoke-virtual {v1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getNumber()I
 
     move-result v2
 
     add-int/2addr p0, v2
 
-    .line 5
     invoke-virtual {v1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getType()Lcom/google/protobuf/Descriptors$FieldDescriptor$Type;
 
     move-result-object v2
@@ -307,7 +282,6 @@
 
     mul-int/lit8 p0, p0, 0x35
 
-    .line 6
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
@@ -317,7 +291,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {v1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->isRepeated()Z
 
@@ -325,12 +298,10 @@
 
     if-eqz v1, :cond_1
 
-    .line 8
     check-cast v0, Ljava/util/List;
 
     mul-int/lit8 p0, p0, 0x35
 
-    .line 9
     invoke-static {v0}, Lcom/google/protobuf/Internal;->hashEnumList(Ljava/util/List;)I
 
     move-result v0
@@ -340,7 +311,6 @@
     :cond_1
     mul-int/lit8 p0, p0, 0x35
 
-    .line 10
     check-cast v0, Lcom/google/protobuf/Internal$EnumLite;
 
     invoke-static {v0}, Lcom/google/protobuf/Internal;->hashEnum(Lcom/google/protobuf/Internal$EnumLite;)I
@@ -356,12 +326,10 @@
 .method private static toByteString(Ljava/lang/Object;)Lcom/google/protobuf/ByteString;
     .locals 1
 
-    .line 1
     instance-of v0, p0, [B
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, [B
 
     invoke-static {p0}, Lcom/google/protobuf/ByteString;->copyFrom([B)Lcom/google/protobuf/ByteString;
@@ -370,7 +338,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     check-cast p0, Lcom/google/protobuf/ByteString;
 
@@ -388,7 +355,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/google/protobuf/Message;
 
@@ -398,11 +364,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/google/protobuf/Message;
 
-    .line 3
     invoke-interface {p0}, Lcom/google/protobuf/MessageOrBuilder;->getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v1
@@ -415,7 +379,6 @@
 
     return v2
 
-    .line 4
     :cond_2
     invoke-interface {p0}, Lcom/google/protobuf/MessageOrBuilder;->getAllFields()Ljava/util/Map;
 
@@ -465,7 +428,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/protobuf/MessageReflection;->findMissingFields(Lcom/google/protobuf/MessageOrBuilder;)Ljava/util/List;
 
     move-result-object v0
@@ -476,7 +438,6 @@
 .method public getInitializationErrorString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/AbstractMessage;->findInitializationErrors()Ljava/util/List;
 
     move-result-object v0
@@ -491,7 +452,6 @@
 .method public getOneofFieldDescriptor(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/google/protobuf/Descriptors$FieldDescriptor;
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "getOneofFieldDescriptor() is not implemented."
@@ -504,7 +464,6 @@
 .method public getSerializedSize()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/AbstractMessage;->memoizedSize:I
 
     const/4 v1, -0x1
@@ -513,7 +472,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-static {p0}, Lcom/google/protobuf/MessageReflection;->getSerializedSize(Lcom/google/protobuf/Message;)I
 
@@ -527,7 +485,6 @@
 .method public hasOneof(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Z
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "hasOneof() is not implemented."
@@ -540,14 +497,12 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/AbstractMessageLite;->memoizedHashCode:I
 
     if-nez v0, :cond_0
 
     const/16 v0, 0x30b
 
-    .line 2
     invoke-interface {p0}, Lcom/google/protobuf/MessageOrBuilder;->getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v1
@@ -558,7 +513,6 @@
 
     add-int/2addr v0, v1
 
-    .line 3
     invoke-interface {p0}, Lcom/google/protobuf/MessageOrBuilder;->getAllFields()Ljava/util/Map;
 
     move-result-object v1
@@ -569,7 +523,6 @@
 
     mul-int/lit8 v0, v0, 0x1d
 
-    .line 4
     invoke-interface {p0}, Lcom/google/protobuf/MessageOrBuilder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object v1
@@ -580,7 +533,6 @@
 
     add-int/2addr v0, v1
 
-    .line 5
     iput v0, p0, Lcom/google/protobuf/AbstractMessageLite;->memoizedHashCode:I
 
     :cond_0
@@ -590,7 +542,6 @@
 .method public isInitialized()Z
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/google/protobuf/MessageReflection;->isInitialized(Lcom/google/protobuf/MessageOrBuilder;)Z
 
     move-result v0
@@ -601,7 +552,6 @@
 .method newUninitializedMessageException()Lcom/google/protobuf/UninitializedMessageException;
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/google/protobuf/AbstractMessage$Builder;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
 
     move-result-object v0
@@ -612,7 +562,6 @@
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/google/protobuf/TextFormat;->printToString(Lcom/google/protobuf/MessageOrBuilder;)Ljava/lang/String;
 
     move-result-object v0
@@ -630,7 +579,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/google/protobuf/MessageReflection;->writeMessageTo(Lcom/google/protobuf/Message;Lcom/google/protobuf/CodedOutputStream;Z)V
 
     return-void

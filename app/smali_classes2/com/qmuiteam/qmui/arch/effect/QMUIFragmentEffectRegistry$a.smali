@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$a;
 .super Ljava/lang/Object;
-.source "QMUIFragmentEffectRegistry.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/arch/effect/c;
@@ -21,7 +20,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

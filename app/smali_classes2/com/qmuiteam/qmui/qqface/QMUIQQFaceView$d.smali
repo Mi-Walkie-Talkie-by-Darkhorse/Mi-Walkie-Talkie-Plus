@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;
 .super Ljava/lang/Object;
-.source "QMUIQQFaceView.java"
 
 
 # annotations
@@ -32,26 +31,20 @@
 .method public constructor <init>(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;Lcom/qmuiteam/qmui/link/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->f:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, -0x1
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->b:I
 
-    .line 3
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->c:I
 
-    .line 4
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->d:I
 
-    .line 5
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->e:I
 
-    .line 6
     iput-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a:Lcom/qmuiteam/qmui/link/a;
 
     return-void
@@ -62,14 +55,12 @@
 .method public a()V
     .locals 5
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->f:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
     invoke-virtual {v0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v0
 
-    .line 3
     iget v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->d:I
 
     const/4 v2, 0x1
@@ -78,7 +69,6 @@
 
     sub-int/2addr v1, v2
 
-    .line 4
     iget-object v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->f:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
     invoke-static {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;)I
@@ -97,7 +87,6 @@
 
     add-int/2addr v0, v1
 
-    .line 5
     :cond_0
     iget v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->e:I
 
@@ -129,18 +118,14 @@
 
     add-int/2addr v1, v2
 
-    .line 6
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    .line 7
     iput v0, v2, Landroid/graphics/Rect;->top:I
 
-    .line 8
     iput v1, v2, Landroid/graphics/Rect;->bottom:I
 
-    .line 9
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->f:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
     invoke-virtual {v0}, Landroid/view/View;->getPaddingLeft()I
@@ -149,7 +134,6 @@
 
     iput v0, v2, Landroid/graphics/Rect;->left:I
 
-    .line 10
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->f:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
@@ -166,24 +150,20 @@
 
     iput v0, v2, Landroid/graphics/Rect;->right:I
 
-    .line 11
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->d:I
 
     iget v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->e:I
 
     if-ne v0, v1, :cond_1
 
-    .line 12
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->b:I
 
     iput v0, v2, Landroid/graphics/Rect;->left:I
 
-    .line 13
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->c:I
 
     iput v0, v2, Landroid/graphics/Rect;->right:I
 
-    .line 14
     :cond_1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->f:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
@@ -195,7 +175,6 @@
 .method public a(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a:Lcom/qmuiteam/qmui/link/a;
 
     invoke-interface {v0, p1}, Lcom/qmuiteam/qmui/link/a;->a(Z)V
@@ -206,14 +185,12 @@
 .method public a(II)Z
     .locals 6
 
-    .line 15
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->f:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
     invoke-virtual {v0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v0
 
-    .line 16
     iget v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->d:I
 
     const/4 v2, 0x1
@@ -222,7 +199,6 @@
 
     sub-int/2addr v1, v2
 
-    .line 17
     iget-object v3, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->f:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
     invoke-static {v3}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;)I
@@ -241,7 +217,6 @@
 
     add-int/2addr v0, v1
 
-    .line 18
     :cond_0
     iget v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->e:I
 
@@ -287,7 +262,6 @@
 
     goto :goto_4
 
-    .line 19
     :cond_1
     iget v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->d:I
 
@@ -295,7 +269,6 @@
 
     if-ne v4, v5, :cond_3
 
-    .line 20
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->b:I
 
     if-lt p1, p2, :cond_2
@@ -312,7 +285,6 @@
     :goto_0
     return v2
 
-    .line 21
     :cond_3
     iget-object v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->f:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
@@ -322,7 +294,6 @@
 
     add-int/2addr v0, v4
 
-    .line 22
     iget-object v4, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->f:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
     invoke-static {v4}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->b(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;)I
@@ -335,7 +306,6 @@
 
     if-ge p2, v1, :cond_6
 
-    .line 23
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->e:I
 
     iget v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->d:I
@@ -344,7 +314,6 @@
 
     if-ne p2, v2, :cond_5
 
-    .line 24
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->b:I
 
     if-lt p1, p2, :cond_4
@@ -365,7 +334,6 @@
     :cond_6
     if-gt p2, v0, :cond_8
 
-    .line 25
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->b:I
 
     if-lt p1, p2, :cond_7
@@ -378,7 +346,6 @@
     :goto_2
     return v2
 
-    .line 26
     :cond_8
     iget p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->c:I
 
@@ -400,7 +367,6 @@
 .method public b()V
     .locals 2
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->a:Lcom/qmuiteam/qmui/link/a;
 
     iget-object v1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->f:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
@@ -413,10 +379,8 @@
 .method public b(II)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->e:I
 
-    .line 2
     iput p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->c:I
 
     return-void
@@ -425,10 +389,8 @@
 .method public c(II)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->d:I
 
-    .line 2
     iput p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$d;->b:I
 
     return-void

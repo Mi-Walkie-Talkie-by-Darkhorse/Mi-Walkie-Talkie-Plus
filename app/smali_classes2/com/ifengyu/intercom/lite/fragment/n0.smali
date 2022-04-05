@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/lite/fragment/n0;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/o$k;

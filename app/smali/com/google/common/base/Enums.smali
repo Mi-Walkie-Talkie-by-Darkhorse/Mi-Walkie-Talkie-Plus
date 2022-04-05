@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/base/Enums;
 .super Ljava/lang/Object;
-.source "Enums.java"
 
 
 # annotations
@@ -46,7 +45,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/WeakHashMap;
 
     invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
@@ -59,7 +57,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -87,12 +84,10 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/base/Enums;->enumConstantCache:Ljava/util/Map;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     sget-object v1, Lcom/google/common/base/Enums;->enumConstantCache:Ljava/util/Map;
 
@@ -104,12 +99,10 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     invoke-static {p0}, Lcom/google/common/base/Enums;->populateCache(Ljava/lang/Class;)Ljava/util/Map;
 
     move-result-object v1
 
-    .line 4
     :cond_0
     monitor-exit v0
 
@@ -118,7 +111,6 @@
     :catchall_0
     move-exception p0
 
-    .line 5
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -141,12 +133,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/Enum;->getDeclaringClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
@@ -163,7 +153,6 @@
     :catch_0
     move-exception p0
 
-    .line 3
     new-instance v0, Ljava/lang/AssertionError;
 
     invoke-direct {v0, p0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
@@ -187,13 +176,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     invoke-static {p0, p1}, Lcom/google/common/base/Platform;->getEnumIfPresent(Ljava/lang/Class;Ljava/lang/String;)Lcom/google/common/base/Optional;
 
     move-result-object p0
@@ -223,12 +209,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 2
     invoke-static {p0}, Ljava/util/EnumSet;->allOf(Ljava/lang/Class;)Ljava/util/EnumSet;
 
     move-result-object v1
@@ -250,7 +234,6 @@
 
     check-cast v2, Ljava/lang/Enum;
 
-    .line 3
     invoke-virtual {v2}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
     move-result-object v3
@@ -263,7 +246,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     sget-object v1, Lcom/google/common/base/Enums;->enumConstantCache:Ljava/util/Map;
 
@@ -287,7 +269,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/base/Enums$StringConverter;
 
     invoke-direct {v0, p0}, Lcom/google/common/base/Enums$StringConverter;-><init>(Ljava/lang/Class;)V

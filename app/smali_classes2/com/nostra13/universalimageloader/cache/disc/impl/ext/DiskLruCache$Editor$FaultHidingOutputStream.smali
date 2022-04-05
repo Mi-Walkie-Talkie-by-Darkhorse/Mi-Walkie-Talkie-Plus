@@ -1,6 +1,5 @@
 .class Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor$FaultHidingOutputStream;
 .super Ljava/io/FilterOutputStream;
-.source "DiskLruCache.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method private constructor <init>(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;Ljava/io/OutputStream;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor$FaultHidingOutputStream;->this$1:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;
 
-    .line 3
     invoke-direct {p0, p2}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
 
     return-void
@@ -34,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;Ljava/io/OutputStream;Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor$FaultHidingOutputStream;-><init>(Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;Ljava/io/OutputStream;)V
 
     return-void
@@ -45,7 +41,6 @@
 .method public close()V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
@@ -55,7 +50,6 @@
 
     goto :goto_0
 
-    .line 2
     :catch_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor$FaultHidingOutputStream;->this$1:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;
 
@@ -70,7 +64,6 @@
 .method public flush()V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
@@ -80,7 +73,6 @@
 
     goto :goto_0
 
-    .line 2
     :catch_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor$FaultHidingOutputStream;->this$1:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;
 
@@ -95,7 +87,6 @@
 .method public write(I)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
@@ -105,7 +96,6 @@
 
     goto :goto_0
 
-    .line 2
     :catch_0
     iget-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor$FaultHidingOutputStream;->this$1:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;
 
@@ -120,7 +110,6 @@
 .method public write([BII)V
     .locals 1
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Ljava/io/FilterOutputStream;->out:Ljava/io/OutputStream;
 
@@ -130,7 +119,6 @@
 
     goto :goto_0
 
-    .line 4
     :catch_0
     iget-object p1, p0, Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor$FaultHidingOutputStream;->this$1:Lcom/nostra13/universalimageloader/cache/disc/impl/ext/DiskLruCache$Editor;
 

@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
 .super Ljava/lang/Object;
-.source "MultiPointOutputStream.java"
 
 
 # annotations
@@ -123,7 +122,6 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1
     new-instance v8, Ljava/util/concurrent/ThreadPoolExecutor;
 
     sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
@@ -136,7 +134,6 @@
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-static {v0, v1}, Lcom/liulishuo/okdownload/core/Util;->threadFactory(Ljava/lang/String;Z)Ljava/util/concurrent/ThreadFactory;
 
     move-result-object v7
@@ -171,7 +168,6 @@
 
     const/4 v0, 0x0
 
-    .line 25
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;-><init>(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;Ljava/lang/Runnable;)V
 
     return-void
@@ -196,31 +192,26 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->outputStreamMap:Landroid/util/SparseArray;
 
-    .line 3
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noSyncLengthMap:Landroid/util/SparseArray;
 
-    .line 4
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->allNoSyncLength:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 5
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
@@ -229,24 +220,20 @@
 
     const/4 v0, 0x0
 
-    .line 6
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->canceled:Z
 
-    .line 7
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->parkedRunBlockThreadMap:Landroid/util/SparseArray;
 
-    .line 8
     new-instance v0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;
 
     invoke-direct {v0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->doneState:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;
 
-    .line 9
     new-instance v0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;
 
     invoke-direct {v0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;-><init>()V
@@ -255,40 +242,32 @@
 
     const/4 v0, 0x1
 
-    .line 10
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->firstOutputStream:Z
 
-    .line 11
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 12
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getFlushBufferSize()I
 
     move-result v0
 
     iput v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->flushBufferSize:I
 
-    .line 13
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getSyncBufferSize()I
 
     move-result v0
 
     iput v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncBufferSize:I
 
-    .line 14
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getSyncBufferIntervalMills()I
 
     move-result v0
 
     iput v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncBufferIntervalMills:I
 
-    .line 15
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
-    .line 16
     iput-object p3, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->store:Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 
-    .line 17
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object p2
@@ -303,7 +282,6 @@
 
     iput-boolean p2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->supportSeek:Z
 
-    .line 18
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object p2
@@ -312,14 +290,12 @@
 
     move-result-object p2
 
-    .line 19
     invoke-virtual {p2, p1}, Lcom/liulishuo/okdownload/core/file/ProcessFileStrategy;->isPreAllocateLength(Lcom/liulishuo/okdownload/DownloadTask;)Z
 
     move-result p2
 
     iput-boolean p2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->isPreAllocateLength:Z
 
-    .line 20
     new-instance p2, Ljava/util/ArrayList;
 
     invoke-direct {p2}, Ljava/util/ArrayList;-><init>()V
@@ -328,7 +304,6 @@
 
     if-nez p4, :cond_0
 
-    .line 21
     new-instance p2, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$1;
 
     invoke-direct {p2, p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$1;-><init>(Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;)V
@@ -337,11 +312,9 @@
 
     goto :goto_0
 
-    .line 22
     :cond_0
     iput-object p4, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncRunnable:Ljava/lang/Runnable;
 
-    .line 23
     :goto_0
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getFile()Ljava/io/File;
 
@@ -349,7 +322,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 24
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p1
@@ -363,7 +335,6 @@
 .method private inspectValidPath()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->path:Ljava/lang/String;
 
     if-nez v0, :cond_0
@@ -399,7 +370,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->requireStreamBlocks:Ljava/util/List;
     :try_end_0
@@ -411,7 +381,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     :try_start_1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->canceled:Z
@@ -427,11 +396,9 @@
     :cond_1
     const/4 v0, 0x1
 
-    .line 3
     :try_start_2
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->canceled:Z
 
-    .line 4
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noMoreStreamList:Ljava/util/ArrayList;
 
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->requireStreamBlocks:Ljava/util/List;
@@ -442,7 +409,6 @@
 
     const/4 v1, 0x0
 
-    .line 5
     :try_start_3
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->allNoSyncLength:Ljava/util/concurrent/atomic/AtomicLong;
 
@@ -458,7 +424,6 @@
 
     if-gtz v6, :cond_3
 
-    .line 6
     :try_start_4
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->requireStreamBlocks:Ljava/util/List;
 
@@ -481,7 +446,6 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 7
     :try_start_5
     invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
@@ -500,7 +464,6 @@
     :try_start_6
     const-string v4, "MultiPointOutputStream"
 
-    .line 8
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -537,7 +500,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->store:Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 
@@ -553,12 +515,10 @@
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
-    .line 10
     monitor-exit p0
 
     return-void
 
-    .line 11
     :cond_3
     :try_start_7
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncFuture:Ljava/util/concurrent/Future;
@@ -573,10 +533,8 @@
 
     if-nez v2, :cond_4
 
-    .line 12
     invoke-direct {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->inspectValidPath()V
 
-    .line 13
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v2
@@ -597,13 +555,11 @@
 
     const/4 v2, -0x1
 
-    .line 14
     :try_start_8
     invoke-virtual {p0, v0, v2}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->ensureSync(ZI)V
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_0
 
-    .line 15
     :try_start_9
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
@@ -642,12 +598,10 @@
 
     invoke-virtual {v2, v3}, Lcom/liulishuo/okdownload/core/file/FileLock;->decreaseLock(Ljava/lang/String;)V
 
-    .line 16
     throw v0
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_1
 
-    .line 17
     :cond_4
     :goto_1
     :try_start_a
@@ -672,7 +626,6 @@
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_2
 
-    .line 18
     :try_start_b
     invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
@@ -691,7 +644,6 @@
     :try_start_c
     const-string v4, "MultiPointOutputStream"
 
-    .line 19
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -728,7 +680,6 @@
 
     goto :goto_2
 
-    .line 20
     :cond_5
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->store:Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 
@@ -744,7 +695,6 @@
     :try_end_c
     .catchall {:try_start_c .. :try_end_c} :catchall_2
 
-    .line 21
     monitor-exit p0
 
     return-void
@@ -752,7 +702,6 @@
     :catchall_1
     move-exception v0
 
-    .line 22
     :try_start_d
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->requireStreamBlocks:Ljava/util/List;
 
@@ -775,7 +724,6 @@
     :try_end_d
     .catchall {:try_start_d .. :try_end_d} :catchall_2
 
-    .line 23
     :try_start_e
     invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
 
@@ -794,7 +742,6 @@
     :try_start_f
     const-string v5, "MultiPointOutputStream"
 
-    .line 24
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -831,7 +778,6 @@
 
     goto :goto_3
 
-    .line 25
     :cond_6
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->store:Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 
@@ -845,7 +791,6 @@
 
     invoke-interface {v2, v3, v4, v1}, Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;->onTaskEnd(ILcom/liulishuo/okdownload/core/cause/EndCause;Ljava/lang/Exception;)V
 
-    .line 26
     throw v0
     :try_end_f
     .catchall {:try_start_f .. :try_end_f} :catchall_2
@@ -861,7 +806,6 @@
 .method public cancelAsync()V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->FILE_IO_EXECUTOR:Ljava/util/concurrent/ExecutorService;
 
     new-instance v1, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$2;
@@ -876,7 +820,6 @@
 .method public catchBlockConnectException(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noMoreStreamList:Ljava/util/ArrayList;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -898,7 +841,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->outputStreamMap:Landroid/util/SparseArray;
 
@@ -910,17 +852,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/liulishuo/okdownload/core/file/DownloadOutputStream;->close()V
 
-    .line 3
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->outputStreamMap:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->remove(I)V
 
     const-string v0, "MultiPointOutputStream"
 
-    .line 4
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -955,7 +894,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     :cond_0
     monitor-exit p0
 
@@ -977,7 +915,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noMoreStreamList:Ljava/util/ArrayList;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -986,13 +923,11 @@
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncException:Ljava/io/IOException;
 
     if-nez v0, :cond_3
 
-    .line 3
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncFuture:Ljava/util/concurrent/Future;
 
     if-eqz v0, :cond_0
@@ -1005,7 +940,6 @@
 
     if-nez v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noSyncLengthMap:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -1016,7 +950,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 5
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v0
@@ -1027,22 +960,18 @@
 
     if-lez v4, :cond_2
 
-    .line 6
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->doneState:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;
 
     invoke-virtual {p0, v0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->inspectStreamState(Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;)V
 
-    .line 7
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->doneState:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;
 
     iget-boolean v0, v0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;->isNoMoreStream:Z
 
-    .line 8
     invoke-virtual {p0, v0, p1}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->ensureSync(ZI)V
 
     goto :goto_0
 
-    .line 9
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncFuture:Ljava/util/concurrent/Future;
     :try_end_0
@@ -1056,7 +985,6 @@
 
     if-nez v0, :cond_1
 
-    .line 10
     :try_start_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1068,7 +996,6 @@
 
     iget-object v4, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 11
     invoke-virtual {v4}, Lcom/liulishuo/okdownload/DownloadTask;->getId()I
 
     move-result v4
@@ -1085,12 +1012,10 @@
 
     move-result-object v0
 
-    .line 12
     invoke-static {v3, v0}, Lcom/liulishuo/okdownload/core/Util;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 13
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -1102,7 +1027,6 @@
 
     iget-object v4, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncFuture:Ljava/util/concurrent/Future;
 
-    .line 14
     invoke-interface {v4}, Ljava/util/concurrent/Future;->isDone()Z
 
     move-result v4
@@ -1131,19 +1055,16 @@
 
     move-result-object v0
 
-    .line 15
     invoke-static {v3, v0}, Lcom/liulishuo/okdownload/core/Util;->d(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 16
     :cond_2
     :goto_0
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->close(I)V
 
     return-void
 
-    .line 17
     :cond_3
     :try_start_2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncException:Ljava/io/IOException;
@@ -1155,17 +1076,14 @@
     :catchall_0
     move-exception v0
 
-    .line 18
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->close(I)V
 
-    .line 19
     throw v0
 .end method
 
 .method ensureSync(ZI)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncFuture:Ljava/util/concurrent/Future;
 
     if-eqz v0, :cond_5
@@ -1183,7 +1101,6 @@
     :cond_0
     if-nez p1, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->parkedRunBlockThreadMap:Landroid/util/SparseArray;
 
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
@@ -1192,20 +1109,17 @@
 
     invoke-virtual {v0, p2, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 3
     :cond_1
     iget-object p2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->runSyncThread:Ljava/lang/Thread;
 
     if-eqz p2, :cond_2
 
-    .line 4
     iget-object p2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->runSyncThread:Ljava/lang/Thread;
 
     invoke-virtual {p0, p2}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->unparkThread(Ljava/lang/Thread;)V
 
     goto :goto_1
 
-    .line 5
     :cond_2
     :goto_0
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->isRunSyncThreadValid()Z
@@ -1214,7 +1128,6 @@
 
     if-eqz p2, :cond_4
 
-    .line 6
     iget-object p2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->runSyncThread:Ljava/lang/Thread;
 
     invoke-virtual {p0, p2}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->unparkThread(Ljava/lang/Thread;)V
@@ -1222,12 +1135,10 @@
     :goto_1
     if-eqz p1, :cond_3
 
-    .line 7
     iget-object p1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->runSyncThread:Ljava/lang/Thread;
 
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->unparkThread(Ljava/lang/Thread;)V
 
-    .line 8
     :try_start_0
     iget-object p1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncFuture:Ljava/util/concurrent/Future;
 
@@ -1238,7 +1149,6 @@
 
     goto :goto_2
 
-    .line 9
     :cond_3
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->parkThread()V
 
@@ -1249,7 +1159,6 @@
     :cond_4
     const-wide/16 v0, 0x19
 
-    .line 10
     invoke-virtual {p0, v0, v1}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->parkThread(J)V
 
     goto :goto_0
@@ -1262,7 +1171,6 @@
 .method executeSyncRunnableAsync()Ljava/util/concurrent/Future;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->FILE_IO_EXECUTOR:Ljava/util/concurrent/ExecutorService;
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncRunnable:Ljava/lang/Runnable;
@@ -1282,12 +1190,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noSyncLengthMap:Landroid/util/SparseArray;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noSyncLengthMap:Landroid/util/SparseArray;
 
@@ -1295,12 +1201,10 @@
 
     move-result v1
 
-    .line 3
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0, v1}, Landroid/util/SparseArray;-><init>(I)V
@@ -1314,7 +1218,6 @@
 
     if-ge v3, v1, :cond_1
 
-    .line 5
     :try_start_1
     iget-object v6, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->outputStreamMap:Landroid/util/SparseArray;
 
@@ -1322,7 +1225,6 @@
 
     move-result v6
 
-    .line 6
     iget-object v7, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noSyncLengthMap:Landroid/util/SparseArray;
 
     invoke-virtual {v7, v6}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -1339,24 +1241,20 @@
 
     if-lez v9, :cond_0
 
-    .line 7
     invoke-static {v7, v8}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v7
 
     invoke-virtual {v0, v6, v7}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 8
     iget-object v7, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->outputStreamMap:Landroid/util/SparseArray;
 
-    .line 9
     invoke-virtual {v7, v6}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v6
 
     check-cast v6, Lcom/liulishuo/okdownload/core/file/DownloadOutputStream;
 
-    .line 10
     invoke-interface {v6}, Lcom/liulishuo/okdownload/core/file/DownloadOutputStream;->flushAndSync()V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
@@ -1369,7 +1267,6 @@
     :catch_0
     move-exception v1
 
-    .line 11
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1398,7 +1295,6 @@
     :goto_1
     if-eqz v1, :cond_3
 
-    .line 12
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
     move-result v1
@@ -1406,12 +1302,10 @@
     :goto_2
     if-ge v2, v1, :cond_2
 
-    .line 13
     invoke-virtual {v0, v2}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v3
 
-    .line 14
     invoke-virtual {v0, v2}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
     move-result-object v6
@@ -1422,7 +1316,6 @@
 
     move-result-wide v6
 
-    .line 15
     iget-object v8, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->store:Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 
     iget-object v9, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
@@ -1431,7 +1324,6 @@
 
     add-long/2addr v4, v6
 
-    .line 16
     iget-object v8, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noSyncLengthMap:Landroid/util/SparseArray;
 
     invoke-virtual {v8, v3}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -1444,7 +1336,6 @@
 
     invoke-virtual {v8, v9, v10}, Ljava/util/concurrent/atomic/AtomicLong;->addAndGet(J)J
 
-    .line 17
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -1479,7 +1370,6 @@
 
     iget-object v6, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
-    .line 18
     invoke-virtual {v6, v3}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getBlock(I)Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
     move-result-object v3
@@ -1500,14 +1390,12 @@
 
     const-string v6, "MultiPointOutputStream"
 
-    .line 19
     invoke-static {v6, v3}, Lcom/liulishuo/okdownload/core/Util;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_2
 
-    .line 20
     :cond_2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->allNoSyncLength:Ljava/util/concurrent/atomic/AtomicLong;
 
@@ -1515,7 +1403,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicLong;->addAndGet(J)J
 
-    .line 21
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->lastSyncTimestamp:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
@@ -1530,7 +1417,6 @@
     :catchall_0
     move-exception v1
 
-    .line 22
     :try_start_2
     monitor-exit v0
     :try_end_2
@@ -1542,7 +1428,6 @@
 .method getNextParkMillisecond()J
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->now()J
 
     move-result-wide v0
@@ -1555,7 +1440,6 @@
 
     sub-long/2addr v0, v2
 
-    .line 2
     iget v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncBufferIntervalMills:I
 
     int-to-long v2, v2
@@ -1573,35 +1457,29 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncException:Ljava/io/IOException;
 
     if-nez v0, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncFuture:Ljava/util/concurrent/Future;
 
     if-nez v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncRunnable:Ljava/lang/Runnable;
 
     monitor-enter v0
 
-    .line 4
     :try_start_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncFuture:Ljava/util/concurrent/Future;
 
     if-nez v1, :cond_0
 
-    .line 5
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->executeSyncRunnableAsync()Ljava/util/concurrent/Future;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncFuture:Ljava/util/concurrent/Future;
 
-    .line 6
     :cond_0
     monitor-exit v0
 
@@ -1620,7 +1498,6 @@
     :goto_0
     return-void
 
-    .line 7
     :cond_2
     throw v0
 .end method
@@ -1633,14 +1510,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     invoke-virtual {v0, p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getBlock(I)Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->getCurrentOffset()J
 
     move-result-wide v1
@@ -1657,7 +1532,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     new-instance v1, Ljava/io/IOException;
 
@@ -1669,7 +1543,6 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->getCurrentOffset()J
 
     move-result-wide v3
@@ -1709,7 +1582,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/liulishuo/okdownload/core/Util;->getFreeSpaceBytes(Landroid/os/StatFs;)J
 
     move-result-wide v0
@@ -1720,7 +1592,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p1, Lcom/liulishuo/okdownload/core/exception/PreAllocateException;
 
@@ -1732,12 +1603,10 @@
 .method inspectStreamState(Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;)V
     .locals 6
 
-    .line 1
     iget-object v0, p1, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;->newNoMoreStreamBlockList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noMoreStreamList:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clone()Ljava/lang/Object;
@@ -1746,17 +1615,14 @@
 
     check-cast v0, Ljava/util/List;
 
-    .line 3
     new-instance v1, Ljava/util/HashSet;
 
     invoke-direct {v1, v0}, Ljava/util/HashSet;-><init>(Ljava/util/Collection;)V
 
-    .line 4
     invoke-interface {v1}, Ljava/util/Set;->size()I
 
     move-result v0
 
-    .line 5
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->requireStreamBlocks:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -1773,7 +1639,6 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 6
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1792,7 +1657,6 @@
 
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->requireStreamBlocks:Ljava/util/List;
 
-    .line 7
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v3
@@ -1809,15 +1673,12 @@
 
     move-result-object v0
 
-    .line 8
     invoke-static {v5, v0}, Lcom/liulishuo/okdownload/core/Util;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
     iput-boolean v2, p1, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;->isNoMoreStream:Z
 
     goto :goto_0
 
-    .line 10
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1837,7 +1698,6 @@
 
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->requireStreamBlocks:Ljava/util/List;
 
-    .line 11
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v3
@@ -1854,15 +1714,12 @@
 
     move-result-object v0
 
-    .line 12
     invoke-static {v5, v0}, Lcom/liulishuo/okdownload/core/Util;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
-    .line 13
     iput-boolean v0, p1, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;->isNoMoreStream:Z
 
-    .line 14
     :goto_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->outputStreamMap:Landroid/util/SparseArray;
 
@@ -1870,7 +1727,6 @@
 
     move-result-object v0
 
-    .line 15
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
     move-result v1
@@ -1878,12 +1734,10 @@
     :goto_1
     if-ge v2, v1, :cond_2
 
-    .line 16
     invoke-virtual {v0, v2}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v3
 
-    .line 17
     iget-object v4, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noMoreStreamList:Ljava/util/ArrayList;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1898,7 +1752,6 @@
 
     iget-object v4, p1, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;->noMoreStreamBlockList:Ljava/util/List;
 
-    .line 18
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v5
@@ -1909,7 +1762,6 @@
 
     if-nez v4, :cond_1
 
-    .line 19
     iget-object v4, p1, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;->noMoreStreamBlockList:Ljava/util/List;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1918,7 +1770,6 @@
 
     invoke-interface {v4, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 20
     iget-object v4, p1, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;->newNoMoreStreamBlockList:Ljava/util/List;
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1939,7 +1790,6 @@
 .method isNoNeedFlushForLength()Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->allNoSyncLength:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
@@ -1968,7 +1818,6 @@
 .method isRunSyncThreadValid()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->runSyncThread:Ljava/lang/Thread;
 
     if-eqz v0, :cond_0
@@ -1987,7 +1836,6 @@
 .method now()J
     .locals 2
 
-    .line 1
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
@@ -2005,7 +1853,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->outputStreamMap:Landroid/util/SparseArray;
 
@@ -2017,7 +1864,6 @@
 
     if-nez v0, :cond_9
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/DownloadTask;->getUri()Landroid/net/Uri;
@@ -2030,7 +1876,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 3
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/DownloadTask;->getFile()Ljava/io/File;
@@ -2039,14 +1884,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 4
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
     invoke-virtual {v2}, Lcom/liulishuo/okdownload/DownloadTask;->getParentFile()Ljava/io/File;
 
     move-result-object v2
 
-    .line 5
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v3
@@ -2061,7 +1904,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     new-instance p1, Ljava/io/IOException;
 
@@ -2071,7 +1913,6 @@
 
     throw p1
 
-    .line 7
     :cond_1
     :goto_0
     invoke-virtual {v1}, Ljava/io/File;->createNewFile()Z
@@ -2082,7 +1923,6 @@
 
     const-string v2, "MultiPointOutputStream"
 
-    .line 8
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -2103,7 +1943,6 @@
 
     invoke-static {v2, v3}, Lcom/liulishuo/okdownload/core/Util;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
     :cond_2
     invoke-static {v1}, Landroid/net/Uri;->fromFile(Ljava/io/File;)Landroid/net/Uri;
 
@@ -2111,7 +1950,6 @@
 
     goto :goto_1
 
-    .line 10
     :cond_3
     new-instance p1, Ljava/io/FileNotFoundException;
 
@@ -2121,7 +1959,6 @@
 
     throw p1
 
-    .line 11
     :cond_4
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
@@ -2129,7 +1966,6 @@
 
     move-result-object v1
 
-    .line 12
     :goto_1
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
@@ -2139,7 +1975,6 @@
 
     move-result-object v2
 
-    .line 13
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v3
@@ -2150,19 +1985,16 @@
 
     iget v4, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->flushBufferSize:I
 
-    .line 14
     invoke-interface {v2, v3, v1, v4}, Lcom/liulishuo/okdownload/core/file/DownloadOutputStream$Factory;->create(Landroid/content/Context;Landroid/net/Uri;I)Lcom/liulishuo/okdownload/core/file/DownloadOutputStream;
 
     move-result-object v1
 
-    .line 15
     iget-boolean v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->supportSeek:Z
 
     const-wide/16 v3, 0x0
 
     if-eqz v2, :cond_5
 
-    .line 16
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     invoke-virtual {v2, p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getBlock(I)Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
@@ -2177,12 +2009,10 @@
 
     if-lez v2, :cond_5
 
-    .line 17
     invoke-interface {v1, v5, v6}, Lcom/liulishuo/okdownload/core/file/DownloadOutputStream;->seek(J)V
 
     const-string v2, "MultiPointOutputStream"
 
-    .line 18
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -2217,13 +2047,11 @@
 
     invoke-static {v2, v5}, Lcom/liulishuo/okdownload/core/Util;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 19
     :cond_5
     iget-boolean v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->firstOutputStream:Z
 
     if-eqz v2, :cond_6
 
-    .line 20
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->store:Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 
     iget-object v5, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->task:Lcom/liulishuo/okdownload/DownloadTask;
@@ -2234,7 +2062,6 @@
 
     invoke-interface {v2, v5}, Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;->markFileDirty(I)Z
 
-    .line 21
     :cond_6
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
@@ -2252,7 +2079,6 @@
 
     if-eqz v2, :cond_8
 
-    .line 22
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     invoke-virtual {v2}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getTotalLength()J
@@ -2261,14 +2087,12 @@
 
     if-eqz v0, :cond_7
 
-    .line 23
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/DownloadTask;->getFile()Ljava/io/File;
 
     move-result-object v0
 
-    .line 24
     invoke-virtual {v0}, Ljava/io/File;->length()J
 
     move-result-wide v7
@@ -2279,7 +2103,6 @@
 
     if-lez v2, :cond_8
 
-    .line 25
     new-instance v2, Landroid/os/StatFs;
 
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
@@ -2290,16 +2113,13 @@
 
     invoke-virtual {p0, v2, v7, v8}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->inspectFreeSpace(Landroid/os/StatFs;J)V
 
-    .line 26
     invoke-interface {v1, v5, v6}, Lcom/liulishuo/okdownload/core/file/DownloadOutputStream;->setLength(J)V
 
     goto :goto_2
 
-    .line 27
     :cond_7
     invoke-interface {v1, v5, v6}, Lcom/liulishuo/okdownload/core/file/DownloadOutputStream;->setLength(J)V
 
-    .line 28
     :cond_8
     :goto_2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noSyncLengthMap:Landroid/util/SparseArray;
@@ -2308,13 +2128,11 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 29
     :try_start_1
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->outputStreamMap:Landroid/util/SparseArray;
 
     invoke-virtual {v2, p1, v1}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 30
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noSyncLengthMap:Landroid/util/SparseArray;
 
     new-instance v3, Ljava/util/concurrent/atomic/AtomicLong;
@@ -2323,14 +2141,12 @@
 
     invoke-virtual {v2, p1, v3}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    .line 31
     monitor-exit v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     const/4 p1, 0x0
 
-    .line 32
     :try_start_2
     iput-boolean p1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->firstOutputStream:Z
     :try_end_2
@@ -2343,7 +2159,6 @@
     :catchall_0
     move-exception p1
 
-    .line 33
     :try_start_3
     monitor-exit v0
     :try_end_3
@@ -2354,7 +2169,6 @@
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
-    .line 34
     :cond_9
     :goto_3
     monitor-exit p0
@@ -2372,7 +2186,6 @@
 .method parkThread()V
     .locals 0
 
-    .line 2
     invoke-static {}, Ljava/util/concurrent/locks/LockSupport;->park()V
 
     return-void
@@ -2381,7 +2194,6 @@
 .method parkThread(J)V
     .locals 1
 
-    .line 1
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
@@ -2401,7 +2213,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2446,32 +2257,26 @@
 
     invoke-static {v2, v0}, Lcom/liulishuo/okdownload/core/Util;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->runSyncThread:Ljava/lang/Thread;
 
-    .line 3
     iget v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncBufferIntervalMills:I
 
     int-to-long v3, v0
 
-    .line 4
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->flushProcess()V
 
-    .line 5
     :cond_0
     :goto_0
     invoke-virtual {p0, v3, v4}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->parkThread(J)V
 
-    .line 6
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->state:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;
 
     invoke-virtual {p0, v0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->inspectStreamState(Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;)V
 
-    .line 7
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->state:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;->isStreamsEndOrChanged()Z
@@ -2482,7 +2287,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 8
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2515,7 +2319,6 @@
 
     invoke-static {v2, v0}, Lcom/liulishuo/okdownload/core/Util;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->allNoSyncLength:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
@@ -2526,10 +2329,8 @@
 
     if-lez v0, :cond_1
 
-    .line 10
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->flushProcess()V
 
-    .line 11
     :cond_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->state:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;
 
@@ -2553,7 +2354,6 @@
 
     check-cast v5, Ljava/lang/Integer;
 
-    .line 12
     iget-object v6, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->parkedRunBlockThreadMap:Landroid/util/SparseArray;
 
     invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
@@ -2566,7 +2366,6 @@
 
     check-cast v6, Ljava/lang/Thread;
 
-    .line 13
     iget-object v7, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->parkedRunBlockThreadMap:Landroid/util/SparseArray;
 
     invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
@@ -2577,12 +2376,10 @@
 
     if-eqz v6, :cond_2
 
-    .line 14
     invoke-virtual {p0, v6}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->unparkThread(Ljava/lang/Thread;)V
 
     goto :goto_1
 
-    .line 15
     :cond_3
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->state:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream$StreamsState;
 
@@ -2590,7 +2387,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 16
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->parkedRunBlockThreadMap:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
@@ -2602,7 +2398,6 @@
     :goto_2
     if-ge v3, v0, :cond_5
 
-    .line 17
     iget-object v4, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->parkedRunBlockThreadMap:Landroid/util/SparseArray;
 
     invoke-virtual {v4, v3}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
@@ -2613,7 +2408,6 @@
 
     if-eqz v4, :cond_4
 
-    .line 18
     invoke-virtual {p0, v4}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->unparkThread(Ljava/lang/Thread;)V
 
     :cond_4
@@ -2621,13 +2415,11 @@
 
     goto :goto_2
 
-    .line 19
     :cond_5
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->parkedRunBlockThreadMap:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V
 
-    .line 20
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2654,7 +2446,6 @@
 
     return-void
 
-    .line 21
     :cond_6
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->isNoNeedFlushForLength()Z
 
@@ -2662,7 +2453,6 @@
 
     if-eqz v0, :cond_7
 
-    .line 22
     iget v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncBufferIntervalMills:I
 
     :goto_3
@@ -2670,7 +2460,6 @@
 
     goto/16 :goto_0
 
-    .line 23
     :cond_7
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->getNextParkMillisecond()J
 
@@ -2682,11 +2471,9 @@
 
     goto/16 :goto_0
 
-    .line 24
     :cond_8
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->flushProcess()V
 
-    .line 25
     iget v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncBufferIntervalMills:I
 
     goto :goto_3
@@ -2695,7 +2482,6 @@
 .method runSyncDelayException()V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->runSync()V
     :try_end_0
@@ -2706,10 +2492,8 @@
     :catch_0
     move-exception v0
 
-    .line 2
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->syncException:Ljava/io/IOException;
 
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2755,7 +2539,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->requireStreamBlocks:Ljava/util/List;
 
     return-void
@@ -2764,7 +2547,6 @@
 .method unparkThread(Ljava/lang/Thread;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/util/concurrent/locks/LockSupport;->unpark(Ljava/lang/Thread;)V
 
     return-void
@@ -2780,7 +2562,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->canceled:Z
     :try_end_0
@@ -2792,7 +2573,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     :try_start_1
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->outputStream(I)Lcom/liulishuo/okdownload/core/file/DownloadOutputStream;
@@ -2803,14 +2583,12 @@
 
     invoke-interface {v0, p2, v1, p3}, Lcom/liulishuo/okdownload/core/file/DownloadOutputStream;->write([BII)V
 
-    .line 3
     iget-object p2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->allNoSyncLength:Ljava/util/concurrent/atomic/AtomicLong;
 
     int-to-long v0, p3
 
     invoke-virtual {p2, v0, v1}, Ljava/util/concurrent/atomic/AtomicLong;->addAndGet(J)J
 
-    .line 4
     iget-object p2, p0, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->noSyncLengthMap:Landroid/util/SparseArray;
 
     invoke-virtual {p2, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -2821,12 +2599,10 @@
 
     invoke-virtual {p1, v0, v1}, Ljava/util/concurrent/atomic/AtomicLong;->addAndGet(J)J
 
-    .line 5
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;->inspectAndPersist()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 6
     monitor-exit p0
 
     return-void

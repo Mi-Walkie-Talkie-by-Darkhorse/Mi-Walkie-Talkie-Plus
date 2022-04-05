@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/http/Response;
 .super Ljava/lang/Object;
-.source "Response.java"
 
 
 # annotations
@@ -37,30 +36,24 @@
 .method public constructor <init>(Lcom/xiaomi/account/http/Response$Builder;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iget v0, p1, Lcom/xiaomi/account/http/Response$Builder;->code:I
 
     iput v0, p0, Lcom/xiaomi/account/http/Response;->code:I
 
-    .line 3
     iget-object v0, p1, Lcom/xiaomi/account/http/Response$Builder;->body:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/xiaomi/account/http/Response;->body:Ljava/lang/String;
 
-    .line 4
     iget-object v0, p1, Lcom/xiaomi/account/http/Response$Builder;->headers:Ljava/util/Map;
 
     iput-object v0, p0, Lcom/xiaomi/account/http/Response;->headers:Ljava/util/Map;
 
-    .line 5
     iget-object v0, p1, Lcom/xiaomi/account/http/Response$Builder;->setCookie:Ljava/lang/String;
 
     iput-object v0, p0, Lcom/xiaomi/account/http/Response;->setCookie:Ljava/lang/String;
 
-    .line 6
     iget-object p1, p1, Lcom/xiaomi/account/http/Response$Builder;->location:Ljava/lang/String;
 
     iput-object p1, p0, Lcom/xiaomi/account/http/Response;->location:Ljava/lang/String;
@@ -73,7 +66,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

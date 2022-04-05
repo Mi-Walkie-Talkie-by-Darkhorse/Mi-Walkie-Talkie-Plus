@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/MiTalkiApp$c;
 .super Lcom/ifengyu/intercom/g/d/l;
-.source "MiTalkiApp.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/MiTalkiApp;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/MiTalkiApp$c;->b:Lcom/ifengyu/intercom/MiTalkiApp;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/l;-><init>()V
@@ -35,10 +33,8 @@
 .method public synthetic a(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 16
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
-    .line 17
     iget-object p1, p0, Lcom/ifengyu/intercom/MiTalkiApp$c;->b:Lcom/ifengyu/intercom/MiTalkiApp;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/MiTalkiApp;->p()V
@@ -49,7 +45,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/MiTalkiApp$c;->a(Ljava/lang/String;I)V
@@ -64,7 +59,6 @@
 
     const-string v0, "avatar"
 
-    .line 2
     :try_start_0
     new-instance v1, Lorg/json/JSONObject;
 
@@ -72,7 +66,6 @@
 
     const-string p1, "errno"
 
-    .line 3
     invoke-virtual {v1, p1}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result p1
@@ -81,7 +74,6 @@
 
     if-ne p1, v2, :cond_0
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/w;->b()Lcom/ifengyu/intercom/i/w;
 
     move-result-object p1
@@ -99,7 +91,6 @@
 
     const-string v2, "msg"
 
-    .line 5
     invoke-virtual {v1, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -112,22 +103,18 @@
 
     const-string p1, "data"
 
-    .line 6
     invoke-virtual {v1, p1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
 
-    .line 7
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 8
     invoke-virtual {p1, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v2
@@ -136,17 +123,14 @@
 
     move-result-object v2
 
-    .line 10
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    .line 11
     invoke-interface {v2, v0, v1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 12
     :cond_1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -154,10 +138,8 @@
 
     if-nez v0, :cond_2
 
-    .line 13
     invoke-interface {v2, p2, p1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 14
     :cond_2
     invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->apply()V
     :try_end_0
@@ -168,7 +150,6 @@
     :catch_0
     move-exception p1
 
-    .line 15
     invoke-virtual {p1}, Lorg/json/JSONException;->printStackTrace()V
 
     :cond_3

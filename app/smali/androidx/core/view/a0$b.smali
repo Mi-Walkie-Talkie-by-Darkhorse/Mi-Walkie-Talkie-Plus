@@ -1,6 +1,5 @@
 .class Landroidx/core/view/a0$b;
 .super Ljava/lang/Object;
-.source "ViewPropertyAnimatorCompat.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/core/view/a0;Landroidx/core/view/d0;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/core/view/a0$b;->a:Landroidx/core/view/d0;
 
     iput-object p3, p0, Landroidx/core/view/a0$b;->b:Landroid/view/View;
@@ -42,7 +40,6 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/core/view/a0$b;->a:Landroidx/core/view/d0;
 
     iget-object v0, p0, Landroidx/core/view/a0$b;->b:Landroid/view/View;

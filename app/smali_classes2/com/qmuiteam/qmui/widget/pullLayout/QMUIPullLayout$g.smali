@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;
 .super Ljava/lang/Object;
-.source "QMUIPullLayout.java"
 
 
 # annotations
@@ -51,46 +50,36 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x2
 
-    .line 2
     iput v0, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->b:I
 
     const v0, 0x3ee66666    # 0.45f
 
-    .line 3
     iput v0, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->d:F
 
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->e:Z
 
     const v1, 0x3b03126f    # 0.002f
 
-    .line 5
     iput v1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->f:F
 
     const/high16 v1, 0x3fc00000    # 1.5f
 
-    .line 6
     iput v1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->h:F
 
     const/4 v1, 0x0
 
-    .line 7
     iput-boolean v1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->k:Z
 
-    .line 8
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->l:Z
 
-    .line 9
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->a:Landroid/view/View;
 
-    .line 10
     iput p2, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->i:I
 
     return-void
@@ -99,7 +88,6 @@
 .method static synthetic a(Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;)Landroid/view/View;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->a:Landroid/view/View;
 
     return-object p0
@@ -108,7 +96,6 @@
 .method static synthetic b(Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->i:I
 
     return p0
@@ -119,19 +106,16 @@
 .method a()Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$f;
     .locals 14
 
-    .line 5
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->j:Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$d;
 
     if-nez v0, :cond_0
 
-    .line 6
     new-instance v0, Lcom/qmuiteam/qmui/widget/pullLayout/a;
 
     invoke-direct {v0}, Lcom/qmuiteam/qmui/widget/pullLayout/a;-><init>()V
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->j:Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$d;
 
-    .line 7
     :cond_0
     new-instance v0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$f;
 
@@ -169,7 +153,6 @@
 .method public a(F)Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;
     .locals 0
 
-    .line 3
     iput p1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->d:F
 
     return-object p0
@@ -178,7 +161,6 @@
 .method public a(I)Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;
     .locals 0
 
-    .line 4
     iput p1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->g:I
 
     return-object p0
@@ -187,7 +169,6 @@
 .method public a(Z)Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;
     .locals 0
 
-    .line 2
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->c:Z
 
     return-object p0
@@ -196,7 +177,6 @@
 .method public b(F)Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;
     .locals 0
 
-    .line 3
     iput p1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->f:F
 
     return-object p0
@@ -205,7 +185,6 @@
 .method public b(I)Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->b:I
 
     return-object p0
@@ -214,7 +193,6 @@
 .method public b(Z)Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;
     .locals 0
 
-    .line 4
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->e:Z
 
     return-object p0
@@ -223,7 +201,6 @@
 .method public c(F)Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->h:F
 
     return-object p0
@@ -232,7 +209,6 @@
 .method public c(Z)Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->l:Z
 
     return-object p0
@@ -241,7 +217,6 @@
 .method public d(Z)Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/pullLayout/QMUIPullLayout$g;->k:Z
 
     return-object p0

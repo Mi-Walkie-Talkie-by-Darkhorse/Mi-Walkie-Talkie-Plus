@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/btle/h;
 .super Ljava/lang/Object;
-.source "DataReceiver.java"
 
 
 # instance fields
@@ -35,12 +34,10 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/node/btle/d;Lcom/ifengyu/intercom/node/btle/i;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p2, 0x4
 
-    .line 2
     invoke-static {p2}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object p2
@@ -49,25 +46,18 @@
 
     const/4 p2, 0x0
 
-    .line 3
     iput p2, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
-    .line 4
     iput p2, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
-    .line 5
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->d:Lcom/ifengyu/intercom/node/btle/d;
 
-    .line 6
     iput p2, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
-    .line 7
     iput p2, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
-    .line 8
     iput p2, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
-    .line 9
     invoke-static {}, Ljava/util/concurrent/Executors;->newCachedThreadPool()Ljava/util/concurrent/ExecutorService;
 
     move-result-object p1
@@ -80,19 +70,16 @@
 .method private a()V
     .locals 1
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->c:Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     if-nez v0, :cond_0
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->c:Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
-    .line 11
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->c:Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
@@ -104,7 +91,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/node/btle/h;)[B
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/node/btle/h;->j:[B
 
     return-object p0
@@ -117,13 +103,10 @@
 
     const-string v1, "generatorUpdateResponse"
 
-    .line 6
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7
     sget-object v1, Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;->PREPARE:Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;
 
-    .line 8
     iget-object v2, p0, Lcom/ifengyu/intercom/node/btle/h;->b:[B
 
     const/4 v3, 0x0
@@ -142,7 +125,6 @@
 
     if-ge v2, v4, :cond_0
 
-    .line 9
     iget-object v1, p0, Lcom/ifengyu/intercom/node/btle/h;->b:[B
 
     aget-byte v1, v1, v3
@@ -151,7 +133,6 @@
 
     move-result-object v1
 
-    .line 10
     :cond_0
     iget-object v2, p0, Lcom/ifengyu/intercom/node/btle/h;->b:[B
 
@@ -163,7 +144,6 @@
 
     const/4 v3, 0x1
 
-    .line 11
     :cond_1
     iget-object v2, p0, Lcom/ifengyu/intercom/node/btle/h;->b:[B
 
@@ -171,7 +151,6 @@
 
     move-result v2
 
-    .line 12
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -200,29 +179,22 @@
 
     invoke-static {v0, v4}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 13
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/h;->a()V
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->c:Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     if-eqz v0, :cond_2
 
-    .line 15
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse$Builder;
 
     move-result-object v0
 
-    .line 16
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse$Builder;->setState(Lcom/ifengyu/intercom/protos/MitalkProtos$UPDATESTATECODE;)Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse$Builder;
 
-    .line 17
     invoke-virtual {v0, v3}, Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse$Builder;->setResult(Z)Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse$Builder;
 
-    .line 18
     invoke-virtual {v0, v2}, Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse$Builder;->setAck(I)Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse$Builder;
 
-    .line 19
     iget-object v1, p0, Lcom/ifengyu/intercom/node/btle/h;->c:Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     invoke-virtual {v1, v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;->setUpdateResponse(Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse$Builder;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
@@ -240,21 +212,16 @@
 
     const/4 v0, 0x0
 
-    .line 40
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
-    .line 41
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
-    .line 42
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
-    .line 43
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->l:I
 
     const/4 v0, 0x0
 
-    .line 44
     iput-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->b:[B
 
     return-void
@@ -267,10 +234,8 @@
 
     const-string v1, "processBtKeyWireData:"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     array-length v1, p1
 
     const/16 v2, 0x8
@@ -291,17 +256,14 @@
 
     if-ne v4, v1, :cond_1
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/h;->c()V
 
-    .line 4
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->e([B)I
 
     move-result v4
 
     iput v4, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
-    .line 5
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -320,17 +282,14 @@
 
     invoke-static {v0, v4}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     iget v4, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
     iget v5, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
     if-eq v4, v5, :cond_0
 
-    .line 7
     iput v4, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
-    .line 8
     :cond_0
     iget v4, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
@@ -342,40 +301,34 @@
 
     iput v4, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
-    .line 9
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->c([B)I
 
     move-result v1
 
     iput v1, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
-    .line 10
     array-length v1, p1
 
     iput v1, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
-    .line 11
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->b([B)I
 
     move-result v1
 
     iput v1, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
-    .line 12
     iget v1, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
     new-array v1, v1, [B
 
     iput-object v1, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
-    .line 13
     array-length v4, p1
 
     invoke-static {p1, v3, v1, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     goto :goto_0
 
-    .line 14
     :cond_1
     iget-object v1, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
@@ -385,7 +338,6 @@
 
     invoke-static {p1, v3, v1, v4, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 15
     iget v1, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
     array-length p1, p1
@@ -394,7 +346,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
-    .line 16
     :goto_0
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
@@ -406,10 +357,8 @@
 
     add-int/lit8 p1, v1, -0x2
 
-    .line 17
     new-array p1, p1, [B
 
-    .line 18
     iget-object v4, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
     const/4 v5, 0x2
@@ -420,7 +369,6 @@
 
     new-array v1, v5, [B
 
-    .line 19
     iget-object v4, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
     iget v6, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
@@ -429,7 +377,6 @@
 
     invoke-static {v4, v6, v1, v3, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 20
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/c;->a([B)[B
 
     move-result-object p1
@@ -440,7 +387,6 @@
 
     if-eqz p1, :cond_4
 
-    .line 21
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
     add-int/lit8 v1, p1, -0x8
@@ -449,7 +395,6 @@
 
     new-array v4, v1, [B
 
-    .line 22
     iget-object v6, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
     sub-int/2addr p1, v2
@@ -458,7 +403,6 @@
 
     invoke-static {v6, v2, v4, v3, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 23
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
     const/16 v2, 0x4e22
@@ -467,30 +411,24 @@
 
     const-string p1, "receive Command is ECI_ConnectResp Command"
 
-    .line 24
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 25
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 26
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1, v1}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
-    .line 27
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
     add-int/lit8 p1, v1, 0x4
 
-    .line 28
     new-array p1, p1, [B
 
-    .line 29
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->array()[B
@@ -513,17 +451,14 @@
 
     const/4 v0, 0x4
 
-    .line 30
     invoke-static {v4, v3, p1, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 31
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->d:Lcom/ifengyu/intercom/node/btle/d;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/node/btle/d;->a([B)V
 
     goto :goto_2
 
-    .line 32
     :cond_2
     :try_start_0
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
@@ -532,7 +467,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 33
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -553,7 +487,6 @@
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 34
     :cond_3
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
@@ -561,7 +494,6 @@
 
     move-result-object p1
 
-    .line 35
     invoke-static {}, Lcom/ifengyu/intercom/node/q/d;->c()Lcom/ifengyu/intercom/node/q/d;
 
     move-result-object v1
@@ -589,7 +521,6 @@
 
     const-string v3, ""
 
-    .line 36
     invoke-interface {v2, v3, p1}, Lcom/ifengyu/intercom/node/g;->a(Ljava/lang/String;Lcom/ifengyu/intercom/node/b;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -601,10 +532,8 @@
 
     const-string v1, "parse data error!!"
 
-    .line 37
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 38
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     goto :goto_2
@@ -612,7 +541,6 @@
     :cond_4
     const-string p1, "Crc16 check error!"
 
-    .line 39
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_5
@@ -623,7 +551,6 @@
 .method private d([B)V
     .locals 11
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
     move-result v0
@@ -634,10 +561,8 @@
 
     const-string v0, "processDolphinWireData:"
 
-    .line 2
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     :cond_0
     array-length v0, p1
 
@@ -665,17 +590,14 @@
 
     if-ne v7, v0, :cond_4
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/h;->c()V
 
-    .line 5
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->e([B)I
 
     move-result v7
 
     iput v7, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
-    .line 6
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -694,17 +616,14 @@
 
     invoke-static {v1, v7}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7
     iget v7, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
     iget v8, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
     if-eq v7, v8, :cond_1
 
-    .line 8
     iput v7, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
-    .line 9
     :cond_1
     iget v7, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
@@ -714,33 +633,28 @@
 
     iput v7, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
-    .line 10
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->c([B)I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
-    .line 11
     array-length v0, p1
 
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
-    .line 12
     array-length v0, p1
 
     sub-int/2addr v0, v6
 
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->l:I
 
-    .line 13
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->b([B)I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
-    .line 14
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -767,17 +681,14 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 15
     iget v0, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
     if-ne v0, v3, :cond_3
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     iget v7, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
@@ -786,17 +697,14 @@
 
     invoke-virtual {v0, v7}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
-    .line 18
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
-    .line 19
     iget v0, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
     if-gt v0, v4, :cond_2
 
-    .line 20
     array-length v0, p1
 
     sub-int/2addr v0, v6
@@ -809,7 +717,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->j:[B
 
-    .line 21
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->array()[B
@@ -832,7 +739,6 @@
 
     invoke-static {v0, v8, v9, v5, v10}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 22
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->j:[B
 
     array-length v5, p1
@@ -843,7 +749,6 @@
 
     goto :goto_0
 
-    .line 23
     :cond_2
     iget v0, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
@@ -853,7 +758,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->j:[B
 
-    .line 24
     array-length v7, p1
 
     sub-int/2addr v7, v6
@@ -865,7 +769,6 @@
     :cond_3
     if-ne v0, v2, :cond_8
 
-    .line 25
     iget v0, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
     sub-int/2addr v0, v6
@@ -874,7 +777,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->b:[B
 
-    .line 26
     array-length v7, p1
 
     sub-int/2addr v7, v6
@@ -883,7 +785,6 @@
 
     goto :goto_0
 
-    .line 27
     :cond_4
     iget v0, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
@@ -893,36 +794,30 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
-    .line 28
     iget v7, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
     if-ne v7, v3, :cond_6
 
-    .line 29
     iget v0, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
     if-gt v0, v4, :cond_5
 
     const-string v0, "first blood is comming!!!"
 
-    .line 30
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 31
     array-length v0, p1
 
     new-array v0, v0, [B
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->j:[B
 
-    .line 32
     array-length v6, p1
 
     invoke-static {p1, v5, v0, v5, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     goto :goto_0
 
-    .line 33
     :cond_5
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->j:[B
 
@@ -932,7 +827,6 @@
 
     invoke-static {p1, v5, v0, v6, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 34
     iget v0, p0, Lcom/ifengyu/intercom/node/btle/h;->l:I
 
     array-length p1, p1
@@ -946,7 +840,6 @@
     :cond_6
     if-ne v7, v2, :cond_8
 
-    .line 35
     iget-object v7, p0, Lcom/ifengyu/intercom/node/btle/h;->b:[B
 
     if-eqz v7, :cond_7
@@ -957,7 +850,6 @@
 
     sub-int/2addr v0, v6
 
-    .line 36
     array-length v6, p1
 
     invoke-static {p1, v5, v7, v0, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
@@ -967,32 +859,26 @@
     :cond_7
     const-string p1, "receive update response error!"
 
-    .line 37
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 38
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/h;->c()V
 
-    .line 39
     :cond_8
     :goto_0
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
     if-ne p1, v3, :cond_b
 
-    .line 40
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
     if-gt p1, v4, :cond_9
 
-    .line 41
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->d:Lcom/ifengyu/intercom/node/btle/d;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->j:[B
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/node/btle/d;->a([B)V
 
-    .line 42
     :cond_9
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
@@ -1002,12 +888,10 @@
 
     if-ne p1, v0, :cond_d
 
-    .line 43
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
     if-le p1, v4, :cond_a
 
-    .line 44
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->m:Ljava/util/concurrent/ExecutorService;
 
     new-instance v0, Lcom/ifengyu/intercom/node/btle/h$a;
@@ -1019,10 +903,8 @@
     :cond_a
     const-string p1, "reading from peer is done"
 
-    .line 45
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 46
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/h;->c()V
 
     goto :goto_1
@@ -1030,7 +912,6 @@
     :cond_b
     if-ne p1, v2, :cond_d
 
-    .line 47
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->b:[B
 
     if-eqz p1, :cond_d
@@ -1047,26 +928,21 @@
 
     if-ne p1, v0, :cond_d
 
-    .line 48
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/h;->b()V
 
-    .line 49
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->c:Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     if-nez p1, :cond_c
 
-    .line 50
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/h;->c()V
 
     return-void
 
-    .line 51
     :cond_c
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;->build()Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object p1
 
-    .line 52
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->m:Ljava/util/concurrent/ExecutorService;
 
     new-instance v1, Lcom/ifengyu/intercom/node/btle/h$b;
@@ -1075,7 +951,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 
-    .line 53
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/h;->c()V
 
     :cond_d
@@ -1086,7 +961,6 @@
 .method private e([B)V
     .locals 7
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
     move-result v0
@@ -1097,10 +971,8 @@
 
     const-string v0, "processSealWireData: "
 
-    .line 2
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     :cond_0
     array-length v0, p1
 
@@ -1122,17 +994,14 @@
 
     if-ne v4, v0, :cond_2
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/h;->c()V
 
-    .line 5
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->e([B)I
 
     move-result v4
 
     iput v4, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
-    .line 6
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -1151,17 +1020,14 @@
 
     invoke-static {v1, v4}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7
     iget v4, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
     iget v5, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
     if-eq v4, v5, :cond_1
 
-    .line 8
     iput v4, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
-    .line 9
     :cond_1
     iget v4, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
@@ -1173,40 +1039,34 @@
 
     iput v4, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
-    .line 10
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->c([B)I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
-    .line 11
     array-length v0, p1
 
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
-    .line 12
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->b([B)I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
-    .line 13
     iget v0, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
     new-array v0, v0, [B
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
-    .line 14
     array-length v4, p1
 
     invoke-static {p1, v3, v0, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     goto :goto_0
 
-    .line 15
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
@@ -1216,7 +1076,6 @@
 
     invoke-static {p1, v3, v0, v4, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 16
     iget v0, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
     array-length p1, p1
@@ -1225,7 +1084,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
-    .line 17
     :goto_0
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
@@ -1237,10 +1095,8 @@
 
     add-int/lit8 p1, v0, -0x2
 
-    .line 18
     new-array p1, p1, [B
 
-    .line 19
     iget-object v4, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
     const/4 v5, 0x2
@@ -1251,7 +1107,6 @@
 
     new-array v0, v5, [B
 
-    .line 20
     iget-object v4, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
     iget v6, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
@@ -1260,7 +1115,6 @@
 
     invoke-static {v4, v6, v0, v3, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 21
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/c;->a([B)[B
 
     move-result-object p1
@@ -1271,7 +1125,6 @@
 
     if-eqz p1, :cond_4
 
-    .line 22
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
     add-int/lit8 v0, p1, -0x8
@@ -1280,7 +1133,6 @@
 
     new-array v4, v0, [B
 
-    .line 23
     iget-object v6, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
     sub-int/2addr p1, v2
@@ -1289,7 +1141,6 @@
 
     invoke-static {v6, v2, v4, v3, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 24
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
     const/16 v2, 0x4e22
@@ -1298,30 +1149,24 @@
 
     const-string p1, "receive Command is ECI_ConnectResp Command"
 
-    .line 25
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 26
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 27
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
-    .line 28
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
     add-int/lit8 p1, v0, 0x4
 
-    .line 29
     new-array p1, p1, [B
 
-    .line 30
     iget-object v1, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->array()[B
@@ -1344,24 +1189,20 @@
 
     const/4 v1, 0x4
 
-    .line 31
     invoke-static {v4, v3, p1, v1, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 32
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->d:Lcom/ifengyu/intercom/node/btle/d;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/node/btle/d;->a([B)V
 
     goto :goto_2
 
-    .line 33
     :cond_3
     :try_start_0
     invoke-static {v4, p1}, Lcom/ifengyu/intercom/node/l;->a([BI)Lcom/ifengyu/intercom/node/l;
 
     move-result-object p1
 
-    .line 34
     invoke-static {}, Lcom/ifengyu/intercom/node/q/d;->c()Lcom/ifengyu/intercom/node/q/d;
 
     move-result-object v0
@@ -1389,7 +1230,6 @@
 
     const-string v3, ""
 
-    .line 35
     invoke-interface {v2, v3, p1}, Lcom/ifengyu/intercom/node/g;->a(Ljava/lang/String;Lcom/ifengyu/intercom/node/l;)V
     :try_end_0
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1401,10 +1241,8 @@
 
     const-string v0, "parse protobuf error!!!"
 
-    .line 36
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 37
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_2
@@ -1412,7 +1250,6 @@
     :cond_4
     const-string p1, "Crc16 check error!"
 
-    .line 38
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_5
@@ -1427,10 +1264,8 @@
 
     const-string v1, "processSharkWireData:"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     array-length v1, p1
 
     const/16 v2, 0x8
@@ -1451,17 +1286,14 @@
 
     if-ne v4, v1, :cond_1
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btle/h;->c()V
 
-    .line 4
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->e([B)I
 
     move-result v4
 
     iput v4, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
-    .line 5
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -1480,17 +1312,14 @@
 
     invoke-static {v0, v4}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     iget v4, p0, Lcom/ifengyu/intercom/node/btle/h;->f:I
 
     iget v5, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
     if-eq v4, v5, :cond_0
 
-    .line 7
     iput v4, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
-    .line 8
     :cond_0
     iget v4, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
@@ -1502,40 +1331,34 @@
 
     iput v4, p0, Lcom/ifengyu/intercom/node/btle/h;->e:I
 
-    .line 9
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->c([B)I
 
     move-result v1
 
     iput v1, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
-    .line 10
     array-length v1, p1
 
     iput v1, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
-    .line 11
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/e;->b([B)I
 
     move-result v1
 
     iput v1, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
-    .line 12
     iget v1, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
     new-array v1, v1, [B
 
     iput-object v1, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
-    .line 13
     array-length v4, p1
 
     invoke-static {p1, v3, v1, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     goto :goto_0
 
-    .line 14
     :cond_1
     iget-object v1, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
@@ -1545,7 +1368,6 @@
 
     invoke-static {p1, v3, v1, v4, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 15
     iget v1, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
     array-length p1, p1
@@ -1554,7 +1376,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
-    .line 16
     :goto_0
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->h:I
 
@@ -1566,10 +1387,8 @@
 
     add-int/lit8 p1, v1, -0x2
 
-    .line 17
     new-array p1, p1, [B
 
-    .line 18
     iget-object v4, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
     const/4 v5, 0x2
@@ -1580,7 +1399,6 @@
 
     new-array v1, v5, [B
 
-    .line 19
     iget-object v4, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
     iget v6, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
@@ -1589,7 +1407,6 @@
 
     invoke-static {v4, v6, v1, v3, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 20
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/c;->a([B)[B
 
     move-result-object p1
@@ -1600,7 +1417,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 21
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->g:I
 
     add-int/lit8 v1, p1, -0x8
@@ -1609,7 +1425,6 @@
 
     new-array v4, v1, [B
 
-    .line 22
     iget-object v6, p0, Lcom/ifengyu/intercom/node/btle/h;->k:[B
 
     sub-int/2addr p1, v2
@@ -1618,7 +1433,6 @@
 
     invoke-static {v6, v2, v4, v3, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 23
     iget p1, p0, Lcom/ifengyu/intercom/node/btle/h;->i:I
 
     const/16 v2, 0x4e22
@@ -1627,30 +1441,24 @@
 
     const-string p1, "receive Command is ECI_ConnectResp Command"
 
-    .line 24
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 25
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 26
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1, v1}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
-    .line 27
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
     add-int/lit8 p1, v1, 0x4
 
-    .line 28
     new-array p1, p1, [B
 
-    .line 29
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->array()[B
@@ -1673,24 +1481,20 @@
 
     const/4 v0, 0x4
 
-    .line 30
     invoke-static {v4, v3, p1, v0, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 31
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/h;->d:Lcom/ifengyu/intercom/node/btle/d;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/node/btle/d;->a([B)V
 
     goto :goto_2
 
-    .line 32
     :cond_2
     :try_start_0
     invoke-static {v4, p1}, Lcom/ifengyu/intercom/node/m;->a([BI)Lcom/ifengyu/intercom/node/m;
 
     move-result-object p1
 
-    .line 33
     invoke-static {}, Lcom/ifengyu/intercom/node/q/d;->c()Lcom/ifengyu/intercom/node/q/d;
 
     move-result-object v1
@@ -1718,7 +1522,6 @@
 
     const-string v3, ""
 
-    .line 34
     invoke-interface {v2, v3, p1}, Lcom/ifengyu/intercom/node/g;->a(Ljava/lang/String;Lcom/ifengyu/intercom/node/m;)V
     :try_end_0
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1730,10 +1533,8 @@
 
     const-string v1, "parse protobuf error!!!"
 
-    .line 35
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 36
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     goto :goto_2
@@ -1741,7 +1542,6 @@
     :cond_3
     const-string p1, "Crc16 check error!"
 
-    .line 37
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4
@@ -1754,7 +1554,6 @@
 .method public a(Lcom/ifengyu/intercom/node/btle/d;Lcom/ifengyu/intercom/node/btle/i;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btle/h;->d:Lcom/ifengyu/intercom/node/btle/d;
 
     return-void
@@ -1767,10 +1566,8 @@
 
     const-string v1, "handleIncomingUpdate"
 
-    .line 3
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result v0
@@ -1793,25 +1590,21 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/btle/h;->c([B)V
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/btle/h;->e([B)V
 
     goto :goto_0
 
-    .line 7
     :cond_2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/btle/h;->f([B)V
 
     goto :goto_0
 
-    .line 8
     :cond_3
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/btle/h;->d([B)V
 
@@ -1826,10 +1619,8 @@
 
     const-string v1, "handlePttKeyEvent"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result v0
@@ -1844,13 +1635,11 @@
 
     goto :goto_1
 
-    .line 3
     :cond_0
     invoke-static {p1}, Lcom/ifengyu/intercom/node/transport/b;->b([B)I
 
     move-result p1
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/node/q/d;->c()Lcom/ifengyu/intercom/node/q/d;
 
     move-result-object v0
@@ -1876,7 +1665,6 @@
 
     check-cast v1, Lcom/ifengyu/intercom/node/g;
 
-    .line 5
     invoke-interface {v1, p1}, Lcom/ifengyu/intercom/node/g;->a(I)V
 
     goto :goto_0

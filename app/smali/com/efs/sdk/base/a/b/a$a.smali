@@ -1,6 +1,5 @@
 .class public final Lcom/efs/sdk/base/a/b/a$a;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -30,7 +29,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,12 +39,10 @@
 .method public final synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 3
 
-    .line 1
     check-cast p1, Ljava/io/File;
 
     check-cast p2, Ljava/io/File;
 
-    .line 2
     invoke-virtual {p1}, Ljava/io/File;->lastModified()J
 
     move-result-wide v0

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;
 .super Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
-.source "SharkPresetChCssEditActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -74,12 +73,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->t:Z
 
     return-void
@@ -88,7 +85,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;I)I
     .locals 0
 
-    .line 3
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->q:I
 
     return p1
@@ -97,7 +93,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->t:Z
 
     return p0
@@ -106,7 +101,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;Z)Z
     .locals 0
 
-    .line 2
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->t:Z
 
     return p1
@@ -115,7 +109,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->q:I
 
     return p0
@@ -124,7 +117,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;I)I
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->r:I
 
     return p1
@@ -133,7 +125,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->r:I
 
     return p0
@@ -142,14 +133,12 @@
 .method private w()V
     .locals 7
 
-    .line 1
     invoke-virtual {p0}, Landroid/app/Activity;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
     const-string v1, "seal_action_edit_css_channel_info"
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object v0
@@ -160,14 +149,12 @@
 
     if-eqz v0, :cond_4
 
-    .line 3
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->k()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->q:I
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->s:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->h()I
@@ -176,7 +163,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->r:I
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->s:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->n()I
@@ -185,7 +171,6 @@
 
     if-nez v0, :cond_0
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->channelName:Landroid/widget/TextView;
 
     const v1, 0x7f110075
@@ -194,7 +179,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->s:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
@@ -206,14 +190,12 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->channelName:Landroid/widget/TextView;
 
     const v1, 0x7f11007a
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 9
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mTvTxCss:Landroid/widget/TextView;
@@ -226,7 +208,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mTvTxCss:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -261,7 +242,6 @@
 
     invoke-virtual {v0, v5, v1}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mTvRxCss:Landroid/widget/TextView;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->r:I
@@ -272,7 +252,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mTvRxCss:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -297,7 +276,6 @@
     :goto_2
     invoke-virtual {v0, v5, v2}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->s:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/h0;->e(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
@@ -309,61 +287,50 @@
 .method private x()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->channelNumber:Landroid/widget/TextView;
 
     sget-object v1, Lcom/ifengyu/intercom/i/p;->b:Landroid/graphics/Typeface;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/i/p;->a:Landroid/graphics/Typeface;
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mTvTxCss:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mTvRxCss:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mTitleBarLeft:Landroid/widget/ImageView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mTitleBarConfirm:Landroid/widget/TextView;
 
     invoke-virtual {v0, p0}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mFlTxCss:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mFlRXCss:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mTitleBarConfirm:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mTitleBarConfirm:Landroid/widget/TextView;
 
     const v1, 0x7f1100a2
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mTitleBarTitle:Landroid/widget/TextView;
 
     const v1, 0x7f110218
@@ -378,7 +345,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 7
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -397,13 +363,11 @@
 
     goto/16 :goto_0
 
-    .line 2
     :sswitch_0
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     goto/16 :goto_0
 
-    .line 3
     :sswitch_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->s:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
@@ -411,7 +375,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->f(I)V
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->s:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->r:I
@@ -420,7 +383,6 @@
 
     const/16 p1, 0x3e9
 
-    .line 5
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
@@ -435,25 +397,21 @@
 
     invoke-virtual {p0, p1, v0}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V
 
-    .line 6
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
 
     goto :goto_0
 
-    .line 7
     :sswitch_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mFlTxCss:Landroid/widget/FrameLayout;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->b(Landroid/view/View;)V
 
-    .line 8
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->q:I
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->a(I)[I
 
     move-result-object p1
 
-    .line 9
     new-instance v5, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;
 
     invoke-direct {v5, p0}, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;-><init>(Landroid/content/Context;)V
@@ -474,27 +432,23 @@
 
     invoke-virtual {v5, v2, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->b(ILcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog$b;)Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;
 
-    .line 10
     invoke-virtual {v5, v1, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->a(ILcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog$b;)Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;
 
     invoke-virtual {v5}, Landroid/app/Dialog;->show()V
 
     goto :goto_0
 
-    .line 11
     :sswitch_3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->mFlRXCss:Landroid/widget/FrameLayout;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->b(Landroid/view/View;)V
 
-    .line 12
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->r:I
 
     invoke-static {p1}, Lcom/ifengyu/intercom/i/c0;->a(I)[I
 
     move-result-object p1
 
-    .line 13
     new-instance v5, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;
 
     invoke-direct {v5, p0}, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;-><init>(Landroid/content/Context;)V
@@ -515,7 +469,6 @@
 
     invoke-virtual {v5, v2, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->b(ILcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog$b;)Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;
 
-    .line 14
     invoke-virtual {v5, v1, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;->a(ILcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog$b;)Lcom/ifengyu/intercom/ui/widget/dialog/SharkPickerDialog;
 
     invoke-virtual {v5}, Landroid/app/Dialog;->show()V
@@ -537,21 +490,16 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onCreate(Landroid/os/Bundle;)V
 
     const p1, 0x7f0c004d
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->setContentView(I)V
 
-    .line 3
     invoke-static {p0}, Lbutterknife/ButterKnife;->bind(Landroid/app/Activity;)Lbutterknife/Unbinder;
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->x()V
 
-    .line 5
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->w()V
 
     return-void
@@ -560,7 +508,6 @@
 .method protected onDestroy()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onDestroy()V
 
     return-void
@@ -569,17 +516,14 @@
 .method protected onStart()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a:Ljava/lang/String;
 
     const-string v1, "onStart"
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->onStart()V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
@@ -592,10 +536,8 @@
 .method protected onStop()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroidx/appcompat/app/AppCompatActivity;->onStop()V
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
@@ -610,14 +552,12 @@
     .annotation runtime Lcom/squareup/otto/Subscribe;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->a:Ljava/lang/String;
 
     const-string v1, "receiveChannelInfoOperateResp"
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;->getResult()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CH_UERR;
 
     move-result-object v0
@@ -626,7 +566,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;->getOption()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;
 
     move-result-object v0
@@ -635,14 +574,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;->hasCh()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;->getCh()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object p1
@@ -651,21 +588,18 @@
 
     move-result-object p1
 
-    .line 6
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->h()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->r:I
 
-    .line 7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->k()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;->q:I
 
-    .line 8
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity$c;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity$c;-><init>(Lcom/ifengyu/intercom/ui/setting/shark/SharkPresetChCssEditActivity;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V

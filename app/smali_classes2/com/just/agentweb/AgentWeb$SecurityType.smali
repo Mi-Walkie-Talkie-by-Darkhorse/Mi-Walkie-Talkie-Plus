@@ -1,6 +1,5 @@
 .class public final enum Lcom/just/agentweb/AgentWeb$SecurityType;
 .super Ljava/lang/Enum;
-.source "AgentWeb.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/just/agentweb/AgentWeb$SecurityType;
 
     const/4 v1, 0x0
@@ -59,7 +57,6 @@
 
     new-array v3, v3, [Lcom/just/agentweb/AgentWeb$SecurityType;
 
-    .line 2
     sget-object v4, Lcom/just/agentweb/AgentWeb$SecurityType;->DEFAULT_CHECK:Lcom/just/agentweb/AgentWeb$SecurityType;
 
     aput-object v4, v3, v1
@@ -79,7 +76,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -88,7 +84,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/just/agentweb/AgentWeb$SecurityType;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/just/agentweb/AgentWeb$SecurityType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -103,7 +98,6 @@
 .method public static values()[Lcom/just/agentweb/AgentWeb$SecurityType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/just/agentweb/AgentWeb$SecurityType;->$VALUES:[Lcom/just/agentweb/AgentWeb$SecurityType;
 
     invoke-virtual {v0}, [Lcom/just/agentweb/AgentWeb$SecurityType;->clone()Ljava/lang/Object;

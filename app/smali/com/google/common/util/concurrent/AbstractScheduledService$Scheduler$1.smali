@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler$1;
 .super Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler;
-.source "AbstractScheduledService.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(JJLjava/util/concurrent/TimeUnit;)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler$1;->val$initialDelay:J
 
     iput-wide p3, p0, Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler$1;->val$delay:J
@@ -56,7 +54,6 @@
         }
     .end annotation
 
-    .line 1
     iget-wide v2, p0, Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler$1;->val$initialDelay:J
 
     iget-wide v4, p0, Lcom/google/common/util/concurrent/AbstractScheduledService$Scheduler$1;->val$delay:J

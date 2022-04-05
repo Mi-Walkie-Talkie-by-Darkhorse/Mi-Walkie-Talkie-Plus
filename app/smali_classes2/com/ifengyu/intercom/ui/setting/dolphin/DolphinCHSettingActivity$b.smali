@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$b;
 .super Ljava/lang/Object;
-.source "DolphinCHSettingActivity.java"
 
 # interfaces
 .implements Lcom/google/android/material/tabs/TabLayout$OnTabSelectedListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity$b;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +42,6 @@
 .method public onTabSelected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Lcom/google/android/material/tabs/TabLayout$Tab;->getCustomView()Landroid/view/View;
 
     move-result-object p1
@@ -71,7 +68,6 @@
 .method public onTabUnselected(Lcom/google/android/material/tabs/TabLayout$Tab;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Lcom/google/android/material/tabs/TabLayout$Tab;->getCustomView()Landroid/view/View;
 
     move-result-object p1

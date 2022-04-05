@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;
 .super Ljava/util/TimerTask;
-.source "TrackRecordService.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
@@ -35,7 +33,6 @@
 .method public run()V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Z
@@ -44,7 +41,6 @@
 
     if-nez v0, :cond_3
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->b(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)I
@@ -57,7 +53,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a(Lcom/ifengyu/intercom/ui/service/TrackRecordService;I)I
 
-    .line 3
     new-instance v0, Ljava/text/DecimalFormat;
 
     const-string v1, "#.0"
@@ -76,7 +71,6 @@
 
     move-result-object v0
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     const-string v3, ","
@@ -103,7 +97,6 @@
     :goto_0
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->a(Lcom/ifengyu/intercom/ui/service/TrackRecordService;F)F
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->g(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
@@ -112,7 +105,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->g(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;
@@ -145,7 +137,6 @@
 
     invoke-interface {v0, v1, v3, v4, v5}, Lcom/ifengyu/intercom/ui/service/TrackRecordService$c;->a(IIIF)V
 
-    .line 7
     :cond_1
     sget-object v0, Ljava/util/Locale;->CHINA:Ljava/util/Locale;
 
@@ -207,7 +198,6 @@
 
     move-result-object v0
 
-    .line 8
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->j(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Landroid/widget/RemoteViews;
@@ -218,7 +208,6 @@
 
     invoke-virtual {v1, v3, v0}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->i(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)I
@@ -231,7 +220,6 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->j(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Landroid/widget/RemoteViews;
@@ -262,7 +250,6 @@
 
     goto :goto_1
 
-    .line 11
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
@@ -312,7 +299,6 @@
 
     invoke-virtual {v0, v3, v1}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
-    .line 12
     :goto_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
@@ -348,7 +334,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/widget/RemoteViews;->setTextViewText(ILjava/lang/CharSequence;)V
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->m(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Landroid/app/NotificationManager;
@@ -369,7 +354,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->c(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Lcom/ifengyu/intercom/greendao/bean/b;
@@ -378,7 +362,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 15
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->c(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Lcom/ifengyu/intercom/greendao/bean/b;
@@ -397,7 +380,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/greendao/bean/b;->i(Ljava/lang/Integer;)V
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->c(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Lcom/ifengyu/intercom/greendao/bean/b;
@@ -416,7 +398,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/greendao/bean/b;->h(Ljava/lang/Integer;)V
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/TrackRecordService$a;->a:Lcom/ifengyu/intercom/ui/service/TrackRecordService;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/service/TrackRecordService;->c(Lcom/ifengyu/intercom/ui/service/TrackRecordService;)Lcom/ifengyu/intercom/greendao/bean/b;
@@ -431,7 +412,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/greendao/bean/b;->d(Ljava/lang/String;)V
 
-    .line 18
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0

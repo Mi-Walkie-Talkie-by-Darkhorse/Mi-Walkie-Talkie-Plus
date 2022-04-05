@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$a;
 .super Ljava/lang/Object;
-.source "QuestionFeedbackActivity.java"
 
 # interfaces
 .implements Landroid/text/TextWatcher;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;->a(Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;)Landroid/widget/EditText;
@@ -63,7 +60,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;->b(Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;)Landroid/view/View;
@@ -76,7 +72,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/QuestionFeedbackActivity;
 

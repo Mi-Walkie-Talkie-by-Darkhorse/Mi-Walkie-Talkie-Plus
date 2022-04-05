@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/protobuf/CodedInputStream$RefillCallback;
 .super Ljava/lang/Object;
-.source "CodedInputStream.java"
 
 
 # annotations

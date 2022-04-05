@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/ExperimentalUnsignedTypes;
 .super Ljava/lang/Object;
-.source "Unsigned.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

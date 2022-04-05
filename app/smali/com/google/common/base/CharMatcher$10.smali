@@ -1,6 +1,5 @@
 .class final Lcom/google/common/base/CharMatcher$10;
 .super Lcom/google/common/base/CharMatcher$FastMatcher;
-.source "CharMatcher.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Ljava/lang/String;C)V
     .locals 0
 
-    .line 1
     iput-char p2, p0, Lcom/google/common/base/CharMatcher$10;->val$match:C
 
     invoke-direct {p0, p1}, Lcom/google/common/base/CharMatcher$FastMatcher;-><init>(Ljava/lang/String;)V
@@ -35,7 +33,6 @@
 .method public and(Lcom/google/common/base/CharMatcher;)Lcom/google/common/base/CharMatcher;
     .locals 1
 
-    .line 1
     iget-char v0, p0, Lcom/google/common/base/CharMatcher$10;->val$match:C
 
     invoke-virtual {p1, v0}, Lcom/google/common/base/CharMatcher;->matches(C)Z
@@ -55,7 +52,6 @@
 .method public matches(C)Z
     .locals 1
 
-    .line 1
     iget-char v0, p0, Lcom/google/common/base/CharMatcher$10;->val$match:C
 
     if-eq p1, v0, :cond_0
@@ -74,7 +70,6 @@
 .method public negate()Lcom/google/common/base/CharMatcher;
     .locals 1
 
-    .line 1
     iget-char v0, p0, Lcom/google/common/base/CharMatcher$10;->val$match:C
 
     invoke-static {v0}, Lcom/google/common/base/CharMatcher;->is(C)Lcom/google/common/base/CharMatcher;
@@ -87,7 +82,6 @@
 .method public or(Lcom/google/common/base/CharMatcher;)Lcom/google/common/base/CharMatcher;
     .locals 1
 
-    .line 1
     iget-char v0, p0, Lcom/google/common/base/CharMatcher$10;->val$match:C
 
     invoke-virtual {p1, v0}, Lcom/google/common/base/CharMatcher;->matches(C)Z
@@ -113,14 +107,12 @@
         value = "java.util.BitSet"
     .end annotation
 
-    .line 1
     iget-char v0, p0, Lcom/google/common/base/CharMatcher$10;->val$match:C
 
     const/4 v1, 0x0
 
     invoke-virtual {p1, v1, v0}, Ljava/util/BitSet;->set(II)V
 
-    .line 2
     iget-char v0, p0, Lcom/google/common/base/CharMatcher$10;->val$match:C
 
     add-int/lit8 v0, v0, 0x1

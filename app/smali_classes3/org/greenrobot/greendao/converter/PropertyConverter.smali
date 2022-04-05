@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/greenrobot/greendao/converter/PropertyConverter;
 .super Ljava/lang/Object;
-.source "PropertyConverter.java"
 
 
 # annotations

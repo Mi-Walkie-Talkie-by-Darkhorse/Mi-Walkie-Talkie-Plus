@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/cache/Weigher;
 .super Ljava/lang/Object;
-.source "Weigher.java"
 
 
 # annotations

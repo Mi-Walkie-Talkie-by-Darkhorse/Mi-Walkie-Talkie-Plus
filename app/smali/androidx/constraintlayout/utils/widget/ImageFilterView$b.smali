@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/utils/widget/ImageFilterView$b;
 .super Landroid/view/ViewOutlineProvider;
-.source "ImageFilterView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/constraintlayout/utils/widget/ImageFilterView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/constraintlayout/utils/widget/ImageFilterView$b;->a:Landroidx/constraintlayout/utils/widget/ImageFilterView;
 
     invoke-direct {p0}, Landroid/view/ViewOutlineProvider;-><init>()V
@@ -35,21 +33,18 @@
 .method public getOutline(Landroid/view/View;Landroid/graphics/Outline;)V
     .locals 6
 
-    .line 1
     iget-object p1, p0, Landroidx/constraintlayout/utils/widget/ImageFilterView$b;->a:Landroidx/constraintlayout/utils/widget/ImageFilterView;
 
     invoke-virtual {p1}, Landroid/widget/ImageView;->getWidth()I
 
     move-result v3
 
-    .line 2
     iget-object p1, p0, Landroidx/constraintlayout/utils/widget/ImageFilterView$b;->a:Landroidx/constraintlayout/utils/widget/ImageFilterView;
 
     invoke-virtual {p1}, Landroid/widget/ImageView;->getHeight()I
 
     move-result v4
 
-    .line 3
     iget-object p1, p0, Landroidx/constraintlayout/utils/widget/ImageFilterView$b;->a:Landroidx/constraintlayout/utils/widget/ImageFilterView;
 
     invoke-static {p1}, Landroidx/constraintlayout/utils/widget/ImageFilterView;->b(Landroidx/constraintlayout/utils/widget/ImageFilterView;)F

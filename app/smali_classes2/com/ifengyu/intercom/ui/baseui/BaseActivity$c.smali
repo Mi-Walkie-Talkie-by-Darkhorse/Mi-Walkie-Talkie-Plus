@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/baseui/BaseActivity$c;
 .super Ljava/lang/Object;
-.source "BaseActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/baseui/BaseActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity$c;->a:Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,23 +36,19 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity$c;->a:Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->m:Lcom/ifengyu/intercom/ui/baseui/BaseActivity$e;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity$e;->c()V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity$c;->a:Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 4
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity$c;->a:Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
@@ -63,19 +57,16 @@
 
     const/4 v1, 0x1
 
-    .line 5
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a(Z)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     const v1, 0x7f110029
 
-    .line 6
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->c(I)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/baseui/BaseActivity$c;->a:Lcom/ifengyu/intercom/ui/baseui/BaseActivity;
 
     const v2, 0x7f110026
 
-    .line 7
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -88,7 +79,6 @@
 
     invoke-direct {v2, p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity$c$b;-><init>(Lcom/ifengyu/intercom/ui/baseui/BaseActivity$c;)V
 
-    .line 8
     invoke-virtual {v0, v1, v2}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     const v1, 0x7f110093
@@ -97,10 +87,8 @@
 
     invoke-direct {v2, p0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity$c$a;-><init>(Lcom/ifengyu/intercom/ui/baseui/BaseActivity$c;)V
 
-    .line 9
     invoke-virtual {v0, v1, v2}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->c(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
-    .line 10
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a()Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->d()V

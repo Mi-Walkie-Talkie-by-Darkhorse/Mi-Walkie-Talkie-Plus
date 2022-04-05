@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/y;
 .super Ljava/lang/Object;
-.source "MapFragmentDelegateImp.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/interfaces/IMapFragmentDelegate;
@@ -26,23 +25,18 @@
 .method public constructor <init>(I)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/y;->b:I
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/y;->d:I
 
     const-string v0, "MapFragmentDelegateImp"
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/col/l3/y;->e:Ljava/lang/String;
 
-    .line 5
     rem-int/lit8 p1, p1, 0x3
 
     iput p1, p0, Lcom/amap/api/col/l3/y;->d:I
@@ -60,12 +54,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-nez v0, :cond_9
 
-    .line 2
     sget-object v0, Lcom/amap/api/col/l3/y;->a:Landroid/content/Context;
 
     if-nez v0, :cond_0
@@ -74,7 +66,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/amap/api/col/l3/y;->a:Landroid/content/Context;
 
@@ -82,7 +73,6 @@
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
     move-result-object v0
@@ -95,7 +85,6 @@
 
     const/high16 v0, 0x3f000000    # 0.5f
 
-    .line 5
     sput v0, Lcom/amap/api/col/l3/p;->a:F
 
     goto :goto_0
@@ -107,7 +96,6 @@
 
     const v0, 0x3f4ccccd    # 0.8f
 
-    .line 6
     sput v0, Lcom/amap/api/col/l3/p;->a:F
 
     goto :goto_0
@@ -119,7 +107,6 @@
 
     const v0, 0x3f5eb852    # 0.87f
 
-    .line 7
     sput v0, Lcom/amap/api/col/l3/p;->a:F
 
     goto :goto_0
@@ -131,7 +118,6 @@
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 8
     sput v0, Lcom/amap/api/col/l3/p;->a:F
 
     goto :goto_0
@@ -143,7 +129,6 @@
 
     const/high16 v0, 0x3fc00000    # 1.5f
 
-    .line 9
     sput v0, Lcom/amap/api/col/l3/p;->a:F
 
     goto :goto_0
@@ -155,7 +140,6 @@
 
     const v0, 0x3fe66666    # 1.8f
 
-    .line 10
     sput v0, Lcom/amap/api/col/l3/p;->a:F
 
     goto :goto_0
@@ -163,23 +147,19 @@
     :cond_6
     const v0, 0x3f666666    # 0.9f
 
-    .line 11
     sput v0, Lcom/amap/api/col/l3/p;->a:F
 
-    .line 12
     :goto_0
     iget v0, p0, Lcom/amap/api/col/l3/y;->d:I
 
     if-nez v0, :cond_7
 
-    .line 13
     new-instance v0, Lcom/amap/api/col/l3/l;
 
     sget-object v1, Lcom/amap/api/col/l3/y;->a:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/amap/api/col/l3/l;-><init>(Landroid/content/Context;)V
 
-    .line 14
     invoke-virtual {v0}, Lcom/amap/api/col/l3/l;->a()Lcom/amap/api/col/l3/u;
 
     move-result-object v0
@@ -193,14 +173,12 @@
 
     if-ne v0, v1, :cond_8
 
-    .line 15
     new-instance v0, Lcom/amap/api/col/l3/m;
 
     sget-object v1, Lcom/amap/api/col/l3/y;->a:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Lcom/amap/api/col/l3/m;-><init>(Landroid/content/Context;)V
 
-    .line 16
     invoke-virtual {v0}, Lcom/amap/api/col/l3/m;->a()Lcom/amap/api/col/l3/u;
 
     move-result-object v0
@@ -209,7 +187,6 @@
 
     goto :goto_1
 
-    .line 17
     :cond_8
     new-instance v0, Lcom/amap/api/col/l3/k;
 
@@ -223,7 +200,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
-    .line 18
     :cond_9
     :goto_1
     iget-object v0, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
@@ -263,14 +239,12 @@
         }
     .end annotation
 
-    .line 1
     sget-object p2, Lcom/amap/api/col/l3/y;->a:Landroid/content/Context;
 
     if-nez p2, :cond_0
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/LayoutInflater;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -281,7 +255,6 @@
 
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/y;->setContext(Landroid/content/Context;)V
 
-    .line 3
     :cond_0
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/col/l3/y;->getMap()Lcom/autonavi/amap/mapcore/interfaces/IAMap;
@@ -290,12 +263,10 @@
 
     iput-object p1, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
-    .line 4
     iget p2, p0, Lcom/amap/api/col/l3/y;->b:I
 
     invoke-interface {p1, p2}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->setVisibilityEx(I)V
 
-    .line 5
     iget-object p1, p0, Lcom/amap/api/col/l3/y;->f:Lcom/amap/api/maps/AMapOptions;
 
     if-nez p1, :cond_1
@@ -304,29 +275,24 @@
 
     const-string p1, "MapOptions"
 
-    .line 6
     invoke-virtual {p3, p1}, Landroid/os/Bundle;->getByteArray(Ljava/lang/String;)[B
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    .line 7
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object p2
 
-    .line 8
     array-length p3, p1
 
     const/4 v0, 0x0
 
     invoke-virtual {p2, p1, v0, p3}, Landroid/os/Parcel;->unmarshall([BII)V
 
-    .line 9
     invoke-virtual {p2, v0}, Landroid/os/Parcel;->setDataPosition(I)V
 
-    .line 10
     sget-object p1, Lcom/amap/api/maps/AMapOptions;->CREATOR:Lcom/amap/api/maps/AMapOptionsCreator;
 
     invoke-virtual {p1, p2}, Lcom/amap/api/maps/AMapOptionsCreator;->createFromParcel(Landroid/os/Parcel;)Lcom/amap/api/maps/AMapOptions;
@@ -335,7 +301,6 @@
 
     iput-object p1, p0, Lcom/amap/api/col/l3/y;->f:Lcom/amap/api/maps/AMapOptions;
 
-    .line 11
     :cond_1
     iget-object p1, p0, Lcom/amap/api/col/l3/y;->f:Lcom/amap/api/maps/AMapOptions;
 
@@ -437,10 +402,8 @@
     :catchall_0
     move-exception p1
 
-    .line 12
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 13
     :cond_3
     :goto_0
     iget-object p1, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
@@ -460,22 +423,18 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->clear()V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->destroy()V
 
     const/4 v0, 0x0
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     :cond_0
@@ -501,14 +460,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/y;->setContext(Landroid/content/Context;)V
 
-    .line 2
     iput-object p2, p0, Lcom/amap/api/col/l3/y;->f:Lcom/amap/api/maps/AMapOptions;
 
     return-void
@@ -533,12 +490,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->onActivityPause()V
 
     :cond_0
@@ -553,12 +508,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->onActivityResume()V
 
     :cond_0
@@ -573,31 +526,26 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/y;->f:Lcom/amap/api/maps/AMapOptions;
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Lcom/amap/api/maps/AMapOptions;
 
     invoke-direct {v0}, Lcom/amap/api/maps/AMapOptions;-><init>()V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/y;->f:Lcom/amap/api/maps/AMapOptions;
 
-    .line 4
     :cond_0
     :try_start_0
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
     move-result-object v0
 
-    .line 5
     iget-object v1, p0, Lcom/amap/api/col/l3/y;->f:Lcom/amap/api/maps/AMapOptions;
 
     invoke-virtual {p0}, Lcom/amap/api/col/l3/y;->getMap()Lcom/autonavi/amap/mapcore/interfaces/IAMap;
@@ -616,12 +564,10 @@
 
     const/4 v2, 0x0
 
-    .line 6
     invoke-virtual {v1, v0, v2}, Lcom/amap/api/maps/AMapOptions;->writeToParcel(Landroid/os/Parcel;I)V
 
     const-string v1, "MapOptions"
 
-    .line 7
     invoke-virtual {v0}, Landroid/os/Parcel;->marshall()[B
 
     move-result-object v0
@@ -640,7 +586,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
@@ -654,7 +599,6 @@
 .method public setOptions(Lcom/amap/api/maps/AMapOptions;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/y;->f:Lcom/amap/api/maps/AMapOptions;
 
     return-void
@@ -663,15 +607,12 @@
 .method public setVisibility(I)V
     .locals 1
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/y;->b:I
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/y;->c:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0, p1}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->setVisibilityEx(I)V
 
     :cond_0

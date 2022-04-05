@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/Striped$4;
 .super Ljava/lang/Object;
-.source "Striped.java"
 
 # interfaces
 .implements Lcom/google/common/base/Supplier;
@@ -34,7 +33,6 @@
 .method constructor <init>(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/common/util/concurrent/Striped$4;->val$permits:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public bridge synthetic get()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/Striped$4;->get()Ljava/util/concurrent/Semaphore;
 
     move-result-object v0
@@ -58,7 +55,6 @@
 .method public get()Ljava/util/concurrent/Semaphore;
     .locals 3
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/Semaphore;
 
     iget v1, p0, Lcom/google/common/util/concurrent/Striped$4;->val$permits:I

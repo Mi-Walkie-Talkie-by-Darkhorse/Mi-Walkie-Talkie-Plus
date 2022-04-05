@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/bu;
 .super Ljava/lang/Object;
-.source "IDownloadItem.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/bo;

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/cache/CacheBuilder$1;
 .super Ljava/lang/Object;
-.source "CacheBuilder.java"
 
 # interfaces
 .implements Lcom/google/common/cache/AbstractCache$StatsCounter;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -62,7 +60,6 @@
 .method public snapshot()Lcom/google/common/cache/CacheStats;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/cache/CacheBuilder;->EMPTY_STATS:Lcom/google/common/cache/CacheStats;
 
     return-object v0

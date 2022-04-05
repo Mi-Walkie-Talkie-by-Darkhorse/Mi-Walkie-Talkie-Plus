@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/fm;
 .super Ljava/lang/Object;
-.source "ServiceUtils.java"
 
 
 # annotations
@@ -55,7 +54,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -78,7 +76,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/fm;->k:Ljava/lang/String;
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -103,10 +100,8 @@
 
     const-string v0, ""
 
-    .line 3
     sput-object v0, Lcom/amap/api/col/l3/fm;->m:Ljava/lang/String;
 
-    .line 4
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -127,24 +122,18 @@
 
     const/4 v0, 0x0
 
-    .line 5
     sput-object v0, Lcom/amap/api/col/l3/fm;->o:Landroid/content/res/Resources$Theme;
 
-    .line 6
     sput-object v0, Lcom/amap/api/col/l3/fm;->p:Landroid/content/res/Resources$Theme;
 
-    .line 7
     sput-object v0, Lcom/amap/api/col/l3/fm;->q:Ljava/lang/reflect/Field;
 
-    .line 8
     sput-object v0, Lcom/amap/api/col/l3/fm;->r:Ljava/lang/reflect/Field;
 
-    .line 9
     sput-object v0, Lcom/amap/api/col/l3/fm;->s:Landroid/app/Activity;
 
     const/4 v0, -0x1
 
-    .line 10
     sput v0, Lcom/amap/api/col/l3/fm;->a:I
 
     return-void
@@ -153,7 +142,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -167,17 +155,14 @@
     :try_start_0
     const-string v1, "android.content.res.AssetManager"
 
-    .line 11
     invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v1
 
-    .line 12
     invoke-virtual {v1, v0}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object v2
 
-    .line 13
     invoke-virtual {v2, v0}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -193,7 +178,6 @@
 
     new-array v4, v3, [Ljava/lang/Class;
 
-    .line 14
     const-class v5, Ljava/lang/String;
 
     const/4 v6, 0x0
@@ -208,7 +192,6 @@
 
     aput-object p0, v1, v6
 
-    .line 15
     invoke-virtual {v0, v2, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -230,7 +213,6 @@
 
     const-string v2, "getAssetManager(String apkPath)"
 
-    .line 16
     invoke-static {p0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     move-object v2, v0
@@ -242,12 +224,10 @@
 .method public static a()Landroid/content/res/Resources;
     .locals 1
 
-    .line 9
     sget-object v0, Lcom/amap/api/col/l3/fm;->c:Landroid/content/res/Resources;
 
     if-nez v0, :cond_0
 
-    .line 10
     sget-object v0, Lcom/amap/api/col/l3/fm;->f:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -261,7 +241,6 @@
 .method public static a(Landroid/content/Context;I)Landroid/view/View;
     .locals 4
 
-    .line 21
     invoke-static {}, Lcom/amap/api/col/l3/fm;->a()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -270,14 +249,12 @@
 
     move-result-object p1
 
-    .line 22
     sget-boolean v0, Lcom/amap/api/col/l3/fm;->e:Z
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_0
 
-    .line 23
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object p0
@@ -288,7 +265,6 @@
 
     return-object p0
 
-    .line 24
     :cond_0
     :try_start_0
     new-instance v0, Lcom/amap/api/col/l3/fl;
@@ -315,7 +291,6 @@
 
     invoke-direct {v0, p0, v2, v3}, Lcom/amap/api/col/l3/fl;-><init>(Landroid/content/Context;ILjava/lang/ClassLoader;)V
 
-    .line 25
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object p0
@@ -331,7 +306,6 @@
     :catchall_0
     move-exception p0
 
-    .line 26
     :try_start_1
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
@@ -339,12 +313,10 @@
 
     const-string v2, "selfInflate(Activity activity, int resource, ViewGroup root)"
 
-    .line 27
     invoke-static {p0, v0, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 28
     :goto_1
     invoke-interface {p1}, Landroid/content/res/XmlResourceParser;->close()V
 
@@ -355,7 +327,6 @@
 
     invoke-interface {p1}, Landroid/content/res/XmlResourceParser;->close()V
 
-    .line 29
     throw p0
 .end method
 
@@ -367,7 +338,6 @@
         }
     .end annotation
 
-    .line 17
     new-instance v0, Ljava/io/File;
 
     sget-object v1, Lcom/amap/api/col/l3/fm;->m:Ljava/lang/String;
@@ -376,7 +346,6 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 18
     new-instance v1, Ljava/io/FileOutputStream;
 
     invoke-direct {v1, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
@@ -385,7 +354,6 @@
 
     new-array v0, v0, [B
 
-    .line 19
     :goto_0
     invoke-virtual {p0, v0}, Ljava/io/InputStream;->read([B)I
 
@@ -395,7 +363,6 @@
 
     const/4 v3, 0x0
 
-    .line 20
     invoke-virtual {v1, v0, v3, v2}, Ljava/io/OutputStream;->write([BII)V
 
     goto :goto_0
@@ -409,11 +376,9 @@
 
     const/4 v0, 0x1
 
-    .line 1
     :try_start_0
     sput-object p0, Lcom/amap/api/col/l3/fm;->f:Landroid/content/Context;
 
-    .line 2
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -440,7 +405,6 @@
 
     sput-object v1, Lcom/amap/api/col/l3/fm;->m:Ljava/lang/String;
 
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -459,14 +423,12 @@
 
     sput-object v1, Lcom/amap/api/col/l3/fm;->n:Ljava/lang/String;
 
-    .line 4
     sget-boolean v1, Lcom/amap/api/col/l3/fm;->e:Z
 
     if-nez v1, :cond_0
 
     return v0
 
-    .line 5
     :cond_0
     invoke-static {p0}, Lcom/amap/api/col/l3/fm;->c(Landroid/content/Context;)Z
 
@@ -478,7 +440,6 @@
 
     return p0
 
-    .line 6
     :cond_1
     sget-object v1, Lcom/amap/api/col/l3/fm;->n:Ljava/lang/String;
 
@@ -488,7 +449,6 @@
 
     sput-object v1, Lcom/amap/api/col/l3/fm;->b:Landroid/content/res/AssetManager;
 
-    .line 7
     new-instance v2, Landroid/util/DisplayMetrics;
 
     invoke-direct {v2}, Landroid/util/DisplayMetrics;-><init>()V
@@ -516,7 +476,6 @@
     :catchall_0
     move-exception p0
 
-    .line 8
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_0
@@ -528,7 +487,6 @@
 
     if-nez p0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
     move-result-object p0
@@ -538,7 +496,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 3
     :try_start_0
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
 
@@ -552,7 +509,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 4
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 
     move-result-object v1
@@ -560,7 +516,6 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     :try_start_1
     invoke-virtual {v1}, Ljava/io/File;->canWrite()Z
 
@@ -570,7 +525,6 @@
 
     const-string v2, "LBS"
 
-    .line 6
     invoke-virtual {p0, v2}, Landroid/content/Context;->getExternalFilesDir(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
@@ -580,7 +534,6 @@
     :cond_1
     move-object v1, v0
 
-    .line 7
     :cond_2
     invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
@@ -592,7 +545,6 @@
     :goto_0
     if-nez v0, :cond_3
 
-    .line 8
     invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
     move-result-object p0
@@ -623,7 +575,6 @@
 
     move-object v1, v0
 
-    .line 9
     :goto_1
     :try_start_2
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
@@ -632,7 +583,6 @@
 
     if-nez v1, :cond_4
 
-    .line 10
     invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
     move-result-object p0
@@ -654,7 +604,6 @@
 
     return-object p0
 
-    .line 11
     :cond_5
     throw v0
 .end method
@@ -662,7 +611,6 @@
 .method static synthetic b()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/fm;->h:Ljava/lang/String;
 
     return-object v0
@@ -671,7 +619,6 @@
 .method static synthetic c()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/fm;->j:Ljava/lang/String;
 
     return-object v0
@@ -684,7 +631,6 @@
 
     const-string v1, "ResourcesUtil"
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 
     move-result-object v2
@@ -721,7 +667,6 @@
 
     const/4 v3, 0x0
 
-    .line 3
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -737,7 +682,6 @@
 
     move-result-object v3
 
-    .line 4
     new-instance p0, Ljava/io/File;
 
     sget-object v4, Lcom/amap/api/col/l3/fm;->n:Ljava/lang/String;
@@ -782,7 +726,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 5
     :try_start_1
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
     :try_end_1
@@ -793,22 +736,18 @@
     :catch_0
     move-exception p0
 
-    .line 6
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 7
     invoke-static {p0, v1, v0}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
     :goto_1
     return v7
 
-    .line 8
     :cond_2
     :try_start_2
     invoke-static {}, Lcom/amap/api/col/l3/fm;->e()V
 
-    .line 9
     invoke-static {v3}, Lcom/amap/api/col/l3/fm;->a(Ljava/io/InputStream;)Ljava/io/OutputStream;
 
     move-result-object p0
@@ -817,7 +756,6 @@
 
     if-eqz v3, :cond_3
 
-    .line 10
     :try_start_3
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
 
@@ -832,18 +770,15 @@
     :goto_2
     if-eqz p0, :cond_4
 
-    .line 11
     invoke-virtual {p0}, Ljava/io/OutputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
 
     goto :goto_4
 
-    .line 12
     :goto_3
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 13
     invoke-static {p0, v1, v0}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_4
@@ -853,18 +788,15 @@
     :catchall_0
     move-exception p0
 
-    .line 14
     :try_start_4
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 15
     invoke-static {p0, v1, v0}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     if-eqz v3, :cond_5
 
-    .line 16
     :try_start_5
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
     :try_end_5
@@ -875,10 +807,8 @@
     :catch_2
     move-exception p0
 
-    .line 17
     invoke-virtual {p0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 18
     invoke-static {p0, v1, v0}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_5
@@ -890,7 +820,6 @@
 
     if-eqz v3, :cond_6
 
-    .line 19
     :try_start_6
     invoke-virtual {v3}, Ljava/io/InputStream;->close()V
     :try_end_6
@@ -901,13 +830,10 @@
     :catch_3
     move-exception v2
 
-    .line 20
     invoke-virtual {v2}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 21
     invoke-static {v2, v1, v0}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 22
     :cond_6
     :goto_6
     throw p0
@@ -916,7 +842,6 @@
 .method static synthetic d()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/fm;->g:Ljava/lang/String;
 
     return-object v0
@@ -925,14 +850,12 @@
 .method private static e()V
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     sget-object v1, Lcom/amap/api/col/l3/fm;->m:Ljava/lang/String;
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 2
     new-instance v1, Lcom/amap/api/col/l3/fm$a;
 
     invoke-direct {v1}, Lcom/amap/api/col/l3/fm$a;-><init>()V
@@ -943,12 +866,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     array-length v1, v0
 
     if-lez v1, :cond_0
 
-    .line 4
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -958,7 +879,6 @@
 
     aget-object v3, v0, v2
 
-    .line 5
     invoke-virtual {v3}, Ljava/io/File;->delete()Z
 
     add-int/lit8 v2, v2, 0x1

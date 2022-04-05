@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/maps/model/animation/Animation$AnimationListener;
 .super Ljava/lang/Object;
-.source "Animation.java"
 
 
 # annotations

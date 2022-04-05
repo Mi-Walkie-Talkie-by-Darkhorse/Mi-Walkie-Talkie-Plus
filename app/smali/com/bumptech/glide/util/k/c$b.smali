@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/util/k/c$b;
 .super Lcom/bumptech/glide/util/k/c;
-.source "StateVerifier.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/bumptech/glide/util/k/c;-><init>(Lcom/bumptech/glide/util/k/c$a;)V
 
     return-void
@@ -35,14 +33,12 @@
 .method public a()V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Lcom/bumptech/glide/util/k/c$b;->a:Z
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -56,7 +52,6 @@
 .method public a(Z)V
     .locals 0
 
-    .line 3
     iput-boolean p1, p0, Lcom/bumptech/glide/util/k/c$b;->a:Z
 
     return-void

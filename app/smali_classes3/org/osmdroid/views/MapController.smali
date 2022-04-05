@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/MapController;
 .super Ljava/lang/Object;
-.source "MapController.java"
 
 # interfaces
 .implements Lorg/osmdroid/api/IMapController;
@@ -40,15 +39,12 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     move-object/from16 v1, p1
 
-    .line 2
     iput-object v1, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
-    .line 3
     new-instance v1, Lorg/osmdroid/views/MapController$ReplayController;
 
     const/4 v2, 0x0
@@ -57,7 +53,6 @@
 
     iput-object v1, v0, Lorg/osmdroid/views/MapController;->mReplayController:Lorg/osmdroid/views/MapController$ReplayController;
 
-    .line 4
     iget-object v1, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v1}, Lorg/osmdroid/views/MapView;->isLayoutOccurred()Z
@@ -66,12 +61,10 @@
 
     if-nez v1, :cond_0
 
-    .line 5
     iget-object v1, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v1, v0}, Lorg/osmdroid/views/MapView;->addOnFirstLayoutListener(Lorg/osmdroid/views/MapView$OnFirstLayoutListener;)V
 
-    .line 6
     :cond_0
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -81,7 +74,6 @@
 
     if-lt v1, v2, :cond_1
 
-    .line 7
     new-instance v1, Lorg/osmdroid/views/MapController$ZoomAnimatorListener;
 
     invoke-direct {v1, v0}, Lorg/osmdroid/views/MapController$ZoomAnimatorListener;-><init>(Lorg/osmdroid/views/MapController;)V
@@ -90,7 +82,6 @@
 
     new-array v5, v2, [F
 
-    .line 8
     fill-array-data v5, :array_0
 
     invoke-static {v5}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
@@ -99,22 +90,18 @@
 
     iput-object v5, v0, Lorg/osmdroid/views/MapController;->mZoomInAnimation:Landroid/animation/ValueAnimator;
 
-    .line 9
     invoke-virtual {v5, v1}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 10
     iget-object v5, v0, Lorg/osmdroid/views/MapController;->mZoomInAnimation:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v5, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 11
     iget-object v5, v0, Lorg/osmdroid/views/MapController;->mZoomInAnimation:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v5, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     new-array v2, v2, [F
 
-    .line 12
     fill-array-data v2, :array_1
 
     invoke-static {v2}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
@@ -123,28 +110,23 @@
 
     iput-object v2, v0, Lorg/osmdroid/views/MapController;->mZoomOutAnimation:Landroid/animation/ValueAnimator;
 
-    .line 13
     invoke-virtual {v2, v1}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 14
     iget-object v2, v0, Lorg/osmdroid/views/MapController;->mZoomOutAnimation:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v2, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 15
     iget-object v1, v0, Lorg/osmdroid/views/MapController;->mZoomOutAnimation:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v1, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     goto :goto_0
 
-    .line 16
     :cond_1
     new-instance v1, Lorg/osmdroid/views/MapController$ZoomAnimationListener;
 
     invoke-direct {v1, v0}, Lorg/osmdroid/views/MapController$ZoomAnimationListener;-><init>(Lorg/osmdroid/views/MapController;)V
 
-    .line 17
     new-instance v2, Landroid/view/animation/ScaleAnimation;
 
     const/high16 v6, 0x3f800000    # 1.0f
@@ -169,7 +151,6 @@
 
     iput-object v2, v0, Lorg/osmdroid/views/MapController;->mZoomInAnimationOld:Landroid/view/animation/ScaleAnimation;
 
-    .line 18
     new-instance v2, Landroid/view/animation/ScaleAnimation;
 
     const/high16 v15, 0x3f800000    # 1.0f
@@ -194,22 +175,18 @@
 
     iput-object v2, v0, Lorg/osmdroid/views/MapController;->mZoomOutAnimationOld:Landroid/view/animation/ScaleAnimation;
 
-    .line 19
     iget-object v2, v0, Lorg/osmdroid/views/MapController;->mZoomInAnimationOld:Landroid/view/animation/ScaleAnimation;
 
     invoke-virtual {v2, v3, v4}, Landroid/view/animation/ScaleAnimation;->setDuration(J)V
 
-    .line 20
     iget-object v2, v0, Lorg/osmdroid/views/MapController;->mZoomOutAnimationOld:Landroid/view/animation/ScaleAnimation;
 
     invoke-virtual {v2, v3, v4}, Landroid/view/animation/ScaleAnimation;->setDuration(J)V
 
-    .line 21
     iget-object v2, v0, Lorg/osmdroid/views/MapController;->mZoomInAnimationOld:Landroid/view/animation/ScaleAnimation;
 
     invoke-virtual {v2, v1}, Landroid/view/animation/ScaleAnimation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
-    .line 22
     iget-object v2, v0, Lorg/osmdroid/views/MapController;->mZoomOutAnimationOld:Landroid/view/animation/ScaleAnimation;
 
     invoke-virtual {v2, v1}, Landroid/view/animation/ScaleAnimation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
@@ -237,7 +214,6 @@
 .method public animateTo(II)V
     .locals 6
 
-    .line 5
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->isLayoutOccurred()Z
@@ -246,14 +222,12 @@
 
     if-nez v0, :cond_0
 
-    .line 6
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mReplayController:Lorg/osmdroid/views/MapController$ReplayController;
 
     invoke-virtual {v0, p1, p2}, Lorg/osmdroid/views/MapController$ReplayController;->animateTo(II)V
 
     return-void
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -263,14 +237,12 @@
 
     if-nez v0, :cond_2
 
-    .line 8
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     const/4 v1, 0x0
 
     iput-boolean v1, v0, Lorg/osmdroid/views/MapView;->mIsFlinging:Z
 
-    .line 9
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
@@ -281,7 +253,6 @@
 
     move-result-object p1
 
-    .line 10
     iget-object p2, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getWidth()I
@@ -304,26 +275,22 @@
 
     invoke-virtual {p1, p2, v0}, Landroid/graphics/Point;->offset(II)V
 
-    .line 11
     iget-object p2, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getScrollX()I
 
     move-result v1
 
-    .line 12
     iget-object p2, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getScrollY()I
 
     move-result v2
 
-    .line 13
     iget p2, p1, Landroid/graphics/Point;->x:I
 
     sub-int v3, p2, v1
 
-    .line 14
     iget p1, p1, Landroid/graphics/Point;->y:I
 
     sub-int v4, p1, v2
@@ -332,7 +299,6 @@
 
     if-eqz v4, :cond_2
 
-    .line 15
     :cond_1
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -344,7 +310,6 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/widget/Scroller;->startScroll(IIIII)V
 
-    .line 16
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->postInvalidate()V
@@ -356,7 +321,6 @@
 .method public animateTo(Lorg/osmdroid/api/IGeoPoint;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->isLayoutOccurred()Z
@@ -365,14 +329,12 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mReplayController:Lorg/osmdroid/views/MapController$ReplayController;
 
     invoke-virtual {v0, p1}, Lorg/osmdroid/views/MapController$ReplayController;->animateTo(Lorg/osmdroid/api/IGeoPoint;)V
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -386,7 +348,6 @@
 
     move-result-object p1
 
-    .line 4
     iget v0, p1, Landroid/graphics/Point;->x:I
 
     iget p1, p1, Landroid/graphics/Point;->y:I
@@ -399,7 +360,6 @@
 .method protected onAnimationEnd()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
@@ -410,7 +370,6 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v1}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
@@ -421,19 +380,16 @@
 
     move-result v2
 
-    .line 3
     invoke-virtual {v0}, Landroid/graphics/Rect;->centerY()I
 
     move-result v0
 
     const/4 v3, 0x0
 
-    .line 4
     invoke-virtual {v1, v2, v0, v3}, Lorg/osmdroid/views/Projection;->unrotateAndScalePoint(IILandroid/graphics/Point;)Landroid/graphics/Point;
 
     move-result-object v0
 
-    .line 5
     iget-object v1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v1}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
@@ -448,7 +404,6 @@
 
     move-result-object v0
 
-    .line 6
     iget-object v1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getWidth()I
@@ -471,7 +426,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Point;->offset(II)V
 
-    .line 7
     iget-object v1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget-object v1, v1, Lorg/osmdroid/views/MapView;->mIsAnimating:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -480,7 +434,6 @@
 
     invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 8
     iget-object v1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget v2, v0, Landroid/graphics/Point;->x:I
@@ -489,7 +442,6 @@
 
     invoke-virtual {v1, v2, v0}, Lorg/osmdroid/views/MapView;->scrollTo(II)V
 
-    .line 9
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget-object v0, v0, Lorg/osmdroid/views/MapView;->mTargetZoomLevel:Ljava/util/concurrent/atomic/AtomicInteger;
@@ -500,24 +452,20 @@
 
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/MapController;->setZoom(I)I
 
-    .line 10
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
     iput v1, v0, Lorg/osmdroid/views/MapView;->mMultiTouchScale:F
 
-    .line 11
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xb
 
     if-lt v0, v1, :cond_0
 
-    .line 12
     iput-object v3, p0, Lorg/osmdroid/views/MapController;->mCurrentAnimator:Landroid/animation/Animator;
 
-    .line 13
     :cond_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -525,17 +473,14 @@
 
     if-gt v0, v1, :cond_1
 
-    .line 14
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->clearAnimation()V
 
-    .line 15
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mZoomInAnimationOld:Landroid/view/animation/ScaleAnimation;
 
     invoke-virtual {v0}, Landroid/view/animation/ScaleAnimation;->reset()V
 
-    .line 16
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mZoomOutAnimationOld:Landroid/view/animation/ScaleAnimation;
 
     invoke-virtual {v0}, Landroid/view/animation/ScaleAnimation;->reset()V
@@ -547,7 +492,6 @@
 .method protected onAnimationStart()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget-object v0, v0, Lorg/osmdroid/views/MapView;->mIsAnimating:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -562,7 +506,6 @@
 .method public onFirstLayout(Landroid/view/View;IIII)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mReplayController:Lorg/osmdroid/views/MapController$ReplayController;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapController$ReplayController;->replayCalls()V
@@ -573,7 +516,6 @@
 .method public scrollBy(II)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0, p1, p2}, Landroid/view/ViewGroup;->scrollBy(II)V
@@ -584,14 +526,12 @@
 .method public setCenter(Lorg/osmdroid/api/IGeoPoint;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget-object v1, v0, Lorg/osmdroid/views/MapView;->mListener:Lorg/osmdroid/events/MapListener;
 
     if-eqz v1, :cond_0
 
-    .line 2
     new-instance v2, Lorg/osmdroid/events/ScrollEvent;
 
     const/4 v3, 0x0
@@ -600,7 +540,6 @@
 
     invoke-interface {v1, v2}, Lorg/osmdroid/events/MapListener;->onScroll(Lorg/osmdroid/events/ScrollEvent;)Z
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -610,14 +549,12 @@
 
     if-nez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mReplayController:Lorg/osmdroid/views/MapController$ReplayController;
 
     invoke-virtual {v0, p1}, Lorg/osmdroid/views/MapController$ReplayController;->setCenter(Lorg/osmdroid/api/IGeoPoint;)V
 
     return-void
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -631,7 +568,6 @@
 
     move-result-object p1
 
-    .line 6
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
@@ -646,7 +582,6 @@
 
     move-result-object p1
 
-    .line 7
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getWidth()I
@@ -669,7 +604,6 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Point;->offset(II)V
 
-    .line 8
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget v1, p1, Landroid/graphics/Point;->x:I
@@ -684,7 +618,6 @@
 .method public setZoom(I)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0, p1}, Lorg/osmdroid/views/MapView;->setZoomLevel(I)I
@@ -697,7 +630,6 @@
 .method public stopAnimation(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getScroller()Landroid/widget/Scroller;
@@ -712,14 +644,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     const/4 v0, 0x0
 
     iput-boolean v0, p1, Lorg/osmdroid/views/MapView;->mIsFlinging:Z
 
-    .line 3
     invoke-virtual {p1}, Lorg/osmdroid/views/MapView;->getScroller()Landroid/widget/Scroller;
 
     move-result-object p1
@@ -728,11 +658,9 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {p0}, Lorg/osmdroid/views/MapController;->stopPanning()V
 
-    .line 5
     :cond_1
     :goto_0
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -741,10 +669,8 @@
 
     if-lt p1, v0, :cond_2
 
-    .line 6
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mCurrentAnimator:Landroid/animation/Animator;
 
-    .line 7
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget-object v0, v0, Lorg/osmdroid/views/MapView;->mIsAnimating:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -755,12 +681,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 8
     invoke-virtual {p1}, Landroid/animation/Animator;->end()V
 
     goto :goto_1
 
-    .line 9
     :cond_2
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -772,7 +696,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 10
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->clearAnimation()V
@@ -785,14 +708,12 @@
 .method public stopPanning()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     const/4 v1, 0x0
 
     iput-boolean v1, v0, Lorg/osmdroid/views/MapView;->mIsFlinging:Z
 
-    .line 2
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getScroller()Landroid/widget/Scroller;
 
     move-result-object v0
@@ -807,7 +728,6 @@
 .method public zoomIn()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     const/4 v1, 0x0
@@ -828,7 +748,6 @@
 .method public zoomInFixing(II)Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget-object v0, v0, Lorg/osmdroid/views/MapView;->mMultiTouchScalePoint:Landroid/graphics/PointF;
@@ -839,7 +758,6 @@
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/PointF;->set(FF)V
 
-    .line 2
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapView;->canZoomIn()Z
@@ -850,7 +768,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 3
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget-object v0, p1, Lorg/osmdroid/views/MapView;->mListener:Lorg/osmdroid/events/MapListener;
@@ -859,7 +776,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     new-instance v2, Lorg/osmdroid/events/ZoomEvent;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapView;->getZoomLevel()I
@@ -872,7 +788,6 @@
 
     invoke-interface {v0, v2}, Lorg/osmdroid/events/MapListener;->onZoom(Lorg/osmdroid/events/ZoomEvent;)Z
 
-    .line 5
     :cond_0
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -886,7 +801,6 @@
 
     return p2
 
-    .line 6
     :cond_1
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -900,24 +814,20 @@
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
 
-    .line 7
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 p2, 0xb
 
     if-lt p1, p2, :cond_2
 
-    .line 8
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mZoomInAnimation:Landroid/animation/ValueAnimator;
 
     iput-object p1, p0, Lorg/osmdroid/views/MapController;->mCurrentAnimator:Landroid/animation/Animator;
 
-    .line 9
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->start()V
 
     goto :goto_0
 
-    .line 10
     :cond_2
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -935,7 +845,6 @@
 .method public zoomOut()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     const/4 v1, 0x0
@@ -956,7 +865,6 @@
 .method public zoomOutFixing(II)Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget-object v0, v0, Lorg/osmdroid/views/MapView;->mMultiTouchScalePoint:Landroid/graphics/PointF;
@@ -967,7 +875,6 @@
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/PointF;->set(FF)V
 
-    .line 2
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapView;->canZoomOut()Z
@@ -978,7 +885,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 3
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget-object v0, p1, Lorg/osmdroid/views/MapView;->mListener:Lorg/osmdroid/events/MapListener;
@@ -987,7 +893,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     new-instance v2, Lorg/osmdroid/events/ZoomEvent;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapView;->getZoomLevel()I
@@ -1000,7 +905,6 @@
 
     invoke-interface {v0, v2}, Lorg/osmdroid/events/MapListener;->onZoom(Lorg/osmdroid/events/ZoomEvent;)Z
 
-    .line 5
     :cond_0
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1014,7 +918,6 @@
 
     return p2
 
-    .line 6
     :cond_1
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1028,24 +931,20 @@
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
 
-    .line 7
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 p2, 0xb
 
     if-lt p1, p2, :cond_2
 
-    .line 8
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mZoomOutAnimation:Landroid/animation/ValueAnimator;
 
     iput-object p1, p0, Lorg/osmdroid/views/MapController;->mCurrentAnimator:Landroid/animation/Animator;
 
-    .line 9
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->start()V
 
     goto :goto_0
 
-    .line 10
     :cond_2
     iget-object p1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1063,7 +962,6 @@
 .method public zoomTo(I)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getWidth()I
@@ -1092,7 +990,6 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     iget-object v1, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v1}, Lorg/osmdroid/views/MapView;->getMaxZoomLevel()I
@@ -1114,7 +1011,6 @@
     :cond_0
     move v1, v2
 
-    .line 2
     :goto_0
     iget-object v2, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1130,7 +1026,6 @@
 
     move-result v1
 
-    .line 3
     :cond_1
     iget-object v2, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1144,7 +1039,6 @@
 
     if-ge v1, v2, :cond_2
 
-    .line 4
     iget-object v5, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v5}, Lorg/osmdroid/views/MapView;->canZoomOut()Z
@@ -1158,7 +1052,6 @@
 
     iget-object v5, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
-    .line 5
     invoke-virtual {v5}, Lorg/osmdroid/views/MapView;->canZoomIn()Z
 
     move-result v5
@@ -1173,7 +1066,6 @@
     :cond_4
     const/4 v5, 0x0
 
-    .line 6
     :goto_1
     iget-object v6, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1191,21 +1083,18 @@
 
     if-eqz v5, :cond_9
 
-    .line 7
     iget-object v5, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget-object v6, v5, Lorg/osmdroid/views/MapView;->mListener:Lorg/osmdroid/events/MapListener;
 
     if-eqz v6, :cond_5
 
-    .line 8
     new-instance v7, Lorg/osmdroid/events/ZoomEvent;
 
     invoke-direct {v7, v5, v1}, Lorg/osmdroid/events/ZoomEvent;-><init>(Lorg/osmdroid/views/MapView;I)V
 
     invoke-interface {v6, v7}, Lorg/osmdroid/events/MapListener;->onZoom(Lorg/osmdroid/events/ZoomEvent;)Z
 
-    .line 9
     :cond_5
     iget-object v5, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1219,7 +1108,6 @@
 
     return v4
 
-    .line 10
     :cond_6
     iget-object v5, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1233,14 +1121,12 @@
 
     int-to-double v7, v7
 
-    .line 11
     invoke-static {v5, v6, v7, v8}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v5
 
     double-to-float v11, v5
 
-    .line 12
     sget v5, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v6, 0xb
@@ -1249,7 +1135,6 @@
 
     if-lt v5, v6, :cond_7
 
-    .line 13
     new-instance v1, Lorg/osmdroid/views/MapController$ZoomAnimatorListener;
 
     invoke-direct {v1, v0}, Lorg/osmdroid/views/MapController$ZoomAnimatorListener;-><init>(Lorg/osmdroid/views/MapController;)V
@@ -1264,24 +1149,18 @@
 
     aput v11, v2, v3
 
-    .line 14
     invoke-static {v2}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
     move-result-object v2
 
-    .line 15
     invoke-virtual {v2, v1}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 16
     invoke-virtual {v2, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 17
     invoke-virtual {v2, v14, v15}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 18
     iput-object v2, v0, Lorg/osmdroid/views/MapController;->mCurrentAnimator:Landroid/animation/Animator;
 
-    .line 19
     invoke-virtual {v2}, Landroid/animation/ValueAnimator;->start()V
 
     goto :goto_3
@@ -1289,7 +1168,6 @@
     :cond_7
     if-le v1, v2, :cond_8
 
-    .line 20
     iget-object v1, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     iget-object v2, v0, Lorg/osmdroid/views/MapController;->mZoomInAnimationOld:Landroid/view/animation/ScaleAnimation;
@@ -1298,7 +1176,6 @@
 
     goto :goto_2
 
-    .line 21
     :cond_8
     iget-object v1, v0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1306,7 +1183,6 @@
 
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->startAnimation(Landroid/view/animation/Animation;)V
 
-    .line 22
     :goto_2
     new-instance v1, Landroid/view/animation/ScaleAnimation;
 
@@ -1334,10 +1210,8 @@
 
     invoke-direct/range {v7 .. v15}, Landroid/view/animation/ScaleAnimation;-><init>(FFFFIFIF)V
 
-    .line 23
     invoke-virtual {v1, v5, v6}, Landroid/view/animation/ScaleAnimation;->setDuration(J)V
 
-    .line 24
     new-instance v2, Lorg/osmdroid/views/MapController$ZoomAnimationListener;
 
     invoke-direct {v2, v0}, Lorg/osmdroid/views/MapController$ZoomAnimationListener;-><init>(Lorg/osmdroid/views/MapController;)V
@@ -1366,7 +1240,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1376,14 +1249,12 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mReplayController:Lorg/osmdroid/views/MapController$ReplayController;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lorg/osmdroid/views/MapController$ReplayController;->zoomToSpan(DD)V
 
     return-void
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1395,7 +1266,6 @@
 
     move-result-object v0
 
-    .line 5
     iget-object v1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v1}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
@@ -1406,12 +1276,10 @@
 
     move-result v1
 
-    .line 6
     invoke-virtual {v0}, Lorg/osmdroid/util/BoundingBox;->getLatitudeSpan()D
 
     move-result-wide v2
 
-    .line 7
     invoke-virtual {v0}, Lorg/osmdroid/util/BoundingBox;->getLongitudeSpan()D
 
     move-result-wide v4
@@ -1420,7 +1288,6 @@
 
     div-double/2addr p3, v4
 
-    .line 8
     invoke-static {p1, p2, p3, p4}, Ljava/lang/Math;->max(DD)D
 
     move-result-wide p1
@@ -1431,7 +1298,6 @@
 
     if-lez v0, :cond_2
 
-    .line 9
     iget-object p3, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     double-to-float p1, p1
@@ -1453,7 +1319,6 @@
 
     if-gez v0, :cond_3
 
-    .line 10
     iget-object p3, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     const/high16 p4, 0x3f800000    # 1.0f
@@ -1462,7 +1327,6 @@
 
     div-float/2addr p4, p1
 
-    .line 11
     invoke-static {p4}, Lorg/osmdroid/views/util/MyMath;->getNextSquareNumberAbove(F)I
 
     move-result p1
@@ -1471,7 +1335,6 @@
 
     add-int/lit8 v1, v1, -0x1
 
-    .line 12
     invoke-virtual {p3, v1}, Lorg/osmdroid/views/MapView;->setZoomLevel(I)I
 
     :cond_3
@@ -1488,7 +1351,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1498,14 +1360,12 @@
 
     if-nez v0, :cond_1
 
-    .line 14
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mReplayController:Lorg/osmdroid/views/MapController$ReplayController;
 
     invoke-virtual {v0, p1, p2}, Lorg/osmdroid/views/MapController$ReplayController;->zoomToSpan(II)V
 
     return-void
 
-    .line 15
     :cond_1
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1517,7 +1377,6 @@
 
     move-result-object v0
 
-    .line 16
     iget-object v1, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v1}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
@@ -1528,12 +1387,10 @@
 
     move-result v1
 
-    .line 17
     invoke-virtual {v0}, Lorg/osmdroid/util/BoundingBox;->getLatitudeSpanE6()I
 
     move-result v2
 
-    .line 18
     invoke-virtual {v0}, Lorg/osmdroid/util/BoundingBox;->getLongitudeSpanE6()I
 
     move-result v0
@@ -1550,7 +1407,6 @@
 
     div-float/2addr p2, v0
 
-    .line 19
     invoke-static {p1, p2}, Ljava/lang/Math;->max(FF)F
 
     move-result p1
@@ -1561,7 +1417,6 @@
 
     if-lez v0, :cond_2
 
-    .line 20
     iget-object p2, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-static {p1}, Lorg/osmdroid/views/util/MyMath;->getNextSquareNumberAbove(F)I
@@ -1583,12 +1438,10 @@
 
     if-gez v0, :cond_3
 
-    .line 21
     iget-object v0, p0, Lorg/osmdroid/views/MapController;->mMapView:Lorg/osmdroid/views/MapView;
 
     div-float/2addr p2, p1
 
-    .line 22
     invoke-static {p2}, Lorg/osmdroid/views/util/MyMath;->getNextSquareNumberAbove(F)I
 
     move-result p1
@@ -1597,7 +1450,6 @@
 
     add-int/lit8 v1, v1, -0x1
 
-    .line 23
     invoke-virtual {v0, v1}, Lorg/osmdroid/views/MapView;->setZoomLevel(I)I
 
     :cond_3
@@ -1610,7 +1462,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Lorg/osmdroid/util/BoundingBoxE6;->getLatitudeSpanE6()I
 
     move-result v0

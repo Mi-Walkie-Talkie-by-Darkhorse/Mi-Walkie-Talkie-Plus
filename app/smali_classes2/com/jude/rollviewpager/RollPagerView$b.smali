@@ -1,6 +1,5 @@
 .class Lcom/jude/rollviewpager/RollPagerView$b;
 .super Landroid/view/GestureDetector$SimpleOnGestureListener;
-.source "RollPagerView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/jude/rollviewpager/RollPagerView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/jude/rollviewpager/RollPagerView$b;->a:Lcom/jude/rollviewpager/RollPagerView;
 
     invoke-direct {p0}, Landroid/view/GestureDetector$SimpleOnGestureListener;-><init>()V
@@ -35,7 +33,6 @@
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/jude/rollviewpager/RollPagerView$b;->a:Lcom/jude/rollviewpager/RollPagerView;
 
     invoke-static {v0}, Lcom/jude/rollviewpager/RollPagerView;->a(Lcom/jude/rollviewpager/RollPagerView;)Lcom/jude/rollviewpager/b;
@@ -44,7 +41,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/jude/rollviewpager/RollPagerView$b;->a:Lcom/jude/rollviewpager/RollPagerView;
 
     invoke-static {v0}, Lcom/jude/rollviewpager/RollPagerView;->b(Lcom/jude/rollviewpager/RollPagerView;)Landroidx/viewpager/widget/a;
@@ -55,7 +51,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/jude/rollviewpager/RollPagerView$b;->a:Lcom/jude/rollviewpager/RollPagerView;
 
     invoke-static {v0}, Lcom/jude/rollviewpager/RollPagerView;->a(Lcom/jude/rollviewpager/RollPagerView;)Lcom/jude/rollviewpager/b;
@@ -90,7 +85,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/jude/rollviewpager/RollPagerView$b;->a:Lcom/jude/rollviewpager/RollPagerView;
 
@@ -110,7 +104,6 @@
 
     invoke-interface {v0, v1}, Lcom/jude/rollviewpager/b;->a(I)V
 
-    .line 5
     :cond_1
     :goto_0
     invoke-super {p0, p1}, Landroid/view/GestureDetector$SimpleOnGestureListener;->onSingleTapUp(Landroid/view/MotionEvent;)Z

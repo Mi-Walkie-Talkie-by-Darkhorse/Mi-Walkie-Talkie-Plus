@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$b;
 .super Landroid/os/Handler;
-.source "NumberPickerView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$b;->a:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -35,10 +33,8 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 3
 
-    .line 1
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 2
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x2
@@ -51,7 +47,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$b;->a:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 
@@ -59,7 +54,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$b;->a:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 

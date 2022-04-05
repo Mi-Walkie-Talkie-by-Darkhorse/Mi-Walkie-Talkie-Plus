@@ -1,6 +1,5 @@
 .class final Lde/greenrobot/event/l;
 .super Ljava/lang/Object;
-.source "Subscription.java"
 
 
 # instance fields
@@ -15,17 +14,14 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 1
     instance-of v0, p1, Lde/greenrobot/event/l;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lde/greenrobot/event/l;
 
-    .line 3
     iget-object v0, p0, Lde/greenrobot/event/l;->a:Ljava/lang/Object;
 
     iget-object v2, p1, Lde/greenrobot/event/l;->a:Ljava/lang/Object;
@@ -51,7 +47,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lde/greenrobot/event/l;->a:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I

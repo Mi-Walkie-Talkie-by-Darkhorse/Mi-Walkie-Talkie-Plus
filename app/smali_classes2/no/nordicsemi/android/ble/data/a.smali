@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/data/a;
 .super Ljava/lang/Object;
-.source "DataFilter.java"
 
 
 # virtual methods

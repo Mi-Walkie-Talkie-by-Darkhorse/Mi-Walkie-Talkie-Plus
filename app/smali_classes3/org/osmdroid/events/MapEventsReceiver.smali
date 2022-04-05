@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/events/MapEventsReceiver;
 .super Ljava/lang/Object;
-.source "MapEventsReceiver.java"
 
 
 # virtual methods

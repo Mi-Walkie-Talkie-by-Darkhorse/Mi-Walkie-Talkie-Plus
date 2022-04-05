@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity$b;
 .super Lcom/just/agentweb/WebChromeClient;
-.source "UserProtocolActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/UserProtocolActivity;
 
     invoke-direct {p0}, Lcom/just/agentweb/WebChromeClient;-><init>()V
@@ -35,7 +33,6 @@
 .method public onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Lcom/just/agentweb/WebChromeClientDelegate;->onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
 
     return-void

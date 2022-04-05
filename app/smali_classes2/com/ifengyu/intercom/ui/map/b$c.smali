@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/b$c;
 .super Ljava/lang/Object;
-.source "OsmMapOperate.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/b$c;->a:Lcom/ifengyu/intercom/ui/map/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public run()V
     .locals 4
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->c()Ljava/util/List;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -61,7 +57,6 @@
 
     check-cast v1, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
-    .line 3
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/map/b$c;->a:Lcom/ifengyu/intercom/ui/map/b;
 
     const/4 v3, 0x0
@@ -70,7 +65,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/b$c;->a:Lcom/ifengyu/intercom/ui/map/b;
 
@@ -80,7 +74,6 @@
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/map/e/b/b;->a()V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/b$c;->a:Lcom/ifengyu/intercom/ui/map/b;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/map/b;->c(Lcom/ifengyu/intercom/ui/map/b;)Lorg/osmdroid/views/MapView;

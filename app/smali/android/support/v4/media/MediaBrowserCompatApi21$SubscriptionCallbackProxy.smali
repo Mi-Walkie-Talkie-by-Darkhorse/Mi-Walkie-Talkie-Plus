@@ -1,6 +1,5 @@
 .class Landroid/support/v4/media/MediaBrowserCompatApi21$SubscriptionCallbackProxy;
 .super Landroid/media/browse/MediaBrowser$SubscriptionCallback;
-.source "MediaBrowserCompatApi21.java"
 
 
 # annotations
@@ -42,10 +41,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Landroid/media/browse/MediaBrowser$SubscriptionCallback;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroid/support/v4/media/MediaBrowserCompatApi21$SubscriptionCallbackProxy;->mSubscriptionCallback:Landroid/support/v4/media/MediaBrowserCompatApi21$SubscriptionCallback;
 
     return-void
@@ -69,7 +66,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompatApi21$SubscriptionCallbackProxy;->mSubscriptionCallback:Landroid/support/v4/media/MediaBrowserCompatApi21$SubscriptionCallback;
 
     invoke-interface {v0, p1, p2}, Landroid/support/v4/media/MediaBrowserCompatApi21$SubscriptionCallback;->onChildrenLoaded(Ljava/lang/String;Ljava/util/List;)V
@@ -84,7 +80,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroid/support/v4/media/MediaBrowserCompatApi21$SubscriptionCallbackProxy;->mSubscriptionCallback:Landroid/support/v4/media/MediaBrowserCompatApi21$SubscriptionCallback;
 
     invoke-interface {v0, p1}, Landroid/support/v4/media/MediaBrowserCompatApi21$SubscriptionCallback;->onError(Ljava/lang/String;)V

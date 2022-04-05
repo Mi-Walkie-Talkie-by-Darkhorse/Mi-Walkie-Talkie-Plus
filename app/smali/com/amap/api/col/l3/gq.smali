@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/gq;
 .super Ljava/lang/Object;
-.source "ConstConfig.java"
 
 
 # static fields
@@ -27,7 +26,6 @@
 
     const-string v0, "aiu"
 
-    .line 8
     :try_start_0
     new-instance v1, Lcom/amap/api/col/l3/gh$a;
 
@@ -54,7 +52,6 @@
     :catch_0
     move-exception v0
 
-    .line 9
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -65,12 +62,10 @@
 .method public static a(I)[B
     .locals 4
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/gq;->d:[B
 
     if-nez v0, :cond_0
 
-    .line 2
     sget-object v0, Lcom/amap/api/col/l3/gq;->e:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/gc;->b(Ljava/lang/String;)[B
@@ -84,7 +79,6 @@
 
     new-array v1, v0, [B
 
-    .line 3
     sget-object v2, Lcom/amap/api/col/l3/gq;->d:[B
 
     mul-int/lit8 p0, p0, 0x4
@@ -93,7 +87,6 @@
 
     invoke-static {v2, p0, v1, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 4
     aget-byte p0, v1, v3
 
     and-int/lit16 p0, p0, 0xff
@@ -110,7 +103,6 @@
 
     const/4 v0, 0x2
 
-    .line 5
     aget-byte v0, v1, v0
 
     and-int/lit16 v0, v0, 0xff
@@ -125,10 +117,8 @@
 
     add-int/2addr v0, v1
 
-    .line 6
     new-array v1, v0, [B
 
-    .line 7
     sget-object v2, Lcom/amap/api/col/l3/gq;->d:[B
 
     invoke-static {v2, p0, v1, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V

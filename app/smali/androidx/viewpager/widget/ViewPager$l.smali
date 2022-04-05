@@ -1,6 +1,5 @@
 .class Landroidx/viewpager/widget/ViewPager$l;
 .super Ljava/lang/Object;
-.source "ViewPager.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,21 +39,18 @@
 .method public a(Landroid/view/View;Landroid/view/View;)I
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
 
     check-cast p1, Landroidx/viewpager/widget/ViewPager$LayoutParams;
 
-    .line 2
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p2
 
     check-cast p2, Landroidx/viewpager/widget/ViewPager$LayoutParams;
 
-    .line 3
     iget-boolean v0, p1, Landroidx/viewpager/widget/ViewPager$LayoutParams;->a:Z
 
     iget-boolean v1, p2, Landroidx/viewpager/widget/ViewPager$LayoutParams;->a:Z
@@ -74,7 +69,6 @@
     :goto_0
     return p1
 
-    .line 4
     :cond_1
     iget p1, p1, Landroidx/viewpager/widget/ViewPager$LayoutParams;->e:I
 
@@ -88,7 +82,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Landroid/view/View;
 
     check-cast p2, Landroid/view/View;

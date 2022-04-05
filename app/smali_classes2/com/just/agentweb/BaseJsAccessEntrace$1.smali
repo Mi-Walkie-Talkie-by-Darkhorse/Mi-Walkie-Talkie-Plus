@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/BaseJsAccessEntrace$1;
 .super Ljava/lang/Object;
-.source "BaseJsAccessEntrace.java"
 
 # interfaces
 .implements Landroid/webkit/ValueCallback;
@@ -36,7 +35,6 @@
 .method constructor <init>(Lcom/just/agentweb/BaseJsAccessEntrace;Landroid/webkit/ValueCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/BaseJsAccessEntrace$1;->this$0:Lcom/just/agentweb/BaseJsAccessEntrace;
 
     iput-object p2, p0, Lcom/just/agentweb/BaseJsAccessEntrace$1;->val$callback:Landroid/webkit/ValueCallback;
@@ -51,7 +49,6 @@
 .method public bridge synthetic onReceiveValue(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/just/agentweb/BaseJsAccessEntrace$1;->onReceiveValue(Ljava/lang/String;)V
@@ -62,12 +59,10 @@
 .method public onReceiveValue(Ljava/lang/String;)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/BaseJsAccessEntrace$1;->val$callback:Landroid/webkit/ValueCallback;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0, p1}, Landroid/webkit/ValueCallback;->onReceiveValue(Ljava/lang/Object;)V
 
     :cond_0

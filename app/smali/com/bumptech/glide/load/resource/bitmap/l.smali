@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/resource/bitmap/l;
 .super Ljava/lang/Object;
-.source "DrawableTransformation.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/h;
@@ -43,13 +42,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/bitmap/l;->b:Lcom/bumptech/glide/load/h;
 
-    .line 3
     iput-boolean p2, p0, Lcom/bumptech/glide/load/resource/bitmap/l;->c:Z
 
     return-void
@@ -70,7 +66,6 @@
         }
     .end annotation
 
-    .line 11
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -110,7 +105,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/bumptech/glide/c;->b(Landroid/content/Context;)Lcom/bumptech/glide/c;
 
     move-result-object v0
@@ -119,28 +113,24 @@
 
     move-result-object v0
 
-    .line 2
     invoke-interface {p2}, Lcom/bumptech/glide/load/engine/s;->get()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Landroid/graphics/drawable/Drawable;
 
-    .line 3
     invoke-static {v0, v1, p3, p4}, Lcom/bumptech/glide/load/resource/bitmap/k;->a(Lcom/bumptech/glide/load/engine/x/e;Landroid/graphics/drawable/Drawable;II)Lcom/bumptech/glide/load/engine/s;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
-    .line 4
     iget-boolean p1, p0, Lcom/bumptech/glide/load/resource/bitmap/l;->c:Z
 
     if-nez p1, :cond_0
 
     return-object p2
 
-    .line 5
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -166,28 +156,23 @@
 
     throw p1
 
-    .line 6
     :cond_1
     iget-object v1, p0, Lcom/bumptech/glide/load/resource/bitmap/l;->b:Lcom/bumptech/glide/load/h;
 
-    .line 7
     invoke-interface {v1, p1, v0, p3, p4}, Lcom/bumptech/glide/load/h;->a(Landroid/content/Context;Lcom/bumptech/glide/load/engine/s;II)Lcom/bumptech/glide/load/engine/s;
 
     move-result-object p3
 
-    .line 8
     invoke-virtual {p3, v0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p4
 
     if-eqz p4, :cond_2
 
-    .line 9
     invoke-interface {p3}, Lcom/bumptech/glide/load/engine/s;->a()V
 
     return-object p2
 
-    .line 10
     :cond_2
     invoke-direct {p0, p1, p3}, Lcom/bumptech/glide/load/resource/bitmap/l;->a(Landroid/content/Context;Lcom/bumptech/glide/load/engine/s;)Lcom/bumptech/glide/load/engine/s;
 
@@ -217,7 +202,6 @@
         .end annotation
     .end param
 
-    .line 12
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/l;->b:Lcom/bumptech/glide/load/h;
 
     invoke-interface {v0, p1}, Lcom/bumptech/glide/load/c;->a(Ljava/security/MessageDigest;)V
@@ -228,15 +212,12 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lcom/bumptech/glide/load/resource/bitmap/l;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/bumptech/glide/load/resource/bitmap/l;
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/l;->b:Lcom/bumptech/glide/load/h;
 
     iget-object p1, p1, Lcom/bumptech/glide/load/resource/bitmap/l;->b:Lcom/bumptech/glide/load/h;
@@ -256,7 +237,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/l;->b:Lcom/bumptech/glide/load/h;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I

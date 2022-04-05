@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/transition/c0;
 .super Ljava/lang/Object;
-.source "ViewGroupOverlayImpl.java"
 
 # interfaces
 .implements Landroidx/transition/h0;

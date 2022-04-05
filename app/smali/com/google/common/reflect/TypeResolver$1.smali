@@ -1,6 +1,5 @@
 .class final Lcom/google/common/reflect/TypeResolver$1;
 .super Lcom/google/common/reflect/TypeVisitor;
-.source "TypeResolver.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Ljava/util/Map;Ljava/lang/reflect/Type;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/reflect/TypeResolver$1;->val$mappings:Ljava/util/Map;
 
     iput-object p2, p0, Lcom/google/common/reflect/TypeResolver$1;->val$to:Ljava/lang/reflect/Type;
@@ -46,7 +44,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -85,7 +82,6 @@
 .method visitGenericArrayType(Ljava/lang/reflect/GenericArrayType;)V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeResolver$1;->val$to:Ljava/lang/reflect/Type;
 
     invoke-static {v0}, Lcom/google/common/reflect/Types;->getComponentType(Ljava/lang/reflect/Type;)Ljava/lang/reflect/Type;
@@ -108,7 +104,6 @@
     :goto_0
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 2
     iget-object v4, p0, Lcom/google/common/reflect/TypeResolver$1;->val$to:Ljava/lang/reflect/Type;
 
     aput-object v4, v1, v2
@@ -117,7 +112,6 @@
 
     invoke-static {v3, v2, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/reflect/TypeResolver$1;->val$mappings:Ljava/util/Map;
 
     invoke-interface {p1}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
@@ -132,7 +126,6 @@
 .method visitParameterizedType(Ljava/lang/reflect/ParameterizedType;)V
     .locals 8
 
-    .line 1
     const-class v0, Ljava/lang/reflect/ParameterizedType;
 
     iget-object v1, p0, Lcom/google/common/reflect/TypeResolver$1;->val$to:Ljava/lang/reflect/Type;
@@ -143,7 +136,6 @@
 
     check-cast v0, Ljava/lang/reflect/ParameterizedType;
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getRawType()Ljava/lang/reflect/Type;
 
     move-result-object v1
@@ -174,17 +166,14 @@
 
     invoke-static {v1, v5, v3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getActualTypeArguments()[Ljava/lang/reflect/Type;
 
     move-result-object v1
 
-    .line 4
     invoke-interface {v0}, Ljava/lang/reflect/ParameterizedType;->getActualTypeArguments()[Ljava/lang/reflect/Type;
 
     move-result-object v3
 
-    .line 5
     array-length v5, v1
 
     array-length v7, v3
@@ -209,13 +198,11 @@
 
     invoke-static {v5, p1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 6
     :goto_1
     array-length p1, v1
 
     if-ge v4, p1, :cond_1
 
-    .line 7
     iget-object p1, p0, Lcom/google/common/reflect/TypeResolver$1;->val$mappings:Ljava/util/Map;
 
     aget-object v0, v1, v4
@@ -242,7 +229,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/TypeResolver$1;->val$mappings:Ljava/util/Map;
 
     new-instance v1, Lcom/google/common/reflect/TypeResolver$TypeVariableKey;
@@ -259,7 +245,6 @@
 .method visitWildcardType(Ljava/lang/reflect/WildcardType;)V
     .locals 8
 
-    .line 1
     const-class v0, Ljava/lang/reflect/WildcardType;
 
     iget-object v1, p0, Lcom/google/common/reflect/TypeResolver$1;->val$to:Ljava/lang/reflect/Type;
@@ -270,27 +255,22 @@
 
     check-cast v0, Ljava/lang/reflect/WildcardType;
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
 
     move-result-object v1
 
-    .line 3
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
 
     move-result-object v2
 
-    .line 4
     invoke-interface {p1}, Ljava/lang/reflect/WildcardType;->getLowerBounds()[Ljava/lang/reflect/Type;
 
     move-result-object v3
 
-    .line 5
     invoke-interface {v0}, Ljava/lang/reflect/WildcardType;->getLowerBounds()[Ljava/lang/reflect/Type;
 
     move-result-object v0
 
-    .line 6
     array-length v4, v1
 
     array-length v5, v2
@@ -331,13 +311,11 @@
 
     const/4 p1, 0x0
 
-    .line 7
     :goto_1
     array-length v4, v1
 
     if-ge p1, v4, :cond_1
 
-    .line 8
     iget-object v4, p0, Lcom/google/common/reflect/TypeResolver$1;->val$mappings:Ljava/util/Map;
 
     aget-object v5, v1, p1
@@ -350,14 +328,12 @@
 
     goto :goto_1
 
-    .line 9
     :cond_1
     :goto_2
     array-length p1, v3
 
     if-ge v7, p1, :cond_2
 
-    .line 10
     iget-object p1, p0, Lcom/google/common/reflect/TypeResolver$1;->val$mappings:Ljava/util/Map;
 
     aget-object v1, v3, v7

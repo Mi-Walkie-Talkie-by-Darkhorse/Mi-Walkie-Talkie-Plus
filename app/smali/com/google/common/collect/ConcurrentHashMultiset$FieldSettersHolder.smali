@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ConcurrentHashMultiset$FieldSettersHolder;
 .super Ljava/lang/Object;
-.source "ConcurrentHashMultiset.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     const-class v0, Lcom/google/common/collect/ConcurrentHashMultiset;
 
     const-string v1, "countMap"
@@ -47,7 +45,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

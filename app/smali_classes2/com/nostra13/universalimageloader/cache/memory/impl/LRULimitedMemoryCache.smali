@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/cache/memory/impl/LRULimitedMemoryCache;
 .super Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;
-.source "LRULimitedMemoryCache.java"
 
 
 # static fields
@@ -26,10 +25,8 @@
 .method public constructor <init>(I)V
     .locals 3
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;-><init>(I)V
 
-    .line 2
     new-instance p1, Ljava/util/LinkedHashMap;
 
     const/16 v0, 0xa
@@ -54,12 +51,10 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LRULimitedMemoryCache;->lruCache:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
-    .line 2
     invoke-super {p0}, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->clear()V
 
     return-void
@@ -78,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -89,12 +83,10 @@
 .method public get(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LRULimitedMemoryCache;->lruCache:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-super {p0, p1}, Lcom/nostra13/universalimageloader/cache/memory/BaseMemoryCache;->get(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object p1
@@ -105,7 +97,6 @@
 .method protected getSize(Landroid/graphics/Bitmap;)I
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getRowBytes()I
 
     move-result v0
@@ -122,14 +113,12 @@
 .method public put(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2}, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->put(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LRULimitedMemoryCache;->lruCache:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -147,12 +136,10 @@
 .method public remove(Ljava/lang/String;)Landroid/graphics/Bitmap;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LRULimitedMemoryCache;->lruCache:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-super {p0, p1}, Lcom/nostra13/universalimageloader/cache/memory/LimitedMemoryCache;->remove(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
     move-result-object p1
@@ -163,12 +150,10 @@
 .method protected removeNext()Landroid/graphics/Bitmap;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LRULimitedMemoryCache;->lruCache:Ljava/util/Map;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LRULimitedMemoryCache;->lruCache:Ljava/util/Map;
 
@@ -180,28 +165,24 @@
 
     move-result-object v1
 
-    .line 3
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 4
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 5
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroid/graphics/Bitmap;
 
-    .line 6
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
@@ -209,7 +190,6 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 7
     :goto_0
     monitor-exit v0
 

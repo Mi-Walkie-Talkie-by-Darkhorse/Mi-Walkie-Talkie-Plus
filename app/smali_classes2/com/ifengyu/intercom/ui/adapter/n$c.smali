@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/n$c;
 .super Ljava/lang/Object;
-.source "SelectDeviceAdapter.java"
 
 # interfaces
 .implements Landroid/view/View$OnLongClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/adapter/n;Lcom/ifengyu/intercom/ui/adapter/n$e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n$c;->b:Lcom/ifengyu/intercom/ui/adapter/n;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/n$c;->a:Lcom/ifengyu/intercom/ui/adapter/n$e;
@@ -42,14 +40,12 @@
 .method public onLongClick(Landroid/view/View;)Z
     .locals 4
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n$c;->a:Lcom/ifengyu/intercom/ui/adapter/n$e;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$y;->getLayoutPosition()I
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n$c;->b:Lcom/ifengyu/intercom/ui/adapter/n;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/n;->b(Lcom/ifengyu/intercom/ui/adapter/n;)Ljava/util/List;
@@ -62,7 +58,6 @@
 
     if-ge p1, v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n$c;->b:Lcom/ifengyu/intercom/ui/adapter/n;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/n;->c(Lcom/ifengyu/intercom/ui/adapter/n;)Lcom/ifengyu/intercom/ui/adapter/n$d;
@@ -71,7 +66,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n$c;->b:Lcom/ifengyu/intercom/ui/adapter/n;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/n;->c(Lcom/ifengyu/intercom/ui/adapter/n;)Lcom/ifengyu/intercom/ui/adapter/n$d;

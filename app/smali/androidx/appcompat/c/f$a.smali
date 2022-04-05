@@ -1,6 +1,5 @@
 .class public Landroidx/appcompat/c/f$a;
 .super Ljava/lang/Object;
-.source "SupportActionModeWrapper.java"
 
 # interfaces
 .implements Landroidx/appcompat/c/b$a;
@@ -54,23 +53,18 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/view/ActionMode$Callback;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/appcompat/c/f$a;->b:Landroid/content/Context;
 
-    .line 3
     iput-object p2, p0, Landroidx/appcompat/c/f$a;->a:Landroid/view/ActionMode$Callback;
 
-    .line 4
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Landroidx/appcompat/c/f$a;->c:Ljava/util/ArrayList;
 
-    .line 5
     new-instance p1, La/b/g;
 
     invoke-direct {p1}, La/b/g;-><init>()V
@@ -83,7 +77,6 @@
 .method private a(Landroid/view/Menu;)Landroid/view/Menu;
     .locals 3
 
-    .line 6
     iget-object v0, p0, Landroidx/appcompat/c/f$a;->d:La/b/g;
 
     invoke-virtual {v0, p1}, La/b/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -94,7 +87,6 @@
 
     if-nez v0, :cond_0
 
-    .line 7
     new-instance v0, Landroidx/appcompat/view/menu/n;
 
     iget-object v1, p0, Landroidx/appcompat/c/f$a;->b:Landroid/content/Context;
@@ -105,7 +97,6 @@
 
     invoke-direct {v0, v1, v2}, Landroidx/appcompat/view/menu/n;-><init>(Landroid/content/Context;Landroidx/core/a/a/a;)V
 
-    .line 8
     iget-object v1, p0, Landroidx/appcompat/c/f$a;->d:La/b/g;
 
     invoke-virtual {v1, p1, v0}, La/b/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -119,7 +110,6 @@
 .method public a(Landroidx/appcompat/c/b;)V
     .locals 1
 
-    .line 5
     iget-object v0, p0, Landroidx/appcompat/c/f$a;->a:Landroid/view/ActionMode$Callback;
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/c/f$a;->b(Landroidx/appcompat/c/b;)Landroid/view/ActionMode;
@@ -134,19 +124,16 @@
 .method public a(Landroidx/appcompat/c/b;Landroid/view/Menu;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/c/f$a;->a:Landroid/view/ActionMode$Callback;
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/c/f$a;->b(Landroidx/appcompat/c/b;)Landroid/view/ActionMode;
 
     move-result-object p1
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/appcompat/c/f$a;->a(Landroid/view/Menu;)Landroid/view/Menu;
 
     move-result-object p2
 
-    .line 3
     invoke-interface {v0, p1, p2}, Landroid/view/ActionMode$Callback;->onCreateActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
 
     move-result p1
@@ -157,7 +144,6 @@
 .method public a(Landroidx/appcompat/c/b;Landroid/view/MenuItem;)Z
     .locals 3
 
-    .line 4
     iget-object v0, p0, Landroidx/appcompat/c/f$a;->a:Landroid/view/ActionMode$Callback;
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/c/f$a;->b(Landroidx/appcompat/c/b;)Landroid/view/ActionMode;
@@ -182,7 +168,6 @@
 .method public b(Landroidx/appcompat/c/b;)Landroid/view/ActionMode;
     .locals 4
 
-    .line 4
     iget-object v0, p0, Landroidx/appcompat/c/f$a;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -194,7 +179,6 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 5
     iget-object v2, p0, Landroidx/appcompat/c/f$a;->c:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -205,7 +189,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 6
     iget-object v3, v2, Landroidx/appcompat/c/f;->b:Landroidx/appcompat/c/b;
 
     if-ne v3, p1, :cond_0
@@ -217,7 +200,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     new-instance v0, Landroidx/appcompat/c/f;
 
@@ -225,7 +207,6 @@
 
     invoke-direct {v0, v1, p1}, Landroidx/appcompat/c/f;-><init>(Landroid/content/Context;Landroidx/appcompat/c/b;)V
 
-    .line 8
     iget-object p1, p0, Landroidx/appcompat/c/f$a;->c:Ljava/util/ArrayList;
 
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -236,19 +217,16 @@
 .method public b(Landroidx/appcompat/c/b;Landroid/view/Menu;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/c/f$a;->a:Landroid/view/ActionMode$Callback;
 
     invoke-virtual {p0, p1}, Landroidx/appcompat/c/f$a;->b(Landroidx/appcompat/c/b;)Landroid/view/ActionMode;
 
     move-result-object p1
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/appcompat/c/f$a;->a(Landroid/view/Menu;)Landroid/view/Menu;
 
     move-result-object p2
 
-    .line 3
     invoke-interface {v0, p1, p2}, Landroid/view/ActionMode$Callback;->onPrepareActionMode(Landroid/view/ActionMode;Landroid/view/Menu;)Z
 
     move-result p1

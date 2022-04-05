@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/jn;
 .super Ljava/lang/Object;
-.source "WifiManagerWrapper.java"
 
 
 # static fields
@@ -83,7 +82,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     const/16 v1, 0x24
@@ -94,12 +92,10 @@
 
     const-wide/16 v0, 0x0
 
-    .line 2
     sput-wide v0, Lcom/amap/api/col/l3/jn;->r:J
 
     const/4 v0, 0x0
 
-    .line 3
     sput v0, Lcom/amap/api/col/l3/jn;->s:I
 
     return-void
@@ -108,10 +104,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/net/wifi/WifiManager;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -120,52 +114,38 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Lcom/amap/api/col/l3/jn;->i:Z
 
     const/4 v1, 0x0
 
-    .line 4
     iput-object v1, p0, Lcom/amap/api/col/l3/jn;->j:Ljava/lang/StringBuilder;
 
     const/4 v2, 0x1
 
-    .line 5
     iput-boolean v2, p0, Lcom/amap/api/col/l3/jn;->k:Z
 
-    .line 6
     iput-boolean v2, p0, Lcom/amap/api/col/l3/jn;->l:Z
 
-    .line 7
     iput-boolean v2, p0, Lcom/amap/api/col/l3/jn;->m:Z
 
-    .line 8
     iput-object v1, p0, Lcom/amap/api/col/l3/jn;->v:Landroid/net/wifi/WifiInfo;
 
-    .line 9
     iput-object v1, p0, Lcom/amap/api/col/l3/jn;->n:Ljava/lang/String;
 
-    .line 10
     iput-object v1, p0, Lcom/amap/api/col/l3/jn;->o:Ljava/util/TreeMap;
 
-    .line 11
     iput-boolean v2, p0, Lcom/amap/api/col/l3/jn;->p:Z
 
-    .line 12
     iput-object v1, p0, Lcom/amap/api/col/l3/jn;->t:Landroid/net/ConnectivityManager;
 
     const-wide/16 v1, 0x7530
 
-    .line 13
     iput-wide v1, p0, Lcom/amap/api/col/l3/jn;->w:J
 
-    .line 14
     iput-boolean v0, p0, Lcom/amap/api/col/l3/jn;->u:Z
 
-    .line 15
     iput-object p2, p0, Lcom/amap/api/col/l3/jn;->a:Landroid/net/wifi/WifiManager;
 
-    .line 16
     iput-object p1, p0, Lcom/amap/api/col/l3/jn;->h:Landroid/content/Context;
 
     return-void
@@ -174,7 +154,6 @@
 .method public static a()J
     .locals 4
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v0
@@ -199,7 +178,6 @@
 
     const/16 v0, 0x14
 
-    .line 27
     :try_start_0
     invoke-static {p0, v0}, Landroid/net/wifi/WifiManager;->calculateSignalLevel(II)I
 
@@ -216,7 +194,6 @@
 
     const-string v2, "wifiSigFine"
 
-    .line 28
     invoke-static {p0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
@@ -241,7 +218,6 @@
 
     goto :goto_0
 
-    .line 20
     :cond_0
     invoke-virtual {p0}, Landroid/net/wifi/WifiInfo;->getSSID()Ljava/lang/String;
 
@@ -255,7 +231,6 @@
 
     goto :goto_0
 
-    .line 21
     :cond_1
     invoke-virtual {p0}, Landroid/net/wifi/WifiInfo;->getBSSID()Ljava/lang/String;
 
@@ -279,7 +254,6 @@
 .method public static l()Ljava/lang/String;
     .locals 4
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v0
@@ -306,34 +280,29 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->a:Landroid/net/wifi/WifiManager;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_4
 
-    .line 2
     :try_start_0
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getScanResults()Ljava/util/List;
 
     move-result-object v0
 
-    .line 3
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x11
 
     if-lt v2, v3, :cond_2
 
-    .line 4
     new-instance v2, Ljava/util/HashMap;
 
     const/16 v3, 0x24
 
     invoke-direct {v2, v3}, Ljava/util/HashMap;-><init>(I)V
 
-    .line 5
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -351,7 +320,6 @@
 
     check-cast v4, Landroid/net/wifi/ScanResult;
 
-    .line 6
     iget-object v5, v4, Landroid/net/wifi/ScanResult;->BSSID:Ljava/lang/String;
 
     iget-wide v6, v4, Landroid/net/wifi/ScanResult;->timestamp:J
@@ -364,7 +332,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     sget-object v3, Lcom/amap/api/col/l3/jn;->q:Ljava/util/HashMap;
 
@@ -376,18 +343,15 @@
 
     sget-object v3, Lcom/amap/api/col/l3/jn;->q:Ljava/util/HashMap;
 
-    .line 8
     invoke-virtual {v3, v2}, Ljava/util/HashMap;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_3
 
-    .line 9
     :cond_1
     sput-object v2, Lcom/amap/api/col/l3/jn;->q:Ljava/util/HashMap;
 
-    .line 10
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v2
@@ -396,7 +360,6 @@
 
     goto :goto_1
 
-    .line 11
     :cond_2
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -404,7 +367,6 @@
 
     sput-wide v2, Lcom/amap/api/col/l3/jn;->r:J
 
-    .line 12
     :cond_3
     :goto_1
     iput-object v1, p0, Lcom/amap/api/col/l3/jn;->n:Ljava/lang/String;
@@ -417,14 +379,12 @@
     :catchall_0
     move-exception v0
 
-    .line 13
     iput-object v1, p0, Lcom/amap/api/col/l3/jn;->n:Ljava/lang/String;
 
     const-string v2, "WifiManagerWrapper"
 
     const-string v3, "getScanResults"
 
-    .line 14
     invoke-static {v0, v2, v3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
@@ -432,7 +392,6 @@
     :catch_0
     move-exception v0
 
-    .line 15
     invoke-virtual {v0}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
@@ -447,13 +406,11 @@
 .method private n()Landroid/net/wifi/WifiInfo;
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->a:Landroid/net/wifi/WifiManager;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->a:Landroid/net/wifi/WifiManager;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
@@ -471,7 +428,6 @@
 
     const-string v2, "getConnectionInfo"
 
-    .line 3
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
@@ -483,14 +439,12 @@
 .method private o()V
     .locals 10
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/jn;->p()Z
 
     move-result v0
 
     if-eqz v0, :cond_8
 
-    .line 2
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -621,7 +575,6 @@
     :goto_1
     if-eqz v0, :cond_7
 
-    .line 3
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v0
@@ -640,7 +593,6 @@
 
     const-string v2, "wifiScan"
 
-    .line 4
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_8
@@ -650,7 +602,6 @@
 .method private p()Z
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->a:Landroid/net/wifi/WifiManager;
 
     const/4 v1, 0x0
@@ -677,7 +628,6 @@
 
     goto :goto_2
 
-    .line 2
     :cond_1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/jn;->k:Z
 
@@ -685,7 +635,6 @@
 
     goto :goto_2
 
-    .line 3
     :cond_2
     sget-wide v3, Lcom/amap/api/col/l3/jn;->e:J
 
@@ -700,7 +649,6 @@
 
     goto :goto_2
 
-    .line 4
     :cond_3
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -718,7 +666,6 @@
 
     goto :goto_2
 
-    .line 5
     :cond_4
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -736,7 +683,6 @@
 
     goto :goto_2
 
-    .line 6
     :cond_5
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -759,12 +705,10 @@
 .method public final a(Z)V
     .locals 9
 
-    .line 7
     const-class v0, Ljava/lang/String;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/jn;->h:Landroid/content/Context;
 
-    .line 8
     invoke-static {}, Lcom/amap/api/col/l3/jy;->C()Z
 
     move-result v2
@@ -777,7 +721,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     iget-object v2, p0, Lcom/amap/api/col/l3/jn;->a:Landroid/net/wifi/WifiManager;
 
@@ -789,7 +732,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_1
     invoke-static {}, Lcom/amap/api/col/l3/ki;->d()I
 
@@ -801,7 +743,6 @@
 
     return-void
 
-    .line 11
     :cond_2
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -825,7 +766,6 @@
 
     new-array v7, v2, [Ljava/lang/Class;
 
-    .line 12
     const-class v8, Landroid/content/ContentResolver;
 
     aput-object v8, v7, v4
@@ -835,12 +775,10 @@
     :try_start_0
     const-string v8, "getInt"
 
-    .line 13
     invoke-static {v1, v8, v3, v7}, Lcom/amap/api/col/l3/kd;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v3
 
-    .line 14
     check-cast v3, Ljava/lang/Integer;
 
     invoke-virtual {v3}, Ljava/lang/Integer;->intValue()I
@@ -857,7 +795,6 @@
 
     aput-object v5, v7, v6
 
-    .line 15
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -866,21 +803,18 @@
 
     new-array p1, v3, [Ljava/lang/Class;
 
-    .line 16
     const-class v3, Landroid/content/ContentResolver;
 
     aput-object v3, p1, v4
 
     aput-object v0, p1, v6
 
-    .line 17
     sget-object v0, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
     aput-object v0, p1, v2
 
     const-string v0, "putInt"
 
-    .line 18
     invoke-static {v1, v0, v7, p1}, Lcom/amap/api/col/l3/kd;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;[Ljava/lang/Class;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -895,7 +829,6 @@
 
     const-string v1, "enableWifiAlwaysScan"
 
-    .line 19
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_4
@@ -906,13 +839,10 @@
 .method public final a(ZZZJ)V
     .locals 0
 
-    .line 22
     iput-boolean p1, p0, Lcom/amap/api/col/l3/jn;->k:Z
 
-    .line 23
     iput-boolean p2, p0, Lcom/amap/api/col/l3/jn;->l:Z
 
-    .line 24
     iput-boolean p3, p0, Lcom/amap/api/col/l3/jn;->m:Z
 
     const-wide/16 p1, 0x2710
@@ -921,12 +851,10 @@
 
     if-gez p3, :cond_0
 
-    .line 25
     iput-wide p1, p0, Lcom/amap/api/col/l3/jn;->w:J
 
     return-void
 
-    .line 26
     :cond_0
     iput-wide p4, p0, Lcom/amap/api/col/l3/jn;->w:J
 
@@ -936,7 +864,6 @@
 .method public final a(Landroid/net/ConnectivityManager;)Z
     .locals 3
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->a:Landroid/net/wifi/WifiManager;
 
     const/4 v1, 0x0
@@ -945,14 +872,12 @@
 
     return v1
 
-    .line 3
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
     move-result-object p1
 
-    .line 4
     invoke-static {p1}, Lcom/amap/api/col/l3/ki;->a(Landroid/net/NetworkInfo;)I
 
     move-result p1
@@ -961,7 +886,6 @@
 
     if-ne p1, v2, :cond_1
 
-    .line 5
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
     move-result-object p1
@@ -985,7 +909,6 @@
 
     const-string v2, "wifiAccess"
 
-    .line 6
     invoke-static {p1, v0, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
@@ -996,7 +919,6 @@
 .method public final b()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->n:Ljava/lang/String;
 
     return-object v0
@@ -1009,7 +931,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 2
     invoke-direct {p0}, Lcom/amap/api/col/l3/jn;->p()Z
 
     move-result p1
@@ -1074,11 +995,9 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     invoke-direct {p0}, Lcom/amap/api/col/l3/jn;->o()V
 
-    .line 4
     :cond_2
     iget-boolean p1, p0, Lcom/amap/api/col/l3/jn;->u:Z
 
@@ -1086,13 +1005,10 @@
 
     if-eqz p1, :cond_3
 
-    .line 5
     iput-boolean v1, p0, Lcom/amap/api/col/l3/jn;->u:Z
 
-    .line 6
     invoke-virtual {p0}, Lcom/amap/api/col/l3/jn;->d()V
 
-    .line 7
     :cond_3
     sget-wide v2, Lcom/amap/api/col/l3/jn;->g:J
 
@@ -1144,7 +1060,6 @@
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
 
-    .line 8
     :cond_5
     :goto_2
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
@@ -1161,12 +1076,10 @@
 
     if-lez p1, :cond_6
 
-    .line 9
     iget-object p1, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->clear()V
 
-    .line 10
     :cond_6
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -1174,7 +1087,6 @@
 
     sput-wide v2, Lcom/amap/api/col/l3/jn;->d:J
 
-    .line 11
     iget-object p1, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->isEmpty()Z
@@ -1183,26 +1095,22 @@
 
     if-eqz p1, :cond_7
 
-    .line 12
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v2
 
     sput-wide v2, Lcom/amap/api/col/l3/jn;->f:J
 
-    .line 13
     invoke-direct {p0}, Lcom/amap/api/col/l3/jn;->m()Ljava/util/List;
 
     move-result-object p1
 
     if-eqz p1, :cond_7
 
-    .line 14
     iget-object v2, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
-    .line 15
     :cond_7
     iget-object p1, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
@@ -1402,7 +1310,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
@@ -1411,13 +1318,11 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
     iget-object v1, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
@@ -1426,7 +1331,6 @@
 
     if-nez v1, :cond_1
 
-    .line 4
     iget-object v1, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
@@ -1440,10 +1344,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Lcom/amap/api/col/l3/jn;->v:Landroid/net/wifi/WifiInfo;
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
@@ -1454,14 +1356,12 @@
 .method public final e()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->a:Landroid/net/wifi/WifiManager;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -1477,7 +1377,6 @@
 
     if-lez v4, :cond_1
 
-    .line 3
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
     move-result-wide v0
@@ -1491,7 +1390,6 @@
 .method public final f()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->a:Landroid/net/wifi/WifiManager;
 
     if-nez v0, :cond_0
@@ -1503,7 +1401,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     :try_start_0
     invoke-virtual {v0}, Landroid/net/wifi/WifiManager;->getWifiState()I
 
@@ -1520,19 +1417,16 @@
 
     const-string v3, "onReceive part"
 
-    .line 3
     invoke-static {v0, v2, v3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
     const/4 v0, 0x4
 
-    .line 4
     :goto_0
     iget-object v2, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
     if-nez v2, :cond_2
 
-    .line 5
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -1550,7 +1444,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_3
     iput-boolean v2, p0, Lcom/amap/api/col/l3/jn;->u:Z
 
@@ -1561,7 +1454,6 @@
 .method public final g()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/jn;->p:Z
 
     return v0
@@ -1570,14 +1462,12 @@
 .method public final h()Landroid/net/wifi/WifiInfo;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/jn;->n()Landroid/net/wifi/WifiInfo;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/amap/api/col/l3/jn;->v:Landroid/net/wifi/WifiInfo;
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->v:Landroid/net/wifi/WifiInfo;
 
     return-object v0
@@ -1586,7 +1476,6 @@
 .method public final i()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/jn;->i:Z
 
     return v0
@@ -1595,14 +1484,12 @@
 .method public final j()Ljava/lang/String;
     .locals 13
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->j:Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v2, 0x2bc
@@ -1613,7 +1500,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
@@ -1621,18 +1507,15 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
 
-    .line 4
     :goto_0
     iput-boolean v1, p0, Lcom/amap/api/col/l3/jn;->i:Z
 
-    .line 5
     invoke-virtual {p0}, Lcom/amap/api/col/l3/jn;->h()Landroid/net/wifi/WifiInfo;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/amap/api/col/l3/jn;->v:Landroid/net/wifi/WifiInfo;
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->v:Landroid/net/wifi/WifiInfo;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/jn;->a(Landroid/net/wifi/WifiInfo;)Z
@@ -1641,7 +1524,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->v:Landroid/net/wifi/WifiInfo;
 
     invoke-virtual {v0}, Landroid/net/wifi/WifiInfo;->getBSSID()Ljava/lang/String;
@@ -1653,7 +1535,6 @@
     :cond_1
     const-string v0, ""
 
-    .line 8
     :goto_1
     iget-object v2, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
@@ -1672,7 +1553,6 @@
 
     if-ge v3, v2, :cond_4
 
-    .line 9
     iget-object v7, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1683,12 +1563,10 @@
 
     iget-object v7, v7, Landroid/net/wifi/ScanResult;->BSSID:Ljava/lang/String;
 
-    .line 10
     iget-boolean v8, p0, Lcom/amap/api/col/l3/jn;->l:Z
 
     if-nez v8, :cond_2
 
-    .line 11
     iget-object v8, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v8, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -1701,7 +1579,6 @@
 
     const-string v9, "<unknown ssid>"
 
-    .line 12
     invoke-virtual {v9, v8}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v8
@@ -1710,7 +1587,6 @@
 
     const/4 v4, 0x1
 
-    .line 13
     :cond_2
     invoke-virtual {v0, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1733,7 +1609,6 @@
 
     move-object v5, v12
 
-    .line 14
     :goto_3
     iget-object v9, p0, Lcom/amap/api/col/l3/jn;->j:Ljava/lang/StringBuilder;
 
@@ -1761,7 +1636,6 @@
 
     goto :goto_2
 
-    .line 15
     :cond_4
     iget-object v1, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
@@ -1773,7 +1647,6 @@
 
     const/4 v4, 0x1
 
-    .line 16
     :cond_5
     iget-boolean v1, p0, Lcom/amap/api/col/l3/jn;->l:Z
 
@@ -1781,20 +1654,17 @@
 
     if-nez v4, :cond_6
 
-    .line 17
     iput-boolean v6, p0, Lcom/amap/api/col/l3/jn;->i:Z
 
     :cond_6
     if-nez v5, :cond_7
 
-    .line 18
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-nez v1, :cond_7
 
-    .line 19
     iget-object v1, p0, Lcom/amap/api/col/l3/jn;->j:Ljava/lang/StringBuilder;
 
     const-string v2, "#"
@@ -1803,14 +1673,12 @@
 
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 20
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->j:Ljava/lang/StringBuilder;
 
     const-string v1, ",access"
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 21
     :cond_7
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->j:Ljava/lang/StringBuilder;
 
@@ -1824,10 +1692,8 @@
 .method public final k()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/amap/api/col/l3/jn;->d()V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/jn;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V

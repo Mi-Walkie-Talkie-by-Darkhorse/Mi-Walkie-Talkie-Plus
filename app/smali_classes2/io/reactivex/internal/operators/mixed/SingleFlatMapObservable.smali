@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/mixed/SingleFlatMapObservable;
 .super Lio/reactivex/Observable;
-.source "SingleFlatMapObservable.java"
 
 
 # annotations
@@ -60,13 +59,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/mixed/SingleFlatMapObservable;->source:Lio/reactivex/SingleSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/mixed/SingleFlatMapObservable;->mapper:Lio/reactivex/functions/Function;
 
     return-void
@@ -84,17 +80,14 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/mixed/SingleFlatMapObservable$FlatMapObserver;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/mixed/SingleFlatMapObservable;->mapper:Lio/reactivex/functions/Function;
 
     invoke-direct {v0, p1, v1}, Lio/reactivex/internal/operators/mixed/SingleFlatMapObservable$FlatMapObserver;-><init>(Lio/reactivex/Observer;Lio/reactivex/functions/Function;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     iget-object p1, p0, Lio/reactivex/internal/operators/mixed/SingleFlatMapObservable;->source:Lio/reactivex/SingleSource;
 
     invoke-interface {p1, v0}, Lio/reactivex/SingleSource;->subscribe(Lio/reactivex/SingleObserver;)V

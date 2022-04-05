@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/i/a$a;
 .super Ljava/lang/Object;
-.source "DiskLruCache.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/bumptech/glide/i/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/bumptech/glide/i/a$a;->a:Lcom/bumptech/glide/i/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/bumptech/glide/i/a$a;->call()Ljava/lang/Void;
 
     move-result-object v0
@@ -68,12 +65,10 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/i/a$a;->a:Lcom/bumptech/glide/i/a;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/bumptech/glide/i/a$a;->a:Lcom/bumptech/glide/i/a;
 
@@ -85,18 +80,15 @@
 
     if-nez v1, :cond_0
 
-    .line 4
     monitor-exit v0
 
     return-object v2
 
-    .line 5
     :cond_0
     iget-object v1, p0, Lcom/bumptech/glide/i/a$a;->a:Lcom/bumptech/glide/i/a;
 
     invoke-static {v1}, Lcom/bumptech/glide/i/a;->c(Lcom/bumptech/glide/i/a;)V
 
-    .line 6
     iget-object v1, p0, Lcom/bumptech/glide/i/a$a;->a:Lcom/bumptech/glide/i/a;
 
     invoke-static {v1}, Lcom/bumptech/glide/i/a;->e(Lcom/bumptech/glide/i/a;)Z
@@ -105,19 +97,16 @@
 
     if-eqz v1, :cond_1
 
-    .line 7
     iget-object v1, p0, Lcom/bumptech/glide/i/a$a;->a:Lcom/bumptech/glide/i/a;
 
     invoke-static {v1}, Lcom/bumptech/glide/i/a;->f(Lcom/bumptech/glide/i/a;)V
 
-    .line 8
     iget-object v1, p0, Lcom/bumptech/glide/i/a$a;->a:Lcom/bumptech/glide/i/a;
 
     const/4 v3, 0x0
 
     invoke-static {v1, v3}, Lcom/bumptech/glide/i/a;->a(Lcom/bumptech/glide/i/a;I)I
 
-    .line 9
     :cond_1
     monitor-exit v0
 

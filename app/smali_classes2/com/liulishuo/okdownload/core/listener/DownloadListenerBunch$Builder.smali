@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;
 .super Ljava/lang/Object;
-.source "DownloadListenerBunch.java"
 
 
 # annotations
@@ -30,10 +29,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -54,7 +51,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;->listenerList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -63,7 +59,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;->listenerList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -75,12 +70,10 @@
 .method public build()Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch;
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;->listenerList:Ljava/util/List;
 
-    .line 2
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v2
@@ -101,7 +94,6 @@
 .method public remove(Lcom/liulishuo/okdownload/DownloadListener;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListenerBunch$Builder;->listenerList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z

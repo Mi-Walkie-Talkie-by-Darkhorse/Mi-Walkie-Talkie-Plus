@@ -1,6 +1,5 @@
 .class abstract Landroidx/appcompat/graphics/drawable/a$g;
 .super Ljava/lang/Object;
-.source "AnimatedStateListDrawableCompat.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +25,6 @@
 .method synthetic constructor <init>(Landroidx/appcompat/graphics/drawable/a$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Landroidx/appcompat/graphics/drawable/a$g;-><init>()V
 
     return-void

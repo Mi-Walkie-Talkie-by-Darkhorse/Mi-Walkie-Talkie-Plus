@@ -1,6 +1,5 @@
 .class public Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;
 .super Landroid/graphics/drawable/Drawable;
-.source "CircularProgressDrawable.java"
 
 # interfaces
 .implements Landroid/graphics/drawable/Animatable;
@@ -41,14 +40,12 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
     sput-object v0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->g:Landroid/view/animation/Interpolator;
 
-    .line 2
     new-instance v0, La/e/a/a/b;
 
     invoke-direct {v0}, La/e/a/a/b;-><init>()V
@@ -65,7 +62,6 @@
 
     aput v2, v0, v1
 
-    .line 3
     sput-object v0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->i:[I
 
     return-void
@@ -78,10 +74,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
-    .line 2
     invoke-static {p1}, Landroidx/core/d/h;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p1, Landroid/content/Context;
@@ -92,24 +86,20 @@
 
     iput-object p1, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->c:Landroid/content/res/Resources;
 
-    .line 3
     new-instance p1, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-direct {p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;-><init>()V
 
     iput-object p1, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
-    .line 4
     sget-object v0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->i:[I
 
     invoke-virtual {p1, v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->a([I)V
 
     const/high16 p1, 0x40200000    # 2.5f
 
-    .line 5
     invoke-virtual {p0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->c(F)V
 
-    .line 6
     invoke-direct {p0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a()V
 
     return-void
@@ -204,21 +194,18 @@
 .method private a()V
     .locals 3
 
-    .line 39
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     const/4 v1, 0x2
 
     new-array v1, v1, [F
 
-    .line 40
     fill-array-data v1, :array_0
 
     invoke-static {v1}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
     move-result-object v1
 
-    .line 41
     new-instance v2, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$a;
 
     invoke-direct {v2, p0, v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$a;-><init>(Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;)V
@@ -227,27 +214,22 @@
 
     const/4 v2, -0x1
 
-    .line 42
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
     const/4 v2, 0x1
 
-    .line 43
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->setRepeatMode(I)V
 
-    .line 44
     sget-object v2, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->g:Landroid/view/animation/Interpolator;
 
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 45
     new-instance v2, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$b;
 
     invoke-direct {v2, p0, v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$b;-><init>(Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;)V
 
     invoke-virtual {v1, v2}, Landroid/animation/ValueAnimator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
-    .line 46
     iput-object v1, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->d:Landroid/animation/Animator;
 
     return-void
@@ -262,39 +244,32 @@
 .method private a(FFFF)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
-    .line 2
     iget-object v1, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->c:Landroid/content/res/Resources;
 
     invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
     move-result-object v1
 
-    .line 3
     iget v1, v1, Landroid/util/DisplayMetrics;->density:F
 
     mul-float p2, p2, v1
 
-    .line 4
     invoke-virtual {v0, p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->f(F)V
 
     mul-float p1, p1, v1
 
-    .line 5
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->b(F)V
 
     const/4 p1, 0x0
 
-    .line 6
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->c(I)V
 
     mul-float p3, p3, v1
 
     mul-float p4, p4, v1
 
-    .line 7
     invoke-virtual {v0, p3, p4}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->a(FF)V
 
     return-void
@@ -303,10 +278,8 @@
 .method private b(FLandroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;)V
     .locals 4
 
-    .line 3
     invoke-virtual {p0, p1, p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a(FLandroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;)V
 
-    .line 4
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->h()F
 
     move-result v0
@@ -327,12 +300,10 @@
 
     double-to-float v0, v0
 
-    .line 5
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->i()F
 
     move-result v1
 
-    .line 6
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->g()F
 
     move-result v2
@@ -351,22 +322,18 @@
 
     add-float/2addr v1, v2
 
-    .line 7
     invoke-virtual {p2, v1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->e(F)V
 
-    .line 8
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->g()F
 
     move-result v1
 
     invoke-virtual {p2, v1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->c(F)V
 
-    .line 9
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->h()F
 
     move-result v1
 
-    .line 10
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->h()F
 
     move-result v2
@@ -377,7 +344,6 @@
 
     add-float/2addr v1, v0
 
-    .line 11
     invoke-virtual {p2, v1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->d(F)V
 
     return-void
@@ -386,7 +352,6 @@
 .method private d(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->b:F
 
     return-void
@@ -397,12 +362,10 @@
 .method public a(F)V
     .locals 1
 
-    .line 13
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->a(F)V
 
-    .line 14
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -411,17 +374,14 @@
 .method public a(FF)V
     .locals 1
 
-    .line 15
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->e(F)V
 
-    .line 16
     iget-object p1, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {p1, p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->c(F)V
 
-    .line 17
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -442,17 +402,14 @@
 
     div-float/2addr p1, v0
 
-    .line 21
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->f()I
 
     move-result v0
 
-    .line 22
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->c()I
 
     move-result v1
 
-    .line 23
     invoke-direct {p0, p1, v0, v1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a(FII)I
 
     move-result p1
@@ -461,7 +418,6 @@
 
     goto :goto_0
 
-    .line 24
     :cond_0
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->f()I
 
@@ -476,12 +432,10 @@
 .method a(FLandroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;Z)V
     .locals 7
 
-    .line 25
     iget-boolean v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->f:Z
 
     if-eqz v0, :cond_0
 
-    .line 26
     invoke-direct {p0, p1, p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->b(FLandroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;)V
 
     goto :goto_1
@@ -495,7 +449,6 @@
 
     if-eqz p3, :cond_3
 
-    .line 27
     :cond_1
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->h()F
 
@@ -513,15 +466,12 @@
 
     div-float v0, p1, v3
 
-    .line 28
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->i()F
 
     move-result v3
 
-    .line 29
     sget-object v4, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->h:Landroid/view/animation/Interpolator;
 
-    .line 30
     invoke-interface {v4, v0}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
 
     move-result v0
@@ -539,17 +489,14 @@
 
     div-float/2addr v4, v3
 
-    .line 31
     invoke-virtual {p2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->i()F
 
     move-result v3
 
     add-float/2addr v3, v2
 
-    .line 32
     sget-object v5, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->h:Landroid/view/animation/Interpolator;
 
-    .line 33
     invoke-interface {v5, v4}, Landroid/view/animation/Interpolator;->getInterpolation(F)F
 
     move-result v4
@@ -577,23 +524,18 @@
 
     const/high16 v1, 0x43580000    # 216.0f
 
-    .line 34
     iget v2, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->e:F
 
     add-float/2addr p1, v2
 
     mul-float p1, p1, v1
 
-    .line 35
     invoke-virtual {p2, v3}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->e(F)V
 
-    .line 36
     invoke-virtual {p2, v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->c(F)V
 
-    .line 37
     invoke-virtual {p2, p3}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->d(F)V
 
-    .line 38
     invoke-direct {p0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->d(F)V
 
     :cond_3
@@ -614,7 +556,6 @@
 
     const/high16 v2, 0x40c00000    # 6.0f
 
-    .line 8
     invoke-direct {p0, p1, v0, v1, v2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a(FFFF)V
 
     goto :goto_0
@@ -628,10 +569,8 @@
 
     const/high16 v2, 0x40a00000    # 5.0f
 
-    .line 9
     invoke-direct {p0, p1, v0, v1, v2}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a(FFFF)V
 
-    .line 10
     :goto_0
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
@@ -641,12 +580,10 @@
 .method public a(Z)V
     .locals 1
 
-    .line 11
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->a(Z)V
 
-    .line 12
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -659,19 +596,16 @@
         .end annotation
     .end param
 
-    .line 18
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->a([I)V
 
-    .line 19
     iget-object p1, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->c(I)V
 
-    .line 20
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -680,12 +614,10 @@
 .method public b(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->d(F)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -694,12 +626,10 @@
 .method public c(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->f(F)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -708,15 +638,12 @@
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getBounds()Landroid/graphics/Rect;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 3
     iget v1, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->b:F
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->exactCenterX()F
@@ -729,12 +656,10 @@
 
     invoke-virtual {p1, v1, v2, v3}, Landroid/graphics/Canvas;->rotate(FFF)V
 
-    .line 4
     iget-object v1, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v1, p1, v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->a(Landroid/graphics/Canvas;Landroid/graphics/Rect;)V
 
-    .line 5
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     return-void
@@ -743,7 +668,6 @@
 .method public getAlpha()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->a()I
@@ -764,7 +688,6 @@
 .method public isRunning()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->d:Landroid/animation/Animator;
 
     invoke-virtual {v0}, Landroid/animation/Animator;->isRunning()Z
@@ -777,12 +700,10 @@
 .method public setAlpha(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->a(I)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -791,12 +712,10 @@
 .method public setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0, p1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->a(Landroid/graphics/ColorFilter;)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void
@@ -805,17 +724,14 @@
 .method public start()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->d:Landroid/animation/Animator;
 
     invoke-virtual {v0}, Landroid/animation/Animator;->cancel()V
 
-    .line 2
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->l()V
 
-    .line 3
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->b()F
@@ -834,24 +750,20 @@
 
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->f:Z
 
-    .line 5
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->d:Landroid/animation/Animator;
 
     const-wide/16 v1, 0x29a
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
 
-    .line 6
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->d:Landroid/animation/Animator;
 
     invoke-virtual {v0}, Landroid/animation/Animator;->start()V
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
@@ -859,19 +771,16 @@
 
     invoke-virtual {v0, v1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->c(I)V
 
-    .line 8
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->k()V
 
-    .line 9
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->d:Landroid/animation/Animator;
 
     const-wide/16 v1, 0x534
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
 
-    .line 10
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->d:Landroid/animation/Animator;
 
     invoke-virtual {v0}, Landroid/animation/Animator;->start()V
@@ -883,34 +792,28 @@
 .method public stop()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->d:Landroid/animation/Animator;
 
     invoke-virtual {v0}, Landroid/animation/Animator;->cancel()V
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->d(F)V
 
-    .line 3
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->a(Z)V
 
-    .line 4
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0, v1}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->c(I)V
 
-    .line 5
     iget-object v0, p0, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;->a:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;
 
     invoke-virtual {v0}, Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$c;->k()V
 
-    .line 6
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     return-void

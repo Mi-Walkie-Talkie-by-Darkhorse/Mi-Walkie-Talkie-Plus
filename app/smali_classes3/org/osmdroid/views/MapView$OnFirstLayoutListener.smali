@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/MapView$OnFirstLayoutListener;
 .super Ljava/lang/Object;
-.source "MapView.java"
 
 
 # annotations

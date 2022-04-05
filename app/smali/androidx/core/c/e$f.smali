@@ -1,6 +1,5 @@
 .class Landroidx/core/c/e$f;
 .super Landroidx/core/c/e$d;
-.source "TextDirectionHeuristicsCompat.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/core/c/e$f;
 
     invoke-direct {v0}, Landroidx/core/c/e$f;-><init>()V
@@ -37,7 +35,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Landroidx/core/c/e$d;-><init>(Landroidx/core/c/e$c;)V
 
     return-void
@@ -48,7 +45,6 @@
 .method protected a()Z
     .locals 2
 
-    .line 1
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0

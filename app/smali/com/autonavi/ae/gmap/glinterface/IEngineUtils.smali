@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/glinterface/IEngineUtils;
 .super Ljava/lang/Object;
-.source "IEngineUtils.java"
 
 
 # virtual methods

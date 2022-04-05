@@ -1,6 +1,5 @@
 .class public final Lpl/droidsonroids/gif/f$b;
 .super Lpl/droidsonroids/gif/f;
-.source "InputSource.java"
 
 
 # annotations
@@ -34,13 +33,10 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lpl/droidsonroids/gif/f;-><init>(Lpl/droidsonroids/gif/f$a;)V
 
-    .line 2
     iput-object p1, p0, Lpl/droidsonroids/gif/f$b;->a:Landroid/content/res/AssetManager;
 
-    .line 3
     iput-object p2, p0, Lpl/droidsonroids/gif/f$b;->b:Ljava/lang/String;
 
     return-void
@@ -56,7 +52,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lpl/droidsonroids/gif/GifInfoHandle;
 
     iget-object v1, p0, Lpl/droidsonroids/gif/f$b;->a:Landroid/content/res/AssetManager;

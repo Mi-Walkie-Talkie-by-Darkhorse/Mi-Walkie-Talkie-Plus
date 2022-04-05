@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;
 .super Lcom/ifengyu/intercom/g/d/l;
-.source "MyTrackActivity.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     iput p2, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->b:I
@@ -39,7 +37,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->a(Ljava/lang/String;I)V
@@ -54,7 +51,6 @@
 
     const v0, 0x7f1100f6
 
-    .line 5
     :try_start_0
     new-instance v1, Lorg/json/JSONObject;
 
@@ -62,53 +58,45 @@
 
     const-string p1, "errno"
 
-    .line 6
     invoke-virtual {v1, p1}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->b:I
 
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;->a(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;I)V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     const v1, 0x7f1100d7
 
     invoke-virtual {p1, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c(I)V
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     const v1, 0x7f080191
 
     invoke-virtual {p1, v1}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;->b(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;)V
 
     goto :goto_0
 
-    .line 11
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c(I)V
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;->b(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;)V
@@ -120,20 +108,16 @@
     :catch_0
     move-exception p1
 
-    .line 14
     invoke-virtual {p1}, Lorg/json/JSONException;->printStackTrace()V
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c(I)V
 
-    .line 16
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 17
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;->b(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;)V
@@ -145,21 +129,18 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     const p2, 0x7f1100f6
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->c(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     const p2, 0x7f080189
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$f;->c:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;->b(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;)V

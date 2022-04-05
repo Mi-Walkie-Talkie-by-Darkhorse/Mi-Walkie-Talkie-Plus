@@ -1,6 +1,5 @@
 .class Landroidx/transition/e0$a;
 .super Landroid/animation/LayoutTransition;
-.source "ViewGroupUtilsApi14.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/animation/LayoutTransition;-><init>()V
 
     return-void

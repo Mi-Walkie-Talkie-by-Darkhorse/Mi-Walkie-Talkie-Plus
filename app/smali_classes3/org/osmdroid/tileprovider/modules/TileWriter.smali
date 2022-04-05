@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/modules/TileWriter;
 .super Ljava/lang/Object;
-.source "TileWriter.java"
 
 # interfaces
 .implements Lorg/osmdroid/tileprovider/modules/IFilesystemCache;
@@ -26,35 +25,28 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lorg/osmdroid/tileprovider/modules/TileWriter;->initThread:Ljava/lang/Thread;
 
-    .line 3
     sget-boolean v0, Lorg/osmdroid/tileprovider/modules/TileWriter;->hasInited:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 4
     sput-boolean v0, Lorg/osmdroid/tileprovider/modules/TileWriter;->hasInited:Z
 
-    .line 5
     new-instance v1, Lorg/osmdroid/tileprovider/modules/TileWriter$1;
 
     invoke-direct {v1, p0}, Lorg/osmdroid/tileprovider/modules/TileWriter$1;-><init>(Lorg/osmdroid/tileprovider/modules/TileWriter;)V
 
     iput-object v1, p0, Lorg/osmdroid/tileprovider/modules/TileWriter;->initThread:Ljava/lang/Thread;
 
-    .line 6
     invoke-virtual {v1, v0}, Ljava/lang/Thread;->setPriority(I)V
 
-    .line 7
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/TileWriter;->initThread:Ljava/lang/Thread;
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
@@ -66,7 +58,6 @@
 .method static synthetic access$000()J
     .locals 2
 
-    .line 1
     sget-wide v0, Lorg/osmdroid/tileprovider/modules/TileWriter;->mUsedCacheSpace:J
 
     return-wide v0
@@ -75,7 +66,6 @@
 .method static synthetic access$002(J)J
     .locals 0
 
-    .line 1
     sput-wide p0, Lorg/osmdroid/tileprovider/modules/TileWriter;->mUsedCacheSpace:J
 
     return-wide p0
@@ -84,7 +74,6 @@
 .method static synthetic access$100(Lorg/osmdroid/tileprovider/modules/TileWriter;Ljava/io/File;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lorg/osmdroid/tileprovider/modules/TileWriter;->calculateDirectorySize(Ljava/io/File;)V
 
     return-void
@@ -93,7 +82,6 @@
 .method static synthetic access$200(Lorg/osmdroid/tileprovider/modules/TileWriter;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lorg/osmdroid/tileprovider/modules/TileWriter;->cutCurrentCache()V
 
     return-void
@@ -102,14 +90,12 @@
 .method private calculateDirectorySize(Ljava/io/File;)V
     .locals 8
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    .line 2
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -119,14 +105,12 @@
 
     aget-object v3, v0, v2
 
-    .line 3
     invoke-virtual {v3}, Ljava/io/File;->isFile()Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 4
     sget-wide v4, Lorg/osmdroid/tileprovider/modules/TileWriter;->mUsedCacheSpace:J
 
     invoke-virtual {v3}, Ljava/io/File;->length()J
@@ -137,7 +121,6 @@
 
     sput-wide v4, Lorg/osmdroid/tileprovider/modules/TileWriter;->mUsedCacheSpace:J
 
-    .line 5
     :cond_0
     invoke-virtual {v3}, Ljava/io/File;->isDirectory()Z
 
@@ -151,7 +134,6 @@
 
     if-nez v4, :cond_1
 
-    .line 6
     invoke-direct {p0, v3}, Lorg/osmdroid/tileprovider/modules/TileWriter;->calculateDirectorySize(Ljava/io/File;)V
 
     :cond_1
@@ -166,7 +148,6 @@
 .method private createFolderAndCheckIfExists(Ljava/io/File;)Z
     .locals 5
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->mkdirs()Z
 
     move-result v0
@@ -177,7 +158,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
@@ -191,7 +171,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -215,7 +194,6 @@
     :cond_1
     const-wide/16 v3, 0x1f4
 
-    .line 4
     :try_start_0
     invoke-static {v3, v4}, Ljava/lang/Thread;->sleep(J)V
     :try_end_0
@@ -226,7 +204,6 @@
     :catch_0
     nop
 
-    .line 5
     :goto_0
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
@@ -234,7 +211,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 6
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -245,7 +221,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 7
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -265,7 +240,6 @@
     :cond_2
     return v1
 
-    .line 8
     :cond_3
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
@@ -277,7 +251,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 9
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -303,7 +276,6 @@
 .method private cutCurrentCache()V
     .locals 10
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -312,10 +284,8 @@
 
     move-result-object v0
 
-    .line 2
     monitor-enter v0
 
-    .line 3
     :try_start_0
     sget-wide v1, Lorg/osmdroid/tileprovider/modules/TileWriter;->mUsedCacheSpace:J
 
@@ -333,7 +303,6 @@
 
     const-string v1, "OsmDroid"
 
-    .line 4
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -350,7 +319,6 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v3
@@ -365,10 +333,8 @@
 
     move-result-object v2
 
-    .line 6
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v1
@@ -385,21 +351,18 @@
 
     new-array v3, v2, [Ljava/io/File;
 
-    .line 8
     invoke-interface {v1, v3}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, [Ljava/io/File;
 
-    .line 9
     new-instance v3, Lorg/osmdroid/tileprovider/modules/TileWriter$2;
 
     invoke-direct {v3, p0}, Lorg/osmdroid/tileprovider/modules/TileWriter$2;-><init>(Lorg/osmdroid/tileprovider/modules/TileWriter;)V
 
     invoke-static {v1, v3}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 
-    .line 10
     array-length v3, v1
 
     :goto_0
@@ -407,7 +370,6 @@
 
     aget-object v4, v1, v2
 
-    .line 11
     sget-wide v5, Lorg/osmdroid/tileprovider/modules/TileWriter;->mUsedCacheSpace:J
 
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
@@ -424,20 +386,17 @@
 
     goto :goto_1
 
-    .line 12
     :cond_0
     invoke-virtual {v4}, Ljava/io/File;->length()J
 
     move-result-wide v5
 
-    .line 13
     invoke-virtual {v4}, Ljava/io/File;->delete()Z
 
     move-result v7
 
     if-eqz v7, :cond_2
 
-    .line 14
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v7
@@ -450,7 +409,6 @@
 
     const-string v7, "OsmDroid"
 
-    .line 15
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -471,7 +429,6 @@
 
     invoke-static {v7, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 16
     :cond_1
     sget-wide v7, Lorg/osmdroid/tileprovider/modules/TileWriter;->mUsedCacheSpace:J
 
@@ -490,10 +447,8 @@
 
     const-string v2, "Finished trimming tile cache"
 
-    .line 17
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 18
     :cond_4
     monitor-exit v0
 
@@ -522,19 +477,16 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     invoke-virtual {p1}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object p1
 
     if-eqz p1, :cond_2
 
-    .line 3
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -544,17 +496,14 @@
 
     aget-object v3, p1, v2
 
-    .line 4
     invoke-virtual {v3}, Ljava/io/File;->isFile()Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
-    .line 5
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 6
     :cond_0
     invoke-virtual {v3}, Ljava/io/File;->isDirectory()Z
 
@@ -562,7 +511,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 7
     invoke-direct {p0, v3}, Lorg/osmdroid/tileprovider/modules/TileWriter;->getDirectoryFileList(Ljava/io/File;)Ljava/util/List;
 
     move-result-object v3
@@ -581,7 +529,6 @@
 .method public static getUsedCacheSpace()J
     .locals 2
 
-    .line 1
     sget-wide v0, Lorg/osmdroid/tileprovider/modules/TileWriter;->mUsedCacheSpace:J
 
     return-wide v0
@@ -592,13 +539,11 @@
 
     const/4 v0, 0x1
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p2}, Ljava/io/File;->getCanonicalFile()Ljava/io/File;
 
     move-result-object p2
@@ -607,7 +552,6 @@
 
     move-result-object p2
 
-    .line 3
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
@@ -628,7 +572,6 @@
 .method public exists(Lorg/osmdroid/tileprovider/tilesource/ITileSource;Lorg/osmdroid/tileprovider/MapTile;)Z
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
@@ -659,7 +602,6 @@
 
     invoke-direct {v0, v1, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p1
@@ -670,12 +612,10 @@
 .method public onDetach()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/TileWriter;->initThread:Ljava/lang/Thread;
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
     :try_end_0
@@ -689,7 +629,6 @@
 .method public remove(Lorg/osmdroid/tileprovider/tilesource/ITileSource;Lorg/osmdroid/tileprovider/MapTile;)Z
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
@@ -720,14 +659,12 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 3
     :try_start_0
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
     :try_end_0
@@ -740,7 +677,6 @@
     :catch_0
     move-exception v0
 
-    .line 4
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -782,7 +718,6 @@
 .method public saveFile(Lorg/osmdroid/tileprovider/tilesource/ITileSource;Lorg/osmdroid/tileprovider/MapTile;Ljava/io/InputStream;)Z
     .locals 7
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
@@ -813,7 +748,6 @@
 
     invoke-direct {v0, v1, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 2
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object p1
@@ -824,7 +758,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -847,13 +780,11 @@
 
     invoke-static {p2, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     :cond_0
     invoke-virtual {v0}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result p2
@@ -875,7 +806,6 @@
 
     const/4 p2, 0x1
 
-    .line 6
     :try_start_0
     new-instance v2, Ljava/io/BufferedOutputStream;
 
@@ -894,20 +824,17 @@
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 7
     :try_start_1
     invoke-static {p3, v2}, Lorg/osmdroid/tileprovider/util/StreamUtils;->copy(Ljava/io/InputStream;Ljava/io/OutputStream;)J
 
     move-result-wide v3
 
-    .line 8
     sget-wide v5, Lorg/osmdroid/tileprovider/modules/TileWriter;->mUsedCacheSpace:J
 
     add-long/2addr v5, v3
 
     sput-wide v5, Lorg/osmdroid/tileprovider/modules/TileWriter;->mUsedCacheSpace:J
 
-    .line 9
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object p1
@@ -920,13 +847,11 @@
 
     if-lez p1, :cond_2
 
-    .line 10
     invoke-direct {p0}, Lorg/osmdroid/tileprovider/modules/TileWriter;->cutCurrentCache()V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 11
     :cond_2
     invoke-static {v2}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
@@ -951,7 +876,6 @@
 
     goto :goto_1
 
-    .line 12
     :catch_1
     :goto_0
     :try_start_2
@@ -965,7 +889,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 13
     invoke-static {p1}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
     :cond_3

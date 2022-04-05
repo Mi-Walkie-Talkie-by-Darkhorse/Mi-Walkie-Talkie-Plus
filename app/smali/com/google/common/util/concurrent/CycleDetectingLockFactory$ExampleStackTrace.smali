@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/CycleDetectingLockFactory$ExampleStackTrace;
 .super Ljava/lang/IllegalStateException;
-.source "CycleDetectingLockFactory.java"
 
 
 # annotations
@@ -36,10 +35,8 @@
 
     new-array v0, v0, [Ljava/lang/StackTraceElement;
 
-    .line 1
     sput-object v0, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$ExampleStackTrace;->EMPTY_STACK_TRACE:[Ljava/lang/StackTraceElement;
 
-    .line 2
     const-class v0, Lcom/google/common/util/concurrent/CycleDetectingLockFactory;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -70,7 +67,6 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/CycleDetectingLockFactory$LockGraphNode;Lcom/google/common/util/concurrent/CycleDetectingLockFactory$LockGraphNode;)V
     .locals 3
 
-    .line 1
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$LockGraphNode;->getLockName()Ljava/lang/String;
 
     move-result-object p1
@@ -125,12 +121,10 @@
 
     invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/IllegalStateException;->getStackTrace()[Ljava/lang/StackTraceElement;
 
     move-result-object p1
 
-    .line 3
     array-length p2, p1
 
     const/4 v0, 0x0
@@ -138,7 +132,6 @@
     :goto_0
     if-ge v0, p2, :cond_2
 
-    .line 4
     const-class v1, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$WithExplicitOrdering;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -157,14 +150,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 5
     sget-object p1, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$ExampleStackTrace;->EMPTY_STACK_TRACE:[Ljava/lang/StackTraceElement;
 
     invoke-virtual {p0, p1}, Ljava/lang/IllegalStateException;->setStackTrace([Ljava/lang/StackTraceElement;)V
 
     goto :goto_1
 
-    .line 6
     :cond_0
     sget-object v1, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$ExampleStackTrace;->EXCLUDED_CLASS_NAMES:Ljava/util/Set;
 
@@ -180,7 +171,6 @@
 
     if-nez v1, :cond_1
 
-    .line 7
     invoke-static {p1, v0, p2}, Ljava/util/Arrays;->copyOfRange([Ljava/lang/Object;II)[Ljava/lang/Object;
 
     move-result-object p1

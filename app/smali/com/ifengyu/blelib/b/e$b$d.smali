@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/blelib/b/e$b$d;
 .super Ljava/lang/Object;
-.source "BleClient.java"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/u2/f;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/blelib/b/e$b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/blelib/b/e$b$d;->a:Lcom/ifengyu/blelib/b/e$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/b/e$b$d;->a:Lcom/ifengyu/blelib/b/e$b;
 
     iget-object v0, v0, Lcom/ifengyu/blelib/b/e$b;->H:Lcom/ifengyu/blelib/b/e;

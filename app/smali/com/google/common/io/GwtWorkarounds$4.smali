@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/GwtWorkarounds$4;
 .super Ljava/io/OutputStream;
-.source "GwtWorkarounds.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/common/io/GwtWorkarounds$ByteOutput;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/io/GwtWorkarounds$4;->val$output:Lcom/google/common/io/GwtWorkarounds$ByteOutput;
 
     invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
@@ -40,7 +38,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/GwtWorkarounds$4;->val$output:Lcom/google/common/io/GwtWorkarounds$ByteOutput;
 
     invoke-interface {v0}, Lcom/google/common/io/GwtWorkarounds$ByteOutput;->close()V
@@ -56,7 +53,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/GwtWorkarounds$4;->val$output:Lcom/google/common/io/GwtWorkarounds$ByteOutput;
 
     invoke-interface {v0}, Lcom/google/common/io/GwtWorkarounds$ByteOutput;->flush()V
@@ -72,7 +68,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/GwtWorkarounds$4;->val$output:Lcom/google/common/io/GwtWorkarounds$ByteOutput;
 
     int-to-byte p1, p1

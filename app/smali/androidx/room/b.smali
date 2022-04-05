@@ -1,6 +1,5 @@
 .class public abstract Landroidx/room/b;
 .super Landroidx/room/o;
-.source "EntityDeletionOrUpdateAdapter.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method public constructor <init>(Landroidx/room/RoomDatabase;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/room/o;-><init>(Landroidx/room/RoomDatabase;)V
 
     return-void
@@ -42,14 +40,12 @@
         }
     .end annotation
 
-    .line 6
     invoke-virtual {p0}, Landroidx/room/o;->a()La/g/a/f;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 7
     :try_start_0
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
@@ -66,10 +62,8 @@
 
     move-result-object v2
 
-    .line 8
     invoke-virtual {p0, v0, v2}, Landroidx/room/b;->a(La/g/a/f;Ljava/lang/Object;)V
 
-    .line 9
     invoke-interface {v0}, La/g/a/f;->executeUpdateDelete()I
 
     move-result v2
@@ -80,7 +74,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     invoke-virtual {p0, v0}, Landroidx/room/o;->a(La/g/a/f;)V
 
@@ -91,7 +84,6 @@
 
     invoke-virtual {p0, v0}, Landroidx/room/o;->a(La/g/a/f;)V
 
-    .line 11
     throw p1
 .end method
 
@@ -103,23 +95,19 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroidx/room/o;->a()La/g/a/f;
 
     move-result-object v0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0, v0, p1}, Landroidx/room/b;->a(La/g/a/f;Ljava/lang/Object;)V
 
-    .line 3
     invoke-interface {v0}, La/g/a/f;->executeUpdateDelete()I
 
     move-result p1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     invoke-virtual {p0, v0}, Landroidx/room/o;->a(La/g/a/f;)V
 
     return p1
@@ -129,7 +117,6 @@
 
     invoke-virtual {p0, v0}, Landroidx/room/o;->a(La/g/a/f;)V
 
-    .line 5
     throw p1
 .end method
 

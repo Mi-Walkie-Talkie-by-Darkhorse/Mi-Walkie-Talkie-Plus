@@ -1,6 +1,5 @@
 .class public Lcom/yalantis/ucrop/view/TransformImageView;
 .super Landroidx/appcompat/widget/AppCompatImageView;
-.source "TransformImageView.java"
 
 
 # annotations
@@ -53,7 +52,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/yalantis/ucrop/view/TransformImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -64,7 +62,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/yalantis/ucrop/view/TransformImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -73,31 +70,26 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/16 p1, 0x8
 
     new-array p1, p1, [F
 
-    .line 4
     iput-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->a:[F
 
     const/4 p1, 0x2
 
     new-array p1, p1, [F
 
-    .line 5
     iput-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->b:[F
 
     const/16 p1, 0x9
 
     new-array p1, p1, [F
 
-    .line 6
     iput-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->c:[F
 
-    .line 7
     new-instance p1, Landroid/graphics/Matrix;
 
     invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
@@ -106,16 +98,12 @@
 
     const/4 p1, 0x0
 
-    .line 8
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->j:Z
 
-    .line 9
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->k:Z
 
-    .line 10
     iput p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->l:I
 
-    .line 11
     invoke-virtual {p0}, Lcom/yalantis/ucrop/view/TransformImageView;->e()V
 
     return-void
@@ -124,7 +112,6 @@
 .method static synthetic a(Lcom/yalantis/ucrop/view/TransformImageView;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->o:Landroid/net/Uri;
 
     return-object p1
@@ -133,7 +120,6 @@
 .method static synthetic a(Lcom/yalantis/ucrop/view/TransformImageView;Lcom/yalantis/ucrop/model/b;)Lcom/yalantis/ucrop/model/b;
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->q:Lcom/yalantis/ucrop/model/b;
 
     return-object p1
@@ -142,7 +128,6 @@
 .method static synthetic a(Lcom/yalantis/ucrop/view/TransformImageView;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->m:Ljava/lang/String;
 
     return-object p1
@@ -151,7 +136,6 @@
 .method static synthetic b(Lcom/yalantis/ucrop/view/TransformImageView;Landroid/net/Uri;)Landroid/net/Uri;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->p:Landroid/net/Uri;
 
     return-object p1
@@ -160,7 +144,6 @@
 .method static synthetic b(Lcom/yalantis/ucrop/view/TransformImageView;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->n:Ljava/lang/String;
 
     return-object p1
@@ -169,7 +152,6 @@
 .method private g()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     iget-object v1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->a:[F
@@ -178,7 +160,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Matrix;->mapPoints([F[F)V
 
-    .line 2
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     iget-object v1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->b:[F
@@ -201,7 +182,6 @@
 
     const/4 v0, 0x1
 
-    .line 4
     invoke-virtual {p0, p1, v0}, Lcom/yalantis/ucrop/view/TransformImageView;->a(Landroid/graphics/Matrix;I)F
 
     move-result v0
@@ -210,14 +190,12 @@
 
     const/4 v2, 0x0
 
-    .line 5
     invoke-virtual {p0, p1, v2}, Lcom/yalantis/ucrop/view/TransformImageView;->a(Landroid/graphics/Matrix;I)F
 
     move-result p1
 
     float-to-double v2, p1
 
-    .line 6
     invoke-static {v0, v1, v2, v3}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide v0
@@ -246,12 +224,10 @@
         .end annotation
     .end param
 
-    .line 13
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->c:[F
 
     invoke-virtual {p1, v0}, Landroid/graphics/Matrix;->getValues([F)V
 
-    .line 14
     iget-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->c:[F
 
     aget p1, p1, p2
@@ -272,13 +248,11 @@
 
     if-eqz v0, :cond_1
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
-    .line 8
     iget-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     invoke-virtual {p0, p1}, Lcom/yalantis/ucrop/view/TransformImageView;->setImageMatrix(Landroid/graphics/Matrix;)V
@@ -296,22 +270,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 9
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, p1, p2, p3}, Landroid/graphics/Matrix;->postRotate(FFF)Z
 
-    .line 10
     iget-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     invoke-virtual {p0, p1}, Lcom/yalantis/ucrop/view/TransformImageView;->setImageMatrix(Landroid/graphics/Matrix;)V
 
-    .line 11
     iget-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->g:Lcom/yalantis/ucrop/view/TransformImageView$b;
 
     if-eqz p1, :cond_0
 
-    .line 12
     iget-object p2, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     invoke-virtual {p0, p2}, Lcom/yalantis/ucrop/view/TransformImageView;->a(Landroid/graphics/Matrix;)F
@@ -333,7 +303,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     invoke-virtual {p0, p1, v0}, Lcom/yalantis/ucrop/view/TransformImageView;->a(Landroid/graphics/Matrix;I)F
 
     move-result v0
@@ -348,7 +317,6 @@
 
     const/4 v4, 0x3
 
-    .line 4
     invoke-virtual {p0, p1, v4}, Lcom/yalantis/ucrop/view/TransformImageView;->a(Landroid/graphics/Matrix;I)F
 
     move-result p1
@@ -361,7 +329,6 @@
 
     add-double/2addr v0, v2
 
-    .line 5
     invoke-static {v0, v1}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
@@ -380,22 +347,18 @@
 
     if-eqz v0, :cond_0
 
-    .line 6
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, p1, p1, p2, p3}, Landroid/graphics/Matrix;->postScale(FFFF)Z
 
-    .line 7
     iget-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     invoke-virtual {p0, p1}, Lcom/yalantis/ucrop/view/TransformImageView;->setImageMatrix(Landroid/graphics/Matrix;)V
 
-    .line 8
     iget-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->g:Lcom/yalantis/ucrop/view/TransformImageView$b;
 
     if-eqz p1, :cond_0
 
-    .line 9
     iget-object p2, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     invoke-virtual {p0, p2}, Lcom/yalantis/ucrop/view/TransformImageView;->b(Landroid/graphics/Matrix;)F
@@ -411,7 +374,6 @@
 .method protected e()V
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/widget/ImageView$ScaleType;->MATRIX:Landroid/widget/ImageView$ScaleType;
 
     invoke-virtual {p0, v0}, Lcom/yalantis/ucrop/view/TransformImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
@@ -422,7 +384,6 @@
 .method protected f()V
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -431,7 +392,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
@@ -439,7 +399,6 @@
 
     int-to-float v1, v1
 
-    .line 3
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result v0
@@ -454,7 +413,6 @@
 
     float-to-int v4, v1
 
-    .line 4
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -481,36 +439,30 @@
 
     invoke-static {v3, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     new-instance v2, Landroid/graphics/RectF;
 
     const/4 v3, 0x0
 
     invoke-direct {v2, v3, v3, v1, v0}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    .line 6
     invoke-static {v2}, Lcom/yalantis/ucrop/e/g;->b(Landroid/graphics/RectF;)[F
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->h:[F
 
-    .line 7
     invoke-static {v2}, Lcom/yalantis/ucrop/e/g;->a(Landroid/graphics/RectF;)[F
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->i:[F
 
-    .line 8
     iput-boolean v4, p0, Lcom/yalantis/ucrop/view/TransformImageView;->k:Z
 
-    .line 9
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->g:Lcom/yalantis/ucrop/view/TransformImageView$b;
 
     if-eqz v0, :cond_1
 
-    .line 10
     invoke-interface {v0}, Lcom/yalantis/ucrop/view/TransformImageView$b;->a()V
 
     :cond_1
@@ -520,7 +472,6 @@
 .method public getCurrentAngle()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     invoke-virtual {p0, v0}, Lcom/yalantis/ucrop/view/TransformImageView;->a(Landroid/graphics/Matrix;)F
@@ -533,7 +484,6 @@
 .method public getCurrentScale()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     invoke-virtual {p0, v0}, Lcom/yalantis/ucrop/view/TransformImageView;->b(Landroid/graphics/Matrix;)F
@@ -546,7 +496,6 @@
 .method public getExifInfo()Lcom/yalantis/ucrop/model/b;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->q:Lcom/yalantis/ucrop/model/b;
 
     return-object v0
@@ -555,7 +504,6 @@
 .method public getImageInputPath()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->m:Ljava/lang/String;
 
     return-object v0
@@ -564,7 +512,6 @@
 .method public getImageInputUri()Landroid/net/Uri;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->o:Landroid/net/Uri;
 
     return-object v0
@@ -573,7 +520,6 @@
 .method public getImageOutputPath()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->n:Ljava/lang/String;
 
     return-object v0
@@ -582,7 +528,6 @@
 .method public getImageOutputUri()Landroid/net/Uri;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->p:Landroid/net/Uri;
 
     return-object v0
@@ -591,12 +536,10 @@
 .method public getMaxBitmapSize()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->l:I
 
     if-gtz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -607,7 +550,6 @@
 
     iput v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->l:I
 
-    .line 3
     :cond_0
     iget v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->l:I
 
@@ -619,7 +561,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -636,7 +577,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -660,12 +600,10 @@
 .method protected onLayout(ZIIII)V
     .locals 0
 
-    .line 1
     invoke-super/range {p0 .. p5}, Landroid/widget/ImageView;->onLayout(ZIIII)V
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-boolean p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->j:Z
 
     if-eqz p1, :cond_1
@@ -674,18 +612,15 @@
 
     if-nez p1, :cond_1
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/widget/ImageView;->getPaddingLeft()I
 
     move-result p1
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/ImageView;->getPaddingTop()I
 
     move-result p2
 
-    .line 5
     invoke-virtual {p0}, Landroid/widget/ImageView;->getWidth()I
 
     move-result p3
@@ -696,7 +631,6 @@
 
     sub-int/2addr p3, p4
 
-    .line 6
     invoke-virtual {p0}, Landroid/widget/ImageView;->getHeight()I
 
     move-result p4
@@ -709,15 +643,12 @@
 
     sub-int/2addr p3, p1
 
-    .line 7
     iput p3, p0, Lcom/yalantis/ucrop/view/TransformImageView;->e:I
 
     sub-int/2addr p4, p2
 
-    .line 8
     iput p4, p0, Lcom/yalantis/ucrop/view/TransformImageView;->f:I
 
-    .line 9
     invoke-virtual {p0}, Lcom/yalantis/ucrop/view/TransformImageView;->f()V
 
     :cond_1
@@ -727,7 +658,6 @@
 .method public setImageBitmap(Landroid/graphics/Bitmap;)V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/yalantis/ucrop/e/d;
 
     invoke-direct {v0, p1}, Lcom/yalantis/ucrop/e/d;-><init>(Landroid/graphics/Bitmap;)V
@@ -740,15 +670,12 @@
 .method public setImageMatrix(Landroid/graphics/Matrix;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setImageMatrix(Landroid/graphics/Matrix;)V
 
-    .line 2
     iget-object v0, p0, Lcom/yalantis/ucrop/view/TransformImageView;->d:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
-    .line 3
     invoke-direct {p0}, Lcom/yalantis/ucrop/view/TransformImageView;->g()V
 
     return-void
@@ -770,12 +697,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/yalantis/ucrop/view/TransformImageView;->getMaxBitmapSize()I
 
     move-result v4
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -798,7 +723,6 @@
 .method public setMaxBitmapSize(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->l:I
 
     return-void
@@ -807,12 +731,10 @@
 .method public setScaleType(Landroid/widget/ImageView$ScaleType;)V
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/widget/ImageView$ScaleType;->MATRIX:Landroid/widget/ImageView$ScaleType;
 
     if-ne p1, v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroid/widget/ImageView;->setScaleType(Landroid/widget/ImageView$ScaleType;)V
 
     goto :goto_0
@@ -822,7 +744,6 @@
 
     const-string v0, "Invalid ScaleType. Only ScaleType.MATRIX can be used"
 
-    .line 3
     invoke-static {p1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     :goto_0
@@ -832,7 +753,6 @@
 .method public setTransformImageListener(Lcom/yalantis/ucrop/view/TransformImageView$b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/yalantis/ucrop/view/TransformImageView;->g:Lcom/yalantis/ucrop/view/TransformImageView$b;
 
     return-void

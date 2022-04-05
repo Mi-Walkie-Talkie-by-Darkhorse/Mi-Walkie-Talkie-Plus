@@ -1,6 +1,5 @@
 .class public interface abstract Lpl/droidsonroids/gif/l/a;
 .super Ljava/lang/Object;
-.source "Transform.java"
 
 
 # virtual methods

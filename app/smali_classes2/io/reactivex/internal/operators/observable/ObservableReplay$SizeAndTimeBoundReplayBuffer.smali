@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;
 .super Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;
-.source "ObservableReplay.java"
 
 
 # annotations
@@ -42,19 +41,14 @@
 .method constructor <init>(IJLjava/util/concurrent/TimeUnit;Lio/reactivex/Scheduler;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;-><init>()V
 
-    .line 2
     iput-object p5, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->scheduler:Lio/reactivex/Scheduler;
 
-    .line 3
     iput p1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->limit:I
 
-    .line 4
     iput-wide p2, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->maxAge:J
 
-    .line 5
     iput-object p4, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->unit:Ljava/util/concurrent/TimeUnit;
 
     return-void
@@ -65,7 +59,6 @@
 .method enterTransform(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
-    .line 1
     new-instance v0, Lio/reactivex/schedulers/Timed;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->scheduler:Lio/reactivex/Scheduler;
@@ -86,7 +79,6 @@
 .method getHead()Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->scheduler:Lio/reactivex/Scheduler;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->unit:Ljava/util/concurrent/TimeUnit;
@@ -99,14 +91,12 @@
 
     sub-long/2addr v0, v2
 
-    .line 2
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
-    .line 3
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v3
@@ -124,13 +114,11 @@
 
     goto :goto_1
 
-    .line 4
     :cond_0
     iget-object v4, v2, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;->value:Ljava/lang/Object;
 
     check-cast v4, Lio/reactivex/schedulers/Timed;
 
-    .line 5
     invoke-virtual {v4}, Lio/reactivex/schedulers/Timed;->value()Ljava/lang/Object;
 
     move-result-object v5
@@ -153,7 +141,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_1
     invoke-virtual {v4}, Lio/reactivex/schedulers/Timed;->time()J
 
@@ -163,7 +150,6 @@
 
     if-gtz v6, :cond_2
 
-    .line 7
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v3
@@ -180,7 +166,6 @@
 .method leaveTransform(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Lio/reactivex/schedulers/Timed;
 
     invoke-virtual {p1}, Lio/reactivex/schedulers/Timed;->value()Ljava/lang/Object;
@@ -193,7 +178,6 @@
 .method truncate()V
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->scheduler:Lio/reactivex/Scheduler;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->unit:Ljava/util/concurrent/TimeUnit;
@@ -206,14 +190,12 @@
 
     sub-long/2addr v0, v2
 
-    .line 2
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
-    .line 3
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v3
@@ -231,7 +213,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 4
     iget v5, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->size:I
 
     iget v6, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->limit:I
@@ -242,10 +223,8 @@
 
     add-int/lit8 v5, v5, -0x1
 
-    .line 5
     iput v5, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->size:I
 
-    .line 6
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v3
@@ -254,13 +233,11 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-object v5, v2, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;->value:Ljava/lang/Object;
 
     check-cast v5, Lio/reactivex/schedulers/Timed;
 
-    .line 8
     invoke-virtual {v5}, Lio/reactivex/schedulers/Timed;->time()J
 
     move-result-wide v5
@@ -271,14 +248,12 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    .line 9
     iget v3, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->size:I
 
     add-int/lit8 v3, v3, -0x1
 
     iput v3, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->size:I
 
-    .line 10
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v3
@@ -290,7 +265,6 @@
     :cond_1
     if-eqz v4, :cond_2
 
-    .line 11
     invoke-virtual {p0, v3}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->setFirst(Lio/reactivex/internal/operators/observable/ObservableReplay$Node;)V
 
     :cond_2
@@ -300,7 +274,6 @@
 .method truncateFinal()V
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->scheduler:Lio/reactivex/Scheduler;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$SizeAndTimeBoundReplayBuffer;->unit:Ljava/util/concurrent/TimeUnit;
@@ -313,14 +286,12 @@
 
     sub-long/2addr v0, v2
 
-    .line 2
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;
 
-    .line 3
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v3
@@ -338,19 +309,16 @@
 
     if-eqz v2, :cond_0
 
-    .line 4
     iget v5, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->size:I
 
     const/4 v6, 0x1
 
     if-le v5, v6, :cond_0
 
-    .line 5
     iget-object v5, v2, Lio/reactivex/internal/operators/observable/ObservableReplay$Node;->value:Ljava/lang/Object;
 
     check-cast v5, Lio/reactivex/schedulers/Timed;
 
-    .line 6
     invoke-virtual {v5}, Lio/reactivex/schedulers/Timed;->time()J
 
     move-result-wide v7
@@ -361,14 +329,12 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    .line 7
     iget v3, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->size:I
 
     sub-int/2addr v3, v6
 
     iput v3, p0, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->size:I
 
-    .line 8
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
     move-result-object v3
@@ -380,7 +346,6 @@
     :cond_0
     if-eqz v4, :cond_1
 
-    .line 9
     invoke-virtual {p0, v3}, Lio/reactivex/internal/operators/observable/ObservableReplay$BoundedReplayBuffer;->setFirst(Lio/reactivex/internal/operators/observable/ObservableReplay$Node;)V
 
     :cond_1

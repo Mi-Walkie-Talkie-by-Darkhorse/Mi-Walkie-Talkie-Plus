@@ -1,6 +1,5 @@
 .class public Landroidx/core/graphics/j;
 .super Landroidx/core/graphics/i;
-.source "TypefaceCompatApi28Impl.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/core/graphics/i;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 .method protected a(Ljava/lang/Object;)Landroid/graphics/Typeface;
     .locals 5
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Landroidx/core/graphics/i;->g:Ljava/lang/Class;
 
@@ -42,10 +39,8 @@
 
     const/4 v2, 0x0
 
-    .line 2
     invoke-static {v0, v2, p1}, Ljava/lang/reflect/Array;->set(Ljava/lang/Object;ILjava/lang/Object;)V
 
-    .line 3
     iget-object p1, p0, Landroidx/core/graphics/i;->m:Ljava/lang/reflect/Method;
 
     const/4 v3, 0x0
@@ -64,7 +59,6 @@
 
     const/4 v1, -0x1
 
-    .line 4
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
@@ -79,7 +73,6 @@
 
     aput-object v1, v4, v0
 
-    .line 5
     invoke-virtual {p1, v3, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -99,7 +92,6 @@
     :catch_1
     move-exception p1
 
-    .line 6
     :goto_0
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -127,19 +119,16 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p1, v0}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;I)Ljava/lang/Object;
 
     move-result-object p1
 
-    .line 2
     const-class v1, Landroid/graphics/Typeface;
 
     const/4 v2, 0x4
 
     new-array v2, v2, [Ljava/lang/Class;
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -164,12 +153,10 @@
 
     const-string p1, "createFromFamiliesWithDefault"
 
-    .line 4
     invoke-virtual {v1, p1, v2}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p1, v0}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
     return-object p1

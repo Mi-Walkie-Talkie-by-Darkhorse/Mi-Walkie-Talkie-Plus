@@ -1,6 +1,5 @@
 .class public final Lcom/efs/sdk/base/a/c/b;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # instance fields
@@ -20,10 +19,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
@@ -47,14 +44,12 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     iget-object v1, p0, Lcom/efs/sdk/base/a/c/b;->a:Ljava/util/Map;
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
-    .line 3
     invoke-static {}, Lcom/efs/sdk/base/a/a/a;->a()Lcom/efs/sdk/base/a/a/a;
 
     invoke-static {}, Lcom/efs/sdk/base/a/a/a;->b()J
@@ -73,7 +68,6 @@
 
     invoke-interface {v0, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
     invoke-static {}, Lcom/efs/sdk/base/a/a/a;->a()Lcom/efs/sdk/base/a/a/a;
 
     invoke-static {}, Lcom/efs/sdk/base/a/a/a;->b()J
@@ -96,7 +90,6 @@
 .method public final a(Ljava/lang/String;Ljava/lang/Object;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/a/c/b;->a:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -107,7 +100,6 @@
 .method public final b(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/base/a/c/b;->a:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;

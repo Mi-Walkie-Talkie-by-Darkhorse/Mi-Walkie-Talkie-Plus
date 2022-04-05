@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/retrofit2/adapter/rxjava2/HttpException;
 .super Ljava/lang/Exception;
-.source "HttpException.java"
 
 
 # instance fields
@@ -29,28 +28,24 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/jakewharton/retrofit2/adapter/rxjava2/HttpException;->getMessage(Lretrofit2/Response;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-direct {p0, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {p1}, Lretrofit2/Response;->code()I
 
     move-result v0
 
     iput v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/HttpException;->code:I
 
-    .line 3
     invoke-virtual {p1}, Lretrofit2/Response;->message()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/HttpException;->message:Ljava/lang/String;
 
-    .line 4
     iput-object p1, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/HttpException;->response:Lretrofit2/Response;
 
     return-void
@@ -69,7 +64,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -100,7 +94,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -116,7 +109,6 @@
 .method public code()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/HttpException;->code:I
 
     return v0
@@ -125,7 +117,6 @@
 .method public message()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/HttpException;->message:Ljava/lang/String;
 
     return-object v0
@@ -141,7 +132,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/HttpException;->response:Lretrofit2/Response;
 
     return-object v0

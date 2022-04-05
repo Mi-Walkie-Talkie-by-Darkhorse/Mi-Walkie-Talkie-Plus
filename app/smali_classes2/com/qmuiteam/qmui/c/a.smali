@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/c/a;
 .super Ljava/lang/Object;
-.source "IQMUISkinDispatchInterceptor.java"
 
 
 # virtual methods

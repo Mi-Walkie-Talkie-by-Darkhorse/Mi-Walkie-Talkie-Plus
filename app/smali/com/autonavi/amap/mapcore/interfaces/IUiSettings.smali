@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IUiSettings;
 .super Ljava/lang/Object;
-.source "IUiSettings.java"
 
 
 # virtual methods

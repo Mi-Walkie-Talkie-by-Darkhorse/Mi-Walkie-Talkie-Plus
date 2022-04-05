@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/dialog/h;
 .super Ljava/lang/Object;
-.source "DialogPlusBuilder.java"
 
 
 # instance fields
@@ -57,27 +56,22 @@
 .method constructor <init>(Landroid/content/Context;)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x4
 
     new-array v1, v0, [I
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->a:[I
 
     new-array v1, v0, [I
 
-    .line 3
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->b:[I
 
     new-array v0, v0, [I
 
-    .line 4
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->c:[I
 
-    .line 5
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
 
     const/16 v1, 0x50
@@ -90,47 +84,36 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->d:Landroid/widget/FrameLayout$LayoutParams;
 
-    .line 6
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->j:I
 
     const/4 v0, 0x1
 
-    .line 7
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->p:Z
 
-    .line 8
     iput v2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->q:I
 
-    .line 9
     iput v2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->r:I
 
-    .line 10
     iput v2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->s:I
 
-    .line 11
     iput v2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->t:I
 
-    .line 12
     iput v2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->u:I
 
     const v0, 0x7f06009a
 
-    .line 13
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->x:I
 
     if-eqz p1, :cond_0
 
-    .line 14
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->f:Landroid/content/Context;
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->a:[I
 
     invoke-static {p1, v2}, Ljava/util/Arrays;->fill([II)V
 
     return-void
 
-    .line 16
     :cond_0
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -175,7 +158,6 @@
 .method public a()Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;
     .locals 2
 
-    .line 5
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/dialog/h;->c()I
 
     move-result v0
@@ -184,7 +166,6 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 6
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/dialog/h;->k()Lcom/ifengyu/intercom/ui/widget/dialog/m;
 
     move-result-object v0
@@ -195,7 +176,6 @@
 
     invoke-interface {v0, v1}, Lcom/ifengyu/intercom/ui/widget/dialog/m;->a(I)V
 
-    .line 7
     :cond_0
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;
 
@@ -207,7 +187,6 @@
 .method public a(I)Lcom/ifengyu/intercom/ui/widget/dialog/h;
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->d:Landroid/widget/FrameLayout$LayoutParams;
 
     iput p1, v0, Landroid/widget/FrameLayout$LayoutParams;->height:I
@@ -218,7 +197,6 @@
 .method public a(Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$i;)Lcom/ifengyu/intercom/ui/widget/dialog/h;
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->l:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$i;
 
     return-object p0
@@ -227,7 +205,6 @@
 .method public a(Lcom/ifengyu/intercom/ui/widget/dialog/m;)Lcom/ifengyu/intercom/ui/widget/dialog/h;
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->i:Lcom/ifengyu/intercom/ui/widget/dialog/m;
 
     return-object p0
@@ -236,7 +213,6 @@
 .method public a(Z)Lcom/ifengyu/intercom/ui/widget/dialog/h;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->p:Z
 
     return-object p0
@@ -245,7 +221,6 @@
 .method public b()Landroid/widget/BaseAdapter;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->e:Landroid/widget/BaseAdapter;
 
     return-object v0
@@ -254,7 +229,6 @@
 .method public b(I)Lcom/ifengyu/intercom/ui/widget/dialog/h;
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->s:I
 
     return-object p0
@@ -263,7 +237,6 @@
 .method public c()I
     .locals 1
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->q:I
 
     return v0
@@ -272,7 +245,6 @@
 .method public c(I)Lcom/ifengyu/intercom/ui/widget/dialog/h;
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->r:I
 
     return-object p0
@@ -281,7 +253,6 @@
 .method public d()[I
     .locals 5
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->j:I
 
     const/16 v1, 0x11
@@ -295,7 +266,6 @@
     :cond_0
     const v0, 0x7f07009f
 
-    .line 2
     :goto_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->f:Landroid/content/Context;
 
@@ -309,7 +279,6 @@
 
     const/4 v1, 0x0
 
-    .line 3
     :goto_1
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->a:[I
 
@@ -317,7 +286,6 @@
 
     if-ge v1, v3, :cond_1
 
-    .line 4
     iget v3, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->j:I
 
     aget v4, v2, v1
@@ -339,7 +307,6 @@
 .method public e()[I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->b:[I
 
     return-object v0
@@ -348,12 +315,10 @@
 .method public f()Landroid/widget/FrameLayout$LayoutParams;
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->v:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->d:Landroid/widget/FrameLayout$LayoutParams;
 
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/dialog/h;->h()I
@@ -362,7 +327,6 @@
 
     iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->height:I
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->d:Landroid/widget/FrameLayout$LayoutParams;
 
@@ -372,7 +336,6 @@
 .method public g()Landroid/content/Context;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->f:Landroid/content/Context;
 
     return-object v0
@@ -381,12 +344,10 @@
 .method public h()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->f:Landroid/content/Context;
 
     check-cast v0, Landroid/app/Activity;
 
-    .line 2
     invoke-virtual {v0}, Landroid/app/Activity;->getWindowManager()Landroid/view/WindowManager;
 
     move-result-object v0
@@ -395,7 +356,6 @@
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Landroid/view/Display;->getHeight()I
 
     move-result v0
@@ -406,19 +366,16 @@
 
     sub-int/2addr v0, v1
 
-    .line 4
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->w:I
 
     if-nez v1, :cond_0
 
     mul-int/lit8 v0, v0, 0x2
 
-    .line 5
     div-int/lit8 v0, v0, 0x5
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->w:I
 
-    .line 6
     :cond_0
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->w:I
 
@@ -428,7 +385,6 @@
 .method public i()Landroid/view/View;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->f:Landroid/content/Context;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->s:I
@@ -445,7 +401,6 @@
 .method public j()Landroid/view/View;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->f:Landroid/content/Context;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->r:I
@@ -462,19 +417,16 @@
 .method public k()Lcom/ifengyu/intercom/ui/widget/dialog/m;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->i:Lcom/ifengyu/intercom/ui/widget/dialog/m;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/r;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/r;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->i:Lcom/ifengyu/intercom/ui/widget/dialog/m;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->i:Lcom/ifengyu/intercom/ui/widget/dialog/m;
 
@@ -484,7 +436,6 @@
 .method public l()Landroid/view/animation/Animation;
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->t:I
 
     const/4 v1, -0x1
@@ -499,7 +450,6 @@
 
     move-result v0
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->f:Landroid/content/Context;
 
@@ -513,7 +463,6 @@
 .method public m()Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$g;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->o:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$g;
 
     return-object v0
@@ -522,7 +471,6 @@
 .method public n()Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$h;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->n:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$h;
 
     return-object v0
@@ -531,7 +479,6 @@
 .method public o()Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$i;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->l:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$i;
 
     return-object v0
@@ -540,7 +487,6 @@
 .method public p()Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$j;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->m:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$j;
 
     return-object v0
@@ -549,7 +495,6 @@
 .method public q()Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$k;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->k:Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$k;
 
     return-object v0
@@ -558,7 +503,6 @@
 .method public r()Landroid/view/animation/Animation;
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->u:I
 
     const/4 v1, -0x1
@@ -573,7 +517,6 @@
 
     move-result v0
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->f:Landroid/content/Context;
 
@@ -587,14 +530,12 @@
 .method public s()Landroid/widget/FrameLayout$LayoutParams;
     .locals 6
 
-    .line 1
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
 
     const/4 v1, -0x1
 
     invoke-direct {v0, v1, v1}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->c:[I
 
     const/4 v2, 0x0
@@ -621,7 +562,6 @@
 .method public t()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->x:I
 
     return v0
@@ -630,7 +570,6 @@
 .method public u()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->p:Z
 
     return v0
@@ -639,7 +578,6 @@
 .method public v()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/h;->v:Z
 
     return v0

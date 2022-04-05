@@ -1,6 +1,5 @@
 .class Lcom/google/common/eventbus/EventSubscriber;
 .super Ljava/lang/Object;
-.source "EventSubscriber.java"
 
 
 # instance fields
@@ -13,28 +12,22 @@
 .method constructor <init>(Ljava/lang/Object;Ljava/lang/reflect/Method;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "EventSubscriber target cannot be null."
 
-    .line 2
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "EventSubscriber method cannot be null."
 
-    .line 3
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
     iput-object p1, p0, Lcom/google/common/eventbus/EventSubscriber;->target:Ljava/lang/Object;
 
-    .line 5
     iput-object p2, p0, Lcom/google/common/eventbus/EventSubscriber;->method:Ljava/lang/reflect/Method;
 
     const/4 p1, 0x1
 
-    .line 6
     invoke-virtual {p2, p1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
     return-void
@@ -49,17 +42,14 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Lcom/google/common/eventbus/EventSubscriber;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/common/eventbus/EventSubscriber;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/eventbus/EventSubscriber;->target:Ljava/lang/Object;
 
     iget-object v2, p1, Lcom/google/common/eventbus/EventSubscriber;->target:Ljava/lang/Object;
@@ -85,7 +75,6 @@
 .method public getMethod()Ljava/lang/reflect/Method;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/eventbus/EventSubscriber;->method:Ljava/lang/reflect/Method;
 
     return-object v0
@@ -94,7 +83,6 @@
 .method public getSubscriber()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/eventbus/EventSubscriber;->target:Ljava/lang/Object;
 
     return-object v0
@@ -108,10 +96,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/google/common/eventbus/EventSubscriber;->method:Ljava/lang/reflect/Method;
 
@@ -136,7 +122,6 @@
     :catch_0
     move-exception p1
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 
     move-result-object v0
@@ -145,7 +130,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p1
@@ -154,14 +138,12 @@
 
     throw p1
 
-    .line 5
     :cond_0
     throw p1
 
     :catch_1
     move-exception v0
 
-    .line 6
     new-instance v1, Ljava/lang/Error;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -199,7 +181,6 @@
     :catch_2
     move-exception v0
 
-    .line 7
     new-instance v1, Ljava/lang/Error;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -238,7 +219,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/eventbus/EventSubscriber;->method:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->hashCode()I
@@ -263,7 +243,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/eventbus/EventSubscriber;->method:Ljava/lang/reflect/Method;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;

@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/core/display/RoundedVignetteBitmapDisplayer$RoundedVignetteDrawable;
 .super Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$RoundedDrawable;
-.source "RoundedVignetteBitmapDisplayer.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Landroid/graphics/Bitmap;II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$RoundedDrawable;-><init>(Landroid/graphics/Bitmap;II)V
 
     return-void
@@ -29,10 +27,8 @@
 .method protected onBoundsChange(Landroid/graphics/Rect;)V
     .locals 9
 
-    .line 1
     invoke-super {p0, p1}, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$RoundedDrawable;->onBoundsChange(Landroid/graphics/Rect;)V
 
-    .line 2
     new-instance p1, Landroid/graphics/RadialGradient;
 
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$RoundedDrawable;->mRect:Landroid/graphics/RectF;
@@ -81,18 +77,14 @@
 
     invoke-direct/range {v0 .. v6}, Landroid/graphics/RadialGradient;-><init>(FFF[I[FLandroid/graphics/Shader$TileMode;)V
 
-    .line 3
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 4
     invoke-virtual {v0, v7, v8}, Landroid/graphics/Matrix;->setScale(FF)V
 
-    .line 5
     invoke-virtual {p1, v0}, Landroid/graphics/RadialGradient;->setLocalMatrix(Landroid/graphics/Matrix;)V
 
-    .line 6
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/display/RoundedBitmapDisplayer$RoundedDrawable;->paint:Landroid/graphics/Paint;
 
     new-instance v1, Landroid/graphics/ComposeShader;

@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/t;
 .super Ljava/lang/Object;
-.source "TouchResponse.java"
 
 
 # static fields
@@ -65,7 +64,6 @@
 
     new-array v2, v1, [F
 
-    .line 1
     fill-array-data v2, :array_0
 
     const/4 v3, 0x0
@@ -124,7 +122,6 @@
 
     new-array v2, v1, [F
 
-    .line 2
     fill-array-data v2, :array_7
 
     aput-object v2, v0, v3
@@ -245,89 +242,68 @@
 .method constructor <init>(Landroid/content/Context;Landroidx/constraintlayout/motion/widget/MotionLayout;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Landroidx/constraintlayout/motion/widget/t;->a:I
 
-    .line 3
     iput v0, p0, Landroidx/constraintlayout/motion/widget/t;->b:I
 
-    .line 4
     iput v0, p0, Landroidx/constraintlayout/motion/widget/t;->c:I
 
     const/4 v1, -0x1
 
-    .line 5
     iput v1, p0, Landroidx/constraintlayout/motion/widget/t;->d:I
 
-    .line 6
     iput v1, p0, Landroidx/constraintlayout/motion/widget/t;->e:I
 
-    .line 7
     iput v1, p0, Landroidx/constraintlayout/motion/widget/t;->f:I
 
     const/high16 v1, 0x3f000000    # 0.5f
 
-    .line 8
     iput v1, p0, Landroidx/constraintlayout/motion/widget/t;->g:F
 
-    .line 9
     iput v1, p0, Landroidx/constraintlayout/motion/widget/t;->h:F
 
     const/4 v1, 0x0
 
-    .line 10
     iput v1, p0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 11
     iput v1, p0, Landroidx/constraintlayout/motion/widget/t;->j:F
 
-    .line 12
     iput-boolean v0, p0, Landroidx/constraintlayout/motion/widget/t;->k:Z
 
     const/4 v2, 0x2
 
     new-array v2, v2, [F
 
-    .line 13
     iput-object v2, p0, Landroidx/constraintlayout/motion/widget/t;->l:[F
 
     const/high16 v2, 0x40800000    # 4.0f
 
-    .line 14
     iput v2, p0, Landroidx/constraintlayout/motion/widget/t;->p:F
 
     const v2, 0x3f99999a    # 1.2f
 
-    .line 15
     iput v2, p0, Landroidx/constraintlayout/motion/widget/t;->q:F
 
     const/4 v2, 0x1
 
-    .line 16
     iput-boolean v2, p0, Landroidx/constraintlayout/motion/widget/t;->r:Z
 
-    .line 17
     iput v1, p0, Landroidx/constraintlayout/motion/widget/t;->s:F
 
-    .line 18
     iput v0, p0, Landroidx/constraintlayout/motion/widget/t;->t:I
 
     const/high16 v0, 0x41200000    # 10.0f
 
-    .line 19
     iput v0, p0, Landroidx/constraintlayout/motion/widget/t;->u:F
 
-    .line 20
     iput-object p2, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
-    .line 21
     invoke-static {p3}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
 
     move-result-object p2
@@ -340,17 +316,14 @@
 .method private a(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 13
     sget-object v0, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 14
     invoke-direct {p0, p1}, Landroidx/constraintlayout/motion/widget/t;->a(Landroid/content/res/TypedArray;)V
 
-    .line 15
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -359,7 +332,6 @@
 .method private a(Landroid/content/res/TypedArray;)V
     .locals 7
 
-    .line 16
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->getIndexCount()I
 
     move-result v0
@@ -371,17 +343,14 @@
     :goto_0
     if-ge v2, v0, :cond_c
 
-    .line 17
     invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->getIndex(I)I
 
     move-result v3
 
-    .line 18
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_touchAnchorId:I
 
     if-ne v3, v4, :cond_0
 
-    .line 19
     iget v4, p0, Landroidx/constraintlayout/motion/widget/t;->d:I
 
     invoke-virtual {p1, v3, v4}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -392,7 +361,6 @@
 
     goto/16 :goto_1
 
-    .line 20
     :cond_0
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_touchAnchorSide:I
 
@@ -400,7 +368,6 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 21
     iget v4, p0, Landroidx/constraintlayout/motion/widget/t;->a:I
 
     invoke-virtual {p1, v3, v4}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -409,7 +376,6 @@
 
     iput v3, p0, Landroidx/constraintlayout/motion/widget/t;->a:I
 
-    .line 22
     sget-object v4, Landroidx/constraintlayout/motion/widget/t;->v:[[F
 
     aget-object v6, v4, v3
@@ -418,7 +384,6 @@
 
     iput v6, p0, Landroidx/constraintlayout/motion/widget/t;->h:F
 
-    .line 23
     aget-object v3, v4, v3
 
     aget v3, v3, v5
@@ -427,13 +392,11 @@
 
     goto/16 :goto_1
 
-    .line 24
     :cond_1
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_dragDirection:I
 
     if-ne v3, v4, :cond_2
 
-    .line 25
     iget v4, p0, Landroidx/constraintlayout/motion/widget/t;->b:I
 
     invoke-virtual {p1, v3, v4}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -442,7 +405,6 @@
 
     iput v3, p0, Landroidx/constraintlayout/motion/widget/t;->b:I
 
-    .line 26
     sget-object v4, Landroidx/constraintlayout/motion/widget/t;->w:[[F
 
     aget-object v6, v4, v3
@@ -451,7 +413,6 @@
 
     iput v6, p0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
-    .line 27
     aget-object v3, v4, v3
 
     aget v3, v3, v5
@@ -460,13 +421,11 @@
 
     goto/16 :goto_1
 
-    .line 28
     :cond_2
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_maxVelocity:I
 
     if-ne v3, v4, :cond_3
 
-    .line 29
     iget v4, p0, Landroidx/constraintlayout/motion/widget/t;->p:F
 
     invoke-virtual {p1, v3, v4}, Landroid/content/res/TypedArray;->getFloat(IF)F
@@ -477,13 +436,11 @@
 
     goto :goto_1
 
-    .line 30
     :cond_3
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_maxAcceleration:I
 
     if-ne v3, v4, :cond_4
 
-    .line 31
     iget v4, p0, Landroidx/constraintlayout/motion/widget/t;->q:F
 
     invoke-virtual {p1, v3, v4}, Landroid/content/res/TypedArray;->getFloat(IF)F
@@ -494,13 +451,11 @@
 
     goto :goto_1
 
-    .line 32
     :cond_4
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_moveWhenScrollAtTop:I
 
     if-ne v3, v4, :cond_5
 
-    .line 33
     iget-boolean v4, p0, Landroidx/constraintlayout/motion/widget/t;->r:Z
 
     invoke-virtual {p1, v3, v4}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -511,13 +466,11 @@
 
     goto :goto_1
 
-    .line 34
     :cond_5
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_dragScale:I
 
     if-ne v3, v4, :cond_6
 
-    .line 35
     iget v4, p0, Landroidx/constraintlayout/motion/widget/t;->s:F
 
     invoke-virtual {p1, v3, v4}, Landroid/content/res/TypedArray;->getFloat(IF)F
@@ -528,13 +481,11 @@
 
     goto :goto_1
 
-    .line 36
     :cond_6
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_dragThreshold:I
 
     if-ne v3, v4, :cond_7
 
-    .line 37
     iget v4, p0, Landroidx/constraintlayout/motion/widget/t;->u:F
 
     invoke-virtual {p1, v3, v4}, Landroid/content/res/TypedArray;->getFloat(IF)F
@@ -545,13 +496,11 @@
 
     goto :goto_1
 
-    .line 38
     :cond_7
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_touchRegionId:I
 
     if-ne v3, v4, :cond_8
 
-    .line 39
     iget v4, p0, Landroidx/constraintlayout/motion/widget/t;->e:I
 
     invoke-virtual {p1, v3, v4}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -562,13 +511,11 @@
 
     goto :goto_1
 
-    .line 40
     :cond_8
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_onTouchUp:I
 
     if-ne v3, v4, :cond_9
 
-    .line 41
     iget v4, p0, Landroidx/constraintlayout/motion/widget/t;->c:I
 
     invoke-virtual {p1, v3, v4}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -579,13 +526,11 @@
 
     goto :goto_1
 
-    .line 42
     :cond_9
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_nestedScrollFlags:I
 
     if-ne v3, v4, :cond_a
 
-    .line 43
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getInteger(II)I
 
     move-result v3
@@ -594,13 +539,11 @@
 
     goto :goto_1
 
-    .line 44
     :cond_a
     sget v4, Landroidx/constraintlayout/widget/R$styleable;->OnSwipe_limitBoundsTo:I
 
     if-ne v3, v4, :cond_b
 
-    .line 45
     invoke-virtual {p1, v3, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result v3
@@ -622,7 +565,6 @@
 .method a(FF)F
     .locals 1
 
-    .line 104
     iget v0, p0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
     mul-float p1, p1, v0
@@ -639,7 +581,6 @@
 .method public a()I
     .locals 1
 
-    .line 105
     iget v0, p0, Landroidx/constraintlayout/motion/widget/t;->t:I
 
     return v0
@@ -648,7 +589,6 @@
 .method a(Landroid/view/ViewGroup;Landroid/graphics/RectF;)Landroid/graphics/RectF;
     .locals 3
 
-    .line 101
     iget v0, p0, Landroidx/constraintlayout/motion/widget/t;->f:I
 
     const/4 v1, 0x0
@@ -659,7 +599,6 @@
 
     return-object v1
 
-    .line 102
     :cond_0
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -669,7 +608,6 @@
 
     return-object v1
 
-    .line 103
     :cond_1
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
@@ -709,10 +647,8 @@
 
     move-object/from16 v2, p1
 
-    .line 46
     invoke-interface {v1, v2}, Landroidx/constraintlayout/motion/widget/MotionLayout$f;->a(Landroid/view/MotionEvent;)V
 
-    .line 47
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v3
@@ -739,7 +675,6 @@
 
     goto/16 :goto_8
 
-    .line 48
     :cond_0
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getRawY()F
 
@@ -749,7 +684,6 @@
 
     sub-float/2addr v3, v10
 
-    .line 49
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result v10
@@ -758,7 +692,6 @@
 
     sub-float/2addr v10, v11
 
-    .line 50
     iget v11, v0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
     mul-float v11, v11, v10
@@ -769,7 +702,6 @@
 
     add-float/2addr v11, v12
 
-    .line 51
     invoke-static {v11}, Ljava/lang/Math;->abs(F)F
 
     move-result v11
@@ -784,7 +716,6 @@
 
     if-eqz v11, :cond_11
 
-    .line 52
     :cond_1
     iget-object v11, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
@@ -792,26 +723,21 @@
 
     move-result v11
 
-    .line 53
     iget-boolean v12, v0, Landroidx/constraintlayout/motion/widget/t;->k:Z
 
     if-nez v12, :cond_2
 
-    .line 54
     iput-boolean v9, v0, Landroidx/constraintlayout/motion/widget/t;->k:Z
 
-    .line 55
     iget-object v12, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v12, v11}, Landroidx/constraintlayout/motion/widget/MotionLayout;->setProgress(F)V
 
-    .line 56
     :cond_2
     iget v13, v0, Landroidx/constraintlayout/motion/widget/t;->d:I
 
     if-eq v13, v5, :cond_3
 
-    .line 57
     iget-object v12, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     iget v15, v0, Landroidx/constraintlayout/motion/widget/t;->h:F
@@ -830,7 +756,6 @@
 
     goto :goto_0
 
-    .line 58
     :cond_3
     iget-object v5, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
@@ -850,7 +775,6 @@
 
     int-to-float v5, v5
 
-    .line 59
     iget-object v12, v0, Landroidx/constraintlayout/motion/widget/t;->l:[F
 
     iget v13, v0, Landroidx/constraintlayout/motion/widget/t;->j:F
@@ -859,14 +783,12 @@
 
     aput v13, v12, v9
 
-    .line 60
     iget v13, v0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
     mul-float v5, v5, v13
 
     aput v5, v12, v4
 
-    .line 61
     :goto_0
     iget v5, v0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
@@ -884,12 +806,10 @@
 
     add-float/2addr v5, v13
 
-    .line 62
     iget v12, v0, Landroidx/constraintlayout/motion/widget/t;->s:F
 
     mul-float v5, v5, v12
 
-    .line 63
     invoke-static {v5}, Ljava/lang/Math;->abs(F)F
 
     move-result v5
@@ -902,17 +822,14 @@
 
     if-gez v5, :cond_4
 
-    .line 64
     iget-object v5, v0, Landroidx/constraintlayout/motion/widget/t;->l:[F
 
     const v12, 0x3c23d70a    # 0.01f
 
     aput v12, v5, v4
 
-    .line 65
     aput v12, v5, v9
 
-    .line 66
     :cond_4
     iget v5, v0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
@@ -920,7 +837,6 @@
 
     if-eqz v5, :cond_5
 
-    .line 67
     iget-object v3, v0, Landroidx/constraintlayout/motion/widget/t;->l:[F
 
     aget v3, v3, v4
@@ -929,7 +845,6 @@
 
     goto :goto_1
 
-    .line 68
     :cond_5
     iget-object v5, v0, Landroidx/constraintlayout/motion/widget/t;->l:[F
 
@@ -940,7 +855,6 @@
     :goto_1
     add-float/2addr v11, v10
 
-    .line 69
     invoke-static {v11, v7}, Ljava/lang/Math;->min(FF)F
 
     move-result v3
@@ -949,7 +863,6 @@
 
     move-result v3
 
-    .line 70
     iget-object v5, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v5}, Landroidx/constraintlayout/motion/widget/MotionLayout;->getProgress()F
@@ -960,25 +873,20 @@
 
     if-eqz v5, :cond_7
 
-    .line 71
     iget-object v5, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v5, v3}, Landroidx/constraintlayout/motion/widget/MotionLayout;->setProgress(F)V
 
-    .line 72
     invoke-interface {v1, v6}, Landroidx/constraintlayout/motion/widget/MotionLayout$f;->a(I)V
 
-    .line 73
     invoke-interface/range {p2 .. p2}, Landroidx/constraintlayout/motion/widget/MotionLayout$f;->c()F
 
     move-result v3
 
-    .line 74
     invoke-interface/range {p2 .. p2}, Landroidx/constraintlayout/motion/widget/MotionLayout$f;->b()F
 
     move-result v1
 
-    .line 75
     iget v5, v0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
     cmpl-float v5, v5, v8
@@ -1000,7 +908,6 @@
 
     div-float v3, v1, v3
 
-    .line 76
     :goto_2
     iget-object v1, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
@@ -1008,13 +915,11 @@
 
     goto :goto_3
 
-    .line 77
     :cond_7
     iget-object v1, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     iput v8, v1, Landroidx/constraintlayout/motion/widget/MotionLayout;->c:F
 
-    .line 78
     :goto_3
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -1022,7 +927,6 @@
 
     iput v1, v0, Landroidx/constraintlayout/motion/widget/t;->m:F
 
-    .line 79
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v1
@@ -1031,36 +935,29 @@
 
     goto/16 :goto_8
 
-    .line 80
     :cond_8
     iput-boolean v4, v0, Landroidx/constraintlayout/motion/widget/t;->k:Z
 
-    .line 81
     invoke-interface {v1, v6}, Landroidx/constraintlayout/motion/widget/MotionLayout$f;->a(I)V
 
-    .line 82
     invoke-interface/range {p2 .. p2}, Landroidx/constraintlayout/motion/widget/MotionLayout$f;->c()F
 
     move-result v2
 
-    .line 83
     invoke-interface/range {p2 .. p2}, Landroidx/constraintlayout/motion/widget/MotionLayout$f;->b()F
 
     move-result v1
 
-    .line 84
     iget-object v3, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v3}, Landroidx/constraintlayout/motion/widget/MotionLayout;->getProgress()F
 
     move-result v3
 
-    .line 85
     iget v11, v0, Landroidx/constraintlayout/motion/widget/t;->d:I
 
     if-eq v11, v5, :cond_9
 
-    .line 86
     iget-object v10, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     iget v13, v0, Landroidx/constraintlayout/motion/widget/t;->h:F
@@ -1075,7 +972,6 @@
 
     goto :goto_4
 
-    .line 87
     :cond_9
     iget-object v5, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
@@ -1095,7 +991,6 @@
 
     int-to-float v5, v5
 
-    .line 88
     iget-object v6, v0, Landroidx/constraintlayout/motion/widget/t;->l:[F
 
     iget v10, v0, Landroidx/constraintlayout/motion/widget/t;->j:F
@@ -1104,14 +999,12 @@
 
     aput v10, v6, v9
 
-    .line 89
     iget v10, v0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
     mul-float v5, v5, v10
 
     aput v5, v6, v4
 
-    .line 90
     :goto_4
     iget v5, v0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
@@ -1125,20 +1018,17 @@
 
     if-eqz v5, :cond_a
 
-    .line 91
     aget v1, v6, v4
 
     div-float/2addr v2, v1
 
     goto :goto_5
 
-    .line 92
     :cond_a
     aget v2, v6, v9
 
     div-float v2, v1, v2
 
-    .line 93
     :goto_5
     invoke-static {v2}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -1166,14 +1056,12 @@
 
     if-eqz v4, :cond_e
 
-    .line 94
     iget v4, v0, Landroidx/constraintlayout/motion/widget/t;->c:I
 
     const/4 v5, 0x3
 
     if-eq v4, v5, :cond_e
 
-    .line 95
     iget-object v5, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     float-to-double v9, v1
@@ -1202,7 +1090,6 @@
 
     if-gtz v1, :cond_11
 
-    .line 96
     :cond_d
     iget-object v1, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
@@ -1221,7 +1108,6 @@
 
     if-gtz v1, :cond_11
 
-    .line 97
     :cond_f
     iget-object v1, v0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
@@ -1231,7 +1117,6 @@
 
     goto :goto_8
 
-    .line 98
     :cond_10
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -1239,14 +1124,12 @@
 
     iput v1, v0, Landroidx/constraintlayout/motion/widget/t;->m:F
 
-    .line 99
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v1
 
     iput v1, v0, Landroidx/constraintlayout/motion/widget/t;->n:F
 
-    .line 100
     iput-boolean v4, v0, Landroidx/constraintlayout/motion/widget/t;->k:Z
 
     :cond_11
@@ -1271,33 +1154,28 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     sget-object p1, Landroidx/constraintlayout/motion/widget/t;->w:[[F
 
     aget-object v1, p1, v1
 
     aput-object v1, p1, v2
 
-    .line 2
     aget-object v1, p1, v5
 
     aput-object v1, p1, v4
 
-    .line 3
     sget-object p1, Landroidx/constraintlayout/motion/widget/t;->v:[[F
 
     aget-object v1, p1, v5
 
     aput-object v1, p1, v4
 
-    .line 4
     aget-object v1, p1, v3
 
     aput-object v1, p1, v0
 
     goto :goto_0
 
-    .line 5
     :cond_0
     sget-object p1, Landroidx/constraintlayout/motion/widget/t;->w:[[F
 
@@ -1305,24 +1183,20 @@
 
     aput-object v6, p1, v2
 
-    .line 6
     aget-object v1, p1, v1
 
     aput-object v1, p1, v4
 
-    .line 7
     sget-object p1, Landroidx/constraintlayout/motion/widget/t;->v:[[F
 
     aget-object v1, p1, v3
 
     aput-object v1, p1, v4
 
-    .line 8
     aget-object v1, p1, v5
 
     aput-object v1, p1, v0
 
-    .line 9
     :goto_0
     sget-object p1, Landroidx/constraintlayout/motion/widget/t;->v:[[F
 
@@ -1336,14 +1210,12 @@
 
     iput v1, p0, Landroidx/constraintlayout/motion/widget/t;->h:F
 
-    .line 10
     aget-object p1, p1, v0
 
     aget p1, p1, v3
 
     iput p1, p0, Landroidx/constraintlayout/motion/widget/t;->g:F
 
-    .line 11
     sget-object p1, Landroidx/constraintlayout/motion/widget/t;->w:[[F
 
     iget v0, p0, Landroidx/constraintlayout/motion/widget/t;->b:I
@@ -1354,7 +1226,6 @@
 
     iput v1, p0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
-    .line 12
     aget-object p1, p1, v0
 
     aget p1, p1, v3
@@ -1367,7 +1238,6 @@
 .method b()F
     .locals 1
 
-    .line 10
     iget v0, p0, Landroidx/constraintlayout/motion/widget/t;->q:F
 
     return v0
@@ -1376,14 +1246,12 @@
 .method b(FF)F
     .locals 7
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v0}, Landroidx/constraintlayout/motion/widget/MotionLayout;->getProgress()F
 
     move-result v3
 
-    .line 2
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     iget v2, p0, Landroidx/constraintlayout/motion/widget/t;->d:I
@@ -1396,7 +1264,6 @@
 
     invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/motion/widget/MotionLayout;->a(IFFF[F)V
 
-    .line 3
     iget v0, p0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
     const v1, 0x33d6bf95    # 1.0E-7f
@@ -1407,7 +1274,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-object p2, p0, Landroidx/constraintlayout/motion/widget/t;->l:[F
 
     const/4 v0, 0x0
@@ -1418,10 +1284,8 @@
 
     if-nez v2, :cond_0
 
-    .line 5
     aput v1, p2, v0
 
-    .line 6
     :cond_0
     iget p2, p0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
@@ -1435,7 +1299,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     iget-object p1, p0, Landroidx/constraintlayout/motion/widget/t;->l:[F
 
@@ -1447,10 +1310,8 @@
 
     if-nez v2, :cond_2
 
-    .line 8
     aput v1, p1, v0
 
-    .line 9
     :cond_2
     iget p1, p0, Landroidx/constraintlayout/motion/widget/t;->j:F
 
@@ -1469,7 +1330,6 @@
 .method b(Landroid/view/ViewGroup;Landroid/graphics/RectF;)Landroid/graphics/RectF;
     .locals 3
 
-    .line 11
     iget v0, p0, Landroidx/constraintlayout/motion/widget/t;->e:I
 
     const/4 v1, 0x0
@@ -1480,7 +1340,6 @@
 
     return-object v1
 
-    .line 12
     :cond_0
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
@@ -1490,7 +1349,6 @@
 
     return-object v1
 
-    .line 13
     :cond_1
     invoke-virtual {p1}, Landroid/view/View;->getLeft()I
 
@@ -1524,7 +1382,6 @@
 .method public c()F
     .locals 1
 
-    .line 16
     iget v0, p0, Landroidx/constraintlayout/motion/widget/t;->p:F
 
     return v0
@@ -1533,29 +1390,24 @@
 .method c(FF)V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v0}, Landroidx/constraintlayout/motion/widget/MotionLayout;->getProgress()F
 
     move-result v0
 
-    .line 2
     iget-boolean v1, p0, Landroidx/constraintlayout/motion/widget/t;->k:Z
 
     const/4 v7, 0x1
 
     if-nez v1, :cond_0
 
-    .line 3
     iput-boolean v7, p0, Landroidx/constraintlayout/motion/widget/t;->k:Z
 
-    .line 4
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v1, v0}, Landroidx/constraintlayout/motion/widget/MotionLayout;->setProgress(F)V
 
-    .line 5
     :cond_0
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
@@ -1571,7 +1423,6 @@
 
     invoke-virtual/range {v1 .. v6}, Landroidx/constraintlayout/motion/widget/MotionLayout;->a(IFFF[F)V
 
-    .line 6
     iget v1, p0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/t;->l:[F
@@ -1590,7 +1441,6 @@
 
     add-float/2addr v1, v4
 
-    .line 7
     invoke-static {v1}, Ljava/lang/Math;->abs(F)F
 
     move-result v1
@@ -1603,17 +1453,14 @@
 
     if-gez v6, :cond_1
 
-    .line 8
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/t;->l:[F
 
     const v2, 0x3c23d70a    # 0.01f
 
     aput v2, v1, v3
 
-    .line 9
     aput v2, v1, v7
 
-    .line 10
     :cond_1
     iget v1, p0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
@@ -1625,7 +1472,6 @@
 
     mul-float p1, p1, v1
 
-    .line 11
     iget-object p2, p0, Landroidx/constraintlayout/motion/widget/t;->l:[F
 
     aget p2, p2, v3
@@ -1634,7 +1480,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_2
     iget p1, p0, Landroidx/constraintlayout/motion/widget/t;->j:F
 
@@ -1651,7 +1496,6 @@
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 13
     invoke-static {v0, p1}, Ljava/lang/Math;->min(FF)F
 
     move-result p1
@@ -1660,7 +1504,6 @@
 
     move-result p1
 
-    .line 14
     iget-object p2, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {p2}, Landroidx/constraintlayout/motion/widget/MotionLayout;->getProgress()F
@@ -1671,7 +1514,6 @@
 
     if-eqz p2, :cond_3
 
-    .line 15
     iget-object p2, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {p2, p1}, Landroidx/constraintlayout/motion/widget/MotionLayout;->setProgress(F)V
@@ -1685,17 +1527,14 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Landroidx/constraintlayout/motion/widget/t;->k:Z
 
-    .line 2
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v1}, Landroidx/constraintlayout/motion/widget/MotionLayout;->getProgress()F
 
     move-result v1
 
-    .line 3
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     iget v3, p0, Landroidx/constraintlayout/motion/widget/t;->d:I
@@ -1710,7 +1549,6 @@
 
     invoke-virtual/range {v2 .. v7}, Landroidx/constraintlayout/motion/widget/MotionLayout;->a(IFFF[F)V
 
-    .line 4
     iget v2, p0, Landroidx/constraintlayout/motion/widget/t;->i:F
 
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/t;->l:[F
@@ -1731,7 +1569,6 @@
 
     mul-float p1, p1, v2
 
-    .line 5
     aget p2, v3, v0
 
     div-float/2addr p1, p2
@@ -1741,12 +1578,10 @@
     :cond_0
     mul-float p2, p2, v4
 
-    .line 6
     aget p1, v3, v5
 
     div-float p1, p2, p1
 
-    .line 7
     :goto_0
     invoke-static {p1}, Ljava/lang/Float;->isNaN(F)Z
 
@@ -1778,7 +1613,6 @@
     :cond_2
     const/4 v2, 0x0
 
-    .line 8
     :goto_1
     iget v3, p0, Landroidx/constraintlayout/motion/widget/t;->c:I
 
@@ -1793,7 +1627,6 @@
 
     if-eqz v0, :cond_5
 
-    .line 9
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     iget v2, p0, Landroidx/constraintlayout/motion/widget/t;->c:I
@@ -1821,7 +1654,6 @@
 .method d()Z
     .locals 1
 
-    .line 10
     iget-boolean v0, p0, Landroidx/constraintlayout/motion/widget/t;->r:Z
 
     return v0
@@ -1830,7 +1662,6 @@
 .method e()I
     .locals 1
 
-    .line 3
     iget v0, p0, Landroidx/constraintlayout/motion/widget/t;->e:I
 
     return v0
@@ -1839,10 +1670,8 @@
 .method e(FF)V
     .locals 0
 
-    .line 1
     iput p1, p0, Landroidx/constraintlayout/motion/widget/t;->m:F
 
-    .line 2
     iput p2, p0, Landroidx/constraintlayout/motion/widget/t;->n:F
 
     return-void
@@ -1851,14 +1680,12 @@
 .method f()V
     .locals 4
 
-    .line 4
     iget v0, p0, Landroidx/constraintlayout/motion/widget/t;->d:I
 
     const/4 v1, -0x1
 
     if-eq v0, v1, :cond_0
 
-    .line 5
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/t;->o:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -1867,7 +1694,6 @@
 
     if-nez v0, :cond_1
 
-    .line 6
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1903,24 +1729,20 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 7
     :cond_1
     :goto_0
     instance-of v1, v0, Landroidx/core/widget/NestedScrollView;
 
     if-eqz v1, :cond_2
 
-    .line 8
     check-cast v0, Landroidx/core/widget/NestedScrollView;
 
-    .line 9
     new-instance v1, Landroidx/constraintlayout/motion/widget/t$a;
 
     invoke-direct {v1, p0}, Landroidx/constraintlayout/motion/widget/t$a;-><init>(Landroidx/constraintlayout/motion/widget/t;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
-    .line 10
     new-instance v1, Landroidx/constraintlayout/motion/widget/t$b;
 
     invoke-direct {v1, p0}, Landroidx/constraintlayout/motion/widget/t$b;-><init>(Landroidx/constraintlayout/motion/widget/t;)V
@@ -1934,15 +1756,12 @@
 .method f(FF)V
     .locals 0
 
-    .line 1
     iput p1, p0, Landroidx/constraintlayout/motion/widget/t;->m:F
 
-    .line 2
     iput p2, p0, Landroidx/constraintlayout/motion/widget/t;->n:F
 
     const/4 p1, 0x0
 
-    .line 3
     iput-boolean p1, p0, Landroidx/constraintlayout/motion/widget/t;->k:Z
 
     return-void
@@ -1951,7 +1770,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

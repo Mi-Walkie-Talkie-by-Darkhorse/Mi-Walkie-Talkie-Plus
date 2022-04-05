@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/tileprovider/modules/TileWriter$1;
 .super Ljava/lang/Thread;
-.source "TileWriter.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lorg/osmdroid/tileprovider/modules/TileWriter;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/modules/TileWriter$1;->this$0:Lorg/osmdroid/tileprovider/modules/TileWriter;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -37,10 +35,8 @@
 
     const-wide/16 v0, 0x0
 
-    .line 1
     invoke-static {v0, v1}, Lorg/osmdroid/tileprovider/modules/TileWriter;->access$002(J)J
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/TileWriter$1;->this$0:Lorg/osmdroid/tileprovider/modules/TileWriter;
 
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
@@ -53,7 +49,6 @@
 
     invoke-static {v0, v1}, Lorg/osmdroid/tileprovider/modules/TileWriter;->access$100(Lorg/osmdroid/tileprovider/modules/TileWriter;Ljava/io/File;)V
 
-    .line 3
     invoke-static {}, Lorg/osmdroid/tileprovider/modules/TileWriter;->access$000()J
 
     move-result-wide v0
@@ -70,12 +65,10 @@
 
     if-lez v4, :cond_0
 
-    .line 4
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/TileWriter$1;->this$0:Lorg/osmdroid/tileprovider/modules/TileWriter;
 
     invoke-static {v0}, Lorg/osmdroid/tileprovider/modules/TileWriter;->access$200(Lorg/osmdroid/tileprovider/modules/TileWriter;)V
 
-    .line 5
     :cond_0
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
@@ -91,7 +84,6 @@
 
     const-string v1, "Finished init thread"
 
-    .line 6
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1

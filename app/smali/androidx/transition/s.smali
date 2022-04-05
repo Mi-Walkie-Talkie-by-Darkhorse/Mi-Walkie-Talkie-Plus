@@ -1,6 +1,5 @@
 .class Landroidx/transition/s;
 .super Ljava/lang/Object;
-.source "Styleable.java"
 
 
 # annotations
@@ -66,7 +65,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Landroidx/transition/s;->a:[I
@@ -81,7 +79,6 @@
 
     aput v2, v1, v3
 
-    .line 2
     sput-object v1, Landroidx/transition/s;->b:[I
 
     new-array v1, v0, [I
@@ -90,7 +87,6 @@
 
     aput v2, v1, v3
 
-    .line 3
     sput-object v1, Landroidx/transition/s;->c:[I
 
     new-array v1, v0, [I
@@ -99,14 +95,12 @@
 
     aput v2, v1, v3
 
-    .line 4
     sput-object v1, Landroidx/transition/s;->d:[I
 
     const/4 v1, 0x2
 
     new-array v1, v1, [I
 
-    .line 5
     fill-array-data v1, :array_1
 
     sput-object v1, Landroidx/transition/s;->e:[I
@@ -117,7 +111,6 @@
 
     aput v2, v1, v3
 
-    .line 6
     sput-object v1, Landroidx/transition/s;->f:[I
 
     new-array v1, v0, [I
@@ -126,14 +119,12 @@
 
     aput v2, v1, v3
 
-    .line 7
     sput-object v1, Landroidx/transition/s;->g:[I
 
     const/4 v1, 0x3
 
     new-array v1, v1, [I
 
-    .line 8
     fill-array-data v1, :array_2
 
     sput-object v1, Landroidx/transition/s;->h:[I
@@ -144,7 +135,6 @@
 
     aput v1, v0, v3
 
-    .line 9
     sput-object v0, Landroidx/transition/s;->i:[I
 
     return-void

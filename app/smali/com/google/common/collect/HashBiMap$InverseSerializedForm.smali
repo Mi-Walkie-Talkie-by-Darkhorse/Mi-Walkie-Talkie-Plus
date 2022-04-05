@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/HashBiMap$InverseSerializedForm;
 .super Ljava/lang/Object;
-.source "HashBiMap.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -51,10 +50,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$InverseSerializedForm;->bimap:Lcom/google/common/collect/HashBiMap;
 
     return-void
@@ -65,7 +62,6 @@
 .method readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$InverseSerializedForm;->bimap:Lcom/google/common/collect/HashBiMap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/HashBiMap;->inverse()Lcom/google/common/collect/BiMap;

@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/b$1;
 .super Landroid/webkit/WebChromeClient;
-.source "ProGuard"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/tencent/open/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/b$1;->a:Lcom/tencent/open/b;
 
     invoke-direct {p0}, Landroid/webkit/WebChromeClient;-><init>()V
@@ -35,7 +33,6 @@
 .method public onConsoleMessage(Ljava/lang/String;ILjava/lang/String;)V
     .locals 2
 
-    .line 4
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -66,14 +63,12 @@
 
     invoke-static {p3, p2}, Lcom/tencent/open/a/f;->c(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/4 p3, 0x7
 
     if-ne p2, p3, :cond_0
 
-    .line 6
     iget-object p2, p0, Lcom/tencent/open/b$1;->a:Lcom/tencent/open/b;
 
     invoke-virtual {p2, p1}, Lcom/tencent/open/b;->a(Ljava/lang/String;)V
@@ -91,7 +86,6 @@
 
     return p1
 
-    .line 1
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -135,14 +129,12 @@
 
     invoke-static {v1, v0}, Lcom/tencent/open/a/f;->c(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/4 v1, 0x7
 
     if-le v0, v1, :cond_2
 
-    .line 3
     iget-object v0, p0, Lcom/tencent/open/b$1;->a:Lcom/tencent/open/b;
 
     if-nez p1, :cond_1

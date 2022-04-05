@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/fence/GeoFenceClient;
 .super Ljava/lang/Object;
-.source "GeoFenceClient.java"
 
 
 # static fields
@@ -21,20 +20,16 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->a:Landroid/content/Context;
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
     if-eqz p1, :cond_0
 
-    .line 4
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
@@ -42,7 +37,6 @@
 
     iput-object p1, p0, Lcom/amap/api/fence/GeoFenceClient;->a:Landroid/content/Context;
 
-    .line 5
     invoke-static {p1}, Lcom/amap/api/fence/GeoFenceClient;->a(Landroid/content/Context;)Lcom/amap/api/fence/GeoFenceManagerBase;
 
     move-result-object p1
@@ -56,7 +50,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -73,7 +66,6 @@
 
     const-string v1, "<init>"
 
-    .line 7
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -82,7 +74,6 @@
 .method private static a(Landroid/content/Context;)Lcom/amap/api/fence/GeoFenceManagerBase;
     .locals 7
 
-    .line 1
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/jz;->b()Lcom/amap/api/col/l3/gh;
 
@@ -90,7 +81,6 @@
 
     const-string v0, "EY29tLmFtYXAuYXBpLmZlbmNlLkdlb0ZlbmNlTWFuYWdlcldyYXBwZXI="
 
-    .line 2
     invoke-static {v0}, Lcom/amap/api/col/l3/gi;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -113,7 +103,6 @@
 
     move-object v0, p0
 
-    .line 3
     invoke-static/range {v0 .. v5}, Lcom/amap/api/col/l3/hl;->a(Landroid/content/Context;Lcom/amap/api/col/l3/gh;Ljava/lang/String;Ljava/lang/Class;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -124,7 +113,6 @@
 
     goto :goto_0
 
-    .line 4
     :catchall_0
     new-instance v0, Lcom/amap/api/col/l3/a;
 
@@ -133,7 +121,6 @@
     :goto_0
     if-nez v0, :cond_0
 
-    .line 5
     new-instance v0, Lcom/amap/api/col/l3/a;
 
     invoke-direct {v0, p0}, Lcom/amap/api/col/l3/a;-><init>(Landroid/content/Context;)V
@@ -147,7 +134,6 @@
 .method public addGeoFence(Lcom/amap/api/location/DPoint;FLjava/lang/String;)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -164,7 +150,6 @@
 
     const-string p3, "addGeoFence round"
 
-    .line 2
     invoke-static {p1, p2, p3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -173,7 +158,6 @@
 .method public addGeoFence(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 9
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -190,7 +174,6 @@
 
     const-string v0, "addGeoFence district"
 
-    .line 10
     invoke-static {p1, p2, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -199,7 +182,6 @@
 .method public addGeoFence(Ljava/lang/String;Ljava/lang/String;Lcom/amap/api/location/DPoint;FILjava/lang/String;)V
     .locals 7
 
-    .line 5
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -228,7 +210,6 @@
 
     const-string p3, "addGeoFence searche"
 
-    .line 6
     invoke-static {p1, p2, p3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -237,7 +218,6 @@
 .method public addGeoFence(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
     .locals 6
 
-    .line 7
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -264,7 +244,6 @@
 
     const-string p3, "addGeoFence searche"
 
-    .line 8
     invoke-static {p1, p2, p3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -283,7 +262,6 @@
         }
     .end annotation
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -300,7 +278,6 @@
 
     const-string v0, "addGeoFence polygon"
 
-    .line 4
     invoke-static {p1, p2, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -309,7 +286,6 @@
 .method public createPendingIntent(Ljava/lang/String;)Landroid/app/PendingIntent;
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -328,7 +304,6 @@
 
     const-string v1, "creatPendingIntent"
 
-    .line 2
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p1, 0x0
@@ -348,12 +323,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -372,7 +345,6 @@
 
     const-string v3, "getGeoFenceList"
 
-    .line 3
     invoke-static {v1, v2, v3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
@@ -382,7 +354,6 @@
 .method public isPause()Z
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -401,7 +372,6 @@
 
     const-string v2, "isPause"
 
-    .line 2
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x1
@@ -412,7 +382,6 @@
 .method public pauseGeoFence()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -429,7 +398,6 @@
 
     const-string v2, "pauseGeoFence"
 
-    .line 2
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -438,7 +406,6 @@
 .method public removeGeoFence()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -455,7 +422,6 @@
 
     const-string v2, "removeGeoFence"
 
-    .line 2
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -464,7 +430,6 @@
 .method public removeGeoFence(Lcom/amap/api/fence/GeoFence;)Z
     .locals 2
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -483,7 +448,6 @@
 
     const-string v1, "removeGeoFence1"
 
-    .line 4
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p1, 0x0
@@ -494,7 +458,6 @@
 .method public resumeGeoFence()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -511,7 +474,6 @@
 
     const-string v2, "resumeGeoFence"
 
-    .line 2
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -520,7 +482,6 @@
 .method public setActivateAction(I)V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -537,7 +498,6 @@
 
     const-string v1, "setActivatesAction"
 
-    .line 2
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -546,7 +506,6 @@
 .method public setGeoFenceAble(Ljava/lang/String;Z)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -563,7 +522,6 @@
 
     const-string v0, "setGeoFenceAble"
 
-    .line 2
     invoke-static {p1, p2, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -572,7 +530,6 @@
 .method public setGeoFenceListener(Lcom/amap/api/fence/GeoFenceListener;)V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/fence/GeoFenceClient;->b:Lcom/amap/api/fence/GeoFenceManagerBase;
 
@@ -589,7 +546,6 @@
 
     const-string v1, "setGeoFenceListener"
 
-    .line 2
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

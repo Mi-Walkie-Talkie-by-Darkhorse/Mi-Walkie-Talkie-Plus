@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/manager/c$a;
 .super Ljava/lang/Object;
-.source "ConnectivityMonitor.java"
 
 
 # annotations

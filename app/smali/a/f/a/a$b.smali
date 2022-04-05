@@ -1,6 +1,5 @@
 .class final La/f/a/a$b;
 .super Ljava/lang/Object;
-.source "LocalBroadcastManager.java"
 
 
 # annotations
@@ -41,13 +40,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, La/f/a/a$b;->a:Landroid/content/Intent;
 
-    .line 3
     iput-object p2, p0, La/f/a/a$b;->b:Ljava/util/ArrayList;
 
     return-void

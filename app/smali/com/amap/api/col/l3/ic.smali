@@ -1,6 +1,5 @@
 .class public abstract Lcom/amap/api/col/l3/ic;
 .super Ljava/lang/Object;
-.source "Request.java"
 
 
 # instance fields
@@ -15,20 +14,16 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0x4e20
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/ic;->h:I
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/ic;->i:I
 
     const/4 v0, 0x0
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/col/l3/ic;->j:Ljava/net/Proxy;
 
     return-void
@@ -51,7 +46,6 @@
 .method public final a(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/ic;->h:I
 
     return-void
@@ -60,7 +54,6 @@
 .method public final a(Ljava/net/Proxy;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/ic;->j:Ljava/net/Proxy;
 
     return-void
@@ -81,7 +74,6 @@
 .method public final b(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/ic;->i:I
 
     return-void
@@ -109,7 +101,6 @@
 .method protected final m()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/amap/api/col/l3/ic;->l()Ljava/lang/String;
 
     move-result-object v0

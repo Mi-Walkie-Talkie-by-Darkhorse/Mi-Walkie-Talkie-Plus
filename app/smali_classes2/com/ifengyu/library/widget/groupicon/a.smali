@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/library/widget/groupicon/a;
 .super Ljava/lang/Object;
-.source "NineGridImageViewAdapter.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$a;
 .super Ljava/lang/Object;
-.source "QMUIQQFaceCompiler.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler;Landroid/text/Spannable;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$a;->a:Landroid/text/Spannable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,14 +45,12 @@
 .method public a(Lcom/qmuiteam/qmui/span/d;Lcom/qmuiteam/qmui/span/d;)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$a;->a:Landroid/text/Spannable;
 
     invoke-interface {v0, p1}, Landroid/text/Spannable;->getSpanStart(Ljava/lang/Object;)I
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceCompiler$a;->a:Landroid/text/Spannable;
 
     invoke-interface {v0, p2}, Landroid/text/Spannable;->getSpanStart(Ljava/lang/Object;)I
@@ -83,7 +79,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/qmuiteam/qmui/span/d;
 
     check-cast p2, Lcom/qmuiteam/qmui/span/d;

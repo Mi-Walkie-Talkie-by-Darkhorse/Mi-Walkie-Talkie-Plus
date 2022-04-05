@@ -1,6 +1,5 @@
 .class synthetic Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesUtils$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations

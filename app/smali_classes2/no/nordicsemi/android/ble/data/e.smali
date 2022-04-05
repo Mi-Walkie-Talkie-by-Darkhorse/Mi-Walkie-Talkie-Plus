@@ -1,6 +1,5 @@
 .class public final Lno/nordicsemi/android/ble/data/e;
 .super Ljava/lang/Object;
-.source "DefaultMtuSplitter.java"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/data/c;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +37,6 @@
 
     mul-int p2, p2, p3
 
-    .line 1
     array-length v0, p1
 
     sub-int/2addr v0, p2
@@ -54,13 +51,11 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     new-array v0, p3, [B
 
     const/4 v1, 0x0
 
-    .line 3
     invoke-static {p1, p2, v0, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-object v0

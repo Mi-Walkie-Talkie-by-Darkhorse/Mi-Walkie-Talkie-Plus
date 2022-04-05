@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/core/listener/assist/ListenerAssist;
 .super Ljava/lang/Object;
-.source "ListenerAssist.java"
 
 
 # virtual methods

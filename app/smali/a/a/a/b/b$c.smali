@@ -1,6 +1,5 @@
 .class La/a/a/b/b$c;
 .super Ljava/lang/Object;
-.source "SafeIterableMap.java"
 
 # interfaces
 .implements Ljava/util/Map$Entry;
@@ -89,13 +88,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, La/a/a/b/b$c;->a:Ljava/lang/Object;
 
-    .line 3
     iput-object p2, p0, La/a/a/b/b$c;->b:Ljava/lang/Object;
 
     return-void
@@ -112,7 +108,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, La/a/a/b/b$c;
 
@@ -122,11 +117,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, La/a/a/b/b$c;
 
-    .line 3
     iget-object v1, p0, La/a/a/b/b$c;->a:Ljava/lang/Object;
 
     iget-object v3, p1, La/a/a/b/b$c;->a:Ljava/lang/Object;
@@ -167,7 +160,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/a/a/b/b$c;->a:Ljava/lang/Object;
 
     return-object v0
@@ -184,7 +176,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/a/a/b/b$c;->b:Ljava/lang/Object;
 
     return-object v0
@@ -193,7 +184,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, La/a/a/b/b$c;->a:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -219,7 +209,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "An entry modification is not supported"
@@ -232,7 +221,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

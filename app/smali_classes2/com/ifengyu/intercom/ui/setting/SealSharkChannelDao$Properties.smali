@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;
 .super Ljava/lang/Object;
-.source "SealSharkChannelDao.java"
 
 
 # annotations
@@ -50,7 +49,6 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    .line 1
     new-instance v6, Lorg/greenrobot/greendao/Property;
 
     const-class v2, Ljava/lang/Long;
@@ -69,7 +67,6 @@
 
     sput-object v6, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->Id:Lorg/greenrobot/greendao/Property;
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v9, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
@@ -88,7 +85,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->No:Lorg/greenrobot/greendao/Property;
 
-    .line 3
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
@@ -107,7 +103,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->Type:Lorg/greenrobot/greendao/Property;
 
-    .line 4
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v9, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
@@ -124,7 +119,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->TxPower:Lorg/greenrobot/greendao/Property;
 
-    .line 5
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
@@ -141,7 +135,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->RxFreq:Lorg/greenrobot/greendao/Property;
 
-    .line 6
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v9, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
@@ -158,7 +151,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->TxFreq:Lorg/greenrobot/greendao/Property;
 
-    .line 7
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     const-class v3, Ljava/lang/String;
@@ -175,7 +167,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->Name:Lorg/greenrobot/greendao/Property;
 
-    .line 8
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v9, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
@@ -192,7 +183,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->Sq:Lorg/greenrobot/greendao/Property;
 
-    .line 9
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
@@ -209,7 +199,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->Vox:Lorg/greenrobot/greendao/Property;
 
-    .line 10
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v9, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
@@ -226,7 +215,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->RxCss:Lorg/greenrobot/greendao/Property;
 
-    .line 11
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
@@ -243,7 +231,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->TxCss:Lorg/greenrobot/greendao/Property;
 
-    .line 12
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v9, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
@@ -260,7 +247,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->Elim:Lorg/greenrobot/greendao/Property;
 
-    .line 13
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
@@ -277,7 +263,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->Band:Lorg/greenrobot/greendao/Property;
 
-    .line 14
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v9, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
@@ -294,7 +279,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannelDao$Properties;->Polite:Lorg/greenrobot/greendao/Property;
 
-    .line 15
     new-instance v0, Lorg/greenrobot/greendao/Property;
 
     sget-object v3, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
@@ -317,7 +301,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

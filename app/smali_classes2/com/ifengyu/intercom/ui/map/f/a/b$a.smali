@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/ui/map/f/a/b$a;
 .super Ljava/lang/Object;
-.source "MyItemizedOverlayWithFocus.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;->values()[Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;
 
     move-result-object v0

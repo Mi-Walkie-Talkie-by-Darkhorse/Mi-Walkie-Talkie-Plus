@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/trace/LBSTraceBase;
 .super Ljava/lang/Object;
-.source "LBSTraceBase.java"
 
 
 # virtual methods

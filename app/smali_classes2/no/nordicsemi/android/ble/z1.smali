@@ -1,6 +1,5 @@
 .class interface abstract Lno/nordicsemi/android/ble/z1;
 .super Ljava/lang/Object;
-.source "CallbackHandler.java"
 
 
 # virtual methods

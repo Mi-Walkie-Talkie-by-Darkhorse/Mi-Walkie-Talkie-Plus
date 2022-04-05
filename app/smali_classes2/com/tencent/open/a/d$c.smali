@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/a/d$c;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,15 +33,12 @@
 .method public static b(Ljava/io/File;)Lcom/tencent/open/a/d$c;
     .locals 8
 
-    .line 3
     new-instance v0, Lcom/tencent/open/a/d$c;
 
     invoke-direct {v0}, Lcom/tencent/open/a/d$c;-><init>()V
 
-    .line 4
     invoke-virtual {v0, p0}, Lcom/tencent/open/a/d$c;->a(Ljava/io/File;)V
 
-    .line 5
     new-instance v1, Landroid/os/StatFs;
 
     invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
@@ -52,21 +47,18 @@
 
     invoke-direct {v1, p0}, Landroid/os/StatFs;-><init>(Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {v1}, Landroid/os/StatFs;->getBlockSize()I
 
     move-result p0
 
     int-to-long v2, p0
 
-    .line 7
     invoke-virtual {v1}, Landroid/os/StatFs;->getBlockCount()I
 
     move-result p0
 
     int-to-long v4, p0
 
-    .line 8
     invoke-virtual {v1}, Landroid/os/StatFs;->getAvailableBlocks()I
 
     move-result p0
@@ -75,12 +67,10 @@
 
     mul-long v4, v4, v2
 
-    .line 9
     invoke-virtual {v0, v4, v5}, Lcom/tencent/open/a/d$c;->a(J)V
 
     mul-long v6, v6, v2
 
-    .line 10
     invoke-virtual {v0, v6, v7}, Lcom/tencent/open/a/d$c;->b(J)V
 
     return-object v0
@@ -91,7 +81,6 @@
 .method public a()Ljava/io/File;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/open/a/d$c;->a:Ljava/io/File;
 
     return-object v0
@@ -100,7 +89,6 @@
 .method public a(J)V
     .locals 0
 
-    .line 3
     iput-wide p1, p0, Lcom/tencent/open/a/d$c;->b:J
 
     return-void
@@ -109,7 +97,6 @@
 .method public a(Ljava/io/File;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/tencent/open/a/d$c;->a:Ljava/io/File;
 
     return-void
@@ -118,7 +105,6 @@
 .method public b()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/tencent/open/a/d$c;->b:J
 
     return-wide v0
@@ -127,7 +113,6 @@
 .method public b(J)V
     .locals 0
 
-    .line 2
     iput-wide p1, p0, Lcom/tencent/open/a/d$c;->c:J
 
     return-void
@@ -136,7 +121,6 @@
 .method public c()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/tencent/open/a/d$c;->c:J
 
     return-wide v0
@@ -149,7 +133,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     invoke-virtual {p0}, Lcom/tencent/open/a/d$c;->a()Ljava/io/File;
 
     move-result-object v1

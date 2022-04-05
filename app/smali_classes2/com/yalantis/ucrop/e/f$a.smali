@@ -1,6 +1,5 @@
 .class Lcom/yalantis/ucrop/e/f$a;
 .super Ljava/lang/Object;
-.source "ImageHeaderParser.java"
 
 
 # annotations
@@ -22,22 +21,18 @@
 .method public constructor <init>([BI)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object p1
 
     sget-object v0, Ljava/nio/ByteOrder;->BIG_ENDIAN:Ljava/nio/ByteOrder;
 
-    .line 3
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p1, p2}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
     move-result-object p1
@@ -54,7 +49,6 @@
 .method public a()I
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/yalantis/ucrop/e/f$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
@@ -67,7 +61,6 @@
 .method public a(I)S
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/yalantis/ucrop/e/f$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->getShort(I)S
@@ -80,7 +73,6 @@
 .method public a(Ljava/nio/ByteOrder;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/e/f$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
@@ -91,7 +83,6 @@
 .method public b(I)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/yalantis/ucrop/e/f$a;->a:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->getInt(I)I

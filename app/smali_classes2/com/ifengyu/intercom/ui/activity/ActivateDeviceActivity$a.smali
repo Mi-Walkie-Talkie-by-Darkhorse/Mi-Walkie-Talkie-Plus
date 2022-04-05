@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$a;
 .super Ljava/lang/Object;
-.source "ActivateDeviceActivity.java"
 
 # interfaces
 .implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +38,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 
     iget-object p2, p1, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->mBtnActivate:Landroid/widget/Button;
@@ -59,7 +56,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 

@@ -1,6 +1,5 @@
 .class Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$SUPPORTED_TYPE;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method private constructor <init>(Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$SUPPORTED_TYPE;->this$0:Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

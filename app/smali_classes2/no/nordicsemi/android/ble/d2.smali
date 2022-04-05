@@ -1,6 +1,5 @@
 .class public Lno/nordicsemi/android/ble/d2;
 .super Lno/nordicsemi/android/ble/p2;
-.source "DisconnectRequest.java"
 
 
 # direct methods
@@ -11,7 +10,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lno/nordicsemi/android/ble/p2;-><init>(Lno/nordicsemi/android/ble/Request$Type;)V
 
     return-void
@@ -28,7 +26,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/d2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/d2;
 
     return-object p0
@@ -43,7 +40,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 3
     invoke-super {p0, p1}, Lno/nordicsemi/android/ble/p2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/p2;
 
     return-object p0
@@ -58,7 +54,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/d2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/d2;
 
     return-object p0

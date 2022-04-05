@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/QMUIAppBarLayout;
 .super Lcom/google/android/material/appbar/AppBarLayout;
-.source "QMUIAppBarLayout.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/c;
@@ -10,7 +9,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/appbar/AppBarLayout;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -19,7 +17,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/appbar/AppBarLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -30,7 +27,6 @@
 .method public a(Landroid/graphics/Rect;)Z
     .locals 7
 
-    .line 1
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->p(Landroid/view/View;)Z
 
     move-result v0
@@ -41,7 +37,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     const-class v2, Lcom/google/android/material/appbar/AppBarLayout;
 
@@ -55,7 +50,6 @@
 
     goto :goto_0
 
-    .line 3
     :catch_0
     :try_start_1
     const-class v2, Lcom/google/android/material/appbar/AppBarLayout;
@@ -78,10 +72,8 @@
 
     if-eqz v2, :cond_0
 
-    .line 4
     invoke-virtual {v2, v3}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 5
     :try_start_2
     new-instance v4, Lcom/qmuiteam/qmui/widget/QMUIAppBarLayout$a;
 
@@ -96,7 +88,6 @@
     :catch_2
     nop
 
-    .line 6
     :cond_0
     :goto_1
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getChildCount()I
@@ -105,12 +96,10 @@
 
     if-ge v1, v0, :cond_4
 
-    .line 7
     invoke-virtual {p0, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 8
     invoke-static {v0}, Lcom/qmuiteam/qmui/util/o;->c(Landroid/view/View;)Z
 
     move-result v2
@@ -119,7 +108,6 @@
 
     goto :goto_2
 
-    .line 9
     :cond_1
     invoke-static {v0}, Lcom/qmuiteam/qmui/util/o;->b(Landroid/view/View;)Z
 
@@ -127,7 +115,6 @@
 
     if-nez v2, :cond_2
 
-    .line 10
     iget v2, p1, Landroid/graphics/Rect;->left:I
 
     iget v4, p1, Landroid/graphics/Rect;->top:I
@@ -140,13 +127,11 @@
 
     goto :goto_2
 
-    .line 11
     :cond_2
     instance-of v2, v0, Lcom/qmuiteam/qmui/widget/c;
 
     if-eqz v2, :cond_3
 
-    .line 12
     check-cast v0, Lcom/qmuiteam/qmui/widget/c;
 
     invoke-interface {v0, p1}, Lcom/qmuiteam/qmui/widget/c;->a(Landroid/graphics/Rect;)Z

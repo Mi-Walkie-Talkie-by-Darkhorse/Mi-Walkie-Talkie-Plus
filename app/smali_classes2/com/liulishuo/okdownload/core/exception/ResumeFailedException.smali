@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/exception/ResumeFailedException;
 .super Ljava/io/IOException;
-.source "ResumeFailedException.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method public constructor <init>(Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -28,7 +26,6 @@
 
     invoke-direct {p0, v0}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/exception/ResumeFailedException;->resumeFailedCause:Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;
 
     return-void
@@ -39,7 +36,6 @@
 .method public getResumeFailedCause()Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/exception/ResumeFailedException;->resumeFailedCause:Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;
 
     return-object v0

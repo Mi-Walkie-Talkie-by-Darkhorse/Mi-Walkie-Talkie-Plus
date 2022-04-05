@@ -1,13 +1,11 @@
 .class public Lcom/sina/weibo/sdk/api/c/h;
 .super Ljava/lang/Object;
-.source "WeiboDownloader.java"
 
 
 # direct methods
 .method public static a(Landroid/content/Context;Lcom/sina/weibo/sdk/api/c/c;)Landroid/app/Dialog;
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -37,23 +35,19 @@
 
     const-string v3, "\u4ee5\u540e\u518d\u8bf4"
 
-    .line 2
     :goto_0
     new-instance v4, Landroid/app/AlertDialog$Builder;
 
     invoke-direct {v4, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    .line 3
     invoke-virtual {v4, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    .line 4
     invoke-virtual {v1, v0}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    .line 5
     new-instance v1, Lcom/sina/weibo/sdk/api/c/h$a;
 
     invoke-direct {v1, p0}, Lcom/sina/weibo/sdk/api/c/h$a;-><init>(Landroid/content/Context;)V
@@ -62,7 +56,6 @@
 
     move-result-object p0
 
-    .line 6
     new-instance v0, Lcom/sina/weibo/sdk/api/c/h$b;
 
     invoke-direct {v0, p1}, Lcom/sina/weibo/sdk/api/c/h$b;-><init>(Lcom/sina/weibo/sdk/api/c/c;)V
@@ -71,7 +64,6 @@
 
     move-result-object p0
 
-    .line 7
     invoke-virtual {p0}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
 
     move-result-object p0
@@ -82,7 +74,6 @@
 .method static synthetic a(Landroid/content/Context;)V
     .locals 0
 
-    .line 8
     invoke-static {p0}, Lcom/sina/weibo/sdk/api/c/h;->b(Landroid/content/Context;)V
 
     return-void
@@ -91,32 +82,26 @@
 .method private static b(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     const-string v1, "android.intent.action.VIEW"
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     const/high16 v1, 0x10000000
 
-    .line 3
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setFlags(I)Landroid/content/Intent;
 
     const-string v1, "http://app.sina.cn/appdetail.php?appID=84560"
 
-    .line 4
     invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 5
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
-    .line 6
     :try_start_0
     invoke-virtual {p0, v0}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     :try_end_0
@@ -127,7 +112,6 @@
     :catch_0
     move-exception p0
 
-    .line 7
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     :goto_0

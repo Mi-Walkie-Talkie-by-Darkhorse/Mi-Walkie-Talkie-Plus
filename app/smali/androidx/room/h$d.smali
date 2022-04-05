@@ -1,6 +1,5 @@
 .class Landroidx/room/h$d;
 .super Ljava/lang/Object;
-.source "MultiInstanceInvalidationClient.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/room/h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/room/h$d;->a:Landroidx/room/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/room/h$d;->a:Landroidx/room/h;
 
     iget-object v1, v0, Landroidx/room/h;->d:Landroidx/room/g;

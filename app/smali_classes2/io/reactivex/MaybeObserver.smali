@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/MaybeObserver;
 .super Ljava/lang/Object;
-.source "MaybeObserver.java"
 
 
 # annotations

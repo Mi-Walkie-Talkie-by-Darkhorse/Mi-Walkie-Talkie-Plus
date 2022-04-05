@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/hh$1;
 .super Ljava/lang/Object;
-.source "DexFileManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/hh$1;->a:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/hh$1;->b:Ljava/lang/String;
@@ -46,44 +44,37 @@
 .method public final run()V
     .locals 5
 
-    .line 1
     :try_start_0
     new-instance v0, Lcom/amap/api/col/l3/gz;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/hh$1;->a:Landroid/content/Context;
 
-    .line 2
     invoke-static {}, Lcom/amap/api/col/l3/hj;->a()Lcom/amap/api/col/l3/hj;
 
     move-result-object v2
 
     invoke-direct {v0, v1, v2}, Lcom/amap/api/col/l3/gz;-><init>(Landroid/content/Context;Lcom/amap/api/col/l3/gy;)V
 
-    .line 3
     iget-object v1, p0, Lcom/amap/api/col/l3/hh$1;->b:Ljava/lang/String;
 
-    .line 4
     invoke-static {v1}, Lcom/amap/api/col/l3/hk;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     const-class v2, Lcom/amap/api/col/l3/hk;
 
-    .line 5
     invoke-virtual {v0, v1, v2}, Lcom/amap/api/col/l3/gz;->b(Ljava/lang/String;Ljava/lang/Class;)Ljava/util/List;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    .line 6
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result v2
 
     if-lez v2, :cond_1
 
-    .line 7
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -102,12 +93,10 @@
 
     check-cast v2, Lcom/amap/api/col/l3/hk;
 
-    .line 8
     invoke-virtual {v2}, Lcom/amap/api/col/l3/hk;->d()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 9
     iget-object v4, p0, Lcom/amap/api/col/l3/hh$1;->c:Ljava/lang/String;
 
     invoke-virtual {v4, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
@@ -116,12 +105,10 @@
 
     if-nez v3, :cond_0
 
-    .line 10
     invoke-virtual {v2}, Lcom/amap/api/col/l3/hk;->a()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 11
     iget-object v3, p0, Lcom/amap/api/col/l3/hh$1;->a:Landroid/content/Context;
 
     invoke-static {v3, v0, v2}, Lcom/amap/api/col/l3/hh;->b(Landroid/content/Context;Lcom/amap/api/col/l3/gz;Ljava/lang/String;)V
@@ -140,7 +127,6 @@
 
     const-string v2, "clearUnSuitableV"
 
-    .line 12
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

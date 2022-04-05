@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/search/interfaces/OnSearchResultListener;
 .super Ljava/lang/Object;
-.source "OnSearchResultListener.java"
 
 
 # virtual methods

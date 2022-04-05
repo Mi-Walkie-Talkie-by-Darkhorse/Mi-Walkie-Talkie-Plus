@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;
 .super Ljava/lang/Object;
-.source "DownloadUrlConnection.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +33,6 @@
 .method static synthetic access$000(Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;)Ljava/net/Proxy;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;->proxy:Ljava/net/Proxy;
 
     return-object p0
@@ -44,7 +41,6 @@
 .method static synthetic access$100(Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;)Ljava/lang/Integer;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;->readTimeout:Ljava/lang/Integer;
 
     return-object p0
@@ -53,7 +49,6 @@
 .method static synthetic access$200(Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;)Ljava/lang/Integer;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;->connectTimeout:Ljava/lang/Integer;
 
     return-object p0
@@ -64,7 +59,6 @@
 .method public connectTimeout(I)Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -77,7 +71,6 @@
 .method public proxy(Ljava/net/Proxy;)Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;->proxy:Ljava/net/Proxy;
 
     return-object p0
@@ -86,7 +79,6 @@
 .method public readTimeout(I)Lcom/liulishuo/okdownload/core/connection/DownloadUrlConnection$Configuration;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1

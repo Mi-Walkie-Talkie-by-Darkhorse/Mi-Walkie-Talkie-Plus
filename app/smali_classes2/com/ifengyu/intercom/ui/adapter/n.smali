@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/adapter/n;
 .super Landroidx/recyclerview/widget/RecyclerView$g;
-.source "SelectDeviceAdapter.java"
 
 
 # annotations
@@ -69,25 +68,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$g;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->c:I
 
-    .line 3
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n;->f:Landroid/view/LayoutInflater;
 
-    .line 4
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/n;->g:Ljava/util/List;
 
-    .line 5
     iput-object p3, p0, Lcom/ifengyu/intercom/ui/adapter/n;->h:Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     return-void
@@ -96,7 +90,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/adapter/n;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->c:I
 
     return p0
@@ -105,7 +98,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/adapter/n;I)I
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/adapter/n;->c:I
 
     return p1
@@ -114,7 +106,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/adapter/n;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->g:Ljava/util/List;
 
     return-object p0
@@ -123,7 +114,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/adapter/n;)Lcom/ifengyu/intercom/ui/adapter/n$d;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->e:Lcom/ifengyu/intercom/ui/adapter/n$d;
 
     return-object p0
@@ -132,7 +122,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/adapter/n;)Ljava/util/ArrayList;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->a:Ljava/util/ArrayList;
 
     return-object p0
@@ -151,7 +140,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->g:Ljava/util/List;
 
     return-object v0
@@ -160,7 +148,6 @@
 .method public a(Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
     .locals 0
 
-    .line 51
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n;->h:Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     return-void
@@ -169,7 +156,6 @@
 .method public a(Lcom/ifengyu/intercom/ui/adapter/n$e;I)V
     .locals 11
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->g:Ljava/util/List;
 
     invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -180,7 +166,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->d:Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
-    .line 5
     iget-object v1, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->b:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->d()Ljava/lang/String;
@@ -189,7 +174,6 @@
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->d:Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->c()I
@@ -204,7 +188,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 7
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->b:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
@@ -215,14 +198,12 @@
 
     move-result-object v0
 
-    .line 8
     invoke-virtual {v0}, Lno/nordicsemi/android/ble/u1;->e()Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v4
 
     if-eqz v4, :cond_0
 
-    .line 9
     invoke-virtual {v4}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object v4
@@ -232,7 +213,6 @@
     :cond_0
     move-object v4, v2
 
-    .line 10
     :goto_0
     invoke-virtual {v0}, Lno/nordicsemi/android/ble/u1;->i()Z
 
@@ -240,18 +220,15 @@
 
     goto :goto_1
 
-    .line 11
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->h:Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     if-eqz v0, :cond_2
 
-    .line 12
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->a()Ljava/lang/String;
 
     move-result-object v4
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->h:Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->f()Z
@@ -265,7 +242,6 @@
 
     const/4 v0, 0x0
 
-    .line 14
     :goto_1
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/adapter/n;->d:Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
@@ -289,12 +265,10 @@
 
     if-eqz v4, :cond_7
 
-    .line 15
     iget-object v4, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->c:Landroid/widget/TextView;
 
     if-eqz v0, :cond_3
 
-    .line 16
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v7
@@ -310,7 +284,6 @@
     :cond_3
     iget-object v10, p0, Lcom/ifengyu/intercom/ui/adapter/n;->g:Ljava/util/List;
 
-    .line 17
     invoke-interface {v10}, Ljava/util/List;->size()I
 
     move-result v10
@@ -336,11 +309,9 @@
 
     move-result-object v7
 
-    .line 18
     :goto_2
     invoke-virtual {v4, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 19
     iget-object v4, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->c:Landroid/widget/TextView;
 
     if-eqz v0, :cond_5
@@ -356,7 +327,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 20
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->a:Landroid/widget/LinearLayout;
 
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->e()Landroid/content/res/Resources;
@@ -373,7 +343,6 @@
 
     goto :goto_4
 
-    .line 21
     :cond_6
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->a:Landroid/widget/LinearLayout;
 
@@ -389,7 +358,6 @@
 
     goto :goto_4
 
-    .line 22
     :cond_7
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->c:Landroid/widget/TextView;
 
@@ -423,7 +391,6 @@
     :goto_3
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 23
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->c:Landroid/widget/TextView;
 
     invoke-static {v6}, Lcom/ifengyu/intercom/i/k0;->a(I)I
@@ -432,7 +399,6 @@
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 24
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->a:Landroid/widget/LinearLayout;
 
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->e()Landroid/content/res/Resources;
@@ -445,7 +411,6 @@
 
     invoke-virtual {v0, v4}, Landroid/widget/LinearLayout;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 25
     :goto_4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->d:Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
@@ -473,7 +438,6 @@
 
     goto/16 :goto_6
 
-    .line 26
     :cond_9
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->d:Landroid/widget/TextView;
 
@@ -505,7 +469,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 27
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->d:Lcom/ifengyu/intercom/node/ConnectionConfiguration;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->b()I
@@ -514,7 +477,6 @@
 
     if-ne v0, v9, :cond_a
 
-    .line 28
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->e:Landroid/widget/ImageView;
 
     const v1, 0x7f0800da
@@ -523,7 +485,6 @@
 
     goto/16 :goto_6
 
-    .line 29
     :cond_a
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->e:Landroid/widget/ImageView;
 
@@ -533,7 +494,6 @@
 
     goto :goto_6
 
-    .line 30
     :cond_b
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->d:Landroid/widget/TextView;
 
@@ -565,7 +525,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 31
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->e:Landroid/widget/ImageView;
 
     const v1, 0x7f0800dc
@@ -574,7 +533,6 @@
 
     goto :goto_6
 
-    .line 32
     :cond_c
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->d:Landroid/widget/TextView;
 
@@ -606,7 +564,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 33
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->e:Landroid/widget/ImageView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/n;->d:Lcom/ifengyu/intercom/node/ConnectionConfiguration;
@@ -629,7 +586,6 @@
 
     goto :goto_6
 
-    .line 34
     :cond_e
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->d:Landroid/widget/TextView;
 
@@ -637,14 +593,12 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
-    .line 35
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->e:Landroid/widget/ImageView;
 
     const v1, 0x7f0800d9
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setImageResource(I)V
 
-    .line 36
     :goto_6
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->b:Z
 
@@ -654,37 +608,30 @@
 
     if-eqz v0, :cond_f
 
-    .line 37
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->e:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 38
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->f:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     invoke-virtual {v0, v3}, Landroid/widget/CheckBox;->setVisibility(I)V
 
-    .line 39
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setClickable(Z)V
 
-    .line 40
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 41
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 42
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->f:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     invoke-virtual {v0, v2}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
-    .line 43
     iget-object v0, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->f:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/n;->a:Ljava/util/ArrayList;
@@ -701,7 +648,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 44
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->f:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/adapter/n$a;
@@ -712,23 +658,19 @@
 
     goto :goto_7
 
-    .line 45
     :cond_f
     iget-object p2, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->e:Landroid/widget/ImageView;
 
     invoke-virtual {p2, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 46
     iget-object p2, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->f:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     invoke-virtual {p2, v1}, Landroid/widget/CheckBox;->setVisibility(I)V
 
-    .line 47
     iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;
 
     invoke-virtual {p2, v9}, Landroid/view/View;->setClickable(Z)V
 
-    .line 48
     iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/adapter/n$b;
@@ -737,7 +679,6 @@
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 49
     iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/adapter/n$c;
@@ -746,7 +687,6 @@
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
-    .line 50
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/adapter/n$e;->f:Landroidx/appcompat/widget/AppCompatCheckBox;
 
     invoke-virtual {p1, v2}, Landroid/widget/CheckBox;->setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
@@ -766,7 +706,6 @@
         }
     .end annotation
 
-    .line 52
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n;->a:Ljava/util/ArrayList;
 
     return-void
@@ -775,12 +714,10 @@
 .method public a(Z)V
     .locals 0
 
-    .line 53
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/adapter/n;->b:Z
 
     const/4 p1, 0x0
 
-    .line 54
     iput p1, p0, Lcom/ifengyu/intercom/ui/adapter/n;->c:I
 
     return-void
@@ -789,7 +726,6 @@
 .method public getItemCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->g:Ljava/util/List;
 
     if-nez v0, :cond_0
@@ -810,7 +746,6 @@
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$y;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/ui/adapter/n$e;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/adapter/n;->a(Lcom/ifengyu/intercom/ui/adapter/n$e;I)V
@@ -821,7 +756,6 @@
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$y;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/adapter/n;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/ifengyu/intercom/ui/adapter/n$e;
 
     move-result-object p1
@@ -832,7 +766,6 @@
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/ifengyu/intercom/ui/adapter/n$e;
     .locals 3
 
-    .line 2
     new-instance p2, Lcom/ifengyu/intercom/ui/adapter/n$e;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/n;->f:Landroid/view/LayoutInflater;
@@ -853,7 +786,6 @@
 .method public setOnItemClickListener(Lcom/ifengyu/intercom/ui/adapter/n$d;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/n;->e:Lcom/ifengyu/intercom/ui/adapter/n$d;
 
     return-void

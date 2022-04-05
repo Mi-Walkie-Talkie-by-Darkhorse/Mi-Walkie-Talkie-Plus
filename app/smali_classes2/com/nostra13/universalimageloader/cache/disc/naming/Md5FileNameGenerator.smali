@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/cache/disc/naming/Md5FileNameGenerator;
 .super Ljava/lang/Object;
-.source "Md5FileNameGenerator.java"
 
 # interfaces
 .implements Lcom/nostra13/universalimageloader/cache/disc/naming/FileNameGenerator;
@@ -16,7 +15,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,15 +26,12 @@
     :try_start_0
     const-string v0, "MD5"
 
-    .line 1
     invoke-static {v0}, Ljava/security/MessageDigest;->getInstance(Ljava/lang/String;)Ljava/security/MessageDigest;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/security/MessageDigest;->update([B)V
 
-    .line 3
     invoke-virtual {v0}, Ljava/security/MessageDigest;->digest()[B
 
     move-result-object p1
@@ -48,7 +43,6 @@
     :catch_0
     move-exception p1
 
-    .line 4
     invoke-static {p1}, Lcom/nostra13/universalimageloader/utils/L;->e(Ljava/lang/Throwable;)V
 
     const/4 p1, 0x0
@@ -62,7 +56,6 @@
 .method public generate(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/String;->getBytes()[B
 
     move-result-object p1
@@ -71,7 +64,6 @@
 
     move-result-object p1
 
-    .line 2
     new-instance v0, Ljava/math/BigInteger;
 
     invoke-direct {v0, p1}, Ljava/math/BigInteger;-><init>([B)V
@@ -82,7 +74,6 @@
 
     const/16 v0, 0x24
 
-    .line 3
     invoke-virtual {p1, v0}, Ljava/math/BigInteger;->toString(I)Ljava/lang/String;
 
     move-result-object p1

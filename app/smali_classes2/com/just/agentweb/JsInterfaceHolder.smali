@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/JsInterfaceHolder;
 .super Ljava/lang/Object;
-.source "JsInterfaceHolder.java"
 
 
 # virtual methods

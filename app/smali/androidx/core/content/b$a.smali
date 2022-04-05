@@ -1,6 +1,5 @@
 .class final Landroidx/core/content/b$a;
 .super Ljava/lang/Object;
-.source "ContextCompat.java"
 
 
 # annotations
@@ -32,21 +31,18 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x16
 
     if-lt v0, v1, :cond_0
 
-    .line 3
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/telephony/SubscriptionManager;
@@ -55,7 +51,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/usage/UsageStatsManager;
@@ -64,7 +59,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
     :cond_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -72,7 +66,6 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 6
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/appwidget/AppWidgetManager;
@@ -81,7 +74,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/os/BatteryManager;
@@ -90,7 +82,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/hardware/camera2/CameraManager;
@@ -99,7 +90,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 9
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/job/JobScheduler;
@@ -108,7 +98,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/content/pm/LauncherApps;
@@ -117,7 +106,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/media/projection/MediaProjectionManager;
@@ -126,7 +114,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/media/session/MediaSessionManager;
@@ -135,7 +122,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 13
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/content/RestrictionsManager;
@@ -144,7 +130,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 14
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/telecom/TelecomManager;
@@ -153,7 +138,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 15
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/media/tv/TvInputManager;
@@ -162,7 +146,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 16
     :cond_1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -170,7 +153,6 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 17
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/AppOpsManager;
@@ -179,7 +161,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 18
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/view/accessibility/CaptioningManager;
@@ -188,7 +169,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 19
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/hardware/ConsumerIrManager;
@@ -197,7 +177,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 20
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/print/PrintManager;
@@ -206,7 +185,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 21
     :cond_2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -214,7 +192,6 @@
 
     if-lt v0, v1, :cond_3
 
-    .line 22
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/bluetooth/BluetoothManager;
@@ -223,7 +200,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 23
     :cond_3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -231,7 +207,6 @@
 
     if-lt v0, v1, :cond_4
 
-    .line 24
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/hardware/display/DisplayManager;
@@ -240,7 +215,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 25
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/os/UserManager;
@@ -249,7 +223,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 26
     :cond_4
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -257,7 +230,6 @@
 
     if-lt v0, v1, :cond_5
 
-    .line 27
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/hardware/input/InputManager;
@@ -266,7 +238,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 28
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/media/MediaRouter;
@@ -275,7 +246,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 29
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/net/nsd/NsdManager;
@@ -284,7 +254,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 30
     :cond_5
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
@@ -294,7 +263,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 31
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/accounts/AccountManager;
@@ -303,7 +271,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 32
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/ActivityManager;
@@ -312,7 +279,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 33
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/AlarmManager;
@@ -321,7 +287,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 34
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/media/AudioManager;
@@ -330,7 +295,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 35
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/content/ClipboardManager;
@@ -339,7 +303,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 36
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/net/ConnectivityManager;
@@ -348,7 +311,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 37
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/admin/DevicePolicyManager;
@@ -357,7 +319,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 38
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/DownloadManager;
@@ -366,7 +327,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 39
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/os/DropBoxManager;
@@ -375,7 +335,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 40
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/view/inputmethod/InputMethodManager;
@@ -384,7 +343,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 41
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/KeyguardManager;
@@ -393,7 +351,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 42
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/view/LayoutInflater;
@@ -402,7 +359,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 43
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/location/LocationManager;
@@ -411,7 +367,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 44
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/nfc/NfcManager;
@@ -420,7 +375,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 45
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/NotificationManager;
@@ -429,7 +383,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 46
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/os/PowerManager;
@@ -438,7 +391,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 47
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/SearchManager;
@@ -447,7 +399,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 48
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/hardware/SensorManager;
@@ -456,7 +407,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 49
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/os/storage/StorageManager;
@@ -465,7 +415,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 50
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/telephony/TelephonyManager;
@@ -474,7 +423,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 51
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/view/textservice/TextServicesManager;
@@ -483,7 +431,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 52
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/UiModeManager;
@@ -492,7 +439,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 53
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/hardware/usb/UsbManager;
@@ -501,7 +447,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 54
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/os/Vibrator;
@@ -510,7 +455,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 55
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/app/WallpaperManager;
@@ -519,7 +463,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 56
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/net/wifi/p2p/WifiP2pManager;
@@ -528,7 +471,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 57
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/net/wifi/WifiManager;
@@ -537,7 +479,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 58
     sget-object v0, Landroidx/core/content/b$a;->a:Ljava/util/HashMap;
 
     const-class v1, Landroid/view/WindowManager;

@@ -1,6 +1,5 @@
 .class public final enum Lcom/github/mikephil/charting/components/LimitLine$LimitLabelPosition;
 .super Ljava/lang/Enum;
-.source "LimitLine.java"
 
 
 # annotations
@@ -38,7 +37,6 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 1
     new-instance v0, Lcom/github/mikephil/charting/components/LimitLine$LimitLabelPosition;
 
     const/4 v1, 0x0
@@ -83,7 +81,6 @@
 
     new-array v5, v5, [Lcom/github/mikephil/charting/components/LimitLine$LimitLabelPosition;
 
-    .line 2
     sget-object v6, Lcom/github/mikephil/charting/components/LimitLine$LimitLabelPosition;->a:Lcom/github/mikephil/charting/components/LimitLine$LimitLabelPosition;
 
     aput-object v6, v5, v1
@@ -111,7 +108,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -120,7 +116,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/github/mikephil/charting/components/LimitLine$LimitLabelPosition;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/github/mikephil/charting/components/LimitLine$LimitLabelPosition;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -135,7 +130,6 @@
 .method public static values()[Lcom/github/mikephil/charting/components/LimitLine$LimitLabelPosition;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/github/mikephil/charting/components/LimitLine$LimitLabelPosition;->e:[Lcom/github/mikephil/charting/components/LimitLine$LimitLabelPosition;
 
     invoke-virtual {v0}, [Lcom/github/mikephil/charting/components/LimitLine$LimitLabelPosition;->clone()Ljava/lang/Object;

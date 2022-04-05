@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/internal/fuseable/HasUpstreamSingleSource;
 .super Ljava/lang/Object;
-.source "HasUpstreamSingleSource.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/lh;
 .super Ljava/lang/Object;
-.source "Reflect.java"
 
 
 # direct methods

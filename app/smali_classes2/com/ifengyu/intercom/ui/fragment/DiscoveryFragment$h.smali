@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$h;
 .super Lcom/ifengyu/intercom/g/d/c;
-.source "DiscoveryFragment.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$h;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/c;-><init>()V
@@ -35,14 +33,12 @@
 .method public a(Lcom/ifengyu/intercom/bean/DiscoverResult;I)V
     .locals 3
 
-    .line 2
     iget-object p2, p1, Lcom/ifengyu/intercom/bean/DiscoverResult;->items:Ljava/util/List;
 
     invoke-interface {p2}, Ljava/util/List;->size()I
 
     move-result p2
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$h;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->b(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Ljava/util/ArrayList;
@@ -56,7 +52,6 @@
     :goto_0
     if-ge v0, p2, :cond_0
 
-    .line 4
     iget-object v1, p1, Lcom/ifengyu/intercom/bean/DiscoverResult;->items:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -65,7 +60,6 @@
 
     check-cast v1, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;
 
-    .line 5
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$h;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->b(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Ljava/util/ArrayList;
@@ -78,7 +72,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$h;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
@@ -94,7 +87,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/adapter/c;->b(Ljava/util/ArrayList;)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$h;->b:Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;->c(Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment;)Lcom/ifengyu/intercom/ui/adapter/c;
@@ -103,7 +95,6 @@
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyDataSetChanged()V
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/intercom/network/d/e;->b()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
@@ -120,7 +111,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/bean/DiscoverResult;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/fragment/DiscoveryFragment$h;->a(Lcom/ifengyu/intercom/bean/DiscoverResult;I)V

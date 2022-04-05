@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/hm$a;
 .super Ljava/lang/Object;
-.source "LoaderFactory.java"
 
 
 # annotations
@@ -26,17 +25,14 @@
 .method constructor <init>(Lcom/amap/api/col/l3/hm;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/hm$a;->c:Lcom/amap/api/col/l3/hm;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 2
     iput-boolean p1, p0, Lcom/amap/api/col/l3/hm$a;->a:Z
 
-    .line 3
     iput-boolean p1, p0, Lcom/amap/api/col/l3/hm$a;->b:Z
 
     return-void

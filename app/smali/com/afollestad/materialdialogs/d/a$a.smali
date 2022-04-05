@@ -1,6 +1,5 @@
 .class final Lcom/afollestad/materialdialogs/d/a$a;
 .super Ljava/lang/Object;
-.source "DialogUtils.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/afollestad/materialdialogs/MaterialDialog;Lcom/afollestad/materialdialogs/MaterialDialog$d;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/afollestad/materialdialogs/d/a$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
     iput-object p2, p0, Lcom/afollestad/materialdialogs/d/a$a;->b:Lcom/afollestad/materialdialogs/MaterialDialog$d;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/d/a$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
     invoke-virtual {v0}, Lcom/afollestad/materialdialogs/MaterialDialog;->d()Landroid/widget/EditText;
@@ -51,10 +48,8 @@
 
     invoke-virtual {v0}, Landroid/widget/EditText;->requestFocus()Z
 
-    .line 2
     iget-object v0, p0, Lcom/afollestad/materialdialogs/d/a$a;->b:Lcom/afollestad/materialdialogs/MaterialDialog$d;
 
-    .line 3
     invoke-virtual {v0}, Lcom/afollestad/materialdialogs/MaterialDialog$d;->b()Landroid/content/Context;
 
     move-result-object v0
@@ -69,7 +64,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v1, p0, Lcom/afollestad/materialdialogs/d/a$a;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
     invoke-virtual {v1}, Lcom/afollestad/materialdialogs/MaterialDialog;->d()Landroid/widget/EditText;

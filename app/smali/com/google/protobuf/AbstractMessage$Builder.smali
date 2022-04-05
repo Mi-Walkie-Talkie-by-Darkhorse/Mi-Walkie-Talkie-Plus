@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/protobuf/AbstractMessage$Builder;
 .super Lcom/google/protobuf/AbstractMessageLite$Builder;
-.source "AbstractMessage.java"
 
 # interfaces
 .implements Lcom/google/protobuf/Message$Builder;
@@ -32,7 +31,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/AbstractMessageLite$Builder;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method protected static newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/UninitializedMessageException;
 
     invoke-static {p0}, Lcom/google/protobuf/MessageReflection;->findMissingFields(Lcom/google/protobuf/MessageOrBuilder;)Ljava/util/List;
@@ -63,7 +60,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-interface {p0}, Lcom/google/protobuf/MessageOrBuilder;->getAllFields()Ljava/util/Map;
 
     move-result-object v0
@@ -89,7 +85,6 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 4
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v1
@@ -107,7 +102,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/AbstractMessage$Builder;->clear()Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object v0
@@ -118,7 +112,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/AbstractMessage$Builder;->clear()Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object v0
@@ -136,7 +129,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "clearOneof() is not implemented."
@@ -149,7 +141,6 @@
 .method public bridge synthetic clearOneof(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/google/protobuf/Message$Builder;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->clearOneof(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -168,7 +159,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/AbstractMessageLite$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/AbstractMessage$Builder;->clone()Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object v0
@@ -179,7 +169,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/AbstractMessage$Builder;->clone()Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object v0
@@ -190,7 +179,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/AbstractMessage$Builder;->clone()Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object v0
@@ -206,7 +194,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/protobuf/AbstractMessage$Builder;->clone()Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object v0
@@ -225,7 +212,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/protobuf/MessageReflection;->findMissingFields(Lcom/google/protobuf/MessageOrBuilder;)Ljava/util/List;
 
     move-result-object v0
@@ -236,7 +222,6 @@
 .method public getFieldBuilder(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "getFieldBuilder() called on an unsupported message type."
@@ -249,7 +234,6 @@
 .method public getInitializationErrorString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/AbstractMessage$Builder;->findInitializationErrors()Ljava/util/List;
 
     move-result-object v0
@@ -264,7 +248,6 @@
 .method public getOneofFieldDescriptor(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Lcom/google/protobuf/Descriptors$FieldDescriptor;
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "getOneofFieldDescriptor() is not implemented."
@@ -277,7 +260,6 @@
 .method public hasOneof(Lcom/google/protobuf/Descriptors$OneofDescriptor;)Z
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "hasOneof() is not implemented."
@@ -295,7 +277,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/protobuf/AbstractMessageLite$Builder;->mergeDelimitedFrom(Ljava/io/InputStream;)Z
 
     move-result p1
@@ -311,7 +292,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/AbstractMessageLite$Builder;->mergeDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Z
 
     move-result p1
@@ -335,7 +315,6 @@
         }
     .end annotation
 
-    .line 52
     invoke-super {p0, p1}, Lcom/google/protobuf/AbstractMessageLite$Builder;->mergeFrom(Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/AbstractMessageLite$Builder;
 
     move-result-object p1
@@ -362,7 +341,6 @@
         }
     .end annotation
 
-    .line 53
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/AbstractMessageLite$Builder;->mergeFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessageLite$Builder;
 
     move-result-object p1
@@ -388,7 +366,6 @@
         }
     .end annotation
 
-    .line 46
     invoke-static {}, Lcom/google/protobuf/ExtensionRegistry;->getEmptyRegistry()Lcom/google/protobuf/ExtensionRegistry;
 
     move-result-object v0
@@ -417,7 +394,6 @@
         }
     .end annotation
 
-    .line 47
     invoke-interface {p0}, Lcom/google/protobuf/MessageOrBuilder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object v0
@@ -426,7 +402,6 @@
 
     move-result-object v0
 
-    .line 48
     :cond_0
     invoke-virtual {p1}, Lcom/google/protobuf/CodedInputStream;->readTag()I
 
@@ -436,13 +411,11 @@
 
     goto :goto_0
 
-    .line 49
     :cond_1
     new-instance v5, Lcom/google/protobuf/MessageReflection$BuilderAdapter;
 
     invoke-direct {v5, p0}, Lcom/google/protobuf/MessageReflection$BuilderAdapter;-><init>(Lcom/google/protobuf/Message$Builder;)V
 
-    .line 50
     invoke-interface {p0}, Lcom/google/protobuf/Message$Builder;->getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v4
@@ -459,7 +432,6 @@
 
     if-nez v1, :cond_0
 
-    .line 51
     :goto_0
     invoke-virtual {v0}, Lcom/google/protobuf/UnknownFieldSet$Builder;->build()Lcom/google/protobuf/UnknownFieldSet;
 
@@ -480,7 +452,6 @@
         }
     .end annotation
 
-    .line 32
     invoke-interface {p1}, Lcom/google/protobuf/MessageOrBuilder;->getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -491,7 +462,6 @@
 
     if-ne v0, v1, :cond_5
 
-    .line 33
     invoke-interface {p1}, Lcom/google/protobuf/MessageOrBuilder;->getAllFields()Ljava/util/Map;
 
     move-result-object v0
@@ -518,21 +488,18 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 34
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
-    .line 35
     invoke-virtual {v2}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->isRepeated()Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 36
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -554,12 +521,10 @@
 
     move-result-object v3
 
-    .line 37
     invoke-interface {p0, v2, v3}, Lcom/google/protobuf/Message$Builder;->addRepeatedField(Lcom/google/protobuf/Descriptors$FieldDescriptor;Ljava/lang/Object;)Lcom/google/protobuf/Message$Builder;
 
     goto :goto_1
 
-    .line 38
     :cond_1
     invoke-virtual {v2}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getJavaType()Lcom/google/protobuf/Descriptors$FieldDescriptor$JavaType;
 
@@ -569,21 +534,18 @@
 
     if-ne v3, v4, :cond_3
 
-    .line 39
     invoke-interface {p0, v2}, Lcom/google/protobuf/MessageOrBuilder;->getField(Lcom/google/protobuf/Descriptors$FieldDescriptor;)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Lcom/google/protobuf/Message;
 
-    .line 40
     invoke-interface {v3}, Lcom/google/protobuf/MessageOrBuilder;->getDefaultInstanceForType()Lcom/google/protobuf/Message;
 
     move-result-object v4
 
     if-ne v3, v4, :cond_2
 
-    .line 41
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
@@ -592,7 +554,6 @@
 
     goto :goto_0
 
-    .line 42
     :cond_2
     invoke-interface {v3}, Lcom/google/protobuf/Message;->newBuilderForType()Lcom/google/protobuf/Message$Builder;
 
@@ -620,7 +581,6 @@
 
     goto :goto_0
 
-    .line 43
     :cond_3
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -630,7 +590,6 @@
 
     goto :goto_0
 
-    .line 44
     :cond_4
     invoke-interface {p1}, Lcom/google/protobuf/MessageOrBuilder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
@@ -640,7 +599,6 @@
 
     return-object p0
 
-    .line 45
     :cond_5
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -667,7 +625,6 @@
         }
     .end annotation
 
-    .line 58
     invoke-super {p0, p1}, Lcom/google/protobuf/AbstractMessageLite$Builder;->mergeFrom(Ljava/io/InputStream;)Lcom/google/protobuf/AbstractMessageLite$Builder;
 
     move-result-object p1
@@ -694,7 +651,6 @@
         }
     .end annotation
 
-    .line 59
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/AbstractMessageLite$Builder;->mergeFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessageLite$Builder;
 
     move-result-object p1
@@ -718,7 +674,6 @@
         }
     .end annotation
 
-    .line 54
     invoke-super {p0, p1}, Lcom/google/protobuf/AbstractMessageLite$Builder;->mergeFrom([B)Lcom/google/protobuf/AbstractMessageLite$Builder;
 
     move-result-object p1
@@ -742,7 +697,6 @@
         }
     .end annotation
 
-    .line 55
     invoke-super {p0, p1, p2, p3}, Lcom/google/protobuf/AbstractMessageLite$Builder;->mergeFrom([BII)Lcom/google/protobuf/AbstractMessageLite$Builder;
 
     move-result-object p1
@@ -768,7 +722,6 @@
         }
     .end annotation
 
-    .line 57
     invoke-super {p0, p1, p2, p3, p4}, Lcom/google/protobuf/AbstractMessageLite$Builder;->mergeFrom([BIILcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessageLite$Builder;
 
     move-result-object p1
@@ -794,7 +747,6 @@
         }
     .end annotation
 
-    .line 56
     invoke-super {p0, p1, p2}, Lcom/google/protobuf/AbstractMessageLite$Builder;->mergeFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessageLite$Builder;
 
     move-result-object p1
@@ -812,7 +764,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -828,7 +779,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -844,7 +794,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -860,7 +809,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -876,7 +824,6 @@
         }
     .end annotation
 
-    .line 5
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Ljava/io/InputStream;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -892,7 +839,6 @@
         }
     .end annotation
 
-    .line 6
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -908,7 +854,6 @@
         }
     .end annotation
 
-    .line 7
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([B)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -924,7 +869,6 @@
         }
     .end annotation
 
-    .line 8
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([BII)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -940,7 +884,6 @@
         }
     .end annotation
 
-    .line 9
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([BIILcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -956,7 +899,6 @@
         }
     .end annotation
 
-    .line 10
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -972,7 +914,6 @@
         }
     .end annotation
 
-    .line 11
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -988,7 +929,6 @@
         }
     .end annotation
 
-    .line 12
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1004,7 +944,6 @@
         }
     .end annotation
 
-    .line 13
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1020,7 +959,6 @@
         }
     .end annotation
 
-    .line 14
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1031,7 +969,6 @@
 .method public bridge synthetic mergeFrom(Lcom/google/protobuf/Message;)Lcom/google/protobuf/Message$Builder;
     .locals 0
 
-    .line 15
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/Message;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1047,7 +984,6 @@
         }
     .end annotation
 
-    .line 16
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Ljava/io/InputStream;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1063,7 +999,6 @@
         }
     .end annotation
 
-    .line 17
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1079,7 +1014,6 @@
         }
     .end annotation
 
-    .line 18
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([B)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1095,7 +1029,6 @@
         }
     .end annotation
 
-    .line 19
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([BII)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1111,7 +1044,6 @@
         }
     .end annotation
 
-    .line 20
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([BIILcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1127,7 +1059,6 @@
         }
     .end annotation
 
-    .line 21
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1143,7 +1074,6 @@
         }
     .end annotation
 
-    .line 22
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1159,7 +1089,6 @@
         }
     .end annotation
 
-    .line 23
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1175,7 +1104,6 @@
         }
     .end annotation
 
-    .line 24
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1191,7 +1119,6 @@
         }
     .end annotation
 
-    .line 25
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1207,7 +1134,6 @@
         }
     .end annotation
 
-    .line 26
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Ljava/io/InputStream;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1223,7 +1149,6 @@
         }
     .end annotation
 
-    .line 27
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1239,7 +1164,6 @@
         }
     .end annotation
 
-    .line 28
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([B)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1255,7 +1179,6 @@
         }
     .end annotation
 
-    .line 29
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([BII)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1271,7 +1194,6 @@
         }
     .end annotation
 
-    .line 30
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([BIILcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1287,7 +1209,6 @@
         }
     .end annotation
 
-    .line 31
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1305,7 +1226,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-interface {p0}, Lcom/google/protobuf/MessageOrBuilder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object v0
@@ -1330,7 +1250,6 @@
 .method public bridge synthetic mergeUnknownFields(Lcom/google/protobuf/UnknownFieldSet;)Lcom/google/protobuf/Message$Builder;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/protobuf/AbstractMessage$Builder;->mergeUnknownFields(Lcom/google/protobuf/UnknownFieldSet;)Lcom/google/protobuf/AbstractMessage$Builder;
 
     move-result-object p1
@@ -1341,7 +1260,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/google/protobuf/TextFormat;->printToString(Lcom/google/protobuf/MessageOrBuilder;)Ljava/lang/String;
 
     move-result-object v0

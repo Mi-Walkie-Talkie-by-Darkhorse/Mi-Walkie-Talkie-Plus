@@ -1,6 +1,5 @@
 .class interface abstract Lio/reactivex/internal/operators/maybe/MaybeMergeArray$SimpleQueueWithConsumerIndex;
 .super Ljava/lang/Object;
-.source "MaybeMergeArray.java"
 
 # interfaces
 .implements Lio/reactivex/internal/fuseable/SimpleQueue;

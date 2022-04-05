@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/h$a;
 .super Landroid/os/Handler;
-.source "GaoDeOfflineDownloadedChild.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/adapter/h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/h$a;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -35,10 +33,8 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 2
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Integer;
@@ -47,7 +43,6 @@
 
     move-result v0
 
-    .line 3
     iget p1, p1, Landroid/os/Message;->what:I
 
     const/4 v1, -0x1
@@ -76,7 +71,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/h$a;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
@@ -84,7 +78,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/h$a;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
@@ -92,7 +85,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/h$a;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
@@ -100,7 +92,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/h$a;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
@@ -108,7 +99,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/h$a;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
@@ -116,7 +106,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_5
     :pswitch_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/h$a;->a:Lcom/ifengyu/intercom/ui/adapter/h;

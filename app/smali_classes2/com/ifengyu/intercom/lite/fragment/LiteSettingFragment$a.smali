@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$a;
 .super Ljava/lang/Object;
-.source "LiteSettingFragment.java"
 
 # interfaces
 .implements Landroidx/lifecycle/q;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -49,7 +47,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;->mItemName:Lcom/ifengyu/library/widget/view/ItemView;
@@ -60,7 +57,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;->mItemId:Lcom/ifengyu/library/widget/view/ItemView;
@@ -71,7 +67,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/lite/g/s;->b()Lcom/ifengyu/intercom/lite/g/s;
 
     move-result-object v0
@@ -89,7 +84,6 @@
 .method public bridge synthetic onChanged(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/lite/models/DeviceModel;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$a;->a(Lcom/ifengyu/intercom/lite/models/DeviceModel;)V

@@ -1,6 +1,5 @@
 .class public final Lorg/greenrobot/greendao/InternalQueryDaoAccess;
 .super Ljava/lang/Object;
-.source "InternalQueryDaoAccess.java"
 
 
 # annotations
@@ -36,10 +35,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lorg/greenrobot/greendao/InternalQueryDaoAccess;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     return-void
@@ -58,7 +55,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lorg/greenrobot/greendao/AbstractDao;->getStatements()Lorg/greenrobot/greendao/internal/TableStatements;
 
     move-result-object p0
@@ -71,7 +67,6 @@
 .method public getStatements()Lorg/greenrobot/greendao/internal/TableStatements;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/InternalQueryDaoAccess;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     invoke-virtual {v0}, Lorg/greenrobot/greendao/AbstractDao;->getStatements()Lorg/greenrobot/greendao/internal/TableStatements;
@@ -93,7 +88,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/InternalQueryDaoAccess;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     invoke-virtual {v0, p1}, Lorg/greenrobot/greendao/AbstractDao;->loadAllAndCloseCursor(Landroid/database/Cursor;)Ljava/util/List;
@@ -113,7 +107,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/InternalQueryDaoAccess;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     invoke-virtual {v0, p1, p2, p3}, Lorg/greenrobot/greendao/AbstractDao;->loadCurrent(Landroid/database/Cursor;IZ)Ljava/lang/Object;
@@ -133,7 +126,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/InternalQueryDaoAccess;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     invoke-virtual {v0, p1}, Lorg/greenrobot/greendao/AbstractDao;->loadUniqueAndCloseCursor(Landroid/database/Cursor;)Ljava/lang/Object;

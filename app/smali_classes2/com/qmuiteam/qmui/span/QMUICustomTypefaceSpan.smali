@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/span/QMUICustomTypefaceSpan;
 .super Landroid/text/style/TypefaceSpan;
-.source "QMUICustomTypefaceSpan.java"
 
 
 # static fields
@@ -26,7 +25,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/qmuiteam/qmui/span/QMUICustomTypefaceSpan$a;
 
     invoke-direct {v0}, Lcom/qmuiteam/qmui/span/QMUICustomTypefaceSpan$a;-><init>()V
@@ -43,10 +41,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/text/style/TypefaceSpan;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p2, p0, Lcom/qmuiteam/qmui/span/QMUICustomTypefaceSpan;->a:Landroid/graphics/Typeface;
 
     return-void
@@ -63,7 +59,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/graphics/Paint;->getTypeface()Landroid/graphics/Typeface;
 
@@ -75,13 +70,11 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     invoke-virtual {v0}, Landroid/graphics/Typeface;->getStyle()I
 
     move-result v0
 
-    .line 3
     :goto_0
     invoke-virtual {p1}, Landroid/graphics/Typeface;->getStyle()I
 
@@ -97,7 +90,6 @@
 
     const/4 v1, 0x1
 
-    .line 4
     invoke-virtual {p0, v1}, Landroid/graphics/Paint;->setFakeBoldText(Z)V
 
     :cond_2
@@ -107,10 +99,8 @@
 
     const/high16 v0, -0x41800000    # -0.25f
 
-    .line 5
     invoke-virtual {p0, v0}, Landroid/graphics/Paint;->setTextSkewX(F)V
 
-    .line 6
     :cond_3
     invoke-virtual {p0, p1}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
@@ -122,7 +112,6 @@
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/span/QMUICustomTypefaceSpan;->a:Landroid/graphics/Typeface;
 
     invoke-static {p1, v0}, Lcom/qmuiteam/qmui/span/QMUICustomTypefaceSpan;->a(Landroid/graphics/Paint;Landroid/graphics/Typeface;)V
@@ -133,7 +122,6 @@
 .method public updateMeasureState(Landroid/text/TextPaint;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/span/QMUICustomTypefaceSpan;->a:Landroid/graphics/Typeface;
 
     invoke-static {p1, v0}, Lcom/qmuiteam/qmui/span/QMUICustomTypefaceSpan;->a(Landroid/graphics/Paint;Landroid/graphics/Typeface;)V

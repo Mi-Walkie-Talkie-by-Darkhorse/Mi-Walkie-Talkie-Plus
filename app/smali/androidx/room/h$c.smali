@@ -1,6 +1,5 @@
 .class Landroidx/room/h$c;
 .super Ljava/lang/Object;
-.source "MultiInstanceInvalidationClient.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/room/h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/room/h$c;->a:Landroidx/room/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Landroidx/room/h$c;->a:Landroidx/room/h;
 
@@ -46,7 +43,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Landroidx/room/h$c;->a:Landroidx/room/h;
 
     iget-object v2, p0, Landroidx/room/h$c;->a:Landroidx/room/h;
@@ -63,7 +59,6 @@
 
     iput v0, v1, Landroidx/room/h;->c:I
 
-    .line 3
     iget-object v0, p0, Landroidx/room/h$c;->a:Landroidx/room/h;
 
     iget-object v0, v0, Landroidx/room/h;->d:Landroidx/room/g;
@@ -85,7 +80,6 @@
 
     const-string v2, "Cannot register multi-instance invalidation callback"
 
-    .line 4
     invoke-static {v1, v2, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_0

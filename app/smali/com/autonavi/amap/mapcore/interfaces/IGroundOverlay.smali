@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 .super Ljava/lang/Object;
-.source "IGroundOverlay.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/interfaces/IOverlay;

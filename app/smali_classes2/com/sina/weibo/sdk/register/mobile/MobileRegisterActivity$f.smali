@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$f;
 .super Landroid/os/Handler;
-.source "MobileRegisterActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$f;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$f;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$f;-><init>(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;)V
 
     return-void
@@ -44,7 +41,6 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
 
-    .line 1
     iget p1, p1, Landroid/os/Message;->what:I
 
     if-eqz p1, :cond_1
@@ -55,7 +51,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$f;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
@@ -67,7 +62,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 3
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$f;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-static {p1}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->h(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;)Landroid/widget/RelativeLayout;
@@ -78,7 +72,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$f;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
@@ -90,7 +83,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 5
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$f;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-static {p1}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->h(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;)Landroid/widget/RelativeLayout;

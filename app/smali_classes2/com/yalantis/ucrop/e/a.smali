@@ -1,6 +1,5 @@
 .class public Lcom/yalantis/ucrop/e/a;
 .super Ljava/lang/Object;
-.source "BitmapLoadUtils.java"
 
 
 # direct methods
@@ -49,40 +48,33 @@
 
     const-string v0, "window"
 
-    .line 13
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/view/WindowManager;
 
-    .line 14
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
 
     if-eqz p0, :cond_0
 
-    .line 15
     invoke-interface {p0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object p0
 
-    .line 16
     invoke-virtual {p0, v0}, Landroid/view/Display;->getSize(Landroid/graphics/Point;)V
 
-    .line 17
     :cond_0
     iget p0, v0, Landroid/graphics/Point;->x:I
 
-    .line 18
     iget v0, v0, Landroid/graphics/Point;->y:I
 
     int-to-double v1, p0
 
     const-wide/high16 v3, 0x4000000000000000L    # 2.0
 
-    .line 19
     invoke-static {v1, v2, v3, v4}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v1
@@ -101,12 +93,10 @@
 
     double-to-int p0, v0
 
-    .line 20
     new-instance v0, Landroid/graphics/Canvas;
 
     invoke-direct {v0}, Landroid/graphics/Canvas;-><init>()V
 
-    .line 21
     invoke-virtual {v0}, Landroid/graphics/Canvas;->getMaximumBitmapWidth()I
 
     move-result v1
@@ -121,12 +111,10 @@
 
     if-lez v0, :cond_1
 
-    .line 22
     invoke-static {p0, v0}, Ljava/lang/Math;->min(II)I
 
     move-result p0
 
-    .line 23
     :cond_1
     invoke-static {}, Lcom/yalantis/ucrop/e/c;->c()I
 
@@ -134,12 +122,10 @@
 
     if-lez v0, :cond_2
 
-    .line 24
     invoke-static {p0, v0}, Ljava/lang/Math;->min(II)I
 
     move-result p0
 
-    .line 25
     :cond_2
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -175,7 +161,6 @@
 
     const/4 v0, 0x0
 
-    .line 9
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -189,7 +174,6 @@
 
     return v0
 
-    .line 10
     :cond_0
     new-instance v1, Lcom/yalantis/ucrop/e/f;
 
@@ -199,7 +183,6 @@
 
     move-result v0
 
-    .line 11
     invoke-static {p0}, Lcom/yalantis/ucrop/e/a;->a(Ljava/io/Closeable;)V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -209,7 +192,6 @@
     :catch_0
     move-exception p0
 
-    .line 12
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -243,10 +225,8 @@
         .end annotation
     .end param
 
-    .line 6
     iget v0, p0, Landroid/graphics/BitmapFactory$Options;->outHeight:I
 
-    .line 7
     iget p0, p0, Landroid/graphics/BitmapFactory$Options;->outWidth:I
 
     const/4 v1, 0x1
@@ -255,7 +235,6 @@
 
     if-le p0, p1, :cond_1
 
-    .line 8
     :cond_0
     :goto_0
     div-int v2, v0, v1
@@ -293,7 +272,6 @@
 
     const/4 v2, 0x0
 
-    .line 3
     :try_start_0
     invoke-virtual {p0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -313,7 +291,6 @@
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p0, p1}, Landroid/graphics/Bitmap;->sameAs(Landroid/graphics/Bitmap;)Z
 
     move-result v0
@@ -333,7 +310,6 @@
 
     const-string v1, "transformBitmap: "
 
-    .line 5
     invoke-static {v0, v1, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_0
@@ -356,7 +332,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v7, Lcom/yalantis/ucrop/d/b;
 
     move-object v0, v7
@@ -381,7 +356,6 @@
 
     new-array p1, p1, [Ljava/lang/Void;
 
-    .line 2
     invoke-virtual {v7, p0, p1}, Landroid/os/AsyncTask;->executeOnExecutor(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Landroid/os/AsyncTask;
 
     return-void
@@ -396,12 +370,10 @@
 
     if-eqz p0, :cond_0
 
-    .line 26
     instance-of v0, p0, Ljava/io/Closeable;
 
     if-eqz v0, :cond_0
 
-    .line 27
     :try_start_0
     invoke-interface {p0}, Ljava/io/Closeable;->close()V
     :try_end_0
@@ -417,7 +389,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 28
     invoke-virtual {p0}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object p0

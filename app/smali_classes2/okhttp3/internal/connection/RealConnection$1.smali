@@ -1,6 +1,5 @@
 .class Lokhttp3/internal/connection/RealConnection$1;
 .super Lokhttp3/internal/ws/RealWebSocket$Streams;
-.source "RealConnection.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lokhttp3/internal/connection/RealConnection;ZLokio/BufferedSource;Lokio/BufferedSink;Lokhttp3/internal/connection/StreamAllocation;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/connection/RealConnection$1;->this$0:Lokhttp3/internal/connection/RealConnection;
 
     iput-object p5, p0, Lokhttp3/internal/connection/RealConnection$1;->val$streamAllocation:Lokhttp3/internal/connection/StreamAllocation;
@@ -44,7 +42,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/connection/RealConnection$1;->val$streamAllocation:Lokhttp3/internal/connection/StreamAllocation;
 
     invoke-virtual {v0}, Lokhttp3/internal/connection/StreamAllocation;->codec()Lokhttp3/internal/http/HttpCodec;

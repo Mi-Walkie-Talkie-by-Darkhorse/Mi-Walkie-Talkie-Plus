@@ -1,6 +1,5 @@
 .class synthetic Lcom/umeng/analytics/pro/ba$1;
 .super Ljava/lang/Object;
-.source "TUnion.java"
 
 
 # annotations

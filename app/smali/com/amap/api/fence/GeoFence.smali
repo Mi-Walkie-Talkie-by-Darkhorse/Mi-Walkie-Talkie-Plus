@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/fence/GeoFence;
 .super Ljava/lang/Object;
-.source "GeoFence.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -121,7 +120,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/fence/GeoFence$1;
 
     invoke-direct {v0}, Lcom/amap/api/fence/GeoFence$1;-><init>()V
@@ -134,59 +132,44 @@
 .method public constructor <init>()V
     .locals 6
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->d:Landroid/app/PendingIntent;
 
     const/4 v1, 0x0
 
-    .line 3
     iput v1, p0, Lcom/amap/api/fence/GeoFence;->e:I
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->f:Lcom/amap/api/fence/PoiItem;
 
-    .line 5
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->g:Ljava/util/List;
 
     const/4 v2, 0x0
 
-    .line 6
     iput v2, p0, Lcom/amap/api/fence/GeoFence;->i:F
 
     const-wide/16 v3, -0x1
 
-    .line 7
     iput-wide v3, p0, Lcom/amap/api/fence/GeoFence;->j:J
 
     const/4 v5, 0x1
 
-    .line 8
     iput v5, p0, Lcom/amap/api/fence/GeoFence;->k:I
 
-    .line 9
     iput v2, p0, Lcom/amap/api/fence/GeoFence;->l:F
 
-    .line 10
     iput v2, p0, Lcom/amap/api/fence/GeoFence;->m:F
 
-    .line 11
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->n:Lcom/amap/api/location/DPoint;
 
-    .line 12
     iput v1, p0, Lcom/amap/api/fence/GeoFence;->o:I
 
-    .line 13
     iput-wide v3, p0, Lcom/amap/api/fence/GeoFence;->p:J
 
-    .line 14
     iput-boolean v5, p0, Lcom/amap/api/fence/GeoFence;->q:Z
 
-    .line 15
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->r:Lcom/amap/api/location/AMapLocation;
 
     return-void
@@ -195,83 +178,64 @@
 .method protected constructor <init>(Landroid/os/Parcel;)V
     .locals 6
 
-    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 17
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->d:Landroid/app/PendingIntent;
 
     const/4 v1, 0x0
 
-    .line 18
     iput v1, p0, Lcom/amap/api/fence/GeoFence;->e:I
 
-    .line 19
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->f:Lcom/amap/api/fence/PoiItem;
 
-    .line 20
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->g:Ljava/util/List;
 
     const/4 v2, 0x0
 
-    .line 21
     iput v2, p0, Lcom/amap/api/fence/GeoFence;->i:F
 
     const-wide/16 v3, -0x1
 
-    .line 22
     iput-wide v3, p0, Lcom/amap/api/fence/GeoFence;->j:J
 
     const/4 v5, 0x1
 
-    .line 23
     iput v5, p0, Lcom/amap/api/fence/GeoFence;->k:I
 
-    .line 24
     iput v2, p0, Lcom/amap/api/fence/GeoFence;->l:F
 
-    .line 25
     iput v2, p0, Lcom/amap/api/fence/GeoFence;->m:F
 
-    .line 26
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->n:Lcom/amap/api/location/DPoint;
 
-    .line 27
     iput v1, p0, Lcom/amap/api/fence/GeoFence;->o:I
 
-    .line 28
     iput-wide v3, p0, Lcom/amap/api/fence/GeoFence;->p:J
 
-    .line 29
     iput-boolean v5, p0, Lcom/amap/api/fence/GeoFence;->q:Z
 
-    .line 30
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->r:Lcom/amap/api/location/AMapLocation;
 
-    .line 31
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->a:Ljava/lang/String;
 
-    .line 32
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->b:Ljava/lang/String;
 
-    .line 33
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->c:Ljava/lang/String;
 
-    .line 34
     const-class v0, Landroid/app/PendingIntent;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -286,14 +250,12 @@
 
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->d:Landroid/app/PendingIntent;
 
-    .line 35
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/amap/api/fence/GeoFence;->e:I
 
-    .line 36
     const-class v0, Lcom/amap/api/fence/PoiItem;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -308,7 +270,6 @@
 
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->f:Lcom/amap/api/fence/PoiItem;
 
-    .line 37
     sget-object v0, Lcom/amap/api/fence/DistrictItem;->CREATOR:Landroid/os/Parcelable$Creator;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->createTypedArrayList(Landroid/os/Parcelable$Creator;)Ljava/util/ArrayList;
@@ -317,42 +278,36 @@
 
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->g:Ljava/util/List;
 
-    .line 38
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Lcom/amap/api/fence/GeoFence;->i:F
 
-    .line 39
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v2
 
     iput-wide v2, p0, Lcom/amap/api/fence/GeoFence;->j:J
 
-    .line 40
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/amap/api/fence/GeoFence;->k:I
 
-    .line 41
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Lcom/amap/api/fence/GeoFence;->l:F
 
-    .line 42
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
     iput v0, p0, Lcom/amap/api/fence/GeoFence;->m:F
 
-    .line 43
     const-class v0, Lcom/amap/api/location/DPoint;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -367,28 +322,24 @@
 
     iput-object v0, p0, Lcom/amap/api/fence/GeoFence;->n:Lcom/amap/api/location/DPoint;
 
-    .line 44
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     iput v0, p0, Lcom/amap/api/fence/GeoFence;->o:I
 
-    .line 45
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v2
 
     iput-wide v2, p0, Lcom/amap/api/fence/GeoFence;->p:J
 
-    .line 46
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 47
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -400,7 +351,6 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 48
     iget-object v3, p0, Lcom/amap/api/fence/GeoFence;->h:Ljava/util/List;
 
     sget-object v4, Lcom/amap/api/location/DPoint;->CREATOR:Landroid/os/Parcelable$Creator;
@@ -415,7 +365,6 @@
 
     goto :goto_0
 
-    .line 49
     :cond_0
     invoke-virtual {p1}, Landroid/os/Parcel;->readByte()B
 
@@ -428,7 +377,6 @@
     :cond_1
     iput-boolean v1, p0, Lcom/amap/api/fence/GeoFence;->q:Z
 
-    .line 50
     const-class v0, Lcom/amap/api/location/AMapLocation;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -459,7 +407,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 1
     instance-of v0, p1, Lcom/amap/api/fence/GeoFence;
 
     const/4 v1, 0x0
@@ -468,11 +415,9 @@
 
     return v1
 
-    .line 2
     :cond_0
     check-cast p1, Lcom/amap/api/fence/GeoFence;
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->b:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -481,7 +426,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-object v0, p1, Lcom/amap/api/fence/GeoFence;->b:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -492,7 +436,6 @@
 
     return v1
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->b:Ljava/lang/String;
 
@@ -506,20 +449,17 @@
 
     return v1
 
-    .line 6
     :cond_2
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->n:Lcom/amap/api/location/DPoint;
 
     if-nez v0, :cond_3
 
-    .line 7
     iget-object v0, p1, Lcom/amap/api/fence/GeoFence;->n:Lcom/amap/api/location/DPoint;
 
     if-eqz v0, :cond_4
 
     return v1
 
-    .line 8
     :cond_3
     iget-object v2, p1, Lcom/amap/api/fence/GeoFence;->n:Lcom/amap/api/location/DPoint;
 
@@ -531,7 +471,6 @@
 
     return v1
 
-    .line 9
     :cond_4
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->i:F
 
@@ -543,20 +482,17 @@
 
     return v1
 
-    .line 10
     :cond_5
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->h:Ljava/util/List;
 
     if-nez v0, :cond_6
 
-    .line 11
     iget-object p1, p1, Lcom/amap/api/fence/GeoFence;->h:Ljava/util/List;
 
     if-eqz p1, :cond_7
 
     return v1
 
-    .line 12
     :cond_6
     iget-object p1, p1, Lcom/amap/api/fence/GeoFence;->h:Ljava/util/List;
 
@@ -577,7 +513,6 @@
 .method public getActivatesAction()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->k:I
 
     return v0
@@ -586,7 +521,6 @@
 .method public getCenter()Lcom/amap/api/location/DPoint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->n:Lcom/amap/api/location/DPoint;
 
     return-object v0
@@ -595,7 +529,6 @@
 .method public getCurrentLocation()Lcom/amap/api/location/AMapLocation;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->r:Lcom/amap/api/location/AMapLocation;
 
     return-object v0
@@ -604,7 +537,6 @@
 .method public getCustomId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->b:Ljava/lang/String;
 
     return-object v0
@@ -621,7 +553,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->g:Ljava/util/List;
 
     return-object v0
@@ -630,7 +561,6 @@
 .method public getEnterTime()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/fence/GeoFence;->p:J
 
     return-wide v0
@@ -639,7 +569,6 @@
 .method public getExpiration()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/fence/GeoFence;->j:J
 
     return-wide v0
@@ -648,7 +577,6 @@
 .method public getFenceId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->a:Ljava/lang/String;
 
     return-object v0
@@ -657,7 +585,6 @@
 .method public getMaxDis2Center()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->m:F
 
     return v0
@@ -666,7 +593,6 @@
 .method public getMinDis2Center()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->l:F
 
     return v0
@@ -675,7 +601,6 @@
 .method public getPendingIntent()Landroid/app/PendingIntent;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->d:Landroid/app/PendingIntent;
 
     return-object v0
@@ -684,7 +609,6 @@
 .method public getPendingIntentAction()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->c:Ljava/lang/String;
 
     return-object v0
@@ -693,7 +617,6 @@
 .method public getPoiItem()Lcom/amap/api/fence/PoiItem;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->f:Lcom/amap/api/fence/PoiItem;
 
     return-object v0
@@ -711,7 +634,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->h:Ljava/util/List;
 
     return-object v0
@@ -720,7 +642,6 @@
 .method public getRadius()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->i:F
 
     return v0
@@ -729,7 +650,6 @@
 .method public getStatus()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->o:I
 
     return v0
@@ -738,7 +658,6 @@
 .method public getType()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->e:I
 
     return v0
@@ -747,7 +666,6 @@
 .method public hashCode()I
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->b:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -786,7 +704,6 @@
 .method public isAble()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/fence/GeoFence;->q:Z
 
     return v0
@@ -795,7 +712,6 @@
 .method public setAble(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/fence/GeoFence;->q:Z
 
     return-void
@@ -804,7 +720,6 @@
 .method public setActivatesAction(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/fence/GeoFence;->k:I
 
     return-void
@@ -813,7 +728,6 @@
 .method public setCenter(Lcom/amap/api/location/DPoint;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/fence/GeoFence;->n:Lcom/amap/api/location/DPoint;
 
     return-void
@@ -822,7 +736,6 @@
 .method public setCurrentLocation(Lcom/amap/api/location/AMapLocation;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->clone()Lcom/amap/api/location/AMapLocation;
 
     move-result-object p1
@@ -835,7 +748,6 @@
 .method public setCustomId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/fence/GeoFence;->b:Ljava/lang/String;
 
     return-void
@@ -852,7 +764,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/fence/GeoFence;->g:Ljava/util/List;
 
     return-void
@@ -861,7 +772,6 @@
 .method public setEnterTime(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/amap/api/fence/GeoFence;->p:J
 
     return-void
@@ -878,12 +788,10 @@
 
     const-wide/16 p1, -0x1
 
-    .line 1
     iput-wide p1, p0, Lcom/amap/api/fence/GeoFence;->j:J
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -899,7 +807,6 @@
 .method public setFenceId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/fence/GeoFence;->a:Ljava/lang/String;
 
     return-void
@@ -908,7 +815,6 @@
 .method public setMaxDis2Center(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/fence/GeoFence;->m:F
 
     return-void
@@ -917,7 +823,6 @@
 .method public setMinDis2Center(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/fence/GeoFence;->l:F
 
     return-void
@@ -926,7 +831,6 @@
 .method public setPendingIntent(Landroid/app/PendingIntent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/fence/GeoFence;->d:Landroid/app/PendingIntent;
 
     return-void
@@ -935,7 +839,6 @@
 .method public setPendingIntentAction(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/fence/GeoFence;->c:Ljava/lang/String;
 
     return-void
@@ -944,7 +847,6 @@
 .method public setPoiItem(Lcom/amap/api/fence/PoiItem;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/fence/GeoFence;->f:Lcom/amap/api/fence/PoiItem;
 
     return-void
@@ -962,7 +864,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/fence/GeoFence;->h:Ljava/util/List;
 
     return-void
@@ -971,7 +872,6 @@
 .method public setRadius(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/fence/GeoFence;->i:F
 
     return-void
@@ -980,7 +880,6 @@
 .method public setStatus(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/fence/GeoFence;->o:I
 
     return-void
@@ -989,7 +888,6 @@
 .method public setType(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/fence/GeoFence;->e:I
 
     return-void
@@ -998,82 +896,66 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->a:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->b:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->c:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->d:Landroid/app/PendingIntent;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 5
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->e:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->f:Lcom/amap/api/fence/PoiItem;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->g:Ljava/util/List;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
 
-    .line 8
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->i:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 9
     iget-wide v0, p0, Lcom/amap/api/fence/GeoFence;->j:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
-    .line 10
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->k:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 11
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->l:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 12
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->m:F
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeFloat(F)V
 
-    .line 13
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->n:Lcom/amap/api/location/DPoint;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 14
     iget v0, p0, Lcom/amap/api/fence/GeoFence;->o:I
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 15
     iget-wide v0, p0, Lcom/amap/api/fence/GeoFence;->p:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
-    .line 16
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->h:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -1084,7 +966,6 @@
 
     if-nez v0, :cond_0
 
-    .line 17
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->h:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -1093,7 +974,6 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 18
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->h:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -1113,18 +993,15 @@
 
     check-cast v1, Ljava/util/List;
 
-    .line 19
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeTypedList(Ljava/util/List;)V
 
     goto :goto_0
 
-    .line 20
     :cond_0
     iget-boolean v0, p0, Lcom/amap/api/fence/GeoFence;->q:Z
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeByte(B)V
 
-    .line 21
     iget-object v0, p0, Lcom/amap/api/fence/GeoFence;->r:Lcom/amap/api/location/AMapLocation;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V

@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/functions/Functions$ArrayListCapacityCallable;
 .super Ljava/lang/Object;
-.source "Functions.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -37,10 +36,8 @@
 .method constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lio/reactivex/internal/functions/Functions$ArrayListCapacityCallable;->capacity:I
 
     return-void
@@ -56,7 +53,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/functions/Functions$ArrayListCapacityCallable;->call()Ljava/util/List;
 
     move-result-object v0
@@ -80,7 +76,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     iget v1, p0, Lio/reactivex/internal/functions/Functions$ArrayListCapacityCallable;->capacity:I

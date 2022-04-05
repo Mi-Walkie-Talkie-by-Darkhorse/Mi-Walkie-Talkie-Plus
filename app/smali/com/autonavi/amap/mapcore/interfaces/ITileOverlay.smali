@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/ITileOverlay;
 .super Ljava/lang/Object;
-.source "ITileOverlay.java"
 
 
 # virtual methods

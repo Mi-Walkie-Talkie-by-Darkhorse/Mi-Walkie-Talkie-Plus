@@ -1,6 +1,5 @@
 .class abstract Lcom/tencent/connect/auth/AuthAgent$b$a;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,12 +26,10 @@
 .method constructor <init>(Lcom/tencent/connect/auth/AuthAgent$b;Landroid/app/Dialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$b$a;->e:Lcom/tencent/connect/auth/AuthAgent$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lcom/tencent/connect/auth/AuthAgent$b$a;->d:Landroid/app/Dialog;
 
     return-void

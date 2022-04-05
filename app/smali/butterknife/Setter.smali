@@ -1,6 +1,5 @@
 .class public interface abstract Lbutterknife/Setter;
 .super Ljava/lang/Object;
-.source "Setter.java"
 
 
 # annotations

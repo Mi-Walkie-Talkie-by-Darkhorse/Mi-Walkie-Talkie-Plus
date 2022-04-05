@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/internal/ToolbarUtils;
 .super Ljava/lang/Object;
-.source "ToolbarUtils.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +32,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/android/material/internal/ToolbarUtils;->getActionMenuView(Landroidx/appcompat/widget/Toolbar;)Landroidx/appcompat/widget/ActionMenuView;
 
     move-result-object p0
@@ -43,7 +40,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -51,20 +47,16 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 3
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 4
     instance-of v2, v1, Landroidx/appcompat/view/menu/ActionMenuItemView;
 
     if-eqz v2, :cond_0
 
-    .line 5
     check-cast v1, Landroidx/appcompat/view/menu/ActionMenuItemView;
 
-    .line 6
     invoke-virtual {v1}, Landroidx/appcompat/view/menu/ActionMenuItemView;->getItemData()Landroidx/appcompat/view/menu/h;
 
     move-result-object v2
@@ -99,7 +91,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -107,17 +98,14 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 3
     instance-of v2, v1, Landroidx/appcompat/widget/ActionMenuView;
 
     if-eqz v2, :cond_0
 
-    .line 4
     check-cast v1, Landroidx/appcompat/widget/ActionMenuView;
 
     return-object v1
@@ -142,7 +130,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
@@ -151,17 +138,14 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object p0
 
-    .line 3
     instance-of v0, p0, Landroid/widget/ImageButton;
 
     if-eqz v0, :cond_0
 
-    .line 4
     check-cast p0, Landroid/widget/ImageButton;
 
     return-object p0
@@ -181,14 +165,12 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/android/material/internal/ToolbarUtils;->getActionMenuView(Landroidx/appcompat/widget/Toolbar;)Landroidx/appcompat/widget/ActionMenuView;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
@@ -199,7 +181,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object p0

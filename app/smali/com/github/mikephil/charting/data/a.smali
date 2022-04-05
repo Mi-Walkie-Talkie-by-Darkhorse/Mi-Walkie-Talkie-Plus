@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/data/a;
 .super Lcom/github/mikephil/charting/data/b;
-.source "BarData.java"
 
 
 # annotations
@@ -21,12 +20,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/github/mikephil/charting/data/b;-><init>()V
 
     const v0, 0x3f59999a    # 0.85f
 
-    .line 2
     iput v0, p0, Lcom/github/mikephil/charting/data/a;->j:F
 
     return-void
@@ -37,7 +34,6 @@
 .method public k()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/a;->j:F
 
     return v0

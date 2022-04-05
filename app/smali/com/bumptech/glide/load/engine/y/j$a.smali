@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/engine/y/j$a;
 .super Ljava/lang/Object;
-.source "SafeKeyGenerator.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/util/k/a$d;
@@ -30,7 +29,6 @@
 .method constructor <init>(Lcom/bumptech/glide/load/engine/y/j;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public create()Lcom/bumptech/glide/load/engine/y/j$b;
     .locals 2
 
-    .line 2
     :try_start_0
     new-instance v0, Lcom/bumptech/glide/load/engine/y/j$b;
 
@@ -60,7 +57,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     new-instance v1, Ljava/lang/RuntimeException;
 
     invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -71,7 +67,6 @@
 .method public bridge synthetic create()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/bumptech/glide/load/engine/y/j$a;->create()Lcom/bumptech/glide/load/engine/y/j$b;
 
     move-result-object v0

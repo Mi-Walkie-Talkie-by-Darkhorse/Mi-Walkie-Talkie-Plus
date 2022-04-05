@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/ForwardingSortedSetMultimap;
 .super Lcom/google/common/collect/ForwardingSetMultimap;
-.source "ForwardingSortedSetMultimap.java"
 
 # interfaces
 .implements Lcom/google/common/collect/SortedSetMultimap;
@@ -29,7 +28,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingSetMultimap;-><init>()V
 
     return-void
@@ -40,7 +38,6 @@
 .method protected bridge synthetic delegate()Lcom/google/common/collect/Multimap;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object v0
@@ -51,7 +48,6 @@
 .method protected bridge synthetic delegate()Lcom/google/common/collect/SetMultimap;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object v0
@@ -72,7 +68,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object v0
@@ -83,7 +78,6 @@
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->get(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -94,7 +88,6 @@
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->get(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -116,7 +109,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object v0
@@ -131,7 +123,6 @@
 .method public bridge synthetic removeAll(Ljava/lang/Object;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -142,7 +133,6 @@
 .method public bridge synthetic removeAll(Ljava/lang/Object;)Ljava/util/Set;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->removeAll(Ljava/lang/Object;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -166,7 +156,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object v0
@@ -181,7 +170,6 @@
 .method public bridge synthetic replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Collection;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -192,7 +180,6 @@
 .method public bridge synthetic replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/Set;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->replaceValues(Ljava/lang/Object;Ljava/lang/Iterable;)Ljava/util/SortedSet;
 
     move-result-object p1
@@ -212,7 +199,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object v0
@@ -234,7 +220,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedSetMultimap;->delegate()Lcom/google/common/collect/SortedSetMultimap;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/btle/LockAcquireFailException;
 .super Lcom/ifengyu/intercom/node/btle/GattException;
-.source "LockAcquireFailException.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/node/btle/GattException;-><init>(Ljava/lang/String;)V
 
     return-void

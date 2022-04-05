@@ -1,6 +1,5 @@
 .class Lcom/google/common/escape/Escapers$Builder$1;
 .super Lcom/google/common/escape/ArrayBasedCharEscaper;
-.source "Escapers.java"
 
 
 # annotations
@@ -24,12 +23,10 @@
 .method constructor <init>(Lcom/google/common/escape/Escapers$Builder;Ljava/util/Map;CC)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/escape/Escapers$Builder$1;->this$0:Lcom/google/common/escape/Escapers$Builder;
 
     invoke-direct {p0, p2, p3, p4}, Lcom/google/common/escape/ArrayBasedCharEscaper;-><init>(Ljava/util/Map;CC)V
 
-    .line 2
     iget-object p1, p0, Lcom/google/common/escape/Escapers$Builder$1;->this$0:Lcom/google/common/escape/Escapers$Builder;
 
     invoke-static {p1}, Lcom/google/common/escape/Escapers$Builder;->access$100(Lcom/google/common/escape/Escapers$Builder;)Ljava/lang/String;
@@ -64,7 +61,6 @@
 .method protected escapeUnsafe(C)[C
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/google/common/escape/Escapers$Builder$1;->replacementChars:[C
 
     return-object p1

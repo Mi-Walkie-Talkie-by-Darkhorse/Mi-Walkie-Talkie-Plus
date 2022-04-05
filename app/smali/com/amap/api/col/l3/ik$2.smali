@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ik$2;
 .super Ljava/lang/Object;
-.source "OfflineLocManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ik$2;->a:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final run()V
     .locals 11
 
-    .line 1
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/ik;->a()Ljava/lang/ref/WeakReference;
 
@@ -48,7 +45,6 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/ik$2;->a:Landroid/content/Context;
 
     sget-object v3, Lcom/amap/api/col/l3/gt;->h:Ljava/lang/String;
@@ -65,15 +61,12 @@
 
     const v1, 0xdbba00
 
-    .line 3
     iput v1, v0, Lcom/amap/api/col/l3/ig;->h:I
 
-    .line 4
     iget-object v1, v0, Lcom/amap/api/col/l3/ig;->g:Lcom/amap/api/col/l3/iu;
 
     if-nez v1, :cond_0
 
-    .line 5
     new-instance v5, Lcom/amap/api/col/l3/gl;
 
     new-instance v1, Lcom/amap/api/col/l3/gn;
@@ -86,7 +79,6 @@
 
     invoke-direct {v5, v1}, Lcom/amap/api/col/l3/gl;-><init>(Lcom/amap/api/col/l3/gm;)V
 
-    .line 6
     new-instance v1, Lcom/amap/api/col/l3/ir;
 
     new-instance v8, Lcom/amap/api/col/l3/iq;
@@ -101,7 +93,6 @@
 
     const/16 v2, 0xa
 
-    .line 7
     invoke-static {v2}, Lcom/amap/api/col/l3/gq;->a(I)[B
 
     move-result-object v7
@@ -116,7 +107,6 @@
 
     iget-object v10, p0, Lcom/amap/api/col/l3/ik$2;->a:Landroid/content/Context;
 
-    .line 8
     invoke-static {v10}, Lcom/amap/api/col/l3/fw;->f(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v10
@@ -137,7 +127,6 @@
 
     iget-object v10, p0, Lcom/amap/api/col/l3/ik$2;->a:Landroid/content/Context;
 
-    .line 9
     invoke-static {v10}, Lcom/amap/api/col/l3/gb;->m(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v10
@@ -148,7 +137,6 @@
 
     iget-object v10, p0, Lcom/amap/api/col/l3/ik$2;->a:Landroid/content/Context;
 
-    .line 10
     invoke-static {v10}, Lcom/amap/api/col/l3/gb;->h(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v10
@@ -179,7 +167,6 @@
 
     iget-object v10, p0, Lcom/amap/api/col/l3/ik$2;->a:Landroid/content/Context;
 
-    .line 11
     invoke-static {v10}, Lcom/amap/api/col/l3/gb;->y(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v10
@@ -204,7 +191,6 @@
 
     iget-object v9, p0, Lcom/amap/api/col/l3/ik$2;->a:Landroid/content/Context;
 
-    .line 12
     invoke-static {v9}, Lcom/amap/api/col/l3/fw;->d(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v9
@@ -215,7 +201,6 @@
 
     iget-object v9, p0, Lcom/amap/api/col/l3/ik$2;->a:Landroid/content/Context;
 
-    .line 13
     invoke-static {v9}, Lcom/amap/api/col/l3/fw;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v9
@@ -230,7 +215,6 @@
 
     iput-object v1, v0, Lcom/amap/api/col/l3/ig;->g:Lcom/amap/api/col/l3/iu;
 
-    .line 14
     :cond_0
     iget-object v1, v0, Lcom/amap/api/col/l3/ig;->i:Ljava/lang/String;
 
@@ -242,10 +226,8 @@
 
     const-string v1, "fKey"
 
-    .line 15
     iput-object v1, v0, Lcom/amap/api/col/l3/ig;->i:Ljava/lang/String;
 
-    .line 16
     :cond_1
     new-instance v1, Lcom/amap/api/col/l3/iz;
 
@@ -261,7 +243,6 @@
 
     sget-boolean v7, Lcom/amap/api/col/l3/ik;->b:Z
 
-    .line 17
     invoke-static {}, Lcom/amap/api/col/l3/ik;->b()I
 
     move-result v8
@@ -278,7 +259,6 @@
 
     iput-object v1, v0, Lcom/amap/api/col/l3/ig;->f:Lcom/amap/api/col/l3/ja;
 
-    .line 18
     invoke-static {v0}, Lcom/amap/api/col/l3/ih;->a(Lcom/amap/api/col/l3/ig;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -292,7 +272,6 @@
 
     const-string v2, "uold"
 
-    .line 19
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

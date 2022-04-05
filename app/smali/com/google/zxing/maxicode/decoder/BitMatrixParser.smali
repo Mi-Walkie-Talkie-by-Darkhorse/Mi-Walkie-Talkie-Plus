@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/maxicode/decoder/BitMatrixParser;
 .super Ljava/lang/Object;
-.source "BitMatrixParser.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 
     new-array v2, v1, [I
 
-    .line 1
     fill-array-data v2, :array_0
 
     const/4 v3, 0x0
@@ -1414,10 +1412,8 @@
 .method constructor <init>(Lcom/google/zxing/common/BitMatrix;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/zxing/maxicode/decoder/BitMatrixParser;->bitMatrix:Lcom/google/zxing/common/BitMatrix;
 
     return-void
@@ -1432,14 +1428,12 @@
 
     new-array v0, v0, [B
 
-    .line 1
     iget-object v1, p0, Lcom/google/zxing/maxicode/decoder/BitMatrixParser;->bitMatrix:Lcom/google/zxing/common/BitMatrix;
 
     invoke-virtual {v1}, Lcom/google/zxing/common/BitMatrix;->getHeight()I
 
     move-result v1
 
-    .line 2
     iget-object v2, p0, Lcom/google/zxing/maxicode/decoder/BitMatrixParser;->bitMatrix:Lcom/google/zxing/common/BitMatrix;
 
     invoke-virtual {v2}, Lcom/google/zxing/common/BitMatrix;->getWidth()I
@@ -1453,7 +1447,6 @@
     :goto_0
     if-ge v4, v1, :cond_2
 
-    .line 3
     sget-object v5, Lcom/google/zxing/maxicode/decoder/BitMatrixParser;->BITNR:[[I
 
     aget-object v5, v5, v4
@@ -1463,12 +1456,10 @@
     :goto_1
     if-ge v6, v2, :cond_1
 
-    .line 4
     aget v7, v5, v6
 
     if-ltz v7, :cond_0
 
-    .line 5
     iget-object v8, p0, Lcom/google/zxing/maxicode/decoder/BitMatrixParser;->bitMatrix:Lcom/google/zxing/common/BitMatrix;
 
     invoke-virtual {v8, v6, v4}, Lcom/google/zxing/common/BitMatrix;->get(II)Z
@@ -1477,7 +1468,6 @@
 
     if-eqz v8, :cond_0
 
-    .line 6
     div-int/lit8 v8, v7, 0x6
 
     aget-byte v9, v0, v8

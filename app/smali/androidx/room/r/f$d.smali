@@ -1,6 +1,5 @@
 .class public Landroidx/room/r/f$d;
 .super Ljava/lang/Object;
-.source "TableInfo.java"
 
 
 # annotations
@@ -50,16 +49,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/room/r/f$d;->a:Ljava/lang/String;
 
-    .line 3
     iput-boolean p2, p0, Landroidx/room/r/f$d;->b:Z
 
-    .line 4
     iput-object p3, p0, Landroidx/room/r/f$d;->c:Ljava/util/List;
 
     return-void
@@ -81,7 +76,6 @@
 
     if-eqz p1, :cond_5
 
-    .line 1
     const-class v1, Landroidx/room/r/f$d;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -92,11 +86,9 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     check-cast p1, Landroidx/room/r/f$d;
 
-    .line 3
     iget-boolean v1, p0, Landroidx/room/r/f$d;->b:Z
 
     iget-boolean v2, p1, Landroidx/room/r/f$d;->b:Z
@@ -105,7 +97,6 @@
 
     return v0
 
-    .line 4
     :cond_2
     iget-object v1, p0, Landroidx/room/r/f$d;->c:Ljava/util/List;
 
@@ -119,7 +110,6 @@
 
     return v0
 
-    .line 5
     :cond_3
     iget-object v0, p0, Landroidx/room/r/f$d;->a:Ljava/lang/String;
 
@@ -131,7 +121,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 6
     iget-object p1, p1, Landroidx/room/r/f$d;->a:Ljava/lang/String;
 
     invoke-virtual {p1, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
@@ -140,7 +129,6 @@
 
     return p1
 
-    .line 7
     :cond_4
     iget-object v0, p0, Landroidx/room/r/f$d;->a:Ljava/lang/String;
 
@@ -160,7 +148,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/room/r/f$d;->a:Ljava/lang/String;
 
     const-string v1, "index_"
@@ -175,7 +162,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Landroidx/room/r/f$d;->a:Ljava/lang/String;
 
@@ -186,14 +172,12 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 3
     iget-boolean v1, p0, Landroidx/room/r/f$d;->b:Z
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 4
     iget-object v1, p0, Landroidx/room/r/f$d;->c:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->hashCode()I
@@ -208,7 +192,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/WebSecurityControllerImpl;
 .super Ljava/lang/Object;
-.source "WebSecurityControllerImpl.java"
 
 # interfaces
 .implements Lcom/just/agentweb/WebSecurityController;
@@ -50,16 +49,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/just/agentweb/WebSecurityControllerImpl;->mWebView:Landroid/webkit/WebView;
 
-    .line 3
     iput-object p2, p0, Lcom/just/agentweb/WebSecurityControllerImpl;->mMap:La/b/a;
 
-    .line 4
     iput-object p3, p0, Lcom/just/agentweb/WebSecurityControllerImpl;->mSecurityType:Lcom/just/agentweb/AgentWeb$SecurityType;
 
     return-void
@@ -70,19 +65,16 @@
 .method public check(Lcom/just/agentweb/WebSecurityCheckLogic;)V
     .locals 3
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0xb
 
     if-le v0, v1, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/just/agentweb/WebSecurityControllerImpl;->mWebView:Landroid/webkit/WebView;
 
     invoke-interface {p1, v0}, Lcom/just/agentweb/WebSecurityCheckLogic;->dealHoneyComb(Landroid/webkit/WebView;)V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/WebSecurityControllerImpl;->mMap:La/b/a;
 
@@ -100,7 +92,6 @@
 
     if-nez v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/just/agentweb/WebSecurityControllerImpl;->mMap:La/b/a;
 
     iget-object v1, p0, Lcom/just/agentweb/WebSecurityControllerImpl;->mSecurityType:Lcom/just/agentweb/AgentWeb$SecurityType;
@@ -114,7 +105,6 @@
 .method public bridge synthetic check(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/just/agentweb/WebSecurityCheckLogic;
 
     invoke-virtual {p0, p1}, Lcom/just/agentweb/WebSecurityControllerImpl;->check(Lcom/just/agentweb/WebSecurityCheckLogic;)V

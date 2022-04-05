@@ -1,6 +1,5 @@
 .class public Lorg/greenrobot/greendao/rx/RxDao;
 .super Lorg/greenrobot/greendao/rx/RxBase;
-.source "RxDao.java"
 
 
 # annotations
@@ -46,7 +45,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lorg/greenrobot/greendao/rx/RxDao;-><init>(Lorg/greenrobot/greendao/AbstractDao;Lrx/Scheduler;)V
 
     return-void
@@ -67,10 +65,8 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 2
     invoke-direct {p0, p2}, Lorg/greenrobot/greendao/rx/RxBase;-><init>(Lrx/Scheduler;)V
 
-    .line 3
     iput-object p1, p0, Lorg/greenrobot/greendao/rx/RxDao;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     return-void
@@ -79,7 +75,6 @@
 .method static synthetic access$000(Lorg/greenrobot/greendao/rx/RxDao;)Lorg/greenrobot/greendao/AbstractDao;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/greenrobot/greendao/rx/RxDao;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     return-object p0
@@ -101,7 +96,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$23;
 
     invoke-direct {v0, p0}, Lorg/greenrobot/greendao/rx/RxDao$23;-><init>(Lorg/greenrobot/greendao/rx/RxDao;)V
@@ -127,7 +121,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$16;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$16;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Object;)V
@@ -153,7 +146,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$18;
 
     invoke-direct {v0, p0}, Lorg/greenrobot/greendao/rx/RxDao$18;-><init>(Lorg/greenrobot/greendao/rx/RxDao;)V
@@ -179,7 +171,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$17;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$17;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Object;)V
@@ -207,7 +198,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$21;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$21;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Iterable;)V
@@ -233,7 +223,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$22;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$22;-><init>(Lorg/greenrobot/greendao/rx/RxDao;[Ljava/lang/Object;)V
@@ -261,7 +250,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$19;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$19;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Iterable;)V
@@ -287,7 +275,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$20;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$20;-><init>(Lorg/greenrobot/greendao/rx/RxDao;[Ljava/lang/Object;)V
@@ -312,7 +299,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/rx/RxDao;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     return-object v0
@@ -323,7 +309,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     invoke-super {p0}, Lorg/greenrobot/greendao/rx/RxBase;->getScheduler()Lrx/Scheduler;
 
     move-result-object v0
@@ -344,7 +329,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$4;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$4;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Object;)V
@@ -372,7 +356,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$5;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$5;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Iterable;)V
@@ -399,7 +382,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$6;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$6;-><init>(Lorg/greenrobot/greendao/rx/RxDao;[Ljava/lang/Object;)V
@@ -424,7 +406,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$7;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$7;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Object;)V
@@ -452,7 +433,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$8;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$8;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Iterable;)V
@@ -479,7 +459,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$9;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$9;-><init>(Lorg/greenrobot/greendao/rx/RxDao;[Ljava/lang/Object;)V
@@ -504,7 +483,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$2;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$2;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Object;)V
@@ -530,7 +508,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$1;
 
     invoke-direct {v0, p0}, Lorg/greenrobot/greendao/rx/RxDao$1;-><init>(Lorg/greenrobot/greendao/rx/RxDao;)V
@@ -555,7 +532,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$3;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$3;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Object;)V
@@ -580,7 +556,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$10;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$10;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Object;)V
@@ -608,7 +583,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$11;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$11;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Iterable;)V
@@ -635,7 +609,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$12;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$12;-><init>(Lorg/greenrobot/greendao/rx/RxDao;[Ljava/lang/Object;)V
@@ -660,7 +633,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$13;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$13;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Object;)V
@@ -688,7 +660,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$14;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$14;-><init>(Lorg/greenrobot/greendao/rx/RxDao;Ljava/lang/Iterable;)V
@@ -715,7 +686,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/rx/RxDao$15;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxDao$15;-><init>(Lorg/greenrobot/greendao/rx/RxDao;[Ljava/lang/Object;)V

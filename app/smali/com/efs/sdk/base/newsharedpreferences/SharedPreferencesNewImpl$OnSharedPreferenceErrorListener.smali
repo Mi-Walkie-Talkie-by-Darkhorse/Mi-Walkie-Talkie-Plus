@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/efs/sdk/base/newsharedpreferences/SharedPreferencesNewImpl$OnSharedPreferenceErrorListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations

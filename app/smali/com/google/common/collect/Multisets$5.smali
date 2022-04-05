@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Multisets$5;
 .super Lcom/google/common/collect/Ordering;
-.source "Multisets.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/Ordering;-><init>()V
 
     return-void
@@ -46,7 +44,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-interface {p2}, Lcom/google/common/collect/Multiset$Entry;->getCount()I
 
     move-result p2
@@ -65,7 +62,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/common/collect/Multiset$Entry;
 
     check-cast p2, Lcom/google/common/collect/Multiset$Entry;

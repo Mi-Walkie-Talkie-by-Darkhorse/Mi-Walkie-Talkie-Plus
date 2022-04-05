@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$a;
 .super Ljava/lang/Object;
-.source "SetMyOtherInfoActivity.java"
 
 # interfaces
 .implements Landroid/text/TextWatcher;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;->a(Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;)Landroid/widget/EditText;
@@ -63,7 +60,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;->b(Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;)Landroid/view/View;
@@ -76,7 +72,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/SetMyOtherInfoActivity;
 

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/Futures$WrappedCombiner;
 .super Ljava/lang/Object;
-.source "Futures.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -59,10 +58,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -90,7 +87,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$WrappedCombiner;->delegate:Ljava/util/concurrent/Callable;
 
@@ -103,7 +99,6 @@
 
     return-object v0
 
-    .line 2
     :catch_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$WrappedCombiner;->outputFuture:Lcom/google/common/util/concurrent/Futures$CombinerFuture;
 
@@ -116,7 +111,6 @@
     :catch_1
     move-exception v0
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/util/concurrent/Futures$WrappedCombiner;->outputFuture:Lcom/google/common/util/concurrent/Futures$CombinerFuture;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;

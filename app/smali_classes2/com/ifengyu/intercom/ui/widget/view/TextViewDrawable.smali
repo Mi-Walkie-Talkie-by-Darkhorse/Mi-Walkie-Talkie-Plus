@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;
 .super Landroidx/appcompat/widget/AppCompatTextView;
-.source "TextViewDrawable.java"
 
 
 # instance fields
@@ -31,7 +30,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -46,7 +44,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -59,15 +56,12 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->i:Z
 
-    .line 5
     invoke-direct {p0, p1, p2, p3}, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->a(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -76,7 +70,6 @@
 .method private a(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
 
-    .line 1
     sget-object p3, Lcom/ifengyu/intercom/R$styleable;->TextViewDrawable:[I
 
     invoke-virtual {p1, p2, p3}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -87,7 +80,6 @@
 
     const/4 p3, 0x3
 
-    .line 2
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p3
@@ -96,7 +88,6 @@
 
     const/4 p3, 0x7
 
-    .line 3
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p3
@@ -105,7 +96,6 @@
 
     const/4 p3, 0x5
 
-    .line 4
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p3
@@ -114,7 +104,6 @@
 
     const/4 p3, 0x1
 
-    .line 5
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
@@ -123,7 +112,6 @@
 
     const/4 v0, 0x2
 
-    .line 6
     invoke-virtual {p1, v0, p2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
@@ -132,7 +120,6 @@
 
     const/4 v0, 0x6
 
-    .line 7
     invoke-virtual {p1, v0, p2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
@@ -141,14 +128,12 @@
 
     const/4 v0, 0x4
 
-    .line 8
     invoke-virtual {p1, v0, p2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->g:I
 
-    .line 9
     invoke-virtual {p1, p2, p2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p2
@@ -157,14 +142,12 @@
 
     const/16 p2, 0x8
 
-    .line 10
     invoke-virtual {p1, p2, p3}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result p2
 
     iput-boolean p2, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->i:Z
 
-    .line 11
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -175,7 +158,6 @@
 
     if-nez p3, :cond_0
 
-    .line 12
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result p3
@@ -183,7 +165,6 @@
     :cond_0
     if-nez p4, :cond_1
 
-    .line 13
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
 
     move-result p4
@@ -209,7 +190,6 @@
 
     goto :goto_2
 
-    .line 14
     :cond_2
     iget-boolean p2, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->i:Z
 
@@ -241,7 +221,6 @@
 
     goto :goto_2
 
-    .line 15
     :cond_4
     iget-boolean p2, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->i:Z
 
@@ -277,7 +256,6 @@
     :goto_1
     add-int/2addr p4, p2
 
-    .line 16
     :goto_2
     invoke-virtual {p1, v1, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
@@ -289,7 +267,6 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/TextView;->onDraw(Landroid/graphics/Canvas;)V
 
     return-void
@@ -298,40 +275,32 @@
 .method protected onSizeChanged(IIII)V
     .locals 6
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/widget/TextView;->onSizeChanged(IIII)V
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->j:I
 
-    .line 3
     invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
 
     const/4 p2, 0x0
 
-    .line 4
     aget-object p3, p1, p2
 
     const/4 p4, 0x1
 
-    .line 5
     aget-object v0, p1, p4
 
     const/4 v1, 0x2
 
-    .line 6
     aget-object v2, p1, v1
 
     const/4 v3, 0x3
 
-    .line 7
     aget-object p1, p1, v3
 
     if-eqz p3, :cond_0
 
-    .line 8
     iget v4, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->a:I
 
     iget v5, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->e:I
@@ -341,7 +310,6 @@
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 9
     iget p2, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->b:I
 
     iget v4, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->f:I
@@ -351,7 +319,6 @@
     :cond_1
     if-eqz v2, :cond_2
 
-    .line 10
     iget p2, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->c:I
 
     iget p4, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->g:I
@@ -361,14 +328,12 @@
     :cond_2
     if-eqz p1, :cond_3
 
-    .line 11
     iget p2, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->d:I
 
     iget p4, p0, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->h:I
 
     invoke-direct {p0, p1, v3, p2, p4}, Lcom/ifengyu/intercom/ui/widget/view/TextViewDrawable;->a(Landroid/graphics/drawable/Drawable;III)V
 
-    .line 12
     :cond_3
     invoke-virtual {p0, p3, v0, v2, p1}, Landroidx/appcompat/widget/AppCompatTextView;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 

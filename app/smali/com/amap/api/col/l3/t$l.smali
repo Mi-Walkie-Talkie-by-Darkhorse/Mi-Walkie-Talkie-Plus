@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/t$l;
 .super Ljava/io/Writer;
-.source "GLTextureView.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/io/Writer;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -38,7 +35,6 @@
 .method private a()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/t$l;->a:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
@@ -47,12 +43,10 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/t$l;->a:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/t$l;->a:Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
@@ -72,7 +66,6 @@
 .method public final close()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/t$l;->a()V
 
     return-void
@@ -81,7 +74,6 @@
 .method public final flush()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/t$l;->a()V
 
     return-void
@@ -97,19 +89,16 @@
 
     add-int v1, p2, v0
 
-    .line 1
     aget-char v1, p1, v1
 
     const/16 v2, 0xa
 
     if-ne v1, v2, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/amap/api/col/l3/t$l;->a()V
 
     goto :goto_1
 
-    .line 3
     :cond_0
     iget-object v2, p0, Lcom/amap/api/col/l3/t$l;->a:Ljava/lang/StringBuilder;
 

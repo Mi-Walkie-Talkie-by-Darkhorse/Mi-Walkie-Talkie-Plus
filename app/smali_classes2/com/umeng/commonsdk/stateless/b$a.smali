@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/stateless/b$a;
 .super Landroid/os/FileObserver;
-.source "UMSLNetWorkSender.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/os/FileObserver;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -37,7 +35,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     new-instance p1, Ljava/lang/StringBuilder;
 
@@ -59,7 +56,6 @@
 
     const/16 p1, 0x112
 
-    .line 2
     invoke-static {p1}, Lcom/umeng/commonsdk/stateless/b;->a(I)V
 
     :goto_0

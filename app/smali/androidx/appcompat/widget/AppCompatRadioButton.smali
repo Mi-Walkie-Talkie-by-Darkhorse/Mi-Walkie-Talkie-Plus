@@ -1,6 +1,5 @@
 .class public Landroidx/appcompat/widget/AppCompatRadioButton;
 .super Landroid/widget/RadioButton;
-.source "AppCompatRadioButton.java"
 
 # interfaces
 .implements Landroidx/core/widget/k;
@@ -21,7 +20,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Landroidx/appcompat/widget/AppCompatRadioButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -34,7 +32,6 @@
         .end annotation
     .end param
 
-    .line 2
     sget v0, Landroidx/appcompat/R$attr;->radioButtonStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Landroidx/appcompat/widget/AppCompatRadioButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -49,48 +46,40 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-static {p1}, Landroidx/appcompat/widget/b0;->b(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
 
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/RadioButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/RadioButton;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
     invoke-static {p0, p1}, Landroidx/appcompat/widget/z;->a(Landroid/view/View;Landroid/content/Context;)V
 
-    .line 5
     new-instance p1, Landroidx/appcompat/widget/e;
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/e;-><init>(Landroid/widget/CompoundButton;)V
 
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mCompoundButtonHelper:Landroidx/appcompat/widget/e;
 
-    .line 6
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/e;->a(Landroid/util/AttributeSet;I)V
 
-    .line 7
     new-instance p1, Landroidx/appcompat/widget/d;
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/d;-><init>(Landroid/view/View;)V
 
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mBackgroundTintHelper:Landroidx/appcompat/widget/d;
 
-    .line 8
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/d;->a(Landroid/util/AttributeSet;I)V
 
-    .line 9
     new-instance p1, Landroidx/appcompat/widget/m;
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/m;-><init>(Landroid/widget/TextView;)V
 
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mTextHelper:Landroidx/appcompat/widget/m;
 
-    .line 10
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/m;->a(Landroid/util/AttributeSet;I)V
 
     return-void
@@ -101,24 +90,19 @@
 .method protected drawableStateChanged()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/widget/RadioButton;->drawableStateChanged()V
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mBackgroundTintHelper:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Landroidx/appcompat/widget/d;->a()V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mTextHelper:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-virtual {v0}, Landroidx/appcompat/widget/m;->a()V
 
     :cond_1
@@ -128,17 +112,14 @@
 .method public getCompoundPaddingLeft()I
     .locals 2
 
-    .line 1
     invoke-super {p0}, Landroid/widget/RadioButton;->getCompoundPaddingLeft()I
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mCompoundButtonHelper:Landroidx/appcompat/widget/e;
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-virtual {v1, v0}, Landroidx/appcompat/widget/e;->a(I)I
 
     move-result v0
@@ -158,12 +139,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mBackgroundTintHelper:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroidx/appcompat/widget/d;->b()Landroid/content/res/ColorStateList;
 
     move-result-object v0
@@ -188,12 +167,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mBackgroundTintHelper:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroidx/appcompat/widget/d;->c()Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v0
@@ -218,12 +195,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mCompoundButtonHelper:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroidx/appcompat/widget/e;->b()Landroid/content/res/ColorStateList;
 
     move-result-object v0
@@ -248,12 +223,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mCompoundButtonHelper:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroidx/appcompat/widget/e;->c()Landroid/graphics/PorterDuff$Mode;
 
     move-result-object v0
@@ -274,15 +247,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/RadioButton;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mBackgroundTintHelper:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/d;->a(Landroid/graphics/drawable/Drawable;)V
 
     :cond_0
@@ -296,15 +266,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/RadioButton;->setBackgroundResource(I)V
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mBackgroundTintHelper:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/d;->a(I)V
 
     :cond_0
@@ -318,7 +285,6 @@
         .end annotation
     .end param
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/RadioButton;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -335,15 +301,12 @@
 .method public setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/RadioButton;->setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
 
-    .line 2
     iget-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mCompoundButtonHelper:Landroidx/appcompat/widget/e;
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Landroidx/appcompat/widget/e;->d()V
 
     :cond_0
@@ -362,12 +325,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mBackgroundTintHelper:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/d;->b(Landroid/content/res/ColorStateList;)V
 
     :cond_0
@@ -386,12 +347,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mBackgroundTintHelper:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/d;->a(Landroid/graphics/PorterDuff$Mode;)V
 
     :cond_0
@@ -410,12 +369,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mCompoundButtonHelper:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/e;->a(Landroid/content/res/ColorStateList;)V
 
     :cond_0
@@ -434,12 +391,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->mCompoundButtonHelper:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/e;->a(Landroid/graphics/PorterDuff$Mode;)V
 
     :cond_0

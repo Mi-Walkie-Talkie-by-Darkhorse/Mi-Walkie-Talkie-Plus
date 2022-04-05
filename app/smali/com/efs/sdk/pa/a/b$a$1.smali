@@ -1,6 +1,5 @@
 .class final Lcom/efs/sdk/pa/a/b$a$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnPreDrawListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/efs/sdk/pa/a/b$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/pa/a/b$a$1;->a:Lcom/efs/sdk/pa/a/b$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,10 +36,8 @@
 .method public final onPreDraw()Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/efs/sdk/pa/a/b$a$1;->a:Lcom/efs/sdk/pa/a/b$a;
 
-    .line 2
     iget-wide v1, v0, Lcom/efs/sdk/pa/a/b$a;->b:J
 
     const-wide/16 v3, 0x1

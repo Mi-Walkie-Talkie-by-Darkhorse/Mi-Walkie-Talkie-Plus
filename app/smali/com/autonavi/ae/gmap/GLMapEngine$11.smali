@@ -1,6 +1,5 @@
 .class Lcom/autonavi/ae/gmap/GLMapEngine$11;
 .super Ljava/lang/Object;
-.source "GLMapEngine.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/autonavi/ae/gmap/GLMapEngine;ILandroid/graphics/Point;IF)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$11;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iput p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine$11;->val$engineID:I
@@ -54,7 +52,6 @@
 .method public run()V
     .locals 15
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$11;->val$engineID:I
 
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$11;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
@@ -65,12 +62,10 @@
 
     invoke-static {v0, v1, v2}, Lcom/autonavi/ae/gmap/GLMapEngine;->access$700(IJ)V
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$11;->val$pivot:Landroid/graphics/Point;
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$11;->val$engineID:I
 
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$11;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
@@ -93,7 +88,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     iget v8, p0, Lcom/autonavi/ae/gmap/GLMapEngine$11;->val$engineID:I
 

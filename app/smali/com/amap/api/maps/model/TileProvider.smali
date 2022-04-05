@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/maps/model/TileProvider;
 .super Ljava/lang/Object;
-.source "TileProvider.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-static {v0, v0, v1}, Lcom/amap/api/maps/model/Tile;->obtain(II[B)Lcom/amap/api/maps/model/Tile;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class public Landroidx/core/content/res/FontResourcesParserCompat;
 .super Ljava/lang/Object;
-.source "FontResourcesParserCompat.java"
 
 
 # annotations
@@ -25,30 +24,25 @@
 .method private static a(Landroid/content/res/TypedArray;I)I
     .locals 2
 
-    .line 4
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
     if-lt v0, v1, :cond_0
 
-    .line 5
     invoke-virtual {p0, p1}, Landroid/content/res/TypedArray;->getType(I)I
 
     move-result p0
 
     return p0
 
-    .line 6
     :cond_0
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 7
     invoke-virtual {p0, p1, v0}, Landroid/content/res/TypedArray;->getValue(ILandroid/util/TypedValue;)Z
 
-    .line 8
     iget p0, v0, Landroid/util/TypedValue;->type:I
 
     return p0
@@ -66,7 +60,6 @@
         }
     .end annotation
 
-    .line 1
     :goto_0
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -85,14 +78,12 @@
     :cond_0
     if-ne v0, v1, :cond_1
 
-    .line 2
     invoke-static {p0, p1}, Landroidx/core/content/res/FontResourcesParserCompat;->b(Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources;)Landroidx/core/content/res/FontResourcesParserCompat$a;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_1
     new-instance p0, Lorg/xmlpull/v1/XmlPullParserException;
 
@@ -122,20 +113,17 @@
 
     if-nez p1, :cond_0
 
-    .line 9
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 
-    .line 10
     :cond_0
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->obtainTypedArray(I)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 11
     :try_start_0
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->length()I
 
@@ -143,19 +131,16 @@
 
     if-nez v1, :cond_1
 
-    .line 12
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 13
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     return-object p0
 
-    .line 14
     :cond_1
     :try_start_1
     new-instance v1, Ljava/util/ArrayList;
@@ -164,7 +149,6 @@
 
     const/4 v2, 0x0
 
-    .line 15
     invoke-static {v0, v2}, Landroidx/core/content/res/FontResourcesParserCompat;->a(Landroid/content/res/TypedArray;I)I
 
     move-result v3
@@ -175,7 +159,6 @@
 
     const/4 p1, 0x0
 
-    .line 16
     :goto_0
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->length()I
 
@@ -183,14 +166,12 @@
 
     if-ge p1, v3, :cond_4
 
-    .line 17
     invoke-virtual {v0, p1, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 18
     invoke-virtual {p0, v3}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
     move-result-object v3
@@ -206,7 +187,6 @@
 
     goto :goto_0
 
-    .line 19
     :cond_3
     invoke-virtual {p0, p1}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -220,7 +200,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 20
     :cond_4
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
@@ -231,7 +210,6 @@
 
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 21
     throw p0
 .end method
 
@@ -247,12 +225,10 @@
         }
     .end annotation
 
-    .line 22
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 23
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -264,7 +240,6 @@
 
     aget-object v4, p0, v3
 
-    .line 24
     invoke-static {v4, v2}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object v4
@@ -293,7 +268,6 @@
     :goto_0
     if-lez v0, :cond_2
 
-    .line 25
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
     move-result v1
@@ -340,29 +314,24 @@
 
     const/4 v2, 0x2
 
-    .line 1
     invoke-interface {p0, v2, v1, v0}, Lorg/xmlpull/v1/XmlPullParser;->require(ILjava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 3
     invoke-virtual {v2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-static {p0, p1}, Landroidx/core/content/res/FontResourcesParserCompat;->c(Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources;)Landroidx/core/content/res/FontResourcesParserCompat$a;
 
     move-result-object p0
 
     return-object p0
 
-    .line 5
     :cond_0
     invoke-static {p0}, Landroidx/core/content/res/FontResourcesParserCompat;->a(Lorg/xmlpull/v1/XmlPullParser;)V
 
@@ -381,40 +350,34 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
 
     move-result-object v0
 
-    .line 2
     sget-object v1, Landroidx/core/R$styleable;->FontFamily:[I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/res/Resources;->obtainAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object v0
 
-    .line 3
     sget v1, Landroidx/core/R$styleable;->FontFamily_fontProviderAuthority:I
 
     invoke-virtual {v0, v1}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4
     sget v2, Landroidx/core/R$styleable;->FontFamily_fontProviderPackage:I
 
     invoke-virtual {v0, v2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 5
     sget v3, Landroidx/core/R$styleable;->FontFamily_fontProviderQuery:I
 
     invoke-virtual {v0, v3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 6
     sget v4, Landroidx/core/R$styleable;->FontFamily_fontProviderCerts:I
 
     const/4 v5, 0x0
@@ -423,7 +386,6 @@
 
     move-result v4
 
-    .line 7
     sget v5, Landroidx/core/R$styleable;->FontFamily_fontProviderFetchStrategy:I
 
     const/4 v6, 0x1
@@ -432,7 +394,6 @@
 
     move-result v5
 
-    .line 8
     sget v6, Landroidx/core/R$styleable;->FontFamily_fontProviderFetchTimeout:I
 
     const/16 v7, 0x1f4
@@ -441,15 +402,12 @@
 
     move-result v6
 
-    .line 9
     sget v7, Landroidx/core/R$styleable;->FontFamily_fontProviderSystemFontFamily:I
 
-    .line 10
     invoke-virtual {v0, v7}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v7
 
-    .line 11
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
 
     const/4 v0, 0x3
@@ -460,7 +418,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 12
     :goto_0
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -468,18 +425,15 @@
 
     if-eq v8, v0, :cond_0
 
-    .line 13
     invoke-static {p0}, Landroidx/core/content/res/FontResourcesParserCompat;->a(Lorg/xmlpull/v1/XmlPullParser;)V
 
     goto :goto_0
 
-    .line 14
     :cond_0
     invoke-static {p1, v4}, Landroidx/core/content/res/FontResourcesParserCompat;->a(Landroid/content/res/Resources;I)Ljava/util/List;
 
     move-result-object p0
 
-    .line 15
     new-instance p1, Landroidx/core/content/res/FontResourcesParserCompat$d;
 
     new-instance v0, Landroidx/core/provider/d;
@@ -490,13 +444,11 @@
 
     return-object p1
 
-    .line 16
     :cond_1
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 17
     :goto_1
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -504,7 +456,6 @@
 
     if-eq v2, v0, :cond_4
 
-    .line 18
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
 
     move-result v2
@@ -515,7 +466,6 @@
 
     goto :goto_1
 
-    .line 19
     :cond_2
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
 
@@ -523,14 +473,12 @@
 
     const-string v3, "font"
 
-    .line 20
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 21
     invoke-static {p0, p1}, Landroidx/core/content/res/FontResourcesParserCompat;->d(Lorg/xmlpull/v1/XmlPullParser;Landroid/content/res/Resources;)Landroidx/core/content/res/FontResourcesParserCompat$c;
 
     move-result-object v2
@@ -539,13 +487,11 @@
 
     goto :goto_1
 
-    .line 22
     :cond_3
     invoke-static {p0}, Landroidx/core/content/res/FontResourcesParserCompat;->a(Lorg/xmlpull/v1/XmlPullParser;)V
 
     goto :goto_1
 
-    .line 23
     :cond_4
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
@@ -557,18 +503,15 @@
 
     return-object p0
 
-    .line 24
     :cond_5
     new-instance p0, Landroidx/core/content/res/FontResourcesParserCompat$b;
 
-    .line 25
     invoke-interface {v1}, Ljava/util/List;->size()I
 
     move-result p1
 
     new-array p1, p1, [Landroidx/core/content/res/FontResourcesParserCompat$c;
 
-    .line 26
     invoke-interface {v1, p1}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p1
@@ -589,19 +532,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
 
     move-result-object v0
 
-    .line 2
     sget-object v1, Landroidx/core/R$styleable;->FontFamilyFont:[I
 
     invoke-virtual {p1, v0, v1}, Landroid/content/res/Resources;->obtainAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 3
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_fontWeight:I
 
     invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
@@ -610,24 +550,20 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_fontWeight:I
 
     goto :goto_0
 
-    .line 5
     :cond_0
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_android_fontWeight:I
 
     :goto_0
     const/16 v1, 0x190
 
-    .line 6
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v4
 
-    .line 7
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_fontStyle:I
 
     invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
@@ -636,19 +572,16 @@
 
     if-eqz v0, :cond_1
 
-    .line 8
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_fontStyle:I
 
     goto :goto_1
 
-    .line 9
     :cond_1
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_android_fontStyle:I
 
     :goto_1
     const/4 v1, 0x0
 
-    .line 10
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v0
@@ -664,7 +597,6 @@
     :cond_2
     const/4 v5, 0x0
 
-    .line 11
     :goto_2
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_ttcIndex:I
 
@@ -674,16 +606,13 @@
 
     if-eqz v0, :cond_3
 
-    .line 12
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_ttcIndex:I
 
     goto :goto_3
 
-    .line 13
     :cond_3
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_android_ttcIndex:I
 
-    .line 14
     :goto_3
     sget v2, Landroidx/core/R$styleable;->FontFamilyFont_fontVariationSettings:I
 
@@ -693,27 +622,22 @@
 
     if-eqz v2, :cond_4
 
-    .line 15
     sget v2, Landroidx/core/R$styleable;->FontFamilyFont_fontVariationSettings:I
 
     goto :goto_4
 
-    .line 16
     :cond_4
     sget v2, Landroidx/core/R$styleable;->FontFamilyFont_android_fontVariationSettings:I
 
-    .line 17
     :goto_4
     invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 18
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v7
 
-    .line 19
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_font:I
 
     invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->hasValue(I)Z
@@ -722,30 +646,24 @@
 
     if-eqz v0, :cond_5
 
-    .line 20
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_font:I
 
     goto :goto_5
 
-    .line 21
     :cond_5
     sget v0, Landroidx/core/R$styleable;->FontFamilyFont_android_font:I
 
-    .line 22
     :goto_5
     invoke-virtual {p1, v0, v1}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result v8
 
-    .line 23
     invoke-virtual {p1, v0}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 24
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 25
     :goto_6
     invoke-interface {p0}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -755,12 +673,10 @@
 
     if-eq p1, v0, :cond_6
 
-    .line 26
     invoke-static {p0}, Landroidx/core/content/res/FontResourcesParserCompat;->a(Lorg/xmlpull/v1/XmlPullParser;)V
 
     goto :goto_6
 
-    .line 27
     :cond_6
     new-instance p0, Landroidx/core/content/res/FontResourcesParserCompat$c;
 

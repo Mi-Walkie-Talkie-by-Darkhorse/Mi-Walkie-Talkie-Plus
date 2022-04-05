@@ -1,6 +1,5 @@
 .class Landroidx/transition/h;
 .super Ljava/lang/Object;
-.source "GhostViewPlatform.java"
 
 # interfaces
 .implements Landroidx/transition/f;
@@ -45,10 +44,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/transition/h;->a:Landroid/view/View;
 
     return-void
@@ -57,17 +54,14 @@
 .method static a(Landroid/view/View;Landroid/view/ViewGroup;Landroid/graphics/Matrix;)Landroidx/transition/f;
     .locals 5
 
-    .line 1
     invoke-static {}, Landroidx/transition/h;->a()V
 
-    .line 2
     sget-object v0, Landroidx/transition/h;->d:Ljava/lang/reflect/Method;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 3
     :try_start_0
     new-instance v2, Landroidx/transition/h;
 
@@ -87,7 +81,6 @@
 
     aput-object p2, v3, p0
 
-    .line 4
     invoke-virtual {v0, v1, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -104,7 +97,6 @@
     :catch_0
     move-exception p0
 
-    .line 5
     new-instance p1, Ljava/lang/RuntimeException;
 
     invoke-virtual {p0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
@@ -123,18 +115,15 @@
 .method private static a()V
     .locals 6
 
-    .line 10
     sget-boolean v0, Landroidx/transition/h;->e:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 11
     :try_start_0
     invoke-static {}, Landroidx/transition/h;->b()V
 
-    .line 12
     sget-object v1, Landroidx/transition/h;->b:Ljava/lang/Class;
 
     const-string v2, "addGhost"
@@ -165,7 +154,6 @@
 
     sput-object v1, Landroidx/transition/h;->d:Ljava/lang/reflect/Method;
 
-    .line 13
     invoke-virtual {v1, v0}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
@@ -179,10 +167,8 @@
 
     const-string v3, "Failed to retrieve addGhost method"
 
-    .line 14
     invoke-static {v2, v3, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 15
     :goto_0
     sput-boolean v0, Landroidx/transition/h;->e:Z
 
@@ -193,10 +179,8 @@
 .method static a(Landroid/view/View;)V
     .locals 4
 
-    .line 6
     invoke-static {}, Landroidx/transition/h;->c()V
 
-    .line 7
     sget-object v0, Landroidx/transition/h;->f:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
@@ -212,7 +196,6 @@
 
     aput-object p0, v2, v3
 
-    .line 8
     invoke-virtual {v0, v1, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_1
@@ -223,7 +206,6 @@
     :catch_0
     move-exception p0
 
-    .line 9
     new-instance v0, Ljava/lang/RuntimeException;
 
     invoke-virtual {p0}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
@@ -243,7 +225,6 @@
 .method private static b()V
     .locals 3
 
-    .line 1
     sget-boolean v0, Landroidx/transition/h;->c:Z
 
     if-nez v0, :cond_0
@@ -251,7 +232,6 @@
     :try_start_0
     const-string v0, "android.view.GhostView"
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v0
@@ -269,13 +249,11 @@
 
     const-string v2, "Failed to retrieve GhostView class"
 
-    .line 3
     invoke-static {v1, v2, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :goto_0
     const/4 v0, 0x1
 
-    .line 4
     sput-boolean v0, Landroidx/transition/h;->c:Z
 
     :cond_0
@@ -285,18 +263,15 @@
 .method private static c()V
     .locals 6
 
-    .line 1
     sget-boolean v0, Landroidx/transition/h;->g:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
     :try_start_0
     invoke-static {}, Landroidx/transition/h;->b()V
 
-    .line 3
     sget-object v1, Landroidx/transition/h;->b:Ljava/lang/Class;
 
     const-string v2, "removeGhost"
@@ -315,7 +290,6 @@
 
     sput-object v1, Landroidx/transition/h;->f:Ljava/lang/reflect/Method;
 
-    .line 4
     invoke-virtual {v1, v0}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
@@ -329,10 +303,8 @@
 
     const-string v3, "Failed to retrieve removeGhost method"
 
-    .line 5
     invoke-static {v2, v3, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 6
     :goto_0
     sput-boolean v0, Landroidx/transition/h;->g:Z
 
@@ -351,7 +323,6 @@
 .method public setVisibility(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/transition/h;->a:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setVisibility(I)V

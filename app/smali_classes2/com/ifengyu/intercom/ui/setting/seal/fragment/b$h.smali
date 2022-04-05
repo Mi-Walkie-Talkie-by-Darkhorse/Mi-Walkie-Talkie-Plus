@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;
 .super Ljava/lang/Object;
-.source "SealPresetFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getResult()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam$SEAL_DEV_UERR;
@@ -53,7 +50,6 @@
 
     if-ne v0, v1, :cond_6
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->e(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)Z
@@ -64,12 +60,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->a(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;Z)Z
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->c(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -78,7 +72,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->b(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
@@ -93,7 +86,6 @@
 
     invoke-virtual {v0, v2}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->b(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->b(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
@@ -108,7 +100,6 @@
 
     invoke-virtual {v0, v2}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->f(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)Lb/d/a/a/a;
@@ -117,7 +108,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->f(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)Lb/d/a/a/a;
@@ -126,7 +116,6 @@
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyDataSetChanged()V
 
-    .line 9
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
@@ -136,7 +125,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->g(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)Lb/d/a/a/a;
@@ -145,13 +133,11 @@
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyDataSetChanged()V
 
-    .line 11
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->k()V
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->hasIsAllPublic()Z
@@ -160,7 +146,6 @@
 
     if-eqz v0, :cond_7
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getIsAllPublic()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_SWITCH;
@@ -183,7 +168,6 @@
     :goto_0
     if-eqz v0, :cond_3
 
-    .line 14
     invoke-static {}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->n()[I
 
     move-result-object v2
@@ -195,7 +179,6 @@
 
     move-result-object v2
 
-    .line 15
     :goto_1
     iget-object v4, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
@@ -221,7 +204,6 @@
 
     invoke-virtual {v4, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->d(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)Ljava/util/List;
@@ -232,29 +214,23 @@
 
     const/4 v0, 0x0
 
-    .line 17
     :goto_3
     array-length v4, v2
 
     if-ge v0, v4, :cond_5
 
-    .line 18
     new-instance v4, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-direct {v4}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;-><init>()V
 
-    .line 19
     invoke-virtual {v4, v0}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->b(I)V
 
-    .line 20
     invoke-virtual {v4, v1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->i(I)V
 
-    .line 21
     aget v5, v2, v0
 
     invoke-virtual {v4, v5}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->d(I)V
 
-    .line 22
     aget v5, v2, v0
 
     invoke-virtual {v4, v5}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->g(I)V
@@ -265,7 +241,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 23
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v7
@@ -278,16 +253,12 @@
 
     invoke-virtual {v4, v5}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->a(Ljava/lang/String;)V
 
-    .line 24
     invoke-virtual {v4, v1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->c(I)V
 
-    .line 25
     invoke-virtual {v4, v1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->f(I)V
 
-    .line 26
     invoke-virtual {v4, v3}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->b(Z)V
 
-    .line 27
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
     invoke-static {v5}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;->d(Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;)Ljava/util/List;
@@ -298,7 +269,6 @@
 
     goto :goto_3
 
-    .line 28
     :cond_5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 
@@ -310,7 +280,6 @@
 
     goto :goto_4
 
-    .line 29
     :cond_6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/b$h;->b:Lcom/ifengyu/intercom/ui/setting/seal/fragment/b;
 

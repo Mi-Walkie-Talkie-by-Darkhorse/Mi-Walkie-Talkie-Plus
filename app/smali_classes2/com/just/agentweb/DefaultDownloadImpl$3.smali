@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultDownloadImpl$3;
 .super Ljava/lang/Object;
-.source "DefaultDownloadImpl.java"
 
 # interfaces
 .implements Landroid/os/Handler$Callback;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/just/agentweb/DefaultDownloadImpl;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultDownloadImpl$3;->this$0:Lcom/just/agentweb/DefaultDownloadImpl;
 
     iput-object p2, p0, Lcom/just/agentweb/DefaultDownloadImpl$3;->val$url:Ljava/lang/String;
@@ -42,7 +40,6 @@
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/just/agentweb/DefaultDownloadImpl$3;->this$0:Lcom/just/agentweb/DefaultDownloadImpl;
 
     iget-object v0, p0, Lcom/just/agentweb/DefaultDownloadImpl$3;->val$url:Ljava/lang/String;

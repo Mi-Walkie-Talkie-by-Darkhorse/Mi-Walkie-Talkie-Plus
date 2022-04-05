@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultWebClient$1$1;
 .super Ljava/lang/Object;
-.source "DefaultWebClient.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/just/agentweb/DefaultWebClient$1;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultWebClient$1$1;->this$1:Lcom/just/agentweb/DefaultWebClient$1;
 
     iput-object p2, p0, Lcom/just/agentweb/DefaultWebClient$1$1;->val$url:Ljava/lang/String;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/DefaultWebClient$1$1;->this$1:Lcom/just/agentweb/DefaultWebClient$1;
 
     iget-object v0, v0, Lcom/just/agentweb/DefaultWebClient$1;->val$view:Landroid/webkit/WebView;

@@ -1,6 +1,5 @@
 .class Lcom/google/common/cache/LocalCache$StrongEntry;
 .super Lcom/google/common/cache/LocalCache$AbstractReferenceEntry;
-.source "LocalCache.java"
 
 
 # annotations
@@ -71,23 +70,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/cache/LocalCache$AbstractReferenceEntry;-><init>()V
 
-    .line 2
     invoke-static {}, Lcom/google/common/cache/LocalCache;->unset()Lcom/google/common/cache/LocalCache$ValueReference;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->valueReference:Lcom/google/common/cache/LocalCache$ValueReference;
 
-    .line 3
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->key:Ljava/lang/Object;
 
-    .line 4
     iput p2, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->hash:I
 
-    .line 5
     iput-object p3, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->next:Lcom/google/common/cache/LocalCache$ReferenceEntry;
 
     return-void
@@ -98,7 +92,6 @@
 .method public getHash()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->hash:I
 
     return v0
@@ -112,7 +105,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->key:Ljava/lang/Object;
 
     return-object v0
@@ -128,7 +120,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->next:Lcom/google/common/cache/LocalCache$ReferenceEntry;
 
     return-object v0
@@ -144,7 +135,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->valueReference:Lcom/google/common/cache/LocalCache$ValueReference;
 
     return-object v0
@@ -160,7 +150,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/cache/LocalCache$StrongEntry;->valueReference:Lcom/google/common/cache/LocalCache$ValueReference;
 
     return-void

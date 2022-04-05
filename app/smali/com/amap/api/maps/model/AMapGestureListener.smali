@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/maps/model/AMapGestureListener;
 .super Ljava/lang/Object;
-.source "AMapGestureListener.java"
 
 
 # virtual methods

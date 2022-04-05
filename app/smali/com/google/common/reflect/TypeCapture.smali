@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/reflect/TypeCapture;
 .super Ljava/lang/Object;
-.source "TypeCapture.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
 .method final capture()Ljava/lang/reflect/Type;
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -38,7 +35,6 @@
 
     move-result-object v0
 
-    .line 2
     instance-of v1, v0, Ljava/lang/reflect/ParameterizedType;
 
     const/4 v2, 0x1
@@ -53,7 +49,6 @@
 
     invoke-static {v1, v4, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     check-cast v0, Ljava/lang/reflect/ParameterizedType;
 
     invoke-interface {v0}, Ljava/lang/reflect/ParameterizedType;->getActualTypeArguments()[Ljava/lang/reflect/Type;

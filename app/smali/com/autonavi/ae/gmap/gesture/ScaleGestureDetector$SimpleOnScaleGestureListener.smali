@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$SimpleOnScaleGestureListener;
 .super Ljava/lang/Object;
-.source "ScaleGestureDetector.java"
 
 # interfaces
 .implements Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

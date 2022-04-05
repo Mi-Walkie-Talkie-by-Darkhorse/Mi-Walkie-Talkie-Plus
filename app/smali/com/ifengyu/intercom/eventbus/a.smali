@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/eventbus/a;
 .super Ljava/lang/Object;
-.source "MiBus.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/squareup/otto/b;
 
     sget-object v1, Lcom/squareup/otto/g;->a:Lcom/squareup/otto/g;
@@ -26,7 +24,6 @@
 .method public static a()Lcom/squareup/otto/b;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/eventbus/a;->a:Lcom/squareup/otto/b;
 
     return-object v0

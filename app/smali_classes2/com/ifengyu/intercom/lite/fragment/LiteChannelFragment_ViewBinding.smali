@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment_ViewBinding;
 .super Ljava/lang/Object;
-.source "LiteChannelFragment_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment_ViewBinding;->a:Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;
 
-    .line 3
     const-class v0, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     const v1, 0x7f090426
@@ -37,7 +33,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
-    .line 4
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090486
@@ -52,7 +47,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTvReceiveFreq:Landroid/widget/TextView;
 
-    .line 5
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090493
@@ -67,7 +61,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTvSendFreq:Landroid/widget/TextView;
 
-    .line 6
     const-class v0, Landroid/widget/RelativeLayout;
 
     const v1, 0x7f09022c
@@ -82,7 +75,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mLlChannelBoard:Landroid/widget/RelativeLayout;
 
-    .line 7
     const-class v0, Landroidx/recyclerview/widget/RecyclerView;
 
     const v1, 0x7f090339
@@ -97,7 +89,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 8
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09045f
@@ -112,7 +103,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTvChannelName:Landroid/widget/TextView;
 
-    .line 9
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09045d
@@ -127,7 +117,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTvBoardTitle:Landroid/widget/TextView;
 
-    .line 10
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09045c
@@ -142,7 +131,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTvBoardDetail:Landroid/widget/TextView;
 
-    .line 11
     const-class v0, Landroid/widget/LinearLayout;
 
     const v1, 0x7f090158
@@ -157,7 +145,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mEmptyBoard:Landroid/widget/LinearLayout;
 
-    .line 12
     const-class v0, Landroid/widget/RelativeLayout;
 
     const v1, 0x7f0900eb
@@ -172,7 +159,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mContentBoard:Landroid/widget/RelativeLayout;
 
-    .line 13
     const-class v0, Landroid/widget/RelativeLayout;
 
     const v1, 0x7f090350
@@ -197,52 +183,38 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment_ViewBinding;->a:Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment_ViewBinding;->a:Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTvReceiveFreq:Landroid/widget/TextView;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTvSendFreq:Landroid/widget/TextView;
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mLlChannelBoard:Landroid/widget/RelativeLayout;
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mRecyclerView:Landroidx/recyclerview/widget/RecyclerView;
 
-    .line 8
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTvChannelName:Landroid/widget/TextView;
 
-    .line 9
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTvBoardTitle:Landroid/widget/TextView;
 
-    .line 10
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mTvBoardDetail:Landroid/widget/TextView;
 
-    .line 11
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mEmptyBoard:Landroid/widget/LinearLayout;
 
-    .line 12
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mContentBoard:Landroid/widget/RelativeLayout;
 
-    .line 13
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;->mRlChannelBackup:Landroid/widget/RelativeLayout;
 
     return-void
 
-    .line 14
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

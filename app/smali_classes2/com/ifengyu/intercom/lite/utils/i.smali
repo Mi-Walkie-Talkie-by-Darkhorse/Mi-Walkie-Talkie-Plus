@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/utils/i;
 .super Ljava/lang/Object;
-.source "ParcelHelper.java"
 
 
 # direct methods
@@ -16,7 +15,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
 
@@ -26,14 +24,11 @@
 
     const/4 v1, 0x0
 
-    .line 2
     :try_start_1
     invoke-virtual {v0, p0, v1}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
-    .line 3
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->setDataPosition(I)V
 
-    .line 4
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -48,7 +43,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
     return-object p0
@@ -66,6 +60,5 @@
     :goto_0
     invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
 
-    .line 6
     throw p0
 .end method

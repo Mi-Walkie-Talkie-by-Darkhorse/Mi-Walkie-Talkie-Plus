@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/dt;
 .super Ljava/lang/Object;
-.source "BaseTileProvider.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/model/TileProvider;
@@ -30,10 +29,8 @@
 .method public constructor <init>(Lcom/autonavi/amap/mapcore/MapConfig;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/Random;
 
     invoke-direct {v0}, Ljava/util/Random;-><init>()V
@@ -42,13 +39,10 @@
 
     const/16 v0, 0x100
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/dt;->c:I
 
-    .line 4
     iput v0, p0, Lcom/amap/api/col/l3/dt;->d:I
 
-    .line 5
     iput-object p1, p0, Lcom/amap/api/col/l3/dt;->e:Lcom/autonavi/amap/mapcore/MapConfig;
 
     return-void
@@ -62,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     new-instance v6, Lcom/amap/api/col/l3/dt$a;
 
@@ -80,14 +73,12 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/amap/api/col/l3/dt$a;-><init>(Lcom/amap/api/col/l3/dt;IIILjava/lang/String;)V
 
-    .line 2
     invoke-static {}, Lcom/amap/api/col/l3/ib;->b()Lcom/amap/api/col/l3/ib;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/amap/api/col/l3/dt;->a:Lcom/amap/api/col/l3/ib;
 
-    .line 3
     invoke-static {v6}, Lcom/amap/api/col/l3/ib;->d(Lcom/amap/api/col/l3/ic;)[B
 
     move-result-object p1
@@ -107,7 +98,6 @@
 .method public final getTile(III)Lcom/amap/api/maps/model/Tile;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/dt;->e:Lcom/autonavi/amap/mapcore/MapConfig;
 
@@ -124,7 +114,6 @@
     :cond_0
     const-string v0, "zh_cn"
 
-    .line 2
     :goto_0
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/amap/api/col/l3/dt;->a(IIILjava/lang/String;)[B
 
@@ -132,12 +121,10 @@
 
     if-nez p1, :cond_1
 
-    .line 3
     sget-object p1, Lcom/amap/api/maps/model/TileProvider;->NO_TILE:Lcom/amap/api/maps/model/Tile;
 
     return-object p1
 
-    .line 4
     :cond_1
     iget p2, p0, Lcom/amap/api/col/l3/dt;->c:I
 
@@ -151,7 +138,6 @@
 
     goto :goto_1
 
-    .line 5
     :catch_0
     sget-object p1, Lcom/amap/api/maps/model/TileProvider;->NO_TILE:Lcom/amap/api/maps/model/Tile;
 
@@ -162,7 +148,6 @@
 .method public final getTileHeight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/dt;->d:I
 
     return v0
@@ -171,7 +156,6 @@
 .method public final getTileWidth()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/dt;->c:I
 
     return v0

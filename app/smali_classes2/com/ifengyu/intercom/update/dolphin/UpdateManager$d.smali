@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;
 .super Landroid/os/Handler;
-.source "UpdateManager.java"
 
 
 # annotations
@@ -36,23 +35,18 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/update/dolphin/UpdateManager;Landroid/app/Activity;Lcom/ifengyu/intercom/network/d/b;Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->h:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->d:I
 
-    .line 3
     iput-object p2, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->e:Landroid/app/Activity;
 
-    .line 4
     iput-object p4, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->f:Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;
 
-    .line 5
     iput-object p3, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->a:Lcom/ifengyu/intercom/network/d/b;
 
     return-void
@@ -63,7 +57,6 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 9
 
-    .line 1
     iget p1, p1, Landroid/os/Message;->what:I
 
     const/4 v0, 0x5
@@ -92,7 +85,6 @@
 
     goto/16 :goto_4
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->f:Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;
 
@@ -100,17 +92,14 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->b:Landroid/app/NotificationManager;
 
     invoke-virtual {p1, v3}, Landroid/app/NotificationManager;->cancel(I)V
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-virtual {p1, v1, v1, v3}, Landroidx/core/app/NotificationCompat$b;->a(IIZ)Landroidx/core/app/NotificationCompat$b;
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     const v0, 0x7f110215
@@ -121,7 +110,6 @@
 
     invoke-virtual {p1, v0}, Landroidx/core/app/NotificationCompat$b;->b(Ljava/lang/CharSequence;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-virtual {p1}, Landroidx/core/app/NotificationCompat$b;->a()Landroid/app/Notification;
@@ -130,28 +118,23 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->c:Landroid/app/Notification;
 
-    .line 7
     iput v4, p1, Landroid/app/Notification;->flags:I
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->b:Landroid/app/NotificationManager;
 
     invoke-virtual {v0, v3, p1}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->h:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
     invoke-static {p1, v3}, Lcom/ifengyu/intercom/update/dolphin/UpdateManager;->a(Lcom/ifengyu/intercom/update/dolphin/UpdateManager;Z)Z
 
     goto/16 :goto_4
 
-    .line 10
     :cond_1
     sget-object v0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;
 
     if-ne p1, v0, :cond_e
 
-    .line 11
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->h:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/update/dolphin/UpdateManager;->d(Lcom/ifengyu/intercom/update/dolphin/UpdateManager;)Ljava/util/Set;
@@ -178,12 +161,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 12
     invoke-interface {v0}, Lcom/ifengyu/intercom/network/OnDownloadListener;->h()V
 
     goto :goto_0
 
-    .line 13
     :cond_3
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->f:Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;
 
@@ -195,17 +176,14 @@
 
     if-ne p1, v0, :cond_5
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->b:Landroid/app/NotificationManager;
 
     invoke-virtual {p1, v3}, Landroid/app/NotificationManager;->cancel(I)V
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-virtual {p1, v1, v1, v3}, Landroidx/core/app/NotificationCompat$b;->a(IIZ)Landroidx/core/app/NotificationCompat$b;
 
-    .line 16
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     const v0, 0x7f110214
@@ -216,7 +194,6 @@
 
     invoke-virtual {p1, v0}, Landroidx/core/app/NotificationCompat$b;->b(Ljava/lang/CharSequence;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 17
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-virtual {p1}, Landroidx/core/app/NotificationCompat$b;->a()Landroid/app/Notification;
@@ -225,10 +202,8 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->c:Landroid/app/Notification;
 
-    .line 18
     iput v4, p1, Landroid/app/Notification;->flags:I
 
-    .line 19
     new-instance p1, Landroid/content/Intent;
 
     const-string v0, "android.intent.action.VIEW"
@@ -237,10 +212,8 @@
 
     const/high16 v0, 0x10000000
 
-    .line 20
     invoke-virtual {p1, v0}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 21
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -269,7 +242,6 @@
 
     move-result-object v0
 
-    .line 22
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v4, 0x18
@@ -278,7 +250,6 @@
 
     if-lt v1, v4, :cond_4
 
-    .line 23
     iget-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->e:Landroid/app/Activity;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -313,15 +284,12 @@
 
     move-result-object v0
 
-    .line 24
     invoke-virtual {p1, v2}, Landroid/content/Intent;->addFlags(I)Landroid/content/Intent;
 
-    .line 25
     invoke-virtual {p1, v0, v7}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
     goto :goto_1
 
-    .line 26
     :cond_4
     new-instance v1, Ljava/io/File;
 
@@ -333,7 +301,6 @@
 
     invoke-virtual {p1, v0, v7}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 27
     :goto_1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->c:Landroid/app/Notification;
 
@@ -347,19 +314,16 @@
 
     iput-object p1, v0, Landroid/app/Notification;->contentIntent:Landroid/app/PendingIntent;
 
-    .line 28
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->b:Landroid/app/NotificationManager;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->c:Landroid/app/Notification;
 
     invoke-virtual {p1, v3, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    .line 29
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->h:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
     invoke-static {p1, v3}, Lcom/ifengyu/intercom/update/dolphin/UpdateManager;->a(Lcom/ifengyu/intercom/update/dolphin/UpdateManager;Z)Z
 
-    .line 30
     :cond_5
     sget-object p1, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$c;->a:[I
 
@@ -379,7 +343,6 @@
 
     goto/16 :goto_4
 
-    .line 31
     :cond_6
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->h:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
@@ -407,7 +370,6 @@
 
     if-eqz v0, :cond_7
 
-    .line 32
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -448,7 +410,6 @@
 
     goto :goto_2
 
-    .line 33
     :cond_8
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->h:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
@@ -476,7 +437,6 @@
 
     if-eqz v0, :cond_9
 
-    .line 34
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -503,7 +463,6 @@
 
     goto :goto_3
 
-    .line 35
     :cond_a
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->h:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
@@ -513,7 +472,6 @@
 
     goto/16 :goto_4
 
-    .line 36
     :cond_b
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->f:Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;
 
@@ -521,7 +479,6 @@
 
     if-ne p1, v0, :cond_e
 
-    .line 37
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->a:Lcom/ifengyu/intercom/network/d/b;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/network/d/b;->b()I
@@ -542,14 +499,12 @@
 
     move-result p1
 
-    .line 38
     iget v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->d:I
 
     if-ne p1, v0, :cond_c
 
     return-void
 
-    .line 39
     :cond_c
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
@@ -567,7 +522,6 @@
 
     invoke-virtual {v0, v1, v4, v3}, Landroidx/core/app/NotificationCompat$b;->a(IIZ)Landroidx/core/app/NotificationCompat$b;
 
-    .line 40
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     const v1, 0x7f110216
@@ -586,7 +540,6 @@
 
     invoke-virtual {v0, v1}, Landroidx/core/app/NotificationCompat$b;->b(Ljava/lang/CharSequence;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 41
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-virtual {v0}, Landroidx/core/app/NotificationCompat$b;->a()Landroid/app/Notification;
@@ -595,17 +548,14 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->c:Landroid/app/Notification;
 
-    .line 42
     iget-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->b:Landroid/app/NotificationManager;
 
     invoke-virtual {v1, v3, v0}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    .line 43
     iput p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->d:I
 
     goto/16 :goto_4
 
-    .line 44
     :cond_d
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->f:Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;
 
@@ -613,7 +563,6 @@
 
     if-ne p1, v0, :cond_e
 
-    .line 45
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->e:Landroid/app/Activity;
 
     const-string v0, "notification"
@@ -626,7 +575,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->b:Landroid/app/NotificationManager;
 
-    .line 46
     new-instance p1, Landroidx/core/app/NotificationCompat$b;
 
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
@@ -639,10 +587,8 @@
 
     const v0, 0x7f0e0005
 
-    .line 47
     invoke-virtual {p1, v0}, Landroidx/core/app/NotificationCompat$b;->a(I)Landroidx/core/app/NotificationCompat$b;
 
-    .line 48
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
@@ -659,22 +605,18 @@
 
     invoke-virtual {p1, v0}, Landroidx/core/app/NotificationCompat$b;->a(Landroid/graphics/Bitmap;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 49
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-virtual {p1, v3}, Landroidx/core/app/NotificationCompat$b;->a(Z)Landroidx/core/app/NotificationCompat$b;
 
-    .line 50
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-virtual {p1, v2}, Landroidx/core/app/NotificationCompat$b;->b(Z)Landroidx/core/app/NotificationCompat$b;
 
-    .line 51
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-virtual {p1, v3}, Landroidx/core/app/NotificationCompat$b;->c(Z)Landroidx/core/app/NotificationCompat$b;
 
-    .line 52
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
@@ -693,12 +635,10 @@
 
     invoke-virtual {p1, v0}, Landroidx/core/app/NotificationCompat$b;->b(Ljava/lang/CharSequence;)Landroidx/core/app/NotificationCompat$b;
 
-    .line 53
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-virtual {p1, v1, v3, v3}, Landroidx/core/app/NotificationCompat$b;->a(IIZ)Landroidx/core/app/NotificationCompat$b;
 
-    .line 54
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->g:Landroidx/core/app/NotificationCompat$b;
 
     invoke-virtual {p1}, Landroidx/core/app/NotificationCompat$b;->a()Landroid/app/Notification;
@@ -707,7 +647,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->c:Landroid/app/Notification;
 
-    .line 55
     new-instance p1, Landroid/content/Intent;
 
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
@@ -718,7 +657,6 @@
 
     invoke-direct {p1, v0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 56
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->c:Landroid/app/Notification;
 
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
@@ -731,19 +669,16 @@
 
     iput-object p1, v0, Landroid/app/Notification;->contentIntent:Landroid/app/PendingIntent;
 
-    .line 57
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->c:Landroid/app/Notification;
 
     const/16 v0, 0x20
 
     iput v0, p1, Landroid/app/Notification;->flags:I
 
-    .line 58
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->b:Landroid/app/NotificationManager;
 
     invoke-virtual {v0, v3, p1}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
-    .line 59
     iget-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$d;->h:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
     invoke-static {p1, v2}, Lcom/ifengyu/intercom/update/dolphin/UpdateManager;->a(Lcom/ifengyu/intercom/update/dolphin/UpdateManager;Z)Z

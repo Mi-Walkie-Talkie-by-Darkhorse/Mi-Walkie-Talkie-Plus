@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/MultiPointItem;
 .super Ljava/lang/Object;
-.source "MultiPointItem.java"
 
 
 # instance fields
@@ -21,15 +20,12 @@
 .method public constructor <init>(Lcom/amap/api/maps/model/LatLng;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/maps/model/MultiPointItem;->d:Ljava/lang/String;
 
-    .line 3
     iput-object p1, p0, Lcom/amap/api/maps/model/MultiPointItem;->a:Lcom/amap/api/maps/model/LatLng;
 
     return-void
@@ -46,13 +42,11 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/amap/api/maps/model/MultiPointItem;
 
     if-eqz v1, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/maps/model/MultiPointItem;->d:Ljava/lang/String;
 
     if-eqz v0, :cond_1
@@ -67,7 +61,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 3
     iget-object p1, p0, Lcom/amap/api/maps/model/MultiPointItem;->d:Ljava/lang/String;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/model/MultiPointItem;->getCustomerId()Ljava/lang/String;
@@ -80,7 +73,6 @@
 
     return p1
 
-    .line 4
     :cond_1
     invoke-super {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -95,7 +87,6 @@
 .method public getCustomerId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/MultiPointItem;->d:Ljava/lang/String;
 
     return-object v0
@@ -104,7 +95,6 @@
 .method public getIPoint()Lcom/autonavi/amap/mapcore/IPoint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/MultiPointItem;->b:Lcom/autonavi/amap/mapcore/IPoint;
 
     return-object v0
@@ -113,7 +103,6 @@
 .method public getLatLng()Lcom/amap/api/maps/model/LatLng;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/MultiPointItem;->a:Lcom/amap/api/maps/model/LatLng;
 
     return-object v0
@@ -122,7 +111,6 @@
 .method public getObject()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/MultiPointItem;->c:Ljava/lang/Object;
 
     return-object v0
@@ -131,7 +119,6 @@
 .method public getSnippet()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/MultiPointItem;->f:Ljava/lang/String;
 
     return-object v0
@@ -140,7 +127,6 @@
 .method public getTitle()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/MultiPointItem;->e:Ljava/lang/String;
 
     return-object v0
@@ -149,7 +135,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     invoke-super {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
@@ -160,7 +145,6 @@
 .method public setCustomerId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/MultiPointItem;->d:Ljava/lang/String;
 
     return-void
@@ -169,7 +153,6 @@
 .method public setIPoint(Lcom/autonavi/amap/mapcore/IPoint;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/MultiPointItem;->b:Lcom/autonavi/amap/mapcore/IPoint;
 
     return-void
@@ -178,7 +161,6 @@
 .method public setLatLng(Lcom/amap/api/maps/model/LatLng;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/MultiPointItem;->a:Lcom/amap/api/maps/model/LatLng;
 
     return-void
@@ -187,7 +169,6 @@
 .method public setObject(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/MultiPointItem;->c:Ljava/lang/Object;
 
     return-void
@@ -196,7 +177,6 @@
 .method public setSnippet(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/MultiPointItem;->f:Ljava/lang/String;
 
     return-void
@@ -205,7 +185,6 @@
 .method public setTitle(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/MultiPointItem;->e:Ljava/lang/String;
 
     return-void

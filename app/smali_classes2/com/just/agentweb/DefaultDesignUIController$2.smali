@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultDesignUIController$2;
 .super Landroidx/recyclerview/widget/RecyclerView$g;
-.source "DefaultDesignUIController.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/just/agentweb/DefaultDesignUIController;[Ljava/lang/String;Landroid/os/Handler$Callback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultDesignUIController$2;->this$0:Lcom/just/agentweb/DefaultDesignUIController;
 
     iput-object p2, p0, Lcom/just/agentweb/DefaultDesignUIController$2;->val$ways:[Ljava/lang/String;
@@ -51,7 +49,6 @@
 .method public getItemCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/DefaultDesignUIController$2;->val$ways:[Ljava/lang/String;
 
     array-length v0, v0
@@ -62,7 +59,6 @@
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$y;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/just/agentweb/DefaultDesignUIController$BottomSheetHolder;
 
     invoke-virtual {p0, p1, p2}, Lcom/just/agentweb/DefaultDesignUIController$2;->onBindViewHolder(Lcom/just/agentweb/DefaultDesignUIController$BottomSheetHolder;I)V
@@ -73,12 +69,10 @@
 .method public onBindViewHolder(Lcom/just/agentweb/DefaultDesignUIController$BottomSheetHolder;I)V
     .locals 4
 
-    .line 2
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 3
     iget-object v1, p0, Lcom/just/agentweb/DefaultDesignUIController$2;->this$0:Lcom/just/agentweb/DefaultDesignUIController;
 
     invoke-static {v1}, Lcom/just/agentweb/DefaultDesignUIController;->access$100(Lcom/just/agentweb/DefaultDesignUIController;)Landroid/app/Activity;
@@ -95,14 +89,12 @@
 
     invoke-virtual {v1, v2, v0, v3}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
-    .line 4
     iget-object v1, p1, Lcom/just/agentweb/DefaultDesignUIController$BottomSheetHolder;->mTextView:Landroid/widget/TextView;
 
     iget v0, v0, Landroid/util/TypedValue;->resourceId:I
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setBackgroundResource(I)V
 
-    .line 5
     iget-object v0, p1, Lcom/just/agentweb/DefaultDesignUIController$BottomSheetHolder;->mTextView:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/just/agentweb/DefaultDesignUIController$2;->val$ways:[Ljava/lang/String;
@@ -111,7 +103,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 6
     iget-object p1, p1, Lcom/just/agentweb/DefaultDesignUIController$BottomSheetHolder;->mTextView:Landroid/widget/TextView;
 
     new-instance v0, Lcom/just/agentweb/DefaultDesignUIController$2$1;
@@ -126,7 +117,6 @@
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$y;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/just/agentweb/DefaultDesignUIController$2;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/just/agentweb/DefaultDesignUIController$BottomSheetHolder;
 
     move-result-object p1
@@ -137,7 +127,6 @@
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/just/agentweb/DefaultDesignUIController$BottomSheetHolder;
     .locals 3
 
-    .line 2
     new-instance p2, Lcom/just/agentweb/DefaultDesignUIController$BottomSheetHolder;
 
     iget-object v0, p0, Lcom/just/agentweb/DefaultDesignUIController$2;->this$0:Lcom/just/agentweb/DefaultDesignUIController;

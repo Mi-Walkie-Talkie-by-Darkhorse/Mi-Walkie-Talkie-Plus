@@ -1,6 +1,5 @@
 .class Landroidx/fragment/app/FragmentManager$StartEnterTransitionListener;
 .super Ljava/lang/Object;
-.source "FragmentManager.java"
 
 # interfaces
 .implements Landroidx/fragment/app/Fragment$OnStartEnterTransitionListener;
@@ -33,13 +32,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-boolean p2, p0, Landroidx/fragment/app/FragmentManager$StartEnterTransitionListener;->mIsBack:Z
 
-    .line 3
     iput-object p1, p0, Landroidx/fragment/app/FragmentManager$StartEnterTransitionListener;->mRecord:Landroidx/fragment/app/BackStackRecord;
 
     return-void
@@ -50,7 +46,6 @@
 .method cancelTransaction()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Landroidx/fragment/app/FragmentManager$StartEnterTransitionListener;->mRecord:Landroidx/fragment/app/BackStackRecord;
 
     iget-object v1, v0, Landroidx/fragment/app/BackStackRecord;->mManager:Landroidx/fragment/app/FragmentManager;
@@ -67,7 +62,6 @@
 .method completeTransaction()V
     .locals 5
 
-    .line 1
     iget v0, p0, Landroidx/fragment/app/FragmentManager$StartEnterTransitionListener;->mNumPostponed:I
 
     const/4 v1, 0x1
@@ -81,13 +75,11 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     iget-object v2, p0, Landroidx/fragment/app/FragmentManager$StartEnterTransitionListener;->mRecord:Landroidx/fragment/app/BackStackRecord;
 
     iget-object v2, v2, Landroidx/fragment/app/BackStackRecord;->mManager:Landroidx/fragment/app/FragmentManager;
 
-    .line 3
     invoke-virtual {v2}, Landroidx/fragment/app/FragmentManager;->getFragments()Ljava/util/List;
 
     move-result-object v2
@@ -112,24 +104,20 @@
 
     const/4 v4, 0x0
 
-    .line 4
     invoke-virtual {v3, v4}, Landroidx/fragment/app/Fragment;->setOnStartEnterTransitionListener(Landroidx/fragment/app/Fragment$OnStartEnterTransitionListener;)V
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-virtual {v3}, Landroidx/fragment/app/Fragment;->isPostponed()Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 6
     invoke-virtual {v3}, Landroidx/fragment/app/Fragment;->startPostponedEnterTransition()V
 
     goto :goto_1
 
-    .line 7
     :cond_2
     iget-object v2, p0, Landroidx/fragment/app/FragmentManager$StartEnterTransitionListener;->mRecord:Landroidx/fragment/app/BackStackRecord;
 
@@ -147,7 +135,6 @@
 .method public isReady()Z
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/fragment/app/FragmentManager$StartEnterTransitionListener;->mNumPostponed:I
 
     if-nez v0, :cond_0
@@ -166,7 +153,6 @@
 .method public onStartEnterTransition()V
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/fragment/app/FragmentManager$StartEnterTransitionListener;->mNumPostponed:I
 
     add-int/lit8 v0, v0, -0x1
@@ -177,7 +163,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Landroidx/fragment/app/FragmentManager$StartEnterTransitionListener;->mRecord:Landroidx/fragment/app/BackStackRecord;
 
@@ -191,7 +176,6 @@
 .method public startListening()V
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/fragment/app/FragmentManager$StartEnterTransitionListener;->mNumPostponed:I
 
     add-int/lit8 v0, v0, 0x1

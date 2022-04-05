@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/net/HttpHeaders;
 .super Ljava/lang/Object;
-.source "HttpHeaders.java"
 
 
 # annotations
@@ -185,7 +184,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

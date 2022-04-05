@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/eu;
 .super Landroid/view/View;
-.source "BlankView.java"
 
 
 # static fields
@@ -21,7 +20,6 @@
 
     const/16 v1, 0xeb
 
-    .line 1
     invoke-static {v0, v1, v1, v1}, Landroid/graphics/Color;->argb(IIII)I
 
     move-result v1
@@ -30,7 +28,6 @@
 
     const/16 v1, 0x15
 
-    .line 2
     invoke-static {v0, v1, v1, v1}, Landroid/graphics/Color;->argb(IIII)I
 
     move-result v0
@@ -43,10 +40,8 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 2
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
@@ -55,10 +50,8 @@
 
     const/4 v0, 0x1
 
-    .line 3
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 4
     iget-object p1, p0, Lcom/amap/api/col/l3/eu;->c:Landroid/graphics/Paint;
 
     sget v0, Lcom/amap/api/col/l3/eu;->a:I
@@ -75,10 +68,8 @@
 
     const/16 v0, 0x8
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 2
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     const/high16 v1, 0x3f800000    # 1.0f
@@ -87,23 +78,18 @@
 
     invoke-direct {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;-><init>(FF)V
 
-    .line 3
     new-instance v1, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct {v1}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
-    .line 4
     invoke-virtual {v0, v1}, Landroid/view/animation/AlphaAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
     const-wide/16 v1, 0xc8
 
-    .line 5
     invoke-virtual {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
-    .line 6
     invoke-virtual {p0}, Landroid/view/View;->clearAnimation()V
 
-    .line 7
     invoke-virtual {p0, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
     return-void
@@ -112,7 +98,6 @@
 .method protected final onDraw(Landroid/graphics/Canvas;)V
     .locals 7
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0

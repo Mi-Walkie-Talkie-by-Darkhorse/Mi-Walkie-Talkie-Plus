@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ComputingConcurrentHashMap;
 .super Lcom/google/common/collect/MapMakerInternalMap;
-.source "ComputingConcurrentHashMap.java"
 
 
 # annotations
@@ -54,10 +53,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap;-><init>(Lcom/google/common/collect/MapMaker;)V
 
-    .line 2
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -81,7 +78,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;-><init>(Lcom/google/common/collect/MapMakerInternalMap;II)V
@@ -103,7 +99,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -112,7 +107,6 @@
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/google/common/collect/ComputingConcurrentHashMap;->segmentFor(I)Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;
 
     move-result-object v1
@@ -136,7 +130,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-super {p0, p1}, Lcom/google/common/collect/MapMakerInternalMap;->segmentFor(I)Lcom/google/common/collect/MapMakerInternalMap$Segment;
 
     move-result-object p1
@@ -149,7 +142,6 @@
 .method bridge synthetic segmentFor(I)Lcom/google/common/collect/MapMakerInternalMap$Segment;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ComputingConcurrentHashMap;->segmentFor(I)Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSegment;
 
     move-result-object p1
@@ -160,7 +152,6 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 15
 
-    .line 1
     new-instance v14, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputingSerializationProxy;
 
     iget-object v1, p0, Lcom/google/common/collect/MapMakerInternalMap;->keyStrength:Lcom/google/common/collect/MapMakerInternalMap$Strength;

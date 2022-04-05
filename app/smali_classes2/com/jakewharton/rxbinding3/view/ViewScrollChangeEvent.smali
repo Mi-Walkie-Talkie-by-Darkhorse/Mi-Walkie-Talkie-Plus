@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/view/ViewScrollChangeEvent;
 .super Ljava/lang/Object;
-.source "ViewLayoutChangeEventObservable.kt"
 
 
 # annotations
@@ -81,7 +80,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/view/ViewScrollChangeEvent;->view:Landroid/view/View;
@@ -346,7 +344,6 @@
 .method public final getOldScrollX()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewScrollChangeEvent;->oldScrollX:I
 
     return v0
@@ -355,7 +352,6 @@
 .method public final getOldScrollY()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewScrollChangeEvent;->oldScrollY:I
 
     return v0
@@ -364,7 +360,6 @@
 .method public final getScrollX()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewScrollChangeEvent;->scrollX:I
 
     return v0
@@ -373,7 +368,6 @@
 .method public final getScrollY()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/view/ViewScrollChangeEvent;->scrollY:I
 
     return v0
@@ -384,7 +378,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/ViewScrollChangeEvent;->view:Landroid/view/View;
 
     return-object v0

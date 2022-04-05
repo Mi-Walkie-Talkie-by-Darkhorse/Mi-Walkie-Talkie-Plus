@@ -1,6 +1,5 @@
 .class final Lcom/google/common/cache/LocalCache$WeightedStrongValueReference;
 .super Lcom/google/common/cache/LocalCache$StrongValueReference;
-.source "LocalCache.java"
 
 
 # annotations
@@ -39,10 +38,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/cache/LocalCache$StrongValueReference;-><init>(Ljava/lang/Object;)V
 
-    .line 2
     iput p2, p0, Lcom/google/common/cache/LocalCache$WeightedStrongValueReference;->weight:I
 
     return-void
@@ -53,7 +50,6 @@
 .method public getWeight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/cache/LocalCache$WeightedStrongValueReference;->weight:I
 
     return v0

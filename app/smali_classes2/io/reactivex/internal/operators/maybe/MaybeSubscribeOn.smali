@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/maybe/MaybeSubscribeOn;
 .super Lio/reactivex/internal/operators/maybe/AbstractMaybeWithUpstream;
-.source "MaybeSubscribeOn.java"
 
 
 # annotations
@@ -39,10 +38,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/maybe/AbstractMaybeWithUpstream;-><init>(Lio/reactivex/MaybeSource;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/maybe/MaybeSubscribeOn;->scheduler:Lio/reactivex/Scheduler;
 
     return-void
@@ -60,15 +57,12 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/maybe/MaybeSubscribeOn$SubscribeOnMaybeObserver;
 
     invoke-direct {v0, p1}, Lio/reactivex/internal/operators/maybe/MaybeSubscribeOn$SubscribeOnMaybeObserver;-><init>(Lio/reactivex/MaybeObserver;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/MaybeObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     iget-object p1, v0, Lio/reactivex/internal/operators/maybe/MaybeSubscribeOn$SubscribeOnMaybeObserver;->task:Lio/reactivex/internal/disposables/SequentialDisposable;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/maybe/MaybeSubscribeOn;->scheduler:Lio/reactivex/Scheduler;

@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/QMUISeekBar;
 .super Lcom/qmuiteam/qmui/widget/QMUISlider;
-.source "QMUISeekBar.java"
 
 
 # static fields
@@ -26,7 +25,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, La/b/g;
 
     const/4 v1, 0x2
@@ -35,7 +33,6 @@
 
     sput-object v0, Lcom/qmuiteam/qmui/widget/QMUISeekBar;->u:La/b/g;
 
-    .line 2
     sget v1, Lcom/qmuiteam/qmui/R$attr;->qmui_skin_support_seek_bar_color:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -46,7 +43,6 @@
 
     invoke-virtual {v0, v2, v1}, La/b/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     sget-object v0, Lcom/qmuiteam/qmui/widget/QMUISeekBar;->u:La/b/g;
 
     sget v1, Lcom/qmuiteam/qmui/R$attr;->qmui_skin_support_seek_bar_color:I
@@ -71,7 +67,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/qmuiteam/qmui/widget/QMUISeekBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -88,7 +83,6 @@
         .end annotation
     .end param
 
-    .line 2
     sget v0, Lcom/qmuiteam/qmui/R$attr;->QMUISeekBarStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/qmuiteam/qmui/widget/QMUISeekBar;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -107,10 +101,8 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Lcom/qmuiteam/qmui/widget/QMUISlider;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -123,44 +115,36 @@
 
     move-result-object p2
 
-    .line 5
     sget p3, Lcom/qmuiteam/qmui/R$styleable;->QMUISeekBar_qmui_seek_bar_tick_width:I
 
     const/4 v0, 0x1
 
-    .line 6
     invoke-static {p1, v0}, Lcom/qmuiteam/qmui/util/d;->a(Landroid/content/Context;I)I
 
     move-result v1
 
-    .line 7
     invoke-virtual {p2, p3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p3
 
     iput p3, p0, Lcom/qmuiteam/qmui/widget/QMUISeekBar;->t:I
 
-    .line 8
     sget p3, Lcom/qmuiteam/qmui/R$styleable;->QMUISeekBar_qmui_seek_bar_tick_height:I
 
     const/4 v1, 0x4
 
-    .line 9
     invoke-static {p1, v1}, Lcom/qmuiteam/qmui/util/d;->a(Landroid/content/Context;I)I
 
     move-result p1
 
-    .line 10
     invoke-virtual {p2, p3, p1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p1
 
     iput p1, p0, Lcom/qmuiteam/qmui/widget/QMUISeekBar;->s:I
 
-    .line 11
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 12
     invoke-virtual {p0, v0}, Lcom/qmuiteam/qmui/widget/QMUISlider;->setClickToChangeProgress(Z)V
 
     return-void
@@ -179,7 +163,6 @@
 
     move-object/from16 v8, p7
 
-    .line 2
     iget v3, v0, Lcom/qmuiteam/qmui/widget/QMUISeekBar;->s:I
 
     if-lez v3, :cond_2
@@ -236,7 +219,6 @@
     :goto_0
     if-gt v14, v1, :cond_2
 
-    .line 3
     iget v2, v0, Lcom/qmuiteam/qmui/widget/QMUISeekBar;->t:I
 
     int-to-float v3, v2
@@ -262,11 +244,9 @@
     :cond_1
     move/from16 v2, p8
 
-    .line 4
     :goto_1
     invoke-virtual {v8, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 5
     sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v8, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
@@ -279,7 +259,6 @@
 
     move-object/from16 v7, p7
 
-    .line 6
     invoke-virtual/range {v2 .. v7}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
     add-float/2addr v13, v9
@@ -296,7 +275,6 @@
 .method protected a(Landroid/graphics/Canvas;Landroid/graphics/RectF;ILandroid/graphics/Paint;Z)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1, p2, p4}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
     return-void
@@ -314,7 +292,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/widget/QMUISeekBar;->u:La/b/g;
 
     return-object v0
@@ -323,7 +300,6 @@
 .method public getTickHeight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/widget/QMUISeekBar;->s:I
 
     return v0
@@ -332,10 +308,8 @@
 .method public setTickHeight(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/widget/QMUISeekBar;->s:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->invalidate()V
 
     return-void
@@ -344,10 +318,8 @@
 .method public setTickWidth(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/widget/QMUISeekBar;->t:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->invalidate()V
 
     return-void

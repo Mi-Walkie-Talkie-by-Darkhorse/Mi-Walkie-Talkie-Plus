@@ -1,6 +1,5 @@
 .class Lokhttp3/internal/cache/DiskLruCache$1;
 .super Ljava/lang/Object;
-.source "DiskLruCache.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lokhttp3/internal/cache/DiskLruCache;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/cache/DiskLruCache$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/cache/DiskLruCache$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
@@ -71,14 +67,12 @@
 
     if-eqz v1, :cond_1
 
-    .line 3
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     return-void
 
-    .line 4
     :cond_1
     :try_start_1
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
@@ -90,7 +84,6 @@
 
     goto :goto_1
 
-    .line 5
     :catch_0
     :try_start_2
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
@@ -99,7 +92,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 6
     :goto_1
     :try_start_3
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
@@ -110,12 +102,10 @@
 
     if-eqz v1, :cond_2
 
-    .line 7
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     invoke-virtual {v1}, Lokhttp3/internal/cache/DiskLruCache;->rebuildJournal()V
 
-    .line 8
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     iput v2, v1, Lokhttp3/internal/cache/DiskLruCache;->redundantOpCount:I
@@ -125,14 +115,12 @@
 
     goto :goto_2
 
-    .line 9
     :catch_1
     :try_start_4
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     iput-boolean v3, v1, Lokhttp3/internal/cache/DiskLruCache;->mostRecentRebuildFailed:Z
 
-    .line 10
     iget-object v1, p0, Lokhttp3/internal/cache/DiskLruCache$1;->this$0:Lokhttp3/internal/cache/DiskLruCache;
 
     invoke-static {}, Lokio/Okio;->blackhole()Lokio/Sink;
@@ -145,7 +133,6 @@
 
     iput-object v2, v1, Lokhttp3/internal/cache/DiskLruCache;->journalWriter:Lokio/BufferedSink;
 
-    .line 11
     :cond_2
     :goto_2
     monitor-exit v0

@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/a/h;
 .super Ljava/lang/Object;
-.source "ScatterDataProvider.java"
 
 # interfaces
 .implements Lb/a/a/a/e/a/b;

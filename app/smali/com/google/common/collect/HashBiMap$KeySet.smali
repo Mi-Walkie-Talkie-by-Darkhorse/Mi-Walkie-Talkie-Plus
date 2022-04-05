@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/HashBiMap$KeySet;
 .super Lcom/google/common/collect/Maps$KeySet;
-.source "HashBiMap.java"
 
 
 # annotations
@@ -29,10 +28,8 @@
 .method constructor <init>(Lcom/google/common/collect/HashBiMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/HashBiMap$KeySet;->this$0:Lcom/google/common/collect/HashBiMap;
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/collect/Maps$KeySet;-><init>(Ljava/util/Map;)V
 
     return-void
@@ -50,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/HashBiMap$KeySet$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/HashBiMap$KeySet$1;-><init>(Lcom/google/common/collect/HashBiMap$KeySet;)V
@@ -65,7 +61,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$KeySet;->this$0:Lcom/google/common/collect/HashBiMap;
 
     invoke-static {p1}, Lcom/google/common/collect/HashBiMap;->access$300(Ljava/lang/Object;)I
@@ -82,7 +77,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/HashBiMap$KeySet;->this$0:Lcom/google/common/collect/HashBiMap;
 

@@ -1,6 +1,5 @@
 .class final Lcom/umeng/commonsdk/UMConfigureInternation$1;
 .super Ljava/lang/Object;
-.source "UMConfigureInternation.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/UMConfigureInternation$1;->a:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/umeng/commonsdk/UMConfigureInternation$1;->a:Landroid/content/Context;
 
@@ -46,14 +43,12 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/umeng/commonsdk/UMConfigureInternation$1;->a:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -72,7 +67,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/umeng/commonsdk/UMConfigureInternation$1;->a:Landroid/content/Context;
 
     sget-object v1, Lcom/umeng/commonsdk/framework/UMLogDataProtocol$UMBusinessType;->U_INTERNAL:Lcom/umeng/commonsdk/framework/UMLogDataProtocol$UMBusinessType;
@@ -83,14 +77,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
     iget-object v0, p0, Lcom/umeng/commonsdk/UMConfigureInternation$1;->a:Landroid/content/Context;
 
     const v1, 0x8009
 
     iget-object v2, p0, Lcom/umeng/commonsdk/UMConfigureInternation$1;->a:Landroid/content/Context;
 
-    .line 6
     invoke-static {v2}, Lcom/umeng/commonsdk/internal/b;->a(Landroid/content/Context;)Lcom/umeng/commonsdk/internal/b;
 
     move-result-object v2
@@ -101,7 +93,6 @@
 
     const/4 v3, 0x0
 
-    .line 7
     invoke-static {v0, v1, v2, v3}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

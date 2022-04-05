@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/gesture/MoveGestureDetector$OnMoveGestureListener;
 .super Ljava/lang/Object;
-.source "MoveGestureDetector.java"
 
 
 # annotations

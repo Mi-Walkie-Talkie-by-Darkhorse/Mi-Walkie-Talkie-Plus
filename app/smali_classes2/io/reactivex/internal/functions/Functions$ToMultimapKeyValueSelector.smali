@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/functions/Functions$ToMultimapKeyValueSelector;
 .super Ljava/lang/Object;
-.source "Functions.java"
 
 # interfaces
 .implements Lio/reactivex/functions/BiConsumer;
@@ -83,16 +82,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/functions/Functions$ToMultimapKeyValueSelector;->collectionFactory:Lio/reactivex/functions/Function;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/functions/Functions$ToMultimapKeyValueSelector;->valueSelector:Lio/reactivex/functions/Function;
 
-    .line 4
     iput-object p3, p0, Lio/reactivex/internal/functions/Functions$ToMultimapKeyValueSelector;->keySelector:Lio/reactivex/functions/Function;
 
     return-void
@@ -108,7 +103,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/util/Map;
 
     invoke-virtual {p0, p1, p2}, Lio/reactivex/internal/functions/Functions$ToMultimapKeyValueSelector;->accept(Ljava/util/Map;Ljava/lang/Object;)V
@@ -134,14 +128,12 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/functions/Functions$ToMultimapKeyValueSelector;->keySelector:Lio/reactivex/functions/Function;
 
     invoke-interface {v0, p2}, Lio/reactivex/functions/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 3
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
@@ -150,7 +142,6 @@
 
     if-nez v1, :cond_0
 
-    .line 4
     iget-object v1, p0, Lio/reactivex/internal/functions/Functions$ToMultimapKeyValueSelector;->collectionFactory:Lio/reactivex/functions/Function;
 
     invoke-interface {v1, v0}, Lio/reactivex/functions/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
@@ -159,10 +150,8 @@
 
     check-cast v1, Ljava/util/Collection;
 
-    .line 5
     invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     :cond_0
     iget-object p1, p0, Lio/reactivex/internal/functions/Functions$ToMultimapKeyValueSelector;->valueSelector:Lio/reactivex/functions/Function;
 
@@ -170,7 +159,6 @@
 
     move-result-object p1
 
-    .line 7
     invoke-interface {v1, p1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     return-void

@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/textfield/ClearTextEndIconDelegate$2;
 .super Ljava/lang/Object;
-.source "ClearTextEndIconDelegate.java"
 
 # interfaces
 .implements Landroid/view/View$OnFocusChangeListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/textfield/ClearTextEndIconDelegate;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/textfield/ClearTextEndIconDelegate$2;->this$0:Lcom/google/android/material/textfield/ClearTextEndIconDelegate;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 2
 
-    .line 1
     check-cast p1, Landroid/widget/EditText;
 
     invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
@@ -53,7 +50,6 @@
 
     xor-int/2addr p1, v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/android/material/textfield/ClearTextEndIconDelegate$2;->this$0:Lcom/google/android/material/textfield/ClearTextEndIconDelegate;
 
     if-eqz p1, :cond_0

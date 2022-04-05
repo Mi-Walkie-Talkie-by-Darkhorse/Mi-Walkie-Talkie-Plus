@@ -1,6 +1,5 @@
 .class Landroidx/transition/Visibility$a;
 .super Landroidx/transition/t;
-.source "Visibility.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method constructor <init>(Landroidx/transition/Visibility;Landroid/view/ViewGroup;Landroid/view/View;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/transition/Visibility$a;->d:Landroidx/transition/Visibility;
 
     iput-object p2, p0, Landroidx/transition/Visibility$a;->a:Landroid/view/ViewGroup;
@@ -51,7 +49,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/transition/Visibility$a;->c:Landroid/view/View;
 
     sget v1, Landroidx/transition/R$id;->save_overlay_view:I
@@ -60,7 +57,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
-    .line 2
     iget-object v0, p0, Landroidx/transition/Visibility$a;->a:Landroid/view/ViewGroup;
 
     invoke-static {v0}, Landroidx/transition/d0;->a(Landroid/view/ViewGroup;)Landroidx/transition/c0;
@@ -71,7 +67,6 @@
 
     invoke-interface {v0, v1}, Landroidx/transition/c0;->remove(Landroid/view/View;)V
 
-    .line 3
     invoke-virtual {p1, p0}, Landroidx/transition/Transition;->removeListener(Landroidx/transition/Transition$g;)Landroidx/transition/Transition;
 
     return-void
@@ -84,7 +79,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Landroidx/transition/Visibility$a;->a:Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroidx/transition/d0;->a(Landroid/view/ViewGroup;)Landroidx/transition/c0;
@@ -105,7 +99,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Landroidx/transition/Visibility$a;->b:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -114,7 +107,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Landroidx/transition/Visibility$a;->a:Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroidx/transition/d0;->a(Landroid/view/ViewGroup;)Landroidx/transition/c0;
@@ -127,7 +119,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Landroidx/transition/Visibility$a;->d:Landroidx/transition/Visibility;
 

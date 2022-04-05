@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$1;
 .super Ljava/util/LinkedHashMap;
-.source "MapTileModuleProviderBase.java"
 
 
 # annotations
@@ -37,7 +36,6 @@
 .method constructor <init>(Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;IFZI)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$1;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;
 
     iput p5, p0, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$1;->val$pPendingQueueSize:I
@@ -61,7 +59,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/LinkedHashMap;->size()I
 
     move-result p1
@@ -72,7 +69,6 @@
 
     const/4 p1, 0x0
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$1;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;
 
     iget-object v0, v0, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;->mPending:Ljava/util/LinkedHashMap;
@@ -89,21 +85,18 @@
     :goto_0
     if-nez p1, :cond_1
 
-    .line 3
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 4
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lorg/osmdroid/tileprovider/MapTile;
 
-    .line 5
     iget-object v2, p0, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$1;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;
 
     iget-object v2, v2, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;->mWorking:Ljava/util/HashMap;
@@ -121,7 +114,6 @@
     :cond_1
     if-eqz p1, :cond_2
 
-    .line 6
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$1;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;
 
     iget-object v0, v0, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;->mPending:Ljava/util/LinkedHashMap;
@@ -132,12 +124,10 @@
 
     check-cast v0, Lorg/osmdroid/tileprovider/MapTileRequestState;
 
-    .line 7
     iget-object v1, p0, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$1;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;
 
     invoke-virtual {v1, p1}, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;->removeTileFromQueues(Lorg/osmdroid/tileprovider/MapTile;)V
 
-    .line 8
     invoke-virtual {v0}, Lorg/osmdroid/tileprovider/MapTileRequestState;->getCallback()Lorg/osmdroid/tileprovider/IMapTileProviderCallback;
 
     move-result-object p1

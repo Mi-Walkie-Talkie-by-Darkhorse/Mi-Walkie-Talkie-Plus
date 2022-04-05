@@ -1,6 +1,5 @@
 .class final Lcom/bumptech/glide/load/engine/y/i$b;
 .super Ljava/lang/Object;
-.source "MemorySizeCalculator.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/y/i$c;
@@ -25,10 +24,8 @@
 .method constructor <init>(Landroid/util/DisplayMetrics;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/y/i$b;->a:Landroid/util/DisplayMetrics;
 
     return-void
@@ -39,7 +36,6 @@
 .method public a()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/y/i$b;->a:Landroid/util/DisplayMetrics;
 
     iget v0, v0, Landroid/util/DisplayMetrics;->heightPixels:I
@@ -50,7 +46,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/y/i$b;->a:Landroid/util/DisplayMetrics;
 
     iget v0, v0, Landroid/util/DisplayMetrics;->widthPixels:I

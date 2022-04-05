@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/FilteredEntryMultimap$Keys;
 .super Lcom/google/common/collect/Multimaps$Keys;
-.source "FilteredEntryMultimap.java"
 
 
 # annotations
@@ -29,10 +28,8 @@
 .method constructor <init>(Lcom/google/common/collect/FilteredEntryMultimap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/FilteredEntryMultimap$Keys;->this$0:Lcom/google/common/collect/FilteredEntryMultimap;
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/collect/Multimaps$Keys;-><init>(Lcom/google/common/collect/Multimap;)V
 
     return-void
@@ -51,7 +48,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/FilteredEntryMultimap$Keys$1;-><init>(Lcom/google/common/collect/FilteredEntryMultimap$Keys;)V
@@ -68,19 +64,16 @@
 
     const-string v0, "occurrences"
 
-    .line 1
     invoke-static {p2, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
     if-nez p2, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Multimaps$Keys;->count(Ljava/lang/Object;)I
 
     move-result p1
 
     return p1
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/FilteredEntryMultimap$Keys;->this$0:Lcom/google/common/collect/FilteredEntryMultimap;
 
@@ -102,13 +95,11 @@
 
     return v1
 
-    .line 4
     :cond_1
     invoke-interface {v0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    .line 5
     :cond_2
     :goto_0
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -117,12 +108,10 @@
 
     if-eqz v2, :cond_3
 
-    .line 6
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 7
     iget-object v3, p0, Lcom/google/common/collect/FilteredEntryMultimap$Keys;->this$0:Lcom/google/common/collect/FilteredEntryMultimap;
 
     invoke-static {v3, p1, v2}, Lcom/google/common/collect/FilteredEntryMultimap;->access$000(Lcom/google/common/collect/FilteredEntryMultimap;Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -135,7 +124,6 @@
 
     if-gt v1, p2, :cond_2
 
-    .line 8
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0

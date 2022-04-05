@@ -1,6 +1,5 @@
 .class public Lcom/google/common/collect/ForwardingNavigableMap$StandardNavigableKeySet;
 .super Lcom/google/common/collect/Maps$NavigableKeySet;
-.source "ForwardingNavigableMap.java"
 
 
 # annotations
@@ -32,10 +31,8 @@
 .method public constructor <init>(Lcom/google/common/collect/ForwardingNavigableMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ForwardingNavigableMap$StandardNavigableKeySet;->this$0:Lcom/google/common/collect/ForwardingNavigableMap;
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/collect/Maps$NavigableKeySet;-><init>(Ljava/util/NavigableMap;)V
 
     return-void

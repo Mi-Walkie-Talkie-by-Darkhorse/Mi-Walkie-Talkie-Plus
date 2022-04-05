@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DefconPolicy;
 .super Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
-.source "ReportPolicy.java"
 
 
 # annotations
@@ -24,13 +23,10 @@
 .method public constructor <init>(Lcom/umeng/commonsdk/statistics/internal/StatTracer;Lcom/umeng/commonsdk/statistics/noise/Defcon;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DefconPolicy;->tracer:Lcom/umeng/commonsdk/statistics/internal/StatTracer;
 
-    .line 3
     iput-object p2, p0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DefconPolicy;->defcon:Lcom/umeng/commonsdk/statistics/noise/Defcon;
 
     return-void
@@ -41,7 +37,6 @@
 .method public isValid()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DefconPolicy;->defcon:Lcom/umeng/commonsdk/statistics/noise/Defcon;
 
     invoke-virtual {v0}, Lcom/umeng/commonsdk/statistics/noise/Defcon;->isOpen()Z
@@ -54,19 +49,16 @@
 .method public shouldSendMessage(Z)Z
     .locals 6
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 2
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DefconPolicy;->defcon:Lcom/umeng/commonsdk/statistics/noise/Defcon;
 
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/noise/Defcon;->getReqInterval()J
 
     move-result-wide v2
 
-    .line 3
     invoke-static {}, Lcom/umeng/commonsdk/framework/UMModuleRegister;->getAppContext()Landroid/content/Context;
 
     move-result-object p1
@@ -94,19 +86,16 @@
 .method public shouldSendMessageByInstant()Z
     .locals 6
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 2
     iget-object v2, p0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DefconPolicy;->defcon:Lcom/umeng/commonsdk/statistics/noise/Defcon;
 
     invoke-virtual {v2}, Lcom/umeng/commonsdk/statistics/noise/Defcon;->getReqInterval()J
 
     move-result-wide v2
 
-    .line 3
     invoke-static {}, Lcom/umeng/commonsdk/framework/UMModuleRegister;->getAppContext()Landroid/content/Context;
 
     move-result-object v4

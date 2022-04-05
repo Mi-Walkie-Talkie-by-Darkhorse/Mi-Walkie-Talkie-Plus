@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ko$1;
 .super Ljava/lang/Object;
-.source "MapGPSLocation.java"
 
 # interfaces
 .implements Landroid/location/LocationListener;

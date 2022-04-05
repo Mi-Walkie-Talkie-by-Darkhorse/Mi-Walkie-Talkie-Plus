@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/eh;
 .super Ljava/lang/Object;
-.source "ResourcesUtil.java"
 
 
 # static fields
@@ -11,14 +10,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     const-string v1, "/system/framework/amap.jar"
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -37,18 +34,15 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object p0
 
-    .line 2
     sget-boolean v0, Lcom/amap/api/col/l3/eh;->a:Z
 
     if-eqz v0, :cond_1
 
-    .line 3
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -76,7 +70,6 @@
 
     aput-object v2, v1, v5
 
-    .line 4
     invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -90,7 +83,6 @@
 
     const-string v2, "getSelfAssets"
 
-    .line 5
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1
@@ -101,7 +93,6 @@
 .method public static b(Landroid/content/Context;)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0

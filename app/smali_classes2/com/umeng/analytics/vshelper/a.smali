@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/analytics/vshelper/a;
 .super Ljava/lang/Object;
-.source "PageLifeCycle.java"
 
 
 # virtual methods

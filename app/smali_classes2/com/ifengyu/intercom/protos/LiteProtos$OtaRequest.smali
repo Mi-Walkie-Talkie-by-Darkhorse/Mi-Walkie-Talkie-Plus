@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;
 .super Lcom/google/protobuf/GeneratedMessage;
-.source "LiteProtos.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequestOrBuilder;
@@ -69,14 +68,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$a;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;
 
     const/4 v1, 0x1
@@ -85,7 +82,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->defaultInstance:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;
 
-    .line 3
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->initFields()V
 
     return-void
@@ -101,10 +97,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessage$Builder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object p1
@@ -117,7 +111,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessage$Builder;Lcom/ifengyu/intercom/protos/LiteProtos$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
     return-void
@@ -126,7 +119,6 @@
 .method private constructor <init>(Z)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage;-><init>()V
 
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
@@ -141,7 +133,6 @@
 .method static synthetic access$14800()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/google/protobuf/GeneratedMessage;->alwaysUseFieldBuilders:Z
 
     return v0
@@ -150,7 +141,6 @@
 .method static synthetic access$15002(Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->version_:I
 
     return p1
@@ -159,7 +149,6 @@
 .method static synthetic access$15102(Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;)Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fCmd_:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     return-object p1
@@ -168,7 +157,6 @@
 .method static synthetic access$15202(Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_TYPE;)Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_TYPE;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fType_:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_TYPE;
 
     return-object p1
@@ -177,7 +165,6 @@
 .method static synthetic access$15302(Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fSize_:I
 
     return p1
@@ -186,7 +173,6 @@
 .method static synthetic access$15402(Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fCrc32_:I
 
     return p1
@@ -195,7 +181,6 @@
 .method static synthetic access$15502(Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->bitField0_:I
 
     return p1
@@ -204,7 +189,6 @@
 .method public static getDefaultInstance()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->defaultInstance:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;
 
     return-object v0
@@ -213,7 +197,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos;->n()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -226,23 +209,18 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->version_:I
 
-    .line 2
     sget-object v1, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->START:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fCmd_:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
-    .line 3
     sget-object v1, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_TYPE;->APP_UPGRADE_FILE:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_TYPE;
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fType_:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_TYPE;
 
-    .line 4
     iput v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fSize_:I
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fCrc32_:I
 
     return-void
@@ -251,7 +229,6 @@
 .method public static newBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;->access$14600()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
 
     move-result-object v0
@@ -262,7 +239,6 @@
 .method public static newBuilder(Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;)Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->newBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
 
     move-result-object v0
@@ -284,7 +260,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -304,7 +279,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -324,7 +298,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
@@ -344,7 +317,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -364,7 +336,6 @@
         }
     .end annotation
 
-    .line 7
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;)Ljava/lang/Object;
@@ -384,7 +355,6 @@
         }
     .end annotation
 
-    .line 8
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -404,7 +374,6 @@
         }
     .end annotation
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -424,7 +393,6 @@
         }
     .end annotation
 
-    .line 6
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -444,7 +412,6 @@
         }
     .end annotation
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
@@ -464,7 +431,6 @@
         }
     .end annotation
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -481,7 +447,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;
 
     move-result-object v0
@@ -492,7 +457,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;
 
     move-result-object v0
@@ -503,7 +467,6 @@
 .method public getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;
     .locals 1
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->defaultInstance:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;
 
     return-object v0
@@ -512,7 +475,6 @@
 .method public getFCmd()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fCmd_:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     return-object v0
@@ -521,7 +483,6 @@
 .method public getFCrc32()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fCrc32_:I
 
     return v0
@@ -530,7 +491,6 @@
 .method public getFSize()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fSize_:I
 
     return v0
@@ -539,7 +499,6 @@
 .method public getFType()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_TYPE;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->fType_:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_TYPE;
 
     return-object v0
@@ -556,7 +515,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -565,7 +523,6 @@
 .method public final getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
 
     return-object v0
@@ -574,7 +531,6 @@
 .method public getVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->version_:I
 
     return v0
@@ -583,7 +539,6 @@
 .method public hasFCmd()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->bitField0_:I
 
     const/4 v1, 0x2
@@ -606,7 +561,6 @@
 .method public hasFCrc32()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->bitField0_:I
 
     const/16 v1, 0x10
@@ -629,7 +583,6 @@
 .method public hasFSize()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->bitField0_:I
 
     const/16 v1, 0x8
@@ -652,7 +605,6 @@
 .method public hasFType()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->bitField0_:I
 
     const/4 v1, 0x4
@@ -675,7 +627,6 @@
 .method public hasVersion()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->bitField0_:I
 
     const/4 v1, 0x1
@@ -696,7 +647,6 @@
 .method protected internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos;->o()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -705,7 +655,6 @@
 
     const-class v2, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -716,7 +665,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->newBuilderForType()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
 
     move-result-object v0
@@ -727,7 +675,6 @@
 .method protected bridge synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/google/protobuf/Message$Builder;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
 
     move-result-object p1
@@ -738,7 +685,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->newBuilderForType()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
 
     move-result-object v0
@@ -749,7 +695,6 @@
 .method public newBuilderForType()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
     .locals 1
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->newBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
 
     move-result-object v0
@@ -760,7 +705,6 @@
 .method protected newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
     .locals 2
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
 
     const/4 v1, 0x0
@@ -773,7 +717,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->toBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
 
     move-result-object v0
@@ -784,7 +727,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->toBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
 
     move-result-object v0
@@ -795,7 +737,6 @@
 .method public toBuilder()Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
     .locals 1
 
-    .line 3
     invoke-static {p0}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->newBuilder(Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;)Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$Builder;
 
     move-result-object v0

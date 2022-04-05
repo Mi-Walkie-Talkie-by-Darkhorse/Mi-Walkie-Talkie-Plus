@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/OnEditorAction;
 .super Ljava/lang/Object;
-.source "OnEditorAction.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

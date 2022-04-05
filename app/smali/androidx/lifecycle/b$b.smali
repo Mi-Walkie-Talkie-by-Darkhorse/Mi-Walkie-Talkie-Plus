@@ -1,6 +1,5 @@
 .class final Landroidx/lifecycle/b$b;
 .super Ljava/lang/Object;
-.source "ClassesInfoCache.java"
 
 
 # annotations
@@ -24,18 +23,14 @@
 .method constructor <init>(ILjava/lang/reflect/Method;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Landroidx/lifecycle/b$b;->a:I
 
-    .line 3
     iput-object p2, p0, Landroidx/lifecycle/b$b;->b:Ljava/lang/reflect/Method;
 
     const/4 p1, 0x1
 
-    .line 4
     invoke-virtual {p2, p1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
     return-void
@@ -46,7 +41,6 @@
 .method a(Landroidx/lifecycle/k;Landroidx/lifecycle/Lifecycle$Event;Ljava/lang/Object;)V
     .locals 4
 
-    .line 1
     :try_start_0
     iget v0, p0, Landroidx/lifecycle/b$b;->a:I
 
@@ -64,7 +58,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Landroidx/lifecycle/b$b;->b:Ljava/lang/reflect/Method;
 
@@ -78,7 +71,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget-object p2, p0, Landroidx/lifecycle/b$b;->b:Ljava/lang/reflect/Method;
 
@@ -90,7 +82,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_2
     iget-object p1, p0, Landroidx/lifecycle/b$b;->b:Ljava/lang/reflect/Method;
 
@@ -107,7 +98,6 @@
     :catch_0
     move-exception p1
 
-    .line 5
     new-instance p2, Ljava/lang/RuntimeException;
 
     invoke-direct {p2, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
@@ -117,7 +107,6 @@
     :catch_1
     move-exception p1
 
-    .line 6
     new-instance p2, Ljava/lang/RuntimeException;
 
     invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
@@ -140,7 +129,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Landroidx/lifecycle/b$b;
 
@@ -150,11 +138,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, Landroidx/lifecycle/b$b;
 
-    .line 3
     iget v1, p0, Landroidx/lifecycle/b$b;->a:I
 
     iget v3, p1, Landroidx/lifecycle/b$b;->a:I
@@ -191,7 +177,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget v0, p0, Landroidx/lifecycle/b$b;->a:I
 
     mul-int/lit8 v0, v0, 0x1f

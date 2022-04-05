@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/an;
 .super Ljava/lang/Object;
-.source "IInfoWindowAction.java"
 
 
 # virtual methods

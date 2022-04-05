@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/protos/MitalkProtos$FilePackOrBuilder;
 .super Ljava/lang/Object;
-.source "MitalkProtos.java"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageOrBuilder;

@@ -1,13 +1,11 @@
 .class public final Lorg/osmdroid/util/TileSystem;
 .super Ljava/lang/Object;
-.source "TileSystem.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +22,6 @@
 
     move-wide v0, p0
 
-    .line 1
     invoke-static/range {v0 .. v7}, Lorg/osmdroid/util/TileSystem;->wrap(DDDD)D
 
     move-result-wide p0
@@ -47,7 +44,6 @@
 
     move-wide v0, p0
 
-    .line 1
     invoke-static/range {v0 .. v7}, Lorg/osmdroid/util/TileSystem;->wrap(DDDD)D
 
     move-result-wide v8
@@ -60,7 +56,6 @@
 
     move-wide/from16 v0, p2
 
-    .line 2
     invoke-static/range {v0 .. v7}, Lorg/osmdroid/util/TileSystem;->wrap(DDDD)D
 
     move-result-wide v10
@@ -69,7 +64,6 @@
 
     move-object/from16 v13, p5
 
-    .line 3
     invoke-static/range {v8 .. v13}, Lmicrosoft/mappoint/TileSystem;->LatLongToPixelXY(DDILandroid/graphics/Point;)Landroid/graphics/Point;
 
     move-result-object v0
@@ -80,7 +74,6 @@
 .method public static MapScale(DII)D
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lmicrosoft/mappoint/TileSystem;->MapScale(DII)D
 
     move-result-wide p0
@@ -91,7 +84,6 @@
 .method public static MapSize(I)I
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lmicrosoft/mappoint/TileSystem;->MapSize(I)I
 
     move-result p0
@@ -102,7 +94,6 @@
 .method public static PixelXYToLatLong(IIILorg/osmdroid/util/GeoPoint;)Lorg/osmdroid/util/GeoPoint;
     .locals 13
 
-    .line 1
     invoke-static {p2}, Lorg/osmdroid/util/TileSystem;->MapSize(I)I
 
     move-result v0
@@ -123,7 +114,6 @@
 
     move-wide v7, v11
 
-    .line 2
     invoke-static/range {v1 .. v8}, Lorg/osmdroid/util/TileSystem;->wrap(DDDD)D
 
     move-result-wide v0
@@ -140,7 +130,6 @@
 
     move-wide v10, v11
 
-    .line 3
     invoke-static/range {v4 .. v11}, Lorg/osmdroid/util/TileSystem;->wrap(DDDD)D
 
     move-result-wide v1
@@ -151,7 +140,6 @@
 
     move-object/from16 v3, p3
 
-    .line 4
     invoke-static {v0, v1, p2, v3}, Lmicrosoft/mappoint/TileSystem;->PixelXYToLatLong(IIILorg/osmdroid/util/GeoPoint;)Lorg/osmdroid/util/GeoPoint;
 
     move-result-object v0
@@ -162,7 +150,6 @@
 .method public static PixelXYToTileXY(IILandroid/graphics/Point;)Landroid/graphics/Point;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lmicrosoft/mappoint/TileSystem;->PixelXYToTileXY(IILandroid/graphics/Point;)Landroid/graphics/Point;
 
     move-result-object p0
@@ -173,7 +160,6 @@
 .method public static QuadKeyToTileXY(Ljava/lang/String;Landroid/graphics/Point;)Landroid/graphics/Point;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lmicrosoft/mappoint/TileSystem;->QuadKeyToTileXY(Ljava/lang/String;Landroid/graphics/Point;)Landroid/graphics/Point;
 
     move-result-object p0
@@ -184,7 +170,6 @@
 .method public static TileXYToPixelXY(IILandroid/graphics/Point;)Landroid/graphics/Point;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lmicrosoft/mappoint/TileSystem;->TileXYToPixelXY(IILandroid/graphics/Point;)Landroid/graphics/Point;
 
     move-result-object p0
@@ -195,7 +180,6 @@
 .method public static TileXYToQuadKey(III)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lmicrosoft/mappoint/TileSystem;->TileXYToQuadKey(III)Ljava/lang/String;
 
     move-result-object p0
@@ -206,7 +190,6 @@
 .method public static getTileSize()I
     .locals 1
 
-    .line 1
     invoke-static {}, Lmicrosoft/mappoint/TileSystem;->getTileSize()I
 
     move-result v0
@@ -217,7 +200,6 @@
 .method public static setTileSize(I)V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lmicrosoft/mappoint/TileSystem;->setTileSize(I)V
 
     return-void
@@ -262,7 +244,6 @@
     :cond_1
     return-wide p0
 
-    .line 1
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -296,7 +277,6 @@
 
     throw p0
 
-    .line 2
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

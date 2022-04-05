@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/single/SingleDelayWithCompletable;
 .super Lio/reactivex/Single;
-.source "SingleDelayWithCompletable.java"
 
 
 # annotations
@@ -47,13 +46,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleDelayWithCompletable;->source:Lio/reactivex/SingleSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/single/SingleDelayWithCompletable;->other:Lio/reactivex/CompletableSource;
 
     return-void
@@ -71,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleDelayWithCompletable;->other:Lio/reactivex/CompletableSource;
 
     new-instance v1, Lio/reactivex/internal/operators/single/SingleDelayWithCompletable$OtherObserver;

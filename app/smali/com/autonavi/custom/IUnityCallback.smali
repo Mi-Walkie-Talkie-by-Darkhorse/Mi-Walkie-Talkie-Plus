@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/custom/IUnityCallback;
 .super Ljava/lang/Object;
-.source "IUnityCallback.java"
 
 
 # virtual methods

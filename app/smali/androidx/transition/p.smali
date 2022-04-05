@@ -1,6 +1,5 @@
 .class Landroidx/transition/p;
 .super Ljava/lang/Object;
-.source "RectEvaluator.java"
 
 # interfaces
 .implements Landroid/animation/TypeEvaluator;
@@ -25,7 +24,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,10 +32,8 @@
 .method constructor <init>(Landroid/graphics/Rect;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Landroidx/transition/p;->a:Landroid/graphics/Rect;
 
     return-void
@@ -48,7 +44,6 @@
 .method public a(FLandroid/graphics/Rect;Landroid/graphics/Rect;)Landroid/graphics/Rect;
     .locals 4
 
-    .line 1
     iget v0, p2, Landroid/graphics/Rect;->left:I
 
     iget v1, p3, Landroid/graphics/Rect;->left:I
@@ -63,7 +58,6 @@
 
     add-int/2addr v0, v1
 
-    .line 2
     iget v1, p2, Landroid/graphics/Rect;->top:I
 
     iget v2, p3, Landroid/graphics/Rect;->top:I
@@ -78,7 +72,6 @@
 
     add-int/2addr v1, v2
 
-    .line 3
     iget v2, p2, Landroid/graphics/Rect;->right:I
 
     iget v3, p3, Landroid/graphics/Rect;->right:I
@@ -93,7 +86,6 @@
 
     add-int/2addr v2, v3
 
-    .line 4
     iget p2, p2, Landroid/graphics/Rect;->bottom:I
 
     iget p3, p3, Landroid/graphics/Rect;->bottom:I
@@ -108,23 +100,19 @@
 
     add-int/2addr p2, p1
 
-    .line 5
     iget-object p1, p0, Landroidx/transition/p;->a:Landroid/graphics/Rect;
 
     if-nez p1, :cond_0
 
-    .line 6
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1, v0, v1, v2, p2}, Landroid/graphics/Rect;-><init>(IIII)V
 
     return-object p1
 
-    .line 7
     :cond_0
     invoke-virtual {p1, v0, v1, v2, p2}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 8
     iget-object p1, p0, Landroidx/transition/p;->a:Landroid/graphics/Rect;
 
     return-object p1
@@ -133,7 +121,6 @@
 .method public bridge synthetic evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p2, Landroid/graphics/Rect;
 
     check-cast p3, Landroid/graphics/Rect;

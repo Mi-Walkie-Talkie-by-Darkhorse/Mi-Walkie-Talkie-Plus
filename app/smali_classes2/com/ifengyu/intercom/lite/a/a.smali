@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/a/a;
 .super Ljava/lang/Object;
-.source "ChannelCache.java"
 
 
 # static fields
@@ -20,7 +19,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
@@ -33,7 +31,6 @@
 .method public static a()V
     .locals 1
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/lite/a/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->clear()V
@@ -44,7 +41,6 @@
 .method public static a(Ljava/lang/Integer;Lcom/ifengyu/intercom/lite/models/ChannelModel;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/a/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v0, p0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -63,7 +59,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     sget-object v1, Lcom/ifengyu/intercom/lite/a/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
@@ -80,7 +75,6 @@
 .method public static c()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/a/a;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;->size()I

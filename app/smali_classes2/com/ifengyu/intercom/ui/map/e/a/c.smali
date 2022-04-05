@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/map/e/a/c;
 .super Ljava/lang/Object;
-.source "ClusterItem.java"
 
 
 # virtual methods

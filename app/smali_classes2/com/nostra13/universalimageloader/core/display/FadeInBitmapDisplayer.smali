@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;
 .super Ljava/lang/Object;
-.source "FadeInBitmapDisplayer.java"
 
 # interfaces
 .implements Lcom/nostra13/universalimageloader/core/display/BitmapDisplayer;
@@ -22,7 +21,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-direct {p0, p1, v0, v0, v0}, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;-><init>(IZZZ)V
 
     return-void
@@ -31,19 +29,14 @@
 .method public constructor <init>(IZZZ)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput p1, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->durationMillis:I
 
-    .line 4
     iput-boolean p2, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->animateFromNetwork:Z
 
-    .line 5
     iput-boolean p3, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->animateFromDisk:Z
 
-    .line 6
     iput-boolean p4, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->animateFromMemory:Z
 
     return-void
@@ -54,7 +47,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     new-instance v0, Landroid/view/animation/AlphaAnimation;
 
     const/4 v1, 0x0
@@ -65,17 +57,14 @@
 
     int-to-long v1, p1
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Landroid/view/animation/AlphaAnimation;->setDuration(J)V
 
-    .line 3
     new-instance p1, Landroid/view/animation/DecelerateInterpolator;
 
     invoke-direct {p1}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
 
     invoke-virtual {v0, p1}, Landroid/view/animation/AlphaAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V
 
-    .line 4
     invoke-virtual {p0, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
     :cond_0
@@ -87,10 +76,8 @@
 .method public display(Landroid/graphics/Bitmap;Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;Lcom/nostra13/universalimageloader/core/assist/LoadedFrom;)V
     .locals 0
 
-    .line 1
     invoke-interface {p2, p1}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->setImageBitmap(Landroid/graphics/Bitmap;)Z
 
-    .line 2
     iget-boolean p1, p0, Lcom/nostra13/universalimageloader/core/display/FadeInBitmapDisplayer;->animateFromNetwork:Z
 
     if-eqz p1, :cond_0
@@ -117,7 +104,6 @@
 
     if-ne p3, p1, :cond_3
 
-    .line 3
     :cond_2
     invoke-interface {p2}, Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;->getWrappedView()Landroid/view/View;
 

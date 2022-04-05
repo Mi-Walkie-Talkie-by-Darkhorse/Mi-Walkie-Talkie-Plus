@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/http/entity/HttpResultFunction;
 .super Ljava/lang/Object;
-.source "HttpResultFunction.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;
@@ -24,7 +23,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,28 +46,23 @@
         }
     .end annotation
 
-    .line 2
     iget v0, p1, Lcom/ifengyu/intercom/lite/http/entity/HttpResult;->errno:I
 
     if-nez v0, :cond_1
 
-    .line 3
     iget-object v0, p1, Lcom/ifengyu/intercom/lite/http/entity/HttpResult;->data:Ljava/lang/Object;
 
     if-nez v0, :cond_0
 
     const-string v0, ""
 
-    .line 4
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/http/entity/HttpResult;->data:Ljava/lang/Object;
 
-    .line 5
     :cond_0
     iget-object p1, p1, Lcom/ifengyu/intercom/lite/http/entity/HttpResult;->data:Ljava/lang/Object;
 
     return-object p1
 
-    .line 6
     :cond_1
     new-instance v0, Lcom/ifengyu/intercom/lite/http/exception/ApiException;
 
@@ -90,7 +83,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/lite/http/entity/HttpResult;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/lite/http/entity/HttpResultFunction;->apply(Lcom/ifengyu/intercom/lite/http/entity/HttpResult;)Ljava/lang/Object;

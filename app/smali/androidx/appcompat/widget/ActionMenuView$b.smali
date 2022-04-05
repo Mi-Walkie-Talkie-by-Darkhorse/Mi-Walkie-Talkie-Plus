@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/ActionMenuView$b;
 .super Ljava/lang/Object;
-.source "ActionMenuView.java"
 
 # interfaces
 .implements Landroidx/appcompat/view/menu/l$a;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/fragment/LiteSettingMoreFragment$a;
 .super Ljava/lang/Object;
-.source "LiteSettingMoreFragment.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/fragment/LiteSettingMoreFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingMoreFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingMoreFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingMoreFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingMoreFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/fragment/LiteSettingMoreFragment;->a(Lcom/ifengyu/intercom/lite/fragment/LiteSettingMoreFragment;)V

@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/components/XAxis;
 .super Lcom/github/mikephil/charting/components/a;
-.source "XAxis.java"
 
 
 # annotations
@@ -31,35 +30,28 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/github/mikephil/charting/components/a;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput v0, p0, Lcom/github/mikephil/charting/components/XAxis;->K:I
 
-    .line 3
     iput v0, p0, Lcom/github/mikephil/charting/components/XAxis;->L:I
 
     const/4 v0, 0x0
 
-    .line 4
     iput v0, p0, Lcom/github/mikephil/charting/components/XAxis;->M:F
 
     const/4 v0, 0x0
 
-    .line 5
     iput-boolean v0, p0, Lcom/github/mikephil/charting/components/XAxis;->N:Z
 
-    .line 6
     sget-object v0, Lcom/github/mikephil/charting/components/XAxis$XAxisPosition;->a:Lcom/github/mikephil/charting/components/XAxis$XAxisPosition;
 
     iput-object v0, p0, Lcom/github/mikephil/charting/components/XAxis;->O:Lcom/github/mikephil/charting/components/XAxis$XAxisPosition;
 
     const/high16 v0, 0x40800000    # 4.0f
 
-    .line 7
     invoke-static {v0}, Lb/a/a/a/g/i;->a(F)F
 
     move-result v0
@@ -74,7 +66,6 @@
 .method public A()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/github/mikephil/charting/components/XAxis;->N:Z
 
     return v0
@@ -83,7 +74,6 @@
 .method public a(Lcom/github/mikephil/charting/components/XAxis$XAxisPosition;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/github/mikephil/charting/components/XAxis;->O:Lcom/github/mikephil/charting/components/XAxis$XAxisPosition;
 
     return-void
@@ -92,7 +82,6 @@
 .method public y()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/components/XAxis;->M:F
 
     return v0
@@ -101,7 +90,6 @@
 .method public z()Lcom/github/mikephil/charting/components/XAxis$XAxisPosition;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/components/XAxis;->O:Lcom/github/mikephil/charting/components/XAxis$XAxisPosition;
 
     return-object v0

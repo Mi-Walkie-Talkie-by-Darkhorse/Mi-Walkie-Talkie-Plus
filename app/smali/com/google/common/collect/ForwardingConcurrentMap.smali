@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/ForwardingConcurrentMap;
 .super Lcom/google/common/collect/ForwardingMap;
-.source "ForwardingConcurrentMap.java"
 
 # interfaces
 .implements Ljava/util/concurrent/ConcurrentMap;
@@ -29,7 +28,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingMap;-><init>()V
 
     return-void
@@ -40,7 +38,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -51,7 +48,6 @@
 .method protected bridge synthetic delegate()Ljava/util/Map;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -77,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -92,7 +87,6 @@
 .method public remove(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -112,7 +106,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0
@@ -132,7 +125,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingConcurrentMap;->delegate()Ljava/util/concurrent/ConcurrentMap;
 
     move-result-object v0

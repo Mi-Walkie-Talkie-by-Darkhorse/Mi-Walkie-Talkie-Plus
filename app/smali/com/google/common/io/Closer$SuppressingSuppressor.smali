@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/Closer$SuppressingSuppressor;
 .super Ljava/lang/Object;
-.source "Closer.java"
 
 # interfaces
 .implements Lcom/google/common/io/Closer$Suppressor;
@@ -30,14 +29,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/io/Closer$SuppressingSuppressor;
 
     invoke-direct {v0}, Lcom/google/common/io/Closer$SuppressingSuppressor;-><init>()V
 
     sput-object v0, Lcom/google/common/io/Closer$SuppressingSuppressor;->INSTANCE:Lcom/google/common/io/Closer$SuppressingSuppressor;
 
-    .line 2
     invoke-static {}, Lcom/google/common/io/Closer$SuppressingSuppressor;->getAddSuppressed()Ljava/lang/reflect/Method;
 
     move-result-object v0
@@ -50,7 +47,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -59,7 +55,6 @@
 .method private static getAddSuppressed()Ljava/lang/reflect/Method;
     .locals 5
 
-    .line 1
     :try_start_0
     const-class v0, Ljava/lang/Throwable;
 
@@ -92,7 +87,6 @@
 .method static isAvailable()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/io/Closer$SuppressingSuppressor;->addSuppressed:Ljava/lang/reflect/Method;
 
     if-eqz v0, :cond_0
@@ -117,7 +111,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     :try_start_0
     sget-object v0, Lcom/google/common/io/Closer$SuppressingSuppressor;->addSuppressed:Ljava/lang/reflect/Method;
@@ -136,7 +129,6 @@
 
     goto :goto_0
 
-    .line 2
     :catchall_0
     sget-object v0, Lcom/google/common/io/Closer$LoggingSuppressor;->INSTANCE:Lcom/google/common/io/Closer$LoggingSuppressor;
 

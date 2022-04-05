@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/aztec/detector/Detector;
 .super Ljava/lang/Object;
-.source "Detector.java"
 
 
 # annotations
@@ -37,7 +36,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/google/zxing/aztec/detector/Detector;->EXPECTED_CORNER_BITS:[I
@@ -58,10 +56,8 @@
 .method public constructor <init>(Lcom/google/zxing/common/BitMatrix;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/zxing/aztec/detector/Detector;->image:Lcom/google/zxing/common/BitMatrix;
 
     return-void
@@ -70,7 +66,6 @@
 .method private static distance(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;)F
     .locals 2
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v0
@@ -97,7 +92,6 @@
 .method private static distance(Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;)F
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
 
     move-result v0
@@ -132,7 +126,6 @@
 
     const/4 p1, 0x0
 
-    .line 1
     aget-object v1, p0, p1
 
     invoke-virtual {v1}, Lcom/google/zxing/ResultPoint;->getX()F
@@ -149,7 +142,6 @@
 
     sub-float/2addr v1, v3
 
-    .line 2
     aget-object v3, p0, p1
 
     invoke-virtual {v3}, Lcom/google/zxing/ResultPoint;->getY()F
@@ -164,7 +156,6 @@
 
     sub-float/2addr v3, v4
 
-    .line 3
     aget-object v4, p0, p1
 
     invoke-virtual {v4}, Lcom/google/zxing/ResultPoint;->getX()F
@@ -181,7 +172,6 @@
 
     div-float/2addr v4, v0
 
-    .line 4
     aget-object v5, p0, p1
 
     invoke-virtual {v5}, Lcom/google/zxing/ResultPoint;->getY()F
@@ -198,7 +188,6 @@
 
     div-float/2addr v5, v0
 
-    .line 5
     new-instance v6, Lcom/google/zxing/ResultPoint;
 
     mul-float v1, v1, p2
@@ -211,7 +200,6 @@
 
     invoke-direct {v6, v7, v8}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
 
-    .line 6
     new-instance v7, Lcom/google/zxing/ResultPoint;
 
     sub-float/2addr v4, v1
@@ -222,7 +210,6 @@
 
     const/4 v1, 0x1
 
-    .line 7
     aget-object v3, p0, v1
 
     invoke-virtual {v3}, Lcom/google/zxing/ResultPoint;->getX()F
@@ -239,7 +226,6 @@
 
     sub-float/2addr v3, v5
 
-    .line 8
     aget-object v5, p0, v1
 
     invoke-virtual {v5}, Lcom/google/zxing/ResultPoint;->getY()F
@@ -254,7 +240,6 @@
 
     sub-float/2addr v5, v8
 
-    .line 9
     aget-object v8, p0, v1
 
     invoke-virtual {v8}, Lcom/google/zxing/ResultPoint;->getX()F
@@ -271,7 +256,6 @@
 
     div-float/2addr v8, v0
 
-    .line 10
     aget-object v9, p0, v1
 
     invoke-virtual {v9}, Lcom/google/zxing/ResultPoint;->getY()F
@@ -288,7 +272,6 @@
 
     div-float/2addr v9, v0
 
-    .line 11
     new-instance p0, Lcom/google/zxing/ResultPoint;
 
     mul-float v3, v3, p2
@@ -301,7 +284,6 @@
 
     invoke-direct {p0, v0, v5}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
 
-    .line 12
     new-instance v0, Lcom/google/zxing/ResultPoint;
 
     sub-float/2addr v8, v3
@@ -335,7 +317,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget-object v1, p1, v0
 
     invoke-direct {p0, v1}, Lcom/google/zxing/aztec/detector/Detector;->isValid(Lcom/google/zxing/ResultPoint;)Z
@@ -358,7 +339,6 @@
 
     aget-object v3, p1, v2
 
-    .line 2
     invoke-direct {p0, v3}, Lcom/google/zxing/aztec/detector/Detector;->isValid(Lcom/google/zxing/ResultPoint;)Z
 
     move-result v3
@@ -375,7 +355,6 @@
 
     if-eqz v4, :cond_3
 
-    .line 3
     iget v4, p0, Lcom/google/zxing/aztec/detector/Detector;->nbCenterLayers:I
 
     mul-int/lit8 v4, v4, 0x2
@@ -384,12 +363,10 @@
 
     new-array v6, v5, [I
 
-    .line 4
     aget-object v7, p1, v0
 
     aget-object v8, p1, v1
 
-    .line 5
     invoke-direct {p0, v7, v8, v4}, Lcom/google/zxing/aztec/detector/Detector;->sampleLine(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;I)I
 
     move-result v7
@@ -400,7 +377,6 @@
 
     aget-object v8, p1, v2
 
-    .line 6
     invoke-direct {p0, v7, v8, v4}, Lcom/google/zxing/aztec/detector/Detector;->sampleLine(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;I)I
 
     move-result v7
@@ -411,7 +387,6 @@
 
     aget-object v8, p1, v3
 
-    .line 7
     invoke-direct {p0, v7, v8, v4}, Lcom/google/zxing/aztec/detector/Detector;->sampleLine(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;I)I
 
     move-result v7
@@ -422,14 +397,12 @@
 
     aget-object p1, p1, v0
 
-    .line 8
     invoke-direct {p0, v2, p1, v4}, Lcom/google/zxing/aztec/detector/Detector;->sampleLine(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;I)I
 
     move-result p1
 
     aput p1, v6, v3
 
-    .line 9
     invoke-static {v6, v4}, Lcom/google/zxing/aztec/detector/Detector;->getRotation([II)I
 
     move-result p1
@@ -441,7 +414,6 @@
     :goto_0
     if-ge v0, v5, :cond_1
 
-    .line 10
     iget p1, p0, Lcom/google/zxing/aztec/detector/Detector;->shift:I
 
     add-int/2addr p1, v0
@@ -450,7 +422,6 @@
 
     aget p1, v6, p1
 
-    .line 11
     iget-boolean v4, p0, Lcom/google/zxing/aztec/detector/Detector;->compact:Z
 
     if-eqz v4, :cond_0
@@ -491,7 +462,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_1
     iget-boolean p1, p0, Lcom/google/zxing/aztec/detector/Detector;->compact:Z
 
@@ -499,7 +469,6 @@
 
     move-result p1
 
-    .line 13
     iget-boolean v0, p0, Lcom/google/zxing/aztec/detector/Detector;->compact:Z
 
     if-eqz v0, :cond_2
@@ -508,14 +477,12 @@
 
     add-int/2addr v0, v1
 
-    .line 14
     iput v0, p0, Lcom/google/zxing/aztec/detector/Detector;->nbLayers:I
 
     and-int/lit8 p1, p1, 0x3f
 
     add-int/2addr p1, v1
 
-    .line 15
     iput p1, p0, Lcom/google/zxing/aztec/detector/Detector;->nbDataBlocks:I
 
     return-void
@@ -525,19 +492,16 @@
 
     add-int/2addr v0, v1
 
-    .line 16
     iput v0, p0, Lcom/google/zxing/aztec/detector/Detector;->nbLayers:I
 
     and-int/lit16 p1, p1, 0x7ff
 
     add-int/2addr p1, v1
 
-    .line 17
     iput p1, p0, Lcom/google/zxing/aztec/detector/Detector;->nbDataBlocks:I
 
     return-void
 
-    .line 18
     :cond_3
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -558,7 +522,6 @@
 
     const/4 v1, 0x1
 
-    .line 1
     iput v1, v0, Lcom/google/zxing/aztec/detector/Detector;->nbCenterLayers:I
 
     move-object/from16 v2, p1
@@ -582,32 +545,26 @@
 
     const/4 v7, -0x1
 
-    .line 2
     invoke-direct {v0, v2, v6, v1, v7}, Lcom/google/zxing/aztec/detector/Detector;->getFirstDifferent(Lcom/google/zxing/aztec/detector/Detector$Point;ZII)Lcom/google/zxing/aztec/detector/Detector$Point;
 
     move-result-object v8
 
-    .line 3
     invoke-direct {v0, v3, v6, v1, v1}, Lcom/google/zxing/aztec/detector/Detector;->getFirstDifferent(Lcom/google/zxing/aztec/detector/Detector$Point;ZII)Lcom/google/zxing/aztec/detector/Detector$Point;
 
     move-result-object v10
 
-    .line 4
     invoke-direct {v0, v4, v6, v7, v1}, Lcom/google/zxing/aztec/detector/Detector;->getFirstDifferent(Lcom/google/zxing/aztec/detector/Detector$Point;ZII)Lcom/google/zxing/aztec/detector/Detector$Point;
 
     move-result-object v11
 
-    .line 5
     invoke-direct {v0, v5, v6, v7, v7}, Lcom/google/zxing/aztec/detector/Detector;->getFirstDifferent(Lcom/google/zxing/aztec/detector/Detector$Point;ZII)Lcom/google/zxing/aztec/detector/Detector$Point;
 
     move-result-object v7
 
-    .line 6
     iget v12, v0, Lcom/google/zxing/aztec/detector/Detector;->nbCenterLayers:I
 
     if-le v12, v9, :cond_0
 
-    .line 7
     invoke-static {v7, v8}, Lcom/google/zxing/aztec/detector/Detector;->distance(Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;)F
 
     move-result v12
@@ -646,7 +603,6 @@
 
     if-gtz v16, :cond_1
 
-    .line 8
     invoke-direct {v0, v8, v10, v11, v7}, Lcom/google/zxing/aztec/detector/Detector;->isWhiteOrBlackRectangle(Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;)Z
 
     move-result v12
@@ -656,7 +612,6 @@
     :cond_0
     xor-int/lit8 v6, v6, 0x1
 
-    .line 9
     iget v2, v0, Lcom/google/zxing/aztec/detector/Detector;->nbCenterLayers:I
 
     add-int/2addr v2, v1
@@ -673,7 +628,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_1
     iget v6, v0, Lcom/google/zxing/aztec/detector/Detector;->nbCenterLayers:I
 
@@ -687,7 +641,6 @@
 
     goto :goto_1
 
-    .line 11
     :cond_2
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -695,7 +648,6 @@
 
     throw v1
 
-    .line 12
     :cond_3
     :goto_1
     iget v6, v0, Lcom/google/zxing/aztec/detector/Detector;->nbCenterLayers:I
@@ -714,7 +666,6 @@
     :goto_2
     iput-boolean v6, v0, Lcom/google/zxing/aztec/detector/Detector;->compact:Z
 
-    .line 13
     new-instance v6, Lcom/google/zxing/ResultPoint;
 
     invoke-virtual {v2}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
@@ -737,7 +688,6 @@
 
     invoke-direct {v6, v7, v2}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
 
-    .line 14
     new-instance v2, Lcom/google/zxing/ResultPoint;
 
     invoke-virtual {v3}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
@@ -758,7 +708,6 @@
 
     invoke-direct {v2, v7, v3}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
 
-    .line 15
     new-instance v3, Lcom/google/zxing/ResultPoint;
 
     invoke-virtual {v4}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
@@ -779,7 +728,6 @@
 
     invoke-direct {v3, v7, v4}, Lcom/google/zxing/ResultPoint;-><init>(FF)V
 
-    .line 16
     new-instance v4, Lcom/google/zxing/ResultPoint;
 
     invoke-virtual {v5}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
@@ -814,7 +762,6 @@
 
     aput-object v4, v5, v1
 
-    .line 17
     iget v2, v0, Lcom/google/zxing/aztec/detector/Detector;->nbCenterLayers:I
 
     mul-int/lit8 v3, v2, 0x2
@@ -837,12 +784,10 @@
 .method private getColor(Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;)I
     .locals 11
 
-    .line 1
     invoke-static {p1, p2}, Lcom/google/zxing/aztec/detector/Detector;->distance(Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;)F
 
     move-result v0
 
-    .line 2
     invoke-virtual {p2}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
 
     move-result v1
@@ -857,7 +802,6 @@
 
     div-float/2addr v1, v0
 
-    .line 3
     invoke-virtual {p2}, Lcom/google/zxing/aztec/detector/Detector$Point;->getY()I
 
     move-result p2
@@ -872,21 +816,18 @@
 
     div-float/2addr p2, v0
 
-    .line 4
     invoke-virtual {p1}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
 
     move-result v2
 
     int-to-float v2, v2
 
-    .line 5
     invoke-virtual {p1}, Lcom/google/zxing/aztec/detector/Detector$Point;->getY()I
 
     move-result v3
 
     int-to-float v3, v3
 
-    .line 6
     iget-object v4, p0, Lcom/google/zxing/aztec/detector/Detector;->image:Lcom/google/zxing/common/BitMatrix;
 
     invoke-virtual {p1}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
@@ -903,7 +844,6 @@
 
     float-to-double v4, v0
 
-    .line 7
     invoke-static {v4, v5}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v4
@@ -923,7 +863,6 @@
 
     add-float/2addr v3, p2
 
-    .line 8
     iget-object v8, p0, Lcom/google/zxing/aztec/detector/Detector;->image:Lcom/google/zxing/common/BitMatrix;
 
     invoke-static {v2}, Lcom/google/zxing/common/detector/MathUtils;->round(F)I
@@ -1012,7 +951,6 @@
     :goto_0
     sub-int v2, p2, v1
 
-    .line 1
     new-array v3, p2, [I
 
     add-int/lit8 p2, p2, -0x1
@@ -1024,7 +962,6 @@
 
     and-int/lit8 v4, v4, 0xf
 
-    .line 2
     aput v4, v3, p2
 
     shr-long/2addr p0, v0
@@ -1033,7 +970,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     :try_start_0
     new-instance p0, Lcom/google/zxing/common/reedsolomon/ReedSolomonDecoder;
@@ -1042,7 +978,6 @@
 
     invoke-direct {p0, p1}, Lcom/google/zxing/common/reedsolomon/ReedSolomonDecoder;-><init>(Lcom/google/zxing/common/reedsolomon/GenericGF;)V
 
-    .line 4
     invoke-virtual {p0, v3, v2}, Lcom/google/zxing/common/reedsolomon/ReedSolomonDecoder;->decode([II)V
     :try_end_0
     .catch Lcom/google/zxing/common/reedsolomon/ReedSolomonException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1056,7 +991,6 @@
 
     shl-int/lit8 p1, p1, 0x4
 
-    .line 5
     aget p2, v3, p0
 
     add-int/2addr p1, p2
@@ -1068,7 +1002,6 @@
     :cond_2
     return p1
 
-    .line 6
     :catch_0
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -1080,14 +1013,12 @@
 .method private getDimension()I
     .locals 3
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/zxing/aztec/detector/Detector;->compact:Z
 
     const/4 v1, 0x4
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget v0, p0, Lcom/google/zxing/aztec/detector/Detector;->nbLayers:I
 
     mul-int/lit8 v0, v0, 0x4
@@ -1096,7 +1027,6 @@
 
     return v0
 
-    .line 3
     :cond_0
     iget v0, p0, Lcom/google/zxing/aztec/detector/Detector;->nbLayers:I
 
@@ -1113,7 +1043,6 @@
 
     sub-int/2addr v0, v1
 
-    .line 4
     div-int/lit8 v0, v0, 0x8
 
     add-int/lit8 v0, v0, 0x1
@@ -1130,14 +1059,12 @@
 .method private getFirstDifferent(Lcom/google/zxing/aztec/detector/Detector$Point;ZII)Lcom/google/zxing/aztec/detector/Detector$Point;
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
 
     move-result v0
 
     add-int/2addr v0, p3
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/zxing/aztec/detector/Detector$Point;->getY()I
 
     move-result p1
@@ -1145,7 +1072,6 @@
     :goto_0
     add-int/2addr p1, p4
 
-    .line 3
     invoke-direct {p0, v0, p1}, Lcom/google/zxing/aztec/detector/Detector;->isValid(II)Z
 
     move-result v1
@@ -1169,7 +1095,6 @@
 
     sub-int/2addr p1, p4
 
-    .line 4
     :goto_1
     invoke-direct {p0, v0, p1}, Lcom/google/zxing/aztec/detector/Detector;->isValid(II)Z
 
@@ -1192,7 +1117,6 @@
     :cond_1
     sub-int/2addr v0, p3
 
-    .line 5
     :goto_2
     invoke-direct {p0, v0, p1}, Lcom/google/zxing/aztec/detector/Detector;->isValid(II)Z
 
@@ -1215,7 +1139,6 @@
     :cond_2
     sub-int/2addr p1, p4
 
-    .line 6
     new-instance p2, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     invoke-direct {p2, v0, p1}, Lcom/google/zxing/aztec/detector/Detector$Point;-><init>(II)V
@@ -1236,7 +1159,6 @@
 
     const/4 v4, 0x0
 
-    .line 1
     :try_start_0
     new-instance v5, Lcom/google/zxing/common/detector/WhiteRectangleDetector;
 
@@ -1248,23 +1170,18 @@
 
     move-result-object v5
 
-    .line 2
     aget-object v6, v5, v4
 
-    .line 3
     aget-object v7, v5, v3
 
-    .line 4
     aget-object v8, v5, v1
 
-    .line 5
     aget-object v5, v5, v0
     :try_end_0
     .catch Lcom/google/zxing/NotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 6
     :catch_0
     iget-object v5, p0, Lcom/google/zxing/aztec/detector/Detector;->image:Lcom/google/zxing/common/BitMatrix;
 
@@ -1274,7 +1191,6 @@
 
     div-int/2addr v5, v1
 
-    .line 7
     iget-object v6, p0, Lcom/google/zxing/aztec/detector/Detector;->image:Lcom/google/zxing/common/BitMatrix;
 
     invoke-virtual {v6}, Lcom/google/zxing/common/BitMatrix;->getHeight()I
@@ -1283,7 +1199,6 @@
 
     div-int/2addr v6, v1
 
-    .line 8
     new-instance v7, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     add-int/lit8 v8, v5, 0x7
@@ -1300,7 +1215,6 @@
 
     move-result-object v7
 
-    .line 9
     new-instance v10, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     add-int/lit8 v6, v6, 0x7
@@ -1315,7 +1229,6 @@
 
     move-result-object v8
 
-    .line 10
     new-instance v10, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     add-int/lit8 v5, v5, -0x7
@@ -1330,7 +1243,6 @@
 
     move-result-object v6
 
-    .line 11
     new-instance v10, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     invoke-direct {v10, v5, v9}, Lcom/google/zxing/aztec/detector/Detector$Point;-><init>(II)V
@@ -1351,7 +1263,6 @@
 
     move-object v7, v11
 
-    .line 12
     :goto_0
     invoke-virtual {v6}, Lcom/google/zxing/ResultPoint;->getX()F
 
@@ -1383,7 +1294,6 @@
 
     move-result v9
 
-    .line 13
     invoke-virtual {v6}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result v6
@@ -1412,7 +1322,6 @@
 
     move-result v5
 
-    .line 14
     :try_start_1
     new-instance v6, Lcom/google/zxing/common/detector/WhiteRectangleDetector;
 
@@ -1426,23 +1335,18 @@
 
     move-result-object v6
 
-    .line 15
     aget-object v7, v6, v4
 
-    .line 16
     aget-object v8, v6, v3
 
-    .line 17
     aget-object v1, v6, v1
 
-    .line 18
     aget-object v0, v6, v0
     :try_end_1
     .catch Lcom/google/zxing/NotFoundException; {:try_start_1 .. :try_end_1} :catch_1
 
     goto :goto_1
 
-    .line 19
     :catch_1
     new-instance v0, Lcom/google/zxing/aztec/detector/Detector$Point;
 
@@ -1460,7 +1364,6 @@
 
     move-result-object v7
 
-    .line 20
     new-instance v0, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     add-int/lit8 v5, v5, 0x7
@@ -1475,7 +1378,6 @@
 
     move-result-object v8
 
-    .line 21
     new-instance v0, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     add-int/lit8 v9, v9, -0x7
@@ -1490,7 +1392,6 @@
 
     move-result-object v1
 
-    .line 22
     new-instance v0, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     invoke-direct {v0, v9, v6}, Lcom/google/zxing/aztec/detector/Detector$Point;-><init>(II)V
@@ -1503,7 +1404,6 @@
 
     move-result-object v0
 
-    .line 23
     :goto_1
     invoke-virtual {v7}, Lcom/google/zxing/ResultPoint;->getX()F
 
@@ -1533,7 +1433,6 @@
 
     move-result v2
 
-    .line 24
     invoke-virtual {v7}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result v3
@@ -1562,7 +1461,6 @@
 
     move-result v0
 
-    .line 25
     new-instance v1, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     invoke-direct {v1, v2, v0}, Lcom/google/zxing/aztec/detector/Detector$Point;-><init>(II)V
@@ -1573,7 +1471,6 @@
 .method private getMatrixCornerPoints([Lcom/google/zxing/ResultPoint;)[Lcom/google/zxing/ResultPoint;
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/aztec/detector/Detector;->nbCenterLayers:I
 
     mul-int/lit8 v0, v0, 0x2
@@ -1601,7 +1498,6 @@
         }
     .end annotation
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -1649,7 +1545,6 @@
 
     if-ge v1, p1, :cond_2
 
-    .line 2
     sget-object p1, Lcom/google/zxing/aztec/detector/Detector;->EXPECTED_CORNER_BITS:[I
 
     aget p1, p1, v1
@@ -1669,7 +1564,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_2
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -1683,7 +1577,6 @@
 
     if-ltz p1, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/aztec/detector/Detector;->image:Lcom/google/zxing/common/BitMatrix;
 
     invoke-virtual {v0}, Lcom/google/zxing/common/BitMatrix;->getWidth()I
@@ -1715,7 +1608,6 @@
 .method private isValid(Lcom/google/zxing/ResultPoint;)Z
     .locals 1
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v0
@@ -1724,7 +1616,6 @@
 
     move-result v0
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result p1
@@ -1733,7 +1624,6 @@
 
     move-result p1
 
-    .line 4
     invoke-direct {p0, v0, p1}, Lcom/google/zxing/aztec/detector/Detector;->isValid(II)Z
 
     move-result p1
@@ -1744,7 +1634,6 @@
 .method private isWhiteOrBlackRectangle(Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;)Z
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     invoke-virtual {p1}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
@@ -1761,7 +1650,6 @@
 
     invoke-direct {v0, v1, p1}, Lcom/google/zxing/aztec/detector/Detector$Point;-><init>(II)V
 
-    .line 2
     new-instance p1, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     invoke-virtual {p2}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
@@ -1778,7 +1666,6 @@
 
     invoke-direct {p1, v1, p2}, Lcom/google/zxing/aztec/detector/Detector$Point;-><init>(II)V
 
-    .line 3
     new-instance p2, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     invoke-virtual {p3}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
@@ -1795,7 +1682,6 @@
 
     invoke-direct {p2, v1, p3}, Lcom/google/zxing/aztec/detector/Detector$Point;-><init>(II)V
 
-    .line 4
     new-instance p3, Lcom/google/zxing/aztec/detector/Detector$Point;
 
     invoke-virtual {p4}, Lcom/google/zxing/aztec/detector/Detector$Point;->getX()I
@@ -1812,7 +1698,6 @@
 
     invoke-direct {p3, v1, p4}, Lcom/google/zxing/aztec/detector/Detector$Point;-><init>(II)V
 
-    .line 5
     invoke-direct {p0, p3, v0}, Lcom/google/zxing/aztec/detector/Detector;->getColor(Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;)I
 
     move-result p4
@@ -1823,7 +1708,6 @@
 
     return v1
 
-    .line 6
     :cond_0
     invoke-direct {p0, v0, p1}, Lcom/google/zxing/aztec/detector/Detector;->getColor(Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;)I
 
@@ -1833,7 +1717,6 @@
 
     return v1
 
-    .line 7
     :cond_1
     invoke-direct {p0, p1, p2}, Lcom/google/zxing/aztec/detector/Detector;->getColor(Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;)I
 
@@ -1843,7 +1726,6 @@
 
     return v1
 
-    .line 8
     :cond_2
     invoke-direct {p0, p2, p3}, Lcom/google/zxing/aztec/detector/Detector;->getColor(Lcom/google/zxing/aztec/detector/Detector$Point;Lcom/google/zxing/aztec/detector/Detector$Point;)I
 
@@ -1869,12 +1751,10 @@
 
     move-object/from16 v1, p1
 
-    .line 1
     invoke-static {}, Lcom/google/zxing/common/GridSampler;->getInstance()Lcom/google/zxing/common/GridSampler;
 
     move-result-object v0
 
-    .line 2
     invoke-direct/range {p0 .. p0}, Lcom/google/zxing/aztec/detector/Detector;->getDimension()I
 
     move-result v4
@@ -1891,7 +1771,6 @@
 
     move-object/from16 v15, p0
 
-    .line 3
     iget v8, v15, Lcom/google/zxing/aztec/detector/Detector;->nbCenterLayers:I
 
     int-to-float v4, v8
@@ -1914,7 +1793,6 @@
 
     move v11, v6
 
-    .line 4
     invoke-virtual/range {p2 .. p2}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v12
@@ -1923,7 +1801,6 @@
 
     move-result v13
 
-    .line 5
     invoke-virtual/range {p3 .. p3}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v14
@@ -1934,7 +1811,6 @@
 
     move/from16 v15, v16
 
-    .line 6
     invoke-virtual/range {p4 .. p4}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v16
@@ -1943,7 +1819,6 @@
 
     move-result v17
 
-    .line 7
     invoke-virtual/range {p5 .. p5}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v18
@@ -1952,7 +1827,6 @@
 
     move-result v19
 
-    .line 8
     invoke-virtual/range {v0 .. v19}, Lcom/google/zxing/common/GridSampler;->sampleGrid(Lcom/google/zxing/common/BitMatrix;IIFFFFFFFFFFFFFFFF)Lcom/google/zxing/common/BitMatrix;
 
     move-result-object v0
@@ -1963,7 +1837,6 @@
 .method private sampleLine(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;I)I
     .locals 7
 
-    .line 1
     invoke-static {p1, p2}, Lcom/google/zxing/aztec/detector/Detector;->distance(Lcom/google/zxing/ResultPoint;Lcom/google/zxing/ResultPoint;)F
 
     move-result v0
@@ -1972,17 +1845,14 @@
 
     div-float v1, v0, v1
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v2
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result v3
 
-    .line 4
     invoke-virtual {p2}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v4
@@ -1997,7 +1867,6 @@
 
     div-float/2addr v4, v0
 
-    .line 5
     invoke-virtual {p2}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result p2
@@ -2019,7 +1888,6 @@
     :goto_0
     if-ge p1, p3, :cond_1
 
-    .line 6
     iget-object v0, p0, Lcom/google/zxing/aztec/detector/Detector;->image:Lcom/google/zxing/common/BitMatrix;
 
     int-to-float v5, p1
@@ -2077,7 +1945,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/zxing/aztec/detector/Detector;->detect(Z)Lcom/google/zxing/aztec/AztecDetectorResult;
 
     move-result-object v0
@@ -2093,12 +1960,10 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Lcom/google/zxing/aztec/detector/Detector;->getMatrixCenter()Lcom/google/zxing/aztec/detector/Detector$Point;
 
     move-result-object v0
 
-    .line 3
     invoke-direct {p0, v0}, Lcom/google/zxing/aztec/detector/Detector;->getBullsEyeCorners(Lcom/google/zxing/aztec/detector/Detector$Point;)[Lcom/google/zxing/ResultPoint;
 
     move-result-object v6
@@ -2107,24 +1972,19 @@
 
     const/4 v0, 0x0
 
-    .line 4
     aget-object v1, v6, v0
 
     const/4 v2, 0x2
 
-    .line 5
     aget-object v3, v6, v2
 
     aput-object v3, v6, v0
 
-    .line 6
     aput-object v1, v6, v2
 
-    .line 7
     :cond_0
     invoke-direct {p0, v6}, Lcom/google/zxing/aztec/detector/Detector;->extractParameters([Lcom/google/zxing/ResultPoint;)V
 
-    .line 8
     iget-object v1, p0, Lcom/google/zxing/aztec/detector/Detector;->image:Lcom/google/zxing/common/BitMatrix;
 
     iget v0, p0, Lcom/google/zxing/aztec/detector/Detector;->shift:I
@@ -2157,12 +2017,10 @@
 
     move-result-object v8
 
-    .line 9
     invoke-direct {p0, v6}, Lcom/google/zxing/aztec/detector/Detector;->getMatrixCornerPoints([Lcom/google/zxing/ResultPoint;)[Lcom/google/zxing/ResultPoint;
 
     move-result-object v9
 
-    .line 10
     new-instance v0, Lcom/google/zxing/aztec/AztecDetectorResult;
 
     iget-boolean v10, p0, Lcom/google/zxing/aztec/detector/Detector;->compact:Z

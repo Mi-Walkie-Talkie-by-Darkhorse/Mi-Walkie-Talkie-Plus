@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/mylocation/IMyLocationConsumer;
 .super Ljava/lang/Object;
-.source "IMyLocationConsumer.java"
 
 
 # virtual methods

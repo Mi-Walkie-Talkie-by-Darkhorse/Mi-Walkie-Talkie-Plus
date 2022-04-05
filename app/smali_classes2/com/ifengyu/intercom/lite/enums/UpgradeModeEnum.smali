@@ -1,6 +1,5 @@
 .class public final enum Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;
 .super Ljava/lang/Enum;
-.source "UpgradeModeEnum.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;
 
     const/4 v1, 0x1
@@ -50,7 +48,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;->c:Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;
 
     const/4 v2, 0x2
@@ -69,7 +66,6 @@
 
     new-array v2, v2, [Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;
 
-    .line 3
     sget-object v4, Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;->c:Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;
 
     aput-object v4, v2, v3
@@ -92,13 +88,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;->a:Ljava/lang/Integer;
 
-    .line 3
     iput-object p4, p0, Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;->b:Ljava/lang/String;
 
     return-void
@@ -107,7 +100,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -122,7 +114,6 @@
 .method public static values()[Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;->e:[Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;
 
     invoke-virtual {v0}, [Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;->clone()Ljava/lang/Object;
@@ -139,7 +130,6 @@
 .method public a()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/enums/UpgradeModeEnum;->a:Ljava/lang/Integer;
 
     return-object v0

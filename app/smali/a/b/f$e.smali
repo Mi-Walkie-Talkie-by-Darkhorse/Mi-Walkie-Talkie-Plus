@@ -1,6 +1,5 @@
 .class final La/b/f$e;
 .super Ljava/lang/Object;
-.source "MapCollections.java"
 
 # interfaces
 .implements Ljava/util/Collection;
@@ -33,7 +32,6 @@
 .method constructor <init>(La/b/f;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, La/b/f$e;->a:La/b/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +49,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -69,7 +66,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -80,7 +76,6 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/f$e;->a:La/b/f;
 
     invoke-virtual {v0}, La/b/f;->a()V
@@ -91,7 +86,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/f$e;->a:La/b/f;
 
     invoke-virtual {v0, p1}, La/b/f;->b(Ljava/lang/Object;)I
@@ -121,12 +115,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 2
     :cond_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -134,7 +126,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -158,7 +149,6 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/f$e;->a:La/b/f;
 
     invoke-virtual {v0}, La/b/f;->c()I
@@ -188,7 +178,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, La/b/f$a;
 
     iget-object v1, p0, La/b/f$e;->a:La/b/f;
@@ -203,7 +192,6 @@
 .method public remove(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/f$e;->a:La/b/f;
 
     invoke-virtual {v0, p1}, La/b/f;->b(Ljava/lang/Object;)I
@@ -212,7 +200,6 @@
 
     if-ltz p1, :cond_0
 
-    .line 2
     iget-object v0, p0, La/b/f$e;->a:La/b/f;
 
     invoke-virtual {v0, p1}, La/b/f;->a(I)V
@@ -237,7 +224,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/b/f$e;->a:La/b/f;
 
     invoke-virtual {v0}, La/b/f;->c()I
@@ -251,7 +237,6 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 2
     iget-object v3, p0, La/b/f$e;->a:La/b/f;
 
     const/4 v4, 0x1
@@ -260,14 +245,12 @@
 
     move-result-object v3
 
-    .line 3
     invoke-interface {p1, v3}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 4
     iget-object v2, p0, La/b/f$e;->a:La/b/f;
 
     invoke-virtual {v2, v1}, La/b/f;->a(I)V
@@ -297,7 +280,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/b/f$e;->a:La/b/f;
 
     invoke-virtual {v0}, La/b/f;->c()I
@@ -311,7 +293,6 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 2
     iget-object v3, p0, La/b/f$e;->a:La/b/f;
 
     const/4 v4, 0x1
@@ -320,14 +301,12 @@
 
     move-result-object v3
 
-    .line 3
     invoke-interface {p1, v3}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 4
     iget-object v2, p0, La/b/f$e;->a:La/b/f;
 
     invoke-virtual {v2, v1}, La/b/f;->a(I)V
@@ -350,7 +329,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/b/f$e;->a:La/b/f;
 
     invoke-virtual {v0}, La/b/f;->c()I
@@ -363,7 +341,6 @@
 .method public toArray()[Ljava/lang/Object;
     .locals 2
 
-    .line 1
     iget-object v0, p0, La/b/f$e;->a:La/b/f;
 
     const/4 v1, 0x1
@@ -385,7 +362,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, La/b/f$e;->a:La/b/f;
 
     const/4 v1, 0x1

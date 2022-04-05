@@ -1,6 +1,5 @@
 .class final synthetic Lcom/amap/api/col/l3/er$1;
 .super Ljava/lang/Object;
-.source "RectPacker.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/amap/api/col/l3/er$a;->values()[Lcom/amap/api/col/l3/er$a;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class final Lcom/bumptech/glide/load/k/f/c$a;
 .super Landroid/graphics/drawable/Drawable$ConstantState;
-.source "GifDrawable.java"
 
 
 # annotations
@@ -25,10 +24,8 @@
 .method constructor <init>(Lcom/bumptech/glide/load/k/f/g;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable$ConstantState;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/k/f/c$a;->a:Lcom/bumptech/glide/load/k/f/g;
 
     return-void
@@ -49,7 +46,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/bumptech/glide/load/k/f/c;
 
     invoke-direct {v0, p0}, Lcom/bumptech/glide/load/k/f/c;-><init>(Lcom/bumptech/glide/load/k/f/c$a;)V
@@ -62,7 +58,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/bumptech/glide/load/k/f/c$a;->newDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object p1

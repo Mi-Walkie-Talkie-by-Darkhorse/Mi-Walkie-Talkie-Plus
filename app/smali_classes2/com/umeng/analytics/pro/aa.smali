@@ -1,13 +1,11 @@
 .class public Lcom/umeng/analytics/pro/aa;
 .super Ljava/lang/Object;
-.source "DeviceIdSupplier.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -16,7 +14,6 @@
 .method public static a(Landroid/content/Context;)Lcom/umeng/analytics/pro/y;
     .locals 3
 
-    .line 1
     sget-object p0, Landroid/os/Build;->BRAND:Ljava/lang/String;
 
     const/4 v0, 0x2
@@ -35,10 +32,8 @@
 
     const-string v1, "Device"
 
-    .line 2
     invoke-static {v1, v0}, Lcom/umeng/analytics/pro/ah;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -52,7 +47,6 @@
     :cond_0
     const-string v0, "huawei"
 
-    .line 4
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -61,7 +55,6 @@
 
     const-string v0, "honor"
 
-    .line 5
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -70,7 +63,6 @@
 
     const-string v0, "\u534e\u4e3a"
 
-    .line 6
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -82,7 +74,6 @@
     :cond_1
     const-string v0, "xiaomi"
 
-    .line 7
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -91,7 +82,6 @@
 
     const-string v0, "redmi"
 
-    .line 8
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -100,7 +90,6 @@
 
     const-string v0, "meitu"
 
-    .line 9
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -109,7 +98,6 @@
 
     const-string v0, "\u5c0f\u7c73"
 
-    .line 10
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -121,14 +109,12 @@
     :cond_2
     const-string v0, "vivo"
 
-    .line 11
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
-    .line 12
     new-instance p0, Lcom/umeng/analytics/pro/af;
 
     invoke-direct {p0}, Lcom/umeng/analytics/pro/af;-><init>()V
@@ -138,7 +124,6 @@
     :cond_3
     const-string v0, "oppo"
 
-    .line 13
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -147,7 +132,6 @@
 
     const-string v0, "oneplus"
 
-    .line 14
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -159,7 +143,6 @@
     :cond_4
     const-string v0, "lenovo"
 
-    .line 15
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -168,7 +151,6 @@
 
     const-string v0, "zuk"
 
-    .line 16
     invoke-virtual {p0, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result p0
@@ -177,7 +159,6 @@
 
     goto :goto_0
 
-    .line 17
     :cond_5
     sget-object p0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 
@@ -189,7 +170,6 @@
 
     if-eqz p0, :cond_6
 
-    .line 18
     new-instance p0, Lcom/umeng/analytics/pro/ae;
 
     invoke-direct {p0}, Lcom/umeng/analytics/pro/ae;-><init>()V
@@ -199,7 +179,6 @@
     :cond_6
     return-object v1
 
-    .line 19
     :cond_7
     :goto_0
     new-instance p0, Lcom/umeng/analytics/pro/ac;
@@ -208,7 +187,6 @@
 
     return-object p0
 
-    .line 20
     :cond_8
     :goto_1
     new-instance p0, Lcom/umeng/analytics/pro/ad;
@@ -217,7 +195,6 @@
 
     return-object p0
 
-    .line 21
     :cond_9
     :goto_2
     new-instance p0, Lcom/umeng/analytics/pro/ag;
@@ -226,7 +203,6 @@
 
     return-object p0
 
-    .line 22
     :cond_a
     :goto_3
     new-instance p0, Lcom/umeng/analytics/pro/ab;

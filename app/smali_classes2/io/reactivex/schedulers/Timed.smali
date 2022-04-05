@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/schedulers/Timed;
 .super Ljava/lang/Object;
-.source "Timed.java"
 
 
 # annotations
@@ -47,18 +46,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/schedulers/Timed;->value:Ljava/lang/Object;
 
-    .line 3
     iput-wide p2, p0, Lio/reactivex/schedulers/Timed;->time:J
 
     const-string p1, "unit is null"
 
-    .line 4
     invoke-static {p4, p1}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -75,17 +70,14 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 6
 
-    .line 1
     instance-of v0, p1, Lio/reactivex/schedulers/Timed;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lio/reactivex/schedulers/Timed;
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/schedulers/Timed;->value:Ljava/lang/Object;
 
     iget-object v2, p1, Lio/reactivex/schedulers/Timed;->value:Ljava/lang/Object;
@@ -108,7 +100,6 @@
 
     iget-object p1, p1, Lio/reactivex/schedulers/Timed;->unit:Ljava/util/concurrent/TimeUnit;
 
-    .line 4
     invoke-static {v0, p1}, Lio/reactivex/internal/functions/ObjectHelper;->equals(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
@@ -124,7 +115,6 @@
 .method public hashCode()I
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/schedulers/Timed;->value:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
@@ -143,7 +133,6 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 2
     iget-wide v2, p0, Lio/reactivex/schedulers/Timed;->time:J
 
     ushr-long v4, v2, v1
@@ -156,7 +145,6 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 3
     iget-object v1, p0, Lio/reactivex/schedulers/Timed;->unit:Ljava/util/concurrent/TimeUnit;
 
     invoke-virtual {v1}, Ljava/util/concurrent/TimeUnit;->hashCode()I
@@ -171,7 +159,6 @@
 .method public time()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lio/reactivex/schedulers/Timed;->time:J
 
     return-wide v0
@@ -184,7 +171,6 @@
         .end annotation
     .end param
 
-    .line 2
     iget-wide v0, p0, Lio/reactivex/schedulers/Timed;->time:J
 
     iget-object v2, p0, Lio/reactivex/schedulers/Timed;->unit:Ljava/util/concurrent/TimeUnit;
@@ -199,7 +185,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -244,7 +229,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/schedulers/Timed;->unit:Ljava/util/concurrent/TimeUnit;
 
     return-object v0
@@ -261,7 +245,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/schedulers/Timed;->value:Ljava/lang/Object;
 
     return-object v0

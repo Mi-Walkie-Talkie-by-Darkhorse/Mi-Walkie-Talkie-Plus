@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/i$e;
 .super Landroidx/appcompat/c/i;
-.source "ToolbarActionBar.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(Landroidx/appcompat/app/i;Landroid/view/Window$Callback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/app/i$e;->b:Landroidx/appcompat/app/i;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/appcompat/c/i;-><init>(Landroid/view/Window$Callback;)V
 
     return-void
@@ -38,7 +35,6 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     new-instance p1, Landroid/view/View;
 
     iget-object v0, p0, Landroidx/appcompat/app/i$e;->b:Landroidx/appcompat/app/i;
@@ -53,7 +49,6 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     invoke-super {p0, p1}, Landroidx/appcompat/c/i;->onCreatePanelView(I)Landroid/view/View;
 
@@ -65,26 +60,22 @@
 .method public onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroidx/appcompat/c/i;->onPreparePanel(ILandroid/view/View;Landroid/view/Menu;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p2, p0, Landroidx/appcompat/app/i$e;->b:Landroidx/appcompat/app/i;
 
     iget-boolean p3, p2, Landroidx/appcompat/app/i;->b:Z
 
     if-nez p3, :cond_0
 
-    .line 3
     iget-object p2, p2, Landroidx/appcompat/app/i;->a:Landroidx/appcompat/widget/p;
 
     invoke-interface {p2}, Landroidx/appcompat/widget/p;->setMenuPrepared()V
 
-    .line 4
     iget-object p2, p0, Landroidx/appcompat/app/i$e;->b:Landroidx/appcompat/app/i;
 
     const/4 p3, 0x1

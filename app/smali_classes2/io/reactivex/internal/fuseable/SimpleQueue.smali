@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/internal/fuseable/SimpleQueue;
 .super Ljava/lang/Object;
-.source "SimpleQueue.java"
 
 
 # annotations

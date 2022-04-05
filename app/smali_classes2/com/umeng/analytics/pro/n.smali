@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/n;
 .super Ljava/lang/Object;
-.source "CoreProtocolImpl.java"
 
 
 # annotations
@@ -81,7 +80,6 @@
 .method static constructor <clinit>()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/umeng/analytics/pro/n;->h()V
 
     return-void
@@ -90,29 +88,22 @@
 .method private constructor <init>()V
     .locals 5
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/umeng/analytics/pro/n;->b:Lcom/umeng/analytics/pro/n$c;
 
-    .line 4
     iput-object v0, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
-    .line 5
     iput-object v0, p0, Lcom/umeng/analytics/pro/n;->d:Ljava/lang/String;
 
-    .line 6
     iput-object v0, p0, Lcom/umeng/analytics/pro/n;->e:Ljava/lang/String;
 
     const/16 v0, 0xa
 
-    .line 7
     iput v0, p0, Lcom/umeng/analytics/pro/n;->f:I
 
-    .line 8
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
@@ -121,41 +112,32 @@
 
     const/16 v0, 0x1388
 
-    .line 9
     iput v0, p0, Lcom/umeng/analytics/pro/n;->h:I
 
     const/4 v0, 0x0
 
-    .line 10
     iput v0, p0, Lcom/umeng/analytics/pro/n;->i:I
 
-    .line 11
     iput v0, p0, Lcom/umeng/analytics/pro/n;->j:I
 
     const-wide/16 v1, 0x0
 
-    .line 12
     iput-wide v1, p0, Lcom/umeng/analytics/pro/n;->k:J
 
     const-wide/32 v3, 0x1b77400
 
-    .line 13
     iput-wide v3, p0, Lcom/umeng/analytics/pro/n;->s:J
 
-    .line 14
     iput-boolean v0, p0, Lcom/umeng/analytics/pro/n;->u:Z
 
-    .line 15
     iput-boolean v0, p0, Lcom/umeng/analytics/pro/n;->v:Z
 
-    .line 16
     new-instance v3, Ljava/lang/Object;
 
     invoke-direct {v3}, Ljava/lang/Object;-><init>()V
 
     iput-object v3, p0, Lcom/umeng/analytics/pro/n;->w:Ljava/lang/Object;
 
-    .line 17
     :try_start_0
     sget-object v3, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -165,7 +147,6 @@
 
     const-string v4, "thtstart"
 
-    .line 18
     invoke-interface {v3, v4, v1, v2}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
 
     move-result-wide v1
@@ -174,7 +155,6 @@
 
     const-string v1, "gkvc"
 
-    .line 19
     invoke-interface {v3, v1, v0}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result v1
@@ -183,14 +163,12 @@
 
     const-string v1, "ekvc"
 
-    .line 20
     invoke-interface {v3, v1, v0}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result v0
 
     iput v0, p0, Lcom/umeng/analytics/pro/n;->j:I
 
-    .line 21
     new-instance v0, Lcom/umeng/analytics/pro/n$c;
 
     invoke-direct {v0}, Lcom/umeng/analytics/pro/n$c;-><init>()V
@@ -206,7 +184,6 @@
 .method synthetic constructor <init>(Lcom/umeng/analytics/pro/n$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;-><init>()V
 
     return-void
@@ -215,21 +192,18 @@
 .method public static a(Landroid/content/Context;)Lcom/umeng/analytics/pro/n;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     if-nez v0, :cond_0
 
     if-eqz p0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p0
 
     sput-object p0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
-    .line 3
     :cond_0
     invoke-static {}, Lcom/umeng/analytics/pro/n$b;->a()Lcom/umeng/analytics/pro/n;
 
@@ -243,7 +217,6 @@
 
     const-string v0, "header"
 
-    .line 152
     :try_start_0
     invoke-static {p1}, Lcom/umeng/analytics/pro/p;->a(Lorg/json/JSONObject;)J
 
@@ -253,24 +226,20 @@
 
     if-lez v3, :cond_0
 
-    .line 153
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
 
     const-string v2, "eof"
 
-    .line 154
     invoke-static {p1}, Lcom/umeng/analytics/pro/p;->a(Lorg/json/JSONObject;)J
 
     move-result-wide v3
 
     invoke-virtual {v1, v2, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
-    .line 155
     invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 156
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0, p2, p3, p1}, Lcom/umeng/analytics/pro/p;->a(Landroid/content/Context;JLorg/json/JSONObject;)Lorg/json/JSONObject;
@@ -287,7 +256,6 @@
 .method private a(Ljava/lang/String;Ljava/lang/String;)V
     .locals 4
 
-    .line 19
     sget-object v0, Lcom/umeng/analytics/pro/n;->y:Ljava/lang/Class;
 
     if-eqz v0, :cond_0
@@ -309,7 +277,6 @@
 
     aput-object p2, v2, p1
 
-    .line 20
     invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -321,7 +288,6 @@
 
     const-string p2, "--->>> reflect call setPuidAndProvider method of crash lib failed."
 
-    .line 21
     invoke-static {p1, p2}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
@@ -340,7 +306,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 157
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
@@ -353,7 +318,6 @@
 
     if-lez v3, :cond_0
 
-    .line 158
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->o()V
 
     return v0
@@ -377,7 +341,6 @@
 .method private a(Lorg/json/JSONArray;)Z
     .locals 7
 
-    .line 110
     invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
 
     move-result v0
@@ -388,12 +351,10 @@
 
     const-string v3, "$$_onUMengEnterForegroundInitError"
 
-    .line 111
     filled-new-array {v1, v2, v3}, [Ljava/lang/String;
 
     move-result-object v1
 
-    .line 112
     invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
@@ -407,7 +368,6 @@
     :goto_0
     if-ge v3, v0, :cond_1
 
-    .line 113
     :try_start_0
     invoke-virtual {p1, v3}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
 
@@ -417,12 +377,10 @@
 
     const-string v6, "id"
 
-    .line 114
     invoke-virtual {v5, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 115
     invoke-interface {v1, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
     move-result v5
@@ -455,12 +413,10 @@
 
     const-string v0, "ekv"
 
-    .line 116
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object p1
 
-    .line 117
     invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
 
     move-result v0
@@ -476,18 +432,15 @@
     :goto_0
     if-ge v2, v0, :cond_2
 
-    .line 118
     :try_start_0
     invoke-virtual {p1, v2}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v4
 
-    .line 119
     invoke-virtual {v4}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
 
     move-result-object v5
 
-    .line 120
     :cond_0
     :goto_1
     invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
@@ -496,21 +449,18 @@
 
     if-eqz v6, :cond_1
 
-    .line 121
     invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v6
 
     check-cast v6, Ljava/lang/String;
 
-    .line 122
     invoke-virtual {v4, v6}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v6
 
     if-eqz v6, :cond_0
 
-    .line 123
     invoke-direct {p0, v6}, Lcom/umeng/analytics/pro/n;->a(Lorg/json/JSONArray;)Z
 
     move-result v6
@@ -543,7 +493,6 @@
 .method private b(Lorg/json/JSONObject;J)Lorg/json/JSONObject;
     .locals 3
 
-    .line 37
     :try_start_0
     invoke-static {p1}, Lcom/umeng/analytics/pro/p;->a(Lorg/json/JSONObject;)J
 
@@ -555,7 +504,6 @@
 
     const/4 p1, 0x0
 
-    .line 38
     sget-object p2, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p2}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -568,7 +516,6 @@
 
     invoke-virtual {p2, p3, v0}, Lcom/umeng/analytics/pro/h;->a(ZZ)V
 
-    .line 39
     sget-object p2, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p2}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -581,7 +528,6 @@
 
     const-string p3, "--->>> Instant session packet overload !!! "
 
-    .line 40
     invoke-static {p2, p3}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -594,7 +540,6 @@
 .method private b(Lorg/json/JSONObject;)V
     .locals 4
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/service/UMGlobalContext;->getAppContext(Landroid/content/Context;)Landroid/content/Context;
@@ -611,7 +556,6 @@
 
     if-nez v0, :cond_2
 
-    .line 2
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/service/UMGlobalContext;->getAppContext(Landroid/content/Context;)Landroid/content/Context;
@@ -630,19 +574,16 @@
 
     const-string v1, "__av"
 
-    .line 3
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     const-string v2, "__vc"
 
-    .line 4
     invoke-virtual {v0, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 5
     :try_start_0
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -654,7 +595,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 6
     :try_start_1
     sget-object v1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -666,11 +606,9 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {p1, v3, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 8
     :goto_0
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -682,7 +620,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 9
     :try_start_2
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -694,7 +631,6 @@
 
     goto :goto_1
 
-    .line 10
     :cond_1
     invoke-virtual {p1, v2, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_2
@@ -709,7 +645,6 @@
 .method private c(Lorg/json/JSONObject;)V
     .locals 5
 
-    .line 4
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -726,7 +661,6 @@
 
     if-nez v0, :cond_2
 
-    .line 5
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -741,19 +675,16 @@
 
     const-string v3, "__av"
 
-    .line 6
     invoke-virtual {v0, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     const-string v4, "__vc"
 
-    .line 7
     invoke-virtual {v0, v4}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 8
     :try_start_0
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -761,7 +692,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 9
     sget-object v3, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/umeng/commonsdk/utils/UMUtils;->getAppVersionName(Landroid/content/Context;)Ljava/lang/String;
@@ -772,11 +702,9 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     invoke-virtual {p1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 11
     :goto_0
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -784,7 +712,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 12
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/utils/UMUtils;->getAppVersionCode(Landroid/content/Context;)Ljava/lang/String;
@@ -795,13 +722,11 @@
 
     goto :goto_1
 
-    .line 13
     :cond_1
     invoke-virtual {p1, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     goto :goto_1
 
-    .line 14
     :cond_2
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -811,7 +736,6 @@
 
     invoke-virtual {p1, v2, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 15
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/utils/UMUtils;->getAppVersionCode(Landroid/content/Context;)Ljava/lang/String;
@@ -831,7 +755,6 @@
 .method private c(Z)Z
     .locals 3
 
-    .line 16
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->s()Z
 
     move-result v0
@@ -842,40 +765,34 @@
 
     return p1
 
-    .line 17
     :cond_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->b:Lcom/umeng/analytics/pro/n$c;
 
     if-nez v0, :cond_1
 
-    .line 18
     new-instance v0, Lcom/umeng/analytics/pro/n$c;
 
     invoke-direct {v0}, Lcom/umeng/analytics/pro/n$c;-><init>()V
 
     iput-object v0, p0, Lcom/umeng/analytics/pro/n;->b:Lcom/umeng/analytics/pro/n$c;
 
-    .line 19
     :cond_1
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->b:Lcom/umeng/analytics/pro/n$c;
 
     invoke-virtual {v0}, Lcom/umeng/analytics/pro/n$c;->a()V
 
-    .line 20
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->b:Lcom/umeng/analytics/pro/n$c;
 
     invoke-virtual {v0}, Lcom/umeng/analytics/pro/n$c;->c()Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
     move-result-object v0
 
-    .line 21
     invoke-virtual {v0, p1}, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;->shouldSendMessage(Z)Z
 
     move-result p1
 
     if-eqz p1, :cond_5
 
-    .line 22
     instance-of v1, v0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportByInterval;
 
     if-nez v1, :cond_2
@@ -888,7 +805,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 23
     :cond_2
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->p()Z
 
@@ -896,26 +812,21 @@
 
     if-eqz v1, :cond_3
 
-    .line 24
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/n;->d()V
 
-    .line 25
     :cond_3
     instance-of v1, v0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DefconPolicy;
 
     if-eqz v1, :cond_4
 
-    .line 26
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->p()Z
 
     move-result v1
 
     if-eqz v1, :cond_4
 
-    .line 27
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/n;->d()V
 
-    .line 28
     :cond_4
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
 
@@ -923,7 +834,6 @@
 
     if-eqz v1, :cond_5
 
-    .line 29
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -995,7 +905,6 @@
 
     return-void
 
-    .line 8
     :cond_0
     :try_start_0
     invoke-virtual/range {p1 .. p1}, Lorg/json/JSONObject;->length()I
@@ -1009,24 +918,20 @@
     :cond_1
     move-object/from16 v17, v5
 
-    .line 9
     new-instance v5, Lorg/json/JSONObject;
 
     invoke-direct {v5}, Lorg/json/JSONObject;-><init>()V
 
-    .line 10
     invoke-virtual {v0, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v18
 
     if-eqz v18, :cond_b
 
-    .line 11
     invoke-virtual {v0, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
 
-    .line 12
     invoke-virtual {v3, v15}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v18
@@ -1035,22 +940,18 @@
 
     move-object/from16 v18, v2
 
-    .line 13
     invoke-virtual {v3, v15}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v2
 
-    .line 14
     invoke-virtual {v5, v15, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 15
     invoke-virtual {v5}, Lorg/json/JSONObject;->length()I
 
     move-result v2
 
     if-lez v2, :cond_3
 
-    .line 16
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1071,7 +972,6 @@
 
     invoke-static {v2}, Lcom/umeng/commonsdk/statistics/common/MLog;->d(Ljava/lang/String;)V
 
-    .line 17
     new-instance v5, Lorg/json/JSONObject;
 
     invoke-direct {v5}, Lorg/json/JSONObject;-><init>()V
@@ -1081,7 +981,6 @@
     :cond_2
     move-object/from16 v18, v2
 
-    .line 18
     :cond_3
     :goto_0
     invoke-virtual {v3, v13}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
@@ -1090,22 +989,18 @@
 
     if-eqz v2, :cond_4
 
-    .line 19
     invoke-virtual {v3, v13}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v2
 
-    .line 20
     invoke-virtual {v5, v13, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 21
     invoke-virtual {v5}, Lorg/json/JSONObject;->length()I
 
     move-result v2
 
     if-lez v2, :cond_4
 
-    .line 22
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1126,12 +1021,10 @@
 
     invoke-static {v2}, Lcom/umeng/commonsdk/statistics/common/MLog;->d(Ljava/lang/String;)V
 
-    .line 23
     new-instance v5, Lorg/json/JSONObject;
 
     invoke-direct {v5}, Lorg/json/JSONObject;-><init>()V
 
-    .line 24
     :cond_4
     invoke-virtual {v3, v12}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -1139,22 +1032,18 @@
 
     if-eqz v2, :cond_5
 
-    .line 25
     invoke-virtual {v3, v12}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v2
 
-    .line 26
     invoke-virtual {v5, v12, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 27
     invoke-virtual {v5}, Lorg/json/JSONObject;->length()I
 
     move-result v2
 
     if-lez v2, :cond_5
 
-    .line 28
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1175,12 +1064,10 @@
 
     invoke-static {v2}, Lcom/umeng/commonsdk/statistics/common/MLog;->d(Ljava/lang/String;)V
 
-    .line 29
     new-instance v5, Lorg/json/JSONObject;
 
     invoke-direct {v5}, Lorg/json/JSONObject;-><init>()V
 
-    .line 30
     :cond_5
     invoke-virtual {v3, v11}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -1188,19 +1075,16 @@
 
     if-eqz v2, :cond_9
 
-    .line 31
     invoke-virtual {v3, v11}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v2
 
-    .line 32
     new-instance v12, Lorg/json/JSONArray;
 
     invoke-direct {v12}, Lorg/json/JSONArray;-><init>()V
 
     const/4 v13, 0x0
 
-    .line 33
     :goto_1
     invoke-virtual {v2}, Lorg/json/JSONArray;->length()I
 
@@ -1208,31 +1092,26 @@
 
     if-ge v13, v15, :cond_8
 
-    .line 34
     invoke-virtual {v2, v13}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v15
 
     if-eqz v15, :cond_7
 
-    .line 35
     invoke-virtual {v15}, Lorg/json/JSONObject;->length()I
 
     move-result v19
 
     if-lez v19, :cond_7
 
-    .line 36
     invoke-virtual {v15, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v19
 
     if-eqz v19, :cond_6
 
-    .line 37
     invoke-virtual {v15, v1}, Lorg/json/JSONObject;->remove(Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 38
     :cond_6
     invoke-virtual {v12, v15}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
@@ -1241,18 +1120,15 @@
 
     goto :goto_1
 
-    .line 39
     :cond_8
     invoke-virtual {v5, v11, v12}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 40
     invoke-virtual {v5}, Lorg/json/JSONObject;->length()I
 
     move-result v1
 
     if-lez v1, :cond_9
 
-    .line 41
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1273,14 +1149,12 @@
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/MLog;->d(Ljava/lang/String;)V
 
-    .line 42
     new-instance v1, Lorg/json/JSONObject;
 
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
     move-object v5, v1
 
-    .line 43
     :cond_9
     invoke-virtual {v3, v9}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -1288,15 +1162,12 @@
 
     if-eqz v1, :cond_a
 
-    .line 44
     invoke-virtual {v3, v9}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
 
-    .line 45
     invoke-virtual {v5, v9, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 46
     :cond_a
     invoke-virtual {v3, v7}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -1304,22 +1175,18 @@
 
     if-eqz v1, :cond_c
 
-    .line 47
     invoke-virtual {v3, v7}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
 
-    .line 48
     invoke-virtual {v5, v7, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 49
     invoke-virtual {v5}, Lorg/json/JSONObject;->length()I
 
     move-result v1
 
     if-lez v1, :cond_c
 
-    .line 50
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1340,7 +1207,6 @@
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/MLog;->d(Ljava/lang/String;)V
 
-    .line 51
     new-instance v5, Lorg/json/JSONObject;
 
     invoke-direct {v5}, Lorg/json/JSONObject;-><init>()V
@@ -1350,7 +1216,6 @@
     :cond_b
     move-object/from16 v18, v2
 
-    .line 52
     :cond_c
     :goto_2
     invoke-virtual {v0, v4}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
@@ -1359,15 +1224,12 @@
 
     if-eqz v1, :cond_d
 
-    .line 53
     invoke-virtual {v0, v4}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v1
 
-    .line 54
     invoke-virtual {v5, v4, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 55
     :cond_d
     invoke-virtual {v0, v14}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -1375,42 +1237,36 @@
 
     if-eqz v1, :cond_14
 
-    .line 56
     invoke-virtual {v0, v14}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_14
 
-    .line 57
     invoke-virtual {v0, v14}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
     if-eqz v0, :cond_14
 
-    .line 58
     invoke-virtual {v0}, Lorg/json/JSONObject;->length()I
 
     move-result v1
 
     if-lez v1, :cond_14
 
-    .line 59
     invoke-virtual {v0, v10}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v1
 
     if-eqz v1, :cond_e
 
-    .line 60
     invoke-virtual {v0, v10}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v5, v10, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 61
     :cond_e
     invoke-virtual {v0, v8}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -1418,14 +1274,12 @@
 
     if-eqz v1, :cond_f
 
-    .line 62
     invoke-virtual {v0, v8}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v5, v8, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 63
     :cond_f
     invoke-virtual {v0, v6}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -1433,7 +1287,6 @@
 
     if-eqz v1, :cond_10
 
-    .line 64
     invoke-virtual {v0, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -1443,7 +1296,6 @@
     :cond_10
     move-object/from16 v1, v18
 
-    .line 65
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v2
@@ -1452,7 +1304,6 @@
 
     const-string v2, "version"
 
-    .line 66
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v1
@@ -1462,14 +1313,12 @@
     :cond_11
     move-object/from16 v1, v17
 
-    .line 67
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_12
 
-    .line 68
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
@@ -1479,21 +1328,18 @@
     :cond_12
     move-object/from16 v1, v16
 
-    .line 69
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_13
 
-    .line 70
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v5, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 71
     :cond_13
     invoke-virtual {v5}, Lorg/json/JSONObject;->length()I
 
@@ -1501,7 +1347,6 @@
 
     if-lez v0, :cond_14
 
-    .line 72
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1522,12 +1367,10 @@
 
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/MLog;->d(Ljava/lang/String;)V
 
-    .line 73
     new-instance v5, Lorg/json/JSONObject;
 
     invoke-direct {v5}, Lorg/json/JSONObject;-><init>()V
 
-    .line 74
     :cond_14
     invoke-virtual {v5}, Lorg/json/JSONObject;->length()I
     :try_end_0
@@ -1538,7 +1381,6 @@
     :catchall_0
     move-exception v0
 
-    .line 75
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/MLog;->e(Ljava/lang/Throwable;)V
 
     :goto_3
@@ -1548,19 +1390,16 @@
 .method private d(Z)Z
     .locals 2
 
-    .line 80
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->b:Lcom/umeng/analytics/pro/n$c;
 
     if-nez v0, :cond_0
 
-    .line 81
     new-instance v0, Lcom/umeng/analytics/pro/n$c;
 
     invoke-direct {v0}, Lcom/umeng/analytics/pro/n$c;-><init>()V
 
     iput-object v0, p0, Lcom/umeng/analytics/pro/n;->b:Lcom/umeng/analytics/pro/n$c;
 
-    .line 82
     :cond_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->b:Lcom/umeng/analytics/pro/n$c;
 
@@ -1568,14 +1407,12 @@
 
     move-result-object v0
 
-    .line 83
     instance-of v1, v0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DefconPolicy;
 
     if-eqz v1, :cond_2
 
     if-eqz p1, :cond_1
 
-    .line 84
     check-cast v0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DefconPolicy;
 
     invoke-virtual {v0}, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DefconPolicy;->shouldSendMessageByInstant()Z
@@ -1587,7 +1424,6 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 85
     invoke-virtual {v0, p1}, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;->shouldSendMessage(Z)Z
 
     move-result p1
@@ -1605,20 +1441,17 @@
 
     const-string v0, "__t"
 
-    .line 1
     :try_start_0
     check-cast p1, Lorg/json/JSONObject;
 
     const/16 v1, 0x802
 
-    .line 2
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v2
 
     if-ne v1, v2, :cond_1
 
-    .line 3
     iget-wide v0, p0, Lcom/umeng/analytics/pro/n;->k:J
 
     iget v2, p0, Lcom/umeng/analytics/pro/n;->i:I
@@ -1631,7 +1464,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     iget v0, p0, Lcom/umeng/analytics/pro/n;->i:I
 
@@ -1644,14 +1476,12 @@
     :cond_1
     const/16 v1, 0x801
 
-    .line 5
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v0
 
     if-ne v1, v0, :cond_3
 
-    .line 6
     iget-wide v0, p0, Lcom/umeng/analytics/pro/n;->k:J
 
     iget v2, p0, Lcom/umeng/analytics/pro/n;->j:I
@@ -1664,7 +1494,6 @@
 
     return-void
 
-    .line 7
     :cond_2
     iget v0, p0, Lcom/umeng/analytics/pro/n;->j:I
 
@@ -1672,7 +1501,6 @@
 
     iput v0, p0, Lcom/umeng/analytics/pro/n;->j:I
 
-    .line 8
     :cond_3
     :goto_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
@@ -1689,10 +1517,8 @@
 
     const-string v1, "--->>>*** \u8d85\u8fc710\u4e2a\u4e8b\u4ef6\uff0c\u4e8b\u4ef6\u843d\u5e93\u3002"
 
-    .line 9
     invoke-static {v0, v1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -1703,14 +1529,12 @@
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/h;->a(Lorg/json/JSONArray;)V
 
-    .line 11
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
     iput-object v0, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
 
-    .line 12
     :cond_4
     iget-wide v0, p0, Lcom/umeng/analytics/pro/n;->k:J
 
@@ -1720,14 +1544,12 @@
 
     if-nez v4, :cond_5
 
-    .line 13
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/umeng/analytics/pro/n;->k:J
 
-    .line 14
     :cond_5
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
 
@@ -1740,7 +1562,6 @@
     :catchall_0
     move-exception p1
 
-    .line 15
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/common/MLog;->e(Ljava/lang/Throwable;)V
 
     :goto_1
@@ -1776,7 +1597,6 @@
 
     return-void
 
-    .line 16
     :cond_0
     :try_start_0
     invoke-virtual/range {p1 .. p1}, Lorg/json/JSONObject;->length()I
@@ -1787,44 +1607,37 @@
 
     return-void
 
-    .line 17
     :cond_1
     new-instance v11, Lorg/json/JSONObject;
 
     invoke-direct {v11}, Lorg/json/JSONObject;-><init>()V
 
-    .line 18
     invoke-virtual {v0, v2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v12
 
     if-eqz v12, :cond_5
 
-    .line 19
     invoke-virtual {v0, v2}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
 
-    .line 20
     invoke-virtual {v2, v9}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v12
 
     if-eqz v12, :cond_4
 
-    .line 21
     invoke-virtual {v2, v9}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v12
 
-    .line 22
     new-instance v13, Lorg/json/JSONArray;
 
     invoke-direct {v13}, Lorg/json/JSONArray;-><init>()V
 
     const/4 v14, 0x0
 
-    .line 23
     :goto_0
     invoke-virtual {v12}, Lorg/json/JSONArray;->length()I
 
@@ -1832,21 +1645,18 @@
 
     if-ge v14, v15, :cond_3
 
-    .line 24
     invoke-virtual {v12, v14}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v15
 
     if-eqz v15, :cond_2
 
-    .line 25
     invoke-virtual {v15}, Lorg/json/JSONObject;->length()I
 
     move-result v16
 
     if-lez v16, :cond_2
 
-    .line 26
     invoke-virtual {v13, v15}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     :cond_2
@@ -1854,18 +1664,15 @@
 
     goto :goto_0
 
-    .line 27
     :cond_3
     invoke-virtual {v11, v9, v13}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 28
     invoke-virtual {v11}, Lorg/json/JSONObject;->length()I
 
     move-result v9
 
     if-lez v9, :cond_4
 
-    .line 29
     new-instance v9, Ljava/lang/StringBuilder;
 
     invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
@@ -1886,14 +1693,12 @@
 
     invoke-static {v9}, Lcom/umeng/commonsdk/statistics/common/MLog;->d(Ljava/lang/String;)V
 
-    .line 30
     new-instance v9, Lorg/json/JSONObject;
 
     invoke-direct {v9}, Lorg/json/JSONObject;-><init>()V
 
     move-object v11, v9
 
-    .line 31
     :cond_4
     invoke-virtual {v2, v8}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -1901,22 +1706,18 @@
 
     if-eqz v9, :cond_5
 
-    .line 32
     invoke-virtual {v2, v8}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v2
 
-    .line 33
     invoke-virtual {v11, v8, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 34
     invoke-virtual {v11}, Lorg/json/JSONObject;->length()I
 
     move-result v2
 
     if-lez v2, :cond_5
 
-    .line 35
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1937,12 +1738,10 @@
 
     invoke-static {v2}, Lcom/umeng/commonsdk/statistics/common/MLog;->d(Ljava/lang/String;)V
 
-    .line 36
     new-instance v11, Lorg/json/JSONObject;
 
     invoke-direct {v11}, Lorg/json/JSONObject;-><init>()V
 
-    .line 37
     :cond_5
     invoke-virtual {v0, v10}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -1950,42 +1749,36 @@
 
     if-eqz v2, :cond_c
 
-    .line 38
     invoke-virtual {v0, v10}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_c
 
-    .line 39
     invoke-virtual {v0, v10}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
     if-eqz v0, :cond_c
 
-    .line 40
     invoke-virtual {v0}, Lorg/json/JSONObject;->length()I
 
     move-result v2
 
     if-lez v2, :cond_c
 
-    .line 41
     invoke-virtual {v0, v7}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_6
 
-    .line 42
     invoke-virtual {v0, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v11, v7, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 43
     :cond_6
     invoke-virtual {v0, v6}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -1993,14 +1786,12 @@
 
     if-eqz v2, :cond_7
 
-    .line 44
     invoke-virtual {v0, v6}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v11, v6, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 45
     :cond_7
     invoke-virtual {v0, v5}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2008,14 +1799,12 @@
 
     if-eqz v2, :cond_8
 
-    .line 46
     invoke-virtual {v0, v5}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v11, v5, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 47
     :cond_8
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2025,14 +1814,12 @@
 
     const-string v2, "version"
 
-    .line 48
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v1
 
     invoke-virtual {v11, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    .line 49
     :cond_9
     invoke-virtual {v0, v4}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2040,14 +1827,12 @@
 
     if-eqz v1, :cond_a
 
-    .line 50
     invoke-virtual {v0, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v11, v4, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 51
     :cond_a
     invoke-virtual {v0, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2055,14 +1840,12 @@
 
     if-eqz v1, :cond_b
 
-    .line 52
     invoke-virtual {v0, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v11, v3, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 53
     :cond_b
     invoke-virtual {v11}, Lorg/json/JSONObject;->length()I
 
@@ -2070,7 +1853,6 @@
 
     if-lez v0, :cond_c
 
-    .line 54
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -2091,12 +1873,10 @@
 
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/MLog;->d(Ljava/lang/String;)V
 
-    .line 55
     new-instance v11, Lorg/json/JSONObject;
 
     invoke-direct {v11}, Lorg/json/JSONObject;-><init>()V
 
-    .line 56
     :cond_c
     invoke-virtual {v11}, Lorg/json/JSONObject;->length()I
     :try_end_0
@@ -2107,7 +1887,6 @@
     :catchall_0
     move-exception v0
 
-    .line 57
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/MLog;->e(Ljava/lang/Throwable;)V
 
     :goto_1
@@ -2117,13 +1896,11 @@
 .method private f(Ljava/lang/Object;)V
     .locals 7
 
-    .line 32
     :try_start_0
     check-cast p1, Lorg/json/JSONObject;
 
     if-eqz p1, :cond_1
 
-    .line 33
     invoke-virtual {p1}, Lorg/json/JSONObject;->length()I
 
     move-result v0
@@ -2135,20 +1912,16 @@
     :cond_0
     const-string v0, "ts"
 
-    .line 34
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
 
     move-result-wide v0
 
-    .line 35
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/n;->b(Landroid/content/Context;)V
 
-    .line 36
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/n;->d()V
 
-    .line 37
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/analytics/c;->a(Landroid/content/Context;)[Ljava/lang/String;
@@ -2159,7 +1932,6 @@
 
     const/4 v2, 0x0
 
-    .line 38
     aget-object v3, p1, v2
 
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2178,7 +1950,6 @@
 
     if-nez p1, :cond_2
 
-    .line 39
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
     move-result-object p1
@@ -2187,7 +1958,6 @@
 
     invoke-virtual {p1, v4, v0, v1}, Lcom/umeng/analytics/pro/t;->a(Landroid/content/Context;J)V
 
-    .line 40
     invoke-static {}, Lcom/umeng/analytics/pro/x;->a()Lcom/umeng/analytics/pro/x;
 
     move-result-object p1
@@ -2200,7 +1970,6 @@
 
     const-string v4, "MobclickRT"
 
-    .line 41
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -2217,7 +1986,6 @@
 
     invoke-static {v4, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 42
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
     move-result-object p1
@@ -2228,12 +1996,10 @@
 
     move-result p1
 
-    .line 43
     sget-object v2, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/umeng/analytics/c;->b(Landroid/content/Context;)V
 
-    .line 44
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
     move-result-object v2
@@ -2244,7 +2010,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 45
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
     move-result-object p1
@@ -2264,14 +2029,12 @@
     :catchall_0
     move-exception p1
 
-    .line 46
     sget-boolean v0, Lcom/umeng/commonsdk/statistics/common/MLog;->DEBUG:Z
 
     if-eqz v0, :cond_2
 
     const-string v0, " Excepthon  in  onProfileSignOff"
 
-    .line 47
     invoke-static {v0, p1}, Lcom/umeng/commonsdk/statistics/common/MLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_2
@@ -2285,14 +2048,12 @@
     :try_start_0
     const-string v0, "header"
 
-    .line 1
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
     const-string v1, "eof"
 
-    .line 2
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v0
@@ -2309,7 +2070,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 3
     :try_start_1
     invoke-virtual {p1, v4}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2317,12 +2077,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {p1, v4}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
 
-    .line 5
     :cond_0
     invoke-virtual {p1, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2334,25 +2092,21 @@
 
     if-eqz v0, :cond_1
 
-    .line 6
     :try_start_2
     invoke-virtual {p1, v3}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
 
-    .line 7
     invoke-virtual {p1, v2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 8
     invoke-virtual {p1, v2}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object p1
 
-    .line 9
     invoke-virtual {p1, v1}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object p1
@@ -2361,12 +2115,10 @@
 
     const-string v0, "id"
 
-    .line 10
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 11
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -2375,10 +2127,8 @@
 
     const-string v0, "--->>> removeAllInstantData: really delete instant session data"
 
-    .line 12
     invoke-static {v4, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 13
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -2387,7 +2137,6 @@
 
     invoke-virtual {v0, p1}, Lcom/umeng/analytics/pro/h;->b(Ljava/lang/String;)V
 
-    .line 14
     :cond_1
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -2399,29 +2148,24 @@
 
     const-string p1, "--->>> removeAllInstantData: send INSTANT_SESSION_START_CONTINUE event because OVERSIZE."
 
-    .line 15
     invoke-static {v4, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 16
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     const/16 v0, 0x1101
 
     sget-object v1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
-    .line 17
     invoke-static {v1}, Lcom/umeng/analytics/CoreProtocol;->getInstance(Landroid/content/Context;)Lcom/umeng/analytics/CoreProtocol;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    .line 18
     invoke-static {p1, v0, v1, v2}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 19
     :cond_2
     invoke-virtual {p1, v4}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2429,12 +2173,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 20
     invoke-virtual {p1, v4}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
 
-    .line 21
     :cond_3
     invoke-virtual {p1, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2442,28 +2184,24 @@
 
     if-eqz v0, :cond_4
 
-    .line 22
     invoke-virtual {p1, v3}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
-    .line 23
     invoke-virtual {p1}, Lorg/json/JSONObject;->length()I
 
     move-result v0
 
     if-lez v0, :cond_4
 
-    .line 24
     invoke-virtual {p1, v2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    .line 25
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -2474,7 +2212,6 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/umeng/analytics/pro/h;->a(ZZ)V
 
-    .line 26
     :cond_4
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -2494,7 +2231,6 @@
 .method static synthetic g()Landroid/content/Context;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     return-object v0
@@ -2503,21 +2239,17 @@
 .method private g(Ljava/lang/Object;)V
     .locals 8
 
-    .line 26
     :try_start_0
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/n;->b(Landroid/content/Context;)V
 
-    .line 27
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/n;->d()V
 
-    .line 28
     check-cast p1, Lorg/json/JSONObject;
 
     if-eqz p1, :cond_2
 
-    .line 29
     invoke-virtual {p1}, Lorg/json/JSONObject;->length()I
 
     move-result v0
@@ -2529,26 +2261,22 @@
     :cond_0
     const-string v0, "provider"
 
-    .line 30
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "uid"
 
-    .line 31
     invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     const-string v2, "ts"
 
-    .line 32
     invoke-virtual {p1, v2}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
 
     move-result-wide v2
 
-    .line 33
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/analytics/c;->a(Landroid/content/Context;)[Ljava/lang/String;
@@ -2561,7 +2289,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 34
     aget-object v6, p1, v5
 
     invoke-virtual {v0, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -2578,7 +2305,6 @@
 
     if-nez p1, :cond_2
 
-    .line 35
     :cond_1
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
@@ -2588,7 +2314,6 @@
 
     invoke-virtual {p1, v6, v2, v3}, Lcom/umeng/analytics/pro/t;->a(Landroid/content/Context;J)V
 
-    .line 36
     invoke-static {}, Lcom/umeng/analytics/pro/x;->a()Lcom/umeng/analytics/pro/x;
 
     move-result-object p1
@@ -2599,7 +2324,6 @@
 
     move-result-object p1
 
-    .line 37
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
     move-result-object v6
@@ -2610,14 +2334,12 @@
 
     move-result v5
 
-    .line 38
     sget-object v6, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v6, v0, v1}, Lcom/umeng/analytics/c;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "MobclickRT"
 
-    .line 39
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2634,7 +2356,6 @@
 
     invoke-static {v0, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 40
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
     move-result-object p1
@@ -2645,7 +2366,6 @@
 
     if-eqz v5, :cond_2
 
-    .line 41
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
     move-result-object p1
@@ -2670,14 +2390,12 @@
     :try_start_0
     const-string v0, "header"
 
-    .line 2
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
     const-string v1, "eof"
 
-    .line 3
     invoke-virtual {v0, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v0
@@ -2696,7 +2414,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 4
     :try_start_1
     invoke-virtual {p1, v5}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2704,12 +2421,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
     invoke-virtual {p1, v5}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
 
-    .line 6
     :cond_0
     invoke-virtual {p1, v4}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2717,19 +2432,16 @@
 
     if-eqz v0, :cond_8
 
-    .line 7
     invoke-virtual {p1, v4}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
 
-    .line 8
     invoke-virtual {p1, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 9
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -2738,7 +2450,6 @@
 
     invoke-virtual {p1}, Lcom/umeng/analytics/pro/h;->i()V
 
-    .line 10
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -2747,7 +2458,6 @@
 
     invoke-virtual {p1}, Lcom/umeng/analytics/pro/h;->h()V
 
-    .line 11
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -2756,7 +2466,6 @@
 
     invoke-virtual {p1, v2, v1}, Lcom/umeng/analytics/pro/h;->b(ZZ)V
 
-    .line 12
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -2772,12 +2481,10 @@
 
     const-string v0, "--->>> Error, Should not go to this branch."
 
-    .line 13
     invoke-static {p1, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 14
     :cond_2
     invoke-virtual {p1, v5}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2785,12 +2492,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 15
     invoke-virtual {p1, v5}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
 
-    .line 16
     :cond_3
     invoke-virtual {p1, v4}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -2798,28 +2503,24 @@
 
     if-eqz v0, :cond_7
 
-    .line 17
     invoke-virtual {p1, v4}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object p1
 
     if-eqz p1, :cond_7
 
-    .line 18
     invoke-virtual {p1}, Lorg/json/JSONObject;->length()I
 
     move-result v0
 
     if-lez v0, :cond_7
 
-    .line 19
     invoke-virtual {p1, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 20
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -2831,7 +2532,6 @@
     :cond_4
     const-string v0, "ekv"
 
-    .line 21
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v0
@@ -2846,7 +2546,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 22
     :cond_5
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -2859,14 +2558,12 @@
     :cond_6
     const-string v0, "error"
 
-    .line 23
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_7
 
-    .line 24
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -2875,7 +2572,6 @@
 
     invoke-virtual {p1}, Lcom/umeng/analytics/pro/h;->i()V
 
-    .line 25
     :cond_7
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -2896,7 +2592,6 @@
 .method private static h()V
     .locals 5
 
-    .line 1
     const-class v0, Ljava/lang/String;
 
     :try_start_0
@@ -2908,7 +2603,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 2
     sput-object v1, Lcom/umeng/analytics/pro/n;->y:Ljava/lang/Class;
 
     const-string v2, "setPuidAndProvider"
@@ -2925,14 +2619,12 @@
 
     aput-object v0, v3, v4
 
-    .line 3
     invoke-virtual {v1, v2, v3}, Ljava/lang/Class;->getDeclaredMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     sput-object v0, Lcom/umeng/analytics/pro/n;->z:Ljava/lang/reflect/Method;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2947,7 +2639,6 @@
 
     const-string v0, "__ii"
 
-    .line 5
     :try_start_0
     move-object v1, p1
 
@@ -2955,36 +2646,30 @@
 
     if-eqz v1, :cond_0
 
-    .line 6
     invoke-virtual {v1}, Lorg/json/JSONObject;->length()I
 
     move-result v2
 
     if-lez v2, :cond_0
 
-    .line 7
     invoke-virtual {v1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 8
     invoke-virtual {v1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 9
     invoke-virtual {v1, v0}, Lorg/json/JSONObject;->remove(Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 10
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 11
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -3011,7 +2696,6 @@
 
     const-string v0, "exception"
 
-    .line 1
     sget-object v1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->maxDataSpace(Landroid/content/Context;)J
@@ -3024,7 +2708,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 2
     invoke-virtual {v1}, Lorg/json/JSONObject;->length()I
 
     move-result v2
@@ -3038,7 +2721,6 @@
     :cond_0
     const-string v2, "header"
 
-    .line 3
     invoke-virtual {v1, v2}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
@@ -3047,14 +2729,12 @@
 
     const-string v3, "content"
 
-    .line 4
     invoke-virtual {v1, v3}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lorg/json/JSONObject;
 
-    .line 5
     sget-object v3, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     if-eqz v3, :cond_3
@@ -3067,10 +2747,8 @@
 
     const-string v4, "--->>> constructInstantMessage: request build envelope."
 
-    .line 6
     invoke-static {v3, v4}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
     sget-object v4, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v4, v2, v1}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->buildEnvelopeWithExtHeader(Landroid/content/Context;Lorg/json/JSONObject;Lorg/json/JSONObject;)Lorg/json/JSONObject;
@@ -3079,7 +2757,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 8
     :try_start_0
     invoke-virtual {v1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -3087,7 +2764,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 9
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -3115,7 +2791,6 @@
     :catchall_0
     nop
 
-    .line 10
     :cond_1
     :goto_0
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
@@ -3124,10 +2799,8 @@
 
     if-eqz v0, :cond_2
 
-    .line 11
     invoke-direct {p0, v1}, Lcom/umeng/analytics/pro/n;->e(Lorg/json/JSONObject;)V
 
-    .line 12
     :cond_2
     invoke-virtual {p0, v1}, Lcom/umeng/analytics/pro/n;->b(Ljava/lang/Object;)V
 
@@ -3141,7 +2814,6 @@
 
     const-string v0, "exception"
 
-    .line 1
     sget-object v1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->maxDataSpace(Landroid/content/Context;)J
@@ -3154,7 +2826,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 2
     invoke-virtual {v1}, Lorg/json/JSONObject;->length()I
 
     move-result v2
@@ -3168,7 +2839,6 @@
     :cond_0
     const-string v2, "header"
 
-    .line 3
     invoke-virtual {v1, v2}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v2
@@ -3177,14 +2847,12 @@
 
     const-string v3, "content"
 
-    .line 4
     invoke-virtual {v1, v3}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lorg/json/JSONObject;
 
-    .line 5
     sget-object v3, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     if-eqz v3, :cond_3
@@ -3193,14 +2861,12 @@
 
     if-eqz v1, :cond_3
 
-    .line 6
     invoke-static {v3, v2, v1}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->buildEnvelopeWithExtHeader(Landroid/content/Context;Lorg/json/JSONObject;Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v1
 
     if-eqz v1, :cond_3
 
-    .line 7
     :try_start_0
     invoke-virtual {v1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -3210,7 +2876,6 @@
 
     const-string v2, "MobclickRT"
 
-    .line 8
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -3238,7 +2903,6 @@
     :catchall_0
     nop
 
-    .line 9
     :cond_1
     :goto_0
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
@@ -3247,10 +2911,8 @@
 
     if-eqz v0, :cond_2
 
-    .line 10
     invoke-direct {p0, v1}, Lcom/umeng/analytics/pro/n;->d(Lorg/json/JSONObject;)V
 
-    .line 11
     :cond_2
     invoke-virtual {p0, v1}, Lcom/umeng/analytics/pro/n;->a(Ljava/lang/Object;)V
 
@@ -3262,7 +2924,6 @@
 .method private k()Lorg/json/JSONObject;
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->l()Lorg/json/JSONObject;
 
     move-result-object v0
@@ -3274,7 +2935,6 @@
 
     const-string v2, "1"
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -3295,12 +2955,10 @@
 
     const-string v3, ""
 
-    .line 1
     new-instance v4, Lorg/json/JSONObject;
 
     invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
 
-    .line 2
     :try_start_0
     sget-object v5, Lcom/umeng/analytics/AnalyticsConfig;->mWrapperType:Ljava/lang/String;
 
@@ -3312,19 +2970,16 @@
 
     const-string v5, "wrapper_version"
 
-    .line 3
     sget-object v6, Lcom/umeng/analytics/AnalyticsConfig;->mWrapperVersion:Ljava/lang/String;
 
     invoke-virtual {v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v5, "wrapper_type"
 
-    .line 4
     sget-object v6, Lcom/umeng/analytics/AnalyticsConfig;->mWrapperType:Ljava/lang/String;
 
     invoke-virtual {v4, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 5
     :cond_0
     sget-object v5, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -3334,7 +2989,6 @@
 
     const-string v6, "vertical_type"
 
-    .line 6
     invoke-virtual {v4, v6, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -3347,7 +3001,6 @@
 
     if-ne v5, v6, :cond_2
 
-    .line 7
     :try_start_1
     sget-object v5, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -3355,7 +3008,6 @@
 
     move-result-object v5
 
-    .line 8
     invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v6
@@ -3367,17 +3019,14 @@
     :cond_1
     move-object v7, v5
 
-    .line 9
     :goto_0
     invoke-virtual {v4, v8, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     goto :goto_1
 
-    .line 10
     :cond_2
     invoke-virtual {v4, v8, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 11
     :goto_1
     sget-object v5, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -3389,7 +3038,6 @@
 
     move-result-object v5
 
-    .line 12
     invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v6
@@ -3398,10 +3046,8 @@
 
     const-string v6, "secret"
 
-    .line 13
     invoke-virtual {v4, v6, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 14
     :cond_3
     sget-object v5, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -3413,14 +3059,12 @@
 
     move-result-object v5
 
-    .line 15
     sget-object v6, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v6}, Lcom/umeng/commonsdk/statistics/internal/PreferenceWrapper;->getDefault(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v6
 
-    .line 16
     sget-object v7, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     const-string v8, "ekv_bl_ver"
@@ -3429,14 +3073,12 @@
 
     move-result-object v7
 
-    .line 17
     invoke-static {v7}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v8
 
     if-nez v8, :cond_5
 
-    .line 18
     sget-boolean v8, Lcom/umeng/analytics/AnalyticsConfig;->CLEAR_EKV_BL:Z
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -3445,17 +3087,14 @@
 
     if-eqz v8, :cond_4
 
-    .line 19
     :try_start_2
     invoke-virtual {v4, v9, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     goto :goto_2
 
-    .line 20
     :cond_4
     invoke-virtual {v4, v9, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 21
     :cond_5
     :goto_2
     sget-object v7, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
@@ -3466,14 +3105,12 @@
 
     move-result-object v7
 
-    .line 22
     invoke-static {v7}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v8
 
     if-nez v8, :cond_7
 
-    .line 23
     sget-boolean v8, Lcom/umeng/analytics/AnalyticsConfig;->CLEAR_EKV_WL:Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -3482,13 +3119,11 @@
 
     if-eqz v8, :cond_6
 
-    .line 24
     :try_start_3
     invoke-virtual {v4, v9, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     goto :goto_3
 
-    .line 25
     :cond_6
     invoke-virtual {v4, v9, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
@@ -3498,10 +3133,8 @@
 
     const-string v8, "1.0.0"
 
-    .line 26
     invoke-virtual {v4, v7, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 27
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->s()Z
 
     move-result v7
@@ -3512,12 +3145,10 @@
 
     const-string v8, "1"
 
-    .line 28
     invoke-virtual {v4, v7, v8}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     if-eqz v6, :cond_8
 
-    .line 29
     invoke-interface {v6}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v7
@@ -3532,7 +3163,6 @@
 
     invoke-interface {v7}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 30
     :cond_8
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->m()Ljava/lang/String;
 
@@ -3540,7 +3170,6 @@
 
     invoke-virtual {v4, v2, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 31
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->n()Ljava/lang/String;
 
     move-result-object v7
@@ -3549,19 +3178,16 @@
 
     if-eqz v6, :cond_a
 
-    .line 32
     invoke-interface {v6, v0, v3}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 33
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v7
 
     if-nez v7, :cond_a
 
-    .line 34
     new-instance v7, Ljava/text/SimpleDateFormat;
 
     const-string v8, "yyyy-MM-dd"
@@ -3574,7 +3200,6 @@
 
     new-instance v8, Ljava/util/Date;
 
-    .line 35
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v9
@@ -3585,7 +3210,6 @@
 
     move-result-object v7
 
-    .line 36
     invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
@@ -3601,21 +3225,18 @@
     :try_start_4
     const-string v5, "0"
 
-    .line 37
     invoke-interface {v6, v9, v5}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
     invoke-virtual {v4, v2, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 38
     invoke-interface {v6, v8, v7}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v4, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 39
     :cond_9
     sget-object v1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -3623,7 +3244,6 @@
 
     move-result-object v1
 
-    .line 40
     invoke-interface {v6}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v2
@@ -3636,41 +3256,34 @@
 
     const-string v3, "cur_version"
 
-    .line 41
     invoke-interface {v2, v3, v1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v1
 
     const-string v2, "pre_date"
 
-    .line 42
     invoke-interface {v1, v2, v7}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v1
 
-    .line 43
     invoke-interface {v1, v0}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
     const-string v1, "vers_code"
 
-    .line 44
     invoke-interface {v0, v1}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
-    .line 45
     invoke-interface {v0, v8}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
-    .line 46
     invoke-interface {v0, v9}, Landroid/content/SharedPreferences$Editor;->remove(Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
 
-    .line 47
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
@@ -3680,7 +3293,6 @@
     :catchall_0
     move-exception v0
 
-    .line 48
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_a
@@ -3697,7 +3309,6 @@
 
     const/4 v2, 0x0
 
-    .line 1
     :try_start_0
     sget-object v3, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -3707,7 +3318,6 @@
 
     move-result-object v2
 
-    .line 2
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -3718,7 +3328,6 @@
 
     if-eqz v3, :cond_4
 
-    .line 3
     :try_start_1
     iget-object v3, p0, Lcom/umeng/analytics/pro/n;->d:Ljava/lang/String;
 
@@ -3728,12 +3337,10 @@
 
     if-nez v3, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->d:Ljava/lang/String;
 
     return-object v0
 
-    .line 5
     :cond_0
     iget-object v3, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
@@ -3747,7 +3354,6 @@
 
     iput-object v3, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
-    .line 6
     :cond_1
     iget-object v3, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
@@ -3755,14 +3361,12 @@
 
     move-result-object v3
 
-    .line 7
     sget-object v5, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v5}, Lcom/umeng/commonsdk/statistics/common/DeviceConfig;->getAppVersionName(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v5
 
-    .line 8
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v6
@@ -3773,7 +3377,6 @@
 
     if-eqz v6, :cond_2
 
-    .line 9
     :try_start_2
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
@@ -3795,7 +3398,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_2
     iget-object v4, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
@@ -3803,14 +3405,12 @@
 
     move-result-object v0
 
-    .line 11
     invoke-virtual {v5, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_3
 
-    .line 12
     iget-object v3, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
     invoke-interface {v3}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -3825,7 +3425,6 @@
 
     move-result-object v1
 
-    .line 13
     invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -3837,7 +3436,6 @@
     :cond_3
     move-object v2, v3
 
-    .line 14
     :catchall_0
     :cond_4
     :goto_0
@@ -3853,7 +3451,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
     sget-object v2, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -3863,14 +3460,12 @@
 
     move-result-object v1
 
-    .line 2
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
     if-eqz v2, :cond_4
 
-    .line 3
     iget-object v2, p0, Lcom/umeng/analytics/pro/n;->e:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -3879,12 +3474,10 @@
 
     if-nez v2, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->e:Ljava/lang/String;
 
     return-object v0
 
-    .line 5
     :cond_0
     iget-object v2, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
@@ -3898,7 +3491,6 @@
 
     iput-object v2, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
-    .line 6
     :cond_1
     iget-object v2, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
@@ -3908,7 +3500,6 @@
 
     move-result-object v2
 
-    .line 7
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -3919,7 +3510,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 8
     :try_start_1
     new-instance v2, Ljava/text/SimpleDateFormat;
 
@@ -3931,7 +3521,6 @@
 
     new-instance v3, Ljava/util/Date;
 
-    .line 9
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v4
@@ -3942,7 +3531,6 @@
 
     move-result-object v2
 
-    .line 10
     iget-object v3, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
     invoke-interface {v3}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -3957,7 +3545,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_2
     new-instance v3, Ljava/text/SimpleDateFormat;
 
@@ -3969,7 +3556,6 @@
 
     new-instance v4, Ljava/util/Date;
 
-    .line 12
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v5
@@ -3980,14 +3566,12 @@
 
     move-result-object v3
 
-    .line 13
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_3
 
-    .line 14
     iget-object v2, p0, Lcom/umeng/analytics/pro/n;->c:Landroid/content/SharedPreferences;
 
     invoke-interface {v2}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
@@ -4010,7 +3594,6 @@
     :goto_0
     move-object v1, v2
 
-    .line 15
     :catchall_0
     :cond_4
     :goto_1
@@ -4024,28 +3607,23 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     iput v0, p0, Lcom/umeng/analytics/pro/n;->i:I
 
-    .line 2
     iput v0, p0, Lcom/umeng/analytics/pro/n;->j:I
 
-    .line 3
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
     iput-wide v1, p0, Lcom/umeng/analytics/pro/n;->k:J
 
-    .line 4
     sget-object v1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/internal/PreferenceWrapper;->getDefault(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v1
 
-    .line 5
     invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v1
@@ -4062,7 +3640,6 @@
 
     const-string v2, "dstk_cnt"
 
-    .line 6
     invoke-interface {v1, v2, v0}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
@@ -4078,7 +3655,6 @@
 .method private p()Z
     .locals 4
 
-    .line 1
     :try_start_0
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
@@ -4088,19 +3664,16 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/n;->b(Landroid/content/Context;)V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
 
@@ -4114,7 +3687,6 @@
 
     const/4 v0, 0x0
 
-    .line 5
     :goto_0
     iget-object v2, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
 
@@ -4124,7 +3696,6 @@
 
     if-ge v0, v2, :cond_4
 
-    .line 6
     iget-object v2, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
 
     invoke-virtual {v2, v0}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
@@ -4133,7 +3704,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 7
     invoke-virtual {v2}, Lorg/json/JSONObject;->length()I
 
     move-result v3
@@ -4142,12 +3712,10 @@
 
     const-string v3, "__i"
 
-    .line 8
     invoke-virtual {v2, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 9
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -4187,7 +3755,6 @@
 
     const-string v0, "__i"
 
-    .line 1
     iget-object v1, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
 
     invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
@@ -4196,14 +3763,12 @@
 
     if-lez v1, :cond_5
 
-    .line 2
     new-instance v1, Lorg/json/JSONArray;
 
     invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
 
     const/4 v2, 0x0
 
-    .line 3
     :goto_0
     iget-object v3, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
 
@@ -4213,7 +3778,6 @@
 
     if-ge v2, v3, :cond_4
 
-    .line 4
     :try_start_0
     iget-object v3, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
 
@@ -4223,19 +3787,16 @@
 
     if-eqz v3, :cond_3
 
-    .line 5
     invoke-virtual {v3}, Lorg/json/JSONObject;->length()I
 
     move-result v4
 
     if-lez v4, :cond_3
 
-    .line 6
     invoke-virtual {v3, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    .line 7
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
@@ -4253,7 +3814,6 @@
 
     if-eqz v4, :cond_2
 
-    .line 8
     :cond_0
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
@@ -4263,7 +3823,6 @@
 
     move-result-object v4
 
-    .line 9
     invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
@@ -4275,17 +3834,14 @@
     :cond_1
     move-object v6, v4
 
-    .line 10
     :goto_1
     invoke-virtual {v3, v0, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 11
     :cond_2
     invoke-virtual {v1, v3}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     goto :goto_2
 
-    .line 12
     :cond_3
     invoke-virtual {v1, v3}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
     :try_end_1
@@ -4297,7 +3853,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_4
     iput-object v1, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
 
@@ -4310,7 +3865,6 @@
 
     const-string v0, "first_activate_time"
 
-    .line 1
     :try_start_0
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->s()Z
 
@@ -4318,12 +3872,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 2
     sget-object v1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     if-eqz v1, :cond_0
 
-    .line 3
     sget-object v1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/internal/PreferenceWrapper;->getDefault(Landroid/content/Context;)Landroid/content/SharedPreferences;
@@ -4334,7 +3886,6 @@
 
     const-wide/16 v2, 0x0
 
-    .line 4
     invoke-interface {v1, v0, v2, v3}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
 
     move-result-wide v4
@@ -4343,12 +3894,10 @@
 
     if-nez v6, :cond_0
 
-    .line 5
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v2
 
-    .line 6
     invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v1
@@ -4369,13 +3918,11 @@
 .method private s()Z
     .locals 5
 
-    .line 1
     :try_start_0
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     if-eqz v0, :cond_0
 
-    .line 2
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/internal/PreferenceWrapper;->getDefault(Landroid/content/Context;)Landroid/content/SharedPreferences;
@@ -4388,7 +3935,6 @@
 
     const-wide/16 v2, -0x1
 
-    .line 3
     invoke-interface {v0, v1, v2, v3}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
 
     move-result-wide v0
@@ -4417,7 +3963,6 @@
 .method public a(J)Lorg/json/JSONObject;
     .locals 8
 
-    .line 124
     invoke-static {}, Lcom/umeng/analytics/pro/x;->a()Lcom/umeng/analytics/pro/x;
 
     move-result-object v0
@@ -4441,12 +3986,10 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 125
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/n;->b(Z)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    .line 126
     invoke-static {}, Lcom/umeng/analytics/pro/q;->a()Lcom/umeng/analytics/pro/q;
 
     move-result-object v2
@@ -4457,7 +4000,6 @@
 
     move-result v2
 
-    .line 127
     invoke-virtual {v0}, Lorg/json/JSONObject;->length()I
 
     move-result v3
@@ -4470,7 +4012,6 @@
 
     return-object v1
 
-    .line 128
     :cond_1
     invoke-virtual {v0}, Lorg/json/JSONObject;->length()I
 
@@ -4484,7 +4025,6 @@
 
     if-ne v3, v5, :cond_3
 
-    .line 129
     invoke-virtual {v0, v7}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -4495,7 +4035,6 @@
 
     return-object v1
 
-    .line 130
     :cond_2
     invoke-virtual {v0, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
@@ -4511,7 +4050,6 @@
 
     return-object v1
 
-    .line 131
     :cond_3
     invoke-virtual {v0}, Lorg/json/JSONObject;->length()I
 
@@ -4521,14 +4059,12 @@
 
     if-ne v3, v5, :cond_4
 
-    .line 132
     invoke-virtual {v0, v7}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
 
     if-eqz v3, :cond_4
 
-    .line 133
     invoke-virtual {v0, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
@@ -4546,26 +4082,22 @@
     :cond_4
     const-string v3, "sessions"
 
-    .line 134
     invoke-virtual {v0, v3}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     const-string v5, "gkv"
 
-    .line 135
     invoke-virtual {v0, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
     const-string v6, "ekv"
 
-    .line 136
     invoke-virtual {v0, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 137
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -4578,14 +4110,12 @@
 
     if-eqz v3, :cond_5
 
-    .line 138
     invoke-static {v6}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
     if-nez v3, :cond_5
 
-    .line 139
     invoke-direct {p0, v0}, Lcom/umeng/analytics/pro/n;->a(Lorg/json/JSONObject;)Z
 
     move-result v3
@@ -4594,7 +4124,6 @@
 
     return-object v1
 
-    .line 140
     :cond_5
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->l()Lorg/json/JSONObject;
 
@@ -4602,16 +4131,13 @@
 
     if-eqz v1, :cond_6
 
-    .line 141
     invoke-direct {p0, v1}, Lcom/umeng/analytics/pro/n;->c(Lorg/json/JSONObject;)V
 
-    .line 142
     :cond_6
     new-instance v3, Lorg/json/JSONObject;
 
     invoke-direct {v3}, Lorg/json/JSONObject;-><init>()V
 
-    .line 143
     :try_start_0
     new-instance v5, Lorg/json/JSONObject;
 
@@ -4623,7 +4149,6 @@
 
     if-ne v2, v4, :cond_7
 
-    .line 144
     :try_start_1
     new-instance v0, Lorg/json/JSONObject;
 
@@ -4636,21 +4161,18 @@
     :cond_7
     if-eqz v0, :cond_8
 
-    .line 145
     invoke-virtual {v0}, Lorg/json/JSONObject;->length()I
 
     move-result v2
 
     if-lez v2, :cond_8
 
-    .line 146
     invoke-virtual {v5, v6, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     :cond_8
     :goto_0
     if-eqz v1, :cond_9
 
-    .line 147
     invoke-virtual {v1}, Lorg/json/JSONObject;->length()I
 
     move-result v0
@@ -4659,10 +4181,8 @@
 
     const-string v0, "header"
 
-    .line 148
     invoke-virtual {v3, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 149
     :cond_9
     invoke-virtual {v5}, Lorg/json/JSONObject;->length()I
 
@@ -4672,10 +4192,8 @@
 
     const-string v0, "content"
 
-    .line 150
     invoke-virtual {v3, v0, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 151
     :cond_a
     invoke-direct {p0, v3, p1, p2}, Lcom/umeng/analytics/pro/n;->a(Lorg/json/JSONObject;J)Lorg/json/JSONObject;
 
@@ -4690,17 +4208,14 @@
 .method public a()V
     .locals 5
 
-    .line 4
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     if-eqz v0, :cond_2
 
-    .line 5
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->w:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 6
     :try_start_0
     iget-boolean v1, p0, Lcom/umeng/analytics/pro/n;->u:Z
 
@@ -4712,57 +4227,46 @@
 
     const-string v3, "--->>> network is now available, rebuild instant session data packet."
 
-    .line 7
     invoke-static {v1, v3}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
     sget-object v1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     const/16 v3, 0x1101
 
     sget-object v4, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
-    .line 9
     invoke-static {v4}, Lcom/umeng/analytics/CoreProtocol;->getInstance(Landroid/content/Context;)Lcom/umeng/analytics/CoreProtocol;
 
     move-result-object v4
 
-    .line 10
     invoke-static {v1, v3, v4, v2}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
-    .line 11
     :cond_0
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 12
     iget-object v1, p0, Lcom/umeng/analytics/pro/n;->w:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 13
     :try_start_1
     iget-boolean v0, p0, Lcom/umeng/analytics/pro/n;->v:Z
 
     if-eqz v0, :cond_1
 
-    .line 14
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     const/16 v3, 0x1102
 
     sget-object v4, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
-    .line 15
     invoke-static {v4}, Lcom/umeng/analytics/CoreProtocol;->getInstance(Landroid/content/Context;)Lcom/umeng/analytics/CoreProtocol;
 
     move-result-object v4
 
-    .line 16
     invoke-static {v0, v3, v4, v2}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
-    .line 17
     :cond_1
     monitor-exit v1
 
@@ -4780,7 +4284,6 @@
     :catchall_1
     move-exception v1
 
-    .line 18
     :try_start_2
     monitor-exit v0
     :try_end_2
@@ -4800,18 +4303,15 @@
 
     if-eqz p1, :cond_2
 
-    .line 159
     :try_start_0
     check-cast p1, Lorg/json/JSONObject;
 
-    .line 160
     invoke-virtual {p1}, Lorg/json/JSONObject;->length()I
 
     move-result v1
 
     if-lez v1, :cond_2
 
-    .line 161
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v1
@@ -4820,7 +4320,6 @@
 
     const/16 v1, 0x65
 
-    .line 162
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v0
@@ -4829,13 +4328,11 @@
 
     goto :goto_0
 
-    .line 163
     :cond_0
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->g(Lorg/json/JSONObject;)V
 
     goto :goto_0
 
-    .line 164
     :cond_1
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->g(Lorg/json/JSONObject;)V
     :try_end_0
@@ -4850,7 +4347,6 @@
 .method public a(Ljava/lang/Object;I)V
     .locals 6
 
-    .line 22
     sget-boolean v0, Lcom/umeng/analytics/AnalyticsConfig;->enable:Z
 
     if-nez v0, :cond_0
@@ -4885,10 +4381,8 @@
 
     const-string p2, "--->>> recv BUILD_ENVELOPE_IMMEDIATELY."
 
-    .line 23
     invoke-static {p1, p2}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 24
     :try_start_0
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -4898,21 +4392,18 @@
 
     if-eqz p1, :cond_c
 
-    .line 25
     iget-object p1, p0, Lcom/umeng/analytics/pro/n;->b:Lcom/umeng/analytics/pro/n$c;
 
     invoke-virtual {p1}, Lcom/umeng/analytics/pro/n$c;->c()Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
     move-result-object p1
 
-    .line 26
     instance-of p1, p1, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportQuasiRealtime;
 
     if-eqz p1, :cond_1
 
     return-void
 
-    .line 27
     :cond_1
     invoke-virtual {p0, v2}, Lcom/umeng/analytics/pro/n;->a(Z)V
     :try_end_0
@@ -4920,7 +4411,6 @@
 
     goto/16 :goto_1
 
-    .line 28
     :pswitch_1
     invoke-virtual {p0, p1, v0}, Lcom/umeng/analytics/pro/n;->a(Ljava/lang/Object;Z)V
 
@@ -4931,38 +4421,30 @@
 
     const-string p2, "--->>> receive DELAY_BUILD_ENVELOPE event."
 
-    .line 29
     invoke-static {p1, p2}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 30
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     const/16 p2, 0x2011
 
-    .line 31
     invoke-static {p1}, Lcom/umeng/analytics/CoreProtocol;->getInstance(Landroid/content/Context;)Lcom/umeng/analytics/CoreProtocol;
 
     move-result-object v0
 
-    .line 32
     invoke-static {p1, p2, v0, v1}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
-    .line 33
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     const/16 p2, 0x1102
 
-    .line 34
     invoke-static {p1}, Lcom/umeng/analytics/CoreProtocol;->getInstance(Landroid/content/Context;)Lcom/umeng/analytics/CoreProtocol;
 
     move-result-object v0
 
-    .line 35
     invoke-static {p1, p2, v0, v1}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
     goto/16 :goto_1
 
-    .line 36
     :pswitch_3
     invoke-static {}, Lcom/umeng/analytics/b;->a()Lcom/umeng/analytics/b;
 
@@ -4972,7 +4454,6 @@
 
     goto/16 :goto_1
 
-    .line 37
     :pswitch_4
     invoke-static {}, Lcom/umeng/analytics/b;->a()Lcom/umeng/analytics/b;
 
@@ -4982,7 +4463,6 @@
 
     goto/16 :goto_1
 
-    .line 38
     :pswitch_5
     invoke-static {}, Lcom/umeng/analytics/b;->a()Lcom/umeng/analytics/b;
 
@@ -4992,7 +4472,6 @@
 
     goto/16 :goto_1
 
-    .line 39
     :pswitch_6
     invoke-static {}, Lcom/umeng/analytics/b;->a()Lcom/umeng/analytics/b;
 
@@ -5002,7 +4481,6 @@
 
     goto/16 :goto_1
 
-    .line 40
     :pswitch_7
     invoke-static {}, Lcom/umeng/analytics/b;->a()Lcom/umeng/analytics/b;
 
@@ -5017,7 +4495,6 @@
 
     return-void
 
-    .line 41
     :cond_2
     sget-object p2, Lcom/umeng/analytics/pro/n;->y:Ljava/lang/Class;
 
@@ -5034,7 +4511,6 @@
 
     const-string v0, "--->>> PROFILE_CHANGE_NOTIFY"
 
-    .line 42
     invoke-static {p2, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     :try_start_1
@@ -5042,17 +4518,14 @@
 
     const-string v0, ""
 
-    .line 43
     instance-of v1, p1, Lorg/json/JSONObject;
 
     if-eqz v1, :cond_c
 
-    .line 44
     check-cast p1, Lorg/json/JSONObject;
 
     const-string v1, "uid"
 
-    .line 45
     invoke-virtual {p1, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v1
@@ -5069,19 +4542,16 @@
 
     const-string p2, "provider"
 
-    .line 46
     invoke-virtual {p1, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
     const-string v0, "uid"
 
-    .line 47
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 48
     :cond_4
     invoke-direct {p0, v0, p2}, Lcom/umeng/analytics/pro/n;->a(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -5091,7 +4561,6 @@
     :goto_0
     return-void
 
-    .line 49
     :pswitch_9
     sget-object p2, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -5103,15 +4572,12 @@
 
     if-eqz p1, :cond_c
 
-    .line 50
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->e(Ljava/lang/Object;)V
 
-    .line 51
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/n;->d()V
 
     goto/16 :goto_1
 
-    .line 52
     :cond_6
     sget-object p2, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -5129,25 +4595,21 @@
 
     invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
 
-    .line 53
     invoke-virtual {v1, p1}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     move-result-object p1
 
-    .line 54
     invoke-virtual {p2, v0, p1}, Lcom/umeng/analytics/process/UMProcessDBHelper;->insertEventsInSubProcess(Ljava/lang/String;Lorg/json/JSONArray;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
     goto/16 :goto_1
 
-    .line 55
     :pswitch_a
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/n;->c()V
 
     goto/16 :goto_1
 
-    .line 56
     :pswitch_b
     invoke-virtual {p0, p1, v2}, Lcom/umeng/analytics/pro/n;->a(Ljava/lang/Object;Z)V
 
@@ -5158,10 +4620,8 @@
 
     const-string v0, "--->>> INSTANT_SESSION_START"
 
-    .line 57
     invoke-static {p2, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 58
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
     move-result-object p2
@@ -5170,16 +4630,13 @@
 
     invoke-virtual {p2, v0, p1}, Lcom/umeng/analytics/pro/t;->b(Landroid/content/Context;Ljava/lang/Object;)V
 
-    .line 59
     iget-object p2, p0, Lcom/umeng/analytics/pro/n;->w:Ljava/lang/Object;
 
     monitor-enter p2
 
-    .line 60
     :try_start_2
     iput-boolean v2, p0, Lcom/umeng/analytics/pro/n;->u:Z
 
-    .line 61
     monitor-exit p2
 
     goto/16 :goto_1
@@ -5193,19 +4650,16 @@
 
     throw p1
 
-    .line 62
     :pswitch_d
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->h(Ljava/lang/Object;)V
 
     goto/16 :goto_1
 
-    .line 63
     :pswitch_e
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/n;->d()V
 
     goto/16 :goto_1
 
-    .line 64
     :pswitch_f
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
@@ -5222,10 +4676,8 @@
 
     const-string v0, "--->>> START_SESSION"
 
-    .line 65
     invoke-static {p2, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 66
     invoke-static {}, Lcom/umeng/analytics/pro/t;->a()Lcom/umeng/analytics/pro/t;
 
     move-result-object p2
@@ -5234,16 +4686,13 @@
 
     invoke-virtual {p2, v0, p1}, Lcom/umeng/analytics/pro/t;->a(Landroid/content/Context;Ljava/lang/Object;)V
 
-    .line 67
     iget-object p2, p0, Lcom/umeng/analytics/pro/n;->w:Ljava/lang/Object;
 
     monitor-enter p2
 
-    .line 68
     :try_start_3
     iput-boolean v2, p0, Lcom/umeng/analytics/pro/n;->v:Z
 
-    .line 69
     monitor-exit p2
 
     goto/16 :goto_1
@@ -5262,13 +4711,10 @@
 
     const-string v0, "--->>> PROFILE_SIGNOFF"
 
-    .line 70
     invoke-static {p2, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 71
     invoke-virtual {p0, v1, v2}, Lcom/umeng/analytics/pro/n;->a(Ljava/lang/Object;Z)V
 
-    .line 72
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->f(Ljava/lang/Object;)V
 
     goto/16 :goto_1
@@ -5278,18 +4724,14 @@
 
     const-string v0, "--->>> PROFILE_SIGNIN"
 
-    .line 73
     invoke-static {p2, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 74
     invoke-virtual {p0, v1, v2}, Lcom/umeng/analytics/pro/n;->a(Ljava/lang/Object;Z)V
 
-    .line 75
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->g(Ljava/lang/Object;)V
 
     goto/16 :goto_1
 
-    .line 76
     :pswitch_13
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -5297,7 +4739,6 @@
 
     goto/16 :goto_1
 
-    .line 77
     :pswitch_14
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -5308,36 +4749,30 @@
     :pswitch_15
     if-eqz p1, :cond_7
 
-    .line 78
     :try_start_4
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->e(Ljava/lang/Object;)V
 
-    .line 79
     :cond_7
     check-cast p1, Lorg/json/JSONObject;
 
     const-string p2, "__i"
 
-    .line 80
     invoke-virtual {p1, p2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     const-string p2, "-1"
 
-    .line 81
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-nez p1, :cond_c
 
-    .line 82
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/n;->a(Z)V
 
     goto :goto_1
 
-    .line 83
     :pswitch_16
     sget-object p2, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -5349,35 +4784,29 @@
 
     if-eqz p1, :cond_8
 
-    .line 84
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->e(Ljava/lang/Object;)V
 
-    .line 85
     :cond_8
     check-cast p1, Lorg/json/JSONObject;
 
     const-string p2, "__i"
 
-    .line 86
     invoke-virtual {p1, p2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     const-string p2, "-1"
 
-    .line 87
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-nez p1, :cond_c
 
-    .line 88
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/n;->a(Z)V
 
     goto :goto_1
 
-    .line 89
     :cond_9
     sget-object p2, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -5395,12 +4824,10 @@
 
     invoke-direct {v1}, Lorg/json/JSONArray;-><init>()V
 
-    .line 90
     invoke-virtual {v1, p1}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     move-result-object p1
 
-    .line 91
     invoke-virtual {p2, v0, p1}, Lcom/umeng/analytics/process/UMProcessDBHelper;->insertEventsInSubProcess(Ljava/lang/String;Lorg/json/JSONArray;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
@@ -5410,14 +4837,12 @@
     :cond_a
     const-string p1, "header_foreground_count"
 
-    .line 92
     invoke-static {p1}, Lcom/umeng/commonsdk/config/FieldManager;->allow(Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_c
 
-    .line 93
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/common/DeviceConfig;->getGlobleActivity(Landroid/content/Context;)Landroid/app/Activity;
@@ -5426,18 +4851,15 @@
 
     if-eqz p1, :cond_b
 
-    .line 94
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/analytics/pro/t;->b(Landroid/content/Context;)V
 
-    .line 95
     :cond_b
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     const/16 v1, 0x2015
 
-    .line 96
     invoke-static {v0}, Lcom/umeng/analytics/CoreProtocol;->getInstance(Landroid/content/Context;)Lcom/umeng/analytics/CoreProtocol;
 
     move-result-object v2
@@ -5446,7 +4868,6 @@
 
     const-wide/16 v4, 0x1388
 
-    .line 97
     invoke-static/range {v0 .. v5}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEventEx(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;J)V
 
     :catchall_2
@@ -5506,19 +4927,16 @@
 
     if-eqz p2, :cond_0
 
-    .line 165
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->d(Z)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 166
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->i()V
 
     goto :goto_0
 
-    .line 167
     :cond_0
     sget-object p2, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -5528,14 +4946,12 @@
 
     if-eqz p2, :cond_1
 
-    .line 168
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->d(Z)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 169
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->i()V
 
     :cond_1
@@ -5546,21 +4962,18 @@
 .method public a(Z)V
     .locals 2
 
-    .line 98
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->c(Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 99
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->b:Lcom/umeng/analytics/pro/n$c;
 
     invoke-virtual {v0}, Lcom/umeng/analytics/pro/n$c;->c()Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
     move-result-object v0
 
-    .line 100
     instance-of v0, v0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportQuasiRealtime;
 
     const-string v1, "MobclickRT"
@@ -5569,7 +4982,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 101
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->isOnline(Landroid/content/Context;)Z
@@ -5580,15 +4992,12 @@
 
     const-string p1, "--->>> send session start in policy ReportQuasiRealtime."
 
-    .line 102
     invoke-static {v1, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 103
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->j()V
 
     goto :goto_0
 
-    .line 104
     :cond_0
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -5602,15 +5011,12 @@
 
     const-string p1, "--->>> send normal data in policy ReportQuasiRealtime."
 
-    .line 105
     invoke-static {v1, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 106
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->j()V
 
     goto :goto_0
 
-    .line 107
     :cond_1
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -5624,10 +5030,8 @@
 
     const-string p1, "--->>> constructMessage()"
 
-    .line 108
     invoke-static {v1, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 109
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->j()V
 
     :cond_2
@@ -5638,7 +5042,6 @@
 .method public b(J)Lorg/json/JSONObject;
     .locals 8
 
-    .line 11
     invoke-static {}, Lcom/umeng/analytics/pro/x;->a()Lcom/umeng/analytics/pro/x;
 
     move-result-object v0
@@ -5663,7 +5066,6 @@
 
     return-object v1
 
-    .line 12
     :cond_0
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -5681,7 +5083,6 @@
 
     move-result-object v0
 
-    .line 13
     sget-object v3, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/umeng/analytics/c;->a(Landroid/content/Context;)[Ljava/lang/String;
@@ -5694,7 +5095,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 14
     aget-object v6, v3, v2
 
     invoke-static {v6}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -5711,7 +5111,6 @@
 
     if-nez v6, :cond_1
 
-    .line 15
     new-instance v6, Lorg/json/JSONObject;
 
     invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
@@ -5719,26 +5118,22 @@
     :try_start_0
     const-string v7, "provider"
 
-    .line 16
     aget-object v2, v3, v2
 
     invoke-virtual {v6, v7, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v2, "puid"
 
-    .line 17
     aget-object v3, v3, v5
 
     invoke-virtual {v6, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 18
     invoke-virtual {v6}, Lorg/json/JSONObject;->length()I
 
     move-result v2
 
     if-lez v2, :cond_1
 
-    .line 19
     invoke-virtual {v0, v4, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -5748,7 +5143,6 @@
     :catchall_0
     nop
 
-    .line 20
     :cond_1
     :goto_0
     invoke-static {}, Lcom/umeng/analytics/pro/q;->a()Lcom/umeng/analytics/pro/q;
@@ -5761,7 +5155,6 @@
 
     move-result v2
 
-    .line 21
     invoke-virtual {v0}, Lorg/json/JSONObject;->length()I
 
     move-result v3
@@ -5770,7 +5163,6 @@
 
     if-ne v3, v5, :cond_2
 
-    .line 22
     invoke-virtual {v0, v4}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v3
@@ -5781,7 +5173,6 @@
 
     return-object v1
 
-    .line 23
     :cond_2
     invoke-static {}, Lcom/umeng/analytics/pro/q;->a()Lcom/umeng/analytics/pro/q;
 
@@ -5791,7 +5182,6 @@
 
     invoke-virtual {v3, v0, v4}, Lcom/umeng/analytics/pro/q;->b(Lorg/json/JSONObject;Landroid/content/Context;)V
 
-    .line 24
     invoke-virtual {v0}, Lorg/json/JSONObject;->length()I
 
     move-result v3
@@ -5802,7 +5192,6 @@
 
     return-object v1
 
-    .line 25
     :cond_3
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->k()Lorg/json/JSONObject;
 
@@ -5810,16 +5199,13 @@
 
     if-eqz v1, :cond_4
 
-    .line 26
     invoke-direct {p0, v1}, Lcom/umeng/analytics/pro/n;->b(Lorg/json/JSONObject;)V
 
-    .line 27
     :cond_4
     new-instance v3, Lorg/json/JSONObject;
 
     invoke-direct {v3}, Lorg/json/JSONObject;-><init>()V
 
-    .line 28
     new-instance v4, Lorg/json/JSONObject;
 
     invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
@@ -5828,7 +5214,6 @@
 
     if-ne v2, v6, :cond_5
 
-    .line 29
     :try_start_1
     new-instance v0, Lorg/json/JSONObject;
 
@@ -5841,21 +5226,18 @@
     :cond_5
     if-eqz v0, :cond_6
 
-    .line 30
     invoke-virtual {v0}, Lorg/json/JSONObject;->length()I
 
     move-result v2
 
     if-lez v2, :cond_6
 
-    .line 31
     invoke-virtual {v4, v5, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     :cond_6
     :goto_1
     if-eqz v1, :cond_7
 
-    .line 32
     invoke-virtual {v1}, Lorg/json/JSONObject;->length()I
 
     move-result v0
@@ -5864,10 +5246,8 @@
 
     const-string v0, "header"
 
-    .line 33
     invoke-virtual {v3, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 34
     :cond_7
     invoke-virtual {v4}, Lorg/json/JSONObject;->length()I
 
@@ -5877,10 +5257,8 @@
 
     const-string v0, "content"
 
-    .line 35
     invoke-virtual {v3, v0, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 36
     :cond_8
     invoke-direct {p0, v3, p1, p2}, Lcom/umeng/analytics/pro/n;->b(Lorg/json/JSONObject;J)Lorg/json/JSONObject;
 
@@ -5905,7 +5283,6 @@
 
     const/4 v4, 0x0
 
-    .line 41
     :try_start_0
     sget-object v5, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -5921,7 +5298,6 @@
 
     if-nez v4, :cond_0
 
-    .line 42
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
@@ -5932,7 +5308,6 @@
 
     goto/16 :goto_7
 
-    .line 43
     :cond_0
     :try_start_1
     invoke-virtual {v4, v2}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
@@ -5941,19 +5316,16 @@
 
     if-eqz v6, :cond_a
 
-    .line 44
     invoke-virtual {v4, v2}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v6
 
-    .line 45
     new-instance v7, Lorg/json/JSONArray;
 
     invoke-direct {v7}, Lorg/json/JSONArray;-><init>()V
 
     const/4 v8, 0x0
 
-    .line 46
     :goto_0
     invoke-virtual {v6}, Lorg/json/JSONArray;->length()I
 
@@ -5961,19 +5333,16 @@
 
     if-ge v8, v9, :cond_9
 
-    .line 47
     invoke-virtual {v6, v8}, Lorg/json/JSONArray;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
     check-cast v9, Lorg/json/JSONObject;
 
-    .line 48
     invoke-virtual {v9, v3}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v10
 
-    .line 49
     invoke-virtual {v9, v0}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
     move-result-object v11
@@ -5982,10 +5351,8 @@
 
     if-eqz v11, :cond_1
 
-    .line 50
     invoke-virtual {v9, v3, v11}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 51
     invoke-virtual {v9, v0}, Lorg/json/JSONObject;->remove(Ljava/lang/String;)Ljava/lang/Object;
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
@@ -5998,7 +5365,6 @@
 
     if-eqz v11, :cond_5
 
-    .line 52
     :try_start_2
     new-instance v13, Ljava/util/ArrayList;
 
@@ -6006,7 +5372,6 @@
 
     const/4 v14, 0x0
 
-    .line 53
     :goto_1
     invoke-virtual {v10}, Lorg/json/JSONArray;->length()I
 
@@ -6014,14 +5379,12 @@
 
     if-ge v14, v15, :cond_2
 
-    .line 54
     invoke-virtual {v10, v14}, Lorg/json/JSONArray;->get(I)Ljava/lang/Object;
 
     move-result-object v15
 
     check-cast v15, Lorg/json/JSONObject;
 
-    .line 55
     invoke-interface {v13, v15}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v14, v14, 0x1
@@ -6031,7 +5394,6 @@
     :cond_2
     const/4 v10, 0x0
 
-    .line 56
     :goto_2
     invoke-virtual {v11}, Lorg/json/JSONArray;->length()I
 
@@ -6039,38 +5401,31 @@
 
     if-ge v10, v14, :cond_3
 
-    .line 57
     invoke-virtual {v11, v10}, Lorg/json/JSONArray;->get(I)Ljava/lang/Object;
 
     move-result-object v14
 
     check-cast v14, Lorg/json/JSONObject;
 
-    .line 58
     invoke-interface {v13, v14}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v10, v10, 0x1
 
     goto :goto_2
 
-    .line 59
     :cond_3
     new-instance v10, Lcom/umeng/commonsdk/utils/JSONArraySortUtil;
 
     invoke-direct {v10}, Lcom/umeng/commonsdk/utils/JSONArraySortUtil;-><init>()V
 
-    .line 60
     invoke-virtual {v10, v12}, Lcom/umeng/commonsdk/utils/JSONArraySortUtil;->setCompareKey(Ljava/lang/String;)V
 
-    .line 61
     invoke-static {v13, v10}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 62
     new-instance v10, Lorg/json/JSONArray;
 
     invoke-direct {v10}, Lorg/json/JSONArray;-><init>()V
 
-    .line 63
     invoke-interface {v13}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v11
@@ -6088,19 +5443,15 @@
 
     check-cast v13, Lorg/json/JSONObject;
 
-    .line 64
     invoke-virtual {v10, v13}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     goto :goto_3
 
-    .line 65
     :cond_4
     invoke-virtual {v9, v3, v10}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 66
     invoke-virtual {v9, v0}, Lorg/json/JSONObject;->remove(Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 67
     :cond_5
     invoke-virtual {v9, v3}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
@@ -6113,7 +5464,6 @@
 
     if-eqz v10, :cond_8
 
-    .line 68
     :try_start_3
     invoke-virtual {v9, v3}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
@@ -6121,7 +5471,6 @@
 
     const/4 v13, 0x0
 
-    .line 69
     :goto_4
     invoke-virtual {v10}, Lorg/json/JSONArray;->length()I
 
@@ -6129,12 +5478,10 @@
 
     if-ge v13, v14, :cond_7
 
-    .line 70
     invoke-virtual {v10, v13}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
     move-result-object v14
 
-    .line 71
     invoke-virtual {v14, v12}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v15
@@ -6145,14 +5492,12 @@
 
     move-object/from16 v16, v6
 
-    .line 72
     invoke-virtual {v14, v12}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
 
     move-result-wide v5
 
     invoke-virtual {v14, v15, v5, v6}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
-    .line 73
     invoke-virtual {v14, v12}, Lorg/json/JSONObject;->remove(Ljava/lang/String;)Ljava/lang/Object;
 
     goto :goto_5
@@ -6170,10 +5515,8 @@
     :cond_7
     move-object/from16 v16, v6
 
-    .line 74
     invoke-virtual {v9, v3, v10}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 75
     invoke-virtual {v10}, Lorg/json/JSONArray;->length()I
 
     move-result v5
@@ -6187,10 +5530,8 @@
 
     const/4 v5, 0x0
 
-    .line 76
     invoke-virtual {v9, v11, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    .line 77
     :goto_6
     invoke-virtual {v7, v9}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
@@ -6200,7 +5541,6 @@
 
     goto/16 :goto_0
 
-    .line 78
     :cond_9
     invoke-virtual {v4, v2, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_3
@@ -6215,13 +5555,10 @@
     :try_start_4
     const-string v2, "merge pages error"
 
-    .line 79
     invoke-static {v2}, Lcom/umeng/commonsdk/statistics/common/MLog;->e(Ljava/lang/String;)V
 
-    .line 80
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 81
     :cond_a
     :goto_7
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
@@ -6234,22 +5571,18 @@
 
     const-string v2, ""
 
-    .line 82
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 83
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
     if-nez v2, :cond_b
 
-    .line 84
     invoke-virtual {v4, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 85
     :cond_b
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -6261,7 +5594,6 @@
 
     const/4 v1, 0x0
 
-    .line 86
     aget-object v2, v0, v1
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -6280,7 +5612,6 @@
 
     if-nez v2, :cond_c
 
-    .line 87
     new-instance v2, Lorg/json/JSONObject;
 
     invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
@@ -6289,19 +5620,16 @@
 
     const/4 v5, 0x0
 
-    .line 88
     aget-object v5, v0, v5
 
     invoke-virtual {v2, v3, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v3, "puid"
 
-    .line 89
     aget-object v0, v0, v1
 
     invoke-virtual {v2, v3, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 90
     invoke-virtual {v2}, Lorg/json/JSONObject;->length()I
 
     move-result v0
@@ -6312,7 +5640,6 @@
 
     invoke-virtual {v4, v0, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 91
     :cond_c
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -6326,12 +5653,10 @@
 
     if-eqz v0, :cond_d
 
-    .line 92
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 93
     sget-object v1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/noise/ABTest;->getService(Landroid/content/Context;)Lcom/umeng/commonsdk/statistics/noise/ABTest;
@@ -6356,10 +5681,8 @@
 
     const-string v1, "group_info"
 
-    .line 94
     invoke-virtual {v4, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 95
     :cond_d
     invoke-static {}, Lcom/umeng/analytics/pro/q;->a()Lcom/umeng/analytics/pro/q;
 
@@ -6384,7 +5707,6 @@
 .method public b(Landroid/content/Context;)V
     .locals 0
 
-    .line 102
     :try_start_0
     invoke-static {p1}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
 
@@ -6392,7 +5714,6 @@
 
     invoke-virtual {p1}, Lcom/umeng/analytics/pro/h;->d()V
 
-    .line 103
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->q()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -6408,18 +5729,15 @@
 
     if-eqz p1, :cond_2
 
-    .line 96
     :try_start_0
     check-cast p1, Lorg/json/JSONObject;
 
-    .line 97
     invoke-virtual {p1}, Lorg/json/JSONObject;->length()I
 
     move-result v1
 
     if-lez v1, :cond_2
 
-    .line 98
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v1
@@ -6428,7 +5746,6 @@
 
     const/16 v1, 0x65
 
-    .line 99
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v0
@@ -6437,13 +5754,11 @@
 
     goto :goto_0
 
-    .line 100
     :cond_0
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->f(Lorg/json/JSONObject;)V
 
     goto :goto_0
 
-    .line 101
     :cond_1
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->f(Lorg/json/JSONObject;)V
     :try_end_0
@@ -6458,17 +5773,14 @@
 .method public c()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/n;->b(Landroid/content/Context;)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/n;->d()V
 
     const/4 v0, 0x1
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/n;->a(Z)V
 
     return-void
@@ -6477,24 +5789,20 @@
 .method public c(Ljava/lang/Object;)V
     .locals 0
 
-    .line 30
     sget-object p1, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/n;->b(Landroid/content/Context;)V
 
-    .line 31
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/n;->d()V
 
     const/4 p1, 0x0
 
-    .line 32
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/n;->d(Z)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 33
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->j()V
 
     :cond_0
@@ -6504,7 +5812,6 @@
 .method public d()V
     .locals 4
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
 
@@ -6518,10 +5825,8 @@
 
     const-string v1, "--->>>*** flushMemoryData: \u4e8b\u4ef6\u843d\u5e93\u3002"
 
-    .line 2
     invoke-static {v0, v1}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
@@ -6532,14 +5837,12 @@
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/h;->a(Lorg/json/JSONArray;)V
 
-    .line 4
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
     iput-object v0, p0, Lcom/umeng/analytics/pro/n;->g:Lorg/json/JSONArray;
 
-    .line 5
     :cond_0
     sget-object v0, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
@@ -6547,7 +5850,6 @@
 
     move-result-object v0
 
-    .line 6
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
@@ -6572,7 +5874,6 @@
 
     iget v2, p0, Lcom/umeng/analytics/pro/n;->j:I
 
-    .line 7
     invoke-interface {v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
 
     move-result-object v0
@@ -6588,18 +5889,14 @@
 .method public d(Ljava/lang/Object;)V
     .locals 0
 
-    .line 76
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->r()V
 
-    .line 77
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->m()Ljava/lang/String;
 
-    .line 78
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->n()Ljava/lang/String;
 
     const/4 p1, 0x1
 
-    .line 79
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/n;->a(Z)V
 
     return-void
@@ -6610,14 +5907,12 @@
 
     const/4 v0, 0x0
 
-    .line 58
     invoke-direct {p0, v0}, Lcom/umeng/analytics/pro/n;->d(Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 59
     invoke-direct {p0}, Lcom/umeng/analytics/pro/n;->j()V
 
     :cond_0
@@ -6631,13 +5926,11 @@
 
     const-wide/16 v1, 0x0
 
-    .line 27
     :try_start_0
     sget-object v3, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     if-eqz v3, :cond_1
 
-    .line 28
     sget-object v3, Lcom/umeng/analytics/pro/n;->a:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/umeng/commonsdk/statistics/internal/PreferenceWrapper;->getDefault(Landroid/content/Context;)Landroid/content/SharedPreferences;
@@ -6646,7 +5939,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 29
     invoke-interface {v3, v0, v1, v2}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
 
     move-result-wide v4
@@ -6657,7 +5949,6 @@
 
     if-nez v6, :cond_0
 
-    .line 30
     :try_start_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -6665,7 +5956,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 31
     :try_start_2
     invoke-interface {v3}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 

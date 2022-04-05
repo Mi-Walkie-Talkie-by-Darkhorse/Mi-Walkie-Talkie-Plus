@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/snackbar/BaseTransientBottomBar$1;
 .super Ljava/lang/Object;
-.source "BaseTransientBottomBar.java"
 
 # interfaces
 .implements Landroid/os/Handler$Callback;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x1
@@ -49,7 +46,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -61,7 +57,6 @@
 
     return v1
 
-    .line 3
     :cond_1
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 

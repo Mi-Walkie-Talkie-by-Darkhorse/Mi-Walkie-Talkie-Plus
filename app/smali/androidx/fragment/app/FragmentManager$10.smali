@@ -1,6 +1,5 @@
 .class Landroidx/fragment/app/FragmentManager$10;
 .super Ljava/lang/Object;
-.source "FragmentManager.java"
 
 # interfaces
 .implements Landroidx/activity/result/a;
@@ -34,7 +33,6 @@
 .method constructor <init>(Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentManager$10;->this$0:Landroidx/fragment/app/FragmentManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public onActivityResult(Landroidx/activity/result/ActivityResult;)V
     .locals 4
 
-    .line 2
     iget-object v0, p0, Landroidx/fragment/app/FragmentManager$10;->this$0:Landroidx/fragment/app/FragmentManager;
 
     iget-object v0, v0, Landroidx/fragment/app/FragmentManager;->mLaunchedFragments:Ljava/util/ArrayDeque;
@@ -62,7 +59,6 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -81,14 +77,11 @@
 
     return-void
 
-    .line 4
     :cond_0
     iget-object v2, v0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->mWho:Ljava/lang/String;
 
-    .line 5
     iget v0, v0, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->mRequestCode:I
 
-    .line 6
     iget-object v3, p0, Landroidx/fragment/app/FragmentManager$10;->this$0:Landroidx/fragment/app/FragmentManager;
 
     invoke-static {v3}, Landroidx/fragment/app/FragmentManager;->access$200(Landroidx/fragment/app/FragmentManager;)Landroidx/fragment/app/FragmentStore;
@@ -101,7 +94,6 @@
 
     if-nez v3, :cond_1
 
-    .line 7
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -120,18 +112,15 @@
 
     return-void
 
-    .line 8
     :cond_1
     invoke-virtual {p1}, Landroidx/activity/result/ActivityResult;->b()I
 
     move-result v1
 
-    .line 9
     invoke-virtual {p1}, Landroidx/activity/result/ActivityResult;->a()Landroid/content/Intent;
 
     move-result-object p1
 
-    .line 10
     invoke-virtual {v3, v0, v1, p1}, Landroidx/fragment/app/Fragment;->onActivityResult(IILandroid/content/Intent;)V
 
     return-void
@@ -140,7 +129,6 @@
 .method public bridge synthetic onActivityResult(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Landroidx/activity/result/ActivityResult;
 
     invoke-virtual {p0, p1}, Landroidx/fragment/app/FragmentManager$10;->onActivityResult(Landroidx/activity/result/ActivityResult;)V

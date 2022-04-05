@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/MiddlewareWebClientBase;
 .super Lcom/just/agentweb/WebViewClientDelegate;
-.source "MiddlewareWebClientBase.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/just/agentweb/MiddlewareWebClientBase;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -32,7 +30,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-direct {p0, v0}, Lcom/just/agentweb/WebViewClientDelegate;-><init>(Landroid/webkit/WebViewClient;)V
 
     return-void
@@ -41,7 +38,6 @@
 .method protected constructor <init>(Landroid/webkit/WebViewClient;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/just/agentweb/WebViewClientDelegate;-><init>(Landroid/webkit/WebViewClient;)V
 
     return-void
@@ -50,10 +46,8 @@
 .method constructor <init>(Lcom/just/agentweb/MiddlewareWebClientBase;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/just/agentweb/WebViewClientDelegate;-><init>(Landroid/webkit/WebViewClient;)V
 
-    .line 2
     iput-object p1, p0, Lcom/just/agentweb/MiddlewareWebClientBase;->mMiddleWrareWebClientBase:Lcom/just/agentweb/MiddlewareWebClientBase;
 
     return-void
@@ -64,10 +58,8 @@
 .method final enq(Lcom/just/agentweb/MiddlewareWebClientBase;)Lcom/just/agentweb/MiddlewareWebClientBase;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/just/agentweb/MiddlewareWebClientBase;->setDelegate(Landroid/webkit/WebViewClient;)V
 
-    .line 2
     iput-object p1, p0, Lcom/just/agentweb/MiddlewareWebClientBase;->mMiddleWrareWebClientBase:Lcom/just/agentweb/MiddlewareWebClientBase;
 
     return-object p1
@@ -76,7 +68,6 @@
 .method final next()Lcom/just/agentweb/MiddlewareWebClientBase;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/MiddlewareWebClientBase;->mMiddleWrareWebClientBase:Lcom/just/agentweb/MiddlewareWebClientBase;
 
     return-object v0
@@ -85,7 +76,6 @@
 .method final setDelegate(Landroid/webkit/WebViewClient;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/just/agentweb/WebViewClientDelegate;->setDelegate(Landroid/webkit/WebViewClient;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar$a;
 .super Ljava/lang/Object;
-.source "LetterIndexBar.java"
 
 
 # annotations

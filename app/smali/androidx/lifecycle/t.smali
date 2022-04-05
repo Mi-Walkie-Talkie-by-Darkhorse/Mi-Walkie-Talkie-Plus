@@ -1,6 +1,5 @@
 .class public final Landroidx/lifecycle/t;
 .super Landroidx/lifecycle/w$c;
-.source "SavedStateViewModelFactory.java"
 
 
 # static fields
@@ -41,7 +40,6 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 1
     const-class v0, Landroidx/lifecycle/s;
 
     const/4 v1, 0x2
@@ -64,7 +62,6 @@
 
     aput-object v0, v1, v3
 
-    .line 2
     sput-object v1, Landroidx/lifecycle/t;->g:[Ljava/lang/Class;
 
     return-void
@@ -90,39 +87,32 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Landroidx/lifecycle/w$c;-><init>()V
 
-    .line 2
     invoke-interface {p2}, Landroidx/savedstate/b;->getSavedStateRegistry()Landroidx/savedstate/SavedStateRegistry;
 
     move-result-object v0
 
     iput-object v0, p0, Landroidx/lifecycle/t;->e:Landroidx/savedstate/SavedStateRegistry;
 
-    .line 3
     invoke-interface {p2}, Landroidx/lifecycle/k;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
     move-result-object p2
 
     iput-object p2, p0, Landroidx/lifecycle/t;->d:Landroidx/lifecycle/Lifecycle;
 
-    .line 4
     iput-object p3, p0, Landroidx/lifecycle/t;->c:Landroid/os/Bundle;
 
-    .line 5
     iput-object p1, p0, Landroidx/lifecycle/t;->a:Landroid/app/Application;
 
     if-eqz p1, :cond_0
 
-    .line 6
     invoke-static {p1}, Landroidx/lifecycle/w$a;->a(Landroid/app/Application;)Landroidx/lifecycle/w$a;
 
     move-result-object p1
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-static {}, Landroidx/lifecycle/w$d;->a()Landroidx/lifecycle/w$d;
 
@@ -150,7 +140,6 @@
         }
     .end annotation
 
-    .line 15
     invoke-virtual {p0}, Ljava/lang/Class;->getConstructors()[Ljava/lang/reflect/Constructor;
 
     move-result-object p0
@@ -164,12 +153,10 @@
 
     aget-object v2, p0, v1
 
-    .line 16
     invoke-virtual {v2}, Ljava/lang/reflect/Constructor;->getParameterTypes()[Ljava/lang/Class;
 
     move-result-object v3
 
-    .line 17
     invoke-static {p1, v3}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
 
     move-result v3
@@ -215,7 +202,6 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Landroidx/lifecycle/a;
 
     invoke-virtual {v0, p2}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -224,12 +210,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Landroidx/lifecycle/t;->a:Landroid/app/Application;
 
     if-eqz v1, :cond_0
 
-    .line 3
     sget-object v1, Landroidx/lifecycle/t;->f:[Ljava/lang/Class;
 
     invoke-static {p2, v1}, Landroidx/lifecycle/t;->a(Ljava/lang/Class;[Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
@@ -238,7 +222,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     sget-object v1, Landroidx/lifecycle/t;->g:[Ljava/lang/Class;
 
@@ -249,7 +232,6 @@
     :goto_0
     if-nez v1, :cond_1
 
-    .line 5
     iget-object p1, p0, Landroidx/lifecycle/t;->b:Landroidx/lifecycle/w$b;
 
     invoke-interface {p1, p2}, Landroidx/lifecycle/w$b;->create(Ljava/lang/Class;)Landroidx/lifecycle/v;
@@ -258,7 +240,6 @@
 
     return-object p1
 
-    .line 6
     :cond_1
     iget-object v2, p0, Landroidx/lifecycle/t;->e:Landroidx/savedstate/SavedStateRegistry;
 
@@ -276,7 +257,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 7
     :try_start_0
     iget-object v0, p0, Landroidx/lifecycle/t;->a:Landroid/app/Application;
 
@@ -286,7 +266,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 8
     iget-object v4, p0, Landroidx/lifecycle/t;->a:Landroid/app/Application;
 
     aput-object v4, v0, v2
@@ -308,7 +287,6 @@
     :cond_2
     new-array v0, v3, [Ljava/lang/Object;
 
-    .line 9
     invoke-virtual {p1}, Landroidx/lifecycle/SavedStateHandleController;->a()Landroidx/lifecycle/s;
 
     move-result-object v3
@@ -324,7 +302,6 @@
     :goto_1
     const-string v1, "androidx.lifecycle.savedstate.vm.tag"
 
-    .line 10
     invoke-virtual {v0, v1, p1}, Landroidx/lifecycle/v;->setTagIfAbsent(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_2
@@ -336,7 +313,6 @@
     :catch_0
     move-exception p1
 
-    .line 11
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -353,7 +329,6 @@
 
     move-result-object p2
 
-    .line 12
     invoke-virtual {p1}, Ljava/lang/reflect/InvocationTargetException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p1
@@ -365,7 +340,6 @@
     :catch_1
     move-exception p1
 
-    .line 13
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -393,7 +367,6 @@
     :catch_2
     move-exception p1
 
-    .line 14
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -422,7 +395,6 @@
         .end annotation
     .end param
 
-    .line 18
     iget-object v0, p0, Landroidx/lifecycle/t;->e:Landroidx/savedstate/SavedStateRegistry;
 
     iget-object v1, p0, Landroidx/lifecycle/t;->d:Landroidx/lifecycle/Lifecycle;
@@ -451,21 +423,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0, v0, p1}, Landroidx/lifecycle/t;->a(Ljava/lang/String;Ljava/lang/Class;)Landroidx/lifecycle/v;
 
     move-result-object p1
 
     return-object p1
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

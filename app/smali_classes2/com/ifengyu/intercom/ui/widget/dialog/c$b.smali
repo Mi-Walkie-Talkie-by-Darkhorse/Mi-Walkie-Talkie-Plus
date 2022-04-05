@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/c$b;
 .super Ljava/lang/Object;
-.source "ActivateDeviceDialog.java"
 
 
 # annotations

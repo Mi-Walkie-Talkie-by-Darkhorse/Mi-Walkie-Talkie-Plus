@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$UpdateState;
 .super Ljava/lang/Object;
-.source "UpdateHelper.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

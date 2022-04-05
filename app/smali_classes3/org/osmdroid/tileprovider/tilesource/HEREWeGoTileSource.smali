@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;
 .super Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
-.source "HEREWeGoTileSource.java"
 
 
 # static fields
@@ -37,7 +36,6 @@
 
     const-string v3, "http://4.{domain}/maptile/2.1/maptile/newest/"
 
-    .line 1
     filled-new-array {v0, v1, v2, v3}, [Ljava/lang/String;
 
     move-result-object v0
@@ -50,7 +48,6 @@
 .method public constructor <init>()V
     .locals 8
 
-    .line 1
     sget-object v6, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->mapBoxBaseUrl:[Ljava/lang/String;
 
     const-string v1, "herewego"
@@ -71,20 +68,16 @@
 
     const-string v0, "hybrid.day"
 
-    .line 2
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->herewegoMapId:Ljava/lang/String;
 
     const-string v0, ""
 
-    .line 3
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appId:Ljava/lang/String;
 
-    .line 4
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appCode:Ljava/lang/String;
 
     const-string v0, "aerial.maps.cit.api.here.com"
 
-    .line 5
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->domainOverride:Ljava/lang/String;
 
     return-void
@@ -93,7 +86,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 8
 
-    .line 6
     sget-object v6, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->mapBoxBaseUrl:[Ljava/lang/String;
 
     const-string v1, "herewego"
@@ -114,35 +106,26 @@
 
     const-string v0, "hybrid.day"
 
-    .line 7
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->herewegoMapId:Ljava/lang/String;
 
     const-string v0, ""
 
-    .line 8
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appId:Ljava/lang/String;
 
-    .line 9
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appCode:Ljava/lang/String;
 
     const-string v0, "aerial.maps.cit.api.here.com"
 
-    .line 10
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->domainOverride:Ljava/lang/String;
 
-    .line 11
     invoke-virtual {p0, p1}, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->retrieveAppId(Landroid/content/Context;)V
 
-    .line 12
     invoke-virtual {p0, p1}, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->retrieveMapBoxMapId(Landroid/content/Context;)V
 
-    .line 13
     invoke-virtual {p0, p1}, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->retrieveAppCode(Landroid/content/Context;)V
 
-    .line 14
     invoke-direct {p0, p1}, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->retrieveDomainOverride(Landroid/content/Context;)V
 
-    .line 15
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -167,7 +150,6 @@
 .method public constructor <init>(Ljava/lang/String;IIILjava/lang/String;)V
     .locals 8
 
-    .line 24
     sget-object v6, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->mapBoxBaseUrl:[Ljava/lang/String;
 
     const-string v7, "\u00a9 1987 - 2017 HERE. All rights reserved."
@@ -188,20 +170,16 @@
 
     const-string p1, "hybrid.day"
 
-    .line 25
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->herewegoMapId:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 26
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appId:Ljava/lang/String;
 
-    .line 27
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appCode:Ljava/lang/String;
 
     const-string p1, "aerial.maps.cit.api.here.com"
 
-    .line 28
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->domainOverride:Ljava/lang/String;
 
     return-void
@@ -232,25 +210,20 @@
 
     move-object v5, p5
 
-    .line 29
     invoke-direct/range {v0 .. v7}, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;-><init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p1, "hybrid.day"
 
-    .line 30
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->herewegoMapId:Ljava/lang/String;
 
     const-string p1, ""
 
-    .line 31
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appId:Ljava/lang/String;
 
-    .line 32
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appCode:Ljava/lang/String;
 
     const-string p1, "aerial.maps.cit.api.here.com"
 
-    .line 33
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->domainOverride:Ljava/lang/String;
 
     return-void
@@ -259,7 +232,6 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 10
 
-    .line 16
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -292,29 +264,22 @@
 
     const-string v0, "hybrid.day"
 
-    .line 17
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->herewegoMapId:Ljava/lang/String;
 
     const-string v0, ""
 
-    .line 18
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appId:Ljava/lang/String;
 
-    .line 19
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appCode:Ljava/lang/String;
 
     const-string v0, "aerial.maps.cit.api.here.com"
 
-    .line 20
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->domainOverride:Ljava/lang/String;
 
-    .line 21
     iput-object p2, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appId:Ljava/lang/String;
 
-    .line 22
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->herewegoMapId:Ljava/lang/String;
 
-    .line 23
     iput-object p3, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appCode:Ljava/lang/String;
 
     return-void
@@ -325,21 +290,18 @@
 
     const-string v0, "HEREWEGO_OVERRIDE"
 
-    .line 1
     invoke-static {p1, v0}, Lorg/osmdroid/tileprovider/util/ManifestUtil;->retrieveKey(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
 
     if-lez v0, :cond_0
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->domainOverride:Ljava/lang/String;
 
     :cond_0
@@ -351,7 +313,6 @@
 .method public getAppCode()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appCode:Ljava/lang/String;
 
     return-object v0
@@ -360,7 +321,6 @@
 .method public getAppId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appId:Ljava/lang/String;
 
     return-object v0
@@ -369,7 +329,6 @@
 .method public getHerewegoMapId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->herewegoMapId:Ljava/lang/String;
 
     return-object v0
@@ -378,7 +337,6 @@
 .method public getTileURLString(Lorg/osmdroid/tileprovider/MapTile;)Ljava/lang/String;
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;->getBaseUrl()Ljava/lang/String;
@@ -395,7 +353,6 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->getHerewegoMapId()Ljava/lang/String;
 
     move-result-object v1
@@ -404,37 +361,30 @@
 
     const-string v1, "/"
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 4
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getZoomLevel()I
 
     move-result v2
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getX()I
 
     move-result v2
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 7
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getY()I
 
     move-result p1
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 9
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/BitmapTileSourceBase;->getTileSizePixels()I
@@ -449,7 +399,6 @@
 
     const-string p1, "app_id="
 
-    .line 10
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->getAppId()Ljava/lang/String;
@@ -460,7 +409,6 @@
 
     const-string p1, "&app_code="
 
-    .line 11
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->getAppCode()Ljava/lang/String;
@@ -471,10 +419,8 @@
 
     const-string p1, "&lg=pt-BR"
 
-    .line 12
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 13
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -487,7 +433,6 @@
 
     const-string v0, "HEREWEGO_APPCODE"
 
-    .line 1
     invoke-static {p1, v0}, Lorg/osmdroid/tileprovider/util/ManifestUtil;->retrieveKey(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -502,7 +447,6 @@
 
     const-string v0, "HEREWEGO_APPID"
 
-    .line 1
     invoke-static {p1, v0}, Lorg/osmdroid/tileprovider/util/ManifestUtil;->retrieveKey(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -517,7 +461,6 @@
 
     const-string v0, "HEREWEGO_MAPID"
 
-    .line 1
     invoke-static {p1, v0}, Lorg/osmdroid/tileprovider/util/ManifestUtil;->retrieveKey(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -530,7 +473,6 @@
 .method public setAppCode(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appCode:Ljava/lang/String;
 
     return-void
@@ -539,7 +481,6 @@
 .method public setAppId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->appId:Ljava/lang/String;
 
     return-void
@@ -548,7 +489,6 @@
 .method public setDomainOverride(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->domainOverride:Ljava/lang/String;
 
     return-void
@@ -557,10 +497,8 @@
 .method public setHereWeGoMapid(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/HEREWeGoTileSource;->herewegoMapId:Ljava/lang/String;
 
-    .line 2
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V

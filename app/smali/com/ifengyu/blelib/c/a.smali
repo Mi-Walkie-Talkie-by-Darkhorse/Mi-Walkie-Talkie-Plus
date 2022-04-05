@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/blelib/c/a;
 .super Ljava/lang/Object;
-.source "DeviceCommendCallback.java"
 
 
 # virtual methods

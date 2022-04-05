@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/android/util/Util;
 .super Ljava/lang/Object;
-.source "Util.java"
 
 
 # static fields
@@ -21,7 +20,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/android/util/Util$1;
 
     invoke-direct {v0}, Lcom/xiaomi/infra/galaxy/fds/android/util/Util$1;-><init>()V
@@ -34,7 +32,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
     move-result-object v0
@@ -57,14 +53,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     :cond_0
@@ -72,14 +66,12 @@
 
     new-array v1, v0, [B
 
-    .line 4
     invoke-virtual {p0}, Lcom/xiaomi/infra/galaxy/fds/android/model/FDSObject;->getObjectContent()Ljava/io/InputStream;
 
     move-result-object v2
 
     const/4 v3, 0x0
 
-    .line 5
     :try_start_0
     new-instance v4, Ljava/io/BufferedOutputStream;
 
@@ -95,7 +87,6 @@
     :goto_0
     const/4 p1, 0x0
 
-    .line 6
     :try_start_1
     invoke-virtual {v2, v1, p1, v0}, Ljava/io/InputStream;->read([BII)I
 
@@ -105,7 +96,6 @@
 
     if-eq p2, v3, :cond_1
 
-    .line 7
     invoke-virtual {v4, v1, p1, p2}, Ljava/io/OutputStream;->write([BII)V
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_1
@@ -113,12 +103,10 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     :try_start_2
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
 
-    .line 9
     invoke-virtual {v4}, Ljava/io/OutputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
@@ -148,7 +136,6 @@
     :catch_2
     move-exception p1
 
-    .line 10
     :goto_1
     :try_start_3
     new-instance p2, Lcom/xiaomi/infra/galaxy/fds/android/exception/GalaxyFDSClientException;
@@ -201,19 +188,16 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 11
     :goto_2
     :try_start_4
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
 
     if-eqz v3, :cond_2
 
-    .line 12
     invoke-virtual {v3}, Ljava/io/OutputStream;->close()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
 
-    .line 13
     :catch_3
     :cond_2
     throw p0
@@ -222,7 +206,6 @@
 .method public static formatDateString(Ljava/util/Date;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/android/util/Util;->DATE_FOPMAT:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -241,14 +224,12 @@
 .method public static getMimeType(Ljava/io/File;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p0
 
     const-string v0, "."
 
-    .line 2
     invoke-virtual {p0, v0}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
 
     move-result v0
@@ -257,19 +238,16 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 3
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
 
     if-ge v0, v1, :cond_0
 
-    .line 4
     invoke-virtual {p0, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 5
     invoke-static {}, Landroid/webkit/MimeTypeMap;->getSingleton()Landroid/webkit/MimeTypeMap;
 
     move-result-object v0
@@ -282,7 +260,6 @@
 
     return-object p0
 
-    .line 6
     :cond_0
     sget-object p0, Lcom/xiaomi/infra/galaxy/fds/android/util/Consts;->APPLICATION_OCTET_STREAM:Ljava/lang/String;
 
@@ -292,23 +269,18 @@
 .method public static getStackTrace(Ljava/lang/Exception;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/io/StringWriter;
 
     invoke-direct {v0}, Ljava/io/StringWriter;-><init>()V
 
-    .line 2
     new-instance v1, Ljava/io/PrintWriter;
 
     invoke-direct {v1, v0}, Ljava/io/PrintWriter;-><init>(Ljava/io/Writer;)V
 
-    .line 3
     invoke-virtual {p0, v1}, Ljava/lang/Exception;->printStackTrace(Ljava/io/PrintWriter;)V
 
-    .line 4
     invoke-virtual {v1}, Ljava/io/PrintWriter;->flush()V
 
-    .line 5
     invoke-virtual {v0}, Ljava/io/StringWriter;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -324,7 +296,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/android/util/Util;->DATE_FOPMAT:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;

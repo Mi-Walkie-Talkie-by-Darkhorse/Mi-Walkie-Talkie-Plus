@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/QMUIProgressBar$c;
 .super Ljava/lang/Object;
-.source "QMUIProgressBar.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/fk$1;
 .super Landroid/os/Handler;
-.source "OfflineMapPage.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/fk;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/fk$1;->a:Lcom/amap/api/col/l3/fk;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -35,10 +33,8 @@
 .method public final handleMessage(Landroid/os/Message;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 2
     :try_start_0
     iget p1, p1, Landroid/os/Message;->what:I
 
@@ -50,7 +46,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/amap/api/col/l3/fk$1;->a:Lcom/amap/api/col/l3/fk;
 
@@ -62,7 +57,6 @@
 
     return-void
 
-    .line 4
     :cond_1
     iget-object p1, p0, Lcom/amap/api/col/l3/fk$1;->a:Lcom/amap/api/col/l3/fk;
 
@@ -72,7 +66,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 5
     iget-object p1, p0, Lcom/amap/api/col/l3/fk$1;->a:Lcom/amap/api/col/l3/fk;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/fk;->c(Lcom/amap/api/col/l3/fk;)Lcom/amap/api/col/l3/fd;
@@ -90,7 +83,6 @@
     :catch_0
     move-exception p1
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     return-void

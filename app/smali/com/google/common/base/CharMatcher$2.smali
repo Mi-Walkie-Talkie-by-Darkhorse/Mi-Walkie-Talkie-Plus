@@ -1,6 +1,5 @@
 .class final Lcom/google/common/base/CharMatcher$2;
 .super Lcom/google/common/base/CharMatcher;
-.source "CharMatcher.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/base/CharMatcher;-><init>(Ljava/lang/String;)V
 
     return-void
@@ -29,7 +27,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Character;
 
     invoke-super {p0, p1}, Lcom/google/common/base/CharMatcher;->apply(Ljava/lang/Character;)Z
@@ -42,7 +39,6 @@
 .method public matches(C)Z
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Character;->isDigit(C)Z
 
     move-result p1

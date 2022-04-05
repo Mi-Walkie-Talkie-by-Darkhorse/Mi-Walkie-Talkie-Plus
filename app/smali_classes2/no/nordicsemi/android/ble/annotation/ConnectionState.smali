@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lno/nordicsemi/android/ble/annotation/ConnectionState;
 .super Ljava/lang/Object;
-.source "ConnectionState.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

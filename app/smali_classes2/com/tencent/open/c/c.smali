@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/c/c;
 .super Lcom/tencent/open/c/b;
-.source "ProGuard"
 
 
 # static fields
@@ -17,7 +16,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/tencent/open/c/b;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -28,7 +26,6 @@
 .method public dispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -49,19 +46,16 @@
 
     invoke-static {v1, v0}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-boolean v0, Lcom/tencent/open/c/c;->a:Z
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-super {p0, p1}, Landroid/webkit/WebView;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result p1
 
     return p1
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getAction()I
 
@@ -69,7 +63,6 @@
 
     if-nez v0, :cond_8
 
-    .line 5
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v0
@@ -86,27 +79,23 @@
 
     if-eq v0, v1, :cond_5
 
-    .line 6
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getUnicodeChar()I
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 7
     invoke-super {p0, p1}, Landroid/webkit/WebView;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result p1
 
     return p1
 
-    .line 8
     :cond_1
     sget-boolean v0, Lcom/tencent/open/web/security/SecureJsInterface;->isPWDEdit:Z
 
     if-eqz v0, :cond_4
 
-    .line 9
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getUnicodeChar()I
 
     move-result v0
@@ -128,7 +117,6 @@
 
     if-gt v0, v1, :cond_4
 
-    .line 10
     :cond_3
     new-instance p1, Landroid/view/KeyEvent;
 
@@ -140,14 +128,12 @@
 
     iput-object p1, p0, Lcom/tencent/open/c/c;->b:Landroid/view/KeyEvent;
 
-    .line 11
     invoke-super {p0, p1}, Landroid/webkit/WebView;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result p1
 
     return p1
 
-    .line 12
     :cond_4
     invoke-super {p0, p1}, Landroid/webkit/WebView;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -158,17 +144,14 @@
     :cond_5
     const/4 v0, 0x1
 
-    .line 13
     sput-boolean v0, Lcom/tencent/open/web/security/a;->b:Z
 
-    .line 14
     invoke-super {p0, p1}, Landroid/webkit/WebView;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
     move-result p1
 
     return p1
 
-    .line 15
     :cond_6
     invoke-super {p0, p1}, Landroid/webkit/WebView;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -176,7 +159,6 @@
 
     return p1
 
-    .line 16
     :cond_7
     invoke-super {p0, p1}, Landroid/webkit/WebView;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -184,7 +166,6 @@
 
     return p1
 
-    .line 17
     :cond_8
     invoke-super {p0, p1}, Landroid/webkit/WebView;->dispatchKeyEvent(Landroid/view/KeyEvent;)Z
 
@@ -196,7 +177,6 @@
 .method public onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -217,12 +197,10 @@
 
     invoke-static {v1, v0}, Lcom/tencent/open/a/f;->c(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     invoke-super {p0, p1}, Landroid/webkit/WebView;->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
 
     move-result-object v0
 
-    .line 3
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -245,10 +223,8 @@
 
     const/4 v0, 0x1
 
-    .line 4
     sput-boolean v0, Lcom/tencent/open/c/c;->a:Z
 
-    .line 5
     new-instance v0, Lcom/tencent/open/web/security/a;
 
     invoke-super {p0, p1}, Landroid/webkit/WebView;->onCreateInputConnection(Landroid/view/inputmethod/EditorInfo;)Landroid/view/inputmethod/InputConnection;
@@ -261,7 +237,6 @@
 
     return-object v0
 
-    .line 6
     :cond_0
     sput-boolean v1, Lcom/tencent/open/c/c;->a:Z
 
@@ -271,7 +246,6 @@
 .method public onKeyDown(ILandroid/view/KeyEvent;)Z
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -292,19 +266,16 @@
 
     invoke-static {v1, v0}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-boolean v0, Lcom/tencent/open/c/c;->a:Z
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-super {p0, p1, p2}, Landroid/webkit/WebView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result p1
 
     return p1
 
-    .line 4
     :cond_0
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getAction()I
 
@@ -312,7 +283,6 @@
 
     if-nez v0, :cond_8
 
-    .line 5
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result v0
@@ -329,27 +299,23 @@
 
     if-eq v0, v1, :cond_5
 
-    .line 6
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getUnicodeChar()I
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 7
     invoke-super {p0, p1, p2}, Landroid/webkit/WebView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result p1
 
     return p1
 
-    .line 8
     :cond_1
     sget-boolean v0, Lcom/tencent/open/web/security/SecureJsInterface;->isPWDEdit:Z
 
     if-eqz v0, :cond_4
 
-    .line 9
     invoke-virtual {p2}, Landroid/view/KeyEvent;->getUnicodeChar()I
 
     move-result v0
@@ -371,7 +337,6 @@
 
     if-gt v0, v1, :cond_4
 
-    .line 10
     :cond_3
     new-instance p1, Landroid/view/KeyEvent;
 
@@ -383,7 +348,6 @@
 
     iput-object p1, p0, Lcom/tencent/open/c/c;->b:Landroid/view/KeyEvent;
 
-    .line 11
     invoke-virtual {p1}, Landroid/view/KeyEvent;->getKeyCode()I
 
     move-result p1
@@ -396,7 +360,6 @@
 
     return p1
 
-    .line 12
     :cond_4
     invoke-super {p0, p1, p2}, Landroid/webkit/WebView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
@@ -407,17 +370,14 @@
     :cond_5
     const/4 v0, 0x1
 
-    .line 13
     sput-boolean v0, Lcom/tencent/open/web/security/a;->b:Z
 
-    .line 14
     invoke-super {p0, p1, p2}, Landroid/webkit/WebView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
     move-result p1
 
     return p1
 
-    .line 15
     :cond_6
     invoke-super {p0, p1, p2}, Landroid/webkit/WebView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
@@ -425,7 +385,6 @@
 
     return p1
 
-    .line 16
     :cond_7
     invoke-super {p0, p1, p2}, Landroid/webkit/WebView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 
@@ -433,7 +392,6 @@
 
     return p1
 
-    .line 17
     :cond_8
     invoke-super {p0, p1, p2}, Landroid/webkit/WebView;->onKeyDown(ILandroid/view/KeyEvent;)Z
 

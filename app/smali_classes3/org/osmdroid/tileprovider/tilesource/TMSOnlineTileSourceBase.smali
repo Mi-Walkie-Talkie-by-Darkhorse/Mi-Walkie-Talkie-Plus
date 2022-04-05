@@ -1,13 +1,11 @@
 .class public abstract Lorg/osmdroid/tileprovider/tilesource/TMSOnlineTileSourceBase;
 .super Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
-.source "TMSOnlineTileSourceBase.java"
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct/range {p0 .. p6}, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;-><init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;)V
 
     return-void
@@ -18,7 +16,6 @@
 .method public getTileRelativeFilenameString(Lorg/osmdroid/tileprovider/MapTile;)Ljava/lang/String;
     .locals 4
 
-    .line 1
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getZoomLevel()I
 
     move-result v0
@@ -35,12 +32,10 @@
 
     sub-int/2addr v0, v1
 
-    .line 2
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 3
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/BitmapTileSourceBase;->pathBase()Ljava/lang/String;
 
     move-result-object v2
@@ -49,40 +44,32 @@
 
     const/16 v2, 0x2f
 
-    .line 4
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 5
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getZoomLevel()I
 
     move-result v3
 
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 6
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 7
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getX()I
 
     move-result p1
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 8
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 9
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 10
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/BitmapTileSourceBase;->imageFilenameEnding()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 11
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1

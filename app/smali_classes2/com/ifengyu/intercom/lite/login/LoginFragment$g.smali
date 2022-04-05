@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/LoginFragment$g;
 .super Ljava/lang/Object;
-.source "LoginFragment.java"
 
 # interfaces
 .implements Lcom/afollestad/materialdialogs/MaterialDialog$k;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$g;->a:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +44,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$g;->a:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;

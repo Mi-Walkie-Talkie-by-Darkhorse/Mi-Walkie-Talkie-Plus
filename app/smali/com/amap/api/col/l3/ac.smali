@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ac;
 .super Ljava/lang/Object;
-.source "ProjectionDelegateImp.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/w;
@@ -14,10 +13,8 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/u;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/ac;->a:Lcom/amap/api/col/l3/u;
 
     return-void
@@ -51,18 +48,15 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-static {}, Lcom/autonavi/amap/mapcore/IPoint;->obtain()Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v10
 
-    .line 2
     invoke-static {}, Lcom/autonavi/amap/mapcore/IPoint;->obtain()Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v11
 
-    .line 3
     iget-object v4, v0, Lcom/amap/api/col/l3/ac;->a:Lcom/amap/api/col/l3/u;
 
     iget-object v5, v1, Lcom/amap/api/maps/model/LatLngBounds;->southwest:Lcom/amap/api/maps/model/LatLng;
@@ -79,7 +73,6 @@
 
     invoke-interface/range {v4 .. v9}, Lcom/amap/api/col/l3/u;->a(DDLcom/autonavi/amap/mapcore/IPoint;)V
 
-    .line 4
     iget-object v4, v0, Lcom/amap/api/col/l3/ac;->a:Lcom/amap/api/col/l3/u;
 
     iget-object v1, v1, Lcom/amap/api/maps/model/LatLngBounds;->northeast:Lcom/amap/api/maps/model/LatLng;
@@ -92,7 +85,6 @@
 
     invoke-interface/range {v4 .. v9}, Lcom/amap/api/col/l3/u;->a(DDLcom/autonavi/amap/mapcore/IPoint;)V
 
-    .line 5
     iget v1, v10, Landroid/graphics/Point;->x:I
 
     sub-int/2addr v3, v2
@@ -101,21 +93,18 @@
 
     div-int v15, v2, p3
 
-    .line 6
     iget v2, v10, Landroid/graphics/Point;->y:I
 
     shr-int/2addr v2, v3
 
     div-int v18, v2, p3
 
-    .line 7
     iget v2, v11, Landroid/graphics/Point;->x:I
 
     shr-int/2addr v2, v3
 
     div-int v16, v2, p3
 
-    .line 8
     iget v2, v11, Landroid/graphics/Point;->y:I
 
     shr-int v4, v2, v3
@@ -138,13 +127,10 @@
 
     shr-int v14, v2, v3
 
-    .line 9
     invoke-virtual {v10}, Lcom/autonavi/amap/mapcore/IPoint;->recycle()V
 
-    .line 10
     invoke-virtual {v11}, Lcom/autonavi/amap/mapcore/IPoint;->recycle()V
 
-    .line 11
     new-instance v1, Lcom/amap/api/maps/model/TileProjection;
 
     move-object v12, v1
@@ -174,13 +160,11 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     invoke-static {}, Lcom/autonavi/amap/mapcore/DPoint;->obtain()Lcom/autonavi/amap/mapcore/DPoint;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/ac;->a:Lcom/amap/api/col/l3/u;
 
     iget v2, p1, Landroid/graphics/Point;->x:I
@@ -189,7 +173,6 @@
 
     invoke-interface {v1, v2, p1, v0}, Lcom/amap/api/col/l3/u;->b(IILcom/autonavi/amap/mapcore/DPoint;)V
 
-    .line 3
     new-instance p1, Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v1, v0, Lcom/autonavi/amap/mapcore/DPoint;->y:D
@@ -198,7 +181,6 @@
 
     invoke-direct {p1, v1, v2, v3, v4}, Lcom/amap/api/maps/model/LatLng;-><init>(DD)V
 
-    .line 4
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/DPoint;->recycle()V
 
     return-object p1
@@ -207,7 +189,6 @@
 .method public final getCameraInfo()Lcom/amap/api/maps/model/AMapCameraInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ac;->a:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getCamerInfo()Lcom/amap/api/maps/model/AMapCameraInfo;
@@ -225,7 +206,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ac;->a:Lcom/amap/api/col/l3/u;
 
     if-eqz v0, :cond_1
@@ -234,7 +214,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-interface {v0, p1, p2}, Lcom/amap/api/col/l3/u;->a(Lcom/amap/api/maps/model/LatLng;F)Lcom/amap/api/maps/model/LatLngBounds;
 
@@ -257,21 +236,18 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ac;->a:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapWidth()I
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/ac;->a:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v1}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapHeight()I
 
     move-result v1
 
-    .line 3
     new-instance v2, Landroid/graphics/Point;
 
     const/4 v3, 0x0
@@ -282,7 +258,6 @@
 
     move-result-object v7
 
-    .line 4
     new-instance v2, Landroid/graphics/Point;
 
     invoke-direct {v2, v0, v3}, Landroid/graphics/Point;-><init>(II)V
@@ -291,7 +266,6 @@
 
     move-result-object v8
 
-    .line 5
     new-instance v2, Landroid/graphics/Point;
 
     invoke-direct {v2, v3, v1}, Landroid/graphics/Point;-><init>(II)V
@@ -300,7 +274,6 @@
 
     move-result-object v5
 
-    .line 6
     new-instance v2, Landroid/graphics/Point;
 
     invoke-direct {v2, v0, v1}, Landroid/graphics/Point;-><init>(II)V
@@ -309,7 +282,6 @@
 
     move-result-object v6
 
-    .line 7
     invoke-static {}, Lcom/amap/api/maps/model/LatLngBounds;->builder()Lcom/amap/api/maps/model/LatLngBounds$Builder;
 
     move-result-object v0
@@ -318,7 +290,6 @@
 
     move-result-object v0
 
-    .line 8
     invoke-virtual {v0, v6}, Lcom/amap/api/maps/model/LatLngBounds$Builder;->include(Lcom/amap/api/maps/model/LatLng;)Lcom/amap/api/maps/model/LatLngBounds$Builder;
 
     move-result-object v0
@@ -335,7 +306,6 @@
 
     move-result-object v9
 
-    .line 9
     new-instance v0, Lcom/amap/api/maps/model/VisibleRegion;
 
     move-object v4, v0
@@ -354,7 +324,6 @@
 
     return p1
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ac;->a:Lcom/amap/api/col/l3/u;
 
@@ -379,13 +348,11 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     invoke-static {}, Lcom/autonavi/amap/mapcore/FPoint;->obtain()Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v6
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/ac;->a:Lcom/amap/api/col/l3/u;
 
     iget-wide v1, p1, Lcom/amap/api/maps/model/LatLng;->latitude:D
@@ -396,7 +363,6 @@
 
     invoke-interface/range {v0 .. v5}, Lcom/amap/api/col/l3/u;->a(DDLcom/autonavi/amap/mapcore/FPoint;)V
 
-    .line 3
     new-instance p1, Landroid/graphics/PointF;
 
     iget v0, v6, Landroid/graphics/PointF;->x:F
@@ -405,7 +371,6 @@
 
     invoke-direct {p1, v0, v1}, Landroid/graphics/PointF;-><init>(FF)V
 
-    .line 4
     invoke-virtual {v6}, Lcom/autonavi/amap/mapcore/FPoint;->recycle()V
 
     return-object p1
@@ -425,13 +390,11 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     invoke-static {}, Lcom/autonavi/amap/mapcore/IPoint;->obtain()Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v6
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/ac;->a:Lcom/amap/api/col/l3/u;
 
     iget-wide v1, p1, Lcom/amap/api/maps/model/LatLng;->latitude:D
@@ -442,7 +405,6 @@
 
     invoke-interface/range {v0 .. v5}, Lcom/amap/api/col/l3/u;->b(DDLcom/autonavi/amap/mapcore/IPoint;)V
 
-    .line 3
     new-instance p1, Landroid/graphics/Point;
 
     iget v0, v6, Landroid/graphics/Point;->x:I
@@ -451,7 +413,6 @@
 
     invoke-direct {p1, v0, v1}, Landroid/graphics/Point;-><init>(II)V
 
-    .line 4
     invoke-virtual {v6}, Lcom/autonavi/amap/mapcore/IPoint;->recycle()V
 
     return-object p1

@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/gson/internal/reflect/ReflectionAccessor;
 .super Ljava/lang/Object;
-.source "ReflectionAccessor.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/google/gson/internal/JavaVersion;->getMajorJavaVersion()I
 
     move-result v0
@@ -40,7 +38,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,7 +46,6 @@
 .method public static getInstance()Lcom/google/gson/internal/reflect/ReflectionAccessor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/gson/internal/reflect/ReflectionAccessor;->instance:Lcom/google/gson/internal/reflect/ReflectionAccessor;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/exception/GalaxyFDSException;
 .super Ljava/lang/Exception;
-.source "GalaxyFDSException.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 
     return-void
@@ -22,7 +20,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     invoke-direct {p0, p1, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
@@ -31,7 +28,6 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
@@ -42,7 +38,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-direct {p0, v0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
@@ -53,7 +48,6 @@
 .method public getError()Lcom/xiaomi/infra/galaxy/fds/FDSError;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->InternalServerError:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     return-object v0
@@ -62,7 +56,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -85,14 +78,12 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_0
 
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$h;
 .super Ljava/lang/Object;
-.source "SealSettingActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/baseui/BaseActivity$e;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$h;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$h;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;->t:Landroid/widget/LinearLayout;
@@ -47,17 +44,14 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->setVisibility(I)V
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->u()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->N()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -72,7 +66,6 @@
 
     const/4 v2, 0x0
 
-    .line 5
     invoke-static {v1, v0, v2}, Lcom/ifengyu/intercom/g/a;->a(Ljava/lang/String;Ljava/lang/String;Lcom/ifengyu/intercom/g/d/b;)V
 
     :cond_0

@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/single/SingleSubscribeOn;
 .super Lio/reactivex/Single;
-.source "SingleSubscribeOn.java"
 
 
 # annotations
@@ -47,13 +46,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleSubscribeOn;->source:Lio/reactivex/SingleSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/single/SingleSubscribeOn;->scheduler:Lio/reactivex/Scheduler;
 
     return-void
@@ -71,24 +67,20 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/single/SingleSubscribeOn$SubscribeOnObserver;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/single/SingleSubscribeOn;->source:Lio/reactivex/SingleSource;
 
     invoke-direct {v0, p1, v1}, Lio/reactivex/internal/operators/single/SingleSubscribeOn$SubscribeOnObserver;-><init>(Lio/reactivex/SingleObserver;Lio/reactivex/SingleSource;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/SingleObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     iget-object p1, p0, Lio/reactivex/internal/operators/single/SingleSubscribeOn;->scheduler:Lio/reactivex/Scheduler;
 
     invoke-virtual {p1, v0}, Lio/reactivex/Scheduler;->scheduleDirect(Ljava/lang/Runnable;)Lio/reactivex/disposables/Disposable;
 
     move-result-object p1
 
-    .line 4
     iget-object v0, v0, Lio/reactivex/internal/operators/single/SingleSubscribeOn$SubscribeOnObserver;->task:Lio/reactivex/internal/disposables/SequentialDisposable;
 
     invoke-virtual {v0, p1}, Lio/reactivex/internal/disposables/SequentialDisposable;->replace(Lio/reactivex/disposables/Disposable;)Z

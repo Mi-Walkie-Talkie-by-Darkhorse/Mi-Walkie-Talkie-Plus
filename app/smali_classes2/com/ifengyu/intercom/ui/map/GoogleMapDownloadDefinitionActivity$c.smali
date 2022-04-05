@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$c;
 .super Ljava/lang/Object;
-.source "GoogleMapDownloadDefinitionActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$c;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity$c;->a:Lcom/ifengyu/intercom/ui/map/GoogleMapDownloadDefinitionActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V

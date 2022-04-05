@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/StyleableRes;
 .super Ljava/lang/Object;
-.source "StyleableRes.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

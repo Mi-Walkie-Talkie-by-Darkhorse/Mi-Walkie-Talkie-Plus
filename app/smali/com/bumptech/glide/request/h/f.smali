@@ -1,6 +1,5 @@
 .class public abstract Lcom/bumptech/glide/request/h/f;
 .super Lcom/bumptech/glide/request/h/a;
-.source "SimpleTarget.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 
     const/high16 v0, -0x80000000
 
-    .line 1
     invoke-direct {p0, v0, v0}, Lcom/bumptech/glide/request/h/f;-><init>(II)V
 
     return-void
@@ -39,13 +37,10 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/bumptech/glide/request/h/a;-><init>()V
 
-    .line 3
     iput p1, p0, Lcom/bumptech/glide/request/h/f;->b:I
 
-    .line 4
     iput p2, p0, Lcom/bumptech/glide/request/h/f;->c:I
 
     return-void
@@ -70,7 +65,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget v0, p0, Lcom/bumptech/glide/request/h/f;->b:I
 
     iget v1, p0, Lcom/bumptech/glide/request/h/f;->c:I
@@ -81,7 +75,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget v0, p0, Lcom/bumptech/glide/request/h/f;->b:I
 
     iget v1, p0, Lcom/bumptech/glide/request/h/f;->c:I
@@ -90,7 +83,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

@@ -1,6 +1,5 @@
 .class public interface abstract Lbutterknife/Unbinder;
 .super Ljava/lang/Object;
-.source "Unbinder.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     sget-object v0, Lbutterknife/a;->a:Lbutterknife/a;
 
     sput-object v0, Lbutterknife/Unbinder;->EMPTY:Lbutterknife/Unbinder;

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/util/DoNotInterceptKeyboardInset;
 .super Ljava/lang/Object;
-.source "DoNotInterceptKeyboardInset.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

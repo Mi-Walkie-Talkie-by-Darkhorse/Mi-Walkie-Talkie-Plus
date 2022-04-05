@@ -1,6 +1,5 @@
 .class public final enum Lcom/umeng/analytics/pro/aj$e;
 .super Ljava/lang/Enum;
-.source "UMEnvelope.java"
 
 # interfaces
 .implements Lcom/umeng/analytics/pro/ax;
@@ -71,7 +70,6 @@
 .method static constructor <clinit>()V
     .locals 14
 
-    .line 1
     new-instance v0, Lcom/umeng/analytics/pro/aj$e;
 
     const/4 v1, 0x0
@@ -122,7 +120,6 @@
 
     sput-object v0, Lcom/umeng/analytics/pro/aj$e;->d:Lcom/umeng/analytics/pro/aj$e;
 
-    .line 2
     new-instance v0, Lcom/umeng/analytics/pro/aj$e;
 
     const/4 v6, 0x5
@@ -159,7 +156,6 @@
 
     sput-object v0, Lcom/umeng/analytics/pro/aj$e;->g:Lcom/umeng/analytics/pro/aj$e;
 
-    .line 3
     new-instance v0, Lcom/umeng/analytics/pro/aj$e;
 
     const/16 v9, 0x8
@@ -198,7 +194,6 @@
 
     new-array v11, v11, [Lcom/umeng/analytics/pro/aj$e;
 
-    .line 4
     sget-object v12, Lcom/umeng/analytics/pro/aj$e;->a:Lcom/umeng/analytics/pro/aj$e;
 
     aput-object v12, v11, v1
@@ -239,14 +234,12 @@
 
     sput-object v11, Lcom/umeng/analytics/pro/aj$e;->n:[Lcom/umeng/analytics/pro/aj$e;
 
-    .line 5
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/umeng/analytics/pro/aj$e;->k:Ljava/util/Map;
 
-    .line 6
     const-class v0, Lcom/umeng/analytics/pro/aj$e;
 
     invoke-static {v0}, Ljava/util/EnumSet;->allOf(Ljava/lang/Class;)Ljava/util/EnumSet;
@@ -270,7 +263,6 @@
 
     check-cast v1, Lcom/umeng/analytics/pro/aj$e;
 
-    .line 7
     sget-object v2, Lcom/umeng/analytics/pro/aj$e;->k:Ljava/util/Map;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/pro/aj$e;->b()Ljava/lang/String;
@@ -295,13 +287,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-short p3, p0, Lcom/umeng/analytics/pro/aj$e;->l:S
 
-    .line 3
     iput-object p4, p0, Lcom/umeng/analytics/pro/aj$e;->m:Ljava/lang/String;
 
     return-void
@@ -316,61 +305,51 @@
 
     return-object p0
 
-    .line 1
     :pswitch_0
     sget-object p0, Lcom/umeng/analytics/pro/aj$e;->j:Lcom/umeng/analytics/pro/aj$e;
 
     return-object p0
 
-    .line 2
     :pswitch_1
     sget-object p0, Lcom/umeng/analytics/pro/aj$e;->i:Lcom/umeng/analytics/pro/aj$e;
 
     return-object p0
 
-    .line 3
     :pswitch_2
     sget-object p0, Lcom/umeng/analytics/pro/aj$e;->h:Lcom/umeng/analytics/pro/aj$e;
 
     return-object p0
 
-    .line 4
     :pswitch_3
     sget-object p0, Lcom/umeng/analytics/pro/aj$e;->g:Lcom/umeng/analytics/pro/aj$e;
 
     return-object p0
 
-    .line 5
     :pswitch_4
     sget-object p0, Lcom/umeng/analytics/pro/aj$e;->f:Lcom/umeng/analytics/pro/aj$e;
 
     return-object p0
 
-    .line 6
     :pswitch_5
     sget-object p0, Lcom/umeng/analytics/pro/aj$e;->e:Lcom/umeng/analytics/pro/aj$e;
 
     return-object p0
 
-    .line 7
     :pswitch_6
     sget-object p0, Lcom/umeng/analytics/pro/aj$e;->d:Lcom/umeng/analytics/pro/aj$e;
 
     return-object p0
 
-    .line 8
     :pswitch_7
     sget-object p0, Lcom/umeng/analytics/pro/aj$e;->c:Lcom/umeng/analytics/pro/aj$e;
 
     return-object p0
 
-    .line 9
     :pswitch_8
     sget-object p0, Lcom/umeng/analytics/pro/aj$e;->b:Lcom/umeng/analytics/pro/aj$e;
 
     return-object p0
 
-    .line 10
     :pswitch_9
     sget-object p0, Lcom/umeng/analytics/pro/aj$e;->a:Lcom/umeng/analytics/pro/aj$e;
 
@@ -396,7 +375,6 @@
 .method public static a(Ljava/lang/String;)Lcom/umeng/analytics/pro/aj$e;
     .locals 1
 
-    .line 11
     sget-object v0, Lcom/umeng/analytics/pro/aj$e;->k:Ljava/util/Map;
 
     invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -411,7 +389,6 @@
 .method public static b(I)Lcom/umeng/analytics/pro/aj$e;
     .locals 3
 
-    .line 1
     invoke-static {p0}, Lcom/umeng/analytics/pro/aj$e;->a(I)Lcom/umeng/analytics/pro/aj$e;
 
     move-result-object v0
@@ -420,7 +397,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -450,7 +426,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/umeng/analytics/pro/aj$e;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/umeng/analytics/pro/aj$e;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -465,7 +440,6 @@
 .method public static values()[Lcom/umeng/analytics/pro/aj$e;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/pro/aj$e;->n:[Lcom/umeng/analytics/pro/aj$e;
 
     invoke-virtual {v0}, [Lcom/umeng/analytics/pro/aj$e;->clone()Ljava/lang/Object;
@@ -482,7 +456,6 @@
 .method public a()S
     .locals 1
 
-    .line 12
     iget-short v0, p0, Lcom/umeng/analytics/pro/aj$e;->l:S
 
     return v0
@@ -491,7 +464,6 @@
 .method public b()Ljava/lang/String;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/analytics/pro/aj$e;->m:Ljava/lang/String;
 
     return-object v0

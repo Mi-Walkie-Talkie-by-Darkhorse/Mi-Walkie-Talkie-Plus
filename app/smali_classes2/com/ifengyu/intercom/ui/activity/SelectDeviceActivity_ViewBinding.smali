@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity_ViewBinding;
 .super Ljava/lang/Object;
-.source "SelectDeviceActivity_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
-    .line 3
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;
 
     const v1, 0x7f09035c
@@ -37,7 +33,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->rvSelectDevice:Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;
 
-    .line 4
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f090419
@@ -52,7 +47,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->leftBackIv:Landroid/widget/ImageView;
 
-    .line 5
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f09041b
@@ -67,7 +61,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->rightManagerIv:Landroid/widget/ImageView;
 
-    .line 6
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09041d
@@ -86,14 +79,12 @@
 
     const-string v1, "field \'mFabLayout\'"
 
-    .line 7
     invoke-static {p2, v0, v1}, Lbutterknife/internal/Utils;->findRequiredView(Landroid/view/View;ILjava/lang/String;)Landroid/view/View;
 
     move-result-object v0
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->mFabLayout:Landroid/view/View;
 
-    .line 8
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090417
@@ -108,7 +99,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->leftCancelBtn:Landroid/widget/TextView;
 
-    .line 9
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f090418
@@ -123,7 +113,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->rightManageBtn:Landroid/widget/TextView;
 
-    .line 10
     const-class v0, Lcom/ifengyu/intercom/lite/widget/EmptyView;
 
     const v1, 0x7f090157
@@ -138,7 +127,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->mTvEmptyView:Lcom/ifengyu/intercom/lite/widget/EmptyView;
 
-    .line 11
     const-class v0, Landroid/widget/RelativeLayout;
 
     const v1, 0x7f090254
@@ -163,46 +151,34 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->rvSelectDevice:Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->leftBackIv:Landroid/widget/ImageView;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->rightManagerIv:Landroid/widget/ImageView;
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->pagerTitle:Landroid/widget/TextView;
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->mFabLayout:Landroid/view/View;
 
-    .line 8
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->leftCancelBtn:Landroid/widget/TextView;
 
-    .line 9
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->rightManageBtn:Landroid/widget/TextView;
 
-    .line 10
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->mTvEmptyView:Lcom/ifengyu/intercom/lite/widget/EmptyView;
 
-    .line 11
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->unbindDeviceBtn:Landroid/widget/RelativeLayout;
 
     return-void
 
-    .line 12
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/CycleDetectingLockFactory$1;
 .super Ljava/lang/ThreadLocal;
-.source "CycleDetectingLockFactory.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
 .method protected bridge synthetic initialValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/CycleDetectingLockFactory$1;->initialValue()Ljava/util/ArrayList;
 
     move-result-object v0
@@ -59,7 +56,6 @@
 
     const/4 v0, 0x3
 
-    .line 2
     invoke-static {v0}, Lcom/google/common/collect/Lists;->newArrayListWithCapacity(I)Ljava/util/ArrayList;
 
     move-result-object v0

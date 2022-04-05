@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/OverlayManager;
 .super Ljava/lang/Object;
-.source "OverlayManager.java"
 
 # interfaces
 .implements Ljava/util/List;

@@ -1,6 +1,5 @@
 .class public Landroidx/core/os/a;
 .super Ljava/lang/Object;
-.source "BuildCompat.java"
 
 
 # direct methods
@@ -13,7 +12,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1e

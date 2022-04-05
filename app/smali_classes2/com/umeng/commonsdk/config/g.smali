@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/config/g;
 .super Ljava/lang/Object;
-.source "SensitiveFieldHandler.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/config/e;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -25,7 +23,6 @@
 
     if-eqz p1, :cond_4
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -34,7 +31,6 @@
 
     goto :goto_1
 
-    .line 2
     :cond_0
     :try_start_0
     invoke-static {p1}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
@@ -51,12 +47,10 @@
 
     const-string p1, "--->>> SensitiveFieldHandler: handleConfigItem: invalid config value."
 
-    .line 3
     invoke-static {v0, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 4
     :cond_1
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -76,31 +70,26 @@
 
     if-eqz p2, :cond_3
 
-    .line 5
     instance-of p1, p2, Lcom/umeng/commonsdk/config/b;
 
     if-eqz p1, :cond_3
 
     const/4 p1, 0x0
 
-    .line 6
     :goto_0
     :try_start_1
     array-length v0, p3
 
     if-ge p1, v0, :cond_3
 
-    .line 7
     aget-object v0, p3, p1
 
-    .line 8
     invoke-static {v0}, Lcom/umeng/commonsdk/config/d;->a(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 9
     invoke-static {v1, v2, p1}, Lcom/umeng/commonsdk/config/a;->a(JI)Z
 
     move-result v3
@@ -109,7 +98,6 @@
 
     move-result-object v3
 
-    .line 10
     move-object v4, p2
 
     check-cast v4, Lcom/umeng/commonsdk/config/b;
@@ -130,7 +118,6 @@
     :catchall_1
     const-string p1, "--->>> SensitiveFieldHandler: handleConfigItem: parseLong exception."
 
-    .line 11
     invoke-static {v0, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_4

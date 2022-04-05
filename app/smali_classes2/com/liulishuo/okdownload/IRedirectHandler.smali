@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/IRedirectHandler;
 .super Ljava/lang/Object;
-.source "IRedirectHandler.java"
 
 
 # virtual methods

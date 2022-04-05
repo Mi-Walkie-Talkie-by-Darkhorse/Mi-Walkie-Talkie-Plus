@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/timepicker/TimeFormat;
 .super Ljava/lang/Object;
-.source "TimeFormat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

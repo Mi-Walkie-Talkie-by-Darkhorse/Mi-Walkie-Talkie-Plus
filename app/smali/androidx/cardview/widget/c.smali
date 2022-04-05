@@ -1,6 +1,5 @@
 .class Landroidx/cardview/widget/c;
 .super Ljava/lang/Object;
-.source "CardViewBaseImpl.java"
 
 # interfaces
 .implements Landroidx/cardview/widget/e;
@@ -14,10 +13,8 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
@@ -30,7 +27,6 @@
 .method private a(Landroid/content/Context;Landroid/content/res/ColorStateList;FFF)Landroidx/cardview/widget/g;
     .locals 7
 
-    .line 6
     new-instance v6, Landroidx/cardview/widget/g;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -55,7 +51,6 @@
 .method private j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Landroidx/cardview/widget/d;->c()Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -70,7 +65,6 @@
 .method public a(Landroidx/cardview/widget/d;)F
     .locals 0
 
-    .line 10
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object p1
@@ -85,7 +79,6 @@
 .method public a()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/cardview/widget/c$a;
 
     invoke-direct {v0, p0}, Landroidx/cardview/widget/c$a;-><init>(Landroidx/cardview/widget/c;)V
@@ -98,14 +91,12 @@
 .method public a(Landroidx/cardview/widget/d;F)V
     .locals 1
 
-    .line 8
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object v0
 
     invoke-virtual {v0, p2}, Landroidx/cardview/widget/g;->a(F)V
 
-    .line 9
     invoke-virtual {p0, p1}, Landroidx/cardview/widget/c;->f(Landroidx/cardview/widget/d;)V
 
     return-void
@@ -126,22 +117,18 @@
 
     move v5, p6
 
-    .line 2
     invoke-direct/range {v0 .. v5}, Landroidx/cardview/widget/c;->a(Landroid/content/Context;Landroid/content/res/ColorStateList;FFF)Landroidx/cardview/widget/g;
 
     move-result-object p2
 
-    .line 3
     invoke-interface {p1}, Landroidx/cardview/widget/d;->a()Z
 
     move-result p3
 
     invoke-virtual {p2, p3}, Landroidx/cardview/widget/g;->a(Z)V
 
-    .line 4
     invoke-interface {p1, p2}, Landroidx/cardview/widget/d;->a(Landroid/graphics/drawable/Drawable;)V
 
-    .line 5
     invoke-virtual {p0, p1}, Landroidx/cardview/widget/c;->f(Landroidx/cardview/widget/d;)V
 
     return-void
@@ -154,7 +141,6 @@
         .end annotation
     .end param
 
-    .line 7
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object p1
@@ -167,7 +153,6 @@
 .method public b(Landroidx/cardview/widget/d;)F
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object p1
@@ -182,7 +167,6 @@
 .method public b(Landroidx/cardview/widget/d;F)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object p1
@@ -201,14 +185,12 @@
 .method public c(Landroidx/cardview/widget/d;F)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object v0
 
     invoke-virtual {v0, p2}, Landroidx/cardview/widget/g;->b(F)V
 
-    .line 2
     invoke-virtual {p0, p1}, Landroidx/cardview/widget/c;->f(Landroidx/cardview/widget/d;)V
 
     return-void
@@ -217,7 +199,6 @@
 .method public d(Landroidx/cardview/widget/d;)F
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object p1
@@ -232,7 +213,6 @@
 .method public e(Landroidx/cardview/widget/d;)Landroid/content/res/ColorStateList;
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object p1
@@ -247,19 +227,16 @@
 .method public f(Landroidx/cardview/widget/d;)V
     .locals 4
 
-    .line 1
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    .line 2
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object v1
 
     invoke-virtual {v1, v0}, Landroidx/cardview/widget/g;->a(Landroid/graphics/Rect;)V
 
-    .line 3
     invoke-virtual {p0, p1}, Landroidx/cardview/widget/c;->h(Landroidx/cardview/widget/d;)F
 
     move-result v1
@@ -272,7 +249,6 @@
 
     double-to-int v1, v1
 
-    .line 4
     invoke-virtual {p0, p1}, Landroidx/cardview/widget/c;->g(Landroidx/cardview/widget/d;)F
 
     move-result v2
@@ -285,10 +261,8 @@
 
     double-to-int v2, v2
 
-    .line 5
     invoke-interface {p1, v1, v2}, Landroidx/cardview/widget/d;->a(II)V
 
-    .line 6
     iget v1, v0, Landroid/graphics/Rect;->left:I
 
     iget v2, v0, Landroid/graphics/Rect;->top:I
@@ -305,7 +279,6 @@
 .method public g(Landroidx/cardview/widget/d;)F
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object p1
@@ -320,7 +293,6 @@
 .method public h(Landroidx/cardview/widget/d;)F
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object p1
@@ -335,7 +307,6 @@
 .method public i(Landroidx/cardview/widget/d;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/cardview/widget/c;->j(Landroidx/cardview/widget/d;)Landroidx/cardview/widget/g;
 
     move-result-object v0
@@ -346,7 +317,6 @@
 
     invoke-virtual {v0, v1}, Landroidx/cardview/widget/g;->a(Z)V
 
-    .line 2
     invoke-virtual {p0, p1}, Landroidx/cardview/widget/c;->f(Landroidx/cardview/widget/d;)V
 
     return-void

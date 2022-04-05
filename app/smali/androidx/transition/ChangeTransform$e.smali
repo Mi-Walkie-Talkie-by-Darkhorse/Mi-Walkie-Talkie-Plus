@@ -1,6 +1,5 @@
 .class Landroidx/transition/ChangeTransform$e;
 .super Ljava/lang/Object;
-.source "ChangeTransform.java"
 
 
 # annotations
@@ -30,20 +29,16 @@
 .method constructor <init>(Landroid/view/View;[F)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v0, p0, Landroidx/transition/ChangeTransform$e;->a:Landroid/graphics/Matrix;
 
-    .line 3
     iput-object p1, p0, Landroidx/transition/ChangeTransform$e;->b:Landroid/view/View;
 
-    .line 4
     invoke-virtual {p2}, [F->clone()Ljava/lang/Object;
 
     move-result-object p1
@@ -54,19 +49,16 @@
 
     const/4 p2, 0x2
 
-    .line 5
     aget p2, p1, p2
 
     iput p2, p0, Landroidx/transition/ChangeTransform$e;->d:F
 
     const/4 p2, 0x5
 
-    .line 6
     aget p1, p1, p2
 
     iput p1, p0, Landroidx/transition/ChangeTransform$e;->e:F
 
-    .line 7
     invoke-direct {p0}, Landroidx/transition/ChangeTransform$e;->b()V
 
     return-void
@@ -75,7 +67,6 @@
 .method private b()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/transition/ChangeTransform$e;->c:[F
 
     iget v1, p0, Landroidx/transition/ChangeTransform$e;->d:F
@@ -84,19 +75,16 @@
 
     aput v1, v0, v2
 
-    .line 2
     iget v1, p0, Landroidx/transition/ChangeTransform$e;->e:F
 
     const/4 v2, 0x5
 
     aput v1, v0, v2
 
-    .line 3
     iget-object v1, p0, Landroidx/transition/ChangeTransform$e;->a:Landroid/graphics/Matrix;
 
     invoke-virtual {v1, v0}, Landroid/graphics/Matrix;->setValues([F)V
 
-    .line 4
     iget-object v0, p0, Landroidx/transition/ChangeTransform$e;->b:Landroid/view/View;
 
     iget-object v1, p0, Landroidx/transition/ChangeTransform$e;->a:Landroid/graphics/Matrix;
@@ -111,7 +99,6 @@
 .method a()Landroid/graphics/Matrix;
     .locals 1
 
-    .line 6
     iget-object v0, p0, Landroidx/transition/ChangeTransform$e;->a:Landroid/graphics/Matrix;
 
     return-object v0
@@ -120,17 +107,14 @@
 .method a(Landroid/graphics/PointF;)V
     .locals 1
 
-    .line 3
     iget v0, p1, Landroid/graphics/PointF;->x:F
 
     iput v0, p0, Landroidx/transition/ChangeTransform$e;->d:F
 
-    .line 4
     iget p1, p1, Landroid/graphics/PointF;->y:F
 
     iput p1, p0, Landroidx/transition/ChangeTransform$e;->e:F
 
-    .line 5
     invoke-direct {p0}, Landroidx/transition/ChangeTransform$e;->b()V
 
     return-void
@@ -139,7 +123,6 @@
 .method a([F)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/transition/ChangeTransform$e;->c:[F
 
     array-length v1, p1
@@ -148,7 +131,6 @@
 
     invoke-static {p1, v2, v0, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 2
     invoke-direct {p0}, Landroidx/transition/ChangeTransform$e;->b()V
 
     return-void

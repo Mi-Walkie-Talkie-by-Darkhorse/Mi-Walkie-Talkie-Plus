@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/AppCompatSpinner$a;
 .super Landroidx/appcompat/widget/t;
-.source "AppCompatSpinner.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/AppCompatSpinner;Landroid/view/View;Landroidx/appcompat/widget/AppCompatSpinner$e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->k:Landroidx/appcompat/widget/AppCompatSpinner;
 
     iput-object p3, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->j:Landroidx/appcompat/widget/AppCompatSpinner$e;
@@ -39,7 +37,6 @@
 .method public a()Landroidx/appcompat/view/menu/o;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->j:Landroidx/appcompat/widget/AppCompatSpinner$e;
 
     return-object v0
@@ -53,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->k:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->getInternalPopup()Landroidx/appcompat/widget/AppCompatSpinner$f;
@@ -66,7 +62,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$a;->k:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/AppCompatSpinner;->a()V

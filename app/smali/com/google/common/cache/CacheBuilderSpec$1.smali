@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/common/cache/CacheBuilderSpec$1;
 .super Ljava/lang/Object;
-.source "CacheBuilderSpec.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/common/cache/LocalCache$Strength;->values()[Lcom/google/common/cache/LocalCache$Strength;
 
     move-result-object v0

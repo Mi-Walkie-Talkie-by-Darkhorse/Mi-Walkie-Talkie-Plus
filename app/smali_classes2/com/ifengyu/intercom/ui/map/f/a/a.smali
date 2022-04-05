@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/map/f/a/a;
 .super Lcom/ifengyu/intercom/ui/map/f/a/e;
-.source "MapTileProvider.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method public constructor <init>(Landroid/content/Context;Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/osmdroid/tileprovider/util/SimpleRegisterReceiver;
 
     invoke-direct {v0, p1}, Lorg/osmdroid/tileprovider/util/SimpleRegisterReceiver;-><init>(Landroid/content/Context;)V
@@ -40,17 +38,14 @@
 
     move-object v4, p4
 
-    .line 2
     invoke-direct/range {v0 .. v5}, Lcom/ifengyu/intercom/ui/map/f/a/e;-><init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;Lorg/osmdroid/tileprovider/modules/INetworkAvailablityCheck;Lorg/osmdroid/tileprovider/tilesource/ITileSource;Landroid/content/Context;Lorg/osmdroid/tileprovider/modules/IFilesystemCache;)V
 
-    .line 3
     new-instance p2, Lcom/ifengyu/intercom/ui/map/f/a/g;
 
     invoke-direct {p2, p1, p3}, Lcom/ifengyu/intercom/ui/map/f/a/g;-><init>(Lorg/osmdroid/tileprovider/IRegisterReceiver;Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/map/f/a/a;->b:Lcom/ifengyu/intercom/ui/map/f/a/g;
 
-    .line 4
     iget-object p1, p0, Lorg/osmdroid/tileprovider/MapTileProviderArray;->mTileProviderList:Ljava/util/List;
 
     const/4 p3, 0x1
@@ -69,7 +64,6 @@
 
     const-wide/high16 v2, 0x4000000000000000L    # 2.0
 
-    .line 1
     invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v4
@@ -92,7 +86,6 @@
 
     div-double/2addr p0, v6
 
-    .line 2
     invoke-static {v2, v3, v0, v1}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v0
@@ -121,7 +114,6 @@
 
     double-to-int p0, v0
 
-    .line 3
     new-instance p1, Lcom/ifengyu/intercom/ui/map/TilePoint;
 
     invoke-direct {p1, p2, p0, p4}, Lcom/ifengyu/intercom/ui/map/TilePoint;-><init>(III)V
@@ -132,7 +124,6 @@
 .method public static a(Lcom/ifengyu/intercom/greendao/bean/a;I)[Lcom/ifengyu/intercom/ui/map/TilePoint;
     .locals 6
 
-    .line 4
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {p0}, Lcom/ifengyu/intercom/greendao/bean/a;->g()Ljava/lang/Double;
@@ -155,7 +146,6 @@
 
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
-    .line 5
     invoke-virtual {p0}, Lcom/ifengyu/intercom/greendao/bean/a;->f()Ljava/lang/Double;
 
     move-result-object v2
@@ -174,7 +164,6 @@
 
     invoke-direct {v1, v2, v3, v4, v5}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
-    .line 6
     invoke-static {v0, v1, p1}, Lcom/ifengyu/intercom/ui/map/f/a/a;->a(Lorg/osmdroid/util/GeoPoint;Lorg/osmdroid/util/GeoPoint;I)[Lcom/ifengyu/intercom/ui/map/TilePoint;
 
     move-result-object p0
@@ -185,7 +174,6 @@
 .method public static a(Lorg/osmdroid/util/GeoPoint;Lorg/osmdroid/util/GeoPoint;I)[Lcom/ifengyu/intercom/ui/map/TilePoint;
     .locals 6
 
-    .line 7
     invoke-virtual {p0}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v0
@@ -198,7 +186,6 @@
 
     move-result-object p0
 
-    .line 8
     invoke-virtual {p1}, Lorg/osmdroid/util/GeoPoint;->getLatitude()D
 
     move-result-wide v0
@@ -211,7 +198,6 @@
 
     move-result-object p1
 
-    .line 9
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/TilePoint;->a()I
 
     move-result v0
@@ -224,7 +210,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 10
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/map/TilePoint;->b()I
 
     move-result v1
@@ -241,7 +226,6 @@
 
     new-array v1, v1, [Lcom/ifengyu/intercom/ui/map/TilePoint;
 
-    .line 11
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/map/TilePoint;->b()I
 
     move-result v2
@@ -253,7 +237,6 @@
 
     if-gt v2, v3, :cond_1
 
-    .line 12
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/map/TilePoint;->a()I
 
     move-result v3
@@ -265,7 +248,6 @@
 
     if-gt v3, v4, :cond_0
 
-    .line 13
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/map/TilePoint;->a()I
 
     move-result v4

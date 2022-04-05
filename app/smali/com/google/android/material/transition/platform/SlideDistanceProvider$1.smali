@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/transition/platform/SlideDistanceProvider$1;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "SlideDistanceProvider.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Landroid/view/View;F)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/platform/SlideDistanceProvider$1;->val$view:Landroid/view/View;
 
     iput p2, p0, Lcom/google/android/material/transition/platform/SlideDistanceProvider$1;->val$originalTranslation:F
@@ -39,7 +37,6 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/transition/platform/SlideDistanceProvider$1;->val$view:Landroid/view/View;
 
     iget v0, p0, Lcom/google/android/material/transition/platform/SlideDistanceProvider$1;->val$originalTranslation:F

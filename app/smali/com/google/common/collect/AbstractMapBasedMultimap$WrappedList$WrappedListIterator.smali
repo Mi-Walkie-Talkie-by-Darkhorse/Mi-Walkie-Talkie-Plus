@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;
 .super Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection$WrappedIterator;
-.source "AbstractMapBasedMultimap.java"
 
 # interfaces
 .implements Ljava/util/ListIterator;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection$WrappedIterator;-><init>(Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;)V
@@ -45,10 +43,8 @@
 .method public constructor <init>(Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;I)V
     .locals 1
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;->getListDelegate()Ljava/util/List;
 
     move-result-object v0
@@ -72,7 +68,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection$WrappedIterator;->getDelegateIterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -92,21 +87,18 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
 
     invoke-virtual {v0}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v1
 
     invoke-interface {v1, p1}, Ljava/util/ListIterator;->add(Ljava/lang/Object;)V
 
-    .line 3
     iget-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
 
     iget-object p1, p1, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;->this$0:Lcom/google/common/collect/AbstractMapBasedMultimap;
@@ -115,7 +107,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->this$1:Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList;
 
     invoke-virtual {p1}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedCollection;->addToMap()V
@@ -127,7 +118,6 @@
 .method public hasPrevious()Z
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -142,7 +132,6 @@
 .method public nextIndex()I
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -162,7 +151,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -177,7 +165,6 @@
 .method public previousIndex()I
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -197,7 +184,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMapBasedMultimap$WrappedList$WrappedListIterator;->getDelegateListIterator()Ljava/util/ListIterator;
 
     move-result-object v0

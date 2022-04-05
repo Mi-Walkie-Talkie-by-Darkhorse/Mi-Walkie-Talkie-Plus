@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/FolderOverlay;
 .super Lorg/osmdroid/views/overlay/Overlay;
-.source "FolderOverlay.java"
 
 
 # instance fields
@@ -15,10 +14,8 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 2
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/Overlay;-><init>()V
 
-    .line 3
     new-instance v0, Lorg/osmdroid/views/overlay/DefaultOverlayManager;
 
     const/4 v1, 0x0
@@ -29,10 +26,8 @@
 
     const-string v0, ""
 
-    .line 4
     iput-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mName:Ljava/lang/String;
 
-    .line 5
     iput-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mDescription:Ljava/lang/String;
 
     return-void
@@ -43,7 +38,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/FolderOverlay;-><init>()V
 
     return-void
@@ -54,7 +48,6 @@
 .method public add(Lorg/osmdroid/views/overlay/Overlay;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -67,7 +60,6 @@
 .method public closeAllInfoWindows()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -88,25 +80,21 @@
 
     check-cast v1, Lorg/osmdroid/views/overlay/Overlay;
 
-    .line 2
     instance-of v2, v1, Lorg/osmdroid/views/overlay/FolderOverlay;
 
     if-eqz v2, :cond_1
 
-    .line 3
     check-cast v1, Lorg/osmdroid/views/overlay/FolderOverlay;
 
     invoke-virtual {v1}, Lorg/osmdroid/views/overlay/FolderOverlay;->closeAllInfoWindows()V
 
     goto :goto_0
 
-    .line 4
     :cond_1
     instance-of v2, v1, Lorg/osmdroid/views/overlay/OverlayWithIW;
 
     if-eqz v2, :cond_0
 
-    .line 5
     check-cast v1, Lorg/osmdroid/views/overlay/OverlayWithIW;
 
     invoke-virtual {v1}, Lorg/osmdroid/views/overlay/OverlayWithIW;->closeInfoWindow()V
@@ -129,7 +117,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget-object p3, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
@@ -141,7 +128,6 @@
 .method public getDescription()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mDescription:Ljava/lang/String;
 
     return-object v0
@@ -158,7 +144,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     return-object v0
@@ -167,7 +152,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mName:Ljava/lang/String;
 
     return-object v0
@@ -176,18 +160,15 @@
 .method public onDetach(Lorg/osmdroid/views/MapView;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Lorg/osmdroid/views/overlay/OverlayManager;->onDetach(Lorg/osmdroid/views/MapView;)V
 
     :cond_0
     const/4 p1, 0x0
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     return-void
@@ -196,14 +177,12 @@
 .method public onLongPress(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/Overlay;->isEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     invoke-interface {v0, p1, p2}, Lorg/osmdroid/views/overlay/OverlayManager;->onLongPress(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
@@ -221,14 +200,12 @@
 .method public onSingleTapConfirmed(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/Overlay;->isEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     invoke-interface {v0, p1, p2}, Lorg/osmdroid/views/overlay/OverlayManager;->onSingleTapConfirmed(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
@@ -246,14 +223,12 @@
 .method public onSingleTapUp(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/Overlay;->isEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     invoke-interface {v0, p1, p2}, Lorg/osmdroid/views/overlay/OverlayManager;->onSingleTapUp(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
@@ -271,14 +246,12 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/Overlay;->isEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     invoke-interface {v0, p1, p2}, Lorg/osmdroid/views/overlay/OverlayManager;->onTouchEvent(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
@@ -296,7 +269,6 @@
 .method public remove(Lorg/osmdroid/views/overlay/Overlay;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mOverlayManager:Lorg/osmdroid/views/overlay/OverlayManager;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
@@ -309,7 +281,6 @@
 .method public setDescription(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mDescription:Ljava/lang/String;
 
     return-void
@@ -318,7 +289,6 @@
 .method public setName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/FolderOverlay;->mName:Ljava/lang/String;
 
     return-void

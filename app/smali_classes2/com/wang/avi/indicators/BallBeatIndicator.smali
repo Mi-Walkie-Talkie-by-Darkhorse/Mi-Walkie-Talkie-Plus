@@ -1,6 +1,5 @@
 .class public Lcom/wang/avi/indicators/BallBeatIndicator;
 .super Lcom/wang/avi/Indicator;
-.source "BallBeatIndicator.java"
 
 
 # static fields
@@ -19,21 +18,18 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/wang/avi/Indicator;-><init>()V
 
     const/4 v0, 0x3
 
     new-array v1, v0, [F
 
-    .line 2
     fill-array-data v1, :array_0
 
     iput-object v1, p0, Lcom/wang/avi/indicators/BallBeatIndicator;->scaleFloats:[F
 
     new-array v0, v0, [I
 
-    .line 3
     fill-array-data v0, :array_1
 
     iput-object v0, p0, Lcom/wang/avi/indicators/BallBeatIndicator;->alphas:[I
@@ -60,7 +56,6 @@
 .method static synthetic access$000(Lcom/wang/avi/indicators/BallBeatIndicator;)[F
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/wang/avi/indicators/BallBeatIndicator;->scaleFloats:[F
 
     return-object p0
@@ -71,7 +66,6 @@
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 8
 
-    .line 1
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v0
@@ -86,7 +80,6 @@
 
     div-float/2addr v0, v1
 
-    .line 2
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v1
@@ -105,7 +98,6 @@
 
     sub-float/2addr v1, v4
 
-    .line 3
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getHeight()I
 
     move-result v4
@@ -121,7 +113,6 @@
 
     if-ge v5, v6, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     int-to-float v6, v5
@@ -134,10 +125,8 @@
 
     add-float/2addr v7, v6
 
-    .line 5
     invoke-virtual {p1, v7, v4}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 6
     iget-object v6, p0, Lcom/wang/avi/indicators/BallBeatIndicator;->scaleFloats:[F
 
     aget v7, v6, v5
@@ -146,7 +135,6 @@
 
     invoke-virtual {p1, v7, v6}, Landroid/graphics/Canvas;->scale(FF)V
 
-    .line 7
     iget-object v6, p0, Lcom/wang/avi/indicators/BallBeatIndicator;->alphas:[I
 
     aget v6, v6, v5
@@ -155,10 +143,8 @@
 
     const/4 v6, 0x0
 
-    .line 8
     invoke-virtual {p1, v6, v6, v0, p2}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 9
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     add-int/lit8 v5, v5, 0x1
@@ -180,7 +166,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -189,7 +174,6 @@
 
     new-array v2, v1, [I
 
-    .line 2
     fill-array-data v2, :array_0
 
     const/4 v3, 0x0
@@ -199,7 +183,6 @@
 
     new-array v4, v1, [F
 
-    .line 3
     fill-array-data v4, :array_1
 
     invoke-static {v4}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
@@ -208,22 +191,18 @@
 
     const-wide/16 v5, 0x2bc
 
-    .line 4
     invoke-virtual {v4, v5, v6}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     const/4 v7, -0x1
 
-    .line 5
     invoke-virtual {v4, v7}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 6
     aget v8, v2, v3
 
     int-to-long v8, v8
 
     invoke-virtual {v4, v8, v9}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
 
-    .line 7
     new-instance v8, Lcom/wang/avi/indicators/BallBeatIndicator$1;
 
     invoke-direct {v8, p0, v3}, Lcom/wang/avi/indicators/BallBeatIndicator$1;-><init>(Lcom/wang/avi/indicators/BallBeatIndicator;I)V
@@ -232,37 +211,30 @@
 
     new-array v8, v1, [I
 
-    .line 8
     fill-array-data v8, :array_2
 
     invoke-static {v8}, Landroid/animation/ValueAnimator;->ofInt([I)Landroid/animation/ValueAnimator;
 
     move-result-object v8
 
-    .line 9
     invoke-virtual {v8, v5, v6}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 10
     invoke-virtual {v8, v7}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 11
     aget v5, v2, v3
 
     int-to-long v5, v5
 
     invoke-virtual {v8, v5, v6}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
 
-    .line 12
     new-instance v5, Lcom/wang/avi/indicators/BallBeatIndicator$2;
 
     invoke-direct {v5, p0, v3}, Lcom/wang/avi/indicators/BallBeatIndicator$2;-><init>(Lcom/wang/avi/indicators/BallBeatIndicator;I)V
 
     invoke-virtual {p0, v8, v5}, Lcom/wang/avi/Indicator;->addUpdateListener(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 13
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 14
     invoke-virtual {v0, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v3, v3, 0x1

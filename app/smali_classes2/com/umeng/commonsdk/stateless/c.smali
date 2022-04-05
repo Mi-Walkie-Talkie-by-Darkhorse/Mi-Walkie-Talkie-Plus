@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/stateless/c;
 .super Ljava/lang/Object;
-.source "UMSLNetWorkSenderHelper.java"
 
 
 # instance fields
@@ -15,20 +14,16 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "10.0.0.172"
 
-    .line 2
     iput-object v0, p0, Lcom/umeng/commonsdk/stateless/c;->a:Ljava/lang/String;
 
     const/16 v0, 0x50
 
-    .line 3
     iput v0, p0, Lcom/umeng/commonsdk/stateless/c;->b:I
 
-    .line 4
     iput-object p1, p0, Lcom/umeng/commonsdk/stateless/c;->c:Landroid/content/Context;
 
     return-void
@@ -37,7 +32,6 @@
 .method private a()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/stateless/c;->c:Landroid/content/Context;
 
     const-string v1, "sl_domain_p"
@@ -48,14 +42,12 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 3
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->assembleStatelessURL(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -69,7 +61,6 @@
 .method private b()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/stateless/c;->c:Landroid/content/Context;
 
     const-string v1, ""
@@ -80,7 +71,6 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v2, p0, Lcom/umeng/commonsdk/stateless/c;->c:Landroid/content/Context;
 
     const-string v3, "oversea_sl_domain_p"
@@ -89,21 +79,18 @@
 
     move-result-object v1
 
-    .line 3
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 4
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->assembleStatelessURL(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     sput-object v0, Lcom/umeng/commonsdk/stateless/a;->h:Ljava/lang/String;
 
-    .line 5
     :cond_0
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -111,20 +98,17 @@
 
     if-nez v0, :cond_1
 
-    .line 6
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->assembleStatelessURL(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     sput-object v0, Lcom/umeng/commonsdk/stateless/a;->k:Ljava/lang/String;
 
-    .line 7
     :cond_1
     sget-object v0, Lcom/umeng/commonsdk/stateless/a;->k:Ljava/lang/String;
 
     sput-object v0, Lcom/umeng/commonsdk/stateless/a;->i:Ljava/lang/String;
 
-    .line 8
     sget-object v0, Lcom/umeng/commonsdk/statistics/b;->b:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -133,7 +117,6 @@
 
     if-nez v0, :cond_3
 
-    .line 9
     sget-object v0, Lcom/umeng/commonsdk/statistics/b;->b:Ljava/lang/String;
 
     const-string v1, "460"
@@ -154,7 +137,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 10
     :cond_2
     sget-object v0, Lcom/umeng/commonsdk/stateless/a;->h:Ljava/lang/String;
 
@@ -167,29 +149,24 @@
 .method private c()Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/stateless/c;->c:Landroid/content/Context;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_4
 
-    .line 2
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    .line 3
     iget-object v2, p0, Lcom/umeng/commonsdk/stateless/c;->c:Landroid/content/Context;
 
-    .line 4
     invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, "android.permission.ACCESS_NETWORK_STATE"
 
-    .line 5
     invoke-virtual {v0, v3, v2}, Landroid/content/pm/PackageManager;->checkPermission(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
@@ -198,21 +175,18 @@
 
     return v1
 
-    .line 6
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/umeng/commonsdk/stateless/c;->c:Landroid/content/Context;
 
     const-string v2, "connectivity"
 
-    .line 7
     invoke-virtual {v0, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/net/ConnectivityManager;
 
-    .line 8
     iget-object v2, p0, Lcom/umeng/commonsdk/stateless/c;->c:Landroid/content/Context;
 
     invoke-static {v2, v3}, Lcom/umeng/commonsdk/statistics/common/DeviceConfig;->checkPermission(Landroid/content/Context;Ljava/lang/String;)Z
@@ -228,7 +202,6 @@
 
     return v1
 
-    .line 9
     :cond_2
     invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
@@ -236,7 +209,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 10
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->getType()I
 
     move-result v2
@@ -245,7 +217,6 @@
 
     if-eq v2, v3, :cond_4
 
-    .line 11
     invoke-virtual {v0}, Landroid/net/NetworkInfo;->getExtraInfo()Ljava/lang/String;
 
     move-result-object v0
@@ -254,7 +225,6 @@
 
     const-string v2, "cmwap"
 
-    .line 12
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -285,7 +255,6 @@
     :catchall_0
     move-exception v0
 
-    .line 13
     iget-object v2, p0, Lcom/umeng/commonsdk/stateless/c;->c:Landroid/content/Context;
 
     invoke-static {v2, v0}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
@@ -313,31 +282,25 @@
 
     goto/16 :goto_b
 
-    .line 4
     :cond_0
     sget v4, Lcom/umeng/commonsdk/statistics/SdkVersion;->SDK_TYPE:I
 
     if-nez v4, :cond_1
 
-    .line 5
     invoke-direct {p0}, Lcom/umeng/commonsdk/stateless/c;->a()V
 
     goto :goto_0
 
-    .line 6
     :cond_1
     sget-object v4, Lcom/umeng/commonsdk/stateless/a;->k:Ljava/lang/String;
 
     sput-object v4, Lcom/umeng/commonsdk/stateless/a;->h:Ljava/lang/String;
 
-    .line 7
     invoke-direct {p0}, Lcom/umeng/commonsdk/stateless/c;->b()V
 
-    .line 8
     :goto_0
     sget-object v4, Lcom/umeng/commonsdk/stateless/a;->i:Ljava/lang/String;
 
-    .line 9
     invoke-static {p3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
@@ -352,7 +315,6 @@
     :goto_1
     const/4 v4, 0x0
 
-    .line 10
     :try_start_0
     invoke-direct {p0}, Lcom/umeng/commonsdk/stateless/c;->c()Z
 
@@ -360,7 +322,6 @@
 
     if-eqz v5, :cond_3
 
-    .line 11
     new-instance v5, Ljava/net/Proxy;
 
     sget-object v6, Ljava/net/Proxy$Type;->HTTP:Ljava/net/Proxy$Type;
@@ -375,7 +336,6 @@
 
     invoke-direct {v5, v6, v7}, Ljava/net/Proxy;-><init>(Ljava/net/Proxy$Type;Ljava/net/SocketAddress;)V
 
-    .line 12
     new-instance v6, Ljava/net/URL;
 
     new-instance v7, Ljava/lang/StringBuilder;
@@ -404,7 +364,6 @@
 
     goto :goto_2
 
-    .line 13
     :cond_3
     new-instance v5, Ljava/net/URL;
 
@@ -435,7 +394,6 @@
     .catch Ljavax/net/ssl/SSLHandshakeException; {:try_start_0 .. :try_end_0} :catch_3
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 14
     :goto_2
     :try_start_1
     sget-object v5, Lorg/apache/http/conn/ssl/SSLSocketFactory;->STRICT_HOSTNAME_VERIFIER:Lorg/apache/http/conn/ssl/X509HostnameVerifier;
@@ -444,19 +402,16 @@
 
     const-string v5, "TLS"
 
-    .line 15
     invoke-static {v5}, Ljavax/net/ssl/SSLContext;->getInstance(Ljava/lang/String;)Ljavax/net/ssl/SSLContext;
 
     move-result-object v5
 
-    .line 16
     new-instance v6, Ljava/security/SecureRandom;
 
     invoke-direct {v6}, Ljava/security/SecureRandom;-><init>()V
 
     invoke-virtual {v5, v4, v4, v6}, Ljavax/net/ssl/SSLContext;->init([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V
 
-    .line 17
     invoke-virtual {v5}, Ljavax/net/ssl/SSLContext;->getSocketFactory()Ljavax/net/ssl/SSLSocketFactory;
 
     move-result-object v5
@@ -465,7 +420,6 @@
 
     const-string v5, "X-Umeng-UTC"
 
-    .line 18
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v6
@@ -480,12 +434,10 @@
 
     const-string v6, "envelope/json"
 
-    .line 19
     invoke-virtual {p3, v5, v6}, Ljavax/net/ssl/HttpsURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v5, "Content-Type"
 
-    .line 20
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -504,41 +456,30 @@
 
     const/16 p4, 0x7530
 
-    .line 21
     invoke-virtual {p3, p4}, Ljavax/net/ssl/HttpsURLConnection;->setConnectTimeout(I)V
 
-    .line 22
     invoke-virtual {p3, p4}, Ljavax/net/ssl/HttpsURLConnection;->setReadTimeout(I)V
 
     const-string p4, "POST"
 
-    .line 23
     invoke-virtual {p3, p4}, Ljavax/net/ssl/HttpsURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
-    .line 24
     invoke-virtual {p3, v3}, Ljavax/net/ssl/HttpsURLConnection;->setDoOutput(Z)V
 
-    .line 25
     invoke-virtual {p3, v3}, Ljavax/net/ssl/HttpsURLConnection;->setDoInput(Z)V
 
-    .line 26
     invoke-virtual {p3, v2}, Ljavax/net/ssl/HttpsURLConnection;->setUseCaches(Z)V
 
-    .line 27
     invoke-virtual {p3}, Ljavax/net/ssl/HttpsURLConnection;->getOutputStream()Ljava/io/OutputStream;
 
     move-result-object v4
 
-    .line 28
     invoke-virtual {v4, p1}, Ljava/io/OutputStream;->write([B)V
 
-    .line 29
     invoke-virtual {v4}, Ljava/io/OutputStream;->flush()V
 
-    .line 30
     invoke-virtual {p3}, Ljavax/net/ssl/HttpsURLConnection;->connect()V
 
-    .line 31
     invoke-virtual {p3}, Ljavax/net/ssl/HttpsURLConnection;->getResponseCode()I
 
     move-result p1
@@ -547,7 +488,6 @@
 
     if-ne p1, p4, :cond_4
 
-    .line 32
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -580,7 +520,6 @@
     :cond_4
     if-eqz v4, :cond_5
 
-    .line 33
     :try_start_2
     invoke-virtual {v4}, Ljava/io/OutputStream;->close()V
     :try_end_2
@@ -595,12 +534,10 @@
     :goto_3
     if-eqz p3, :cond_8
 
-    .line 34
     :goto_4
     :try_start_3
     invoke-static {v1, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 35
     invoke-virtual {p3}, Ljavax/net/ssl/HttpsURLConnection;->disconnect()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
@@ -626,14 +563,12 @@
     :try_start_4
     const-string p2, "Exception,Failed to send message."
 
-    .line 36
     invoke-static {p2, p1}, Lcom/umeng/commonsdk/statistics/common/MLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_3
 
     if-eqz v4, :cond_6
 
-    .line 37
     :try_start_5
     invoke-virtual {v4}, Ljava/io/OutputStream;->close()V
     :try_end_5
@@ -659,14 +594,12 @@
     :try_start_6
     const-string p2, "SSLHandshakeException, Failed to send message."
 
-    .line 38
     invoke-static {p2, p1}, Lcom/umeng/commonsdk/statistics/common/MLog;->e(Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_3
 
     if-eqz v4, :cond_7
 
-    .line 39
     :try_start_7
     invoke-virtual {v4}, Ljava/io/OutputStream;->close()V
     :try_end_7
@@ -707,16 +640,13 @@
     :goto_a
     if-eqz p3, :cond_a
 
-    .line 40
     :try_start_9
     invoke-static {v1, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 41
     invoke-virtual {p3}, Ljavax/net/ssl/HttpsURLConnection;->disconnect()V
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_4
 
-    .line 42
     :catchall_4
     :cond_a
     throw p1
@@ -731,7 +661,6 @@
 
     const-string p2, "walle"
 
-    .line 43
     invoke-static {p2, p1}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;[Ljava/lang/Object;)V
 
     return v2

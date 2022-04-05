@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;
 .super Landroid/view/View;
-.source "WaterRippleView.java"
 
 
 # instance fields
@@ -29,7 +28,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -44,7 +42,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -57,15 +54,12 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 p3, 0x0
 
-    .line 4
     iput-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->a:Z
 
-    .line 5
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -74,7 +68,6 @@
 .method private a()V
     .locals 4
 
-    .line 12
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->d:I
 
     new-array v0, v0, [I
@@ -83,7 +76,6 @@
 
     const/4 v0, 0x0
 
-    .line 13
     :goto_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->b:[I
 
@@ -91,7 +83,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 14
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->c:I
 
     neg-int v2, v2
@@ -115,7 +106,6 @@
 .method private a(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/R$styleable;->WaterRippleView:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -124,14 +114,12 @@
 
     const/4 p2, 0x1
 
-    .line 2
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     const/4 v1, 0x2
 
-    .line 3
     invoke-virtual {p1, v1, v1}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v1
@@ -142,7 +130,6 @@
 
     const/16 v2, 0x10
 
-    .line 4
     invoke-virtual {p1, v1, v2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v1
@@ -151,17 +138,14 @@
 
     const/4 v1, 0x0
 
-    .line 5
     invoke-virtual {p1, v1, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result v1
 
     iput-boolean v1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->a:Z
 
-    .line 6
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 7
     check-cast v0, Landroid/graphics/drawable/BitmapDrawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
@@ -170,19 +154,16 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->g:Landroid/graphics/Bitmap;
 
-    .line 8
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->f:Landroid/graphics/Paint;
 
-    .line 9
     sget-object v0, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
@@ -197,7 +178,6 @@
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 11
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setAntiAlias(Z)V
@@ -208,7 +188,6 @@
 .method private a(Landroid/graphics/Canvas;)V
     .locals 4
 
-    .line 15
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->h:I
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->g:Landroid/graphics/Bitmap;
@@ -221,7 +200,6 @@
 
     div-int/lit8 v0, v0, 0x2
 
-    .line 16
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->i:I
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->g:Landroid/graphics/Bitmap;
@@ -234,7 +212,6 @@
 
     div-int/lit8 v1, v1, 0x2
 
-    .line 17
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->g:Landroid/graphics/Bitmap;
 
     int-to-float v0, v0
@@ -251,7 +228,6 @@
 .method private b(Landroid/graphics/Canvas;)V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->b:[I
 
     array-length v1, v0
@@ -269,7 +245,6 @@
 
     goto :goto_1
 
-    .line 2
     :cond_0
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->f:Landroid/graphics/Paint;
 
@@ -277,7 +252,6 @@
 
     invoke-virtual {v5, v6}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 3
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->f:Landroid/graphics/Paint;
 
     mul-int/lit16 v6, v4, 0xff
@@ -290,7 +264,6 @@
 
     invoke-virtual {v5, v6}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 4
     iget v5, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->h:I
 
     div-int/lit8 v5, v5, 0x2
@@ -327,7 +300,6 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 5
     :goto_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->b:[I
 
@@ -335,7 +307,6 @@
 
     if-ge p1, v1, :cond_3
 
-    .line 6
     aget v1, v0, p1
 
     add-int/lit8 v1, v1, 0x3
@@ -346,7 +317,6 @@
 
     if-le v1, v3, :cond_2
 
-    .line 7
     aput v2, v0, p1
 
     :cond_2
@@ -369,10 +339,8 @@
 
     const/4 v0, 0x1
 
-    .line 18
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->a:Z
 
-    .line 19
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -383,7 +351,6 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->g:Landroid/graphics/Bitmap;
 
-    .line 20
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
@@ -396,7 +363,6 @@
         .end annotation
     .end param
 
-    .line 8
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -409,13 +375,10 @@
 
     const/4 p1, 0x0
 
-    .line 9
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->a:Z
 
-    .line 10
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->a()V
 
-    .line 11
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
@@ -424,20 +387,16 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->a(Landroid/graphics/Canvas;)V
 
-    .line 2
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->b(Landroid/graphics/Canvas;)V
 
     const-wide/16 v0, 0xa
 
-    .line 4
     invoke-virtual {p0, v0, v1}, Landroid/view/View;->postInvalidateDelayed(J)V
 
     :cond_0
@@ -447,10 +406,8 @@
 .method protected onMeasure(II)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->d:I
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->e:I
@@ -469,26 +426,22 @@
 
     mul-int/lit8 v0, v0, 0x2
 
-    .line 3
     invoke-static {v0, p1}, Landroid/view/View;->resolveSize(II)I
 
     move-result p1
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->h:I
 
-    .line 4
     invoke-static {v0, p2}, Landroid/view/View;->resolveSize(II)I
 
     move-result p1
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->i:I
 
-    .line 5
     iget p2, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->h:I
 
     invoke-virtual {p0, p2, p1}, Landroid/view/View;->setMeasuredDimension(II)V
 
-    .line 6
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->h:I
 
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->g:Landroid/graphics/Bitmap;
@@ -503,7 +456,6 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->c:I
 
-    .line 7
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->a()V
 
     return-void

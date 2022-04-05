@@ -1,6 +1,5 @@
 .class public abstract Lcom/liulishuo/okdownload/core/listener/DownloadListener4;
 .super Ljava/lang/Object;
-.source "DownloadListener4.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/DownloadListener;
@@ -24,7 +23,6 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 4
     new-instance v0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
     new-instance v1, Lcom/liulishuo/okdownload/core/listener/DownloadListener4$Listener4ModelCreator;
@@ -41,13 +39,10 @@
 .method constructor <init>(Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;->assist:Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
-    .line 3
     invoke-virtual {p1, p0}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;->setCallback(Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Callback;)V
 
     return-void
@@ -121,7 +116,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p3, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;->assist:Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
     const/4 v0, 0x0
@@ -142,7 +136,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;->assist:Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
     const/4 v1, 0x1
@@ -159,7 +152,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p3, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;->assist:Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
     invoke-virtual {p3, p1, p2}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;->fetchEnd(Lcom/liulishuo/okdownload/DownloadTask;I)V
@@ -174,7 +166,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;->assist:Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;->fetchProgress(Lcom/liulishuo/okdownload/DownloadTask;IJ)V
@@ -195,7 +186,6 @@
 .method public isAlwaysRecoverAssistModel()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;->assist:Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;->isAlwaysRecoverAssistModel()Z
@@ -208,7 +198,6 @@
 .method public setAlwaysRecoverAssistModel(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;->assist:Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
     invoke-virtual {v0, p1}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;->setAlwaysRecoverAssistModel(Z)V
@@ -219,7 +208,6 @@
 .method public setAlwaysRecoverAssistModelIfNotSet(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;->assist:Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
     invoke-virtual {v0, p1}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;->setAlwaysRecoverAssistModelIfNotSet(Z)V
@@ -234,7 +222,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;->assist:Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
     invoke-virtual {v0, p1}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;->setAssistExtend(Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$AssistExtend;)V
@@ -257,7 +244,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/DownloadListener4;->assist:Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist;->taskEnd(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/cause/EndCause;Ljava/lang/Exception;)V

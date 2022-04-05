@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;
 .super Landroid/view/View;
-.source "NumberPickerView.java"
 
 
 # annotations
@@ -182,211 +181,154 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
     const v0, -0xcccccd
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a:I
 
     const v0, -0xff8901
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b:I
 
-    .line 4
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c:I
 
     const/4 v0, 0x0
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
-    .line 6
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
 
-    .line 7
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->f:I
 
-    .line 8
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g:I
 
-    .line 9
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h:I
 
-    .line 10
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->i:I
 
-    .line 11
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->j:I
 
-    .line 12
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->k:I
 
-    .line 13
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->l:I
 
     const v1, -0xa9ced
 
-    .line 14
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->m:I
 
     const/4 v1, 0x2
 
-    .line 15
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n:I
 
-    .line 16
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o:I
 
-    .line 17
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->p:I
 
     const/4 v1, 0x3
 
-    .line 18
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
-    .line 19
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->r:I
 
-    .line 20
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->s:I
 
     const/4 v1, -0x1
 
-    .line 21
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
-    .line 22
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u:I
 
-    .line 23
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v:I
 
-    .line 24
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->w:I
 
-    .line 25
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->x:I
 
-    .line 26
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y:I
 
-    .line 27
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->z:I
 
-    .line 28
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->A:I
 
-    .line 29
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
 
     const/16 v1, 0x96
 
-    .line 30
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C:I
 
     const/16 v1, 0x8
 
-    .line 31
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D:I
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 32
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->I:F
 
     const/4 v1, 0x0
 
-    .line 33
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->J:F
 
-    .line 34
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->K:F
 
-    .line 35
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->L:F
 
     const/4 v2, 0x1
 
-    .line 36
     iput-boolean v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->M:Z
 
-    .line 37
     iput-boolean v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
-    .line 38
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->O:Z
 
-    .line 39
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->P:Z
 
-    .line 40
     iput-boolean v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->Q:Z
 
-    .line 41
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->R:Z
 
-    .line 42
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->S:Z
 
-    .line 43
     iput-boolean v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->T:Z
 
-    .line 44
     new-instance v2, Landroid/graphics/Paint;
 
     invoke-direct {v2}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->W:Landroid/graphics/Paint;
 
-    .line 45
     new-instance v2, Landroid/text/TextPaint;
 
     invoke-direct {v2}, Landroid/text/TextPaint;-><init>()V
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
-    .line 46
     new-instance v2, Landroid/graphics/Paint;
 
     invoke-direct {v2}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
-    .line 47
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n0:I
 
-    .line 48
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->s0:F
 
-    .line 49
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t0:F
 
-    .line 50
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u0:F
 
-    .line 51
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v0:Z
 
-    .line 52
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C0:I
 
-    .line 53
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D0:I
 
-    .line 54
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
-    .line 55
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->F0:I
 
-    .line 56
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->G0:I
 
-    .line 57
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Landroid/content/Context;)V
 
     return-void
@@ -395,214 +337,156 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 3
 
-    .line 58
     invoke-direct {p0, p1, p2}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const v0, -0xcccccd
 
-    .line 59
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a:I
 
     const v0, -0xff8901
 
-    .line 60
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b:I
 
-    .line 61
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c:I
 
     const/4 v0, 0x0
 
-    .line 62
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
-    .line 63
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
 
-    .line 64
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->f:I
 
-    .line 65
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g:I
 
-    .line 66
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h:I
 
-    .line 67
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->i:I
 
-    .line 68
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->j:I
 
-    .line 69
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->k:I
 
-    .line 70
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->l:I
 
     const v1, -0xa9ced
 
-    .line 71
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->m:I
 
     const/4 v1, 0x2
 
-    .line 72
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n:I
 
-    .line 73
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o:I
 
-    .line 74
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->p:I
 
     const/4 v1, 0x3
 
-    .line 75
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
-    .line 76
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->r:I
 
-    .line 77
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->s:I
 
     const/4 v1, -0x1
 
-    .line 78
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
-    .line 79
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u:I
 
-    .line 80
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v:I
 
-    .line 81
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->w:I
 
-    .line 82
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->x:I
 
-    .line 83
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y:I
 
-    .line 84
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->z:I
 
-    .line 85
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->A:I
 
-    .line 86
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
 
     const/16 v1, 0x96
 
-    .line 87
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C:I
 
     const/16 v1, 0x8
 
-    .line 88
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D:I
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 89
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->I:F
 
     const/4 v1, 0x0
 
-    .line 90
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->J:F
 
-    .line 91
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->K:F
 
-    .line 92
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->L:F
 
     const/4 v2, 0x1
 
-    .line 93
     iput-boolean v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->M:Z
 
-    .line 94
     iput-boolean v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
-    .line 95
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->O:Z
 
-    .line 96
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->P:Z
 
-    .line 97
     iput-boolean v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->Q:Z
 
-    .line 98
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->R:Z
 
-    .line 99
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->S:Z
 
-    .line 100
     iput-boolean v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->T:Z
 
-    .line 101
     new-instance v2, Landroid/graphics/Paint;
 
     invoke-direct {v2}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->W:Landroid/graphics/Paint;
 
-    .line 102
     new-instance v2, Landroid/text/TextPaint;
 
     invoke-direct {v2}, Landroid/text/TextPaint;-><init>()V
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
-    .line 103
     new-instance v2, Landroid/graphics/Paint;
 
     invoke-direct {v2}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
-    .line 104
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n0:I
 
-    .line 105
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->s0:F
 
-    .line 106
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t0:F
 
-    .line 107
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u0:F
 
-    .line 108
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v0:Z
 
-    .line 109
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C0:I
 
-    .line 110
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D0:I
 
-    .line 111
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
-    .line 112
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->F0:I
 
-    .line 113
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->G0:I
 
-    .line 114
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 115
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Landroid/content/Context;)V
 
     return-void
@@ -611,214 +495,156 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 2
 
-    .line 116
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const p3, -0xcccccd
 
-    .line 117
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a:I
 
     const p3, -0xff8901
 
-    .line 118
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b:I
 
-    .line 119
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c:I
 
     const/4 p3, 0x0
 
-    .line 120
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
-    .line 121
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
 
-    .line 122
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->f:I
 
-    .line 123
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g:I
 
-    .line 124
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h:I
 
-    .line 125
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->i:I
 
-    .line 126
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->j:I
 
-    .line 127
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->k:I
 
-    .line 128
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->l:I
 
     const v0, -0xa9ced
 
-    .line 129
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->m:I
 
     const/4 v0, 0x2
 
-    .line 130
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n:I
 
-    .line 131
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o:I
 
-    .line 132
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->p:I
 
     const/4 v0, 0x3
 
-    .line 133
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
-    .line 134
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->r:I
 
-    .line 135
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->s:I
 
     const/4 v0, -0x1
 
-    .line 136
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
-    .line 137
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u:I
 
-    .line 138
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v:I
 
-    .line 139
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->w:I
 
-    .line 140
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->x:I
 
-    .line 141
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y:I
 
-    .line 142
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->z:I
 
-    .line 143
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->A:I
 
-    .line 144
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
 
     const/16 v0, 0x96
 
-    .line 145
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C:I
 
     const/16 v0, 0x8
 
-    .line 146
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D:I
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 147
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->I:F
 
     const/4 v0, 0x0
 
-    .line 148
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->J:F
 
-    .line 149
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->K:F
 
-    .line 150
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->L:F
 
     const/4 v1, 0x1
 
-    .line 151
     iput-boolean v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->M:Z
 
-    .line 152
     iput-boolean v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
-    .line 153
     iput-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->O:Z
 
-    .line 154
     iput-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->P:Z
 
-    .line 155
     iput-boolean v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->Q:Z
 
-    .line 156
     iput-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->R:Z
 
-    .line 157
     iput-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->S:Z
 
-    .line 158
     iput-boolean v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->T:Z
 
-    .line 159
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->W:Landroid/graphics/Paint;
 
-    .line 160
     new-instance v1, Landroid/text/TextPaint;
 
     invoke-direct {v1}, Landroid/text/TextPaint;-><init>()V
 
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
-    .line 161
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
-    .line 162
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n0:I
 
-    .line 163
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->s0:F
 
-    .line 164
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t0:F
 
-    .line 165
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u0:F
 
-    .line 166
     iput-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v0:Z
 
-    .line 167
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C0:I
 
-    .line 168
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D0:I
 
-    .line 169
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
-    .line 170
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->F0:I
 
-    .line 171
     iput p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->G0:I
 
-    .line 172
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 173
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Landroid/content/Context;)V
 
     return-void
@@ -845,7 +671,6 @@
 
     return p1
 
-    .line 86
     :cond_0
     iget v0, p1, Landroid/graphics/Paint$FontMetrics;->top:F
 
@@ -980,7 +805,6 @@
     :cond_0
     if-eqz p3, :cond_1
 
-    .line 79
     rem-int/2addr p1, p2
 
     if-gez p1, :cond_1
@@ -994,7 +818,6 @@
 .method private a(Landroid/content/Context;F)I
     .locals 0
 
-    .line 141
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -1019,14 +842,12 @@
 .method private a(Ljava/lang/CharSequence;Landroid/graphics/Paint;)I
     .locals 1
 
-    .line 128
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 129
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -1058,7 +879,6 @@
 
     return v0
 
-    .line 125
     :cond_0
     array-length v1, p1
 
@@ -1071,12 +891,10 @@
 
     if-eqz v3, :cond_1
 
-    .line 126
     invoke-direct {p0, v3, p2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Ljava/lang/CharSequence;Landroid/graphics/Paint;)I
 
     move-result v3
 
-    .line 127
     invoke-static {v3, v2}, Ljava/lang/Math;->max(II)I
 
     move-result v2
@@ -1093,21 +911,16 @@
 .method private a(IIILjava/lang/Object;)Landroid/os/Message;
     .locals 1
 
-    .line 135
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 136
     iput p1, v0, Landroid/os/Message;->what:I
 
-    .line 137
     iput p2, v0, Landroid/os/Message;->arg1:I
 
-    .line 138
     iput p3, v0, Landroid/os/Message;->arg2:I
 
-    .line 139
     iput-object p4, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     return-object v0
@@ -1116,7 +929,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;IIILjava/lang/Object;)Landroid/os/Message;
     .locals 0
 
-    .line 4
     invoke-direct {p0, p1, p2, p3, p4}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p0
@@ -1127,7 +939,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;)Landroidx/core/widget/i;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
     return-object p0
@@ -1138,12 +949,10 @@
 
     if-ltz p1, :cond_0
 
-    .line 84
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
     if-ge p1, v0, :cond_0
 
-    .line 85
     div-int/lit8 v0, v0, 0x2
 
     sub-int/2addr p1, v0
@@ -1157,7 +966,6 @@
 .method private a(II)V
     .locals 1
 
-    .line 61
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->m0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$e;
 
     invoke-interface {v0, p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$e;->a(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;II)V
@@ -1170,14 +978,12 @@
 
     const/4 v0, 0x0
 
-    .line 69
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g(I)V
 
     if-eq p1, p2, :cond_2
 
     if-eqz p3, :cond_0
 
-    .line 70
     instance-of v1, p3, Ljava/lang/Boolean;
 
     if-eqz v1, :cond_0
@@ -1190,13 +996,11 @@
 
     if-eqz p3, :cond_2
 
-    .line 71
     :cond_0
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->k0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$d;
 
     if-eqz p3, :cond_1
 
-    .line 72
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v:I
 
     add-int v2, p1, v1
@@ -1205,30 +1009,24 @@
 
     invoke-interface {p3, p0, v2, v1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$d;->a(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;II)V
 
-    .line 73
     :cond_1
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->j0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$f;
 
     if-eqz p3, :cond_2
 
-    .line 74
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     invoke-interface {p3, p0, p1, p2, v1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$f;->a(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;II[Ljava/lang/String;)V
 
-    .line 75
     :cond_2
     iput p2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
 
-    .line 76
     iget-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->R:Z
 
     if-eqz p1, :cond_3
 
-    .line 77
     iput-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->R:Z
 
-    .line 78
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e()V
 
     :cond_3
@@ -1238,7 +1036,6 @@
 .method private a(IZ)V
     .locals 2
 
-    .line 87
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
     const/4 v1, 0x1
@@ -1251,7 +1048,6 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C0:I
 
-    .line 88
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getOneRecycleSize()I
 
     move-result v0
@@ -1262,12 +1058,10 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C0:I
 
-    .line 89
     iget p2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
     if-nez p2, :cond_0
 
-    .line 90
     iput-boolean v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->O:Z
 
     goto :goto_0
@@ -1275,10 +1069,8 @@
     :cond_0
     mul-int p2, p2, p1
 
-    .line 91
     iput p2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
-    .line 92
     iget p2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
     div-int/lit8 p2, p2, 0x2
@@ -1287,7 +1079,6 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o0:I
 
-    .line 93
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getOneRecycleSize()I
 
     move-result p2
@@ -1298,7 +1089,6 @@
 
     if-gez p1, :cond_1
 
-    .line 94
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getOneRecycleSize()I
 
     move-result p2
@@ -1307,13 +1097,11 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o0:I
 
-    .line 95
     :cond_1
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o0:I
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->p0:I
 
-    .line 96
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b()V
 
     :goto_0
@@ -1323,14 +1111,12 @@
 .method private a(Landroid/content/Context;)V
     .locals 2
 
-    .line 37
     invoke-static {p1}, Landroidx/core/widget/i;->a(Landroid/content/Context;)Landroidx/core/widget/i;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
-    .line 38
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1345,7 +1131,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C:I
 
-    .line 39
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1360,7 +1145,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D:I
 
-    .line 40
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
     const/high16 v1, 0x41600000    # 14.0f
@@ -1373,7 +1157,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
-    .line 41
     :cond_0
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
 
@@ -1387,7 +1170,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
 
-    .line 42
     :cond_1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->f:I
 
@@ -1399,7 +1181,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->f:I
 
-    .line 43
     :cond_2
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->i:I
 
@@ -1413,7 +1194,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->i:I
 
-    .line 44
     :cond_3
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->j:I
 
@@ -1425,7 +1205,6 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->j:I
 
-    .line 45
     :cond_4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->W:Landroid/graphics/Paint;
 
@@ -1433,21 +1212,18 @@
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 46
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->W:Landroid/graphics/Paint;
 
     const/4 v0, 0x1
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 47
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->W:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 48
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->W:Landroid/graphics/Paint;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n:I
@@ -1456,45 +1232,38 @@
 
     invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 49
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a:I
 
     invoke-virtual {p1, v1}, Landroid/text/TextPaint;->setColor(I)V
 
-    .line 50
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {p1, v0}, Landroid/text/TextPaint;->setAntiAlias(Z)V
 
-    .line 51
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     sget-object v1, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
 
     invoke-virtual {p1, v1}, Landroid/text/TextPaint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    .line 52
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c:I
 
     invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 53
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 54
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
 
     invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    .line 55
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->f:I
@@ -1503,7 +1272,6 @@
 
     invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 56
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
     rem-int/lit8 v1, p1, 0x2
@@ -1512,10 +1280,8 @@
 
     add-int/2addr p1, v0
 
-    .line 57
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
-    .line 58
     :cond_5
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
@@ -1527,11 +1293,9 @@
 
     if-ne p1, v0, :cond_7
 
-    .line 59
     :cond_6
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n()V
 
-    .line 60
     :cond_7
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d()V
 
@@ -1545,7 +1309,6 @@
 
     return-void
 
-    .line 5
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/R$styleable;->NumberPickerView:[I
 
@@ -1553,7 +1316,6 @@
 
     move-result-object p2
 
-    .line 6
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->getIndexCount()I
 
     move-result v0
@@ -1565,7 +1327,6 @@
     :goto_0
     if-ge v2, v0, :cond_1d
 
-    .line 7
     invoke-virtual {p2, v2}, Landroid/content/res/TypedArray;->getIndex(I)I
 
     move-result v3
@@ -1576,7 +1337,6 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 8
     invoke-virtual {p2, v3, v5}, Landroid/content/res/TypedArray;->getInt(II)I
 
     move-result v3
@@ -1590,7 +1350,6 @@
 
     const v4, -0xa9ced
 
-    .line 9
     invoke-virtual {p2, v3, v4}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result v3
@@ -1606,7 +1365,6 @@
 
     if-ne v3, v4, :cond_3
 
-    .line 10
     invoke-virtual {p2, v3, v5}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v3
@@ -1620,7 +1378,6 @@
 
     if-ne v3, v4, :cond_4
 
-    .line 11
     invoke-virtual {p2, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v3
@@ -1634,7 +1391,6 @@
 
     if-ne v3, v4, :cond_5
 
-    .line 12
     invoke-virtual {p2, v3, v1}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result v3
@@ -1648,7 +1404,6 @@
 
     if-ne v3, v4, :cond_6
 
-    .line 13
     invoke-virtual {p2, v3}, Landroid/content/res/TypedArray;->getTextArray(I)[Ljava/lang/CharSequence;
 
     move-result-object v3
@@ -1668,7 +1423,6 @@
 
     const v4, -0xcccccd
 
-    .line 14
     invoke-virtual {p2, v3, v4}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result v3
@@ -1684,7 +1438,6 @@
 
     if-ne v3, v4, :cond_8
 
-    .line 15
     invoke-virtual {p2, v3, v6}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result v3
@@ -1698,7 +1451,6 @@
 
     if-ne v3, v4, :cond_9
 
-    .line 16
     invoke-virtual {p2, v3, v6}, Landroid/content/res/TypedArray;->getColor(II)I
 
     move-result v3
@@ -1714,7 +1466,6 @@
 
     if-ne v3, v4, :cond_a
 
-    .line 17
     invoke-direct {p0, p1, v6}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b(Landroid/content/Context;F)I
 
     move-result v4
@@ -1734,7 +1485,6 @@
 
     const/high16 v4, 0x41800000    # 16.0f
 
-    .line 18
     invoke-direct {p0, p1, v4}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b(Landroid/content/Context;F)I
 
     move-result v4
@@ -1752,7 +1502,6 @@
 
     if-ne v3, v4, :cond_c
 
-    .line 19
     invoke-direct {p0, p1, v6}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b(Landroid/content/Context;F)I
 
     move-result v4
@@ -1770,7 +1519,6 @@
 
     if-ne v3, v4, :cond_d
 
-    .line 20
     invoke-virtual {p2, v3, v1}, Landroid/content/res/TypedArray;->getInteger(II)I
 
     move-result v3
@@ -1784,7 +1532,6 @@
 
     if-ne v3, v4, :cond_e
 
-    .line 21
     invoke-virtual {p2, v3, v1}, Landroid/content/res/TypedArray;->getInteger(II)I
 
     move-result v3
@@ -1800,7 +1547,6 @@
 
     if-ne v3, v4, :cond_f
 
-    .line 22
     invoke-virtual {p2, v3, v6}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result v3
@@ -1814,7 +1560,6 @@
 
     if-ne v3, v4, :cond_10
 
-    .line 23
     invoke-virtual {p2, v3, v6}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result v3
@@ -1828,7 +1573,6 @@
 
     if-ne v3, v4, :cond_11
 
-    .line 24
     invoke-virtual {p2, v3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -1840,7 +1584,6 @@
     :cond_11
     if-nez v3, :cond_12
 
-    .line 25
     invoke-virtual {p2, v3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -1854,7 +1597,6 @@
 
     if-ne v3, v4, :cond_13
 
-    .line 26
     invoke-virtual {p2, v3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -1870,7 +1612,6 @@
 
     if-ne v3, v4, :cond_14
 
-    .line 27
     invoke-direct {p0, p1, v7}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Landroid/content/Context;F)I
 
     move-result v4
@@ -1888,7 +1629,6 @@
 
     if-ne v3, v4, :cond_15
 
-    .line 28
     invoke-direct {p0, p1, v7}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Landroid/content/Context;F)I
 
     move-result v4
@@ -1908,7 +1648,6 @@
 
     const/high16 v4, 0x40000000    # 2.0f
 
-    .line 29
     invoke-direct {p0, p1, v4}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Landroid/content/Context;F)I
 
     move-result v4
@@ -1928,7 +1667,6 @@
 
     const/high16 v4, 0x40a00000    # 5.0f
 
-    .line 30
     invoke-direct {p0, p1, v4}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Landroid/content/Context;F)I
 
     move-result v4
@@ -1944,7 +1682,6 @@
     :cond_17
     if-ne v3, v6, :cond_18
 
-    .line 31
     invoke-virtual {p2, v3}, Landroid/content/res/TypedArray;->getTextArray(I)[Ljava/lang/CharSequence;
 
     move-result-object v3
@@ -1956,7 +1693,6 @@
     :cond_18
     if-ne v3, v5, :cond_19
 
-    .line 32
     invoke-virtual {p2, v3}, Landroid/content/res/TypedArray;->getTextArray(I)[Ljava/lang/CharSequence;
 
     move-result-object v3
@@ -1970,7 +1706,6 @@
 
     if-ne v3, v4, :cond_1a
 
-    .line 33
     invoke-virtual {p2, v3, v1}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result v3
@@ -1984,7 +1719,6 @@
 
     if-ne v3, v4, :cond_1b
 
-    .line 34
     invoke-virtual {p2, v3, v6}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
     move-result v3
@@ -1998,7 +1732,6 @@
 
     if-ne v3, v4, :cond_1c
 
-    .line 35
     invoke-virtual {p2, v3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -2011,7 +1744,6 @@
 
     goto/16 :goto_0
 
-    .line 36
     :cond_1d
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
@@ -2027,7 +1759,6 @@
 
     const/4 v2, 0x0
 
-    .line 101
     :goto_0
     iget v3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
@@ -2037,7 +1768,6 @@
 
     if-ge v2, v3, :cond_6
 
-    .line 102
     iget v3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D0:I
 
     iget v5, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
@@ -2048,7 +1778,6 @@
 
     int-to-float v3, v3
 
-    .line 103
     iget v5, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C0:I
 
     add-int/2addr v5, v2
@@ -2077,14 +1806,12 @@
 
     move-result v5
 
-    .line 104
     iget v6, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
     div-int/lit8 v7, v6, 0x2
 
     if-ne v2, v7, :cond_1
 
-    .line 105
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
     iget v4, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D0:I
@@ -2097,7 +1824,6 @@
 
     div-float/2addr v4, v1
 
-    .line 106
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a:I
 
     iget v6, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b:I
@@ -2106,7 +1832,6 @@
 
     move-result v1
 
-    .line 107
     iget v6, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
     int-to-float v6, v6
@@ -2119,7 +1844,6 @@
 
     move-result v6
 
-    .line 108
     iget v7, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->J:F
 
     iget v8, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->K:F
@@ -2130,7 +1854,6 @@
 
     goto :goto_2
 
-    .line 109
     :cond_1
     div-int/lit8 v6, v6, 0x2
 
@@ -2142,7 +1865,6 @@
 
     sub-float/2addr v4, v1
 
-    .line 110
     iget v6, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a:I
 
     iget v7, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b:I
@@ -2151,7 +1873,6 @@
 
     move-result v6
 
-    .line 111
     iget v7, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
     int-to-float v7, v7
@@ -2164,7 +1885,6 @@
 
     move-result v7
 
-    .line 112
     iget v8, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->J:F
 
     iget v9, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->K:F
@@ -2185,16 +1905,13 @@
 
     goto :goto_2
 
-    .line 113
     :cond_2
     iget v4, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a:I
 
-    .line 114
     iget v6, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
     int-to-float v6, v6
 
-    .line 115
     iget v7, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->J:F
 
     move v10, v4
@@ -2203,27 +1920,23 @@
 
     move v1, v10
 
-    .line 116
     :goto_2
     iget-object v8, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {v8, v1}, Landroid/text/TextPaint;->setColor(I)V
 
-    .line 117
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {v1, v6}, Landroid/text/TextPaint;->setTextSize(F)V
 
     if-ltz v5, :cond_4
 
-    .line 118
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getOneRecycleSize()I
 
     move-result v1
 
     if-ge v5, v1, :cond_4
 
-    .line 119
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     iget v6, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
@@ -2232,12 +1945,10 @@
 
     aget-object v1, v1, v5
 
-    .line 120
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->F:Ljava/lang/String;
 
     if-eqz v5, :cond_3
 
-    .line 121
     iget-object v5, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
@@ -2260,7 +1971,6 @@
 
     move-result-object v1
 
-    .line 122
     :cond_3
     invoke-interface {v1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
@@ -2284,7 +1994,6 @@
 
     goto :goto_3
 
-    .line 123
     :cond_4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->G:Ljava/lang/String;
 
@@ -2294,7 +2003,6 @@
 
     if-nez v1, :cond_5
 
-    .line 124
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->G:Ljava/lang/String;
 
     iget v5, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B0:F
@@ -2328,20 +2036,17 @@
 .method private a(Landroid/view/MotionEvent;)V
     .locals 3
 
-    .line 80
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result p1
 
     const/4 v0, 0x0
 
-    .line 81
     :goto_0
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
     if-ge v0, v1, :cond_1
 
-    .line 82
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
     mul-int v2, v1, v0
@@ -2362,7 +2067,6 @@
 
     if-gez v1, :cond_0
 
-    .line 83
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(I)V
 
     goto :goto_1
@@ -2380,7 +2084,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;I)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g(I)V
 
     return-void
@@ -2389,7 +2092,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;IILjava/lang/Object;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2, p3}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(IILjava/lang/Object;)V
 
     return-void
@@ -2398,15 +2100,12 @@
 .method private a(Z)V
     .locals 1
 
-    .line 97
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->k()V
 
-    .line 98
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->j()V
 
     if-eqz p1, :cond_1
 
-    .line 99
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->F0:I
 
     const/high16 v0, -0x80000000
@@ -2417,7 +2116,6 @@
 
     if-ne p1, v0, :cond_1
 
-    .line 100
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->i0:Landroid/os/Handler;
 
@@ -2445,7 +2143,6 @@
 
     return p1
 
-    .line 140
     :cond_1
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -2463,7 +2160,6 @@
 
     return-object p1
 
-    .line 142
     :cond_0
     array-length v0, p1
 
@@ -2471,13 +2167,11 @@
 
     const/4 v1, 0x0
 
-    .line 143
     :goto_0
     array-length v2, p1
 
     if-ge v1, v2, :cond_1
 
-    .line 144
     aget-object v2, p1, v1
 
     invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
@@ -2497,7 +2191,6 @@
 .method private b(Landroid/content/Context;F)I
     .locals 0
 
-    .line 29
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -2522,7 +2215,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n0:I
 
     return p0
@@ -2531,7 +2223,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;I)I
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c(I)I
 
     move-result p0
@@ -2546,7 +2237,6 @@
 
     const/4 v1, 0x0
 
-    .line 28
     invoke-direct {p0, p1, v0, v0, v1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(IIILjava/lang/Object;)Landroid/os/Message;
 
     move-result-object p1
@@ -2557,7 +2247,6 @@
 .method private b()V
     .locals 4
 
-    .line 13
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
     int-to-float v0, v0
@@ -2578,7 +2267,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C0:I
 
-    .line 14
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
@@ -2591,21 +2279,18 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D0:I
 
-    .line 15
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->m0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$e;
 
     if-eqz v3, :cond_3
 
     neg-int v1, v1
 
-    .line 16
     div-int/lit8 v2, v2, 0x2
 
     if-le v1, v2, :cond_0
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 17
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
     div-int/lit8 v1, v1, 0x2
@@ -2616,7 +2301,6 @@
 
     goto :goto_0
 
-    .line 18
     :cond_0
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
@@ -2626,7 +2310,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->p0:I
 
-    .line 19
     :goto_0
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->p0:I
 
@@ -2640,7 +2323,6 @@
 
     if-gez v0, :cond_1
 
-    .line 20
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getOneRecycleSize()I
 
     move-result v1
@@ -2649,7 +2331,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->p0:I
 
-    .line 21
     :cond_1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o0:I
 
@@ -2657,10 +2338,8 @@
 
     if-eq v0, v1, :cond_2
 
-    .line 22
     invoke-direct {p0, v1, v0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(II)V
 
-    .line 23
     :cond_2
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->p0:I
 
@@ -2673,7 +2352,6 @@
 .method private b(IZ)V
     .locals 8
 
-    .line 3
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
     if-eqz v0, :cond_0
@@ -2682,7 +2360,6 @@
 
     if-nez v0, :cond_2
 
-    .line 4
     :cond_0
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getPickedIndexRelativeToRaw()I
 
@@ -2690,7 +2367,6 @@
 
     add-int v1, v0, p1
 
-    .line 5
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u:I
 
     if-le v1, v2, :cond_1
@@ -2700,7 +2376,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_1
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
@@ -2708,7 +2383,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     :goto_1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D0:I
@@ -2785,7 +2459,6 @@
 
     add-int/2addr v1, v2
 
-    .line 8
     :goto_3
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
@@ -2806,7 +2479,6 @@
 
     const/16 v1, 0x258
 
-    .line 9
     :cond_7
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
@@ -2824,7 +2496,6 @@
 
     if-eqz p2, :cond_8
 
-    .line 10
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h0:Landroid/os/Handler;
 
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b(I)Landroid/os/Message;
@@ -2839,7 +2510,6 @@
 
     goto :goto_4
 
-    .line 11
     :cond_8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h0:Landroid/os/Handler;
 
@@ -2859,7 +2529,6 @@
 
     invoke-virtual {v0, p1, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 12
     :goto_4
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
@@ -2869,7 +2538,6 @@
 .method private b(Landroid/graphics/Canvas;)V
     .locals 4
 
-    .line 24
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -2880,7 +2548,6 @@
 
     return-void
 
-    .line 25
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E:Ljava/lang/String;
 
@@ -2928,10 +2595,8 @@
 .method private b([Ljava/lang/String;)V
     .locals 0
 
-    .line 26
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
-    .line 27
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o()V
 
     return-void
@@ -2940,7 +2605,6 @@
 .method private c(I)I
     .locals 3
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
     const/4 v1, 0x0
@@ -2949,7 +2613,6 @@
 
     return v1
 
-    .line 3
     :cond_0
     div-int/2addr p1, v0
 
@@ -2959,7 +2622,6 @@
 
     add-int/2addr p1, v0
 
-    .line 4
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getOneRecycleSize()I
 
     move-result v0
@@ -2981,21 +2643,18 @@
 
     if-ltz p1, :cond_2
 
-    .line 5
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getOneRecycleSize()I
 
     move-result v0
 
     if-ge p1, v0, :cond_2
 
-    .line 6
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
     add-int/2addr p1, v0
 
     return p1
 
-    .line 7
     :cond_2
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -3013,7 +2672,6 @@
 
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getOneRecycleSize()I
 
     move-result p1
@@ -3040,7 +2698,6 @@
 .method private c()V
     .locals 3
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     if-nez v0, :cond_0
@@ -3049,7 +2706,6 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 17
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -3065,12 +2721,10 @@
 .method private c(Landroid/graphics/Canvas;)V
     .locals 7
 
-    .line 9
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->M:Z
 
     if-eqz v0, :cond_0
 
-    .line 10
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v0
@@ -3085,7 +2739,6 @@
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->w0:I
 
-    .line 11
     invoke-virtual {p0}, Landroid/view/View;->getPaddingRight()I
 
     move-result v1
@@ -3104,10 +2757,8 @@
 
     move-object v1, p1
 
-    .line 12
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 13
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v0
@@ -3122,7 +2773,6 @@
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->w0:I
 
-    .line 14
     invoke-virtual {p0}, Landroid/view/View;->getPaddingRight()I
 
     move-result v1
@@ -3141,7 +2791,6 @@
 
     move-object v1, p1
 
-    .line 15
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     :cond_0
@@ -3151,7 +2800,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->T:Z
 
     return p0
@@ -3160,7 +2808,6 @@
 .method private d(I)I
     .locals 1
 
-    .line 6
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
     if-eqz v0, :cond_0
@@ -3171,7 +2818,6 @@
 
     return p1
 
-    .line 7
     :cond_0
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->r0:I
 
@@ -3182,7 +2828,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q0:I
 
@@ -3198,7 +2843,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;)Landroid/os/Handler;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->i0:Landroid/os/Handler;
 
     return-object p0
@@ -3207,7 +2851,6 @@
 .method private d()V
     .locals 2
 
-    .line 2
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, "HandlerThread-For-Refreshing"
@@ -3216,10 +2859,8 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g0:Landroid/os/HandlerThread;
 
-    .line 3
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 4
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$a;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g0:Landroid/os/HandlerThread;
@@ -3232,7 +2873,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h0:Landroid/os/Handler;
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$b;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$b;-><init>(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;)V
@@ -3245,14 +2885,12 @@
 .method private e(I)I
     .locals 4
 
-    .line 6
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->G0:I
 
-    .line 7
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result p1
@@ -3263,7 +2901,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_0
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
@@ -3277,7 +2914,6 @@
 
     mul-int v1, v1, v2
 
-    .line 9
     invoke-virtual {p0}, Landroid/view/View;->getPaddingTop()I
 
     move-result v2
@@ -3294,7 +2930,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 10
     invoke-static {v2, p1}, Ljava/lang/Math;->min(II)I
 
     move-result p1
@@ -3311,7 +2946,6 @@
 .method static synthetic e(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;)Landroid/os/Handler;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h0:Landroid/os/Handler;
 
     return-object p0
@@ -3320,12 +2954,10 @@
 .method private e()V
     .locals 2
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getPickedIndexRelativeToRaw()I
 
     move-result v0
 
-    .line 3
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
     sub-int/2addr v0, v1
@@ -3334,10 +2966,8 @@
 
     invoke-direct {p0, v0, v1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(IZ)V
 
-    .line 4
     iput-boolean v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
@@ -3346,14 +2976,12 @@
 .method private f(I)I
     .locals 7
 
-    .line 6
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->F0:I
 
-    .line 7
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result p1
@@ -3364,7 +2992,6 @@
 
     goto :goto_2
 
-    .line 8
     :cond_0
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g:I
 
@@ -3385,7 +3012,6 @@
     :cond_1
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->j:I
 
-    .line 9
     :goto_0
     iget v3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g:I
 
@@ -3402,7 +3028,6 @@
     :cond_2
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->i:I
 
-    .line 10
     :goto_1
     iget v3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->z:I
 
@@ -3410,7 +3035,6 @@
 
     iget v5, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->A:I
 
-    .line 11
     invoke-static {v4, v5}, Ljava/lang/Math;->max(II)I
 
     move-result v4
@@ -3419,7 +3043,6 @@
 
     iget v6, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h:I
 
-    .line 12
     invoke-static {v5, v6}, Ljava/lang/Math;->max(II)I
 
     move-result v5
@@ -3438,12 +3061,10 @@
 
     add-int/2addr v4, v2
 
-    .line 13
     invoke-static {v3, v4}, Ljava/lang/Math;->max(II)I
 
     move-result v1
 
-    .line 14
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v2
@@ -3460,7 +3081,6 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 15
     invoke-static {v2, p1}, Ljava/lang/Math;->min(II)I
 
     move-result p1
@@ -3477,7 +3097,6 @@
 .method static synthetic f(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D0:I
 
     return p0
@@ -3486,22 +3105,18 @@
 .method private f()V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->V:Landroid/view/VelocityTracker;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->clear()V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->V:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->recycle()V
 
     const/4 v0, 0x0
 
-    .line 5
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->V:Landroid/view/VelocityTracker;
 
     :cond_0
@@ -3511,7 +3126,6 @@
 .method static synthetic g(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
     return p0
@@ -3520,14 +3134,12 @@
 .method private g()V
     .locals 2
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h0:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x1
 
-    .line 7
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
     :cond_0
@@ -3537,23 +3149,19 @@
 .method private g(I)V
     .locals 1
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n0:I
 
     if-ne v0, p1, :cond_0
 
     return-void
 
-    .line 3
     :cond_0
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n0:I
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->l0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$c;
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-interface {v0, p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$c;->a(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;I)V
 
     :cond_1
@@ -3563,7 +3171,6 @@
 .method private getEllipsizeType()Landroid/text/TextUtils$TruncateAt;
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->F:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -3638,12 +3245,10 @@
 
     if-ne v0, v3, :cond_4
 
-    .line 2
     sget-object v0, Landroid/text/TextUtils$TruncateAt;->END:Landroid/text/TextUtils$TruncateAt;
 
     return-object v0
 
-    .line 3
     :cond_4
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -3653,13 +3258,11 @@
 
     throw v0
 
-    .line 4
     :cond_5
     sget-object v0, Landroid/text/TextUtils$TruncateAt;->MIDDLE:Landroid/text/TextUtils$TruncateAt;
 
     return-object v0
 
-    .line 5
     :cond_6
     sget-object v0, Landroid/text/TextUtils$TruncateAt;->START:Landroid/text/TextUtils$TruncateAt;
 
@@ -3669,7 +3272,6 @@
 .method static synthetic h(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
     return p0
@@ -3678,7 +3280,6 @@
 .method private h()V
     .locals 5
 
-    .line 3
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
     div-int/lit8 v1, v0, 0x2
@@ -3687,10 +3288,8 @@
 
     add-int/lit8 v2, v1, 0x1
 
-    .line 4
     iput v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->s:I
 
-    .line 5
     iget v3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->x0:I
 
     mul-int v1, v1, v3
@@ -3703,14 +3302,12 @@
 
     mul-int v2, v2, v3
 
-    .line 6
     div-int/2addr v2, v0
 
     int-to-float v0, v2
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->A0:F
 
-    .line 7
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o:I
 
     const/4 v1, 0x0
@@ -3719,7 +3316,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o:I
 
-    .line 8
     :cond_0
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->p:I
 
@@ -3727,7 +3323,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->p:I
 
-    .line 9
     :cond_1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o:I
 
@@ -3739,7 +3334,6 @@
 
     return-void
 
-    .line 10
     :cond_2
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
@@ -3763,7 +3357,6 @@
 
     if-lt v0, v1, :cond_3
 
-    .line 11
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result v0
@@ -3786,7 +3379,6 @@
 
     sub-int/2addr v0, v2
 
-    .line 12
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o:I
 
     int-to-float v3, v2
@@ -3825,7 +3417,6 @@
 
     float-to-int v0, v3
 
-    .line 13
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->p:I
 
     :cond_3
@@ -3837,7 +3428,6 @@
 
     const/4 v0, 0x1
 
-    .line 2
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b(IZ)V
 
     return-void
@@ -3846,7 +3436,6 @@
 .method static synthetic i(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
 
     return p0
@@ -3855,7 +3444,6 @@
 .method private i()V
     .locals 2
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
@@ -3864,7 +3452,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
-    .line 3
     :cond_0
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
 
@@ -3874,20 +3461,17 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
     if-eqz v0, :cond_3
 
-    .line 5
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->f:I
 
     int-to-float v1, v1
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
     invoke-virtual {v0}, Landroid/graphics/Paint;->getFontMetrics()Landroid/graphics/Paint$FontMetrics;
@@ -3900,7 +3484,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->L:F
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
@@ -3911,19 +3494,16 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g:I
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     if-eqz v0, :cond_2
 
-    .line 9
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
 
     int-to-float v1, v1
 
     invoke-virtual {v0, v1}, Landroid/text/TextPaint;->setTextSize(F)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {v0}, Landroid/text/TextPaint;->getFontMetrics()Landroid/graphics/Paint$FontMetrics;
@@ -3936,7 +3516,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->K:F
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
@@ -3945,7 +3524,6 @@
 
     invoke-virtual {v0, v1}, Landroid/text/TextPaint;->setTextSize(F)V
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {v0}, Landroid/text/TextPaint;->getFontMetrics()Landroid/graphics/Paint$FontMetrics;
@@ -3960,7 +3538,6 @@
 
     return-void
 
-    .line 13
     :cond_2
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -3970,7 +3547,6 @@
 
     throw v0
 
-    .line 14
     :cond_3
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -3984,14 +3560,12 @@
 .method private j()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {v0}, Landroid/text/TextPaint;->getTextSize()F
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
@@ -4000,7 +3574,6 @@
 
     invoke-virtual {v1, v2}, Landroid/text/TextPaint;->setTextSize(F)V
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {v1}, Landroid/text/TextPaint;->getFontMetrics()Landroid/graphics/Paint$FontMetrics;
@@ -4029,7 +3602,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y:I
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {v1, v0}, Landroid/text/TextPaint;->setTextSize(F)V
@@ -4040,14 +3612,12 @@
 .method private k()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {v0}, Landroid/text/TextPaint;->getTextSize()F
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
@@ -4056,7 +3626,6 @@
 
     invoke-virtual {v1, v2}, Landroid/text/TextPaint;->setTextSize(F)V
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
@@ -4067,7 +3636,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->x:I
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e0:[Ljava/lang/CharSequence;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
@@ -4078,7 +3646,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->z:I
 
-    .line 5
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->f0:[Ljava/lang/CharSequence;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
@@ -4089,7 +3656,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->A:I
 
-    .line 6
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->f:I
@@ -4098,7 +3664,6 @@
 
     invoke-virtual {v1, v2}, Landroid/text/TextPaint;->setTextSize(F)V
 
-    .line 7
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->H:Ljava/lang/String;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
@@ -4109,7 +3674,6 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h:I
 
-    .line 8
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {v1, v0}, Landroid/text/TextPaint;->setTextSize(F)V
@@ -4122,10 +3686,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q0:I
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
     neg-int v0, v0
@@ -4136,12 +3698,10 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->r0:I
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getOneRecycleSize()I
 
     move-result v0
@@ -4160,7 +3720,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q0:I
 
-    .line 5
     div-int/lit8 v1, v1, 0x2
 
     neg-int v0, v1
@@ -4176,18 +3735,14 @@
 .method private m()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c()V
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     array-length v0, v0
@@ -4202,13 +3757,10 @@
 .method private n()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c()V
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o()V
 
-    .line 3
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
     const/4 v1, 0x0
@@ -4217,16 +3769,13 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 4
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
-    .line 5
     :cond_0
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u:I
 
     if-ne v0, v2, :cond_1
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     array-length v0, v0
@@ -4235,7 +3784,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u:I
 
-    .line 7
     :cond_1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
@@ -4249,7 +3797,6 @@
 .method private o()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     array-length v0, v0
@@ -4276,19 +3823,16 @@
 .method public a()V
     .locals 7
 
-    .line 130
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
     if-eqz v0, :cond_0
 
-    .line 131
     invoke-virtual {v0}, Landroidx/core/widget/i;->d()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 132
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
     const/4 v2, 0x0
@@ -4305,12 +3849,10 @@
 
     invoke-virtual/range {v1 .. v6}, Landroidx/core/widget/i;->a(IIIII)V
 
-    .line 133
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
     invoke-virtual {v0}, Landroidx/core/widget/i;->a()V
 
-    .line 134
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     :cond_0
@@ -4320,12 +3862,10 @@
 .method public a([Ljava/lang/String;)V
     .locals 3
 
-    .line 62
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getMinValue()I
 
     move-result v0
 
-    .line 63
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getMaxValue()I
 
     move-result v1
@@ -4334,7 +3874,6 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 64
     array-length v2, p1
 
     add-int/lit8 v2, v2, -0x1
@@ -4345,19 +3884,15 @@
 
     if-le v0, v1, :cond_0
 
-    .line 65
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->setDisplayedValues([Ljava/lang/String;)V
 
-    .line 66
     invoke-virtual {p0, v2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->setMaxValue(I)V
 
     goto :goto_0
 
-    .line 67
     :cond_0
     invoke-virtual {p0, v2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->setMaxValue(I)V
 
-    .line 68
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->setDisplayedValues([Ljava/lang/String;)V
 
     :goto_0
@@ -4367,14 +3902,12 @@
 .method public computeScroll()V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
@@ -4384,7 +3917,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
     invoke-virtual {v0}, Landroidx/core/widget/i;->c()I
@@ -4393,10 +3925,8 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b()V
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     :cond_1
@@ -4406,7 +3936,6 @@
 .method public getContentByCurrValue()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getValue()I
@@ -4425,7 +3954,6 @@
 .method public getDisplayedValues()[Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     return-object v0
@@ -4434,7 +3962,6 @@
 .method public getMaxValue()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->w:I
 
     return v0
@@ -4443,7 +3970,6 @@
 .method public getMinValue()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v:I
 
     return v0
@@ -4452,7 +3978,6 @@
 .method public getOneRecycleSize()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u:I
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
@@ -4467,12 +3992,10 @@
 .method public getPickedIndexRelativeToRaw()I
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D0:I
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
     neg-int v2, v1
@@ -4481,7 +4004,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 3
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
     add-int/2addr v2, v1
@@ -4494,7 +4016,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
@@ -4506,7 +4027,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
@@ -4521,12 +4041,10 @@
 .method public getRawContentSize()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 2
     array-length v0, v0
 
     return v0
@@ -4540,7 +4058,6 @@
 .method public getValue()I
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getPickedIndexRelativeToRaw()I
 
     move-result v0
@@ -4555,7 +4072,6 @@
 .method public getWrapSelectorWheel()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
     return v0
@@ -4564,7 +4080,6 @@
 .method public getWrapSelectorWheelAbsolutely()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
     if-eqz v0, :cond_0
@@ -4587,10 +4102,8 @@
 .method protected onAttachedToWindow()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g0:Landroid/os/HandlerThread;
 
     if-eqz v0, :cond_0
@@ -4601,7 +4114,6 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     :cond_0
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d()V
 
@@ -4612,22 +4124,18 @@
 .method protected onDetachedFromWindow()V
     .locals 4
 
-    .line 1
     invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g0:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quit()Z
 
-    .line 3
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
@@ -4637,12 +4145,10 @@
 
     if-nez v0, :cond_3
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
     invoke-virtual {v0}, Landroidx/core/widget/i;->a()V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
     invoke-virtual {v0}, Landroidx/core/widget/i;->c()I
@@ -4651,15 +4157,12 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
-    .line 7
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b()V
 
-    .line 8
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->D0:I
 
     if-eqz v0, :cond_2
 
-    .line 9
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
     neg-int v2, v1
@@ -4668,7 +4171,6 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 10
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
     add-int/2addr v2, v1
@@ -4679,7 +4181,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_1
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
@@ -4687,17 +4188,14 @@
 
     iput v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
-    .line 12
     :goto_0
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b()V
 
     :cond_2
     const/4 v0, 0x0
 
-    .line 13
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g(I)V
 
-    .line 14
     :cond_3
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
@@ -4705,7 +4203,6 @@
 
     move-result v0
 
-    .line 15
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
 
     if-eq v0, v1, :cond_5
@@ -4714,13 +4211,11 @@
 
     if-eqz v2, :cond_5
 
-    .line 16
     :try_start_0
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->k0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$d;
 
     if-eqz v2, :cond_4
 
-    .line 17
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->k0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$d;
 
     iget v3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v:I
@@ -4733,13 +4228,11 @@
 
     invoke-interface {v2, p0, v1, v3}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$d;->a(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;II)V
 
-    .line 18
     :cond_4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->j0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$f;
 
     if-eqz v1, :cond_5
 
-    .line 19
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->j0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$f;
 
     iget v2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
@@ -4755,10 +4248,8 @@
     :catch_0
     move-exception v1
 
-    .line 20
     invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 21
     :cond_5
     :goto_1
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
@@ -4769,16 +4260,12 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Landroid/graphics/Canvas;)V
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c(Landroid/graphics/Canvas;)V
 
-    .line 4
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b(Landroid/graphics/Canvas;)V
 
     return-void
@@ -4787,25 +4274,20 @@
 .method protected onMeasure(II)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View;->onMeasure(II)V
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Z)V
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->f(I)I
 
     move-result p1
 
-    .line 4
     invoke-direct {p0, p2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e(I)I
 
     move-result p2
 
-    .line 5
     invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
     return-void
@@ -4814,23 +4296,18 @@
 .method protected onSizeChanged(IIII)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3, p4}, Landroid/view/View;->onSizeChanged(IIII)V
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->w0:I
 
-    .line 3
     iput p2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->x0:I
 
-    .line 4
     iget p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
 
     div-int/2addr p2, p3
 
     iput p2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->getPaddingLeft()I
 
     move-result p2
@@ -4851,7 +4328,6 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B0:F
 
-    .line 6
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getOneRecycleSize()I
 
     move-result p1
@@ -4862,12 +4338,10 @@
 
     if-le p1, p3, :cond_1
 
-    .line 7
     iget-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->P:Z
 
     if-eqz p1, :cond_0
 
-    .line 8
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getValue()I
 
     move-result p1
@@ -4878,13 +4352,11 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     iget-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->O:Z
 
     if-eqz p1, :cond_1
 
-    .line 10
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->C0:I
 
     iget p4, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->q:I
@@ -4900,7 +4372,6 @@
     :cond_1
     const/4 p1, 0x0
 
-    .line 11
     :goto_0
     iget-boolean p4, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
@@ -4915,16 +4386,12 @@
     :cond_2
     invoke-direct {p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(IZ)V
 
-    .line 12
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->i()V
 
-    .line 13
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->l()V
 
-    .line 14
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h()V
 
-    .line 15
     iput-boolean p3, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->P:Z
 
     return-void
@@ -4935,7 +4402,6 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     iget v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->y0:I
 
     const/4 v2, 0x1
@@ -4944,20 +4410,17 @@
 
     return v2
 
-    .line 2
     :cond_0
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->V:Landroid/view/VelocityTracker;
 
     if-nez v1, :cond_1
 
-    .line 3
     invoke-static {}, Landroid/view/VelocityTracker;->obtain()Landroid/view/VelocityTracker;
 
     move-result-object v1
 
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->V:Landroid/view/VelocityTracker;
 
-    .line 4
     :cond_1
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->V:Landroid/view/VelocityTracker;
 
@@ -4965,14 +4428,12 @@
 
     invoke-virtual {v1, v3}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
-    .line 5
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v1
 
     iput v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u0:F
 
-    .line 6
     invoke-virtual/range {p1 .. p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v1
@@ -4995,7 +4456,6 @@
 
     goto/16 :goto_1
 
-    .line 7
     :cond_2
     iget v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
@@ -5003,10 +4463,8 @@
 
     iput v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->s0:F
 
-    .line 8
     invoke-virtual/range {p0 .. p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a()V
 
-    .line 9
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h0:Landroid/os/Handler;
 
     invoke-direct {v0, v2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b(I)Landroid/os/Message;
@@ -5017,7 +4475,6 @@
 
     goto/16 :goto_1
 
-    .line 10
     :cond_3
     iget v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t0:F
 
@@ -5025,7 +4482,6 @@
 
     sub-float/2addr v1, v3
 
-    .line 11
     iget-boolean v3, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v0:Z
 
     if-eqz v3, :cond_4
@@ -5048,11 +4504,9 @@
 
     goto :goto_0
 
-    .line 12
     :cond_4
     iput-boolean v4, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v0:Z
 
-    .line 13
     iget v3, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->s0:F
 
     add-float/2addr v3, v1
@@ -5065,39 +4519,31 @@
 
     iput v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
-    .line 14
     invoke-direct/range {p0 .. p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b()V
 
-    .line 15
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->invalidate()V
 
-    .line 16
     :goto_0
     invoke-direct {v0, v2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g(I)V
 
     goto :goto_1
 
-    .line 17
     :cond_5
     iget-boolean v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v0:Z
 
     if-eqz v1, :cond_6
 
-    .line 18
     invoke-direct/range {p0 .. p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Landroid/view/MotionEvent;)V
 
     goto :goto_1
 
-    .line 19
     :cond_6
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->V:Landroid/view/VelocityTracker;
 
     const/16 v3, 0x3e8
 
-    .line 20
     invoke-virtual {v1, v3}, Landroid/view/VelocityTracker;->computeCurrentVelocity(I)V
 
-    .line 21
     invoke-virtual {v1}, Landroid/view/VelocityTracker;->getYVelocity()F
 
     move-result v1
@@ -5108,7 +4554,6 @@
 
     float-to-int v1, v1
 
-    .line 22
     invoke-static {v1}, Ljava/lang/Math;->abs(I)I
 
     move-result v3
@@ -5117,7 +4562,6 @@
 
     if-le v3, v4, :cond_7
 
-    .line 23
     iget-object v8, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->U:Landroidx/core/widget/i;
 
     const/4 v9, 0x0
@@ -5134,7 +4578,6 @@
 
     const/high16 v1, -0x80000000
 
-    .line 24
     invoke-direct {v0, v1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d(I)I
 
     move-result v15
@@ -5145,16 +4588,12 @@
 
     move-result v16
 
-    .line 25
     invoke-virtual/range {v8 .. v16}, Landroidx/core/widget/i;->a(IIIIIIII)V
 
-    .line 26
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->invalidate()V
 
-    .line 27
     invoke-direct {v0, v7}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g(I)V
 
-    .line 28
     :cond_7
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h0:Landroid/os/Handler;
 
@@ -5164,39 +4603,31 @@
 
     invoke-virtual {v1, v3, v5, v6}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 29
     invoke-direct/range {p0 .. p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->f()V
 
     goto :goto_1
 
-    .line 30
     :cond_8
     iput-boolean v2, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v0:Z
 
-    .line 31
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h0:Landroid/os/Handler;
 
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 32
     invoke-virtual/range {p0 .. p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a()V
 
-    .line 33
     iget v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u0:F
 
     iput v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t0:F
 
-    .line 34
     iget v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E0:I
 
     int-to-float v1, v1
 
     iput v1, v0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->s0:F
 
-    .line 35
     invoke-direct {v0, v4}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g(I)V
 
-    .line 36
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v1
@@ -5210,7 +4641,6 @@
 .method public setContentTextTypeface(Landroid/graphics/Typeface;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b0:Landroid/text/TextPaint;
 
     invoke-virtual {v0, p1}, Landroid/text/TextPaint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
@@ -5221,15 +4651,12 @@
 .method public setDisplayedValues([Ljava/lang/String;)V
     .locals 5
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g()V
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a()V
 
     if-eqz p1, :cond_2
 
-    .line 4
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->w:I
 
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v:I
@@ -5244,13 +4671,10 @@
 
     if-gt v0, v2, :cond_1
 
-    .line 5
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b([Ljava/lang/String;)V
 
-    .line 6
     invoke-direct {p0, v1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Z)V
 
-    .line 7
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
     const/4 v0, 0x0
@@ -5259,7 +4683,6 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
 
-    .line 8
     iget-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
     if-eqz p1, :cond_0
@@ -5276,10 +4699,8 @@
     :goto_0
     invoke-direct {p0, v0, v1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(IZ)V
 
-    .line 9
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->i0:Landroid/os/Handler;
 
     const/4 v0, 0x3
@@ -5288,7 +4709,6 @@
 
     return-void
 
-    .line 11
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -5330,7 +4750,6 @@
 
     throw v0
 
-    .line 12
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -5346,7 +4765,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0, p2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->setDisplayedValuesAndPickedIndex([Ljava/lang/String;IZ)V
 
     return-void
@@ -5355,35 +4773,28 @@
 .method public setDisplayedValuesAndPickedIndex([Ljava/lang/String;IZ)V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a()V
 
     if-eqz p1, :cond_3
 
     if-ltz p2, :cond_2
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b([Ljava/lang/String;)V
 
     const/4 p1, 0x1
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Z)V
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->l()V
 
-    .line 5
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->m()V
 
-    .line 6
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
     add-int/2addr v0, p2
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
 
-    .line 7
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
     if-eqz v0, :cond_0
@@ -5404,7 +4815,6 @@
 
     if-eqz p3, :cond_1
 
-    .line 8
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->h0:Landroid/os/Handler;
 
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b(I)Landroid/os/Message;
@@ -5415,13 +4825,11 @@
 
     invoke-virtual {p2, p1, v0, v1}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 9
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     :cond_1
     return-void
 
-    .line 10
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -5443,7 +4851,6 @@
 
     throw p1
 
-    .line 11
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -5457,23 +4864,19 @@
 .method public setDividerColor(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->m:I
 
     if-ne v0, p1, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->m:I
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->W:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
@@ -5488,7 +4891,6 @@
 
     if-lez v0, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -5505,7 +4907,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -5531,7 +4932,6 @@
 .method public setHintText(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E:Ljava/lang/String;
 
     invoke-direct {p0, v0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(Ljava/lang/String;Ljava/lang/String;)Z
@@ -5542,11 +4942,9 @@
 
     return-void
 
-    .line 2
     :cond_0
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E:Ljava/lang/String;
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
     invoke-virtual {p1}, Landroid/graphics/Paint;->getFontMetrics()Landroid/graphics/Paint$FontMetrics;
@@ -5559,7 +4957,6 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->L:F
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->E:Ljava/lang/String;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
@@ -5570,7 +4967,6 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->g:I
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->i0:Landroid/os/Handler;
 
     const/4 v0, 0x3
@@ -5583,23 +4979,19 @@
 .method public setHintTextColor(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c:I
 
     if-ne v0, p1, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c:I
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
@@ -5608,7 +5000,6 @@
 .method public setHintTextTypeface(Landroid/graphics/Typeface;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->c0:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
@@ -5619,12 +5010,10 @@
 .method public setMaxValue(I)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v:I
 
     sub-int v2, p1, v1
@@ -5635,27 +5024,22 @@
 
     if-gt v2, v0, :cond_0
 
-    .line 3
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->w:I
 
     sub-int/2addr p1, v1
 
-    .line 4
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
     add-int/2addr p1, v0
 
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u:I
 
-    .line 5
     invoke-virtual {p0, v0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->setMinAndMaxShowIndex(II)V
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->l()V
 
     return-void
 
-    .line 7
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -5693,7 +5077,6 @@
 
     throw v0
 
-    .line 8
     :cond_1
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -5709,7 +5092,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, p1, p2, v0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->setMinAndMaxShowIndex(IIZ)V
 
     return-void
@@ -5720,14 +5102,12 @@
 
     if-gt p1, p2, :cond_7
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d0:[Ljava/lang/String;
 
     if-eqz v0, :cond_6
 
     if-ltz p1, :cond_5
 
-    .line 3
     array-length v1, v0
 
     const/4 v2, 0x1
@@ -5738,17 +5118,14 @@
 
     if-ltz p2, :cond_3
 
-    .line 4
     array-length v0, v0
 
     sub-int/2addr v0, v2
 
     if-gt p2, v0, :cond_2
 
-    .line 5
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
-    .line 6
     iput p2, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u:I
 
     if-eqz p3, :cond_1
@@ -5757,10 +5134,8 @@
 
     add-int/2addr p1, p2
 
-    .line 7
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
 
-    .line 8
     iget-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
     if-eqz p1, :cond_0
@@ -5777,13 +5152,11 @@
     :goto_0
     invoke-direct {p0, p2, v2}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(IZ)V
 
-    .line 9
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     :cond_1
     return-void
 
-    .line 10
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -5817,7 +5190,6 @@
 
     throw p1
 
-    .line 11
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -5839,7 +5211,6 @@
 
     throw p1
 
-    .line 12
     :cond_4
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
@@ -5873,7 +5244,6 @@
 
     throw p2
 
-    .line 13
     :cond_5
     new-instance p2, Ljava/lang/IllegalArgumentException;
 
@@ -5895,7 +5265,6 @@
 
     throw p2
 
-    .line 14
     :cond_6
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -5905,7 +5274,6 @@
 
     throw p1
 
-    .line 15
     :cond_7
     new-instance p3, Ljava/lang/IllegalArgumentException;
 
@@ -5941,15 +5309,12 @@
 .method public setMinValue(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v:I
 
     const/4 p1, 0x0
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->l()V
 
     return-void
@@ -5958,18 +5323,15 @@
 .method public setNormalTextColor(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a:I
 
     if-ne v0, p1, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a:I
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
@@ -5978,7 +5340,6 @@
 .method public setOnScrollListener(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->l0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$c;
 
     return-void
@@ -5987,7 +5348,6 @@
 .method public setOnValueChangeListenerInScrolling(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->m0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$e;
 
     return-void
@@ -5996,7 +5356,6 @@
 .method public setOnValueChangedListener(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$d;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->k0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$d;
 
     return-void
@@ -6005,7 +5364,6 @@
 .method public setOnValueChangedListenerRelativeToRaw(Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$f;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->j0:Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$f;
 
     return-void
@@ -6016,21 +5374,18 @@
 
     if-ltz p1, :cond_1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->getOneRecycleSize()I
 
     move-result v0
 
     if-ge p1, v0, :cond_1
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
     add-int/2addr v0, p1
 
     iput v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
 
-    .line 3
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
     if-eqz v0, :cond_0
@@ -6049,7 +5404,6 @@
     :goto_0
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(IZ)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     :cond_1
@@ -6059,7 +5413,6 @@
 .method public setPickedIndexRelativeToRaw(I)V
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->t:I
 
     const/4 v1, -0x1
@@ -6068,17 +5421,14 @@
 
     if-gt v0, p1, :cond_1
 
-    .line 2
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->u:I
 
     if-gt p1, v1, :cond_1
 
-    .line 3
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->B:I
 
     sub-int/2addr p1, v0
 
-    .line 4
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
     if-eqz v0, :cond_0
@@ -6097,7 +5447,6 @@
     :goto_0
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->a(IZ)V
 
-    .line 5
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     :cond_1
@@ -6107,18 +5456,15 @@
 .method public setSelectedTextColor(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b:I
 
     if-ne v0, p1, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->b:I
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
@@ -6127,18 +5473,15 @@
 .method public setTextSizeNormal(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
     if-ne v0, p1, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->d:I
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
@@ -6147,18 +5490,15 @@
 .method public setTextSizeSelected(I)V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
 
     if-ne v0, p1, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e:I
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     return-void
@@ -6167,24 +5507,20 @@
 .method public setValue(I)V
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->v:I
 
     if-lt p1, v0, :cond_1
 
-    .line 2
     iget v1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->w:I
 
     if-gt p1, v1, :cond_0
 
     sub-int/2addr p1, v0
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->setPickedIndexRelativeToRaw(I)V
 
     return-void
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -6206,7 +5542,6 @@
 
     throw v0
 
-    .line 5
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -6232,19 +5567,16 @@
 .method public setWrapSelectorWheel(Z)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
     if-eq v0, p1, :cond_2
 
     if-nez p1, :cond_1
 
-    .line 2
     iget p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->n0:I
 
     if-nez p1, :cond_0
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->e()V
 
     goto :goto_0
@@ -6252,19 +5584,15 @@
     :cond_0
     const/4 p1, 0x1
 
-    .line 4
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->R:Z
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->N:Z
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView;->o()V
 
-    .line 7
     invoke-virtual {p0}, Landroid/view/View;->postInvalidate()V
 
     :cond_2

@@ -1,6 +1,5 @@
 .class public Lcom/wang/avi/indicators/BallZigZagIndicator;
 .super Lcom/wang/avi/Indicator;
-.source "BallZigZagIndicator.java"
 
 
 # instance fields
@@ -13,14 +12,12 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/wang/avi/Indicator;-><init>()V
 
     const/4 v0, 0x2
 
     new-array v1, v0, [F
 
-    .line 2
     iput-object v1, p0, Lcom/wang/avi/indicators/BallZigZagIndicator;->translateX:[F
 
     new-array v0, v0, [F
@@ -42,10 +39,8 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 1
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 2
     iget-object v1, p0, Lcom/wang/avi/indicators/BallZigZagIndicator;->translateX:[F
 
     aget v1, v1, v0
@@ -56,7 +51,6 @@
 
     invoke-virtual {p1, v1, v2}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 3
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v1
@@ -69,7 +63,6 @@
 
     invoke-virtual {p1, v2, v2, v1, p2}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 4
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     add-int/lit8 v0, v0, 0x1
@@ -91,12 +84,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v1
@@ -105,7 +96,6 @@
 
     int-to-float v1, v1
 
-    .line 3
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v2
@@ -129,7 +119,6 @@
 
     aput v1, v7, v3
 
-    .line 4
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v8
@@ -164,7 +153,6 @@
 
     new-array v7, v6, [F
 
-    .line 5
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v10
@@ -208,7 +196,6 @@
 
     aput v2, v10, v9
 
-    .line 6
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getHeight()I
 
     move-result v11
@@ -229,7 +216,6 @@
 
     new-array v6, v6, [F
 
-    .line 7
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getHeight()I
 
     move-result v10
@@ -277,10 +263,8 @@
     :cond_1
     const-wide/16 v5, 0x3e8
 
-    .line 8
     invoke-virtual {v7, v5, v6}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 9
     new-instance v8, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct {v8}, Landroid/view/animation/LinearInterpolator;-><init>()V
@@ -289,40 +273,32 @@
 
     const/4 v8, -0x1
 
-    .line 10
     invoke-virtual {v7, v8}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 11
     new-instance v9, Lcom/wang/avi/indicators/BallZigZagIndicator$1;
 
     invoke-direct {v9, p0, v4}, Lcom/wang/avi/indicators/BallZigZagIndicator$1;-><init>(Lcom/wang/avi/indicators/BallZigZagIndicator;I)V
 
     invoke-virtual {p0, v7, v9}, Lcom/wang/avi/Indicator;->addUpdateListener(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 12
     invoke-virtual {v10, v5, v6}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 13
     new-instance v5, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct {v5}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
     invoke-virtual {v10, v5}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 14
     invoke-virtual {v10, v8}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 15
     new-instance v5, Lcom/wang/avi/indicators/BallZigZagIndicator$2;
 
     invoke-direct {v5, p0, v4}, Lcom/wang/avi/indicators/BallZigZagIndicator$2;-><init>(Lcom/wang/avi/indicators/BallZigZagIndicator;I)V
 
     invoke-virtual {p0, v10, v5}, Lcom/wang/avi/Indicator;->addUpdateListener(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 16
     invoke-virtual {v0, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 17
     invoke-virtual {v0, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v4, v4, 0x1

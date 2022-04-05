@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/CartesianList$1;
 .super Lcom/google/common/collect/ImmutableList;
-.source "CartesianList.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/google/common/collect/CartesianList;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/CartesianList$1;->this$0:Lcom/google/common/collect/CartesianList;
 
     iput p2, p0, Lcom/google/common/collect/CartesianList$1;->val$index:I
@@ -51,14 +49,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/CartesianList$1;->size()I
 
     move-result v0
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/CartesianList$1;->this$0:Lcom/google/common/collect/CartesianList;
 
     iget v1, p0, Lcom/google/common/collect/CartesianList$1;->val$index:I
@@ -67,7 +63,6 @@
 
     move-result v0
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/collect/CartesianList$1;->this$0:Lcom/google/common/collect/CartesianList;
 
     invoke-static {v1}, Lcom/google/common/collect/CartesianList;->access$000(Lcom/google/common/collect/CartesianList;)Lcom/google/common/collect/ImmutableList;
@@ -98,7 +93,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/CartesianList$1;->this$0:Lcom/google/common/collect/CartesianList;
 
     invoke-static {v0}, Lcom/google/common/collect/CartesianList;->access$000(Lcom/google/common/collect/CartesianList;)Lcom/google/common/collect/ImmutableList;

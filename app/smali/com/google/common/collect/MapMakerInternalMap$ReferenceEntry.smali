@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/common/collect/MapMakerInternalMap$ReferenceEntry;
 .super Ljava/lang/Object;
-.source "MapMakerInternalMap.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/internal/fuseable/ScalarCallable;
 .super Ljava/lang/Object;
-.source "ScalarCallable.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;

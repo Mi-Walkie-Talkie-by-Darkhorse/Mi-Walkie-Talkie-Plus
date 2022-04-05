@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/location/AMapLocationListener;
 .super Ljava/lang/Object;
-.source "AMapLocationListener.java"
 
 
 # virtual methods

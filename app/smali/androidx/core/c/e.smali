@@ -1,6 +1,5 @@
 .class public final Landroidx/core/c/e;
 .super Ljava/lang/Object;
-.source "TextDirectionHeuristicsCompat.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method static constructor <clinit>()V
     .locals 4
 
-    .line 1
     new-instance v0, Landroidx/core/c/e$e;
 
     const/4 v1, 0x0
@@ -41,7 +39,6 @@
 
     sput-object v0, Landroidx/core/c/e;->a:Landroidx/core/c/d;
 
-    .line 2
     new-instance v0, Landroidx/core/c/e$e;
 
     const/4 v3, 0x1
@@ -50,7 +47,6 @@
 
     sput-object v0, Landroidx/core/c/e;->b:Landroidx/core/c/d;
 
-    .line 3
     new-instance v0, Landroidx/core/c/e$e;
 
     sget-object v1, Landroidx/core/c/e$b;->a:Landroidx/core/c/e$b;
@@ -59,7 +55,6 @@
 
     sput-object v0, Landroidx/core/c/e;->c:Landroidx/core/c/d;
 
-    .line 4
     new-instance v0, Landroidx/core/c/e$e;
 
     sget-object v1, Landroidx/core/c/e$b;->a:Landroidx/core/c/e$b;
@@ -68,14 +63,12 @@
 
     sput-object v0, Landroidx/core/c/e;->d:Landroidx/core/c/d;
 
-    .line 5
     new-instance v0, Landroidx/core/c/e$e;
 
     sget-object v1, Landroidx/core/c/e$a;->b:Landroidx/core/c/e$a;
 
     invoke-direct {v0, v1, v2}, Landroidx/core/c/e$e;-><init>(Landroidx/core/c/e$c;Z)V
 
-    .line 6
     sget-object v0, Landroidx/core/c/e$f;->b:Landroidx/core/c/e$f;
 
     return-void

@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/DefaultChromeClient;
 .super Lcom/just/agentweb/MiddlewareWebChromeBase;
-.source "DefaultChromeClient.java"
 
 
 # static fields
@@ -63,15 +62,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p3}, Lcom/just/agentweb/MiddlewareWebChromeBase;-><init>(Landroid/webkit/WebChromeClient;)V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mActivityWeakReference:Ljava/lang/ref/WeakReference;
 
-    .line 3
     const-class v1, Lcom/just/agentweb/DefaultChromeClient;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -82,56 +78,43 @@
 
     const/4 v1, 0x0
 
-    .line 4
     iput-boolean v1, p0, Lcom/just/agentweb/DefaultChromeClient;->mIsWrapper:Z
 
-    .line 5
     iput-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mOrigin:Ljava/lang/String;
 
-    .line 6
     iput-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mCallback:Landroid/webkit/GeolocationPermissions$Callback;
 
-    .line 7
     iput-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mAgentWebUIController:Ljava/lang/ref/WeakReference;
 
-    .line 8
     new-instance v0, Lcom/just/agentweb/DefaultChromeClient$1;
 
     invoke-direct {v0, p0}, Lcom/just/agentweb/DefaultChromeClient$1;-><init>(Lcom/just/agentweb/DefaultChromeClient;)V
 
     iput-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mPermissionListener:Lcom/just/agentweb/ActionActivity$PermissionListener;
 
-    .line 9
     iput-object p2, p0, Lcom/just/agentweb/DefaultChromeClient;->mIndicatorController:Lcom/just/agentweb/IndicatorController;
 
     if-eqz p3, :cond_0
 
     const/4 v1, 0x1
 
-    .line 10
     :cond_0
     iput-boolean v1, p0, Lcom/just/agentweb/DefaultChromeClient;->mIsWrapper:Z
 
-    .line 11
     iput-object p3, p0, Lcom/just/agentweb/DefaultChromeClient;->mWebChromeClient:Landroid/webkit/WebChromeClient;
 
-    .line 12
     new-instance p2, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object p2, p0, Lcom/just/agentweb/DefaultChromeClient;->mActivityWeakReference:Ljava/lang/ref/WeakReference;
 
-    .line 13
     iput-object p4, p0, Lcom/just/agentweb/DefaultChromeClient;->mIVideo:Lcom/just/agentweb/IVideo;
 
-    .line 14
     iput-object p5, p0, Lcom/just/agentweb/DefaultChromeClient;->mPermissionInterceptor:Lcom/just/agentweb/PermissionInterceptor;
 
-    .line 15
     iput-object p6, p0, Lcom/just/agentweb/DefaultChromeClient;->mWebView:Landroid/webkit/WebView;
 
-    .line 16
     new-instance p1, Ljava/lang/ref/WeakReference;
 
     invoke-static {p6}, Lcom/just/agentweb/AgentWebUtils;->getAgentWebUIControllerByWebView(Landroid/webkit/WebView;)Lcom/just/agentweb/AbsAgentWebUIController;
@@ -148,7 +131,6 @@
 .method static synthetic access$000(Lcom/just/agentweb/DefaultChromeClient;)Ljava/lang/ref/WeakReference;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/just/agentweb/DefaultChromeClient;->mActivityWeakReference:Ljava/lang/ref/WeakReference;
 
     return-object p0
@@ -157,7 +139,6 @@
 .method static synthetic access$100(Lcom/just/agentweb/DefaultChromeClient;)Landroid/webkit/GeolocationPermissions$Callback;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/just/agentweb/DefaultChromeClient;->mCallback:Landroid/webkit/GeolocationPermissions$Callback;
 
     return-object p0
@@ -166,7 +147,6 @@
 .method static synthetic access$102(Lcom/just/agentweb/DefaultChromeClient;Landroid/webkit/GeolocationPermissions$Callback;)Landroid/webkit/GeolocationPermissions$Callback;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultChromeClient;->mCallback:Landroid/webkit/GeolocationPermissions$Callback;
 
     return-object p1
@@ -175,7 +155,6 @@
 .method static synthetic access$200(Lcom/just/agentweb/DefaultChromeClient;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/just/agentweb/DefaultChromeClient;->mOrigin:Ljava/lang/String;
 
     return-object p0
@@ -184,7 +163,6 @@
 .method static synthetic access$202(Lcom/just/agentweb/DefaultChromeClient;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultChromeClient;->mOrigin:Ljava/lang/String;
 
     return-object p1
@@ -193,7 +171,6 @@
 .method static synthetic access$300(Lcom/just/agentweb/DefaultChromeClient;)Ljava/lang/ref/WeakReference;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/just/agentweb/DefaultChromeClient;->mAgentWebUIController:Ljava/lang/ref/WeakReference;
 
     return-object p0
@@ -202,7 +179,6 @@
 .method private createAndOpenCommonFileChooser(Landroid/webkit/ValueCallback;Ljava/lang/String;)V
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mActivityWeakReference:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -215,7 +191,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 2
     invoke-virtual {v1}, Landroid/app/Activity;->isFinishing()Z
 
     move-result v0
@@ -224,7 +199,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v2, p0, Lcom/just/agentweb/DefaultChromeClient;->mWebView:Landroid/webkit/WebView;
 
@@ -244,7 +218,6 @@
 
     return-void
 
-    .line 4
     :cond_1
     :goto_0
     new-instance p2, Ljava/lang/Object;
@@ -259,14 +232,12 @@
 .method private onGeolocationPermissionsShowPromptInternal(Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mPermissionInterceptor:Lcom/just/agentweb/PermissionInterceptor;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v2, p0, Lcom/just/agentweb/DefaultChromeClient;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v2}, Landroid/webkit/WebView;->getUrl()Ljava/lang/String;
@@ -283,12 +254,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {p2, p1, v1, v1}, Landroid/webkit/GeolocationPermissions$Callback;->invoke(Ljava/lang/String;ZZ)V
 
     return-void
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mActivityWeakReference:Ljava/lang/ref/WeakReference;
 
@@ -300,12 +269,10 @@
 
     if-nez v0, :cond_1
 
-    .line 5
     invoke-interface {p2, p1, v1, v1}, Landroid/webkit/GeolocationPermissions$Callback;->invoke(Ljava/lang/String;ZZ)V
 
     return-void
 
-    .line 6
     :cond_1
     sget-object v2, Lcom/just/agentweb/AgentWebPermissions;->LOCATION:[Ljava/lang/String;
 
@@ -319,7 +286,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 7
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->TAG:Ljava/lang/String;
 
     const-string v2, "onGeolocationPermissionsShowPromptInternal:true"
@@ -328,7 +294,6 @@
 
     const/4 v0, 0x1
 
-    .line 8
     invoke-interface {p2, p1, v0, v1}, Landroid/webkit/GeolocationPermissions$Callback;->invoke(Ljava/lang/String;ZZ)V
 
     goto :goto_0
@@ -336,7 +301,6 @@
     :cond_2
     new-array v1, v1, [Ljava/lang/String;
 
-    .line 9
     invoke-interface {v2, v1}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v1
@@ -349,21 +313,16 @@
 
     const/16 v2, 0x60
 
-    .line 10
     invoke-virtual {v1, v2}, Lcom/just/agentweb/Action;->setFromIntention(I)Lcom/just/agentweb/Action;
 
-    .line 11
     iget-object v2, p0, Lcom/just/agentweb/DefaultChromeClient;->mPermissionListener:Lcom/just/agentweb/ActionActivity$PermissionListener;
 
     invoke-static {v2}, Lcom/just/agentweb/ActionActivity;->setPermissionListener(Lcom/just/agentweb/ActionActivity$PermissionListener;)V
 
-    .line 12
     iput-object p2, p0, Lcom/just/agentweb/DefaultChromeClient;->mCallback:Landroid/webkit/GeolocationPermissions$Callback;
 
-    .line 13
     iput-object p1, p0, Lcom/just/agentweb/DefaultChromeClient;->mOrigin:Ljava/lang/String;
 
-    .line 14
     invoke-static {v0, v1}, Lcom/just/agentweb/ActionActivity;->start(Landroid/app/Activity;Lcom/just/agentweb/Action;)V
 
     :goto_0
@@ -389,7 +348,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/just/agentweb/DefaultChromeClient;->TAG:Ljava/lang/String;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -492,7 +450,6 @@
 
     invoke-static {p1, v0}, Lcom/just/agentweb/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object p1, p0, Lcom/just/agentweb/DefaultChromeClient;->mActivityWeakReference:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -505,7 +462,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {v0}, Landroid/app/Activity;->isFinishing()Z
 
     move-result p1
@@ -514,7 +470,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/just/agentweb/DefaultChromeClient;->mWebView:Landroid/webkit/WebView;
 
@@ -548,7 +503,6 @@
 .method public onConsoleMessage(Landroid/webkit/ConsoleMessage;)Z
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/just/agentweb/WebChromeClientDelegate;->onConsoleMessage(Landroid/webkit/ConsoleMessage;)Z
 
     const/4 p1, 0x1
@@ -563,7 +517,6 @@
 
     mul-long p7, p7, p1
 
-    .line 1
     invoke-interface {p9, p7, p8}, Landroid/webkit/WebStorage$QuotaUpdater;->updateQuota(J)V
 
     return-void
@@ -572,7 +525,6 @@
 .method public onGeolocationPermissionsHidePrompt()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/just/agentweb/WebChromeClientDelegate;->onGeolocationPermissionsHidePrompt()V
 
     return-void
@@ -581,7 +533,6 @@
 .method public onGeolocationPermissionsShowPrompt(Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/just/agentweb/DefaultChromeClient;->onGeolocationPermissionsShowPromptInternal(Ljava/lang/String;Landroid/webkit/GeolocationPermissions$Callback;)V
 
     return-void
@@ -590,12 +541,10 @@
 .method public onHideCustomView()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mIVideo:Lcom/just/agentweb/IVideo;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/just/agentweb/IVideo;->onHideCustomView()V
 
     :cond_0
@@ -605,7 +554,6 @@
 .method public onJsAlert(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mAgentWebUIController:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -614,7 +562,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mAgentWebUIController:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -625,7 +572,6 @@
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/just/agentweb/AbsAgentWebUIController;->onJsAlert(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     :cond_0
     invoke-virtual {p4}, Landroid/webkit/JsResult;->confirm()V
 
@@ -637,7 +583,6 @@
 .method public onJsConfirm(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mAgentWebUIController:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -646,7 +591,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mAgentWebUIController:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -666,7 +610,6 @@
 .method public onJsPrompt(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsPromptResult;)Z
     .locals 6
 
-    .line 1
     :try_start_0
     iget-object p1, p0, Lcom/just/agentweb/DefaultChromeClient;->mAgentWebUIController:Ljava/lang/ref/WeakReference;
 
@@ -676,7 +619,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/just/agentweb/DefaultChromeClient;->mAgentWebUIController:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -706,14 +648,12 @@
     :catch_0
     move-exception p1
 
-    .line 3
     invoke-static {}, Lcom/just/agentweb/LogUtils;->isDebug()Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_0
@@ -726,15 +666,12 @@
 .method public onProgressChanged(Landroid/webkit/WebView;I)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2}, Lcom/just/agentweb/WebChromeClientDelegate;->onProgressChanged(Landroid/webkit/WebView;I)V
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mIndicatorController:Lcom/just/agentweb/IndicatorController;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0, p1, p2}, Lcom/just/agentweb/IndicatorController;->progress(Landroid/webkit/WebView;I)V
 
     :cond_0
@@ -748,7 +685,6 @@
 
     mul-long p1, p1, p3
 
-    .line 1
     invoke-interface {p5, p1, p2}, Landroid/webkit/WebStorage$QuotaUpdater;->updateQuota(J)V
 
     return-void
@@ -757,7 +693,6 @@
 .method public onReceivedIcon(Landroid/webkit/WebView;Landroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Lcom/just/agentweb/WebChromeClientDelegate;->onReceivedIcon(Landroid/webkit/WebView;Landroid/graphics/Bitmap;)V
 
     return-void
@@ -766,12 +701,10 @@
 .method public onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mIsWrapper:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1, p2}, Lcom/just/agentweb/WebChromeClientDelegate;->onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
 
     :cond_0
@@ -781,12 +714,10 @@
 .method public onShowCustomView(Landroid/view/View;Landroid/webkit/WebChromeClient$CustomViewCallback;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->mIVideo:Lcom/just/agentweb/IVideo;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1, p2}, Lcom/just/agentweb/IVideo;->onShowCustomView(Landroid/view/View;Landroid/webkit/WebChromeClient$CustomViewCallback;)V
 
     :cond_0
@@ -812,14 +743,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->TAG:Ljava/lang/String;
 
     const-string v1, "openFileChooser>=5.0"
 
     invoke-static {v0, v1}, Lcom/just/agentweb/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     invoke-direct {p0, p1, p2, p3}, Lcom/just/agentweb/DefaultChromeClient;->openFileChooserAboveL(Landroid/webkit/WebView;Landroid/webkit/ValueCallback;Landroid/webkit/WebChromeClient$FileChooserParams;)Z
 
     move-result p1
@@ -838,7 +767,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->TAG:Ljava/lang/String;
 
     const-string v1, "openFileChooser<3.0"
@@ -847,7 +775,6 @@
 
     const-string v0, "*/*"
 
-    .line 4
     invoke-direct {p0, p1, v0}, Lcom/just/agentweb/DefaultChromeClient;->createAndOpenCommonFileChooser(Landroid/webkit/ValueCallback;Ljava/lang/String;)V
 
     return-void
@@ -856,14 +783,12 @@
 .method public openFileChooser(Landroid/webkit/ValueCallback;Ljava/lang/String;)V
     .locals 2
 
-    .line 5
     iget-object v0, p0, Lcom/just/agentweb/DefaultChromeClient;->TAG:Ljava/lang/String;
 
     const-string v1, "openFileChooser>3.0"
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     invoke-direct {p0, p1, p2}, Lcom/just/agentweb/DefaultChromeClient;->createAndOpenCommonFileChooser(Landroid/webkit/ValueCallback;Ljava/lang/String;)V
 
     return-void
@@ -883,14 +808,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object p3, p0, Lcom/just/agentweb/DefaultChromeClient;->TAG:Ljava/lang/String;
 
     const-string v0, "openFileChooser>=4.1"
 
     invoke-static {p3, v0}, Lcom/just/agentweb/LogUtils;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/just/agentweb/DefaultChromeClient;->createAndOpenCommonFileChooser(Landroid/webkit/ValueCallback;Ljava/lang/String;)V
 
     return-void

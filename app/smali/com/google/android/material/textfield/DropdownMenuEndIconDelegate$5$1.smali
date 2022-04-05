@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$5$1;
 .super Ljava/lang/Object;
-.source "DropdownMenuEndIconDelegate.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$5;Landroid/widget/AutoCompleteTextView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$5$1;->this$1:Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$5;
 
     iput-object p2, p0, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$5$1;->val$editText:Landroid/widget/AutoCompleteTextView;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$5$1;->val$editText:Landroid/widget/AutoCompleteTextView;
 
     iget-object v1, p0, Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$5$1;->this$1:Lcom/google/android/material/textfield/DropdownMenuEndIconDelegate$5;

@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/q$a;
 .super Ljava/lang/Object;
-.source "MotionScene.java"
 
 # interfaces
 .implements Landroid/view/animation/Interpolator;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/constraintlayout/motion/widget/q;La/c/a/a/c;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/constraintlayout/motion/widget/q$a;->a:La/c/a/a/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public getInterpolation(F)F
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/q$a;->a:La/c/a/a/c;
 
     float-to-double v1, p1

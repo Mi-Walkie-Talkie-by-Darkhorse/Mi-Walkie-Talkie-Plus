@@ -1,6 +1,5 @@
 .class public Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;
 .super Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;
-.source "IndeterminateHorizontalProgressDrawable.java"
 
 # interfaces
 .implements Lme/zhanghai/android/materialprogressbar/MaterialProgressDrawable;
@@ -49,7 +48,6 @@
 .method static constructor <clinit>()V
     .locals 7
 
-    .line 1
     new-instance v0, Landroid/graphics/RectF;
 
     const/high16 v1, 0x3f800000    # 1.0f
@@ -64,7 +62,6 @@
 
     sput-object v0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_BOUND:Landroid/graphics/RectF;
 
-    .line 2
     new-instance v0, Landroid/graphics/RectF;
 
     const/high16 v5, -0x3f800000    # -4.0f
@@ -75,7 +72,6 @@
 
     sput-object v0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_PADDED_BOUND:Landroid/graphics/RectF;
 
-    .line 3
     new-instance v0, Landroid/graphics/RectF;
 
     const/high16 v2, -0x3cf00000    # -144.0f
@@ -86,7 +82,6 @@
 
     sput-object v0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_PROGRESS:Landroid/graphics/RectF;
 
-    .line 4
     new-instance v0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
 
     const v1, 0x3dcccccd    # 0.1f
@@ -97,7 +92,6 @@
 
     sput-object v0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_1_TRANSFORM_X:Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
 
-    .line 5
     new-instance v0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
 
     const v2, -0x3cba6666    # -197.6f
@@ -112,15 +106,12 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;-><init>(Landroid/content/Context;)V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->mShowBackground:Z
 
-    .line 3
     new-instance v1, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
 
     sget-object v2, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_1_TRANSFORM_X:Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
@@ -129,7 +120,6 @@
 
     iput-object v1, p0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->mRect1TransformX:Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
 
-    .line 4
     new-instance v1, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
 
     sget-object v2, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_2_TRANSFORM_X:Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
@@ -138,7 +128,6 @@
 
     iput-object v1, p0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->mRect2TransformX:Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
 
-    .line 5
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -153,7 +142,6 @@
 
     mul-float v2, v2, v1
 
-    .line 6
     invoke-static {v2}, Ljava/lang/Math;->round(F)I
 
     move-result v2
@@ -164,7 +152,6 @@
 
     mul-float v1, v1, v2
 
-    .line 7
     invoke-static {v1}, Ljava/lang/Math;->round(F)I
 
     move-result v1
@@ -175,7 +162,6 @@
 
     const/4 v2, 0x0
 
-    .line 8
     invoke-static {v1, v2, p1}, Lme/zhanghai/android/materialprogressbar/internal/ThemeUtils;->getFloatFromAttrRes(IFLandroid/content/Context;)F
 
     move-result p1
@@ -186,10 +172,8 @@
 
     new-array p1, p1, [Landroid/animation/Animator;
 
-    .line 9
     iget-object v1, p0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->mRect1TransformX:Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
 
-    .line 10
     invoke-static {v1}, Lme/zhanghai/android/materialprogressbar/Animators;->createIndeterminateHorizontalRect1(Ljava/lang/Object;)Landroid/animation/Animator;
 
     move-result-object v1
@@ -200,7 +184,6 @@
 
     iget-object v1, p0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->mRect2TransformX:Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
 
-    .line 11
     invoke-static {v1}, Lme/zhanghai/android/materialprogressbar/Animators;->createIndeterminateHorizontalRect2(Ljava/lang/Object;)Landroid/animation/Animator;
 
     move-result-object v1
@@ -215,7 +198,6 @@
 .method private static drawBackgroundRect(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_BOUND:Landroid/graphics/RectF;
 
     invoke-virtual {p0, v0, p1}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
@@ -226,31 +208,26 @@
 .method private static drawProgressRect(Landroid/graphics/Canvas;Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;Landroid/graphics/Paint;)V
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Landroid/graphics/Canvas;->save()I
 
     move-result v0
 
-    .line 2
     iget v1, p1, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;->mTranslateX:F
 
     const/4 v2, 0x0
 
     invoke-virtual {p0, v1, v2}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 3
     iget p1, p1, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;->mScaleX:F
 
     const/high16 v1, 0x3f800000    # 1.0f
 
     invoke-virtual {p0, p1, v1}, Landroid/graphics/Canvas;->scale(FF)V
 
-    .line 4
     sget-object p1, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_PROGRESS:Landroid/graphics/RectF;
 
     invoke-virtual {p0, p1, p2}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/RectF;Landroid/graphics/Paint;)V
 
-    .line 5
     invoke-virtual {p0, v0}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
     return-void
@@ -261,7 +238,6 @@
 .method public bridge synthetic draw(Landroid/graphics/Canvas;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;->draw(Landroid/graphics/Canvas;)V
 
     return-void
@@ -270,7 +246,6 @@
 .method public bridge synthetic getAlpha()I
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->getAlpha()I
 
     move-result v0
@@ -281,7 +256,6 @@
 .method public bridge synthetic getColorFilter()Landroid/graphics/ColorFilter;
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->getColorFilter()Landroid/graphics/ColorFilter;
 
     move-result-object v0
@@ -292,7 +266,6 @@
 .method public bridge synthetic getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
 
     move-result-object v0
@@ -303,7 +276,6 @@
 .method public getIntrinsicHeight()I
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressDrawable;->mUseIntrinsicPadding:Z
 
     if-eqz v0, :cond_0
@@ -322,7 +294,6 @@
 .method public bridge synthetic getOpacity()I
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->getOpacity()I
 
     move-result v0
@@ -333,7 +304,6 @@
 .method public getShowBackground()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->mShowBackground:Z
 
     return v0
@@ -342,7 +312,6 @@
 .method public bridge synthetic getUseIntrinsicPadding()Z
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lme/zhanghai/android/materialprogressbar/BaseProgressDrawable;->getUseIntrinsicPadding()Z
 
     move-result v0
@@ -353,7 +322,6 @@
 .method public bridge synthetic isRunning()Z
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;->isRunning()Z
 
     move-result v0
@@ -364,7 +332,6 @@
 .method public bridge synthetic isStateful()Z
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->isStateful()Z
 
     move-result v0
@@ -375,7 +342,6 @@
 .method protected onDraw(Landroid/graphics/Canvas;IILandroid/graphics/Paint;)V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressDrawable;->mUseIntrinsicPadding:Z
 
     const/high16 v1, 0x40000000    # 2.0f
@@ -384,7 +350,6 @@
 
     int-to-float p2, p2
 
-    .line 2
     sget-object v0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_PADDED_BOUND:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
@@ -405,7 +370,6 @@
 
     invoke-virtual {p1, p2, p3}, Landroid/graphics/Canvas;->scale(FF)V
 
-    .line 3
     sget-object p2, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_PADDED_BOUND:Landroid/graphics/RectF;
 
     invoke-virtual {p2}, Landroid/graphics/RectF;->width()F
@@ -429,7 +393,6 @@
     :cond_0
     int-to-float p2, p2
 
-    .line 4
     sget-object v0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_BOUND:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
@@ -450,7 +413,6 @@
 
     invoke-virtual {p1, p2, p3}, Landroid/graphics/Canvas;->scale(FF)V
 
-    .line 5
     sget-object p2, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->RECT_BOUND:Landroid/graphics/RectF;
 
     invoke-virtual {p2}, Landroid/graphics/RectF;->width()F
@@ -469,13 +431,11 @@
 
     invoke-virtual {p1, p2, p3}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 6
     :goto_0
     iget-boolean p2, p0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->mShowBackground:Z
 
     if-eqz p2, :cond_1
 
-    .line 7
     iget p2, p0, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->mAlpha:I
 
     int-to-float p2, p2
@@ -490,21 +450,17 @@
 
     invoke-virtual {p4, p2}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 8
     invoke-static {p1, p4}, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->drawBackgroundRect(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
 
-    .line 9
     iget p2, p0, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->mAlpha:I
 
     invoke-virtual {p4, p2}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 10
     :cond_1
     iget-object p2, p0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->mRect2TransformX:Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
 
     invoke-static {p1, p2, p4}, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->drawProgressRect(Landroid/graphics/Canvas;Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;Landroid/graphics/Paint;)V
 
-    .line 11
     iget-object p2, p0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->mRect1TransformX:Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;
 
     invoke-static {p1, p2, p4}, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->drawProgressRect(Landroid/graphics/Canvas;Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable$RectTransformX;Landroid/graphics/Paint;)V
@@ -515,7 +471,6 @@
 .method protected onPreparePaint(Landroid/graphics/Paint;)V
     .locals 1
 
-    .line 1
     sget-object v0, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
@@ -526,7 +481,6 @@
 .method public bridge synthetic setAlpha(I)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->setAlpha(I)V
 
     return-void
@@ -539,7 +493,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
     return-void
@@ -548,15 +501,12 @@
 .method public setShowBackground(Z)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->mShowBackground:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput-boolean p1, p0, Lme/zhanghai/android/materialprogressbar/IndeterminateHorizontalProgressDrawable;->mShowBackground:Z
 
-    .line 3
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     :cond_0
@@ -570,7 +520,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->setTint(I)V
 
     return-void
@@ -583,7 +532,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->setTintList(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -596,7 +544,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseDrawable;->setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
     return-void
@@ -605,7 +552,6 @@
 .method public bridge synthetic setUseIntrinsicPadding(Z)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseProgressDrawable;->setUseIntrinsicPadding(Z)V
 
     return-void
@@ -614,7 +560,6 @@
 .method public bridge synthetic start()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;->start()V
 
     return-void
@@ -623,7 +568,6 @@
 .method public bridge synthetic stop()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lme/zhanghai/android/materialprogressbar/BaseIndeterminateProgressDrawable;->stop()V
 
     return-void

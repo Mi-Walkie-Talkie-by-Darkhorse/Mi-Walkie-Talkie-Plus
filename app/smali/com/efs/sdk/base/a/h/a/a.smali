@@ -1,6 +1,5 @@
 .class public final Lcom/efs/sdk/base/a/h/a/a;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, "efs-base"
@@ -20,7 +18,6 @@
 
     invoke-direct {v0, v1, v2}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     sput-object v0, Lcom/efs/sdk/base/a/h/a/a;->a:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V

@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/shape/AdjustedCornerSize;
 .super Ljava/lang/Object;
-.source "AdjustedCornerSize.java"
 
 # interfaces
 .implements Lcom/google/android/material/shape/CornerSize;
@@ -28,21 +27,17 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     :goto_0
     instance-of v0, p2, Lcom/google/android/material/shape/AdjustedCornerSize;
 
     if-eqz v0, :cond_0
 
-    .line 3
     check-cast p2, Lcom/google/android/material/shape/AdjustedCornerSize;
 
     iget-object p2, p2, Lcom/google/android/material/shape/AdjustedCornerSize;->other:Lcom/google/android/material/shape/CornerSize;
 
-    .line 4
     move-object v0, p2
 
     check-cast v0, Lcom/google/android/material/shape/AdjustedCornerSize;
@@ -53,11 +48,9 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iput-object p2, p0, Lcom/google/android/material/shape/AdjustedCornerSize;->other:Lcom/google/android/material/shape/CornerSize;
 
-    .line 6
     iput p1, p0, Lcom/google/android/material/shape/AdjustedCornerSize;->adjustment:F
 
     return-void
@@ -74,7 +67,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/google/android/material/shape/AdjustedCornerSize;
 
@@ -84,11 +76,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/google/android/material/shape/AdjustedCornerSize;
 
-    .line 3
     iget-object v1, p0, Lcom/google/android/material/shape/AdjustedCornerSize;->other:Lcom/google/android/material/shape/CornerSize;
 
     iget-object v3, p1, Lcom/google/android/material/shape/AdjustedCornerSize;->other:Lcom/google/android/material/shape/CornerSize;
@@ -123,7 +113,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/shape/AdjustedCornerSize;->other:Lcom/google/android/material/shape/CornerSize;
 
     invoke-interface {v0, p1}, Lcom/google/android/material/shape/CornerSize;->getCornerSize(Landroid/graphics/RectF;)F
@@ -150,7 +139,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-object v1, p0, Lcom/google/android/material/shape/AdjustedCornerSize;->other:Lcom/google/android/material/shape/CornerSize;
 
     const/4 v2, 0x0
@@ -167,7 +155,6 @@
 
     aput-object v1, v0, v2
 
-    .line 2
     invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     move-result v0

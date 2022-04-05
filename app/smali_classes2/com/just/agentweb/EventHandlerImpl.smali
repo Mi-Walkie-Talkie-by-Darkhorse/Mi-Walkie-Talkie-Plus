@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/EventHandlerImpl;
 .super Ljava/lang/Object;
-.source "EventHandlerImpl.java"
 
 # interfaces
 .implements Lcom/just/agentweb/IEventHandler;
@@ -16,13 +15,10 @@
 .method public constructor <init>(Landroid/webkit/WebView;Lcom/just/agentweb/EventInterceptor;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/just/agentweb/EventHandlerImpl;->mWebView:Landroid/webkit/WebView;
 
-    .line 3
     iput-object p2, p0, Lcom/just/agentweb/EventHandlerImpl;->mEventInterceptor:Lcom/just/agentweb/EventInterceptor;
 
     return-void
@@ -31,7 +27,6 @@
 .method public static final getInstantce(Landroid/webkit/WebView;Lcom/just/agentweb/EventInterceptor;)Lcom/just/agentweb/EventHandlerImpl;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/just/agentweb/EventHandlerImpl;
 
     invoke-direct {v0, p0, p1}, Lcom/just/agentweb/EventHandlerImpl;-><init>(Landroid/webkit/WebView;Lcom/just/agentweb/EventInterceptor;)V
@@ -44,7 +39,6 @@
 .method public back()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/EventHandlerImpl;->mEventInterceptor:Lcom/just/agentweb/EventInterceptor;
 
     const/4 v1, 0x1
@@ -59,7 +53,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/EventHandlerImpl;->mWebView:Landroid/webkit/WebView;
 
@@ -71,7 +64,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/just/agentweb/EventHandlerImpl;->mWebView:Landroid/webkit/WebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->goBack()V
@@ -91,7 +83,6 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/EventHandlerImpl;->back()Z
 
     move-result p1

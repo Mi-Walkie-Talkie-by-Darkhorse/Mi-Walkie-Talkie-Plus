@@ -1,6 +1,5 @@
 .class abstract Lcom/bumptech/glide/load/engine/x/d;
 .super Ljava/lang/Object;
-.source "BaseKeyPool.java"
 
 
 # annotations
@@ -29,12 +28,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0x14
 
-    .line 2
     invoke-static {v0}, Lcom/bumptech/glide/util/j;->a(I)Ljava/util/Queue;
 
     move-result-object v0
@@ -62,7 +59,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/d;->a:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->size()I
@@ -73,7 +69,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/d;->a:Ljava/util/Queue;
 
     invoke-interface {v0, p1}, Ljava/util/Queue;->offer(Ljava/lang/Object;)Z
@@ -90,7 +85,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/x/d;->a:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->poll()Ljava/lang/Object;
@@ -101,7 +95,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/bumptech/glide/load/engine/x/d;->a()Lcom/bumptech/glide/load/engine/x/m;
 
     move-result-object v0

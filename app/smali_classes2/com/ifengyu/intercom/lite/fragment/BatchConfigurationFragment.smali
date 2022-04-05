@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;
 .super Lcom/ifengyu/intercom/lite/base/e;
-.source "BatchConfigurationFragment.java"
 
 
 # instance fields
@@ -41,7 +40,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/base/e;-><init>()V
 
     return-void
@@ -50,7 +48,6 @@
 .method private A()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;->a()Lcom/qmuiteam/qmui/alpha/QMUIAlphaImageButton;
@@ -69,14 +66,12 @@
 .method private B()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mBtnAction:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaButton;->setChangeAlphaWhenPress(Z)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mBtnAction:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
 
     new-instance v1, Lcom/ifengyu/intercom/lite/fragment/h;
@@ -85,7 +80,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -106,7 +100,6 @@
 .method private C()V
     .locals 3
 
-    .line 1
     invoke-static {p0}, Landroidx/lifecycle/x;->a(Landroidx/fragment/app/Fragment;)Landroidx/lifecycle/w;
 
     move-result-object v0
@@ -121,7 +114,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
-    .line 2
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/h/f0;->c()Landroidx/lifecycle/p;
 
     move-result-object v0
@@ -136,7 +128,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/k;Landroidx/lifecycle/q;)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/h/f0;->d()Landroidx/lifecycle/p;
@@ -153,7 +144,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroidx/lifecycle/LiveData;->observe(Landroidx/lifecycle/k;Landroidx/lifecycle/q;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/h/f0;->e()Landroidx/lifecycle/p;
@@ -176,7 +166,6 @@
 .method private D()V
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/lite/c/b/e;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -187,7 +176,6 @@
 
     const v1, 0x7f110172
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/b$b;->d(I)Lcom/qmuiteam/qmui/widget/dialog/b$b;
 
     sget-object v1, Lcom/ifengyu/intercom/lite/fragment/d;->a:Lcom/ifengyu/intercom/lite/fragment/d;
@@ -198,14 +186,12 @@
 
     const/4 v4, 0x1
 
-    .line 3
     invoke-virtual {v0, v2, v3, v4, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(IIILcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     check-cast v0, Lcom/qmuiteam/qmui/widget/dialog/b$b;
 
     const v1, 0x7f1200fc
 
-    .line 4
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/b;
 
     move-result-object v0
@@ -218,7 +204,6 @@
 .method private E()V
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/lite/c/b/e;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -229,7 +214,6 @@
 
     const v1, 0x7f110171
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/b$b;->d(I)Lcom/qmuiteam/qmui/widget/dialog/b$b;
 
     sget-object v1, Lcom/ifengyu/intercom/lite/fragment/b;->a:Lcom/ifengyu/intercom/lite/fragment/b;
@@ -240,7 +224,6 @@
 
     const/4 v4, 0x2
 
-    .line 3
     invoke-virtual {v0, v2, v3, v4, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(IIILcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     check-cast v0, Lcom/qmuiteam/qmui/widget/dialog/b$b;
@@ -251,14 +234,12 @@
 
     const v3, 0x7f11009c
 
-    .line 4
     invoke-virtual {v0, v2, v3, v2, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(IIILcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     check-cast v0, Lcom/qmuiteam/qmui/widget/dialog/b$b;
 
     const v1, 0x7f1200fc
 
-    .line 5
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/b;
 
     move-result-object v0
@@ -273,35 +254,30 @@
 
     if-eqz p1, :cond_0
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     const v0, 0x7f110174
 
     invoke-virtual {p1, v0}, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;->f(I)Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mTvSubtitle:Landroidx/appcompat/widget/AppCompatTextView;
 
     const v0, 0x7f11016e
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mTvDetail:Landroid/widget/TextView;
 
     const v0, 0x7f110170
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mBtnAction:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
 
     const v0, 0x7f11016c
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setText(I)V
 
-    .line 11
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mBtnAction:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -316,7 +292,6 @@
 
     invoke-virtual {p1, v0}, Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;->setBgData(Landroid/content/res/ColorStateList;)V
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mIvImage:Landroidx/appcompat/widget/AppCompatImageView;
 
     const/high16 v0, 0x7f0e0000
@@ -325,7 +300,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
@@ -333,28 +307,24 @@
 
     invoke-virtual {p1, v0}, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;->f(I)Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mTvSubtitle:Landroidx/appcompat/widget/AppCompatTextView;
 
     const v0, 0x7f11016d
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mTvDetail:Landroid/widget/TextView;
 
     const v0, 0x7f11016f
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
-    .line 16
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mBtnAction:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
 
     const v0, 0x7f11016b
 
     invoke-virtual {p1, v0}, Landroid/widget/Button;->setText(I)V
 
-    .line 17
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mBtnAction:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -369,7 +339,6 @@
 
     invoke-virtual {p1, v0}, Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;->setBgData(Landroid/content/res/ColorStateList;)V
 
-    .line 18
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->mIvImage:Landroidx/appcompat/widget/AppCompatImageView;
 
     const v0, 0x7f0e0001
@@ -383,7 +352,6 @@
 .method static synthetic b(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 6
     invoke-virtual {p0}, Landroidx/appcompat/app/d;->dismiss()V
 
     return-void
@@ -392,7 +360,6 @@
 .method static synthetic c(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 15
     invoke-virtual {p0}, Landroidx/appcompat/app/d;->dismiss()V
 
     return-void
@@ -401,7 +368,6 @@
 .method public static newInstance()Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;-><init>()V
@@ -414,15 +380,12 @@
 .method public synthetic a(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 4
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/h/f0;->g()V
 
-    .line 6
     invoke-super {p0}, Lcom/qmuiteam/qmui/arch/b;->o()V
 
     return-void
@@ -431,21 +394,18 @@
 .method public synthetic a(Ljava/lang/Boolean;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v0
 
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->a(Z)V
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->D()V
 
     :cond_0
@@ -455,7 +415,6 @@
 .method public synthetic b(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->o()V
 
     return-void
@@ -464,12 +423,10 @@
 .method public synthetic b(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->x()V
 
     if-nez p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/h/f0;->b()Lcom/ifengyu/intercom/lite/e/f;
@@ -487,7 +444,6 @@
     :cond_0
     const p1, 0x7f1102c8
 
-    .line 4
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/lite/base/e;->a(I)V
 
     :goto_0
@@ -497,7 +453,6 @@
 .method protected b(Landroid/content/Context;II)Z
     .locals 0
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/h/f0;->b()Lcom/ifengyu/intercom/lite/e/f;
@@ -516,7 +471,6 @@
 .method public synthetic c(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/h/f0;->b()Lcom/ifengyu/intercom/lite/e/f;
@@ -531,27 +485,22 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->z()V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/h/f0;->f()V
 
-    .line 4
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->N()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -562,28 +511,23 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->z()V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/h/f0;->g()V
 
-    .line 9
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->N()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-interface {p1, v0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -599,12 +543,10 @@
 .method public synthetic c(Ljava/lang/String;)V
     .locals 0
 
-    .line 12
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/base/e;->x()V
 
     if-nez p1, :cond_0
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/h/f0;->b()Lcom/ifengyu/intercom/lite/e/f;
@@ -622,7 +564,6 @@
     :cond_0
     const p1, 0x7f1102c8
 
-    .line 14
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/lite/base/e;->a(I)V
 
     :goto_0
@@ -632,7 +573,6 @@
 .method protected o()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/h/f0;->b()Lcom/ifengyu/intercom/lite/e/f;
@@ -645,12 +585,10 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-super {p0}, Lcom/qmuiteam/qmui/arch/b;->o()V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->E()V
 
@@ -665,10 +603,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->onViewStateRestored(Landroid/os/Bundle;)V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->z:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/h/f0;->b()Lcom/ifengyu/intercom/lite/e/f;
@@ -687,7 +623,6 @@
 .method protected p()Landroid/view/View;
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -704,16 +639,12 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->A()V
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->B()V
 
-    .line 5
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/fragment/BatchConfigurationFragment;->C()V
 
     return-object v0

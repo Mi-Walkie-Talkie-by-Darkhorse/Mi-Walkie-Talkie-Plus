@@ -1,6 +1,5 @@
 .class Landroidx/drawerlayout/widget/DrawerLayout$a;
 .super Ljava/lang/Object;
-.source "DrawerLayout.java"
 
 # interfaces
 .implements Landroid/view/View$OnApplyWindowInsetsListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/drawerlayout/widget/DrawerLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/drawerlayout/widget/DrawerLayout$a;->a:Landroidx/drawerlayout/widget/DrawerLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,10 +36,8 @@
 .method public onApplyWindowInsets(Landroid/view/View;Landroid/view/WindowInsets;)Landroid/view/WindowInsets;
     .locals 1
 
-    .line 1
     check-cast p1, Landroidx/drawerlayout/widget/DrawerLayout;
 
-    .line 2
     invoke-virtual {p2}, Landroid/view/WindowInsets;->getSystemWindowInsetTop()I
 
     move-result v0
@@ -58,7 +54,6 @@
     :goto_0
     invoke-virtual {p1, p2, v0}, Landroidx/drawerlayout/widget/DrawerLayout;->setChildInsets(Ljava/lang/Object;Z)V
 
-    .line 3
     invoke-virtual {p2}, Landroid/view/WindowInsets;->consumeSystemWindowInsets()Landroid/view/WindowInsets;
 
     move-result-object p1

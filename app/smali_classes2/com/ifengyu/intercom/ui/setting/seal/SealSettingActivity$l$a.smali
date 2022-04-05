@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l$a;
 .super Ljava/lang/Object;
-.source "SealSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
@@ -63,7 +60,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l$a;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
@@ -74,7 +70,6 @@
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 3
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/i/g0;->b()V
 

@@ -1,13 +1,11 @@
 .class public Lcom/tencent/open/web/security/b;
 .super Lcom/tencent/open/a;
-.source "ProGuard"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/tencent/open/a;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -55,7 +52,6 @@
 
     invoke-static {v1, v0}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     invoke-interface {p3}, Ljava/util/List;->size()I
 
     move-result v0
@@ -65,7 +61,6 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 3
     :try_start_0
     invoke-interface {p3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -88,7 +83,6 @@
     :catch_0
     move-exception v3
 
-    .line 4
     invoke-virtual {v3}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     :goto_1
@@ -96,7 +90,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/tencent/open/a;->a:Ljava/util/HashMap;
 
@@ -110,10 +103,8 @@
 
     const-string v0, "-->handler != null"
 
-    .line 6
     invoke-static {v1, v0}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 7
     invoke-virtual {p1, p2, p3, p4}, Lcom/tencent/open/a$b;->call(Ljava/lang/String;Ljava/util/List;Lcom/tencent/open/a$a;)V
 
     goto :goto_2
@@ -121,12 +112,10 @@
     :cond_1
     const-string p1, "-->handler == null"
 
-    .line 8
     invoke-static {v1, p1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz p4, :cond_2
 
-    .line 9
     invoke-virtual {p4}, Lcom/tencent/open/a$a;->a()V
 
     :cond_2
@@ -137,7 +126,6 @@
 .method public a(Landroid/webkit/WebView;Ljava/lang/String;)Z
     .locals 13
 
-    .line 10
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -162,13 +150,11 @@
 
     return v0
 
-    .line 11
     :cond_0
     invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v2
 
-    .line 12
     invoke-virtual {v2}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v2
@@ -183,7 +169,6 @@
 
     return v0
 
-    .line 13
     :cond_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -205,7 +190,6 @@
 
     move-result-object v2
 
-    .line 14
     new-instance v3, Ljava/util/ArrayList;
 
     invoke-static {v2}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -214,7 +198,6 @@
 
     invoke-direct {v3, v2}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 15
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
     move-result v2
@@ -228,7 +211,6 @@
     :cond_2
     const/4 v2, 0x2
 
-    .line 16
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -237,7 +219,6 @@
 
     const/4 v4, 0x3
 
-    .line 17
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -246,7 +227,6 @@
 
     const/4 v5, 0x4
 
-    .line 18
     invoke-virtual {v3, v5}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -255,7 +235,6 @@
 
     const/4 v6, 0x5
 
-    .line 19
     invoke-virtual {v3, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
@@ -264,7 +243,6 @@
 
     check-cast v12, Ljava/lang/String;
 
-    .line 20
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -293,7 +271,6 @@
 
     invoke-static {v1, v6}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 21
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -314,7 +291,6 @@
 
     goto :goto_0
 
-    .line 22
     :cond_3
     :try_start_0
     invoke-static {v5}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
@@ -323,7 +299,6 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 23
     new-instance v0, Lcom/tencent/open/web/security/c;
 
     move-object v7, v0
@@ -336,7 +311,6 @@
 
     const/4 p1, 0x6
 
-    .line 24
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
     move-result p2
@@ -349,7 +323,6 @@
 
     move-result-object p1
 
-    .line 25
     invoke-virtual {p0, v2, v4, p1, v0}, Lcom/tencent/open/web/security/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/tencent/open/a$a;)V
 
     return v1

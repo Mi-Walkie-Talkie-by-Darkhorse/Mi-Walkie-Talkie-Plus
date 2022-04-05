@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/jl;
 .super Ljava/lang/Object;
-.source "CgiManager.java"
 
 
 # annotations
@@ -81,15 +80,12 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/jl;->a:I
 
-    .line 3
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
@@ -98,10 +94,8 @@
 
     const/4 v1, 0x0
 
-    .line 4
     iput-object v1, p0, Lcom/amap/api/col/l3/jl;->m:Ljava/lang/String;
 
-    .line 5
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -110,65 +104,48 @@
 
     const/16 v2, -0x71
 
-    .line 6
     iput v2, p0, Lcom/amap/api/col/l3/jl;->o:I
 
-    .line 7
     iput-object v1, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
-    .line 8
     iput-object v1, p0, Lcom/amap/api/col/l3/jl;->p:Lcom/amap/api/col/l3/jj;
 
     const-wide/16 v2, 0x0
 
-    .line 9
     iput-wide v2, p0, Lcom/amap/api/col/l3/jl;->d:J
 
-    .line 10
     iput v0, p0, Lcom/amap/api/col/l3/jl;->r:I
 
-    .line 11
     iput-wide v2, p0, Lcom/amap/api/col/l3/jl;->s:J
 
-    .line 12
     iput-boolean v0, p0, Lcom/amap/api/col/l3/jl;->f:Z
 
-    .line 13
     iput-object v1, p0, Lcom/amap/api/col/l3/jl;->g:Landroid/telephony/PhoneStateListener;
 
-    .line 14
     iput-object v1, p0, Lcom/amap/api/col/l3/jl;->h:Ljava/lang/String;
 
-    .line 15
     iput-boolean v0, p0, Lcom/amap/api/col/l3/jl;->i:Z
 
-    .line 16
     iput-object v1, p0, Lcom/amap/api/col/l3/jl;->j:Ljava/lang/StringBuilder;
 
-    .line 17
     iput-object v1, p0, Lcom/amap/api/col/l3/jl;->k:Landroid/os/HandlerThread;
 
-    .line 18
     iput-boolean v0, p0, Lcom/amap/api/col/l3/jl;->t:Z
 
-    .line 19
     new-instance v2, Ljava/lang/Object;
 
     invoke-direct {v2}, Ljava/lang/Object;-><init>()V
 
     iput-object v2, p0, Lcom/amap/api/col/l3/jl;->u:Ljava/lang/Object;
 
-    .line 20
     iput-object p1, p0, Lcom/amap/api/col/l3/jl;->l:Landroid/content/Context;
 
-    .line 21
     iget-object v2, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
     if-nez v2, :cond_0
 
     const-string v2, "phone"
 
-    .line 22
     invoke-static {p1, v2}, Lcom/amap/api/col/l3/ki;->a(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -177,7 +154,6 @@
 
     iput-object p1, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
-    .line 23
     :cond_0
     iget-object p1, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
@@ -293,7 +269,6 @@
 
     invoke-virtual {p1}, Landroid/os/HandlerThread;->start()V
 
-    .line 24
     :cond_3
     new-instance p1, Lcom/amap/api/col/l3/jj;
 
@@ -307,7 +282,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/jl;J)J
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/amap/api/col/l3/jl;->s:J
 
     return-wide p1
@@ -322,7 +296,6 @@
 
     return-object v0
 
-    .line 35
     :cond_0
     :try_start_0
     invoke-static {p1, p2, p3}, Lcom/amap/api/col/l3/kd;->a(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
@@ -331,7 +304,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 36
     check-cast p1, Landroid/telephony/CellLocation;
 
     goto :goto_0
@@ -339,7 +311,6 @@
     :cond_1
     move-object p1, v0
 
-    .line 37
     :goto_0
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/jl;->b(Landroid/telephony/CellLocation;)Z
 
@@ -378,7 +349,6 @@
 
     if-eqz p1, :cond_c
 
-    .line 38
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
     move-result v1
@@ -390,7 +360,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 39
     :goto_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -398,7 +367,6 @@
 
     if-ge v1, v2, :cond_9
 
-    .line 40
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -407,21 +375,17 @@
 
     if-eqz v2, :cond_8
 
-    .line 41
     :try_start_0
     invoke-virtual {v2}, Landroid/telephony/CellInfo;->isRegistered()Z
 
     move-result v3
 
-    .line 42
     instance-of v4, v2, Landroid/telephony/CellInfoCdma;
 
     if-eqz v4, :cond_2
 
-    .line 43
     check-cast v2, Landroid/telephony/CellInfoCdma;
 
-    .line 44
     invoke-virtual {v2}, Landroid/telephony/CellInfoCdma;->getCellIdentity()Landroid/telephony/CellIdentityCdma;
 
     move-result-object v4
@@ -434,7 +398,6 @@
 
     goto :goto_1
 
-    .line 45
     :cond_1
     invoke-direct {p0, v2, v3}, Lcom/amap/api/col/l3/jl;->a(Landroid/telephony/CellInfoCdma;Z)Lcom/amap/api/col/l3/jk;
 
@@ -442,16 +405,13 @@
 
     goto :goto_2
 
-    .line 46
     :cond_2
     instance-of v4, v2, Landroid/telephony/CellInfoGsm;
 
     if-eqz v4, :cond_4
 
-    .line 47
     check-cast v2, Landroid/telephony/CellInfoGsm;
 
-    .line 48
     invoke-virtual {v2}, Landroid/telephony/CellInfoGsm;->getCellIdentity()Landroid/telephony/CellIdentityGsm;
 
     move-result-object v4
@@ -464,7 +424,6 @@
 
     goto :goto_1
 
-    .line 49
     :cond_3
     invoke-static {v2, v3}, Lcom/amap/api/col/l3/jl;->a(Landroid/telephony/CellInfoGsm;Z)Lcom/amap/api/col/l3/jk;
 
@@ -472,16 +431,13 @@
 
     goto :goto_2
 
-    .line 50
     :cond_4
     instance-of v4, v2, Landroid/telephony/CellInfoWcdma;
 
     if-eqz v4, :cond_6
 
-    .line 51
     check-cast v2, Landroid/telephony/CellInfoWcdma;
 
-    .line 52
     invoke-virtual {v2}, Landroid/telephony/CellInfoWcdma;->getCellIdentity()Landroid/telephony/CellIdentityWcdma;
 
     move-result-object v4
@@ -494,7 +450,6 @@
 
     goto :goto_1
 
-    .line 53
     :cond_5
     invoke-static {v2, v3}, Lcom/amap/api/col/l3/jl;->a(Landroid/telephony/CellInfoWcdma;Z)Lcom/amap/api/col/l3/jk;
 
@@ -502,16 +457,13 @@
 
     goto :goto_2
 
-    .line 54
     :cond_6
     instance-of v4, v2, Landroid/telephony/CellInfoLte;
 
     if-eqz v4, :cond_9
 
-    .line 55
     check-cast v2, Landroid/telephony/CellInfoLte;
 
-    .line 56
     invoke-virtual {v2}, Landroid/telephony/CellInfoLte;->getCellIdentity()Landroid/telephony/CellIdentityLte;
 
     move-result-object v4
@@ -524,7 +476,6 @@
 
     goto :goto_1
 
-    .line 57
     :cond_7
     invoke-static {v2, v3}, Lcom/amap/api/col/l3/jl;->a(Landroid/telephony/CellInfoLte;Z)Lcom/amap/api/col/l3/jk;
 
@@ -547,7 +498,6 @@
     :goto_2
     if-eqz p1, :cond_b
 
-    .line 58
     :try_start_1
     iget v1, p1, Lcom/amap/api/col/l3/jk;->k:I
 
@@ -555,14 +505,12 @@
 
     if-ne v1, v2, :cond_a
 
-    .line 59
     new-instance v1, Landroid/telephony/cdma/CdmaCellLocation;
 
     invoke-direct {v1}, Landroid/telephony/cdma/CdmaCellLocation;-><init>()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 60
     :try_start_2
     iget v4, p1, Lcom/amap/api/col/l3/jk;->i:I
 
@@ -582,7 +530,6 @@
 
     goto :goto_3
 
-    .line 61
     :cond_a
     :try_start_3
     new-instance v1, Landroid/telephony/gsm/GsmCellLocation;
@@ -591,7 +538,6 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 62
     :try_start_4
     iget v2, p1, Lcom/amap/api/col/l3/jk;->c:I
 
@@ -641,24 +587,18 @@
 .method private static a(IZIIIII)Lcom/amap/api/col/l3/jk;
     .locals 1
 
-    .line 89
     new-instance v0, Lcom/amap/api/col/l3/jk;
 
     invoke-direct {v0, p0, p1}, Lcom/amap/api/col/l3/jk;-><init>(IZ)V
 
-    .line 90
     iput p2, v0, Lcom/amap/api/col/l3/jk;->a:I
 
-    .line 91
     iput p3, v0, Lcom/amap/api/col/l3/jk;->b:I
 
-    .line 92
     iput p4, v0, Lcom/amap/api/col/l3/jk;->c:I
 
-    .line 93
     iput p5, v0, Lcom/amap/api/col/l3/jk;->d:I
 
-    .line 94
     iput p6, v0, Lcom/amap/api/col/l3/jk;->j:I
 
     return-object v0
@@ -672,12 +612,10 @@
         }
     .end annotation
 
-    .line 95
     invoke-virtual {p1}, Landroid/telephony/CellInfoCdma;->getCellIdentity()Landroid/telephony/CellIdentityCdma;
 
     move-result-object v0
 
-    .line 96
     iget-object v1, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
     invoke-static {v1}, Lcom/amap/api/col/l3/ki;->a(Landroid/telephony/TelephonyManager;)[Ljava/lang/String;
@@ -686,7 +624,6 @@
 
     const/4 v2, 0x0
 
-    .line 97
     :try_start_0
     aget-object v3, v1, v2
 
@@ -698,7 +635,6 @@
 
     const/4 v4, 0x1
 
-    .line 98
     :try_start_1
     aget-object v1, v1, v4
 
@@ -729,7 +665,6 @@
 
     const/4 v9, 0x0
 
-    .line 99
     invoke-virtual {p1}, Landroid/telephony/CellInfoCdma;->getCellSignalStrength()Landroid/telephony/CellSignalStrengthCdma;
 
     move-result-object p1
@@ -744,35 +679,30 @@
 
     move-result-object p1
 
-    .line 100
     invoke-virtual {v0}, Landroid/telephony/CellIdentityCdma;->getSystemId()I
 
     move-result p2
 
     iput p2, p1, Lcom/amap/api/col/l3/jk;->g:I
 
-    .line 101
     invoke-virtual {v0}, Landroid/telephony/CellIdentityCdma;->getNetworkId()I
 
     move-result p2
 
     iput p2, p1, Lcom/amap/api/col/l3/jk;->h:I
 
-    .line 102
     invoke-virtual {v0}, Landroid/telephony/CellIdentityCdma;->getBasestationId()I
 
     move-result p2
 
     iput p2, p1, Lcom/amap/api/col/l3/jk;->i:I
 
-    .line 103
     invoke-virtual {v0}, Landroid/telephony/CellIdentityCdma;->getLatitude()I
 
     move-result p2
 
     iput p2, p1, Lcom/amap/api/col/l3/jk;->e:I
 
-    .line 104
     invoke-virtual {v0}, Landroid/telephony/CellIdentityCdma;->getLongitude()I
 
     move-result p2
@@ -790,12 +720,10 @@
         }
     .end annotation
 
-    .line 75
     invoke-virtual {p0}, Landroid/telephony/CellInfoGsm;->getCellIdentity()Landroid/telephony/CellIdentityGsm;
 
     move-result-object v0
 
-    .line 76
     invoke-virtual {v0}, Landroid/telephony/CellIdentityGsm;->getMcc()I
 
     move-result v3
@@ -812,7 +740,6 @@
 
     move-result v6
 
-    .line 77
     invoke-virtual {p0}, Landroid/telephony/CellInfoGsm;->getCellSignalStrength()Landroid/telephony/CellSignalStrengthGsm;
 
     move-result-object p0
@@ -825,7 +752,6 @@
 
     move v2, p1
 
-    .line 78
     invoke-static/range {v1 .. v7}, Lcom/amap/api/col/l3/jl;->a(IZIIIII)Lcom/amap/api/col/l3/jk;
 
     move-result-object p0
@@ -841,12 +767,10 @@
         }
     .end annotation
 
-    .line 84
     invoke-virtual {p0}, Landroid/telephony/CellInfoLte;->getCellIdentity()Landroid/telephony/CellIdentityLte;
 
     move-result-object v0
 
-    .line 85
     invoke-virtual {v0}, Landroid/telephony/CellIdentityLte;->getMcc()I
 
     move-result v3
@@ -863,7 +787,6 @@
 
     move-result v6
 
-    .line 86
     invoke-virtual {p0}, Landroid/telephony/CellInfoLte;->getCellSignalStrength()Landroid/telephony/CellSignalStrengthLte;
 
     move-result-object p0
@@ -876,12 +799,10 @@
 
     move v2, p1
 
-    .line 87
     invoke-static/range {v1 .. v7}, Lcom/amap/api/col/l3/jl;->a(IZIIIII)Lcom/amap/api/col/l3/jk;
 
     move-result-object p0
 
-    .line 88
     invoke-virtual {v0}, Landroid/telephony/CellIdentityLte;->getPci()I
 
     move-result p1
@@ -899,12 +820,10 @@
         }
     .end annotation
 
-    .line 79
     invoke-virtual {p0}, Landroid/telephony/CellInfoWcdma;->getCellIdentity()Landroid/telephony/CellIdentityWcdma;
 
     move-result-object v0
 
-    .line 80
     invoke-virtual {v0}, Landroid/telephony/CellIdentityWcdma;->getMcc()I
 
     move-result v3
@@ -917,7 +836,6 @@
 
     move-result v5
 
-    .line 81
     invoke-virtual {v0}, Landroid/telephony/CellIdentityWcdma;->getCid()I
 
     move-result v6
@@ -934,12 +852,10 @@
 
     move v2, p1
 
-    .line 82
     invoke-static/range {v1 .. v7}, Lcom/amap/api/col/l3/jl;->a(IZIIIII)Lcom/amap/api/col/l3/jk;
 
     move-result-object p0
 
-    .line 83
     invoke-virtual {v0}, Landroid/telephony/CellIdentityWcdma;->getPsc()I
 
     move-result p1
@@ -952,7 +868,6 @@
 .method private static a(Landroid/telephony/NeighboringCellInfo;[Ljava/lang/String;)Lcom/amap/api/col/l3/jk;
     .locals 4
 
-    .line 63
     :try_start_0
     new-instance v0, Lcom/amap/api/col/l3/jk;
 
@@ -962,7 +877,6 @@
 
     invoke-direct {v0, v1, v2}, Lcom/amap/api/col/l3/jk;-><init>(IZ)V
 
-    .line 64
     aget-object v3, p1, v2
 
     invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -971,7 +885,6 @@
 
     iput v3, v0, Lcom/amap/api/col/l3/jk;->a:I
 
-    .line 65
     aget-object p1, p1, v1
 
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -984,26 +897,22 @@
 
     new-array v1, v2, [Ljava/lang/Object;
 
-    .line 66
     invoke-static {p0, p1, v1}, Lcom/amap/api/col/l3/kd;->b(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)I
 
     move-result p1
 
     iput p1, v0, Lcom/amap/api/col/l3/jk;->c:I
 
-    .line 67
     invoke-virtual {p0}, Landroid/telephony/NeighboringCellInfo;->getCid()I
 
     move-result p1
 
     iput p1, v0, Lcom/amap/api/col/l3/jk;->d:I
 
-    .line 68
     invoke-virtual {p0}, Landroid/telephony/NeighboringCellInfo;->getRssi()I
 
     move-result p0
 
-    .line 69
     invoke-static {p0}, Lcom/amap/api/col/l3/ki;->a(I)I
 
     move-result p0
@@ -1021,7 +930,6 @@
 
     const-string v0, "getGsm"
 
-    .line 70
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p0, 0x0
@@ -1032,7 +940,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/jl;)Ljava/lang/Object;
     .locals 0
 
-    .line 2
     iget-object p0, p0, Lcom/amap/api/col/l3/jl;->u:Ljava/lang/Object;
 
     return-object p0
@@ -1043,20 +950,17 @@
 
     if-eqz p1, :cond_6
 
-    .line 22
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
     if-nez v0, :cond_0
 
     goto/16 :goto_1
 
-    .line 23
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 24
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/jl;->b(Landroid/telephony/CellLocation;)Z
 
     move-result v0
@@ -1068,12 +972,10 @@
     :cond_1
     const/4 v0, 0x1
 
-    .line 25
     iput v0, p0, Lcom/amap/api/col/l3/jl;->a:I
 
     const/4 v1, 0x0
 
-    .line 26
     iget-object v2, p0, Lcom/amap/api/col/l3/jl;->b:Ljava/util/ArrayList;
 
     check-cast p1, Landroid/telephony/gsm/GsmCellLocation;
@@ -1122,7 +1024,6 @@
 
     return-void
 
-    .line 27
     :cond_2
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -1130,7 +1031,6 @@
 
     if-gt p1, p3, :cond_3
 
-    .line 28
     iget-object p1, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
     new-array p3, v4, [Ljava/lang/Object;
@@ -1148,7 +1048,6 @@
     :cond_3
     if-eqz v1, :cond_6
 
-    .line 29
     invoke-interface {v1}, Ljava/util/List;->isEmpty()Z
 
     move-result p1
@@ -1157,7 +1056,6 @@
 
     goto :goto_1
 
-    .line 30
     :cond_4
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1179,7 +1077,6 @@
 
     if-eqz p3, :cond_5
 
-    .line 31
     invoke-virtual {p3}, Landroid/telephony/NeighboringCellInfo;->getLac()I
 
     move-result v0
@@ -1194,14 +1091,12 @@
 
     if-eqz v0, :cond_5
 
-    .line 32
     invoke-static {p3, p2}, Lcom/amap/api/col/l3/jl;->a(Landroid/telephony/NeighboringCellInfo;[Ljava/lang/String;)Lcom/amap/api/col/l3/jk;
 
     move-result-object p3
 
     if-eqz p3, :cond_5
 
-    .line 33
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p3}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
@@ -1210,7 +1105,6 @@
 
     if-nez v0, :cond_5
 
-    .line 34
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -1229,7 +1123,6 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/jl;->o:I
 
     return-void
@@ -1362,7 +1255,6 @@
 
     return v0
 
-    .line 71
     :cond_0
     invoke-virtual {p0}, Landroid/telephony/CellIdentityCdma;->getSystemId()I
 
@@ -1404,7 +1296,6 @@
 
     return v0
 
-    .line 72
     :cond_0
     invoke-virtual {p0}, Landroid/telephony/CellIdentityGsm;->getLac()I
 
@@ -1448,7 +1339,6 @@
 
     return v0
 
-    .line 74
     :cond_0
     invoke-virtual {p0}, Landroid/telephony/CellIdentityLte;->getTac()I
 
@@ -1492,7 +1382,6 @@
 
     return v0
 
-    .line 73
     :cond_0
     invoke-virtual {p0}, Landroid/telephony/CellIdentityWcdma;->getLac()I
 
@@ -1556,7 +1445,6 @@
 .method private b(Landroid/telephony/CellLocation;)Z
     .locals 1
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/jl;->a(Landroid/telephony/CellLocation;)Z
 
     move-result p1
@@ -1565,7 +1453,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     iput v0, p0, Lcom/amap/api/col/l3/jl;->a:I
 
     :cond_0
@@ -1575,7 +1462,6 @@
 .method static synthetic b(Lcom/amap/api/col/l3/jl;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/amap/api/col/l3/jl;->t:Z
 
     return p0
@@ -1584,7 +1470,6 @@
 .method private c(Landroid/telephony/CellLocation;)I
     .locals 3
 
-    .line 5
     iget-boolean v0, p0, Lcom/amap/api/col/l3/jl;->i:Z
 
     const/4 v1, 0x0
@@ -1598,7 +1483,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     instance-of p1, p1, Landroid/telephony/gsm/GsmCellLocation;
 
@@ -1612,7 +1496,6 @@
     :try_start_0
     const-string p1, "android.telephony.cdma.CdmaCellLocation"
 
-    .line 7
     invoke-static {p1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1628,7 +1511,6 @@
 
     const-string v2, "getCellLocT"
 
-    .line 8
     invoke-static {p1, v0, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
@@ -1638,30 +1520,25 @@
 .method private n()Landroid/telephony/CellLocation;
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     invoke-virtual {v0}, Landroid/telephony/TelephonyManager;->getCellLocation()Landroid/telephony/CellLocation;
 
     move-result-object v0
 
-    .line 3
     iput-object v1, p0, Lcom/amap/api/col/l3/jl;->h:Ljava/lang/String;
 
-    .line 4
     invoke-direct {p0, v0}, Lcom/amap/api/col/l3/jl;->b(Landroid/telephony/CellLocation;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 5
     iput-object v0, p0, Lcom/amap/api/col/l3/jl;->e:Landroid/telephony/CellLocation;
     :try_end_0
     .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1672,14 +1549,12 @@
     :catchall_0
     move-exception v0
 
-    .line 6
     iput-object v1, p0, Lcom/amap/api/col/l3/jl;->h:Ljava/lang/String;
 
     const-string v2, "CgiManager"
 
     const-string v3, "getCellLocation"
 
-    .line 7
     invoke-static {v0, v2, v3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
@@ -1687,7 +1562,6 @@
     :catch_0
     move-exception v0
 
-    .line 8
     invoke-virtual {v0}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
 
     move-result-object v0
@@ -1707,7 +1581,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
     const/4 v1, 0x0
@@ -1716,13 +1589,11 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/jl;->n()Landroid/telephony/CellLocation;
 
     move-result-object v2
 
-    .line 3
     invoke-direct {p0, v2}, Lcom/amap/api/col/l3/jl;->b(Landroid/telephony/CellLocation;)Z
 
     move-result v3
@@ -1731,7 +1602,6 @@
 
     return-object v2
 
-    .line 4
     :cond_1
     invoke-static {}, Lcom/amap/api/col/l3/ki;->d()I
 
@@ -1741,13 +1611,11 @@
 
     if-lt v2, v3, :cond_2
 
-    .line 5
     :try_start_0
     invoke-virtual {v0}, Landroid/telephony/TelephonyManager;->getAllCellInfo()Ljava/util/List;
 
     move-result-object v2
 
-    .line 6
     invoke-direct {p0, v2}, Lcom/amap/api/col/l3/jl;->a(Ljava/util/List;)Landroid/telephony/CellLocation;
 
     move-result-object v1
@@ -1759,7 +1627,6 @@
     :catch_0
     move-exception v2
 
-    .line 7
     invoke-virtual {v2}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
 
     move-result-object v2
@@ -1777,7 +1644,6 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 8
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -1799,7 +1665,6 @@
     :cond_4
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 9
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -1821,7 +1686,6 @@
 .method private p()Landroid/telephony/CellLocation;
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->q:Ljava/lang/Object;
 
     const/4 v1, 0x0
@@ -1830,21 +1694,18 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     :try_start_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/jl;->q()Ljava/lang/Class;
 
     move-result-object v2
 
-    .line 3
     invoke-virtual {v2, v0}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_4
 
-    .line 4
     invoke-virtual {v2, v0}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1855,7 +1716,6 @@
 
     new-array v4, v3, [Ljava/lang/Object;
 
-    .line 5
     invoke-direct {p0, v0, v2, v4}, Lcom/amap/api/col/l3/jl;->a(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Landroid/telephony/CellLocation;
 
     move-result-object v1
@@ -1869,7 +1729,6 @@
 
     new-array v5, v4, [Ljava/lang/Object;
 
-    .line 6
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
@@ -1889,7 +1748,6 @@
 
     new-array v5, v4, [Ljava/lang/Object;
 
-    .line 7
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v6
@@ -1909,7 +1767,6 @@
 
     new-array v5, v4, [Ljava/lang/Object;
 
-    .line 8
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -1933,7 +1790,6 @@
 
     const-string v3, "getSim2Cgi"
 
-    .line 9
     invoke-static {v0, v2, v3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_4
@@ -1950,12 +1806,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Ljava/lang/ClassLoader;->getSystemClassLoader()Ljava/lang/ClassLoader;
 
     move-result-object v0
 
-    .line 2
     iget v1, p0, Lcom/amap/api/col/l3/jl;->r:I
 
     const/4 v2, 0x0
@@ -1987,7 +1841,6 @@
     :cond_2
     const-string v1, "android.telephony.TelephonyManager"
 
-    .line 3
     :goto_0
     :try_start_0
     invoke-virtual {v0, v1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
@@ -2005,7 +1858,6 @@
 
     const-string v3, "getSim2TmClass"
 
-    .line 4
     invoke-static {v0, v1, v3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_1
@@ -2018,12 +1870,10 @@
     :try_start_0
     const-string v0, "android.telephony.MSimTelephonyManager"
 
-    .line 1
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     const/4 v0, 0x1
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/jl;->r:I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2033,7 +1883,6 @@
     :catchall_0
     nop
 
-    .line 3
     :goto_0
     iget v0, p0, Lcom/amap/api/col/l3/jl;->r:I
 
@@ -2042,17 +1891,14 @@
     :try_start_1
     const-string v0, "android.telephony.TelephonyManager2"
 
-    .line 4
     invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     const/4 v0, 0x2
 
-    .line 5
     iput v0, p0, Lcom/amap/api/col/l3/jl;->r:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 6
     :catchall_1
     :cond_0
     iget v0, p0, Lcom/amap/api/col/l3/jl;->r:I
@@ -2073,7 +1919,6 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->b:Ljava/util/ArrayList;
 
     return-object v0
@@ -2084,7 +1929,6 @@
 
     const-string v0, "CgiManager"
 
-    .line 5
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/jl;->l:Landroid/content/Context;
 
@@ -2105,7 +1949,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_0
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -2139,7 +1982,6 @@
 
     if-eqz v1, :cond_1e
 
-    .line 7
     :cond_2
     iget-boolean v1, p0, Lcom/amap/api/col/l3/jl;->i:Z
 
@@ -2820,7 +2662,6 @@
 
     iput p1, p0, Lcom/amap/api/col/l3/jl;->a:I
 
-    .line 8
     :cond_1d
     invoke-static {}, Lcom/amap/api/col/l3/ki;->c()J
 
@@ -2828,18 +2669,15 @@
 
     iput-wide p1, p0, Lcom/amap/api/col/l3/jl;->d:J
 
-    .line 9
     :cond_1e
     iget-boolean p1, p0, Lcom/amap/api/col/l3/jl;->i:Z
 
     if-eqz p1, :cond_1f
 
-    .line 10
     invoke-virtual {p0}, Lcom/amap/api/col/l3/jl;->i()V
 
     return-void
 
-    .line 11
     :cond_1f
     iget p1, p0, Lcom/amap/api/col/l3/jl;->a:I
 
@@ -2887,7 +2725,6 @@
 
     const-string p2, "refresh"
 
-    .line 12
     invoke-static {p1, v0, p2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -2895,7 +2732,6 @@
     :catch_3
     move-exception p1
 
-    .line 13
     invoke-virtual {p1}, Ljava/lang/SecurityException;->getMessage()Ljava/lang/String;
 
     move-result-object p1
@@ -2914,7 +2750,6 @@
 
     return v0
 
-    .line 14
     :cond_0
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/jl;->c(Landroid/telephony/CellLocation;)I
 
@@ -2938,7 +2773,6 @@
 
     new-array v4, v0, [Ljava/lang/Object;
 
-    .line 15
     invoke-static {p1, v1, v4}, Lcom/amap/api/col/l3/kd;->b(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)I
 
     move-result v1
@@ -2949,7 +2783,6 @@
 
     new-array v4, v0, [Ljava/lang/Object;
 
-    .line 16
     invoke-static {p1, v1, v4}, Lcom/amap/api/col/l3/kd;->b(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)I
 
     move-result v1
@@ -2960,7 +2793,6 @@
 
     new-array v4, v0, [Ljava/lang/Object;
 
-    .line 17
     invoke-static {p1, v1, v4}, Lcom/amap/api/col/l3/kd;->b(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)I
 
     move-result p1
@@ -2985,17 +2817,14 @@
 
     const-string v0, "cgiUseful Cgi.I_CDMA_T"
 
-    .line 18
     invoke-static {p1, v2, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 19
     :cond_4
     :try_start_1
     check-cast p1, Landroid/telephony/gsm/GsmCellLocation;
 
-    .line 20
     invoke-virtual {p1}, Landroid/telephony/gsm/GsmCellLocation;->getLac()I
 
     move-result v0
@@ -3017,7 +2846,6 @@
 
     const-string v0, "cgiUseful Cgi.I_GSM_T"
 
-    .line 21
     invoke-static {p1, v2, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_1
@@ -3035,7 +2863,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->n:Ljava/util/ArrayList;
 
     return-object v0
@@ -3044,7 +2871,6 @@
 .method public final c()Lcom/amap/api/col/l3/jk;
     .locals 3
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/jl;->i:Z
 
     const/4 v1, 0x0
@@ -3053,11 +2879,9 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->b:Ljava/util/ArrayList;
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v2
@@ -3066,7 +2890,6 @@
 
     const/4 v1, 0x0
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -3082,7 +2905,6 @@
 .method public final d()Lcom/amap/api/col/l3/jk;
     .locals 3
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/jl;->i:Z
 
     const/4 v1, 0x0
@@ -3091,11 +2913,9 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->n:Ljava/util/ArrayList;
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
     move-result v2
@@ -3104,7 +2924,6 @@
 
     const/4 v1, 0x0
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -3120,7 +2939,6 @@
 .method public final e()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/jl;->a:I
 
     return v0
@@ -3129,7 +2947,6 @@
 .method public final f()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/jl;->a:I
 
     and-int/lit8 v0, v0, 0x3
@@ -3140,7 +2957,6 @@
 .method public final g()Landroid/telephony/TelephonyManager;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
     return-object v0
@@ -3149,33 +2965,27 @@
 .method public final h()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->p:Lcom/amap/api/col/l3/jj;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/jj;->a()V
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lcom/amap/api/col/l3/jl;->s:J
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->u:Ljava/lang/Object;
 
     monitor-enter v0
 
     const/4 v1, 0x1
 
-    .line 4
     :try_start_0
     iput-boolean v1, p0, Lcom/amap/api/col/l3/jl;->t:Z
 
-    .line 5
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
     if-eqz v0, :cond_0
@@ -3186,7 +2996,6 @@
 
     const/4 v2, 0x0
 
-    .line 7
     :try_start_1
     invoke-virtual {v0, v1, v2}, Landroid/telephony/TelephonyManager;->listen(Landroid/telephony/PhoneStateListener;I)V
     :try_end_1
@@ -3201,37 +3010,29 @@
 
     const-string v2, "destroy"
 
-    .line 8
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     :goto_0
     const/4 v0, 0x0
 
-    .line 9
     iput-object v0, p0, Lcom/amap/api/col/l3/jl;->g:Landroid/telephony/PhoneStateListener;
 
-    .line 10
     iget-object v1, p0, Lcom/amap/api/col/l3/jl;->k:Landroid/os/HandlerThread;
 
     if-eqz v1, :cond_1
 
-    .line 11
     invoke-virtual {v1}, Landroid/os/HandlerThread;->quit()Z
 
-    .line 12
     iput-object v0, p0, Lcom/amap/api/col/l3/jl;->k:Landroid/os/HandlerThread;
 
     :cond_1
     const/16 v1, -0x71
 
-    .line 13
     iput v1, p0, Lcom/amap/api/col/l3/jl;->o:I
 
-    .line 14
     iput-object v0, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
-    .line 15
     iput-object v0, p0, Lcom/amap/api/col/l3/jl;->q:Ljava/lang/Object;
 
     return-void
@@ -3239,7 +3040,6 @@
     :catchall_1
     move-exception v1
 
-    .line 16
     monitor-exit v0
 
     throw v1
@@ -3250,23 +3050,18 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Lcom/amap/api/col/l3/jl;->h:Ljava/lang/String;
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/jl;->e:Landroid/telephony/CellLocation;
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/jl;->a:I
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->n:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
@@ -3277,7 +3072,6 @@
 .method public final j()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->h:Ljava/lang/String;
 
     return-object v0
@@ -3286,7 +3080,6 @@
 .method public final k()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->m:Ljava/lang/String;
 
     return-object v0
@@ -3295,15 +3088,12 @@
 .method public final l()Ljava/lang/String;
     .locals 5
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/jl;->i:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/amap/api/col/l3/jl;->i()V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->j:Ljava/lang/StringBuilder;
 
@@ -3311,7 +3101,6 @@
 
     if-nez v0, :cond_1
 
-    .line 4
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -3320,7 +3109,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
@@ -3328,7 +3116,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->delete(II)Ljava/lang/StringBuilder;
 
-    .line 6
     :goto_0
     iget v0, p0, Lcom/amap/api/col/l3/jl;->a:I
 
@@ -3340,7 +3127,6 @@
 
     goto :goto_2
 
-    .line 7
     :cond_2
     :goto_1
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->b:Ljava/util/ArrayList;
@@ -3351,7 +3137,6 @@
 
     if-ge v2, v0, :cond_3
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->j:Ljava/lang/StringBuilder;
 
     const-string v3, "#"
@@ -3370,7 +3155,6 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 9
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->j:Ljava/lang/StringBuilder;
 
     const-string v3, "|"
@@ -3389,7 +3173,6 @@
 
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->j:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -3410,7 +3193,6 @@
 
     goto :goto_1
 
-    .line 11
     :cond_3
     :goto_2
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->j:Ljava/lang/StringBuilder;
@@ -3421,12 +3203,10 @@
 
     if-lez v0, :cond_4
 
-    .line 12
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->j:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->deleteCharAt(I)Ljava/lang/StringBuilder;
 
-    .line 13
     :cond_4
     iget-object v0, p0, Lcom/amap/api/col/l3/jl;->j:Ljava/lang/StringBuilder;
 
@@ -3442,13 +3222,11 @@
 
     const/4 v0, 0x1
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
     if-eqz v1, :cond_1
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
     invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getSimOperator()Ljava/lang/String;
@@ -3463,7 +3241,6 @@
 
     return v0
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lcom/amap/api/col/l3/jl;->c:Landroid/telephony/TelephonyManager;
 
@@ -3481,7 +3258,6 @@
 
     return v0
 
-    .line 4
     :catchall_0
     :cond_1
     :try_start_1
@@ -3491,7 +3267,6 @@
 
     move-result-object v1
 
-    .line 5
     invoke-static {v1}, Lcom/amap/api/col/l3/ki;->a(Landroid/net/NetworkInfo;)I
 
     move-result v1

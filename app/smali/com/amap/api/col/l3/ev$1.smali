@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ev$1;
 .super Ljava/lang/Object;
-.source "CompassView.java"
 
 # interfaces
 .implements Landroid/view/View$OnTouchListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/ev;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ev$1;->a:Lcom/amap/api/col/l3/ev;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +38,6 @@
 
     const/4 p1, 0x0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ev$1;->a:Lcom/amap/api/col/l3/ev;
 
@@ -54,7 +51,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -62,7 +58,6 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     iget-object p2, p0, Lcom/amap/api/col/l3/ev$1;->a:Lcom/amap/api/col/l3/ev;
 
     iget-object p2, p2, Lcom/amap/api/col/l3/ev;->d:Landroid/widget/ImageView;
@@ -75,7 +70,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -85,7 +79,6 @@
 
     if-ne p2, v0, :cond_2
 
-    .line 5
     iget-object p2, p0, Lcom/amap/api/col/l3/ev$1;->a:Lcom/amap/api/col/l3/ev;
 
     iget-object p2, p2, Lcom/amap/api/col/l3/ev;->d:Landroid/widget/ImageView;
@@ -96,7 +89,6 @@
 
     invoke-virtual {p2, v0}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 6
     iget-object p2, p0, Lcom/amap/api/col/l3/ev$1;->a:Lcom/amap/api/col/l3/ev;
 
     iget-object p2, p2, Lcom/amap/api/col/l3/ev;->e:Lcom/amap/api/col/l3/u;
@@ -105,7 +97,6 @@
 
     move-result-object p2
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/ev$1;->a:Lcom/amap/api/col/l3/ev;
 
     iget-object v0, v0, Lcom/amap/api/col/l3/ev;->e:Lcom/amap/api/col/l3/u;
@@ -120,12 +111,10 @@
 
     invoke-direct {v1, v2, p2, v3, v3}, Lcom/amap/api/maps/model/CameraPosition;-><init>(Lcom/amap/api/maps/model/LatLng;FFF)V
 
-    .line 8
     invoke-static {v1}, Lcom/amap/api/col/l3/aj;->a(Lcom/amap/api/maps/model/CameraPosition;)Lcom/autonavi/amap/mapcore/CameraUpdateMessage;
 
     move-result-object p2
 
-    .line 9
     invoke-interface {v0, p2}, Lcom/amap/api/col/l3/u;->b(Lcom/autonavi/amap/mapcore/CameraUpdateMessage;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -139,10 +128,8 @@
 
     const-string v1, "onTouch"
 
-    .line 10
     invoke-static {p2, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
     invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_2

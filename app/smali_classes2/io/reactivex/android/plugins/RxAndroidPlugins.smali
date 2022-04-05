@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/android/plugins/RxAndroidPlugins;
 .super Ljava/lang/Object;
-.source "RxAndroidPlugins.java"
 
 
 # static fields
@@ -33,10 +32,8 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/AssertionError;
 
     const-string v1, "No instances."
@@ -60,7 +57,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-interface {p0, p1}, Lio/reactivex/functions/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -73,7 +69,6 @@
     :catchall_0
     move-exception p0
 
-    .line 2
     invoke-static {p0}, Lio/reactivex/exceptions/Exceptions;->propagate(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     move-result-object p0
@@ -99,7 +94,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lio/reactivex/android/plugins/RxAndroidPlugins;->apply(Lio/reactivex/functions/Function;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -110,7 +104,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -133,7 +126,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-interface {p0}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
 
@@ -145,7 +137,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -160,7 +151,6 @@
     :catchall_0
     move-exception p0
 
-    .line 3
     invoke-static {p0}, Lio/reactivex/exceptions/Exceptions;->propagate(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
     move-result-object p0
@@ -182,7 +172,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lio/reactivex/android/plugins/RxAndroidPlugins;->onInitMainThreadHandler:Lio/reactivex/functions/Function;
 
     return-object v0
@@ -200,7 +189,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lio/reactivex/android/plugins/RxAndroidPlugins;->onMainThreadHandler:Lio/reactivex/functions/Function;
 
     return-object v0
@@ -220,19 +208,16 @@
 
     if-eqz p0, :cond_1
 
-    .line 1
     sget-object v0, Lio/reactivex/android/plugins/RxAndroidPlugins;->onInitMainThreadHandler:Lio/reactivex/functions/Function;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {p0}, Lio/reactivex/android/plugins/RxAndroidPlugins;->callRequireNonNull(Ljava/util/concurrent/Callable;)Lio/reactivex/Scheduler;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-static {v0, p0}, Lio/reactivex/android/plugins/RxAndroidPlugins;->applyRequireNonNull(Lio/reactivex/functions/Function;Ljava/util/concurrent/Callable;)Lio/reactivex/Scheduler;
 
@@ -240,7 +225,6 @@
 
     return-object p0
 
-    .line 4
     :cond_1
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -256,14 +240,12 @@
 
     if-eqz p0, :cond_1
 
-    .line 1
     sget-object v0, Lio/reactivex/android/plugins/RxAndroidPlugins;->onMainThreadHandler:Lio/reactivex/functions/Function;
 
     if-nez v0, :cond_0
 
     return-object p0
 
-    .line 2
     :cond_0
     invoke-static {v0, p0}, Lio/reactivex/android/plugins/RxAndroidPlugins;->apply(Lio/reactivex/functions/Function;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -273,7 +255,6 @@
 
     return-object p0
 
-    .line 3
     :cond_1
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -289,10 +270,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {v0}, Lio/reactivex/android/plugins/RxAndroidPlugins;->setInitMainThreadSchedulerHandler(Lio/reactivex/functions/Function;)V
 
-    .line 2
     invoke-static {v0}, Lio/reactivex/android/plugins/RxAndroidPlugins;->setMainThreadSchedulerHandler(Lio/reactivex/functions/Function;)V
 
     return-void
@@ -312,7 +291,6 @@
         }
     .end annotation
 
-    .line 1
     sput-object p0, Lio/reactivex/android/plugins/RxAndroidPlugins;->onInitMainThreadHandler:Lio/reactivex/functions/Function;
 
     return-void
@@ -330,7 +308,6 @@
         }
     .end annotation
 
-    .line 1
     sput-object p0, Lio/reactivex/android/plugins/RxAndroidPlugins;->onMainThreadHandler:Lio/reactivex/functions/Function;
 
     return-void

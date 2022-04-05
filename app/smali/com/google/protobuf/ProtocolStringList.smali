@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/protobuf/ProtocolStringList;
 .super Ljava/lang/Object;
-.source "ProtocolStringList.java"
 
 # interfaces
 .implements Ljava/util/List;

@@ -1,6 +1,5 @@
 .class Lcom/flyco/tablayout/SegmentTabLayout$c;
 .super Ljava/lang/Object;
-.source "SegmentTabLayout.java"
 
 # interfaces
 .implements Landroid/animation/TypeEvaluator;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/flyco/tablayout/SegmentTabLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/flyco/tablayout/SegmentTabLayout$c;->a:Lcom/flyco/tablayout/SegmentTabLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public a(FLcom/flyco/tablayout/SegmentTabLayout$b;Lcom/flyco/tablayout/SegmentTabLayout$b;)Lcom/flyco/tablayout/SegmentTabLayout$b;
     .locals 2
 
-    .line 1
     iget v0, p2, Lcom/flyco/tablayout/SegmentTabLayout$b;->a:F
 
     iget v1, p3, Lcom/flyco/tablayout/SegmentTabLayout$b;->a:F
@@ -58,7 +55,6 @@
 
     add-float/2addr v0, v1
 
-    .line 2
     iget p2, p2, Lcom/flyco/tablayout/SegmentTabLayout$b;->b:F
 
     iget p3, p3, Lcom/flyco/tablayout/SegmentTabLayout$b;->b:F
@@ -69,17 +65,14 @@
 
     add-float/2addr p2, p1
 
-    .line 3
     new-instance p1, Lcom/flyco/tablayout/SegmentTabLayout$b;
 
     iget-object p3, p0, Lcom/flyco/tablayout/SegmentTabLayout$c;->a:Lcom/flyco/tablayout/SegmentTabLayout;
 
     invoke-direct {p1, p3}, Lcom/flyco/tablayout/SegmentTabLayout$b;-><init>(Lcom/flyco/tablayout/SegmentTabLayout;)V
 
-    .line 4
     iput v0, p1, Lcom/flyco/tablayout/SegmentTabLayout$b;->a:F
 
-    .line 5
     iput p2, p1, Lcom/flyco/tablayout/SegmentTabLayout$b;->b:F
 
     return-object p1
@@ -88,7 +81,6 @@
 .method public bridge synthetic evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/flyco/tablayout/SegmentTabLayout$b;
 
     check-cast p3, Lcom/flyco/tablayout/SegmentTabLayout$b;

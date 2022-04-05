@@ -1,6 +1,5 @@
 .class synthetic Lio/reactivex/internal/operators/flowable/FlowableConcatMap$1;
 .super Ljava/lang/Object;
-.source "FlowableConcatMap.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lio/reactivex/internal/util/ErrorMode;->values()[Lio/reactivex/internal/util/ErrorMode;
 
     move-result-object v0

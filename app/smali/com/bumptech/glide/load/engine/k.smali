@@ -1,6 +1,5 @@
 .class interface abstract Lcom/bumptech/glide/load/engine/k;
 .super Ljava/lang/Object;
-.source "EngineJobListener.java"
 
 
 # virtual methods

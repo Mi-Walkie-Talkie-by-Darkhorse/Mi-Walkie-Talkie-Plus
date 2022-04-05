@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/btle/a;
 .super Landroid/bluetooth/BluetoothGattCallback;
-.source "BleGattCallback.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/node/btle/b;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/bluetooth/BluetoothGattCallback;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     return-void
@@ -25,7 +22,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/ifengyu/intercom/node/btle/a;->a(Landroid/bluetooth/BluetoothGatt;ILcom/ifengyu/intercom/node/btle/GattOperation;Ljava/util/UUID;)V
 
     return-void
@@ -34,7 +30,6 @@
 .method private a(Landroid/bluetooth/BluetoothGatt;ILcom/ifengyu/intercom/node/btle/GattOperation;Ljava/util/UUID;)V
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/btle/b;->e()Ljava/lang/Object;
@@ -43,7 +38,6 @@
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
@@ -51,19 +45,16 @@
 
     move-result-object p1
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {v1, p1, p2}, Lcom/ifengyu/intercom/node/btle/b;->a(Landroid/bluetooth/BluetoothGatt;I)V
 
     if-eqz p4, :cond_0
 
-    .line 5
     iget-object p2, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {p2, p1, p4}, Lcom/ifengyu/intercom/node/btle/b;->a(Landroid/bluetooth/BluetoothGatt;Ljava/util/UUID;)V
 
-    .line 6
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
@@ -71,7 +62,6 @@
 
     const-string p1, "BleGattCallback"
 
-    .line 7
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -92,7 +82,6 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/btle/b;->g()V
@@ -110,13 +99,11 @@
     :catch_0
     move-exception p1
 
-    .line 9
     :try_start_1
     iget-object p2, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {p2, p1}, Lcom/ifengyu/intercom/node/btle/b;->a(Lcom/ifengyu/intercom/node/btle/GattException;)V
 
-    .line 10
     :goto_0
     monitor-exit v0
 
@@ -135,7 +122,6 @@
 .method public onCharacteristicChanged(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -158,10 +144,8 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0, p1, p2}, Landroid/bluetooth/BluetoothGattCallback;->onCharacteristicChanged(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/btle/b;->c()Lcom/ifengyu/intercom/node/btle/j;
@@ -176,7 +160,6 @@
 .method public onCharacteristicRead(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;I)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -195,10 +178,8 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0, p1, p2, p3}, Landroid/bluetooth/BluetoothGattCallback;->onCharacteristicRead(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;I)V
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/node/btle/GattOperation;->i:Lcom/ifengyu/intercom/node/btle/GattOperation;
 
     invoke-virtual {p2}, Landroid/bluetooth/BluetoothGattCharacteristic;->getUuid()Ljava/util/UUID;
@@ -213,7 +194,6 @@
 .method public onCharacteristicWrite(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;I)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -242,10 +222,8 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0, p1, p2, p3}, Landroid/bluetooth/BluetoothGattCallback;->onCharacteristicWrite(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattCharacteristic;I)V
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/node/btle/GattOperation;->g:Lcom/ifengyu/intercom/node/btle/GattOperation;
 
     invoke-virtual {p2}, Landroid/bluetooth/BluetoothGattCharacteristic;->getUuid()Ljava/util/UUID;
@@ -254,7 +232,6 @@
 
     invoke-direct {p0, p1, p3, v0, v1}, Lcom/ifengyu/intercom/node/btle/a;->a(Landroid/bluetooth/BluetoothGatt;ILcom/ifengyu/intercom/node/btle/GattOperation;Ljava/util/UUID;)V
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/btle/b;->c()Lcom/ifengyu/intercom/node/btle/j;
@@ -269,7 +246,6 @@
 .method public onConnectionStateChange(Landroid/bluetooth/BluetoothGatt;II)V
     .locals 6
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -294,10 +270,8 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0, p1, p2, p3}, Landroid/bluetooth/BluetoothGattCallback;->onConnectionStateChange(Landroid/bluetooth/BluetoothGatt;II)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/btle/b;->e()Ljava/lang/Object;
@@ -310,7 +284,6 @@
 
     const/4 v2, 0x0
 
-    .line 4
     :try_start_0
     iget-object v3, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
@@ -332,10 +305,8 @@
 
     const-string p2, "onConnectionStateChange: disconnecting."
 
-    .line 5
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     sget-object p2, Lcom/ifengyu/intercom/node/btle/GattOperation;->d:Lcom/ifengyu/intercom/node/btle/GattOperation;
@@ -344,7 +315,6 @@
 
     goto/16 :goto_0
 
-    .line 7
     :cond_0
     new-instance v3, Lcom/ifengyu/intercom/node/btle/GattException;
 
@@ -356,7 +326,6 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothGatt;->getDevice()Landroid/bluetooth/BluetoothDevice;
 
     move-result-object p1
@@ -386,17 +355,14 @@
 
     const-string p2, "onConnectionStateChange: connected."
 
-    .line 9
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     sget-object p2, Lcom/ifengyu/intercom/node/btle/GattOperation;->c:Lcom/ifengyu/intercom/node/btle/GattOperation;
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/node/btle/b;->a(Lcom/ifengyu/intercom/node/btle/GattOperation;)V
 
-    .line 11
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/btle/b;->g()V
@@ -408,10 +374,8 @@
 
     const-string p2, "onConnectionStateChange: connecting."
 
-    .line 12
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     sget-object p2, Lcom/ifengyu/intercom/node/btle/GattOperation;->c:Lcom/ifengyu/intercom/node/btle/GattOperation;
@@ -425,15 +389,12 @@
 
     const-string p2, "onConnectionStateChange: disconnected."
 
-    .line 14
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/btle/b;->g()V
 
-    .line 16
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {p1, v2}, Lcom/ifengyu/intercom/node/btle/b;->a(Ljava/lang/Exception;)V
@@ -453,13 +414,11 @@
 
     if-nez p3, :cond_4
 
-    .line 17
     :try_start_1
     iget-object p2, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {p2, p1}, Lcom/ifengyu/intercom/node/btle/b;->a(Ljava/lang/Exception;)V
 
-    .line 18
     :cond_4
     iget-object p2, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
@@ -471,7 +430,6 @@
 
     if-eq p2, p3, :cond_5
 
-    .line 19
     iget-object p2, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {p2, p1}, Lcom/ifengyu/intercom/node/btle/b;->a(Lcom/ifengyu/intercom/node/btle/GattException;)V
@@ -484,7 +442,6 @@
     :cond_5
     move-object v2, p1
 
-    .line 20
     :goto_1
     monitor-exit v0
     :try_end_1
@@ -492,20 +449,17 @@
 
     if-eqz v1, :cond_6
 
-    .line 21
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/btle/b;->c()Lcom/ifengyu/intercom/node/btle/j;
 
     move-result-object p1
 
-    .line 22
     invoke-interface {p1, v2}, Lcom/ifengyu/intercom/node/btle/j;->a(Ljava/lang/Exception;)V
 
     :cond_6
     return-void
 
-    .line 23
     :goto_2
     :try_start_2
     monitor-exit v0
@@ -518,7 +472,6 @@
 .method public onDescriptorRead(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattDescriptor;I)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "We don\'t support reading a characteristic"
@@ -531,10 +484,8 @@
 .method public onDescriptorWrite(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattDescriptor;I)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroid/bluetooth/BluetoothGattCallback;->onDescriptorWrite(Landroid/bluetooth/BluetoothGatt;Landroid/bluetooth/BluetoothGattDescriptor;I)V
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -549,7 +500,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3
     invoke-virtual {p2}, Landroid/bluetooth/BluetoothGattDescriptor;->getCharacteristic()Landroid/bluetooth/BluetoothGattCharacteristic;
 
     move-result-object v1
@@ -566,10 +516,8 @@
 
     const-string v1, "BleGattCallback"
 
-    .line 4
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/node/btle/GattOperation;->h:Lcom/ifengyu/intercom/node/btle/GattOperation;
 
     invoke-virtual {p2}, Landroid/bluetooth/BluetoothGattDescriptor;->getUuid()Ljava/util/UUID;
@@ -584,10 +532,8 @@
 .method public onMtuChanged(Landroid/bluetooth/BluetoothGatt;II)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroid/bluetooth/BluetoothGattCallback;->onMtuChanged(Landroid/bluetooth/BluetoothGatt;II)V
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -614,12 +560,10 @@
 
     if-nez p3, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/node/btle/a;->a:Lcom/ifengyu/intercom/node/btle/b;
 
     invoke-virtual {v0, p2}, Lcom/ifengyu/intercom/node/btle/b;->b(I)V
 
-    .line 4
     :cond_0
     sget-object p2, Lcom/ifengyu/intercom/node/btle/GattOperation;->f:Lcom/ifengyu/intercom/node/btle/GattOperation;
 
@@ -631,7 +575,6 @@
 .method public onReadRemoteRssi(Landroid/bluetooth/BluetoothGatt;II)V
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "We don\'t support reading a characteristic"
@@ -644,10 +587,8 @@
 .method public onServicesDiscovered(Landroid/bluetooth/BluetoothGatt;I)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/bluetooth/BluetoothGattCallback;->onServicesDiscovered(Landroid/bluetooth/BluetoothGatt;I)V
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/node/btle/GattOperation;->e:Lcom/ifengyu/intercom/node/btle/GattOperation;
 
     invoke-direct {p0, p1, p2, v0}, Lcom/ifengyu/intercom/node/btle/a;->a(Landroid/bluetooth/BluetoothGatt;ILcom/ifengyu/intercom/node/btle/GattOperation;)V

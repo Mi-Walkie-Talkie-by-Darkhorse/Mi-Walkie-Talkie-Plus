@@ -1,6 +1,5 @@
 .class Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$f;
 .super Landroid/view/animation/Animation;
-.source "SwipeRefreshLayout.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$f;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
@@ -35,14 +33,12 @@
 .method public applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 2
 
-    .line 1
     iget-object p2, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$f;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
     iget-boolean v0, p2, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->J:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     iget v0, p2, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->z:I
 
     iget p2, p2, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->y:I
@@ -55,11 +51,9 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget v0, p2, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->z:I
 
-    .line 4
     :goto_0
     iget-object p2, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$f;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
@@ -75,7 +69,6 @@
 
     add-int/2addr v1, v0
 
-    .line 5
     iget-object p2, p2, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->u:Landroidx/swiperefreshlayout/widget/a;
 
     invoke-virtual {p2}, Landroid/widget/ImageView;->getTop()I
@@ -84,12 +77,10 @@
 
     sub-int/2addr v1, p2
 
-    .line 6
     iget-object p2, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$f;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
     invoke-virtual {p2, v1}, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->setTargetOffsetTopAndBottom(I)V
 
-    .line 7
     iget-object p2, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$f;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
     iget-object p2, p2, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->B:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;

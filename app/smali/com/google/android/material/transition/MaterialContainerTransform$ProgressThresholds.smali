@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;
 .super Ljava/lang/Object;
-.source "MaterialContainerTransform.java"
 
 
 # annotations
@@ -46,13 +45,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;->start:F
 
-    .line 3
     iput p2, p0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;->end:F
 
     return-void
@@ -61,7 +57,6 @@
 .method static synthetic access$1000(Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;->start:F
 
     return p0
@@ -70,7 +65,6 @@
 .method static synthetic access$1100(Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;->end:F
 
     return p0
@@ -85,7 +79,6 @@
         to = 1.0
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;->end:F
 
     return v0
@@ -98,7 +91,6 @@
         to = 1.0
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/transition/MaterialContainerTransform$ProgressThresholds;->start:F
 
     return v0

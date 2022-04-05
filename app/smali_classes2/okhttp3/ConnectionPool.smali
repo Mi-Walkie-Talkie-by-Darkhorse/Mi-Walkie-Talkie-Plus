@@ -1,6 +1,5 @@
 .class public final Lokhttp3/ConnectionPool;
 .super Ljava/lang/Object;
-.source "ConnectionPool.java"
 
 
 # static fields
@@ -35,7 +34,6 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1
     new-instance v8, Ljava/util/concurrent/ThreadPoolExecutor;
 
     const/4 v1, 0x0
@@ -54,7 +52,6 @@
 
     const-string v7, "OkHttp ConnectionPool"
 
-    .line 2
     invoke-static {v7, v0}, Lokhttp3/internal/Util;->threadFactory(Ljava/lang/String;Z)Ljava/util/concurrent/ThreadFactory;
 
     move-result-object v7
@@ -71,7 +68,6 @@
 .method public constructor <init>()V
     .locals 4
 
-    .line 1
     sget-object v0, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
 
     const/4 v1, 0x5
@@ -86,34 +82,28 @@
 .method public constructor <init>(IJLjava/util/concurrent/TimeUnit;)V
     .locals 2
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     new-instance v0, Lokhttp3/ConnectionPool$1;
 
     invoke-direct {v0, p0}, Lokhttp3/ConnectionPool$1;-><init>(Lokhttp3/ConnectionPool;)V
 
     iput-object v0, p0, Lokhttp3/ConnectionPool;->cleanupRunnable:Ljava/lang/Runnable;
 
-    .line 4
     new-instance v0, Ljava/util/ArrayDeque;
 
     invoke-direct {v0}, Ljava/util/ArrayDeque;-><init>()V
 
     iput-object v0, p0, Lokhttp3/ConnectionPool;->connections:Ljava/util/Deque;
 
-    .line 5
     new-instance v0, Lokhttp3/internal/connection/RouteDatabase;
 
     invoke-direct {v0}, Lokhttp3/internal/connection/RouteDatabase;-><init>()V
 
     iput-object v0, p0, Lokhttp3/ConnectionPool;->routeDatabase:Lokhttp3/internal/connection/RouteDatabase;
 
-    .line 6
     iput p1, p0, Lokhttp3/ConnectionPool;->maxIdleConnections:I
 
-    .line 7
     invoke-virtual {p4, p2, p3}, Ljava/util/concurrent/TimeUnit;->toNanos(J)J
 
     move-result-wide v0
@@ -128,7 +118,6 @@
 
     return-void
 
-    .line 8
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -154,14 +143,12 @@
 .method private pruneAndGetAllocationCount(Lokhttp3/internal/connection/RealConnection;J)I
     .locals 6
 
-    .line 1
     iget-object v0, p1, Lokhttp3/internal/connection/RealConnection;->allocations:Ljava/util/List;
 
     const/4 v1, 0x0
 
     const/4 v2, 0x0
 
-    .line 2
     :cond_0
     :goto_0
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -170,14 +157,12 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 3
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Ljava/lang/ref/Reference;
 
-    .line 4
     invoke-virtual {v3}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v4
@@ -188,11 +173,9 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     check-cast v3, Lokhttp3/internal/connection/StreamAllocation$StreamAllocationReference;
 
-    .line 6
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -223,7 +206,6 @@
 
     move-result-object v4
 
-    .line 7
     invoke-static {}, Lokhttp3/internal/platform/Platform;->get()Lokhttp3/internal/platform/Platform;
 
     move-result-object v5
@@ -232,22 +214,18 @@
 
     invoke-virtual {v5, v4, v3}, Lokhttp3/internal/platform/Platform;->logCloseableLeak(Ljava/lang/String;Ljava/lang/Object;)V
 
-    .line 8
     invoke-interface {v0, v2}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
     const/4 v3, 0x1
 
-    .line 9
     iput-boolean v3, p1, Lokhttp3/internal/connection/RealConnection;->noNewStreams:Z
 
-    .line 10
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
 
     move-result v3
 
     if-eqz v3, :cond_0
 
-    .line 11
     iget-wide v2, p0, Lokhttp3/ConnectionPool;->keepAliveDurationNs:J
 
     sub-long/2addr p2, v2
@@ -256,7 +234,6 @@
 
     return v1
 
-    .line 12
     :cond_2
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -270,10 +247,8 @@
 .method cleanup(J)J
     .locals 11
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lokhttp3/ConnectionPool;->connections:Ljava/util/Deque;
 
@@ -299,14 +274,12 @@
 
     if-eqz v7, :cond_2
 
-    .line 3
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v7
 
     check-cast v7, Lokhttp3/internal/connection/RealConnection;
 
-    .line 4
     invoke-direct {p0, v7, p1, p2}, Lokhttp3/ConnectionPool;->pruneAndGetAllocationCount(Lokhttp3/internal/connection/RealConnection;J)I
 
     move-result v8
@@ -320,7 +293,6 @@
     :cond_1
     add-int/lit8 v5, v5, 0x1
 
-    .line 5
     iget-wide v8, v7, Lokhttp3/internal/connection/RealConnection;->idleAtNanos:J
 
     sub-long v8, p1, v8
@@ -335,7 +307,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_2
     iget-wide p1, p0, Lokhttp3/ConnectionPool;->keepAliveDurationNs:J
 
@@ -352,7 +323,6 @@
     :cond_3
     if-lez v5, :cond_4
 
-    .line 7
     iget-wide p1, p0, Lokhttp3/ConnectionPool;->keepAliveDurationNs:J
 
     sub-long/2addr p1, v3
@@ -364,37 +334,31 @@
     :cond_4
     if-lez v6, :cond_5
 
-    .line 8
     iget-wide p1, p0, Lokhttp3/ConnectionPool;->keepAliveDurationNs:J
 
     monitor-exit p0
 
     return-wide p1
 
-    .line 9
     :cond_5
     iput-boolean v1, p0, Lokhttp3/ConnectionPool;->cleanupRunning:Z
 
     const-wide/16 p1, -0x1
 
-    .line 10
     monitor-exit p0
 
     return-wide p1
 
-    .line 11
     :cond_6
     :goto_1
     iget-object p1, p0, Lokhttp3/ConnectionPool;->connections:Ljava/util/Deque;
 
     invoke-interface {p1, v2}, Ljava/util/Deque;->remove(Ljava/lang/Object;)Z
 
-    .line 12
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 13
     invoke-virtual {v2}, Lokhttp3/internal/connection/RealConnection;->socket()Ljava/net/Socket;
 
     move-result-object p1
@@ -408,7 +372,6 @@
     :catchall_0
     move-exception p1
 
-    .line 14
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -420,7 +383,6 @@
 .method connectionBecameIdle(Lokhttp3/internal/connection/RealConnection;)Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p1, Lokhttp3/internal/connection/RealConnection;->noNewStreams:Z
 
     if-nez v0, :cond_1
@@ -431,7 +393,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
 
@@ -439,7 +400,6 @@
 
     return p1
 
-    .line 3
     :cond_1
     :goto_0
     iget-object v0, p0, Lokhttp3/ConnectionPool;->connections:Ljava/util/Deque;
@@ -456,7 +416,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/ConnectionPool;->connections:Ljava/util/Deque;
 
@@ -483,7 +442,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/ConnectionPool;->connections:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->iterator()Ljava/util/Iterator;
@@ -505,28 +463,24 @@
 
     check-cast v1, Lokhttp3/internal/connection/RealConnection;
 
-    .line 2
     invoke-virtual {v1, p1, v2}, Lokhttp3/internal/connection/RealConnection;->isEligible(Lokhttp3/Address;Lokhttp3/Route;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 3
     invoke-virtual {v1}, Lokhttp3/internal/connection/RealConnection;->isMultiplexed()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 4
     invoke-virtual {p2}, Lokhttp3/internal/connection/StreamAllocation;->connection()Lokhttp3/internal/connection/RealConnection;
 
     move-result-object v2
 
     if-eq v1, v2, :cond_0
 
-    .line 5
     invoke-virtual {p2, v1}, Lokhttp3/internal/connection/StreamAllocation;->releaseAndAcquire(Lokhttp3/internal/connection/RealConnection;)Ljava/net/Socket;
 
     move-result-object p1
@@ -540,15 +494,12 @@
 .method public evictAll()V
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     monitor-enter p0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lokhttp3/ConnectionPool;->connections:Ljava/util/Deque;
 
@@ -564,14 +515,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 4
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lokhttp3/internal/connection/RealConnection;
 
-    .line 5
     iget-object v3, v2, Lokhttp3/internal/connection/RealConnection;->allocations:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->isEmpty()Z
@@ -582,24 +531,19 @@
 
     const/4 v3, 0x1
 
-    .line 6
     iput-boolean v3, v2, Lokhttp3/internal/connection/RealConnection;->noNewStreams:Z
 
-    .line 7
     invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 8
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
 
-    .line 9
     :cond_1
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 10
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -617,7 +561,6 @@
 
     check-cast v1, Lokhttp3/internal/connection/RealConnection;
 
-    .line 11
     invoke-virtual {v1}, Lokhttp3/internal/connection/RealConnection;->socket()Ljava/net/Socket;
 
     move-result-object v1
@@ -632,7 +575,6 @@
     :catchall_0
     move-exception v0
 
-    .line 12
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -646,7 +588,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/ConnectionPool;->connections:Ljava/util/Deque;
 
     invoke-interface {v0}, Ljava/util/Deque;->iterator()Ljava/util/Iterator;
@@ -666,7 +607,6 @@
 
     check-cast v1, Lokhttp3/internal/connection/RealConnection;
 
-    .line 2
     invoke-virtual {v1, p1, p3}, Lokhttp3/internal/connection/RealConnection;->isEligible(Lokhttp3/Address;Lokhttp3/Route;)Z
 
     move-result v2
@@ -675,7 +615,6 @@
 
     const/4 p1, 0x1
 
-    .line 3
     invoke-virtual {p2, v1, p1}, Lokhttp3/internal/connection/StreamAllocation;->acquire(Lokhttp3/internal/connection/RealConnection;Z)V
 
     return-object v1
@@ -693,7 +632,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lokhttp3/ConnectionPool;->connections:Ljava/util/Deque;
 
@@ -715,7 +653,6 @@
 
     check-cast v2, Lokhttp3/internal/connection/RealConnection;
 
-    .line 2
     iget-object v2, v2, Lokhttp3/internal/connection/RealConnection;->allocations:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->isEmpty()Z
@@ -730,7 +667,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     monitor-exit p0
 
@@ -747,24 +683,20 @@
 .method put(Lokhttp3/internal/connection/RealConnection;)V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/ConnectionPool;->cleanupRunning:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lokhttp3/ConnectionPool;->cleanupRunning:Z
 
-    .line 3
     sget-object v0, Lokhttp3/ConnectionPool;->executor:Ljava/util/concurrent/Executor;
 
     iget-object v1, p0, Lokhttp3/ConnectionPool;->cleanupRunnable:Ljava/lang/Runnable;
 
     invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lokhttp3/ConnectionPool;->connections:Ljava/util/Deque;
 

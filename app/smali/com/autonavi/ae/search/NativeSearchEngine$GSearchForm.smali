@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/search/NativeSearchEngine$GSearchForm;
 .super Ljava/lang/Object;
-.source "NativeSearchEngine.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method public constructor <init>(Lcom/autonavi/ae/search/NativeSearchEngine;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/search/NativeSearchEngine$GSearchForm;->this$0:Lcom/autonavi/ae/search/NativeSearchEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

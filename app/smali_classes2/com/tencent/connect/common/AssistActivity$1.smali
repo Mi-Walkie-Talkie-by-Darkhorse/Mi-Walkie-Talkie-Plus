@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/common/AssistActivity$1;
 .super Landroid/os/Handler;
-.source "ProGuard"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/tencent/connect/common/AssistActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/common/AssistActivity$1;->a:Lcom/tencent/connect/common/AssistActivity;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
@@ -35,14 +33,12 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
 
-    .line 1
     iget p1, p1, Landroid/os/Message;->what:I
 
     if-eqz p1, :cond_0
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/tencent/connect/common/AssistActivity$1;->a:Lcom/tencent/connect/common/AssistActivity;
 
@@ -56,10 +52,8 @@
 
     const-string v0, "-->finish by timeout"
 
-    .line 3
     invoke-static {p1, v0}, Lcom/tencent/open/a/f;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     iget-object p1, p0, Lcom/tencent/connect/common/AssistActivity$1;->a:Lcom/tencent/connect/common/AssistActivity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V

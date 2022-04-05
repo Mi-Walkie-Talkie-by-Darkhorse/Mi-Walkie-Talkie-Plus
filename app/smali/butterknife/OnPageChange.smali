@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/OnPageChange;
 .super Ljava/lang/Object;
-.source "OnPageChange.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;
 .super Ljava/lang/Object;
-.source "LruMemoryCache.java"
 
 # interfaces
 .implements Lcom/nostra13/universalimageloader/cache/memory/MemoryCache;
@@ -27,15 +26,12 @@
 .method public constructor <init>(I)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-lez p1, :cond_0
 
-    .line 2
     iput p1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->maxSize:I
 
-    .line 3
     new-instance p1, Ljava/util/LinkedHashMap;
 
     const/4 v0, 0x0
@@ -50,7 +46,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -64,7 +59,6 @@
 .method private sizeOf(Ljava/lang/String;Landroid/graphics/Bitmap;)I
     .locals 0
 
-    .line 1
     invoke-virtual {p2}, Landroid/graphics/Bitmap;->getRowBytes()I
 
     move-result p1
@@ -81,11 +75,9 @@
 .method private trimToSize(I)V
     .locals 3
 
-    .line 1
     :goto_0
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->size:I
 
@@ -103,7 +95,6 @@
 
     if-nez v0, :cond_4
 
-    .line 3
     :cond_0
     iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->size:I
 
@@ -119,7 +110,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->map:Ljava/util/LinkedHashMap;
 
@@ -139,12 +129,10 @@
 
     if-nez v0, :cond_2
 
-    .line 5
     monitor-exit p0
 
     goto :goto_2
 
-    .line 6
     :cond_2
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -152,19 +140,16 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 7
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/graphics/Bitmap;
 
-    .line 8
     iget-object v2, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->map:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v2, v1}, Ljava/util/LinkedHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 9
     iget v2, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->size:I
 
     invoke-direct {p0, v1, v0}, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->sizeOf(Ljava/lang/String;Landroid/graphics/Bitmap;)I
@@ -175,12 +160,10 @@
 
     iput v2, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->size:I
 
-    .line 10
     monitor-exit p0
 
     goto :goto_0
 
-    .line 11
     :cond_3
     :goto_1
     monitor-exit p0
@@ -188,7 +171,6 @@
     :goto_2
     return-void
 
-    .line 12
     :cond_4
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -221,7 +203,6 @@
     :catchall_0
     move-exception p1
 
-    .line 13
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -236,7 +217,6 @@
 
     const/4 v0, -0x1
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->trimToSize(I)V
 
     return-void
@@ -247,10 +227,8 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->map:Ljava/util/LinkedHashMap;
 
@@ -267,14 +245,12 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw p1
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -296,10 +272,8 @@
         }
     .end annotation
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     new-instance v0, Ljava/util/HashSet;
 
@@ -318,7 +292,6 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -333,10 +306,8 @@
 
     if-eqz p2, :cond_1
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->size:I
 
@@ -348,7 +319,6 @@
 
     iput v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->size:I
 
-    .line 3
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->map:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/LinkedHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -359,7 +329,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 4
     iget v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->size:I
 
     invoke-direct {p0, p1, p2}, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->sizeOf(Ljava/lang/String;Landroid/graphics/Bitmap;)I
@@ -370,13 +339,11 @@
 
     iput v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->size:I
 
-    .line 5
     :cond_0
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     iget p1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->maxSize:I
 
     invoke-direct {p0, p1}, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->trimToSize(I)V
@@ -388,7 +355,6 @@
     :catchall_0
     move-exception p1
 
-    .line 7
     :try_start_1
     monitor-exit p0
     :try_end_1
@@ -396,7 +362,6 @@
 
     throw p1
 
-    .line 8
     :cond_1
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -412,10 +377,8 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->map:Ljava/util/LinkedHashMap;
 
@@ -427,7 +390,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->size:I
 
     invoke-direct {p0, p1, v0}, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->sizeOf(Ljava/lang/String;Landroid/graphics/Bitmap;)I
@@ -438,7 +400,6 @@
 
     iput v1, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->size:I
 
-    .line 4
     :cond_0
     monitor-exit p0
 
@@ -447,14 +408,12 @@
     :catchall_0
     move-exception p1
 
-    .line 5
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw p1
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/lang/NullPointerException;
 
@@ -479,7 +438,6 @@
 
     const/4 v2, 0x0
 
-    .line 1
     iget v3, p0, Lcom/nostra13/universalimageloader/cache/memory/impl/LruMemoryCache;->maxSize:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;

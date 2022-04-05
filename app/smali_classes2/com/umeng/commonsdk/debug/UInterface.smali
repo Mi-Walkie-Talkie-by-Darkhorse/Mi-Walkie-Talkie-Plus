@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/commonsdk/debug/UInterface;
 .super Ljava/lang/Object;
-.source "UInterface.java"
 
 
 # virtual methods

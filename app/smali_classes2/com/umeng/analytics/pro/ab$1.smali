@@ -1,6 +1,5 @@
 .class synthetic Lcom/umeng/analytics/pro/ab$1;
 .super Ljava/lang/Object;
-.source "HuaweiDeviceIdSupplier.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/oned/Code128Writer;
 .super Lcom/google/zxing/oned/OneDimensionalCodeWriter;
-.source "Code128Writer.java"
 
 
 # annotations
@@ -49,7 +48,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/oned/OneDimensionalCodeWriter;-><init>()V
 
     return-void
@@ -58,12 +56,10 @@
 .method private static chooseCode(Ljava/lang/CharSequence;II)I
     .locals 3
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/zxing/oned/Code128Writer;->findCType(Ljava/lang/CharSequence;I)Lcom/google/zxing/oned/Code128Writer$CType;
 
     move-result-object v0
 
-    .line 2
     sget-object v1, Lcom/google/zxing/oned/Code128Writer$CType;->ONE_DIGIT:Lcom/google/zxing/oned/Code128Writer$CType;
 
     const/16 v2, 0x64
@@ -72,20 +68,17 @@
 
     return v2
 
-    .line 3
     :cond_0
     sget-object v1, Lcom/google/zxing/oned/Code128Writer$CType;->UNCODABLE:Lcom/google/zxing/oned/Code128Writer$CType;
 
     if-ne v0, v1, :cond_3
 
-    .line 4
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
 
     if-ge p1, v0, :cond_2
 
-    .line 5
     invoke-interface {p0, p1}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result p0
@@ -118,7 +111,6 @@
     :cond_4
     if-ne p2, v2, :cond_c
 
-    .line 6
     sget-object p2, Lcom/google/zxing/oned/Code128Writer$CType;->FNC_1:Lcom/google/zxing/oned/Code128Writer$CType;
 
     if-ne v0, p2, :cond_5
@@ -128,12 +120,10 @@
     :cond_5
     add-int/lit8 p2, p1, 0x2
 
-    .line 7
     invoke-static {p0, p2}, Lcom/google/zxing/oned/Code128Writer;->findCType(Ljava/lang/CharSequence;I)Lcom/google/zxing/oned/Code128Writer$CType;
 
     move-result-object p2
 
-    .line 8
     sget-object v0, Lcom/google/zxing/oned/Code128Writer$CType;->UNCODABLE:Lcom/google/zxing/oned/Code128Writer$CType;
 
     if-eq p2, v0, :cond_b
@@ -144,7 +134,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_6
     sget-object v0, Lcom/google/zxing/oned/Code128Writer$CType;->FNC_1:Lcom/google/zxing/oned/Code128Writer$CType;
 
@@ -152,12 +141,10 @@
 
     add-int/lit8 p1, p1, 0x3
 
-    .line 10
     invoke-static {p0, p1}, Lcom/google/zxing/oned/Code128Writer;->findCType(Ljava/lang/CharSequence;I)Lcom/google/zxing/oned/Code128Writer$CType;
 
     move-result-object p0
 
-    .line 11
     sget-object p1, Lcom/google/zxing/oned/Code128Writer$CType;->TWO_DIGITS:Lcom/google/zxing/oned/Code128Writer$CType;
 
     if-ne p0, p1, :cond_7
@@ -170,7 +157,6 @@
     :cond_8
     add-int/lit8 p1, p1, 0x4
 
-    .line 12
     :goto_0
     invoke-static {p0, p1}, Lcom/google/zxing/oned/Code128Writer;->findCType(Ljava/lang/CharSequence;I)Lcom/google/zxing/oned/Code128Writer$CType;
 
@@ -184,7 +170,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_9
     sget-object p0, Lcom/google/zxing/oned/Code128Writer$CType;->ONE_DIGIT:Lcom/google/zxing/oned/Code128Writer$CType;
 
@@ -199,7 +184,6 @@
     :goto_1
     return v2
 
-    .line 14
     :cond_c
     sget-object p2, Lcom/google/zxing/oned/Code128Writer$CType;->FNC_1:Lcom/google/zxing/oned/Code128Writer$CType;
 
@@ -207,12 +191,10 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 15
     invoke-static {p0, p1}, Lcom/google/zxing/oned/Code128Writer;->findCType(Ljava/lang/CharSequence;I)Lcom/google/zxing/oned/Code128Writer$CType;
 
     move-result-object v0
 
-    .line 16
     :cond_d
     sget-object p0, Lcom/google/zxing/oned/Code128Writer$CType;->TWO_DIGITS:Lcom/google/zxing/oned/Code128Writer$CType;
 
@@ -227,19 +209,16 @@
 .method private static findCType(Ljava/lang/CharSequence;I)Lcom/google/zxing/oned/Code128Writer$CType;
     .locals 4
 
-    .line 1
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
 
     if-lt p1, v0, :cond_0
 
-    .line 2
     sget-object p0, Lcom/google/zxing/oned/Code128Writer$CType;->UNCODABLE:Lcom/google/zxing/oned/Code128Writer$CType;
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-interface {p0, p1}, Ljava/lang/CharSequence;->charAt(I)C
 
@@ -249,7 +228,6 @@
 
     if-ne v1, v2, :cond_1
 
-    .line 4
     sget-object p0, Lcom/google/zxing/oned/Code128Writer$CType;->FNC_1:Lcom/google/zxing/oned/Code128Writer$CType;
 
     return-object p0
@@ -270,12 +248,10 @@
 
     if-lt p1, v0, :cond_3
 
-    .line 5
     sget-object p0, Lcom/google/zxing/oned/Code128Writer$CType;->ONE_DIGIT:Lcom/google/zxing/oned/Code128Writer$CType;
 
     return-object p0
 
-    .line 6
     :cond_3
     invoke-interface {p0, p1}, Ljava/lang/CharSequence;->charAt(I)C
 
@@ -287,20 +263,17 @@
 
     goto :goto_0
 
-    .line 7
     :cond_4
     sget-object p0, Lcom/google/zxing/oned/Code128Writer$CType;->TWO_DIGITS:Lcom/google/zxing/oned/Code128Writer$CType;
 
     return-object p0
 
-    .line 8
     :cond_5
     :goto_0
     sget-object p0, Lcom/google/zxing/oned/Code128Writer$CType;->ONE_DIGIT:Lcom/google/zxing/oned/Code128Writer$CType;
 
     return-object p0
 
-    .line 9
     :cond_6
     :goto_1
     sget-object p0, Lcom/google/zxing/oned/Code128Writer$CType;->UNCODABLE:Lcom/google/zxing/oned/Code128Writer$CType;
@@ -331,19 +304,16 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/zxing/BarcodeFormat;->CODE_128:Lcom/google/zxing/BarcodeFormat;
 
     if-ne p2, v0, :cond_0
 
-    .line 2
     invoke-super/range {p0 .. p5}, Lcom/google/zxing/oned/OneDimensionalCodeWriter;->encode(Ljava/lang/String;Lcom/google/zxing/BarcodeFormat;IILjava/util/Map;)Lcom/google/zxing/common/BitMatrix;
 
     move-result-object p1
 
     return-object p1
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -367,7 +337,6 @@
 .method public encode(Ljava/lang/String;)[Z
     .locals 12
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -385,7 +354,6 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 5
     invoke-virtual {p1, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
@@ -401,7 +369,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -421,7 +388,6 @@
 
     throw p1
 
-    .line 7
     :cond_1
     new-instance v2, Ljava/util/ArrayList;
 
@@ -443,7 +409,6 @@
 
     if-ge v4, v0, :cond_a
 
-    .line 8
     invoke-static {p1, v4, v6}, Lcom/google/zxing/oned/Code128Writer;->chooseCode(Ljava/lang/CharSequence;II)I
 
     move-result v9
@@ -454,7 +419,6 @@
 
     if-ne v9, v6, :cond_6
 
-    .line 9
     invoke-virtual {p1, v4}, Ljava/lang/String;->charAt(I)C
 
     move-result v8
@@ -492,7 +456,6 @@
 
     add-int/lit8 v8, v4, 0x2
 
-    .line 10
     invoke-virtual {p1, v4, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v8
@@ -505,7 +468,6 @@
 
     goto :goto_3
 
-    .line 11
     :cond_3
     invoke-virtual {p1, v4}, Ljava/lang/String;->charAt(I)C
 
@@ -519,7 +481,6 @@
 
     goto :goto_3
 
-    .line 12
     :cond_4
     invoke-virtual {p1, v4}, Ljava/lang/String;->charAt(I)C
 
@@ -558,7 +519,6 @@
 
     move v6, v9
 
-    .line 13
     :goto_5
     sget-object v8, Lcom/google/zxing/oned/Code128Reader;->CODE_PATTERNS:[[I
 
@@ -576,18 +536,15 @@
 
     goto :goto_1
 
-    .line 14
     :cond_a
     rem-int/2addr v5, v8
 
-    .line 15
     sget-object p1, Lcom/google/zxing/oned/Code128Reader;->CODE_PATTERNS:[[I
 
     aget-object p1, p1, v5
 
     invoke-interface {v2, p1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    .line 16
     sget-object p1, Lcom/google/zxing/oned/Code128Reader;->CODE_PATTERNS:[[I
 
     const/16 v0, 0x6a
@@ -596,7 +553,6 @@
 
     invoke-interface {v2, p1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
-    .line 17
     invoke-interface {v2}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -616,7 +572,6 @@
 
     check-cast v4, [I
 
-    .line 18
     array-length v5, v4
 
     const/4 v6, 0x0
@@ -632,11 +587,9 @@
 
     goto :goto_6
 
-    .line 19
     :cond_c
     new-array p1, v0, [Z
 
-    .line 20
     invoke-interface {v2}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -654,7 +607,6 @@
 
     check-cast v2, [I
 
-    .line 21
     invoke-static {p1, v1, v2, v3}, Lcom/google/zxing/oned/OneDimensionalCodeWriter;->appendPattern([ZI[IZ)I
 
     move-result v2
@@ -666,7 +618,6 @@
     :cond_d
     return-object p1
 
-    .line 22
     :cond_e
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

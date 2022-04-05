@@ -1,6 +1,5 @@
 .class public abstract Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;
 .super Landroid/os/AsyncTask;
-.source "CacheManager.java"
 
 
 # annotations
@@ -65,31 +64,24 @@
         }
     .end annotation
 
-    .line 8
     iput-object p1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 9
     iput-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mProgressDialog:Landroid/app/ProgressDialog;
 
     const/4 v1, 0x1
 
-    .line 10
     iput-boolean v1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->showUI:Z
 
-    .line 11
     iput-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->callback:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;
 
-    .line 12
     iput-object p2, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mCtx:Landroid/content/Context;
 
-    .line 13
     iput-object p3, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mGeoPoints:Ljava/util/ArrayList;
 
-    .line 14
     iget-object p2, p1, Lorg/osmdroid/tileprovider/cachemanager/CacheManager;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getMinZoomLevel()I
@@ -102,7 +94,6 @@
 
     iput p2, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mZoomMin:I
 
-    .line 15
     iget-object p1, p1, Lorg/osmdroid/tileprovider/cachemanager/CacheManager;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapView;->getMaxZoomLevel()I
@@ -132,16 +123,12 @@
         }
     .end annotation
 
-    .line 4
     invoke-direct/range {p0 .. p5}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;-><init>(Lorg/osmdroid/tileprovider/cachemanager/CacheManager;Landroid/content/Context;Ljava/util/ArrayList;II)V
 
-    .line 5
     iput-object p6, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->callback:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;
 
-    .line 6
     iput-boolean p7, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->showUI:Z
 
-    .line 7
     iput-object p3, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mGeoPoints:Ljava/util/ArrayList;
 
     return-void
@@ -150,31 +137,24 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/cachemanager/CacheManager;Landroid/content/Context;Lorg/osmdroid/util/BoundingBox;II)V
     .locals 2
 
-    .line 16
     iput-object p1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 17
     iput-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mProgressDialog:Landroid/app/ProgressDialog;
 
     const/4 v1, 0x1
 
-    .line 18
     iput-boolean v1, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->showUI:Z
 
-    .line 19
     iput-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->callback:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;
 
-    .line 20
     iput-object p2, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mCtx:Landroid/content/Context;
 
-    .line 21
     iput-object p3, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mBB:Lorg/osmdroid/util/BoundingBox;
 
-    .line 22
     iget-object p2, p1, Lorg/osmdroid/tileprovider/cachemanager/CacheManager;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getMinZoomLevel()I
@@ -187,7 +167,6 @@
 
     iput p2, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mZoomMin:I
 
-    .line 23
     iget-object p1, p1, Lorg/osmdroid/tileprovider/cachemanager/CacheManager;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapView;->getMaxZoomLevel()I
@@ -206,13 +185,10 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/cachemanager/CacheManager;Landroid/content/Context;Lorg/osmdroid/util/BoundingBox;IILorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;Z)V
     .locals 0
 
-    .line 1
     invoke-direct/range {p0 .. p5}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;-><init>(Lorg/osmdroid/tileprovider/cachemanager/CacheManager;Landroid/content/Context;Lorg/osmdroid/util/BoundingBox;II)V
 
-    .line 2
     iput-object p6, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->callback:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;
 
-    .line 3
     iput-boolean p7, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->showUI:Z
 
     return-void
@@ -223,20 +199,16 @@
 .method protected createProgressDialog(Landroid/content/Context;)Landroid/app/ProgressDialog;
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/app/ProgressDialog;
 
     invoke-direct {v0, p1}, Landroid/app/ProgressDialog;-><init>(Landroid/content/Context;)V
 
     const/4 p1, 0x1
 
-    .line 2
     invoke-virtual {v0, p1}, Landroid/app/ProgressDialog;->setProgressStyle(I)V
 
-    .line 3
     invoke-virtual {v0, p1}, Landroid/app/ProgressDialog;->setCancelable(Z)V
 
-    .line 4
     new-instance p1, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask$1;
 
     invoke-direct {p1, p0}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask$1;-><init>(Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;)V
@@ -249,10 +221,8 @@
 .method protected onCancelled()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/os/AsyncTask;->onCancelled()V
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
 
     iget-object v0, v0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager;->mPendingTasks:Ljava/util/Set;
@@ -265,12 +235,10 @@
 .method protected onPreExecute()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->showUI:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mCtx:Landroid/content/Context;
 
     invoke-virtual {p0, v0}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->createProgressDialog(Landroid/content/Context;)Landroid/app/ProgressDialog;
@@ -286,7 +254,6 @@
 .method protected varargs onProgressUpdate([Ljava/lang/Integer;)V
     .locals 7
 
-    .line 2
     iget-boolean v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->showUI:Z
 
     const/4 v1, 0x1
@@ -295,7 +262,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mProgressDialog:Landroid/app/ProgressDialog;
 
     aget-object v3, p1, v2
@@ -306,7 +272,6 @@
 
     invoke-virtual {v0, v3}, Landroid/app/ProgressDialog;->setProgress(I)V
 
-    .line 4
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->mProgressDialog:Landroid/app/ProgressDialog;
 
     iget-object v3, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->this$0:Lorg/osmdroid/tileprovider/cachemanager/CacheManager;
@@ -327,13 +292,11 @@
 
     invoke-virtual {v0, v3}, Landroid/app/ProgressDialog;->setMessage(Ljava/lang/CharSequence;)V
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->callback:Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerCallback;
 
     if-eqz v0, :cond_1
 
-    .line 6
     :try_start_0
     aget-object v2, p1, v2
 
@@ -364,7 +327,6 @@
 
     const-string v1, "Error caught processing cachemanager callback, your implementation is faulty"
 
-    .line 7
     invoke-static {v0, v1, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_1
@@ -375,7 +337,6 @@
 .method protected bridge synthetic onProgressUpdate([Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, [Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Lorg/osmdroid/tileprovider/cachemanager/CacheManager$CacheManagerTask;->onProgressUpdate([Ljava/lang/Integer;)V

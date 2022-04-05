@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/tileprovider/LRUMapTileCache$TileRemovedListener;
 .super Ljava/lang/Object;
-.source "LRUMapTileCache.java"
 
 
 # annotations

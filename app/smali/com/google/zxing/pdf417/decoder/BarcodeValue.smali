@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/pdf417/decoder/BarcodeValue;
 .super Ljava/lang/Object;
-.source "BarcodeValue.java"
 
 
 # instance fields
@@ -20,10 +19,8 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -38,7 +35,6 @@
 .method getConfidence(I)Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/pdf417/decoder/BarcodeValue;->values:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -57,12 +53,10 @@
 .method getValue()[I
     .locals 5
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/google/zxing/pdf417/decoder/BarcodeValue;->values:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -89,7 +83,6 @@
 
     check-cast v3, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v4
@@ -102,7 +95,6 @@
 
     if-le v4, v2, :cond_1
 
-    .line 4
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -113,10 +105,8 @@
 
     move-result v2
 
-    .line 5
     invoke-interface {v0}, Ljava/util/Collection;->clear()V
 
-    .line 6
     invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -125,7 +115,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -139,7 +128,6 @@
 
     if-ne v4, v2, :cond_0
 
-    .line 8
     invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -148,7 +136,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_2
     invoke-static {v0}, Lcom/google/zxing/pdf417/PDF417Common;->toIntArray(Ljava/util/Collection;)[I
 
@@ -160,7 +147,6 @@
 .method setValue(I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/pdf417/decoder/BarcodeValue;->values:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -177,12 +163,10 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Integer;->intValue()I
 
@@ -194,7 +178,6 @@
 
     move-result-object v0
 
-    .line 4
     iget-object v1, p0, Lcom/google/zxing/pdf417/decoder/BarcodeValue;->values:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;

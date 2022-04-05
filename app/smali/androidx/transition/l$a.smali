@@ -1,6 +1,5 @@
 .class Landroidx/transition/l$a;
 .super Landroid/graphics/Matrix;
-.source "MatrixUtils.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/graphics/Matrix;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
 .method a()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "Matrix can not be modified"
@@ -42,7 +39,6 @@
 .method public postConcat(Landroid/graphics/Matrix;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -53,7 +49,6 @@
 .method public postRotate(F)Z
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -64,7 +59,6 @@
 .method public postRotate(FFF)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -75,7 +69,6 @@
 .method public postScale(FF)Z
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -86,7 +79,6 @@
 .method public postScale(FFFF)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -97,7 +89,6 @@
 .method public postSkew(FF)Z
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -108,7 +99,6 @@
 .method public postSkew(FFFF)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -119,7 +109,6 @@
 .method public postTranslate(FF)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -130,7 +119,6 @@
 .method public preConcat(Landroid/graphics/Matrix;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -141,7 +129,6 @@
 .method public preRotate(F)Z
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -152,7 +139,6 @@
 .method public preRotate(FFF)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -163,7 +149,6 @@
 .method public preScale(FF)Z
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -174,7 +159,6 @@
 .method public preScale(FFFF)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -185,7 +169,6 @@
 .method public preSkew(FF)Z
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -196,7 +179,6 @@
 .method public preSkew(FFFF)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -207,7 +189,6 @@
 .method public preTranslate(FF)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -218,7 +199,6 @@
 .method public reset()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 v0, 0x0
@@ -229,7 +209,6 @@
 .method public set(Landroid/graphics/Matrix;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -240,7 +219,6 @@
 .method public setConcat(Landroid/graphics/Matrix;Landroid/graphics/Matrix;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -251,7 +229,6 @@
 .method public setPolyToPoly([FI[FII)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -262,7 +239,6 @@
 .method public setRectToRect(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -273,7 +249,6 @@
 .method public setRotate(F)V
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -284,7 +259,6 @@
 .method public setRotate(FFF)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -295,7 +269,6 @@
 .method public setScale(FF)V
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -306,7 +279,6 @@
 .method public setScale(FFFF)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -317,7 +289,6 @@
 .method public setSinCos(FF)V
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -328,7 +299,6 @@
 .method public setSinCos(FFFF)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -339,7 +309,6 @@
 .method public setSkew(FF)V
     .locals 0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -350,7 +319,6 @@
 .method public setSkew(FFFF)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -361,7 +329,6 @@
 .method public setTranslate(FF)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0
@@ -372,7 +339,6 @@
 .method public setValues([F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroidx/transition/l$a;->a()V
 
     const/4 p1, 0x0

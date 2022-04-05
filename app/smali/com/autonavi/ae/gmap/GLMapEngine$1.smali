@@ -1,6 +1,5 @@
 .class Lcom/autonavi/ae/gmap/GLMapEngine$1;
 .super Ljava/lang/Object;
-.source "GLMapEngine.java"
 
 # interfaces
 .implements Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr$MapAnimationListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/autonavi/ae/gmap/GLMapEngine;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$1;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onMapAnimationFinish(Lcom/amap/api/maps/AMap$CancelableCallback;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$1;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-static {v0, p1}, Lcom/autonavi/ae/gmap/GLMapEngine;->access$000(Lcom/autonavi/ae/gmap/GLMapEngine;Lcom/amap/api/maps/AMap$CancelableCallback;)V

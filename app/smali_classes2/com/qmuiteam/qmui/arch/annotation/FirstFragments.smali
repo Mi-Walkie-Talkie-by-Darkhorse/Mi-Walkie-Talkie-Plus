@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/arch/annotation/FirstFragments;
 .super Ljava/lang/Object;
-.source "FirstFragments.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

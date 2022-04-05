@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/collect/TransformedListIterator;
 .super Lcom/google/common/collect/TransformedIterator;
-.source "TransformedListIterator.java"
 
 # interfaces
 .implements Ljava/util/ListIterator;
@@ -36,7 +35,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/collect/TransformedIterator;-><init>(Ljava/util/Iterator;)V
 
     return-void
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/TransformedIterator;->backingIterator:Ljava/util/Iterator;
 
     invoke-static {v0}, Lcom/google/common/collect/Iterators;->cast(Ljava/util/Iterator;)Ljava/util/ListIterator;
@@ -72,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -83,7 +79,6 @@
 .method public final hasPrevious()Z
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/TransformedListIterator;->backingIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -98,7 +93,6 @@
 .method public final nextIndex()I
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/TransformedListIterator;->backingIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -118,7 +112,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/TransformedListIterator;->backingIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -137,7 +130,6 @@
 .method public final previousIndex()I
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/TransformedListIterator;->backingIterator()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -157,7 +149,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V

@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/maploader/VMapDataRecoder;
 .super Ljava/lang/Object;
-.source "VMapDataRecoder.java"
 
 
 # instance fields
@@ -17,15 +16,12 @@
 .method public constructor <init>(Ljava/lang/String;I)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/VMapDataRecoder;->mTimes:I
 
-    .line 3
     :try_start_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -35,7 +31,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -49,10 +44,8 @@
 
     iput v1, p0, Lcom/autonavi/ae/gmap/maploader/VMapDataRecoder;->mCreateTime:I
 
-    .line 5
     iput p2, p0, Lcom/autonavi/ae/gmap/maploader/VMapDataRecoder;->mDataSource:I
 
-    .line 6
     iput-object p1, p0, Lcom/autonavi/ae/gmap/maploader/VMapDataRecoder;->mGridName:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
@@ -62,7 +55,6 @@
     :catch_0
     const/4 p1, 0x0
 
-    .line 7
     iput-object p1, p0, Lcom/autonavi/ae/gmap/maploader/VMapDataRecoder;->mGridName:Ljava/lang/String;
 
     return-void

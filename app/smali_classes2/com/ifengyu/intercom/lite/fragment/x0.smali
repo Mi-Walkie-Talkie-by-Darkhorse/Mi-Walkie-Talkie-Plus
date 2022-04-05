@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/lite/fragment/x0;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Landroidx/lifecycle/q;

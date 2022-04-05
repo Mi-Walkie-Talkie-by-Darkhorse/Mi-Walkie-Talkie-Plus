@@ -1,6 +1,5 @@
 .class final Landroidx/appcompat/view/menu/p;
 .super Landroidx/appcompat/view/menu/j;
-.source "StandardMenuPopup.java"
 
 # interfaces
 .implements Landroid/widget/PopupWindow$OnDismissListener;
@@ -59,7 +58,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     sget v0, Landroidx/appcompat/R$layout;->abc_popup_menu_item_layout:I
 
     sput v0, Landroidx/appcompat/view/menu/p;->v:I
@@ -70,17 +68,14 @@
 .method public constructor <init>(Landroid/content/Context;Landroidx/appcompat/view/menu/f;Landroid/view/View;IIZ)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Landroidx/appcompat/view/menu/j;-><init>()V
 
-    .line 2
     new-instance v0, Landroidx/appcompat/view/menu/p$a;
 
     invoke-direct {v0, p0}, Landroidx/appcompat/view/menu/p$a;-><init>(Landroidx/appcompat/view/menu/p;)V
 
     iput-object v0, p0, Landroidx/appcompat/view/menu/p;->j:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
-    .line 3
     new-instance v0, Landroidx/appcompat/view/menu/p$b;
 
     invoke-direct {v0, p0}, Landroidx/appcompat/view/menu/p$b;-><init>(Landroidx/appcompat/view/menu/p;)V
@@ -89,24 +84,18 @@
 
     const/4 v0, 0x0
 
-    .line 4
     iput v0, p0, Landroidx/appcompat/view/menu/p;->t:I
 
-    .line 5
     iput-object p1, p0, Landroidx/appcompat/view/menu/p;->b:Landroid/content/Context;
 
-    .line 6
     iput-object p2, p0, Landroidx/appcompat/view/menu/p;->c:Landroidx/appcompat/view/menu/f;
 
-    .line 7
     iput-boolean p6, p0, Landroidx/appcompat/view/menu/p;->e:Z
 
-    .line 8
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object p6
 
-    .line 9
     new-instance v0, Landroidx/appcompat/view/menu/e;
 
     iget-boolean v1, p0, Landroidx/appcompat/view/menu/p;->e:Z
@@ -117,18 +106,14 @@
 
     iput-object v0, p0, Landroidx/appcompat/view/menu/p;->d:Landroidx/appcompat/view/menu/e;
 
-    .line 10
     iput p4, p0, Landroidx/appcompat/view/menu/p;->g:I
 
-    .line 11
     iput p5, p0, Landroidx/appcompat/view/menu/p;->h:I
 
-    .line 12
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p4
 
-    .line 13
     invoke-virtual {p4}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
     move-result-object p5
@@ -139,22 +124,18 @@
 
     sget p6, Landroidx/appcompat/R$dimen;->abc_config_prefDialogWidth:I
 
-    .line 14
     invoke-virtual {p4, p6}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
     move-result p4
 
-    .line 15
     invoke-static {p5, p4}, Ljava/lang/Math;->max(II)I
 
     move-result p4
 
     iput p4, p0, Landroidx/appcompat/view/menu/p;->f:I
 
-    .line 16
     iput-object p3, p0, Landroidx/appcompat/view/menu/p;->m:Landroid/view/View;
 
-    .line 17
     new-instance p3, Landroidx/appcompat/widget/MenuPopupWindow;
 
     iget-object p4, p0, Landroidx/appcompat/view/menu/p;->b:Landroid/content/Context;
@@ -169,7 +150,6 @@
 
     iput-object p3, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
-    .line 18
     invoke-virtual {p2, p0, p1}, Landroidx/appcompat/view/menu/f;->addMenuPresenter(Landroidx/appcompat/view/menu/l;Landroid/content/Context;)V
 
     return-void
@@ -178,7 +158,6 @@
 .method private d()Z
     .locals 7
 
-    .line 1
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/p;->a()Z
 
     move-result v0
@@ -189,7 +168,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-boolean v0, p0, Landroidx/appcompat/view/menu/p;->q:Z
 
@@ -203,29 +181,23 @@
 
     goto/16 :goto_1
 
-    .line 3
     :cond_1
     iput-object v0, p0, Landroidx/appcompat/view/menu/p;->n:Landroid/view/View;
 
-    .line 4
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v0, p0}, Landroidx/appcompat/widget/ListPopupWindow;->setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
 
-    .line 5
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v0, p0}, Landroidx/appcompat/widget/ListPopupWindow;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 6
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v0, v1}, Landroidx/appcompat/widget/ListPopupWindow;->a(Z)V
 
-    .line 7
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->n:Landroid/view/View;
 
-    .line 8
     iget-object v3, p0, Landroidx/appcompat/view/menu/p;->p:Landroid/view/ViewTreeObserver;
 
     if-nez v3, :cond_2
@@ -237,7 +209,6 @@
     :cond_2
     const/4 v3, 0x0
 
-    .line 9
     :goto_0
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
@@ -247,37 +218,31 @@
 
     if-eqz v3, :cond_3
 
-    .line 10
     iget-object v3, p0, Landroidx/appcompat/view/menu/p;->j:Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;
 
     invoke-virtual {v4, v3}, Landroid/view/ViewTreeObserver;->addOnGlobalLayoutListener(Landroid/view/ViewTreeObserver$OnGlobalLayoutListener;)V
 
-    .line 11
     :cond_3
     iget-object v3, p0, Landroidx/appcompat/view/menu/p;->k:Landroid/view/View$OnAttachStateChangeListener;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 
-    .line 12
     iget-object v3, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v3, v0}, Landroidx/appcompat/widget/ListPopupWindow;->a(Landroid/view/View;)V
 
-    .line 13
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     iget v3, p0, Landroidx/appcompat/view/menu/p;->t:I
 
     invoke-virtual {v0, v3}, Landroidx/appcompat/widget/ListPopupWindow;->f(I)V
 
-    .line 14
     iget-boolean v0, p0, Landroidx/appcompat/view/menu/p;->r:Z
 
     const/4 v3, 0x0
 
     if-nez v0, :cond_4
 
-    .line 15
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->d:Landroidx/appcompat/view/menu/e;
 
     iget-object v4, p0, Landroidx/appcompat/view/menu/p;->b:Landroid/content/Context;
@@ -290,10 +255,8 @@
 
     iput v0, p0, Landroidx/appcompat/view/menu/p;->s:I
 
-    .line 16
     iput-boolean v1, p0, Landroidx/appcompat/view/menu/p;->r:Z
 
-    .line 17
     :cond_4
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
@@ -301,14 +264,12 @@
 
     invoke-virtual {v0, v4}, Landroidx/appcompat/widget/ListPopupWindow;->e(I)V
 
-    .line 18
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     const/4 v4, 0x2
 
     invoke-virtual {v0, v4}, Landroidx/appcompat/widget/ListPopupWindow;->g(I)V
 
-    .line 19
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/j;->c()Landroid/graphics/Rect;
@@ -317,22 +278,18 @@
 
     invoke-virtual {v0, v4}, Landroidx/appcompat/widget/ListPopupWindow;->a(Landroid/graphics/Rect;)V
 
-    .line 20
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->show()V
 
-    .line 21
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->e()Landroid/widget/ListView;
 
     move-result-object v0
 
-    .line 22
     invoke-virtual {v0, p0}, Landroid/widget/ListView;->setOnKeyListener(Landroid/view/View$OnKeyListener;)V
 
-    .line 23
     iget-boolean v4, p0, Landroidx/appcompat/view/menu/p;->u:Z
 
     if-eqz v4, :cond_6
@@ -345,10 +302,8 @@
 
     if-eqz v4, :cond_6
 
-    .line 24
     iget-object v4, p0, Landroidx/appcompat/view/menu/p;->b:Landroid/content/Context;
 
-    .line 25
     invoke-static {v4}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v4
@@ -363,7 +318,6 @@
 
     const v5, 0x1020016
 
-    .line 26
     invoke-virtual {v4, v5}, Landroid/widget/FrameLayout;->findViewById(I)Landroid/view/View;
 
     move-result-object v5
@@ -372,7 +326,6 @@
 
     if-eqz v5, :cond_5
 
-    .line 27
     iget-object v6, p0, Landroidx/appcompat/view/menu/p;->c:Landroidx/appcompat/view/menu/f;
 
     invoke-virtual {v6}, Landroidx/appcompat/view/menu/f;->getHeaderTitle()Ljava/lang/CharSequence;
@@ -381,14 +334,11 @@
 
     invoke-virtual {v5, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 28
     :cond_5
     invoke-virtual {v4, v2}, Landroid/widget/FrameLayout;->setEnabled(Z)V
 
-    .line 29
     invoke-virtual {v0, v4, v3, v2}, Landroid/widget/ListView;->addHeaderView(Landroid/view/View;Ljava/lang/Object;Z)V
 
-    .line 30
     :cond_6
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
@@ -396,7 +346,6 @@
 
     invoke-virtual {v0, v2}, Landroidx/appcompat/widget/ListPopupWindow;->a(Landroid/widget/ListAdapter;)V
 
-    .line 31
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->show()V
@@ -413,7 +362,6 @@
 .method public a(I)V
     .locals 0
 
-    .line 2
     iput p1, p0, Landroidx/appcompat/view/menu/p;->t:I
 
     return-void
@@ -422,7 +370,6 @@
 .method public a(Landroid/view/View;)V
     .locals 0
 
-    .line 4
     iput-object p1, p0, Landroidx/appcompat/view/menu/p;->m:Landroid/view/View;
 
     return-void
@@ -437,7 +384,6 @@
 .method public a(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->d:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/e;->a(Z)V
@@ -448,7 +394,6 @@
 .method public a()Z
     .locals 1
 
-    .line 3
     iget-boolean v0, p0, Landroidx/appcompat/view/menu/p;->q:Z
 
     if-nez v0, :cond_0
@@ -475,7 +420,6 @@
 .method public b(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/ListPopupWindow;->a(I)V
@@ -486,7 +430,6 @@
 .method public b(Z)V
     .locals 0
 
-    .line 2
     iput-boolean p1, p0, Landroidx/appcompat/view/menu/p;->u:Z
 
     return-void
@@ -495,7 +438,6 @@
 .method public c(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/ListPopupWindow;->b(I)V
@@ -506,14 +448,12 @@
 .method public dismiss()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/p;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->dismiss()V
@@ -525,7 +465,6 @@
 .method public e()Landroid/widget/ListView;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v0}, Landroidx/appcompat/widget/ListPopupWindow;->e()Landroid/widget/ListView;
@@ -546,23 +485,19 @@
 .method public onCloseMenu(Landroidx/appcompat/view/menu/f;Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->c:Landroidx/appcompat/view/menu/f;
 
     if-eq p1, v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/p;->dismiss()V
 
-    .line 3
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->o:Landroidx/appcompat/view/menu/l$a;
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-interface {v0, p1, p2}, Landroidx/appcompat/view/menu/l$a;->onCloseMenu(Landroidx/appcompat/view/menu/f;Z)V
 
     :cond_1
@@ -574,20 +509,16 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Landroidx/appcompat/view/menu/p;->q:Z
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->c:Landroidx/appcompat/view/menu/f;
 
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/f;->close()V
 
-    .line 3
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->p:Landroid/view/ViewTreeObserver;
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {v0}, Landroid/view/ViewTreeObserver;->isAlive()Z
 
     move-result v0
@@ -602,7 +533,6 @@
 
     iput-object v0, p0, Landroidx/appcompat/view/menu/p;->p:Landroid/view/ViewTreeObserver;
 
-    .line 5
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->p:Landroid/view/ViewTreeObserver;
 
@@ -612,10 +542,8 @@
 
     const/4 v0, 0x0
 
-    .line 6
     iput-object v0, p0, Landroidx/appcompat/view/menu/p;->p:Landroid/view/ViewTreeObserver;
 
-    .line 7
     :cond_1
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->n:Landroid/view/View;
 
@@ -623,12 +551,10 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 
-    .line 8
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->l:Landroid/widget/PopupWindow$OnDismissListener;
 
     if-eqz v0, :cond_2
 
-    .line 9
     invoke-interface {v0}, Landroid/widget/PopupWindow$OnDismissListener;->onDismiss()V
 
     :cond_2
@@ -638,7 +564,6 @@
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
     move-result p1
@@ -651,7 +576,6 @@
 
     if-ne p2, p1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/p;->dismiss()V
 
     return p3
@@ -679,7 +603,6 @@
 .method public onSubMenuSelected(Landroidx/appcompat/view/menu/q;)Z
     .locals 9
 
-    .line 1
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/f;->hasVisibleItems()Z
 
     move-result v0
@@ -688,7 +611,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     new-instance v0, Landroidx/appcompat/view/menu/k;
 
     iget-object v3, p0, Landroidx/appcompat/view/menu/p;->b:Landroid/content/Context;
@@ -707,58 +629,48 @@
 
     invoke-direct/range {v2 .. v8}, Landroidx/appcompat/view/menu/k;-><init>(Landroid/content/Context;Landroidx/appcompat/view/menu/f;Landroid/view/View;ZII)V
 
-    .line 3
     iget-object v2, p0, Landroidx/appcompat/view/menu/p;->o:Landroidx/appcompat/view/menu/l$a;
 
     invoke-virtual {v0, v2}, Landroidx/appcompat/view/menu/k;->a(Landroidx/appcompat/view/menu/l$a;)V
 
-    .line 4
     invoke-static {p1}, Landroidx/appcompat/view/menu/j;->b(Landroidx/appcompat/view/menu/f;)Z
 
     move-result v2
 
     invoke-virtual {v0, v2}, Landroidx/appcompat/view/menu/k;->a(Z)V
 
-    .line 5
     iget-object v2, p0, Landroidx/appcompat/view/menu/p;->l:Landroid/widget/PopupWindow$OnDismissListener;
 
     invoke-virtual {v0, v2}, Landroidx/appcompat/view/menu/k;->setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
 
     const/4 v2, 0x0
 
-    .line 6
     iput-object v2, p0, Landroidx/appcompat/view/menu/p;->l:Landroid/widget/PopupWindow$OnDismissListener;
 
-    .line 7
     iget-object v2, p0, Landroidx/appcompat/view/menu/p;->c:Landroidx/appcompat/view/menu/f;
 
     invoke-virtual {v2, v1}, Landroidx/appcompat/view/menu/f;->close(Z)V
 
-    .line 8
     iget-object v2, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v2}, Landroidx/appcompat/widget/ListPopupWindow;->b()I
 
     move-result v2
 
-    .line 9
     iget-object v3, p0, Landroidx/appcompat/view/menu/p;->i:Landroidx/appcompat/widget/MenuPopupWindow;
 
     invoke-virtual {v3}, Landroidx/appcompat/widget/ListPopupWindow;->f()I
 
     move-result v3
 
-    .line 10
     iget v4, p0, Landroidx/appcompat/view/menu/p;->t:I
 
     iget-object v5, p0, Landroidx/appcompat/view/menu/p;->m:Landroid/view/View;
 
-    .line 11
     invoke-static {v5}, Landroidx/core/view/ViewCompat;->s(Landroid/view/View;)I
 
     move-result v5
 
-    .line 12
     invoke-static {v4, v5}, Landroid/view/Gravity;->getAbsoluteGravity(II)I
 
     move-result v4
@@ -769,7 +681,6 @@
 
     if-ne v4, v5, :cond_0
 
-    .line 13
     iget-object v4, p0, Landroidx/appcompat/view/menu/p;->m:Landroid/view/View;
 
     invoke-virtual {v4}, Landroid/view/View;->getWidth()I
@@ -778,7 +689,6 @@
 
     add-int/2addr v2, v4
 
-    .line 14
     :cond_0
     invoke-virtual {v0, v2, v3}, Landroidx/appcompat/view/menu/k;->a(II)Z
 
@@ -786,12 +696,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 15
     iget-object v0, p0, Landroidx/appcompat/view/menu/p;->o:Landroidx/appcompat/view/menu/l$a;
 
     if-eqz v0, :cond_1
 
-    .line 16
     invoke-interface {v0, p1}, Landroidx/appcompat/view/menu/l$a;->a(Landroidx/appcompat/view/menu/f;)Z
 
     :cond_1
@@ -806,7 +714,6 @@
 .method public setCallback(Landroidx/appcompat/view/menu/l$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/p;->o:Landroidx/appcompat/view/menu/l$a;
 
     return-void
@@ -815,7 +722,6 @@
 .method public setOnDismissListener(Landroid/widget/PopupWindow$OnDismissListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/p;->l:Landroid/widget/PopupWindow$OnDismissListener;
 
     return-void
@@ -824,7 +730,6 @@
 .method public show()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Landroidx/appcompat/view/menu/p;->d()Z
 
     move-result v0
@@ -833,7 +738,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -849,15 +753,12 @@
 
     const/4 p1, 0x0
 
-    .line 1
     iput-boolean p1, p0, Landroidx/appcompat/view/menu/p;->r:Z
 
-    .line 2
     iget-object p1, p0, Landroidx/appcompat/view/menu/p;->d:Landroidx/appcompat/view/menu/e;
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/e;->notifyDataSetChanged()V
 
     :cond_0

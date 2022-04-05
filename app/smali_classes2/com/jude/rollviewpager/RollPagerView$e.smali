@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/jude/rollviewpager/RollPagerView$e;
 .super Ljava/lang/Object;
-.source "RollPagerView.java"
 
 
 # annotations

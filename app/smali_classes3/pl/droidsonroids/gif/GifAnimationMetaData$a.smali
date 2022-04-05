@@ -1,6 +1,5 @@
 .class final Lpl/droidsonroids/gif/GifAnimationMetaData$a;
 .super Ljava/lang/Object;
-.source "GifAnimationMetaData.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lpl/droidsonroids/gif/GifAnimationMetaData$a;->createFromParcel(Landroid/os/Parcel;)Lpl/droidsonroids/gif/GifAnimationMetaData;
 
     move-result-object p1
@@ -52,7 +49,6 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lpl/droidsonroids/gif/GifAnimationMetaData;
     .locals 2
 
-    .line 2
     new-instance v0, Lpl/droidsonroids/gif/GifAnimationMetaData;
 
     const/4 v1, 0x0
@@ -65,7 +61,6 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lpl/droidsonroids/gif/GifAnimationMetaData$a;->newArray(I)[Lpl/droidsonroids/gif/GifAnimationMetaData;
 
     move-result-object p1
@@ -76,7 +71,6 @@
 .method public newArray(I)[Lpl/droidsonroids/gif/GifAnimationMetaData;
     .locals 0
 
-    .line 2
     new-array p1, p1, [Lpl/droidsonroids/gif/GifAnimationMetaData;
 
     return-object p1

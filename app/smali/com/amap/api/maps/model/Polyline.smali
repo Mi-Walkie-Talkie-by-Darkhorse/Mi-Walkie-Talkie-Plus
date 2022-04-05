@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/Polyline;
 .super Ljava/lang/Object;
-.source "Polyline.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(Lcom/autonavi/amap/mapcore/interfaces/IPolyline;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     return-void
@@ -25,7 +22,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 1
     instance-of v0, p1, Lcom/amap/api/maps/model/Polyline;
 
     const/4 v1, 0x0
@@ -34,7 +30,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
@@ -43,7 +38,6 @@
 
     iget-object p1, p1, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
-    .line 3
     invoke-interface {v0, p1}, Lcom/autonavi/amap/mapcore/interfaces/IOverlay;->equalsRemote(Lcom/autonavi/amap/mapcore/interfaces/IOverlay;)Z
 
     move-result p1
@@ -55,7 +49,6 @@
     :catchall_0
     move-exception p1
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return v1
@@ -64,7 +57,6 @@
 .method public getColor()I
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -79,7 +71,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -90,7 +81,6 @@
 .method public getId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -105,7 +95,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -116,7 +105,6 @@
 .method public getNearestLatLng(Lcom/amap/api/maps/model/LatLng;)Lcom/amap/api/maps/model/LatLng;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     invoke-interface {v0, p1}, Lcom/autonavi/amap/mapcore/interfaces/IPolyline;->getNearestLatLng(Lcom/amap/api/maps/model/LatLng;)Lcom/amap/api/maps/model/LatLng;
@@ -129,7 +117,6 @@
 .method public getOptions()Lcom/amap/api/maps/model/PolylineOptions;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IPolyline;->getOptions()Lcom/amap/api/maps/model/PolylineOptions;
@@ -150,7 +137,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -165,7 +151,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -176,7 +161,6 @@
 .method public getWidth()F
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -191,7 +175,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -202,7 +185,6 @@
 .method public getZIndex()F
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -217,7 +199,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -228,7 +209,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -243,7 +223,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -254,7 +233,6 @@
 .method public isDottedLine()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IPolyline;->isDottedLine()Z
@@ -267,7 +245,6 @@
 .method public isGeodesic()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IPolyline;->isGeodesic()Z
@@ -280,7 +257,6 @@
 .method public isVisible()Z
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -295,7 +271,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -306,7 +281,6 @@
 .method public remove()V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -319,7 +293,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -328,7 +301,6 @@
 .method public setAboveMaskLayer(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     invoke-interface {v0, p1}, Lcom/autonavi/amap/mapcore/interfaces/IOverlay;->setAboveMaskLayer(Z)V
@@ -339,7 +311,6 @@
 .method public setColor(I)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -352,7 +323,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -369,7 +339,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     invoke-interface {v0, p1}, Lcom/autonavi/amap/mapcore/interfaces/IPolyline;->setCustemTextureIndex(Ljava/util/List;)V
@@ -380,7 +349,6 @@
 .method public setCustomTexture(Lcom/amap/api/maps/model/BitmapDescriptor;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     invoke-interface {v0, p1}, Lcom/autonavi/amap/mapcore/interfaces/IPolyline;->setCustomTexture(Lcom/amap/api/maps/model/BitmapDescriptor;)V
@@ -391,7 +359,6 @@
 .method public setDottedLine(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     invoke-interface {v0, p1}, Lcom/autonavi/amap/mapcore/interfaces/IPolyline;->setDottedLine(Z)V
@@ -402,7 +369,6 @@
 .method public setGeodesic(Z)V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -412,17 +378,14 @@
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/amap/api/maps/model/Polyline;->getPoints()Ljava/util/List;
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     invoke-interface {v1, p1}, Lcom/autonavi/amap/mapcore/interfaces/IPolyline;->setGeodesic(Z)V
 
-    .line 4
     invoke-virtual {p0, v0}, Lcom/amap/api/maps/model/Polyline;->setPoints(Ljava/util/List;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -433,7 +396,6 @@
     :catchall_0
     move-exception p1
 
-    .line 5
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -442,7 +404,6 @@
 .method public setOptions(Lcom/amap/api/maps/model/PolylineOptions;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     invoke-interface {v0, p1}, Lcom/autonavi/amap/mapcore/interfaces/IPolyline;->setOptions(Lcom/amap/api/maps/model/PolylineOptions;)V
@@ -461,7 +422,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -474,7 +434,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -483,7 +442,6 @@
 .method public setTransparency(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
     invoke-interface {v0, p1}, Lcom/autonavi/amap/mapcore/interfaces/IPolyline;->setTransparency(F)V
@@ -494,7 +452,6 @@
 .method public setVisible(Z)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -507,7 +464,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -516,7 +472,6 @@
 .method public setWidth(F)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -529,7 +484,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -538,7 +492,6 @@
 .method public setZIndex(F)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/Polyline;->a:Lcom/autonavi/amap/mapcore/interfaces/IPolyline;
 
@@ -551,7 +504,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

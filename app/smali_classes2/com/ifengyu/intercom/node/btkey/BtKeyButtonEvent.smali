@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent;
 .super Lcom/ifengyu/intercom/node/btkey/a;
-.source "BtKeyButtonEvent.java"
 
 
 # annotations
@@ -19,10 +18,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/node/btkey/a;-><init>()V
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent$BTKEY_EVENT;->a:Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent$BTKEY_EVENT;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent;->a:Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent$BTKEY_EVENT;
@@ -39,7 +36,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     :try_start_0
     new-instance v1, Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent;
@@ -48,7 +44,6 @@
 
     const/4 v2, 0x0
 
-    .line 3
     :goto_0
     array-length v3, p0
 
@@ -56,7 +51,6 @@
 
     add-int/lit8 v3, v2, 0x1
 
-    .line 4
     aget-byte v2, p0, v2
 
     and-int/lit16 v2, v2, 0xff
@@ -67,7 +61,6 @@
 
     add-int/lit8 v5, v3, 0x1
 
-    .line 5
     aget-byte v3, p0, v3
 
     and-int/lit16 v3, v3, 0xff
@@ -76,7 +69,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_1
     aget-byte v3, p0, v5
 
@@ -84,7 +76,6 @@
 
     if-ne v3, v4, :cond_2
 
-    .line 7
     sget-object v3, Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent$BTKEY_EVENT;->b:Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent$BTKEY_EVENT;
 
     invoke-virtual {v1, v3}, Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent;->a(Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent$BTKEY_EVENT;)V
@@ -96,7 +87,6 @@
 
     if-ne v3, v4, :cond_3
 
-    .line 8
     sget-object v3, Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent$BTKEY_EVENT;->c:Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent$BTKEY_EVENT;
 
     invoke-virtual {v1, v3}, Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent;->a(Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent$BTKEY_EVENT;)V
@@ -115,7 +105,6 @@
     :catch_0
     move-exception p0
 
-    .line 9
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     return-object v0
@@ -126,7 +115,6 @@
 .method public a(Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent$BTKEY_EVENT;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent;->a:Lcom/ifengyu/intercom/node/btkey/BtKeyButtonEvent$BTKEY_EVENT;
 
     return-void
@@ -135,7 +123,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

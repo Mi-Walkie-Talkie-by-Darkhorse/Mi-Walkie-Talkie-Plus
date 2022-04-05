@@ -1,6 +1,5 @@
 .class public Landroidx/core/graphics/e$b;
 .super Ljava/lang/Object;
-.source "PathParser.java"
 
 
 # annotations
@@ -24,13 +23,10 @@
 .method constructor <init>(C[F)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-char p1, p0, Landroidx/core/graphics/e$b;->a:C
 
-    .line 3
     iput-object p2, p0, Landroidx/core/graphics/e$b;->b:[F
 
     return-void
@@ -39,15 +35,12 @@
 .method constructor <init>(Landroidx/core/graphics/e$b;)V
     .locals 2
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
     iget-char v0, p1, Landroidx/core/graphics/e$b;->a:C
 
     iput-char v0, p0, Landroidx/core/graphics/e$b;->a:C
 
-    .line 6
     iget-object p1, p1, Landroidx/core/graphics/e$b;->b:[F
 
     array-length v0, p1
@@ -76,7 +69,6 @@
 
     div-double/2addr v4, v6
 
-    .line 97
     invoke-static {v4, v5}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v4
@@ -87,22 +79,18 @@
 
     double-to-int v4, v4
 
-    .line 98
     invoke-static/range {p13 .. p14}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v5
 
-    .line 99
     invoke-static/range {p13 .. p14}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v7
 
-    .line 100
     invoke-static/range {p15 .. p16}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v9
 
-    .line 101
     invoke-static/range {p15 .. p16}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v11
@@ -152,12 +140,10 @@
 
     add-double v31, v23, v9
 
-    .line 102
     invoke-static/range {v31 .. v32}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v33
 
-    .line 103
     invoke-static/range {v31 .. v32}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v35
@@ -202,12 +188,10 @@
 
     div-double v35, v23, v35
 
-    .line 104
     invoke-static/range {v35 .. v36}, Ljava/lang/Math;->tan(D)D
 
     move-result-wide v35
 
-    .line 105
     invoke-static/range {v23 .. v24}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v23
@@ -262,7 +246,6 @@
 
     move-object/from16 v14, p0
 
-    .line 106
     invoke-virtual {v14, v13, v13}, Landroid/graphics/Path;->rLineTo(FF)V
 
     double-to-float v11, v11
@@ -291,7 +274,6 @@
 
     move/from16 v48, v9
 
-    .line 107
     invoke-virtual/range {v42 .. v48}, Landroid/graphics/Path;->cubicTo(FFFFFF)V
 
     add-int/lit8 v2, v2, 0x1
@@ -341,17 +323,14 @@
 
     float-to-double v4, v7
 
-    .line 86
     invoke-static {v4, v5}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v19
 
-    .line 87
     invoke-static/range {v19 .. v20}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v4
 
-    .line 88
     invoke-static/range {v19 .. v20}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v10
@@ -452,7 +431,6 @@
 
     const-string v0, " Points are coincident"
 
-    .line 89
     invoke-static {v12, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
@@ -470,7 +448,6 @@
 
     if-gez v39, :cond_1
 
-    .line 90
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -487,7 +464,6 @@
 
     invoke-static {v12, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 91
     invoke-static {v10, v11}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v1
@@ -518,12 +494,10 @@
 
     move/from16 v9, p9
 
-    .line 92
     invoke-static/range {v0 .. v9}, Landroidx/core/graphics/e$b;->a(Landroid/graphics/Path;FFFFFFFZZ)V
 
     return-void
 
-    .line 93
     :cond_1
     invoke-static/range {v35 .. v36}, Ljava/lang/Math;->sqrt(D)D
 
@@ -555,7 +529,6 @@
 
     sub-double v10, v15, v29
 
-    .line 94
     invoke-static {v8, v9, v10, v11}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide v23
@@ -564,7 +537,6 @@
 
     sub-double v1, v1, v29
 
-    .line 95
     invoke-static {v6, v7, v1, v2}, Ljava/lang/Math;->atan2(DD)D
 
     move-result-wide v0
@@ -632,7 +604,6 @@
 
     move-wide/from16 v23, v0
 
-    .line 96
     invoke-static/range {v6 .. v24}, Landroidx/core/graphics/e$b;->a(Landroid/graphics/Path;DDDDDDDDD)V
 
     return-void
@@ -649,32 +620,26 @@
 
     const/4 v13, 0x0
 
-    .line 7
     aget v0, p1, v13
 
     const/4 v14, 0x1
 
-    .line 8
     aget v1, p1, v14
 
     const/4 v15, 0x2
 
-    .line 9
     aget v2, p1, v15
 
     const/16 v16, 0x3
 
-    .line 10
     aget v3, p1, v16
 
     const/16 v17, 0x4
 
-    .line 11
     aget v4, p1, v17
 
     const/16 v18, 0x5
 
-    .line 12
     aget v5, p1, v18
 
     sparse-switch v11, :sswitch_data_0
@@ -685,11 +650,9 @@
 
     goto :goto_1
 
-    .line 13
     :sswitch_1
     invoke-virtual/range {p0 .. p0}, Landroid/graphics/Path;->close()V
 
-    .line 14
     invoke-virtual {v10, v4, v5}, Landroid/graphics/Path;->moveTo(FF)V
 
     move v0, v4
@@ -737,7 +700,6 @@
 
     move/from16 v0, p2
 
-    .line 15
     :goto_2
     array-length v1, v12
 
@@ -849,7 +811,6 @@
     :goto_5
     add-int/lit8 v1, v7, 0x0
 
-    .line 16
     aget v2, v12, v1
 
     add-int/lit8 v3, v7, 0x1
@@ -862,12 +823,10 @@
 
     add-float/2addr v0, v8
 
-    .line 17
     aget v1, v12, v1
 
     add-float/2addr v9, v1
 
-    .line 18
     aget v1, v12, v3
 
     add-float/2addr v8, v1
@@ -913,7 +872,6 @@
     :goto_7
     add-int/lit8 v13, v7, 0x0
 
-    .line 19
     aget v3, v12, v13
 
     add-int/lit8 v14, v7, 0x1
@@ -932,22 +890,18 @@
 
     invoke-virtual/range {v0 .. v6}, Landroid/graphics/Path;->rCubicTo(FFFFFF)V
 
-    .line 20
     aget v0, v12, v13
 
     add-float/2addr v0, v9
 
-    .line 21
     aget v1, v12, v14
 
     add-float/2addr v1, v8
 
-    .line 22
     aget v2, v12, v15
 
     add-float/2addr v9, v2
 
-    .line 23
     aget v2, v12, v22
 
     goto/16 :goto_a
@@ -955,21 +909,18 @@
     :cond_6
     add-int/lit8 v0, v7, 0x0
 
-    .line 24
     aget v1, v12, v0
 
     add-float/2addr v9, v1
 
     add-int/lit8 v1, v7, 0x1
 
-    .line 25
     aget v4, v12, v1
 
     add-float/2addr v8, v4
 
     if-lez v7, :cond_7
 
-    .line 26
     aget v0, v12, v0
 
     aget v1, v12, v1
@@ -978,7 +929,6 @@
 
     goto :goto_3
 
-    .line 27
     :cond_7
     aget v0, v12, v0
 
@@ -991,7 +941,6 @@
     :cond_8
     add-int/lit8 v0, v7, 0x0
 
-    .line 28
     aget v1, v12, v0
 
     add-int/lit8 v4, v7, 0x1
@@ -1000,12 +949,10 @@
 
     invoke-virtual {v10, v1, v5}, Landroid/graphics/Path;->rLineTo(FF)V
 
-    .line 29
     aget v0, v12, v0
 
     add-float/2addr v9, v0
 
-    .line 30
     aget v0, v12, v4
 
     :goto_8
@@ -1034,7 +981,6 @@
     :cond_b
     add-int/lit8 v0, v7, 0x0
 
-    .line 31
     aget v1, v12, v0
 
     add-int/lit8 v2, v7, 0x1
@@ -1043,10 +989,8 @@
 
     invoke-virtual {v10, v9, v8, v1, v3}, Landroid/graphics/Path;->quadTo(FFFF)V
 
-    .line 32
     aget v0, v12, v0
 
-    .line 33
     aget v1, v12, v2
 
     move/from16 v24, v7
@@ -1090,7 +1034,6 @@
 
     add-int/lit8 v8, v7, 0x0
 
-    .line 34
     aget v3, v12, v8
 
     add-int/lit8 v9, v7, 0x1
@@ -1109,16 +1052,12 @@
 
     invoke-virtual/range {v0 .. v6}, Landroid/graphics/Path;->cubicTo(FFFFFF)V
 
-    .line 35
     aget v0, v12, v8
 
-    .line 36
     aget v1, v12, v9
 
-    .line 37
     aget v9, v12, v13
 
-    .line 38
     aget v8, v12, v14
 
     goto/16 :goto_b
@@ -1126,17 +1065,14 @@
     :cond_f
     add-int/lit8 v0, v7, 0x0
 
-    .line 39
     aget v9, v12, v0
 
     add-int/lit8 v1, v7, 0x1
 
-    .line 40
     aget v8, v12, v1
 
     if-lez v7, :cond_10
 
-    .line 41
     aget v0, v12, v0
 
     aget v1, v12, v1
@@ -1145,7 +1081,6 @@
 
     goto/16 :goto_3
 
-    .line 42
     :cond_10
     aget v0, v12, v0
 
@@ -1165,7 +1100,6 @@
     :cond_11
     add-int/lit8 v0, v7, 0x0
 
-    .line 43
     aget v1, v12, v0
 
     add-int/lit8 v4, v7, 0x1
@@ -1174,10 +1108,8 @@
 
     invoke-virtual {v10, v1, v5}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 44
     aget v9, v12, v0
 
-    .line 45
     aget v8, v12, v4
 
     goto/16 :goto_3
@@ -1185,14 +1117,12 @@
     :cond_12
     add-int/lit8 v0, v7, 0x0
 
-    .line 46
     aget v1, v12, v0
 
     const/4 v4, 0x0
 
     invoke-virtual {v10, v4, v1}, Landroid/graphics/Path;->rLineTo(FF)V
 
-    .line 47
     aget v0, v12, v0
 
     goto/16 :goto_8
@@ -1200,7 +1130,6 @@
     :cond_13
     add-int/lit8 v0, v7, 0x0
 
-    .line 48
     aget v1, v12, v0
 
     add-int/lit8 v2, v7, 0x1
@@ -1217,22 +1146,18 @@
 
     invoke-virtual {v10, v1, v3, v5, v13}, Landroid/graphics/Path;->rQuadTo(FFFF)V
 
-    .line 49
     aget v0, v12, v0
 
     add-float/2addr v0, v9
 
-    .line 50
     aget v1, v12, v2
 
     add-float/2addr v1, v8
 
-    .line 51
     aget v2, v12, v4
 
     add-float/2addr v9, v2
 
-    .line 52
     aget v2, v12, v6
 
     goto :goto_a
@@ -1240,14 +1165,12 @@
     :cond_14
     add-int/lit8 v0, v7, 0x0
 
-    .line 53
     aget v1, v12, v0
 
     const/4 v4, 0x0
 
     invoke-virtual {v10, v1, v4}, Landroid/graphics/Path;->rLineTo(FF)V
 
-    .line 54
     aget v0, v12, v0
 
     add-float/2addr v9, v0
@@ -1257,7 +1180,6 @@
     :cond_15
     add-int/lit8 v0, v7, 0x0
 
-    .line 55
     aget v1, v12, v0
 
     add-int/lit8 v0, v7, 0x1
@@ -1284,22 +1206,18 @@
 
     invoke-virtual/range {v0 .. v6}, Landroid/graphics/Path;->rCubicTo(FFFFFF)V
 
-    .line 56
     aget v0, v12, v13
 
     add-float/2addr v0, v9
 
-    .line 57
     aget v1, v12, v14
 
     add-float/2addr v1, v8
 
-    .line 58
     aget v2, v12, v15
 
     add-float/2addr v9, v2
 
-    .line 59
     aget v2, v12, v22
 
     :goto_a
@@ -1315,7 +1233,6 @@
     :cond_16
     add-int/lit8 v13, v7, 0x5
 
-    .line 60
     aget v0, v12, v13
 
     add-float v3, v0, v9
@@ -1392,12 +1309,10 @@
 
     invoke-static/range {v0 .. v9}, Landroidx/core/graphics/e$b;->a(Landroid/graphics/Path;FFFFFFFZZ)V
 
-    .line 61
     aget v0, v12, v13
 
     add-float v9, v11, v0
 
-    .line 62
     aget v0, v12, v14
 
     add-float v8, v15, v0
@@ -1411,12 +1326,10 @@
 
     add-int/lit8 v7, v24, 0x0
 
-    .line 63
     aget v0, v12, v7
 
     invoke-virtual {v10, v11, v0}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 64
     aget v8, v12, v7
 
     goto/16 :goto_11
@@ -1426,7 +1339,6 @@
 
     add-int/lit8 v7, v24, 0x0
 
-    .line 65
     aget v0, v12, v7
 
     add-int/lit8 v1, v24, 0x1
@@ -1443,16 +1355,12 @@
 
     invoke-virtual {v10, v0, v2, v4, v6}, Landroid/graphics/Path;->quadTo(FFFF)V
 
-    .line 66
     aget v0, v12, v7
 
-    .line 67
     aget v1, v12, v1
 
-    .line 68
     aget v9, v12, v3
 
-    .line 69
     aget v8, v12, v5
 
     move v2, v0
@@ -1468,12 +1376,10 @@
 
     add-int/lit8 v7, v24, 0x0
 
-    .line 70
     aget v0, v12, v7
 
     invoke-virtual {v10, v0, v15}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 71
     aget v9, v12, v7
 
     goto/16 :goto_11
@@ -1483,7 +1389,6 @@
 
     add-int/lit8 v7, v24, 0x0
 
-    .line 72
     aget v1, v12, v7
 
     add-int/lit8 v7, v24, 0x1
@@ -1510,16 +1415,12 @@
 
     invoke-virtual/range {v0 .. v6}, Landroid/graphics/Path;->cubicTo(FFFFFF)V
 
-    .line 73
     aget v9, v12, v9
 
-    .line 74
     aget v0, v12, v11
 
-    .line 75
     aget v1, v12, v7
 
-    .line 76
     aget v2, v12, v8
 
     move v8, v0
@@ -1539,7 +1440,6 @@
 
     add-int/lit8 v13, v24, 0x5
 
-    .line 77
     aget v3, v12, v13
 
     add-int/lit8 v14, v24, 0x6
@@ -1600,10 +1500,8 @@
 
     invoke-static/range {v0 .. v9}, Landroidx/core/graphics/e$b;->a(Landroid/graphics/Path;FFFFFFFZZ)V
 
-    .line 78
     aget v9, v12, v13
 
-    .line 79
     aget v8, v12, v14
 
     :goto_10
@@ -1633,26 +1531,20 @@
 
     const/4 v0, 0x0
 
-    .line 80
     aput v11, p1, v0
 
     const/4 v0, 0x1
 
-    .line 81
     aput v15, p1, v0
 
     const/4 v0, 0x2
 
-    .line 82
     aput v2, p1, v0
 
-    .line 83
     aput v3, p1, v16
 
-    .line 84
     aput v20, p1, v17
 
-    .line 85
     aput v21, p1, v18
 
     return-void
@@ -1693,13 +1585,11 @@
 
     const/4 v2, 0x0
 
-    .line 1
     :goto_0
     array-length v3, p0
 
     if-ge v2, v3, :cond_0
 
-    .line 2
     aget-object v3, p0, v2
 
     iget-char v3, v3, Landroidx/core/graphics/e$b;->a:C
@@ -1710,7 +1600,6 @@
 
     invoke-static {p1, v0, v1, v3, v4}, Landroidx/core/graphics/e$b;->a(Landroid/graphics/Path;[FCC[F)V
 
-    .line 3
     aget-object v1, p0, v2
 
     iget-char v1, v1, Landroidx/core/graphics/e$b;->a:C
@@ -1728,14 +1617,12 @@
 .method public a(Landroidx/core/graphics/e$b;Landroidx/core/graphics/e$b;F)V
     .locals 4
 
-    .line 4
     iget-char v0, p1, Landroidx/core/graphics/e$b;->a:C
 
     iput-char v0, p0, Landroidx/core/graphics/e$b;->a:C
 
     const/4 v0, 0x0
 
-    .line 5
     :goto_0
     iget-object v1, p1, Landroidx/core/graphics/e$b;->b:[F
 
@@ -1743,7 +1630,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 6
     iget-object v2, p0, Landroidx/core/graphics/e$b;->b:[F
 
     aget v1, v1, v0

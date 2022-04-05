@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/f/a;
 .super Ljava/lang/Object;
-.source "DeviceConsts.java"
 
 
 # static fields
@@ -19,14 +18,12 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/f/a;->a:Ljava/util/List;
 
-    .line 2
     new-instance v1, Landroid/os/ParcelUuid;
 
     const-string v2, "0000aee7-0000-1000-8000-00805f9b34fb"
@@ -39,7 +36,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/f/a;->a:Ljava/util/List;
 
     new-instance v1, Landroid/os/ParcelUuid;
@@ -54,7 +50,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/f/a;->a:Ljava/util/List;
 
     new-instance v1, Landroid/os/ParcelUuid;
@@ -69,7 +64,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/f/a;->a:Ljava/util/List;
 
     new-instance v1, Landroid/os/ParcelUuid;

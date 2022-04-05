@@ -1,6 +1,5 @@
 .class final Lcom/nostra13/universalimageloader/utils/MemoryCacheUtils$1;
 .super Ljava/lang/Object;
-.source "MemoryCacheUtils.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     check-cast p2, Ljava/lang/String;
@@ -58,7 +55,6 @@
 
     const-string v0, "_"
 
-    .line 2
     invoke-virtual {p1, v0}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
 
     move-result v1
@@ -69,7 +65,6 @@
 
     move-result-object p1
 
-    .line 3
     invoke-virtual {p2, v0}, Ljava/lang/String;->lastIndexOf(Ljava/lang/String;)I
 
     move-result v0
@@ -78,7 +73,6 @@
 
     move-result-object p2
 
-    .line 4
     invoke-virtual {p1, p2}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I
 
     move-result p1

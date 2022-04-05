@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/completable/CompletableCache;
 .super Lio/reactivex/Completable;
-.source "CompletableCache.java"
 
 # interfaces
 .implements Lio/reactivex/CompletableObserver;
@@ -47,12 +46,10 @@
 
     new-array v1, v0, [Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
 
-    .line 1
     sput-object v1, Lio/reactivex/internal/operators/completable/CompletableCache;->EMPTY:[Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
 
     new-array v0, v0, [Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
 
-    .line 2
     sput-object v0, Lio/reactivex/internal/operators/completable/CompletableCache;->TERMINATED:[Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
 
     return-void
@@ -61,13 +58,10 @@
 .method public constructor <init>(Lio/reactivex/CompletableSource;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->source:Lio/reactivex/CompletableSource;
 
-    .line 3
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object v0, Lio/reactivex/internal/operators/completable/CompletableCache;->EMPTY:[Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
@@ -76,7 +70,6 @@
 
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 4
     new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
@@ -91,7 +84,6 @@
 .method add(Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;)Z
     .locals 4
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -101,7 +93,6 @@
 
     check-cast v0, [Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
 
-    .line 2
     sget-object v1, Lio/reactivex/internal/operators/completable/CompletableCache;->TERMINATED:[Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
 
     const/4 v2, 0x0
@@ -110,22 +101,17 @@
 
     return v2
 
-    .line 3
     :cond_1
     array-length v1, v0
 
     add-int/lit8 v3, v1, 0x1
 
-    .line 4
     new-array v3, v3, [Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
 
-    .line 5
     invoke-static {v0, v2, v3, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 6
     aput-object p1, v3, v1
 
-    .line 7
     iget-object v1, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v1, v0, v3}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -142,7 +128,6 @@
 .method public onComplete()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object v1, Lio/reactivex/internal/operators/completable/CompletableCache;->TERMINATED:[Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
@@ -162,14 +147,12 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 3
     iget-object v3, v3, Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;->downstream:Lio/reactivex/CompletableObserver;
 
     invoke-interface {v3}, Lio/reactivex/CompletableObserver;->onComplete()V
@@ -186,10 +169,8 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 5
 
-    .line 1
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->error:Ljava/lang/Throwable;
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object v1, Lio/reactivex/internal/operators/completable/CompletableCache;->TERMINATED:[Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
@@ -209,14 +190,12 @@
 
     aget-object v3, v0, v2
 
-    .line 3
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 4
     iget-object v3, v3, Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;->downstream:Lio/reactivex/CompletableObserver;
 
     invoke-interface {v3, p1}, Lio/reactivex/CompletableObserver;->onError(Ljava/lang/Throwable;)V
@@ -239,7 +218,6 @@
 .method remove(Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;)V
     .locals 6
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -249,7 +227,6 @@
 
     check-cast v0, [Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
 
-    .line 2
     array-length v1, v0
 
     if-nez v1, :cond_1
@@ -266,7 +243,6 @@
     :goto_0
     if-ge v4, v1, :cond_3
 
-    .line 3
     aget-object v5, v0, v4
 
     if-ne v5, p1, :cond_2
@@ -291,7 +267,6 @@
 
     if-ne v1, v4, :cond_5
 
-    .line 4
     sget-object v1, Lio/reactivex/internal/operators/completable/CompletableCache;->EMPTY:[Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
 
     goto :goto_2
@@ -299,10 +274,8 @@
     :cond_5
     add-int/lit8 v5, v1, -0x1
 
-    .line 5
     new-array v5, v5, [Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
 
-    .line 6
     invoke-static {v0, v3, v5, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/lit8 v3, v2, 0x1
@@ -311,12 +284,10 @@
 
     sub-int/2addr v1, v4
 
-    .line 7
     invoke-static {v0, v3, v5, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     move-object v1, v5
 
-    .line 8
     :goto_2
     iget-object v2, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->observers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -332,32 +303,26 @@
 .method protected subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 2
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;
 
     invoke-direct {v0, p0, p1}, Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;-><init>(Lio/reactivex/internal/operators/completable/CompletableCache;Lio/reactivex/CompletableObserver;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/CompletableObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     invoke-virtual {p0, v0}, Lio/reactivex/internal/operators/completable/CompletableCache;->add(Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;)Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 4
     invoke-virtual {v0}, Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;->isDisposed()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 5
     invoke-virtual {p0, v0}, Lio/reactivex/internal/operators/completable/CompletableCache;->remove(Lio/reactivex/internal/operators/completable/CompletableCache$InnerCompletableCache;)V
 
-    .line 6
     :cond_0
     iget-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
@@ -371,25 +336,21 @@
 
     if-eqz p1, :cond_3
 
-    .line 7
     iget-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->source:Lio/reactivex/CompletableSource;
 
     invoke-interface {p1, p0}, Lio/reactivex/CompletableSource;->subscribe(Lio/reactivex/CompletableObserver;)V
 
     goto :goto_0
 
-    .line 8
     :cond_1
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableCache;->error:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_2
 
-    .line 9
     invoke-interface {p1, v0}, Lio/reactivex/CompletableObserver;->onError(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 10
     :cond_2
     invoke-interface {p1}, Lio/reactivex/CompletableObserver;->onComplete()V
 

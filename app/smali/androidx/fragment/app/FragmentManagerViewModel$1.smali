@@ -1,6 +1,5 @@
 .class Landroidx/fragment/app/FragmentManagerViewModel$1;
 .super Ljava/lang/Object;
-.source "FragmentManagerViewModel.java"
 
 # interfaces
 .implements Landroidx/lifecycle/w$b;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +46,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Landroidx/fragment/app/FragmentManagerViewModel;
 
     const/4 v0, 0x1

@@ -1,13 +1,11 @@
 .class public Lcom/just/agentweb/AgentWebFileProvider;
 .super Landroidx/core/content/FileProvider;
-.source "AgentWebFileProvider.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/core/content/FileProvider;-><init>()V
 
     return-void
@@ -26,7 +24,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/core/content/FileProvider;->attachInfo(Landroid/content/Context;Landroid/content/pm/ProviderInfo;)V
 
     return-void

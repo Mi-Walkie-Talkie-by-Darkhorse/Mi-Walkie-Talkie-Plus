@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/bottomappbar/BottomAppBar$FabAnimationMode;
 .super Ljava/lang/Object;
-.source "BottomAppBar.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/statistics/proto/Response$d;
 .super Ljava/lang/Object;
-.source "Response.java"
 
 # interfaces
 .implements Lcom/umeng/analytics/pro/by;
@@ -21,7 +20,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 .method synthetic constructor <init>(Lcom/umeng/commonsdk/statistics/proto/Response$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/umeng/commonsdk/statistics/proto/Response$d;-><init>()V
 
     return-void
@@ -41,7 +38,6 @@
 .method public a()Lcom/umeng/commonsdk/statistics/proto/Response$c;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/umeng/commonsdk/statistics/proto/Response$c;
 
     const/4 v1, 0x0
@@ -54,7 +50,6 @@
 .method public synthetic b()Lcom/umeng/analytics/pro/bx;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/umeng/commonsdk/statistics/proto/Response$d;->a()Lcom/umeng/commonsdk/statistics/proto/Response$c;
 
     move-result-object v0

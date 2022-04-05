@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/openauth/XiaomiOAuthorize$3;
 .super Ljava/lang/Object;
-.source "XiaomiOAuthorize.java"
 
 # interfaces
 .implements Lcom/xiaomi/account/openauth/XiaomiOAuthFuture;
@@ -36,7 +35,6 @@
 .method constructor <init>(Lcom/xiaomi/account/openauth/XiaomiOAuthorize;Ljava/util/concurrent/FutureTask;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$3;->this$0:Lcom/xiaomi/account/openauth/XiaomiOAuthorize;
 
     iput-object p2, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$3;->val$futureTask:Ljava/util/concurrent/FutureTask;
@@ -58,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$3;->getResult()Ljava/lang/String;
 
     move-result-object v0
@@ -76,7 +73,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0, p1, p2, p3}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$3;->getResult(JLjava/util/concurrent/TimeUnit;)Ljava/lang/String;
 
     move-result-object p1
@@ -94,7 +90,6 @@
         }
     .end annotation
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$3;->val$futureTask:Ljava/util/concurrent/FutureTask;
 
@@ -112,7 +107,6 @@
     :catch_0
     move-exception v0
 
-    .line 4
     new-instance v1, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
@@ -126,7 +120,6 @@
     :catch_1
     move-exception v0
 
-    .line 5
     new-instance v1, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
     invoke-direct {v1, v0}, Lcom/xiaomi/account/openauth/XMAuthericationException;-><init>(Ljava/lang/Throwable;)V
@@ -144,7 +137,6 @@
         }
     .end annotation
 
-    .line 6
     :try_start_0
     iget-object v0, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$3;->val$futureTask:Ljava/util/concurrent/FutureTask;
 
@@ -163,7 +155,6 @@
     :catch_0
     move-exception p1
 
-    .line 7
     new-instance p2, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
     invoke-direct {p2, p1}, Lcom/xiaomi/account/openauth/XMAuthericationException;-><init>(Ljava/lang/Throwable;)V
@@ -173,7 +164,6 @@
     :catch_1
     move-exception p1
 
-    .line 8
     new-instance p2, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
     invoke-virtual {p1}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
@@ -187,7 +177,6 @@
     :catch_2
     move-exception p1
 
-    .line 9
     new-instance p2, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
     invoke-direct {p2, p1}, Lcom/xiaomi/account/openauth/XMAuthericationException;-><init>(Ljava/lang/Throwable;)V

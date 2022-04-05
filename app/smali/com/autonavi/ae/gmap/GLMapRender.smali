@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/GLMapRender;
 .super Ljava/lang/Object;
-.source "GLMapRender.java"
 
 # interfaces
 .implements Landroid/opengl/GLSurfaceView$Renderer;
@@ -60,46 +59,36 @@
 .method public constructor <init>(Lcom/autonavi/amap/mapcore/interfaces/IAMap;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0x42
 
-    .line 2
     iput v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mTargetFrameDurationMillis:I
 
     const/high16 v0, 0x41700000    # 15.0f
 
-    .line 3
     iput v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mTargetRenderFPS:F
 
     const/4 v0, 0x0
 
-    .line 4
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mIsRendPause:Z
 
-    .line 5
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mSurfacedestoryed:Z
 
     const/4 v1, 0x0
 
-    .line 6
     iput-object v1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderThread:Landroid/os/HandlerThread;
 
-    .line 7
     iput-object v1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
-    .line 8
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
     iput-wide v1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mLastFrameTime:J
 
-    .line 9
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mIsTrafficMode:Z
 
-    .line 10
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     const-wide/16 v1, 0x6
@@ -108,7 +97,6 @@
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mDrawFrameTickCount:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 11
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     return-void
@@ -117,7 +105,6 @@
 .method static synthetic access$000(Lcom/autonavi/ae/gmap/GLMapRender;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mIsRendPause:Z
 
     return p0
@@ -126,7 +113,6 @@
 .method private drawSingleFrame(Ljavax/microedition/khronos/opengles/GL10;)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
@@ -139,7 +125,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -150,7 +135,6 @@
 .method public isRenderPause()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mIsRendPause:Z
 
     return v0
@@ -159,7 +143,6 @@
 .method public onAttachedToWindow()V
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/os/HandlerThread;
 
     const-string v1, " AMapGlRenderThread"
@@ -168,10 +151,8 @@
 
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderThread:Landroid/os/HandlerThread;
 
-    .line 2
     invoke-virtual {v0}, Landroid/os/HandlerThread;->start()V
 
-    .line 3
     new-instance v0, Lcom/autonavi/ae/gmap/GLMapRender$1;
 
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderThread:Landroid/os/HandlerThread;
@@ -190,17 +171,14 @@
 .method public onDetachedFromWindow()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderThread:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quit()Z
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderThread:Landroid/os/HandlerThread;
 
-    .line 3
     iput-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     return-void
@@ -209,37 +187,30 @@
 .method public onDrawFrame(Ljavax/microedition/khronos/opengles/GL10;)V
     .locals 8
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mLastFrameTime:J
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/GLMapRender;->drawSingleFrame(Ljavax/microedition/khronos/opengles/GL10;)V
 
-    .line 3
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 4
     iget-wide v2, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mLastFrameTime:J
 
     sub-long v2, v0, v2
 
-    .line 5
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mLastFrameTime:J
 
-    .line 6
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mDrawFrameTickCount:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v0
 
-    .line 7
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     invoke-interface {p1}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getRenderMode()I
@@ -256,14 +227,12 @@
 
     if-eqz p1, :cond_5
 
-    .line 8
     invoke-virtual {p1}, Landroid/os/HandlerThread;->isAlive()Z
 
     move-result p1
 
     if-eqz p1, :cond_5
 
-    .line 9
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mDrawFrameTickCount:Ljava/util/concurrent/atomic/AtomicLong;
 
     const-wide/16 v4, 0x1
@@ -310,7 +279,6 @@
 
     goto :goto_1
 
-    .line 10
     :cond_2
     iget-boolean p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mIsTrafficMode:Z
 
@@ -323,7 +291,6 @@
     :cond_3
     const-wide/16 v0, 0x1f4
 
-    .line 11
     :goto_0
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mDrawFrameTickCount:Ljava/util/concurrent/atomic/AtomicLong;
 
@@ -334,7 +301,6 @@
     :cond_4
     const-wide/16 v0, 0x10
 
-    .line 12
     iget p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mTargetFrameDurationMillis:I
 
     int-to-long v6, p1
@@ -350,14 +316,12 @@
 
     if-lez p1, :cond_5
 
-    .line 13
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     const/16 v2, 0xa
 
     invoke-virtual {p1, v2}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 14
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     invoke-virtual {p1, v2, v0, v1}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
@@ -369,17 +333,14 @@
 .method public onSurfaceChanged(Ljavax/microedition/khronos/opengles/GL10;II)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mSurfacedestoryed:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-virtual {p0, p1, v0}, Lcom/autonavi/ae/gmap/GLMapRender;->onSurfaceCreated(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
@@ -387,7 +348,6 @@
 
     const/16 p1, 0x1e
 
-    .line 4
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/gmap/GLMapRender;->resetTickCount(I)V
 
     return-void
@@ -398,13 +358,10 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mIsRendPause:Z
 
-    .line 2
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mSurfacedestoryed:Z
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     invoke-interface {v0, p1, p2}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->createSurface(Ljavax/microedition/khronos/opengles/GL10;Ljavax/microedition/khronos/egl/EGLConfig;)V
@@ -417,10 +374,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mIsRendPause:Z
 
-    .line 2
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     if-eqz v1, :cond_0
@@ -431,16 +386,13 @@
 
     const/4 v2, 0x0
 
-    .line 3
     invoke-virtual {v1, v2}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     invoke-interface {v1, v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->destorySurface(I)V
 
-    .line 5
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mSurfacedestoryed:Z
 
     return-void
@@ -449,7 +401,6 @@
 .method public renderPause()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
@@ -464,7 +415,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     const/16 v1, 0xa
@@ -474,7 +424,6 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mIsRendPause:Z
 
     return-void
@@ -483,7 +432,6 @@
 .method public renderResume()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
@@ -498,7 +446,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     const/16 v1, 0xa
@@ -508,10 +455,8 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mIsRendPause:Z
 
-    .line 4
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mDrawFrameTickCount:Ljava/util/concurrent/atomic/AtomicLong;
 
     const-wide/16 v1, -0x1
@@ -520,7 +465,6 @@
 
     const/16 v0, 0x1e
 
-    .line 5
     invoke-virtual {p0, v0}, Lcom/autonavi/ae/gmap/GLMapRender;->resetTickCount(I)V
 
     return-void
@@ -529,14 +473,12 @@
 .method public resetTickCount(I)V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mDrawFrameTickCount:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v0
 
-    .line 2
     iget-boolean v2, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mIsRendPause:Z
 
     if-nez v2, :cond_1
@@ -561,21 +503,18 @@
 
     if-gtz v4, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mDrawFrameTickCount:Ljava/util/concurrent/atomic/AtomicLong;
 
     int-to-long v1, p1
 
     invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
 
-    .line 4
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     const/16 v0, 0xa
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 5
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
@@ -589,7 +528,6 @@
 
     if-gez p1, :cond_2
 
-    .line 6
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mDrawFrameTickCount:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p1, v2, v3}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
@@ -603,7 +541,6 @@
 
     if-gez p1, :cond_2
 
-    .line 7
     iget-object p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mDrawFrameTickCount:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p1, v2, v3}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
@@ -615,7 +552,6 @@
 .method public sendToRenderEvent(Ljava/lang/Runnable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     if-eqz v0, :cond_0
@@ -630,7 +566,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mGLRenderHandler:Landroid/os/Handler;
 
     invoke-virtual {v0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
@@ -642,7 +577,6 @@
 .method public setRenderFps(F)V
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mTargetRenderFPS:F
 
     cmpl-float v0, v0, p1
@@ -665,10 +599,8 @@
 
     float-to-int v0, v0
 
-    .line 2
     iput v0, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mTargetFrameDurationMillis:I
 
-    .line 3
     iput p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mTargetRenderFPS:F
 
     :cond_0
@@ -678,7 +610,6 @@
 .method public setTrafficMode(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/autonavi/ae/gmap/GLMapRender;->mIsTrafficMode:Z
 
     return-void

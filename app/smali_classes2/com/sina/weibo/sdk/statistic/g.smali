@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/statistic/g;
 .super Ljava/lang/Object;
-.source "WBAgent.java"
 
 
 # direct methods
@@ -24,7 +23,6 @@
 
     const-string p0, "unexpected null page or activity in onEvent"
 
-    .line 1
     invoke-static {v0, p0}, Lcom/sina/weibo/sdk/utils/c;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -34,18 +32,15 @@
 
     const-string p0, "unexpected null eventId in onEvent"
 
-    .line 2
     invoke-static {v0, p0}, Lcom/sina/weibo/sdk/utils/c;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
-    .line 3
     :cond_1
     instance-of v0, p0, Landroid/content/Context;
 
     if-eqz v0, :cond_2
 
-    .line 4
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p0
@@ -54,7 +49,6 @@
 
     move-result-object p0
 
-    .line 5
     :cond_2
     invoke-static {}, Lcom/sina/weibo/sdk/statistic/i;->a()Lcom/sina/weibo/sdk/statistic/i;
 

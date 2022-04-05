@@ -1,13 +1,11 @@
 .class public Lcom/jude/rollviewpager/c;
 .super Ljava/lang/Object;
-.source "Util.java"
 
 
 # direct methods
 .method public static a(Landroid/content/Context;F)I
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0

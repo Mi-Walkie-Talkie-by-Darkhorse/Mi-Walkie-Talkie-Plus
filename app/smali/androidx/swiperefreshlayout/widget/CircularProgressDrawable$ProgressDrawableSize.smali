@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/swiperefreshlayout/widget/CircularProgressDrawable$ProgressDrawableSize;
 .super Ljava/lang/Object;
-.source "CircularProgressDrawable.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

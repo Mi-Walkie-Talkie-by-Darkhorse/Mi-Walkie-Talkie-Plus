@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/ItemizedIconOverlay$ActiveItem;
 .super Ljava/lang/Object;
-.source "ItemizedIconOverlay.java"
 
 
 # annotations

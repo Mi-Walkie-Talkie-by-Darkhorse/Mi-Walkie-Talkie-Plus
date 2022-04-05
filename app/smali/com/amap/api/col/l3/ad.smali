@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ad;
 .super Ljava/lang/Object;
-.source "SensorEventHelper.java"
 
 # interfaces
 .implements Landroid/hardware/SensorEventListener;
@@ -30,38 +29,31 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/amap/api/col/l3/u;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lcom/amap/api/col/l3/ad;->c:J
 
     const/16 v0, 0x64
 
-    .line 3
     iput v0, p0, Lcom/amap/api/col/l3/ad;->d:I
 
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lcom/amap/api/col/l3/ad;->i:Z
 
-    .line 5
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/amap/api/col/l3/ad;->f:Landroid/content/Context;
 
-    .line 6
     iput-object p2, p0, Lcom/amap/api/col/l3/ad;->g:Lcom/amap/api/col/l3/u;
 
     :try_start_0
     const-string p2, "sensor"
 
-    .line 7
     invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -72,7 +64,6 @@
 
     const/4 p2, 0x3
 
-    .line 8
     invoke-virtual {p1, p2}, Landroid/hardware/SensorManager;->getDefaultSensor(I)Landroid/hardware/Sensor;
 
     move-result-object p1
@@ -86,7 +77,6 @@
     :catchall_0
     move-exception p1
 
-    .line 9
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -97,7 +87,6 @@
 .method public final a()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ad;->a:Landroid/hardware/SensorManager;
 
     if-eqz v0, :cond_0
@@ -108,7 +97,6 @@
 
     const/4 v2, 0x3
 
-    .line 2
     invoke-virtual {v0, p0, v1, v2}, Landroid/hardware/SensorManager;->registerListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;I)Z
 
     :cond_0
@@ -118,7 +106,6 @@
 .method public final a(Lcom/amap/api/maps/model/Marker;)V
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/amap/api/col/l3/ad;->h:Lcom/amap/api/maps/model/Marker;
 
     return-void
@@ -127,7 +114,6 @@
 .method public final a(Z)V
     .locals 0
 
-    .line 4
     iput-boolean p1, p0, Lcom/amap/api/col/l3/ad;->i:Z
 
     return-void
@@ -136,7 +122,6 @@
 .method public final b()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ad;->a:Landroid/hardware/SensorManager;
 
     if-eqz v0, :cond_0
@@ -145,7 +130,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 2
     invoke-virtual {v0, p0, v1}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V
 
     :cond_0
@@ -161,7 +145,6 @@
 .method public final onSensorChanged(Landroid/hardware/SensorEvent;)V
     .locals 5
 
-    .line 1
     :try_start_0
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -179,7 +162,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ad;->g:Lcom/amap/api/col/l3/u;
 
@@ -203,7 +185,6 @@
 
     return-void
 
-    .line 3
     :cond_1
     iget-object v0, p1, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
 
@@ -217,7 +198,6 @@
 
     goto/16 :goto_3
 
-    .line 4
     :cond_2
     iget-object p1, p1, Landroid/hardware/SensorEvent;->values:[F
 
@@ -225,7 +205,6 @@
 
     aget p1, p1, v0
 
-    .line 5
     iget-object v2, p0, Lcom/amap/api/col/l3/ad;->f:Landroid/content/Context;
 
     const-string v3, "window"
@@ -300,7 +279,6 @@
 
     add-float/2addr p1, v0
 
-    .line 6
     :cond_8
     :goto_1
     iget v1, p0, Lcom/amap/api/col/l3/ad;->e:F
@@ -317,7 +295,6 @@
 
     if-ltz v1, :cond_c
 
-    .line 7
     invoke-static {p1}, Ljava/lang/Float;->isNaN(F)Z
 
     move-result v1
@@ -329,31 +306,25 @@
     :cond_9
     iput p1, p0, Lcom/amap/api/col/l3/ad;->e:F
 
-    .line 8
     iget-object v1, p0, Lcom/amap/api/col/l3/ad;->h:Lcom/amap/api/maps/model/Marker;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     if-eqz v1, :cond_b
 
-    .line 9
     :try_start_1
     iget-boolean v1, p0, Lcom/amap/api/col/l3/ad;->i:Z
 
     if-eqz v1, :cond_a
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/col/l3/ad;->g:Lcom/amap/api/col/l3/u;
 
-    .line 11
     invoke-static {p1}, Lcom/amap/api/col/l3/aj;->c(F)Lcom/autonavi/amap/mapcore/CameraUpdateMessage;
 
     move-result-object p1
 
-    .line 12
     invoke-interface {v0, p1}, Lcom/amap/api/col/l3/u;->a(Lcom/autonavi/amap/mapcore/CameraUpdateMessage;)V
 
-    .line 13
     iget-object p1, p0, Lcom/amap/api/col/l3/ad;->h:Lcom/amap/api/maps/model/Marker;
 
     iget v0, p0, Lcom/amap/api/col/l3/ad;->e:F
@@ -364,7 +335,6 @@
 
     goto :goto_2
 
-    .line 14
     :cond_a
     iget-object v1, p0, Lcom/amap/api/col/l3/ad;->h:Lcom/amap/api/maps/model/Marker;
 
@@ -379,11 +349,9 @@
     :catchall_0
     move-exception p1
 
-    .line 15
     :try_start_2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 16
     :cond_b
     :goto_2
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -401,7 +369,6 @@
     :catchall_1
     move-exception p1
 
-    .line 17
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

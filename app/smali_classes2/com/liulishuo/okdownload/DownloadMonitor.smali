@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/DownloadMonitor;
 .super Ljava/lang/Object;
-.source "DownloadMonitor.java"
 
 
 # virtual methods

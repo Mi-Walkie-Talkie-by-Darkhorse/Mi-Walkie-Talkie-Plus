@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ds$c$1;
 .super Ljava/lang/Object;
-.source "AsyncTask.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/ds$c;Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ds$c$1;->b:Lcom/amap/api/col/l3/ds$c;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/ds$c$1;->a:Ljava/lang/Runnable;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ds$c$1;->a:Ljava/lang/Runnable;
 
@@ -50,7 +47,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/ds$c$1;->b:Lcom/amap/api/col/l3/ds$c;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/ds$c;->a()V
@@ -64,6 +60,5 @@
 
     invoke-virtual {v1}, Lcom/amap/api/col/l3/ds$c;->a()V
 
-    .line 3
     throw v0
 .end method

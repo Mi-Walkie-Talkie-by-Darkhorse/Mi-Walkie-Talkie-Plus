@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/ViewBoundsCheck$a;
 .super Ljava/lang/Object;
-.source "ViewBoundsCheck.java"
 
 
 # annotations
@@ -30,12 +29,10 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->a:I
 
     return-void
@@ -68,7 +65,6 @@
 .method a(I)V
     .locals 1
 
-    .line 5
     iget v0, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->a:I
 
     or-int/2addr p1, v0
@@ -81,16 +77,12 @@
 .method a(IIII)V
     .locals 0
 
-    .line 1
     iput p1, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->b:I
 
-    .line 2
     iput p2, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->c:I
 
-    .line 3
     iput p3, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->d:I
 
-    .line 4
     iput p4, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->e:I
 
     return-void
@@ -99,7 +91,6 @@
 .method a()Z
     .locals 4
 
-    .line 6
     iget v0, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->a:I
 
     and-int/lit8 v1, v0, 0x7
@@ -108,7 +99,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 7
     iget v1, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->d:I
 
     iget v3, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->b:I
@@ -125,7 +115,6 @@
 
     return v2
 
-    .line 8
     :cond_0
     iget v0, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->a:I
 
@@ -133,7 +122,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 9
     iget v1, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->d:I
 
     iget v3, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->c:I
@@ -150,7 +138,6 @@
 
     return v2
 
-    .line 10
     :cond_1
     iget v0, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->a:I
 
@@ -158,7 +145,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 11
     iget v1, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->e:I
 
     iget v3, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->b:I
@@ -175,7 +161,6 @@
 
     return v2
 
-    .line 12
     :cond_2
     iget v0, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->a:I
 
@@ -183,7 +168,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 13
     iget v1, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->e:I
 
     iget v3, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->c:I
@@ -211,7 +195,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Landroidx/recyclerview/widget/ViewBoundsCheck$a;->a:I
 
     return-void

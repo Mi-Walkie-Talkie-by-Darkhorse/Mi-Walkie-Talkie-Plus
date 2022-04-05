@@ -1,6 +1,5 @@
 .class final Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_Connect$SHARK_APPTYPE$a;
 .super Ljava/lang/Object;
-.source "SharkProtos.java"
 
 # interfaces
 .implements Lcom/google/protobuf/Internal$EnumLiteMap;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public bridge synthetic findValueByNumber(I)Lcom/google/protobuf/Internal$EnumLite;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_Connect$SHARK_APPTYPE$a;->findValueByNumber(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_Connect$SHARK_APPTYPE;
 
     move-result-object p1
@@ -52,7 +49,6 @@
 .method public findValueByNumber(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_Connect$SHARK_APPTYPE;
     .locals 0
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_Connect$SHARK_APPTYPE;->valueOf(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_Connect$SHARK_APPTYPE;
 
     move-result-object p1

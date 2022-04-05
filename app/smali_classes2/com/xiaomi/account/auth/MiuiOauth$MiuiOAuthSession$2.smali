@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession$2;
 .super Lcom/xiaomi/account/IXiaomiAuthResponse$Stub;
-.source "MiuiOauth.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession;Lcom/xiaomi/account/auth/MiuiOauth;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession$2;->this$1:Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession;
 
     iput-object p2, p0, Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession$2;->val$this$0:Lcom/xiaomi/account/auth/MiuiOauth;
@@ -44,7 +42,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession$2;->this$1:Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession;
 
     new-instance v1, Landroid/accounts/OperationCanceledException;
@@ -64,7 +61,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession$2;->this$1:Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession;
 
     invoke-virtual {v0, p1}, Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession;->set(Landroid/os/Bundle;)V

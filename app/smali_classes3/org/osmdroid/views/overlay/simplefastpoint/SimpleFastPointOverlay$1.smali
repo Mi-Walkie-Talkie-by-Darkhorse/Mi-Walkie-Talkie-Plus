@@ -1,6 +1,5 @@
 .class synthetic Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$1;
 .super Ljava/lang/Object;
-.source "SimpleFastPointOverlay.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions$RenderingAlgorithm;->values()[Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions$RenderingAlgorithm;
 
     move-result-object v0

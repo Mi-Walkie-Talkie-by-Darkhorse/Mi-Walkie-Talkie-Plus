@@ -1,6 +1,5 @@
 .class public abstract Landroidx/room/g$c;
 .super Ljava/lang/Object;
-.source "InvalidationTracker.java"
 
 
 # annotations
@@ -26,10 +25,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     array-length v0, p1
 
     invoke-static {p1, v0}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;

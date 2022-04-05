@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/parallel/ParallelMap;
 .super Lio/reactivex/parallel/ParallelFlowable;
-.source "ParallelMap.java"
 
 
 # annotations
@@ -57,13 +56,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/parallel/ParallelFlowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/parallel/ParallelMap;->source:Lio/reactivex/parallel/ParallelFlowable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/parallel/ParallelMap;->mapper:Lio/reactivex/functions/Function;
 
     return-void
@@ -74,7 +70,6 @@
 .method public parallelism()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/parallel/ParallelMap;->source:Lio/reactivex/parallel/ParallelFlowable;
 
     invoke-virtual {v0}, Lio/reactivex/parallel/ParallelFlowable;->parallelism()I
@@ -94,7 +89,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lio/reactivex/parallel/ParallelFlowable;->validate([Lc/a/c;)Z
 
     move-result v0
@@ -103,11 +97,9 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v0, p1
 
-    .line 3
     new-array v1, v0, [Lc/a/c;
 
     const/4 v2, 0x0
@@ -115,15 +107,12 @@
     :goto_0
     if-ge v2, v0, :cond_2
 
-    .line 4
     aget-object v3, p1, v2
 
-    .line 5
     instance-of v4, v3, Lio/reactivex/internal/fuseable/ConditionalSubscriber;
 
     if-eqz v4, :cond_1
 
-    .line 6
     new-instance v4, Lio/reactivex/internal/operators/parallel/ParallelMap$ParallelMapConditionalSubscriber;
 
     check-cast v3, Lio/reactivex/internal/fuseable/ConditionalSubscriber;
@@ -136,7 +125,6 @@
 
     goto :goto_1
 
-    .line 7
     :cond_1
     new-instance v4, Lio/reactivex/internal/operators/parallel/ParallelMap$ParallelMapSubscriber;
 
@@ -151,7 +139,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_2
     iget-object p1, p0, Lio/reactivex/internal/operators/parallel/ParallelMap;->source:Lio/reactivex/parallel/ParallelFlowable;
 

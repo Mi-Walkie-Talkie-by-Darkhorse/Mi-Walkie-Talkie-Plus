@@ -1,6 +1,5 @@
 .class public Lpl/droidsonroids/relinker/f/l;
 .super Lpl/droidsonroids/relinker/f/f;
-.source "Section32Header.java"
 
 
 # direct methods
@@ -12,17 +11,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lpl/droidsonroids/relinker/f/f;-><init>()V
 
     const/4 v0, 0x4
 
-    .line 2
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
-    .line 3
     iget-boolean v1, p2, Lpl/droidsonroids/relinker/f/d;->a:Z
 
     if-eqz v1, :cond_0
@@ -37,7 +33,6 @@
     :goto_0
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 4
     iget-wide v1, p2, Lpl/droidsonroids/relinker/f/d;->c:J
 
     iget p2, p2, Lpl/droidsonroids/relinker/f/d;->f:I

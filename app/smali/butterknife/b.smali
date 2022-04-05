@@ -1,6 +1,5 @@
 .class public final synthetic Lbutterknife/b;
 .super Ljava/lang/Object;
-.source "Unbinder.java"
 
 
 # direct methods

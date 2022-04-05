@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/SwipeDismissTouchListener;
 .super Ljava/lang/Object;
-.source "SwipeDismissTouchListener.java"
 
 # interfaces
 .implements Landroid/view/View$OnTouchListener;
@@ -52,15 +51,12 @@
 .method public constructor <init>(Landroid/view/View;Ljava/lang/Object;Lcom/amap/api/maps/SwipeDismissTouchListener$DismissCallbacks;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->g:I
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -69,14 +65,12 @@
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
 
     move-result v1
 
     iput v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->a:I
 
-    .line 5
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledMinimumFlingVelocity()I
 
     move-result v1
@@ -85,14 +79,12 @@
 
     iput v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->b:I
 
-    .line 6
     invoke-virtual {v0}, Landroid/view/ViewConfiguration;->getScaledMaximumFlingVelocity()I
 
     move-result v0
 
     iput v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->c:I
 
-    .line 7
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -111,13 +103,10 @@
 
     iput-wide v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->d:J
 
-    .line 8
     iput-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->e:Landroid/view/View;
 
-    .line 9
     iput-object p2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->l:Ljava/lang/Object;
 
-    .line 10
     iput-object p3, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->f:Lcom/amap/api/maps/SwipeDismissTouchListener$DismissCallbacks;
 
     return-void
@@ -126,7 +115,6 @@
 .method static synthetic a(Lcom/amap/api/maps/SwipeDismissTouchListener;)V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->f:Lcom/amap/api/maps/SwipeDismissTouchListener$DismissCallbacks;
 
     iget-object v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->e:Landroid/view/View;
@@ -189,7 +177,6 @@
 .method static synthetic b(Lcom/amap/api/maps/SwipeDismissTouchListener;)Landroid/view/View;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->e:Landroid/view/View;
 
     return-object p0
@@ -200,21 +187,18 @@
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 11
 
-    .line 1
     iget p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->n:F
 
     const/4 v0, 0x0
 
     invoke-virtual {p2, p1, v0}, Landroid/view/MotionEvent;->offsetLocation(FF)V
 
-    .line 2
     iget p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->g:I
 
     const/4 v1, 0x2
 
     if-ge p1, v1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->e:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
@@ -223,7 +207,6 @@
 
     iput p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->g:I
 
-    .line 4
     :cond_0
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionMasked()I
 
@@ -249,13 +232,11 @@
 
     goto/16 :goto_9
 
-    .line 5
     :cond_1
     iget-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
     if-eqz p1, :cond_13
 
-    .line 6
     iget-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->e:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
@@ -272,45 +253,35 @@
 
     iget-wide v5, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->d:J
 
-    .line 7
     invoke-virtual {p1, v5, v6}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p1
 
     invoke-virtual {p1, v4}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
-    .line 8
     iget-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
     invoke-virtual {p1}, Landroid/view/VelocityTracker;->recycle()V
 
-    .line 9
     iput-object v4, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
-    .line 10
     iput v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->n:F
 
-    .line 11
     iput v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->h:F
 
-    .line 12
     iput v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->i:F
 
-    .line 13
     iput-boolean v2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->j:Z
 
     goto/16 :goto_9
 
-    .line 14
     :cond_2
     iget-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
     if-eqz p1, :cond_13
 
-    .line 15
     invoke-virtual {p1, p2}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
-    .line 16
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result p1
@@ -319,7 +290,6 @@
 
     sub-float/2addr p1, v1
 
-    .line 17
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v1
@@ -328,7 +298,6 @@
 
     sub-float/2addr v1, v4
 
-    .line 18
     invoke-static {p1}, Ljava/lang/Math;->abs(F)F
 
     move-result v4
@@ -343,7 +312,6 @@
 
     if-lez v4, :cond_7
 
-    .line 19
     invoke-static {v1}, Ljava/lang/Math;->abs(F)F
 
     move-result v1
@@ -358,14 +326,12 @@
 
     if-gez v1, :cond_7
 
-    .line 20
     iput-boolean v3, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->j:Z
 
     cmpl-float v1, p1, v0
 
     if-lez v1, :cond_3
 
-    .line 21
     iget v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->a:I
 
     goto :goto_0
@@ -378,7 +344,6 @@
     :goto_0
     iput v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->k:I
 
-    .line 22
     iget-object v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->e:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
@@ -387,20 +352,16 @@
 
     invoke-interface {v1, v3}, Landroid/view/ViewParent;->requestDisallowInterceptTouchEvent(Z)V
 
-    .line 23
     iget-boolean v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->o:Z
 
     if-nez v1, :cond_4
 
-    .line 24
     iput-boolean v3, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->o:Z
 
-    .line 25
     iget-object v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->f:Lcom/amap/api/maps/SwipeDismissTouchListener$DismissCallbacks;
 
     invoke-interface {v1}, Lcom/amap/api/maps/SwipeDismissTouchListener$DismissCallbacks;->onNotifySwipe()V
 
-    .line 26
     :cond_4
     invoke-static {p1}, Ljava/lang/Math;->abs(F)F
 
@@ -416,33 +377,27 @@
 
     if-lez v1, :cond_5
 
-    .line 27
     iget-boolean v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->p:Z
 
     if-nez v1, :cond_6
 
-    .line 28
     iput-boolean v3, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->p:Z
 
-    .line 29
     iget-object v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->f:Lcom/amap/api/maps/SwipeDismissTouchListener$DismissCallbacks;
 
     invoke-interface {v1}, Lcom/amap/api/maps/SwipeDismissTouchListener$DismissCallbacks;->onNotifySwipe()V
 
     goto :goto_1
 
-    .line 30
     :cond_5
     iput-boolean v2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->p:Z
 
-    .line 31
     :cond_6
     :goto_1
     invoke-static {p2}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object v1
 
-    .line 32
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getActionIndex()I
 
     move-result p2
@@ -451,27 +406,21 @@
 
     or-int/2addr p2, v6
 
-    .line 33
     invoke-virtual {v1, p2}, Landroid/view/MotionEvent;->setAction(I)V
 
-    .line 34
     iget-object p2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->e:Landroid/view/View;
 
     invoke-virtual {p2, v1}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 35
     invoke-virtual {v1}, Landroid/view/MotionEvent;->recycle()V
 
-    .line 36
     :cond_7
     iget-boolean p2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->j:Z
 
     if-eqz p2, :cond_13
 
-    .line 37
     iput p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->n:F
 
-    .line 38
     iget-object p2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->e:Landroid/view/View;
 
     iget v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->k:I
@@ -482,10 +431,8 @@
 
     invoke-virtual {p2, v1}, Landroid/view/View;->setTranslationX(F)V
 
-    .line 39
     iget-object p2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->e:Landroid/view/View;
 
-    .line 40
     invoke-static {p1}, Ljava/lang/Math;->abs(F)F
 
     move-result p1
@@ -504,7 +451,6 @@
 
     move-result p1
 
-    .line 41
     invoke-static {v0, p1}, Ljava/lang/Math;->max(FF)F
 
     move-result p1
@@ -513,13 +459,11 @@
 
     return v3
 
-    .line 42
     :cond_8
     iget-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
     if-eqz p1, :cond_13
 
-    .line 43
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
     move-result p1
@@ -528,31 +472,26 @@
 
     sub-float/2addr p1, v6
 
-    .line 44
     iget-object v6, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
     invoke-virtual {v6, p2}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
-    .line 45
     iget-object p2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
     const/16 v6, 0x3e8
 
     invoke-virtual {p2, v6}, Landroid/view/VelocityTracker;->computeCurrentVelocity(I)V
 
-    .line 46
     iget-object p2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
     invoke-virtual {p2}, Landroid/view/VelocityTracker;->getXVelocity()F
 
     move-result p2
 
-    .line 47
     invoke-static {p2}, Ljava/lang/Math;->abs(F)F
 
     move-result v6
 
-    .line 48
     iget-object v7, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
     invoke-virtual {v7}, Landroid/view/VelocityTracker;->getYVelocity()F
@@ -563,7 +502,6 @@
 
     move-result v7
 
-    .line 49
     invoke-static {p1}, Ljava/lang/Math;->abs(F)F
 
     move-result v8
@@ -595,7 +533,6 @@
 
     goto :goto_6
 
-    .line 50
     :cond_a
     iget v1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->b:I
 
@@ -654,7 +591,6 @@
     :cond_d
     const/4 p1, 0x0
 
-    .line 51
     :goto_4
     iget-object p2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
@@ -688,7 +624,6 @@
     :goto_6
     if-eqz v3, :cond_11
 
-    .line 52
     iget-object p2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->e:Landroid/view/View;
 
     invoke-virtual {p2}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
@@ -709,19 +644,16 @@
     :goto_7
     int-to-float p1, p1
 
-    .line 53
     invoke-virtual {p2, p1}, Landroid/view/ViewPropertyAnimator;->translationX(F)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p1
 
-    .line 54
     invoke-virtual {p1, v0}, Landroid/view/ViewPropertyAnimator;->alpha(F)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p1
 
     const-wide/16 v5, 0x32
 
-    .line 55
     invoke-virtual {p1, v5, v6}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p1
@@ -730,18 +662,15 @@
 
     invoke-direct {p2, p0}, Lcom/amap/api/maps/SwipeDismissTouchListener$1;-><init>(Lcom/amap/api/maps/SwipeDismissTouchListener;)V
 
-    .line 56
     invoke-virtual {p1, p2}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
     goto :goto_8
 
-    .line 57
     :cond_11
     iget-boolean p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->j:Z
 
     if-eqz p1, :cond_12
 
-    .line 58
     iget-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->e:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
@@ -758,40 +687,32 @@
 
     iget-wide v5, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->d:J
 
-    .line 59
     invoke-virtual {p1, v5, v6}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
 
     move-result-object p1
 
     invoke-virtual {p1, v4}, Landroid/view/ViewPropertyAnimator;->setListener(Landroid/animation/Animator$AnimatorListener;)Landroid/view/ViewPropertyAnimator;
 
-    .line 60
     :cond_12
     :goto_8
     iget-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
     invoke-virtual {p1}, Landroid/view/VelocityTracker;->recycle()V
 
-    .line 61
     iput-object v4, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
-    .line 62
     iput v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->n:F
 
-    .line 63
     iput v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->h:F
 
-    .line 64
     iput v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->i:F
 
-    .line 65
     iput-boolean v2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->j:Z
 
     :cond_13
     :goto_9
     return v2
 
-    .line 66
     :cond_14
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawX()F
 
@@ -799,14 +720,12 @@
 
     iput p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->h:F
 
-    .line 67
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result p1
 
     iput p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->i:F
 
-    .line 68
     iget-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->f:Lcom/amap/api/maps/SwipeDismissTouchListener$DismissCallbacks;
 
     iget-object v0, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->l:Ljava/lang/Object;
@@ -817,17 +736,14 @@
 
     if-eqz p1, :cond_15
 
-    .line 69
     iput-boolean v2, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->o:Z
 
-    .line 70
     invoke-static {}, Landroid/view/VelocityTracker;->obtain()Landroid/view/VelocityTracker;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/amap/api/maps/SwipeDismissTouchListener;->m:Landroid/view/VelocityTracker;
 
-    .line 71
     invoke-virtual {p1, p2}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
     :cond_15

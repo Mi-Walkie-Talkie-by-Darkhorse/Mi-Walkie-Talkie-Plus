@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;
 .super Lcom/ifengyu/intercom/g/d/a;
-.source "OsmMapToolOperateActivity.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;Lorg/osmdroid/api/IGeoPoint;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->b:Lorg/osmdroid/api/IGeoPoint;
@@ -41,7 +39,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 5
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->n(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Lorg/osmdroid/views/overlay/ItemizedOverlayWithFocus;
@@ -50,12 +47,10 @@
 
     if-eqz p2, :cond_2
 
-    .line 6
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 7
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->o(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/LinearLayout;
@@ -82,7 +77,6 @@
 
     if-nez p2, :cond_1
 
-    .line 8
     :cond_0
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
@@ -96,7 +90,6 @@
 
     invoke-static {p2, v1}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->a(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;Landroid/widget/LinearLayout;)Landroid/widget/LinearLayout;
 
-    .line 9
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->o(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/LinearLayout;
@@ -113,7 +106,6 @@
 
     invoke-static {p2, v1}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->a(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;Landroid/widget/TextView;)Landroid/widget/TextView;
 
-    .line 10
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->o(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/LinearLayout;
@@ -130,7 +122,6 @@
 
     invoke-static {p2, v1}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->a(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;Landroid/widget/ImageView;)Landroid/widget/ImageView;
 
-    .line 11
     :cond_1
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
@@ -142,7 +133,6 @@
 
     invoke-virtual {p2, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 12
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->p(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -151,7 +141,6 @@
 
     invoke-virtual {p2, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 13
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->p(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/TextView;
@@ -178,7 +167,6 @@
 
     invoke-virtual {p2, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->o(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Landroid/widget/LinearLayout;
@@ -189,17 +177,14 @@
 
     move-result-object p1
 
-    .line 15
     new-instance p2, Lorg/osmdroid/views/overlay/OverlayItem;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->b:Lorg/osmdroid/api/IGeoPoint;
 
     invoke-direct {p2, v0, v0, v2}, Lorg/osmdroid/views/overlay/OverlayItem;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/osmdroid/api/IGeoPoint;)V
 
-    .line 16
     invoke-virtual {p2, p1}, Lorg/osmdroid/views/overlay/OverlayItem;->setMarker(Landroid/graphics/drawable/Drawable;)V
 
-    .line 17
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->n(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;)Lorg/osmdroid/views/overlay/ItemizedOverlayWithFocus;
@@ -208,7 +193,6 @@
 
     invoke-virtual {p1, v1, p2}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->addItem(ILorg/osmdroid/views/overlay/OverlayItem;)V
 
-    .line 18
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;->mapView:Lorg/osmdroid/views/MapView;
@@ -217,7 +201,6 @@
 
     goto :goto_0
 
-    .line 19
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
@@ -229,14 +212,12 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(Ljava/lang/String;)V
 
-    .line 20
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     const p2, 0x7f080189
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 21
     new-instance p1, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d$b;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d$b;-><init>(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;)V
@@ -252,7 +233,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Double;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->a(Ljava/lang/Double;I)V
@@ -263,7 +243,6 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     const p2, 0x7f11020c
@@ -274,14 +253,12 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(Ljava/lang/String;)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;->c:Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity;
 
     const p2, 0x7f080189
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->b(I)V
 
-    .line 4
     new-instance p1, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d$a;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d$a;-><init>(Lcom/ifengyu/intercom/ui/activity/OsmMapToolOperateActivity$d;)V

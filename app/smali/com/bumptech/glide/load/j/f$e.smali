@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/f$e;
 .super Lcom/bumptech/glide/load/j/f$a;
-.source "FileLoader.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/j/f$e$a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/load/j/f$e$a;-><init>()V

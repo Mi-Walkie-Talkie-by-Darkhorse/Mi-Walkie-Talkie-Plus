@@ -1,6 +1,5 @@
 .class final Lcom/google/common/base/Ticker$1;
 .super Lcom/google/common/base/Ticker;
-.source "Ticker.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/base/Ticker;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
 .method public read()J
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/google/common/base/Platform;->systemNanoTime()J
 
     move-result-wide v0

@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/layout/QMUILinearLayout;
 .super Lcom/qmuiteam/qmui/alpha/QMUIAlphaLinearLayout;
-.source "QMUILinearLayout.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/layout/IQMUILayout;
@@ -14,14 +13,12 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaLinearLayout;-><init>(Landroid/content/Context;)V
 
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-direct {p0, p1, v0, v1}, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->a(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -30,12 +27,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 3
     invoke-direct {p0, p1, p2}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaLinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-direct {p0, p1, p2, v0}, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->a(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -44,10 +39,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 5
     invoke-direct {p0, p1, p2, p3}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaLinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 6
     invoke-direct {p0, p1, p2, p3}, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->a(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -56,7 +49,6 @@
 .method private a(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/qmuiteam/qmui/layout/a;
 
     invoke-direct {v0, p1, p2, p3, p0}, Lcom/qmuiteam/qmui/layout/a;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;ILandroid/view/View;)V
@@ -65,10 +57,8 @@
 
     const/4 p1, 0x0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaLinearLayout;->setChangeAlphaWhenPress(Z)V
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaLinearLayout;->setChangeAlphaWhenDisable(Z)V
 
     return-void
@@ -79,12 +69,10 @@
 .method public a(IIII)V
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/qmuiteam/qmui/layout/a;->a(IIII)V
 
-    .line 5
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->invalidate()V
 
     return-void
@@ -93,7 +81,6 @@
 .method public b(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->b(I)V
@@ -104,7 +91,6 @@
 .method public c(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->c(I)V
@@ -115,7 +101,6 @@
 .method public d(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->d(I)V
@@ -126,10 +111,8 @@
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 3
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/LinearLayout;->dispatchDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getWidth()I
@@ -142,7 +125,6 @@
 
     invoke-virtual {v0, p1, v1, v2}, Lcom/qmuiteam/qmui/layout/a;->a(Landroid/graphics/Canvas;II)V
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->a(Landroid/graphics/Canvas;)V
@@ -153,7 +135,6 @@
 .method public e(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->e(I)V
@@ -164,7 +145,6 @@
 .method public getHideRadiusSide()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->a()I
@@ -177,7 +157,6 @@
 .method public getRadius()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->b()I
@@ -190,7 +169,6 @@
 .method public getShadowAlpha()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->c()F
@@ -203,7 +181,6 @@
 .method public getShadowColor()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->d()I
@@ -216,7 +193,6 @@
 .method public getShadowElevation()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->e()I
@@ -229,24 +205,20 @@
 .method protected onMeasure(II)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->f(I)I
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p2}, Lcom/qmuiteam/qmui/layout/a;->a(I)I
 
     move-result p2
 
-    .line 3
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getMeasuredWidth()I
@@ -257,7 +229,6 @@
 
     move-result v0
 
-    .line 5
     iget-object v1, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->getMeasuredHeight()I
@@ -272,7 +243,6 @@
 
     if-eq p2, v1, :cond_1
 
-    .line 6
     :cond_0
     invoke-super {p0, v0, v1}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
@@ -287,12 +257,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->setBorderColor(I)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->invalidate()V
 
     return-void
@@ -301,12 +269,10 @@
 .method public setBorderWidth(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->g(I)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->invalidate()V
 
     return-void
@@ -315,12 +281,10 @@
 .method public setBottomDividerAlpha(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->h(I)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->invalidate()V
 
     return-void
@@ -329,7 +293,6 @@
 .method public setHideRadiusSide(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->i(I)V
@@ -340,12 +303,10 @@
 .method public setLeftDividerAlpha(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->j(I)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->invalidate()V
 
     return-void
@@ -354,7 +315,6 @@
 .method public setOuterNormalColor(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->k(I)V
@@ -365,7 +325,6 @@
 .method public setOutlineExcludePadding(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->a(Z)V
@@ -376,7 +335,6 @@
 .method public setOutlineInset(IIII)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/qmuiteam/qmui/layout/a;->d(IIII)V
@@ -387,7 +345,6 @@
 .method public setRadius(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->l(I)V
@@ -398,7 +355,6 @@
 .method public setRadius(II)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1, p2}, Lcom/qmuiteam/qmui/layout/a;->c(II)V
@@ -409,7 +365,6 @@
 .method public setRadiusAndShadow(IIF)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/qmuiteam/qmui/layout/a;->a(IIF)V
@@ -420,7 +375,6 @@
 .method public setRadiusAndShadow(IIIF)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/qmuiteam/qmui/layout/a;->a(IIIF)V
@@ -431,7 +385,6 @@
 .method public setRadiusAndShadow(IIIIF)V
     .locals 6
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     move v1, p1
@@ -452,12 +405,10 @@
 .method public setRightDividerAlpha(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->m(I)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->invalidate()V
 
     return-void
@@ -466,7 +417,6 @@
 .method public setShadowAlpha(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->a(F)V
@@ -477,7 +427,6 @@
 .method public setShadowColor(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->n(I)V
@@ -488,7 +437,6 @@
 .method public setShadowElevation(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->o(I)V
@@ -499,12 +447,10 @@
 .method public setShowBorderOnlyBeforeL(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->b(Z)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->invalidate()V
 
     return-void
@@ -513,12 +459,10 @@
 .method public setTopDividerAlpha(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/layout/a;->p(I)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/LinearLayout;->invalidate()V
 
     return-void
@@ -527,7 +471,6 @@
 .method public setUseThemeGeneralShadowElevation()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/layout/QMUILinearLayout;->b:Lcom/qmuiteam/qmui/layout/a;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/layout/a;->g()V

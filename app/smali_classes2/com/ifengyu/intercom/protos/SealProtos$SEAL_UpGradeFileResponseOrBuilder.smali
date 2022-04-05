@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFileResponseOrBuilder;
 .super Ljava/lang/Object;
-.source "SealProtos.java"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageOrBuilder;

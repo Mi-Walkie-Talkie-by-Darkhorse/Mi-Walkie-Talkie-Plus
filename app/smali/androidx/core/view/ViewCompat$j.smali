@@ -1,6 +1,5 @@
 .class Landroidx/core/view/ViewCompat$j;
 .super Ljava/lang/Object;
-.source "ViewCompat.java"
 
 
 # annotations
@@ -42,7 +41,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual/range {p0 .. p6}, Landroid/view/View;->saveAttributeDataForStyleable(Landroid/content/Context;[ILandroid/util/AttributeSet;Landroid/content/res/TypedArray;II)V
 
     return-void

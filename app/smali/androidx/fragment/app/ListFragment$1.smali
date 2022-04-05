@@ -1,6 +1,5 @@
 .class Landroidx/fragment/app/ListFragment$1;
 .super Ljava/lang/Object;
-.source "ListFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/fragment/app/ListFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/ListFragment$1;->this$0:Landroidx/fragment/app/ListFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/fragment/app/ListFragment$1;->this$0:Landroidx/fragment/app/ListFragment;
 
     iget-object v0, v0, Landroidx/fragment/app/ListFragment;->mList:Landroid/widget/ListView;

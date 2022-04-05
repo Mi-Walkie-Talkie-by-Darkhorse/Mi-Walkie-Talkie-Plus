@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ik$1;
 .super Ljava/lang/Object;
-.source "OfflineLocManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroid/content/Context;Lcom/amap/api/col/l3/ij;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ik$1;->a:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/ik$1;->b:Lcom/amap/api/col/l3/ij;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 9
 
-    .line 1
     :try_start_0
     const-class v0, Lcom/amap/api/col/l3/ik;
 
@@ -50,7 +47,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 2
     :try_start_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -60,7 +56,6 @@
 
     move-result-object v1
 
-    .line 3
     invoke-static {}, Lcom/amap/api/col/l3/ik;->a()Ljava/lang/ref/WeakReference;
 
     move-result-object v2
@@ -69,7 +64,6 @@
 
     move-result-object v2
 
-    .line 4
     iget-object v3, p0, Lcom/amap/api/col/l3/ik$1;->a:Landroid/content/Context;
 
     sget-object v5, Lcom/amap/api/col/l3/gt;->h:Ljava/lang/String;
@@ -84,12 +78,10 @@
 
     invoke-static/range {v3 .. v8}, Lcom/amap/api/col/l3/in;->a(Landroid/content/Context;Lcom/amap/api/col/l3/ig;Ljava/lang/String;IILjava/lang/String;)V
 
-    .line 5
     iget-object v3, v2, Lcom/amap/api/col/l3/ig;->e:Lcom/amap/api/col/l3/gm;
 
     if-nez v3, :cond_0
 
-    .line 6
     new-instance v3, Lcom/amap/api/col/l3/gl;
 
     new-instance v4, Lcom/amap/api/col/l3/gn;
@@ -108,7 +100,6 @@
 
     iput-object v3, v2, Lcom/amap/api/col/l3/ig;->e:Lcom/amap/api/col/l3/gm;
 
-    .line 7
     :cond_0
     iget-object v3, p0, Lcom/amap/api/col/l3/ik$1;->b:Lcom/amap/api/col/l3/ij;
 
@@ -118,7 +109,6 @@
 
     invoke-static {v1, v3, v2}, Lcom/amap/api/col/l3/ih;->a(Ljava/lang/String;[BLcom/amap/api/col/l3/ig;)V
 
-    .line 8
     monitor-exit v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -142,7 +132,6 @@
 
     const-string v2, "aple"
 
-    .line 9
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

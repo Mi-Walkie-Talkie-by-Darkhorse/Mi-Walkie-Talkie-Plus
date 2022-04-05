@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/util/concurrent/AbstractService;
 .super Ljava/lang/Object;
-.source "AbstractService.java"
 
 # interfaces
 .implements Lcom/google/common/util/concurrent/Service;
@@ -126,7 +125,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$1;
 
     const-string v1, "starting()"
@@ -135,7 +133,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/AbstractService;->STARTING_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$2;
 
     const-string v1, "running()"
@@ -144,7 +141,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/AbstractService;->RUNNING_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
-    .line 3
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->STARTING:Lcom/google/common/util/concurrent/Service$State;
 
     invoke-static {v0}, Lcom/google/common/util/concurrent/AbstractService;->stoppingCallback(Lcom/google/common/util/concurrent/Service$State;)Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
@@ -153,7 +149,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/AbstractService;->STOPPING_FROM_STARTING_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
-    .line 4
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->RUNNING:Lcom/google/common/util/concurrent/Service$State;
 
     invoke-static {v0}, Lcom/google/common/util/concurrent/AbstractService;->stoppingCallback(Lcom/google/common/util/concurrent/Service$State;)Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
@@ -162,7 +157,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/AbstractService;->STOPPING_FROM_RUNNING_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
-    .line 5
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->NEW:Lcom/google/common/util/concurrent/Service$State;
 
     invoke-static {v0}, Lcom/google/common/util/concurrent/AbstractService;->terminatedCallback(Lcom/google/common/util/concurrent/Service$State;)Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
@@ -171,7 +165,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/AbstractService;->TERMINATED_FROM_NEW_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
-    .line 6
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->RUNNING:Lcom/google/common/util/concurrent/Service$State;
 
     invoke-static {v0}, Lcom/google/common/util/concurrent/AbstractService;->terminatedCallback(Lcom/google/common/util/concurrent/Service$State;)Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
@@ -180,7 +173,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/AbstractService;->TERMINATED_FROM_RUNNING_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
-    .line 7
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->STOPPING:Lcom/google/common/util/concurrent/Service$State;
 
     invoke-static {v0}, Lcom/google/common/util/concurrent/AbstractService;->terminatedCallback(Lcom/google/common/util/concurrent/Service$State;)Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
@@ -195,24 +187,20 @@
 .method protected constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/Monitor;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/Monitor;-><init>()V
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
-    .line 3
     new-instance v1, Lcom/google/common/util/concurrent/AbstractService$5;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/util/concurrent/AbstractService$5;-><init>(Lcom/google/common/util/concurrent/AbstractService;Lcom/google/common/util/concurrent/Monitor;)V
 
     iput-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->isStartable:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 4
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$6;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
@@ -221,7 +209,6 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->isStoppable:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 5
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$7;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
@@ -230,7 +217,6 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->hasReachedRunning:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 6
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$8;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
@@ -239,7 +225,6 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->isStopped:Lcom/google/common/util/concurrent/Monitor$Guard;
 
-    .line 7
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -250,7 +235,6 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->listeners:Ljava/util/List;
 
-    .line 8
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
     sget-object v1, Lcom/google/common/util/concurrent/Service$State;->NEW:Lcom/google/common/util/concurrent/Service$State;
@@ -268,21 +252,18 @@
         value = "monitor"
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractService;->state()Lcom/google/common/util/concurrent/Service$State;
 
     move-result-object v0
 
     if-eq v0, p1, :cond_1
 
-    .line 2
     sget-object v1, Lcom/google/common/util/concurrent/Service$State;->FAILED:Lcom/google/common/util/concurrent/Service$State;
 
     const-string v2, "Expected the service to be "
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     new-instance v0, Ljava/lang/IllegalStateException;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -323,7 +304,6 @@
 
     throw v0
 
-    .line 4
     :cond_0
     new-instance v1, Ljava/lang/IllegalStateException;
 
@@ -384,7 +364,6 @@
 .method private executeListeners()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->isOccupiedByCurrentThread()Z
@@ -395,7 +374,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->listeners:Ljava/util/List;
 
@@ -405,7 +383,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->listeners:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -430,7 +407,6 @@
         value = "monitor"
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$9;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -500,7 +476,6 @@
         value = "monitor"
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/util/concurrent/AbstractService;->RUNNING_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->listeners:Ljava/util/List;
@@ -516,7 +491,6 @@
         value = "monitor"
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/util/concurrent/AbstractService;->STARTING_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->listeners:Ljava/util/List;
@@ -532,12 +506,10 @@
         value = "monitor"
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->STARTING:Lcom/google/common/util/concurrent/Service$State;
 
     if-ne p1, v0, :cond_0
 
-    .line 2
     sget-object p1, Lcom/google/common/util/concurrent/AbstractService;->STOPPING_FROM_STARTING_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->listeners:Ljava/util/List;
@@ -546,13 +518,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->RUNNING:Lcom/google/common/util/concurrent/Service$State;
 
     if-ne p1, v0, :cond_1
 
-    .line 4
     sget-object p1, Lcom/google/common/util/concurrent/AbstractService;->STOPPING_FROM_RUNNING_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->listeners:Ljava/util/List;
@@ -562,7 +532,6 @@
     :goto_0
     return-void
 
-    .line 5
     :cond_1
     new-instance p1, Ljava/lang/AssertionError;
 
@@ -584,7 +553,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$4;
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -630,7 +598,6 @@
         value = "monitor"
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/util/concurrent/AbstractService$10;->$SwitchMap$com$google$common$util$concurrent$Service$State:[I
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
@@ -651,7 +618,6 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 2
     sget-object p1, Lcom/google/common/util/concurrent/AbstractService;->TERMINATED_FROM_STOPPING_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->listeners:Ljava/util/List;
@@ -660,7 +626,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/AssertionError;
 
@@ -668,7 +633,6 @@
 
     throw p1
 
-    .line 4
     :cond_1
     sget-object p1, Lcom/google/common/util/concurrent/AbstractService;->TERMINATED_FROM_RUNNING_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
@@ -678,7 +642,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     sget-object p1, Lcom/google/common/util/concurrent/AbstractService;->TERMINATED_FROM_NEW_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
@@ -703,7 +666,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$3;
 
     invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -750,20 +712,16 @@
 
     const-string v0, "listener"
 
-    .line 1
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "executor"
 
-    .line 2
     invoke-static {p2, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 4
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractService;->state()Lcom/google/common/util/concurrent/Service$State;
 
@@ -775,7 +733,6 @@
 
     if-nez v0, :cond_0
 
-    .line 5
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->listeners:Ljava/util/List;
 
     new-instance v1, Lcom/google/common/util/concurrent/ListenerCallQueue;
@@ -786,7 +743,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     :cond_0
     iget-object p1, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
@@ -807,14 +763,12 @@
 .method public final awaitRunning()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->hasReachedRunning:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     invoke-virtual {v0, v1}, Lcom/google/common/util/concurrent/Monitor;->enterWhenUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
-    .line 2
     :try_start_0
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->RUNNING:Lcom/google/common/util/concurrent/Service$State;
 
@@ -822,7 +776,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
@@ -847,7 +800,6 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->hasReachedRunning:Lcom/google/common/util/concurrent/Monitor$Guard;
@@ -858,7 +810,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 5
     :try_start_0
     sget-object p1, Lcom/google/common/util/concurrent/Service$State;->RUNNING:Lcom/google/common/util/concurrent/Service$State;
 
@@ -866,7 +817,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     iget-object p1, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
@@ -882,7 +832,6 @@
 
     throw p1
 
-    .line 7
     :cond_0
     new-instance p1, Ljava/util/concurrent/TimeoutException;
 
@@ -950,14 +899,12 @@
 .method public final awaitTerminated()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->isStopped:Lcom/google/common/util/concurrent/Monitor$Guard;
 
     invoke-virtual {v0, v1}, Lcom/google/common/util/concurrent/Monitor;->enterWhenUninterruptibly(Lcom/google/common/util/concurrent/Monitor$Guard;)V
 
-    .line 2
     :try_start_0
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->TERMINATED:Lcom/google/common/util/concurrent/Service$State;
 
@@ -965,7 +912,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
@@ -990,7 +936,6 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->isStopped:Lcom/google/common/util/concurrent/Monitor$Guard;
@@ -1001,7 +946,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 5
     :try_start_0
     sget-object p1, Lcom/google/common/util/concurrent/Service$State;->TERMINATED:Lcom/google/common/util/concurrent/Service$State;
 
@@ -1009,7 +953,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 6
     iget-object p1, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
@@ -1025,7 +968,6 @@
 
     throw p1
 
-    .line 7
     :cond_0
     new-instance p1, Ljava/util/concurrent/TimeoutException;
 
@@ -1099,7 +1041,6 @@
 .method public final failureCause()Ljava/lang/Throwable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;->failureCause()Ljava/lang/Throwable;
@@ -1112,7 +1053,6 @@
 .method public final isRunning()Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractService;->state()Lcom/google/common/util/concurrent/Service$State;
 
     move-result-object v0
@@ -1135,21 +1075,17 @@
 .method protected final notifyFailed(Ljava/lang/Throwable;)V
     .locals 4
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 3
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractService;->state()Lcom/google/common/util/concurrent/Service$State;
 
     move-result-object v0
 
-    .line 4
     sget-object v1, Lcom/google/common/util/concurrent/AbstractService$10;->$SwitchMap$com$google$common$util$concurrent$Service$State:[I
 
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
@@ -1160,12 +1096,10 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 5
     new-instance p1, Ljava/lang/AssertionError;
 
     goto :goto_0
 
-    .line 6
     :pswitch_0
     new-instance v1, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
@@ -1177,23 +1111,19 @@
 
     iput-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
-    .line 7
     invoke-direct {p0, v0, p1}, Lcom/google/common/util/concurrent/AbstractService;->failed(Lcom/google/common/util/concurrent/Service$State;Ljava/lang/Throwable;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     :pswitch_1
     iget-object p1, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {p1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 9
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->executeListeners()V
 
     return-void
 
-    .line 10
     :pswitch_2
     :try_start_1
     new-instance v1, Ljava/lang/IllegalStateException;
@@ -1230,7 +1160,6 @@
 
     throw v1
 
-    .line 11
     :goto_0
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1269,12 +1198,10 @@
     :catchall_0
     move-exception p1
 
-    .line 12
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 13
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->executeListeners()V
 
     throw p1
@@ -1293,12 +1220,10 @@
 .method protected final notifyStarted()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
@@ -1308,14 +1233,12 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
     iget-boolean v0, v0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;->shutdownWhenStartupFinishes:Z
 
     if-eqz v0, :cond_0
 
-    .line 4
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
     sget-object v1, Lcom/google/common/util/concurrent/Service$State;->STOPPING:Lcom/google/common/util/concurrent/Service$State;
@@ -1324,12 +1247,10 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractService;->doStop()V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
@@ -1339,23 +1260,19 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
-    .line 7
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->running()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     :goto_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 9
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->executeListeners()V
 
     return-void
 
-    .line 10
     :cond_1
     :try_start_1
     new-instance v0, Ljava/lang/IllegalStateException;
@@ -1394,10 +1311,8 @@
 
     invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 11
     invoke-virtual {p0, v0}, Lcom/google/common/util/concurrent/AbstractService;->notifyFailed(Ljava/lang/Throwable;)V
 
-    .line 12
     throw v0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -1405,12 +1320,10 @@
     :catchall_0
     move-exception v0
 
-    .line 13
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 14
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->executeListeners()V
 
     throw v0
@@ -1419,18 +1332,15 @@
 .method protected final notifyStopped()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->enter()V
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
     iget-object v0, v0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;->state:Lcom/google/common/util/concurrent/Service$State;
 
-    .line 3
     sget-object v1, Lcom/google/common/util/concurrent/Service$State;->STOPPING:Lcom/google/common/util/concurrent/Service$State;
 
     if-eq v0, v1, :cond_1
@@ -1441,7 +1351,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance v1, Ljava/lang/IllegalStateException;
 
@@ -1475,13 +1384,10 @@
 
     invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {p0, v1}, Lcom/google/common/util/concurrent/AbstractService;->notifyFailed(Ljava/lang/Throwable;)V
 
-    .line 6
     throw v1
 
-    .line 7
     :cond_1
     :goto_0
     new-instance v1, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
@@ -1492,17 +1398,14 @@
 
     iput-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
-    .line 8
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/AbstractService;->terminated(Lcom/google/common/util/concurrent/Service$State;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 9
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 10
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->executeListeners()V
 
     return-void
@@ -1510,12 +1413,10 @@
     :catchall_0
     move-exception v0
 
-    .line 11
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 12
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->executeListeners()V
 
     throw v0
@@ -1524,7 +1425,6 @@
 .method public final startAsync()Lcom/google/common/util/concurrent/Service;
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->isStartable:Lcom/google/common/util/concurrent/Monitor$Guard;
@@ -1535,7 +1435,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
@@ -1545,10 +1444,8 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->starting()V
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractService;->doStart()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1558,19 +1455,16 @@
     :catchall_0
     move-exception v0
 
-    .line 5
     :try_start_1
     invoke-virtual {p0, v0}, Lcom/google/common/util/concurrent/AbstractService;->notifyFailed(Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 6
     :goto_0
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 7
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->executeListeners()V
 
     return-object p0
@@ -1578,17 +1472,14 @@
     :catchall_1
     move-exception v0
 
-    .line 8
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 9
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->executeListeners()V
 
     throw v0
 
-    .line 10
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -1632,7 +1523,6 @@
 .method public final state()Lcom/google/common/util/concurrent/Service$State;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;->externalState()Lcom/google/common/util/concurrent/Service$State;
@@ -1645,7 +1535,6 @@
 .method public final stopAsync()Lcom/google/common/util/concurrent/Service;
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->isStoppable:Lcom/google/common/util/concurrent/Monitor$Guard;
@@ -1656,13 +1545,11 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractService;->state()Lcom/google/common/util/concurrent/Service$State;
 
     move-result-object v0
 
-    .line 3
     sget-object v1, Lcom/google/common/util/concurrent/AbstractService$10;->$SwitchMap$com$google$common$util$concurrent$Service$State:[I
 
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
@@ -1673,12 +1560,10 @@
 
     packed-switch v1, :pswitch_data_0
 
-    .line 4
     new-instance v1, Ljava/lang/AssertionError;
 
     goto :goto_0
 
-    .line 5
     :pswitch_0
     new-instance v1, Ljava/lang/AssertionError;
 
@@ -1714,7 +1599,6 @@
 
     throw v1
 
-    .line 6
     :pswitch_1
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
@@ -1724,17 +1608,14 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
-    .line 7
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->RUNNING:Lcom/google/common/util/concurrent/Service$State;
 
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/AbstractService;->stopping(Lcom/google/common/util/concurrent/Service$State;)V
 
-    .line 8
     invoke-virtual {p0}, Lcom/google/common/util/concurrent/AbstractService;->doStop()V
 
     goto :goto_1
 
-    .line 9
     :pswitch_2
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
@@ -1748,14 +1629,12 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
-    .line 10
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->STARTING:Lcom/google/common/util/concurrent/Service$State;
 
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/AbstractService;->stopping(Lcom/google/common/util/concurrent/Service$State;)V
 
     goto :goto_1
 
-    .line 11
     :pswitch_3
     new-instance v0, Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
@@ -1765,14 +1644,12 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->snapshot:Lcom/google/common/util/concurrent/AbstractService$StateSnapshot;
 
-    .line 12
     sget-object v0, Lcom/google/common/util/concurrent/Service$State;->NEW:Lcom/google/common/util/concurrent/Service$State;
 
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/AbstractService;->terminated(Lcom/google/common/util/concurrent/Service$State;)V
 
     goto :goto_1
 
-    .line 13
     :goto_0
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -1811,19 +1688,16 @@
     :catchall_0
     move-exception v0
 
-    .line 14
     :try_start_1
     invoke-virtual {p0, v0}, Lcom/google/common/util/concurrent/AbstractService;->notifyFailed(Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 15
     :goto_1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 16
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->executeListeners()V
 
     goto :goto_2
@@ -1831,12 +1705,10 @@
     :catchall_1
     move-exception v0
 
-    .line 17
     iget-object v1, p0, Lcom/google/common/util/concurrent/AbstractService;->monitor:Lcom/google/common/util/concurrent/Monitor;
 
     invoke-virtual {v1}, Lcom/google/common/util/concurrent/Monitor;->leave()V
 
-    .line 18
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;->executeListeners()V
 
     throw v0
@@ -1859,7 +1731,6 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/cs;
 .super Ljava/lang/Object;
-.source "IOverlayImageDelegate.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/interfaces/IOverlayImage;

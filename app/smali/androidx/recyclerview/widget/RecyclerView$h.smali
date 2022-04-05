@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/RecyclerView$h;
 .super Landroid/database/Observable;
-.source "RecyclerView.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/database/Observable;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
 .method public a(II)V
     .locals 3
 
-    .line 4
     iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -51,7 +48,6 @@
     :goto_0
     if-ltz v0, :cond_0
 
-    .line 5
     iget-object v2, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -77,7 +73,6 @@
         .end annotation
     .end param
 
-    .line 2
     iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -89,7 +84,6 @@
     :goto_0
     if-ltz v0, :cond_0
 
-    .line 3
     iget-object v1, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -111,7 +105,6 @@
 .method public a()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
@@ -126,7 +119,6 @@
 .method public b()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -138,7 +130,6 @@
     :goto_0
     if-ltz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -162,7 +153,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     invoke-virtual {p0, p1, p2, v0}, Landroidx/recyclerview/widget/RecyclerView$h;->a(IILjava/lang/Object;)V
 
     return-void
@@ -171,7 +161,6 @@
 .method public c(II)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -183,7 +172,6 @@
     :goto_0
     if-ltz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -205,7 +193,6 @@
 .method public d(II)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -217,7 +204,6 @@
     :goto_0
     if-ltz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Landroid/database/Observable;->mObservers:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;

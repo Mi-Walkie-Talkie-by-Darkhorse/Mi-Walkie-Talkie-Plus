@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Delete;
 .super Ljava/lang/Object;
-.source "Delete.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

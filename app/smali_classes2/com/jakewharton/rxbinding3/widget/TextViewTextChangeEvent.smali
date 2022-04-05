@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/widget/TextViewTextChangeEvent;
 .super Ljava/lang/Object;
-.source "TextViewTextChangeEventObservable.kt"
 
 
 # annotations
@@ -94,7 +93,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangeEvent;->view:Landroid/widget/TextView;
@@ -363,7 +361,6 @@
 .method public final getBefore()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangeEvent;->before:I
 
     return v0
@@ -372,7 +369,6 @@
 .method public final getCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangeEvent;->count:I
 
     return v0
@@ -381,7 +377,6 @@
 .method public final getStart()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangeEvent;->start:I
 
     return v0
@@ -392,7 +387,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangeEvent;->text:Ljava/lang/CharSequence;
 
     return-object v0
@@ -403,7 +397,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangeEvent;->view:Landroid/widget/TextView;
 
     return-object v0

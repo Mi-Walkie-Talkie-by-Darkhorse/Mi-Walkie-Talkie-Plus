@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
 .super Ljava/lang/Object;
-.source "ImprintHandler.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/utils/FileLockCallback;
@@ -73,7 +72,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -82,21 +80,18 @@
 
     const-string v0, "pbl0"
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v0
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->d:[B
 
-    .line 3
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
-    .line 4
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -105,17 +100,14 @@
 
     const/4 v0, 0x0
 
-    .line 5
     sput-object v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->j:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
 
-    .line 6
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->o:Ljava/util/Map;
 
-    .line 7
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -128,10 +120,8 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;
 
     invoke-direct {v0}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;-><init>()V
@@ -140,10 +130,8 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->i:Lcom/umeng/commonsdk/statistics/proto/d;
 
-    .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
@@ -172,18 +160,15 @@
 
     return-object p1
 
-    .line 56
     :cond_0
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/proto/d;->c()Ljava/util/Map;
 
     move-result-object v0
 
-    .line 57
     invoke-virtual {p2}, Lcom/umeng/commonsdk/statistics/proto/d;->c()Ljava/util/Map;
 
     move-result-object v1
 
-    .line 58
     invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v1
@@ -205,7 +190,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 59
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -220,14 +204,12 @@
 
     if-eqz v3, :cond_4
 
-    .line 60
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
 
     check-cast v3, Ljava/lang/String;
 
-    .line 61
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v5
@@ -236,12 +218,10 @@
 
     iget-object v5, v5, Lcom/umeng/commonsdk/statistics/proto/e;->a:Ljava/lang/String;
 
-    .line 62
     sget-object v6, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->p:Ljava/lang/Object;
 
     monitor-enter v6
 
-    .line 63
     :try_start_0
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -257,7 +237,6 @@
 
     if-eqz v7, :cond_1
 
-    .line 64
     sget-object v7, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->o:Ljava/util/Map;
 
     invoke-interface {v7, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -268,7 +247,6 @@
 
     if-eqz v7, :cond_1
 
-    .line 65
     invoke-interface {v7, v3, v5}, Lcom/umeng/commonsdk/statistics/internal/UMImprintPreProcessCallback;->onPreProcessImprintKey(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v7
@@ -277,7 +255,6 @@
 
     const/4 v4, 0x1
 
-    .line 66
     :cond_1
     monitor-exit v6
     :try_end_0
@@ -285,7 +262,6 @@
 
     if-nez v4, :cond_3
 
-    .line 67
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
@@ -296,12 +272,10 @@
 
     invoke-interface {v0, v4, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 68
     sget-object v2, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->g:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 69
     :try_start_1
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -317,7 +291,6 @@
 
     if-eqz v4, :cond_2
 
-    .line 70
     sget-object v4, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
     invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -328,10 +301,8 @@
 
     if-eqz v4, :cond_2
 
-    .line 71
     invoke-interface {p3, v3, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 72
     :cond_2
     monitor-exit v2
 
@@ -346,7 +317,6 @@
 
     throw p1
 
-    .line 73
     :cond_3
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -375,7 +345,6 @@
     :catchall_1
     move-exception p1
 
-    .line 74
     :try_start_2
     monitor-exit v6
     :try_end_2
@@ -383,7 +352,6 @@
 
     throw p1
 
-    .line 75
     :cond_4
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -391,12 +359,10 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 76
     sget-object v3, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->g:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 77
     :try_start_3
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -412,7 +378,6 @@
 
     if-eqz v5, :cond_5
 
-    .line 78
     sget-object v5, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
     invoke-interface {v5, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -423,7 +388,6 @@
 
     if-eqz v5, :cond_5
 
-    .line 79
     :goto_1
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -431,7 +395,6 @@
 
     if-ge v4, v6, :cond_5
 
-    .line 80
     invoke-virtual {v5, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v6
@@ -446,16 +409,13 @@
 
     goto :goto_1
 
-    .line 81
     :cond_5
     monitor-exit v3
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 82
     invoke-interface {v0, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 83
     iget-object v3, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->h:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;
 
     invoke-virtual {v3, v2}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;->a(Ljava/lang/String;)V
@@ -465,7 +425,6 @@
     :catchall_2
     move-exception p1
 
-    .line 84
     :try_start_4
     monitor-exit v3
     :try_end_4
@@ -473,7 +432,6 @@
 
     throw p1
 
-    .line 85
     :cond_6
     invoke-virtual {p2}, Lcom/umeng/commonsdk/statistics/proto/d;->f()I
 
@@ -481,7 +439,6 @@
 
     invoke-virtual {p1, p2}, Lcom/umeng/commonsdk/statistics/proto/d;->a(I)Lcom/umeng/commonsdk/statistics/proto/d;
 
-    .line 86
     invoke-virtual {p0, p1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->a(Lcom/umeng/commonsdk/statistics/proto/d;)Ljava/lang/String;
 
     move-result-object p2
@@ -494,14 +451,12 @@
 .method private a(Ljava/io/File;)V
     .locals 3
 
-    .line 87
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->i:Lcom/umeng/commonsdk/statistics/proto/d;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 88
     :cond_0
     :try_start_0
     sget-object v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->b:Ljava/lang/Object;
@@ -510,7 +465,6 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 89
     :try_start_1
     new-instance v1, Lcom/umeng/analytics/pro/az;
 
@@ -522,27 +476,22 @@
 
     move-result-object v1
 
-    .line 90
     new-instance v2, Ljava/io/FileOutputStream;
 
     invoke-direct {v2, p1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 91
     :try_start_2
     invoke-virtual {v2, v1}, Ljava/io/FileOutputStream;->write([B)V
 
-    .line 92
     invoke-virtual {v2}, Ljava/io/FileOutputStream;->flush()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 93
     :try_start_3
     invoke-static {v2}, Lcom/umeng/commonsdk/statistics/common/HelperUtils;->safeClose(Ljava/io/OutputStream;)V
 
-    .line 94
     monitor-exit v0
 
     goto :goto_0
@@ -550,7 +499,6 @@
     :catchall_0
     move-exception p1
 
-    .line 95
     invoke-static {v2}, Lcom/umeng/commonsdk/statistics/common/HelperUtils;->safeClose(Ljava/io/OutputStream;)V
 
     throw p1
@@ -558,7 +506,6 @@
     :catchall_1
     move-exception p1
 
-    .line 96
     monitor-exit v0
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
@@ -571,7 +518,6 @@
     :catch_0
     move-exception p1
 
-    .line 97
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     :goto_0
@@ -581,12 +527,10 @@
 .method private static a(Ljava/lang/String;Lcom/umeng/commonsdk/statistics/internal/UMImprintChangeCallback;)V
     .locals 6
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->g:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
@@ -598,7 +542,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 3
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
     invoke-interface {v1, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -607,12 +550,10 @@
 
     check-cast p0, Ljava/util/ArrayList;
 
-    .line 4
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
     move-result v1
 
-    .line 5
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -632,7 +573,6 @@
     :goto_0
     if-ge v2, v1, :cond_1
 
-    .line 6
     invoke-virtual {p0, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -641,12 +581,10 @@
 
     const-string p0, "--->>> addCallback: callback has exist, just exit"
 
-    .line 7
     invoke-static {p0}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -659,12 +597,10 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     :try_start_2
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 10
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -687,18 +623,15 @@
 
     goto :goto_2
 
-    .line 11
     :cond_2
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 12
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v3
 
-    .line 13
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -718,7 +651,6 @@
     :goto_1
     if-ge v2, v3, :cond_4
 
-    .line 14
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -727,12 +659,10 @@
 
     const-string p0, "--->>> addCallback: callback has exist, just exit"
 
-    .line 15
     invoke-static {p0}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 16
     :try_start_3
     monitor-exit v0
     :try_end_3
@@ -745,12 +675,10 @@
 
     goto :goto_1
 
-    .line 17
     :cond_4
     :try_start_4
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 18
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -771,7 +699,6 @@
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;)V
 
-    .line 19
     sget-object p1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
     invoke-interface {p1, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -783,13 +710,11 @@
     :catchall_0
     move-exception p0
 
-    .line 20
     :try_start_5
     sget-object p1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->k:Landroid/content/Context;
 
     invoke-static {p1, p0}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
-    .line 21
     :goto_2
     monitor-exit v0
 
@@ -821,7 +746,6 @@
 
     return p1
 
-    .line 55
     :cond_1
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -833,7 +757,6 @@
 .method private static b(Ljava/lang/String;Lcom/umeng/commonsdk/statistics/internal/UMImprintChangeCallback;)V
     .locals 5
 
-    .line 1
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -844,13 +767,11 @@
 
     goto/16 :goto_3
 
-    .line 2
     :cond_0
     sget-object v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->g:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
@@ -860,7 +781,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 4
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
     invoke-interface {v1, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -871,19 +791,16 @@
 
     if-eqz p1, :cond_3
 
-    .line 5
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v2
 
     if-lez v2, :cond_3
 
-    .line 6
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result v2
 
-    .line 7
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -905,14 +822,12 @@
     :goto_0
     if-ge v3, v2, :cond_2
 
-    .line 8
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     if-ne p1, v4, :cond_1
 
-    .line 9
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -929,7 +844,6 @@
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;)V
 
-    .line 10
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     goto :goto_1
@@ -939,7 +853,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_2
     :goto_1
     new-instance p1, Ljava/lang/StringBuilder;
@@ -962,14 +875,12 @@
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;)V
 
-    .line 12
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
     move-result p1
 
     if-nez p1, :cond_3
 
-    .line 13
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -986,7 +897,6 @@
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;)V
 
-    .line 14
     sget-object p1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
     invoke-interface {p1, p0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -998,13 +908,11 @@
     :catchall_0
     move-exception p0
 
-    .line 15
     :try_start_1
     sget-object p1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->k:Landroid/content/Context;
 
     invoke-static {p1, p0}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
-    .line 16
     :cond_3
     :goto_2
     monitor-exit v0
@@ -1028,7 +936,6 @@
 .method private c(Lcom/umeng/commonsdk/statistics/proto/d;)Z
     .locals 6
 
-    .line 1
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/proto/d;->i()Ljava/lang/String;
 
     move-result-object v0
@@ -1047,7 +954,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/proto/d;->c()Ljava/util/Map;
 
@@ -1074,7 +980,6 @@
 
     check-cast v0, Lcom/umeng/commonsdk/statistics/proto/e;
 
-    .line 3
     invoke-virtual {v0}, Lcom/umeng/commonsdk/statistics/proto/e;->h()Ljava/lang/String;
 
     move-result-object v2
@@ -1083,7 +988,6 @@
 
     move-result-object v2
 
-    .line 4
     invoke-virtual {p0, v0}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->a(Lcom/umeng/commonsdk/statistics/proto/e;)[B
 
     move-result-object v0
@@ -1095,7 +999,6 @@
 
     if-ge v3, v4, :cond_1
 
-    .line 5
     aget-byte v4, v2, v3
 
     aget-byte v5, v0, v3
@@ -1118,36 +1021,30 @@
 .method private d(Lcom/umeng/commonsdk/statistics/proto/d;)Lcom/umeng/commonsdk/statistics/proto/d;
     .locals 3
 
-    .line 1
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/proto/d;->c()Ljava/util/Map;
 
     move-result-object v0
 
     const-string v1, "umtt"
 
-    .line 2
     invoke-interface {v0, v1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 3
     invoke-interface {v0, v1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->h:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;
 
     invoke-virtual {v0, v1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;->a(Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/proto/d;->f()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Lcom/umeng/commonsdk/statistics/proto/d;->a(I)Lcom/umeng/commonsdk/statistics/proto/d;
 
-    .line 6
     invoke-virtual {p0, p1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->a(Lcom/umeng/commonsdk/statistics/proto/d;)Ljava/lang/String;
 
     move-result-object v0
@@ -1161,12 +1058,10 @@
 .method private e(Lcom/umeng/commonsdk/statistics/proto/d;)Lcom/umeng/commonsdk/statistics/proto/d;
     .locals 9
 
-    .line 1
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/proto/d;->c()Ljava/util/Map;
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
@@ -1177,7 +1072,6 @@
 
     invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 3
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v2
@@ -1201,7 +1095,6 @@
 
     check-cast v3, Ljava/util/Map$Entry;
 
-    .line 4
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v5
@@ -1214,7 +1107,6 @@
 
     if-nez v5, :cond_0
 
-    .line 5
     invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -1223,7 +1115,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-interface {v3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -1231,7 +1122,6 @@
 
     check-cast v5, Ljava/lang/String;
 
-    .line 7
     invoke-interface {v3}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -1240,12 +1130,10 @@
 
     iget-object v3, v3, Lcom/umeng/commonsdk/statistics/proto/e;->a:Ljava/lang/String;
 
-    .line 8
     sget-object v6, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->p:Ljava/lang/Object;
 
     monitor-enter v6
 
-    .line 9
     :try_start_0
     invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1261,7 +1149,6 @@
 
     if-eqz v7, :cond_1
 
-    .line 10
     sget-object v7, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->o:Ljava/util/Map;
 
     invoke-interface {v7, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1272,7 +1159,6 @@
 
     if-eqz v7, :cond_1
 
-    .line 11
     invoke-interface {v7, v5, v3}, Lcom/umeng/commonsdk/statistics/internal/UMImprintPreProcessCallback;->onPreProcessImprintKey(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v7
@@ -1286,7 +1172,6 @@
     :cond_1
     const/4 v7, 0x0
 
-    .line 12
     :goto_1
     monitor-exit v6
     :try_end_0
@@ -1294,16 +1179,13 @@
 
     if-eqz v7, :cond_2
 
-    .line 13
     invoke-interface {v1, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 14
     :cond_2
     sget-object v7, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->g:Ljava/lang/Object;
 
     monitor-enter v7
 
-    .line 15
     :try_start_1
     invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1319,7 +1201,6 @@
 
     if-eqz v6, :cond_3
 
-    .line 16
     sget-object v6, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
     invoke-interface {v6, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1330,7 +1211,6 @@
 
     if-eqz v6, :cond_3
 
-    .line 17
     :goto_2
     invoke-virtual {v6}, Ljava/util/ArrayList;->size()I
 
@@ -1338,7 +1218,6 @@
 
     if-ge v4, v8, :cond_3
 
-    .line 18
     invoke-virtual {v6, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v8
@@ -1351,7 +1230,6 @@
 
     goto :goto_2
 
-    .line 19
     :cond_3
     monitor-exit v7
 
@@ -1369,7 +1247,6 @@
     :catchall_1
     move-exception p1
 
-    .line 20
     :try_start_2
     monitor-exit v6
     :try_end_2
@@ -1377,7 +1254,6 @@
 
     throw p1
 
-    .line 21
     :cond_4
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -1396,12 +1272,10 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 22
     sget-object v3, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->g:Ljava/lang/Object;
 
     monitor-enter v3
 
-    .line 23
     :try_start_3
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -1417,7 +1291,6 @@
 
     if-eqz v5, :cond_5
 
-    .line 24
     sget-object v5, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
     invoke-interface {v5, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1430,7 +1303,6 @@
 
     const/4 v6, 0x0
 
-    .line 25
     :goto_4
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
 
@@ -1438,7 +1310,6 @@
 
     if-ge v6, v7, :cond_5
 
-    .line 26
     invoke-virtual {v5, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v7
@@ -1453,13 +1324,11 @@
 
     goto :goto_4
 
-    .line 27
     :cond_5
     monitor-exit v3
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 28
     invoke-interface {v0, v2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_3
@@ -1467,7 +1336,6 @@
     :catchall_2
     move-exception p1
 
-    .line 29
     :try_start_4
     monitor-exit v3
     :try_end_4
@@ -1482,7 +1350,6 @@
 .method private e()V
     .locals 5
 
-    .line 30
     new-instance v0, Ljava/io/File;
 
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->k:Landroid/content/Context;
@@ -1495,12 +1362,10 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 31
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->b:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 32
     :try_start_0
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -1508,7 +1373,6 @@
 
     if-nez v0, :cond_0
 
-    .line 33
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
@@ -1518,7 +1382,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 34
     :try_start_1
     sget-object v2, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->k:Landroid/content/Context;
 
@@ -1531,7 +1394,6 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 35
     :try_start_2
     invoke-static {v2}, Lcom/umeng/commonsdk/statistics/common/HelperUtils;->readStreamToByteArray(Ljava/io/InputStream;)[B
 
@@ -1540,7 +1402,6 @@
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 36
     :goto_0
     :try_start_3
     invoke-static {v2}, Lcom/umeng/commonsdk/statistics/common/HelperUtils;->safeClose(Ljava/io/InputStream;)V
@@ -1570,7 +1431,6 @@
 
     move-object v2, v0
 
-    .line 37
     :goto_1
     :try_start_4
     invoke-virtual {v3}, Ljava/lang/Exception;->printStackTrace()V
@@ -1582,28 +1442,23 @@
     :goto_2
     if-eqz v0, :cond_1
 
-    .line 38
     :try_start_5
     new-instance v2, Lcom/umeng/commonsdk/statistics/proto/d;
 
     invoke-direct {v2}, Lcom/umeng/commonsdk/statistics/proto/d;-><init>()V
 
-    .line 39
     new-instance v3, Lcom/umeng/analytics/pro/at;
 
     invoke-direct {v3}, Lcom/umeng/analytics/pro/at;-><init>()V
 
     invoke-virtual {v3, v2, v0}, Lcom/umeng/analytics/pro/at;->a(Lcom/umeng/analytics/pro/aq;[B)V
 
-    .line 40
     iput-object v2, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->i:Lcom/umeng/commonsdk/statistics/proto/d;
 
-    .line 41
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->h:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;
 
     invoke-virtual {v0, v2}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;->a(Lcom/umeng/commonsdk/statistics/proto/d;)V
 
-    .line 42
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->i:Lcom/umeng/commonsdk/statistics/proto/d;
 
     invoke-direct {p0, v0}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->d(Lcom/umeng/commonsdk/statistics/proto/d;)Lcom/umeng/commonsdk/statistics/proto/d;
@@ -1620,11 +1475,9 @@
     :catch_2
     move-exception v0
 
-    .line 43
     :try_start_6
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 44
     :cond_1
     :goto_3
     monitor-exit v1
@@ -1634,7 +1487,6 @@
     :catchall_1
     move-exception v0
 
-    .line 45
     :goto_4
     invoke-static {v2}, Lcom/umeng/commonsdk/statistics/common/HelperUtils;->safeClose(Ljava/io/InputStream;)V
 
@@ -1643,7 +1495,6 @@
     :catchall_2
     move-exception v0
 
-    .line 46
     monitor-exit v1
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
@@ -1658,20 +1509,17 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->j:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
 
     invoke-direct {v1, p0}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;-><init>(Landroid/content/Context;)V
 
     sput-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->j:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
 
-    .line 3
     new-instance p0, Lcom/umeng/commonsdk/utils/FileLockUtil;
 
     invoke-direct {p0}, Lcom/umeng/commonsdk/utils/FileLockUtil;-><init>()V
@@ -1680,7 +1528,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 4
     new-instance p0, Ljava/io/File;
 
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->k:Landroid/content/Context;
@@ -1693,7 +1540,6 @@
 
     invoke-direct {p0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 5
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->l:Lcom/umeng/commonsdk/utils/FileLockUtil;
 
     sget-object v2, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->j:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
@@ -1702,7 +1548,6 @@
 
     invoke-virtual {v1, p0, v2, v3}, Lcom/umeng/commonsdk/utils/FileLockUtil;->doFileOperateion(Ljava/io/File;Lcom/umeng/commonsdk/utils/FileLockCallback;I)V
 
-    .line 6
     :cond_0
     sget-object p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->j:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
     :try_end_0
@@ -1725,12 +1570,10 @@
 .method public a(Lcom/umeng/commonsdk/statistics/proto/d;)Ljava/lang/String;
     .locals 5
 
-    .line 31
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 32
     new-instance v1, Ljava/util/TreeMap;
 
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/proto/d;->c()Ljava/util/Map;
@@ -1739,7 +1582,6 @@
 
     invoke-direct {v1, v2}, Ljava/util/TreeMap;-><init>(Ljava/util/Map;)V
 
-    .line 33
     invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v1
@@ -1761,7 +1603,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 34
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v3
@@ -1770,7 +1611,6 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 35
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -1783,7 +1623,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 36
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v3
@@ -1796,7 +1635,6 @@
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 37
     :cond_0
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -1810,7 +1648,6 @@
 
     invoke-virtual {v0, v3, v4}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    .line 38
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -1825,13 +1662,11 @@
 
     goto :goto_0
 
-    .line 39
     :cond_1
     iget p1, p1, Lcom/umeng/commonsdk/statistics/proto/d;->b:I
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 40
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -1852,7 +1687,6 @@
 .method public a(Lcom/umeng/commonsdk/statistics/internal/d;)V
     .locals 0
 
-    .line 30
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->e:Lcom/umeng/commonsdk/statistics/internal/d;
 
     return-void
@@ -1861,19 +1695,16 @@
 .method public a(Ljava/lang/String;)V
     .locals 4
 
-    .line 22
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 23
     sget-object v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->p:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 24
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->o:Ljava/util/Map;
 
@@ -1885,7 +1716,6 @@
 
     const-string v1, "MobclickRT"
 
-    .line 25
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1906,7 +1736,6 @@
 
     invoke-static {v1, v2}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 26
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
     invoke-interface {v1, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1916,7 +1745,6 @@
     :cond_0
     const-string v1, "MobclickRT"
 
-    .line 27
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1944,13 +1772,11 @@
     :catchall_0
     move-exception p1
 
-    .line 28
     :try_start_1
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->k:Landroid/content/Context;
 
     invoke-static {v1, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
-    .line 29
     :goto_0
     monitor-exit v0
 
@@ -1975,24 +1801,20 @@
 
     const/4 v0, 0x0
 
-    .line 47
     :try_start_0
     monitor-enter p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 48
     :try_start_1
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->i:Lcom/umeng/commonsdk/statistics/proto/d;
 
     if-nez v1, :cond_0
 
-    .line 49
     monitor-exit p0
 
     return-object v0
 
-    .line 50
     :cond_0
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->i:Lcom/umeng/commonsdk/statistics/proto/d;
 
@@ -2002,12 +1824,10 @@
 
     if-gtz v1, :cond_1
 
-    .line 51
     monitor-exit p0
 
     return-object v0
 
-    .line 52
     :cond_1
     new-instance v1, Lcom/umeng/analytics/pro/az;
 
@@ -2026,7 +1846,6 @@
     :catchall_0
     move-exception v1
 
-    .line 53
     monitor-exit p0
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
@@ -2039,7 +1858,6 @@
     :catchall_1
     move-exception v1
 
-    .line 54
     sget-object v2, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->k:Landroid/content/Context;
 
     invoke-static {v2, v1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
@@ -2052,29 +1870,24 @@
 
     const/16 v0, 0x8
 
-    .line 41
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 42
     invoke-virtual {v0, v1}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
-    .line 43
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/proto/e;->e()J
 
     move-result-wide v1
 
     invoke-virtual {v0, v1, v2}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
 
-    .line 44
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->array()[B
 
     move-result-object p1
 
-    .line 45
     sget-object v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->d:[B
 
     const/4 v1, 0x4
@@ -2086,7 +1899,6 @@
     :goto_0
     if-ge v3, v1, :cond_0
 
-    .line 46
     aget-byte v4, p1, v3
 
     aget-byte v5, v0, v3
@@ -2110,7 +1922,6 @@
 
     monitor-enter p0
 
-    .line 51
     :try_start_0
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->i:Lcom/umeng/commonsdk/statistics/proto/d;
     :try_end_0
@@ -2133,7 +1944,6 @@
 
     if-nez p1, :cond_1
 
-    .line 17
     sget-boolean p1, Lcom/umeng/commonsdk/statistics/AnalyticsConstants;->UM_DEBUG:Z
 
     if-eqz p1, :cond_0
@@ -2142,13 +1952,11 @@
 
     const-string v0, "Imprint is null"
 
-    .line 18
     invoke-static {p1, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->d(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     return-void
 
-    .line 19
     :cond_1
     invoke-direct {p0, p1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->c(Lcom/umeng/commonsdk/statistics/proto/d;)Z
 
@@ -2156,7 +1964,6 @@
 
     if-nez v0, :cond_3
 
-    .line 20
     sget-boolean p1, Lcom/umeng/commonsdk/statistics/AnalyticsConstants;->UM_DEBUG:Z
 
     if-eqz p1, :cond_2
@@ -2165,29 +1972,23 @@
 
     const-string v0, "Imprint is not valid"
 
-    .line 21
     invoke-static {p1, v0}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_2
     return-void
 
-    .line 22
     :cond_3
     sget-boolean v0, Lcom/umeng/commonsdk/statistics/AnalyticsConstants;->UM_DEBUG:Z
 
-    .line 23
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 24
     monitor-enter p0
 
-    .line 25
     :try_start_0
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->i:Lcom/umeng/commonsdk/statistics/proto/d;
 
-    .line 26
     invoke-direct {p0, p1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->d(Lcom/umeng/commonsdk/statistics/proto/d;)Lcom/umeng/commonsdk/statistics/proto/d;
 
     move-result-object p1
@@ -2200,7 +2001,6 @@
 
     goto :goto_0
 
-    .line 27
     :cond_4
     invoke-virtual {v1}, Lcom/umeng/commonsdk/statistics/proto/d;->i()Ljava/lang/String;
 
@@ -2209,20 +2009,17 @@
     :goto_0
     if-nez v1, :cond_5
 
-    .line 28
     invoke-direct {p0, p1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->e(Lcom/umeng/commonsdk/statistics/proto/d;)Lcom/umeng/commonsdk/statistics/proto/d;
 
     move-result-object p1
 
     goto :goto_1
 
-    .line 29
     :cond_5
     invoke-direct {p0, v1, p1, v0}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->a(Lcom/umeng/commonsdk/statistics/proto/d;Lcom/umeng/commonsdk/statistics/proto/d;Ljava/util/Map;)Lcom/umeng/commonsdk/statistics/proto/d;
 
     move-result-object p1
 
-    .line 30
     :goto_1
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->i:Lcom/umeng/commonsdk/statistics/proto/d;
 
@@ -2230,13 +2027,11 @@
 
     goto :goto_2
 
-    .line 31
     :cond_6
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/proto/d;->i()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 32
     :goto_2
     invoke-direct {p0, v3, v2}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->a(Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -2244,37 +2039,30 @@
 
     xor-int/lit8 p1, p1, 0x1
 
-    .line 33
     monitor-exit p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 34
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->i:Lcom/umeng/commonsdk/statistics/proto/d;
 
     if-eqz v1, :cond_7
 
-    .line 35
     sget-boolean v2, Lcom/umeng/commonsdk/statistics/AnalyticsConstants;->UM_DEBUG:Z
 
     if-eqz p1, :cond_7
 
-    .line 36
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->h:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;
 
     invoke-virtual {p1, v1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;->a(Lcom/umeng/commonsdk/statistics/proto/d;)V
 
-    .line 37
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->e:Lcom/umeng/commonsdk/statistics/internal/d;
 
     if-eqz p1, :cond_7
 
-    .line 38
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->h:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;
 
     invoke-interface {p1, v1}, Lcom/umeng/commonsdk/statistics/internal/d;->onImprintChanged(Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;)V
 
-    .line 39
     :cond_7
     invoke-interface {v0}, Ljava/util/Map;->size()I
 
@@ -2282,12 +2070,10 @@
 
     if-lez p1, :cond_a
 
-    .line 40
     sget-object p1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->g:Ljava/lang/Object;
 
     monitor-enter p1
 
-    .line 41
     :try_start_1
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -2310,21 +2096,18 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 42
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Ljava/lang/String;
 
-    .line 43
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Ljava/lang/String;
 
-    .line 44
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -2339,7 +2122,6 @@
 
     if-eqz v3, :cond_8
 
-    .line 45
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -2362,7 +2144,6 @@
 
     invoke-static {v3}, Lcom/umeng/commonsdk/statistics/common/ULog;->i(Ljava/lang/String;)V
 
-    .line 46
     sget-object v3, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->f:Ljava/util/Map;
 
     invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -2375,7 +2156,6 @@
 
     const/4 v4, 0x0
 
-    .line 47
     :goto_3
     invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
 
@@ -2383,7 +2163,6 @@
 
     if-ge v4, v5, :cond_8
 
-    .line 48
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -2396,7 +2175,6 @@
 
     goto :goto_3
 
-    .line 49
     :cond_9
     monitor-exit p1
 
@@ -2418,7 +2196,6 @@
     :catchall_1
     move-exception p1
 
-    .line 50
     :try_start_2
     monitor-exit p0
     :try_end_2
@@ -2430,7 +2207,6 @@
 .method public c()Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;
     .locals 1
 
-    .line 6
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->h:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;
 
     return-object v0
@@ -2439,20 +2215,17 @@
 .method public d()V
     .locals 4
 
-    .line 7
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->i:Lcom/umeng/commonsdk/statistics/proto/d;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 8
     :cond_0
     sget-object v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->l:Lcom/umeng/commonsdk/utils/FileLockUtil;
 
     if-eqz v0, :cond_2
 
-    .line 9
     new-instance v0, Ljava/io/File;
 
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->k:Landroid/content/Context;
@@ -2465,14 +2238,12 @@
 
     invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 10
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 11
     :try_start_0
     invoke-virtual {v0}, Ljava/io/File;->createNewFile()Z
     :try_end_0
@@ -2480,7 +2251,6 @@
 
     goto :goto_0
 
-    .line 12
     :catch_0
     :try_start_1
     invoke-virtual {v0}, Ljava/io/File;->createNewFile()Z
@@ -2492,12 +2262,10 @@
     :catch_1
     move-exception v1
 
-    .line 13
     sget-object v2, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->k:Landroid/content/Context;
 
     invoke-static {v2, v1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
-    .line 14
     :cond_1
     :goto_0
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->l:Lcom/umeng/commonsdk/utils/FileLockUtil;
@@ -2519,7 +2287,6 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     sget-object p1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->j:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
 
     invoke-direct {p1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->e()V
@@ -2529,7 +2296,6 @@
     :cond_0
     if-ne p2, v0, :cond_1
 
-    .line 2
     sget-object p2, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->j:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
 
     invoke-direct {p2, p1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->a(Ljava/io/File;)V
@@ -2558,7 +2324,6 @@
 .method public registImprintCallback(Ljava/lang/String;Lcom/umeng/commonsdk/statistics/internal/UMImprintChangeCallback;)V
     .locals 1
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -2567,7 +2332,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 2
     invoke-static {p1, p2}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->a(Ljava/lang/String;Lcom/umeng/commonsdk/statistics/internal/UMImprintChangeCallback;)V
 
     :cond_0
@@ -2577,7 +2341,6 @@
 .method public registPreProcessCallback(Ljava/lang/String;Lcom/umeng/commonsdk/statistics/internal/UMImprintPreProcessCallback;)V
     .locals 3
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -2586,12 +2349,10 @@
 
     if-eqz p2, :cond_1
 
-    .line 2
     sget-object v0, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->p:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->o:Ljava/util/Map;
 
@@ -2601,14 +2362,12 @@
 
     if-nez v1, :cond_0
 
-    .line 4
     sget-object v1, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->o:Ljava/util/Map;
 
     invoke-interface {v1, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string p2, "MobclickRT"
 
-    .line 5
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2634,7 +2393,6 @@
     :cond_0
     const-string p2, "MobclickRT"
 
-    .line 6
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -2662,13 +2420,11 @@
     :catchall_0
     move-exception p1
 
-    .line 7
     :try_start_1
     sget-object p2, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->k:Landroid/content/Context;
 
     invoke-static {p2, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
-    .line 8
     :goto_0
     monitor-exit v0
 
@@ -2691,7 +2447,6 @@
 .method public unregistImprintCallback(Ljava/lang/String;Lcom/umeng/commonsdk/statistics/internal/UMImprintChangeCallback;)V
     .locals 1
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -2700,7 +2455,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 2
     invoke-static {p1, p2}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->b(Ljava/lang/String;Lcom/umeng/commonsdk/statistics/internal/UMImprintChangeCallback;)V
 
     :cond_0

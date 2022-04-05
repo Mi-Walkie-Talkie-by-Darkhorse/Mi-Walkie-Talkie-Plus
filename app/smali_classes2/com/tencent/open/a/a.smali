@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/a/a;
 .super Lcom/tencent/open/a/i;
-.source "ProGuard"
 
 # interfaces
 .implements Landroid/os/Handler$Callback;
@@ -34,42 +33,34 @@
 .method public constructor <init>(IZLcom/tencent/open/a/h;Lcom/tencent/open/a/b;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2, p3}, Lcom/tencent/open/a/i;-><init>(IZLcom/tencent/open/a/h;)V
 
     const/4 p1, 0x0
 
-    .line 3
     iput-boolean p1, p0, Lcom/tencent/open/a/a;->i:Z
 
-    .line 4
     invoke-virtual {p0, p4}, Lcom/tencent/open/a/a;->a(Lcom/tencent/open/a/b;)V
 
-    .line 5
     new-instance p1, Lcom/tencent/open/a/g;
 
     invoke-direct {p1}, Lcom/tencent/open/a/g;-><init>()V
 
     iput-object p1, p0, Lcom/tencent/open/a/a;->e:Lcom/tencent/open/a/g;
 
-    .line 6
     new-instance p1, Lcom/tencent/open/a/g;
 
     invoke-direct {p1}, Lcom/tencent/open/a/g;-><init>()V
 
     iput-object p1, p0, Lcom/tencent/open/a/a;->f:Lcom/tencent/open/a/g;
 
-    .line 7
     iget-object p1, p0, Lcom/tencent/open/a/a;->e:Lcom/tencent/open/a/g;
 
     iput-object p1, p0, Lcom/tencent/open/a/a;->g:Lcom/tencent/open/a/g;
 
-    .line 8
     iget-object p1, p0, Lcom/tencent/open/a/a;->f:Lcom/tencent/open/a/g;
 
     iput-object p1, p0, Lcom/tencent/open/a/a;->h:Lcom/tencent/open/a/g;
 
-    .line 9
     invoke-virtual {p4}, Lcom/tencent/open/a/b;->d()I
 
     move-result p1
@@ -78,10 +69,8 @@
 
     iput-object p1, p0, Lcom/tencent/open/a/a;->d:[C
 
-    .line 10
     invoke-direct {p0}, Lcom/tencent/open/a/a;->g()Ljava/io/Writer;
 
-    .line 11
     new-instance p1, Landroid/os/HandlerThread;
 
     invoke-virtual {p4}, Lcom/tencent/open/a/b;->c()Ljava/lang/String;
@@ -98,10 +87,8 @@
 
     if-eqz p1, :cond_0
 
-    .line 12
     invoke-virtual {p1}, Landroid/os/HandlerThread;->start()V
 
-    .line 13
     :cond_0
     iget-object p1, p0, Lcom/tencent/open/a/a;->j:Landroid/os/HandlerThread;
 
@@ -119,7 +106,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 14
     new-instance p1, Landroid/os/Handler;
 
     iget-object p2, p0, Lcom/tencent/open/a/a;->j:Landroid/os/HandlerThread;
@@ -139,7 +125,6 @@
 .method public constructor <init>(Lcom/tencent/open/a/b;)V
     .locals 3
 
-    .line 1
     sget v0, Lcom/tencent/open/a/c;->b:I
 
     sget-object v1, Lcom/tencent/open/a/h;->a:Lcom/tencent/open/a/h;
@@ -154,7 +139,6 @@
 .method private f()V
     .locals 3
 
-    .line 1
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -165,7 +149,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-boolean v0, p0, Lcom/tencent/open/a/a;->i:Z
 
@@ -176,13 +159,10 @@
     :cond_1
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Lcom/tencent/open/a/a;->i:Z
 
-    .line 4
     invoke-direct {p0}, Lcom/tencent/open/a/a;->i()V
 
-    .line 5
     :try_start_0
     iget-object v0, p0, Lcom/tencent/open/a/a;->h:Lcom/tencent/open/a/g;
 
@@ -202,7 +182,6 @@
     :catchall_0
     move-exception v0
 
-    .line 6
     iget-object v1, p0, Lcom/tencent/open/a/a;->h:Lcom/tencent/open/a/g;
 
     invoke-virtual {v1}, Lcom/tencent/open/a/g;->b()V
@@ -217,7 +196,6 @@
 
     const/4 v0, 0x0
 
-    .line 7
     iput-boolean v0, p0, Lcom/tencent/open/a/a;->i:Z
 
     return-void
@@ -226,7 +204,6 @@
 .method private g()Ljava/io/Writer;
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/tencent/open/a/a;->c()Lcom/tencent/open/a/b;
 
     move-result-object v0
@@ -237,7 +214,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Lcom/tencent/open/a/a;->c:Ljava/io/File;
 
     invoke-virtual {v0, v1}, Ljava/io/File;->equals(Ljava/lang/Object;)Z
@@ -253,14 +229,11 @@
 
     if-eqz v0, :cond_2
 
-    .line 3
     :cond_1
     iput-object v0, p0, Lcom/tencent/open/a/a;->c:Ljava/io/File;
 
-    .line 4
     invoke-direct {p0}, Lcom/tencent/open/a/a;->h()V
 
-    .line 5
     :try_start_0
     new-instance v0, Ljava/io/FileWriter;
 
@@ -281,7 +254,6 @@
 
     return-object v0
 
-    .line 6
     :cond_2
     :goto_0
     iget-object v0, p0, Lcom/tencent/open/a/a;->b:Ljava/io/FileWriter;
@@ -292,18 +264,15 @@
 .method private h()V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/tencent/open/a/a;->b:Ljava/io/FileWriter;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/tencent/open/a/a;->b:Ljava/io/FileWriter;
 
     invoke-virtual {v0}, Ljava/io/FileWriter;->flush()V
 
-    .line 3
     iget-object v0, p0, Lcom/tencent/open/a/a;->b:Ljava/io/FileWriter;
 
     invoke-virtual {v0}, Ljava/io/FileWriter;->close()V
@@ -315,7 +284,6 @@
     :catch_0
     move-exception v0
 
-    .line 4
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_0
@@ -326,10 +294,8 @@
 .method private i()V
     .locals 2
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/tencent/open/a/a;->g:Lcom/tencent/open/a/g;
 
@@ -337,30 +303,25 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/tencent/open/a/a;->f:Lcom/tencent/open/a/g;
 
     iput-object v0, p0, Lcom/tencent/open/a/a;->g:Lcom/tencent/open/a/g;
 
-    .line 4
     iget-object v0, p0, Lcom/tencent/open/a/a;->e:Lcom/tencent/open/a/g;
 
     iput-object v0, p0, Lcom/tencent/open/a/a;->h:Lcom/tencent/open/a/g;
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/tencent/open/a/a;->e:Lcom/tencent/open/a/g;
 
     iput-object v0, p0, Lcom/tencent/open/a/a;->g:Lcom/tencent/open/a/g;
 
-    .line 6
     iget-object v0, p0, Lcom/tencent/open/a/a;->f:Lcom/tencent/open/a/g;
 
     iput-object v0, p0, Lcom/tencent/open/a/a;->h:Lcom/tencent/open/a/g;
 
-    .line 7
     :goto_0
     monitor-exit p0
 
@@ -381,7 +342,6 @@
 .method public a()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/open/a/a;->k:Landroid/os/Handler;
 
     const/16 v1, 0x400
@@ -392,12 +352,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/tencent/open/a/a;->k:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/tencent/open/a/a;->k:Landroid/os/Handler;
 
@@ -409,7 +367,6 @@
 .method protected a(ILjava/lang/Thread;JLjava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     .locals 8
 
-    .line 4
     invoke-virtual {p0}, Lcom/tencent/open/a/i;->e()Lcom/tencent/open/a/h;
 
     move-result-object v0
@@ -430,7 +387,6 @@
 
     move-result-object p1
 
-    .line 5
     invoke-virtual {p0, p1}, Lcom/tencent/open/a/a;->a(Ljava/lang/String;)V
 
     return-void
@@ -439,7 +395,6 @@
 .method public a(Lcom/tencent/open/a/b;)V
     .locals 0
 
-    .line 9
     iput-object p1, p0, Lcom/tencent/open/a/a;->a:Lcom/tencent/open/a/b;
 
     return-void
@@ -448,12 +403,10 @@
 .method protected a(Ljava/lang/String;)V
     .locals 1
 
-    .line 6
     iget-object v0, p0, Lcom/tencent/open/a/a;->g:Lcom/tencent/open/a/g;
 
     invoke-virtual {v0, p1}, Lcom/tencent/open/a/g;->a(Ljava/lang/String;)I
 
-    .line 7
     iget-object p1, p0, Lcom/tencent/open/a/a;->g:Lcom/tencent/open/a/g;
 
     invoke-virtual {p1}, Lcom/tencent/open/a/g;->a()I
@@ -470,7 +423,6 @@
 
     if-lt p1, v0, :cond_0
 
-    .line 8
     invoke-virtual {p0}, Lcom/tencent/open/a/a;->a()V
 
     :cond_0
@@ -480,10 +432,8 @@
 .method public b()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/tencent/open/a/a;->h()V
 
-    .line 2
     iget-object v0, p0, Lcom/tencent/open/a/a;->j:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->quit()Z
@@ -494,7 +444,6 @@
 .method public c()Lcom/tencent/open/a/b;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/open/a/a;->a:Lcom/tencent/open/a/b;
 
     return-object v0
@@ -503,7 +452,6 @@
 .method public handleMessage(Landroid/os/Message;)Z
     .locals 1
 
-    .line 1
     iget p1, p1, Landroid/os/Message;->what:I
 
     const/16 v0, 0x400
@@ -512,7 +460,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-direct {p0}, Lcom/tencent/open/a/a;->f()V
 

@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/protobuf/GeneratedMessage$ExtensionDescriptorRetriever;
 .super Ljava/lang/Object;
-.source "GeneratedMessage.java"
 
 
 # annotations

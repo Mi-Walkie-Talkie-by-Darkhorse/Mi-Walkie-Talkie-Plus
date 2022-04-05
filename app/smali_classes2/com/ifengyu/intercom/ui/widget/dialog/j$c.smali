@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/j$c;
 .super Lcom/ifengyu/intercom/ui/widget/dialog/x;
-.source "ExpandTouchListener.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/j;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/j$c;->a:Lcom/ifengyu/intercom/ui/widget/dialog/j;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/widget/dialog/x;-><init>()V
@@ -35,7 +33,6 @@
 .method public onAnimationEnd(Landroid/view/animation/Animation;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/j$c;->a:Lcom/ifengyu/intercom/ui/widget/dialog/j;
 
     const/4 v0, 0x1

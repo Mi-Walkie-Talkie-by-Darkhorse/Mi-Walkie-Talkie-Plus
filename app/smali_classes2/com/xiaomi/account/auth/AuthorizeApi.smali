@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/auth/AuthorizeApi;
 .super Ljava/lang/Object;
-.source "AuthorizeApi.java"
 
 
 # static fields
@@ -21,12 +20,10 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/xiaomi/account/openauth/XiaomiOAuthConstants;->OAUTH2_API_HOST:Ljava/lang/String;
 
     sput-object v0, Lcom/xiaomi/account/auth/AuthorizeApi;->HOST:Ljava/lang/String;
 
-    .line 2
     sget-object v0, Lcom/xiaomi/account/openauth/XiaomiOAuthConstants;->OAUTH2_API_URL_BASE:Ljava/lang/String;
 
     sput-object v0, Lcom/xiaomi/account/auth/AuthorizeApi;->OAUTH_URL_BASE:Ljava/lang/String;
@@ -37,7 +34,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +44,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Ljava/io/BufferedReader;->close()V
     :try_end_0
@@ -80,7 +75,6 @@
 
     move-object v3, p4
 
-    .line 1
     invoke-static/range {v0 .. v5}, Lcom/xiaomi/account/auth/AuthorizeApi;->doHttpGet(Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -99,7 +93,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 3
     invoke-static/range {p1 .. p6}, Lcom/xiaomi/account/auth/AuthorizeApi;->doHttpGet(Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -125,7 +118,6 @@
 
     move-object v3, p3
 
-    .line 2
     invoke-static/range {v0 .. v5}, Lcom/xiaomi/account/auth/AuthorizeApi;->doHttpGet(Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -141,12 +133,10 @@
         }
     .end annotation
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 5
     new-instance v1, Lorg/apache/http/message/BasicNameValuePair;
 
     invoke-static {p1, p2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
@@ -159,7 +149,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 6
     new-instance p1, Lorg/apache/http/message/BasicNameValuePair;
 
     const-string p2, "token"
@@ -170,7 +159,6 @@
 
     const/4 p1, 0x0
 
-    .line 7
     :try_start_0
     new-instance p2, Ljava/net/URL;
 
@@ -196,42 +184,34 @@
 
     const/4 v1, 0x1
 
-    .line 8
     invoke-static {v1}, Ljava/net/HttpURLConnection;->setFollowRedirects(Z)V
 
-    .line 9
     invoke-virtual {p2}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object p2
 
     check-cast p2, Ljava/net/HttpURLConnection;
 
-    .line 10
     invoke-virtual {p2, v1}, Ljava/net/HttpURLConnection;->setDoInput(Z)V
 
     const-string v1, "GET"
 
-    .line 11
     invoke-virtual {p2, v1}, Ljava/net/HttpURLConnection;->setRequestMethod(Ljava/lang/String;)V
 
     const/16 v1, 0x2710
 
-    .line 12
     invoke-virtual {p2, v1}, Ljava/net/HttpURLConnection;->setConnectTimeout(I)V
 
     const/16 v1, 0x3a98
 
-    .line 13
     invoke-virtual {p2, v1}, Ljava/net/HttpURLConnection;->setReadTimeout(I)V
 
-    .line 14
     invoke-static {p0, p3, p4, p5, v0}, Lcom/xiaomi/account/auth/AuthorizeApi;->makeHeaders(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/util/HashMap;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 15
     invoke-virtual {p0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
     move-result-object p3
@@ -253,7 +233,6 @@
 
     check-cast p4, Ljava/lang/String;
 
-    .line 16
     invoke-virtual {p0, p4}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p5
@@ -264,7 +243,6 @@
 
     goto :goto_0
 
-    .line 17
     :cond_0
     invoke-virtual {p2}, Ljava/net/HttpURLConnection;->connect()V
     :try_end_0
@@ -274,7 +252,6 @@
     .catch Ljava/security/InvalidKeyException; {:try_start_0 .. :try_end_0} :catch_5
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 18
     :try_start_1
     invoke-virtual {p2}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
@@ -287,7 +264,6 @@
 
     goto :goto_1
 
-    .line 19
     :catch_0
     :try_start_2
     invoke-virtual {p2}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
@@ -297,7 +273,6 @@
     :goto_1
     if-eqz p0, :cond_2
 
-    .line 20
     new-instance p2, Ljava/io/BufferedReader;
 
     new-instance p3, Ljava/io/InputStreamReader;
@@ -314,13 +289,11 @@
     .catch Ljava/security/InvalidKeyException; {:try_start_2 .. :try_end_2} :catch_5
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 21
     :try_start_3
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 22
     :goto_2
     invoke-virtual {p2}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
@@ -328,12 +301,10 @@
 
     if-eqz p1, :cond_1
 
-    .line 23
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_2
 
-    .line 24
     :cond_1
     invoke-virtual {p0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -345,7 +316,6 @@
     .catch Ljava/security/InvalidKeyException; {:try_start_3 .. :try_end_3} :catch_1
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 25
     invoke-static {p2}, Lcom/xiaomi/account/auth/AuthorizeApi;->closeQuietly(Ljava/io/BufferedReader;)V
 
     return-object p0
@@ -385,7 +355,6 @@
 
     goto :goto_6
 
-    .line 26
     :cond_2
     :try_start_4
     new-instance p0, Lcom/xiaomi/account/openauth/XMAuthericationException;
@@ -412,7 +381,6 @@
     :catch_5
     move-exception p0
 
-    .line 27
     :goto_3
     :try_start_5
     new-instance p2, Lcom/xiaomi/account/openauth/XMAuthericationException;
@@ -424,7 +392,6 @@
     :catch_6
     move-exception p0
 
-    .line 28
     :goto_4
     new-instance p2, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
@@ -435,7 +402,6 @@
     :catch_7
     move-exception p0
 
-    .line 29
     :goto_5
     new-instance p2, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
@@ -446,7 +412,6 @@
     :catch_8
     move-exception p0
 
-    .line 30
     :goto_6
     new-instance p2, Lcom/xiaomi/account/openauth/XMAuthericationException;
 
@@ -456,7 +421,6 @@
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
-    .line 31
     :goto_7
     invoke-static {p1}, Lcom/xiaomi/account/auth/AuthorizeApi;->closeQuietly(Ljava/io/BufferedReader;)V
 
@@ -498,18 +462,15 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     invoke-static {}, Lcom/xiaomi/account/auth/AuthorizeHelper;->generateNonce()Ljava/lang/String;
 
     move-result-object v7
 
-    .line 2
     sget-object v2, Lcom/xiaomi/account/auth/AuthorizeApi;->HOST:Ljava/lang/String;
 
     const-string v0, "UTF-8"
 
-    .line 3
     invoke-static {p4, v0}, Lorg/apache/http/client/utils/URLEncodedUtils;->format(Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
@@ -524,12 +485,10 @@
 
     move-object v6, p3
 
-    .line 4
     invoke-static/range {v0 .. v6}, Lcom/xiaomi/account/auth/AuthorizeHelper;->getMacAccessTokenSignatureString(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 5
     invoke-static {p1, v7, p0}, Lcom/xiaomi/account/auth/AuthorizeHelper;->buildMacRequestHead(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/util/HashMap;
 
     move-result-object p0

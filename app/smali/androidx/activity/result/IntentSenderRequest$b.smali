@@ -1,6 +1,5 @@
 .class public final Landroidx/activity/result/IntentSenderRequest$b;
 .super Ljava/lang/Object;
-.source "IntentSenderRequest.java"
 
 
 # annotations
@@ -32,10 +31,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/activity/result/IntentSenderRequest$b;->a:Landroid/content/IntentSender;
 
     return-void
@@ -48,10 +45,8 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     iput p1, p0, Landroidx/activity/result/IntentSenderRequest$b;->d:I
 
-    .line 3
     iput p2, p0, Landroidx/activity/result/IntentSenderRequest$b;->c:I
 
     return-object p0
@@ -66,7 +61,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Landroidx/activity/result/IntentSenderRequest$b;->b:Landroid/content/Intent;
 
     return-object p0
@@ -77,7 +71,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 4
     new-instance v0, Landroidx/activity/result/IntentSenderRequest;
 
     iget-object v1, p0, Landroidx/activity/result/IntentSenderRequest$b;->a:Landroid/content/IntentSender;

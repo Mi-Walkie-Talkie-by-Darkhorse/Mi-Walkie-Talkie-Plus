@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/Registry$NoModelLoaderAvailableException;
 .super Lcom/bumptech/glide/Registry$MissingComponentException;
-.source "Registry.java"
 
 
 # annotations
@@ -35,7 +34,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -68,7 +66,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

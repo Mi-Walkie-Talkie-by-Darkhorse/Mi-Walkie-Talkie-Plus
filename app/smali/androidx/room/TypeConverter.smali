@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/TypeConverter;
 .super Ljava/lang/Object;
-.source "TypeConverter.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

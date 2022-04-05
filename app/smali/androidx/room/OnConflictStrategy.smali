@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/OnConflictStrategy;
 .super Ljava/lang/Object;
-.source "OnConflictStrategy.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

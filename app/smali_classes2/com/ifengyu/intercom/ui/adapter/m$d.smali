@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/adapter/m$d;
 .super Ljava/lang/Object;
-.source "SealCustomAdapter.java"
 
 
 # annotations

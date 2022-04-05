@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/amap/api/col/l3/hb;
 .super Ljava/lang/Object;
-.source "EntityField.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

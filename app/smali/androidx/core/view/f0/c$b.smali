@@ -1,6 +1,5 @@
 .class final Landroidx/core/view/f0/c$b;
 .super Ljava/lang/Object;
-.source "InputContentInfoCompat.java"
 
 # interfaces
 .implements Landroidx/core/view/f0/c$c;
@@ -50,16 +49,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/view/f0/c$b;->a:Landroid/net/Uri;
 
-    .line 3
     iput-object p2, p0, Landroidx/core/view/f0/c$b;->b:Landroid/content/ClipDescription;
 
-    .line 4
     iput-object p3, p0, Landroidx/core/view/f0/c$b;->c:Landroid/net/Uri;
 
     return-void
@@ -72,7 +67,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c$b;->a:Landroid/net/Uri;
 
     return-object v0
@@ -89,7 +83,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c$b;->c:Landroid/net/Uri;
 
     return-object v0
@@ -100,7 +93,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c$b;->b:Landroid/content/ClipDescription;
 
     return-object v0

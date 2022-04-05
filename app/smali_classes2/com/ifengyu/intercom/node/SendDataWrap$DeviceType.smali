@@ -1,6 +1,5 @@
 .class interface abstract annotation Lcom/ifengyu/intercom/node/SendDataWrap$DeviceType;
 .super Ljava/lang/Object;
-.source "SendDataWrap.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/transition/TransitionUtils$2;
 .super Ljava/lang/Object;
-.source "TransitionUtils.java"
 
 # interfaces
 .implements Lcom/google/android/material/transition/TransitionUtils$CornerSizeBinaryOperator;
@@ -33,7 +32,6 @@
 .method constructor <init>(Landroid/graphics/RectF;Landroid/graphics/RectF;FFF)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/TransitionUtils$2;->val$startBounds:Landroid/graphics/RectF;
 
     iput-object p2, p0, Lcom/google/android/material/transition/TransitionUtils$2;->val$endBounds:Landroid/graphics/RectF;
@@ -64,33 +62,28 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/transition/TransitionUtils$2;->val$startBounds:Landroid/graphics/RectF;
 
     invoke-interface {p1, v0}, Lcom/google/android/material/shape/CornerSize;->getCornerSize(Landroid/graphics/RectF;)F
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/transition/TransitionUtils$2;->val$endBounds:Landroid/graphics/RectF;
 
     invoke-interface {p2, v0}, Lcom/google/android/material/shape/CornerSize;->getCornerSize(Landroid/graphics/RectF;)F
 
     move-result p2
 
-    .line 3
     iget v0, p0, Lcom/google/android/material/transition/TransitionUtils$2;->val$startFraction:F
 
     iget v1, p0, Lcom/google/android/material/transition/TransitionUtils$2;->val$endFraction:F
 
     iget v2, p0, Lcom/google/android/material/transition/TransitionUtils$2;->val$fraction:F
 
-    .line 4
     invoke-static {p1, p2, v0, v1, v2}, Lcom/google/android/material/transition/TransitionUtils;->lerp(FFFFF)F
 
     move-result p1
 
-    .line 5
     new-instance p2, Lcom/google/android/material/shape/AbsoluteCornerSize;
 
     invoke-direct {p2, p1}, Lcom/google/android/material/shape/AbsoluteCornerSize;-><init>(F)V

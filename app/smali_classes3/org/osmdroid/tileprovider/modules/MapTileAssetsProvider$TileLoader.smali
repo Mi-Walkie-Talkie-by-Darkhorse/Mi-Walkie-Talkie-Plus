@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider$TileLoader;
 .super Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$TileLoader;
-.source "MapTileAssetsProvider.java"
 
 
 # annotations
@@ -24,17 +23,14 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider;Landroid/content/res/AssetManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider;
 
     invoke-direct {p0, p1}, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$TileLoader;-><init>(Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;)V
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, p0, Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider$TileLoader;->mAssets:Landroid/content/res/AssetManager;
 
-    .line 3
     iput-object p2, p0, Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider$TileLoader;->mAssets:Landroid/content/res/AssetManager;
 
     return-void
@@ -50,7 +46,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider;
 
     invoke-static {v0}, Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider;->access$000(Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider;)Ljava/util/concurrent/atomic/AtomicReference;
@@ -69,13 +64,11 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTileRequestState;->getMapTile()Lorg/osmdroid/tileprovider/MapTile;
 
     move-result-object p1
 
-    .line 3
     :try_start_0
     iget-object v2, p0, Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider$TileLoader;->mAssets:Landroid/content/res/AssetManager;
 
@@ -87,7 +80,6 @@
 
     move-result-object p1
 
-    .line 4
     invoke-interface {v0, p1}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->getDrawable(Ljava/io/InputStream;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -100,7 +92,6 @@
     :catch_0
     move-exception p1
 
-    .line 5
     new-instance v0, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$CantContinueException;
 
     iget-object v1, p0, Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileAssetsProvider;

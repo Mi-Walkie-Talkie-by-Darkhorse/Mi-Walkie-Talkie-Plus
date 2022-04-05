@@ -1,13 +1,11 @@
 .class public Lcom/autonavi/ae/gmap/utils/GLConvertUtil;
 .super Ljava/lang/Object;
-.source "GLConvertUtil.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -27,7 +25,6 @@
 
     add-int v3, v2, p1
 
-    .line 1
     aget-byte v3, p0, v3
 
     and-int/lit16 v3, v3, 0xff
@@ -44,7 +41,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-static {v0, v1}, Ljava/lang/Double;->longBitsToDouble(J)D
 
@@ -134,7 +130,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     :try_start_0
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
@@ -142,7 +137,6 @@
 
     const-string v2, "UTF-8"
 
-    .line 2
     invoke-virtual {p0, v2}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object p0
@@ -151,20 +145,16 @@
 
     const/4 v3, 0x0
 
-    .line 3
     array-length v4, p0
 
     int-to-byte v4, v4
 
     aput-byte v4, v2, v3
 
-    .line 4
     invoke-virtual {v1, v2}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 5
     invoke-virtual {v1, p0}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 6
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p0
@@ -176,7 +166,6 @@
     :catch_0
     move-exception p0
 
-    .line 7
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     new-array p0, v0, [B
@@ -189,28 +178,24 @@
 
     add-int/lit8 v0, p1, 0x3
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
 
     add-int/lit8 v1, p1, 0x2
 
-    .line 2
     aget-byte v1, p0, v1
 
     and-int/lit16 v1, v1, 0xff
 
     add-int/lit8 v2, p1, 0x1
 
-    .line 3
     aget-byte v2, p0, v2
 
     and-int/lit16 v2, v2, 0xff
 
     add-int/lit8 p1, p1, 0x0
 
-    .line 4
     aget-byte p0, p0, p1
 
     and-int/lit16 p0, p0, 0xff
@@ -237,28 +222,24 @@
 
     add-int/lit8 v0, p1, 0x0
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
 
     add-int/lit8 v1, p1, 0x1
 
-    .line 2
     aget-byte v1, p0, v1
 
     and-int/lit16 v1, v1, 0xff
 
     add-int/lit8 v2, p1, 0x2
 
-    .line 3
     aget-byte v2, p0, v2
 
     and-int/lit16 v2, v2, 0xff
 
     add-int/lit8 p1, p1, 0x3
 
-    .line 4
     aget-byte p0, p0, p1
 
     and-int/lit16 p0, p0, 0xff
@@ -285,7 +266,6 @@
 
     add-int/lit8 v0, p1, 0x7
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
@@ -294,7 +274,6 @@
 
     add-int/lit8 v2, p1, 0x6
 
-    .line 2
     aget-byte v2, p0, v2
 
     and-int/lit16 v2, v2, 0xff
@@ -303,7 +282,6 @@
 
     add-int/lit8 v4, p1, 0x5
 
-    .line 3
     aget-byte v4, p0, v4
 
     and-int/lit16 v4, v4, 0xff
@@ -312,7 +290,6 @@
 
     add-int/lit8 v6, p1, 0x4
 
-    .line 4
     aget-byte v6, p0, v6
 
     and-int/lit16 v6, v6, 0xff
@@ -321,7 +298,6 @@
 
     add-int/lit8 v8, p1, 0x3
 
-    .line 5
     aget-byte v8, p0, v8
 
     and-int/lit16 v8, v8, 0xff
@@ -330,7 +306,6 @@
 
     add-int/lit8 v10, p1, 0x2
 
-    .line 6
     aget-byte v10, p0, v10
 
     and-int/lit16 v10, v10, 0xff
@@ -339,7 +314,6 @@
 
     add-int/lit8 v12, p1, 0x1
 
-    .line 7
     aget-byte v12, p0, v12
 
     and-int/lit16 v12, v12, 0xff
@@ -350,7 +324,6 @@
 
     add-int/lit8 v15, p1, 0x0
 
-    .line 8
     aget-byte v15, p0, v15
 
     and-int/lit16 v15, v15, 0xff
@@ -411,14 +384,12 @@
 
     add-int/lit8 v0, p1, 0x1
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
 
     add-int/lit8 p1, p1, 0x0
 
-    .line 2
     aget-byte p0, p0, p1
 
     and-int/lit16 p0, p0, 0xff
@@ -439,14 +410,12 @@
 
     add-int/lit8 v0, p1, 0x0
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 2
     aget-byte p0, p0, p1
 
     and-int/lit16 p0, p0, 0xff
@@ -465,7 +434,6 @@
 .method public static getString([BII)Ljava/lang/String;
     .locals 2
 
-    .line 1
     :try_start_0
     new-instance v0, Ljava/lang/String;
 
@@ -486,12 +454,10 @@
 .method public static getSubBytes([BII)[B
     .locals 2
 
-    .line 1
     new-array v0, p2, [B
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-static {p0, p1, v0, v1, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-object v0
@@ -502,14 +468,12 @@
 
     add-int/lit8 v0, p1, 0x1
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
 
     add-int/lit8 p1, p1, 0x0
 
-    .line 2
     aget-byte p0, p0, p1
 
     and-int/lit16 p0, p0, 0xff
@@ -526,15 +490,12 @@
 .method public static moveArray([BI[BII)V
     .locals 2
 
-    .line 1
     new-array v0, p4, [B
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-static {p0, p1, v0, v1, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 3
     invoke-static {v0, v1, p2, p3, p4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-void
@@ -543,7 +504,6 @@
 .method public static writeInt([BII)V
     .locals 2
 
-    .line 1
     invoke-static {p2}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->convertInt(I)[B
 
     move-result-object p2
@@ -552,7 +512,6 @@
 
     const/4 v1, 0x4
 
-    .line 2
     invoke-static {p2, v0, p0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-void
@@ -561,7 +520,6 @@
 .method public static writeShort([BIS)V
     .locals 2
 
-    .line 1
     invoke-static {p2}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->convertShort(I)[B
 
     move-result-object p2
@@ -570,7 +528,6 @@
 
     const/4 v1, 0x2
 
-    .line 2
     invoke-static {p2, v0, p0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-void

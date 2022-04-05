@@ -1,6 +1,5 @@
 .class Lcom/autonavi/ae/search/SearchEngine$1;
 .super Ljava/lang/Object;
-.source "SearchEngine.java"
 
 # interfaces
 .implements Lcom/autonavi/ae/search/INativeSearchObserver;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/autonavi/ae/search/SearchEngine;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/search/SearchEngine$1;->this$0:Lcom/autonavi/ae/search/SearchEngine;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
 
     const-string p2, "SearchEngine.onGetAdareaInfo"
 
-    .line 1
     invoke-static {p1, p2}, Lcom/autonavi/ae/search/log/GLog;->v(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -51,7 +48,6 @@
 .method public onGetPoiCategoryList(II)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "SearchEngine.onGetPoiCategoryList status="
@@ -84,7 +80,6 @@
 
     const-string p2, "SearchEngine.onGetPoiParam"
 
-    .line 1
     invoke-static {p1, p2}, Lcom/autonavi/ae/search/log/GLog;->v(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -93,7 +88,6 @@
 .method public onGetSearchResult(IILcom/autonavi/ae/search/model/GPoiResult;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/autonavi/ae/search/log/GLog;->isLogShow()Z
 
     move-result v0
@@ -102,7 +96,6 @@
 
     if-eqz p3, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "onGetSearchResult id="
@@ -137,7 +130,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -165,7 +157,6 @@
 
     invoke-static {v1, v0}, Lcom/autonavi/ae/search/log/GLog;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/autonavi/ae/search/SearchEngine$1;->this$0:Lcom/autonavi/ae/search/SearchEngine;
@@ -176,7 +167,6 @@
 
     monitor-enter v0
 
-    .line 5
     :try_start_0
     iget-object v1, p0, Lcom/autonavi/ae/search/SearchEngine$1;->this$0:Lcom/autonavi/ae/search/SearchEngine;
 
@@ -194,14 +184,12 @@
 
     check-cast p1, Lcom/autonavi/ae/search/interfaces/OnSearchResultListener;
 
-    .line 6
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     if-eqz p1, :cond_2
 
-    .line 7
     invoke-interface {p1, p2, p3}, Lcom/autonavi/ae/search/interfaces/OnSearchResultListener;->onGetSearchResult(ILcom/autonavi/ae/search/model/GPoiResult;)V
 
     :cond_2
@@ -210,7 +198,6 @@
     :catchall_0
     move-exception p1
 
-    .line 8
     monitor-exit v0
 
     throw p1
@@ -223,7 +210,6 @@
 
     const-string v1, "SearchEngine.onGetSuggestArea"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/autonavi/ae/search/log/GLog;->v(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -236,7 +222,6 @@
 
     const-string v0, "SearchEngine.onSetPoiParam"
 
-    .line 1
     invoke-static {p1, v0}, Lcom/autonavi/ae/search/log/GLog;->v(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

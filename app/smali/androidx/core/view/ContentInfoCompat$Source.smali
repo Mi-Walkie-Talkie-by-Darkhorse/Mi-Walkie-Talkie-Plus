@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/view/ContentInfoCompat$Source;
 .super Ljava/lang/Object;
-.source "ContentInfoCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

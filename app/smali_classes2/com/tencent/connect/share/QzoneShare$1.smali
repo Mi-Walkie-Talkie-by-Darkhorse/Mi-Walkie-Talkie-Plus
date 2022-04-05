@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/share/QzoneShare$1;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Lcom/tencent/open/utils/c;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/tencent/connect/share/QzoneShare;Landroid/os/Bundle;Landroid/app/Activity;Lcom/tencent/tauth/IUiListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/share/QzoneShare$1;->d:Lcom/tencent/connect/share/QzoneShare;
 
     iput-object p2, p0, Lcom/tencent/connect/share/QzoneShare$1;->a:Landroid/os/Bundle;
@@ -66,14 +64,12 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     iget-object p1, p0, Lcom/tencent/connect/share/QzoneShare$1;->a:Landroid/os/Bundle;
 
     const-string v0, "imageUrl"
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/tencent/connect/share/QzoneShare$1;->d:Lcom/tencent/connect/share/QzoneShare;
 

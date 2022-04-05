@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/statistic/i$a;
 .super Ljava/lang/Object;
-.source "WBAgentHandler.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,10 +24,8 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/statistic/i;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/sina/weibo/sdk/statistic/i$a;->a:Ljava/lang/String;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,17 +38,14 @@
 
     const-string v0, "app_logs"
 
-    .line 1
     invoke-static {v0}, Lcom/sina/weibo/sdk/statistic/d;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/sina/weibo/sdk/statistic/i$a;->a:Ljava/lang/String;
 
     const/4 v2, 0x1
 
-    .line 3
     invoke-static {v0, v1, v2}, Lcom/sina/weibo/sdk/statistic/d;->a(Ljava/lang/String;Ljava/lang/String;Z)V
 
     return-void

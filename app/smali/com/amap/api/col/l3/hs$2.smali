@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/hs$2;
 .super Ljava/lang/Object;
-.source "DiskLruCache.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/hs;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/hs$2;->a:Lcom/amap/api/col/l3/hs;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,12 +48,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/hs$2;->a:Lcom/amap/api/col/l3/hs;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/hs$2;->a:Lcom/amap/api/col/l3/hs;
 
@@ -67,18 +63,15 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     monitor-exit v0
 
     return-object v2
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/amap/api/col/l3/hs$2;->a:Lcom/amap/api/col/l3/hs;
 
     invoke-static {v1}, Lcom/amap/api/col/l3/hs;->b(Lcom/amap/api/col/l3/hs;)V
 
-    .line 5
     iget-object v1, p0, Lcom/amap/api/col/l3/hs$2;->a:Lcom/amap/api/col/l3/hs;
 
     invoke-static {v1}, Lcom/amap/api/col/l3/hs;->c(Lcom/amap/api/col/l3/hs;)Z
@@ -87,17 +80,14 @@
 
     if-eqz v1, :cond_1
 
-    .line 6
     iget-object v1, p0, Lcom/amap/api/col/l3/hs$2;->a:Lcom/amap/api/col/l3/hs;
 
     invoke-static {v1}, Lcom/amap/api/col/l3/hs;->d(Lcom/amap/api/col/l3/hs;)V
 
-    .line 7
     iget-object v1, p0, Lcom/amap/api/col/l3/hs$2;->a:Lcom/amap/api/col/l3/hs;
 
     invoke-static {v1}, Lcom/amap/api/col/l3/hs;->e(Lcom/amap/api/col/l3/hs;)I
 
-    .line 8
     :cond_1
     monitor-exit v0
     :try_end_0
@@ -123,7 +113,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/hs$2;->a()Ljava/lang/Void;
 
     move-result-object v0

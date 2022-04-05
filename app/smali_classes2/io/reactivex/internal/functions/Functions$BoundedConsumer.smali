@@ -1,6 +1,5 @@
 .class public Lio/reactivex/internal/functions/Functions$BoundedConsumer;
 .super Ljava/lang/Object;
-.source "Functions.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -34,10 +33,8 @@
 .method constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lio/reactivex/internal/functions/Functions$BoundedConsumer;->bufferSize:I
 
     return-void
@@ -53,7 +50,6 @@
         }
     .end annotation
 
-    .line 2
     iget v0, p0, Lio/reactivex/internal/functions/Functions$BoundedConsumer;->bufferSize:I
 
     int-to-long v0, v0
@@ -71,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Lc/a/d;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/functions/Functions$BoundedConsumer;->accept(Lc/a/d;)V

@@ -1,13 +1,11 @@
 .class public final Lcom/amap/api/col/l3/gf;
 .super Ljava/lang/Object;
-.source "ProxyUtil.java"
 
 
 # direct methods
 .method private static a()Ljava/lang/String;
     .locals 3
 
-    .line 6
     :try_start_0
     invoke-static {}, Landroid/net/Proxy;->getDefaultHost()Ljava/lang/String;
 
@@ -24,7 +22,6 @@
 
     const-string v2, "gdh"
 
-    .line 7
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
@@ -41,7 +38,6 @@
 .method public static a(Landroid/content/Context;)Ljava/net/Proxy;
     .locals 2
 
-    .line 1
     :try_start_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -49,21 +45,18 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Ljava/net/URI;
 
     const-string v1, "http://restapi.amap.com"
 
     invoke-direct {v0, v1}, Ljava/net/URI;-><init>(Ljava/lang/String;)V
 
-    .line 3
     invoke-static {p0, v0}, Lcom/amap/api/col/l3/gf;->a(Landroid/content/Context;Ljava/net/URI;)Ljava/net/Proxy;
 
     move-result-object p0
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-static {p0}, Lcom/amap/api/col/l3/gf;->b(Landroid/content/Context;)Ljava/net/Proxy;
 
@@ -80,7 +73,6 @@
 
     const-string v1, "gp"
 
-    .line 5
     invoke-static {p0, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p0, 0x0
@@ -92,7 +84,6 @@
 .method private static a(Landroid/content/Context;Ljava/net/URI;)Ljava/net/Proxy;
     .locals 2
 
-    .line 8
     invoke-static {p0}, Lcom/amap/api/col/l3/gf;->c(Landroid/content/Context;)Z
 
     move-result p0
@@ -101,20 +92,17 @@
 
     if-eqz p0, :cond_2
 
-    .line 9
     :try_start_0
     invoke-static {}, Ljava/net/ProxySelector;->getDefault()Ljava/net/ProxySelector;
 
     move-result-object p0
 
-    .line 10
     invoke-virtual {p0, p1}, Ljava/net/ProxySelector;->select(Ljava/net/URI;)Ljava/util/List;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 11
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
     move-result p1
@@ -123,7 +111,6 @@
 
     const/4 p1, 0x0
 
-    .line 12
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object p0
@@ -132,7 +119,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 13
     invoke-virtual {p0}, Ljava/net/Proxy;->type()Ljava/net/Proxy$Type;
 
     move-result-object p1
@@ -159,7 +145,6 @@
 
     const-string v1, "gpsc"
 
-    .line 14
     invoke-static {p0, p1, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_2
@@ -169,7 +154,6 @@
 .method private static b()I
     .locals 3
 
-    .line 50
     :try_start_0
     invoke-static {}, Landroid/net/Proxy;->getDefaultPort()I
 
@@ -186,7 +170,6 @@
 
     const-string v2, "gdp"
 
-    .line 51
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, -0x1
@@ -212,7 +195,6 @@
 
     const-string v7, "pu"
 
-    .line 1
     invoke-static/range {p0 .. p0}, Lcom/amap/api/col/l3/gf;->c(Landroid/content/Context;)Z
 
     move-result v0
@@ -223,12 +205,10 @@
 
     const-string v0, "content://telephony/carriers/preferapn"
 
-    .line 2
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v10
 
-    .line 3
     invoke-virtual/range {p0 .. p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v9
@@ -247,7 +227,6 @@
 
     const/4 v15, -0x1
 
-    .line 4
     :try_start_0
     invoke-virtual/range {v9 .. v14}, Landroid/content/ContentResolver;->query(Landroid/net/Uri;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
@@ -258,7 +237,6 @@
 
     if-eqz v9, :cond_7
 
-    .line 5
     :try_start_1
     invoke-interface {v9}, Landroid/database/Cursor;->moveToFirst()Z
 
@@ -268,19 +246,16 @@
 
     const-string v0, "apn"
 
-    .line 6
     invoke-interface {v9, v0}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v0
 
-    .line 7
     invoke-interface {v9, v0}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 8
     sget-object v10, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     invoke-virtual {v0, v10}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
@@ -290,19 +265,16 @@
     :cond_0
     if-eqz v0, :cond_4
 
-    .line 9
     invoke-virtual {v0, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v10
 
     if-eqz v10, :cond_4
 
-    .line 10
     invoke-static {}, Lcom/amap/api/col/l3/gf;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 11
     invoke-static {}, Lcom/amap/api/col/l3/gf;->b()I
 
     move-result v10
@@ -310,7 +282,6 @@
     .catch Ljava/lang/SecurityException; {:try_start_1 .. :try_end_1} :catch_2
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 12
     :try_start_2
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -318,7 +289,6 @@
 
     if-nez v11, :cond_1
 
-    .line 13
     invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v11
@@ -342,7 +312,6 @@
     :goto_0
     if-nez v0, :cond_2
 
-    .line 14
     :try_start_3
     invoke-static {v2}, Lcom/amap/api/col/l3/gi;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -394,7 +363,6 @@
     :cond_4
     if-eqz v0, :cond_7
 
-    .line 15
     :try_start_4
     invoke-virtual {v0, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
@@ -402,12 +370,10 @@
 
     if-eqz v0, :cond_7
 
-    .line 16
     invoke-static {}, Lcom/amap/api/col/l3/gf;->a()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 17
     invoke-static {}, Lcom/amap/api/col/l3/gf;->b()I
 
     move-result v10
@@ -415,7 +381,6 @@
     .catch Ljava/lang/SecurityException; {:try_start_4 .. :try_end_4} :catch_2
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 18
     :try_start_5
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -423,7 +388,6 @@
 
     if-nez v11, :cond_5
 
-    .line 19
     invoke-virtual {v0, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v11
@@ -447,7 +411,6 @@
     :goto_3
     if-nez v0, :cond_6
 
-    .line 20
     :try_start_6
     invoke-static {v1}, Lcom/amap/api/col/l3/gi;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -485,7 +448,6 @@
     :goto_4
     if-eqz v9, :cond_8
 
-    .line 21
     :try_start_7
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
     :try_end_7
@@ -498,7 +460,6 @@
 
     move-object v1, v0
 
-    .line 22
     invoke-static {v1, v7, v6}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_8
@@ -521,17 +482,14 @@
     :try_start_8
     const-string v1, "gPx1"
 
-    .line 23
     invoke-static {v0, v7, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 24
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_8
 
     if-eqz v9, :cond_11
 
-    .line 25
     :try_start_9
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
     :try_end_9
@@ -544,7 +502,6 @@
 
     move-object v1, v0
 
-    .line 26
     invoke-static {v1, v7, v6}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     goto/16 :goto_f
@@ -563,48 +520,40 @@
     :try_start_a
     const-string v12, "ghp"
 
-    .line 27
     invoke-static {v0, v7, v12}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 28
     invoke-static/range {p0 .. p0}, Lcom/amap/api/col/l3/gb;->t(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_e
 
-    .line 29
     sget-object v10, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     invoke-virtual {v0, v10}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 30
     invoke-static {}, Lcom/amap/api/col/l3/gf;->a()Ljava/lang/String;
 
     move-result-object v10
 
-    .line 31
     invoke-static {}, Lcom/amap/api/col/l3/gf;->b()I
 
     move-result v12
 
-    .line 32
     invoke-virtual {v0, v4}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v4
 
     if-eq v4, v15, :cond_b
 
-    .line 33
     invoke-static {v10}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_9
 
-    .line 34
     invoke-virtual {v10, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -623,7 +572,6 @@
     :goto_a
     if-nez v0, :cond_a
 
-    .line 35
     invoke-static {v2}, Lcom/amap/api/col/l3/gi;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
@@ -633,7 +581,6 @@
 
     goto :goto_c
 
-    .line 36
     :cond_b
     invoke-virtual {v0, v3}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
@@ -641,14 +588,12 @@
 
     if-eq v0, v15, :cond_f
 
-    .line 37
     invoke-static {v10}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_c
 
-    .line 38
     invoke-virtual {v10, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -667,7 +612,6 @@
     :goto_b
     if-nez v0, :cond_d
 
-    .line 39
     invoke-static {v1}, Lcom/amap/api/col/l3/gi;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
@@ -687,7 +631,6 @@
     :goto_d
     if-eqz v9, :cond_10
 
-    .line 40
     :try_start_b
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
     :try_end_b
@@ -700,7 +643,6 @@
 
     move-object v1, v0
 
-    .line 41
     invoke-static {v1, v7, v6}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_10
@@ -711,7 +653,6 @@
     :goto_f
     if-eqz v11, :cond_12
 
-    .line 42
     :try_start_c
     invoke-virtual {v11}, Ljava/lang/String;->length()I
 
@@ -734,12 +675,10 @@
     :goto_10
     if-eqz v16, :cond_14
 
-    .line 43
     new-instance v0, Ljava/net/Proxy;
 
     sget-object v1, Ljava/net/Proxy$Type;->HTTP:Ljava/net/Proxy$Type;
 
-    .line 44
     invoke-static {v11, v10}, Ljava/net/InetSocketAddress;->createUnresolved(Ljava/lang/String;I)Ljava/net/InetSocketAddress;
 
     move-result-object v2
@@ -753,10 +692,8 @@
     :goto_11
     const-string v1, "gp2"
 
-    .line 45
     invoke-static {v0, v7, v1}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 46
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_13
@@ -768,7 +705,6 @@
 
     if-eqz v9, :cond_13
 
-    .line 47
     :try_start_d
     invoke-interface {v9}, Landroid/database/Cursor;->close()V
     :try_end_d
@@ -781,10 +717,8 @@
 
     move-object v2, v0
 
-    .line 48
     invoke-static {v2, v7, v6}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 49
     :cond_13
     :goto_12
     throw v1
@@ -797,7 +731,6 @@
 .method private static c(Landroid/content/Context;)Z
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/amap/api/col/l3/gb;->r(Landroid/content/Context;)I
 
     move-result p0

@@ -1,6 +1,5 @@
 .class public final Landroidx/core/view/accessibility/e$h;
 .super Landroidx/core/view/accessibility/e$a;
-.source "AccessibilityViewCommand.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/core/view/accessibility/e$a;-><init>()V
 
     return-void

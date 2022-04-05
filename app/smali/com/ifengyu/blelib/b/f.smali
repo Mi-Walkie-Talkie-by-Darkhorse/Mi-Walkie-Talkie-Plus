@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/blelib/b/f;
 .super Ljava/lang/Object;
-.source "SeqGenerator.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 .method public static b()Lcom/ifengyu/blelib/b/f;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/blelib/b/f$a;->a()Lcom/ifengyu/blelib/b/f;
 
     move-result-object v0
@@ -43,7 +40,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget v0, p0, Lcom/ifengyu/blelib/b/f;->a:I
 
@@ -53,17 +49,14 @@
 
     iput v0, p0, Lcom/ifengyu/blelib/b/f;->a:I
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/blelib/b/f;->a:I
 
     const v2, 0xffff
 
     if-le v0, v2, :cond_0
 
-    .line 3
     iput v1, p0, Lcom/ifengyu/blelib/b/f;->a:I
 
-    .line 4
     :cond_0
     iget v0, p0, Lcom/ifengyu/blelib/b/f;->a:I
     :try_end_0

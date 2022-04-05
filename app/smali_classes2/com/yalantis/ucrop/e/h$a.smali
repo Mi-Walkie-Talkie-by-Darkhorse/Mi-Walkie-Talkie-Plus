@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/yalantis/ucrop/e/h$a;
 .super Ljava/lang/Object;
-.source "RotationGestureDetector.java"
 
 
 # annotations

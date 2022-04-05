@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h;
 .super Lcom/ifengyu/intercom/ui/adapter/i;
-.source "DolphinCustomFragment.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;Landroid/content/Context;ILjava/util/List;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h;->e:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;
 
     invoke-direct {p0, p2, p3, p4}, Lcom/ifengyu/intercom/ui/adapter/i;-><init>(Landroid/content/Context;ILjava/util/List;)V
@@ -45,7 +43,6 @@
 
     const p3, 0x7f090463
 
-    .line 2
     invoke-virtual {p1, p3}, Lb/d/a/a/c/c;->a(I)Landroid/view/View;
 
     move-result-object p3
@@ -54,14 +51,12 @@
 
     const v0, 0x7f090461
 
-    .line 3
     invoke-virtual {p1, v0}, Lb/d/a/a/c/c;->a(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h;->e:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;->e(Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;)Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
@@ -70,7 +65,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h;->e:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;->e(Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment;)Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinCHSettingActivity;
@@ -89,14 +83,12 @@
 
     const v1, 0x7f060175
 
-    .line 6
     invoke-static {v1}, Lcom/ifengyu/intercom/i/k0;->a(I)I
 
     move-result v2
 
     invoke-virtual {p3, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 7
     invoke-static {v1}, Lcom/ifengyu/intercom/i/k0;->a(I)I
 
     move-result v1
@@ -108,7 +100,6 @@
     :cond_0
     const v1, 0x7f060036
 
-    .line 8
     invoke-static {v1}, Lcom/ifengyu/intercom/i/k0;->a(I)I
 
     move-result v1
@@ -117,14 +108,12 @@
 
     const v1, 0x7f06002b
 
-    .line 9
     invoke-static {v1}, Lcom/ifengyu/intercom/i/k0;->a(I)I
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 10
     :cond_1
     :goto_0
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d()Ljava/lang/String;
@@ -133,7 +122,6 @@
 
     invoke-virtual {p3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 11
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a()I
 
     move-result p3
@@ -144,7 +132,6 @@
 
     invoke-virtual {v0, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 12
     iget-object p3, p1, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h$a;
@@ -153,7 +140,6 @@
 
     invoke-virtual {p3, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 13
     iget-object p3, p1, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h$b;
@@ -168,7 +154,6 @@
 .method protected bridge synthetic a(Lb/d/a/a/c/c;Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinCustomFragment$h;->a(Lb/d/a/a/c/c;Lcom/ifengyu/intercom/ui/setting/UserChannel;I)V

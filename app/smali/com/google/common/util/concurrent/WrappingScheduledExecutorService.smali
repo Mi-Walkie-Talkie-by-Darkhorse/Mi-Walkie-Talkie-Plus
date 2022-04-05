@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;
 .super Lcom/google/common/util/concurrent/WrappingExecutorService;
-.source "WrappingScheduledExecutorService.java"
 
 # interfaces
 .implements Ljava/util/concurrent/ScheduledExecutorService;
@@ -14,10 +13,8 @@
 .method protected constructor <init>(Ljava/util/concurrent/ScheduledExecutorService;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/util/concurrent/WrappingExecutorService;-><init>(Ljava/util/concurrent/ExecutorService;)V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->delegate:Ljava/util/concurrent/ScheduledExecutorService;
 
     return-void
@@ -39,7 +36,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->delegate:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/WrappingExecutorService;->wrapTask(Ljava/lang/Runnable;)Ljava/lang/Runnable;
@@ -69,7 +65,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->delegate:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/WrappingExecutorService;->wrapTask(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Callable;
@@ -97,7 +92,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->delegate:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/WrappingExecutorService;->wrapTask(Ljava/lang/Runnable;)Ljava/lang/Runnable;
@@ -131,7 +125,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/WrappingScheduledExecutorService;->delegate:Ljava/util/concurrent/ScheduledExecutorService;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/WrappingExecutorService;->wrapTask(Ljava/lang/Runnable;)Ljava/lang/Runnable;

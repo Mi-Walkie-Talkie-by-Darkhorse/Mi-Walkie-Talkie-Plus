@@ -1,6 +1,5 @@
 .class public Lb/b/a/a/b$a;
 .super Ljava/lang/Object;
-.source "WeiboAppManager.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,7 +31,6 @@
 .method private a(I)V
     .locals 0
 
-    .line 5
     iput p1, p0, Lb/b/a/a/b$a;->b:I
 
     return-void
@@ -42,7 +39,6 @@
 .method static synthetic a(Lb/b/a/a/b$a;I)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p1}, Lb/b/a/a/b$a;->a(I)V
 
     return-void
@@ -51,7 +47,6 @@
 .method static synthetic a(Lb/b/a/a/b$a;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lb/b/a/a/b$a;->a(Ljava/lang/String;)V
 
     return-void
@@ -60,7 +55,6 @@
 .method private a(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lb/b/a/a/b$a;->a:Ljava/lang/String;
 
     return-void
@@ -71,7 +65,6 @@
 .method public a()Ljava/lang/String;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lb/b/a/a/b$a;->a:Ljava/lang/String;
 
     return-object v0
@@ -80,7 +73,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lb/b/a/a/b$a;->b:I
 
     return v0
@@ -89,7 +81,6 @@
 .method public c()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/b/a/a/b$a;->a:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -115,7 +106,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "WeiboInfo: PackageName = "

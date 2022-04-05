@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$a;
 .super Ljava/lang/Object;
-.source "ConfigFileListFragment.java"
 
 # interfaces
 .implements Landroidx/lifecycle/q;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,14 +45,12 @@
 .method public a(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;->a(Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;)V
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;
 
     const v0, 0x7f110191
@@ -63,7 +59,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;
 
@@ -71,7 +66,6 @@
 
     invoke-static {p1, v0}, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;->b(Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;I)V
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/lite/utils/j;->a()Lcom/ifengyu/intercom/lite/utils/j;
 
     move-result-object p1
@@ -87,7 +81,6 @@
 .method public bridge synthetic onChanged(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$a;->a(Ljava/lang/String;)V

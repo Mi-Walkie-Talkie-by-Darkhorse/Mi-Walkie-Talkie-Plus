@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/SplashActivity$a;
 .super Lcom/ifengyu/intercom/g/d/k;
-.source "SplashActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/SplashActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/SplashActivity$a;->b:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/k;-><init>()V
@@ -37,14 +35,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->c()Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
-    .line 4
     new-instance p2, Ljava/lang/StringBuilder;
 
     invoke-direct {p2}, Ljava/lang/StringBuilder;-><init>()V
@@ -67,7 +63,6 @@
 
     invoke-static {v0, p2}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     :cond_0
     iget-boolean p2, p1, Lcom/ifengyu/intercom/bean/AdModel;->isGoToDownload:Z
 
@@ -91,7 +86,6 @@
 
     if-nez p2, :cond_1
 
-    .line 6
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/SplashActivity$a;->b:Lcom/ifengyu/intercom/ui/SplashActivity;
 
     invoke-virtual {p2}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
@@ -107,7 +101,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/bean/AdModel;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/SplashActivity$a;->a(Lcom/ifengyu/intercom/bean/AdModel;I)V
@@ -118,7 +111,6 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 0
 
-    .line 2
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V

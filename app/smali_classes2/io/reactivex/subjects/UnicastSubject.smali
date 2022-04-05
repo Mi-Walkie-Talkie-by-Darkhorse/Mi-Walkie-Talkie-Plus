@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/subjects/UnicastSubject;
 .super Lio/reactivex/subjects/Subject;
-.source "UnicastSubject.java"
 
 
 # annotations
@@ -79,7 +78,6 @@
 
     const/4 v0, 0x1
 
-    .line 8
     invoke-direct {p0, p1, p2, v0}, Lio/reactivex/subjects/UnicastSubject;-><init>(ILjava/lang/Runnable;Z)V
 
     return-void
@@ -88,10 +86,8 @@
 .method constructor <init>(ILjava/lang/Runnable;Z)V
     .locals 2
 
-    .line 9
     invoke-direct {p0}, Lio/reactivex/subjects/Subject;-><init>()V
 
-    .line 10
     new-instance v0, Lio/reactivex/internal/queue/SpscLinkedArrayQueue;
 
     const-string v1, "capacityHint"
@@ -104,7 +100,6 @@
 
     iput-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->queue:Lio/reactivex/internal/queue/SpscLinkedArrayQueue;
 
-    .line 11
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     const-string v0, "onTerminate"
@@ -117,24 +112,20 @@
 
     iput-object p1, p0, Lio/reactivex/subjects/UnicastSubject;->onTerminate:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 12
     iput-boolean p3, p0, Lio/reactivex/subjects/UnicastSubject;->delayError:Z
 
-    .line 13
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/subjects/UnicastSubject;->downstream:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 14
     new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/subjects/UnicastSubject;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 15
     new-instance p1, Lio/reactivex/subjects/UnicastSubject$UnicastQueueDisposable;
 
     invoke-direct {p1, p0}, Lio/reactivex/subjects/UnicastSubject$UnicastQueueDisposable;-><init>(Lio/reactivex/subjects/UnicastSubject;)V
@@ -147,10 +138,8 @@
 .method constructor <init>(IZ)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/subjects/Subject;-><init>()V
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/queue/SpscLinkedArrayQueue;
 
     const-string v1, "capacityHint"
@@ -163,31 +152,26 @@
 
     iput-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->queue:Lio/reactivex/internal/queue/SpscLinkedArrayQueue;
 
-    .line 3
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/subjects/UnicastSubject;->onTerminate:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 4
     iput-boolean p2, p0, Lio/reactivex/subjects/UnicastSubject;->delayError:Z
 
-    .line 5
     new-instance p1, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/subjects/UnicastSubject;->downstream:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 6
     new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
     iput-object p1, p0, Lio/reactivex/subjects/UnicastSubject;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 7
     new-instance p1, Lio/reactivex/subjects/UnicastSubject$UnicastQueueDisposable;
 
     invoke-direct {p1, p0}, Lio/reactivex/subjects/UnicastSubject$UnicastQueueDisposable;-><init>(Lio/reactivex/subjects/UnicastSubject;)V
@@ -215,7 +199,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/subjects/UnicastSubject;
 
     invoke-static {}, Lio/reactivex/Observable;->bufferSize()I
@@ -247,7 +230,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 2
     new-instance v0, Lio/reactivex/subjects/UnicastSubject;
 
     const/4 v1, 0x1
@@ -277,7 +259,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 3
     new-instance v0, Lio/reactivex/subjects/UnicastSubject;
 
     const/4 v1, 0x1
@@ -307,7 +288,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 4
     new-instance v0, Lio/reactivex/subjects/UnicastSubject;
 
     invoke-direct {v0, p0, p1, p2}, Lio/reactivex/subjects/UnicastSubject;-><init>(ILjava/lang/Runnable;Z)V
@@ -333,7 +313,6 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 5
     new-instance v0, Lio/reactivex/subjects/UnicastSubject;
 
     invoke-static {}, Lio/reactivex/Observable;->bufferSize()I
@@ -350,7 +329,6 @@
 .method doTerminate()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->onTerminate:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -361,7 +339,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/subjects/UnicastSubject;->onTerminate:Ljava/util/concurrent/atomic/AtomicReference;
 
     const/4 v2, 0x0
@@ -372,7 +349,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
     :cond_0
@@ -382,7 +358,6 @@
 .method drain()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->wip:Lio/reactivex/internal/observers/BasicIntQueueDisposable;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
@@ -393,7 +368,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->downstream:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -408,24 +382,20 @@
     :goto_0
     if-eqz v0, :cond_2
 
-    .line 3
     iget-boolean v1, p0, Lio/reactivex/subjects/UnicastSubject;->enableOperatorFusion:Z
 
     if-eqz v1, :cond_1
 
-    .line 4
     invoke-virtual {p0, v0}, Lio/reactivex/subjects/UnicastSubject;->drainFused(Lio/reactivex/Observer;)V
 
     goto :goto_1
 
-    .line 5
     :cond_1
     invoke-virtual {p0, v0}, Lio/reactivex/subjects/UnicastSubject;->drainNormal(Lio/reactivex/Observer;)V
 
     :goto_1
     return-void
 
-    .line 6
     :cond_2
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->wip:Lio/reactivex/internal/observers/BasicIntQueueDisposable;
 
@@ -439,7 +409,6 @@
 
     return-void
 
-    .line 7
     :cond_3
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->downstream:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -462,17 +431,14 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->queue:Lio/reactivex/internal/queue/SpscLinkedArrayQueue;
 
-    .line 2
     iget-boolean v1, p0, Lio/reactivex/subjects/UnicastSubject;->delayError:Z
 
     const/4 v2, 0x1
 
     xor-int/2addr v1, v2
 
-    .line 3
     :cond_0
     iget-boolean v3, p0, Lio/reactivex/subjects/UnicastSubject;->disposed:Z
 
@@ -480,17 +446,14 @@
 
     if-eqz v3, :cond_1
 
-    .line 4
     iget-object p1, p0, Lio/reactivex/subjects/UnicastSubject;->downstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {p1, v4}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 5
     invoke-virtual {v0}, Lio/reactivex/internal/queue/SpscLinkedArrayQueue;->clear()V
 
     return-void
 
-    .line 6
     :cond_1
     iget-boolean v3, p0, Lio/reactivex/subjects/UnicastSubject;->done:Z
 
@@ -498,7 +461,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 7
     invoke-virtual {p0, v0, p1}, Lio/reactivex/subjects/UnicastSubject;->failedFast(Lio/reactivex/internal/fuseable/SimpleQueue;Lio/reactivex/Observer;)Z
 
     move-result v5
@@ -507,18 +469,15 @@
 
     return-void
 
-    .line 8
     :cond_2
     invoke-interface {p1, v4}, Lio/reactivex/Observer;->onNext(Ljava/lang/Object;)V
 
     if-eqz v3, :cond_3
 
-    .line 9
     invoke-virtual {p0, p1}, Lio/reactivex/subjects/UnicastSubject;->errorOrComplete(Lio/reactivex/Observer;)V
 
     return-void
 
-    .line 10
     :cond_3
     iget-object v3, p0, Lio/reactivex/subjects/UnicastSubject;->wip:Lio/reactivex/internal/observers/BasicIntQueueDisposable;
 
@@ -543,10 +502,8 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->queue:Lio/reactivex/internal/queue/SpscLinkedArrayQueue;
 
-    .line 2
     iget-boolean v1, p0, Lio/reactivex/subjects/UnicastSubject;->delayError:Z
 
     const/4 v2, 0x1
@@ -557,30 +514,25 @@
 
     const/4 v4, 0x1
 
-    .line 3
     :cond_0
     :goto_0
     iget-boolean v5, p0, Lio/reactivex/subjects/UnicastSubject;->disposed:Z
 
     if-eqz v5, :cond_1
 
-    .line 4
     iget-object p1, p0, Lio/reactivex/subjects/UnicastSubject;->downstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     const/4 v1, 0x0
 
     invoke-virtual {p1, v1}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 5
     invoke-interface {v0}, Lio/reactivex/internal/fuseable/SimpleQueue;->clear()V
 
     return-void
 
-    .line 6
     :cond_1
     iget-boolean v5, p0, Lio/reactivex/subjects/UnicastSubject;->done:Z
 
-    .line 7
     iget-object v6, p0, Lio/reactivex/subjects/UnicastSubject;->queue:Lio/reactivex/internal/queue/SpscLinkedArrayQueue;
 
     invoke-virtual {v6}, Lio/reactivex/internal/queue/SpscLinkedArrayQueue;->poll()Ljava/lang/Object;
@@ -605,7 +557,6 @@
 
     if-eqz v3, :cond_4
 
-    .line 8
     invoke-virtual {p0, v0, p1}, Lio/reactivex/subjects/UnicastSubject;->failedFast(Lio/reactivex/internal/fuseable/SimpleQueue;Lio/reactivex/Observer;)Z
 
     move-result v3
@@ -620,7 +571,6 @@
     :cond_4
     if-eqz v8, :cond_5
 
-    .line 9
     invoke-virtual {p0, p1}, Lio/reactivex/subjects/UnicastSubject;->errorOrComplete(Lio/reactivex/Observer;)V
 
     return-void
@@ -628,7 +578,6 @@
     :cond_5
     if-eqz v8, :cond_6
 
-    .line 10
     iget-object v5, p0, Lio/reactivex/subjects/UnicastSubject;->wip:Lio/reactivex/internal/observers/BasicIntQueueDisposable;
 
     neg-int v4, v4
@@ -641,7 +590,6 @@
 
     return-void
 
-    .line 11
     :cond_6
     invoke-interface {p1, v6}, Lio/reactivex/Observer;->onNext(Ljava/lang/Object;)V
 
@@ -658,24 +606,20 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->downstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->error:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {p1, v0}, Lio/reactivex/Observer;->onError(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-interface {p1}, Lio/reactivex/Observer;->onComplete()V
 
@@ -695,22 +639,18 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->error:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/subjects/UnicastSubject;->downstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 3
     invoke-interface {p1}, Lio/reactivex/internal/fuseable/SimpleQueue;->clear()V
 
-    .line 4
     invoke-interface {p2, v0}, Lio/reactivex/Observer;->onError(Ljava/lang/Throwable;)V
 
     const/4 p1, 0x1
@@ -728,12 +668,10 @@
     .annotation build Lio/reactivex/annotations/Nullable;
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/subjects/UnicastSubject;->done:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->error:Ljava/lang/Throwable;
 
     return-object v0
@@ -747,7 +685,6 @@
 .method public hasComplete()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/subjects/UnicastSubject;->done:Z
 
     if-eqz v0, :cond_0
@@ -770,7 +707,6 @@
 .method public hasObservers()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->downstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -793,7 +729,6 @@
 .method public hasThrowable()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/subjects/UnicastSubject;->done:Z
 
     if-eqz v0, :cond_0
@@ -816,7 +751,6 @@
 .method public onComplete()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/subjects/UnicastSubject;->done:Z
 
     if-nez v0, :cond_1
@@ -830,13 +764,10 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lio/reactivex/subjects/UnicastSubject;->done:Z
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/subjects/UnicastSubject;->doTerminate()V
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/subjects/UnicastSubject;->drain()V
 
     :cond_1
@@ -849,10 +780,8 @@
 
     const-string v0, "onError called with null. Null values are generally not allowed in 2.x operators and sources."
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     iget-boolean v0, p0, Lio/reactivex/subjects/UnicastSubject;->done:Z
 
     if-nez v0, :cond_1
@@ -863,24 +792,19 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iput-object p1, p0, Lio/reactivex/subjects/UnicastSubject;->error:Ljava/lang/Throwable;
 
     const/4 p1, 0x1
 
-    .line 4
     iput-boolean p1, p0, Lio/reactivex/subjects/UnicastSubject;->done:Z
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/subjects/UnicastSubject;->doTerminate()V
 
-    .line 6
     invoke-virtual {p0}, Lio/reactivex/subjects/UnicastSubject;->drain()V
 
     return-void
 
-    .line 7
     :cond_1
     :goto_0
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
@@ -898,10 +822,8 @@
 
     const-string v0, "onNext called with null. Null values are generally not allowed in 2.x operators and sources."
 
-    .line 1
     invoke-static {p1, v0}, Lio/reactivex/internal/functions/ObjectHelper;->requireNonNull(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 2
     iget-boolean v0, p0, Lio/reactivex/subjects/UnicastSubject;->done:Z
 
     if-nez v0, :cond_1
@@ -912,13 +834,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->queue:Lio/reactivex/internal/queue/SpscLinkedArrayQueue;
 
     invoke-virtual {v0, p1}, Lio/reactivex/internal/queue/SpscLinkedArrayQueue;->offer(Ljava/lang/Object;)Z
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/subjects/UnicastSubject;->drain()V
 
     :cond_1
@@ -929,7 +849,6 @@
 .method public onSubscribe(Lio/reactivex/disposables/Disposable;)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/subjects/UnicastSubject;->done:Z
 
     if-nez v0, :cond_0
@@ -938,7 +857,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     :cond_0
     invoke-interface {p1}, Lio/reactivex/disposables/Disposable;->dispose()V
 
@@ -956,7 +874,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->once:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -977,22 +894,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->wip:Lio/reactivex/internal/observers/BasicIntQueueDisposable;
 
     invoke-interface {p1, v0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/subjects/UnicastSubject;->downstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->lazySet(Ljava/lang/Object;)V
 
-    .line 4
     iget-boolean p1, p0, Lio/reactivex/subjects/UnicastSubject;->disposed:Z
 
     if-eqz p1, :cond_0
 
-    .line 5
     iget-object p1, p0, Lio/reactivex/subjects/UnicastSubject;->downstream:Ljava/util/concurrent/atomic/AtomicReference;
 
     const/4 v0, 0x0
@@ -1001,13 +914,11 @@
 
     return-void
 
-    .line 6
     :cond_0
     invoke-virtual {p0}, Lio/reactivex/subjects/UnicastSubject;->drain()V
 
     goto :goto_0
 
-    .line 7
     :cond_1
     new-instance v0, Ljava/lang/IllegalStateException;
 

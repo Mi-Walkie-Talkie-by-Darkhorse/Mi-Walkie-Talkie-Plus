@@ -1,6 +1,5 @@
 .class public abstract Landroidx/core/app/NotificationCompat$c;
 .super Ljava/lang/Object;
-.source "NotificationCompat.java"
 
 
 # annotations

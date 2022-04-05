@@ -1,6 +1,5 @@
 .class Lcom/google/common/reflect/TypeToken$InterfaceSet$1;
 .super Ljava/lang/Object;
-.source "TypeToken.java"
 
 # interfaces
 .implements Lcom/google/common/base/Predicate;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/google/common/reflect/TypeToken$InterfaceSet;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/reflect/TypeToken$InterfaceSet$1;->this$1:Lcom/google/common/reflect/TypeToken$InterfaceSet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -54,7 +52,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Class;->isInterface()Z
 
     move-result p1
@@ -65,7 +62,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Class;
 
     invoke-virtual {p0, p1}, Lcom/google/common/reflect/TypeToken$InterfaceSet$1;->apply(Ljava/lang/Class;)Z

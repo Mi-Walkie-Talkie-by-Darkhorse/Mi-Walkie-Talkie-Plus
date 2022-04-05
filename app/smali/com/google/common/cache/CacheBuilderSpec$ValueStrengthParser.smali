@@ -1,6 +1,5 @@
 .class Lcom/google/common/cache/CacheBuilderSpec$ValueStrengthParser;
 .super Ljava/lang/Object;
-.source "CacheBuilderSpec.java"
 
 # interfaces
 .implements Lcom/google/common/cache/CacheBuilderSpec$ValueParser;
@@ -25,10 +24,8 @@
 .method public constructor <init>(Lcom/google/common/cache/LocalCache$Strength;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/cache/CacheBuilderSpec$ValueStrengthParser;->strength:Lcom/google/common/cache/LocalCache$Strength;
 
     return-void
@@ -63,10 +60,8 @@
 
     const-string v3, "key %s does not take values"
 
-    .line 1
     invoke-static {p3, v3, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
     iget-object p3, p1, Lcom/google/common/cache/CacheBuilderSpec;->valueStrength:Lcom/google/common/cache/LocalCache$Strength;
 
     if-nez p3, :cond_1
@@ -93,7 +88,6 @@
 
     invoke-static {p3, p2, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     iget-object p2, p0, Lcom/google/common/cache/CacheBuilderSpec$ValueStrengthParser;->strength:Lcom/google/common/cache/LocalCache$Strength;
 
     iput-object p2, p1, Lcom/google/common/cache/CacheBuilderSpec;->valueStrength:Lcom/google/common/cache/LocalCache$Strength;

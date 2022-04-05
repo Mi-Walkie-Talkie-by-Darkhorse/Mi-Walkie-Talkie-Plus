@@ -1,6 +1,5 @@
 .class synthetic Lcom/nostra13/universalimageloader/core/download/BaseImageDownloader$1;
 .super Ljava/lang/Object;
-.source "BaseImageDownloader.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;->values()[Lcom/nostra13/universalimageloader/core/download/ImageDownloader$Scheme;
 
     move-result-object v0

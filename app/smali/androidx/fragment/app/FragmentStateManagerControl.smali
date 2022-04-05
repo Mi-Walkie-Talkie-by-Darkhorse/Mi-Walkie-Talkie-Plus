@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/fragment/app/FragmentStateManagerControl;
 .super Ljava/lang/Object;
-.source "FragmentStateManagerControl.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

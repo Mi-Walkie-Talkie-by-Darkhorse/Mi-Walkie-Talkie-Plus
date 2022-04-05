@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;
 .super Ljava/lang/Object;
-.source "PutObjectResult.java"
 
 
 # instance fields
@@ -23,7 +22,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +32,6 @@
 .method public getAbsolutePresignedUri()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -59,7 +56,6 @@
 .method public getAccessKeyId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->accessKeyId:Ljava/lang/String;
 
     return-object v0
@@ -68,7 +64,6 @@
 .method public getBucketName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->bucketName:Ljava/lang/String;
 
     return-object v0
@@ -77,7 +72,6 @@
 .method public getCdnPresignedUri()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -102,7 +96,6 @@
 .method public getExpires()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->expires:J
 
     return-wide v0
@@ -111,7 +104,6 @@
 .method public getObjectName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->objectName:Ljava/lang/String;
 
     return-object v0
@@ -120,7 +112,6 @@
 .method public getRelativePresignedUri()Ljava/lang/String;
     .locals 5
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -191,7 +182,6 @@
 .method public getSignature()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->signature:Ljava/lang/String;
 
     return-object v0
@@ -200,7 +190,6 @@
 .method public setAccessKeyId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->accessKeyId:Ljava/lang/String;
 
     return-void
@@ -209,7 +198,6 @@
 .method public setBucketName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->bucketName:Ljava/lang/String;
 
     return-void
@@ -218,7 +206,6 @@
 .method public setCdnServiceBaseUri(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->cdnServiceBaseUri:Ljava/lang/String;
 
     return-void
@@ -227,7 +214,6 @@
 .method public setExpires(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->expires:J
 
     return-void
@@ -236,7 +222,6 @@
 .method public setFdsServiceBaseUri(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->fdsServiceBaseUri:Ljava/lang/String;
 
     return-void
@@ -245,7 +230,6 @@
 .method public setObjectName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->objectName:Ljava/lang/String;
 
     return-void
@@ -254,7 +238,6 @@
 .method public setSignature(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/PutObjectResult;->signature:Ljava/lang/String;
 
     return-void

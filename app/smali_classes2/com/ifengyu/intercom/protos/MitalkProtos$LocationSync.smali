@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 .super Lcom/google/protobuf/GeneratedMessage;
-.source "MitalkProtos.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSyncOrBuilder;
@@ -83,14 +82,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$a;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     const/4 v1, 0x1
@@ -99,7 +96,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->defaultInstance:Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
-    .line 3
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->initFields()V
 
     return-void
@@ -115,10 +111,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessage$Builder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object p1
@@ -131,7 +125,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessage$Builder;Lcom/ifengyu/intercom/protos/MitalkProtos$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
     return-void
@@ -140,7 +133,6 @@
 .method private constructor <init>(Z)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage;-><init>()V
 
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
@@ -155,7 +147,6 @@
 .method static synthetic access$10600()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/google/protobuf/GeneratedMessage;->alwaysUseFieldBuilders:Z
 
     return v0
@@ -164,7 +155,6 @@
 .method static synthetic access$10802(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->version_:I
 
     return p1
@@ -173,7 +163,6 @@
 .method static synthetic access$10902(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;Lcom/ifengyu/intercom/protos/MitalkProtos$CTLSYNC;)Lcom/ifengyu/intercom/protos/MitalkProtos$CTLSYNC;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->ctl_:Lcom/ifengyu/intercom/protos/MitalkProtos$CTLSYNC;
 
     return-object p1
@@ -182,7 +171,6 @@
 .method static synthetic access$11002(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->userId_:I
 
     return p1
@@ -191,7 +179,6 @@
 .method static synthetic access$11102(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/ByteString;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->userName_:Lcom/google/protobuf/ByteString;
 
     return-object p1
@@ -200,7 +187,6 @@
 .method static synthetic access$11202(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->longitude_:I
 
     return p1
@@ -209,7 +195,6 @@
 .method static synthetic access$11302(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->latitude_:I
 
     return p1
@@ -218,7 +203,6 @@
 .method static synthetic access$11402(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->altitude_:I
 
     return p1
@@ -227,7 +211,6 @@
 .method static synthetic access$11502(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->time_:I
 
     return p1
@@ -236,7 +219,6 @@
 .method static synthetic access$11602(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->freq_:I
 
     return p1
@@ -245,7 +227,6 @@
 .method static synthetic access$11702(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->bitField0_:I
 
     return p1
@@ -254,7 +235,6 @@
 .method public static getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->defaultInstance:Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     return-object v0
@@ -263,7 +243,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos;->c()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -276,35 +255,26 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->version_:I
 
-    .line 2
     sget-object v1, Lcom/ifengyu/intercom/protos/MitalkProtos$CTLSYNC;->DISABLE:Lcom/ifengyu/intercom/protos/MitalkProtos$CTLSYNC;
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->ctl_:Lcom/ifengyu/intercom/protos/MitalkProtos$CTLSYNC;
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->userId_:I
 
-    .line 4
     sget-object v1, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->userName_:Lcom/google/protobuf/ByteString;
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->longitude_:I
 
-    .line 6
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->latitude_:I
 
-    .line 7
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->altitude_:I
 
-    .line 8
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->time_:I
 
-    .line 9
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->freq_:I
 
     return-void
@@ -313,7 +283,6 @@
 .method public static newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;->access$10400()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
 
     move-result-object v0
@@ -324,7 +293,6 @@
 .method public static newBuilder(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;)Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
 
     move-result-object v0
@@ -346,7 +314,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -366,7 +333,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -386,7 +352,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
@@ -406,7 +371,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -426,7 +390,6 @@
         }
     .end annotation
 
-    .line 7
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;)Ljava/lang/Object;
@@ -446,7 +409,6 @@
         }
     .end annotation
 
-    .line 8
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -466,7 +428,6 @@
         }
     .end annotation
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -486,7 +447,6 @@
         }
     .end annotation
 
-    .line 6
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -506,7 +466,6 @@
         }
     .end annotation
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
@@ -526,7 +485,6 @@
         }
     .end annotation
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -543,7 +501,6 @@
 .method public getAltitude()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->altitude_:I
 
     return v0
@@ -552,7 +509,6 @@
 .method public getCtl()Lcom/ifengyu/intercom/protos/MitalkProtos$CTLSYNC;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->ctl_:Lcom/ifengyu/intercom/protos/MitalkProtos$CTLSYNC;
 
     return-object v0
@@ -561,7 +517,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     move-result-object v0
@@ -572,7 +527,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     move-result-object v0
@@ -583,7 +537,6 @@
 .method public getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
     .locals 1
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->defaultInstance:Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     return-object v0
@@ -592,7 +545,6 @@
 .method public getFreq()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->freq_:I
 
     return v0
@@ -601,7 +553,6 @@
 .method public getLatitude()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->latitude_:I
 
     return v0
@@ -610,7 +561,6 @@
 .method public getLongitude()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->longitude_:I
 
     return v0
@@ -627,7 +577,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -636,7 +585,6 @@
 .method public getTime()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->time_:I
 
     return v0
@@ -645,7 +593,6 @@
 .method public final getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
 
     return-object v0
@@ -654,7 +601,6 @@
 .method public getUserId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->userId_:I
 
     return v0
@@ -663,7 +609,6 @@
 .method public getUserName()Lcom/google/protobuf/ByteString;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->userName_:Lcom/google/protobuf/ByteString;
 
     return-object v0
@@ -672,7 +617,6 @@
 .method public getVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->version_:I
 
     return v0
@@ -681,7 +625,6 @@
 .method public hasAltitude()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->bitField0_:I
 
     const/16 v1, 0x40
@@ -704,7 +647,6 @@
 .method public hasCtl()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->bitField0_:I
 
     const/4 v1, 0x2
@@ -727,7 +669,6 @@
 .method public hasFreq()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->bitField0_:I
 
     const/16 v1, 0x100
@@ -750,7 +691,6 @@
 .method public hasLatitude()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->bitField0_:I
 
     const/16 v1, 0x20
@@ -773,7 +713,6 @@
 .method public hasLongitude()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->bitField0_:I
 
     const/16 v1, 0x10
@@ -796,7 +735,6 @@
 .method public hasTime()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->bitField0_:I
 
     const/16 v1, 0x80
@@ -819,7 +757,6 @@
 .method public hasUserId()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->bitField0_:I
 
     const/4 v1, 0x4
@@ -842,7 +779,6 @@
 .method public hasUserName()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->bitField0_:I
 
     const/16 v1, 0x8
@@ -865,7 +801,6 @@
 .method public hasVersion()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->bitField0_:I
 
     const/4 v1, 0x1
@@ -886,7 +821,6 @@
 .method protected internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos;->d()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -895,7 +829,6 @@
 
     const-class v2, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -906,7 +839,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->newBuilderForType()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
 
     move-result-object v0
@@ -917,7 +849,6 @@
 .method protected bridge synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/google/protobuf/Message$Builder;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
 
     move-result-object p1
@@ -928,7 +859,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->newBuilderForType()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
 
     move-result-object v0
@@ -939,7 +869,6 @@
 .method public newBuilderForType()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
     .locals 1
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
 
     move-result-object v0
@@ -950,7 +879,6 @@
 .method protected newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
     .locals 2
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
 
     const/4 v1, 0x0
@@ -963,7 +891,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->toBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
 
     move-result-object v0
@@ -974,7 +901,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->toBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
 
     move-result-object v0
@@ -985,7 +911,6 @@
 .method public toBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
     .locals 1
 
-    .line 3
     invoke-static {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->newBuilder(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;)Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync$Builder;
 
     move-result-object v0

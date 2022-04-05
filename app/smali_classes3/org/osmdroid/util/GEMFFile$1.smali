@@ -1,6 +1,5 @@
 .class synthetic Lorg/osmdroid/util/GEMFFile$1;
 .super Ljava/lang/Object;
-.source "GEMFFile.java"
 
 
 # annotations

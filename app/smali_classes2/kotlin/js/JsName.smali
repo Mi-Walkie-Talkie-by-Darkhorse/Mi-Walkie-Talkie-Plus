@@ -1,6 +1,5 @@
 .class interface abstract annotation Lkotlin/js/JsName;
 .super Ljava/lang/Object;
-.source "JsAnnotationsH.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

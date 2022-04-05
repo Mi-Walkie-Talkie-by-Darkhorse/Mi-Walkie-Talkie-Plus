@@ -1,6 +1,5 @@
 .class final enum Lcom/google/protobuf/WireFormat$FieldType$2;
 .super Lcom/google/protobuf/WireFormat$FieldType;
-.source "WireFormat.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 
     move v4, p4
 
-    .line 1
     invoke-direct/range {v0 .. v5}, Lcom/google/protobuf/WireFormat$FieldType;-><init>(Ljava/lang/String;ILcom/google/protobuf/WireFormat$JavaType;ILcom/google/protobuf/WireFormat$1;)V
 
     return-void

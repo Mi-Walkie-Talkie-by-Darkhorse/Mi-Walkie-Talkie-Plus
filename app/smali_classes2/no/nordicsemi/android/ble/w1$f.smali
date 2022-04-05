@@ -1,6 +1,5 @@
 .class interface abstract Lno/nordicsemi/android/ble/w1$f;
 .super Ljava/lang/Object;
-.source "BleManagerHandler.java"
 
 
 # annotations

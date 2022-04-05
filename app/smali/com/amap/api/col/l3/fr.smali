@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/fr;
 .super Ljava/lang/Object;
-.source "CoreUtil.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 
     const-string v1, "com.amap.api.trace.core"
 
-    .line 1
     filled-new-array {v0, v1}, [Ljava/lang/String;
 
     move-result-object v0
@@ -40,7 +38,6 @@
 
     if-eqz p0, :cond_3
 
-    .line 31
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -52,7 +49,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 32
     :goto_0
     invoke-interface {p0}, Ljava/util/List;->size()I
 
@@ -62,7 +58,6 @@
 
     if-ge v0, v2, :cond_2
 
-    .line 33
     invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -71,7 +66,6 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 34
     invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -87,7 +81,6 @@
     :cond_1
     int-to-float v1, v1
 
-    .line 35
     invoke-static {v2, v3}, Lcom/amap/api/maps/AMapUtils;->calculateLineDistance(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)F
 
     move-result v2
@@ -119,13 +112,11 @@
 
     const-string v1, "status"
 
-    .line 1
     :try_start_0
     new-instance v2, Lorg/json/JSONObject;
 
     invoke-direct {v2, p0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result p0
@@ -140,20 +131,17 @@
 
     goto/16 :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {v2, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 4
     invoke-virtual {v2, v0}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v0
 
     const-string v1, "1"
 
-    .line 5
     invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -165,7 +153,6 @@
     :cond_1
     const-string v1, "0"
 
-    .line 6
     invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -180,19 +167,16 @@
 
     const-string p0, "info"
 
-    .line 7
     invoke-virtual {v2, p0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 8
     new-instance v0, Lcom/amap/api/col/l3/fo;
 
     invoke-direct {v0, p0}, Lcom/amap/api/col/l3/fo;-><init>(Ljava/lang/String;)V
 
     throw v0
 
-    .line 9
     :pswitch_0
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -202,7 +186,6 @@
 
     throw p0
 
-    .line 10
     :pswitch_1
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -212,7 +195,6 @@
 
     throw p0
 
-    .line 11
     :pswitch_2
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -222,7 +204,6 @@
 
     throw p0
 
-    .line 12
     :pswitch_3
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -232,7 +213,6 @@
 
     throw p0
 
-    .line 13
     :pswitch_4
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -242,7 +222,6 @@
 
     throw p0
 
-    .line 14
     :pswitch_5
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -252,7 +231,6 @@
 
     throw p0
 
-    .line 15
     :pswitch_6
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -262,7 +240,6 @@
 
     throw p0
 
-    .line 16
     :pswitch_7
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -272,7 +249,6 @@
 
     throw p0
 
-    .line 17
     :pswitch_8
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -282,7 +258,6 @@
 
     throw p0
 
-    .line 18
     :pswitch_9
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -292,7 +267,6 @@
 
     throw p0
 
-    .line 19
     :pswitch_a
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -302,7 +276,6 @@
 
     throw p0
 
-    .line 20
     :pswitch_b
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -312,7 +285,6 @@
 
     throw p0
 
-    .line 21
     :pswitch_c
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -322,7 +294,6 @@
 
     throw p0
 
-    .line 22
     :pswitch_d
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -332,7 +303,6 @@
 
     throw p0
 
-    .line 23
     :pswitch_e
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -342,7 +312,6 @@
 
     throw p0
 
-    .line 24
     :pswitch_f
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -352,7 +321,6 @@
 
     throw p0
 
-    .line 25
     :pswitch_10
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -362,7 +330,6 @@
 
     throw p0
 
-    .line 26
     :pswitch_11
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -372,7 +339,6 @@
 
     throw p0
 
-    .line 27
     :pswitch_12
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -382,7 +348,6 @@
 
     throw p0
 
-    .line 28
     :pswitch_13
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -392,7 +357,6 @@
 
     throw p0
 
-    .line 29
     :pswitch_14
     new-instance p0, Lcom/amap/api/col/l3/fo;
 
@@ -408,7 +372,6 @@
     :goto_0
     return-void
 
-    .line 30
     :catch_0
     new-instance p0, Lcom/amap/api/col/l3/fo;
 

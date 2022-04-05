@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/Resources$UrlByteSource;
 .super Lcom/google/common/io/ByteSource;
-.source "Resources.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method private constructor <init>(Ljava/net/URL;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/io/ByteSource;-><init>()V
 
-    .line 3
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -40,7 +37,6 @@
 .method synthetic constructor <init>(Ljava/net/URL;Lcom/google/common/io/Resources$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/io/Resources$UrlByteSource;-><init>(Ljava/net/URL;)V
 
     return-void
@@ -56,7 +52,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/Resources$UrlByteSource;->url:Ljava/net/URL;
 
     invoke-virtual {v0}, Ljava/net/URL;->openStream()Ljava/io/InputStream;
@@ -69,7 +64,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/Resources$UrlByteSource;->url:Ljava/net/URL;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;

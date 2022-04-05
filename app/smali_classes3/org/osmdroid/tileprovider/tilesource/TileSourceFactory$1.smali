@@ -1,6 +1,5 @@
 .class final Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory$1;
 .super Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
-.source "TileSourceFactory.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct/range {p0 .. p7}, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;-><init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -29,7 +27,6 @@
 .method public getTileURLString(Lorg/osmdroid/tileprovider/MapTile;)Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

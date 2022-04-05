@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/datepicker/SmoothCalendarLayoutManager$1;
 .super Landroidx/recyclerview/widget/h;
-.source "SmoothCalendarLayoutManager.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/android/material/datepicker/SmoothCalendarLayoutManager;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/datepicker/SmoothCalendarLayoutManager$1;->this$0:Lcom/google/android/material/datepicker/SmoothCalendarLayoutManager;
 
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/h;-><init>(Landroid/content/Context;)V
@@ -35,7 +33,6 @@
 .method protected calculateSpeedPerPixel(Landroid/util/DisplayMetrics;)F
     .locals 1
 
-    .line 1
     iget p1, p1, Landroid/util/DisplayMetrics;->densityDpi:I
 
     int-to-float p1, p1

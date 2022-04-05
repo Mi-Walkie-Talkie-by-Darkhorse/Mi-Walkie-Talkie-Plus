@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/Futures$NonCancellationPropagatingFuture;
 .super Lcom/google/common/util/concurrent/AbstractFuture;
-.source "Futures.java"
 
 
 # annotations
@@ -35,13 +34,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractFuture;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     new-instance v0, Lcom/google/common/util/concurrent/Futures$NonCancellationPropagatingFuture$1;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/util/concurrent/Futures$NonCancellationPropagatingFuture$1;-><init>(Lcom/google/common/util/concurrent/Futures$NonCancellationPropagatingFuture;Lcom/google/common/util/concurrent/ListenableFuture;)V

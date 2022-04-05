@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lretrofit2/http/HeaderMap;
 .super Ljava/lang/Object;
-.source "HeaderMap.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

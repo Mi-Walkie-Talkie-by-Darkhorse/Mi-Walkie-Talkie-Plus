@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareFABBehaviorDefault$a;
 .super Lcom/google/android/material/floatingactionbutton/FloatingActionButton$OnVisibilityChangedListener;
-.source "ScrollAwareFABBehaviorDefault.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareFABBehaviorDefault;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$OnVisibilityChangedListener;-><init>()V
 
     return-void
@@ -29,12 +27,10 @@
 .method public onHidden(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton$OnVisibilityChangedListener;->onHidden(Lcom/google/android/material/floatingactionbutton/FloatingActionButton;)V
 
     const/4 v0, 0x4
 
-    .line 2
     invoke-virtual {p1, v0}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->setVisibility(I)V
 
     return-void

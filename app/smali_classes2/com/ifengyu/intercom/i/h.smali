@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/h;
 .super Ljava/lang/Object;
-.source "AES128.java"
 
 
 # static fields
@@ -19,26 +18,22 @@
 
     new-array v1, v0, [B
 
-    .line 1
     fill-array-data v1, :array_0
 
     sput-object v1, Lcom/ifengyu/intercom/i/h;->a:[B
 
     new-array v0, v0, [B
 
-    .line 2
     fill-array-data v0, :array_1
 
     sput-object v0, Lcom/ifengyu/intercom/i/h;->b:[B
 
     const-string v0, "WeChatBluetoothDevice"
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/String;->getBytes()[B
 
     const-string v0, "WeChatDev"
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/String;->getBytes()[B
 
     return-void
@@ -89,7 +84,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -98,19 +92,16 @@
 .method public static a()Lcom/ifengyu/intercom/i/h;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/i/h;->c:Lcom/ifengyu/intercom/i/h;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/i/h;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/i/h;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/i/h;->c:Lcom/ifengyu/intercom/i/h;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/i/h;->c:Lcom/ifengyu/intercom/i/h;
 
@@ -122,15 +113,12 @@
 .method public a([BII)J
     .locals 1
 
-    .line 4
     new-instance v0, Ljava/util/zip/CRC32;
 
     invoke-direct {v0}, Ljava/util/zip/CRC32;-><init>()V
 
-    .line 5
     invoke-virtual {v0, p1, p2, p3}, Ljava/util/zip/CRC32;->update([BII)V
 
-    .line 6
     invoke-virtual {v0}, Ljava/util/zip/CRC32;->getValue()J
 
     move-result-wide p1

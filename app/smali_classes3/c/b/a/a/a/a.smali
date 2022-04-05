@@ -1,6 +1,5 @@
 .class public interface abstract Lc/b/a/a/a/a;
 .super Ljava/lang/Object;
-.source "IOpenID.java"
 
 # interfaces
 .implements Landroid/os/IInterface;

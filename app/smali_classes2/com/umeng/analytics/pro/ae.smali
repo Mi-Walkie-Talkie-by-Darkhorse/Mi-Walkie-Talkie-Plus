@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/ae;
 .super Ljava/lang/Object;
-.source "SamsungDeviceIdSupplier.java"
 
 # interfaces
 .implements Lcom/umeng/analytics/pro/y;
@@ -26,15 +25,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, ""
 
-    .line 2
     iput-object v0, p0, Lcom/umeng/analytics/pro/ae;->d:Ljava/lang/String;
 
-    .line 3
     new-instance v0, Lcom/umeng/analytics/pro/ae$1;
 
     invoke-direct {v0, p0}, Lcom/umeng/analytics/pro/ae$1;-><init>(Lcom/umeng/analytics/pro/ae;)V
@@ -47,7 +43,6 @@
 .method static synthetic a(Lcom/umeng/analytics/pro/ae;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/analytics/pro/ae;->d:Ljava/lang/String;
 
     return-object p1
@@ -56,7 +51,6 @@
 .method static synthetic a(Lcom/umeng/analytics/pro/ae;)Ljava/util/concurrent/CountDownLatch;
     .locals 0
 
-    .line 2
     iget-object p0, p0, Lcom/umeng/analytics/pro/ae;->e:Ljava/util/concurrent/CountDownLatch;
 
     return-object p0
@@ -65,7 +59,6 @@
 .method private b(Landroid/content/Context;)V
     .locals 3
 
-    .line 1
     :try_start_0
     new-instance v0, Landroid/content/Intent;
 
@@ -75,10 +68,8 @@
 
     const-string v2, "com.samsung.android.deviceidservice.DeviceIdService"
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 3
     iget-object v1, p0, Lcom/umeng/analytics/pro/ae;->f:Landroid/content/ServiceConnection;
 
     const/4 v2, 0x1
@@ -91,7 +82,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
@@ -112,7 +102,6 @@
     :catch_1
     move-exception p1
 
-    .line 5
     :goto_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -136,7 +125,6 @@
 
     invoke-static {v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     iget-object p1, p0, Lcom/umeng/analytics/pro/ae;->e:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
@@ -148,7 +136,6 @@
 .method private c(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/ae;->f:Landroid/content/ServiceConnection;
 
@@ -167,7 +154,6 @@
     :catch_1
     move-exception p1
 
-    .line 2
     :goto_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -202,7 +188,6 @@
 
     const-string v0, "DeviceIdService"
 
-    .line 3
     new-instance v1, Ljava/util/concurrent/CountDownLatch;
 
     const/4 v2, 0x1
@@ -211,11 +196,9 @@
 
     iput-object v1, p0, Lcom/umeng/analytics/pro/ae;->e:Ljava/util/concurrent/CountDownLatch;
 
-    .line 4
     :try_start_0
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/ae;->b(Landroid/content/Context;)V
 
-    .line 5
     iget-object v1, p0, Lcom/umeng/analytics/pro/ae;->e:Ljava/util/concurrent/CountDownLatch;
 
     const-wide/16 v2, 0x1f4
@@ -230,17 +213,14 @@
 
     const-string v1, "getOAID time-out"
 
-    .line 6
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/ae;->d:Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/ae;->c(Landroid/content/Context;)V
 
     return-object v0
@@ -253,7 +233,6 @@
     :catch_0
     move-exception v1
 
-    .line 9
     :try_start_1
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -277,7 +256,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 10
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/ae;->c(Landroid/content/Context;)V
 
     const/4 p1, 0x0

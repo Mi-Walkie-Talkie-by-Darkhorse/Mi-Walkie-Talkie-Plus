@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/maps/LocationSource;
 .super Ljava/lang/Object;
-.source "LocationSource.java"
 
 
 # annotations

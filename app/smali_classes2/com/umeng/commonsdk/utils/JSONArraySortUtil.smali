@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/utils/JSONArraySortUtil;
 .super Ljava/lang/Object;
-.source "JSONArraySortUtil.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -25,7 +24,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lorg/json/JSONObject;
 
     check-cast p2, Lorg/json/JSONObject;
@@ -51,7 +48,6 @@
 .method public compare(Lorg/json/JSONObject;Lorg/json/JSONObject;)I
     .locals 2
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/umeng/commonsdk/utils/JSONArraySortUtil;->mCompareKey:Ljava/lang/String;
 
@@ -59,7 +55,6 @@
 
     move-result-wide v0
 
-    .line 3
     iget-object p1, p0, Lcom/umeng/commonsdk/utils/JSONArraySortUtil;->mCompareKey:Ljava/lang/String;
 
     invoke-virtual {p2, p1}, Lorg/json/JSONObject;->getLong(Ljava/lang/String;)J
@@ -77,7 +72,6 @@
     :catch_0
     move-exception p1
 
-    .line 4
     invoke-virtual {p1}, Lorg/json/JSONException;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -88,7 +82,6 @@
 .method public setCompareKey(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/utils/JSONArraySortUtil;->mCompareKey:Ljava/lang/String;
 
     return-void

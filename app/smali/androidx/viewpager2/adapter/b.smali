@@ -1,6 +1,5 @@
 .class public final Landroidx/viewpager2/adapter/b;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "FragmentViewHolder.java"
 
 
 # virtual methods

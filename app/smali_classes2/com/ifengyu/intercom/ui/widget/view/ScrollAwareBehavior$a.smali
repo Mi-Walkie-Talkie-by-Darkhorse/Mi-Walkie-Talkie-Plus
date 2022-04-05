@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior$a;
 .super Ljava/lang/Object;
-.source "ScrollAwareBehavior.java"
 
 # interfaces
 .implements Landroidx/core/view/b0;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior$a;->a:Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior$a;->a:Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior;
 
     const/4 v0, 0x0
@@ -51,7 +48,6 @@
 .method public b(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior$a;->a:Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior;
 
     const/4 v1, 0x0
@@ -60,7 +56,6 @@
 
     const/16 v0, 0x8
 
-    .line 2
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     return-void
@@ -69,7 +64,6 @@
 .method public c(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior$a;->a:Lcom/ifengyu/intercom/ui/widget/view/ScrollAwareBehavior;
 
     const/4 v0, 0x1

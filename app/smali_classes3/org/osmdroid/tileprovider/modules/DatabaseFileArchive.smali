@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/modules/DatabaseFileArchive;
 .super Ljava/lang/Object;
-.source "DatabaseFileArchive.java"
 
 # interfaces
 .implements Lorg/osmdroid/tileprovider/modules/IArchiveFile;
@@ -28,7 +27,6 @@
 
     const-string v0, "tile"
 
-    .line 1
     filled-new-array {v0}, [Ljava/lang/String;
 
     move-result-object v0
@@ -41,7 +39,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -50,10 +47,8 @@
 .method private constructor <init>(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/tileprovider/modules/DatabaseFileArchive;->mDatabase:Landroid/database/sqlite/SQLiteDatabase;
 
     return-void
@@ -67,7 +62,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/osmdroid/tileprovider/modules/DatabaseFileArchive;
 
     invoke-virtual {p0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
@@ -92,7 +86,6 @@
 .method public close()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/DatabaseFileArchive;->mDatabase:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
@@ -108,26 +101,22 @@
     :try_start_0
     const-string v1, "tile"
 
-    .line 1
     filled-new-array {v1}, [Ljava/lang/String;
 
     move-result-object v4
 
-    .line 2
     invoke-virtual {p2}, Lorg/osmdroid/tileprovider/MapTile;->getX()I
 
     move-result v1
 
     int-to-long v1, v1
 
-    .line 3
     invoke-virtual {p2}, Lorg/osmdroid/tileprovider/MapTile;->getY()I
 
     move-result v3
 
     int-to-long v5, v3
 
-    .line 4
     invoke-virtual {p2}, Lorg/osmdroid/tileprovider/MapTile;->getZoomLevel()I
 
     move-result v3
@@ -144,7 +133,6 @@
 
     add-long/2addr v1, v5
 
-    .line 5
     iget-object v3, p0, Lorg/osmdroid/tileprovider/modules/DatabaseFileArchive;->mDatabase:Landroid/database/sqlite/SQLiteDatabase;
 
     const-string v5, "tiles"
@@ -203,19 +191,16 @@
 
     move-result-object p1
 
-    .line 6
     invoke-interface {p1}, Landroid/database/Cursor;->getCount()I
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 7
     invoke-interface {p1}, Landroid/database/Cursor;->moveToFirst()Z
 
     const/4 v1, 0x0
 
-    .line 8
     invoke-interface {p1, v1}, Landroid/database/Cursor;->getBlob(I)[B
 
     move-result-object v1
@@ -225,7 +210,6 @@
     :cond_0
     move-object v1, v0
 
-    .line 9
     :goto_0
     invoke-interface {p1}, Landroid/database/Cursor;->close()V
     :try_end_0
@@ -238,7 +222,6 @@
     :catchall_0
     move-exception p1
 
-    .line 10
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -266,7 +249,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0, p1, p2}, Lorg/osmdroid/tileprovider/modules/DatabaseFileArchive;->getImage(Lorg/osmdroid/tileprovider/tilesource/ITileSource;Lorg/osmdroid/tileprovider/MapTile;)[B
 
@@ -274,7 +256,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     new-instance v1, Ljava/io/ByteArrayInputStream;
 
     invoke-direct {v1, p1}, Ljava/io/ByteArrayInputStream;-><init>([B)V
@@ -294,7 +275,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -328,12 +308,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lorg/osmdroid/tileprovider/modules/DatabaseFileArchive;->mDatabase:Landroid/database/sqlite/SQLiteDatabase;
 
@@ -345,7 +323,6 @@
 
     move-result-object v1
 
-    .line 3
     :goto_0
     invoke-interface {v1}, Landroid/database/Cursor;->moveToNext()Z
 
@@ -355,7 +332,6 @@
 
     const/4 v2, 0x0
 
-    .line 4
     invoke-interface {v1, v2}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
 
     move-result-object v2
@@ -364,7 +340,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-interface {v1}, Landroid/database/Cursor;->close()V
     :try_end_0
@@ -379,7 +354,6 @@
 
     const-string v3, "Error getting tile sources: "
 
-    .line 6
     invoke-static {v2, v3, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :goto_1
@@ -394,7 +368,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p1
@@ -415,7 +388,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

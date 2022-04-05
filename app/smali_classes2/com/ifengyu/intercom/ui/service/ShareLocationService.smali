@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 .super Landroid/app/Service;
-.source "ShareLocationService.java"
 
 # interfaces
 .implements Lcom/amap/api/location/AMapLocationListener;
@@ -67,7 +66,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -80,15 +78,12 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Service;-><init>()V
 
     const-string v0, "ShareLocationService"
 
-    .line 2
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->a:Ljava/lang/String;
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$d;
 
     const/4 v1, 0x0
@@ -97,31 +92,26 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->c:Lcom/ifengyu/intercom/node/h;
 
-    .line 4
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->d:Ljava/util/HashMap;
 
-    .line 5
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     const-string v0, "com.ifengyu.intercom.SHARE_LOCATION_RECEIVER"
 
-    .line 6
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->i:Ljava/lang/String;
 
-    .line 7
     new-instance v0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService$a;-><init>(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->k:Landroid/content/ServiceConnection;
 
-    .line 8
     new-instance v0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$c;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService$c;-><init>(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)V
@@ -134,7 +124,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)Lcom/ifengyu/intercom/node/btle/BtleCentralService$a;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->j:Lcom/ifengyu/intercom/node/btle/BtleCentralService$a;
 
     return-object p0
@@ -143,7 +132,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/service/ShareLocationService;Lcom/ifengyu/intercom/node/btle/BtleCentralService$a;)Lcom/ifengyu/intercom/node/btle/BtleCentralService$a;
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->j:Lcom/ifengyu/intercom/node/btle/BtleCentralService$a;
 
     return-object p1
@@ -152,7 +140,6 @@
 .method public static a()Lcom/ifengyu/intercom/ui/service/ShareLocationService;
     .locals 1
 
-    .line 8
     sget-object v0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->m:Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 
     return-object v0
@@ -161,7 +148,6 @@
 .method private a(Ljava/lang/String;)V
     .locals 1
 
-    .line 7
     new-instance v0, Lcom/ifengyu/intercom/ui/service/ShareLocationService$b;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/ui/service/ShareLocationService$b;-><init>(Lcom/ifengyu/intercom/ui/service/ShareLocationService;Ljava/lang/String;)V
@@ -174,7 +160,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)Landroid/app/PendingIntent;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->h:Landroid/app/PendingIntent;
 
     return-object p0
@@ -183,12 +168,10 @@
 .method private b()V
     .locals 10
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->s()[D
 
     move-result-object v0
 
-    .line 3
     new-instance v7, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->N()Ljava/lang/String;
@@ -227,7 +210,6 @@
 
     invoke-direct/range {v1 .. v6}, Lcom/ifengyu/intercom/bean/BeanUserLocation;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
-    .line 4
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -250,7 +232,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     invoke-direct {p0, v7}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->c(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
     return-void
@@ -259,7 +240,6 @@
 .method private b(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
     .locals 4
 
-    .line 6
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getUserID()Ljava/lang/String;
 
     move-result-object v0
@@ -272,7 +252,6 @@
 
     return-void
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->e:Lcom/ifengyu/intercom/greendao/dao/b;
 
@@ -316,7 +295,6 @@
 
     check-cast v0, Lcom/ifengyu/intercom/greendao/bean/d;
 
-    .line 8
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->d:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
@@ -340,7 +318,6 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 9
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getUserID()Ljava/lang/String;
 
     move-result-object v3
@@ -351,7 +328,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 10
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->d:Ljava/util/HashMap;
 
     invoke-virtual {v1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -360,12 +336,10 @@
 
     check-cast v1, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
-    .line 11
     invoke-virtual {v1, p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->setBeanUser(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
     if-eqz v0, :cond_2
 
-    .line 12
     invoke-virtual {v0}, Lcom/ifengyu/intercom/greendao/bean/d;->e()Ljava/lang/String;
 
     move-result-object p1
@@ -376,14 +350,12 @@
 
     if-nez p1, :cond_2
 
-    .line 13
     invoke-virtual {v0}, Lcom/ifengyu/intercom/greendao/bean/d;->e()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v1, p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->setImgUrl(Ljava/lang/String;)V
 
-    .line 14
     :cond_2
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
@@ -391,15 +363,12 @@
 
     invoke-virtual {p1, v1}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 15
     invoke-virtual {p0, v1}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
-    .line 16
     invoke-direct {p0, v2}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->a(Ljava/lang/String;)V
 
     return-void
 
-    .line 17
     :cond_3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->d:Ljava/util/HashMap;
 
@@ -411,7 +380,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 18
     invoke-virtual {v0}, Lcom/ifengyu/intercom/greendao/bean/d;->e()Ljava/lang/String;
 
     move-result-object v1
@@ -422,7 +390,6 @@
 
     if-nez v1, :cond_4
 
-    .line 19
     invoke-virtual {v0}, Lcom/ifengyu/intercom/greendao/bean/d;->e()Ljava/lang/String;
 
     move-result-object v0
@@ -434,10 +401,8 @@
     :cond_4
     const/4 v0, 0x0
 
-    .line 20
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->setImgUrl(Ljava/lang/String;)V
 
-    .line 21
     :goto_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->toString()Ljava/lang/String;
 
@@ -447,17 +412,14 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 22
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
 
     invoke-virtual {v0, p1}, Lcom/squareup/otto/b;->a(Ljava/lang/Object;)V
 
-    .line 23
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
-    .line 24
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getUserID()Ljava/lang/String;
 
     move-result-object p1
@@ -470,7 +432,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)Landroid/app/AlarmManager;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->g:Landroid/app/AlarmManager;
 
     return-object p0
@@ -487,7 +448,6 @@
         }
     .end annotation
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -522,7 +482,6 @@
 
     sget-object v4, Lcom/ifengyu/intercom/greendao/dao/UserLocationDao$Properties;->Userid:Lorg/greenrobot/greendao/Property;
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->N()Ljava/lang/String;
 
     move-result-object v5
@@ -559,25 +518,20 @@
 
     aput-object v2, v3, v4
 
-    .line 8
     invoke-virtual {v0, v1, v3}, Lorg/greenrobot/greendao/query/QueryBuilder;->where(Lorg/greenrobot/greendao/query/WhereCondition;[Lorg/greenrobot/greendao/query/WhereCondition;)Lorg/greenrobot/greendao/query/QueryBuilder;
 
     move-result-object v0
 
-    .line 9
     invoke-virtual {v0}, Lorg/greenrobot/greendao/query/QueryBuilder;->list()Ljava/util/List;
 
     move-result-object v0
 
-    .line 10
     sget-object v1, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->n:Ljava/util/List;
 
     if-eqz v1, :cond_0
 
-    .line 11
     invoke-interface {v1}, Ljava/util/List;->clear()V
 
-    .line 12
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -595,19 +549,16 @@
 
     check-cast v1, Lcom/ifengyu/intercom/greendao/bean/d;
 
-    .line 13
     new-instance v2, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-direct {v2, v1, v4}, Lcom/ifengyu/intercom/bean/BeanUserLocation;-><init>(Lcom/ifengyu/intercom/greendao/bean/d;Z)V
 
-    .line 14
     sget-object v1, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->n:Ljava/util/List;
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
-    .line 15
     :cond_0
     sget-object v0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->n:Ljava/util/List;
 
@@ -617,7 +568,6 @@
 .method private c(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result v0
@@ -636,19 +586,16 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static {p1}, Lcom/ifengyu/intercom/i/g0;->a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
     goto :goto_0
 
-    .line 4
     :cond_1
     invoke-static {p1}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
     goto :goto_0
 
-    .line 5
     :cond_2
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
@@ -663,7 +610,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)Ljava/util/HashMap;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->d:Ljava/util/HashMap;
 
     return-object p0
@@ -672,7 +618,6 @@
 .method static synthetic e(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->i:Ljava/lang/String;
 
     return-object p0
@@ -681,7 +626,6 @@
 .method static synthetic f(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)Lcom/amap/api/location/AMapLocationClient;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b:Lcom/amap/api/location/AMapLocationClient;
 
     return-object p0
@@ -690,7 +634,6 @@
 .method static synthetic g(Lcom/ifengyu/intercom/ui/service/ShareLocationService;)Lcom/amap/api/location/AMapLocationClientOption;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->f:Lcom/amap/api/location/AMapLocationClientOption;
 
     return-object p0
@@ -701,26 +644,22 @@
 .method public a(J)V
     .locals 3
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b:Lcom/amap/api/location/AMapLocationClient;
 
     invoke-virtual {v0}, Lcom/amap/api/location/AMapLocationClient;->startLocation()V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->g:Landroid/app/AlarmManager;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->h:Landroid/app/PendingIntent;
 
     invoke-virtual {v0, v1}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
-    .line 11
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
     add-long/2addr v0, p1
 
-    .line 12
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/4 p2, 0x2
@@ -729,7 +668,6 @@
 
     if-lt p1, v2, :cond_0
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->g:Landroid/app/AlarmManager;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->h:Landroid/app/PendingIntent;
@@ -743,7 +681,6 @@
 
     if-lt p1, v2, :cond_1
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->g:Landroid/app/AlarmManager;
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->h:Landroid/app/PendingIntent;
@@ -752,7 +689,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->g:Landroid/app/AlarmManager;
 
@@ -767,7 +703,6 @@
 .method public a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
     .locals 13
 
-    .line 3
     new-instance v12, Lcom/ifengyu/intercom/greendao/bean/d;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getUserID()Ljava/lang/String;
@@ -782,7 +717,6 @@
 
     move-result-object v2
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getName()Ljava/lang/String;
 
     move-result-object v3
@@ -807,7 +741,6 @@
 
     move-result-object v6
 
-    .line 5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->getAltitude()I
 
     move-result v0
@@ -850,7 +783,6 @@
 
     invoke-direct/range {v0 .. v11}, Lcom/ifengyu/intercom/greendao/bean/d;-><init>(Ljava/lang/Long;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;)V
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->e:Lcom/ifengyu/intercom/greendao/dao/b;
 
     invoke-virtual {p1, v12}, Lorg/greenrobot/greendao/AbstractDaoSession;->insertOrReplace(Ljava/lang/Object;)J
@@ -871,27 +803,22 @@
 .method public onCreate()V
     .locals 5
 
-    .line 1
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
     const-string v0, "ShareLocationService"
 
     const-string v1, "onCreate"
 
-    .line 2
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Lcom/squareup/otto/b;->b(Ljava/lang/Object;)V
 
-    .line 4
     sput-object p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->m:Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -902,7 +829,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->e:Lcom/ifengyu/intercom/greendao/dao/b;
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/node/j;->b()Lcom/ifengyu/intercom/node/j;
 
     move-result-object v0
@@ -911,7 +837,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/node/j;->a(Lcom/ifengyu/intercom/node/h;)V
 
-    .line 7
     new-instance v0, Lcom/amap/api/location/AMapLocationClient;
 
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
@@ -922,87 +847,72 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b:Lcom/amap/api/location/AMapLocationClient;
 
-    .line 8
     new-instance v0, Lcom/amap/api/location/AMapLocationClientOption;
 
     invoke-direct {v0}, Lcom/amap/api/location/AMapLocationClientOption;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->f:Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 9
     sget-object v1, Lcom/amap/api/location/AMapLocationClientOption$AMapLocationMode;->Hight_Accuracy:Lcom/amap/api/location/AMapLocationClientOption$AMapLocationMode;
 
     invoke-virtual {v0, v1}, Lcom/amap/api/location/AMapLocationClientOption;->setLocationMode(Lcom/amap/api/location/AMapLocationClientOption$AMapLocationMode;)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->f:Lcom/amap/api/location/AMapLocationClientOption;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/amap/api/location/AMapLocationClientOption;->setNeedAddress(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->f:Lcom/amap/api/location/AMapLocationClientOption;
 
     const/4 v2, 0x0
 
     invoke-virtual {v0, v2}, Lcom/amap/api/location/AMapLocationClientOption;->setGpsFirst(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->f:Lcom/amap/api/location/AMapLocationClientOption;
 
     invoke-virtual {v0, v1}, Lcom/amap/api/location/AMapLocationClientOption;->setOnceLocation(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->f:Lcom/amap/api/location/AMapLocationClientOption;
 
     invoke-virtual {v0, v1}, Lcom/amap/api/location/AMapLocationClientOption;->setOnceLocationLatest(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->f:Lcom/amap/api/location/AMapLocationClientOption;
 
     const-wide/16 v3, 0x3a98
 
     invoke-virtual {v0, v3, v4}, Lcom/amap/api/location/AMapLocationClientOption;->setHttpTimeOut(J)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 15
     sget-object v0, Lcom/amap/api/location/AMapLocationClientOption$AMapLocationProtocol;->HTTP:Lcom/amap/api/location/AMapLocationClientOption$AMapLocationProtocol;
 
     invoke-static {v0}, Lcom/amap/api/location/AMapLocationClientOption;->setLocationProtocol(Lcom/amap/api/location/AMapLocationClientOption$AMapLocationProtocol;)V
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->f:Lcom/amap/api/location/AMapLocationClientOption;
 
     invoke-virtual {v0, v2}, Lcom/amap/api/location/AMapLocationClientOption;->setSensorEnable(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->f:Lcom/amap/api/location/AMapLocationClientOption;
 
     invoke-virtual {v0, v1}, Lcom/amap/api/location/AMapLocationClientOption;->setWifiScan(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 18
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->f:Lcom/amap/api/location/AMapLocationClientOption;
 
     invoke-virtual {v0, v1}, Lcom/amap/api/location/AMapLocationClientOption;->setLocationCacheEnable(Z)Lcom/amap/api/location/AMapLocationClientOption;
 
-    .line 19
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b:Lcom/amap/api/location/AMapLocationClient;
 
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->f:Lcom/amap/api/location/AMapLocationClientOption;
 
     invoke-virtual {v0, v3}, Lcom/amap/api/location/AMapLocationClient;->setLocationOption(Lcom/amap/api/location/AMapLocationClientOption;)V
 
-    .line 20
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b:Lcom/amap/api/location/AMapLocationClient;
 
     invoke-virtual {v0, p0}, Lcom/amap/api/location/AMapLocationClient;->setLocationListener(Lcom/amap/api/location/AMapLocationListener;)V
 
-    .line 21
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b:Lcom/amap/api/location/AMapLocationClient;
 
     invoke-virtual {v0}, Lcom/amap/api/location/AMapLocationClient;->startLocation()V
 
-    .line 22
     new-instance v0, Landroid/content/Intent;
 
     const-class v3, Lcom/ifengyu/intercom/node/btle/BtleCentralService;
@@ -1015,7 +925,6 @@
 
     const-string v0, "alarm"
 
-    .line 23
     invoke-virtual {p0, v0}, Landroid/app/Service;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1024,17 +933,14 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->g:Landroid/app/AlarmManager;
 
-    .line 24
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 25
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->i:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 26
     invoke-virtual {p0}, Landroid/app/Service;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v1
@@ -1047,17 +953,14 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->h:Landroid/app/PendingIntent;
 
-    .line 27
     new-instance v0, Landroid/content/IntentFilter;
 
     invoke-direct {v0}, Landroid/content/IntentFilter;-><init>()V
 
-    .line 28
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->i:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/content/IntentFilter;->addAction(Ljava/lang/String;)V
 
-    .line 29
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->l:Landroid/content/BroadcastReceiver;
 
     invoke-virtual {p0, v1, v0}, Landroid/app/Service;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
@@ -1072,20 +975,16 @@
 
     const-string v1, "onDestroy"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0}, Landroid/app/Service;->onDestroy()V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/eventbus/a;->a()Lcom/squareup/otto/b;
 
     move-result-object v0
 
     invoke-virtual {v0, p0}, Lcom/squareup/otto/b;->c(Ljava/lang/Object;)V
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/node/j;->b()Lcom/ifengyu/intercom/node/j;
 
     move-result-object v0
@@ -1096,68 +995,53 @@
 
     const/4 v0, 0x0
 
-    .line 5
     sput-object v0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->m:Lcom/ifengyu/intercom/ui/service/ShareLocationService;
 
-    .line 6
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->d:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->clear()V
 
-    .line 7
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->d:Ljava/util/HashMap;
 
-    .line 8
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b:Lcom/amap/api/location/AMapLocationClient;
 
     if-eqz v1, :cond_0
 
-    .line 9
     invoke-virtual {v1}, Lcom/amap/api/location/AMapLocationClient;->stopLocation()V
 
-    .line 10
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b:Lcom/amap/api/location/AMapLocationClient;
 
     invoke-virtual {v1}, Lcom/amap/api/location/AMapLocationClient;->onDestroy()V
 
-    .line 11
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b:Lcom/amap/api/location/AMapLocationClient;
 
-    .line 12
     :cond_0
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->g:Landroid/app/AlarmManager;
 
     if-eqz v1, :cond_1
 
-    .line 13
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->h:Landroid/app/PendingIntent;
 
     invoke-virtual {v1, v2}, Landroid/app/AlarmManager;->cancel(Landroid/app/PendingIntent;)V
 
-    .line 14
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->h:Landroid/app/PendingIntent;
 
     invoke-virtual {v1}, Landroid/app/PendingIntent;->cancel()V
 
-    .line 15
     :cond_1
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->l:Landroid/content/BroadcastReceiver;
 
     if-eqz v1, :cond_2
 
-    .line 16
     invoke-virtual {p0, v1}, Landroid/app/Service;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
-    .line 17
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->l:Landroid/content/BroadcastReceiver;
 
-    .line 18
     :cond_2
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->k:Landroid/content/ServiceConnection;
 
     invoke-virtual {p0, v1}, Landroid/app/Service;->unbindService(Landroid/content/ServiceConnection;)V
 
-    .line 19
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->k:Landroid/content/ServiceConnection;
 
     return-void
@@ -1168,12 +1052,10 @@
     .annotation runtime Lcom/squareup/otto/Subscribe;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-direct {v0, p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;-><init>(Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;)V
 
-    .line 2
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1202,14 +1084,12 @@
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     invoke-virtual {v0}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
     return-void
@@ -1218,7 +1098,6 @@
 .method public onLocationChanged(Lcom/amap/api/location/AMapLocation;)V
     .locals 11
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1245,7 +1124,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -1256,7 +1134,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b()V
 
     return-void
@@ -1264,14 +1141,12 @@
     :cond_0
     if-eqz p1, :cond_4
 
-    .line 4
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getErrorCode()I
 
     move-result v0
 
     if-nez v0, :cond_3
 
-    .line 5
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAccuracy()F
 
     move-result v0
@@ -1282,12 +1157,10 @@
 
     if-lez v0, :cond_1
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b()V
 
     return-void
 
-    .line 7
     :cond_1
     new-instance v0, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
@@ -1327,7 +1200,6 @@
 
     invoke-direct/range {v2 .. v7}, Lcom/ifengyu/intercom/bean/BeanUserLocation;-><init>(Ljava/lang/String;Ljava/lang/String;III)V
 
-    .line 8
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1348,10 +1220,8 @@
 
     invoke-static {v1, v2}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->c(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
-    .line 10
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAltitude()D
 
     move-result-wide v0
@@ -1360,7 +1230,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 11
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLatitude()D
 
     move-result-wide v0
@@ -1379,7 +1248,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_2
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getLatitude()D
 
@@ -1393,13 +1261,11 @@
 
     goto :goto_0
 
-    .line 13
     :cond_3
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b()V
 
     goto :goto_0
 
-    .line 14
     :cond_4
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b()V
 
@@ -1412,12 +1278,10 @@
     .annotation runtime Lcom/squareup/otto/Subscribe;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-direct {v0, p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;-><init>(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_LocationInfo;)V
 
-    .line 2
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1446,14 +1310,12 @@
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     invoke-virtual {v0}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
     return-void
@@ -1464,12 +1326,10 @@
     .annotation runtime Lcom/squareup/otto/Subscribe;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/bean/BeanUserLocation;
 
     invoke-direct {v0, p1}, Lcom/ifengyu/intercom/bean/BeanUserLocation;-><init>(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_LocationInfo;)V
 
-    .line 2
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1498,14 +1358,12 @@
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     invoke-virtual {v0}, Lcom/ifengyu/intercom/bean/BeanUserLocation;->toString()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {v1, p1}, Lcom/ifengyu/intercom/i/z;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     invoke-direct {p0, v0}, Lcom/ifengyu/intercom/ui/service/ShareLocationService;->b(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
 
     return-void
@@ -1518,10 +1376,8 @@
 
     const-string v1, "onStartCommand"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-super {p0, p1, p2, p3}, Landroid/app/Service;->onStartCommand(Landroid/content/Intent;II)I
 
     move-result p1

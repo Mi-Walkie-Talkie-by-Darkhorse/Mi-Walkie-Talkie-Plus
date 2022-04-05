@@ -1,6 +1,5 @@
 .class interface abstract Lcom/afollestad/materialdialogs/a$c;
 .super Ljava/lang/Object;
-.source "DefaultRvAdapter.java"
 
 
 # annotations

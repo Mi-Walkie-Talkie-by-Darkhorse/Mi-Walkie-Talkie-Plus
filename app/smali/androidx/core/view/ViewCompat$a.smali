@@ -1,6 +1,5 @@
 .class Landroidx/core/view/ViewCompat$a;
 .super Ljava/lang/Object;
-.source "ViewCompat.java"
 
 # interfaces
 .implements Landroidx/core/view/t;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

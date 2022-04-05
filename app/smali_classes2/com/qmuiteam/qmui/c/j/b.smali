@@ -1,13 +1,11 @@
 .class public Lcom/qmuiteam/qmui/c/j/b;
 .super Lcom/qmuiteam/qmui/c/j/i;
-.source "QMUISkinRuleAlphaHandler.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/qmuiteam/qmui/c/j/i;-><init>()V
 
     return-void
@@ -26,7 +24,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1, p3}, Landroid/view/View;->setAlpha(F)V
 
     return-void

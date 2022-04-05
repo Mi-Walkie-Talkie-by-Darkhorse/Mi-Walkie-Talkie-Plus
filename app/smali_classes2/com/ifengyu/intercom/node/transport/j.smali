@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/transport/j;
 .super Ljava/lang/Object;
-.source "TransportTracer.java"
 
 
 # instance fields
@@ -19,10 +18,8 @@
 .method public constructor <init>(Landroid/os/Handler;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     const-wide/16 v1, 0x0
@@ -31,14 +28,12 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/transport/j;->c:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicLong;-><init>(J)V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/transport/j;->d:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 4
     iput-object p1, p0, Lcom/ifengyu/intercom/node/transport/j;->b:Landroid/os/Handler;
 
     return-void
@@ -49,7 +44,6 @@
 .method public a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/node/transport/j;->a:Ljava/lang/Thread;
 
     invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
@@ -60,7 +54,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 0
 
-    .line 6
     iput-object p1, p0, Lcom/ifengyu/intercom/node/transport/j;->e:Ljava/lang/String;
 
     return-void
@@ -69,21 +62,18 @@
 .method public a(Z)V
     .locals 4
 
-    .line 2
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/node/transport/j;->d:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p1, v0, v1}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/node/transport/j;->d:Ljava/util/concurrent/atomic/AtomicLong;
 
@@ -101,7 +91,6 @@
 
     if-lez p1, :cond_1
 
-    .line 5
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -132,19 +121,16 @@
 .method public b(Z)V
     .locals 4
 
-    .line 1
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/node/transport/j;->c:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p1, v0, v1}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/node/transport/j;->b:Landroid/os/Handler;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -153,7 +139,6 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/node/transport/j;->b:Landroid/os/Handler;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
@@ -170,7 +155,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/node/transport/j;->c:Ljava/util/concurrent/atomic/AtomicLong;
 
@@ -188,7 +172,6 @@
 
     if-lez p1, :cond_1
 
-    .line 6
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -219,7 +202,6 @@
 .method public b()Z
     .locals 6
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/node/transport/j;->c:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
@@ -234,7 +216,6 @@
 
     if-eqz v5, :cond_0
 
-    .line 8
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -254,14 +235,12 @@
     :cond_0
     if-lez v5, :cond_1
 
-    .line 9
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v3
 
     sub-long/2addr v3, v0
 
-    .line 10
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -284,7 +263,6 @@
 
     if-lez v5, :cond_1
 
-    .line 11
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -318,7 +296,6 @@
 .method public final c()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/node/transport/j;->b:Landroid/os/Handler;
 
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I

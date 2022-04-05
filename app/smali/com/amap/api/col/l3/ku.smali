@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ku;
 .super Ljava/lang/Object;
-.source "MapNetLocation.java"
 
 
 # annotations

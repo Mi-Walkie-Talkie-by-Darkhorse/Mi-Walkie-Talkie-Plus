@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/UserAuthPermissionActivity$a;
 .super Lcom/ifengyu/intercom/g/d/h;
-.source "UserAuthPermissionActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/UserAuthPermissionActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/UserAuthPermissionActivity$a;->b:Lcom/ifengyu/intercom/ui/UserAuthPermissionActivity;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/h;-><init>()V
@@ -35,7 +33,6 @@
 .method public a(Lcom/ifengyu/intercom/bean/PrivacyInfoBean;I)V
     .locals 0
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/bean/PrivacyInfoBean;->getVersion()Ljava/lang/String;
 
     move-result-object p1
@@ -48,7 +45,6 @@
 
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/i/d0;->a(Ljava/lang/String;I)V
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/UserAuthPermissionActivity$a;->b:Lcom/ifengyu/intercom/ui/UserAuthPermissionActivity;
 
     const/4 p2, 0x0
@@ -61,7 +57,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/bean/PrivacyInfoBean;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/UserAuthPermissionActivity$a;->a(Lcom/ifengyu/intercom/bean/PrivacyInfoBean;I)V
@@ -72,7 +67,6 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/UserAuthPermissionActivity$a;->b:Lcom/ifengyu/intercom/ui/UserAuthPermissionActivity;
 
     const/4 p2, 0x0

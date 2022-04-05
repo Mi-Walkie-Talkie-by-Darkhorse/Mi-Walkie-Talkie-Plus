@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/util/GEMFFile$GEMFRange;
 .super Ljava/lang/Object;
-.source "GEMFFile.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
 .method private constructor <init>(Lorg/osmdroid/util/GEMFFile;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/util/GEMFFile$GEMFRange;->this$0:Lorg/osmdroid/util/GEMFFile;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method synthetic constructor <init>(Lorg/osmdroid/util/GEMFFile;Lorg/osmdroid/util/GEMFFile$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lorg/osmdroid/util/GEMFFile$GEMFRange;-><init>(Lorg/osmdroid/util/GEMFFile;)V
 
     return-void
@@ -62,7 +59,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-object v1, p0, Lorg/osmdroid/util/GEMFFile$GEMFRange;->sourceIndex:Ljava/lang/Integer;
 
     const/4 v2, 0x0

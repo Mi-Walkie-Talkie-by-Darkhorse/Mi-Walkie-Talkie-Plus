@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ec$a;
 .super Lcom/amap/api/col/l3/es;
-.source "NativeBufferPool.java"
 
 
 # annotations
@@ -38,7 +37,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/es;-><init>()V
 
     return-void

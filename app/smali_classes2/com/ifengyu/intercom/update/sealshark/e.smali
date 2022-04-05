@@ -1,6 +1,5 @@
 .class interface abstract Lcom/ifengyu/intercom/update/sealshark/e;
 .super Ljava/lang/Object;
-.source "IUpdateTransport.java"
 
 
 # virtual methods

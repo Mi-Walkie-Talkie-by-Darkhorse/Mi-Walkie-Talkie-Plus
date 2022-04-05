@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/data/BubbleEntry;
 .super Lcom/github/mikephil/charting/data/Entry;
-.source "BubbleEntry.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public d()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/BubbleEntry;->d:F
 
     return v0

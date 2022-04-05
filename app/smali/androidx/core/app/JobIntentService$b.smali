@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/core/app/JobIntentService$b;
 .super Ljava/lang/Object;
-.source "JobIntentService.java"
 
 
 # annotations

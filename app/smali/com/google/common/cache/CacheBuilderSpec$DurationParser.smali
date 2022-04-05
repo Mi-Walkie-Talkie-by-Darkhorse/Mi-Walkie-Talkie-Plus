@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/cache/CacheBuilderSpec$DurationParser;
 .super Ljava/lang/Object;
-.source "CacheBuilderSpec.java"
 
 # interfaces
 .implements Lcom/google/common/cache/CacheBuilderSpec$ValueParser;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
 
     if-eqz p3, :cond_0
 
-    .line 1
     invoke-virtual {p3}, Ljava/lang/String;->isEmpty()Z
 
     move-result v2
@@ -63,7 +60,6 @@
 
     const/4 v2, 0x2
 
-    .line 2
     :try_start_0
     invoke-virtual {p3}, Ljava/lang/String;->length()I
 
@@ -91,12 +87,10 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 3
     sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
     goto :goto_1
 
-    .line 4
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -116,23 +110,19 @@
 
     throw p1
 
-    .line 5
     :cond_2
     sget-object v3, Ljava/util/concurrent/TimeUnit;->MINUTES:Ljava/util/concurrent/TimeUnit;
 
     goto :goto_1
 
-    .line 6
     :cond_3
     sget-object v3, Ljava/util/concurrent/TimeUnit;->HOURS:Ljava/util/concurrent/TimeUnit;
 
     goto :goto_1
 
-    .line 7
     :cond_4
     sget-object v3, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
-    .line 8
     :goto_1
     invoke-virtual {p3}, Ljava/lang/String;->length()I
 
@@ -148,14 +138,12 @@
 
     move-result-wide v4
 
-    .line 9
     invoke-virtual {p0, p1, v4, v5, v3}, Lcom/google/common/cache/CacheBuilderSpec$DurationParser;->parseDuration(Lcom/google/common/cache/CacheBuilderSpec;JLjava/util/concurrent/TimeUnit;)V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-void
 
-    .line 10
     :catch_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

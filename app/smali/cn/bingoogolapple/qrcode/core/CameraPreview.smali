@@ -1,6 +1,5 @@
 .class public Lcn/bingoogolapple/qrcode/core/CameraPreview;
 .super Landroid/view/SurfaceView;
-.source "CameraPreview.java"
 
 # interfaces
 .implements Landroid/view/SurfaceHolder$Callback;
@@ -28,7 +27,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcn/bingoogolapple/qrcode/core/CameraPreview;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -43,27 +41,22 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/view/SurfaceView;-><init>(Landroid/content/Context;)V
 
     const/4 p1, 0x1
 
-    .line 2
     iput-boolean p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mPreviewing:Z
 
     const/4 p1, 0x0
 
-    .line 3
     iput-boolean p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mSurfaceCreated:Z
 
-    .line 4
     new-instance p1, Lcn/bingoogolapple/qrcode/core/CameraPreview$2;
 
     invoke-direct {p1, p0}, Lcn/bingoogolapple/qrcode/core/CameraPreview$2;-><init>(Lcn/bingoogolapple/qrcode/core/CameraPreview;)V
 
     iput-object p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->doAutoFocus:Ljava/lang/Runnable;
 
-    .line 5
     new-instance p1, Lcn/bingoogolapple/qrcode/core/CameraPreview$3;
 
     invoke-direct {p1, p0}, Lcn/bingoogolapple/qrcode/core/CameraPreview$3;-><init>(Lcn/bingoogolapple/qrcode/core/CameraPreview;)V
@@ -76,7 +69,6 @@
 .method static synthetic access$000(Lcn/bingoogolapple/qrcode/core/CameraPreview;)Landroid/hardware/Camera;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     return-object p0
@@ -85,7 +77,6 @@
 .method static synthetic access$100(Lcn/bingoogolapple/qrcode/core/CameraPreview;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mPreviewing:Z
 
     return p0
@@ -94,7 +85,6 @@
 .method static synthetic access$200(Lcn/bingoogolapple/qrcode/core/CameraPreview;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mSurfaceCreated:Z
 
     return p0
@@ -103,7 +93,6 @@
 .method static synthetic access$300(Lcn/bingoogolapple/qrcode/core/CameraPreview;)Ljava/lang/Runnable;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->doAutoFocus:Ljava/lang/Runnable;
 
     return-object p0
@@ -112,7 +101,6 @@
 .method private flashLightAvailable()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     if-eqz v0, :cond_0
@@ -157,14 +145,12 @@
 .method public closeFlashlight()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcn/bingoogolapple/qrcode/core/CameraPreview;->flashLightAvailable()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCameraConfigurationManager:Lcn/bingoogolapple/qrcode/core/CameraConfigurationManager;
 
     iget-object v1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
@@ -178,7 +164,6 @@
 .method public onMeasure(II)V
     .locals 8
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/SurfaceView;->getSuggestedMinimumWidth()I
 
     move-result v0
@@ -187,7 +172,6 @@
 
     move-result p1
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/SurfaceView;->getSuggestedMinimumHeight()I
 
     move-result v0
@@ -196,7 +180,6 @@
 
     move-result p2
 
-    .line 3
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCameraConfigurationManager:Lcn/bingoogolapple/qrcode/core/CameraConfigurationManager;
 
     if-eqz v0, :cond_1
@@ -207,17 +190,14 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCameraConfigurationManager:Lcn/bingoogolapple/qrcode/core/CameraConfigurationManager;
 
     invoke-virtual {v0}, Lcn/bingoogolapple/qrcode/core/CameraConfigurationManager;->getCameraResolution()Landroid/graphics/Point;
 
     move-result-object v0
 
-    .line 5
     iget v1, v0, Landroid/graphics/Point;->x:I
 
-    .line 6
     iget v0, v0, Landroid/graphics/Point;->y:I
 
     int-to-float v2, p1
@@ -267,7 +247,6 @@
     :goto_0
     const/high16 v0, 0x40000000    # 2.0f
 
-    .line 7
     invoke-static {p1, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result p1
@@ -284,14 +263,12 @@
 .method public openFlashlight()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcn/bingoogolapple/qrcode/core/CameraPreview;->flashLightAvailable()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCameraConfigurationManager:Lcn/bingoogolapple/qrcode/core/CameraConfigurationManager;
 
     iget-object v1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
@@ -305,12 +282,10 @@
 .method public setCamera(Landroid/hardware/Camera;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     if-eqz p1, :cond_1
 
-    .line 2
     new-instance p1, Lcn/bingoogolapple/qrcode/core/CameraConfigurationManager;
 
     invoke-virtual {p0}, Landroid/view/SurfaceView;->getContext()Landroid/content/Context;
@@ -321,29 +296,24 @@
 
     iput-object p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCameraConfigurationManager:Lcn/bingoogolapple/qrcode/core/CameraConfigurationManager;
 
-    .line 3
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     invoke-virtual {p1, v0}, Lcn/bingoogolapple/qrcode/core/CameraConfigurationManager;->initFromCameraParameters(Landroid/hardware/Camera;)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/view/SurfaceView;->getHolder()Landroid/view/SurfaceHolder;
 
     move-result-object p1
 
     invoke-interface {p1, p0}, Landroid/view/SurfaceHolder;->addCallback(Landroid/view/SurfaceHolder$Callback;)V
 
-    .line 5
     iget-boolean p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mPreviewing:Z
 
     if-eqz p1, :cond_0
 
-    .line 6
     invoke-virtual {p0}, Landroid/view/SurfaceView;->requestLayout()V
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {p0}, Lcn/bingoogolapple/qrcode/core/CameraPreview;->showCameraPreview()V
 
@@ -355,37 +325,31 @@
 .method public showCameraPreview()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x1
 
-    .line 2
     :try_start_0
     iput-boolean v1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mPreviewing:Z
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/SurfaceView;->getHolder()Landroid/view/SurfaceHolder;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/hardware/Camera;->setPreviewDisplay(Landroid/view/SurfaceHolder;)V
 
-    .line 4
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCameraConfigurationManager:Lcn/bingoogolapple/qrcode/core/CameraConfigurationManager;
 
     iget-object v1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     invoke-virtual {v0, v1}, Lcn/bingoogolapple/qrcode/core/CameraConfigurationManager;->setDesiredCameraParameters(Landroid/hardware/Camera;)V
 
-    .line 5
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     invoke-virtual {v0}, Landroid/hardware/Camera;->startPreview()V
 
-    .line 6
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     iget-object v1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->autoFocusCB:Landroid/hardware/Camera$AutoFocusCallback;
@@ -399,7 +363,6 @@
     :catch_0
     move-exception v0
 
-    .line 7
     sget-object v1, Lcn/bingoogolapple/qrcode/core/CameraPreview;->TAG:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
@@ -416,12 +379,10 @@
 .method public stopCameraPreview()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->doAutoFocus:Ljava/lang/Runnable;
 
@@ -429,22 +390,18 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mPreviewing:Z
 
-    .line 4
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     invoke-virtual {v0}, Landroid/hardware/Camera;->cancelAutoFocus()V
 
-    .line 5
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/hardware/Camera;->setOneShotPreviewCallback(Landroid/hardware/Camera$PreviewCallback;)V
 
-    .line 6
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mCamera:Landroid/hardware/Camera;
 
     invoke-virtual {v0}, Landroid/hardware/Camera;->stopPreview()V
@@ -456,7 +413,6 @@
     :catch_0
     move-exception v0
 
-    .line 7
     sget-object v1, Lcn/bingoogolapple/qrcode/core/CameraPreview;->TAG:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/Exception;->toString()Ljava/lang/String;
@@ -473,7 +429,6 @@
 .method public surfaceChanged(Landroid/view/SurfaceHolder;III)V
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Landroid/view/SurfaceHolder;->getSurface()Landroid/view/Surface;
 
     move-result-object p1
@@ -482,11 +437,9 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcn/bingoogolapple/qrcode/core/CameraPreview;->stopCameraPreview()V
 
-    .line 3
     new-instance p1, Lcn/bingoogolapple/qrcode/core/CameraPreview$1;
 
     invoke-direct {p1, p0}, Lcn/bingoogolapple/qrcode/core/CameraPreview$1;-><init>(Lcn/bingoogolapple/qrcode/core/CameraPreview;)V
@@ -501,7 +454,6 @@
 
     const/4 p1, 0x1
 
-    .line 1
     iput-boolean p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mSurfaceCreated:Z
 
     return-void
@@ -512,10 +464,8 @@
 
     const/4 p1, 0x0
 
-    .line 1
     iput-boolean p1, p0, Lcn/bingoogolapple/qrcode/core/CameraPreview;->mSurfaceCreated:Z
 
-    .line 2
     invoke-virtual {p0}, Lcn/bingoogolapple/qrcode/core/CameraPreview;->stopCameraPreview()V
 
     return-void

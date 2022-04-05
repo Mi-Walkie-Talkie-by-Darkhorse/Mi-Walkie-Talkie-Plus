@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$f;
 .super Lcom/ifengyu/intercom/g/d/e;
-.source "ForgetPasswordFragment.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$f;->b:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/e;-><init>()V
@@ -35,14 +33,12 @@
 .method public a(Lcom/ifengyu/intercom/bean/HttpNormalResult;I)V
     .locals 0
 
-    .line 7
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$f;->b:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->m(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;)V
 
     if-nez p1, :cond_0
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$f;->b:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     const p2, 0x7f110249
@@ -51,20 +47,17 @@
 
     return-void
 
-    .line 9
     :cond_0
     iget p1, p1, Lcom/ifengyu/intercom/bean/HttpNormalResult;->errno:I
 
     if-nez p1, :cond_1
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$f;->b:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->c(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;)V
 
     goto :goto_0
 
-    .line 11
     :cond_1
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$f;->b:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
@@ -81,7 +74,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/bean/HttpNormalResult;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$f;->a(Lcom/ifengyu/intercom/bean/HttpNormalResult;I)V
@@ -92,7 +84,6 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 0
 
-    .line 4
     invoke-virtual {p2}, Ljava/lang/Exception;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -101,12 +92,10 @@
 
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$f;->b:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->l(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;)V
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$f;->b:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     const p2, 0x7f110249
@@ -119,10 +108,8 @@
 .method public a(Lokhttp3/Request;I)V
     .locals 0
 
-    .line 2
     invoke-super {p0, p1, p2}, Lcom/ifengyu/intercom/g/d/b;->a(Lokhttp3/Request;I)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment$f;->b:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->k(Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;)V

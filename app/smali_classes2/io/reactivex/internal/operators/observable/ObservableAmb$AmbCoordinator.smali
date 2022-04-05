@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;
 .super Ljava/lang/Object;
-.source "ObservableAmb.java"
 
 # interfaces
 .implements Lio/reactivex/disposables/Disposable;
@@ -61,20 +60,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
     iput-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 3
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->downstream:Lio/reactivex/Observer;
 
-    .line 4
     new-array p1, p2, [Lio/reactivex/internal/operators/observable/ObservableAmb$AmbInnerObserver;
 
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->observers:[Lio/reactivex/internal/operators/observable/ObservableAmb$AmbInnerObserver;
@@ -87,7 +82,6 @@
 .method public dispose()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -98,12 +92,10 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;->lazySet(I)V
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->observers:[Lio/reactivex/internal/operators/observable/ObservableAmb$AmbInnerObserver;
 
     array-length v1, v0
@@ -115,7 +107,6 @@
 
     aget-object v3, v0, v2
 
-    .line 4
     invoke-virtual {v3}, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbInnerObserver;->dispose()V
 
     add-int/lit8 v2, v2, 0x1
@@ -129,7 +120,6 @@
 .method public isDisposed()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -161,10 +151,8 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->observers:[Lio/reactivex/internal/operators/observable/ObservableAmb$AmbInnerObserver;
 
-    .line 2
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -174,7 +162,6 @@
     :goto_0
     if-ge v3, v1, :cond_0
 
-    .line 3
     new-instance v4, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbInnerObserver;
 
     add-int/lit8 v5, v3, 0x1
@@ -189,13 +176,11 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v3, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v3, v2}, Ljava/util/concurrent/atomic/AtomicInteger;->lazySet(I)V
 
-    .line 5
     iget-object v3, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->downstream:Lio/reactivex/Observer;
 
     invoke-interface {v3, p0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
@@ -203,7 +188,6 @@
     :goto_1
     if-ge v2, v1, :cond_2
 
-    .line 6
     iget-object v3, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -214,7 +198,6 @@
 
     return-void
 
-    .line 7
     :cond_1
     aget-object v3, p1, v2
 
@@ -233,7 +216,6 @@
 .method public win(I)Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
@@ -246,7 +228,6 @@
 
     if-nez v0, :cond_3
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->winner:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0, v2, p1}, Ljava/util/concurrent/atomic/AtomicInteger;->compareAndSet(II)Z
@@ -255,10 +236,8 @@
 
     if-eqz v0, :cond_2
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbCoordinator;->observers:[Lio/reactivex/internal/operators/observable/ObservableAmb$AmbInnerObserver;
 
-    .line 4
     array-length v3, v0
 
     :goto_0
@@ -268,7 +247,6 @@
 
     if-eq v4, p1, :cond_0
 
-    .line 5
     aget-object v2, v0, v2
 
     invoke-virtual {v2}, Lio/reactivex/internal/operators/observable/ObservableAmb$AmbInnerObserver;->dispose()V

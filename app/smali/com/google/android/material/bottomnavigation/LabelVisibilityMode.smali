@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/bottomnavigation/LabelVisibilityMode;
 .super Ljava/lang/Object;
-.source "LabelVisibilityMode.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/snackbar/BaseTransientBottomBar$3;
 .super Ljava/lang/Object;
-.source "BaseTransientBottomBar.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$3;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$3;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     iget-object v1, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->view:Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;
@@ -53,11 +50,9 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$3;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
-    .line 3
     invoke-static {v0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->access$500(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)I
 
     move-result v0
@@ -82,7 +77,6 @@
 
     add-int/2addr v0, v1
 
-    .line 4
     iget-object v1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$3;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-static {v1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->access$700(Lcom/google/android/material/snackbar/BaseTransientBottomBar;)I
@@ -93,7 +87,6 @@
 
     return-void
 
-    .line 5
     :cond_1
     iget-object v1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$3;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
@@ -103,28 +96,23 @@
 
     move-result-object v1
 
-    .line 6
     instance-of v2, v1, Landroid/view/ViewGroup$MarginLayoutParams;
 
     if-nez v2, :cond_2
 
-    .line 7
     invoke-static {}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->access$800()Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "Unable to apply gesture inset because layout params are not MarginLayoutParams"
 
-    .line 8
     invoke-static {v0, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
-    .line 9
     :cond_2
     check-cast v1, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    .line 10
     iget v2, v1, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
     iget-object v3, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$3;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
@@ -139,7 +127,6 @@
 
     iput v2, v1, Landroid/view/ViewGroup$MarginLayoutParams;->bottomMargin:I
 
-    .line 11
     iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$3;->this$0:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->view:Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout;

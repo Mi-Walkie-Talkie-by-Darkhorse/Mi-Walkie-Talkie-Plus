@@ -1,6 +1,5 @@
 .class Lorg/greenrobot/greendao/rx/RxUtils;
 .super Ljava/lang/Object;
-.source "RxUtils.java"
 
 
 # annotations
@@ -12,7 +11,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,7 +33,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Internal;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxUtils$1;
 
     invoke-direct {v0, p0}, Lorg/greenrobot/greendao/rx/RxUtils$1;-><init>(Ljava/util/concurrent/Callable;)V

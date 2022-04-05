@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$b;
 .super Ljava/lang/Object;
-.source "SharkPresetFragment.java"
 
 # interfaces
 .implements Landroid/view/View$OnLongClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$b;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$b;->a:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -42,7 +40,6 @@
 .method public onLongClick(Landroid/view/View;)Z
     .locals 2
 
-    .line 1
     new-instance p1, Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$b;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;
@@ -57,14 +54,12 @@
 
     invoke-direct {p1, v0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$b;->a:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     const-string v1, "seal_action_edit_css_channel_info"
 
     invoke-virtual {p1, v1, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a$b;->b:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/shark/fragment/b$a;->e:Lcom/ifengyu/intercom/ui/setting/shark/fragment/b;

@@ -1,6 +1,5 @@
 .class public Landroidx/room/k$b;
 .super Ljava/lang/Object;
-.source "RoomOpenHelper.java"
 
 
 # annotations
@@ -37,13 +36,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-boolean p1, p0, Landroidx/room/k$b;->a:Z
 
-    .line 3
     iput-object p2, p0, Landroidx/room/k$b;->b:Ljava/lang/String;
 
     return-void

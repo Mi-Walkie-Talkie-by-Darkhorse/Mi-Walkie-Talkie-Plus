@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/AgentWebPermissions;
 .super Ljava/lang/Object;
-.source "AgentWebPermissions.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 
     const-string v0, "android.permission.CAMERA"
 
-    .line 1
     filled-new-array {v0}, [Ljava/lang/String;
 
     move-result-object v0
@@ -34,7 +32,6 @@
 
     const-string v1, "android.permission.ACCESS_COARSE_LOCATION"
 
-    .line 2
     filled-new-array {v0, v1}, [Ljava/lang/String;
 
     move-result-object v0
@@ -45,7 +42,6 @@
 
     const-string v1, "android.permission.WRITE_EXTERNAL_STORAGE"
 
-    .line 3
     filled-new-array {v0, v1}, [Ljava/lang/String;
 
     move-result-object v0
@@ -58,7 +54,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

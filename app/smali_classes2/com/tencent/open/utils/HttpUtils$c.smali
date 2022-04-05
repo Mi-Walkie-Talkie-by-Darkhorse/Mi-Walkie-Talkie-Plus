@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/utils/HttpUtils$c;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # annotations
@@ -24,13 +23,10 @@
 .method private constructor <init>(Ljava/lang/String;I)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/tencent/open/utils/HttpUtils$c;->a:Ljava/lang/String;
 
-    .line 4
     iput p2, p0, Lcom/tencent/open/utils/HttpUtils$c;->b:I
 
     return-void
@@ -39,7 +35,6 @@
 .method synthetic constructor <init>(Ljava/lang/String;ILcom/tencent/open/utils/HttpUtils$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/tencent/open/utils/HttpUtils$c;-><init>(Ljava/lang/String;I)V
 
     return-void

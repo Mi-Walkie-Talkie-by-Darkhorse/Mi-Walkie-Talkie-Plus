@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/map/b$a;
 .super Ljava/lang/Object;
-.source "OsmMapOperate.java"
 
 # interfaces
 .implements Landroid/view/View$OnTouchListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/map/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/b$a;->a:Lcom/ifengyu/intercom/ui/map/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1
@@ -51,7 +48,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/map/b$a;->a:Lcom/ifengyu/intercom/ui/map/b;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/map/b;->a(Lcom/ifengyu/intercom/ui/map/b;)Lcom/ifengyu/intercom/ui/fragment/MapFragment;
@@ -62,7 +58,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->a(I)V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object p1

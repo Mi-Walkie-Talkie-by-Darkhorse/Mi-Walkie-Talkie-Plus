@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IProjection;
 .super Ljava/lang/Object;
-.source "IProjection.java"
 
 
 # virtual methods

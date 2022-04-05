@@ -1,13 +1,11 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/android/util/RequestFactory;
 .super Ljava/lang/Object;
-.source "RequestFactory.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -35,12 +33,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1, p0}, Lcom/xiaomi/infra/galaxy/fds/android/auth/GalaxyFDSCredential;->addParam(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 2
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/android/util/RequestFactory$1;->$SwitchMap$com$xiaomi$infra$galaxy$fds$model$HttpMethod:[I
 
     invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
@@ -73,7 +69,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_0
     new-instance p2, Lorg/apache/http/client/methods/HttpHead;
 
@@ -81,7 +76,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     new-instance p2, Lorg/apache/http/client/methods/HttpDelete;
 
@@ -89,7 +83,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     new-instance p2, Lorg/apache/http/client/methods/HttpPost;
 
@@ -97,7 +90,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_3
     new-instance p2, Lorg/apache/http/client/methods/HttpPut;
 
@@ -105,7 +97,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_4
     new-instance p2, Lorg/apache/http/client/methods/HttpGet;
 
@@ -121,17 +112,14 @@
 
     const-string p2, "Content-Length"
 
-    .line 8
     invoke-interface {p3, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 9
     invoke-virtual {p2}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object p2
 
     invoke-interface {p3, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
     invoke-interface {p3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object p2
@@ -153,7 +141,6 @@
 
     check-cast p3, Ljava/util/Map$Entry;
 
-    .line 11
     invoke-interface {p3}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v0
@@ -170,7 +157,6 @@
 
     goto :goto_2
 
-    .line 12
     :cond_5
     new-instance p2, Ljava/util/Date;
 
@@ -184,7 +170,6 @@
 
     invoke-virtual {p0, p3, p2}, Lorg/apache/http/client/methods/HttpRequestBase;->addHeader(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 13
     invoke-interface {p1, p0}, Lcom/xiaomi/infra/galaxy/fds/android/auth/GalaxyFDSCredential;->addHeader(Lorg/apache/http/client/methods/HttpRequestBase;)V
 
     :cond_6

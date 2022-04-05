@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lno/nordicsemi/android/ble/annotation/BondState;
 .super Ljava/lang/Object;
-.source "BondState.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

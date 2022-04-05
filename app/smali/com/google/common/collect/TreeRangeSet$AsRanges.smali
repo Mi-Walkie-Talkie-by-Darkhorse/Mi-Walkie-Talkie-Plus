@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/TreeRangeSet$AsRanges;
 .super Lcom/google/common/collect/ForwardingCollection;
-.source "TreeRangeSet.java"
 
 # interfaces
 .implements Ljava/util/Set;
@@ -36,7 +35,6 @@
 .method constructor <init>(Lcom/google/common/collect/TreeRangeSet;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/TreeRangeSet$AsRanges;->this$0:Lcom/google/common/collect/TreeRangeSet;
 
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingCollection;-><init>()V
@@ -49,7 +47,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/TreeRangeSet$AsRanges;->delegate()Ljava/util/Collection;
 
     move-result-object v0
@@ -68,7 +65,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/TreeRangeSet$AsRanges;->this$0:Lcom/google/common/collect/TreeRangeSet;
 
     iget-object v0, v0, Lcom/google/common/collect/TreeRangeSet;->rangesByLowerBound:Ljava/util/NavigableMap;
@@ -87,7 +83,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Sets;->equalsImpl(Ljava/util/Set;Ljava/lang/Object;)Z
 
     move-result p1
@@ -98,7 +93,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Sets;->hashCodeImpl(Ljava/util/Set;)I
 
     move-result v0

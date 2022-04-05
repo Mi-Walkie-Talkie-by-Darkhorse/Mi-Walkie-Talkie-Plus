@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/util/e;
 .super Ljava/lang/Object;
-.source "QMUIDrawableHelper.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/graphics/Canvas;
 
     invoke-direct {v0}, Landroid/graphics/Canvas;-><init>()V
@@ -28,7 +26,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance v0, Landroid/graphics/LightingColorFilter;
 
     const/4 v1, 0x0
@@ -43,7 +40,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/graphics/drawable/Drawable;->setColorFilter(Landroid/graphics/ColorFilter;)V
 
     :cond_0
@@ -59,7 +55,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 3
     :try_start_0
     invoke-static {p0, p1}, Landroidx/appcompat/a/a/a;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
 
@@ -72,7 +67,6 @@
     :catch_0
     move-exception v0
 
-    .line 4
     sget-object v1, Lcom/qmuiteam/qmui/util/e;->a:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/StringBuilder;

@@ -1,6 +1,5 @@
 .class public Lcom/afollestad/materialdialogs/internal/d;
 .super Ljava/lang/Object;
-.source "ThemeSingleton.java"
 
 
 # static fields
@@ -90,83 +89,60 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/afollestad/materialdialogs/internal/d;->a:Z
 
-    .line 3
     iput v0, p0, Lcom/afollestad/materialdialogs/internal/d;->b:I
 
-    .line 4
     iput v0, p0, Lcom/afollestad/materialdialogs/internal/d;->c:I
 
     const/4 v1, 0x0
 
-    .line 5
     iput-object v1, p0, Lcom/afollestad/materialdialogs/internal/d;->d:Landroid/content/res/ColorStateList;
 
-    .line 6
     iput-object v1, p0, Lcom/afollestad/materialdialogs/internal/d;->e:Landroid/content/res/ColorStateList;
 
-    .line 7
     iput-object v1, p0, Lcom/afollestad/materialdialogs/internal/d;->f:Landroid/content/res/ColorStateList;
 
-    .line 8
     iput v0, p0, Lcom/afollestad/materialdialogs/internal/d;->g:I
 
-    .line 9
     iput v0, p0, Lcom/afollestad/materialdialogs/internal/d;->h:I
 
-    .line 10
     iput-object v1, p0, Lcom/afollestad/materialdialogs/internal/d;->i:Landroid/graphics/drawable/Drawable;
 
-    .line 11
     iput v0, p0, Lcom/afollestad/materialdialogs/internal/d;->j:I
 
-    .line 12
     iput v0, p0, Lcom/afollestad/materialdialogs/internal/d;->k:I
 
-    .line 13
     iput-object v1, p0, Lcom/afollestad/materialdialogs/internal/d;->l:Landroid/content/res/ColorStateList;
 
-    .line 14
     iput v0, p0, Lcom/afollestad/materialdialogs/internal/d;->m:I
 
-    .line 15
     iput v0, p0, Lcom/afollestad/materialdialogs/internal/d;->n:I
 
-    .line 16
     iput v0, p0, Lcom/afollestad/materialdialogs/internal/d;->o:I
 
-    .line 17
     iput v0, p0, Lcom/afollestad/materialdialogs/internal/d;->p:I
 
-    .line 18
     iput v0, p0, Lcom/afollestad/materialdialogs/internal/d;->q:I
 
-    .line 19
     sget-object v0, Lcom/afollestad/materialdialogs/GravityEnum;->a:Lcom/afollestad/materialdialogs/GravityEnum;
 
     iput-object v0, p0, Lcom/afollestad/materialdialogs/internal/d;->r:Lcom/afollestad/materialdialogs/GravityEnum;
 
-    .line 20
     iput-object v0, p0, Lcom/afollestad/materialdialogs/internal/d;->s:Lcom/afollestad/materialdialogs/GravityEnum;
 
-    .line 21
     sget-object v0, Lcom/afollestad/materialdialogs/GravityEnum;->c:Lcom/afollestad/materialdialogs/GravityEnum;
 
     iput-object v0, p0, Lcom/afollestad/materialdialogs/internal/d;->t:Lcom/afollestad/materialdialogs/GravityEnum;
 
-    .line 22
     sget-object v0, Lcom/afollestad/materialdialogs/GravityEnum;->a:Lcom/afollestad/materialdialogs/GravityEnum;
 
     iput-object v0, p0, Lcom/afollestad/materialdialogs/internal/d;->u:Lcom/afollestad/materialdialogs/GravityEnum;
 
-    .line 23
     iput-object v0, p0, Lcom/afollestad/materialdialogs/internal/d;->v:Lcom/afollestad/materialdialogs/GravityEnum;
 
     return-void
@@ -177,7 +153,6 @@
 
     const/4 v0, 0x1
 
-    .line 4
     invoke-static {v0}, Lcom/afollestad/materialdialogs/internal/d;->a(Z)Lcom/afollestad/materialdialogs/internal/d;
 
     move-result-object v0
@@ -188,21 +163,18 @@
 .method public static a(Z)Lcom/afollestad/materialdialogs/internal/d;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/afollestad/materialdialogs/internal/d;->w:Lcom/afollestad/materialdialogs/internal/d;
 
     if-nez v0, :cond_0
 
     if-eqz p0, :cond_0
 
-    .line 2
     new-instance p0, Lcom/afollestad/materialdialogs/internal/d;
 
     invoke-direct {p0}, Lcom/afollestad/materialdialogs/internal/d;-><init>()V
 
     sput-object p0, Lcom/afollestad/materialdialogs/internal/d;->w:Lcom/afollestad/materialdialogs/internal/d;
 
-    .line 3
     :cond_0
     sget-object p0, Lcom/afollestad/materialdialogs/internal/d;->w:Lcom/afollestad/materialdialogs/internal/d;
 

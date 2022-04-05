@@ -1,6 +1,5 @@
 .class final Landroidx/activity/ImmLeaksCleaner;
 .super Ljava/lang/Object;
-.source "ImmLeaksCleaner.java"
 
 # interfaces
 .implements Landroidx/lifecycle/i;
@@ -36,10 +35,8 @@
 .method constructor <init>(Landroid/app/Activity;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/activity/ImmLeaksCleaner;->a:Landroid/app/Activity;
 
     return-void
@@ -52,11 +49,9 @@
 
     const/4 v0, 0x2
 
-    .line 1
     :try_start_0
     sput v0, Landroidx/activity/ImmLeaksCleaner;->b:I
 
-    .line 2
     const-class v0, Landroid/view/inputmethod/InputMethodManager;
 
     const-string v1, "mServedView"
@@ -69,10 +64,8 @@
 
     const/4 v1, 0x1
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 4
     const-class v0, Landroid/view/inputmethod/InputMethodManager;
 
     const-string v2, "mNextServedView"
@@ -83,10 +76,8 @@
 
     sput-object v0, Landroidx/activity/ImmLeaksCleaner;->e:Ljava/lang/reflect/Field;
 
-    .line 5
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 6
     const-class v0, Landroid/view/inputmethod/InputMethodManager;
 
     const-string v2, "mH"
@@ -97,10 +88,8 @@
 
     sput-object v0, Landroidx/activity/ImmLeaksCleaner;->c:Ljava/lang/reflect/Field;
 
-    .line 7
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 8
     sput v1, Landroidx/activity/ImmLeaksCleaner;->b:I
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
@@ -122,23 +111,19 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object p1, Landroidx/lifecycle/Lifecycle$Event;->ON_DESTROY:Landroidx/lifecycle/Lifecycle$Event;
 
     if-eq p2, p1, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     sget p1, Landroidx/activity/ImmLeaksCleaner;->b:I
 
     if-nez p1, :cond_1
 
-    .line 3
     invoke-static {}, Landroidx/activity/ImmLeaksCleaner;->a()V
 
-    .line 4
     :cond_1
     sget p1, Landroidx/activity/ImmLeaksCleaner;->b:I
 
@@ -146,19 +131,16 @@
 
     if-ne p1, p2, :cond_5
 
-    .line 5
     iget-object p1, p0, Landroidx/activity/ImmLeaksCleaner;->a:Landroid/app/Activity;
 
     const-string p2, "input_method"
 
-    .line 6
     invoke-virtual {p1, p2}, Landroid/app/Activity;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Landroid/view/inputmethod/InputMethodManager;
 
-    .line 7
     :try_start_0
     sget-object p2, Landroidx/activity/ImmLeaksCleaner;->c:Ljava/lang/reflect/Field;
 
@@ -172,11 +154,9 @@
 
     return-void
 
-    .line 8
     :cond_2
     monitor-enter p2
 
-    .line 9
     :try_start_1
     sget-object v0, Landroidx/activity/ImmLeaksCleaner;->d:Ljava/lang/reflect/Field;
 
@@ -192,13 +172,11 @@
 
     if-nez v0, :cond_3
 
-    .line 10
     :try_start_2
     monitor-exit p2
 
     return-void
 
-    .line 11
     :cond_3
     invoke-virtual {v0}, Landroid/view/View;->isAttachedToWindow()Z
 
@@ -206,14 +184,12 @@
 
     if-eqz v0, :cond_4
 
-    .line 12
     monitor-exit p2
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     return-void
 
-    .line 13
     :cond_4
     :try_start_3
     sget-object v0, Landroidx/activity/ImmLeaksCleaner;->e:Ljava/lang/reflect/Field;
@@ -225,18 +201,15 @@
     .catch Ljava/lang/IllegalAccessException; {:try_start_3 .. :try_end_3} :catch_0
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 14
     :try_start_4
     monitor-exit p2
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
-    .line 15
     invoke-virtual {p1}, Landroid/view/inputmethod/InputMethodManager;->isActive()Z
 
     goto :goto_1
 
-    .line 16
     :catch_0
     :try_start_5
     monitor-exit p2
@@ -248,19 +221,16 @@
 
     goto :goto_0
 
-    .line 17
     :catch_1
     monitor-exit p2
 
     return-void
 
-    .line 18
     :catch_2
     monitor-exit p2
 
     return-void
 
-    .line 19
     :goto_0
     monitor-exit p2
     :try_end_5

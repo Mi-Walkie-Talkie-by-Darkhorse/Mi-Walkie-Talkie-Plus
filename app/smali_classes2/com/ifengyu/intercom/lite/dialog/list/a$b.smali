@@ -1,6 +1,5 @@
 .class interface abstract Lcom/ifengyu/intercom/lite/dialog/list/a$b;
 .super Ljava/lang/Object;
-.source "BottomSheetListAdapter.java"
 
 
 # annotations

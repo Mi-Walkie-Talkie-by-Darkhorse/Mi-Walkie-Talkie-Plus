@@ -1,6 +1,5 @@
 .class final Lcom/ifengyu/blelib/f/b;
 .super Ljava/lang/Object;
-.source "BluetoothUuid.java"
 
 
 # static fields
@@ -13,7 +12,6 @@
 
     const-string v0, "00000000-0000-1000-8000-00805F9B34FB"
 
-    .line 1
     invoke-static {v0}, Landroid/os/ParcelUuid;->fromString(Ljava/lang/String;)Landroid/os/ParcelUuid;
 
     move-result-object v0
@@ -28,7 +26,6 @@
 
     if-eqz p0, :cond_4
 
-    .line 1
     array-length v0, p0
 
     const/16 v1, 0x10
@@ -45,7 +42,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -75,7 +71,6 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 3
     invoke-static {p0}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object p0
@@ -86,17 +81,14 @@
 
     move-result-object p0
 
-    .line 4
     invoke-virtual {p0, v4}, Ljava/nio/ByteBuffer;->getLong(I)J
 
     move-result-wide v0
 
-    .line 5
     invoke-virtual {p0, v3}, Ljava/nio/ByteBuffer;->getLong(I)J
 
     move-result-wide v2
 
-    .line 6
     new-instance p0, Landroid/os/ParcelUuid;
 
     new-instance v4, Ljava/util/UUID;
@@ -112,14 +104,12 @@
 
     if-ne v0, v2, :cond_3
 
-    .line 7
     aget-byte v0, p0, v3
 
     and-int/lit16 v0, v0, 0xff
 
     int-to-long v0, v0
 
-    .line 8
     aget-byte p0, p0, v5
 
     and-int/lit16 p0, p0, 0xff
@@ -132,7 +122,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_3
     aget-byte v0, p0, v3
 
@@ -140,7 +129,6 @@
 
     int-to-long v6, v0
 
-    .line 10
     aget-byte v0, p0, v5
 
     and-int/lit16 v0, v0, 0xff
@@ -151,7 +139,6 @@
 
     add-long/2addr v6, v3
 
-    .line 11
     aget-byte v0, p0, v2
 
     and-int/lit16 v0, v0, 0xff
@@ -164,7 +151,6 @@
 
     const/4 v0, 0x3
 
-    .line 12
     aget-byte p0, p0, v0
 
     and-int/lit16 p0, p0, 0xff
@@ -175,7 +161,6 @@
 
     add-long/2addr v0, v6
 
-    .line 13
     :goto_1
     sget-object p0, Lcom/ifengyu/blelib/f/b;->a:Landroid/os/ParcelUuid;
 
@@ -193,7 +178,6 @@
 
     add-long/2addr v2, v0
 
-    .line 14
     sget-object p0, Lcom/ifengyu/blelib/f/b;->a:Landroid/os/ParcelUuid;
 
     invoke-virtual {p0}, Landroid/os/ParcelUuid;->getUuid()Ljava/util/UUID;
@@ -204,7 +188,6 @@
 
     move-result-wide v0
 
-    .line 15
     new-instance p0, Landroid/os/ParcelUuid;
 
     new-instance v4, Ljava/util/UUID;
@@ -215,7 +198,6 @@
 
     return-object p0
 
-    .line 16
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

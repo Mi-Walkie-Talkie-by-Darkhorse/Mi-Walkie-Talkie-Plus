@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/i0;
 .super Ljava/lang/Object;
-.source "StringUtils.java"
 
 
 # direct methods
@@ -9,7 +8,6 @@
 
     if-eqz p0, :cond_1
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object p0

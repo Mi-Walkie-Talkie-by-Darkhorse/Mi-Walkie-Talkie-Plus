@@ -1,6 +1,5 @@
 .class La/c/a/a/c$a;
 .super La/c/a/a/c;
-.source "Easing.java"
 
 
 # annotations
@@ -40,29 +39,24 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 5
 
-    .line 1
     invoke-direct {p0}, La/c/a/a/c;-><init>()V
 
-    .line 2
     iput-object p1, p0, La/c/a/a/c;->a:Ljava/lang/String;
 
     const/16 v0, 0x28
 
-    .line 3
     invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(I)I
 
     move-result v0
 
     const/16 v1, 0x2c
 
-    .line 4
     invoke-virtual {p1, v1, v0}, Ljava/lang/String;->indexOf(II)I
 
     move-result v2
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 5
     invoke-virtual {p1, v0, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
@@ -79,12 +73,10 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    .line 6
     invoke-virtual {p1, v1, v2}, Ljava/lang/String;->indexOf(II)I
 
     move-result v0
 
-    .line 7
     invoke-virtual {p1, v2, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
@@ -101,12 +93,10 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 8
     invoke-virtual {p1, v1, v0}, Ljava/lang/String;->indexOf(II)I
 
     move-result v1
 
-    .line 9
     invoke-virtual {p1, v0, v1}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
@@ -125,12 +115,10 @@
 
     const/16 v0, 0x29
 
-    .line 10
     invoke-virtual {p1, v0, v1}, Ljava/lang/String;->indexOf(II)I
 
     move-result v0
 
-    .line 11
     invoke-virtual {p1, v1, v0}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object p1
@@ -171,7 +159,6 @@
 
     mul-double v4, v4, p1
 
-    .line 1
     iget-wide p1, p0, La/c/a/a/c$a;->d:D
 
     mul-double p1, p1, v0
@@ -210,7 +197,6 @@
 
     mul-double v4, v4, p1
 
-    .line 1
     iget-wide p1, p0, La/c/a/a/c$a;->e:D
 
     mul-double p1, p1, v0
@@ -255,7 +241,6 @@
 
     move-wide v4, v2
 
-    .line 1
     :goto_0
     sget-wide v6, La/c/a/a/c$a;->h:D
 
@@ -263,7 +248,6 @@
 
     if-lez v8, :cond_3
 
-    .line 2
     invoke-direct {p0, v4, v5}, La/c/a/a/c$a;->c(D)D
 
     move-result-wide v6
@@ -286,24 +270,20 @@
     :cond_3
     sub-double v0, v4, v2
 
-    .line 3
     invoke-direct {p0, v0, v1}, La/c/a/a/c$a;->c(D)D
 
     move-result-wide v6
 
     add-double/2addr v4, v2
 
-    .line 4
     invoke-direct {p0, v4, v5}, La/c/a/a/c$a;->c(D)D
 
     move-result-wide v2
 
-    .line 5
     invoke-direct {p0, v0, v1}, La/c/a/a/c$a;->d(D)D
 
     move-result-wide v0
 
-    .line 6
     invoke-direct {p0, v4, v5}, La/c/a/a/c$a;->d(D)D
 
     move-result-wide v4
@@ -332,7 +312,6 @@
 
     move-wide v4, v2
 
-    .line 1
     :goto_0
     sget-wide v6, La/c/a/a/c$a;->i:D
 
@@ -340,7 +319,6 @@
 
     if-lez v8, :cond_1
 
-    .line 2
     invoke-direct {p0, v4, v5}, La/c/a/a/c$a;->c(D)D
 
     move-result-wide v6
@@ -363,24 +341,20 @@
     :cond_1
     sub-double p1, v4, v2
 
-    .line 3
     invoke-direct {p0, p1, p2}, La/c/a/a/c$a;->c(D)D
 
     move-result-wide v0
 
     add-double/2addr v4, v2
 
-    .line 4
     invoke-direct {p0, v4, v5}, La/c/a/a/c$a;->c(D)D
 
     move-result-wide v2
 
-    .line 5
     invoke-direct {p0, p1, p2}, La/c/a/a/c$a;->d(D)D
 
     move-result-wide p1
 
-    .line 6
     invoke-direct {p0, v4, v5}, La/c/a/a/c$a;->d(D)D
 
     move-result-wide v4

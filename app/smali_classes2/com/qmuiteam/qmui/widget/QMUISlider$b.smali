@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/QMUISlider$b;
 .super Ljava/lang/Object;
-.source "QMUISlider.java"
 
 
 # annotations

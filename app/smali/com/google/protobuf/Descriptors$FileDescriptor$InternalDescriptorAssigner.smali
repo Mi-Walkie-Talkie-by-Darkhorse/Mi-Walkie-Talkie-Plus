@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;
 .super Ljava/lang/Object;
-.source "Descriptors.java"
 
 
 # annotations

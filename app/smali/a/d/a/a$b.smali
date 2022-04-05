@@ -1,6 +1,5 @@
 .class La/d/a/a$b;
 .super Landroid/database/DataSetObserver;
-.source "CursorAdapter.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(La/d/a/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, La/d/a/a$b;->a:La/d/a/a;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -35,14 +33,12 @@
 .method public onChanged()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, La/d/a/a$b;->a:La/d/a/a;
 
     const/4 v1, 0x1
 
     iput-boolean v1, v0, La/d/a/a;->a:Z
 
-    .line 2
     invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     return-void
@@ -51,14 +47,12 @@
 .method public onInvalidated()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, La/d/a/a$b;->a:La/d/a/a;
 
     const/4 v1, 0x0
 
     iput-boolean v1, v0, La/d/a/a;->a:Z
 
-    .line 2
     invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetInvalidated()V
 
     return-void

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$b;
 .super Ljava/lang/Object;
-.source "UpdateHelper.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$b;->a:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$b;->a:Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;->d(Lcom/ifengyu/intercom/update/sealshark/UpdateHelper;)Lcom/ifengyu/intercom/update/sealshark/UpdateHelper$e;

@@ -1,6 +1,5 @@
 .class public abstract Lio/reactivex/observables/GroupedObservable;
 .super Lio/reactivex/Observable;
-.source "GroupedObservable.java"
 
 
 # annotations
@@ -40,10 +39,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/observables/GroupedObservable;->key:Ljava/lang/Object;
 
     return-void
@@ -62,7 +59,6 @@
     .annotation build Lio/reactivex/annotations/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observables/GroupedObservable;->key:Ljava/lang/Object;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kx;
 .super Ljava/lang/Object;
-.source "Beacon.java"
 
 # interfaces
 .implements Ljava/lang/Comparable;

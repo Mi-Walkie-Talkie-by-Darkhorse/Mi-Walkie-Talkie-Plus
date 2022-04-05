@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/shape/TriangleEdgeTreatment;
 .super Lcom/google/android/material/shape/EdgeTreatment;
-.source "TriangleEdgeTreatment.java"
 
 
 # instance fields
@@ -13,13 +12,10 @@
 .method public constructor <init>(FZ)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/shape/EdgeTreatment;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/shape/TriangleEdgeTreatment;->size:F
 
-    .line 3
     iput-boolean p2, p0, Lcom/google/android/material/shape/TriangleEdgeTreatment;->inside:Z
 
     return-void
@@ -34,7 +30,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget v0, p0, Lcom/google/android/material/shape/TriangleEdgeTreatment;->size:F
 
     mul-float v0, v0, p3
@@ -45,7 +40,6 @@
 
     invoke-virtual {p4, v0, v1}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
-    .line 2
     iget-boolean v0, p0, Lcom/google/android/material/shape/TriangleEdgeTreatment;->inside:Z
 
     if-eqz v0, :cond_0
@@ -64,7 +58,6 @@
 
     invoke-virtual {p4, p2, v0}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
-    .line 3
     iget v0, p0, Lcom/google/android/material/shape/TriangleEdgeTreatment;->size:F
 
     mul-float v0, v0, p3
@@ -73,7 +66,6 @@
 
     invoke-virtual {p4, p2, v1}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
-    .line 4
     invoke-virtual {p4, p1, v1}, Lcom/google/android/material/shape/ShapePath;->lineTo(FF)V
 
     return-void

@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/MotionLayout$d;
 .super Ljava/lang/Object;
-.source "MotionLayout.java"
 
 
 # annotations
@@ -52,12 +51,10 @@
 .method public constructor <init>(Landroidx/constraintlayout/motion/widget/MotionLayout;)V
     .locals 4
 
-    .line 1
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->p:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
@@ -66,119 +63,98 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->n:Z
 
     const/4 v0, 0x1
 
-    .line 4
     iput v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->o:I
 
-    .line 5
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
 
-    .line 6
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 7
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
 
     const/16 v2, -0x55cd
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 8
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
 
     const/high16 v2, 0x40000000    # 2.0f
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 9
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
 
     sget-object v3, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 10
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->f:Landroid/graphics/Paint;
 
-    .line 11
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 12
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->f:Landroid/graphics/Paint;
 
     const v3, -0x1f8a66
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 13
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->f:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 14
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->f:Landroid/graphics/Paint;
 
     sget-object v3, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 15
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->g:Landroid/graphics/Paint;
 
-    .line 16
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 17
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->g:Landroid/graphics/Paint;
 
     const v3, -0xcc5600
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 18
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->g:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 19
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->g:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 20
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
-    .line 21
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 22
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 23
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
@@ -205,20 +181,16 @@
 
     new-array p1, p1, [F
 
-    .line 24
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->j:[F
 
-    .line 25
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1}, Landroid/graphics/Paint;-><init>()V
 
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->i:Landroid/graphics/Paint;
 
-    .line 26
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 27
     new-instance p1, Landroid/graphics/DashPathEffect;
 
     const/4 v0, 0x2
@@ -233,7 +205,6 @@
 
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->k:Landroid/graphics/DashPathEffect;
 
-    .line 28
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->g:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setPathEffect(Landroid/graphics/PathEffect;)Landroid/graphics/PathEffect;
@@ -242,41 +213,34 @@
 
     new-array p1, p1, [F
 
-    .line 29
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->c:[F
 
     const/16 p1, 0x32
 
     new-array p1, p1, [I
 
-    .line 30
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b:[I
 
-    .line 31
     iget-boolean p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->n:Z
 
     if-eqz p1, :cond_0
 
-    .line 32
     iget-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
 
     const/high16 v0, 0x41000000    # 8.0f
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 33
     iget-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->i:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 34
     iget-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->f:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     const/4 p1, 0x4
 
-    .line 35
     iput p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->o:I
 
     :cond_0
@@ -294,7 +258,6 @@
 .method private a(Landroid/graphics/Canvas;)V
     .locals 2
 
-    .line 34
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a:[F
 
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
@@ -311,7 +274,6 @@
 
     move-object/from16 v7, p1
 
-    .line 36
     iget-object v1, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a:[F
 
     const/4 v2, 0x0
@@ -320,48 +282,40 @@
 
     const/4 v3, 0x1
 
-    .line 37
     aget v8, v1, v3
 
-    .line 38
     array-length v4, v1
 
     add-int/lit8 v4, v4, -0x2
 
     aget v4, v1, v4
 
-    .line 39
     array-length v5, v1
 
     sub-int/2addr v5, v3
 
     aget v9, v1, v5
 
-    .line 40
     invoke-static {v2, v4}, Ljava/lang/Math;->min(FF)F
 
     move-result v1
 
-    .line 41
     invoke-static {v8, v9}, Ljava/lang/Math;->max(FF)F
 
     move-result v10
 
-    .line 42
     invoke-static {v2, v4}, Ljava/lang/Math;->min(FF)F
 
     move-result v3
 
     sub-float v3, p2, v3
 
-    .line 43
     invoke-static {v8, v9}, Ljava/lang/Math;->max(FF)F
 
     move-result v5
 
     sub-float v11, v5, p3
 
-    .line 44
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -400,7 +354,6 @@
 
     move-result-object v5
 
-    .line 45
     iget-object v6, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v5, v6}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Ljava/lang/String;Landroid/graphics/Paint;)V
@@ -409,7 +362,6 @@
 
     div-float/2addr v3, v14
 
-    .line 46
     iget-object v6, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->m:Landroid/graphics/Rect;
 
     invoke-virtual {v6}, Landroid/graphics/Rect;->width()I
@@ -428,12 +380,10 @@
 
     sub-float v1, p3, v1
 
-    .line 47
     iget-object v6, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     invoke-virtual {v7, v5, v3, v1, v6}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 48
     invoke-static {v2, v4}, Ljava/lang/Math;->min(FF)F
 
     move-result v4
@@ -448,10 +398,8 @@
 
     move/from16 v5, p3
 
-    .line 49
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 50
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -484,14 +432,12 @@
 
     move-result-object v1
 
-    .line 51
     iget-object v2, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v1, v2}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Ljava/lang/String;Landroid/graphics/Paint;)V
 
     div-float/2addr v11, v14
 
-    .line 52
     iget-object v2, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->m:Landroid/graphics/Rect;
 
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
@@ -510,12 +456,10 @@
 
     sub-float/2addr v10, v11
 
-    .line 53
     iget-object v3, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     invoke-virtual {v7, v1, v2, v10, v3}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 54
     invoke-static {v8, v9}, Ljava/lang/Math;->max(FF)F
 
     move-result v5
@@ -530,7 +474,6 @@
 
     move/from16 v4, p2
 
-    .line 55
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     return-void
@@ -543,7 +486,6 @@
 
     move-object/from16 v7, p1
 
-    .line 56
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -592,7 +534,6 @@
 
     move-result-object v1
 
-    .line 57
     iget-object v2, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     invoke-virtual {p0, v1, v2}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Ljava/lang/String;Landroid/graphics/Paint;)V
@@ -601,7 +542,6 @@
 
     div-float v2, p2, v12
 
-    .line 58
     iget-object v3, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->m:Landroid/graphics/Rect;
 
     invoke-virtual {v3}, Landroid/graphics/Rect;->width()I
@@ -622,14 +562,12 @@
 
     sub-float v3, p3, v3
 
-    .line 59
     iget-object v4, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     invoke-virtual {v7, v1, v2, v3, v4}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
     const/high16 v14, 0x3f800000    # 1.0f
 
-    .line 60
     invoke-static {v13, v14}, Ljava/lang/Math;->min(FF)F
 
     move-result v4
@@ -644,10 +582,8 @@
 
     move/from16 v5, p3
 
-    .line 61
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 62
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -690,14 +626,12 @@
 
     move-result-object v1
 
-    .line 63
     iget-object v2, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     invoke-virtual {p0, v1, v2}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Ljava/lang/String;Landroid/graphics/Paint;)V
 
     div-float v2, p3, v12
 
-    .line 64
     iget-object v3, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->m:Landroid/graphics/Rect;
 
     invoke-virtual {v3}, Landroid/graphics/Rect;->height()I
@@ -716,12 +650,10 @@
 
     sub-float v2, v13, v2
 
-    .line 65
     iget-object v4, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     invoke-virtual {v7, v1, v3, v2, v4}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 66
     invoke-static {v13, v14}, Ljava/lang/Math;->max(FF)F
 
     move-result v5
@@ -736,7 +668,6 @@
 
     move/from16 v4, p2
 
-    .line 67
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     return-void
@@ -745,7 +676,6 @@
 .method private a(Landroid/graphics/Canvas;Landroidx/constraintlayout/motion/widget/n;)V
     .locals 6
 
-    .line 68
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     invoke-virtual {v0}, Landroid/graphics/Path;->reset()V
@@ -765,12 +695,10 @@
 
     div-float/2addr v3, v2
 
-    .line 69
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->j:[F
 
     invoke-virtual {p2, v3, v2, v0}, Landroidx/constraintlayout/motion/widget/n;->a(F[FI)V
 
-    .line 70
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->j:[F
@@ -783,7 +711,6 @@
 
     invoke-virtual {v2, v4, v3}, Landroid/graphics/Path;->moveTo(FF)V
 
-    .line 71
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->j:[F
@@ -798,7 +725,6 @@
 
     invoke-virtual {v2, v4, v3}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 72
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->j:[F
@@ -813,7 +739,6 @@
 
     invoke-virtual {v2, v4, v3}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 73
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->j:[F
@@ -828,7 +753,6 @@
 
     invoke-virtual {v2, v4, v3}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 74
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     invoke-virtual {v2}, Landroid/graphics/Path;->close()V
@@ -837,7 +761,6 @@
 
     goto :goto_0
 
-    .line 75
     :cond_0
     iget-object p2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
 
@@ -847,10 +770,8 @@
 
     const/high16 p2, 0x40000000    # 2.0f
 
-    .line 76
     invoke-virtual {p1, p2, p2}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 77
     iget-object p2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
@@ -859,17 +780,14 @@
 
     const/high16 p2, -0x40000000    # -2.0f
 
-    .line 78
     invoke-virtual {p1, p2, p2}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 79
     iget-object p2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
 
     const/high16 v0, -0x10000
 
     invoke-virtual {p2, v0}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 80
     iget-object p2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
@@ -888,13 +806,11 @@
 
     const/4 v2, 0x0
 
-    .line 28
     :goto_0
     iget v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->l:I
 
     if-ge v0, v3, :cond_2
 
-    .line 29
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b:[I
 
     aget v3, v3, v0
@@ -905,7 +821,6 @@
 
     const/4 v1, 0x1
 
-    .line 30
     :cond_0
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b:[I
 
@@ -925,13 +840,11 @@
     :cond_2
     if-eqz v1, :cond_3
 
-    .line 31
     invoke-direct {p0, p1}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d(Landroid/graphics/Canvas;)V
 
     :cond_3
     if-eqz v2, :cond_4
 
-    .line 32
     invoke-direct {p0, p1}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->c(Landroid/graphics/Canvas;)V
 
     :cond_4
@@ -941,7 +854,6 @@
 .method private b(Landroid/graphics/Canvas;FF)V
     .locals 12
 
-    .line 33
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a:[F
 
     const/4 v1, 0x0
@@ -950,17 +862,14 @@
 
     const/4 v2, 0x1
 
-    .line 34
     aget v3, v0, v2
 
-    .line 35
     array-length v4, v0
 
     add-int/lit8 v4, v4, -0x2
 
     aget v4, v0, v4
 
-    .line 36
     array-length v5, v0
 
     sub-int/2addr v5, v2
@@ -975,7 +884,6 @@
 
     float-to-double v7, v2
 
-    .line 37
     invoke-static {v5, v6, v7, v8}, Ljava/lang/Math;->hypot(DD)D
 
     move-result-wide v5
@@ -1008,15 +916,12 @@
 
     add-float v10, v3, v5
 
-    .line 38
     new-instance v5, Landroid/graphics/Path;
 
     invoke-direct {v5}, Landroid/graphics/Path;-><init>()V
 
-    .line 39
     invoke-virtual {v5, p2, p3}, Landroid/graphics/Path;->moveTo(FF)V
 
-    .line 40
     invoke-virtual {v5, v9, v10}, Landroid/graphics/Path;->lineTo(FF)V
 
     sub-float v0, v9, p2
@@ -1027,14 +932,12 @@
 
     float-to-double v3, v3
 
-    .line 41
     invoke-static {v0, v1, v3, v4}, Ljava/lang/Math;->hypot(DD)D
 
     move-result-wide v0
 
     double-to-float v0, v0
 
-    .line 42
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1061,7 +964,6 @@
 
     move-result-object v4
 
-    .line 43
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     invoke-virtual {p0, v4, v1}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Ljava/lang/String;Landroid/graphics/Paint;)V
@@ -1070,7 +972,6 @@
 
     div-float/2addr v0, v1
 
-    .line 44
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->m:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
@@ -1083,7 +984,6 @@
 
     sub-float v6, v0, v1
 
-    .line 45
     iget-object v8, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->h:Landroid/graphics/Paint;
 
     const/high16 v7, -0x3e600000    # -20.0f
@@ -1092,7 +992,6 @@
 
     invoke-virtual/range {v3 .. v8}, Landroid/graphics/Canvas;->drawTextOnPath(Ljava/lang/String;Landroid/graphics/Path;FFLandroid/graphics/Paint;)V
 
-    .line 46
     iget-object v11, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->g:Landroid/graphics/Paint;
 
     move-object v6, p1
@@ -1117,17 +1016,14 @@
 
     move-object/from16 v9, p4
 
-    .line 1
     iget-object v0, v9, Landroidx/constraintlayout/motion/widget/n;->a:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
 
     move-result v0
 
-    .line 3
     iget-object v1, v9, Landroidx/constraintlayout/motion/widget/n;->a:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getHeight()I
@@ -1161,7 +1057,6 @@
 
     if-ne v8, v0, :cond_1
 
-    .line 4
     iget-object v1, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b:[I
 
     add-int/lit8 v2, v14, -0x1
@@ -1172,7 +1067,6 @@
 
     goto/16 :goto_5
 
-    .line 5
     :cond_1
     iget-object v1, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->c:[F
 
@@ -1182,15 +1076,12 @@
 
     add-int/2addr v2, v13
 
-    .line 6
     aget v4, v1, v2
 
-    .line 7
     iget-object v1, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     invoke-virtual {v1}, Landroid/graphics/Path;->reset()V
 
-    .line 8
     iget-object v1, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     const/high16 v2, 0x41200000    # 10.0f
@@ -1199,35 +1090,30 @@
 
     invoke-virtual {v1, v5, v3}, Landroid/graphics/Path;->moveTo(FF)V
 
-    .line 9
     iget-object v1, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     add-float v3, v5, v2
 
     invoke-virtual {v1, v3, v4}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 10
     iget-object v1, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     sub-float v3, v4, v2
 
     invoke-virtual {v1, v5, v3}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 11
     iget-object v1, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     sub-float v2, v5, v2
 
     invoke-virtual {v1, v2, v4}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 12
     iget-object v1, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
     invoke-virtual {v1}, Landroid/graphics/Path;->close()V
 
     add-int/lit8 v1, v14, -0x1
 
-    .line 13
     invoke-virtual {v9, v1}, Landroidx/constraintlayout/motion/widget/n;->a(I)Landroidx/constraintlayout/motion/widget/p;
 
     const/4 v3, 0x3
@@ -1236,7 +1122,6 @@
 
     if-ne v8, v0, :cond_5
 
-    .line 14
     iget-object v0, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b:[I
 
     aget v2, v0, v1
@@ -1247,7 +1132,6 @@
 
     sub-float v1, v4, v16
 
-    .line 15
     invoke-direct {v6, v7, v0, v1}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b(Landroid/graphics/Canvas;FF)V
 
     :cond_2
@@ -1260,7 +1144,6 @@
 
     goto :goto_3
 
-    .line 16
     :cond_3
     aget v2, v0, v1
 
@@ -1270,12 +1153,10 @@
 
     sub-float v1, v4, v16
 
-    .line 17
     invoke-direct {v6, v7, v0, v1}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Landroid/graphics/Canvas;FF)V
 
     goto :goto_2
 
-    .line 18
     :cond_4
     aget v0, v0, v1
 
@@ -1301,10 +1182,8 @@
 
     move v5, v12
 
-    .line 19
     invoke-direct/range {v0 .. v5}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Landroid/graphics/Canvas;FFII)V
 
-    .line 20
     :goto_3
     iget-object v0, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
@@ -1328,7 +1207,6 @@
 
     sub-float v4, v17, v16
 
-    .line 21
     invoke-direct {v6, v7, v5, v4}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b(Landroid/graphics/Canvas;FF)V
 
     :cond_6
@@ -1338,7 +1216,6 @@
 
     sub-float v4, v17, v16
 
-    .line 22
     invoke-direct {v6, v7, v5, v4}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Landroid/graphics/Canvas;FF)V
 
     :cond_7
@@ -1358,10 +1235,8 @@
 
     move v5, v12
 
-    .line 23
     invoke-direct/range {v0 .. v5}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Landroid/graphics/Canvas;FFII)V
 
-    .line 24
     :cond_8
     iget-object v0, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
@@ -1374,7 +1249,6 @@
 
     goto/16 :goto_1
 
-    .line 25
     :cond_9
     iget-object v0, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a:[F
 
@@ -1384,7 +1258,6 @@
 
     const/4 v1, 0x0
 
-    .line 26
     aget v1, v0, v1
 
     aget v0, v0, v13
@@ -1395,7 +1268,6 @@
 
     invoke-virtual {v7, v1, v0, v3, v2}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 27
     iget-object v0, v6, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a:[F
 
     array-length v1, v0
@@ -1423,7 +1295,6 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     iget-object v1, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a:[F
 
     const/4 v2, 0x0
@@ -1432,24 +1303,20 @@
 
     const/4 v3, 0x1
 
-    .line 2
     aget v4, v1, v3
 
-    .line 3
     array-length v5, v1
 
     add-int/lit8 v5, v5, -0x2
 
     aget v5, v1, v5
 
-    .line 4
     array-length v6, v1
 
     sub-int/2addr v6, v3
 
     aget v1, v1, v6
 
-    .line 5
     invoke-static {v2, v5}, Ljava/lang/Math;->min(FF)F
 
     move-result v7
@@ -1458,7 +1325,6 @@
 
     move-result v8
 
-    .line 6
     invoke-static {v2, v5}, Ljava/lang/Math;->max(FF)F
 
     move-result v9
@@ -1471,10 +1337,8 @@
 
     move-object/from16 v6, p1
 
-    .line 7
     invoke-virtual/range {v6 .. v11}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 8
     invoke-static {v2, v5}, Ljava/lang/Math;->min(FF)F
 
     move-result v13
@@ -1483,7 +1347,6 @@
 
     move-result v14
 
-    .line 9
     invoke-static {v2, v5}, Ljava/lang/Math;->min(FF)F
 
     move-result v15
@@ -1498,7 +1361,6 @@
 
     move-object/from16 v17, v1
 
-    .line 10
     invoke-virtual/range {v12 .. v17}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
     return-void
@@ -1507,7 +1369,6 @@
 .method private d(Landroid/graphics/Canvas;)V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a:[F
 
     const/4 v1, 0x0
@@ -1548,7 +1409,6 @@
 
     if-ne p2, v0, :cond_0
 
-    .line 29
     invoke-direct {p0, p1}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b(Landroid/graphics/Canvas;)V
 
     :cond_0
@@ -1556,7 +1416,6 @@
 
     if-ne p2, v0, :cond_1
 
-    .line 30
     invoke-direct {p0, p1}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d(Landroid/graphics/Canvas;)V
 
     :cond_1
@@ -1564,14 +1423,11 @@
 
     if-ne p2, v0, :cond_2
 
-    .line 31
     invoke-direct {p0, p1}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->c(Landroid/graphics/Canvas;)V
 
-    .line 32
     :cond_2
     invoke-direct {p0, p1}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Landroid/graphics/Canvas;)V
 
-    .line 33
     invoke-direct {p0, p1, p2, p3, p4}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->b(Landroid/graphics/Canvas;IILandroidx/constraintlayout/motion/widget/n;)V
 
     return-void
@@ -1592,7 +1448,6 @@
 
     if-eqz p2, :cond_8
 
-    .line 1
     invoke-virtual {p2}, Ljava/util/HashMap;->size()I
 
     move-result v0
@@ -1601,11 +1456,9 @@
 
     goto/16 :goto_1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 3
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->p:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->isInEditMode()Z
@@ -1620,7 +1473,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 4
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1665,7 +1517,6 @@
 
     const/high16 v1, 0x41200000    # 10.0f
 
-    .line 5
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->p:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v2}, Landroid/view/ViewGroup;->getHeight()I
@@ -1682,7 +1533,6 @@
 
     const/high16 v1, 0x41300000    # 11.0f
 
-    .line 6
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->p:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     invoke-virtual {v2}, Landroid/view/ViewGroup;->getHeight()I
@@ -1697,7 +1547,6 @@
 
     invoke-virtual {p1, v0, v1, v2, v3}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 7
     :cond_1
     invoke-virtual {p2}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
@@ -1721,7 +1570,6 @@
 
     check-cast v0, Landroidx/constraintlayout/motion/widget/n;
 
-    .line 8
     invoke-virtual {v0}, Landroidx/constraintlayout/motion/widget/n;->a()I
 
     move-result v1
@@ -1739,7 +1587,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_4
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->c:[F
 
@@ -1753,10 +1600,8 @@
 
     if-lt v1, v2, :cond_2
 
-    .line 10
     div-int/lit8 v2, p3, 0x10
 
-    .line 11
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a:[F
 
     if-eqz v3, :cond_5
@@ -1770,19 +1615,16 @@
     :cond_5
     mul-int/lit8 v3, v2, 0x2
 
-    .line 12
     new-array v3, v3, [F
 
     iput-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a:[F
 
-    .line 13
     new-instance v3, Landroid/graphics/Path;
 
     invoke-direct {v3}, Landroid/graphics/Path;-><init>()V
 
     iput-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->d:Landroid/graphics/Path;
 
-    .line 14
     :cond_6
     iget v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->o:I
 
@@ -1792,65 +1634,54 @@
 
     invoke-virtual {p1, v4, v3}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 15
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
 
     const/high16 v4, 0x77000000
 
     invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 16
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->i:Landroid/graphics/Paint;
 
     invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 17
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->f:Landroid/graphics/Paint;
 
     invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 18
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->g:Landroid/graphics/Paint;
 
     invoke-virtual {v3, v4}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 19
     iget-object v3, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a:[F
 
     invoke-virtual {v0, v3, v2}, Landroidx/constraintlayout/motion/widget/n;->a([FI)V
 
-    .line 20
     iget v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->l:I
 
     invoke-virtual {p0, p1, v1, v2, v0}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Landroid/graphics/Canvas;IILandroidx/constraintlayout/motion/widget/n;)V
 
-    .line 21
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->e:Landroid/graphics/Paint;
 
     const/16 v3, -0x55cd
 
     invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 22
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->f:Landroid/graphics/Paint;
 
     const v3, -0x1f8a66
 
     invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 23
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->i:Landroid/graphics/Paint;
 
     invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 24
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->g:Landroid/graphics/Paint;
 
     const v3, -0xcc5600
 
     invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 25
     iget v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->o:I
 
     neg-int v3, v2
@@ -1863,7 +1694,6 @@
 
     invoke-virtual {p1, v3, v2}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 26
     iget v2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->l:I
 
     invoke-virtual {p0, p1, v1, v2, v0}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Landroid/graphics/Canvas;IILandroidx/constraintlayout/motion/widget/n;)V
@@ -1872,12 +1702,10 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 27
     invoke-direct {p0, p1, v0}, Landroidx/constraintlayout/motion/widget/MotionLayout$d;->a(Landroid/graphics/Canvas;Landroidx/constraintlayout/motion/widget/n;)V
 
     goto/16 :goto_0
 
-    .line 28
     :cond_7
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
@@ -1889,7 +1717,6 @@
 .method a(Ljava/lang/String;Landroid/graphics/Paint;)V
     .locals 3
 
-    .line 35
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0

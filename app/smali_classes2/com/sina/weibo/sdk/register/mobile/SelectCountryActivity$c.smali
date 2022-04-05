@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;
 .super Landroid/widget/BaseAdapter;
-.source "SelectCountryActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;-><init>(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)V
 
     return-void
@@ -42,7 +39,6 @@
 .method private a(I)Lcom/sina/weibo/sdk/register/mobile/SelectCountryTitleView;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryTitleView;
 
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
@@ -55,7 +51,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
     const-string v1, "\u5e38\u7528"
@@ -77,7 +72,6 @@
 
     int-to-char p1, p1
 
-    .line 3
     invoke-static {p1}, Ljava/lang/String;->valueOf(C)Ljava/lang/String;
 
     move-result-object p1
@@ -93,7 +87,6 @@
 .method public getCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->a(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)Ljava/util/List;
@@ -102,7 +95,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->a(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)Ljava/util/List;
@@ -124,7 +116,6 @@
 .method public getItem(I)Ljava/lang/Object;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
     invoke-static {v0}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->a(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)Ljava/util/List;
@@ -149,7 +140,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
@@ -165,7 +155,6 @@
 
     return-object v1
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
@@ -179,7 +168,6 @@
 
     check-cast p1, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$d;
 
-    .line 4
     iget v0, p1, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$d;->b:I
 
     const/4 v2, -0x1
@@ -188,7 +176,6 @@
 
     return-object v1
 
-    .line 5
     :cond_2
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
@@ -224,7 +211,6 @@
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 2
 
-    .line 1
     iget-object p3, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
     invoke-static {p3}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->a(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)Ljava/util/List;
@@ -241,12 +227,10 @@
 
     if-nez p2, :cond_1
 
-    .line 2
     iget p2, p1, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$d;->b:I
 
     if-ne p2, p3, :cond_0
 
-    .line 3
     iget p1, p1, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$d;->a:I
 
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a(I)Lcom/sina/weibo/sdk/register/mobile/SelectCountryTitleView;
@@ -255,7 +239,6 @@
 
     goto/16 :goto_1
 
-    .line 4
     :cond_0
     iget-object p2, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
@@ -275,7 +258,6 @@
 
     check-cast p1, Lcom/sina/weibo/sdk/register/mobile/Country;
 
-    .line 5
     new-instance p2, Lcom/sina/weibo/sdk/register/mobile/SelectCountryItemView;
 
     iget-object p3, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
@@ -295,23 +277,19 @@
 
     goto :goto_1
 
-    .line 6
     :cond_1
     iget v0, p1, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$d;->b:I
 
     if-ne v0, p3, :cond_4
 
-    .line 7
     instance-of p3, p2, Lcom/sina/weibo/sdk/register/mobile/SelectCountryTitleView;
 
     if-eqz p3, :cond_3
 
-    .line 8
     iget p1, p1, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$d;->a:I
 
     if-nez p1, :cond_2
 
-    .line 9
     move-object p1, p2
 
     check-cast p1, Lcom/sina/weibo/sdk/register/mobile/SelectCountryTitleView;
@@ -330,7 +308,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_2
     invoke-direct {p0, p1}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a(I)Lcom/sina/weibo/sdk/register/mobile/SelectCountryTitleView;
 
@@ -338,7 +315,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_3
     iget p1, p1, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$d;->a:I
 
@@ -348,7 +324,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_4
     iget-object p3, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 
@@ -368,12 +343,10 @@
 
     check-cast p1, Lcom/sina/weibo/sdk/register/mobile/Country;
 
-    .line 13
     instance-of p3, p2, Lcom/sina/weibo/sdk/register/mobile/SelectCountryTitleView;
 
     if-eqz p3, :cond_5
 
-    .line 14
     new-instance p2, Lcom/sina/weibo/sdk/register/mobile/SelectCountryItemView;
 
     iget-object p3, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
@@ -390,7 +363,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_5
     move-object p3, p2
 

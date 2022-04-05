@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/internal/TextScale;
 .super Landroidx/transition/Transition;
-.source "TextScale.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/transition/Transition;-><init>()V
 
     return-void
@@ -32,17 +30,14 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p1, Landroidx/transition/x;->b:Landroid/view/View;
 
     instance-of v1, v0, Landroid/widget/TextView;
 
     if-eqz v1, :cond_0
 
-    .line 2
     check-cast v0, Landroid/widget/TextView;
 
-    .line 3
     iget-object p1, p1, Landroidx/transition/x;->a:Ljava/util/Map;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getScaleX()F
@@ -70,7 +65,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/internal/TextScale;->captureValues(Landroidx/transition/x;)V
 
     return-void
@@ -83,7 +77,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/android/material/internal/TextScale;->captureValues(Landroidx/transition/x;)V
 
     return-void
@@ -110,7 +103,6 @@
 
     if-eqz p3, :cond_4
 
-    .line 1
     iget-object v0, p2, Landroidx/transition/x;->b:Landroid/view/View;
 
     instance-of v0, v0, Landroid/widget/TextView;
@@ -125,19 +117,15 @@
 
     goto :goto_1
 
-    .line 2
     :cond_0
     check-cast v0, Landroid/widget/TextView;
 
-    .line 3
     iget-object p2, p2, Landroidx/transition/x;->a:Ljava/util/Map;
 
-    .line 4
     iget-object p3, p3, Landroidx/transition/x;->a:Ljava/util/Map;
 
     const-string v1, "android:textscale:scale"
 
-    .line 5
     invoke-interface {p2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
@@ -161,7 +149,6 @@
     :cond_1
     const/high16 p2, 0x3f800000    # 1.0f
 
-    .line 6
     :goto_0
     invoke-interface {p3, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -199,12 +186,10 @@
 
     aput v3, p1, p2
 
-    .line 7
     invoke-static {p1}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
     move-result-object p1
 
-    .line 8
     new-instance p2, Lcom/google/android/material/internal/TextScale$1;
 
     invoke-direct {p2, p0, v0}, Lcom/google/android/material/internal/TextScale$1;-><init>(Lcom/google/android/material/internal/TextScale;Landroid/widget/TextView;)V

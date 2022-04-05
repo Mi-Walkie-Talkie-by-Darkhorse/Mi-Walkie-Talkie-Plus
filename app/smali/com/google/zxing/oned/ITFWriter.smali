@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/oned/ITFWriter;
 .super Lcom/google/zxing/oned/OneDimensionalCodeWriter;
-.source "ITFWriter.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/google/zxing/oned/ITFWriter;->START_PATTERN:[I
@@ -26,7 +24,6 @@
 
     new-array v0, v0, [I
 
-    .line 2
     fill-array-data v0, :array_1
 
     sput-object v0, Lcom/google/zxing/oned/ITFWriter;->END_PATTERN:[I
@@ -54,7 +51,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/oned/OneDimensionalCodeWriter;-><init>()V
 
     return-void
@@ -83,19 +79,16 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/zxing/BarcodeFormat;->ITF:Lcom/google/zxing/BarcodeFormat;
 
     if-ne p2, v0, :cond_0
 
-    .line 2
     invoke-super/range {p0 .. p5}, Lcom/google/zxing/oned/OneDimensionalCodeWriter;->encode(Ljava/lang/String;Lcom/google/zxing/BarcodeFormat;IILjava/util/Map;)Lcom/google/zxing/common/BitMatrix;
 
     move-result-object p1
 
     return-object p1
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -119,12 +112,10 @@
 .method public encode(Ljava/lang/String;)[Z
     .locals 13
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    .line 5
     rem-int/lit8 v1, v0, 0x2
 
     if-nez v1, :cond_3
@@ -137,10 +128,8 @@
 
     add-int/lit8 v1, v1, 0x9
 
-    .line 6
     new-array v1, v1, [Z
 
-    .line 7
     sget-object v2, Lcom/google/zxing/oned/ITFWriter;->START_PATTERN:[I
 
     const/4 v3, 0x0
@@ -156,7 +145,6 @@
     :goto_0
     if-ge v5, v0, :cond_1
 
-    .line 8
     invoke-virtual {p1, v5}, Ljava/lang/String;->charAt(I)C
 
     move-result v6
@@ -169,7 +157,6 @@
 
     add-int/lit8 v8, v5, 0x1
 
-    .line 9
     invoke-virtual {p1, v8}, Ljava/lang/String;->charAt(I)C
 
     move-result v8
@@ -189,7 +176,6 @@
 
     mul-int/lit8 v10, v9, 0x2
 
-    .line 10
     sget-object v11, Lcom/google/zxing/oned/ITFReader;->PATTERNS:[[I
 
     aget-object v12, v11, v6
@@ -200,7 +186,6 @@
 
     add-int/2addr v10, v4
 
-    .line 11
     aget-object v11, v11, v8
 
     aget v11, v11, v9
@@ -211,7 +196,6 @@
 
     goto :goto_1
 
-    .line 12
     :cond_0
     invoke-static {v1, v2, v7, v4}, Lcom/google/zxing/oned/OneDimensionalCodeWriter;->appendPattern([ZI[IZ)I
 
@@ -223,7 +207,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_1
     sget-object p1, Lcom/google/zxing/oned/ITFWriter;->END_PATTERN:[I
 
@@ -231,7 +214,6 @@
 
     return-object v1
 
-    .line 14
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -251,7 +233,6 @@
 
     throw p1
 
-    .line 15
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

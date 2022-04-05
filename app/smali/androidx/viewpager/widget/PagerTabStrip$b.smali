@@ -1,6 +1,5 @@
 .class Landroidx/viewpager/widget/PagerTabStrip$b;
 .super Ljava/lang/Object;
-.source "PagerTabStrip.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/viewpager/widget/PagerTabStrip;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager/widget/PagerTabStrip$b;->a:Landroidx/viewpager/widget/PagerTabStrip;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/viewpager/widget/PagerTabStrip$b;->a:Landroidx/viewpager/widget/PagerTabStrip;
 
     iget-object p1, p1, Landroidx/viewpager/widget/PagerTitleStrip;->a:Landroidx/viewpager/widget/ViewPager;

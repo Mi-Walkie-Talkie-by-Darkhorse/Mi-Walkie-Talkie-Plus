@@ -1,6 +1,5 @@
 .class Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;
 .super Ljava/lang/Object;
-.source "BaseEncoding.java"
 
 # interfaces
 .implements Lcom/google/common/io/GwtWorkarounds$ByteOutput;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;Lcom/google/common/io/GwtWorkarounds$CharOutput;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
 
     iput-object p2, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->val$out:Lcom/google/common/io/GwtWorkarounds$CharOutput;
@@ -42,13 +40,10 @@
 
     const/4 p1, 0x0
 
-    .line 2
     iput p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBuffer:I
 
-    .line 3
     iput p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBufferLength:I
 
-    .line 4
     iput p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->writtenChars:I
 
     return-void
@@ -64,12 +59,10 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBufferLength:I
 
     if-lez v0, :cond_0
 
-    .line 2
     iget v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBuffer:I
 
     iget-object v1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
@@ -96,7 +89,6 @@
 
     and-int/2addr v0, v1
 
-    .line 3
     iget-object v1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->val$out:Lcom/google/common/io/GwtWorkarounds$CharOutput;
 
     iget-object v2, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
@@ -111,14 +103,12 @@
 
     invoke-interface {v1, v0}, Lcom/google/common/io/GwtWorkarounds$CharOutput;->write(C)V
 
-    .line 4
     iget v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->writtenChars:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->writtenChars:I
 
-    .line 5
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
 
     invoke-static {v0}, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;->access$100(Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;)Ljava/lang/Character;
@@ -127,7 +117,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 6
     :goto_0
     iget v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->writtenChars:I
 
@@ -143,7 +132,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 7
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->val$out:Lcom/google/common/io/GwtWorkarounds$CharOutput;
 
     iget-object v1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
@@ -158,7 +146,6 @@
 
     invoke-interface {v0, v1}, Lcom/google/common/io/GwtWorkarounds$CharOutput;->write(C)V
 
-    .line 8
     iget v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->writtenChars:I
 
     add-int/lit8 v0, v0, 0x1
@@ -167,7 +154,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->val$out:Lcom/google/common/io/GwtWorkarounds$CharOutput;
 
@@ -184,7 +170,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->val$out:Lcom/google/common/io/GwtWorkarounds$CharOutput;
 
     invoke-interface {v0}, Lcom/google/common/io/GwtWorkarounds$CharOutput;->flush()V
@@ -200,7 +185,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBuffer:I
 
     shl-int/lit8 v0, v0, 0x8
@@ -211,17 +195,14 @@
 
     or-int/2addr p1, v0
 
-    .line 2
     iput p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBuffer:I
 
-    .line 3
     iget p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBufferLength:I
 
     add-int/lit8 p1, p1, 0x8
 
     iput p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBufferLength:I
 
-    .line 4
     :goto_0
     iget p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBufferLength:I
 
@@ -235,7 +216,6 @@
 
     if-lt p1, v0, :cond_0
 
-    .line 5
     iget p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBuffer:I
 
     iget v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBufferLength:I
@@ -262,7 +242,6 @@
 
     and-int/2addr p1, v0
 
-    .line 6
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->val$out:Lcom/google/common/io/GwtWorkarounds$CharOutput;
 
     iget-object v1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;
@@ -277,14 +256,12 @@
 
     invoke-interface {v0, p1}, Lcom/google/common/io/GwtWorkarounds$CharOutput;->write(C)V
 
-    .line 7
     iget p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->writtenChars:I
 
     add-int/lit8 p1, p1, 0x1
 
     iput p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->writtenChars:I
 
-    .line 8
     iget p1, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->bitBufferLength:I
 
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$StandardBaseEncoding$1;->this$0:Lcom/google/common/io/BaseEncoding$StandardBaseEncoding;

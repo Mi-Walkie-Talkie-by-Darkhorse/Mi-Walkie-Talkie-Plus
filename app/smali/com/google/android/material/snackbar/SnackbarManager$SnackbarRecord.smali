@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/snackbar/SnackbarManager$SnackbarRecord;
 .super Ljava/lang/Object;
-.source "SnackbarManager.java"
 
 
 # annotations
@@ -37,17 +36,14 @@
 .method constructor <init>(ILcom/google/android/material/snackbar/SnackbarManager$Callback;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/google/android/material/snackbar/SnackbarManager$SnackbarRecord;->callback:Ljava/lang/ref/WeakReference;
 
-    .line 3
     iput p1, p0, Lcom/google/android/material/snackbar/SnackbarManager$SnackbarRecord;->duration:I
 
     return-void
@@ -64,7 +60,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarManager$SnackbarRecord;->callback:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;

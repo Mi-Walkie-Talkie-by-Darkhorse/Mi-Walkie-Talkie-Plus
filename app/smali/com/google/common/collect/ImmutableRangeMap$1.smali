@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ImmutableRangeMap$1;
 .super Lcom/google/common/collect/ImmutableList;
-.source "ImmutableRangeMap.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
 .method constructor <init>(Lcom/google/common/collect/ImmutableRangeMap;IILcom/google/common/collect/Range;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->this$0:Lcom/google/common/collect/ImmutableRangeMap;
 
     iput p2, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->val$len:I
@@ -62,14 +60,12 @@
         }
     .end annotation
 
-    .line 2
     iget v0, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->val$len:I
 
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkElementIndex(II)I
 
     if-eqz p1, :cond_1
 
-    .line 3
     iget v0, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->val$len:I
 
     add-int/lit8 v0, v0, -0x1
@@ -78,7 +74,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->this$0:Lcom/google/common/collect/ImmutableRangeMap;
 
@@ -98,7 +93,6 @@
 
     return-object p1
 
-    .line 5
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->this$0:Lcom/google/common/collect/ImmutableRangeMap;
@@ -129,7 +123,6 @@
 .method public bridge synthetic get(I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableRangeMap$1;->get(I)Lcom/google/common/collect/Range;
 
     move-result-object p1
@@ -148,7 +141,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/common/collect/ImmutableRangeMap$1;->val$len:I
 
     return v0

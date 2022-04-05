@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/MapTileRequestState;
 .super Ljava/lang/Object;
-.source "MapTileRequestState.java"
 
 
 # instance fields
@@ -25,23 +24,18 @@
 .method public constructor <init>(Lorg/osmdroid/tileprovider/MapTile;[Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;Lorg/osmdroid/tileprovider/IMapTileProviderCallback;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Lorg/osmdroid/tileprovider/MapTileRequestState;->mProviderQueue:Ljava/util/Queue;
 
-    .line 3
     invoke-static {v0, p2}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
-    .line 4
     iput-object p1, p0, Lorg/osmdroid/tileprovider/MapTileRequestState;->mMapTile:Lorg/osmdroid/tileprovider/MapTile;
 
-    .line 5
     iput-object p3, p0, Lorg/osmdroid/tileprovider/MapTileRequestState;->mCallback:Lorg/osmdroid/tileprovider/IMapTileProviderCallback;
 
     return-void
@@ -52,7 +46,6 @@
 .method public getCallback()Lorg/osmdroid/tileprovider/IMapTileProviderCallback;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/MapTileRequestState;->mCallback:Lorg/osmdroid/tileprovider/IMapTileProviderCallback;
 
     return-object v0
@@ -61,7 +54,6 @@
 .method public getCurrentProvider()Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/MapTileRequestState;->mCurrentProvider:Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;
 
     return-object v0
@@ -70,7 +62,6 @@
 .method public getMapTile()Lorg/osmdroid/tileprovider/MapTile;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/MapTileRequestState;->mMapTile:Lorg/osmdroid/tileprovider/MapTile;
 
     return-object v0
@@ -79,7 +70,6 @@
 .method public getNextProvider()Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/MapTileRequestState;->mProviderQueue:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->poll()Ljava/lang/Object;
@@ -96,7 +86,6 @@
 .method public isEmpty()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/MapTileRequestState;->mProviderQueue:Ljava/util/Queue;
 
     invoke-interface {v0}, Ljava/util/Queue;->isEmpty()Z

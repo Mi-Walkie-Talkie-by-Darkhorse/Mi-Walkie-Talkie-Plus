@@ -1,6 +1,5 @@
 .class public Lorg/apache/commons/lang/a;
 .super Ljava/lang/Object;
-.source "StringUtils.java"
 
 
 # direct methods
@@ -13,7 +12,6 @@
 
     return-object p0
 
-    .line 12
     :cond_0
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
@@ -35,7 +33,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -47,27 +44,23 @@
 
     return-object p0
 
-    .line 2
     :cond_1
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 3
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    .line 4
     invoke-static {v0}, Lorg/apache/commons/lang/ObjectUtils;->a(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 5
     :cond_2
     new-instance v1, Lorg/apache/commons/lang/b/a;
 
@@ -77,10 +70,8 @@
 
     if-eqz v0, :cond_3
 
-    .line 6
     invoke-virtual {v1, v0}, Lorg/apache/commons/lang/b/a;->a(Ljava/lang/Object;)Lorg/apache/commons/lang/b/a;
 
-    .line 7
     :cond_3
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -91,10 +82,8 @@
 
     if-eqz p1, :cond_4
 
-    .line 8
     invoke-virtual {v1, p1}, Lorg/apache/commons/lang/b/a;->a(Ljava/lang/String;)Lorg/apache/commons/lang/b/a;
 
-    .line 9
     :cond_4
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -102,12 +91,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 10
     invoke-virtual {v1, v0}, Lorg/apache/commons/lang/b/a;->a(Ljava/lang/Object;)Lorg/apache/commons/lang/b/a;
 
     goto :goto_0
 
-    .line 11
     :cond_5
     invoke-virtual {v1}, Lorg/apache/commons/lang/b/a;->toString()Ljava/lang/String;
 

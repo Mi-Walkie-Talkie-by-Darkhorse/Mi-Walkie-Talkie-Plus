@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/maps/model/CameraPosition$Builder;
 .super Ljava/lang/Object;
-.source "CameraPosition.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,10 +35,8 @@
 .method public constructor <init>(Lcom/amap/api/maps/model/CameraPosition;)V
     .locals 2
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iget-object v0, p1, Lcom/amap/api/maps/model/CameraPosition;->target:Lcom/amap/api/maps/model/LatLng;
 
     invoke-virtual {p0, v0}, Lcom/amap/api/maps/model/CameraPosition$Builder;->target(Lcom/amap/api/maps/model/LatLng;)Lcom/amap/api/maps/model/CameraPosition$Builder;
@@ -49,21 +45,18 @@
 
     iget v1, p1, Lcom/amap/api/maps/model/CameraPosition;->bearing:F
 
-    .line 4
     invoke-virtual {v0, v1}, Lcom/amap/api/maps/model/CameraPosition$Builder;->bearing(F)Lcom/amap/api/maps/model/CameraPosition$Builder;
 
     move-result-object v0
 
     iget v1, p1, Lcom/amap/api/maps/model/CameraPosition;->tilt:F
 
-    .line 5
     invoke-virtual {v0, v1}, Lcom/amap/api/maps/model/CameraPosition$Builder;->tilt(F)Lcom/amap/api/maps/model/CameraPosition$Builder;
 
     move-result-object v0
 
     iget p1, p1, Lcom/amap/api/maps/model/CameraPosition;->zoom:F
 
-    .line 6
     invoke-virtual {v0, p1}, Lcom/amap/api/maps/model/CameraPosition$Builder;->zoom(F)Lcom/amap/api/maps/model/CameraPosition$Builder;
 
     return-void
@@ -74,7 +67,6 @@
 .method public final bearing(F)Lcom/amap/api/maps/model/CameraPosition$Builder;
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/CameraPosition$Builder;->d:F
 
     return-object p0
@@ -85,7 +77,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/maps/model/CameraPosition$Builder;->a:Lcom/amap/api/maps/model/LatLng;
 
@@ -93,7 +84,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance v1, Lcom/amap/api/maps/model/CameraPosition;
 
@@ -118,7 +108,6 @@
 
     const-string v3, "CameraPosition"
 
-    .line 3
     invoke-static {v1, v3, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
@@ -127,7 +116,6 @@
 .method public final target(Lcom/amap/api/maps/model/LatLng;)Lcom/amap/api/maps/model/CameraPosition$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/CameraPosition$Builder;->a:Lcom/amap/api/maps/model/LatLng;
 
     return-object p0
@@ -136,7 +124,6 @@
 .method public final tilt(F)Lcom/amap/api/maps/model/CameraPosition$Builder;
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/CameraPosition$Builder;->c:F
 
     return-object p0
@@ -145,7 +132,6 @@
 .method public final zoom(F)Lcom/amap/api/maps/model/CameraPosition$Builder;
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/CameraPosition$Builder;->b:F
 
     return-object p0

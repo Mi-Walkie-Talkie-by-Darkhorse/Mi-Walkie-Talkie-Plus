@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/r$a;
 .super Landroidx/appcompat/graphics/drawable/c;
-.source "DropDownListView.java"
 
 
 # annotations
@@ -22,12 +21,10 @@
 .method constructor <init>(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/appcompat/graphics/drawable/c;-><init>(Landroid/graphics/drawable/Drawable;)V
 
     const/4 p1, 0x1
 
-    .line 2
     iput-boolean p1, p0, Landroidx/appcompat/widget/r$a;->a:Z
 
     return-void
@@ -38,7 +35,6 @@
 .method a(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Landroidx/appcompat/widget/r$a;->a:Z
 
     return-void
@@ -47,12 +43,10 @@
 .method public draw(Landroid/graphics/Canvas;)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/widget/r$a;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroidx/appcompat/graphics/drawable/c;->draw(Landroid/graphics/Canvas;)V
 
     :cond_0
@@ -62,12 +56,10 @@
 .method public setHotspot(FF)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/widget/r$a;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1, p2}, Landroidx/appcompat/graphics/drawable/c;->setHotspot(FF)V
 
     :cond_0
@@ -77,12 +69,10 @@
 .method public setHotspotBounds(IIII)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/widget/r$a;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1, p2, p3, p4}, Landroidx/appcompat/graphics/drawable/c;->setHotspotBounds(IIII)V
 
     :cond_0
@@ -92,12 +82,10 @@
 .method public setState([I)Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/widget/r$a;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroidx/appcompat/graphics/drawable/c;->setState([I)Z
 
     move-result p1
@@ -113,12 +101,10 @@
 .method public setVisible(ZZ)Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/appcompat/widget/r$a;->a:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1, p2}, Landroidx/appcompat/graphics/drawable/c;->setVisible(ZZ)Z
 
     move-result p1

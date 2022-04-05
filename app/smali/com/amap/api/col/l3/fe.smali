@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/fe;
 .super Landroid/widget/BaseExpandableListAdapter;
-.source "OfflineListAdapter.java"
 
 # interfaces
 .implements Landroid/widget/ExpandableListView$OnGroupCollapseListener;
@@ -50,29 +49,22 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Landroid/widget/BaseExpandableListAdapter;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/fe;->b:I
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/col/l3/fe;->c:Ljava/util/List;
 
-    .line 4
     iput-object p1, p0, Lcom/amap/api/col/l3/fe;->c:Ljava/util/List;
 
-    .line 5
     iput-object p2, p0, Lcom/amap/api/col/l3/fe;->d:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
-    .line 6
     iput-object p3, p0, Lcom/amap/api/col/l3/fe;->e:Landroid/content/Context;
 
-    .line 7
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p1
@@ -91,10 +83,8 @@
 
     const/4 v0, -0x1
 
-    .line 1
     iput v0, p0, Lcom/amap/api/col/l3/fe;->b:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/BaseExpandableListAdapter;->notifyDataSetChanged()V
 
     return-void
@@ -105,10 +95,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Lcom/amap/api/col/l3/fe;->b:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/BaseExpandableListAdapter;->notifyDataSetChanged()V
 
     return-void
@@ -135,7 +123,6 @@
 
     if-eqz p4, :cond_0
 
-    .line 1
     invoke-virtual {p4}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object p3
@@ -144,13 +131,11 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance p3, Lcom/amap/api/col/l3/fe$a;
 
     invoke-direct {p3, p0}, Lcom/amap/api/col/l3/fe$a;-><init>(Lcom/amap/api/col/l3/fe;)V
 
-    .line 3
     new-instance p4, Lcom/amap/api/col/l3/fi;
 
     iget-object p5, p0, Lcom/amap/api/col/l3/fe;->e:Landroid/content/Context;
@@ -161,23 +146,18 @@
 
     const/4 p5, 0x1
 
-    .line 4
     invoke-virtual {p4, p5}, Lcom/amap/api/col/l3/fi;->a(I)V
 
-    .line 5
     invoke-virtual {p4}, Lcom/amap/api/col/l3/fi;->a()Landroid/view/View;
 
     move-result-object p5
 
-    .line 6
     iput-object p4, p3, Lcom/amap/api/col/l3/fe$a;->a:Lcom/amap/api/col/l3/fi;
 
-    .line 7
     invoke-virtual {p5, p3}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
     move-object p4, p5
 
-    .line 8
     :goto_0
     iget-object p5, p0, Lcom/amap/api/col/l3/fe;->c:Ljava/util/List;
 
@@ -197,7 +177,6 @@
 
     check-cast p1, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 9
     iget-object p2, p3, Lcom/amap/api/col/l3/fe$a;->a:Lcom/amap/api/col/l3/fi;
 
     invoke-virtual {p2, p1}, Lcom/amap/api/col/l3/fi;->a(Lcom/amap/api/maps/offlinemap/OfflineMapCity;)V
@@ -212,7 +191,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Lcom/amap/api/col/l3/fe;->getGroupCount()I
 
     move-result v1
@@ -229,7 +207,6 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/fe;->c:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -248,7 +225,6 @@
 
     return p1
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/fe;->c:Ljava/util/List;
 
@@ -272,7 +248,6 @@
 .method public final getGroup(I)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/fe;->c:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -291,14 +266,12 @@
 .method public final getGroupCount()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/fe;->b:I
 
     const/4 v1, -0x1
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/fe;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -322,7 +295,6 @@
 
     if-nez p3, :cond_0
 
-    .line 1
     iget-object p2, p0, Lcom/amap/api/col/l3/fe;->e:Landroid/content/Context;
 
     const p3, 0x7f030003
@@ -338,7 +310,6 @@
     :cond_0
     const p2, 0x7f070011
 
-    .line 2
     invoke-virtual {p3, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -347,14 +318,12 @@
 
     const p4, 0x7f070012
 
-    .line 3
     invoke-virtual {p3, p4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p4
 
     check-cast p4, Landroid/widget/ImageView;
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/fe;->c:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -369,14 +338,12 @@
 
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 5
     iget-object p2, p0, Lcom/amap/api/col/l3/fe;->a:[Z
 
     aget-boolean p1, p2, p1
 
     if-eqz p1, :cond_1
 
-    .line 6
     invoke-static {}, Lcom/amap/api/col/l3/fm;->a()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -391,7 +358,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     invoke-static {}, Lcom/amap/api/col/l3/fm;->a()Landroid/content/res/Resources;
 
@@ -428,7 +394,6 @@
 .method public final onGroupCollapse(I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/fe;->a:[Z
 
     const/4 v1, 0x0
@@ -441,7 +406,6 @@
 .method public final onGroupExpand(I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/fe;->a:[Z
 
     const/4 v1, 0x1

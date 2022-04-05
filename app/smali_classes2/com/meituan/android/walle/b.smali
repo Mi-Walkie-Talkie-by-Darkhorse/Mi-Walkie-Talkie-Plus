@@ -1,6 +1,5 @@
 .class public Lcom/meituan/android/walle/b;
 .super Ljava/lang/Object;
-.source "ChannelInfo.java"
 
 
 # instance fields
@@ -21,10 +20,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/meituan/android/walle/b;->a:Ljava/lang/String;
 
     return-void
@@ -35,7 +32,6 @@
 .method public a()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/meituan/android/walle/b;->a:Ljava/lang/String;
 
     return-object v0

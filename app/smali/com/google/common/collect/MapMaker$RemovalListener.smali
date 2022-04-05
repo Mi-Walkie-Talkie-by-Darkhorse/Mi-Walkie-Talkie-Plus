@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/common/collect/MapMaker$RemovalListener;
 .super Ljava/lang/Object;
-.source "MapMaker.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/SingleOnSubscribe;
 .super Ljava/lang/Object;
-.source "SingleOnSubscribe.java"
 
 
 # annotations

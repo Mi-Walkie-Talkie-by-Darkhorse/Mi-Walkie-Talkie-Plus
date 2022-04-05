@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/u;
 .super Ljava/lang/Object;
-.source "ViewPageTracker.java"
 
 
 # static fields
@@ -40,14 +39,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lorg/json/JSONArray;
 
     invoke-direct {v0}, Lorg/json/JSONArray;-><init>()V
 
     sput-object v0, Lcom/umeng/analytics/pro/u;->d:Lorg/json/JSONArray;
 
-    .line 2
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -60,24 +57,20 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/umeng/analytics/pro/u;->f:Ljava/util/Map;
 
-    .line 3
     new-instance v0, Ljava/util/Stack;
 
     invoke-direct {v0}, Ljava/util/Stack;-><init>()V
 
     iput-object v0, p0, Lcom/umeng/analytics/pro/u;->a:Ljava/util/Stack;
 
-    .line 4
     invoke-static {}, Lcom/umeng/analytics/vshelper/PageNameMonitor;->getInstance()Lcom/umeng/analytics/vshelper/PageNameMonitor;
 
     move-result-object v0
@@ -92,20 +85,17 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
-    .line 2
     sget-object v1, Lcom/umeng/analytics/pro/u;->e:Ljava/lang/Object;
 
     monitor-enter v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     :try_start_1
     sget-object v2, Lcom/umeng/analytics/pro/u;->d:Lorg/json/JSONArray;
 
@@ -113,19 +103,16 @@
 
     move-result-object v2
 
-    .line 4
     new-instance v3, Lorg/json/JSONArray;
 
     invoke-direct {v3}, Lorg/json/JSONArray;-><init>()V
 
     sput-object v3, Lcom/umeng/analytics/pro/u;->d:Lorg/json/JSONArray;
 
-    .line 5
     monitor-exit v1
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 6
     :try_start_2
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
@@ -133,24 +120,20 @@
 
     if-lez v1, :cond_0
 
-    .line 7
     new-instance v1, Lorg/json/JSONArray;
 
     invoke-direct {v1, v2}, Lorg/json/JSONArray;-><init>(Ljava/lang/String;)V
 
     const-string v2, "__a"
 
-    .line 8
     invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 9
     invoke-virtual {v0}, Lorg/json/JSONObject;->length()I
 
     move-result v1
 
     if-lez v1, :cond_0
 
-    .line 10
     invoke-static {p0}, Lcom/umeng/analytics/pro/h;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/h;
 
     move-result-object p0
@@ -174,7 +157,6 @@
     :catchall_0
     move-exception p0
 
-    .line 11
     :try_start_3
     monitor-exit v1
     :try_end_3
@@ -204,21 +186,18 @@
 .method public a(Ljava/lang/String;)V
     .locals 9
 
-    .line 12
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 13
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 14
     iget-object v0, p0, Lcom/umeng/analytics/pro/u;->a:Ljava/util/Stack;
 
     invoke-virtual {v0}, Ljava/util/Stack;->size()I
@@ -227,7 +206,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 15
     iget-object v0, p0, Lcom/umeng/analytics/pro/u;->a:Ljava/util/Stack;
 
     invoke-virtual {v0}, Ljava/util/Stack;->peek()Ljava/lang/Object;
@@ -238,7 +216,6 @@
 
     const-string v1, "@"
 
-    .line 16
     filled-new-array {v1}, [Ljava/lang/String;
 
     move-result-object v5
@@ -251,7 +228,6 @@
 
     aput-object v0, v6, v1
 
-    .line 17
     sget-object v2, Lcom/umeng/analytics/pro/i;->F:Ljava/lang/String;
 
     const/4 v3, 0x0
@@ -264,18 +240,15 @@
 
     invoke-static/range {v2 .. v8}, Lcom/umeng/commonsdk/debug/UMLog;->aq(Ljava/lang/String;ILjava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
-    .line 18
     :cond_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/u;->b:Lcom/umeng/analytics/vshelper/a;
 
     invoke-interface {v0, p1}, Lcom/umeng/analytics/vshelper/a;->customPageBegin(Ljava/lang/String;)V
 
-    .line 19
     iget-object v0, p0, Lcom/umeng/analytics/pro/u;->f:Ljava/util/Map;
 
     monitor-enter v0
 
-    .line 20
     :try_start_0
     iget-object v1, p0, Lcom/umeng/analytics/pro/u;->f:Ljava/util/Map;
 
@@ -289,19 +262,16 @@
 
     invoke-interface {v1, p1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 21
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 22
     iget-object v1, p0, Lcom/umeng/analytics/pro/u;->a:Ljava/util/Stack;
 
     invoke-virtual {v1, p1}, Ljava/util/Stack;->push(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 23
     :cond_1
     monitor-exit v0
 
@@ -324,12 +294,10 @@
 .method public b()V
     .locals 11
 
-    .line 31
     iget-object v0, p0, Lcom/umeng/analytics/pro/u;->f:Ljava/util/Map;
 
     monitor-enter v0
 
-    .line 32
     :try_start_0
     iget-object v1, p0, Lcom/umeng/analytics/pro/u;->f:Ljava/util/Map;
 
@@ -359,7 +327,6 @@
 
     check-cast v5, Ljava/util/Map$Entry;
 
-    .line 33
     invoke-interface {v5}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v6
@@ -374,7 +341,6 @@
 
     if-lez v8, :cond_0
 
-    .line 34
     invoke-interface {v5}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v2
@@ -385,7 +351,6 @@
 
     move-result-wide v2
 
-    .line 35
     invoke-interface {v5}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
@@ -400,7 +365,6 @@
 
     goto :goto_0
 
-    .line 36
     :cond_1
     monitor-exit v0
     :try_end_0
@@ -408,7 +372,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 37
     invoke-virtual {p0, v2}, Lcom/umeng/analytics/pro/u;->b(Ljava/lang/String;)V
 
     :cond_2
@@ -417,7 +380,6 @@
     :catchall_0
     move-exception v1
 
-    .line 38
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -429,14 +391,12 @@
 .method public b(Ljava/lang/String;)V
     .locals 10
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_4
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/analytics/pro/u;->f:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -449,12 +409,10 @@
 
     if-eqz v0, :cond_3
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/analytics/pro/u;->f:Ljava/util/Map;
 
     monitor-enter v0
 
-    .line 4
     :try_start_0
     iget-object v3, p0, Lcom/umeng/analytics/pro/u;->f:Ljava/util/Map;
 
@@ -464,7 +422,6 @@
 
     check-cast v3, Ljava/lang/Long;
 
-    .line 5
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
@@ -473,7 +430,6 @@
 
     return-void
 
-    .line 6
     :cond_0
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
 
@@ -481,7 +437,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 7
     iget-object v0, p0, Lcom/umeng/analytics/pro/u;->a:Ljava/util/Stack;
 
     invoke-virtual {v0}, Ljava/util/Stack;->size()I
@@ -502,12 +457,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 8
     iget-object v0, p0, Lcom/umeng/analytics/pro/u;->a:Ljava/util/Stack;
 
     invoke-virtual {v0}, Ljava/util/Stack;->pop()Ljava/lang/Object;
 
-    .line 9
     :cond_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -519,12 +472,10 @@
 
     sub-long/2addr v4, v6
 
-    .line 10
     sget-object v6, Lcom/umeng/analytics/pro/u;->e:Ljava/lang/Object;
 
     monitor-enter v6
 
-    .line 11
     :try_start_1
     new-instance v0, Lorg/json/JSONObject;
 
@@ -532,34 +483,28 @@
 
     const-string v7, "page_name"
 
-    .line 12
     invoke-virtual {v0, v7, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v7, "duration"
 
-    .line 13
     invoke-virtual {v0, v7, v4, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;J)Lorg/json/JSONObject;
 
     const-string v4, "page_start"
 
-    .line 14
     invoke-virtual {v0, v4, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v3, "type"
 
-    .line 15
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/u;->a()I
 
     move-result v4
 
     invoke-virtual {v0, v3, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
 
-    .line 16
     sget-object v3, Lcom/umeng/analytics/pro/u;->d:Lorg/json/JSONArray;
 
     invoke-virtual {v3, v0}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
-    .line 17
     sget-object v0, Lcom/umeng/analytics/pro/u;->d:Lorg/json/JSONArray;
 
     invoke-virtual {v0}, Lorg/json/JSONArray;->length()I
@@ -572,7 +517,6 @@
 
     const/4 v0, 0x0
 
-    .line 18
     invoke-static {v0}, Lcom/umeng/commonsdk/service/UMGlobalContext;->getAppContext(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object v3
@@ -581,7 +525,6 @@
 
     const/16 v4, 0x1003
 
-    .line 19
     invoke-static {v3}, Lcom/umeng/analytics/CoreProtocol;->getInstance(Landroid/content/Context;)Lcom/umeng/analytics/CoreProtocol;
 
     move-result-object v5
@@ -590,7 +533,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 20
     :catchall_0
     :cond_2
     :try_start_2
@@ -598,14 +540,12 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 21
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 22
     iget-object v0, p0, Lcom/umeng/analytics/pro/u;->a:Ljava/util/Stack;
 
     invoke-virtual {v0}, Ljava/util/Stack;->size()I
@@ -616,7 +556,6 @@
 
     const-string v0, "@"
 
-    .line 23
     filled-new-array {v0}, [Ljava/lang/String;
 
     move-result-object v6
@@ -625,7 +564,6 @@
 
     aput-object p1, v7, v1
 
-    .line 24
     sget-object v3, Lcom/umeng/analytics/pro/i;->E:Ljava/lang/String;
 
     const/4 v4, 0x0
@@ -643,7 +581,6 @@
     :catchall_1
     move-exception p1
 
-    .line 25
     :try_start_3
     monitor-exit v6
     :try_end_3
@@ -654,7 +591,6 @@
     :catchall_2
     move-exception p1
 
-    .line 26
     :try_start_4
     monitor-exit v0
     :try_end_4
@@ -662,7 +598,6 @@
 
     throw p1
 
-    .line 27
     :cond_3
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
 
@@ -670,7 +605,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 28
     iget-object v0, p0, Lcom/umeng/analytics/pro/u;->a:Ljava/util/Stack;
 
     invoke-virtual {v0}, Ljava/util/Stack;->size()I
@@ -681,7 +615,6 @@
 
     const-string v0, "@"
 
-    .line 29
     filled-new-array {v0}, [Ljava/lang/String;
 
     move-result-object v6
@@ -690,7 +623,6 @@
 
     aput-object p1, v7, v1
 
-    .line 30
     sget-object v3, Lcom/umeng/analytics/pro/i;->G:Ljava/lang/String;
 
     const/4 v4, 0x0

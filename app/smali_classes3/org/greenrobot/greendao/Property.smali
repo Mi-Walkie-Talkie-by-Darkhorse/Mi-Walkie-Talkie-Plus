@@ -1,6 +1,5 @@
 .class public Lorg/greenrobot/greendao/Property;
 .super Ljava/lang/Object;
-.source "Property.java"
 
 
 # instance fields
@@ -37,22 +36,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lorg/greenrobot/greendao/Property;->ordinal:I
 
-    .line 3
     iput-object p2, p0, Lorg/greenrobot/greendao/Property;->type:Ljava/lang/Class;
 
-    .line 4
     iput-object p3, p0, Lorg/greenrobot/greendao/Property;->name:Ljava/lang/String;
 
-    .line 5
     iput-boolean p4, p0, Lorg/greenrobot/greendao/Property;->primaryKey:Z
 
-    .line 6
     iput-object p5, p0, Lorg/greenrobot/greendao/Property;->columnName:Ljava/lang/String;
 
     return-void
@@ -75,7 +68,6 @@
 
     aput-object p2, v0, p1
 
-    .line 1
     new-instance p1, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     const-string p2, " BETWEEN ? AND ?"
@@ -88,7 +80,6 @@
 .method public eq(Ljava/lang/Object;)Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     const-string v1, "=?"
@@ -101,7 +92,6 @@
 .method public ge(Ljava/lang/Object;)Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     const-string v1, ">=?"
@@ -114,7 +104,6 @@
 .method public gt(Ljava/lang/Object;)Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     const-string v1, ">?"
@@ -135,7 +124,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-interface {p1}, Ljava/util/Collection;->toArray()[Ljava/lang/Object;
 
     move-result-object p1
@@ -150,14 +138,12 @@
 .method public varargs in([Ljava/lang/Object;)Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, " IN ("
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 2
     array-length v1, p1
 
     invoke-static {v0, v1}, Lorg/greenrobot/greendao/internal/SqlUtils;->appendPlaceholders(Ljava/lang/StringBuilder;I)Ljava/lang/StringBuilder;
@@ -168,7 +154,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 3
     new-instance v1, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -183,7 +168,6 @@
 .method public isNotNull()Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     const-string v1, " IS NOT NULL"
@@ -196,7 +180,6 @@
 .method public isNull()Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     const-string v1, " IS NULL"
@@ -209,7 +192,6 @@
 .method public le(Ljava/lang/Object;)Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     const-string v1, "<=?"
@@ -222,7 +204,6 @@
 .method public like(Ljava/lang/String;)Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     const-string v1, " LIKE ?"
@@ -235,7 +216,6 @@
 .method public lt(Ljava/lang/Object;)Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     const-string v1, "<?"
@@ -248,7 +228,6 @@
 .method public notEq(Ljava/lang/Object;)Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     const-string v1, "<>?"
@@ -269,7 +248,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-interface {p1}, Ljava/util/Collection;->toArray()[Ljava/lang/Object;
 
     move-result-object p1
@@ -284,14 +262,12 @@
 .method public varargs notIn([Ljava/lang/Object;)Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, " NOT IN ("
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    .line 2
     array-length v1, p1
 
     invoke-static {v0, v1}, Lorg/greenrobot/greendao/internal/SqlUtils;->appendPlaceholders(Ljava/lang/StringBuilder;I)Ljava/lang/StringBuilder;
@@ -302,7 +278,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 3
     new-instance v1, Lorg/greenrobot/greendao/query/WhereCondition$PropertyCondition;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;

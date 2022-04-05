@@ -1,6 +1,5 @@
 .class public Landroidx/room/r/a;
 .super Ljava/lang/Object;
-.source "CopyLock.java"
 
 
 # annotations
@@ -38,7 +37,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -59,10 +57,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/io/File;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -83,7 +79,6 @@
 
     iput-object v0, p0, Landroidx/room/r/a;->a:Ljava/io/File;
 
-    .line 3
     invoke-virtual {v0}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p1
@@ -94,7 +89,6 @@
 
     iput-object p1, p0, Landroidx/room/r/a;->b:Ljava/util/concurrent/locks/Lock;
 
-    .line 4
     iput-boolean p3, p0, Landroidx/room/r/a;->c:Z
 
     return-void
@@ -103,12 +97,10 @@
 .method private static a(Ljava/lang/String;)Ljava/util/concurrent/locks/Lock;
     .locals 3
 
-    .line 6
     sget-object v0, Landroidx/room/r/a;->e:Ljava/util/Map;
 
     monitor-enter v0
 
-    .line 7
     :try_start_0
     sget-object v1, Landroidx/room/r/a;->e:Ljava/util/Map;
 
@@ -120,17 +112,14 @@
 
     if-nez v1, :cond_0
 
-    .line 8
     new-instance v1, Ljava/util/concurrent/locks/ReentrantLock;
 
     invoke-direct {v1}, Ljava/util/concurrent/locks/ReentrantLock;-><init>()V
 
-    .line 9
     sget-object v2, Landroidx/room/r/a;->e:Ljava/util/Map;
 
     invoke-interface {v2, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
     :cond_0
     monitor-exit v0
 
@@ -139,7 +128,6 @@
     :catchall_0
     move-exception p0
 
-    .line 11
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -152,17 +140,14 @@
 .method public a()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/room/r/a;->b:Ljava/util/concurrent/locks/Lock;
 
     invoke-interface {v0}, Ljava/util/concurrent/locks/Lock;->lock()V
 
-    .line 2
     iget-boolean v0, p0, Landroidx/room/r/a;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     :try_start_0
     new-instance v0, Ljava/io/FileOutputStream;
 
@@ -176,7 +161,6 @@
 
     iput-object v0, p0, Landroidx/room/r/a;->d:Ljava/nio/channels/FileChannel;
 
-    .line 4
     invoke-virtual {v0}, Ljava/nio/channels/FileChannel;->lock()Ljava/nio/channels/FileLock;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
@@ -186,7 +170,6 @@
     :catch_0
     move-exception v0
 
-    .line 5
     new-instance v1, Ljava/lang/IllegalStateException;
 
     const-string v2, "Unable to grab copy lock."
@@ -203,18 +186,15 @@
 .method public b()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/room/r/a;->d:Ljava/nio/channels/FileChannel;
 
     if-eqz v0, :cond_0
 
-    .line 2
     :try_start_0
     invoke-virtual {v0}, Ljava/nio/channels/FileChannel;->close()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 3
     :catch_0
     :cond_0
     iget-object v0, p0, Landroidx/room/r/a;->b:Ljava/util/concurrent/locks/Lock;

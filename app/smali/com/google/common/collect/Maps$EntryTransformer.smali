@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/collect/Maps$EntryTransformer;
 .super Ljava/lang/Object;
-.source "Maps.java"
 
 
 # annotations

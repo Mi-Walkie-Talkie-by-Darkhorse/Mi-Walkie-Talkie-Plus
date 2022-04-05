@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/arch/g;
 .super Ljava/lang/Object;
-.source "Utils.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 
     const-string v0, "mName"
 
-    .line 23
     invoke-static {p0, v0}, Lcom/qmuiteam/qmui/arch/g;->a(Landroidx/fragment/app/FragmentManager$BackStackEntry;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p0
@@ -40,12 +38,10 @@
 .method static a(Landroidx/fragment/app/FragmentManager$BackStackEntry;Ljava/lang/String;)Ljava/lang/reflect/Field;
     .locals 2
 
-    .line 19
     sget-boolean v0, Lcom/qmuiteam/qmui/arch/g;->a:Z
 
     if-nez v0, :cond_0
 
-    .line 20
     :try_start_0
     const-class v0, Landroidx/fragment/app/FragmentTransaction;
 
@@ -66,10 +62,8 @@
 
     const/4 v1, 0x1
 
-    .line 21
     sput-boolean v1, Lcom/qmuiteam/qmui/arch/g;->a:Z
 
-    .line 22
     :try_start_1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -93,7 +87,6 @@
 
     const-string v1, "cmd"
 
-    .line 28
     invoke-static {p0, v0, v1}, Lcom/qmuiteam/qmui/arch/g;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p0
@@ -104,12 +97,10 @@
 .method private static a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
     .locals 1
 
-    .line 24
     sget-boolean v0, Lcom/qmuiteam/qmui/arch/g;->b:Z
 
     if-nez v0, :cond_0
 
-    .line 25
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -132,10 +123,8 @@
 
     const/4 v0, 0x1
 
-    .line 26
     sput-boolean v0, Lcom/qmuiteam/qmui/arch/g;->b:Z
 
-    .line 27
     :try_start_1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -155,7 +144,6 @@
 .method public static a(Landroid/app/Activity;)V
     .locals 4
 
-    .line 1
     :try_start_0
     const-class v0, Landroid/app/Activity;
 
@@ -171,12 +159,10 @@
 
     const/4 v1, 0x1
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
     new-array v1, v2, [Ljava/lang/Object;
 
-    .line 3
     invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -194,7 +180,6 @@
 
     goto/16 :goto_1
 
-    .line 4
     :cond_0
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentManager;->getBackStackEntryCount()I
 
@@ -215,14 +200,12 @@
 
     add-int/2addr p1, v0
 
-    .line 5
     :cond_2
     :try_start_0
     invoke-virtual {p0, p1}, Landroidx/fragment/app/FragmentManager;->getBackStackEntryAt(I)Landroidx/fragment/app/FragmentManager$BackStackEntry;
 
     move-result-object p0
 
-    .line 6
     invoke-interface {p2}, Lcom/qmuiteam/qmui/arch/g$a;->b()Z
 
     move-result p1
@@ -231,24 +214,20 @@
 
     if-eqz p1, :cond_3
 
-    .line 7
     invoke-static {p0}, Lcom/qmuiteam/qmui/arch/g;->a(Landroidx/fragment/app/FragmentManager$BackStackEntry;)Ljava/lang/reflect/Field;
 
     move-result-object p1
 
     if-eqz p1, :cond_3
 
-    .line 8
     invoke-virtual {p1, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 9
     invoke-interface {p2}, Lcom/qmuiteam/qmui/arch/g$a;->a()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {p1, p0, v1}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    .line 10
     :cond_3
     invoke-static {p0}, Lcom/qmuiteam/qmui/arch/g;->b(Landroidx/fragment/app/FragmentManager$BackStackEntry;)Ljava/lang/reflect/Field;
 
@@ -256,23 +235,18 @@
 
     if-eqz p1, :cond_6
 
-    .line 11
     invoke-virtual {p1, v0}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 12
     invoke-virtual {p1, p0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 13
     instance-of p1, p0, Ljava/util/List;
 
     if-eqz p1, :cond_6
 
-    .line 14
     check-cast p0, Ljava/util/List;
 
-    .line 15
     invoke-interface {p0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -288,7 +262,6 @@
 
     move-result-object p1
 
-    .line 16
     invoke-interface {p2, p1}, Lcom/qmuiteam/qmui/arch/g$a;->a(Ljava/lang/Object;)Z
 
     move-result p1
@@ -302,12 +275,10 @@
     :catch_0
     move-exception p0
 
-    .line 17
     invoke-virtual {p0}, Ljava/lang/IllegalAccessException;->printStackTrace()V
 
     goto :goto_1
 
-    .line 18
     :cond_5
     :goto_0
     new-instance p0, Ljava/lang/StringBuilder;
@@ -348,7 +319,6 @@
 
     const-string v0, "mOps"
 
-    .line 4
     invoke-static {p0, v0}, Lcom/qmuiteam/qmui/arch/g;->a(Landroidx/fragment/app/FragmentManager$BackStackEntry;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p0
@@ -363,7 +333,6 @@
 
     const-string v1, "fragment"
 
-    .line 5
     invoke-static {p0, v0, v1}, Lcom/qmuiteam/qmui/arch/g;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p0
@@ -374,19 +343,16 @@
 .method public static b(Landroid/app/Activity;)V
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     invoke-static {p0}, Lcom/qmuiteam/qmui/arch/g;->c(Landroid/app/Activity;)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static {p0}, Lcom/qmuiteam/qmui/arch/g;->d(Landroid/app/Activity;)V
 
@@ -401,7 +367,6 @@
 
     const-string v1, "popEnterAnim"
 
-    .line 10
     invoke-static {p0, v0, v1}, Lcom/qmuiteam/qmui/arch/g;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p0
@@ -415,7 +380,6 @@
         value = 0x15
     .end annotation
 
-    .line 1
     :try_start_0
     const-class v0, Landroid/app/Activity;
 
@@ -431,24 +395,20 @@
 
     const/4 v1, 0x1
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
     new-array v3, v2, [Ljava/lang/Object;
 
-    .line 3
     invoke-virtual {v0, p0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
     const-class v3, Landroid/app/Activity;
 
     invoke-virtual {v3}, Ljava/lang/Class;->getDeclaredClasses()[Ljava/lang/Class;
 
     move-result-object v3
 
-    .line 5
     array-length v4, v3
 
     const/4 v5, 0x0
@@ -462,7 +422,6 @@
 
     aget-object v8, v3, v6
 
-    .line 6
     invoke-virtual {v8}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v9
@@ -482,7 +441,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     const-class v3, Landroid/app/Activity;
 
@@ -502,7 +460,6 @@
 
     move-result-object v3
 
-    .line 8
     invoke-virtual {v3, v1}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
     new-array v4, v6, [Ljava/lang/Object;
@@ -511,7 +468,6 @@
 
     aput-object v0, v4, v1
 
-    .line 9
     invoke-virtual {v3, p0, v4}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -527,7 +483,6 @@
 
     const-string v1, "popExitAnim"
 
-    .line 7
     invoke-static {p0, v0, v1}, Lcom/qmuiteam/qmui/arch/g;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p0
@@ -538,7 +493,6 @@
 .method private static d(Landroid/app/Activity;)V
     .locals 9
 
-    .line 1
     :try_start_0
     const-class v0, Landroid/app/Activity;
 
@@ -546,7 +500,6 @@
 
     move-result-object v0
 
-    .line 2
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -562,7 +515,6 @@
 
     aget-object v6, v0, v4
 
-    .line 3
     invoke-virtual {v6}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object v7
@@ -582,7 +534,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     const-class v0, Landroid/app/Activity;
 
@@ -598,14 +549,12 @@
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {v0, v4}, Ljava/lang/reflect/Method;->setAccessible(Z)V
 
     new-array v1, v4, [Ljava/lang/Object;
 
     aput-object v2, v1, v3
 
-    .line 6
     invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

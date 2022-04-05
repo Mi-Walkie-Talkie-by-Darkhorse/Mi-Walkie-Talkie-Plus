@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/blelib/d/e;
 .super Ljava/lang/Object;
-.source "Packet.java"
 
 
 # annotations
@@ -23,10 +22,8 @@
 .method public constructor <init>(I[B)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/ifengyu/blelib/d/e$a;
 
     invoke-direct {v0}, Lcom/ifengyu/blelib/d/e$a;-><init>()V
@@ -35,25 +32,20 @@
 
     const/4 v1, -0x2
 
-    .line 3
     iput-byte v1, v0, Lcom/ifengyu/blelib/d/e$a;->a:B
 
     const/4 v1, 0x1
 
-    .line 4
     iput-byte v1, v0, Lcom/ifengyu/blelib/d/e$a;->b:B
 
-    .line 5
     array-length v1, p2
 
     add-int/lit8 v1, v1, 0xa
 
     iput v1, v0, Lcom/ifengyu/blelib/d/e$a;->c:I
 
-    .line 6
     iput p1, v0, Lcom/ifengyu/blelib/d/e$a;->d:I
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/blelib/b/f;->b()Lcom/ifengyu/blelib/b/f;
 
     move-result-object p1
@@ -64,7 +56,6 @@
 
     iput p1, v0, Lcom/ifengyu/blelib/d/e$a;->e:I
 
-    .line 8
     iput-object p2, p0, Lcom/ifengyu/blelib/d/e;->b:[B
 
     return-void
@@ -75,25 +66,20 @@
 
     add-int/lit8 v0, p2, 0x2
 
-    .line 2
     new-array v0, v0, [B
 
-    .line 3
     invoke-static {p1}, Lcom/ifengyu/blelib/d/b;->a([B)[B
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    .line 4
     invoke-static {p1, v2, v0, v2, p2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     const/4 p1, 0x2
 
-    .line 5
     invoke-static {v1, v2, v0, p2, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 6
     iput-object v1, p0, Lcom/ifengyu/blelib/d/e;->c:[B
 
     return-object v0
@@ -102,7 +88,6 @@
 .method private d()[B
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/blelib/d/e;->b()I
 
     move-result v0
@@ -111,7 +96,6 @@
 
     new-array v0, v0, [B
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/blelib/d/e;->a:Lcom/ifengyu/blelib/d/e$a;
 
     invoke-virtual {v1}, Lcom/ifengyu/blelib/d/e$a;->c()B
@@ -122,7 +106,6 @@
 
     aput-byte v1, v0, v2
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/blelib/d/e;->a:Lcom/ifengyu/blelib/d/e$a;
 
     invoke-virtual {v1}, Lcom/ifengyu/blelib/d/e$a;->e()B
@@ -133,7 +116,6 @@
 
     aput-byte v1, v0, v2
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/blelib/d/e;->a:Lcom/ifengyu/blelib/d/e$a;
 
     invoke-virtual {v1}, Lcom/ifengyu/blelib/d/e$a;->b()I
@@ -146,7 +128,6 @@
 
     invoke-static {v0, v1, v2, v3, v3}, Lcom/ifengyu/blelib/d/f;->a([BJII)V
 
-    .line 5
     iget-object v1, p0, Lcom/ifengyu/blelib/d/e;->a:Lcom/ifengyu/blelib/d/e$a;
 
     invoke-virtual {v1}, Lcom/ifengyu/blelib/d/e$a;->a()I
@@ -159,7 +140,6 @@
 
     invoke-static {v0, v1, v2, v4, v3}, Lcom/ifengyu/blelib/d/f;->a([BJII)V
 
-    .line 6
     iget-object v1, p0, Lcom/ifengyu/blelib/d/e;->a:Lcom/ifengyu/blelib/d/e$a;
 
     invoke-virtual {v1}, Lcom/ifengyu/blelib/d/e$a;->d()I
@@ -180,7 +160,6 @@
 .method public a()[B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/d/e;->b:[B
 
     return-object v0
@@ -189,7 +168,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/blelib/d/e;->b:[B
 
     if-eqz v0, :cond_0
@@ -208,12 +186,10 @@
 .method public c()[B
     .locals 5
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/blelib/d/e;->d()[B
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/blelib/d/e;->a()[B
 
     move-result-object v1
@@ -228,7 +204,6 @@
 
     invoke-static {v1, v3, v0, v4, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 3
     array-length v1, v0
 
     invoke-direct {p0, v0, v1}, Lcom/ifengyu/blelib/d/e;->a([BI)[B
@@ -241,7 +216,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -260,7 +234,6 @@
 
     iget-object v1, p0, Lcom/ifengyu/blelib/d/e;->b:[B
 
-    .line 2
     invoke-static {v1}, Lcom/ifengyu/blelib/d/a;->a([B)Ljava/lang/String;
 
     move-result-object v1
@@ -273,7 +246,6 @@
 
     iget-object v1, p0, Lcom/ifengyu/blelib/d/e;->c:[B
 
-    .line 3
     invoke-static {v1}, Lcom/ifengyu/blelib/d/a;->a([B)Ljava/lang/String;
 
     move-result-object v1

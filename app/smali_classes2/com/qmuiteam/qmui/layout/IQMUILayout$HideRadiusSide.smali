@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/layout/IQMUILayout$HideRadiusSide;
 .super Ljava/lang/Object;
-.source "IQMUILayout.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

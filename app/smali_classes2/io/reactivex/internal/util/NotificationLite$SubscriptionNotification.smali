@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/util/NotificationLite$SubscriptionNotification;
 .super Ljava/lang/Object;
-.source "NotificationLite.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -29,10 +28,8 @@
 .method constructor <init>(Lc/a/d;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/util/NotificationLite$SubscriptionNotification;->upstream:Lc/a/d;
 
     return-void
@@ -43,7 +40,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

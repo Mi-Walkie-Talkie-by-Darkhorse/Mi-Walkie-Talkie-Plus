@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/MiTalkiApp;
 .super Lcom/ifengyu/library/base/BaseApp;
-.source "MiTalkiApp.java"
 
 
 # static fields
@@ -43,28 +42,22 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/library/base/BaseApp;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->g:Z
 
-    .line 3
     iput-boolean v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->h:Z
 
     const/4 v0, 0x0
 
-    .line 4
     iput-boolean v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->n:Z
 
     const-string v0, "default"
 
-    .line 5
     iput-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->q:Ljava/lang/String;
 
-    .line 6
     new-instance v0, Lcom/ifengyu/intercom/MiTalkiApp$b;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/MiTalkiApp$b;-><init>(Lcom/ifengyu/intercom/MiTalkiApp;)V
@@ -77,7 +70,6 @@
 .method private A()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->o:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/ifengyu/library/a/l;->b(Ljava/lang/CharSequence;)Z
@@ -92,7 +84,6 @@
 .method private B()V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Landroid/app/Application;->getApplicationContext()Landroid/content/Context;
 
@@ -113,7 +104,6 @@
     :catch_0
     move-exception v0
 
-    .line 2
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -136,7 +126,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->q:Ljava/lang/String;
 
@@ -152,29 +141,24 @@
 
     const-string v0, "activity"
 
-    .line 1
     invoke-virtual {p0, v0}, Landroid/app/Application;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/app/ActivityManager;
 
-    .line 2
     invoke-virtual {v0}, Landroid/app/ActivityManager;->getRunningAppProcesses()Ljava/util/List;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {p0}, Landroid/app/Application;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v2
 
-    .line 5
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -192,7 +176,6 @@
 
     check-cast v3, Landroid/app/ActivityManager$RunningAppProcessInfo;
 
-    .line 6
     iget v4, v3, Landroid/app/ActivityManager$RunningAppProcessInfo;->pid:I
 
     if-ne v4, v2, :cond_0
@@ -218,17 +201,14 @@
 .method private D()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->p()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->g()I
 
     move-result v1
 
-    .line 3
     invoke-static {v0}, Lcom/ifengyu/library/a/b;->a(Ljava/lang/String;)Landroid/bluetooth/BluetoothDevice;
 
     move-result-object v0
@@ -239,14 +219,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-static {v2}, Lcom/ifengyu/intercom/i/d0;->a(I)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 5
     invoke-static {p0}, Lcom/ifengyu/intercom/lite/e/f;->a(Landroid/content/Context;)Lcom/ifengyu/intercom/lite/e/f;
 
     move-result-object v1
@@ -259,20 +237,16 @@
 
     const/16 v2, 0xc8
 
-    .line 6
     invoke-virtual {v0, v1, v2}, Lno/nordicsemi/android/ble/b2;->a(II)Lno/nordicsemi/android/ble/b2;
 
     const/4 v1, 0x1
 
-    .line 7
     invoke-virtual {v0, v1}, Lno/nordicsemi/android/ble/b2;->a(Z)Lno/nordicsemi/android/ble/b2;
 
     sget-object v1, Lcom/ifengyu/intercom/b;->a:Lcom/ifengyu/intercom/b;
 
-    .line 8
     invoke-virtual {v0, v1}, Lno/nordicsemi/android/ble/b2;->a(Lno/nordicsemi/android/ble/u2/d;)Lno/nordicsemi/android/ble/b2;
 
-    .line 9
     invoke-virtual {v0}, Lno/nordicsemi/android/ble/p2;->a()V
 
     :cond_0
@@ -282,7 +256,6 @@
 .method private E()V
     .locals 4
 
-    .line 1
     invoke-static {p0}, La/f/a/a;->a(Landroid/content/Context;)La/f/a/a;
 
     move-result-object v0
@@ -299,19 +272,16 @@
 
     invoke-virtual {v0, v1, v2}, La/f/a/a;->a(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)V
 
-    .line 2
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0, v3}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
-    .line 3
     invoke-virtual {p0}, Landroid/app/Application;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 4
     invoke-virtual {p0, v0}, Landroid/app/Application;->sendBroadcast(Landroid/content/Intent;)V
 
     return-void
@@ -320,7 +290,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/MiTalkiApp;Landroid/app/Activity;)Landroid/app/Activity;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/MiTalkiApp;->p:Landroid/app/Activity;
 
     return-object p1
@@ -329,7 +298,6 @@
 .method static synthetic a(Landroid/bluetooth/BluetoothDevice;I)V
     .locals 1
 
-    .line 5
     new-instance p0, Ljava/lang/StringBuilder;
 
     invoke-direct {p0}, Ljava/lang/StringBuilder;-><init>()V
@@ -354,7 +322,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/MiTalkiApp;Z)Z
     .locals 0
 
-    .line 2
     iput-boolean p1, p0, Lcom/ifengyu/intercom/MiTalkiApp;->i:Z
 
     return p1
@@ -363,7 +330,6 @@
 .method public static b()Lcom/ifengyu/intercom/MiTalkiApp;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/MiTalkiApp;->s:Lcom/ifengyu/intercom/MiTalkiApp;
 
     return-object v0
@@ -372,35 +338,25 @@
 .method private q()V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {}, Lcom/ifengyu/library/account/a;->d()V
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->t()V
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->s()V
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->r()V
 
-    .line 5
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->v()V
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->z()V
 
-    .line 7
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->w()V
 
-    .line 8
     invoke-static {p0}, Lcom/ifengyu/intercom/d;->a(Landroid/content/Context;)V
 
-    .line 9
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->B()V
 
-    .line 10
     invoke-virtual {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->j()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -414,7 +370,6 @@
 
     const-string v2, "Intercom APP install failed, due to exception:"
 
-    .line 11
     invoke-static {v1, v2, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :goto_0
@@ -424,7 +379,6 @@
 .method private r()V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/greendao/dao/a$a;
 
     const-string v1, "mitalki_db"
@@ -433,21 +387,18 @@
 
     invoke-direct {v0, p0, v1, v2}, Lcom/ifengyu/intercom/greendao/dao/a$a;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;)V
 
-    .line 2
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->f:Landroid/database/sqlite/SQLiteDatabase;
 
-    .line 3
     new-instance v1, Lcom/ifengyu/intercom/greendao/dao/a;
 
     invoke-direct {v1, v0}, Lcom/ifengyu/intercom/greendao/dao/a;-><init>(Landroid/database/sqlite/SQLiteDatabase;)V
 
     iput-object v1, p0, Lcom/ifengyu/intercom/MiTalkiApp;->d:Lcom/ifengyu/intercom/greendao/dao/a;
 
-    .line 4
     invoke-virtual {v1}, Lcom/ifengyu/intercom/greendao/dao/a;->newSession()Lcom/ifengyu/intercom/greendao/dao/b;
 
     move-result-object v0
@@ -460,7 +411,6 @@
 .method private s()V
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -493,7 +443,6 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 2
     new-instance v1, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;
 
     invoke-direct {v1}, Lcom/nostra13/universalimageloader/core/DisplayImageOptions$Builder;-><init>()V
@@ -528,7 +477,6 @@
 
     move-result-object v1
 
-    .line 3
     new-instance v2, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$Builder;
 
     invoke-virtual {p0}, Landroid/app/Application;->getApplicationContext()Landroid/content/Context;
@@ -589,7 +537,6 @@
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$Builder;->denyCacheImageMultipleSizesInMemory()Lcom/nostra13/universalimageloader/core/ImageLoaderConfiguration$Builder;
 
     move-result-object v0
@@ -612,7 +559,6 @@
 
     move-result-object v0
 
-    .line 5
     invoke-static {}, Lcom/nostra13/universalimageloader/core/ImageLoader;->getInstance()Lcom/nostra13/universalimageloader/core/ImageLoader;
 
     move-result-object v1
@@ -625,7 +571,6 @@
 .method private t()V
     .locals 5
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -660,7 +605,6 @@
 
     invoke-interface {v0, v1}, Lorg/osmdroid/config/IConfigurationProvider;->setOsmdroidBasePath(Ljava/io/File;)V
 
-    .line 2
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -693,7 +637,6 @@
 
     invoke-interface {v0, v1}, Lorg/osmdroid/config/IConfigurationProvider;->setOsmdroidTileCache(Ljava/io/File;)V
 
-    .line 3
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -704,7 +647,6 @@
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
-    .line 4
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -715,7 +657,6 @@
 
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
-    .line 5
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -724,7 +665,6 @@
 
     invoke-interface {v0, v1, v2}, Lorg/osmdroid/config/IConfigurationProvider;->setTileFileSystemCacheMaxBytes(J)V
 
-    .line 6
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -733,7 +673,6 @@
 
     invoke-interface {v0, v1, v2}, Lorg/osmdroid/config/IConfigurationProvider;->setTileFileSystemCacheTrimBytes(J)V
 
-    .line 7
     invoke-static {p0}, Lcom/ifengyu/intercom/i/c0;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
@@ -746,7 +685,6 @@
 .method private u()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->C()Z
 
     move-result v0
@@ -757,19 +695,15 @@
 
     const-string v1, "5811750860819"
 
-    .line 2
     invoke-static {p0, v0, v1}, Lcom/xiaomi/mipush/sdk/MiPushClient;->registerPush(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/ifengyu/intercom/MiTalkiApp$a;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/MiTalkiApp$a;-><init>(Lcom/ifengyu/intercom/MiTalkiApp;)V
 
-    .line 4
     invoke-static {p0, v0}, Lcom/xiaomi/mipush/sdk/Logger;->setLogger(Landroid/content/Context;Lcom/xiaomi/channel/commonutils/logger/LoggerInterface;)V
 
-    .line 5
     invoke-virtual {p0}, Landroid/app/Application;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -780,7 +714,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/xiaomi/mipush/sdk/MiPushClient;->setAlias(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {p0}, Landroid/app/Application;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -795,7 +728,6 @@
 .method private v()V
     .locals 4
 
-    .line 1
     new-instance v0, Lokhttp3/OkHttpClient$Builder;
 
     invoke-direct {v0}, Lokhttp3/OkHttpClient$Builder;-><init>()V
@@ -804,7 +736,6 @@
 
     const-wide/16 v2, 0x2710
 
-    .line 2
     invoke-virtual {v0, v2, v3, v1}, Lokhttp3/OkHttpClient$Builder;->connectTimeout(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder;
 
     move-result-object v0
@@ -819,7 +750,6 @@
 
     move-result-object v0
 
-    .line 3
     invoke-static {v0}, Lcom/ifengyu/intercom/g/b;->a(Lokhttp3/OkHttpClient;)Lcom/ifengyu/intercom/g/b;
 
     return-void
@@ -828,7 +758,6 @@
 .method private w()V
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/qmuiteam/qmui/arch/f;->a(Landroid/app/Application;)V
 
     return-void
@@ -837,15 +766,12 @@
 .method private x()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->o:Ljava/lang/String;
 
     invoke-static {p0, v0}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->b(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 2
     invoke-static {p0}, Lcom/ifengyu/intercom/node/q/d;->a(Landroid/content/Context;)V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/lite/utils/h;->a()V
 
     return-void
@@ -854,14 +780,12 @@
 .method private y()V
     .locals 4
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->b0()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->q:Ljava/lang/String;
 
     const/4 v1, 0x1
@@ -872,7 +796,6 @@
 
     invoke-static {p0, v2, v0, v1, v3}, Lcom/umeng/commonsdk/UMConfigure;->init(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;)V
 
-    .line 3
     sget-object v0, Lcom/umeng/analytics/MobclickAgent$PageMode;->AUTO:Lcom/umeng/analytics/MobclickAgent$PageMode;
 
     invoke-static {v0}, Lcom/umeng/analytics/MobclickAgent;->setPageCollectionMode(Lcom/umeng/analytics/MobclickAgent$PageMode;)V
@@ -886,7 +809,6 @@
 
     const-string v0, "wxef025e7faa0241ac"
 
-    .line 1
     invoke-static {p0, v0}, Lcom/ifengyu/intercom/wxapi/WXEntryActivity;->a(Landroid/content/Context;Ljava/lang/String;)Lcom/tencent/mm/opensdk/openapi/IWXAPI;
 
     move-result-object v0
@@ -901,7 +823,6 @@
 .method public a(Lcom/ifengyu/intercom/eventbus/StateUpdateEvent;)V
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/MiTalkiApp;->l:Lcom/ifengyu/intercom/eventbus/StateUpdateEvent;
 
     return-void
@@ -910,10 +831,8 @@
 .method public synthetic a(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 6
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
-    .line 7
     invoke-virtual {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->p()V
 
     return-void
@@ -922,7 +841,6 @@
 .method public a(Z)V
     .locals 0
 
-    .line 4
     iput-boolean p1, p0, Lcom/ifengyu/intercom/MiTalkiApp;->n:Z
 
     return-void
@@ -931,13 +849,10 @@
 .method protected attachBaseContext(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Application;->attachBaseContext(Landroid/content/Context;)V
 
-    .line 2
     invoke-static {p0}, Landroidx/multidex/a;->d(Landroid/content/Context;)V
 
-    .line 3
     invoke-static {p1}, Lcom/ifengyu/intercom/e;->a(Landroid/content/Context;)V
 
     return-void
@@ -946,7 +861,6 @@
 .method public b(Z)V
     .locals 0
 
-    .line 2
     iput-boolean p1, p0, Lcom/ifengyu/intercom/MiTalkiApp;->g:Z
 
     return-void
@@ -955,7 +869,6 @@
 .method public c(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/ifengyu/intercom/MiTalkiApp;->j:Z
 
     return-void
@@ -964,7 +877,6 @@
 .method protected d()V
     .locals 7
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v0
@@ -981,7 +893,6 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v5
@@ -990,7 +901,6 @@
 
     long-to-int v0, v5
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v5
@@ -1005,7 +915,6 @@
 
     invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 5
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
@@ -1021,7 +930,6 @@
 
     const v1, 0x76a700
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object v2
@@ -1036,7 +944,6 @@
 
     invoke-interface {v2}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 7
     :cond_1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -1050,7 +957,6 @@
 
     if-lt v2, v1, :cond_2
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/intercom/i/w;->b()Lcom/ifengyu/intercom/i/w;
 
     move-result-object v0
@@ -1063,7 +969,6 @@
 
     return-void
 
-    .line 9
     :cond_2
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
@@ -1077,7 +982,6 @@
 
     move-result-object v0
 
-    .line 10
     new-instance v1, Lcom/ifengyu/intercom/MiTalkiApp$c;
 
     invoke-direct {v1, p0}, Lcom/ifengyu/intercom/MiTalkiApp$c;-><init>(Lcom/ifengyu/intercom/MiTalkiApp;)V
@@ -1090,7 +994,6 @@
 .method public d(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/ifengyu/intercom/MiTalkiApp;->k:Z
 
     return-void
@@ -1099,7 +1002,6 @@
 .method public e()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->p()Ljava/lang/String;
 
     move-result-object v0
@@ -1110,14 +1012,12 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/service/a;->a()Lcom/ifengyu/intercom/node/q/d;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->p()Ljava/lang/String;
 
     move-result-object v1
@@ -1127,52 +1027,41 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 4
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->f(Ljava/lang/String;)V
 
-    .line 5
     invoke-static {v0}, Lcom/ifengyu/intercom/i/d0;->e(Ljava/lang/String;)V
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->N()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 7
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 8
     invoke-virtual {p0}, Landroid/app/Application;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
     invoke-static {v2, v1, v0}, Lcom/xiaomi/mipush/sdk/MiPushClient;->unsetAlias(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
     invoke-virtual {p0}, Landroid/app/Application;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
     invoke-static {v2, v1, v0}, Lcom/xiaomi/mipush/sdk/MiPushClient;->unsetUserAccount(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 10
     :cond_1
     invoke-static {}, Lcom/umeng/analytics/MobclickAgent;->onProfileSignOff()V
 
-    .line 11
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->b()V
 
-    .line 12
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->c()V
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/library/account/a;->a()V
 
-    .line 14
     invoke-virtual {p0}, Landroid/app/Application;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -1193,7 +1082,6 @@
 .method public f()Landroid/app/Activity;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->p:Landroid/app/Activity;
 
     return-object v0
@@ -1202,7 +1090,6 @@
 .method public g()Lcom/ifengyu/intercom/greendao/dao/b;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->e:Lcom/ifengyu/intercom/greendao/dao/b;
 
     return-object v0
@@ -1211,7 +1098,6 @@
 .method public h()Lcom/ifengyu/intercom/eventbus/StateUpdateEvent;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->l:Lcom/ifengyu/intercom/eventbus/StateUpdateEvent;
 
     return-object v0
@@ -1220,7 +1106,6 @@
 .method public i()Lcom/tencent/mm/opensdk/openapi/IWXAPI;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->m:Lcom/tencent/mm/opensdk/openapi/IWXAPI;
 
     return-object v0
@@ -1229,33 +1114,26 @@
 .method public j()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->N()Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->o:Ljava/lang/String;
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->A()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->x()V
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->u()V
 
-    .line 5
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->y()V
 
-    .line 6
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->E()V
 
-    .line 7
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->D()V
 
     :cond_0
@@ -1265,7 +1143,6 @@
 .method public k()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->n:Z
 
     return v0
@@ -1274,7 +1151,6 @@
 .method public l()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->g:Z
 
     return v0
@@ -1283,7 +1159,6 @@
 .method public m()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->i:Z
 
     return v0
@@ -1292,7 +1167,6 @@
 .method public n()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->j:Z
 
     return v0
@@ -1301,7 +1175,6 @@
 .method public o()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->k:Z
 
     return v0
@@ -1310,10 +1183,8 @@
 .method public onConfigurationChanged(Landroid/content/res/Configuration;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Application;->onConfigurationChanged(Landroid/content/res/Configuration;)V
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/lite/b/a;->a()V
 
     return-void
@@ -1322,27 +1193,22 @@
 .method public onCreate()V
     .locals 2
 
-    .line 1
     invoke-super {p0}, Lcom/ifengyu/library/base/BaseApp;->onCreate()V
 
-    .line 2
     sput-object p0, Lcom/ifengyu/intercom/MiTalkiApp;->s:Lcom/ifengyu/intercom/MiTalkiApp;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/blelib/utils/FooUtils;->method05()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 4
     invoke-static {}, Landroid/os/Process;->myPid()I
 
     move-result v0
 
     invoke-static {v0}, Landroid/os/Process;->killProcess(I)V
 
-    .line 5
     :cond_0
     invoke-static {p0}, Lb/c/a/a;->a(Landroid/content/Context;)Z
 
@@ -1352,7 +1218,6 @@
 
     return-void
 
-    .line 6
     :cond_1
     invoke-static {p0}, Lcom/ifengyu/library/a/h;->c(Landroid/content/Context;)Z
 
@@ -1360,30 +1225,24 @@
 
     if-eqz v0, :cond_2
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/i/s;->a()V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->r:Landroid/app/Application$ActivityLifecycleCallbacks;
 
     invoke-virtual {p0, v0}, Landroid/app/Application;->registerActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
 
-    .line 9
     invoke-direct {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->q()V
 
-    .line 10
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x18
 
     if-lt v0, v1, :cond_2
 
-    .line 11
     new-instance v0, Landroid/os/StrictMode$VmPolicy$Builder;
 
     invoke-direct {v0}, Landroid/os/StrictMode$VmPolicy$Builder;-><init>()V
 
-    .line 12
     invoke-virtual {v0}, Landroid/os/StrictMode$VmPolicy$Builder;->build()Landroid/os/StrictMode$VmPolicy;
 
     move-result-object v0
@@ -1397,10 +1256,8 @@
 .method public p()V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/MiTalkiApp;->e()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/MiTalkiApp;->p:Landroid/app/Activity;
 
     new-instance v1, Landroid/content/Intent;
@@ -1413,7 +1270,6 @@
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/j;->a()V
 
     return-void

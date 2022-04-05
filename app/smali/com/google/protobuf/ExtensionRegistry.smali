@@ -1,6 +1,5 @@
 .class public Lcom/google/protobuf/ExtensionRegistry;
 .super Lcom/google/protobuf/ExtensionRegistryLite;
-.source "ExtensionRegistry.java"
 
 
 # annotations
@@ -66,7 +65,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/ExtensionRegistry;
 
     const/4 v1, 0x1
@@ -81,31 +79,26 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/ExtensionRegistryLite;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByName:Ljava/util/Map;
 
-    .line 3
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->mutableExtensionsByName:Ljava/util/Map;
 
-    .line 4
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByNumber:Ljava/util/Map;
 
-    .line 5
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -118,10 +111,8 @@
 .method private constructor <init>(Lcom/google/protobuf/ExtensionRegistry;)V
     .locals 1
 
-    .line 6
     invoke-direct {p0, p1}, Lcom/google/protobuf/ExtensionRegistryLite;-><init>(Lcom/google/protobuf/ExtensionRegistryLite;)V
 
-    .line 7
     iget-object v0, p1, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByName:Ljava/util/Map;
 
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
@@ -130,7 +121,6 @@
 
     iput-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByName:Ljava/util/Map;
 
-    .line 8
     iget-object v0, p1, Lcom/google/protobuf/ExtensionRegistry;->mutableExtensionsByName:Ljava/util/Map;
 
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
@@ -139,7 +129,6 @@
 
     iput-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->mutableExtensionsByName:Ljava/util/Map;
 
-    .line 9
     iget-object v0, p1, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByNumber:Ljava/util/Map;
 
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
@@ -148,7 +137,6 @@
 
     iput-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByNumber:Ljava/util/Map;
 
-    .line 10
     iget-object p1, p1, Lcom/google/protobuf/ExtensionRegistry;->mutableExtensionsByNumber:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
@@ -163,35 +151,30 @@
 .method constructor <init>(Z)V
     .locals 0
 
-    .line 11
     invoke-static {}, Lcom/google/protobuf/ExtensionRegistryLite;->getEmptyRegistry()Lcom/google/protobuf/ExtensionRegistryLite;
 
     move-result-object p1
 
     invoke-direct {p0, p1}, Lcom/google/protobuf/ExtensionRegistryLite;-><init>(Lcom/google/protobuf/ExtensionRegistryLite;)V
 
-    .line 12
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByName:Ljava/util/Map;
 
-    .line 13
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/protobuf/ExtensionRegistry;->mutableExtensionsByName:Ljava/util/Map;
 
-    .line 14
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByNumber:Ljava/util/Map;
 
-    .line 15
     invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
     move-result-object p1
@@ -204,7 +187,6 @@
 .method private add(Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;Lcom/google/protobuf/Extension$ExtensionType;)V
     .locals 4
 
-    .line 11
     iget-object v0, p1, Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;->descriptor:Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->isExtension()Z
@@ -213,7 +195,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 12
     sget-object v0, Lcom/google/protobuf/ExtensionRegistry$1;->$SwitchMap$com$google$protobuf$Extension$ExtensionType:[I
 
     invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
@@ -232,23 +213,18 @@
 
     return-void
 
-    .line 13
     :cond_0
     iget-object p2, p0, Lcom/google/protobuf/ExtensionRegistry;->mutableExtensionsByName:Ljava/util/Map;
 
-    .line 14
     iget-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->mutableExtensionsByNumber:Ljava/util/Map;
 
     goto :goto_0
 
-    .line 15
     :cond_1
     iget-object p2, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByName:Ljava/util/Map;
 
-    .line 16
     iget-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByNumber:Ljava/util/Map;
 
-    .line 17
     :goto_0
     iget-object v1, p1, Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;->descriptor:Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
@@ -258,7 +234,6 @@
 
     invoke-interface {p2, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 18
     new-instance v1, Lcom/google/protobuf/ExtensionRegistry$DescriptorIntPair;
 
     iget-object v2, p1, Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;->descriptor:Lcom/google/protobuf/Descriptors$FieldDescriptor;
@@ -277,10 +252,8 @@
 
     invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 19
     iget-object v0, p1, Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;->descriptor:Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
-    .line 20
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getContainingType()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v1
@@ -319,7 +292,6 @@
 
     if-ne v1, v2, :cond_2
 
-    .line 21
     invoke-virtual {v0}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getMessageType()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -333,7 +305,6 @@
     :cond_2
     return-void
 
-    .line 22
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -347,7 +318,6 @@
 .method public static getEmptyRegistry()Lcom/google/protobuf/ExtensionRegistry;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/ExtensionRegistry;->EMPTY:Lcom/google/protobuf/ExtensionRegistry;
 
     return-object v0
@@ -364,7 +334,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/Extension;->getDescriptor()Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
     move-result-object v0
@@ -379,14 +348,12 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/Extension;->getMessageDefaultInstance()Lcom/google/protobuf/MessageLite;
 
     move-result-object v0
 
     if-nez v0, :cond_1
 
-    .line 3
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "Registered message-type extension had null default instance: "
@@ -425,7 +392,6 @@
 
     throw v0
 
-    .line 4
     :cond_1
     new-instance v0, Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
 
@@ -443,7 +409,6 @@
 
     return-object v0
 
-    .line 5
     :cond_2
     new-instance v0, Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
 
@@ -459,7 +424,6 @@
 .method public static newInstance()Lcom/google/protobuf/ExtensionRegistry;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/ExtensionRegistry;
 
     invoke-direct {v0}, Lcom/google/protobuf/ExtensionRegistry;-><init>()V
@@ -472,7 +436,6 @@
 .method public add(Lcom/google/protobuf/Descriptors$FieldDescriptor;)V
     .locals 2
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getJavaType()Lcom/google/protobuf/Descriptors$FieldDescriptor$JavaType;
 
     move-result-object v0
@@ -481,26 +444,22 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 4
     new-instance v0, Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, v1, v1}, Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;-><init>(Lcom/google/protobuf/Descriptors$FieldDescriptor;Lcom/google/protobuf/Message;Lcom/google/protobuf/ExtensionRegistry$1;)V
 
-    .line 5
     sget-object p1, Lcom/google/protobuf/Extension$ExtensionType;->IMMUTABLE:Lcom/google/protobuf/Extension$ExtensionType;
 
     invoke-direct {p0, v0, p1}, Lcom/google/protobuf/ExtensionRegistry;->add(Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;Lcom/google/protobuf/Extension$ExtensionType;)V
 
-    .line 6
     sget-object p1, Lcom/google/protobuf/Extension$ExtensionType;->MUTABLE:Lcom/google/protobuf/Extension$ExtensionType;
 
     invoke-direct {p0, v0, p1}, Lcom/google/protobuf/ExtensionRegistry;->add(Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;Lcom/google/protobuf/Extension$ExtensionType;)V
 
     return-void
 
-    .line 7
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -514,7 +473,6 @@
 .method public add(Lcom/google/protobuf/Descriptors$FieldDescriptor;Lcom/google/protobuf/Message;)V
     .locals 2
 
-    .line 8
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->getJavaType()Lcom/google/protobuf/Descriptors$FieldDescriptor$JavaType;
 
     move-result-object v0
@@ -523,7 +481,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 9
     new-instance v0, Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
 
     const/4 v1, 0x0
@@ -536,7 +493,6 @@
 
     return-void
 
-    .line 10
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -557,7 +513,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Lcom/google/protobuf/Extension;->getExtensionType()Lcom/google/protobuf/Extension$ExtensionType;
 
     move-result-object v0
@@ -576,7 +531,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {p1}, Lcom/google/protobuf/ExtensionRegistry;->newExtensionInfo(Lcom/google/protobuf/Extension;)Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
 
@@ -594,7 +548,6 @@
 .method public findExtensionByName(Ljava/lang/String;)Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/protobuf/ExtensionRegistry;->findImmutableExtensionByName(Ljava/lang/String;)Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
 
     move-result-object p1
@@ -605,7 +558,6 @@
 .method public findExtensionByNumber(Lcom/google/protobuf/Descriptors$Descriptor;I)Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/protobuf/ExtensionRegistry;->findImmutableExtensionByNumber(Lcom/google/protobuf/Descriptors$Descriptor;I)Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
 
     move-result-object p1
@@ -616,7 +568,6 @@
 .method public findImmutableExtensionByName(Ljava/lang/String;)Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByName:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -631,7 +582,6 @@
 .method public findImmutableExtensionByNumber(Lcom/google/protobuf/Descriptors$Descriptor;I)Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByNumber:Ljava/util/Map;
 
     new-instance v1, Lcom/google/protobuf/ExtensionRegistry$DescriptorIntPair;
@@ -650,7 +600,6 @@
 .method public findMutableExtensionByName(Ljava/lang/String;)Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->mutableExtensionsByName:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -665,7 +614,6 @@
 .method public findMutableExtensionByNumber(Lcom/google/protobuf/Descriptors$Descriptor;I)Lcom/google/protobuf/ExtensionRegistry$ExtensionInfo;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/ExtensionRegistry;->mutableExtensionsByNumber:Ljava/util/Map;
 
     new-instance v1, Lcom/google/protobuf/ExtensionRegistry$DescriptorIntPair;
@@ -694,12 +642,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByNumber:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -724,7 +670,6 @@
 
     check-cast v2, Lcom/google/protobuf/ExtensionRegistry$DescriptorIntPair;
 
-    .line 3
     invoke-static {v2}, Lcom/google/protobuf/ExtensionRegistry$DescriptorIntPair;->access$000(Lcom/google/protobuf/ExtensionRegistry$DescriptorIntPair;)Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v3
@@ -739,7 +684,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 4
     iget-object v3, p0, Lcom/google/protobuf/ExtensionRegistry;->immutableExtensionsByNumber:Ljava/util/Map;
 
     invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -767,12 +711,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/google/protobuf/ExtensionRegistry;->mutableExtensionsByNumber:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -797,7 +739,6 @@
 
     check-cast v2, Lcom/google/protobuf/ExtensionRegistry$DescriptorIntPair;
 
-    .line 3
     invoke-static {v2}, Lcom/google/protobuf/ExtensionRegistry$DescriptorIntPair;->access$000(Lcom/google/protobuf/ExtensionRegistry$DescriptorIntPair;)Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v3
@@ -812,7 +753,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 4
     iget-object v3, p0, Lcom/google/protobuf/ExtensionRegistry;->mutableExtensionsByNumber:Ljava/util/Map;
 
     invoke-interface {v3, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -830,7 +770,6 @@
 .method public getUnmodifiable()Lcom/google/protobuf/ExtensionRegistry;
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/ExtensionRegistry;
 
     invoke-direct {v0, p0}, Lcom/google/protobuf/ExtensionRegistry;-><init>(Lcom/google/protobuf/ExtensionRegistry;)V
@@ -841,7 +780,6 @@
 .method public bridge synthetic getUnmodifiable()Lcom/google/protobuf/ExtensionRegistryLite;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/ExtensionRegistry;->getUnmodifiable()Lcom/google/protobuf/ExtensionRegistry;
 
     move-result-object v0

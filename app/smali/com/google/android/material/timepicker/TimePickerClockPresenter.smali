@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/timepicker/TimePickerClockPresenter;
 .super Ljava/lang/Object;
-.source "TimePickerClockPresenter.java"
 
 # interfaces
 .implements Lcom/google/android/material/timepicker/ClockHandView$OnRotateListener;
@@ -62,7 +61,6 @@
 
     const-string v11, "11"
 
-    .line 1
     filled-new-array/range {v0 .. v11}, [Ljava/lang/String;
 
     move-result-object v0
@@ -93,7 +91,6 @@
 
     const-string v12, "22"
 
-    .line 2
     filled-new-array/range {v1 .. v12}, [Ljava/lang/String;
 
     move-result-object v0
@@ -124,7 +121,6 @@
 
     const-string v12, "55"
 
-    .line 3
     filled-new-array/range {v1 .. v12}, [Ljava/lang/String;
 
     move-result-object v0
@@ -137,21 +133,16 @@
 .method public constructor <init>(Lcom/google/android/material/timepicker/TimePickerView;Lcom/google/android/material/timepicker/TimeModel;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->broadcasting:Z
 
-    .line 3
     iput-object p1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
-    .line 4
     iput-object p2, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->initialize()V
 
     return-void
@@ -160,7 +151,6 @@
 .method private getDegreesPerHour()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget v0, v0, Lcom/google/android/material/timepicker/TimeModel;->format:I
@@ -183,7 +173,6 @@
 .method private getHourClockValues()[Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget v0, v0, Lcom/google/android/material/timepicker/TimeModel;->format:I
@@ -206,7 +195,6 @@
 .method private performHapticFeedback(II)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget v1, v0, Lcom/google/android/material/timepicker/TimeModel;->minute:I
@@ -217,7 +205,6 @@
 
     if-eq p2, p1, :cond_2
 
-    .line 2
     :cond_0
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -232,7 +219,6 @@
     :cond_1
     const/4 p1, 0x1
 
-    .line 3
     :goto_0
     iget-object p2, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
@@ -245,7 +231,6 @@
 .method private updateTime()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     iget-object v1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
@@ -268,19 +253,16 @@
 .method private updateValues()V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->HOUR_CLOCK_VALUES:[Ljava/lang/String;
 
     const-string v1, "%d"
 
     invoke-direct {p0, v0, v1}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->updateValues([Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     sget-object v0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->HOUR_CLOCK_24_VALUES:[Ljava/lang/String;
 
     invoke-direct {p0, v0, v1}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->updateValues([Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     sget-object v0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->MINUTE_CLOCK_VALUES:[Ljava/lang/String;
 
     const-string v1, "%02d"
@@ -295,13 +277,11 @@
 
     const/4 v0, 0x0
 
-    .line 4
     :goto_0
     array-length v1, p1
 
     if-ge v0, v1, :cond_0
 
-    .line 5
     iget-object v1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getResources()Landroid/content/res/Resources;
@@ -329,7 +309,6 @@
 .method public hide()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     const/16 v1, 0x8
@@ -342,43 +321,35 @@
 .method public initialize()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget v0, v0, Lcom/google/android/material/timepicker/TimeModel;->format:I
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     invoke-virtual {v0}, Lcom/google/android/material/timepicker/TimePickerView;->showToggle()V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     invoke-virtual {v0, p0}, Lcom/google/android/material/timepicker/TimePickerView;->addOnRotateListener(Lcom/google/android/material/timepicker/ClockHandView$OnRotateListener;)V
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     invoke-virtual {v0, p0}, Lcom/google/android/material/timepicker/TimePickerView;->setOnSelectionChangeListener(Lcom/google/android/material/timepicker/TimePickerView$OnSelectionChange;)V
 
-    .line 5
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     invoke-virtual {v0, p0}, Lcom/google/android/material/timepicker/TimePickerView;->setOnPeriodChangeListener(Lcom/google/android/material/timepicker/TimePickerView$OnPeriodChangeListener;)V
 
-    .line 6
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     invoke-virtual {v0, p0}, Lcom/google/android/material/timepicker/TimePickerView;->setOnActionUpListener(Lcom/google/android/material/timepicker/ClockHandView$OnActionUpListener;)V
 
-    .line 7
     invoke-direct {p0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->updateValues()V
 
-    .line 8
     invoke-virtual {p0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->invalidate()V
 
     return-void
@@ -387,14 +358,12 @@
 .method public invalidate()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-virtual {v0}, Lcom/google/android/material/timepicker/TimeModel;->getHourForDisplay()I
 
     move-result v0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->getDegreesPerHour()I
 
     move-result v1
@@ -405,7 +374,6 @@
 
     iput v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->hourRotation:F
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget v1, v0, Lcom/google/android/material/timepicker/TimeModel;->minute:I
@@ -416,14 +384,12 @@
 
     iput v1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->minuteRotation:F
 
-    .line 4
     iget v0, v0, Lcom/google/android/material/timepicker/TimeModel;->selection:I
 
     const/4 v1, 0x0
 
     invoke-virtual {p0, v0, v1}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->setSelection(IZ)V
 
-    .line 5
     invoke-direct {p0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->updateTime()V
 
     return-void
@@ -434,18 +400,14 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->broadcasting:Z
 
-    .line 2
     iget-object v1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget v2, v1, Lcom/google/android/material/timepicker/TimeModel;->minute:I
 
-    .line 3
     iget v3, v1, Lcom/google/android/material/timepicker/TimeModel;->hour:I
 
-    .line 4
     iget v1, v1, Lcom/google/android/material/timepicker/TimeModel;->selection:I
 
     const/4 v4, 0x0
@@ -454,17 +416,14 @@
 
     if-ne v1, v5, :cond_0
 
-    .line 5
     iget-object p1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     iget p2, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->hourRotation:F
 
     invoke-virtual {p1, p2, v4}, Lcom/google/android/material/timepicker/TimePickerView;->setHandRotation(FZ)V
 
-    .line 6
     iget-object p1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
-    .line 7
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -477,7 +436,6 @@
 
     check-cast p1, Landroid/view/accessibility/AccessibilityManager;
 
-    .line 8
     invoke-virtual {p1}, Landroid/view/accessibility/AccessibilityManager;->isTouchExplorationEnabled()Z
 
     move-result p1
@@ -486,12 +444,10 @@
 
     const/16 p1, 0xc
 
-    .line 9
     invoke-virtual {p0, p1, v0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->setSelection(IZ)V
 
     goto :goto_0
 
-    .line 10
     :cond_0
     invoke-static {p1}, Ljava/lang/Math;->round(F)I
 
@@ -501,17 +457,14 @@
 
     add-int/lit8 p1, p1, 0xf
 
-    .line 11
     div-int/lit8 p1, p1, 0x1e
 
-    .line 12
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     mul-int/lit8 p1, p1, 0x5
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/timepicker/TimeModel;->setMinute(I)V
 
-    .line 13
     iget-object p1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget p1, p1, Lcom/google/android/material/timepicker/TimeModel;->minute:I
@@ -522,7 +475,6 @@
 
     iput p1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->minuteRotation:F
 
-    .line 14
     :cond_1
     iget-object p1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
@@ -530,15 +482,12 @@
 
     invoke-virtual {p1, v0, p2}, Lcom/google/android/material/timepicker/TimePickerView;->setHandRotation(FZ)V
 
-    .line 15
     :cond_2
     :goto_0
     iput-boolean v4, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->broadcasting:Z
 
-    .line 16
     invoke-direct {p0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->updateTime()V
 
-    .line 17
     invoke-direct {p0, v3, v2}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->performHapticFeedback(II)V
 
     return-void
@@ -547,7 +496,6 @@
 .method public onPeriodChange(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/timepicker/TimeModel;->setPeriod(I)V
@@ -558,28 +506,23 @@
 .method public onRotate(FZ)V
     .locals 5
 
-    .line 1
     iget-boolean v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->broadcasting:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget v1, v0, Lcom/google/android/material/timepicker/TimeModel;->hour:I
 
-    .line 3
     iget v0, v0, Lcom/google/android/material/timepicker/TimeModel;->minute:I
 
-    .line 4
     invoke-static {p1}, Ljava/lang/Math;->round(F)I
 
     move-result p1
 
-    .line 5
     iget-object v2, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget v3, v2, Lcom/google/android/material/timepicker/TimeModel;->selection:I
@@ -590,12 +533,10 @@
 
     add-int/lit8 p1, p1, 0x3
 
-    .line 6
     div-int/lit8 p1, p1, 0x6
 
     invoke-virtual {v2, p1}, Lcom/google/android/material/timepicker/TimeModel;->setMinute(I)V
 
-    .line 7
     iget-object p1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iget p1, p1, Lcom/google/android/material/timepicker/TimeModel;->minute:I
@@ -614,7 +555,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     invoke-direct {p0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->getDegreesPerHour()I
 
@@ -622,7 +562,6 @@
 
     div-int/lit8 v2, v2, 0x2
 
-    .line 9
     iget-object v3, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     add-int/2addr p1, v2
@@ -635,7 +574,6 @@
 
     invoke-virtual {v3, p1}, Lcom/google/android/material/timepicker/TimeModel;->setHour(I)V
 
-    .line 10
     iget-object p1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     invoke-virtual {p1}, Lcom/google/android/material/timepicker/TimeModel;->getHourForDisplay()I
@@ -655,10 +593,8 @@
     :goto_0
     if-nez p2, :cond_2
 
-    .line 11
     invoke-direct {p0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->updateTime()V
 
-    .line 12
     invoke-direct {p0, v1, v0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->performHapticFeedback(II)V
 
     :cond_2
@@ -670,7 +606,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->setSelection(IZ)V
 
     return-void
@@ -690,18 +625,15 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     iget-object v1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     invoke-virtual {v1, v0}, Lcom/google/android/material/timepicker/TimePickerView;->setAnimateOnTouchUp(Z)V
 
-    .line 2
     iget-object v1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->time:Lcom/google/android/material/timepicker/TimeModel;
 
     iput p1, v1, Lcom/google/android/material/timepicker/TimeModel;->selection:I
 
-    .line 3
     iget-object v1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     if-eqz v0, :cond_1
@@ -710,7 +642,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_1
     invoke-direct {p0}, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->getHourClockValues()[Ljava/lang/String;
 
@@ -726,11 +657,9 @@
     :cond_2
     sget v3, Lcom/google/android/material/R$string;->material_hour_suffix:I
 
-    .line 5
     :goto_2
     invoke-virtual {v1, v2, v3}, Lcom/google/android/material/timepicker/TimePickerView;->setValues([Ljava/lang/String;I)V
 
-    .line 6
     iget-object v1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     if-eqz v0, :cond_3
@@ -745,19 +674,16 @@
     :goto_3
     invoke-virtual {v1, v0, p2}, Lcom/google/android/material/timepicker/TimePickerView;->setHandRotation(FZ)V
 
-    .line 7
     iget-object p2, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     invoke-virtual {p2, p1}, Lcom/google/android/material/timepicker/TimePickerView;->setActiveSelection(I)V
 
-    .line 8
     iget-object p1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     new-instance p2, Lcom/google/android/material/timepicker/ClickActionDelegate;
 
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
-    .line 9
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -766,17 +692,14 @@
 
     invoke-direct {p2, v0, v1}, Lcom/google/android/material/timepicker/ClickActionDelegate;-><init>(Landroid/content/Context;I)V
 
-    .line 10
     invoke-virtual {p1, p2}, Lcom/google/android/material/timepicker/TimePickerView;->setMinuteHourDelegate(Landroidx/core/view/a;)V
 
-    .line 11
     iget-object p1, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     new-instance p2, Lcom/google/android/material/timepicker/ClickActionDelegate;
 
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
-    .line 12
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -785,7 +708,6 @@
 
     invoke-direct {p2, v0, v1}, Lcom/google/android/material/timepicker/ClickActionDelegate;-><init>(Landroid/content/Context;I)V
 
-    .line 13
     invoke-virtual {p1, p2}, Lcom/google/android/material/timepicker/TimePickerView;->setHourClickDelegate(Landroidx/core/view/a;)V
 
     return-void
@@ -794,7 +716,6 @@
 .method public show()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerClockPresenter;->timePickerView:Lcom/google/android/material/timepicker/TimePickerView;
 
     const/4 v1, 0x0

@@ -1,6 +1,5 @@
 .class public final enum Lpl/droidsonroids/gif/GifError;
 .super Ljava/lang/Enum;
-.source "GifError.java"
 
 
 # annotations
@@ -75,7 +74,6 @@
 .method static constructor <clinit>()V
     .locals 16
 
-    .line 1
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/4 v1, 0x0
@@ -88,7 +86,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->c:Lpl/droidsonroids/gif/GifError;
 
-    .line 2
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/4 v2, 0x1
@@ -103,7 +100,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->d:Lpl/droidsonroids/gif/GifError;
 
-    .line 3
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/4 v3, 0x2
@@ -118,7 +114,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->e:Lpl/droidsonroids/gif/GifError;
 
-    .line 4
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/4 v4, 0x3
@@ -133,7 +128,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->f:Lpl/droidsonroids/gif/GifError;
 
-    .line 5
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/4 v5, 0x4
@@ -148,7 +142,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->g:Lpl/droidsonroids/gif/GifError;
 
-    .line 6
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/4 v6, 0x5
@@ -163,7 +156,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->h:Lpl/droidsonroids/gif/GifError;
 
-    .line 7
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/4 v7, 0x6
@@ -178,7 +170,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->i:Lpl/droidsonroids/gif/GifError;
 
-    .line 8
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/4 v8, 0x7
@@ -193,7 +184,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->j:Lpl/droidsonroids/gif/GifError;
 
-    .line 9
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v9, 0x8
@@ -208,7 +198,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->k:Lpl/droidsonroids/gif/GifError;
 
-    .line 10
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v10, 0x9
@@ -223,7 +212,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->l:Lpl/droidsonroids/gif/GifError;
 
-    .line 11
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v11, 0xa
@@ -238,7 +226,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->m:Lpl/droidsonroids/gif/GifError;
 
-    .line 12
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v12, 0xb
@@ -253,7 +240,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->n:Lpl/droidsonroids/gif/GifError;
 
-    .line 13
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v13, 0xc
@@ -268,7 +254,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->o:Lpl/droidsonroids/gif/GifError;
 
-    .line 14
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v12, 0xd
@@ -283,7 +268,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->p:Lpl/droidsonroids/gif/GifError;
 
-    .line 15
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v13, 0xe
@@ -298,7 +282,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->q:Lpl/droidsonroids/gif/GifError;
 
-    .line 16
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v12, 0xf
@@ -313,7 +296,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->r:Lpl/droidsonroids/gif/GifError;
 
-    .line 17
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v13, 0x10
@@ -328,7 +310,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->s:Lpl/droidsonroids/gif/GifError;
 
-    .line 18
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v12, 0x11
@@ -343,7 +324,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->t:Lpl/droidsonroids/gif/GifError;
 
-    .line 19
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v13, 0x12
@@ -358,7 +338,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->u:Lpl/droidsonroids/gif/GifError;
 
-    .line 20
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v12, 0x13
@@ -373,7 +352,6 @@
 
     sput-object v0, Lpl/droidsonroids/gif/GifError;->v:Lpl/droidsonroids/gif/GifError;
 
-    .line 21
     new-instance v0, Lpl/droidsonroids/gif/GifError;
 
     const/16 v13, 0x14
@@ -392,7 +370,6 @@
 
     new-array v12, v12, [Lpl/droidsonroids/gif/GifError;
 
-    .line 22
     sget-object v14, Lpl/droidsonroids/gif/GifError;->c:Lpl/droidsonroids/gif/GifError;
 
     aput-object v14, v12, v1
@@ -512,13 +489,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput p3, p0, Lpl/droidsonroids/gif/GifError;->b:I
 
-    .line 3
     iput-object p4, p0, Lpl/droidsonroids/gif/GifError;->a:Ljava/lang/String;
 
     return-void
@@ -527,7 +501,6 @@
 .method static a(I)Lpl/droidsonroids/gif/GifError;
     .locals 5
 
-    .line 1
     invoke-static {}, Lpl/droidsonroids/gif/GifError;->values()[Lpl/droidsonroids/gif/GifError;
 
     move-result-object v0
@@ -541,7 +514,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     iget v4, v3, Lpl/droidsonroids/gif/GifError;->b:I
 
     if-ne v4, p0, :cond_0
@@ -553,11 +525,9 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     sget-object v0, Lpl/droidsonroids/gif/GifError;->w:Lpl/droidsonroids/gif/GifError;
 
-    .line 4
     iput p0, v0, Lpl/droidsonroids/gif/GifError;->b:I
 
     return-object v0
@@ -566,7 +536,6 @@
 .method public static valueOf(Ljava/lang/String;)Lpl/droidsonroids/gif/GifError;
     .locals 1
 
-    .line 1
     const-class v0, Lpl/droidsonroids/gif/GifError;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -581,7 +550,6 @@
 .method public static values()[Lpl/droidsonroids/gif/GifError;
     .locals 1
 
-    .line 1
     sget-object v0, Lpl/droidsonroids/gif/GifError;->x:[Lpl/droidsonroids/gif/GifError;
 
     invoke-virtual {v0}, [Lpl/droidsonroids/gif/GifError;->clone()Ljava/lang/Object;
@@ -598,7 +566,6 @@
 .method a()Ljava/lang/String;
     .locals 4
 
-    .line 5
     sget-object v0, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const/4 v1, 0x2

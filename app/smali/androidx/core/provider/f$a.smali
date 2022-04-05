@@ -1,6 +1,5 @@
 .class Landroidx/core/provider/f$a;
 .super Ljava/lang/Object;
-.source "RequestExecutor.java"
 
 # interfaces
 .implements Ljava/util/concurrent/ThreadFactory;
@@ -37,13 +36,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/provider/f$a;->a:Ljava/lang/String;
 
-    .line 3
     iput p2, p0, Landroidx/core/provider/f$a;->b:I
 
     return-void
@@ -54,7 +50,6 @@
 .method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 3
 
-    .line 1
     new-instance v0, Landroidx/core/provider/f$a$a;
 
     iget-object v1, p0, Landroidx/core/provider/f$a;->a:Ljava/lang/String;

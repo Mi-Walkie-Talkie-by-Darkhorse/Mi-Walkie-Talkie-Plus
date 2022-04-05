@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultDownloadImpl$1;
 .super Ljava/lang/Object;
-.source "DefaultDownloadImpl.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/just/agentweb/DefaultDownloadImpl;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;J)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultDownloadImpl$1;->this$0:Lcom/just/agentweb/DefaultDownloadImpl;
 
     iput-object p2, p0, Lcom/just/agentweb/DefaultDownloadImpl$1;->val$url:Ljava/lang/String;
@@ -58,7 +56,6 @@
 .method public run()V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/DefaultDownloadImpl$1;->this$0:Lcom/just/agentweb/DefaultDownloadImpl;
 
     iget-object v1, p0, Lcom/just/agentweb/DefaultDownloadImpl$1;->val$url:Ljava/lang/String;

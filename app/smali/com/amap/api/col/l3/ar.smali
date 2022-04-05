@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ar;
 .super Ljava/lang/Object;
-.source "IBounds.java"
 
 
 # instance fields
@@ -21,10 +20,8 @@
 .method public constructor <init>(IIII)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/amap/api/col/l3/ar;->a(IIII)V
 
     return-void
@@ -35,28 +32,22 @@
 .method public final a(IIII)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/ar;->a:I
 
-    .line 2
     iput p3, p0, Lcom/amap/api/col/l3/ar;->b:I
 
-    .line 3
     iput p2, p0, Lcom/amap/api/col/l3/ar;->c:I
 
-    .line 4
     iput p4, p0, Lcom/amap/api/col/l3/ar;->d:I
 
     add-int/2addr p1, p2
 
-    .line 5
     div-int/lit8 p1, p1, 0x2
 
     iput p1, p0, Lcom/amap/api/col/l3/ar;->e:I
 
     add-int/2addr p3, p4
 
-    .line 6
     div-int/lit8 p3, p3, 0x2
 
     iput p3, p0, Lcom/amap/api/col/l3/ar;->f:I
@@ -67,7 +58,6 @@
 .method public final a(II)Z
     .locals 1
 
-    .line 7
     iget v0, p0, Lcom/amap/api/col/l3/ar;->a:I
 
     if-gt v0, p1, :cond_0
@@ -103,7 +93,6 @@
 
     return v0
 
-    .line 8
     :cond_0
     iget v1, p1, Lcom/amap/api/col/l3/ar;->a:I
 

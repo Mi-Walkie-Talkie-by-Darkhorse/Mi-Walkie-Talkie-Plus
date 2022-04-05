@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/data/DataService;
 .super Ljava/lang/Object;
-.source "DataService.java"
 
 
 # static fields
@@ -21,7 +20,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -30,17 +28,14 @@
 .method public static destroy()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/autonavi/ae/data/DataService;->mService:Lcom/autonavi/ae/data/DataService;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-direct {v0}, Lcom/autonavi/ae/data/DataService;->unInit()V
 
     const/4 v0, 0x0
 
-    .line 3
     sput-object v0, Lcom/autonavi/ae/data/DataService;->mService:Lcom/autonavi/ae/data/DataService;
 
     :cond_0
@@ -53,22 +48,18 @@
 .method public static getInstance()Lcom/autonavi/ae/data/DataService;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/autonavi/ae/data/DataService;->mService:Lcom/autonavi/ae/data/DataService;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/autonavi/ae/data/DataService;
 
     invoke-direct {v0}, Lcom/autonavi/ae/data/DataService;-><init>()V
 
-    .line 3
     sput-object v0, Lcom/autonavi/ae/data/DataService;->mService:Lcom/autonavi/ae/data/DataService;
 
     invoke-direct {v0}, Lcom/autonavi/ae/data/DataService;->init()I
 
-    .line 4
     :cond_0
     sget-object v0, Lcom/autonavi/ae/data/DataService;->mService:Lcom/autonavi/ae/data/DataService;
 

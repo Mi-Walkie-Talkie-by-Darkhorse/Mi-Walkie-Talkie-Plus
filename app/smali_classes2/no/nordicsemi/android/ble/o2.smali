@@ -1,6 +1,5 @@
 .class public final Lno/nordicsemi/android/ble/o2;
 .super Lno/nordicsemi/android/ble/m2;
-.source "SleepRequest.java"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/f2;
@@ -23,10 +22,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lno/nordicsemi/android/ble/m2;-><init>(Lno/nordicsemi/android/ble/Request$Type;)V
 
-    .line 2
     iput-wide p2, p0, Lno/nordicsemi/android/ble/o2;->p:J
 
     return-void
@@ -43,7 +40,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lno/nordicsemi/android/ble/o2;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/o2;
 
     return-object p0
@@ -58,7 +54,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-super {p0, p1}, Lno/nordicsemi/android/ble/Request;->a(Lno/nordicsemi/android/ble/j2;)Lno/nordicsemi/android/ble/Request;
 
     return-object p0
@@ -67,7 +62,6 @@
 .method h()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lno/nordicsemi/android/ble/o2;->p:J
 
     return-wide v0

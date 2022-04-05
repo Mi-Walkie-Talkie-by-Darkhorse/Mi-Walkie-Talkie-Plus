@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/lite/fragment/p;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/lite/base/recycler/c$a;

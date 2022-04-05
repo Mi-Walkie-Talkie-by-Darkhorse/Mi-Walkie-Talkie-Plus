@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/adapter/d$c;
 .super Ljava/lang/Object;
-.source "DolphinRelayAdapter.java"
 
 
 # annotations

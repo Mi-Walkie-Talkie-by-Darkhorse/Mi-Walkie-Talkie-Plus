@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/QuickCallJs;
 .super Ljava/lang/Object;
-.source "QuickCallJs.java"
 
 
 # virtual methods

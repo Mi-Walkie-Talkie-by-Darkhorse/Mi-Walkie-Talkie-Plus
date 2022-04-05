@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/analytics/pro/bx;
 .super Ljava/lang/Object;
-.source "IScheme.java"
 
 
 # annotations

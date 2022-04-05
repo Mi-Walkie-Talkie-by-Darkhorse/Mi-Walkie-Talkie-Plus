@@ -1,6 +1,5 @@
 .class public abstract Landroidx/room/o;
 .super Ljava/lang/Object;
-.source "SharedSQLiteStatement.java"
 
 
 # annotations
@@ -23,10 +22,8 @@
 .method public constructor <init>(Landroidx/room/RoomDatabase;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
@@ -35,7 +32,6 @@
 
     iput-object v0, p0, Landroidx/room/o;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 3
     iput-object p1, p0, Landroidx/room/o;->b:Landroidx/room/RoomDatabase;
 
     return-void
@@ -46,25 +42,21 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     iget-object p1, p0, Landroidx/room/o;->c:La/g/a/f;
 
     if-nez p1, :cond_0
 
-    .line 2
     invoke-direct {p0}, Landroidx/room/o;->d()La/g/a/f;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/room/o;->c:La/g/a/f;
 
-    .line 3
     :cond_0
     iget-object p1, p0, Landroidx/room/o;->c:La/g/a/f;
 
     goto :goto_0
 
-    .line 4
     :cond_1
     invoke-direct {p0}, Landroidx/room/o;->d()La/g/a/f;
 
@@ -77,12 +69,10 @@
 .method private d()La/g/a/f;
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroidx/room/o;->c()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Landroidx/room/o;->b:Landroidx/room/RoomDatabase;
 
     invoke-virtual {v1, v0}, Landroidx/room/RoomDatabase;->a(Ljava/lang/String;)La/g/a/f;
@@ -97,10 +87,8 @@
 .method public a()La/g/a/f;
     .locals 3
 
-    .line 5
     invoke-virtual {p0}, Landroidx/room/o;->b()V
 
-    .line 6
     iget-object v0, p0, Landroidx/room/o;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
@@ -121,12 +109,10 @@
 .method public a(La/g/a/f;)V
     .locals 1
 
-    .line 7
     iget-object v0, p0, Landroidx/room/o;->c:La/g/a/f;
 
     if-ne p1, v0, :cond_0
 
-    .line 8
     iget-object p1, p0, Landroidx/room/o;->a:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v0, 0x0
@@ -140,7 +126,6 @@
 .method protected b()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/room/o;->b:Landroidx/room/RoomDatabase;
 
     invoke-virtual {v0}, Landroidx/room/RoomDatabase;->a()V

@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/schedulers/SchedulerWhen$SubscribedDisposable;
 .super Ljava/lang/Object;
-.source "SchedulerWhen.java"
 
 # interfaces
 .implements Lio/reactivex/disposables/Disposable;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

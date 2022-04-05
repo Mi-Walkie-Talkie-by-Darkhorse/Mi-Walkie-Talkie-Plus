@@ -1,6 +1,5 @@
 .class Lokhttp3/internal/http2/Http2Connection$1;
 .super Lokhttp3/internal/NamedRunnable;
-.source "Http2Connection.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method varargs constructor <init>(Lokhttp3/internal/http2/Http2Connection;Ljava/lang/String;[Ljava/lang/Object;ILokhttp3/internal/http2/ErrorCode;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/internal/http2/Http2Connection$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
     iput p4, p0, Lokhttp3/internal/http2/Http2Connection$1;->val$streamId:I
@@ -43,7 +41,6 @@
 .method public execute()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 
@@ -57,7 +54,6 @@
 
     goto :goto_0
 
-    .line 2
     :catch_0
     iget-object v0, p0, Lokhttp3/internal/http2/Http2Connection$1;->this$0:Lokhttp3/internal/http2/Http2Connection;
 

@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;
 .super Lorg/osmdroid/views/overlay/Overlay;
-.source "SimpleFastPointOverlay.java"
 
 
 # annotations
@@ -59,7 +58,6 @@
 .method public constructor <init>(Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;)V
     .locals 1
 
-    .line 12
     invoke-static {}, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;->getDefaultStyle()Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
     move-result-object v0
@@ -72,10 +70,8 @@
 .method public constructor <init>(Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;)V
     .locals 13
 
-    .line 1
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/Overlay;-><init>()V
 
-    .line 2
     new-instance v9, Lorg/osmdroid/util/BoundingBox;
 
     const-wide/16 v1, 0x0
@@ -92,13 +88,10 @@
 
     iput-object v9, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->prevBoundingBox:Lorg/osmdroid/util/BoundingBox;
 
-    .line 3
     iput-object p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
-    .line 4
     iput-object p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
-    .line 5
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -134,7 +127,6 @@
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 6
     invoke-interface {v4}, Lorg/osmdroid/api/IGeoPoint;->getLongitude()D
 
     move-result-wide v5
@@ -159,7 +151,6 @@
     :cond_3
     if-eqz v3, :cond_4
 
-    .line 7
     invoke-interface {v4}, Lorg/osmdroid/api/IGeoPoint;->getLongitude()D
 
     move-result-wide v5
@@ -184,7 +175,6 @@
     :cond_5
     if-eqz v1, :cond_6
 
-    .line 8
     invoke-interface {v4}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide v5
@@ -209,7 +199,6 @@
     :cond_7
     if-eqz v2, :cond_8
 
-    .line 9
     invoke-interface {v4}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide v5
@@ -236,7 +225,6 @@
     :cond_9
     if-eqz v0, :cond_a
 
-    .line 10
     new-instance p1, Lorg/osmdroid/util/BoundingBox;
 
     invoke-virtual {v1}, Ljava/lang/Double;->doubleValue()D
@@ -263,7 +251,6 @@
 
     goto :goto_1
 
-    .line 11
     :cond_a
     iput-object p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mBoundingBox:Lorg/osmdroid/util/BoundingBox;
 
@@ -276,12 +263,10 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     invoke-virtual/range {p1 .. p1}, Lorg/osmdroid/views/MapView;->getBoundingBox()Lorg/osmdroid/util/BoundingBox;
 
     move-result-object v1
 
-    .line 2
     invoke-virtual {v1}, Lorg/osmdroid/util/BoundingBox;->getLatNorth()D
 
     move-result-wide v2
@@ -296,7 +281,6 @@
 
     if-nez v6, :cond_0
 
-    .line 3
     invoke-virtual {v1}, Lorg/osmdroid/util/BoundingBox;->getLatSouth()D
 
     move-result-wide v2
@@ -311,7 +295,6 @@
 
     if-nez v6, :cond_0
 
-    .line 4
     invoke-virtual {v1}, Lorg/osmdroid/util/BoundingBox;->getLonWest()D
 
     move-result-wide v2
@@ -326,7 +309,6 @@
 
     if-nez v6, :cond_0
 
-    .line 5
     invoke-virtual {v1}, Lorg/osmdroid/util/BoundingBox;->getLonEast()D
 
     move-result-wide v2
@@ -341,7 +323,6 @@
 
     if-eqz v6, :cond_8
 
-    .line 6
     :cond_0
     new-instance v2, Lorg/osmdroid/util/BoundingBox;
 
@@ -353,7 +334,6 @@
 
     move-result-wide v10
 
-    .line 7
     invoke-virtual {v1}, Lorg/osmdroid/util/BoundingBox;->getLatSouth()D
 
     move-result-wide v12
@@ -368,7 +348,6 @@
 
     iput-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->prevBoundingBox:Lorg/osmdroid/util/BoundingBox;
 
-    .line 8
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->grid:[[Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;
 
     const/4 v3, 0x0
@@ -395,7 +374,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_1
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->grid:[[Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;
 
@@ -408,33 +386,27 @@
 
     aget-object v7, v2, v6
 
-    .line 10
     invoke-static {v7, v3}, Ljava/util/Arrays;->fill([Ljava/lang/Object;Ljava/lang/Object;)V
 
     add-int/lit8 v6, v6, 0x1
 
     goto :goto_0
 
-    .line 11
     :cond_2
     :goto_1
     invoke-direct/range {p0 .. p1}, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->updateGrid(Lorg/osmdroid/views/MapView;)V
 
-    .line 12
     :cond_3
     new-instance v2, Landroid/graphics/Point;
 
     invoke-direct {v2}, Landroid/graphics/Point;-><init>()V
 
-    .line 13
     invoke-virtual/range {p1 .. p1}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v5
 
-    .line 14
     iput v4, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->numLabels:I
 
-    .line 15
     iget-object v4, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
     invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -459,7 +431,6 @@
 
     goto :goto_2
 
-    .line 16
     :cond_5
     invoke-interface {v6}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
@@ -473,7 +444,6 @@
 
     if-lez v11, :cond_4
 
-    .line 17
     invoke-interface {v6}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide v7
@@ -486,7 +456,6 @@
 
     if-gez v11, :cond_4
 
-    .line 18
     invoke-interface {v6}, Lorg/osmdroid/api/IGeoPoint;->getLongitude()D
 
     move-result-wide v7
@@ -499,7 +468,6 @@
 
     if-lez v11, :cond_4
 
-    .line 19
     invoke-interface {v6}, Lorg/osmdroid/api/IGeoPoint;->getLongitude()D
 
     move-result-wide v7
@@ -512,10 +480,8 @@
 
     if-gez v11, :cond_4
 
-    .line 20
     invoke-virtual {v5, v6, v2}, Lorg/osmdroid/views/Projection;->toPixels(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 21
     iget v7, v2, Landroid/graphics/Point;->x:I
 
     int-to-float v7, v7
@@ -536,7 +502,6 @@
 
     double-to-int v7, v7
 
-    .line 22
     iget v8, v2, Landroid/graphics/Point;->y:I
 
     int-to-float v8, v8
@@ -557,7 +522,6 @@
 
     double-to-int v8, v8
 
-    .line 23
     iget v9, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->gridWid:I
 
     if-ge v7, v9, :cond_4
@@ -580,7 +544,6 @@
 
     goto :goto_2
 
-    .line 24
     :cond_6
     aget-object v7, v9, v7
 
@@ -588,7 +551,6 @@
 
     iget-object v10, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
-    .line 25
     invoke-interface {v10}, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;->isLabelled()Z
 
     move-result v10
@@ -611,7 +573,6 @@
 
     aput-object v9, v7, v8
 
-    .line 26
     iget v6, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->numLabels:I
 
     add-int/lit8 v6, v6, 0x1
@@ -627,21 +588,18 @@
 .method private updateGrid(Lorg/osmdroid/views/MapView;)V
     .locals 5
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getWidth()I
 
     move-result v0
 
     iput v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->viewWid:I
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getHeight()I
 
     move-result p1
 
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->viewHei:I
 
-    .line 3
     iget p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->viewWid:I
 
     int-to-float p1, p1
@@ -668,7 +626,6 @@
 
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->gridWid:I
 
-    .line 4
     iget p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->viewHei:I
 
     int-to-float p1, p1
@@ -693,7 +650,6 @@
 
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->gridHei:I
 
-    .line 5
     iget-object v1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
     iget-object v1, v1, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;->mAlgorithm:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions$RenderingAlgorithm;
@@ -706,7 +662,6 @@
 
     if-ne v1, v2, :cond_0
 
-    .line 6
     iget v1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->gridWid:I
 
     new-array v2, v4, [I
@@ -727,7 +682,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget v1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->gridWid:I
 
@@ -766,25 +720,21 @@
 
     return-void
 
-    .line 1
     :cond_0
     new-instance v8, Landroid/graphics/Point;
 
     invoke-direct {v8}, Landroid/graphics/Point;-><init>()V
 
-    .line 2
     invoke-virtual/range {p2 .. p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v9
 
-    .line 3
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
     iget-object v3, v2, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;->mPointStyle:Landroid/graphics/Paint;
 
     if-eqz v3, :cond_19
 
-    .line 4
     sget-object v3, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$1;->$SwitchMap$org$osmdroid$views$overlay$simplefastpoint$SimpleFastPointOverlayOptions$RenderingAlgorithm:[I
 
     iget-object v2, v2, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;->mAlgorithm:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions$RenderingAlgorithm;
@@ -813,7 +763,6 @@
 
     goto/16 :goto_b
 
-    .line 5
     :cond_1
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
@@ -823,7 +772,6 @@
 
     if-ne v2, v3, :cond_2
 
-    .line 6
     invoke-virtual/range {p2 .. p2}, Lorg/osmdroid/views/MapView;->getZoomLevel()I
 
     move-result v2
@@ -836,13 +784,11 @@
 
     const/4 v11, 0x1
 
-    .line 7
     :cond_2
     invoke-virtual/range {p2 .. p2}, Lorg/osmdroid/views/MapView;->getBoundingBox()Lorg/osmdroid/util/BoundingBox;
 
     move-result-object v12
 
-    .line 8
     iget-object v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -869,7 +815,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_4
     invoke-interface {v14}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
@@ -883,7 +828,6 @@
 
     if-lez v5, :cond_3
 
-    .line 10
     invoke-interface {v14}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide v1
@@ -896,7 +840,6 @@
 
     if-gez v5, :cond_3
 
-    .line 11
     invoke-interface {v14}, Lorg/osmdroid/api/IGeoPoint;->getLongitude()D
 
     move-result-wide v1
@@ -909,7 +852,6 @@
 
     if-lez v5, :cond_3
 
-    .line 12
     invoke-interface {v14}, Lorg/osmdroid/api/IGeoPoint;->getLongitude()D
 
     move-result-wide v1
@@ -922,10 +864,8 @@
 
     if-gez v5, :cond_3
 
-    .line 13
     invoke-virtual {v9, v14, v8}, Lorg/osmdroid/views/Projection;->toPixels(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 14
     iget-object v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
     iget-object v2, v1, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;->mSymbol:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions$Shape;
@@ -934,7 +874,6 @@
 
     if-ne v2, v3, :cond_5
 
-    .line 15
     iget v2, v8, Landroid/graphics/Point;->x:I
 
     int-to-float v2, v2
@@ -951,7 +890,6 @@
 
     goto :goto_1
 
-    .line 16
     :cond_5
     iget v2, v8, Landroid/graphics/Point;->x:I
 
@@ -989,7 +927,6 @@
 
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 17
     :goto_1
     iget-object v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
@@ -1003,14 +940,12 @@
 
     check-cast v14, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;
 
-    .line 18
     invoke-virtual {v14}, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;->getLabel()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_3
 
-    .line 19
     iget v2, v8, Landroid/graphics/Point;->x:I
 
     int-to-float v2, v2
@@ -1033,7 +968,6 @@
 
     goto/16 :goto_0
 
-    .line 20
     :cond_6
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->grid:[[Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;
 
@@ -1049,7 +983,6 @@
 
     iget v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->viewWid:I
 
-    .line 21
     invoke-virtual/range {p2 .. p2}, Landroid/view/ViewGroup;->getWidth()I
 
     move-result v3
@@ -1058,7 +991,6 @@
 
     goto :goto_3
 
-    .line 22
     :cond_7
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->gridBool:[[Z
 
@@ -1071,19 +1003,16 @@
 
     aget-object v5, v2, v4
 
-    .line 23
     invoke-static {v5, v11}, Ljava/util/Arrays;->fill([ZZ)V
 
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_2
 
-    .line 24
     :cond_8
     :goto_3
     invoke-direct {v0, v1}, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->updateGrid(Lorg/osmdroid/views/MapView;)V
 
-    .line 25
     :cond_9
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
@@ -1093,7 +1022,6 @@
 
     if-ne v2, v3, :cond_a
 
-    .line 26
     invoke-virtual/range {p2 .. p2}, Lorg/osmdroid/views/MapView;->getZoomLevel()I
 
     move-result v2
@@ -1106,13 +1034,11 @@
 
     const/4 v11, 0x1
 
-    .line 27
     :cond_a
     invoke-virtual/range {p2 .. p2}, Lorg/osmdroid/views/MapView;->getBoundingBox()Lorg/osmdroid/util/BoundingBox;
 
     move-result-object v13
 
-    .line 28
     iget-object v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
     invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -1139,7 +1065,6 @@
 
     goto :goto_4
 
-    .line 29
     :cond_c
     invoke-interface {v15}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
@@ -1153,7 +1078,6 @@
 
     if-lez v5, :cond_b
 
-    .line 30
     invoke-interface {v15}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide v1
@@ -1166,7 +1090,6 @@
 
     if-gez v5, :cond_b
 
-    .line 31
     invoke-interface {v15}, Lorg/osmdroid/api/IGeoPoint;->getLongitude()D
 
     move-result-wide v1
@@ -1179,7 +1102,6 @@
 
     if-lez v5, :cond_b
 
-    .line 32
     invoke-interface {v15}, Lorg/osmdroid/api/IGeoPoint;->getLongitude()D
 
     move-result-wide v1
@@ -1192,10 +1114,8 @@
 
     if-gez v5, :cond_b
 
-    .line 33
     invoke-virtual {v9, v15, v8}, Lorg/osmdroid/views/Projection;->toPixels(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 34
     iget v1, v8, Landroid/graphics/Point;->x:I
 
     int-to-float v1, v1
@@ -1216,7 +1136,6 @@
 
     double-to-int v1, v1
 
-    .line 35
     iget v2, v8, Landroid/graphics/Point;->y:I
 
     int-to-float v2, v2
@@ -1237,7 +1156,6 @@
 
     double-to-int v2, v2
 
-    .line 36
     iget v3, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->gridWid:I
 
     if-ge v1, v3, :cond_b
@@ -1260,13 +1178,11 @@
 
     goto :goto_4
 
-    .line 37
     :cond_d
     aget-object v1, v3, v1
 
     aput-boolean v12, v1, v2
 
-    .line 38
     iget-object v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
     iget-object v2, v1, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;->mSymbol:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions$Shape;
@@ -1275,7 +1191,6 @@
 
     if-ne v2, v3, :cond_e
 
-    .line 39
     iget v2, v8, Landroid/graphics/Point;->x:I
 
     int-to-float v2, v2
@@ -1292,7 +1207,6 @@
 
     goto :goto_5
 
-    .line 40
     :cond_e
     iget v2, v8, Landroid/graphics/Point;->x:I
 
@@ -1330,7 +1244,6 @@
 
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 41
     :goto_5
     iget-object v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
@@ -1344,14 +1257,12 @@
 
     check-cast v15, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;
 
-    .line 42
     invoke-virtual {v15}, Lorg/osmdroid/views/overlay/simplefastpoint/LabelledGeoPoint;->getLabel()Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_b
 
-    .line 43
     iget v2, v8, Landroid/graphics/Point;->x:I
 
     int-to-float v2, v2
@@ -1374,7 +1285,6 @@
 
     goto/16 :goto_4
 
-    .line 44
     :cond_f
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->grid:[[Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;
 
@@ -1394,18 +1304,15 @@
 
     if-nez v2, :cond_11
 
-    .line 45
     invoke-virtual/range {p2 .. p2}, Lorg/osmdroid/views/MapView;->isAnimating()Z
 
     move-result v2
 
     if-nez v2, :cond_11
 
-    .line 46
     :cond_10
     invoke-direct {v0, v1}, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->computeGrid(Lorg/osmdroid/views/MapView;)V
 
-    .line 47
     :cond_11
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
@@ -1430,7 +1337,6 @@
 
     if-ne v2, v3, :cond_13
 
-    .line 48
     invoke-virtual/range {p2 .. p2}, Lorg/osmdroid/views/MapView;->getZoomLevel()I
 
     move-result v1
@@ -1446,7 +1352,6 @@
     :cond_13
     const/4 v12, 0x0
 
-    .line 49
     :cond_14
     :goto_6
     iget v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curX:F
@@ -1455,7 +1360,6 @@
 
     sub-float v13, v1, v2
 
-    .line 50
     iget v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curY:F
 
     iget v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startY:F
@@ -1464,7 +1368,6 @@
 
     const/4 v15, 0x0
 
-    .line 51
     :goto_7
     iget v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->gridWid:I
 
@@ -1472,13 +1375,11 @@
 
     const/4 v6, 0x0
 
-    .line 52
     :goto_8
     iget v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->gridHei:I
 
     if-ge v6, v1, :cond_18
 
-    .line 53
     iget-object v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->grid:[[Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;
 
     aget-object v2, v1, v15
@@ -1487,7 +1388,6 @@
 
     if-eqz v2, :cond_16
 
-    .line 54
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
     iget-object v3, v2, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;->mSymbol:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions$Shape;
@@ -1496,7 +1396,6 @@
 
     if-ne v3, v4, :cond_15
 
-    .line 55
     aget-object v3, v1, v15
 
     aget-object v3, v3, v6
@@ -1537,7 +1436,6 @@
 
     goto :goto_9
 
-    .line 56
     :cond_15
     aget-object v3, v1, v15
 
@@ -1617,7 +1515,6 @@
 
     invoke-virtual/range {v1 .. v6}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 57
     :goto_9
     iget-object v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
@@ -1635,14 +1532,12 @@
 
     aget-object v1, v1, v11
 
-    .line 58
     invoke-static {v1}, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;->access$000(Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;)Ljava/lang/String;
 
     move-result-object v1
 
     if-eqz v1, :cond_17
 
-    .line 59
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->grid:[[Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$LabelledPoint;
 
     aget-object v3, v2, v15
@@ -1725,7 +1620,6 @@
     :goto_b
     move-object/from16 v18, v8
 
-    .line 60
     iget-object v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mSelectedPoint:Ljava/lang/Integer;
 
     if-eqz v1, :cond_1b
@@ -1746,7 +1640,6 @@
 
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mSelectedPoint:Ljava/lang/Integer;
 
-    .line 61
     invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
 
     move-result v2
@@ -1763,7 +1656,6 @@
 
     if-eqz v1, :cond_1b
 
-    .line 62
     iget-object v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
     iget-object v2, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mSelectedPoint:Ljava/lang/Integer;
@@ -1780,7 +1672,6 @@
 
     invoke-virtual {v9, v1, v2}, Lorg/osmdroid/views/Projection;->toPixels(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 63
     iget-object v1, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
     iget-object v3, v1, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;->mSymbol:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions$Shape;
@@ -1789,7 +1680,6 @@
 
     if-ne v3, v4, :cond_1a
 
-    .line 64
     iget v3, v2, Landroid/graphics/Point;->x:I
 
     int-to-float v3, v3
@@ -1806,7 +1696,6 @@
 
     goto :goto_c
 
-    .line 65
     :cond_1a
     iget v3, v2, Landroid/graphics/Point;->x:I
 
@@ -1852,7 +1741,6 @@
 .method public getBoundingBox()Lorg/osmdroid/util/BoundingBox;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mBoundingBox:Lorg/osmdroid/util/BoundingBox;
 
     return-object v0
@@ -1861,7 +1749,6 @@
 .method public getSelectedPoint()Ljava/lang/Integer;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mSelectedPoint:Ljava/lang/Integer;
 
     return-object v0
@@ -1870,7 +1757,6 @@
 .method public onSingleTapConfirmed(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
     iget-boolean v0, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;->mClickable:Z
@@ -1886,19 +1772,16 @@
 
     const/4 v2, -0x1
 
-    .line 2
     new-instance v3, Landroid/graphics/Point;
 
     invoke-direct {v3}, Landroid/graphics/Point;-><init>()V
 
-    .line 3
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v4
 
     const/4 v5, 0x0
 
-    .line 4
     :goto_0
     iget-object v6, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
@@ -1908,7 +1791,6 @@
 
     if-ge v5, v6, :cond_5
 
-    .line 5
     iget-object v6, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
     invoke-interface {v6, v5}, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;->get(I)Lorg/osmdroid/api/IGeoPoint;
@@ -1919,7 +1801,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_1
     iget-object v6, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mPointList:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 
@@ -1929,7 +1810,6 @@
 
     invoke-virtual {v4, v6, v3}, Lorg/osmdroid/views/Projection;->toPixels(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 7
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v6
@@ -1970,7 +1850,6 @@
 
     goto :goto_1
 
-    .line 8
     :cond_2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
@@ -1994,7 +1873,6 @@
 
     mul-float v6, v6, v7
 
-    .line 9
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result v7
@@ -2021,7 +1899,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 10
     invoke-virtual {v0}, Ljava/lang/Float;->floatValue()F
 
     move-result v7
@@ -2030,7 +1907,6 @@
 
     if-gez v7, :cond_4
 
-    .line 11
     :cond_3
     invoke-static {v6}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
@@ -2049,7 +1925,6 @@
 
     return v1
 
-    .line 12
     :cond_6
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -2057,10 +1932,8 @@
 
     invoke-virtual {p0, p1}, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->setSelectedPoint(Ljava/lang/Integer;)V
 
-    .line 13
     invoke-virtual {p2}, Landroid/view/ViewGroup;->invalidate()V
 
-    .line 14
     iget-object p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->clickListener:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$OnClickListener;
 
     if-eqz p1, :cond_7
@@ -2082,7 +1955,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mStyle:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;
 
     iget-object v0, v0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions;->mAlgorithm:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlayOptions$RenderingAlgorithm;
@@ -2095,7 +1967,6 @@
 
     return v2
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -2113,7 +1984,6 @@
 
     goto/16 :goto_2
 
-    .line 3
     :cond_1
     invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getX(I)F
 
@@ -2121,14 +1991,12 @@
 
     iput v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curX:F
 
-    .line 4
     invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v0
 
     iput v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curY:F
 
-    .line 5
     :goto_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -2136,7 +2004,6 @@
 
     if-ge v1, v0, :cond_2
 
-    .line 6
     iget v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curX:F
 
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getX(I)F
@@ -2147,7 +2014,6 @@
 
     iput v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curX:F
 
-    .line 7
     iget v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curY:F
 
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getY(I)F
@@ -2162,7 +2028,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_2
     iget v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curX:F
 
@@ -2176,7 +2041,6 @@
 
     iput v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curX:F
 
-    .line 9
     iget v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curY:F
 
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
@@ -2189,7 +2053,6 @@
 
     iput v0, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curY:F
 
-    .line 10
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result v0
@@ -2198,17 +2061,14 @@
 
     if-eq v0, v1, :cond_6
 
-    .line 11
     invoke-direct {p0, p2}, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->computeGrid(Lorg/osmdroid/views/MapView;)V
 
-    .line 12
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
     move-result p1
 
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->prevNumPointers:I
 
-    .line 13
     iget p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curX:F
 
     iget p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startX:F
@@ -2217,7 +2077,6 @@
 
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->offsetX:F
 
-    .line 14
     iget p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curY:F
 
     iget p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startY:F
@@ -2231,30 +2090,22 @@
     :cond_3
     const/4 p1, 0x0
 
-    .line 15
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startX:F
 
-    .line 16
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startY:F
 
-    .line 17
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curX:F
 
-    .line 18
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->curY:F
 
-    .line 19
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->offsetX:F
 
-    .line 20
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->offsetY:F
 
-    .line 21
     invoke-virtual {p2}, Landroid/view/ViewGroup;->invalidate()V
 
     goto :goto_2
 
-    .line 22
     :cond_4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -2262,27 +2113,23 @@
 
     iput p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->prevNumPointers:I
 
-    .line 23
     invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result p2
 
     iput p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startX:F
 
-    .line 24
     invoke-virtual {p1, v2}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result p2
 
     iput p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startY:F
 
-    .line 25
     :goto_1
     iget p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->prevNumPointers:I
 
     if-ge v1, p2, :cond_5
 
-    .line 26
     iget p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startX:F
 
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getX(I)F
@@ -2293,7 +2140,6 @@
 
     iput p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startX:F
 
-    .line 27
     iget p2, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startY:F
 
     invoke-virtual {p1, v1}, Landroid/view/MotionEvent;->getY(I)F
@@ -2308,7 +2154,6 @@
 
     goto :goto_1
 
-    .line 28
     :cond_5
     iget p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startX:F
 
@@ -2318,7 +2163,6 @@
 
     iput p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startX:F
 
-    .line 29
     iget p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->startY:F
 
     int-to-float p2, p2
@@ -2335,7 +2179,6 @@
 .method public setOnClickListener(Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$OnClickListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->clickListener:Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$OnClickListener;
 
     return-void
@@ -2346,7 +2189,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result v0
@@ -2367,7 +2209,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iput-object p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mSelectedPoint:Ljava/lang/Integer;
 
@@ -2377,7 +2218,6 @@
     :goto_0
     const/4 p1, 0x0
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay;->mSelectedPoint:Ljava/lang/Integer;
 
     :goto_1

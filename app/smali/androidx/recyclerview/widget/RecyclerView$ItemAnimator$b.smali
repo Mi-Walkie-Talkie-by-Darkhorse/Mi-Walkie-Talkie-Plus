@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$b;
 .super Ljava/lang/Object;
-.source "RecyclerView.java"
 
 
 # annotations

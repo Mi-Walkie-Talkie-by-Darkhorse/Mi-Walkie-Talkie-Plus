@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/qrcode/detector/FinderPatternFinder$CenterComparator;
 .super Ljava/lang/Object;
-.source "FinderPatternFinder.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -36,10 +35,8 @@
 .method private constructor <init>(F)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput p1, p0, Lcom/google/zxing/qrcode/detector/FinderPatternFinder$CenterComparator;->average:F
 
     return-void
@@ -48,7 +45,6 @@
 .method synthetic constructor <init>(FLcom/google/zxing/qrcode/detector/FinderPatternFinder$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/zxing/qrcode/detector/FinderPatternFinder$CenterComparator;-><init>(F)V
 
     return-void
@@ -59,7 +55,6 @@
 .method public compare(Lcom/google/zxing/qrcode/detector/FinderPattern;Lcom/google/zxing/qrcode/detector/FinderPattern;)I
     .locals 2
 
-    .line 2
     invoke-virtual {p2}, Lcom/google/zxing/qrcode/detector/FinderPattern;->getCount()I
 
     move-result v0
@@ -74,7 +69,6 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/zxing/qrcode/detector/FinderPattern;->getEstimatedModuleSize()F
 
     move-result p1
@@ -87,7 +81,6 @@
 
     move-result p1
 
-    .line 4
     invoke-virtual {p2}, Lcom/google/zxing/qrcode/detector/FinderPattern;->getEstimatedModuleSize()F
 
     move-result p2
@@ -100,7 +93,6 @@
 
     move-result p2
 
-    .line 5
     invoke-static {p1, p2}, Ljava/lang/Float;->compare(FF)I
 
     move-result p1
@@ -114,7 +106,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/zxing/qrcode/detector/FinderPattern;
 
     check-cast p2, Lcom/google/zxing/qrcode/detector/FinderPattern;

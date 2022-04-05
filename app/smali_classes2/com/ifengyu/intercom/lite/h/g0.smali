@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/h/g0;
 .super Landroidx/lifecycle/a;
-.source "ConfigFileViewModel.java"
 
 
 # static fields
@@ -57,31 +56,26 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/lifecycle/a;-><init>(Landroid/app/Application;)V
 
-    .line 2
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->b:Landroidx/lifecycle/p;
 
-    .line 3
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->c:Landroidx/lifecycle/p;
 
-    .line 4
     new-instance v0, Landroidx/lifecycle/p;
 
     invoke-direct {v0}, Landroidx/lifecycle/p;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->d:Landroidx/lifecycle/p;
 
-    .line 5
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->a(Landroid/content/Context;)Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     move-result-object p1
@@ -119,7 +113,6 @@
         }
     .end annotation
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/lite/h/g0;->f:Ljava/lang/String;
 
     const-string v1, "delete config file failed"
@@ -137,7 +130,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/lite/h/g0;->f:Ljava/lang/String;
 
     const-string v1, "load config failed failed"
@@ -158,28 +150,24 @@
         }
     .end annotation
 
-    .line 5
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     const v1, 0x7f11017f
 
-    .line 6
     invoke-static {v1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object v1
 
     const/4 v2, 0x0
 
-    .line 7
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
 
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 8
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -198,21 +186,18 @@
 
     check-cast v4, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;
 
-    .line 9
     invoke-virtual {v4}, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;->getName()Ljava/lang/String;
 
     move-result-object v4
 
     if-eqz v4, :cond_0
 
-    .line 10
     invoke-virtual {v4, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_0
 
-    .line 11
     invoke-virtual {v1}, Ljava/lang/String;->length()I
 
     move-result v5
@@ -223,7 +208,6 @@
 
     const-string v5, "0"
 
-    .line 12
     invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v5
@@ -238,14 +222,12 @@
 
     goto :goto_0
 
-    .line 13
     :cond_1
     :try_start_0
     invoke-static {v4}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v4
 
-    .line 14
     invoke-static {v4}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -259,7 +241,6 @@
     :catch_0
     move-exception v4
 
-    .line 15
     sget-object v5, Lcom/ifengyu/intercom/lite/h/g0;->f:Ljava/lang/String;
 
     invoke-virtual {v4}, Ljava/lang/NumberFormatException;->getCause()Ljava/lang/Throwable;
@@ -270,7 +251,6 @@
 
     goto :goto_0
 
-    .line 16
     :cond_2
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -285,14 +265,12 @@
     :cond_3
     new-array v1, v2, [Ljava/lang/Integer;
 
-    .line 17
     invoke-interface {v0, v1}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, [Ljava/lang/Integer;
 
-    .line 18
     array-length v1, v0
 
     sub-int/2addr v1, v3
@@ -305,7 +283,6 @@
 
     if-ne v0, v1, :cond_4
 
-    .line 19
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p1
@@ -324,7 +301,6 @@
         }
     .end annotation
 
-    .line 27
     sget-object v0, Lcom/ifengyu/intercom/lite/h/g0;->f:Ljava/lang/String;
 
     const-string v1, "update config file failed"
@@ -342,7 +318,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object p0, Lcom/ifengyu/intercom/lite/h/g0;->f:Ljava/lang/String;
 
     const-string v0, "delete config file success"
@@ -365,7 +340,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lio/reactivex/Observable;->just(Ljava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -374,7 +348,6 @@
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/h/l;-><init>(Lcom/ifengyu/intercom/lite/h/g0;)V
 
-    .line 2
     invoke-virtual {p1, v0}, Lio/reactivex/Observable;->flatMap(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -383,7 +356,6 @@
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/h/h;-><init>(Lcom/ifengyu/intercom/lite/h/g0;)V
 
-    .line 3
     invoke-virtual {p1, v0}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -404,12 +376,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/lite/h/q;
 
     invoke-direct {v0, p0, p1}, Lcom/ifengyu/intercom/lite/h/q;-><init>(Lcom/ifengyu/intercom/lite/h/g0;Lcom/ifengyu/intercom/lite/models/ConfigFileModel;)V
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/g0;->e:Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     invoke-virtual {p1, v0}, Landroidx/room/RoomDatabase;->a(Ljava/util/concurrent/Callable;)Ljava/lang/Object;
@@ -429,7 +399,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object p0, Lcom/ifengyu/intercom/lite/h/g0;->f:Ljava/lang/String;
 
     const-string v0, "update config file success"
@@ -449,7 +418,6 @@
         }
     .end annotation
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->e:Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->l()Lcom/ifengyu/intercom/lite/f/a;
@@ -466,7 +434,6 @@
 .method public a(Lcom/ifengyu/intercom/lite/models/ConfigFileModel;)V
     .locals 2
 
-    .line 1
     invoke-static {p1}, Lio/reactivex/Observable;->just(Ljava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -475,7 +442,6 @@
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/h/f;-><init>(Lcom/ifengyu/intercom/lite/h/g0;)V
 
-    .line 2
     invoke-virtual {p1, v0}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -484,12 +450,10 @@
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/h/p;-><init>(Lcom/ifengyu/intercom/lite/h/g0;)V
 
-    .line 3
     invoke-virtual {p1, v0}, Lio/reactivex/Observable;->flatMap(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
 
-    .line 4
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->io()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -506,7 +470,6 @@
 
     invoke-direct {v1, p0}, Lcom/ifengyu/intercom/lite/h/c;-><init>(Lcom/ifengyu/intercom/lite/h/g0;)V
 
-    .line 5
     invoke-virtual {p1, v0, v1}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
     return-void
@@ -520,14 +483,12 @@
         }
     .end annotation
 
-    .line 6
     sget-object v0, Lcom/ifengyu/intercom/lite/h/g0;->f:Ljava/lang/String;
 
     const-string v1, "insert config file failed"
 
     invoke-static {v0, v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/g0;->c:Landroidx/lifecycle/p;
 
     const/4 v0, 0x0
@@ -548,7 +509,6 @@
         }
     .end annotation
 
-    .line 8
     invoke-static {p1}, Lio/reactivex/Observable;->just(Ljava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -557,12 +517,10 @@
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/h/d;-><init>(Lcom/ifengyu/intercom/lite/h/g0;)V
 
-    .line 9
     invoke-virtual {p1, v0}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
 
-    .line 10
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->io()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -575,7 +533,6 @@
 
     sget-object v1, Lcom/ifengyu/intercom/lite/h/b;->a:Lcom/ifengyu/intercom/lite/h/b;
 
-    .line 11
     invoke-virtual {p1, v0, v1}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
     return-void
@@ -593,7 +550,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->b:Landroidx/lifecycle/p;
 
     return-object v0
@@ -609,12 +565,10 @@
 
     const v0, 0x7f11017f
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/h/g0;->e:Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     invoke-virtual {v1}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->m()Lcom/ifengyu/intercom/lite/f/c;
@@ -625,12 +579,10 @@
 
     move-result-object v1
 
-    .line 4
     invoke-direct {p0, v1}, Lcom/ifengyu/intercom/lite/h/g0;->e(Ljava/util/List;)I
 
     move-result v1
 
-    .line 5
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v1
@@ -652,7 +604,6 @@
         }
     .end annotation
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->e:Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->m()Lcom/ifengyu/intercom/lite/f/c;
@@ -667,7 +618,6 @@
 .method public b(Ljava/lang/Long;)V
     .locals 2
 
-    .line 7
     invoke-static {p1}, Lio/reactivex/Observable;->just(Ljava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -676,12 +626,10 @@
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/h/e;-><init>(Lcom/ifengyu/intercom/lite/h/g0;)V
 
-    .line 8
     invoke-virtual {p1, v0}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
 
-    .line 9
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->io()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -698,7 +646,6 @@
 
     invoke-direct {v1, p0}, Lcom/ifengyu/intercom/lite/h/r;-><init>(Lcom/ifengyu/intercom/lite/h/g0;)V
 
-    .line 10
     invoke-virtual {p1, v0, v1}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
     return-void
@@ -712,14 +659,12 @@
         }
     .end annotation
 
-    .line 11
     sget-object v0, Lcom/ifengyu/intercom/lite/h/g0;->f:Ljava/lang/String;
 
     const-string v1, "load channel failed"
 
     invoke-static {v0, v1, p1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/g0;->d:Landroidx/lifecycle/p;
 
     const/4 v0, 0x0
@@ -741,7 +686,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->d:Landroidx/lifecycle/p;
 
     return-object v0
@@ -755,7 +699,6 @@
         }
     .end annotation
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/lite/h/g0;->f:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -778,7 +721,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->c:Landroidx/lifecycle/p;
 
     invoke-virtual {v0, p1}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
@@ -794,7 +736,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->b:Landroidx/lifecycle/p;
 
     invoke-virtual {v0, p1}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
@@ -813,7 +754,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->c:Landroidx/lifecycle/p;
 
     return-object v0
@@ -827,7 +767,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->e:Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->l()Lcom/ifengyu/intercom/lite/f/a;
@@ -842,7 +781,6 @@
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;->setChannelModelList(Ljava/util/List;)V
 
     return-object p1
@@ -856,14 +794,12 @@
         }
     .end annotation
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/lite/h/g0;->f:Ljava/lang/String;
 
     const-string v1, "load channel success"
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->d:Landroidx/lifecycle/p;
 
     invoke-virtual {v0, p1}, Landroidx/lifecycle/p;->postValue(Ljava/lang/Object;)V
@@ -879,7 +815,6 @@
         }
     .end annotation
 
-    .line 20
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->e:Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->m()Lcom/ifengyu/intercom/lite/f/c;
@@ -890,21 +825,18 @@
 
     move-result-wide v0
 
-    .line 21
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v2
 
     invoke-virtual {p1, v2}, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;->setId(Ljava/lang/Long;)V
 
-    .line 22
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;->getChannelModelList()Ljava/util/List;
 
     move-result-object v2
 
     if-eqz v2, :cond_1
 
-    .line 23
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v3
@@ -922,7 +854,6 @@
 
     check-cast v4, Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
-    .line 24
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v5
@@ -931,7 +862,6 @@
 
     goto :goto_0
 
-    .line 25
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->e:Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
@@ -941,7 +871,6 @@
 
     invoke-interface {v0, v2}, Lcom/ifengyu/intercom/lite/f/a;->a(Ljava/util/List;)Ljava/util/List;
 
-    .line 26
     :cond_1
     invoke-static {p1}, Lio/reactivex/Observable;->just(Ljava/lang/Object;)Lio/reactivex/Observable;
 
@@ -953,7 +882,6 @@
 .method public e()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->e:Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->m()Lcom/ifengyu/intercom/lite/f/c;
@@ -966,12 +894,10 @@
 
     sget-object v1, Lcom/ifengyu/intercom/lite/h/a;->a:Lcom/ifengyu/intercom/lite/h/a;
 
-    .line 2
     invoke-virtual {v0, v1}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object v0
 
-    .line 3
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->io()Lio/reactivex/Scheduler;
 
     move-result-object v1
@@ -986,7 +912,6 @@
 
     sget-object v2, Lcom/ifengyu/intercom/lite/h/o;->a:Lcom/ifengyu/intercom/lite/h/o;
 
-    .line 4
     invoke-virtual {v0, v1, v2}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
     return-void
@@ -1000,7 +925,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/h/g0;->e:Lcom/ifengyu/intercom/lite/database/LiteDatabase;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/database/LiteDatabase;->m()Lcom/ifengyu/intercom/lite/f/c;
@@ -1015,7 +939,6 @@
 .method public g(Lcom/ifengyu/intercom/lite/models/ConfigFileModel;)V
     .locals 2
 
-    .line 1
     invoke-static {p1}, Lio/reactivex/Observable;->just(Ljava/lang/Object;)Lio/reactivex/Observable;
 
     move-result-object p1
@@ -1024,12 +947,10 @@
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/h/g;-><init>(Lcom/ifengyu/intercom/lite/h/g0;)V
 
-    .line 2
     invoke-virtual {p1, v0}, Lio/reactivex/Observable;->map(Lio/reactivex/functions/Function;)Lio/reactivex/Observable;
 
     move-result-object p1
 
-    .line 3
     invoke-static {}, Lio/reactivex/schedulers/Schedulers;->io()Lio/reactivex/Scheduler;
 
     move-result-object v0
@@ -1042,7 +963,6 @@
 
     sget-object v1, Lcom/ifengyu/intercom/lite/h/m;->a:Lcom/ifengyu/intercom/lite/h/m;
 
-    .line 4
     invoke-virtual {p1, v0, v1}, Lio/reactivex/Observable;->subscribe(Lio/reactivex/functions/Consumer;Lio/reactivex/functions/Consumer;)Lio/reactivex/disposables/Disposable;
 
     return-void

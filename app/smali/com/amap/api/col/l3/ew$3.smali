@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ew$3;
 .super Ljava/lang/Object;
-.source "IndoorFloorSwitchView.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/ew;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ew$3;->b:Lcom/amap/api/col/l3/ew;
 
     iput p2, p0, Lcom/amap/api/col/l3/ew$3;->a:I
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ew$3;->b:Lcom/amap/api/col/l3/ew;
 
     iget v1, p0, Lcom/amap/api/col/l3/ew$3;->a:I

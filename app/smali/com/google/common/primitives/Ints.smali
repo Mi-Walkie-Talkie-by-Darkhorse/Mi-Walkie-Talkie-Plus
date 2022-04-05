@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/primitives/Ints;
 .super Ljava/lang/Object;
-.source "Ints.java"
 
 
 # annotations
@@ -33,12 +32,10 @@
 
     new-array v0, v0, [B
 
-    .line 1
     sput-object v0, Lcom/google/common/primitives/Ints;->asciiDigits:[B
 
     const/4 v1, -0x1
 
-    .line 2
     invoke-static {v0, v1}, Ljava/util/Arrays;->fill([BB)V
 
     const/4 v0, 0x0
@@ -50,7 +47,6 @@
 
     if-gt v1, v2, :cond_0
 
-    .line 3
     sget-object v2, Lcom/google/common/primitives/Ints;->asciiDigits:[B
 
     add-int/lit8 v3, v1, 0x30
@@ -69,7 +65,6 @@
 
     if-gt v0, v1, :cond_1
 
-    .line 4
     sget-object v1, Lcom/google/common/primitives/Ints;->asciiDigits:[B
 
     add-int/lit8 v2, v0, 0x41
@@ -82,7 +77,6 @@
 
     add-int/lit8 v2, v0, 0x61
 
-    .line 5
     aput-byte v3, v1, v2
 
     add-int/lit8 v0, v0, 0x1
@@ -96,7 +90,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -105,7 +98,6 @@
 .method static synthetic access$000([IIII)I
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/google/common/primitives/Ints;->indexOf([IIII)I
 
     move-result p0
@@ -116,7 +108,6 @@
 .method static synthetic access$100([IIII)I
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2, p3}, Lcom/google/common/primitives/Ints;->lastIndexOf([IIII)I
 
     move-result p0
@@ -135,19 +126,16 @@
         }
     .end annotation
 
-    .line 1
     array-length v0, p0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/google/common/primitives/Ints$IntArrayAsList;
 
@@ -169,7 +157,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -220,7 +207,6 @@
 .method public static varargs concat([[I)[I
     .locals 7
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -234,7 +220,6 @@
 
     aget-object v4, p0, v2
 
-    .line 2
     array-length v4, v4
 
     add-int/2addr v3, v4
@@ -243,11 +228,9 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-array v0, v3, [I
 
-    .line 4
     array-length v2, p0
 
     const/4 v3, 0x0
@@ -259,12 +242,10 @@
 
     aget-object v5, p0, v3
 
-    .line 5
     array-length v6, v5
 
     invoke-static {v5, v1, v0, v4, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 6
     array-length v5, v5
 
     add-int/2addr v4, v5
@@ -280,7 +261,6 @@
 .method public static contains([II)Z
     .locals 4
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -310,10 +290,8 @@
 .method private static copyOf([II)[I
     .locals 2
 
-    .line 1
     new-array v0, p1, [I
 
-    .line 2
     array-length v1, p0
 
     invoke-static {v1, p1}, Ljava/lang/Math;->min(II)I
@@ -334,7 +312,6 @@
 
     if-ge p0, v0, :cond_0
 
-    .line 1
     sget-object v0, Lcom/google/common/primitives/Ints;->asciiDigits:[B
 
     aget-byte p0, v0, p0
@@ -367,7 +344,6 @@
     :goto_0
     new-array v3, v0, [Ljava/lang/Object;
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -390,7 +366,6 @@
     :goto_1
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 2
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -401,7 +376,6 @@
 
     invoke-static {v2, v1, v0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     array-length v0, p0
 
     if-ge v0, p1, :cond_2
@@ -422,7 +396,6 @@
         value = "doesn\'t work"
     .end annotation
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x4
@@ -463,7 +436,6 @@
 
     invoke-static {v0, v1, v5}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 2
     aget-byte v0, p0, v3
 
     aget-byte v1, p0, v2
@@ -517,7 +489,6 @@
 .method public static indexOf([II)I
     .locals 2
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -535,7 +506,6 @@
     :goto_0
     if-ge p2, p3, :cond_1
 
-    .line 2
     aget v0, p0, p2
 
     if-ne v0, p1, :cond_0
@@ -558,15 +528,12 @@
 
     const-string v0, "array"
 
-    .line 3
     invoke-static {p0, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "target"
 
-    .line 4
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -578,7 +545,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 6
     :goto_0
     array-length v2, p0
 
@@ -592,7 +558,6 @@
 
     const/4 v2, 0x0
 
-    .line 7
     :goto_1
     array-length v3, p1
 
@@ -600,7 +565,6 @@
 
     add-int v3, v0, v2
 
-    .line 8
     aget v3, p0, v3
 
     aget v4, p1, v2
@@ -628,10 +592,8 @@
 .method public static varargs join(Ljava/lang/String;[I)Ljava/lang/String;
     .locals 3
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     array-length v0, p1
 
     if-nez v0, :cond_0
@@ -640,7 +602,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -652,20 +613,17 @@
 
     const/4 v1, 0x0
 
-    .line 4
     aget v1, p1, v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const/4 v1, 0x1
 
-    .line 5
     :goto_0
     array-length v2, p1
 
     if-ge v1, v2, :cond_1
 
-    .line 6
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     aget v2, p1, v1
@@ -676,7 +634,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -688,7 +645,6 @@
 .method public static lastIndexOf([II)I
     .locals 2
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -708,7 +664,6 @@
     :goto_0
     if-lt p3, p2, :cond_1
 
-    .line 2
     aget v0, p0, p3
 
     if-ne v0, p1, :cond_0
@@ -736,7 +691,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/primitives/Ints$LexicographicalComparator;->INSTANCE:Lcom/google/common/primitives/Ints$LexicographicalComparator;
 
     return-object v0
@@ -745,7 +699,6 @@
 .method public static varargs max([I)I
     .locals 3
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -764,21 +717,17 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 2
     aget v0, p0, v1
 
-    .line 3
     :goto_1
     array-length v1, p0
 
     if-ge v2, v1, :cond_2
 
-    .line 4
     aget v1, p0, v2
 
     if-le v1, v0, :cond_1
 
-    .line 5
     aget v0, p0, v2
 
     :cond_1
@@ -793,7 +742,6 @@
 .method public static varargs min([I)I
     .locals 3
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -812,21 +760,17 @@
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 2
     aget v0, p0, v1
 
-    .line 3
     :goto_1
     array-length v1, p0
 
     if-ge v2, v1, :cond_2
 
-    .line 4
     aget v1, p0, v2
 
     if-ge v1, v0, :cond_1
 
-    .line 5
     aget v0, p0, v2
 
     :cond_1
@@ -883,7 +827,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/primitives/Ints$IntConverter;->INSTANCE:Lcom/google/common/primitives/Ints$IntConverter;
 
     return-object v0
@@ -901,12 +844,10 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/primitives/Ints$IntArrayAsList;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, Lcom/google/common/primitives/Ints$IntArrayAsList;
 
     invoke-virtual {p0}, Lcom/google/common/primitives/Ints$IntArrayAsList;->toIntArray()[I
@@ -915,16 +856,13 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-interface {p0}, Ljava/util/Collection;->toArray()[Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 4
     array-length v0, p0
 
-    .line 5
     new-array v1, v0, [I
 
     const/4 v2, 0x0
@@ -932,7 +870,6 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 6
     aget-object v3, p0, v2
 
     invoke-static {v3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1008,7 +945,6 @@
 
     const/16 v0, 0xa
 
-    .line 1
     invoke-static {p0, v0}, Lcom/google/common/primitives/Ints;->tryParse(Ljava/lang/String;I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -1021,7 +957,6 @@
     .annotation runtime Ljavax/annotation/CheckForNull;
     .end annotation
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -1049,7 +984,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -1060,7 +994,6 @@
 
     const/4 v0, 0x1
 
-    .line 4
     :cond_1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -1073,7 +1006,6 @@
     :cond_2
     add-int/lit8 v2, v0, 0x1
 
-    .line 5
     invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v3
@@ -1093,10 +1025,8 @@
 
     const/high16 v4, -0x80000000
 
-    .line 6
     div-int v5, v4, p1
 
-    .line 7
     :goto_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -1106,7 +1036,6 @@
 
     add-int/lit8 v6, v2, 0x1
 
-    .line 8
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v2
@@ -1146,7 +1075,6 @@
     :cond_7
     if-eqz v0, :cond_8
 
-    .line 9
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -1161,7 +1089,6 @@
     :cond_9
     neg-int p0, v3
 
-    .line 10
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p0
@@ -1172,7 +1099,6 @@
     :goto_2
     return-object v1
 
-    .line 11
     :cond_b
     new-instance p0, Ljava/lang/IllegalArgumentException;
 

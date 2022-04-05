@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/c/g$d;
 .super Ljava/lang/Object;
-.source "QMUISkinManager.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/qmuiteam/qmui/c/g;->a()Ljava/util/HashMap;
 
     move-result-object v0
@@ -45,7 +43,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/g$d;->b:Lcom/qmuiteam/qmui/c/g;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/c/g;->a(Lcom/qmuiteam/qmui/c/g;)Landroid/content/res/Resources;
@@ -56,14 +53,12 @@
 
     move-result-object v0
 
-    .line 3
     iget v1, p0, Lcom/qmuiteam/qmui/c/g$d;->a:I
 
     const/4 v2, 0x1
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/Resources$Theme;->applyStyle(IZ)V
 
-    .line 4
     invoke-static {}, Lcom/qmuiteam/qmui/c/g;->a()Ljava/util/HashMap;
 
     move-result-object v1

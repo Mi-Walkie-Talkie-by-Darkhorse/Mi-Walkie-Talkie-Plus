@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/lifecycle/w$b;
 .super Ljava/lang/Object;
-.source "ViewModelProvider.java"
 
 
 # annotations

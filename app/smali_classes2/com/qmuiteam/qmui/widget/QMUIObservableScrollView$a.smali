@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/QMUIObservableScrollView$a;
 .super Ljava/lang/Object;
-.source "QMUIObservableScrollView.java"
 
 
 # annotations

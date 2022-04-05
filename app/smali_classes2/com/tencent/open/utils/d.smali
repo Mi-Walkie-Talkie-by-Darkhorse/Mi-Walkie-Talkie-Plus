@@ -1,6 +1,5 @@
 .class public final Lcom/tencent/open/utils/d;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method public static final a()Landroid/content/Context;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/tencent/open/utils/d;->a:Landroid/content/Context;
 
     if-nez v0, :cond_0
@@ -25,7 +23,6 @@
 .method public static final a(Landroid/content/Context;)V
     .locals 0
 
-    .line 2
     sput-object p0, Lcom/tencent/open/utils/d;->a:Landroid/content/Context;
 
     return-void
@@ -34,7 +31,6 @@
 .method public static final b()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -45,7 +41,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
@@ -61,7 +56,6 @@
 .method public static final c()Ljava/io/File;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v0
@@ -72,7 +66,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 

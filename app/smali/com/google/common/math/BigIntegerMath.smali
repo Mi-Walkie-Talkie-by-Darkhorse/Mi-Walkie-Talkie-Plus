@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/math/BigIntegerMath;
 .super Ljava/lang/Object;
-.source "BigIntegerMath.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/math/BigInteger;
 
     const-string v1, "16a09e667f3bcc908b2fb1366ea957d3e3adec17512775099da2f590b0667322a"
@@ -42,7 +40,6 @@
 
     const-wide/high16 v0, 0x4024000000000000L    # 10.0
 
-    .line 2
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -51,7 +48,6 @@
 
     const-wide/high16 v0, 0x4000000000000000L    # 2.0
 
-    .line 3
     invoke-static {v0, v1}, Ljava/lang/Math;->log(D)D
 
     move-result-wide v0
@@ -64,7 +60,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -75,12 +70,10 @@
 
     const-string v0, "n"
 
-    .line 1
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
 
     const-string v0, "k"
 
-    .line 2
     invoke-static {v0, p1}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
 
     const/4 v0, 0x0
@@ -101,7 +94,6 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    .line 3
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -124,7 +116,6 @@
 
     sub-int p1, p0, p1
 
-    .line 4
     :cond_1
     sget-object v0, Lcom/google/common/math/LongMath;->biggestBinomials:[I
 
@@ -136,7 +127,6 @@
 
     if-gt p0, v0, :cond_2
 
-    .line 5
     invoke-static {p0, p1}, Lcom/google/common/math/LongMath;->binomial(II)J
 
     move-result-wide p0
@@ -147,7 +137,6 @@
 
     return-object p0
 
-    .line 6
     :cond_2
     sget-object v0, Ljava/math/BigInteger;->ONE:Ljava/math/BigInteger;
 
@@ -155,7 +144,6 @@
 
     const-wide/16 v4, 0x1
 
-    .line 7
     sget-object v6, Ljava/math/RoundingMode;->CEILING:Ljava/math/RoundingMode;
 
     invoke-static {v2, v3, v6}, Lcom/google/common/math/LongMath;->log2(JLjava/math/RoundingMode;)I
@@ -178,7 +166,6 @@
 
     if-lt v7, v9, :cond_3
 
-    .line 8
     invoke-static {v2, v3}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v2
@@ -212,7 +199,6 @@
 
     goto :goto_2
 
-    .line 9
     :cond_4
     invoke-static {v2, v3}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
@@ -239,19 +225,16 @@
         value = "TODO"
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/math/BigDecimal;
 
     invoke-direct {v0, p0}, Ljava/math/BigDecimal;-><init>(Ljava/math/BigInteger;)V
 
-    .line 2
     new-instance p0, Ljava/math/BigDecimal;
 
     invoke-direct {p0, p1}, Ljava/math/BigDecimal;-><init>(Ljava/math/BigInteger;)V
 
     const/4 p1, 0x0
 
-    .line 3
     invoke-virtual {v0, p0, p1, p2}, Ljava/math/BigDecimal;->divide(Ljava/math/BigDecimal;ILjava/math/RoundingMode;)Ljava/math/BigDecimal;
 
     move-result-object p0
@@ -270,17 +253,14 @@
 
     const-string v1, "n"
 
-    .line 1
     invoke-static {v1, v0}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;I)I
 
-    .line 2
     sget-object v1, Lcom/google/common/math/LongMath;->factorials:[J
 
     array-length v2, v1
 
     if-ge v0, v2, :cond_0
 
-    .line 3
     aget-wide v0, v1, v0
 
     invoke-static {v0, v1}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
@@ -289,7 +269,6 @@
 
     return-object v0
 
-    .line 4
     :cond_0
     sget-object v1, Ljava/math/RoundingMode;->CEILING:Ljava/math/RoundingMode;
 
@@ -307,29 +286,24 @@
 
     move-result v1
 
-    .line 5
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2, v1}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 6
     sget-object v1, Lcom/google/common/math/LongMath;->factorials:[J
 
     array-length v4, v1
 
     add-int/lit8 v5, v4, -0x1
 
-    .line 7
     aget-wide v5, v1, v5
 
-    .line 8
     invoke-static {v5, v6}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
     move-result v1
 
     shr-long/2addr v5, v1
 
-    .line 9
     sget-object v7, Ljava/math/RoundingMode;->FLOOR:Ljava/math/RoundingMode;
 
     invoke-static {v5, v6, v7}, Lcom/google/common/math/LongMath;->log2(JLjava/math/RoundingMode;)I
@@ -342,7 +316,6 @@
 
     int-to-long v9, v4
 
-    .line 10
     sget-object v4, Ljava/math/RoundingMode;->FLOOR:Ljava/math/RoundingMode;
 
     invoke-static {v9, v10, v4}, Lcom/google/common/math/LongMath;->log2(JLjava/math/RoundingMode;)I
@@ -378,7 +351,6 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    .line 11
     :cond_1
     invoke-static {v9, v10}, Ljava/lang/Long;->numberOfTrailingZeros(J)I
 
@@ -394,7 +366,6 @@
 
     if-lt v12, v3, :cond_2
 
-    .line 12
     invoke-static {v5, v6}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v5
@@ -406,7 +377,6 @@
     :cond_2
     mul-long v5, v5, v16
 
-    .line 13
     sget-object v7, Ljava/math/RoundingMode;->FLOOR:Ljava/math/RoundingMode;
 
     invoke-static {v5, v6, v7}, Lcom/google/common/math/LongMath;->log2(JLjava/math/RoundingMode;)I
@@ -424,14 +394,12 @@
 
     if-lez v0, :cond_4
 
-    .line 14
     invoke-static {v5, v6}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
 
     move-result-object v0
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 15
     :cond_4
     invoke-static {v2}, Lcom/google/common/math/BigIntegerMath;->listProduct(Ljava/util/List;)Ljava/math/BigInteger;
 
@@ -450,7 +418,6 @@
         value = "TODO"
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
 
     move-result p0
@@ -473,10 +440,8 @@
 .method public static isPowerOfTwo(Ljava/math/BigInteger;)Z
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-virtual {p0}, Ljava/math/BigInteger;->signum()I
 
     move-result v0
@@ -518,7 +483,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v0
@@ -564,7 +528,6 @@
 
     ushr-int/2addr v0, v1
 
-    .line 2
     invoke-static {p0, p1, v0}, Lcom/google/common/math/BigIntegerMath;->listProduct(Ljava/util/List;II)Ljava/math/BigInteger;
 
     move-result-object p1
@@ -579,7 +542,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -613,7 +575,6 @@
 
     return-object p0
 
-    .line 4
     :cond_1
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -635,7 +596,6 @@
 
     return-object p0
 
-    .line 5
     :cond_2
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -645,7 +605,6 @@
 
     return-object p0
 
-    .line 6
     :cond_3
     sget-object p0, Ljava/math/BigInteger;->ONE:Ljava/math/BigInteger;
 
@@ -660,17 +619,14 @@
 
     const-string v0, "x"
 
-    .line 1
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkPositive(Ljava/lang/String;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/math/BigIntegerMath;->fitsInLong(Ljava/math/BigInteger;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Ljava/math/BigInteger;->longValue()J
 
     move-result-wide v0
@@ -681,7 +637,6 @@
 
     return p0
 
-    .line 4
     :cond_0
     sget-object v0, Ljava/math/RoundingMode;->FLOOR:Ljava/math/RoundingMode;
 
@@ -701,14 +656,12 @@
 
     double-to-int v0, v0
 
-    .line 5
     sget-object v1, Ljava/math/BigInteger;->TEN:Ljava/math/BigInteger;
 
     invoke-virtual {v1, v0}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
     move-result-object v1
 
-    .line 6
     invoke-virtual {v1, p0}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v2
@@ -718,14 +671,12 @@
     :cond_1
     add-int/lit8 v0, v0, -0x1
 
-    .line 7
     sget-object v2, Ljava/math/BigInteger;->TEN:Ljava/math/BigInteger;
 
     invoke-virtual {v1, v2}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v1
 
-    .line 8
     invoke-virtual {v1, p0}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v2
@@ -734,7 +685,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_2
     sget-object v3, Ljava/math/BigInteger;->TEN:Ljava/math/BigInteger;
 
@@ -742,7 +692,6 @@
 
     move-result-object v3
 
-    .line 10
     invoke-virtual {v3, p0}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v4
@@ -758,14 +707,12 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 11
     sget-object v1, Ljava/math/BigInteger;->TEN:Ljava/math/BigInteger;
 
     invoke-virtual {v1, v3}, Ljava/math/BigInteger;->multiply(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v1
 
-    .line 12
     invoke-virtual {v1, p0}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v4
@@ -787,7 +734,6 @@
     :cond_3
     move v2, v4
 
-    .line 13
     :goto_1
     sget-object v3, Lcom/google/common/math/BigIntegerMath$1;->$SwitchMap$java$math$RoundingMode:[I
 
@@ -799,7 +745,6 @@
 
     packed-switch p1, :pswitch_data_0
 
-    .line 14
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
@@ -809,12 +754,10 @@
     :pswitch_0
     const/4 p1, 0x2
 
-    .line 15
     invoke-virtual {p0, p1}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
     move-result-object p0
 
-    .line 16
     invoke-virtual {v1, p1}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
     move-result-object p1
@@ -825,7 +768,6 @@
 
     move-result-object p1
 
-    .line 17
     invoke-virtual {p0, p1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result p0
@@ -840,7 +782,6 @@
     :goto_2
     return v0
 
-    .line 18
     :pswitch_1
     invoke-virtual {v1, p0}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
 
@@ -866,7 +807,6 @@
     :cond_6
     const/4 p0, 0x0
 
-    .line 19
     :goto_4
     invoke-static {p0}, Lcom/google/common/math/MathPreconditions;->checkRoundingUnnecessary(Z)V
 
@@ -889,7 +829,6 @@
 .method public static log2(Ljava/math/BigInteger;Ljava/math/RoundingMode;)I
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -900,14 +839,12 @@
 
     invoke-static {v1, v0}, Lcom/google/common/math/MathPreconditions;->checkPositive(Ljava/lang/String;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    .line 2
     invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
 
     move-result v0
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 3
     sget-object v1, Lcom/google/common/math/BigIntegerMath$1;->$SwitchMap$java$math$RoundingMode:[I
 
     invoke-virtual {p1}, Ljava/math/RoundingMode;->ordinal()I
@@ -918,7 +855,6 @@
 
     packed-switch p1, :pswitch_data_0
 
-    .line 4
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
@@ -930,7 +866,6 @@
 
     if-ge v0, p1, :cond_1
 
-    .line 5
     sget-object v1, Lcom/google/common/math/BigIntegerMath;->SQRT2_PRECOMPUTED_BITS:Ljava/math/BigInteger;
 
     sub-int/2addr p1, v0
@@ -939,7 +874,6 @@
 
     move-result-object p1
 
-    .line 6
     invoke-virtual {p0, p1}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result p0
@@ -956,12 +890,10 @@
     :cond_1
     const/4 p1, 0x2
 
-    .line 7
     invoke-virtual {p0, p1}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
     move-result-object p0
 
-    .line 8
     invoke-virtual {p0}, Ljava/math/BigInteger;->bitLength()I
 
     move-result p0
@@ -982,7 +914,6 @@
     :goto_0
     return v0
 
-    .line 9
     :pswitch_1
     invoke-static {p0}, Lcom/google/common/math/BigIntegerMath;->isPowerOfTwo(Ljava/math/BigInteger;)Z
 
@@ -998,7 +929,6 @@
     :goto_1
     return v0
 
-    .line 10
     :pswitch_2
     invoke-static {p0}, Lcom/google/common/math/BigIntegerMath;->isPowerOfTwo(Ljava/math/BigInteger;)Z
 
@@ -1030,17 +960,14 @@
 
     const-string v0, "x"
 
-    .line 1
     invoke-static {v0, p0}, Lcom/google/common/math/MathPreconditions;->checkNonNegative(Ljava/lang/String;Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/math/BigIntegerMath;->fitsInLong(Ljava/math/BigInteger;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Ljava/math/BigInteger;->longValue()J
 
     move-result-wide v0
@@ -1055,13 +982,11 @@
 
     return-object p0
 
-    .line 4
     :cond_0
     invoke-static {p0}, Lcom/google/common/math/BigIntegerMath;->sqrtFloor(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
 
-    .line 5
     sget-object v1, Lcom/google/common/math/BigIntegerMath$1;->$SwitchMap$java$math$RoundingMode:[I
 
     invoke-virtual {p1}, Ljava/math/RoundingMode;->ordinal()I
@@ -1074,14 +999,12 @@
 
     packed-switch p1, :pswitch_data_0
 
-    .line 6
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
 
     throw p0
 
-    .line 7
     :pswitch_0
     invoke-virtual {v0, v1}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
@@ -1091,7 +1014,6 @@
 
     move-result-object p1
 
-    .line 8
     invoke-virtual {p1, p0}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result p0
@@ -1110,7 +1032,6 @@
     :goto_0
     return-object v0
 
-    .line 9
     :pswitch_1
     invoke-virtual {v0}, Ljava/math/BigInteger;->intValue()I
 
@@ -1118,7 +1039,6 @@
 
     mul-int p1, p1, p1
 
-    .line 10
     invoke-virtual {p0}, Ljava/math/BigInteger;->intValue()I
 
     move-result v2
@@ -1147,7 +1067,6 @@
 
     goto :goto_2
 
-    .line 11
     :cond_3
     sget-object p0, Ljava/math/BigInteger;->ONE:Ljava/math/BigInteger;
 
@@ -1158,7 +1077,6 @@
     :goto_2
     return-object v0
 
-    .line 12
     :pswitch_2
     invoke-virtual {v0, v1}, Ljava/math/BigInteger;->pow(I)Ljava/math/BigInteger;
 
@@ -1194,7 +1112,6 @@
         value = "TODO"
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/math/DoubleUtils;->bigToDouble(Ljava/math/BigInteger;)D
 
     move-result-wide v0
@@ -1218,7 +1135,6 @@
         value = "TODO"
     .end annotation
 
-    .line 1
     sget-object v0, Ljava/math/RoundingMode;->FLOOR:Ljava/math/RoundingMode;
 
     invoke-static {p0, v0}, Lcom/google/common/math/BigIntegerMath;->log2(Ljava/math/BigInteger;Ljava/math/RoundingMode;)I
@@ -1231,7 +1147,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/math/BigIntegerMath;->sqrtApproxWithDoubles(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
     move-result-object v0
@@ -1243,7 +1158,6 @@
 
     and-int/lit8 v0, v0, -0x2
 
-    .line 3
     invoke-virtual {p0, v0}, Ljava/math/BigInteger;->shiftRight(I)Ljava/math/BigInteger;
 
     move-result-object v2
@@ -1258,7 +1172,6 @@
 
     move-result-object v0
 
-    .line 4
     :goto_0
     invoke-virtual {p0, v0}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
 
@@ -1272,7 +1185,6 @@
 
     move-result-object v2
 
-    .line 5
     invoke-virtual {v0, v2}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -1281,7 +1193,6 @@
 
     return-object v0
 
-    .line 6
     :cond_1
     :goto_1
     invoke-virtual {p0, v2}, Ljava/math/BigInteger;->divide(Ljava/math/BigInteger;)Ljava/math/BigInteger;
@@ -1296,7 +1207,6 @@
 
     move-result-object v0
 
-    .line 7
     invoke-virtual {v0, v2}, Ljava/math/BigInteger;->compareTo(Ljava/math/BigInteger;)I
 
     move-result v3

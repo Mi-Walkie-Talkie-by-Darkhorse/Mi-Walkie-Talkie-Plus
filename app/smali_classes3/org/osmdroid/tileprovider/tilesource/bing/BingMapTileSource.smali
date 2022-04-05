@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;
 .super Lorg/osmdroid/tileprovider/tilesource/QuadTreeTileSource;
-.source "BingMapTileSource.java"
 
 # interfaces
 .implements Lorg/osmdroid/tileprovider/tilesource/IStyledTileSource;
@@ -69,27 +68,22 @@
 
     move-object v0, p0
 
-    .line 1
     invoke-direct/range {v0 .. v6}, Lorg/osmdroid/tileprovider/tilesource/QuadTreeTileSource;-><init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;)V
 
     const-string v0, "Road"
 
-    .line 2
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mStyle:Ljava/lang/String;
 
-    .line 3
     invoke-static {}, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->getDefaultInstance()Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     move-result-object v0
 
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
-    .line 4
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mLocale:Ljava/lang/String;
 
     if-nez p1, :cond_0
 
-    .line 5
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -131,7 +125,6 @@
 .method public static getBingKey()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mBingMapKey:Ljava/lang/String;
 
     return-object v0
@@ -146,12 +139,10 @@
 
     const-string v2, "getMetaData"
 
-    .line 1
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     const/4 v2, 0x0
 
-    .line 2
     :try_start_0
     new-instance v3, Ljava/net/URL;
 
@@ -188,7 +179,6 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_3
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     :try_start_1
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -218,7 +208,6 @@
 
     invoke-static {v1, v4}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v4
@@ -237,10 +226,8 @@
 
     invoke-virtual {v3, v4, v5}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->connect()V
 
-    .line 6
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result v4
@@ -249,7 +236,6 @@
 
     if-eq v4, v5, :cond_1
 
-    .line 7
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -289,45 +275,37 @@
 
     if-eqz v3, :cond_0
 
-    .line 8
     :try_start_2
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->disconnect()V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
 
-    .line 9
     :catch_0
     :cond_0
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-object v2
 
-    .line 10
     :cond_1
     :try_start_3
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v4
 
-    .line 11
     new-instance v5, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v5}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 12
     new-instance v6, Ljava/io/BufferedOutputStream;
 
     const/16 v7, 0x2000
 
     invoke-direct {v6, v5, v7}, Ljava/io/BufferedOutputStream;-><init>(Ljava/io/OutputStream;I)V
 
-    .line 13
     invoke-static {v4, v6}, Lorg/osmdroid/tileprovider/util/StreamUtils;->copy(Ljava/io/InputStream;Ljava/io/OutputStream;)J
 
-    .line 14
     invoke-virtual {v6}, Ljava/io/BufferedOutputStream;->flush()V
 
-    .line 15
     invoke-virtual {v5}, Ljava/io/ByteArrayOutputStream;->toString()Ljava/lang/String;
 
     move-result-object v4
@@ -341,13 +319,11 @@
 
     if-eqz v3, :cond_2
 
-    .line 16
     :try_start_4
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->disconnect()V
     :try_end_4
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
 
-    .line 17
     :catch_1
     :cond_2
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
@@ -379,20 +355,17 @@
     :try_start_5
     const-string v5, "Error getting imagery meta data"
 
-    .line 18
     invoke-static {v1, v5, v4}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
     if-eqz v3, :cond_3
 
-    .line 19
     :try_start_6
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->disconnect()V
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_4
 
-    .line 20
     :catch_4
     :cond_3
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
@@ -405,13 +378,11 @@
     :goto_1
     if-eqz v3, :cond_4
 
-    .line 21
     :try_start_7
     invoke-virtual {v3}, Ljava/net/HttpURLConnection;->disconnect()V
     :try_end_7
     .catch Ljava/lang/Exception; {:try_start_7 .. :try_end_7} :catch_5
 
-    .line 22
     :catch_5
     :cond_4
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
@@ -424,7 +395,6 @@
 
     const-string v0, "BING_KEY"
 
-    .line 1
     invoke-static {p0, v0}, Lorg/osmdroid/tileprovider/util/ManifestUtil;->retrieveKey(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -437,7 +407,6 @@
 .method public static setBingKey(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     sput-object p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mBingMapKey:Ljava/lang/String;
 
     return-void
@@ -448,17 +417,14 @@
 .method public getBaseUrl()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     iget-boolean v0, v0, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->m_isInitialised:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->initMetaData()Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mBaseUrl:Ljava/lang/String;
 
@@ -468,7 +434,6 @@
 .method public getCopyrightNotice()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     iget-object v0, v0, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->copyright:Ljava/lang/String;
@@ -479,7 +444,6 @@
 .method public getMaximumZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     iget v0, v0, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->m_zoomMax:I
@@ -490,7 +454,6 @@
 .method public getMinimumZoomLevel()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     iget v0, v0, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->m_zoomMin:I
@@ -501,7 +464,6 @@
 .method public bridge synthetic getStyle()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->getStyle()Ljava/lang/String;
 
     move-result-object v0
@@ -512,7 +474,6 @@
 .method public getStyle()Ljava/lang/String;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mStyle:Ljava/lang/String;
 
     return-object v0
@@ -521,7 +482,6 @@
 .method public getTileSizePixels()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     iget v0, v0, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->m_imageHeight:I
@@ -532,17 +492,14 @@
 .method public getTileURLString(Lorg/osmdroid/tileprovider/MapTile;)Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     iget-boolean v0, v0, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->m_isInitialised:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->initMetaData()Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mUrl:Ljava/lang/String;
 
@@ -568,17 +525,14 @@
 .method public initMetaData()Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     iget-boolean v0, v0, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->m_isInitialised:Z
 
     if-nez v0, :cond_1
 
-    .line 2
     monitor-enter p0
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
@@ -586,27 +540,22 @@
 
     if-nez v0, :cond_0
 
-    .line 4
     invoke-direct {p0}, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->getMetaData()Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 5
     iput-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
-    .line 6
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->getTileSizePixels()I
 
     move-result v0
 
     invoke-static {v0}, Lmicrosoft/mappoint/TileSystem;->setTileSize(I)V
 
-    .line 7
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->updateBaseUrl()V
 
-    .line 8
     :cond_0
     monitor-exit p0
 
@@ -621,7 +570,6 @@
 
     throw v0
 
-    .line 9
     :cond_1
     :goto_0
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
@@ -632,7 +580,6 @@
 .method public pathBase()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -655,7 +602,6 @@
 .method public bridge synthetic setStyle(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->setStyle(Ljava/lang/String;)V
@@ -666,7 +612,6 @@
 .method public setStyle(Ljava/lang/String;)V
     .locals 3
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mStyle:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -675,28 +620,23 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mStyle:Ljava/lang/String;
 
     monitor-enter v0
 
     const/4 v1, 0x0
 
-    .line 4
     :try_start_0
     iput-object v1, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mUrl:Ljava/lang/String;
 
-    .line 5
     iput-object v1, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mBaseUrl:Ljava/lang/String;
 
-    .line 6
     iget-object v1, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     const/4 v2, 0x0
 
     iput-boolean v2, v1, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->m_isInitialised:Z
 
-    .line 7
     monitor-exit v0
 
     goto :goto_0
@@ -710,12 +650,10 @@
 
     throw p1
 
-    .line 8
     :cond_0
     :goto_0
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mStyle:Ljava/lang/String;
 
-    .line 9
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->pathBase()Ljava/lang/String;
 
     move-result-object p1
@@ -732,17 +670,14 @@
 
     const-string v1, "updateBaseUrl"
 
-    .line 1
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object v1, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     invoke-virtual {v1}, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->getSubDomain()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3
     iget-object v2, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     iget-object v2, v2, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->m_imageUrl:Ljava/lang/String;
@@ -757,7 +692,6 @@
 
     if-lez v2, :cond_0
 
-    .line 4
     iget-object v4, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
     iget-object v4, v4, Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;->m_imageUrl:Ljava/lang/String;
@@ -770,7 +704,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v2, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
@@ -778,7 +711,6 @@
 
     iput-object v2, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mBaseUrl:Ljava/lang/String;
 
-    .line 6
     :goto_0
     iget-object v2, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mImageryData:Lorg/osmdroid/tileprovider/tilesource/bing/ImageryMetaDataResource;
 
@@ -788,7 +720,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 7
     iget-object v2, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mBaseUrl:Ljava/lang/String;
 
     const/4 v4, 0x1
@@ -803,7 +734,6 @@
 
     iput-object v2, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mBaseUrl:Ljava/lang/String;
 
-    .line 8
     iget-object v2, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mUrl:Ljava/lang/String;
 
     const/4 v5, 0x3
@@ -828,7 +758,6 @@
 
     iput-object v1, p0, Lorg/osmdroid/tileprovider/tilesource/bing/BingMapTileSource;->mUrl:Ljava/lang/String;
 
-    .line 9
     :cond_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -850,7 +779,6 @@
 
     const-string v1, "end updateBaseUrl"
 
-    .line 10
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void

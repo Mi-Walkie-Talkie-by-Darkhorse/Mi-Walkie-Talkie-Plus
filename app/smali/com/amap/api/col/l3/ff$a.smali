@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ff$a;
 .super Ljava/lang/Object;
-.source "SearchListAdapter.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/ff;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ff$a;->e:Lcom/amap/api/col/l3/ff;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

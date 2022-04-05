@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/arch/h/b;
 .super Ljava/lang/Object;
-.source "FirstFragmentFinders.java"
 
 
 # static fields
@@ -29,7 +28,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/qmuiteam/qmui/arch/h/b$a;
 
     invoke-direct {v0}, Lcom/qmuiteam/qmui/arch/h/b$a;-><init>()V
@@ -42,10 +40,8 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -60,19 +56,16 @@
     .annotation build Landroidx/annotation/MainThread;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/arch/h/b;->b:Lcom/qmuiteam/qmui/arch/h/b;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/qmuiteam/qmui/arch/h/b;
 
     invoke-direct {v0}, Lcom/qmuiteam/qmui/arch/h/b;-><init>()V
 
     sput-object v0, Lcom/qmuiteam/qmui/arch/h/b;->b:Lcom/qmuiteam/qmui/arch/h/b;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/qmuiteam/qmui/arch/h/b;->b:Lcom/qmuiteam/qmui/arch/h/b;
 
@@ -96,7 +89,6 @@
 
     const-string v0, "FirstFragmentFinders"
 
-    .line 4
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/h/b;->a:Ljava/util/HashMap;
 
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -109,7 +101,6 @@
 
     return-object v1
 
-    .line 5
     :cond_0
     invoke-virtual {p1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -121,13 +112,11 @@
 
     return-object p1
 
-    .line 6
     :cond_1
     invoke-virtual {p1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v3
 
-    .line 7
     :try_start_0
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -147,7 +136,6 @@
 
     move-result-object v2
 
-    .line 8
     const-class v3, Lcom/qmuiteam/qmui/arch/h/a;
 
     invoke-virtual {v3, v2}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -156,7 +144,6 @@
 
     if-eqz v3, :cond_3
 
-    .line 9
     invoke-virtual {v2}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
 
     move-result-object v2
@@ -174,17 +161,14 @@
     :catch_0
     move-exception v2
 
-    .line 10
     sget-boolean v3, Lcom/qmuiteam/qmui/arch/h/b;->c:Z
 
     if-eqz v3, :cond_3
 
     const-string v3, "Instantiation exception."
 
-    .line 11
     invoke-static {v0, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 12
     invoke-virtual {v2}, Ljava/lang/InstantiationException;->printStackTrace()V
 
     goto :goto_0
@@ -192,17 +176,14 @@
     :catch_1
     move-exception v2
 
-    .line 13
     sget-boolean v3, Lcom/qmuiteam/qmui/arch/h/b;->c:Z
 
     if-eqz v3, :cond_3
 
     const-string v3, "Access exception."
 
-    .line 14
     invoke-static {v0, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 15
     invoke-virtual {v2}, Ljava/lang/IllegalAccessException;->printStackTrace()V
 
     goto :goto_0
@@ -210,14 +191,12 @@
     :catch_2
     nop
 
-    .line 16
     invoke-virtual {p1}, Ljava/lang/Class;->getSuperclass()Ljava/lang/Class;
 
     move-result-object v2
 
     if-eqz v2, :cond_3
 
-    .line 17
     const-class v3, Lcom/qmuiteam/qmui/arch/QMUIFragmentActivity;
 
     invoke-virtual {v3, v2}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -226,12 +205,10 @@
 
     if-eqz v3, :cond_3
 
-    .line 18
     sget-boolean v1, Lcom/qmuiteam/qmui/arch/h/b;->c:Z
 
     if-eqz v1, :cond_2
 
-    .line 19
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -252,7 +229,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 20
     :cond_2
     invoke-virtual {p0, v2}, Lcom/qmuiteam/qmui/arch/h/b;->a(Ljava/lang/Class;)Lcom/qmuiteam/qmui/arch/h/a;
 
@@ -262,10 +238,8 @@
     :goto_0
     if-nez v1, :cond_4
 
-    .line 21
     sget-object v1, Lcom/qmuiteam/qmui/arch/h/b;->d:Lcom/qmuiteam/qmui/arch/h/a;
 
-    .line 22
     :cond_4
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/h/b;->a:Ljava/util/HashMap;
 

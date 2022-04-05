@@ -1,6 +1,5 @@
 .class Landroidx/transition/ChangeBounds$i;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "ChangeBounds.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method constructor <init>(Landroidx/transition/ChangeBounds;Landroid/view/View;Landroid/graphics/Rect;IIII)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/transition/ChangeBounds$i;->b:Landroid/view/View;
 
     iput-object p3, p0, Landroidx/transition/ChangeBounds$i;->c:Landroid/graphics/Rect;
@@ -59,7 +57,6 @@
 
     const/4 p1, 0x1
 
-    .line 1
     iput-boolean p1, p0, Landroidx/transition/ChangeBounds$i;->a:Z
 
     return-void
@@ -68,19 +65,16 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 4
 
-    .line 1
     iget-boolean p1, p0, Landroidx/transition/ChangeBounds$i;->a:Z
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Landroidx/transition/ChangeBounds$i;->b:Landroid/view/View;
 
     iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->c:Landroid/graphics/Rect;
 
     invoke-static {p1, v0}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;Landroid/graphics/Rect;)V
 
-    .line 3
     iget-object p1, p0, Landroidx/transition/ChangeBounds$i;->b:Landroid/view/View;
 
     iget v0, p0, Landroidx/transition/ChangeBounds$i;->d:I

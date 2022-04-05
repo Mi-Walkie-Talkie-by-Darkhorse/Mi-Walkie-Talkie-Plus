@@ -1,13 +1,11 @@
 .class final Lcom/google/common/eventbus/SynchronizedEventSubscriber;
 .super Lcom/google/common/eventbus/EventSubscriber;
-.source "SynchronizedEventSubscriber.java"
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Ljava/lang/reflect/Method;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/eventbus/EventSubscriber;-><init>(Ljava/lang/Object;Ljava/lang/reflect/Method;)V
 
     return-void
@@ -23,14 +21,11 @@
         }
     .end annotation
 
-    .line 1
     monitor-enter p0
 
-    .line 2
     :try_start_0
     invoke-super {p0, p1}, Lcom/google/common/eventbus/EventSubscriber;->handleEvent(Ljava/lang/Object;)V
 
-    .line 3
     monitor-exit p0
 
     return-void

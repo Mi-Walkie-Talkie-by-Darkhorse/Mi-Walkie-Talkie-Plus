@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/annotation/Repeatable;
 .super Ljava/lang/Object;
-.source "Annotations.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/ui/fragment/a;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;

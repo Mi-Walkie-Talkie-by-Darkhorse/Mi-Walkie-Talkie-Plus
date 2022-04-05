@@ -1,6 +1,5 @@
 .class final Lcom/google/common/base/Equivalence$Identity;
 .super Lcom/google/common/base/Equivalence;
-.source "Equivalence.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -36,7 +35,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/base/Equivalence$Identity;
 
     invoke-direct {v0}, Lcom/google/common/base/Equivalence$Identity;-><init>()V
@@ -49,7 +47,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/base/Equivalence;-><init>()V
 
     return-void
@@ -58,7 +55,6 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/base/Equivalence$Identity;->INSTANCE:Lcom/google/common/base/Equivalence$Identity;
 
     return-object v0
@@ -77,7 +73,6 @@
 .method protected doHash(Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
     move-result p1

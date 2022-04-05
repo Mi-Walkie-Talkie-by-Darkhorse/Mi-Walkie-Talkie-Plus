@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;
 .super Ljava/lang/Object;
-.source "DolphinSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;Lcom/ifengyu/intercom/eventbus/StateUpdateEvent;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;->a:Lcom/ifengyu/intercom/eventbus/StateUpdateEvent;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;)I
@@ -53,19 +50,16 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
     const/4 v2, -0x1
 
     invoke-static {v0, v2}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;I)I
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;->a:Lcom/ifengyu/intercom/eventbus/StateUpdateEvent;
 
@@ -83,7 +77,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;->d(Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;)Landroid/widget/CheckBox;
@@ -94,7 +87,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
@@ -106,13 +98,11 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/CheckBox;->setChecked(Z)V
 
-    .line 7
     :goto_0
     sget v0, Lcom/ifengyu/intercom/i/d0;->a:I
 
     if-ne v0, v1, :cond_2
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;->a:Lcom/ifengyu/intercom/eventbus/StateUpdateEvent;
@@ -121,7 +111,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity$l;->b:Lcom/ifengyu/intercom/ui/setting/dolphin/DolphinSettingActivity;
 

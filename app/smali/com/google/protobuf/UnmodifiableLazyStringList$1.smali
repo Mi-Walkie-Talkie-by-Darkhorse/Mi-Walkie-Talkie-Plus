@@ -1,6 +1,5 @@
 .class Lcom/google/protobuf/UnmodifiableLazyStringList$1;
 .super Ljava/lang/Object;
-.source "UnmodifiableLazyStringList.java"
 
 # interfaces
 .implements Ljava/util/ListIterator;
@@ -46,14 +45,12 @@
 .method constructor <init>(Lcom/google/protobuf/UnmodifiableLazyStringList;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->this$0:Lcom/google/protobuf/UnmodifiableLazyStringList;
 
     iput p2, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->val$index:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iget-object p1, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->this$0:Lcom/google/protobuf/UnmodifiableLazyStringList;
 
     invoke-static {p1}, Lcom/google/protobuf/UnmodifiableLazyStringList;->access$000(Lcom/google/protobuf/UnmodifiableLazyStringList;)Lcom/google/protobuf/LazyStringList;
@@ -76,7 +73,6 @@
 .method public bridge synthetic add(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->add(Ljava/lang/String;)V
@@ -87,7 +83,6 @@
 .method public add(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -98,7 +93,6 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->iter:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->hasNext()Z
@@ -111,7 +105,6 @@
 .method public hasPrevious()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->iter:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->hasPrevious()Z
@@ -124,7 +117,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->next()Ljava/lang/String;
 
     move-result-object v0
@@ -135,7 +127,6 @@
 .method public next()Ljava/lang/String;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->iter:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->next()Ljava/lang/Object;
@@ -150,7 +141,6 @@
 .method public nextIndex()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->iter:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->nextIndex()I
@@ -163,7 +153,6 @@
 .method public bridge synthetic previous()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->previous()Ljava/lang/String;
 
     move-result-object v0
@@ -174,7 +163,6 @@
 .method public previous()Ljava/lang/String;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->iter:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
@@ -189,7 +177,6 @@
 .method public previousIndex()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->iter:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->previousIndex()I
@@ -202,7 +189,6 @@
 .method public remove()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -213,7 +199,6 @@
 .method public bridge synthetic set(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/protobuf/UnmodifiableLazyStringList$1;->set(Ljava/lang/String;)V
@@ -224,7 +209,6 @@
 .method public set(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V

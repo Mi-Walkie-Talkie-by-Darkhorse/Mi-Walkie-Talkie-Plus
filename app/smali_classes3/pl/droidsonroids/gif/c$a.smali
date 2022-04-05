@@ -1,6 +1,5 @@
 .class Lpl/droidsonroids/gif/c$a;
 .super Lpl/droidsonroids/gif/k;
-.source "GifDrawable.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lpl/droidsonroids/gif/c;Lpl/droidsonroids/gif/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lpl/droidsonroids/gif/c$a;->b:Lpl/droidsonroids/gif/c;
 
     invoke-direct {p0, p2}, Lpl/droidsonroids/gif/k;-><init>(Lpl/droidsonroids/gif/c;)V
@@ -35,7 +33,6 @@
 .method public a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/gif/c$a;->b:Lpl/droidsonroids/gif/c;
 
     iget-object v0, v0, Lpl/droidsonroids/gif/c;->g:Lpl/droidsonroids/gif/GifInfoHandle;
@@ -46,7 +43,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lpl/droidsonroids/gif/c$a;->b:Lpl/droidsonroids/gif/c;
 
     invoke-virtual {v0}, Lpl/droidsonroids/gif/c;->start()V

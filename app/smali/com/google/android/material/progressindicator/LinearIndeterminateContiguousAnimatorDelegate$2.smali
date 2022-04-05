@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate$2;
 .super Landroid/util/Property;
-.source "LinearIndeterminateContiguousAnimatorDelegate.java"
 
 
 # annotations
@@ -27,7 +26,6 @@
 .method constructor <init>(Ljava/lang/Class;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
 
     return-void
@@ -38,7 +36,6 @@
 .method public get(Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;)Ljava/lang/Float;
     .locals 0
 
-    .line 2
     invoke-static {p1}, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;->access$300(Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;)F
 
     move-result p1
@@ -53,7 +50,6 @@
 .method public bridge synthetic get(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate$2;->get(Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;)Ljava/lang/Float;
@@ -66,7 +62,6 @@
 .method public set(Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;Ljava/lang/Float;)V
     .locals 0
 
-    .line 2
     invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
 
     move-result p2
@@ -79,7 +74,6 @@
 .method public bridge synthetic set(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/android/material/progressindicator/LinearIndeterminateContiguousAnimatorDelegate;
 
     check-cast p2, Ljava/lang/Float;

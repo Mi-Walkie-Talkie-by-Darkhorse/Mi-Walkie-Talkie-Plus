@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/v;
 .super Ljava/lang/Object;
-.source "IGLSurfaceView.java"
 
 
 # virtual methods

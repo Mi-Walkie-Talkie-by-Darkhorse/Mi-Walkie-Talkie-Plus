@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/jvm/PurelyImplements;
 .super Ljava/lang/Object;
-.source "PurelyImplements.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

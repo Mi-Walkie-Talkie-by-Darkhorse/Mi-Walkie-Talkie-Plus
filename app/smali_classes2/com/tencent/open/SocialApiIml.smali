@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/SocialApiIml;
 .super Lcom/tencent/connect/common/BaseApi;
-.source "ProGuard"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public constructor <init>(Lcom/tencent/connect/auth/QQToken;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/tencent/connect/common/BaseApi;-><init>(Lcom/tencent/connect/auth/QQToken;)V
 
     return-void
@@ -28,7 +26,6 @@
 .method public constructor <init>(Lcom/tencent/connect/auth/c;Lcom/tencent/connect/auth/QQToken;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/tencent/connect/common/BaseApi;-><init>(Lcom/tencent/connect/auth/c;Lcom/tencent/connect/auth/QQToken;)V
 
     return-void
@@ -37,7 +34,6 @@
 .method static synthetic a(Lcom/tencent/open/SocialApiIml;)Landroid/app/Activity;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/tencent/open/SocialApiIml;->c:Landroid/app/Activity;
 
     return-object p0
@@ -46,7 +42,6 @@
 .method private a(Landroid/app/Activity;Landroid/content/Intent;Ljava/lang/String;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
     .locals 2
 
-    .line 20
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -67,15 +62,12 @@
 
     const-string v0, "key_action"
 
-    .line 21
     invoke-virtual {p2, v0, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     const-string p3, "key_params"
 
-    .line 22
     invoke-virtual {p2, p3, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Bundle;)Landroid/content/Intent;
 
-    .line 23
     invoke-static {}, Lcom/tencent/connect/common/UIListenerManager;->getInstance()Lcom/tencent/connect/common/UIListenerManager;
 
     move-result-object p3
@@ -84,7 +76,6 @@
 
     invoke-virtual {p3, p4, p5}, Lcom/tencent/connect/common/UIListenerManager;->setListenerWithRequestcode(ILcom/tencent/tauth/IUiListener;)Ljava/lang/Object;
 
-    .line 24
     invoke-virtual {p0, p1, p2, p4}, Lcom/tencent/connect/common/BaseApi;->a(Landroid/app/Activity;Landroid/content/Intent;I)V
 
     return-void
@@ -93,7 +84,6 @@
 .method private a(Landroid/app/Activity;Landroid/content/Intent;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;Z)V
     .locals 6
 
-    .line 14
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -146,12 +136,10 @@
 
     move-object v5, p6
 
-    .line 15
     invoke-direct/range {v0 .. v5}, Lcom/tencent/open/SocialApiIml;->a(Landroid/app/Activity;Landroid/content/Intent;Ljava/lang/String;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
 
     goto :goto_2
 
-    .line 16
     :cond_1
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
@@ -171,7 +159,6 @@
 
     const-string p7, "C_LoginH5"
 
-    .line 17
     invoke-virtual {p2, p7}, Lcom/tencent/open/utils/e;->b(Ljava/lang/String;)Z
 
     move-result p2
@@ -199,12 +186,10 @@
 
     move-object v5, p6
 
-    .line 18
     invoke-direct/range {v0 .. v5}, Lcom/tencent/open/SocialApiIml;->a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;)V
 
     goto :goto_2
 
-    .line 19
     :cond_4
     invoke-virtual {p0, p1, p4, p6}, Lcom/tencent/connect/common/BaseApi;->a(Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
 
@@ -215,12 +200,10 @@
 .method private a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
     .locals 9
 
-    .line 3
     iput-object p1, p0, Lcom/tencent/open/SocialApiIml;->c:Landroid/app/Activity;
 
     const-string v0, "com.tencent.open.agent.SocialFriendChooser"
 
-    .line 4
     invoke-virtual {p0, v0}, Lcom/tencent/connect/common/BaseApi;->c(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
@@ -231,12 +214,10 @@
 
     const-string v1, "--askgift--friend chooser not found"
 
-    .line 5
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "com.tencent.open.agent.RequestFreegiftActivity"
 
-    .line 6
     invoke-virtual {p0, v0}, Lcom/tencent/connect/common/BaseApi;->c(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
@@ -244,7 +225,6 @@
     :cond_0
     move-object v3, v0
 
-    .line 7
     invoke-virtual {p0}, Lcom/tencent/connect/common/BaseApi;->b()Landroid/os/Bundle;
 
     move-result-object v0
@@ -253,7 +233,6 @@
 
     const-string v0, "action_ask"
 
-    .line 8
     invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -264,7 +243,6 @@
 
     const-string v0, "request"
 
-    .line 9
     invoke-virtual {p3, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0
@@ -272,7 +250,6 @@
     :cond_1
     const-string v0, "action_gift"
 
-    .line 10
     invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -281,10 +258,8 @@
 
     const-string v0, "freegift"
 
-    .line 11
     invoke-virtual {p3, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12
     :cond_2
     :goto_0
     invoke-static {}, Lcom/tencent/open/utils/f;->a()Lcom/tencent/open/utils/f;
@@ -313,7 +288,6 @@
 
     move-object v7, p4
 
-    .line 13
     invoke-direct/range {v1 .. v8}, Lcom/tencent/open/SocialApiIml;->a(Landroid/app/Activity;Landroid/content/Intent;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;Z)V
 
     return-void
@@ -322,7 +296,6 @@
 .method private a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;)V
     .locals 10
 
-    .line 25
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -343,12 +316,10 @@
 
     const-string v0, "com.tencent.open.agent.AgentActivity"
 
-    .line 26
     invoke-virtual {p0, v0}, Lcom/tencent/open/SocialApiIml;->b(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
 
-    .line 27
     new-instance v9, Lcom/tencent/open/SocialApiIml$a;
 
     move-object v2, v9
@@ -369,7 +340,6 @@
 
     const-string p2, "com.tencent.open.agent.EncryTokenActivity"
 
-    .line 28
     invoke-virtual {p0, p2}, Lcom/tencent/open/SocialApiIml;->b(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object p2
@@ -378,7 +348,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 29
     invoke-virtual {v0}, Landroid/content/Intent;->getComponent()Landroid/content/ComponentName;
 
     move-result-object p3
@@ -413,7 +382,6 @@
 
     if-eqz p3, :cond_0
 
-    .line 30
     iget-object p3, p0, Lcom/tencent/connect/common/BaseApi;->b:Lcom/tencent/connect/auth/QQToken;
 
     invoke-virtual {p3}, Lcom/tencent/connect/auth/QQToken;->getAppId()Ljava/lang/String;
@@ -424,7 +392,6 @@
 
     invoke-virtual {p2, p4, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 31
     iget-object p3, p0, Lcom/tencent/connect/common/BaseApi;->b:Lcom/tencent/connect/auth/QQToken;
 
     invoke-virtual {p3}, Lcom/tencent/connect/auth/QQToken;->getOpenId()Ljava/lang/String;
@@ -435,7 +402,6 @@
 
     invoke-virtual {p2, p4, p3}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 32
     iget-object p3, p0, Lcom/tencent/connect/common/BaseApi;->b:Lcom/tencent/connect/auth/QQToken;
 
     invoke-virtual {p3}, Lcom/tencent/connect/auth/QQToken;->getAccessToken()Ljava/lang/String;
@@ -450,10 +416,8 @@
 
     const-string p4, "action_check_token"
 
-    .line 33
     invoke-virtual {p2, p3, p4}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 34
     invoke-virtual {p0, p2}, Lcom/tencent/connect/common/BaseApi;->a(Landroid/content/Intent;)Z
 
     move-result p3
@@ -462,10 +426,8 @@
 
     const-string p3, "-->handleIntentWithH5--found token activity"
 
-    .line 35
     invoke-static {v1, p3}, Lcom/tencent/open/a/f;->c(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 36
     invoke-static {}, Lcom/tencent/connect/common/UIListenerManager;->getInstance()Lcom/tencent/connect/common/UIListenerManager;
 
     move-result-object p3
@@ -474,7 +436,6 @@
 
     invoke-virtual {p3, p4, v9}, Lcom/tencent/connect/common/UIListenerManager;->setListenerWithRequestcode(ILcom/tencent/tauth/IUiListener;)Ljava/lang/Object;
 
-    .line 37
     invoke-virtual {p0, p1, p2, p4}, Lcom/tencent/connect/common/BaseApi;->a(Landroid/app/Activity;Landroid/content/Intent;I)V
 
     goto :goto_1
@@ -482,10 +443,8 @@
     :cond_0
     const-string p1, "-->handleIntentWithH5--token activity not found"
 
-    .line 38
     invoke-static {v1, p1}, Lcom/tencent/open/a/f;->c(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 39
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -530,7 +489,6 @@
 
     move-result-object p1
 
-    .line 40
     new-instance p2, Lorg/json/JSONObject;
 
     invoke-direct {p2}, Lorg/json/JSONObject;-><init>()V
@@ -538,7 +496,6 @@
     :try_start_0
     const-string p3, "encry_token"
 
-    .line 41
     invoke-virtual {p2, p3, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -548,10 +505,8 @@
     :catch_0
     move-exception p1
 
-    .line 42
     invoke-virtual {p1}, Lorg/json/JSONException;->printStackTrace()V
 
-    .line 43
     :goto_0
     invoke-virtual {v9, p2}, Lcom/tencent/open/SocialApiIml$a;->onComplete(Ljava/lang/Object;)V
 
@@ -571,13 +526,10 @@
 
     const-string v3, "OpenUi, showDialog --start"
 
-    .line 44
     invoke-static {v2, v3}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 45
     invoke-static {p1}, Landroid/webkit/CookieSyncManager;->createInstance(Landroid/content/Context;)Landroid/webkit/CookieSyncManager;
 
-    .line 46
     iget-object p1, p0, Lcom/tencent/connect/common/BaseApi;->b:Lcom/tencent/connect/auth/QQToken;
 
     invoke-virtual {p1}, Lcom/tencent/connect/auth/QQToken;->getAppId()Ljava/lang/String;
@@ -588,7 +540,6 @@
 
     invoke-virtual {p3, v3, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 47
     iget-object p1, p0, Lcom/tencent/connect/common/BaseApi;->b:Lcom/tencent/connect/auth/QQToken;
 
     invoke-virtual {p1}, Lcom/tencent/connect/auth/QQToken;->isSessionValid()Z
@@ -597,7 +548,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 48
     iget-object p1, p0, Lcom/tencent/connect/common/BaseApi;->b:Lcom/tencent/connect/auth/QQToken;
 
     invoke-virtual {p1}, Lcom/tencent/connect/auth/QQToken;->getAccessToken()Ljava/lang/String;
@@ -608,7 +558,6 @@
 
     invoke-virtual {p3, v3, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 49
     :cond_0
     iget-object p1, p0, Lcom/tencent/connect/common/BaseApi;->b:Lcom/tencent/connect/auth/QQToken;
 
@@ -620,10 +569,8 @@
 
     const-string v3, "openid"
 
-    .line 50
     invoke-virtual {p3, v3, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 51
     :cond_1
     :try_start_0
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
@@ -638,12 +585,10 @@
 
     move-result-object p1
 
-    .line 52
     invoke-interface {p1, v1, v0}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 53
     invoke-virtual {p3, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -653,41 +598,33 @@
     :catch_0
     move-exception p1
 
-    .line 54
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 55
     invoke-virtual {p3, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 56
     :goto_0
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 57
     invoke-virtual {p1, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 58
     invoke-static {p3}, Lcom/tencent/open/utils/HttpUtils;->encodeUrl(Landroid/os/Bundle;)Ljava/lang/String;
 
     move-result-object p3
 
     invoke-virtual {p1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 59
     invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v6
 
     const-string p1, "OpenUi, showDialog TDialog"
 
-    .line 60
     invoke-static {v2, p1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p1, "action_challenge"
 
-    .line 61
     invoke-virtual {p1, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
@@ -704,7 +641,6 @@
 
     goto :goto_1
 
-    .line 62
     :cond_2
     new-instance p1, Lcom/tencent/open/TDialog;
 
@@ -728,10 +664,8 @@
     :goto_1
     const-string p1, "OpenUi, showDialog PKDialog"
 
-    .line 63
     invoke-static {v2, p1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 64
     new-instance p1, Lcom/tencent/open/c;
 
     iget-object v4, p0, Lcom/tencent/open/SocialApiIml;->c:Landroid/app/Activity;
@@ -755,7 +689,6 @@
 .method static synthetic a(Lcom/tencent/open/SocialApiIml;Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;)V
     .locals 0
 
-    .line 2
     invoke-direct/range {p0 .. p5}, Lcom/tencent/open/SocialApiIml;->a(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;)V
 
     return-void
@@ -768,7 +701,6 @@
 
     const-string v0, "action_ask"
 
-    .line 1
     invoke-direct {p0, p1, v0, p2, p3}, Lcom/tencent/open/SocialApiIml;->a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
 
     return-void
@@ -777,37 +709,30 @@
 .method protected b(Ljava/lang/String;)Landroid/content/Intent;
     .locals 5
 
-    .line 1
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     const-string v1, "com.qzone"
 
-    .line 2
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 3
     new-instance v2, Landroid/content/Intent;
 
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
     const-string v3, "com.tencent.mobileqq"
 
-    .line 4
     invoke-virtual {v2, v3, p1}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 5
     new-instance v3, Landroid/content/Intent;
 
     invoke-direct {v3}, Landroid/content/Intent;-><init>()V
 
     const-string v4, "com.tencent.minihd.qq"
 
-    .line 6
     invoke-virtual {v3, v4, p1}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 7
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object p1
@@ -830,7 +755,6 @@
 
     return-object v3
 
-    .line 8
     :cond_0
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
@@ -856,7 +780,6 @@
 
     return-object v2
 
-    .line 9
     :cond_1
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
@@ -870,7 +793,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 10
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object p1
@@ -881,14 +803,12 @@
 
     const-string v1, "4.2"
 
-    .line 11
     invoke-static {p1, v1}, Lcom/tencent/open/utils/g;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p1
 
     if-ltz p1, :cond_3
 
-    .line 12
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object p1
@@ -926,7 +846,6 @@
 
     const-string v0, "action_gift"
 
-    .line 1
     invoke-direct {p0, p1, v0, p2, p3}, Lcom/tencent/open/SocialApiIml;->a(Landroid/app/Activity;Ljava/lang/String;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
 
     return-void
@@ -935,12 +854,10 @@
 .method public invite(Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
     .locals 9
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/SocialApiIml;->c:Landroid/app/Activity;
 
     const-string v0, "com.tencent.open.agent.SocialFriendChooser"
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/tencent/connect/common/BaseApi;->c(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
@@ -951,12 +868,10 @@
 
     const-string v1, "--invite--friend chooser not found"
 
-    .line 3
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "com.tencent.open.agent.AppInvitationActivity"
 
-    .line 4
     invoke-virtual {p0, v0}, Lcom/tencent/connect/common/BaseApi;->c(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v0
@@ -964,14 +879,12 @@
     :cond_0
     move-object v3, v0
 
-    .line 5
     invoke-virtual {p0}, Lcom/tencent/connect/common/BaseApi;->b()Landroid/os/Bundle;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
 
-    .line 6
     invoke-static {}, Lcom/tencent/open/utils/f;->a()Lcom/tencent/open/utils/f;
 
     move-result-object v0
@@ -998,7 +911,6 @@
 
     move-object v7, p3
 
-    .line 7
     invoke-direct/range {v1 .. v8}, Lcom/tencent/open/SocialApiIml;->a(Landroid/app/Activity;Landroid/content/Intent;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;Z)V
 
     return-void
@@ -1007,24 +919,20 @@
 .method public story(Landroid/app/Activity;Landroid/os/Bundle;Lcom/tencent/tauth/IUiListener;)V
     .locals 9
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/SocialApiIml;->c:Landroid/app/Activity;
 
     const-string v0, "com.tencent.open.agent.SendStoryActivity"
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/tencent/connect/common/BaseApi;->c(Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object v3
 
-    .line 3
     invoke-virtual {p0}, Lcom/tencent/connect/common/BaseApi;->b()Landroid/os/Bundle;
 
     move-result-object v0
 
     invoke-virtual {p2, v0}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
 
-    .line 4
     invoke-static {}, Lcom/tencent/open/utils/f;->a()Lcom/tencent/open/utils/f;
 
     move-result-object v0
@@ -1051,7 +959,6 @@
 
     move-object v7, p3
 
-    .line 5
     invoke-direct/range {v1 .. v8}, Lcom/tencent/open/SocialApiIml;->a(Landroid/app/Activity;Landroid/content/Intent;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;Z)V
 
     return-void
@@ -1065,21 +972,18 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/connect/common/BaseApi;->b:Lcom/tencent/connect/auth/QQToken;
 
     invoke-virtual {v0}, Lcom/tencent/connect/auth/QQToken;->getAccessToken()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/tencent/connect/common/BaseApi;->b:Lcom/tencent/connect/auth/QQToken;
 
     invoke-virtual {v1}, Lcom/tencent/connect/auth/QQToken;->getAppId()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 3
     iget-object v2, p0, Lcom/tencent/connect/common/BaseApi;->b:Lcom/tencent/connect/auth/QQToken;
 
     invoke-virtual {v2}, Lcom/tencent/connect/auth/QQToken;->getOpenId()Ljava/lang/String;
@@ -1088,7 +992,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -1111,7 +1014,6 @@
 
     if-lez v3, :cond_0
 
-    .line 5
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -1143,29 +1045,23 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 6
     :goto_0
     new-instance v1, Lcom/tencent/open/c/b;
 
     invoke-direct {v1, p1}, Lcom/tencent/open/c/b;-><init>(Landroid/content/Context;)V
 
-    .line 7
     invoke-virtual {v1}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
     move-result-object v2
 
     const/4 v3, 0x1
 
-    .line 8
     invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setDomStorageEnabled(Z)V
 
-    .line 9
     invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setJavaScriptEnabled(Z)V
 
-    .line 10
     invoke-virtual {v2, v3}, Landroid/webkit/WebSettings;->setDatabaseEnabled(Z)V
 
-    .line 11
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1208,7 +1104,6 @@
 
     move-result-object v3
 
-    .line 12
     invoke-static {}, Lcom/tencent/open/utils/f;->a()Lcom/tencent/open/utils/f;
 
     move-result-object v0
@@ -1225,7 +1120,6 @@
 
     move-object v2, v6
 
-    .line 13
     invoke-virtual/range {v1 .. v6}, Landroid/webkit/WebView;->loadDataWithBaseURL(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

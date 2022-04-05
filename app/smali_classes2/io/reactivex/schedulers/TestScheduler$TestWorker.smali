@@ -1,6 +1,5 @@
 .class final Lio/reactivex/schedulers/TestScheduler$TestWorker;
 .super Lio/reactivex/Scheduler$Worker;
-.source "TestScheduler.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method constructor <init>(Lio/reactivex/schedulers/TestScheduler;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lio/reactivex/schedulers/TestScheduler$TestWorker;->this$0:Lio/reactivex/schedulers/TestScheduler;
 
     invoke-direct {p0}, Lio/reactivex/Scheduler$Worker;-><init>()V
@@ -45,7 +43,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lio/reactivex/schedulers/TestScheduler$TestWorker;->disposed:Z
 
     return-void
@@ -54,7 +51,6 @@
 .method public isDisposed()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/schedulers/TestScheduler$TestWorker;->disposed:Z
 
     return v0
@@ -67,7 +63,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/schedulers/TestScheduler$TestWorker;->this$0:Lio/reactivex/schedulers/TestScheduler;
 
     invoke-virtual {v0, p1}, Lio/reactivex/schedulers/TestScheduler;->now(Ljava/util/concurrent/TimeUnit;)J
@@ -86,17 +81,14 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 6
     iget-boolean v0, p0, Lio/reactivex/schedulers/TestScheduler$TestWorker;->disposed:Z
 
     if-eqz v0, :cond_0
 
-    .line 7
     sget-object p1, Lio/reactivex/internal/disposables/EmptyDisposable;->INSTANCE:Lio/reactivex/internal/disposables/EmptyDisposable;
 
     return-object p1
 
-    .line 8
     :cond_0
     new-instance v7, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;
 
@@ -120,14 +112,12 @@
 
     invoke-direct/range {v0 .. v6}, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;-><init>(Lio/reactivex/schedulers/TestScheduler$TestWorker;JLjava/lang/Runnable;J)V
 
-    .line 9
     iget-object p1, p0, Lio/reactivex/schedulers/TestScheduler$TestWorker;->this$0:Lio/reactivex/schedulers/TestScheduler;
 
     iget-object p1, p1, Lio/reactivex/schedulers/TestScheduler;->queue:Ljava/util/Queue;
 
     invoke-interface {p1, v7}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
 
-    .line 10
     new-instance p1, Lio/reactivex/schedulers/TestScheduler$TestWorker$QueueRemove;
 
     invoke-direct {p1, p0, v7}, Lio/reactivex/schedulers/TestScheduler$TestWorker$QueueRemove;-><init>(Lio/reactivex/schedulers/TestScheduler$TestWorker;Lio/reactivex/schedulers/TestScheduler$TimedRunnable;)V
@@ -152,17 +142,14 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/schedulers/TestScheduler$TestWorker;->disposed:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     sget-object p1, Lio/reactivex/internal/disposables/EmptyDisposable;->INSTANCE:Lio/reactivex/internal/disposables/EmptyDisposable;
 
     return-object p1
 
-    .line 3
     :cond_0
     new-instance v7, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;
 
@@ -194,14 +181,12 @@
 
     invoke-direct/range {v0 .. v6}, Lio/reactivex/schedulers/TestScheduler$TimedRunnable;-><init>(Lio/reactivex/schedulers/TestScheduler$TestWorker;JLjava/lang/Runnable;J)V
 
-    .line 4
     iget-object p1, p0, Lio/reactivex/schedulers/TestScheduler$TestWorker;->this$0:Lio/reactivex/schedulers/TestScheduler;
 
     iget-object p1, p1, Lio/reactivex/schedulers/TestScheduler;->queue:Ljava/util/Queue;
 
     invoke-interface {p1, v7}, Ljava/util/Queue;->add(Ljava/lang/Object;)Z
 
-    .line 5
     new-instance p1, Lio/reactivex/schedulers/TestScheduler$TestWorker$QueueRemove;
 
     invoke-direct {p1, p0, v7}, Lio/reactivex/schedulers/TestScheduler$TestWorker$QueueRemove;-><init>(Lio/reactivex/schedulers/TestScheduler$TestWorker;Lio/reactivex/schedulers/TestScheduler$TimedRunnable;)V

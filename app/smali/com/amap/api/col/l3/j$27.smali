@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$27;
 .super Lcom/amap/api/col/l3/j$a;
-.source "AMapDelegateImp.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$27;->a:Lcom/amap/api/col/l3/j;
 
     const/4 p1, 0x0
@@ -37,10 +35,8 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     invoke-super {p0}, Lcom/amap/api/col/l3/j$a;->run()V
 
-    .line 2
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/j$27;->a:Lcom/amap/api/col/l3/j;
 
@@ -65,7 +61,6 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

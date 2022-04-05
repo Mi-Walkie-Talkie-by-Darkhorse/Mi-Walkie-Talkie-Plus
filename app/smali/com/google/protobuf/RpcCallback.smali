@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/protobuf/RpcCallback;
 .super Ljava/lang/Object;
-.source "RpcCallback.java"
 
 
 # annotations

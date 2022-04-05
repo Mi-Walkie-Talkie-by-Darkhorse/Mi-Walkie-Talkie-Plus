@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;
 .super Ljava/lang/Object;
-.source "UpdateMcuActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;->a:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;->f(Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;)Ljava/lang/Runnable;
@@ -51,7 +48,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;->f(Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;)Ljava/lang/Runnable;
@@ -60,14 +56,12 @@
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->b(Ljava/lang/Runnable;)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;->a(Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;Ljava/lang/Runnable;)Ljava/lang/Runnable;
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;->a:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
@@ -87,12 +81,10 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     const v1, 0x7f110369
@@ -105,7 +97,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
@@ -123,7 +114,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle;->setProgress(ILcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$b;->a:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;

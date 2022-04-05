@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/config/c;
 .super Ljava/lang/Object;
-.source "DefaultConfigHandler.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/config/e;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

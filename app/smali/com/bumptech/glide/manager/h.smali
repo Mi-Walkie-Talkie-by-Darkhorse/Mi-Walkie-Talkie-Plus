@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/manager/h;
 .super Ljava/lang/Object;
-.source "Lifecycle.java"
 
 
 # virtual methods

@@ -1,6 +1,5 @@
 .class public Landroidx/appcompat/widget/e0;
 .super Ljava/lang/Object;
-.source "TintTypedArray.java"
 
 
 # annotations
@@ -23,13 +22,10 @@
 .method private constructor <init>(Landroid/content/Context;Landroid/content/res/TypedArray;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/appcompat/widget/e0;->a:Landroid/content/Context;
 
-    .line 3
     iput-object p2, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     return-void
@@ -38,7 +34,6 @@
 .method public static a(Landroid/content/Context;I[I)Landroidx/appcompat/widget/e0;
     .locals 1
 
-    .line 4
     new-instance v0, Landroidx/appcompat/widget/e0;
 
     invoke-virtual {p0, p1, p2}, Landroid/content/Context;->obtainStyledAttributes(I[I)Landroid/content/res/TypedArray;
@@ -53,7 +48,6 @@
 .method public static a(Landroid/content/Context;Landroid/util/AttributeSet;[I)Landroidx/appcompat/widget/e0;
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/appcompat/widget/e0;
 
     invoke-virtual {p0, p1, p2}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
@@ -68,10 +62,8 @@
 .method public static a(Landroid/content/Context;Landroid/util/AttributeSet;[III)Landroidx/appcompat/widget/e0;
     .locals 1
 
-    .line 2
     new-instance v0, Landroidx/appcompat/widget/e0;
 
-    .line 3
     invoke-virtual {p0, p1, p2, p3, p4}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p1
@@ -86,7 +78,6 @@
 .method public a(IF)F
     .locals 1
 
-    .line 17
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getDimension(IF)F
@@ -99,7 +90,6 @@
 .method public a(II)I
     .locals 1
 
-    .line 11
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getColor(II)I
@@ -112,7 +102,6 @@
 .method public a(I)Landroid/content/res/ColorStateList;
     .locals 2
 
-    .line 12
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1}, Landroid/content/res/TypedArray;->hasValue(I)Z
@@ -121,7 +110,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 13
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     const/4 v1, 0x0
@@ -132,10 +120,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 14
     iget-object v1, p0, Landroidx/appcompat/widget/e0;->a:Landroid/content/Context;
 
-    .line 15
     invoke-static {v1, v0}, Landroidx/appcompat/a/a/a;->b(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
 
     move-result-object v0
@@ -144,7 +130,6 @@
 
     return-object v0
 
-    .line 16
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
@@ -158,7 +143,6 @@
 .method public a()Landroid/content/res/TypedArray;
     .locals 1
 
-    .line 5
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     return-object v0
@@ -177,7 +161,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 6
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     const/4 v1, 0x0
@@ -192,20 +175,17 @@
 
     return-object p1
 
-    .line 7
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->c:Landroid/util/TypedValue;
 
     if-nez v0, :cond_1
 
-    .line 8
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
     iput-object v0, p0, Landroidx/appcompat/widget/e0;->c:Landroid/util/TypedValue;
 
-    .line 9
     :cond_1
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->a:Landroid/content/Context;
 
@@ -221,7 +201,6 @@
 .method public a(IZ)Z
     .locals 1
 
-    .line 10
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -234,7 +213,6 @@
 .method public b(IF)F
     .locals 1
 
-    .line 5
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getFloat(IF)F
@@ -247,7 +225,6 @@
 .method public b(II)I
     .locals 1
 
-    .line 6
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getDimensionPixelOffset(II)I
@@ -260,7 +237,6 @@
 .method public b(I)Landroid/graphics/drawable/Drawable;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1}, Landroid/content/res/TypedArray;->hasValue(I)Z
@@ -269,7 +245,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     const/4 v1, 0x0
@@ -280,7 +255,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object p1, p0, Landroidx/appcompat/widget/e0;->a:Landroid/content/Context;
 
     invoke-static {p1, v0}, Landroidx/appcompat/a/a/a;->c(Landroid/content/Context;I)Landroid/graphics/drawable/Drawable;
@@ -289,7 +263,6 @@
 
     return-object p1
 
-    .line 4
     :cond_0
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
@@ -303,7 +276,6 @@
 .method public b()V
     .locals 1
 
-    .line 7
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -314,7 +286,6 @@
 .method public c(II)I
     .locals 1
 
-    .line 4
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
@@ -327,7 +298,6 @@
 .method public c(I)Landroid/graphics/drawable/Drawable;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1}, Landroid/content/res/TypedArray;->hasValue(I)Z
@@ -336,7 +306,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     const/4 v1, 0x0
@@ -347,7 +316,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-static {}, Landroidx/appcompat/widget/f;->b()Landroidx/appcompat/widget/f;
 
     move-result-object v0
@@ -371,7 +339,6 @@
 .method public d(II)I
     .locals 1
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -384,7 +351,6 @@
 .method public d(I)Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
@@ -397,7 +363,6 @@
 .method public e(II)I
     .locals 1
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getInteger(II)I
@@ -410,7 +375,6 @@
 .method public e(I)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1}, Landroid/content/res/TypedArray;->getText(I)Ljava/lang/CharSequence;
@@ -423,7 +387,6 @@
 .method public f(II)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getLayoutDimension(II)I
@@ -436,7 +399,6 @@
 .method public f(I)[Ljava/lang/CharSequence;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1}, Landroid/content/res/TypedArray;->getTextArray(I)[Ljava/lang/CharSequence;
@@ -449,7 +411,6 @@
 .method public g(II)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/TypedArray;->getResourceId(II)I
@@ -462,7 +423,6 @@
 .method public g(I)Z
     .locals 1
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/widget/e0;->b:Landroid/content/res/TypedArray;
 
     invoke-virtual {v0, p1}, Landroid/content/res/TypedArray;->hasValue(I)Z

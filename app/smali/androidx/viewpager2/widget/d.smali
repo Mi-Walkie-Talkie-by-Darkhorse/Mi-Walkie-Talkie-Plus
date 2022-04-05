@@ -1,6 +1,5 @@
 .class final Landroidx/viewpager2/widget/d;
 .super Landroidx/viewpager2/widget/ViewPager2$i;
-.source "PageTransformerAdapter.java"
 
 
 # instance fields
@@ -13,10 +12,8 @@
 .method constructor <init>(Landroidx/recyclerview/widget/LinearLayoutManager;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/viewpager2/widget/ViewPager2$i;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/viewpager2/widget/d;->a:Landroidx/recyclerview/widget/LinearLayoutManager;
 
     return-void
@@ -27,7 +24,6 @@
 .method a()Landroidx/viewpager2/widget/ViewPager2$k;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/viewpager2/widget/d;->b:Landroidx/viewpager2/widget/ViewPager2$k;
 
     return-object v0
@@ -40,7 +36,6 @@
         .end annotation
     .end param
 
-    .line 2
     iput-object p1, p0, Landroidx/viewpager2/widget/d;->b:Landroidx/viewpager2/widget/ViewPager2$k;
 
     return-void
@@ -55,7 +50,6 @@
 .method public onPageScrolled(IFI)V
     .locals 4
 
-    .line 1
     iget-object p3, p0, Landroidx/viewpager2/widget/d;->b:Landroidx/viewpager2/widget/ViewPager2$k;
 
     if-nez p3, :cond_0
@@ -69,7 +63,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     iget-object v1, p0, Landroidx/viewpager2/widget/d;->a:Landroidx/recyclerview/widget/LinearLayoutManager;
 
@@ -79,7 +72,6 @@
 
     if-ge v0, v1, :cond_2
 
-    .line 3
     iget-object v1, p0, Landroidx/viewpager2/widget/d;->a:Landroidx/recyclerview/widget/LinearLayoutManager;
 
     invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getChildAt(I)Landroid/view/View;
@@ -88,7 +80,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 4
     iget-object v2, p0, Landroidx/viewpager2/widget/d;->a:Landroidx/recyclerview/widget/LinearLayoutManager;
 
     invoke-virtual {v2, v1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getPosition(Landroid/view/View;)I
@@ -101,7 +92,6 @@
 
     add-float/2addr v2, p2
 
-    .line 5
     iget-object v3, p0, Landroidx/viewpager2/widget/d;->b:Landroidx/viewpager2/widget/ViewPager2$k;
 
     invoke-interface {v3, v1, v2}, Landroidx/viewpager2/widget/ViewPager2$k;->a(Landroid/view/View;F)V
@@ -110,7 +100,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -120,7 +109,6 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 7
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -143,7 +131,6 @@
 
     const-string p3, "LayoutManager returned a null child at pos %d/%d while transforming pages"
 
-    .line 8
     invoke-static {p2, p3, v1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2

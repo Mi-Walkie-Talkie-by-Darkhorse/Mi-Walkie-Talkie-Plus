@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/cache/ForwardingCache$SimpleForwardingCache;
 .super Lcom/google/common/cache/ForwardingCache;
-.source "ForwardingCache.java"
 
 
 # annotations
@@ -51,10 +50,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/cache/ForwardingCache;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -78,7 +75,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/cache/ForwardingCache$SimpleForwardingCache;->delegate:Lcom/google/common/cache/Cache;
 
     return-object v0
@@ -87,7 +83,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/cache/ForwardingCache$SimpleForwardingCache;->delegate()Lcom/google/common/cache/Cache;
 
     move-result-object v0

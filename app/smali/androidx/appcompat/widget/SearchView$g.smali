@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/SearchView$g;
 .super Ljava/lang/Object;
-.source "SearchView.java"
 
 # interfaces
 .implements Landroid/view/View$OnKeyListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/SearchView$g;->a:Landroidx/appcompat/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/SearchView$g;->a:Landroidx/appcompat/widget/SearchView;
 
     iget-object v1, v0, Landroidx/appcompat/widget/SearchView;->N:Landroid/app/SearchableInfo;
@@ -49,7 +46,6 @@
 
     return v2
 
-    .line 2
     :cond_0
     iget-object v0, v0, Landroidx/appcompat/widget/SearchView;->a:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
@@ -63,7 +59,6 @@
 
     iget-object v0, v0, Landroidx/appcompat/widget/SearchView;->a:Landroidx/appcompat/widget/SearchView$SearchAutoComplete;
 
-    .line 3
     invoke-virtual {v0}, Landroid/widget/AutoCompleteTextView;->getListSelection()I
 
     move-result v0
@@ -72,7 +67,6 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 4
     iget-object v0, p0, Landroidx/appcompat/widget/SearchView$g;->a:Landroidx/appcompat/widget/SearchView;
 
     invoke-virtual {v0, p1, p2, p3}, Landroidx/appcompat/widget/SearchView;->a(Landroid/view/View;ILandroid/view/KeyEvent;)Z
@@ -81,7 +75,6 @@
 
     return p1
 
-    .line 5
     :cond_1
     iget-object v0, p0, Landroidx/appcompat/widget/SearchView$g;->a:Landroidx/appcompat/widget/SearchView;
 
@@ -99,7 +92,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 6
     invoke-virtual {p3}, Landroid/view/KeyEvent;->getAction()I
 
     move-result p3
@@ -112,10 +104,8 @@
 
     if-ne p2, p3, :cond_2
 
-    .line 7
     invoke-virtual {p1}, Landroid/view/View;->cancelLongPress()V
 
-    .line 8
     iget-object p1, p0, Landroidx/appcompat/widget/SearchView$g;->a:Landroidx/appcompat/widget/SearchView;
 
     const/4 p2, 0x0
@@ -126,12 +116,10 @@
 
     move-result-object p3
 
-    .line 9
     invoke-virtual {p3}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object p3
 
-    .line 10
     invoke-virtual {p1, v2, p2, p3}, Landroidx/appcompat/widget/SearchView;->a(ILjava/lang/String;Ljava/lang/String;)V
 
     return v0

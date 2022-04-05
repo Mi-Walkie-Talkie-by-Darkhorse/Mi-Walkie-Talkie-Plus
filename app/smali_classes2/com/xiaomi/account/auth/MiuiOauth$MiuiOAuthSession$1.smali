@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession$1;
 .super Ljava/lang/Object;
-.source "MiuiOauth.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/xiaomi/account/auth/MiuiOauth;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession$1;->val$this$0:Lcom/xiaomi/account/auth/MiuiOauth;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "this should never be called"
@@ -70,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/xiaomi/account/auth/MiuiOauth$MiuiOAuthSession$1;->call()Landroid/os/Bundle;
 
     move-result-object v0

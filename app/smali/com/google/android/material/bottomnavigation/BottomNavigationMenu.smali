@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/bottomnavigation/BottomNavigationMenu;
 .super Landroidx/appcompat/view/menu/f;
-.source "BottomNavigationMenu.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/appcompat/view/menu/f;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -30,7 +28,6 @@
 .method protected addInternal(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/f;->size()I
 
     move-result v0
@@ -43,33 +40,27 @@
 
     if-gt v0, v2, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/f;->stopDispatchingItemsChanged()V
 
-    .line 3
     invoke-super {p0, p1, p2, p3, p4}, Landroidx/appcompat/view/menu/f;->addInternal(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
 
     move-result-object p1
 
-    .line 4
     instance-of p2, p1, Landroidx/appcompat/view/menu/h;
 
     if-eqz p2, :cond_0
 
-    .line 5
     move-object p2, p1
 
     check-cast p2, Landroidx/appcompat/view/menu/h;
 
     invoke-virtual {p2, v1}, Landroidx/appcompat/view/menu/h;->c(Z)V
 
-    .line 6
     :cond_0
     invoke-virtual {p0}, Landroidx/appcompat/view/menu/f;->startDispatchingItemsChanged()V
 
     return-object p1
 
-    .line 7
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -85,7 +76,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string p2, "BottomNavigationView does not support submenus"

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e;
 .super Landroidx/recyclerview/widget/RecyclerView$g;
-.source "OffMapAddressSearchActivity.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$g;-><init>()V
@@ -49,7 +47,6 @@
 .method public a(Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e$a;I)V
     .locals 3
 
-    .line 1
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e$a;->a(Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e$a;)Landroid/widget/TextView;
 
     move-result-object v0
@@ -76,7 +73,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e$a;->b(Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e$a;)Landroid/widget/TextView;
 
     move-result-object p1
@@ -109,7 +105,6 @@
 .method public getItemCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity;->d(Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity;)Ljava/util/ArrayList;
@@ -126,7 +121,6 @@
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$y;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e$a;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e;->a(Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e$a;I)V
@@ -137,7 +131,6 @@
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$y;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e$a;
 
     move-result-object p1
@@ -148,7 +141,6 @@
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e$a;
     .locals 2
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -165,7 +157,6 @@
 
     move-result-object p1
 
-    .line 3
     new-instance p2, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e$a;
 
     invoke-direct {p2, p0, p1}, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e$a;-><init>(Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$e;Landroid/view/View;)V

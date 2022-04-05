@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/protobuf/ExtensionRegistry$1;
 .super Ljava/lang/Object;
-.source "ExtensionRegistry.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/Extension$ExtensionType;->values()[Lcom/google/protobuf/Extension$ExtensionType;
 
     move-result-object v0

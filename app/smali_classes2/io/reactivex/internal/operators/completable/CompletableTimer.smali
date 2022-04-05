@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/completable/CompletableTimer;
 .super Lio/reactivex/Completable;
-.source "CompletableTimer.java"
 
 
 # annotations
@@ -23,16 +22,12 @@
 .method public constructor <init>(JLjava/util/concurrent/TimeUnit;Lio/reactivex/Scheduler;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-wide p1, p0, Lio/reactivex/internal/operators/completable/CompletableTimer;->delay:J
 
-    .line 3
     iput-object p3, p0, Lio/reactivex/internal/operators/completable/CompletableTimer;->unit:Ljava/util/concurrent/TimeUnit;
 
-    .line 4
     iput-object p4, p0, Lio/reactivex/internal/operators/completable/CompletableTimer;->scheduler:Lio/reactivex/Scheduler;
 
     return-void
@@ -43,15 +38,12 @@
 .method protected subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 4
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/completable/CompletableTimer$TimerDisposable;
 
     invoke-direct {v0, p1}, Lio/reactivex/internal/operators/completable/CompletableTimer$TimerDisposable;-><init>(Lio/reactivex/CompletableObserver;)V
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/CompletableObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     iget-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableTimer;->scheduler:Lio/reactivex/Scheduler;
 
     iget-wide v1, p0, Lio/reactivex/internal/operators/completable/CompletableTimer;->delay:J

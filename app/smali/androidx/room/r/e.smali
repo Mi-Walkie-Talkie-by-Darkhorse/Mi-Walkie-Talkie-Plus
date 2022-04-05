@@ -1,6 +1,5 @@
 .class public Landroidx/room/r/e;
 .super Ljava/lang/Object;
-.source "SneakyThrow.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0}, Landroidx/room/r/e;->a(Ljava/lang/Throwable;)V
 
     const/4 p0, 0x0
@@ -49,6 +47,5 @@
         }
     .end annotation
 
-    .line 2
     throw p0
 .end method

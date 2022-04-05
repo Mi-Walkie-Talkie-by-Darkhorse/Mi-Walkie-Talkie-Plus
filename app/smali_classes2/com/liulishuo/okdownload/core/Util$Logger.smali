@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/core/Util$Logger;
 .super Ljava/lang/Object;
-.source "Util.java"
 
 
 # annotations

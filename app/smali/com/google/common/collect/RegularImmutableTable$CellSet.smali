@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/RegularImmutableTable$CellSet;
 .super Lcom/google/common/collect/ImmutableSet;
-.source "RegularImmutableTable.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 .method private constructor <init>(Lcom/google/common/collect/RegularImmutableTable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/RegularImmutableTable$CellSet;->this$0:Lcom/google/common/collect/RegularImmutableTable;
 
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSet;-><init>()V
@@ -41,7 +39,6 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/RegularImmutableTable;Lcom/google/common/collect/RegularImmutableTable$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/common/collect/RegularImmutableTable$CellSet;-><init>(Lcom/google/common/collect/RegularImmutableTable;)V
 
     return-void
@@ -56,17 +53,14 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Lcom/google/common/collect/Table$Cell;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/common/collect/Table$Cell;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableTable$CellSet;->this$0:Lcom/google/common/collect/RegularImmutableTable;
 
     invoke-interface {p1}, Lcom/google/common/collect/Table$Cell;->getRowKey()Ljava/lang/Object;
@@ -83,7 +77,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-interface {p1}, Lcom/google/common/collect/Table$Cell;->getValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -111,7 +104,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/RegularImmutableTable$CellSet$1;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/RegularImmutableTable$CellSet$1;-><init>(Lcom/google/common/collect/RegularImmutableTable$CellSet;)V
@@ -138,7 +130,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->asList()Lcom/google/common/collect/ImmutableList;
 
     move-result-object v0
@@ -153,7 +144,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/RegularImmutableTable$CellSet;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -164,7 +154,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableTable$CellSet;->this$0:Lcom/google/common/collect/RegularImmutableTable;
 
     invoke-interface {v0}, Lcom/google/common/collect/Table;->size()I

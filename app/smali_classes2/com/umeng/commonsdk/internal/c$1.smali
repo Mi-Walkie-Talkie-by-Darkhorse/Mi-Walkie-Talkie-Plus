@@ -1,6 +1,5 @@
 .class final Lcom/umeng/commonsdk/internal/c$1;
 .super Ljava/lang/Object;
-.source "UMInternalDataProtocol.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/internal/c$1;->a:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 9
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/umeng/commonsdk/internal/c$1;->a:Landroid/content/Context;
 
@@ -50,24 +47,20 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v1
 
-    .line 3
     iget-object v3, p0, Lcom/umeng/commonsdk/internal/c$1;->a:Landroid/content/Context;
 
     invoke-static {v3}, Lcom/umeng/analytics/pro/z;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 4
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v4
 
-    .line 5
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v6
@@ -76,14 +69,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 6
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object v6
 
     const-string v7, "key_umeng_sp_oaid_required_time"
 
-    .line 7
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -102,7 +93,6 @@
 
     invoke-interface {v6, v7, v1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 8
     invoke-interface {v6}, Landroid/content/SharedPreferences$Editor;->commit()Z
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -110,7 +100,6 @@
     :cond_0
     if-eqz v0, :cond_1
 
-    .line 9
     :try_start_1
     invoke-interface {v0}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
@@ -118,13 +107,10 @@
 
     const-string v1, "key_umeng_sp_oaid"
 
-    .line 10
     invoke-interface {v0, v1, v3}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
 
-    .line 11
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 12
     :cond_1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -132,7 +118,6 @@
 
     if-le v0, v1, :cond_2
 
-    .line 13
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigureImpl;->removeInterruptFlag()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0

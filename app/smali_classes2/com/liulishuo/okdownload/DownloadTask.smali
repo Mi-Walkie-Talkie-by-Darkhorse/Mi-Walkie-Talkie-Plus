@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/DownloadTask;
 .super Lcom/liulishuo/okdownload/core/IdentifiedTask;
-.source "DownloadTask.java"
 
 # interfaces
 .implements Ljava/lang/Comparable;
@@ -163,60 +162,48 @@
 
     move-object/from16 v1, p11
 
-    .line 1
     invoke-direct {p0}, Lcom/liulishuo/okdownload/core/IdentifiedTask;-><init>()V
 
     move-object v2, p1
 
-    .line 2
     iput-object v2, v0, Lcom/liulishuo/okdownload/DownloadTask;->url:Ljava/lang/String;
 
     move-object v2, p2
 
-    .line 3
     iput-object v2, v0, Lcom/liulishuo/okdownload/DownloadTask;->uri:Landroid/net/Uri;
 
     move v3, p3
 
-    .line 4
     iput v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->priority:I
 
     move v3, p4
 
-    .line 5
     iput v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->readBufferSize:I
 
     move v3, p5
 
-    .line 6
     iput v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->flushBufferSize:I
 
     move v3, p6
 
-    .line 7
     iput v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->syncBufferSize:I
 
     move v3, p7
 
-    .line 8
     iput v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->syncBufferIntervalMills:I
 
     move v3, p8
 
-    .line 9
     iput-boolean v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->autoCallbackToUIThread:Z
 
     move v3, p9
 
-    .line 10
     iput v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->minIntervalMillisCallbackProcess:I
 
     move-object v3, p10
 
-    .line 11
     iput-object v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->headerMapFields:Ljava/util/Map;
 
-    .line 12
     new-instance v3, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {v3}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
@@ -225,25 +212,20 @@
 
     move/from16 v3, p12
 
-    .line 13
     iput-boolean v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->passIfAlreadyCompleted:Z
 
     move/from16 v3, p13
 
-    .line 14
     iput-boolean v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->wifiRequired:Z
 
     move-object/from16 v3, p15
 
-    .line 15
     iput-object v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->connectionCount:Ljava/lang/Integer;
 
     move-object/from16 v3, p16
 
-    .line 16
     iput-object v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->isPreAllocateLength:Ljava/lang/Boolean;
 
-    .line 17
     invoke-static {p2}, Lcom/liulishuo/okdownload/core/Util;->isUriFileScheme(Landroid/net/Uri;)Z
 
     move-result v3
@@ -252,7 +234,6 @@
 
     if-eqz v3, :cond_d
 
-    .line 18
     new-instance v3, Ljava/io/File;
 
     invoke-virtual {p2}, Landroid/net/Uri;->getPath()Ljava/lang/String;
@@ -263,14 +244,12 @@
 
     if-eqz p14, :cond_7
 
-    .line 19
     invoke-virtual/range {p14 .. p14}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 20
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
     move-result v2
@@ -285,7 +264,6 @@
 
     goto :goto_0
 
-    .line 21
     :cond_0
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -297,7 +275,6 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 22
     invoke-virtual {v3}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v3
@@ -312,7 +289,6 @@
 
     throw v1
 
-    .line 23
     :cond_1
     :goto_0
     invoke-static/range {p11 .. p11}, Lcom/liulishuo/okdownload/core/Util;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -321,7 +297,6 @@
 
     if-nez v2, :cond_2
 
-    .line 24
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -346,13 +321,11 @@
 
     const/4 v1, 0x0
 
-    .line 25
     :cond_2
     iput-object v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->directoryFile:Ljava/io/File;
 
     goto :goto_2
 
-    .line 26
     :cond_3
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
@@ -374,7 +347,6 @@
 
     goto :goto_1
 
-    .line 27
     :cond_4
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -386,7 +358,6 @@
 
     invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 28
     invoke-virtual {v3}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v3
@@ -401,7 +372,6 @@
 
     throw v1
 
-    .line 29
     :cond_5
     :goto_1
     invoke-static/range {p11 .. p11}, Lcom/liulishuo/okdownload/core/Util;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -410,12 +380,10 @@
 
     if-eqz v2, :cond_6
 
-    .line 30
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 31
     invoke-static {v3}, Lcom/liulishuo/okdownload/core/Util;->getParentFile(Ljava/io/File;)Ljava/io/File;
 
     move-result-object v2
@@ -424,7 +392,6 @@
 
     goto :goto_2
 
-    .line 32
     :cond_6
     iput-object v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->directoryFile:Ljava/io/File;
 
@@ -433,7 +400,6 @@
 
     goto :goto_4
 
-    .line 33
     :cond_7
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
@@ -449,30 +415,25 @@
 
     const/4 v2, 0x1
 
-    .line 34
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
-    .line 35
     iput-object v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->directoryFile:Ljava/io/File;
 
     goto :goto_4
 
-    .line 36
     :cond_8
     invoke-static {v4}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
 
-    .line 37
     invoke-virtual {v3}, Ljava/io/File;->exists()Z
 
     move-result v4
 
     if-eqz v4, :cond_b
 
-    .line 38
     invoke-static/range {p11 .. p11}, Lcom/liulishuo/okdownload/core/Util;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v4
@@ -491,7 +452,6 @@
 
     goto :goto_3
 
-    .line 39
     :cond_9
     new-instance v1, Ljava/lang/IllegalArgumentException;
 
@@ -501,14 +461,12 @@
 
     throw v1
 
-    .line 40
     :cond_a
     :goto_3
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 41
     invoke-static {v3}, Lcom/liulishuo/okdownload/core/Util;->getParentFile(Ljava/io/File;)Ljava/io/File;
 
     move-result-object v3
@@ -517,7 +475,6 @@
 
     goto :goto_4
 
-    .line 42
     :cond_b
     invoke-static/range {p11 .. p11}, Lcom/liulishuo/okdownload/core/Util;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -525,12 +482,10 @@
 
     if-eqz v4, :cond_c
 
-    .line 43
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 44
     invoke-static {v3}, Lcom/liulishuo/okdownload/core/Util;->getParentFile(Ljava/io/File;)Ljava/io/File;
 
     move-result-object v3
@@ -539,11 +494,9 @@
 
     goto :goto_4
 
-    .line 45
     :cond_c
     iput-object v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->directoryFile:Ljava/io/File;
 
-    .line 46
     :goto_4
     invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -553,11 +506,9 @@
 
     goto :goto_5
 
-    .line 47
     :cond_d
     iput-boolean v4, v0, Lcom/liulishuo/okdownload/DownloadTask;->filenameFromResponse:Z
 
-    .line 48
     new-instance v3, Ljava/io/File;
 
     invoke-virtual {p2}, Landroid/net/Uri;->getPath()Ljava/lang/String;
@@ -568,7 +519,6 @@
 
     iput-object v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->directoryFile:Ljava/io/File;
 
-    .line 49
     :goto_5
     invoke-static {v1}, Lcom/liulishuo/okdownload/core/Util;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -576,21 +526,18 @@
 
     if-eqz v2, :cond_e
 
-    .line 50
     new-instance v1, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     invoke-direct {v1}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;-><init>()V
 
     iput-object v1, v0, Lcom/liulishuo/okdownload/DownloadTask;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
-    .line 51
     iget-object v1, v0, Lcom/liulishuo/okdownload/DownloadTask;->directoryFile:Ljava/io/File;
 
     iput-object v1, v0, Lcom/liulishuo/okdownload/DownloadTask;->providedPathFile:Ljava/io/File;
 
     goto :goto_6
 
-    .line 52
     :cond_e
     new-instance v2, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
@@ -598,7 +545,6 @@
 
     iput-object v2, v0, Lcom/liulishuo/okdownload/DownloadTask;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
-    .line 53
     new-instance v2, Ljava/io/File;
 
     iget-object v3, v0, Lcom/liulishuo/okdownload/DownloadTask;->directoryFile:Ljava/io/File;
@@ -607,10 +553,8 @@
 
     iput-object v2, v0, Lcom/liulishuo/okdownload/DownloadTask;->targetFile:Ljava/io/File;
 
-    .line 54
     iput-object v2, v0, Lcom/liulishuo/okdownload/DownloadTask;->providedPathFile:Ljava/io/File;
 
-    .line 55
     :goto_6
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
@@ -632,7 +576,6 @@
 .method static synthetic access$000(Lcom/liulishuo/okdownload/DownloadTask;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadTask;->url:Ljava/lang/String;
 
     return-object p0
@@ -641,7 +584,6 @@
 .method static synthetic access$100(Lcom/liulishuo/okdownload/DownloadTask;)Ljava/io/File;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/liulishuo/okdownload/DownloadTask;->providedPathFile:Ljava/io/File;
 
     return-object p0
@@ -650,7 +592,6 @@
 .method public static cancel([Lcom/liulishuo/okdownload/DownloadTask;)V
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -667,7 +608,6 @@
 .method public static enqueue([Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/DownloadListener;)V
     .locals 3
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -677,14 +617,12 @@
 
     aget-object v2, p0, v1
 
-    .line 2
     iput-object p1, v2, Lcom/liulishuo/okdownload/DownloadTask;->listener:Lcom/liulishuo/okdownload/DownloadListener;
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
@@ -702,7 +640,6 @@
 .method public static mockTaskForCompare(I)Lcom/liulishuo/okdownload/DownloadTask$MockTaskForCompare;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/DownloadTask$MockTaskForCompare;
 
     invoke-direct {v0, p0}, Lcom/liulishuo/okdownload/DownloadTask$MockTaskForCompare;-><init>(I)V
@@ -717,18 +654,15 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->keyTagMap:Landroid/util/SparseArray;
 
     if-nez v0, :cond_1
 
-    .line 2
     monitor-enter p0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     :try_start_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->keyTagMap:Landroid/util/SparseArray;
 
@@ -740,7 +674,6 @@
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->keyTagMap:Landroid/util/SparseArray;
 
-    .line 4
     :cond_0
     monitor-exit p0
 
@@ -756,7 +689,6 @@
     :try_start_2
     throw p1
 
-    .line 5
     :cond_1
     :goto_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->keyTagMap:Landroid/util/SparseArray;
@@ -765,7 +697,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 6
     monitor-exit p0
 
     return-object p0
@@ -781,7 +712,6 @@
 .method public cancel()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -802,7 +732,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getPriority()I
 
     move-result p1
@@ -823,7 +752,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/liulishuo/okdownload/DownloadTask;
 
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/DownloadTask;->compareTo(Lcom/liulishuo/okdownload/DownloadTask;)I
@@ -836,10 +764,8 @@
 .method public enqueue(Lcom/liulishuo/okdownload/DownloadListener;)V
     .locals 0
 
-    .line 4
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadTask;->listener:Lcom/liulishuo/okdownload/DownloadListener;
 
-    .line 5
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object p1
@@ -856,7 +782,6 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 1
     invoke-super {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -867,16 +792,13 @@
 
     return v1
 
-    .line 2
     :cond_0
     instance-of v0, p1, Lcom/liulishuo/okdownload/DownloadTask;
 
     if-eqz v0, :cond_2
 
-    .line 3
     check-cast p1, Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 4
     iget v0, p1, Lcom/liulishuo/okdownload/DownloadTask;->id:I
 
     iget v2, p0, Lcom/liulishuo/okdownload/DownloadTask;->id:I
@@ -885,7 +807,6 @@
 
     return v1
 
-    .line 5
     :cond_1
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/IdentifiedTask;->compareIgnoreId(Lcom/liulishuo/okdownload/core/IdentifiedTask;)Z
 
@@ -902,10 +823,8 @@
 .method public execute(Lcom/liulishuo/okdownload/DownloadListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadTask;->listener:Lcom/liulishuo/okdownload/DownloadListener;
 
-    .line 2
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object p1
@@ -922,7 +841,6 @@
 .method public getConnectionCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     if-nez v0, :cond_0
@@ -931,7 +849,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getBlockCount()I
 
@@ -945,7 +862,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
@@ -958,7 +874,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/DownloadTask;->targetFile:Ljava/io/File;
 
@@ -972,7 +887,6 @@
 
     iput-object v1, p0, Lcom/liulishuo/okdownload/DownloadTask;->targetFile:Ljava/io/File;
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->targetFile:Ljava/io/File;
 
@@ -984,7 +898,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
@@ -997,7 +910,6 @@
 .method public getFilenameHolder()Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     return-object v0
@@ -1006,7 +918,6 @@
 .method public getFlushBufferSize()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->flushBufferSize:I
 
     return v0
@@ -1028,7 +939,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->headerMapFields:Ljava/util/Map;
 
     return-object v0
@@ -1037,7 +947,6 @@
 .method public getId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->id:I
 
     return v0
@@ -1048,7 +957,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     if-nez v0, :cond_0
@@ -1069,7 +977,6 @@
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
@@ -1079,7 +986,6 @@
 .method getLastCallbackProcessTs()J
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->lastCallbackProcessTimestamp:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
@@ -1092,7 +998,6 @@
 .method public getListener()Lcom/liulishuo/okdownload/DownloadListener;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->listener:Lcom/liulishuo/okdownload/DownloadListener;
 
     return-object v0
@@ -1101,7 +1006,6 @@
 .method public getMinIntervalMillisCallbackProcess()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->minIntervalMillisCallbackProcess:I
 
     return v0
@@ -1112,7 +1016,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->directoryFile:Ljava/io/File;
 
     return-object v0
@@ -1121,7 +1024,6 @@
 .method public getPriority()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->priority:I
 
     return v0
@@ -1132,7 +1034,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->providedPathFile:Ljava/io/File;
 
     return-object v0
@@ -1141,7 +1042,6 @@
 .method public getReadBufferSize()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->readBufferSize:I
 
     return v0
@@ -1152,7 +1052,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->redirectLocation:Ljava/lang/String;
 
     return-object v0
@@ -1163,7 +1062,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->connectionCount:Ljava/lang/Integer;
 
     return-object v0
@@ -1174,7 +1072,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->isPreAllocateLength:Ljava/lang/Boolean;
 
     return-object v0
@@ -1183,7 +1080,6 @@
 .method public getSyncBufferIntervalMills()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->syncBufferIntervalMills:I
 
     return v0
@@ -1192,7 +1088,6 @@
 .method public getSyncBufferSize()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->syncBufferSize:I
 
     return v0
@@ -1201,7 +1096,6 @@
 .method public getTag()Ljava/lang/Object;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->tag:Ljava/lang/Object;
 
     return-object v0
@@ -1210,7 +1104,6 @@
 .method public getTag(I)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->keyTagMap:Landroid/util/SparseArray;
 
     if-nez v0, :cond_0
@@ -1233,7 +1126,6 @@
 .method public getUri()Landroid/net/Uri;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->uri:Landroid/net/Uri;
 
     return-object v0
@@ -1244,7 +1136,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->url:Ljava/lang/String;
 
     return-object v0
@@ -1253,7 +1144,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1292,7 +1182,6 @@
 .method public isAutoCallbackToUIThread()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->autoCallbackToUIThread:Z
 
     return v0
@@ -1301,7 +1190,6 @@
 .method public isFilenameFromResponse()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->filenameFromResponse:Z
 
     return v0
@@ -1310,7 +1198,6 @@
 .method public isPassIfAlreadyCompleted()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->passIfAlreadyCompleted:Z
 
     return v0
@@ -1319,7 +1206,6 @@
 .method public isWifiRequired()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->wifiRequired:Z
 
     return v0
@@ -1330,7 +1216,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/DownloadTask$MockTaskForCompare;
 
     invoke-direct {v0, p1, p0}, Lcom/liulishuo/okdownload/DownloadTask$MockTaskForCompare;-><init>(ILcom/liulishuo/okdownload/DownloadTask;)V
@@ -1345,13 +1230,11 @@
 
     const/4 v0, 0x0
 
-    .line 3
     :try_start_0
     iput-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->tag:Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     monitor-exit p0
 
     return-void
@@ -1369,7 +1252,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->keyTagMap:Landroid/util/SparseArray;
 
@@ -1381,7 +1263,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     :cond_0
     monitor-exit p0
 
@@ -1402,7 +1283,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadTask;->listener:Lcom/liulishuo/okdownload/DownloadListener;
 
     return-void
@@ -1415,7 +1295,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadTask;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     return-void
@@ -1424,7 +1303,6 @@
 .method setLastCallbackProcessTs(J)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->lastCallbackProcessTimestamp:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/concurrent/atomic/AtomicLong;->set(J)V
@@ -1439,7 +1317,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadTask;->redirectLocation:Ljava/lang/String;
 
     return-void
@@ -1448,7 +1325,6 @@
 .method public setTag(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadTask;->tag:Ljava/lang/Object;
 
     return-void
@@ -1457,12 +1333,10 @@
 .method public setTags(Lcom/liulishuo/okdownload/DownloadTask;)V
     .locals 1
 
-    .line 1
     iget-object v0, p1, Lcom/liulishuo/okdownload/DownloadTask;->tag:Ljava/lang/Object;
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->tag:Ljava/lang/Object;
 
-    .line 2
     iget-object p1, p1, Lcom/liulishuo/okdownload/DownloadTask;->keyTagMap:Landroid/util/SparseArray;
 
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadTask;->keyTagMap:Landroid/util/SparseArray;
@@ -1473,7 +1347,6 @@
 .method public toBuilder()Lcom/liulishuo/okdownload/DownloadTask$Builder;
     .locals 2
 
-    .line 17
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->url:Ljava/lang/String;
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/DownloadTask;->uri:Landroid/net/Uri;
@@ -1488,75 +1361,64 @@
 .method public toBuilder(Ljava/lang/String;Landroid/net/Uri;)Lcom/liulishuo/okdownload/DownloadTask$Builder;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     invoke-direct {v0, p1, p2}, Lcom/liulishuo/okdownload/DownloadTask$Builder;-><init>(Ljava/lang/String;Landroid/net/Uri;)V
 
     iget p1, p0, Lcom/liulishuo/okdownload/DownloadTask;->priority:I
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setPriority(I)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     move-result-object p1
 
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->readBufferSize:I
 
-    .line 3
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setReadBufferSize(I)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     move-result-object p1
 
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->flushBufferSize:I
 
-    .line 4
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setFlushBufferSize(I)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     move-result-object p1
 
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->syncBufferSize:I
 
-    .line 5
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setSyncBufferSize(I)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     move-result-object p1
 
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->syncBufferIntervalMills:I
 
-    .line 6
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setSyncBufferIntervalMillis(I)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     move-result-object p1
 
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->autoCallbackToUIThread:Z
 
-    .line 7
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setAutoCallbackToUIThread(Z)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     move-result-object p1
 
     iget v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->minIntervalMillisCallbackProcess:I
 
-    .line 8
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setMinIntervalMillisCallbackProcess(I)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     move-result-object p1
 
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->headerMapFields:Ljava/util/Map;
 
-    .line 9
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setHeaderMapFields(Ljava/util/Map;)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     move-result-object p1
 
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->passIfAlreadyCompleted:Z
 
-    .line 10
     invoke-virtual {p1, v0}, Lcom/liulishuo/okdownload/DownloadTask$Builder;->setPassIfAlreadyCompleted(Z)Lcom/liulishuo/okdownload/DownloadTask$Builder;
 
     move-result-object p1
 
-    .line 11
     invoke-static {p2}, Lcom/liulishuo/okdownload/core/Util;->isUriFileScheme(Landroid/net/Uri;)Z
 
     move-result v0
@@ -1565,7 +1427,6 @@
 
     new-instance v0, Ljava/io/File;
 
-    .line 12
     invoke-virtual {p2}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object p2
@@ -1580,7 +1441,6 @@
 
     iget-object p2, p0, Lcom/liulishuo/okdownload/DownloadTask;->uri:Landroid/net/Uri;
 
-    .line 13
     invoke-static {p2}, Lcom/liulishuo/okdownload/core/Util;->isUriFileScheme(Landroid/net/Uri;)Z
 
     move-result p2
@@ -1589,7 +1449,6 @@
 
     iget-object p2, p0, Lcom/liulishuo/okdownload/DownloadTask;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
-    .line 14
     invoke-virtual {p2}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
 
     move-result-object p2
@@ -1600,7 +1459,6 @@
 
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadTask;->uri:Landroid/net/Uri;
 
-    .line 15
     invoke-virtual {v0}, Landroid/net/Uri;->getPath()Ljava/lang/String;
 
     move-result-object v0
@@ -1623,7 +1481,6 @@
 
     if-nez p2, :cond_0
 
-    .line 16
     iget-object p2, p0, Lcom/liulishuo/okdownload/DownloadTask;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
     invoke-virtual {p2}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
@@ -1639,7 +1496,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -1680,7 +1536,6 @@
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/DownloadTask;->filenameHolder:Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;
 
-    .line 2
     invoke-virtual {v1}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy$FilenameHolder;->get()Ljava/lang/String;
 
     move-result-object v1

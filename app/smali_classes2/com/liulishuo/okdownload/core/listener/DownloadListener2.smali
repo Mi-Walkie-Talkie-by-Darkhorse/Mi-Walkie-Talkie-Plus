@@ -1,6 +1,5 @@
 .class public abstract Lcom/liulishuo/okdownload/core/listener/DownloadListener2;
 .super Ljava/lang/Object;
-.source "DownloadListener2.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/DownloadListener;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

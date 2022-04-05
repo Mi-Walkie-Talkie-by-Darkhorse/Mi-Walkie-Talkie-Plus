@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/gt$1;
 .super Ljava/lang/Object;
-.source "Log.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/gt$1;->a:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,33 +36,27 @@
 .method public final run()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/gt$1;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/ii;->a(Landroid/content/Context;)V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/gt$1;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/gw;->b(Landroid/content/Context;)V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/gt$1;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/gw;->d(Landroid/content/Context;)V
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/gt$1;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/gw;->c(Landroid/content/Context;)V
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/gt$1;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/im;->a(Landroid/content/Context;)V
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/gt$1;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/ik;->a(Landroid/content/Context;)V
@@ -81,7 +73,6 @@
 
     const-string v2, "proL"
 
-    .line 7
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :catch_0

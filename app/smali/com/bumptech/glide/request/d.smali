@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/request/d;
 .super Ljava/lang/Object;
-.source "RequestListener.java"
 
 
 # annotations

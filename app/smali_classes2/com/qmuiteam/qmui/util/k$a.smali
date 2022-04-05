@@ -1,6 +1,5 @@
 .class final Lcom/qmuiteam/qmui/util/k$a;
 .super Ljava/lang/Object;
-.source "QMUIStatusBarHelper.java"
 
 # interfaces
 .implements Landroid/view/View$OnAttachStateChangeListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroid/view/Window;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/util/k$a;->a:Landroid/view/Window;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,10 +36,8 @@
 .method public onViewAttachedToWindow(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/util/k$a;->a:Landroid/view/Window;
 
     invoke-static {v0, p1}, Lcom/qmuiteam/qmui/util/k;->a(Landroid/view/Window;Landroid/view/View;)V

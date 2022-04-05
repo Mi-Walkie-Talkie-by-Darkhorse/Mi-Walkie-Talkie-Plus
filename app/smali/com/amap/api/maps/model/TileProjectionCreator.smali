@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/TileProjectionCreator;
 .super Ljava/lang/Object;
-.source "TileProjectionCreator.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/amap/api/maps/model/TileProjection;
     .locals 8
 
-    .line 2
     new-instance v7, Lcom/amap/api/maps/model/TileProjection;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -69,7 +66,6 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/amap/api/maps/model/TileProjectionCreator;->createFromParcel(Landroid/os/Parcel;)Lcom/amap/api/maps/model/TileProjection;
 
     move-result-object p1
@@ -80,7 +76,6 @@
 .method public newArray(I)[Lcom/amap/api/maps/model/TileProjection;
     .locals 0
 
-    .line 2
     new-array p1, p1, [Lcom/amap/api/maps/model/TileProjection;
 
     return-object p1
@@ -89,7 +84,6 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/amap/api/maps/model/TileProjectionCreator;->newArray(I)[Lcom/amap/api/maps/model/TileProjection;
 
     move-result-object p1

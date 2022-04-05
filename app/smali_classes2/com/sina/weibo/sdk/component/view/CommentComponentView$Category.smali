@@ -1,6 +1,5 @@
 .class public final enum Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;
 .super Ljava/lang/Enum;
-.source "CommentComponentView.java"
 
 
 # annotations
@@ -38,7 +37,6 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;
 
     const/4 v1, 0x0
@@ -67,7 +65,6 @@
 
     new-array v3, v3, [Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;
 
-    .line 2
     sget-object v4, Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;->b:Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;
 
     aput-object v4, v3, v1
@@ -82,10 +79,8 @@
 .method private constructor <init>(Ljava/lang/String;ILjava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;->a:Ljava/lang/String;
 
     return-void
@@ -94,7 +89,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -109,7 +103,6 @@
 .method public static values()[Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;
     .locals 4
 
-    .line 1
     sget-object v0, Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;->d:[Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;
 
     array-length v1, v0
@@ -128,7 +121,6 @@
 .method public a()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/view/CommentComponentView$Category;->a:Ljava/lang/String;
 
     return-object v0

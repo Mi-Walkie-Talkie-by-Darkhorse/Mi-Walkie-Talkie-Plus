@@ -1,6 +1,5 @@
 .class public final Lcom/google/protobuf/Descriptors;
 .super Ljava/lang/Object;
-.source "Descriptors.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/protobuf/Descriptors;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -48,7 +46,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -57,7 +54,6 @@
 .method static synthetic access$000()Ljava/util/logging/Logger;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/Descriptors;->logger:Ljava/util/logging/Logger;
 
     return-object v0
@@ -66,7 +62,6 @@
 .method static synthetic access$1500(Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$Descriptor;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/google/protobuf/Descriptors;->computeFullName(Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$Descriptor;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -81,7 +76,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p1}, Lcom/google/protobuf/Descriptors$Descriptor;->getFullName()Ljava/lang/String;
 
     move-result-object p0
@@ -130,7 +124,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getPackage()Ljava/lang/String;
 
@@ -142,7 +135,6 @@
 
     if-lez p1, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getPackage()Ljava/lang/String;
 
     move-result-object p0

@@ -1,6 +1,5 @@
 .class Lcom/autonavi/ae/gmap/GLMapEngine$8;
 .super Ljava/lang/Object;
-.source "GLMapEngine.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/autonavi/ae/gmap/GLMapEngine;Lcom/amap/api/maps/AMap$CancelableCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$8;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iput-object p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine$8;->val$cancelableCallback:Lcom/amap/api/maps/AMap$CancelableCallback;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/GLMapEngine$8;->val$cancelableCallback:Lcom/amap/api/maps/AMap$CancelableCallback;
 
@@ -55,7 +52,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

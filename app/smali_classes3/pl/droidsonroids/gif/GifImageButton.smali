@@ -1,6 +1,5 @@
 .class public Lpl/droidsonroids/gif/GifImageButton;
 .super Landroid/widget/ImageButton;
-.source "GifImageButton.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -20,12 +18,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x0
 
-    .line 3
     invoke-static {p0, p2, p1, p1}, Lpl/droidsonroids/gif/e;->a(Landroid/widget/ImageView;Landroid/util/AttributeSet;II)Lpl/droidsonroids/gif/e$a;
 
     move-result-object p1
@@ -38,12 +34,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/ImageButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 p1, 0x0
 
-    .line 5
     invoke-static {p0, p2, p3, p1}, Lpl/droidsonroids/gif/e;->a(Landroid/widget/ImageView;Landroid/util/AttributeSet;II)Lpl/droidsonroids/gif/e$a;
 
     move-result-object p1
@@ -56,26 +50,21 @@
 .method private a(Lpl/droidsonroids/gif/e$a;)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p1, Lpl/droidsonroids/gif/e$b;->a:Z
 
     iput-boolean v0, p0, Lpl/droidsonroids/gif/GifImageButton;->a:Z
 
-    .line 2
     iget v0, p1, Lpl/droidsonroids/gif/e$a;->c:I
 
     if-lez v0, :cond_0
 
-    .line 3
     invoke-super {p0, v0}, Landroid/widget/ImageButton;->setImageResource(I)V
 
-    .line 4
     :cond_0
     iget p1, p1, Lpl/droidsonroids/gif/e$a;->d:I
 
     if-lez p1, :cond_1
 
-    .line 5
     invoke-super {p0, p1}, Landroid/widget/ImageButton;->setBackgroundResource(I)V
 
     :cond_1
@@ -87,28 +76,23 @@
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
 
-    .line 1
     instance-of v0, p1, Lpl/droidsonroids/gif/GifViewSavedState;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroid/widget/ImageButton;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     return-void
 
-    .line 3
     :cond_0
     check-cast p1, Lpl/droidsonroids/gif/GifViewSavedState;
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/View$BaseSavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Landroid/widget/ImageButton;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
-    .line 5
     invoke-virtual {p0}, Landroid/widget/ImageButton;->getDrawable()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -117,7 +101,6 @@
 
     invoke-virtual {p1, v0, v1}, Lpl/droidsonroids/gif/GifViewSavedState;->a(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 6
     invoke-virtual {p0}, Landroid/widget/ImageButton;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -132,7 +115,6 @@
 .method public onSaveInstanceState()Landroid/os/Parcelable;
     .locals 6
 
-    .line 1
     iget-boolean v0, p0, Lpl/droidsonroids/gif/GifImageButton;->a:Z
 
     const/4 v1, 0x0
@@ -148,7 +130,6 @@
     :cond_0
     move-object v0, v1
 
-    .line 2
     :goto_0
     iget-boolean v2, p0, Lpl/droidsonroids/gif/GifImageButton;->a:Z
 
@@ -158,7 +139,6 @@
 
     move-result-object v1
 
-    .line 3
     :cond_1
     new-instance v2, Lpl/droidsonroids/gif/GifViewSavedState;
 
@@ -188,14 +168,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, v0, p1}, Lpl/droidsonroids/gif/e;->a(Landroid/widget/ImageView;ZI)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroid/widget/ImageButton;->setBackgroundResource(I)V
 
     :cond_0
@@ -205,7 +183,6 @@
 .method public setFreezesAnimation(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lpl/droidsonroids/gif/GifImageButton;->a:Z
 
     return-void
@@ -216,14 +193,12 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p0, v0, p1}, Lpl/droidsonroids/gif/e;->a(Landroid/widget/ImageView;ZI)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroid/widget/ImageButton;->setImageResource(I)V
 
     :cond_0
@@ -233,14 +208,12 @@
 .method public setImageURI(Landroid/net/Uri;)V
     .locals 1
 
-    .line 1
     invoke-static {p0, p1}, Lpl/droidsonroids/gif/e;->a(Landroid/widget/ImageView;Landroid/net/Uri;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroid/widget/ImageButton;->setImageURI(Landroid/net/Uri;)V
 
     :cond_0

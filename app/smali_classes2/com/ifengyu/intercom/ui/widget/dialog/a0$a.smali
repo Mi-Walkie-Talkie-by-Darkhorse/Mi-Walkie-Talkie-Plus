@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/a0$a;
 .super Ljava/lang/Object;
-.source "UpdateApkInfoDialog.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/a0;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/a0$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/a0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/a0$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/a0;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/a0;->a(Lcom/ifengyu/intercom/ui/widget/dialog/a0;)Z
@@ -51,7 +48,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object p1
@@ -60,7 +56,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/a0$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/a0;
 
@@ -74,14 +69,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 4
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object p1
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/c0;->a(Ljava/lang/CharSequence;Z)V
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/a0$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/a0;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/a0;->d(Lcom/ifengyu/intercom/ui/widget/dialog/a0;)Lcom/ifengyu/intercom/update/dolphin/j;
@@ -106,7 +99,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     new-instance p1, Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
@@ -130,7 +122,6 @@
 
     const/4 v0, 0x0
 
-    .line 7
     invoke-virtual {p1, p2, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     const p2, 0x7f110312
@@ -141,7 +132,6 @@
 
     invoke-virtual {p1, p2, v0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->c(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
-    .line 8
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a()Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->d()V

@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/appcompat/widget/ActionBarOverlayLayout$d;
 .super Ljava/lang/Object;
-.source "ActionBarOverlayLayout.java"
 
 
 # annotations

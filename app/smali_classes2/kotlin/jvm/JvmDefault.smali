@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/jvm/JvmDefault;
 .super Ljava/lang/Object;
-.source "JvmDefault.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

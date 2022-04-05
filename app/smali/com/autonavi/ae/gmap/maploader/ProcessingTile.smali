@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/maploader/ProcessingTile;
 .super Ljava/lang/Object;
-.source "ProcessingTile.java"
 
 
 # static fields
@@ -25,7 +24,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     const/16 v1, 0x1e
@@ -40,15 +38,12 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;->mCreateTime:J
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;->setParams(Ljava/lang/String;)V
 
     return-void
@@ -57,7 +52,6 @@
 .method public static obtain(Ljava/lang/String;)Lcom/autonavi/ae/gmap/maploader/ProcessingTile;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;->mPool:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->acquire()Ljava/lang/Object;
@@ -68,12 +62,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-direct {v0, p0}, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;->setParams(Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;
 
@@ -86,10 +78,8 @@
 .method private setParams(Ljava/lang/String;)V
     .locals 4
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;->mKeyName:Ljava/lang/String;
 
-    .line 2
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -110,15 +100,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;->mKeyName:Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;->mCreateTime:J
 
-    .line 3
     sget-object v0, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;->mPool:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0, p0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->release(Ljava/lang/Object;)Z

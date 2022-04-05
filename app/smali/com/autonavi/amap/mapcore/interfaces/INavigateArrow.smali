@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/INavigateArrow;
 .super Ljava/lang/Object;
-.source "INavigateArrow.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/interfaces/IOverlay;

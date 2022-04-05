@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/adapter/g;
 .super Landroid/widget/BaseAdapter;
-.source "GaoDeOfflineDownloadedAdapter.java"
 
 
 # annotations
@@ -33,23 +32,18 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/amap/api/maps/offlinemap/OfflineMapManager;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/g;->c:Ljava/util/List;
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/g;->b:Landroid/content/Context;
 
-    .line 4
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/g;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
-    .line 5
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/adapter/g;->a()V
 
     return-void
@@ -60,12 +54,10 @@
 .method public a()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/g;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/g;->c:Ljava/util/List;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/g;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
@@ -76,7 +68,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/g;->c:Ljava/util/List;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/g;->a:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
@@ -87,7 +78,6 @@
 
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     return-void
@@ -96,7 +86,6 @@
 .method public getCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/g;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -109,7 +98,6 @@
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/g;->c:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -132,7 +120,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     invoke-virtual {p2}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object p3
@@ -141,13 +128,11 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance p3, Lcom/ifengyu/intercom/ui/adapter/g$a;
 
     invoke-direct {p3, p0}, Lcom/ifengyu/intercom/ui/adapter/g$a;-><init>(Lcom/ifengyu/intercom/ui/adapter/g;)V
 
-    .line 3
     new-instance p2, Lcom/ifengyu/intercom/ui/adapter/h;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/g;->b:Landroid/content/Context;
@@ -158,20 +143,16 @@
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/g;->d:Lcom/ifengyu/intercom/ui/adapter/h;
 
-    .line 4
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/adapter/h;->a()Landroid/view/View;
 
     move-result-object p2
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/g;->d:Lcom/ifengyu/intercom/ui/adapter/h;
 
     iput-object v0, p3, Lcom/ifengyu/intercom/ui/adapter/g$a;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
-    .line 6
     invoke-virtual {p2, p3}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 
-    .line 7
     :goto_0
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/adapter/g;->getItem(I)Ljava/lang/Object;
 
@@ -179,7 +160,6 @@
 
     check-cast p1, Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 8
     iget-object p3, p3, Lcom/ifengyu/intercom/ui/adapter/g$a;->a:Lcom/ifengyu/intercom/ui/adapter/h;
 
     invoke-virtual {p3, p1}, Lcom/ifengyu/intercom/ui/adapter/h;->a(Lcom/amap/api/maps/offlinemap/OfflineMapCity;)V

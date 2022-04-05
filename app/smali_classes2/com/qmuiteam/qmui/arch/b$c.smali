@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/b$c;
 .super Lcom/qmuiteam/qmui/arch/effect/d;
-.source "QMUIFragment.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/b$c;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-direct {p0}, Lcom/qmuiteam/qmui/arch/effect/d;-><init>()V
@@ -39,7 +37,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/qmuiteam/qmui/arch/effect/b;
 
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/arch/b$c;->a(Lcom/qmuiteam/qmui/arch/effect/b;)V
@@ -54,7 +51,6 @@
         .end annotation
     .end param
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$c;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/arch/effect/b;->b()I
@@ -71,7 +67,6 @@
 
     invoke-virtual {v0, v1, v2, p1}, Lcom/qmuiteam/qmui/arch/b;->a(IILandroid/content/Intent;)V
 
-    .line 3
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/b$c;->a:Lcom/qmuiteam/qmui/arch/b;
 
     const/4 v0, 0x0
@@ -96,7 +91,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -121,7 +115,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/qmuiteam/qmui/arch/effect/b;
 
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/arch/b$c;->b(Lcom/qmuiteam/qmui/arch/effect/b;)Z
@@ -138,7 +131,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/arch/effect/b;->b()I
 
     move-result v0

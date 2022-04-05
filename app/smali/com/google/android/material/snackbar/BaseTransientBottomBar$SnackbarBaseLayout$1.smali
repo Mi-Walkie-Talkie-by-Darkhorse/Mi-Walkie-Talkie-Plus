@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/snackbar/BaseTransientBottomBar$SnackbarBaseLayout$1;
 .super Ljava/lang/Object;
-.source "BaseTransientBottomBar.java"
 
 # interfaces
 .implements Landroid/view/View$OnTouchListener;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

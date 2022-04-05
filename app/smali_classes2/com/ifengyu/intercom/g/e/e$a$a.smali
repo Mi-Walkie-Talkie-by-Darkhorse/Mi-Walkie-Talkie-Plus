@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/g/e/e$a$a;
 .super Ljava/lang/Object;
-.source "PutFormRequest.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/g/e/e$a;JJ)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/g/e/e$a$a;->c:Lcom/ifengyu/intercom/g/e/e$a;
 
     iput-wide p2, p0, Lcom/ifengyu/intercom/g/e/e$a$a;->a:J
@@ -46,7 +44,6 @@
 .method public run()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/g/e/e$a$a;->c:Lcom/ifengyu/intercom/g/e/e$a;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/g/e/e$a;->a:Lcom/ifengyu/intercom/g/d/b;

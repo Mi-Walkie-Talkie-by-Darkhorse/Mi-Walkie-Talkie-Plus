@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/internal/util/AppendOnlyLinkedArrayList$NonThrowingPredicate;
 .super Ljava/lang/Object;
-.source "AppendOnlyLinkedArrayList.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Predicate;

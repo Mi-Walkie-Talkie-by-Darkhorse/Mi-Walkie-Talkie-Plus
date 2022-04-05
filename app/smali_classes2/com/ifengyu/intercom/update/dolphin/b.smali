@@ -1,6 +1,5 @@
 .class abstract Lcom/ifengyu/intercom/update/dolphin/b;
 .super Ljava/lang/Object;
-.source "AbsUpdateTransport.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/update/dolphin/g;
@@ -75,26 +74,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->g:Landroid/util/SparseArray;
 
-    .line 3
     iput-object p3, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
-    .line 4
     iput-object p2, p0, Lcom/ifengyu/intercom/update/dolphin/b;->b:Landroid/app/AlarmManager;
 
-    .line 5
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->a:Landroid/content/Context;
 
-    .line 6
     iput-object p4, p0, Lcom/ifengyu/intercom/update/dolphin/b;->c:Ljava/lang/String;
 
     return-void
@@ -103,12 +96,10 @@
 .method private a(J)V
     .locals 4
 
-    .line 7
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/dolphin/b;->k()Landroid/app/PendingIntent;
 
     move-result-object v0
 
-    .line 8
     iget-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->b:Landroid/app/AlarmManager;
 
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -127,7 +118,6 @@
 .method private j()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->b:Landroid/app/AlarmManager;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/dolphin/b;->k()Landroid/app/PendingIntent;
@@ -142,7 +132,6 @@
 .method private k()Landroid/app/PendingIntent;
     .locals 4
 
-    .line 1
     new-instance v0, Landroid/content/Intent;
 
     const-string v1, "com.ifengyu.intercom.ACTION_UPDATEMCU_ACK_TIMER"
@@ -159,7 +148,6 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->a:Landroid/content/Context;
 
     const/4 v2, 0x0
@@ -178,7 +166,6 @@
 .method public a(I)I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/dolphin/e;->d()I
@@ -187,14 +174,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget v1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->d:I
 
     if-gt v1, v0, :cond_0
 
     mul-int/lit8 v1, v1, 0x5e
 
-    .line 3
     div-int/2addr v1, v0
 
     add-int/lit8 p1, v1, 0x5
@@ -206,15 +191,12 @@
 .method public a(Ljava/lang/String;ILcom/ifengyu/intercom/protos/MitalkProtos$FILETYPE;)V
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
     invoke-interface {v0, p1}, Lcom/ifengyu/intercom/update/dolphin/e;->a(Ljava/lang/String;)V
 
-    .line 5
     iput p2, p0, Lcom/ifengyu/intercom/update/dolphin/b;->j:I
 
-    .line 6
     iput-object p3, p0, Lcom/ifengyu/intercom/update/dolphin/b;->e:Lcom/ifengyu/intercom/protos/MitalkProtos$FILETYPE;
 
     return-void
@@ -223,7 +205,6 @@
 .method public b(I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->c:Ljava/lang/String;
 
     const-string v1, "resetSendingSeq"
@@ -232,19 +213,16 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     iget v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->i:I
 
     if-lez v0, :cond_0
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->i:I
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iput p1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->i:I
 
@@ -255,7 +233,6 @@
 .method public c(I)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->c:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -276,7 +253,6 @@
 
     if-ltz p1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/dolphin/e;->d()I
@@ -285,10 +261,8 @@
 
     if-gt p1, v0, :cond_0
 
-    .line 3
     iput p1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->d:I
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->g:Landroid/util/SparseArray;
 
     add-int/lit8 p1, p1, -0x1
@@ -302,12 +276,10 @@
 .method d(I)V
     .locals 2
 
-    .line 2
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/dolphin/b;->j()V
 
     int-to-long v0, p1
 
-    .line 3
     invoke-direct {p0, v0, v1}, Lcom/ifengyu/intercom/update/dolphin/b;->a(J)V
 
     return-void
@@ -316,7 +288,6 @@
 .method public d()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->g:Landroid/util/SparseArray;
 
     iget v1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->i:I
@@ -341,7 +312,6 @@
 .method public f()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->g:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
@@ -354,7 +324,6 @@
 .method public g()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->d:I
 
     iget-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
@@ -379,7 +348,6 @@
 .method public h()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->d:I
 
     add-int/lit8 v0, v0, 0x1
@@ -390,7 +358,6 @@
 .method public hasNext()Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
     invoke-interface {v0}, Lcom/ifengyu/intercom/update/dolphin/e;->c()I
@@ -421,7 +388,6 @@
 .method i()V
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->i:I
 
     if-ltz v0, :cond_0
@@ -440,7 +406,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->g:Landroid/util/SparseArray;
 
     iget v1, p0, Lcom/ifengyu/intercom/update/dolphin/b;->i:I
@@ -456,14 +421,12 @@
 .method public release()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->f:Lcom/ifengyu/intercom/update/dolphin/e;
 
     const/4 v1, 0x0
 
     invoke-interface {v0, v1}, Lcom/ifengyu/intercom/update/dolphin/e;->a(Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/b;->g:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clear()V

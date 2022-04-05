@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/bv;
 .super Ljava/lang/Object;
-.source "IDownloadListener.java"
 
 
 # annotations

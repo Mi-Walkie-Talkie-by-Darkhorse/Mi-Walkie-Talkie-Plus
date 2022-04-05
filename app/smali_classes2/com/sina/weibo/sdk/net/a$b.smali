@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/net/a$b;
 .super Landroid/os/AsyncTask;
-.source "AsyncWeiboRunner.java"
 
 
 # annotations
@@ -41,22 +40,16 @@
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Lcom/sina/weibo/sdk/net/f;Ljava/lang/String;Lcom/sina/weibo/sdk/net/d;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/sina/weibo/sdk/net/a$b;->a:Landroid/content/Context;
 
-    .line 3
     iput-object p2, p0, Lcom/sina/weibo/sdk/net/a$b;->b:Ljava/lang/String;
 
-    .line 4
     iput-object p3, p0, Lcom/sina/weibo/sdk/net/a$b;->c:Lcom/sina/weibo/sdk/net/f;
 
-    .line 5
     iput-object p4, p0, Lcom/sina/weibo/sdk/net/a$b;->d:Ljava/lang/String;
 
-    .line 6
     iput-object p5, p0, Lcom/sina/weibo/sdk/net/a$b;->e:Lcom/sina/weibo/sdk/net/d;
 
     return-void
@@ -77,7 +70,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object p1, p0, Lcom/sina/weibo/sdk/net/a$b;->a:Landroid/content/Context;
 
@@ -91,7 +83,6 @@
 
     move-result-object p1
 
-    .line 2
     new-instance v0, Lcom/sina/weibo/sdk/net/a$a;
 
     invoke-direct {v0, p1}, Lcom/sina/weibo/sdk/net/a$a;-><init>(Ljava/lang/Object;)V
@@ -103,7 +94,6 @@
     :catch_0
     move-exception p1
 
-    .line 3
     new-instance v0, Lcom/sina/weibo/sdk/net/a$a;
 
     invoke-direct {v0, p1}, Lcom/sina/weibo/sdk/net/a$a;-><init>(Lcom/sina/weibo/sdk/exception/WeiboException;)V
@@ -122,21 +112,18 @@
         }
     .end annotation
 
-    .line 4
     invoke-virtual {p1}, Lcom/sina/weibo/sdk/net/a$a;->a()Lcom/sina/weibo/sdk/exception/WeiboException;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 5
     iget-object p1, p0, Lcom/sina/weibo/sdk/net/a$b;->e:Lcom/sina/weibo/sdk/net/d;
 
     invoke-interface {p1, v0}, Lcom/sina/weibo/sdk/net/d;->a(Lcom/sina/weibo/sdk/exception/WeiboException;)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/sina/weibo/sdk/net/a$b;->e:Lcom/sina/weibo/sdk/net/d;
 
@@ -155,7 +142,6 @@
 .method protected bridge varargs synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, [Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Lcom/sina/weibo/sdk/net/a$b;->a([Ljava/lang/Void;)Lcom/sina/weibo/sdk/net/a$a;
@@ -168,7 +154,6 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/sina/weibo/sdk/net/a$a;
 
     invoke-virtual {p0, p1}, Lcom/sina/weibo/sdk/net/a$b;->a(Lcom/sina/weibo/sdk/net/a$a;)V

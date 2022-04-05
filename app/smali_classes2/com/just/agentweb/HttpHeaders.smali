@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/HttpHeaders;
 .super Ljava/lang/Object;
-.source "HttpHeaders.java"
 
 
 # instance fields
@@ -22,10 +21,8 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, La/b/a;
 
     invoke-direct {v0}, La/b/a;-><init>()V
@@ -38,7 +35,6 @@
 .method public static create()Lcom/just/agentweb/HttpHeaders;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/just/agentweb/HttpHeaders;
 
     invoke-direct {v0}, Lcom/just/agentweb/HttpHeaders;-><init>()V
@@ -49,7 +45,6 @@
 .method private subBaseUrl(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -58,13 +53,11 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object p1
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -101,18 +94,15 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-direct {p0, p1}, Lcom/just/agentweb/HttpHeaders;->subBaseUrl(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0}, Lcom/just/agentweb/HttpHeaders;->getHeaders()Ljava/util/Map;
 
     move-result-object v0
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/just/agentweb/HttpHeaders;->subBaseUrl(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -125,16 +115,13 @@
 
     if-nez v1, :cond_1
 
-    .line 4
     new-instance v1, La/b/a;
 
     invoke-direct {v1}, La/b/a;-><init>()V
 
-    .line 5
     :cond_1
     invoke-interface {v1, p2, p3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     invoke-interface {v0, p1, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-void
@@ -157,25 +144,21 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-direct {p0, p1}, Lcom/just/agentweb/HttpHeaders;->subBaseUrl(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0}, Lcom/just/agentweb/HttpHeaders;->getHeaders()Ljava/util/Map;
 
     move-result-object v0
 
     if-nez p2, :cond_1
 
-    .line 3
     new-instance p2, La/b/a;
 
     invoke-direct {p2}, La/b/a;-><init>()V
 
-    .line 4
     :cond_1
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -196,7 +179,6 @@
         }
     .end annotation
 
-    .line 6
     iget-object v0, p0, Lcom/just/agentweb/HttpHeaders;->mHeaders:Ljava/util/Map;
 
     return-object v0
@@ -216,12 +198,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/just/agentweb/HttpHeaders;->subBaseUrl(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     iget-object v0, p0, Lcom/just/agentweb/HttpHeaders;->mHeaders:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -230,19 +210,16 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, La/b/a;
 
     invoke-direct {v0}, La/b/a;-><init>()V
 
-    .line 4
     iget-object v1, p0, Lcom/just/agentweb/HttpHeaders;->mHeaders:Ljava/util/Map;
 
     invoke-interface {v1, p1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     return-object v0
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/HttpHeaders;->mHeaders:Ljava/util/Map;
 
@@ -258,19 +235,16 @@
 .method public isEmptyHeaders(Ljava/lang/String;)Z
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/just/agentweb/HttpHeaders;->subBaseUrl(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/just/agentweb/HttpHeaders;->getHeaders(Ljava/lang/String;)Ljava/util/Map;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
 
     move-result p1
@@ -299,18 +273,15 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-direct {p0, p1}, Lcom/just/agentweb/HttpHeaders;->subBaseUrl(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-virtual {p0}, Lcom/just/agentweb/HttpHeaders;->getHeaders()Ljava/util/Map;
 
     move-result-object v0
 
-    .line 3
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -319,7 +290,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 4
     invoke-interface {p1, p2}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_1
@@ -329,7 +299,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

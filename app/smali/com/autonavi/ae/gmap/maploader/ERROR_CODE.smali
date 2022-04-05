@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/maploader/ERROR_CODE;
 .super Ljava/lang/Object;
-.source "ERROR_CODE.java"
 
 
 # static fields
@@ -25,7 +24,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

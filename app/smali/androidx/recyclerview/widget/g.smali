@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/g;
 .super Ljava/lang/Object;
-.source "LayoutState.java"
 
 
 # instance fields
@@ -27,20 +26,16 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Landroidx/recyclerview/widget/g;->a:Z
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Landroidx/recyclerview/widget/g;->f:I
 
-    .line 4
     iput v0, p0, Landroidx/recyclerview/widget/g;->g:I
 
     return-void
@@ -51,14 +46,12 @@
 .method a(Landroidx/recyclerview/widget/RecyclerView$r;)Landroid/view/View;
     .locals 2
 
-    .line 2
     iget v0, p0, Landroidx/recyclerview/widget/g;->c:I
 
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView$r;->d(I)Landroid/view/View;
 
     move-result-object p1
 
-    .line 3
     iget v0, p0, Landroidx/recyclerview/widget/g;->c:I
 
     iget v1, p0, Landroidx/recyclerview/widget/g;->d:I
@@ -73,7 +66,6 @@
 .method a(Landroidx/recyclerview/widget/RecyclerView$v;)Z
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/recyclerview/widget/g;->c:I
 
     if-ltz v0, :cond_0
@@ -98,7 +90,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

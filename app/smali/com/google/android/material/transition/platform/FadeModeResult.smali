@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/transition/platform/FadeModeResult;
 .super Ljava/lang/Object;
-.source "FadeModeResult.java"
 
 
 # annotations
@@ -21,16 +20,12 @@
 .method private constructor <init>(IIZ)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/google/android/material/transition/platform/FadeModeResult;->startAlpha:I
 
-    .line 3
     iput p2, p0, Lcom/google/android/material/transition/platform/FadeModeResult;->endAlpha:I
 
-    .line 4
     iput-boolean p3, p0, Lcom/google/android/material/transition/platform/FadeModeResult;->endOnTop:Z
 
     return-void
@@ -39,7 +34,6 @@
 .method static endOnTop(II)Lcom/google/android/material/transition/platform/FadeModeResult;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/android/material/transition/platform/FadeModeResult;
 
     const/4 v1, 0x1
@@ -52,7 +46,6 @@
 .method static startOnTop(II)Lcom/google/android/material/transition/platform/FadeModeResult;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/android/material/transition/platform/FadeModeResult;
 
     const/4 v1, 0x0

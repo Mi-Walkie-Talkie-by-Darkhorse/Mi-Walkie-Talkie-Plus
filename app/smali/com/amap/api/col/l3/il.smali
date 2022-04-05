@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/il;
 .super Ljava/lang/Object;
-.source "StatisticsEntity.java"
 
 
 # instance fields
@@ -24,10 +23,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -42,25 +39,20 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/amap/api/col/l3/il;->a:Landroid/content/Context;
 
-    .line 4
     iput-object p2, p0, Lcom/amap/api/col/l3/il;->c:Ljava/lang/String;
 
-    .line 5
     iput-object p3, p0, Lcom/amap/api/col/l3/il;->d:Ljava/lang/String;
 
-    .line 6
     iput-object p4, p0, Lcom/amap/api/col/l3/il;->b:Ljava/lang/String;
 
     return-void
 
-    .line 7
     :cond_0
     new-instance p1, Lcom/amap/api/col/l3/fv;
 
@@ -81,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -96,12 +87,10 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/il;->e:Ljava/lang/String;
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p1, Lcom/amap/api/col/l3/fv;
 
@@ -121,7 +110,6 @@
 
     const/4 v2, 0x0
 
-    .line 4
     :try_start_0
     new-instance v3, Ljava/io/ByteArrayOutputStream;
 
@@ -129,23 +117,19 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
-    .line 5
     :try_start_1
     iget-object v2, p0, Lcom/amap/api/col/l3/il;->c:Ljava/lang/String;
 
     invoke-static {v3, v2}, Lcom/amap/api/col/l3/gi;->a(Ljava/io/ByteArrayOutputStream;Ljava/lang/String;)V
 
-    .line 6
     iget-object v2, p0, Lcom/amap/api/col/l3/il;->d:Ljava/lang/String;
 
     invoke-static {v3, v2}, Lcom/amap/api/col/l3/gi;->a(Ljava/io/ByteArrayOutputStream;Ljava/lang/String;)V
 
-    .line 7
     iget-object v2, p0, Lcom/amap/api/col/l3/il;->b:Ljava/lang/String;
 
     invoke-static {v3, v2}, Lcom/amap/api/col/l3/gi;->a(Ljava/io/ByteArrayOutputStream;Ljava/lang/String;)V
 
-    .line 8
     iget-object v2, p0, Lcom/amap/api/col/l3/il;->a:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/amap/api/col/l3/gb;->r(Landroid/content/Context;)I
@@ -160,7 +144,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 9
     :try_start_2
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
@@ -221,10 +204,8 @@
 
     aput-byte v2, v4, v5
 
-    .line 10
     invoke-virtual {v3, v4}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 11
     iget-object v2, p0, Lcom/amap/api/col/l3/il;->e:Ljava/lang/String;
 
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -280,7 +261,6 @@
     :goto_1
     invoke-virtual {v3, v2}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 12
     iget-object v0, p0, Lcom/amap/api/col/l3/il;->e:Ljava/lang/String;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/gi;->a(Ljava/lang/String;)[B
@@ -289,14 +269,12 @@
 
     invoke-virtual {v3, v0}, Ljava/io/ByteArrayOutputStream;->write([B)V
 
-    .line 13
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v1
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 14
     :try_start_4
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_4
@@ -307,7 +285,6 @@
     :catchall_1
     move-exception v0
 
-    .line 15
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     goto :goto_3
@@ -328,14 +305,12 @@
 
     const-string v4, "tds"
 
-    .line 16
     invoke-static {v0, v3, v4}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_4
 
     if-eqz v2, :cond_2
 
-    .line 17
     :try_start_6
     invoke-virtual {v2}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_6
@@ -360,10 +335,8 @@
     :catchall_5
     move-exception v1
 
-    .line 18
     invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 19
     :cond_3
     :goto_4
     throw v0

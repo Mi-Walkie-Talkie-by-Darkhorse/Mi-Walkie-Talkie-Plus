@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/completable/CompletableDoOnEvent;
 .super Lio/reactivex/Completable;
-.source "CompletableDoOnEvent.java"
 
 
 # annotations
@@ -40,13 +39,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableDoOnEvent;->source:Lio/reactivex/CompletableSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/completable/CompletableDoOnEvent;->onEvent:Lio/reactivex/functions/Consumer;
 
     return-void
@@ -57,7 +53,6 @@
 .method protected subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableDoOnEvent;->source:Lio/reactivex/CompletableSource;
 
     new-instance v1, Lio/reactivex/internal/operators/completable/CompletableDoOnEvent$DoOnEvent;

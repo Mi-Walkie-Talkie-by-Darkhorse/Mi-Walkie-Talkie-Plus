@@ -1,6 +1,5 @@
 .class Lcom/liulishuo/okdownload/UnifiedListenerManager$1;
 .super Ljava/lang/Object;
-.source "UnifiedListenerManager.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/DownloadListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/liulishuo/okdownload/UnifiedListenerManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -58,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     iget-object v0, v0, Lcom/liulishuo/okdownload/UnifiedListenerManager;->realListenerMap:Landroid/util/SparseArray;
@@ -71,7 +68,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -86,7 +82,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-interface {v3, p1, p2, p3, p4}, Lcom/liulishuo/okdownload/DownloadListener;->connectEnd(Lcom/liulishuo/okdownload/DownloadTask;IILjava/util/Map;)V
 
@@ -122,7 +117,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     iget-object v0, v0, Lcom/liulishuo/okdownload/UnifiedListenerManager;->realListenerMap:Landroid/util/SparseArray;
@@ -135,7 +129,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -150,7 +143,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-interface {v3, p1, p2, p3}, Lcom/liulishuo/okdownload/DownloadListener;->connectStart(Lcom/liulishuo/okdownload/DownloadTask;ILjava/util/Map;)V
 
@@ -186,7 +178,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     iget-object v0, v0, Lcom/liulishuo/okdownload/UnifiedListenerManager;->realListenerMap:Landroid/util/SparseArray;
@@ -199,7 +190,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -214,7 +204,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-interface {v3, p1, p2, p3}, Lcom/liulishuo/okdownload/DownloadListener;->connectTrialEnd(Lcom/liulishuo/okdownload/DownloadTask;ILjava/util/Map;)V
 
@@ -249,7 +238,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     iget-object v0, v0, Lcom/liulishuo/okdownload/UnifiedListenerManager;->realListenerMap:Landroid/util/SparseArray;
@@ -262,7 +250,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -277,7 +264,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-interface {v3, p1, p2}, Lcom/liulishuo/okdownload/DownloadListener;->connectTrialStart(Lcom/liulishuo/okdownload/DownloadTask;Ljava/util/Map;)V
 
@@ -305,7 +291,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     iget-object v0, v0, Lcom/liulishuo/okdownload/UnifiedListenerManager;->realListenerMap:Landroid/util/SparseArray;
@@ -318,7 +303,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -333,7 +317,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-interface {v3, p1, p2, p3}, Lcom/liulishuo/okdownload/DownloadListener;->downloadFromBeginning(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;)V
 
@@ -357,7 +340,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     iget-object v0, v0, Lcom/liulishuo/okdownload/UnifiedListenerManager;->realListenerMap:Landroid/util/SparseArray;
@@ -370,7 +352,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -385,7 +366,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-interface {v3, p1, p2}, Lcom/liulishuo/okdownload/DownloadListener;->downloadFromBreakpoint(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;)V
 
@@ -405,7 +385,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     iget-object v0, v0, Lcom/liulishuo/okdownload/UnifiedListenerManager;->realListenerMap:Landroid/util/SparseArray;
@@ -418,7 +397,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -433,7 +411,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-interface {v3, p1, p2, p3, p4}, Lcom/liulishuo/okdownload/DownloadListener;->fetchEnd(Lcom/liulishuo/okdownload/DownloadTask;IJ)V
 
@@ -453,7 +430,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     iget-object v0, v0, Lcom/liulishuo/okdownload/UnifiedListenerManager;->realListenerMap:Landroid/util/SparseArray;
@@ -466,7 +442,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -481,7 +456,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-interface {v3, p1, p2, p3, p4}, Lcom/liulishuo/okdownload/DownloadListener;->fetchProgress(Lcom/liulishuo/okdownload/DownloadTask;IJ)V
 
@@ -501,7 +475,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     iget-object v0, v0, Lcom/liulishuo/okdownload/UnifiedListenerManager;->realListenerMap:Landroid/util/SparseArray;
@@ -514,7 +487,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -529,7 +501,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-interface {v3, p1, p2, p3, p4}, Lcom/liulishuo/okdownload/DownloadListener;->fetchStart(Lcom/liulishuo/okdownload/DownloadTask;IJ)V
 
@@ -557,7 +528,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     iget-object v0, v0, Lcom/liulishuo/okdownload/UnifiedListenerManager;->realListenerMap:Landroid/util/SparseArray;
@@ -570,7 +540,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -585,7 +554,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-interface {v3, p1, p2, p3}, Lcom/liulishuo/okdownload/DownloadListener;->taskEnd(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/core/cause/EndCause;Ljava/lang/Exception;)V
 
@@ -594,7 +562,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_2
     iget-object p2, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
@@ -614,7 +581,6 @@
 
     if-eqz p2, :cond_3
 
-    .line 5
     iget-object p2, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getId()I
@@ -634,7 +600,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/UnifiedListenerManager$1;->this$0:Lcom/liulishuo/okdownload/UnifiedListenerManager;
 
     iget-object v0, v0, Lcom/liulishuo/okdownload/UnifiedListenerManager;->realListenerMap:Landroid/util/SparseArray;
@@ -647,7 +612,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -662,7 +626,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     invoke-interface {v3, p1}, Lcom/liulishuo/okdownload/DownloadListener;->taskStart(Lcom/liulishuo/okdownload/DownloadTask;)V
 

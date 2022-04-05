@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/h$a;
 .super Ljava/lang/Object;
-.source "H5LocationClient.java"
 
 # interfaces
 .implements Lcom/amap/api/location/AMapLocationListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/h;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/h$a;->a:Lcom/amap/api/col/l3/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final onLocationChanged(Lcom/amap/api/location/AMapLocation;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/h$a;->a:Lcom/amap/api/col/l3/h;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/h;->c(Lcom/amap/api/col/l3/h;)Z
@@ -47,7 +44,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/h$a;->a:Lcom/amap/api/col/l3/h;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/h;->a(Lcom/amap/api/location/AMapLocation;)Ljava/lang/String;

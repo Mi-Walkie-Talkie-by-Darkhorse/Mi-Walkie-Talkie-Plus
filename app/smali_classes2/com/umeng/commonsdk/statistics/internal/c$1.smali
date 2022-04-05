@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/statistics/internal/c$1;
 .super Ljava/lang/Object;
-.source "NetworkHelper.java"
 
 # interfaces
 .implements Lcom/umeng/commonsdk/statistics/internal/UMImprintChangeCallback;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/umeng/commonsdk/statistics/internal/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/internal/c$1;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,19 +36,16 @@
 .method public onImprintValueChanged(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/umeng/commonsdk/config/FieldManager;->b()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/umeng/commonsdk/config/FieldManager;->a()Lcom/umeng/commonsdk/config/FieldManager;
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/internal/c$1;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
@@ -59,7 +54,6 @@
 
     invoke-virtual {v0, v1, p2}, Lcom/umeng/commonsdk/config/FieldManager;->a(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 4
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -84,7 +78,6 @@
 
     invoke-static {p2, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/internal/c$1;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
@@ -95,7 +88,6 @@
 
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/internal/c$1;->a:Lcom/umeng/commonsdk/statistics/internal/c;
 
-    .line 6
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/internal/c;->a(Lcom/umeng/commonsdk/statistics/internal/c;)Landroid/content/Context;
 
     move-result-object v0
@@ -110,7 +102,6 @@
 
     const/4 v1, 0x0
 
-    .line 7
     invoke-static {p1, p2, v0, v1}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
     :cond_0

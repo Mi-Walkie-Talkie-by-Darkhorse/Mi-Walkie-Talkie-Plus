@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/engine/q;
 .super Ljava/lang/Object;
-.source "LoadPath.java"
 
 
 # annotations
@@ -75,23 +74,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/q;->a:Ljava/lang/Class;
 
-    .line 3
     iput-object p5, p0, Lcom/bumptech/glide/load/engine/q;->b:Landroidx/core/d/e;
 
-    .line 4
     invoke-static {p4}, Lcom/bumptech/glide/util/i;->a(Ljava/util/Collection;)Ljava/util/Collection;
 
     check-cast p4, Ljava/util/List;
 
     iput-object p4, p0, Lcom/bumptech/glide/load/engine/q;->c:Ljava/util/List;
 
-    .line 5
     new-instance p4, Ljava/lang/StringBuilder;
 
     invoke-direct {p4}, Ljava/lang/StringBuilder;-><init>()V
@@ -110,7 +104,6 @@
 
     invoke-virtual {p4, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6
     invoke-virtual {p2}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
     move-result-object p2
@@ -171,7 +164,6 @@
 
     move-object/from16 v2, p6
 
-    .line 4
     iget-object v0, v1, Lcom/bumptech/glide/load/engine/q;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -189,7 +181,6 @@
     :goto_0
     if-ge v5, v3, :cond_1
 
-    .line 5
     iget-object v0, v1, Lcom/bumptech/glide/load/engine/q;->c:Ljava/util/List;
 
     invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -210,7 +201,6 @@
 
     move-object/from16 v11, p5
 
-    .line 6
     :try_start_0
     invoke-virtual/range {v6 .. v11}, Lcom/bumptech/glide/load/engine/g;->a(Lcom/bumptech/glide/load/i/e;IILcom/bumptech/glide/load/e;Lcom/bumptech/glide/load/engine/g$a;)Lcom/bumptech/glide/load/engine/s;
 
@@ -227,7 +217,6 @@
 
     move-object v6, v0
 
-    .line 7
     invoke-interface {v2, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :goto_1
@@ -246,7 +235,6 @@
 
     return-object v4
 
-    .line 8
     :cond_2
     new-instance v0, Lcom/bumptech/glide/load/engine/GlideException;
 
@@ -289,7 +277,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/q;->b:Landroidx/core/d/e;
 
     invoke-interface {v0}, Landroidx/core/d/e;->acquire()Ljava/lang/Object;
@@ -314,7 +301,6 @@
 
     move-object v7, v0
 
-    .line 2
     :try_start_0
     invoke-direct/range {v1 .. v7}, Lcom/bumptech/glide/load/engine/q;->a(Lcom/bumptech/glide/load/i/e;Lcom/bumptech/glide/load/e;IILcom/bumptech/glide/load/engine/g$a;Ljava/util/List;)Lcom/bumptech/glide/load/engine/s;
 
@@ -322,7 +308,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     iget-object p2, p0, Lcom/bumptech/glide/load/engine/q;->b:Landroidx/core/d/e;
 
     invoke-interface {p2, v0}, Landroidx/core/d/e;->release(Ljava/lang/Object;)Z
@@ -342,7 +327,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

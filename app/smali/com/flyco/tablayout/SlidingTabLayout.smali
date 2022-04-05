@@ -1,6 +1,5 @@
 .class public Lcom/flyco/tablayout/SlidingTabLayout;
 .super Landroid/widget/HorizontalScrollView;
-.source "SlidingTabLayout.java"
 
 # interfaces
 .implements Landroidx/viewpager/widget/ViewPager$h;
@@ -122,7 +121,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0, v1}, Lcom/flyco/tablayout/SlidingTabLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -133,7 +131,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, p1, p2, v0}, Lcom/flyco/tablayout/SlidingTabLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -142,31 +139,26 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/HorizontalScrollView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 4
     new-instance p3, Landroid/graphics/Rect;
 
     invoke-direct {p3}, Landroid/graphics/Rect;-><init>()V
 
     iput-object p3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->h:Landroid/graphics/Rect;
 
-    .line 5
     new-instance p3, Landroid/graphics/Rect;
 
     invoke-direct {p3}, Landroid/graphics/Rect;-><init>()V
 
     iput-object p3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->i:Landroid/graphics/Rect;
 
-    .line 6
     new-instance p3, Landroid/graphics/drawable/GradientDrawable;
 
     invoke-direct {p3}, Landroid/graphics/drawable/GradientDrawable;-><init>()V
 
     iput-object p3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->j:Landroid/graphics/drawable/GradientDrawable;
 
-    .line 7
     new-instance p3, Landroid/graphics/Paint;
 
     const/4 v0, 0x1
@@ -175,21 +167,18 @@
 
     iput-object p3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->k:Landroid/graphics/Paint;
 
-    .line 8
     new-instance p3, Landroid/graphics/Paint;
 
     invoke-direct {p3, v0}, Landroid/graphics/Paint;-><init>(I)V
 
     iput-object p3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->l:Landroid/graphics/Paint;
 
-    .line 9
     new-instance p3, Landroid/graphics/Paint;
 
     invoke-direct {p3, v0}, Landroid/graphics/Paint;-><init>(I)V
 
     iput-object p3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->m:Landroid/graphics/Paint;
 
-    .line 10
     new-instance p3, Landroid/graphics/Path;
 
     invoke-direct {p3}, Landroid/graphics/Path;-><init>()V
@@ -198,61 +187,48 @@
 
     const/4 p3, 0x0
 
-    .line 11
     iput p3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
 
-    .line 12
     new-instance v1, Landroid/graphics/Paint;
 
     invoke-direct {v1, v0}, Landroid/graphics/Paint;-><init>(I)V
 
     iput-object v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->R:Landroid/graphics/Paint;
 
-    .line 13
     new-instance v1, Landroid/util/SparseArray;
 
     invoke-direct {v1}, Landroid/util/SparseArray;-><init>()V
 
-    .line 14
     invoke-virtual {p0, v0}, Landroid/widget/HorizontalScrollView;->setFillViewport(Z)V
 
-    .line 15
     invoke-virtual {p0, p3}, Landroid/widget/HorizontalScrollView;->setWillNotDraw(Z)V
 
-    .line 16
     invoke-virtual {p0, p3}, Landroid/widget/HorizontalScrollView;->setClipChildren(Z)V
 
-    .line 17
     invoke-virtual {p0, p3}, Landroid/widget/HorizontalScrollView;->setClipToPadding(Z)V
 
-    .line 18
     iput-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->a:Landroid/content/Context;
 
-    .line 19
     new-instance v1, Landroid/widget/LinearLayout;
 
     invoke-direct {v1, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
 
     iput-object v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
-    .line 20
     invoke-virtual {p0, v1}, Landroid/widget/HorizontalScrollView;->addView(Landroid/view/View;)V
 
-    .line 21
     invoke-direct {p0, p1, p2}, Lcom/flyco/tablayout/SlidingTabLayout;->a(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const-string v1, "http://schemas.android.com/apk/res/android"
 
     const-string v2, "layout_height"
 
-    .line 22
     invoke-interface {p2, v1, v2}, Landroid/util/AttributeSet;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     const-string v2, "-1"
 
-    .line 23
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -264,7 +240,6 @@
     :cond_0
     const-string v2, "-2"
 
-    .line 24
     invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -280,21 +255,18 @@
 
     aput v1, v0, p3
 
-    .line 25
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
     const/4 p2, -0x2
 
-    .line 26
     invoke-virtual {p1, p3, p2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
     move-result p2
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->O:I
 
-    .line 27
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     :goto_0
@@ -304,7 +276,6 @@
 .method static synthetic a(Lcom/flyco/tablayout/SlidingTabLayout;)Landroid/widget/LinearLayout;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
     return-object p0
@@ -317,13 +288,11 @@
 
     const/4 v1, 0x0
 
-    .line 45
     :goto_0
     iget v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->g:I
 
     if-ge v1, v2, :cond_3
 
-    .line 46
     iget-object v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
@@ -341,7 +310,6 @@
     :cond_0
     const/4 v4, 0x0
 
-    .line 47
     :goto_1
     sget v5, Lcom/flyco/tablayout/R$id;->tv_tab_title:I
 
@@ -355,7 +323,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 48
     iget v5, p0, Lcom/flyco/tablayout/SlidingTabLayout;->J:I
 
     goto :goto_2
@@ -366,12 +333,10 @@
     :goto_2
     invoke-virtual {v2, v5}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 49
     iget v5, p0, Lcom/flyco/tablayout/SlidingTabLayout;->L:I
 
     if-ne v5, v3, :cond_2
 
-    .line 50
     invoke-virtual {v2}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
 
     move-result-object v2
@@ -390,7 +355,6 @@
 .method private a(ILjava/lang/String;Landroid/view/View;)V
     .locals 3
 
-    .line 38
     sget v0, Lcom/flyco/tablayout/R$id;->tv_tab_title:I
 
     invoke-virtual {p3, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -403,10 +367,8 @@
 
     if-eqz p2, :cond_0
 
-    .line 39
     invoke-virtual {v0, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 40
     :cond_0
     new-instance p2, Lcom/flyco/tablayout/SlidingTabLayout$a;
 
@@ -414,7 +376,6 @@
 
     invoke-virtual {p3, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 41
     iget-boolean p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->q:Z
 
     const/4 v0, -0x1
@@ -438,7 +399,6 @@
 
     invoke-direct {p2, v1, v0}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 42
     :goto_0
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->r:F
 
@@ -448,7 +408,6 @@
 
     if-lez v1, :cond_2
 
-    .line 43
     new-instance p2, Landroid/widget/LinearLayout$LayoutParams;
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->r:F
@@ -457,7 +416,6 @@
 
     invoke-direct {p2, v1, v0}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
 
-    .line 44
     :cond_2
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
@@ -469,14 +427,12 @@
 .method private a(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 7
 
-    .line 2
     sget-object v0, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout:[I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 3
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_indicator_style:I
 
     const/4 v0, 0x0
@@ -487,7 +443,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
 
-    .line 4
     sget v1, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_indicator_color:I
 
     const-string v2, "#ffffff"
@@ -514,7 +469,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->s:I
 
-    .line 5
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_indicator_height:I
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
@@ -540,7 +494,6 @@
     :goto_1
     int-to-float v1, v1
 
-    .line 6
     :goto_2
     invoke-virtual {p0, v1}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
@@ -548,14 +501,12 @@
 
     int-to-float v1, v1
 
-    .line 7
     invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getDimension(IF)F
 
     move-result p2
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->t:F
 
-    .line 8
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_indicator_width:I
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
@@ -584,7 +535,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->u:F
 
-    .line 9
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_indicator_corner_radius:I
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
@@ -613,7 +563,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->v:F
 
-    .line 10
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_indicator_margin_left:I
 
     invoke-virtual {p0, v4}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
@@ -628,7 +577,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->w:F
 
-    .line 11
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_indicator_margin_top:I
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
@@ -657,7 +605,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->x:F
 
-    .line 12
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_indicator_margin_right:I
 
     invoke-virtual {p0, v4}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
@@ -672,7 +619,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->y:F
 
-    .line 13
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_indicator_margin_bottom:I
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
@@ -697,7 +643,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->z:F
 
-    .line 14
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_indicator_gravity:I
 
     const/16 v1, 0x50
@@ -708,7 +653,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->A:I
 
-    .line 15
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_indicator_width_equal_title:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -717,7 +661,6 @@
 
     iput-boolean p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->B:Z
 
-    .line 16
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_underline_color:I
 
     invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
@@ -730,7 +673,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->C:I
 
-    .line 17
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_underline_height:I
 
     invoke-virtual {p0, v4}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
@@ -745,7 +687,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->D:F
 
-    .line 18
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_underline_gravity:I
 
     invoke-virtual {p1, p2, v1}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -754,7 +695,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->E:I
 
-    .line 19
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_divider_color:I
 
     invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
@@ -767,7 +707,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->F:I
 
-    .line 20
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_divider_width:I
 
     invoke-virtual {p0, v4}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
@@ -782,7 +721,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->G:F
 
-    .line 21
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_divider_padding:I
 
     const/high16 v1, 0x41400000    # 12.0f
@@ -799,7 +737,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->H:F
 
-    .line 22
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_textsize:I
 
     const/high16 v1, 0x41600000    # 14.0f
@@ -816,7 +753,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->I:F
 
-    .line 23
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_textSelectColor:I
 
     invoke-static {v2}, Landroid/graphics/Color;->parseColor(Ljava/lang/String;)I
@@ -829,7 +765,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->J:I
 
-    .line 24
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_textUnselectColor:I
 
     const-string v1, "#AAffffff"
@@ -844,7 +779,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->K:I
 
-    .line 25
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_textBold:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getInt(II)I
@@ -853,7 +787,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->L:I
 
-    .line 26
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_textAllCaps:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -862,7 +795,6 @@
 
     iput-boolean p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->M:Z
 
-    .line 27
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_tab_space_equal:I
 
     invoke-virtual {p1, p2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -871,7 +803,6 @@
 
     iput-boolean p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->q:Z
 
-    .line 28
     sget p2, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_tab_width:I
 
     invoke-virtual {p0, v5}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
@@ -886,7 +817,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->r:F
 
-    .line 29
     sget v0, Lcom/flyco/tablayout/R$styleable;->SlidingTabLayout_tl_tab_padding:I
 
     iget-boolean v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->q:Z
@@ -923,7 +853,6 @@
 
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->p:F
 
-    .line 30
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -932,7 +861,6 @@
 .method static synthetic b(Lcom/flyco/tablayout/SlidingTabLayout;)Landroidx/viewpager/widget/ViewPager;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->b:Landroidx/viewpager/widget/ViewPager;
 
     return-object p0
@@ -941,7 +869,6 @@
 .method private b()V
     .locals 9
 
-    .line 2
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
@@ -950,21 +877,18 @@
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Landroid/view/View;->getLeft()I
 
     move-result v1
 
     int-to-float v1, v1
 
-    .line 4
     invoke-virtual {v0}, Landroid/view/View;->getRight()I
 
     move-result v2
 
     int-to-float v2, v2
 
-    .line 5
     iget v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
 
     const/high16 v4, 0x40000000    # 2.0f
@@ -975,7 +899,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 6
     sget v3, Lcom/flyco/tablayout/R$id;->tv_tab_title:I
 
     invoke-virtual {v0, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -984,14 +907,12 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    .line 7
     iget-object v5, p0, Lcom/flyco/tablayout/SlidingTabLayout;->R:Landroid/graphics/Paint;
 
     iget v6, p0, Lcom/flyco/tablayout/SlidingTabLayout;->I:F
 
     invoke-virtual {v5, v6}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 8
     iget-object v5, p0, Lcom/flyco/tablayout/SlidingTabLayout;->R:Landroid/graphics/Paint;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -1012,10 +933,8 @@
 
     div-float/2addr v5, v4
 
-    .line 9
     iput v5, p0, Lcom/flyco/tablayout/SlidingTabLayout;->Q:F
 
-    .line 10
     :cond_0
     iget v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
 
@@ -1025,7 +944,6 @@
 
     if-ge v3, v5, :cond_1
 
-    .line 11
     iget-object v5, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
     add-int/lit8 v3, v3, 0x1
@@ -1034,21 +952,18 @@
 
     move-result-object v3
 
-    .line 12
     invoke-virtual {v3}, Landroid/view/View;->getLeft()I
 
     move-result v5
 
     int-to-float v5, v5
 
-    .line 13
     invoke-virtual {v3}, Landroid/view/View;->getRight()I
 
     move-result v6
 
     int-to-float v6, v6
 
-    .line 14
     iget v7, p0, Lcom/flyco/tablayout/SlidingTabLayout;->f:F
 
     sub-float v8, v5, v1
@@ -1063,7 +978,6 @@
 
     add-float/2addr v2, v7
 
-    .line 15
     iget v7, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
 
     if-nez v7, :cond_1
@@ -1072,7 +986,6 @@
 
     if-eqz v7, :cond_1
 
-    .line 16
     sget v7, Lcom/flyco/tablayout/R$id;->tv_tab_title:I
 
     invoke-virtual {v3, v7}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1081,14 +994,12 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    .line 17
     iget-object v7, p0, Lcom/flyco/tablayout/SlidingTabLayout;->R:Landroid/graphics/Paint;
 
     iget v8, p0, Lcom/flyco/tablayout/SlidingTabLayout;->I:F
 
     invoke-virtual {v7, v8}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 18
     iget-object v7, p0, Lcom/flyco/tablayout/SlidingTabLayout;->R:Landroid/graphics/Paint;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -1109,7 +1020,6 @@
 
     div-float/2addr v6, v4
 
-    .line 19
     iget v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->Q:F
 
     iget v5, p0, Lcom/flyco/tablayout/SlidingTabLayout;->f:F
@@ -1122,7 +1032,6 @@
 
     iput v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->Q:F
 
-    .line 20
     :cond_1
     iget-object v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->h:Landroid/graphics/Rect;
 
@@ -1132,10 +1041,8 @@
 
     float-to-int v6, v2
 
-    .line 21
     iput v6, v3, Landroid/graphics/Rect;->right:I
 
-    .line 22
     iget v7, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
 
     if-nez v7, :cond_2
@@ -1144,7 +1051,6 @@
 
     if-eqz v7, :cond_2
 
-    .line 23
     iget v7, p0, Lcom/flyco/tablayout/SlidingTabLayout;->Q:F
 
     add-float/2addr v1, v7
@@ -1163,19 +1069,15 @@
 
     float-to-int v1, v2
 
-    .line 24
     iput v1, v3, Landroid/graphics/Rect;->right:I
 
-    .line 25
     :cond_2
     iget-object v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->i:Landroid/graphics/Rect;
 
     iput v5, v1, Landroid/graphics/Rect;->left:I
 
-    .line 26
     iput v6, v1, Landroid/graphics/Rect;->right:I
 
-    .line 27
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->u:F
 
     const/4 v2, 0x0
@@ -1186,7 +1088,6 @@
 
     goto :goto_0
 
-    .line 28
     :cond_3
     invoke-virtual {v0}, Landroid/view/View;->getLeft()I
 
@@ -1208,7 +1109,6 @@
 
     add-float/2addr v1, v2
 
-    .line 29
     iget v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
 
     iget v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->g:I
@@ -1217,7 +1117,6 @@
 
     if-ge v2, v3, :cond_4
 
-    .line 30
     iget-object v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
     add-int/lit8 v2, v2, 0x1
@@ -1226,7 +1125,6 @@
 
     move-result-object v2
 
-    .line 31
     iget v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->f:F
 
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
@@ -1249,7 +1147,6 @@
 
     add-float/2addr v1, v3
 
-    .line 32
     :cond_4
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->h:Landroid/graphics/Rect;
 
@@ -1259,7 +1156,6 @@
 
     int-to-float v1, v1
 
-    .line 33
     iget v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->u:F
 
     add-float/2addr v1, v2
@@ -1275,14 +1171,12 @@
 .method private c()V
     .locals 3
 
-    .line 2
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->g:I
 
     if-gtz v0, :cond_0
 
     return-void
 
-    .line 3
     :cond_0
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->f:F
 
@@ -1304,7 +1198,6 @@
 
     float-to-int v0, v0
 
-    .line 4
     iget-object v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
     iget v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
@@ -1319,14 +1212,12 @@
 
     add-int/2addr v1, v0
 
-    .line 5
     iget v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
 
     if-gtz v2, :cond_1
 
     if-lez v0, :cond_2
 
-    .line 6
     :cond_1
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->getWidth()I
 
@@ -1342,10 +1233,8 @@
 
     sub-int/2addr v1, v0
 
-    .line 7
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->b()V
 
-    .line 8
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->i:Landroid/graphics/Rect;
 
     iget v2, v0, Landroid/graphics/Rect;->right:I
@@ -1358,18 +1247,15 @@
 
     add-int/2addr v1, v2
 
-    .line 9
     :cond_2
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->N:I
 
     if-eq v1, v0, :cond_3
 
-    .line 10
     iput v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->N:I
 
     const/4 v0, 0x0
 
-    .line 11
     invoke-virtual {p0, v1, v0}, Landroid/widget/HorizontalScrollView;->scrollTo(II)V
 
     :cond_3
@@ -1379,7 +1265,6 @@
 .method static synthetic c(Lcom/flyco/tablayout/SlidingTabLayout;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->P:Z
 
     return p0
@@ -1388,7 +1273,6 @@
 .method static synthetic d(Lcom/flyco/tablayout/SlidingTabLayout;)Lcom/flyco/tablayout/a/b;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->S:Lcom/flyco/tablayout/a/b;
 
     return-object p0
@@ -1401,20 +1285,17 @@
 
     const/4 v1, 0x0
 
-    .line 2
     :goto_0
     iget v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->g:I
 
     if-ge v1, v2, :cond_4
 
-    .line 3
     iget-object v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v1}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 4
     sget v3, Lcom/flyco/tablayout/R$id;->tv_tab_title:I
 
     invoke-virtual {v2, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -1425,7 +1306,6 @@
 
     if-eqz v2, :cond_3
 
-    .line 5
     iget v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
 
     if-ne v1, v3, :cond_0
@@ -1440,12 +1320,10 @@
     :goto_1
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 6
     iget v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->I:F
 
     invoke-virtual {v2, v0, v3}, Landroid/widget/TextView;->setTextSize(IF)V
 
-    .line 7
     iget v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->p:F
 
     float-to-int v4, v3
@@ -1454,12 +1332,10 @@
 
     invoke-virtual {v2, v4, v0, v3, v0}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    .line 8
     iget-boolean v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->M:Z
 
     if-eqz v3, :cond_1
 
-    .line 9
     invoke-virtual {v2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
 
     move-result-object v3
@@ -1474,7 +1350,6 @@
 
     invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 10
     :cond_1
     iget v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->L:I
 
@@ -1482,7 +1357,6 @@
 
     if-ne v3, v4, :cond_2
 
-    .line 11
     invoke-virtual {v2}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
 
     move-result-object v2
@@ -1496,7 +1370,6 @@
     :cond_2
     if-nez v3, :cond_3
 
-    .line 12
     invoke-virtual {v2}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
 
     move-result-object v2
@@ -1518,7 +1391,6 @@
 .method protected a(F)I
     .locals 1
 
-    .line 51
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->a:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1545,12 +1417,10 @@
 .method public a()V
     .locals 4
 
-    .line 31
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->removeAllViews()V
 
-    .line 32
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->c:Ljava/util/ArrayList;
 
     if-nez v0, :cond_0
@@ -1577,13 +1447,11 @@
 
     const/4 v0, 0x0
 
-    .line 33
     :goto_1
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->g:I
 
     if-ge v0, v1, :cond_2
 
-    .line 34
     iget-object v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->a:Landroid/content/Context;
 
     sget v2, Lcom/flyco/tablayout/R$layout;->layout_tab:I
@@ -1594,7 +1462,6 @@
 
     move-result-object v1
 
-    .line 35
     iget-object v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->c:Ljava/util/ArrayList;
 
     if-nez v2, :cond_1
@@ -1618,7 +1485,6 @@
 
     check-cast v2, Ljava/lang/CharSequence;
 
-    .line 36
     :goto_2
     invoke-interface {v2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
@@ -1630,7 +1496,6 @@
 
     goto :goto_1
 
-    .line 37
     :cond_2
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->d()V
 
@@ -1640,7 +1505,6 @@
 .method protected b(F)I
     .locals 1
 
-    .line 34
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->a:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1667,7 +1531,6 @@
 .method public getCurrentTab()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
 
     return v0
@@ -1676,7 +1539,6 @@
 .method public getDividerColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->F:I
 
     return v0
@@ -1685,7 +1547,6 @@
 .method public getDividerPadding()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->H:F
 
     return v0
@@ -1694,7 +1555,6 @@
 .method public getDividerWidth()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->G:F
 
     return v0
@@ -1703,7 +1563,6 @@
 .method public getIndicatorColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->s:I
 
     return v0
@@ -1712,7 +1571,6 @@
 .method public getIndicatorCornerRadius()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->v:F
 
     return v0
@@ -1721,7 +1579,6 @@
 .method public getIndicatorHeight()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->t:F
 
     return v0
@@ -1730,7 +1587,6 @@
 .method public getIndicatorMarginBottom()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->z:F
 
     return v0
@@ -1739,7 +1595,6 @@
 .method public getIndicatorMarginLeft()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->w:F
 
     return v0
@@ -1748,7 +1603,6 @@
 .method public getIndicatorMarginRight()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->y:F
 
     return v0
@@ -1757,7 +1611,6 @@
 .method public getIndicatorMarginTop()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->x:F
 
     return v0
@@ -1766,7 +1619,6 @@
 .method public getIndicatorStyle()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
 
     return v0
@@ -1775,7 +1627,6 @@
 .method public getIndicatorWidth()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->u:F
 
     return v0
@@ -1784,7 +1635,6 @@
 .method public getTabCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->g:I
 
     return v0
@@ -1793,7 +1643,6 @@
 .method public getTabPadding()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->p:F
 
     return v0
@@ -1802,7 +1651,6 @@
 .method public getTabWidth()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->r:F
 
     return v0
@@ -1811,7 +1659,6 @@
 .method public getTextBold()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->L:I
 
     return v0
@@ -1820,7 +1667,6 @@
 .method public getTextSelectColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->J:I
 
     return v0
@@ -1829,7 +1675,6 @@
 .method public getTextUnselectColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->K:I
 
     return v0
@@ -1838,7 +1683,6 @@
 .method public getTextsize()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->I:F
 
     return v0
@@ -1847,7 +1691,6 @@
 .method public getUnderlineColor()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->C:I
 
     return v0
@@ -1856,7 +1699,6 @@
 .method public getUnderlineHeight()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->D:F
 
     return v0
@@ -1865,10 +1707,8 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 11
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/HorizontalScrollView;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->isInEditMode()Z
 
     move-result v0
@@ -1881,18 +1721,15 @@
 
     goto/16 :goto_3
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->getHeight()I
 
     move-result v6
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->getPaddingLeft()I
 
     move-result v7
 
-    .line 5
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->G:F
 
     const/4 v8, 0x1
@@ -1903,12 +1740,10 @@
 
     if-lez v1, :cond_1
 
-    .line 6
     iget-object v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->l:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 7
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->l:Landroid/graphics/Paint;
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->F:I
@@ -1919,7 +1754,6 @@
 
     const/4 v10, 0x0
 
-    .line 8
     :goto_0
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->g:I
 
@@ -1927,14 +1761,12 @@
 
     if-ge v10, v0, :cond_1
 
-    .line 9
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v10}, Landroid/widget/LinearLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 10
     invoke-virtual {v0}, Landroid/view/View;->getRight()I
 
     move-result v1
@@ -1969,7 +1801,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->D:F
 
@@ -1979,14 +1810,12 @@
 
     if-lez v0, :cond_3
 
-    .line 12
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->k:Landroid/graphics/Paint;
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->C:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 13
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->E:I
 
     if-ne v0, v10, :cond_2
@@ -1995,7 +1824,6 @@
 
     int-to-float v4, v6
 
-    .line 14
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->D:F
 
     sub-float v2, v4, v0
@@ -2023,7 +1851,6 @@
 
     const/4 v2, 0x0
 
-    .line 15
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/widget/LinearLayout;->getWidth()I
@@ -2042,38 +1869,32 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 16
     :cond_3
     :goto_1
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->b()V
 
-    .line 17
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
 
     const/4 v1, 0x2
 
     if-ne v0, v8, :cond_4
 
-    .line 18
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->t:F
 
     cmpl-float v0, v0, v9
 
     if-lez v0, :cond_a
 
-    .line 19
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->m:Landroid/graphics/Paint;
 
     iget v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->s:I
 
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 20
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->n:Landroid/graphics/Path;
 
     invoke-virtual {v0}, Landroid/graphics/Path;->reset()V
 
-    .line 21
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->n:Landroid/graphics/Path;
 
     iget-object v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->h:Landroid/graphics/Rect;
@@ -2088,7 +1909,6 @@
 
     invoke-virtual {v0, v2, v3}, Landroid/graphics/Path;->moveTo(FF)V
 
-    .line 22
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->n:Landroid/graphics/Path;
 
     iget-object v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->h:Landroid/graphics/Rect;
@@ -2113,7 +1933,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 23
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->n:Landroid/graphics/Path;
 
     iget-object v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->h:Landroid/graphics/Rect;
@@ -2126,12 +1945,10 @@
 
     invoke-virtual {v0, v1, v3}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 24
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->n:Landroid/graphics/Path;
 
     invoke-virtual {v0}, Landroid/graphics/Path;->close()V
 
-    .line 25
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->n:Landroid/graphics/Path;
 
     iget-object v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->m:Landroid/graphics/Paint;
@@ -2143,7 +1960,6 @@
     :cond_4
     if-ne v0, v1, :cond_8
 
-    .line 26
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->t:F
 
     cmpg-float v0, v0, v9
@@ -2152,7 +1968,6 @@
 
     int-to-float v0, v6
 
-    .line 27
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->x:F
 
     sub-float/2addr v0, v1
@@ -2163,7 +1978,6 @@
 
     iput v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->t:F
 
-    .line 28
     :cond_5
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->t:F
 
@@ -2171,7 +1985,6 @@
 
     if-lez v1, :cond_a
 
-    .line 29
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->v:F
 
     const/high16 v2, 0x40000000    # 2.0f
@@ -2186,7 +1999,6 @@
 
     if-lez v0, :cond_7
 
-    .line 30
     :cond_6
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->t:F
 
@@ -2194,7 +2006,6 @@
 
     iput v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->v:F
 
-    .line 31
     :cond_7
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->j:Landroid/graphics/drawable/GradientDrawable;
 
@@ -2202,7 +2013,6 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
-    .line 32
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->j:Landroid/graphics/drawable/GradientDrawable;
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->w:F
@@ -2241,21 +2051,18 @@
 
     invoke-virtual {v0, v1, v4, v2, v3}, Landroid/graphics/drawable/GradientDrawable;->setBounds(IIII)V
 
-    .line 33
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->j:Landroid/graphics/drawable/GradientDrawable;
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->v:F
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setCornerRadius(F)V
 
-    .line 34
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->j:Landroid/graphics/drawable/GradientDrawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/GradientDrawable;->draw(Landroid/graphics/Canvas;)V
 
     goto :goto_3
 
-    .line 35
     :cond_8
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->t:F
 
@@ -2263,19 +2070,16 @@
 
     if-lez v0, :cond_a
 
-    .line 36
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->j:Landroid/graphics/drawable/GradientDrawable;
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->s:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
-    .line 37
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->A:I
 
     if-ne v0, v10, :cond_9
 
-    .line 38
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->j:Landroid/graphics/drawable/GradientDrawable;
 
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->w:F
@@ -2320,7 +2124,6 @@
 
     goto :goto_2
 
-    .line 39
     :cond_9
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->j:Landroid/graphics/drawable/GradientDrawable;
 
@@ -2360,7 +2163,6 @@
 
     invoke-virtual {v0, v1, v4, v7, v2}, Landroid/graphics/drawable/GradientDrawable;->setBounds(IIII)V
 
-    .line 40
     :goto_2
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->j:Landroid/graphics/drawable/GradientDrawable;
 
@@ -2368,7 +2170,6 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/GradientDrawable;->setCornerRadius(F)V
 
-    .line 41
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->j:Landroid/graphics/drawable/GradientDrawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/GradientDrawable;->draw(Landroid/graphics/Canvas;)V
@@ -2387,16 +2188,12 @@
 .method public onPageScrolled(IFI)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
 
-    .line 2
     iput p2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->f:F
 
-    .line 3
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->c()V
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2405,7 +2202,6 @@
 .method public onPageSelected(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/flyco/tablayout/SlidingTabLayout;->a(I)V
 
     return-void
@@ -2414,17 +2210,14 @@
 .method protected onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 1
 
-    .line 1
     instance-of v0, p1, Landroid/os/Bundle;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Landroid/os/Bundle;
 
     const-string v0, "mCurrentTab"
 
-    .line 3
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
     move-result v0
@@ -2433,12 +2226,10 @@
 
     const-string v0, "instanceState"
 
-    .line 4
     invoke-virtual {p1, v0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
 
-    .line 5
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
 
     if-eqz v0, :cond_0
@@ -2451,15 +2242,12 @@
 
     if-lez v0, :cond_0
 
-    .line 6
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
 
     invoke-direct {p0, v0}, Lcom/flyco/tablayout/SlidingTabLayout;->a(I)V
 
-    .line 7
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->c()V
 
-    .line 8
     :cond_0
     invoke-super {p0, p1}, Landroid/widget/HorizontalScrollView;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
@@ -2469,12 +2257,10 @@
 .method protected onSaveInstanceState()Landroid/os/Parcelable;
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 2
     invoke-super {p0}, Landroid/widget/HorizontalScrollView;->onSaveInstanceState()Landroid/os/Parcelable;
 
     move-result-object v1
@@ -2483,7 +2269,6 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 3
     iget v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
 
     const-string v2, "mCurrentTab"
@@ -2496,10 +2281,8 @@
 .method public setCurrentTab(I)V
     .locals 1
 
-    .line 1
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
 
-    .line 2
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->b:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {v0, p1}, Landroidx/viewpager/widget/ViewPager;->setCurrentItem(I)V
@@ -2510,10 +2293,8 @@
 .method public setCurrentTab(IZ)V
     .locals 1
 
-    .line 3
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->e:I
 
-    .line 4
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->b:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {v0, p1, p2}, Landroidx/viewpager/widget/ViewPager;->setCurrentItem(IZ)V
@@ -2524,10 +2305,8 @@
 .method public setDividerColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->F:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2536,7 +2315,6 @@
 .method public setDividerPadding(F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -2545,7 +2323,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->H:F
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2554,7 +2331,6 @@
 .method public setDividerWidth(F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -2563,7 +2339,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->G:F
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2572,10 +2347,8 @@
 .method public setIndicatorColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->s:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2584,7 +2357,6 @@
 .method public setIndicatorCornerRadius(F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -2593,7 +2365,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->v:F
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2602,10 +2373,8 @@
 .method public setIndicatorGravity(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->A:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2614,7 +2383,6 @@
 .method public setIndicatorHeight(F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -2623,7 +2391,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->t:F
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2632,7 +2399,6 @@
 .method public setIndicatorMargin(FFFF)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -2641,7 +2407,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->w:F
 
-    .line 2
     invoke-virtual {p0, p2}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -2650,7 +2415,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->x:F
 
-    .line 3
     invoke-virtual {p0, p3}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -2659,7 +2423,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->y:F
 
-    .line 4
     invoke-virtual {p0, p4}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -2668,7 +2431,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->z:F
 
-    .line 5
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2677,10 +2439,8 @@
 .method public setIndicatorStyle(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->o:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2689,7 +2449,6 @@
 .method public setIndicatorWidth(F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -2698,7 +2457,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->u:F
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2707,10 +2465,8 @@
 .method public setIndicatorWidthEqualTitle(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->B:Z
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -2719,14 +2475,12 @@
 .method public setMsgMargin(IFF)V
     .locals 5
 
-    .line 1
     iget v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->g:I
 
     if-lt p1, v0, :cond_0
 
     add-int/lit8 p1, v0, -0x1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/flyco/tablayout/SlidingTabLayout;->d:Landroid/widget/LinearLayout;
 
@@ -2734,7 +2488,6 @@
 
     move-result-object p1
 
-    .line 3
     sget v0, Lcom/flyco/tablayout/R$id;->rtv_msg_tip:I
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2745,7 +2498,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 4
     sget v1, Lcom/flyco/tablayout/R$id;->tv_tab_title:I
 
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -2754,14 +2506,12 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    .line 5
     iget-object v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->R:Landroid/graphics/Paint;
 
     iget v2, p0, Lcom/flyco/tablayout/SlidingTabLayout;->I:F
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 6
     iget-object v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->R:Landroid/graphics/Paint;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
@@ -2776,7 +2526,6 @@
 
     move-result p1
 
-    .line 7
     iget-object v1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->R:Landroid/graphics/Paint;
 
     invoke-virtual {v1}, Landroid/graphics/Paint;->descent()F
@@ -2791,14 +2540,12 @@
 
     sub-float/2addr v1, v2
 
-    .line 8
     invoke-virtual {v0}, Landroid/widget/TextView;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v2
 
     check-cast v2, Landroid/view/ViewGroup$MarginLayoutParams;
 
-    .line 9
     iget v3, p0, Lcom/flyco/tablayout/SlidingTabLayout;->r:F
 
     const/4 v4, 0x0
@@ -2833,7 +2580,6 @@
 
     iput p1, v2, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
-    .line 10
     iget p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->O:I
 
     if-lez p1, :cond_2
@@ -2860,7 +2606,6 @@
     :goto_1
     iput p1, v2, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
-    .line 11
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     :cond_3
@@ -2870,7 +2615,6 @@
 .method public setOnTabSelectListener(Lcom/flyco/tablayout/a/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->S:Lcom/flyco/tablayout/a/b;
 
     return-void
@@ -2879,7 +2623,6 @@
 .method public setSnapOnTabClick(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->P:Z
 
     return-void
@@ -2888,7 +2631,6 @@
 .method public setTabPadding(F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -2897,7 +2639,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->p:F
 
-    .line 2
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->d()V
 
     return-void
@@ -2906,10 +2647,8 @@
 .method public setTabSpaceEqual(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->q:Z
 
-    .line 2
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->d()V
 
     return-void
@@ -2918,7 +2657,6 @@
 .method public setTabWidth(F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -2927,7 +2665,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->r:F
 
-    .line 2
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->d()V
 
     return-void
@@ -2936,10 +2673,8 @@
 .method public setTextAllCaps(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->M:Z
 
-    .line 2
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->d()V
 
     return-void
@@ -2948,10 +2683,8 @@
 .method public setTextBold(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->L:I
 
-    .line 2
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->d()V
 
     return-void
@@ -2960,10 +2693,8 @@
 .method public setTextSelectColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->J:I
 
-    .line 2
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->d()V
 
     return-void
@@ -2972,10 +2703,8 @@
 .method public setTextUnselectColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->K:I
 
-    .line 2
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->d()V
 
     return-void
@@ -2984,7 +2713,6 @@
 .method public setTextsize(F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/flyco/tablayout/SlidingTabLayout;->b(F)I
 
     move-result p1
@@ -2993,7 +2721,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->I:F
 
-    .line 2
     invoke-direct {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->d()V
 
     return-void
@@ -3002,10 +2729,8 @@
 .method public setUnderlineColor(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->C:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -3014,10 +2739,8 @@
 .method public setUnderlineGravity(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->E:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -3026,7 +2749,6 @@
 .method public setUnderlineHeight(F)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/flyco/tablayout/SlidingTabLayout;->a(F)I
 
     move-result p1
@@ -3035,7 +2757,6 @@
 
     iput p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->D:F
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/HorizontalScrollView;->invalidate()V
 
     return-void
@@ -3046,30 +2767,24 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p1}, Landroidx/viewpager/widget/ViewPager;->getAdapter()Landroidx/viewpager/widget/a;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->b:Landroidx/viewpager/widget/ViewPager;
 
-    .line 3
     invoke-virtual {p1, p0}, Landroidx/viewpager/widget/ViewPager;->removeOnPageChangeListener(Landroidx/viewpager/widget/ViewPager$h;)V
 
-    .line 4
     iget-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->b:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {p1, p0}, Landroidx/viewpager/widget/ViewPager;->addOnPageChangeListener(Landroidx/viewpager/widget/ViewPager$h;)V
 
-    .line 5
     invoke-virtual {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->a()V
 
     return-void
 
-    .line 6
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -3085,7 +2800,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 7
     invoke-virtual {p1}, Landroidx/viewpager/widget/ViewPager;->getAdapter()Landroidx/viewpager/widget/a;
 
     move-result-object v0
@@ -3094,12 +2808,10 @@
 
     if-eqz p2, :cond_1
 
-    .line 8
     array-length v0, p2
 
     if-eqz v0, :cond_1
 
-    .line 9
     array-length v0, p2
 
     invoke-virtual {p1}, Landroidx/viewpager/widget/ViewPager;->getAdapter()Landroidx/viewpager/widget/a;
@@ -3112,35 +2824,28 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 10
     iput-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->b:Landroidx/viewpager/widget/ViewPager;
 
-    .line 11
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->c:Ljava/util/ArrayList;
 
-    .line 12
     invoke-static {p1, p2}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
-    .line 13
     iget-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->b:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {p1, p0}, Landroidx/viewpager/widget/ViewPager;->removeOnPageChangeListener(Landroidx/viewpager/widget/ViewPager$h;)V
 
-    .line 14
     iget-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->b:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {p1, p0}, Landroidx/viewpager/widget/ViewPager;->addOnPageChangeListener(Landroidx/viewpager/widget/ViewPager$h;)V
 
-    .line 15
     invoke-virtual {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->a()V
 
     return-void
 
-    .line 16
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -3150,7 +2855,6 @@
 
     throw p1
 
-    .line 17
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -3160,7 +2864,6 @@
 
     throw p1
 
-    .line 18
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -3190,15 +2893,12 @@
 
     if-eqz p2, :cond_0
 
-    .line 19
     array-length v0, p2
 
     if-eqz v0, :cond_0
 
-    .line 20
     iput-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->b:Landroidx/viewpager/widget/ViewPager;
 
-    .line 21
     new-instance v0, Lcom/flyco/tablayout/SlidingTabLayout$b;
 
     invoke-virtual {p3}, Landroidx/fragment/app/FragmentActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
@@ -3209,22 +2909,18 @@
 
     invoke-virtual {p1, v0}, Landroidx/viewpager/widget/ViewPager;->setAdapter(Landroidx/viewpager/widget/a;)V
 
-    .line 22
     iget-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->b:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {p1, p0}, Landroidx/viewpager/widget/ViewPager;->removeOnPageChangeListener(Landroidx/viewpager/widget/ViewPager$h;)V
 
-    .line 23
     iget-object p1, p0, Lcom/flyco/tablayout/SlidingTabLayout;->b:Landroidx/viewpager/widget/ViewPager;
 
     invoke-virtual {p1, p0}, Landroidx/viewpager/widget/ViewPager;->addOnPageChangeListener(Landroidx/viewpager/widget/ViewPager$h;)V
 
-    .line 24
     invoke-virtual {p0}, Lcom/flyco/tablayout/SlidingTabLayout;->a()V
 
     return-void
 
-    .line 25
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -3234,7 +2930,6 @@
 
     throw p1
 
-    .line 26
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 

@@ -1,6 +1,5 @@
 .class public final enum Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 .super Ljava/lang/Enum;
-.source "LiteProtos.java"
 
 # interfaces
 .implements Lcom/google/protobuf/ProtocolMessageEnum;
@@ -64,7 +63,6 @@
 .method static constructor <clinit>()V
     .locals 6
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     const/4 v1, 0x0
@@ -77,7 +75,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->START:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     const/4 v3, 0x2
@@ -88,7 +85,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->COMPLETE:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     const/4 v4, 0x3
@@ -101,7 +97,6 @@
 
     new-array v4, v4, [Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
-    .line 4
     sget-object v5, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->START:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     aput-object v5, v4, v1
@@ -114,14 +109,12 @@
 
     sput-object v4, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->$VALUES:[Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD$a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD$a;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->values()[Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     move-result-object v0
@@ -139,13 +132,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput p3, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->index:I
 
-    .line 3
     iput p4, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->value:I
 
     return-void
@@ -154,7 +144,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$EnumDescriptor;
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest;->getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -185,7 +174,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->internalValueMap:Lcom/google/protobuf/Internal$EnumLiteMap;
 
     return-object v0
@@ -210,19 +198,16 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     sget-object p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->REBOOT:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     return-object p0
 
-    .line 3
     :cond_1
     sget-object p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->COMPLETE:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     return-object p0
 
-    .line 4
     :cond_2
     sget-object p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->START:Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
@@ -232,7 +217,6 @@
 .method public static valueOf(Lcom/google/protobuf/Descriptors$EnumValueDescriptor;)Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
     .locals 2
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;->getType()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0
@@ -243,7 +227,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 6
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->VALUES:[Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$EnumValueDescriptor;->getIndex()I
@@ -254,7 +237,6 @@
 
     return-object p0
 
-    .line 7
     :cond_0
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -268,7 +250,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -283,7 +264,6 @@
 .method public static values()[Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->$VALUES:[Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;
 
     invoke-virtual {v0}, [Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->clone()Ljava/lang/Object;
@@ -300,7 +280,6 @@
 .method public final getDescriptorForType()Lcom/google/protobuf/Descriptors$EnumDescriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->getDescriptor()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0
@@ -311,7 +290,6 @@
 .method public final getNumber()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->value:I
 
     return v0
@@ -320,7 +298,6 @@
 .method public final getValueDescriptor()Lcom/google/protobuf/Descriptors$EnumValueDescriptor;
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$OtaRequest$FILE_CMD;->getDescriptor()Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     move-result-object v0

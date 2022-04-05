@@ -1,6 +1,5 @@
 .class public Lorg/greenrobot/greendao/async/AsyncDaoException;
 .super Lorg/greenrobot/greendao/DaoException;
-.source "AsyncDaoException.java"
 
 
 # static fields
@@ -15,10 +14,8 @@
 .method public constructor <init>(Lorg/greenrobot/greendao/async/AsyncOperation;Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2}, Lorg/greenrobot/greendao/DaoException;-><init>(Ljava/lang/Throwable;)V
 
-    .line 2
     iput-object p1, p0, Lorg/greenrobot/greendao/async/AsyncDaoException;->failedOperation:Lorg/greenrobot/greendao/async/AsyncOperation;
 
     return-void
@@ -29,7 +26,6 @@
 .method public getFailedOperation()Lorg/greenrobot/greendao/async/AsyncOperation;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/async/AsyncDaoException;->failedOperation:Lorg/greenrobot/greendao/async/AsyncOperation;
 
     return-object v0

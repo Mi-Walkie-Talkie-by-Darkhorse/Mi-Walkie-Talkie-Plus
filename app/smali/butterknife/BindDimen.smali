@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/BindDimen;
 .super Ljava/lang/Object;
-.source "BindDimen.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

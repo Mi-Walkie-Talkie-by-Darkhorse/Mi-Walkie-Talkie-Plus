@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/resource/bitmap/m;
 .super Ljava/lang/Object;
-.source "ExifInterfaceImageHeaderParser.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/ImageHeaderParser;
@@ -16,7 +15,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -40,7 +38,6 @@
         }
     .end annotation
 
-    .line 3
     new-instance p2, Landroid/media/ExifInterface;
 
     invoke-direct {p2, p1}, Landroid/media/ExifInterface;-><init>(Ljava/io/InputStream;)V
@@ -49,7 +46,6 @@
 
     const/4 v0, 0x1
 
-    .line 4
     invoke-virtual {p2, p1, v0}, Landroid/media/ExifInterface;->getAttributeInt(Ljava/lang/String;I)I
 
     move-result p1
@@ -77,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object p1, Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;->i:Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;
 
     return-object p1
@@ -98,7 +93,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object p1, Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;->i:Lcom/bumptech/glide/load/ImageHeaderParser$ImageType;
 
     return-object p1

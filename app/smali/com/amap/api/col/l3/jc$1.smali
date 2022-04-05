@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/jc$1;
 .super Ljava/lang/Object;
-.source "ThreadPool.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/jd$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/jc;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/jc$1;->a:Lcom/amap/api/col/l3/jc;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final a(Lcom/amap/api/col/l3/jd;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jc$1;->a:Lcom/amap/api/col/l3/jc;
 
     const/4 v1, 0x0
@@ -51,7 +48,6 @@
 .method public final b(Lcom/amap/api/col/l3/jd;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/jc$1;->a:Lcom/amap/api/col/l3/jc;
 
     const/4 v1, 0x1

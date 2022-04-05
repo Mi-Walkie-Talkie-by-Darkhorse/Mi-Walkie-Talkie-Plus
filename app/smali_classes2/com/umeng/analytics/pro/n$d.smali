@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/n$d;
 .super Ljava/lang/Object;
-.source "CoreProtocolImpl.java"
 
 
 # annotations
@@ -37,23 +36,18 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/umeng/analytics/pro/n$d;->a:Ljava/util/Map;
 
-    .line 3
     iput-object v0, p0, Lcom/umeng/analytics/pro/n$d;->b:Ljava/lang/String;
 
-    .line 4
     iput-object v0, p0, Lcom/umeng/analytics/pro/n$d;->c:Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
-    .line 5
     iput-wide v0, p0, Lcom/umeng/analytics/pro/n$d;->d:J
 
     return-void
@@ -74,35 +68,26 @@
         }
     .end annotation
 
-    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 7
     iput-object v0, p0, Lcom/umeng/analytics/pro/n$d;->a:Ljava/util/Map;
 
-    .line 8
     iput-object v0, p0, Lcom/umeng/analytics/pro/n$d;->b:Ljava/lang/String;
 
-    .line 9
     iput-object v0, p0, Lcom/umeng/analytics/pro/n$d;->c:Ljava/lang/String;
 
     const-wide/16 v0, 0x0
 
-    .line 10
     iput-wide v0, p0, Lcom/umeng/analytics/pro/n$d;->d:J
 
-    .line 11
     iput-object p2, p0, Lcom/umeng/analytics/pro/n$d;->a:Ljava/util/Map;
 
-    .line 12
     iput-object p1, p0, Lcom/umeng/analytics/pro/n$d;->b:Ljava/lang/String;
 
-    .line 13
     iput-wide p4, p0, Lcom/umeng/analytics/pro/n$d;->d:J
 
-    .line 14
     iput-object p3, p0, Lcom/umeng/analytics/pro/n$d;->c:Ljava/lang/String;
 
     return-void
@@ -122,7 +107,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$d;->a:Ljava/util/Map;
 
     return-object v0
@@ -131,7 +115,6 @@
 .method public b()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$d;->c:Ljava/lang/String;
 
     return-object v0
@@ -140,7 +123,6 @@
 .method public c()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$d;->b:Ljava/lang/String;
 
     return-object v0
@@ -149,7 +131,6 @@
 .method public d()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/umeng/analytics/pro/n$d;->d:J
 
     return-wide v0

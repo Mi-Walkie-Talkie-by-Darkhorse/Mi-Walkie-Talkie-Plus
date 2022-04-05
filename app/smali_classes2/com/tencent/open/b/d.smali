@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/b/d;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,20 +22,17 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/tencent/open/b/d;->a:Lcom/tencent/open/b/d;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/tencent/open/b/d;
 
     invoke-direct {v1}, Lcom/tencent/open/b/d;-><init>()V
 
     sput-object v1, Lcom/tencent/open/b/d;->a:Lcom/tencent/open/b/d;
 
-    .line 3
     :cond_0
     sget-object v1, Lcom/tencent/open/b/d;->a:Lcom/tencent/open/b/d;
     :try_end_0
@@ -60,7 +55,6 @@
 .method public a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;IILjava/lang/String;)V
     .locals 16
 
-    .line 10
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v0
@@ -71,7 +65,6 @@
 
     sub-long/2addr v0, v2
 
-    .line 11
     invoke-virtual/range {p6 .. p6}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
@@ -89,7 +82,6 @@
     :cond_0
     move-wide v0, v4
 
-    .line 12
     :cond_1
     new-instance v2, Ljava/lang/StringBuffer;
 
@@ -99,7 +91,6 @@
 
     const-string v3, "?domain=mobile.opensdk.com&cgi=opensdk&type="
 
-    .line 13
     invoke-virtual {v2, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     move/from16 v3, p1
@@ -140,7 +131,6 @@
 
     invoke-virtual {v2, v7}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 14
     invoke-static/range {p1 .. p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v7
@@ -171,7 +161,6 @@
 
     move-result-object v0
 
-    .line 15
     invoke-static {}, Lcom/tencent/open/b/g;->a()Lcom/tencent/open/b/g;
 
     move-result-object v1
@@ -204,12 +193,10 @@
 
     move-object v5, p6
 
-    .line 4
     invoke-static/range {v0 .. v5}, Lcom/tencent/open/utils/i;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object p1
 
-    .line 5
     invoke-static {}, Lcom/tencent/open/b/g;->a()Lcom/tencent/open/b/g;
 
     move-result-object p3
@@ -248,12 +235,10 @@
 
     move-object/from16 v8, p8
 
-    .line 6
     invoke-static/range {v0 .. v11}, Lcom/tencent/open/utils/i;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 7
     invoke-static {}, Lcom/tencent/open/b/g;->a()Lcom/tencent/open/b/g;
 
     move-result-object v1
@@ -294,12 +279,10 @@
 
     move-object/from16 v11, p10
 
-    .line 8
     invoke-static/range {v0 .. v11}, Lcom/tencent/open/utils/i;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/os/Bundle;
 
     move-result-object v0
 
-    .line 9
     invoke-static {}, Lcom/tencent/open/b/g;->a()Lcom/tencent/open/b/g;
 
     move-result-object v1

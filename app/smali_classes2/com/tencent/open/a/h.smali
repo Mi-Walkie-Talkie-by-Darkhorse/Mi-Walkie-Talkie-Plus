@@ -1,6 +1,5 @@
 .class public final Lcom/tencent/open/a/h;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/tencent/open/a/h;
 
     invoke-direct {v0}, Lcom/tencent/open/a/h;-><init>()V
@@ -24,7 +22,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -99,23 +96,18 @@
 
     const-wide/16 v0, 0x3e8
 
-    .line 1
     rem-long v0, p3, v0
 
-    .line 2
     new-instance v2, Landroid/text/format/Time;
 
     invoke-direct {v2}, Landroid/text/format/Time;-><init>()V
 
-    .line 3
     invoke-virtual {v2, p3, p4}, Landroid/text/format/Time;->set(J)V
 
-    .line 4
     new-instance p3, Ljava/lang/StringBuilder;
 
     invoke-direct {p3}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 5
     invoke-virtual {p0, p1}, Lcom/tencent/open/a/h;->a(I)Ljava/lang/String;
 
     move-result-object p1
@@ -146,7 +138,6 @@
 
     const-string p1, "00"
 
-    .line 6
     invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
@@ -160,10 +151,8 @@
 
     const/16 p1, 0x30
 
-    .line 7
     invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 8
     :cond_1
     :goto_0
     invoke-virtual {p3, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
@@ -180,12 +169,10 @@
 
     const-string p2, "N/A"
 
-    .line 9
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_1
 
-    .line 10
     :cond_2
     invoke-virtual {p2}, Ljava/lang/Thread;->getName()Ljava/lang/String;
 
@@ -196,7 +183,6 @@
     :goto_1
     const/16 p2, 0x5d
 
-    .line 11
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     invoke-virtual {p3, p4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
@@ -217,7 +203,6 @@
 
     const-string p2, "* Exception : \n"
 
-    .line 12
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-static {p7}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
@@ -228,7 +213,6 @@
 
     invoke-virtual {p3, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 13
     :cond_3
     invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 

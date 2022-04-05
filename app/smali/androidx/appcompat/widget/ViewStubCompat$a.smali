@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/appcompat/widget/ViewStubCompat$a;
 .super Ljava/lang/Object;
-.source "ViewStubCompat.java"
 
 
 # annotations

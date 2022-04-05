@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/view/ViewCompat$FocusDirection;
 .super Ljava/lang/Object;
-.source "ViewCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

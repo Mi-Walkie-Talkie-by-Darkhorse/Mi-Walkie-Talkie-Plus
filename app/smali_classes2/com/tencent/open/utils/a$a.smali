@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/utils/a$a;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # annotations
@@ -24,10 +23,8 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/Properties;
 
     invoke-direct {v0}, Ljava/util/Properties;-><init>()V
@@ -40,7 +37,6 @@
 .method synthetic constructor <init>(Lcom/tencent/open/utils/a$1;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0}, Lcom/tencent/open/utils/a$a;-><init>()V
 
     return-void
@@ -60,13 +56,11 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-static {p1}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object v0
 
-    .line 2
     invoke-static {}, Lcom/tencent/open/utils/a;->a()Lcom/tencent/open/utils/k;
 
     move-result-object v1
@@ -77,13 +71,10 @@
 
     array-length v1, v1
 
-    .line 3
     new-array v2, v1, [B
 
-    .line 4
     invoke-virtual {v0, v2}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
 
-    .line 5
     invoke-static {}, Lcom/tencent/open/utils/a;->a()Lcom/tencent/open/utils/k;
 
     move-result-object v3
@@ -98,7 +89,6 @@
 
     if-eqz v2, :cond_4
 
-    .line 6
     array-length v2, p1
 
     sub-int/2addr v2, v1
@@ -112,10 +102,8 @@
     :cond_1
     new-array v2, v3, [B
 
-    .line 7
     invoke-virtual {v0, v2}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
 
-    .line 8
     new-instance v4, Lcom/tencent/open/utils/k;
 
     invoke-direct {v4, v2}, Lcom/tencent/open/utils/k;-><init>([B)V
@@ -124,7 +112,6 @@
 
     move-result v2
 
-    .line 9
     array-length v4, p1
 
     sub-int/2addr v4, v1
@@ -135,14 +122,11 @@
 
     return-void
 
-    .line 10
     :cond_2
     new-array v4, v2, [B
 
-    .line 11
     invoke-virtual {v0, v4}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
 
-    .line 12
     iget-object v5, p0, Lcom/tencent/open/utils/a$a;->a:Ljava/util/Properties;
 
     new-instance v6, Ljava/io/ByteArrayInputStream;
@@ -151,7 +135,6 @@
 
     invoke-virtual {v5, v6}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
 
-    .line 13
     array-length p1, p1
 
     sub-int/2addr p1, v1
@@ -162,18 +145,15 @@
 
     if-lez p1, :cond_3
 
-    .line 14
     new-array p1, p1, [B
 
     iput-object p1, p0, Lcom/tencent/open/utils/a$a;->b:[B
 
-    .line 15
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
 
     :cond_3
     return-void
 
-    .line 16
     :cond_4
     new-instance v0, Ljava/net/ProtocolException;
 
@@ -207,7 +187,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/v$g;
 .super Ljava/lang/Object;
-.source "ResourceManagerInternal.java"
 
 # interfaces
 .implements Landroidx/appcompat/widget/v$e;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +46,6 @@
         .end annotation
     .end param
 
-    .line 1
     :try_start_0
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -69,7 +66,6 @@
 
     const-string p3, "Exception while inflating <vector>"
 
-    .line 2
     invoke-static {p2, p3, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     const/4 p1, 0x0

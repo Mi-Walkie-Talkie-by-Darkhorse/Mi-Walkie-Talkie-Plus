@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/MapConstraints$ConstrainedMultimap$2;
 .super Ljava/lang/Object;
-.source "MapConstraints.java"
 
 # interfaces
 .implements Lcom/google/common/collect/Constraint;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/google/common/collect/MapConstraints$ConstrainedMultimap;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMultimap$2;->this$0:Lcom/google/common/collect/MapConstraints$ConstrainedMultimap;
 
     iput-object p2, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMultimap$2;->val$key:Ljava/lang/Object;
@@ -55,7 +53,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$ConstrainedMultimap$2;->this$0:Lcom/google/common/collect/MapConstraints$ConstrainedMultimap;
 
     iget-object v0, v0, Lcom/google/common/collect/MapConstraints$ConstrainedMultimap;->constraint:Lcom/google/common/collect/MapConstraint;

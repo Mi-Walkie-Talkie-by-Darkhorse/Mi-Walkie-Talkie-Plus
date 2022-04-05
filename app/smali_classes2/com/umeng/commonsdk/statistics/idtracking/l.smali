@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/idtracking/l;
 .super Lcom/umeng/commonsdk/statistics/idtracking/a;
-.source "UTDIdTracker.java"
 
 
 # static fields
@@ -17,10 +16,8 @@
 
     const-string v0, "utdid"
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/umeng/commonsdk/statistics/idtracking/a;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/idtracking/l;->b:Landroid/content/Context;
 
     return-void
@@ -36,7 +33,6 @@
     :try_start_0
     const-string v1, "header_tracking_utdid"
 
-    .line 1
     invoke-static {v1}, Lcom/umeng/commonsdk/config/FieldManager;->allow(Ljava/lang/String;)Z
 
     move-result v1
@@ -45,7 +41,6 @@
 
     const-string v1, "com.ut.device.UTDevice"
 
-    .line 2
     invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v1
@@ -56,7 +51,6 @@
 
     new-array v4, v3, [Ljava/lang/Class;
 
-    .line 3
     const-class v5, Landroid/content/Context;
 
     const/4 v6, 0x0
@@ -69,7 +63,6 @@
 
     new-array v2, v3, [Ljava/lang/Object;
 
-    .line 4
     iget-object v3, p0, Lcom/umeng/commonsdk/statistics/idtracking/l;->b:Landroid/content/Context;
 
     aput-object v3, v2, v6

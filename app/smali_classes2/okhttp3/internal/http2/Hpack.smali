@@ -1,6 +1,5 @@
 .class final Lokhttp3/internal/http2/Hpack;
 .super Ljava/lang/Object;
-.source "Hpack.java"
 
 
 # annotations
@@ -43,7 +42,6 @@
 
     new-array v0, v0, [Lokhttp3/internal/http2/Header;
 
-    .line 1
     new-instance v1, Lokhttp3/internal/http2/Header;
 
     sget-object v2, Lokhttp3/internal/http2/Header;->TARGET_AUTHORITY:Lokio/ByteString;
@@ -686,7 +684,6 @@
 
     sput-object v0, Lokhttp3/internal/http2/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/http2/Header;
 
-    .line 2
     invoke-static {}, Lokhttp3/internal/http2/Hpack;->nameToFirstIndex()Ljava/util/Map;
 
     move-result-object v0
@@ -699,7 +696,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -713,7 +709,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lokio/ByteString;->size()I
 
     move-result v0
@@ -723,7 +718,6 @@
     :goto_0
     if-ge v1, v0, :cond_2
 
-    .line 2
     invoke-virtual {p0, v1}, Lokio/ByteString;->getByte(I)B
 
     move-result v2
@@ -738,7 +732,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/io/IOException;
 
@@ -786,7 +779,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/LinkedHashMap;
 
     sget-object v1, Lokhttp3/internal/http2/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/http2/Header;
@@ -797,7 +789,6 @@
 
     const/4 v1, 0x0
 
-    .line 2
     :goto_0
     sget-object v2, Lokhttp3/internal/http2/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/http2/Header;
 
@@ -805,7 +796,6 @@
 
     if-ge v1, v3, :cond_1
 
-    .line 3
     aget-object v2, v2, v1
 
     iget-object v2, v2, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
@@ -816,7 +806,6 @@
 
     if-nez v2, :cond_0
 
-    .line 4
     sget-object v2, Lokhttp3/internal/http2/Hpack;->STATIC_HEADER_TABLE:[Lokhttp3/internal/http2/Header;
 
     aget-object v2, v2, v1
@@ -834,7 +823,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 

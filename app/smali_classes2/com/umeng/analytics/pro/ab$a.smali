@@ -1,6 +1,5 @@
 .class final Lcom/umeng/analytics/pro/ab$a;
 .super Ljava/lang/Object;
-.source "HuaweiDeviceIdSupplier.java"
 
 # interfaces
 .implements Landroid/content/ServiceConnection;
@@ -35,15 +34,12 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Lcom/umeng/analytics/pro/ab$a;->a:Z
 
-    .line 3
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
@@ -56,7 +52,6 @@
 .method synthetic constructor <init>(Lcom/umeng/analytics/pro/ab$1;)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Lcom/umeng/analytics/pro/ab$a;-><init>()V
 
     return-void
@@ -72,17 +67,14 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/umeng/analytics/pro/ab$a;->a:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/umeng/analytics/pro/ab$a;->a:Z
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/analytics/pro/ab$a;->b:Ljava/util/concurrent/LinkedBlockingQueue;
 
     const-wide/16 v1, 0x5
@@ -97,7 +89,6 @@
 
     return-object v0
 
-    .line 4
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -109,7 +100,6 @@
 .method public onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
     .locals 0
 
-    .line 1
     :try_start_0
     iget-object p1, p0, Lcom/umeng/analytics/pro/ab$a;->b:Ljava/util/concurrent/LinkedBlockingQueue;
 

@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/common/BitSource;
 .super Ljava/lang/Object;
-.source "BitSource.java"
 
 
 # instance fields
@@ -15,10 +14,8 @@
 .method public constructor <init>([B)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/zxing/common/BitSource;->bytes:[B
 
     return-void
@@ -29,7 +26,6 @@
 .method public available()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/common/BitSource;->bytes:[B
 
     array-length v0, v0
@@ -50,7 +46,6 @@
 .method public getBitOffset()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/common/BitSource;->bitOffset:I
 
     return v0
@@ -59,7 +54,6 @@
 .method public getByteOffset()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/common/BitSource;->byteOffset:I
 
     return v0
@@ -74,14 +68,12 @@
 
     if-gt p1, v0, :cond_5
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/common/BitSource;->available()I
 
     move-result v0
 
     if-gt p1, v0, :cond_5
 
-    .line 2
     iget v0, p0, Lcom/google/zxing/common/BitSource;->bitOffset:I
 
     const/4 v1, 0x0
@@ -112,7 +104,6 @@
 
     shl-int/2addr v5, v0
 
-    .line 3
     iget-object v6, p0, Lcom/google/zxing/common/BitSource;->bytes:[B
 
     iget v7, p0, Lcom/google/zxing/common/BitSource;->byteOffset:I
@@ -125,7 +116,6 @@
 
     sub-int/2addr p1, v4
 
-    .line 4
     iget v5, p0, Lcom/google/zxing/common/BitSource;->bitOffset:I
 
     add-int/2addr v5, v4
@@ -134,12 +124,10 @@
 
     if-ne v5, v3, :cond_1
 
-    .line 5
     iput v1, p0, Lcom/google/zxing/common/BitSource;->bitOffset:I
 
     add-int/lit8 v7, v7, 0x1
 
-    .line 6
     iput v7, p0, Lcom/google/zxing/common/BitSource;->byteOffset:I
 
     :cond_1
@@ -153,7 +141,6 @@
 
     shl-int/lit8 v0, v1, 0x8
 
-    .line 7
     iget-object v1, p0, Lcom/google/zxing/common/BitSource;->bytes:[B
 
     iget v4, p0, Lcom/google/zxing/common/BitSource;->byteOffset:I
@@ -166,7 +153,6 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    .line 8
     iput v4, p0, Lcom/google/zxing/common/BitSource;->byteOffset:I
 
     add-int/lit8 p1, p1, -0x8
@@ -184,7 +170,6 @@
 
     shl-int/2addr v1, p1
 
-    .line 9
     iget-object v2, p0, Lcom/google/zxing/common/BitSource;->bytes:[B
 
     iget v4, p0, Lcom/google/zxing/common/BitSource;->byteOffset:I
@@ -197,7 +182,6 @@
 
     or-int/2addr v1, v0
 
-    .line 10
     iget v0, p0, Lcom/google/zxing/common/BitSource;->bitOffset:I
 
     add-int/2addr v0, p1
@@ -207,7 +191,6 @@
     :cond_4
     return v1
 
-    .line 11
     :cond_5
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

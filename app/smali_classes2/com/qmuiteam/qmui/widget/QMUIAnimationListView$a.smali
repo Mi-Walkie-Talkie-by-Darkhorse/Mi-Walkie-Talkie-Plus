@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;
 .super Landroid/widget/BaseAdapter;
-.source "QMUIAnimationListView.java"
 
 
 # annotations
@@ -26,25 +25,20 @@
 .method public constructor <init>(Landroid/widget/ListAdapter;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->b:Z
 
-    .line 3
     new-instance v0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a$a;
 
     invoke-direct {v0, p0}, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a$a;-><init>(Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;)V
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->c:Landroid/database/DataSetObserver;
 
-    .line 4
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->a:Landroid/widget/ListAdapter;
 
-    .line 5
     invoke-interface {p1, v0}, Landroid/widget/ListAdapter;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
 
     return-void
@@ -53,7 +47,6 @@
 .method static synthetic a(Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->b:Z
 
     return p0
@@ -64,7 +57,6 @@
 .method public getCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->a:Landroid/widget/ListAdapter;
 
     invoke-interface {v0}, Landroid/widget/ListAdapter;->getCount()I
@@ -77,7 +69,6 @@
 .method public getItem(I)Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->a:Landroid/widget/ListAdapter;
 
     invoke-interface {v0, p1}, Landroid/widget/ListAdapter;->getItem(I)Ljava/lang/Object;
@@ -90,7 +81,6 @@
 .method public getItemId(I)J
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->a:Landroid/widget/ListAdapter;
 
     invoke-interface {v0, p1}, Landroid/widget/ListAdapter;->getItemId(I)J
@@ -103,7 +93,6 @@
 .method public getItemViewType(I)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->a:Landroid/widget/ListAdapter;
 
     invoke-interface {v0, p1}, Landroid/widget/ListAdapter;->getItemViewType(I)I
@@ -116,7 +105,6 @@
 .method public getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->a:Landroid/widget/ListAdapter;
 
     invoke-interface {v0, p1, p2, p3}, Landroid/widget/ListAdapter;->getView(ILandroid/view/View;Landroid/view/ViewGroup;)Landroid/view/View;
@@ -129,7 +117,6 @@
 .method public getViewTypeCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->a:Landroid/widget/ListAdapter;
 
     invoke-interface {v0}, Landroid/widget/ListAdapter;->getViewTypeCount()I
@@ -142,7 +129,6 @@
 .method public hasStableIds()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIAnimationListView$a;->a:Landroid/widget/ListAdapter;
 
     invoke-interface {v0}, Landroid/widget/ListAdapter;->hasStableIds()Z
@@ -155,7 +141,6 @@
 .method public notifyDataSetChanged()V
     .locals 3
 
-    .line 1
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -174,12 +159,10 @@
 
     const-string v2, "notifyDataSetChanged not in main Thread"
 
-    .line 2
     invoke-static {v1, v2, v0}, Lcom/qmuiteam/qmui/b;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-void
 
-    .line 3
     :cond_0
     invoke-super {p0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 

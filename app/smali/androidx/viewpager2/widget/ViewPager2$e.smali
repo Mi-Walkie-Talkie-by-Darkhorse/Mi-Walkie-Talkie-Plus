@@ -1,6 +1,5 @@
 .class abstract Landroidx/viewpager2/widget/ViewPager2$e;
 .super Ljava/lang/Object;
-.source "ViewPager2.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Landroidx/viewpager2/widget/ViewPager2;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager2/widget/ViewPager2$e;->a:Landroidx/viewpager2/widget/ViewPager2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Landroidx/viewpager2/widget/ViewPager2;Landroidx/viewpager2/widget/ViewPager2$a;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Landroidx/viewpager2/widget/ViewPager2$e;-><init>(Landroidx/viewpager2/widget/ViewPager2;)V
 
     return-void
@@ -150,7 +147,6 @@
 .method b(I)Z
     .locals 1
 
-    .line 2
     new-instance p1, Ljava/lang/IllegalStateException;
 
     const-string v0, "Not implemented."
@@ -163,7 +159,6 @@
 .method b(ILandroid/os/Bundle;)Z
     .locals 0
 
-    .line 1
     new-instance p1, Ljava/lang/IllegalStateException;
 
     const-string p2, "Not implemented."
@@ -176,7 +171,6 @@
 .method c()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "Not implemented."
@@ -195,7 +189,6 @@
 .method e()Ljava/lang/CharSequence;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "Not implemented."

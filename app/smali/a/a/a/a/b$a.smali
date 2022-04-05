@@ -1,6 +1,5 @@
 .class La/a/a/a/b$a;
 .super Ljava/lang/Object;
-.source "DefaultTaskExecutor.java"
 
 # interfaces
 .implements Ljava/util/concurrent/ThreadFactory;
@@ -25,10 +24,8 @@
 .method constructor <init>(La/a/a/a/b;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance p1, Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v0, 0x0
@@ -45,7 +42,6 @@
 .method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/Thread;
 
     invoke-direct {v0, p1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
@@ -54,7 +50,6 @@
 
     new-array p1, p1, [Ljava/lang/Object;
 
-    .line 2
     iget-object v1, p0, La/a/a/a/b$a;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I

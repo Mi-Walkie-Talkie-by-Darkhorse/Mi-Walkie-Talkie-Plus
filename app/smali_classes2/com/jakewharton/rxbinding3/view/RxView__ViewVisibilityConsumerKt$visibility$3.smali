@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/view/RxView__ViewVisibilityConsumerKt$visibility$3;
 .super Ljava/lang/Object;
-.source "ViewVisibilityConsumer.kt"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -79,7 +78,6 @@
 .method public final accept(Ljava/lang/Boolean;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/RxView__ViewVisibilityConsumerKt$visibility$3;->receiver$0:Landroid/view/View;
 
     const-string v1, "value"

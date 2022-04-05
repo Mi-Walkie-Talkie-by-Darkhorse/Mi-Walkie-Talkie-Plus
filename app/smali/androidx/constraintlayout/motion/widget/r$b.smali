@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/r$b;
 .super Landroidx/constraintlayout/motion/widget/r;
-.source "SplineSet.java"
 
 
 # annotations
@@ -43,12 +42,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Landroidx/constraintlayout/motion/widget/r;-><init>()V
 
     const-string v0, ","
 
-    .line 2
     invoke-virtual {p1, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object p1
@@ -59,7 +56,6 @@
 
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/r$b;->f:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Landroidx/constraintlayout/motion/widget/r$b;->g:Landroid/util/SparseArray;
 
     return-void
@@ -70,14 +66,12 @@
 .method public a(I)V
     .locals 11
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/r$b;->g:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->size()I
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/r$b;->g:Landroid/util/SparseArray;
 
     const/4 v2, 0x0
@@ -92,10 +86,8 @@
 
     move-result v1
 
-    .line 3
     new-array v3, v0, [D
 
-    .line 4
     new-array v4, v1, [F
 
     iput-object v4, p0, Landroidx/constraintlayout/motion/widget/r$b;->h:[F
@@ -110,7 +102,6 @@
 
     aput v0, v4, v2
 
-    .line 5
     const-class v1, D
 
     invoke-static {v1, v4}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
@@ -124,14 +115,12 @@
     :goto_0
     if-ge v4, v0, :cond_1
 
-    .line 6
     iget-object v5, p0, Landroidx/constraintlayout/motion/widget/r$b;->g:Landroid/util/SparseArray;
 
     invoke-virtual {v5, v4}, Landroid/util/SparseArray;->keyAt(I)I
 
     move-result v5
 
-    .line 7
     iget-object v6, p0, Landroidx/constraintlayout/motion/widget/r$b;->g:Landroid/util/SparseArray;
 
     invoke-virtual {v6, v4}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
@@ -146,17 +135,14 @@
 
     mul-double v7, v7, v9
 
-    .line 8
     aput-wide v7, v3, v4
 
-    .line 9
     iget-object v5, p0, Landroidx/constraintlayout/motion/widget/r$b;->h:[F
 
     invoke-virtual {v6, v5}, Landroidx/constraintlayout/widget/ConstraintAttribute;->a([F)V
 
     const/4 v5, 0x0
 
-    .line 10
     :goto_1
     iget-object v6, p0, Landroidx/constraintlayout/motion/widget/r$b;->h:[F
 
@@ -164,7 +150,6 @@
 
     if-ge v5, v7, :cond_0
 
-    .line 11
     aget-object v7, v1, v4
 
     aget v6, v6, v5
@@ -182,7 +167,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_1
     invoke-static {p1, v3, v1}, La/c/a/a/b;->a(I[D[[D)La/c/a/a/b;
 
@@ -196,7 +180,6 @@
 .method public a(IF)V
     .locals 0
 
-    .line 13
     new-instance p1, Ljava/lang/RuntimeException;
 
     const-string p2, "don\'t call for custom attribute call setPoint(pos, ConstraintAttribute)"
@@ -209,7 +192,6 @@
 .method public a(ILandroidx/constraintlayout/widget/ConstraintAttribute;)V
     .locals 1
 
-    .line 14
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/r$b;->g:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1, p2}, Landroid/util/SparseArray;->append(ILjava/lang/Object;)V
@@ -220,7 +202,6 @@
 .method public a(Landroid/view/View;F)V
     .locals 3
 
-    .line 15
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/r;->a:La/c/a/a/b;
 
     float-to-double v1, p2
@@ -229,7 +210,6 @@
 
     invoke-virtual {v0, v1, v2, p2}, La/c/a/a/b;->a(D[F)V
 
-    .line 16
     iget-object p2, p0, Landroidx/constraintlayout/motion/widget/r$b;->g:Landroid/util/SparseArray;
 
     const/4 v0, 0x0

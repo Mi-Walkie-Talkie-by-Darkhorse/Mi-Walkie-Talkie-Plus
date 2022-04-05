@@ -1,6 +1,5 @@
 .class synthetic Lpl/droidsonroids/gif/f$a;
 .super Ljava/lang/Object;
-.source "InputSource.java"
 
 
 # annotations

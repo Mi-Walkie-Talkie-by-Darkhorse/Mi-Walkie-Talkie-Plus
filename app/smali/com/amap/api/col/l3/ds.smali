@@ -1,6 +1,5 @@
 .class public abstract Lcom/amap/api/col/l3/ds;
 .super Ljava/lang/Object;
-.source "AsyncTask.java"
 
 
 # annotations
@@ -82,14 +81,12 @@
 .method static constructor <clinit>()V
     .locals 11
 
-    .line 1
     new-instance v0, Lcom/amap/api/col/l3/ds$1;
 
     invoke-direct {v0}, Lcom/amap/api/col/l3/ds$1;-><init>()V
 
     sput-object v0, Lcom/amap/api/col/l3/ds;->d:Ljava/util/concurrent/ThreadFactory;
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/LinkedBlockingQueue;
 
     const/16 v1, 0xa
@@ -98,7 +95,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/ds;->e:Ljava/util/concurrent/BlockingQueue;
 
-    .line 3
     new-instance v0, Ljava/util/concurrent/ThreadPoolExecutor;
 
     sget-object v7, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
@@ -123,7 +119,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/ds;->a:Ljava/util/concurrent/Executor;
 
-    .line 4
     invoke-static {}, Lcom/amap/api/col/l3/em;->d()Z
 
     move-result v0
@@ -141,7 +136,6 @@
     :cond_0
     sget-object v0, Lcom/amap/api/col/l3/ds;->d:Ljava/util/concurrent/ThreadFactory;
 
-    .line 5
     invoke-static {v0}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
@@ -151,17 +145,14 @@
 
     const/4 v0, 0x2
 
-    .line 6
     sget-object v1, Lcom/amap/api/col/l3/ds;->d:Ljava/util/concurrent/ThreadFactory;
 
-    .line 7
     invoke-static {v0, v1}, Ljava/util/concurrent/Executors;->newFixedThreadPool(ILjava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
     sput-object v0, Lcom/amap/api/col/l3/ds;->c:Ljava/util/concurrent/Executor;
 
-    .line 8
     new-instance v0, Lcom/amap/api/col/l3/ds$b;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -172,7 +163,6 @@
 
     sput-object v0, Lcom/amap/api/col/l3/ds;->f:Lcom/amap/api/col/l3/ds$b;
 
-    .line 9
     sget-object v0, Lcom/amap/api/col/l3/ds;->b:Ljava/util/concurrent/Executor;
 
     sput-object v0, Lcom/amap/api/col/l3/ds;->g:Ljava/util/concurrent/Executor;
@@ -183,36 +173,30 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     sget-object v0, Lcom/amap/api/col/l3/ds$d;->a:Lcom/amap/api/col/l3/ds$d;
 
     iput-object v0, p0, Lcom/amap/api/col/l3/ds;->j:Lcom/amap/api/col/l3/ds$d;
 
-    .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/ds;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 4
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/ds;->l:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 5
     new-instance v0, Lcom/amap/api/col/l3/ds$2;
 
     invoke-direct {v0, p0}, Lcom/amap/api/col/l3/ds$2;-><init>(Lcom/amap/api/col/l3/ds;)V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/ds;->h:Lcom/amap/api/col/l3/ds$e;
 
-    .line 6
     new-instance v0, Lcom/amap/api/col/l3/ds$3;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/ds;->h:Lcom/amap/api/col/l3/ds$e;
@@ -227,7 +211,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/ds;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/ds;->c(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -238,7 +221,6 @@
 .method static synthetic a(Lcom/amap/api/col/l3/ds;)Ljava/util/concurrent/atomic/AtomicBoolean;
     .locals 0
 
-    .line 2
     iget-object p0, p0, Lcom/amap/api/col/l3/ds;->l:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-object p0
@@ -247,7 +229,6 @@
 .method static synthetic b(Lcom/amap/api/col/l3/ds;)Ljava/util/concurrent/FutureTask;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/amap/api/col/l3/ds;->i:Ljava/util/concurrent/FutureTask;
 
     return-object p0
@@ -267,7 +248,6 @@
 .method static synthetic b(Lcom/amap/api/col/l3/ds;Ljava/lang/Object;)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/ds;->l:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -290,7 +270,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/amap/api/col/l3/ds;->f:Lcom/amap/api/col/l3/ds$b;
 
     new-instance v1, Lcom/amap/api/col/l3/ds$a;
@@ -309,7 +288,6 @@
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
     return-object p1
@@ -318,7 +296,6 @@
 .method static synthetic c(Lcom/amap/api/col/l3/ds;Ljava/lang/Object;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ds;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -347,7 +324,6 @@
 .method public final a()Lcom/amap/api/col/l3/ds$d;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/ds;->j:Lcom/amap/api/col/l3/ds$d;
 
     return-object v0
@@ -365,14 +341,12 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/ds;->j:Lcom/amap/api/col/l3/ds$d;
 
     sget-object v1, Lcom/amap/api/col/l3/ds$d;->a:Lcom/amap/api/col/l3/ds$d;
 
     if-eq v0, v1, :cond_2
 
-    .line 5
     sget-object v0, Lcom/amap/api/col/l3/ds$4;->a:[I
 
     iget-object v1, p0, Lcom/amap/api/col/l3/ds;->j:Lcom/amap/api/col/l3/ds$d;
@@ -393,7 +367,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -403,7 +376,6 @@
 
     throw p1
 
-    .line 7
     :cond_1
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -413,19 +385,16 @@
 
     throw p1
 
-    .line 8
     :cond_2
     :goto_0
     sget-object v0, Lcom/amap/api/col/l3/ds$d;->b:Lcom/amap/api/col/l3/ds$d;
 
     iput-object v0, p0, Lcom/amap/api/col/l3/ds;->j:Lcom/amap/api/col/l3/ds$d;
 
-    .line 9
     iget-object v0, p0, Lcom/amap/api/col/l3/ds;->h:Lcom/amap/api/col/l3/ds$e;
 
     iput-object p2, v0, Lcom/amap/api/col/l3/ds$e;->b:[Ljava/lang/Object;
 
-    .line 10
     iget-object p2, p0, Lcom/amap/api/col/l3/ds;->i:Ljava/util/concurrent/FutureTask;
 
     invoke-interface {p1, p2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
@@ -462,7 +431,6 @@
         }
     .end annotation
 
-    .line 3
     sget-object v0, Lcom/amap/api/col/l3/ds;->g:Ljava/util/concurrent/Executor;
 
     invoke-virtual {p0, v0, p1}, Lcom/amap/api/col/l3/ds;->a(Ljava/util/concurrent/Executor;[Ljava/lang/Object;)Lcom/amap/api/col/l3/ds;
@@ -486,7 +454,6 @@
 .method public final c()Z
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/ds;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -499,14 +466,12 @@
 .method public final d()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ds;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/ds;->i:Ljava/util/concurrent/FutureTask;
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/FutureTask;->cancel(Z)Z

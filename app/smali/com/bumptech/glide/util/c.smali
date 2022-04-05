@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/util/c;
 .super Ljava/io/FilterInputStream;
-.source "ContentLengthInputStream.java"
 
 
 # instance fields
@@ -17,10 +16,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
 
-    .line 2
     iput-wide p2, p0, Lcom/bumptech/glide/util/c;->a:J
 
     return-void
@@ -36,7 +33,6 @@
 
     if-ltz p1, :cond_0
 
-    .line 2
     iget v0, p0, Lcom/bumptech/glide/util/c;->b:I
 
     add-int/2addr v0, p1
@@ -45,7 +41,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-wide v0, p0, Lcom/bumptech/glide/util/c;->a:J
 
@@ -64,7 +59,6 @@
     :goto_0
     return p1
 
-    .line 4
     :cond_1
     new-instance p1, Ljava/io/IOException;
 
@@ -106,7 +100,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/util/c;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/bumptech/glide/util/c;-><init>(Ljava/io/InputStream;J)V
@@ -126,7 +119,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-wide v0, p0, Lcom/bumptech/glide/util/c;->a:J
 
@@ -174,7 +166,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-super {p0}, Ljava/io/FilterInputStream;->read()I
 
@@ -189,13 +180,11 @@
     :cond_0
     const/4 v1, -0x1
 
-    .line 2
     :goto_0
     invoke-direct {p0, v1}, Lcom/bumptech/glide/util/c;->a(I)I
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     monitor-exit p0
 
     return v0
@@ -216,7 +205,6 @@
         }
     .end annotation
 
-    .line 4
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -238,7 +226,6 @@
 
     monitor-enter p0
 
-    .line 5
     :try_start_0
     invoke-super {p0, p1, p2, p3}, Ljava/io/FilterInputStream;->read([BII)I
 

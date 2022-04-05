@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;
 .super Ljava/lang/Object;
-.source "MapFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment;Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->hasResult()Z
@@ -51,7 +48,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->getResult()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate$SEAL_ST_UERR;
@@ -62,7 +58,6 @@
 
     if-ne v0, v1, :cond_2
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->hasCh1()Z
@@ -71,14 +66,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->getCh1()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;->hasChNo()Z
 
     move-result v1
@@ -103,7 +96,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 6
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/g0;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -112,7 +104,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->a(Lcom/ifengyu/intercom/ui/fragment/MapFragment;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->f(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -121,7 +112,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->f(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -136,7 +126,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 9
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v2, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bottomChannelName:Landroid/widget/TextView;
@@ -151,14 +140,12 @@
 
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bottomChannelNumber:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bottomChannelNumber:Landroid/widget/TextView;
@@ -179,7 +166,6 @@
 
     goto/16 :goto_1
 
-    .line 12
     :cond_0
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
@@ -215,7 +201,6 @@
 
     move-result-object v0
 
-    .line 13
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {v2}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->f(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -236,7 +221,6 @@
 
     if-nez v2, :cond_1
 
-    .line 14
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v2, v2, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bottomChannelName:Landroid/widget/TextView;
@@ -245,7 +229,6 @@
 
     goto :goto_0
 
-    .line 15
     :cond_1
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
@@ -283,7 +266,6 @@
 
     invoke-virtual {v2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 16
     :goto_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
@@ -291,7 +273,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextSize(F)V
 
-    .line 17
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$d;->b:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v1, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->bottomChannelNumber:Landroid/widget/TextView;

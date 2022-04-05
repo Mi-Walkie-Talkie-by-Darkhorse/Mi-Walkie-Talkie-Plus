@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/transformation/FabTransformationSheetBehavior;
 .super Lcom/google/android/material/transformation/FabTransformationBehavior;
-.source "FabTransformationSheetBehavior.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/android/material/transformation/FabTransformationBehavior;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/google/android/material/transformation/FabTransformationBehavior;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -50,28 +47,23 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
-    .line 2
     instance-of v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
     if-nez v1, :cond_0
 
     return-void
 
-    .line 3
     :cond_0
     check-cast v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;
 
-    .line 4
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v1
 
-    .line 5
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v3, 0x10
@@ -80,7 +72,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 6
     new-instance v2, Ljava/util/HashMap;
 
     invoke-direct {v2, v1}, Ljava/util/HashMap;-><init>(I)V
@@ -95,12 +86,10 @@
     :goto_0
     if-ge v4, v1, :cond_7
 
-    .line 7
     invoke-virtual {v0, v4}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v5
 
-    .line 8
     invoke-virtual {v5}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v6
@@ -109,7 +98,6 @@
 
     if-eqz v6, :cond_2
 
-    .line 9
     invoke-virtual {v5}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v6
@@ -141,19 +129,16 @@
     :cond_3
     if-nez p2, :cond_4
 
-    .line 10
     iget-object v6, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->importantForAccessibilityMap:Ljava/util/Map;
 
     if-eqz v6, :cond_6
 
-    .line 11
     invoke-interface {v6, v5}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v6
 
     if-eqz v6, :cond_6
 
-    .line 12
     iget-object v6, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->importantForAccessibilityMap:Ljava/util/Map;
 
     invoke-interface {v6, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -170,13 +155,11 @@
 
     goto :goto_2
 
-    .line 13
     :cond_4
     sget v6, Landroid/os/Build$VERSION;->SDK_INT:I
 
     if-lt v6, v3, :cond_5
 
-    .line 14
     iget-object v6, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->importantForAccessibilityMap:Ljava/util/Map;
 
     invoke-virtual {v5}, Landroid/view/View;->getImportantForAccessibility()I
@@ -192,7 +175,6 @@
     :cond_5
     const/4 v6, 0x4
 
-    .line 15
     invoke-static {v5, v6}, Landroidx/core/view/ViewCompat;->i(Landroid/view/View;I)V
 
     :cond_6
@@ -206,7 +188,6 @@
 
     const/4 p1, 0x0
 
-    .line 16
     iput-object p1, p0, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->importantForAccessibilityMap:Ljava/util/Map;
 
     :cond_8
@@ -222,29 +203,24 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     sget p2, Lcom/google/android/material/R$animator;->mtrl_fab_transformation_sheet_expand_spec:I
 
     goto :goto_0
 
-    .line 2
     :cond_0
     sget p2, Lcom/google/android/material/R$animator;->mtrl_fab_transformation_sheet_collapse_spec:I
 
-    .line 3
     :goto_0
     new-instance v0, Lcom/google/android/material/transformation/FabTransformationBehavior$FabTransformationSpec;
 
     invoke-direct {v0}, Lcom/google/android/material/transformation/FabTransformationBehavior$FabTransformationSpec;-><init>()V
 
-    .line 4
     invoke-static {p1, p2}, Lcom/google/android/material/animation/MotionSpec;->createFromResource(Landroid/content/Context;I)Lcom/google/android/material/animation/MotionSpec;
 
     move-result-object p1
 
     iput-object p1, v0, Lcom/google/android/material/transformation/FabTransformationBehavior$FabTransformationSpec;->timings:Lcom/google/android/material/animation/MotionSpec;
 
-    .line 5
     new-instance p1, Lcom/google/android/material/animation/Positioning;
 
     const/16 p2, 0x11
@@ -271,10 +247,8 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     invoke-direct {p0, p2, p3}, Lcom/google/android/material/transformation/FabTransformationSheetBehavior;->updateImportantForAccessibility(Landroid/view/View;Z)V
 
-    .line 2
     invoke-super {p0, p1, p2, p3, p4}, Lcom/google/android/material/transformation/ExpandableTransformationBehavior;->onExpandedStateChange(Landroid/view/View;Landroid/view/View;ZZ)Z
 
     move-result p1

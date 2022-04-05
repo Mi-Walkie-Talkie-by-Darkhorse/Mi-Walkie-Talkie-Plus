@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/component/view/TitleBar$a;
 .super Ljava/lang/Object;
-.source "TitleBar.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -25,10 +24,8 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/component/view/TitleBar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/component/view/TitleBar$a;->a:Lcom/sina/weibo/sdk/component/view/TitleBar;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -39,7 +36,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/view/TitleBar$a;->a:Lcom/sina/weibo/sdk/component/view/TitleBar;
 
     invoke-static {p1}, Lcom/sina/weibo/sdk/component/view/TitleBar;->a(Lcom/sina/weibo/sdk/component/view/TitleBar;)Lcom/sina/weibo/sdk/component/view/TitleBar$b;
@@ -48,7 +44,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/sina/weibo/sdk/component/view/TitleBar$a;->a:Lcom/sina/weibo/sdk/component/view/TitleBar;
 
     invoke-static {p1}, Lcom/sina/weibo/sdk/component/view/TitleBar;->a(Lcom/sina/weibo/sdk/component/view/TitleBar;)Lcom/sina/weibo/sdk/component/view/TitleBar$b;

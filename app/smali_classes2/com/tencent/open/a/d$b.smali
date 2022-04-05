@@ -1,6 +1,5 @@
 .class public final Lcom/tencent/open/a/d$b;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # annotations
@@ -18,14 +17,12 @@
 .method public static a()Z
     .locals 2
 
-    .line 1
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "mounted"
 
-    .line 2
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -58,7 +55,6 @@
 .method public static b()Lcom/tencent/open/a/d$c;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/tencent/open/a/d$b;->a()Z
 
     move-result v0
@@ -69,7 +65,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     invoke-static {}, Landroid/os/Environment;->getExternalStorageDirectory()Ljava/io/File;
 

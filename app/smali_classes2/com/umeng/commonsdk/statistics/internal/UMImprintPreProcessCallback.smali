@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/commonsdk/statistics/internal/UMImprintPreProcessCallback;
 .super Ljava/lang/Object;
-.source "UMImprintPreProcessCallback.java"
 
 
 # virtual methods

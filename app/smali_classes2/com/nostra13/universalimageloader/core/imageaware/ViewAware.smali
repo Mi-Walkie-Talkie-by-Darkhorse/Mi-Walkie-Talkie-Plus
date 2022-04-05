@@ -1,6 +1,5 @@
 .class public abstract Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;
 .super Ljava/lang/Object;
-.source "ViewAware.java"
 
 # interfaces
 .implements Lcom/nostra13/universalimageloader/core/imageaware/ImageAware;
@@ -32,7 +31,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;-><init>(Landroid/view/View;Z)V
 
     return-void
@@ -41,24 +39,20 @@
 .method public constructor <init>(Landroid/view/View;Z)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     if-eqz p1, :cond_0
 
-    .line 3
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     iput-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->viewRef:Ljava/lang/ref/Reference;
 
-    .line 4
     iput-boolean p2, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->checkActualViewSize:Z
 
     return-void
 
-    .line 5
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -74,7 +68,6 @@
 .method public getHeight()I
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->viewRef:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
@@ -87,12 +80,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v2
 
-    .line 3
     iget-boolean v3, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->checkActualViewSize:Z
 
     if-eqz v3, :cond_0
@@ -105,7 +96,6 @@
 
     if-eq v3, v4, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
     move-result v1
@@ -115,7 +105,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 5
     iget v1, v2, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     :cond_1
@@ -125,7 +114,6 @@
 .method public getId()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->viewRef:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
@@ -136,7 +124,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-super {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
@@ -155,7 +142,6 @@
 .method public getScaleType()Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;->CROP:Lcom/nostra13/universalimageloader/core/assist/ViewScaleType;
 
     return-object v0
@@ -164,7 +150,6 @@
 .method public getWidth()I
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->viewRef:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
@@ -177,12 +162,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v2
 
-    .line 3
     iget-boolean v3, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->checkActualViewSize:Z
 
     if-eqz v3, :cond_0
@@ -195,7 +178,6 @@
 
     if-eq v3, v4, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
 
     move-result v1
@@ -205,7 +187,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 5
     iget v1, v2, Landroid/view/ViewGroup$LayoutParams;->width:I
 
     :cond_1
@@ -215,7 +196,6 @@
 .method public getWrappedView()Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->viewRef:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
@@ -230,7 +210,6 @@
 .method public isCollected()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->viewRef:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
@@ -253,7 +232,6 @@
 .method public setImageBitmap(Landroid/graphics/Bitmap;)Z
     .locals 3
 
-    .line 1
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -266,7 +244,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->viewRef:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
@@ -277,7 +254,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {p0, p1, v0}, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->setImageBitmapInto(Landroid/graphics/Bitmap;Landroid/view/View;)V
 
     const/4 p1, 0x1
@@ -289,7 +265,6 @@
 
     const-string v0, "Can\'t set a bitmap into view. You should call ImageLoader on UI thread for it."
 
-    .line 4
     invoke-static {v0, p1}, Lcom/nostra13/universalimageloader/utils/L;->w(Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_1
@@ -302,7 +277,6 @@
 .method public setImageDrawable(Landroid/graphics/drawable/Drawable;)Z
     .locals 3
 
-    .line 1
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -315,7 +289,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->viewRef:Ljava/lang/ref/Reference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
@@ -326,7 +299,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {p0, p1, v0}, Lcom/nostra13/universalimageloader/core/imageaware/ViewAware;->setImageDrawableInto(Landroid/graphics/drawable/Drawable;Landroid/view/View;)V
 
     const/4 p1, 0x1
@@ -338,7 +310,6 @@
 
     const-string v0, "Can\'t set a drawable into view. You should call ImageLoader on UI thread for it."
 
-    .line 4
     invoke-static {v0, p1}, Lcom/nostra13/universalimageloader/utils/L;->w(Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_1

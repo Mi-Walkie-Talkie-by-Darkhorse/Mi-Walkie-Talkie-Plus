@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/TDialog$JsListener;
 .super Lcom/tencent/open/a$b;
-.source "ProGuard"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method private constructor <init>(Lcom/tencent/open/TDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-direct {p0}, Lcom/tencent/open/a$b;-><init>()V
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/tencent/open/TDialog;Lcom/tencent/open/TDialog$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/tencent/open/TDialog$JsListener;-><init>(Lcom/tencent/open/TDialog;)V
 
     return-void
@@ -48,10 +45,8 @@
 
     const-string v1, "JsListener onAddShare"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/tencent/open/TDialog$JsListener;->onComplete(Ljava/lang/String;)V
 
     return-void
@@ -60,7 +55,6 @@
 .method public onCancel(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -79,7 +73,6 @@
 
     invoke-static {v1, v0}, Lcom/tencent/open/a/f;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->b(Lcom/tencent/open/TDialog;)Landroid/os/Handler;
@@ -94,7 +87,6 @@
 
     invoke-virtual {p1}, Landroid/os/Message;->sendToTarget()V
 
-    .line 3
     iget-object p1, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
@@ -105,7 +97,6 @@
 .method public onCancelAddShare(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -126,7 +117,6 @@
 
     const-string p1, "cancel"
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/tencent/open/TDialog$JsListener;->onCancel(Ljava/lang/String;)V
 
     return-void
@@ -139,12 +129,10 @@
 
     const-string v1, "JsListener onCancelInvite"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, ""
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/tencent/open/TDialog$JsListener;->onCancel(Ljava/lang/String;)V
 
     return-void
@@ -155,7 +143,6 @@
 
     const-string v0, ""
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/tencent/open/TDialog$JsListener;->onCancel(Ljava/lang/String;)V
 
     return-void
@@ -164,7 +151,6 @@
 .method public onComplete(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->b(Lcom/tencent/open/TDialog;)Landroid/os/Handler;
@@ -179,7 +165,6 @@
 
     invoke-virtual {v0}, Landroid/os/Message;->sendToTarget()V
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -198,7 +183,6 @@
 
     invoke-static {v0, p1}, Lcom/tencent/open/a/f;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     iget-object p1, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
@@ -209,7 +193,6 @@
 .method public onInvite(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/tencent/open/TDialog$JsListener;->onComplete(Ljava/lang/String;)V
 
     return-void
@@ -218,7 +201,6 @@
 .method public onLoad(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->b(Lcom/tencent/open/TDialog;)Landroid/os/Handler;
@@ -239,7 +221,6 @@
 .method public showMsg(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/open/TDialog$JsListener;->a:Lcom/tencent/open/TDialog;
 
     invoke-static {v0}, Lcom/tencent/open/TDialog;->b(Lcom/tencent/open/TDialog;)Landroid/os/Handler;

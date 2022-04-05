@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/modules/MapTileDownloader$TileLoader;
 .super Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$TileLoader;
-.source "MapTileDownloader.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method protected constructor <init>(Lorg/osmdroid/tileprovider/modules/MapTileDownloader;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/modules/MapTileDownloader$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileDownloader;
 
     invoke-direct {p0, p1}, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$TileLoader;-><init>(Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;)V
@@ -46,7 +44,6 @@
 
     const-string v3, "OsmDroid"
 
-    .line 1
     iget-object v4, v1, Lorg/osmdroid/tileprovider/modules/MapTileDownloader$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileDownloader;
 
     invoke-static {v4}, Lorg/osmdroid/tileprovider/modules/MapTileDownloader;->access$000(Lorg/osmdroid/tileprovider/modules/MapTileDownloader;)Ljava/util/concurrent/atomic/AtomicReference;
@@ -65,7 +62,6 @@
 
     return-object v5
 
-    .line 2
     :cond_0
     invoke-virtual/range {p1 .. p1}, Lorg/osmdroid/tileprovider/MapTileRequestState;->getMapTile()Lorg/osmdroid/tileprovider/MapTile;
 
@@ -73,7 +69,6 @@
 
     const/4 v7, 0x1
 
-    .line 3
     :try_start_0
     iget-object v8, v1, Lorg/osmdroid/tileprovider/modules/MapTileDownloader$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileDownloader;
     :try_end_0
@@ -99,7 +94,6 @@
     :try_start_2
     iget-object v8, v1, Lorg/osmdroid/tileprovider/modules/MapTileDownloader$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileDownloader;
 
-    .line 4
     invoke-static {v8}, Lorg/osmdroid/tileprovider/modules/MapTileDownloader;->access$100(Lorg/osmdroid/tileprovider/modules/MapTileDownloader;)Lorg/osmdroid/tileprovider/modules/INetworkAvailablityCheck;
 
     move-result-object v8
@@ -110,7 +104,6 @@
 
     if-nez v8, :cond_2
 
-    .line 5
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v4
@@ -121,7 +114,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 6
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -154,14 +146,11 @@
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 7
     :cond_1
     invoke-static {v5}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 8
     invoke-static {v5}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 9
     :try_start_3
     invoke-virtual {v5}, Ljava/net/HttpURLConnection;->disconnect()V
     :try_end_3
@@ -231,14 +220,12 @@
 
     goto/16 :goto_c
 
-    .line 10
     :cond_2
     :try_start_4
     invoke-virtual {v4, v6}, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;->getTileURLString(Lorg/osmdroid/tileprovider/MapTile;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 11
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v9
@@ -255,7 +242,6 @@
 
     if-eqz v9, :cond_3
 
-    .line 12
     :try_start_5
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -279,7 +265,6 @@
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_1
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
-    .line 13
     :cond_3
     :try_start_6
     invoke-static {v8}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -294,13 +279,10 @@
 
     if-eqz v9, :cond_4
 
-    .line 14
     invoke-static {v5}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 15
     invoke-static {v5}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 16
     :try_start_7
     invoke-virtual {v5}, Ljava/net/HttpURLConnection;->disconnect()V
     :try_end_7
@@ -309,7 +291,6 @@
     :catch_5
     return-object v5
 
-    .line 17
     :cond_4
     :try_start_8
     new-instance v9, Ljava/net/URL;
@@ -328,11 +309,9 @@
     .catch Ljava/io/IOException; {:try_start_8 .. :try_end_8} :catch_1c
     .catchall {:try_start_8 .. :try_end_8} :catchall_5
 
-    .line 18
     :try_start_9
     invoke-virtual {v9, v7}, Ljava/net/HttpURLConnection;->setUseCaches(Z)V
 
-    .line 19
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v10
@@ -351,10 +330,8 @@
 
     invoke-virtual {v9, v10, v11}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 20
     invoke-virtual {v9}, Ljava/net/HttpURLConnection;->connect()V
 
-    .line 21
     invoke-virtual {v9}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result v10
@@ -369,7 +346,6 @@
 
     if-eq v10, v11, :cond_6
 
-    .line 22
     :try_start_a
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -397,7 +373,6 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 23
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v4
@@ -408,10 +383,8 @@
 
     if-eqz v4, :cond_5
 
-    .line 24
     invoke-static {v3, v8}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 25
     :cond_5
     sget v4, Lorg/osmdroid/tileprovider/util/Counters;->tileDownloadErrors:I
 
@@ -425,13 +398,10 @@
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_7
     .catchall {:try_start_a .. :try_end_a} :catchall_1
 
-    .line 26
     invoke-static {v5}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 27
     invoke-static {v5}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 28
     :try_start_b
     invoke-virtual {v9}, Ljava/net/HttpURLConnection;->disconnect()V
     :try_end_b
@@ -491,7 +461,6 @@
 
     goto/16 :goto_c
 
-    .line 29
     :cond_6
     :try_start_c
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
@@ -510,7 +479,6 @@
 
     if-eqz v10, :cond_7
 
-    .line 30
     :try_start_d
     new-instance v10, Ljava/lang/StringBuilder;
 
@@ -534,7 +502,6 @@
     .catch Ljava/io/IOException; {:try_start_d .. :try_end_d} :catch_7
     .catchall {:try_start_d .. :try_end_d} :catchall_1
 
-    .line 31
     :cond_7
     :try_start_e
     invoke-virtual {v9}, Ljava/net/HttpURLConnection;->getInputStream()Ljava/io/InputStream;
@@ -547,13 +514,11 @@
     .catch Ljava/io/IOException; {:try_start_e .. :try_end_e} :catch_15
     .catchall {:try_start_e .. :try_end_e} :catchall_4
 
-    .line 32
     :try_start_f
     new-instance v10, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v10}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 33
     new-instance v11, Ljava/io/BufferedOutputStream;
 
     const/16 v12, 0x2000
@@ -566,7 +531,6 @@
     .catch Ljava/io/IOException; {:try_start_f .. :try_end_f} :catch_11
     .catchall {:try_start_f .. :try_end_f} :catchall_3
 
-    .line 34
     :try_start_10
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
@@ -578,7 +542,6 @@
 
     if-eqz v12, :cond_8
 
-    .line 35
     new-instance v13, Ljava/util/Date;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -595,7 +558,6 @@
 
     goto :goto_0
 
-    .line 36
     :cond_8
     new-instance v13, Ljava/util/Date;
 
@@ -621,14 +583,12 @@
 
     const-string v12, "Expires"
 
-    .line 37
     invoke-virtual {v9, v12}, Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v12
 
     if-eqz v12, :cond_9
 
-    .line 38
     invoke-virtual {v12}, Ljava/lang/String;->length()I
 
     move-result v14
@@ -641,7 +601,6 @@
 
     if-lez v14, :cond_9
 
-    .line 39
     :try_start_11
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
@@ -655,7 +614,6 @@
 
     move-result-object v13
 
-    .line 40
     invoke-virtual {v13}, Ljava/util/Date;->getTime()J
 
     move-result-wide v14
@@ -682,7 +640,6 @@
 
     move-object v14, v0
 
-    .line 41
     :try_start_12
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
@@ -694,7 +651,6 @@
 
     if-eqz v15, :cond_9
 
-    .line 42
     new-instance v15, Ljava/lang/StringBuilder;
 
     invoke-direct {v15}, Ljava/lang/StringBuilder;-><init>()V
@@ -711,28 +667,22 @@
 
     invoke-static {v3, v5, v14}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 43
     :cond_9
     :goto_0
     invoke-virtual {v6, v13}, Lorg/osmdroid/tileprovider/MapTile;->setExpires(Ljava/util/Date;)V
 
-    .line 44
     invoke-static {v8, v11}, Lorg/osmdroid/tileprovider/util/StreamUtils;->copy(Ljava/io/InputStream;Ljava/io/OutputStream;)J
 
-    .line 45
     invoke-virtual {v11}, Ljava/io/OutputStream;->flush()V
 
-    .line 46
     invoke-virtual {v10}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v5
 
-    .line 47
     new-instance v10, Ljava/io/ByteArrayInputStream;
 
     invoke-direct {v10, v5}, Ljava/io/ByteArrayInputStream;-><init>([B)V
 
-    .line 48
     iget-object v5, v1, Lorg/osmdroid/tileprovider/modules/MapTileDownloader$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileDownloader;
 
     invoke-static {v5}, Lorg/osmdroid/tileprovider/modules/MapTileDownloader;->access$200(Lorg/osmdroid/tileprovider/modules/MapTileDownloader;)Lorg/osmdroid/tileprovider/modules/IFilesystemCache;
@@ -741,7 +691,6 @@
 
     if-eqz v5, :cond_a
 
-    .line 49
     iget-object v5, v1, Lorg/osmdroid/tileprovider/modules/MapTileDownloader$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileDownloader;
 
     invoke-static {v5}, Lorg/osmdroid/tileprovider/modules/MapTileDownloader;->access$200(Lorg/osmdroid/tileprovider/modules/MapTileDownloader;)Lorg/osmdroid/tileprovider/modules/IFilesystemCache;
@@ -750,10 +699,8 @@
 
     invoke-interface {v5, v4, v6, v10}, Lorg/osmdroid/tileprovider/modules/IFilesystemCache;->saveFile(Lorg/osmdroid/tileprovider/tilesource/ITileSource;Lorg/osmdroid/tileprovider/MapTile;Ljava/io/InputStream;)Z
 
-    .line 50
     invoke-virtual {v10}, Ljava/io/ByteArrayInputStream;->reset()V
 
-    .line 51
     :cond_a
     invoke-virtual {v4, v10}, Lorg/osmdroid/tileprovider/tilesource/BitmapTileSourceBase;->getDrawable(Ljava/io/InputStream;)Landroid/graphics/drawable/Drawable;
 
@@ -765,13 +712,10 @@
     .catch Ljava/io/IOException; {:try_start_12 .. :try_end_12} :catch_d
     .catchall {:try_start_12 .. :try_end_12} :catchall_2
 
-    .line 52
     invoke-static {v8}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 53
     invoke-static {v11}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 54
     :try_start_13
     invoke-virtual {v9}, Ljava/net/HttpURLConnection;->disconnect()V
     :try_end_13
@@ -943,7 +887,6 @@
     :goto_3
     const/4 v11, 0x0
 
-    .line 55
     :goto_4
     :try_start_14
     sget v4, Lorg/osmdroid/tileprovider/util/Counters;->tileDownloadErrors:I
@@ -952,7 +895,6 @@
 
     sput v4, Lorg/osmdroid/tileprovider/util/Counters;->tileDownloadErrors:I
 
-    .line 56
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -971,13 +913,10 @@
     :try_end_14
     .catchall {:try_start_14 .. :try_end_14} :catchall_6
 
-    .line 57
     invoke-static {v8}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 58
     invoke-static {v11}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 59
     :goto_5
     :try_start_15
     invoke-virtual {v9}, Ljava/net/HttpURLConnection;->disconnect()V
@@ -1001,7 +940,6 @@
     :goto_6
     const/4 v11, 0x0
 
-    .line 60
     :goto_7
     :try_start_16
     sget v5, Lorg/osmdroid/tileprovider/util/Counters;->tileDownloadErrors:I
@@ -1010,7 +948,6 @@
 
     sput v5, Lorg/osmdroid/tileprovider/util/Counters;->tileDownloadErrors:I
 
-    .line 61
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -1033,10 +970,8 @@
     :try_end_16
     .catchall {:try_start_16 .. :try_end_16} :catchall_6
 
-    .line 62
     invoke-static {v8}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 63
     invoke-static {v11}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
     goto :goto_5
@@ -1053,7 +988,6 @@
     :goto_8
     const/4 v11, 0x0
 
-    .line 64
     :goto_9
     :try_start_17
     sget v5, Lorg/osmdroid/tileprovider/util/Counters;->tileDownloadErrors:I
@@ -1062,7 +996,6 @@
 
     sput v5, Lorg/osmdroid/tileprovider/util/Counters;->tileDownloadErrors:I
 
-    .line 65
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -1085,10 +1018,8 @@
     :try_end_17
     .catchall {:try_start_17 .. :try_end_17} :catchall_6
 
-    .line 66
     invoke-static {v8}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 67
     invoke-static {v11}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
     goto :goto_5
@@ -1114,7 +1045,6 @@
 
     move-object v4, v0
 
-    .line 68
     :goto_b
     :try_start_18
     sget v8, Lorg/osmdroid/tileprovider/util/Counters;->countOOM:I
@@ -1123,7 +1053,6 @@
 
     sput v8, Lorg/osmdroid/tileprovider/util/Counters;->countOOM:I
 
-    .line 69
     new-instance v7, Ljava/lang/StringBuilder;
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
@@ -1144,7 +1073,6 @@
 
     invoke-static {v3, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 70
     new-instance v2, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$CantContinueException;
 
     iget-object v3, v1, Lorg/osmdroid/tileprovider/modules/MapTileDownloader$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileDownloader;
@@ -1173,7 +1101,6 @@
 
     move-object v4, v0
 
-    .line 71
     :goto_c
     new-instance v8, Ljava/lang/StringBuilder;
 
@@ -1195,14 +1122,12 @@
 
     invoke-static {v3, v2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 72
     sget v2, Lorg/osmdroid/tileprovider/util/Counters;->tileDownloadErrors:I
 
     add-int/2addr v2, v7
 
     sput v2, Lorg/osmdroid/tileprovider/util/Counters;->tileDownloadErrors:I
 
-    .line 73
     new-instance v2, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$CantContinueException;
 
     iget-object v3, v1, Lorg/osmdroid/tileprovider/modules/MapTileDownloader$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileDownloader;
@@ -1213,20 +1138,16 @@
     :try_end_18
     .catchall {:try_start_18 .. :try_end_18} :catchall_7
 
-    .line 74
     :goto_d
     invoke-static {v8}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 75
     invoke-static {v11}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
-    .line 76
     :try_start_19
     invoke-virtual {v9}, Ljava/net/HttpURLConnection;->disconnect()V
     :try_end_19
     .catch Ljava/lang/Exception; {:try_start_19 .. :try_end_19} :catch_20
 
-    .line 77
     :catch_20
     throw v2
 .end method
@@ -1234,7 +1155,6 @@
 .method protected tileLoaded(Lorg/osmdroid/tileprovider/MapTileRequestState;Landroid/graphics/drawable/Drawable;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileDownloader$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileDownloader;
 
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTileRequestState;->getMapTile()Lorg/osmdroid/tileprovider/MapTile;
@@ -1243,7 +1163,6 @@
 
     invoke-virtual {v0, v1}, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;->removeTileFromQueues(Lorg/osmdroid/tileprovider/MapTile;)V
 
-    .line 2
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTileRequestState;->getCallback()Lorg/osmdroid/tileprovider/IMapTileProviderCallback;
 
     move-result-object v0
@@ -1252,12 +1171,10 @@
 
     invoke-interface {v0, p1, v1}, Lorg/osmdroid/tileprovider/IMapTileProviderCallback;->mapTileRequestCompleted(Lorg/osmdroid/tileprovider/MapTileRequestState;Landroid/graphics/drawable/Drawable;)V
 
-    .line 3
     instance-of p1, p2, Lorg/osmdroid/tileprovider/ReusableBitmapDrawable;
 
     if-eqz p1, :cond_0
 
-    .line 4
     invoke-static {}, Lorg/osmdroid/tileprovider/BitmapPool;->getInstance()Lorg/osmdroid/tileprovider/BitmapPool;
 
     move-result-object p1

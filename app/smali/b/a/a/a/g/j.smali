@@ -1,6 +1,5 @@
 .class public Lb/a/a/a/g/j;
 .super Ljava/lang/Object;
-.source "ViewPortHandler.java"
 
 
 # instance fields
@@ -41,17 +40,14 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v0, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
-    .line 3
     new-instance v0, Landroid/graphics/RectF;
 
     invoke-direct {v0}, Landroid/graphics/RectF;-><init>()V
@@ -60,47 +56,34 @@
 
     const/4 v0, 0x0
 
-    .line 4
     iput v0, p0, Lb/a/a/a/g/j;->c:F
 
-    .line 5
     iput v0, p0, Lb/a/a/a/g/j;->d:F
 
     const/high16 v1, 0x3f800000    # 1.0f
 
-    .line 6
     iput v1, p0, Lb/a/a/a/g/j;->e:F
 
     const v2, 0x7f7fffff    # Float.MAX_VALUE
 
-    .line 7
     iput v2, p0, Lb/a/a/a/g/j;->f:F
 
-    .line 8
     iput v1, p0, Lb/a/a/a/g/j;->g:F
 
-    .line 9
     iput v2, p0, Lb/a/a/a/g/j;->h:F
 
-    .line 10
     iput v1, p0, Lb/a/a/a/g/j;->i:F
 
-    .line 11
     iput v1, p0, Lb/a/a/a/g/j;->j:F
 
-    .line 12
     iput v0, p0, Lb/a/a/a/g/j;->k:F
 
-    .line 13
     iput v0, p0, Lb/a/a/a/g/j;->l:F
 
-    .line 14
     iput v0, p0, Lb/a/a/a/g/j;->m:F
 
-    .line 15
     iput v0, p0, Lb/a/a/a/g/j;->n:F
 
-    .line 16
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
@@ -111,7 +94,6 @@
 
     new-array v0, v0, [F
 
-    .line 17
     iput-object v0, p0, Lb/a/a/a/g/j;->p:[F
 
     return-void
@@ -122,12 +104,10 @@
 .method public a(Landroid/graphics/Matrix;Landroid/view/View;Z)Landroid/graphics/Matrix;
     .locals 2
 
-    .line 12
     iget-object v0, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
-    .line 13
     iget-object v0, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
     iget-object v1, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
@@ -136,10 +116,8 @@
 
     if-eqz p3, :cond_0
 
-    .line 14
     invoke-virtual {p2}, Landroid/view/View;->invalidate()V
 
-    .line 15
     :cond_0
     iget-object p2, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
@@ -151,7 +129,6 @@
 .method public a(FFFF)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     iget v1, p0, Lb/a/a/a/g/j;->c:F
@@ -170,15 +147,12 @@
 .method public a(FFFFLandroid/graphics/Matrix;)V
     .locals 1
 
-    .line 2
     invoke-virtual {p5}, Landroid/graphics/Matrix;->reset()V
 
-    .line 3
     iget-object v0, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
     invoke-virtual {p5, v0}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
-    .line 4
     invoke-virtual {p5, p1, p2, p3, p4}, Landroid/graphics/Matrix;->postScale(FFFF)Z
 
     return-void
@@ -187,12 +161,10 @@
 .method public a(Landroid/graphics/Matrix;Landroid/graphics/RectF;)V
     .locals 9
 
-    .line 16
     iget-object v0, p0, Lb/a/a/a/g/j;->p:[F
 
     invoke-virtual {p1, v0}, Landroid/graphics/Matrix;->getValues([F)V
 
-    .line 17
     iget-object v0, p0, Lb/a/a/a/g/j;->p:[F
 
     const/4 v1, 0x2
@@ -201,20 +173,16 @@
 
     const/4 v3, 0x0
 
-    .line 18
     aget v4, v0, v3
 
     const/4 v5, 0x5
 
-    .line 19
     aget v6, v0, v5
 
     const/4 v7, 0x4
 
-    .line 20
     aget v0, v0, v7
 
-    .line 21
     iget v8, p0, Lb/a/a/a/g/j;->g:F
 
     invoke-static {v8, v4}, Ljava/lang/Math;->max(FF)F
@@ -229,7 +197,6 @@
 
     iput v4, p0, Lb/a/a/a/g/j;->i:F
 
-    .line 22
     iget v4, p0, Lb/a/a/a/g/j;->e:F
 
     invoke-static {v4, v0}, Ljava/lang/Math;->max(FF)F
@@ -248,12 +215,10 @@
 
     if-eqz p2, :cond_0
 
-    .line 23
     invoke-virtual {p2}, Landroid/graphics/RectF;->width()F
 
     move-result v0
 
-    .line 24
     invoke-virtual {p2}, Landroid/graphics/RectF;->height()F
 
     move-result p2
@@ -266,7 +231,6 @@
     :goto_0
     neg-float v0, v0
 
-    .line 25
     iget v4, p0, Lb/a/a/a/g/j;->i:F
 
     const/high16 v8, 0x3f800000    # 1.0f
@@ -275,7 +239,6 @@
 
     mul-float v0, v0, v4
 
-    .line 26
     iget v4, p0, Lb/a/a/a/g/j;->m:F
 
     sub-float/2addr v0, v4
@@ -292,14 +255,12 @@
 
     iput v0, p0, Lb/a/a/a/g/j;->k:F
 
-    .line 27
     iget v0, p0, Lb/a/a/a/g/j;->j:F
 
     sub-float/2addr v0, v8
 
     mul-float p2, p2, v0
 
-    .line 28
     iget v0, p0, Lb/a/a/a/g/j;->n:F
 
     add-float/2addr p2, v0
@@ -318,27 +279,22 @@
 
     iput p2, p0, Lb/a/a/a/g/j;->l:F
 
-    .line 29
     iget-object v0, p0, Lb/a/a/a/g/j;->p:[F
 
     iget v2, p0, Lb/a/a/a/g/j;->k:F
 
     aput v2, v0, v1
 
-    .line 30
     iget v1, p0, Lb/a/a/a/g/j;->i:F
 
     aput v1, v0, v3
 
-    .line 31
     aput p2, v0, v5
 
-    .line 32
     iget p2, p0, Lb/a/a/a/g/j;->j:F
 
     aput p2, v0, v7
 
-    .line 33
     invoke-virtual {p1, v0}, Landroid/graphics/Matrix;->setValues([F)V
 
     return-void
@@ -347,20 +303,16 @@
 .method public a([FLandroid/view/View;)V
     .locals 4
 
-    .line 5
     iget-object v0, p0, Lb/a/a/a/g/j;->o:Landroid/graphics/Matrix;
 
-    .line 6
     invoke-virtual {v0}, Landroid/graphics/Matrix;->reset()V
 
-    .line 7
     iget-object v1, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
     const/4 v1, 0x0
 
-    .line 8
     aget v1, p1, v1
 
     invoke-virtual {p0}, Lb/a/a/a/g/j;->x()F
@@ -371,7 +323,6 @@
 
     const/4 v2, 0x1
 
-    .line 9
     aget p1, p1, v2
 
     invoke-virtual {p0}, Lb/a/a/a/g/j;->z()F
@@ -384,10 +335,8 @@
 
     neg-float p1, p1
 
-    .line 10
     invoke-virtual {v0, v1, p1}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
-    .line 11
     invoke-virtual {p0, v0, p2, v2}, Lb/a/a/a/g/j;->a(Landroid/graphics/Matrix;Landroid/view/View;Z)Landroid/graphics/Matrix;
 
     return-void
@@ -396,7 +345,6 @@
 .method public a()Z
     .locals 2
 
-    .line 36
     iget v0, p0, Lb/a/a/a/g/j;->i:F
 
     iget v1, p0, Lb/a/a/a/g/j;->h:F
@@ -429,7 +377,6 @@
 
     div-float/2addr p1, v0
 
-    .line 35
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->bottom:F
@@ -452,7 +399,6 @@
 .method public a(FF)Z
     .locals 0
 
-    .line 34
     invoke-virtual {p0, p1}, Lb/a/a/a/g/j;->e(F)Z
 
     move-result p1
@@ -479,33 +425,26 @@
 .method public b(FF)V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Lb/a/a/a/g/j;->x()F
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Lb/a/a/a/g/j;->z()F
 
     move-result v1
 
-    .line 3
     invoke-virtual {p0}, Lb/a/a/a/g/j;->y()F
 
     move-result v2
 
-    .line 4
     invoke-virtual {p0}, Lb/a/a/a/g/j;->w()F
 
     move-result v3
 
-    .line 5
     iput p2, p0, Lb/a/a/a/g/j;->d:F
 
-    .line 6
     iput p1, p0, Lb/a/a/a/g/j;->c:F
 
-    .line 7
     invoke-virtual {p0, v0, v1, v2, v3}, Lb/a/a/a/g/j;->a(FFFF)V
 
     return-void
@@ -514,7 +453,6 @@
 .method public b()Z
     .locals 2
 
-    .line 9
     iget v0, p0, Lb/a/a/a/g/j;->j:F
 
     iget v1, p0, Lb/a/a/a/g/j;->f:F
@@ -537,7 +475,6 @@
 .method public b(F)Z
     .locals 2
 
-    .line 8
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->left:F
@@ -581,14 +518,11 @@
 
     const p2, 0x7f7fffff    # Float.MAX_VALUE
 
-    .line 1
     :cond_1
     iput p1, p0, Lb/a/a/a/g/j;->g:F
 
-    .line 2
     iput p2, p0, Lb/a/a/a/g/j;->h:F
 
-    .line 3
     iget-object p1, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
     iget-object p2, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
@@ -601,7 +535,6 @@
 .method public c()Z
     .locals 2
 
-    .line 5
     iget v0, p0, Lb/a/a/a/g/j;->i:F
 
     iget v1, p0, Lb/a/a/a/g/j;->g:F
@@ -634,7 +567,6 @@
 
     div-float/2addr p1, v0
 
-    .line 4
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->right:F
@@ -678,14 +610,11 @@
 
     const p2, 0x7f7fffff    # Float.MAX_VALUE
 
-    .line 1
     :cond_1
     iput p1, p0, Lb/a/a/a/g/j;->e:F
 
-    .line 2
     iput p2, p0, Lb/a/a/a/g/j;->f:F
 
-    .line 3
     iget-object p1, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
     iget-object p2, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
@@ -698,7 +627,6 @@
 .method public d()Z
     .locals 2
 
-    .line 5
     iget v0, p0, Lb/a/a/a/g/j;->j:F
 
     iget v1, p0, Lb/a/a/a/g/j;->e:F
@@ -721,7 +649,6 @@
 .method public d(F)Z
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->top:F
@@ -744,7 +671,6 @@
 .method public e()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->bottom:F
@@ -755,7 +681,6 @@
 .method public e(F)Z
     .locals 1
 
-    .line 2
     invoke-virtual {p0, p1}, Lb/a/a/a/g/j;->b(F)Z
 
     move-result v0
@@ -782,7 +707,6 @@
 .method public f()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->height()F
@@ -795,7 +719,6 @@
 .method public f(F)Z
     .locals 1
 
-    .line 2
     invoke-virtual {p0, p1}, Lb/a/a/a/g/j;->d(F)Z
 
     move-result v0
@@ -822,7 +745,6 @@
 .method public g()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->left:F
@@ -833,7 +755,6 @@
 .method public g(F)V
     .locals 0
 
-    .line 2
     invoke-static {p1}, Lb/a/a/a/g/i;->a(F)F
 
     move-result p1
@@ -846,7 +767,6 @@
 .method public h()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->right:F
@@ -857,7 +777,6 @@
 .method public h(F)V
     .locals 0
 
-    .line 2
     invoke-static {p1}, Lb/a/a/a/g/i;->a(F)F
 
     move-result p1
@@ -870,7 +789,6 @@
 .method public i()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->top:F
@@ -889,11 +807,9 @@
 
     const p1, 0x7f7fffff    # Float.MAX_VALUE
 
-    .line 2
     :cond_0
     iput p1, p0, Lb/a/a/a/g/j;->h:F
 
-    .line 3
     iget-object p1, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
@@ -906,7 +822,6 @@
 .method public j()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
@@ -927,11 +842,9 @@
 
     const p1, 0x7f7fffff    # Float.MAX_VALUE
 
-    .line 2
     :cond_0
     iput p1, p0, Lb/a/a/a/g/j;->f:F
 
-    .line 3
     iget-object p1, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
@@ -944,7 +857,6 @@
 .method public k()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lb/a/a/a/g/j;->d:F
 
     return v0
@@ -961,11 +873,9 @@
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 2
     :cond_0
     iput p1, p0, Lb/a/a/a/g/j;->g:F
 
-    .line 3
     iget-object p1, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
@@ -978,7 +888,6 @@
 .method public l()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lb/a/a/a/g/j;->c:F
 
     return v0
@@ -995,11 +904,9 @@
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 2
     :cond_0
     iput p1, p0, Lb/a/a/a/g/j;->e:F
 
-    .line 3
     iget-object p1, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
@@ -1012,7 +919,6 @@
 .method public m()Lb/a/a/a/g/e;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->centerX()F
@@ -1035,7 +941,6 @@
 .method public n()Landroid/graphics/RectF;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     return-object v0
@@ -1044,7 +949,6 @@
 .method public o()Landroid/graphics/Matrix;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->a:Landroid/graphics/Matrix;
 
     return-object v0
@@ -1053,7 +957,6 @@
 .method public p()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lb/a/a/a/g/j;->i:F
 
     return v0
@@ -1062,7 +965,6 @@
 .method public q()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lb/a/a/a/g/j;->j:F
 
     return v0
@@ -1071,7 +973,6 @@
 .method public r()F
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
@@ -1094,7 +995,6 @@
 .method public s()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lb/a/a/a/g/j;->m:F
 
     const/4 v1, 0x0
@@ -1123,7 +1023,6 @@
 .method public t()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lb/a/a/a/g/j;->u()Z
 
     move-result v0
@@ -1150,7 +1049,6 @@
 .method public u()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lb/a/a/a/g/j;->i:F
 
     iget v1, p0, Lb/a/a/a/g/j;->g:F
@@ -1179,7 +1077,6 @@
 .method public v()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lb/a/a/a/g/j;->j:F
 
     iget v1, p0, Lb/a/a/a/g/j;->e:F
@@ -1208,7 +1105,6 @@
 .method public w()F
     .locals 2
 
-    .line 1
     iget v0, p0, Lb/a/a/a/g/j;->d:F
 
     iget-object v1, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
@@ -1223,7 +1119,6 @@
 .method public x()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->left:F
@@ -1234,7 +1129,6 @@
 .method public y()F
     .locals 2
 
-    .line 1
     iget v0, p0, Lb/a/a/a/g/j;->c:F
 
     iget-object v1, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
@@ -1249,7 +1143,6 @@
 .method public z()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/g/j;->b:Landroid/graphics/RectF;
 
     iget v0, v0, Landroid/graphics/RectF;->top:F

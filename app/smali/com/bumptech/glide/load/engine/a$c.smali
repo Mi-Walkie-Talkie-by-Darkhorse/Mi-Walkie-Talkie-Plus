@@ -1,6 +1,5 @@
 .class interface abstract Lcom/bumptech/glide/load/engine/a$c;
 .super Ljava/lang/Object;
-.source "ActiveResources.java"
 
 
 # annotations

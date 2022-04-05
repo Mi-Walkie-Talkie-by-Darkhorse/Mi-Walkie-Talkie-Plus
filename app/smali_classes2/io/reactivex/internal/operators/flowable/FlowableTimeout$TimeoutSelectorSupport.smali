@@ -1,6 +1,5 @@
 .class interface abstract Lio/reactivex/internal/operators/flowable/FlowableTimeout$TimeoutSelectorSupport;
 .super Ljava/lang/Object;
-.source "FlowableTimeout.java"
 
 # interfaces
 .implements Lio/reactivex/internal/operators/flowable/FlowableTimeoutTimed$TimeoutSupport;

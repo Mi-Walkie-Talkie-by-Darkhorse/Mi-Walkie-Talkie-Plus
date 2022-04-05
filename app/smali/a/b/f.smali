@@ -1,6 +1,5 @@
 .class abstract La/b/f;
 .super Ljava/lang/Object;
-.source "MapCollections.java"
 
 
 # annotations
@@ -68,7 +67,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -90,12 +88,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 2
     :cond_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -103,7 +99,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
@@ -144,7 +139,6 @@
 
     return v0
 
-    .line 10
     :cond_0
     instance-of v1, p1, Ljava/util/Set;
 
@@ -152,10 +146,8 @@
 
     if-eqz v1, :cond_2
 
-    .line 11
     check-cast p1, Ljava/util/Set;
 
-    .line 12
     :try_start_0
     invoke-interface {p0}, Ljava/util/Set;->size()I
 
@@ -205,17 +197,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
     move-result v0
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
-    .line 3
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -223,7 +212,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 4
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
@@ -232,7 +220,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
@@ -267,12 +254,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
     move-result v0
 
-    .line 2
     invoke-interface {p0}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object v1
@@ -281,7 +266,6 @@
 
     move-result-object v1
 
-    .line 3
     :cond_0
     :goto_0
     invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
@@ -290,7 +274,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 4
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
@@ -301,12 +284,10 @@
 
     if-nez v2, :cond_0
 
-    .line 5
     invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-interface {p0}, Ljava/util/Map;->size()I
 
@@ -365,17 +346,14 @@
         }
     .end annotation
 
-    .line 4
     invoke-virtual {p0}, La/b/f;->c()I
 
     move-result v0
 
-    .line 5
     array-length v1, p1
 
     if-ge v1, v0, :cond_0
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object p1
@@ -396,7 +374,6 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 7
     invoke-virtual {p0, v1, p2}, La/b/f;->a(II)Ljava/lang/Object;
 
     move-result-object v2
@@ -407,7 +384,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     array-length p2, p1
 
@@ -415,7 +391,6 @@
 
     const/4 p2, 0x0
 
-    .line 9
     aput-object p2, p1, v0
 
     :cond_2
@@ -438,12 +413,10 @@
 .method public b(I)[Ljava/lang/Object;
     .locals 4
 
-    .line 6
     invoke-virtual {p0}, La/b/f;->c()I
 
     move-result v0
 
-    .line 7
     new-array v1, v0, [Ljava/lang/Object;
 
     const/4 v2, 0x0
@@ -451,7 +424,6 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 8
     invoke-virtual {p0, v2, p1}, La/b/f;->a(II)Ljava/lang/Object;
 
     move-result-object v3
@@ -480,19 +452,16 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/b/f;->a:La/b/f$b;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, La/b/f$b;
 
     invoke-direct {v0, p0}, La/b/f$b;-><init>(La/b/f;)V
 
     iput-object v0, p0, La/b/f;->a:La/b/f$b;
 
-    .line 3
     :cond_0
     iget-object v0, p0, La/b/f;->a:La/b/f$b;
 
@@ -509,19 +478,16 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/b/f;->b:La/b/f$c;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, La/b/f$c;
 
     invoke-direct {v0, p0}, La/b/f$c;-><init>(La/b/f;)V
 
     iput-object v0, p0, La/b/f;->b:La/b/f$c;
 
-    .line 3
     :cond_0
     iget-object v0, p0, La/b/f;->b:La/b/f$c;
 
@@ -538,19 +504,16 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/b/f;->c:La/b/f$e;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, La/b/f$e;
 
     invoke-direct {v0, p0}, La/b/f$e;-><init>(La/b/f;)V
 
     iput-object v0, p0, La/b/f;->c:La/b/f$e;
 
-    .line 3
     :cond_0
     iget-object v0, p0, La/b/f;->c:La/b/f$e;
 

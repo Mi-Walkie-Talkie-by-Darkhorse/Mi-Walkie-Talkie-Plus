@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/os/b$a;
 .super Ljava/lang/Object;
-.source "CancellationSignal.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/AppCompatDelegateImpl$n;
 .super Ljava/lang/Object;
-.source "AppCompatDelegateImpl.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget v0, p0, Landroid/content/res/Configuration;->colorMode:I
 
     and-int/lit8 v0, v0, 0x3
@@ -45,7 +43,6 @@
 
     if-eq v0, v2, :cond_0
 
-    .line 2
     iget v0, p2, Landroid/content/res/Configuration;->colorMode:I
 
     and-int/lit8 v1, v1, 0x3
@@ -54,7 +51,6 @@
 
     iput v0, p2, Landroid/content/res/Configuration;->colorMode:I
 
-    .line 3
     :cond_0
     iget p0, p0, Landroid/content/res/Configuration;->colorMode:I
 
@@ -66,7 +62,6 @@
 
     if-eq p0, v0, :cond_1
 
-    .line 4
     iget p0, p2, Landroid/content/res/Configuration;->colorMode:I
 
     and-int/lit8 p1, p1, 0xc

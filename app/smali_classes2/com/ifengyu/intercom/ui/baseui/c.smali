@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/intercom/ui/baseui/c;
 .super Landroid/widget/BaseAdapter;
-.source "SuperBaseAdapter.java"
 
 
 # annotations
@@ -43,25 +42,20 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/ui/baseui/c;->d:I
 
-    .line 3
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/c;->a:Landroid/view/LayoutInflater;
 
-    .line 4
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/baseui/c;->b:Landroid/content/Context;
 
-    .line 5
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/baseui/c;->c:Ljava/util/List;
 
     return-void
@@ -72,7 +66,6 @@
 .method public a(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/ui/baseui/c;->d:I
 
     return-void
@@ -81,7 +74,6 @@
 .method public getCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/c;->c:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -92,7 +84,6 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/c;->c:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -115,7 +106,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/c;->c:Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -126,7 +116,6 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/c;->c:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;

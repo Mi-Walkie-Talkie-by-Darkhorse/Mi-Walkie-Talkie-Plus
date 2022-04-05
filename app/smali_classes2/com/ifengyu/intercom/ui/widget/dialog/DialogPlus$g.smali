@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$g;
 .super Ljava/lang/Object;
-.source "DialogPlus.java"
 
 
 # annotations

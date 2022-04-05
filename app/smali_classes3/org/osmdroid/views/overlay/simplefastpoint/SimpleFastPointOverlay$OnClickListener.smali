@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$OnClickListener;
 .super Ljava/lang/Object;
-.source "SimpleFastPointOverlay.java"
 
 
 # annotations

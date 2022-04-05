@@ -1,6 +1,5 @@
 .class public interface abstract Lc/a/b;
 .super Ljava/lang/Object;
-.source "Publisher.java"
 
 
 # annotations

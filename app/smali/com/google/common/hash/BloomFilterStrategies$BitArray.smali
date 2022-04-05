@@ -1,6 +1,5 @@
 .class final Lcom/google/common/hash/BloomFilterStrategies$BitArray;
 .super Ljava/lang/Object;
-.source "BloomFilterStrategies.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(J)V
     .locals 3
 
-    .line 1
     sget-object v0, Ljava/math/RoundingMode;->CEILING:Ljava/math/RoundingMode;
 
     const-wide/16 v1, 0x40
@@ -47,10 +45,8 @@
 .method constructor <init>([J)V
     .locals 6
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -69,12 +65,10 @@
 
     invoke-static {v0, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 4
     iput-object p1, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->data:[J
 
     const-wide/16 v2, 0x0
 
-    .line 5
     array-length v0, p1
 
     :goto_1
@@ -82,7 +76,6 @@
 
     aget-wide v4, p1, v1
 
-    .line 6
     invoke-static {v4, v5}, Ljava/lang/Long;->bitCount(J)I
 
     move-result v4
@@ -95,7 +88,6 @@
 
     goto :goto_1
 
-    .line 7
     :cond_1
     iput-wide v2, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->bitCount:J
 
@@ -107,7 +99,6 @@
 .method bitCount()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->bitCount:J
 
     return-wide v0
@@ -116,7 +107,6 @@
 .method bitSize()J
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->data:[J
 
     array-length v0, v0
@@ -133,7 +123,6 @@
 .method copy()Lcom/google/common/hash/BloomFilterStrategies$BitArray;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;
 
     iget-object v1, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->data:[J
@@ -152,15 +141,12 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lcom/google/common/hash/BloomFilterStrategies$BitArray;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/common/hash/BloomFilterStrategies$BitArray;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->data:[J
 
     iget-object p1, p1, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->data:[J
@@ -180,7 +166,6 @@
 .method get(J)Z
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->data:[J
 
     const/4 v1, 0x6
@@ -219,7 +204,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->data:[J
 
     invoke-static {v0}, Ljava/util/Arrays;->hashCode([J)I
@@ -232,7 +216,6 @@
 .method putAll(Lcom/google/common/hash/BloomFilterStrategies$BitArray;)V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->data:[J
 
     array-length v0, v0
@@ -285,10 +268,8 @@
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->bitCount:J
 
-    .line 3
     :goto_1
     iget-object v0, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->data:[J
 
@@ -296,7 +277,6 @@
 
     if-ge v3, v1, :cond_1
 
-    .line 4
     aget-wide v1, v0, v3
 
     iget-object v4, p1, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->data:[J
@@ -307,7 +287,6 @@
 
     aput-wide v1, v0, v3
 
-    .line 5
     iget-wide v1, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->bitCount:J
 
     aget-wide v4, v0, v3
@@ -333,14 +312,12 @@
 .method set(J)Z
     .locals 7
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->get(J)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->data:[J
 
     const/4 v1, 0x6
@@ -361,7 +338,6 @@
 
     aput-wide p1, v0, v2
 
-    .line 3
     iget-wide p1, p0, Lcom/google/common/hash/BloomFilterStrategies$BitArray;->bitCount:J
 
     add-long/2addr p1, v5

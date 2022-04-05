@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$ReplayFunction;
 .super Ljava/lang/Object;
-.source "FlowableInternalHelper.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Function;
@@ -67,13 +66,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$ReplayFunction;->selector:Lio/reactivex/functions/Function;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$ReplayFunction;->scheduler:Lio/reactivex/Scheduler;
 
     return-void
@@ -99,7 +95,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$ReplayFunction;->selector:Lio/reactivex/functions/Function;
 
     invoke-interface {v0, p1}, Lio/reactivex/functions/Function;->apply(Ljava/lang/Object;)Ljava/lang/Object;
@@ -114,7 +109,6 @@
 
     check-cast p1, Lc/a/b;
 
-    .line 3
     invoke-static {p1}, Lio/reactivex/Flowable;->fromPublisher(Lc/a/b;)Lio/reactivex/Flowable;
 
     move-result-object p1
@@ -136,7 +130,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Lio/reactivex/Flowable;
 
     invoke-virtual {p0, p1}, Lio/reactivex/internal/operators/flowable/FlowableInternalHelper$ReplayFunction;->apply(Lio/reactivex/Flowable;)Lc/a/b;

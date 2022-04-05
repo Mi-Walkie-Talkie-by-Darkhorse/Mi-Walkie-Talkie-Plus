@@ -1,6 +1,5 @@
 .class public abstract Lb/a/a/a/f/c;
 .super Lb/a/a/a/f/g;
-.source "BarLineScatterCandleBubbleRenderer.java"
 
 
 # annotations
@@ -19,10 +18,8 @@
 .method public constructor <init>(Lb/a/a/a/a/a;Lb/a/a/a/g/j;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lb/a/a/a/f/g;-><init>(Lb/a/a/a/a/a;Lb/a/a/a/g/j;)V
 
-    .line 2
     new-instance p1, Lb/a/a/a/f/c$a;
 
     invoke-direct {p1, p0}, Lb/a/a/a/f/c$a;-><init>(Lb/a/a/a/f/c;)V
@@ -43,7 +40,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     invoke-interface {p2, p1}, Lb/a/a/a/e/b/e;->a(Lcom/github/mikephil/charting/data/Entry;)I
 
@@ -53,7 +49,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 2
     invoke-interface {p2}, Lb/a/a/a/e/b/e;->q0()I
 
     move-result p1
@@ -87,7 +82,6 @@
 .method protected b(Lb/a/a/a/e/b/e;)Z
     .locals 1
 
-    .line 1
     invoke-interface {p1}, Lb/a/a/a/e/b/e;->isVisible()Z
 
     move-result v0

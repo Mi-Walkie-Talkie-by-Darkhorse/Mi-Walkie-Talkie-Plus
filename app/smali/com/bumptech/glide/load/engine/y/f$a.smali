@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/engine/y/f$a;
 .super Ljava/lang/Object;
-.source "InternalCacheDiskCacheFactory.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/engine/y/d$a;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/y/f$a;->a:Landroid/content/Context;
 
     iput-object p2, p0, Lcom/bumptech/glide/load/engine/y/f$a;->b:Ljava/lang/String;
@@ -42,7 +40,6 @@
 .method public a()Ljava/io/File;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/y/f$a;->a:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
@@ -55,13 +52,11 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     iget-object v1, p0, Lcom/bumptech/glide/load/engine/y/f$a;->b:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
-    .line 3
     new-instance v1, Ljava/io/File;
 
     iget-object v2, p0, Lcom/bumptech/glide/load/engine/y/f$a;->b:Ljava/lang/String;

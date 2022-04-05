@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/lite/h/q;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;

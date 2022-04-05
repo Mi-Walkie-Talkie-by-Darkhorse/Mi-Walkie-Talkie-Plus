@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/OnFocusChange;
 .super Ljava/lang/Object;
-.source "OnFocusChange.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

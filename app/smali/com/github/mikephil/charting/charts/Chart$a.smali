@@ -1,6 +1,5 @@
 .class Lcom/github/mikephil/charting/charts/Chart$a;
 .super Ljava/lang/Object;
-.source "Chart.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/github/mikephil/charting/charts/Chart;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/github/mikephil/charting/charts/Chart$a;->a:Lcom/github/mikephil/charting/charts/Chart;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/github/mikephil/charting/charts/Chart$a;->a:Lcom/github/mikephil/charting/charts/Chart;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->postInvalidate()V

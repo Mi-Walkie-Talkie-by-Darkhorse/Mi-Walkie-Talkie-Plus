@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/SingleConverter;
 .super Ljava/lang/Object;
-.source "SingleConverter.java"
 
 
 # annotations

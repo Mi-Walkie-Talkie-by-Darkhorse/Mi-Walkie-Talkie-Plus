@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/zxing/oned/OneDReader;
 .super Ljava/lang/Object;
-.source "OneDReader.java"
 
 # interfaces
 .implements Lcom/google/zxing/Reader;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -37,17 +35,14 @@
 
     move-object/from16 v0, p2
 
-    .line 1
     invoke-virtual/range {p1 .. p1}, Lcom/google/zxing/BinaryBitmap;->getWidth()I
 
     move-result v1
 
-    .line 2
     invoke-virtual/range {p1 .. p1}, Lcom/google/zxing/BinaryBitmap;->getHeight()I
 
     move-result v2
 
-    .line 3
     new-instance v3, Lcom/google/zxing/common/BitArray;
 
     invoke-direct {v3, v1}, Lcom/google/zxing/common/BitArray;-><init>(I)V
@@ -58,7 +53,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     sget-object v6, Lcom/google/zxing/DecodeHintType;->TRY_HARDER:Lcom/google/zxing/DecodeHintType;
 
     invoke-interface {v0, v6}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -87,7 +81,6 @@
     :goto_1
     shr-int v7, v2, v7
 
-    .line 5
     invoke-static {v5, v7}, Ljava/lang/Math;->max(II)I
 
     move-result v7
@@ -101,7 +94,6 @@
     :cond_2
     const/16 v6, 0xf
 
-    .line 6
     :goto_2
     div-int/lit8 v8, v2, 0x2
 
@@ -112,7 +104,6 @@
 
     add-int/lit8 v10, v9, 0x1
 
-    .line 7
     div-int/lit8 v11, v10, 0x2
 
     and-int/lit8 v9, v9, 0x1
@@ -145,7 +136,6 @@
 
     move-object/from16 v9, p1
 
-    .line 8
     :try_start_0
     invoke-virtual {v9, v11, v3}, Lcom/google/zxing/BinaryBitmap;->getBlackRow(ILcom/google/zxing/common/BitArray;)Lcom/google/zxing/common/BitArray;
 
@@ -162,12 +152,10 @@
 
     if-ne v12, v5, :cond_5
 
-    .line 9
     invoke-virtual {v3}, Lcom/google/zxing/common/BitArray;->reverse()V
 
     if-eqz v0, :cond_5
 
-    .line 10
     sget-object v13, Lcom/google/zxing/DecodeHintType;->NEED_RESULT_POINT_CALLBACK:Lcom/google/zxing/DecodeHintType;
 
     invoke-interface {v0, v13}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -176,17 +164,14 @@
 
     if-eqz v13, :cond_5
 
-    .line 11
     new-instance v13, Ljava/util/EnumMap;
 
     const-class v14, Lcom/google/zxing/DecodeHintType;
 
     invoke-direct {v13, v14}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
-    .line 12
     invoke-interface {v13, v0}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
 
-    .line 13
     sget-object v0, Lcom/google/zxing/DecodeHintType;->NEED_RESULT_POINT_CALLBACK:Lcom/google/zxing/DecodeHintType;
 
     invoke-interface {v13, v0}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -196,7 +181,6 @@
     :cond_5
     move-object/from16 v13, p0
 
-    .line 14
     :try_start_1
     invoke-virtual {v13, v11, v3, v0}, Lcom/google/zxing/oned/OneDReader;->decodeRow(ILcom/google/zxing/common/BitArray;Ljava/util/Map;)Lcom/google/zxing/Result;
 
@@ -204,7 +188,6 @@
 
     if-ne v12, v5, :cond_6
 
-    .line 15
     sget-object v15, Lcom/google/zxing/ResultMetadataType;->ORIENTATION:Lcom/google/zxing/ResultMetadataType;
 
     const/16 v16, 0xb4
@@ -215,14 +198,12 @@
 
     invoke-virtual {v14, v15, v5}, Lcom/google/zxing/Result;->putMetadata(Lcom/google/zxing/ResultMetadataType;Ljava/lang/Object;)V
 
-    .line 16
     invoke-virtual {v14}, Lcom/google/zxing/Result;->getResultPoints()[Lcom/google/zxing/ResultPoint;
 
     move-result-object v5
 
     if-eqz v5, :cond_6
 
-    .line 17
     new-instance v15, Lcom/google/zxing/ResultPoint;
     :try_end_1
     .catch Lcom/google/zxing/ReaderException; {:try_start_1 .. :try_end_1} :catch_0
@@ -261,7 +242,6 @@
 
     aput-object v15, v5, v1
 
-    .line 18
     new-instance v4, Lcom/google/zxing/ResultPoint;
     :try_end_3
     .catch Lcom/google/zxing/ReaderException; {:try_start_3 .. :try_end_3} :catch_2
@@ -337,7 +317,6 @@
     :cond_8
     move-object/from16 v13, p0
 
-    .line 19
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
     move-result-object v0
@@ -348,7 +327,6 @@
 .method protected static patternMatchVariance([I[IF)F
     .locals 9
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -362,12 +340,10 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 2
     aget v5, p0, v2
 
     add-int/2addr v3, v5
 
-    .line 3
     aget v5, p1, v2
 
     add-int/2addr v4, v5
@@ -397,10 +373,8 @@
     :goto_1
     if-ge v1, v0, :cond_4
 
-    .line 4
     aget v6, p0, v1
 
-    .line 5
     aget v7, p1, v1
 
     int-to-float v7, v7
@@ -448,22 +422,18 @@
         }
     .end annotation
 
-    .line 1
     array-length v0, p2
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-static {p2, v1, v0, v1}, Ljava/util/Arrays;->fill([IIII)V
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result v2
 
     if-ge p1, v2, :cond_4
 
-    .line 4
     invoke-virtual {p0, p1}, Lcom/google/zxing/common/BitArray;->get(I)Z
 
     move-result v3
@@ -475,14 +445,12 @@
     :goto_0
     if-ge p1, v2, :cond_1
 
-    .line 5
     invoke-virtual {p0, p1}, Lcom/google/zxing/common/BitArray;->get(I)Z
 
     move-result v5
 
     if-eq v5, v3, :cond_0
 
-    .line 6
     aget v5, p2, v1
 
     add-int/2addr v5, v4
@@ -496,7 +464,6 @@
 
     if-eq v1, v0, :cond_1
 
-    .line 7
     aput v4, p2, v1
 
     xor-int/lit8 v3, v3, 0x1
@@ -517,7 +484,6 @@
 
     goto :goto_2
 
-    .line 8
     :cond_2
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -529,7 +495,6 @@
     :goto_2
     return-void
 
-    .line 9
     :cond_4
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -546,10 +511,8 @@
         }
     .end annotation
 
-    .line 1
     array-length v0, p2
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/zxing/common/BitArray;->get(I)Z
 
     move-result v1
@@ -562,7 +525,6 @@
 
     add-int/lit8 p1, p1, -0x1
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/google/zxing/common/BitArray;->get(I)Z
 
     move-result v2
@@ -580,12 +542,10 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 4
     invoke-static {p0, p1, p2}, Lcom/google/zxing/oned/OneDReader;->recordPattern(Lcom/google/zxing/common/BitArray;I[I)V
 
     return-void
 
-    .line 5
     :cond_2
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -607,7 +567,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/google/zxing/oned/OneDReader;->decode(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;)Lcom/google/zxing/Result;
 
     move-result-object p1
@@ -635,7 +594,6 @@
         }
     .end annotation
 
-    .line 2
     :try_start_0
     invoke-direct {p0, p1, p2}, Lcom/google/zxing/oned/OneDReader;->doDecode(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;)Lcom/google/zxing/Result;
 
@@ -652,7 +610,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 3
     sget-object v2, Lcom/google/zxing/DecodeHintType;->TRY_HARDER:Lcom/google/zxing/DecodeHintType;
 
     invoke-interface {p2, v2}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -671,24 +628,20 @@
     :goto_0
     if-eqz v2, :cond_3
 
-    .line 4
     invoke-virtual {p1}, Lcom/google/zxing/BinaryBitmap;->isRotateSupported()Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 5
     invoke-virtual {p1}, Lcom/google/zxing/BinaryBitmap;->rotateCounterClockwise()Lcom/google/zxing/BinaryBitmap;
 
     move-result-object p1
 
-    .line 6
     invoke-direct {p0, p1, p2}, Lcom/google/zxing/oned/OneDReader;->doDecode(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;)Lcom/google/zxing/Result;
 
     move-result-object p2
 
-    .line 7
     invoke-virtual {p2}, Lcom/google/zxing/Result;->getResultMetadata()Ljava/util/Map;
 
     move-result-object v0
@@ -697,7 +650,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 8
     sget-object v3, Lcom/google/zxing/ResultMetadataType;->ORIENTATION:Lcom/google/zxing/ResultMetadataType;
 
     invoke-interface {v0, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -706,10 +658,8 @@
 
     if-eqz v3, :cond_1
 
-    .line 9
     sget-object v3, Lcom/google/zxing/ResultMetadataType;->ORIENTATION:Lcom/google/zxing/ResultMetadataType;
 
-    .line 10
     invoke-interface {v0, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
@@ -724,7 +674,6 @@
 
     rem-int/lit16 v2, v0, 0x168
 
-    .line 11
     :cond_1
     sget-object v0, Lcom/google/zxing/ResultMetadataType;->ORIENTATION:Lcom/google/zxing/ResultMetadataType;
 
@@ -734,25 +683,21 @@
 
     invoke-virtual {p2, v0, v2}, Lcom/google/zxing/Result;->putMetadata(Lcom/google/zxing/ResultMetadataType;Ljava/lang/Object;)V
 
-    .line 12
     invoke-virtual {p2}, Lcom/google/zxing/Result;->getResultPoints()[Lcom/google/zxing/ResultPoint;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    .line 13
     invoke-virtual {p1}, Lcom/google/zxing/BinaryBitmap;->getHeight()I
 
     move-result p1
 
-    .line 14
     :goto_1
     array-length v2, v0
 
     if-ge v1, v2, :cond_2
 
-    .line 15
     new-instance v2, Lcom/google/zxing/ResultPoint;
 
     int-to-float v3, p1
@@ -786,7 +731,6 @@
     :cond_2
     return-object p2
 
-    .line 16
     :cond_3
     throw v0
 .end method

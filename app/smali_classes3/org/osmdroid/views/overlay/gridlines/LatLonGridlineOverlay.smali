@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;
 .super Ljava/lang/Object;
-.source "LatLonGridlineOverlay.java"
 
 
 # static fields
@@ -27,7 +26,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/text/DecimalFormat;
 
     const-string v1, "#.#####"
@@ -38,36 +36,28 @@
 
     const/high16 v0, -0x1000000
 
-    .line 2
     sput v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineColor:I
 
     const/4 v1, -0x1
 
-    .line 3
     sput v1, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->fontColor:I
 
     const/16 v1, 0x18
 
-    .line 4
     sput-short v1, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->fontSizeDp:S
 
-    .line 5
     sput v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->backgroundColor:I
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 6
     sput v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineWidth:F
 
     const/4 v1, 0x0
 
-    .line 7
     sput-boolean v1, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
-    .line 8
     sput-boolean v1, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG2:Z
 
-    .line 9
     sput v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     return-void
@@ -76,7 +66,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -85,17 +74,14 @@
 .method private static applyMarkerAttributes(Lorg/osmdroid/views/overlay/Marker;)V
     .locals 1
 
-    .line 1
     sget v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->backgroundColor:I
 
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/Marker;->setTextLabelBackgroundColor(I)V
 
-    .line 2
     sget-short v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->fontSizeDp:S
 
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/Marker;->setTextLabelFontSize(I)V
 
-    .line 3
     sget v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->fontColor:I
 
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/Marker;->setTextLabelForegroundColor(I)V
@@ -110,7 +96,6 @@
 
     const-wide v0, 0x3ef999999999999aL    # 2.44140625E-5
 
-    .line 1
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     :goto_0
@@ -123,7 +108,6 @@
     :pswitch_0
     const-wide v0, 0x3f0999999999999aL    # 4.8828125E-5
 
-    .line 2
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -131,7 +115,6 @@
     :pswitch_1
     const-wide v0, 0x3f1999999999999aL    # 9.765625E-5
 
-    .line 3
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -139,7 +122,6 @@
     :pswitch_2
     const-wide v0, 0x3f2999999999999aL    # 1.953125E-4
 
-    .line 4
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -147,7 +129,6 @@
     :pswitch_3
     const-wide v0, 0x3f3999999999999aL    # 3.90625E-4
 
-    .line 5
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -155,7 +136,6 @@
     :pswitch_4
     const-wide v0, 0x3f4999999999999aL    # 7.8125E-4
 
-    .line 6
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -163,7 +143,6 @@
     :pswitch_5
     const-wide v0, 0x3f5999999999999aL    # 0.0015625
 
-    .line 7
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -171,7 +150,6 @@
     :pswitch_6
     const-wide v0, 0x3f6999999999999aL    # 0.003125
 
-    .line 8
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -179,7 +157,6 @@
     :pswitch_7
     const-wide v0, 0x3f7999999999999aL    # 0.00625
 
-    .line 9
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -187,7 +164,6 @@
     :pswitch_8
     const-wide v0, 0x3f8999999999999aL    # 0.0125
 
-    .line 10
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -195,7 +171,6 @@
     :pswitch_9
     const-wide v0, 0x3f9999999999999aL    # 0.025
 
-    .line 11
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -203,7 +178,6 @@
     :pswitch_a
     const-wide v0, 0x3fa999999999999aL    # 0.05
 
-    .line 12
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -211,7 +185,6 @@
     :pswitch_b
     const-wide v0, 0x3fb999999999999aL    # 0.1
 
-    .line 13
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -219,7 +192,6 @@
     :pswitch_c
     const-wide/high16 v0, 0x3fd0000000000000L    # 0.25
 
-    .line 14
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -227,7 +199,6 @@
     :pswitch_d
     const-wide/high16 v0, 0x3fe0000000000000L    # 0.5
 
-    .line 15
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -235,7 +206,6 @@
     :pswitch_e
     const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
 
-    .line 16
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -243,7 +213,6 @@
     :pswitch_f
     const-wide/high16 v0, 0x4000000000000000L    # 2.0
 
-    .line 17
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -251,7 +220,6 @@
     :pswitch_10
     const-wide/high16 v0, 0x4008000000000000L    # 3.0
 
-    .line 18
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto :goto_0
@@ -259,7 +227,6 @@
     :pswitch_11
     const-wide/high16 v0, 0x4018000000000000L    # 6.0
 
-    .line 19
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto/16 :goto_0
@@ -267,7 +234,6 @@
     :pswitch_12
     const-wide/high16 v0, 0x4022000000000000L    # 9.0
 
-    .line 20
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto/16 :goto_0
@@ -275,7 +241,6 @@
     :pswitch_13
     const-wide/high16 v0, 0x402e000000000000L    # 15.0
 
-    .line 21
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto/16 :goto_0
@@ -283,7 +248,6 @@
     :pswitch_14
     const-wide/high16 v0, 0x403e000000000000L    # 30.0
 
-    .line 22
     sget p0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->multiplier:F
 
     goto/16 :goto_0
@@ -322,34 +286,28 @@
 
     move-object/from16 v0, p1
 
-    .line 1
     invoke-virtual/range {p1 .. p1}, Lorg/osmdroid/views/MapView;->getBoundingBox()Lorg/osmdroid/util/BoundingBox;
 
     move-result-object v1
 
-    .line 2
     invoke-virtual/range {p1 .. p1}, Lorg/osmdroid/views/MapView;->getZoomLevel()I
 
     move-result v2
 
     const/4 v3, 0x1
 
-    .line 3
     sput-boolean v3, Lorg/osmdroid/views/overlay/Marker;->ENABLE_TEXT_LABELS_WHEN_NO_IMAGE:Z
 
-    .line 4
     sget-boolean v4, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
     if-eqz v4, :cond_0
 
-    .line 5
     sget-object v4, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     const-string v5, "######### getLatLonGrid "
 
     invoke-virtual {v4, v5}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 6
     :cond_0
     new-instance v4, Lorg/osmdroid/views/overlay/FolderOverlay;
 
@@ -363,23 +321,19 @@
 
     goto/16 :goto_f
 
-    .line 7
     :cond_1
     invoke-virtual {v1}, Lorg/osmdroid/util/BoundingBox;->getLatNorth()D
 
     move-result-wide v5
 
-    .line 8
     invoke-virtual {v1}, Lorg/osmdroid/util/BoundingBox;->getLatSouth()D
 
     move-result-wide v7
 
-    .line 9
     invoke-virtual {v1}, Lorg/osmdroid/util/BoundingBox;->getLonEast()D
 
     move-result-wide v9
 
-    .line 10
     invoke-virtual {v1}, Lorg/osmdroid/util/BoundingBox;->getLonWest()D
 
     move-result-wide v11
@@ -390,7 +344,6 @@
 
     return-object v4
 
-    .line 11
     :cond_2
     sget-boolean v1, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
@@ -398,7 +351,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 12
     sget-object v1, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v15, Ljava/lang/StringBuilder;
@@ -445,13 +397,11 @@
     :cond_4
     const/4 v3, 0x0
 
-    .line 13
     :goto_0
     sget-boolean v15, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
     if-eqz v15, :cond_5
 
-    .line 14
     sget-object v15, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -477,25 +427,21 @@
     :cond_5
     move/from16 v17, v3
 
-    .line 15
     :goto_1
     invoke-static {v2}, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->getIncrementor(I)D
 
     move-result-wide v18
 
-    .line 16
     invoke-static {v5, v6, v7, v8, v2}, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->getStartEndPointsNS(DDI)[D
 
     move-result-object v1
 
     const/4 v3, 0x0
 
-    .line 17
     aget-wide v20, v1, v3
 
     const/4 v3, 0x1
 
-    .line 18
     aget-wide v22, v1, v3
 
     move-wide/from16 v13, v20
@@ -513,50 +459,40 @@
 
     move-wide/from16 v26, v7
 
-    .line 19
     new-instance v7, Lorg/osmdroid/views/overlay/Polyline;
 
     invoke-direct {v7}, Lorg/osmdroid/views/overlay/Polyline;-><init>()V
 
-    .line 20
     sget v8, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineWidth:F
 
     invoke-virtual {v7, v8}, Lorg/osmdroid/views/overlay/Polyline;->setWidth(F)V
 
-    .line 21
     sget v8, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineColor:I
 
     invoke-virtual {v7, v8}, Lorg/osmdroid/views/overlay/Polyline;->setColor(I)V
 
-    .line 22
     new-instance v8, Ljava/util/ArrayList;
 
     invoke-direct {v8}, Ljava/util/ArrayList;-><init>()V
 
     move-wide/from16 v28, v5
 
-    .line 23
     new-instance v5, Lorg/osmdroid/util/GeoPoint;
 
     invoke-direct {v5, v13, v14, v9, v10}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
-    .line 24
     invoke-interface {v8, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 25
     new-instance v5, Lorg/osmdroid/util/GeoPoint;
 
     invoke-direct {v5, v13, v14, v11, v12}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
-    .line 26
     invoke-interface {v8, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 27
     sget-boolean v5, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
     if-eqz v5, :cond_6
 
-    .line 28
     sget-object v5, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v6, Ljava/lang/StringBuilder;
@@ -591,21 +527,17 @@
 
     invoke-virtual {v5, v0}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 29
     :cond_6
     invoke-virtual {v7, v8}, Lorg/osmdroid/views/overlay/Polyline;->setPoints(Ljava/util/List;)V
 
-    .line 30
     invoke-virtual {v4, v7}, Lorg/osmdroid/views/overlay/FolderOverlay;->add(Lorg/osmdroid/views/overlay/Overlay;)Z
 
-    .line 31
     new-instance v0, Lorg/osmdroid/views/overlay/Marker;
 
     move-object/from16 v5, p1
 
     invoke-direct {v0, v5}, Lorg/osmdroid/views/overlay/Marker;-><init>(Lorg/osmdroid/views/MapView;)V
 
-    .line 32
     invoke-static {v0}, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->applyMarkerAttributes(Lorg/osmdroid/views/overlay/Marker;)V
 
     const-wide/16 v6, 0x0
@@ -614,7 +546,6 @@
 
     if-lez v1, :cond_7
 
-    .line 33
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -639,7 +570,6 @@
 
     goto :goto_3
 
-    .line 34
     :cond_7
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -666,10 +596,8 @@
     :goto_3
     const/4 v1, 0x0
 
-    .line 35
     invoke-virtual {v0, v1}, Lorg/osmdroid/views/overlay/Marker;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
-    .line 36
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
     add-double v6, v11, v18
@@ -678,7 +606,6 @@
 
     invoke-virtual {v0, v1}, Lorg/osmdroid/views/overlay/Marker;->setPosition(Lorg/osmdroid/util/GeoPoint;)V
 
-    .line 37
     invoke-virtual {v4, v0}, Lorg/osmdroid/views/overlay/FolderOverlay;->add(Lorg/osmdroid/views/overlay/Overlay;)Z
 
     add-double v13, v13, v18
@@ -698,19 +625,16 @@
 
     move-object v5, v0
 
-    .line 38
     invoke-static {v11, v12, v9, v10, v2}, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->getStartEndPointsWE(DDI)[D
 
     move-result-object v0
 
     const/4 v6, 0x1
 
-    .line 39
     aget-wide v6, v0, v6
 
     const/4 v8, 0x0
 
-    .line 40
     aget-wide v8, v0, v8
 
     move-wide v10, v6
@@ -724,29 +648,24 @@
 
     if-gtz v14, :cond_b
 
-    .line 41
     new-instance v14, Lorg/osmdroid/views/overlay/Polyline;
 
     invoke-direct {v14}, Lorg/osmdroid/views/overlay/Polyline;-><init>()V
 
-    .line 42
     sget v13, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineWidth:F
 
     invoke-virtual {v14, v13}, Lorg/osmdroid/views/overlay/Polyline;->setWidth(F)V
 
-    .line 43
     sget v13, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineColor:I
 
     invoke-virtual {v14, v13}, Lorg/osmdroid/views/overlay/Polyline;->setColor(I)V
 
-    .line 44
     new-instance v13, Ljava/util/ArrayList;
 
     invoke-direct {v13}, Ljava/util/ArrayList;-><init>()V
 
     move-wide/from16 v21, v8
 
-    .line 45
     new-instance v8, Lorg/osmdroid/util/GeoPoint;
 
     move-wide/from16 v30, v6
@@ -755,10 +674,8 @@
 
     invoke-direct {v8, v6, v7, v10, v11}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
-    .line 46
     invoke-interface {v13, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 47
     new-instance v8, Lorg/osmdroid/util/GeoPoint;
 
     move-object v9, v4
@@ -767,18 +684,14 @@
 
     invoke-direct {v8, v4, v5, v10, v11}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
-    .line 48
     invoke-interface {v13, v8}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 49
     invoke-virtual {v14, v13}, Lorg/osmdroid/views/overlay/Polyline;->setPoints(Ljava/util/List;)V
 
-    .line 50
     sget-boolean v8, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
     if-eqz v8, :cond_9
 
-    .line 51
     sget-object v8, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     new-instance v13, Ljava/lang/StringBuilder;
@@ -820,11 +733,9 @@
     :cond_9
     move-object/from16 v16, v12
 
-    .line 52
     :goto_5
     invoke-virtual {v9, v14}, Lorg/osmdroid/views/overlay/FolderOverlay;->add(Lorg/osmdroid/views/overlay/Overlay;)Z
 
-    .line 53
     new-instance v8, Lorg/osmdroid/views/overlay/Marker;
 
     move-wide v12, v4
@@ -833,12 +744,10 @@
 
     invoke-direct {v8, v4}, Lorg/osmdroid/views/overlay/Marker;-><init>(Lorg/osmdroid/views/MapView;)V
 
-    .line 54
     invoke-static {v8}, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->applyMarkerAttributes(Lorg/osmdroid/views/overlay/Marker;)V
 
     const/high16 v5, -0x3d4c0000    # -90.0f
 
-    .line 55
     invoke-virtual {v8, v5}, Lorg/osmdroid/views/overlay/Marker;->setRotation(F)V
 
     const-wide/16 v23, 0x0
@@ -847,7 +756,6 @@
 
     if-lez v5, :cond_a
 
-    .line 56
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -870,7 +778,6 @@
 
     goto :goto_6
 
-    .line 57
     :cond_a
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -897,10 +804,8 @@
     :goto_6
     const/4 v0, 0x0
 
-    .line 58
     invoke-virtual {v8, v0}, Lorg/osmdroid/views/overlay/Marker;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
-    .line 59
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
     add-double v4, v12, v18
@@ -909,7 +814,6 @@
 
     invoke-virtual {v8, v0}, Lorg/osmdroid/views/overlay/Marker;->setPosition(Lorg/osmdroid/util/GeoPoint;)V
 
-    .line 60
     invoke-virtual {v9, v8}, Lorg/osmdroid/views/overlay/FolderOverlay;->add(Lorg/osmdroid/views/overlay/Overlay;)Z
 
     add-double v10, v10, v18
@@ -943,12 +847,10 @@
 
     if-eqz v17, :cond_13
 
-    .line 61
     sget-boolean v4, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
     if-eqz v4, :cond_c
 
-    .line 62
     sget-object v4, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v8, Ljava/lang/StringBuilder;
@@ -1006,53 +908,42 @@
 
     if-gtz v8, :cond_e
 
-    .line 63
     new-instance v8, Lorg/osmdroid/views/overlay/Polyline;
 
     invoke-direct {v8}, Lorg/osmdroid/views/overlay/Polyline;-><init>()V
 
-    .line 64
     sget v10, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineWidth:F
 
     invoke-virtual {v8, v10}, Lorg/osmdroid/views/overlay/Polyline;->setWidth(F)V
 
-    .line 65
     sget v10, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineColor:I
 
     invoke-virtual {v8, v10}, Lorg/osmdroid/views/overlay/Polyline;->setColor(I)V
 
-    .line 66
     new-instance v10, Ljava/util/ArrayList;
 
     invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
 
     move-object/from16 v17, v14
 
-    .line 67
     new-instance v14, Lorg/osmdroid/util/GeoPoint;
 
     invoke-direct {v14, v6, v7, v4, v5}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
-    .line 68
     invoke-interface {v10, v14}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 69
     new-instance v14, Lorg/osmdroid/util/GeoPoint;
 
     invoke-direct {v14, v12, v13, v4, v5}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
-    .line 70
     invoke-interface {v10, v14}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 71
     invoke-virtual {v8, v10}, Lorg/osmdroid/views/overlay/Polyline;->setPoints(Ljava/util/List;)V
 
-    .line 72
     sget-boolean v10, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG2:Z
 
     if-eqz v10, :cond_d
 
-    .line 73
     sget-object v10, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v14, Ljava/lang/StringBuilder;
@@ -1098,7 +989,6 @@
 
     move-object/from16 v0, v17
 
-    .line 74
     :goto_9
     invoke-virtual {v9, v8}, Lorg/osmdroid/views/overlay/FolderOverlay;->add(Lorg/osmdroid/views/overlay/Overlay;)Z
 
@@ -1122,51 +1012,40 @@
 
     if-gtz v8, :cond_11
 
-    .line 75
     new-instance v8, Lorg/osmdroid/views/overlay/Polyline;
 
     invoke-direct {v8}, Lorg/osmdroid/views/overlay/Polyline;-><init>()V
 
-    .line 76
     sget v10, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineWidth:F
 
     invoke-virtual {v8, v10}, Lorg/osmdroid/views/overlay/Polyline;->setWidth(F)V
 
-    .line 77
     sget v10, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineColor:I
 
     invoke-virtual {v8, v10}, Lorg/osmdroid/views/overlay/Polyline;->setColor(I)V
 
-    .line 78
     new-instance v10, Ljava/util/ArrayList;
 
     invoke-direct {v10}, Ljava/util/ArrayList;-><init>()V
 
-    .line 79
     new-instance v14, Lorg/osmdroid/util/GeoPoint;
 
     invoke-direct {v14, v6, v7, v4, v5}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
-    .line 80
     invoke-interface {v10, v14}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 81
     new-instance v14, Lorg/osmdroid/util/GeoPoint;
 
     invoke-direct {v14, v12, v13, v4, v5}, Lorg/osmdroid/util/GeoPoint;-><init>(DD)V
 
-    .line 82
     invoke-interface {v10, v14}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 83
     invoke-virtual {v8, v10}, Lorg/osmdroid/views/overlay/Polyline;->setPoints(Ljava/util/List;)V
 
-    .line 84
     sget-boolean v10, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG2:Z
 
     if-eqz v10, :cond_f
 
-    .line 85
     sget-object v10, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v14, Ljava/lang/StringBuilder;
@@ -1208,23 +1087,19 @@
     :cond_f
     move-wide/from16 v26, v2
 
-    .line 86
     :goto_b
     invoke-virtual {v9, v8}, Lorg/osmdroid/views/overlay/FolderOverlay;->add(Lorg/osmdroid/views/overlay/Overlay;)Z
 
-    .line 87
     new-instance v2, Lorg/osmdroid/views/overlay/Marker;
 
     move-object/from16 v3, p1
 
     invoke-direct {v2, v3}, Lorg/osmdroid/views/overlay/Marker;-><init>(Lorg/osmdroid/views/MapView;)V
 
-    .line 88
     invoke-static {v2}, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->applyMarkerAttributes(Lorg/osmdroid/views/overlay/Marker;)V
 
     const/high16 v8, -0x3d4c0000    # -90.0f
 
-    .line 89
     invoke-virtual {v2, v8}, Lorg/osmdroid/views/overlay/Marker;->setRotation(F)V
 
     const-wide/16 v24, 0x0
@@ -1233,7 +1108,6 @@
 
     if-lez v8, :cond_10
 
-    .line 90
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -1263,7 +1137,6 @@
     :cond_10
     move-object/from16 v10, v23
 
-    .line 91
     new-instance v8, Ljava/lang/StringBuilder;
 
     invoke-direct {v8}, Ljava/lang/StringBuilder;-><init>()V
@@ -1289,10 +1162,8 @@
     :goto_c
     const/4 v8, 0x0
 
-    .line 92
     invoke-virtual {v2, v8}, Lorg/osmdroid/views/overlay/Marker;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
-    .line 93
     new-instance v8, Lorg/osmdroid/util/GeoPoint;
 
     move-object/from16 v17, v0
@@ -1305,7 +1176,6 @@
 
     invoke-virtual {v2, v8}, Lorg/osmdroid/views/overlay/Marker;->setPosition(Lorg/osmdroid/util/GeoPoint;)V
 
-    .line 94
     invoke-virtual {v9, v2}, Lorg/osmdroid/views/overlay/FolderOverlay;->add(Lorg/osmdroid/views/overlay/Overlay;)Z
 
     add-double v4, v4, v18
@@ -1336,17 +1206,14 @@
 
     if-gez v0, :cond_13
 
-    .line 95
     new-instance v0, Lorg/osmdroid/views/overlay/Marker;
 
     invoke-direct {v0, v3}, Lorg/osmdroid/views/overlay/Marker;-><init>(Lorg/osmdroid/views/MapView;)V
 
-    .line 96
     invoke-static {v0}, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->applyMarkerAttributes(Lorg/osmdroid/views/overlay/Marker;)V
 
     const/high16 v1, -0x3d4c0000    # -90.0f
 
-    .line 97
     invoke-virtual {v0, v1}, Lorg/osmdroid/views/overlay/Marker;->setRotation(F)V
 
     const-wide/16 v4, 0x0
@@ -1355,7 +1222,6 @@
 
     if-lez v2, :cond_12
 
-    .line 98
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -1378,7 +1244,6 @@
 
     goto :goto_e
 
-    .line 99
     :cond_12
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1403,10 +1268,8 @@
     :goto_e
     const/4 v2, 0x0
 
-    .line 100
     invoke-virtual {v0, v2}, Lorg/osmdroid/views/overlay/Marker;->setIcon(Landroid/graphics/drawable/Drawable;)V
 
-    .line 101
     new-instance v8, Lorg/osmdroid/util/GeoPoint;
 
     add-double v1, v12, v18
@@ -1415,7 +1278,6 @@
 
     invoke-virtual {v0, v8}, Lorg/osmdroid/views/overlay/Marker;->setPosition(Lorg/osmdroid/util/GeoPoint;)V
 
-    .line 102
     invoke-virtual {v9, v0}, Lorg/osmdroid/views/overlay/FolderOverlay;->add(Lorg/osmdroid/views/overlay/Overlay;)Z
 
     add-double v6, v6, v18
@@ -1446,12 +1308,10 @@
 
     if-ge v0, v8, :cond_4
 
-    .line 1
     invoke-static/range {p2 .. p3}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide v8
 
-    .line 2
     invoke-static/range {p4 .. p4}, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->getIncrementor(I)D
 
     move-result-wide v10
@@ -1467,7 +1327,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static/range {p0 .. p1}, Ljava/lang/Math;->ceil(D)D
 
@@ -1535,7 +1394,6 @@
     :goto_4
     if-gt v8, v0, :cond_a
 
-    .line 4
     invoke-static {v8}, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->getIncrementor(I)D
 
     move-result-wide v9
@@ -1550,12 +1408,10 @@
 
     add-double/2addr v6, v9
 
-    .line 5
     sget-boolean v11, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
     if-eqz v11, :cond_7
 
-    .line 6
     sget-object v11, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v12, Ljava/lang/StringBuilder;
@@ -1586,12 +1442,10 @@
 
     sub-double/2addr v4, v9
 
-    .line 7
     sget-boolean v11, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
     if-eqz v11, :cond_8
 
-    .line 8
     sget-object v11, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v12, Ljava/lang/StringBuilder;
@@ -1632,7 +1486,6 @@
 
     move/from16 v0, p4
 
-    .line 1
     invoke-static/range {p4 .. p4}, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->getIncrementor(I)D
 
     move-result-wide v1
@@ -1651,7 +1504,6 @@
 
     if-ge v0, v10, :cond_4
 
-    .line 2
     invoke-static/range {p0 .. p1}, Ljava/lang/Math;->floor(D)D
 
     move-result-wide v10
@@ -1667,7 +1519,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-static/range {p2 .. p3}, Ljava/lang/Math;->ceil(D)D
 
@@ -1735,7 +1586,6 @@
     :goto_4
     if-gt v1, v0, :cond_9
 
-    .line 4
     invoke-static {v1}, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->getIncrementor(I)D
 
     move-result-wide v10
@@ -1761,12 +1611,10 @@
 
     add-double/2addr v8, v10
 
-    .line 5
     sget-boolean v2, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
     if-eqz v2, :cond_7
 
-    .line 6
     sget-object v2, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v12, Ljava/lang/StringBuilder;
@@ -1792,13 +1640,11 @@
 
     goto :goto_4
 
-    .line 7
     :cond_9
     sget-boolean v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
     if-eqz v0, :cond_a
 
-    .line 8
     sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1838,33 +1684,26 @@
 
     const/high16 v0, -0x1000000
 
-    .line 1
     sput v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineColor:I
 
     const/4 v1, -0x1
 
-    .line 2
     sput v1, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->fontColor:I
 
-    .line 3
     sput v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->backgroundColor:I
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 4
     sput v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->lineWidth:F
 
     const/16 v0, 0x20
 
-    .line 5
     sput-short v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->fontSizeDp:S
 
     const/4 v0, 0x0
 
-    .line 6
     sput-boolean v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG:Z
 
-    .line 7
     sput-boolean v0, Lorg/osmdroid/views/overlay/gridlines/LatLonGridlineOverlay;->DEBUG2:Z
 
     return-void

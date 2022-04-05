@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/view/ViewAttachEventObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "ViewAttachEventObservable.kt"
 
 # interfaces
 .implements Landroid/view/View$OnAttachStateChangeListener;
@@ -96,7 +95,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/view/ViewAttachEventObservable$Listener;->view:Landroid/view/View;
@@ -111,7 +109,6 @@
 .method protected onDispose()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/ViewAttachEventObservable$Listener;->view:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->removeOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
@@ -130,14 +127,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/view/ViewAttachEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     new-instance v0, Lcom/jakewharton/rxbinding3/view/ViewAttachAttachedEvent;
@@ -163,14 +158,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/view/ViewAttachEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     new-instance v0, Lcom/jakewharton/rxbinding3/view/ViewAttachDetachedEvent;

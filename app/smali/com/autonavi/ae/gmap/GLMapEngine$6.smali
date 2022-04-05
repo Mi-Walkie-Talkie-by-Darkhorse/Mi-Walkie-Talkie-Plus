@@ -1,6 +1,5 @@
 .class Lcom/autonavi/ae/gmap/GLMapEngine$6;
 .super Ljava/lang/Object;
-.source "GLMapEngine.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -39,7 +38,6 @@
 .method constructor <init>(Lcom/autonavi/ae/gmap/GLMapEngine;IIIFIILcom/amap/api/maps/AMap$CancelableCallback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$6;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iput p2, p0, Lcom/autonavi/ae/gmap/GLMapEngine$6;->val$duration:I
@@ -66,14 +64,12 @@
 .method public run()V
     .locals 4
 
-    .line 1
     new-instance v0, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimGroup;
 
     iget v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$6;->val$duration:I
 
     invoke-direct {v0, v1}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimGroup;-><init>(I)V
 
-    .line 2
     iget v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$6;->val$toHeader:I
 
     int-to-float v1, v1
@@ -82,26 +78,22 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimGroup;->setToCameraDegree(FI)V
 
-    .line 3
     iget v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$6;->val$toMapAngle:I
 
     int-to-float v1, v1
 
     invoke-virtual {v0, v1, v2}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimGroup;->setToMapAngle(FI)V
 
-    .line 4
     iget v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$6;->val$toMaplevel:F
 
     invoke-virtual {v0, v1, v2}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimGroup;->setToMapLevel(FI)V
 
-    .line 5
     iget v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$6;->val$toP20x:I
 
     iget v3, p0, Lcom/autonavi/ae/gmap/GLMapEngine$6;->val$toP20y:I
 
     invoke-virtual {v0, v1, v3, v2}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimGroup;->setToMapCenterGeo(III)V
 
-    .line 6
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$6;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-static {v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->access$300(Lcom/autonavi/ae/gmap/GLMapEngine;)Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;
@@ -110,14 +102,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 7
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimGroup;->isValid()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 8
     iget-object v1, p0, Lcom/autonavi/ae/gmap/GLMapEngine$6;->this$0:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-static {v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->access$300(Lcom/autonavi/ae/gmap/GLMapEngine;)Lcom/autonavi/ae/gmap/glanimation/ADGLMapAnimationMgr;

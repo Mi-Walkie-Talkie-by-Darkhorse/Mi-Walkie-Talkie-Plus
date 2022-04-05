@@ -1,6 +1,5 @@
 .class public Lcom/wang/avi/indicators/PacmanIndicator;
 .super Lcom/wang/avi/Indicator;
-.source "PacmanIndicator.java"
 
 
 # instance fields
@@ -17,7 +16,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/wang/avi/Indicator;-><init>()V
 
     return-void
@@ -26,7 +24,6 @@
 .method static synthetic access$002(Lcom/wang/avi/indicators/PacmanIndicator;F)F
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/wang/avi/indicators/PacmanIndicator;->translateX:F
 
     return p1
@@ -35,7 +32,6 @@
 .method static synthetic access$102(Lcom/wang/avi/indicators/PacmanIndicator;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/wang/avi/indicators/PacmanIndicator;->alpha:I
 
     return p1
@@ -44,7 +40,6 @@
 .method static synthetic access$202(Lcom/wang/avi/indicators/PacmanIndicator;F)F
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/wang/avi/indicators/PacmanIndicator;->degrees1:F
 
     return p1
@@ -53,7 +48,6 @@
 .method static synthetic access$302(Lcom/wang/avi/indicators/PacmanIndicator;F)F
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/wang/avi/indicators/PacmanIndicator;->degrees2:F
 
     return p1
@@ -62,7 +56,6 @@
 .method private drawCircle(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v0
@@ -71,12 +64,10 @@
 
     int-to-float v0, v0
 
-    .line 2
     iget v1, p0, Lcom/wang/avi/indicators/PacmanIndicator;->alpha:I
 
     invoke-virtual {p2, v1}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 3
     iget v1, p0, Lcom/wang/avi/indicators/PacmanIndicator;->translateX:F
 
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getHeight()I
@@ -95,7 +86,6 @@
 .method private drawPacman(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 13
 
-    .line 1
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v0
@@ -104,7 +94,6 @@
 
     int-to-float v0, v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getHeight()I
 
     move-result v1
@@ -113,23 +102,18 @@
 
     int-to-float v1, v1
 
-    .line 3
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 4
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 5
     iget v2, p0, Lcom/wang/avi/indicators/PacmanIndicator;->degrees1:F
 
     invoke-virtual {p1, v2}, Landroid/graphics/Canvas;->rotate(F)V
 
     const/16 v2, 0xff
 
-    .line 6
     invoke-virtual {p2, v2}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 7
     new-instance v4, Landroid/graphics/RectF;
 
     neg-float v3, v0
@@ -158,37 +142,28 @@
 
     move-object v8, p2
 
-    .line 8
     invoke-virtual/range {v3 .. v8}, Landroid/graphics/Canvas;->drawArc(Landroid/graphics/RectF;FFZLandroid/graphics/Paint;)V
 
-    .line 9
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
-    .line 10
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 11
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 12
     iget v0, p0, Lcom/wang/avi/indicators/PacmanIndicator;->degrees2:F
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->rotate(F)V
 
-    .line 13
     invoke-virtual {p2, v2}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 14
     new-instance v4, Landroid/graphics/RectF;
 
     invoke-direct {v4, v9, v10, v11, v12}, Landroid/graphics/RectF;-><init>(FFFF)V
 
     const/high16 v5, 0x42b40000    # 90.0f
 
-    .line 15
     invoke-virtual/range {v3 .. v8}, Landroid/graphics/Canvas;->drawArc(Landroid/graphics/RectF;FFZLandroid/graphics/Paint;)V
 
-    .line 16
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     return-void
@@ -199,10 +174,8 @@
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/wang/avi/indicators/PacmanIndicator;->drawPacman(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/wang/avi/indicators/PacmanIndicator;->drawCircle(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
 
     return-void
@@ -219,12 +192,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v1
@@ -237,7 +208,6 @@
 
     new-array v3, v2, [F
 
-    .line 3
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v4
@@ -268,10 +238,8 @@
 
     const-wide/16 v3, 0x28a
 
-    .line 4
     invoke-virtual {v1, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 5
     new-instance v5, Landroid/view/animation/LinearInterpolator;
 
     invoke-direct {v5}, Landroid/view/animation/LinearInterpolator;-><init>()V
@@ -280,10 +248,8 @@
 
     const/4 v5, -0x1
 
-    .line 6
     invoke-virtual {v1, v5}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 7
     new-instance v6, Lcom/wang/avi/indicators/PacmanIndicator$1;
 
     invoke-direct {v6, p0}, Lcom/wang/avi/indicators/PacmanIndicator$1;-><init>(Lcom/wang/avi/indicators/PacmanIndicator;)V
@@ -292,20 +258,16 @@
 
     new-array v2, v2, [I
 
-    .line 8
     fill-array-data v2, :array_0
 
     invoke-static {v2}, Landroid/animation/ValueAnimator;->ofInt([I)Landroid/animation/ValueAnimator;
 
     move-result-object v2
 
-    .line 9
     invoke-virtual {v2, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 10
     invoke-virtual {v2, v5}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 11
     new-instance v6, Lcom/wang/avi/indicators/PacmanIndicator$2;
 
     invoke-direct {v6, p0}, Lcom/wang/avi/indicators/PacmanIndicator$2;-><init>(Lcom/wang/avi/indicators/PacmanIndicator;)V
@@ -316,20 +278,16 @@
 
     new-array v7, v6, [F
 
-    .line 12
     fill-array-data v7, :array_1
 
     invoke-static {v7}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
     move-result-object v7
 
-    .line 13
     invoke-virtual {v7, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 14
     invoke-virtual {v7, v5}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 15
     new-instance v8, Lcom/wang/avi/indicators/PacmanIndicator$3;
 
     invoke-direct {v8, p0}, Lcom/wang/avi/indicators/PacmanIndicator$3;-><init>(Lcom/wang/avi/indicators/PacmanIndicator;)V
@@ -338,36 +296,28 @@
 
     new-array v6, v6, [F
 
-    .line 16
     fill-array-data v6, :array_2
 
     invoke-static {v6}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
     move-result-object v6
 
-    .line 17
     invoke-virtual {v6, v3, v4}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 18
     invoke-virtual {v6, v5}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 19
     new-instance v3, Lcom/wang/avi/indicators/PacmanIndicator$4;
 
     invoke-direct {v3, p0}, Lcom/wang/avi/indicators/PacmanIndicator$4;-><init>(Lcom/wang/avi/indicators/PacmanIndicator;)V
 
     invoke-virtual {p0, v6, v3}, Lcom/wang/avi/Indicator;->addUpdateListener(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 20
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 21
     invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 22
     invoke-virtual {v0, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 23
     invoke-virtual {v0, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     return-object v0

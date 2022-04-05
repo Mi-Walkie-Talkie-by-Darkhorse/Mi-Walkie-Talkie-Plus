@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/j/d;
 .super Ljava/lang/Object;
-.source "ManifestParser.java"
 
 
 # annotations
@@ -16,10 +15,8 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/j/d;->a:Landroid/content/Context;
 
     return-void
@@ -28,7 +25,6 @@
 .method private static a(Ljava/lang/String;)Lcom/bumptech/glide/j/b;
     .locals 3
 
-    .line 19
     :try_start_0
     invoke-static {p0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
@@ -43,7 +39,6 @@
     :try_start_1
     new-array v2, v0, [Ljava/lang/Class;
 
-    .line 20
     invoke-virtual {p0, v2}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object v2
@@ -59,17 +54,14 @@
     .catch Ljava/lang/NoSuchMethodException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_1 .. :try_end_1} :catch_0
 
-    .line 21
     instance-of v0, p0, Lcom/bumptech/glide/j/b;
 
     if-eqz v0, :cond_0
 
-    .line 22
     check-cast p0, Lcom/bumptech/glide/j/b;
 
     return-object p0
 
-    .line 23
     :cond_0
     new-instance v0, Ljava/lang/RuntimeException;
 
@@ -94,7 +86,6 @@
     :catch_0
     move-exception v0
 
-    .line 24
     invoke-static {p0, v0}, Lcom/bumptech/glide/j/d;->a(Ljava/lang/Class;Ljava/lang/Exception;)V
 
     throw v1
@@ -102,7 +93,6 @@
     :catch_1
     move-exception v0
 
-    .line 25
     invoke-static {p0, v0}, Lcom/bumptech/glide/j/d;->a(Ljava/lang/Class;Ljava/lang/Exception;)V
 
     throw v1
@@ -110,7 +100,6 @@
     :catch_2
     move-exception v0
 
-    .line 26
     invoke-static {p0, v0}, Lcom/bumptech/glide/j/d;->a(Ljava/lang/Class;Ljava/lang/Exception;)V
 
     throw v1
@@ -118,7 +107,6 @@
     :catch_3
     move-exception v0
 
-    .line 27
     invoke-static {p0, v0}, Lcom/bumptech/glide/j/d;->a(Ljava/lang/Class;Ljava/lang/Exception;)V
 
     throw v1
@@ -126,7 +114,6 @@
     :catch_4
     move-exception p0
 
-    .line 28
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Unable to find GlideModule implementation"
@@ -148,7 +135,6 @@
         }
     .end annotation
 
-    .line 29
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -187,7 +173,6 @@
 
     const-string v1, "ManifestParser"
 
-    .line 1
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v2
@@ -196,16 +181,13 @@
 
     const-string v2, "Loading Glide modules"
 
-    .line 2
     invoke-static {v1, v2}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     :cond_0
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 4
     :try_start_0
     iget-object v3, p0, Lcom/bumptech/glide/j/d;->a:Landroid/content/Context;
 
@@ -215,7 +197,6 @@
 
     iget-object v4, p0, Lcom/bumptech/glide/j/d;->a:Landroid/content/Context;
 
-    .line 5
     invoke-virtual {v4}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v4
@@ -226,12 +207,10 @@
 
     move-result-object v3
 
-    .line 6
     iget-object v4, v3, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
 
     if-nez v4, :cond_2
 
-    .line 7
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v0
@@ -240,7 +219,6 @@
 
     const-string v0, "Got null app info metadata"
 
-    .line 8
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_1
@@ -249,14 +227,12 @@
     :cond_2
     const/4 v4, 0x2
 
-    .line 9
     invoke-static {v1, v4}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v4
 
     if-eqz v4, :cond_3
 
-    .line 10
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -275,7 +251,6 @@
 
     invoke-static {v1, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 11
     :cond_3
     iget-object v4, v3, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
 
@@ -303,7 +278,6 @@
 
     const-string v6, "GlideModule"
 
-    .line 12
     iget-object v7, v3, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
 
     invoke-virtual {v7, v5}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
@@ -316,21 +290,18 @@
 
     if-eqz v6, :cond_4
 
-    .line 13
     invoke-static {v5}, Lcom/bumptech/glide/j/d;->a(Ljava/lang/String;)Lcom/bumptech/glide/j/b;
 
     move-result-object v6
 
     invoke-interface {v2, v6}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 14
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result v6
 
     if-eqz v6, :cond_4
 
-    .line 15
     new-instance v6, Ljava/lang/StringBuilder;
 
     invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
@@ -351,7 +322,6 @@
 
     goto :goto_0
 
-    .line 16
     :cond_5
     invoke-static {v1, v0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
@@ -361,7 +331,6 @@
 
     const-string v0, "Finished loading Glide modules"
 
-    .line 17
     invoke-static {v1, v0}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_6
@@ -370,7 +339,6 @@
     :catch_0
     move-exception v0
 
-    .line 18
     new-instance v1, Ljava/lang/RuntimeException;
 
     const-string v2, "Unable to find metadata to parse GlideModules"

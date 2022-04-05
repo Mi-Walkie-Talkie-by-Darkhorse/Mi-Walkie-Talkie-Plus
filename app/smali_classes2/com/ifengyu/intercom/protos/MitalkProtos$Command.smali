@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 .super Lcom/google/protobuf/GeneratedMessage;
-.source "MitalkProtos.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/protos/MitalkProtos$CommandOrBuilder;
@@ -119,14 +118,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command$a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command$a;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     const/4 v1, 0x1
@@ -135,7 +132,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->defaultInstance:Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
-    .line 3
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->initFields()V
 
     return-void
@@ -151,10 +147,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessage$Builder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object p1
@@ -167,7 +161,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessage$Builder;Lcom/ifengyu/intercom/protos/MitalkProtos$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
     return-void
@@ -176,7 +169,6 @@
 .method private constructor <init>(Z)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage;-><init>()V
 
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
@@ -191,7 +183,6 @@
 .method static synthetic access$1002(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     return-object p1
@@ -200,7 +191,6 @@
 .method static synthetic access$1102(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramUpdate_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     return-object p1
@@ -209,7 +199,6 @@
 .method static synthetic access$1202(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     return-object p1
@@ -218,7 +207,6 @@
 .method static synthetic access$1302(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;)Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->stateQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
 
     return-object p1
@@ -227,7 +215,6 @@
 .method static synthetic access$1402(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;)Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->stateResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
 
     return-object p1
@@ -236,7 +223,6 @@
 .method static synthetic access$1502(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;)Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->locationSync_:Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     return-object p1
@@ -245,7 +231,6 @@
 .method static synthetic access$1602(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;)Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->locationCtl_:Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     return-object p1
@@ -254,7 +239,6 @@
 .method static synthetic access$1702(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;)Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->fileReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 
     return-object p1
@@ -263,7 +247,6 @@
 .method static synthetic access$1802(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$FilePack;)Lcom/ifengyu/intercom/protos/MitalkProtos$FilePack;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->filePack_:Lcom/ifengyu/intercom/protos/MitalkProtos$FilePack;
 
     return-object p1
@@ -272,7 +255,6 @@
 .method static synthetic access$1902(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponse;)Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponse;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->fileResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponse;
 
     return-object p1
@@ -281,7 +263,6 @@
 .method static synthetic access$2002(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$LogRequest;)Lcom/ifengyu/intercom/protos/MitalkProtos$LogRequest;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->logReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$LogRequest;
 
     return-object p1
@@ -290,7 +271,6 @@
 .method static synthetic access$2102(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;)Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->testReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
 
     return-object p1
@@ -299,7 +279,6 @@
 .method static synthetic access$2202(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;)Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->testResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
 
     return-object p1
@@ -308,7 +287,6 @@
 .method static synthetic access$2302(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse;)Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->updateResponse_:Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse;
 
     return-object p1
@@ -317,7 +295,6 @@
 .method static synthetic access$2402(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     return p1
@@ -326,7 +303,6 @@
 .method static synthetic access$400()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/google/protobuf/GeneratedMessage;->alwaysUseFieldBuilders:Z
 
     return v0
@@ -335,7 +311,6 @@
 .method static synthetic access$602(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;)Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->connectQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
 
     return-object p1
@@ -344,7 +319,6 @@
 .method static synthetic access$702(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;)Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->connectResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
 
     return-object p1
@@ -353,7 +327,6 @@
 .method static synthetic access$802(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$Control;)Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->heartbeat_:Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
 
     return-object p1
@@ -362,7 +335,6 @@
 .method static synthetic access$902(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;Lcom/ifengyu/intercom/protos/MitalkProtos$Control;)Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->control_:Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
 
     return-object p1
@@ -371,7 +343,6 @@
 .method public static getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->defaultInstance:Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     return-object v0
@@ -380,7 +351,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos;->a()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -391,126 +361,108 @@
 .method private initFields()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->connectQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->connectResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Control;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->heartbeat_:Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Control;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->control_:Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramUpdate_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->stateQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->stateResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->locationSync_:Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
-    .line 11
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->locationCtl_:Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
-    .line 12
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->fileReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$FilePack;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$FilePack;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->filePack_:Lcom/ifengyu/intercom/protos/MitalkProtos$FilePack;
 
-    .line 14
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponse;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponse;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->fileResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponse;
 
-    .line 15
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$LogRequest;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$LogRequest;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->logReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$LogRequest;
 
-    .line 16
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->testReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
 
-    .line 17
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->testResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
 
-    .line 18
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse;
 
     move-result-object v0
@@ -523,7 +475,6 @@
 .method public static newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;->access$200()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
@@ -534,7 +485,6 @@
 .method public static newBuilder(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
@@ -556,7 +506,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -576,7 +525,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -596,7 +544,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
@@ -616,7 +563,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -636,7 +582,6 @@
         }
     .end annotation
 
-    .line 7
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;)Ljava/lang/Object;
@@ -656,7 +601,6 @@
         }
     .end annotation
 
-    .line 8
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -676,7 +620,6 @@
         }
     .end annotation
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -696,7 +639,6 @@
         }
     .end annotation
 
-    .line 6
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -716,7 +658,6 @@
         }
     .end annotation
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
@@ -736,7 +677,6 @@
         }
     .end annotation
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -753,7 +693,6 @@
 .method public getConnectQuery()Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->connectQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
 
     return-object v0
@@ -762,7 +701,6 @@
 .method public getConnectQueryOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$ConnectOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->connectQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
 
     return-object v0
@@ -771,7 +709,6 @@
 .method public getConnectResp()Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->connectResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
 
     return-object v0
@@ -780,7 +717,6 @@
 .method public getConnectRespOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$ConnectOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->connectResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$Connect;
 
     return-object v0
@@ -789,7 +725,6 @@
 .method public getControl()Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->control_:Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
 
     return-object v0
@@ -798,7 +733,6 @@
 .method public getControlOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$ControlOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->control_:Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
 
     return-object v0
@@ -807,7 +741,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object v0
@@ -818,7 +751,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     move-result-object v0
@@ -829,7 +761,6 @@
 .method public getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
     .locals 1
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->defaultInstance:Lcom/ifengyu/intercom/protos/MitalkProtos$Command;
 
     return-object v0
@@ -838,7 +769,6 @@
 .method public getFilePack()Lcom/ifengyu/intercom/protos/MitalkProtos$FilePack;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->filePack_:Lcom/ifengyu/intercom/protos/MitalkProtos$FilePack;
 
     return-object v0
@@ -847,7 +777,6 @@
 .method public getFilePackOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$FilePackOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->filePack_:Lcom/ifengyu/intercom/protos/MitalkProtos$FilePack;
 
     return-object v0
@@ -856,7 +785,6 @@
 .method public getFileReq()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->fileReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 
     return-object v0
@@ -865,7 +793,6 @@
 .method public getFileReqOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequestOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->fileReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$FileRequest;
 
     return-object v0
@@ -874,7 +801,6 @@
 .method public getFileResp()Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponse;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->fileResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponse;
 
     return-object v0
@@ -883,7 +809,6 @@
 .method public getFileRespOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponseOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->fileResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$FileResponse;
 
     return-object v0
@@ -892,7 +817,6 @@
 .method public getHeartbeat()Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->heartbeat_:Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
 
     return-object v0
@@ -901,7 +825,6 @@
 .method public getHeartbeatOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$ControlOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->heartbeat_:Lcom/ifengyu/intercom/protos/MitalkProtos$Control;
 
     return-object v0
@@ -910,7 +833,6 @@
 .method public getLocationCtl()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->locationCtl_:Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     return-object v0
@@ -919,7 +841,6 @@
 .method public getLocationCtlOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSyncOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->locationCtl_:Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     return-object v0
@@ -928,7 +849,6 @@
 .method public getLocationSync()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->locationSync_:Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     return-object v0
@@ -937,7 +857,6 @@
 .method public getLocationSyncOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSyncOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->locationSync_:Lcom/ifengyu/intercom/protos/MitalkProtos$LocationSync;
 
     return-object v0
@@ -946,7 +865,6 @@
 .method public getLogReq()Lcom/ifengyu/intercom/protos/MitalkProtos$LogRequest;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->logReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$LogRequest;
 
     return-object v0
@@ -955,7 +873,6 @@
 .method public getLogReqOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$LogRequestOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->logReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$LogRequest;
 
     return-object v0
@@ -964,7 +881,6 @@
 .method public getParamQuery()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     return-object v0
@@ -973,7 +889,6 @@
 .method public getParamQueryOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdateOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     return-object v0
@@ -982,7 +897,6 @@
 .method public getParamResp()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     return-object v0
@@ -991,7 +905,6 @@
 .method public getParamRespOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdateOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     return-object v0
@@ -1000,7 +913,6 @@
 .method public getParamUpdate()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramUpdate_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     return-object v0
@@ -1009,7 +921,6 @@
 .method public getParamUpdateOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdateOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->paramUpdate_:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     return-object v0
@@ -1026,7 +937,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -1035,7 +945,6 @@
 .method public getStateQuery()Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->stateQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
 
     return-object v0
@@ -1044,7 +953,6 @@
 .method public getStateQueryOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdateOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->stateQuery_:Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
 
     return-object v0
@@ -1053,7 +961,6 @@
 .method public getStateResp()Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->stateResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
 
     return-object v0
@@ -1062,7 +969,6 @@
 .method public getStateRespOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdateOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->stateResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$StateUpdate;
 
     return-object v0
@@ -1071,7 +977,6 @@
 .method public getTestReq()Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->testReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
 
     return-object v0
@@ -1080,7 +985,6 @@
 .method public getTestReqOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTestOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->testReq_:Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
 
     return-object v0
@@ -1089,7 +993,6 @@
 .method public getTestResp()Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->testResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
 
     return-object v0
@@ -1098,7 +1001,6 @@
 .method public getTestRespOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTestOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->testResp_:Lcom/ifengyu/intercom/protos/MitalkProtos$IntercomTest;
 
     return-object v0
@@ -1107,7 +1009,6 @@
 .method public final getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
 
     return-object v0
@@ -1116,7 +1017,6 @@
 .method public getUpdateResponse()Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->updateResponse_:Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse;
 
     return-object v0
@@ -1125,7 +1025,6 @@
 .method public getUpdateResponseOrBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponseOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->updateResponse_:Lcom/ifengyu/intercom/protos/MitalkProtos$UpdateResponse;
 
     return-object v0
@@ -1134,7 +1033,6 @@
 .method public hasConnectQuery()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/4 v1, 0x1
@@ -1155,7 +1053,6 @@
 .method public hasConnectResp()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/4 v1, 0x2
@@ -1178,7 +1075,6 @@
 .method public hasControl()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x8
@@ -1201,7 +1097,6 @@
 .method public hasFilePack()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x1000
@@ -1224,7 +1119,6 @@
 .method public hasFileReq()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x800
@@ -1247,7 +1141,6 @@
 .method public hasFileResp()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x2000
@@ -1270,7 +1163,6 @@
 .method public hasHeartbeat()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/4 v1, 0x4
@@ -1293,7 +1185,6 @@
 .method public hasLocationCtl()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x400
@@ -1316,7 +1207,6 @@
 .method public hasLocationSync()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x200
@@ -1339,7 +1229,6 @@
 .method public hasLogReq()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x4000
@@ -1362,7 +1251,6 @@
 .method public hasParamQuery()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x10
@@ -1385,7 +1273,6 @@
 .method public hasParamResp()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x40
@@ -1408,7 +1295,6 @@
 .method public hasParamUpdate()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x20
@@ -1431,7 +1317,6 @@
 .method public hasStateQuery()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x80
@@ -1454,7 +1339,6 @@
 .method public hasStateResp()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/16 v1, 0x100
@@ -1477,7 +1361,6 @@
 .method public hasTestReq()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const v1, 0x8000
@@ -1500,7 +1383,6 @@
 .method public hasTestResp()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/high16 v1, 0x10000
@@ -1523,7 +1405,6 @@
 .method public hasUpdateResponse()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->bitField0_:I
 
     const/high16 v1, 0x20000
@@ -1546,7 +1427,6 @@
 .method protected internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos;->b()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -1555,7 +1435,6 @@
 
     const-class v2, Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -1566,7 +1445,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilderForType()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
@@ -1577,7 +1455,6 @@
 .method protected bridge synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/google/protobuf/Message$Builder;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object p1
@@ -1588,7 +1465,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilderForType()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
@@ -1599,7 +1475,6 @@
 .method public newBuilderForType()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
     .locals 1
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
@@ -1610,7 +1485,6 @@
 .method protected newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
     .locals 2
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     const/4 v1, 0x0
@@ -1623,7 +1497,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->toBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
@@ -1634,7 +1507,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->toBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0
@@ -1645,7 +1517,6 @@
 .method public toBuilder()Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
     .locals 1
 
-    .line 3
     invoke-static {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$Command;->newBuilder(Lcom/ifengyu/intercom/protos/MitalkProtos$Command;)Lcom/ifengyu/intercom/protos/MitalkProtos$Command$Builder;
 
     move-result-object v0

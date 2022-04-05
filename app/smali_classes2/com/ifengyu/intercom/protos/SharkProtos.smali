@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/protos/SharkProtos;
 .super Ljava/lang/Object;
-.source "SharkProtos.java"
 
 
 # annotations
@@ -102,12 +101,10 @@
 
     const-string v10, "\n\u001bcom.ifengyu.intercom.protosB\u000bSharkProtosH\u0002"
 
-    .line 1
     filled-new-array/range {v0 .. v10}, [Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Lcom/ifengyu/intercom/protos/SharkProtos$a;
 
     invoke-direct {v1}, Lcom/ifengyu/intercom/protos/SharkProtos$a;-><init>()V
@@ -116,10 +113,8 @@
 
     new-array v3, v2, [Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 3
     invoke-static {v0, v3, v1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalBuildGeneratedFileFrom([Ljava/lang/String;[Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;)V
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->u()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -136,7 +131,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->a:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 5
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "Version"
@@ -161,7 +155,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SharkProtos;->b:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 6
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->u()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -180,7 +173,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->c:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 7
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "ChNo"
@@ -217,7 +209,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SharkProtos;->d:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->u()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -236,7 +227,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->e:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 9
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "Version"
@@ -281,7 +271,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SharkProtos;->f:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->u()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -300,7 +289,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->g:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 11
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "Version"
@@ -327,7 +315,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SharkProtos;->h:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 12
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->u()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -346,7 +333,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->i:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 13
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "Result"
@@ -365,7 +351,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SharkProtos;->j:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 14
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->u()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -384,7 +369,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->k:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 15
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v4, "Version"
@@ -415,7 +399,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SharkProtos;->l:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 16
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->u()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -434,7 +417,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->m:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 17
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v4, "FCmd"
@@ -453,7 +435,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SharkProtos;->n:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 18
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->u()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -472,7 +453,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->o:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 19
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v3, "Offset"
@@ -485,7 +465,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SharkProtos;->p:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 20
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->u()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -504,7 +483,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->q:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 21
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "Data"
@@ -519,7 +497,6 @@
 
     sput-object v1, Lcom/ifengyu/intercom/protos/SharkProtos;->r:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
-    .line 22
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->u()Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object v0
@@ -538,7 +515,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->s:Lcom/google/protobuf/Descriptors$Descriptor;
 
-    .line 23
     new-instance v1, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     const-string v2, "PowerOn"
@@ -583,7 +559,6 @@
 .method static synthetic a()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->a:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -592,7 +567,6 @@
 .method static synthetic a(Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/Descriptors$FileDescriptor;
     .locals 0
 
-    .line 2
     sput-object p0, Lcom/ifengyu/intercom/protos/SharkProtos;->u:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     return-object p0
@@ -601,7 +575,6 @@
 .method static synthetic b()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->b:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -610,7 +583,6 @@
 .method static synthetic c()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->m:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -619,7 +591,6 @@
 .method static synthetic d()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->n:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -628,7 +599,6 @@
 .method static synthetic e()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->o:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -637,7 +607,6 @@
 .method static synthetic f()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->p:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -646,7 +615,6 @@
 .method static synthetic g()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->q:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -655,7 +623,6 @@
 .method static synthetic h()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->r:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -664,7 +631,6 @@
 .method static synthetic i()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->s:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -673,7 +639,6 @@
 .method static synthetic j()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->t:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -682,7 +647,6 @@
 .method static synthetic k()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->c:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -691,7 +655,6 @@
 .method static synthetic l()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->d:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -700,7 +663,6 @@
 .method static synthetic m()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->e:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -709,7 +671,6 @@
 .method static synthetic n()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->f:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -718,7 +679,6 @@
 .method static synthetic o()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->g:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -727,7 +687,6 @@
 .method static synthetic p()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->h:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -736,7 +695,6 @@
 .method static synthetic q()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->i:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -745,7 +703,6 @@
 .method static synthetic r()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->j:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -754,7 +711,6 @@
 .method static synthetic s()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->k:Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object v0
@@ -763,7 +719,6 @@
 .method static synthetic t()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->l:Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     return-object v0
@@ -772,7 +727,6 @@
 .method public static u()Lcom/google/protobuf/Descriptors$FileDescriptor;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos;->u:Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     return-object v0

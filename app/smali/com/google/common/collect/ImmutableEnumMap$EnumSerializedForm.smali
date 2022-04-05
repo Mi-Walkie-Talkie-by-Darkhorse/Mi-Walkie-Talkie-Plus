@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ImmutableEnumMap$EnumSerializedForm;
 .super Ljava/lang/Object;
-.source "ImmutableEnumMap.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -55,10 +54,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/ImmutableEnumMap$EnumSerializedForm;->delegate:Ljava/util/EnumMap;
 
     return-void
@@ -69,7 +66,6 @@
 .method readResolve()Ljava/lang/Object;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ImmutableEnumMap;
 
     iget-object v1, p0, Lcom/google/common/collect/ImmutableEnumMap$EnumSerializedForm;->delegate:Ljava/util/EnumMap;

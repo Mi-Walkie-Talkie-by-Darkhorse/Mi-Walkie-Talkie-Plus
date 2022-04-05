@@ -1,6 +1,5 @@
 .class public Landroidx/room/a;
 .super Ljava/lang/Object;
-.source "DatabaseConfiguration.java"
 
 
 # instance fields
@@ -150,52 +149,36 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p3, p0, Landroidx/room/a;->a:La/g/a/c$c;
 
-    .line 3
     iput-object p1, p0, Landroidx/room/a;->b:Landroid/content/Context;
 
-    .line 4
     iput-object p2, p0, Landroidx/room/a;->c:Ljava/lang/String;
 
-    .line 5
     iput-object p4, p0, Landroidx/room/a;->d:Landroidx/room/RoomDatabase$c;
 
-    .line 6
     iput-object p5, p0, Landroidx/room/a;->e:Ljava/util/List;
 
-    .line 7
     iput-boolean p6, p0, Landroidx/room/a;->f:Z
 
-    .line 8
     iput-object p7, p0, Landroidx/room/a;->g:Landroidx/room/RoomDatabase$JournalMode;
 
-    .line 9
     iput-object p8, p0, Landroidx/room/a;->h:Ljava/util/concurrent/Executor;
 
-    .line 10
     iput-object p9, p0, Landroidx/room/a;->i:Ljava/util/concurrent/Executor;
 
-    .line 11
     iput-boolean p10, p0, Landroidx/room/a;->j:Z
 
-    .line 12
     iput-boolean p11, p0, Landroidx/room/a;->k:Z
 
-    .line 13
     iput-boolean p12, p0, Landroidx/room/a;->l:Z
 
-    .line 14
     iput-object p13, p0, Landroidx/room/a;->m:Ljava/util/Set;
 
-    .line 15
     iput-object p14, p0, Landroidx/room/a;->n:Ljava/lang/String;
 
-    .line 16
     iput-object p15, p0, Landroidx/room/a;->o:Ljava/io/File;
 
     return-void
@@ -222,14 +205,12 @@
     :goto_0
     if-eqz p2, :cond_1
 
-    .line 1
     iget-boolean p2, p0, Landroidx/room/a;->l:Z
 
     if-eqz p2, :cond_1
 
     return v1
 
-    .line 2
     :cond_1
     iget-boolean p2, p0, Landroidx/room/a;->k:Z
 
@@ -239,7 +220,6 @@
 
     if-eqz p2, :cond_3
 
-    .line 3
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1

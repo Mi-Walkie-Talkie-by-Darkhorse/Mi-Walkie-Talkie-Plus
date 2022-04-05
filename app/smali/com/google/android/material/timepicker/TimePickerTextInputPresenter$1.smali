@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/timepicker/TimePickerTextInputPresenter$1;
 .super Lcom/google/android/material/internal/TextWatcherAdapter;
-.source "TimePickerTextInputPresenter.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/timepicker/TimePickerTextInputPresenter$1;->this$0:Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;
 
     invoke-direct {p0}, Lcom/google/android/material/internal/TextWatcherAdapter;-><init>()V
@@ -35,7 +33,6 @@
 .method public afterTextChanged(Landroid/text/Editable;)V
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -43,7 +40,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/timepicker/TimePickerTextInputPresenter$1;->this$0:Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;
 
     invoke-static {p1}, Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;->access$000(Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;)Lcom/google/android/material/timepicker/TimeModel;
@@ -56,7 +52,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
@@ -66,7 +61,6 @@
 
     move-result p1
 
-    .line 4
     iget-object v0, p0, Lcom/google/android/material/timepicker/TimePickerTextInputPresenter$1;->this$0:Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;
 
     invoke-static {v0}, Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;->access$000(Lcom/google/android/material/timepicker/TimePickerTextInputPresenter;)Lcom/google/android/material/timepicker/TimeModel;

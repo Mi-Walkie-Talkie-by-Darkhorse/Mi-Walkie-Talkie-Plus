@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
 .super Lorg/greenrobot/greendao/AbstractDao;
-.source "SealSharkChannelDao.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method public constructor <init>(Lorg/greenrobot/greendao/internal/DaoConfig;Lcom/ifengyu/intercom/greendao/dao/b;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lorg/greenrobot/greendao/AbstractDao;-><init>(Lorg/greenrobot/greendao/internal/DaoConfig;Lorg/greenrobot/greendao/AbstractDaoSession;)V
 
     return-void
@@ -46,7 +44,6 @@
     :cond_0
     const-string p1, ""
 
-    .line 1
     :goto_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -78,7 +75,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 55
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->c()Ljava/lang/Long;
 
     move-result-object p1
@@ -94,14 +90,12 @@
 .method protected final a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;J)Ljava/lang/Long;
     .locals 1
 
-    .line 53
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->a(Ljava/lang/Long;)V
 
-    .line 54
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
@@ -114,7 +108,6 @@
 
     add-int/lit8 v0, p3, 0x0
 
-    .line 38
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -141,7 +134,6 @@
 
     add-int/lit8 v0, p3, 0x1
 
-    .line 39
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -150,7 +142,6 @@
 
     add-int/lit8 v0, p3, 0x2
 
-    .line 40
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -159,7 +150,6 @@
 
     add-int/lit8 v0, p3, 0x3
 
-    .line 41
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -168,7 +158,6 @@
 
     add-int/lit8 v0, p3, 0x4
 
-    .line 42
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -177,7 +166,6 @@
 
     add-int/lit8 v0, p3, 0x5
 
-    .line 43
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -186,7 +174,6 @@
 
     add-int/lit8 v0, p3, 0x6
 
-    .line 44
     invoke-interface {p1, v0}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v1
@@ -205,7 +192,6 @@
 
     add-int/lit8 v0, p3, 0x7
 
-    .line 45
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -214,7 +200,6 @@
 
     add-int/lit8 v0, p3, 0x8
 
-    .line 46
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -223,7 +208,6 @@
 
     add-int/lit8 v0, p3, 0x9
 
-    .line 47
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -232,7 +216,6 @@
 
     add-int/lit8 v0, p3, 0xa
 
-    .line 48
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -241,7 +224,6 @@
 
     add-int/lit8 v0, p3, 0xb
 
-    .line 49
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getShort(I)S
 
     move-result v0
@@ -264,7 +246,6 @@
 
     add-int/lit8 v0, p3, 0xc
 
-    .line 50
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v0
@@ -273,7 +254,6 @@
 
     add-int/lit8 v0, p3, 0xd
 
-    .line 51
     invoke-interface {p1, v0}, Landroid/database/Cursor;->getShort(I)S
 
     move-result v0
@@ -292,7 +272,6 @@
 
     add-int/lit8 p3, p3, 0xe
 
-    .line 52
     invoke-interface {p1, p3}, Landroid/database/Cursor;->getShort(I)S
 
     move-result p1
@@ -313,10 +292,8 @@
 .method protected final a(Landroid/database/sqlite/SQLiteStatement;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 8
 
-    .line 20
     invoke-virtual {p1}, Landroid/database/sqlite/SQLiteStatement;->clearBindings()V
 
-    .line 21
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->c()Ljava/lang/Long;
 
     move-result-object v0
@@ -325,7 +302,6 @@
 
     const/4 v1, 0x1
 
-    .line 22
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
@@ -335,7 +311,6 @@
     :cond_0
     const/4 v0, 0x2
 
-    .line 23
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->f()I
 
     move-result v1
@@ -346,7 +321,6 @@
 
     const/4 v0, 0x3
 
-    .line 24
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->n()I
 
     move-result v1
@@ -357,7 +331,6 @@
 
     const/4 v0, 0x4
 
-    .line 25
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->m()I
 
     move-result v1
@@ -368,7 +341,6 @@
 
     const/4 v0, 0x5
 
-    .line 26
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->i()I
 
     move-result v1
@@ -379,7 +351,6 @@
 
     const/4 v0, 0x6
 
-    .line 27
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->l()I
 
     move-result v1
@@ -388,7 +359,6 @@
 
     invoke-virtual {p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteStatement;->bindLong(IJ)V
 
-    .line 28
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->e()Ljava/lang/String;
 
     move-result-object v0
@@ -397,13 +367,11 @@
 
     const/4 v1, 0x7
 
-    .line 29
     invoke-virtual {p1, v1, v0}, Landroid/database/sqlite/SQLiteStatement;->bindString(ILjava/lang/String;)V
 
     :cond_1
     const/16 v0, 0x8
 
-    .line 30
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->j()I
 
     move-result v1
@@ -414,7 +382,6 @@
 
     const/16 v0, 0x9
 
-    .line 31
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->o()I
 
     move-result v1
@@ -425,7 +392,6 @@
 
     const/16 v0, 0xa
 
-    .line 32
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->h()I
 
     move-result v1
@@ -436,7 +402,6 @@
 
     const/16 v0, 0xb
 
-    .line 33
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->k()I
 
     move-result v1
@@ -447,7 +412,6 @@
 
     const/16 v0, 0xc
 
-    .line 34
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->b()Z
 
     move-result v1
@@ -470,7 +434,6 @@
 
     const/16 v0, 0xd
 
-    .line 35
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->a()I
 
     move-result v1
@@ -481,7 +444,6 @@
 
     const/16 v0, 0xe
 
-    .line 36
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->g()Z
 
     move-result v1
@@ -500,7 +462,6 @@
 
     const/16 v0, 0xf
 
-    .line 37
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->d()Z
 
     move-result p2
@@ -521,10 +482,8 @@
 .method protected final a(Lorg/greenrobot/greendao/database/DatabaseStatement;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 8
 
-    .line 2
     invoke-interface {p1}, Lorg/greenrobot/greendao/database/DatabaseStatement;->clearBindings()V
 
-    .line 3
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->c()Ljava/lang/Long;
 
     move-result-object v0
@@ -533,7 +492,6 @@
 
     const/4 v1, 0x1
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
@@ -543,7 +501,6 @@
     :cond_0
     const/4 v0, 0x2
 
-    .line 5
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->f()I
 
     move-result v1
@@ -554,7 +511,6 @@
 
     const/4 v0, 0x3
 
-    .line 6
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->n()I
 
     move-result v1
@@ -565,7 +521,6 @@
 
     const/4 v0, 0x4
 
-    .line 7
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->m()I
 
     move-result v1
@@ -576,7 +531,6 @@
 
     const/4 v0, 0x5
 
-    .line 8
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->i()I
 
     move-result v1
@@ -587,7 +541,6 @@
 
     const/4 v0, 0x6
 
-    .line 9
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->l()I
 
     move-result v1
@@ -596,7 +549,6 @@
 
     invoke-interface {p1, v0, v1, v2}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindLong(IJ)V
 
-    .line 10
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->e()Ljava/lang/String;
 
     move-result-object v0
@@ -605,13 +557,11 @@
 
     const/4 v1, 0x7
 
-    .line 11
     invoke-interface {p1, v1, v0}, Lorg/greenrobot/greendao/database/DatabaseStatement;->bindString(ILjava/lang/String;)V
 
     :cond_1
     const/16 v0, 0x8
 
-    .line 12
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->j()I
 
     move-result v1
@@ -622,7 +572,6 @@
 
     const/16 v0, 0x9
 
-    .line 13
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->o()I
 
     move-result v1
@@ -633,7 +582,6 @@
 
     const/16 v0, 0xa
 
-    .line 14
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->h()I
 
     move-result v1
@@ -644,7 +592,6 @@
 
     const/16 v0, 0xb
 
-    .line 15
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->k()I
 
     move-result v1
@@ -655,7 +602,6 @@
 
     const/16 v0, 0xc
 
-    .line 16
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->b()Z
 
     move-result v1
@@ -678,7 +624,6 @@
 
     const/16 v0, 0xd
 
-    .line 17
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->a()I
 
     move-result v1
@@ -689,7 +634,6 @@
 
     const/16 v0, 0xe
 
-    .line 18
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->g()Z
 
     move-result v1
@@ -708,7 +652,6 @@
 
     const/16 v0, 0xf
 
-    .line 19
     invoke-virtual {p2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->d()Z
 
     move-result p2
@@ -729,7 +672,6 @@
 .method public b(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->c()Ljava/lang/Long;
 
     move-result-object p1
@@ -750,7 +692,6 @@
 .method protected bridge synthetic bindValues(Landroid/database/sqlite/SQLiteStatement;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;->a(Landroid/database/sqlite/SQLiteStatement;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
@@ -761,7 +702,6 @@
 .method protected bridge synthetic bindValues(Lorg/greenrobot/greendao/database/DatabaseStatement;Ljava/lang/Object;)V
     .locals 0
 
-    .line 2
     check-cast p2, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;->a(Lorg/greenrobot/greendao/database/DatabaseStatement;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
@@ -772,7 +712,6 @@
 .method public bridge synthetic getKey(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)Ljava/lang/Long;
@@ -785,7 +724,6 @@
 .method public bridge synthetic hasKey(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;->b(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)Z
@@ -808,12 +746,10 @@
 
     move-object/from16 v0, p1
 
-    .line 3
     new-instance v16, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     add-int/lit8 v1, p2, 0x0
 
-    .line 4
     invoke-interface {v0, v1}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v2
@@ -838,42 +774,36 @@
     :goto_0
     add-int/lit8 v2, p2, 0x1
 
-    .line 5
     invoke-interface {v0, v2}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v2
 
     add-int/lit8 v4, p2, 0x2
 
-    .line 6
     invoke-interface {v0, v4}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v4
 
     add-int/lit8 v5, p2, 0x3
 
-    .line 7
     invoke-interface {v0, v5}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v5
 
     add-int/lit8 v6, p2, 0x4
 
-    .line 8
     invoke-interface {v0, v6}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v6
 
     add-int/lit8 v7, p2, 0x5
 
-    .line 9
     invoke-interface {v0, v7}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v7
 
     add-int/lit8 v8, p2, 0x6
 
-    .line 10
     invoke-interface {v0, v8}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v9
@@ -892,35 +822,30 @@
 
     add-int/lit8 v3, p2, 0x7
 
-    .line 11
     invoke-interface {v0, v3}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v9
 
     add-int/lit8 v3, p2, 0x8
 
-    .line 12
     invoke-interface {v0, v3}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v10
 
     add-int/lit8 v3, p2, 0x9
 
-    .line 13
     invoke-interface {v0, v3}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v11
 
     add-int/lit8 v3, p2, 0xa
 
-    .line 14
     invoke-interface {v0, v3}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v12
 
     add-int/lit8 v3, p2, 0xb
 
-    .line 15
     invoke-interface {v0, v3}, Landroid/database/Cursor;->getShort(I)S
 
     move-result v3
@@ -941,14 +866,12 @@
     :goto_2
     add-int/lit8 v3, p2, 0xc
 
-    .line 16
     invoke-interface {v0, v3}, Landroid/database/Cursor;->getInt(I)I
 
     move-result v17
 
     add-int/lit8 v3, p2, 0xd
 
-    .line 17
     invoke-interface {v0, v3}, Landroid/database/Cursor;->getShort(I)S
 
     move-result v3
@@ -965,7 +888,6 @@
     :goto_3
     add-int/lit8 v3, p2, 0xe
 
-    .line 18
     invoke-interface {v0, v3}, Landroid/database/Cursor;->getShort(I)S
 
     move-result v0
@@ -1016,7 +938,6 @@
 .method public bridge synthetic readEntity(Landroid/database/Cursor;I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;->readEntity(Landroid/database/Cursor;I)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     move-result-object p1
@@ -1027,7 +948,6 @@
 .method public bridge synthetic readEntity(Landroid/database/Cursor;Ljava/lang/Object;I)V
     .locals 0
 
-    .line 2
     check-cast p2, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;->a(Landroid/database/Cursor;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;I)V
@@ -1040,7 +960,6 @@
 
     add-int/lit8 p2, p2, 0x0
 
-    .line 2
     invoke-interface {p1, p2}, Landroid/database/Cursor;->isNull(I)Z
 
     move-result v0
@@ -1067,7 +986,6 @@
 .method public bridge synthetic readKey(Landroid/database/Cursor;I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;->readKey(Landroid/database/Cursor;I)Ljava/lang/Long;
 
     move-result-object p1
@@ -1078,7 +996,6 @@
 .method protected bridge synthetic updateKeyAfterInsert(Ljava/lang/Object;J)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;J)Ljava/lang/Long;

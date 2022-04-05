@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/f;
 .super Ljava/lang/Object;
-.source "ResourceDecoder.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/experimental/Experimental;
 .super Ljava/lang/Object;
-.source "Experimental.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/observers/BlockingLastObserver;
 .super Lio/reactivex/internal/observers/BlockingBaseObserver;
-.source "BlockingLastObserver.java"
 
 
 # annotations
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/internal/observers/BlockingBaseObserver;-><init>()V
 
     return-void
@@ -32,13 +30,10 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Lio/reactivex/internal/observers/BlockingBaseObserver;->value:Ljava/lang/Object;
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/observers/BlockingBaseObserver;->error:Ljava/lang/Throwable;
 
-    .line 3
     invoke-virtual {p0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
     return-void
@@ -52,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lio/reactivex/internal/observers/BlockingBaseObserver;->value:Ljava/lang/Object;
 
     return-void

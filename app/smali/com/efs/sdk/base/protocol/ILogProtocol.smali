@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/efs/sdk/base/protocol/ILogProtocol;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # static fields

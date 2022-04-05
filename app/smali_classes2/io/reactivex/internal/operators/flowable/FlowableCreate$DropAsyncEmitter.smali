@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableCreate$DropAsyncEmitter;
 .super Lio/reactivex/internal/operators/flowable/FlowableCreate$NoOverflowBaseAsyncEmitter;
-.source "FlowableCreate.java"
 
 
 # annotations
@@ -39,7 +38,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/flowable/FlowableCreate$NoOverflowBaseAsyncEmitter;-><init>(Lc/a/c;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/hash/SipHashFunction;
 .super Lcom/google/common/hash/AbstractStreamingHashFunction;
-.source "SipHashFunction.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -32,7 +31,6 @@
 .method constructor <init>(IIJJ)V
     .locals 5
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction;-><init>()V
 
     const/4 v0, 0x1
@@ -51,7 +49,6 @@
     :goto_0
     new-array v3, v0, [Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -74,7 +71,6 @@
     :goto_1
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 3
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -85,16 +81,12 @@
 
     invoke-static {v2, v1, v0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 4
     iput p1, p0, Lcom/google/common/hash/SipHashFunction;->c:I
 
-    .line 5
     iput p2, p0, Lcom/google/common/hash/SipHashFunction;->d:I
 
-    .line 6
     iput-wide p3, p0, Lcom/google/common/hash/SipHashFunction;->k0:J
 
-    .line 7
     iput-wide p5, p0, Lcom/google/common/hash/SipHashFunction;->k1:J
 
     return-void
@@ -117,17 +109,14 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Lcom/google/common/hash/SipHashFunction;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/common/hash/SipHashFunction;
 
-    .line 3
     iget v0, p0, Lcom/google/common/hash/SipHashFunction;->c:I
 
     iget v2, p1, Lcom/google/common/hash/SipHashFunction;->c:I
@@ -165,7 +154,6 @@
 .method public hashCode()I
     .locals 4
 
-    .line 1
     const-class v0, Lcom/google/common/hash/SipHashFunction;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -198,7 +186,6 @@
 .method public newHasher()Lcom/google/common/hash/Hasher;
     .locals 8
 
-    .line 1
     new-instance v7, Lcom/google/common/hash/SipHashFunction$SipHasher;
 
     iget v1, p0, Lcom/google/common/hash/SipHashFunction;->c:I
@@ -219,7 +206,6 @@
 .method public toString()Ljava/lang/String;
     .locals 8
 
-    .line 1
     iget v0, p0, Lcom/google/common/hash/SipHashFunction;->c:I
 
     iget v1, p0, Lcom/google/common/hash/SipHashFunction;->d:I

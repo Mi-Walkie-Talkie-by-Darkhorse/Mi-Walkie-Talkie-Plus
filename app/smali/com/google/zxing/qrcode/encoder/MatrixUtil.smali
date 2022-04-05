@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/qrcode/encoder/MatrixUtil;
 .super Ljava/lang/Object;
-.source "MatrixUtil.java"
 
 
 # static fields
@@ -29,7 +28,6 @@
 
     new-array v2, v0, [I
 
-    .line 1
     fill-array-data v2, :array_0
 
     const/4 v3, 0x0
@@ -90,7 +88,6 @@
 
     new-array v2, v8, [I
 
-    .line 2
     fill-array-data v2, :array_7
 
     aput-object v2, v1, v3
@@ -127,7 +124,6 @@
 
     new-array v2, v0, [I
 
-    .line 3
     fill-array-data v2, :array_c
 
     aput-object v2, v1, v3
@@ -436,7 +432,6 @@
 
     new-array v2, v5, [I
 
-    .line 4
     fill-array-data v2, :array_34
 
     aput-object v2, v1, v3
@@ -1187,7 +1182,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -1201,19 +1195,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p4}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->clearMatrix(Lcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 2
     invoke-static {p2, p4}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedBasicPatterns(Lcom/google/zxing/qrcode/decoder/Version;Lcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 3
     invoke-static {p1, p3, p4}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedTypeInfo(Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;ILcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 4
     invoke-static {p2, p4}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->maybeEmbedVersionInfo(Lcom/google/zxing/qrcode/decoder/Version;Lcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 5
     invoke-static {p0, p3, p4}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedDataBits(Lcom/google/zxing/common/BitArray;ILcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
     return-void
@@ -1224,7 +1213,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     invoke-static {p1}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->findMSBSet(I)I
 
     move-result v0
@@ -1233,7 +1221,6 @@
 
     shl-int/2addr p0, v1
 
-    .line 2
     :goto_0
     invoke-static {p0}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->findMSBSet(I)I
 
@@ -1241,7 +1228,6 @@
 
     if-lt v1, v0, :cond_0
 
-    .line 3
     invoke-static {p0}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->findMSBSet(I)I
 
     move-result v1
@@ -1257,7 +1243,6 @@
     :cond_0
     return p0
 
-    .line 4
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1273,7 +1258,6 @@
 
     const/4 v0, -0x1
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->clear(B)V
 
     return-void
@@ -1287,16 +1271,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedPositionDetectionPatternsAndSeparators(Lcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 2
     invoke-static {p1}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedDarkDotAtLeftBottomCorner(Lcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 3
     invoke-static {p0, p1}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->maybeEmbedPositionAdjustmentPatterns(Lcom/google/zxing/qrcode/decoder/Version;Lcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 4
     invoke-static {p1}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedTimingPatterns(Lcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
     return-void
@@ -1310,7 +1290,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result v0
@@ -1325,7 +1304,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result v0
@@ -1338,7 +1316,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p0, Lcom/google/zxing/WriterException;
 
@@ -1355,14 +1332,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p2}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getWidth()I
 
     move-result v0
 
     add-int/lit8 v0, v0, -0x1
 
-    .line 2
     invoke-virtual {p2}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result v1
@@ -1390,7 +1365,6 @@
     :goto_1
     if-ltz v1, :cond_5
 
-    .line 3
     invoke-virtual {p2}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result v6
@@ -1406,7 +1380,6 @@
 
     sub-int v7, v0, v6
 
-    .line 4
     invoke-virtual {p2, v7, v1}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->get(II)B
 
     move-result v8
@@ -1417,14 +1390,12 @@
 
     if-eqz v8, :cond_3
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result v8
 
     if-ge v4, v8, :cond_1
 
-    .line 6
     invoke-virtual {p0, v4}, Lcom/google/zxing/common/BitArray;->get(I)Z
 
     move-result v8
@@ -1439,7 +1410,6 @@
     :goto_3
     if-eq p1, v2, :cond_2
 
-    .line 7
     invoke-static {p1, v7, v1}, Lcom/google/zxing/qrcode/encoder/MaskUtil;->getDataMaskBit(III)Z
 
     move-result v9
@@ -1448,7 +1418,6 @@
 
     xor-int/lit8 v8, v8, 0x1
 
-    .line 8
     :cond_2
     invoke-virtual {p2, v7, v1, v8}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->set(IIZ)V
 
@@ -1471,7 +1440,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_6
     invoke-virtual {p0}, Lcom/google/zxing/common/BitArray;->getSize()I
 
@@ -1481,7 +1449,6 @@
 
     return-void
 
-    .line 10
     :cond_7
     new-instance p1, Lcom/google/zxing/WriterException;
 
@@ -1531,7 +1498,6 @@
 
     add-int v2, p0, v1
 
-    .line 1
     invoke-virtual {p2, v2, p1}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->get(II)B
 
     move-result v3
@@ -1542,14 +1508,12 @@
 
     if-eqz v3, :cond_0
 
-    .line 2
     invoke-virtual {p2, v2, p1, v0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->set(III)V
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance p0, Lcom/google/zxing/WriterException;
 
@@ -1573,7 +1537,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 1
     sget-object v3, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->POSITION_ADJUSTMENT_PATTERN:[[I
 
     aget-object v3, v3, v1
@@ -1587,7 +1550,6 @@
 
     add-int v6, p1, v1
 
-    .line 2
     aget v7, v3, v4
 
     invoke-virtual {p2, v5, v6, v7}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->set(III)V
@@ -1617,7 +1579,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 1
     sget-object v3, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->POSITION_DETECTION_PATTERN:[[I
 
     aget-object v3, v3, v1
@@ -1631,7 +1592,6 @@
 
     add-int v6, p1, v1
 
-    .line 2
     aget v7, v3, v4
 
     invoke-virtual {p2, v5, v6, v7}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->set(III)V
@@ -1657,7 +1617,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->POSITION_DETECTION_PATTERN:[[I
 
     const/4 v1, 0x0
@@ -1666,10 +1625,8 @@
 
     array-length v0, v0
 
-    .line 2
     invoke-static {v1, v1, p0}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedPositionDetectionPattern(IILcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getWidth()I
 
     move-result v2
@@ -1678,7 +1635,6 @@
 
     invoke-static {v2, v1, p0}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedPositionDetectionPattern(IILcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 4
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getWidth()I
 
     move-result v2
@@ -1689,10 +1645,8 @@
 
     const/4 v0, 0x7
 
-    .line 5
     invoke-static {v1, v0, p0}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedHorizontalSeparationPattern(IILcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 6
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getWidth()I
 
     move-result v2
@@ -1701,7 +1655,6 @@
 
     invoke-static {v2, v0, p0}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedHorizontalSeparationPattern(IILcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 7
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getWidth()I
 
     move-result v2
@@ -1710,10 +1663,8 @@
 
     invoke-static {v1, v2, p0}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedHorizontalSeparationPattern(IILcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 8
     invoke-static {v0, v1, p0}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedVerticalSeparationPattern(IILcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 9
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result v2
@@ -1724,7 +1675,6 @@
 
     invoke-static {v2, v1, p0}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedVerticalSeparationPattern(IILcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
-    .line 10
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result v1
@@ -1743,7 +1693,6 @@
 
     const/16 v1, 0x8
 
-    .line 1
     :goto_0
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getWidth()I
 
@@ -1755,12 +1704,10 @@
 
     add-int/lit8 v2, v1, 0x1
 
-    .line 2
     rem-int/lit8 v3, v2, 0x2
 
     const/4 v4, 0x6
 
-    .line 3
     invoke-virtual {p0, v1, v4}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->get(II)B
 
     move-result v5
@@ -1771,10 +1718,8 @@
 
     if-eqz v5, :cond_0
 
-    .line 4
     invoke-virtual {p0, v1, v4, v3}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->set(III)V
 
-    .line 5
     :cond_0
     invoke-virtual {p0, v4, v1}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->get(II)B
 
@@ -1786,7 +1731,6 @@
 
     if-eqz v5, :cond_1
 
-    .line 6
     invoke-virtual {p0, v4, v1, v3}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->set(III)V
 
     :cond_1
@@ -1806,19 +1750,16 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/zxing/common/BitArray;
 
     invoke-direct {v0}, Lcom/google/zxing/common/BitArray;-><init>()V
 
-    .line 2
     invoke-static {p0, p1, v0}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->makeTypeInfoBits(Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;ILcom/google/zxing/common/BitArray;)V
 
     const/4 p0, 0x0
 
     const/4 p1, 0x0
 
-    .line 3
     :goto_0
     invoke-virtual {v0}, Lcom/google/zxing/common/BitArray;->getSize()I
 
@@ -1826,7 +1767,6 @@
 
     if-ge p1, v1, :cond_1
 
-    .line 4
     invoke-virtual {v0}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result v1
@@ -1841,25 +1781,20 @@
 
     move-result v1
 
-    .line 5
     sget-object v3, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->TYPE_INFO_COORDINATES:[[I
 
     aget-object v3, v3, p1
 
-    .line 6
     aget v4, v3, p0
 
-    .line 7
     aget v3, v3, v2
 
-    .line 8
     invoke-virtual {p2, v4, v3, v1}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->set(IIZ)V
 
     const/16 v3, 0x8
 
     if-ge p1, v3, :cond_0
 
-    .line 9
     invoke-virtual {p2}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getWidth()I
 
     move-result v4
@@ -1868,12 +1803,10 @@
 
     sub-int/2addr v4, v2
 
-    .line 10
     invoke-virtual {p2, v4, v3, v1}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->set(IIZ)V
 
     goto :goto_1
 
-    .line 11
     :cond_0
     invoke-virtual {p2}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
@@ -1885,7 +1818,6 @@
 
     add-int/2addr v2, v4
 
-    .line 12
     invoke-virtual {p2, v3, v2, v1}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->set(IIZ)V
 
     :goto_1
@@ -1916,7 +1848,6 @@
 
     add-int v2, p1, v1
 
-    .line 1
     invoke-virtual {p2, p0, v2}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->get(II)B
 
     move-result v3
@@ -1927,14 +1858,12 @@
 
     if-eqz v3, :cond_0
 
-    .line 2
     invoke-virtual {p2, p0, v2, v0}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->set(III)V
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance p0, Lcom/google/zxing/WriterException;
 
@@ -1949,7 +1878,6 @@
 .method static findMSBSet(I)I
     .locals 0
 
-    .line 1
     invoke-static {p0}, Ljava/lang/Integer;->numberOfLeadingZeros(I)I
 
     move-result p0
@@ -1984,14 +1912,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/zxing/qrcode/encoder/QRCode;->isValidMaskPattern(I)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/decoder/ErrorCorrectionLevel;->getBits()I
 
     move-result p0
@@ -2002,22 +1928,18 @@
 
     const/4 p1, 0x5
 
-    .line 3
     invoke-virtual {p2, p0, p1}, Lcom/google/zxing/common/BitArray;->appendBits(II)V
 
     const/16 p1, 0x537
 
-    .line 4
     invoke-static {p0, p1}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->calculateBCHCode(II)I
 
     move-result p0
 
     const/16 p1, 0xa
 
-    .line 5
     invoke-virtual {p2, p0, p1}, Lcom/google/zxing/common/BitArray;->appendBits(II)V
 
-    .line 6
     new-instance p0, Lcom/google/zxing/common/BitArray;
 
     invoke-direct {p0}, Lcom/google/zxing/common/BitArray;-><init>()V
@@ -2026,13 +1948,10 @@
 
     const/16 v0, 0xf
 
-    .line 7
     invoke-virtual {p0, p1, v0}, Lcom/google/zxing/common/BitArray;->appendBits(II)V
 
-    .line 8
     invoke-virtual {p2, p0}, Lcom/google/zxing/common/BitArray;->xor(Lcom/google/zxing/common/BitArray;)V
 
-    .line 9
     invoke-virtual {p2}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result p0
@@ -2041,7 +1960,6 @@
 
     return-void
 
-    .line 10
     :cond_0
     new-instance p0, Lcom/google/zxing/WriterException;
 
@@ -2065,7 +1983,6 @@
 
     throw p0
 
-    .line 11
     :cond_1
     new-instance p0, Lcom/google/zxing/WriterException;
 
@@ -2084,7 +2001,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/decoder/Version;->getVersionNumber()I
 
     move-result v0
@@ -2093,7 +2009,6 @@
 
     invoke-virtual {p1, v0, v1}, Lcom/google/zxing/common/BitArray;->appendBits(II)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/decoder/Version;->getVersionNumber()I
 
     move-result p0
@@ -2106,10 +2021,8 @@
 
     const/16 v0, 0xc
 
-    .line 3
     invoke-virtual {p1, p0, v0}, Lcom/google/zxing/common/BitArray;->appendBits(II)V
 
-    .line 4
     invoke-virtual {p1}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result p0
@@ -2120,7 +2033,6 @@
 
     return-void
 
-    .line 5
     :cond_0
     new-instance p0, Lcom/google/zxing/WriterException;
 
@@ -2148,7 +2060,6 @@
 .method private static maybeEmbedPositionAdjustmentPatterns(Lcom/google/zxing/qrcode/decoder/Version;Lcom/google/zxing/qrcode/encoder/ByteMatrix;)V
     .locals 8
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/decoder/Version;->getVersionNumber()I
 
     move-result v0
@@ -2159,7 +2070,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/decoder/Version;->getVersionNumber()I
 
@@ -2167,12 +2077,10 @@
 
     add-int/lit8 p0, p0, -0x1
 
-    .line 3
     sget-object v0, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->POSITION_ADJUSTMENT_PATTERN_COORDINATE_TABLE:[[I
 
     aget-object p0, v0, p0
 
-    .line 4
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -2186,7 +2094,6 @@
 
     if-ltz v3, :cond_2
 
-    .line 5
     array-length v4, p0
 
     const/4 v5, 0x0
@@ -2198,7 +2105,6 @@
 
     if-ltz v6, :cond_1
 
-    .line 6
     invoke-virtual {p1, v6, v3}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->get(II)B
 
     move-result v7
@@ -2213,7 +2119,6 @@
 
     add-int/lit8 v7, v3, -0x2
 
-    .line 7
     invoke-static {v6, v7, p1}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->embedPositionAdjustmentPattern(IILcom/google/zxing/qrcode/encoder/ByteMatrix;)V
 
     :cond_1
@@ -2238,7 +2143,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/qrcode/decoder/Version;->getVersionNumber()I
 
     move-result v0
@@ -2249,13 +2153,11 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/google/zxing/common/BitArray;
 
     invoke-direct {v0}, Lcom/google/zxing/common/BitArray;-><init>()V
 
-    .line 3
     invoke-static {p0, v0}, Lcom/google/zxing/qrcode/encoder/MatrixUtil;->makeVersionInfoBits(Lcom/google/zxing/qrcode/decoder/Version;Lcom/google/zxing/common/BitArray;)V
 
     const/16 p0, 0x11
@@ -2276,14 +2178,12 @@
 
     if-ge v3, v4, :cond_1
 
-    .line 4
     invoke-virtual {v0, p0}, Lcom/google/zxing/common/BitArray;->get(I)Z
 
     move-result v4
 
     add-int/lit8 p0, p0, -0x1
 
-    .line 5
     invoke-virtual {p1}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result v5
@@ -2294,7 +2194,6 @@
 
     invoke-virtual {p1, v2, v5, v4}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->set(IIZ)V
 
-    .line 6
     invoke-virtual {p1}, Lcom/google/zxing/qrcode/encoder/ByteMatrix;->getHeight()I
 
     move-result v5

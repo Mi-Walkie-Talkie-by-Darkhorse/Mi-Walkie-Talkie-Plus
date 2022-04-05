@@ -1,6 +1,5 @@
 .class public Landroidx/room/j;
 .super Ljava/lang/Object;
-.source "RoomMasterTable.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public static a(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

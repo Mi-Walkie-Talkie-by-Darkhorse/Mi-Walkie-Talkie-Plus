@@ -1,6 +1,5 @@
 .class Lretrofit2/ExecutorCallAdapterFactory$1;
 .super Ljava/lang/Object;
-.source "ExecutorCallAdapterFactory.java"
 
 # interfaces
 .implements Lretrofit2/CallAdapter;
@@ -37,7 +36,6 @@
 .method constructor <init>(Lretrofit2/ExecutorCallAdapterFactory;Ljava/lang/reflect/Type;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lretrofit2/ExecutorCallAdapterFactory$1;->this$0:Lretrofit2/ExecutorCallAdapterFactory;
 
     iput-object p2, p0, Lretrofit2/ExecutorCallAdapterFactory$1;->val$responseType:Ljava/lang/reflect/Type;
@@ -52,7 +50,6 @@
 .method public bridge synthetic adapt(Lretrofit2/Call;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lretrofit2/ExecutorCallAdapterFactory$1;->adapt(Lretrofit2/Call;)Lretrofit2/Call;
 
     move-result-object p1
@@ -74,7 +71,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lretrofit2/ExecutorCallAdapterFactory$ExecutorCallbackCall;
 
     iget-object v1, p0, Lretrofit2/ExecutorCallAdapterFactory$1;->this$0:Lretrofit2/ExecutorCallAdapterFactory;
@@ -89,7 +85,6 @@
 .method public responseType()Ljava/lang/reflect/Type;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lretrofit2/ExecutorCallAdapterFactory$1;->val$responseType:Ljava/lang/reflect/Type;
 
     return-object v0

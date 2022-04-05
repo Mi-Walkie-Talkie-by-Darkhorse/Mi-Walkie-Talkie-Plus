@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/a$b;
 .super Ljava/lang/Object;
-.source "AdapterHelper.java"
 
 
 # annotations
@@ -28,19 +27,14 @@
 .method constructor <init>(IIILjava/lang/Object;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Landroidx/recyclerview/widget/a$b;->a:I
 
-    .line 3
     iput p2, p0, Landroidx/recyclerview/widget/a$b;->b:I
 
-    .line 4
     iput p3, p0, Landroidx/recyclerview/widget/a$b;->d:I
 
-    .line 5
     iput-object p4, p0, Landroidx/recyclerview/widget/a$b;->c:Ljava/lang/Object;
 
     return-void
@@ -51,7 +45,6 @@
 .method a()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget v0, p0, Landroidx/recyclerview/widget/a$b;->a:I
 
     const/4 v1, 0x1
@@ -109,7 +102,6 @@
 
     if-eqz p1, :cond_8
 
-    .line 1
     const-class v2, Landroidx/recyclerview/widget/a$b;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -120,11 +112,9 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     check-cast p1, Landroidx/recyclerview/widget/a$b;
 
-    .line 3
     iget v2, p0, Landroidx/recyclerview/widget/a$b;->a:I
 
     iget v3, p1, Landroidx/recyclerview/widget/a$b;->a:I
@@ -138,7 +128,6 @@
 
     if-ne v2, v3, :cond_3
 
-    .line 4
     iget v2, p0, Landroidx/recyclerview/widget/a$b;->d:I
 
     iget v3, p0, Landroidx/recyclerview/widget/a$b;->b:I
@@ -151,7 +140,6 @@
 
     if-ne v2, v0, :cond_3
 
-    .line 5
     iget v2, p0, Landroidx/recyclerview/widget/a$b;->d:I
 
     iget v3, p1, Landroidx/recyclerview/widget/a$b;->b:I
@@ -166,7 +154,6 @@
 
     return v0
 
-    .line 6
     :cond_3
     iget v2, p0, Landroidx/recyclerview/widget/a$b;->d:I
 
@@ -176,7 +163,6 @@
 
     return v1
 
-    .line 7
     :cond_4
     iget v2, p0, Landroidx/recyclerview/widget/a$b;->b:I
 
@@ -186,13 +172,11 @@
 
     return v1
 
-    .line 8
     :cond_5
     iget-object v2, p0, Landroidx/recyclerview/widget/a$b;->c:Ljava/lang/Object;
 
     if-eqz v2, :cond_6
 
-    .line 9
     iget-object p1, p1, Landroidx/recyclerview/widget/a$b;->c:Ljava/lang/Object;
 
     invoke-virtual {v2, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -203,7 +187,6 @@
 
     return v1
 
-    .line 10
     :cond_6
     iget-object p1, p1, Landroidx/recyclerview/widget/a$b;->c:Ljava/lang/Object;
 
@@ -222,19 +205,16 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget v0, p0, Landroidx/recyclerview/widget/a$b;->a:I
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 2
     iget v1, p0, Landroidx/recyclerview/widget/a$b;->b:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 3
     iget v1, p0, Landroidx/recyclerview/widget/a$b;->d:I
 
     add-int/2addr v0, v1
@@ -245,7 +225,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -264,7 +243,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 2
     invoke-virtual {p0}, Landroidx/recyclerview/widget/a$b;->a()Ljava/lang/String;
 
     move-result-object v1

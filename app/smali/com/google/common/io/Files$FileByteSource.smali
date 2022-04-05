@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/Files$FileByteSource;
 .super Lcom/google/common/io/ByteSource;
-.source "Files.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method private constructor <init>(Ljava/io/File;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/io/ByteSource;-><init>()V
 
-    .line 3
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -40,7 +37,6 @@
 .method synthetic constructor <init>(Ljava/io/File;Lcom/google/common/io/Files$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/io/Files$FileByteSource;-><init>(Ljava/io/File;)V
 
     return-void
@@ -56,7 +52,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/io/FileInputStream;
 
     iget-object v1, p0, Lcom/google/common/io/Files$FileByteSource;->file:Ljava/io/File;
@@ -74,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/io/Files$FileByteSource;->openStream()Ljava/io/FileInputStream;
 
     move-result-object v0
@@ -90,12 +84,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/io/Closer;->create()Lcom/google/common/io/Closer;
 
     move-result-object v0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Lcom/google/common/io/Files$FileByteSource;->openStream()Ljava/io/FileInputStream;
 
@@ -107,7 +99,6 @@
 
     check-cast v1, Ljava/io/FileInputStream;
 
-    .line 3
     invoke-virtual {v1}, Ljava/io/FileInputStream;->getChannel()Ljava/nio/channels/FileChannel;
 
     move-result-object v2
@@ -122,7 +113,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     invoke-virtual {v0}, Lcom/google/common/io/Closer;->close()V
 
     return-object v1
@@ -130,7 +120,6 @@
     :catchall_0
     move-exception v1
 
-    .line 5
     :try_start_1
     invoke-virtual {v0, v1}, Lcom/google/common/io/Closer;->rethrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
@@ -143,7 +132,6 @@
     :catchall_1
     move-exception v1
 
-    .line 6
     invoke-virtual {v0}, Lcom/google/common/io/Closer;->close()V
 
     throw v1
@@ -157,7 +145,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/Files$FileByteSource;->file:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->isFile()Z
@@ -166,7 +153,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/io/Files$FileByteSource;->file:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->length()J
@@ -175,7 +161,6 @@
 
     return-wide v0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/io/FileNotFoundException;
 
@@ -193,7 +178,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/Files$FileByteSource;->file:Ljava/io/File;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;

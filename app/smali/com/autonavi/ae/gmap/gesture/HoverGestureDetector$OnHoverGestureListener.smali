@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/gesture/HoverGestureDetector$OnHoverGestureListener;
 .super Ljava/lang/Object;
-.source "HoverGestureDetector.java"
 
 
 # annotations

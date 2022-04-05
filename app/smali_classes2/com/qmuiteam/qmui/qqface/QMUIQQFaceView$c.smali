@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$c;
 .super Ljava/lang/Object;
-.source "QMUIQQFaceView.java"
 
 
 # annotations

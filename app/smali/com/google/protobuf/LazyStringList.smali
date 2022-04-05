@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/protobuf/LazyStringList;
 .super Ljava/lang/Object;
-.source "LazyStringList.java"
 
 # interfaces
 .implements Lcom/google/protobuf/ProtocolStringList;

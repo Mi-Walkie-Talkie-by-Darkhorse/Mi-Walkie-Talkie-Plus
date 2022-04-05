@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/BindFont;
 .super Ljava/lang/Object;
-.source "BindFont.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

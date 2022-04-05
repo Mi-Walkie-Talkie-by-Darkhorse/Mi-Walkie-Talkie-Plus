@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/j/b$b;
 .super Ljava/lang/Object;
-.source "ByteArrayLoader.java"
 
 
 # annotations

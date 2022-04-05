@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/common/base/Stopwatch$1;
 .super Ljava/lang/Object;
-.source "Stopwatch.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Ljava/util/concurrent/TimeUnit;->values()[Ljava/util/concurrent/TimeUnit;
 
     move-result-object v0

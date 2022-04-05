@@ -1,6 +1,5 @@
 .class Lcom/afollestad/materialdialogs/a$b;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "DefaultRvAdapter.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -30,10 +29,8 @@
 .method constructor <init>(Landroid/view/View;Lcom/afollestad/materialdialogs/a;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
-    .line 2
     sget v0, Lcom/afollestad/materialdialogs/R$id;->md_control:I
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -44,7 +41,6 @@
 
     iput-object v0, p0, Lcom/afollestad/materialdialogs/a$b;->a:Landroid/widget/CompoundButton;
 
-    .line 3
     sget v0, Lcom/afollestad/materialdialogs/R$id;->md_title:I
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -55,13 +51,10 @@
 
     iput-object v0, p0, Lcom/afollestad/materialdialogs/a$b;->b:Landroid/widget/TextView;
 
-    .line 4
     iput-object p2, p0, Lcom/afollestad/materialdialogs/a$b;->c:Lcom/afollestad/materialdialogs/a;
 
-    .line 5
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 6
     invoke-static {p2}, Lcom/afollestad/materialdialogs/a;->a(Lcom/afollestad/materialdialogs/a;)Lcom/afollestad/materialdialogs/MaterialDialog;
 
     move-result-object p2
@@ -72,7 +65,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 7
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnLongClickListener(Landroid/view/View$OnLongClickListener;)V
 
     :cond_0
@@ -84,7 +76,6 @@
 .method public onClick(Landroid/view/View;)V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/a$b;->c:Lcom/afollestad/materialdialogs/a;
 
     invoke-static {v0}, Lcom/afollestad/materialdialogs/a;->b(Lcom/afollestad/materialdialogs/a;)Lcom/afollestad/materialdialogs/a$c;
@@ -103,7 +94,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iget-object v1, p0, Lcom/afollestad/materialdialogs/a$b;->c:Lcom/afollestad/materialdialogs/a;
 
     invoke-static {v1}, Lcom/afollestad/materialdialogs/a;->a(Lcom/afollestad/materialdialogs/a;)Lcom/afollestad/materialdialogs/MaterialDialog;
@@ -116,7 +106,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$y;->getAdapterPosition()I
 
     move-result v1
@@ -137,7 +126,6 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/afollestad/materialdialogs/a$b;->c:Lcom/afollestad/materialdialogs/a;
 
     invoke-static {v0}, Lcom/afollestad/materialdialogs/a;->a(Lcom/afollestad/materialdialogs/a;)Lcom/afollestad/materialdialogs/MaterialDialog;
@@ -161,7 +149,6 @@
     :cond_0
     move-object v5, v0
 
-    .line 5
     iget-object v0, p0, Lcom/afollestad/materialdialogs/a$b;->c:Lcom/afollestad/materialdialogs/a;
 
     invoke-static {v0}, Lcom/afollestad/materialdialogs/a;->b(Lcom/afollestad/materialdialogs/a;)Lcom/afollestad/materialdialogs/a$c;
@@ -191,7 +178,6 @@
 .method public onLongClick(Landroid/view/View;)Z
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/a$b;->c:Lcom/afollestad/materialdialogs/a;
 
     invoke-static {v0}, Lcom/afollestad/materialdialogs/a;->b(Lcom/afollestad/materialdialogs/a;)Lcom/afollestad/materialdialogs/a$c;
@@ -210,7 +196,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iget-object v1, p0, Lcom/afollestad/materialdialogs/a$b;->c:Lcom/afollestad/materialdialogs/a;
 
     invoke-static {v1}, Lcom/afollestad/materialdialogs/a;->a(Lcom/afollestad/materialdialogs/a;)Lcom/afollestad/materialdialogs/MaterialDialog;
@@ -223,7 +208,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$y;->getAdapterPosition()I
 
     move-result v1
@@ -244,7 +228,6 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/afollestad/materialdialogs/a$b;->c:Lcom/afollestad/materialdialogs/a;
 
     invoke-static {v0}, Lcom/afollestad/materialdialogs/a;->a(Lcom/afollestad/materialdialogs/a;)Lcom/afollestad/materialdialogs/MaterialDialog;
@@ -268,7 +251,6 @@
     :cond_0
     move-object v5, v0
 
-    .line 5
     iget-object v0, p0, Lcom/afollestad/materialdialogs/a$b;->c:Lcom/afollestad/materialdialogs/a;
 
     invoke-static {v0}, Lcom/afollestad/materialdialogs/a;->b(Lcom/afollestad/materialdialogs/a;)Lcom/afollestad/materialdialogs/a$c;
@@ -277,7 +259,6 @@
 
     iget-object v0, p0, Lcom/afollestad/materialdialogs/a$b;->c:Lcom/afollestad/materialdialogs/a;
 
-    .line 6
     invoke-static {v0}, Lcom/afollestad/materialdialogs/a;->a(Lcom/afollestad/materialdialogs/a;)Lcom/afollestad/materialdialogs/MaterialDialog;
 
     move-result-object v2
@@ -290,7 +271,6 @@
 
     move-object v3, p1
 
-    .line 7
     invoke-interface/range {v1 .. v6}, Lcom/afollestad/materialdialogs/a$c;->a(Lcom/afollestad/materialdialogs/MaterialDialog;Landroid/view/View;ILjava/lang/CharSequence;Z)Z
 
     move-result p1

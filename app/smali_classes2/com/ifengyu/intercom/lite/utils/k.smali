@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/lite/utils/k;
 .super Ljava/lang/Object;
-.source "TimeUtils.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 .method static constructor <clinit>()V
     .locals 13
 
-    .line 1
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
@@ -54,7 +52,6 @@
 
     const-string v12, "\u7f8a"
 
-    .line 2
     filled-new-array/range {v1 .. v12}, [Ljava/lang/String;
 
     move-result-object v0
@@ -85,7 +82,6 @@
 
     const-string v12, "\u9b54\u7faf\u5ea7"
 
-    .line 3
     filled-new-array/range {v1 .. v12}, [Ljava/lang/String;
 
     move-result-object v0
@@ -98,7 +94,6 @@
 .method private static a()J
     .locals 3
 
-    .line 7
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v0
@@ -107,25 +102,20 @@
 
     const/16 v2, 0xb
 
-    .line 8
     invoke-virtual {v0, v2, v1}, Ljava/util/Calendar;->set(II)V
 
     const/16 v2, 0xd
 
-    .line 9
     invoke-virtual {v0, v2, v1}, Ljava/util/Calendar;->set(II)V
 
     const/16 v2, 0xc
 
-    .line 10
     invoke-virtual {v0, v2, v1}, Ljava/util/Calendar;->set(II)V
 
     const/16 v2, 0xe
 
-    .line 11
     invoke-virtual {v0, v2, v1}, Ljava/util/Calendar;->set(II)V
 
-    .line 12
     invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
 
     move-result-wide v0
@@ -140,7 +130,6 @@
         .end annotation
     .end param
 
-    .line 5
     invoke-static {p2}, Lcom/ifengyu/intercom/lite/utils/k;->a(Ljava/lang/String;)Ljava/text/SimpleDateFormat;
 
     move-result-object p2
@@ -159,7 +148,6 @@
         .end annotation
     .end param
 
-    .line 6
     new-instance v0, Ljava/util/Date;
 
     invoke-direct {v0, p0, p1}, Ljava/util/Date;-><init>(J)V
@@ -174,7 +162,6 @@
 .method private static a(Ljava/lang/String;)Ljava/text/SimpleDateFormat;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/utils/k;->a:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -185,7 +172,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -194,14 +180,12 @@
 
     invoke-direct {v0, p0, v1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    .line 3
     sget-object p0, Lcom/ifengyu/intercom/lite/utils/k;->a:Ljava/lang/ThreadLocal;
 
     invoke-virtual {p0, v0}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0, p0}, Ljava/text/SimpleDateFormat;->applyPattern(Ljava/lang/String;)V
 
@@ -212,7 +196,6 @@
 .method public static a(J)Z
     .locals 4
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/intercom/lite/utils/k;->a()J
 
     move-result-wide v0

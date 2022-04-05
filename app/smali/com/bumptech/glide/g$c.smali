@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/g$c;
 .super Ljava/lang/Object;
-.source "RequestManager.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/manager/c$a;
@@ -29,10 +28,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/g$c;->a:Lcom/bumptech/glide/manager/m;
 
     return-void
@@ -45,7 +42,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object p1, p0, Lcom/bumptech/glide/g$c;->a:Lcom/bumptech/glide/manager/m;
 
     invoke-virtual {p1}, Lcom/bumptech/glide/manager/m;->c()V

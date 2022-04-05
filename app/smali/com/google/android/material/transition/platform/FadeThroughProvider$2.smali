@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/transition/platform/FadeThroughProvider$2;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "FadeThroughProvider.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Landroid/view/View;F)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/platform/FadeThroughProvider$2;->val$view:Landroid/view/View;
 
     iput p2, p0, Lcom/google/android/material/transition/platform/FadeThroughProvider$2;->val$originalAlpha:F
@@ -39,7 +37,6 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/transition/platform/FadeThroughProvider$2;->val$view:Landroid/view/View;
 
     iget v0, p0, Lcom/google/android/material/transition/platform/FadeThroughProvider$2;->val$originalAlpha:F

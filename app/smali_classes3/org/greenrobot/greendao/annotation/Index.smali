@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/greenrobot/greendao/annotation/Index;
 .super Ljava/lang/Object;
-.source "Index.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

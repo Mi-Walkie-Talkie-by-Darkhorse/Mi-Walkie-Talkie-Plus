@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/efs/sdk/base/a/b/e;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # virtual methods

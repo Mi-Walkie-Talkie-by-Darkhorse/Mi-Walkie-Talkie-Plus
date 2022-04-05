@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1$1;
 .super Lcom/google/common/collect/AbstractMapEntry;
-.source "ImmutableMap.java"
 
 
 # annotations
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1;Ljava/util/Map$Entry;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1$1;->this$2:Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1;
 
     iput-object p2, p0, Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1$1;->val$backingEntry:Ljava/util/Map$Entry;
@@ -53,7 +51,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1$1;->val$backingEntry:Ljava/util/Map$Entry;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
@@ -73,7 +70,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1$1;->val$backingEntry:Ljava/util/Map$Entry;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -90,7 +86,6 @@
 .method public bridge synthetic getValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMap$MapViewOfValuesAsSingletonSets$1$1$1;->getValue()Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0

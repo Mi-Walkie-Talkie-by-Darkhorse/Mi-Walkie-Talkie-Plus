@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/content/pm/PermissionInfoCompat$Protection;
 .super Ljava/lang/Object;
-.source "PermissionInfoCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

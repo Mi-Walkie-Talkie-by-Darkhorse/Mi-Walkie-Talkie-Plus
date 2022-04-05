@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$a;
 .super Ljava/lang/Object;
-.source "QMUIPullRefreshLayout.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$a;->a:Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$a;->a:Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;->a(Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;)Landroid/view/View;
@@ -47,19 +44,16 @@
 
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;->setTargetViewToTop(Landroid/view/View;)V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$a;->a:Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;->c()V
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$a;->a:Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;
 
     const/4 v1, 0x2
 
     invoke-static {v0, v1}, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;->a(Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;I)I
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$a;->a:Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->invalidate()V

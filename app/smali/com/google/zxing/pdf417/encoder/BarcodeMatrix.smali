@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;
 .super Ljava/lang/Object;
-.source "BarcodeMatrix.java"
 
 
 # instance fields
@@ -17,15 +16,12 @@
 .method constructor <init>(II)V
     .locals 5
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-array v0, p1, [Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
     iput-object v0, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->matrix:[Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
-    .line 3
     array-length v0, v0
 
     const/4 v1, 0x0
@@ -33,7 +29,6 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 4
     iget-object v2, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->matrix:[Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
     new-instance v3, Lcom/google/zxing/pdf417/encoder/BarcodeRow;
@@ -55,15 +50,12 @@
     :cond_0
     mul-int/lit8 p2, p2, 0x11
 
-    .line 5
     iput p2, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->width:I
 
-    .line 6
     iput p1, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->height:I
 
     const/4 p1, -0x1
 
-    .line 7
     iput p1, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->currentRow:I
 
     return-void
@@ -74,7 +66,6 @@
 .method getCurrentRow()Lcom/google/zxing/pdf417/encoder/BarcodeRow;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->matrix:[Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
     iget v1, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->currentRow:I
@@ -89,7 +80,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0, v0}, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->getScaledMatrix(II)[[B
 
     move-result-object v0
@@ -100,7 +90,6 @@
 .method public getScaledMatrix(II)[[B
     .locals 7
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->height:I
 
     mul-int v0, v0, p2
@@ -129,7 +118,6 @@
 
     check-cast v0, [[B
 
-    .line 2
     iget v2, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->height:I
 
     mul-int v2, v2, p2
@@ -141,7 +129,6 @@
 
     sub-int/2addr v4, v3
 
-    .line 3
     iget-object v5, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->matrix:[Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
     div-int v6, v1, p2
@@ -165,7 +152,6 @@
 .method set(IIB)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->matrix:[Lcom/google/zxing/pdf417/encoder/BarcodeRow;
 
     aget-object p2, v0, p2
@@ -178,7 +164,6 @@
 .method startRow()V
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/encoder/BarcodeMatrix;->currentRow:I
 
     add-int/lit8 v0, v0, 0x1

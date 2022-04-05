@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ji$1;
 .super Landroid/os/Handler;
-.source "AmapSensorManager.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/ji;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ji$1;->a:Lcom/amap/api/col/l3/ji;
 
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V

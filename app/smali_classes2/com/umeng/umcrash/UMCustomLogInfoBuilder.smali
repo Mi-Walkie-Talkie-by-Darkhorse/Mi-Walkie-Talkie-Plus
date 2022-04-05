@@ -1,6 +1,5 @@
 .class public Lcom/umeng/umcrash/UMCustomLogInfoBuilder;
 .super Ljava/lang/Object;
-.source "UMCustomLogInfoBuilder.java"
 
 
 # static fields
@@ -50,10 +49,8 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     const/16 v1, 0x14
@@ -62,7 +59,6 @@
 
     iput-object v0, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->kvInfoMap:Ljava/util/Map;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x5
@@ -71,7 +67,6 @@
 
     iput-object v0, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->sectionList:Ljava/util/List;
 
-    .line 4
     new-instance v0, Lcom/uc/crashsdk/export/CustomLogInfo;
 
     new-instance v1, Ljava/lang/StringBuffer;
@@ -84,14 +79,12 @@
 
     iput-object v0, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->mCustomLogInfo:Lcom/uc/crashsdk/export/CustomLogInfo;
 
-    .line 5
     iget-object v0, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->kvInfoMap:Ljava/util/Map;
 
     const-string v1, "k_ct"
 
     invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     iget-object v0, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->kvInfoMap:Ljava/util/Map;
 
     const-string v1, "k_ac"
@@ -106,7 +99,6 @@
 .method public addLogCat(Z)Lcom/umeng/umcrash/UMCustomLogInfoBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->mCustomLogInfo:Lcom/uc/crashsdk/export/CustomLogInfo;
 
     iput-boolean p1, v0, Lcom/uc/crashsdk/export/CustomLogInfo;->mAddLogcat:Z
@@ -117,7 +109,6 @@
 .method public addSection(Ljava/lang/String;)Lcom/umeng/umcrash/UMCustomLogInfoBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->sectionList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -128,12 +119,10 @@
 .method public build()Lcom/uc/crashsdk/export/CustomLogInfo;
     .locals 5
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuffer;
 
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->kvInfoMap:Ljava/util/Map;
 
     invoke-interface {v1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -159,7 +148,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v4
@@ -184,7 +172,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->stack:Ljava/lang/String;
 
@@ -194,14 +181,12 @@
 
     if-nez v1, :cond_1
 
-    .line 5
     iget-object v1, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->stack:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 6
     :cond_1
     iget-object v1, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->sectionList:Ljava/util/List;
 
@@ -224,19 +209,16 @@
 
     const-string v4, "--- --- --- --- --- --- --- --- --- --- --- --- --- --- --- ---"
 
-    .line 7
     invoke-virtual {v0, v4}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    .line 8
     invoke-virtual {v0, v2}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
     goto :goto_1
 
-    .line 9
     :cond_2
     iget-object v1, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->mCustomLogInfo:Lcom/uc/crashsdk/export/CustomLogInfo;
 
@@ -250,7 +232,6 @@
 
     const-string v0, "k_ac"
 
-    .line 1
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -267,7 +248,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->kvInfoMap:Ljava/util/Map;
 
@@ -281,7 +261,6 @@
 
     const-string p2, "key can not be \'k_ac\' and \'k_ct\'"
 
-    .line 3
     invoke-static {p1, p2}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
     return-object p0
@@ -290,7 +269,6 @@
 .method public stack(Ljava/lang/String;)Lcom/umeng/umcrash/UMCustomLogInfoBuilder;
     .locals 2
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -317,7 +295,6 @@
 .method public stack(Ljava/lang/Throwable;)Lcom/umeng/umcrash/UMCustomLogInfoBuilder;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Landroid/util/Log;->getStackTraceString(Ljava/lang/Throwable;)Ljava/lang/String;
 
     move-result-object p1
@@ -332,7 +309,6 @@
 .method public stackFunc(Ljava/lang/String;)Lcom/umeng/umcrash/UMCustomLogInfoBuilder;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->kvInfoMap:Ljava/util/Map;
 
     const-string v1, "stackFunc"
@@ -345,7 +321,6 @@
 .method public stackHash(Ljava/lang/String;)Lcom/umeng/umcrash/UMCustomLogInfoBuilder;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->kvInfoMap:Ljava/util/Map;
 
     const-string v1, "stackHash"
@@ -358,7 +333,6 @@
 .method public uploadNow(Z)Lcom/umeng/umcrash/UMCustomLogInfoBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/umcrash/UMCustomLogInfoBuilder;->mCustomLogInfo:Lcom/uc/crashsdk/export/CustomLogInfo;
 
     iput-boolean p1, v0, Lcom/uc/crashsdk/export/CustomLogInfo;->mUploadNow:Z

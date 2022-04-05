@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/internal/StateListAnimator$1;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "StateListAnimator.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/android/material/internal/StateListAnimator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/internal/StateListAnimator$1;->this$0:Lcom/google/android/material/internal/StateListAnimator;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -35,7 +33,6 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/internal/StateListAnimator$1;->this$0:Lcom/google/android/material/internal/StateListAnimator;
 
     iget-object v1, v0, Lcom/google/android/material/internal/StateListAnimator;->runningAnimator:Landroid/animation/ValueAnimator;
@@ -44,7 +41,6 @@
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, v0, Lcom/google/android/material/internal/StateListAnimator;->runningAnimator:Landroid/animation/ValueAnimator;
 
     :cond_0

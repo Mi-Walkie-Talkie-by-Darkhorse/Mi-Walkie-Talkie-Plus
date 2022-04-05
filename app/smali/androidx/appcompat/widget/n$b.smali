@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/n$b;
 .super Landroidx/appcompat/widget/n$a;
-.source "AppCompatTextViewAutoSizeHelper.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/appcompat/widget/n$a;-><init>()V
 
     return-void
@@ -33,7 +31,6 @@
 .method a(Landroid/text/StaticLayout$Builder;Landroid/widget/TextView;)V
     .locals 0
 
-    .line 2
     invoke-virtual {p2}, Landroid/widget/TextView;->getTextDirectionHeuristic()Landroid/text/TextDirectionHeuristic;
 
     move-result-object p2
@@ -46,7 +43,6 @@
 .method a(Landroid/widget/TextView;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Landroid/widget/TextView;->isHorizontallyScrollable()Z
 
     move-result p1

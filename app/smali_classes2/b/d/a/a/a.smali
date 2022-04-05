@@ -1,6 +1,5 @@
 .class public abstract Lb/d/a/a/a;
 .super Lb/d/a/a/b;
-.source "CommonAdapter.java"
 
 
 # annotations
@@ -28,13 +27,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p3}, Lb/d/a/a/b;-><init>(Landroid/content/Context;Ljava/util/List;)V
 
-    .line 2
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
-    .line 3
     new-instance p1, Lb/d/a/a/a$a;
 
     invoke-direct {p1, p0, p2}, Lb/d/a/a/a$a;-><init>(Lb/d/a/a/a;I)V

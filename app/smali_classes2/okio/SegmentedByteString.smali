@@ -1,6 +1,5 @@
 .class final Lokio/SegmentedByteString;
 .super Lokio/ByteString;
-.source "SegmentedByteString.java"
 
 
 # instance fields
@@ -15,10 +14,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lokio/ByteString;-><init>([B)V
 
-    .line 2
     iget-wide v1, p1, Lokio/Buffer;->size:J
 
     int-to-long v5, p2
@@ -27,7 +24,6 @@
 
     invoke-static/range {v1 .. v6}, Lokio/Util;->checkOffsetAndCount(JJJ)V
 
-    .line 3
     iget-object v0, p1, Lokio/Buffer;->head:Lokio/Segment;
 
     const/4 v1, 0x0
@@ -39,7 +35,6 @@
     :goto_0
     if-ge v2, p2, :cond_1
 
-    .line 4
     iget v4, v0, Lokio/Segment;->limit:I
 
     iget v5, v0, Lokio/Segment;->pos:I
@@ -52,12 +47,10 @@
 
     add-int/lit8 v3, v3, 0x1
 
-    .line 5
     iget-object v0, v0, Lokio/Segment;->next:Lokio/Segment;
 
     goto :goto_0
 
-    .line 6
     :cond_0
     new-instance p1, Ljava/lang/AssertionError;
 
@@ -67,7 +60,6 @@
 
     throw p1
 
-    .line 7
     :cond_1
     new-array v0, v3, [[B
 
@@ -75,12 +67,10 @@
 
     mul-int/lit8 v3, v3, 0x2
 
-    .line 8
     new-array v0, v3, [I
 
     iput-object v0, p0, Lokio/SegmentedByteString;->directory:[I
 
-    .line 9
     iget-object p1, p1, Lokio/Buffer;->head:Lokio/Segment;
 
     const/4 v0, 0x0
@@ -88,14 +78,12 @@
     :goto_1
     if-ge v1, p2, :cond_3
 
-    .line 10
     iget-object v2, p0, Lokio/SegmentedByteString;->segments:[[B
 
     iget-object v3, p1, Lokio/Segment;->data:[B
 
     aput-object v3, v2, v0
 
-    .line 11
     iget v2, p1, Lokio/Segment;->limit:I
 
     iget v3, p1, Lokio/Segment;->pos:I
@@ -108,13 +96,11 @@
 
     move v1, p2
 
-    .line 12
     :cond_2
     iget-object v2, p0, Lokio/SegmentedByteString;->directory:[I
 
     aput v1, v2, v0
 
-    .line 13
     iget-object v3, p0, Lokio/SegmentedByteString;->segments:[[B
 
     array-length v3, v3
@@ -127,12 +113,10 @@
 
     const/4 v2, 0x1
 
-    .line 14
     iput-boolean v2, p1, Lokio/Segment;->shared:Z
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 15
     iget-object p1, p1, Lokio/Segment;->next:Lokio/Segment;
 
     goto :goto_1
@@ -144,7 +128,6 @@
 .method private segment(I)I
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lokio/SegmentedByteString;->directory:[I
 
     iget-object v1, p0, Lokio/SegmentedByteString;->segments:[[B
@@ -173,7 +156,6 @@
 .method private toByteString()Lokio/ByteString;
     .locals 2
 
-    .line 1
     new-instance v0, Lokio/ByteString;
 
     invoke-virtual {p0}, Lokio/SegmentedByteString;->toByteArray()[B
@@ -188,7 +170,6 @@
 .method private writeReplace()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -201,7 +182,6 @@
 .method public asByteBuffer()Ljava/nio/ByteBuffer;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lokio/SegmentedByteString;->toByteArray()[B
 
     move-result-object v0
@@ -220,7 +200,6 @@
 .method public base64()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -235,7 +214,6 @@
 .method public base64Url()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -256,7 +234,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lokio/ByteString;
 
@@ -266,7 +243,6 @@
 
     check-cast p1, Lokio/ByteString;
 
-    .line 2
     invoke-virtual {p1}, Lokio/ByteString;->size()I
 
     move-result v1
@@ -277,7 +253,6 @@
 
     if-ne v1, v3, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lokio/SegmentedByteString;->size()I
 
     move-result v1
@@ -300,7 +275,6 @@
 .method public getByte(I)B
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lokio/SegmentedByteString;->directory:[I
 
     iget-object v1, p0, Lokio/SegmentedByteString;->segments:[[B
@@ -319,7 +293,6 @@
 
     invoke-static/range {v1 .. v6}, Lokio/Util;->checkOffsetAndCount(JJJ)V
 
-    .line 2
     invoke-direct {p0, p1}, Lokio/SegmentedByteString;->segment(I)I
 
     move-result v0
@@ -330,7 +303,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v1, p0, Lokio/SegmentedByteString;->directory:[I
 
@@ -338,7 +310,6 @@
 
     aget v1, v1, v2
 
-    .line 4
     :goto_0
     iget-object v2, p0, Lokio/SegmentedByteString;->directory:[I
 
@@ -350,7 +321,6 @@
 
     aget v2, v2, v4
 
-    .line 5
     aget-object v0, v3, v0
 
     sub-int/2addr p1, v1
@@ -365,14 +335,12 @@
 .method public hashCode()I
     .locals 8
 
-    .line 1
     iget v0, p0, Lokio/ByteString;->hashCode:I
 
     if-eqz v0, :cond_0
 
     return v0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lokio/SegmentedByteString;->segments:[[B
 
@@ -389,19 +357,16 @@
     :goto_0
     if-ge v1, v0, :cond_2
 
-    .line 3
     iget-object v4, p0, Lokio/SegmentedByteString;->segments:[[B
 
     aget-object v4, v4, v1
 
-    .line 4
     iget-object v5, p0, Lokio/SegmentedByteString;->directory:[I
 
     add-int v6, v0, v1
 
     aget v6, v5, v6
 
-    .line 5
     aget v5, v5, v1
 
     sub-int v2, v5, v2
@@ -413,7 +378,6 @@
 
     mul-int/lit8 v3, v3, 0x1f
 
-    .line 6
     aget-byte v7, v4, v6
 
     add-int/2addr v3, v7
@@ -429,7 +393,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     iput v3, p0, Lokio/ByteString;->hashCode:I
 
@@ -439,7 +402,6 @@
 .method public hex()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -454,7 +416,6 @@
 .method public hmacSha1(Lokio/ByteString;)Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -469,7 +430,6 @@
 .method public hmacSha256(Lokio/ByteString;)Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -484,7 +444,6 @@
 .method public indexOf([BI)I
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -499,7 +458,6 @@
 .method internalArray()[B
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lokio/SegmentedByteString;->toByteArray()[B
 
     move-result-object v0
@@ -510,7 +468,6 @@
 .method public lastIndexOf([BI)I
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -525,7 +482,6 @@
 .method public md5()Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -544,7 +500,6 @@
 
     if-ltz p1, :cond_4
 
-    .line 1
     invoke-virtual {p0}, Lokio/SegmentedByteString;->size()I
 
     move-result v1
@@ -555,7 +510,6 @@
 
     goto :goto_2
 
-    .line 2
     :cond_0
     invoke-direct {p0, p1}, Lokio/SegmentedByteString;->segment(I)I
 
@@ -570,7 +524,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_1
     iget-object v2, p0, Lokio/SegmentedByteString;->directory:[I
 
@@ -578,7 +531,6 @@
 
     aget v2, v2, v3
 
-    .line 4
     :goto_1
     iget-object v3, p0, Lokio/SegmentedByteString;->directory:[I
 
@@ -590,12 +542,10 @@
 
     sub-int/2addr v3, p1
 
-    .line 5
     invoke-static {p4, v3}, Ljava/lang/Math;->min(II)I
 
     move-result v3
 
-    .line 6
     iget-object v4, p0, Lokio/SegmentedByteString;->directory:[I
 
     iget-object v5, p0, Lokio/SegmentedByteString;->segments:[[B
@@ -610,7 +560,6 @@
 
     add-int/2addr v2, v4
 
-    .line 7
     aget-object v4, v5, v1
 
     invoke-virtual {p2, p3, v4, v2, v3}, Lokio/ByteString;->rangeEquals(I[BII)Z
@@ -649,7 +598,6 @@
 
     if-ltz p1, :cond_4
 
-    .line 8
     invoke-virtual {p0}, Lokio/SegmentedByteString;->size()I
 
     move-result v1
@@ -668,7 +616,6 @@
 
     goto :goto_2
 
-    .line 9
     :cond_0
     invoke-direct {p0, p1}, Lokio/SegmentedByteString;->segment(I)I
 
@@ -683,7 +630,6 @@
 
     goto :goto_1
 
-    .line 10
     :cond_1
     iget-object v2, p0, Lokio/SegmentedByteString;->directory:[I
 
@@ -691,7 +637,6 @@
 
     aget v2, v2, v3
 
-    .line 11
     :goto_1
     iget-object v3, p0, Lokio/SegmentedByteString;->directory:[I
 
@@ -703,12 +648,10 @@
 
     sub-int/2addr v3, p1
 
-    .line 12
     invoke-static {p4, v3}, Ljava/lang/Math;->min(II)I
 
     move-result v3
 
-    .line 13
     iget-object v4, p0, Lokio/SegmentedByteString;->directory:[I
 
     iget-object v5, p0, Lokio/SegmentedByteString;->segments:[[B
@@ -723,7 +666,6 @@
 
     add-int/2addr v2, v4
 
-    .line 14
     aget-object v4, v5, v1
 
     invoke-static {v4, v2, p2, p3, v3}, Lokio/Util;->arrayRangeEquals([BI[BII)Z
@@ -758,7 +700,6 @@
 .method public sha1()Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -773,7 +714,6 @@
 .method public sha256()Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -788,7 +728,6 @@
 .method public size()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokio/SegmentedByteString;->directory:[I
 
     iget-object v1, p0, Lokio/SegmentedByteString;->segments:[[B
@@ -805,7 +744,6 @@
 .method public string(Ljava/nio/charset/Charset;)Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -820,7 +758,6 @@
 .method public substring(I)Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -835,7 +772,6 @@
 .method public substring(II)Lokio/ByteString;
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -850,7 +786,6 @@
 .method public toAsciiLowercase()Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -865,7 +800,6 @@
 .method public toAsciiUppercase()Lokio/ByteString;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -880,7 +814,6 @@
 .method public toByteArray()[B
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lokio/SegmentedByteString;->directory:[I
 
     iget-object v1, p0, Lokio/SegmentedByteString;->segments:[[B
@@ -893,7 +826,6 @@
 
     new-array v0, v0, [B
 
-    .line 2
     array-length v1, v1
 
     const/4 v2, 0x0
@@ -903,17 +835,14 @@
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 3
     iget-object v4, p0, Lokio/SegmentedByteString;->directory:[I
 
     add-int v5, v1, v2
 
     aget v5, v4, v5
 
-    .line 4
     aget v4, v4, v2
 
-    .line 5
     iget-object v6, p0, Lokio/SegmentedByteString;->segments:[[B
 
     aget-object v6, v6, v2
@@ -935,7 +864,6 @@
 .method public toString()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -950,7 +878,6 @@
 .method public utf8()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lokio/SegmentedByteString;->toByteString()Lokio/ByteString;
 
     move-result-object v0
@@ -972,7 +899,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     iget-object v0, p0, Lokio/SegmentedByteString;->segments:[[B
 
     array-length v0, v0
@@ -984,17 +910,14 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 2
     iget-object v3, p0, Lokio/SegmentedByteString;->directory:[I
 
     add-int v4, v0, v1
 
     aget v4, v3, v4
 
-    .line 3
     aget v3, v3, v1
 
-    .line 4
     iget-object v5, p0, Lokio/SegmentedByteString;->segments:[[B
 
     aget-object v5, v5, v1
@@ -1012,7 +935,6 @@
     :cond_0
     return-void
 
-    .line 5
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -1026,7 +948,6 @@
 .method write(Lokio/Buffer;)V
     .locals 11
 
-    .line 6
     iget-object v0, p0, Lokio/SegmentedByteString;->segments:[[B
 
     array-length v0, v0
@@ -1038,17 +959,14 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 7
     iget-object v3, p0, Lokio/SegmentedByteString;->directory:[I
 
     add-int v4, v0, v1
 
     aget v7, v3, v4
 
-    .line 8
     aget v3, v3, v1
 
-    .line 9
     new-instance v4, Lokio/Segment;
 
     iget-object v5, p0, Lokio/SegmentedByteString;->segments:[[B
@@ -1067,12 +985,10 @@
 
     invoke-direct/range {v5 .. v10}, Lokio/Segment;-><init>([BIIZZ)V
 
-    .line 10
     iget-object v2, p1, Lokio/Buffer;->head:Lokio/Segment;
 
     if-nez v2, :cond_0
 
-    .line 11
     iput-object v4, v4, Lokio/Segment;->prev:Lokio/Segment;
 
     iput-object v4, v4, Lokio/Segment;->next:Lokio/Segment;
@@ -1081,7 +997,6 @@
 
     goto :goto_1
 
-    .line 12
     :cond_0
     iget-object v2, v2, Lokio/Segment;->prev:Lokio/Segment;
 
@@ -1094,7 +1009,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_1
     iget-wide v0, p1, Lokio/Buffer;->size:J
 

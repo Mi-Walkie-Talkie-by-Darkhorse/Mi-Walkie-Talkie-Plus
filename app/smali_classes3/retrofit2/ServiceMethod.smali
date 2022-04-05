@@ -1,6 +1,5 @@
 .class final Lretrofit2/ServiceMethod;
 .super Ljava/lang/Object;
-.source "ServiceMethod.java"
 
 
 # annotations
@@ -85,7 +84,6 @@
 
     const-string v0, "\\{([a-zA-Z][a-zA-Z0-9_-]*)\\}"
 
-    .line 1
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
@@ -94,7 +92,6 @@
 
     const-string v0, "[a-zA-Z][a-zA-Z0-9_-]*"
 
-    .line 2
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
@@ -114,10 +111,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iget-object v0, p1, Lretrofit2/ServiceMethod$Builder;->retrofit:Lretrofit2/Retrofit;
 
     invoke-virtual {v0}, Lretrofit2/Retrofit;->callFactory()Lokhttp3/Call$Factory;
@@ -126,12 +121,10 @@
 
     iput-object v0, p0, Lretrofit2/ServiceMethod;->callFactory:Lokhttp3/Call$Factory;
 
-    .line 3
     iget-object v0, p1, Lretrofit2/ServiceMethod$Builder;->callAdapter:Lretrofit2/CallAdapter;
 
     iput-object v0, p0, Lretrofit2/ServiceMethod;->callAdapter:Lretrofit2/CallAdapter;
 
-    .line 4
     iget-object v0, p1, Lretrofit2/ServiceMethod$Builder;->retrofit:Lretrofit2/Retrofit;
 
     invoke-virtual {v0}, Lretrofit2/Retrofit;->baseUrl()Lokhttp3/HttpUrl;
@@ -140,47 +133,38 @@
 
     iput-object v0, p0, Lretrofit2/ServiceMethod;->baseUrl:Lokhttp3/HttpUrl;
 
-    .line 5
     iget-object v0, p1, Lretrofit2/ServiceMethod$Builder;->responseConverter:Lretrofit2/Converter;
 
     iput-object v0, p0, Lretrofit2/ServiceMethod;->responseConverter:Lretrofit2/Converter;
 
-    .line 6
     iget-object v0, p1, Lretrofit2/ServiceMethod$Builder;->httpMethod:Ljava/lang/String;
 
     iput-object v0, p0, Lretrofit2/ServiceMethod;->httpMethod:Ljava/lang/String;
 
-    .line 7
     iget-object v0, p1, Lretrofit2/ServiceMethod$Builder;->relativeUrl:Ljava/lang/String;
 
     iput-object v0, p0, Lretrofit2/ServiceMethod;->relativeUrl:Ljava/lang/String;
 
-    .line 8
     iget-object v0, p1, Lretrofit2/ServiceMethod$Builder;->headers:Lokhttp3/Headers;
 
     iput-object v0, p0, Lretrofit2/ServiceMethod;->headers:Lokhttp3/Headers;
 
-    .line 9
     iget-object v0, p1, Lretrofit2/ServiceMethod$Builder;->contentType:Lokhttp3/MediaType;
 
     iput-object v0, p0, Lretrofit2/ServiceMethod;->contentType:Lokhttp3/MediaType;
 
-    .line 10
     iget-boolean v0, p1, Lretrofit2/ServiceMethod$Builder;->hasBody:Z
 
     iput-boolean v0, p0, Lretrofit2/ServiceMethod;->hasBody:Z
 
-    .line 11
     iget-boolean v0, p1, Lretrofit2/ServiceMethod$Builder;->isFormEncoded:Z
 
     iput-boolean v0, p0, Lretrofit2/ServiceMethod;->isFormEncoded:Z
 
-    .line 12
     iget-boolean v0, p1, Lretrofit2/ServiceMethod$Builder;->isMultipart:Z
 
     iput-boolean v0, p0, Lretrofit2/ServiceMethod;->isMultipart:Z
 
-    .line 13
     iget-object p1, p1, Lretrofit2/ServiceMethod$Builder;->parameterHandlers:[Lretrofit2/ParameterHandler;
 
     iput-object p1, p0, Lretrofit2/ServiceMethod;->parameterHandlers:[Lretrofit2/ParameterHandler;
@@ -200,7 +184,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Ljava/lang/Boolean;->TYPE:Ljava/lang/Class;
 
     if-ne v0, p0, :cond_0
@@ -209,7 +192,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     sget-object v0, Ljava/lang/Byte;->TYPE:Ljava/lang/Class;
 
@@ -219,7 +201,6 @@
 
     return-object p0
 
-    .line 3
     :cond_1
     sget-object v0, Ljava/lang/Character;->TYPE:Ljava/lang/Class;
 
@@ -229,7 +210,6 @@
 
     return-object p0
 
-    .line 4
     :cond_2
     sget-object v0, Ljava/lang/Double;->TYPE:Ljava/lang/Class;
 
@@ -239,7 +219,6 @@
 
     return-object p0
 
-    .line 5
     :cond_3
     sget-object v0, Ljava/lang/Float;->TYPE:Ljava/lang/Class;
 
@@ -249,7 +228,6 @@
 
     return-object p0
 
-    .line 6
     :cond_4
     sget-object v0, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
 
@@ -259,7 +237,6 @@
 
     return-object p0
 
-    .line 7
     :cond_5
     sget-object v0, Ljava/lang/Long;->TYPE:Ljava/lang/Class;
 
@@ -269,7 +246,6 @@
 
     return-object p0
 
-    .line 8
     :cond_6
     sget-object v0, Ljava/lang/Short;->TYPE:Ljava/lang/Class;
 
@@ -294,19 +270,16 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lretrofit2/ServiceMethod;->PARAM_URL_REGEX:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object p0
 
-    .line 2
     new-instance v0, Ljava/util/LinkedHashSet;
 
     invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
 
-    .line 3
     :goto_0
     invoke-virtual {p0}, Ljava/util/regex/Matcher;->find()Z
 
@@ -316,7 +289,6 @@
 
     const/4 v1, 0x1
 
-    .line 4
     invoke-virtual {p0, v1}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
 
     move-result-object v1
@@ -343,7 +315,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v9, Lretrofit2/RequestBuilder;
 
     iget-object v1, p0, Lretrofit2/ServiceMethod;->httpMethod:Ljava/lang/String;
@@ -366,14 +337,12 @@
 
     invoke-direct/range {v0 .. v8}, Lretrofit2/RequestBuilder;-><init>(Ljava/lang/String;Lokhttp3/HttpUrl;Ljava/lang/String;Lokhttp3/Headers;Lokhttp3/MediaType;ZZZ)V
 
-    .line 2
     iget-object v0, p0, Lretrofit2/ServiceMethod;->parameterHandlers:[Lretrofit2/ParameterHandler;
 
     const/4 v1, 0x0
 
     if-eqz p1, :cond_0
 
-    .line 3
     array-length v2, p1
 
     goto :goto_0
@@ -381,7 +350,6 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 4
     :goto_0
     array-length v3, v0
 
@@ -390,7 +358,6 @@
     :goto_1
     if-ge v1, v2, :cond_1
 
-    .line 5
     aget-object v3, v0, v1
 
     aget-object v4, p1, v1
@@ -401,7 +368,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_1
     invoke-virtual {v9}, Lretrofit2/RequestBuilder;->build()Lokhttp3/Request;
 
@@ -409,7 +375,6 @@
 
     return-object p1
 
-    .line 7
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -460,7 +425,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lretrofit2/ServiceMethod;->responseConverter:Lretrofit2/Converter;
 
     invoke-interface {v0, p1}, Lretrofit2/Converter;->convert(Ljava/lang/Object;)Ljava/lang/Object;

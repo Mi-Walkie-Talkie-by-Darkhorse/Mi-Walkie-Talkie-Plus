@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/BinderThread;
 .super Ljava/lang/Object;
-.source "BinderThread.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

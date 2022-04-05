@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/resource/bitmap/f;
 .super Ljava/lang/Object;
-.source "ByteBufferBitmapDecoder.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/f;
@@ -26,10 +25,8 @@
 .method public constructor <init>(Lcom/bumptech/glide/load/resource/bitmap/j;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/bitmap/f;->a:Lcom/bumptech/glide/load/resource/bitmap/j;
 
     return-void
@@ -53,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/resource/bitmap/f;->a(Ljava/nio/ByteBuffer;IILcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/engine/s;
@@ -92,12 +88,10 @@
         }
     .end annotation
 
-    .line 4
     invoke-static {p1}, Lcom/bumptech/glide/util/a;->c(Ljava/nio/ByteBuffer;)Ljava/io/InputStream;
 
     move-result-object p1
 
-    .line 5
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/f;->a:Lcom/bumptech/glide/load/resource/bitmap/j;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/resource/bitmap/j;->a(Ljava/io/InputStream;IILcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/engine/s;
@@ -123,7 +117,6 @@
         }
     .end annotation
 
-    .line 2
     check-cast p1, Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, p1, p2}, Lcom/bumptech/glide/load/resource/bitmap/f;->a(Ljava/nio/ByteBuffer;Lcom/bumptech/glide/load/e;)Z
@@ -144,7 +137,6 @@
         .end annotation
     .end param
 
-    .line 3
     iget-object p2, p0, Lcom/bumptech/glide/load/resource/bitmap/f;->a:Lcom/bumptech/glide/load/resource/bitmap/j;
 
     invoke-virtual {p2, p1}, Lcom/bumptech/glide/load/resource/bitmap/j;->a(Ljava/nio/ByteBuffer;)Z

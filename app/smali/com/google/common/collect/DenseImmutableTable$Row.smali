@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/DenseImmutableTable$Row;
 .super Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;
-.source "DenseImmutableTable.java"
 
 
 # annotations
@@ -31,10 +30,8 @@
 .method constructor <init>(Lcom/google/common/collect/DenseImmutableTable;I)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/DenseImmutableTable$Row;->this$0:Lcom/google/common/collect/DenseImmutableTable;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/collect/DenseImmutableTable;->access$200(Lcom/google/common/collect/DenseImmutableTable;)[I
 
     move-result-object p1
@@ -43,7 +40,6 @@
 
     invoke-direct {p0, p1}, Lcom/google/common/collect/DenseImmutableTable$ImmutableArrayMap;-><init>(I)V
 
-    .line 3
     iput p2, p0, Lcom/google/common/collect/DenseImmutableTable$Row;->rowIndex:I
 
     return-void
@@ -59,7 +55,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/DenseImmutableTable$Row;->this$0:Lcom/google/common/collect/DenseImmutableTable;
 
     invoke-static {v0}, Lcom/google/common/collect/DenseImmutableTable;->access$400(Lcom/google/common/collect/DenseImmutableTable;)[[Ljava/lang/Object;
@@ -95,7 +90,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/DenseImmutableTable$Row;->this$0:Lcom/google/common/collect/DenseImmutableTable;
 
     invoke-static {v0}, Lcom/google/common/collect/DenseImmutableTable;->access$300(Lcom/google/common/collect/DenseImmutableTable;)Lcom/google/common/collect/ImmutableMap;

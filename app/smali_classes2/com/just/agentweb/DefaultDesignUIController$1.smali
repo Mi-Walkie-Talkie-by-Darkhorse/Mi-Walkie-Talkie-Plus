@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultDesignUIController$1;
 .super Ljava/lang/Object;
-.source "DefaultDesignUIController.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnCancelListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/just/agentweb/DefaultDesignUIController;Landroid/os/Handler$Callback;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultDesignUIController$1;->this$0:Lcom/just/agentweb/DefaultDesignUIController;
 
     iput-object p2, p0, Lcom/just/agentweb/DefaultDesignUIController$1;->val$callback:Landroid/os/Handler$Callback;
@@ -42,7 +40,6 @@
 .method public onCancel(Landroid/content/DialogInterface;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/just/agentweb/DefaultDesignUIController$1;->val$callback:Landroid/os/Handler$Callback;
 
     if-eqz p1, :cond_0
@@ -51,7 +48,6 @@
 
     const/4 v1, -0x1
 
-    .line 2
     invoke-static {v0, v1}, Landroid/os/Message;->obtain(Landroid/os/Handler;I)Landroid/os/Message;
 
     move-result-object v0

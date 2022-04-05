@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/du;
 .super Ljava/lang/Object;
-.source "Bounds.java"
 
 
 # instance fields
@@ -21,19 +20,14 @@
 .method public constructor <init>(DDDD)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-wide p1, p0, Lcom/amap/api/col/l3/du;->a:D
 
-    .line 3
     iput-wide p5, p0, Lcom/amap/api/col/l3/du;->b:D
 
-    .line 4
     iput-wide p3, p0, Lcom/amap/api/col/l3/du;->c:D
 
-    .line 5
     iput-wide p7, p0, Lcom/amap/api/col/l3/du;->d:D
 
     add-double/2addr p1, p3
@@ -42,14 +36,12 @@
 
     div-double/2addr p1, p3
 
-    .line 6
     iput-wide p1, p0, Lcom/amap/api/col/l3/du;->e:D
 
     add-double/2addr p5, p7
 
     div-double/2addr p5, p3
 
-    .line 7
     iput-wide p5, p0, Lcom/amap/api/col/l3/du;->f:D
 
     return-void
@@ -60,7 +52,6 @@
 .method public final a(DD)Z
     .locals 3
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/col/l3/du;->a:D
 
     cmpg-double v2, v0, p1
@@ -98,7 +89,6 @@
 .method public final a(Lcom/amap/api/col/l3/du;)Z
     .locals 10
 
-    .line 2
     iget-wide v0, p1, Lcom/amap/api/col/l3/du;->a:D
 
     iget-wide v2, p1, Lcom/amap/api/col/l3/du;->c:D

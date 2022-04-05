@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableBufferExactBoundary;
 .super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
-.source "ObservableBufferExactBoundary.java"
 
 
 # annotations
@@ -61,13 +60,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
 
-    .line 2
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableBufferExactBoundary;->boundary:Lio/reactivex/ObservableSource;
 
-    .line 3
     iput-object p3, p0, Lio/reactivex/internal/operators/observable/ObservableBufferExactBoundary;->bufferSupplier:Ljava/util/concurrent/Callable;
 
     return-void
@@ -85,7 +81,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     new-instance v1, Lio/reactivex/internal/operators/observable/ObservableBufferExactBoundary$BufferExactBoundaryObserver;

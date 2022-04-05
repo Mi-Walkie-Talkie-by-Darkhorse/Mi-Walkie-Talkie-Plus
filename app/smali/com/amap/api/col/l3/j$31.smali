@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$31;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/j;ZZ)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$31;->c:Lcom/amap/api/col/l3/j;
 
     iput-boolean p2, p0, Lcom/amap/api/col/l3/j$31;->a:Z
@@ -46,7 +44,6 @@
 .method public final run()V
     .locals 12
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/j$31;->c:Lcom/amap/api/col/l3/j;
 
@@ -56,12 +53,10 @@
 
     move-result v0
 
-    .line 2
     iget-boolean v1, p0, Lcom/amap/api/col/l3/j$31;->a:Z
 
     if-eq v0, v1, :cond_2
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/j$31;->c:Lcom/amap/api/col/l3/j;
 
     iget-object v0, v0, Lcom/amap/api/col/l3/j;->c:Lcom/autonavi/amap/mapcore/MapConfig;
@@ -70,7 +65,6 @@
 
     invoke-virtual {v0, v1}, Lcom/autonavi/amap/mapcore/MapConfig;->setTrafficEnabled(Z)V
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/j$31;->c:Lcom/amap/api/col/l3/j;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/j;->x(Lcom/amap/api/col/l3/j;)Lcom/autonavi/ae/gmap/GLMapRender;
@@ -81,7 +75,6 @@
 
     invoke-virtual {v0, v1}, Lcom/autonavi/ae/gmap/GLMapRender;->setTrafficMode(Z)V
 
-    .line 5
     iget-boolean v0, p0, Lcom/amap/api/col/l3/j$31;->a:Z
 
     if-eqz v0, :cond_0
@@ -97,7 +90,6 @@
 
     const/4 v4, 0x0
 
-    .line 6
     :goto_0
     iget-object v0, p0, Lcom/amap/api/col/l3/j$31;->c:Lcom/amap/api/col/l3/j;
 
@@ -117,7 +109,6 @@
 
     invoke-virtual/range {v5 .. v11}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/j$31;->c:Lcom/amap/api/col/l3/j;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/j;->y(Lcom/amap/api/col/l3/j;)Lcom/amap/api/maps/model/MyTrafficStyle;
@@ -128,7 +119,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 8
     :try_start_1
     iget-object v0, p0, Lcom/amap/api/col/l3/j$31;->c:Lcom/amap/api/col/l3/j;
 
@@ -147,11 +137,9 @@
     :catchall_0
     move-exception v0
 
-    .line 9
     :try_start_2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 10
     :cond_1
     :goto_1
     iget-object v0, p0, Lcom/amap/api/col/l3/j$31;->c:Lcom/amap/api/col/l3/j;
@@ -170,7 +158,6 @@
 
     invoke-virtual/range {v1 .. v7}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
-    .line 11
     iget-object v0, p0, Lcom/amap/api/col/l3/j$31;->c:Lcom/amap/api/col/l3/j;
 
     invoke-virtual {v0}, Lcom/amap/api/col/l3/j;->resetRenderTime()V
@@ -183,7 +170,6 @@
     :catchall_1
     move-exception v0
 
-    .line 12
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

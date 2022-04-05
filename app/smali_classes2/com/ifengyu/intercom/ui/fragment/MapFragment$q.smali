@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;
 .super Ljava/lang/Object;
-.source "MapFragment.java"
 
 # interfaces
 .implements Landroidx/lifecycle/q;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public a(Ljava/lang/Boolean;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->k(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)Lcom/qmuiteam/qmui/layout/QMUIConstraintLayout;
@@ -74,7 +71,6 @@
     :goto_0
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->setVisibility(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->titleBarRight:Landroid/widget/ImageView;
@@ -93,14 +89,12 @@
     :goto_1
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->s(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)Lcom/ifengyu/intercom/ui/fragment/MapFragment$x;
@@ -111,28 +105,24 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->e0:Lcom/ifengyu/intercom/lite/h/h0;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/h/h0;->m()V
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->e0:Lcom/ifengyu/intercom/lite/h/h0;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/h/h0;->l()V
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->e0:Lcom/ifengyu/intercom/lite/h/h0;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/h/h0;->n()V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->t(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)Lcom/ifengyu/intercom/lite/g/t;
@@ -143,7 +133,6 @@
 
     goto :goto_2
 
-    .line 9
     :cond_2
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
@@ -151,20 +140,16 @@
 
     const/4 v0, 0x6
 
-    .line 10
     iput v0, p1, Landroid/os/Message;->what:I
 
     const/4 v0, 0x1
 
-    .line 11
     iput v0, p1, Landroid/os/Message;->arg1:I
 
     const v0, 0x8f03
 
-    .line 12
     iput v0, p1, Landroid/os/Message;->arg2:I
 
-    .line 13
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->s(Lcom/ifengyu/intercom/ui/fragment/MapFragment;)Lcom/ifengyu/intercom/ui/fragment/MapFragment$x;
@@ -173,7 +158,6 @@
 
     invoke-virtual {v0, p1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;->a:Lcom/ifengyu/intercom/ui/fragment/MapFragment;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/ui/fragment/MapFragment;->titleBarTitle:Landroid/widget/TextView;
@@ -189,7 +173,6 @@
 .method public bridge synthetic onChanged(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/fragment/MapFragment$q;->a(Ljava/lang/Boolean;)V

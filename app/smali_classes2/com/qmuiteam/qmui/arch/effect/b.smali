@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/arch/effect/b;
 .super Lcom/qmuiteam/qmui/arch/effect/a;
-.source "FragmentResultEffect.java"
 
 
 # instance fields
@@ -24,19 +23,14 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Lcom/qmuiteam/qmui/arch/effect/a;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/qmuiteam/qmui/arch/effect/b;->a:I
 
-    .line 3
     iput p2, p0, Lcom/qmuiteam/qmui/arch/effect/b;->b:I
 
-    .line 4
     iput p3, p0, Lcom/qmuiteam/qmui/arch/effect/b;->c:I
 
-    .line 5
     iput-object p4, p0, Lcom/qmuiteam/qmui/arch/effect/b;->d:Landroid/content/Intent;
 
     return-void
@@ -47,7 +41,6 @@
 .method public a()Landroid/content/Intent;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/effect/b;->d:Landroid/content/Intent;
 
     return-object v0
@@ -56,7 +49,6 @@
 .method public b()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/arch/effect/b;->c:I
 
     return v0
@@ -65,7 +57,6 @@
 .method public c()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/arch/effect/b;->a:I
 
     return v0
@@ -74,7 +65,6 @@
 .method public d()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/arch/effect/b;->b:I
 
     return v0

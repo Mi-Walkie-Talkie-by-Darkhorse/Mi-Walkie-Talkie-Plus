@@ -1,6 +1,5 @@
 .class final Lorg/greenrobot/greendao/internal/LongHashMap$Entry;
 .super Ljava/lang/Object;
-.source "LongHashMap.java"
 
 
 # annotations
@@ -55,16 +54,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-wide p1, p0, Lorg/greenrobot/greendao/internal/LongHashMap$Entry;->key:J
 
-    .line 3
     iput-object p3, p0, Lorg/greenrobot/greendao/internal/LongHashMap$Entry;->value:Ljava/lang/Object;
 
-    .line 4
     iput-object p4, p0, Lorg/greenrobot/greendao/internal/LongHashMap$Entry;->next:Lorg/greenrobot/greendao/internal/LongHashMap$Entry;
 
     return-void

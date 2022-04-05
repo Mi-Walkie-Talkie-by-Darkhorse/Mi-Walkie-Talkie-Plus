@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/amap/mapcore/DPoint;
 .super Ljava/lang/Object;
-.source "DPoint.java"
 
 
 # static fields
@@ -25,7 +24,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     const/16 v1, 0x20
@@ -40,7 +38,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -49,13 +46,10 @@
 .method public constructor <init>(DD)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-wide p1, p0, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
-    .line 4
     iput-wide p3, p0, Lcom/autonavi/amap/mapcore/DPoint;->y:D
 
     return-void
@@ -64,7 +58,6 @@
 .method public static obtain()Lcom/autonavi/amap/mapcore/DPoint;
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/autonavi/amap/mapcore/DPoint;->mPool:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->acquire()Ljava/lang/Object;
@@ -75,7 +68,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/autonavi/amap/mapcore/DPoint;
 
     invoke-direct {v0}, Lcom/autonavi/amap/mapcore/DPoint;-><init>()V
@@ -85,7 +77,6 @@
     :cond_0
     const-wide/16 v1, 0x0
 
-    .line 3
     invoke-direct {v0, v1, v2, v1, v2}, Lcom/autonavi/amap/mapcore/DPoint;->set(DD)V
 
     :goto_0
@@ -95,7 +86,6 @@
 .method public static obtain(DD)Lcom/autonavi/amap/mapcore/DPoint;
     .locals 1
 
-    .line 4
     sget-object v0, Lcom/autonavi/amap/mapcore/DPoint;->mPool:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->acquire()Ljava/lang/Object;
@@ -106,14 +96,12 @@
 
     if-nez v0, :cond_0
 
-    .line 5
     new-instance v0, Lcom/autonavi/amap/mapcore/DPoint;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lcom/autonavi/amap/mapcore/DPoint;-><init>(DD)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-direct {v0, p0, p1, p2, p3}, Lcom/autonavi/amap/mapcore/DPoint;->set(DD)V
 
@@ -124,10 +112,8 @@
 .method private set(DD)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
-    .line 2
     iput-wide p3, p0, Lcom/autonavi/amap/mapcore/DPoint;->y:D
 
     return-void
@@ -138,7 +124,6 @@
 .method public recycle()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/autonavi/amap/mapcore/DPoint;->mPool:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0, p0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->release(Ljava/lang/Object;)Z

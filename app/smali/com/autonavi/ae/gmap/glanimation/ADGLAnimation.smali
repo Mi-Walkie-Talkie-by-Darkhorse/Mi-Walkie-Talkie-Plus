@@ -1,6 +1,5 @@
 .class public abstract Lcom/autonavi/ae/gmap/glanimation/ADGLAnimation;
 .super Ljava/lang/Object;
-.source "ADGLAnimation.java"
 
 
 # static fields
@@ -39,27 +38,22 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0x12c
 
-    .line 2
     iput v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimation;->_duration:I
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimation;->_isOver:Z
 
     const-wide/16 v0, -0x1
 
-    .line 4
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimation;->_startTime:J
 
     const-wide/16 v0, 0x0
 
-    .line 5
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimation;->_offsetTime:J
 
     return-void
@@ -73,7 +67,6 @@
 .method public isOver()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/autonavi/ae/gmap/glanimation/ADGLAnimation;->_isOver:Z
 
     return v0

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;
 .super Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;
-.source "SealCustomFragment.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/adapter/m$d;
@@ -68,7 +67,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -83,10 +81,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -95,10 +91,8 @@
 
     const/4 v0, -0x1
 
-    .line 3
     iput v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->n:I
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -113,14 +107,12 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->o:Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
 
-    .line 5
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->p:Lcom/ifengyu/intercom/MiTalkiApp;
 
-    .line 6
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -133,7 +125,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     return-object p0
@@ -142,7 +133,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->h(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
     return-void
@@ -151,7 +141,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;)Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->o:Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
 
     return-object p0
@@ -160,7 +149,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     return-object p1
@@ -169,7 +157,6 @@
 .method static synthetic c(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;)Lcom/ifengyu/intercom/MiTalkiApp;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->p:Lcom/ifengyu/intercom/MiTalkiApp;
 
     return-object p0
@@ -178,7 +165,6 @@
 .method static synthetic d(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;)Lb/d/a/a/e/a;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
     return-object p0
@@ -187,7 +173,6 @@
 .method static synthetic e(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;)Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     return-object p0
@@ -196,7 +181,6 @@
 .method static synthetic f(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;)Lcom/ifengyu/intercom/ui/adapter/m;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->l:Lcom/ifengyu/intercom/ui/adapter/m;
 
     return-object p0
@@ -205,7 +189,6 @@
 .method static synthetic g(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     return-object p0
@@ -214,7 +197,6 @@
 .method private h(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 4
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -225,14 +207,12 @@
 
     const v1, 0x7f110096
 
-    .line 2
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->c(I)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     const/4 v1, 0x2
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->i()I
 
     move-result v2
@@ -245,7 +225,6 @@
 
     aput-object v2, v1, v3
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->l()I
 
     move-result v2
@@ -260,14 +239,12 @@
 
     const v2, 0x7f1100f1
 
-    .line 5
     invoke-static {v2, v1}, Lcom/ifengyu/intercom/i/k0;->a(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a(Ljava/lang/CharSequence;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
-    .line 6
     new-instance v1, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment$e;
 
     invoke-direct {v1, p0, v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment$e;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;Lcom/ifengyu/intercom/ui/widget/dialog/f;)V
@@ -282,10 +259,8 @@
 
     const p1, 0x7f1100a0
 
-    .line 7
     invoke-virtual {v0, p1, v1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->c(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
-    .line 8
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a()Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->d()V
@@ -296,7 +271,6 @@
 .method public static newInstance()Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;-><init>()V
@@ -309,10 +283,8 @@
 .method public a(Landroid/view/View;ILcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 0
 
-    .line 3
     iput-object p3, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 4
     invoke-virtual {p0, p3}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->e(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
     return-void
@@ -321,10 +293,8 @@
 .method protected a(Z)V
     .locals 3
 
-    .line 5
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/a;->a(Z)V
 
-    .line 6
     sget-object v0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->s:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -345,16 +315,13 @@
 
     if-eqz p1, :cond_0
 
-    .line 7
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->o()V
 
     goto :goto_0
 
-    .line 8
     :cond_0
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->k()V
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->f()V
 
     :goto_0
@@ -364,13 +331,10 @@
 .method public b(Landroid/view/View;ILcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 0
 
-    .line 19
     iput p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->n:I
 
-    .line 20
     iput-object p3, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 21
     invoke-virtual {p0, p3}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->f(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
     return-void
@@ -379,26 +343,22 @@
 .method protected b(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;)V
     .locals 1
 
-    .line 15
     iget p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->n:I
 
     const/4 v0, -0x1
 
     if-eq p1, v0, :cond_0
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 17
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
     iget v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->n:I
 
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyItemRemoved(I)V
 
-    .line 18
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->o:Lcom/ifengyu/intercom/greendao/dao/SealSharkChannelDao;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -412,31 +372,26 @@
 .method protected b(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;)V
     .locals 2
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->hasDeviceMode()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->getDeviceMode()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate$SEAL_MODE;
 
     move-result-object v0
 
-    .line 5
     sget-object v1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate$SEAL_MODE;->SEAL_MODE_NORMAL:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate$SEAL_MODE;
 
     if-ne v0, v1, :cond_0
 
-    .line 6
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->hasStateMode()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->getStateMode()I
 
     move-result v0
@@ -445,43 +400,36 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 8
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->hasCh1()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 9
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->getCh1()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;
 
     move-result-object p1
 
-    .line 10
     invoke-static {p1}, Lcom/ifengyu/intercom/i/g0;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->l:Lcom/ifengyu/intercom/ui/adapter/m;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/adapter/m;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
     if-eqz p1, :cond_0
 
-    .line 14
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyDataSetChanged()V
 
     :cond_0
@@ -491,7 +439,6 @@
 .method protected c(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;)V
     .locals 2
 
-    .line 15
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;->getCh()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;
 
     move-result-object p1
@@ -500,7 +447,6 @@
 
     move-result-object p1
 
-    .line 16
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
@@ -511,22 +457,18 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 17
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 18
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     invoke-interface {v1, v0, p1}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
-    .line 19
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
     invoke-virtual {v1, v0}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyItemChanged(I)V
 
-    .line 20
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->w()Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -535,32 +477,27 @@
 
     if-eqz v0, :cond_1
 
-    .line 21
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 22
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->b(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
-    .line 23
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
     goto :goto_0
 
-    .line 24
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 25
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyDataSetChanged()V
@@ -573,38 +510,32 @@
 .method protected c(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;)V
     .locals 2
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->s:Ljava/lang/String;
 
     const-string v1, "onStateUpdateSuccess"
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->hasDeviceMode()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->getDeviceMode()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate$SEAL_MODE;
 
     move-result-object v0
 
-    .line 5
     sget-object v1, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate$SEAL_MODE;->SEAL_MODE_NORMAL:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate$SEAL_MODE;
 
     if-ne v0, v1, :cond_0
 
-    .line 6
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->hasStateMode()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->getStateMode()I
 
     move-result v0
@@ -613,43 +544,36 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 8
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->hasCh1()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 9
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;->getCh1()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;
 
     move-result-object p1
 
-    .line 10
     invoke-static {p1}, Lcom/ifengyu/intercom/i/g0;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->l:Lcom/ifengyu/intercom/ui/adapter/m;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/adapter/m;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
     if-eqz p1, :cond_0
 
-    .line 14
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyDataSetChanged()V
 
     :cond_0
@@ -659,14 +583,12 @@
 .method protected d(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;)V
     .locals 2
 
-    .line 2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;->hasCh()Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;->getCh()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;
 
     move-result-object p1
@@ -675,7 +597,6 @@
 
     move-result-object p1
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
@@ -686,17 +607,14 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 5
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     invoke-interface {v1, v0}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 6
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     invoke-interface {v1, v0, p1}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
-    .line 7
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-virtual {v1}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->w()Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -705,22 +623,18 @@
 
     if-eqz v1, :cond_0
 
-    .line 8
     invoke-virtual {v1, p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 9
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 10
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-virtual {v1, p1}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
-    .line 11
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
@@ -728,13 +642,11 @@
 
     goto :goto_0
 
-    .line 12
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyDataSetChanged()V
@@ -747,10 +659,8 @@
 .method protected e()V
     .locals 2
 
-    .line 5
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/baseui/a;->e()V
 
-    .line 6
     sget-object v0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->s:Ljava/lang/String;
 
     const-string v1, "onFragmentFirstVisible"
@@ -763,14 +673,12 @@
 .method protected e(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;)V
     .locals 1
 
-    .line 2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;->hasCh()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->q:Ljava/util/List;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;->getCh()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfo;
@@ -783,7 +691,6 @@
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 4
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/i/g0;->a()V
 
@@ -793,47 +700,39 @@
 .method protected f(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;)V
     .locals 1
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->p:Lcom/ifengyu/intercom/MiTalkiApp;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/MiTalkiApp;->c(Z)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->mRecycleView:Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->mTvEmptyView:Landroid/widget/TextView;
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;->setEmptyView(Landroid/view/View;)V
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->q:Ljava/util/List;
 
     invoke-interface {p1, v0}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
     if-eqz p1, :cond_0
 
-    .line 7
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$g;->notifyDataSetChanged()V
 
-    .line 8
     :cond_0
     invoke-virtual {p0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->j()V
 
     const/4 p1, 0x1
 
-    .line 9
     iput-boolean p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->i:Z
 
     return-void
@@ -848,7 +747,6 @@
 
     const v1, 0x7f110096
 
-    .line 10
     invoke-static {v1}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v1
@@ -877,7 +775,6 @@
 
     aput-object v1, v0, v4
 
-    .line 11
     new-instance v1, Lcom/ifengyu/intercom/ui/widget/dialog/q;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -888,7 +785,6 @@
 
     new-array v4, v4, [Ljava/lang/Object;
 
-    .line 12
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->i()I
 
     move-result v5
@@ -917,17 +813,14 @@
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/widget/dialog/q;->a(Ljava/lang/CharSequence;)Lcom/ifengyu/intercom/ui/widget/dialog/q;
 
-    .line 13
     invoke-virtual {v1, v3}, Lcom/ifengyu/intercom/ui/widget/dialog/q;->a(Z)Lcom/ifengyu/intercom/ui/widget/dialog/q;
 
     new-instance v2, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment$c;
 
     invoke-direct {v2, p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment$c;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
-    .line 14
     invoke-virtual {v1, v0, v2}, Lcom/ifengyu/intercom/ui/widget/dialog/q;->a([Ljava/lang/CharSequence;Lcom/ifengyu/intercom/ui/widget/dialog/q$c;)Lcom/ifengyu/intercom/ui/widget/dialog/q;
 
-    .line 15
     invoke-virtual {v1}, Lcom/ifengyu/intercom/ui/widget/dialog/q;->show()V
 
     return-void
@@ -942,7 +835,6 @@
 .method public g(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 3
 
-    .line 2
     new-instance v0, Landroid/content/Intent;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -955,17 +847,14 @@
 
     const-string v1, "seal_action_modify_channel"
 
-    .line 3
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     const-string v1, "seal_action_modify_channel_info"
 
-    .line 4
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Landroid/os/Parcelable;)Landroid/content/Intent;
 
     const/16 p1, 0xca
 
-    .line 5
     invoke-virtual {p0, v0, p1}, Landroidx/fragment/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     return-void
@@ -974,7 +863,6 @@
 .method public n()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/node/j;->b()Lcom/ifengyu/intercom/node/j;
 
     move-result-object v0
@@ -989,7 +877,6 @@
 
     const v0, 0x7f1100e2
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v0
@@ -998,7 +885,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-boolean v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->i:Z
 
@@ -1006,7 +892,6 @@
 
     return-void
 
-    .line 4
     :cond_1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->U()Z
 
@@ -1016,7 +901,6 @@
 
     const v0, 0x7f11032d
 
-    .line 5
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v0
@@ -1025,7 +909,6 @@
 
     return-void
 
-    .line 6
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
@@ -1039,7 +922,6 @@
 
     const v0, 0x7f110345
 
-    .line 7
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v0
@@ -1048,7 +930,6 @@
 
     return-void
 
-    .line 8
     :cond_3
     new-instance v0, Landroid/content/Intent;
 
@@ -1062,10 +943,8 @@
 
     const-string v1, "seal_action_insert_channel"
 
-    .line 9
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
-    .line 10
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->j:Ljava/util/List;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/i/c0;->b(Ljava/util/List;)I
@@ -1078,7 +957,6 @@
 
     const/16 v1, 0xc9
 
-    .line 11
     invoke-virtual {p0, v0, v1}, Landroidx/fragment/app/Fragment;->startActivityForResult(Landroid/content/Intent;I)V
 
     return-void
@@ -1087,7 +965,6 @@
 .method public o()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->U()Z
 
     move-result v0
@@ -1098,7 +975,6 @@
 
     const v0, 0x7f11032d
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->c(I)Ljava/lang/String;
 
     move-result-object v0
@@ -1107,7 +983,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/network/d/e;->a()Ljava/util/concurrent/ExecutorService;
 
@@ -1119,7 +994,6 @@
 
     invoke-interface {v0, v2}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->p:Lcom/ifengyu/intercom/MiTalkiApp;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/MiTalkiApp;->n()Z
@@ -1130,7 +1004,6 @@
 
     const v0, 0x7f1100ce
 
-    .line 5
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -1139,28 +1012,22 @@
 
     invoke-virtual {p0, v1, v1, v0, v2}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->a(ZZLjava/lang/String;I)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->q:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 7
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;-><init>()V
 
     const/4 v2, 0x2
 
-    .line 8
     invoke-virtual {v0, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->i(I)V
 
-    .line 9
     invoke-virtual {p0, v0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->d(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
-    .line 10
     iput-boolean v1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->i:Z
 
-    .line 11
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment$b;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment$b;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;)V
@@ -1180,10 +1047,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->onActivityCreated(Landroid/os/Bundle;)V
 
-    .line 2
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
 
     move-result-object p1
@@ -1192,14 +1057,12 @@
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->w()Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->l:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/adapter/m;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
@@ -1210,7 +1073,6 @@
 .method public onActivityResult(IILandroid/content/Intent;)V
     .locals 4
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->s:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1247,7 +1109,6 @@
 
     if-nez p3, :cond_0
 
-    .line 2
     sget-object p1, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->s:Ljava/lang/String;
 
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
@@ -1259,7 +1120,6 @@
 
     if-ne p2, p1, :cond_5
 
-    .line 3
     invoke-virtual {p3, v2}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
@@ -1268,7 +1128,6 @@
 
     if-eqz p1, :cond_5
 
-    .line 4
     sget-object p2, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->s:Ljava/lang/String;
 
     new-instance p3, Ljava/lang/StringBuilder;
@@ -1289,10 +1148,8 @@
 
     invoke-static {p2, p3}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 6
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->b(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
     goto :goto_0
@@ -1308,14 +1165,12 @@
 
     if-nez p3, :cond_2
 
-    .line 7
     sget-object p1, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->s:Ljava/lang/String;
 
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     return-void
 
-    .line 8
     :cond_2
     invoke-virtual {p3, v2}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -1325,7 +1180,6 @@
 
     if-eqz p1, :cond_5
 
-    .line 9
     sget-object p2, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->s:Ljava/lang/String;
 
     new-instance p3, Ljava/lang/StringBuilder;
@@ -1346,10 +1200,8 @@
 
     invoke-static {p2, p3}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 11
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->c(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
     goto :goto_0
@@ -1359,22 +1211,18 @@
 
     if-ne p2, p1, :cond_4
 
-    .line 12
     invoke-virtual {p3, v2}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 13
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->m:Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 14
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
 
     goto :goto_0
 
-    .line 15
     :cond_4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
@@ -1382,7 +1230,6 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->c(Z)V
 
-    .line 16
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->b(Z)V
@@ -1395,7 +1242,6 @@
 .method public onAttach(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->onAttach(Landroid/content/Context;)V
 
     return-void
@@ -1408,7 +1254,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->onCreate(Landroid/os/Bundle;)V
 
     return-void
@@ -1421,15 +1266,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p1, p3, p2, v0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
     move-result-object p1
 
-    .line 2
     invoke-static {p0, p1}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
-    .line 3
     new-instance p2, Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -1442,10 +1284,8 @@
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->l:Lcom/ifengyu/intercom/ui/adapter/m;
 
-    .line 4
     invoke-virtual {p2, p0}, Lcom/ifengyu/intercom/ui/adapter/m;->setOnItemClickListener(Lcom/ifengyu/intercom/ui/adapter/m$d;)V
 
-    .line 5
     new-instance p2, Lb/d/a/a/e/a;
 
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->l:Lcom/ifengyu/intercom/ui/adapter/m;
@@ -1454,7 +1294,6 @@
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
-    .line 6
     new-instance p2, Landroid/view/View;
 
     invoke-static {}, Lcom/ifengyu/intercom/i/k0;->a()Landroid/content/Context;
@@ -1463,7 +1302,6 @@
 
     invoke-direct {p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
-    .line 7
     new-instance p3, Landroid/view/ViewGroup$LayoutParams;
 
     const/4 v0, 0x1
@@ -1476,31 +1314,26 @@
 
     const p3, 0x7f060178
 
-    .line 8
     invoke-static {p3}, Lcom/ifengyu/intercom/i/k0;->a(I)I
 
     move-result p3
 
     invoke-virtual {p2, p3}, Landroid/view/View;->setBackgroundColor(I)V
 
-    .line 9
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
     invoke-virtual {p3, p2}, Lb/d/a/a/e/a;->a(Landroid/view/View;)V
 
-    .line 10
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->mRecycleView:Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;
 
     invoke-virtual {p2, v0}, Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;->setFootOrHeaderNum(I)V
 
-    .line 11
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->mRecycleView:Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;
 
     iget-object p3, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->r:Lb/d/a/a/e/a;
 
     invoke-virtual {p2, p3}, Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$g;)V
 
-    .line 12
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->mRecycleView:Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;
 
     new-instance p3, Landroidx/recyclerview/widget/LinearLayoutManager;
@@ -1519,7 +1352,6 @@
 .method public onDestroyView()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->onDestroyView()V
 
     return-void
@@ -1530,14 +1362,12 @@
     .annotation runtime Lcom/squareup/otto/Subscribe;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->s:Ljava/lang/String;
 
     const-string v1, "receiveChannelInfoOperateResp"
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->z()Z
@@ -1548,7 +1378,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
@@ -1566,7 +1395,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 4
     :cond_1
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelInfoOperate;)V
 
@@ -1579,14 +1407,12 @@
     .annotation runtime Lcom/squareup/otto/Subscribe;
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->s:Ljava/lang/String;
 
     const-string v1, "receiveChannelStateOperateResp"
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->z()Z
@@ -1597,7 +1423,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
@@ -1615,7 +1440,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/seal/fragment/SealCustomFragment;->k:Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;
 
@@ -1623,7 +1447,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/seal/SealChannelSettingActivity;->b(Z)V
 
-    .line 5
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/fragment/a;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_ChannelStateOperate;)V
 
     :cond_2

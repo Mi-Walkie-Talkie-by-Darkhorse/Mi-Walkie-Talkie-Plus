@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/appcompat/widget/v$e;
 .super Ljava/lang/Object;
-.source "ResourceManagerInternal.java"
 
 
 # annotations

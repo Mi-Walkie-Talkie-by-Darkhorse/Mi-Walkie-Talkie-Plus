@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/c/d;
 .super Ljava/lang/Object;
-.source "IAxisValueFormatter.java"
 
 
 # virtual methods

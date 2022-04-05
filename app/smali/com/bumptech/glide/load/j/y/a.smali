@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/y/a;
 .super Ljava/lang/Object;
-.source "HttpGlideUrlLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/n;
@@ -58,14 +57,12 @@
 
     const/16 v0, 0x9c4
 
-    .line 1
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
     const-string v1, "com.bumptech.glide.load.model.stream.HttpGlideUrlLoader.Timeout"
 
-    .line 2
     invoke-static {v1, v0}, Lcom/bumptech/glide/load/d;->a(Ljava/lang/String;Ljava/lang/Object;)Lcom/bumptech/glide/load/d;
 
     move-result-object v0
@@ -91,10 +88,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/j/y/a;->a:Lcom/bumptech/glide/load/j/m;
 
     return-void
@@ -125,14 +120,12 @@
         }
     .end annotation
 
-    .line 3
     iget-object p2, p0, Lcom/bumptech/glide/load/j/y/a;->a:Lcom/bumptech/glide/load/j/m;
 
     if-eqz p2, :cond_1
 
     const/4 p3, 0x0
 
-    .line 4
     invoke-virtual {p2, p1, p3, p3}, Lcom/bumptech/glide/load/j/m;->a(Ljava/lang/Object;II)Ljava/lang/Object;
 
     move-result-object p2
@@ -141,7 +134,6 @@
 
     if-nez p2, :cond_0
 
-    .line 5
     iget-object p2, p0, Lcom/bumptech/glide/load/j/y/a;->a:Lcom/bumptech/glide/load/j/m;
 
     invoke-virtual {p2, p1, p3, p3, p1}, Lcom/bumptech/glide/load/j/m;->a(Ljava/lang/Object;IILjava/lang/Object;)V
@@ -151,7 +143,6 @@
     :cond_0
     move-object p1, p2
 
-    .line 6
     :cond_1
     :goto_0
     sget-object p2, Lcom/bumptech/glide/load/j/y/a;->b:Lcom/bumptech/glide/load/d;
@@ -166,7 +157,6 @@
 
     move-result p2
 
-    .line 7
     new-instance p3, Lcom/bumptech/glide/load/j/n$a;
 
     new-instance p4, Lcom/bumptech/glide/load/i/j;
@@ -189,7 +179,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/bumptech/glide/load/j/g;
 
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/bumptech/glide/load/j/y/a;->a(Lcom/bumptech/glide/load/j/g;IILcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/j/n$a;
@@ -218,7 +207,6 @@
         .end annotation
     .end param
 
-    .line 2
     check-cast p1, Lcom/bumptech/glide/load/j/g;
 
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/load/j/y/a;->a(Lcom/bumptech/glide/load/j/g;)Z

@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/oned/UPCEReader;
 .super Lcom/google/zxing/oned/UPCEANReader;
-.source "UPCEReader.java"
 
 
 # static fields
@@ -21,7 +20,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/google/zxing/oned/UPCEReader;->MIDDLE_END_PATTERN:[I
@@ -34,7 +32,6 @@
 
     new-array v2, v1, [I
 
-    .line 2
     fill-array-data v2, :array_1
 
     const/4 v3, 0x0
@@ -95,14 +92,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/oned/UPCEANReader;-><init>()V
 
     const/4 v0, 0x4
 
     new-array v0, v0, [I
 
-    .line 2
     iput-object v0, p0, Lcom/google/zxing/oned/UPCEReader;->decodeMiddleCounters:[I
 
     return-void
@@ -121,17 +116,14 @@
 
     const/4 v3, 0x1
 
-    .line 1
     invoke-virtual {p0, v3, v1, v0, v2}, Ljava/lang/String;->getChars(II[CI)V
 
-    .line 2
     new-instance v3, Ljava/lang/StringBuilder;
 
     const/16 v4, 0xc
 
     invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 3
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -140,7 +132,6 @@
 
     const/4 v4, 0x5
 
-    .line 4
     aget-char v5, v0, v4
 
     const-string v6, "00000"
@@ -153,13 +144,10 @@
 
     packed-switch v5, :pswitch_data_0
 
-    .line 5
     invoke-virtual {v3, v0, v2, v4}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
-    .line 6
     invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_0
@@ -167,45 +155,34 @@
     :pswitch_0
     const/4 v4, 0x4
 
-    .line 8
     invoke-virtual {v3, v0, v2, v4}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
-    .line 9
     invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 10
     aget-char v0, v0, v4
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 11
     :pswitch_1
     invoke-virtual {v3, v0, v2, v8}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
-    .line 12
     invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 13
     invoke-virtual {v3, v0, v8, v9}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 14
     :pswitch_2
     invoke-virtual {v3, v0, v2, v9}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
-    .line 15
     invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 16
     invoke-virtual {v3, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 17
     invoke-virtual {v3, v0, v9, v8}, Ljava/lang/StringBuilder;->append([CII)Ljava/lang/StringBuilder;
 
-    .line 18
     :goto_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -215,14 +192,12 @@
 
     if-lt v0, v2, :cond_0
 
-    .line 19
     invoke-virtual {p0, v1}, Ljava/lang/String;->charAt(I)C
 
     move-result p0
 
     invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 20
     :cond_0
     invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -264,7 +239,6 @@
 
     if-ge v2, v3, :cond_1
 
-    .line 1
     sget-object v3, Lcom/google/zxing/oned/UPCEReader;->NUMSYS_AND_CHECK_DIGIT_PATTERNS:[[I
 
     aget-object v3, v3, v1
@@ -277,14 +251,12 @@
 
     int-to-char p1, v1
 
-    .line 2
     invoke-virtual {p0, v0, p1}, Ljava/lang/StringBuilder;->insert(IC)Ljava/lang/StringBuilder;
 
     add-int/lit8 v2, v2, 0x30
 
     int-to-char p1, v2
 
-    .line 3
     invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return-void
@@ -299,7 +271,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_2
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -318,7 +289,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/zxing/oned/UPCEReader;->convertUPCEtoUPCA(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -338,7 +308,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/zxing/oned/UPCEReader;->MIDDLE_END_PATTERN:[I
 
     const/4 v1, 0x1
@@ -358,35 +327,28 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/oned/UPCEReader;->decodeMiddleCounters:[I
 
     const/4 v1, 0x0
 
-    .line 2
     aput v1, v0, v1
 
     const/4 v2, 0x1
 
-    .line 3
     aput v1, v0, v2
 
     const/4 v3, 0x2
 
-    .line 4
     aput v1, v0, v3
 
     const/4 v3, 0x3
 
-    .line 5
     aput v1, v0, v3
 
-    .line 6
     invoke-virtual {p1}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result v3
 
-    .line 7
     aget p2, p2, v2
 
     const/4 v4, 0x0
@@ -400,14 +362,12 @@
 
     if-ge p2, v3, :cond_2
 
-    .line 8
     sget-object v6, Lcom/google/zxing/oned/UPCEANReader;->L_AND_G_PATTERNS:[[I
 
     invoke-static {p1, v0, p2, v6}, Lcom/google/zxing/oned/UPCEANReader;->decodeDigit(Lcom/google/zxing/common/BitArray;[II[[I)I
 
     move-result v6
 
-    .line 9
     rem-int/lit8 v7, v6, 0xa
 
     add-int/lit8 v7, v7, 0x30
@@ -416,7 +376,6 @@
 
     invoke-virtual {p3, v7}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 10
     array-length v7, v0
 
     const/4 v8, 0x0
@@ -448,7 +407,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_2
     invoke-static {p3, v5}, Lcom/google/zxing/oned/UPCEReader;->determineNumSysAndCheckDigit(Ljava/lang/StringBuilder;I)V
 
@@ -458,7 +416,6 @@
 .method getBarcodeFormat()Lcom/google/zxing/BarcodeFormat;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/zxing/BarcodeFormat;->UPC_E:Lcom/google/zxing/BarcodeFormat;
 
     return-object v0

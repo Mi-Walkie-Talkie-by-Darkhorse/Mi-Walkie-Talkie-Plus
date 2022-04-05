@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/j$a;
 .super Ljava/lang/Object;
-.source "NoAlphaItemAnimator.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/adapter/j;Ljava/util/ArrayList;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/j$a;->b:Lcom/ifengyu/intercom/ui/adapter/j;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/adapter/j$a;->a:Ljava/util/ArrayList;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/j$a;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -62,7 +59,6 @@
 
     check-cast v1, Lcom/ifengyu/intercom/ui/adapter/j$j;
 
-    .line 2
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/adapter/j$a;->b:Lcom/ifengyu/intercom/ui/adapter/j;
 
     iget-object v3, v1, Lcom/ifengyu/intercom/ui/adapter/j$j;->a:Landroidx/recyclerview/widget/RecyclerView$y;
@@ -79,13 +75,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/j$a;->a:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/j$a;->b:Lcom/ifengyu/intercom/ui/adapter/j;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/j;->a(Lcom/ifengyu/intercom/ui/adapter/j;)Ljava/util/ArrayList;

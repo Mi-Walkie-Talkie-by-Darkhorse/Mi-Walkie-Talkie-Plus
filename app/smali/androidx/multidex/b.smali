@@ -1,6 +1,5 @@
 .class final Landroidx/multidex/b;
 .super Ljava/lang/Object;
-.source "ZipUtil.java"
 
 
 # annotations
@@ -20,27 +19,23 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/io/RandomAccessFile;
 
     const-string v1, "r"
 
     invoke-direct {v0, p0, v1}, Ljava/io/RandomAccessFile;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 2
     :try_start_0
     invoke-static {v0}, Landroidx/multidex/b;->a(Ljava/io/RandomAccessFile;)Landroidx/multidex/b$a;
 
     move-result-object p0
 
-    .line 3
     invoke-static {v0, p0}, Landroidx/multidex/b;->a(Ljava/io/RandomAccessFile;Landroidx/multidex/b$a;)J
 
     move-result-wide v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->close()V
 
     return-wide v1
@@ -61,22 +56,18 @@
         }
     .end annotation
 
-    .line 18
     new-instance v0, Ljava/util/zip/CRC32;
 
     invoke-direct {v0}, Ljava/util/zip/CRC32;-><init>()V
 
-    .line 19
     iget-wide v1, p1, Landroidx/multidex/b$a;->b:J
 
-    .line 20
     iget-wide v3, p1, Landroidx/multidex/b$a;->a:J
 
     invoke-virtual {p0, v3, v4}, Ljava/io/RandomAccessFile;->seek(J)V
 
     const-wide/16 v3, 0x4000
 
-    .line 21
     invoke-static {v3, v4, v1, v2}, Ljava/lang/Math;->min(JJ)J
 
     move-result-wide v5
@@ -89,7 +80,6 @@
 
     const/4 v6, 0x0
 
-    .line 22
     invoke-virtual {p0, v5, v6, p1}, Ljava/io/RandomAccessFile;->read([BII)I
 
     move-result p1
@@ -99,7 +89,6 @@
 
     if-eq p1, v7, :cond_1
 
-    .line 23
     invoke-virtual {v0, v5, v6, p1}, Ljava/util/zip/CRC32;->update([BII)V
 
     int-to-long v7, p1
@@ -114,7 +103,6 @@
 
     goto :goto_1
 
-    .line 24
     :cond_0
     invoke-static {v3, v4, v1, v2}, Ljava/lang/Math;->min(JJ)J
 
@@ -122,14 +110,12 @@
 
     long-to-int p1, v7
 
-    .line 25
     invoke-virtual {p0, v5, v6, p1}, Ljava/io/RandomAccessFile;->read([BII)I
 
     move-result p1
 
     goto :goto_0
 
-    .line 26
     :cond_1
     :goto_1
     invoke-virtual {v0}, Ljava/util/zip/CRC32;->getValue()J
@@ -148,7 +134,6 @@
         }
     .end annotation
 
-    .line 5
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->length()J
 
     move-result-wide v0
@@ -179,16 +164,13 @@
     :goto_0
     const v4, 0x6054b50
 
-    .line 6
     invoke-static {v4}, Ljava/lang/Integer;->reverseBytes(I)I
 
     move-result v4
 
-    .line 7
     :goto_1
     invoke-virtual {p0, v0, v1}, Ljava/io/RandomAccessFile;->seek(J)V
 
-    .line 8
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->readInt()I
 
     move-result v5
@@ -197,24 +179,18 @@
 
     const/4 v0, 0x2
 
-    .line 9
     invoke-virtual {p0, v0}, Ljava/io/RandomAccessFile;->skipBytes(I)I
 
-    .line 10
     invoke-virtual {p0, v0}, Ljava/io/RandomAccessFile;->skipBytes(I)I
 
-    .line 11
     invoke-virtual {p0, v0}, Ljava/io/RandomAccessFile;->skipBytes(I)I
 
-    .line 12
     invoke-virtual {p0, v0}, Ljava/io/RandomAccessFile;->skipBytes(I)I
 
-    .line 13
     new-instance v0, Landroidx/multidex/b$a;
 
     invoke-direct {v0}, Landroidx/multidex/b$a;-><init>()V
 
-    .line 14
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->readInt()I
 
     move-result v1
@@ -231,7 +207,6 @@
 
     iput-wide v1, v0, Landroidx/multidex/b$a;->b:J
 
-    .line 15
     invoke-virtual {p0}, Ljava/io/RandomAccessFile;->readInt()I
 
     move-result p0
@@ -259,7 +234,6 @@
 
     goto :goto_1
 
-    .line 16
     :cond_2
     new-instance p0, Ljava/util/zip/ZipException;
 
@@ -269,7 +243,6 @@
 
     throw p0
 
-    .line 17
     :cond_3
     new-instance v0, Ljava/util/zip/ZipException;
 

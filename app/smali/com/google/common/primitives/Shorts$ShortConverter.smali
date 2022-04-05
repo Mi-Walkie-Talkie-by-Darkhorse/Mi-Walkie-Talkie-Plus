@@ -1,6 +1,5 @@
 .class final Lcom/google/common/primitives/Shorts$ShortConverter;
 .super Lcom/google/common/base/Converter;
-.source "Shorts.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -37,7 +36,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/primitives/Shorts$ShortConverter;
 
     invoke-direct {v0}, Lcom/google/common/primitives/Shorts$ShortConverter;-><init>()V
@@ -50,7 +48,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/base/Converter;-><init>()V
 
     return-void
@@ -59,7 +56,6 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/primitives/Shorts$ShortConverter;->INSTANCE:Lcom/google/common/primitives/Shorts$ShortConverter;
 
     return-object v0
@@ -70,7 +66,6 @@
 .method protected bridge synthetic doBackward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Short;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Shorts$ShortConverter;->doBackward(Ljava/lang/Short;)Ljava/lang/String;
@@ -83,7 +78,6 @@
 .method protected doBackward(Ljava/lang/Short;)Ljava/lang/String;
     .locals 0
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Short;->toString()Ljava/lang/String;
 
     move-result-object p1
@@ -94,7 +88,6 @@
 .method protected bridge synthetic doForward(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Lcom/google/common/primitives/Shorts$ShortConverter;->doForward(Ljava/lang/String;)Ljava/lang/Short;
@@ -107,7 +100,6 @@
 .method protected doForward(Ljava/lang/String;)Ljava/lang/Short;
     .locals 0
 
-    .line 2
     invoke-static {p1}, Ljava/lang/Short;->decode(Ljava/lang/String;)Ljava/lang/Short;
 
     move-result-object p1

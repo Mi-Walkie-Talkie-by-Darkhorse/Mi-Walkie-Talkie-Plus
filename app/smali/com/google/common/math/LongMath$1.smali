@@ -1,6 +1,5 @@
 .class synthetic Lcom/google/common/math/LongMath$1;
 .super Ljava/lang/Object;
-.source "LongMath.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Ljava/math/RoundingMode;->values()[Ljava/math/RoundingMode;
 
     move-result-object v0

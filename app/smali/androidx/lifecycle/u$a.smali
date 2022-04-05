@@ -1,6 +1,5 @@
 .class Landroidx/lifecycle/u$a;
 .super Ljava/lang/Object;
-.source "ServiceLifecycleDispatcher.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -33,18 +32,14 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-boolean v0, p0, Landroidx/lifecycle/u$a;->c:Z
 
-    .line 3
     iput-object p1, p0, Landroidx/lifecycle/u$a;->a:Landroidx/lifecycle/l;
 
-    .line 4
     iput-object p2, p0, Landroidx/lifecycle/u$a;->b:Landroidx/lifecycle/Lifecycle$Event;
 
     return-void
@@ -55,12 +50,10 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-boolean v0, p0, Landroidx/lifecycle/u$a;->c:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/lifecycle/u$a;->a:Landroidx/lifecycle/l;
 
     iget-object v1, p0, Landroidx/lifecycle/u$a;->b:Landroidx/lifecycle/Lifecycle$Event;
@@ -69,7 +62,6 @@
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Landroidx/lifecycle/u$a;->c:Z
 
     :cond_0

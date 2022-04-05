@@ -1,6 +1,5 @@
 .class public abstract Landroidx/fragment/app/FragmentHostCallback;
 .super Landroidx/fragment/app/FragmentContainer;
-.source "FragmentHostCallback.java"
 
 
 # annotations
@@ -51,22 +50,18 @@
         .end annotation
     .end param
 
-    .line 3
     invoke-direct {p0}, Landroidx/fragment/app/FragmentContainer;-><init>()V
 
-    .line 4
     new-instance v0, Landroidx/fragment/app/FragmentManagerImpl;
 
     invoke-direct {v0}, Landroidx/fragment/app/FragmentManagerImpl;-><init>()V
 
     iput-object v0, p0, Landroidx/fragment/app/FragmentHostCallback;->mFragmentManager:Landroidx/fragment/app/FragmentManager;
 
-    .line 5
     iput-object p1, p0, Landroidx/fragment/app/FragmentHostCallback;->mActivity:Landroid/app/Activity;
 
     const-string p1, "context == null"
 
-    .line 6
     invoke-static {p2, p1}, Landroidx/core/d/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p2, Landroid/content/Context;
@@ -75,14 +70,12 @@
 
     const-string p1, "handler == null"
 
-    .line 7
     invoke-static {p3, p1}, Landroidx/core/d/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     check-cast p3, Landroid/os/Handler;
 
     iput-object p3, p0, Landroidx/fragment/app/FragmentHostCallback;->mHandler:Landroid/os/Handler;
 
-    .line 8
     iput p4, p0, Landroidx/fragment/app/FragmentHostCallback;->mWindowAnimations:I
 
     return-void
@@ -99,7 +92,6 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Landroid/app/Activity;
 
     if-eqz v0, :cond_0
@@ -126,7 +118,6 @@
         .end annotation
     .end param
 
-    .line 2
     new-instance v0, Landroid/os/Handler;
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
@@ -145,7 +136,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/fragment/app/FragmentHostCallback;->mActivity:Landroid/app/Activity;
 
     return-object v0
@@ -156,7 +146,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/fragment/app/FragmentHostCallback;->mContext:Landroid/content/Context;
 
     return-object v0
@@ -167,7 +156,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/fragment/app/FragmentHostCallback;->mHandler:Landroid/os/Handler;
 
     return-object v0
@@ -221,7 +209,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/fragment/app/FragmentHostCallback;->mContext:Landroid/content/Context;
 
     invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -234,7 +221,6 @@
 .method public onGetWindowAnimations()I
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/fragment/app/FragmentHostCallback;->mWindowAnimations:I
 
     return v0
@@ -312,7 +298,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, p2, p3, v0}, Landroidx/fragment/app/FragmentHostCallback;->onStartActivityFromFragment(Landroidx/fragment/app/Fragment;Landroid/content/Intent;ILandroid/os/Bundle;)V
 
     return-void
@@ -340,14 +325,12 @@
 
     if-ne p3, p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Landroidx/fragment/app/FragmentHostCallback;->mContext:Landroid/content/Context;
 
     invoke-static {p1, p2, p4}, Landroidx/core/content/b;->a(Landroid/content/Context;Landroid/content/Intent;Landroid/os/Bundle;)V
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -396,7 +379,6 @@
 
     move-object v0, p0
 
-    .line 1
     iget-object v1, v0, Landroidx/fragment/app/FragmentHostCallback;->mActivity:Landroid/app/Activity;
 
     move-object v2, p2
@@ -420,7 +402,6 @@
     :cond_0
     move-object v0, p0
 
-    .line 2
     new-instance v1, Ljava/lang/IllegalStateException;
 
     const-string v2, "Starting intent sender with a requestCode requires a FragmentActivity host"

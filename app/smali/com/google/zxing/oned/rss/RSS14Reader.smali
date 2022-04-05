@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/oned/rss/RSS14Reader;
 .super Lcom/google/zxing/oned/rss/AbstractRSSReader;
-.source "RSS14Reader.java"
 
 
 # static fields
@@ -49,7 +48,6 @@
 
     new-array v1, v0, [I
 
-    .line 1
     fill-array-data v1, :array_0
 
     sput-object v1, Lcom/google/zxing/oned/rss/RSS14Reader;->OUTSIDE_EVEN_TOTAL_SUBSET:[I
@@ -58,35 +56,30 @@
 
     new-array v2, v1, [I
 
-    .line 2
     fill-array-data v2, :array_1
 
     sput-object v2, Lcom/google/zxing/oned/rss/RSS14Reader;->INSIDE_ODD_TOTAL_SUBSET:[I
 
     new-array v2, v0, [I
 
-    .line 3
     fill-array-data v2, :array_2
 
     sput-object v2, Lcom/google/zxing/oned/rss/RSS14Reader;->OUTSIDE_GSUM:[I
 
     new-array v2, v1, [I
 
-    .line 4
     fill-array-data v2, :array_3
 
     sput-object v2, Lcom/google/zxing/oned/rss/RSS14Reader;->INSIDE_GSUM:[I
 
     new-array v2, v0, [I
 
-    .line 5
     fill-array-data v2, :array_4
 
     sput-object v2, Lcom/google/zxing/oned/rss/RSS14Reader;->OUTSIDE_ODD_WIDEST:[I
 
     new-array v2, v1, [I
 
-    .line 6
     fill-array-data v2, :array_5
 
     sput-object v2, Lcom/google/zxing/oned/rss/RSS14Reader;->INSIDE_ODD_WIDEST:[I
@@ -97,7 +90,6 @@
 
     new-array v3, v1, [I
 
-    .line 7
     fill-array-data v3, :array_6
 
     const/4 v4, 0x0
@@ -295,17 +287,14 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/google/zxing/oned/rss/RSS14Reader;->possibleLeftPairs:Ljava/util/List;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -335,7 +324,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 1
     invoke-interface {p0}, Ljava/util/Collection;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -353,7 +341,6 @@
 
     check-cast v2, Lcom/google/zxing/oned/rss/Pair;
 
-    .line 2
     invoke-virtual {v2}, Lcom/google/zxing/oned/rss/DataCharacter;->getValue()I
 
     move-result v3
@@ -364,7 +351,6 @@
 
     if-ne v3, v4, :cond_1
 
-    .line 3
     invoke-virtual {v2}, Lcom/google/zxing/oned/rss/Pair;->incrementCount()V
 
     const/4 v0, 0x1
@@ -372,7 +358,6 @@
     :cond_2
     if-nez v0, :cond_3
 
-    .line 4
     invoke-interface {p0, p1}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
 
     :cond_3
@@ -387,7 +372,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getOddCounts()[I
 
     move-result-object v0
@@ -396,7 +380,6 @@
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getEvenCounts()[I
 
     move-result-object v1
@@ -535,7 +518,6 @@
 
     goto :goto_b
 
-    .line 3
     :cond_a
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -553,7 +535,6 @@
 
     goto :goto_b
 
-    .line 4
     :cond_c
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -572,7 +553,6 @@
 
     goto :goto_b
 
-    .line 5
     :cond_e
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -589,7 +569,6 @@
 
     goto :goto_b
 
-    .line 6
     :cond_10
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -615,7 +594,6 @@
 
     goto :goto_9
 
-    .line 7
     :cond_13
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -633,7 +611,6 @@
 
     if-nez v7, :cond_15
 
-    .line 8
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getOddCounts()[I
 
     move-result-object p1
@@ -646,7 +623,6 @@
 
     goto :goto_c
 
-    .line 9
     :cond_15
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -658,7 +634,6 @@
     :goto_c
     if-eqz v7, :cond_17
 
-    .line 10
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getOddCounts()[I
 
     move-result-object p1
@@ -674,7 +649,6 @@
 
     if-nez v5, :cond_18
 
-    .line 11
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getEvenCounts()[I
 
     move-result-object p1
@@ -687,7 +661,6 @@
 
     goto :goto_d
 
-    .line 12
     :cond_18
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -699,7 +672,6 @@
     :goto_d
     if-eqz v5, :cond_1a
 
-    .line 13
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getEvenCounts()[I
 
     move-result-object p1
@@ -713,7 +685,6 @@
     :cond_1a
     return-void
 
-    .line 14
     :cond_1b
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -721,7 +692,6 @@
 
     throw p1
 
-    .line 15
     :cond_1c
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -733,7 +703,6 @@
 .method private static checkChecksum(Lcom/google/zxing/oned/rss/Pair;Lcom/google/zxing/oned/rss/Pair;)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/DataCharacter;->getChecksumPortion()I
 
     move-result v0
@@ -748,7 +717,6 @@
 
     rem-int/lit8 v0, v0, 0x4f
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/Pair;->getFinderPattern()Lcom/google/zxing/oned/rss/FinderPattern;
 
     move-result-object p0
@@ -798,7 +766,6 @@
 .method private static constructResult(Lcom/google/zxing/oned/rss/Pair;Lcom/google/zxing/oned/rss/Pair;)Lcom/google/zxing/Result;
     .locals 8
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/DataCharacter;->getValue()I
 
     move-result v0
@@ -817,19 +784,16 @@
 
     add-long/2addr v0, v2
 
-    .line 2
     invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
     const/16 v2, 0xe
 
     invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v2
@@ -843,14 +807,12 @@
 
     if-lez v2, :cond_0
 
-    .line 5
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     add-int/lit8 v2, v2, -0x1
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -863,7 +825,6 @@
     :goto_1
     if-ge v2, v3, :cond_2
 
-    .line 7
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->charAt(I)C
 
     move-result v6
@@ -886,7 +847,6 @@
     :cond_2
     const/16 v2, 0xa
 
-    .line 8
     rem-int/2addr v5, v2
 
     rsub-int/lit8 v3, v5, 0xa
@@ -895,11 +855,9 @@
 
     const/4 v3, 0x0
 
-    .line 9
     :cond_3
     invoke-virtual {v1, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 10
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/Pair;->getFinderPattern()Lcom/google/zxing/oned/rss/FinderPattern;
 
     move-result-object p0
@@ -908,7 +866,6 @@
 
     move-result-object p0
 
-    .line 11
     invoke-virtual {p1}, Lcom/google/zxing/oned/rss/Pair;->getFinderPattern()Lcom/google/zxing/oned/rss/FinderPattern;
 
     move-result-object p1
@@ -917,10 +874,8 @@
 
     move-result-object p1
 
-    .line 12
     new-instance v2, Lcom/google/zxing/Result;
 
-    .line 13
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v1
@@ -972,54 +927,44 @@
 
     move/from16 v1, p3
 
-    .line 1
     invoke-virtual/range {p0 .. p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getDataCharacterCounters()[I
 
     move-result-object v2
 
     const/4 v3, 0x0
 
-    .line 2
     aput v3, v2, v3
 
     const/4 v4, 0x1
 
-    .line 3
     aput v3, v2, v4
 
     const/4 v5, 0x2
 
-    .line 4
     aput v3, v2, v5
 
     const/4 v6, 0x3
 
-    .line 5
     aput v3, v2, v6
 
     const/4 v7, 0x4
 
-    .line 6
     aput v3, v2, v7
 
     const/4 v8, 0x5
 
-    .line 7
     aput v3, v2, v8
 
     const/4 v8, 0x6
 
-    .line 8
     aput v3, v2, v8
 
     const/4 v8, 0x7
 
-    .line 9
     aput v3, v2, v8
 
     if-eqz v1, :cond_0
 
-    .line 10
     invoke-virtual/range {p2 .. p2}, Lcom/google/zxing/oned/rss/FinderPattern;->getStartEnd()[I
 
     move-result-object v8
@@ -1030,7 +975,6 @@
 
     goto :goto_1
 
-    .line 11
     :cond_0
     invoke-virtual/range {p2 .. p2}, Lcom/google/zxing/oned/rss/FinderPattern;->getStartEnd()[I
 
@@ -1042,7 +986,6 @@
 
     invoke-static {v0, v8, v2}, Lcom/google/zxing/oned/OneDReader;->recordPattern(Lcom/google/zxing/common/BitArray;I[I)V
 
-    .line 12
     array-length v0, v2
 
     sub-int/2addr v0, v4
@@ -1052,15 +995,12 @@
     :goto_0
     if-ge v8, v0, :cond_1
 
-    .line 13
     aget v9, v2, v8
 
-    .line 14
     aget v10, v2, v0
 
     aput v10, v2, v8
 
-    .line 15
     aput v9, v2, v0
 
     add-int/lit8 v8, v8, 0x1
@@ -1080,7 +1020,6 @@
     :cond_2
     const/16 v0, 0xf
 
-    .line 16
     :goto_2
     invoke-static {v2}, Lcom/google/zxing/common/detector/MathUtils;->sum([I)I
 
@@ -1092,35 +1031,29 @@
 
     div-float/2addr v8, v9
 
-    .line 17
     invoke-virtual/range {p0 .. p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getOddCounts()[I
 
     move-result-object v9
 
-    .line 18
     invoke-virtual/range {p0 .. p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getEvenCounts()[I
 
     move-result-object v10
 
-    .line 19
     invoke-virtual/range {p0 .. p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getOddRoundingErrors()[F
 
     move-result-object v11
 
-    .line 20
     invoke-virtual/range {p0 .. p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getEvenRoundingErrors()[F
 
     move-result-object v12
 
     const/4 v13, 0x0
 
-    .line 21
     :goto_3
     array-length v14, v2
 
     if-ge v13, v14, :cond_6
 
-    .line 22
     aget v14, v2, v13
 
     int-to-float v14, v14
@@ -1146,7 +1079,6 @@
 
     const/16 v15, 0x8
 
-    .line 23
     :cond_4
     :goto_4
     div-int/lit8 v3, v13, 0x2
@@ -1155,19 +1087,16 @@
 
     if-nez v16, :cond_5
 
-    .line 24
     aput v15, v9, v3
 
     int-to-float v15, v15
 
     sub-float/2addr v14, v15
 
-    .line 25
     aput v14, v11, v3
 
     goto :goto_5
 
-    .line 26
     :cond_5
     aput v15, v10, v3
 
@@ -1175,7 +1104,6 @@
 
     sub-float/2addr v14, v15
 
-    .line 27
     aput v14, v12, v3
 
     :goto_5
@@ -1188,10 +1116,8 @@
     :cond_6
     move-object/from16 v3, p0
 
-    .line 28
     invoke-direct {v3, v1, v0}, Lcom/google/zxing/oned/rss/RSS14Reader;->adjustOddEvenCounts(ZI)V
 
-    .line 29
     array-length v0, v9
 
     sub-int/2addr v0, v4
@@ -1205,12 +1131,10 @@
 
     mul-int/lit8 v2, v2, 0x9
 
-    .line 30
     aget v11, v9, v0
 
     add-int/2addr v2, v11
 
-    .line 31
     aget v11, v9, v0
 
     add-int/2addr v8, v11
@@ -1219,7 +1143,6 @@
 
     goto :goto_6
 
-    .line 32
     :cond_7
     array-length v0, v10
 
@@ -1234,12 +1157,10 @@
 
     mul-int/lit8 v11, v11, 0x9
 
-    .line 33
     aget v13, v10, v0
 
     add-int/2addr v11, v13
 
-    .line 34
     aget v13, v10, v0
 
     add-int/2addr v12, v13
@@ -1267,10 +1188,8 @@
 
     sub-int/2addr v0, v8
 
-    .line 35
     div-int/2addr v0, v5
 
-    .line 36
     sget-object v1, Lcom/google/zxing/oned/rss/RSS14Reader;->OUTSIDE_ODD_WIDEST:[I
 
     aget v1, v1, v0
@@ -1279,27 +1198,22 @@
 
     const/4 v6, 0x0
 
-    .line 37
     invoke-static {v9, v1, v6}, Lcom/google/zxing/oned/rss/RSSUtils;->getRSSvalue([IIZ)I
 
     move-result v1
 
-    .line 38
     invoke-static {v10, v5, v4}, Lcom/google/zxing/oned/rss/RSSUtils;->getRSSvalue([IIZ)I
 
     move-result v4
 
-    .line 39
     sget-object v5, Lcom/google/zxing/oned/rss/RSS14Reader;->OUTSIDE_EVEN_TOTAL_SUBSET:[I
 
     aget v5, v5, v0
 
-    .line 40
     sget-object v6, Lcom/google/zxing/oned/rss/RSS14Reader;->OUTSIDE_GSUM:[I
 
     aget v0, v6, v0
 
-    .line 41
     new-instance v6, Lcom/google/zxing/oned/rss/DataCharacter;
 
     mul-int v1, v1, v5
@@ -1312,7 +1226,6 @@
 
     return-object v6
 
-    .line 42
     :cond_9
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -1333,39 +1246,32 @@
 
     sub-int/2addr v0, v12
 
-    .line 43
     div-int/2addr v0, v5
 
-    .line 44
     sget-object v1, Lcom/google/zxing/oned/rss/RSS14Reader;->INSIDE_ODD_WIDEST:[I
 
     aget v1, v1, v0
 
     rsub-int/lit8 v5, v1, 0x9
 
-    .line 45
     invoke-static {v9, v1, v4}, Lcom/google/zxing/oned/rss/RSSUtils;->getRSSvalue([IIZ)I
 
     move-result v1
 
     const/4 v4, 0x0
 
-    .line 46
     invoke-static {v10, v5, v4}, Lcom/google/zxing/oned/rss/RSSUtils;->getRSSvalue([IIZ)I
 
     move-result v4
 
-    .line 47
     sget-object v5, Lcom/google/zxing/oned/rss/RSS14Reader;->INSIDE_ODD_TOTAL_SUBSET:[I
 
     aget v5, v5, v0
 
-    .line 48
     sget-object v6, Lcom/google/zxing/oned/rss/RSS14Reader;->INSIDE_GSUM:[I
 
     aget v0, v6, v0
 
-    .line 49
     new-instance v6, Lcom/google/zxing/oned/rss/DataCharacter;
 
     mul-int v4, v4, v5
@@ -1378,7 +1284,6 @@
 
     return-object v6
 
-    .line 50
     :cond_b
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -1403,13 +1308,11 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-direct {p0, p1, p2}, Lcom/google/zxing/oned/rss/RSS14Reader;->findFinderPattern(Lcom/google/zxing/common/BitArray;Z)[I
 
     move-result-object v1
 
-    .line 2
     invoke-direct {p0, p1, p3, p2, v1}, Lcom/google/zxing/oned/rss/RSS14Reader;->parseFoundFinderPattern(Lcom/google/zxing/common/BitArray;IZ[I)Lcom/google/zxing/oned/rss/FinderPattern;
 
     move-result-object v2
@@ -1420,11 +1323,9 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     sget-object v3, Lcom/google/zxing/DecodeHintType;->NEED_RESULT_POINT_CALLBACK:Lcom/google/zxing/DecodeHintType;
 
-    .line 4
     invoke-interface {p4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p4
@@ -1438,7 +1339,6 @@
 
     if-eqz p4, :cond_2
 
-    .line 5
     aget v5, v1, v3
 
     aget v1, v1, v4
@@ -1453,7 +1353,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 6
     invoke-virtual {p1}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result p2
@@ -1464,7 +1363,6 @@
 
     sub-float v1, p2, v1
 
-    .line 7
     :cond_1
     new-instance p2, Lcom/google/zxing/ResultPoint;
 
@@ -1474,18 +1372,15 @@
 
     invoke-interface {p4, p2}, Lcom/google/zxing/ResultPointCallback;->foundPossibleResultPoint(Lcom/google/zxing/ResultPoint;)V
 
-    .line 8
     :cond_2
     invoke-direct {p0, p1, v2, v4}, Lcom/google/zxing/oned/rss/RSS14Reader;->decodeDataCharacter(Lcom/google/zxing/common/BitArray;Lcom/google/zxing/oned/rss/FinderPattern;Z)Lcom/google/zxing/oned/rss/DataCharacter;
 
     move-result-object p2
 
-    .line 9
     invoke-direct {p0, p1, v2, v3}, Lcom/google/zxing/oned/rss/RSS14Reader;->decodeDataCharacter(Lcom/google/zxing/common/BitArray;Lcom/google/zxing/oned/rss/FinderPattern;Z)Lcom/google/zxing/oned/rss/DataCharacter;
 
     move-result-object p1
 
-    .line 10
     new-instance p3, Lcom/google/zxing/oned/rss/Pair;
 
     invoke-virtual {p2}, Lcom/google/zxing/oned/rss/DataCharacter;->getValue()I
@@ -1500,7 +1395,6 @@
 
     add-int/2addr p4, v1
 
-    .line 11
     invoke-virtual {p2}, Lcom/google/zxing/oned/rss/DataCharacter;->getChecksumPortion()I
 
     move-result p2
@@ -1531,32 +1425,26 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getDecodeFinderCounters()[I
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 2
     aput v1, v0, v1
 
     const/4 v2, 0x1
 
-    .line 3
     aput v1, v0, v2
 
     const/4 v3, 0x2
 
-    .line 4
     aput v1, v0, v3
 
     const/4 v4, 0x3
 
-    .line 5
     aput v1, v0, v4
 
-    .line 6
     invoke-virtual {p1}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result v5
@@ -1568,7 +1456,6 @@
     :goto_0
     if-ge v6, v5, :cond_0
 
-    .line 7
     invoke-virtual {p1, v6}, Lcom/google/zxing/common/BitArray;->get(I)Z
 
     move-result v7
@@ -1589,14 +1476,12 @@
     :goto_1
     if-ge v6, v5, :cond_4
 
-    .line 8
     invoke-virtual {p1, v6}, Lcom/google/zxing/common/BitArray;->get(I)Z
 
     move-result v9
 
     if-eq v9, v7, :cond_1
 
-    .line 9
     aget v9, v0, v8
 
     add-int/2addr v9, v2
@@ -1608,7 +1493,6 @@
     :cond_1
     if-ne v8, v4, :cond_3
 
-    .line 10
     invoke-static {v0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->isFinderPattern([I)Z
 
     move-result v9
@@ -1623,7 +1507,6 @@
 
     return-object p1
 
-    .line 11
     :cond_2
     aget v9, v0, v1
 
@@ -1633,20 +1516,16 @@
 
     add-int/2addr p2, v9
 
-    .line 12
     aget v9, v0, v3
 
     aput v9, v0, v1
 
-    .line 13
     aget v9, v0, v4
 
     aput v9, v0, v2
 
-    .line 14
     aput v1, v0, v3
 
-    .line 15
     aput v1, v0, v4
 
     add-int/lit8 v8, v8, -0x1
@@ -1656,7 +1535,6 @@
     :cond_3
     add-int/lit8 v8, v8, 0x1
 
-    .line 16
     :goto_2
     aput v2, v0, v8
 
@@ -1667,7 +1545,6 @@
 
     goto :goto_1
 
-    .line 17
     :cond_4
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -1686,14 +1563,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget v1, p4, v0
 
     invoke-virtual {p1, v1}, Lcom/google/zxing/common/BitArray;->get(I)Z
 
     move-result v1
 
-    .line 2
     aget v2, p4, v0
 
     const/4 v3, 0x1
@@ -1703,7 +1578,6 @@
     :goto_0
     if-ltz v2, :cond_0
 
-    .line 3
     invoke-virtual {p1, v2}, Lcom/google/zxing/common/BitArray;->get(I)Z
 
     move-result v4
@@ -1717,39 +1591,32 @@
     :cond_0
     add-int/2addr v2, v3
 
-    .line 4
     aget v1, p4, v0
 
     sub-int/2addr v1, v2
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->getDecodeFinderCounters()[I
 
     move-result-object v4
 
-    .line 6
     array-length v5, v4
 
     sub-int/2addr v5, v3
 
     invoke-static {v4, v0, v4, v3, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 7
     aput v1, v4, v0
 
-    .line 8
     sget-object v1, Lcom/google/zxing/oned/rss/RSS14Reader;->FINDER_PATTERNS:[[I
 
     invoke-static {v4, v1}, Lcom/google/zxing/oned/rss/AbstractRSSReader;->parseFinderValue([I[[I)I
 
     move-result v6
 
-    .line 9
     aget v1, p4, v3
 
     if-eqz p3, :cond_1
 
-    .line 10
     invoke-virtual {p1}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result p3
@@ -1758,7 +1625,6 @@
 
     sub-int/2addr p3, v2
 
-    .line 11
     invoke-virtual {p1}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result p1
@@ -1778,7 +1644,6 @@
 
     move v8, v2
 
-    .line 12
     :goto_1
     new-instance p1, Lcom/google/zxing/oned/rss/FinderPattern;
 
@@ -1824,35 +1689,28 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p2, v0, p1, p3}, Lcom/google/zxing/oned/rss/RSS14Reader;->decodePair(Lcom/google/zxing/common/BitArray;ZILjava/util/Map;)Lcom/google/zxing/oned/rss/Pair;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/zxing/oned/rss/RSS14Reader;->possibleLeftPairs:Ljava/util/List;
 
     invoke-static {v1, v0}, Lcom/google/zxing/oned/rss/RSS14Reader;->addOrTally(Ljava/util/Collection;Lcom/google/zxing/oned/rss/Pair;)V
 
-    .line 3
     invoke-virtual {p2}, Lcom/google/zxing/common/BitArray;->reverse()V
 
     const/4 v0, 0x1
 
-    .line 4
     invoke-direct {p0, p2, v0, p1, p3}, Lcom/google/zxing/oned/rss/RSS14Reader;->decodePair(Lcom/google/zxing/common/BitArray;ZILjava/util/Map;)Lcom/google/zxing/oned/rss/Pair;
 
     move-result-object p1
 
-    .line 5
     iget-object p3, p0, Lcom/google/zxing/oned/rss/RSS14Reader;->possibleRightPairs:Ljava/util/List;
 
     invoke-static {p3, p1}, Lcom/google/zxing/oned/rss/RSS14Reader;->addOrTally(Ljava/util/Collection;Lcom/google/zxing/oned/rss/Pair;)V
 
-    .line 6
     invoke-virtual {p2}, Lcom/google/zxing/common/BitArray;->reverse()V
 
-    .line 7
     iget-object p1, p0, Lcom/google/zxing/oned/rss/RSS14Reader;->possibleLeftPairs:Ljava/util/List;
 
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -1872,14 +1730,12 @@
 
     check-cast p2, Lcom/google/zxing/oned/rss/Pair;
 
-    .line 8
     invoke-virtual {p2}, Lcom/google/zxing/oned/rss/Pair;->getCount()I
 
     move-result p3
 
     if-le p3, v0, :cond_0
 
-    .line 9
     iget-object p3, p0, Lcom/google/zxing/oned/rss/RSS14Reader;->possibleRightPairs:Ljava/util/List;
 
     invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -1899,7 +1755,6 @@
 
     check-cast v1, Lcom/google/zxing/oned/rss/Pair;
 
-    .line 10
     invoke-virtual {v1}, Lcom/google/zxing/oned/rss/Pair;->getCount()I
 
     move-result v2
@@ -1912,14 +1767,12 @@
 
     if-eqz v2, :cond_1
 
-    .line 11
     invoke-static {p2, v1}, Lcom/google/zxing/oned/rss/RSS14Reader;->constructResult(Lcom/google/zxing/oned/rss/Pair;Lcom/google/zxing/oned/rss/Pair;)Lcom/google/zxing/Result;
 
     move-result-object p1
 
     return-object p1
 
-    .line 12
     :cond_2
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -1931,12 +1784,10 @@
 .method public reset()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/oned/rss/RSS14Reader;->possibleLeftPairs:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 2
     iget-object v0, p0, Lcom/google/zxing/oned/rss/RSS14Reader;->possibleRightPairs:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V

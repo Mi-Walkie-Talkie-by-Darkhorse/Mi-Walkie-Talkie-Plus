@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/OkDownload$Builder;
 .super Ljava/lang/Object;
-.source "OkDownload.java"
 
 
 # annotations
@@ -42,10 +41,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
@@ -60,38 +57,32 @@
 .method public build()Lcom/liulishuo/okdownload/OkDownload;
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->downloadDispatcher:Lcom/liulishuo/okdownload/core/dispatcher/DownloadDispatcher;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/liulishuo/okdownload/core/dispatcher/DownloadDispatcher;
 
     invoke-direct {v0}, Lcom/liulishuo/okdownload/core/dispatcher/DownloadDispatcher;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->downloadDispatcher:Lcom/liulishuo/okdownload/core/dispatcher/DownloadDispatcher;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->callbackDispatcher:Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;
 
     if-nez v0, :cond_1
 
-    .line 4
     new-instance v0, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;
 
     invoke-direct {v0}, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->callbackDispatcher:Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->downloadStore:Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 
     if-nez v0, :cond_2
 
-    .line 6
     iget-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->context:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/liulishuo/okdownload/core/Util;->createDefaultDatabase(Landroid/content/Context;)Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
@@ -100,59 +91,50 @@
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->downloadStore:Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 
-    .line 7
     :cond_2
     iget-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->connectionFactory:Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Factory;
 
     if-nez v0, :cond_3
 
-    .line 8
     invoke-static {}, Lcom/liulishuo/okdownload/core/Util;->createDefaultConnectionFactory()Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Factory;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->connectionFactory:Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Factory;
 
-    .line 9
     :cond_3
     iget-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->outputStreamFactory:Lcom/liulishuo/okdownload/core/file/DownloadOutputStream$Factory;
 
     if-nez v0, :cond_4
 
-    .line 10
     new-instance v0, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream$Factory;
 
     invoke-direct {v0}, Lcom/liulishuo/okdownload/core/file/DownloadUriOutputStream$Factory;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->outputStreamFactory:Lcom/liulishuo/okdownload/core/file/DownloadOutputStream$Factory;
 
-    .line 11
     :cond_4
     iget-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->processFileStrategy:Lcom/liulishuo/okdownload/core/file/ProcessFileStrategy;
 
     if-nez v0, :cond_5
 
-    .line 12
     new-instance v0, Lcom/liulishuo/okdownload/core/file/ProcessFileStrategy;
 
     invoke-direct {v0}, Lcom/liulishuo/okdownload/core/file/ProcessFileStrategy;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->processFileStrategy:Lcom/liulishuo/okdownload/core/file/ProcessFileStrategy;
 
-    .line 13
     :cond_5
     iget-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->downloadStrategy:Lcom/liulishuo/okdownload/core/download/DownloadStrategy;
 
     if-nez v0, :cond_6
 
-    .line 14
     new-instance v0, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;
 
     invoke-direct {v0}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->downloadStrategy:Lcom/liulishuo/okdownload/core/download/DownloadStrategy;
 
-    .line 15
     :cond_6
     new-instance v0, Lcom/liulishuo/okdownload/OkDownload;
 
@@ -176,12 +158,10 @@
 
     invoke-direct/range {v1 .. v9}, Lcom/liulishuo/okdownload/OkDownload;-><init>(Landroid/content/Context;Lcom/liulishuo/okdownload/core/dispatcher/DownloadDispatcher;Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Factory;Lcom/liulishuo/okdownload/core/file/DownloadOutputStream$Factory;Lcom/liulishuo/okdownload/core/file/ProcessFileStrategy;Lcom/liulishuo/okdownload/core/download/DownloadStrategy;)V
 
-    .line 16
     iget-object v1, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->monitor:Lcom/liulishuo/okdownload/DownloadMonitor;
 
     invoke-virtual {v0, v1}, Lcom/liulishuo/okdownload/OkDownload;->setMonitor(Lcom/liulishuo/okdownload/DownloadMonitor;)V
 
-    .line 17
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -216,7 +196,6 @@
 .method public callbackDispatcher(Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;)Lcom/liulishuo/okdownload/OkDownload$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->callbackDispatcher:Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;
 
     return-object p0
@@ -225,7 +204,6 @@
 .method public connectionFactory(Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Factory;)Lcom/liulishuo/okdownload/OkDownload$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->connectionFactory:Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Factory;
 
     return-object p0
@@ -234,7 +212,6 @@
 .method public downloadDispatcher(Lcom/liulishuo/okdownload/core/dispatcher/DownloadDispatcher;)Lcom/liulishuo/okdownload/OkDownload$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->downloadDispatcher:Lcom/liulishuo/okdownload/core/dispatcher/DownloadDispatcher;
 
     return-object p0
@@ -243,7 +220,6 @@
 .method public downloadStore(Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;)Lcom/liulishuo/okdownload/OkDownload$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->downloadStore:Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 
     return-object p0
@@ -252,7 +228,6 @@
 .method public downloadStrategy(Lcom/liulishuo/okdownload/core/download/DownloadStrategy;)Lcom/liulishuo/okdownload/OkDownload$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->downloadStrategy:Lcom/liulishuo/okdownload/core/download/DownloadStrategy;
 
     return-object p0
@@ -261,7 +236,6 @@
 .method public monitor(Lcom/liulishuo/okdownload/DownloadMonitor;)Lcom/liulishuo/okdownload/OkDownload$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->monitor:Lcom/liulishuo/okdownload/DownloadMonitor;
 
     return-object p0
@@ -270,7 +244,6 @@
 .method public outputStreamFactory(Lcom/liulishuo/okdownload/core/file/DownloadOutputStream$Factory;)Lcom/liulishuo/okdownload/OkDownload$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->outputStreamFactory:Lcom/liulishuo/okdownload/core/file/DownloadOutputStream$Factory;
 
     return-object p0
@@ -279,7 +252,6 @@
 .method public processFileStrategy(Lcom/liulishuo/okdownload/core/file/ProcessFileStrategy;)Lcom/liulishuo/okdownload/OkDownload$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/OkDownload$Builder;->processFileStrategy:Lcom/liulishuo/okdownload/core/file/ProcessFileStrategy;
 
     return-object p0

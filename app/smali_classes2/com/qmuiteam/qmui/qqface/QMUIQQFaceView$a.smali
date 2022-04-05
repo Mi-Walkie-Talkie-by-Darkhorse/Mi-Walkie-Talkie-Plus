@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$a;
 .super Ljava/lang/Object;
-.source "QMUIQQFaceView.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$a;->a:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$a;->a:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;)Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;
@@ -47,7 +44,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$a;->a:Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;->a(Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;)Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView$b;

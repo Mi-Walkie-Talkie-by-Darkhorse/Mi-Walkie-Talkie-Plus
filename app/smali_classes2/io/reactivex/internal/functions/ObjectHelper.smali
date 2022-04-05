@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/functions/ObjectHelper;
 .super Ljava/lang/Object;
-.source "ObjectHelper.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/functions/ObjectHelper$BiObjectPredicate;
 
     invoke-direct {v0}, Lio/reactivex/internal/functions/ObjectHelper$BiObjectPredicate;-><init>()V
@@ -41,10 +39,8 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/IllegalStateException;
 
     const-string v1, "No instances!"
@@ -109,7 +105,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -143,7 +138,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lio/reactivex/internal/functions/ObjectHelper;->EQUALS:Lio/reactivex/functions/BiPredicate;
 
     return-object v0
@@ -154,7 +148,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result p0
@@ -173,7 +166,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 2
     new-instance p0, Ljava/lang/InternalError;
 
     new-instance p1, Ljava/lang/StringBuilder;
@@ -211,7 +203,6 @@
 
     return-object p0
 
-    .line 1
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -227,7 +218,6 @@
 
     return p0
 
-    .line 1
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -263,7 +253,6 @@
 
     return-wide p0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

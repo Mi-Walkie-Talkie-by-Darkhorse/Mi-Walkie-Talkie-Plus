@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/MapView$LayoutParams;
 .super Landroid/view/ViewGroup$LayoutParams;
-.source "MapView.java"
 
 
 # annotations
@@ -48,17 +47,14 @@
 .method public constructor <init>(IILorg/osmdroid/api/IGeoPoint;III)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
     if-eqz p3, :cond_0
 
-    .line 2
     iput-object p3, p0, Lorg/osmdroid/views/MapView$LayoutParams;->geoPoint:Lorg/osmdroid/api/IGeoPoint;
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance p1, Lorg/osmdroid/util/GeoPoint;
 
@@ -68,14 +64,11 @@
 
     iput-object p1, p0, Lorg/osmdroid/views/MapView$LayoutParams;->geoPoint:Lorg/osmdroid/api/IGeoPoint;
 
-    .line 4
     :goto_0
     iput p4, p0, Lorg/osmdroid/views/MapView$LayoutParams;->alignment:I
 
-    .line 5
     iput p5, p0, Lorg/osmdroid/views/MapView$LayoutParams;->offsetX:I
 
-    .line 6
     iput p6, p0, Lorg/osmdroid/views/MapView$LayoutParams;->offsetY:I
 
     return-void
@@ -84,10 +77,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 7
     invoke-direct {p0, p1, p2}, Landroid/view/ViewGroup$LayoutParams;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 8
     new-instance p1, Lorg/osmdroid/util/GeoPoint;
 
     const/4 p2, 0x0
@@ -98,7 +89,6 @@
 
     const/16 p1, 0x8
 
-    .line 9
     iput p1, p0, Lorg/osmdroid/views/MapView$LayoutParams;->alignment:I
 
     return-void
@@ -107,7 +97,6 @@
 .method public constructor <init>(Landroid/view/ViewGroup$LayoutParams;)V
     .locals 0
 
-    .line 10
     invoke-direct {p0, p1}, Landroid/view/ViewGroup$LayoutParams;-><init>(Landroid/view/ViewGroup$LayoutParams;)V
 
     return-void

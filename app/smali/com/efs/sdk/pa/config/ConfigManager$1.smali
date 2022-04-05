@@ -1,6 +1,5 @@
 .class final Lcom/efs/sdk/pa/config/ConfigManager$1;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 # interfaces
 .implements Lcom/efs/sdk/base/observer/IConfigCallback;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/efs/sdk/pa/config/ConfigManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/efs/sdk/pa/config/ConfigManager$1;->a:Lcom/efs/sdk/pa/config/ConfigManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -49,14 +47,12 @@
 
     const-string v0, "apm_patrace_switch_rate"
 
-    .line 1
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lcom/efs/sdk/pa/config/ConfigManager$1;->a:Lcom/efs/sdk/pa/config/ConfigManager;
 

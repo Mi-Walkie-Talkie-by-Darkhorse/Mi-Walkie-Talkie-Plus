@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/util/j;
 .super Ljava/lang/Object;
-.source "QMUISpanHelper.java"
 
 
 # direct methods
@@ -28,7 +27,6 @@
     :cond_0
     const-string v9, "[icon]"
 
-    .line 3
     new-instance v10, Landroid/text/SpannableStringBuilder;
 
     invoke-direct {v10}, Landroid/text/SpannableStringBuilder;-><init>()V
@@ -41,7 +39,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 4
     invoke-virtual/range {p2 .. p2}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v1
@@ -52,15 +49,12 @@
 
     invoke-virtual {v2, v13, v13, v1, v3}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 5
     invoke-virtual {v10, v9}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 6
     invoke-virtual {v10}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result v14
 
-    .line 7
     new-instance v15, Lcom/qmuiteam/qmui/span/b;
 
     const/16 v3, -0x64
@@ -79,22 +73,17 @@
 
     move/from16 v1, p3
 
-    .line 8
     invoke-virtual {v15, v8, v1}, Lcom/qmuiteam/qmui/span/a;->a(Landroid/view/View;I)V
 
-    .line 9
     invoke-virtual {v15, v12}, Lcom/qmuiteam/qmui/span/a;->a(Z)V
 
-    .line 10
     invoke-virtual {v10, v15, v13, v14, v11}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 11
     :cond_1
     invoke-virtual {v10, v0}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     if-eqz v7, :cond_2
 
-    .line 12
     invoke-virtual/range {p5 .. p5}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
 
     move-result v0
@@ -105,20 +94,16 @@
 
     invoke-virtual {v7, v13, v13, v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 13
     invoke-virtual {v10}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result v6
 
-    .line 14
     invoke-virtual {v10, v9}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 15
     invoke-virtual {v10}, Landroid/text/SpannableStringBuilder;->length()I
 
     move-result v9
 
-    .line 16
     new-instance v13, Lcom/qmuiteam/qmui/span/b;
 
     const/16 v2, -0x64
@@ -137,13 +122,10 @@
 
     move/from16 v0, p6
 
-    .line 17
     invoke-virtual {v13, v8, v0}, Lcom/qmuiteam/qmui/span/a;->a(Landroid/view/View;I)V
 
-    .line 18
     invoke-virtual {v13, v12}, Lcom/qmuiteam/qmui/span/a;->a(Z)V
 
-    .line 19
     invoke-virtual {v10, v13, v6, v9, v11}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
     :cond_2
@@ -227,7 +209,6 @@
 
     move-object/from16 v9, p6
 
-    .line 2
     invoke-static/range {v1 .. v9}, Lcom/qmuiteam/qmui/util/j;->a(Ljava/lang/CharSequence;ILandroid/graphics/drawable/Drawable;IILandroid/graphics/drawable/Drawable;IILandroid/view/View;)Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -256,7 +237,6 @@
 
     move-object v6, p5
 
-    .line 1
     invoke-static/range {v0 .. v6}, Lcom/qmuiteam/qmui/util/j;->a(ZILjava/lang/CharSequence;Landroid/graphics/drawable/Drawable;IILandroid/view/View;)Ljava/lang/CharSequence;
 
     move-result-object p0

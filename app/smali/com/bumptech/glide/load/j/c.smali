@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/j/c;
 .super Ljava/lang/Object;
-.source "ByteBufferEncoder.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/a;
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,7 +42,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/bumptech/glide/load/j/c;->a(Ljava/nio/ByteBuffer;Ljava/io/File;Lcom/bumptech/glide/load/e;)Z
@@ -69,7 +66,6 @@
         .end annotation
     .end param
 
-    .line 2
     :try_start_0
     invoke-static {p1, p2}, Lcom/bumptech/glide/util/a;->a(Ljava/nio/ByteBuffer;Ljava/io/File;)V
     :try_end_0
@@ -86,7 +82,6 @@
 
     const-string p3, "ByteBufferEncoder"
 
-    .line 3
     invoke-static {p3, p2}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
 
     move-result p2
@@ -95,7 +90,6 @@
 
     const-string p2, "Failed to write data"
 
-    .line 4
     invoke-static {p3, p2, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_0

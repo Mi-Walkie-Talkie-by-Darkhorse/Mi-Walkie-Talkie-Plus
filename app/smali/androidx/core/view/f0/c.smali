@@ -1,6 +1,5 @@
 .class public final Landroidx/core/view/f0/c;
 .super Ljava/lang/Object;
-.source "InputContentInfoCompat.java"
 
 
 # annotations
@@ -33,17 +32,14 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x19
 
     if-lt v0, v1, :cond_0
 
-    .line 3
     new-instance v0, Landroidx/core/view/f0/c$a;
 
     invoke-direct {v0, p1, p2, p3}, Landroidx/core/view/f0/c$a;-><init>(Landroid/net/Uri;Landroid/content/ClipDescription;Landroid/net/Uri;)V
@@ -52,7 +48,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance v0, Landroidx/core/view/f0/c$b;
 
@@ -71,10 +66,8 @@
         .end annotation
     .end param
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
     iput-object p1, p0, Landroidx/core/view/f0/c;->a:Landroidx/core/view/f0/c$c;
 
     return-void
@@ -95,7 +88,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -105,7 +97,6 @@
 
     return-object v0
 
-    .line 3
     :cond_1
     new-instance v0, Landroidx/core/view/f0/c;
 
@@ -125,7 +116,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c;->a:Landroidx/core/view/f0/c$c;
 
     invoke-interface {v0}, Landroidx/core/view/f0/c$c;->a()Landroid/net/Uri;
@@ -140,7 +130,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c;->a:Landroidx/core/view/f0/c$c;
 
     invoke-interface {v0}, Landroidx/core/view/f0/c$c;->d()Landroid/content/ClipDescription;
@@ -155,7 +144,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c;->a:Landroidx/core/view/f0/c$c;
 
     invoke-interface {v0}, Landroidx/core/view/f0/c$c;->c()Landroid/net/Uri;
@@ -168,7 +156,6 @@
 .method public d()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c;->a:Landroidx/core/view/f0/c$c;
 
     invoke-interface {v0}, Landroidx/core/view/f0/c$c;->b()V
@@ -181,7 +168,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/f0/c;->a:Landroidx/core/view/f0/c$c;
 
     invoke-interface {v0}, Landroidx/core/view/f0/c$c;->e()Ljava/lang/Object;

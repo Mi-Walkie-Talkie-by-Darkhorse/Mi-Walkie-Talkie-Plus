@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/IntRange;
 .super Ljava/lang/Object;
-.source "IntRange.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

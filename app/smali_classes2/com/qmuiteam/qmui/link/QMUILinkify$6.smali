@@ -1,6 +1,5 @@
 .class final Lcom/qmuiteam/qmui/link/QMUILinkify$6;
 .super Lcom/qmuiteam/qmui/link/QMUILinkify$StyleableURLSpan;
-.source "QMUILinkify.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Ljava/lang/String;Lcom/qmuiteam/qmui/span/c;Landroid/content/res/ColorStateList;Landroid/content/res/ColorStateList;)V
     .locals 0
 
-    .line 1
     iput-object p3, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$6;->d:Landroid/content/res/ColorStateList;
 
     iput-object p4, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$6;->e:Landroid/content/res/ColorStateList;
@@ -39,7 +37,6 @@
 .method public updateDrawState(Landroid/text/TextPaint;)V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$6;->d:Landroid/content/res/ColorStateList;
 
     const v1, 0x10100a7
@@ -54,14 +51,12 @@
 
     new-array v5, v3, [I
 
-    .line 2
     fill-array-data v5, :array_0
 
     invoke-virtual {v0, v5, v4}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
     move-result v0
 
-    .line 3
     iget-object v5, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$6;->d:Landroid/content/res/ColorStateList;
 
     new-array v6, v2, [I
@@ -72,7 +67,6 @@
 
     move-result v5
 
-    .line 4
     iget-boolean v6, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$StyleableURLSpan;->a:Z
 
     if-eqz v6, :cond_0
@@ -82,7 +76,6 @@
     :cond_0
     iput v0, p1, Landroid/text/TextPaint;->linkColor:I
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$6;->e:Landroid/content/res/ColorStateList;
 
@@ -90,14 +83,12 @@
 
     new-array v3, v3, [I
 
-    .line 6
     fill-array-data v3, :array_1
 
     invoke-virtual {v0, v3, v4}, Landroid/content/res/ColorStateList;->getColorForState([II)I
 
     move-result v0
 
-    .line 7
     iget-object v3, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$6;->e:Landroid/content/res/ColorStateList;
 
     new-array v2, v2, [I
@@ -108,7 +99,6 @@
 
     move-result v1
 
-    .line 8
     iget-boolean v2, p0, Lcom/qmuiteam/qmui/link/QMUILinkify$StyleableURLSpan;->a:Z
 
     if-eqz v2, :cond_2
@@ -118,11 +108,9 @@
     :cond_2
     iput v0, p1, Landroid/text/TextPaint;->bgColor:I
 
-    .line 9
     :cond_3
     invoke-super {p0, p1}, Landroid/text/style/URLSpan;->updateDrawState(Landroid/text/TextPaint;)V
 
-    .line 10
     invoke-virtual {p1, v4}, Landroid/text/TextPaint;->setUnderlineText(Z)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/widget/AdapterViewNothingSelectionEvent;
 .super Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionEvent;
-.source "AdapterViewSelectionEvent.kt"
 
 
 # annotations
@@ -77,7 +76,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/jakewharton/rxbinding3/widget/AdapterViewSelectionEvent;-><init>(Lkotlin/jvm/b/a;)V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewNothingSelectionEvent;->view:Landroid/widget/AdapterView;
@@ -213,7 +211,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AdapterViewNothingSelectionEvent;->view:Landroid/widget/AdapterView;
 
     return-object v0

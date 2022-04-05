@@ -1,13 +1,11 @@
 .class final Lcom/google/zxing/datamatrix/encoder/TextEncoder;
 .super Lcom/google/zxing/datamatrix/encoder/C40Encoder;
-.source "TextEncoder.java"
 
 
 # direct methods
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/datamatrix/encoder/C40Encoder;-><init>()V
 
     return-void
@@ -26,7 +24,6 @@
 
     const/4 p1, 0x3
 
-    .line 1
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return v0
@@ -46,7 +43,6 @@
 
     int-to-char p1, p1
 
-    .line 2
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return v0
@@ -66,7 +62,6 @@
 
     int-to-char p1, p1
 
-    .line 3
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return v0
@@ -82,10 +77,8 @@
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 5
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return v1
@@ -99,14 +92,12 @@
 
     if-gt p1, v3, :cond_4
 
-    .line 6
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     sub-int/2addr p1, v2
 
     int-to-char p1, p1
 
-    .line 7
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return v1
@@ -120,7 +111,6 @@
 
     if-gt p1, v3, :cond_5
 
-    .line 8
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     sub-int/2addr p1, v2
@@ -129,7 +119,6 @@
 
     int-to-char p1, p1
 
-    .line 9
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return v1
@@ -143,7 +132,6 @@
 
     if-gt p1, v3, :cond_6
 
-    .line 10
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     sub-int/2addr p1, v2
@@ -152,7 +140,6 @@
 
     int-to-char p1, p1
 
-    .line 11
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return v1
@@ -162,14 +149,12 @@
 
     if-ne p1, v2, :cond_7
 
-    .line 12
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     sub-int/2addr p1, v2
 
     int-to-char p1, p1
 
-    .line 13
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return v1
@@ -183,7 +168,6 @@
 
     if-gt p1, v3, :cond_8
 
-    .line 14
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     sub-int/2addr p1, v2
@@ -192,7 +176,6 @@
 
     int-to-char p1, p1
 
-    .line 15
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return v1
@@ -206,7 +189,6 @@
 
     if-gt p1, v2, :cond_9
 
-    .line 16
     invoke-virtual {p2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     sub-int/2addr p1, v0
@@ -215,7 +197,6 @@
 
     int-to-char p1, p1
 
-    .line 17
     invoke-virtual {p2, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     return v1
@@ -227,14 +208,12 @@
 
     const-string v2, "\u0001\u001e"
 
-    .line 18
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sub-int/2addr p1, v0
 
     int-to-char p1, p1
 
-    .line 19
     invoke-virtual {p0, p1, p2}, Lcom/google/zxing/datamatrix/encoder/TextEncoder;->encodeChar(CLjava/lang/StringBuilder;)I
 
     move-result p1
@@ -243,7 +222,6 @@
 
     return p1
 
-    .line 20
     :cond_a
     invoke-static {p1}, Lcom/google/zxing/datamatrix/encoder/HighLevelEncoder;->illegalCharacter(C)V
 

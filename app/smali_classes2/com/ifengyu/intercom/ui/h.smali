@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/ui/h;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Landroid/widget/CompoundButton$OnCheckedChangeListener;

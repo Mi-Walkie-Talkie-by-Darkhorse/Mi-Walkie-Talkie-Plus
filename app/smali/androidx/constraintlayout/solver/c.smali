@@ -1,6 +1,5 @@
 .class public Landroidx/constraintlayout/solver/c;
 .super Ljava/lang/Object;
-.source "Cache.java"
 
 
 # instance fields
@@ -41,10 +40,8 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroidx/constraintlayout/solver/g;
 
     const/16 v1, 0x100
@@ -53,14 +50,12 @@
 
     iput-object v0, p0, Landroidx/constraintlayout/solver/c;->a:Landroidx/constraintlayout/solver/f;
 
-    .line 3
     new-instance v0, Landroidx/constraintlayout/solver/g;
 
     invoke-direct {v0, v1}, Landroidx/constraintlayout/solver/g;-><init>(I)V
 
     iput-object v0, p0, Landroidx/constraintlayout/solver/c;->b:Landroidx/constraintlayout/solver/f;
 
-    .line 4
     new-instance v0, Landroidx/constraintlayout/solver/g;
 
     invoke-direct {v0, v1}, Landroidx/constraintlayout/solver/g;-><init>(I)V
@@ -71,7 +66,6 @@
 
     new-array v0, v0, [Landroidx/constraintlayout/solver/SolverVariable;
 
-    .line 5
     iput-object v0, p0, Landroidx/constraintlayout/solver/c;->d:[Landroidx/constraintlayout/solver/SolverVariable;
 
     return-void

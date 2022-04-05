@@ -1,6 +1,5 @@
 .class abstract Lcom/amap/api/col/l3/t$a;
 .super Ljava/lang/Object;
-.source "GLTextureView.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/t$e;
@@ -27,12 +26,10 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/t;[I)V
     .locals 4
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/t$a;->b:Lcom/amap/api/col/l3/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/t$a;->b:Lcom/amap/api/col/l3/t;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/t;->a(Lcom/amap/api/col/l3/t;)I
@@ -118,7 +115,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     iget-object v3, p0, Lcom/amap/api/col/l3/t$a;->a:[I
 
     const/4 v4, 0x0
@@ -139,15 +135,12 @@
 
     const/4 v1, 0x0
 
-    .line 2
     aget v5, v0, v1
 
     if-lez v5, :cond_2
 
-    .line 3
     new-array v7, v5, [Ljavax/microedition/khronos/egl/EGLConfig;
 
-    .line 4
     iget-object v3, p0, Lcom/amap/api/col/l3/t$a;->a:[I
 
     move-object v1, p1
@@ -164,7 +157,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-virtual {p0, p1, p2, v7}, Lcom/amap/api/col/l3/t$a;->a(Ljavax/microedition/khronos/egl/EGL10;Ljavax/microedition/khronos/egl/EGLDisplay;[Ljavax/microedition/khronos/egl/EGLConfig;)Ljavax/microedition/khronos/egl/EGLConfig;
 
     move-result-object p1
@@ -173,7 +165,6 @@
 
     return-object p1
 
-    .line 6
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -183,7 +174,6 @@
 
     throw p1
 
-    .line 7
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -193,7 +183,6 @@
 
     throw p1
 
-    .line 8
     :cond_2
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -203,7 +192,6 @@
 
     throw p1
 
-    .line 9
     :cond_3
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

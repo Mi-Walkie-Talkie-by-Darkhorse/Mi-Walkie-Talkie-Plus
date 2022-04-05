@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableDelay;
 .super Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;
-.source "ObservableDelay.java"
 
 
 # annotations
@@ -45,19 +44,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;-><init>(Lio/reactivex/ObservableSource;)V
 
-    .line 2
     iput-wide p2, p0, Lio/reactivex/internal/operators/observable/ObservableDelay;->delay:J
 
-    .line 3
     iput-object p4, p0, Lio/reactivex/internal/operators/observable/ObservableDelay;->unit:Ljava/util/concurrent/TimeUnit;
 
-    .line 4
     iput-object p5, p0, Lio/reactivex/internal/operators/observable/ObservableDelay;->scheduler:Lio/reactivex/Scheduler;
 
-    .line 5
     iput-boolean p6, p0, Lio/reactivex/internal/operators/observable/ObservableDelay;->delayError:Z
 
     return-void
@@ -75,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/operators/observable/ObservableDelay;->delayError:Z
 
     if-eqz v0, :cond_0
@@ -84,7 +77,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v0, Lio/reactivex/observers/SerializedObserver;
 
@@ -92,7 +84,6 @@
 
     move-object v2, v0
 
-    .line 3
     :goto_0
     iget-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableDelay;->scheduler:Lio/reactivex/Scheduler;
 
@@ -100,7 +91,6 @@
 
     move-result-object v6
 
-    .line 4
     iget-object p1, p0, Lio/reactivex/internal/operators/observable/AbstractObservableWithUpstream;->source:Lio/reactivex/ObservableSource;
 
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableDelay$DelayObserver;

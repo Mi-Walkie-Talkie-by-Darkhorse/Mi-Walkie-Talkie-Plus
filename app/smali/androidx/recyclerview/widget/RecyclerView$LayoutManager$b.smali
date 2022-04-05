@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/RecyclerView$LayoutManager$b;
 .super Ljava/lang/Object;
-.source "RecyclerView.java"
 
 # interfaces
 .implements Landroidx/recyclerview/widget/ViewBoundsCheck$b;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/recyclerview/widget/RecyclerView$LayoutManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutManager$b;->a:Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a()I
     .locals 1
 
-    .line 2
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutManager$b;->a:Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getPaddingTop()I
@@ -51,14 +48,12 @@
 .method public a(Landroid/view/View;)I
     .locals 2
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
 
-    .line 4
     iget-object v1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutManager$b;->a:Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     invoke-virtual {v1, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedTop(Landroid/view/View;)I
@@ -75,7 +70,6 @@
 .method public a(I)Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutManager$b;->a:Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getChildAt(I)Landroid/view/View;
@@ -88,7 +82,6 @@
 .method public b()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutManager$b;->a:Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getHeight()I
@@ -97,7 +90,6 @@
 
     iget-object v1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutManager$b;->a:Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
-    .line 2
     invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getPaddingBottom()I
 
     move-result v1
@@ -110,14 +102,12 @@
 .method public b(Landroid/view/View;)I
     .locals 2
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v0
 
     check-cast v0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
 
-    .line 4
     iget-object v1, p0, Landroidx/recyclerview/widget/RecyclerView$LayoutManager$b;->a:Landroidx/recyclerview/widget/RecyclerView$LayoutManager;
 
     invoke-virtual {v1, p1}, Landroidx/recyclerview/widget/RecyclerView$LayoutManager;->getDecoratedBottom(Landroid/view/View;)I

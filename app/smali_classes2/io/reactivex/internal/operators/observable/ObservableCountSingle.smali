@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableCountSingle;
 .super Lio/reactivex/Single;
-.source "ObservableCountSingle.java"
 
 # interfaces
 .implements Lio/reactivex/internal/fuseable/FuseToObservable;
@@ -50,10 +49,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableCountSingle;->source:Lio/reactivex/ObservableSource;
 
     return-void
@@ -72,7 +69,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableCount;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableCountSingle;->source:Lio/reactivex/ObservableSource;
@@ -98,7 +94,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableCountSingle;->source:Lio/reactivex/ObservableSource;
 
     new-instance v1, Lio/reactivex/internal/operators/observable/ObservableCountSingle$CountObserver;

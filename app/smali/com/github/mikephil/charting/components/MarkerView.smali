@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/components/MarkerView;
 .super Landroid/widget/RelativeLayout;
-.source "MarkerView.java"
 
 # interfaces
 .implements Lcom/github/mikephil/charting/components/d;
@@ -26,7 +25,6 @@
 .method private setupLayoutResource(I)V
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/RelativeLayout;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -39,7 +37,6 @@
 
     move-result-object p1
 
-    .line 2
     new-instance v0, Landroid/widget/RelativeLayout$LayoutParams;
 
     const/4 v1, -0x2
@@ -50,7 +47,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     invoke-static {v0, v0}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v1
@@ -61,7 +57,6 @@
 
     invoke-virtual {p1, v1, v2}, Landroid/view/View;->measure(II)V
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v1
@@ -80,43 +75,36 @@
 .method public a(FF)Lb/a/a/a/g/e;
     .locals 7
 
-    .line 1
     invoke-virtual {p0}, Lcom/github/mikephil/charting/components/MarkerView;->getOffset()Lb/a/a/a/g/e;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/github/mikephil/charting/components/MarkerView;->b:Lb/a/a/a/g/e;
 
     iget v2, v0, Lb/a/a/a/g/e;->c:F
 
     iput v2, v1, Lb/a/a/a/g/e;->c:F
 
-    .line 3
     iget v0, v0, Lb/a/a/a/g/e;->d:F
 
     iput v0, v1, Lb/a/a/a/g/e;->d:F
 
-    .line 4
     invoke-virtual {p0}, Lcom/github/mikephil/charting/components/MarkerView;->getChartView()Lcom/github/mikephil/charting/charts/Chart;
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {p0}, Landroid/widget/RelativeLayout;->getWidth()I
 
     move-result v1
 
     int-to-float v1, v1
 
-    .line 6
     invoke-virtual {p0}, Landroid/widget/RelativeLayout;->getHeight()I
 
     move-result v2
 
     int-to-float v2, v2
 
-    .line 7
     iget-object v3, p0, Lcom/github/mikephil/charting/components/MarkerView;->b:Lb/a/a/a/g/e;
 
     iget v4, v3, Lb/a/a/a/g/e;->c:F
@@ -131,7 +119,6 @@
 
     neg-float p1, p1
 
-    .line 8
     iput p1, v3, Lb/a/a/a/g/e;->c:F
 
     goto :goto_0
@@ -143,7 +130,6 @@
 
     add-float/2addr v3, v4
 
-    .line 9
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getWidth()I
 
     move-result v4
@@ -154,7 +140,6 @@
 
     if-lez v3, :cond_1
 
-    .line 10
     iget-object v3, p0, Lcom/github/mikephil/charting/components/MarkerView;->b:Lb/a/a/a/g/e;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getWidth()I
@@ -169,7 +154,6 @@
 
     iput v4, v3, Lb/a/a/a/g/e;->c:F
 
-    .line 11
     :cond_1
     :goto_0
     iget-object p1, p0, Lcom/github/mikephil/charting/components/MarkerView;->b:Lb/a/a/a/g/e;
@@ -184,7 +168,6 @@
 
     neg-float p2, p2
 
-    .line 12
     iput p2, p1, Lb/a/a/a/g/e;->d:F
 
     goto :goto_1
@@ -196,7 +179,6 @@
 
     add-float/2addr p1, v1
 
-    .line 13
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getHeight()I
 
     move-result v1
@@ -207,7 +189,6 @@
 
     if-lez p1, :cond_3
 
-    .line 14
     iget-object p1, p0, Lcom/github/mikephil/charting/components/MarkerView;->b:Lb/a/a/a/g/e;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getHeight()I
@@ -222,7 +203,6 @@
 
     iput v0, p1, Lb/a/a/a/g/e;->d:F
 
-    .line 15
     :cond_3
     :goto_1
     iget-object p1, p0, Lcom/github/mikephil/charting/components/MarkerView;->b:Lb/a/a/a/g/e;
@@ -233,17 +213,14 @@
 .method public a(Landroid/graphics/Canvas;FF)V
     .locals 3
 
-    .line 20
     invoke-virtual {p0, p2, p3}, Lcom/github/mikephil/charting/components/MarkerView;->a(FF)Lb/a/a/a/g/e;
 
     move-result-object v0
 
-    .line 21
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     move-result v1
 
-    .line 22
     iget v2, v0, Lb/a/a/a/g/e;->c:F
 
     add-float/2addr p2, v2
@@ -254,10 +231,8 @@
 
     invoke-virtual {p1, p2, p3}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 23
     invoke-virtual {p0, p1}, Landroid/widget/RelativeLayout;->draw(Landroid/graphics/Canvas;)V
 
-    .line 24
     invoke-virtual {p1, v1}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
     return-void
@@ -268,20 +243,16 @@
 
     const/4 p1, 0x0
 
-    .line 16
     invoke-static {p1, p1}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result p2
 
-    .line 17
     invoke-static {p1, p1}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v0
 
-    .line 18
     invoke-virtual {p0, p2, v0}, Landroid/widget/RelativeLayout;->measure(II)V
 
-    .line 19
     invoke-virtual {p0}, Landroid/widget/RelativeLayout;->getMeasuredWidth()I
 
     move-result p2
@@ -298,7 +269,6 @@
 .method public getChartView()Lcom/github/mikephil/charting/charts/Chart;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/components/MarkerView;->c:Ljava/lang/ref/WeakReference;
 
     if-nez v0, :cond_0
@@ -321,7 +291,6 @@
 .method public getOffset()Lb/a/a/a/g/e;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/components/MarkerView;->a:Lb/a/a/a/g/e;
 
     return-object v0
@@ -330,7 +299,6 @@
 .method public setChartView(Lcom/github/mikephil/charting/charts/Chart;)V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -343,12 +311,10 @@
 .method public setOffset(FF)V
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/github/mikephil/charting/components/MarkerView;->a:Lb/a/a/a/g/e;
 
     iput p1, v0, Lb/a/a/a/g/e;->c:F
 
-    .line 4
     iput p2, v0, Lb/a/a/a/g/e;->d:F
 
     return-void
@@ -357,12 +323,10 @@
 .method public setOffset(Lb/a/a/a/g/e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/github/mikephil/charting/components/MarkerView;->a:Lb/a/a/a/g/e;
 
     if-nez p1, :cond_0
 
-    .line 2
     new-instance p1, Lb/a/a/a/g/e;
 
     invoke-direct {p1}, Lb/a/a/a/g/e;-><init>()V

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$b;
 .super Lcom/ifengyu/intercom/g/d/l;
-.source "MyInfoSettingActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/g/d/l;-><init>()V
@@ -35,7 +33,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$b;->a(Ljava/lang/String;I)V
@@ -46,12 +43,10 @@
 .method public a(Ljava/lang/String;I)V
     .locals 0
 
-    .line 5
     invoke-static {p1}, Lcom/ifengyu/intercom/network/c;->a(Ljava/lang/String;)Z
 
     move-result p1
 
-    .line 6
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;
 
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;->b(Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;Z)V
@@ -62,14 +57,12 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 0
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;
 
     const/4 p2, 0x0
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;->a(Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;Z)Z
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;->b(Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;Z)V
@@ -80,7 +73,6 @@
 .method public a(Lokhttp3/Request;I)V
     .locals 2
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity$b;->b:Lcom/ifengyu/intercom/ui/activity/MyInfoSettingActivity;
 
     const/4 p2, 0x0

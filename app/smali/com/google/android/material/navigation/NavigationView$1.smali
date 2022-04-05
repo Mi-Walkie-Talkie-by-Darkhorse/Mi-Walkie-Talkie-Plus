@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/navigation/NavigationView$1;
 .super Ljava/lang/Object;
-.source "NavigationView.java"
 
 # interfaces
 .implements Landroidx/appcompat/view/menu/f$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/navigation/NavigationView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/navigation/NavigationView$1;->this$0:Lcom/google/android/material/navigation/NavigationView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onMenuItemSelected(Landroidx/appcompat/view/menu/f;Landroid/view/MenuItem;)Z
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/navigation/NavigationView$1;->this$0:Lcom/google/android/material/navigation/NavigationView;
 
     iget-object p1, p1, Lcom/google/android/material/navigation/NavigationView;->listener:Lcom/google/android/material/navigation/NavigationView$OnNavigationItemSelectedListener;

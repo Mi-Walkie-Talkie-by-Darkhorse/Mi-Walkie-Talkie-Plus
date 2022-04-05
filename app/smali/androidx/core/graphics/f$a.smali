@@ -1,6 +1,5 @@
 .class public Landroidx/core/graphics/f$a;
 .super Landroidx/core/provider/FontsContractCompat$FontRequestCallback;
-.source "TypefaceCompat.java"
 
 
 # annotations
@@ -35,10 +34,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Landroidx/core/provider/FontsContractCompat$FontRequestCallback;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/graphics/f$a;->a:Landroidx/core/content/res/e$a;
 
     return-void
@@ -49,12 +46,10 @@
 .method public a(I)V
     .locals 1
 
-    .line 3
     iget-object v0, p0, Landroidx/core/graphics/f$a;->a:Landroidx/core/content/res/e$a;
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0, p1}, Landroidx/core/content/res/e$a;->onFontRetrievalFailed(I)V
 
     :cond_0
@@ -68,12 +63,10 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/core/graphics/f$a;->a:Landroidx/core/content/res/e$a;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Landroidx/core/content/res/e$a;->onFontRetrieved(Landroid/graphics/Typeface;)V
 
     :cond_0

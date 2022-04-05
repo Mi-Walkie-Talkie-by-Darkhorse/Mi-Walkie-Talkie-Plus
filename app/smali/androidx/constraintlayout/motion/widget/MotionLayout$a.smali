@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/MotionLayout$a;
 .super Ljava/lang/Object;
-.source "MotionLayout.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/constraintlayout/motion/widget/MotionLayout;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$a;->b:Landroidx/constraintlayout/motion/widget/MotionLayout;
 
     iput-object p2, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$a;->a:Landroid/view/View;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$a;->a:Landroid/view/View;
 
     const/4 v1, 0x1

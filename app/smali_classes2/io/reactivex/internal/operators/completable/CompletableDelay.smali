@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/completable/CompletableDelay;
 .super Lio/reactivex/Completable;
-.source "CompletableDelay.java"
 
 
 # annotations
@@ -27,22 +26,16 @@
 .method public constructor <init>(Lio/reactivex/CompletableSource;JLjava/util/concurrent/TimeUnit;Lio/reactivex/Scheduler;Z)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableDelay;->source:Lio/reactivex/CompletableSource;
 
-    .line 3
     iput-wide p2, p0, Lio/reactivex/internal/operators/completable/CompletableDelay;->delay:J
 
-    .line 4
     iput-object p4, p0, Lio/reactivex/internal/operators/completable/CompletableDelay;->unit:Ljava/util/concurrent/TimeUnit;
 
-    .line 5
     iput-object p5, p0, Lio/reactivex/internal/operators/completable/CompletableDelay;->scheduler:Lio/reactivex/Scheduler;
 
-    .line 6
     iput-boolean p6, p0, Lio/reactivex/internal/operators/completable/CompletableDelay;->delayError:Z
 
     return-void
@@ -53,7 +46,6 @@
 .method protected subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableDelay;->source:Lio/reactivex/CompletableSource;
 
     new-instance v8, Lio/reactivex/internal/operators/completable/CompletableDelay$Delay;

@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/animation/ChildrenAlphaProperty;
 .super Landroid/util/Property;
-.source "ChildrenAlphaProperty.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/android/material/animation/ChildrenAlphaProperty;
 
     const-string v1, "childrenAlpha"
@@ -46,7 +44,6 @@
 .method private constructor <init>(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     const-class v0, Ljava/lang/Float;
 
     invoke-direct {p0, v0, p1}, Landroid/util/Property;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
@@ -65,7 +62,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     sget v0, Lcom/google/android/material/R$id;->mtrl_internal_children_alpha_tag:I
 
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->getTag(I)Ljava/lang/Object;
@@ -81,7 +77,6 @@
     :cond_0
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 3
     invoke-static {p1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
 
     move-result-object p1
@@ -98,7 +93,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     check-cast p1, Landroid/view/ViewGroup;
 
     invoke-virtual {p0, p1}, Lcom/google/android/material/animation/ChildrenAlphaProperty;->get(Landroid/view/ViewGroup;)Ljava/lang/Float;
@@ -119,12 +113,10 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-virtual {p2}, Ljava/lang/Float;->floatValue()F
 
     move-result p2
 
-    .line 3
     sget v0, Lcom/google/android/material/R$id;->mtrl_internal_children_alpha_tag:I
 
     invoke-static {p2}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
@@ -133,7 +125,6 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
@@ -143,12 +134,10 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 5
     invoke-virtual {p1, v1}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v2
 
-    .line 6
     invoke-virtual {v2, p2}, Landroid/view/View;->setAlpha(F)V
 
     add-int/lit8 v1, v1, 0x1
@@ -170,7 +159,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Landroid/view/ViewGroup;
 
     check-cast p2, Ljava/lang/Float;

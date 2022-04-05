@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/efs/sdk/base/IConfigRefreshAction;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # virtual methods

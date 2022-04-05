@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$k;
 .super Ljava/lang/Object;
-.source "SharkSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$k;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$k;->a:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$k;->a:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;->hasResult()Z
@@ -53,7 +50,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$k;->a:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;->getResult()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_ST_UERR;
@@ -64,7 +60,6 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$k;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$k;->a:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
@@ -73,7 +68,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$k;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 
@@ -81,7 +75,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$k;->b:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
 

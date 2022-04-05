@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/collect/AbstractMapBasedMultiset;
 .super Lcom/google/common/collect/AbstractMultiset;
-.source "AbstractMapBasedMultiset.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -65,10 +64,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/AbstractMultiset;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -77,7 +74,6 @@
 
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
-    .line 3
     invoke-super {p0}, Lcom/google/common/collect/AbstractMultiset;->size()I
 
     move-result p1
@@ -92,7 +88,6 @@
 .method static synthetic access$000(Lcom/google/common/collect/AbstractMapBasedMultiset;)Ljava/util/Map;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
     return-object p0
@@ -101,7 +96,6 @@
 .method static synthetic access$110(Lcom/google/common/collect/AbstractMapBasedMultiset;)J
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->size:J
 
     const-wide/16 v2, 0x1
@@ -116,7 +110,6 @@
 .method static synthetic access$122(Lcom/google/common/collect/AbstractMapBasedMultiset;J)J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->size:J
 
     sub-long/2addr v0, p1
@@ -135,7 +128,6 @@
 
     return p0
 
-    .line 1
     :cond_0
     invoke-virtual {p0, p1}, Lcom/google/common/collect/Count;->getAndSet(I)I
 
@@ -156,7 +148,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/io/InvalidObjectException;
 
     const-string v1, "Stream data required"
@@ -182,7 +173,6 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultiset;->count(Ljava/lang/Object;)I
 
     move-result p1
@@ -206,7 +196,6 @@
     :goto_0
     new-array v3, v0, [Ljava/lang/Object;
 
-    .line 2
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -217,7 +206,6 @@
 
     invoke-static {v2, v4, v3}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     iget-object v2, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
     invoke-interface {v2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -228,7 +216,6 @@
 
     if-nez v2, :cond_2
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
     new-instance v2, Lcom/google/common/collect/Count;
@@ -239,7 +226,6 @@
 
     goto :goto_2
 
-    .line 5
     :cond_2
     invoke-virtual {v2}, Lcom/google/common/collect/Count;->get()I
 
@@ -267,7 +253,6 @@
     :goto_1
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 6
     invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v3
@@ -278,12 +263,10 @@
 
     invoke-static {v5, v1, v0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 7
     invoke-virtual {v2, p2}, Lcom/google/common/collect/Count;->getAndAdd(I)I
 
     move v1, p1
 
-    .line 8
     :goto_2
     iget-wide v2, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->size:J
 
@@ -299,7 +282,6 @@
 .method public clear()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
@@ -325,12 +307,10 @@
 
     const/4 v2, 0x0
 
-    .line 2
     invoke-virtual {v1, v2}, Lcom/google/common/collect/Count;->set(I)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
@@ -338,7 +318,6 @@
 
     const-wide/16 v0, 0x0
 
-    .line 4
     iput-wide v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->size:J
 
     return-void
@@ -351,7 +330,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
     invoke-static {v0, p1}, Lcom/google/common/collect/Maps;->safeGet(Ljava/util/Map;Ljava/lang/Object;)Ljava/lang/Object;
@@ -366,7 +344,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Lcom/google/common/collect/Count;->get()I
 
@@ -379,7 +356,6 @@
 .method distinctElements()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
@@ -400,7 +376,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -411,7 +386,6 @@
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Lcom/google/common/collect/AbstractMapBasedMultiset$1;
 
     invoke-direct {v1, p0, v0}, Lcom/google/common/collect/AbstractMapBasedMultiset$1;-><init>(Lcom/google/common/collect/AbstractMapBasedMultiset;Ljava/util/Iterator;)V
@@ -430,7 +404,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0}, Lcom/google/common/collect/AbstractMultiset;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -448,7 +421,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/AbstractMapBasedMultiset$MapBasedMultisetIterator;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/AbstractMapBasedMultiset$MapBasedMultisetIterator;-><init>(Lcom/google/common/collect/AbstractMapBasedMultiset;)V
@@ -465,7 +437,6 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/AbstractMapBasedMultiset;->count(Ljava/lang/Object;)I
 
     move-result p1
@@ -489,7 +460,6 @@
     :goto_0
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 2
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -500,7 +470,6 @@
 
     invoke-static {v2, v3, v0}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -513,7 +482,6 @@
 
     return v1
 
-    .line 4
     :cond_2
     invoke-virtual {v0}, Lcom/google/common/collect/Count;->get()I
 
@@ -523,7 +491,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_3
     iget-object p2, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
@@ -534,10 +501,8 @@
     :goto_1
     neg-int p1, p2
 
-    .line 6
     invoke-virtual {v0, p1}, Lcom/google/common/collect/Count;->addAndGet(I)I
 
-    .line 7
     iget-wide v2, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->size:J
 
     int-to-long p1, p2
@@ -561,7 +526,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
     return-void
@@ -581,12 +545,10 @@
 
     const-string v0, "count"
 
-    .line 1
     invoke-static {p2, v0}, Lcom/google/common/collect/CollectPreconditions;->checkNonnegative(ILjava/lang/String;)I
 
     if-nez p2, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -595,14 +557,12 @@
 
     check-cast p1, Lcom/google/common/collect/Count;
 
-    .line 3
     invoke-static {p1, p2}, Lcom/google/common/collect/AbstractMapBasedMultiset;->getAndSet(Lcom/google/common/collect/Count;I)I
 
     move-result p1
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
@@ -612,14 +572,12 @@
 
     check-cast v0, Lcom/google/common/collect/Count;
 
-    .line 5
     invoke-static {v0, p2}, Lcom/google/common/collect/AbstractMapBasedMultiset;->getAndSet(Lcom/google/common/collect/Count;I)I
 
     move-result v1
 
     if-nez v0, :cond_1
 
-    .line 6
     iget-object v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->backingMap:Ljava/util/Map;
 
     new-instance v2, Lcom/google/common/collect/Count;
@@ -631,7 +589,6 @@
     :cond_1
     move p1, v1
 
-    .line 7
     :goto_0
     iget-wide v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->size:J
 
@@ -649,7 +606,6 @@
 .method public size()I
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/collect/AbstractMapBasedMultiset;->size:J
 
     invoke-static {v0, v1}, Lcom/google/common/primitives/Ints;->saturatedCast(J)I

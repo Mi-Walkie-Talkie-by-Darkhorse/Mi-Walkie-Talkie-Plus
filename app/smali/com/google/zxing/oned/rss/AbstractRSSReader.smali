@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/zxing/oned/rss/AbstractRSSReader;
 .super Lcom/google/zxing/oned/OneDReader;
-.source "AbstractRSSReader.java"
 
 
 # static fields
@@ -31,34 +30,28 @@
 .method protected constructor <init>()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/oned/OneDReader;-><init>()V
 
     const/4 v0, 0x4
 
     new-array v1, v0, [I
 
-    .line 2
     iput-object v1, p0, Lcom/google/zxing/oned/rss/AbstractRSSReader;->decodeFinderCounters:[I
 
     const/16 v1, 0x8
 
     new-array v1, v1, [I
 
-    .line 3
     iput-object v1, p0, Lcom/google/zxing/oned/rss/AbstractRSSReader;->dataCharacterCounters:[I
 
     new-array v2, v0, [F
 
-    .line 4
     iput-object v2, p0, Lcom/google/zxing/oned/rss/AbstractRSSReader;->oddRoundingErrors:[F
 
     new-array v0, v0, [F
 
-    .line 5
     iput-object v0, p0, Lcom/google/zxing/oned/rss/AbstractRSSReader;->evenRoundingErrors:[F
 
-    .line 6
     array-length v0, v1
 
     div-int/lit8 v0, v0, 0x2
@@ -67,7 +60,6 @@
 
     iput-object v0, p0, Lcom/google/zxing/oned/rss/AbstractRSSReader;->oddCounts:[I
 
-    .line 7
     array-length v0, v1
 
     div-int/lit8 v0, v0, 0x2
@@ -84,7 +76,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/zxing/common/detector/MathUtils;->sum([I)I
 
     move-result p0
@@ -97,27 +88,23 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget v1, p1, v0
 
     const/4 v2, 0x1
 
     const/4 v3, 0x1
 
-    .line 2
     :goto_0
     array-length v4, p0
 
     if-ge v3, v4, :cond_1
 
-    .line 3
     aget v4, p1, v3
 
     cmpg-float v4, v4, v1
 
     if-gez v4, :cond_0
 
-    .line 4
     aget v0, p1, v3
 
     move v1, v0
@@ -129,7 +116,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     aget p1, p0, v0
 
@@ -145,27 +131,23 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget v1, p1, v0
 
     const/4 v2, 0x1
 
     const/4 v3, 0x1
 
-    .line 2
     :goto_0
     array-length v4, p0
 
     if-ge v3, v4, :cond_1
 
-    .line 3
     aget v4, p1, v3
 
     cmpl-float v4, v4, v1
 
     if-lez v4, :cond_0
 
-    .line 4
     aget v0, p1, v3
 
     move v1, v0
@@ -177,7 +159,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     aget p1, p0, v0
 
@@ -193,7 +174,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget v1, p0, v0
 
     const/4 v2, 0x1
@@ -204,7 +184,6 @@
 
     const/4 v3, 0x2
 
-    .line 2
     aget v3, p0, v3
 
     add-int/2addr v3, v1
@@ -237,7 +216,6 @@
 
     const/high16 v3, -0x80000000
 
-    .line 3
     array-length v4, p0
 
     const/4 v5, 0x0
@@ -282,13 +260,11 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     array-length v1, p1
 
     if-ge v0, v1, :cond_1
 
-    .line 2
     aget-object v1, p1, v0
 
     const v2, 0x3ee66666    # 0.45f
@@ -310,7 +286,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -324,7 +299,6 @@
 .method protected final getDataCharacterCounters()[I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/oned/rss/AbstractRSSReader;->dataCharacterCounters:[I
 
     return-object v0
@@ -333,7 +307,6 @@
 .method protected final getDecodeFinderCounters()[I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/oned/rss/AbstractRSSReader;->decodeFinderCounters:[I
 
     return-object v0
@@ -342,7 +315,6 @@
 .method protected final getEvenCounts()[I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/oned/rss/AbstractRSSReader;->evenCounts:[I
 
     return-object v0
@@ -351,7 +323,6 @@
 .method protected final getEvenRoundingErrors()[F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/oned/rss/AbstractRSSReader;->evenRoundingErrors:[F
 
     return-object v0
@@ -360,7 +331,6 @@
 .method protected final getOddCounts()[I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/oned/rss/AbstractRSSReader;->oddCounts:[I
 
     return-object v0
@@ -369,7 +339,6 @@
 .method protected final getOddRoundingErrors()[F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/oned/rss/AbstractRSSReader;->oddRoundingErrors:[F
 
     return-object v0

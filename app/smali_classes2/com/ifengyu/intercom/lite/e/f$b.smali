@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/e/f$b;
 .super Ljava/lang/Object;
-.source "LiteBleClient.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/e/f;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/e/f$b;->a:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/e/f$b;->a:Lcom/ifengyu/intercom/lite/e/f;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/e/f;->b(Lcom/ifengyu/intercom/lite/e/f;)Ljava/lang/String;
@@ -74,7 +71,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Ljava/lang/Throwable;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/lite/e/f$b;->a(Ljava/lang/Throwable;)V

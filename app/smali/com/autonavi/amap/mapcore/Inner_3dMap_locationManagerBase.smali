@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/Inner_3dMap_locationManagerBase;
 .super Ljava/lang/Object;
-.source "Inner_3dMap_locationManagerBase.java"
 
 
 # virtual methods

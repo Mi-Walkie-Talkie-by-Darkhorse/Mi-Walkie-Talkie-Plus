@@ -1,6 +1,5 @@
 .class interface abstract La/a/a/b/b$f;
 .super Ljava/lang/Object;
-.source "SafeIterableMap.java"
 
 
 # annotations

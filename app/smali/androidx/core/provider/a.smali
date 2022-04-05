@@ -1,6 +1,5 @@
 .class Landroidx/core/provider/a;
 .super Ljava/lang/Object;
-.source "CallbackWithHandler.java"
 
 
 # instance fields
@@ -27,13 +26,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/provider/a;->a:Landroidx/core/provider/FontsContractCompat$FontRequestCallback;
 
-    .line 3
     iput-object p2, p0, Landroidx/core/provider/a;->b:Landroid/os/Handler;
 
     return-void
@@ -42,10 +38,8 @@
 .method private a(I)V
     .locals 3
 
-    .line 3
     iget-object v0, p0, Landroidx/core/provider/a;->a:Landroidx/core/provider/FontsContractCompat$FontRequestCallback;
 
-    .line 4
     iget-object v1, p0, Landroidx/core/provider/a;->b:Landroid/os/Handler;
 
     new-instance v2, Landroidx/core/provider/a$b;
@@ -64,10 +58,8 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Landroidx/core/provider/a;->a:Landroidx/core/provider/FontsContractCompat$FontRequestCallback;
 
-    .line 2
     iget-object v1, p0, Landroidx/core/provider/a;->b:Landroid/os/Handler;
 
     new-instance v2, Landroidx/core/provider/a$a;
@@ -88,21 +80,18 @@
         .end annotation
     .end param
 
-    .line 5
     invoke-virtual {p1}, Landroidx/core/provider/e$e;->a()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 6
     iget-object p1, p1, Landroidx/core/provider/e$e;->a:Landroid/graphics/Typeface;
 
     invoke-direct {p0, p1}, Landroidx/core/provider/a;->a(Landroid/graphics/Typeface;)V
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget p1, p1, Landroidx/core/provider/e$e;->b:I
 

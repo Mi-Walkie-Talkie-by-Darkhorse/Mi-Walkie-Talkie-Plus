@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/utils/c;
 .super Ljava/lang/Object;
-.source "CharacterFilter.java"
 
 # interfaces
 .implements Landroid/text/InputFilter;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -19,14 +17,12 @@
 .method private a(C)Z
     .locals 1
 
-    .line 1
     invoke-static {p1}, Ljava/lang/Character;->isLetterOrDigit(C)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/utils/d;->a(C)Z
 
     move-result v0
@@ -67,7 +63,6 @@
 
     const/4 p2, 0x0
 
-    .line 1
     :goto_0
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
@@ -75,12 +70,10 @@
 
     if-ge p2, p3, :cond_1
 
-    .line 2
     invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result p3
 
-    .line 3
     invoke-direct {p0, p3}, Lcom/ifengyu/intercom/lite/utils/c;->a(C)Z
 
     move-result p3

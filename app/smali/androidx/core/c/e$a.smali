@@ -1,6 +1,5 @@
 .class Landroidx/core/c/e$a;
 .super Ljava/lang/Object;
-.source "TextDirectionHeuristicsCompat.java"
 
 # interfaces
 .implements Landroidx/core/c/e$c;
@@ -29,7 +28,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Landroidx/core/c/e$a;
 
     const/4 v1, 0x1
@@ -44,10 +42,8 @@
 .method private constructor <init>(Z)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-boolean p1, p0, Landroidx/core/c/e$a;->a:Z
 
     return-void
@@ -67,7 +63,6 @@
     :goto_0
     if-ge p2, p3, :cond_3
 
-    .line 1
     invoke-interface {p1, p2}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v2
@@ -88,7 +83,6 @@
 
     goto :goto_1
 
-    .line 2
     :cond_0
     iget-boolean v1, p0, Landroidx/core/c/e$a;->a:Z
 
@@ -96,7 +90,6 @@
 
     return v3
 
-    .line 3
     :cond_1
     iget-boolean v1, p0, Landroidx/core/c/e$a;->a:Z
 
@@ -115,7 +108,6 @@
     :cond_3
     if-eqz v1, :cond_4
 
-    .line 4
     iget-boolean p1, p0, Landroidx/core/c/e$a;->a:Z
 
     return p1

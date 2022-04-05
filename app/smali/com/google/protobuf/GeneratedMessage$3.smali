@@ -1,6 +1,5 @@
 .class final Lcom/google/protobuf/GeneratedMessage$3;
 .super Lcom/google/protobuf/GeneratedMessage$CachedDescriptorRetriever;
-.source "GeneratedMessage.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/GeneratedMessage$3;->val$singularType:Ljava/lang/Class;
 
     iput-object p2, p0, Lcom/google/protobuf/GeneratedMessage$3;->val$descriptorOuterClass:Ljava/lang/String;
@@ -45,7 +43,6 @@
 .method protected loadDescriptor()Lcom/google/protobuf/Descriptors$FieldDescriptor;
     .locals 5
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessage$3;->val$singularType:Ljava/lang/Class;
 
@@ -61,7 +58,6 @@
 
     const-string v1, "descriptor"
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v0
@@ -74,7 +70,6 @@
 
     check-cast v0, Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 3
     iget-object v1, p0, Lcom/google/protobuf/GeneratedMessage$3;->val$extensionName:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->findExtensionByName(Ljava/lang/String;)Lcom/google/protobuf/Descriptors$FieldDescriptor;
@@ -88,7 +83,6 @@
     :catch_0
     move-exception v0
 
-    .line 4
     new-instance v1, Ljava/lang/RuntimeException;
 
     iget-object v2, p0, Lcom/google/protobuf/GeneratedMessage$3;->val$descriptorOuterClass:Ljava/lang/String;

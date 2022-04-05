@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/im$2;
 .super Ljava/lang/Object;
-.source "StatisticsManager.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Ljava/util/List;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/im$2;->a:Ljava/util/List;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/im$2;->b:Landroid/content/Context;
@@ -42,7 +40,6 @@
 .method public final run()V
     .locals 7
 
-    .line 1
     :try_start_0
     const-class v0, Lcom/amap/api/col/l3/im;
 
@@ -59,7 +56,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_6
 
-    .line 2
     :try_start_2
     new-instance v3, Ljava/io/ByteArrayOutputStream;
 
@@ -67,7 +63,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 3
     :try_start_3
     iget-object v1, p0, Lcom/amap/api/col/l3/im$2;->a:Ljava/util/List;
 
@@ -91,7 +86,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 4
     invoke-virtual {v4}, Lcom/amap/api/col/l3/il;->a()[B
 
     move-result-object v4
@@ -100,7 +94,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
@@ -108,7 +101,6 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 6
     :try_start_4
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_4
@@ -119,7 +111,6 @@
     :catchall_0
     move-exception v1
 
-    .line 7
     :goto_1
     :try_start_5
     invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
@@ -148,14 +139,12 @@
 
     const-string v5, "aStB"
 
-    .line 8
     invoke-static {v1, v4, v5}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_4
 
     if-eqz v3, :cond_2
 
-    .line 9
     :try_start_7
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_7
@@ -168,7 +157,6 @@
 
     goto :goto_1
 
-    .line 10
     :cond_2
     :goto_3
     :try_start_8
@@ -176,7 +164,6 @@
 
     invoke-static {v1, v2}, Lcom/amap/api/col/l3/im;->a(Landroid/content/Context;[B)V
 
-    .line 11
     monitor-exit v0
     :try_end_8
     .catchall {:try_start_8 .. :try_end_8} :catchall_6
@@ -188,7 +175,6 @@
 
     if-eqz v3, :cond_3
 
-    .line 12
     :try_start_9
     invoke-virtual {v3}, Ljava/io/ByteArrayOutputStream;->close()V
     :try_end_9
@@ -199,11 +185,9 @@
     :catchall_5
     move-exception v2
 
-    .line 13
     :try_start_a
     invoke-virtual {v2}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 14
     :cond_3
     :goto_4
     throw v1
@@ -213,7 +197,6 @@
     :catchall_6
     move-exception v1
 
-    .line 15
     :try_start_b
     monitor-exit v0
 
@@ -228,7 +211,6 @@
 
     const-string v2, "apb"
 
-    .line 16
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

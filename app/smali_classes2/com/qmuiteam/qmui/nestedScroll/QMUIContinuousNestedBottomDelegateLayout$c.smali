@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;
 .super Ljava/lang/Object;
-.source "QMUIContinuousNestedBottomDelegateLayout.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -35,25 +34,20 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;)V
     .locals 2
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->f:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     sget-object v0, Lcom/qmuiteam/qmui/a;->e:Landroid/view/animation/Interpolator;
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->c:Landroid/view/animation/Interpolator;
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->d:Z
 
-    .line 4
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->e:Z
 
-    .line 5
     new-instance v0, Landroid/widget/OverScroller;
 
     invoke-virtual {p1}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
@@ -72,12 +66,10 @@
 .method private c()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->f:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->f:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 
     invoke-static {v0, p0}, Landroidx/core/view/ViewCompat;->a(Landroid/view/View;Ljava/lang/Runnable;)V
@@ -90,19 +82,16 @@
 .method a()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->d:Z
 
     if-eqz v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->e:Z
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-direct {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->c()V
 
@@ -113,7 +102,6 @@
 .method public a(I)V
     .locals 12
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->f:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 
     const/4 v1, 0x2
@@ -124,20 +112,16 @@
 
     const/4 v0, 0x0
 
-    .line 5
     iput v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->a:I
 
-    .line 6
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->c:Landroid/view/animation/Interpolator;
 
     sget-object v1, Lcom/qmuiteam/qmui/a;->e:Landroid/view/animation/Interpolator;
 
     if-eq v0, v1, :cond_0
 
-    .line 7
     iput-object v1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->c:Landroid/view/animation/Interpolator;
 
-    .line 8
     new-instance v0, Landroid/widget/OverScroller;
 
     iget-object v1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->f:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
@@ -152,7 +136,6 @@
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->b:Landroid/widget/OverScroller;
 
-    .line 9
     :cond_0
     iget-object v3, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->b:Landroid/widget/OverScroller;
 
@@ -174,7 +157,6 @@
 
     invoke-virtual/range {v3 .. v11}, Landroid/widget/OverScroller;->fling(IIIIIIII)V
 
-    .line 10
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->a()V
 
     return-void
@@ -183,12 +165,10 @@
 .method public b()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->f:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 
     invoke-virtual {v0, p0}, Landroid/widget/FrameLayout;->removeCallbacks(Ljava/lang/Runnable;)Z
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->b:Landroid/widget/OverScroller;
 
     invoke-virtual {v0}, Landroid/widget/OverScroller;->abortAnimation()V
@@ -201,38 +181,30 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->e:Z
 
     const/4 v1, 0x1
 
-    .line 2
     iput-boolean v1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->d:Z
 
-    .line 3
     iget-object v2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->b:Landroid/widget/OverScroller;
 
-    .line 4
     invoke-virtual {v2}, Landroid/widget/OverScroller;->computeScrollOffset()Z
 
     move-result v3
 
     if-eqz v3, :cond_4
 
-    .line 5
     invoke-virtual {v2}, Landroid/widget/OverScroller;->getCurrY()I
 
     move-result v2
 
-    .line 6
     iget v3, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->a:I
 
     sub-int v3, v2, v3
 
-    .line 7
     iput v2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->a:I
 
-    .line 8
     iget-object v2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->f:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 
     invoke-static {v2}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;->b(Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;)Landroid/view/View;
@@ -243,7 +215,6 @@
 
     if-lez v3, :cond_1
 
-    .line 9
     invoke-interface {v2}, Lcom/qmuiteam/qmui/nestedScroll/a;->getCurrentScroll()I
 
     move-result v4
@@ -268,7 +239,6 @@
     :goto_1
     if-eqz v2, :cond_3
 
-    .line 10
     iget-object v2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->f:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 
     invoke-static {v2}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;->c(Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;)Landroidx/core/view/m;
@@ -281,44 +251,36 @@
 
     if-nez v2, :cond_2
 
-    .line 11
     iget-object v2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->f:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 
     const/4 v4, 0x2
 
     invoke-virtual {v2, v4, v1}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;->a(II)Z
 
-    .line 12
     :cond_2
     iget-object v2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->f:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 
     invoke-virtual {v2, v3}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;->a(I)V
 
-    .line 13
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->a()V
 
     goto :goto_2
 
-    .line 14
     :cond_3
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->b()V
 
-    .line 15
     :cond_4
     :goto_2
     iput-boolean v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->d:Z
 
-    .line 16
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->e:Z
 
     if-eqz v0, :cond_5
 
-    .line 17
     invoke-direct {p0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->c()V
 
     goto :goto_3
 
-    .line 18
     :cond_5
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout$c;->f:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedBottomDelegateLayout;
 

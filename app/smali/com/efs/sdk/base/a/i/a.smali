@@ -1,6 +1,5 @@
 .class public abstract Lcom/efs/sdk/base/a/i/a;
 .super Landroid/os/Handler;
-.source "SourceFile"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method constructor <init>()V
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/efs/sdk/base/a/h/a/a;->a:Landroid/os/HandlerThread;
 
     invoke-virtual {v0}, Landroid/os/HandlerThread;->getLooper()Landroid/os/Looper;
@@ -24,7 +22,6 @@
 
     const-wide/32 v1, 0xea60
 
-    .line 2
     invoke-virtual {p0, v0, v1, v2}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
     return-void
@@ -42,17 +39,14 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1}, Landroid/os/Handler;->handleMessage(Landroid/os/Message;)V
 
-    .line 2
     invoke-virtual {p0}, Lcom/efs/sdk/base/a/i/a;->a()V
 
     const/4 p1, 0x0
 
     const-wide/32 v0, 0xea60
 
-    .line 3
     invoke-virtual {p0, p1, v0, v1}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
     return-void

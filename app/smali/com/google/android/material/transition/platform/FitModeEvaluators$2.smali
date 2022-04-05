@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/transition/platform/FitModeEvaluators$2;
 .super Ljava/lang/Object;
-.source "FitModeEvaluators.java"
 
 # interfaces
 .implements Lcom/google/android/material/transition/platform/FitModeEvaluator;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,19 +30,16 @@
 .method public applyMask(Landroid/graphics/RectF;FLcom/google/android/material/transition/platform/FitModeResult;)V
     .locals 2
 
-    .line 1
     iget v0, p3, Lcom/google/android/material/transition/platform/FitModeResult;->currentEndWidth:F
 
     iget p3, p3, Lcom/google/android/material/transition/platform/FitModeResult;->currentStartWidth:F
 
     sub-float/2addr v0, p3
 
-    .line 2
     invoke-static {v0}, Ljava/lang/Math;->abs(F)F
 
     move-result p3
 
-    .line 3
     iget v0, p1, Landroid/graphics/RectF;->left:F
 
     const/high16 v1, 0x40000000    # 2.0f
@@ -57,7 +52,6 @@
 
     iput v0, p1, Landroid/graphics/RectF;->left:F
 
-    .line 4
     iget p2, p1, Landroid/graphics/RectF;->right:F
 
     sub-float/2addr p2, p3
@@ -82,7 +76,6 @@
 
     move v4, p1
 
-    .line 1
     invoke-static/range {v0 .. v5}, Lcom/google/android/material/transition/platform/TransitionUtils;->lerp(FFFFFZ)F
 
     move-result v0
@@ -95,7 +88,6 @@
 
     mul-float p6, p6, p3
 
-    .line 2
     new-instance v1, Lcom/google/android/material/transition/platform/FitModeResult;
 
     move-object p1, v1
@@ -112,7 +104,6 @@
 .method public shouldMaskStartBounds(Lcom/google/android/material/transition/platform/FitModeResult;)Z
     .locals 1
 
-    .line 1
     iget v0, p1, Lcom/google/android/material/transition/platform/FitModeResult;->currentStartWidth:F
 
     iget p1, p1, Lcom/google/android/material/transition/platform/FitModeResult;->currentEndWidth:F

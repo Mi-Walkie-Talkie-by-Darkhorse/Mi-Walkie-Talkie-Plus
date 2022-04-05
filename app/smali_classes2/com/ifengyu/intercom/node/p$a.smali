@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/node/p$a;
 .super Ljava/lang/Object;
-.source "WalkTalkTransportManager.java"
 
 # interfaces
 .implements Ljava/util/concurrent/ThreadFactory;
@@ -21,7 +20,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/node/p;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -36,7 +34,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/node/n;
 
     invoke-direct {v0, p1}, Lcom/ifengyu/intercom/node/n;-><init>(Ljava/lang/Runnable;)V

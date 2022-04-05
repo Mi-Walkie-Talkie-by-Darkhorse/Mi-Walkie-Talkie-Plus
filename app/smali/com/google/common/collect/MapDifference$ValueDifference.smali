@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/collect/MapDifference$ValueDifference;
 .super Ljava/lang/Object;
-.source "MapDifference.java"
 
 
 # annotations

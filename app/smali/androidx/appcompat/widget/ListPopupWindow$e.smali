@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/ListPopupWindow$e;
 .super Ljava/lang/Object;
-.source "ListPopupWindow.java"
 
 # interfaces
 .implements Landroid/widget/AbsListView$OnScrollListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/ListPopupWindow;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow$e;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,10 +46,8 @@
 
     if-ne p2, p1, :cond_0
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow$e;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
-    .line 2
     invoke-virtual {p1}, Landroidx/appcompat/widget/ListPopupWindow;->n()Z
 
     move-result p1
@@ -68,7 +64,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     iget-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow$e;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
     iget-object p2, p1, Landroidx/appcompat/widget/ListPopupWindow;->A:Landroid/os/Handler;
@@ -77,7 +72,6 @@
 
     invoke-virtual {p2, p1}, Landroid/os/Handler;->removeCallbacks(Ljava/lang/Runnable;)V
 
-    .line 4
     iget-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow$e;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
     iget-object p1, p1, Landroidx/appcompat/widget/ListPopupWindow;->w:Landroidx/appcompat/widget/ListPopupWindow$g;

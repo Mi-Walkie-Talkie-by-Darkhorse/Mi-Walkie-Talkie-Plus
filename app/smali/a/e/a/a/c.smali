@@ -1,6 +1,5 @@
 .class public La/e/a/a/c;
 .super La/e/a/a/d;
-.source "LinearOutSlowInInterpolator.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 
     new-array v0, v0, [F
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, La/e/a/a/c;->c:[F
@@ -231,7 +229,6 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     sget-object v0, La/e/a/a/c;->c:[F
 
     invoke-direct {p0, v0}, La/e/a/a/d;-><init>([F)V

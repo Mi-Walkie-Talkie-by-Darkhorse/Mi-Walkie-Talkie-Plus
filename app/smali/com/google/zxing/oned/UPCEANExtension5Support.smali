@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/oned/UPCEANExtension5Support;
 .super Ljava/lang/Object;
-.source "UPCEANExtension5Support.java"
 
 
 # static fields
@@ -21,7 +20,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/google/zxing/oned/UPCEANExtension5Support;->CHECK_DIGIT_ENCODINGS:[I
@@ -46,17 +44,14 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x4
 
     new-array v0, v0, [I
 
-    .line 2
     iput-object v0, p0, Lcom/google/zxing/oned/UPCEANExtension5Support;->decodeMiddleCounters:[I
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -74,35 +69,28 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/oned/UPCEANExtension5Support;->decodeMiddleCounters:[I
 
     const/4 v1, 0x0
 
-    .line 2
     aput v1, v0, v1
 
     const/4 v2, 0x1
 
-    .line 3
     aput v1, v0, v2
 
     const/4 v3, 0x2
 
-    .line 4
     aput v1, v0, v3
 
     const/4 v3, 0x3
 
-    .line 5
     aput v1, v0, v3
 
-    .line 6
     invoke-virtual {p1}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result v3
 
-    .line 7
     aget p2, p2, v2
 
     const/4 v4, 0x0
@@ -116,14 +104,12 @@
 
     if-ge p2, v3, :cond_3
 
-    .line 8
     sget-object v6, Lcom/google/zxing/oned/UPCEANReader;->L_AND_G_PATTERNS:[[I
 
     invoke-static {p1, v0, p2, v6}, Lcom/google/zxing/oned/UPCEANReader;->decodeDigit(Lcom/google/zxing/common/BitArray;[II[[I)I
 
     move-result v6
 
-    .line 9
     rem-int/lit8 v7, v6, 0xa
 
     add-int/lit8 v7, v7, 0x30
@@ -132,7 +118,6 @@
 
     invoke-virtual {p3, v7}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 10
     array-length v7, v0
 
     const/4 v8, 0x0
@@ -164,12 +149,10 @@
     :cond_1
     if-eq v4, v7, :cond_2
 
-    .line 11
     invoke-virtual {p1, p2}, Lcom/google/zxing/common/BitArray;->getNextSet(I)I
 
     move-result p2
 
-    .line 12
     invoke-virtual {p1, p2}, Lcom/google/zxing/common/BitArray;->getNextUnset(I)I
 
     move-result p2
@@ -179,7 +162,6 @@
 
     goto :goto_0
 
-    .line 13
     :cond_3
     invoke-virtual {p3}, Ljava/lang/StringBuilder;->length()I
 
@@ -187,12 +169,10 @@
 
     if-ne p1, v6, :cond_5
 
-    .line 14
     invoke-static {v5}, Lcom/google/zxing/oned/UPCEANExtension5Support;->determineCheckDigit(I)I
 
     move-result p1
 
-    .line 15
     invoke-virtual {p3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p3
@@ -205,7 +185,6 @@
 
     return p2
 
-    .line 16
     :cond_4
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -213,7 +192,6 @@
 
     throw p1
 
-    .line 17
     :cond_5
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -237,7 +215,6 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 1
     sget-object v1, Lcom/google/zxing/oned/UPCEANExtension5Support;->CHECK_DIGIT_ENCODINGS:[I
 
     aget v1, v1, v0
@@ -251,7 +228,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -263,7 +239,6 @@
 .method private static extensionChecksum(Ljava/lang/CharSequence;)I
     .locals 4
 
-    .line 1
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -275,7 +250,6 @@
     :goto_0
     if-ltz v1, :cond_0
 
-    .line 2
     invoke-interface {p0, v1}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v3
@@ -296,7 +270,6 @@
     :goto_1
     if-ltz v0, :cond_1
 
-    .line 3
     invoke-interface {p0, v0}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v1
@@ -312,7 +285,6 @@
     :cond_1
     mul-int/lit8 v2, v2, 0x3
 
-    .line 4
     rem-int/lit8 v2, v2, 0xa
 
     return v2
@@ -323,7 +295,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
 
     move-result v1
@@ -349,7 +320,6 @@
     :cond_0
     const/4 v1, -0x1
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     move-result v2
@@ -433,7 +403,6 @@
     :cond_6
     const-string v3, "\u00a3"
 
-    .line 3
     :goto_2
     invoke-virtual {p0, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
@@ -443,21 +412,18 @@
 
     move-result p0
 
-    .line 4
     div-int/lit8 v0, p0, 0x64
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 5
     rem-int/lit8 p0, p0, 0x64
 
     const/16 v1, 0xa
 
     if-ge p0, v1, :cond_7
 
-    .line 6
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "0"
@@ -477,7 +443,6 @@
 
     move-result-object p0
 
-    .line 7
     :goto_3
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -521,7 +486,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -534,7 +498,6 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     invoke-static {p0}, Lcom/google/zxing/oned/UPCEANExtension5Support;->parseExtension5String(Ljava/lang/String;)Ljava/lang/String;
 
@@ -544,7 +507,6 @@
 
     return-object v1
 
-    .line 3
     :cond_1
     new-instance v0, Ljava/util/EnumMap;
 
@@ -552,7 +514,6 @@
 
     invoke-direct {v0, v1}, Ljava/util/EnumMap;-><init>(Ljava/lang/Class;)V
 
-    .line 4
     sget-object v1, Lcom/google/zxing/ResultMetadataType;->SUGGESTED_PRICE:Lcom/google/zxing/ResultMetadataType;
 
     invoke-interface {v0, v1, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -570,30 +531,24 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/oned/UPCEANExtension5Support;->decodeRowStringBuffer:Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->setLength(I)V
 
-    .line 3
     invoke-direct {p0, p2, p3, v0}, Lcom/google/zxing/oned/UPCEANExtension5Support;->decodeMiddle(Lcom/google/zxing/common/BitArray;[ILjava/lang/StringBuilder;)I
 
     move-result p2
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 5
     invoke-static {v0}, Lcom/google/zxing/oned/UPCEANExtension5Support;->parseExtensionString(Ljava/lang/String;)Ljava/util/Map;
 
     move-result-object v2
 
-    .line 6
     new-instance v3, Lcom/google/zxing/Result;
 
     const/4 v4, 0x2
@@ -638,7 +593,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 7
     invoke-virtual {v3, v2}, Lcom/google/zxing/Result;->putAllMetadata(Ljava/util/Map;)V
 
     :cond_0

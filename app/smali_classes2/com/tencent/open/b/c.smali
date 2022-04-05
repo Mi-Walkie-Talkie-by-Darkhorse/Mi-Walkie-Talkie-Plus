@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/b/c;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # static fields
@@ -27,7 +26,6 @@
 
     const-string v0, ""
 
-    .line 1
     :try_start_0
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
@@ -40,7 +38,6 @@
     :cond_0
     const-string v2, "wifi"
 
-    .line 2
     invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
@@ -51,7 +48,6 @@
 
     return-object v0
 
-    .line 3
     :cond_1
     invoke-virtual {v1}, Landroid/net/wifi/WifiManager;->getConnectionInfo()Landroid/net/wifi/WifiInfo;
 
@@ -61,7 +57,6 @@
 
     return-object v0
 
-    .line 4
     :cond_2
     invoke-virtual {v1}, Landroid/net/wifi/WifiInfo;->getMacAddress()Ljava/lang/String;
 
@@ -78,7 +73,6 @@
 
     const-string v3, "getLocalMacAddress>>>"
 
-    .line 5
     invoke-static {v2, v3, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-object v0
@@ -87,7 +81,6 @@
 .method public static a(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    .line 6
     sget-object v0, Lcom/tencent/open/b/c;->d:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -96,7 +89,6 @@
 
     if-nez v0, :cond_0
 
-    .line 7
     sget-object p0, Lcom/tencent/open/b/c;->d:Ljava/lang/String;
 
     return-object p0
@@ -108,13 +100,11 @@
 
     return-object v0
 
-    .line 8
     :cond_1
     sput-object v0, Lcom/tencent/open/b/c;->d:Ljava/lang/String;
 
     const-string v0, "window"
 
-    .line 9
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
@@ -123,7 +113,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 10
     invoke-interface {p0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object v0
@@ -132,7 +121,6 @@
 
     move-result v0
 
-    .line 11
     invoke-interface {p0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object p0
@@ -141,7 +129,6 @@
 
     move-result p0
 
-    .line 12
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -160,7 +147,6 @@
 
     sput-object p0, Lcom/tencent/open/b/c;->d:Ljava/lang/String;
 
-    .line 13
     :cond_2
     sget-object p0, Lcom/tencent/open/b/c;->d:Ljava/lang/String;
 
@@ -170,7 +156,6 @@
 .method public static b()Ljava/lang/String;
     .locals 1
 
-    .line 1
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
 
     move-result-object v0
@@ -185,7 +170,6 @@
 .method public static b(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    .line 2
     sget-object v0, Lcom/tencent/open/b/c;->a:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -196,7 +180,6 @@
 
     if-lez v0, :cond_0
 
-    .line 3
     sget-object p0, Lcom/tencent/open/b/c;->a:Ljava/lang/String;
 
     return-object p0
@@ -212,14 +195,12 @@
     :try_start_0
     const-string v1, "phone"
 
-    .line 4
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/telephony/TelephonyManager;
 
-    .line 5
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getDeviceId()Ljava/lang/String;
 
     move-result-object p0
@@ -237,7 +218,6 @@
 .method public static c(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/tencent/open/b/c;->b:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -248,7 +228,6 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     sget-object p0, Lcom/tencent/open/b/c;->b:Ljava/lang/String;
 
     return-object p0
@@ -264,14 +243,12 @@
     :try_start_0
     const-string v1, "phone"
 
-    .line 3
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p0
 
     check-cast p0, Landroid/telephony/TelephonyManager;
 
-    .line 4
     invoke-virtual {p0}, Landroid/telephony/TelephonyManager;->getSimSerialNumber()Ljava/lang/String;
 
     move-result-object p0
@@ -289,7 +266,6 @@
 .method public static d(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/tencent/open/b/c;->c:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -300,7 +276,6 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     sget-object p0, Lcom/tencent/open/b/c;->c:Ljava/lang/String;
 
     return-object p0
@@ -312,7 +287,6 @@
 
     return-object v0
 
-    .line 3
     :cond_1
     :try_start_0
     invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -338,7 +312,6 @@
 .method public static e(Landroid/content/Context;)Ljava/lang/String;
     .locals 5
 
-    .line 1
     :try_start_0
     sget-object v0, Lcom/tencent/open/b/c;->e:Ljava/lang/String;
 
@@ -346,33 +319,28 @@
 
     const-string v0, "window"
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/WindowManager;
 
-    .line 3
     new-instance v1, Landroid/util/DisplayMetrics;
 
     invoke-direct {v1}, Landroid/util/DisplayMetrics;-><init>()V
 
-    .line 4
     invoke-interface {v0}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Landroid/view/Display;->getMetrics(Landroid/util/DisplayMetrics;)V
 
-    .line 5
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v2, "imei="
 
-    .line 6
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-static {p0}, Lcom/tencent/open/b/c;->b(Landroid/content/Context;)Ljava/lang/String;
@@ -387,7 +355,6 @@
 
     const-string v3, "model="
 
-    .line 7
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget-object v3, Landroid/os/Build;->MODEL:Ljava/lang/String;
@@ -398,7 +365,6 @@
 
     const-string v3, "os="
 
-    .line 8
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget-object v3, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
@@ -409,7 +375,6 @@
 
     const-string v3, "apilevel="
 
-    .line 9
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget v3, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -418,7 +383,6 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 10
     invoke-static {p0}, Lcom/tencent/open/b/a;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
@@ -430,7 +394,6 @@
     :cond_0
     const-string v4, "network="
 
-    .line 11
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -439,7 +402,6 @@
 
     const-string v3, "sdcard="
 
-    .line 12
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-static {}, Landroid/os/Environment;->getExternalStorageState()Ljava/lang/String;
@@ -468,7 +430,6 @@
 
     const-string v3, "display="
 
-    .line 13
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     iget v3, v1, Landroid/util/DisplayMetrics;->widthPixels:I
@@ -487,7 +448,6 @@
 
     const-string v1, "manu="
 
-    .line 14
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     sget-object v1, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
@@ -500,7 +460,6 @@
 
     const-string v1, "wifi="
 
-    .line 15
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     invoke-static {p0}, Lcom/tencent/open/b/a;->e(Landroid/content/Context;)Ljava/lang/String;
@@ -509,14 +468,12 @@
 
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 16
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
 
     sput-object p0, Lcom/tencent/open/b/c;->e:Ljava/lang/String;
 
-    .line 17
     :cond_2
     sget-object p0, Lcom/tencent/open/b/c;->e:Ljava/lang/String;
     :try_end_0

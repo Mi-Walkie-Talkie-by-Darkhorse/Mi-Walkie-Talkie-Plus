@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/retrofit2/adapter/rxjava2/Result;
 .super Ljava/lang/Object;
-.source "Result.java"
 
 
 # annotations
@@ -40,13 +39,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/Result;->response:Lretrofit2/Response;
 
-    .line 3
     iput-object p2, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/Result;->error:Ljava/lang/Throwable;
 
     return-void
@@ -68,7 +64,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     new-instance v0, Lcom/jakewharton/retrofit2/adapter/rxjava2/Result;
 
     const/4 v1, 0x0
@@ -77,7 +72,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -104,7 +98,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     new-instance v0, Lcom/jakewharton/retrofit2/adapter/rxjava2/Result;
 
     const/4 v1, 0x0
@@ -113,7 +106,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -129,7 +121,6 @@
 .method public error()Ljava/lang/Throwable;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/Result;->error:Ljava/lang/Throwable;
 
     return-object v0
@@ -138,7 +129,6 @@
 .method public isError()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/Result;->error:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_0
@@ -164,7 +154,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/Result;->response:Lretrofit2/Response;
 
     return-object v0

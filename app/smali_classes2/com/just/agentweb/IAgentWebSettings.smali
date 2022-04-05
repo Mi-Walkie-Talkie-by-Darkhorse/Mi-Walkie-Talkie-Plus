@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/IAgentWebSettings;
 .super Ljava/lang/Object;
-.source "IAgentWebSettings.java"
 
 
 # annotations

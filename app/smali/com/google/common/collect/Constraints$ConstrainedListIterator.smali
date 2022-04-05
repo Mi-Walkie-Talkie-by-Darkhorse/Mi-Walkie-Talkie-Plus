@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Constraints$ConstrainedListIterator;
 .super Lcom/google/common/collect/ForwardingListIterator;
-.source "Constraints.java"
 
 
 # annotations
@@ -57,13 +56,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingListIterator;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/Constraints$ConstrainedListIterator;->delegate:Ljava/util/ListIterator;
 
-    .line 3
     iput-object p2, p0, Lcom/google/common/collect/Constraints$ConstrainedListIterator;->constraint:Lcom/google/common/collect/Constraint;
 
     return-void
@@ -79,12 +75,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Constraints$ConstrainedListIterator;->constraint:Lcom/google/common/collect/Constraint;
 
     invoke-interface {v0, p1}, Lcom/google/common/collect/Constraint;->checkElement(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/Constraints$ConstrainedListIterator;->delegate:Ljava/util/ListIterator;
 
     invoke-interface {v0, p1}, Ljava/util/ListIterator;->add(Ljava/lang/Object;)V
@@ -95,7 +89,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/Constraints$ConstrainedListIterator;->delegate()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -106,7 +99,6 @@
 .method protected bridge synthetic delegate()Ljava/util/Iterator;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/Constraints$ConstrainedListIterator;->delegate()Ljava/util/ListIterator;
 
     move-result-object v0
@@ -124,7 +116,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/collect/Constraints$ConstrainedListIterator;->delegate:Ljava/util/ListIterator;
 
     return-object v0
@@ -138,12 +129,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/Constraints$ConstrainedListIterator;->constraint:Lcom/google/common/collect/Constraint;
 
     invoke-interface {v0, p1}, Lcom/google/common/collect/Constraint;->checkElement(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/Constraints$ConstrainedListIterator;->delegate:Ljava/util/ListIterator;
 
     invoke-interface {v0, p1}, Ljava/util/ListIterator;->set(Ljava/lang/Object;)V

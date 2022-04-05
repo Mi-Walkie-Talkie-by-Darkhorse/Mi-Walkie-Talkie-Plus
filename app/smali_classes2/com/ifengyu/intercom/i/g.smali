@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/g;
 .super Ljava/lang/Object;
-.source "ACache.java"
 
 
 # annotations
@@ -33,7 +32,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -46,10 +44,8 @@
 .method private constructor <init>(Ljava/io/File;JI)V
     .locals 8
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -64,7 +60,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance p2, Ljava/lang/RuntimeException;
 
@@ -90,7 +85,6 @@
 
     throw p2
 
-    .line 4
     :cond_1
     :goto_0
     new-instance v7, Lcom/ifengyu/intercom/i/g$b;
@@ -117,7 +111,6 @@
 .method public static a(Landroid/content/Context;Ljava/lang/String;)Lcom/ifengyu/intercom/i/g;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     invoke-virtual {p0}, Landroid/content/Context;->getCacheDir()Ljava/io/File;
@@ -130,7 +123,6 @@
 
     const v1, 0x7fffffff
 
-    .line 2
     invoke-static {v0, p0, p1, v1}, Lcom/ifengyu/intercom/i/g;->a(Ljava/io/File;JI)Lcom/ifengyu/intercom/i/g;
 
     move-result-object p0
@@ -145,7 +137,6 @@
 
     const v2, 0x7fffffff
 
-    .line 3
     invoke-static {p0, v0, v1, v2}, Lcom/ifengyu/intercom/i/g;->a(Ljava/io/File;JI)Lcom/ifengyu/intercom/i/g;
 
     move-result-object p0
@@ -156,7 +147,6 @@
 .method public static a(Ljava/io/File;JI)Lcom/ifengyu/intercom/i/g;
     .locals 3
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/i/g;->b:Ljava/util/Map;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -187,12 +177,10 @@
 
     if-nez v0, :cond_0
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/i/g;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lcom/ifengyu/intercom/i/g;-><init>(Ljava/io/File;JI)V
 
-    .line 6
     sget-object p1, Lcom/ifengyu/intercom/i/g;->b:Ljava/util/Map;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -224,7 +212,6 @@
 .method private static a()Ljava/lang/String;
     .locals 2
 
-    .line 7
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -253,7 +240,6 @@
 
     const/4 v0, -0x1
 
-    .line 42
     invoke-virtual {p0, p1, p2, v0}, Lcom/ifengyu/intercom/i/g;->a(Ljava/lang/String;Ljava/io/Serializable;I)V
 
     return-void
@@ -264,13 +250,11 @@
 
     const/4 v0, 0x0
 
-    .line 43
     :try_start_0
     new-instance v1, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v1}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 44
     new-instance v2, Ljava/io/ObjectOutputStream;
 
     invoke-direct {v2, v1}, Ljava/io/ObjectOutputStream;-><init>(Ljava/io/OutputStream;)V
@@ -278,11 +262,9 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 45
     :try_start_1
     invoke-virtual {v2, p2}, Ljava/io/ObjectOutputStream;->writeObject(Ljava/lang/Object;)V
 
-    .line 46
     invoke-virtual {v1}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object p2
@@ -291,19 +273,16 @@
 
     if-eq p3, v0, :cond_0
 
-    .line 47
     invoke-virtual {p0, p1, p2, p3}, Lcom/ifengyu/intercom/i/g;->a(Ljava/lang/String;[BI)V
 
     goto :goto_0
 
-    .line 48
     :cond_0
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/i/g;->a(Ljava/lang/String;[B)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 49
     :goto_0
     :try_start_2
     invoke-virtual {v2}, Ljava/io/ObjectOutputStream;->close()V
@@ -334,14 +313,12 @@
     :catch_1
     move-exception p1
 
-    .line 50
     :goto_1
     :try_start_3
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
-    .line 51
     :try_start_4
     invoke-virtual {v0}, Ljava/io/ObjectOutputStream;->close()V
     :try_end_4
@@ -357,7 +334,6 @@
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
 
-    .line 52
     :catch_3
     throw p1
 .end method
@@ -365,7 +341,6 @@
 .method public a(Ljava/lang/String;[B)V
     .locals 2
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/i/g;->a:Lcom/ifengyu/intercom/i/g$b;
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/g$b;->a(Lcom/ifengyu/intercom/i/g$b;Ljava/lang/String;)Ljava/io/File;
@@ -374,7 +349,6 @@
 
     const/4 v0, 0x0
 
-    .line 9
     :try_start_0
     new-instance v1, Ljava/io/FileOutputStream;
 
@@ -383,18 +357,15 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_2
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 10
     :try_start_1
     invoke-virtual {v1, p2}, Ljava/io/FileOutputStream;->write([B)V
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 11
     :try_start_2
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->flush()V
 
-    .line 12
     invoke-virtual {v1}, Ljava/io/FileOutputStream;->close()V
     :try_end_2
     .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_0
@@ -428,7 +399,6 @@
     :catch_2
     move-exception p2
 
-    .line 13
     :goto_0
     :try_start_3
     invoke-virtual {p2}, Ljava/lang/Exception;->printStackTrace()V
@@ -437,11 +407,9 @@
 
     if-eqz v0, :cond_0
 
-    .line 14
     :try_start_4
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->flush()V
 
-    .line 15
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_3
@@ -451,11 +419,9 @@
     :catch_3
     move-exception p2
 
-    .line 16
     :goto_1
     invoke-virtual {p2}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 17
     :cond_0
     :goto_2
     iget-object p2, p0, Lcom/ifengyu/intercom/i/g;->a:Lcom/ifengyu/intercom/i/g$b;
@@ -467,11 +433,9 @@
     :goto_3
     if-eqz v0, :cond_1
 
-    .line 18
     :try_start_5
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->flush()V
 
-    .line 19
     invoke-virtual {v0}, Ljava/io/FileOutputStream;->close()V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_4
@@ -481,24 +445,20 @@
     :catch_4
     move-exception v0
 
-    .line 20
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 21
     :cond_1
     :goto_4
     iget-object v0, p0, Lcom/ifengyu/intercom/i/g;->a:Lcom/ifengyu/intercom/i/g$b;
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/g$b;->b(Lcom/ifengyu/intercom/i/g$b;Ljava/io/File;)V
 
-    .line 22
     throw p2
 .end method
 
 .method public a(Ljava/lang/String;[BI)V
     .locals 0
 
-    .line 23
     invoke-static {p3, p2}, Lcom/ifengyu/intercom/i/g$c;->a(I[B)[B
 
     move-result-object p2
@@ -513,7 +473,6 @@
 
     const/4 v0, 0x0
 
-    .line 24
     :try_start_0
     iget-object v1, p0, Lcom/ifengyu/intercom/i/g;->a:Lcom/ifengyu/intercom/i/g$b;
 
@@ -521,7 +480,6 @@
 
     move-result-object v1
 
-    .line 25
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v2
@@ -530,7 +488,6 @@
 
     return-object v0
 
-    .line 26
     :cond_0
     new-instance v2, Ljava/io/RandomAccessFile;
 
@@ -541,7 +498,6 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_3
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 27
     :try_start_1
     invoke-virtual {v2}, Ljava/io/RandomAccessFile;->length()J
 
@@ -551,17 +507,14 @@
 
     new-array v1, v1, [B
 
-    .line 28
     invoke-virtual {v2, v1}, Ljava/io/RandomAccessFile;->read([B)I
 
-    .line 29
     invoke-static {v1}, Lcom/ifengyu/intercom/i/g$c;->a([B)Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
-    .line 30
     invoke-static {v1}, Lcom/ifengyu/intercom/i/g$c;->b([B)[B
 
     move-result-object p1
@@ -569,7 +522,6 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_2
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 31
     :try_start_2
     invoke-virtual {v2}, Ljava/io/RandomAccessFile;->close()V
     :try_end_2
@@ -580,13 +532,11 @@
     :catch_0
     move-exception v0
 
-    .line 32
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_0
     return-object p1
 
-    .line 33
     :cond_1
     :try_start_3
     invoke-virtual {v2}, Ljava/io/RandomAccessFile;->close()V
@@ -598,10 +548,8 @@
     :catch_1
     move-exception v1
 
-    .line 34
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 35
     :goto_1
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/i/g;->c(Ljava/lang/String;)Z
 
@@ -622,7 +570,6 @@
 
     move-object v2, v0
 
-    .line 36
     :goto_2
     :try_start_4
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
@@ -631,7 +578,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 37
     :try_start_5
     invoke-virtual {v2}, Ljava/io/RandomAccessFile;->close()V
     :try_end_5
@@ -642,7 +588,6 @@
     :catch_4
     move-exception p1
 
-    .line 38
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_2
@@ -657,7 +602,6 @@
     :goto_4
     if-eqz v0, :cond_3
 
-    .line 39
     :try_start_6
     invoke-virtual {v0}, Ljava/io/RandomAccessFile;->close()V
     :try_end_6
@@ -668,10 +612,8 @@
     :catch_5
     move-exception v0
 
-    .line 40
     invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 41
     :cond_3
     :goto_5
     throw p1
@@ -680,7 +622,6 @@
 .method public b(Ljava/lang/String;)Ljava/lang/Object;
     .locals 4
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/i/g;->a(Ljava/lang/String;)[B
 
     move-result-object p1
@@ -689,7 +630,6 @@
 
     if-eqz p1, :cond_4
 
-    .line 2
     :try_start_0
     new-instance v1, Ljava/io/ByteArrayInputStream;
 
@@ -698,7 +638,6 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_4
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     :try_start_1
     new-instance p1, Ljava/io/ObjectInputStream;
 
@@ -707,7 +646,6 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_3
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 4
     :try_start_2
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->readObject()Ljava/lang/Object;
 
@@ -716,7 +654,6 @@
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 5
     :try_start_3
     invoke-virtual {v1}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_3
@@ -727,10 +664,8 @@
     :catch_0
     move-exception v1
 
-    .line 6
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 7
     :goto_0
     :try_start_4
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->close()V
@@ -742,7 +677,6 @@
     :catch_1
     move-exception p1
 
-    .line 8
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_1
@@ -789,7 +723,6 @@
 
     move-object v1, p1
 
-    .line 9
     :goto_2
     :try_start_5
     invoke-virtual {v2}, Ljava/lang/Exception;->printStackTrace()V
@@ -798,7 +731,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 10
     :try_start_6
     invoke-virtual {v1}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_6
@@ -809,14 +741,12 @@
     :catch_5
     move-exception v1
 
-    .line 11
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_0
     :goto_3
     if-eqz p1, :cond_1
 
-    .line 12
     :try_start_7
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->close()V
     :try_end_7
@@ -827,7 +757,6 @@
     :catch_6
     move-exception p1
 
-    .line 13
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_1
@@ -840,7 +769,6 @@
     :goto_5
     if-eqz v1, :cond_2
 
-    .line 14
     :try_start_8
     invoke-virtual {v1}, Ljava/io/ByteArrayInputStream;->close()V
     :try_end_8
@@ -851,14 +779,12 @@
     :catch_7
     move-exception v1
 
-    .line 15
     invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_2
     :goto_6
     if-eqz p1, :cond_3
 
-    .line 16
     :try_start_9
     invoke-virtual {p1}, Ljava/io/ObjectInputStream;->close()V
     :try_end_9
@@ -869,10 +795,8 @@
     :catch_8
     move-exception p1
 
-    .line 17
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 18
     :cond_3
     :goto_7
     throw v0
@@ -884,7 +808,6 @@
 .method public c(Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/i/g;->a:Lcom/ifengyu/intercom/i/g$b;
 
     invoke-static {v0, p1}, Lcom/ifengyu/intercom/i/g$b;->b(Lcom/ifengyu/intercom/i/g$b;Ljava/lang/String;)Z

@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/z;
 .super Ljava/lang/Object;
-.source "OpenDeviceId.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +32,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 1
     :try_start_0
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
@@ -46,17 +43,14 @@
 
     if-eq v1, v2, :cond_1
 
-    .line 2
     invoke-static {p0}, Lcom/umeng/analytics/pro/z;->b(Landroid/content/Context;)V
 
-    .line 3
     sget-object v1, Lcom/umeng/analytics/pro/z;->a:Lcom/umeng/analytics/pro/y;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     if-eqz v1, :cond_0
 
-    .line 4
     :try_start_1
     sget-object v1, Lcom/umeng/analytics/pro/z;->a:Lcom/umeng/analytics/pro/y;
 
@@ -75,12 +69,10 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 5
     monitor-exit v0
 
     return-object p0
 
-    .line 6
     :cond_1
     :try_start_2
     new-instance p0, Ljava/lang/IllegalStateException;
@@ -96,7 +88,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_2
     new-instance p0, Ljava/lang/RuntimeException;
 
@@ -117,7 +108,6 @@
 .method private static b(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/pro/z;->a:Lcom/umeng/analytics/pro/y;
 
     if-nez v0, :cond_1
@@ -126,12 +116,10 @@
 
     if-nez v0, :cond_1
 
-    .line 2
     const-class v0, Lcom/umeng/analytics/pro/z;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     sget-object v1, Lcom/umeng/analytics/pro/z;->a:Lcom/umeng/analytics/pro/y;
 
@@ -141,7 +129,6 @@
 
     if-nez v1, :cond_0
 
-    .line 4
     invoke-static {p0}, Lcom/umeng/analytics/pro/aa;->a(Landroid/content/Context;)Lcom/umeng/analytics/pro/y;
 
     move-result-object p0
@@ -150,10 +137,8 @@
 
     const/4 p0, 0x1
 
-    .line 5
     sput-boolean p0, Lcom/umeng/analytics/pro/z;->b:Z
 
-    .line 6
     :cond_0
     monitor-exit v0
 

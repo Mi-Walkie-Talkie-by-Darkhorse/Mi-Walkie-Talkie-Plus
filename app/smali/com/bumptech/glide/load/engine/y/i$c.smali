@@ -1,6 +1,5 @@
 .class interface abstract Lcom/bumptech/glide/load/engine/y/i$c;
 .super Ljava/lang/Object;
-.source "MemorySizeCalculator.java"
 
 
 # annotations

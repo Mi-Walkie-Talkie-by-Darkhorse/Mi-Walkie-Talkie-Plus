@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/av$1;
 .super Ljava/lang/Object;
-.source "CityObject.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/bn$a;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/av;Ljava/lang/String;Ljava/io/File;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/av$1;->c:Lcom/amap/api/col/l3/av;
 
     iput-object p2, p0, Lcom/amap/api/col/l3/av$1;->a:Ljava/lang/String;
@@ -46,7 +44,6 @@
 .method public final a()V
     .locals 2
 
-    .line 5
     :try_start_0
     new-instance v0, Ljava/io/File;
 
@@ -56,19 +53,16 @@
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/av$1;->b:Ljava/io/File;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/bt;->b(Ljava/io/File;)Z
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/av$1;->c:Lcom/amap/api/col/l3/av;
 
     const/16 v1, 0x64
 
     invoke-virtual {v0, v1}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->setCompleteCode(I)V
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/av$1;->c:Lcom/amap/api/col/l3/av;
 
     iget-object v0, v0, Lcom/amap/api/col/l3/av;->l:Lcom/amap/api/col/l3/bz;
@@ -79,7 +73,6 @@
 
     return-void
 
-    .line 9
     :catch_0
     iget-object v0, p0, Lcom/amap/api/col/l3/av$1;->c:Lcom/amap/api/col/l3/av;
 
@@ -99,7 +92,6 @@
 .method public final a(F)V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/av$1;->c:Lcom/amap/api/col/l3/av;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getcompleteCode()I
@@ -122,7 +114,6 @@
 
     if-lez v0, :cond_0
 
-    .line 2
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -141,12 +132,10 @@
 
     if-lez v4, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/av$1;->c:Lcom/amap/api/col/l3/av;
 
     invoke-virtual {v0, p1}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->setCompleteCode(I)V
 
-    .line 4
     iget-object p1, p0, Lcom/amap/api/col/l3/av$1;->c:Lcom/amap/api/col/l3/av;
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -162,7 +151,6 @@
 .method public final b()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/av$1;->c:Lcom/amap/api/col/l3/av;
 
     iget-object v1, v0, Lcom/amap/api/col/l3/av;->l:Lcom/amap/api/col/l3/bz;

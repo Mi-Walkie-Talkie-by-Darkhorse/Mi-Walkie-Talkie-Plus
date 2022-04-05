@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;
 .super Ljava/lang/Object;
-.source "IAMapListener.java"
 
 
 # virtual methods

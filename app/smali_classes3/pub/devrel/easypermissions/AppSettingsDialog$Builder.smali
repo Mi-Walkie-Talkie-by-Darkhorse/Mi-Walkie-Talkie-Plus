@@ -1,6 +1,5 @@
 .class public Lpub/devrel/easypermissions/AppSettingsDialog$Builder;
 .super Ljava/lang/Object;
-.source "AppSettingsDialog.java"
 
 
 # annotations
@@ -40,18 +39,14 @@
         .end annotation
     .end param
 
-    .line 16
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 17
     iput v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRequestCode:I
 
-    .line 18
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mActivityOrFragment:Ljava/lang/Object;
 
-    .line 19
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mContext:Landroid/content/Context;
 
     return-void
@@ -70,21 +65,16 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRequestCode:I
 
-    .line 3
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mActivityOrFragment:Ljava/lang/Object;
 
-    .line 4
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mContext:Landroid/content/Context;
 
-    .line 5
     iput-object p2, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRationale:Ljava/lang/String;
 
     return-void
@@ -100,18 +90,14 @@
         api = 0xb
     .end annotation
 
-    .line 24
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 25
     iput v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRequestCode:I
 
-    .line 26
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mActivityOrFragment:Ljava/lang/Object;
 
-    .line 27
     invoke-virtual {p1}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object p1
@@ -138,25 +124,20 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 11
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 12
     iput v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRequestCode:I
 
-    .line 13
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mActivityOrFragment:Ljava/lang/Object;
 
-    .line 14
     invoke-virtual {p1}, Landroid/app/Fragment;->getActivity()Landroid/app/Activity;
 
     move-result-object p1
 
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mContext:Landroid/content/Context;
 
-    .line 15
     iput-object p2, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRationale:Ljava/lang/String;
 
     return-void
@@ -169,18 +150,14 @@
         .end annotation
     .end param
 
-    .line 20
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 21
     iput v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRequestCode:I
 
-    .line 22
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mActivityOrFragment:Ljava/lang/Object;
 
-    .line 23
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object p1
@@ -203,25 +180,20 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 7
     iput v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRequestCode:I
 
-    .line 8
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mActivityOrFragment:Ljava/lang/Object;
 
-    .line 9
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mContext:Landroid/content/Context;
 
-    .line 10
     iput-object p2, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRationale:Ljava/lang/String;
 
     return-void
@@ -232,7 +204,6 @@
 .method public build()Lpub/devrel/easypermissions/AppSettingsDialog;
     .locals 11
 
-    .line 1
     iget-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRationale:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -245,7 +216,6 @@
 
     sget v1, Lpub/devrel/easypermissions/R$string;->rationale_ask_again:I
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -258,7 +228,6 @@
     :goto_0
     iput-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRationale:Ljava/lang/String;
 
-    .line 3
     iget-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mTitle:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -271,7 +240,6 @@
 
     sget v1, Lpub/devrel/easypermissions/R$string;->title_settings_dialog:I
 
-    .line 4
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -284,7 +252,6 @@
     :goto_1
     iput-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mTitle:Ljava/lang/String;
 
-    .line 5
     iget-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mPositiveButton:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -297,7 +264,6 @@
 
     const v1, 0x104000a
 
-    .line 6
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -310,7 +276,6 @@
     :goto_2
     iput-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mPositiveButton:Ljava/lang/String;
 
-    .line 7
     iget-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mNegativeButton:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -323,7 +288,6 @@
 
     const/high16 v1, 0x1040000
 
-    .line 8
     invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 
     move-result-object v0
@@ -336,7 +300,6 @@
     :goto_3
     iput-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mNegativeButton:Ljava/lang/String;
 
-    .line 9
     iget v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRequestCode:I
 
     if-lez v0, :cond_4
@@ -349,7 +312,6 @@
     :goto_4
     iput v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRequestCode:I
 
-    .line 10
     new-instance v0, Lpub/devrel/easypermissions/AppSettingsDialog;
 
     iget-object v2, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mActivityOrFragment:Ljava/lang/Object;
@@ -384,7 +346,6 @@
         .end annotation
     .end param
 
-    .line 4
     iget-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -399,7 +360,6 @@
 .method public setNegativeButton(Ljava/lang/String;)Lpub/devrel/easypermissions/AppSettingsDialog$Builder;
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mNegativeButton:Ljava/lang/String;
 
     return-object p0
@@ -410,10 +370,8 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mNegativeButton:Ljava/lang/String;
 
-    .line 2
     iput-object p2, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mNegativeListener:Landroid/content/DialogInterface$OnClickListener;
 
     return-object p0
@@ -426,7 +384,6 @@
         .end annotation
     .end param
 
-    .line 2
     iget-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -441,7 +398,6 @@
 .method public setPositiveButton(Ljava/lang/String;)Lpub/devrel/easypermissions/AppSettingsDialog$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mPositiveButton:Ljava/lang/String;
 
     return-object p0
@@ -454,7 +410,6 @@
         .end annotation
     .end param
 
-    .line 2
     iget-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -469,7 +424,6 @@
 .method public setRationale(Ljava/lang/String;)Lpub/devrel/easypermissions/AppSettingsDialog$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRationale:Ljava/lang/String;
 
     return-object p0
@@ -478,7 +432,6 @@
 .method public setRequestCode(I)Lpub/devrel/easypermissions/AppSettingsDialog$Builder;
     .locals 0
 
-    .line 1
     iput p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mRequestCode:I
 
     return-object p0
@@ -491,7 +444,6 @@
         .end annotation
     .end param
 
-    .line 2
     iget-object v0, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
@@ -506,7 +458,6 @@
 .method public setTitle(Ljava/lang/String;)Lpub/devrel/easypermissions/AppSettingsDialog$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lpub/devrel/easypermissions/AppSettingsDialog$Builder;->mTitle:Ljava/lang/String;
 
     return-object p0

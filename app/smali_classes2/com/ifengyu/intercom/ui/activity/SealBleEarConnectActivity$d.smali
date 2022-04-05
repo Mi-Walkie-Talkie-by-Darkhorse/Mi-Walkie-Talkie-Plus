@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;
 .super Landroid/content/BroadcastReceiver;
-.source "SealBleEarConnectActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -35,14 +33,12 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 4
 
-    .line 1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
 
     const-string v0, "android.bluetooth.device.action.FOUND"
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -51,26 +47,22 @@
 
     const-string p1, "android.bluetooth.device.extra.DEVICE"
 
-    .line 3
     invoke-virtual {p2, p1}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/bluetooth/BluetoothDevice;
 
-    .line 4
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 5
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
     if-nez v1, :cond_4
 
-    .line 6
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getBluetoothClass()Landroid/bluetooth/BluetoothClass;
 
     move-result-object v1
@@ -83,7 +75,6 @@
 
     if-ne v1, v2, :cond_4
 
-    .line 7
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->e(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Ljava/lang/String;
@@ -110,17 +101,14 @@
 
     const-string v2, "android.bluetooth.device.extra.RSSI"
 
-    .line 8
     invoke-virtual {p2, v2, v1}, Landroid/content/Intent;->getShortExtra(Ljava/lang/String;S)S
 
     move-result p2
 
-    .line 9
     new-instance v1, Lcom/ifengyu/intercom/bean/BtEarBean;
 
     invoke-direct {v1, p1, p2}, Lcom/ifengyu/intercom/bean/BtEarBean;-><init>(Landroid/bluetooth/BluetoothDevice;I)V
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->k(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Ljava/util/HashMap;
@@ -134,7 +122,6 @@
     :cond_0
     const-string p2, "android.bluetooth.adapter.action.DISCOVERY_STARTED"
 
-    .line 11
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
@@ -143,7 +130,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->f(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Ljava/lang/String;
@@ -154,7 +140,6 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->n(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Landroid/widget/TextView;
@@ -171,7 +156,6 @@
 
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->c(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Landroid/widget/TextView;
@@ -186,7 +170,6 @@
 
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 15
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->g(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;
@@ -202,14 +185,12 @@
     :cond_1
     const-string p2, "android.bluetooth.adapter.action.DISCOVERY_FINISHED"
 
-    .line 16
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_4
 
-    .line 17
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->h(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Ljava/lang/String;
@@ -220,7 +201,6 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->c(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 18
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->k(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Ljava/util/HashMap;
@@ -233,7 +213,6 @@
 
     if-nez p1, :cond_2
 
-    .line 19
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->n(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Landroid/widget/TextView;
@@ -244,7 +223,6 @@
 
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 20
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->c(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Landroid/widget/TextView;
@@ -253,14 +231,12 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(I)V
 
-    .line 21
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->i(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)V
 
     goto :goto_0
 
-    .line 22
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
@@ -270,7 +246,6 @@
 
     if-nez p1, :cond_3
 
-    .line 23
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->n(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Landroid/widget/TextView;
@@ -281,7 +256,6 @@
 
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(I)V
 
-    .line 24
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->c(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Landroid/widget/TextView;
@@ -294,7 +268,6 @@
 
     goto :goto_0
 
-    .line 25
     :cond_3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
@@ -302,7 +275,6 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->a(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;Z)Z
 
-    .line 26
     :goto_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
@@ -314,12 +286,10 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/widget/view/WaterRippleView;->b(I)V
 
-    .line 27
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->y()V
 
-    .line 28
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->z()V

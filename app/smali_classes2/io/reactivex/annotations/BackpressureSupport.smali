@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lio/reactivex/annotations/BackpressureSupport;
 .super Ljava/lang/Object;
-.source "BackpressureSupport.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

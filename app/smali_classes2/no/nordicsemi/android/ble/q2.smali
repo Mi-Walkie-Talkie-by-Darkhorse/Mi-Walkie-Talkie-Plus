@@ -1,6 +1,5 @@
 .class public abstract Lno/nordicsemi/android/ble/q2;
 .super Lno/nordicsemi/android/ble/p2;
-.source "TimeoutableValueRequest.java"
 
 
 # annotations

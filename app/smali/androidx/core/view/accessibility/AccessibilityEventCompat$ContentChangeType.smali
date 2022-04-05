@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/view/accessibility/AccessibilityEventCompat$ContentChangeType;
 .super Ljava/lang/Object;
-.source "AccessibilityEventCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

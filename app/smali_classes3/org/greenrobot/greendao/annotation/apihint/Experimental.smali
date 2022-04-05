@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/greenrobot/greendao/annotation/apihint/Experimental;
 .super Ljava/lang/Object;
-.source "Experimental.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/subscriptions/BooleanSubscription;
 .super Ljava/util/concurrent/atomic/AtomicBoolean;
-.source "BooleanSubscription.java"
 
 # interfaces
 .implements Lc/a/d;
@@ -14,7 +13,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
 
     return-void
@@ -27,7 +25,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->lazySet(Z)V
 
     return-void
@@ -36,7 +33,6 @@
 .method public isCancelled()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
     move-result v0
@@ -47,7 +43,6 @@
 .method public request(J)V
     .locals 0
 
-    .line 1
     invoke-static {p1, p2}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(J)Z
 
     return-void
@@ -56,7 +51,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

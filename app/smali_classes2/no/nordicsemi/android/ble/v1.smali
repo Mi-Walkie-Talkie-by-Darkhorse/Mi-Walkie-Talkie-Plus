@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/v1;
 .super Ljava/lang/Object;
-.source "BleManagerCallbacks.java"
 
 
 # annotations

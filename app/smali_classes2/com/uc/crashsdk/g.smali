@@ -1,6 +1,5 @@
 .class public Lcom/uc/crashsdk/g;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # static fields
@@ -31,7 +30,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     const-class v0, Lcom/uc/crashsdk/g;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -44,38 +42,28 @@
 
     const/4 v0, 0x0
 
-    .line 2
     sput-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
-    .line 3
     sput-object v0, Lcom/uc/crashsdk/g;->e:Lcom/uc/crashsdk/export/VersionInfo;
 
-    .line 4
     sput-object v0, Lcom/uc/crashsdk/g;->a:Ljava/lang/RuntimeException;
 
-    .line 5
     sput-object v0, Lcom/uc/crashsdk/g;->b:Ljava/lang/RuntimeException;
 
-    .line 6
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     sput-object v1, Lcom/uc/crashsdk/g;->f:Ljava/lang/Object;
 
-    .line 7
     sput-object v0, Lcom/uc/crashsdk/g;->g:Ljava/lang/String;
 
-    .line 8
     sput-object v0, Lcom/uc/crashsdk/g;->h:Ljava/lang/String;
 
-    .line 9
     sput-object v0, Lcom/uc/crashsdk/g;->i:Ljava/lang/String;
 
-    .line 10
     sput-object v0, Lcom/uc/crashsdk/g;->j:Ljava/lang/String;
 
-    .line 11
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -88,7 +76,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -97,7 +84,6 @@
 .method static A()J
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-wide v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxUploadBytesPerDay:J
@@ -108,7 +94,6 @@
 .method static B()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxUploadBuiltinLogCountPerDay:I
@@ -119,7 +104,6 @@
 .method static C()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxUploadCustomLogCountPerDay:I
@@ -130,7 +114,6 @@
 .method static D()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxCustomLogCountPerTypePerDay:I
@@ -141,7 +124,6 @@
 .method static E()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mInfoUpdateInterval:I
@@ -152,7 +134,6 @@
 .method static F()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mInfoSaveFrequency:I
@@ -163,7 +144,6 @@
 .method static G()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mReservedJavaFileHandleCount:I
@@ -174,7 +154,6 @@
 .method static H()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mFdDumpMinLimit:I
@@ -185,7 +164,6 @@
 .method static I()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mThreadsDumpMinLimit:I
@@ -196,7 +174,6 @@
 .method static J()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mAutoDetectLifeCycle:Z
@@ -207,7 +184,6 @@
 .method static K()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMonitorBattery:Z
@@ -218,7 +194,6 @@
 .method static L()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mAnrTraceStrategy:I
@@ -229,7 +204,6 @@
 .method public static M()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     if-eqz v0, :cond_1
@@ -255,7 +229,6 @@
 .method static N()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     if-eqz v0, :cond_1
@@ -281,7 +254,6 @@
 .method public static O()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mEnableStatReport:Z
@@ -292,7 +264,6 @@
 .method public static P()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mIsInternational:Z
@@ -303,7 +274,6 @@
 .method public static Q()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mAddPvForNewDay:Z
@@ -314,7 +284,6 @@
 .method public static R()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->e:Lcom/uc/crashsdk/export/VersionInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/VersionInfo;->mVersion:Ljava/lang/String;
@@ -325,14 +294,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/uc/crashsdk/a;->a()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/uc/crashsdk/g;->e:Lcom/uc/crashsdk/export/VersionInfo;
 
@@ -348,7 +315,6 @@
 .method public static S()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->e:Lcom/uc/crashsdk/export/VersionInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/VersionInfo;->mSubVersion:Ljava/lang/String;
@@ -363,7 +329,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     sget-object v0, Lcom/uc/crashsdk/g;->e:Lcom/uc/crashsdk/export/VersionInfo;
 
@@ -375,7 +340,6 @@
 .method public static T()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->e:Lcom/uc/crashsdk/export/VersionInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/VersionInfo;->mBuildId:Ljava/lang/String;
@@ -386,14 +350,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/uc/crashsdk/g;->X()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/uc/crashsdk/g;->e:Lcom/uc/crashsdk/export/VersionInfo;
 
@@ -409,12 +371,10 @@
 .method public static U()Ljava/lang/String;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->h:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -445,7 +405,6 @@
 
     sput-object v0, Lcom/uc/crashsdk/g;->h:Ljava/lang/String;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/uc/crashsdk/g;->h:Ljava/lang/String;
 
@@ -455,12 +414,10 @@
 .method static V()Ljava/lang/String;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->i:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -491,7 +448,6 @@
 
     sput-object v0, Lcom/uc/crashsdk/g;->i:Ljava/lang/String;
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/uc/crashsdk/g;->i:Ljava/lang/String;
 
@@ -501,12 +457,10 @@
 .method static W()Ljava/lang/String;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->j:Ljava/lang/String;
 
     if-nez v0, :cond_2
 
-    .line 2
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mLogsBackupPathName:Ljava/lang/String;
@@ -517,7 +471,6 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mLogsBackupPathName:Ljava/lang/String;
@@ -526,7 +479,6 @@
 
     move-result-object v0
 
-    .line 4
     sget-object v1, Ljava/io/File;->separator:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
@@ -535,7 +487,6 @@
 
     if-nez v1, :cond_0
 
-    .line 5
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -550,13 +501,11 @@
 
     move-result-object v0
 
-    .line 6
     :cond_0
     sput-object v0, Lcom/uc/crashsdk/g;->j:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 7
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -584,7 +533,6 @@
 
     move-result-object v0
 
-    .line 8
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -611,7 +559,6 @@
 
     sput-object v0, Lcom/uc/crashsdk/g;->j:Ljava/lang/String;
 
-    .line 9
     :cond_2
     :goto_0
     sget-object v0, Lcom/uc/crashsdk/g;->j:Ljava/lang/String;
@@ -622,7 +569,6 @@
 .method private static X()Ljava/lang/String;
     .locals 5
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->g:Ljava/lang/String;
 
     if-eqz v0, :cond_0
@@ -632,7 +578,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     new-instance v1, Ljava/util/zip/ZipFile;
 
@@ -647,24 +592,20 @@
     :try_start_1
     const-string v0, "classes.dex"
 
-    .line 3
     invoke-virtual {v1, v0}, Ljava/util/zip/ZipFile;->getEntry(Ljava/lang/String;)Ljava/util/zip/ZipEntry;
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Ljava/util/zip/ZipEntry;->getCrc()J
 
     move-result-wide v2
 
-    .line 5
     invoke-static {v2, v3}, Ljava/lang/Long;->toHexString(J)Ljava/lang/String;
 
     move-result-object v0
 
     sput-object v0, Lcom/uc/crashsdk/g;->g:Ljava/lang/String;
 
-    .line 6
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v2, "version unique build id: "
@@ -685,7 +626,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 7
     :try_start_2
     invoke-virtual {v1}, Ljava/util/zip/ZipFile;->close()V
     :try_end_2
@@ -711,23 +651,19 @@
     :try_start_3
     const-string v2, ""
 
-    .line 8
     sput-object v2, Lcom/uc/crashsdk/g;->g:Ljava/lang/String;
 
-    .line 9
     invoke-static {v0}, Lcom/uc/crashsdk/a/g;->a(Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_3
 
     if-eqz v1, :cond_1
 
-    .line 10
     :try_start_4
     invoke-virtual {v1}, Ljava/util/zip/ZipFile;->close()V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
-    .line 11
     :catchall_2
     :cond_1
     :goto_1
@@ -740,13 +676,11 @@
 
     if-eqz v1, :cond_2
 
-    .line 12
     :try_start_5
     invoke-virtual {v1}, Ljava/util/zip/ZipFile;->close()V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_4
 
-    .line 13
     :catchall_4
     :cond_2
     throw v0
@@ -755,7 +689,6 @@
 .method private static Y()V
     .locals 5
 
-    .line 1
     sget-boolean v0, Lcom/uc/crashsdk/b;->d:Z
 
     if-eqz v0, :cond_0
@@ -764,7 +697,6 @@
 
     const-wide/16 v1, 0x1
 
-    .line 2
     sget-object v3, Lcom/uc/crashsdk/a;->b:Ljava/lang/String;
 
     const/4 v4, 0x0
@@ -780,19 +712,16 @@
 
     if-nez p0, :cond_1
 
-    .line 26
     sget-object p0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     if-nez p0, :cond_0
 
-    .line 27
     new-instance p0, Lcom/uc/crashsdk/export/CustomInfo;
 
     invoke-direct {p0}, Lcom/uc/crashsdk/export/CustomInfo;-><init>()V
 
     goto :goto_0
 
-    .line 28
     :cond_0
     new-instance v0, Lcom/uc/crashsdk/export/CustomInfo;
 
@@ -800,7 +729,6 @@
 
     move-object p0, v0
 
-    .line 29
     :cond_1
     :goto_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -811,12 +739,10 @@
 
     move-result-object v0
 
-    .line 30
     invoke-virtual {p1}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
     move-result-object v1
 
-    .line 31
     invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object v1
@@ -834,7 +760,6 @@
 
     check-cast v2, Ljava/lang/String;
 
-    .line 32
     array-length v3, v0
 
     const/4 v4, 0x0
@@ -844,7 +769,6 @@
 
     aget-object v5, v0, v4
 
-    .line 33
     invoke-virtual {v5}, Ljava/lang/reflect/Field;->getName()Ljava/lang/String;
 
     move-result-object v6
@@ -855,12 +779,10 @@
 
     if-eqz v6, :cond_4
 
-    .line 34
     invoke-virtual {p1, v2}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v6
 
-    .line 35
     :try_start_0
     invoke-virtual {v5, p0, v6}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
     :try_end_0
@@ -871,10 +793,8 @@
     :catch_0
     move-exception p0
 
-    .line 36
     invoke-static {p0}, Lcom/uc/crashsdk/a/g;->a(Ljava/lang/Throwable;)V
 
-    .line 37
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     new-instance p1, Ljava/lang/StringBuilder;
@@ -889,7 +809,6 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 38
     invoke-virtual {v5}, Ljava/lang/reflect/Field;->getType()Ljava/lang/Class;
 
     move-result-object v0
@@ -906,7 +825,6 @@
 
     if-eqz v6, :cond_3
 
-    .line 39
     invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -944,19 +862,16 @@
 .method public static a(Landroid/os/Bundle;)Lcom/uc/crashsdk/export/VersionInfo;
     .locals 3
 
-    .line 40
     sget-object v0, Lcom/uc/crashsdk/g;->e:Lcom/uc/crashsdk/export/VersionInfo;
 
     if-nez v0, :cond_0
 
-    .line 41
     new-instance v0, Lcom/uc/crashsdk/export/VersionInfo;
 
     invoke-direct {v0}, Lcom/uc/crashsdk/export/VersionInfo;-><init>()V
 
     goto :goto_0
 
-    .line 42
     :cond_0
     new-instance v1, Lcom/uc/crashsdk/export/VersionInfo;
 
@@ -967,76 +882,63 @@
     :goto_0
     const-string v1, "mVersion"
 
-    .line 43
     invoke-virtual {p0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 44
     invoke-static {v1}, Lcom/uc/crashsdk/a/g;->a(Ljava/lang/String;)Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 45
     iput-object v1, v0, Lcom/uc/crashsdk/export/VersionInfo;->mVersion:Ljava/lang/String;
 
     :cond_1
     const-string v1, "mSubVersion"
 
-    .line 46
     invoke-virtual {p0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 47
     invoke-static {v1}, Lcom/uc/crashsdk/a/g;->a(Ljava/lang/String;)Z
 
     move-result v2
 
     if-nez v2, :cond_2
 
-    .line 48
     iput-object v1, v0, Lcom/uc/crashsdk/export/VersionInfo;->mSubVersion:Ljava/lang/String;
 
     :cond_2
     const-string v1, "mBuildId"
 
-    .line 49
     invoke-virtual {p0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 50
     invoke-static {v1}, Lcom/uc/crashsdk/a/g;->a(Ljava/lang/String;)Z
 
     move-result v2
 
     if-nez v2, :cond_3
 
-    .line 51
     iput-object v1, v0, Lcom/uc/crashsdk/export/VersionInfo;->mBuildId:Ljava/lang/String;
 
     :cond_3
     const-string v1, "crver"
 
-    .line 52
     invoke-virtual {p0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 53
     invoke-static {p0}, Lcom/uc/crashsdk/a/g;->a(Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_4
 
-    .line 54
     sput-object p0, Lcom/uc/crashsdk/a;->b:Ljava/lang/String;
 
-    .line 55
     invoke-static {}, Lcom/uc/crashsdk/g;->Y()V
 
     :cond_4
@@ -1050,7 +952,6 @@
 
     const-string v0, "_"
 
-    .line 24
     invoke-virtual {p0, v0}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -1059,7 +960,6 @@
 
     const-string v1, "-"
 
-    .line 25
     invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -1071,20 +971,16 @@
 .method static a()V
     .locals 2
 
-    .line 18
     invoke-static {}, Lcom/uc/crashsdk/b;->v()Z
 
-    .line 19
     invoke-static {}, Lcom/uc/crashsdk/b;->u()Z
 
-    .line 20
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mBackupLogs:Z
 
     if-eqz v0, :cond_0
 
-    .line 21
     new-instance v0, Ljava/io/File;
 
     invoke-static {}, Lcom/uc/crashsdk/g;->W()Ljava/lang/String;
@@ -1093,14 +989,12 @@
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 22
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 23
     invoke-virtual {v0}, Ljava/io/File;->mkdirs()Z
 
     :cond_0
@@ -1110,7 +1004,6 @@
 .method public static a(Lcom/uc/crashsdk/export/CustomInfo;)V
     .locals 1
 
-    .line 11
     sget-boolean v0, Lcom/uc/crashsdk/g;->c:Z
 
     if-nez v0, :cond_1
@@ -1128,7 +1021,6 @@
 
     throw p0
 
-    .line 12
     :cond_1
     :goto_0
     sget-boolean v0, Lcom/uc/crashsdk/g;->c:Z
@@ -1148,7 +1040,6 @@
 
     throw p0
 
-    .line 13
     :cond_3
     :goto_1
     iget-object v0, p0, Lcom/uc/crashsdk/export/CustomInfo;->mTagFilesFolderName:Ljava/lang/String;
@@ -1163,7 +1054,6 @@
 
     return-void
 
-    .line 14
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -1177,24 +1067,20 @@
 .method public static a(Lcom/uc/crashsdk/export/CustomInfo;Lcom/uc/crashsdk/export/VersionInfo;)V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/uc/crashsdk/export/CustomInfo;
 
     invoke-direct {v0, p0}, Lcom/uc/crashsdk/export/CustomInfo;-><init>(Lcom/uc/crashsdk/export/CustomInfo;)V
 
-    .line 2
     sput-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     invoke-static {v0}, Lcom/uc/crashsdk/g;->c(Lcom/uc/crashsdk/export/CustomInfo;)V
 
-    .line 3
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mZipLog:Z
 
     if-nez v0, :cond_0
 
-    .line 4
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1215,7 +1101,6 @@
 
     sput-object v0, Lcom/uc/crashsdk/g;->a:Ljava/lang/RuntimeException;
 
-    .line 5
     :cond_0
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
@@ -1223,7 +1108,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 6
     new-instance v0, Ljava/lang/RuntimeException;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1244,7 +1128,6 @@
 
     sput-object v0, Lcom/uc/crashsdk/g;->b:Ljava/lang/RuntimeException;
 
-    .line 7
     :cond_1
     new-instance p0, Lcom/uc/crashsdk/export/VersionInfo;
 
@@ -1252,14 +1135,12 @@
 
     sput-object p0, Lcom/uc/crashsdk/g;->e:Lcom/uc/crashsdk/export/VersionInfo;
 
-    .line 8
     invoke-static {}, Lcom/uc/crashsdk/b;->I()Z
 
     move-result p0
 
     if-nez p0, :cond_2
 
-    .line 9
     :try_start_0
     invoke-static {}, Lcom/uc/crashsdk/g;->a()V
     :try_end_0
@@ -1270,7 +1151,6 @@
     :catchall_0
     move-exception p0
 
-    .line 10
     invoke-static {p0}, Lcom/uc/crashsdk/a/g;->a(Ljava/lang/Throwable;)V
 
     :cond_2
@@ -1280,12 +1160,10 @@
 .method public static a(Lcom/uc/crashsdk/export/VersionInfo;)V
     .locals 2
 
-    .line 15
     sget-object v0, Lcom/uc/crashsdk/g;->f:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 16
     :try_start_0
     new-instance v1, Lcom/uc/crashsdk/export/VersionInfo;
 
@@ -1333,7 +1211,6 @@
 
     invoke-static {p0}, Lcom/uc/crashsdk/JNIBridge;->cmd(I)J
 
-    .line 17
     :cond_0
     monitor-exit v0
 
@@ -1365,7 +1242,6 @@
 
     goto :goto_0
 
-    .line 56
     :cond_1
     invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1383,7 +1259,6 @@
 .method public static b(Lcom/uc/crashsdk/export/CustomInfo;)I
     .locals 9
 
-    .line 20
     sget-object v0, Lcom/uc/crashsdk/g;->k:Ljava/lang/Object;
 
     monitor-enter v0
@@ -1394,7 +1269,6 @@
 
     goto/16 :goto_4
 
-    .line 21
     :cond_0
     :try_start_0
     invoke-static {p0}, Lcom/uc/crashsdk/g;->c(Lcom/uc/crashsdk/export/CustomInfo;)V
@@ -2361,7 +2235,6 @@
     :catchall_0
     move-exception p0
 
-    .line 22
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2372,7 +2245,6 @@
 .method public static b()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/uc/crashsdk/a/g;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -2381,7 +2253,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 2
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mTagFilesFolderName:Ljava/lang/String;
@@ -2390,7 +2261,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 3
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mCrashLogsFolderName:Ljava/lang/String;
@@ -2399,7 +2269,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 4
     invoke-static {}, Lcom/uc/crashsdk/g;->W()Ljava/lang/String;
 
     move-result-object v0
@@ -2408,7 +2277,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 5
     invoke-static {}, Lcom/uc/crashsdk/e;->h()Ljava/lang/String;
 
     move-result-object v0
@@ -2417,7 +2285,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 6
     invoke-static {}, Lcom/uc/crashsdk/b;->a()Ljava/lang/String;
 
     move-result-object v0
@@ -2426,7 +2293,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 7
     invoke-static {}, Lcom/uc/crashsdk/g;->R()Ljava/lang/String;
 
     move-result-object v0
@@ -2435,7 +2301,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 8
     invoke-static {}, Lcom/uc/crashsdk/g;->S()Ljava/lang/String;
 
     move-result-object v0
@@ -2444,7 +2309,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 9
     invoke-static {}, Lcom/uc/crashsdk/g;->T()Ljava/lang/String;
 
     move-result-object v0
@@ -2457,24 +2321,20 @@
 
     const-string v1, "210105150455"
 
-    .line 10
     invoke-static {v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 11
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     const/16 v1, 0x74
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 12
     sget-object v0, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
 
     const/16 v1, 0x75
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 13
     invoke-static {}, Lcom/uc/crashsdk/e;->p()Ljava/lang/String;
 
     move-result-object v0
@@ -2483,7 +2343,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 14
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mCallNativeDefaultHandler:Z
@@ -2492,7 +2351,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(IZ)J
 
-    .line 15
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mDumpUserSolibBuildId:Z
@@ -2501,7 +2359,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(IZ)J
 
-    .line 16
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-wide v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mReservedNativeMemoryBytes:J
@@ -2510,7 +2367,6 @@
 
     invoke-static {v2, v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IJ)J
 
-    .line 17
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mNativeCrashLogFileName:Ljava/lang/String;
@@ -2519,7 +2375,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 18
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mUnexpCrashLogFileName:Ljava/lang/String;
@@ -2528,7 +2383,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 19
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mAppId:Ljava/lang/String;
@@ -2543,7 +2397,6 @@
 .method public static c()V
     .locals 5
 
-    .line 23
     invoke-static {}, Lcom/uc/crashsdk/g;->N()Z
 
     move-result v0
@@ -2552,7 +2405,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(IZ)J
 
-    .line 24
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mBackupLogs:Z
@@ -2561,7 +2413,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(IZ)J
 
-    .line 25
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mCrashRestartInterval:I
@@ -2572,7 +2423,6 @@
 
     invoke-static {v2, v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IJ)J
 
-    .line 26
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxBuiltinLogFilesCount:I
@@ -2583,7 +2433,6 @@
 
     invoke-static {v2, v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IJ)J
 
-    .line 27
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxNativeLogcatLineCount:I
@@ -2594,7 +2443,6 @@
 
     invoke-static {v2, v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IJ)J
 
-    .line 28
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxUnexpLogcatLineCount:I
@@ -2605,7 +2453,6 @@
 
     invoke-static {v2, v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IJ)J
 
-    .line 29
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxAnrLogcatLineCount:I
@@ -2616,7 +2463,6 @@
 
     invoke-static {v2, v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IJ)J
 
-    .line 30
     invoke-static {}, Lcom/uc/crashsdk/g;->M()Z
 
     move-result v0
@@ -2625,7 +2471,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(IZ)J
 
-    .line 31
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     int-to-long v0, v0
@@ -2634,7 +2479,6 @@
 
     invoke-static {v2, v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IJ)J
 
-    .line 32
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mOmitNativeCrash:Z
@@ -2643,7 +2487,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(IZ)J
 
-    .line 33
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxAnrLogCountPerProcess:I
@@ -2654,7 +2497,6 @@
 
     invoke-static {v2, v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IJ)J
 
-    .line 34
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-wide v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mDisableSignals:J
@@ -2663,7 +2505,6 @@
 
     invoke-static {v2, v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IJ)J
 
-    .line 35
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-wide v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mDisableBackgroundSignals:J
@@ -2672,7 +2513,6 @@
 
     invoke-static {v2, v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IJ)J
 
-    .line 36
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mZipLog:Z
@@ -2686,7 +2526,6 @@
     :cond_0
     const-wide/16 v0, 0x0
 
-    .line 37
     :goto_0
     sget-object v2, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
@@ -2696,12 +2535,10 @@
 
     const/4 v4, 0x3
 
-    .line 38
     invoke-static {v4, v0, v1, v2, v3}, Lcom/uc/crashsdk/JNIBridge;->nativeSet(IJLjava/lang/String;[Ljava/lang/Object;)J
 
     const/4 v0, 0x4
 
-    .line 39
     sget-object v1, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v1, v1, Lcom/uc/crashsdk/export/CustomInfo;->mLogMaxBytesLimit:I
@@ -2712,7 +2549,6 @@
 
     const/16 v0, 0x77
 
-    .line 40
     sget-object v1, Landroid/os/Build;->FINGERPRINT:Ljava/lang/String;
 
     invoke-static {v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
@@ -2723,17 +2559,14 @@
 .method private static c(Lcom/uc/crashsdk/export/CustomInfo;)V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/uc/crashsdk/export/CustomInfo;->mZippedLogExtension:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
     const-string v0, ""
 
-    .line 2
     iput-object v0, p0, Lcom/uc/crashsdk/export/CustomInfo;->mZippedLogExtension:Ljava/lang/String;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/uc/crashsdk/export/CustomInfo;->mZippedLogExtension:Ljava/lang/String;
 
@@ -2745,26 +2578,21 @@
 
     if-nez v0, :cond_4
 
-    .line 4
     iget-boolean v0, p0, Lcom/uc/crashsdk/export/CustomInfo;->mOmitJavaCrash:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_1
 
-    .line 5
     iput-boolean v1, p0, Lcom/uc/crashsdk/export/CustomInfo;->mCallJavaDefaultHandler:Z
 
-    .line 6
     :cond_1
     iget-boolean v0, p0, Lcom/uc/crashsdk/export/CustomInfo;->mOmitNativeCrash:Z
 
     if-eqz v0, :cond_2
 
-    .line 7
     iput-boolean v1, p0, Lcom/uc/crashsdk/export/CustomInfo;->mCallNativeDefaultHandler:Z
 
-    .line 8
     :cond_2
     invoke-static {}, Lcom/uc/crashsdk/e;->b()J
 
@@ -2778,36 +2606,28 @@
 
     const/16 v2, 0xc8
 
-    .line 9
     iput v2, p0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxBuiltinLogFilesCount:I
 
     const/16 v2, 0x64
 
-    .line 10
     iput v2, p0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxCustomLogFilesCount:I
 
     const-wide/32 v3, 0x10000000
 
-    .line 11
     iput-wide v3, p0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxUploadBytesPerDay:J
 
     const/16 v3, 0x7d0
 
-    .line 12
     iput v3, p0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxUploadBuiltinLogCountPerDay:I
 
-    .line 13
     iput v3, p0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxUploadCustomLogCountPerDay:I
 
-    .line 14
     iput v2, p0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxCustomLogCountPerTypePerDay:I
 
-    .line 15
     iput v2, p0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxAnrLogCountPerProcess:I
 
     const/4 v2, 0x2
 
-    .line 16
     iput v2, p0, Lcom/uc/crashsdk/export/CustomInfo;->mAnrTraceStrategy:I
 
     const-wide/16 v2, 0x2
@@ -2818,10 +2638,8 @@
 
     const/4 v2, 0x1
 
-    .line 17
     iput-boolean v2, p0, Lcom/uc/crashsdk/export/CustomInfo;->mSyncUploadSetupCrashLogs:Z
 
-    .line 18
     iput-boolean v2, p0, Lcom/uc/crashsdk/export/CustomInfo;->mSyncUploadLogs:Z
 
     const-wide/16 v3, 0x3
@@ -2830,19 +2648,15 @@
 
     if-ltz v5, :cond_3
 
-    .line 19
     iput-boolean v2, p0, Lcom/uc/crashsdk/export/CustomInfo;->mBackupLogs:Z
 
-    .line 20
     iput-boolean v2, p0, Lcom/uc/crashsdk/export/CustomInfo;->mPrintStackInfos:Z
 
-    .line 21
     iput-boolean v2, p0, Lcom/uc/crashsdk/export/CustomInfo;->mDebug:Z
 
     :cond_3
     return-void
 
-    .line 22
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -2856,7 +2670,6 @@
 .method public static d()V
     .locals 5
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mIsInternational:Z
@@ -2865,7 +2678,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/JNIBridge;->set(IZ)J
 
-    .line 2
     invoke-static {}, Lcom/uc/crashsdk/b;->E()Z
 
     move-result v0
@@ -2876,10 +2688,8 @@
 
     const/16 v0, 0x22
 
-    .line 3
     invoke-static {v0, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IZ)J
 
-    .line 4
     :cond_0
     invoke-static {}, Lcom/uc/crashsdk/e;->i()Z
 
@@ -2887,13 +2697,11 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-static {v1, v1}, Lcom/uc/crashsdk/JNIBridge;->set(IZ)J
 
     :cond_1
     const/16 v0, 0xa
 
-    .line 6
     sget-object v2, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v2, v2, Lcom/uc/crashsdk/export/CustomInfo;->mFdDumpMinLimit:I
@@ -2904,7 +2712,6 @@
 
     const/4 v0, 0x3
 
-    .line 7
     sget-object v2, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v2, v2, Lcom/uc/crashsdk/export/CustomInfo;->mReservedNativeFileHandleCount:I
@@ -2913,10 +2720,8 @@
 
     const/4 v4, 0x0
 
-    .line 8
     invoke-static {v0, v2, v3, v4, v4}, Lcom/uc/crashsdk/JNIBridge;->nativeCmd(IJLjava/lang/String;[Ljava/lang/Object;)J
 
-    .line 9
     invoke-static {}, Lcom/uc/crashsdk/b;->y()Z
 
     move-result v0
@@ -2925,38 +2730,30 @@
 
     const/4 v0, 0x2
 
-    .line 10
     invoke-static {}, Lcom/uc/crashsdk/b;->C()Z
 
     move-result v2
 
     invoke-static {v0, v2}, Lcom/uc/crashsdk/JNIBridge;->set(IZ)J
 
-    .line 11
     invoke-static {}, Lcom/uc/crashsdk/a;->e()V
 
-    .line 12
     invoke-static {}, Lcom/uc/crashsdk/a;->g()V
 
-    .line 13
     invoke-static {}, Lcom/uc/crashsdk/a;->i()V
 
-    .line 14
     invoke-static {}, Lcom/uc/crashsdk/a;->k()V
 
     const/16 v0, 0x71
 
-    .line 15
     sget-object v2, Lcom/uc/crashsdk/a;->a:Ljava/lang/String;
 
     invoke-static {v0, v2}, Lcom/uc/crashsdk/JNIBridge;->set(ILjava/lang/String;)J
 
-    .line 16
     invoke-static {v1}, Lcom/uc/crashsdk/JNIBridge;->cmd(I)J
 
     const/16 v0, 0x16
 
-    .line 17
     sget-object v1, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v1, v1, Lcom/uc/crashsdk/export/CustomInfo;->mThreadsDumpMinLimit:I
@@ -2967,7 +2764,6 @@
 
     const/16 v0, 0x7a
 
-    .line 18
     invoke-static {}, Lcom/uc/crashsdk/a;->a()Ljava/lang/String;
 
     move-result-object v1
@@ -2976,7 +2772,6 @@
 
     const/16 v0, 0x21
 
-    .line 19
     invoke-static {}, Lcom/uc/crashsdk/a;->c()I
 
     move-result v1
@@ -2985,16 +2780,12 @@
 
     invoke-static {v0, v1, v2}, Lcom/uc/crashsdk/JNIBridge;->set(IJ)J
 
-    .line 20
     invoke-static {}, Lcom/uc/crashsdk/g;->Y()V
 
-    .line 21
     invoke-static {}, Lcom/uc/crashsdk/b;->H()V
 
-    .line 22
     invoke-static {}, Lcom/uc/crashsdk/b;->A()V
 
-    .line 23
     invoke-static {}, Lcom/uc/crashsdk/a/g;->k()V
 
     return-void
@@ -3003,7 +2794,6 @@
 .method public static e()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mAppId:Ljava/lang/String;
@@ -3014,7 +2804,6 @@
 .method static f()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mJavaCrashLogFileName:Ljava/lang/String;
@@ -3029,7 +2818,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
@@ -3043,7 +2831,6 @@
 
     return v1
 
-    .line 3
     :cond_1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
@@ -3059,7 +2846,6 @@
 .method static g()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mJavaCrashLogFileName:Ljava/lang/String;
@@ -3070,7 +2856,6 @@
 .method static h()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mCrashRestartInterval:I
@@ -3081,7 +2866,6 @@
 .method static i()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mCallJavaDefaultHandler:Z
@@ -3092,7 +2876,6 @@
 .method static j()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mDumpHprofDataForJavaOOM:Z
@@ -3103,7 +2886,6 @@
 .method static k()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mRenameFileToDefaultName:Z
@@ -3114,7 +2896,6 @@
 .method static l()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxBuiltinLogFilesCount:I
@@ -3125,7 +2906,6 @@
 .method static m()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxCustomLogFilesCount:I
@@ -3136,7 +2916,6 @@
 .method static n()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mMaxJavaLogcatLineCount:I
@@ -3147,7 +2926,6 @@
 .method static o()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mUnexpDelayMillSeconds:I
@@ -3158,7 +2936,6 @@
 .method static p()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mUnexpSubTypes:I
@@ -3169,7 +2946,6 @@
 .method static q()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mBackupLogs:Z
@@ -3180,7 +2956,6 @@
 .method public static r()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mSyncUploadSetupCrashLogs:Z
@@ -3191,7 +2966,6 @@
 .method static s()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mSyncUploadLogs:Z
@@ -3202,7 +2976,6 @@
 .method static t()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mOmitJavaCrash:Z
@@ -3213,7 +2986,6 @@
 .method static u()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mAutoDeleteOldVersionStats:Z
@@ -3224,7 +2996,6 @@
 .method static v()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mZipLog:Z
@@ -3235,7 +3006,6 @@
 .method static w()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-object v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mZippedLogExtension:Ljava/lang/String;
@@ -3246,7 +3016,6 @@
 .method static x()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget-boolean v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mEncryptLog:Z
@@ -3257,7 +3026,6 @@
 .method static y()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mLogMaxBytesLimit:I
@@ -3268,7 +3036,6 @@
 .method static z()I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/uc/crashsdk/g;->d:Lcom/uc/crashsdk/export/CustomInfo;
 
     iget v0, v0, Lcom/uc/crashsdk/export/CustomInfo;->mLogMaxUploadBytesLimit:I

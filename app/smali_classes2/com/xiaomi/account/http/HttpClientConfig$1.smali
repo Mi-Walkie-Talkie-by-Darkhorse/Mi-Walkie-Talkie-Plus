@@ -1,6 +1,5 @@
 .class synthetic Lcom/xiaomi/account/http/HttpClientConfig$1;
 .super Ljava/lang/Object;
-.source "HttpClientConfig.java"
 
 
 # annotations

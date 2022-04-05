@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/ImmutableSortedAsList;
 .super Lcom/google/common/collect/RegularImmutableAsList;
-.source "ImmutableSortedAsList.java"
 
 # interfaces
 .implements Lcom/google/common/collect/SortedIterable;
@@ -37,7 +36,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/RegularImmutableAsList;-><init>(Lcom/google/common/collect/ImmutableCollection;Lcom/google/common/collect/ImmutableList;)V
 
     return-void
@@ -55,7 +53,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSortedAsList;->delegateCollection()Lcom/google/common/collect/ImmutableSortedSet;
 
     move-result-object v0
@@ -70,7 +67,6 @@
 .method public contains(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedAsList;->indexOf(Ljava/lang/Object;)I
 
     move-result p1
@@ -91,7 +87,6 @@
 .method bridge synthetic delegateCollection()Lcom/google/common/collect/ImmutableCollection;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSortedAsList;->delegateCollection()Lcom/google/common/collect/ImmutableSortedSet;
 
     move-result-object v0
@@ -109,7 +104,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-super {p0}, Lcom/google/common/collect/RegularImmutableAsList;->delegateCollection()Lcom/google/common/collect/ImmutableCollection;
 
     move-result-object v0
@@ -129,7 +123,6 @@
         value = "ImmutableSortedSet.indexOf"
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableSortedAsList;->delegateCollection()Lcom/google/common/collect/ImmutableSortedSet;
 
     move-result-object v0
@@ -140,7 +133,6 @@
 
     if-ltz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/google/common/collect/RegularImmutableAsList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -170,7 +162,6 @@
         value = "ImmutableSortedSet.indexOf"
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableSortedAsList;->indexOf(Ljava/lang/Object;)I
 
     move-result p1
@@ -192,7 +183,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/RegularImmutableSortedSet;
 
     invoke-super {p0, p1, p2}, Lcom/google/common/collect/ImmutableList;->subListUnchecked(II)Lcom/google/common/collect/ImmutableList;

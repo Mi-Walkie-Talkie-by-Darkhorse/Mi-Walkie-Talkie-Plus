@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogMenuItemView$a;
 .super Ljava/lang/Object;
-.source "QMUIDialogMenuItemView.java"
 
 
 # annotations

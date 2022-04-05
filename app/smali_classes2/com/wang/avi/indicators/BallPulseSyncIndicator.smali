@@ -1,6 +1,5 @@
 .class public Lcom/wang/avi/indicators/BallPulseSyncIndicator;
 .super Lcom/wang/avi/Indicator;
-.source "BallPulseSyncIndicator.java"
 
 
 # instance fields
@@ -11,14 +10,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/wang/avi/Indicator;-><init>()V
 
     const/4 v0, 0x3
 
     new-array v0, v0, [F
 
-    .line 2
     iput-object v0, p0, Lcom/wang/avi/indicators/BallPulseSyncIndicator;->translateYFloats:[F
 
     return-void
@@ -29,7 +26,6 @@
 .method public draw(Landroid/graphics/Canvas;Landroid/graphics/Paint;)V
     .locals 7
 
-    .line 1
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v0
@@ -44,7 +40,6 @@
 
     div-float/2addr v0, v1
 
-    .line 2
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v1
@@ -70,7 +65,6 @@
 
     if-ge v4, v5, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     int-to-float v5, v4
@@ -83,7 +77,6 @@
 
     add-float/2addr v6, v5
 
-    .line 4
     iget-object v5, p0, Lcom/wang/avi/indicators/BallPulseSyncIndicator;->translateYFloats:[F
 
     aget v5, v5, v4
@@ -92,10 +85,8 @@
 
     const/4 v5, 0x0
 
-    .line 5
     invoke-virtual {p1, v5, v5, v0, p2}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 6
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     add-int/lit8 v4, v4, 0x1
@@ -117,12 +108,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getWidth()I
 
     move-result v1
@@ -141,7 +130,6 @@
 
     new-array v3, v2, [I
 
-    .line 3
     fill-array-data v3, :array_0
 
     const/4 v4, 0x0
@@ -153,7 +141,6 @@
 
     new-array v6, v2, [F
 
-    .line 4
     invoke-virtual {p0}, Lcom/wang/avi/Indicator;->getHeight()I
 
     move-result v7
@@ -200,29 +187,24 @@
 
     const-wide/16 v7, 0x258
 
-    .line 5
     invoke-virtual {v6, v7, v8}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
     const/4 v7, -0x1
 
-    .line 6
     invoke-virtual {v6, v7}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 7
     aget v7, v3, v5
 
     int-to-long v7, v7
 
     invoke-virtual {v6, v7, v8}, Landroid/animation/ValueAnimator;->setStartDelay(J)V
 
-    .line 8
     new-instance v7, Lcom/wang/avi/indicators/BallPulseSyncIndicator$1;
 
     invoke-direct {v7, p0, v5}, Lcom/wang/avi/indicators/BallPulseSyncIndicator$1;-><init>(Lcom/wang/avi/indicators/BallPulseSyncIndicator;I)V
 
     invoke-virtual {p0, v6, v7}, Lcom/wang/avi/Indicator;->addUpdateListener(Landroid/animation/ValueAnimator;Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 9
     invoke-virtual {v0, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     add-int/lit8 v5, v5, 0x1

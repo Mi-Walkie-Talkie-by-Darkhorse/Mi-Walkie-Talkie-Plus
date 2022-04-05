@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Entity;
 .super Ljava/lang/Object;
-.source "Entity.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public Lcom/yalantis/ucrop/view/GestureCropImageView;
 .super Lcom/yalantis/ucrop/view/CropImageView;
-.source "GestureCropImageView.java"
 
 
 # annotations
@@ -35,19 +34,16 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/yalantis/ucrop/view/CropImageView;-><init>(Landroid/content/Context;)V
 
     const/4 p1, 0x1
 
-    .line 2
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->I:Z
 
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->J:Z
 
     const/4 p1, 0x5
 
-    .line 3
     iput p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->K:I
 
     return-void
@@ -58,7 +54,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-direct {p0, p1, p2, v0}, Lcom/yalantis/ucrop/view/GestureCropImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -67,19 +62,16 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 5
     invoke-direct {p0, p1, p2, p3}, Lcom/yalantis/ucrop/view/CropImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 p1, 0x1
 
-    .line 6
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->I:Z
 
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->J:Z
 
     const/4 p1, 0x5
 
-    .line 7
     iput p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->K:I
 
     return-void
@@ -88,7 +80,6 @@
 .method static synthetic a(Lcom/yalantis/ucrop/view/GestureCropImageView;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->G:F
 
     return p0
@@ -97,7 +88,6 @@
 .method static synthetic b(Lcom/yalantis/ucrop/view/GestureCropImageView;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->H:F
 
     return p0
@@ -106,7 +96,6 @@
 .method private i()V
     .locals 5
 
-    .line 1
     new-instance v0, Landroid/view/GestureDetector;
 
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
@@ -125,7 +114,6 @@
 
     iput-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->F:Landroid/view/GestureDetector;
 
-    .line 2
     new-instance v0, Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {p0}, Landroid/widget/ImageView;->getContext()Landroid/content/Context;
@@ -140,7 +128,6 @@
 
     iput-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->D:Landroid/view/ScaleGestureDetector;
 
-    .line 3
     new-instance v0, Lcom/yalantis/ucrop/e/h;
 
     new-instance v1, Lcom/yalantis/ucrop/view/GestureCropImageView$c;
@@ -159,10 +146,8 @@
 .method protected e()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/yalantis/ucrop/view/TransformImageView;->e()V
 
-    .line 2
     invoke-direct {p0}, Lcom/yalantis/ucrop/view/GestureCropImageView;->i()V
 
     return-void
@@ -171,7 +156,6 @@
 .method public getDoubleTapScaleSteps()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->K:I
 
     return v0
@@ -180,7 +164,6 @@
 .method protected getDoubleTapTargetScale()F
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Lcom/yalantis/ucrop/view/TransformImageView;->getCurrentScale()F
 
     move-result v0
@@ -221,7 +204,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
@@ -230,10 +212,8 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/yalantis/ucrop/view/CropImageView;->g()V
 
-    .line 3
     :cond_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getPointerCount()I
 
@@ -245,7 +225,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getX(I)F
 
     move-result v2
@@ -262,7 +241,6 @@
 
     iput v2, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->G:F
 
-    .line 5
     invoke-virtual {p1, v0}, Landroid/view/MotionEvent;->getY(I)F
 
     move-result v0
@@ -277,34 +255,28 @@
 
     iput v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->H:F
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->F:Landroid/view/GestureDetector;
 
     invoke-virtual {v0, p1}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 7
     iget-boolean v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->J:Z
 
     if-eqz v0, :cond_2
 
-    .line 8
     iget-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->D:Landroid/view/ScaleGestureDetector;
 
     invoke-virtual {v0, p1}, Landroid/view/ScaleGestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
-    .line 9
     :cond_2
     iget-boolean v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->I:Z
 
     if-eqz v0, :cond_3
 
-    .line 10
     iget-object v0, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->E:Lcom/yalantis/ucrop/e/h;
 
     invoke-virtual {v0, p1}, Lcom/yalantis/ucrop/e/h;->a(Landroid/view/MotionEvent;)Z
 
-    .line 11
     :cond_3
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
@@ -314,7 +286,6 @@
 
     if-ne p1, v1, :cond_4
 
-    .line 12
     invoke-virtual {p0}, Lcom/yalantis/ucrop/view/CropImageView;->setImageToWrapCropBounds()V
 
     :cond_4
@@ -324,7 +295,6 @@
 .method public setDoubleTapScaleSteps(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->K:I
 
     return-void
@@ -333,7 +303,6 @@
 .method public setRotateEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->I:Z
 
     return-void
@@ -342,7 +311,6 @@
 .method public setScaleEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/yalantis/ucrop/view/GestureCropImageView;->J:Z
 
     return-void

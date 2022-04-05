@@ -1,6 +1,5 @@
 .class public abstract Lno/nordicsemi/android/ble/x1;
 .super Ljava/lang/Object;
-.source "BleServerManager.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 
     const-string v0, "00002900-0000-1000-8000-00805f9b34fb"
 
-    .line 1
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     move-result-object v0
@@ -26,7 +24,6 @@
 
     const-string v0, "00002901-0000-1000-8000-00805f9b34fb"
 
-    .line 2
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     move-result-object v0
@@ -35,7 +32,6 @@
 
     const-string v0, "00002902-0000-1000-8000-00805f9b34fb"
 
-    .line 3
     invoke-static {v0}, Ljava/util/UUID;->fromString(Ljava/lang/String;)Ljava/util/UUID;
 
     move-result-object v0

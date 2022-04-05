@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a$a;
 .super Ljava/lang/Object;
-.source "DolphinRelayFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;
@@ -57,7 +54,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;
@@ -68,7 +64,6 @@
 
     invoke-virtual {v1, v0}, Lcom/ifengyu/intercom/ui/widget/view/RecyclerViewEmptySupport;->setEmptyView(Landroid/view/View;)V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a;
 
@@ -80,7 +75,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;
@@ -103,7 +97,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/adapter/d;->a(Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment$a;->a:Lcom/ifengyu/intercom/ui/setting/dolphin/fragment/DolphinRelayFragment;

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/greenrobot/greendao/annotation/Convert;
 .super Ljava/lang/Object;
-.source "Convert.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

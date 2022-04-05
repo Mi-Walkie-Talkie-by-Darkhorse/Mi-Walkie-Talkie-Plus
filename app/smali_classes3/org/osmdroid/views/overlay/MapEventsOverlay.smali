@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/MapEventsOverlay;
 .super Lorg/osmdroid/views/overlay/Overlay;
-.source "MapEventsOverlay.java"
 
 
 # instance fields
@@ -13,7 +12,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-direct {p0, p2}, Lorg/osmdroid/views/overlay/MapEventsOverlay;-><init>(Lorg/osmdroid/events/MapEventsReceiver;)V
 
     return-void
@@ -22,10 +20,8 @@
 .method public constructor <init>(Lorg/osmdroid/events/MapEventsReceiver;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/Overlay;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/views/overlay/MapEventsOverlay;->mReceiver:Lorg/osmdroid/events/MapEventsReceiver;
 
     return-void
@@ -42,12 +38,10 @@
 .method public onLongPress(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object p2
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
@@ -66,7 +60,6 @@
 
     check-cast p1, Lorg/osmdroid/util/GeoPoint;
 
-    .line 3
     iget-object p2, p0, Lorg/osmdroid/views/overlay/MapEventsOverlay;->mReceiver:Lorg/osmdroid/events/MapEventsReceiver;
 
     invoke-interface {p2, p1}, Lorg/osmdroid/events/MapEventsReceiver;->longPressHelper(Lorg/osmdroid/util/GeoPoint;)Z
@@ -79,12 +72,10 @@
 .method public onSingleTapConfirmed(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object p2
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
@@ -103,7 +94,6 @@
 
     check-cast p1, Lorg/osmdroid/util/GeoPoint;
 
-    .line 3
     iget-object p2, p0, Lorg/osmdroid/views/overlay/MapEventsOverlay;->mReceiver:Lorg/osmdroid/events/MapEventsReceiver;
 
     invoke-interface {p2, p1}, Lorg/osmdroid/events/MapEventsReceiver;->singleTapConfirmedHelper(Lorg/osmdroid/util/GeoPoint;)Z

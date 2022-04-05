@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultChromeClient$1;
 .super Ljava/lang/Object;
-.source "DefaultChromeClient.java"
 
 # interfaces
 .implements Lcom/just/agentweb/ActionActivity$PermissionListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/just/agentweb/DefaultChromeClient;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultChromeClient$1;->this$0:Lcom/just/agentweb/DefaultChromeClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +46,6 @@
 
     const-string p2, "KEY_FROM_INTENTION"
 
-    .line 1
     invoke-virtual {p3, p2}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
     move-result p2
@@ -57,7 +54,6 @@
 
     if-ne p2, p3, :cond_2
 
-    .line 2
     iget-object p2, p0, Lcom/just/agentweb/DefaultChromeClient$1;->this$0:Lcom/just/agentweb/DefaultChromeClient;
 
     invoke-static {p2}, Lcom/just/agentweb/DefaultChromeClient;->access$000(Lcom/just/agentweb/DefaultChromeClient;)Ljava/lang/ref/WeakReference;
@@ -74,7 +70,6 @@
 
     move-result p1
 
-    .line 3
     iget-object p2, p0, Lcom/just/agentweb/DefaultChromeClient$1;->this$0:Lcom/just/agentweb/DefaultChromeClient;
 
     invoke-static {p2}, Lcom/just/agentweb/DefaultChromeClient;->access$100(Lcom/just/agentweb/DefaultChromeClient;)Landroid/webkit/GeolocationPermissions$Callback;
@@ -87,7 +82,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 4
     iget-object p3, p0, Lcom/just/agentweb/DefaultChromeClient$1;->this$0:Lcom/just/agentweb/DefaultChromeClient;
 
     invoke-static {p3}, Lcom/just/agentweb/DefaultChromeClient;->access$100(Lcom/just/agentweb/DefaultChromeClient;)Landroid/webkit/GeolocationPermissions$Callback;
@@ -106,7 +100,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object p3, p0, Lcom/just/agentweb/DefaultChromeClient$1;->this$0:Lcom/just/agentweb/DefaultChromeClient;
 
@@ -122,7 +115,6 @@
 
     invoke-interface {p3, v0, p2, p2}, Landroid/webkit/GeolocationPermissions$Callback;->invoke(Ljava/lang/String;ZZ)V
 
-    .line 6
     :goto_0
     iget-object p2, p0, Lcom/just/agentweb/DefaultChromeClient$1;->this$0:Lcom/just/agentweb/DefaultChromeClient;
 
@@ -130,7 +122,6 @@
 
     invoke-static {p2, p3}, Lcom/just/agentweb/DefaultChromeClient;->access$102(Lcom/just/agentweb/DefaultChromeClient;Landroid/webkit/GeolocationPermissions$Callback;)Landroid/webkit/GeolocationPermissions$Callback;
 
-    .line 7
     iget-object p2, p0, Lcom/just/agentweb/DefaultChromeClient$1;->this$0:Lcom/just/agentweb/DefaultChromeClient;
 
     invoke-static {p2, p3}, Lcom/just/agentweb/DefaultChromeClient;->access$202(Lcom/just/agentweb/DefaultChromeClient;Ljava/lang/String;)Ljava/lang/String;
@@ -138,7 +129,6 @@
     :cond_1
     if-nez p1, :cond_2
 
-    .line 8
     iget-object p1, p0, Lcom/just/agentweb/DefaultChromeClient$1;->this$0:Lcom/just/agentweb/DefaultChromeClient;
 
     invoke-static {p1}, Lcom/just/agentweb/DefaultChromeClient;->access$300(Lcom/just/agentweb/DefaultChromeClient;)Ljava/lang/ref/WeakReference;
@@ -151,14 +141,12 @@
 
     if-eqz p1, :cond_2
 
-    .line 9
     iget-object p1, p0, Lcom/just/agentweb/DefaultChromeClient$1;->this$0:Lcom/just/agentweb/DefaultChromeClient;
 
     invoke-static {p1}, Lcom/just/agentweb/DefaultChromeClient;->access$300(Lcom/just/agentweb/DefaultChromeClient;)Ljava/lang/ref/WeakReference;
 
     move-result-object p1
 
-    .line 10
     invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object p1
@@ -169,7 +157,6 @@
 
     const-string p3, "Location"
 
-    .line 11
     invoke-virtual {p1, p2, p3, p3}, Lcom/just/agentweb/AbsAgentWebUIController;->onPermissionsDeny([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_2

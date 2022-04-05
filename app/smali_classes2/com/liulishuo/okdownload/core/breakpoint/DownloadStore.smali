@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 .super Ljava/lang/Object;
-.source "DownloadStore.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/breakpoint/BreakpointStore;

@@ -1,6 +1,5 @@
 .class Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$d;
 .super Landroid/view/animation/Animation;
-.source "SwipeRefreshLayout.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;II)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$d;->c:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
     iput p2, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$d;->a:I
@@ -43,7 +41,6 @@
 .method public applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 3
 
-    .line 1
     iget-object p2, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$d;->c:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
     iget-object p2, p2, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->B:Landroidx/swiperefreshlayout/widget/CircularProgressDrawable;

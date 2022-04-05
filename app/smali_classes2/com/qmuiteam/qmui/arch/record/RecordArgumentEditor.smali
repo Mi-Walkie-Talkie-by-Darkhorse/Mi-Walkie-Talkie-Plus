@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/arch/record/RecordArgumentEditor;
 .super Ljava/lang/Object;
-.source "RecordArgumentEditor.java"
 
 
 # annotations

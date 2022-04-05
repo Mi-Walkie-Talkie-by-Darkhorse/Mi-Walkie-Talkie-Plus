@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/ScaleBarOverlay;
 .super Lorg/osmdroid/views/overlay/Overlay;
-.source "ScaleBarOverlay.java"
 
 # interfaces
 .implements Lorg/osmdroid/util/constants/GeoConstants;
@@ -74,7 +73,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
@@ -87,56 +85,44 @@
 .method public constructor <init>(Lorg/osmdroid/views/MapView;)V
     .locals 6
 
-    .line 1
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/Overlay;-><init>()V
 
     const/16 v0, 0xa
 
-    .line 2
     iput v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->xOffset:I
 
-    .line 3
     iput v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->yOffset:I
 
     const/4 v0, 0x0
 
-    .line 4
     iput v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->minZoom:I
 
-    .line 5
     sget-object v1, Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;->metric:Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->unitsOfMeasure:Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;
 
     const/4 v1, 0x1
 
-    .line 6
     iput-boolean v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->latitudeBar:Z
 
-    .line 7
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->longitudeBar:Z
 
-    .line 8
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignBottom:Z
 
-    .line 9
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignRight:Z
 
-    .line 10
     new-instance v2, Landroid/graphics/Path;
 
     invoke-direct {v2}, Landroid/graphics/Path;-><init>()V
 
     iput-object v2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPath:Landroid/graphics/Path;
 
-    .line 11
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->latitudeBarRect:Landroid/graphics/Rect;
 
-    .line 12
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
@@ -145,31 +131,24 @@
 
     const/4 v2, -0x1
 
-    .line 13
     iput v2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     const-wide/16 v2, 0x0
 
-    .line 14
     iput-wide v2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastLatitude:D
 
-    .line 15
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->centred:Z
 
-    .line 16
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->adjustLength:Z
 
-    .line 17
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
-    .line 18
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
-    .line 19
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
@@ -178,7 +157,6 @@
 
     move-result-object p1
 
-    .line 20
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
@@ -187,29 +165,24 @@
 
     const/high16 v2, -0x1000000
 
-    .line 21
     invoke-virtual {v0, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 22
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 23
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPaint:Landroid/graphics/Paint;
 
     sget-object v3, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 24
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPaint:Landroid/graphics/Paint;
 
     const/16 v3, 0xff
 
     invoke-virtual {v0, v3}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 25
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPaint:Landroid/graphics/Paint;
 
     iget v4, p1, Landroid/util/DisplayMetrics;->density:F
@@ -222,37 +195,30 @@
 
     const/4 v0, 0x0
 
-    .line 26
     iput-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->bgPaint:Landroid/graphics/Paint;
 
-    .line 27
     new-instance v4, Landroid/graphics/Paint;
 
     invoke-direct {v4}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v4, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
-    .line 28
     invoke-virtual {v4, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 29
     iget-object v2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v2, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 30
     iget-object v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 31
     iget-object v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v3}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 32
     iget-object v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     iget v2, p1, Landroid/util/DisplayMetrics;->density:F
@@ -263,27 +229,22 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 33
     iget v1, p1, Landroid/util/DisplayMetrics;->xdpi:F
 
     iput v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->xdpi:F
 
-    .line 34
     iget v1, p1, Landroid/util/DisplayMetrics;->ydpi:F
 
     iput v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->ydpi:F
 
-    .line 35
     iget v1, p1, Landroid/util/DisplayMetrics;->widthPixels:I
 
     iput v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
-    .line 36
     iget p1, p1, Landroid/util/DisplayMetrics;->heightPixels:I
 
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenHeight:I
 
-    .line 37
     :try_start_0
     const-class p1, Landroid/os/Build;
 
@@ -293,7 +254,6 @@
 
     move-result-object p1
 
-    .line 38
     invoke-virtual {p1, v0}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -312,7 +272,6 @@
     :goto_0
     const-string p1, "motorola"
 
-    .line 39
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -329,19 +288,16 @@
 
     if-eqz v1, :cond_1
 
-    .line 40
     iget-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
     const-string v0, "window"
 
-    .line 41
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Landroid/view/WindowManager;
 
-    .line 42
     invoke-interface {p1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
 
     move-result-object p1
@@ -356,7 +312,6 @@
 
     if-lez p1, :cond_0
 
-    .line 43
     iget p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
     int-to-double v4, p1
@@ -367,7 +322,6 @@
 
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->xdpi:F
 
-    .line 44
     iget p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenHeight:I
 
     int-to-double v0, p1
@@ -380,7 +334,6 @@
 
     goto :goto_1
 
-    .line 45
     :cond_0
     iget p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
@@ -392,7 +345,6 @@
 
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->xdpi:F
 
-    .line 46
     iget p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenHeight:I
 
     int-to-double v2, p1
@@ -405,7 +357,6 @@
 
     goto :goto_1
 
-    .line 47
     :cond_1
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -425,17 +376,14 @@
 
     const/high16 p1, 0x43840000    # 264.0f
 
-    .line 48
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->xdpi:F
 
-    .line 49
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->ydpi:F
 
     :cond_2
     :goto_1
     const p1, 0x40228f5c    # 2.54f
 
-    .line 50
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->maxLength:F
 
     return-void
@@ -446,7 +394,6 @@
 
     move-object/from16 v0, p0
 
-    .line 1
     iget-object v1, v0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->unitsOfMeasure:Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;
 
     sget-object v2, Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;->imperial:Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;
@@ -480,7 +427,6 @@
 
     goto :goto_1
 
-    .line 2
     :cond_1
     sget-object v2, Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;->nautical:Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;
 
@@ -567,7 +513,6 @@
 
     goto :goto_4
 
-    .line 3
     :cond_7
     iget-object v1, v0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->unitsOfMeasure:Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;
 
@@ -579,7 +524,6 @@
 
     goto :goto_4
 
-    .line 4
     :cond_8
     sget-object v2, Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;->nautical:Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;
 
@@ -591,7 +535,6 @@
     :goto_4
     long-to-double v1, v10
 
-    .line 5
     invoke-static {v14, v15, v1, v2}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v1
@@ -604,7 +547,6 @@
 .method private drawLatitudeText(Landroid/graphics/Canvas;Lorg/osmdroid/views/Projection;)V
     .locals 7
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->xdpi:F
 
     float-to-double v0, v0
@@ -615,7 +557,6 @@
 
     double-to-int v0, v0
 
-    .line 2
     iget v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->maxLength:F
 
     int-to-float v0, v0
@@ -624,7 +565,6 @@
 
     float-to-int v0, v1
 
-    .line 3
     iget v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
     div-int/lit8 v1, v1, 0x2
@@ -641,7 +581,6 @@
 
     move-result-object v1
 
-    .line 4
     iget v3, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
     div-int/lit8 v3, v3, 0x2
@@ -654,14 +593,12 @@
 
     move-result-object p2
 
-    .line 5
     check-cast v1, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {v1, p2}, Lorg/osmdroid/util/GeoPoint;->distanceTo(Lorg/osmdroid/api/IGeoPoint;)I
 
     move-result p2
 
-    .line 6
     iget-boolean v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->adjustLength:Z
 
     if-eqz v1, :cond_0
@@ -690,12 +627,10 @@
 
     double-to-int v0, v1
 
-    .line 7
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->scaleBarLengthText(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 8
     iget-object v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     const/4 v2, 0x0
@@ -708,7 +643,6 @@
 
     invoke-virtual {v1, v0, v2, v3, v4}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
-    .line 9
     sget-object v1, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->sTextBoundsRect:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
@@ -723,7 +657,6 @@
 
     double-to-int v1, v1
 
-    .line 10
     div-int/lit8 v2, p2, 0x2
 
     sget-object v3, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->sTextBoundsRect:Landroid/graphics/Rect;
@@ -738,7 +671,6 @@
 
     int-to-float v2, v2
 
-    .line 11
     iget-boolean v3, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignRight:Z
 
     if-eqz v3, :cond_1
@@ -751,7 +683,6 @@
 
     add-float/2addr v2, p2
 
-    .line 12
     :cond_1
     iget-boolean p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignBottom:Z
 
@@ -765,7 +696,6 @@
 
     goto :goto_1
 
-    .line 13
     :cond_2
     sget-object p2, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->sTextBoundsRect:Landroid/graphics/Rect;
 
@@ -778,7 +708,6 @@
     :goto_1
     int-to-float p2, p2
 
-    .line 14
     iget-object v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v2, p2, v1}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
@@ -789,7 +718,6 @@
 .method private drawLongitudeText(Landroid/graphics/Canvas;Lorg/osmdroid/views/Projection;)V
     .locals 7
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->ydpi:F
 
     float-to-double v0, v0
@@ -800,7 +728,6 @@
 
     double-to-int v0, v0
 
-    .line 2
     iget v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->maxLength:F
 
     int-to-float v0, v0
@@ -809,7 +736,6 @@
 
     float-to-int v0, v1
 
-    .line 3
     iget v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
     div-int/lit8 v1, v1, 0x2
@@ -824,12 +750,10 @@
 
     const/4 v4, 0x0
 
-    .line 4
     invoke-virtual {p2, v1, v2, v4}, Lorg/osmdroid/views/Projection;->fromPixels(IILorg/osmdroid/util/GeoPoint;)Lorg/osmdroid/api/IGeoPoint;
 
     move-result-object v1
 
-    .line 5
     iget v2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
     div-int/lit8 v2, v2, 0x2
@@ -840,19 +764,16 @@
 
     add-int/2addr v5, v3
 
-    .line 6
     invoke-virtual {p2, v2, v5, v4}, Lorg/osmdroid/views/Projection;->fromPixels(IILorg/osmdroid/util/GeoPoint;)Lorg/osmdroid/api/IGeoPoint;
 
     move-result-object p2
 
-    .line 7
     check-cast v1, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {v1, p2}, Lorg/osmdroid/util/GeoPoint;->distanceTo(Lorg/osmdroid/api/IGeoPoint;)I
 
     move-result p2
 
-    .line 8
     iget-boolean v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->adjustLength:Z
 
     if-eqz v1, :cond_0
@@ -881,12 +802,10 @@
 
     double-to-int v0, v1
 
-    .line 9
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->scaleBarLengthText(I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 10
     iget-object v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     const/4 v2, 0x0
@@ -899,7 +818,6 @@
 
     invoke-virtual {v1, v0, v2, v3, v4}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
-    .line 11
     sget-object v1, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->sTextBoundsRect:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
@@ -914,7 +832,6 @@
 
     double-to-int v1, v1
 
-    .line 12
     iget-boolean v2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignRight:Z
 
     if-eqz v2, :cond_1
@@ -927,7 +844,6 @@
 
     goto :goto_1
 
-    .line 13
     :cond_1
     sget-object v2, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->sTextBoundsRect:Landroid/graphics/Rect;
 
@@ -940,7 +856,6 @@
     :goto_1
     int-to-float v1, v2
 
-    .line 14
     div-int/lit8 v2, p2, 0x2
 
     sget-object v3, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->sTextBoundsRect:Landroid/graphics/Rect;
@@ -955,7 +870,6 @@
 
     int-to-float v2, v2
 
-    .line 15
     iget-boolean v3, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignBottom:Z
 
     if-eqz v3, :cond_2
@@ -968,21 +882,17 @@
 
     add-float/2addr v2, p2
 
-    .line 16
     :cond_2
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     const/high16 p2, -0x3d4c0000    # -90.0f
 
-    .line 17
     invoke-virtual {p1, p2, v1, v2}, Landroid/graphics/Canvas;->rotate(FFF)V
 
-    .line 18
     iget-object p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v0, v1, v2, p2}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 19
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     return-void
@@ -995,7 +905,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/Overlay;->setEnabled(Z)V
 
     return-void
@@ -1008,7 +917,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->isAnimating()Z
 
@@ -1018,18 +926,15 @@
 
     return-void
 
-    .line 2
     :cond_1
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getZoomLevel()I
 
     move-result p3
 
-    .line 3
     iget v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->minZoom:I
 
     if-lt p3, v0, :cond_e
 
-    .line 4
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
@@ -1038,7 +943,6 @@
 
     return-void
 
-    .line 5
     :cond_2
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getWidth()I
 
@@ -1046,14 +950,12 @@
 
     iput v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
-    .line 6
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getHeight()I
 
     move-result p2
 
     iput p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenHeight:I
 
-    .line 7
     iget v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
     div-int/lit8 v1, v1, 0x2
@@ -1066,12 +968,10 @@
 
     move-result-object p2
 
-    .line 8
     iget v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     if-ne p3, v1, :cond_3
 
-    .line 9
     invoke-interface {p2}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide v1
@@ -1084,35 +984,28 @@
 
     if-eq v1, v2, :cond_4
 
-    .line 10
     :cond_3
     iput p3, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
-    .line 11
     invoke-interface {p2}, Lorg/osmdroid/api/IGeoPoint;->getLatitude()D
 
     move-result-wide p2
 
     iput-wide p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastLatitude:D
 
-    .line 12
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->rebuildBarPath(Lorg/osmdroid/views/Projection;)V
 
-    .line 13
     :cond_4
     iget p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->xOffset:I
 
-    .line 14
     iget p3, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->yOffset:I
 
-    .line 15
     iget-boolean v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignBottom:Z
 
     if-eqz v1, :cond_5
 
     mul-int/lit8 p3, p3, -0x1
 
-    .line 16
     :cond_5
     iget-boolean v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignRight:Z
 
@@ -1120,7 +1013,6 @@
 
     mul-int/lit8 p2, p2, -0x1
 
-    .line 17
     :cond_6
     iget-boolean v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->centred:Z
 
@@ -1130,7 +1022,6 @@
 
     if-eqz v1, :cond_7
 
-    .line 18
     iget-object v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->latitudeBarRect:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
@@ -1143,7 +1034,6 @@
 
     add-int/2addr p2, v1
 
-    .line 19
     :cond_7
     iget-boolean v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->centred:Z
 
@@ -1153,7 +1043,6 @@
 
     if-eqz v1, :cond_8
 
-    .line 20
     iget-object v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->longitudeBarRect:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
@@ -1166,11 +1055,9 @@
 
     add-int/2addr p3, v1
 
-    .line 21
     :cond_8
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 22
     invoke-virtual {v0}, Lorg/osmdroid/views/Projection;->getInvertedScaleRotateCanvasMatrix()Landroid/graphics/Matrix;
 
     move-result-object v1
@@ -1181,10 +1068,8 @@
 
     int-to-float p3, p3
 
-    .line 23
     invoke-virtual {p1, p2, p3}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 24
     iget-boolean p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->latitudeBar:Z
 
     if-eqz p2, :cond_9
@@ -1193,12 +1078,10 @@
 
     if-eqz p2, :cond_9
 
-    .line 25
     iget-object p3, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->latitudeBarRect:Landroid/graphics/Rect;
 
     invoke-virtual {p1, p3, p2}, Landroid/graphics/Canvas;->drawRect(Landroid/graphics/Rect;Landroid/graphics/Paint;)V
 
-    .line 26
     :cond_9
     iget-boolean p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->longitudeBar:Z
 
@@ -1208,7 +1091,6 @@
 
     if-eqz p2, :cond_b
 
-    .line 27
     iget-boolean p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->latitudeBar:Z
 
     if-eqz p2, :cond_a
@@ -1224,7 +1106,6 @@
     :cond_a
     const/4 p2, 0x0
 
-    .line 28
     :goto_0
     iget-object p3, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->longitudeBarRect:Landroid/graphics/Rect;
 
@@ -1252,7 +1133,6 @@
 
     invoke-virtual/range {v2 .. v7}, Landroid/graphics/Canvas;->drawRect(FFFFLandroid/graphics/Paint;)V
 
-    .line 29
     :cond_b
     iget-object p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPath:Landroid/graphics/Path;
 
@@ -1260,24 +1140,19 @@
 
     invoke-virtual {p1, p2, p3}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 30
     iget-boolean p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->latitudeBar:Z
 
     if-eqz p2, :cond_c
 
-    .line 31
     invoke-direct {p0, p1, v0}, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->drawLatitudeText(Landroid/graphics/Canvas;Lorg/osmdroid/views/Projection;)V
 
-    .line 32
     :cond_c
     iget-boolean p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->longitudeBar:Z
 
     if-eqz p2, :cond_d
 
-    .line 33
     invoke-direct {p0, p1, v0}, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->drawLongitudeText(Landroid/graphics/Canvas;Lorg/osmdroid/views/Projection;)V
 
-    .line 34
     :cond_d
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
@@ -1288,12 +1163,10 @@
 .method public drawLatitudeScale(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->latitudeBar:Z
 
     const/4 p1, -0x1
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     return-void
@@ -1302,12 +1175,10 @@
 .method public drawLongitudeScale(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->longitudeBar:Z
 
     const/4 p1, -0x1
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     return-void
@@ -1318,7 +1189,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/Overlay;->setEnabled(Z)V
 
     return-void
@@ -1327,7 +1197,6 @@
 .method public getBarPaint()Landroid/graphics/Paint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPaint:Landroid/graphics/Paint;
 
     return-object v0
@@ -1336,7 +1205,6 @@
 .method public getTextPaint()Landroid/graphics/Paint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     return-object v0
@@ -1345,7 +1213,6 @@
 .method public getUnitsOfMeasure()Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->unitsOfMeasure:Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;
 
     return-object v0
@@ -1356,19 +1223,14 @@
 
     const/4 p1, 0x0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
-    .line 2
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPaint:Landroid/graphics/Paint;
 
-    .line 4
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->bgPaint:Landroid/graphics/Paint;
 
-    .line 5
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     return-void
@@ -1377,7 +1239,6 @@
 .method protected rebuildBarPath(Lorg/osmdroid/views/Projection;)V
     .locals 10
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->xdpi:F
 
     float-to-double v0, v0
@@ -1388,7 +1249,6 @@
 
     double-to-int v0, v0
 
-    .line 2
     iget v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->ydpi:F
 
     float-to-double v4, v1
@@ -1397,7 +1257,6 @@
 
     double-to-int v1, v4
 
-    .line 3
     iget v2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->maxLength:F
 
     int-to-float v0, v0
@@ -1412,7 +1271,6 @@
 
     float-to-int v1, v2
 
-    .line 4
     iget v2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
     div-int/lit8 v2, v2, 0x2
@@ -1429,7 +1287,6 @@
 
     move-result-object v2
 
-    .line 5
     iget v4, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
     div-int/lit8 v4, v4, 0x2
@@ -1442,14 +1299,12 @@
 
     move-result-object v3
 
-    .line 6
     check-cast v2, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {v2, v3}, Lorg/osmdroid/util/GeoPoint;->distanceTo(Lorg/osmdroid/api/IGeoPoint;)I
 
     move-result v2
 
-    .line 7
     iget-boolean v3, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->adjustLength:Z
 
     if-eqz v3, :cond_0
@@ -1476,7 +1331,6 @@
 
     double-to-int v0, v6
 
-    .line 8
     iget v2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
     div-int/lit8 v2, v2, 0x2
@@ -1493,7 +1347,6 @@
 
     move-result-object v2
 
-    .line 9
     iget v6, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->screenWidth:I
 
     div-int/lit8 v6, v6, 0x2
@@ -1508,14 +1361,12 @@
 
     move-result-object p1
 
-    .line 10
     check-cast v2, Lorg/osmdroid/util/GeoPoint;
 
     invoke-virtual {v2, p1}, Lorg/osmdroid/util/GeoPoint;->distanceTo(Lorg/osmdroid/api/IGeoPoint;)I
 
     move-result p1
 
-    .line 11
     iget-boolean v2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->adjustLength:Z
 
     int-to-double v5, p1
@@ -1539,17 +1390,14 @@
 
     double-to-int v1, v3
 
-    .line 12
     invoke-virtual {p0, v1}, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->scaleBarLengthText(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 13
     new-instance v2, Landroid/graphics/Rect;
 
     invoke-direct {v2}, Landroid/graphics/Rect;-><init>()V
 
-    .line 14
     iget-object v3, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v1}, Ljava/lang/String;->length()I
@@ -1560,7 +1408,6 @@
 
     invoke-virtual {v3, v1, v7, v4, v2}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
-    .line 15
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
     move-result v1
@@ -1575,17 +1422,14 @@
 
     double-to-int v3, v5
 
-    .line 16
     invoke-virtual {p0, v3}, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->scaleBarLengthText(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 17
     new-instance v4, Landroid/graphics/Rect;
 
     invoke-direct {v4}, Landroid/graphics/Rect;-><init>()V
 
-    .line 18
     iget-object v5, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v3}, Ljava/lang/String;->length()I
@@ -1594,7 +1438,6 @@
 
     invoke-virtual {v5, v3, v7, v6, v4}, Landroid/graphics/Paint;->getTextBounds(Ljava/lang/String;IILandroid/graphics/Rect;)V
 
-    .line 19
     invoke-virtual {v4}, Landroid/graphics/Rect;->height()I
 
     move-result v3
@@ -1605,22 +1448,18 @@
 
     double-to-int v3, v5
 
-    .line 20
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
     move-result v2
 
-    .line 21
     invoke-virtual {v4}, Landroid/graphics/Rect;->height()I
 
     move-result v4
 
-    .line 22
     iget-object v5, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPath:Landroid/graphics/Path;
 
     invoke-virtual {v5}, Landroid/graphics/Path;->rewind()V
 
-    .line 23
     iget-boolean v5, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignBottom:Z
 
     if-eqz v5, :cond_2
@@ -1629,7 +1468,6 @@
 
     mul-int/lit8 v2, v2, -0x1
 
-    .line 24
     iget-object v5, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v5}, Landroid/view/ViewGroup;->getHeight()I
@@ -1643,7 +1481,6 @@
     :cond_2
     const/4 v5, 0x0
 
-    .line 25
     :goto_1
     iget-boolean v6, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignRight:Z
 
@@ -1653,7 +1490,6 @@
 
     mul-int/lit8 v4, v4, -0x1
 
-    .line 26
     iget-object v6, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v6}, Landroid/view/ViewGroup;->getWidth()I
@@ -1662,13 +1498,11 @@
 
     sub-int v0, v7, v0
 
-    .line 27
     :cond_3
     iget-boolean v6, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->latitudeBar:Z
 
     if-eqz v6, :cond_5
 
-    .line 28
     iget-object v6, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPath:Landroid/graphics/Path;
 
     int-to-float v8, v0
@@ -1683,48 +1517,40 @@
 
     invoke-virtual {v6, v8, v1}, Landroid/graphics/Path;->moveTo(FF)V
 
-    .line 29
     iget-object v6, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPath:Landroid/graphics/Path;
 
     int-to-float v9, v5
 
     invoke-virtual {v6, v8, v9}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 30
     iget-object v6, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPath:Landroid/graphics/Path;
 
     int-to-float v8, v7
 
     invoke-virtual {v6, v8, v9}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 31
     iget-boolean v6, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->longitudeBar:Z
 
     if-nez v6, :cond_4
 
-    .line 32
     iget-object v6, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPath:Landroid/graphics/Path;
 
     invoke-virtual {v6, v8, v1}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 33
     :cond_4
     iget-object v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->latitudeBarRect:Landroid/graphics/Rect;
 
     invoke-virtual {v1, v7, v5, v0, v2}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 34
     :cond_5
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->longitudeBar:Z
 
     if-eqz v0, :cond_7
 
-    .line 35
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->latitudeBar:Z
 
     if-nez v0, :cond_6
 
-    .line 36
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPath:Landroid/graphics/Path;
 
     add-int v1, v7, v4
@@ -1739,14 +1565,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->moveTo(FF)V
 
-    .line 37
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPath:Landroid/graphics/Path;
 
     int-to-float v1, v7
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 38
     :cond_6
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPath:Landroid/graphics/Path;
 
@@ -1756,7 +1580,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 39
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPath:Landroid/graphics/Path;
 
     add-int/2addr v4, v7
@@ -1769,7 +1592,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 40
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->longitudeBarRect:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v7, v5, v4, p1}, Landroid/graphics/Rect;->set(IIII)V
@@ -1781,7 +1603,6 @@
 .method protected scaleBarLengthText(I)Ljava/lang/String;
     .locals 11
 
-    .line 1
     sget-object v0, Lorg/osmdroid/views/overlay/ScaleBarOverlay$1;->$SwitchMap$org$osmdroid$views$overlay$ScaleBarOverlay$UnitsOfMeasure:[I
 
     iget-object v1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->unitsOfMeasure:Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;
@@ -1812,7 +1633,6 @@
 
     if-lt p1, v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1842,7 +1662,6 @@
 
     if-lt p1, v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1865,21 +1684,18 @@
 
     div-double/2addr v7, v4
 
-    .line 4
     invoke-static {v7, v8}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object p1
 
     aput-object p1, v2, v6
 
-    .line 5
     invoke-virtual {v0, v1, v2}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
@@ -1912,7 +1728,6 @@
 
     if-ltz p1, :cond_3
 
-    .line 7
     iget-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1929,14 +1744,12 @@
 
     double-to-int v0, v0
 
-    .line 8
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
     aput-object v0, v3, v6
 
-    .line 9
     invoke-virtual {p1, v2, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -1950,7 +1763,6 @@
 
     if-ltz p1, :cond_4
 
-    .line 10
     iget-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1971,21 +1783,18 @@
 
     div-double/2addr v0, v4
 
-    .line 11
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object v0
 
     aput-object v0, v3, v6
 
-    .line 12
     invoke-virtual {p1, v2, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 
-    .line 13
     :cond_4
     iget-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
@@ -2001,14 +1810,12 @@
 
     double-to-int v0, v0
 
-    .line 14
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
     aput-object v0, v5, v6
 
-    .line 15
     invoke-virtual {p1, v4, v5}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -2024,7 +1831,6 @@
 
     if-ltz p1, :cond_6
 
-    .line 16
     iget-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -2041,14 +1847,12 @@
 
     double-to-int v0, v0
 
-    .line 17
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
     aput-object v0, v3, v6
 
-    .line 18
     invoke-virtual {p1, v2, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -2062,7 +1866,6 @@
 
     if-ltz p1, :cond_7
 
-    .line 19
     iget-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -2083,21 +1886,18 @@
 
     div-double/2addr v0, v4
 
-    .line 20
     invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
     move-result-object v0
 
     aput-object v0, v3, v6
 
-    .line 21
     invoke-virtual {p1, v2, v3}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
 
     return-object p1
 
-    .line 22
     :cond_7
     iget-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->context:Landroid/content/Context;
 
@@ -2113,14 +1913,12 @@
 
     double-to-int v0, v0
 
-    .line 23
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
     aput-object v0, v5, v6
 
-    .line 24
     invoke-virtual {p1, v4, v5}, Landroid/content/res/Resources;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -2133,15 +1931,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->centred:Z
 
-    .line 2
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignBottom:Z
 
     const/4 p1, -0x1
 
-    .line 3
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     return-void
@@ -2152,15 +1947,12 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->centred:Z
 
-    .line 2
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignRight:Z
 
     const/4 p1, -0x1
 
-    .line 3
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     return-void
@@ -2169,12 +1961,10 @@
 .method public setBackgroundPaint(Landroid/graphics/Paint;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->bgPaint:Landroid/graphics/Paint;
 
     const/4 p1, -0x1
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     return-void
@@ -2185,17 +1975,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPaint:Landroid/graphics/Paint;
 
     const/4 p1, -0x1
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -2209,22 +1996,18 @@
 .method public setCentred(Z)V
     .locals 1
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->centred:Z
 
     xor-int/lit8 v0, p1, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignBottom:Z
 
     xor-int/lit8 p1, p1, 0x1
 
-    .line 3
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->alignRight:Z
 
     const/4 p1, -0x1
 
-    .line 4
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     return-void
@@ -2233,12 +2016,10 @@
 .method public setEnableAdjustLength(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->adjustLength:Z
 
     const/4 p1, -0x1
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     return-void
@@ -2247,7 +2028,6 @@
 .method public setLineWidth(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->barPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setStrokeWidth(F)V
@@ -2258,12 +2038,10 @@
 .method public setMaxLength(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->maxLength:F
 
     const/4 p1, -0x1
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     return-void
@@ -2272,7 +2050,6 @@
 .method public setMinZoom(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->minZoom:I
 
     return-void
@@ -2281,10 +2058,8 @@
 .method public setScaleBarOffset(II)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->xOffset:I
 
-    .line 2
     iput p2, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->yOffset:I
 
     return-void
@@ -2295,17 +2070,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     const/4 p1, -0x1
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -2319,7 +2091,6 @@
 .method public setTextSize(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->textPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setTextSize(F)V
@@ -2330,12 +2101,10 @@
 .method public setUnitsOfMeasure(Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->unitsOfMeasure:Lorg/osmdroid/views/overlay/ScaleBarOverlay$UnitsOfMeasure;
 
     const/4 p1, -0x1
 
-    .line 2
     iput p1, p0, Lorg/osmdroid/views/overlay/ScaleBarOverlay;->lastZoomLevel:I
 
     return-void

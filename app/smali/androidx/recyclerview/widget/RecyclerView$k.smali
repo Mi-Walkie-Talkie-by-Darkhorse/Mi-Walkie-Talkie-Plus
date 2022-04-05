@@ -1,6 +1,5 @@
 .class Landroidx/recyclerview/widget/RecyclerView$k;
 .super Ljava/lang/Object;
-.source "RecyclerView.java"
 
 # interfaces
 .implements Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$b;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/recyclerview/widget/RecyclerView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$k;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,10 +38,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView$y;->setIsRecyclable(Z)V
 
-    .line 2
     iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$y;->mShadowedHolder:Landroidx/recyclerview/widget/RecyclerView$y;
 
     const/4 v1, 0x0
@@ -54,21 +50,17 @@
 
     if-nez v0, :cond_0
 
-    .line 3
     iput-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$y;->mShadowedHolder:Landroidx/recyclerview/widget/RecyclerView$y;
 
-    .line 4
     :cond_0
     iput-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$y;->mShadowingHolder:Landroidx/recyclerview/widget/RecyclerView$y;
 
-    .line 5
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$y;->shouldBeKeptAsChild()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 6
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$k;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;
@@ -85,7 +77,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 7
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$k;->a:Landroidx/recyclerview/widget/RecyclerView;
 
     iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$y;->itemView:Landroid/view/View;

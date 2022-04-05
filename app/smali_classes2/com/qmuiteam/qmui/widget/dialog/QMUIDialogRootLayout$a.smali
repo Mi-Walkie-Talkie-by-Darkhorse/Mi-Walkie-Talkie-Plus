@@ -1,6 +1,5 @@
 .class interface abstract Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogRootLayout$a;
 .super Ljava/lang/Object;
-.source "QMUIDialogRootLayout.java"
 
 
 # annotations

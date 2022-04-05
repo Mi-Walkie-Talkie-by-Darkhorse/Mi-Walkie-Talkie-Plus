@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/LongDef;
 .super Ljava/lang/Object;
-.source "LongDef.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

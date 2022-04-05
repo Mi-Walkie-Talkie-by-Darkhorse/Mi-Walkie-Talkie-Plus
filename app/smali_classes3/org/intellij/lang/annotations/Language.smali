@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/intellij/lang/annotations/Language;
 .super Ljava/lang/Object;
-.source "Language.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

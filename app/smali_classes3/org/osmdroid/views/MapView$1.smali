@@ -1,6 +1,5 @@
 .class synthetic Lorg/osmdroid/views/MapView$1;
 .super Ljava/lang/Object;
-.source "MapView.java"
 
 
 # annotations

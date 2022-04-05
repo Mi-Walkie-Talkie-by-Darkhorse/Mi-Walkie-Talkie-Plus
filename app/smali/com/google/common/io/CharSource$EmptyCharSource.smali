@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/CharSource$EmptyCharSource;
 .super Lcom/google/common/io/CharSource$CharSequenceCharSource;
-.source "CharSource.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/io/CharSource$EmptyCharSource;
 
     invoke-direct {v0}, Lcom/google/common/io/CharSource$EmptyCharSource;-><init>()V
@@ -37,7 +35,6 @@
 
     const-string v0, ""
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/common/io/CharSource$CharSequenceCharSource;-><init>(Ljava/lang/CharSequence;)V
 
     return-void
@@ -46,7 +43,6 @@
 .method static synthetic access$000()Lcom/google/common/io/CharSource$EmptyCharSource;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/io/CharSource$EmptyCharSource;->INSTANCE:Lcom/google/common/io/CharSource$EmptyCharSource;
 
     return-object v0

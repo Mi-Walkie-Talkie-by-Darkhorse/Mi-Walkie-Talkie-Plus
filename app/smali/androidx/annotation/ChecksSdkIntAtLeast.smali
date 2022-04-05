@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/ChecksSdkIntAtLeast;
 .super Ljava/lang/Object;
-.source "ChecksSdkIntAtLeast.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

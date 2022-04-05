@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/MotionLayout$g;
 .super Ljava/lang/Object;
-.source "MotionLayout.java"
 
 # interfaces
 .implements Landroidx/constraintlayout/motion/widget/MotionLayout$f;
@@ -29,7 +28,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/constraintlayout/motion/widget/MotionLayout$g;
 
     invoke-direct {v0}, Landroidx/constraintlayout/motion/widget/MotionLayout$g;-><init>()V
@@ -42,7 +40,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -51,7 +48,6 @@
 .method public static d()Landroidx/constraintlayout/motion/widget/MotionLayout$g;
     .locals 2
 
-    .line 1
     sget-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$g;->b:Landroidx/constraintlayout/motion/widget/MotionLayout$g;
 
     invoke-static {}, Landroid/view/VelocityTracker;->obtain()Landroid/view/VelocityTracker;
@@ -60,7 +56,6 @@
 
     iput-object v1, v0, Landroidx/constraintlayout/motion/widget/MotionLayout$g;->a:Landroid/view/VelocityTracker;
 
-    .line 2
     sget-object v0, Landroidx/constraintlayout/motion/widget/MotionLayout$g;->b:Landroidx/constraintlayout/motion/widget/MotionLayout$g;
 
     return-object v0
@@ -71,14 +66,12 @@
 .method public a()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$g;->a:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->recycle()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$g;->a:Landroid/view/VelocityTracker;
 
     return-void
@@ -87,7 +80,6 @@
 .method public a(I)V
     .locals 1
 
-    .line 5
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$g;->a:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0, p1}, Landroid/view/VelocityTracker;->computeCurrentVelocity(I)V
@@ -98,12 +90,10 @@
 .method public a(Landroid/view/MotionEvent;)V
     .locals 1
 
-    .line 3
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$g;->a:Landroid/view/VelocityTracker;
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0, p1}, Landroid/view/VelocityTracker;->addMovement(Landroid/view/MotionEvent;)V
 
     :cond_0
@@ -113,7 +103,6 @@
 .method public b()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$g;->a:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->getYVelocity()F
@@ -126,7 +115,6 @@
 .method public c()F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/MotionLayout$g;->a:Landroid/view/VelocityTracker;
 
     invoke-virtual {v0}, Landroid/view/VelocityTracker;->getXVelocity()F

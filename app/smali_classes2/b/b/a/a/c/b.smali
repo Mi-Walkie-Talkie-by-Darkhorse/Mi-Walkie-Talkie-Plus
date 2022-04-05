@@ -1,6 +1,5 @@
 .class public interface abstract Lb/b/a/a/c/b;
 .super Ljava/lang/Object;
-.source "WeiboAuthListener.java"
 
 
 # virtual methods

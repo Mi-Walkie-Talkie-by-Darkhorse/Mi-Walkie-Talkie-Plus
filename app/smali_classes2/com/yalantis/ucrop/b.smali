@@ -1,6 +1,5 @@
 .class public Lcom/yalantis/ucrop/b;
 .super Ljava/lang/Object;
-.source "UCrop.java"
 
 
 # annotations
@@ -29,17 +28,14 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     iput-object v0, p0, Lcom/yalantis/ucrop/b;->a:Landroid/content/Intent;
 
-    .line 3
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
@@ -48,10 +44,8 @@
 
     const-string v1, "com.yalantis.ucrop.InputUri"
 
-    .line 4
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 5
     iget-object p1, p0, Lcom/yalantis/ucrop/b;->b:Landroid/os/Bundle;
 
     const-string v0, "com.yalantis.ucrop.OutputUri"
@@ -72,7 +66,6 @@
 
     const-string v0, "com.yalantis.ucrop.OutputUri"
 
-    .line 12
     invoke-virtual {p0, v0}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p0
@@ -93,7 +86,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Lcom/yalantis/ucrop/b;
 
     invoke-direct {v0, p0, p1}, Lcom/yalantis/ucrop/b;-><init>(Landroid/net/Uri;Landroid/net/Uri;)V
@@ -110,21 +102,18 @@
         .end annotation
     .end param
 
-    .line 9
     iget-object v0, p0, Lcom/yalantis/ucrop/b;->a:Landroid/content/Intent;
 
     const-class v1, Lcom/yalantis/ucrop/UCropActivity;
 
     invoke-virtual {v0, p1, v1}, Landroid/content/Intent;->setClass(Landroid/content/Context;Ljava/lang/Class;)Landroid/content/Intent;
 
-    .line 10
     iget-object p1, p0, Lcom/yalantis/ucrop/b;->a:Landroid/content/Intent;
 
     iget-object v0, p0, Lcom/yalantis/ucrop/b;->b:Landroid/os/Bundle;
 
     invoke-virtual {p1, v0}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
-    .line 11
     iget-object p1, p0, Lcom/yalantis/ucrop/b;->a:Landroid/content/Intent;
 
     return-object p1
@@ -133,14 +122,12 @@
 .method public a(FF)Lcom/yalantis/ucrop/b;
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/yalantis/ucrop/b;->b:Landroid/os/Bundle;
 
     const-string v1, "com.yalantis.ucrop.AspectRatioX"
 
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
 
-    .line 3
     iget-object p1, p0, Lcom/yalantis/ucrop/b;->b:Landroid/os/Bundle;
 
     const-string v0, "com.yalantis.ucrop.AspectRatioY"
@@ -174,7 +161,6 @@
 
     const/16 p2, 0xa
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/yalantis/ucrop/b;->b:Landroid/os/Bundle;
 
@@ -182,7 +168,6 @@
 
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    .line 5
     iget-object p1, p0, Lcom/yalantis/ucrop/b;->b:Landroid/os/Bundle;
 
     const-string v0, "com.yalantis.ucrop.MaxSizeY"
@@ -199,7 +184,6 @@
         .end annotation
     .end param
 
-    .line 6
     iget-object v0, p0, Lcom/yalantis/ucrop/b;->b:Landroid/os/Bundle;
 
     invoke-virtual {p1}, Lcom/yalantis/ucrop/b$a;->a()Landroid/os/Bundle;
@@ -220,7 +204,6 @@
 
     const/16 v0, 0x45
 
-    .line 7
     invoke-virtual {p0, p1, v0}, Lcom/yalantis/ucrop/b;->a(Landroid/app/Activity;I)V
 
     return-void
@@ -233,7 +216,6 @@
         .end annotation
     .end param
 
-    .line 8
     invoke-virtual {p0, p1}, Lcom/yalantis/ucrop/b;->a(Landroid/content/Context;)Landroid/content/Intent;
 
     move-result-object v0

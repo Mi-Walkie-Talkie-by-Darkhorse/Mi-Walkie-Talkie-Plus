@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEventObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "AbsListViewScrollEventObservable.kt"
 
 # interfaces
 .implements Landroid/widget/AbsListView$OnScrollListener;
@@ -104,7 +103,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEventObservable$Listener;->view:Landroid/widget/AbsListView;
@@ -119,7 +117,6 @@
 .method protected onDispose()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEventObservable$Listener;->view:Landroid/widget/AbsListView;
 
     const/4 v1, 0x0
@@ -140,14 +137,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 2
     new-instance p1, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEvent;
 
     iget-object v1, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEventObservable$Listener;->view:Landroid/widget/AbsListView;
@@ -164,7 +159,6 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEvent;-><init>(Landroid/widget/AbsListView;IIII)V
 
-    .line 3
     iget-object p2, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     invoke-interface {p2, p1}, Lio/reactivex/Observer;->onNext(Ljava/lang/Object;)V
@@ -184,17 +178,14 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     iput p2, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEventObservable$Listener;->currentScrollState:I
 
-    .line 2
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 3
     new-instance p1, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEvent;
 
     iget-object v1, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEventObservable$Listener;->view:Landroid/widget/AbsListView;
@@ -203,7 +194,6 @@
 
     move-result v3
 
-    .line 4
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEventObservable$Listener;->view:Landroid/widget/AbsListView;
 
     invoke-virtual {v0}, Landroid/widget/AbsListView;->getChildCount()I
@@ -220,10 +210,8 @@
 
     move v2, p2
 
-    .line 5
     invoke-direct/range {v0 .. v5}, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEvent;-><init>(Landroid/widget/AbsListView;IIII)V
 
-    .line 6
     iget-object p2, p0, Lcom/jakewharton/rxbinding3/widget/AbsListViewScrollEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
     invoke-interface {p2, p1}, Lio/reactivex/Observer;->onNext(Ljava/lang/Object;)V

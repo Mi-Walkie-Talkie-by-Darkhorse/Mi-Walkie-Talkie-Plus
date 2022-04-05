@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/NestedScrollAgentWebView;
 .super Lcom/just/agentweb/AgentWebView;
-.source "NestedScrollAgentWebView.java"
 
 # interfaces
 .implements Landroidx/core/view/l;
@@ -22,22 +21,18 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/just/agentweb/AgentWebView;-><init>(Landroid/content/Context;)V
 
     const/4 p1, 0x2
 
     new-array v0, p1, [I
 
-    .line 2
     iput-object v0, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollOffset:[I
 
     new-array p1, p1, [I
 
-    .line 3
     iput-object p1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollConsumed:[I
 
-    .line 4
     invoke-direct {p0}, Lcom/just/agentweb/NestedScrollAgentWebView;->init()V
 
     return-void
@@ -46,22 +41,18 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 5
     invoke-direct {p0, p1, p2}, Lcom/just/agentweb/AgentWebView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x2
 
     new-array p2, p1, [I
 
-    .line 6
     iput-object p2, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollOffset:[I
 
     new-array p1, p1, [I
 
-    .line 7
     iput-object p1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollConsumed:[I
 
-    .line 8
     invoke-direct {p0}, Lcom/just/agentweb/NestedScrollAgentWebView;->init()V
 
     return-void
@@ -70,7 +61,6 @@
 .method private init()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/core/view/m;
 
     invoke-direct {v0, p0}, Landroidx/core/view/m;-><init>(Landroid/view/View;)V
@@ -79,7 +69,6 @@
 
     const/4 v0, 0x1
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/just/agentweb/NestedScrollAgentWebView;->setNestedScrollingEnabled(Z)V
 
     return-void
@@ -90,7 +79,6 @@
 .method public dispatchNestedFling(FFZ)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mChildHelper:Landroidx/core/view/m;
 
     invoke-virtual {v0, p1, p2, p3}, Landroidx/core/view/m;->a(FFZ)Z
@@ -103,7 +91,6 @@
 .method public dispatchNestedPreFling(FF)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mChildHelper:Landroidx/core/view/m;
 
     invoke-virtual {v0, p1, p2}, Landroidx/core/view/m;->a(FF)Z
@@ -116,7 +103,6 @@
 .method public dispatchNestedPreScroll(II[I[I)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mChildHelper:Landroidx/core/view/m;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Landroidx/core/view/m;->a(II[I[I)Z
@@ -129,7 +115,6 @@
 .method public dispatchNestedScroll(IIII[I)Z
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mChildHelper:Landroidx/core/view/m;
 
     move v1, p1
@@ -152,7 +137,6 @@
 .method public hasNestedScrollingParent()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mChildHelper:Landroidx/core/view/m;
 
     invoke-virtual {v0}, Landroidx/core/view/m;->a()Z
@@ -165,7 +149,6 @@
 .method public isNestedScrollingEnabled()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mChildHelper:Landroidx/core/view/m;
 
     invoke-virtual {v0}, Landroidx/core/view/m;->b()Z
@@ -178,12 +161,10 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 13
 
-    .line 1
     invoke-static {p1}, Landroid/view/MotionEvent;->obtain(Landroid/view/MotionEvent;)Landroid/view/MotionEvent;
 
     move-result-object v0
 
-    .line 2
     invoke-static {p1}, Landroidx/core/view/i;->a(Landroid/view/MotionEvent;)I
 
     move-result v1
@@ -192,10 +173,8 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     iput v2, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mNestedYOffset:I
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
@@ -203,7 +182,6 @@
 
     float-to-int v3, v3
 
-    .line 5
     iget v4, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mNestedYOffset:I
 
     int-to-float v4, v4
@@ -232,13 +210,11 @@
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget p1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mLastMotionY:I
 
     sub-int/2addr p1, v3
 
-    .line 7
     iget-object v1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollConsumed:[I
 
     iget-object v4, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollOffset:[I
@@ -249,14 +225,12 @@
 
     if-eqz v1, :cond_2
 
-    .line 8
     iget-object v1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollConsumed:[I
 
     aget v1, v1, v6
 
     sub-int/2addr p1, v1
 
-    .line 9
     iget-object v1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollOffset:[I
 
     aget v1, v1, v6
@@ -265,7 +239,6 @@
 
     invoke-virtual {v0, v5, v1}, Landroid/view/MotionEvent;->offsetLocation(FF)V
 
-    .line 10
     iget v1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mNestedYOffset:I
 
     iget-object v4, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollOffset:[I
@@ -276,7 +249,6 @@
 
     iput v1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mNestedYOffset:I
 
-    .line 11
     :cond_2
     iget-object v1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollOffset:[I
 
@@ -286,14 +258,12 @@
 
     iput v3, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mLastMotionY:I
 
-    .line 12
     invoke-virtual {p0}, Landroid/webkit/WebView;->getScrollY()I
 
     move-result v1
 
     add-int v3, v1, p1
 
-    .line 13
     invoke-static {v2, v3}, Ljava/lang/Math;->max(II)I
 
     move-result v2
@@ -306,7 +276,6 @@
 
     const/4 v10, 0x0
 
-    .line 14
     iget-object v12, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollOffset:[I
 
     move-object v7, p0
@@ -317,7 +286,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 15
     iget p1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mLastMotionY:I
 
     iget-object v1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollOffset:[I
@@ -328,14 +296,12 @@
 
     iput p1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mLastMotionY:I
 
-    .line 16
     aget p1, v1, v6
 
     int-to-float p1, p1
 
     invoke-virtual {v0, v5, p1}, Landroid/view/MotionEvent;->offsetLocation(FF)V
 
-    .line 17
     iget p1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mNestedYOffset:I
 
     iget-object v1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mScrollOffset:[I
@@ -346,36 +312,29 @@
 
     iput p1, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mNestedYOffset:I
 
-    .line 18
     :cond_3
     invoke-super {p0, v0}, Landroid/webkit/WebView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v2
 
-    .line 19
     invoke-virtual {v0}, Landroid/view/MotionEvent;->recycle()V
 
     goto :goto_0
 
-    .line 20
     :cond_4
     invoke-virtual {p0}, Lcom/just/agentweb/NestedScrollAgentWebView;->stopNestedScroll()V
 
-    .line 21
     invoke-super {p0, p1}, Landroid/webkit/WebView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v2
 
     goto :goto_0
 
-    .line 22
     :cond_5
     iput v3, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mLastMotionY:I
 
-    .line 23
     invoke-virtual {p0, v4}, Lcom/just/agentweb/NestedScrollAgentWebView;->startNestedScroll(I)Z
 
-    .line 24
     invoke-super {p0, p1}, Landroid/webkit/WebView;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v2
@@ -387,7 +346,6 @@
 .method public setNestedScrollingEnabled(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mChildHelper:Landroidx/core/view/m;
 
     invoke-virtual {v0, p1}, Landroidx/core/view/m;->a(Z)V
@@ -398,7 +356,6 @@
 .method public startNestedScroll(I)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mChildHelper:Landroidx/core/view/m;
 
     invoke-virtual {v0, p1}, Landroidx/core/view/m;->b(I)Z
@@ -411,7 +368,6 @@
 .method public stopNestedScroll()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/NestedScrollAgentWebView;->mChildHelper:Landroidx/core/view/m;
 
     invoke-virtual {v0}, Landroidx/core/view/m;->c()V

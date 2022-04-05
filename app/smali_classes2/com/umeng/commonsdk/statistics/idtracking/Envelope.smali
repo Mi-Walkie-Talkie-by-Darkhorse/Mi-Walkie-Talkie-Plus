@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/idtracking/Envelope;
 .super Ljava/lang/Object;
-.source "Envelope.java"
 
 
 # static fields
@@ -48,88 +47,68 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0x8
 
     new-array v0, v0, [B
 
-    .line 2
     fill-array-data v0, :array_0
 
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->SEED:[B
 
     const/4 v0, 0x1
 
-    .line 3
     iput v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->CODEX_ENCRYPT:I
 
     const/4 v0, 0x0
 
-    .line 4
     iput v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->CODEX_NORMAL:I
 
     const-string v1, "1.0"
 
-    .line 5
     iput-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mVersion:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    .line 6
     iput-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mAddress:Ljava/lang/String;
 
-    .line 7
     iput-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSignature:[B
 
-    .line 8
     iput-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mGuid:[B
 
-    .line 9
     iput-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mChecksum:[B
 
-    .line 10
     iput v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSerialNo:I
 
-    .line 11
     iput v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mTimestamp:I
 
-    .line 12
     iput v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mLength:I
 
-    .line 13
     iput-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mEntity:[B
 
-    .line 14
     iput-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->identity:[B
 
-    .line 15
     iput-boolean v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->encrypt:Z
 
     if-eqz p1, :cond_0
 
-    .line 16
     array-length v0, p1
 
     if-eqz v0, :cond_0
 
-    .line 17
     iput-object p2, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mAddress:Ljava/lang/String;
 
-    .line 18
     array-length p2, p1
 
     iput p2, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mLength:I
 
-    .line 19
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/common/b;->a([B)[B
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mEntity:[B
 
-    .line 20
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide p1
@@ -142,12 +121,10 @@
 
     iput p2, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mTimestamp:I
 
-    .line 21
     iput-object p3, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->identity:[B
 
     return-void
 
-    .line 22
     :cond_0
     new-instance p1, Ljava/lang/Exception;
 
@@ -173,12 +150,10 @@
 .method private genCheckSum()[B
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSignature:[B
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->toHexString([B)Ljava/lang/String;
@@ -187,22 +162,18 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 3
     iget v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSerialNo:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 4
     iget v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mTimestamp:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 5
     iget v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mLength:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 6
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mGuid:[B
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->toHexString([B)Ljava/lang/String;
@@ -211,7 +182,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -236,25 +206,21 @@
 
     const/4 v2, 0x0
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Lcom/umeng/commonsdk/statistics/internal/PreferenceWrapper;->getDefault(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v3
 
-    .line 2
     invoke-interface {v3, v1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
     const/4 v5, 0x1
 
-    .line 3
     invoke-interface {v3, v0, v5}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result v6
 
-    .line 4
     new-instance v7, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;
 
     const-string v8, "123456789098765432102:00:00:00:00:00"
@@ -265,19 +231,14 @@
 
     invoke-direct {v7, p2, p1, v8}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;-><init>([BLjava/lang/String;[B)V
 
-    .line 5
     invoke-virtual {v7, v5}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->setEncrypt(Z)V
 
-    .line 6
     invoke-virtual {v7, v4}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->setSignature(Ljava/lang/String;)V
 
-    .line 7
     invoke-virtual {v7, v6}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->setSerialNumber(I)V
 
-    .line 8
     invoke-virtual {v7}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->seal()V
 
-    .line 9
     invoke-interface {v3}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object p1
@@ -298,7 +259,6 @@
 
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 10
     invoke-virtual {v7, p0}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->export(Landroid/content/Context;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -308,7 +268,6 @@
     :catch_0
     move-exception p1
 
-    .line 11
     invoke-static {p0, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
     return-object v2
@@ -323,25 +282,21 @@
 
     const/4 v2, 0x0
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Lcom/umeng/commonsdk/statistics/internal/PreferenceWrapper;->getDefault(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v3
 
-    .line 2
     invoke-interface {v3, v1, v2}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
     const/4 v5, 0x1
 
-    .line 3
     invoke-interface {v3, v0, v5}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result v6
 
-    .line 4
     new-instance v7, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;
 
     const-string v8, "123456789098765432102:00:00:00:00:00"
@@ -352,16 +307,12 @@
 
     invoke-direct {v7, p2, p1, v8}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;-><init>([BLjava/lang/String;[B)V
 
-    .line 5
     invoke-virtual {v7, v4}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->setSignature(Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {v7, v6}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->setSerialNumber(I)V
 
-    .line 7
     invoke-virtual {v7}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->seal()V
 
-    .line 8
     invoke-interface {v3}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object p1
@@ -382,7 +333,6 @@
 
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
-    .line 9
     invoke-virtual {v7, p0}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->export(Landroid/content/Context;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -392,7 +342,6 @@
     :catch_0
     move-exception p1
 
-    .line 10
     invoke-static {p0, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
     return-object v2
@@ -401,26 +350,22 @@
 .method private genGuid([BI)[B
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->identity:[B
 
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->hash([B)[B
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mEntity:[B
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->hash([B)[B
 
     move-result-object v1
 
-    .line 3
     array-length v2, v0
 
     mul-int/lit8 v3, v2, 0x2
 
-    .line 4
     new-array v4, v3, [B
 
     const/4 v5, 0x0
@@ -434,14 +379,12 @@
 
     mul-int/lit8 v8, v6, 0x2
 
-    .line 5
     aget-byte v9, v1, v6
 
     aput-byte v9, v4, v8
 
     add-int/2addr v8, v7
 
-    .line 6
     aget-byte v7, v0, v6
 
     aput-byte v7, v4, v8
@@ -458,7 +401,6 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 7
     aget-byte v1, p1, v0
 
     aput-byte v1, v4, v0
@@ -467,7 +409,6 @@
 
     sub-int/2addr v1, v7
 
-    .line 8
     array-length v2, p1
 
     sub-int/2addr v2, v0
@@ -520,7 +461,6 @@
     :goto_2
     if-ge v5, v3, :cond_2
 
-    .line 9
     aget-byte p2, v4, v5
 
     rem-int/lit8 v0, v5, 0x4
@@ -544,7 +484,6 @@
 .method private genSignature()[B
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->SEED:[B
 
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
@@ -567,7 +506,6 @@
 .method public static getSignature(Landroid/content/Context;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/umeng/commonsdk/statistics/internal/PreferenceWrapper;->getDefault(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object p0
@@ -581,7 +519,6 @@
     :cond_0
     const-string v1, "signature"
 
-    .line 2
     invoke-interface {p0, v1, v0}, Landroid/content/SharedPreferences;->getString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -596,19 +533,16 @@
 
     const-string v0, "appkey"
 
-    .line 1
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mAddress:Ljava/lang/String;
 
     const-string v2, "umid"
 
     const/4 v3, 0x0
 
-    .line 2
     invoke-static {p1, v2, v3}, Lcom/umeng/commonsdk/framework/UMEnvelopeBuild;->imprintProperty(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 3
     iget-object v4, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSignature:[B
 
     invoke-static {v4}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->toHexString([B)Ljava/lang/String;
@@ -619,7 +553,6 @@
 
     new-array v6, v5, [B
 
-    .line 4
     iget-object v7, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSignature:[B
 
     const/4 v8, 0x2
@@ -628,7 +561,6 @@
 
     invoke-static {v7, v8, v6, v9, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 5
     invoke-static {v6}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->hash([B)[B
 
     move-result-object v5
@@ -637,32 +569,26 @@
 
     move-result-object v5
 
-    .line 6
     :try_start_0
     new-instance v6, Lorg/json/JSONObject;
 
     invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
 
-    .line 7
     invoke-virtual {v6, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     if-eqz v3, :cond_0
 
-    .line 8
     invoke-virtual {v6, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     :cond_0
     const-string v7, "signature"
 
-    .line 9
     invoke-virtual {v6, v7, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v4, "checksum"
 
-    .line 10
     invoke-virtual {v6, v4, v5}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 11
     new-instance v4, Ljava/io/File;
 
     invoke-virtual {p1}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
@@ -673,17 +599,14 @@
 
     invoke-direct {v4, v5, v7}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 12
     invoke-virtual {v4}, Ljava/io/File;->exists()Z
 
     move-result v5
 
     if-nez v5, :cond_1
 
-    .line 13
     invoke-virtual {v4}, Ljava/io/File;->mkdir()Z
 
-    .line 14
     :cond_1
     new-instance v5, Ljava/io/File;
 
@@ -704,22 +627,18 @@
     :catchall_0
     move-exception v4
 
-    .line 15
     invoke-virtual {v4}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 16
     :goto_0
     :try_start_1
     new-instance v4, Lorg/json/JSONObject;
 
     invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
 
-    .line 17
     invoke-virtual {v4, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     const-string v0, "channel"
 
-    .line 18
     invoke-static {p1}, Lcom/umeng/commonsdk/utils/UMUtils;->getChannel(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
@@ -728,14 +647,12 @@
 
     if-eqz v3, :cond_2
 
-    .line 19
     invoke-static {v3}, Lcom/umeng/commonsdk/statistics/common/HelperUtils;->getUmengMD5(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v4, v2, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    .line 20
     :cond_2
     new-instance v0, Ljava/io/File;
 
@@ -760,7 +677,6 @@
     :catchall_1
     move-exception p1
 
-    .line 21
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :goto_1
@@ -770,7 +686,6 @@
 .method public getSignature()Ljava/lang/String;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSignature:[B
 
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->toHexString([B)Ljava/lang/String;
@@ -783,19 +698,16 @@
 .method public seal()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSignature:[B
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->genSignature()[B
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSignature:[B
 
-    .line 3
     :cond_0
     iget-boolean v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->encrypt:Z
 
@@ -805,7 +717,6 @@
 
     new-array v1, v0, [B
 
-    .line 4
     :try_start_0
     iget-object v2, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSignature:[B
 
@@ -815,7 +726,6 @@
 
     invoke-static {v2, v3, v1, v4, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 5
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mEntity:[B
 
     invoke-static {v0, v1}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->encrypt([B[B)[B
@@ -826,7 +736,6 @@
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 6
     :catch_0
     :cond_1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSignature:[B
@@ -839,7 +748,6 @@
 
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mGuid:[B
 
-    .line 7
     invoke-direct {p0}, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->genCheckSum()[B
 
     move-result-object v0
@@ -852,7 +760,6 @@
 .method public setEncrypt(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->encrypt:Z
 
     return-void
@@ -861,7 +768,6 @@
 .method public setSerialNumber(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSerialNo:I
 
     return-void
@@ -870,7 +776,6 @@
 .method public setSignature(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->reverseHexString(Ljava/lang/String;)[B
 
     move-result-object p1
@@ -883,22 +788,18 @@
 .method public toBinary()[B
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/umeng/analytics/pro/aj;
 
     invoke-direct {v0}, Lcom/umeng/analytics/pro/aj;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mVersion:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/aj;->a(Ljava/lang/String;)Lcom/umeng/analytics/pro/aj;
 
-    .line 3
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mAddress:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/aj;->b(Ljava/lang/String;)Lcom/umeng/analytics/pro/aj;
 
-    .line 4
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSignature:[B
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->toHexString([B)Ljava/lang/String;
@@ -907,32 +808,26 @@
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/aj;->c(Ljava/lang/String;)Lcom/umeng/analytics/pro/aj;
 
-    .line 5
     iget v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSerialNo:I
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/aj;->a(I)Lcom/umeng/analytics/pro/aj;
 
-    .line 6
     iget v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mTimestamp:I
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/aj;->b(I)Lcom/umeng/analytics/pro/aj;
 
-    .line 7
     iget v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mLength:I
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/aj;->c(I)Lcom/umeng/analytics/pro/aj;
 
-    .line 8
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mEntity:[B
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/aj;->a([B)Lcom/umeng/analytics/pro/aj;
 
-    .line 9
     iget-boolean v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->encrypt:Z
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/aj;->d(I)Lcom/umeng/analytics/pro/aj;
 
-    .line 10
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mGuid:[B
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->toHexString([B)Ljava/lang/String;
@@ -941,7 +836,6 @@
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/aj;->d(Ljava/lang/String;)Lcom/umeng/analytics/pro/aj;
 
-    .line 11
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mChecksum:[B
 
     invoke-static {v1}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->toHexString([B)Ljava/lang/String;
@@ -950,7 +844,6 @@
 
     invoke-virtual {v0, v1}, Lcom/umeng/analytics/pro/aj;->e(Ljava/lang/String;)Lcom/umeng/analytics/pro/aj;
 
-    .line 12
     :try_start_0
     new-instance v1, Lcom/umeng/analytics/pro/az;
 
@@ -967,7 +860,6 @@
     :catch_0
     move-exception v0
 
-    .line 13
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -978,7 +870,6 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -987,7 +878,6 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 2
     iget-object v3, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mVersion:Ljava/lang/String;
 
     const/4 v4, 0x0
@@ -1004,7 +894,6 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 3
     iget-object v3, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mAddress:Ljava/lang/String;
 
     aput-object v3, v2, v4
@@ -1019,7 +908,6 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 4
     iget-object v3, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSignature:[B
 
     invoke-static {v3}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->toHexString([B)Ljava/lang/String;
@@ -1038,7 +926,6 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 5
     iget v3, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mSerialNo:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1057,7 +944,6 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 6
     iget v3, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mTimestamp:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1076,7 +962,6 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 7
     iget v3, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mLength:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1095,7 +980,6 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 8
     iget-object v3, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mGuid:[B
 
     invoke-static {v3}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->toHexString([B)Ljava/lang/String;
@@ -1114,7 +998,6 @@
 
     new-array v2, v1, [Ljava/lang/Object;
 
-    .line 9
     iget-object v3, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->mChecksum:[B
 
     invoke-static {v3}, Lcom/umeng/commonsdk/statistics/common/DataHelper;->toHexString([B)Ljava/lang/String;
@@ -1133,7 +1016,6 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    .line 10
     iget-boolean v2, p0, Lcom/umeng/commonsdk/statistics/idtracking/Envelope;->encrypt:Z
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -1150,7 +1032,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 11
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0

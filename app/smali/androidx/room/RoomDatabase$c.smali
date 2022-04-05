@@ -1,6 +1,5 @@
 .class public Landroidx/room/RoomDatabase$c;
 .super Ljava/lang/Object;
-.source "RoomDatabase.java"
 
 
 # annotations
@@ -33,10 +32,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -70,7 +67,6 @@
     :cond_1
     if-le p3, p4, :cond_8
 
-    .line 14
     :goto_0
     iget-object v0, p0, Landroidx/room/RoomDatabase$c;->a:Ljava/util/HashMap;
 
@@ -93,20 +89,17 @@
     :cond_2
     if-eqz p2, :cond_3
 
-    .line 15
     invoke-virtual {v0}, Ljava/util/TreeMap;->descendingKeySet()Ljava/util/NavigableSet;
 
     move-result-object v2
 
     goto :goto_1
 
-    .line 16
     :cond_3
     invoke-virtual {v0}, Ljava/util/TreeMap;->keySet()Ljava/util/Set;
 
     move-result-object v2
 
-    .line 17
     :goto_1
     invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -155,7 +148,6 @@
     :goto_3
     if-eqz v5, :cond_4
 
-    .line 18
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p3
@@ -185,13 +177,10 @@
 .method private a(Landroidx/room/q/a;)V
     .locals 5
 
-    .line 3
     iget v0, p1, Landroidx/room/q/a;->a:I
 
-    .line 4
     iget v1, p1, Landroidx/room/q/a;->b:I
 
-    .line 5
     iget-object v2, p0, Landroidx/room/RoomDatabase$c;->a:Ljava/util/HashMap;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -206,12 +195,10 @@
 
     if-nez v2, :cond_0
 
-    .line 6
     new-instance v2, Ljava/util/TreeMap;
 
     invoke-direct {v2}, Ljava/util/TreeMap;-><init>()V
 
-    .line 7
     iget-object v3, p0, Landroidx/room/RoomDatabase$c;->a:Ljava/util/HashMap;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -220,7 +207,6 @@
 
     invoke-virtual {v3, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 8
     :cond_0
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -234,7 +220,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 9
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -259,7 +244,6 @@
 
     invoke-static {v3, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     :cond_1
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -288,7 +272,6 @@
 
     if-ne p1, p2, :cond_0
 
-    .line 11
     invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p1
@@ -305,13 +288,11 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 12
     :goto_0
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    .line 13
     invoke-direct {p0, v1, v0, p1, p2}, Landroidx/room/RoomDatabase$c;->a(Ljava/util/List;ZII)Ljava/util/List;
 
     move-result-object p1
@@ -326,7 +307,6 @@
         .end annotation
     .end param
 
-    .line 1
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -336,7 +316,6 @@
 
     aget-object v2, p1, v1
 
-    .line 2
     invoke-direct {p0, v2}, Landroidx/room/RoomDatabase$c;->a(Landroidx/room/q/a;)V
 
     add-int/lit8 v1, v1, 0x1

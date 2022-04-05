@@ -1,6 +1,5 @@
 .class interface abstract Lio/reactivex/internal/operators/flowable/FlowableGroupJoin$JoinSupport;
 .super Ljava/lang/Object;
-.source "FlowableGroupJoin.java"
 
 
 # annotations

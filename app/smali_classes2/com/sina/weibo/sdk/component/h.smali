@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/component/h;
 .super Ljava/lang/Object;
-.source "WeiboCallbackManager.java"
 
 
 # static fields
@@ -35,17 +34,14 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
     iput-object p1, p0, Lcom/sina/weibo/sdk/component/h;->a:Ljava/util/Map;
 
-    .line 3
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
@@ -62,20 +58,17 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/sina/weibo/sdk/component/h;->c:Lcom/sina/weibo/sdk/component/h;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/sina/weibo/sdk/component/h;
 
     invoke-direct {v1, p0}, Lcom/sina/weibo/sdk/component/h;-><init>(Landroid/content/Context;)V
 
     sput-object v1, Lcom/sina/weibo/sdk/component/h;->c:Lcom/sina/weibo/sdk/component/h;
 
-    .line 3
     :cond_0
     sget-object p0, Lcom/sina/weibo/sdk/component/h;->c:Lcom/sina/weibo/sdk/component/h;
     :try_end_0
@@ -100,7 +93,6 @@
 
     monitor-enter p0
 
-    .line 4
     :try_start_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -112,12 +104,10 @@
 
     const/4 p1, 0x0
 
-    .line 5
     monitor-exit p0
 
     return-object p1
 
-    .line 6
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/h;->a:Ljava/util/Map;
@@ -145,7 +135,6 @@
 .method public a()Ljava/lang/String;
     .locals 2
 
-    .line 15
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
@@ -162,7 +151,6 @@
 
     monitor-enter p0
 
-    .line 7
     :try_start_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -174,7 +162,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_0
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/h;->a:Ljava/util/Map;
 
@@ -182,12 +169,10 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 9
     monitor-exit p0
 
     return-void
 
-    .line 10
     :cond_1
     :goto_0
     monitor-exit p0
@@ -207,7 +192,6 @@
 
     monitor-enter p0
 
-    .line 11
     :try_start_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -219,7 +203,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_0
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/h;->b:Ljava/util/Map;
 
@@ -227,12 +210,10 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 13
     monitor-exit p0
 
     return-void
 
-    .line 14
     :cond_1
     :goto_0
     monitor-exit p0
@@ -252,7 +233,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -264,12 +244,10 @@
 
     const/4 p1, 0x0
 
-    .line 2
     monitor-exit p0
 
     return-object p1
 
-    .line 3
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/h;->b:Ljava/util/Map;
@@ -299,7 +277,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -309,12 +286,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     monitor-exit p0
 
     return-void
 
-    .line 3
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/h;->a:Ljava/util/Map;
@@ -323,7 +298,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 4
     monitor-exit p0
 
     return-void
@@ -341,7 +315,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -351,12 +324,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     monitor-exit p0
 
     return-void
 
-    .line 3
     :cond_0
     :try_start_1
     iget-object v0, p0, Lcom/sina/weibo/sdk/component/h;->b:Ljava/util/Map;
@@ -365,7 +336,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 4
     monitor-exit p0
 
     return-void

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$a;
 .super Ljava/lang/Object;
-.source "OffMapAddressSearchActivity.java"
 
 # interfaces
 .implements Landroid/view/View$OnTouchListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 1
 
-    .line 1
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity$a;->a:Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity;->a(Lcom/ifengyu/intercom/ui/activity/OffMapAddressSearchActivity;)Landroid/view/inputmethod/InputMethodManager;

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/google/android/material/transition/MaterialSharedAxis$Axis;
 .super Ljava/lang/Object;
-.source "MaterialSharedAxis.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

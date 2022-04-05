@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/blelib/b/e$a;
 .super Ljava/lang/Object;
-.source "BleClient.java"
 
 
 # annotations

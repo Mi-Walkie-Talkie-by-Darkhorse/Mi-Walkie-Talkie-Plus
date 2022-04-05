@@ -1,6 +1,5 @@
 .class public Lme/zhanghai/android/materialprogressbar/HorizontalProgressDrawable;
 .super Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;
-.source "HorizontalProgressDrawable.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 
     new-array v0, v0, [Landroid/graphics/drawable/Drawable;
 
-    .line 1
     new-instance v1, Lme/zhanghai/android/materialprogressbar/HorizontalProgressBackgroundDrawable;
 
     invoke-direct {v1, p1}, Lme/zhanghai/android/materialprogressbar/HorizontalProgressBackgroundDrawable;-><init>(Landroid/content/Context;)V
@@ -57,7 +55,6 @@
 .method public bridge synthetic getShowBackground()Z
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->getShowBackground()Z
 
     move-result v0
@@ -68,7 +65,6 @@
 .method public bridge synthetic getUseIntrinsicPadding()Z
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->getUseIntrinsicPadding()Z
 
     move-result v0
@@ -79,7 +75,6 @@
 .method public bridge synthetic setShowBackground(Z)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->setShowBackground(Z)V
 
     return-void
@@ -97,7 +92,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->setTint(I)V
 
     return-void
@@ -115,7 +109,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->setTintList(Landroid/content/res/ColorStateList;)V
 
     return-void
@@ -133,7 +126,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
     return-void
@@ -142,7 +134,6 @@
 .method public bridge synthetic setUseIntrinsicPadding(Z)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->setUseIntrinsicPadding(Z)V
 
     return-void

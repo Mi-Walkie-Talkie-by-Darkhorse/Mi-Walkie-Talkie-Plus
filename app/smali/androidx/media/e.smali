@@ -1,6 +1,5 @@
 .class public final Landroidx/media/e;
 .super Ljava/lang/Object;
-.source "MediaSessionManager.java"
 
 
 # instance fields
@@ -20,10 +19,8 @@
         }
     .end annotation
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
     new-instance v0, Landroidx/media/g;
 
     invoke-direct {v0, p1}, Landroidx/media/g;-><init>(Landroid/media/session/MediaSessionManager$RemoteUserInfo;)V
@@ -40,17 +37,14 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-lt v0, v1, :cond_0
 
-    .line 3
     new-instance v0, Landroidx/media/g;
 
     invoke-direct {v0, p1, p2, p3}, Landroidx/media/g;-><init>(Ljava/lang/String;II)V
@@ -59,7 +53,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance v0, Landroidx/media/h;
 
@@ -86,7 +79,6 @@
 
     return p1
 
-    .line 1
     :cond_0
     instance-of v0, p1, Landroidx/media/e;
 
@@ -96,7 +88,6 @@
 
     return p1
 
-    .line 2
     :cond_1
     iget-object v0, p0, Landroidx/media/e;->a:Landroidx/media/f;
 
@@ -114,7 +105,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/media/e;->a:Landroidx/media/f;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I

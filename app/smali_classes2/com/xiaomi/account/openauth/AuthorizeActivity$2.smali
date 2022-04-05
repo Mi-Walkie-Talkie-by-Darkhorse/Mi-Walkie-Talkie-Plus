@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/openauth/AuthorizeActivity$2;
 .super Ljava/lang/Object;
-.source "AuthorizeActivity.java"
 
 # interfaces
 .implements Landroid/view/MenuItem$OnMenuItemClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/xiaomi/account/openauth/AuthorizeActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/openauth/AuthorizeActivity$2;->this$0:Lcom/xiaomi/account/openauth/AuthorizeActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/xiaomi/account/openauth/AuthorizeActivity$2;->this$0:Lcom/xiaomi/account/openauth/AuthorizeActivity;
 
     invoke-virtual {p1}, Lcom/xiaomi/account/openauth/AuthorizeActivityBase;->refreshWebView()V

@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/completable/CompletableUsing;
 .super Lio/reactivex/Completable;
-.source "CompletableUsing.java"
 
 
 # annotations
@@ -70,19 +69,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing;->resourceSupplier:Ljava/util/concurrent/Callable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/completable/CompletableUsing;->completableFunction:Lio/reactivex/functions/Function;
 
-    .line 4
     iput-object p3, p0, Lio/reactivex/internal/operators/completable/CompletableUsing;->disposer:Lio/reactivex/functions/Consumer;
 
-    .line 5
     iput-boolean p4, p0, Lio/reactivex/internal/operators/completable/CompletableUsing;->eager:Z
 
     return-void
@@ -93,7 +87,6 @@
 .method protected subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 5
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableUsing;->resourceSupplier:Ljava/util/concurrent/Callable;
 
@@ -103,7 +96,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
-    .line 2
     :try_start_1
     iget-object v1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing;->completableFunction:Lio/reactivex/functions/Function;
 
@@ -121,7 +113,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 3
     new-instance v2, Lio/reactivex/internal/operators/completable/CompletableUsing$UsingObserver;
 
     iget-object v3, p0, Lio/reactivex/internal/operators/completable/CompletableUsing;->disposer:Lio/reactivex/functions/Consumer;
@@ -137,15 +128,12 @@
     :catchall_0
     move-exception v1
 
-    .line 4
     invoke-static {v1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 5
     iget-boolean v2, p0, Lio/reactivex/internal/operators/completable/CompletableUsing;->eager:Z
 
     if-eqz v2, :cond_0
 
-    .line 6
     :try_start_2
     iget-object v2, p0, Lio/reactivex/internal/operators/completable/CompletableUsing;->disposer:Lio/reactivex/functions/Consumer;
 
@@ -158,10 +146,8 @@
     :catchall_1
     move-exception v0
 
-    .line 7
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 8
     new-instance v2, Lio/reactivex/exceptions/CompositeException;
 
     const/4 v3, 0x2
@@ -182,17 +168,14 @@
 
     return-void
 
-    .line 9
     :cond_0
     :goto_0
     invoke-static {v1, p1}, Lio/reactivex/internal/disposables/EmptyDisposable;->error(Ljava/lang/Throwable;Lio/reactivex/CompletableObserver;)V
 
-    .line 10
     iget-boolean p1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing;->eager:Z
 
     if-nez p1, :cond_1
 
-    .line 11
     :try_start_3
     iget-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableUsing;->disposer:Lio/reactivex/functions/Consumer;
 
@@ -205,10 +188,8 @@
     :catchall_2
     move-exception p1
 
-    .line 12
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 13
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
     :cond_1
@@ -218,10 +199,8 @@
     :catchall_3
     move-exception v0
 
-    .line 14
     invoke-static {v0}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 15
     invoke-static {v0, p1}, Lio/reactivex/internal/disposables/EmptyDisposable;->error(Ljava/lang/Throwable;Lio/reactivex/CompletableObserver;)V
 
     return-void

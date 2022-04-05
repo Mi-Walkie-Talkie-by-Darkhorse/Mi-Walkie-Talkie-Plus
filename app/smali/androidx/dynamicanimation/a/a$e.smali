@@ -1,6 +1,5 @@
 .class Landroidx/dynamicanimation/a/a$e;
 .super Landroidx/dynamicanimation/a/a$c;
-.source "AnimationHandler.java"
 
 
 # annotations
@@ -28,17 +27,14 @@
 .method constructor <init>(Landroidx/dynamicanimation/a/a$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/dynamicanimation/a/a$c;-><init>(Landroidx/dynamicanimation/a/a$a;)V
 
-    .line 2
     invoke-static {}, Landroid/view/Choreographer;->getInstance()Landroid/view/Choreographer;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/dynamicanimation/a/a$e;->b:Landroid/view/Choreographer;
 
-    .line 3
     new-instance p1, Landroidx/dynamicanimation/a/a$e$a;
 
     invoke-direct {p1, p0}, Landroidx/dynamicanimation/a/a$e$a;-><init>(Landroidx/dynamicanimation/a/a$e;)V
@@ -53,7 +49,6 @@
 .method a()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/dynamicanimation/a/a$e;->b:Landroid/view/Choreographer;
 
     iget-object v1, p0, Landroidx/dynamicanimation/a/a$e;->c:Landroid/view/Choreographer$FrameCallback;

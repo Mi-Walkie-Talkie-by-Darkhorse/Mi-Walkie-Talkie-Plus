@@ -1,6 +1,5 @@
 .class Lcom/google/common/base/CharMatcher$RangesMatcher;
 .super Lcom/google/common/base/CharMatcher;
-.source "CharMatcher.java"
 
 
 # annotations
@@ -24,16 +23,12 @@
 .method constructor <init>(Ljava/lang/String;[C[C)V
     .locals 4
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/base/CharMatcher;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p2, p0, Lcom/google/common/base/CharMatcher$RangesMatcher;->rangeStarts:[C
 
-    .line 3
     iput-object p3, p0, Lcom/google/common/base/CharMatcher$RangesMatcher;->rangeEnds:[C
 
-    .line 4
     array-length p1, p2
 
     array-length v0, p3
@@ -56,13 +51,11 @@
 
     const/4 p1, 0x0
 
-    .line 5
     :goto_1
     array-length v0, p2
 
     if-ge p1, v0, :cond_4
 
-    .line 6
     aget-char v0, p2, p1
 
     aget-char v3, p3, p1
@@ -81,12 +74,10 @@
 
     add-int/lit8 v0, p1, 0x1
 
-    .line 7
     array-length v3, p2
 
     if-ge v0, v3, :cond_3
 
-    .line 8
     aget-char p1, p3, p1
 
     aget-char v3, p2, v0
@@ -117,7 +108,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Character;
 
     invoke-super {p0, p1}, Lcom/google/common/base/CharMatcher;->apply(Ljava/lang/Character;)Z
@@ -130,7 +120,6 @@
 .method public matches(C)Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/CharMatcher$RangesMatcher;->rangeStarts:[C
 
     invoke-static {v0, p1}, Ljava/util/Arrays;->binarySearch([CC)I
@@ -150,7 +139,6 @@
 
     if-ltz v0, :cond_1
 
-    .line 2
     iget-object v2, p0, Lcom/google/common/base/CharMatcher$RangesMatcher;->rangeEnds:[C
 
     aget-char v0, v2, v0

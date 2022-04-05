@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$e;
 .super Ljava/lang/Object;
-.source "TrackInfoDetailActivity.java"
 
 # interfaces
 .implements Lb/a/a/a/c/d;
@@ -25,7 +24,6 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$e;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +46,6 @@
 
     return-object p1
 
-    .line 1
     :cond_0
     new-instance p1, Ljava/lang/StringBuilder;
 

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/appcompat/widget/LinearLayoutCompat$DividerMode;
 .super Ljava/lang/Object;
-.source "LinearLayoutCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

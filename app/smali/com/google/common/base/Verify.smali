@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/base/Verify;
 .super Ljava/lang/Object;
-.source "Verify.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -52,7 +49,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance p0, Lcom/google/common/base/VerifyException;
 
@@ -85,7 +81,6 @@
 
     const-string v1, "expected a non-null reference"
 
-    .line 1
     invoke-static {p0, v1, v0}, Lcom/google/common/base/Verify;->verifyNotNull(Ljava/lang/Object;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -128,7 +123,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     invoke-static {v0, p1, p2}, Lcom/google/common/base/Verify;->verify(ZLjava/lang/String;[Ljava/lang/Object;)V
 

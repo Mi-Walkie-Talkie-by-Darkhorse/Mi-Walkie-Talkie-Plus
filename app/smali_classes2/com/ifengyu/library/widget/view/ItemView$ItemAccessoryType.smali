@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/ifengyu/library/widget/view/ItemView$ItemAccessoryType;
 .super Ljava/lang/Object;
-.source "ItemView.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

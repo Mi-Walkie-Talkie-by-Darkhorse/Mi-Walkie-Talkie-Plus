@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/statistic/e;
 .super Ljava/lang/Object;
-.source "LogReport.java"
 
 
 # static fields
@@ -17,7 +16,6 @@
 .method public static a()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/sina/weibo/sdk/statistic/e;->a:Ljava/lang/String;
 
     return-object v0

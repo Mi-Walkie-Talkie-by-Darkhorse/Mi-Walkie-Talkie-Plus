@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/tab/QMUITabView$a;
 .super Landroid/view/GestureDetector$SimpleOnGestureListener;
-.source "QMUITabView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/tab/QMUITabView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabView$a;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     invoke-direct {p0}, Landroid/view/GestureDetector$SimpleOnGestureListener;-><init>()V
@@ -35,7 +33,6 @@
 .method public onDoubleTap(Landroid/view/MotionEvent;)Z
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabView$a;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->a(Lcom/qmuiteam/qmui/widget/tab/QMUITabView;)Lcom/qmuiteam/qmui/widget/tab/QMUITabView$b;
@@ -44,7 +41,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabView$a;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->a(Lcom/qmuiteam/qmui/widget/tab/QMUITabView;)Lcom/qmuiteam/qmui/widget/tab/QMUITabView$b;
@@ -68,7 +64,6 @@
 .method public onDown(Landroid/view/MotionEvent;)Z
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabView$a;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->a(Lcom/qmuiteam/qmui/widget/tab/QMUITabView;)Lcom/qmuiteam/qmui/widget/tab/QMUITabView$b;
@@ -91,7 +86,6 @@
 .method public onLongPress(Landroid/view/MotionEvent;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabView$a;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->a(Lcom/qmuiteam/qmui/widget/tab/QMUITabView;)Lcom/qmuiteam/qmui/widget/tab/QMUITabView$b;
@@ -100,7 +94,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabView$a;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->a(Lcom/qmuiteam/qmui/widget/tab/QMUITabView;)Lcom/qmuiteam/qmui/widget/tab/QMUITabView$b;
@@ -118,7 +111,6 @@
 .method public onSingleTapUp(Landroid/view/MotionEvent;)Z
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabView$a;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->a(Lcom/qmuiteam/qmui/widget/tab/QMUITabView;)Lcom/qmuiteam/qmui/widget/tab/QMUITabView$b;
@@ -129,7 +121,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUITabView$a;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->a(Lcom/qmuiteam/qmui/widget/tab/QMUITabView;)Lcom/qmuiteam/qmui/widget/tab/QMUITabView$b;

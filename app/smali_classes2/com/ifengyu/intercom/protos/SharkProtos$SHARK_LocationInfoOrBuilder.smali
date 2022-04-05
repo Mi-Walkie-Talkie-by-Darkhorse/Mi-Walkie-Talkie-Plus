@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_LocationInfoOrBuilder;
 .super Ljava/lang/Object;
-.source "SharkProtos.java"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageOrBuilder;

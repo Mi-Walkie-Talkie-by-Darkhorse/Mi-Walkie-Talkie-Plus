@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/aztec/encoder/BinaryShiftToken;
 .super Lcom/google/zxing/aztec/encoder/Token;
-.source "BinaryShiftToken.java"
 
 
 # instance fields
@@ -13,17 +12,14 @@
 .method constructor <init>(Lcom/google/zxing/aztec/encoder/Token;II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/zxing/aztec/encoder/Token;-><init>(Lcom/google/zxing/aztec/encoder/Token;)V
 
     int-to-short p1, p2
 
-    .line 2
     iput-short p1, p0, Lcom/google/zxing/aztec/encoder/BinaryShiftToken;->binaryShiftStart:S
 
     int-to-short p1, p3
 
-    .line 3
     iput-short p1, p0, Lcom/google/zxing/aztec/encoder/BinaryShiftToken;->binaryShiftByteCount:S
 
     return-void
@@ -36,7 +32,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     iget-short v1, p0, Lcom/google/zxing/aztec/encoder/BinaryShiftToken;->binaryShiftByteCount:S
 
@@ -55,10 +50,8 @@
     :cond_0
     const/4 v1, 0x5
 
-    .line 2
     invoke-virtual {p1, v3, v1}, Lcom/google/zxing/common/BitArray;->appendBits(II)V
 
-    .line 3
     iget-short v4, p0, Lcom/google/zxing/aztec/encoder/BinaryShiftToken;->binaryShiftByteCount:S
 
     if-le v4, v2, :cond_1
@@ -67,7 +60,6 @@
 
     const/16 v1, 0x10
 
-    .line 4
     invoke-virtual {p1, v4, v1}, Lcom/google/zxing/common/BitArray;->appendBits(II)V
 
     goto :goto_1
@@ -75,7 +67,6 @@
     :cond_1
     if-nez v0, :cond_2
 
-    .line 5
     invoke-static {v4, v3}, Ljava/lang/Math;->min(II)I
 
     move-result v2
@@ -87,10 +78,8 @@
     :cond_2
     add-int/lit8 v4, v4, -0x1f
 
-    .line 6
     invoke-virtual {p1, v4, v1}, Lcom/google/zxing/common/BitArray;->appendBits(II)V
 
-    .line 7
     :cond_3
     :goto_1
     iget-short v1, p0, Lcom/google/zxing/aztec/encoder/BinaryShiftToken;->binaryShiftStart:S
@@ -114,7 +103,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "<"

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/analytics/pro/a;
 .super Ljava/lang/Object;
-.source "IDeviceIdService.java"
 
 # interfaces
 .implements Landroid/os/IInterface;

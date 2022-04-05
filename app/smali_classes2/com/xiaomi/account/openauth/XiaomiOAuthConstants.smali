@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/account/openauth/XiaomiOAuthConstants;
 .super Ljava/lang/Object;
-.source "XiaomiOAuthConstants.java"
 
 
 # static fields
@@ -189,14 +188,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     const-string v1, "/data/system/oauth_staging_preview"
 
     invoke-direct {v0, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -212,11 +209,9 @@
     :cond_0
     const-string v0, "https://account.xiaomi.com"
 
-    .line 3
     :goto_0
     sput-object v0, Lcom/xiaomi/account/openauth/XiaomiOAuthConstants;->OAUTH2_HOST:Ljava/lang/String;
 
-    .line 4
     sget-boolean v0, Lcom/xiaomi/account/openauth/XiaomiOAuthConstants;->USE_PREVIEW:Z
 
     if-eqz v0, :cond_1
@@ -231,7 +226,6 @@
     :goto_1
     sput-object v0, Lcom/xiaomi/account/openauth/XiaomiOAuthConstants;->OAUTH2_API_URL_BASE:Ljava/lang/String;
 
-    .line 5
     sget-boolean v0, Lcom/xiaomi/account/openauth/XiaomiOAuthConstants;->USE_PREVIEW:Z
 
     if-eqz v0, :cond_2
@@ -252,7 +246,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

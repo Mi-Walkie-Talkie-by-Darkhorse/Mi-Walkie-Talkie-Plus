@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/AtomicLongMap$1;
 .super Ljava/lang/Object;
-.source "AtomicLongMap.java"
 
 # interfaces
 .implements Lcom/google/common/base/Function;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/AtomicLongMap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/AtomicLongMap$1;->this$0:Lcom/google/common/util/concurrent/AtomicLongMap;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -48,7 +46,6 @@
 .method public apply(Ljava/util/concurrent/atomic/AtomicLong;)Ljava/lang/Long;
     .locals 2
 
-    .line 2
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v0
@@ -63,7 +60,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p0, p1}, Lcom/google/common/util/concurrent/AtomicLongMap$1;->apply(Ljava/util/concurrent/atomic/AtomicLong;)Ljava/lang/Long;

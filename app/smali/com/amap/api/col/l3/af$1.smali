@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/af$1;
 .super Landroid/os/Handler;
-.source "UiSettingsDelegateImp.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/af;Landroid/os/Looper;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/af$1;->a:Lcom/amap/api/col/l3/af;
 
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
@@ -37,7 +35,6 @@
 
     if-eqz p1, :cond_7
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/af$1;->a:Lcom/amap/api/col/l3/af;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/af;->a(Lcom/amap/api/col/l3/af;)Lcom/amap/api/col/l3/u;
@@ -48,7 +45,6 @@
 
     goto/16 :goto_1
 
-    .line 2
     :cond_0
     :try_start_0
     iget p1, p1, Landroid/os/Message;->what:I
@@ -77,7 +73,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget-object p1, p0, Lcom/amap/api/col/l3/af$1;->a:Lcom/amap/api/col/l3/af;
 
@@ -96,7 +91,6 @@
     :goto_0
     return-void
 
-    .line 4
     :cond_2
     iget-object p1, p0, Lcom/amap/api/col/l3/af$1;->a:Lcom/amap/api/col/l3/af;
 
@@ -114,7 +108,6 @@
 
     return-void
 
-    .line 5
     :cond_3
     iget-object p1, p0, Lcom/amap/api/col/l3/af$1;->a:Lcom/amap/api/col/l3/af;
 
@@ -132,7 +125,6 @@
 
     return-void
 
-    .line 6
     :cond_4
     iget-object p1, p0, Lcom/amap/api/col/l3/af$1;->a:Lcom/amap/api/col/l3/af;
 
@@ -150,7 +142,6 @@
 
     return-void
 
-    .line 7
     :cond_5
     iget-object p1, p0, Lcom/amap/api/col/l3/af$1;->a:Lcom/amap/api/col/l3/af;
 
@@ -168,7 +159,6 @@
 
     return-void
 
-    .line 8
     :cond_6
     iget-object p1, p0, Lcom/amap/api/col/l3/af$1;->a:Lcom/amap/api/col/l3/af;
 
@@ -195,7 +185,6 @@
 
     const-string v1, "handleMessage"
 
-    .line 9
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_7

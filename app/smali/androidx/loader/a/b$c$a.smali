@@ -1,6 +1,5 @@
 .class final Landroidx/loader/a/b$c$a;
 .super Ljava/lang/Object;
-.source "LoaderManagerImpl.java"
 
 # interfaces
 .implements Landroidx/lifecycle/w$b;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -48,7 +46,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Landroidx/loader/a/b$c;
 
     invoke-direct {p1}, Landroidx/loader/a/b$c;-><init>()V

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$a;
 .super Ljava/lang/Object;
-.source "SealBtEarGuide1Activity.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$a;->a:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onClick(Landroid/content/DialogInterface;I)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity$a;->a:Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/activity/SealBtEarGuide1Activity;->y()V

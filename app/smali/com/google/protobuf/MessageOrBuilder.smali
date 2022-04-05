@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/protobuf/MessageOrBuilder;
 .super Ljava/lang/Object;
-.source "MessageOrBuilder.java"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageLiteOrBuilder;

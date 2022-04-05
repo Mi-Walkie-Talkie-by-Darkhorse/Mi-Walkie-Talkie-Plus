@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 .super Lcom/google/protobuf/GeneratedMessage;
-.source "SharkProtos.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParamOrBuilder;
@@ -116,14 +115,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$a;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$a;-><init>()V
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     const/4 v1, 0x1
@@ -132,7 +129,6 @@
 
     sput-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->defaultInstance:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
-    .line 3
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->initFields()V
 
     return-void
@@ -148,10 +144,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/protobuf/GeneratedMessage$Builder;->getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
 
     move-result-object p1
@@ -164,7 +158,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessage$Builder;Lcom/ifengyu/intercom/protos/SharkProtos$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;)V
 
     return-void
@@ -173,7 +166,6 @@
 .method private constructor <init>(Z)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage;-><init>()V
 
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet;->getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet;
@@ -188,7 +180,6 @@
 .method static synthetic access$3800()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/google/protobuf/GeneratedMessage;->alwaysUseFieldBuilders:Z
 
     return v0
@@ -197,7 +188,6 @@
 .method static synthetic access$4002(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->version_:I
 
     return p1
@@ -206,7 +196,6 @@
 .method static synthetic access$4102(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$SHARK_DEV_UERR;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$SHARK_DEV_UERR;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->result_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$SHARK_DEV_UERR;
 
     return-object p1
@@ -215,7 +204,6 @@
 .method static synthetic access$4202(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->fullInquiry_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     return-object p1
@@ -224,7 +212,6 @@
 .method static synthetic access$4302(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->verHw_:I
 
     return p1
@@ -233,7 +220,6 @@
 .method static synthetic access$4402(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->verSoft_:I
 
     return p1
@@ -242,7 +228,6 @@
 .method static synthetic access$4502(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/ByteString;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->deviceName_:Lcom/google/protobuf/ByteString;
 
     return-object p1
@@ -251,7 +236,6 @@
 .method static synthetic access$4602(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/ByteString;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bleName_:Lcom/google/protobuf/ByteString;
 
     return-object p1
@@ -260,7 +244,6 @@
 .method static synthetic access$4702(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->charge_:I
 
     return p1
@@ -269,7 +252,6 @@
 .method static synthetic access$4802(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->activate_:I
 
     return p1
@@ -278,7 +260,6 @@
 .method static synthetic access$4902(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->shareLoc_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     return-object p1
@@ -287,7 +268,6 @@
 .method static synthetic access$5002(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->btAudio_:I
 
     return p1
@@ -296,7 +276,6 @@
 .method static synthetic access$5102(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->ch_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     return-object p1
@@ -305,7 +284,6 @@
 .method static synthetic access$5202(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->voiceAlert_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     return-object p1
@@ -314,7 +292,6 @@
 .method static synthetic access$5302(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->isAllPublic_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     return-object p1
@@ -323,7 +300,6 @@
 .method static synthetic access$5402(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->pwsaveMode_:I
 
     return p1
@@ -332,7 +308,6 @@
 .method static synthetic access$5502(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->timeStamp_:I
 
     return p1
@@ -341,7 +316,6 @@
 .method static synthetic access$5602(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->timeDisplay_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     return-object p1
@@ -350,7 +324,6 @@
 .method static synthetic access$5702(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     return p1
@@ -359,7 +332,6 @@
 .method public static getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->defaultInstance:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     return-object v0
@@ -368,7 +340,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->m()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -381,69 +352,52 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->version_:I
 
-    .line 2
     sget-object v1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$SHARK_DEV_UERR;->SHARK_PARAM_QUERY_OK:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$SHARK_DEV_UERR;
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->result_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$SHARK_DEV_UERR;
 
-    .line 3
     sget-object v1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;->SHARK_OFF:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->fullInquiry_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
-    .line 4
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->verHw_:I
 
-    .line 5
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->verSoft_:I
 
-    .line 6
     sget-object v1, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->deviceName_:Lcom/google/protobuf/ByteString;
 
-    .line 7
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bleName_:Lcom/google/protobuf/ByteString;
 
-    .line 8
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->charge_:I
 
-    .line 9
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->activate_:I
 
-    .line 10
     sget-object v1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;->SHARK_OFF:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->shareLoc_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
-    .line 11
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->btAudio_:I
 
-    .line 12
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getDefaultInstance()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     move-result-object v1
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->ch_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
-    .line 13
     sget-object v1, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;->SHARK_OFF:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->voiceAlert_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
-    .line 14
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->isAllPublic_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
-    .line 15
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->pwsaveMode_:I
 
-    .line 16
     iput v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->timeStamp_:I
 
-    .line 17
     iput-object v1, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->timeDisplay_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     return-void
@@ -452,7 +406,6 @@
 .method public static newBuilder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;->access$3600()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
 
     move-result-object v0
@@ -463,7 +416,6 @@
 .method public static newBuilder(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->newBuilder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
 
     move-result-object v0
@@ -485,7 +437,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -505,7 +456,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseDelimitedFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -525,7 +475,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;)Ljava/lang/Object;
@@ -545,7 +494,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -565,7 +513,6 @@
         }
     .end annotation
 
-    .line 7
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;)Ljava/lang/Object;
@@ -585,7 +532,6 @@
         }
     .end annotation
 
-    .line 8
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Lcom/google/protobuf/CodedInputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -605,7 +551,6 @@
         }
     .end annotation
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;)Ljava/lang/Object;
@@ -625,7 +570,6 @@
         }
     .end annotation
 
-    .line 6
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom(Ljava/io/InputStream;Lcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -645,7 +589,6 @@
         }
     .end annotation
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0}, Lcom/google/protobuf/Parser;->parseFrom([B)Ljava/lang/Object;
@@ -665,7 +608,6 @@
         }
     .end annotation
 
-    .line 4
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
     invoke-interface {v0, p0, p1}, Lcom/google/protobuf/Parser;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Ljava/lang/Object;
@@ -682,7 +624,6 @@
 .method public getActivate()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->activate_:I
 
     return v0
@@ -691,7 +632,6 @@
 .method public getBleName()Lcom/google/protobuf/ByteString;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bleName_:Lcom/google/protobuf/ByteString;
 
     return-object v0
@@ -700,7 +640,6 @@
 .method public getBtAudio()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->btAudio_:I
 
     return v0
@@ -709,7 +648,6 @@
 .method public getCh()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->ch_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     return-object v0
@@ -718,7 +656,6 @@
 .method public getChOrBuilder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOrBuilder;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->ch_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;
 
     return-object v0
@@ -727,7 +664,6 @@
 .method public getCharge()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->charge_:I
 
     return v0
@@ -736,7 +672,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     move-result-object v0
@@ -747,7 +682,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     move-result-object v0
@@ -758,7 +692,6 @@
 .method public getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
     .locals 1
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->defaultInstance:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     return-object v0
@@ -767,7 +700,6 @@
 .method public getDeviceName()Lcom/google/protobuf/ByteString;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->deviceName_:Lcom/google/protobuf/ByteString;
 
     return-object v0
@@ -776,7 +708,6 @@
 .method public getFullInquiry()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->fullInquiry_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     return-object v0
@@ -785,7 +716,6 @@
 .method public getIsAllPublic()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->isAllPublic_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     return-object v0
@@ -802,7 +732,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->PARSER:Lcom/google/protobuf/Parser;
 
     return-object v0
@@ -811,7 +740,6 @@
 .method public getPwsaveMode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->pwsaveMode_:I
 
     return v0
@@ -820,7 +748,6 @@
 .method public getResult()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$SHARK_DEV_UERR;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->result_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$SHARK_DEV_UERR;
 
     return-object v0
@@ -829,7 +756,6 @@
 .method public getShareLoc()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->shareLoc_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     return-object v0
@@ -838,7 +764,6 @@
 .method public getTimeDisplay()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->timeDisplay_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     return-object v0
@@ -847,7 +772,6 @@
 .method public getTimeStamp()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->timeStamp_:I
 
     return v0
@@ -856,7 +780,6 @@
 .method public final getUnknownFields()Lcom/google/protobuf/UnknownFieldSet;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->unknownFields:Lcom/google/protobuf/UnknownFieldSet;
 
     return-object v0
@@ -865,7 +788,6 @@
 .method public getVerHw()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->verHw_:I
 
     return v0
@@ -874,7 +796,6 @@
 .method public getVerSoft()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->verSoft_:I
 
     return v0
@@ -883,7 +804,6 @@
 .method public getVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->version_:I
 
     return v0
@@ -892,7 +812,6 @@
 .method public getVoiceAlert()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->voiceAlert_:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_SWITCH;
 
     return-object v0
@@ -901,7 +820,6 @@
 .method public hasActivate()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x100
@@ -924,7 +842,6 @@
 .method public hasBleName()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x40
@@ -947,7 +864,6 @@
 .method public hasBtAudio()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x400
@@ -970,7 +886,6 @@
 .method public hasCh()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x800
@@ -993,7 +908,6 @@
 .method public hasCharge()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x80
@@ -1016,7 +930,6 @@
 .method public hasDeviceName()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x20
@@ -1039,7 +952,6 @@
 .method public hasFullInquiry()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/4 v1, 0x4
@@ -1062,7 +974,6 @@
 .method public hasIsAllPublic()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x2000
@@ -1085,7 +996,6 @@
 .method public hasPwsaveMode()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x4000
@@ -1108,7 +1018,6 @@
 .method public hasResult()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/4 v1, 0x2
@@ -1131,7 +1040,6 @@
 .method public hasShareLoc()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x200
@@ -1154,7 +1062,6 @@
 .method public hasTimeDisplay()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/high16 v1, 0x10000
@@ -1177,7 +1084,6 @@
 .method public hasTimeStamp()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const v1, 0x8000
@@ -1200,7 +1106,6 @@
 .method public hasVerHw()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x8
@@ -1223,7 +1128,6 @@
 .method public hasVerSoft()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x10
@@ -1246,7 +1150,6 @@
 .method public hasVersion()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/4 v1, 0x1
@@ -1267,7 +1170,6 @@
 .method public hasVoiceAlert()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->bitField0_:I
 
     const/16 v1, 0x1000
@@ -1290,7 +1192,6 @@
 .method protected internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos;->n()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -1299,7 +1200,6 @@
 
     const-class v2, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -1310,7 +1210,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->newBuilderForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
 
     move-result-object v0
@@ -1321,7 +1220,6 @@
 .method protected bridge synthetic newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/google/protobuf/Message$Builder;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
 
     move-result-object p1
@@ -1332,7 +1230,6 @@
 .method public bridge synthetic newBuilderForType()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->newBuilderForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
 
     move-result-object v0
@@ -1343,7 +1240,6 @@
 .method public newBuilderForType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
     .locals 1
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->newBuilder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
 
     move-result-object v0
@@ -1354,7 +1250,6 @@
 .method protected newBuilderForType(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
     .locals 2
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
 
     const/4 v1, 0x0
@@ -1367,7 +1262,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->toBuilder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
 
     move-result-object v0
@@ -1378,7 +1272,6 @@
 .method public bridge synthetic toBuilder()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->toBuilder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
 
     move-result-object v0
@@ -1389,7 +1282,6 @@
 .method public toBuilder()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
     .locals 1
 
-    .line 3
     invoke-static {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;->newBuilder(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam$Builder;
 
     move-result-object v0

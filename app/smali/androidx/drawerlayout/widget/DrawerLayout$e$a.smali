@@ -1,6 +1,5 @@
 .class Landroidx/drawerlayout/widget/DrawerLayout$e$a;
 .super Ljava/lang/Object;
-.source "DrawerLayout.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/drawerlayout/widget/DrawerLayout$e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/drawerlayout/widget/DrawerLayout$e$a;->a:Landroidx/drawerlayout/widget/DrawerLayout$e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/drawerlayout/widget/DrawerLayout$e$a;->a:Landroidx/drawerlayout/widget/DrawerLayout$e;
 
     invoke-virtual {v0}, Landroidx/drawerlayout/widget/DrawerLayout$e;->a()V

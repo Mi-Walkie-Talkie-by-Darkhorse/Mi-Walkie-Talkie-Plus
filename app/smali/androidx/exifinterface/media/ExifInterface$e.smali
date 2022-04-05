@@ -1,6 +1,5 @@
 .class Landroidx/exifinterface/media/ExifInterface$e;
 .super Ljava/lang/Object;
-.source "ExifInterface.java"
 
 
 # annotations
@@ -28,21 +27,16 @@
 .method constructor <init>(Ljava/lang/String;II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/exifinterface/media/ExifInterface$e;->b:Ljava/lang/String;
 
-    .line 3
     iput p2, p0, Landroidx/exifinterface/media/ExifInterface$e;->a:I
 
-    .line 4
     iput p3, p0, Landroidx/exifinterface/media/ExifInterface$e;->c:I
 
     const/4 p1, -0x1
 
-    .line 5
     iput p1, p0, Landroidx/exifinterface/media/ExifInterface$e;->d:I
 
     return-void
@@ -51,19 +45,14 @@
 .method constructor <init>(Ljava/lang/String;III)V
     .locals 0
 
-    .line 6
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 7
     iput-object p1, p0, Landroidx/exifinterface/media/ExifInterface$e;->b:Ljava/lang/String;
 
-    .line 8
     iput p2, p0, Landroidx/exifinterface/media/ExifInterface$e;->a:I
 
-    .line 9
     iput p3, p0, Landroidx/exifinterface/media/ExifInterface$e;->c:I
 
-    .line 10
     iput p4, p0, Landroidx/exifinterface/media/ExifInterface$e;->d:I
 
     return-void
@@ -74,7 +63,6 @@
 .method a(I)Z
     .locals 4
 
-    .line 1
     iget v0, p0, Landroidx/exifinterface/media/ExifInterface$e;->c:I
 
     const/4 v1, 0x7
@@ -90,7 +78,6 @@
     :cond_0
     if-eq v0, p1, :cond_8
 
-    .line 2
     iget v1, p0, Landroidx/exifinterface/media/ExifInterface$e;->d:I
 
     if-ne v1, p1, :cond_1
@@ -111,7 +98,6 @@
 
     return v2
 
-    .line 3
     :cond_3
     iget v0, p0, Landroidx/exifinterface/media/ExifInterface$e;->c:I
 
@@ -130,7 +116,6 @@
 
     return v2
 
-    .line 4
     :cond_5
     iget v0, p0, Landroidx/exifinterface/media/ExifInterface$e;->c:I
 

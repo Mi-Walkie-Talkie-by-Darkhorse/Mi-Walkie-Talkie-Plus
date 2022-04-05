@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/transport/e;
 .super Ljava/lang/Object;
-.source "Packet.java"
 
 
 # direct methods
@@ -9,7 +8,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x4
@@ -18,7 +16,6 @@
 
     const/4 v0, 0x2
 
-    .line 2
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
@@ -47,7 +44,6 @@
 
     const-string v0, "data is null"
 
-    .line 3
     invoke-static {p0, v0}, Lcom/ifengyu/intercom/i/o;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
@@ -66,7 +62,6 @@
     :goto_0
     new-array v3, v1, [Ljava/lang/Object;
 
-    .line 4
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v4
@@ -77,7 +72,6 @@
 
     invoke-static {v2, v4, v3}, Lcom/ifengyu/intercom/i/o;->a(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 5
     array-length v2, p0
 
     if-ltz v2, :cond_1
@@ -125,7 +119,6 @@
 
     int-to-byte v0, v1
 
-    .line 6
     aput-byte v0, p0, p3
 
     goto :goto_3
@@ -139,7 +132,6 @@
 
     int-to-byte v0, v1
 
-    .line 7
     aput-byte v0, p0, p3
 
     :goto_3
@@ -156,7 +148,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget-byte v0, p0, v0
 
     const/4 v1, 0x1
@@ -165,14 +156,12 @@
 
     if-ne v0, v2, :cond_0
 
-    .line 2
     aget-byte v0, p0, v1
 
     if-ne v0, v1, :cond_1
 
     const/4 v0, 0x4
 
-    .line 3
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
@@ -202,7 +191,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget-byte v0, p0, v0
 
     const/4 v1, -0x2
@@ -217,7 +205,6 @@
 
     const/4 v0, 0x2
 
-    .line 2
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff
@@ -244,7 +231,6 @@
 .method public static d([B)I
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/ifengyu/intercom/node/transport/e;->c([B)I
 
     move-result p0
@@ -257,7 +243,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     aget-byte v1, p0, v0
 
     const/4 v2, -0x2
@@ -268,14 +253,12 @@
 
     const/4 v1, 0x1
 
-    .line 2
     aget-byte v2, p0, v1
 
     if-ne v2, v1, :cond_0
 
     const/4 v0, 0x6
 
-    .line 3
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff

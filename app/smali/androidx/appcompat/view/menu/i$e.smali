@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/view/menu/i$e;
 .super Ljava/lang/Object;
-.source "MenuItemWrapperICS.java"
 
 # interfaces
 .implements Landroid/view/MenuItem$OnMenuItemClickListener;
@@ -27,12 +26,10 @@
 .method constructor <init>(Landroidx/appcompat/view/menu/i;Landroid/view/MenuItem$OnMenuItemClickListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/i$e;->b:Landroidx/appcompat/view/menu/i;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Landroidx/appcompat/view/menu/i$e;->a:Landroid/view/MenuItem$OnMenuItemClickListener;
 
     return-void
@@ -43,7 +40,6 @@
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/i$e;->a:Landroid/view/MenuItem$OnMenuItemClickListener;
 
     iget-object v1, p0, Landroidx/appcompat/view/menu/i$e;->b:Landroidx/appcompat/view/menu/i;

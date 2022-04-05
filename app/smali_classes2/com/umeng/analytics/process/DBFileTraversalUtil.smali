@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/process/DBFileTraversalUtil;
 .super Ljava/lang/Object;
-.source "DBFileTraversalUtil.java"
 
 
 # annotations
@@ -21,14 +20,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v0
 
     sput-object v0, Lcom/umeng/analytics/process/DBFileTraversalUtil;->a:Ljava/util/concurrent/ExecutorService;
 
-    .line 2
     new-instance v0, Lcom/umeng/commonsdk/utils/FileLockUtil;
 
     invoke-direct {v0}, Lcom/umeng/commonsdk/utils/FileLockUtil;-><init>()V
@@ -41,7 +38,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -50,7 +46,6 @@
 .method static synthetic a()Lcom/umeng/commonsdk/utils/FileLockUtil;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/process/DBFileTraversalUtil;->b:Lcom/umeng/commonsdk/utils/FileLockUtil;
 
     return-object v0
@@ -59,12 +54,10 @@
 .method public static traverseDBFiles(Ljava/lang/String;Lcom/umeng/commonsdk/utils/FileLockCallback;Lcom/umeng/analytics/process/DBFileTraversalUtil$a;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
     move-result p0
@@ -77,7 +70,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 3
     sget-object p0, Lcom/umeng/analytics/process/DBFileTraversalUtil;->a:Ljava/util/concurrent/ExecutorService;
 
     new-instance v1, Lcom/umeng/analytics/process/DBFileTraversalUtil$1;

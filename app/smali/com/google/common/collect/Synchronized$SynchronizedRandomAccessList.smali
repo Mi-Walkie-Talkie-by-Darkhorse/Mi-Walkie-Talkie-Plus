@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/Synchronized$SynchronizedRandomAccessList;
 .super Lcom/google/common/collect/Synchronized$SynchronizedList;
-.source "Synchronized.java"
 
 # interfaces
 .implements Ljava/util/RandomAccess;
@@ -49,7 +48,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/Synchronized$SynchronizedList;-><init>(Ljava/util/List;Ljava/lang/Object;)V
 
     return-void

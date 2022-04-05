@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/content/res/FontResourcesParserCompat$a;
 .super Ljava/lang/Object;
-.source "FontResourcesParserCompat.java"
 
 
 # annotations

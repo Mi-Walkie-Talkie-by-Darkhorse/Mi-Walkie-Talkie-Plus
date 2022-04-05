@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/dc$1;
 .super Ljava/lang/Object;
-.source "PopupOverlay.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/model/animation/Animation$AnimationListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/dc;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/dc$1;->b:Lcom/amap/api/col/l3/dc;
 
     const/4 p1, 0x1
@@ -44,7 +42,6 @@
 .method public final onAnimationEnd()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/dc$1;->b:Lcom/amap/api/col/l3/dc;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/dc;->a(Lcom/amap/api/col/l3/dc;)Lcom/autonavi/amap/mapcore/animation/GLAnimation;
@@ -53,12 +50,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/dc$1;->b:Lcom/amap/api/col/l3/dc;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/dc;->b(Lcom/amap/api/col/l3/dc;)Z
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/dc$1;->b:Lcom/amap/api/col/l3/dc;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/dc;->a(Lcom/amap/api/col/l3/dc;)Lcom/autonavi/amap/mapcore/animation/GLAnimation;
@@ -67,7 +62,6 @@
 
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/animation/GLAnimation;->startNow()V
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/dc$1;->b:Lcom/amap/api/col/l3/dc;
 
     iget-boolean v1, p0, Lcom/amap/api/col/l3/dc$1;->a:Z

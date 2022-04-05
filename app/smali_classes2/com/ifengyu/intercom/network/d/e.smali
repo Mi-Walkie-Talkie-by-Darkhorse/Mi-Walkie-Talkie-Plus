@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/network/d/e;
 .super Ljava/lang/Object;
-.source "ThreadPool.java"
 
 
 # static fields
@@ -13,17 +12,14 @@
 .method public static a()Ljava/util/concurrent/ExecutorService;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/network/d/e;->b:Ljava/util/concurrent/ExecutorService;
 
     if-nez v0, :cond_1
 
-    .line 2
     const-class v0, Ljava/util/concurrent/ExecutorService;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     sget-object v1, Lcom/ifengyu/intercom/network/d/e;->b:Ljava/util/concurrent/ExecutorService;
 
@@ -31,14 +27,12 @@
 
     const/4 v1, 0x4
 
-    .line 4
     invoke-static {v1}, Ljava/util/concurrent/Executors;->newFixedThreadPool(I)Ljava/util/concurrent/ExecutorService;
 
     move-result-object v1
 
     sput-object v1, Lcom/ifengyu/intercom/network/d/e;->b:Ljava/util/concurrent/ExecutorService;
 
-    .line 5
     :cond_0
     monitor-exit v0
 
@@ -53,7 +47,6 @@
 
     throw v1
 
-    .line 6
     :cond_1
     :goto_0
     sget-object v0, Lcom/ifengyu/intercom/network/d/e;->b:Ljava/util/concurrent/ExecutorService;
@@ -64,30 +57,25 @@
 .method public static b()Ljava/util/concurrent/ExecutorService;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/network/d/e;->a:Ljava/util/concurrent/ExecutorService;
 
     if-nez v0, :cond_1
 
-    .line 2
     const-class v0, Ljava/util/concurrent/ExecutorService;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     sget-object v1, Lcom/ifengyu/intercom/network/d/e;->a:Ljava/util/concurrent/ExecutorService;
 
     if-nez v1, :cond_0
 
-    .line 4
     invoke-static {}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor()Ljava/util/concurrent/ExecutorService;
 
     move-result-object v1
 
     sput-object v1, Lcom/ifengyu/intercom/network/d/e;->a:Ljava/util/concurrent/ExecutorService;
 
-    .line 5
     :cond_0
     monitor-exit v0
 
@@ -102,7 +90,6 @@
 
     throw v1
 
-    .line 6
     :cond_1
     :goto_0
     sget-object v0, Lcom/ifengyu/intercom/network/d/e;->a:Ljava/util/concurrent/ExecutorService;

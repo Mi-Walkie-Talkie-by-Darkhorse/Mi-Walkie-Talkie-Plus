@@ -1,6 +1,5 @@
 .class public Lme/zhanghai/android/materialprogressbar/Interpolators$TRIM_PATH_START;
 .super Ljava/lang/Object;
-.source "Interpolators.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method static constructor <clinit>()V
     .locals 10
 
-    .line 1
     new-instance v0, Landroid/graphics/Path;
 
     invoke-direct {v0}, Landroid/graphics/Path;-><init>()V
@@ -35,10 +33,8 @@
 
     const/4 v2, 0x0
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 3
     sget-object v3, Lme/zhanghai/android/materialprogressbar/Interpolators$TRIM_PATH_START;->PATH_TRIM_PATH_START:Landroid/graphics/Path;
 
     const v4, 0x3f333333    # 0.7f
@@ -55,10 +51,8 @@
 
     invoke-virtual/range {v3 .. v9}, Landroid/graphics/Path;->cubicTo(FFFFFF)V
 
-    .line 4
     sget-object v0, Lme/zhanghai/android/materialprogressbar/Interpolators$TRIM_PATH_START;->PATH_TRIM_PATH_START:Landroid/graphics/Path;
 
-    .line 5
     invoke-static {v0}, Landroidx/core/view/e0/b;->a(Landroid/graphics/Path;)Landroid/view/animation/Interpolator;
 
     move-result-object v0
@@ -71,7 +65,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

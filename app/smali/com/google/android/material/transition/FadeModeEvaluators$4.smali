@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/transition/FadeModeEvaluators$4;
 .super Ljava/lang/Object;
-.source "FadeModeEvaluators.java"
 
 # interfaces
 .implements Lcom/google/android/material/transition/FadeModeEvaluator;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -44,17 +42,14 @@
 
     const/16 v2, 0xff
 
-    .line 1
     invoke-static {v2, v1, p2, v0, p1}, Lcom/google/android/material/transition/TransitionUtils;->lerp(IIFFF)I
 
     move-result p2
 
-    .line 2
     invoke-static {v1, v2, v0, p3, p1}, Lcom/google/android/material/transition/TransitionUtils;->lerp(IIFFF)I
 
     move-result p1
 
-    .line 3
     invoke-static {p2, p1}, Lcom/google/android/material/transition/FadeModeResult;->startOnTop(II)Lcom/google/android/material/transition/FadeModeResult;
 
     move-result-object p1

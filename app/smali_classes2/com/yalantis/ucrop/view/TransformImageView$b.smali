@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/yalantis/ucrop/view/TransformImageView$b;
 .super Ljava/lang/Object;
-.source "TransformImageView.java"
 
 
 # annotations

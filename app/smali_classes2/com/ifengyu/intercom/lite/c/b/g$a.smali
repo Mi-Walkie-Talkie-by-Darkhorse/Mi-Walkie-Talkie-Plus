@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/lite/c/b/g$a;
 .super Ljava/lang/Object;
-.source "SlideVerifyDialogBuilder.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public abstract Lcom/ifengyu/intercom/ui/baseui/b;
 .super Landroid/os/Handler;
-.source "BaseHandler.java"
 
 
 # annotations
@@ -34,10 +33,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -62,7 +59,6 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/baseui/b;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -71,7 +67,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1, v0}, Lcom/ifengyu/intercom/ui/baseui/b;->a(Landroid/os/Message;Ljava/lang/Object;)V
 
     :cond_0

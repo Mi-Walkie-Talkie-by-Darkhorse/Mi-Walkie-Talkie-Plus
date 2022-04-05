@@ -1,6 +1,5 @@
 .class final Lpl/droidsonroids/relinker/d;
 .super Ljava/lang/Object;
-.source "SystemLibraryLoader.java"
 
 # interfaces
 .implements Lpl/droidsonroids/relinker/b$b;
@@ -10,7 +9,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -23,7 +21,6 @@
 
     const-string v0, "lib"
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v0
@@ -40,7 +37,6 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     invoke-static {p1}, Ljava/lang/System;->mapLibraryName(Ljava/lang/String;)Ljava/lang/String;
 
@@ -52,7 +48,6 @@
 .method public a()[Ljava/lang/String;
     .locals 4
 
-    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x15
@@ -67,7 +62,6 @@
 
     return-object v0
 
-    .line 4
     :cond_0
     sget-object v0, Landroid/os/Build;->CPU_ABI2:Ljava/lang/String;
 
@@ -85,7 +79,6 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 5
     sget-object v3, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
 
     aput-object v3, v0, v1
@@ -99,7 +92,6 @@
     :cond_1
     new-array v0, v2, [Ljava/lang/String;
 
-    .line 6
     sget-object v2, Landroid/os/Build;->CPU_ABI:Ljava/lang/String;
 
     aput-object v2, v0, v1
@@ -110,7 +102,6 @@
 .method public b(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
     return-void
@@ -119,7 +110,6 @@
 .method public c(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -138,7 +128,6 @@
 .method public d(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/lang/System;->load(Ljava/lang/String;)V
 
     return-void

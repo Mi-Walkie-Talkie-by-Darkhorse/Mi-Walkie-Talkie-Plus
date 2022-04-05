@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/a/f;
 .super Ljava/lang/Object;
-.source "CombinedDataProvider.java"
 
 # interfaces
 .implements Lb/a/a/a/e/a/g;

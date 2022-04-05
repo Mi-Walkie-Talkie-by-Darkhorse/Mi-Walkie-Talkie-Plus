@@ -1,6 +1,5 @@
 .class Landroidx/dynamicanimation/a/a$e$a;
 .super Ljava/lang/Object;
-.source "AnimationHandler.java"
 
 # interfaces
 .implements Landroid/view/Choreographer$FrameCallback;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/dynamicanimation/a/a$e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/dynamicanimation/a/a$e$a;->a:Landroidx/dynamicanimation/a/a$e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public doFrame(J)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Landroidx/dynamicanimation/a/a$e$a;->a:Landroidx/dynamicanimation/a/a$e;
 
     iget-object p1, p1, Landroidx/dynamicanimation/a/a$c;->a:Landroidx/dynamicanimation/a/a$a;

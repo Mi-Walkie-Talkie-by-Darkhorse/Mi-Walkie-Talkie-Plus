@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/c/b/d$b;
 .super Ljava/lang/Object;
-.source "EditTextDialogBuilder.java"
 
 # interfaces
 .implements Landroid/view/View$OnFocusChangeListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/c/b/d;Landroid/widget/EditText;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/d$b;->b:Lcom/ifengyu/intercom/lite/c/b/d;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/d$b;->a:Landroid/widget/EditText;
@@ -42,7 +40,6 @@
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/d$b;->b:Lcom/ifengyu/intercom/lite/c/b/d;
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/lite/c/b/d;->a(Lcom/ifengyu/intercom/lite/c/b/d;Z)Z
@@ -51,7 +48,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 2
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/d$b;->b:Lcom/ifengyu/intercom/lite/c/b/d;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/d$b;->a:Landroid/widget/EditText;
@@ -73,7 +69,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/d$b;->b:Lcom/ifengyu/intercom/lite/c/b/d;
 

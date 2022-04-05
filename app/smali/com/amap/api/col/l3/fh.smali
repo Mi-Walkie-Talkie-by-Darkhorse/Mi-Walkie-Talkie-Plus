@@ -1,16 +1,13 @@
 .class abstract Lcom/amap/api/col/l3/fh;
 .super Landroid/app/Dialog;
-.source "BottomDialogBase.java"
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/app/Dialog;-><init>(Landroid/content/Context;)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
     move-result-object p1

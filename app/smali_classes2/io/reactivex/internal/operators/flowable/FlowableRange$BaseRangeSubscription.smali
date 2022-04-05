@@ -1,6 +1,5 @@
 .class abstract Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;
 .super Lio/reactivex/internal/subscriptions/BasicQueueSubscription;
-.source "FlowableRange.java"
 
 
 # annotations
@@ -38,13 +37,10 @@
 .method constructor <init>(II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/internal/subscriptions/BasicQueueSubscription;-><init>()V
 
-    .line 2
     iput p1, p0, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->index:I
 
-    .line 3
     iput p2, p0, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->end:I
 
     return-void
@@ -57,7 +53,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->cancelled:Z
 
     return-void
@@ -66,7 +61,6 @@
 .method public final clear()V
     .locals 1
 
-    .line 1
     iget v0, p0, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->end:I
 
     iput v0, p0, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->index:I
@@ -80,7 +74,6 @@
 .method public final isEmpty()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->index:I
 
     iget v1, p0, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->end:I
@@ -103,10 +96,8 @@
     .annotation build Lio/reactivex/annotations/Nullable;
     .end annotation
 
-    .line 2
     iget v0, p0, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->index:I
 
-    .line 3
     iget v1, p0, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->end:I
 
     if-ne v0, v1, :cond_0
@@ -118,10 +109,8 @@
     :cond_0
     add-int/lit8 v1, v0, 0x1
 
-    .line 4
     iput v1, p0, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->index:I
 
-    .line 5
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
@@ -140,7 +129,6 @@
     .annotation build Lio/reactivex/annotations/Nullable;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->poll()Ljava/lang/Integer;
 
     move-result-object v0
@@ -151,14 +139,12 @@
 .method public final request(J)V
     .locals 5
 
-    .line 1
     invoke-static {p1, p2}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(J)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-static {p0, p1, p2}, Lio/reactivex/internal/util/BackpressureHelper;->add(Ljava/util/concurrent/atomic/AtomicLong;J)J
 
     move-result-wide v0
@@ -175,12 +161,10 @@
 
     if-nez v2, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->fastPath()V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {p0, p1, p2}, Lio/reactivex/internal/operators/flowable/FlowableRange$BaseRangeSubscription;->slowPath(J)V
 

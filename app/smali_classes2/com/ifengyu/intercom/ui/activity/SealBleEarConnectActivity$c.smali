@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$c;
 .super Ljava/util/TimerTask;
-.source "SealBleEarConnectActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
@@ -35,7 +33,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity$c;->a:Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;->d(Lcom/ifengyu/intercom/ui/activity/SealBleEarConnectActivity;)Landroid/os/Handler;

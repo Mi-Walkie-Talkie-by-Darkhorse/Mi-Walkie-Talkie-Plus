@@ -1,6 +1,5 @@
 .class public final La/f/a/a;
 .super Ljava/lang/Object;
-.source "LocalBroadcastManager.java"
 
 
 # annotations
@@ -62,7 +61,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -75,34 +73,28 @@
 .method private constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, La/f/a/a;->b:Ljava/util/HashMap;
 
-    .line 3
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, La/f/a/a;->c:Ljava/util/HashMap;
 
-    .line 4
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, La/f/a/a;->d:Ljava/util/ArrayList;
 
-    .line 5
     iput-object p1, p0, La/f/a/a;->a:Landroid/content/Context;
 
-    .line 6
     new-instance v0, La/f/a/a$a;
 
     invoke-virtual {p1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
@@ -125,18 +117,15 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget-object v0, La/f/a/a;->f:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     sget-object v1, La/f/a/a;->g:La/f/a/a;
 
     if-nez v1, :cond_0
 
-    .line 3
     new-instance v1, La/f/a/a;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -147,7 +136,6 @@
 
     sput-object v1, La/f/a/a;->g:La/f/a/a;
 
-    .line 4
     :cond_0
     sget-object p0, La/f/a/a;->g:La/f/a/a;
 
@@ -158,7 +146,6 @@
     :catchall_0
     move-exception p0
 
-    .line 5
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -171,13 +158,11 @@
 .method a()V
     .locals 10
 
-    .line 68
     :cond_0
     iget-object v0, p0, La/f/a/a;->b:Ljava/util/HashMap;
 
     monitor-enter v0
 
-    .line 69
     :try_start_0
     iget-object v1, p0, La/f/a/a;->d:Ljava/util/ArrayList;
 
@@ -187,26 +172,21 @@
 
     if-gtz v1, :cond_1
 
-    .line 70
     monitor-exit v0
 
     return-void
 
-    .line 71
     :cond_1
     new-array v2, v1, [La/f/a/a$b;
 
-    .line 72
     iget-object v3, p0, La/f/a/a;->d:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    .line 73
     iget-object v3, p0, La/f/a/a;->d:Ljava/util/ArrayList;
 
     invoke-virtual {v3}, Ljava/util/ArrayList;->clear()V
 
-    .line 74
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -218,10 +198,8 @@
     :goto_0
     if-ge v3, v1, :cond_0
 
-    .line 75
     aget-object v4, v2, v3
 
-    .line 76
     iget-object v5, v4, La/f/a/a$b;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v5}, Ljava/util/ArrayList;->size()I
@@ -233,7 +211,6 @@
     :goto_1
     if-ge v6, v5, :cond_3
 
-    .line 77
     iget-object v7, v4, La/f/a/a$b;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v7, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -242,12 +219,10 @@
 
     check-cast v7, La/f/a/a$c;
 
-    .line 78
     iget-boolean v8, v7, La/f/a/a$c;->d:Z
 
     if-nez v8, :cond_2
 
-    .line 79
     iget-object v7, v7, La/f/a/a$c;->b:Landroid/content/BroadcastReceiver;
 
     iget-object v8, p0, La/f/a/a;->a:Landroid/content/Context;
@@ -269,7 +244,6 @@
     :catchall_0
     move-exception v1
 
-    .line 80
     :try_start_1
     monitor-exit v0
     :try_end_1
@@ -285,12 +259,10 @@
         .end annotation
     .end param
 
-    .line 19
     iget-object v0, p0, La/f/a/a;->b:Ljava/util/HashMap;
 
     monitor-enter v0
 
-    .line 20
     :try_start_0
     iget-object v1, p0, La/f/a/a;->b:Ljava/util/HashMap;
 
@@ -302,12 +274,10 @@
 
     if-nez v1, :cond_0
 
-    .line 21
     monitor-exit v0
 
     return-void
 
-    .line 22
     :cond_0
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -320,19 +290,16 @@
     :goto_0
     if-ltz v2, :cond_5
 
-    .line 23
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, La/f/a/a$c;
 
-    .line 24
     iput-boolean v3, v4, La/f/a/a$c;->d:Z
 
     const/4 v5, 0x0
 
-    .line 25
     :goto_1
     iget-object v6, v4, La/f/a/a$c;->a:Landroid/content/IntentFilter;
 
@@ -342,14 +309,12 @@
 
     if-ge v5, v6, :cond_4
 
-    .line 26
     iget-object v6, v4, La/f/a/a$c;->a:Landroid/content/IntentFilter;
 
     invoke-virtual {v6, v5}, Landroid/content/IntentFilter;->getAction(I)Ljava/lang/String;
 
     move-result-object v6
 
-    .line 27
     iget-object v7, p0, La/f/a/a;->c:Ljava/util/HashMap;
 
     invoke-virtual {v7, v6}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -360,7 +325,6 @@
 
     if-eqz v7, :cond_3
 
-    .line 28
     invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
 
     move-result v8
@@ -370,22 +334,18 @@
     :goto_2
     if-ltz v8, :cond_2
 
-    .line 29
     invoke-virtual {v7, v8}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
     check-cast v9, La/f/a/a$c;
 
-    .line 30
     iget-object v10, v9, La/f/a/a$c;->b:Landroid/content/BroadcastReceiver;
 
     if-ne v10, p1, :cond_1
 
-    .line 31
     iput-boolean v3, v9, La/f/a/a$c;->d:Z
 
-    .line 32
     invoke-virtual {v7, v8}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
     :cond_1
@@ -393,7 +353,6 @@
 
     goto :goto_2
 
-    .line 33
     :cond_2
     invoke-virtual {v7}, Ljava/util/ArrayList;->size()I
 
@@ -401,7 +360,6 @@
 
     if-gtz v7, :cond_3
 
-    .line 34
     iget-object v7, p0, La/f/a/a;->c:Ljava/util/HashMap;
 
     invoke-virtual {v7, v6}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -416,7 +374,6 @@
 
     goto :goto_0
 
-    .line 35
     :cond_5
     monitor-exit v0
 
@@ -443,18 +400,15 @@
         .end annotation
     .end param
 
-    .line 6
     iget-object v0, p0, La/f/a/a;->b:Ljava/util/HashMap;
 
     monitor-enter v0
 
-    .line 7
     :try_start_0
     new-instance v1, La/f/a/a$c;
 
     invoke-direct {v1, p2, p1}, La/f/a/a$c;-><init>(Landroid/content/IntentFilter;Landroid/content/BroadcastReceiver;)V
 
-    .line 8
     iget-object v2, p0, La/f/a/a;->b:Ljava/util/HashMap;
 
     invoke-virtual {v2, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -467,23 +421,19 @@
 
     if-nez v2, :cond_0
 
-    .line 9
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 10
     iget-object v4, p0, La/f/a/a;->b:Ljava/util/HashMap;
 
     invoke-virtual {v4, p1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
     :cond_0
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     const/4 p1, 0x0
 
-    .line 12
     :goto_0
     invoke-virtual {p2}, Landroid/content/IntentFilter;->countActions()I
 
@@ -491,12 +441,10 @@
 
     if-ge p1, v2, :cond_2
 
-    .line 13
     invoke-virtual {p2, p1}, Landroid/content/IntentFilter;->getAction(I)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 14
     iget-object v4, p0, La/f/a/a;->c:Ljava/util/HashMap;
 
     invoke-virtual {v4, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -507,17 +455,14 @@
 
     if-nez v4, :cond_1
 
-    .line 15
     new-instance v4, Ljava/util/ArrayList;
 
     invoke-direct {v4, v3}, Ljava/util/ArrayList;-><init>(I)V
 
-    .line 16
     iget-object v5, p0, La/f/a/a;->c:Ljava/util/HashMap;
 
     invoke-virtual {v5, v2, v4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 17
     :cond_1
     invoke-virtual {v4, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -525,7 +470,6 @@
 
     goto :goto_0
 
-    .line 18
     :cond_2
     monitor-exit v0
 
@@ -552,46 +496,37 @@
 
     move-object/from16 v0, p1
 
-    .line 36
     iget-object v2, v1, La/f/a/a;->b:Ljava/util/HashMap;
 
     monitor-enter v2
 
-    .line 37
     :try_start_0
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v10
 
-    .line 38
     iget-object v3, v1, La/f/a/a;->a:Landroid/content/Context;
 
-    .line 39
     invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
-    .line 40
     invoke-virtual {v0, v3}, Landroid/content/Intent;->resolveTypeIfNeeded(Landroid/content/ContentResolver;)Ljava/lang/String;
 
     move-result-object v11
 
-    .line 41
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getData()Landroid/net/Uri;
 
     move-result-object v12
 
-    .line 42
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getScheme()Ljava/lang/String;
 
     move-result-object v13
 
-    .line 43
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getCategories()Ljava/util/Set;
 
     move-result-object v14
 
-    .line 44
     invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->getFlags()I
 
     move-result v3
@@ -612,7 +547,6 @@
 
     const-string v3, "LocalBroadcastManager"
 
-    .line 45
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -641,7 +575,6 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 46
     :cond_1
     iget-object v3, v1, La/f/a/a;->c:Ljava/util/HashMap;
 
@@ -663,7 +596,6 @@
 
     const-string v3, "LocalBroadcastManager"
 
-    .line 47
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -687,7 +619,6 @@
 
     const/4 v6, 0x0
 
-    .line 48
     :goto_1
     invoke-virtual {v8}, Ljava/util/ArrayList;->size()I
 
@@ -695,7 +626,6 @@
 
     if-ge v6, v3, :cond_e
 
-    .line 49
     invoke-virtual {v8, v6}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -708,7 +638,6 @@
 
     const-string v3, "LocalBroadcastManager"
 
-    .line 50
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -727,7 +656,6 @@
 
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 51
     :cond_3
     iget-boolean v3, v5, La/f/a/a$c;->c:Z
 
@@ -739,7 +667,6 @@
 
     const-string v4, "  Filter\'s target already added"
 
-    .line 52
     invoke-static {v3, v4}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_4
@@ -757,7 +684,6 @@
 
     goto/16 :goto_4
 
-    .line 53
     :cond_5
     iget-object v3, v5, La/f/a/a$c;->a:Landroid/content/IntentFilter;
 
@@ -797,7 +723,6 @@
 
     const-string v4, "LocalBroadcastManager"
 
-    .line 54
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -806,7 +731,6 @@
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 55
     invoke-static {v3}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -817,13 +741,11 @@
 
     move-result-object v3
 
-    .line 56
     invoke-static {v4, v3}, Landroid/util/Log;->v(Ljava/lang/String;Ljava/lang/String;)I
 
     :cond_6
     if-nez v10, :cond_7
 
-    .line 57
     new-instance v7, Ljava/util/ArrayList;
 
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
@@ -833,11 +755,9 @@
     :cond_7
     move-object v7, v10
 
-    .line 58
     :goto_2
     invoke-virtual {v7, v15}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 59
     iput-boolean v11, v15, La/f/a/a$c;->c:Z
 
     goto :goto_5
@@ -886,7 +806,6 @@
     :goto_3
     const-string v4, "LocalBroadcastManager"
 
-    .line 60
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -927,7 +846,6 @@
 
     const/4 v3, 0x0
 
-    .line 61
     :goto_6
     invoke-virtual {v10}, Ljava/util/ArrayList;->size()I
 
@@ -935,7 +853,6 @@
 
     if-ge v3, v4, :cond_f
 
-    .line 62
     invoke-virtual {v10, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
@@ -950,7 +867,6 @@
 
     goto :goto_6
 
-    .line 63
     :cond_f
     iget-object v3, v1, La/f/a/a;->d:Ljava/util/ArrayList;
 
@@ -960,7 +876,6 @@
 
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 64
     iget-object v0, v1, La/f/a/a;->e:Landroid/os/Handler;
 
     invoke-virtual {v0, v11}, Landroid/os/Handler;->hasMessages(I)Z
@@ -969,18 +884,15 @@
 
     if-nez v0, :cond_10
 
-    .line 65
     iget-object v0, v1, La/f/a/a;->e:Landroid/os/Handler;
 
     invoke-virtual {v0, v11}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
-    .line 66
     :cond_10
     monitor-exit v2
 
     return v11
 
-    .line 67
     :cond_11
     monitor-exit v2
 

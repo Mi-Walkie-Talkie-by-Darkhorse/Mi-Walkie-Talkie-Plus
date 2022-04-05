@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$a;
 .super Ljava/lang/Object;
-.source "QMUIBasicTabSegment.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;Lcom/qmuiteam/qmui/widget/tab/QMUITabView;Lcom/qmuiteam/qmui/widget/tab/QMUITabView;Lcom/qmuiteam/qmui/widget/tab/QMUITab;Lcom/qmuiteam/qmui/widget/tab/QMUITab;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$a;->e:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     iput-object p2, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$a;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
@@ -54,7 +52,6 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 3
 
-    .line 1
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -65,7 +62,6 @@
 
     move-result p1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$a;->a:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     const/high16 v1, 0x3f800000    # 1.0f
@@ -74,12 +70,10 @@
 
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->setSelectFraction(F)V
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$a;->b:Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->setSelectFraction(F)V
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$a;->e:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     iget-object v1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$a;->c:Lcom/qmuiteam/qmui/widget/tab/QMUITab;

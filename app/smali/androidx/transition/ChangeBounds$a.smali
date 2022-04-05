@@ -1,6 +1,5 @@
 .class Landroidx/transition/ChangeBounds$a;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "ChangeBounds.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method constructor <init>(Landroidx/transition/ChangeBounds;Landroid/view/ViewGroup;Landroid/graphics/drawable/BitmapDrawable;Landroid/view/View;F)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/transition/ChangeBounds$a;->a:Landroid/view/ViewGroup;
 
     iput-object p3, p0, Landroidx/transition/ChangeBounds$a;->b:Landroid/graphics/drawable/BitmapDrawable;
@@ -47,7 +45,6 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/transition/ChangeBounds$a;->a:Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroidx/transition/i0;->b(Landroid/view/View;)Landroidx/transition/h0;
@@ -58,7 +55,6 @@
 
     invoke-interface {p1, v0}, Landroidx/transition/h0;->remove(Landroid/graphics/drawable/Drawable;)V
 
-    .line 2
     iget-object p1, p0, Landroidx/transition/ChangeBounds$a;->c:Landroid/view/View;
 
     iget v0, p0, Landroidx/transition/ChangeBounds$a;->d:F

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/RegularImmutableTable$1;
 .super Ljava/lang/Object;
-.source "RegularImmutableTable.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -36,7 +35,6 @@
 .method constructor <init>(Ljava/util/Comparator;Ljava/util/Comparator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/RegularImmutableTable$1;->val$rowComparator:Ljava/util/Comparator;
 
     iput-object p2, p0, Lcom/google/common/collect/RegularImmutableTable$1;->val$columnComparator:Ljava/util/Comparator;
@@ -60,7 +58,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableTable$1;->val$rowComparator:Ljava/util/Comparator;
 
     const/4 v1, 0x0
@@ -89,7 +86,6 @@
 
     return v0
 
-    .line 3
     :cond_1
     iget-object v0, p0, Lcom/google/common/collect/RegularImmutableTable$1;->val$columnComparator:Ljava/util/Comparator;
 
@@ -117,7 +113,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/google/common/collect/Table$Cell;
 
     check-cast p2, Lcom/google/common/collect/Table$Cell;

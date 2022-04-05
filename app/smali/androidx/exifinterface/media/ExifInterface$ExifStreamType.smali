@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/exifinterface/media/ExifInterface$ExifStreamType;
 .super Ljava/lang/Object;
-.source "ExifInterface.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

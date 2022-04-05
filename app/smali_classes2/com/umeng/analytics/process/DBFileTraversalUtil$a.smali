@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/analytics/process/DBFileTraversalUtil$a;
 .super Ljava/lang/Object;
-.source "DBFileTraversalUtil.java"
 
 
 # annotations

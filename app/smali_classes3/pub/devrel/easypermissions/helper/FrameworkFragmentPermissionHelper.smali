@@ -1,6 +1,5 @@
 .class Lpub/devrel/easypermissions/helper/FrameworkFragmentPermissionHelper;
 .super Lpub/devrel/easypermissions/helper/PermissionHelper;
-.source "FrameworkFragmentPermissionHelper.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Lpub/devrel/easypermissions/helper/PermissionHelper;-><init>(Ljava/lang/Object;)V
 
     return-void
@@ -37,7 +35,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lpub/devrel/easypermissions/helper/PermissionHelper;->getHost()Ljava/lang/Object;
 
     move-result-object v0
@@ -75,14 +72,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p5}, Lpub/devrel/easypermissions/helper/PermissionHelper;->shouldShowRationale([Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lpub/devrel/easypermissions/helper/PermissionHelper;->getHost()Ljava/lang/Object;
 
     move-result-object v0
@@ -105,12 +100,10 @@
 
     move-object v7, p5
 
-    .line 3
     invoke-virtual/range {v1 .. v7}, Lpub/devrel/easypermissions/helper/PermissionHelper;->showRationaleDialogFragment(Landroid/app/FragmentManager;Ljava/lang/String;III[Ljava/lang/String;)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {p0}, Lpub/devrel/easypermissions/helper/PermissionHelper;->getHost()Ljava/lang/Object;
 
@@ -136,7 +129,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lpub/devrel/easypermissions/helper/PermissionHelper;->getHost()Ljava/lang/Object;
 
     move-result-object v0

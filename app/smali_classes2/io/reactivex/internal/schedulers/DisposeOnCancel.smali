@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/schedulers/DisposeOnCancel;
 .super Ljava/lang/Object;
-.source "DisposeOnCancel.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Future;
@@ -25,10 +24,8 @@
 .method constructor <init>(Lio/reactivex/disposables/Disposable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/schedulers/DisposeOnCancel;->upstream:Lio/reactivex/disposables/Disposable;
 
     return-void
@@ -39,7 +36,6 @@
 .method public cancel(Z)Z
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lio/reactivex/internal/schedulers/DisposeOnCancel;->upstream:Lio/reactivex/disposables/Disposable;
 
     invoke-interface {p1}, Lio/reactivex/disposables/Disposable;->dispose()V

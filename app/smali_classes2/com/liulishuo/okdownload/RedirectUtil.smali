@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/RedirectUtil;
 .super Ljava/lang/Object;
-.source "RedirectUtil.java"
 
 
 # static fields
@@ -15,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,7 +32,6 @@
 
     const-string v0, "Location"
 
-    .line 1
     invoke-interface {p0, v0}, Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Connected;->getResponseHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -43,7 +40,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/net/ProtocolException;
 

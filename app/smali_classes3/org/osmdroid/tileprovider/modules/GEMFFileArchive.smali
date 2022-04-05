@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/modules/GEMFFileArchive;
 .super Ljava/lang/Object;
-.source "GEMFFileArchive.java"
 
 # interfaces
 .implements Lorg/osmdroid/tileprovider/modules/IArchiveFile;
@@ -14,7 +13,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,10 +27,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     new-instance v0, Lorg/osmdroid/util/GEMFFile;
 
     invoke-direct {v0, p1}, Lorg/osmdroid/util/GEMFFile;-><init>(Ljava/io/File;)V
@@ -51,7 +47,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/osmdroid/tileprovider/modules/GEMFFileArchive;
 
     invoke-direct {v0, p0}, Lorg/osmdroid/tileprovider/modules/GEMFFileArchive;-><init>(Ljava/io/File;)V
@@ -64,7 +59,6 @@
 .method public close()V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/GEMFFileArchive;->mFile:Lorg/osmdroid/util/GEMFFile;
 
@@ -79,7 +73,6 @@
 .method public getInputStream(Lorg/osmdroid/tileprovider/tilesource/ITileSource;Lorg/osmdroid/tileprovider/MapTile;)Ljava/io/InputStream;
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lorg/osmdroid/tileprovider/modules/GEMFFileArchive;->mFile:Lorg/osmdroid/util/GEMFFile;
 
     invoke-virtual {p2}, Lorg/osmdroid/tileprovider/MapTile;->getX()I
@@ -112,12 +105,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/HashSet;
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    .line 2
     :try_start_0
     iget-object v1, p0, Lorg/osmdroid/tileprovider/modules/GEMFFileArchive;->mFile:Lorg/osmdroid/util/GEMFFile;
 
@@ -142,7 +133,6 @@
 
     const-string v3, "Error getting tile sources: "
 
-    .line 3
     invoke-static {v2, v3, v1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :goto_0
@@ -157,7 +147,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/osmdroid/util/GEMFFile;
 
     invoke-direct {v0, p1}, Lorg/osmdroid/util/GEMFFile;-><init>(Ljava/io/File;)V
@@ -170,7 +159,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

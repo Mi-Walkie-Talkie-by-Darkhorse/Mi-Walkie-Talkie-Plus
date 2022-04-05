@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 .super Ljava/lang/Object;
-.source "ListenerCallQueue.java"
 
 
 # annotations
@@ -31,10 +30,8 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;->methodCall:Ljava/lang/String;
 
     return-void
@@ -43,7 +40,6 @@
 .method static synthetic access$000(Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;->methodCall:Ljava/lang/String;
 
     return-object p0
@@ -74,7 +70,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -92,7 +87,6 @@
 
     check-cast v0, Lcom/google/common/util/concurrent/ListenerCallQueue;
 
-    .line 2
     invoke-virtual {v0, p0}, Lcom/google/common/util/concurrent/ListenerCallQueue;->add(Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;)V
 
     goto :goto_0

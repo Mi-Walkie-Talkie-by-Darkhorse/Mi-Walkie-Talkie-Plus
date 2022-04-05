@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/hd;
 .super Ljava/lang/Object;
-.source "LogDBCreator.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/gy;
@@ -10,7 +9,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,7 +24,6 @@
     :try_start_0
     const-string v1, "CREATE TABLE IF NOT EXISTS a (_id integer primary key autoincrement, a1  varchar(20), a2 varchar(10),a3 varchar(50),a4 varchar(100),a5 varchar(20),a6 integer);"
 
-    .line 1
     invoke-virtual {p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     const/4 v1, 0x1
@@ -39,7 +36,6 @@
 
     aput-object v3, v2, v4
 
-    .line 2
     invoke-static {v0, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
@@ -52,7 +48,6 @@
 
     aput-object v3, v2, v4
 
-    .line 3
     invoke-static {v0, v2}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v2
@@ -65,7 +60,6 @@
 
     aput-object v2, v1, v4
 
-    .line 4
     invoke-static {v0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -74,7 +68,6 @@
 
     const-string v0, "CREATE TABLE IF NOT EXISTS e (_id integer primary key autoincrement,c1 integer,c2 integer,c3 integer);"
 
-    .line 5
     invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -88,7 +81,6 @@
 
     const-string v1, "onCreate"
 
-    .line 6
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void

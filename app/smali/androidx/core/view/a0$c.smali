@@ -1,6 +1,5 @@
 .class Landroidx/core/view/a0$c;
 .super Ljava/lang/Object;
-.source "ViewPropertyAnimatorCompat.java"
 
 # interfaces
 .implements Landroidx/core/view/b0;
@@ -27,10 +26,8 @@
 .method constructor <init>(Landroidx/core/view/a0;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/core/view/a0$c;->a:Landroidx/core/view/a0;
 
     return-void
@@ -43,17 +40,14 @@
 
     const/high16 v0, 0x7e000000
 
-    .line 1
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2
     instance-of v1, v0, Landroidx/core/view/b0;
 
     if-eqz v1, :cond_0
 
-    .line 3
     check-cast v0, Landroidx/core/view/b0;
 
     goto :goto_0
@@ -64,7 +58,6 @@
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-interface {v0, p1}, Landroidx/core/view/b0;->a(Landroid/view/View;)V
 
     :cond_1
@@ -79,7 +72,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/view/a0$c;->a:Landroidx/core/view/a0;
 
     iget v0, v0, Landroidx/core/view/a0;->d:I
@@ -90,15 +82,12 @@
 
     if-le v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p1, v0, v2}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
-    .line 3
     iget-object v0, p0, Landroidx/core/view/a0$c;->a:Landroidx/core/view/a0;
 
     iput v1, v0, Landroidx/core/view/a0;->d:I
 
-    .line 4
     :cond_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -110,7 +99,6 @@
 
     if-nez v0, :cond_5
 
-    .line 5
     :cond_1
     iget-object v0, p0, Landroidx/core/view/a0$c;->a:Landroidx/core/view/a0;
 
@@ -118,26 +106,21 @@
 
     if-eqz v1, :cond_2
 
-    .line 6
     iput-object v2, v0, Landroidx/core/view/a0;->c:Ljava/lang/Runnable;
 
-    .line 7
     invoke-interface {v1}, Ljava/lang/Runnable;->run()V
 
     :cond_2
     const/high16 v0, 0x7e000000
 
-    .line 8
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 9
     instance-of v1, v0, Landroidx/core/view/b0;
 
     if-eqz v1, :cond_3
 
-    .line 10
     move-object v2, v0
 
     check-cast v2, Landroidx/core/view/b0;
@@ -145,13 +128,11 @@
     :cond_3
     if-eqz v2, :cond_4
 
-    .line 11
     invoke-interface {v2, p1}, Landroidx/core/view/b0;->b(Landroid/view/View;)V
 
     :cond_4
     const/4 p1, 0x1
 
-    .line 12
     iput-boolean p1, p0, Landroidx/core/view/a0$c;->b:Z
 
     :cond_5
@@ -163,10 +144,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Landroidx/core/view/a0$c;->b:Z
 
-    .line 2
     iget-object v0, p0, Landroidx/core/view/a0$c;->a:Landroidx/core/view/a0;
 
     iget v0, v0, Landroidx/core/view/a0;->d:I
@@ -179,10 +158,8 @@
 
     const/4 v0, 0x2
 
-    .line 3
     invoke-virtual {p1, v0, v1}, Landroid/view/View;->setLayerType(ILandroid/graphics/Paint;)V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Landroidx/core/view/a0$c;->a:Landroidx/core/view/a0;
 
@@ -190,26 +167,21 @@
 
     if-eqz v2, :cond_1
 
-    .line 5
     iput-object v1, v0, Landroidx/core/view/a0;->b:Ljava/lang/Runnable;
 
-    .line 6
     invoke-interface {v2}, Ljava/lang/Runnable;->run()V
 
     :cond_1
     const/high16 v0, 0x7e000000
 
-    .line 7
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 8
     instance-of v2, v0, Landroidx/core/view/b0;
 
     if-eqz v2, :cond_2
 
-    .line 9
     move-object v1, v0
 
     check-cast v1, Landroidx/core/view/b0;
@@ -217,7 +189,6 @@
     :cond_2
     if-eqz v1, :cond_3
 
-    .line 10
     invoke-interface {v1, p1}, Landroidx/core/view/b0;->c(Landroid/view/View;)V
 
     :cond_3

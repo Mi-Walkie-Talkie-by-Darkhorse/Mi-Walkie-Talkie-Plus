@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/drawing/OsmBitmapShader;
 .super Landroid/graphics/BitmapShader;
-.source "OsmBitmapShader.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
@@ -32,24 +30,20 @@
 .method public constructor <init>(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Landroid/graphics/BitmapShader;-><init>(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V
 
-    .line 2
     new-instance p2, Landroid/graphics/Matrix;
 
     invoke-direct {p2}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object p2, p0, Lorg/osmdroid/views/drawing/OsmBitmapShader;->mMatrix:Landroid/graphics/Matrix;
 
-    .line 3
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result p2
 
     iput p2, p0, Lorg/osmdroid/views/drawing/OsmBitmapShader;->mBitmapWidth:I
 
-    .line 4
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result p1
@@ -64,14 +58,12 @@
 .method public onDrawCycle(Lorg/osmdroid/views/Projection;)V
     .locals 3
 
-    .line 1
     sget-object v0, Lorg/osmdroid/views/drawing/OsmBitmapShader;->sPoint:Landroid/graphics/Point;
 
     const/4 v1, 0x0
 
     invoke-virtual {p1, v1, v1, v0}, Lorg/osmdroid/views/Projection;->toMercatorPixels(IILandroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 2
     iget-object p1, p0, Lorg/osmdroid/views/drawing/OsmBitmapShader;->mMatrix:Landroid/graphics/Matrix;
 
     sget-object v0, Lorg/osmdroid/views/drawing/OsmBitmapShader;->sPoint:Landroid/graphics/Point;
@@ -98,7 +90,6 @@
 
     invoke-virtual {p1, v1, v0}, Landroid/graphics/Matrix;->setTranslate(FF)V
 
-    .line 3
     iget-object p1, p0, Lorg/osmdroid/views/drawing/OsmBitmapShader;->mMatrix:Landroid/graphics/Matrix;
 
     invoke-virtual {p0, p1}, Landroid/graphics/BitmapShader;->setLocalMatrix(Landroid/graphics/Matrix;)V

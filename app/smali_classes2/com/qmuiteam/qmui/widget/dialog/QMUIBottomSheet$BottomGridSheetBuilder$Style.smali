@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheet$BottomGridSheetBuilder$Style;
 .super Ljava/lang/Object;
-.source "QMUIBottomSheet.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

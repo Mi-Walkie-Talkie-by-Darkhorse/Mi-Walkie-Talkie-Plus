@@ -1,13 +1,11 @@
 .class public final Lcom/amap/api/col/l3/ej;
 .super Ljava/lang/Object;
-.source "SegmentsIntersect.java"
 
 
 # direct methods
 .method private static a(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)D
     .locals 4
 
-    .line 2
     invoke-static {p2, p0}, Lcom/amap/api/col/l3/ej;->a(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)Lcom/amap/api/maps/model/LatLng;
 
     move-result-object p2
@@ -36,7 +34,6 @@
 .method private static a(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)Lcom/amap/api/maps/model/LatLng;
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v1, p1, Lcom/amap/api/maps/model/LatLng;->latitude:D
@@ -67,22 +64,18 @@
 
     move-object/from16 v3, p3
 
-    .line 3
     invoke-static {v2, v3, v0}, Lcom/amap/api/col/l3/ej;->a(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)D
 
     move-result-wide v4
 
-    .line 4
     invoke-static {v2, v3, v1}, Lcom/amap/api/col/l3/ej;->a(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)D
 
     move-result-wide v6
 
-    .line 5
     invoke-static/range {p0 .. p2}, Lcom/amap/api/col/l3/ej;->a(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)D
 
     move-result-wide v8
 
-    .line 6
     invoke-static {v0, v1, v3}, Lcom/amap/api/col/l3/ej;->a(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)D
 
     move-result-wide v10
@@ -132,7 +125,6 @@
     :cond_4
     if-nez v15, :cond_5
 
-    .line 7
     invoke-static {v2, v3, v0}, Lcom/amap/api/col/l3/ej;->b(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)Z
 
     move-result v4
@@ -146,7 +138,6 @@
 
     if-nez v4, :cond_6
 
-    .line 8
     invoke-static {v2, v3, v1}, Lcom/amap/api/col/l3/ej;->b(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)Z
 
     move-result v4
@@ -160,7 +151,6 @@
 
     if-nez v4, :cond_7
 
-    .line 9
     invoke-static/range {p0 .. p2}, Lcom/amap/api/col/l3/ej;->b(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)Z
 
     move-result v2
@@ -174,7 +164,6 @@
 
     if-nez v2, :cond_8
 
-    .line 10
     invoke-static {v0, v1, v3}, Lcom/amap/api/col/l3/ej;->b(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)Z
 
     move-result v0
@@ -192,7 +181,6 @@
 .method private static b(Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;)Z
     .locals 13
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
     iget-wide v2, p1, Lcom/amap/api/maps/model/LatLng;->longitude:D
@@ -210,7 +198,6 @@
     :cond_0
     move-wide v0, v2
 
-    .line 2
     :goto_0
     iget-wide v2, p0, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
@@ -227,7 +214,6 @@
     :cond_1
     move-wide v2, v4
 
-    .line 3
     :goto_1
     iget-wide v4, p0, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
@@ -244,7 +230,6 @@
     :cond_2
     move-wide v4, v8
 
-    .line 4
     :goto_2
     iget-wide v8, p0, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
@@ -261,7 +246,6 @@
     :cond_3
     move-wide v8, p0
 
-    .line 5
     :goto_3
     iget-wide p0, p2, Lcom/amap/api/maps/model/LatLng;->longitude:D
 

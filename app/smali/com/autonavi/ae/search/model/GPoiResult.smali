@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/search/model/GPoiResult;
 .super Ljava/lang/Object;
-.source "GPoiResult.java"
 
 
 # static fields
@@ -33,30 +32,24 @@
 .method private constructor <init>(II)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/autonavi/ae/search/model/GPoiResult;->pPoi:Ljava/util/List;
 
-    .line 3
     iput p1, p0, Lcom/autonavi/ae/search/model/GPoiResult;->sNumberOfItemGet:I
 
-    .line 4
     iput p2, p0, Lcom/autonavi/ae/search/model/GPoiResult;->uFlag:I
 
-    .line 5
     invoke-static {}, Lcom/autonavi/ae/search/log/GLog;->isLogShow()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 6
     sget-object p1, Lcom/autonavi/ae/search/model/GPoiResult;->TAG:Ljava/lang/String;
 
     const-string p2, "new GPoiResult(int sNumberOfTotalItem, int sIndex, int sNumberOfItemGet,int uFlag)"
@@ -72,7 +65,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/search/model/GPoiResult;->pPoi:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -92,7 +84,6 @@
 .method public getNumberOfItemGet()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/search/model/GPoiResult;->sNumberOfItemGet:I
 
     return v0
@@ -109,7 +100,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/search/model/GPoiResult;->pPoi:Ljava/util/List;
 
     return-object v0

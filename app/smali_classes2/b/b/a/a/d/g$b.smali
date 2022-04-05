@@ -1,6 +1,5 @@
 .class Lb/b/a/a/d/g$b;
 .super Ljava/lang/Object;
-.source "WbAppActivator.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 
     const-string p0, "frequency_get_cmd"
 
-    .line 2
     invoke-interface {p1, p0, v0, v1}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
 
     move-result-wide p0
@@ -42,7 +40,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     invoke-virtual {p0, v0, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
 
     move-result-object p0
@@ -61,17 +58,14 @@
 
     if-lez p0, :cond_0
 
-    .line 3
     invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object p0
 
     const-string p1, "frequency_get_cmd"
 
-    .line 4
     invoke-interface {p0, p1, p2, p3}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
 
-    .line 5
     invoke-interface {p0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     :cond_0
@@ -87,7 +81,6 @@
 
     const-string p0, "last_time_get_cmd"
 
-    .line 1
     invoke-interface {p1, p0, v0, v1}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
 
     move-result-wide p0
@@ -103,17 +96,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
 
     move-result-object p0
 
     const-string p1, "last_time_get_cmd"
 
-    .line 3
     invoke-interface {p0, p1, p2, p3}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
 
-    .line 4
     invoke-interface {p0}, Landroid/content/SharedPreferences$Editor;->commit()Z
 
     :cond_0

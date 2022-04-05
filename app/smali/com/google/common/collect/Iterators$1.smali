@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/Iterators$1;
 .super Lcom/google/common/collect/UnmodifiableListIterator;
-.source "Iterators.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/UnmodifiableListIterator;-><init>()V
 
     return-void
@@ -53,7 +51,6 @@
 .method public next()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
@@ -72,7 +69,6 @@
 .method public previous()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/NoSuchElementException;
 
     invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V

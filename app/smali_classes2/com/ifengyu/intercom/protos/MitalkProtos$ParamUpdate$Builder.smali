@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 .super Lcom/google/protobuf/GeneratedMessage$Builder;
-.source "MitalkProtos.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdateOrBuilder;
@@ -70,44 +69,34 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;-><init>()V
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;->SUCCESS:Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->result_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
-    .line 4
     sget-object v0, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->mode_:Lcom/google/protobuf/ByteString;
 
-    .line 5
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userName_:Lcom/google/protobuf/ByteString;
 
-    .line 6
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->sosText_:Lcom/google/protobuf/ByteString;
 
-    .line 7
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;->SINGLE:Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->stateMode_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
-    .line 8
     sget-object v0, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameUTF8_:Lcom/google/protobuf/ByteString;
 
-    .line 9
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameGBK_:Lcom/google/protobuf/ByteString;
 
-    .line 10
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;->ALLOWUPDATE:Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->lowPower_:Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
 
-    .line 11
     invoke-direct {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->maybeForceBuilderInitialization()V
 
     return-void
@@ -116,44 +105,34 @@
 .method private constructor <init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)V
     .locals 0
 
-    .line 12
     invoke-direct {p0, p1}, Lcom/google/protobuf/GeneratedMessage$Builder;-><init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)V
 
-    .line 13
     sget-object p1, Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;->SUCCESS:Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->result_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
-    .line 14
     sget-object p1, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->mode_:Lcom/google/protobuf/ByteString;
 
-    .line 15
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userName_:Lcom/google/protobuf/ByteString;
 
-    .line 16
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->sosText_:Lcom/google/protobuf/ByteString;
 
-    .line 17
     sget-object p1, Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;->SINGLE:Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->stateMode_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
-    .line 18
     sget-object p1, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameUTF8_:Lcom/google/protobuf/ByteString;
 
-    .line 19
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameGBK_:Lcom/google/protobuf/ByteString;
 
-    .line 20
     sget-object p1, Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;->ALLOWUPDATE:Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
 
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->lowPower_:Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
 
-    .line 21
     invoke-direct {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->maybeForceBuilderInitialization()V
 
     return-void
@@ -162,7 +141,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;Lcom/ifengyu/intercom/protos/MitalkProtos$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;-><init>(Lcom/google/protobuf/GeneratedMessage$BuilderParent;)V
 
     return-void
@@ -171,7 +149,6 @@
 .method static synthetic access$4600()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->create()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -182,7 +159,6 @@
 .method private static create()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;-><init>()V
@@ -193,7 +169,6 @@
 .method public static final getDescriptor()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos;->u()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -204,7 +179,6 @@
 .method private maybeForceBuilderInitialization()V
     .locals 0
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->access$4800()Z
 
     return-void
@@ -215,7 +189,6 @@
 .method public bridge synthetic build()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->build()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -226,7 +199,6 @@
 .method public bridge synthetic build()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->build()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -237,12 +209,10 @@
 .method public build()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
     .locals 2
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->buildPartial()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessage;->isInitialized()Z
 
     move-result v1
@@ -251,7 +221,6 @@
 
     return-object v0
 
-    .line 5
     :cond_0
     invoke-static {v0}, Lcom/google/protobuf/AbstractMessage$Builder;->newUninitializedMessageException(Lcom/google/protobuf/Message;)Lcom/google/protobuf/UninitializedMessageException;
 
@@ -263,7 +232,6 @@
 .method public bridge synthetic buildPartial()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->buildPartial()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -274,7 +242,6 @@
 .method public bridge synthetic buildPartial()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->buildPartial()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -285,14 +252,12 @@
 .method public buildPartial()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
     .locals 5
 
-    .line 3
     new-instance v0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p0, v1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;-><init>(Lcom/google/protobuf/GeneratedMessage$Builder;Lcom/ifengyu/intercom/protos/MitalkProtos$a;)V
 
-    .line 4
     iget v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit8 v2, v1, 0x1
@@ -306,7 +271,6 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 5
     :goto_0
     iget v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->version_:I
 
@@ -320,7 +284,6 @@
 
     or-int/lit8 v3, v3, 0x2
 
-    .line 6
     :cond_1
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->result_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
@@ -334,7 +297,6 @@
 
     or-int/lit8 v3, v3, 0x4
 
-    .line 7
     :cond_2
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->mode_:Lcom/google/protobuf/ByteString;
 
@@ -348,7 +310,6 @@
 
     or-int/lit8 v3, v3, 0x8
 
-    .line 8
     :cond_3
     iget v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->deviceId_:I
 
@@ -362,7 +323,6 @@
 
     or-int/lit8 v3, v3, 0x10
 
-    .line 9
     :cond_4
     iget v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userId_:I
 
@@ -376,7 +336,6 @@
 
     or-int/lit8 v3, v3, 0x20
 
-    .line 10
     :cond_5
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userName_:Lcom/google/protobuf/ByteString;
 
@@ -390,7 +349,6 @@
 
     or-int/lit8 v3, v3, 0x40
 
-    .line 11
     :cond_6
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->sosText_:Lcom/google/protobuf/ByteString;
 
@@ -404,7 +362,6 @@
 
     or-int/lit16 v3, v3, 0x80
 
-    .line 12
     :cond_7
     iget v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionBLE_:I
 
@@ -418,7 +375,6 @@
 
     or-int/lit16 v3, v3, 0x100
 
-    .line 13
     :cond_8
     iget v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionMCU_:I
 
@@ -432,7 +388,6 @@
 
     or-int/lit16 v3, v3, 0x200
 
-    .line 14
     :cond_9
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->stateMode_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
@@ -446,7 +401,6 @@
 
     or-int/lit16 v3, v3, 0x400
 
-    .line 15
     :cond_a
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameUTF8_:Lcom/google/protobuf/ByteString;
 
@@ -460,7 +414,6 @@
 
     or-int/lit16 v3, v3, 0x800
 
-    .line 16
     :cond_b
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameGBK_:Lcom/google/protobuf/ByteString;
 
@@ -474,7 +427,6 @@
 
     or-int/lit16 v3, v3, 0x1000
 
-    .line 17
     :cond_c
     iget v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->shareLoc_:I
 
@@ -488,7 +440,6 @@
 
     or-int/lit16 v3, v3, 0x2000
 
-    .line 18
     :cond_d
     iget v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionHW_:I
 
@@ -502,7 +453,6 @@
 
     or-int/lit16 v3, v3, 0x4000
 
-    .line 19
     :cond_e
     iget-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->lowPower_:Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
 
@@ -516,7 +466,6 @@
 
     or-int/2addr v3, v2
 
-    .line 20
     :cond_f
     iget v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionExtend_:I
 
@@ -530,7 +479,6 @@
 
     or-int/2addr v3, v2
 
-    .line 21
     :cond_10
     iget v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->activateChannel_:I
 
@@ -544,16 +492,13 @@
 
     or-int/2addr v3, v2
 
-    .line 22
     :cond_11
     iget v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->language_:I
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->access$6702(Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;I)I
 
-    .line 23
     invoke-static {v0, v3}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->access$6802(Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;I)I
 
-    .line 24
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onBuilt()V
 
     return-object v0
@@ -562,7 +507,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/AbstractMessage$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->clear()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -573,7 +517,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/GeneratedMessage$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->clear()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -584,7 +527,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->clear()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -595,7 +537,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 4
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->clear()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -606,171 +547,134 @@
 .method public clear()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 3
 
-    .line 5
     invoke-super {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->clear()Lcom/google/protobuf/GeneratedMessage$Builder;
 
     const/4 v0, 0x0
 
-    .line 6
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->version_:I
 
-    .line 7
     iget v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit8 v1, v1, -0x2
 
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 8
     sget-object v2, Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;->SUCCESS:Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
     iput-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->result_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
     and-int/lit8 v1, v1, -0x3
 
-    .line 9
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 10
     sget-object v2, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     iput-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->mode_:Lcom/google/protobuf/ByteString;
 
     and-int/lit8 v1, v1, -0x5
 
-    .line 11
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 12
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->deviceId_:I
 
     and-int/lit8 v1, v1, -0x9
 
-    .line 13
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 14
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userId_:I
 
     and-int/lit8 v1, v1, -0x11
 
-    .line 15
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 16
     iput-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userName_:Lcom/google/protobuf/ByteString;
 
     and-int/lit8 v1, v1, -0x21
 
-    .line 17
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 18
     iput-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->sosText_:Lcom/google/protobuf/ByteString;
 
     and-int/lit8 v1, v1, -0x41
 
-    .line 19
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 20
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionBLE_:I
 
     and-int/lit16 v1, v1, -0x81
 
-    .line 21
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 22
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionMCU_:I
 
     and-int/lit16 v1, v1, -0x101
 
-    .line 23
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 24
     sget-object v2, Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;->SINGLE:Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
     iput-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->stateMode_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
     and-int/lit16 v1, v1, -0x201
 
-    .line 25
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 26
     sget-object v2, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     iput-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameUTF8_:Lcom/google/protobuf/ByteString;
 
     and-int/lit16 v1, v1, -0x401
 
-    .line 27
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 28
     iput-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameGBK_:Lcom/google/protobuf/ByteString;
 
     and-int/lit16 v1, v1, -0x801
 
-    .line 29
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 30
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->shareLoc_:I
 
     and-int/lit16 v1, v1, -0x1001
 
-    .line 31
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 32
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionHW_:I
 
     and-int/lit16 v1, v1, -0x2001
 
-    .line 33
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 34
     sget-object v2, Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;->ALLOWUPDATE:Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
 
     iput-object v2, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->lowPower_:Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
 
     and-int/lit16 v1, v1, -0x4001
 
-    .line 35
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 36
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionExtend_:I
 
     const v2, -0x8001
 
     and-int/2addr v1, v2
 
-    .line 37
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 38
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->activateChannel_:I
 
     const v2, -0x10001
 
     and-int/2addr v1, v2
 
-    .line 39
     iput v1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 40
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->language_:I
 
     const v0, -0x20001
 
     and-int/2addr v0, v1
 
-    .line 41
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     return-object p0
@@ -779,7 +683,6 @@
 .method public clearActivateChannel()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const v1, -0x10001
@@ -790,10 +693,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->activateChannel_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -802,14 +703,12 @@
 .method public clearDevNameGBK()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x801
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -820,7 +719,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameGBK_:Lcom/google/protobuf/ByteString;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -829,14 +727,12 @@
 .method public clearDevNameUTF8()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x401
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -847,7 +743,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameUTF8_:Lcom/google/protobuf/ByteString;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -856,7 +751,6 @@
 .method public clearDeviceId()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x9
@@ -865,10 +759,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->deviceId_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -877,7 +769,6 @@
 .method public clearLanguage()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const v1, -0x20001
@@ -888,10 +779,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->language_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -900,19 +789,16 @@
 .method public clearLowPower()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x4001
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;->ALLOWUPDATE:Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->lowPower_:Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -921,14 +807,12 @@
 .method public clearMode()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x5
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -939,7 +823,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->mode_:Lcom/google/protobuf/ByteString;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -948,19 +831,16 @@
 .method public clearResult()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x3
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;->SUCCESS:Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->result_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -969,7 +849,6 @@
 .method public clearShareLoc()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x1001
@@ -978,10 +857,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->shareLoc_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -990,14 +867,12 @@
 .method public clearSosText()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x41
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -1008,7 +883,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->sosText_:Lcom/google/protobuf/ByteString;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1017,19 +891,16 @@
 .method public clearStateMode()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x201
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     sget-object v0, Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;->SINGLE:Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->stateMode_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1038,7 +909,6 @@
 .method public clearUserId()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x11
@@ -1047,10 +917,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userId_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1059,14 +927,12 @@
 .method public clearUserName()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x21
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -1077,7 +943,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userName_:Lcom/google/protobuf/ByteString;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1086,7 +951,6 @@
 .method public clearVersion()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit8 v0, v0, -0x2
@@ -1095,10 +959,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->version_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1107,7 +969,6 @@
 .method public clearVersionBLE()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x81
@@ -1116,10 +977,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionBLE_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1128,7 +987,6 @@
 .method public clearVersionExtend()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const v1, -0x8001
@@ -1139,10 +997,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionExtend_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1151,7 +1007,6 @@
 .method public clearVersionHW()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x2001
@@ -1160,10 +1015,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionHW_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1172,7 +1025,6 @@
 .method public clearVersionMCU()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     and-int/lit16 v0, v0, -0x101
@@ -1181,10 +1033,8 @@
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionMCU_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1193,7 +1043,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/AbstractMessage$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->clone()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -1204,7 +1053,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/AbstractMessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->clone()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -1215,7 +1063,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/GeneratedMessage$Builder;
     .locals 1
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->clone()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -1226,7 +1073,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/Message$Builder;
     .locals 1
 
-    .line 4
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->clone()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -1237,7 +1083,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 5
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->clone()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -1248,7 +1093,6 @@
 .method public clone()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 2
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->create()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -1274,7 +1118,6 @@
         }
     .end annotation
 
-    .line 6
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->clone()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
     move-result-object v0
@@ -1285,7 +1128,6 @@
 .method public getActivateChannel()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->activateChannel_:I
 
     return v0
@@ -1294,7 +1136,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -1305,7 +1146,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -1316,7 +1156,6 @@
 .method public getDefaultInstanceForType()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
     .locals 1
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getDefaultInstance()Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     move-result-object v0
@@ -1327,7 +1166,6 @@
 .method public getDescriptorForType()Lcom/google/protobuf/Descriptors$Descriptor;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos;->u()Lcom/google/protobuf/Descriptors$Descriptor;
 
     move-result-object v0
@@ -1338,7 +1176,6 @@
 .method public getDevNameGBK()Lcom/google/protobuf/ByteString;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameGBK_:Lcom/google/protobuf/ByteString;
 
     return-object v0
@@ -1347,7 +1184,6 @@
 .method public getDevNameUTF8()Lcom/google/protobuf/ByteString;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameUTF8_:Lcom/google/protobuf/ByteString;
 
     return-object v0
@@ -1356,7 +1192,6 @@
 .method public getDeviceId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->deviceId_:I
 
     return v0
@@ -1365,7 +1200,6 @@
 .method public getLanguage()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->language_:I
 
     return v0
@@ -1374,7 +1208,6 @@
 .method public getLowPower()Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->lowPower_:Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
 
     return-object v0
@@ -1383,7 +1216,6 @@
 .method public getMode()Lcom/google/protobuf/ByteString;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->mode_:Lcom/google/protobuf/ByteString;
 
     return-object v0
@@ -1392,7 +1224,6 @@
 .method public getResult()Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->result_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
     return-object v0
@@ -1401,7 +1232,6 @@
 .method public getShareLoc()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->shareLoc_:I
 
     return v0
@@ -1410,7 +1240,6 @@
 .method public getSosText()Lcom/google/protobuf/ByteString;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->sosText_:Lcom/google/protobuf/ByteString;
 
     return-object v0
@@ -1419,7 +1248,6 @@
 .method public getStateMode()Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->stateMode_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
     return-object v0
@@ -1428,7 +1256,6 @@
 .method public getUserId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userId_:I
 
     return v0
@@ -1437,7 +1264,6 @@
 .method public getUserName()Lcom/google/protobuf/ByteString;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userName_:Lcom/google/protobuf/ByteString;
 
     return-object v0
@@ -1446,7 +1272,6 @@
 .method public getVersion()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->version_:I
 
     return v0
@@ -1455,7 +1280,6 @@
 .method public getVersionBLE()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionBLE_:I
 
     return v0
@@ -1464,7 +1288,6 @@
 .method public getVersionExtend()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionExtend_:I
 
     return v0
@@ -1473,7 +1296,6 @@
 .method public getVersionHW()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionHW_:I
 
     return v0
@@ -1482,7 +1304,6 @@
 .method public getVersionMCU()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionMCU_:I
 
     return v0
@@ -1491,7 +1312,6 @@
 .method public hasActivateChannel()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/high16 v1, 0x10000
@@ -1514,7 +1334,6 @@
 .method public hasDevNameGBK()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x800
@@ -1537,7 +1356,6 @@
 .method public hasDevNameUTF8()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x400
@@ -1560,7 +1378,6 @@
 .method public hasDeviceId()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x8
@@ -1583,7 +1400,6 @@
 .method public hasLanguage()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/high16 v1, 0x20000
@@ -1606,7 +1422,6 @@
 .method public hasLowPower()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x4000
@@ -1629,7 +1444,6 @@
 .method public hasMode()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/4 v1, 0x4
@@ -1652,7 +1466,6 @@
 .method public hasResult()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/4 v1, 0x2
@@ -1675,7 +1488,6 @@
 .method public hasShareLoc()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x1000
@@ -1698,7 +1510,6 @@
 .method public hasSosText()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x40
@@ -1721,7 +1532,6 @@
 .method public hasStateMode()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x200
@@ -1744,7 +1554,6 @@
 .method public hasUserId()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x10
@@ -1767,7 +1576,6 @@
 .method public hasUserName()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x20
@@ -1790,7 +1598,6 @@
 .method public hasVersion()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/4 v1, 0x1
@@ -1811,7 +1618,6 @@
 .method public hasVersionBLE()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x80
@@ -1834,7 +1640,6 @@
 .method public hasVersionExtend()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const v1, 0x8000
@@ -1857,7 +1662,6 @@
 .method public hasVersionHW()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x2000
@@ -1880,7 +1684,6 @@
 .method public hasVersionMCU()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/16 v1, 0x100
@@ -1903,7 +1706,6 @@
 .method protected internalGetFieldAccessorTable()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/MitalkProtos;->v()Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -1912,7 +1714,6 @@
 
     const-class v2, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;->ensureFieldAccessorsInitialized(Ljava/lang/Class;Ljava/lang/Class;)Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable;
 
     move-result-object v0
@@ -1923,7 +1724,6 @@
 .method public setActivateChannel(I)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/high16 v1, 0x10000
@@ -1932,10 +1732,8 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->activateChannel_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1946,17 +1744,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x800
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameGBK_:Lcom/google/protobuf/ByteString;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1964,7 +1759,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 .end method
 
@@ -1973,17 +1767,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x400
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->devNameUTF8_:Lcom/google/protobuf/ByteString;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -1991,24 +1782,20 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 .end method
 
 .method public setDeviceId(I)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x8
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->deviceId_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2017,7 +1804,6 @@
 .method public setLanguage(I)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const/high16 v1, 0x20000
@@ -2026,10 +1812,8 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->language_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2040,17 +1824,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x4000
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->lowPower_:Lcom/ifengyu/intercom/protos/MitalkProtos$POWERSTATE;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2058,7 +1839,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 .end method
 
@@ -2067,17 +1847,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x4
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->mode_:Lcom/google/protobuf/ByteString;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2085,7 +1862,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 .end method
 
@@ -2094,17 +1870,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x2
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->result_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATECODE;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2112,24 +1885,20 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 .end method
 
 .method public setShareLoc(I)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x1000
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->shareLoc_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2140,17 +1909,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x40
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->sosText_:Lcom/google/protobuf/ByteString;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2158,7 +1924,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 .end method
 
@@ -2167,17 +1932,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x200
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->stateMode_:Lcom/ifengyu/intercom/protos/MitalkProtos$STATEMODE;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2185,24 +1947,20 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 .end method
 
 .method public setUserId(I)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x10
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userId_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2213,17 +1971,14 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x20
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->userName_:Lcom/google/protobuf/ByteString;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2231,24 +1986,20 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     throw p1
 .end method
 
 .method public setVersion(I)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->version_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2257,17 +2008,14 @@
 .method public setVersionBLE(I)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x80
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionBLE_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2276,7 +2024,6 @@
 .method public setVersionExtend(I)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     const v1, 0x8000
@@ -2285,10 +2032,8 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionExtend_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2297,17 +2042,14 @@
 .method public setVersionHW(I)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x2000
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionHW_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0
@@ -2316,17 +2058,14 @@
 .method public setVersionMCU(I)Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
     or-int/lit16 v0, v0, 0x100
 
     iput v0, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->bitField0_:I
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate$Builder;->versionMCU_:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessage$Builder;->onChanged()V
 
     return-object p0

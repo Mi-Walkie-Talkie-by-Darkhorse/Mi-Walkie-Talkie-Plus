@@ -1,6 +1,5 @@
 .class Landroidx/loader/a/b$c;
 .super Landroidx/lifecycle/v;
-.source "LoaderManagerImpl.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/loader/a/b$c$a;
 
     invoke-direct {v0}, Landroidx/loader/a/b$c$a;-><init>()V
@@ -47,10 +45,8 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroidx/lifecycle/v;-><init>()V
 
-    .line 2
     new-instance v0, La/b/h;
 
     invoke-direct {v0}, La/b/h;-><init>()V
@@ -65,7 +61,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Landroidx/lifecycle/w;
 
     sget-object v1, Landroidx/loader/a/b$c;->b:Landroidx/lifecycle/w$b;
@@ -88,7 +83,6 @@
 .method a()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/loader/a/b$c;->a:La/b/h;
 
     invoke-virtual {v0}, La/b/h;->a()I
@@ -100,7 +94,6 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 2
     iget-object v2, p0, Landroidx/loader/a/b$c;->a:La/b/h;
 
     invoke-virtual {v2, v1}, La/b/h;->c(I)Ljava/lang/Object;
@@ -109,7 +102,6 @@
 
     check-cast v2, Landroidx/loader/a/b$a;
 
-    .line 3
     invoke-virtual {v2}, Landroidx/loader/a/b$a;->b()V
 
     add-int/lit8 v1, v1, 0x1
@@ -123,7 +115,6 @@
 .method public a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
     .locals 4
 
-    .line 4
     iget-object v0, p0, Landroidx/loader/a/b$c;->a:La/b/h;
 
     invoke-virtual {v0}, La/b/h;->a()I
@@ -132,14 +123,12 @@
 
     if-lez v0, :cond_0
 
-    .line 5
     invoke-virtual {p3, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     const-string v0, "Loaders:"
 
     invoke-virtual {p3, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 6
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -156,7 +145,6 @@
 
     const/4 v1, 0x0
 
-    .line 7
     :goto_0
     iget-object v2, p0, Landroidx/loader/a/b$c;->a:La/b/h;
 
@@ -166,7 +154,6 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 8
     iget-object v2, p0, Landroidx/loader/a/b$c;->a:La/b/h;
 
     invoke-virtual {v2, v1}, La/b/h;->c(I)Ljava/lang/Object;
@@ -175,7 +162,6 @@
 
     check-cast v2, Landroidx/loader/a/b$a;
 
-    .line 9
     invoke-virtual {p3, p1}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     const-string v3, "  #"
@@ -192,7 +178,6 @@
 
     const-string v3, ": "
 
-    .line 10
     invoke-virtual {p3, v3}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroidx/loader/a/b$a;->toString()Ljava/lang/String;
@@ -201,7 +186,6 @@
 
     invoke-virtual {p3, v3}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 11
     invoke-virtual {v2, v0, p2, p3, p4}, Landroidx/loader/a/b$a;->a(Ljava/lang/String;Ljava/io/FileDescriptor;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
     add-int/lit8 v1, v1, 0x1
@@ -215,10 +199,8 @@
 .method protected onCleared()V
     .locals 4
 
-    .line 1
     invoke-super {p0}, Landroidx/lifecycle/v;->onCleared()V
 
-    .line 2
     iget-object v0, p0, Landroidx/loader/a/b$c;->a:La/b/h;
 
     invoke-virtual {v0}, La/b/h;->a()I
@@ -230,7 +212,6 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 3
     iget-object v2, p0, Landroidx/loader/a/b$c;->a:La/b/h;
 
     invoke-virtual {v2, v1}, La/b/h;->c(I)Ljava/lang/Object;
@@ -241,14 +222,12 @@
 
     const/4 v3, 0x1
 
-    .line 4
     invoke-virtual {v2, v3}, Landroidx/loader/a/b$a;->a(Z)Landroidx/loader/content/c;
 
     add-int/lit8 v1, v1, 0x1
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object v0, p0, Landroidx/loader/a/b$c;->a:La/b/h;
 

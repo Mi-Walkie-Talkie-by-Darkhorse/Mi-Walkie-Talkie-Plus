@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/a;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # annotations
@@ -29,10 +28,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -47,7 +44,6 @@
 .method public a(Lcom/tencent/open/a$b;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/tencent/open/a;->a:Ljava/util/HashMap;
 
     invoke-virtual {v0, p2, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -70,7 +66,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -95,7 +90,6 @@
 
     invoke-static {v1, v0}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     invoke-interface {p3}, Ljava/util/List;->size()I
 
     move-result v0
@@ -105,7 +99,6 @@
     :goto_0
     if-ge v2, v0, :cond_0
 
-    .line 4
     :try_start_0
     invoke-interface {p3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -128,7 +121,6 @@
     :catch_0
     move-exception v3
 
-    .line 5
     invoke-virtual {v3}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     :goto_1
@@ -136,7 +128,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/tencent/open/a;->a:Ljava/util/HashMap;
 
@@ -150,10 +141,8 @@
 
     const-string v0, "call----"
 
-    .line 7
     invoke-static {v1, v0}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 8
     invoke-virtual {p1, p2, p3, p4}, Lcom/tencent/open/a$b;->call(Ljava/lang/String;Ljava/util/List;Lcom/tencent/open/a$a;)V
 
     goto :goto_2
@@ -161,12 +150,10 @@
     :cond_1
     const-string p1, "not call----objName NOT FIND"
 
-    .line 9
     invoke-static {v1, p1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz p4, :cond_2
 
-    .line 10
     invoke-virtual {p4}, Lcom/tencent/open/a$a;->a()V
 
     :cond_2
@@ -177,7 +164,6 @@
 .method public a(Landroid/webkit/WebView;Ljava/lang/String;)Z
     .locals 8
 
-    .line 11
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -202,13 +188,11 @@
 
     return v0
 
-    .line 12
     :cond_0
     invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v1
 
-    .line 13
     invoke-virtual {v1}, Landroid/net/Uri;->getScheme()Ljava/lang/String;
 
     move-result-object v1
@@ -223,7 +207,6 @@
 
     return v0
 
-    .line 14
     :cond_1
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -245,7 +228,6 @@
 
     move-result-object v1
 
-    .line 15
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -254,7 +236,6 @@
 
     invoke-direct {v2, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    .line 16
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v1
@@ -268,7 +249,6 @@
     :cond_2
     const/4 v0, 0x2
 
-    .line 17
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
@@ -277,7 +257,6 @@
 
     const/4 v1, 0x3
 
-    .line 18
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -288,7 +267,6 @@
 
     const/4 v5, 0x4
 
-    .line 19
     invoke-virtual {v2}, Ljava/util/ArrayList;->size()I
 
     move-result v6
@@ -301,15 +279,12 @@
 
     move-result-object v2
 
-    .line 20
     new-instance v5, Lcom/tencent/open/a$a;
 
     invoke-direct {v5, p1, v3, v4, p2}, Lcom/tencent/open/a$a;-><init>(Landroid/webkit/WebView;JLjava/lang/String;)V
 
-    .line 21
     invoke-virtual {p1}, Landroid/webkit/WebView;->getUrl()Ljava/lang/String;
 
-    .line 22
     invoke-virtual {p0, v0, v1, v2, v5}, Lcom/tencent/open/a;->a(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;Lcom/tencent/open/a$a;)V
 
     return v7

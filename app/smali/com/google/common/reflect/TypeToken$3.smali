@@ -1,6 +1,5 @@
 .class Lcom/google/common/reflect/TypeToken$3;
 .super Lcom/google/common/reflect/TypeVisitor;
-.source "TypeToken.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/common/reflect/TypeToken;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/reflect/TypeToken$3;->this$0:Lcom/google/common/reflect/TypeToken;
 
     invoke-direct {p0}, Lcom/google/common/reflect/TypeVisitor;-><init>()V
@@ -39,7 +37,6 @@
 
     new-array v0, v0, [Ljava/lang/reflect/Type;
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/reflect/GenericArrayType;->getGenericComponentType()Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -56,7 +53,6 @@
 .method visitParameterizedType(Ljava/lang/reflect/ParameterizedType;)V
     .locals 2
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getActualTypeArguments()[Ljava/lang/reflect/Type;
 
     move-result-object v0
@@ -67,7 +63,6 @@
 
     new-array v0, v0, [Ljava/lang/reflect/Type;
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/reflect/ParameterizedType;->getOwnerType()Ljava/lang/reflect/Type;
 
     move-result-object p1
@@ -91,7 +86,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     iget-object v0, p0, Lcom/google/common/reflect/TypeToken$3;->this$0:Lcom/google/common/reflect/TypeToken;
@@ -136,14 +130,12 @@
 .method visitWildcardType(Ljava/lang/reflect/WildcardType;)V
     .locals 1
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/reflect/WildcardType;->getLowerBounds()[Ljava/lang/reflect/Type;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/google/common/reflect/TypeVisitor;->visit([Ljava/lang/reflect/Type;)V
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/reflect/WildcardType;->getUpperBounds()[Ljava/lang/reflect/Type;
 
     move-result-object p1

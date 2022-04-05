@@ -1,6 +1,5 @@
 .class public Lb/a/a/a/f/m;
 .super Lb/a/a/a/f/g;
-.source "PieChartRenderer.java"
 
 
 # instance fields
@@ -51,10 +50,8 @@
 .method public constructor <init>(Lcom/github/mikephil/charting/charts/PieChart;Lb/a/a/a/a/a;Lb/a/a/a/g/j;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p2, p3}, Lb/a/a/a/f/g;-><init>(Lb/a/a/a/a/a;Lb/a/a/a/g/j;)V
 
-    .line 2
     new-instance p2, Landroid/graphics/RectF;
 
     invoke-direct {p2}, Landroid/graphics/RectF;-><init>()V
@@ -65,7 +62,6 @@
 
     new-array p2, p2, [Landroid/graphics/RectF;
 
-    .line 3
     new-instance p3, Landroid/graphics/RectF;
 
     invoke-direct {p3}, Landroid/graphics/RectF;-><init>()V
@@ -92,45 +88,38 @@
 
     iput-object p2, p0, Lb/a/a/a/f/m;->o:[Landroid/graphics/RectF;
 
-    .line 4
     new-instance p2, Landroid/graphics/Path;
 
     invoke-direct {p2}, Landroid/graphics/Path;-><init>()V
 
     iput-object p2, p0, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
-    .line 5
     new-instance p2, Landroid/graphics/RectF;
 
     invoke-direct {p2}, Landroid/graphics/RectF;-><init>()V
 
     iput-object p2, p0, Lb/a/a/a/f/m;->s:Landroid/graphics/RectF;
 
-    .line 6
     new-instance p2, Landroid/graphics/Path;
 
     invoke-direct {p2}, Landroid/graphics/Path;-><init>()V
 
     iput-object p2, p0, Lb/a/a/a/f/m;->t:Landroid/graphics/Path;
 
-    .line 7
     new-instance p2, Landroid/graphics/Path;
 
     invoke-direct {p2}, Landroid/graphics/Path;-><init>()V
 
     iput-object p2, p0, Lb/a/a/a/f/m;->u:Landroid/graphics/Path;
 
-    .line 8
     new-instance p2, Landroid/graphics/RectF;
 
     invoke-direct {p2}, Landroid/graphics/RectF;-><init>()V
 
     iput-object p2, p0, Lb/a/a/a/f/m;->v:Landroid/graphics/RectF;
 
-    .line 9
     iput-object p1, p0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
-    .line 10
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1, v0}, Landroid/graphics/Paint;-><init>(I)V
@@ -139,41 +128,34 @@
 
     const/4 p2, -0x1
 
-    .line 11
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 12
     iget-object p1, p0, Lb/a/a/a/f/m;->g:Landroid/graphics/Paint;
 
     sget-object p3, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 13
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1, v0}, Landroid/graphics/Paint;-><init>(I)V
 
     iput-object p1, p0, Lb/a/a/a/f/m;->h:Landroid/graphics/Paint;
 
-    .line 14
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 15
     iget-object p1, p0, Lb/a/a/a/f/m;->h:Landroid/graphics/Paint;
 
     sget-object p3, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 16
     iget-object p1, p0, Lb/a/a/a/f/m;->h:Landroid/graphics/Paint;
 
     const/16 p3, 0x69
 
     invoke-virtual {p1, p3}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 17
     new-instance p1, Landroid/text/TextPaint;
 
     invoke-direct {p1, v0}, Landroid/text/TextPaint;-><init>(I)V
@@ -182,10 +164,8 @@
 
     const/high16 p3, -0x1000000
 
-    .line 18
     invoke-virtual {p1, p3}, Landroid/text/TextPaint;->setColor(I)V
 
-    .line 19
     iget-object p1, p0, Lb/a/a/a/f/m;->j:Landroid/text/TextPaint;
 
     const/high16 p3, 0x41400000    # 12.0f
@@ -196,7 +176,6 @@
 
     invoke-virtual {p1, p3}, Landroid/text/TextPaint;->setTextSize(F)V
 
-    .line 20
     iget-object p1, p0, Lb/a/a/a/f/g;->e:Landroid/graphics/Paint;
 
     const/high16 p3, 0x41500000    # 13.0f
@@ -207,36 +186,30 @@
 
     invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 21
     iget-object p1, p0, Lb/a/a/a/f/g;->e:Landroid/graphics/Paint;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 22
     iget-object p1, p0, Lb/a/a/a/f/g;->e:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
 
     invoke-virtual {p1, v1}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    .line 23
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1, v0}, Landroid/graphics/Paint;-><init>(I)V
 
     iput-object p1, p0, Lb/a/a/a/f/m;->k:Landroid/graphics/Paint;
 
-    .line 24
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 25
     iget-object p1, p0, Lb/a/a/a/f/m;->k:Landroid/graphics/Paint;
 
     sget-object p2, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setTextAlign(Landroid/graphics/Paint$Align;)V
 
-    .line 26
     iget-object p1, p0, Lb/a/a/a/f/m;->k:Landroid/graphics/Paint;
 
     invoke-static {p3}, Lb/a/a/a/g/i;->a(F)F
@@ -245,14 +218,12 @@
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setTextSize(F)V
 
-    .line 27
     new-instance p1, Landroid/graphics/Paint;
 
     invoke-direct {p1, v0}, Landroid/graphics/Paint;-><init>(I)V
 
     iput-object p1, p0, Lb/a/a/a/f/m;->i:Landroid/graphics/Paint;
 
-    .line 28
     sget-object p2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
@@ -265,21 +236,18 @@
 .method protected a(Lb/a/a/a/e/b/i;)F
     .locals 3
 
-    .line 24
     invoke-interface {p1}, Lb/a/a/a/e/b/i;->F()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 25
     invoke-interface {p1}, Lb/a/a/a/e/b/i;->f()F
 
     move-result p1
 
     return p1
 
-    .line 26
     :cond_0
     invoke-interface {p1}, Lb/a/a/a/e/b/i;->f()F
 
@@ -293,7 +261,6 @@
 
     div-float/2addr v0, v1
 
-    .line 27
     invoke-interface {p1}, Lb/a/a/a/e/b/e;->x()F
 
     move-result v1
@@ -324,7 +291,6 @@
 
     goto :goto_0
 
-    .line 28
     :cond_1
     invoke-interface {p1}, Lb/a/a/a/e/b/i;->f()F
 
@@ -345,7 +311,6 @@
 
     add-float v2, p6, v2
 
-    .line 13
     iget v3, v0, Lb/a/a/a/g/e;->c:F
 
     add-float v4, p6, p7
@@ -366,7 +331,6 @@
 
     add-float/2addr v3, v4
 
-    .line 14
     iget v4, v0, Lb/a/a/a/g/e;->d:F
 
     invoke-static {v6, v7}, Ljava/lang/Math;->sin(D)D
@@ -379,7 +343,6 @@
 
     add-float/2addr v4, v6
 
-    .line 15
     iget v6, v0, Lb/a/a/a/g/e;->c:F
 
     mul-float v2, v2, v5
@@ -396,7 +359,6 @@
 
     add-float/2addr v6, v2
 
-    .line 16
     iget v0, v0, Lb/a/a/a/g/e;->d:F
 
     invoke-static {v7, v8}, Ljava/lang/Math;->sin(D)D
@@ -415,7 +377,6 @@
 
     const-wide/high16 v9, 0x4000000000000000L    # 2.0
 
-    .line 17
     invoke-static {v7, v8, v9, v10}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v7
@@ -424,14 +385,12 @@
 
     float-to-double v11, v2
 
-    .line 18
     invoke-static {v11, v12, v9, v10}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v11
 
     add-double/2addr v7, v11
 
-    .line 19
     invoke-static {v7, v8}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v7
@@ -452,7 +411,6 @@
 
     mul-double v13, v13, v11
 
-    .line 20
     invoke-static {v13, v14}, Ljava/lang/Math;->tan(D)D
 
     move-result-wide v11
@@ -473,7 +431,6 @@
 
     float-to-double v2, v6
 
-    .line 21
     invoke-static {v2, v3, v9, v10}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v2
@@ -486,14 +443,12 @@
 
     float-to-double v0, v0
 
-    .line 22
     invoke-static {v0, v1, v9, v10}, Ljava/lang/Math;->pow(DD)D
 
     move-result-wide v0
 
     add-double/2addr v2, v0
 
-    .line 23
     invoke-static {v2, v3}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v0
@@ -514,7 +469,6 @@
 .method public a(Landroid/graphics/Canvas;)V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/f/o;->a:Lb/a/a/a/g/j;
 
     invoke-virtual {v0}, Lb/a/a/a/g/j;->l()F
@@ -523,7 +477,6 @@
 
     float-to-int v0, v0
 
-    .line 2
     iget-object v1, p0, Lb/a/a/a/f/o;->a:Lb/a/a/a/g/j;
 
     invoke-virtual {v1}, Lb/a/a/a/g/j;->k()F
@@ -532,12 +485,10 @@
 
     float-to-int v1, v1
 
-    .line 3
     iget-object v2, p0, Lb/a/a/a/f/m;->p:Ljava/lang/ref/WeakReference;
 
     if-eqz v2, :cond_0
 
-    .line 4
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v2
@@ -552,7 +503,6 @@
 
     iget-object v2, p0, Lb/a/a/a/f/m;->p:Ljava/lang/ref/WeakReference;
 
-    .line 5
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v2
@@ -570,7 +520,6 @@
 
     if-lez v1, :cond_3
 
-    .line 6
     new-instance v2, Ljava/lang/ref/WeakReference;
 
     sget-object v3, Landroid/graphics/Bitmap$Config;->ARGB_4444:Landroid/graphics/Bitmap$Config;
@@ -583,7 +532,6 @@
 
     iput-object v2, p0, Lb/a/a/a/f/m;->p:Ljava/lang/ref/WeakReference;
 
-    .line 7
     new-instance v0, Landroid/graphics/Canvas;
 
     iget-object v1, p0, Lb/a/a/a/f/m;->p:Ljava/lang/ref/WeakReference;
@@ -598,7 +546,6 @@
 
     iput-object v0, p0, Lb/a/a/a/f/m;->q:Landroid/graphics/Canvas;
 
-    .line 8
     :cond_1
     iget-object v0, p0, Lb/a/a/a/f/m;->p:Ljava/lang/ref/WeakReference;
 
@@ -612,7 +559,6 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Bitmap;->eraseColor(I)V
 
-    .line 9
     iget-object v0, p0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/Chart;->getData()Lcom/github/mikephil/charting/data/h;
@@ -621,7 +567,6 @@
 
     check-cast v0, Lcom/github/mikephil/charting/data/m;
 
-    .line 10
     invoke-virtual {v0}, Lcom/github/mikephil/charting/data/h;->c()Ljava/util/List;
 
     move-result-object v0
@@ -644,7 +589,6 @@
 
     check-cast v1, Lb/a/a/a/e/b/i;
 
-    .line 11
     invoke-interface {v1}, Lb/a/a/a/e/b/e;->isVisible()Z
 
     move-result v2
@@ -657,7 +601,6 @@
 
     if-lez v2, :cond_2
 
-    .line 12
     invoke-virtual {p0, p1, v1}, Lb/a/a/a/f/m;->a(Landroid/graphics/Canvas;Lb/a/a/a/e/b/i;)V
 
     goto :goto_0
@@ -673,61 +616,52 @@
 
     move-object/from16 v9, p2
 
-    .line 29
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;->getRotationAngle()F
 
     move-result v10
 
-    .line 30
     iget-object v0, v8, Lb/a/a/a/f/g;->b:Lb/a/a/a/a/a;
 
     invoke-virtual {v0}, Lb/a/a/a/a/a;->a()F
 
     move-result v11
 
-    .line 31
     iget-object v0, v8, Lb/a/a/a/f/g;->b:Lb/a/a/a/a/a;
 
     invoke-virtual {v0}, Lb/a/a/a/a/a;->b()F
 
     move-result v12
 
-    .line 32
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getCircleBox()Landroid/graphics/RectF;
 
     move-result-object v13
 
-    .line 33
     invoke-interface/range {p2 .. p2}, Lb/a/a/a/e/b/e;->q0()I
 
     move-result v14
 
-    .line 34
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getDrawAngles()[F
 
     move-result-object v15
 
-    .line 35
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getCenterCircleBox()Lb/a/a/a/g/e;
 
     move-result-object v7
 
-    .line 36
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getRadius()F
 
     move-result v6
 
-    .line 37
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->r()Z
@@ -760,10 +694,8 @@
 
     if-eqz v17, :cond_1
 
-    .line 38
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
-    .line 39
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getHoleRadius()F
 
     move-result v0
@@ -789,7 +721,6 @@
     :goto_2
     if-ge v0, v14, :cond_3
 
-    .line 40
     invoke-interface {v9, v0}, Lb/a/a/a/e/b/e;->a(I)Lcom/github/mikephil/charting/data/Entry;
 
     move-result-object v1
@@ -824,7 +755,6 @@
 
     goto :goto_3
 
-    .line 41
     :cond_4
     invoke-virtual {v8, v9}, Lb/a/a/a/f/m;->a(Lb/a/a/a/e/b/i;)F
 
@@ -840,15 +770,12 @@
     :goto_4
     if-ge v2, v14, :cond_15
 
-    .line 42
     aget v21, v15, v2
 
-    .line 43
     invoke-interface {v9, v2}, Lb/a/a/a/e/b/e;->a(I)Lcom/github/mikephil/charting/data/Entry;
 
     move-result-object v0
 
-    .line 44
     invoke-virtual {v0}, Lcom/github/mikephil/charting/data/e;->b()F
 
     move-result v0
@@ -863,7 +790,6 @@
 
     if-lez v0, :cond_14
 
-    .line 45
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0, v2}, Lcom/github/mikephil/charting/charts/PieChart;->a(I)Z
@@ -889,7 +815,6 @@
     :cond_5
     const/4 v0, 0x0
 
-    .line 46
     :goto_5
     iget-object v1, v8, Lb/a/a/a/f/g;->c:Landroid/graphics/Paint;
 
@@ -935,13 +860,11 @@
 
     const/4 v1, 0x0
 
-    .line 47
     :cond_7
     iget-object v5, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     invoke-virtual {v5}, Landroid/graphics/Path;->reset()V
 
-    .line 48
     iget v5, v7, Lb/a/a/a/g/e;->c:F
 
     move/from16 v24, v2
@@ -966,7 +889,6 @@
 
     add-float/2addr v5, v14
 
-    .line 49
     iget v14, v7, Lb/a/a/a/g/e;->d:F
 
     invoke-static {v2, v3}, Ljava/lang/Math;->sin(D)D
@@ -987,14 +909,12 @@
 
     rem-float v2, v1, v15
 
-    .line 50
     sget v3, Lb/a/a/a/g/i;->d:F
 
     cmpg-float v2, v2, v3
 
     if-gtz v2, :cond_8
 
-    .line 51
     iget-object v2, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     iget v3, v7, Lb/a/a/a/g/e;->c:F
@@ -1012,17 +932,14 @@
     :cond_8
     move/from16 v29, v11
 
-    .line 52
     iget-object v2, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     invoke-virtual {v2, v5, v14}, Landroid/graphics/Path;->moveTo(FF)V
 
-    .line 53
     iget-object v2, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     invoke-virtual {v2, v13, v9, v1}, Landroid/graphics/Path;->arcTo(Landroid/graphics/RectF;FF)V
 
-    .line 54
     :goto_7
     iget-object v2, v8, Lb/a/a/a/f/m;->s:Landroid/graphics/RectF;
 
@@ -1115,7 +1032,6 @@
 
     move v7, v11
 
-    .line 55
     invoke-virtual/range {v0 .. v7}, Lb/a/a/a/f/m;->a(Lb/a/a/a/g/e;FFFFFF)F
 
     move-result v0
@@ -1126,7 +1042,6 @@
 
     neg-float v0, v0
 
-    .line 56
     :cond_b
     invoke-static {v15, v0}, Ljava/lang/Math;->max(FF)F
 
@@ -1201,7 +1116,6 @@
 
     rem-float v2, v11, v2
 
-    .line 57
     sget v3, Lb/a/a/a/g/i;->d:F
 
     cmpg-float v2, v2, v3
@@ -1212,7 +1126,6 @@
 
     move-object/from16 v8, p0
 
-    .line 58
     iget-object v0, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     iget v1, v9, Lb/a/a/a/g/e;->c:F
@@ -1232,7 +1145,6 @@
 
     move-object/from16 v8, p0
 
-    .line 59
     iget-object v2, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     iget v3, v9, Lb/a/a/a/g/e;->c:F
@@ -1243,7 +1155,6 @@
 
     move/from16 p1, v10
 
-    .line 60
     invoke-static {v5, v6}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v10
@@ -1256,7 +1167,6 @@
 
     iget v7, v9, Lb/a/a/a/g/e;->d:F
 
-    .line 61
     invoke-static {v5, v6}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v5
@@ -1267,10 +1177,8 @@
 
     add-float/2addr v7, v4
 
-    .line 62
     invoke-virtual {v2, v3, v7}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 63
     iget-object v2, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     iget-object v3, v8, Lb/a/a/a/f/m;->s:Landroid/graphics/RectF;
@@ -1310,7 +1218,6 @@
     :goto_d
     rem-float v1, v11, v1
 
-    .line 64
     sget v2, Lb/a/a/a/g/i;->d:F
 
     cmpl-float v1, v1, v2
@@ -1339,19 +1246,16 @@
 
     move v7, v11
 
-    .line 65
     invoke-virtual/range {v0 .. v7}, Lb/a/a/a/f/m;->a(Lb/a/a/a/g/e;FFFFFF)F
 
     move-result v0
 
-    .line 66
     iget v1, v10, Lb/a/a/a/g/e;->c:F
 
     mul-float v2, v23, v22
 
     float-to-double v2, v2
 
-    .line 67
     invoke-static {v2, v3}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v4
@@ -1362,10 +1266,8 @@
 
     add-float/2addr v1, v4
 
-    .line 68
     iget v4, v10, Lb/a/a/a/g/e;->d:F
 
-    .line 69
     invoke-static {v2, v3}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v2
@@ -1376,14 +1278,12 @@
 
     add-float/2addr v4, v0
 
-    .line 70
     iget-object v0, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     invoke-virtual {v0, v1, v4}, Landroid/graphics/Path;->lineTo(FF)V
 
     goto :goto_e
 
-    .line 71
     :cond_12
     iget-object v0, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
@@ -1393,14 +1293,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 72
     :cond_13
     :goto_e
     iget-object v0, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     invoke-virtual {v0}, Landroid/graphics/Path;->close()V
 
-    .line 73
     iget-object v0, v8, Lb/a/a/a/f/m;->q:Landroid/graphics/Canvas;
 
     iget-object v1, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
@@ -1468,7 +1366,6 @@
     :cond_15
     move-object v10, v7
 
-    .line 74
     invoke-static {v10}, Lb/a/a/a/g/e;->a(Lb/a/a/a/g/e;)V
 
     return-void
@@ -1477,7 +1374,6 @@
 .method protected a(Landroid/graphics/Canvas;Ljava/lang/String;FF)V
     .locals 1
 
-    .line 75
     iget-object v0, p0, Lb/a/a/a/f/m;->k:Landroid/graphics/Paint;
 
     invoke-virtual {p1, p2, p3, p4, v0}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
@@ -1492,56 +1388,48 @@
 
     move-object/from16 v9, p2
 
-    .line 76
     iget-object v0, v8, Lb/a/a/a/f/g;->b:Lb/a/a/a/a/a;
 
     invoke-virtual {v0}, Lb/a/a/a/a/a;->a()F
 
     move-result v10
 
-    .line 77
     iget-object v0, v8, Lb/a/a/a/f/g;->b:Lb/a/a/a/a/a;
 
     invoke-virtual {v0}, Lb/a/a/a/a/a;->b()F
 
     move-result v11
 
-    .line 78
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;->getRotationAngle()F
 
     move-result v12
 
-    .line 79
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getDrawAngles()[F
 
     move-result-object v13
 
-    .line 80
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getAbsoluteAngles()[F
 
     move-result-object v14
 
-    .line 81
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getCenterCircleBox()Lb/a/a/a/g/e;
 
     move-result-object v15
 
-    .line 82
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getRadius()F
 
     move-result v16
 
-    .line 83
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->r()Z
@@ -1572,10 +1460,8 @@
 
     if-eqz v18, :cond_1
 
-    .line 84
     iget-object v0, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
-    .line 85
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getHoleRadius()F
 
     move-result v0
@@ -1593,22 +1479,18 @@
     :cond_1
     const/4 v5, 0x0
 
-    .line 86
     :goto_1
     iget-object v4, v8, Lb/a/a/a/f/m;->v:Landroid/graphics/RectF;
 
-    .line 87
     invoke-virtual {v4, v6, v6, v6, v6}, Landroid/graphics/RectF;->set(FFFF)V
 
     const/4 v3, 0x0
 
-    .line 88
     :goto_2
     array-length v0, v9
 
     if-ge v3, v0, :cond_1a
 
-    .line 89
     aget-object v0, v9, v3
 
     invoke-virtual {v0}, Lb/a/a/a/d/d;->g()F
@@ -1617,14 +1499,12 @@
 
     float-to-int v0, v0
 
-    .line 90
     array-length v1, v13
 
     if-lt v0, v1, :cond_2
 
     goto/16 :goto_10
 
-    .line 91
     :cond_2
     iget-object v1, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
@@ -1636,19 +1516,16 @@
 
     aget-object v2, v9, v3
 
-    .line 92
     invoke-virtual {v2}, Lb/a/a/a/d/d;->c()I
 
     move-result v2
 
-    .line 93
     invoke-virtual {v1, v2}, Lcom/github/mikephil/charting/data/m;->a(I)Lb/a/a/a/e/b/i;
 
     move-result-object v1
 
     if-eqz v1, :cond_19
 
-    .line 94
     invoke-interface {v1}, Lb/a/a/a/e/b/e;->s0()Z
 
     move-result v2
@@ -1657,7 +1534,6 @@
 
     goto/16 :goto_10
 
-    .line 95
     :cond_3
     invoke-interface {v1}, Lb/a/a/a/e/b/e;->q0()I
 
@@ -1670,7 +1546,6 @@
     :goto_3
     if-ge v6, v2, :cond_5
 
-    .line 96
     invoke-interface {v1, v6}, Lb/a/a/a/e/b/e;->a(I)Lcom/github/mikephil/charting/data/Entry;
 
     move-result-object v20
@@ -1710,7 +1585,6 @@
     :cond_6
     add-int/lit8 v2, v0, -0x1
 
-    .line 97
     aget v2, v14, v2
 
     mul-float v2, v2, v10
@@ -1726,7 +1600,6 @@
 
     goto :goto_5
 
-    .line 98
     :cond_7
     invoke-interface {v1}, Lb/a/a/a/e/b/i;->f()F
 
@@ -1734,11 +1607,9 @@
 
     move/from16 v21, v2
 
-    .line 99
     :goto_5
     aget v22, v13, v0
 
-    .line 100
     invoke-interface {v1}, Lb/a/a/a/e/b/i;->e0()F
 
     move-result v2
@@ -1747,7 +1618,6 @@
 
     move/from16 v23, v3
 
-    .line 101
     iget-object v3, v8, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v3}, Lcom/github/mikephil/charting/charts/PieChart;->getCircleBox()Landroid/graphics/RectF;
@@ -1758,7 +1628,6 @@
 
     neg-float v2, v2
 
-    .line 102
     invoke-virtual {v4, v2, v2}, Landroid/graphics/RectF;->inset(FF)V
 
     const/4 v2, 0x0
@@ -1780,7 +1649,6 @@
     :cond_8
     const/16 v24, 0x0
 
-    .line 103
     :goto_6
     iget-object v2, v8, Lb/a/a/a/f/g;->c:Landroid/graphics/Paint;
 
@@ -1864,7 +1732,6 @@
 
     const/4 v2, 0x0
 
-    .line 104
     :cond_c
     iget-object v0, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
@@ -1878,14 +1745,12 @@
 
     rem-float v0, v28, v29
 
-    .line 105
     sget v31, Lb/a/a/a/g/i;->d:F
 
     cmpg-float v0, v0, v31
 
     if-gtz v0, :cond_d
 
-    .line 106
     iget-object v0, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     iget v1, v15, Lb/a/a/a/g/e;->c:F
@@ -1906,7 +1771,6 @@
 
     goto :goto_a
 
-    .line 107
     :cond_d
     iget-object v0, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
@@ -1924,7 +1788,6 @@
 
     move-object/from16 v34, v14
 
-    .line 108
     invoke-static {v9, v10}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v13
@@ -1937,7 +1800,6 @@
 
     iget v5, v15, Lb/a/a/a/g/e;->d:F
 
-    .line 109
     invoke-static {v9, v10}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v9
@@ -1948,10 +1810,8 @@
 
     add-float/2addr v5, v6
 
-    .line 110
     invoke-virtual {v0, v3, v5}, Landroid/graphics/Path;->moveTo(FF)V
 
-    .line 111
     iget-object v0, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     invoke-virtual {v0, v4, v1, v2}, Landroid/graphics/Path;->arcTo(Landroid/graphics/RectF;FF)V
@@ -1961,14 +1821,12 @@
 
     mul-float v3, v22, v11
 
-    .line 112
     iget v0, v15, Lb/a/a/a/g/e;->c:F
 
     mul-float v1, v26, v25
 
     float-to-double v1, v1
 
-    .line 113
     invoke-static {v1, v2}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v5
@@ -1981,7 +1839,6 @@
 
     iget v0, v15, Lb/a/a/a/g/e;->d:F
 
-    .line 114
     invoke-static {v1, v2}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v1
@@ -2022,7 +1879,6 @@
 
     move/from16 v7, v28
 
-    .line 115
     invoke-virtual/range {v0 .. v7}, Lb/a/a/a/f/m;->a(Lb/a/a/a/g/e;FFFFFF)F
 
     move-result v6
@@ -2044,7 +1900,6 @@
 
     const/4 v6, 0x0
 
-    .line 116
     :goto_b
     iget-object v0, v8, Lb/a/a/a/f/m;->s:Landroid/graphics/RectF;
 
@@ -2079,7 +1934,6 @@
 
     neg-float v6, v6
 
-    .line 117
     :cond_10
     invoke-static {v14, v6}, Ljava/lang/Math;->max(FF)F
 
@@ -2136,14 +1990,12 @@
 
     rem-float v28, v28, v29
 
-    .line 118
     sget v1, Lb/a/a/a/g/i;->d:F
 
     cmpg-float v1, v28, v1
 
     if-gtz v1, :cond_15
 
-    .line 119
     iget-object v0, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     iget v1, v15, Lb/a/a/a/g/e;->c:F
@@ -2158,7 +2010,6 @@
 
     goto :goto_f
 
-    .line 120
     :cond_15
     iget-object v1, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
@@ -2170,7 +2021,6 @@
 
     move v7, v14
 
-    .line 121
     invoke-static {v3, v4}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v13
@@ -2183,7 +2033,6 @@
 
     iget v13, v15, Lb/a/a/a/g/e;->d:F
 
-    .line 122
     invoke-static {v3, v4}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v3
@@ -2194,10 +2043,8 @@
 
     add-float/2addr v13, v5
 
-    .line 123
     invoke-virtual {v1, v2, v13}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 124
     iget-object v1, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     iget-object v2, v8, Lb/a/a/a/f/m;->s:Landroid/graphics/RectF;
@@ -2213,7 +2060,6 @@
 
     rem-float v0, v28, v29
 
-    .line 125
     sget v1, Lb/a/a/a/g/i;->d:F
 
     cmpl-float v0, v0, v1
@@ -2226,14 +2072,12 @@
 
     add-float v26, v26, v28
 
-    .line 126
     iget v0, v15, Lb/a/a/a/g/e;->c:F
 
     mul-float v1, v26, v25
 
     float-to-double v1, v1
 
-    .line 127
     invoke-static {v1, v2}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v3
@@ -2244,10 +2088,8 @@
 
     add-float/2addr v0, v3
 
-    .line 128
     iget v3, v15, Lb/a/a/a/g/e;->d:F
 
-    .line 129
     invoke-static {v1, v2}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v1
@@ -2258,14 +2100,12 @@
 
     add-float/2addr v3, v6
 
-    .line 130
     iget-object v1, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     invoke-virtual {v1, v0, v3}, Landroid/graphics/Path;->lineTo(FF)V
 
     goto :goto_f
 
-    .line 131
     :cond_17
     iget-object v0, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
@@ -2275,14 +2115,12 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Path;->lineTo(FF)V
 
-    .line 132
     :cond_18
     :goto_f
     iget-object v0, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
 
     invoke-virtual {v0}, Landroid/graphics/Path;->close()V
 
-    .line 133
     iget-object v0, v8, Lb/a/a/a/f/m;->q:Landroid/graphics/Canvas;
 
     iget-object v1, v8, Lb/a/a/a/f/m;->r:Landroid/graphics/Path;
@@ -2328,7 +2166,6 @@
 
     goto/16 :goto_2
 
-    .line 134
     :cond_1a
     invoke-static {v15}, Lb/a/a/a/g/e;->a(Lb/a/a/a/g/e;)V
 
@@ -2338,7 +2175,6 @@
 .method public b()Landroid/text/TextPaint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/f/m;->j:Landroid/text/TextPaint;
 
     return-object v0
@@ -2347,10 +2183,8 @@
 .method public b(Landroid/graphics/Canvas;)V
     .locals 3
 
-    .line 2
     invoke-virtual {p0, p1}, Lb/a/a/a/f/m;->e(Landroid/graphics/Canvas;)V
 
-    .line 3
     iget-object v0, p0, Lb/a/a/a/f/m;->p:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -2365,7 +2199,6 @@
 
     invoke-virtual {p1, v0, v1, v1, v2}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 4
     invoke-virtual {p0, p1}, Lb/a/a/a/f/m;->d(Landroid/graphics/Canvas;)V
 
     return-void
@@ -2374,7 +2207,6 @@
 .method public c()Landroid/graphics/Paint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/f/m;->k:Landroid/graphics/Paint;
 
     return-object v0
@@ -2387,56 +2219,48 @@
 
     move-object/from16 v10, p1
 
-    .line 2
     iget-object v0, v9, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getCenterCircleBox()Lb/a/a/a/g/e;
 
     move-result-object v11
 
-    .line 3
     iget-object v0, v9, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getRadius()F
 
     move-result v12
 
-    .line 4
     iget-object v0, v9, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;->getRotationAngle()F
 
     move-result v13
 
-    .line 5
     iget-object v0, v9, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getDrawAngles()[F
 
     move-result-object v14
 
-    .line 6
     iget-object v0, v9, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getAbsoluteAngles()[F
 
     move-result-object v15
 
-    .line 7
     iget-object v0, v9, Lb/a/a/a/f/g;->b:Lb/a/a/a/a/a;
 
     invoke-virtual {v0}, Lb/a/a/a/a/a;->a()F
 
     move-result v16
 
-    .line 8
     iget-object v0, v9, Lb/a/a/a/f/g;->b:Lb/a/a/a/a/a;
 
     invoke-virtual {v0}, Lb/a/a/a/a/a;->b()F
 
     move-result v17
 
-    .line 9
     iget-object v0, v9, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getHoleRadius()F
@@ -2455,7 +2279,6 @@
 
     mul-float v0, v0, v1
 
-    .line 10
     iget-object v1, v9, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v1}, Lcom/github/mikephil/charting/charts/PieChart;->r()Z
@@ -2475,7 +2298,6 @@
     :cond_0
     sub-float v21, v12, v0
 
-    .line 11
     iget-object v0, v9, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/Chart;->getData()Lcom/github/mikephil/charting/data/h;
@@ -2486,29 +2308,24 @@
 
     check-cast v22, Lcom/github/mikephil/charting/data/m;
 
-    .line 12
     invoke-virtual/range {v22 .. v22}, Lcom/github/mikephil/charting/data/h;->c()Ljava/util/List;
 
     move-result-object v8
 
-    .line 13
     invoke-virtual/range {v22 .. v22}, Lcom/github/mikephil/charting/data/m;->l()F
 
     move-result v23
 
-    .line 14
     iget-object v0, v9, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->q()Z
 
     move-result v24
 
-    .line 15
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Canvas;->save()I
 
     const/high16 v0, 0x40a00000    # 5.0f
 
-    .line 16
     invoke-static {v0}, Lb/a/a/a/g/i;->a(F)F
 
     move-result v25
@@ -2519,7 +2336,6 @@
 
     const/4 v7, 0x0
 
-    .line 17
     :goto_0
     invoke-interface {v8}, Ljava/util/List;->size()I
 
@@ -2527,7 +2343,6 @@
 
     if-ge v7, v1, :cond_19
 
-    .line 18
     invoke-interface {v8, v7}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -2536,7 +2351,6 @@
 
     check-cast v6, Lb/a/a/a/e/b/i;
 
-    .line 19
     invoke-interface {v6}, Lb/a/a/a/e/b/e;->k0()Z
 
     move-result v27
@@ -2559,21 +2373,17 @@
 
     goto/16 :goto_11
 
-    .line 20
     :cond_1
     invoke-interface {v6}, Lb/a/a/a/e/b/i;->P()Lcom/github/mikephil/charting/data/PieDataSet$ValuePosition;
 
     move-result-object v5
 
-    .line 21
     invoke-interface {v6}, Lb/a/a/a/e/b/i;->W()Lcom/github/mikephil/charting/data/PieDataSet$ValuePosition;
 
     move-result-object v4
 
-    .line 22
     invoke-virtual {v9, v6}, Lb/a/a/a/f/g;->a(Lb/a/a/a/e/b/e;)V
 
-    .line 23
     iget-object v1, v9, Lb/a/a/a/f/g;->e:Landroid/graphics/Paint;
 
     const-string v2, "Q"
@@ -2586,24 +2396,20 @@
 
     const/high16 v2, 0x40800000    # 4.0f
 
-    .line 24
     invoke-static {v2}, Lb/a/a/a/g/i;->a(F)F
 
     move-result v2
 
     add-float v28, v1, v2
 
-    .line 25
     invoke-interface {v6}, Lb/a/a/a/e/b/e;->E()Lb/a/a/a/c/f;
 
     move-result-object v29
 
-    .line 26
     invoke-interface {v6}, Lb/a/a/a/e/b/e;->q0()I
 
     move-result v3
 
-    .line 27
     iget-object v1, v9, Lb/a/a/a/f/m;->i:Landroid/graphics/Paint;
 
     invoke-interface {v6}, Lb/a/a/a/e/b/i;->K()I
@@ -2612,7 +2418,6 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 28
     iget-object v1, v9, Lb/a/a/a/f/m;->i:Landroid/graphics/Paint;
 
     invoke-interface {v6}, Lb/a/a/a/e/b/i;->M()F
@@ -2625,7 +2430,6 @@
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
-    .line 29
     invoke-virtual {v9, v6}, Lb/a/a/a/f/m;->a(Lb/a/a/a/e/b/i;)F
 
     move-result v30
@@ -2637,7 +2441,6 @@
     :goto_1
     if-ge v2, v3, :cond_18
 
-    .line 30
     invoke-interface {v6, v2}, Lb/a/a/a/e/b/e;->a(I)Lcom/github/mikephil/charting/data/Entry;
 
     move-result-object v0
@@ -2655,12 +2458,10 @@
     :cond_2
     add-int/lit8 v0, v31, -0x1
 
-    .line 31
     aget v0, v15, v0
 
     mul-float v0, v0, v16
 
-    .line 32
     :goto_2
     aget v1, v14, v31
 
@@ -2682,7 +2483,6 @@
 
     add-float/2addr v0, v13
 
-    .line 33
     iget-object v1, v9, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v1}, Lcom/github/mikephil/charting/charts/PieChart;->t()Z
@@ -2701,7 +2501,6 @@
 
     goto :goto_3
 
-    .line 34
     :cond_3
     invoke-virtual/range {v32 .. v32}, Lcom/github/mikephil/charting/data/e;->b()F
 
@@ -2720,7 +2519,6 @@
 
     move-object/from16 v35, v8
 
-    .line 35
     invoke-static {v1, v2}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v7
@@ -2731,7 +2529,6 @@
 
     move-object/from16 v38, v14
 
-    .line 36
     invoke-static {v1, v2}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v13
@@ -2740,7 +2537,6 @@
 
     if-eqz v24, :cond_4
 
-    .line 37
     sget-object v14, Lcom/github/mikephil/charting/data/PieDataSet$ValuePosition;->b:Lcom/github/mikephil/charting/data/PieDataSet$ValuePosition;
 
     if-ne v5, v14, :cond_4
@@ -2755,7 +2551,6 @@
     :goto_4
     if-eqz v27, :cond_5
 
-    .line 38
     sget-object v7, Lcom/github/mikephil/charting/data/PieDataSet$ValuePosition;->b:Lcom/github/mikephil/charting/data/PieDataSet$ValuePosition;
 
     if-ne v4, v7, :cond_5
@@ -2772,7 +2567,6 @@
 
     if-eqz v24, :cond_6
 
-    .line 39
     sget-object v3, Lcom/github/mikephil/charting/data/PieDataSet$ValuePosition;->a:Lcom/github/mikephil/charting/data/PieDataSet$ValuePosition;
 
     if-ne v5, v3, :cond_6
@@ -2787,7 +2581,6 @@
     :goto_6
     if-eqz v27, :cond_7
 
-    .line 40
     sget-object v3, Lcom/github/mikephil/charting/data/PieDataSet$ValuePosition;->a:Lcom/github/mikephil/charting/data/PieDataSet$ValuePosition;
 
     if-ne v4, v3, :cond_7
@@ -2825,19 +2618,16 @@
 
     goto/16 :goto_e
 
-    .line 41
     :cond_9
     :goto_8
     invoke-interface {v6}, Lb/a/a/a/e/b/i;->N()F
 
     move-result v3
 
-    .line 42
     invoke-interface {v6}, Lb/a/a/a/e/b/i;->b0()F
 
     move-result v42
 
-    .line 43
     invoke-interface {v6}, Lb/a/a/a/e/b/i;->i0()F
 
     move-result v43
@@ -2846,7 +2636,6 @@
 
     move-object/from16 v44, v4
 
-    .line 44
     iget-object v4, v9, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v4}, Lcom/github/mikephil/charting/charts/PieChart;->r()Z
@@ -2868,7 +2657,6 @@
     :cond_a
     mul-float v45, v12, v43
 
-    .line 45
     :goto_9
     invoke-interface {v6}, Lb/a/a/a/e/b/i;->Y()Z
 
@@ -2878,7 +2666,6 @@
 
     mul-float v42, v42, v21
 
-    .line 46
     invoke-static {v1, v2}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v1
@@ -2899,14 +2686,12 @@
     :goto_a
     mul-float v1, v45, v8
 
-    .line 47
     iget v2, v11, Lb/a/a/a/g/e;->c:F
 
     add-float/2addr v1, v2
 
     mul-float v45, v45, v13
 
-    .line 48
     iget v4, v11, Lb/a/a/a/g/e;->d:F
 
     add-float v43, v45, v4
@@ -2945,7 +2730,6 @@
 
     sub-float v0, v45, v42
 
-    .line 49
     iget-object v2, v9, Lb/a/a/a/f/g;->e:Landroid/graphics/Paint;
 
     sget-object v3, Landroid/graphics/Paint$Align;->RIGHT:Landroid/graphics/Paint$Align;
@@ -2954,7 +2738,6 @@
 
     if-eqz v14, :cond_c
 
-    .line 50
     iget-object v2, v9, Lb/a/a/a/f/m;->k:Landroid/graphics/Paint;
 
     sget-object v3, Landroid/graphics/Paint$Align;->RIGHT:Landroid/graphics/Paint$Align;
@@ -2973,7 +2756,6 @@
     :cond_d
     add-float v42, v45, v42
 
-    .line 51
     iget-object v0, v9, Lb/a/a/a/f/g;->e:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Align;->LEFT:Landroid/graphics/Paint$Align;
@@ -2982,7 +2764,6 @@
 
     if-eqz v14, :cond_e
 
-    .line 52
     iget-object v0, v9, Lb/a/a/a/f/m;->k:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Align;->LEFT:Landroid/graphics/Paint$Align;
@@ -2994,7 +2775,6 @@
 
     move v4, v0
 
-    .line 53
     :goto_b
     invoke-interface {v6}, Lb/a/a/a/e/b/i;->K()I
 
@@ -3004,7 +2784,6 @@
 
     if-eq v0, v2, :cond_f
 
-    .line 54
     iget-object v3, v9, Lb/a/a/a/f/m;->i:Landroid/graphics/Paint;
 
     move-object/from16 v0, p1
@@ -3031,7 +2810,6 @@
 
     invoke-virtual/range {v0 .. v5}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 55
     iget-object v5, v9, Lb/a/a/a/f/m;->i:Landroid/graphics/Paint;
 
     move/from16 v1, v45
@@ -3062,7 +2840,6 @@
 
     const/4 v5, 0x0
 
-    .line 56
     invoke-interface {v6, v12}, Lb/a/a/a/e/b/e;->c(I)I
 
     move-result v14
@@ -3093,10 +2870,8 @@
 
     move v8, v14
 
-    .line 57
     invoke-virtual/range {v0 .. v8}, Lb/a/a/a/f/g;->a(Landroid/graphics/Canvas;Lb/a/a/a/c/f;FLcom/github/mikephil/charting/data/Entry;IFFI)V
 
-    .line 58
     invoke-virtual/range {v22 .. v22}, Lcom/github/mikephil/charting/data/h;->d()I
 
     move-result v0
@@ -3109,7 +2884,6 @@
 
     if-eqz v0, :cond_12
 
-    .line 59
     invoke-virtual/range {v32 .. v32}, Lcom/github/mikephil/charting/data/PieEntry;->d()Ljava/lang/String;
 
     move-result-object v0
@@ -3135,7 +2909,6 @@
 
     if-eqz v14, :cond_11
 
-    .line 60
     invoke-virtual/range {v22 .. v22}, Lcom/github/mikephil/charting/data/h;->d()I
 
     move-result v0
@@ -3148,7 +2921,6 @@
 
     if-eqz v0, :cond_12
 
-    .line 61
     invoke-virtual/range {v32 .. v32}, Lcom/github/mikephil/charting/data/PieEntry;->d()Ljava/lang/String;
 
     move-result-object v0
@@ -3172,7 +2944,6 @@
 
     move-object/from16 v14, v49
 
-    .line 62
     invoke-interface {v14, v12}, Lb/a/a/a/e/b/e;->c(I)I
 
     move-result v8
@@ -3187,7 +2958,6 @@
 
     move-object/from16 v4, v32
 
-    .line 63
     invoke-virtual/range {v0 .. v8}, Lb/a/a/a/f/g;->a(Landroid/graphics/Canvas;Lb/a/a/a/c/f;FLcom/github/mikephil/charting/data/Entry;IFFI)V
 
     goto :goto_e
@@ -3212,19 +2982,16 @@
     :goto_f
     mul-float v8, v21, v35
 
-    .line 64
     iget v0, v11, Lb/a/a/a/g/e;->c:F
 
     add-float/2addr v8, v0
 
     mul-float v13, v13, v21
 
-    .line 65
     iget v0, v11, Lb/a/a/a/g/e;->d:F
 
     add-float/2addr v13, v0
 
-    .line 66
     iget-object v0, v9, Lb/a/a/a/f/g;->e:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Align;->CENTER:Landroid/graphics/Paint$Align;
@@ -3237,7 +3004,6 @@
 
     const/4 v5, 0x0
 
-    .line 67
     invoke-interface {v14, v12}, Lb/a/a/a/e/b/e;->c(I)I
 
     move-result v35
@@ -3264,7 +3030,6 @@
 
     invoke-virtual/range {v0 .. v8}, Lb/a/a/a/f/g;->a(Landroid/graphics/Canvas;Lb/a/a/a/c/f;FLcom/github/mikephil/charting/data/Entry;IFFI)V
 
-    .line 68
     invoke-virtual/range {v22 .. v22}, Lcom/github/mikephil/charting/data/h;->d()I
 
     move-result v0
@@ -3277,7 +3042,6 @@
 
     if-eqz v0, :cond_17
 
-    .line 69
     invoke-virtual/range {v32 .. v32}, Lcom/github/mikephil/charting/data/PieEntry;->d()Ljava/lang/String;
 
     move-result-object v0
@@ -3295,7 +3059,6 @@
 
     if-eqz v41, :cond_16
 
-    .line 70
     invoke-virtual/range {v22 .. v22}, Lcom/github/mikephil/charting/data/h;->d()I
 
     move-result v0
@@ -3308,7 +3071,6 @@
 
     if-eqz v0, :cond_17
 
-    .line 71
     invoke-virtual/range {v32 .. v32}, Lcom/github/mikephil/charting/data/PieEntry;->d()Ljava/lang/String;
 
     move-result-object v0
@@ -3330,7 +3092,6 @@
 
     add-float v7, v13, v0
 
-    .line 72
     invoke-interface {v14, v12}, Lb/a/a/a/e/b/e;->c(I)I
 
     move-result v8
@@ -3407,11 +3168,9 @@
 
     goto/16 :goto_0
 
-    .line 73
     :cond_19
     invoke-static {v11}, Lb/a/a/a/g/e;->a(Lb/a/a/a/g/e;)V
 
-    .line 74
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Canvas;->restore()V
 
     return-void
@@ -3420,7 +3179,6 @@
 .method public d()Landroid/graphics/Paint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/f/m;->g:Landroid/graphics/Paint;
 
     return-object v0
@@ -3433,14 +3191,12 @@
 
     move-object/from16 v1, p1
 
-    .line 2
     iget-object v2, v0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v2}, Lcom/github/mikephil/charting/charts/PieChart;->getCenterText()Ljava/lang/CharSequence;
 
     move-result-object v4
 
-    .line 3
     iget-object v2, v0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v2}, Lcom/github/mikephil/charting/charts/PieChart;->p()Z
@@ -3451,35 +3207,30 @@
 
     if-eqz v4, :cond_5
 
-    .line 4
     iget-object v2, v0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v2}, Lcom/github/mikephil/charting/charts/PieChart;->getCenterCircleBox()Lb/a/a/a/g/e;
 
     move-result-object v2
 
-    .line 5
     iget-object v3, v0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v3}, Lcom/github/mikephil/charting/charts/PieChart;->getCenterTextOffset()Lb/a/a/a/g/e;
 
     move-result-object v13
 
-    .line 6
     iget v3, v2, Lb/a/a/a/g/e;->c:F
 
     iget v5, v13, Lb/a/a/a/g/e;->c:F
 
     add-float/2addr v3, v5
 
-    .line 7
     iget v5, v2, Lb/a/a/a/g/e;->d:F
 
     iget v6, v13, Lb/a/a/a/g/e;->d:F
 
     add-float/2addr v5, v6
 
-    .line 8
     iget-object v6, v0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v6}, Lcom/github/mikephil/charting/charts/PieChart;->r()Z
@@ -3500,7 +3251,6 @@
 
     iget-object v6, v0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
-    .line 9
     invoke-virtual {v6}, Lcom/github/mikephil/charting/charts/PieChart;->getRadius()F
 
     move-result v6
@@ -3520,12 +3270,10 @@
     :cond_0
     iget-object v6, v0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
-    .line 10
     invoke-virtual {v6}, Lcom/github/mikephil/charting/charts/PieChart;->getRadius()F
 
     move-result v6
 
-    .line 11
     :goto_0
     iget-object v8, v0, Lb/a/a/a/f/m;->o:[Landroid/graphics/RectF;
 
@@ -3535,33 +3283,26 @@
 
     sub-float v9, v3, v6
 
-    .line 12
     iput v9, v14, Landroid/graphics/RectF;->left:F
 
     sub-float v9, v5, v6
 
-    .line 13
     iput v9, v14, Landroid/graphics/RectF;->top:F
 
     add-float/2addr v3, v6
 
-    .line 14
     iput v3, v14, Landroid/graphics/RectF;->right:F
 
     add-float/2addr v5, v6
 
-    .line 15
     iput v5, v14, Landroid/graphics/RectF;->bottom:F
 
     const/4 v3, 0x1
 
-    .line 16
     aget-object v15, v8, v3
 
-    .line 17
     invoke-virtual {v15, v14}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
 
-    .line 18
     iget-object v3, v0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v3}, Lcom/github/mikephil/charting/charts/PieChart;->getCenterTextRadiusPercent()F
@@ -3580,7 +3321,6 @@
 
     if-lez v9, :cond_1
 
-    .line 19
     invoke-virtual {v15}, Landroid/graphics/RectF;->width()F
 
     move-result v5
@@ -3595,7 +3335,6 @@
 
     div-float v5, v5, v16
 
-    .line 20
     invoke-virtual {v15}, Landroid/graphics/RectF;->height()F
 
     move-result v6
@@ -3610,10 +3349,8 @@
 
     div-float v6, v6, v16
 
-    .line 21
     invoke-virtual {v15, v5, v6}, Landroid/graphics/RectF;->inset(FF)V
 
-    .line 22
     :cond_1
     iget-object v3, v0, Lb/a/a/a/f/m;->m:Ljava/lang/CharSequence;
 
@@ -3638,24 +3375,20 @@
 
     goto :goto_2
 
-    .line 23
     :cond_3
     :goto_1
     iget-object v3, v0, Lb/a/a/a/f/m;->n:Landroid/graphics/RectF;
 
     invoke-virtual {v3, v15}, Landroid/graphics/RectF;->set(Landroid/graphics/RectF;)V
 
-    .line 24
     iput-object v4, v0, Lb/a/a/a/f/m;->m:Ljava/lang/CharSequence;
 
-    .line 25
     iget-object v3, v0, Lb/a/a/a/f/m;->n:Landroid/graphics/RectF;
 
     invoke-virtual {v3}, Landroid/graphics/RectF;->width()F
 
     move-result v3
 
-    .line 26
     new-instance v12, Landroid/text/StaticLayout;
 
     const/4 v5, 0x0
@@ -3668,7 +3401,6 @@
 
     float-to-double v8, v3
 
-    .line 27
     invoke-static {v8, v9}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v8
@@ -3701,7 +3433,6 @@
 
     iput-object v13, v0, Lb/a/a/a/f/m;->l:Landroid/text/StaticLayout;
 
-    .line 28
     :goto_2
     iget-object v3, v0, Lb/a/a/a/f/m;->l:Landroid/text/StaticLayout;
 
@@ -3711,31 +3442,24 @@
 
     int-to-float v3, v3
 
-    .line 29
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 30
     sget v4, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v5, 0x12
 
     if-lt v4, v5, :cond_4
 
-    .line 31
     iget-object v4, v0, Lb/a/a/a/f/m;->u:Landroid/graphics/Path;
 
-    .line 32
     invoke-virtual {v4}, Landroid/graphics/Path;->reset()V
 
-    .line 33
     sget-object v5, Landroid/graphics/Path$Direction;->CW:Landroid/graphics/Path$Direction;
 
     invoke-virtual {v4, v14, v5}, Landroid/graphics/Path;->addOval(Landroid/graphics/RectF;Landroid/graphics/Path$Direction;)V
 
-    .line 34
     invoke-virtual {v1, v4}, Landroid/graphics/Canvas;->clipPath(Landroid/graphics/Path;)Z
 
-    .line 35
     :cond_4
     iget v4, v15, Landroid/graphics/RectF;->left:F
 
@@ -3753,18 +3477,14 @@
 
     invoke-virtual {v1, v4, v5}, Landroid/graphics/Canvas;->translate(FF)V
 
-    .line 36
     iget-object v3, v0, Lb/a/a/a/f/m;->l:Landroid/text/StaticLayout;
 
     invoke-virtual {v3, v1}, Landroid/text/StaticLayout;->draw(Landroid/graphics/Canvas;)V
 
-    .line 37
     invoke-virtual/range {p1 .. p1}, Landroid/graphics/Canvas;->restore()V
 
-    .line 38
     invoke-static {v2}, Lb/a/a/a/g/e;->a(Lb/a/a/a/g/e;)V
 
-    .line 39
     invoke-static/range {v18 .. v18}, Lb/a/a/a/g/e;->a(Lb/a/a/a/g/e;)V
 
     :cond_5
@@ -3774,7 +3494,6 @@
 .method public e()Landroid/graphics/Paint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/f/m;->h:Landroid/graphics/Paint;
 
     return-object v0
@@ -3783,7 +3502,6 @@
 .method protected e(Landroid/graphics/Canvas;)V
     .locals 7
 
-    .line 2
     iget-object p1, p0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {p1}, Lcom/github/mikephil/charting/charts/PieChart;->r()Z
@@ -3796,14 +3514,12 @@
 
     if-eqz p1, :cond_2
 
-    .line 3
     iget-object p1, p0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {p1}, Lcom/github/mikephil/charting/charts/PieChart;->getRadius()F
 
     move-result p1
 
-    .line 4
     iget-object v0, p0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v0}, Lcom/github/mikephil/charting/charts/PieChart;->getHoleRadius()F
@@ -3816,14 +3532,12 @@
 
     mul-float v0, v0, p1
 
-    .line 5
     iget-object v2, p0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v2}, Lcom/github/mikephil/charting/charts/PieChart;->getCenterCircleBox()Lb/a/a/a/g/e;
 
     move-result-object v2
 
-    .line 6
     iget-object v3, p0, Lb/a/a/a/f/m;->g:Landroid/graphics/Paint;
 
     invoke-virtual {v3}, Landroid/graphics/Paint;->getColor()I
@@ -3836,7 +3550,6 @@
 
     if-lez v3, :cond_0
 
-    .line 7
     iget-object v3, p0, Lb/a/a/a/f/m;->q:Landroid/graphics/Canvas;
 
     iget v4, v2, Lb/a/a/a/g/e;->c:F
@@ -3847,7 +3560,6 @@
 
     invoke-virtual {v3, v4, v5, v0, v6}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 8
     :cond_0
     iget-object v3, p0, Lb/a/a/a/f/m;->h:Landroid/graphics/Paint;
 
@@ -3863,7 +3575,6 @@
 
     iget-object v3, p0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
-    .line 9
     invoke-virtual {v3}, Lcom/github/mikephil/charting/charts/PieChart;->getTransparentCircleRadius()F
 
     move-result v3
@@ -3878,14 +3589,12 @@
 
     if-lez v3, :cond_1
 
-    .line 10
     iget-object v3, p0, Lb/a/a/a/f/m;->h:Landroid/graphics/Paint;
 
     invoke-virtual {v3}, Landroid/graphics/Paint;->getAlpha()I
 
     move-result v3
 
-    .line 11
     iget-object v4, p0, Lb/a/a/a/f/m;->f:Lcom/github/mikephil/charting/charts/PieChart;
 
     invoke-virtual {v4}, Lcom/github/mikephil/charting/charts/PieChart;->getTransparentCircleRadius()F
@@ -3896,7 +3605,6 @@
 
     mul-float p1, p1, v4
 
-    .line 12
     iget-object v1, p0, Lb/a/a/a/f/m;->h:Landroid/graphics/Paint;
 
     int-to-float v4, v3
@@ -3921,12 +3629,10 @@
 
     invoke-virtual {v1, v4}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 13
     iget-object v1, p0, Lb/a/a/a/f/m;->t:Landroid/graphics/Path;
 
     invoke-virtual {v1}, Landroid/graphics/Path;->reset()V
 
-    .line 14
     iget-object v1, p0, Lb/a/a/a/f/m;->t:Landroid/graphics/Path;
 
     iget v4, v2, Lb/a/a/a/g/e;->c:F
@@ -3937,7 +3643,6 @@
 
     invoke-virtual {v1, v4, v5, p1, v6}, Landroid/graphics/Path;->addCircle(FFFLandroid/graphics/Path$Direction;)V
 
-    .line 15
     iget-object p1, p0, Lb/a/a/a/f/m;->t:Landroid/graphics/Path;
 
     iget v1, v2, Lb/a/a/a/g/e;->c:F
@@ -3948,7 +3653,6 @@
 
     invoke-virtual {p1, v1, v4, v0, v5}, Landroid/graphics/Path;->addCircle(FFFLandroid/graphics/Path$Direction;)V
 
-    .line 16
     iget-object p1, p0, Lb/a/a/a/f/m;->q:Landroid/graphics/Canvas;
 
     iget-object v0, p0, Lb/a/a/a/f/m;->t:Landroid/graphics/Path;
@@ -3957,12 +3661,10 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
 
-    .line 17
     iget-object p1, p0, Lb/a/a/a/f/m;->h:Landroid/graphics/Paint;
 
     invoke-virtual {p1, v3}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 18
     :cond_1
     invoke-static {v2}, Lb/a/a/a/g/e;->a(Lb/a/a/a/g/e;)V
 
@@ -3973,26 +3675,21 @@
 .method public f()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lb/a/a/a/f/m;->q:Landroid/graphics/Canvas;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/graphics/Canvas;->setBitmap(Landroid/graphics/Bitmap;)V
 
-    .line 3
     iput-object v1, p0, Lb/a/a/a/f/m;->q:Landroid/graphics/Canvas;
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lb/a/a/a/f/m;->p:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
 
     move-result-object v0
@@ -4001,12 +3698,10 @@
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->recycle()V
 
-    .line 6
     iget-object v0, p0, Lb/a/a/a/f/m;->p:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->clear()V
 
-    .line 7
     iput-object v1, p0, Lb/a/a/a/f/m;->p:Ljava/lang/ref/WeakReference;
 
     :cond_1

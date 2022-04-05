@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/view/RxView__ViewTreeObserverPreDrawObservableKt;
 .super Ljava/lang/Object;
-.source "ViewTreeObserverPreDrawObservable.kt"
 
 
 # annotations
@@ -71,7 +70,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/view/ViewTreeObserverPreDrawObservable;
 
     invoke-direct {v0, p0, p1}, Lcom/jakewharton/rxbinding3/view/ViewTreeObserverPreDrawObservable;-><init>(Landroid/view/View;Lkotlin/jvm/a/a;)V

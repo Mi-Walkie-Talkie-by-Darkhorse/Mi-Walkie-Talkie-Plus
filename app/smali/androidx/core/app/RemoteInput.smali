@@ -1,6 +1,5 @@
 .class public final Landroidx/core/app/RemoteInput;
 .super Ljava/lang/Object;
-.source "RemoteInput.java"
 
 
 # annotations
@@ -19,10 +18,8 @@
         value = 0x14
     .end annotation
 
-    .line 4
     new-instance v0, Landroid/app/RemoteInput$Builder;
 
-    .line 5
     invoke-virtual {p0}, Landroidx/core/app/RemoteInput;->a()Ljava/lang/String;
 
     const/4 p0, 0x0
@@ -42,7 +39,6 @@
 
     return-object v0
 
-    .line 1
     :cond_0
     array-length v1, p0
 
@@ -50,14 +46,12 @@
 
     const/4 v2, 0x0
 
-    .line 2
     array-length v3, p0
 
     if-gtz v3, :cond_1
 
     return-object v1
 
-    .line 3
     :cond_1
     aget-object p0, p0, v2
 

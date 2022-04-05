@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/IVideo;
 .super Ljava/lang/Object;
-.source "IVideo.java"
 
 
 # virtual methods

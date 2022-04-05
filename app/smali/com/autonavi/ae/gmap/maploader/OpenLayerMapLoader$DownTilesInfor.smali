@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/maploader/OpenLayerMapLoader$DownTilesInfor;
 .super Ljava/lang/Object;
-.source "OpenLayerMapLoader.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method protected constructor <init>(Lcom/autonavi/ae/gmap/maploader/OpenLayerMapLoader;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/maploader/OpenLayerMapLoader$DownTilesInfor;->this$0:Lcom/autonavi/ae/gmap/maploader/OpenLayerMapLoader;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

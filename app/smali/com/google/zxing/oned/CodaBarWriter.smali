@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/oned/CodaBarWriter;
 .super Lcom/google/zxing/oned/OneDimensionalCodeWriter;
-.source "CodaBarWriter.java"
 
 
 # static fields
@@ -21,28 +20,24 @@
 
     new-array v1, v0, [C
 
-    .line 1
     fill-array-data v1, :array_0
 
     sput-object v1, Lcom/google/zxing/oned/CodaBarWriter;->START_END_CHARS:[C
 
     new-array v2, v0, [C
 
-    .line 2
     fill-array-data v2, :array_1
 
     sput-object v2, Lcom/google/zxing/oned/CodaBarWriter;->ALT_START_END_CHARS:[C
 
     new-array v0, v0, [C
 
-    .line 3
     fill-array-data v0, :array_2
 
     sput-object v0, Lcom/google/zxing/oned/CodaBarWriter;->CHARS_WHICH_ARE_TEN_LENGTH_EACH_AFTER_DECODED:[C
 
     const/4 v0, 0x0
 
-    .line 4
     aget-char v0, v1, v0
 
     sput-char v0, Lcom/google/zxing/oned/CodaBarWriter;->DEFAULT_GUARD:C
@@ -77,7 +72,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/oned/OneDimensionalCodeWriter;-><init>()V
 
     return-void
@@ -88,7 +82,6 @@
 .method public encode(Ljava/lang/String;)[Z
     .locals 10
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -101,7 +94,6 @@
 
     if-ge v0, v3, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -122,7 +114,6 @@
 
     goto/16 :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {p1, v1}, Ljava/lang/String;->charAt(I)C
 
@@ -132,7 +123,6 @@
 
     move-result v0
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -147,28 +137,24 @@
 
     move-result v3
 
-    .line 5
     sget-object v4, Lcom/google/zxing/oned/CodaBarWriter;->START_END_CHARS:[C
 
     invoke-static {v4, v0}, Lcom/google/zxing/oned/CodaBarReader;->arrayContains([CC)Z
 
     move-result v4
 
-    .line 6
     sget-object v5, Lcom/google/zxing/oned/CodaBarWriter;->START_END_CHARS:[C
 
     invoke-static {v5, v3}, Lcom/google/zxing/oned/CodaBarReader;->arrayContains([CC)Z
 
     move-result v5
 
-    .line 7
     sget-object v6, Lcom/google/zxing/oned/CodaBarWriter;->ALT_START_END_CHARS:[C
 
     invoke-static {v6, v0}, Lcom/google/zxing/oned/CodaBarReader;->arrayContains([CC)Z
 
     move-result v0
 
-    .line 8
     sget-object v6, Lcom/google/zxing/oned/CodaBarWriter;->ALT_START_END_CHARS:[C
 
     invoke-static {v6, v3}, Lcom/google/zxing/oned/CodaBarReader;->arrayContains([CC)Z
@@ -183,7 +169,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -208,7 +193,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_3
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -231,7 +215,6 @@
 
     if-nez v3, :cond_16
 
-    .line 11
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -255,7 +238,6 @@
 
     const/4 v3, 0x1
 
-    .line 12
     :goto_1
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -265,7 +247,6 @@
 
     if-ge v3, v4, :cond_8
 
-    .line 13
     invoke-virtual {p1, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -294,7 +275,6 @@
 
     goto :goto_2
 
-    .line 14
     :cond_5
     sget-object v4, Lcom/google/zxing/oned/CodaBarWriter;->CHARS_WHICH_ARE_TEN_LENGTH_EACH_AFTER_DECODED:[C
 
@@ -312,7 +292,6 @@
 
     goto :goto_3
 
-    .line 15
     :cond_6
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -349,7 +328,6 @@
 
     goto :goto_1
 
-    .line 16
     :cond_8
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -359,14 +337,12 @@
 
     add-int/2addr v0, v3
 
-    .line 17
     new-array v0, v0, [Z
 
     const/4 v3, 0x0
 
     const/4 v4, 0x0
 
-    .line 18
     :goto_4
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -374,7 +350,6 @@
 
     if-ge v3, v5, :cond_15
 
-    .line 19
     invoke-virtual {p1, v3}, Ljava/lang/String;->charAt(I)C
 
     move-result v5
@@ -385,7 +360,6 @@
 
     if-eqz v3, :cond_9
 
-    .line 20
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v6
@@ -435,7 +409,6 @@
     :goto_5
     const/4 v6, 0x0
 
-    .line 21
     :goto_6
     sget-object v7, Lcom/google/zxing/oned/CodaBarReader;->ALPHABET:[C
 
@@ -443,12 +416,10 @@
 
     if-ge v6, v8, :cond_10
 
-    .line 22
     aget-char v7, v7, v6
 
     if-ne v5, v7, :cond_f
 
-    .line 23
     sget-object v5, Lcom/google/zxing/oned/CodaBarReader;->CHARACTER_ENCODINGS:[I
 
     aget v5, v5, v6
@@ -476,7 +447,6 @@
 
     if-ge v6, v9, :cond_13
 
-    .line 24
     aput-boolean v7, v0, v4
 
     add-int/lit8 v4, v4, 0x1
@@ -506,7 +476,6 @@
 
     goto :goto_8
 
-    .line 25
     :cond_13
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -516,7 +485,6 @@
 
     if-ge v3, v5, :cond_14
 
-    .line 26
     aput-boolean v1, v0, v4
 
     add-int/lit8 v4, v4, 0x1
@@ -529,7 +497,6 @@
     :cond_15
     return-object v0
 
-    .line 27
     :cond_16
     new-instance v0, Ljava/lang/IllegalArgumentException;
 

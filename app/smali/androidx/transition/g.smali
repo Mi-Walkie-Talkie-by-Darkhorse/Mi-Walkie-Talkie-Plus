@@ -1,6 +1,5 @@
 .class Landroidx/transition/g;
 .super Landroid/widget/FrameLayout;
-.source "GhostViewHolder.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Landroid/view/ViewGroup;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -33,18 +31,14 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/widget/FrameLayout;->setClipChildren(Z)V
 
-    .line 3
     iput-object p1, p0, Landroidx/transition/g;->a:Landroid/view/ViewGroup;
 
-    .line 4
     sget v0, Landroidx/transition/R$id;->ghost_view_holder:I
 
     invoke-virtual {p1, v0, p0}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
 
-    .line 5
     iget-object p1, p0, Landroidx/transition/g;->a:Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroidx/transition/d0;->a(Landroid/view/ViewGroup;)Landroidx/transition/c0;
@@ -55,7 +49,6 @@
 
     const/4 p1, 0x1
 
-    .line 6
     iput-boolean p1, p0, Landroidx/transition/g;->b:Z
 
     return-void
@@ -72,12 +65,10 @@
         }
     .end annotation
 
-    .line 12
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 13
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getChildCount()I
 
     move-result v1
@@ -91,22 +82,18 @@
 
     add-int v3, v2, v1
 
-    .line 14
     div-int/lit8 v3, v3, 0x2
 
-    .line 15
     invoke-virtual {p0, v3}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v4
 
     check-cast v4, Landroidx/transition/i;
 
-    .line 16
     iget-object v4, v4, Landroidx/transition/i;->c:Landroid/view/View;
 
     invoke-static {v4, v0}, Landroidx/transition/g;->a(Landroid/view/View;Ljava/util/ArrayList;)V
 
-    .line 17
     invoke-static {p1, v0}, Landroidx/transition/g;->a(Ljava/util/ArrayList;Ljava/util/ArrayList;)Z
 
     move-result v4
@@ -124,7 +111,6 @@
 
     move v1, v3
 
-    .line 18
     :goto_1
     invoke-virtual {v0}, Ljava/util/ArrayList;->clear()V
 
@@ -141,7 +127,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroidx/transition/R$id;->ghost_view_holder:I
 
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->getTag(I)Ljava/lang/Object;
@@ -165,22 +150,18 @@
         }
     .end annotation
 
-    .line 26
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
-    .line 27
     instance-of v1, v0, Landroid/view/ViewGroup;
 
     if-eqz v1, :cond_0
 
-    .line 28
     check-cast v0, Landroid/view/View;
 
     invoke-static {v0, p1}, Landroidx/transition/g;->a(Landroid/view/View;Ljava/util/ArrayList;)V
 
-    .line 29
     :cond_0
     invoke-virtual {p1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -190,19 +171,16 @@
 .method private static a(Landroid/view/View;Landroid/view/View;)Z
     .locals 6
 
-    .line 30
     invoke-virtual {p0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
     move-result-object v0
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    .line 31
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v1
 
-    .line 32
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/4 v3, 0x0
@@ -213,7 +191,6 @@
 
     if-lt v2, v5, :cond_1
 
-    .line 33
     invoke-virtual {p0}, Landroid/view/View;->getZ()F
 
     move-result v2
@@ -226,7 +203,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 34
     invoke-virtual {p0}, Landroid/view/View;->getZ()F
 
     move-result p0
@@ -250,12 +226,10 @@
     :goto_0
     if-ge v2, v1, :cond_4
 
-    .line 35
     invoke-static {v0, v2}, Landroidx/transition/d0;->a(Landroid/view/ViewGroup;I)I
 
     move-result v5
 
-    .line 36
     invoke-virtual {v0, v5}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v5
@@ -296,7 +270,6 @@
         }
     .end annotation
 
-    .line 19
     invoke-virtual {p0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v0
@@ -313,7 +286,6 @@
 
     const/4 v0, 0x0
 
-    .line 20
     invoke-virtual {p0, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -326,7 +298,6 @@
 
     goto :goto_1
 
-    .line 21
     :cond_0
     invoke-virtual {p0}, Ljava/util/ArrayList;->size()I
 
@@ -345,14 +316,12 @@
     :goto_0
     if-ge v3, v2, :cond_2
 
-    .line 22
     invoke-virtual {p0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroid/view/View;
 
-    .line 23
     invoke-virtual {p1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -361,7 +330,6 @@
 
     if-eq v4, v5, :cond_1
 
-    .line 24
     invoke-static {v4, v5}, Landroidx/transition/g;->a(Landroid/view/View;Landroid/view/View;)Z
 
     move-result p0
@@ -373,7 +341,6 @@
 
     goto :goto_0
 
-    .line 25
     :cond_2
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -396,12 +363,10 @@
 .method a()V
     .locals 2
 
-    .line 2
     iget-boolean v0, p0, Landroidx/transition/g;->b:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Landroidx/transition/g;->a:Landroid/view/ViewGroup;
 
     invoke-static {v0}, Landroidx/transition/d0;->a(Landroid/view/ViewGroup;)Landroidx/transition/c0;
@@ -410,7 +375,6 @@
 
     invoke-interface {v0, p0}, Landroidx/transition/c0;->remove(Landroid/view/View;)V
 
-    .line 4
     iget-object v0, p0, Landroidx/transition/g;->a:Landroid/view/ViewGroup;
 
     invoke-static {v0}, Landroidx/transition/d0;->a(Landroid/view/ViewGroup;)Landroidx/transition/c0;
@@ -421,7 +385,6 @@
 
     return-void
 
-    .line 5
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 
@@ -435,24 +398,20 @@
 .method a(Landroidx/transition/i;)V
     .locals 2
 
-    .line 6
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 7
     iget-object v1, p1, Landroidx/transition/i;->c:Landroid/view/View;
 
     invoke-static {v1, v0}, Landroidx/transition/g;->a(Landroid/view/View;Ljava/util/ArrayList;)V
 
-    .line 8
     invoke-direct {p0, v0}, Landroidx/transition/g;->a(Ljava/util/ArrayList;)I
 
     move-result v0
 
     if-ltz v0, :cond_1
 
-    .line 9
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getChildCount()I
 
     move-result v1
@@ -461,13 +420,11 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     invoke-virtual {p0, p1, v0}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;I)V
 
     goto :goto_1
 
-    .line 11
     :cond_1
     :goto_0
     invoke-virtual {p0, p1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
@@ -479,17 +436,14 @@
 .method public onViewAdded(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/transition/g;->b:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onViewAdded(Landroid/view/View;)V
 
     return-void
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -503,10 +457,8 @@
 .method public onViewRemoved(Landroid/view/View;)V
     .locals 3
 
-    .line 1
     invoke-super {p0, p1}, Landroid/widget/FrameLayout;->onViewRemoved(Landroid/view/View;)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getChildCount()I
 
     move-result v0
@@ -523,7 +475,6 @@
 
     if-eq v0, p1, :cond_1
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/widget/FrameLayout;->getChildCount()I
 
@@ -531,7 +482,6 @@
 
     if-nez p1, :cond_2
 
-    .line 4
     :cond_1
     iget-object p1, p0, Landroidx/transition/g;->a:Landroid/view/ViewGroup;
 
@@ -541,7 +491,6 @@
 
     invoke-virtual {p1, v0, v2}, Landroid/view/ViewGroup;->setTag(ILjava/lang/Object;)V
 
-    .line 5
     iget-object p1, p0, Landroidx/transition/g;->a:Landroid/view/ViewGroup;
 
     invoke-static {p1}, Landroidx/transition/d0;->a(Landroid/view/ViewGroup;)Landroidx/transition/c0;
@@ -550,7 +499,6 @@
 
     invoke-interface {p1, p0}, Landroidx/transition/c0;->remove(Landroid/view/View;)V
 
-    .line 6
     iput-boolean v1, p0, Landroidx/transition/g;->b:Z
 
     :cond_2

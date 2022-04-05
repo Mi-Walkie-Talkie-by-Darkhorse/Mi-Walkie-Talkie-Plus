@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/core/graphics/l$c;
 .super Ljava/lang/Object;
-.source "TypefaceCompatBaseImpl.java"
 
 
 # annotations

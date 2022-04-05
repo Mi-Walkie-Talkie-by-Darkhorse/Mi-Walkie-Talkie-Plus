@@ -1,6 +1,5 @@
 .class Lcom/google/common/base/Predicates$ContainsPatternFromStringPredicate;
 .super Lcom/google/common/base/Predicates$ContainsPatternPredicate;
-.source "Predicates.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object p1
@@ -41,7 +39,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/Predicates$ContainsPatternPredicate;->pattern:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0}, Ljava/util/regex/Pattern;->pattern()Ljava/lang/String;

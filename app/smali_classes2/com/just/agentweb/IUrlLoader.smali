@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/IUrlLoader;
 .super Ljava/lang/Object;
-.source "IUrlLoader.java"
 
 
 # virtual methods

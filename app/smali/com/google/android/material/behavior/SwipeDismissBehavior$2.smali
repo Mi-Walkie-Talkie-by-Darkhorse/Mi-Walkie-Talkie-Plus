@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/behavior/SwipeDismissBehavior$2;
 .super Ljava/lang/Object;
-.source "SwipeDismissBehavior.java"
 
 # interfaces
 .implements Landroidx/core/view/accessibility/e;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/behavior/SwipeDismissBehavior;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior$2;->this$0:Lcom/google/android/material/behavior/SwipeDismissBehavior;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -46,7 +44,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior$2;->this$0:Lcom/google/android/material/behavior/SwipeDismissBehavior;
 
     invoke-virtual {p2, p1}, Lcom/google/android/material/behavior/SwipeDismissBehavior;->canSwipeDismissView(Landroid/view/View;)Z
@@ -57,7 +54,6 @@
 
     if-eqz p2, :cond_6
 
-    .line 2
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->s(Landroid/view/View;)I
 
     move-result p2
@@ -73,7 +69,6 @@
     :cond_0
     const/4 p2, 0x0
 
-    .line 3
     :goto_0
     iget-object v2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior$2;->this$0:Lcom/google/android/material/behavior/SwipeDismissBehavior;
 
@@ -95,7 +90,6 @@
     :cond_2
     const/4 v0, 0x1
 
-    .line 4
     :cond_3
     invoke-virtual {p1}, Landroid/view/View;->getWidth()I
 
@@ -105,23 +99,19 @@
 
     neg-int p2, p2
 
-    .line 5
     :cond_4
     invoke-static {p1, p2}, Landroidx/core/view/ViewCompat;->e(Landroid/view/View;I)V
 
     const/4 p2, 0x0
 
-    .line 6
     invoke-virtual {p1, p2}, Landroid/view/View;->setAlpha(F)V
 
-    .line 7
     iget-object p2, p0, Lcom/google/android/material/behavior/SwipeDismissBehavior$2;->this$0:Lcom/google/android/material/behavior/SwipeDismissBehavior;
 
     iget-object p2, p2, Lcom/google/android/material/behavior/SwipeDismissBehavior;->listener:Lcom/google/android/material/behavior/SwipeDismissBehavior$OnDismissListener;
 
     if-eqz p2, :cond_5
 
-    .line 8
     invoke-interface {p2, p1}, Lcom/google/android/material/behavior/SwipeDismissBehavior$OnDismissListener;->onDismiss(Landroid/view/View;)V
 
     :cond_5

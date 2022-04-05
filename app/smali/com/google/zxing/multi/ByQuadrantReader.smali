@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/multi/ByQuadrantReader;
 .super Ljava/lang/Object;
-.source "ByQuadrantReader.java"
 
 # interfaces
 .implements Lcom/google/zxing/Reader;
@@ -14,10 +13,8 @@
 .method public constructor <init>(Lcom/google/zxing/Reader;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/zxing/multi/ByQuadrantReader;->delegate:Lcom/google/zxing/Reader;
 
     return-void
@@ -30,16 +27,13 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     array-length v1, p0
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     aget-object v1, p0, v0
 
-    .line 3
     new-instance v2, Lcom/google/zxing/ResultPoint;
 
     invoke-virtual {v1}, Lcom/google/zxing/ResultPoint;->getX()F
@@ -84,7 +78,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/google/zxing/multi/ByQuadrantReader;->decode(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;)Lcom/google/zxing/Result;
 
     move-result-object p1
@@ -113,25 +106,20 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/zxing/BinaryBitmap;->getWidth()I
 
     move-result v0
 
-    .line 3
     invoke-virtual {p1}, Lcom/google/zxing/BinaryBitmap;->getHeight()I
 
     move-result v1
 
-    .line 4
     div-int/lit8 v0, v0, 0x2
 
-    .line 5
     div-int/lit8 v1, v1, 0x2
 
     const/4 v2, 0x0
 
-    .line 6
     :try_start_0
     iget-object v3, p0, Lcom/google/zxing/multi/ByQuadrantReader;->delegate:Lcom/google/zxing/Reader;
 
@@ -147,7 +135,6 @@
 
     return-object p1
 
-    .line 7
     :catch_0
     :try_start_1
     iget-object v3, p0, Lcom/google/zxing/multi/ByQuadrantReader;->delegate:Lcom/google/zxing/Reader;
@@ -160,7 +147,6 @@
 
     move-result-object v3
 
-    .line 8
     invoke-virtual {v3}, Lcom/google/zxing/Result;->getResultPoints()[Lcom/google/zxing/ResultPoint;
 
     move-result-object v4
@@ -171,7 +157,6 @@
 
     return-object v3
 
-    .line 9
     :catch_1
     :try_start_2
     iget-object v3, p0, Lcom/google/zxing/multi/ByQuadrantReader;->delegate:Lcom/google/zxing/Reader;
@@ -184,7 +169,6 @@
 
     move-result-object v3
 
-    .line 10
     invoke-virtual {v3}, Lcom/google/zxing/Result;->getResultPoints()[Lcom/google/zxing/ResultPoint;
 
     move-result-object v4
@@ -195,7 +179,6 @@
 
     return-object v3
 
-    .line 11
     :catch_2
     :try_start_3
     iget-object v2, p0, Lcom/google/zxing/multi/ByQuadrantReader;->delegate:Lcom/google/zxing/Reader;
@@ -208,7 +191,6 @@
 
     move-result-object v2
 
-    .line 12
     invoke-virtual {v2}, Lcom/google/zxing/Result;->getResultPoints()[Lcom/google/zxing/ResultPoint;
 
     move-result-object v3
@@ -219,26 +201,21 @@
 
     return-object v2
 
-    .line 13
     :catch_3
     div-int/lit8 v2, v0, 0x2
 
-    .line 14
     div-int/lit8 v3, v1, 0x2
 
-    .line 15
     invoke-virtual {p1, v2, v3, v0, v1}, Lcom/google/zxing/BinaryBitmap;->crop(IIII)Lcom/google/zxing/BinaryBitmap;
 
     move-result-object p1
 
-    .line 16
     iget-object v0, p0, Lcom/google/zxing/multi/ByQuadrantReader;->delegate:Lcom/google/zxing/Reader;
 
     invoke-interface {v0, p1, p2}, Lcom/google/zxing/Reader;->decode(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;)Lcom/google/zxing/Result;
 
     move-result-object p1
 
-    .line 17
     invoke-virtual {p1}, Lcom/google/zxing/Result;->getResultPoints()[Lcom/google/zxing/ResultPoint;
 
     move-result-object p2
@@ -251,7 +228,6 @@
 .method public reset()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/multi/ByQuadrantReader;->delegate:Lcom/google/zxing/Reader;
 
     invoke-interface {v0}, Lcom/google/zxing/Reader;->reset()V

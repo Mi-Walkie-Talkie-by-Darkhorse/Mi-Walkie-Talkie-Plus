@@ -1,6 +1,5 @@
 .class final Lcom/ifengyu/intercom/ui/widget/dialog/b0;
 .super Ljava/lang/Object;
-.source "Utils.java"
 
 
 # direct methods
@@ -53,7 +52,6 @@
 .method static a(Landroid/content/Context;ILandroid/view/View;)Landroid/view/View;
     .locals 1
 
-    .line 6
     invoke-static {p0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object p0
@@ -69,7 +67,6 @@
 
     const/4 p2, 0x0
 
-    .line 7
     invoke-virtual {p0, p1, p2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
     move-result-object p2
@@ -81,7 +78,6 @@
 .method static a(Landroid/view/View;ILandroid/view/animation/Animation$AnimationListener;)V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/l;
 
     invoke-virtual {p0}, Landroid/view/View;->getHeight()I
@@ -90,15 +86,12 @@
 
     invoke-direct {v0, p0, v1, p1}, Lcom/ifengyu/intercom/ui/widget/dialog/l;-><init>(Landroid/view/View;II)V
 
-    .line 2
     invoke-virtual {v0, p2}, Landroid/view/animation/Animation;->setAnimationListener(Landroid/view/animation/Animation$AnimationListener;)V
 
     const-wide/16 p1, 0xc8
 
-    .line 3
     invoke-virtual {v0, p1, p2}, Landroid/view/animation/Animation;->setDuration(J)V
 
-    .line 4
     invoke-virtual {p0, v0}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
     return-void
@@ -107,7 +100,6 @@
 .method static a(Landroid/widget/AbsListView;)Z
     .locals 2
 
-    .line 5
     invoke-virtual {p0}, Landroid/widget/AbsListView;->getChildCount()I
 
     move-result v0

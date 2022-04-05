@@ -1,6 +1,5 @@
 .class public final Landroidx/activity/result/d/a$a;
 .super Ljava/lang/Object;
-.source "ActivityResultContract.java"
 
 
 # annotations
@@ -55,10 +54,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/activity/result/d/a$a;->a:Ljava/lang/Object;
 
     return-void
@@ -80,7 +77,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/activity/result/d/a$a;->a:Ljava/lang/Object;
 
     return-object v0

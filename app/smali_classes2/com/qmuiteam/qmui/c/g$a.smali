@@ -1,6 +1,5 @@
 .class final Lcom/qmuiteam/qmui/c/g$a;
 .super Ljava/lang/Object;
-.source "QMUISkinManager.java"
 
 # interfaces
 .implements Landroid/view/View$OnLayoutChangeListener;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,22 +30,18 @@
 .method public onLayoutChange(Landroid/view/View;IIIIIIII)V
     .locals 0
 
-    .line 1
     instance-of p2, p1, Landroid/view/ViewGroup;
 
     if-eqz p2, :cond_1
 
-    .line 2
     check-cast p1, Landroid/view/ViewGroup;
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result p2
 
     if-lez p2, :cond_1
 
-    .line 4
     invoke-static {p1}, Lcom/qmuiteam/qmui/c/g;->b(Landroid/view/View;)Lcom/qmuiteam/qmui/c/g$e;
 
     move-result-object p3
@@ -59,24 +53,20 @@
     :goto_0
     if-ge p4, p2, :cond_1
 
-    .line 5
     invoke-virtual {p1, p4}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object p5
 
-    .line 6
     invoke-static {p5}, Lcom/qmuiteam/qmui/c/g;->b(Landroid/view/View;)Lcom/qmuiteam/qmui/c/g$e;
 
     move-result-object p6
 
-    .line 7
     invoke-virtual {p3, p6}, Lcom/qmuiteam/qmui/c/g$e;->equals(Ljava/lang/Object;)Z
 
     move-result p6
 
     if-nez p6, :cond_0
 
-    .line 8
     iget-object p6, p3, Lcom/qmuiteam/qmui/c/g$e;->a:Ljava/lang/String;
 
     invoke-virtual {p5}, Landroid/view/View;->getContext()Landroid/content/Context;

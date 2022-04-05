@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/search/INativeSearchObserver;
 .super Ljava/lang/Object;
-.source "INativeSearchObserver.java"
 
 
 # virtual methods

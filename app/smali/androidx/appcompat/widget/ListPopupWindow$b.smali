@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/ListPopupWindow$b;
 .super Ljava/lang/Object;
-.source "ListPopupWindow.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemSelectedListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/ListPopupWindow;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow$b;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +49,6 @@
 
     if-eq p3, p1, :cond_0
 
-    .line 1
     iget-object p1, p0, Landroidx/appcompat/widget/ListPopupWindow$b;->a:Landroidx/appcompat/widget/ListPopupWindow;
 
     iget-object p1, p1, Landroidx/appcompat/widget/ListPopupWindow;->c:Landroidx/appcompat/widget/r;
@@ -60,7 +57,6 @@
 
     const/4 p2, 0x0
 
-    .line 2
     invoke-virtual {p1, p2}, Landroidx/appcompat/widget/r;->setListSelectionHidden(Z)V
 
     :cond_0

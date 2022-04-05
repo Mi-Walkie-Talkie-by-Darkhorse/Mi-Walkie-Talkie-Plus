@@ -1,6 +1,5 @@
 .class public final enum Lcom/xiaomi/infra/galaxy/fds/FDSError;
 .super Ljava/lang/Enum;
-.source "FDSError.java"
 
 
 # annotations
@@ -79,7 +78,6 @@
 .method static constructor <clinit>()V
     .locals 16
 
-    .line 1
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/4 v1, 0x0
@@ -94,7 +92,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->BucketAccessDenied:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 2
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/16 v3, 0x199
@@ -109,7 +106,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->BucketAlreadyExists:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 3
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/16 v5, 0x194
@@ -124,7 +120,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->BucketNotFound:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 4
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/4 v7, 0x3
@@ -137,7 +132,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->ObjectAccessDenied:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 5
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/4 v8, 0x4
@@ -150,7 +144,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->ObjectAlreadyExists:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 6
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/4 v3, 0x5
@@ -163,7 +156,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->ObjectNotFound:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 7
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/4 v5, 0x6
@@ -178,7 +170,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->BrokenObject:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 8
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/4 v10, 0x7
@@ -191,7 +182,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->InternalServerError:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 9
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/16 v11, 0x8
@@ -206,7 +196,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->RequestTimeout:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 10
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/16 v13, 0x9
@@ -219,7 +208,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->InvalidRequest:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 11
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/16 v14, 0xa
@@ -232,7 +220,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->SignatureDoesNotMatch:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 12
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/16 v13, 0xb
@@ -245,7 +232,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->RequestTimeTooSkewed:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 13
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/16 v14, 0xc
@@ -258,7 +244,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->RequestExpired:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 14
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/16 v13, 0xd
@@ -271,7 +256,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->InvalidOAuthParameters:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 15
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/16 v14, 0xe
@@ -284,7 +268,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->VerifyOAuthAccessTokenError:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 16
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/16 v13, 0xf
@@ -297,7 +280,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->QuotaExceeded:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 17
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const/16 v14, 0x10
@@ -310,7 +292,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->ChecksumDoesNotMatch:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 18
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const-string v13, "RequestNotSupported"
@@ -325,7 +306,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->RequestNotSupported:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 19
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const-string v11, "InvalidRequestRange"
@@ -340,7 +320,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->InvalidRequestRange:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 20
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const-string v11, "AuthenticationFailed"
@@ -353,7 +332,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->AuthenticationFailed:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 21
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const-string v11, "ServerTooBusy"
@@ -366,7 +344,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->ServerTooBusy:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 22
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const-string v9, "TooManyRequests"
@@ -381,7 +358,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->TooManyRequests:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 23
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const-string v9, "InvalidBucketName"
@@ -394,7 +370,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->InvalidBucketName:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 24
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const-string v9, "DomainMappingAccessDenied"
@@ -407,7 +382,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->DomainMappingAccessDenied:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 25
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const-string v2, "Unknown"
@@ -420,7 +394,6 @@
 
     sput-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->Unknown:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 26
     new-instance v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     const-string v2, "Success"
@@ -439,7 +412,6 @@
 
     new-array v2, v2, [Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
-    .line 27
     sget-object v9, Lcom/xiaomi/infra/galaxy/fds/FDSError;->BucketAccessDenied:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     aput-object v9, v2, v1
@@ -593,13 +565,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->description:Ljava/lang/String;
 
-    .line 3
     iput p4, p0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->status:I
 
     return-void
@@ -608,7 +577,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/xiaomi/infra/galaxy/fds/FDSError;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -623,7 +591,6 @@
 .method public static values()[Lcom/xiaomi/infra/galaxy/fds/FDSError;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->$VALUES:[Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     invoke-virtual {v0}, [Lcom/xiaomi/infra/galaxy/fds/FDSError;->clone()Ljava/lang/Object;
@@ -640,7 +607,6 @@
 .method public description()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->description:Ljava/lang/String;
 
     return-object v0
@@ -649,7 +615,6 @@
 .method public status()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->status:I
 
     return v0

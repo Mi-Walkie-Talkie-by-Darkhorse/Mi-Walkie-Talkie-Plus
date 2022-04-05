@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/b/j;
 .super Ljava/lang/Object;
-.source "IRadarDataSet.java"
 
 # interfaces
 .implements Lb/a/a/a/e/b/g;

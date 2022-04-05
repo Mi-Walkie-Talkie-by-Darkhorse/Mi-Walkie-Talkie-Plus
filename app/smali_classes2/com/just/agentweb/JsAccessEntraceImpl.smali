@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/JsAccessEntraceImpl;
 .super Lcom/just/agentweb/BaseJsAccessEntrace;
-.source "JsAccessEntraceImpl.java"
 
 
 # instance fields
@@ -13,10 +12,8 @@
 .method private constructor <init>(Landroid/webkit/WebView;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/just/agentweb/BaseJsAccessEntrace;-><init>(Landroid/webkit/WebView;)V
 
-    .line 2
     new-instance v0, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -27,7 +24,6 @@
 
     iput-object v0, p0, Lcom/just/agentweb/JsAccessEntraceImpl;->mHandler:Landroid/os/Handler;
 
-    .line 3
     iput-object p1, p0, Lcom/just/agentweb/JsAccessEntraceImpl;->mWebView:Landroid/webkit/WebView;
 
     return-void
@@ -36,7 +32,6 @@
 .method public static getInstance(Landroid/webkit/WebView;)Lcom/just/agentweb/JsAccessEntraceImpl;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/just/agentweb/JsAccessEntraceImpl;
 
     invoke-direct {v0, p0}, Lcom/just/agentweb/JsAccessEntraceImpl;-><init>(Landroid/webkit/WebView;)V
@@ -47,7 +42,6 @@
 .method private safeCallJs(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/JsAccessEntraceImpl;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/just/agentweb/JsAccessEntraceImpl$1;
@@ -73,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -88,12 +81,10 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/just/agentweb/JsAccessEntraceImpl;->safeCallJs(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
 
     return-void
 
-    .line 3
     :cond_0
     invoke-super {p0, p1, p2}, Lcom/just/agentweb/BaseJsAccessEntrace;->callJs(Ljava/lang/String;Landroid/webkit/ValueCallback;)V
 

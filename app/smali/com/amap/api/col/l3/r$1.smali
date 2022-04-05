@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/r$1;
 .super Ljava/lang/Object;
-.source "GLOverlayLayer.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/r;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/r$1;->a:Lcom/amap/api/col/l3/r;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +38,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/r$1;->a:Lcom/amap/api/col/l3/r;
 
@@ -48,7 +45,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 2
     :try_start_1
     iget-object v1, p0, Lcom/amap/api/col/l3/r$1;->a:Lcom/amap/api/col/l3/r;
 
@@ -70,7 +66,6 @@
 
     if-lez v1, :cond_0
 
-    .line 3
     iget-object v1, p0, Lcom/amap/api/col/l3/r$1;->a:Lcom/amap/api/col/l3/r;
 
     invoke-static {v1}, Lcom/amap/api/col/l3/r;->a(Lcom/amap/api/col/l3/r;)Ljava/util/List;
@@ -83,7 +78,6 @@
 
     invoke-static {v1, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
-    .line 4
     :cond_0
     monitor-exit v0
     :try_end_1
@@ -111,12 +105,10 @@
 
     const-string v2, "changeOverlayIndex"
 
-    .line 5
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 6
     monitor-exit p0
 
     return-void

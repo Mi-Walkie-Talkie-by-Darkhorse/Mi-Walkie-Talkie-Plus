@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c$a;
 .super Ljava/lang/Object;
-.source "TrackInfoDetailActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c$a;->a:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity$c;->b:Lcom/ifengyu/intercom/ui/activity/TrackInfoDetailActivity;

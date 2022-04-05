@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/c/d;
 .super Ljava/lang/Object;
-.source "IQMUISkinHandlerView.java"
 
 
 # virtual methods

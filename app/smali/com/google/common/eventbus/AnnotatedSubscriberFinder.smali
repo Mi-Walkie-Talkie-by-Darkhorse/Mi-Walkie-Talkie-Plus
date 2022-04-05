@@ -1,6 +1,5 @@
 .class Lcom/google/common/eventbus/AnnotatedSubscriberFinder;
 .super Ljava/lang/Object;
-.source "AnnotatedSubscriberFinder.java"
 
 # interfaces
 .implements Lcom/google/common/eventbus/SubscriberFindingStrategy;
@@ -33,7 +32,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/google/common/cache/CacheBuilder;->newBuilder()Lcom/google/common/cache/CacheBuilder;
 
     move-result-object v0
@@ -58,7 +56,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -67,7 +64,6 @@
 .method static synthetic access$000(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableList;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/eventbus/AnnotatedSubscriberFinder;->getAnnotatedMethodsInternal(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -88,7 +84,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     sget-object v0, Lcom/google/common/eventbus/AnnotatedSubscriberFinder;->subscriberMethodsCache:Lcom/google/common/cache/LoadingCache;
 
@@ -105,7 +100,6 @@
     :catch_0
     move-exception p0
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/RuntimeException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
@@ -130,7 +124,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/reflect/TypeToken;->of(Ljava/lang/Class;)Lcom/google/common/reflect/TypeToken;
 
     move-result-object p0
@@ -143,12 +136,10 @@
 
     move-result-object p0
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/Maps;->newHashMap()Ljava/util/HashMap;
 
     move-result-object v0
 
-    .line 3
     invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -166,7 +157,6 @@
 
     check-cast v1, Ljava/lang/Class;
 
-    .line 4
     invoke-virtual {v1}, Ljava/lang/Class;->getMethods()[Ljava/lang/reflect/Method;
 
     move-result-object v1
@@ -180,7 +170,6 @@
 
     aget-object v4, v1, v3
 
-    .line 5
     const-class v5, Lcom/google/common/eventbus/Subscribe;
 
     invoke-virtual {v4, v5}, Ljava/lang/reflect/Method;->isAnnotationPresent(Ljava/lang/Class;)Z
@@ -195,36 +184,30 @@
 
     if-nez v5, :cond_2
 
-    .line 6
     invoke-virtual {v4}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
     move-result-object v5
 
-    .line 7
     array-length v6, v5
 
     const/4 v7, 0x1
 
     if-ne v6, v7, :cond_1
 
-    .line 8
     new-instance v5, Lcom/google/common/eventbus/AnnotatedSubscriberFinder$MethodIdentifier;
 
     invoke-direct {v5, v4}, Lcom/google/common/eventbus/AnnotatedSubscriberFinder$MethodIdentifier;-><init>(Ljava/lang/reflect/Method;)V
 
-    .line 9
     invoke-interface {v0, v5}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v6
 
     if-nez v6, :cond_2
 
-    .line 10
     invoke-interface {v0, v5, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_1
 
-    .line 11
     :cond_1
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -278,7 +261,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_3
     invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
 
@@ -294,21 +276,18 @@
 .method private static makeSubscriber(Ljava/lang/Object;Ljava/lang/reflect/Method;)Lcom/google/common/eventbus/EventSubscriber;
     .locals 1
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/eventbus/AnnotatedSubscriberFinder;->methodIsDeclaredThreadSafe(Ljava/lang/reflect/Method;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/google/common/eventbus/EventSubscriber;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/eventbus/EventSubscriber;-><init>(Ljava/lang/Object;Ljava/lang/reflect/Method;)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/google/common/eventbus/SynchronizedEventSubscriber;
 
@@ -321,7 +300,6 @@
 .method private static methodIsDeclaredThreadSafe(Ljava/lang/reflect/Method;)Z
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/common/eventbus/AllowConcurrentEvents;
 
     invoke-virtual {p0, v0}, Ljava/lang/reflect/Method;->getAnnotation(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;
@@ -358,17 +336,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/HashMultimap;->create()Lcom/google/common/collect/HashMultimap;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v1
 
-    .line 3
     invoke-static {v1}, Lcom/google/common/eventbus/AnnotatedSubscriberFinder;->getAnnotatedMethods(Ljava/lang/Class;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object v1
@@ -390,22 +365,18 @@
 
     check-cast v2, Ljava/lang/reflect/Method;
 
-    .line 4
     invoke-virtual {v2}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
     move-result-object v3
 
     const/4 v4, 0x0
 
-    .line 5
     aget-object v3, v3, v4
 
-    .line 6
     invoke-static {p1, v2}, Lcom/google/common/eventbus/AnnotatedSubscriberFinder;->makeSubscriber(Ljava/lang/Object;Ljava/lang/reflect/Method;)Lcom/google/common/eventbus/EventSubscriber;
 
     move-result-object v2
 
-    .line 7
     invoke-interface {v0, v3, v2}, Lcom/google/common/collect/Multimap;->put(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     goto :goto_0

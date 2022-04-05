@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/config/IConfigurationProvider;
 .super Ljava/lang/Object;
-.source "IConfigurationProvider.java"
 
 
 # virtual methods

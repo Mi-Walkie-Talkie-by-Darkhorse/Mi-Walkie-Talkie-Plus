@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/library/widget/view/QMUILoadingView$a;
 .super Ljava/lang/Object;
-.source "QMUILoadingView.java"
 
 # interfaces
 .implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/library/widget/view/QMUILoadingView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/library/widget/view/QMUILoadingView$a;->a:Lcom/ifengyu/library/widget/view/QMUILoadingView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/QMUILoadingView$a;->a:Lcom/ifengyu/library/widget/view/QMUILoadingView;
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
@@ -53,7 +50,6 @@
 
     invoke-static {v0, p1}, Lcom/ifengyu/library/widget/view/QMUILoadingView;->a(Lcom/ifengyu/library/widget/view/QMUILoadingView;I)I
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/QMUILoadingView$a;->a:Lcom/ifengyu/library/widget/view/QMUILoadingView;
 
     invoke-virtual {p1}, Landroid/view/View;->invalidate()V

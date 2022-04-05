@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/auth/a$3;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnDismissListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/tencent/connect/auth/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/a$3;->a:Lcom/tencent/connect/auth/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 0
 
-    .line 1
     :try_start_0
     invoke-static {}, Lcom/tencent/open/web/security/JniInterface;->clearAllPWD()Z
     :try_end_0

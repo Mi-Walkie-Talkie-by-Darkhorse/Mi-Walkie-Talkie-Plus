@@ -1,13 +1,11 @@
 .class public final Lcom/amap/api/col/l3/go;
 .super Lcom/amap/api/col/l3/gm;
-.source "NoneEncryptProcessor.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/gm;-><init>()V
 
     return-void

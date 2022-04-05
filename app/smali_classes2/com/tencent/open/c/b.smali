@@ -1,13 +1,11 @@
 .class public Lcom/tencent/open/c/b;
 .super Landroid/webkit/WebView;
-.source "ProGuard"
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/webkit/WebView;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -18,10 +16,8 @@
 .method protected onAttachedToWindow()V
     .locals 6
 
-    .line 1
     invoke-super {p0}, Landroid/webkit/WebView;->onAttachedToWindow()V
 
-    .line 2
     invoke-virtual {p0}, Landroid/webkit/WebView;->getSettings()Landroid/webkit/WebSettings;
 
     move-result-object v0
@@ -30,7 +26,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -43,7 +38,6 @@
 
     new-array v3, v2, [Ljava/lang/Class;
 
-    .line 4
     const-class v4, Ljava/lang/String;
 
     const/4 v5, 0x0
@@ -62,7 +56,6 @@
 
     aput-object v2, v1, v5
 
-    .line 5
     invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0

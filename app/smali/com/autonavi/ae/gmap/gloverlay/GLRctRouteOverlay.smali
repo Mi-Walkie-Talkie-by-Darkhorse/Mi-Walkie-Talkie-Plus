@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay;
 .super Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;
-.source "GLRctRouteOverlay.java"
 
 
 # annotations
@@ -17,10 +16,8 @@
 .method public constructor <init>(ILcom/autonavi/amap/mapcore/interfaces/IAMap;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;-><init>(ILcom/autonavi/amap/mapcore/interfaces/IAMap;I)V
 
-    .line 2
     sget-object p1, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay$EAMapOverlayTpye;->AMAPOVERLAY_RCTROUTE:Lcom/autonavi/ae/gmap/gloverlay/GLOverlay$EAMapOverlayTpye;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
@@ -46,26 +43,22 @@
     :goto_0
     if-ge v1, p4, :cond_0
 
-    .line 1
     aget-object v2, p3, v1
 
     iget v2, v2, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapRctPolyline;->nCount:I
 
     add-int/lit8 v3, p2, 0x1
 
-    .line 2
     aput v2, p1, p2
 
     add-int/lit8 p2, v3, 0x1
 
-    .line 3
     aget-object v4, p3, v1
 
     iget v4, v4, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapRctPolyline;->nIndex:I
 
     aput v4, p1, v3
 
-    .line 4
     aget-object v3, p3, v1
 
     iget-object v3, v3, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapRctPolyline;->xs:[I
@@ -74,7 +67,6 @@
 
     add-int/2addr p2, v2
 
-    .line 5
     aget-object v3, p3, v1
 
     iget-object v3, v3, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapRctPolyline;->ys:[I
@@ -83,7 +75,6 @@
 
     add-int/2addr p2, v2
 
-    .line 6
     aget-object v3, p3, v1
 
     iget-object v3, v3, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapRctPolyline;->zs:[I
@@ -123,7 +114,6 @@
 .method public SetGpsPos(IIIF)I
     .locals 6
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     move v2, p1
@@ -144,7 +134,6 @@
 .method public SetNaviMode(I)I
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const/4 v2, 0x0
@@ -176,7 +165,6 @@
     :cond_0
     const-string p1, "3dportrait.xml"
 
-    .line 1
     :goto_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
@@ -188,7 +176,6 @@
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Ljava/io/File;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -205,14 +192,12 @@
 
     invoke-direct {v1, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 3
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {v1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p1
@@ -223,7 +208,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_1
     sget-object v0, Lcom/amap/api/col/l3/y;->a:Landroid/content/Context;
 
@@ -243,7 +227,6 @@
 
     move-result-object p1
 
-    .line 6
     :goto_1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
@@ -257,7 +240,6 @@
 .method public SetRCTFlyRoute([BI)I
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1, p1, p2}, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay;->nativeSetRCTFlyRoute(J[BI)I
@@ -270,7 +252,6 @@
 .method public UpdataCarPos([F)I
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay;->nativeUpdataCarPos(J[F)I
@@ -287,21 +268,18 @@
 
     new-array v0, v0, [I
 
-    .line 1
     iget v1, p1, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapNaviInfo;->ntype:I
 
     const/4 v2, 0x0
 
     aput v1, v0, v2
 
-    .line 2
     iget v1, p1, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapNaviInfo;->nmaneuverID:I
 
     const/4 v2, 0x1
 
     aput v1, v0, v2
 
-    .line 3
     iget-wide v1, p1, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapNaviInfo;->n64routeRemainDistance:J
 
     const-wide/16 v3, -0x1
@@ -326,7 +304,6 @@
 
     aput v2, v0, v1
 
-    .line 4
     iget-wide v1, p1, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapNaviInfo;->n64routeRemainTime:J
 
     and-long v6, v1, v3
@@ -347,56 +324,48 @@
 
     aput v2, v0, v1
 
-    .line 5
     iget v1, p1, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapNaviInfo;->nsegmentRemainDistance:I
 
     const/4 v2, 0x6
 
     aput v1, v0, v2
 
-    .line 6
     iget v1, p1, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapNaviInfo;->nsegmentLength:I
 
     const/4 v2, 0x7
 
     aput v1, v0, v2
 
-    .line 7
     iget v1, p1, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapNaviInfo;->nsegmentRemainTime:I
 
     const/16 v2, 0x8
 
     aput v1, v0, v2
 
-    .line 8
     iget v1, p1, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapNaviInfo;->ncurrentSegNumber:I
 
     const/16 v2, 0x9
 
     aput v1, v0, v2
 
-    .line 9
     iget v1, p1, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapNaviInfo;->ncurrentLinkNumber:I
 
     const/16 v2, 0xa
 
     aput v1, v0, v2
 
-    .line 10
     iget v1, p1, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapNaviInfo;->n3DSTLinkNumber:I
 
     const/16 v2, 0xb
 
     aput v1, v0, v2
 
-    .line 11
     iget p1, p1, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay$AmapNaviInfo;->n3DEDLinkNumber:I
 
     const/16 v1, 0xc
 
     aput p1, v0, v1
 
-    .line 12
     iget-wide v1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v1, v2, v0}, Lcom/autonavi/ae/gmap/gloverlay/GLRctRouteOverlay;->nativeUpdataNaviInfo(J[I)V
@@ -407,7 +376,6 @@
 .method public navipause()I
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const/16 v2, 0x11
@@ -430,7 +398,6 @@
 .method public naviresume()I
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const/16 v2, 0x12
@@ -453,7 +420,6 @@
 .method public navistart()I
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const/16 v2, 0x10
@@ -476,7 +442,6 @@
 .method public navistop()I
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const/16 v2, 0x13

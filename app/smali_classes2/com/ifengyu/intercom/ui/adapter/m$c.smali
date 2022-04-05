@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/adapter/m$c;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "SealCustomAdapter.java"
 
 
 # annotations
@@ -32,15 +31,12 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/ui/adapter/m;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
     const p1, 0x7f090462
 
-    .line 3
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -51,7 +47,6 @@
 
     const p1, 0x7f090463
 
-    .line 4
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -62,7 +57,6 @@
 
     const p1, 0x7f090464
 
-    .line 5
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -73,7 +67,6 @@
 
     const p1, 0x7f090460
 
-    .line 6
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -84,7 +77,6 @@
 
     const p1, 0x7f090088
 
-    .line 7
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
@@ -99,7 +91,6 @@
 .method public a(I)V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/m;->a(Lcom/ifengyu/intercom/ui/adapter/m;)Ljava/util/List;
@@ -112,7 +103,6 @@
 
     check-cast p1, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->a:Landroid/widget/TextView;
 
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -145,7 +135,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->b:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->e()Ljava/lang/String;
@@ -158,7 +147,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/m;->g(Lcom/ifengyu/intercom/ui/adapter/m;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -171,7 +159,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->a:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
@@ -186,7 +173,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->b:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
@@ -201,7 +187,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->c:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
@@ -216,7 +201,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->d:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
@@ -233,7 +217,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->a:Landroid/widget/TextView;
 
@@ -249,7 +232,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 10
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->b:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
@@ -264,7 +246,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 11
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->c:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
@@ -279,7 +260,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 12
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->d:Landroid/widget/TextView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
@@ -294,7 +274,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 13
     :goto_0
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->h()I
 
@@ -312,7 +291,6 @@
 
     if-nez v0, :cond_1
 
-    .line 14
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->c:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->i()I
@@ -325,7 +303,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 15
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->d:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->l()I
@@ -340,7 +317,6 @@
 
     goto/16 :goto_5
 
-    .line 16
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
@@ -350,7 +326,6 @@
 
     invoke-virtual {v0}, Landroid/text/SpannableStringBuilder;->clear()V
 
-    .line 17
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->h()I
 
     move-result v0
@@ -363,7 +338,6 @@
 
     if-nez v0, :cond_2
 
-    .line 18
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/adapter/m;->n(Lcom/ifengyu/intercom/ui/adapter/m;)Landroid/text/SpannableStringBuilder;
@@ -394,7 +368,6 @@
 
     goto :goto_1
 
-    .line 19
     :cond_2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
@@ -428,7 +401,6 @@
 
     invoke-virtual {v0, v3}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 20
     :goto_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
@@ -446,7 +418,6 @@
 
     move-result v0
 
-    .line 21
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {v3}, Lcom/ifengyu/intercom/ui/adapter/m;->n(Lcom/ifengyu/intercom/ui/adapter/m;)Landroid/text/SpannableStringBuilder;
@@ -473,7 +444,6 @@
 
     invoke-virtual {v3, v4, v0, v5, v6}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 22
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {v3}, Lcom/ifengyu/intercom/ui/adapter/m;->g(Lcom/ifengyu/intercom/ui/adapter/m;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -486,7 +456,6 @@
 
     if-eqz v3, :cond_3
 
-    .line 23
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {v3}, Lcom/ifengyu/intercom/ui/adapter/m;->n(Lcom/ifengyu/intercom/ui/adapter/m;)Landroid/text/SpannableStringBuilder;
@@ -513,7 +482,6 @@
 
     goto :goto_2
 
-    .line 24
     :cond_3
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
@@ -539,7 +507,6 @@
 
     invoke-virtual {v3, v4, v0, v5, v6}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 25
     :goto_2
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->c:Landroid/widget/TextView;
 
@@ -551,7 +518,6 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 26
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {v3}, Lcom/ifengyu/intercom/ui/adapter/m;->n(Lcom/ifengyu/intercom/ui/adapter/m;)Landroid/text/SpannableStringBuilder;
@@ -560,7 +526,6 @@
 
     invoke-virtual {v3}, Landroid/text/SpannableStringBuilder;->clear()V
 
-    .line 27
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->k()I
 
     move-result v3
@@ -569,7 +534,6 @@
 
     if-nez v3, :cond_4
 
-    .line 28
     iget-object v3, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {v3}, Lcom/ifengyu/intercom/ui/adapter/m;->n(Lcom/ifengyu/intercom/ui/adapter/m;)Landroid/text/SpannableStringBuilder;
@@ -600,7 +564,6 @@
 
     goto :goto_3
 
-    .line 29
     :cond_4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
@@ -634,7 +597,6 @@
 
     invoke-virtual {v1, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 30
     :goto_3
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
@@ -660,7 +622,6 @@
 
     invoke-virtual {v1, v2, v0, v3, v6}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 31
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/ui/adapter/m;->g(Lcom/ifengyu/intercom/ui/adapter/m;)Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
@@ -673,7 +634,6 @@
 
     if-eqz p1, :cond_5
 
-    .line 32
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/adapter/m;->n(Lcom/ifengyu/intercom/ui/adapter/m;)Landroid/text/SpannableStringBuilder;
@@ -700,7 +660,6 @@
 
     goto :goto_4
 
-    .line 33
     :cond_5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;
 
@@ -726,7 +685,6 @@
 
     invoke-virtual {p1, v1, v0, v2, v6}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 34
     :goto_4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->d:Landroid/widget/TextView;
 
@@ -738,7 +696,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 35
     :goto_5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->c:Landroid/widget/TextView;
 
@@ -750,7 +707,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 36
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->d:Landroid/widget/TextView;
 
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/adapter/m$c;->f:Lcom/ifengyu/intercom/ui/adapter/m;

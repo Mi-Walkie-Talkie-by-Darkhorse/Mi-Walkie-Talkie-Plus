@@ -1,6 +1,5 @@
 .class Lokhttp3/RequestBody$2;
 .super Lokhttp3/RequestBody;
-.source "RequestBody.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method constructor <init>(Lokhttp3/MediaType;I[BI)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokhttp3/RequestBody$2;->val$contentType:Lokhttp3/MediaType;
 
     iput p2, p0, Lokhttp3/RequestBody$2;->val$byteCount:I
@@ -47,7 +45,6 @@
 .method public contentLength()J
     .locals 2
 
-    .line 1
     iget v0, p0, Lokhttp3/RequestBody$2;->val$byteCount:I
 
     int-to-long v0, v0
@@ -60,7 +57,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/RequestBody$2;->val$contentType:Lokhttp3/MediaType;
 
     return-object v0
@@ -74,7 +70,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lokhttp3/RequestBody$2;->val$content:[B
 
     iget v1, p0, Lokhttp3/RequestBody$2;->val$offset:I

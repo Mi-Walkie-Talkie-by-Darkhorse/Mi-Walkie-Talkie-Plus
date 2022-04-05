@@ -1,6 +1,5 @@
 .class final Lpl/droidsonroids/gif/d$b;
 .super Ljava/lang/Object;
-.source "GifRenderingExecutor.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lpl/droidsonroids/gif/d;
 
     const/4 v1, 0x0
@@ -37,7 +35,6 @@
 .method static synthetic a()Lpl/droidsonroids/gif/d;
     .locals 1
 
-    .line 1
     sget-object v0, Lpl/droidsonroids/gif/d$b;->a:Lpl/droidsonroids/gif/d;
 
     return-object v0

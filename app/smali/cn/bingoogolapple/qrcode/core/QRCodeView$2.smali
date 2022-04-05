@@ -1,6 +1,5 @@
 .class Lcn/bingoogolapple/qrcode/core/QRCodeView$2;
 .super Ljava/lang/Object;
-.source "QRCodeView.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcn/bingoogolapple/qrcode/core/QRCodeView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcn/bingoogolapple/qrcode/core/QRCodeView$2;->this$0:Lcn/bingoogolapple/qrcode/core/QRCodeView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcn/bingoogolapple/qrcode/core/QRCodeView$2;->this$0:Lcn/bingoogolapple/qrcode/core/QRCodeView;
 
     iget-object v1, v0, Lcn/bingoogolapple/qrcode/core/QRCodeView;->mCamera:Landroid/hardware/Camera;
@@ -49,7 +46,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 2
     :try_start_0
     invoke-virtual {v1, v0}, Landroid/hardware/Camera;->setOneShotPreviewCallback(Landroid/hardware/Camera$PreviewCallback;)V
     :try_end_0
@@ -60,7 +56,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_0

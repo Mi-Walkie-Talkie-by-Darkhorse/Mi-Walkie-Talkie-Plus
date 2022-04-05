@@ -1,6 +1,5 @@
 .class Lcom/google/protobuf/UnmodifiableLazyStringList$2;
 .super Ljava/lang/Object;
-.source "UnmodifiableLazyStringList.java"
 
 # interfaces
 .implements Ljava/util/Iterator;
@@ -44,12 +43,10 @@
 .method constructor <init>(Lcom/google/protobuf/UnmodifiableLazyStringList;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$2;->this$0:Lcom/google/protobuf/UnmodifiableLazyStringList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iget-object p1, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$2;->this$0:Lcom/google/protobuf/UnmodifiableLazyStringList;
 
     invoke-static {p1}, Lcom/google/protobuf/UnmodifiableLazyStringList;->access$000(Lcom/google/protobuf/UnmodifiableLazyStringList;)Lcom/google/protobuf/LazyStringList;
@@ -70,7 +67,6 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$2;->iter:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -83,7 +79,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/UnmodifiableLazyStringList$2;->next()Ljava/lang/String;
 
     move-result-object v0
@@ -94,7 +89,6 @@
 .method public next()Ljava/lang/String;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/UnmodifiableLazyStringList$2;->iter:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
@@ -109,7 +103,6 @@
 .method public remove()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V

@@ -1,6 +1,5 @@
 .class Landroidx/viewpager/widget/PagerTitleStrip$a;
 .super Landroid/database/DataSetObserver;
-.source "PagerTitleStrip.java"
 
 # interfaces
 .implements Landroidx/viewpager/widget/ViewPager$h;
@@ -28,7 +27,6 @@
 .method constructor <init>(Landroidx/viewpager/widget/PagerTitleStrip;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
@@ -41,7 +39,6 @@
 .method public onAdapterChanged(Landroidx/viewpager/widget/ViewPager;Landroidx/viewpager/widget/a;Landroidx/viewpager/widget/a;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
     invoke-virtual {p1, p2, p3}, Landroidx/viewpager/widget/PagerTitleStrip;->a(Landroidx/viewpager/widget/a;Landroidx/viewpager/widget/a;)V
@@ -52,7 +49,6 @@
 .method public onChanged()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
     iget-object v1, v0, Landroidx/viewpager/widget/PagerTitleStrip;->a:Landroidx/viewpager/widget/ViewPager;
@@ -71,7 +67,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroidx/viewpager/widget/PagerTitleStrip;->a(ILandroidx/viewpager/widget/a;)V
 
-    .line 2
     iget-object v0, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
     iget v0, v0, Landroidx/viewpager/widget/PagerTitleStrip;->f:F
@@ -87,7 +82,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 3
     :goto_0
     iget-object v1, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
@@ -107,7 +101,6 @@
 .method public onPageScrollStateChanged(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->a:I
 
     return-void
@@ -124,7 +117,6 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 1
     :cond_0
     iget-object p3, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
@@ -138,12 +130,10 @@
 .method public onPageSelected(I)V
     .locals 3
 
-    .line 1
     iget p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->a:I
 
     if-nez p1, :cond_1
 
-    .line 2
     iget-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
     iget-object v0, p1, Landroidx/viewpager/widget/PagerTitleStrip;->a:Landroidx/viewpager/widget/ViewPager;
@@ -162,7 +152,6 @@
 
     invoke-virtual {p1, v0, v1}, Landroidx/viewpager/widget/PagerTitleStrip;->a(ILandroidx/viewpager/widget/a;)V
 
-    .line 3
     iget-object p1, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 
     iget p1, p1, Landroidx/viewpager/widget/PagerTitleStrip;->f:F
@@ -178,7 +167,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 4
     :goto_0
     iget-object v0, p0, Landroidx/viewpager/widget/PagerTitleStrip$a;->b:Landroidx/viewpager/widget/PagerTitleStrip;
 

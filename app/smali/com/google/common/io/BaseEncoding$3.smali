@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/BaseEncoding$3;
 .super Ljava/lang/Object;
-.source "BaseEncoding.java"
 
 # interfaces
 .implements Lcom/google/common/io/GwtWorkarounds$CharInput;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/google/common/io/GwtWorkarounds$CharInput;Lcom/google/common/base/CharMatcher;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/io/BaseEncoding$3;->val$delegate:Lcom/google/common/io/GwtWorkarounds$CharInput;
 
     iput-object p2, p0, Lcom/google/common/io/BaseEncoding$3;->val$toIgnore:Lcom/google/common/base/CharMatcher;
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$3;->val$delegate:Lcom/google/common/io/GwtWorkarounds$CharInput;
 
     invoke-interface {v0}, Lcom/google/common/io/GwtWorkarounds$CharInput;->close()V
@@ -63,7 +60,6 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lcom/google/common/io/BaseEncoding$3;->val$delegate:Lcom/google/common/io/GwtWorkarounds$CharInput;
 
@@ -75,7 +71,6 @@
 
     if-eq v0, v1, :cond_1
 
-    .line 2
     iget-object v1, p0, Lcom/google/common/io/BaseEncoding$3;->val$toIgnore:Lcom/google/common/base/CharMatcher;
 
     int-to-char v2, v0

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$g;
 .super Ljava/lang/Object;
-.source "ConnectDeviceActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$g;->b:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$g;->a:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$g;->a:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->hasActivateChannel()Z
@@ -51,7 +48,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -76,7 +72,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$g;->b:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getApplication()Landroid/app/Application;
@@ -85,7 +80,6 @@
 
     check-cast v0, Lcom/ifengyu/intercom/MiTalkiApp;
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$g;->a:Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;
 
     invoke-virtual {v1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ParamUpdate;->getActivateChannel()I
@@ -104,7 +98,6 @@
     :goto_0
     iput-boolean v1, v0, Lcom/ifengyu/intercom/MiTalkiApp;->h:Z
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$g;->b:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
 

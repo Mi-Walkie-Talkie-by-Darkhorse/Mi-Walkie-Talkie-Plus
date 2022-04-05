@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/b$f;
 .super Ljava/lang/Object;
-.source "QMUIFragment.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/arch/SwipeBackLayout$e;
@@ -27,14 +26,12 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/b$f;->a:Lcom/qmuiteam/qmui/arch/b;
 
     return-void
@@ -43,7 +40,6 @@
 .method static synthetic a(Lcom/qmuiteam/qmui/arch/b$f;)Lcom/qmuiteam/qmui/arch/b;
     .locals 0
 
-    .line 4
     iget-object p0, p0, Lcom/qmuiteam/qmui/arch/b$f;->a:Lcom/qmuiteam/qmui/arch/b;
 
     return-object p0
@@ -52,7 +48,6 @@
 .method static synthetic a(Lcom/qmuiteam/qmui/arch/b$f;Lcom/qmuiteam/qmui/arch/b;)Lcom/qmuiteam/qmui/arch/b;
     .locals 0
 
-    .line 5
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/b$f;->a:Lcom/qmuiteam/qmui/arch/b;
 
     return-object p1
@@ -61,7 +56,6 @@
 .method private a(Landroid/view/ViewGroup;)V
     .locals 1
 
-    .line 86
     new-instance v0, Lcom/qmuiteam/qmui/arch/b$f$c;
 
     invoke-direct {v0, p0}, Lcom/qmuiteam/qmui/arch/b$f$c;-><init>(Lcom/qmuiteam/qmui/arch/b$f;)V
@@ -70,7 +64,6 @@
 
     const/4 p1, 0x0
 
-    .line 87
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/b$f;->a:Lcom/qmuiteam/qmui/arch/b;
 
     return-void
@@ -91,7 +84,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 63
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
 
     move-result v0
@@ -101,12 +93,10 @@
     :goto_0
     if-ltz v0, :cond_2
 
-    .line 64
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v1
 
-    .line 65
     sget v2, Lcom/qmuiteam/qmui/arch/R$id;->qmui_arch_swipe_layout_in_back:I
 
     invoke-virtual {v1, v2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
@@ -115,7 +105,6 @@
 
     const-string v3, "swipe_back_view"
 
-    .line 66
     invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -124,10 +113,8 @@
 
     if-eqz p2, :cond_0
 
-    .line 67
     invoke-interface {p2, v1}, La/a/a/c/a;->apply(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 68
     :cond_0
     invoke-virtual {p1, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
@@ -145,7 +132,6 @@
 
     const/4 v0, -0x1
 
-    .line 60
     invoke-direct {p0, p1, p2, v0}, Lcom/qmuiteam/qmui/arch/b$f;->a(Landroid/view/ViewGroup;Landroid/view/View;I)V
 
     return-void
@@ -158,14 +144,12 @@
 
     if-eqz p2, :cond_0
 
-    .line 61
     sget v0, Lcom/qmuiteam/qmui/arch/R$id;->qmui_arch_swipe_layout_in_back:I
 
     const-string v1, "swipe_back_view"
 
     invoke-virtual {p2, v0, v1}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
-    .line 62
     invoke-virtual {p1, p2, p3}, Landroid/view/ViewGroup;->addView(Landroid/view/View;I)V
 
     :cond_0
@@ -180,25 +164,20 @@
         }
     .end annotation
 
-    .line 69
     instance-of v0, p2, Landroid/view/ViewGroup;
 
     if-eqz v0, :cond_2
 
-    .line 70
     check-cast p2, Landroid/view/ViewGroup;
 
-    .line 71
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object p1
 
-    .line 72
     invoke-virtual {p1}, Landroidx/fragment/app/FragmentManager;->getFragments()Ljava/util/List;
 
     move-result-object p1
 
-    .line 73
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -225,17 +204,14 @@
 
     check-cast v4, Landroidx/fragment/app/Fragment;
 
-    .line 74
     instance-of v5, v4, Lcom/qmuiteam/qmui/arch/b;
 
     if-eqz v5, :cond_0
 
-    .line 75
     move-object v5, v4
 
     check-cast v5, Lcom/qmuiteam/qmui/arch/b;
 
-    .line 76
     :try_start_0
     const-class v6, Landroidx/fragment/app/Fragment;
 
@@ -249,10 +225,8 @@
 
     const/4 v7, 0x1
 
-    .line 77
     invoke-virtual {v6, v7}, Ljava/lang/reflect/Field;->setAccessible(Z)V
 
-    .line 78
     invoke-virtual {v6, v5}, Ljava/lang/reflect/Field;->getInt(Ljava/lang/Object;)I
 
     move-result v6
@@ -261,7 +235,6 @@
 
     if-eq v2, v6, :cond_1
 
-    .line 79
     invoke-virtual {p2, v6}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
 
     move-result-object v2
@@ -275,10 +248,8 @@
     :cond_1
     if-eqz v3, :cond_0
 
-    .line 80
     invoke-static {v5, v7}, Lcom/qmuiteam/qmui/arch/b;->c(Lcom/qmuiteam/qmui/arch/b;Z)Z
 
-    .line 81
     invoke-virtual {v3}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v6
@@ -287,18 +258,14 @@
 
     move-result-object v6
 
-    .line 82
     invoke-virtual {v4, v6, v3, v0}, Landroidx/fragment/app/Fragment;->onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object v6
 
-    .line 83
     invoke-static {v5, v1}, Lcom/qmuiteam/qmui/arch/b;->c(Lcom/qmuiteam/qmui/arch/b;Z)Z
 
-    .line 84
     invoke-direct {p0, v3, v6}, Lcom/qmuiteam/qmui/arch/b$f;->a(Landroid/view/ViewGroup;Landroid/view/View;)V
 
-    .line 85
     invoke-direct {p0, v4, v6}, Lcom/qmuiteam/qmui/arch/b$f;->a(Landroidx/fragment/app/Fragment;Landroid/view/View;)V
 
     goto :goto_0
@@ -315,7 +282,6 @@
 .method static synthetic a(Lcom/qmuiteam/qmui/arch/b$f;Landroid/view/ViewGroup;La/a/a/c/a;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2}, Lcom/qmuiteam/qmui/arch/b$f;->a(Landroid/view/ViewGroup;La/a/a/c/a;)V
 
     return-void
@@ -324,7 +290,6 @@
 .method static synthetic a(Lcom/qmuiteam/qmui/arch/b$f;Landroid/view/ViewGroup;Landroid/view/View;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/qmuiteam/qmui/arch/b$f;->a(Landroid/view/ViewGroup;Landroid/view/View;I)V
 
     return-void
@@ -338,7 +303,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1, p2}, Lcom/qmuiteam/qmui/arch/b$f;->a(Landroidx/fragment/app/Fragment;Landroid/view/View;)V
 
     return-void
@@ -349,7 +313,6 @@
 .method public a()V
     .locals 2
 
-    .line 59
     invoke-static {}, Lcom/qmuiteam/qmui/arch/b;->w()Ljava/lang/String;
 
     move-result-object v0
@@ -364,7 +327,6 @@
 .method public a(IF)V
     .locals 4
 
-    .line 6
     invoke-static {}, Lcom/qmuiteam/qmui/arch/b;->w()Ljava/lang/String;
 
     move-result-object v0
@@ -391,7 +353,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 7
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/arch/b;->m()Lcom/qmuiteam/qmui/arch/c;
@@ -400,7 +361,6 @@
 
     if-eqz v0, :cond_7
 
-    .line 8
     invoke-interface {v0}, Lcom/qmuiteam/qmui/arch/c;->d()Landroidx/fragment/app/FragmentContainerView;
 
     move-result-object v1
@@ -409,13 +369,11 @@
 
     goto/16 :goto_3
 
-    .line 9
     :cond_0
     invoke-interface {v0}, Lcom/qmuiteam/qmui/arch/c;->d()Landroidx/fragment/app/FragmentContainerView;
 
     move-result-object v1
 
-    .line 10
     iget-object v2, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     if-eqz p1, :cond_1
@@ -432,7 +390,6 @@
 
     if-nez p1, :cond_7
 
-    .line 11
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/arch/b;->f(Lcom/qmuiteam/qmui/arch/b;)Lcom/qmuiteam/qmui/arch/SwipeBackgroundView;
@@ -449,7 +406,6 @@
 
     if-gtz p1, :cond_2
 
-    .line 12
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/arch/b;->f(Lcom/qmuiteam/qmui/arch/b;)Lcom/qmuiteam/qmui/arch/SwipeBackgroundView;
@@ -458,7 +414,6 @@
 
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/arch/SwipeBackgroundView;->b()V
 
-    .line 13
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     const/4 p2, 0x0
@@ -472,7 +427,6 @@
 
     if-ltz p1, :cond_4
 
-    .line 14
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -481,12 +435,10 @@
 
     if-eqz p1, :cond_4
 
-    .line 15
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/arch/b;->t()V
 
-    .line 16
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/arch/b;->f(Lcom/qmuiteam/qmui/arch/b;)Lcom/qmuiteam/qmui/arch/SwipeBackgroundView;
@@ -506,7 +458,6 @@
     :cond_3
     sget p1, Lcom/qmuiteam/qmui/arch/R$anim;->swipe_back_exit:I
 
-    .line 17
     :goto_1
     iget-object p2, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
@@ -527,7 +478,6 @@
 
     if-gtz p1, :cond_6
 
-    .line 18
     invoke-direct {p0, v1}, Lcom/qmuiteam/qmui/arch/b$f;->a(Landroid/view/ViewGroup;)V
 
     goto :goto_3
@@ -537,24 +487,20 @@
 
     if-ltz p1, :cond_7
 
-    .line 19
     invoke-direct {p0, v1}, Lcom/qmuiteam/qmui/arch/b$f;->a(Landroid/view/ViewGroup;)V
 
-    .line 20
     invoke-interface {v0}, Lcom/qmuiteam/qmui/arch/c;->f()Landroidx/fragment/app/FragmentManager;
 
     move-result-object p1
 
     const/4 p2, -0x1
 
-    .line 21
     new-instance v0, Lcom/qmuiteam/qmui/arch/b$f$a;
 
     invoke-direct {v0, p0}, Lcom/qmuiteam/qmui/arch/b$f$a;-><init>(Lcom/qmuiteam/qmui/arch/b$f;)V
 
     invoke-static {p1, p2, v0}, Lcom/qmuiteam/qmui/arch/g;->a(Landroidx/fragment/app/FragmentManager;ILcom/qmuiteam/qmui/arch/g$a;)V
 
-    .line 22
     iget-object p1, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/arch/b;->t()V
@@ -572,7 +518,6 @@
         }
     .end annotation
 
-    .line 37
     invoke-static {}, Lcom/qmuiteam/qmui/arch/b;->w()Ljava/lang/String;
 
     move-result-object v0
@@ -593,7 +538,6 @@
 
     invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 38
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {v0}, Lcom/qmuiteam/qmui/arch/b;->m()Lcom/qmuiteam/qmui/arch/c;
@@ -602,7 +546,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 39
     invoke-interface {v0}, Lcom/qmuiteam/qmui/arch/c;->d()Landroidx/fragment/app/FragmentContainerView;
 
     move-result-object v1
@@ -611,13 +554,11 @@
 
     goto/16 :goto_1
 
-    .line 40
     :cond_0
     invoke-interface {v0}, Lcom/qmuiteam/qmui/arch/c;->d()Landroidx/fragment/app/FragmentContainerView;
 
     move-result-object v1
 
-    .line 41
     iget-object v2, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-static {v2}, Lcom/qmuiteam/qmui/arch/b;->g(Lcom/qmuiteam/qmui/arch/b;)Landroid/view/View;
@@ -626,17 +567,14 @@
 
     invoke-static {v2}, Lcom/qmuiteam/qmui/util/f;->a(Landroid/view/View;)Z
 
-    .line 42
     iget-object v2, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {v2}, Lcom/qmuiteam/qmui/arch/b;->q()V
 
-    .line 43
     invoke-interface {v0}, Lcom/qmuiteam/qmui/arch/c;->f()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v0
 
-    .line 44
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->getBackStackEntryCount()I
 
     move-result v2
@@ -647,7 +585,6 @@
 
     if-le v2, v3, :cond_1
 
-    .line 45
     new-instance v2, Lcom/qmuiteam/qmui/arch/b$f$b;
 
     invoke-direct {v2, p0, v1, p2, p1}, Lcom/qmuiteam/qmui/arch/b$f$b;-><init>(Lcom/qmuiteam/qmui/arch/b$f;Landroidx/fragment/app/FragmentContainerView;II)V
@@ -656,7 +593,6 @@
 
     goto/16 :goto_1
 
-    .line 46
     :cond_1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
@@ -666,7 +602,6 @@
 
     if-nez v0, :cond_3
 
-    .line 47
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getActivity()Landroidx/fragment/app/FragmentActivity;
@@ -675,7 +610,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 48
     invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
     move-result-object v1
@@ -686,19 +620,16 @@
 
     check-cast v1, Landroid/view/ViewGroup;
 
-    .line 49
     invoke-static {}, Lcom/qmuiteam/qmui/arch/f;->b()Lcom/qmuiteam/qmui/arch/f;
 
     move-result-object v2
 
-    .line 50
     invoke-virtual {v2, v0}, Lcom/qmuiteam/qmui/arch/f;->a(Landroid/app/Activity;)Landroid/app/Activity;
 
     move-result-object v2
 
     const/4 v3, 0x0
 
-    .line 51
     invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
 
     move-result-object v5
@@ -707,7 +638,6 @@
 
     if-eqz v5, :cond_2
 
-    .line 52
     iget-object v4, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {v1, v3}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
@@ -720,7 +650,6 @@
 
     goto :goto_0
 
-    .line 53
     :cond_2
     iget-object v5, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
@@ -736,7 +665,6 @@
 
     invoke-static {v5, v6}, Lcom/qmuiteam/qmui/arch/b;->a(Lcom/qmuiteam/qmui/arch/b;Lcom/qmuiteam/qmui/arch/SwipeBackgroundView;)Lcom/qmuiteam/qmui/arch/SwipeBackgroundView;
 
-    .line 54
     iget-object v5, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-static {v5}, Lcom/qmuiteam/qmui/arch/b;->f(Lcom/qmuiteam/qmui/arch/b;)Lcom/qmuiteam/qmui/arch/SwipeBackgroundView;
@@ -749,7 +677,6 @@
 
     invoke-virtual {v1, v5, v3, v6}, Landroid/view/ViewGroup;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
-    .line 55
     :goto_0
     iget-object v3, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
@@ -765,7 +692,6 @@
 
     invoke-virtual {v3, v2, v0, v4}, Lcom/qmuiteam/qmui/arch/SwipeBackgroundView;->a(Landroid/app/Activity;Landroid/app/Activity;Z)V
 
-    .line 56
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/arch/b;->f(Lcom/qmuiteam/qmui/arch/b;)Lcom/qmuiteam/qmui/arch/SwipeBackgroundView;
@@ -774,7 +700,6 @@
 
     iget-object v2, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
-    .line 57
     invoke-virtual {v1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -787,7 +712,6 @@
 
     move-result p1
 
-    .line 58
     invoke-static {v0, p2, p1}, Lcom/qmuiteam/qmui/arch/SwipeBackLayout;->a(Landroid/view/View;II)V
 
     :cond_3
@@ -800,7 +724,6 @@
 
     const/high16 v0, 0x3f800000    # 1.0f
 
-    .line 23
     invoke-static {v0, p3}, Ljava/lang/Math;->min(FF)F
 
     move-result p3
@@ -811,7 +734,6 @@
 
     move-result p3
 
-    .line 24
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {v1}, Lcom/qmuiteam/qmui/arch/b;->m()Lcom/qmuiteam/qmui/arch/c;
@@ -820,7 +742,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 25
     invoke-interface {v1}, Lcom/qmuiteam/qmui/arch/c;->d()Landroidx/fragment/app/FragmentContainerView;
 
     move-result-object v2
@@ -829,16 +750,13 @@
 
     goto :goto_1
 
-    .line 26
     :cond_0
     invoke-interface {v1}, Lcom/qmuiteam/qmui/arch/c;->d()Landroidx/fragment/app/FragmentContainerView;
 
     move-result-object v1
 
-    .line 27
     iget-object v2, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
-    .line 28
     invoke-virtual {v1}, Landroid/widget/FrameLayout;->getContext()Landroid/content/Context;
 
     move-result-object v3
@@ -847,7 +765,6 @@
 
     move-result p1
 
-    .line 29
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 
     move-result p1
@@ -860,7 +777,6 @@
 
     float-to-int p1, p1
 
-    .line 30
     invoke-virtual {v1}, Landroid/widget/FrameLayout;->getChildCount()I
 
     move-result p3
@@ -870,12 +786,10 @@
     :goto_0
     if-ltz p3, :cond_2
 
-    .line 31
     invoke-virtual {v1, p3}, Landroid/widget/FrameLayout;->getChildAt(I)Landroid/view/View;
 
     move-result-object v0
 
-    .line 32
     sget v2, Lcom/qmuiteam/qmui/arch/R$id;->qmui_arch_swipe_layout_in_back:I
 
     invoke-virtual {v0, v2}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
@@ -884,14 +798,12 @@
 
     const-string v3, "swipe_back_view"
 
-    .line 33
     invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 34
     invoke-static {v0, p2, p1}, Lcom/qmuiteam/qmui/arch/SwipeBackLayout;->a(Landroid/view/View;II)V
 
     :cond_1
@@ -899,7 +811,6 @@
 
     goto :goto_0
 
-    .line 35
     :cond_2
     iget-object p3, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
@@ -909,7 +820,6 @@
 
     if-eqz p3, :cond_3
 
-    .line 36
     iget-object p3, p0, Lcom/qmuiteam/qmui/arch/b$f;->b:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-static {p3}, Lcom/qmuiteam/qmui/arch/b;->f(Lcom/qmuiteam/qmui/arch/b;)Lcom/qmuiteam/qmui/arch/SwipeBackgroundView;

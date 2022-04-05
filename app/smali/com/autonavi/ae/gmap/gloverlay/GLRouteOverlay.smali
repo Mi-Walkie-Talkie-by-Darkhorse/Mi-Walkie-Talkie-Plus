@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;
 .super Lcom/autonavi/ae/gmap/gloverlay/GLLineOverlay;
-.source "GLRouteOverlay.java"
 
 
 # static fields
@@ -21,10 +20,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/autonavi/ae/gmap/gloverlay/GLLineOverlay;-><init>(ILcom/autonavi/amap/mapcore/interfaces/IAMap;IZ)V
 
-    .line 2
     sget-object p1, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay$EAMapOverlayTpye;->AMAPOVERLAY_ROUTE:Lcom/autonavi/ae/gmap/gloverlay/GLOverlay$EAMapOverlayTpye;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
@@ -43,7 +40,6 @@
 .method static synthetic access$000(J)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;->nativeAddRouteName(J)V
 
     return-void
@@ -52,7 +48,6 @@
 .method static synthetic access$100(J)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;->nativeRemoveRouteName(J)V
 
     return-void
@@ -98,7 +93,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 1
     iget v3, v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty;->mX1:F
 
     iget v4, v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty;->mY1:F
@@ -115,12 +109,10 @@
 
     invoke-static/range {v1 .. v8}, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;->nativeSetRouteParamsTextureInfo(JFFFFFF)V
 
-    .line 2
     iget-boolean v1, v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty;->isUseCap:Z
 
     if-eqz v1, :cond_0
 
-    .line 3
     iget v4, v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty;->mCapX1:F
 
     iget v5, v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty;->mCapY1:F
@@ -133,11 +125,9 @@
 
     invoke-static/range {v2 .. v7}, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;->nativeSetRouteParamsCapTextureInfo(JFFFF)V
 
-    .line 4
     :cond_0
     iget-object v1, v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty;->euRouteTexture:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 5
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
     move-result v4
@@ -156,10 +146,8 @@
 
     move-wide/from16 v2, p1
 
-    .line 6
     invoke-static/range {v2 .. v9}, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;->nativeSetRouteParamsWAC(JIIIIII)V
 
-    .line 7
     iget-boolean v12, v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty;->isLineExtract:Z
 
     iget-boolean v13, v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty;->isUseColor:Z
@@ -185,7 +173,6 @@
 
     move-object v1, p2
 
-    .line 1
     iget-wide v2, v0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v4, 0x0
@@ -204,11 +191,9 @@
 
     goto :goto_3
 
-    .line 2
     :cond_0
     array-length v2, v1
 
-    .line 3
     new-array v11, v2, [J
 
     const/4 v12, 0x0
@@ -232,14 +217,12 @@
     :goto_1
     if-ge v3, v2, :cond_2
 
-    .line 4
     invoke-static {}, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;->nativeCreateRouteParams()J
 
     move-result-wide v4
 
     aput-wide v4, v11, v3
 
-    .line 5
     aget-wide v4, v11, v3
 
     aget-object v6, v1, v3
@@ -250,7 +233,6 @@
 
     goto :goto_1
 
-    .line 6
     :cond_2
     iget-wide v3, v0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
@@ -267,7 +249,6 @@
     :goto_2
     if-ge v12, v2, :cond_3
 
-    .line 7
     aget-wide v3, v11, v12
 
     invoke-static {v3, v4}, Lcom/autonavi/ae/gmap/gloverlay/GLRouteOverlay;->nativeDestoryRouteParams(J)V
@@ -276,7 +257,6 @@
 
     goto :goto_2
 
-    .line 8
     :cond_3
     iget-object v1, v0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
@@ -296,7 +276,6 @@
 .method public removeRouteName(Z)V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -307,7 +286,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 

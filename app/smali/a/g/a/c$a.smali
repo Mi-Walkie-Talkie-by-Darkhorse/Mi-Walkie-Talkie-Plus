@@ -1,6 +1,5 @@
 .class public abstract La/g/a/c$a;
 .super Ljava/lang/Object;
-.source "SupportSQLiteOpenHelper.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, La/g/a/c$a;->a:I
 
     return-void
@@ -36,7 +33,6 @@
 
     const-string v0, ":memory:"
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v0
@@ -55,7 +51,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -75,7 +70,6 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     :try_start_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -83,7 +77,6 @@
 
     if-lt v0, v2, :cond_1
 
-    .line 4
     new-instance v0, Ljava/io/File;
 
     invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
@@ -94,7 +87,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     :try_start_1
     new-instance v0, Ljava/io/File;
@@ -107,7 +99,6 @@
 
     if-nez v0, :cond_2
 
-    .line 6
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -134,7 +125,6 @@
     :try_start_2
     const-string v0, "error while deleting corrupted database file"
 
-    .line 7
     invoke-static {v1, v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
@@ -146,7 +136,6 @@
 
     const-string v0, "delete failed: "
 
-    .line 8
     invoke-static {v1, v0, p1}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     :cond_2
@@ -168,7 +157,6 @@
 .method public b(La/g/a/b;)V
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -191,14 +179,12 @@
 
     invoke-static {v1, v0}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     invoke-interface {p1}, La/g/a/b;->isOpen()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3
     invoke-interface {p1}, La/g/a/b;->getPath()Ljava/lang/String;
 
     move-result-object p1
@@ -210,7 +196,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 4
     :try_start_0
     invoke-interface {p1}, La/g/a/b;->getAttachedDbs()Ljava/util/List;
 
@@ -226,7 +211,6 @@
 
     goto :goto_1
 
-    .line 5
     :catch_0
     :goto_0
     :try_start_1
@@ -240,7 +224,6 @@
     :goto_1
     if-eqz v0, :cond_1
 
-    .line 6
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -258,7 +241,6 @@
 
     check-cast v0, Landroid/util/Pair;
 
-    .line 7
     iget-object v0, v0, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/String;
@@ -267,7 +249,6 @@
 
     goto :goto_2
 
-    .line 8
     :cond_1
     invoke-interface {p1}, La/g/a/b;->getPath()Ljava/lang/String;
 
@@ -284,7 +265,6 @@
     :goto_3
     if-eqz v0, :cond_3
 
-    .line 9
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -302,7 +282,6 @@
 
     check-cast v0, Landroid/util/Pair;
 
-    .line 10
     iget-object v0, v0, Landroid/util/Pair;->second:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/String;
@@ -311,7 +290,6 @@
 
     goto :goto_4
 
-    .line 11
     :cond_3
     invoke-interface {p1}, La/g/a/b;->getPath()Ljava/lang/String;
 

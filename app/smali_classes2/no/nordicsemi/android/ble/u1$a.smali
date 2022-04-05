@@ -1,6 +1,5 @@
 .class Lno/nordicsemi/android/ble/u1$a;
 .super Landroid/content/BroadcastReceiver;
-.source "BleManager.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lno/nordicsemi/android/ble/u1;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lno/nordicsemi/android/ble/u1$a;->a:Lno/nordicsemi/android/ble/u1;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -37,14 +35,12 @@
 
     const-string p1, "android.bluetooth.device.extra.DEVICE"
 
-    .line 1
     invoke-virtual {p2, p1}, Landroid/content/Intent;->getParcelableExtra(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p1
 
     check-cast p1, Landroid/bluetooth/BluetoothDevice;
 
-    .line 2
     iget-object v0, p0, Lno/nordicsemi/android/ble/u1$a;->a:Lno/nordicsemi/android/ble/u1;
 
     iget-object v0, v0, Lno/nordicsemi/android/ble/u1;->b:Lno/nordicsemi/android/ble/u1$b;
@@ -57,7 +53,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 3
     invoke-virtual {p1}, Landroid/bluetooth/BluetoothDevice;->getAddress()Ljava/lang/String;
 
     move-result-object v1
@@ -79,12 +74,10 @@
 
     const-string v1, "android.bluetooth.device.extra.PAIRING_VARIANT"
 
-    .line 4
     invoke-virtual {p2, v1, v0}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result p2
 
-    .line 5
     iget-object v0, p0, Lno/nordicsemi/android/ble/u1$a;->a:Lno/nordicsemi/android/ble/u1;
 
     const/4 v1, 0x3
@@ -97,7 +90,6 @@
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6
     invoke-static {p2}, Lno/nordicsemi/android/ble/x2/a;->b(I)Ljava/lang/String;
 
     move-result-object v3
@@ -118,10 +110,8 @@
 
     move-result-object v2
 
-    .line 7
     invoke-virtual {v0, v1, v2}, Lno/nordicsemi/android/ble/u1;->a(ILjava/lang/String;)V
 
-    .line 8
     iget-object v0, p0, Lno/nordicsemi/android/ble/u1$a;->a:Lno/nordicsemi/android/ble/u1;
 
     invoke-virtual {v0, p1, p2}, Lno/nordicsemi/android/ble/u1;->c(Landroid/bluetooth/BluetoothDevice;I)V

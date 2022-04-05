@@ -1,6 +1,5 @@
 .class Lcom/afollestad/materialdialogs/MaterialDialog$b;
 .super Ljava/lang/Object;
-.source "MaterialDialog.java"
 
 # interfaces
 .implements Landroid/text/TextWatcher;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/afollestad/materialdialogs/MaterialDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/afollestad/materialdialogs/MaterialDialog$b;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,7 +48,6 @@
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 1
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object p2
@@ -59,7 +56,6 @@
 
     move-result p2
 
-    .line 2
     iget-object p3, p0, Lcom/afollestad/materialdialogs/MaterialDialog$b;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
     iget-object p3, p3, Lcom/afollestad/materialdialogs/MaterialDialog;->c:Lcom/afollestad/materialdialogs/MaterialDialog$d;
@@ -76,7 +72,6 @@
 
     const/4 p4, 0x1
 
-    .line 3
     :cond_0
     iget-object p3, p0, Lcom/afollestad/materialdialogs/MaterialDialog$b;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
@@ -88,16 +83,13 @@
 
     xor-int/lit8 v0, p4, 0x1
 
-    .line 4
     invoke-virtual {p3, v0}, Landroid/view/View;->setEnabled(Z)V
 
-    .line 5
     :cond_1
     iget-object p3, p0, Lcom/afollestad/materialdialogs/MaterialDialog$b;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
     invoke-virtual {p3, p2, p4}, Lcom/afollestad/materialdialogs/MaterialDialog;->a(IZ)V
 
-    .line 6
     iget-object p2, p0, Lcom/afollestad/materialdialogs/MaterialDialog$b;->a:Lcom/afollestad/materialdialogs/MaterialDialog;
 
     iget-object p3, p2, Lcom/afollestad/materialdialogs/MaterialDialog;->c:Lcom/afollestad/materialdialogs/MaterialDialog$d;
@@ -106,7 +98,6 @@
 
     if-eqz p4, :cond_2
 
-    .line 7
     iget-object p3, p3, Lcom/afollestad/materialdialogs/MaterialDialog$d;->o0:Lcom/afollestad/materialdialogs/MaterialDialog$f;
 
     invoke-interface {p3, p2, p1}, Lcom/afollestad/materialdialogs/MaterialDialog$f;->a(Lcom/afollestad/materialdialogs/MaterialDialog;Ljava/lang/CharSequence;)V

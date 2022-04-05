@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d;
 .super Ljava/lang/Object;
-.source "MyTrackActivity.java"
 
 # interfaces
 .implements Landroid/widget/AdapterView$OnItemLongClickListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d;->a:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
@@ -60,14 +57,12 @@
 
     const/4 p2, 0x1
 
-    .line 2
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a(Z)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     const p4, 0x7f110093
 
     const/4 p5, 0x0
 
-    .line 3
     invoke-virtual {p1, p4, p5}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     new-instance p4, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$d$a;
@@ -76,10 +71,8 @@
 
     const p3, 0x7f1100a0
 
-    .line 4
     invoke-virtual {p1, p3, p4}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->c(ILandroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
-    .line 5
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a()Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->d()V

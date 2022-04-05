@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/util/k/a$b;
 .super Ljava/lang/Object;
-.source "FactoryPools.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/util/k/a$d;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +41,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/bumptech/glide/util/k/a$b;->create()Ljava/util/List;
 
     move-result-object v0
@@ -64,7 +61,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V

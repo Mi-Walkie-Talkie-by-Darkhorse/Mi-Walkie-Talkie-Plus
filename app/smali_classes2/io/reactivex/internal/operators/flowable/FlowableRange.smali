@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableRange;
 .super Lio/reactivex/Flowable;
-.source "FlowableRange.java"
 
 
 # annotations
@@ -31,15 +30,12 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Flowable;-><init>()V
 
-    .line 2
     iput p1, p0, Lio/reactivex/internal/operators/flowable/FlowableRange;->start:I
 
     add-int/2addr p1, p2
 
-    .line 3
     iput p1, p0, Lio/reactivex/internal/operators/flowable/FlowableRange;->end:I
 
     return-void
@@ -59,12 +55,10 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p1, Lio/reactivex/internal/fuseable/ConditionalSubscriber;
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableRange$RangeConditionalSubscription;
 
     move-object v1, p1
@@ -81,7 +75,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableRange$RangeSubscription;
 

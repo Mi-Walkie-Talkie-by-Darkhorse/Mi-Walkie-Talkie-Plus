@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/content/pm/ShortcutManagerCompat$ShortcutMatchFlags;
 .super Ljava/lang/Object;
-.source "ShortcutManagerCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

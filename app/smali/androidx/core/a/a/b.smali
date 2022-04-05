@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/a/a/b;
 .super Ljava/lang/Object;
-.source "SupportMenuItem.java"
 
 # interfaces
 .implements Landroid/view/MenuItem;

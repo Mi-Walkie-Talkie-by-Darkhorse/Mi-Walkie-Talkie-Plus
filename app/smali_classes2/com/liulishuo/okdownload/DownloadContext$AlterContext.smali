@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/DownloadContext$AlterContext;
 .super Ljava/lang/Object;
-.source "DownloadContext.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method constructor <init>(Lcom/liulishuo/okdownload/DownloadContext;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/liulishuo/okdownload/DownloadContext$AlterContext;->context:Lcom/liulishuo/okdownload/DownloadContext;
 
     return-void
@@ -36,7 +33,6 @@
 .method public replaceTask(Lcom/liulishuo/okdownload/DownloadTask;Lcom/liulishuo/okdownload/DownloadTask;)Lcom/liulishuo/okdownload/DownloadContext$AlterContext;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/DownloadContext$AlterContext;->context:Lcom/liulishuo/okdownload/DownloadContext;
 
     invoke-static {v0}, Lcom/liulishuo/okdownload/DownloadContext;->access$1200(Lcom/liulishuo/okdownload/DownloadContext;)[Lcom/liulishuo/okdownload/DownloadTask;
@@ -45,18 +41,15 @@
 
     const/4 v1, 0x0
 
-    .line 2
     :goto_0
     array-length v2, v0
 
     if-ge v1, v2, :cond_1
 
-    .line 3
     aget-object v2, v0, v1
 
     if-ne v2, p1, :cond_0
 
-    .line 4
     aput-object p2, v0, v1
 
     :cond_0

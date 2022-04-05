@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/b/g;
 .super Ljava/lang/Object;
-.source "ILineRadarDataSet.java"
 
 # interfaces
 .implements Lb/a/a/a/e/b/h;

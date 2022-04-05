@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/exception/InvalidRangePrameterException;
 .super Lcom/xiaomi/infra/galaxy/fds/exception/GalaxyFDSException;
-.source "InvalidRangePrameterException.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>([J)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/xiaomi/infra/galaxy/fds/exception/GalaxyFDSException;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/exception/InvalidRangePrameterException;->range:[J
 
     return-void
@@ -25,7 +22,6 @@
 .method public getError()Lcom/xiaomi/infra/galaxy/fds/FDSError;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/xiaomi/infra/galaxy/fds/FDSError;->InvalidRequestRange:Lcom/xiaomi/infra/galaxy/fds/FDSError;
 
     return-object v0
@@ -34,17 +30,14 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 1
     invoke-super {p0}, Lcom/xiaomi/infra/galaxy/fds/exception/GalaxyFDSException;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/xiaomi/infra/galaxy/fds/exception/InvalidRangePrameterException;->range:[J
 
     if-eqz v1, :cond_0
 
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V

@@ -1,6 +1,5 @@
 .class final Lcom/squareup/otto/g$b;
 .super Ljava/lang/Object;
-.source "ThreadEnforcer.java"
 
 # interfaces
 .implements Lcom/squareup/otto/g;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public a(Lcom/squareup/otto/b;)V
     .locals 3
 
-    .line 1
     invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -45,7 +42,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

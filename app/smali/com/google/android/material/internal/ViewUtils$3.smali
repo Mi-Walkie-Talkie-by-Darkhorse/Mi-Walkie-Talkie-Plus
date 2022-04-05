@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/internal/ViewUtils$3;
 .super Ljava/lang/Object;
-.source "ViewUtils.java"
 
 # interfaces
 .implements Landroidx/core/view/r;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/google/android/material/internal/ViewUtils$OnApplyWindowInsetsListener;Lcom/google/android/material/internal/ViewUtils$RelativePadding;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/internal/ViewUtils$3;->val$listener:Lcom/google/android/material/internal/ViewUtils$OnApplyWindowInsetsListener;
 
     iput-object p2, p0, Lcom/google/android/material/internal/ViewUtils$3;->val$initialPadding:Lcom/google/android/material/internal/ViewUtils$RelativePadding;
@@ -42,7 +40,6 @@
 .method public onApplyWindowInsets(Landroid/view/View;Landroidx/core/view/WindowInsetsCompat;)Landroidx/core/view/WindowInsetsCompat;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/internal/ViewUtils$3;->val$listener:Lcom/google/android/material/internal/ViewUtils$OnApplyWindowInsetsListener;
 
     new-instance v1, Lcom/google/android/material/internal/ViewUtils$RelativePadding;

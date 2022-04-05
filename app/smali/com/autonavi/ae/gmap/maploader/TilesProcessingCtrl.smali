@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;
 .super Ljava/lang/Object;
-.source "TilesProcessingCtrl.java"
 
 
 # static fields
@@ -26,10 +25,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
@@ -38,7 +35,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;->mRequireSize:I
 
     return-void
@@ -51,7 +47,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;->mProcessingTiles:Ljava/util/Hashtable;
 
@@ -63,7 +58,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     monitor-exit p0
 
     return-void
@@ -81,7 +75,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;->mProcessingTiles:Ljava/util/Hashtable;
 
@@ -106,19 +99,16 @@
 
     check-cast v1, Ljava/util/Map$Entry;
 
-    .line 2
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;
 
-    .line 3
     invoke-virtual {v1}, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;->recycle()V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;->mProcessingTiles:Ljava/util/Hashtable;
 
@@ -126,7 +116,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     monitor-exit p0
 
     return-void
@@ -134,13 +123,11 @@
     :catchall_0
     move-exception v0
 
-    .line 6
     :try_start_1
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 7
     monitor-exit p0
 
     return-void
@@ -158,7 +145,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;->mProcessingTiles:Ljava/util/Hashtable;
 
@@ -185,7 +171,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;->mProcessingTiles:Ljava/util/Hashtable;
 
@@ -203,7 +188,6 @@
 
     const/4 v0, 0x1
 
-    .line 2
     :cond_0
     monitor-exit p0
 
@@ -222,7 +206,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/TilesProcessingCtrl;->mProcessingTiles:Ljava/util/Hashtable;
 
@@ -232,12 +215,10 @@
 
     check-cast p1, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;
 
-    .line 2
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/maploader/ProcessingTile;->recycle()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     monitor-exit p0
 
     return-void

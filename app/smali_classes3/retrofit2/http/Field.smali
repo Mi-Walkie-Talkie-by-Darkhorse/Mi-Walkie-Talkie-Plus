@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lretrofit2/http/Field;
 .super Ljava/lang/Object;
-.source "Field.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

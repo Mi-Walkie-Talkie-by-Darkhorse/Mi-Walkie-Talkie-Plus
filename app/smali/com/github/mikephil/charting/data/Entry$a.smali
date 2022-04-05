@@ -1,6 +1,5 @@
 .class final Lcom/github/mikephil/charting/data/Entry$a;
 .super Ljava/lang/Object;
-.source "Entry.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 .method public createFromParcel(Landroid/os/Parcel;)Lcom/github/mikephil/charting/data/Entry;
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/github/mikephil/charting/data/Entry;
 
     invoke-direct {v0, p1}, Lcom/github/mikephil/charting/data/Entry;-><init>(Landroid/os/Parcel;)V
@@ -52,7 +49,6 @@
 .method public bridge synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/github/mikephil/charting/data/Entry$a;->createFromParcel(Landroid/os/Parcel;)Lcom/github/mikephil/charting/data/Entry;
 
     move-result-object p1
@@ -63,7 +59,6 @@
 .method public newArray(I)[Lcom/github/mikephil/charting/data/Entry;
     .locals 0
 
-    .line 2
     new-array p1, p1, [Lcom/github/mikephil/charting/data/Entry;
 
     return-object p1
@@ -72,7 +67,6 @@
 .method public bridge synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/github/mikephil/charting/data/Entry$a;->newArray(I)[Lcom/github/mikephil/charting/data/Entry;
 
     move-result-object p1

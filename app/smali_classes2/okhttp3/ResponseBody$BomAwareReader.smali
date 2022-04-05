@@ -1,6 +1,5 @@
 .class final Lokhttp3/ResponseBody$BomAwareReader;
 .super Ljava/io/Reader;
-.source "ResponseBody.java"
 
 
 # annotations
@@ -31,13 +30,10 @@
 .method constructor <init>(Lokio/BufferedSource;Ljava/nio/charset/Charset;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/io/Reader;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lokio/BufferedSource;
 
-    .line 3
     iput-object p2, p0, Lokhttp3/ResponseBody$BomAwareReader;->charset:Ljava/nio/charset/Charset;
 
     return-void
@@ -55,20 +51,16 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->closed:Z
 
-    .line 2
     iget-object v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->delegate:Ljava/io/Reader;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {v0}, Ljava/io/Reader;->close()V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lokio/BufferedSource;
 
@@ -86,17 +78,14 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->closed:Z
 
     if-nez v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->delegate:Ljava/io/Reader;
 
     if-nez v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lokio/BufferedSource;
 
     iget-object v1, p0, Lokhttp3/ResponseBody$BomAwareReader;->charset:Ljava/nio/charset/Charset;
@@ -105,7 +94,6 @@
 
     move-result-object v0
 
-    .line 4
     new-instance v1, Ljava/io/InputStreamReader;
 
     iget-object v2, p0, Lokhttp3/ResponseBody$BomAwareReader;->source:Lokio/BufferedSource;
@@ -120,7 +108,6 @@
 
     move-object v0, v1
 
-    .line 5
     :cond_0
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/Reader;->read([CII)I
 
@@ -128,7 +115,6 @@
 
     return p1
 
-    .line 6
     :cond_1
     new-instance p1, Ljava/io/IOException;
 

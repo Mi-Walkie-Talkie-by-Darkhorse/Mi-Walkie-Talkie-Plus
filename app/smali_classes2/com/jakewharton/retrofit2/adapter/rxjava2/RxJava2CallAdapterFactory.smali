@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/retrofit2/adapter/rxjava2/RxJava2CallAdapterFactory;
 .super Lretrofit2/CallAdapter$Factory;
-.source "RxJava2CallAdapterFactory.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method private constructor <init>(Lio/reactivex/Scheduler;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lretrofit2/CallAdapter$Factory;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/RxJava2CallAdapterFactory;->scheduler:Lio/reactivex/Scheduler;
 
     return-void
@@ -23,7 +20,6 @@
 .method public static create()Lcom/jakewharton/retrofit2/adapter/rxjava2/RxJava2CallAdapterFactory;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/jakewharton/retrofit2/adapter/rxjava2/RxJava2CallAdapterFactory;
 
     const/4 v1, 0x0
@@ -38,14 +34,12 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     new-instance v0, Lcom/jakewharton/retrofit2/adapter/rxjava2/RxJava2CallAdapterFactory;
 
     invoke-direct {v0, p0}, Lcom/jakewharton/retrofit2/adapter/rxjava2/RxJava2CallAdapterFactory;-><init>(Lio/reactivex/Scheduler;)V
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/lang/NullPointerException;
 
@@ -73,17 +67,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lretrofit2/CallAdapter$Factory;->getRawType(Ljava/lang/reflect/Type;)Ljava/lang/Class;
 
     move-result-object p2
 
-    .line 2
     const-class p3, Lio/reactivex/Completable;
 
     if-ne p2, p3, :cond_0
 
-    .line 3
     new-instance p1, Lcom/jakewharton/retrofit2/adapter/rxjava2/RxJava2CallAdapter;
 
     const-class v1, Ljava/lang/Void;
@@ -108,7 +99,6 @@
 
     return-object p1
 
-    .line 4
     :cond_0
     const-class p3, Lio/reactivex/Flowable;
 
@@ -125,7 +115,6 @@
     :cond_1
     const/4 v7, 0x0
 
-    .line 5
     :goto_0
     const-class p3, Lio/reactivex/Single;
 
@@ -138,7 +127,6 @@
     :cond_2
     const/4 v8, 0x0
 
-    .line 6
     :goto_1
     const-class p3, Lio/reactivex/Maybe;
 
@@ -151,7 +139,6 @@
     :cond_3
     const/4 v9, 0x0
 
-    .line 7
     :goto_2
     const-class p3, Lio/reactivex/Observable;
 
@@ -167,7 +154,6 @@
 
     return-object p1
 
-    .line 8
     :cond_4
     instance-of p2, p1, Ljava/lang/reflect/ParameterizedType;
 
@@ -189,7 +175,6 @@
     :cond_6
     const-string p1, "Flowable"
 
-    .line 9
     :goto_3
     new-instance p2, Ljava/lang/IllegalStateException;
 
@@ -223,7 +208,6 @@
 
     throw p2
 
-    .line 10
     :cond_7
     check-cast p1, Ljava/lang/reflect/ParameterizedType;
 
@@ -231,22 +215,18 @@
 
     move-result-object p1
 
-    .line 11
     invoke-static {p1}, Lretrofit2/CallAdapter$Factory;->getRawType(Ljava/lang/reflect/Type;)Ljava/lang/Class;
 
     move-result-object p2
 
-    .line 12
     const-class p3, Lretrofit2/Response;
 
     if-ne p2, p3, :cond_9
 
-    .line 13
     instance-of p2, p1, Ljava/lang/reflect/ParameterizedType;
 
     if-eqz p2, :cond_8
 
-    .line 14
     check-cast p1, Ljava/lang/reflect/ParameterizedType;
 
     invoke-static {v1, p1}, Lretrofit2/CallAdapter$Factory;->getParameterUpperBound(ILjava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/Type;
@@ -262,7 +242,6 @@
 
     goto :goto_5
 
-    .line 15
     :cond_8
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -272,18 +251,15 @@
 
     throw p1
 
-    .line 16
     :cond_9
     const-class p3, Lcom/jakewharton/retrofit2/adapter/rxjava2/Result;
 
     if-ne p2, p3, :cond_b
 
-    .line 17
     instance-of p2, p1, Ljava/lang/reflect/ParameterizedType;
 
     if-eqz p2, :cond_a
 
-    .line 18
     check-cast p1, Ljava/lang/reflect/ParameterizedType;
 
     invoke-static {v1, p1}, Lretrofit2/CallAdapter$Factory;->getParameterUpperBound(ILjava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/Type;
@@ -296,7 +272,6 @@
 
     goto :goto_4
 
-    .line 19
     :cond_a
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -313,7 +288,6 @@
 
     const/4 v6, 0x1
 
-    .line 20
     :goto_5
     new-instance p1, Lcom/jakewharton/retrofit2/adapter/rxjava2/RxJava2CallAdapter;
 

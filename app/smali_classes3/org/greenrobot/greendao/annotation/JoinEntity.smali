@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/greenrobot/greendao/annotation/JoinEntity;
 .super Ljava/lang/Object;
-.source "JoinEntity.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

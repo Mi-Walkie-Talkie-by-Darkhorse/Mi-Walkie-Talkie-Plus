@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/api/IMapController;
 .super Ljava/lang/Object;
-.source "IMapController.java"
 
 
 # virtual methods

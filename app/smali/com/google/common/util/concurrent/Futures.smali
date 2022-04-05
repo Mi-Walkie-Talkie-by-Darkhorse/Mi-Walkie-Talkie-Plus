@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/util/concurrent/Futures;
 .super Ljava/lang/Object;
-.source "Futures.java"
 
 
 # annotations
@@ -56,14 +55,12 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Futures$4;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/Futures$4;-><init>()V
 
     sput-object v0, Lcom/google/common/util/concurrent/Futures;->DEREFERENCER:Lcom/google/common/util/concurrent/AsyncFunction;
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/Ordering;->natural()Lcom/google/common/collect/Ordering;
 
     move-result-object v0
@@ -88,7 +85,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -108,7 +104,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->directExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object v0
@@ -134,15 +129,12 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     new-instance v0, Lcom/google/common/util/concurrent/Futures$6;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/util/concurrent/Futures$6;-><init>(Lcom/google/common/util/concurrent/ListenableFuture;Lcom/google/common/util/concurrent/FutureCallback;)V
 
-    .line 4
     invoke-interface {p0, v0, p2}, Lcom/google/common/util/concurrent/ListenableFuture;->addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
     return-void
@@ -168,7 +160,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/collect/ImmutableList;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -204,7 +195,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/ImmutableList;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -238,7 +228,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Futures$2;
 
     invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/Futures$2;-><init>(Lcom/google/common/base/Function;)V
@@ -262,7 +251,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/util/concurrent/Futures;->DEREFERENCER:Lcom/google/common/util/concurrent/AsyncFunction;
 
     invoke-static {p0, v0}, Lcom/google/common/util/concurrent/Futures;->transform(Lcom/google/common/util/concurrent/ListenableFuture;Lcom/google/common/util/concurrent/AsyncFunction;)Lcom/google/common/util/concurrent/ListenableFuture;
@@ -295,13 +283,10 @@
         }
     .end annotation
 
-    .line 8
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 9
     invoke-static {p3}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
     const-class v0, Ljava/lang/RuntimeException;
 
     invoke-virtual {v0, p4}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -322,7 +307,6 @@
 
     invoke-static {v0, v2, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 11
     :try_start_0
     invoke-interface {p0, p1, p2, p3}, Ljava/util/concurrent/Future;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
 
@@ -337,14 +321,12 @@
     :catch_0
     move-exception p0
 
-    .line 12
     invoke-virtual {p0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
 
     invoke-static {p0, p4}, Lcom/google/common/util/concurrent/Futures;->wrapAndThrowExceptionOrError(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 13
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
@@ -354,7 +336,6 @@
     :catch_1
     move-exception p0
 
-    .line 14
     invoke-static {p4, p0}, Lcom/google/common/util/concurrent/Futures;->newWithCause(Ljava/lang/Class;Ljava/lang/Throwable;)Ljava/lang/Exception;
 
     move-result-object p0
@@ -364,14 +345,12 @@
     :catch_2
     move-exception p0
 
-    .line 15
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object p1
 
     invoke-virtual {p1}, Ljava/lang/Thread;->interrupt()V
 
-    .line 16
     invoke-static {p4, p0}, Lcom/google/common/util/concurrent/Futures;->newWithCause(Ljava/lang/Class;Ljava/lang/Throwable;)Ljava/lang/Exception;
 
     move-result-object p0
@@ -401,10 +380,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     const-class v0, Ljava/lang/RuntimeException;
 
     invoke-virtual {v0, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -425,7 +402,6 @@
 
     invoke-static {v0, v2, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     :try_start_0
     invoke-interface {p0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
 
@@ -439,14 +415,12 @@
     :catch_0
     move-exception p0
 
-    .line 4
     invoke-virtual {p0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
 
     invoke-static {p0, p1}, Lcom/google/common/util/concurrent/Futures;->wrapAndThrowExceptionOrError(Ljava/lang/Throwable;Ljava/lang/Class;)V
 
-    .line 5
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
@@ -456,14 +430,12 @@
     :catch_1
     move-exception p0
 
-    .line 6
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
 
-    .line 7
     invoke-static {p1, p0}, Lcom/google/common/util/concurrent/Futures;->newWithCause(Ljava/lang/Class;Ljava/lang/Throwable;)Ljava/lang/Exception;
 
     move-result-object p0
@@ -483,10 +455,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     :try_start_0
     invoke-static {p0}, Lcom/google/common/util/concurrent/Uninterruptibles;->getUninterruptibly(Ljava/util/concurrent/Future;)Ljava/lang/Object;
 
@@ -499,14 +469,12 @@
     :catch_0
     move-exception p0
 
-    .line 3
     invoke-virtual {p0}, Ljava/util/concurrent/ExecutionException;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
 
     invoke-static {p0}, Lcom/google/common/util/concurrent/Futures;->wrapAndThrowUnchecked(Ljava/lang/Throwable;)V
 
-    .line 4
     new-instance p0, Ljava/lang/AssertionError;
 
     invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
@@ -526,7 +494,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Futures$ImmediateCancelledFuture;
 
     invoke-direct {v0}, Lcom/google/common/util/concurrent/Futures$ImmediateCancelledFuture;-><init>()V
@@ -552,7 +519,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulCheckedFuture;
 
     invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulCheckedFuture;-><init>(Ljava/lang/Object;)V
@@ -574,10 +540,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/Futures$ImmediateFailedCheckedFuture;
 
     invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/Futures$ImmediateFailedCheckedFuture;-><init>(Ljava/lang/Exception;)V
@@ -599,10 +563,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/Futures$ImmediateFailedFuture;
 
     invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/Futures$ImmediateFailedFuture;-><init>(Ljava/lang/Throwable;)V
@@ -626,7 +588,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulFuture;
 
     invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulFuture;-><init>(Ljava/lang/Object;)V
@@ -654,17 +615,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/Queues;->newConcurrentLinkedQueue()Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     move-result-object v0
 
-    .line 2
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->builder()Lcom/google/common/collect/ImmutableList$Builder;
 
     move-result-object v1
 
-    .line 3
     new-instance v2, Lcom/google/common/util/concurrent/SerializingExecutor;
 
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->directExecutor()Ljava/util/concurrent/Executor;
@@ -673,7 +631,6 @@
 
     invoke-direct {v2, v3}, Lcom/google/common/util/concurrent/SerializingExecutor;-><init>(Ljava/util/concurrent/Executor;)V
 
-    .line 4
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object p0
@@ -691,27 +648,22 @@
 
     check-cast v3, Lcom/google/common/util/concurrent/ListenableFuture;
 
-    .line 5
     invoke-static {}, Lcom/google/common/util/concurrent/AsyncSettableFuture;->create()Lcom/google/common/util/concurrent/AsyncSettableFuture;
 
     move-result-object v4
 
-    .line 6
     invoke-virtual {v0, v4}, Ljava/util/concurrent/ConcurrentLinkedQueue;->add(Ljava/lang/Object;)Z
 
-    .line 7
     new-instance v5, Lcom/google/common/util/concurrent/Futures$5;
 
     invoke-direct {v5, v0, v3}, Lcom/google/common/util/concurrent/Futures$5;-><init>(Ljava/util/concurrent/ConcurrentLinkedQueue;Lcom/google/common/util/concurrent/ListenableFuture;)V
 
     invoke-interface {v3, v5, v2}, Lcom/google/common/util/concurrent/ListenableFuture;->addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
-    .line 8
     invoke-virtual {v1, v4}, Lcom/google/common/collect/ImmutableList$Builder;->add(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList$Builder;
 
     goto :goto_0
 
-    .line 9
     :cond_0
     invoke-virtual {v1}, Lcom/google/common/collect/ImmutableList$Builder;->build()Lcom/google/common/collect/ImmutableList;
 
@@ -738,13 +690,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     new-instance v0, Lcom/google/common/util/concurrent/Futures$3;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/util/concurrent/Futures$3;-><init>(Ljava/util/concurrent/Future;Lcom/google/common/base/Function;)V
@@ -770,7 +719,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Futures$CombinedFuture;
 
     new-instance v1, Lcom/google/common/util/concurrent/Futures$8;
@@ -802,7 +750,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Futures$MappingCheckedFuture;
 
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
@@ -833,19 +780,16 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/reflect/Constructor;->getParameterTypes()[Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 2
     array-length v1, v0
 
     new-array v1, v1, [Ljava/lang/Object;
 
     const/4 v2, 0x0
 
-    .line 3
     :goto_0
     array-length v3, v0
 
@@ -853,10 +797,8 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 4
     aget-object v3, v0, v2
 
-    .line 5
     const-class v5, Ljava/lang/String;
 
     invoke-virtual {v3, v5}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -865,7 +807,6 @@
 
     if-eqz v5, :cond_0
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Throwable;->toString()Ljava/lang/String;
 
     move-result-object v3
@@ -874,7 +815,6 @@
 
     goto :goto_1
 
-    .line 7
     :cond_0
     const-class v5, Ljava/lang/Throwable;
 
@@ -884,7 +824,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 8
     aput-object p1, v1, v2
 
     :goto_1
@@ -895,7 +834,6 @@
     :cond_1
     return-object v4
 
-    .line 9
     :cond_2
     :try_start_0
     invoke-virtual {p0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
@@ -927,7 +865,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/Class;->getConstructors()[Ljava/lang/reflect/Constructor;
 
     move-result-object v0
@@ -936,7 +873,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Lcom/google/common/util/concurrent/Futures;->preferringStrings(Ljava/util/List;)Ljava/util/List;
 
     move-result-object v0
@@ -958,7 +894,6 @@
 
     check-cast v1, Ljava/lang/reflect/Constructor;
 
-    .line 3
     invoke-static {v1, p1}, Lcom/google/common/util/concurrent/Futures;->newFromConstructor(Ljava/lang/reflect/Constructor;Ljava/lang/Throwable;)Ljava/lang/Object;
 
     move-result-object v1
@@ -967,20 +902,17 @@
 
     if-eqz v1, :cond_0
 
-    .line 4
     invoke-virtual {v1}, Ljava/lang/Exception;->getCause()Ljava/lang/Throwable;
 
     move-result-object p0
 
     if-nez p0, :cond_1
 
-    .line 5
     invoke-virtual {v1, p1}, Ljava/lang/Exception;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     :cond_1
     return-object v1
 
-    .line 6
     :cond_2
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -1035,7 +967,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Futures$NonCancellationPropagatingFuture;
 
     invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/Futures$NonCancellationPropagatingFuture;-><init>(Lcom/google/common/util/concurrent/ListenableFuture;)V
@@ -1059,7 +990,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/util/concurrent/Futures;->WITH_STRING_PARAM_FIRST:Lcom/google/common/collect/Ordering;
 
     invoke-virtual {v0, p0}, Lcom/google/common/collect/Ordering;->sortedCopy(Ljava/lang/Iterable;)Ljava/util/List;
@@ -1083,7 +1013,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Futures$1;
 
     invoke-direct {v0, p2, p1, p0}, Lcom/google/common/util/concurrent/Futures$1;-><init>(Ljava/util/concurrent/Executor;Ljava/lang/Runnable;Lcom/google/common/util/concurrent/AbstractFuture;)V
@@ -1111,7 +1040,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0}, Lcom/google/common/collect/ImmutableList;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -1147,7 +1075,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/ImmutableList;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -1183,10 +1110,8 @@
         }
     .end annotation
 
-    .line 6
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
     new-instance v0, Lcom/google/common/util/concurrent/Futures$ChainingListenableFuture;
 
     invoke-static {p1}, Lcom/google/common/util/concurrent/Futures;->asAsyncFunction(Lcom/google/common/base/Function;)Lcom/google/common/util/concurrent/AsyncFunction;
@@ -1197,7 +1122,6 @@
 
     invoke-direct {v0, p1, p0, v1}, Lcom/google/common/util/concurrent/Futures$ChainingListenableFuture;-><init>(Lcom/google/common/util/concurrent/AsyncFunction;Lcom/google/common/util/concurrent/ListenableFuture;Lcom/google/common/util/concurrent/Futures$1;)V
 
-    .line 8
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->directExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object p1
@@ -1227,10 +1151,8 @@
         }
     .end annotation
 
-    .line 9
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 10
     invoke-static {p1}, Lcom/google/common/util/concurrent/Futures;->asAsyncFunction(Lcom/google/common/base/Function;)Lcom/google/common/util/concurrent/AsyncFunction;
 
     move-result-object p1
@@ -1260,14 +1182,12 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/Futures$ChainingListenableFuture;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, p0, v1}, Lcom/google/common/util/concurrent/Futures$ChainingListenableFuture;-><init>(Lcom/google/common/util/concurrent/AsyncFunction;Lcom/google/common/util/concurrent/ListenableFuture;Lcom/google/common/util/concurrent/Futures$1;)V
 
-    .line 2
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->directExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object p1
@@ -1297,17 +1217,14 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
     new-instance v0, Lcom/google/common/util/concurrent/Futures$ChainingListenableFuture;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p1, p0, v1}, Lcom/google/common/util/concurrent/Futures$ChainingListenableFuture;-><init>(Lcom/google/common/util/concurrent/AsyncFunction;Lcom/google/common/util/concurrent/ListenableFuture;Lcom/google/common/util/concurrent/Futures$1;)V
 
-    .line 5
     invoke-static {v0, v0, p2}, Lcom/google/common/util/concurrent/Futures;->rejectionPropagatingRunnable(Lcom/google/common/util/concurrent/AbstractFuture;Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)Ljava/lang/Runnable;
 
     move-result-object p1
@@ -1337,7 +1254,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->directExecutor()Ljava/util/concurrent/Executor;
 
     move-result-object v0
@@ -1367,10 +1283,8 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     new-instance v0, Lcom/google/common/util/concurrent/Futures$FallbackFuture;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/common/util/concurrent/Futures$FallbackFuture;-><init>(Lcom/google/common/util/concurrent/ListenableFuture;Lcom/google/common/util/concurrent/FutureFallback;Ljava/util/concurrent/Executor;)V
@@ -1397,24 +1311,20 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Ljava/lang/Error;
 
     if-nez v0, :cond_1
 
-    .line 2
     instance-of v0, p0, Ljava/lang/RuntimeException;
 
     if-eqz v0, :cond_0
 
-    .line 3
     new-instance p1, Lcom/google/common/util/concurrent/UncheckedExecutionException;
 
     invoke-direct {p1, p0}, Lcom/google/common/util/concurrent/UncheckedExecutionException;-><init>(Ljava/lang/Throwable;)V
 
     throw p1
 
-    .line 4
     :cond_0
     invoke-static {p1, p0}, Lcom/google/common/util/concurrent/Futures;->newWithCause(Ljava/lang/Class;Ljava/lang/Throwable;)Ljava/lang/Exception;
 
@@ -1422,7 +1332,6 @@
 
     throw p0
 
-    .line 5
     :cond_1
     new-instance p1, Lcom/google/common/util/concurrent/ExecutionError;
 
@@ -1436,12 +1345,10 @@
 .method private static wrapAndThrowUnchecked(Ljava/lang/Throwable;)V
     .locals 1
 
-    .line 1
     instance-of v0, p0, Ljava/lang/Error;
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/ExecutionError;
 
     check-cast p0, Ljava/lang/Error;
@@ -1450,7 +1357,6 @@
 
     throw v0
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/google/common/util/concurrent/UncheckedExecutionException;
 

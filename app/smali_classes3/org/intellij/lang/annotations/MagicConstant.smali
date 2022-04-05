@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/intellij/lang/annotations/MagicConstant;
 .super Ljava/lang/Object;
-.source "MagicConstant.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

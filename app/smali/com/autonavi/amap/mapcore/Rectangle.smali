@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/amap/mapcore/Rectangle;
 .super Ljava/lang/Object;
-.source "Rectangle.java"
 
 
 # instance fields
@@ -23,10 +22,8 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
@@ -35,10 +32,8 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipRect:[Lcom/autonavi/amap/mapcore/IPoint;
 
-    .line 4
     iput-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipMapRect:[Lcom/autonavi/amap/mapcore/FPoint;
 
     return-void
@@ -47,10 +42,8 @@
 .method public constructor <init>(FFFF)V
     .locals 1
 
-    .line 13
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 14
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
@@ -59,10 +52,8 @@
 
     const/4 v0, 0x0
 
-    .line 15
     iput-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipRect:[Lcom/autonavi/amap/mapcore/IPoint;
 
-    .line 16
     iput-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipMapRect:[Lcom/autonavi/amap/mapcore/FPoint;
 
     cmpl-float v0, p1, p2
@@ -75,17 +66,13 @@
 
     goto :goto_0
 
-    .line 17
     :cond_0
     iput p1, p0, Lcom/autonavi/amap/mapcore/Rectangle;->left:F
 
-    .line 18
     iput p2, p0, Lcom/autonavi/amap/mapcore/Rectangle;->right:F
 
-    .line 19
     iput p4, p0, Lcom/autonavi/amap/mapcore/Rectangle;->top:F
 
-    .line 20
     iput p3, p0, Lcom/autonavi/amap/mapcore/Rectangle;->bottom:F
 
     :cond_1
@@ -96,10 +83,8 @@
 .method public constructor <init>(Landroid/graphics/Rect;II)V
     .locals 1
 
-    .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
     new-instance v0, Landroid/graphics/Rect;
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
@@ -108,24 +93,18 @@
 
     const/4 v0, 0x0
 
-    .line 7
     iput-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipRect:[Lcom/autonavi/amap/mapcore/IPoint;
 
-    .line 8
     iput-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipMapRect:[Lcom/autonavi/amap/mapcore/FPoint;
 
-    .line 9
     iput-object p1, p0, Lcom/autonavi/amap/mapcore/Rectangle;->rect:Landroid/graphics/Rect;
 
     if-eqz p1, :cond_0
 
-    .line 10
     invoke-virtual {p0, p1, p2, p3}, Lcom/autonavi/amap/mapcore/Rectangle;->updateRect(Landroid/graphics/Rect;II)V
 
-    .line 11
     invoke-direct {p0}, Lcom/autonavi/amap/mapcore/Rectangle;->updateClipRect()V
 
-    .line 12
     invoke-virtual {p1}, Landroid/graphics/Rect;->centerX()I
 
     move-result p2
@@ -143,7 +122,6 @@
 .method private updateClipMapRect(II)V
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipMapRect:[Lcom/autonavi/amap/mapcore/FPoint;
 
     const/4 v1, 0x3
@@ -160,19 +138,16 @@
 
     new-array v0, v0, [Lcom/autonavi/amap/mapcore/FPoint;
 
-    .line 2
     iput-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipMapRect:[Lcom/autonavi/amap/mapcore/FPoint;
 
     const/4 v5, 0x0
 
-    .line 3
     invoke-static {v5, v5}, Lcom/autonavi/amap/mapcore/FPoint;->obtain(FF)Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v6
 
     aput-object v6, v0, v4
 
-    .line 4
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipMapRect:[Lcom/autonavi/amap/mapcore/FPoint;
 
     invoke-static {v5, v5}, Lcom/autonavi/amap/mapcore/FPoint;->obtain(FF)Lcom/autonavi/amap/mapcore/FPoint;
@@ -181,7 +156,6 @@
 
     aput-object v6, v0, v3
 
-    .line 5
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipMapRect:[Lcom/autonavi/amap/mapcore/FPoint;
 
     invoke-static {v5, v5}, Lcom/autonavi/amap/mapcore/FPoint;->obtain(FF)Lcom/autonavi/amap/mapcore/FPoint;
@@ -190,7 +164,6 @@
 
     aput-object v6, v0, v2
 
-    .line 6
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipMapRect:[Lcom/autonavi/amap/mapcore/FPoint;
 
     invoke-static {v5, v5}, Lcom/autonavi/amap/mapcore/FPoint;->obtain(FF)Lcom/autonavi/amap/mapcore/FPoint;
@@ -199,13 +172,11 @@
 
     aput-object v5, v0, v1
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->rect:Landroid/graphics/Rect;
 
     if-eqz v0, :cond_1
 
-    .line 8
     iget-object v5, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipMapRect:[Lcom/autonavi/amap/mapcore/FPoint;
 
     aget-object v6, v5, v4
@@ -218,7 +189,6 @@
 
     iput v8, v6, Landroid/graphics/PointF;->x:F
 
-    .line 9
     aget-object v4, v5, v4
 
     iget v6, v0, Landroid/graphics/Rect;->top:I
@@ -229,7 +199,6 @@
 
     iput v8, v4, Landroid/graphics/PointF;->y:F
 
-    .line 10
     aget-object v4, v5, v3
 
     iget v8, v0, Landroid/graphics/Rect;->right:I
@@ -240,7 +209,6 @@
 
     iput v9, v4, Landroid/graphics/PointF;->x:F
 
-    .line 11
     aget-object v3, v5, v3
 
     sub-int/2addr v6, p2
@@ -249,7 +217,6 @@
 
     iput v4, v3, Landroid/graphics/PointF;->y:F
 
-    .line 12
     aget-object v3, v5, v2
 
     sub-int/2addr v8, p1
@@ -258,7 +225,6 @@
 
     iput v4, v3, Landroid/graphics/PointF;->x:F
 
-    .line 13
     aget-object v2, v5, v2
 
     iget v0, v0, Landroid/graphics/Rect;->bottom:I
@@ -269,7 +235,6 @@
 
     iput v3, v2, Landroid/graphics/PointF;->y:F
 
-    .line 14
     aget-object v2, v5, v1
 
     sub-int/2addr v7, p1
@@ -278,7 +243,6 @@
 
     iput p1, v2, Landroid/graphics/PointF;->x:F
 
-    .line 15
     aget-object p1, v5, v1
 
     sub-int/2addr v0, p2
@@ -294,7 +258,6 @@
 .method private updateClipRect()V
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipRect:[Lcom/autonavi/amap/mapcore/IPoint;
 
     const/4 v1, 0x3
@@ -311,17 +274,14 @@
 
     new-array v0, v0, [Lcom/autonavi/amap/mapcore/IPoint;
 
-    .line 2
     iput-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipRect:[Lcom/autonavi/amap/mapcore/IPoint;
 
-    .line 3
     invoke-static {v4, v4}, Lcom/autonavi/amap/mapcore/IPoint;->obtain(II)Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v5
 
     aput-object v5, v0, v4
 
-    .line 4
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipRect:[Lcom/autonavi/amap/mapcore/IPoint;
 
     invoke-static {v4, v4}, Lcom/autonavi/amap/mapcore/IPoint;->obtain(II)Lcom/autonavi/amap/mapcore/IPoint;
@@ -330,7 +290,6 @@
 
     aput-object v5, v0, v3
 
-    .line 5
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipRect:[Lcom/autonavi/amap/mapcore/IPoint;
 
     invoke-static {v4, v4}, Lcom/autonavi/amap/mapcore/IPoint;->obtain(II)Lcom/autonavi/amap/mapcore/IPoint;
@@ -339,7 +298,6 @@
 
     aput-object v5, v0, v2
 
-    .line 6
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipRect:[Lcom/autonavi/amap/mapcore/IPoint;
 
     invoke-static {v4, v4}, Lcom/autonavi/amap/mapcore/IPoint;->obtain(II)Lcom/autonavi/amap/mapcore/IPoint;
@@ -348,13 +306,11 @@
 
     aput-object v5, v0, v1
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->rect:Landroid/graphics/Rect;
 
     if-eqz v0, :cond_1
 
-    .line 8
     iget-object v5, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipRect:[Lcom/autonavi/amap/mapcore/IPoint;
 
     aget-object v6, v5, v4
@@ -363,43 +319,36 @@
 
     iput v7, v6, Landroid/graphics/Point;->x:I
 
-    .line 9
     aget-object v4, v5, v4
 
     iget v6, v0, Landroid/graphics/Rect;->top:I
 
     iput v6, v4, Landroid/graphics/Point;->y:I
 
-    .line 10
     aget-object v4, v5, v3
 
     iget v8, v0, Landroid/graphics/Rect;->right:I
 
     iput v8, v4, Landroid/graphics/Point;->x:I
 
-    .line 11
     aget-object v3, v5, v3
 
     iput v6, v3, Landroid/graphics/Point;->y:I
 
-    .line 12
     aget-object v3, v5, v2
 
     iput v8, v3, Landroid/graphics/Point;->x:I
 
-    .line 13
     aget-object v2, v5, v2
 
     iget v0, v0, Landroid/graphics/Rect;->bottom:I
 
     iput v0, v2, Landroid/graphics/Point;->y:I
 
-    .line 14
     aget-object v2, v5, v1
 
     iput v7, v2, Landroid/graphics/Point;->x:I
 
-    .line 15
     aget-object v1, v5, v1
 
     iput v0, v1, Landroid/graphics/Point;->y:I
@@ -413,12 +362,10 @@
 .method public contains(II)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->rect:Landroid/graphics/Rect;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1, p2}, Landroid/graphics/Rect;->contains(II)Z
 
     move-result p1
@@ -440,7 +387,6 @@
 
     return p1
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->rect:Landroid/graphics/Rect;
 
@@ -460,7 +406,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     iget v0, p1, Landroid/graphics/Point;->x:I
 
@@ -476,7 +421,6 @@
 .method public getClipMapRect()[Lcom/autonavi/amap/mapcore/FPoint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipMapRect:[Lcom/autonavi/amap/mapcore/FPoint;
 
     return-object v0
@@ -485,7 +429,6 @@
 .method public getClipRect()[Lcom/autonavi/amap/mapcore/IPoint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->clipRect:[Lcom/autonavi/amap/mapcore/IPoint;
 
     return-object v0
@@ -494,7 +437,6 @@
 .method public getRect()Landroid/graphics/Rect;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->rect:Landroid/graphics/Rect;
 
     return-object v0
@@ -503,7 +445,6 @@
 .method public isOverlap(Landroid/graphics/Rect;)Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/amap/mapcore/Rectangle;->rect:Landroid/graphics/Rect;
 
     const/4 v1, 0x0
@@ -514,7 +455,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget v2, v0, Landroid/graphics/Rect;->left:I
 
@@ -528,7 +468,6 @@
 
     if-le v2, v0, :cond_1
 
-    .line 3
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
     move-result v2
@@ -543,7 +482,6 @@
 
     iget v0, v2, Landroid/graphics/Rect;->top:I
 
-    .line 4
     invoke-virtual {v2}, Landroid/graphics/Rect;->height()I
 
     move-result v2
@@ -554,7 +492,6 @@
 
     if-le v0, v2, :cond_1
 
-    .line 5
     invoke-virtual {p1}, Landroid/graphics/Rect;->height()I
 
     move-result p1
@@ -581,10 +518,8 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/amap/mapcore/Rectangle;->rect:Landroid/graphics/Rect;
 
-    .line 2
     invoke-virtual {p1}, Landroid/graphics/Rect;->width()I
 
     move-result v0
@@ -603,10 +538,8 @@
 
     invoke-virtual {p1, v0, v1}, Landroid/graphics/Rect;->inset(II)V
 
-    .line 3
     invoke-direct {p0}, Lcom/autonavi/amap/mapcore/Rectangle;->updateClipRect()V
 
-    .line 4
     invoke-direct {p0, p2, p3}, Lcom/autonavi/amap/mapcore/Rectangle;->updateClipMapRect(II)V
 
     :cond_0

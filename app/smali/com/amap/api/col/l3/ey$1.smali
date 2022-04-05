@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ey$1;
 .super Ljava/lang/Object;
-.source "MapOverlayViewGroup.java"
 
 # interfaces
 .implements Lcom/autonavi/ae/gmap/listener/MapWidgetListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/ey;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ey$1;->a:Lcom/amap/api/col/l3/ey;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public final invalidateCompassView()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ey$1;->a:Lcom/amap/api/col/l3/ey;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/ey;->b(Lcom/amap/api/col/l3/ey;)Lcom/amap/api/col/l3/ev;
@@ -49,7 +46,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ey$1;->a:Lcom/amap/api/col/l3/ey;
 
@@ -69,7 +65,6 @@
 .method public final invalidateScaleView()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ey$1;->a:Lcom/amap/api/col/l3/ey;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/ey;->a(Lcom/amap/api/col/l3/ey;)Lcom/amap/api/col/l3/ez;
@@ -80,7 +75,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ey$1;->a:Lcom/amap/api/col/l3/ey;
 
@@ -100,7 +94,6 @@
 .method public final invalidateZoomController(F)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ey$1;->a:Lcom/amap/api/col/l3/ey;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/ey;->c(Lcom/amap/api/col/l3/ey;)Lcom/amap/api/col/l3/fb;
@@ -111,7 +104,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/ey$1;->a:Lcom/amap/api/col/l3/ey;
 

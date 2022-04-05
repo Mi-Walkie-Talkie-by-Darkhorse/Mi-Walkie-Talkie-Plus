@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/lite/fragment/LiteSettingVoiceFragment$a;
 .super Ljava/lang/Object;
-.source "LiteSettingVoiceFragment.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;->values()[Lcom/ifengyu/intercom/protos/LiteProtos$LANGUAGE_TYPE;
 
     move-result-object v0

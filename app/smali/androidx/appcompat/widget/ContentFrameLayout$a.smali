@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/appcompat/widget/ContentFrameLayout$a;
 .super Ljava/lang/Object;
-.source "ContentFrameLayout.java"
 
 
 # annotations

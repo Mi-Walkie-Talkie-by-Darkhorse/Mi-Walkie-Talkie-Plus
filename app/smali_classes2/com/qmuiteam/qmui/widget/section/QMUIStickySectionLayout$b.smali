@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$b;
 .super Ljava/lang/Object;
-.source "QMUIStickySectionLayout.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/section/b$b;
@@ -35,7 +34,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;Lcom/qmuiteam/qmui/widget/section/a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$b;->b:Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;
 
     iput-object p2, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$b;->a:Lcom/qmuiteam/qmui/widget/section/a;
@@ -50,7 +48,6 @@
 .method public a(I)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$b;->a:Lcom/qmuiteam/qmui/widget/section/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/section/a;->a(I)I
@@ -70,7 +67,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$b;->a:Lcom/qmuiteam/qmui/widget/section/a;
 
     invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$g;->createViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$y;
@@ -85,7 +81,6 @@
 .method public a(Landroidx/recyclerview/widget/RecyclerView$i;)V
     .locals 1
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$b;->a:Lcom/qmuiteam/qmui/widget/section/a;
 
     invoke-virtual {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$g;->registerAdapterDataObserver(Landroidx/recyclerview/widget/RecyclerView$i;)V
@@ -101,7 +96,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$b;->a:Lcom/qmuiteam/qmui/widget/section/a;
 
     invoke-virtual {v0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$g;->bindViewHolder(Landroidx/recyclerview/widget/RecyclerView$y;I)V
@@ -118,7 +112,6 @@
 .method public b(I)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$b;->a:Lcom/qmuiteam/qmui/widget/section/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/section/a;->getItemViewType(I)I
@@ -141,7 +134,6 @@
 .method public getItemViewType(I)I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$b;->a:Lcom/qmuiteam/qmui/widget/section/a;
 
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/section/a;->getItemViewType(I)I
@@ -154,7 +146,6 @@
 .method public invalidate()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout$b;->b:Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;->c(Lcom/qmuiteam/qmui/widget/section/QMUIStickySectionLayout;)Landroidx/recyclerview/widget/RecyclerView;

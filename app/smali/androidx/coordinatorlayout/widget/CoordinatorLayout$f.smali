@@ -1,6 +1,5 @@
 .class Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 .super Ljava/lang/Object;
-.source "CoordinatorLayout.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,12 +39,10 @@
 .method public a(Landroid/view/View;Landroid/view/View;)I
     .locals 1
 
-    .line 1
     invoke-static {p1}, Landroidx/core/view/ViewCompat;->H(Landroid/view/View;)F
 
     move-result p1
 
-    .line 2
     invoke-static {p2}, Landroidx/core/view/ViewCompat;->H(Landroid/view/View;)F
 
     move-result p2
@@ -77,7 +73,6 @@
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Landroid/view/View;
 
     check-cast p2, Landroid/view/View;

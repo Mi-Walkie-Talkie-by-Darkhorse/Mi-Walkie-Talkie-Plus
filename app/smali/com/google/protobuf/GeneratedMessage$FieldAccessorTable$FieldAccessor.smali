@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/protobuf/GeneratedMessage$FieldAccessorTable$FieldAccessor;
 .super Ljava/lang/Object;
-.source "GeneratedMessage.java"
 
 
 # annotations

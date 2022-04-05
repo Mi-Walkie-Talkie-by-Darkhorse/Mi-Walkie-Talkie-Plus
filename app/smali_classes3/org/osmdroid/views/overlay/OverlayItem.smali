@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/OverlayItem;
 .super Ljava/lang/Object;
-.source "OverlayItem.java"
 
 
 # annotations
@@ -39,7 +38,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/graphics/Point;
 
     const/16 v1, 0x1a
@@ -56,19 +54,14 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/osmdroid/api/IGeoPoint;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p2, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mTitle:Ljava/lang/String;
 
-    .line 4
     iput-object p3, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mSnippet:Ljava/lang/String;
 
-    .line 5
     iput-object p4, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mGeoPoint:Lorg/osmdroid/api/IGeoPoint;
 
-    .line 6
     iput-object p1, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mUid:Ljava/lang/String;
 
     return-void
@@ -79,7 +72,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0, p1, p2, p3}, Lorg/osmdroid/views/overlay/OverlayItem;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lorg/osmdroid/api/IGeoPoint;)V
 
     return-void
@@ -113,7 +105,6 @@
 
     const v3, 0x10100a1
 
-    .line 1
     aput v3, v0, v2
 
     move v2, v1
@@ -125,10 +116,8 @@
 
     const p1, 0x101009c
 
-    .line 2
     aput p1, v0, v2
 
-    .line 3
     :cond_2
     invoke-virtual {p0, v0}, Landroid/graphics/drawable/Drawable;->setState([I)Z
 
@@ -140,7 +129,6 @@
 .method public getDrawable()Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mMarker:Landroid/graphics/drawable/Drawable;
 
     return-object v0
@@ -149,7 +137,6 @@
 .method public getHeight()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mMarker:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicHeight()I
@@ -162,7 +149,6 @@
 .method public getMarker(I)Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mMarker:Landroid/graphics/drawable/Drawable;
 
     if-nez v0, :cond_0
@@ -171,11 +157,9 @@
 
     return-object p1
 
-    .line 2
     :cond_0
     invoke-static {v0, p1}, Lorg/osmdroid/views/overlay/OverlayItem;->setState(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 3
     iget-object p1, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mMarker:Landroid/graphics/drawable/Drawable;
 
     return-object p1
@@ -184,7 +168,6 @@
 .method public getMarkerHotspot()Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mHotspotPlace:Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;
 
     return-object v0
@@ -193,7 +176,6 @@
 .method public getPoint()Lorg/osmdroid/api/IGeoPoint;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mGeoPoint:Lorg/osmdroid/api/IGeoPoint;
 
     return-object v0
@@ -202,7 +184,6 @@
 .method public getSnippet()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mSnippet:Ljava/lang/String;
 
     return-object v0
@@ -211,7 +192,6 @@
 .method public getTitle()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mTitle:Ljava/lang/String;
 
     return-object v0
@@ -220,7 +200,6 @@
 .method public getUid()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mUid:Ljava/lang/String;
 
     return-object v0
@@ -229,7 +208,6 @@
 .method public getWidth()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mMarker:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->getIntrinsicWidth()I
@@ -242,7 +220,6 @@
 .method public setMarker(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/OverlayItem;->mMarker:Landroid/graphics/drawable/Drawable;
 
     return-void
@@ -253,7 +230,6 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     sget-object p1, Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;->BOTTOM_CENTER:Lorg/osmdroid/views/overlay/OverlayItem$HotspotPlace;
 
     :cond_0

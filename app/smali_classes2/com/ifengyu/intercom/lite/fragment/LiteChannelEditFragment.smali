@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;
 .super Lcom/ifengyu/intercom/lite/base/e;
-.source "LiteChannelEditFragment.java"
 
 
 # instance fields
@@ -53,7 +52,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/base/e;-><init>()V
 
     return-void
@@ -62,7 +60,6 @@
 .method private A()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
@@ -71,14 +68,12 @@
 
     const-string v1, "channel"
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object v0
 
     check-cast v0, Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
-    .line 3
     invoke-static {v0}, Lcom/ifengyu/intercom/lite/utils/i;->a(Landroid/os/Parcelable;)Ljava/lang/Object;
 
     move-result-object v0
@@ -94,7 +89,6 @@
 .method private B()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     invoke-static {}, Lcom/qmuiteam/qmui/util/l;->a()I
@@ -107,7 +101,6 @@
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     invoke-static {}, Lcom/qmuiteam/qmui/util/l;->a()I
@@ -120,7 +113,6 @@
 
     move-result-object v1
 
-    .line 3
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -133,7 +125,6 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setTextColor(Landroid/content/res/ColorStateList;)V
 
-    .line 4
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v2
@@ -146,33 +137,28 @@
 
     invoke-virtual {v1, v2}, Landroid/widget/Button;->setTextColor(Landroid/content/res/ColorStateList;)V
 
-    .line 5
     new-instance v2, Lcom/ifengyu/intercom/lite/fragment/k0;
 
     invoke-direct {v2, p0}, Lcom/ifengyu/intercom/lite/fragment/k0;-><init>(Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;)V
 
     invoke-virtual {v0, v2}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 6
     new-instance v0, Lcom/ifengyu/intercom/lite/fragment/l0;
 
     invoke-direct {v0, p0}, Lcom/ifengyu/intercom/lite/fragment/l0;-><init>(Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;)V
 
     invoke-virtual {v1, v0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mBtnClear:Lcom/qmuiteam/qmui/widget/roundwidget/QMUIRoundButton;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/qmuiteam/qmui/alpha/QMUIAlphaButton;->setChangeAlphaWhenPress(Z)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     if-eqz v0, :cond_0
 
-    .line 9
     iget-object v2, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     const v3, 0x7f110186
@@ -193,7 +179,6 @@
 
     invoke-virtual {v2, v0}, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;->a(Ljava/lang/String;)Lcom/qmuiteam/qmui/qqface/QMUIQQFaceView;
 
-    .line 10
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->D()V
 
     :cond_0
@@ -203,32 +188,26 @@
 .method private C()V
     .locals 4
 
-    .line 1
     new-instance v0, Landroid/content/Intent;
 
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
-    .line 2
     new-instance v1, Landroid/os/Bundle;
 
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
-    .line 3
     iget-object v2, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     const-string v3, "channel"
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 4
     invoke-virtual {v0, v1}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     const/4 v1, -0x1
 
-    .line 5
     invoke-virtual {p0, v1, v0}, Lcom/qmuiteam/qmui/arch/b;->a(ILandroid/content/Intent;)V
 
-    .line 6
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/b;->t()V
 
     return-void
@@ -237,7 +216,6 @@
 .method private D()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemReceiveFreq:Lcom/ifengyu/library/widget/view/ItemView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
@@ -248,7 +226,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemSendFreq:Lcom/ifengyu/library/widget/view/ItemView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
@@ -259,7 +236,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemReceiveTone:Lcom/ifengyu/library/widget/view/ItemView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
@@ -270,7 +246,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemSendTone:Lcom/ifengyu/library/widget/view/ItemView;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
@@ -287,22 +262,18 @@
 .method public static a(Lcom/ifengyu/intercom/lite/models/ChannelModel;)Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     const-string v1, "channel"
 
-    .line 2
     invoke-virtual {v0, v1, p0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
-    .line 3
     new-instance p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;-><init>()V
 
-    .line 4
     invoke-virtual {p0, v0}, Landroidx/fragment/app/Fragment;->setArguments(Landroid/os/Bundle;)V
 
     return-object p0
@@ -311,7 +282,6 @@
 .method static synthetic a(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 0
 
-    .line 14
     invoke-virtual {p0}, Landroidx/appcompat/app/d;->dismiss()V
 
     return-void
@@ -351,7 +321,6 @@
 .method private a(Ljava/lang/String;ZII)V
     .locals 3
 
-    .line 5
     new-instance v0, Lcom/ifengyu/intercom/lite/c/b/f;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -360,7 +329,6 @@
 
     invoke-direct {v0, v1}, Lcom/ifengyu/intercom/lite/c/b/f;-><init>(Landroid/content/Context;)V
 
-    .line 6
     invoke-virtual {v0, p1}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(Ljava/lang/String;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     move-object p1, v0
@@ -369,18 +337,14 @@
 
     sget-object v1, Lcom/ifengyu/intercom/lite/b/a;->a:[Ljava/lang/String;
 
-    .line 7
     invoke-virtual {p1, v1}, Lcom/ifengyu/intercom/lite/c/b/f;->a([Ljava/lang/String;)Lcom/ifengyu/intercom/lite/c/b/f;
 
     sget-object v1, Lcom/ifengyu/intercom/lite/b/a;->b:[[Ljava/lang/String;
 
-    .line 8
     invoke-virtual {p1, v1}, Lcom/ifengyu/intercom/lite/c/b/f;->a([[Ljava/lang/String;)Lcom/ifengyu/intercom/lite/c/b/f;
 
-    .line 9
     invoke-virtual {p1, p3}, Lcom/ifengyu/intercom/lite/c/b/f;->d(I)Lcom/ifengyu/intercom/lite/c/b/f;
 
-    .line 10
     invoke-virtual {p1, p4}, Lcom/ifengyu/intercom/lite/c/b/f;->e(I)Lcom/ifengyu/intercom/lite/c/b/f;
 
     sget-object p3, Lcom/ifengyu/intercom/lite/fragment/j0;->a:Lcom/ifengyu/intercom/lite/fragment/j0;
@@ -391,7 +355,6 @@
 
     const/4 v2, 0x2
 
-    .line 11
     invoke-virtual {p1, p4, v1, v2, p3}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(IIILcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     check-cast p1, Lcom/ifengyu/intercom/lite/c/b/f;
@@ -402,14 +365,12 @@
 
     const p2, 0x7f11009c
 
-    .line 12
     invoke-virtual {p1, p4, p2, p4, p3}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(IIILcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;)Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;
 
     check-cast p1, Lcom/ifengyu/intercom/lite/c/b/f;
 
     const p2, 0x7f1200fc
 
-    .line 13
     invoke-virtual {p1, p2}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->a(I)Lcom/qmuiteam/qmui/widget/dialog/b;
 
     move-result-object p1
@@ -424,57 +385,47 @@
 .method public synthetic a(Lcom/ifengyu/intercom/lite/c/b/f;ZLcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 1
 
-    .line 15
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/c/b/f;->e()I
 
     move-result p4
 
-    .line 16
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/c/b/f;->g()I
 
     move-result v0
 
-    .line 17
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/c/b/f;->f()Ljava/lang/String;
 
     move-result-object p1
 
     if-eqz p2, :cond_0
 
-    .line 18
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p2, p4}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setReceiveToneType(I)V
 
-    .line 19
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p2, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setReceiveToneValue(I)V
 
-    .line 20
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemReceiveTone:Lcom/ifengyu/library/widget/view/ItemView;
 
     invoke-virtual {p2, p1}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
-    .line 21
     :cond_0
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p2, p4}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setSendToneType(I)V
 
-    .line 22
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p2, v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->setSendToneValue(I)V
 
-    .line 23
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->mItemSendTone:Lcom/ifengyu/library/widget/view/ItemView;
 
     invoke-virtual {p2, p1}, Lcom/ifengyu/library/widget/view/ItemView;->setValueText(Ljava/lang/CharSequence;)V
 
-    .line 24
     :goto_0
     invoke-virtual {p3}, Landroidx/appcompat/app/d;->dismiss()V
 
@@ -531,7 +482,6 @@
 .method public synthetic b(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/arch/b;->o()V
 
     return-void
@@ -540,7 +490,6 @@
 .method public synthetic c(Landroid/view/View;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->C()V
 
     return-void
@@ -558,7 +507,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/View;->getId()I
 
     move-result p1
@@ -571,7 +519,6 @@
 
     goto :goto_0
 
-    .line 2
     :sswitch_0
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
@@ -579,14 +526,12 @@
 
     const p1, 0x7f110117
 
-    .line 3
     invoke-static {p1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object p1
 
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
-    .line 4
     invoke-virtual {v1}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getSendToneType()I
 
     move-result v1
@@ -597,7 +542,6 @@
 
     move-result v2
 
-    .line 5
     invoke-direct {p0, p1, v0, v1, v2}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->a(Ljava/lang/String;ZII)V
 
     return-void
@@ -617,7 +561,6 @@
 
     return-void
 
-    .line 8
     :sswitch_2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
@@ -625,14 +568,12 @@
 
     const p1, 0x7f11029c
 
-    .line 9
     invoke-static {p1}, Lcom/ifengyu/library/a/m;->b(I)Ljava/lang/String;
 
     move-result-object p1
 
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
-    .line 10
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->getReceiveToneType()I
 
     move-result v0
@@ -643,7 +584,6 @@
 
     move-result v2
 
-    .line 11
     invoke-direct {p0, p1, v1, v0, v2}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->a(Ljava/lang/String;ZII)V
 
     return-void
@@ -663,16 +603,13 @@
 
     return-void
 
-    .line 14
     :sswitch_4
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->z:Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     if-eqz p1, :cond_0
 
-    .line 15
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/models/ChannelModel;->clear()V
 
-    .line 16
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->D()V
 
     :cond_0
@@ -692,7 +629,6 @@
 .method protected p()Landroid/view/View;
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -709,13 +645,10 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {p0, v0}, Lbutterknife/ButterKnife;->bind(Ljava/lang/Object;Landroid/view/View;)Lbutterknife/Unbinder;
 
-    .line 3
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->A()V
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->B()V
 
     return-object v0

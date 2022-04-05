@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/b$e;
 .super Ljava/lang/Object;
-.source "QMUIFragment.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/arch/SwipeBackLayout$c;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/b$e;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +38,6 @@
 
     move-object v0, p0
 
-    .line 1
     iget-object v1, v0, Lcom/qmuiteam/qmui/arch/b$e;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-static {v1}, Lcom/qmuiteam/qmui/arch/b;->e(Lcom/qmuiteam/qmui/arch/b;)I
@@ -55,7 +52,6 @@
 
     return v3
 
-    .line 2
     :cond_0
     iget-object v1, v0, Lcom/qmuiteam/qmui/arch/b$e;->a:Lcom/qmuiteam/qmui/arch/b;
 
@@ -67,7 +63,6 @@
 
     return v3
 
-    .line 3
     :cond_1
     invoke-interface {v1}, Lcom/qmuiteam/qmui/arch/c;->f()Landroidx/fragment/app/FragmentManager;
 
@@ -75,7 +70,6 @@
 
     if-eqz v1, :cond_9
 
-    .line 4
     iget-object v4, v0, Lcom/qmuiteam/qmui/arch/b$e;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {v4}, Landroidx/fragment/app/Fragment;->getParentFragmentManager()Landroidx/fragment/app/FragmentManager;
@@ -86,7 +80,6 @@
 
     goto :goto_2
 
-    .line 5
     :cond_2
     invoke-virtual {v1}, Landroidx/fragment/app/FragmentManager;->getPrimaryNavigationFragment()Landroidx/fragment/app/Fragment;
 
@@ -96,7 +89,6 @@
 
     return v3
 
-    .line 6
     :cond_3
     iget-object v4, v0, Lcom/qmuiteam/qmui/arch/b$e;->a:Lcom/qmuiteam/qmui/arch/b;
 
@@ -108,7 +100,6 @@
 
     return v3
 
-    .line 7
     :cond_4
     invoke-virtual {v4}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -117,7 +108,6 @@
     :goto_0
     if-eqz v4, :cond_7
 
-    .line 8
     instance-of v5, v4, Landroidx/viewpager/widget/ViewPager;
 
     if-nez v5, :cond_6
@@ -128,7 +118,6 @@
 
     goto :goto_1
 
-    .line 9
     :cond_5
     invoke-interface {v4}, Landroid/view/ViewParent;->getParent()Landroid/view/ViewParent;
 
@@ -140,7 +129,6 @@
     :goto_1
     return v3
 
-    .line 10
     :cond_7
     invoke-virtual {v1}, Landroidx/fragment/app/FragmentManager;->getBackStackEntryCount()I
 
@@ -148,7 +136,6 @@
 
     if-gt v1, v2, :cond_8
 
-    .line 11
     invoke-static {}, Lcom/qmuiteam/qmui/arch/f;->b()Lcom/qmuiteam/qmui/arch/f;
 
     move-result-object v1
@@ -161,7 +148,6 @@
 
     return v3
 
-    .line 12
     :cond_8
     iget-object v4, v0, Lcom/qmuiteam/qmui/arch/b$e;->a:Lcom/qmuiteam/qmui/arch/b;
 

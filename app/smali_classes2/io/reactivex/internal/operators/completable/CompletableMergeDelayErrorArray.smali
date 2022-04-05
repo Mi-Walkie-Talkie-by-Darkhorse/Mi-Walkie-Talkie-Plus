@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/completable/CompletableMergeDelayErrorArray;
 .super Lio/reactivex/Completable;
-.source "CompletableMergeDelayErrorArray.java"
 
 
 # annotations
@@ -19,10 +18,8 @@
 .method public constructor <init>([Lio/reactivex/CompletableSource;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableMergeDelayErrorArray;->sources:[Lio/reactivex/CompletableSource;
 
     return-void
@@ -33,12 +30,10 @@
 .method public subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 8
 
-    .line 1
     new-instance v0, Lio/reactivex/disposables/CompositeDisposable;
 
     invoke-direct {v0}, Lio/reactivex/disposables/CompositeDisposable;-><init>()V
 
-    .line 2
     new-instance v1, Ljava/util/concurrent/atomic/AtomicInteger;
 
     iget-object v2, p0, Lio/reactivex/internal/operators/completable/CompletableMergeDelayErrorArray;->sources:[Lio/reactivex/CompletableSource;
@@ -49,15 +44,12 @@
 
     invoke-direct {v1, v2}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
 
-    .line 3
     new-instance v2, Lio/reactivex/internal/util/AtomicThrowable;
 
     invoke-direct {v2}, Lio/reactivex/internal/util/AtomicThrowable;-><init>()V
 
-    .line 4
     invoke-interface {p1, v0}, Lio/reactivex/CompletableObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 5
     iget-object v3, p0, Lio/reactivex/internal/operators/completable/CompletableMergeDelayErrorArray;->sources:[Lio/reactivex/CompletableSource;
 
     array-length v4, v3
@@ -69,7 +61,6 @@
 
     aget-object v6, v3, v5
 
-    .line 6
     invoke-virtual {v0}, Lio/reactivex/disposables/CompositeDisposable;->isDisposed()Z
 
     move-result v7
@@ -81,22 +72,18 @@
     :cond_0
     if-nez v6, :cond_1
 
-    .line 7
     new-instance v6, Ljava/lang/NullPointerException;
 
     const-string v7, "A completable source is null"
 
     invoke-direct {v6, v7}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
-    .line 8
     invoke-virtual {v2, v6}, Lio/reactivex/internal/util/AtomicThrowable;->addThrowable(Ljava/lang/Throwable;)Z
 
-    .line 9
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
 
     goto :goto_1
 
-    .line 10
     :cond_1
     new-instance v7, Lio/reactivex/internal/operators/completable/CompletableMergeDelayErrorArray$MergeInnerCompletableObserver;
 
@@ -109,7 +96,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_2
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
 
@@ -117,19 +103,16 @@
 
     if-nez v0, :cond_4
 
-    .line 12
     invoke-virtual {v2}, Lio/reactivex/internal/util/AtomicThrowable;->terminate()Ljava/lang/Throwable;
 
     move-result-object v0
 
     if-nez v0, :cond_3
 
-    .line 13
     invoke-interface {p1}, Lio/reactivex/CompletableObserver;->onComplete()V
 
     goto :goto_2
 
-    .line 14
     :cond_3
     invoke-interface {p1, v0}, Lio/reactivex/CompletableObserver;->onError(Ljava/lang/Throwable;)V
 

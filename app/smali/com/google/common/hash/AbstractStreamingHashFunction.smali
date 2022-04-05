@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/hash/AbstractStreamingHashFunction;
 .super Ljava/lang/Object;
-.source "AbstractStreamingHashFunction.java"
 
 # interfaces
 .implements Lcom/google/common/hash/HashFunction;
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
 .method public hashBytes([B)Lcom/google/common/hash/HashCode;
     .locals 1
 
-    .line 1
     invoke-interface {p0}, Lcom/google/common/hash/HashFunction;->newHasher()Lcom/google/common/hash/Hasher;
 
     move-result-object v0
@@ -48,7 +45,6 @@
 .method public hashBytes([BII)Lcom/google/common/hash/HashCode;
     .locals 1
 
-    .line 2
     invoke-interface {p0}, Lcom/google/common/hash/HashFunction;->newHasher()Lcom/google/common/hash/Hasher;
 
     move-result-object v0
@@ -67,7 +63,6 @@
 .method public hashInt(I)Lcom/google/common/hash/HashCode;
     .locals 1
 
-    .line 1
     invoke-interface {p0}, Lcom/google/common/hash/HashFunction;->newHasher()Lcom/google/common/hash/Hasher;
 
     move-result-object v0
@@ -86,7 +81,6 @@
 .method public hashLong(J)Lcom/google/common/hash/HashCode;
     .locals 1
 
-    .line 1
     invoke-interface {p0}, Lcom/google/common/hash/HashFunction;->newHasher()Lcom/google/common/hash/Hasher;
 
     move-result-object v0
@@ -115,7 +109,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Lcom/google/common/hash/HashFunction;->newHasher()Lcom/google/common/hash/Hasher;
 
     move-result-object v0
@@ -134,7 +127,6 @@
 .method public hashString(Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Lcom/google/common/hash/HashCode;
     .locals 1
 
-    .line 1
     invoke-interface {p0}, Lcom/google/common/hash/HashFunction;->newHasher()Lcom/google/common/hash/Hasher;
 
     move-result-object v0
@@ -153,7 +145,6 @@
 .method public hashUnencodedChars(Ljava/lang/CharSequence;)Lcom/google/common/hash/HashCode;
     .locals 1
 
-    .line 1
     invoke-interface {p0}, Lcom/google/common/hash/HashFunction;->newHasher()Lcom/google/common/hash/Hasher;
 
     move-result-object v0
@@ -181,11 +172,9 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 1
     :goto_0
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 2
     invoke-interface {p0}, Lcom/google/common/hash/HashFunction;->newHasher()Lcom/google/common/hash/Hasher;
 
     move-result-object p1

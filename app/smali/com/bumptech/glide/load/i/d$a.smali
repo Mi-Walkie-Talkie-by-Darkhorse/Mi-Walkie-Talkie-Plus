@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/i/d$a;
 .super Ljava/lang/Object;
-.source "DataFetcher.java"
 
 
 # annotations

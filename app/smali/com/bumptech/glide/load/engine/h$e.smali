@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/engine/h$e;
 .super Lcom/bumptech/glide/load/engine/h;
-.source "DiskCacheStrategy.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/load/engine/h;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
 .method public a(Lcom/bumptech/glide/load/DataSource;)Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/bumptech/glide/load/DataSource;->b:Lcom/bumptech/glide/load/DataSource;
 
     if-ne p1, v0, :cond_0
@@ -58,7 +55,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     sget-object p1, Lcom/bumptech/glide/load/DataSource;->c:Lcom/bumptech/glide/load/DataSource;
 
     if-eq p2, p1, :cond_1

@@ -1,6 +1,5 @@
 .class public abstract Lcom/umeng/analytics/pro/bp;
 .super Ljava/lang/Object;
-.source "TProtocol.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -20,10 +18,8 @@
 .method protected constructor <init>(Lcom/umeng/analytics/pro/cd;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     return-void
@@ -48,7 +44,6 @@
 .method public C()Lcom/umeng/analytics/pro/cd;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     return-object v0
@@ -66,7 +61,6 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Lcom/umeng/analytics/pro/bz;
 
     return-object v0

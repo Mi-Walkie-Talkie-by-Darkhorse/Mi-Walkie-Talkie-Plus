@@ -1,6 +1,5 @@
 .class final Lokio/Okio$4;
 .super Lokio/AsyncTimeout;
-.source "Okio.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Ljava/net/Socket;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lokio/Okio$4;->val$socket:Ljava/net/Socket;
 
     invoke-direct {p0}, Lokio/AsyncTimeout;-><init>()V
@@ -39,7 +37,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Ljava/net/SocketTimeoutException;
 
     const-string v1, "timeout"
@@ -48,7 +45,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Ljava/io/InterruptedIOException;->initCause(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     :cond_0
@@ -60,7 +56,6 @@
 
     const-string v0, "Failed to close timed out socket "
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lokio/Okio$4;->val$socket:Ljava/net/Socket;
 
@@ -74,14 +69,12 @@
     :catch_0
     move-exception v1
 
-    .line 2
     invoke-static {v1}, Lokio/Okio;->isAndroidGetsocknameError(Ljava/lang/AssertionError;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 3
     sget-object v2, Lokio/Okio;->logger:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
@@ -104,14 +97,12 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     throw v1
 
     :catch_1
     move-exception v1
 
-    .line 5
     sget-object v2, Lokio/Okio;->logger:Ljava/util/logging/Logger;
 
     sget-object v3, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;

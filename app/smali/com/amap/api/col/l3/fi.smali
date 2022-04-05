@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/fi;
 .super Ljava/lang/Object;
-.source "OfflineChild.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -36,30 +35,24 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/amap/api/maps/offlinemap/OfflineMapManager;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/fi;->a:I
 
-    .line 3
     iput-boolean v0, p0, Lcom/amap/api/col/l3/fi;->i:Z
 
-    .line 4
     new-instance v0, Lcom/amap/api/col/l3/fi$1;
 
     invoke-direct {v0, p0}, Lcom/amap/api/col/l3/fi$1;-><init>(Lcom/amap/api/col/l3/fi;)V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/fi;->j:Landroid/os/Handler;
 
-    .line 5
     iput-object p1, p0, Lcom/amap/api/col/l3/fi;->b:Landroid/content/Context;
 
     const v0, 0x7f030002
 
-    .line 6
     invoke-static {p1, v0}, Lcom/amap/api/col/l3/fm;->a(Landroid/content/Context;I)Landroid/view/View;
 
     move-result-object p1
@@ -128,7 +121,6 @@
 
     invoke-virtual {p1, p0}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 7
     iput-object p2, p0, Lcom/amap/api/col/l3/fi;->g:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     return-void
@@ -142,7 +134,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/fi;->a:I
 
     const/4 v1, 0x3
@@ -391,7 +382,6 @@
 .method private b()V
     .locals 6
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/fi;->a:I
 
     const-string v1, "\u7b49\u5f85\u4e2d"
@@ -406,45 +396,37 @@
 
     if-ne v0, v5, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->e:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
     return-void
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->e:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 9
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
@@ -455,28 +437,24 @@
 .method private c()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->e:Landroid/widget/ImageView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     const/high16 v1, -0x10000
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     const-string v1, "\u4e0b\u8f7d\u51fa\u73b0\u5f02\u5e38"
@@ -489,28 +467,24 @@
 .method private d()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setVisibility(I)V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->e:Landroid/widget/ImageView;
 
     const/16 v1, 0x8
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     const v1, -0x777778
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setTextColor(I)V
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->f:Landroid/widget/TextView;
 
     const-string v1, "\u6682\u505c"
@@ -525,20 +499,17 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->g:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->pause()V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->g:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapManager;->restart()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     monitor-exit p0
 
     return-void
@@ -556,7 +527,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->g:Lcom/amap/api/maps/offlinemap/OfflineMapManager;
 
@@ -573,7 +543,6 @@
 
     const/4 v0, 0x1
 
-    .line 2
     monitor-exit p0
 
     return v0
@@ -586,11 +555,9 @@
     :catch_0
     move-exception v0
 
-    .line 3
     :try_start_1
     invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 4
     iget-object v1, p0, Lcom/amap/api/col/l3/fi;->b:Landroid/content/Context;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/AMapException;->getErrorMessage()Ljava/lang/String;
@@ -607,7 +574,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5
     monitor-exit p0
 
     return v2
@@ -623,7 +589,6 @@
 .method public final a()Landroid/view/View;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->k:Landroid/view/View;
 
     return-object v0
@@ -632,7 +597,6 @@
 .method public final a(I)V
     .locals 0
 
-    .line 2
     iput p1, p0, Lcom/amap/api/col/l3/fi;->a:I
 
     return-void
@@ -643,10 +607,8 @@
 
     if-eqz p1, :cond_1
 
-    .line 4
     iput-object p1, p0, Lcom/amap/api/col/l3/fi;->h:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->c:Landroid/widget/TextView;
 
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/City;->getCity()Ljava/lang/String;
@@ -655,7 +617,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 6
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getSize()J
 
     move-result-wide v0
@@ -678,7 +639,6 @@
 
     div-double/2addr v0, v2
 
-    .line 7
     iget-object p1, p0, Lcom/amap/api/col/l3/fi;->d:Landroid/widget/TextView;
 
     new-instance v2, Ljava/lang/StringBuilder;
@@ -701,7 +661,6 @@
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 8
     iget-object p1, p0, Lcom/amap/api/col/l3/fi;->h:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getState()I
@@ -744,7 +703,6 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object p1, p0, Lcom/amap/api/col/l3/fi;->b:Landroid/content/Context;
 
@@ -754,7 +712,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/fi;->b:Landroid/content/Context;
 
     const-string v0, "\u65e0\u7f51\u7edc\u8fde\u63a5"
@@ -769,20 +726,17 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object p1, p0, Lcom/amap/api/col/l3/fi;->h:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     if-eqz p1, :cond_4
 
-    .line 4
     iget-object p1, p0, Lcom/amap/api/col/l3/fi;->h:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     invoke-virtual {p1}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getState()I
 
     move-result p1
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/fi;->h:Lcom/amap/api/maps/offlinemap/OfflineMapCity;
 
     invoke-virtual {v0}, Lcom/amap/api/maps/offlinemap/OfflineMapCity;->getcompleteCode()I
@@ -797,19 +751,16 @@
 
     if-eq p1, v0, :cond_2
 
-    .line 6
     invoke-direct {p0}, Lcom/amap/api/col/l3/fi;->f()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 7
     invoke-direct {p0}, Lcom/amap/api/col/l3/fi;->b()V
 
     return-void
 
-    .line 8
     :cond_1
     invoke-direct {p0}, Lcom/amap/api/col/l3/fi;->c()V
 
@@ -818,11 +769,9 @@
     :cond_2
     return-void
 
-    .line 9
     :cond_3
     invoke-direct {p0}, Lcom/amap/api/col/l3/fi;->e()V
 
-    .line 10
     invoke-direct {p0}, Lcom/amap/api/col/l3/fi;->d()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
@@ -834,7 +783,6 @@
     :catch_0
     move-exception p1
 
-    .line 11
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     return-void

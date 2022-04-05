@@ -1,6 +1,5 @@
 .class final Lcom/google/common/eventbus/EventBus$LoggingSubscriberExceptionHandler;
 .super Ljava/lang/Object;
-.source "EventBus.java"
 
 # interfaces
 .implements Lcom/google/common/eventbus/SubscriberExceptionHandler;
@@ -25,10 +24,8 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     const-class v0, Lcom/google/common/eventbus/EventBus;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -99,7 +96,6 @@
 .method public handleException(Ljava/lang/Throwable;Lcom/google/common/eventbus/SubscriberExceptionContext;)V
     .locals 6
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/eventbus/EventBus$LoggingSubscriberExceptionHandler;->logger:Ljava/util/logging/Logger;
 
     sget-object v1, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;

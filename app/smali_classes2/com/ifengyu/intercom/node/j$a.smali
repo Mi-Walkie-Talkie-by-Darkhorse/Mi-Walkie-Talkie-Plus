@@ -1,6 +1,5 @@
 .class synthetic Lcom/ifengyu/intercom/node/j$a;
 .super Ljava/lang/Object;
-.source "NodeService.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/node/ConnectionFailedReason;->values()[Lcom/ifengyu/intercom/node/ConnectionFailedReason;
 
     move-result-object v0

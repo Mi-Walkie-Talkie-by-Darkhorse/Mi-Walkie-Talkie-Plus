@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuHeaderItem;
 .super Ljava/lang/Object;
-.source "NavigationMenuPresenter.java"
 
 # interfaces
 .implements Lcom/google/android/material/internal/NavigationMenuPresenter$NavigationMenuItem;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

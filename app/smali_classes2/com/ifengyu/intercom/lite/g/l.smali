@@ -1,6 +1,5 @@
 .class public final synthetic Lcom/ifengyu/intercom/lite/g/l;
 .super Ljava/lang/Object;
-.source "lambda"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/u2/j;

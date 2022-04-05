@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/QMUILoadingView;
 .super Landroid/view/View;
-.source "QMUILoadingView.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/c/i/a;
@@ -37,14 +36,12 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, La/b/g;
 
     invoke-direct {v0}, La/b/g;-><init>()V
 
     sput-object v0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->g:La/b/g;
 
-    .line 2
     sget v1, Lcom/qmuiteam/qmui/R$attr;->qmui_skin_support_loading_color:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -63,7 +60,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/qmuiteam/qmui/widget/QMUILoadingView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -72,28 +68,22 @@
 .method public constructor <init>(Landroid/content/Context;II)V
     .locals 0
 
-    .line 11
     invoke-direct {p0, p1}, Landroid/view/View;-><init>(Landroid/content/Context;)V
 
     const/4 p1, 0x0
 
-    .line 12
     iput p1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->c:I
 
-    .line 13
     new-instance p1, Lcom/qmuiteam/qmui/widget/QMUILoadingView$a;
 
     invoke-direct {p1, p0}, Lcom/qmuiteam/qmui/widget/QMUILoadingView$a;-><init>(Lcom/qmuiteam/qmui/widget/QMUILoadingView;)V
 
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->f:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
-    .line 14
     iput p2, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a:I
 
-    .line 15
     iput p3, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->b:I
 
-    .line 16
     invoke-direct {p0}, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->c()V
 
     return-void
@@ -102,7 +92,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 2
     sget v0, Lcom/qmuiteam/qmui/R$attr;->QMUILoadingStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/qmuiteam/qmui/widget/QMUILoadingView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -113,22 +102,18 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 3
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 v0, 0x0
 
-    .line 4
     iput v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->c:I
 
-    .line 5
     new-instance v1, Lcom/qmuiteam/qmui/widget/QMUILoadingView$a;
 
     invoke-direct {v1, p0}, Lcom/qmuiteam/qmui/widget/QMUILoadingView$a;-><init>(Lcom/qmuiteam/qmui/widget/QMUILoadingView;)V
 
     iput-object v1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->f:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
-    .line 6
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -139,7 +124,6 @@
 
     move-result-object p2
 
-    .line 7
     sget p3, Lcom/qmuiteam/qmui/R$styleable;->QMUILoadingView_qmui_loading_view_size:I
 
     const/16 v0, 0x20
@@ -154,7 +138,6 @@
 
     iput p1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a:I
 
-    .line 8
     sget p1, Lcom/qmuiteam/qmui/R$styleable;->QMUILoadingView_android_color:I
 
     const/4 p3, -0x1
@@ -165,10 +148,8 @@
 
     iput p1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->b:I
 
-    .line 9
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 10
     invoke-direct {p0}, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->c()V
 
     return-void
@@ -177,7 +158,6 @@
 .method static synthetic a(Lcom/qmuiteam/qmui/widget/QMUILoadingView;I)I
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->c:I
 
     return p1
@@ -186,14 +166,12 @@
 .method private a(Landroid/graphics/Canvas;I)V
     .locals 11
 
-    .line 12
     iget v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a:I
 
     div-int/lit8 v1, v0, 0xc
 
     div-int/lit8 v0, v0, 0x6
 
-    .line 13
     iget-object v2, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->e:Landroid/graphics/Paint;
 
     int-to-float v3, v1
@@ -202,7 +180,6 @@
 
     int-to-float p2, p2
 
-    .line 14
     iget v2, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a:I
 
     div-int/lit8 v3, v2, 0x2
@@ -215,7 +192,6 @@
 
     invoke-virtual {p1, p2, v3, v2}, Landroid/graphics/Canvas;->rotate(FFF)V
 
-    .line 15
     iget p2, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a:I
 
     div-int/lit8 v2, p2, 0x2
@@ -237,10 +213,8 @@
 
     const/high16 v2, 0x41f00000    # 30.0f
 
-    .line 16
     invoke-virtual {p1, v2}, Landroid/graphics/Canvas;->rotate(F)V
 
-    .line 17
     iget-object v2, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->e:Landroid/graphics/Paint;
 
     const/high16 v3, 0x437f0000    # 255.0f
@@ -259,7 +233,6 @@
 
     invoke-virtual {v2, v3}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 18
     iget v2, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a:I
 
     neg-int v2, v2
@@ -284,14 +257,12 @@
 
     int-to-float v9, v0
 
-    .line 19
     iget-object v10, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->e:Landroid/graphics/Paint;
 
     move-object v5, p1
 
     invoke-virtual/range {v5 .. v10}, Landroid/graphics/Canvas;->drawLine(FFFFLandroid/graphics/Paint;)V
 
-    .line 20
     iget v2, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a:I
 
     div-int/lit8 v2, v2, 0x2
@@ -311,26 +282,22 @@
 .method private c()V
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->e:Landroid/graphics/Paint;
 
-    .line 2
     iget v1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->b:I
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->e:Landroid/graphics/Paint;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->e:Landroid/graphics/Paint;
 
     sget-object v1, Landroid/graphics/Paint$Cap;->ROUND:Landroid/graphics/Paint$Cap;
@@ -345,7 +312,6 @@
 .method public a()V
     .locals 3
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
     if-nez v0, :cond_0
@@ -354,7 +320,6 @@
 
     new-array v0, v0, [I
 
-    .line 3
     fill-array-data v0, :array_0
 
     invoke-static {v0}, Landroid/animation/ValueAnimator;->ofInt([I)Landroid/animation/ValueAnimator;
@@ -363,33 +328,28 @@
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
-    .line 4
     iget-object v1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->f:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 5
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
     const-wide/16 v1, 0x258
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/ValueAnimator;->setDuration(J)Landroid/animation/ValueAnimator;
 
-    .line 6
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setRepeatMode(I)V
 
-    .line 7
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
     const/4 v1, -0x1
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setRepeatCount(I)V
 
-    .line 8
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
     new-instance v1, Landroid/view/animation/LinearInterpolator;
@@ -398,14 +358,12 @@
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
-    .line 9
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
 
     goto :goto_0
 
-    .line 10
     :cond_0
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->isStarted()Z
 
@@ -413,7 +371,6 @@
 
     if-nez v0, :cond_1
 
-    .line 11
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->start()V
@@ -432,29 +389,24 @@
 .method public b()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->f:Landroid/animation/ValueAnimator$AnimatorUpdateListener;
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->removeUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->removeAllUpdateListeners()V
 
-    .line 4
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/ValueAnimator;->cancel()V
 
     const/4 v0, 0x0
 
-    .line 5
     iput-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->d:Landroid/animation/ValueAnimator;
 
     :cond_0
@@ -473,7 +425,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->g:La/b/g;
 
     return-object v0
@@ -482,10 +433,8 @@
 .method protected onAttachedToWindow()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Landroid/view/View;->onAttachedToWindow()V
 
-    .line 2
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a()V
 
     return-void
@@ -494,10 +443,8 @@
 .method protected onDetachedFromWindow()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Landroid/view/View;->onDetachedFromWindow()V
 
-    .line 2
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->b()V
 
     return-void
@@ -506,10 +453,8 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 8
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
     move-result v0
@@ -536,14 +481,12 @@
 
     move-result v0
 
-    .line 3
     iget v1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->c:I
 
     mul-int/lit8 v1, v1, 0x1e
 
     invoke-direct {p0, p1, v1}, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a(Landroid/graphics/Canvas;I)V
 
-    .line 4
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->restoreToCount(I)V
 
     return-void
@@ -552,7 +495,6 @@
 .method protected onMeasure(II)V
     .locals 0
 
-    .line 1
     iget p1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a:I
 
     invoke-virtual {p0, p1, p1}, Landroid/view/View;->setMeasuredDimension(II)V
@@ -567,17 +509,14 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
 
     if-nez p2, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a()V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->b()V
 
@@ -588,15 +527,12 @@
 .method public setColor(I)V
     .locals 1
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->b:I
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->e:Landroid/graphics/Paint;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/View;->invalidate()V
 
     return-void
@@ -605,10 +541,8 @@
 .method public setSize(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/widget/QMUILoadingView;->a:I
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
 
     return-void

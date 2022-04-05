@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/retrofit2/adapter/rxjava2/BodyObservable;
 .super Lio/reactivex/Observable;
-.source "BodyObservable.java"
 
 
 # annotations
@@ -45,10 +44,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/BodyObservable;->upstream:Lio/reactivex/Observable;
 
     return-void
@@ -66,7 +63,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/retrofit2/adapter/rxjava2/BodyObservable;->upstream:Lio/reactivex/Observable;
 
     new-instance v1, Lcom/jakewharton/retrofit2/adapter/rxjava2/BodyObservable$BodyObserver;

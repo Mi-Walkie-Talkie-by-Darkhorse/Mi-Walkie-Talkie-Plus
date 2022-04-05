@@ -1,6 +1,5 @@
 .class final synthetic Lcom/amap/api/col/l3/je$1;
 .super Ljava/lang/Object;
-.source "Aps.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/amap/api/location/AMapLocationClientOption$GeoLanguage;->values()[Lcom/amap/api/location/AMapLocationClientOption$GeoLanguage;
 
     move-result-object v0

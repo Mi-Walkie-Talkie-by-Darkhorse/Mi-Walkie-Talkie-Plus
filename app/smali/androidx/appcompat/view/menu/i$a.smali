@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/view/menu/i$a;
 .super Landroidx/core/view/b;
-.source "MenuItemWrapperICS.java"
 
 
 # annotations
@@ -24,13 +23,10 @@
 .method constructor <init>(Landroidx/appcompat/view/menu/i;Landroid/content/Context;Landroid/view/ActionProvider;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/view/menu/i$a;->d:Landroidx/appcompat/view/menu/i;
 
-    .line 2
     invoke-direct {p0, p2}, Landroidx/core/view/b;-><init>(Landroid/content/Context;)V
 
-    .line 3
     iput-object p3, p0, Landroidx/appcompat/view/menu/i$a;->c:Landroid/view/ActionProvider;
 
     return-void
@@ -41,7 +37,6 @@
 .method public a(Landroid/view/SubMenu;)V
     .locals 2
 
-    .line 2
     iget-object v0, p0, Landroidx/appcompat/view/menu/i$a;->c:Landroid/view/ActionProvider;
 
     iget-object v1, p0, Landroidx/appcompat/view/menu/i$a;->d:Landroidx/appcompat/view/menu/i;
@@ -58,7 +53,6 @@
 .method public a()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/i$a;->c:Landroid/view/ActionProvider;
 
     invoke-virtual {v0}, Landroid/view/ActionProvider;->hasSubMenu()Z
@@ -71,7 +65,6 @@
 .method public c()Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/i$a;->c:Landroid/view/ActionProvider;
 
     invoke-virtual {v0}, Landroid/view/ActionProvider;->onCreateActionView()Landroid/view/View;
@@ -84,7 +77,6 @@
 .method public d()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/view/menu/i$a;->c:Landroid/view/ActionProvider;
 
     invoke-virtual {v0}, Landroid/view/ActionProvider;->onPerformDefaultAction()Z

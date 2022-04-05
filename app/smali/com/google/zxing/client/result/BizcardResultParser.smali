@@ -1,13 +1,11 @@
 .class public final Lcom/google/zxing/client/result/BizcardResultParser;
 .super Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;
-.source "BizcardResultParser.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;-><init>()V
 
     return-void
@@ -25,7 +23,6 @@
 
     return-object p0
 
-    .line 1
     :cond_1
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -49,7 +46,6 @@
 .method private static buildPhoneNumbers(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     const/4 v1, 0x3
@@ -58,22 +54,18 @@
 
     if-eqz p0, :cond_0
 
-    .line 2
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_0
     if-eqz p1, :cond_1
 
-    .line 3
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     :cond_1
     if-eqz p2, :cond_2
 
-    .line 4
     invoke-interface {v0, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 5
     :cond_2
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -85,7 +77,6 @@
 
     return-object p0
 
-    .line 6
     :cond_3
     new-array p0, p0, [Ljava/lang/String;
 
@@ -103,14 +94,12 @@
 .method public parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/AddressBookParsedResult;
     .locals 21
 
-    .line 2
     invoke-static/range {p1 .. p1}, Lcom/google/zxing/client/result/ResultParser;->getMassagedText(Lcom/google/zxing/Result;)Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "BIZCARD:"
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result v1
@@ -126,73 +115,62 @@
 
     const-string v2, "N:"
 
-    .line 4
     invoke-static {v2, v0, v1}, Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;->matchSingleDoCoMoPrefixedField(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, "X:"
 
-    .line 5
     invoke-static {v3, v0, v1}, Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;->matchSingleDoCoMoPrefixedField(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 6
     invoke-static {v2, v3}, Lcom/google/zxing/client/result/BizcardResultParser;->buildName(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     const-string v3, "T:"
 
-    .line 7
     invoke-static {v3, v0, v1}, Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;->matchSingleDoCoMoPrefixedField(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v18
 
     const-string v3, "C:"
 
-    .line 8
     invoke-static {v3, v0, v1}, Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;->matchSingleDoCoMoPrefixedField(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v16
 
     const-string v3, "A:"
 
-    .line 9
     invoke-static {v3, v0, v1}, Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;->matchDoCoMoPrefixedField(Ljava/lang/String;Ljava/lang/String;Z)[Ljava/lang/String;
 
     move-result-object v14
 
     const-string v3, "B:"
 
-    .line 10
     invoke-static {v3, v0, v1}, Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;->matchSingleDoCoMoPrefixedField(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v3
 
     const-string v4, "M:"
 
-    .line 11
     invoke-static {v4, v0, v1}, Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;->matchSingleDoCoMoPrefixedField(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v8
 
     const-string v4, "F:"
 
-    .line 12
     invoke-static {v4, v0, v1}, Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;->matchSingleDoCoMoPrefixedField(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v9
 
     const-string v4, "E:"
 
-    .line 13
     invoke-static {v4, v0, v1}, Lcom/google/zxing/client/result/AbstractDoCoMoResultParser;->matchSingleDoCoMoPrefixedField(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 14
     new-instance v1, Lcom/google/zxing/client/result/AddressBookParsedResult;
 
     move-object v4, v1
@@ -205,14 +183,12 @@
 
     const/4 v7, 0x0
 
-    .line 15
     invoke-static {v3, v8, v9}, Lcom/google/zxing/client/result/BizcardResultParser;->buildPhoneNumbers(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v8
 
     const/4 v9, 0x0
 
-    .line 16
     invoke-static {v0}, Lcom/google/zxing/client/result/ResultParser;->maybeWrap(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v10
@@ -239,7 +215,6 @@
 .method public bridge synthetic parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/ParsedResult;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/zxing/client/result/BizcardResultParser;->parse(Lcom/google/zxing/Result;)Lcom/google/zxing/client/result/AddressBookParsedResult;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class public Lc/b/a/a/a/a$c$b;
 .super Ljava/lang/Object;
-.source "OpenIDHelper.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lc/b/a/a/a/a$c;
 
     const/4 v1, 0x0

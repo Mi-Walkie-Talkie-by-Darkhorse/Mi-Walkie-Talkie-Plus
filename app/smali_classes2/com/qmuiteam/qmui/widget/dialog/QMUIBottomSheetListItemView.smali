@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetListItemView;
 .super Lcom/qmuiteam/qmui/layout/QMUIConstraintLayout;
-.source "QMUIBottomSheetListItemView.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method protected onMeasure(II)V
     .locals 1
 
-    .line 1
     iget p2, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIBottomSheetListItemView;->c:I
 
     const/high16 v0, 0x40000000    # 2.0f

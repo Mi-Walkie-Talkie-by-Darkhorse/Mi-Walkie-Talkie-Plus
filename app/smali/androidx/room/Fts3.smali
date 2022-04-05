@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/room/Fts3;
 .super Ljava/lang/Object;
-.source "Fts3.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/da;
 .super Ljava/lang/Object;
-.source "PolygonDelegateImp.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/ct;
@@ -134,34 +133,28 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/u;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lcom/amap/api/col/l3/da;->d:F
 
     const/4 v1, 0x1
 
-    .line 3
     iput-boolean v1, p0, Lcom/amap/api/col/l3/da;->e:Z
 
-    .line 4
     new-instance v1, Ljava/util/Vector;
 
     invoke-direct {v1}, Ljava/util/Vector;-><init>()V
 
     iput-object v1, p0, Lcom/amap/api/col/l3/da;->k:Ljava/util/List;
 
-    .line 5
     new-instance v1, Ljava/util/Vector;
 
     invoke-direct {v1}, Ljava/util/Vector;-><init>()V
 
     iput-object v1, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
-    .line 6
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
@@ -170,49 +163,38 @@
 
     const/4 v1, 0x0
 
-    .line 7
     iput v1, p0, Lcom/amap/api/col/l3/da;->q:I
 
     iput v1, p0, Lcom/amap/api/col/l3/da;->r:I
 
     const/4 v2, 0x0
 
-    .line 8
     iput-object v2, p0, Lcom/amap/api/col/l3/da;->s:Lcom/amap/api/maps/model/LatLngBounds;
 
-    .line 9
     iput-boolean v1, p0, Lcom/amap/api/col/l3/da;->t:Z
 
-    .line 10
     iput v0, p0, Lcom/amap/api/col/l3/da;->u:F
 
-    .line 11
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v1, p0, Lcom/amap/api/col/l3/da;->v:Ljava/util/List;
 
-    .line 12
     new-instance v1, Ljava/lang/Object;
 
     invoke-direct {v1}, Ljava/lang/Object;-><init>()V
 
     iput-object v1, p0, Lcom/amap/api/col/l3/da;->w:Ljava/lang/Object;
 
-    .line 13
     iput-object v2, p0, Lcom/amap/api/col/l3/da;->a:Lcom/autonavi/amap/mapcore/FPointBounds;
 
-    .line 14
     iput-object v2, p0, Lcom/amap/api/col/l3/da;->b:Landroid/graphics/Rect;
 
-    .line 15
     iput v0, p0, Lcom/amap/api/col/l3/da;->x:F
 
-    .line 16
     iput-object p1, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
-    .line 17
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/col/l3/da;->getId()Ljava/lang/String;
 
@@ -231,10 +213,8 @@
 
     const-string v1, "create"
 
-    .line 18
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 19
     invoke-virtual {p1}, Landroid/os/RemoteException;->printStackTrace()V
 
     return-void
@@ -260,7 +240,6 @@
         }
     .end annotation
 
-    .line 53
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -269,7 +248,6 @@
 
     const/4 v1, 0x0
 
-    .line 54
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -288,19 +266,16 @@
 
     check-cast v2, Lcom/amap/api/maps/model/LatLng;
 
-    .line 55
     invoke-virtual {v2, v1}, Lcom/amap/api/maps/model/LatLng;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
-    .line 56
     invoke-static {}, Lcom/autonavi/amap/mapcore/IPoint;->obtain()Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v1
 
-    .line 57
     iget-object v4, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     iget-wide v5, v2, Lcom/amap/api/maps/model/LatLng;->latitude:D
@@ -311,10 +286,8 @@
 
     invoke-interface/range {v4 .. v9}, Lcom/amap/api/col/l3/u;->a(DDLcom/autonavi/amap/mapcore/IPoint;)V
 
-    .line 58
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 59
     iget-object v3, p0, Lcom/amap/api/col/l3/da;->b:Landroid/graphics/Rect;
 
     iget v4, v1, Landroid/graphics/Point;->x:I
@@ -327,7 +300,6 @@
 
     goto :goto_0
 
-    .line 60
     :cond_1
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -339,7 +311,6 @@
 
     const/4 v2, 0x0
 
-    .line 61
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -348,14 +319,12 @@
 
     sub-int/2addr p1, v1
 
-    .line 62
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
     check-cast v1, Lcom/autonavi/amap/mapcore/IPoint;
 
-    .line 63
     iget v3, v2, Landroid/graphics/Point;->x:I
 
     iget v4, v1, Landroid/graphics/Point;->x:I
@@ -368,10 +337,8 @@
 
     if-ne v2, v1, :cond_2
 
-    .line 64
     invoke-interface {v0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
 
-    .line 65
     :cond_2
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -383,7 +350,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 66
     invoke-static {v0}, Ljava/util/Collections;->reverse(Ljava/util/List;)V
 
     :cond_3
@@ -400,24 +366,20 @@
 
     move-object/from16 v0, p0
 
-    .line 2
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/maps/model/CircleHoleOptions;->getCenter()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    .line 3
     invoke-static {}, Lcom/autonavi/amap/mapcore/IPoint;->obtain()Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v1
 
-    .line 4
     invoke-static {}, Lcom/autonavi/amap/mapcore/FPoint;->obtain()Lcom/autonavi/amap/mapcore/FPoint;
 
     move-result-object v2
 
-    .line 5
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/maps/model/CircleHoleOptions;->getCenter()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object v3
@@ -436,7 +398,6 @@
 
     new-array v3, v3, [F
 
-    .line 6
     invoke-virtual/range {p1 .. p1}, Lcom/amap/api/maps/model/CircleHoleOptions;->getCenter()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object v4
@@ -485,28 +446,24 @@
 
     mul-double v6, v6, v4
 
-    .line 7
     iget-object v4, v0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v4}, Lcom/amap/api/col/l3/u;->d()Lcom/autonavi/ae/gmap/GLMapState;
 
     move-result-object v4
 
-    .line 8
     iget v5, v1, Landroid/graphics/Point;->x:I
 
     iget v12, v1, Landroid/graphics/Point;->y:I
 
     invoke-virtual {v4, v5, v12, v2}, Lcom/autonavi/ae/gmap/GLMapState;->geo2Map(IILcom/autonavi/amap/mapcore/FPoint;)V
 
-    .line 9
     iget v5, v2, Landroid/graphics/PointF;->x:F
 
     const/4 v12, 0x0
 
     aput v5, v3, v12
 
-    .line 10
     iget v5, v2, Landroid/graphics/PointF;->y:F
 
     const/4 v13, 0x1
@@ -530,21 +487,18 @@
 
     div-double/2addr v14, v10
 
-    .line 11
     invoke-static {v14, v15}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v16
 
     mul-double v16, v16, v6
 
-    .line 12
     invoke-static {v14, v15}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v14
 
     mul-double v14, v14, v6
 
-    .line 13
     iget v8, v1, Landroid/graphics/Point;->x:I
 
     int-to-double v8, v8
@@ -553,7 +507,6 @@
 
     double-to-int v8, v8
 
-    .line 14
     iget v9, v1, Landroid/graphics/Point;->y:I
 
     int-to-double v10, v9
@@ -562,10 +515,8 @@
 
     double-to-int v9, v10
 
-    .line 15
     invoke-virtual {v4, v8, v9, v2}, Lcom/autonavi/ae/gmap/GLMapState;->geo2Map(IILcom/autonavi/amap/mapcore/FPoint;)V
 
-    .line 16
     iget-object v10, v0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v10}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapConfig()Lcom/autonavi/amap/mapcore/MapConfig;
@@ -582,7 +533,6 @@
 
     iput v8, v2, Landroid/graphics/PointF;->x:F
 
-    .line 17
     iget-object v8, v0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v8}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapConfig()Lcom/autonavi/amap/mapcore/MapConfig;
@@ -603,19 +553,16 @@
 
     mul-int/lit8 v9, v12, 0x3
 
-    .line 18
     iget v10, v2, Landroid/graphics/PointF;->x:F
 
     aput v10, v3, v9
 
     add-int/lit8 v10, v9, 0x1
 
-    .line 19
     aput v8, v3, v10
 
     add-int/2addr v9, v13
 
-    .line 20
     aput v5, v3, v9
 
     const-wide v8, 0x400921fb54442d18L    # Math.PI
@@ -627,20 +574,16 @@
     :cond_0
     const/16 v4, 0x16a
 
-    .line 21
     iput v4, v0, Lcom/amap/api/col/l3/da;->C:I
 
-    .line 22
     invoke-static {v3}, Lcom/amap/api/col/l3/em;->a([F)Ljava/nio/FloatBuffer;
 
     move-result-object v3
 
     iput-object v3, v0, Lcom/amap/api/col/l3/da;->E:Ljava/nio/FloatBuffer;
 
-    .line 23
     invoke-virtual {v1}, Lcom/autonavi/amap/mapcore/IPoint;->recycle()V
 
-    .line 24
     invoke-virtual {v2}, Lcom/autonavi/amap/mapcore/FPoint;->recycle()V
 
     :cond_1
@@ -664,7 +607,6 @@
         }
     .end annotation
 
-    .line 25
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v0
@@ -675,7 +617,6 @@
 
     return-void
 
-    .line 26
     :cond_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -683,17 +624,14 @@
 
     mul-int/lit8 v0, v0, 0x3
 
-    .line 27
     new-array v0, v0, [F
 
-    .line 28
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v2
 
     new-array v3, v2, [Lcom/autonavi/amap/mapcore/IPoint;
 
-    .line 29
     invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -719,7 +657,6 @@
 
     mul-int/lit8 v8, v5, 0x3
 
-    .line 30
     iget v9, v6, Landroid/graphics/Point;->x:I
 
     sub-int/2addr v9, p2
@@ -730,7 +667,6 @@
 
     add-int/lit8 v9, v8, 0x1
 
-    .line 31
     iget v10, v6, Landroid/graphics/Point;->y:I
 
     sub-int/2addr v10, p3
@@ -741,28 +677,23 @@
 
     add-int/2addr v8, v1
 
-    .line 32
     aput v7, v0, v8
 
-    .line 33
     aput-object v6, v3, v5
 
     add-int/lit8 v5, v5, 0x1
 
     goto :goto_0
 
-    .line 34
     :cond_1
     invoke-static {v3}, Lcom/amap/api/col/l3/da;->a([Lcom/autonavi/amap/mapcore/IPoint;)[Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object p1
 
-    .line 35
     array-length v5, p1
 
     if-nez v5, :cond_3
 
-    .line 36
     sget-wide v5, Lcom/amap/api/col/l3/da;->G:D
 
     const-wide v8, 0x4202a05f20000000L    # 1.0E10
@@ -773,22 +704,18 @@
 
     const-wide v5, 0x4197d78400000000L    # 1.0E8
 
-    .line 37
     sput-wide v5, Lcom/amap/api/col/l3/da;->G:D
 
     goto :goto_1
 
-    .line 38
     :cond_2
     sput-wide v8, Lcom/amap/api/col/l3/da;->G:D
 
-    .line 39
     :goto_1
     invoke-static {v3}, Lcom/amap/api/col/l3/da;->a([Lcom/autonavi/amap/mapcore/IPoint;)[Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object p1
 
-    .line 40
     :cond_3
     array-length v3, p1
 
@@ -796,7 +723,6 @@
 
     new-array v3, v3, [F
 
-    .line 41
     array-length v5, p1
 
     const/4 v6, 0x0
@@ -808,7 +734,6 @@
 
     mul-int/lit8 v9, v6, 0x3
 
-    .line 42
     iget v10, v8, Landroid/graphics/Point;->x:I
 
     sub-int/2addr v10, p2
@@ -819,7 +744,6 @@
 
     add-int/lit8 v10, v9, 0x1
 
-    .line 43
     iget v8, v8, Landroid/graphics/Point;->y:I
 
     sub-int/2addr v8, p3
@@ -830,7 +754,6 @@
 
     add-int/2addr v9, v1
 
-    .line 44
     aput v7, v3, v9
 
     add-int/lit8 v6, v6, 0x1
@@ -839,23 +762,19 @@
 
     goto :goto_2
 
-    .line 45
     :cond_4
     iput v2, p0, Lcom/amap/api/col/l3/da;->C:I
 
-    .line 46
     array-length p1, p1
 
     iput p1, p0, Lcom/amap/api/col/l3/da;->D:I
 
-    .line 47
     invoke-static {v0}, Lcom/amap/api/col/l3/em;->a([F)Ljava/nio/FloatBuffer;
 
     move-result-object p1
 
     iput-object p1, p0, Lcom/amap/api/col/l3/da;->E:Ljava/nio/FloatBuffer;
 
-    .line 48
     invoke-static {v3}, Lcom/amap/api/col/l3/em;->a([F)Ljava/nio/FloatBuffer;
 
     move-result-object p1
@@ -870,7 +789,6 @@
 
     const/4 v0, 0x1
 
-    .line 67
     :try_start_0
     invoke-virtual {p1}, Lcom/amap/api/maps/model/PolygonHoleOptions;->getPoints()Ljava/util/List;
 
@@ -878,7 +796,6 @@
 
     const/4 v1, 0x0
 
-    .line 68
     :goto_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -886,7 +803,6 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 69
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -916,10 +832,8 @@
 
     const-string v2, "isPolygonInPolygon"
 
-    .line 70
     invoke-static {p1, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 71
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_0
@@ -929,7 +843,6 @@
 .method private a(Lcom/autonavi/amap/mapcore/Rectangle;)Z
     .locals 3
 
-    .line 49
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0}, Lcom/amap/api/col/l3/u;->h()F
@@ -938,10 +851,8 @@
 
     iput v0, p0, Lcom/amap/api/col/l3/da;->x:F
 
-    .line 50
     invoke-direct {p0}, Lcom/amap/api/col/l3/da;->f()V
 
-    .line 51
     iget v0, p0, Lcom/amap/api/col/l3/da;->x:F
 
     const/4 v1, 0x0
@@ -957,7 +868,6 @@
     :cond_0
     if-eqz p1, :cond_2
 
-    .line 52
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->b:Landroid/graphics/Rect;
 
@@ -984,12 +894,10 @@
 .method private static a([Lcom/autonavi/amap/mapcore/IPoint;)[Lcom/autonavi/amap/mapcore/IPoint;
     .locals 9
 
-    .line 72
     array-length v0, p0
 
     mul-int/lit8 v1, v0, 0x2
 
-    .line 73
     new-array v1, v1, [D
 
     const/4 v2, 0x0
@@ -1001,7 +909,6 @@
 
     mul-int/lit8 v4, v3, 0x2
 
-    .line 74
     aget-object v5, p0, v3
 
     iget v5, v5, Landroid/graphics/Point;->x:I
@@ -1016,7 +923,6 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    .line 75
     aget-object v5, p0, v3
 
     iget v5, v5, Landroid/graphics/Point;->y:I
@@ -1031,34 +937,28 @@
 
     goto :goto_0
 
-    .line 76
     :cond_0
     new-instance p0, Lcom/amap/api/col/l3/dv;
 
     invoke-direct {p0}, Lcom/amap/api/col/l3/dv;-><init>()V
 
-    .line 77
     invoke-virtual {p0, v1}, Lcom/amap/api/col/l3/dv;->a([D)Lcom/amap/api/col/l3/ek;
 
     move-result-object p0
 
-    .line 78
     iget v0, p0, Lcom/amap/api/col/l3/ek;->b:I
 
-    .line 79
     new-array v3, v0, [Lcom/autonavi/amap/mapcore/IPoint;
 
     :goto_1
     if-ge v2, v0, :cond_1
 
-    .line 80
     new-instance v4, Lcom/autonavi/amap/mapcore/IPoint;
 
     invoke-direct {v4}, Lcom/autonavi/amap/mapcore/IPoint;-><init>()V
 
     aput-object v4, v3, v2
 
-    .line 81
     aget-object v4, v3, v2
 
     invoke-virtual {p0, v2}, Lcom/amap/api/col/l3/ek;->a(I)S
@@ -1077,7 +977,6 @@
 
     iput v5, v4, Landroid/graphics/Point;->x:I
 
-    .line 82
     aget-object v4, v3, v2
 
     invoke-virtual {p0, v2}, Lcom/amap/api/col/l3/ek;->a(I)S
@@ -1109,7 +1008,6 @@
 .method private b(Lcom/amap/api/maps/model/CircleHoleOptions;)Z
     .locals 2
 
-    .line 21
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/col/l3/da;->getPoints()Ljava/util/List;
 
@@ -1121,7 +1019,6 @@
 
     if-nez v0, :cond_0
 
-    .line 22
     invoke-virtual {p1}, Lcom/amap/api/maps/model/CircleHoleOptions;->getCenter()Lcom/amap/api/maps/model/LatLng;
 
     move-result-object p1
@@ -1145,10 +1042,8 @@
 
     const-string v1, "isCircleInPolygon"
 
-    .line 23
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 24
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_0
@@ -1160,14 +1055,12 @@
 .method private d()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x3
 
-    .line 2
     invoke-interface {v0, v1}, Lcom/amap/api/col/l3/u;->m(I)Lcom/amap/api/col/l3/df;
 
     move-result-object v0
@@ -1190,27 +1083,22 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {v0}, Landroid/opengl/GLES20;->glClearStencil(I)V
 
     const/16 v1, 0x400
 
-    .line 2
     invoke-static {v1}, Landroid/opengl/GLES20;->glClear(I)V
 
     const/16 v1, 0xb90
 
-    .line 3
     invoke-static {v1}, Landroid/opengl/GLES20;->glDisable(I)V
 
-    .line 4
     iget-object v1, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v1}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapConfig()Lcom/autonavi/amap/mapcore/MapConfig;
 
     move-result-object v1
 
-    .line 5
     iget-object v2, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
     if-eqz v2, :cond_6
@@ -1221,7 +1109,6 @@
 
     if-lez v2, :cond_6
 
-    .line 6
     :goto_0
     iget-object v2, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
@@ -1231,7 +1118,6 @@
 
     if-ge v0, v2, :cond_6
 
-    .line 7
     iget-object v2, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -1240,17 +1126,14 @@
 
     check-cast v2, Lcom/amap/api/maps/model/BaseHoleOptions;
 
-    .line 8
     instance-of v3, v2, Lcom/amap/api/maps/model/PolygonHoleOptions;
 
     if-eqz v3, :cond_0
 
-    .line 9
     move-object v4, v2
 
     check-cast v4, Lcom/amap/api/maps/model/PolygonHoleOptions;
 
-    .line 10
     invoke-virtual {v4}, Lcom/amap/api/maps/model/PolygonHoleOptions;->getPoints()Ljava/util/List;
 
     move-result-object v4
@@ -1271,26 +1154,21 @@
 
     goto :goto_1
 
-    .line 11
     :cond_0
     instance-of v4, v2, Lcom/amap/api/maps/model/CircleHoleOptions;
 
     if-eqz v4, :cond_1
 
-    .line 12
     move-object v4, v2
 
     check-cast v4, Lcom/amap/api/maps/model/CircleHoleOptions;
 
-    .line 13
     iget-object v5, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v5}, Lcom/amap/api/col/l3/u;->g()V
 
-    .line 14
     invoke-direct {p0, v4}, Lcom/amap/api/col/l3/da;->a(Lcom/amap/api/maps/model/CircleHoleOptions;)V
 
-    .line 15
     :cond_1
     :goto_1
     iget-object v4, p0, Lcom/amap/api/col/l3/da;->E:Ljava/nio/FloatBuffer;
@@ -1301,7 +1179,6 @@
 
     if-lez v4, :cond_5
 
-    .line 16
     iget-object v4, p0, Lcom/amap/api/col/l3/da;->y:Lcom/amap/api/col/l3/dg$d;
 
     if-eqz v4, :cond_2
@@ -1312,14 +1189,12 @@
 
     if-eqz v4, :cond_3
 
-    .line 17
     :cond_2
     invoke-direct {p0}, Lcom/amap/api/col/l3/da;->d()V
 
     :cond_3
     if-eqz v3, :cond_4
 
-    .line 18
     iget-object v5, p0, Lcom/amap/api/col/l3/da;->y:Lcom/amap/api/col/l3/dg$d;
 
     iget v6, p0, Lcom/amap/api/col/l3/da;->i:I
@@ -1340,13 +1215,11 @@
 
     goto :goto_2
 
-    .line 19
     :cond_4
     instance-of v2, v2, Lcom/amap/api/maps/model/CircleHoleOptions;
 
     if-eqz v2, :cond_5
 
-    .line 20
     iget-object v3, p0, Lcom/amap/api/col/l3/da;->y:Lcom/amap/api/col/l3/dg$d;
 
     iget v4, p0, Lcom/amap/api/col/l3/da;->i:I
@@ -1378,14 +1251,12 @@
 .method private f()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0}, Lcom/amap/api/col/l3/u;->h()F
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/da;->k:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -1402,7 +1273,6 @@
 
     if-gtz v1, :cond_1
 
-    .line 3
     iget v1, p0, Lcom/amap/api/col/l3/da;->g:F
 
     const/high16 v2, 0x40000000    # 2.0f
@@ -1424,7 +1294,6 @@
     :cond_0
     const/high16 v1, 0x43480000    # 200.0f
 
-    .line 4
     :goto_0
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
@@ -1442,7 +1311,6 @@
 
     return-void
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
@@ -1460,7 +1328,6 @@
 
     return-void
 
-    .line 6
     :cond_2
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
@@ -1484,7 +1351,6 @@
 .method public final a()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     invoke-interface {v0}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->getMapConfig()Lcom/autonavi/amap/mapcore/MapConfig;
@@ -1523,7 +1389,6 @@
 
     move-object/from16 v1, p0
 
-    .line 1
     iget-object v0, v1, Lcom/amap/api/col/l3/da;->k:Ljava/util/List;
 
     if-eqz v0, :cond_16
@@ -1536,7 +1401,6 @@
 
     goto/16 :goto_a
 
-    .line 2
     :cond_0
     iget-object v0, v1, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
@@ -1544,32 +1408,26 @@
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/MapConfig;->getGeoRectangle()Lcom/autonavi/amap/mapcore/Rectangle;
 
     move-result-object v2
 
-    .line 4
     invoke-virtual {v2}, Lcom/autonavi/amap/mapcore/Rectangle;->getClipRect()[Lcom/autonavi/amap/mapcore/IPoint;
 
     move-result-object v3
 
-    .line 5
     iget-object v4, v1, Lcom/amap/api/col/l3/da;->k:Ljava/util/List;
 
-    .line 6
     invoke-direct {v1, v2}, Lcom/amap/api/col/l3/da;->a(Lcom/autonavi/amap/mapcore/Rectangle;)Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 7
     iget-object v2, v1, Lcom/amap/api/col/l3/da;->w:Ljava/lang/Object;
 
     monitor-enter v2
 
-    .line 8
     :try_start_0
     iget-object v4, v1, Lcom/amap/api/col/l3/da;->k:Ljava/util/List;
 
@@ -1577,7 +1435,6 @@
 
     move-result-object v4
 
-    .line 9
     monitor-exit v2
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -1591,7 +1448,6 @@
 
     throw v0
 
-    .line 10
     :cond_1
     :goto_0
     iget-object v2, v1, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
@@ -1816,7 +1672,6 @@
 
     invoke-static {v2}, Landroid/opengl/GLES20;->glStencilMask(I)V
 
-    .line 11
     :cond_9
     invoke-interface {v4}, Ljava/util/List;->size()I
 
@@ -1826,7 +1681,6 @@
 
     if-le v2, v3, :cond_15
 
-    .line 12
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/MapConfig;->getS_x()I
 
     move-result v2
@@ -2107,7 +1961,6 @@
 
     iput-object v0, v1, Lcom/amap/api/col/l3/da;->p:Ljava/nio/FloatBuffer;
 
-    .line 13
     :cond_12
     iget-object v0, v1, Lcom/amap/api/col/l3/da;->o:Ljava/nio/FloatBuffer;
 
@@ -2125,7 +1978,6 @@
 
     if-lez v0, :cond_15
 
-    .line 14
     iget-object v0, v1, Lcom/amap/api/col/l3/da;->y:Lcom/amap/api/col/l3/dg$d;
 
     if-eqz v0, :cond_13
@@ -2136,11 +1988,9 @@
 
     if-eqz v0, :cond_14
 
-    .line 15
     :cond_13
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/da;->d()V
 
-    .line 16
     :cond_14
     iget-object v7, v1, Lcom/amap/api/col/l3/da;->y:Lcom/amap/api/col/l3/dg$d;
 
@@ -2160,19 +2010,15 @@
 
     iget-object v0, v1, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
-    .line 17
     invoke-interface {v0}, Lcom/amap/api/col/l3/u;->v()[F
 
     move-result-object v15
 
-    .line 18
     invoke-static/range {v7 .. v15}, Lcom/amap/api/col/l3/dw;->a(Lcom/amap/api/col/l3/dg$d;IILjava/nio/FloatBuffer;FLjava/nio/FloatBuffer;II[F)V
 
-    .line 19
     :cond_15
     invoke-direct/range {p0 .. p0}, Lcom/amap/api/col/l3/da;->e()V
 
-    .line 20
     iput-boolean v6, v1, Lcom/amap/api/col/l3/da;->t:Z
 
     :cond_16
@@ -2183,7 +2029,6 @@
 .method public final c()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/da;->t:Z
 
     return v0
@@ -2203,7 +2048,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
@@ -2218,7 +2062,6 @@
 
     if-lez v1, :cond_2
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -2238,7 +2081,6 @@
 
     check-cast v2, Lcom/amap/api/maps/model/BaseHoleOptions;
 
-    .line 3
     invoke-static {v2, p1}, Lcom/amap/api/col/l3/em;->a(Lcom/amap/api/maps/model/BaseHoleOptions;Lcom/amap/api/maps/model/LatLng;)Z
 
     move-result v2
@@ -2247,7 +2089,6 @@
 
     return v0
 
-    .line 4
     :cond_2
     invoke-virtual {p0}, Lcom/amap/api/col/l3/da;->getPoints()Ljava/util/List;
 
@@ -2268,10 +2109,8 @@
 
     const-string v2, "contains"
 
-    .line 5
     invoke-static {p1, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return v0
@@ -2280,7 +2119,6 @@
 .method public final destroy()V
     .locals 3
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->o:Ljava/nio/FloatBuffer;
 
@@ -2288,78 +2126,62 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->o:Ljava/nio/FloatBuffer;
 
     invoke-virtual {v0}, Ljava/nio/FloatBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 3
     iput-object v1, p0, Lcom/amap/api/col/l3/da;->o:Ljava/nio/FloatBuffer;
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->p:Ljava/nio/FloatBuffer;
 
     if-eqz v0, :cond_1
 
-    .line 5
     iput-object v1, p0, Lcom/amap/api/col/l3/da;->p:Ljava/nio/FloatBuffer;
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->E:Ljava/nio/FloatBuffer;
 
     if-eqz v0, :cond_2
 
-    .line 7
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->E:Ljava/nio/FloatBuffer;
 
     invoke-virtual {v0}, Ljava/nio/FloatBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 8
     iput-object v1, p0, Lcom/amap/api/col/l3/da;->E:Ljava/nio/FloatBuffer;
 
-    .line 9
     :cond_2
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->F:Ljava/nio/FloatBuffer;
 
     if-eqz v0, :cond_3
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->F:Ljava/nio/FloatBuffer;
 
     invoke-virtual {v0}, Ljava/nio/FloatBuffer;->clear()Ljava/nio/Buffer;
 
-    .line 11
     iput-object v1, p0, Lcom/amap/api/col/l3/da;->F:Ljava/nio/FloatBuffer;
 
-    .line 12
     :cond_3
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
     if-eqz v0, :cond_4
 
-    .line 13
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 14
     :cond_4
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->m:Ljava/util/List;
 
     if-eqz v0, :cond_5
 
-    .line 15
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->m:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 16
     :cond_5
     iput-object v1, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
-    .line 17
     iput-object v1, p0, Lcom/amap/api/col/l3/da;->m:Ljava/util/List;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -2373,10 +2195,8 @@
 
     const-string v2, "destroy"
 
-    .line 18
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 19
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -2390,14 +2210,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 2
     invoke-interface {p1}, Lcom/autonavi/amap/mapcore/interfaces/IOverlay;->getId()Ljava/lang/String;
 
     move-result-object p1
@@ -2434,7 +2252,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/da;->h:I
 
     return v0
@@ -2451,7 +2268,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
     return-object v0
@@ -2465,12 +2281,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->f:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     const-string v1, "Polygon"
@@ -2481,7 +2295,6 @@
 
     iput-object v0, p0, Lcom/amap/api/col/l3/da;->f:Ljava/lang/String;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->f:Ljava/lang/String;
 
@@ -2505,7 +2318,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->j:Ljava/util/List;
 
     return-object v0
@@ -2519,7 +2331,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/da;->i:I
 
     return v0
@@ -2533,7 +2344,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/da;->g:F
 
     return v0
@@ -2547,7 +2357,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/da;->d:F
 
     return v0
@@ -2561,7 +2370,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-super {p0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
@@ -2585,7 +2393,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/da;->e:Z
 
     return v0
@@ -2599,7 +2406,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     invoke-virtual {p0}, Lcom/amap/api/col/l3/da;->getId()Ljava/lang/String;
@@ -2608,7 +2414,6 @@
 
     invoke-interface {v0, v1}, Lcom/amap/api/col/l3/u;->a(Ljava/lang/String;)Z
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     const/4 v1, 0x0
@@ -2632,10 +2437,8 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/da;->h:I
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     const/4 v0, 0x0
@@ -2658,16 +2461,13 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     iput-object p1, p0, Lcom/amap/api/col/l3/da;->m:Ljava/util/List;
 
-    .line 2
     iget-object v1, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
     if-nez v1, :cond_0
 
-    .line 3
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
@@ -2676,7 +2476,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
@@ -2687,7 +2486,6 @@
 
     const/4 v1, 0x0
 
-    .line 5
     :goto_1
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -2695,22 +2493,18 @@
 
     if-ge v1, v2, :cond_4
 
-    .line 6
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/amap/api/maps/model/BaseHoleOptions;
 
-    .line 7
     instance-of v3, v2, Lcom/amap/api/maps/model/PolygonHoleOptions;
 
     if-eqz v3, :cond_1
 
-    .line 8
     check-cast v2, Lcom/amap/api/maps/model/PolygonHoleOptions;
 
-    .line 9
     invoke-direct {p0, v2}, Lcom/amap/api/col/l3/da;->a(Lcom/amap/api/maps/model/PolygonHoleOptions;)Z
 
     move-result v3
@@ -2725,23 +2519,19 @@
 
     if-nez v3, :cond_2
 
-    .line 10
     iget-object v3, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_2
 
-    .line 11
     :cond_1
     instance-of v3, v2, Lcom/amap/api/maps/model/CircleHoleOptions;
 
     if-eqz v3, :cond_2
 
-    .line 12
     check-cast v2, Lcom/amap/api/maps/model/CircleHoleOptions;
 
-    .line 13
     invoke-direct {p0, v2}, Lcom/amap/api/col/l3/da;->b(Lcom/amap/api/maps/model/CircleHoleOptions;)Z
 
     move-result v3
@@ -2756,7 +2546,6 @@
 
     if-nez v3, :cond_2
 
-    .line 14
     iget-object v3, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -2767,7 +2556,6 @@
 
     goto :goto_1
 
-    .line 15
     :cond_3
     iget-object p1, p0, Lcom/amap/api/col/l3/da;->l:Ljava/util/List;
 
@@ -2784,13 +2572,10 @@
 
     const-string v2, "setHoleOptions"
 
-    .line 16
     invoke-static {p1, v1, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 17
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 18
     :cond_4
     :goto_3
     iget-object p1, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
@@ -2817,16 +2602,13 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/da;->w:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     iput-object p1, p0, Lcom/amap/api/col/l3/da;->j:Ljava/util/List;
 
-    .line 3
     invoke-static {}, Lcom/amap/api/maps/model/LatLngBounds;->builder()Lcom/amap/api/maps/model/LatLngBounds$Builder;
 
     move-result-object v1
@@ -3013,17 +2795,14 @@
 
     invoke-interface {p1, v2}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->setRunLowFrame(Z)V
 
-    .line 4
     iget-object p1, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     invoke-interface {p1, v2}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->setRunLowFrame(Z)V
 
-    .line 5
     iget-object p1, p0, Lcom/amap/api/col/l3/da;->m:Ljava/util/List;
 
     invoke-virtual {p0, p1}, Lcom/amap/api/col/l3/da;->setHoleOptions(Ljava/util/List;)V
 
-    .line 6
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -3046,10 +2825,8 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/da;->i:I
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     const/4 v0, 0x0
@@ -3067,10 +2844,8 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/da;->g:F
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     const/4 v0, 0x0
@@ -3088,10 +2863,8 @@
         }
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/amap/api/col/l3/da;->e:Z
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     const/4 v0, 0x0
@@ -3109,15 +2882,12 @@
         }
     .end annotation
 
-    .line 1
     iput p1, p0, Lcom/amap/api/col/l3/da;->d:F
 
-    .line 2
     iget-object p1, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     invoke-interface {p1}, Lcom/amap/api/col/l3/u;->g()V
 
-    .line 3
     iget-object p1, p0, Lcom/amap/api/col/l3/da;->c:Lcom/amap/api/col/l3/u;
 
     const/4 v0, 0x0

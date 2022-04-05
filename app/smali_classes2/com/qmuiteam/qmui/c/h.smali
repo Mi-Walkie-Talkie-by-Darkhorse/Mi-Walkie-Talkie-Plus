@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/c/h;
 .super Ljava/lang/Object;
-.source "QMUISkinValueBuilder.java"
 
 
 # static fields
@@ -32,10 +31,8 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -52,22 +49,18 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/c/h;->b()Lcom/qmuiteam/qmui/c/h;
 
-    .line 2
     sget-object v0, Lcom/qmuiteam/qmui/c/h;->b:Ljava/util/LinkedList;
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     sput-object v0, Lcom/qmuiteam/qmui/c/h;->b:Ljava/util/LinkedList;
 
-    .line 4
     :cond_0
     sget-object v0, Lcom/qmuiteam/qmui/c/h;->b:Ljava/util/LinkedList;
 
@@ -79,7 +72,6 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 5
     sget-object v0, Lcom/qmuiteam/qmui/c/h;->b:Ljava/util/LinkedList;
 
     invoke-virtual {v0, p0}, Ljava/util/LinkedList;->push(Ljava/lang/Object;)V
@@ -91,19 +83,16 @@
 .method public static e()Lcom/qmuiteam/qmui/c/h;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/c/h;->b:Ljava/util/LinkedList;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/qmuiteam/qmui/c/h;
 
     invoke-direct {v0}, Lcom/qmuiteam/qmui/c/h;-><init>()V
 
     return-object v0
 
-    .line 3
     :cond_0
     invoke-virtual {v0}, Ljava/util/LinkedList;->poll()Ljava/lang/Object;
 
@@ -115,7 +104,6 @@
 
     return-object v0
 
-    .line 4
     :cond_1
     new-instance v0, Lcom/qmuiteam/qmui/c/h;
 
@@ -129,7 +117,6 @@
 .method public a(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 7
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -146,7 +133,6 @@
 .method public a(Ljava/lang/String;)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 6
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     const-string v1, "background"
@@ -159,12 +145,10 @@
 .method public a()Ljava/lang/String;
     .locals 6
 
-    .line 8
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 9
     iget-object v1, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-virtual {v1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
@@ -191,7 +175,6 @@
 
     check-cast v3, Ljava/lang/String;
 
-    .line 10
     iget-object v4, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-virtual {v4, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -202,7 +185,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 11
     invoke-virtual {v4}, Ljava/lang/String;->isEmpty()Z
 
     move-result v5
@@ -216,26 +198,21 @@
 
     const-string v2, "|"
 
-    .line 12
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 13
     :cond_2
     invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v2, ":"
 
-    .line 14
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 15
     invoke-virtual {v0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const/4 v2, 0x0
 
     goto :goto_0
 
-    .line 16
     :cond_3
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -247,7 +224,6 @@
 .method public b()Lcom/qmuiteam/qmui/c/h;
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->clear()V
@@ -258,7 +234,6 @@
 .method public b(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -275,7 +250,6 @@
 .method public b(Ljava/lang/String;)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     const-string v1, "bottomSeparator"
@@ -288,7 +262,6 @@
 .method public c(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -305,7 +278,6 @@
 .method public c(Ljava/lang/String;)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     const-string v1, "src"
@@ -318,7 +290,6 @@
 .method public c()Z
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->isEmpty()Z
@@ -331,7 +302,6 @@
 .method public d(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -348,7 +318,6 @@
 .method public d(Ljava/lang/String;)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     const-string v1, "textColor"
@@ -361,7 +330,6 @@
 .method public d()V
     .locals 0
 
-    .line 3
     invoke-static {p0}, Lcom/qmuiteam/qmui/c/h;->a(Lcom/qmuiteam/qmui/c/h;)V
 
     return-void
@@ -370,7 +338,6 @@
 .method public e(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 5
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -387,7 +354,6 @@
 .method public f(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -404,7 +370,6 @@
 .method public g(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -421,7 +386,6 @@
 .method public h(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -438,7 +402,6 @@
 .method public i(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -455,7 +418,6 @@
 .method public j(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -472,7 +434,6 @@
 .method public k(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -489,7 +450,6 @@
 .method public l(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -506,7 +466,6 @@
 .method public m(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -523,7 +482,6 @@
 .method public n(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -540,7 +498,6 @@
 .method public o(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -557,7 +514,6 @@
 .method public p(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -574,7 +530,6 @@
 .method public q(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -591,7 +546,6 @@
 .method public r(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -608,7 +562,6 @@
 .method public s(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -625,7 +578,6 @@
 .method public t(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -642,7 +594,6 @@
 .method public u(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -659,7 +610,6 @@
 .method public v(I)Lcom/qmuiteam/qmui/c/h;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/c/h;->a:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;

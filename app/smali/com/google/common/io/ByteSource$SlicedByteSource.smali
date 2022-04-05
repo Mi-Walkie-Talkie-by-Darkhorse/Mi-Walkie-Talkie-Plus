@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/ByteSource$SlicedByteSource;
 .super Lcom/google/common/io/ByteSource;
-.source "ByteSource.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method private constructor <init>(Lcom/google/common/io/ByteSource;JJ)V
     .locals 6
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->this$0:Lcom/google/common/io/ByteSource;
 
     invoke-direct {p0}, Lcom/google/common/io/ByteSource;-><init>()V
@@ -51,7 +49,6 @@
     :goto_0
     new-array v4, p1, [Ljava/lang/Object;
 
-    .line 3
     invoke-static {p2, p3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v5
@@ -76,7 +73,6 @@
     :goto_1
     new-array p1, p1, [Ljava/lang/Object;
 
-    .line 4
     invoke-static {p4, p5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v1
@@ -87,10 +83,8 @@
 
     invoke-static {v0, v1, p1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 5
     iput-wide p2, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->offset:J
 
-    .line 6
     iput-wide p4, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->length:J
 
     return-void
@@ -99,7 +93,6 @@
 .method synthetic constructor <init>(Lcom/google/common/io/ByteSource;JJLcom/google/common/io/ByteSource$1;)V
     .locals 0
 
-    .line 1
     invoke-direct/range {p0 .. p5}, Lcom/google/common/io/ByteSource$SlicedByteSource;-><init>(Lcom/google/common/io/ByteSource;JJ)V
 
     return-void
@@ -113,7 +106,6 @@
         }
     .end annotation
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->offset:J
 
     const-wide/16 v2, 0x0
@@ -122,7 +114,6 @@
 
     if-lez v4, :cond_0
 
-    .line 2
     :try_start_0
     invoke-static {p1, v0, v1}, Lcom/google/common/io/ByteStreams;->skipFully(Ljava/io/InputStream;J)V
     :try_end_0
@@ -133,15 +124,12 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     invoke-static {}, Lcom/google/common/io/Closer;->create()Lcom/google/common/io/Closer;
 
     move-result-object v1
 
-    .line 4
     invoke-virtual {v1, p1}, Lcom/google/common/io/Closer;->register(Ljava/io/Closeable;)Ljava/io/Closeable;
 
-    .line 5
     :try_start_1
     invoke-virtual {v1, v0}, Lcom/google/common/io/Closer;->rethrow(Ljava/lang/Throwable;)Ljava/lang/RuntimeException;
 
@@ -154,12 +142,10 @@
     :catchall_1
     move-exception p1
 
-    .line 6
     invoke-virtual {v1}, Lcom/google/common/io/Closer;->close()V
 
     throw p1
 
-    .line 7
     :cond_0
     :goto_0
     iget-wide v0, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->length:J
@@ -181,7 +167,6 @@
         }
     .end annotation
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->length:J
 
     const-wide/16 v2, 0x0
@@ -219,7 +204,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->this$0:Lcom/google/common/io/ByteSource;
 
     invoke-virtual {v0}, Lcom/google/common/io/ByteSource;->openBufferedStream()Ljava/io/InputStream;
@@ -241,7 +225,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->this$0:Lcom/google/common/io/ByteSource;
 
     invoke-virtual {v0}, Lcom/google/common/io/ByteSource;->openStream()Ljava/io/InputStream;
@@ -278,7 +261,6 @@
     :goto_0
     new-array v5, v2, [Ljava/lang/Object;
 
-    .line 1
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v6
@@ -303,7 +285,6 @@
     :goto_1
     new-array v1, v2, [Ljava/lang/Object;
 
-    .line 2
     invoke-static {p3, p4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v2
@@ -314,12 +295,10 @@
 
     invoke-static {v0, v2, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/String;[Ljava/lang/Object;)V
 
-    .line 3
     iget-wide v0, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->length:J
 
     sub-long/2addr v0, p1
 
-    .line 4
     iget-object v2, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->this$0:Lcom/google/common/io/ByteSource;
 
     iget-wide v3, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->offset:J
@@ -340,7 +319,6 @@
 .method public toString()Ljava/lang/String;
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/ByteSource$SlicedByteSource;->this$0:Lcom/google/common/io/ByteSource;
 
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;

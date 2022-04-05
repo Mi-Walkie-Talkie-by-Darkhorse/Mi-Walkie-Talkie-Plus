@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/parallel/ParallelFlatMap;
 .super Lio/reactivex/parallel/ParallelFlowable;
-.source "ParallelFlatMap.java"
 
 
 # annotations
@@ -60,22 +59,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/parallel/ParallelFlowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/parallel/ParallelFlatMap;->source:Lio/reactivex/parallel/ParallelFlowable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/parallel/ParallelFlatMap;->mapper:Lio/reactivex/functions/Function;
 
-    .line 4
     iput-boolean p3, p0, Lio/reactivex/internal/operators/parallel/ParallelFlatMap;->delayError:Z
 
-    .line 5
     iput p4, p0, Lio/reactivex/internal/operators/parallel/ParallelFlatMap;->maxConcurrency:I
 
-    .line 6
     iput p5, p0, Lio/reactivex/internal/operators/parallel/ParallelFlatMap;->prefetch:I
 
     return-void
@@ -86,7 +79,6 @@
 .method public parallelism()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/parallel/ParallelFlatMap;->source:Lio/reactivex/parallel/ParallelFlowable;
 
     invoke-virtual {v0}, Lio/reactivex/parallel/ParallelFlowable;->parallelism()I
@@ -106,7 +98,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lio/reactivex/parallel/ParallelFlowable;->validate([Lc/a/c;)Z
 
     move-result v0
@@ -115,11 +106,9 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v0, p1
 
-    .line 3
     new-array v1, v0, [Lc/a/c;
 
     const/4 v2, 0x0
@@ -127,7 +116,6 @@
     :goto_0
     if-ge v2, v0, :cond_1
 
-    .line 4
     aget-object v3, p1, v2
 
     iget-object v4, p0, Lio/reactivex/internal/operators/parallel/ParallelFlatMap;->mapper:Lio/reactivex/functions/Function;
@@ -148,7 +136,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object p1, p0, Lio/reactivex/internal/operators/parallel/ParallelFlatMap;->source:Lio/reactivex/parallel/ParallelFlowable;
 

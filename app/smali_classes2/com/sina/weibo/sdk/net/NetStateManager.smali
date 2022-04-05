@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/net/NetStateManager;
 .super Ljava/lang/Object;
-.source "NetStateManager.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager$NetState;->a:Lcom/sina/weibo/sdk/net/NetStateManager$NetState;
 
     sput-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->b:Lcom/sina/weibo/sdk/net/NetStateManager$NetState;
@@ -35,19 +33,16 @@
 
     const-string v0, "content://telephony/carriers/preferapn"
 
-    .line 2
     invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
     move-result-object v2
 
-    .line 3
     sget-object v0, Lcom/sina/weibo/sdk/net/NetStateManager;->a:Landroid/content/Context;
 
     const/4 v7, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
@@ -72,7 +67,6 @@
     :goto_0
     if-eqz v0, :cond_2
 
-    .line 5
     invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
 
     move-result v1
@@ -81,7 +75,6 @@
 
     const-string v1, "proxy"
 
-    .line 6
     invoke-interface {v0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v1
@@ -92,7 +85,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 7
     invoke-virtual {v1}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v2
@@ -103,7 +95,6 @@
 
     if-lez v2, :cond_1
 
-    .line 8
     new-instance v2, Lorg/apache/http/HttpHost;
 
     const/16 v3, 0x50
@@ -112,7 +103,6 @@
 
     move-object v7, v2
 
-    .line 9
     :cond_1
     invoke-interface {v0}, Landroid/database/Cursor;->close()V
 
@@ -123,7 +113,6 @@
 .method static synthetic a(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     sput-object p0, Lcom/sina/weibo/sdk/net/NetStateManager;->a:Landroid/content/Context;
 
     return-void

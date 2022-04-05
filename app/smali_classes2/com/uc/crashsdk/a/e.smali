@@ -1,6 +1,5 @@
 .class public Lcom/uc/crashsdk/a/e;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -20,7 +19,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/uc/crashsdk/a/e;
 
     invoke-virtual {v0}, Ljava/lang/Class;->desiredAssertionStatus()Z
@@ -37,15 +35,12 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/uc/crashsdk/a/e;->b:I
 
     const/4 p1, 0x0
 
-    .line 3
     iput-object p1, p0, Lcom/uc/crashsdk/a/e;->c:[Ljava/lang/Object;
 
     return-void
@@ -54,13 +49,10 @@
 .method public constructor <init>(I[Ljava/lang/Object;)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
     iput p1, p0, Lcom/uc/crashsdk/a/e;->b:I
 
-    .line 6
     iput-object p2, p0, Lcom/uc/crashsdk/a/e;->c:[Ljava/lang/Object;
 
     return-void
@@ -71,7 +63,6 @@
 .method public final a()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/uc/crashsdk/a/e;->b:I
 
     const/16 v1, 0x1c3
@@ -86,7 +77,6 @@
 
     packed-switch v0, :pswitch_data_1
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Unknown sync runnable: "
@@ -107,7 +97,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/a/a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     sget-boolean v0, Lcom/uc/crashsdk/a/e;->a:Z
 
     if-eqz v0, :cond_0
@@ -123,7 +112,6 @@
 
     throw v0
 
-    .line 4
     :pswitch_0
     iget-object v1, p0, Lcom/uc/crashsdk/a/e;->c:[Ljava/lang/Object;
 
@@ -133,7 +121,6 @@
 
     return v0
 
-    .line 5
     :pswitch_1
     iget-object v1, p0, Lcom/uc/crashsdk/a/e;->c:[Ljava/lang/Object;
 
@@ -143,7 +130,6 @@
 
     return v0
 
-    .line 6
     :cond_1
     iget v0, p0, Lcom/uc/crashsdk/a/e;->b:I
 
@@ -174,7 +160,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/uc/crashsdk/a/e;->b:I
 
     const/16 v1, 0xa
@@ -209,7 +194,6 @@
 
     packed-switch v0, :pswitch_data_3
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     const-string v1, "Unknown async runnable: "
@@ -230,7 +214,6 @@
 
     invoke-static {v1, v0}, Lcom/uc/crashsdk/a/a;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     sget-boolean v0, Lcom/uc/crashsdk/a/e;->a:Z
 
     if-eqz v0, :cond_0
@@ -244,7 +227,6 @@
 
     throw v0
 
-    .line 4
     :pswitch_0
     iget v0, p0, Lcom/uc/crashsdk/a/e;->b:I
 
@@ -254,7 +236,6 @@
 
     return-void
 
-    .line 5
     :pswitch_1
     iget-object v1, p0, Lcom/uc/crashsdk/a/e;->c:[Ljava/lang/Object;
 
@@ -262,13 +243,11 @@
 
     return-void
 
-    .line 6
     :pswitch_2
     invoke-static {v0}, Lcom/uc/crashsdk/b;->a(I)V
 
     return-void
 
-    .line 7
     :cond_1
     iget v0, p0, Lcom/uc/crashsdk/a/e;->b:I
 
@@ -276,25 +255,21 @@
 
     return-void
 
-    .line 8
     :cond_2
     invoke-static {v0}, Lcom/uc/crashsdk/a/g;->a(I)V
 
     return-void
 
-    .line 9
     :cond_3
     invoke-static {v0}, Lcom/uc/crashsdk/f;->b(I)V
 
     return-void
 
-    .line 10
     :cond_4
     invoke-static {v0}, Lcom/uc/crashsdk/a/d;->a(I)V
 
     return-void
 
-    .line 11
     :cond_5
     iget-object v1, p0, Lcom/uc/crashsdk/a/e;->c:[Ljava/lang/Object;
 
@@ -345,7 +320,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

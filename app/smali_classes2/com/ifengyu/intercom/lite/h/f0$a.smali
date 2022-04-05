@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/h/f0$a;
 .super Lcom/ifengyu/blelib/c/e;
-.source "BatchConfigViewModel.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/h/f0;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/h/f0$a;->c:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-direct {p0}, Lcom/ifengyu/blelib/c/e;-><init>()V
@@ -35,7 +33,6 @@
 .method public a(I)V
     .locals 1
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/f0$a;->c:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/h/f0;->b(Lcom/ifengyu/intercom/lite/h/f0;)Landroidx/lifecycle/p;
@@ -56,14 +53,12 @@
 .method public a(Lcom/ifengyu/blelib/d/c;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Lcom/ifengyu/blelib/d/c;->b()Lcom/google/protobuf/Message;
 
     move-result-object p1
 
     check-cast p1, Lcom/ifengyu/intercom/protos/LiteProtos$BatchBrodCfgResponse;
 
-    .line 2
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/LiteProtos$BatchBrodCfgResponse;->getResult()Lcom/ifengyu/intercom/protos/LiteProtos$RESULT;
 
     move-result-object p1
@@ -72,7 +67,6 @@
 
     if-ne p1, v0, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/f0$a;->c:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/h/f0;->a(Lcom/ifengyu/intercom/lite/h/f0;)Lcom/ifengyu/intercom/lite/e/f;
@@ -83,7 +77,6 @@
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/lite/e/f;->c(Z)V
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/f0$a;->c:Lcom/ifengyu/intercom/lite/h/f0;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/h/f0;->b(Lcom/ifengyu/intercom/lite/h/f0;)Landroidx/lifecycle/p;
@@ -96,7 +89,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/h/f0$a;->c:Lcom/ifengyu/intercom/lite/h/f0;
 

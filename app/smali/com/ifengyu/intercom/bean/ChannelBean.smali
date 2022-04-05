@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/bean/ChannelBean;
 .super Ljava/lang/Object;
-.source "ChannelBean.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -56,7 +55,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -65,19 +63,14 @@
 .method public constructor <init>(IILjava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput p1, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->type:I
 
-    .line 4
     iput p2, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->no:I
 
-    .line 5
     iput-object p3, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->freq:Ljava/lang/String;
 
-    .line 6
     iput-object p4, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->name:Ljava/lang/String;
 
     return-void
@@ -86,28 +79,20 @@
 .method public constructor <init>(IILjava/lang/String;Ljava/lang/String;III)V
     .locals 0
 
-    .line 7
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 8
     iput p1, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->type:I
 
-    .line 9
     iput p2, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->no:I
 
-    .line 10
     iput-object p3, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->freq:Ljava/lang/String;
 
-    .line 11
     iput-object p4, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->name:Ljava/lang/String;
 
-    .line 12
     iput p5, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->cssType:I
 
-    .line 13
     iput p6, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->cssCode:I
 
-    .line 14
     iput p7, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->cssInvert:I
 
     return-void
@@ -116,17 +101,14 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;)V
     .locals 3
 
-    .line 15
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 16
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->getNo()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->no:I
 
-    .line 17
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->getType()Lcom/ifengyu/intercom/protos/MitalkProtos$CHTYPE;
 
     move-result-object v0
@@ -137,7 +119,6 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->type:I
 
-    .line 18
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasFreq()Z
 
     move-result v0
@@ -160,7 +141,6 @@
     :goto_0
     iput-object v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->freq:Ljava/lang/String;
 
-    .line 19
     :try_start_0
     new-instance v0, Ljava/lang/String;
 
@@ -185,10 +165,8 @@
     :catch_0
     move-exception v0
 
-    .line 20
     invoke-virtual {v0}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
-    .line 21
     :goto_1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->getCssType()I
 
@@ -196,14 +174,12 @@
 
     iput v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->cssType:I
 
-    .line 22
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->getCssInvert()I
 
     move-result v0
 
     iput v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->cssInvert:I
 
-    .line 23
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->getCssCode()I
 
     move-result p1
@@ -231,7 +207,6 @@
 
     return v1
 
-    .line 1
     :cond_1
     const-class v2, Lcom/ifengyu/intercom/bean/ChannelBean;
 
@@ -243,11 +218,9 @@
 
     return v1
 
-    .line 2
     :cond_2
     check-cast p1, Lcom/ifengyu/intercom/bean/ChannelBean;
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/bean/ChannelBean;->getNo()I
 
     move-result v2
@@ -267,7 +240,6 @@
 .method public getCssCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->cssCode:I
 
     return v0
@@ -276,7 +248,6 @@
 .method public getCssInvert()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->cssInvert:I
 
     return v0
@@ -285,7 +256,6 @@
 .method public getCssType()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->cssType:I
 
     return v0
@@ -294,7 +264,6 @@
 .method public getFreq()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->freq:Ljava/lang/String;
 
     return-object v0
@@ -303,7 +272,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->name:Ljava/lang/String;
 
     return-object v0
@@ -312,7 +280,6 @@
 .method public getNo()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->no:I
 
     return v0
@@ -321,7 +288,6 @@
 .method public getType()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->type:I
 
     return v0
@@ -330,7 +296,6 @@
 .method public setCssCode(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->cssCode:I
 
     return-void
@@ -339,7 +304,6 @@
 .method public setCssInvert(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->cssInvert:I
 
     return-void
@@ -348,7 +312,6 @@
 .method public setCssType(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->cssType:I
 
     return-void
@@ -357,7 +320,6 @@
 .method public setFreq(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->freq:Ljava/lang/String;
 
     return-void
@@ -366,7 +328,6 @@
 .method public setName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->name:Ljava/lang/String;
 
     return-void
@@ -375,7 +336,6 @@
 .method public setNo(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->no:I
 
     return-void
@@ -384,7 +344,6 @@
 .method public setType(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/bean/ChannelBean;->type:I
 
     return-void
@@ -393,7 +352,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

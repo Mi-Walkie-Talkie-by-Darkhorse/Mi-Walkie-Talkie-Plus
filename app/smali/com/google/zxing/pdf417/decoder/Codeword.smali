@@ -1,6 +1,5 @@
 .class final Lcom/google/zxing/pdf417/decoder/Codeword;
 .super Ljava/lang/Object;
-.source "Codeword.java"
 
 
 # static fields
@@ -23,24 +22,18 @@
 .method constructor <init>(IIII)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, -0x1
 
-    .line 2
     iput v0, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->rowNumber:I
 
-    .line 3
     iput p1, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->startX:I
 
-    .line 4
     iput p2, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->endX:I
 
-    .line 5
     iput p3, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->bucket:I
 
-    .line 6
     iput p4, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->value:I
 
     return-void
@@ -51,7 +44,6 @@
 .method getBucket()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->bucket:I
 
     return v0
@@ -60,7 +52,6 @@
 .method getEndX()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->endX:I
 
     return v0
@@ -69,7 +60,6 @@
 .method getRowNumber()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->rowNumber:I
 
     return v0
@@ -78,7 +68,6 @@
 .method getStartX()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->startX:I
 
     return v0
@@ -87,7 +76,6 @@
 .method getValue()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->value:I
 
     return v0
@@ -96,7 +84,6 @@
 .method getWidth()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->endX:I
 
     iget v1, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->startX:I
@@ -109,7 +96,6 @@
 .method hasValidRowNumber()Z
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->rowNumber:I
 
     invoke-virtual {p0, v0}, Lcom/google/zxing/pdf417/decoder/Codeword;->isValidRowNumber(I)Z
@@ -126,7 +112,6 @@
 
     if-eq p1, v0, :cond_0
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->bucket:I
 
     rem-int/lit8 p1, p1, 0x3
@@ -148,7 +133,6 @@
 .method setRowNumber(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->rowNumber:I
 
     return-void
@@ -157,7 +141,6 @@
 .method setRowNumberAsRowIndicatorColumn()V
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/zxing/pdf417/decoder/Codeword;->value:I
 
     div-int/lit8 v0, v0, 0x1e
@@ -178,7 +161,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

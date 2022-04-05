@@ -1,6 +1,5 @@
 .class final Lcom/google/common/reflect/Types$JavaVersion$4;
 .super Lcom/google/common/reflect/TypeCapture;
-.source "Types.java"
 
 
 # annotations
@@ -25,7 +24,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/reflect/TypeCapture;-><init>()V
 
     return-void

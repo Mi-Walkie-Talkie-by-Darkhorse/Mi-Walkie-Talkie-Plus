@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableCreate;
 .super Lio/reactivex/Flowable;
-.source "FlowableCreate.java"
 
 
 # annotations
@@ -54,13 +53,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Flowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableCreate;->source:Lio/reactivex/FlowableOnSubscribe;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/flowable/FlowableCreate;->backpressure:Lio/reactivex/BackpressureStrategy;
 
     return-void
@@ -78,7 +74,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lio/reactivex/internal/operators/flowable/FlowableCreate$1;->$SwitchMap$io$reactivex$BackpressureStrategy:[I
 
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableCreate;->backpressure:Lio/reactivex/BackpressureStrategy;
@@ -105,7 +100,6 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableCreate$BufferAsyncEmitter;
 
     invoke-static {}, Lio/reactivex/Flowable;->bufferSize()I
@@ -116,7 +110,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableCreate$LatestAsyncEmitter;
 
@@ -124,7 +117,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableCreate$DropAsyncEmitter;
 
@@ -132,7 +124,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_2
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableCreate$ErrorAsyncEmitter;
 
@@ -140,17 +131,14 @@
 
     goto :goto_0
 
-    .line 6
     :cond_3
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableCreate$MissingEmitter;
 
     invoke-direct {v0, p1}, Lio/reactivex/internal/operators/flowable/FlowableCreate$MissingEmitter;-><init>(Lc/a/c;)V
 
-    .line 7
     :goto_0
     invoke-interface {p1, v0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 8
     :try_start_0
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableCreate;->source:Lio/reactivex/FlowableOnSubscribe;
 
@@ -163,10 +151,8 @@
     :catchall_0
     move-exception p1
 
-    .line 9
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 10
     invoke-virtual {v0, p1}, Lio/reactivex/internal/operators/flowable/FlowableCreate$BaseEmitter;->onError(Ljava/lang/Throwable;)V
 
     :goto_1

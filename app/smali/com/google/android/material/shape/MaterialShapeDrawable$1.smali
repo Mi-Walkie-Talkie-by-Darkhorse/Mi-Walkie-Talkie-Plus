@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/shape/MaterialShapeDrawable$1;
 .super Ljava/lang/Object;
-.source "MaterialShapeDrawable.java"
 
 # interfaces
 .implements Lcom/google/android/material/shape/ShapeAppearancePathProvider$PathListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/google/android/material/shape/MaterialShapeDrawable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/shape/MaterialShapeDrawable$1;->this$0:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/shape/MaterialShapeDrawable$1;->this$0:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     invoke-static {v0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->access$000(Lcom/google/android/material/shape/MaterialShapeDrawable;)Ljava/util/BitSet;
@@ -55,7 +52,6 @@
 
     invoke-virtual {v0, p3, v1}, Ljava/util/BitSet;->set(IZ)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/shape/MaterialShapeDrawable$1;->this$0:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     invoke-static {v0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->access$100(Lcom/google/android/material/shape/MaterialShapeDrawable;)[Lcom/google/android/material/shape/ShapePath$ShadowCompatOperation;
@@ -78,7 +74,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/shape/MaterialShapeDrawable$1;->this$0:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     invoke-static {v0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->access$000(Lcom/google/android/material/shape/MaterialShapeDrawable;)Ljava/util/BitSet;
@@ -93,7 +88,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/BitSet;->set(IZ)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/android/material/shape/MaterialShapeDrawable$1;->this$0:Lcom/google/android/material/shape/MaterialShapeDrawable;
 
     invoke-static {v0}, Lcom/google/android/material/shape/MaterialShapeDrawable;->access$200(Lcom/google/android/material/shape/MaterialShapeDrawable;)[Lcom/google/android/material/shape/ShapePath$ShadowCompatOperation;

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/DimenRes;
 .super Ljava/lang/Object;
-.source "DimenRes.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

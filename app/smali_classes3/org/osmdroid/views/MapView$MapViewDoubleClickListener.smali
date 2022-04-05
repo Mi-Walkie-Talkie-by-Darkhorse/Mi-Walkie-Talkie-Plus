@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/views/MapView$MapViewDoubleClickListener;
 .super Ljava/lang/Object;
-.source "MapView.java"
 
 # interfaces
 .implements Landroid/view/GestureDetector$OnDoubleTapListener;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lorg/osmdroid/views/MapView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/MapView$MapViewDoubleClickListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lorg/osmdroid/views/MapView;Lorg/osmdroid/views/MapView$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lorg/osmdroid/views/MapView$MapViewDoubleClickListener;-><init>(Lorg/osmdroid/views/MapView;)V
 
     return-void
@@ -47,7 +44,6 @@
 .method public onDoubleTap(Landroid/view/MotionEvent;)Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewDoubleClickListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
@@ -66,7 +62,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewDoubleClickListener;->this$0:Lorg/osmdroid/views/MapView;
 
@@ -92,7 +87,6 @@
 
     invoke-virtual {v0, v1, p1, v2}, Lorg/osmdroid/views/Projection;->rotateAndScalePoint(IILandroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 3
     iget-object p1, p0, Lorg/osmdroid/views/MapView$MapViewDoubleClickListener;->this$0:Lorg/osmdroid/views/MapView;
 
     iget-object v0, p1, Lorg/osmdroid/views/MapView;->mRotateScalePoint:Landroid/graphics/Point;
@@ -111,7 +105,6 @@
 .method public onDoubleTapEvent(Landroid/view/MotionEvent;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewDoubleClickListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;
@@ -139,7 +132,6 @@
 .method public onSingleTapConfirmed(Landroid/view/MotionEvent;)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/MapView$MapViewDoubleClickListener;->this$0:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v0}, Lorg/osmdroid/views/MapView;->getOverlayManager()Lorg/osmdroid/views/overlay/OverlayManager;

@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/AnalyticsConstants;
 .super Ljava/lang/Object;
-.source "AnalyticsConstants.java"
 
 
 # static fields
@@ -33,7 +32,6 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 1
     sget-object v1, Lcom/umeng/commonsdk/statistics/UMServerURL;->DEFAULT_URL:Ljava/lang/String;
 
     const/4 v2, 0x0
@@ -48,12 +46,10 @@
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/AnalyticsConstants;->APPLOG_URL_LIST:[Ljava/lang/String;
 
-    .line 2
     sget-boolean v0, Lcom/umeng/commonsdk/statistics/common/ULog;->DEBUG:Z
 
     sput-boolean v0, Lcom/umeng/commonsdk/statistics/AnalyticsConstants;->UM_DEBUG:Z
 
-    .line 3
     sput v2, Lcom/umeng/commonsdk/statistics/AnalyticsConstants;->commonDeviceType:I
 
     return-void
@@ -62,7 +58,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -75,7 +70,6 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget v1, Lcom/umeng/commonsdk/statistics/AnalyticsConstants;->commonDeviceType:I
     :try_end_0
@@ -96,7 +90,6 @@
 .method public static setDeviceType(I)V
     .locals 0
 
-    .line 1
     sput p0, Lcom/umeng/commonsdk/statistics/AnalyticsConstants;->commonDeviceType:I
 
     return-void

@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/col/l3/bj;
 .super Ljava/lang/Object;
-.source "DTInfo.java"
 
 
 # annotations
@@ -106,45 +105,34 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/bj;->a:Ljava/lang/String;
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/col/l3/bj;->b:Ljava/lang/String;
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/col/l3/bj;->c:Ljava/lang/String;
 
-    .line 5
     iput-object v0, p0, Lcom/amap/api/col/l3/bj;->d:Ljava/lang/String;
 
     const-string v0, ""
 
-    .line 6
     iput-object v0, p0, Lcom/amap/api/col/l3/bj;->e:Ljava/lang/String;
 
     const-wide/16 v1, 0x0
 
-    .line 7
     iput-wide v1, p0, Lcom/amap/api/col/l3/bj;->f:J
 
-    .line 8
     iput-wide v1, p0, Lcom/amap/api/col/l3/bj;->g:J
 
     const/4 v1, 0x0
 
-    .line 9
     iput v1, p0, Lcom/amap/api/col/l3/bj;->i:I
 
-    .line 10
     iput-object v0, p0, Lcom/amap/api/col/l3/bj;->k:Ljava/lang/String;
 
-    .line 11
     iput-object v0, p0, Lcom/amap/api/col/l3/bj;->m:Ljava/lang/String;
 
     return-void
@@ -153,30 +141,24 @@
 .method public static e(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v1, "mAdcode"
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v1, "=\'"
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string p0, "\'"
 
-    .line 6
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -187,30 +169,24 @@
 .method public static f(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
-    .line 2
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     const-string v1, "mPinyin"
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string v1, "=\'"
 
-    .line 4
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const-string p0, "\'"
 
-    .line 6
     invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 7
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p0
@@ -223,7 +199,6 @@
 .method public final c()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bj;->a:Ljava/lang/String;
 
     return-object v0
@@ -232,7 +207,6 @@
 .method public final c(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/bj;->c:Ljava/lang/String;
 
     return-void
@@ -241,7 +215,6 @@
 .method public final d()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bj;->e:Ljava/lang/String;
 
     return-object v0
@@ -250,7 +223,6 @@
 .method public final d(Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/bj;->k:Ljava/lang/String;
 
     return-void
@@ -259,7 +231,6 @@
 .method public final e()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bj;->c:Ljava/lang/String;
 
     return-object v0
@@ -268,7 +239,6 @@
 .method public final f()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/bj;->j:I
 
     return v0
@@ -277,7 +247,6 @@
 .method public final g()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bj;->m:Ljava/lang/String;
 
     return-object v0

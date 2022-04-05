@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector;
 .super Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;
-.source "ScaleRotateGestureDetector.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>(Landroid/content/Context;Lcom/autonavi/ae/gmap/gesture/ScaleRotateGestureDetector$SimpleOnScaleRotateGestureListener;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;-><init>(Landroid/content/Context;Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector$OnScaleGestureListener;)V
 
     return-void
@@ -26,7 +24,6 @@
 .method public getRotationDegreesDelta()F
     .locals 6
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getPreviousSpanY()F
 
     move-result v0
@@ -43,7 +40,6 @@
 
     move-result-wide v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/gesture/ScaleGestureDetector;->getCurrentSpanY()F
 
     move-result v2

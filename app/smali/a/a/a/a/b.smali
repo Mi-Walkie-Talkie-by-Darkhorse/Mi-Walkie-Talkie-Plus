@@ -1,6 +1,5 @@
 .class public La/a/a/a/b;
 .super La/a/a/a/c;
-.source "DefaultTaskExecutor.java"
 
 
 # annotations
@@ -26,17 +25,14 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, La/a/a/a/c;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, La/a/a/a/b;->a:Ljava/lang/Object;
 
-    .line 3
     new-instance v0, La/a/a/a/b$a;
 
     invoke-direct {v0, p0}, La/a/a/a/b$a;-><init>(La/a/a/a/b;)V
@@ -59,14 +55,12 @@
         .end annotation
     .end param
 
-    .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1c
 
     if-lt v0, v1, :cond_0
 
-    .line 4
     invoke-static {p0}, Landroid/os/Handler;->createAsync(Landroid/os/Looper;)Landroid/os/Handler;
 
     move-result-object p0
@@ -78,7 +72,6 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 5
     :try_start_0
     const-class v0, Landroid/os/Handler;
 
@@ -116,7 +109,6 @@
 
     aput-object v2, v1, v5
 
-    .line 6
     invoke-static {v5}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v2
@@ -136,7 +128,6 @@
 
     return-object v0
 
-    .line 7
     :catch_0
     new-instance v0, Landroid/os/Handler;
 
@@ -144,7 +135,6 @@
 
     return-object v0
 
-    .line 8
     :catch_1
     :cond_1
     new-instance v0, Landroid/os/Handler;
@@ -159,7 +149,6 @@
 .method public a(Ljava/lang/Runnable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/a/a/a/b;->b:Ljava/util/concurrent/ExecutorService;
 
     invoke-interface {v0, p1}, Ljava/util/concurrent/ExecutorService;->execute(Ljava/lang/Runnable;)V
@@ -170,7 +159,6 @@
 .method public a()Z
     .locals 2
 
-    .line 2
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v0
@@ -199,23 +187,19 @@
 .method public b(Ljava/lang/Runnable;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, La/a/a/a/b;->c:Landroid/os/Handler;
 
     if-nez v0, :cond_1
 
-    .line 2
     iget-object v0, p0, La/a/a/a/b;->a:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 3
     :try_start_0
     iget-object v1, p0, La/a/a/a/b;->c:Landroid/os/Handler;
 
     if-nez v1, :cond_0
 
-    .line 4
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v1
@@ -226,7 +210,6 @@
 
     iput-object v1, p0, La/a/a/a/b;->c:Landroid/os/Handler;
 
-    .line 5
     :cond_0
     monitor-exit v0
 
@@ -241,7 +224,6 @@
 
     throw p1
 
-    .line 6
     :cond_1
     :goto_0
     iget-object v0, p0, La/a/a/a/b;->c:Landroid/os/Handler;

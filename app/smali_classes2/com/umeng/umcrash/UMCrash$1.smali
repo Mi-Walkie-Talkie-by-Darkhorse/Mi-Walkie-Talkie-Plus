@@ -1,6 +1,5 @@
 .class final Lcom/umeng/umcrash/UMCrash$1;
 .super Ljava/lang/Object;
-.source "UMCrash.java"
 
 # interfaces
 .implements Landroid/app/Application$ActivityLifecycleCallbacks;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -50,14 +48,12 @@
 .method public onActivityResumed(Landroid/app/Activity;)V
     .locals 5
 
-    .line 1
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$000()Ljava/lang/Object;
 
     move-result-object v0
 
     monitor-enter v0
 
-    .line 2
     :try_start_0
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$100()Ljava/util/ArrayList;
 
@@ -65,7 +61,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 3
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$100()Ljava/util/ArrayList;
 
     move-result-object v1
@@ -78,7 +73,6 @@
 
     if-lt v1, v2, :cond_0
 
-    .line 4
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$100()Ljava/util/ArrayList;
 
     move-result-object v1
@@ -87,7 +81,6 @@
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 5
     :cond_0
     invoke-static {}, Lcom/umeng/umcrash/UMCrash;->access$100()Ljava/util/ArrayList;
 
@@ -119,7 +112,6 @@
 
     invoke-virtual {v1, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 6
     :cond_1
     monitor-exit v0
 

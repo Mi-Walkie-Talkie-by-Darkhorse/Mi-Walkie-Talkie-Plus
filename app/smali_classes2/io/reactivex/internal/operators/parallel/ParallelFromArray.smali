@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/parallel/ParallelFromArray;
 .super Lio/reactivex/parallel/ParallelFlowable;
-.source "ParallelFromArray.java"
 
 
 # annotations
@@ -38,10 +37,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/parallel/ParallelFlowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/parallel/ParallelFromArray;->sources:[Lc/a/b;
 
     return-void
@@ -52,7 +49,6 @@
 .method public parallelism()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/parallel/ParallelFromArray;->sources:[Lc/a/b;
 
     array-length v0, v0
@@ -70,7 +66,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lio/reactivex/parallel/ParallelFlowable;->validate([Lc/a/c;)Z
 
     move-result v0
@@ -79,7 +74,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     array-length v0, p1
 
@@ -88,7 +82,6 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 3
     iget-object v2, p0, Lio/reactivex/internal/operators/parallel/ParallelFromArray;->sources:[Lc/a/b;
 
     aget-object v2, v2, v1

@@ -1,6 +1,5 @@
 .class Landroidx/media/h;
 .super Ljava/lang/Object;
-.source "MediaSessionManagerImplBase.java"
 
 # interfaces
 .implements Landroidx/media/f;
@@ -18,16 +17,12 @@
 .method constructor <init>(Ljava/lang/String;II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/media/h;->a:Ljava/lang/String;
 
-    .line 3
     iput p2, p0, Landroidx/media/h;->b:I
 
-    .line 4
     iput p3, p0, Landroidx/media/h;->c:I
 
     return-void
@@ -44,7 +39,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Landroidx/media/h;
 
@@ -54,11 +48,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, Landroidx/media/h;
 
-    .line 3
     iget-object v1, p0, Landroidx/media/h;->a:Ljava/lang/String;
 
     iget-object v3, p1, Landroidx/media/h;->a:Ljava/lang/String;
@@ -97,7 +89,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-object v1, p0, Landroidx/media/h;->a:Ljava/lang/String;
 
     const/4 v2, 0x0

@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity_ViewBinding;
 .super Ljava/lang/Object;
-.source "GaoDeMapToolOperateActivity_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;
 
-    .line 3
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f090419
@@ -37,7 +33,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->titleBarLeft:Landroid/widget/ImageView;
 
-    .line 4
     const-class v0, Landroid/widget/TextView;
 
     const v1, 0x7f09041d
@@ -52,7 +47,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->titleBarTitle:Landroid/widget/TextView;
 
-    .line 5
     const-class v0, Lcom/amap/api/maps/MapView;
 
     const v1, 0x7f090252
@@ -67,7 +61,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->mapView:Lcom/amap/api/maps/MapView;
 
-    .line 6
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f09025b
@@ -82,7 +75,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->zoomBigIV:Landroid/widget/ImageView;
 
-    .line 7
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f09025d
@@ -97,7 +89,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->zoomSmallIV:Landroid/widget/ImageView;
 
-    .line 8
     const-class v0, Landroid/widget/ImageView;
 
     const v1, 0x7f09025a
@@ -112,7 +103,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->myLocateIV:Landroid/widget/ImageView;
 
-    .line 9
     const-class v0, Landroid/widget/LinearLayout;
 
     const v1, 0x7f090272
@@ -137,40 +127,30 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity_ViewBinding;->a:Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->titleBarLeft:Landroid/widget/ImageView;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->titleBarTitle:Landroid/widget/TextView;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->mapView:Lcom/amap/api/maps/MapView;
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->zoomBigIV:Landroid/widget/ImageView;
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->zoomSmallIV:Landroid/widget/ImageView;
 
-    .line 8
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->myLocateIV:Landroid/widget/ImageView;
 
-    .line 9
     iput-object v1, v0, Lcom/ifengyu/intercom/ui/activity/GaoDeMapToolOperateActivity;->bottomMapKitBottomLayout:Landroid/widget/LinearLayout;
 
     return-void
 
-    .line 10
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

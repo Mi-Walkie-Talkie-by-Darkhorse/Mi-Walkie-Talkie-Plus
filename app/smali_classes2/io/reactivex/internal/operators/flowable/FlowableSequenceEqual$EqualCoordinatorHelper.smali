@@ -1,6 +1,5 @@
 .class interface abstract Lio/reactivex/internal/operators/flowable/FlowableSequenceEqual$EqualCoordinatorHelper;
 .super Ljava/lang/Object;
-.source "FlowableSequenceEqual.java"
 
 
 # annotations

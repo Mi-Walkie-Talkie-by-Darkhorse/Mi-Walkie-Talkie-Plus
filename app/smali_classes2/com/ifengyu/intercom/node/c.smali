@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/node/c;
 .super Ljava/lang/Object;
-.source "CallableWrapper.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -47,16 +46,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/node/c;->c:Lcom/ifengyu/intercom/node/p;
 
-    .line 3
     iput-object p2, p0, Lcom/ifengyu/intercom/node/c;->a:Ljava/lang/String;
 
-    .line 4
     iput-object p3, p0, Lcom/ifengyu/intercom/node/c;->b:Ljava/util/concurrent/Callable;
 
     return-void
@@ -72,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/node/c;->call()Ljava/lang/Void;
 
     move-result-object v0
@@ -89,7 +83,6 @@
 
     const-string v2, "CallableWrapper"
 
-    .line 2
     :try_start_0
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
@@ -99,7 +92,6 @@
 
     invoke-virtual {v3}, Lcom/ifengyu/intercom/node/n;->a()V
 
-    .line 3
     iget-object v3, p0, Lcom/ifengyu/intercom/node/c;->b:Ljava/util/concurrent/Callable;
 
     invoke-interface {v3}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
@@ -113,14 +105,12 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 5
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v1
@@ -133,7 +123,6 @@
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 6
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -144,10 +133,8 @@
 
     move-result-object v0
 
-    .line 7
     invoke-static {v2, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/node/c;->c:Lcom/ifengyu/intercom/node/p;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/node/c;->a:Ljava/lang/String;
@@ -167,17 +154,14 @@
     :try_start_1
     const-string v4, "Unexpected exception in reader or writer:"
 
-    .line 9
     invoke-static {v2, v4, v3}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 10
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 11
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v4
@@ -190,7 +174,6 @@
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 12
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v4
@@ -201,10 +184,8 @@
 
     move-result-object v3
 
-    .line 13
     invoke-static {v2, v3}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 14
     iget-object v3, p0, Lcom/ifengyu/intercom/node/c;->c:Lcom/ifengyu/intercom/node/p;
 
     iget-object v4, p0, Lcom/ifengyu/intercom/node/c;->a:Ljava/lang/String;
@@ -213,7 +194,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 15
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -223,7 +203,6 @@
     :catch_1
     move-exception v3
 
-    .line 16
     :try_start_2
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -245,21 +224,18 @@
 
     invoke-static {v2, v3}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 17
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v3
 
     invoke-virtual {v3}, Ljava/lang/Thread;->interrupt()V
 
-    .line 18
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
 
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 19
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v4
@@ -272,7 +248,6 @@
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 20
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v4
@@ -283,10 +258,8 @@
 
     move-result-object v3
 
-    .line 21
     invoke-static {v2, v3}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 22
     iget-object v3, p0, Lcom/ifengyu/intercom/node/c;->c:Lcom/ifengyu/intercom/node/p;
 
     iget-object v4, p0, Lcom/ifengyu/intercom/node/c;->a:Ljava/lang/String;
@@ -295,7 +268,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 23
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -305,7 +277,6 @@
     :catch_2
     move-exception v3
 
-    .line 24
     :try_start_3
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -329,7 +300,6 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
-    .line 25
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -337,7 +307,6 @@
     :goto_0
     invoke-virtual {v3, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 26
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v1
@@ -350,7 +319,6 @@
 
     invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 27
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -361,10 +329,8 @@
 
     move-result-object v0
 
-    .line 28
     invoke-static {v2, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 29
     iget-object v0, p0, Lcom/ifengyu/intercom/node/c;->c:Lcom/ifengyu/intercom/node/p;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/node/c;->a:Ljava/lang/String;
@@ -375,7 +341,6 @@
 
     return-object v0
 
-    .line 30
     :goto_1
     new-instance v4, Ljava/lang/StringBuilder;
 
@@ -383,7 +348,6 @@
 
     invoke-virtual {v4, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 31
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v1
@@ -396,7 +360,6 @@
 
     invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 32
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -407,16 +370,13 @@
 
     move-result-object v0
 
-    .line 33
     invoke-static {v2, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 34
     iget-object v0, p0, Lcom/ifengyu/intercom/node/c;->c:Lcom/ifengyu/intercom/node/p;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/node/c;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/node/p;->a(Ljava/lang/String;)V
 
-    .line 35
     throw v3
 .end method

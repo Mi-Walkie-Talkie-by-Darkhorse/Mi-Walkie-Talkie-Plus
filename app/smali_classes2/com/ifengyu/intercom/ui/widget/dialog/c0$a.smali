@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/c0$a;
 .super Ljava/lang/Object;
-.source "ViewHolder.java"
 
 # interfaces
 .implements Landroid/view/View$OnKeyListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/c0;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/c0$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/c0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onKey(Landroid/view/View;ILandroid/view/KeyEvent;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/c0$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/c0;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/c0;->a(Lcom/ifengyu/intercom/ui/widget/dialog/c0;)Landroid/view/View$OnKeyListener;
@@ -47,7 +44,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/widget/dialog/c0$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/c0;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/c0;->a(Lcom/ifengyu/intercom/ui/widget/dialog/c0;)Landroid/view/View$OnKeyListener;
@@ -60,7 +56,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     new-instance p1, Ljava/lang/NullPointerException;
 

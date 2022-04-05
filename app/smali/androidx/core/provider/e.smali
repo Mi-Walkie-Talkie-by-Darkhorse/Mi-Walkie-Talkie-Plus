@@ -1,6 +1,5 @@
 .class Landroidx/core/provider/e;
 .super Ljava/lang/Object;
-.source "FontRequestWorker.java"
 
 
 # annotations
@@ -49,7 +48,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, La/b/e;
 
     const/16 v1, 0x10
@@ -64,21 +62,18 @@
 
     const/16 v2, 0x2710
 
-    .line 2
     invoke-static {v0, v1, v2}, Landroidx/core/provider/f;->a(Ljava/lang/String;II)Ljava/util/concurrent/ThreadPoolExecutor;
 
     move-result-object v0
 
     sput-object v0, Landroidx/core/provider/e;->b:Ljava/util/concurrent/ExecutorService;
 
-    .line 3
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     sput-object v0, Landroidx/core/provider/e;->c:Ljava/lang/Object;
 
-    .line 4
     new-instance v0, La/b/g;
 
     invoke-direct {v0}, La/b/g;-><init>()V
@@ -100,7 +95,6 @@
         }
     .end annotation
 
-    .line 40
     invoke-virtual {p0}, Landroidx/core/provider/FontsContractCompat$a;->b()I
 
     move-result v0
@@ -111,7 +105,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 41
     invoke-virtual {p0}, Landroidx/core/provider/FontsContractCompat$a;->b()I
 
     move-result p0
@@ -125,7 +118,6 @@
 
     return p0
 
-    .line 42
     :cond_1
     invoke-virtual {p0}, Landroidx/core/provider/FontsContractCompat$a;->a()[Landroidx/core/provider/FontsContractCompat$b;
 
@@ -133,14 +125,12 @@
 
     if-eqz p0, :cond_5
 
-    .line 43
     array-length v0, p0
 
     if-nez v0, :cond_2
 
     goto :goto_2
 
-    .line 44
     :cond_2
     array-length v0, p0
 
@@ -153,7 +143,6 @@
 
     aget-object v4, p0, v3
 
-    .line 45
     invoke-virtual {v4}, Landroidx/core/provider/FontsContractCompat$b;->a()I
 
     move-result v4
@@ -199,12 +188,10 @@
         .end annotation
     .end param
 
-    .line 12
     invoke-static {p1, p2}, Landroidx/core/provider/e;->a(Landroidx/core/provider/d;I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 13
     sget-object v1, Landroidx/core/provider/e;->a:La/b/e;
 
     invoke-virtual {v1, v0}, La/b/e;->b(Ljava/lang/Object;)Ljava/lang/Object;
@@ -215,7 +202,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 14
     new-instance p0, Landroidx/core/provider/e$e;
 
     invoke-direct {p0, v1}, Landroidx/core/provider/e$e;-><init>(Landroid/graphics/Typeface;)V
@@ -224,18 +210,15 @@
 
     return-object v1
 
-    .line 15
     :cond_0
     new-instance v1, Landroidx/core/provider/e$b;
 
     invoke-direct {v1, p4}, Landroidx/core/provider/e$b;-><init>(Landroidx/core/provider/a;)V
 
-    .line 16
     sget-object p4, Landroidx/core/provider/e;->c:Ljava/lang/Object;
 
     monitor-enter p4
 
-    .line 17
     :try_start_0
     sget-object v2, Landroidx/core/provider/e;->d:La/b/g;
 
@@ -249,44 +232,35 @@
 
     if-eqz v2, :cond_1
 
-    .line 18
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 19
     monitor-exit p4
 
     return-object v3
 
-    .line 20
     :cond_1
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
 
-    .line 21
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 22
     sget-object v1, Landroidx/core/provider/e;->d:La/b/g;
 
     invoke-virtual {v1, v0, v2}, La/b/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 23
     monitor-exit p4
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 24
     new-instance p4, Landroidx/core/provider/e$c;
 
     invoke-direct {p4, v0, p0, p1, p2}, Landroidx/core/provider/e$c;-><init>(Ljava/lang/String;Landroid/content/Context;Landroidx/core/provider/d;I)V
 
     if-nez p3, :cond_2
 
-    .line 25
     sget-object p3, Landroidx/core/provider/e;->b:Ljava/util/concurrent/ExecutorService;
 
-    .line 26
     :cond_2
     new-instance p0, Landroidx/core/provider/e$d;
 
@@ -299,7 +273,6 @@
     :catchall_0
     move-exception p0
 
-    .line 27
     :try_start_1
     monitor-exit p4
     :try_end_1
@@ -323,12 +296,10 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p1, p3}, Landroidx/core/provider/e;->a(Landroidx/core/provider/d;I)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     sget-object v1, Landroidx/core/provider/e;->a:La/b/e;
 
     invoke-virtual {v1, v0}, La/b/e;->b(Ljava/lang/Object;)Ljava/lang/Object;
@@ -339,7 +310,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 3
     new-instance p0, Landroidx/core/provider/e$e;
 
     invoke-direct {p0, v1}, Landroidx/core/provider/e$e;-><init>(Landroid/graphics/Typeface;)V
@@ -353,26 +323,21 @@
 
     if-ne p4, v1, :cond_1
 
-    .line 4
     invoke-static {v0, p0, p1, p3}, Landroidx/core/provider/e;->a(Ljava/lang/String;Landroid/content/Context;Landroidx/core/provider/d;I)Landroidx/core/provider/e$e;
 
     move-result-object p0
 
-    .line 5
     invoke-virtual {p2, p0}, Landroidx/core/provider/a;->a(Landroidx/core/provider/e$e;)V
 
-    .line 6
     iget-object p0, p0, Landroidx/core/provider/e$e;->a:Landroid/graphics/Typeface;
 
     return-object p0
 
-    .line 7
     :cond_1
     new-instance v1, Landroidx/core/provider/e$a;
 
     invoke-direct {v1, v0, p0, p1, p3}, Landroidx/core/provider/e$a;-><init>(Ljava/lang/String;Landroid/content/Context;Landroidx/core/provider/d;I)V
 
-    .line 8
     :try_start_0
     sget-object p0, Landroidx/core/provider/e;->b:Ljava/util/concurrent/ExecutorService;
 
@@ -382,17 +347,14 @@
 
     check-cast p0, Landroidx/core/provider/e$e;
 
-    .line 9
     invoke-virtual {p2, p0}, Landroidx/core/provider/a;->a(Landroidx/core/provider/e$e;)V
 
-    .line 10
     iget-object p0, p0, Landroidx/core/provider/e$e;->a:Landroid/graphics/Typeface;
     :try_end_0
     .catch Ljava/lang/InterruptedException; {:try_start_0 .. :try_end_0} :catch_0
 
     return-object p0
 
-    .line 11
     :catch_0
     new-instance p0, Landroidx/core/provider/e$e;
 
@@ -424,7 +386,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 29
     sget-object v0, Landroidx/core/provider/e;->a:La/b/e;
 
     invoke-virtual {v0, p0}, La/b/e;->b(Ljava/lang/Object;)Ljava/lang/Object;
@@ -435,7 +396,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 30
     new-instance p0, Landroidx/core/provider/e$e;
 
     invoke-direct {p0, v0}, Landroidx/core/provider/e$e;-><init>(Landroid/graphics/Typeface;)V
@@ -445,7 +405,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 31
     :try_start_0
     invoke-static {p1, p2, v0}, Landroidx/core/provider/c;->a(Landroid/content/Context;Landroidx/core/provider/d;Landroid/os/CancellationSignal;)Landroidx/core/provider/FontsContractCompat$a;
 
@@ -453,46 +412,39 @@
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 32
     invoke-static {p2}, Landroidx/core/provider/e;->a(Landroidx/core/provider/FontsContractCompat$a;)I
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 33
     new-instance p0, Landroidx/core/provider/e$e;
 
     invoke-direct {p0, v1}, Landroidx/core/provider/e$e;-><init>(I)V
 
     return-object p0
 
-    .line 34
     :cond_1
     invoke-virtual {p2}, Landroidx/core/provider/FontsContractCompat$a;->a()[Landroidx/core/provider/FontsContractCompat$b;
 
     move-result-object p2
 
-    .line 35
     invoke-static {p1, v0, p2, p3}, Landroidx/core/graphics/f;->a(Landroid/content/Context;Landroid/os/CancellationSignal;[Landroidx/core/provider/FontsContractCompat$b;I)Landroid/graphics/Typeface;
 
     move-result-object p1
 
     if-eqz p1, :cond_2
 
-    .line 36
     sget-object p2, Landroidx/core/provider/e;->a:La/b/e;
 
     invoke-virtual {p2, p0, p1}, La/b/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 37
     new-instance p0, Landroidx/core/provider/e$e;
 
     invoke-direct {p0, p1}, Landroidx/core/provider/e$e;-><init>(Landroid/graphics/Typeface;)V
 
     return-object p0
 
-    .line 38
     :cond_2
     new-instance p0, Landroidx/core/provider/e$e;
 
@@ -502,7 +454,6 @@
 
     return-object p0
 
-    .line 39
     :catch_0
     new-instance p0, Landroidx/core/provider/e$e;
 
@@ -520,7 +471,6 @@
         .end annotation
     .end param
 
-    .line 28
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

@@ -1,6 +1,5 @@
 .class Landroidx/transition/i0;
 .super Ljava/lang/Object;
-.source "ViewUtils.java"
 
 
 # static fields
@@ -33,14 +32,12 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x1d
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Landroidx/transition/n0;
 
     invoke-direct {v0}, Landroidx/transition/n0;-><init>()V
@@ -54,7 +51,6 @@
 
     if-lt v0, v1, :cond_1
 
-    .line 3
     new-instance v0, Landroidx/transition/m0;
 
     invoke-direct {v0}, Landroidx/transition/m0;-><init>()V
@@ -68,7 +64,6 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 4
     new-instance v0, Landroidx/transition/l0;
 
     invoke-direct {v0}, Landroidx/transition/l0;-><init>()V
@@ -82,7 +77,6 @@
 
     if-lt v0, v1, :cond_3
 
-    .line 5
     new-instance v0, Landroidx/transition/k0;
 
     invoke-direct {v0}, Landroidx/transition/k0;-><init>()V
@@ -96,7 +90,6 @@
 
     if-lt v0, v1, :cond_4
 
-    .line 6
     new-instance v0, Landroidx/transition/j0;
 
     invoke-direct {v0}, Landroidx/transition/j0;-><init>()V
@@ -105,7 +98,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_4
     new-instance v0, Landroidx/transition/o0;
 
@@ -113,7 +105,6 @@
 
     sput-object v0, Landroidx/transition/i0;->a:Landroidx/transition/o0;
 
-    .line 8
     :goto_0
     new-instance v0, Landroidx/transition/i0$a;
 
@@ -125,7 +116,6 @@
 
     sput-object v0, Landroidx/transition/i0;->b:Landroid/util/Property;
 
-    .line 9
     new-instance v0, Landroidx/transition/i0$b;
 
     const-class v1, Landroid/graphics/Rect;
@@ -146,7 +136,6 @@
         .end annotation
     .end param
 
-    .line 2
     sget-object v0, Landroidx/transition/i0;->a:Landroidx/transition/o0;
 
     invoke-virtual {v0, p0}, Landroidx/transition/o0;->a(Landroid/view/View;)V
@@ -161,7 +150,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object v0, Landroidx/transition/i0;->a:Landroidx/transition/o0;
 
     invoke-virtual {v0, p0, p1}, Landroidx/transition/o0;->a(Landroid/view/View;F)V
@@ -176,7 +164,6 @@
         .end annotation
     .end param
 
-    .line 3
     sget-object v0, Landroidx/transition/i0;->a:Landroidx/transition/o0;
 
     invoke-virtual {v0, p0, p1}, Landroidx/transition/o0;->a(Landroid/view/View;I)V
@@ -191,7 +178,6 @@
         .end annotation
     .end param
 
-    .line 5
     sget-object v0, Landroidx/transition/i0;->a:Landroidx/transition/o0;
 
     move-object v1, p0
@@ -220,7 +206,6 @@
         .end annotation
     .end param
 
-    .line 4
     sget-object v0, Landroidx/transition/i0;->a:Landroidx/transition/o0;
 
     invoke-virtual {v0, p0, p1}, Landroidx/transition/o0;->a(Landroid/view/View;Landroid/graphics/Matrix;)V
@@ -235,21 +220,18 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x12
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Landroidx/transition/g0;
 
     invoke-direct {v0, p0}, Landroidx/transition/g0;-><init>(Landroid/view/View;)V
 
     return-object v0
 
-    .line 3
     :cond_0
     invoke-static {p0}, Landroidx/transition/f0;->a(Landroid/view/View;)Landroidx/transition/f0;
 
@@ -269,7 +251,6 @@
         .end annotation
     .end param
 
-    .line 4
     sget-object v0, Landroidx/transition/i0;->a:Landroidx/transition/o0;
 
     invoke-virtual {v0, p0, p1}, Landroidx/transition/o0;->b(Landroid/view/View;Landroid/graphics/Matrix;)V
@@ -284,7 +265,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object v0, Landroidx/transition/i0;->a:Landroidx/transition/o0;
 
     invoke-virtual {v0, p0}, Landroidx/transition/o0;->b(Landroid/view/View;)F
@@ -305,7 +285,6 @@
         .end annotation
     .end param
 
-    .line 2
     sget-object v0, Landroidx/transition/i0;->a:Landroidx/transition/o0;
 
     invoke-virtual {v0, p0, p1}, Landroidx/transition/o0;->c(Landroid/view/View;Landroid/graphics/Matrix;)V
@@ -320,21 +299,18 @@
         .end annotation
     .end param
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x12
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     new-instance v0, Landroidx/transition/r0;
 
     invoke-direct {v0, p0}, Landroidx/transition/r0;-><init>(Landroid/view/View;)V
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v0, Landroidx/transition/q0;
 
@@ -354,7 +330,6 @@
         .end annotation
     .end param
 
-    .line 1
     sget-object v0, Landroidx/transition/i0;->a:Landroidx/transition/o0;
 
     invoke-virtual {v0, p0}, Landroidx/transition/o0;->c(Landroid/view/View;)V

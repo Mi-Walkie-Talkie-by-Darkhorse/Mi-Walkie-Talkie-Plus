@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/g/s$a;
 .super Lcom/liulishuo/okdownload/core/listener/DownloadListener2;
-.source "UpgradeManager.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/g/s;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/liulishuo/okdownload/core/listener/DownloadListener2;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/lite/g/s;->a()Ljava/lang/String;
 
     move-result-object v0
@@ -66,7 +63,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/blelib/a;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     sget-object v0, Lcom/liulishuo/okdownload/core/cause/EndCause;->COMPLETED:Lcom/liulishuo/okdownload/core/cause/EndCause;
 
     if-ne p2, v0, :cond_0
@@ -77,7 +73,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/DownloadTask;->getFile()Ljava/io/File;
 
     move-result-object p1
@@ -86,7 +81,6 @@
 
     move-result-object p1
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/library/base/BaseApp;->b()Lcom/ifengyu/library/base/BaseApp;
 
     move-result-object p2
@@ -95,12 +89,10 @@
 
     move-result-object p2
 
-    .line 5
     invoke-virtual {p2, p1}, Lcom/ifengyu/intercom/lite/g/r;->a(Ljava/lang/String;)V
 
     goto :goto_1
 
-    .line 6
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/lite/g/s;->a()Ljava/lang/String;
 
@@ -145,7 +137,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/lite/g/s;->a()Ljava/lang/String;
 
     move-result-object v0

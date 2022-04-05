@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/statistics/c;
 .super Ljava/lang/Object;
-.source "NetWorkManager.java"
 
 
 # static fields
@@ -47,48 +46,36 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 5
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput v0, p0, Lcom/umeng/commonsdk/statistics/c;->e:I
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/c;->h:Lcom/umeng/commonsdk/statistics/idtracking/e;
 
-    .line 4
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/c;->i:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;
 
-    .line 5
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/c;->j:Lcom/umeng/commonsdk/statistics/noise/ABTest;
 
-    .line 6
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/c;->k:Lcom/umeng/commonsdk/statistics/noise/Defcon;
 
     const-wide/16 v1, 0x0
 
-    .line 7
     iput-wide v1, p0, Lcom/umeng/commonsdk/statistics/c;->l:J
 
     const/4 v3, 0x0
 
-    .line 8
     iput v3, p0, Lcom/umeng/commonsdk/statistics/c;->m:I
 
-    .line 9
     iput v3, p0, Lcom/umeng/commonsdk/statistics/c;->n:I
 
-    .line 10
     iput-object v0, p0, Lcom/umeng/commonsdk/statistics/c;->a:Ljava/lang/String;
 
-    .line 11
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
-    .line 12
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->getImprintService(Landroid/content/Context;)Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
 
     move-result-object p1
@@ -99,7 +86,6 @@
 
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->i:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler$a;
 
-    .line 13
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/noise/Defcon;->getService(Landroid/content/Context;)Lcom/umeng/commonsdk/statistics/noise/Defcon;
@@ -108,7 +94,6 @@
 
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->k:Lcom/umeng/commonsdk/statistics/noise/Defcon;
 
-    .line 14
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/internal/PreferenceWrapper;->getDefault(Landroid/content/Context;)Landroid/content/SharedPreferences;
@@ -117,7 +102,6 @@
 
     const-string v4, "thtstart"
 
-    .line 15
     invoke-interface {p1, v4, v1, v2}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
 
     move-result-wide v1
@@ -126,7 +110,6 @@
 
     const-string v1, "gkvc"
 
-    .line 16
     invoke-interface {p1, v1, v3}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result v1
@@ -135,14 +118,12 @@
 
     const-string v1, "ekvc"
 
-    .line 17
     invoke-interface {p1, v1, v3}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result p1
 
     iput p1, p0, Lcom/umeng/commonsdk/statistics/c;->n:I
 
-    .line 18
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     const-string v1, "track_list"
@@ -153,7 +134,6 @@
 
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->a:Ljava/lang/String;
 
-    .line 19
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->getImprintService(Landroid/content/Context;)Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
@@ -162,14 +142,12 @@
 
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->g:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
 
-    .line 20
     new-instance v0, Lcom/umeng/commonsdk/statistics/c$1;
 
     invoke-direct {v0, p0}, Lcom/umeng/commonsdk/statistics/c$1;-><init>(Lcom/umeng/commonsdk/statistics/c;)V
 
     invoke-virtual {p1, v0}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->a(Lcom/umeng/commonsdk/statistics/internal/d;)V
 
-    .line 21
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/UMConfigure;->needSendZcfgEnv(Landroid/content/Context;)Z
@@ -178,7 +156,6 @@
 
     if-nez p1, :cond_0
 
-    .line 22
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     invoke-static {p1}, Lcom/umeng/commonsdk/statistics/idtracking/e;->a(Landroid/content/Context;)Lcom/umeng/commonsdk/statistics/idtracking/e;
@@ -187,7 +164,6 @@
 
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->h:Lcom/umeng/commonsdk/statistics/idtracking/e;
 
-    .line 23
     :cond_0
     new-instance p1, Lcom/umeng/commonsdk/statistics/internal/c;
 
@@ -197,7 +173,6 @@
 
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->f:Lcom/umeng/commonsdk/statistics/internal/c;
 
-    .line 24
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/internal/StatTracer;->getInstance(Landroid/content/Context;)Lcom/umeng/commonsdk/statistics/internal/StatTracer;
@@ -212,12 +187,10 @@
 .method private a([B)I
     .locals 3
 
-    .line 35
     new-instance v0, Lcom/umeng/commonsdk/statistics/proto/Response;
 
     invoke-direct {v0}, Lcom/umeng/commonsdk/statistics/proto/Response;-><init>()V
 
-    .line 36
     new-instance v1, Lcom/umeng/analytics/pro/at;
 
     new-instance v2, Lcom/umeng/analytics/pro/bi$a;
@@ -228,16 +201,13 @@
 
     const/4 v2, 0x1
 
-    .line 37
     :try_start_0
     invoke-virtual {v1, v0, p1}, Lcom/umeng/analytics/pro/at;->a(Lcom/umeng/analytics/pro/aq;[B)V
 
-    .line 38
     iget p1, v0, Lcom/umeng/commonsdk/statistics/proto/Response;->resp_code:I
 
     if-ne p1, v2, :cond_0
 
-    .line 39
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->g:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
 
     invoke-virtual {v0}, Lcom/umeng/commonsdk/statistics/proto/Response;->getImprint()Lcom/umeng/commonsdk/statistics/proto/d;
@@ -246,7 +216,6 @@
 
     invoke-virtual {p1, v1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->b(Lcom/umeng/commonsdk/statistics/proto/d;)V
 
-    .line 40
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->g:Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;
 
     invoke-virtual {p1}, Lcom/umeng/commonsdk/statistics/idtracking/ImprintHandler;->d()V
@@ -258,12 +227,10 @@
     :catchall_0
     move-exception p1
 
-    .line 41
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     invoke-static {v1, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V
 
-    .line 42
     :cond_0
     :goto_0
     iget p1, v0, Lcom/umeng/commonsdk/statistics/proto/Response;->resp_code:I
@@ -283,7 +250,6 @@
 .method static synthetic a(Lcom/umeng/commonsdk/statistics/c;)Lcom/umeng/commonsdk/statistics/noise/Defcon;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/umeng/commonsdk/statistics/c;->k:Lcom/umeng/commonsdk/statistics/noise/Defcon;
 
     return-object p0
@@ -292,7 +258,6 @@
 .method static synthetic b(Lcom/umeng/commonsdk/statistics/c;)Landroid/content/Context;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     return-object p0
@@ -309,7 +274,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Ljava/io/File;->getPath()Ljava/lang/String;
@@ -324,13 +288,11 @@
 
     return v0
 
-    .line 3
     :cond_1
     invoke-virtual {p1}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 4
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v2
@@ -339,7 +301,6 @@
 
     return v0
 
-    .line 5
     :cond_2
     iget-object v2, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
@@ -347,37 +308,30 @@
 
     move-result-object v2
 
-    .line 6
     invoke-virtual {v2, p1}, Lcom/umeng/commonsdk/statistics/internal/a;->d(Ljava/lang/String;)V
 
-    .line 7
     invoke-virtual {v2, p1}, Lcom/umeng/commonsdk/statistics/internal/a;->a(Ljava/lang/String;)Z
 
     move-result v3
 
-    .line 8
     invoke-virtual {v2, p1}, Lcom/umeng/commonsdk/statistics/internal/a;->b(Ljava/lang/String;)Z
 
     move-result v4
 
-    .line 9
     invoke-virtual {v2, p1}, Lcom/umeng/commonsdk/statistics/internal/a;->c(Ljava/lang/String;)Z
 
     move-result v2
 
-    .line 10
     invoke-static {p1}, Lcom/umeng/commonsdk/stateless/d;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    .line 11
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
     if-nez v5, :cond_3
 
-    .line 12
     invoke-static {p1}, Lcom/umeng/commonsdk/stateless/d;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -387,16 +341,13 @@
     :cond_3
     if-eqz v2, :cond_4
 
-    .line 13
     sget-object p1, Lcom/umeng/commonsdk/statistics/UMServerURL;->ZCFG_PATH:Ljava/lang/String;
 
     goto :goto_0
 
-    .line 14
     :cond_4
     sget-object p1, Lcom/umeng/commonsdk/statistics/UMServerURL;->PATH_ANALYTICS:Ljava/lang/String;
 
-    .line 15
     :goto_0
     iget-object v5, p0, Lcom/umeng/commonsdk/statistics/c;->f:Lcom/umeng/commonsdk/statistics/internal/c;
 
@@ -412,13 +363,11 @@
 
     goto :goto_1
 
-    .line 16
     :cond_5
     invoke-direct {p0, p1}, Lcom/umeng/commonsdk/statistics/c;->a([B)I
 
     move-result p1
 
-    .line 17
     :goto_1
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
 
@@ -439,7 +388,6 @@
     :try_start_1
     const-string v3, "Zero req: succeed."
 
-    .line 18
     invoke-static {v6, v3}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
@@ -451,12 +399,10 @@
 
     const-string v3, "\u672c\u6b21\u542f\u52a8\u6570\u636e: \u53d1\u9001\u6210\u529f!"
 
-    .line 19
     invoke-static {v3}, Lcom/umeng/commonsdk/statistics/common/MLog;->d(Ljava/lang/String;)V
 
     const-string v3, "Send instant data: succeed."
 
-    .line 20
     invoke-static {v6, v3}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
@@ -468,12 +414,10 @@
 
     const-string v3, "\u666e\u901a\u7edf\u8ba1\u6570\u636e: \u53d1\u9001\u6210\u529f!"
 
-    .line 21
     invoke-static {v3}, Lcom/umeng/commonsdk/statistics/common/MLog;->d(Ljava/lang/String;)V
 
     const-string v3, "Send analytics data: succeed."
 
-    .line 22
     invoke-static {v6, v3}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_2
@@ -481,7 +425,6 @@
     :cond_8
     const-string v3, "Inner req: succeed."
 
-    .line 23
     invoke-static {v6, v3}, Lcom/umeng/commonsdk/debug/UMRTLog;->i(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_9
@@ -494,7 +437,6 @@
 
     goto :goto_3
 
-    .line 24
     :cond_a
     iget-object v3, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
@@ -506,29 +448,24 @@
 
     if-eqz v2, :cond_d
 
-    .line 25
     invoke-static {}, Lcom/umeng/commonsdk/config/FieldManager;->a()Lcom/umeng/commonsdk/config/FieldManager;
 
     move-result-object p1
 
-    .line 26
     iget-object v2, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     invoke-virtual {p1, v2}, Lcom/umeng/commonsdk/config/FieldManager;->a(Landroid/content/Context;)V
 
     const-string p1, "--->>> \u96f6\u53f7\u62a5\u6587\u5e94\u7b54\u5185\u5bb9\u62a5\u9519!!! \uff0c\u7279\u6b8a\u5904\u7406!\uff0c\u7ee7\u7eed\u6b63\u5e38\u6d41\u7a0b\u3002"
 
-    .line 27
     invoke-static {v6, p1}, Lcom/umeng/commonsdk/debug/UMRTLog;->e(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 28
     iget-object p1, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     const v2, 0x8010
 
     iget-object v3, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
-    .line 29
     invoke-static {v3}, Lcom/umeng/commonsdk/internal/b;->a(Landroid/content/Context;)Lcom/umeng/commonsdk/internal/b;
 
     move-result-object v3
@@ -539,23 +476,19 @@
 
     const/4 v4, 0x0
 
-    .line 30
     invoke-static {p1, v2, v3, v4}, Lcom/umeng/commonsdk/framework/UMWorkDispatch;->sendEvent(Landroid/content/Context;ILcom/umeng/commonsdk/framework/UMLogDataProtocol;Ljava/lang/Object;)V
 
     return v1
 
-    .line 31
     :cond_b
     iget-object v2, p0, Lcom/umeng/commonsdk/statistics/c;->h:Lcom/umeng/commonsdk/statistics/idtracking/e;
 
     if-eqz v2, :cond_c
 
-    .line 32
     iget-object v2, p0, Lcom/umeng/commonsdk/statistics/c;->h:Lcom/umeng/commonsdk/statistics/idtracking/e;
 
     invoke-virtual {v2}, Lcom/umeng/commonsdk/statistics/idtracking/e;->e()V
 
-    .line 33
     :cond_c
     iget-object v2, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
@@ -579,7 +512,6 @@
     :catchall_0
     move-exception p1
 
-    .line 34
     iget-object v1, p0, Lcom/umeng/commonsdk/statistics/c;->r:Landroid/content/Context;
 
     invoke-static {v1, p1}, Lcom/umeng/commonsdk/internal/crash/UMCrashManager;->reportCrash(Landroid/content/Context;Ljava/lang/Throwable;)V

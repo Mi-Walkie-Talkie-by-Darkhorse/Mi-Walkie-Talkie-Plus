@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/tileprovider/tilesource/ITileSource;
 .super Ljava/lang/Object;
-.source "ITileSource.java"
 
 
 # virtual methods

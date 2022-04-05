@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/data/BarEntry;
 .super Lcom/github/mikephil/charting/data/Entry;
-.source "BarEntry.java"
 
 
 # annotations
@@ -25,7 +24,6 @@
 .method public b()F
     .locals 1
 
-    .line 1
     invoke-super {p0}, Lcom/github/mikephil/charting/data/e;->b()F
 
     move-result v0
@@ -36,7 +34,6 @@
 .method public d()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/BarEntry;->f:F
 
     return v0
@@ -45,7 +42,6 @@
 .method public e()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/data/BarEntry;->g:F
 
     return v0
@@ -54,7 +50,6 @@
 .method public f()[Lb/a/a/a/d/j;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/BarEntry;->e:[Lb/a/a/a/d/j;
 
     return-object v0
@@ -63,7 +58,6 @@
 .method public g()[F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/BarEntry;->d:[F
 
     return-object v0
@@ -72,7 +66,6 @@
 .method public h()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/data/BarEntry;->d:[F
 
     if-eqz v0, :cond_0

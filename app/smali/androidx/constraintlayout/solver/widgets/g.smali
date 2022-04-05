@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/constraintlayout/solver/widgets/g;
 .super Ljava/lang/Object;
-.source "Helper.java"
 
 
 # virtual methods

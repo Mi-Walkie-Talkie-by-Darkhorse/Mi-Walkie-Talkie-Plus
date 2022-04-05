@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/search/SearchEngine;
 .super Lcom/autonavi/ae/search/NativeSearchEngine;
-.source "SearchEngine.java"
 
 
 # static fields
@@ -40,10 +39,8 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Lcom/autonavi/ae/search/NativeSearchEngine;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/Hashtable;
 
     invoke-direct {v0}, Ljava/util/Hashtable;-><init>()V
@@ -52,10 +49,8 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Lcom/autonavi/ae/search/SearchEngine;->mIsInit:Z
 
-    .line 4
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -64,15 +59,12 @@
 
     const-wide/16 v0, 0x0
 
-    .line 5
     iput-wide v0, p0, Lcom/autonavi/ae/search/SearchEngine;->mNativeId:J
 
     const-string v0, "SearchEngine"
 
-    .line 6
     iput-object v0, p0, Lcom/autonavi/ae/search/SearchEngine;->TAG:Ljava/lang/String;
 
-    .line 7
     new-instance v0, Lcom/autonavi/ae/search/SearchEngine$1;
 
     invoke-direct {v0, p0}, Lcom/autonavi/ae/search/SearchEngine$1;-><init>(Lcom/autonavi/ae/search/SearchEngine;)V
@@ -85,7 +77,6 @@
 .method static synthetic access$000(Lcom/autonavi/ae/search/SearchEngine;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/autonavi/ae/search/SearchEngine;->o:Ljava/lang/Object;
 
     return-object p0
@@ -94,7 +85,6 @@
 .method static synthetic access$100(Lcom/autonavi/ae/search/SearchEngine;)Ljava/util/Hashtable;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/autonavi/ae/search/SearchEngine;->mSearchCallBackListenerList:Ljava/util/Hashtable;
 
     return-object p0
@@ -103,14 +93,12 @@
 .method private addSearchObserver(Lcom/autonavi/ae/search/INativeSearchObserver;)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/search/SearchEngine;->isInit()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/search/NativeSearchEngine;->nativeAddSearchObserver(Lcom/autonavi/ae/search/INativeSearchObserver;)I
 
     move-result p1
@@ -130,7 +118,6 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Lcom/autonavi/ae/search/NativeSearchPub;->GetDataVersion(I)Ljava/lang/String;
 
@@ -157,7 +144,6 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     invoke-static {}, Lcom/autonavi/ae/search/NativeSearchPub;->GetVersion()Ljava/lang/String;
 
@@ -184,7 +170,6 @@
 
     monitor-enter v0
 
-    .line 1
     :try_start_0
     sget v1, Lcom/autonavi/ae/search/SearchEngine;->mRequestID:I
 
@@ -194,10 +179,8 @@
 
     const/4 v1, 0x1
 
-    .line 2
     sput v1, Lcom/autonavi/ae/search/SearchEngine;->mRequestID:I
 
-    .line 3
     :cond_0
     sget v1, Lcom/autonavi/ae/search/SearchEngine;->mRequestID:I
 
@@ -224,14 +207,12 @@
 .method public GetAdareaInfo(I)Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/search/SearchEngine;->isInit()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {p1}, Lcom/autonavi/ae/search/NativeSearchPub;->GetAdareaInfo(I)Lcom/autonavi/ae/search/model/GADAREAEXTRAINFO;
 
     move-result-object p1
@@ -247,14 +228,12 @@
 .method public cancelQuery()I
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/search/SearchEngine;->isInit()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 2
     invoke-static {}, Lcom/autonavi/ae/search/log/GLog;->isLogShow()Z
 
     move-result v0
@@ -265,10 +244,8 @@
 
     const-string v1, "cancelQuery start"
 
-    .line 3
     invoke-static {v0, v1}, Lcom/autonavi/ae/search/log/GLog;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     :cond_0
     invoke-virtual {p0}, Lcom/autonavi/ae/search/NativeSearchEngine;->nativeAbortSearch()I
 
@@ -285,7 +262,6 @@
 .method public destroy()I
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/autonavi/ae/search/log/GLog;->isLogShow()Z
 
     move-result v0
@@ -296,32 +272,26 @@
 
     const-string v1, "destroy start"
 
-    .line 2
     invoke-static {v0, v1}, Lcom/autonavi/ae/search/log/GLog;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/search/SearchEngine;->o:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 4
     :try_start_0
     iget-object v1, p0, Lcom/autonavi/ae/search/SearchEngine;->mSearchCallBackListenerList:Ljava/util/Hashtable;
 
     invoke-virtual {v1}, Ljava/util/Hashtable;->clear()V
 
-    .line 5
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     const/4 v0, 0x0
 
-    .line 6
     iput-boolean v0, p0, Lcom/autonavi/ae/search/SearchEngine;->mIsInit:Z
 
-    .line 7
     invoke-virtual {p0}, Lcom/autonavi/ae/search/NativeSearchEngine;->nativeDestroy()I
 
     move-result v0
@@ -331,7 +301,6 @@
     :catchall_0
     move-exception v1
 
-    .line 8
     monitor-exit v0
 
     throw v1
@@ -340,14 +309,12 @@
 .method public getPoiCategoryList(I)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/search/SearchEngine;->isInit()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/search/NativeSearchEngine;->nativeGetPoiCategoryList(I)I
 
     move-result p1
@@ -381,7 +348,6 @@
 
     move-object v8, p4
 
-    .line 1
     invoke-virtual/range {v0 .. v8}, Lcom/autonavi/ae/search/SearchEngine;->startSearch(IILjava/lang/String;IFFILcom/autonavi/ae/search/interfaces/OnSearchResultListener;)I
 
     move-result p1
@@ -392,14 +358,12 @@
 .method public getPoiParam(I)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/search/SearchEngine;->isInit()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/autonavi/ae/search/NativeSearchEngine;->nativeGetPoiParam(I)I
 
     move-result p1
@@ -415,19 +379,16 @@
 .method public init()I
     .locals 10
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/search/NativeSearchEngine;->nativeCreateSearcher()I
 
     move-result v0
 
-    .line 2
     invoke-static {}, Lcom/autonavi/ae/search/log/GLog;->isLogShow()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "nativeCreateSearcher.naviid="
@@ -461,7 +422,6 @@
 
     move-object v3, p0
 
-    .line 4
     invoke-virtual/range {v3 .. v9}, Lcom/autonavi/ae/search/NativeSearchEngine;->nativeInit(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;II)I
 
     move-result v0
@@ -470,10 +430,8 @@
 
     const/4 v0, 0x1
 
-    .line 5
     iput-boolean v0, p0, Lcom/autonavi/ae/search/SearchEngine;->mIsInit:Z
 
-    .line 6
     iget-object v0, p0, Lcom/autonavi/ae/search/SearchEngine;->obServer:Lcom/autonavi/ae/search/INativeSearchObserver;
 
     invoke-direct {p0, v0}, Lcom/autonavi/ae/search/SearchEngine;->addSearchObserver(Lcom/autonavi/ae/search/INativeSearchObserver;)I
@@ -485,7 +443,6 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 7
     iput-boolean v1, p0, Lcom/autonavi/ae/search/SearchEngine;->mIsInit:Z
 
     return v0
@@ -499,14 +456,12 @@
 .method public isExistByAdCode(I)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/search/SearchEngine;->isInit()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {p1}, Lcom/autonavi/ae/search/NativeSearchPub;->DbExists(I)Z
 
     move-result p1
@@ -522,7 +477,6 @@
 .method public isInit()Z
     .locals 5
 
-    .line 1
     iget-boolean v0, p0, Lcom/autonavi/ae/search/SearchEngine;->mIsInit:Z
 
     if-eqz v0, :cond_0
@@ -566,7 +520,6 @@
 
     move-object/from16 v8, p7
 
-    .line 1
     invoke-virtual/range {v0 .. v8}, Lcom/autonavi/ae/search/SearchEngine;->startSearch(IILjava/lang/String;IFFILcom/autonavi/ae/search/interfaces/OnSearchResultListener;)I
 
     move-result v0
@@ -577,7 +530,6 @@
 .method public searchAdareaInfo(Ljava/lang/String;)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/search/SearchEngine;->isInit()Z
 
     move-result v0
@@ -586,7 +538,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-virtual {p0, v0, p1}, Lcom/autonavi/ae/search/NativeSearchEngine;->nativeSearchAdareaInfo(ILjava/lang/String;)I
 
     move-result p1
@@ -620,7 +571,6 @@
 
     move-object v8, p3
 
-    .line 1
     invoke-virtual/range {v0 .. v8}, Lcom/autonavi/ae/search/SearchEngine;->startSearch(IILjava/lang/String;IFFILcom/autonavi/ae/search/interfaces/OnSearchResultListener;)I
 
     move-result p1
@@ -631,7 +581,6 @@
 .method public setMccPath(Ljava/lang/String;)I
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/autonavi/ae/search/SearchEngine;->getRequestID()I
 
     move-result v0
@@ -646,14 +595,12 @@
 .method public setPoiParam(II)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/autonavi/ae/search/SearchEngine;->isInit()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1, p2}, Lcom/autonavi/ae/search/NativeSearchEngine;->nativeSetPoiParam(II)I
 
     move-result p1
@@ -673,7 +620,6 @@
 
     move-object/from16 v0, p8
 
-    .line 3
     invoke-virtual {p0}, Lcom/autonavi/ae/search/SearchEngine;->isInit()Z
 
     move-result v1
@@ -703,7 +649,6 @@
 
     const/16 v2, 0x8
 
-    .line 4
     :goto_1
     invoke-static {}, Lcom/autonavi/ae/search/SearchEngine;->getRequestID()I
 
@@ -711,12 +656,10 @@
 
     if-eqz v0, :cond_2
 
-    .line 5
     iget-object v1, v13, Lcom/autonavi/ae/search/SearchEngine;->o:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 6
     :try_start_0
     iget-object v3, v13, Lcom/autonavi/ae/search/SearchEngine;->mSearchCallBackListenerList:Ljava/util/Hashtable;
 
@@ -726,7 +669,6 @@
 
     invoke-virtual {v3, v4, v0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 7
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -762,19 +704,16 @@
 
     move/from16 v9, p7
 
-    .line 8
     invoke-virtual/range {v1 .. v12}, Lcom/autonavi/ae/search/NativeSearchEngine;->nativeStartSearch(IILjava/lang/String;IFFIIII[Lcom/autonavi/ae/search/model/GObjectID;)Lcom/autonavi/ae/search/model/SearchStatus;
 
     move-result-object v0
 
-    .line 9
     invoke-static {}, Lcom/autonavi/ae/search/log/GLog;->isLogShow()Z
 
     move-result v1
 
     if-eqz v1, :cond_3
 
-    .line 10
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "startSearch requestID="
@@ -821,7 +760,6 @@
 
     invoke-static {v2, v1}, Lcom/autonavi/ae/search/log/GLog;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 11
     :cond_3
     invoke-virtual {v0}, Lcom/autonavi/ae/search/model/SearchStatus;->getStatus()I
 
@@ -858,7 +796,6 @@
 
     move-object/from16 v8, p8
 
-    .line 1
     invoke-virtual/range {v0 .. v9}, Lcom/autonavi/ae/search/SearchEngine;->startSearch(ILjava/lang/String;IFFII[Lcom/autonavi/ae/search/model/GObjectID;Lcom/autonavi/ae/search/interfaces/OnSearchResultListener;)I
 
     move-result v0
@@ -873,26 +810,22 @@
 
     move-object/from16 v0, p9
 
-    .line 12
     invoke-virtual {p0}, Lcom/autonavi/ae/search/SearchEngine;->isInit()Z
 
     move-result v1
 
     if-eqz v1, :cond_2
 
-    .line 13
     invoke-static {}, Lcom/autonavi/ae/search/SearchEngine;->getRequestID()I
 
     move-result v10
 
     if-eqz v0, :cond_0
 
-    .line 14
     iget-object v1, v13, Lcom/autonavi/ae/search/SearchEngine;->o:Ljava/lang/Object;
 
     monitor-enter v1
 
-    .line 15
     :try_start_0
     iget-object v2, v13, Lcom/autonavi/ae/search/SearchEngine;->mSearchCallBackListenerList:Ljava/util/Hashtable;
 
@@ -902,7 +835,6 @@
 
     invoke-virtual {v2, v3, v0}, Ljava/util/Hashtable;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 16
     monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -940,19 +872,16 @@
 
     move-object/from16 v12, p8
 
-    .line 17
     invoke-virtual/range {v1 .. v12}, Lcom/autonavi/ae/search/NativeSearchEngine;->nativeStartSearch(IILjava/lang/String;IFFIIII[Lcom/autonavi/ae/search/model/GObjectID;)Lcom/autonavi/ae/search/model/SearchStatus;
 
     move-result-object v0
 
-    .line 18
     invoke-static {}, Lcom/autonavi/ae/search/log/GLog;->isLogShow()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 19
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "startSearch requestID="
@@ -999,7 +928,6 @@
 
     invoke-static {v2, v1}, Lcom/autonavi/ae/search/log/GLog;->v(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 20
     :cond_1
     invoke-virtual {v0}, Lcom/autonavi/ae/search/model/SearchStatus;->getStatus()I
 
@@ -1034,7 +962,6 @@
 
     move-object/from16 v8, p7
 
-    .line 2
     invoke-virtual/range {v0 .. v8}, Lcom/autonavi/ae/search/SearchEngine;->startSearch(IILjava/lang/String;IFFILcom/autonavi/ae/search/interfaces/OnSearchResultListener;)I
 
     move-result v0

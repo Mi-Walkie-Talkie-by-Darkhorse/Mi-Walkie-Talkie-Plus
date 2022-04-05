@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/HalfFloat;
 .super Ljava/lang/Object;
-.source "HalfFloat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

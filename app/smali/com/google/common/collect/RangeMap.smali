@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/collect/RangeMap;
 .super Ljava/lang/Object;
-.source "RangeMap.java"
 
 
 # annotations

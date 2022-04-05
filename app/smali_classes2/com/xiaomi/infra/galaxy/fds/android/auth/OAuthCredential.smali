@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/android/auth/OAuthCredential;
 .super Ljava/lang/Object;
-.source "OAuthCredential.java"
 
 # interfaces
 .implements Lcom/xiaomi/infra/galaxy/fds/android/auth/GalaxyFDSCredential;
@@ -39,18 +38,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string v0, "OAuth"
 
-    .line 2
     iput-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/android/auth/OAuthCredential;->HEADER_VALUE:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Lcom/xiaomi/infra/galaxy/fds/android/auth/OAuthCredential;->appId:Ljava/lang/String;
 
-    .line 4
     invoke-direct/range {p0 .. p7}, Lcom/xiaomi/infra/galaxy/fds/android/auth/OAuthCredential;->getStorageAccessToken(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lcom/xiaomi/infra/galaxy/fds/android/model/StorageAccessToken;
 
     move-result-object p1
@@ -72,13 +67,11 @@
 
     const-string v1, "&"
 
-    .line 1
     :try_start_0
     new-instance v2, Lorg/apache/http/impl/client/DefaultHttpClient;
 
     invoke-direct {v2}, Lorg/apache/http/impl/client/DefaultHttpClient;-><init>()V
 
-    .line 2
     new-instance v3, Lorg/apache/http/client/methods/HttpGet;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -165,15 +158,12 @@
 
     const-string p2, "OAuth"
 
-    .line 3
     invoke-virtual {v3, p1, p2}, Lorg/apache/http/client/methods/HttpGet;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     invoke-interface {v2, v3}, Lorg/apache/http/client/HttpClient;->execute(Lorg/apache/http/client/methods/HttpUriRequest;)Lorg/apache/http/HttpResponse;
 
     move-result-object p1
 
-    .line 5
     invoke-interface {p1}, Lorg/apache/http/HttpResponse;->getStatusLine()Lorg/apache/http/StatusLine;
 
     move-result-object p2
@@ -186,7 +176,6 @@
 
     if-ne p2, p3, :cond_0
 
-    .line 6
     invoke-interface {p1}, Lorg/apache/http/HttpResponse;->getEntity()Lorg/apache/http/HttpEntity;
 
     move-result-object p1
@@ -195,12 +184,10 @@
 
     move-result-object p1
 
-    .line 7
     new-instance p2, Ljava/io/InputStreamReader;
 
     invoke-direct {p2, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
 
-    .line 8
     new-instance p3, Lcom/google/gson/Gson;
 
     invoke-direct {p3}, Lcom/google/gson/Gson;-><init>()V
@@ -213,12 +200,10 @@
 
     check-cast p2, Lcom/xiaomi/infra/galaxy/fds/android/model/StorageAccessToken;
 
-    .line 9
     invoke-virtual {p1}, Ljava/io/InputStream;->close()V
 
     return-object p2
 
-    .line 10
     :cond_0
     new-instance p2, Lcom/xiaomi/infra/galaxy/fds/android/exception/GalaxyFDSClientException;
 
@@ -267,7 +252,6 @@
     :catch_0
     move-exception p1
 
-    .line 11
     new-instance p2, Lcom/xiaomi/infra/galaxy/fds/android/exception/GalaxyFDSClientException;
 
     const-string p3, "Failed to get the storage access token"
@@ -286,7 +270,6 @@
 
     const-string v1, "OAuth"
 
-    .line 1
     invoke-virtual {p1, v0, v1}, Lorg/apache/http/client/methods/HttpRequestBase;->setHeader(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -295,14 +278,12 @@
 .method public addParam(Ljava/lang/String;)Ljava/lang/String;
     .locals 4
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     const/16 v1, 0x3f
 
-    .line 2
     invoke-virtual {p1, v1}, Ljava/lang/String;->indexOf(I)I
 
     move-result p1
@@ -313,43 +294,34 @@
 
     if-ne p1, v3, :cond_0
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    .line 4
     :cond_0
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     :goto_0
     const-string p1, "APP_ID"
 
-    .line 5
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     const/16 p1, 0x3d
 
-    .line 6
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 7
     iget-object v1, p0, Lcom/xiaomi/infra/galaxy/fds/android/auth/OAuthCredential;->appId:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     const-string v1, "STORAGE_ACCESS_TOKEN"
 
-    .line 9
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 10
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 11
     iget-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/android/auth/OAuthCredential;->storageAccessToken:Lcom/xiaomi/infra/galaxy/fds/android/model/StorageAccessToken;
 
     invoke-virtual {p1}, Lcom/xiaomi/infra/galaxy/fds/android/model/StorageAccessToken;->getToken()Ljava/lang/String;
@@ -358,7 +330,6 @@
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 12
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object p1

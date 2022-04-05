@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/bean/AltitudeBean$Location;
 .super Ljava/lang/Object;
-.source "AltitudeBean.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/bean/AltitudeBean;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/AltitudeBean$Location;->this$0:Lcom/ifengyu/intercom/bean/AltitudeBean;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -39,7 +37,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

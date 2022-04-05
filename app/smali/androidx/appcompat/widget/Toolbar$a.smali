@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/widget/Toolbar$a;
 .super Ljava/lang/Object;
-.source "Toolbar.java"
 
 # interfaces
 .implements Landroidx/appcompat/widget/ActionMenuView$d;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/appcompat/widget/Toolbar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/appcompat/widget/Toolbar$a;->a:Landroidx/appcompat/widget/Toolbar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public onMenuItemClick(Landroid/view/MenuItem;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/Toolbar$a;->a:Landroidx/appcompat/widget/Toolbar;
 
     iget-object v0, v0, Landroidx/appcompat/widget/Toolbar;->mOnMenuItemClickListener:Landroidx/appcompat/widget/Toolbar$e;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Landroidx/appcompat/widget/Toolbar$e;->onMenuItemClick(Landroid/view/MenuItem;)Z
 
     move-result p1

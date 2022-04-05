@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/c$a;
 .super Ljava/lang/Object;
-.source "ActivateDeviceDialog.java"
 
 # interfaces
 .implements Landroid/widget/CompoundButton$OnCheckedChangeListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/c$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +38,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/c$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/c;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/c;->a(Lcom/ifengyu/intercom/ui/widget/dialog/c;)Landroid/widget/TextView;
@@ -57,7 +54,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/c$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/c;
 

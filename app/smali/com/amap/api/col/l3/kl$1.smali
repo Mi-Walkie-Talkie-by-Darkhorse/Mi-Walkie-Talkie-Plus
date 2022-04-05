@@ -1,6 +1,5 @@
 .class final synthetic Lcom/amap/api/col/l3/kl$1;
 .super Ljava/lang/Object;
-.source "AMapClientUtils.java"
 
 
 # annotations

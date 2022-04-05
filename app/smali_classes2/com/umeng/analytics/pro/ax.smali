@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/analytics/pro/ax;
 .super Ljava/lang/Object;
-.source "TFieldIdEnum.java"
 
 
 # virtual methods

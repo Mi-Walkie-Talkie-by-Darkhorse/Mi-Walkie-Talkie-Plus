@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/old/LiteSettingActivity$d;
 .super Ljava/lang/Object;
-.source "LiteSettingActivity.java"
 
 # interfaces
 .implements Landroidx/lifecycle/q;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/old/LiteSettingActivity$d;->a:Lcom/ifengyu/intercom/lite/old/LiteSettingActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public a(Ljava/lang/Boolean;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
@@ -56,7 +53,6 @@
 
     const p1, 0x7f1101e7
 
-    .line 2
     invoke-static {p1}, Lcom/ifengyu/library/a/m;->d(I)V
 
     :cond_0
@@ -66,7 +62,6 @@
 .method public bridge synthetic onChanged(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Boolean;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/lite/old/LiteSettingActivity$d;->a(Ljava/lang/Boolean;)V

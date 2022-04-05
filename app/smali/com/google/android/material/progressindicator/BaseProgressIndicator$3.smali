@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/progressindicator/BaseProgressIndicator$3;
 .super Landroidx/vectordrawable/a/a/b$a;
-.source "BaseProgressIndicator.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/android/material/progressindicator/BaseProgressIndicator;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicator$3;->this$0:Lcom/google/android/material/progressindicator/BaseProgressIndicator;
 
     invoke-direct {p0}, Landroidx/vectordrawable/a/a/b$a;-><init>()V
@@ -35,19 +33,16 @@
 .method public onAnimationEnd(Landroid/graphics/drawable/Drawable;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicator$3;->this$0:Lcom/google/android/material/progressindicator/BaseProgressIndicator;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->setIndeterminate(Z)V
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicator$3;->this$0:Lcom/google/android/material/progressindicator/BaseProgressIndicator;
 
     invoke-virtual {p1, v0, v0}, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->setProgressCompat(IZ)V
 
-    .line 3
     iget-object p1, p0, Lcom/google/android/material/progressindicator/BaseProgressIndicator$3;->this$0:Lcom/google/android/material/progressindicator/BaseProgressIndicator;
 
     invoke-static {p1}, Lcom/google/android/material/progressindicator/BaseProgressIndicator;->access$300(Lcom/google/android/material/progressindicator/BaseProgressIndicator;)I

@@ -1,6 +1,5 @@
 .class Landroidx/core/view/f0/a$a;
 .super Ljava/lang/Object;
-.source "EditorInfoCompat.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Landroid/view/inputmethod/EditorInfo;->setInitialSurroundingSubText(Ljava/lang/CharSequence;I)V
 
     return-void

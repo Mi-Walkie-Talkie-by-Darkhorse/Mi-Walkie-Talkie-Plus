@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/h0;
 .super Ljava/lang/Object;
-.source "SharkCmdUtils.java"
 
 
 # direct methods
@@ -13,13 +12,11 @@
 
     const/4 v0, 0x0
 
-    .line 16
     :try_start_0
     new-instance v1, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;
 
     invoke-direct {v1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;-><init>()V
 
-    .line 17
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChNo()Z
 
     move-result v2
@@ -32,7 +29,6 @@
 
     if-eqz v2, :cond_0
 
-    .line 18
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getChType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$SHARK_CHTYPE;
 
     move-result-object v2
@@ -55,7 +51,6 @@
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->a(Ljava/lang/Long;)V
 
-    .line 19
     :cond_0
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChNo()Z
 
@@ -77,7 +72,6 @@
     :goto_0
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->b(I)V
 
-    .line 20
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChType()Z
 
     move-result v2
@@ -100,7 +94,6 @@
     :goto_1
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->i(I)V
 
-    .line 21
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChTxPower()Z
 
     move-result v2
@@ -119,7 +112,6 @@
     :goto_2
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->h(I)V
 
-    .line 22
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChRxFreq()Z
 
     move-result v2
@@ -138,7 +130,6 @@
     :goto_3
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->d(I)V
 
-    .line 23
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChTxFreq()Z
 
     move-result v2
@@ -157,7 +148,6 @@
     :goto_4
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->g(I)V
 
-    .line 24
     invoke-static {}, Lcom/ifengyu/intercom/i/c0;->b()Z
 
     move-result v2
@@ -174,7 +164,6 @@
 
     if-eqz v2, :cond_7
 
-    .line 25
     :try_start_1
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChName()Z
 
@@ -200,7 +189,6 @@
 
     goto :goto_7
 
-    .line 26
     :cond_7
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getChType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$SHARK_CHTYPE;
 
@@ -212,7 +200,6 @@
 
     if-ne v2, v5, :cond_9
 
-    .line 27
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChName()Z
 
     move-result v2
@@ -237,7 +224,6 @@
 
     goto :goto_7
 
-    .line 28
     :cond_9
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getChType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$SHARK_CHTYPE;
 
@@ -253,7 +239,6 @@
 
     new-array v4, v7, [Ljava/lang/Object;
 
-    .line 29
     invoke-virtual {v1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->f()I
 
     move-result v8
@@ -274,7 +259,6 @@
 
     goto :goto_7
 
-    .line 30
     :cond_a
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getChType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$SHARK_CHTYPE;
 
@@ -290,7 +274,6 @@
 
     new-array v4, v7, [Ljava/lang/Object;
 
-    .line 31
     invoke-virtual {v1}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->f()I
 
     move-result v8
@@ -309,7 +292,6 @@
 
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->a(Ljava/lang/String;)V
 
-    .line 32
     :cond_b
     :goto_7
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChSq()Z
@@ -330,7 +312,6 @@
     :goto_8
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->e(I)V
 
-    .line 33
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChVox()Z
 
     move-result v2
@@ -349,7 +330,6 @@
     :goto_9
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->j(I)V
 
-    .line 34
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChRxCss()Z
 
     move-result v2
@@ -368,7 +348,6 @@
     :goto_a
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->c(I)V
 
-    .line 35
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChTxCss()Z
 
     move-result v2
@@ -387,7 +366,6 @@
     :goto_b
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->f(I)V
 
-    .line 36
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChElim()Z
 
     move-result v2
@@ -412,7 +390,6 @@
     :goto_c
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->a(Z)V
 
-    .line 37
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChBand()Z
 
     move-result v2
@@ -426,7 +403,6 @@
     :cond_11
     invoke-virtual {v1, v3}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->a(I)V
 
-    .line 38
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChPolite()Z
 
     move-result v2
@@ -451,14 +427,12 @@
     :goto_d
     invoke-virtual {v1, v2}, Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;->c(Z)V
 
-    .line 39
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->hasChType()Z
 
     move-result v2
 
     if-eqz v2, :cond_14
 
-    .line 40
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo;->getChType()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfo$SHARK_CHTYPE;
 
     move-result-object p0
@@ -482,7 +456,6 @@
     :catch_0
     move-exception p0
 
-    .line 41
     invoke-virtual {p0}, Ljava/lang/Exception;->printStackTrace()V
 
     return-object v0
@@ -491,7 +464,6 @@
 .method public static a()V
     .locals 3
 
-    .line 11
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;->SHARK_CH_QUERY:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/node/transport/g;->a(Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;
@@ -506,7 +478,6 @@
 
     move-result-object v0
 
-    .line 12
     invoke-static {v0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -515,7 +486,6 @@
 .method public static a(I)V
     .locals 2
 
-    .line 5
     invoke-static {p0}, Lcom/ifengyu/intercom/node/transport/g;->a(I)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     move-result-object p0
@@ -528,7 +498,6 @@
 
     move-result-object p0
 
-    .line 6
     invoke-static {p0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -537,7 +506,6 @@
 .method public static a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)V
     .locals 2
 
-    .line 13
     invoke-static {p0}, Lcom/ifengyu/intercom/node/transport/g;->a(Lcom/ifengyu/intercom/bean/BeanUserLocation;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_LocationInfo;
 
     move-result-object p0
@@ -550,7 +518,6 @@
 
     move-result-object p0
 
-    .line 14
     invoke-static {p0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -559,7 +526,6 @@
 .method private static a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
     .locals 1
 
-    .line 15
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object v0
@@ -572,7 +538,6 @@
 .method public static a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 2
 
-    .line 9
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;->SHARK_CH_DELETE:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;
 
     invoke-static {p0, v0}, Lcom/ifengyu/intercom/node/transport/g;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;
@@ -587,7 +552,6 @@
 
     move-result-object p0
 
-    .line 10
     invoke-static {p0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -596,7 +560,6 @@
 .method public static a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;Z)V
     .locals 1
 
-    .line 7
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;->SHARK_ST_UPDATE:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
     invoke-static {p0, p1, v0}, Lcom/ifengyu/intercom/node/transport/g;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;ZLcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
@@ -611,7 +574,6 @@
 
     move-result-object p0
 
-    .line 8
     invoke-static {p0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -620,7 +582,6 @@
 .method public static a(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/ifengyu/intercom/node/transport/g;->a(Ljava/lang/String;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     move-result-object p0
@@ -633,7 +594,6 @@
 
     move-result-object p0
 
-    .line 2
     invoke-static {p0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -642,7 +602,6 @@
 .method public static a(Z)V
     .locals 2
 
-    .line 3
     invoke-static {p0}, Lcom/ifengyu/intercom/node/transport/g;->a(Z)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate;
 
     move-result-object p0
@@ -655,7 +614,6 @@
 
     move-result-object p0
 
-    .line 4
     invoke-static {p0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -664,7 +622,6 @@
 .method public static b()V
     .locals 3
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;->SHARK_ST_QUERY:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelStateOperate$SHARK_STOPTION;
 
     const/4 v1, 0x0
@@ -683,7 +640,6 @@
 
     move-result-object v0
 
-    .line 4
     invoke-static {v0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -692,7 +648,6 @@
 .method public static b(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 2
 
-    .line 5
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;->SHARK_CH_INSERT:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;
 
     invoke-static {p0, v0}, Lcom/ifengyu/intercom/node/transport/g;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;
@@ -707,7 +662,6 @@
 
     move-result-object p0
 
-    .line 6
     invoke-static {p0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -716,7 +670,6 @@
 .method public static b(Z)V
     .locals 2
 
-    .line 1
     invoke-static {p0}, Lcom/ifengyu/intercom/node/transport/g;->b(Z)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     move-result-object p0
@@ -729,7 +682,6 @@
 
     move-result-object p0
 
-    .line 2
     invoke-static {p0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -738,7 +690,6 @@
 .method public static c()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/node/transport/g;->a()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     move-result-object v0
@@ -751,7 +702,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -760,7 +710,6 @@
 .method public static c(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 2
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;->SHARK_CH_MODIFY:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;
 
     invoke-static {p0, v0}, Lcom/ifengyu/intercom/node/transport/g;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;
@@ -775,7 +724,6 @@
 
     move-result-object p0
 
-    .line 4
     invoke-static {p0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -784,7 +732,6 @@
 .method public static d()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/node/transport/g;->b()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     move-result-object v0
@@ -797,7 +744,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -806,7 +752,6 @@
 .method public static d(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 2
 
-    .line 3
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;->SHARK_CH_QUERY:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;
 
     invoke-static {p0, v0}, Lcom/ifengyu/intercom/node/transport/g;->a(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;
@@ -821,7 +766,6 @@
 
     move-result-object p0
 
-    .line 4
     invoke-static {p0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -830,7 +774,6 @@
 .method public static e()V
     .locals 3
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/node/transport/g;->d()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_UserActionStatistics;
 
     move-result-object v0
@@ -843,7 +786,6 @@
 
     move-result-object v0
 
-    .line 4
     invoke-static {v0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -852,7 +794,6 @@
 .method public static e(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;)V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;->SHARK_CH_QUERY:Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;
 
     invoke-static {p0, v0}, Lcom/ifengyu/intercom/node/transport/g;->b(Lcom/ifengyu/intercom/ui/setting/SealSharkChannel;Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate$SHARK_CHOPTION;)Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_ChannelInfoOperate;
@@ -867,7 +808,6 @@
 
     move-result-object p0
 
-    .line 2
     invoke-static {p0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void
@@ -876,7 +816,6 @@
 .method public static f()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/node/transport/g;->c()Lcom/ifengyu/intercom/protos/SharkProtos$SHARK_DeviceParam;
 
     move-result-object v0
@@ -889,7 +828,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {v0}, Lcom/ifengyu/intercom/i/h0;->a(Lcom/ifengyu/intercom/node/SendDataWrap;)V
 
     return-void

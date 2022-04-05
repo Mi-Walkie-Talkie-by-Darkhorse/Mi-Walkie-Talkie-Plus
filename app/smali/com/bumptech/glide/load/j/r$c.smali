@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/j/r$c;
 .super Ljava/lang/Object;
-.source "MultiModelLoaderFactory.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -58,7 +56,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/j/q;
 
     invoke-direct {v0, p1, p2}, Lcom/bumptech/glide/load/j/q;-><init>(Ljava/util/List;Landroidx/core/d/e;)V

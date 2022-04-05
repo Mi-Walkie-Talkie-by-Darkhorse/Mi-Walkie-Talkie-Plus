@@ -1,6 +1,5 @@
 .class final Lcom/umeng/commonsdk/UMConfigure$3;
 .super Ljava/lang/Thread;
-.source "UMConfigure.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/UMConfigure$3;->a:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
@@ -35,11 +33,9 @@
 .method public run()V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-static {}, Landroid/os/Looper;->prepare()V
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/commonsdk/UMConfigure$3;->a:Landroid/content/Context;
 
     const-string v1, "\u57fa\u7840\u7ec4\u4ef6\u5e939.3.6\u7248\u672c\u4ec5\u652f\u63016.2.0\u53ca\u66f4\u9ad8\u7248\u672c\u63a8\u9001SDK\u30017.1.0\u53ca\u66f4\u9ad8\u7248\u672c\u5206\u4eabSDK\u3002"
@@ -50,10 +46,8 @@
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Landroid/widget/Toast;->show()V
 
-    .line 4
     invoke-static {}, Landroid/os/Looper;->loop()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0

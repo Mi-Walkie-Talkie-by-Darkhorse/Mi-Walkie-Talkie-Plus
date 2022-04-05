@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;
 .super Ljava/lang/Object;
-.source "Listener4Assist.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/listener/assist/ListenerModelHandler$ListenerModel;
@@ -39,10 +38,8 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->id:I
 
     return-void
@@ -61,7 +58,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->blockCurrentOffsetMap:Landroid/util/SparseArray;
 
     invoke-virtual {v0}, Landroid/util/SparseArray;->clone()Landroid/util/SparseArray;
@@ -74,7 +70,6 @@
 .method public getBlockCurrentOffset(I)J
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->blockCurrentOffsetMap:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
@@ -101,7 +96,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->blockCurrentOffsetMap:Landroid/util/SparseArray;
 
     return-object v0
@@ -110,7 +104,6 @@
 .method public getCurrentOffset()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->currentOffset:J
 
     return-wide v0
@@ -119,7 +112,6 @@
 .method public getId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->id:I
 
     return v0
@@ -128,7 +120,6 @@
 .method public getInfo()Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     return-object v0
@@ -141,22 +132,18 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
-    .line 2
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getTotalOffset()J
 
     move-result-wide v0
 
     iput-wide v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->currentOffset:J
 
-    .line 3
     new-instance v0, Landroid/util/SparseArray;
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    .line 4
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getBlockCount()I
 
     move-result v1
@@ -166,12 +153,10 @@
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 5
     invoke-virtual {p1, v2}, Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;->getBlock(I)Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;
 
     move-result-object v3
 
-    .line 6
     invoke-virtual {v3}, Lcom/liulishuo/okdownload/core/breakpoint/BlockInfo;->getCurrentOffset()J
 
     move-result-wide v3
@@ -186,7 +171,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/listener/assist/Listener4Assist$Listener4Model;->blockCurrentOffsetMap:Landroid/util/SparseArray;
 

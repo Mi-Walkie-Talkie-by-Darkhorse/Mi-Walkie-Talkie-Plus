@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/multi/GenericMultipleBarcodeReader;
 .super Ljava/lang/Object;
-.source "GenericMultipleBarcodeReader.java"
 
 # interfaces
 .implements Lcom/google/zxing/multi/MultipleBarcodeReader;
@@ -20,10 +19,8 @@
 .method public constructor <init>(Lcom/google/zxing/Reader;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/zxing/multi/GenericMultipleBarcodeReader;->delegate:Lcom/google/zxing/Reader;
 
     return-void
@@ -61,7 +58,6 @@
     :cond_0
     move-object/from16 v11, p0
 
-    .line 1
     :try_start_0
     iget-object v1, v11, Lcom/google/zxing/multi/GenericMultipleBarcodeReader;->delegate:Lcom/google/zxing/Reader;
 
@@ -73,7 +69,6 @@
     :try_end_0
     .catch Lcom/google/zxing/ReaderException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 2
     invoke-interface/range {p3 .. p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v2
@@ -91,7 +86,6 @@
 
     check-cast v3, Lcom/google/zxing/Result;
 
-    .line 3
     invoke-virtual {v3}, Lcom/google/zxing/Result;->getText()Ljava/lang/String;
 
     move-result-object v3
@@ -116,7 +110,6 @@
     :goto_0
     if-nez v2, :cond_3
 
-    .line 4
     invoke-static {v1, v8, v9}, Lcom/google/zxing/multi/GenericMultipleBarcodeReader;->translateResultPoints(Lcom/google/zxing/Result;II)Lcom/google/zxing/Result;
 
     move-result-object v2
@@ -130,7 +123,6 @@
     :cond_3
     move-object/from16 v15, p3
 
-    .line 5
     :goto_1
     invoke-virtual {v1}, Lcom/google/zxing/Result;->getResultPoints()[Lcom/google/zxing/ResultPoint;
 
@@ -138,20 +130,17 @@
 
     if-eqz v1, :cond_d
 
-    .line 6
     array-length v2, v1
 
     if-nez v2, :cond_4
 
     goto/16 :goto_4
 
-    .line 7
     :cond_4
     invoke-virtual/range {p1 .. p1}, Lcom/google/zxing/BinaryBitmap;->getWidth()I
 
     move-result v7
 
-    .line 8
     invoke-virtual/range {p1 .. p1}, Lcom/google/zxing/BinaryBitmap;->getHeight()I
 
     move-result v6
@@ -160,7 +149,6 @@
 
     int-to-float v3, v6
 
-    .line 9
     array-length v4, v1
 
     const/4 v5, 0x0
@@ -180,12 +168,10 @@
 
     if-eqz v16, :cond_8
 
-    .line 10
     invoke-virtual/range {v16 .. v16}, Lcom/google/zxing/ResultPoint;->getX()F
 
     move-result v17
 
-    .line 11
     invoke-virtual/range {v16 .. v16}, Lcom/google/zxing/ResultPoint;->getY()F
 
     move-result v16
@@ -233,7 +219,6 @@
 
     const/4 v2, 0x0
 
-    .line 12
     invoke-virtual {v0, v2, v2, v1, v6}, Lcom/google/zxing/BinaryBitmap;->crop(IIII)Lcom/google/zxing/BinaryBitmap;
 
     move-result-object v4
@@ -288,7 +273,6 @@
 
     const/4 v2, 0x0
 
-    .line 13
     invoke-virtual {v0, v2, v2, v12, v1}, Lcom/google/zxing/BinaryBitmap;->crop(IIII)Lcom/google/zxing/BinaryBitmap;
 
     move-result-object v3
@@ -326,7 +310,6 @@
 
     const/4 v2, 0x0
 
-    .line 14
     invoke-virtual {v0, v1, v2, v7, v11}, Lcom/google/zxing/BinaryBitmap;->crop(IIII)Lcom/google/zxing/BinaryBitmap;
 
     move-result-object v3
@@ -362,7 +345,6 @@
 
     const/4 v2, 0x0
 
-    .line 15
     invoke-virtual {v0, v2, v1, v12, v6}, Lcom/google/zxing/BinaryBitmap;->crop(IIII)Lcom/google/zxing/BinaryBitmap;
 
     move-result-object v2
@@ -394,7 +376,6 @@
 .method private static translateResultPoints(Lcom/google/zxing/Result;II)Lcom/google/zxing/Result;
     .locals 10
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/zxing/Result;->getResultPoints()[Lcom/google/zxing/ResultPoint;
 
     move-result-object v0
@@ -403,7 +384,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     array-length v1, v0
 
@@ -411,18 +391,15 @@
 
     const/4 v1, 0x0
 
-    .line 3
     :goto_0
     array-length v2, v0
 
     if-ge v1, v2, :cond_2
 
-    .line 4
     aget-object v2, v0, v1
 
     if-eqz v2, :cond_1
 
-    .line 5
     new-instance v3, Lcom/google/zxing/ResultPoint;
 
     invoke-virtual {v2}, Lcom/google/zxing/ResultPoint;->getX()F
@@ -450,7 +427,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_2
     new-instance p1, Lcom/google/zxing/Result;
 
@@ -458,22 +434,18 @@
 
     move-result-object v3
 
-    .line 7
     invoke-virtual {p0}, Lcom/google/zxing/Result;->getRawBytes()[B
 
     move-result-object v4
 
-    .line 8
     invoke-virtual {p0}, Lcom/google/zxing/Result;->getNumBits()I
 
     move-result v5
 
-    .line 9
     invoke-virtual {p0}, Lcom/google/zxing/Result;->getBarcodeFormat()Lcom/google/zxing/BarcodeFormat;
 
     move-result-object v7
 
-    .line 10
     invoke-virtual {p0}, Lcom/google/zxing/Result;->getTimestamp()J
 
     move-result-wide v8
@@ -482,7 +454,6 @@
 
     invoke-direct/range {v2 .. v9}, Lcom/google/zxing/Result;-><init>(Ljava/lang/String;[BI[Lcom/google/zxing/ResultPoint;Lcom/google/zxing/BarcodeFormat;J)V
 
-    .line 11
     invoke-virtual {p0}, Lcom/google/zxing/Result;->getResultMetadata()Ljava/util/Map;
 
     move-result-object p0
@@ -504,7 +475,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, p1, v0}, Lcom/google/zxing/multi/GenericMultipleBarcodeReader;->decodeMultiple(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;)[Lcom/google/zxing/Result;
 
     move-result-object p1
@@ -531,7 +501,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v7, Ljava/util/ArrayList;
 
     invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
@@ -550,17 +519,14 @@
 
     move-object v3, v7
 
-    .line 3
     invoke-direct/range {v0 .. v6}, Lcom/google/zxing/multi/GenericMultipleBarcodeReader;->doDecodeMultiple(Lcom/google/zxing/BinaryBitmap;Ljava/util/Map;Ljava/util/List;III)V
 
-    .line 4
     invoke-interface {v7}, Ljava/util/List;->isEmpty()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 5
     invoke-interface {v7}, Ljava/util/List;->size()I
 
     move-result p1
@@ -575,7 +541,6 @@
 
     return-object p1
 
-    .line 6
     :cond_0
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 

@@ -1,6 +1,5 @@
 .class interface abstract Lio/reactivex/internal/operators/observable/ObservableTimeout$TimeoutSelectorSupport;
 .super Ljava/lang/Object;
-.source "ObservableTimeout.java"
 
 # interfaces
 .implements Lio/reactivex/internal/operators/observable/ObservableTimeoutTimed$TimeoutSupport;

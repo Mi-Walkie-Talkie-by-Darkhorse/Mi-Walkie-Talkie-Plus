@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/appcompat/widget/SearchView$m;
 .super Ljava/lang/Object;
-.source "SearchView.java"
 
 
 # annotations

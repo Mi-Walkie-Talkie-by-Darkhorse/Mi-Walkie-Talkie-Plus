@@ -1,6 +1,5 @@
 .class Lcom/tencent/connect/auth/AuthAgent$1;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/tencent/connect/auth/AuthAgent;Ljava/lang/String;Lcom/tencent/tauth/IUiListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/connect/auth/AuthAgent$1;->c:Lcom/tencent/connect/auth/AuthAgent;
 
     iput-object p2, p0, Lcom/tencent/connect/auth/AuthAgent$1;->a:Ljava/lang/String;
@@ -46,7 +44,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     sget-object v0, Lcom/tencent/connect/auth/AuthAgent;->SECURE_LIB_FILE_NAME:Ljava/lang/String;
 
     sget-object v1, Lcom/tencent/connect/auth/AuthAgent;->SECURE_LIB_NAME:Ljava/lang/String;
@@ -55,7 +52,6 @@
 
     invoke-static {v0, v1, v2}, Lcom/tencent/open/utils/g;->a(Ljava/lang/String;Ljava/lang/String;I)Z
 
-    .line 2
     iget-object v0, p0, Lcom/tencent/connect/auth/AuthAgent$1;->c:Lcom/tencent/connect/auth/AuthAgent;
 
     invoke-static {v0}, Lcom/tencent/connect/auth/AuthAgent;->e(Lcom/tencent/connect/auth/AuthAgent;)Ljava/lang/ref/WeakReference;
@@ -66,7 +62,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/tencent/connect/auth/AuthAgent$1;->c:Lcom/tencent/connect/auth/AuthAgent;
 
@@ -82,7 +77,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     new-instance v1, Lcom/tencent/connect/auth/AuthAgent$1$1;
 
     invoke-direct {v1, p0, v0}, Lcom/tencent/connect/auth/AuthAgent$1$1;-><init>(Lcom/tencent/connect/auth/AuthAgent$1;Landroid/app/Activity;)V

@@ -1,6 +1,5 @@
 .class public Lpl/droidsonroids/gif/GifTextView;
 .super Landroid/widget/TextView;
-.source "GifTextView.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -20,12 +18,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x0
 
-    .line 3
     invoke-direct {p0, p2, p1, p1}, Lpl/droidsonroids/gif/GifTextView;->a(Landroid/util/AttributeSet;II)V
 
     return-void
@@ -34,12 +30,10 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     const/4 p1, 0x0
 
-    .line 5
     invoke-direct {p0, p2, p3, p1}, Lpl/droidsonroids/gif/GifTextView;->a(Landroid/util/AttributeSet;II)V
 
     return-void
@@ -54,18 +48,15 @@
 
     return-object p1
 
-    .line 21
     :cond_0
     invoke-virtual {p0}, Landroid/widget/TextView;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    .line 22
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getResourceTypeName(I)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 23
     invoke-virtual {p0}, Landroid/widget/TextView;->isInEditMode()Z
 
     move-result v2
@@ -80,7 +71,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 24
     :try_start_0
     new-instance v1, Lpl/droidsonroids/gif/c;
 
@@ -94,7 +84,6 @@
     :catch_0
     nop
 
-    .line 25
     :cond_1
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -102,7 +91,6 @@
 
     if-lt v1, v2, :cond_2
 
-    .line 26
     invoke-virtual {p0}, Landroid/widget/TextView;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -117,7 +105,6 @@
 
     return-object p1
 
-    .line 27
     :cond_2
     invoke-virtual {v0, p1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -129,7 +116,6 @@
 .method private a()V
     .locals 6
 
-    .line 15
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextView;->a:Lpl/droidsonroids/gif/e$b;
 
     iget v0, v0, Lpl/droidsonroids/gif/e$b;->b:I
@@ -138,7 +124,6 @@
 
     return-void
 
-    .line 16
     :cond_0
     invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
@@ -155,7 +140,6 @@
 
     aget-object v4, v0, v3
 
-    .line 17
     iget-object v5, p0, Lpl/droidsonroids/gif/GifTextView;->a:Lpl/droidsonroids/gif/e$b;
 
     iget v5, v5, Lpl/droidsonroids/gif/e$b;->b:I
@@ -166,7 +150,6 @@
 
     goto :goto_0
 
-    .line 18
     :cond_1
     invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawablesRelative()[Landroid/graphics/drawable/Drawable;
 
@@ -179,7 +162,6 @@
 
     aget-object v3, v0, v2
 
-    .line 19
     iget-object v4, p0, Lpl/droidsonroids/gif/GifTextView;->a:Lpl/droidsonroids/gif/e$b;
 
     iget v4, v4, Lpl/droidsonroids/gif/e$b;->b:I
@@ -190,7 +172,6 @@
 
     goto :goto_1
 
-    .line 20
     :cond_2
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextView;->a:Lpl/droidsonroids/gif/e$b;
 
@@ -216,7 +197,6 @@
 
     const-string v2, "drawableLeft"
 
-    .line 3
     invoke-interface {p1, v1, v2, v0}, Landroid/util/AttributeSet;->getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v2
@@ -227,7 +207,6 @@
 
     const-string v3, "drawableTop"
 
-    .line 4
     invoke-interface {p1, v1, v3, v0}, Landroid/util/AttributeSet;->getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v3
@@ -238,7 +217,6 @@
 
     const-string v4, "drawableRight"
 
-    .line 5
     invoke-interface {p1, v1, v4, v0}, Landroid/util/AttributeSet;->getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v4
@@ -249,7 +227,6 @@
 
     const-string v5, "drawableBottom"
 
-    .line 6
     invoke-interface {p1, v1, v5, v0}, Landroid/util/AttributeSet;->getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v5
@@ -260,7 +237,6 @@
 
     const-string v6, "drawableStart"
 
-    .line 7
     invoke-interface {p1, v1, v6, v0}, Landroid/util/AttributeSet;->getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v6
@@ -271,7 +247,6 @@
 
     const-string v7, "drawableEnd"
 
-    .line 8
     invoke-interface {p1, v1, v7, v0}, Landroid/util/AttributeSet;->getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v7
@@ -280,7 +255,6 @@
 
     move-result-object v7
 
-    .line 9
     invoke-virtual {p0}, Landroid/widget/TextView;->getLayoutDirection()I
 
     move-result v8
@@ -317,14 +291,12 @@
     :cond_3
     move-object v2, v4
 
-    .line 10
     :cond_4
     :goto_2
     invoke-virtual {p0, v2, v3, v7, v5}, Landroid/widget/TextView;->setCompoundDrawablesRelativeWithIntrinsicBounds(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     const-string v2, "background"
 
-    .line 11
     invoke-interface {p1, v1, v2, v0}, Landroid/util/AttributeSet;->getAttributeResourceValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v0
@@ -335,17 +307,14 @@
 
     invoke-virtual {p0, v0}, Landroid/widget/TextView;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
-    .line 12
     new-instance v0, Lpl/droidsonroids/gif/e$b;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lpl/droidsonroids/gif/e$b;-><init>(Landroid/view/View;Landroid/util/AttributeSet;II)V
 
     iput-object v0, p0, Lpl/droidsonroids/gif/GifTextView;->a:Lpl/droidsonroids/gif/e$b;
 
-    .line 13
     invoke-direct {p0}, Lpl/droidsonroids/gif/GifTextView;->a()V
 
-    .line 14
     :cond_5
     new-instance p1, Lpl/droidsonroids/gif/e$b;
 
@@ -359,7 +328,6 @@
 .method private static a([Landroid/graphics/drawable/Drawable;Z)V
     .locals 4
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -373,7 +341,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 2
     invoke-virtual {v3, p1, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
     :cond_0
@@ -388,14 +355,12 @@
 .method private setCompoundDrawablesVisible(Z)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     invoke-static {v0, p1}, Lpl/droidsonroids/gif/GifTextView;->a([Landroid/graphics/drawable/Drawable;Z)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawablesRelative()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -410,12 +375,10 @@
 .method protected onAttachedToWindow()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/widget/TextView;->onAttachedToWindow()V
 
     const/4 v0, 0x1
 
-    .line 2
     invoke-direct {p0, v0}, Lpl/droidsonroids/gif/GifTextView;->setCompoundDrawablesVisible(Z)V
 
     return-void
@@ -424,12 +387,10 @@
 .method protected onDetachedFromWindow()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroid/widget/TextView;->onDetachedFromWindow()V
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-direct {p0, v0}, Lpl/droidsonroids/gif/GifTextView;->setCompoundDrawablesVisible(Z)V
 
     return-void
@@ -438,80 +399,67 @@
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 4
 
-    .line 1
     instance-of v0, p1, Lpl/droidsonroids/gif/GifViewSavedState;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroid/widget/TextView;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     return-void
 
-    .line 3
     :cond_0
     check-cast p1, Lpl/droidsonroids/gif/GifViewSavedState;
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/View$BaseSavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Landroid/widget/TextView;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
-    .line 5
     invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
     const/4 v1, 0x0
 
-    .line 6
     aget-object v2, v0, v1
 
     invoke-virtual {p1, v2, v1}, Lpl/droidsonroids/gif/GifViewSavedState;->a(Landroid/graphics/drawable/Drawable;I)V
 
     const/4 v2, 0x1
 
-    .line 7
     aget-object v3, v0, v2
 
     invoke-virtual {p1, v3, v2}, Lpl/droidsonroids/gif/GifViewSavedState;->a(Landroid/graphics/drawable/Drawable;I)V
 
     const/4 v2, 0x2
 
-    .line 8
     aget-object v3, v0, v2
 
     invoke-virtual {p1, v3, v2}, Lpl/droidsonroids/gif/GifViewSavedState;->a(Landroid/graphics/drawable/Drawable;I)V
 
     const/4 v3, 0x3
 
-    .line 9
     aget-object v0, v0, v3
 
     invoke-virtual {p1, v0, v3}, Lpl/droidsonroids/gif/GifViewSavedState;->a(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 10
     invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawablesRelative()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
-    .line 11
     aget-object v1, v0, v1
 
     const/4 v3, 0x4
 
     invoke-virtual {p1, v1, v3}, Lpl/droidsonroids/gif/GifViewSavedState;->a(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 12
     aget-object v0, v0, v2
 
     const/4 v1, 0x5
 
     invoke-virtual {p1, v0, v1}, Lpl/droidsonroids/gif/GifViewSavedState;->a(Landroid/graphics/drawable/Drawable;I)V
 
-    .line 13
     invoke-virtual {p0}, Landroid/widget/TextView;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -530,33 +478,28 @@
 
     new-array v0, v0, [Landroid/graphics/drawable/Drawable;
 
-    .line 1
     iget-object v1, p0, Lpl/droidsonroids/gif/GifTextView;->a:Lpl/droidsonroids/gif/e$b;
 
     iget-boolean v1, v1, Lpl/droidsonroids/gif/e$b;->a:Z
 
     if-eqz v1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    .line 3
     array-length v2, v1
 
     const/4 v3, 0x0
 
     invoke-static {v1, v3, v0, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 4
     invoke-virtual {p0}, Landroid/widget/TextView;->getCompoundDrawablesRelative()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
     const/4 v2, 0x4
 
-    .line 5
     aget-object v3, v1, v3
 
     aput-object v3, v0, v2
@@ -565,21 +508,18 @@
 
     const/4 v3, 0x2
 
-    .line 6
     aget-object v1, v1, v3
 
     aput-object v1, v0, v2
 
     const/4 v1, 0x6
 
-    .line 7
     invoke-virtual {p0}, Landroid/widget/TextView;->getBackground()Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
     aput-object v2, v0, v1
 
-    .line 8
     :cond_0
     new-instance v1, Lpl/droidsonroids/gif/GifViewSavedState;
 
@@ -595,7 +535,6 @@
 .method public setBackgroundResource(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lpl/droidsonroids/gif/GifTextView;->a(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -608,7 +547,6 @@
 .method public setCompoundDrawablesRelativeWithIntrinsicBounds(IIII)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lpl/droidsonroids/gif/GifTextView;->a(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -633,7 +571,6 @@
 .method public setCompoundDrawablesWithIntrinsicBounds(IIII)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lpl/droidsonroids/gif/GifTextView;->a(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -658,7 +595,6 @@
 .method public setFreezesAnimation(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextView;->a:Lpl/droidsonroids/gif/e$b;
 
     iput-boolean p1, v0, Lpl/droidsonroids/gif/e$b;->a:Z

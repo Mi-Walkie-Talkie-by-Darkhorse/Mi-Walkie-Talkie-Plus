@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/protos/LiteProtos$DevRequestOrBuilder;
 .super Ljava/lang/Object;
-.source "LiteProtos.java"
 
 # interfaces
 .implements Lcom/google/protobuf/MessageOrBuilder;

@@ -1,6 +1,5 @@
 .class public Lpl/droidsonroids/gif/GifTextureView;
 .super Landroid/view/TextureView;
-.source "GifTextureView.java"
 
 
 # annotations
@@ -38,7 +37,6 @@
 
     new-array v0, v0, [Landroid/widget/ImageView$ScaleType;
 
-    .line 1
     sget-object v1, Landroid/widget/ImageView$ScaleType;->MATRIX:Landroid/widget/ImageView$ScaleType;
 
     const/4 v2, 0x0
@@ -95,15 +93,12 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/view/TextureView;-><init>(Landroid/content/Context;)V
 
-    .line 2
     sget-object p1, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
     iput-object p1, p0, Lpl/droidsonroids/gif/GifTextureView;->a:Landroid/widget/ImageView$ScaleType;
 
-    .line 3
     new-instance p1, Landroid/graphics/Matrix;
 
     invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
@@ -112,14 +107,12 @@
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 4
     iput p1, p0, Lpl/droidsonroids/gif/GifTextureView;->e:F
 
     const/4 p1, 0x0
 
     const/4 v0, 0x0
 
-    .line 5
     invoke-direct {p0, v0, p1, p1}, Lpl/droidsonroids/gif/GifTextureView;->a(Landroid/util/AttributeSet;II)V
 
     return-void
@@ -128,15 +121,12 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 6
     invoke-direct {p0, p1, p2}, Landroid/view/TextureView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 7
     sget-object p1, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
     iput-object p1, p0, Lpl/droidsonroids/gif/GifTextureView;->a:Landroid/widget/ImageView$ScaleType;
 
-    .line 8
     new-instance p1, Landroid/graphics/Matrix;
 
     invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
@@ -145,12 +135,10 @@
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 9
     iput p1, p0, Lpl/droidsonroids/gif/GifTextureView;->e:F
 
     const/4 p1, 0x0
 
-    .line 10
     invoke-direct {p0, p2, p1, p1}, Lpl/droidsonroids/gif/GifTextureView;->a(Landroid/util/AttributeSet;II)V
 
     return-void
@@ -159,15 +147,12 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 11
     invoke-direct {p0, p1, p2, p3}, Landroid/view/TextureView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 12
     sget-object p1, Landroid/widget/ImageView$ScaleType;->FIT_CENTER:Landroid/widget/ImageView$ScaleType;
 
     iput-object p1, p0, Lpl/droidsonroids/gif/GifTextureView;->a:Landroid/widget/ImageView$ScaleType;
 
-    .line 13
     new-instance p1, Landroid/graphics/Matrix;
 
     invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
@@ -176,12 +161,10 @@
 
     const/high16 p1, 0x3f800000    # 1.0f
 
-    .line 14
     iput p1, p0, Lpl/droidsonroids/gif/GifTextureView;->e:F
 
     const/4 p1, 0x0
 
-    .line 15
     invoke-direct {p0, p2, p3, p1}, Lpl/droidsonroids/gif/GifTextureView;->a(Landroid/util/AttributeSet;II)V
 
     return-void
@@ -190,12 +173,10 @@
 .method private static a(Landroid/content/res/TypedArray;)Lpl/droidsonroids/gif/f;
     .locals 3
 
-    .line 18
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 19
     sget v1, Lpl/droidsonroids/gif/R$styleable;->GifTextureView_gifSource:I
 
     invoke-virtual {p0, v1, v0}, Landroid/content/res/TypedArray;->getValue(ILandroid/util/TypedValue;)Z
@@ -208,13 +189,11 @@
 
     return-object p0
 
-    .line 20
     :cond_0
     iget v1, v0, Landroid/util/TypedValue;->resourceId:I
 
     if-eqz v1, :cond_3
 
-    .line 21
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -225,7 +204,6 @@
 
     move-result-object v1
 
-    .line 22
     sget-object v2, Lpl/droidsonroids/gif/e;->a:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -234,7 +212,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 23
     new-instance v1, Lpl/droidsonroids/gif/f$c;
 
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->getResources()Landroid/content/res/Resources;
@@ -250,7 +227,6 @@
     :cond_1
     const-string v2, "string"
 
-    .line 24
     invoke-virtual {v2, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v2
@@ -259,7 +235,6 @@
 
     goto :goto_0
 
-    .line 25
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -285,7 +260,6 @@
 
     throw p0
 
-    .line 26
     :cond_3
     :goto_0
     new-instance v1, Lpl/droidsonroids/gif/f$b;
@@ -312,7 +286,6 @@
 .method static synthetic a(Lpl/droidsonroids/gif/GifTextureView;)Lpl/droidsonroids/gif/f;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lpl/droidsonroids/gif/GifTextureView;->c:Lpl/droidsonroids/gif/f;
 
     return-object p0
@@ -331,26 +304,22 @@
 
     const-string v3, "scaleType"
 
-    .line 4
     invoke-interface {p1, v2, v3, v1}, Landroid/util/AttributeSet;->getAttributeIntValue(Ljava/lang/String;Ljava/lang/String;I)I
 
     move-result v1
 
     if-ltz v1, :cond_0
 
-    .line 5
     sget-object v2, Lpl/droidsonroids/gif/GifTextureView;->g:[Landroid/widget/ImageView$ScaleType;
 
     array-length v3, v2
 
     if-ge v1, v3, :cond_0
 
-    .line 6
     aget-object v1, v2, v1
 
     iput-object v1, p0, Lpl/droidsonroids/gif/GifTextureView;->a:Landroid/widget/ImageView$ScaleType;
 
-    .line 7
     :cond_0
     invoke-virtual {p0}, Landroid/view/TextureView;->getContext()Landroid/content/Context;
 
@@ -362,14 +331,12 @@
 
     move-result-object v1
 
-    .line 8
     invoke-static {v1}, Lpl/droidsonroids/gif/GifTextureView;->a(Landroid/content/res/TypedArray;)Lpl/droidsonroids/gif/f;
 
     move-result-object v2
 
     iput-object v2, p0, Lpl/droidsonroids/gif/GifTextureView;->c:Lpl/droidsonroids/gif/f;
 
-    .line 9
     sget v2, Lpl/droidsonroids/gif/R$styleable;->GifTextureView_isOpaque:I
 
     invoke-virtual {v1, v2, v0}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
@@ -378,10 +345,8 @@
 
     invoke-super {p0, v0}, Landroid/view/TextureView;->setOpaque(Z)V
 
-    .line 10
     invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
 
-    .line 11
     new-instance v0, Lpl/droidsonroids/gif/e$b;
 
     invoke-direct {v0, p0, p1, p2, p3}, Lpl/droidsonroids/gif/e$b;-><init>(Landroid/view/View;Landroid/util/AttributeSet;II)V
@@ -390,18 +355,15 @@
 
     goto :goto_0
 
-    .line 12
     :cond_1
     invoke-super {p0, v0}, Landroid/view/TextureView;->setOpaque(Z)V
 
-    .line 13
     new-instance p1, Lpl/droidsonroids/gif/e$b;
 
     invoke-direct {p1}, Lpl/droidsonroids/gif/e$b;-><init>()V
 
     iput-object p1, p0, Lpl/droidsonroids/gif/GifTextureView;->f:Lpl/droidsonroids/gif/e$b;
 
-    .line 14
     :goto_0
     invoke-virtual {p0}, Landroid/view/TextureView;->isInEditMode()Z
 
@@ -409,19 +371,16 @@
 
     if-nez p1, :cond_2
 
-    .line 15
     new-instance p1, Lpl/droidsonroids/gif/GifTextureView$c;
 
     invoke-direct {p1, p0}, Lpl/droidsonroids/gif/GifTextureView$c;-><init>(Lpl/droidsonroids/gif/GifTextureView;)V
 
     iput-object p1, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
-    .line 16
     iget-object p2, p0, Lpl/droidsonroids/gif/GifTextureView;->c:Lpl/droidsonroids/gif/f;
 
     if-eqz p2, :cond_2
 
-    .line 17
     invoke-virtual {p1}, Ljava/lang/Thread;->start()V
 
     :cond_2
@@ -431,26 +390,22 @@
 .method private a(Lpl/droidsonroids/gif/GifInfoHandle;)V
     .locals 10
 
-    .line 27
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 28
     invoke-virtual {p0}, Landroid/view/TextureView;->getWidth()I
 
     move-result v1
 
     int-to-float v1, v1
 
-    .line 29
     invoke-virtual {p0}, Landroid/view/TextureView;->getHeight()I
 
     move-result v2
 
     int-to-float v2, v2
 
-    .line 30
     invoke-virtual {p1}, Lpl/droidsonroids/gif/GifInfoHandle;->j()I
 
     move-result v3
@@ -459,7 +414,6 @@
 
     div-float/2addr v3, v1
 
-    .line 31
     invoke-virtual {p1}, Lpl/droidsonroids/gif/GifInfoHandle;->e()I
 
     move-result v4
@@ -468,7 +422,6 @@
 
     div-float/2addr v4, v2
 
-    .line 32
     new-instance v5, Landroid/graphics/RectF;
 
     invoke-virtual {p1}, Lpl/droidsonroids/gif/GifInfoHandle;->j()I
@@ -487,12 +440,10 @@
 
     invoke-direct {v5, v8, v8, v6, v7}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    .line 33
     new-instance v6, Landroid/graphics/RectF;
 
     invoke-direct {v6, v8, v8, v1, v2}, Landroid/graphics/RectF;-><init>(FFFF)V
 
-    .line 34
     sget-object v7, Lpl/droidsonroids/gif/GifTextureView$a;->a:[I
 
     iget-object v8, p0, Lpl/droidsonroids/gif/GifTextureView;->a:Landroid/widget/ImageView$ScaleType;
@@ -511,13 +462,11 @@
 
     goto :goto_1
 
-    .line 35
     :pswitch_0
     iget-object p1, p0, Lpl/droidsonroids/gif/GifTextureView;->b:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
-    .line 36
     invoke-virtual {v0, v3, v4}, Landroid/graphics/Matrix;->preScale(FF)Z
 
     goto :goto_1
@@ -525,40 +474,33 @@
     :pswitch_1
     return-void
 
-    .line 37
     :pswitch_2
     sget-object p1, Landroid/graphics/Matrix$ScaleToFit;->START:Landroid/graphics/Matrix$ScaleToFit;
 
     invoke-virtual {v0, v5, v6, p1}, Landroid/graphics/Matrix;->setRectToRect(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z
 
-    .line 38
     invoke-virtual {v0, v3, v4}, Landroid/graphics/Matrix;->preScale(FF)Z
 
     goto :goto_1
 
-    .line 39
     :pswitch_3
     sget-object p1, Landroid/graphics/Matrix$ScaleToFit;->END:Landroid/graphics/Matrix$ScaleToFit;
 
     invoke-virtual {v0, v5, v6, p1}, Landroid/graphics/Matrix;->setRectToRect(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z
 
-    .line 40
     invoke-virtual {v0, v3, v4}, Landroid/graphics/Matrix;->preScale(FF)Z
 
     goto :goto_1
 
-    .line 41
     :pswitch_4
     sget-object p1, Landroid/graphics/Matrix$ScaleToFit;->CENTER:Landroid/graphics/Matrix$ScaleToFit;
 
     invoke-virtual {v0, v5, v6, p1}, Landroid/graphics/Matrix;->setRectToRect(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z
 
-    .line 42
     invoke-virtual {v0, v3, v4}, Landroid/graphics/Matrix;->preScale(FF)Z
 
     goto :goto_1
 
-    .line 43
     :pswitch_5
     invoke-virtual {p1}, Lpl/droidsonroids/gif/GifInfoHandle;->j()I
 
@@ -587,7 +529,6 @@
 
     div-float/2addr v8, v4
 
-    .line 44
     invoke-static {p1, v8}, Ljava/lang/Math;->min(FF)F
 
     move-result v8
@@ -601,12 +542,10 @@
 
     div-float/2addr v2, v9
 
-    .line 45
     invoke-virtual {v0, v3, v8, v1, v2}, Landroid/graphics/Matrix;->setScale(FFFF)V
 
     goto :goto_1
 
-    .line 46
     :pswitch_6
     invoke-static {v3, v4}, Ljava/lang/Math;->min(FF)F
 
@@ -622,7 +561,6 @@
 
     div-float/2addr v2, v9
 
-    .line 47
     invoke-virtual {v0, v3, v8, v1, v2}, Landroid/graphics/Matrix;->setScale(FFFF)V
 
     goto :goto_1
@@ -632,10 +570,8 @@
 
     div-float/2addr v2, v9
 
-    .line 48
     invoke-virtual {v0, v3, v4, v1, v2}, Landroid/graphics/Matrix;->setScale(FFFF)V
 
-    .line 49
     :goto_1
     invoke-super {p0, v0}, Landroid/view/TextureView;->setTransform(Landroid/graphics/Matrix;)V
 
@@ -659,7 +595,6 @@
 .method static synthetic a(Lpl/droidsonroids/gif/GifTextureView;Landroid/view/TextureView$SurfaceTextureListener;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lpl/droidsonroids/gif/GifTextureView;->setSuperSurfaceTextureListener(Landroid/view/TextureView$SurfaceTextureListener;)V
 
     return-void
@@ -668,7 +603,6 @@
 .method static synthetic a(Lpl/droidsonroids/gif/GifTextureView;Lpl/droidsonroids/gif/GifInfoHandle;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1}, Lpl/droidsonroids/gif/GifTextureView;->a(Lpl/droidsonroids/gif/GifInfoHandle;)V
 
     return-void
@@ -677,7 +611,6 @@
 .method static synthetic b(Lpl/droidsonroids/gif/GifTextureView;)Lpl/droidsonroids/gif/e$b;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lpl/droidsonroids/gif/GifTextureView;->f:Lpl/droidsonroids/gif/e$b;
 
     return-object p0
@@ -686,7 +619,6 @@
 .method static synthetic c(Lpl/droidsonroids/gif/GifTextureView;)F
     .locals 0
 
-    .line 1
     iget p0, p0, Lpl/droidsonroids/gif/GifTextureView;->e:F
 
     return p0
@@ -695,7 +627,6 @@
 .method private setSuperSurfaceTextureListener(Landroid/view/TextureView$SurfaceTextureListener;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/TextureView;->setSurfaceTextureListener(Landroid/view/TextureView$SurfaceTextureListener;)V
 
     return-void
@@ -708,7 +639,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
     invoke-static {v0}, Lpl/droidsonroids/gif/GifTextureView$c;->b(Lpl/droidsonroids/gif/GifTextureView$c;)Ljava/io/IOException;
@@ -717,7 +647,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
     invoke-static {v0}, Lpl/droidsonroids/gif/GifTextureView$c;->b(Lpl/droidsonroids/gif/GifTextureView$c;)Ljava/io/IOException;
@@ -726,7 +655,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
@@ -748,7 +676,6 @@
 .method public getScaleType()Landroid/widget/ImageView$ScaleType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->a:Landroid/widget/ImageView$ScaleType;
 
     return-object v0
@@ -767,12 +694,10 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     new-instance p1, Landroid/graphics/Matrix;
 
     invoke-direct {p1}, Landroid/graphics/Matrix;-><init>()V
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->b:Landroid/graphics/Matrix;
 
@@ -784,24 +709,20 @@
 .method protected onDetachedFromWindow()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, p0, v1}, Lpl/droidsonroids/gif/GifTextureView$c;->a(Lpl/droidsonroids/gif/GifTextureView;Lpl/droidsonroids/gif/GifTextureView$b;)V
 
-    .line 2
     invoke-super {p0}, Landroid/view/TextureView;->onDetachedFromWindow()V
 
-    .line 3
     invoke-virtual {p0}, Landroid/view/TextureView;->getSurfaceTexture()Landroid/graphics/SurfaceTexture;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Landroid/graphics/SurfaceTexture;->release()V
 
     :cond_0
@@ -811,28 +732,23 @@
 .method public onRestoreInstanceState(Landroid/os/Parcelable;)V
     .locals 2
 
-    .line 1
     instance-of v0, p1, Lpl/droidsonroids/gif/GifViewSavedState;
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroid/view/TextureView;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     return-void
 
-    .line 3
     :cond_0
     check-cast p1, Lpl/droidsonroids/gif/GifViewSavedState;
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/View$BaseSavedState;->getSuperState()Landroid/os/Parcelable;
 
     move-result-object v0
 
     invoke-super {p0, v0}, Landroid/view/TextureView;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
-    .line 5
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
     iget-object p1, p1, Lpl/droidsonroids/gif/GifViewSavedState;->a:[[J
@@ -849,7 +765,6 @@
 .method public onSaveInstanceState()Landroid/os/Parcelable;
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
     invoke-static {v0}, Lpl/droidsonroids/gif/GifTextureView$c;->a(Lpl/droidsonroids/gif/GifTextureView$c;)Lpl/droidsonroids/gif/GifInfoHandle;
@@ -862,7 +777,6 @@
 
     iput-object v1, v0, Lpl/droidsonroids/gif/GifTextureView$c;->d:[J
 
-    .line 2
     new-instance v0, Lpl/droidsonroids/gif/GifViewSavedState;
 
     invoke-super {p0}, Landroid/view/TextureView;->onSaveInstanceState()Landroid/os/Parcelable;
@@ -893,7 +807,6 @@
 .method public setFreezesAnimation(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->f:Lpl/droidsonroids/gif/e$b;
 
     iput-boolean p1, v0, Lpl/droidsonroids/gif/e$b;->a:Z
@@ -904,7 +817,6 @@
 .method public setImageMatrix(Landroid/graphics/Matrix;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lpl/droidsonroids/gif/GifTextureView;->setTransform(Landroid/graphics/Matrix;)V
 
     return-void
@@ -921,13 +833,11 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0, p1, v0}, Lpl/droidsonroids/gif/GifTextureView;->setInputSource(Lpl/droidsonroids/gif/f;Lpl/droidsonroids/gif/GifTextureView$b;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     monitor-exit p0
 
     return-void
@@ -953,7 +863,6 @@
 
     monitor-enter p0
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
@@ -961,7 +870,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     :try_start_1
     iget-object p2, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
@@ -975,15 +883,12 @@
     :catch_0
     move-exception p2
 
-    .line 5
     :try_start_2
     invoke-virtual {p2}, Ljava/lang/InterruptedException;->printStackTrace()V
 
-    .line 6
     :goto_0
     iput-object p1, p0, Lpl/droidsonroids/gif/GifTextureView;->c:Lpl/droidsonroids/gif/f;
 
-    .line 7
     new-instance p2, Lpl/droidsonroids/gif/GifTextureView$c;
 
     invoke-direct {p2, p0}, Lpl/droidsonroids/gif/GifTextureView$c;-><init>(Lpl/droidsonroids/gif/GifTextureView;)V
@@ -992,12 +897,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 8
     invoke-virtual {p2}, Ljava/lang/Thread;->start()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 9
     :cond_0
     monitor-exit p0
 
@@ -1014,17 +917,14 @@
 .method public setOpaque(Z)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/TextureView;->isOpaque()Z
 
     move-result v0
 
     if-eq p1, v0, :cond_0
 
-    .line 2
     invoke-super {p0, p1}, Landroid/view/TextureView;->setOpaque(Z)V
 
-    .line 3
     iget-object p1, p0, Lpl/droidsonroids/gif/GifTextureView;->c:Lpl/droidsonroids/gif/f;
 
     invoke-virtual {p0, p1}, Lpl/droidsonroids/gif/GifTextureView;->setInputSource(Lpl/droidsonroids/gif/f;)V
@@ -1040,10 +940,8 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Lpl/droidsonroids/gif/GifTextureView;->a:Landroid/widget/ImageView$ScaleType;
 
-    .line 2
     iget-object p1, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
     invoke-static {p1}, Lpl/droidsonroids/gif/GifTextureView$c;->a(Lpl/droidsonroids/gif/GifTextureView$c;)Lpl/droidsonroids/gif/GifInfoHandle;
@@ -1064,10 +962,8 @@
         .end annotation
     .end param
 
-    .line 1
     iput p1, p0, Lpl/droidsonroids/gif/GifTextureView;->e:F
 
-    .line 2
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
     invoke-static {v0}, Lpl/droidsonroids/gif/GifTextureView$c;->a(Lpl/droidsonroids/gif/GifTextureView$c;)Lpl/droidsonroids/gif/GifInfoHandle;
@@ -1082,7 +978,6 @@
 .method public setSurfaceTexture(Landroid/graphics/SurfaceTexture;)V
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "Changing SurfaceTexture is not supported"
@@ -1095,7 +990,6 @@
 .method public setSurfaceTextureListener(Landroid/view/TextureView$SurfaceTextureListener;)V
     .locals 1
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     const-string v0, "Changing SurfaceTextureListener is not supported"
@@ -1108,12 +1002,10 @@
 .method public setTransform(Landroid/graphics/Matrix;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lpl/droidsonroids/gif/GifTextureView;->b:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, p1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
-    .line 2
     iget-object p1, p0, Lpl/droidsonroids/gif/GifTextureView;->d:Lpl/droidsonroids/gif/GifTextureView$c;
 
     invoke-static {p1}, Lpl/droidsonroids/gif/GifTextureView$c;->a(Lpl/droidsonroids/gif/GifTextureView$c;)Lpl/droidsonroids/gif/GifInfoHandle;

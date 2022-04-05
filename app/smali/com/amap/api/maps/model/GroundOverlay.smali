@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/maps/model/GroundOverlay;
 .super Ljava/lang/Object;
-.source "GroundOverlay.java"
 
 
 # instance fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
     return-void
@@ -29,14 +26,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     instance-of v1, p1, Lcom/amap/api/maps/model/GroundOverlay;
 
     if-nez v1, :cond_0
 
     goto :goto_0
 
-    .line 2
     :cond_0
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
@@ -56,7 +51,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_1
@@ -67,7 +61,6 @@
 .method public final getBearing()F
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -82,7 +75,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -93,7 +85,6 @@
 .method public final getBounds()Lcom/amap/api/maps/model/LatLngBounds;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -108,7 +99,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -119,7 +109,6 @@
 .method public final getHeight()F
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -134,7 +123,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -145,7 +133,6 @@
 .method public final getId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -160,7 +147,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -171,7 +157,6 @@
 .method public final getPosition()Lcom/amap/api/maps/model/LatLng;
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -186,7 +171,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -197,7 +181,6 @@
 .method public final getTransparency()F
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -212,7 +195,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -223,7 +205,6 @@
 .method public final getWidth()F
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -238,7 +219,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -249,7 +229,6 @@
 .method public final getZIndex()F
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -264,7 +243,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -275,7 +253,6 @@
 .method public final hashCode()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
@@ -288,7 +265,6 @@
 .method public final isVisible()Z
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -303,7 +279,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -314,7 +289,6 @@
 .method public final remove()V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -327,7 +301,6 @@
     :catchall_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -336,7 +309,6 @@
 .method public final setBearing(F)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -349,7 +321,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -358,7 +329,6 @@
 .method public final setDimensions(F)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -371,7 +341,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -380,7 +349,6 @@
 .method public final setDimensions(FF)V
     .locals 1
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -393,7 +361,6 @@
     :catchall_0
     move-exception p1
 
-    .line 4
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -402,7 +369,6 @@
 .method public final setImage(Lcom/amap/api/maps/model/BitmapDescriptor;)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -415,7 +381,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -424,7 +389,6 @@
 .method public final setPosition(Lcom/amap/api/maps/model/LatLng;)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -437,7 +401,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -446,7 +409,6 @@
 .method public final setPositionFromBounds(Lcom/amap/api/maps/model/LatLngBounds;)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -459,7 +421,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -468,7 +429,6 @@
 .method public final setTransparency(F)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -481,7 +441,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -490,7 +449,6 @@
 .method public final setVisible(Z)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -503,7 +461,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -512,7 +469,6 @@
 .method public final setZIndex(F)V
     .locals 1
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/maps/model/GroundOverlay;->a:Lcom/autonavi/amap/mapcore/interfaces/IGroundOverlay;
 
@@ -525,7 +481,6 @@
     :catchall_0
     move-exception p1
 
-    .line 2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

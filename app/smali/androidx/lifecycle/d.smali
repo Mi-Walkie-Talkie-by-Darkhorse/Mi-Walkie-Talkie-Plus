@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/lifecycle/d;
 .super Ljava/lang/Object;
-.source "FullLifecycleObserver.java"
 
 # interfaces
 .implements Landroidx/lifecycle/j;

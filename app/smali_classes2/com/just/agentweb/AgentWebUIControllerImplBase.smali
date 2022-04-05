@@ -1,13 +1,11 @@
 .class public Lcom/just/agentweb/AgentWebUIControllerImplBase;
 .super Lcom/just/agentweb/AbsAgentWebUIController;
-.source "AgentWebUIControllerImplBase.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/just/agentweb/AbsAgentWebUIController;-><init>()V
 
     return-void
@@ -16,7 +14,6 @@
 .method public static build()Lcom/just/agentweb/AbsAgentWebUIController;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/just/agentweb/AgentWebUIControllerImplBase;
 
     invoke-direct {v0}, Lcom/just/agentweb/AgentWebUIControllerImplBase;-><init>()V
@@ -29,7 +26,6 @@
 .method protected bindSupportWebParent(Lcom/just/agentweb/WebParentLayout;Landroid/app/Activity;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -42,7 +38,6 @@
 .method public onCancelLoading()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -55,7 +50,6 @@
 .method public onForceDownloadAlert(Ljava/lang/String;Landroid/os/Handler$Callback;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -68,7 +62,6 @@
 .method public onJsAlert(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -81,7 +74,6 @@
 .method public onJsConfirm(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsResult;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -94,7 +86,6 @@
 .method public onJsPrompt(Landroid/webkit/WebView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/webkit/JsPromptResult;)V
     .locals 6
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -117,7 +108,6 @@
 .method public onLoading(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -130,7 +120,6 @@
 .method public onMainFrameError(Landroid/webkit/WebView;ILjava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -143,7 +132,6 @@
 .method public onOpenPagePrompt(Landroid/webkit/WebView;Ljava/lang/String;Landroid/os/Handler$Callback;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -156,7 +144,6 @@
 .method public onPermissionsDeny([Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -169,7 +156,6 @@
 .method public onSelectItemsPrompt(Landroid/webkit/WebView;Ljava/lang/String;[Ljava/lang/String;Landroid/os/Handler$Callback;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -182,7 +168,6 @@
 .method public onShowMainFrame()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0
@@ -195,7 +180,6 @@
 .method public onShowMessage(Ljava/lang/String;Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/just/agentweb/AbsAgentWebUIController;->getDelegate()Lcom/just/agentweb/AbsAgentWebUIController;
 
     move-result-object v0

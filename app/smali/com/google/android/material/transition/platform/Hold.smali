@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/transition/platform/Hold;
 .super Landroid/transition/Visibility;
-.source "Hold.java"
 
 
 # annotations
@@ -13,7 +12,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/transition/Visibility;-><init>()V
 
     return-void
@@ -52,7 +50,6 @@
 
     aput p3, p1, p2
 
-    .line 1
     invoke-static {p1}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
     move-result-object p1
@@ -91,7 +88,6 @@
 
     aput p3, p1, p2
 
-    .line 1
     invoke-static {p1}, Landroid/animation/ValueAnimator;->ofFloat([F)Landroid/animation/ValueAnimator;
 
     move-result-object p1

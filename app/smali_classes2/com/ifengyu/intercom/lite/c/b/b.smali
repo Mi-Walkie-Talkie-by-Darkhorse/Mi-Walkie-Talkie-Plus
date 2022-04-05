@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/c/b/b;
 .super Lcom/ifengyu/intercom/lite/c/a/a;
-.source "ChannelDialogBuilder.java"
 
 
 # annotations
@@ -71,7 +70,6 @@
 
     const-string v11, "\u786e\u5b9a"
 
-    .line 1
     filled-new-array/range {v0 .. v11}, [Ljava/lang/String;
 
     move-result-object v0
@@ -82,7 +80,6 @@
 
     new-array v0, v0, [I
 
-    .line 2
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/ifengyu/intercom/lite/c/b/b;->B:[I
@@ -109,29 +106,24 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 3
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/lite/c/a/a;-><init>(Landroid/content/Context;)V
 
     const/4 p1, -0x1
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
 
     const/4 v0, 0x7
 
     new-array v1, v0, [Landroid/widget/TextView;
 
-    .line 3
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
 
     new-array v0, v0, [I
 
-    .line 4
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/b;->v:[I
 
     const/4 v0, 0x0
 
-    .line 5
     :goto_0
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->v:[I
 
@@ -139,7 +131,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 6
     aput p1, v1, v0
 
     add-int/lit8 v0, v0, 0x1
@@ -153,7 +144,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/lite/c/b/b;)I
     .locals 0
 
-    .line 2
     iget p0, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
 
     return p0
@@ -175,7 +165,6 @@
 
     if-ne p3, p1, :cond_1
 
-    .line 31
     iget p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
 
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
@@ -186,7 +175,6 @@
 
     if-lt p1, p2, :cond_3
 
-    .line 32
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->z:Lcom/ifengyu/intercom/lite/c/b/b$c;
 
     if-eqz p1, :cond_3
@@ -195,7 +183,6 @@
 
     const/4 p2, 0x0
 
-    .line 33
     :goto_0
     iget-object p3, p0, Lcom/ifengyu/intercom/lite/c/b/b;->v:[I
 
@@ -205,7 +192,6 @@
 
     int-to-double p4, p2
 
-    .line 34
     aget p2, p3, p1
 
     int-to-double v0, p2
@@ -237,7 +223,6 @@
     :cond_0
     mul-int/lit8 p2, p2, 0x64
 
-    .line 35
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->z:Lcom/ifengyu/intercom/lite/c/b/b$c;
 
     iget-object p3, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->b:Lcom/qmuiteam/qmui/widget/dialog/b;
@@ -253,7 +238,6 @@
 
     if-ne p3, p1, :cond_2
 
-    .line 36
     iget p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
 
     if-ltz p1, :cond_3
@@ -264,14 +248,12 @@
 
     if-ge p1, p5, :cond_3
 
-    .line 37
     aget-object p1, p4, p1
 
     const-string p4, ""
 
     invoke-virtual {p1, p4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 38
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->v:[I
 
     iget p4, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
@@ -280,20 +262,16 @@
 
     add-int/lit8 p4, p4, -0x1
 
-    .line 39
     iput p4, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
 
-    .line 40
     invoke-virtual {p0, p4, p1, p3}, Lcom/ifengyu/intercom/lite/c/b/b;->b(I[II)V
 
-    .line 41
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->t:Lcom/ifengyu/intercom/lite/c/b/b$b;
 
     invoke-virtual {p1}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
     goto :goto_1
 
-    .line 42
     :cond_2
     iget p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
 
@@ -309,10 +287,8 @@
 
     add-int/lit8 p1, p1, 0x1
 
-    .line 43
     iput p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
 
-    .line 44
     aget-object p1, p2, p1
 
     sget-object p2, Lcom/ifengyu/intercom/lite/c/b/b;->A:[Ljava/lang/String;
@@ -321,7 +297,6 @@
 
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 45
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->v:[I
 
     iget p2, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
@@ -332,10 +307,8 @@
 
     aput p4, p1, p2
 
-    .line 46
     invoke-virtual {p0, p2, p1, p3}, Lcom/ifengyu/intercom/lite/c/b/b;->c(I[II)V
 
-    .line 47
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->t:Lcom/ifengyu/intercom/lite/c/b/b$b;
 
     invoke-virtual {p1}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
@@ -348,7 +321,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/lite/c/b/b;Landroid/widget/AdapterView;Landroid/view/View;IJ)V
     .locals 0
 
-    .line 1
     invoke-direct/range {p0 .. p5}, Lcom/ifengyu/intercom/lite/c/b/b;->a(Landroid/widget/AdapterView;Landroid/view/View;IJ)V
 
     return-void
@@ -357,7 +329,6 @@
 .method static synthetic b(Lcom/ifengyu/intercom/lite/c/b/b;)[I
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/lite/c/b/b;->v:[I
 
     return-object p0
@@ -370,7 +341,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 4
     invoke-static {p3}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     move-result-object p1
@@ -383,7 +353,6 @@
 
     move-result-object p1
 
-    .line 5
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
 
     const v0, 0x7f09047b
@@ -398,7 +367,6 @@
 
     aput-object v0, p2, v1
 
-    .line 6
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
 
     const v0, 0x7f09047c
@@ -413,7 +381,6 @@
 
     aput-object v0, p2, v2
 
-    .line 7
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
 
     const v0, 0x7f09047d
@@ -428,7 +395,6 @@
 
     aput-object v0, p2, v3
 
-    .line 8
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
 
     const v0, 0x7f09047e
@@ -443,7 +409,6 @@
 
     aput-object v0, p2, v3
 
-    .line 9
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
 
     const v0, 0x7f09047f
@@ -458,7 +423,6 @@
 
     aput-object v0, p2, v3
 
-    .line 10
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
 
     const v0, 0x7f090480
@@ -473,7 +437,6 @@
 
     aput-object v0, p2, v3
 
-    .line 11
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
 
     const v0, 0x7f090481
@@ -490,7 +453,6 @@
 
     const p2, 0x7f0901b8
 
-    .line 12
     invoke-virtual {p1, p2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p2
@@ -499,14 +461,12 @@
 
     const v0, 0x7f090471
 
-    .line 13
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    .line 14
     :goto_0
     iget-object v3, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
 
@@ -514,15 +474,12 @@
 
     if-ge v1, v4, :cond_1
 
-    .line 15
     aget-object v3, v3, v1
 
-    .line 16
     sget-object v4, Lcom/ifengyu/intercom/i/p;->b:Landroid/graphics/Typeface;
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 17
     iget-object v4, p0, Lcom/ifengyu/intercom/lite/c/b/b;->w:[I
 
     if-eqz v4, :cond_0
@@ -535,7 +492,6 @@
 
     if-ne v5, v6, :cond_0
 
-    .line 18
     aget v4, v4, v1
 
     invoke-static {v4}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -544,7 +500,6 @@
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 19
     iget-object v3, p0, Lcom/ifengyu/intercom/lite/c/b/b;->v:[I
 
     iget-object v4, p0, Lcom/ifengyu/intercom/lite/c/b/b;->w:[I
@@ -558,7 +513,6 @@
 
     goto :goto_0
 
-    .line 20
     :cond_1
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->w:[I
 
@@ -570,7 +524,6 @@
 
     if-ne v1, v4, :cond_2
 
-    .line 21
     array-length v1, v3
 
     sub-int/2addr v1, v2
@@ -580,33 +533,28 @@
     :cond_2
     const v1, 0x7f090499
 
-    .line 22
     invoke-virtual {p1, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object v1
 
     check-cast v1, Landroid/widget/TextView;
 
-    .line 23
     invoke-static {v2}, Landroid/graphics/Typeface;->defaultFromStyle(I)Landroid/graphics/Typeface;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 24
     invoke-virtual {p0}, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->b()Z
 
     move-result v2
 
     if-eqz v2, :cond_3
 
-    .line 25
     iget-object v2, p0, Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogBuilder;->c:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 26
     :cond_3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/lite/c/b/b;->f()Z
 
@@ -614,12 +562,10 @@
 
     if-eqz v1, :cond_4
 
-    .line 27
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->x:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 28
     :cond_4
     new-instance v0, Lcom/ifengyu/intercom/lite/c/b/b$b;
 
@@ -629,10 +575,8 @@
 
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/b;->t:Lcom/ifengyu/intercom/lite/c/b/b$b;
 
-    .line 29
     invoke-virtual {p2, v0}, Landroid/widget/GridView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 30
     new-instance p3, Lcom/ifengyu/intercom/lite/c/b/b$a;
 
     invoke-direct {p3, p0}, Lcom/ifengyu/intercom/lite/c/b/b$a;-><init>(Lcom/ifengyu/intercom/lite/c/b/b;)V
@@ -645,7 +589,6 @@
 .method public a(Lcom/ifengyu/intercom/lite/c/b/b$c;)Lcom/ifengyu/intercom/lite/c/b/b;
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->z:Lcom/ifengyu/intercom/lite/c/b/b$c;
 
     return-object p0
@@ -662,7 +605,6 @@
 .method public b(Ljava/lang/String;)Lcom/ifengyu/intercom/lite/c/b/b;
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->x:Ljava/lang/String;
 
     return-object p0
@@ -693,10 +635,8 @@
 .method public d(I)Lcom/ifengyu/intercom/lite/c/b/b;
     .locals 5
 
-    .line 1
     div-int/lit8 p1, p1, 0x64
 
-    .line 2
     invoke-static {p1}, Lcom/qmuiteam/qmui/util/g;->a(I)I
 
     move-result v0
@@ -712,7 +652,6 @@
     :cond_0
     new-array v0, v1, [I
 
-    .line 3
     iput-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/b;->w:[I
 
     const/4 v0, 0x0
@@ -720,7 +659,6 @@
     :goto_0
     if-ge v0, v1, :cond_1
 
-    .line 4
     iget-object v2, p0, Lcom/ifengyu/intercom/lite/c/b/b;->w:[I
 
     rsub-int/lit8 v3, v0, 0x6
@@ -729,7 +667,6 @@
 
     aput v4, v2, v3
 
-    .line 5
     div-int/lit8 p1, p1, 0xa
 
     add-int/lit8 v0, v0, 0x1
@@ -744,7 +681,6 @@
 .method e()V
     .locals 3
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/b;->v:[I
 
     iget v1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
@@ -753,7 +689,6 @@
 
     aput v2, v0, v1
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
 
     aget-object v0, v0, v1
@@ -762,7 +697,6 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
-    .line 6
     iget v0, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
 
     add-int/lit8 v0, v0, -0x1
@@ -775,19 +709,16 @@
 .method e(I)V
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
 
     add-int/lit8 v0, v0, 0x1
 
     iput v0, p0, Lcom/ifengyu/intercom/lite/c/b/b;->y:I
 
-    .line 2
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->v:[I
 
     aput p1, v1, v0
 
-    .line 3
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/c/b/b;->u:[Landroid/widget/TextView;
 
     aget-object v0, v1, v0
@@ -804,7 +735,6 @@
 .method protected f()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/c/b/b;->x:Ljava/lang/String;
 
     if-eqz v0, :cond_0

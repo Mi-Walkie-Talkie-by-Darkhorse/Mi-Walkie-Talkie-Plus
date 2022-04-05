@@ -1,6 +1,5 @@
 .class final Lcom/google/protobuf/TextFormat$Tokenizer;
 .super Ljava/lang/Object;
-.source "TextFormat.java"
 
 
 # annotations
@@ -52,7 +51,6 @@
 
     const-string v1, "(\\s|(#.*$))++"
 
-    .line 1
     invoke-static {v1, v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
 
     move-result-object v1
@@ -61,7 +59,6 @@
 
     const-string v1, "[a-zA-Z_][0-9a-zA-Z_+-]*+|[.]?[0-9+-][0-9a-zA-Z_.+-]*+|\"([^\"\n\\\\]|\\\\.)*+(\"|\\\\?$)|\'([^\'\n\\\\]|\\\\.)*+(\'|\\\\?$)"
 
-    .line 2
     invoke-static {v1, v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
 
     move-result-object v0
@@ -72,7 +69,6 @@
 
     const-string v1, "-?inf(inity)?"
 
-    .line 3
     invoke-static {v1, v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
 
     move-result-object v1
@@ -81,7 +77,6 @@
 
     const-string v1, "-?inf(inity)?f?"
 
-    .line 4
     invoke-static {v1, v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
 
     move-result-object v1
@@ -90,7 +85,6 @@
 
     const-string v1, "nanf?"
 
-    .line 5
     invoke-static {v1, v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;I)Ljava/util/regex/Pattern;
 
     move-result-object v0
@@ -103,30 +97,22 @@
 .method private constructor <init>(Ljava/lang/CharSequence;)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->pos:I
 
-    .line 4
     iput v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->line:I
 
-    .line 5
     iput v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->column:I
 
-    .line 6
     iput v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->previousLine:I
 
-    .line 7
     iput v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->previousColumn:I
 
-    .line 8
     iput-object p1, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->text:Ljava/lang/CharSequence;
 
-    .line 9
     sget-object v0, Lcom/google/protobuf/TextFormat$Tokenizer;->WHITESPACE:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
@@ -135,10 +121,8 @@
 
     iput-object p1, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->matcher:Ljava/util/regex/Matcher;
 
-    .line 10
     invoke-direct {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->skipWhitespace()V
 
-    .line 11
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
 
     return-void
@@ -147,7 +131,6 @@
 .method synthetic constructor <init>(Ljava/lang/CharSequence;Lcom/google/protobuf/TextFormat$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/protobuf/TextFormat$Tokenizer;-><init>(Ljava/lang/CharSequence;)V
 
     return-void
@@ -156,7 +139,6 @@
 .method static synthetic access$1200(Lcom/google/protobuf/TextFormat$Tokenizer;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
     return-object p0
@@ -179,7 +161,6 @@
         }
     .end annotation
 
-    .line 6
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -210,14 +191,12 @@
     :cond_1
     const-string p1, "Expected string."
 
-    .line 7
     invoke-virtual {p0, p1}, Lcom/google/protobuf/TextFormat$Tokenizer;->parseException(Ljava/lang/String;)Lcom/google/protobuf/TextFormat$ParseException;
 
     move-result-object p1
 
     throw p1
 
-    .line 8
     :cond_2
     :goto_0
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
@@ -246,7 +225,6 @@
 
     if-ne v0, v1, :cond_3
 
-    .line 9
     :try_start_0
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
@@ -262,15 +240,12 @@
 
     move-result-object v0
 
-    .line 10
     invoke-static {v0}, Lcom/google/protobuf/TextFormat;->unescapeBytes(Ljava/lang/CharSequence;)Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
-    .line 11
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
 
-    .line 12
     invoke-interface {p1, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_0
     .catch Lcom/google/protobuf/TextFormat$InvalidEscapeSequenceException; {:try_start_0 .. :try_end_0} :catch_0
@@ -280,7 +255,6 @@
     :catch_0
     move-exception p1
 
-    .line 13
     invoke-virtual {p1}, Ljava/io/IOException;->getMessage()Ljava/lang/String;
 
     move-result-object p1
@@ -294,7 +268,6 @@
     :cond_3
     const-string p1, "String missing ending quote."
 
-    .line 14
     invoke-virtual {p0, p1}, Lcom/google/protobuf/TextFormat$Tokenizer;->parseException(Ljava/lang/String;)Lcom/google/protobuf/TextFormat$ParseException;
 
     move-result-object p1
@@ -305,7 +278,6 @@
 .method private floatParseException(Ljava/lang/NumberFormatException;)Lcom/google/protobuf/TextFormat$ParseException;
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
 
     move-result-object p1
@@ -344,7 +316,6 @@
 .method private integerParseException(Ljava/lang/NumberFormatException;)Lcom/google/protobuf/TextFormat$ParseException;
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Ljava/lang/NumberFormatException;->getMessage()Ljava/lang/String;
 
     move-result-object p1
@@ -383,14 +354,12 @@
 .method private skipWhitespace()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->matcher:Ljava/util/regex/Matcher;
 
     sget-object v1, Lcom/google/protobuf/TextFormat$Tokenizer;->WHITESPACE:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, v1}, Ljava/util/regex/Matcher;->usePattern(Ljava/util/regex/Pattern;)Ljava/util/regex/Matcher;
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->lookingAt()Z
@@ -399,7 +368,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->end()I
@@ -423,7 +391,6 @@
 .method public atEnd()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -451,7 +418,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/protobuf/TextFormat$Tokenizer;->tryConsume(Ljava/lang/String;)Z
 
     move-result v0
@@ -460,7 +426,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -509,7 +474,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
     const-string v1, "true"
@@ -542,7 +506,6 @@
 
     goto :goto_1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
@@ -579,14 +542,12 @@
     :cond_1
     const-string v0, "Expected \"true\" or \"false\"."
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/google/protobuf/TextFormat$Tokenizer;->parseException(Ljava/lang/String;)Lcom/google/protobuf/TextFormat$ParseException;
 
     move-result-object v0
 
     throw v0
 
-    .line 4
     :cond_2
     :goto_0
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
@@ -595,7 +556,6 @@
 
     return v0
 
-    .line 5
     :cond_3
     :goto_1
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
@@ -613,15 +573,12 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     invoke-direct {p0, v0}, Lcom/google/protobuf/TextFormat$Tokenizer;->consumeByteString(Ljava/util/List;)V
 
-    .line 3
     :goto_0
     iget-object v1, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
@@ -645,7 +602,6 @@
 
     goto :goto_1
 
-    .line 4
     :cond_0
     invoke-static {v0}, Lcom/google/protobuf/ByteString;->copyFrom(Ljava/lang/Iterable;)Lcom/google/protobuf/ByteString;
 
@@ -653,7 +609,6 @@
 
     return-object v0
 
-    .line 5
     :cond_1
     :goto_1
     invoke-direct {p0, v0}, Lcom/google/protobuf/TextFormat$Tokenizer;->consumeByteString(Ljava/util/List;)V
@@ -669,7 +624,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/TextFormat$Tokenizer;->DOUBLE_INFINITY:Ljava/util/regex/Pattern;
 
     iget-object v1, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
@@ -684,7 +638,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
     const-string v1, "-"
@@ -693,7 +646,6 @@
 
     move-result v0
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
 
     if-eqz v0, :cond_0
@@ -708,7 +660,6 @@
     :goto_0
     return-wide v0
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
@@ -720,14 +671,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
 
     const-wide/high16 v0, 0x7ff8000000000000L    # Double.NaN
 
     return-wide v0
 
-    .line 6
     :cond_2
     :try_start_0
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
@@ -736,7 +685,6 @@
 
     move-result-wide v0
 
-    .line 7
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
@@ -746,7 +694,6 @@
     :catch_0
     move-exception v0
 
-    .line 8
     invoke-direct {p0, v0}, Lcom/google/protobuf/TextFormat$Tokenizer;->floatParseException(Ljava/lang/NumberFormatException;)Lcom/google/protobuf/TextFormat$ParseException;
 
     move-result-object v0
@@ -762,7 +709,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/TextFormat$Tokenizer;->FLOAT_INFINITY:Ljava/util/regex/Pattern;
 
     iget-object v1, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
@@ -777,7 +723,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
     const-string v1, "-"
@@ -786,7 +731,6 @@
 
     move-result v0
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
 
     if-eqz v0, :cond_0
@@ -801,7 +745,6 @@
     :goto_0
     return v0
 
-    .line 4
     :cond_1
     sget-object v0, Lcom/google/protobuf/TextFormat$Tokenizer;->FLOAT_NAN:Ljava/util/regex/Pattern;
 
@@ -817,14 +760,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
 
     const/high16 v0, 0x7fc00000    # Float.NaN
 
     return v0
 
-    .line 6
     :cond_2
     :try_start_0
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
@@ -833,7 +774,6 @@
 
     move-result v0
 
-    .line 7
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
@@ -843,7 +783,6 @@
     :catch_0
     move-exception v0
 
-    .line 8
     invoke-direct {p0, v0}, Lcom/google/protobuf/TextFormat$Tokenizer;->floatParseException(Ljava/lang/NumberFormatException;)Lcom/google/protobuf/TextFormat$ParseException;
 
     move-result-object v0
@@ -861,7 +800,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     iget-object v1, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
@@ -871,7 +809,6 @@
 
     if-ge v0, v1, :cond_5
 
-    .line 2
     iget-object v1, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->charAt(I)C
@@ -915,7 +852,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_3
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
@@ -963,11 +899,9 @@
 
     goto :goto_0
 
-    .line 4
     :cond_5
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
 
     return-object v0
@@ -981,7 +915,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
@@ -989,7 +922,6 @@
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
@@ -999,7 +931,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     invoke-direct {p0, v0}, Lcom/google/protobuf/TextFormat$Tokenizer;->integerParseException(Ljava/lang/NumberFormatException;)Lcom/google/protobuf/TextFormat$ParseException;
 
     move-result-object v0
@@ -1015,7 +946,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
@@ -1023,7 +953,6 @@
 
     move-result-wide v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1033,7 +962,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     invoke-direct {p0, v0}, Lcom/google/protobuf/TextFormat$Tokenizer;->integerParseException(Ljava/lang/NumberFormatException;)Lcom/google/protobuf/TextFormat$ParseException;
 
     move-result-object v0
@@ -1049,7 +977,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->consumeByteString()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
@@ -1069,7 +996,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
@@ -1077,7 +1003,6 @@
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1087,7 +1012,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     invoke-direct {p0, v0}, Lcom/google/protobuf/TextFormat$Tokenizer;->integerParseException(Ljava/lang/NumberFormatException;)Lcom/google/protobuf/TextFormat$ParseException;
 
     move-result-object v0
@@ -1103,7 +1027,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
@@ -1111,7 +1034,6 @@
 
     move-result-wide v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
@@ -1121,7 +1043,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     invoke-direct {p0, v0}, Lcom/google/protobuf/TextFormat$Tokenizer;->integerParseException(Ljava/lang/NumberFormatException;)Lcom/google/protobuf/TextFormat$ParseException;
 
     move-result-object v0
@@ -1132,7 +1053,6 @@
 .method public lookingAt(Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1145,7 +1065,6 @@
 .method public lookingAtInteger()Z
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -1158,7 +1077,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
@@ -1193,17 +1111,14 @@
 .method public nextToken()V
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->line:I
 
     iput v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->previousLine:I
 
-    .line 2
     iget v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->column:I
 
     iput v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->previousColumn:I
 
-    .line 3
     :goto_0
     iget v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->pos:I
 
@@ -1215,7 +1130,6 @@
 
     if-ge v0, v1, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->text:Ljava/lang/CharSequence;
 
     iget v1, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->pos:I
@@ -1228,7 +1142,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 5
     iget v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->line:I
 
     add-int/lit8 v0, v0, 0x1
@@ -1237,12 +1150,10 @@
 
     const/4 v0, 0x0
 
-    .line 6
     iput v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->column:I
 
     goto :goto_1
 
-    .line 7
     :cond_0
     iget v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->column:I
 
@@ -1250,7 +1161,6 @@
 
     iput v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->column:I
 
-    .line 8
     :goto_1
     iget v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->pos:I
 
@@ -1260,7 +1170,6 @@
 
     goto :goto_0
 
-    .line 9
     :cond_1
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->matcher:Ljava/util/regex/Matcher;
 
@@ -1278,12 +1187,10 @@
 
     const-string v0, ""
 
-    .line 10
     iput-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
     goto :goto_3
 
-    .line 11
     :cond_2
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->matcher:Ljava/util/regex/Matcher;
 
@@ -1291,7 +1198,6 @@
 
     invoke-virtual {v0, v1}, Ljava/util/regex/Matcher;->usePattern(Ljava/util/regex/Pattern;)Ljava/util/regex/Matcher;
 
-    .line 12
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->lookingAt()Z
@@ -1300,7 +1206,6 @@
 
     if-eqz v0, :cond_3
 
-    .line 13
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
@@ -1309,7 +1214,6 @@
 
     iput-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
-    .line 14
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->matcher:Ljava/util/regex/Matcher;
 
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->end()I
@@ -1326,7 +1230,6 @@
 
     goto :goto_2
 
-    .line 15
     :cond_3
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->text:Ljava/lang/CharSequence;
 
@@ -1342,7 +1245,6 @@
 
     iput-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
-    .line 16
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->matcher:Ljava/util/regex/Matcher;
 
     iget v1, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->pos:I
@@ -1355,7 +1257,6 @@
 
     invoke-virtual {v0, v1, v2}, Ljava/util/regex/Matcher;->region(II)Ljava/util/regex/Matcher;
 
-    .line 17
     :goto_2
     invoke-direct {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->skipWhitespace()V
 
@@ -1366,7 +1267,6 @@
 .method public parseException(Ljava/lang/String;)Lcom/google/protobuf/TextFormat$ParseException;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/TextFormat$ParseException;
 
     iget v1, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->line:I
@@ -1385,7 +1285,6 @@
 .method public parseExceptionPreviousToken(Ljava/lang/String;)Lcom/google/protobuf/TextFormat$ParseException;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/TextFormat$ParseException;
 
     iget v1, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->previousLine:I
@@ -1404,7 +1303,6 @@
 .method public tryConsume(Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/TextFormat$Tokenizer;->currentToken:Ljava/lang/String;
 
     invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -1413,7 +1311,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->nextToken()V
 
     const/4 p1, 0x1
@@ -1429,7 +1326,6 @@
 .method public tryConsumeDouble()Z
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->consumeDouble()D
     :try_end_0
@@ -1448,7 +1344,6 @@
 .method public tryConsumeFloat()Z
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->consumeFloat()F
     :try_end_0
@@ -1467,7 +1362,6 @@
 .method public tryConsumeIdentifier()Z
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->consumeIdentifier()Ljava/lang/String;
     :try_end_0
@@ -1486,7 +1380,6 @@
 .method public tryConsumeInt64()Z
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->consumeInt64()J
     :try_end_0
@@ -1505,7 +1398,6 @@
 .method public tryConsumeString()Z
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->consumeString()Ljava/lang/String;
     :try_end_0
@@ -1524,7 +1416,6 @@
 .method public tryConsumeUInt64()Z
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/google/protobuf/TextFormat$Tokenizer;->consumeUInt64()J
     :try_end_0

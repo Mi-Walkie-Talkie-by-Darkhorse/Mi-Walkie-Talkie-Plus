@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/widget/RxTextView__TextViewTextChangeEventObservableKt;
 .super Ljava/lang/Object;
-.source "TextViewTextChangeEventObservable.kt"
 
 
 # annotations
@@ -58,7 +57,6 @@
 
     invoke-static {p0, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangeEventObservable;
 
     invoke-direct {v0, p0}, Lcom/jakewharton/rxbinding3/widget/TextViewTextChangeEventObservable;-><init>(Landroid/widget/TextView;)V

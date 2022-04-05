@@ -1,6 +1,5 @@
 .class Landroidx/lifecycle/r$c$a;
 .super Landroidx/lifecycle/c;
-.source "ProcessLifecycleOwner.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/lifecycle/r$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/lifecycle/r$c$a;->this$1:Landroidx/lifecycle/r$c;
 
     invoke-direct {p0}, Landroidx/lifecycle/c;-><init>()V
@@ -39,7 +37,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Landroidx/lifecycle/r$c$a;->this$1:Landroidx/lifecycle/r$c;
 
     iget-object p1, p1, Landroidx/lifecycle/r$c;->this$0:Landroidx/lifecycle/r;
@@ -56,7 +53,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Landroidx/lifecycle/r$c$a;->this$1:Landroidx/lifecycle/r$c;
 
     iget-object p1, p1, Landroidx/lifecycle/r$c;->this$0:Landroidx/lifecycle/r;

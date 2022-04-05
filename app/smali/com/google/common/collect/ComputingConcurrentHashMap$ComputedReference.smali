@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/ComputingConcurrentHashMap$ComputedReference;
 .super Ljava/lang/Object;
-.source "ComputingConcurrentHashMap.java"
 
 # interfaces
 .implements Lcom/google/common/collect/MapMakerInternalMap$ValueReference;
@@ -53,10 +52,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputedReference;->value:Ljava/lang/Object;
 
     return-void
@@ -102,7 +99,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputedReference;->value:Ljava/lang/Object;
 
     return-object v0
@@ -139,7 +135,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ComputingConcurrentHashMap$ComputedReference;->get()Ljava/lang/Object;
 
     move-result-object v0

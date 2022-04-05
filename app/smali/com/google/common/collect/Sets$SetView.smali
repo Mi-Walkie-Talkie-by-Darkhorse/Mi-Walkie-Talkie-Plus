@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/Sets$SetView;
 .super Ljava/util/AbstractSet;
-.source "Sets.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
 .method synthetic constructor <init>(Lcom/google/common/collect/Sets$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/Sets$SetView;-><init>()V
 
     return-void
@@ -55,7 +52,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1, p0}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
     return-object p1
@@ -71,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/ImmutableSet;->copyOf(Ljava/util/Collection;)Lcom/google/common/collect/ImmutableSet;
 
     move-result-object v0

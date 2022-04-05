@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/g/e/b;
 .super Lcom/ifengyu/intercom/g/e/c;
-.source "GetRequest.java"
 
 
 # direct methods
@@ -22,7 +21,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct/range {p0 .. p5}, Lcom/ifengyu/intercom/g/e/c;-><init>(Ljava/lang/String;Ljava/lang/Object;Ljava/util/Map;Ljava/util/Map;I)V
 
     return-void
@@ -33,7 +31,6 @@
 .method protected a(Lokhttp3/RequestBody;)Lokhttp3/Request;
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/g/e/c;->f:Lokhttp3/Request$Builder;
 
     invoke-virtual {p1}, Lokhttp3/Request$Builder;->get()Lokhttp3/Request$Builder;

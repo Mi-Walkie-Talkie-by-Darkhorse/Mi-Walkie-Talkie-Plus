@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/section/b$a;
 .super Landroidx/recyclerview/widget/RecyclerView$i;
-.source "QMUIStickySectionItemDecoration.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/section/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$i;-><init>()V
@@ -35,17 +33,14 @@
 .method public onChanged()V
     .locals 2
 
-    .line 1
     invoke-super {p0}, Landroidx/recyclerview/widget/RecyclerView$i;->onChanged()V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     const/4 v1, -0x1
 
     invoke-static {v0, v1}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;I)I
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/section/b;->b(Lcom/qmuiteam/qmui/widget/section/b;)Lcom/qmuiteam/qmui/widget/section/b$b;
@@ -60,10 +55,8 @@
 .method public onItemRangeChanged(II)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$i;->onItemRangeChanged(II)V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;)I
@@ -74,7 +67,6 @@
 
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
-    .line 3
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;)I
 
     move-result v0
@@ -85,7 +77,6 @@
 
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
-    .line 4
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/section/b;->c(Lcom/qmuiteam/qmui/widget/section/b;)Lcom/qmuiteam/qmui/widget/section/a$b;
 
     move-result-object p1
@@ -94,7 +85,6 @@
 
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
-    .line 5
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/section/b;->d(Lcom/qmuiteam/qmui/widget/section/b;)Ljava/lang/ref/WeakReference;
 
     move-result-object p1
@@ -105,14 +95,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 6
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     const/4 p2, -0x1
 
     invoke-static {p1, p2}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;I)I
 
-    .line 7
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/section/b;->b(Lcom/qmuiteam/qmui/widget/section/b;)Lcom/qmuiteam/qmui/widget/section/b$b;
@@ -128,10 +116,8 @@
 .method public onItemRangeInserted(II)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$i;->onItemRangeInserted(II)V
 
-    .line 2
     iget-object p2, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     invoke-static {p2}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;)I
@@ -140,14 +126,12 @@
 
     if-gt p1, p2, :cond_0
 
-    .line 3
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     const/4 p2, -0x1
 
     invoke-static {p1, p2}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;I)I
 
-    .line 4
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/section/b;->b(Lcom/qmuiteam/qmui/widget/section/b;)Lcom/qmuiteam/qmui/widget/section/b$b;
@@ -163,10 +147,8 @@
 .method public onItemRangeMoved(III)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroidx/recyclerview/widget/RecyclerView$i;->onItemRangeMoved(III)V
 
-    .line 2
     iget-object p3, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     invoke-static {p3}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;)I
@@ -177,14 +159,12 @@
 
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
-    .line 3
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;)I
 
     move-result p1
 
     if-ne p2, p1, :cond_1
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
@@ -192,7 +172,6 @@
 
     invoke-static {p1, p2}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;I)I
 
-    .line 5
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/section/b;->b(Lcom/qmuiteam/qmui/widget/section/b;)Lcom/qmuiteam/qmui/widget/section/b$b;
@@ -208,10 +187,8 @@
 .method public onItemRangeRemoved(II)V
     .locals 1
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/recyclerview/widget/RecyclerView$i;->onItemRangeRemoved(II)V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;)I
@@ -222,7 +199,6 @@
 
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
-    .line 3
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;)I
 
     move-result v0
@@ -231,14 +207,12 @@
 
     if-ge v0, p1, :cond_0
 
-    .line 4
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     const/4 p2, -0x1
 
     invoke-static {p1, p2}, Lcom/qmuiteam/qmui/widget/section/b;->a(Lcom/qmuiteam/qmui/widget/section/b;I)I
 
-    .line 5
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/section/b$a;->a:Lcom/qmuiteam/qmui/widget/section/b;
 
     const/4 p2, 0x0

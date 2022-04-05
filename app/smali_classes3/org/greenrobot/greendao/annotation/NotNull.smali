@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lorg/greenrobot/greendao/annotation/NotNull;
 .super Ljava/lang/Object;
-.source "NotNull.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

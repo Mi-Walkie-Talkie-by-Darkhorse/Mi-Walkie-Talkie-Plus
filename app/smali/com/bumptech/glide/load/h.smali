@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/h;
 .super Ljava/lang/Object;
-.source "Transformation.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/c;

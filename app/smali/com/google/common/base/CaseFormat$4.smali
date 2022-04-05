@@ -1,6 +1,5 @@
 .class final enum Lcom/google/common/base/CaseFormat$4;
 .super Lcom/google/common/base/CaseFormat;
-.source "CaseFormat.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 
     move-object v4, p4
 
-    .line 1
     invoke-direct/range {v0 .. v5}, Lcom/google/common/base/CaseFormat;-><init>(Ljava/lang/String;ILcom/google/common/base/CharMatcher;Ljava/lang/String;Lcom/google/common/base/CaseFormat$1;)V
 
     return-void
@@ -41,7 +39,6 @@
 .method normalizeWord(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/CaseFormat;->access$100(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1

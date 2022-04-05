@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/AbstractIdleService$2;
 .super Lcom/google/common/util/concurrent/AbstractService;
-.source "AbstractIdleService.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/common/util/concurrent/AbstractIdleService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/AbstractIdleService$2;->this$0:Lcom/google/common/util/concurrent/AbstractIdleService;
 
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractService;-><init>()V
@@ -35,7 +33,6 @@
 .method protected final doStart()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractIdleService$2;->this$0:Lcom/google/common/util/concurrent/AbstractIdleService;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/AbstractIdleService;->executor()Ljava/util/concurrent/Executor;
@@ -64,7 +61,6 @@
 .method protected final doStop()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/AbstractIdleService$2;->this$0:Lcom/google/common/util/concurrent/AbstractIdleService;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/AbstractIdleService;->executor()Ljava/util/concurrent/Executor;

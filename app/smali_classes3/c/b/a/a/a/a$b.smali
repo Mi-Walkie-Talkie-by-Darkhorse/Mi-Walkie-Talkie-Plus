@@ -1,6 +1,5 @@
 .class public Lc/b/a/a/a/a$b;
 .super Ljava/lang/Object;
-.source "HeytapIDSDK.java"
 
 
 # static fields

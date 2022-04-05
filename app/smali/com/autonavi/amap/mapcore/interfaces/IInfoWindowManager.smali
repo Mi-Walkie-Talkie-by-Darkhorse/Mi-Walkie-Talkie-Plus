@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IInfoWindowManager;
 .super Ljava/lang/Object;
-.source "IInfoWindowManager.java"
 
 
 # virtual methods

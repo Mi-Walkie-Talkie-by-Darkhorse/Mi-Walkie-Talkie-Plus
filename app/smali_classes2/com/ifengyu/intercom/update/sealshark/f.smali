@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/update/sealshark/f;
 .super Lcom/ifengyu/intercom/update/sealshark/a;
-.source "SealMcuDataSplitManager.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/ifengyu/intercom/update/sealshark/a;-><init>()V
 
     return-void
@@ -30,7 +28,6 @@
 .method private a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack$Builder;II)V
     .locals 4
 
-    .line 15
     invoke-direct {p0, p3}, Lcom/ifengyu/intercom/update/sealshark/f;->b(I)V
 
     const/4 v0, 0x0
@@ -40,14 +37,12 @@
     :goto_0
     if-ge v0, p3, :cond_0
 
-    .line 16
     iget-object v2, p0, Lcom/ifengyu/intercom/update/sealshark/a;->a:[B
 
     aget-byte v3, v2, p2
 
     xor-int/2addr v1, v3
 
-    .line 17
     iget-object v3, p0, Lcom/ifengyu/intercom/update/sealshark/f;->d:[B
 
     aget-byte v2, v2, p2
@@ -60,16 +55,13 @@
 
     goto :goto_0
 
-    .line 18
     :cond_0
     iget p2, p0, Lcom/ifengyu/intercom/update/sealshark/a;->b:I
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack$Builder;->setOffset(I)Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack$Builder;
 
-    .line 19
     invoke-virtual {p1, v1}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack$Builder;->setXor(I)Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack$Builder;
 
-    .line 20
     iget-object p2, p0, Lcom/ifengyu/intercom/update/sealshark/f;->d:[B
 
     invoke-static {p2}, Lcom/google/protobuf/ByteString;->copyFrom([B)Lcom/google/protobuf/ByteString;
@@ -78,14 +70,12 @@
 
     invoke-virtual {p1, p2}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack$Builder;->setData(Lcom/google/protobuf/ByteString;)Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack$Builder;
 
-    .line 21
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 22
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -121,7 +111,6 @@
 .method private b(I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/f;->d:[B
 
     if-eqz v0, :cond_0
@@ -130,13 +119,11 @@
 
     if-eq v0, p1, :cond_2
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/update/sealshark/f;->d:[B
 
     if-eqz v0, :cond_1
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -165,7 +152,6 @@
 
     invoke-static {v1, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     :cond_1
     new-array p1, p1, [B
 
@@ -180,10 +166,8 @@
 .method public a(I)Lcom/ifengyu/intercom/node/l;
     .locals 3
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/update/sealshark/a;->b:I
 
-    .line 3
     invoke-virtual {p0}, Lcom/ifengyu/intercom/update/sealshark/a;->b()I
 
     move-result v0
@@ -192,10 +176,8 @@
 
     const/16 p1, 0x80
 
-    .line 4
     iput p1, p0, Lcom/ifengyu/intercom/update/sealshark/a;->c:I
 
-    .line 5
     iget v0, p0, Lcom/ifengyu/intercom/update/sealshark/a;->b:I
 
     add-int/2addr v0, p1
@@ -206,7 +188,6 @@
 
     if-le v0, p1, :cond_0
 
-    .line 6
     invoke-virtual {p0}, Lcom/ifengyu/intercom/update/sealshark/a;->b()I
 
     move-result p1
@@ -217,32 +198,27 @@
 
     iput p1, p0, Lcom/ifengyu/intercom/update/sealshark/a;->c:I
 
-    .line 7
     :cond_0
     new-instance p1, Lcom/ifengyu/intercom/node/l$a;
 
     invoke-direct {p1}, Lcom/ifengyu/intercom/node/l$a;-><init>()V
 
-    .line 8
     invoke-static {}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack;->newBuilder()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack$Builder;
 
     move-result-object v0
 
-    .line 9
     iget v1, p0, Lcom/ifengyu/intercom/update/sealshark/a;->b:I
 
     iget v2, p0, Lcom/ifengyu/intercom/update/sealshark/a;->c:I
 
     invoke-direct {p0, v0, v1, v2}, Lcom/ifengyu/intercom/update/sealshark/f;->a(Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack$Builder;II)V
 
-    .line 10
     invoke-static {}, Lcom/ifengyu/intercom/i/z;->a()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 11
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -272,17 +248,14 @@
     :cond_1
     const/16 v1, 0x4e2d
 
-    .line 12
     invoke-virtual {p1, v1}, Lcom/ifengyu/intercom/node/l$a;->a(I)Lcom/ifengyu/intercom/node/l$a;
 
-    .line 13
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack$Builder;->build()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_UpGradeFilePack;
 
     move-result-object v0
 
     invoke-virtual {p1, v0}, Lcom/ifengyu/intercom/node/l$a;->a(Lcom/google/protobuf/Message;)Lcom/ifengyu/intercom/node/l$a;
 
-    .line 14
     invoke-virtual {p1}, Lcom/ifengyu/intercom/node/l$a;->a()Lcom/ifengyu/intercom/node/l;
 
     move-result-object p1
@@ -298,7 +271,6 @@
 .method public bridge synthetic a(I)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/update/sealshark/f;->a(I)Lcom/ifengyu/intercom/node/l;
 
     move-result-object p1

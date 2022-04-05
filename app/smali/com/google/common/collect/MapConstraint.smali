@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/collect/MapConstraint;
 .super Ljava/lang/Object;
-.source "MapConstraint.java"
 
 
 # annotations

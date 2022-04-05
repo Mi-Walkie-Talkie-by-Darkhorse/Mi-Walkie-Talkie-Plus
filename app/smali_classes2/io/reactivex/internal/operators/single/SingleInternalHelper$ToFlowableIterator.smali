@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;
 .super Ljava/lang/Object;
-.source "SingleInternalHelper.java"
 
 # interfaces
 .implements Ljava/util/Iterator;
@@ -55,10 +54,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;->sit:Ljava/util/Iterator;
 
     return-void
@@ -69,7 +66,6 @@
 .method public hasNext()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;->sit:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
@@ -89,7 +85,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/operators/single/SingleToFlowable;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;->sit:Ljava/util/Iterator;
@@ -108,7 +103,6 @@
 .method public bridge synthetic next()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/internal/operators/single/SingleInternalHelper$ToFlowableIterator;->next()Lio/reactivex/Flowable;
 
     move-result-object v0
@@ -119,7 +113,6 @@
 .method public remove()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V

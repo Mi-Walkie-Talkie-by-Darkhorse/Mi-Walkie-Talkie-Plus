@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$v$a;
 .super Ljava/lang/Object;
-.source "SharkSettingActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$v;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$v$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$v$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$v;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$v;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
@@ -63,7 +60,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$v$a;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$v;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity$v;->a:Lcom/ifengyu/intercom/ui/setting/shark/SharkSettingActivity;
@@ -74,7 +70,6 @@
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
-    .line 3
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/i/h0;->b()V
 

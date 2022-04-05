@@ -1,18 +1,15 @@
 .class public final Lcom/amap/api/col/l3/ka;
 .super Ljava/lang/Object;
-.source "DateUtil.java"
 
 
 # direct methods
 .method private static a(J)J
     .locals 2
 
-    .line 3
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
 
     move-result-object v0
 
-    .line 4
     new-instance v1, Ljava/util/Date;
 
     invoke-direct {v1, p0, p1}, Ljava/util/Date;-><init>(J)V
@@ -23,25 +20,20 @@
 
     const/16 p1, 0xb
 
-    .line 5
     invoke-virtual {v0, p1, p0}, Ljava/util/Calendar;->set(II)V
 
     const/16 p1, 0xc
 
-    .line 6
     invoke-virtual {v0, p1, p0}, Ljava/util/Calendar;->set(II)V
 
     const/16 p1, 0xd
 
-    .line 7
     invoke-virtual {v0, p1, p0}, Ljava/util/Calendar;->set(II)V
 
     const/16 p1, 0xe
 
-    .line 8
     invoke-virtual {v0, p1, p0}, Ljava/util/Calendar;->set(II)V
 
-    .line 9
     invoke-virtual {v0}, Ljava/util/Calendar;->getTimeInMillis()J
 
     move-result-wide p0
@@ -56,7 +48,6 @@
 
     sub-long v0, p0, p2
 
-    .line 1
     :try_start_0
     invoke-static {v0, v1}, Ljava/lang/Math;->abs(J)J
 
@@ -72,7 +63,6 @@
 
     if-lez p4, :cond_2
 
-    .line 2
     invoke-static {p0, p1}, Lcom/amap/api/col/l3/ka;->a(J)J
 
     move-result-wide v0

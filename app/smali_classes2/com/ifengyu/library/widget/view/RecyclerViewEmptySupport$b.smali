@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/library/widget/view/RecyclerViewEmptySupport$b;
 .super Ljava/lang/Object;
-.source "RecyclerViewEmptySupport.java"
 
 
 # annotations

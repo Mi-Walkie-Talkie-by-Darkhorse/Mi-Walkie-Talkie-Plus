@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/io/LittleEndianDataInputStream;
 .super Ljava/io/FilterInputStream;
-.source "LittleEndianDataInputStream.java"
 
 # interfaces
 .implements Ljava/io/DataInput;
@@ -15,7 +14,6 @@
 .method public constructor <init>(Ljava/io/InputStream;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -36,7 +34,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->read()I
@@ -51,7 +48,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/io/EOFException;
 
@@ -70,7 +66,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readUnsignedByte()I
 
     move-result v0
@@ -96,7 +91,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readUnsignedByte()I
 
     move-result v0
@@ -114,7 +108,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readUnsignedShort()I
 
     move-result v0
@@ -132,7 +125,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readLong()J
 
     move-result-wide v0
@@ -152,7 +144,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readInt()I
 
     move-result v0
@@ -172,7 +163,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/io/ByteStreams;->readFully(Ljava/io/InputStream;[B)V
 
     return-void
@@ -186,7 +176,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0, p1, p2, p3}, Lcom/google/common/io/ByteStreams;->readFully(Ljava/io/InputStream;[BII)V
 
     return-void
@@ -200,27 +189,22 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v1
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v2
 
-    .line 4
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v3
 
-    .line 5
     invoke-static {v3, v2, v1, v0}, Lcom/google/common/primitives/Ints;->fromBytes(BBBB)I
 
     move-result v0
@@ -231,7 +215,6 @@
 .method public readLine()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "readLine is not supported"
@@ -249,47 +232,38 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v7
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v6
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v5
 
-    .line 4
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v4
 
-    .line 5
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v3
 
-    .line 6
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v2
 
-    .line 7
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v1
 
-    .line 8
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v0
 
-    .line 9
     invoke-static/range {v0 .. v7}, Lcom/google/common/primitives/Longs;->fromBytes(BBBBBBBB)J
 
     move-result-wide v0
@@ -305,7 +279,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readUnsignedShort()I
 
     move-result v0
@@ -323,7 +296,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/io/DataInputStream;
 
     iget-object v1, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
@@ -345,7 +317,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->read()I
@@ -356,7 +327,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/io/EOFException;
 
@@ -373,19 +343,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/io/LittleEndianDataInputStream;->readAndCheckByte()B
 
     move-result v1
 
     const/4 v2, 0x0
 
-    .line 3
     invoke-static {v2, v2, v1, v0}, Lcom/google/common/primitives/Ints;->fromBytes(BBBB)I
 
     move-result v0
@@ -401,7 +368,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Ljava/io/FilterInputStream;->in:Ljava/io/InputStream;
 
     int-to-long v1, p1

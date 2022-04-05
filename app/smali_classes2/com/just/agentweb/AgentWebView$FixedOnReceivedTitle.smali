@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;
 .super Ljava/lang/Object;
-.source "AgentWebView.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -33,7 +31,6 @@
 .method synthetic constructor <init>(Lcom/just/agentweb/AgentWebView$1;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;-><init>()V
 
     return-void
@@ -44,7 +41,6 @@
 .method public onPageFinished(Landroid/webkit/WebView;)V
     .locals 3
 
-    .line 1
     iget-boolean v0, p0, Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;->mIsOnReceivedTitle:Z
 
     if-nez v0, :cond_1
@@ -55,7 +51,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     invoke-virtual {p1}, Landroid/webkit/WebView;->copyBackForwardList()Landroid/webkit/WebBackForwardList;
 
@@ -68,35 +63,30 @@
     :catch_0
     move-exception v1
 
-    .line 3
     invoke-static {}, Lcom/just/agentweb/LogUtils;->isDebug()Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 4
     invoke-virtual {v1}, Ljava/lang/NullPointerException;->printStackTrace()V
 
     :cond_0
     :goto_0
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-virtual {v0}, Landroid/webkit/WebBackForwardList;->getSize()I
 
     move-result v1
 
     if-lez v1, :cond_1
 
-    .line 6
     invoke-virtual {v0}, Landroid/webkit/WebBackForwardList;->getCurrentIndex()I
 
     move-result v1
 
     if-ltz v1, :cond_1
 
-    .line 7
     invoke-virtual {v0}, Landroid/webkit/WebBackForwardList;->getCurrentIndex()I
 
     move-result v1
@@ -107,7 +97,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 8
     invoke-virtual {v0}, Landroid/webkit/WebBackForwardList;->getCurrentIndex()I
 
     move-result v1
@@ -120,7 +109,6 @@
 
     move-result-object v0
 
-    .line 9
     iget-object v1, p0, Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;->mWebChromeClient:Landroid/webkit/WebChromeClient;
 
     invoke-virtual {v1, p1, v0}, Landroid/webkit/WebChromeClient;->onReceivedTitle(Landroid/webkit/WebView;Ljava/lang/String;)V
@@ -134,7 +122,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;->mIsOnReceivedTitle:Z
 
     return-void
@@ -145,7 +132,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;->mIsOnReceivedTitle:Z
 
     return-void
@@ -154,7 +140,6 @@
 .method public setWebChromeClient(Landroid/webkit/WebChromeClient;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/AgentWebView$FixedOnReceivedTitle;->mWebChromeClient:Landroid/webkit/WebChromeClient;
 
     return-void

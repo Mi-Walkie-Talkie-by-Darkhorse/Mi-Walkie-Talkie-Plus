@@ -1,6 +1,5 @@
 .class final Landroidx/viewpager/widget/ViewPager$b;
 .super Ljava/lang/Object;
-.source "ViewPager.java"
 
 # interfaces
 .implements Landroid/view/animation/Interpolator;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

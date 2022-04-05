@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableElementAtSingle;
 .super Lio/reactivex/Single;
-.source "ObservableElementAtSingle.java"
 
 # interfaces
 .implements Lio/reactivex/internal/fuseable/FuseToObservable;
@@ -58,16 +57,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableElementAtSingle;->source:Lio/reactivex/ObservableSource;
 
-    .line 3
     iput-wide p2, p0, Lio/reactivex/internal/operators/observable/ObservableElementAtSingle;->index:J
 
-    .line 4
     iput-object p4, p0, Lio/reactivex/internal/operators/observable/ObservableElementAtSingle;->defaultValue:Ljava/lang/Object;
 
     return-void
@@ -85,7 +80,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v6, Lio/reactivex/internal/operators/observable/ObservableElementAt;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableElementAtSingle;->source:Lio/reactivex/ObservableSource;
@@ -117,7 +111,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableElementAtSingle;->source:Lio/reactivex/ObservableSource;
 
     new-instance v1, Lio/reactivex/internal/operators/observable/ObservableElementAtSingle$ElementAtObserver;

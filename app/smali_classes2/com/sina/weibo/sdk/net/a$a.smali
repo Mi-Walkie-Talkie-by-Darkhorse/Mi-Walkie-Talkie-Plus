@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/net/a$a;
 .super Ljava/lang/Object;
-.source "AsyncWeiboRunner.java"
 
 
 # annotations
@@ -39,10 +38,8 @@
 .method public constructor <init>(Lcom/sina/weibo/sdk/exception/WeiboException;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     iput-object p1, p0, Lcom/sina/weibo/sdk/net/a$a;->b:Lcom/sina/weibo/sdk/exception/WeiboException;
 
     return-void
@@ -56,10 +53,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/sina/weibo/sdk/net/a$a;->a:Ljava/lang/Object;
 
     return-void
@@ -70,7 +65,6 @@
 .method public a()Lcom/sina/weibo/sdk/exception/WeiboException;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/net/a$a;->b:Lcom/sina/weibo/sdk/exception/WeiboException;
 
     return-object v0
@@ -84,7 +78,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/net/a$a;->a:Ljava/lang/Object;
 
     return-object v0

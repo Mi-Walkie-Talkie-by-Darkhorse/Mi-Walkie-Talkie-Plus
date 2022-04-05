@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$h;
 .super Lcom/ifengyu/intercom/ui/baseui/b;
-.source "SelectDeviceActivity.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/baseui/b;-><init>(Ljava/lang/Object;)V
 
     return-void
@@ -35,7 +33,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$h;-><init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)V
 
     return-void
@@ -46,7 +43,6 @@
 .method public a(Landroid/os/Message;Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)V
     .locals 2
 
-    .line 2
     iget v0, p1, Landroid/os/Message;->what:I
 
     const/4 v1, 0x3
@@ -55,7 +51,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -63,25 +58,21 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     invoke-virtual {v0}, Lcom/ifengyu/intercom/node/ConnectionConfiguration;->a()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-static {p2, v0}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->a(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;Ljava/lang/String;)V
 
-    .line 5
     :cond_1
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->a(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)V
 
-    .line 6
     iget p1, p1, Landroid/os/Message;->arg1:I
 
     if-nez p1, :cond_2
 
     const p1, 0x7f1100ab
 
-    .line 7
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->a(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;I)V
 
     goto :goto_0
@@ -93,7 +84,6 @@
 
     const p1, 0x7f1100bd
 
-    .line 8
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;->a(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;I)V
 
     :cond_3
@@ -104,7 +94,6 @@
 .method public bridge synthetic a(Landroid/os/Message;Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p2, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity$h;->a(Landroid/os/Message;Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;)V

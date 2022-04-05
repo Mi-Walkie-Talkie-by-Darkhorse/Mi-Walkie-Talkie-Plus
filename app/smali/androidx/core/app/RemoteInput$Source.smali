@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/app/RemoteInput$Source;
 .super Ljava/lang/Object;
-.source "RemoteInput.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

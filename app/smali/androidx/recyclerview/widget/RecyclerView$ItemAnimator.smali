@@ -1,6 +1,5 @@
 .class public abstract Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;
 .super Ljava/lang/Object;
-.source "RecyclerView.java"
 
 
 # annotations
@@ -49,15 +48,12 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->a:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$b;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -66,18 +62,14 @@
 
     const-wide/16 v0, 0x78
 
-    .line 4
     iput-wide v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->c:J
 
-    .line 5
     iput-wide v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->d:J
 
     const-wide/16 v0, 0xfa
 
-    .line 6
     iput-wide v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->e:J
 
-    .line 7
     iput-wide v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->f:J
 
     return-void
@@ -86,12 +78,10 @@
 .method static e(Landroidx/recyclerview/widget/RecyclerView$y;)I
     .locals 3
 
-    .line 2
     iget v0, p0, Landroidx/recyclerview/widget/RecyclerView$y;->mFlags:I
 
     and-int/lit8 v0, v0, 0xe
 
-    .line 3
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$y;->isInvalid()Z
 
     move-result v1
@@ -107,12 +97,10 @@
 
     if-nez v1, :cond_1
 
-    .line 4
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$y;->getOldPosition()I
 
     move-result v1
 
-    .line 5
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$y;->getAdapterPosition()I
 
     move-result p0
@@ -146,7 +134,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 3
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->h()Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$c;
 
     move-result-object p1
@@ -186,7 +173,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->h()Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$c;
 
     move-result-object p1
@@ -199,7 +185,6 @@
 .method public final a()V
     .locals 3
 
-    .line 5
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -211,7 +196,6 @@
     :goto_0
     if-ge v1, v0, :cond_0
 
-    .line 6
     iget-object v2, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -226,7 +210,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->b:Ljava/util/ArrayList;
 
@@ -238,7 +221,6 @@
 .method a(Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->a:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$b;
 
     return-void
@@ -305,7 +287,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->a(Landroidx/recyclerview/widget/RecyclerView$y;)Z
 
     move-result p1
@@ -323,15 +304,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->d(Landroidx/recyclerview/widget/RecyclerView$y;)V
 
-    .line 2
     iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->a:Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$b;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0, p1}, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$b;->a(Landroidx/recyclerview/widget/RecyclerView$y;)V
 
     :cond_0
@@ -356,7 +334,6 @@
 .method public c()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->c:J
 
     return-wide v0
@@ -387,7 +364,6 @@
 .method public d()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->f:J
 
     return-wide v0
@@ -406,7 +382,6 @@
 .method public e()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->e:J
 
     return-wide v0
@@ -415,7 +390,6 @@
 .method public f()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator;->d:J
 
     return-wide v0
@@ -429,7 +403,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$c;
 
     invoke-direct {v0}, Landroidx/recyclerview/widget/RecyclerView$ItemAnimator$c;-><init>()V

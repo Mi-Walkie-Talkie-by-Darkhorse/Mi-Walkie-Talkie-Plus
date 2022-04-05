@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/charts/PieChart;
 .super Lcom/github/mikephil/charting/charts/PieRadarChartBase;
-.source "PieChart.java"
 
 
 # annotations
@@ -47,10 +46,8 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;-><init>(Landroid/content/Context;)V
 
-    .line 2
     new-instance p1, Landroid/graphics/RectF;
 
     invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
@@ -59,38 +56,30 @@
 
     const/4 p1, 0x1
 
-    .line 3
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->L:Z
 
     new-array v0, p1, [F
 
-    .line 4
     iput-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->M:[F
 
     new-array v0, p1, [F
 
-    .line 5
     iput-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
 
-    .line 6
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->O:Z
 
     const/4 v0, 0x0
 
-    .line 7
     iput-boolean v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->P:Z
 
-    .line 8
     iput-boolean v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->Q:Z
 
     const-string v0, ""
 
-    .line 9
     iput-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->R:Ljava/lang/CharSequence;
 
     const/4 v0, 0x0
 
-    .line 10
     invoke-static {v0, v0}, Lb/a/a/a/g/e;->a(FF)Lb/a/a/a/g/e;
 
     move-result-object v0
@@ -99,25 +88,20 @@
 
     const/high16 v0, 0x42480000    # 50.0f
 
-    .line 11
     iput v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->T:F
 
     const/high16 v0, 0x425c0000    # 55.0f
 
-    .line 12
     iput v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->U:F
 
-    .line 13
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->V:Z
 
     const/high16 p1, 0x42c80000    # 100.0f
 
-    .line 14
     iput p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->W:F
 
     const/high16 p1, 0x43b40000    # 360.0f
 
-    .line 15
     iput p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->b0:F
 
     return-void
@@ -126,10 +110,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 16
     invoke-direct {p0, p1, p2}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 17
     new-instance p1, Landroid/graphics/RectF;
 
     invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
@@ -138,38 +120,30 @@
 
     const/4 p1, 0x1
 
-    .line 18
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->L:Z
 
     new-array p2, p1, [F
 
-    .line 19
     iput-object p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->M:[F
 
     new-array p2, p1, [F
 
-    .line 20
     iput-object p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
 
-    .line 21
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->O:Z
 
     const/4 p2, 0x0
 
-    .line 22
     iput-boolean p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->P:Z
 
-    .line 23
     iput-boolean p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->Q:Z
 
     const-string p2, ""
 
-    .line 24
     iput-object p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->R:Ljava/lang/CharSequence;
 
     const/4 p2, 0x0
 
-    .line 25
     invoke-static {p2, p2}, Lb/a/a/a/g/e;->a(FF)Lb/a/a/a/g/e;
 
     move-result-object p2
@@ -178,25 +152,20 @@
 
     const/high16 p2, 0x42480000    # 50.0f
 
-    .line 26
     iput p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->T:F
 
     const/high16 p2, 0x425c0000    # 55.0f
 
-    .line 27
     iput p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->U:F
 
-    .line 28
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->V:Z
 
     const/high16 p1, 0x42c80000    # 100.0f
 
-    .line 29
     iput p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->W:F
 
     const/high16 p1, 0x43b40000    # 360.0f
 
-    .line 30
     iput p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->b0:F
 
     return-void
@@ -205,10 +174,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 31
     invoke-direct {p0, p1, p2, p3}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 32
     new-instance p1, Landroid/graphics/RectF;
 
     invoke-direct {p1}, Landroid/graphics/RectF;-><init>()V
@@ -217,38 +184,30 @@
 
     const/4 p1, 0x1
 
-    .line 33
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->L:Z
 
     new-array p2, p1, [F
 
-    .line 34
     iput-object p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->M:[F
 
     new-array p2, p1, [F
 
-    .line 35
     iput-object p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
 
-    .line 36
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->O:Z
 
     const/4 p2, 0x0
 
-    .line 37
     iput-boolean p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->P:Z
 
-    .line 38
     iput-boolean p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->Q:Z
 
     const-string p2, ""
 
-    .line 39
     iput-object p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->R:Ljava/lang/CharSequence;
 
     const/4 p2, 0x0
 
-    .line 40
     invoke-static {p2, p2}, Lb/a/a/a/g/e;->a(FF)Lb/a/a/a/g/e;
 
     move-result-object p2
@@ -257,25 +216,20 @@
 
     const/high16 p2, 0x42480000    # 50.0f
 
-    .line 41
     iput p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->T:F
 
     const/high16 p2, 0x425c0000    # 55.0f
 
-    .line 42
     iput p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->U:F
 
-    .line 43
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->V:Z
 
     const/high16 p1, 0x42c80000    # 100.0f
 
-    .line 44
     iput p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->W:F
 
     const/high16 p1, 0x43b40000    # 360.0f
 
-    .line 45
     iput p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->b0:F
 
     return-void
@@ -286,7 +240,6 @@
 
     div-float/2addr p1, p2
 
-    .line 1
     iget p2, p0, Lcom/github/mikephil/charting/charts/PieChart;->b0:F
 
     mul-float p1, p1, p2
@@ -297,7 +250,6 @@
 .method private u()V
     .locals 10
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->b:Lcom/github/mikephil/charting/data/h;
 
     check-cast v0, Lcom/github/mikephil/charting/data/m;
@@ -306,7 +258,6 @@
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/github/mikephil/charting/charts/PieChart;->M:[F
 
     array-length v1, v1
@@ -317,7 +268,6 @@
 
     if-eq v1, v0, :cond_0
 
-    .line 3
     new-array v1, v0, [F
 
     iput-object v1, p0, Lcom/github/mikephil/charting/charts/PieChart;->M:[F
@@ -330,7 +280,6 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 4
     iget-object v4, p0, Lcom/github/mikephil/charting/charts/PieChart;->M:[F
 
     aput v2, v4, v1
@@ -339,7 +288,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     :goto_1
     iget-object v1, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
@@ -348,7 +296,6 @@
 
     if-eq v1, v0, :cond_2
 
-    .line 6
     new-array v0, v0, [F
 
     iput-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
@@ -361,7 +308,6 @@
     :goto_2
     if-ge v1, v0, :cond_3
 
-    .line 7
     iget-object v4, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
 
     aput v2, v4, v1
@@ -370,7 +316,6 @@
 
     goto :goto_2
 
-    .line 8
     :cond_3
     :goto_3
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->b:Lcom/github/mikephil/charting/data/h;
@@ -381,7 +326,6 @@
 
     move-result v0
 
-    .line 9
     iget-object v1, p0, Lcom/github/mikephil/charting/charts/Chart;->b:Lcom/github/mikephil/charting/data/h;
 
     check-cast v1, Lcom/github/mikephil/charting/data/m;
@@ -394,7 +338,6 @@
 
     const/4 v4, 0x0
 
-    .line 10
     :goto_4
     iget-object v5, p0, Lcom/github/mikephil/charting/charts/Chart;->b:Lcom/github/mikephil/charting/data/h;
 
@@ -406,7 +349,6 @@
 
     if-ge v2, v5, :cond_6
 
-    .line 11
     invoke-interface {v1, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
@@ -415,7 +357,6 @@
 
     const/4 v6, 0x0
 
-    .line 12
     :goto_5
     invoke-interface {v5}, Lb/a/a/a/e/b/e;->q0()I
 
@@ -423,7 +364,6 @@
 
     if-ge v6, v7, :cond_5
 
-    .line 13
     iget-object v7, p0, Lcom/github/mikephil/charting/charts/PieChart;->M:[F
 
     invoke-interface {v5, v6}, Lb/a/a/a/e/b/e;->a(I)Lcom/github/mikephil/charting/data/Entry;
@@ -448,7 +388,6 @@
 
     if-nez v4, :cond_4
 
-    .line 14
     iget-object v7, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
 
     iget-object v8, p0, Lcom/github/mikephil/charting/charts/PieChart;->M:[F
@@ -459,7 +398,6 @@
 
     goto :goto_6
 
-    .line 15
     :cond_4
     iget-object v7, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
 
@@ -496,7 +434,6 @@
 .method public a(F)I
     .locals 3
 
-    .line 18
     invoke-virtual {p0}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;->getRotationAngle()F
 
     move-result v0
@@ -509,7 +446,6 @@
 
     const/4 v0, 0x0
 
-    .line 19
     :goto_0
     iget-object v1, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
 
@@ -517,7 +453,6 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 20
     aget v1, v1, v0
 
     cmpl-float v1, v1, p1
@@ -540,7 +475,6 @@
 .method public a(I)Z
     .locals 4
 
-    .line 15
     invoke-virtual {p0}, Lcom/github/mikephil/charting/charts/Chart;->m()Z
 
     move-result v0
@@ -554,7 +488,6 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 16
     :goto_0
     iget-object v2, p0, Lcom/github/mikephil/charting/charts/Chart;->A:[Lb/a/a/a/d/d;
 
@@ -562,7 +495,6 @@
 
     if-ge v0, v3, :cond_2
 
-    .line 17
     aget-object v2, v2, v0
 
     invoke-virtual {v2}, Lb/a/a/a/d/d;->g()F
@@ -589,12 +521,10 @@
 .method protected a(Lb/a/a/a/d/d;)[F
     .locals 10
 
-    .line 1
     invoke-virtual {p0}, Lcom/github/mikephil/charting/charts/PieChart;->getCenterCircleBox()Lb/a/a/a/g/e;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {p0}, Lcom/github/mikephil/charting/charts/PieChart;->getRadius()F
 
     move-result v1
@@ -607,7 +537,6 @@
 
     mul-float v2, v2, v3
 
-    .line 3
     invoke-virtual {p0}, Lcom/github/mikephil/charting/charts/PieChart;->r()Z
 
     move-result v3
@@ -620,7 +549,6 @@
 
     div-float v2, v1, v2
 
-    .line 4
     invoke-virtual {p0}, Lcom/github/mikephil/charting/charts/PieChart;->getHoleRadius()F
 
     move-result v3
@@ -634,19 +562,16 @@
     :cond_0
     sub-float/2addr v1, v2
 
-    .line 5
     invoke-virtual {p0}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;->getRotationAngle()F
 
     move-result v2
 
-    .line 6
     invoke-virtual {p1}, Lb/a/a/a/d/d;->g()F
 
     move-result p1
 
     float-to-int p1, p1
 
-    .line 7
     iget-object v3, p0, Lcom/github/mikephil/charting/charts/PieChart;->M:[F
 
     aget v3, v3, p1
@@ -655,7 +580,6 @@
 
     float-to-double v4, v1
 
-    .line 8
     iget-object v1, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
 
     aget v1, v1, p1
@@ -666,7 +590,6 @@
 
     iget-object v6, p0, Lcom/github/mikephil/charting/charts/Chart;->u:Lb/a/a/a/a/a;
 
-    .line 9
     invoke-virtual {v6}, Lb/a/a/a/a/a;->b()F
 
     move-result v6
@@ -675,7 +598,6 @@
 
     float-to-double v6, v1
 
-    .line 10
     invoke-static {v6, v7}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v6
@@ -694,7 +616,6 @@
 
     double-to-float v1, v6
 
-    .line 11
     iget-object v6, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
 
     aget p1, v6, p1
@@ -705,7 +626,6 @@
 
     iget-object p1, p0, Lcom/github/mikephil/charting/charts/Chart;->u:Lb/a/a/a/a/a;
 
-    .line 12
     invoke-virtual {p1}, Lb/a/a/a/a/a;->b()F
 
     move-result p1
@@ -714,7 +634,6 @@
 
     float-to-double v2, v2
 
-    .line 13
     invoke-static {v2, v3}, Ljava/lang/Math;->toRadians(D)D
 
     move-result-wide v2
@@ -733,7 +652,6 @@
 
     double-to-float p1, v4
 
-    .line 14
     invoke-static {v0}, Lb/a/a/a/g/e;->a(Lb/a/a/a/g/e;)V
 
     const/4 v0, 0x2
@@ -754,17 +672,14 @@
 .method public d()V
     .locals 8
 
-    .line 1
     invoke-super {p0}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;->d()V
 
-    .line 2
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->b:Lcom/github/mikephil/charting/data/h;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;->getDiameter()F
 
@@ -774,12 +689,10 @@
 
     div-float/2addr v0, v1
 
-    .line 4
     invoke-virtual {p0}, Lcom/github/mikephil/charting/charts/Chart;->getCenterOffsets()Lb/a/a/a/g/e;
 
     move-result-object v1
 
-    .line 5
     iget-object v2, p0, Lcom/github/mikephil/charting/charts/Chart;->b:Lcom/github/mikephil/charting/data/h;
 
     check-cast v2, Lcom/github/mikephil/charting/data/m;
@@ -792,7 +705,6 @@
 
     move-result v2
 
-    .line 6
     iget-object v3, p0, Lcom/github/mikephil/charting/charts/PieChart;->K:Landroid/graphics/RectF;
 
     iget v4, v1, Lb/a/a/a/g/e;->c:F
@@ -817,7 +729,6 @@
 
     invoke-virtual {v3, v5, v7, v4, v6}, Landroid/graphics/RectF;->set(FFFF)V
 
-    .line 7
     invoke-static {v1}, Lb/a/a/a/g/e;->a(Lb/a/a/a/g/e;)V
 
     return-void
@@ -826,10 +737,8 @@
 .method protected g()V
     .locals 3
 
-    .line 1
     invoke-super {p0}, Lcom/github/mikephil/charting/charts/PieRadarChartBase;->g()V
 
-    .line 2
     new-instance v0, Lb/a/a/a/f/m;
 
     iget-object v1, p0, Lcom/github/mikephil/charting/charts/Chart;->u:Lb/a/a/a/a/a;
@@ -842,10 +751,8 @@
 
     const/4 v0, 0x0
 
-    .line 3
     iput-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->i:Lcom/github/mikephil/charting/components/XAxis;
 
-    .line 4
     new-instance v0, Lb/a/a/a/d/g;
 
     invoke-direct {v0, p0}, Lb/a/a/a/d/g;-><init>(Lcom/github/mikephil/charting/charts/PieChart;)V
@@ -858,7 +765,6 @@
 .method public getAbsoluteAngles()[F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->N:[F
 
     return-object v0
@@ -867,7 +773,6 @@
 .method public getCenterCircleBox()Lb/a/a/a/g/e;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->K:Landroid/graphics/RectF;
 
     invoke-virtual {v0}, Landroid/graphics/RectF;->centerX()F
@@ -890,7 +795,6 @@
 .method public getCenterText()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->R:Ljava/lang/CharSequence;
 
     return-object v0
@@ -899,7 +803,6 @@
 .method public getCenterTextOffset()Lb/a/a/a/g/e;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->S:Lb/a/a/a/g/e;
 
     iget v1, v0, Lb/a/a/a/g/e;->c:F
@@ -916,7 +819,6 @@
 .method public getCenterTextRadiusPercent()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->W:F
 
     return v0
@@ -925,7 +827,6 @@
 .method public getCircleBox()Landroid/graphics/RectF;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->K:Landroid/graphics/RectF;
 
     return-object v0
@@ -934,7 +835,6 @@
 .method public getDrawAngles()[F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->M:[F
 
     return-object v0
@@ -943,7 +843,6 @@
 .method public getHoleRadius()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->T:F
 
     return v0
@@ -952,7 +851,6 @@
 .method public getMaxAngle()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->b0:F
 
     return v0
@@ -961,7 +859,6 @@
 .method public getRadius()F
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->K:Landroid/graphics/RectF;
 
     if-nez v0, :cond_0
@@ -970,7 +867,6 @@
 
     return v0
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Landroid/graphics/RectF;->width()F
 
@@ -1006,7 +902,6 @@
 .method protected getRequiredLegendOffset()F
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->q:Lb/a/a/a/f/i;
 
     invoke-virtual {v0}, Lb/a/a/a/f/i;->a()Landroid/graphics/Paint;
@@ -1027,7 +922,6 @@
 .method public getTransparentCircleRadius()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->U:F
 
     return v0
@@ -1038,7 +932,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/RuntimeException;
 
     const-string v1, "PieChart has no XAxis"
@@ -1051,7 +944,6 @@
 .method protected n()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/github/mikephil/charting/charts/PieChart;->u()V
 
     return-void
@@ -1060,7 +952,6 @@
 .method protected onDetachedFromWindow()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     if-eqz v0, :cond_0
@@ -1069,12 +960,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 2
     check-cast v0, Lb/a/a/a/f/m;
 
     invoke-virtual {v0}, Lb/a/a/a/f/m;->f()V
 
-    .line 3
     :cond_0
     invoke-super {p0}, Lcom/github/mikephil/charting/charts/Chart;->onDetachedFromWindow()V
 
@@ -1084,56 +973,46 @@
 .method protected onDraw(Landroid/graphics/Canvas;)V
     .locals 2
 
-    .line 1
     invoke-super {p0, p1}, Lcom/github/mikephil/charting/charts/Chart;->onDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->b:Lcom/github/mikephil/charting/data/h;
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     invoke-virtual {v0, p1}, Lb/a/a/a/f/g;->a(Landroid/graphics/Canvas;)V
 
-    .line 4
     invoke-virtual {p0}, Lcom/github/mikephil/charting/charts/Chart;->m()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     iget-object v1, p0, Lcom/github/mikephil/charting/charts/Chart;->A:[Lb/a/a/a/d/d;
 
     invoke-virtual {v0, p1, v1}, Lb/a/a/a/f/g;->a(Landroid/graphics/Canvas;[Lb/a/a/a/d/d;)V
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     invoke-virtual {v0, p1}, Lb/a/a/a/f/g;->b(Landroid/graphics/Canvas;)V
 
-    .line 7
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     invoke-virtual {v0, p1}, Lb/a/a/a/f/g;->c(Landroid/graphics/Canvas;)V
 
-    .line 8
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->q:Lb/a/a/a/f/i;
 
     invoke-virtual {v0, p1}, Lb/a/a/a/f/i;->a(Landroid/graphics/Canvas;)V
 
-    .line 9
     invoke-virtual {p0, p1}, Lcom/github/mikephil/charting/charts/Chart;->a(Landroid/graphics/Canvas;)V
 
-    .line 10
     invoke-virtual {p0, p1}, Lcom/github/mikephil/charting/charts/Chart;->b(Landroid/graphics/Canvas;)V
 
     return-void
@@ -1142,7 +1021,6 @@
 .method public p()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->V:Z
 
     return v0
@@ -1151,7 +1029,6 @@
 .method public q()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->L:Z
 
     return v0
@@ -1160,7 +1037,6 @@
 .method public r()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->O:Z
 
     return v0
@@ -1169,7 +1045,6 @@
 .method public s()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->P:Z
 
     return v0
@@ -1182,12 +1057,10 @@
 
     const-string p1, ""
 
-    .line 1
     iput-object p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->R:Ljava/lang/CharSequence;
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iput-object p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->R:Ljava/lang/CharSequence;
 
@@ -1198,7 +1071,6 @@
 .method public setCenterTextColor(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     check-cast v0, Lb/a/a/a/f/m;
@@ -1215,7 +1087,6 @@
 .method public setCenterTextOffset(FF)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->S:Lb/a/a/a/g/e;
 
     invoke-static {p1}, Lb/a/a/a/g/i;->a(F)F
@@ -1224,7 +1095,6 @@
 
     iput p1, v0, Lb/a/a/a/g/e;->c:F
 
-    .line 2
     iget-object p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->S:Lb/a/a/a/g/e;
 
     invoke-static {p2}, Lb/a/a/a/g/i;->a(F)F
@@ -1239,7 +1109,6 @@
 .method public setCenterTextRadiusPercent(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->W:F
 
     return-void
@@ -1248,7 +1117,6 @@
 .method public setCenterTextSize(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     check-cast v0, Lb/a/a/a/f/m;
@@ -1257,12 +1125,10 @@
 
     move-result-object v0
 
-    .line 2
     invoke-static {p1}, Lb/a/a/a/g/i;->a(F)F
 
     move-result p1
 
-    .line 3
     invoke-virtual {v0, p1}, Landroid/text/TextPaint;->setTextSize(F)V
 
     return-void
@@ -1271,7 +1137,6 @@
 .method public setCenterTextSizePixels(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     check-cast v0, Lb/a/a/a/f/m;
@@ -1288,7 +1153,6 @@
 .method public setCenterTextTypeface(Landroid/graphics/Typeface;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     check-cast v0, Lb/a/a/a/f/m;
@@ -1305,7 +1169,6 @@
 .method public setDrawCenterText(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->V:Z
 
     return-void
@@ -1314,7 +1177,6 @@
 .method public setDrawEntryLabels(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->L:Z
 
     return-void
@@ -1323,7 +1185,6 @@
 .method public setDrawHoleEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->O:Z
 
     return-void
@@ -1334,7 +1195,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->L:Z
 
     return-void
@@ -1343,7 +1203,6 @@
 .method public setDrawSlicesUnderHole(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->P:Z
 
     return-void
@@ -1352,7 +1211,6 @@
 .method public setEntryLabelColor(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     check-cast v0, Lb/a/a/a/f/m;
@@ -1369,7 +1227,6 @@
 .method public setEntryLabelTextSize(F)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     check-cast v0, Lb/a/a/a/f/m;
@@ -1390,7 +1247,6 @@
 .method public setEntryLabelTypeface(Landroid/graphics/Typeface;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     check-cast v0, Lb/a/a/a/f/m;
@@ -1407,7 +1263,6 @@
 .method public setHoleColor(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     check-cast v0, Lb/a/a/a/f/m;
@@ -1424,7 +1279,6 @@
 .method public setHoleRadius(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->T:F
 
     return-void
@@ -1450,7 +1304,6 @@
 
     const/high16 p1, 0x42b40000    # 90.0f
 
-    .line 1
     :cond_1
     iput p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->b0:F
 
@@ -1460,7 +1313,6 @@
 .method public setTransparentCircleAlpha(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     check-cast v0, Lb/a/a/a/f/m;
@@ -1477,7 +1329,6 @@
 .method public setTransparentCircleColor(I)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/github/mikephil/charting/charts/Chart;->r:Lb/a/a/a/f/g;
 
     check-cast v0, Lb/a/a/a/f/m;
@@ -1486,15 +1337,12 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Landroid/graphics/Paint;->getAlpha()I
 
     move-result v1
 
-    .line 3
     invoke-virtual {v0, p1}, Landroid/graphics/Paint;->setColor(I)V
 
-    .line 4
     invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAlpha(I)V
 
     return-void
@@ -1503,7 +1351,6 @@
 .method public setTransparentCircleRadius(F)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->U:F
 
     return-void
@@ -1512,7 +1359,6 @@
 .method public setUsePercentValues(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/github/mikephil/charting/charts/PieChart;->Q:Z
 
     return-void
@@ -1521,7 +1367,6 @@
 .method public t()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/github/mikephil/charting/charts/PieChart;->Q:Z
 
     return v0

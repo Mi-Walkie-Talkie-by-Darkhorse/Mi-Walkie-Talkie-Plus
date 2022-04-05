@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/cy$1;
 .super Ljava/lang/Object;
-.source "MyLocationOverlay.java"
 
 # interfaces
 .implements Landroid/animation/Animator$AnimatorListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/amap/api/col/l3/cy;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/cy$1;->a:Lcom/amap/api/col/l3/cy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +42,6 @@
 .method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lcom/amap/api/col/l3/cy$1;->a:Lcom/amap/api/col/l3/cy;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/cy;->a(Lcom/amap/api/col/l3/cy;)V

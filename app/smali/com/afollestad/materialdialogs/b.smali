@@ -1,6 +1,5 @@
 .class Lcom/afollestad/materialdialogs/b;
 .super Landroid/app/Dialog;
-.source "DialogBase.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnShowListener;
@@ -16,7 +15,6 @@
 .method constructor <init>(Landroid/content/Context;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
     return-void
@@ -27,7 +25,6 @@
 .method final a()V
     .locals 0
 
-    .line 1
     invoke-super {p0, p0}, Landroid/app/Dialog;->setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
 
     return-void
@@ -36,7 +33,6 @@
 .method final a(Landroid/view/View;)V
     .locals 0
 
-    .line 2
     invoke-super {p0, p1}, Landroid/app/Dialog;->setContentView(Landroid/view/View;)V
 
     return-void
@@ -45,7 +41,6 @@
 .method public findViewById(I)Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/b;->a:Lcom/afollestad/materialdialogs/internal/MDRootLayout;
 
     invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->findViewById(I)Landroid/view/View;
@@ -58,12 +53,10 @@
 .method public onShow(Landroid/content/DialogInterface;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/afollestad/materialdialogs/b;->b:Landroid/content/DialogInterface$OnShowListener;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0, p1}, Landroid/content/DialogInterface$OnShowListener;->onShow(Landroid/content/DialogInterface;)V
 
     :cond_0
@@ -81,7 +74,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/IllegalAccessError;
 
     const-string v0, "setContentView() is not supported in MaterialDialog. Specify a custom view in the Builder instead."
@@ -106,7 +98,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 2
     new-instance p1, Ljava/lang/IllegalAccessError;
 
     const-string v0, "setContentView() is not supported in MaterialDialog. Specify a custom view in the Builder instead."
@@ -131,7 +122,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 3
     new-instance p1, Ljava/lang/IllegalAccessError;
 
     const-string p2, "setContentView() is not supported in MaterialDialog. Specify a custom view in the Builder instead."
@@ -144,7 +134,6 @@
 .method public final setOnShowListener(Landroid/content/DialogInterface$OnShowListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/afollestad/materialdialogs/b;->b:Landroid/content/DialogInterface$OnShowListener;
 
     return-void

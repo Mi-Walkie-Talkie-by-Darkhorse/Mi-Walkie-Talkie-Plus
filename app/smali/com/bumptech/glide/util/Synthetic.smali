@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/bumptech/glide/util/Synthetic;
 .super Ljava/lang/Object;
-.source "Synthetic.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/FlowableOperator;
 .super Ljava/lang/Object;
-.source "FlowableOperator.java"
 
 
 # annotations

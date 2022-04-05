@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/l;
 .super Landroid/view/animation/Animation;
-.source "HeightAnimation.java"
 
 
 # instance fields
@@ -15,20 +14,16 @@
 .method public constructor <init>(Landroid/view/View;II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/l;->b:Landroid/view/View;
 
-    .line 3
     iput p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/l;->a:I
 
     sub-int/2addr p3, p2
 
     int-to-float p1, p3
 
-    .line 4
     iput p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/l;->c:F
 
     return-void
@@ -39,7 +34,6 @@
 .method protected applyTransformation(FLandroid/view/animation/Transformation;)V
     .locals 2
 
-    .line 1
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/l;->b:Landroid/view/View;
 
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -60,7 +54,6 @@
 
     iput p1, p2, Landroid/view/ViewGroup$LayoutParams;->height:I
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/l;->b:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->requestLayout()V

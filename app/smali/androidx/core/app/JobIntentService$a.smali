@@ -1,6 +1,5 @@
 .class final Landroidx/core/app/JobIntentService$a;
 .super Landroid/os/AsyncTask;
-.source "JobIntentService.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method constructor <init>(Landroidx/core/app/JobIntentService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/core/app/JobIntentService$a;->a:Landroidx/core/app/JobIntentService;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
@@ -45,7 +43,6 @@
 .method protected varargs a([Ljava/lang/Void;)Ljava/lang/Void;
     .locals 2
 
-    .line 1
     :goto_0
     iget-object p1, p0, Landroidx/core/app/JobIntentService$a;->a:Landroidx/core/app/JobIntentService;
 
@@ -55,7 +52,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object v0, p0, Landroidx/core/app/JobIntentService$a;->a:Landroidx/core/app/JobIntentService;
 
     invoke-interface {p1}, Landroidx/core/app/JobIntentService$e;->getIntent()Landroid/content/Intent;
@@ -64,7 +60,6 @@
 
     invoke-virtual {v0, v1}, Landroidx/core/app/JobIntentService;->a(Landroid/content/Intent;)V
 
-    .line 3
     invoke-interface {p1}, Landroidx/core/app/JobIntentService$e;->complete()V
 
     goto :goto_0
@@ -78,7 +73,6 @@
 .method protected a(Ljava/lang/Void;)V
     .locals 0
 
-    .line 4
     iget-object p1, p0, Landroidx/core/app/JobIntentService$a;->a:Landroidx/core/app/JobIntentService;
 
     invoke-virtual {p1}, Landroidx/core/app/JobIntentService;->d()V
@@ -89,7 +83,6 @@
 .method protected b(Ljava/lang/Void;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Landroidx/core/app/JobIntentService$a;->a:Landroidx/core/app/JobIntentService;
 
     invoke-virtual {p1}, Landroidx/core/app/JobIntentService;->d()V
@@ -100,7 +93,6 @@
 .method protected bridge synthetic doInBackground([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, [Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Landroidx/core/app/JobIntentService$a;->a([Ljava/lang/Void;)Ljava/lang/Void;
@@ -113,7 +105,6 @@
 .method protected bridge synthetic onCancelled(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Landroidx/core/app/JobIntentService$a;->a(Ljava/lang/Void;)V
@@ -124,7 +115,6 @@
 .method protected bridge synthetic onPostExecute(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Void;
 
     invoke-virtual {p0, p1}, Landroidx/core/app/JobIntentService$a;->b(Ljava/lang/Void;)V

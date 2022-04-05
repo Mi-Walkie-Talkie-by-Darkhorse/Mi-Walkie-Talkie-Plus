@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/amap/mapcore/Inner_3dMap_location;
 .super Landroid/location/Location;
-.source "Inner_3dMap_location.java"
 
 # interfaces
 .implements Ljava/lang/Cloneable;

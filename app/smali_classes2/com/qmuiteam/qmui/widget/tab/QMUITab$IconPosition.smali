@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/widget/tab/QMUITab$IconPosition;
 .super Ljava/lang/Object;
-.source "QMUITab.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

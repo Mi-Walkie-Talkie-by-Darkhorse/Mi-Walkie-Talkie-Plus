@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;
 .super Ljava/util/concurrent/atomic/AtomicInteger;
-.source "FlowableFlatMap.java"
 
 # interfaces
 .implements Lio/reactivex/FlowableSubscriber;
@@ -132,12 +131,10 @@
 
     new-array v1, v0, [Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
-    .line 1
     sput-object v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->EMPTY:[Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
     new-array v0, v0, [Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
-    .line 2
     sput-object v0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->CANCELLED:[Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
     return-void
@@ -157,57 +154,46 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/util/AtomicThrowable;
 
     invoke-direct {v0}, Lio/reactivex/internal/util/AtomicThrowable;-><init>()V
 
     iput-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->errs:Lio/reactivex/internal/util/AtomicThrowable;
 
-    .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
     iput-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 4
     new-instance v0, Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicLong;-><init>()V
 
     iput-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
-    .line 5
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->downstream:Lc/a/c;
 
-    .line 6
     iput-object p2, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->mapper:Lio/reactivex/functions/Function;
 
-    .line 7
     iput-boolean p3, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->delayErrors:Z
 
-    .line 8
     iput p4, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->maxConcurrency:I
 
-    .line 9
     iput p5, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->bufferSize:I
 
     const/4 p1, 0x1
 
     shr-int/lit8 p2, p4, 0x1
 
-    .line 10
     invoke-static {p1, p2}, Ljava/lang/Math;->max(II)I
 
     move-result p1
 
     iput p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->scalarLimit:I
 
-    .line 11
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object p2, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->EMPTY:[Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
@@ -229,7 +215,6 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -239,34 +224,27 @@
 
     check-cast v0, [Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
-    .line 2
     sget-object v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->CANCELLED:[Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
     const/4 v2, 0x0
 
     if-ne v0, v1, :cond_1
 
-    .line 3
     invoke-virtual {p1}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->dispose()V
 
     return v2
 
-    .line 4
     :cond_1
     array-length v1, v0
 
     add-int/lit8 v3, v1, 0x1
 
-    .line 5
     new-array v3, v3, [Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
-    .line 6
     invoke-static {v0, v2, v3, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 7
     aput-object p1, v3, v1
 
-    .line 8
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v1, v0, v3}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -283,37 +261,30 @@
 .method public cancel()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->cancelled:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->cancelled:Z
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v0}, Lc/a/d;->cancel()V
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->disposeAll()V
 
-    .line 5
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 6
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->queue:Lio/reactivex/internal/fuseable/SimplePlainQueue;
 
     if-eqz v0, :cond_0
 
-    .line 7
     invoke-interface {v0}, Lio/reactivex/internal/fuseable/SimpleQueue;->clear()V
 
     :cond_0
@@ -323,19 +294,16 @@
 .method checkTerminate()Z
     .locals 3
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->cancelled:Z
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->clearScalarQueue()V
 
     return v1
 
-    .line 3
     :cond_0
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->delayErrors:Z
 
@@ -349,22 +317,18 @@
 
     if-eqz v0, :cond_2
 
-    .line 4
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->clearScalarQueue()V
 
-    .line 5
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->errs:Lio/reactivex/internal/util/AtomicThrowable;
 
     invoke-virtual {v0}, Lio/reactivex/internal/util/AtomicThrowable;->terminate()Ljava/lang/Throwable;
 
     move-result-object v0
 
-    .line 6
     sget-object v2, Lio/reactivex/internal/util/ExceptionHelper;->TERMINATED:Ljava/lang/Throwable;
 
     if-eq v0, v2, :cond_1
 
-    .line 7
     iget-object v2, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v2, v0}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
@@ -381,12 +345,10 @@
 .method clearScalarQueue()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->queue:Lio/reactivex/internal/fuseable/SimplePlainQueue;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lio/reactivex/internal/fuseable/SimpleQueue;->clear()V
 
     :cond_0
@@ -396,7 +358,6 @@
 .method disposeAll()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -405,12 +366,10 @@
 
     check-cast v0, [Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
-    .line 2
     sget-object v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->CANCELLED:[Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
     if-eq v0, v1, :cond_1
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
@@ -419,12 +378,10 @@
 
     check-cast v0, [Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
-    .line 4
     sget-object v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->CANCELLED:[Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
     if-eq v0, v1, :cond_1
 
-    .line 5
     array-length v1, v0
 
     const/4 v2, 0x0
@@ -434,14 +391,12 @@
 
     aget-object v3, v0, v2
 
-    .line 6
     invoke-virtual {v3}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->dispose()V
 
     add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 7
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->errs:Lio/reactivex/internal/util/AtomicThrowable;
 
@@ -451,12 +406,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 8
     sget-object v1, Lio/reactivex/internal/util/ExceptionHelper;->TERMINATED:Ljava/lang/Throwable;
 
     if-eq v0, v1, :cond_1
 
-    .line 9
     invoke-static {v0}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
     :cond_1
@@ -466,14 +419,12 @@
 .method drain()V
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->drainLoop()V
 
     :cond_0
@@ -485,12 +436,10 @@
 
     move-object/from16 v1, p0
 
-    .line 1
     iget-object v2, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->downstream:Lc/a/c;
 
     const/4 v4, 0x1
 
-    .line 2
     :cond_0
     :goto_0
     invoke-virtual/range {p0 .. p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->checkTerminate()Z
@@ -501,11 +450,9 @@
 
     return-void
 
-    .line 3
     :cond_1
     iget-object v0, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->queue:Lio/reactivex/internal/fuseable/SimplePlainQueue;
 
-    .line 4
     iget-object v5, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v5}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
@@ -544,12 +491,10 @@
 
     if-eqz v19, :cond_5
 
-    .line 5
     invoke-interface {v0}, Lio/reactivex/internal/fuseable/SimplePlainQueue;->poll()Ljava/lang/Object;
 
     move-result-object v9
 
-    .line 6
     invoke-virtual/range {p0 .. p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->checkTerminate()Z
 
     move-result v18
@@ -565,7 +510,6 @@
 
     goto :goto_4
 
-    .line 7
     :cond_4
     invoke-interface {v2, v9}, Lc/a/c;->onNext(Ljava/lang/Object;)V
 
@@ -591,7 +535,6 @@
 
     goto :goto_5
 
-    .line 8
     :cond_6
     iget-object v5, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
@@ -616,15 +559,12 @@
 
     goto :goto_2
 
-    .line 9
     :cond_9
     :goto_6
     iget-boolean v0, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->done:Z
 
-    .line 10
     iget-object v7, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->queue:Lio/reactivex/internal/fuseable/SimplePlainQueue;
 
-    .line 11
     iget-object v8, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v8}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
@@ -633,14 +573,12 @@
 
     check-cast v8, [Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
-    .line 12
     array-length v9, v8
 
     if-eqz v0, :cond_d
 
     if-eqz v7, :cond_a
 
-    .line 13
     invoke-interface {v7}, Lio/reactivex/internal/fuseable/SimpleQueue;->isEmpty()Z
 
     move-result v0
@@ -650,26 +588,22 @@
     :cond_a
     if-nez v9, :cond_d
 
-    .line 14
     iget-object v0, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->errs:Lio/reactivex/internal/util/AtomicThrowable;
 
     invoke-virtual {v0}, Lio/reactivex/internal/util/AtomicThrowable;->terminate()Ljava/lang/Throwable;
 
     move-result-object v0
 
-    .line 15
     sget-object v3, Lio/reactivex/internal/util/ExceptionHelper;->TERMINATED:Ljava/lang/Throwable;
 
     if-eq v0, v3, :cond_c
 
     if-nez v0, :cond_b
 
-    .line 16
     invoke-interface {v2}, Lc/a/c;->onComplete()V
 
     goto :goto_7
 
-    .line 17
     :cond_b
     invoke-interface {v2, v0}, Lc/a/c;->onError(Ljava/lang/Throwable;)V
 
@@ -682,15 +616,12 @@
 
     if-eqz v9, :cond_26
 
-    .line 18
     iget-wide v3, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->lastId:J
 
-    .line 19
     iget v0, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->lastIndex:I
 
     if-le v9, v0, :cond_e
 
-    .line 20
     aget-object v7, v8, v0
 
     iget-wide v11, v7, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->id:J
@@ -710,7 +641,6 @@
     :goto_8
     if-ge v7, v9, :cond_12
 
-    .line 21
     aget-object v11, v8, v0
 
     iget-wide v11, v11, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->id:J
@@ -733,12 +663,10 @@
 
     goto :goto_8
 
-    .line 22
     :cond_12
     :goto_9
     iput v0, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->lastIndex:I
 
-    .line 23
     aget-object v3, v8, v0
 
     iget-wide v3, v3, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->id:J
@@ -755,7 +683,6 @@
     :goto_a
     if-ge v4, v9, :cond_25
 
-    .line 24
     invoke-virtual/range {p0 .. p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->checkTerminate()Z
 
     move-result v7
@@ -764,13 +691,11 @@
 
     return-void
 
-    .line 25
     :cond_14
     aget-object v7, v8, v3
 
     const/4 v11, 0x0
 
-    .line 26
     :goto_b
     invoke-virtual/range {p0 .. p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->checkTerminate()Z
 
@@ -780,7 +705,6 @@
 
     return-void
 
-    .line 27
     :cond_15
     iget-object v12, v7, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
@@ -804,7 +728,6 @@
 
     if-eqz v23, :cond_1b
 
-    .line 28
     :try_start_0
     invoke-interface {v12}, Lio/reactivex/internal/fuseable/SimpleQueue;->poll()Ljava/lang/Object;
 
@@ -816,11 +739,9 @@
 
     goto :goto_d
 
-    .line 29
     :cond_17
     invoke-interface {v2, v11}, Lc/a/c;->onNext(Ljava/lang/Object;)V
 
-    .line 30
     invoke-virtual/range {p0 .. p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->checkTerminate()Z
 
     move-result v23
@@ -843,28 +764,22 @@
 
     move-object v8, v0
 
-    .line 31
     invoke-static {v8}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 32
     invoke-virtual {v7}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->dispose()V
 
-    .line 33
     iget-object v0, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->errs:Lio/reactivex/internal/util/AtomicThrowable;
 
     invoke-virtual {v0, v8}, Lio/reactivex/internal/util/AtomicThrowable;->addThrowable(Ljava/lang/Throwable;)Z
 
-    .line 34
     iget-boolean v0, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->delayErrors:Z
 
     if-nez v0, :cond_19
 
-    .line 35
     iget-object v0, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v0}, Lc/a/d;->cancel()V
 
-    .line 36
     :cond_19
     invoke-virtual/range {p0 .. p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->checkTerminate()Z
 
@@ -874,7 +789,6 @@
 
     return-void
 
-    .line 37
     :cond_1a
     invoke-virtual {v1, v7}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->removeInner(Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;)V
 
@@ -896,7 +810,6 @@
 
     if-nez v10, :cond_1c
 
-    .line 38
     iget-object v5, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
     neg-long v14, v8
@@ -910,7 +823,6 @@
     :cond_1c
     const-wide v5, 0x7fffffffffffffffL
 
-    .line 39
     :goto_e
     invoke-virtual {v7, v8, v9}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->requestMore(J)V
 
@@ -939,30 +851,25 @@
 
     goto :goto_b
 
-    .line 40
     :cond_1f
     :goto_10
     iget-boolean v8, v7, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->done:Z
 
-    .line 41
     iget-object v9, v7, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
     if-eqz v8, :cond_22
 
     if-eqz v9, :cond_20
 
-    .line 42
     invoke-interface {v9}, Lio/reactivex/internal/fuseable/SimpleQueue;->isEmpty()Z
 
     move-result v8
 
     if-eqz v8, :cond_22
 
-    .line 43
     :cond_20
     invoke-virtual {v1, v7}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->removeInner(Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;)V
 
-    .line 44
     invoke-virtual/range {p0 .. p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->checkTerminate()Z
 
     move-result v0
@@ -1024,11 +931,9 @@
 
     move v9, v0
 
-    .line 45
     :goto_13
     iput v3, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->lastIndex:I
 
-    .line 46
     aget-object v0, v13, v3
 
     iget-wide v3, v0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->id:J
@@ -1055,12 +960,10 @@
 
     if-eqz v0, :cond_27
 
-    .line 47
     iget-boolean v0, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->cancelled:Z
 
     if-nez v0, :cond_27
 
-    .line 48
     iget-object v0, v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v0, v3, v4}, Lc/a/d;->request(J)V
@@ -1077,7 +980,6 @@
 
     neg-int v0, v3
 
-    .line 49
     invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
 
     move-result v4
@@ -1099,19 +1001,16 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lio/reactivex/internal/queue/SpscArrayQueue;
 
     iget v1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->bufferSize:I
 
     invoke-direct {v0, v1}, Lio/reactivex/internal/queue/SpscArrayQueue;-><init>(I)V
 
-    .line 3
     iput-object v0, p1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
     :cond_0
@@ -1128,19 +1027,16 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->queue:Lio/reactivex/internal/fuseable/SimplePlainQueue;
 
     if-nez v0, :cond_1
 
-    .line 2
     iget v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->maxConcurrency:I
 
     const v1, 0x7fffffff
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     new-instance v0, Lio/reactivex/internal/queue/SpscLinkedArrayQueue;
 
     iget v1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->bufferSize:I
@@ -1149,7 +1045,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance v0, Lio/reactivex/internal/queue/SpscArrayQueue;
 
@@ -1157,7 +1052,6 @@
 
     invoke-direct {v0, v1}, Lio/reactivex/internal/queue/SpscArrayQueue;-><init>(I)V
 
-    .line 5
     :goto_0
     iput-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->queue:Lio/reactivex/internal/fuseable/SimplePlainQueue;
 
@@ -1177,7 +1071,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->errs:Lio/reactivex/internal/util/AtomicThrowable;
 
     invoke-virtual {v0, p2}, Lio/reactivex/internal/util/AtomicThrowable;->addThrowable(Ljava/lang/Throwable;)Z
@@ -1188,20 +1081,16 @@
 
     const/4 p2, 0x1
 
-    .line 2
     iput-boolean p2, p1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->done:Z
 
-    .line 3
     iget-boolean p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->delayErrors:Z
 
     if-nez p1, :cond_0
 
-    .line 4
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {p1}, Lc/a/d;->cancel()V
 
-    .line 5
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
     sget-object p2, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->CANCELLED:[Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
@@ -1221,20 +1110,17 @@
 
     aget-object v1, p1, v0
 
-    .line 6
     invoke-virtual {v1}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->dispose()V
 
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->drain()V
 
     goto :goto_1
 
-    .line 8
     :cond_1
     invoke-static {p2}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
@@ -1245,7 +1131,6 @@
 .method public onComplete()V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->done:Z
 
     if-eqz v0, :cond_0
@@ -1255,10 +1140,8 @@
     :cond_0
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->done:Z
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->drain()V
 
     return-void
@@ -1267,17 +1150,14 @@
 .method public onError(Ljava/lang/Throwable;)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->done:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
     return-void
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->errs:Lio/reactivex/internal/util/AtomicThrowable;
 
@@ -1289,15 +1169,12 @@
 
     const/4 p1, 0x1
 
-    .line 4
     iput-boolean p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->done:Z
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->drain()V
 
     goto :goto_0
 
-    .line 6
     :cond_1
     invoke-static {p1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 
@@ -1313,14 +1190,12 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->done:Z
 
     if-eqz v0, :cond_0
 
     return-void
 
-    .line 2
     :cond_0
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->mapper:Lio/reactivex/functions/Function;
@@ -1339,12 +1214,10 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     instance-of v0, p1, Ljava/util/concurrent/Callable;
 
     if-eqz v0, :cond_2
 
-    .line 4
     :try_start_1
     check-cast p1, Ljava/util/concurrent/Callable;
 
@@ -1356,12 +1229,10 @@
 
     if-eqz p1, :cond_1
 
-    .line 5
     invoke-virtual {p0, p1}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->tryEmitScalar(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->maxConcurrency:I
 
@@ -1385,10 +1256,8 @@
 
     const/4 p1, 0x0
 
-    .line 7
     iput p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->scalarEmitted:I
 
-    .line 8
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->upstream:Lc/a/d;
 
     int-to-long v0, v0
@@ -1400,20 +1269,16 @@
     :catchall_0
     move-exception p1
 
-    .line 9
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 10
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->errs:Lio/reactivex/internal/util/AtomicThrowable;
 
     invoke-virtual {v0, p1}, Lio/reactivex/internal/util/AtomicThrowable;->addThrowable(Ljava/lang/Throwable;)Z
 
-    .line 11
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->drain()V
 
     return-void
 
-    .line 12
     :cond_2
     new-instance v0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
@@ -1427,14 +1292,12 @@
 
     invoke-direct {v0, p0, v1, v2}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;-><init>(Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;J)V
 
-    .line 13
     invoke-virtual {p0, v0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->addInner(Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;)Z
 
     move-result v1
 
     if-eqz v1, :cond_3
 
-    .line 14
     invoke-interface {p1, v0}, Lc/a/b;->subscribe(Lc/a/c;)V
 
     :cond_3
@@ -1444,15 +1307,12 @@
     :catchall_1
     move-exception p1
 
-    .line 15
     invoke-static {p1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 16
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->upstream:Lc/a/d;
 
     invoke-interface {v0}, Lc/a/d;->cancel()V
 
-    .line 17
     invoke-virtual {p0, p1}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->onError(Ljava/lang/Throwable;)V
 
     return-void
@@ -1461,7 +1321,6 @@
 .method public onSubscribe(Lc/a/d;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->upstream:Lc/a/d;
 
     invoke-static {v0, p1}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(Lc/a/d;Lc/a/d;)Z
@@ -1470,20 +1329,16 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->upstream:Lc/a/d;
 
-    .line 3
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->downstream:Lc/a/c;
 
     invoke-interface {v0, p0}, Lc/a/c;->onSubscribe(Lc/a/d;)V
 
-    .line 4
     iget-boolean v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->cancelled:Z
 
     if-nez v0, :cond_1
 
-    .line 5
     iget v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->maxConcurrency:I
 
     const v1, 0x7fffffff
@@ -1492,7 +1347,6 @@
 
     const-wide v0, 0x7fffffffffffffffL
 
-    .line 6
     invoke-interface {p1, v0, v1}, Lc/a/d;->request(J)V
 
     goto :goto_0
@@ -1500,7 +1354,6 @@
     :cond_0
     int-to-long v0, v0
 
-    .line 7
     invoke-interface {p1, v0, v1}, Lc/a/d;->request(J)V
 
     :cond_1
@@ -1518,7 +1371,6 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -1528,7 +1380,6 @@
 
     check-cast v0, [Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
-    .line 2
     array-length v1, v0
 
     if-nez v1, :cond_1
@@ -1545,7 +1396,6 @@
     :goto_0
     if-ge v4, v1, :cond_3
 
-    .line 3
     aget-object v5, v0, v4
 
     if-ne v5, p1, :cond_2
@@ -1570,7 +1420,6 @@
 
     if-ne v1, v4, :cond_5
 
-    .line 4
     sget-object v1, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->EMPTY:[Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
     goto :goto_2
@@ -1578,10 +1427,8 @@
     :cond_5
     add-int/lit8 v5, v1, -0x1
 
-    .line 5
     new-array v5, v5, [Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;
 
-    .line 6
     invoke-static {v0, v3, v5, v3, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     add-int/lit8 v3, v2, 0x1
@@ -1590,12 +1437,10 @@
 
     sub-int/2addr v1, v4
 
-    .line 7
     invoke-static {v0, v3, v5, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     move-object v1, v5
 
-    .line 8
     :goto_2
     iget-object v2, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->subscribers:Ljava/util/concurrent/atomic/AtomicReference;
 
@@ -1611,19 +1456,16 @@
 .method public request(J)V
     .locals 1
 
-    .line 1
     invoke-static {p1, p2}, Lio/reactivex/internal/subscriptions/SubscriptionHelper;->validate(J)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-static {v0, p1, p2}, Lio/reactivex/internal/util/BackpressureHelper;->add(Ljava/util/concurrent/atomic/AtomicLong;J)J
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->drain()V
 
     :cond_0
@@ -1640,7 +1482,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
     move-result v0
@@ -1659,14 +1500,12 @@
 
     if-eqz v0, :cond_5
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v2
 
-    .line 3
     iget-object v0, p2, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
     const-wide/16 v4, 0x0
@@ -1677,14 +1516,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-interface {v0}, Lio/reactivex/internal/fuseable/SimpleQueue;->isEmpty()Z
 
     move-result v4
 
     if-eqz v4, :cond_2
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->downstream:Lc/a/c;
 
@@ -1696,7 +1533,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 6
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicLong;->decrementAndGet()J
@@ -1704,7 +1540,6 @@
     :cond_1
     const-wide/16 v0, 0x1
 
-    .line 7
     invoke-virtual {p2, v0, v1}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->requestMore(J)V
 
     goto :goto_0
@@ -1712,12 +1547,10 @@
     :cond_2
     if-nez v0, :cond_3
 
-    .line 8
     invoke-virtual {p0, p2}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->getInnerQueue(Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;)Lio/reactivex/internal/fuseable/SimpleQueue;
 
     move-result-object v0
 
-    .line 9
     :cond_3
     invoke-interface {v0, p1}, Lio/reactivex/internal/fuseable/SimpleQueue;->offer(Ljava/lang/Object;)Z
 
@@ -1725,7 +1558,6 @@
 
     if-nez p1, :cond_4
 
-    .line 10
     new-instance p1, Lio/reactivex/exceptions/MissingBackpressureException;
 
     invoke-direct {p1, v1}, Lio/reactivex/exceptions/MissingBackpressureException;-><init>(Ljava/lang/String;)V
@@ -1734,7 +1566,6 @@
 
     return-void
 
-    .line 11
     :cond_4
     :goto_0
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
@@ -1745,23 +1576,19 @@
 
     return-void
 
-    .line 12
     :cond_5
     iget-object v0, p2, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
     if-nez v0, :cond_6
 
-    .line 13
     new-instance v0, Lio/reactivex/internal/queue/SpscArrayQueue;
 
     iget v2, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->bufferSize:I
 
     invoke-direct {v0, v2}, Lio/reactivex/internal/queue/SpscArrayQueue;-><init>(I)V
 
-    .line 14
     iput-object v0, p2, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$InnerSubscriber;->queue:Lio/reactivex/internal/fuseable/SimpleQueue;
 
-    .line 15
     :cond_6
     invoke-interface {v0, p1}, Lio/reactivex/internal/fuseable/SimpleQueue;->offer(Ljava/lang/Object;)Z
 
@@ -1769,7 +1596,6 @@
 
     if-nez p1, :cond_7
 
-    .line 16
     new-instance p1, Lio/reactivex/exceptions/MissingBackpressureException;
 
     invoke-direct {p1, v1}, Lio/reactivex/exceptions/MissingBackpressureException;-><init>(Ljava/lang/String;)V
@@ -1778,7 +1604,6 @@
 
     return-void
 
-    .line 17
     :cond_7
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
@@ -1788,7 +1613,6 @@
 
     return-void
 
-    .line 18
     :cond_8
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->drainLoop()V
 
@@ -1803,7 +1627,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
     move-result v0
@@ -1822,14 +1645,12 @@
 
     if-eqz v3, :cond_5
 
-    .line 2
     iget-object v3, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicLong;->get()J
 
     move-result-wide v3
 
-    .line 3
     iget-object v5, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->queue:Lio/reactivex/internal/fuseable/SimplePlainQueue;
 
     const-wide/16 v6, 0x0
@@ -1840,14 +1661,12 @@
 
     if-eqz v5, :cond_0
 
-    .line 4
     invoke-interface {v5}, Lio/reactivex/internal/fuseable/SimpleQueue;->isEmpty()Z
 
     move-result v6
 
     if-eqz v6, :cond_2
 
-    .line 5
     :cond_0
     iget-object v1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->downstream:Lc/a/c;
 
@@ -1859,12 +1678,10 @@
 
     if-eqz p1, :cond_1
 
-    .line 6
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->requested:Ljava/util/concurrent/atomic/AtomicLong;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicLong;->decrementAndGet()J
 
-    .line 7
     :cond_1
     iget p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->maxConcurrency:I
 
@@ -1886,10 +1703,8 @@
 
     if-ne p1, v0, :cond_4
 
-    .line 8
     iput v2, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->scalarEmitted:I
 
-    .line 9
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->upstream:Lc/a/d;
 
     int-to-long v0, v0
@@ -1901,12 +1716,10 @@
     :cond_2
     if-nez v5, :cond_3
 
-    .line 10
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->getMainQueue()Lio/reactivex/internal/fuseable/SimpleQueue;
 
     move-result-object v5
 
-    .line 11
     :cond_3
     invoke-interface {v5, p1}, Lio/reactivex/internal/fuseable/SimpleQueue;->offer(Ljava/lang/Object;)Z
 
@@ -1914,7 +1727,6 @@
 
     if-nez p1, :cond_4
 
-    .line 12
     new-instance p1, Ljava/lang/IllegalStateException;
 
     invoke-direct {p1, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
@@ -1923,7 +1735,6 @@
 
     return-void
 
-    .line 13
     :cond_4
     :goto_0
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->decrementAndGet()I
@@ -1934,20 +1745,17 @@
 
     return-void
 
-    .line 14
     :cond_5
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->getMainQueue()Lio/reactivex/internal/fuseable/SimpleQueue;
 
     move-result-object v0
 
-    .line 15
     invoke-interface {v0, p1}, Lio/reactivex/internal/fuseable/SimpleQueue;->offer(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-nez p1, :cond_6
 
-    .line 16
     new-instance p1, Ljava/lang/IllegalStateException;
 
     invoke-direct {p1, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
@@ -1956,7 +1764,6 @@
 
     return-void
 
-    .line 17
     :cond_6
     invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
@@ -1966,7 +1773,6 @@
 
     return-void
 
-    .line 18
     :cond_7
     invoke-virtual {p0}, Lio/reactivex/internal/operators/flowable/FlowableFlatMap$MergeSubscriber;->drainLoop()V
 

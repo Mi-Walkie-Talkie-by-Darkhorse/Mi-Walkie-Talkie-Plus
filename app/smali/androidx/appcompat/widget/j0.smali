@@ -1,6 +1,5 @@
 .class public Landroidx/appcompat/widget/j0;
 .super Landroid/content/res/Resources;
-.source "VectorEnabledTintResources.java"
 
 
 # annotations
@@ -45,7 +44,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p2}, Landroid/content/res/Resources;->getAssets()Landroid/content/res/AssetManager;
 
     move-result-object v0
@@ -60,7 +58,6 @@
 
     invoke-direct {p0, v0, v1, p2}, Landroid/content/res/Resources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V
 
-    .line 2
     new-instance p2, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -73,7 +70,6 @@
 .method public static a(Z)V
     .locals 0
 
-    .line 2
     sput-boolean p0, Landroidx/appcompat/widget/j0;->b:Z
 
     return-void
@@ -82,7 +78,6 @@
 .method public static a()Z
     .locals 1
 
-    .line 3
     sget-boolean v0, Landroidx/appcompat/widget/j0;->b:Z
 
     return v0
@@ -91,7 +86,6 @@
 .method public static b()Z
     .locals 2
 
-    .line 1
     invoke-static {}, Landroidx/appcompat/widget/j0;->a()Z
 
     move-result v0
@@ -120,7 +114,6 @@
 .method final a(I)Landroid/graphics/drawable/Drawable;
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -136,7 +129,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/appcompat/widget/j0;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -147,7 +139,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {}, Landroidx/appcompat/widget/v;->a()Landroidx/appcompat/widget/v;
 
     move-result-object v1
@@ -158,7 +149,6 @@
 
     return-object p1
 
-    .line 3
     :cond_0
     invoke-super {p0, p1}, Landroid/content/res/Resources;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 

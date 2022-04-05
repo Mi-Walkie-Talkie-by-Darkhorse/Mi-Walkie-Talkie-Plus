@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/transition/FitModeEvaluators;
 .super Ljava/lang/Object;
-.source "FitModeEvaluators.java"
 
 
 # static fields
@@ -13,14 +12,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/material/transition/FitModeEvaluators$1;
 
     invoke-direct {v0}, Lcom/google/android/material/transition/FitModeEvaluators$1;-><init>()V
 
     sput-object v0, Lcom/google/android/material/transition/FitModeEvaluators;->WIDTH:Lcom/google/android/material/transition/FitModeEvaluator;
 
-    .line 2
     new-instance v0, Lcom/google/android/material/transition/FitModeEvaluators$2;
 
     invoke-direct {v0}, Lcom/google/android/material/transition/FitModeEvaluators$2;-><init>()V
@@ -33,7 +30,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -52,12 +48,10 @@
 
     if-ne p0, p1, :cond_0
 
-    .line 1
     sget-object p0, Lcom/google/android/material/transition/FitModeEvaluators;->HEIGHT:Lcom/google/android/material/transition/FitModeEvaluator;
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
@@ -79,13 +73,11 @@
 
     throw p1
 
-    .line 3
     :cond_1
     sget-object p0, Lcom/google/android/material/transition/FitModeEvaluators;->WIDTH:Lcom/google/android/material/transition/FitModeEvaluator;
 
     return-object p0
 
-    .line 4
     :cond_2
     invoke-static {p1, p2, p3}, Lcom/google/android/material/transition/FitModeEvaluators;->shouldAutoFitToWidth(ZLandroid/graphics/RectF;Landroid/graphics/RectF;)Z
 
@@ -107,22 +99,18 @@
 .method private static shouldAutoFitToWidth(ZLandroid/graphics/RectF;Landroid/graphics/RectF;)Z
     .locals 4
 
-    .line 1
     invoke-virtual {p1}, Landroid/graphics/RectF;->width()F
 
     move-result v0
 
-    .line 2
     invoke-virtual {p1}, Landroid/graphics/RectF;->height()F
 
     move-result p1
 
-    .line 3
     invoke-virtual {p2}, Landroid/graphics/RectF;->width()F
 
     move-result v1
 
-    .line 4
     invoke-virtual {p2}, Landroid/graphics/RectF;->height()F
 
     move-result p2

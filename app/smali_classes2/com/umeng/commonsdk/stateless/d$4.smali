@@ -1,6 +1,5 @@
 .class final Lcom/umeng/commonsdk/stateless/d$4;
 .super Ljava/lang/Object;
-.source "UMSLUtils.java"
 
 # interfaces
 .implements Ljava/util/Comparator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -45,7 +43,6 @@
 
     if-eqz p2, :cond_0
 
-    .line 1
     invoke-virtual {p1}, Ljava/io/File;->lastModified()J
 
     move-result-wide v0
@@ -67,7 +64,6 @@
 
     if-eqz p2, :cond_1
 
-    .line 2
     invoke-virtual {p1}, Ljava/io/File;->lastModified()J
 
     move-result-wide v0
@@ -93,7 +89,6 @@
 .method public synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/io/File;
 
     check-cast p2, Ljava/io/File;

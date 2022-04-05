@@ -1,6 +1,5 @@
 .class synthetic Lcom/just/agentweb/AgentWeb$1;
 .super Ljava/lang/Object;
-.source "AgentWeb.java"
 
 
 # annotations

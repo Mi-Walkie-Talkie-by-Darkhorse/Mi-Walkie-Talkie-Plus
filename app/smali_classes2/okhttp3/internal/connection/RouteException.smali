@@ -1,6 +1,5 @@
 .class public final Lokhttp3/internal/connection/RouteException;
 .super Ljava/lang/RuntimeException;
-.source "RouteException.java"
 
 
 # instance fields
@@ -13,13 +12,10 @@
 .method public constructor <init>(Ljava/io/IOException;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
 
-    .line 2
     iput-object p1, p0, Lokhttp3/internal/connection/RouteException;->firstException:Ljava/io/IOException;
 
-    .line 3
     iput-object p1, p0, Lokhttp3/internal/connection/RouteException;->lastException:Ljava/io/IOException;
 
     return-void
@@ -30,12 +26,10 @@
 .method public addConnectException(Ljava/io/IOException;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/connection/RouteException;->firstException:Ljava/io/IOException;
 
     invoke-static {v0, p1}, Lokhttp3/internal/Util;->addSuppressedIfPossible(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
-    .line 2
     iput-object p1, p0, Lokhttp3/internal/connection/RouteException;->lastException:Ljava/io/IOException;
 
     return-void
@@ -44,7 +38,6 @@
 .method public getFirstConnectException()Ljava/io/IOException;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/connection/RouteException;->firstException:Ljava/io/IOException;
 
     return-object v0
@@ -53,7 +46,6 @@
 .method public getLastConnectException()Ljava/io/IOException;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/connection/RouteException;->lastException:Ljava/io/IOException;
 
     return-object v0

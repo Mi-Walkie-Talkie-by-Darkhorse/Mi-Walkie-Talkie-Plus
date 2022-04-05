@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/kk$a;
 .super Ljava/lang/Object;
-.source "R.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/amap/api/col/l3/kk$a;->a:[I

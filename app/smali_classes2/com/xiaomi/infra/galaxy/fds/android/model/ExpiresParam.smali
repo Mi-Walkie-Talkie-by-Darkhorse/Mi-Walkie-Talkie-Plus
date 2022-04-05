@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/android/model/ExpiresParam;
 .super Lcom/xiaomi/infra/galaxy/fds/android/model/UserParam;
-.source "ExpiresParam.java"
 
 
 # static fields
@@ -11,10 +10,8 @@
 .method public constructor <init>(J)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/xiaomi/infra/galaxy/fds/android/model/UserParam;-><init>()V
 
-    .line 2
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/android/model/UserParam;->params:Ljava/util/Map;
 
     invoke-static {p1, p2}, Ljava/lang/Long;->toString(J)Ljava/lang/String;

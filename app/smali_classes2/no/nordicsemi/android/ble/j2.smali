@@ -1,6 +1,5 @@
 .class abstract Lno/nordicsemi/android/ble/j2;
 .super Ljava/lang/Object;
-.source "RequestHandler.java"
 
 # interfaces
 .implements Lno/nordicsemi/android/ble/z1;
@@ -10,7 +9,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

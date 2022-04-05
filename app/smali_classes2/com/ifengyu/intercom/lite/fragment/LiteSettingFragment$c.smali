@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$c;
 .super Ljava/lang/Object;
-.source "LiteSettingFragment.java"
 
 # interfaces
 .implements Lio/reactivex/functions/Consumer;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$c;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,12 +50,10 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/ifengyu/intercom/lite/event/LiteEvent;->b:Lcom/ifengyu/intercom/lite/event/LiteEvent;
 
     if-ne p1, v0, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$c;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getResources()Landroid/content/res/Resources;
@@ -70,7 +66,6 @@
 
     move-result-object p1
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$c;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;->mItemUpdate:Lcom/ifengyu/library/widget/view/ItemView;
@@ -89,7 +84,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/lite/event/LiteEvent;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$c;->a(Lcom/ifengyu/intercom/lite/event/LiteEvent;)V

@@ -1,6 +1,5 @@
 .class public Lcom/google/common/util/concurrent/ListenableFutureTask;
 .super Ljava/util/concurrent/FutureTask;
-.source "ListenableFutureTask.java"
 
 # interfaces
 .implements Lcom/google/common/util/concurrent/ListenableFuture;
@@ -39,10 +38,8 @@
         }
     .end annotation
 
-    .line 3
     invoke-direct {p0, p1, p2}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/lang/Runnable;Ljava/lang/Object;)V
 
-    .line 4
     new-instance p1, Lcom/google/common/util/concurrent/ExecutionList;
 
     invoke-direct {p1}, Lcom/google/common/util/concurrent/ExecutionList;-><init>()V
@@ -62,10 +59,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 
-    .line 2
     new-instance p1, Lcom/google/common/util/concurrent/ExecutionList;
 
     invoke-direct {p1}, Lcom/google/common/util/concurrent/ExecutionList;-><init>()V
@@ -93,7 +88,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/ListenableFutureTask;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/util/concurrent/ListenableFutureTask;-><init>(Ljava/lang/Runnable;Ljava/lang/Object;)V
@@ -115,7 +109,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/util/concurrent/ListenableFutureTask;
 
     invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/ListenableFutureTask;-><init>(Ljava/util/concurrent/Callable;)V
@@ -128,7 +121,6 @@
 .method public addListener(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ListenableFutureTask;->executionList:Lcom/google/common/util/concurrent/ExecutionList;
 
     invoke-virtual {v0, p1, p2}, Lcom/google/common/util/concurrent/ExecutionList;->add(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
@@ -139,7 +131,6 @@
 .method protected done()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ListenableFutureTask;->executionList:Lcom/google/common/util/concurrent/ExecutionList;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/ExecutionList;->execute()V

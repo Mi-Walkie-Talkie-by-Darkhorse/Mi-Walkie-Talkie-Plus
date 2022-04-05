@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$c;
 .super Ljava/lang/Object;
-.source "ConfigFileListFragment.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/dialog/QMUIDialogAction$b;
@@ -31,7 +30,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;Lcom/ifengyu/intercom/lite/c/b/d;Ljava/lang/String;Lcom/ifengyu/intercom/lite/models/ConfigFileModel;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$c;->d:Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$c;->a:Lcom/ifengyu/intercom/lite/c/b/d;
@@ -50,7 +48,6 @@
 .method public a(Lcom/qmuiteam/qmui/widget/dialog/b;I)V
     .locals 9
 
-    .line 1
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$c;->a:Lcom/ifengyu/intercom/lite/c/b/d;
 
     invoke-virtual {p2}, Lcom/qmuiteam/qmui/widget/dialog/b$a;->e()Landroid/widget/EditText;
@@ -69,7 +66,6 @@
 
     move-result-object p2
 
-    .line 2
     invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
@@ -78,7 +74,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;
 
@@ -98,7 +93,6 @@
 
     invoke-direct/range {v1 .. v8}, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;-><init>(Ljava/lang/String;Ljava/lang/String;JJLjava/util/List;)V
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$c;->d:Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;->e(Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;)Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$e;
@@ -115,7 +109,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 5
     invoke-virtual {v0}, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;->getName()Ljava/lang/String;
 
     move-result-object v0
@@ -130,12 +123,10 @@
 
     const p1, 0x7f1101af
 
-    .line 6
     invoke-static {p1}, Lcom/ifengyu/library/a/m;->d(I)V
 
     return-void
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$c;->c:Lcom/ifengyu/intercom/lite/models/ConfigFileModel;
 
@@ -145,7 +136,6 @@
 
     invoke-virtual {v0, p2}, Lcom/ifengyu/intercom/lite/models/ConfigFileModel;->setName(Ljava/lang/String;)V
 
-    .line 8
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$c;->d:Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;->f(Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;)Lcom/ifengyu/intercom/lite/h/g0;
@@ -156,21 +146,18 @@
 
     invoke-virtual {p2, v0}, Lcom/ifengyu/intercom/lite/h/g0;->g(Lcom/ifengyu/intercom/lite/models/ConfigFileModel;)V
 
-    .line 9
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$c;->d:Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;
 
     const/4 v0, 0x0
 
     invoke-static {p2, v0}, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;->a(Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;Z)V
 
-    .line 10
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment$c;->d:Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;
 
     const v0, 0x7f1101ac
 
     invoke-static {p2, v0}, Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;->c(Lcom/ifengyu/intercom/lite/fragment/ConfigFileListFragment;I)V
 
-    .line 11
     invoke-virtual {p1}, Landroidx/appcompat/app/d;->dismiss()V
 
     return-void

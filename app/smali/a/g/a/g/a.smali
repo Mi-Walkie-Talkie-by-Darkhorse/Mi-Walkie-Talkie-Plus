@@ -1,6 +1,5 @@
 .class La/g/a/g/a;
 .super Ljava/lang/Object;
-.source "FrameworkSQLiteDatabase.java"
 
 # interfaces
 .implements La/g/a/b;
@@ -32,7 +31,6 @@
 
     const-string v5, " OR REPLACE "
 
-    .line 1
     filled-new-array/range {v0 .. v5}, [Ljava/lang/String;
 
     move-result-object v0
@@ -43,7 +41,6 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 2
     sput-object v0, La/g/a/g/a;->c:[Ljava/lang/String;
 
     return-void
@@ -52,10 +49,8 @@
 .method constructor <init>(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     return-void
@@ -66,14 +61,12 @@
 .method public a(La/g/a/e;)Landroid/database/Cursor;
     .locals 4
 
-    .line 1
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     new-instance v1, La/g/a/g/a$a;
 
     invoke-direct {v1, p0, p1}, La/g/a/g/a$a;-><init>(La/g/a/g/a;La/g/a/e;)V
 
-    .line 2
     invoke-interface {p1}, La/g/a/e;->a()Ljava/lang/String;
 
     move-result-object p1
@@ -82,7 +75,6 @@
 
     const/4 v3, 0x0
 
-    .line 3
     invoke-virtual {v0, v1, p1, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->rawQueryWithFactory(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
 
     move-result-object p1
@@ -96,14 +88,12 @@
         api = 0x10
     .end annotation
 
-    .line 4
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     new-instance v1, La/g/a/g/a$b;
 
     invoke-direct {v1, p0, p1}, La/g/a/g/a$b;-><init>(La/g/a/g/a;La/g/a/e;)V
 
-    .line 5
     invoke-interface {p1}, La/g/a/e;->a()Ljava/lang/String;
 
     move-result-object v2
@@ -114,7 +104,6 @@
 
     move-object v5, p2
 
-    .line 6
     invoke-virtual/range {v0 .. v5}, Landroid/database/sqlite/SQLiteDatabase;->rawQueryWithFactory(Landroid/database/sqlite/SQLiteDatabase$CursorFactory;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Landroid/os/CancellationSignal;)Landroid/database/Cursor;
 
     move-result-object p1
@@ -125,7 +114,6 @@
 .method a(Landroid/database/sqlite/SQLiteDatabase;)Z
     .locals 1
 
-    .line 7
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     if-ne v0, p1, :cond_0
@@ -144,7 +132,6 @@
 .method public beginTransaction()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->beginTransaction()V
@@ -160,7 +147,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->close()V
@@ -171,7 +157,6 @@
 .method public compileStatement(Ljava/lang/String;)La/g/a/f;
     .locals 2
 
-    .line 1
     new-instance v0, La/g/a/g/e;
 
     iget-object v1, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
@@ -188,7 +173,6 @@
 .method public endTransaction()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->endTransaction()V
@@ -204,7 +188,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0, p1}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
@@ -215,7 +198,6 @@
 .method public f(Ljava/lang/String;)Landroid/database/Cursor;
     .locals 1
 
-    .line 1
     new-instance v0, La/g/a/a;
 
     invoke-direct {v0, p1}, La/g/a/a;-><init>(Ljava/lang/String;)V
@@ -240,7 +222,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->getAttachedDbs()Ljava/util/List;
@@ -253,7 +234,6 @@
 .method public getPath()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->getPath()Ljava/lang/String;
@@ -266,7 +246,6 @@
 .method public inTransaction()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->inTransaction()Z
@@ -279,7 +258,6 @@
 .method public isOpen()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->isOpen()Z
@@ -292,7 +270,6 @@
 .method public setTransactionSuccessful()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, La/g/a/g/a;->a:Landroid/database/sqlite/SQLiteDatabase;
 
     invoke-virtual {v0}, Landroid/database/sqlite/SQLiteDatabase;->setTransactionSuccessful()V

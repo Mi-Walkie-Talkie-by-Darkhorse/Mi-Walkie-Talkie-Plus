@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IText;
 .super Ljava/lang/Object;
-.source "IText.java"
 
 # interfaces
 .implements Lcom/autonavi/amap/mapcore/interfaces/IOverlayImage;

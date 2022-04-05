@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;
 .super Landroidx/viewpager/widget/a;
-.source "QMUIViewPager.java"
 
 
 # annotations
@@ -24,12 +23,10 @@
 .method public constructor <init>(Lcom/qmuiteam/qmui/widget/QMUIViewPager;Lcom/qmuiteam/qmui/widget/e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->b:Lcom/qmuiteam/qmui/widget/QMUIViewPager;
 
     invoke-direct {p0}, Landroidx/viewpager/widget/a;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     return-void
@@ -48,7 +45,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->b:Lcom/qmuiteam/qmui/widget/QMUIViewPager;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->a(Lcom/qmuiteam/qmui/widget/QMUIViewPager;)Z
@@ -65,7 +61,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0}, Landroidx/viewpager/widget/a;->getCount()I
@@ -74,7 +69,6 @@
 
     rem-int/2addr p2, v0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
@@ -90,7 +84,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0, p1}, Landroidx/viewpager/widget/a;->finishUpdate(Landroid/view/ViewGroup;)V
@@ -101,14 +94,12 @@
 .method public getCount()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0}, Landroidx/viewpager/widget/a;->getCount()I
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->b:Lcom/qmuiteam/qmui/widget/QMUIViewPager;
 
     invoke-static {v1}, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->a(Lcom/qmuiteam/qmui/widget/QMUIViewPager;)Z
@@ -121,7 +112,6 @@
 
     if-le v0, v1, :cond_0
 
-    .line 3
     iget-object v1, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->b:Lcom/qmuiteam/qmui/widget/QMUIViewPager;
 
     invoke-static {v1}, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->b(Lcom/qmuiteam/qmui/widget/QMUIViewPager;)I
@@ -141,7 +131,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0, p1}, Landroidx/viewpager/widget/a;->getItemPosition(Ljava/lang/Object;)I
@@ -154,7 +143,6 @@
 .method public getPageTitle(I)Ljava/lang/CharSequence;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0}, Landroidx/viewpager/widget/a;->getCount()I
@@ -163,7 +151,6 @@
 
     rem-int/2addr p1, v0
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0, p1}, Landroidx/viewpager/widget/a;->getPageTitle(I)Ljava/lang/CharSequence;
@@ -176,7 +163,6 @@
 .method public getPageWidth(I)F
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0, p1}, Landroidx/viewpager/widget/a;->getPageWidth(I)F
@@ -195,7 +181,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->b:Lcom/qmuiteam/qmui/widget/QMUIViewPager;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->a(Lcom/qmuiteam/qmui/widget/QMUIViewPager;)Z
@@ -212,7 +197,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0}, Landroidx/viewpager/widget/a;->getCount()I
@@ -221,7 +205,6 @@
 
     rem-int/2addr p2, v0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
@@ -243,7 +226,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0, p1, p2}, Landroidx/viewpager/widget/a;->isViewFromObject(Landroid/view/View;Ljava/lang/Object;)Z
@@ -256,10 +238,8 @@
 .method public notifyDataSetChanged()V
     .locals 1
 
-    .line 1
     invoke-super {p0}, Landroidx/viewpager/widget/a;->notifyDataSetChanged()V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0}, Landroidx/viewpager/widget/a;->notifyDataSetChanged()V
@@ -274,7 +254,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0, p1}, Landroidx/viewpager/widget/a;->registerDataSetObserver(Landroid/database/DataSetObserver;)V
@@ -285,7 +264,6 @@
 .method public restoreState(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0, p1, p2}, Landroidx/viewpager/widget/a;->restoreState(Landroid/os/Parcelable;Ljava/lang/ClassLoader;)V
@@ -296,7 +274,6 @@
 .method public saveState()Landroid/os/Parcelable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0}, Landroidx/viewpager/widget/a;->saveState()Landroid/os/Parcelable;
@@ -317,7 +294,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0, p1, p2, p3}, Landroidx/viewpager/widget/a;->setPrimaryItem(Landroid/view/ViewGroup;ILjava/lang/Object;)V
@@ -332,7 +308,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0, p1}, Landroidx/viewpager/widget/a;->startUpdate(Landroid/view/ViewGroup;)V
@@ -347,7 +322,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;->a:Lcom/qmuiteam/qmui/widget/e;
 
     invoke-virtual {v0, p1}, Landroidx/viewpager/widget/a;->unregisterDataSetObserver(Landroid/database/DataSetObserver;)V

@@ -1,6 +1,5 @@
 .class Landroidx/vectordrawable/a/a/b$a$a;
 .super Landroid/graphics/drawable/Animatable2$AnimationCallback;
-.source "Animatable2Compat.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/vectordrawable/a/a/b$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/vectordrawable/a/a/b$a$a;->a:Landroidx/vectordrawable/a/a/b$a;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Animatable2$AnimationCallback;-><init>()V
@@ -35,7 +33,6 @@
 .method public onAnimationEnd(Landroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/vectordrawable/a/a/b$a$a;->a:Landroidx/vectordrawable/a/a/b$a;
 
     invoke-virtual {v0, p1}, Landroidx/vectordrawable/a/a/b$a;->onAnimationEnd(Landroid/graphics/drawable/Drawable;)V
@@ -46,7 +43,6 @@
 .method public onAnimationStart(Landroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/vectordrawable/a/a/b$a$a;->a:Landroidx/vectordrawable/a/a/b$a;
 
     invoke-virtual {v0, p1}, Landroidx/vectordrawable/a/a/b$a;->onAnimationStart(Landroid/graphics/drawable/Drawable;)V

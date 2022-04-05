@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/j/s$a;
 .super Ljava/lang/Object;
-.source "ResourceLoader.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/j/o;
@@ -35,10 +34,8 @@
 .method public constructor <init>(Landroid/content/res/Resources;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/j/s$a;->a:Landroid/content/res/Resources;
 
     return-void
@@ -60,7 +57,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/load/j/s;
 
     iget-object v1, p0, Lcom/bumptech/glide/load/j/s$a;->a:Landroid/content/res/Resources;
@@ -69,7 +65,6 @@
 
     const-class v3, Landroid/content/res/AssetFileDescriptor;
 
-    .line 2
     invoke-virtual {p1, v2, v3}, Lcom/bumptech/glide/load/j/r;->a(Ljava/lang/Class;Ljava/lang/Class;)Lcom/bumptech/glide/load/j/n;
 
     move-result-object p1

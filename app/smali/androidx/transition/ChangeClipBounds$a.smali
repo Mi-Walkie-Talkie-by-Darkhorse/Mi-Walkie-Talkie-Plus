@@ -1,6 +1,5 @@
 .class Landroidx/transition/ChangeClipBounds$a;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "ChangeClipBounds.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/transition/ChangeClipBounds;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/transition/ChangeClipBounds$a;->a:Landroid/view/View;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
@@ -35,7 +33,6 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Landroidx/transition/ChangeClipBounds$a;->a:Landroid/view/View;
 
     const/4 v0, 0x0

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/maps/model/VisibleRegion;
 .super Ljava/lang/Object;
-.source "VisibleRegion.java"
 
 # interfaces
 .implements Landroid/os/Parcelable;
@@ -28,7 +27,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/model/VisibleRegionCreator;
 
     invoke-direct {v0}, Lcom/amap/api/maps/model/VisibleRegionCreator;-><init>()V
@@ -41,25 +39,18 @@
 .method constructor <init>(ILcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLngBounds;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/amap/api/maps/model/VisibleRegion;->a:I
 
-    .line 3
     iput-object p2, p0, Lcom/amap/api/maps/model/VisibleRegion;->nearLeft:Lcom/amap/api/maps/model/LatLng;
 
-    .line 4
     iput-object p3, p0, Lcom/amap/api/maps/model/VisibleRegion;->nearRight:Lcom/amap/api/maps/model/LatLng;
 
-    .line 5
     iput-object p4, p0, Lcom/amap/api/maps/model/VisibleRegion;->farLeft:Lcom/amap/api/maps/model/LatLng;
 
-    .line 6
     iput-object p5, p0, Lcom/amap/api/maps/model/VisibleRegion;->farRight:Lcom/amap/api/maps/model/LatLng;
 
-    .line 7
     iput-object p6, p0, Lcom/amap/api/maps/model/VisibleRegion;->latLngBounds:Lcom/amap/api/maps/model/LatLngBounds;
 
     return-void
@@ -82,7 +73,6 @@
 
     move-object v6, p5
 
-    .line 8
     invoke-direct/range {v0 .. v6}, Lcom/amap/api/maps/model/VisibleRegion;-><init>(ILcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLng;Lcom/amap/api/maps/model/LatLngBounds;)V
 
     return-void
@@ -93,7 +83,6 @@
 .method final a()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/VisibleRegion;->a:I
 
     return v0
@@ -116,7 +105,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/amap/api/maps/model/VisibleRegion;
 
@@ -126,11 +114,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/amap/api/maps/model/VisibleRegion;
 
-    .line 3
     iget-object v1, p0, Lcom/amap/api/maps/model/VisibleRegion;->nearLeft:Lcom/amap/api/maps/model/LatLng;
 
     iget-object v3, p1, Lcom/amap/api/maps/model/VisibleRegion;->nearLeft:Lcom/amap/api/maps/model/LatLng;
@@ -145,7 +131,6 @@
 
     iget-object v3, p1, Lcom/amap/api/maps/model/VisibleRegion;->nearRight:Lcom/amap/api/maps/model/LatLng;
 
-    .line 4
     invoke-virtual {v1, v3}, Lcom/amap/api/maps/model/LatLng;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -156,7 +141,6 @@
 
     iget-object v3, p1, Lcom/amap/api/maps/model/VisibleRegion;->farLeft:Lcom/amap/api/maps/model/LatLng;
 
-    .line 5
     invoke-virtual {v1, v3}, Lcom/amap/api/maps/model/LatLng;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -167,7 +151,6 @@
 
     iget-object v3, p1, Lcom/amap/api/maps/model/VisibleRegion;->farRight:Lcom/amap/api/maps/model/LatLng;
 
-    .line 6
     invoke-virtual {v1, v3}, Lcom/amap/api/maps/model/LatLng;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -178,7 +161,6 @@
 
     iget-object p1, p1, Lcom/amap/api/maps/model/VisibleRegion;->latLngBounds:Lcom/amap/api/maps/model/LatLngBounds;
 
-    .line 7
     invoke-virtual {v1, p1}, Lcom/amap/api/maps/model/LatLngBounds;->equals(Ljava/lang/Object;)Z
 
     move-result p1
@@ -198,7 +180,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-object v1, p0, Lcom/amap/api/maps/model/VisibleRegion;->nearLeft:Lcom/amap/api/maps/model/LatLng;
 
     const/4 v2, 0x0
@@ -243,12 +224,10 @@
 
     new-array v0, v0, [Ljava/lang/String;
 
-    .line 1
     iget-object v1, p0, Lcom/amap/api/maps/model/VisibleRegion;->nearLeft:Lcom/amap/api/maps/model/LatLng;
 
     const-string v2, "nearLeft"
 
-    .line 2
     invoke-static {v2, v1}, Lcom/amap/api/col/l3/em;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
@@ -261,7 +240,6 @@
 
     const-string v2, "nearRight"
 
-    .line 3
     invoke-static {v2, v1}, Lcom/amap/api/col/l3/em;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
@@ -274,7 +252,6 @@
 
     const-string v2, "farLeft"
 
-    .line 4
     invoke-static {v2, v1}, Lcom/amap/api/col/l3/em;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
@@ -287,7 +264,6 @@
 
     const-string v2, "farRight"
 
-    .line 5
     invoke-static {v2, v1}, Lcom/amap/api/col/l3/em;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
@@ -300,7 +276,6 @@
 
     const-string v2, "latLngBounds"
 
-    .line 6
     invoke-static {v2, v1}, Lcom/amap/api/col/l3/em;->a(Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
@@ -309,7 +284,6 @@
 
     aput-object v1, v0, v2
 
-    .line 7
     invoke-static {v0}, Lcom/amap/api/col/l3/em;->a([Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -320,7 +294,6 @@
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 0
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/amap/api/maps/model/VisibleRegionCreator;->a(Lcom/amap/api/maps/model/VisibleRegion;Landroid/os/Parcel;I)V
 
     return-void

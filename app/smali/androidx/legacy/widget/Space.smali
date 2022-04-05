@@ -1,6 +1,5 @@
 .class public Landroidx/legacy/widget/Space;
 .super Landroid/view/View;
-.source "Space.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 
     const/4 v0, 0x0
 
-    .line 5
     invoke-direct {p0, p1, v0}, Landroidx/legacy/widget/Space;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -41,7 +39,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     invoke-direct {p0, p1, p2, v0}, Landroidx/legacy/widget/Space;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     return-void
@@ -60,10 +57,8 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Landroid/view/View;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
     move-result p1
@@ -72,7 +67,6 @@
 
     const/4 p1, 0x4
 
-    .line 3
     invoke-virtual {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
     :cond_0
@@ -82,12 +76,10 @@
 .method private static a(II)I
     .locals 2
 
-    .line 1
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getMode(I)I
 
     move-result v0
 
-    .line 2
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result p1
@@ -107,7 +99,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     invoke-static {p0, p1}, Ljava/lang/Math;->min(II)I
 
@@ -138,7 +129,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumWidth()I
 
     move-result v0
@@ -147,7 +137,6 @@
 
     move-result p1
 
-    .line 2
     invoke-virtual {p0}, Landroid/view/View;->getSuggestedMinimumHeight()I
 
     move-result v0
@@ -156,7 +145,6 @@
 
     move-result p2
 
-    .line 3
     invoke-virtual {p0, p1, p2}, Landroid/view/View;->setMeasuredDimension(II)V
 
     return-void

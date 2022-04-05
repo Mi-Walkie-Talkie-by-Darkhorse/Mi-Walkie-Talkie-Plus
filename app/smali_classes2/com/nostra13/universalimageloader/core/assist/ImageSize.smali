@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 .super Ljava/lang/Object;
-.source "ImageSize.java"
 
 
 # static fields
@@ -19,13 +18,10 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->width:I
 
-    .line 3
     iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->height:I
 
     return-void
@@ -34,27 +30,21 @@
 .method public constructor <init>(III)V
     .locals 0
 
-    .line 4
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 5
     rem-int/lit16 p3, p3, 0xb4
 
     if-nez p3, :cond_0
 
-    .line 6
     iput p1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->width:I
 
-    .line 7
     iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->height:I
 
     goto :goto_0
 
-    .line 8
     :cond_0
     iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->width:I
 
-    .line 9
     iput p1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->height:I
 
     :goto_0
@@ -66,7 +56,6 @@
 .method public getHeight()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->height:I
 
     return v0
@@ -75,7 +64,6 @@
 .method public getWidth()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->width:I
 
     return v0
@@ -84,7 +72,6 @@
 .method public scale(F)Lcom/nostra13/universalimageloader/core/assist/ImageSize;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     iget v1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->width:I
@@ -111,7 +98,6 @@
 .method public scaleDown(I)Lcom/nostra13/universalimageloader/core/assist/ImageSize;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;
 
     iget v1, p0, Lcom/nostra13/universalimageloader/core/assist/ImageSize;->width:I
@@ -130,7 +116,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     const/16 v1, 0x9

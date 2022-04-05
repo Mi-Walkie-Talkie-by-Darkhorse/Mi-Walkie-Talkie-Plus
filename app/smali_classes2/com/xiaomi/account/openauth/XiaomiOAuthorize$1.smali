@@ -1,6 +1,5 @@
 .class Lcom/xiaomi/account/openauth/XiaomiOAuthorize$1;
 .super Ljava/lang/Object;
-.source "XiaomiOAuthorize.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -36,7 +35,6 @@
 .method constructor <init>(Lcom/xiaomi/account/openauth/XiaomiOAuthorize;Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$1;->this$0:Lcom/xiaomi/account/openauth/XiaomiOAuthorize;
 
     iput-object p2, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$1;->val$activityWeakReference:Ljava/lang/ref/WeakReference;
@@ -56,7 +54,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/xiaomi/account/auth/OAuthConfig$Builder;
 
     iget-object v1, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$1;->this$0:Lcom/xiaomi/account/openauth/XiaomiOAuthorize;
@@ -71,12 +68,10 @@
 
     move-result-object v0
 
-    .line 3
     invoke-static {v0}, Lcom/xiaomi/account/auth/OAuthFactory;->createOAuth(Lcom/xiaomi/account/auth/OAuthConfig;)Lcom/xiaomi/account/auth/XiaomiOAuth;
 
     move-result-object v1
 
-    .line 4
     iget-object v2, p0, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$1;->val$activityWeakReference:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v2}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -85,7 +80,6 @@
 
     check-cast v2, Landroid/app/Activity;
 
-    .line 5
     invoke-interface {v1, v2, v0}, Lcom/xiaomi/account/auth/XiaomiOAuth;->startOAuth(Landroid/app/Activity;Lcom/xiaomi/account/auth/OAuthConfig;)Lcom/xiaomi/account/openauth/XiaomiOAuthResults;
 
     move-result-object v0
@@ -101,7 +95,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/xiaomi/account/openauth/XiaomiOAuthorize$1;->call()Lcom/xiaomi/account/openauth/XiaomiOAuthResults;
 
     move-result-object v0

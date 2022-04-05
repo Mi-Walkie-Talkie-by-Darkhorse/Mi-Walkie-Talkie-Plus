@@ -1,6 +1,5 @@
 .class Lcom/bumptech/glide/load/j/m$a;
 .super Lcom/bumptech/glide/util/f;
-.source "ModelCache.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lcom/bumptech/glide/load/j/m;J)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2, p3}, Lcom/bumptech/glide/util/f;-><init>(J)V
 
     return-void
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p1}, Lcom/bumptech/glide/load/j/m$b;->a()V
 
     return-void
@@ -69,7 +66,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/bumptech/glide/load/j/m$b;
 
     invoke-virtual {p0, p1, p2}, Lcom/bumptech/glide/load/j/m$a;->a(Lcom/bumptech/glide/load/j/m$b;Ljava/lang/Object;)V

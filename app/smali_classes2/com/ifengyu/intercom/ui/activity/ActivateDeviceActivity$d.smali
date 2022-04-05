@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$d;
 .super Ljava/lang/Object;
-.source "ActivateDeviceActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$d;->b:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
@@ -42,14 +40,12 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$d;->b:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->q:Ljava/lang/Runnable;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/i/k0;->b(Ljava/lang/Runnable;)V
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$d;->a:Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam;->getResult()Lcom/ifengyu/intercom/protos/SealProtos$SEAL_DeviceParam$SEAL_DEV_UERR;
@@ -60,14 +56,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$d;->b:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;->b(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$d;->b:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 

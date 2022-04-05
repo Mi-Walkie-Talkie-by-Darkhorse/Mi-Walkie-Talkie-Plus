@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/map/MapDataProvider$c;
 .super Ljava/lang/Object;
-.source "MapDataProvider.java"
 
 
 # annotations

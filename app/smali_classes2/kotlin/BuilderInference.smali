@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lkotlin/BuilderInference;
 .super Ljava/lang/Object;
-.source "Inference.kt"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

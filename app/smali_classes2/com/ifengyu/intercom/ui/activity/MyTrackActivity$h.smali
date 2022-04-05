@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$h;
 .super Ljava/lang/Object;
-.source "MyTrackActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;Lcom/ifengyu/intercom/greendao/bean/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$h;->b:Lcom/ifengyu/intercom/ui/activity/MyTrackActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$h;->a:Lcom/ifengyu/intercom/greendao/bean/b;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v0
@@ -63,7 +60,6 @@
 
     iget-object v2, p0, Lcom/ifengyu/intercom/ui/activity/MyTrackActivity$h;->a:Lcom/ifengyu/intercom/greendao/bean/b;
 
-    .line 2
     invoke-virtual {v2}, Lcom/ifengyu/intercom/greendao/bean/b;->v()Ljava/lang/String;
 
     move-result-object v2
@@ -84,7 +80,6 @@
 
     move-result-object v0
 
-    .line 3
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -102,7 +97,6 @@
 
     check-cast v1, Lcom/ifengyu/intercom/greendao/bean/c;
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/MiTalkiApp;->b()Lcom/ifengyu/intercom/MiTalkiApp;
 
     move-result-object v2

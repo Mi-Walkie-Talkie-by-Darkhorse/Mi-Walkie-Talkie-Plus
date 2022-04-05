@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;
 .super Landroidx/lifecycle/v;
-.source "QMUIFragmentEffectRegistry.java"
 
 
 # annotations
@@ -30,10 +29,8 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Landroidx/lifecycle/v;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     const/4 v1, 0x0
@@ -42,14 +39,12 @@
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 3
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;->b:Ljava/util/Map;
 
-    .line 4
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -81,19 +76,16 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
 
     move-result v0
 
-    .line 2
     invoke-interface {p1}, Landroidx/lifecycle/k;->getLifecycle()Landroidx/lifecycle/Lifecycle;
 
     move-result-object p1
 
-    .line 3
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;->b:Ljava/util/Map;
 
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -106,14 +98,12 @@
 
     invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 4
     new-instance p2, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$1;
 
     invoke-direct {p2, p0, v0}, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$1;-><init>(Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;I)V
 
     invoke-virtual {p1, p2}, Landroidx/lifecycle/Lifecycle;->a(Landroidx/lifecycle/j;)V
 
-    .line 5
     new-instance p1, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$a;
 
     invoke-direct {p1, p0, v0}, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$a;-><init>(Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;I)V
@@ -131,7 +121,6 @@
         }
     .end annotation
 
-    .line 6
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;->b:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -156,7 +145,6 @@
 
     check-cast v1, Ljava/lang/Integer;
 
-    .line 7
     iget-object v2, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;->b:Ljava/util/Map;
 
     invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -167,14 +155,12 @@
 
     if-eqz v1, :cond_0
 
-    .line 8
     invoke-virtual {v1, p1}, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$EffectHandlerWrapper;->b(Lcom/qmuiteam/qmui/arch/effect/a;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
-    .line 9
     invoke-virtual {v1, p1}, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$EffectHandlerWrapper;->a(Lcom/qmuiteam/qmui/arch/effect/a;)V
 
     goto :goto_0
@@ -188,7 +174,6 @@
     .annotation build Landroidx/annotation/MainThread;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;->b:Ljava/util/Map;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -203,7 +188,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$EffectHandlerWrapper;->a()V
 
     :cond_0
@@ -213,10 +197,8 @@
 .method protected onCleared()V
     .locals 3
 
-    .line 1
     invoke-super {p0}, Landroidx/lifecycle/v;->onCleared()V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;->b:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -241,7 +223,6 @@
 
     check-cast v1, Ljava/lang/Integer;
 
-    .line 3
     iget-object v2, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;->b:Ljava/util/Map;
 
     invoke-interface {v2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -252,12 +233,10 @@
 
     if-eqz v1, :cond_0
 
-    .line 4
     invoke-virtual {v1}, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry$EffectHandlerWrapper;->a()V
 
     goto :goto_0
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/effect/QMUIFragmentEffectRegistry;->b:Ljava/util/Map;
 

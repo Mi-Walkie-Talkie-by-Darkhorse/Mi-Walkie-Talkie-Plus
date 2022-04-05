@@ -1,6 +1,5 @@
 .class public Lcom/xiaomi/infra/galaxy/fds/result/InitMultipartUploadResult;
 .super Ljava/lang/Object;
-.source "InitMultipartUploadResult.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -31,7 +29,6 @@
 .method public getBucketName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/result/InitMultipartUploadResult;->bucketName:Ljava/lang/String;
 
     return-object v0
@@ -40,7 +37,6 @@
 .method public getObjectName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/result/InitMultipartUploadResult;->objectName:Ljava/lang/String;
 
     return-object v0
@@ -49,7 +45,6 @@
 .method public getUploadId()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/xiaomi/infra/galaxy/fds/result/InitMultipartUploadResult;->uploadId:Ljava/lang/String;
 
     return-object v0
@@ -58,7 +53,6 @@
 .method public setBucketName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/result/InitMultipartUploadResult;->bucketName:Ljava/lang/String;
 
     return-void
@@ -67,7 +61,6 @@
 .method public setObjectName(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/result/InitMultipartUploadResult;->objectName:Ljava/lang/String;
 
     return-void
@@ -76,7 +69,6 @@
 .method public setUploadId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/xiaomi/infra/galaxy/fds/result/InitMultipartUploadResult;->uploadId:Ljava/lang/String;
 
     return-void

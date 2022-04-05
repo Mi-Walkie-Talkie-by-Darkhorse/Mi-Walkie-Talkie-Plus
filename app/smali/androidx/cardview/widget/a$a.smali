@@ -1,6 +1,5 @@
 .class Landroidx/cardview/widget/a$a;
 .super Ljava/lang/Object;
-.source "CardViewApi17Impl.java"
 
 # interfaces
 .implements Landroidx/cardview/widget/g$a;
@@ -21,7 +20,6 @@
 .method constructor <init>(Landroidx/cardview/widget/a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -32,7 +30,6 @@
 .method public a(Landroid/graphics/Canvas;Landroid/graphics/RectF;FLandroid/graphics/Paint;)V
     .locals 0
 
-    .line 1
     invoke-virtual {p1, p2, p3, p3, p4}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
 
     return-void

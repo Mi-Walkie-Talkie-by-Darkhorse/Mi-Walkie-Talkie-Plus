@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/widget/QMUIViewPager;
 .super Landroidx/viewpager/widget/ViewPager;
-.source "QMUIViewPager.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/widget/c;
@@ -30,7 +29,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/qmuiteam/qmui/widget/QMUIViewPager;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -39,25 +37,20 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Landroidx/viewpager/widget/ViewPager;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     const/4 p1, 0x1
 
-    .line 3
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->k0:Z
 
     const/4 p1, 0x0
 
-    .line 4
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->m0:Z
 
     const/16 p1, 0x64
 
-    .line 5
     iput p1, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->n0:I
 
-    .line 6
     new-instance p1, Lcom/qmuiteam/qmui/util/o;
 
     invoke-direct {p1, p0, p0}, Lcom/qmuiteam/qmui/util/o;-><init>(Landroid/view/ViewGroup;Lcom/qmuiteam/qmui/widget/c;)V
@@ -70,7 +63,6 @@
 .method static synthetic a(Lcom/qmuiteam/qmui/widget/QMUIViewPager;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->m0:Z
 
     return p0
@@ -79,7 +71,6 @@
 .method static synthetic b(Lcom/qmuiteam/qmui/widget/QMUIViewPager;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->n0:I
 
     return p0
@@ -90,7 +81,6 @@
 .method public a(Landroid/graphics/Rect;)Z
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->l0:Lcom/qmuiteam/qmui/util/o;
 
     invoke-virtual {v0, p0, p1}, Lcom/qmuiteam/qmui/util/o;->a(Landroid/view/ViewGroup;Landroid/graphics/Rect;)Z
@@ -103,7 +93,6 @@
 .method public a(Ljava/lang/Object;)Z
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->l0:Lcom/qmuiteam/qmui/util/o;
 
     invoke-virtual {v0, p0, p1}, Lcom/qmuiteam/qmui/util/o;->a(Landroid/view/ViewGroup;Ljava/lang/Object;)Z
@@ -116,10 +105,8 @@
 .method public addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Landroidx/viewpager/widget/ViewPager;->addView(Landroid/view/View;ILandroid/view/ViewGroup$LayoutParams;)V
 
-    .line 2
     invoke-static {p0}, Landroidx/core/view/ViewCompat;->S(Landroid/view/View;)V
 
     return-void
@@ -128,7 +115,6 @@
 .method protected fitSystemWindows(Landroid/graphics/Rect;)Z
     .locals 2
 
-    .line 1
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x13
@@ -139,14 +125,12 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->a(Landroid/graphics/Rect;)Z
 
     move-result p1
 
     return p1
 
-    .line 3
     :cond_0
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->fitSystemWindows(Landroid/graphics/Rect;)Z
 
@@ -158,7 +142,6 @@
 .method public getInfiniteRatio()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->n0:I
 
     return v0
@@ -167,7 +150,6 @@
 .method public onInterceptTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->k0:Z
 
     if-eqz v0, :cond_0
@@ -192,7 +174,6 @@
 .method protected onMeasure(II)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/viewpager/widget/ViewPager;->onMeasure(II)V
 
     return-void
@@ -201,7 +182,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->k0:Z
 
     if-eqz v0, :cond_0
@@ -226,12 +206,10 @@
 .method public setAdapter(Landroidx/viewpager/widget/a;)V
     .locals 1
 
-    .line 1
     instance-of v0, p1, Lcom/qmuiteam/qmui/widget/e;
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/qmuiteam/qmui/widget/QMUIViewPager$a;
 
     check-cast p1, Lcom/qmuiteam/qmui/widget/e;
@@ -242,7 +220,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     invoke-super {p0, p1}, Landroidx/viewpager/widget/ViewPager;->setAdapter(Landroidx/viewpager/widget/a;)V
 
@@ -253,22 +230,18 @@
 .method public setEnableLoop(Z)V
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->m0:Z
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->m0:Z
 
-    .line 3
     invoke-virtual {p0}, Landroidx/viewpager/widget/ViewPager;->getAdapter()Landroidx/viewpager/widget/a;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 4
     invoke-virtual {p0}, Landroidx/viewpager/widget/ViewPager;->getAdapter()Landroidx/viewpager/widget/a;
 
     move-result-object p1
@@ -282,7 +255,6 @@
 .method public setInfiniteRatio(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->n0:I
 
     return-void
@@ -291,7 +263,6 @@
 .method public setSwipeable(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/qmuiteam/qmui/widget/QMUIViewPager;->k0:Z
 
     return-void

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/Files$FileByteSink;
 .super Lcom/google/common/io/ByteSink;
-.source "Files.java"
 
 
 # annotations
@@ -32,10 +31,8 @@
 .method private varargs constructor <init>(Ljava/io/File;[Lcom/google/common/io/FileWriteMode;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/io/ByteSink;-><init>()V
 
-    .line 3
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -44,7 +41,6 @@
 
     iput-object p1, p0, Lcom/google/common/io/Files$FileByteSink;->file:Ljava/io/File;
 
-    .line 4
     invoke-static {p2}, Lcom/google/common/collect/ImmutableSet;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableSet;
 
     move-result-object p1
@@ -57,7 +53,6 @@
 .method synthetic constructor <init>(Ljava/io/File;[Lcom/google/common/io/FileWriteMode;Lcom/google/common/io/Files$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/io/Files$FileByteSink;-><init>(Ljava/io/File;[Lcom/google/common/io/FileWriteMode;)V
 
     return-void
@@ -73,7 +68,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Ljava/io/FileOutputStream;
 
     iget-object v1, p0, Lcom/google/common/io/Files$FileByteSink;->file:Ljava/io/File;
@@ -99,7 +93,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/io/Files$FileByteSink;->openStream()Ljava/io/FileOutputStream;
 
     move-result-object v0
@@ -110,7 +103,6 @@
 .method public toString()Ljava/lang/String;
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/Files$FileByteSink;->file:Ljava/io/File;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;

@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/flowable/FlowableDebounceTimed;
 .super Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;
-.source "FlowableDebounceTimed.java"
 
 
 # annotations
@@ -44,16 +43,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;-><init>(Lio/reactivex/Flowable;)V
 
-    .line 2
     iput-wide p2, p0, Lio/reactivex/internal/operators/flowable/FlowableDebounceTimed;->timeout:J
 
-    .line 3
     iput-object p4, p0, Lio/reactivex/internal/operators/flowable/FlowableDebounceTimed;->unit:Ljava/util/concurrent/TimeUnit;
 
-    .line 4
     iput-object p5, p0, Lio/reactivex/internal/operators/flowable/FlowableDebounceTimed;->scheduler:Lio/reactivex/Scheduler;
 
     return-void
@@ -71,7 +66,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/flowable/AbstractFlowableWithUpstream;->source:Lio/reactivex/Flowable;
 
     new-instance v7, Lio/reactivex/internal/operators/flowable/FlowableDebounceTimed$DebounceTimedSubscriber;
@@ -86,7 +80,6 @@
 
     iget-object p1, p0, Lio/reactivex/internal/operators/flowable/FlowableDebounceTimed;->scheduler:Lio/reactivex/Scheduler;
 
-    .line 2
     invoke-virtual {p1}, Lio/reactivex/Scheduler;->createWorker()Lio/reactivex/Scheduler$Worker;
 
     move-result-object v6
@@ -95,7 +88,6 @@
 
     invoke-direct/range {v1 .. v6}, Lio/reactivex/internal/operators/flowable/FlowableDebounceTimed$DebounceTimedSubscriber;-><init>(Lc/a/c;JLjava/util/concurrent/TimeUnit;Lio/reactivex/Scheduler$Worker;)V
 
-    .line 3
     invoke-virtual {v0, v7}, Lio/reactivex/Flowable;->subscribe(Lio/reactivex/FlowableSubscriber;)V
 
     return-void

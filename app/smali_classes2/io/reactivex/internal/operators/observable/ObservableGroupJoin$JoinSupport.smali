@@ -1,6 +1,5 @@
 .class interface abstract Lio/reactivex/internal/operators/observable/ObservableGroupJoin$JoinSupport;
 .super Ljava/lang/Object;
-.source "ObservableGroupJoin.java"
 
 
 # annotations

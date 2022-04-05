@@ -1,6 +1,5 @@
 .class Landroidx/lifecycle/LiveData$LifecycleBoundObserver;
 .super Landroidx/lifecycle/LiveData$c;
-.source "LiveData.java"
 
 # interfaces
 .implements Landroidx/lifecycle/i;
@@ -50,13 +49,10 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->f:Landroidx/lifecycle/LiveData;
 
-    .line 2
     invoke-direct {p0, p1, p3}, Landroidx/lifecycle/LiveData$c;-><init>(Landroidx/lifecycle/LiveData;Landroidx/lifecycle/q;)V
 
-    .line 3
     iput-object p2, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e:Landroidx/lifecycle/k;
 
     return-void
@@ -67,7 +63,6 @@
 .method a()V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e:Landroidx/lifecycle/k;
 
     invoke-interface {v0}, Landroidx/lifecycle/k;->getLifecycle()Landroidx/lifecycle/Lifecycle;
@@ -82,7 +77,6 @@
 .method a(Landroidx/lifecycle/k;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e:Landroidx/lifecycle/k;
 
     if-ne v0, p1, :cond_0
@@ -101,7 +95,6 @@
 .method b()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e:Landroidx/lifecycle/k;
 
     invoke-interface {v0}, Landroidx/lifecycle/k;->getLifecycle()Landroidx/lifecycle/Lifecycle;
@@ -132,7 +125,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e:Landroidx/lifecycle/k;
 
     invoke-interface {p1}, Landroidx/lifecycle/k;->getLifecycle()Landroidx/lifecycle/Lifecycle;
@@ -143,12 +135,10 @@
 
     move-result-object p1
 
-    .line 2
     sget-object p2, Landroidx/lifecycle/Lifecycle$State;->a:Landroidx/lifecycle/Lifecycle$State;
 
     if-ne p1, p2, :cond_0
 
-    .line 3
     iget-object p1, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->f:Landroidx/lifecycle/LiveData;
 
     iget-object p2, p0, Landroidx/lifecycle/LiveData$c;->a:Landroidx/lifecycle/q;
@@ -163,14 +153,12 @@
     :goto_0
     if-eq p2, p1, :cond_1
 
-    .line 4
     invoke-virtual {p0}, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->b()Z
 
     move-result p2
 
     invoke-virtual {p0, p2}, Landroidx/lifecycle/LiveData$c;->a(Z)V
 
-    .line 5
     iget-object p2, p0, Landroidx/lifecycle/LiveData$LifecycleBoundObserver;->e:Landroidx/lifecycle/k;
 
     invoke-interface {p2}, Landroidx/lifecycle/k;->getLifecycle()Landroidx/lifecycle/Lifecycle;

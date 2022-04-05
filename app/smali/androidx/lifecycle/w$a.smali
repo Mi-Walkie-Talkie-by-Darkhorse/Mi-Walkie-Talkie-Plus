@@ -1,6 +1,5 @@
 .class public Landroidx/lifecycle/w$a;
 .super Landroidx/lifecycle/w$d;
-.source "ViewModelProvider.java"
 
 
 # annotations
@@ -30,10 +29,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Landroidx/lifecycle/w$d;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/lifecycle/w$a;->b:Landroid/app/Application;
 
     return-void
@@ -48,19 +45,16 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     sget-object v0, Landroidx/lifecycle/w$a;->c:Landroidx/lifecycle/w$a;
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Landroidx/lifecycle/w$a;
 
     invoke-direct {v0, p0}, Landroidx/lifecycle/w$a;-><init>(Landroid/app/Application;)V
 
     sput-object v0, Landroidx/lifecycle/w$a;->c:Landroidx/lifecycle/w$a;
 
-    .line 3
     :cond_0
     sget-object p0, Landroidx/lifecycle/w$a;->c:Landroidx/lifecycle/w$a;
 
@@ -90,7 +84,6 @@
 
     const-string v0, "Cannot create an instance of "
 
-    .line 1
     const-class v1, Landroidx/lifecycle/a;
 
     invoke-virtual {v1, p1}, Ljava/lang/Class;->isAssignableFrom(Ljava/lang/Class;)Z
@@ -104,7 +97,6 @@
     :try_start_0
     new-array v2, v1, [Ljava/lang/Class;
 
-    .line 2
     const-class v3, Landroid/app/Application;
 
     const/4 v4, 0x0
@@ -137,7 +129,6 @@
     :catch_0
     move-exception v1
 
-    .line 3
     new-instance v2, Ljava/lang/RuntimeException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -159,7 +150,6 @@
     :catch_1
     move-exception v1
 
-    .line 4
     new-instance v2, Ljava/lang/RuntimeException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -181,7 +171,6 @@
     :catch_2
     move-exception v1
 
-    .line 5
     new-instance v2, Ljava/lang/RuntimeException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -203,7 +192,6 @@
     :catch_3
     move-exception v1
 
-    .line 6
     new-instance v2, Ljava/lang/RuntimeException;
 
     new-instance v3, Ljava/lang/StringBuilder;
@@ -222,7 +210,6 @@
 
     throw v2
 
-    .line 7
     :cond_0
     invoke-super {p0, p1}, Landroidx/lifecycle/w$d;->create(Ljava/lang/Class;)Landroidx/lifecycle/v;
 

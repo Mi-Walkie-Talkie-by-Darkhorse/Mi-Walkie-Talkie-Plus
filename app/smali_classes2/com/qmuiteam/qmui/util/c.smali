@@ -1,6 +1,5 @@
 .class public Lcom/qmuiteam/qmui/util/c;
 .super Ljava/lang/Object;
-.source "QMUIDeviceHelper.java"
 
 
 # annotations
@@ -37,7 +36,6 @@
 
     const-string v3, "MX"
 
-    .line 1
     filled-new-array {v0, v1, v2, v3}, [Ljava/lang/String;
 
     move-result-object v0
@@ -46,13 +44,10 @@
 
     const/4 v0, 0x0
 
-    .line 2
     sput-boolean v0, Lcom/qmuiteam/qmui/util/c;->d:Z
 
-    .line 3
     sput-boolean v0, Lcom/qmuiteam/qmui/util/c;->e:Z
 
-    .line 4
     sget-object v1, Landroid/os/Build;->BRAND:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
@@ -61,12 +56,10 @@
 
     sput-object v1, Lcom/qmuiteam/qmui/util/c;->f:Ljava/lang/String;
 
-    .line 5
     new-instance v1, Ljava/util/Properties;
 
     invoke-direct {v1}, Ljava/util/Properties;-><init>()V
 
-    .line 6
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const-string v3, "QMUIDeviceHelper"
@@ -77,7 +70,6 @@
 
     const/4 v2, 0x0
 
-    .line 7
     :try_start_0
     new-instance v4, Ljava/io/FileInputStream;
 
@@ -96,7 +88,6 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     :try_start_1
     invoke-virtual {v1, v4}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
     :try_end_1
@@ -130,12 +121,10 @@
 
     new-array v6, v0, [Ljava/lang/Object;
 
-    .line 9
     invoke-static {v3, v2, v5, v6}, Lcom/qmuiteam/qmui/b;->a(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 10
     :goto_1
     invoke-static {v4}, Lcom/qmuiteam/qmui/util/g;->a(Ljava/io/Closeable;)V
 
@@ -149,7 +138,6 @@
     :goto_2
     invoke-static {v2}, Lcom/qmuiteam/qmui/util/g;->a(Ljava/io/Closeable;)V
 
-    .line 11
     throw v0
 
     :cond_0
@@ -157,7 +145,6 @@
     :try_start_3
     const-string v2, "android.os.SystemProperties"
 
-    .line 12
     invoke-static {v2}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v2
@@ -168,7 +155,6 @@
 
     new-array v5, v5, [Ljava/lang/Class;
 
-    .line 13
     const-class v6, Ljava/lang/String;
 
     aput-object v6, v5, v0
@@ -179,7 +165,6 @@
 
     const-string v4, "ro.miui.ui.version.name"
 
-    .line 14
     invoke-static {v1, v2, v4}, Lcom/qmuiteam/qmui/util/c;->a(Ljava/util/Properties;Ljava/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
@@ -188,7 +173,6 @@
 
     const-string v4, "ro.build.display.id"
 
-    .line 15
     invoke-static {v1, v2, v4}, Lcom/qmuiteam/qmui/util/c;->a(Ljava/util/Properties;Ljava/lang/reflect/Method;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -206,7 +190,6 @@
 
     const-string v2, "read SystemProperties error"
 
-    .line 16
     invoke-static {v3, v1, v2, v0}, Lcom/qmuiteam/qmui/b;->a(Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     :goto_4
@@ -218,7 +201,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 21
     invoke-virtual {p0, p2}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -236,7 +218,6 @@
 
     aput-object p2, v1, v2
 
-    .line 22
     invoke-virtual {p1, v0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -256,7 +237,6 @@
     :goto_0
     if-eqz p0, :cond_1
 
-    .line 23
     invoke-virtual {p0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object p0
@@ -268,7 +248,6 @@
 .method public static a()Z
     .locals 2
 
-    .line 17
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->f:Ljava/lang/String;
 
     const-string v1, "essential"
@@ -285,7 +264,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-static {p0, v0, v0}, Lcom/qmuiteam/qmui/util/c;->a(III)Z
 
     move-result p0
@@ -296,7 +274,6 @@
 .method public static a(III)Z
     .locals 6
 
-    .line 3
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->c:Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -316,31 +293,26 @@
     :try_start_0
     const-string v0, "(\\d+\\.){2}\\d"
 
-    .line 4
     invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
 
     move-result-object v0
 
-    .line 5
     sget-object v3, Lcom/qmuiteam/qmui/util/c;->c:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
     move-result-object v0
 
-    .line 6
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->find()Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
-    .line 7
     invoke-virtual {v0}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 8
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v3
@@ -349,17 +321,14 @@
 
     const-string v3, "\\."
 
-    .line 9
     invoke-virtual {v0, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
     move-result-object v0
 
-    .line 10
     array-length v3, v0
 
     if-lt v3, v2, :cond_0
 
-    .line 11
     aget-object v3, v0, v1
 
     invoke-static {v3}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -377,7 +346,6 @@
     :cond_0
     const/4 v3, 0x0
 
-    .line 12
     :goto_0
     :try_start_1
     array-length v4, v0
@@ -388,7 +356,6 @@
 
     if-lez p1, :cond_1
 
-    .line 13
     aget-object p1, v0, v2
 
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -399,7 +366,6 @@
 
     const/4 v3, 0x1
 
-    .line 14
     :cond_1
     array-length p1, v0
 
@@ -409,7 +375,6 @@
 
     if-lez p2, :cond_3
 
-    .line 15
     aget-object p1, v0, v5
 
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
@@ -433,7 +398,6 @@
     :cond_2
     const/4 v3, 0x0
 
-    .line 16
     :cond_3
     :goto_1
     invoke-static {}, Lcom/qmuiteam/qmui/util/c;->j()Z
@@ -453,7 +417,6 @@
 .method private static a(Landroid/content/Context;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -484,7 +447,6 @@
 .method private static a([Ljava/lang/String;)Z
     .locals 5
 
-    .line 18
     sget-object v0, Landroid/os/Build;->BOARD:Ljava/lang/String;
 
     const/4 v1, 0x0
@@ -493,7 +455,6 @@
 
     return v1
 
-    .line 19
     :cond_0
     array-length v2, p0
 
@@ -504,7 +465,6 @@
 
     aget-object v4, p0, v3
 
-    .line 20
     invoke-virtual {v0, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v4
@@ -527,7 +487,6 @@
 .method public static b()Z
     .locals 2
 
-    .line 5
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->c:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -560,17 +519,14 @@
 .method public static b(Landroid/content/Context;)Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/qmuiteam/qmui/util/c;->d:Z
 
     if-eqz v0, :cond_0
 
-    .line 2
     sget-boolean p0, Lcom/qmuiteam/qmui/util/c;->e:Z
 
     return p0
 
-    .line 3
     :cond_0
     invoke-static {p0}, Lcom/qmuiteam/qmui/util/c;->a(Landroid/content/Context;)Z
 
@@ -580,7 +536,6 @@
 
     const/4 v0, 0x1
 
-    .line 4
     sput-boolean v0, Lcom/qmuiteam/qmui/util/c;->d:Z
 
     return p0
@@ -589,7 +544,6 @@
 .method public static c()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->f:Ljava/lang/String;
 
     const-string v1, "huawei"
@@ -628,7 +582,6 @@
 .method public static d()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->b:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -643,7 +596,6 @@
 .method public static e()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->b:Ljava/lang/String;
 
     const-string v1, "v5"
@@ -658,7 +610,6 @@
 .method public static f()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->b:Ljava/lang/String;
 
     const-string v1, "v6"
@@ -673,7 +624,6 @@
 .method public static g()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->b:Ljava/lang/String;
 
     const-string v1, "v7"
@@ -688,7 +638,6 @@
 .method public static h()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->b:Ljava/lang/String;
 
     const-string v1, "v8"
@@ -703,7 +652,6 @@
 .method public static i()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->b:Ljava/lang/String;
 
     const-string v1, "v9"
@@ -718,7 +666,6 @@
 .method public static j()Z
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->a:[Ljava/lang/String;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/util/c;->a([Ljava/lang/String;)Z
@@ -751,7 +698,6 @@
 .method public static k()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->f:Ljava/lang/String;
 
     const-string v1, "oppo"
@@ -766,7 +712,6 @@
 .method public static l()Z
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/qmuiteam/qmui/util/c;->f:Ljava/lang/String;
 
     const-string v1, "vivo"
@@ -805,7 +750,6 @@
 .method public static m()Z
     .locals 2
 
-    .line 1
     sget-object v0, Landroid/os/Build;->MANUFACTURER:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
@@ -824,12 +768,10 @@
 .method public static n()Z
     .locals 2
 
-    .line 1
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object v0
@@ -856,12 +798,10 @@
 .method public static o()Z
     .locals 2
 
-    .line 1
     sget-object v0, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
     move-result-object v0

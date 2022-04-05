@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/Futures$FallbackFuture;
 .super Lcom/google/common/util/concurrent/AbstractFuture;
-.source "Futures.java"
 
 
 # annotations
@@ -50,13 +49,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/util/concurrent/AbstractFuture;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$FallbackFuture;->running:Lcom/google/common/util/concurrent/ListenableFuture;
 
-    .line 3
     iget-object p1, p0, Lcom/google/common/util/concurrent/Futures$FallbackFuture;->running:Lcom/google/common/util/concurrent/ListenableFuture;
 
     new-instance v0, Lcom/google/common/util/concurrent/Futures$FallbackFuture$1;
@@ -71,7 +67,6 @@
 .method static synthetic access$100(Lcom/google/common/util/concurrent/Futures$FallbackFuture;)Lcom/google/common/util/concurrent/ListenableFuture;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/common/util/concurrent/Futures$FallbackFuture;->running:Lcom/google/common/util/concurrent/ListenableFuture;
 
     return-object p0
@@ -80,7 +75,6 @@
 .method static synthetic access$102(Lcom/google/common/util/concurrent/Futures$FallbackFuture;Lcom/google/common/util/concurrent/ListenableFuture;)Lcom/google/common/util/concurrent/ListenableFuture;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$FallbackFuture;->running:Lcom/google/common/util/concurrent/ListenableFuture;
 
     return-object p1
@@ -91,14 +85,12 @@
 .method public cancel(Z)Z
     .locals 1
 
-    .line 1
     invoke-super {p0, p1}, Lcom/google/common/util/concurrent/AbstractFuture;->cancel(Z)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$FallbackFuture;->running:Lcom/google/common/util/concurrent/ListenableFuture;
 
     invoke-interface {v0, p1}, Ljava/util/concurrent/Future;->cancel(Z)Z

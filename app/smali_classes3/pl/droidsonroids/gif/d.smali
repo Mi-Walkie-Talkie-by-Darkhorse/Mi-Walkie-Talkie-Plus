@@ -1,6 +1,5 @@
 .class final Lpl/droidsonroids/gif/d;
 .super Ljava/util/concurrent/ScheduledThreadPoolExecutor;
-.source "GifRenderingExecutor.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/ThreadPoolExecutor$DiscardPolicy;
 
     invoke-direct {v0}, Ljava/util/concurrent/ThreadPoolExecutor$DiscardPolicy;-><init>()V
@@ -30,7 +28,6 @@
 .method synthetic constructor <init>(Lpl/droidsonroids/gif/d$a;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lpl/droidsonroids/gif/d;-><init>()V
 
     return-void
@@ -39,7 +36,6 @@
 .method static a()Lpl/droidsonroids/gif/d;
     .locals 1
 
-    .line 1
     invoke-static {}, Lpl/droidsonroids/gif/d$b;->a()Lpl/droidsonroids/gif/d;
 
     move-result-object v0

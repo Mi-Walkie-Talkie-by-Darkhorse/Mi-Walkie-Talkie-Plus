@@ -1,6 +1,5 @@
 .class public final Landroidx/core/view/f0/b;
 .super Ljava/lang/Object;
-.source "InputConnectionCompat.java"
 
 
 # annotations
@@ -35,7 +34,6 @@
 
     if-eqz p2, :cond_2
 
-    .line 13
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x19
@@ -44,27 +42,23 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 14
     new-instance p1, Landroidx/core/view/f0/b$a;
 
     invoke-direct {p1, p0, v2, p2}, Landroidx/core/view/f0/b$a;-><init>(Landroid/view/inputmethod/InputConnection;ZLandroidx/core/view/f0/b$c;)V
 
     return-object p1
 
-    .line 15
     :cond_0
     invoke-static {p1}, Landroidx/core/view/f0/a;->a(Landroid/view/inputmethod/EditorInfo;)[Ljava/lang/String;
 
     move-result-object p1
 
-    .line 16
     array-length p1, p1
 
     if-nez p1, :cond_1
 
     return-object p0
 
-    .line 17
     :cond_1
     new-instance p1, Landroidx/core/view/f0/b$b;
 
@@ -72,7 +66,6 @@
 
     return-object p1
 
-    .line 18
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -82,7 +75,6 @@
 
     throw p0
 
-    .line 19
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -92,7 +84,6 @@
 
     throw p0
 
-    .line 20
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -127,7 +118,6 @@
     :cond_0
     const-string v1, "androidx.core.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
 
-    .line 1
     invoke-static {v1, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result v1
@@ -141,7 +131,6 @@
     :cond_1
     const-string v1, "android.support.v13.view.inputmethod.InputConnectionCompat.COMMIT_CONTENT"
 
-    .line 2
     invoke-static {v1, p0}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result p0
@@ -163,7 +152,6 @@
     :cond_2
     const-string v2, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_RESULT_RECEIVER"
 
-    .line 3
     :goto_1
     invoke-virtual {p1, v2}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -183,7 +171,6 @@
     :cond_3
     const-string v3, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_URI"
 
-    .line 4
     :goto_2
     invoke-virtual {p1, v3}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -200,7 +187,6 @@
     :cond_4
     const-string v4, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_DESCRIPTION"
 
-    .line 5
     :goto_3
     invoke-virtual {p1, v4}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -217,7 +203,6 @@
     :cond_5
     const-string v5, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_LINK_URI"
 
-    .line 6
     :goto_4
     invoke-virtual {p1, v5}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -234,7 +219,6 @@
     :cond_6
     const-string v6, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_FLAGS"
 
-    .line 7
     :goto_5
     invoke-virtual {p1, v6}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
 
@@ -249,7 +233,6 @@
     :cond_7
     const-string p0, "androidx.core.view.inputmethod.InputConnectionCompat.CONTENT_OPTS"
 
-    .line 8
     :goto_6
     invoke-virtual {p1, p0}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
@@ -261,12 +244,10 @@
 
     if-eqz v4, :cond_8
 
-    .line 9
     new-instance p1, Landroidx/core/view/f0/c;
 
     invoke-direct {p1, v3, v4, v5}, Landroidx/core/view/f0/c;-><init>(Landroid/net/Uri;Landroid/content/ClipDescription;Landroid/net/Uri;)V
 
-    .line 10
     invoke-interface {p2, p1, v6, p0}, Landroidx/core/view/f0/b$c;->a(Landroidx/core/view/f0/c;ILandroid/os/Bundle;)Z
 
     move-result v0
@@ -276,7 +257,6 @@
     :cond_8
     if-eqz v2, :cond_9
 
-    .line 11
     invoke-virtual {v2, v0, v1}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
 
     :cond_9
@@ -297,7 +277,6 @@
 
     invoke-virtual {v2, v0, v1}, Landroid/os/ResultReceiver;->send(ILandroid/os/Bundle;)V
 
-    .line 12
     :cond_a
     throw p0
 

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/col/l3/hx$a;
 .super Ljava/lang/Object;
-.source "BaseNetManager.java"
 
 
 # annotations

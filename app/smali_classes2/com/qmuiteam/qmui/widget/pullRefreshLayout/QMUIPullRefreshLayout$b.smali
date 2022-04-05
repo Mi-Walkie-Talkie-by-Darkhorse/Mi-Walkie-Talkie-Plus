@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$b;
 .super Ljava/lang/Object;
-.source "QMUIPullRefreshLayout.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;J)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$b;->b:Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;
 
     iput-wide p2, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$b;->a:J
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$b;->b:Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout;
 
     iget-wide v1, p0, Lcom/qmuiteam/qmui/widget/pullRefreshLayout/QMUIPullRefreshLayout$b;->a:J

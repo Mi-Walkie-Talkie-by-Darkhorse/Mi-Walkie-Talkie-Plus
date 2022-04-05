@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l;
 .super Ljava/lang/Object;
-.source "SealSettingActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/node/h;
@@ -25,7 +24,6 @@
 .method private constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -36,7 +34,6 @@
 .method synthetic constructor <init>(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$c;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l;-><init>(Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;)V
 
     return-void
@@ -65,7 +62,6 @@
 .method public d(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l$a;
@@ -86,7 +82,6 @@
 .method public f(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l;->a:Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity;
 
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/seal/SealSettingActivity$l$b;

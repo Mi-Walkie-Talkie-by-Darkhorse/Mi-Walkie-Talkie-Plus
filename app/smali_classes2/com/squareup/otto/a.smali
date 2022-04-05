@@ -1,6 +1,5 @@
 .class final Lcom/squareup/otto/a;
 .super Ljava/lang/Object;
-.source "AnnotatedHandlerFinder.java"
 
 
 # static fields
@@ -40,14 +39,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     sput-object v0, Lcom/squareup/otto/a;->a:Ljava/util/Map;
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -72,17 +69,14 @@
         }
     .end annotation
 
-    .line 36
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 37
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 38
     sget-object v2, Lcom/squareup/otto/a;->a:Ljava/util/Map;
 
     invoke-interface {v2, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -91,10 +85,8 @@
 
     if-nez v2, :cond_0
 
-    .line 39
     invoke-static {v0}, Lcom/squareup/otto/a;->a(Ljava/lang/Class;)V
 
-    .line 40
     :cond_0
     sget-object v2, Lcom/squareup/otto/a;->a:Ljava/util/Map;
 
@@ -104,14 +96,12 @@
 
     check-cast v0, Ljava/util/Map;
 
-    .line 41
     invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
 
     move-result v2
 
     if-nez v2, :cond_1
 
-    .line 42
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -133,7 +123,6 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 43
     new-instance v3, Lcom/squareup/otto/e;
 
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -144,7 +133,6 @@
 
     invoke-direct {v3, p0, v4}, Lcom/squareup/otto/e;-><init>(Ljava/lang/Object;Ljava/lang/reflect/Method;)V
 
-    .line 44
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
     move-result-object v2
@@ -167,17 +155,14 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 2
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 3
     invoke-virtual {p0}, Ljava/lang/Class;->getDeclaredMethods()[Ljava/lang/reflect/Method;
 
     move-result-object v2
@@ -193,7 +178,6 @@
 
     aget-object v6, v2, v5
 
-    .line 4
     invoke-virtual {v6}, Ljava/lang/reflect/Method;->isBridge()Z
 
     move-result v7
@@ -202,7 +186,6 @@
 
     goto/16 :goto_1
 
-    .line 5
     :cond_0
     const-class v7, Lcom/squareup/otto/Subscribe;
 
@@ -218,20 +201,16 @@
 
     if-eqz v7, :cond_5
 
-    .line 6
     invoke-virtual {v6}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
     move-result-object v7
 
-    .line 7
     array-length v11, v7
 
     if-ne v11, v9, :cond_4
 
-    .line 8
     aget-object v7, v7, v4
 
-    .line 9
     invoke-virtual {v7}, Ljava/lang/Class;->isInterface()Z
 
     move-result v11
@@ -240,7 +219,6 @@
 
     if-nez v11, :cond_3
 
-    .line 10
     invoke-virtual {v6}, Ljava/lang/reflect/Method;->getModifiers()I
 
     move-result v11
@@ -249,7 +227,6 @@
 
     if-eqz v9, :cond_2
 
-    .line 11
     invoke-interface {v0, v7}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v8
@@ -258,21 +235,17 @@
 
     if-nez v8, :cond_1
 
-    .line 12
     new-instance v8, Ljava/util/HashSet;
 
     invoke-direct {v8}, Ljava/util/HashSet;-><init>()V
 
-    .line 13
     invoke-interface {v0, v7, v8}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 14
     :cond_1
     invoke-interface {v8, v6}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     goto/16 :goto_1
 
-    .line 15
     :cond_2
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -298,7 +271,6 @@
 
     throw p0
 
-    .line 16
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -326,7 +298,6 @@
 
     throw p0
 
-    .line 17
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -358,7 +329,6 @@
 
     throw p0
 
-    .line 18
     :cond_5
     const-class v7, Lcom/squareup/otto/Produce;
 
@@ -368,17 +338,14 @@
 
     if-eqz v7, :cond_c
 
-    .line 19
     invoke-virtual {v6}, Ljava/lang/reflect/Method;->getParameterTypes()[Ljava/lang/Class;
 
     move-result-object v7
 
-    .line 20
     array-length v11, v7
 
     if-nez v11, :cond_b
 
-    .line 21
     invoke-virtual {v6}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
 
     move-result-object v7
@@ -387,12 +354,10 @@
 
     if-eq v7, v11, :cond_a
 
-    .line 22
     invoke-virtual {v6}, Ljava/lang/reflect/Method;->getReturnType()Ljava/lang/Class;
 
     move-result-object v7
 
-    .line 23
     invoke-virtual {v7}, Ljava/lang/Class;->isInterface()Z
 
     move-result v11
@@ -401,7 +366,6 @@
 
     if-nez v11, :cond_9
 
-    .line 24
     sget-object v11, Ljava/lang/Void;->TYPE:Ljava/lang/Class;
 
     invoke-virtual {v7, v11}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -410,7 +374,6 @@
 
     if-nez v11, :cond_8
 
-    .line 25
     invoke-virtual {v6}, Ljava/lang/reflect/Method;->getModifiers()I
 
     move-result v11
@@ -419,19 +382,16 @@
 
     if-eqz v9, :cond_7
 
-    .line 26
     invoke-interface {v1, v7}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
     move-result v8
 
     if-nez v8, :cond_6
 
-    .line 27
     invoke-interface {v1, v7, v6}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto/16 :goto_1
 
-    .line 28
     :cond_6
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -457,7 +417,6 @@
 
     throw p0
 
-    .line 29
     :cond_7
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -483,7 +442,6 @@
 
     throw p0
 
-    .line 30
     :cond_8
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -507,7 +465,6 @@
 
     throw p0
 
-    .line 31
     :cond_9
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -535,7 +492,6 @@
 
     throw p0
 
-    .line 32
     :cond_a
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -559,7 +515,6 @@
 
     throw p0
 
-    .line 33
     :cond_b
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -597,13 +552,11 @@
 
     goto/16 :goto_0
 
-    .line 34
     :cond_d
     sget-object v2, Lcom/squareup/otto/a;->a:Ljava/util/Map;
 
     invoke-interface {v2, p0, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 35
     sget-object v1, Lcom/squareup/otto/a;->b:Ljava/util/Map;
 
     invoke-interface {v1, p0, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -627,17 +580,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Ljava/util/HashMap;
 
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
-    .line 3
     sget-object v2, Lcom/squareup/otto/a;->b:Ljava/util/Map;
 
     invoke-interface {v2, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
@@ -646,10 +596,8 @@
 
     if-nez v2, :cond_0
 
-    .line 4
     invoke-static {v0}, Lcom/squareup/otto/a;->a(Ljava/lang/Class;)V
 
-    .line 5
     :cond_0
     sget-object v2, Lcom/squareup/otto/a;->b:Ljava/util/Map;
 
@@ -659,14 +607,12 @@
 
     check-cast v0, Ljava/util/Map;
 
-    .line 6
     invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
 
     move-result v2
 
     if-nez v2, :cond_2
 
-    .line 7
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v0
@@ -688,12 +634,10 @@
 
     check-cast v2, Ljava/util/Map$Entry;
 
-    .line 8
     new-instance v3, Ljava/util/HashSet;
 
     invoke-direct {v3}, Ljava/util/HashSet;-><init>()V
 
-    .line 9
     invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object v4
@@ -717,7 +661,6 @@
 
     check-cast v5, Ljava/lang/reflect/Method;
 
-    .line 10
     new-instance v6, Lcom/squareup/otto/d;
 
     invoke-direct {v6, p0, v5}, Lcom/squareup/otto/d;-><init>(Ljava/lang/Object;Ljava/lang/reflect/Method;)V
@@ -726,7 +669,6 @@
 
     goto :goto_1
 
-    .line 11
     :cond_1
     invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 

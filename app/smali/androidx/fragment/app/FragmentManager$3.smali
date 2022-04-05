@@ -1,6 +1,5 @@
 .class Landroidx/fragment/app/FragmentManager$3;
 .super Landroidx/fragment/app/FragmentFactory;
-.source "FragmentManager.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Landroidx/fragment/app/FragmentManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/fragment/app/FragmentManager$3;->this$0:Landroidx/fragment/app/FragmentManager;
 
     invoke-direct {p0}, Landroidx/fragment/app/FragmentFactory;-><init>()V
@@ -45,7 +43,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object p1, p0, Landroidx/fragment/app/FragmentManager$3;->this$0:Landroidx/fragment/app/FragmentManager;
 
     invoke-virtual {p1}, Landroidx/fragment/app/FragmentManager;->getHost()Landroidx/fragment/app/FragmentHostCallback;

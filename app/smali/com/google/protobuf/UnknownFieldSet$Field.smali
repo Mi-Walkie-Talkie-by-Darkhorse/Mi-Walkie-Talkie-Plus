@@ -1,6 +1,5 @@
 .class public final Lcom/google/protobuf/UnknownFieldSet$Field;
 .super Ljava/lang/Object;
-.source "UnknownFieldSet.java"
 
 
 # annotations
@@ -80,7 +79,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet$Field;->newBuilder()Lcom/google/protobuf/UnknownFieldSet$Field$Builder;
 
     move-result-object v0
@@ -97,7 +95,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -106,7 +103,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/UnknownFieldSet$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/UnknownFieldSet$Field;-><init>()V
 
     return-void
@@ -115,7 +111,6 @@
 .method static synthetic access$500(Lcom/google/protobuf/UnknownFieldSet$Field;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->varint:Ljava/util/List;
 
     return-object p0
@@ -124,7 +119,6 @@
 .method static synthetic access$502(Lcom/google/protobuf/UnknownFieldSet$Field;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->varint:Ljava/util/List;
 
     return-object p1
@@ -133,7 +127,6 @@
 .method static synthetic access$600(Lcom/google/protobuf/UnknownFieldSet$Field;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->fixed32:Ljava/util/List;
 
     return-object p0
@@ -142,7 +135,6 @@
 .method static synthetic access$602(Lcom/google/protobuf/UnknownFieldSet$Field;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->fixed32:Ljava/util/List;
 
     return-object p1
@@ -151,7 +143,6 @@
 .method static synthetic access$700(Lcom/google/protobuf/UnknownFieldSet$Field;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->fixed64:Ljava/util/List;
 
     return-object p0
@@ -160,7 +151,6 @@
 .method static synthetic access$702(Lcom/google/protobuf/UnknownFieldSet$Field;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->fixed64:Ljava/util/List;
 
     return-object p1
@@ -169,7 +159,6 @@
 .method static synthetic access$800(Lcom/google/protobuf/UnknownFieldSet$Field;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->lengthDelimited:Ljava/util/List;
 
     return-object p0
@@ -178,7 +167,6 @@
 .method static synthetic access$802(Lcom/google/protobuf/UnknownFieldSet$Field;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->lengthDelimited:Ljava/util/List;
 
     return-object p1
@@ -187,7 +175,6 @@
 .method static synthetic access$900(Lcom/google/protobuf/UnknownFieldSet$Field;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->group:Ljava/util/List;
 
     return-object p0
@@ -196,7 +183,6 @@
 .method static synthetic access$902(Lcom/google/protobuf/UnknownFieldSet$Field;Ljava/util/List;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->group:Ljava/util/List;
 
     return-object p1
@@ -205,7 +191,6 @@
 .method public static getDefaultInstance()Lcom/google/protobuf/UnknownFieldSet$Field;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/UnknownFieldSet$Field;->fieldDefaultInstance:Lcom/google/protobuf/UnknownFieldSet$Field;
 
     return-object v0
@@ -218,7 +203,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-object v1, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->varint:Ljava/util/List;
 
     const/4 v2, 0x0
@@ -255,7 +239,6 @@
 .method public static newBuilder()Lcom/google/protobuf/UnknownFieldSet$Field$Builder;
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet$Field$Builder;->access$300()Lcom/google/protobuf/UnknownFieldSet$Field$Builder;
 
     move-result-object v0
@@ -266,7 +249,6 @@
 .method public static newBuilder(Lcom/google/protobuf/UnknownFieldSet$Field;)Lcom/google/protobuf/UnknownFieldSet$Field$Builder;
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/google/protobuf/UnknownFieldSet$Field;->newBuilder()Lcom/google/protobuf/UnknownFieldSet$Field$Builder;
 
     move-result-object v0
@@ -289,7 +271,6 @@
 
     return p1
 
-    .line 1
     :cond_0
     instance-of v0, p1, Lcom/google/protobuf/UnknownFieldSet$Field;
 
@@ -299,7 +280,6 @@
 
     return p1
 
-    .line 2
     :cond_1
     invoke-direct {p0}, Lcom/google/protobuf/UnknownFieldSet$Field;->getIdentityArray()[Ljava/lang/Object;
 
@@ -329,7 +309,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->fixed32:Ljava/util/List;
 
     return-object v0
@@ -346,7 +325,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->fixed64:Ljava/util/List;
 
     return-object v0
@@ -363,7 +341,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->group:Ljava/util/List;
 
     return-object v0
@@ -380,7 +357,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->lengthDelimited:Ljava/util/List;
 
     return-object v0
@@ -389,7 +365,6 @@
 .method public getSerializedSize(I)I
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->varint:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -415,7 +390,6 @@
 
     move-result-wide v2
 
-    .line 2
     invoke-static {p1, v2, v3}, Lcom/google/protobuf/CodedOutputStream;->computeUInt64Size(IJ)I
 
     move-result v2
@@ -424,7 +398,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->fixed32:Ljava/util/List;
 
@@ -449,7 +422,6 @@
 
     move-result v2
 
-    .line 4
     invoke-static {p1, v2}, Lcom/google/protobuf/CodedOutputStream;->computeFixed32Size(II)I
 
     move-result v2
@@ -458,7 +430,6 @@
 
     goto :goto_1
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->fixed64:Ljava/util/List;
 
@@ -483,7 +454,6 @@
 
     move-result-wide v2
 
-    .line 6
     invoke-static {p1, v2, v3}, Lcom/google/protobuf/CodedOutputStream;->computeFixed64Size(IJ)I
 
     move-result v2
@@ -492,7 +462,6 @@
 
     goto :goto_2
 
-    .line 7
     :cond_2
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->lengthDelimited:Ljava/util/List;
 
@@ -513,7 +482,6 @@
 
     check-cast v2, Lcom/google/protobuf/ByteString;
 
-    .line 8
     invoke-static {p1, v2}, Lcom/google/protobuf/CodedOutputStream;->computeBytesSize(ILcom/google/protobuf/ByteString;)I
 
     move-result v2
@@ -522,7 +490,6 @@
 
     goto :goto_3
 
-    .line 9
     :cond_3
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->group:Ljava/util/List;
 
@@ -543,7 +510,6 @@
 
     check-cast v2, Lcom/google/protobuf/UnknownFieldSet;
 
-    .line 10
     invoke-static {p1, v2}, Lcom/google/protobuf/CodedOutputStream;->computeGroupSize(ILcom/google/protobuf/MessageLite;)I
 
     move-result v2
@@ -559,7 +525,6 @@
 .method public getSerializedSizeAsMessageSetExtension(I)I
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->lengthDelimited:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -581,7 +546,6 @@
 
     check-cast v2, Lcom/google/protobuf/ByteString;
 
-    .line 2
     invoke-static {p1, v2}, Lcom/google/protobuf/CodedOutputStream;->computeRawMessageSetExtensionSize(ILcom/google/protobuf/ByteString;)I
 
     move-result v2
@@ -605,7 +569,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->varint:Ljava/util/List;
 
     return-object v0
@@ -614,7 +577,6 @@
 .method public hashCode()I
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/UnknownFieldSet$Field;->getIdentityArray()[Ljava/lang/Object;
 
     move-result-object v0
@@ -634,7 +596,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->lengthDelimited:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -654,7 +615,6 @@
 
     check-cast v1, Lcom/google/protobuf/ByteString;
 
-    .line 2
     invoke-virtual {p2, p1, v1}, Lcom/google/protobuf/CodedOutputStream;->writeRawMessageSetExtension(ILcom/google/protobuf/ByteString;)V
 
     goto :goto_0
@@ -671,7 +631,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->varint:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -695,12 +654,10 @@
 
     move-result-wide v1
 
-    .line 2
     invoke-virtual {p2, p1, v1, v2}, Lcom/google/protobuf/CodedOutputStream;->writeUInt64(IJ)V
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->fixed32:Ljava/util/List;
 
@@ -725,12 +682,10 @@
 
     move-result v1
 
-    .line 4
     invoke-virtual {p2, p1, v1}, Lcom/google/protobuf/CodedOutputStream;->writeFixed32(II)V
 
     goto :goto_1
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->fixed64:Ljava/util/List;
 
@@ -755,12 +710,10 @@
 
     move-result-wide v1
 
-    .line 6
     invoke-virtual {p2, p1, v1, v2}, Lcom/google/protobuf/CodedOutputStream;->writeFixed64(IJ)V
 
     goto :goto_2
 
-    .line 7
     :cond_2
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->lengthDelimited:Ljava/util/List;
 
@@ -781,12 +734,10 @@
 
     check-cast v1, Lcom/google/protobuf/ByteString;
 
-    .line 8
     invoke-virtual {p2, p1, v1}, Lcom/google/protobuf/CodedOutputStream;->writeBytes(ILcom/google/protobuf/ByteString;)V
 
     goto :goto_3
 
-    .line 9
     :cond_3
     iget-object v0, p0, Lcom/google/protobuf/UnknownFieldSet$Field;->group:Ljava/util/List;
 
@@ -807,7 +758,6 @@
 
     check-cast v1, Lcom/google/protobuf/UnknownFieldSet;
 
-    .line 10
     invoke-virtual {p2, p1, v1}, Lcom/google/protobuf/CodedOutputStream;->writeGroup(ILcom/google/protobuf/MessageLite;)V
 
     goto :goto_4

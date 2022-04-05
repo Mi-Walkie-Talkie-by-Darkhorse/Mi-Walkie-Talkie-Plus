@@ -1,6 +1,5 @@
 .class Landroidx/appcompat/app/AlertController$d;
 .super Ljava/lang/Object;
-.source "AlertController.java"
 
 # interfaces
 .implements Landroid/widget/AbsListView$OnScrollListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/appcompat/app/AlertController;Landroid/view/View;Landroid/view/View;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/appcompat/app/AlertController$d;->a:Landroid/view/View;
 
     iput-object p3, p0, Landroidx/appcompat/app/AlertController$d;->b:Landroid/view/View;
@@ -42,7 +40,6 @@
 .method public onScroll(Landroid/widget/AbsListView;III)V
     .locals 0
 
-    .line 1
     iget-object p2, p0, Landroidx/appcompat/app/AlertController$d;->a:Landroid/view/View;
 
     iget-object p3, p0, Landroidx/appcompat/app/AlertController$d;->b:Landroid/view/View;

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/jz;
 .super Ljava/lang/Object;
-.source "CoreUtil.java"
 
 
 # static fields
@@ -56,7 +55,6 @@
 
     const-string v2, "com.amap.api.fence"
 
-    .line 1
     filled-new-array {v0, v1, v2}, [Ljava/lang/String;
 
     move-result-object v0
@@ -69,14 +67,12 @@
 .method public static a(Lcom/amap/api/location/AMapLocationClientOption;)Landroid/os/Bundle;
     .locals 3
 
-    .line 94
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     if-nez p0, :cond_0
 
-    .line 95
     new-instance p0, Lcom/amap/api/location/AMapLocationClientOption;
 
     invoke-direct {p0}, Lcom/amap/api/location/AMapLocationClientOption;-><init>()V
@@ -85,7 +81,6 @@
     :try_start_0
     const-string v1, "opt"
 
-    .line 96
     invoke-virtual {v0, v1, p0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -99,7 +94,6 @@
 
     const-string v2, "getOptionBundle"
 
-    .line 97
     invoke-static {p0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
@@ -109,7 +103,6 @@
 .method public static a(Ljava/lang/String;Ljava/lang/String;)Lcom/amap/api/col/l3/gh;
     .locals 2
 
-    .line 89
     :try_start_0
     new-instance v0, Lcom/amap/api/col/l3/gh$a;
 
@@ -140,7 +133,6 @@
 
     const-string v0, "getSDKInfo"
 
-    .line 90
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 p0, 0x0
@@ -156,7 +148,6 @@
 
     return-object p0
 
-    .line 4
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getCountry()Ljava/lang/String;
@@ -165,86 +156,72 @@
 
     invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setCountry(Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getRoad()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setRoad(Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getPoiName()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setPoiName(Ljava/lang/String;)V
 
-    .line 7
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getStreet()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setStreet(Ljava/lang/String;)V
 
-    .line 8
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getStreetNum()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setNumber(Ljava/lang/String;)V
 
-    .line 9
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getCityCode()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 10
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAdCode()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 11
     invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setCityCode(Ljava/lang/String;)V
 
-    .line 12
     invoke-virtual {p0, v1}, Lcom/amap/api/location/AMapLocation;->setAdCode(Ljava/lang/String;)V
 
-    .line 13
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getCity()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setCity(Ljava/lang/String;)V
 
-    .line 14
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getDistrict()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setDistrict(Ljava/lang/String;)V
 
-    .line 15
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getProvince()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setProvince(Ljava/lang/String;)V
 
-    .line 16
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAoiName()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setAoiName(Ljava/lang/String;)V
 
-    .line 17
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAddress()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p0, v0}, Lcom/amap/api/location/AMapLocation;->setAddress(Ljava/lang/String;)V
 
-    .line 18
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getDescription()Ljava/lang/String;
 
     move-result-object v0
@@ -253,7 +230,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 19
     :try_start_1
     invoke-virtual {p0}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
 
@@ -269,7 +245,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 20
     :try_start_2
     invoke-virtual {p0}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
 
@@ -281,7 +256,6 @@
 
     invoke-virtual {v0, v2, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 21
     invoke-virtual {p0}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
@@ -296,7 +270,6 @@
 
     invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 22
     invoke-virtual {p0}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
 
     move-result-object v0
@@ -309,20 +282,17 @@
 
     goto :goto_0
 
-    .line 23
     :cond_1
     new-instance v0, Landroid/os/Bundle;
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    .line 24
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getCityCode()Ljava/lang/String;
 
     move-result-object v4
 
     invoke-virtual {v0, v2, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 25
     invoke-virtual {p1}, Landroid/location/Location;->getExtras()Landroid/os/Bundle;
 
     move-result-object v2
@@ -333,14 +303,12 @@
 
     invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 26
     invoke-virtual {p1}, Lcom/amap/api/location/AMapLocation;->getAdCode()Ljava/lang/String;
 
     move-result-object p1
 
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 27
     invoke-virtual {p0, v0}, Landroid/location/Location;->setExtras(Landroid/os/Bundle;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
@@ -353,7 +321,6 @@
 .method public static a(Landroid/os/Bundle;)Lcom/amap/api/location/AMapLocationClientOption;
     .locals 3
 
-    .line 98
     new-instance v0, Lcom/amap/api/location/AMapLocationClientOption;
 
     invoke-direct {v0}, Lcom/amap/api/location/AMapLocationClientOption;-><init>()V
@@ -362,7 +329,6 @@
 
     return-object v0
 
-    .line 99
     :cond_0
     :try_start_0
     const-class v1, Lcom/amap/api/location/AMapLocationClientOption;
@@ -375,7 +341,6 @@
 
     const-string v1, "opt"
 
-    .line 100
     invoke-virtual {p0, v1}, Landroid/os/Bundle;->getParcelable(Ljava/lang/String;)Landroid/os/Parcelable;
 
     move-result-object p0
@@ -395,7 +360,6 @@
 
     const-string v2, "getOptionFromBundle"
 
-    .line 101
     invoke-static {p0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :goto_0
@@ -405,7 +369,6 @@
 .method public static a()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/jz;->a:Ljava/lang/String;
 
     return-object v0
@@ -420,7 +383,6 @@
 
     const/4 v2, 0x0
 
-    .line 77
     :try_start_0
     invoke-static {p0, v2}, Lcom/amap/api/col/l3/gi;->a(Landroid/content/Context;Z)Z
 
@@ -430,14 +392,12 @@
 
     const-string p0, "http://abroad.apilocate.amap.com/mobile/binary"
 
-    .line 78
     sput-object p0, Lcom/amap/api/col/l3/jz;->a:Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
     return-void
 
-    .line 79
     :cond_0
     :try_start_1
     sget-object v2, Lcom/amap/api/col/l3/jz;->j:Ljava/util/HashMap;
@@ -517,7 +477,6 @@
 
     invoke-static {v2, v1, v3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 80
     :goto_0
     invoke-static {p0}, Lcom/amap/api/col/l3/fw;->f(Landroid/content/Context;)Ljava/lang/String;
 
@@ -527,7 +486,6 @@
 
     move-result-object p0
 
-    .line 81
     sput-object p0, Lcom/amap/api/col/l3/jz;->i:Ljava/lang/String;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
@@ -635,7 +593,6 @@
     :catchall_2
     move-exception p0
 
-    .line 82
     invoke-static {p0, v1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -659,7 +616,6 @@
     :try_start_0
     const-string v4, "lat"
 
-    .line 28
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getLatitude()D
 
     move-result-wide v5
@@ -670,7 +626,6 @@
 
     const-string v6, "lon"
 
-    .line 29
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getLongitude()D
 
     move-result-wide v7
@@ -681,7 +636,6 @@
 
     const-string v8, "provider"
 
-    .line 30
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getProvider()Ljava/lang/String;
 
     move-result-object v9
@@ -692,15 +646,12 @@
 
     invoke-virtual {p0, v8}, Landroid/location/Location;->setProvider(Ljava/lang/String;)V
 
-    .line 31
     invoke-virtual {p0, v4, v5}, Lcom/amap/api/location/AMapLocation;->setLatitude(D)V
 
-    .line 32
     invoke-virtual {p0, v6, v7}, Lcom/amap/api/location/AMapLocation;->setLongitude(D)V
 
     const-string v8, "altitude"
 
-    .line 33
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getAltitude()D
 
     move-result-wide v9
@@ -716,19 +667,16 @@
     :try_start_1
     const-string v8, "accuracy"
 
-    .line 34
     invoke-virtual {p1, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 35
     invoke-static {v8}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v9
 
     if-nez v9, :cond_0
 
-    .line 36
     invoke-static {v8}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
 
     move-result v8
@@ -742,19 +690,16 @@
     :try_start_2
     const-string v8, "speed"
 
-    .line 37
     invoke-virtual {p1, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 38
     invoke-static {v8}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v9
 
     if-nez v9, :cond_1
 
-    .line 39
     invoke-static {v8}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
 
     move-result v8
@@ -768,19 +713,16 @@
     :try_start_3
     const-string v8, "bearing"
 
-    .line 40
     invoke-virtual {p1, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
-    .line 41
     invoke-static {v8}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v9
 
     if-nez v9, :cond_2
 
-    .line 42
     invoke-static {v8}, Ljava/lang/Float;->parseFloat(Ljava/lang/String;)F
 
     move-result v8
@@ -789,7 +731,6 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 43
     :catchall_2
     :cond_2
     :try_start_4
@@ -803,7 +744,6 @@
 
     invoke-virtual {p0, v8}, Lcom/amap/api/location/AMapLocation;->setAdCode(Ljava/lang/String;)V
 
-    .line 44
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getCityCode()Ljava/lang/String;
 
     move-result-object v8
@@ -816,7 +756,6 @@
 
     const-string v8, "address"
 
-    .line 45
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getAddress()Ljava/lang/String;
 
     move-result-object v9
@@ -829,14 +768,12 @@
 
     const-string v8, ""
 
-    .line 46
     invoke-virtual {p1, v1, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
     const-string v9, "country"
 
-    .line 47
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getCountry()Ljava/lang/String;
 
     move-result-object v10
@@ -849,7 +786,6 @@
 
     const-string v9, "province"
 
-    .line 48
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getProvince()Ljava/lang/String;
 
     move-result-object v10
@@ -862,7 +798,6 @@
 
     const-string v9, "city"
 
-    .line 49
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getCity()Ljava/lang/String;
 
     move-result-object v10
@@ -875,7 +810,6 @@
 
     const-string v9, "district"
 
-    .line 50
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getDistrict()Ljava/lang/String;
 
     move-result-object v10
@@ -888,7 +822,6 @@
 
     const-string v9, "road"
 
-    .line 51
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getRoad()Ljava/lang/String;
 
     move-result-object v10
@@ -901,7 +834,6 @@
 
     const-string v9, "street"
 
-    .line 52
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getStreet()Ljava/lang/String;
 
     move-result-object v10
@@ -914,7 +846,6 @@
 
     const-string v9, "number"
 
-    .line 53
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getStreetNum()Ljava/lang/String;
 
     move-result-object v10
@@ -927,7 +858,6 @@
 
     const-string v9, "poiname"
 
-    .line 54
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getPoiName()Ljava/lang/String;
 
     move-result-object v10
@@ -940,7 +870,6 @@
 
     const-string v9, "aoiname"
 
-    .line 55
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getAoiName()Ljava/lang/String;
 
     move-result-object v10
@@ -953,7 +882,6 @@
 
     const-string v9, "errorCode"
 
-    .line 56
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getErrorCode()I
 
     move-result v10
@@ -966,7 +894,6 @@
 
     const-string v9, "errorInfo"
 
-    .line 57
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getErrorInfo()Ljava/lang/String;
 
     move-result-object v10
@@ -979,7 +906,6 @@
 
     const-string v9, "locationType"
 
-    .line 58
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getLocationType()I
 
     move-result v10
@@ -992,7 +918,6 @@
 
     const-string v9, "locationDetail"
 
-    .line 59
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getLocationDetail()Ljava/lang/String;
 
     move-result-object v10
@@ -1005,7 +930,6 @@
 
     const-string v9, "time"
 
-    .line 60
     invoke-virtual {p0}, Landroid/location/Location;->getTime()J
 
     move-result-wide v10
@@ -1018,7 +942,6 @@
 
     const-string v9, "isOffset"
 
-    .line 61
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->isOffset()Z
 
     move-result v10
@@ -1027,12 +950,10 @@
 
     move-result v9
 
-    .line 62
     invoke-virtual {p0, v9}, Lcom/amap/api/location/AMapLocation;->setOffset(Z)V
 
     const-string v10, "poiid"
 
-    .line 63
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getBuildingId()Ljava/lang/String;
 
     move-result-object v11
@@ -1045,7 +966,6 @@
 
     const-string v10, "floor"
 
-    .line 64
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getFloor()Ljava/lang/String;
 
     move-result-object v11
@@ -1058,7 +978,6 @@
 
     const-string v10, "description"
 
-    .line 65
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getDescription()Ljava/lang/String;
 
     move-result-object v11
@@ -1069,7 +988,6 @@
 
     invoke-virtual {p0, v10}, Lcom/amap/api/location/AMapLocation;->setDescription(Ljava/lang/String;)V
 
-    .line 66
     invoke-virtual {p1, v0}, Lorg/json/JSONObject;->has(Ljava/lang/String;)Z
 
     move-result v10
@@ -1080,7 +998,6 @@
 
     if-eqz v10, :cond_3
 
-    .line 67
     :try_start_5
     invoke-virtual {p1, v0, v11}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
@@ -1090,7 +1007,6 @@
 
     goto :goto_0
 
-    .line 68
     :cond_3
     invoke-static {v4, v5, v6, v7}, Lcom/amap/api/col/l3/jz;->a(DD)Z
 
@@ -1100,7 +1016,6 @@
 
     if-eqz v9, :cond_4
 
-    .line 69
     invoke-virtual {p0, v11}, Lcom/amap/api/location/AMapLocation;->setCoordType(Ljava/lang/String;)V
 
     goto :goto_0
@@ -1108,37 +1023,31 @@
     :cond_4
     const-string p1, "WGS84"
 
-    .line 70
     invoke-virtual {p0, p1}, Lcom/amap/api/location/AMapLocation;->setCoordType(Ljava/lang/String;)V
 
-    .line 71
     :goto_0
     new-instance p1, Landroid/os/Bundle;
 
     invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
 
-    .line 72
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getCityCode()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p1, v2, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 73
     invoke-virtual {v8}, Ljava/lang/String;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 74
     invoke-virtual {p0}, Lcom/amap/api/location/AMapLocation;->getAdCode()Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {p1, v3, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 75
     invoke-virtual {p0, p1}, Landroid/location/Location;->setExtras(Landroid/os/Bundle;)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_3
@@ -1152,7 +1061,6 @@
 
     const-string v0, "transformLocation"
 
-    .line 76
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_5
@@ -1164,7 +1072,6 @@
 
     const-string v0, "reportError"
 
-    .line 91
     invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -1173,7 +1080,6 @@
 
     return-void
 
-    .line 92
     :cond_0
     :try_start_0
     instance-of v0, p0, Lcom/amap/api/col/l3/fv;
@@ -1182,7 +1088,6 @@
 
     return-void
 
-    .line 93
     :cond_1
     invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
@@ -1239,7 +1144,6 @@
     :try_start_0
     const-string p3, "00000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000001011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011101010111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111101111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000110111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011010111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001010011100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111100110001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111110011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111000000000111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111100000000000010111110100000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111110000000001111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111000000111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111101111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000101111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000011110000000001111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000000000000011000011111100000000111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000000001111111100111111111100110111111111111111111111111111111111111111111111110000000000000000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000000101111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111011111000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100100000000000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100011100000000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000111110000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110011111110000000000000000000000111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110111111110000000000000000000000111011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111110000000000000000000000001111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111100000000000000000000000011111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000000000000000000000011111111111111111111111111111111111111111111111100001111111111111111111111111111111111111111111111111010000000000000000000000111111111111111111111111111111111111111111110000000000000001111111111111111111111111111111111111111111100000000000000000000011111111111111111111111111111111100000000000000000000000000001111111111111111111111111111111111111111110000000000000000000001111111111111111111111111111111100000000000000000000000000000001111111111111111111111111111111111111111000000000000000000000111111111111111111111111111111110000000000000000000000000000001111111111111111111111111111111111111111100000000000000000000111111111111111111111111111111000000000000000000000000000000000111111111111111111111111111111111111111111000000000000000000001111111111111111111111111110000000000000000000000000000000000001110011111111111111111111111111111111111111100000000000000000000011111111111111111100000000000000000000000000000000000000000000000001111111111111111111111111111111111111000000000000000000001111111111111111111000000000000000000000000000000000000000000000000011111111111111111111111111111111111100000000000000000000011111111111111111100000000000000000000000000000000000000000000000000011111111111111111111111111111111111000000000000000000001111111111111111100000000000000000000000000000000000000000000000000000000111111111111111111111111111111110000000000000000000000000111111111100000000000000000000000000000000000000000000000000111111111111111111111111111111111111111000000000000000000000000011111111100000000000000000000000000000000000000000000000000011111111111111111111111111111110001111100000000000000000000000000111110000000000000000000000000000000000000000000000000000001111111111111111111111111111111000000000000000000000000000000000001110000000000000000000000000000000000000000000000000000000011111111111111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000111111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001111111111110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010110000000000000000000000"
 
-    .line 2
     invoke-virtual {p3, p0}, Ljava/lang/String;->charAt(I)C
 
     move-result p0
@@ -1262,7 +1166,6 @@
 
     const-string p3, "isChina"
 
-    .line 3
     invoke-static {p0, p1, p3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return p2
@@ -1289,7 +1192,6 @@
 
     sub-double/2addr v0, v2
 
-    .line 117
     invoke-static {v0, v1}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v0
@@ -1347,24 +1249,20 @@
 
     move-object/from16 v0, p1
 
-    .line 102
     invoke-virtual/range {p0 .. p0}, Lcom/amap/api/location/DPoint;->getLongitude()D
 
     move-result-wide v13
 
-    .line 103
     invoke-virtual/range {p0 .. p0}, Lcom/amap/api/location/DPoint;->getLatitude()D
 
     move-result-wide v15
 
-    .line 104
     invoke-virtual/range {p0 .. p0}, Lcom/amap/api/location/DPoint;->getLatitude()D
 
     move-result-wide v17
 
     const/4 v11, 0x0
 
-    .line 105
     invoke-interface {v0, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -1389,7 +1287,6 @@
 
     if-nez v1, :cond_0
 
-    .line 106
     invoke-interface {v0, v11}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -1401,7 +1298,6 @@
 
     const/16 v20, 0x0
 
-    .line 107
     :goto_0
     invoke-interface/range {p1 .. p1}, Ljava/util/List;->size()I
 
@@ -1411,7 +1307,6 @@
 
     if-ge v1, v2, :cond_6
 
-    .line 108
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -1422,7 +1317,6 @@
 
     move-result-wide v21
 
-    .line 109
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
@@ -1435,7 +1329,6 @@
 
     add-int/lit8 v12, v1, 0x1
 
-    .line 110
     invoke-interface {v0, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -1446,7 +1339,6 @@
 
     move-result-wide v25
 
-    .line 111
     invoke-interface {v0, v12}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v1
@@ -1473,7 +1365,6 @@
 
     move-wide/from16 v11, v27
 
-    .line 112
     invoke-static/range {v1 .. v12}, Lcom/amap/api/col/l3/jz;->a(DDDDDD)Z
 
     move-result v1
@@ -1485,7 +1376,6 @@
     :cond_1
     sub-double v31, v27, v23
 
-    .line 113
     invoke-static/range {v31 .. v32}, Ljava/lang/Math;->abs(D)D
 
     move-result-wide v1
@@ -1508,7 +1398,6 @@
 
     move-wide/from16 v11, v17
 
-    .line 114
     invoke-static/range {v1 .. v12}, Lcom/amap/api/col/l3/jz;->a(DDDDDD)Z
 
     move-result v1
@@ -1537,7 +1426,6 @@
 
     move-wide/from16 v11, v17
 
-    .line 115
     invoke-static/range {v1 .. v12}, Lcom/amap/api/col/l3/jz;->a(DDDDDD)Z
 
     move-result v1
@@ -1632,7 +1520,6 @@
     :cond_6
     const/16 v29, 0x0
 
-    .line 116
     rem-int/lit8 v20, v20, 0x2
 
     if-eqz v20, :cond_7
@@ -1655,7 +1542,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 83
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -1666,7 +1552,6 @@
 
     goto :goto_1
 
-    .line 84
     :cond_0
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
 
@@ -1674,14 +1559,12 @@
 
     move-result-object p0
 
-    .line 85
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v1
 
     div-int/2addr v1, v2
 
-    .line 86
     new-array v2, v1, [B
 
     :goto_0
@@ -1691,12 +1574,10 @@
 
     add-int/lit8 v4, v3, 0x2
 
-    .line 87
     invoke-virtual {p0, v3, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 88
     invoke-static {v3}, Lcom/amap/api/col/l3/ki;->i(Ljava/lang/String;)I
 
     move-result v3
@@ -1726,13 +1607,11 @@
 
     const-string v0, "4.7.2"
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/amap/api/col/l3/jz;->n:Lcom/amap/api/col/l3/gh;
 
     if-nez v1, :cond_0
 
-    .line 2
     new-instance v1, Lcom/amap/api/col/l3/gh$a;
 
     const-string v2, "loc"
@@ -1741,7 +1620,6 @@
 
     invoke-direct {v1, v2, v0, v3}, Lcom/amap/api/col/l3/gh$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     invoke-static {}, Lcom/amap/api/col/l3/jz;->e()[Ljava/lang/String;
 
     move-result-object v2
@@ -1771,10 +1649,8 @@
 
     const-string v2, "getSDKInfo"
 
-    .line 4
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     :cond_0
     :goto_0
     sget-object v0, Lcom/amap/api/col/l3/jz;->n:Lcom/amap/api/col/l3/gh;
@@ -1785,12 +1661,10 @@
 .method public static b(Landroid/content/Context;)Ljava/lang/String;
     .locals 0
 
-    .line 6
     invoke-static {p0}, Lcom/amap/api/col/l3/fw;->e(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object p0
 
-    .line 7
     invoke-static {p0}, Lcom/amap/api/col/l3/ge;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -1801,7 +1675,6 @@
 .method public static c()Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/jz;->c:Ljava/lang/String;
 
     return-object v0
@@ -1812,7 +1685,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :try_start_0
     invoke-static {p0, v0}, Lcom/amap/api/col/l3/gi;->a(Landroid/content/Context;Z)Z
 
@@ -1822,12 +1694,10 @@
 
     const-string p0, "http://abroad.apilocate.amap.com/mobile/binary"
 
-    .line 3
     sput-object p0, Lcom/amap/api/col/l3/jz;->a:Ljava/lang/String;
 
     return-void
 
-    .line 4
     :cond_0
     sget-object p0, Lcom/amap/api/col/l3/jz;->b:Ljava/lang/String;
 
@@ -1839,12 +1709,10 @@
 
     const-string p0, "http://apilocate.amap.com/mobile/binary"
 
-    .line 5
     sput-object p0, Lcom/amap/api/col/l3/jz;->a:Ljava/lang/String;
 
     return-void
 
-    .line 6
     :cond_1
     sget-object p0, Lcom/amap/api/col/l3/jz;->b:Ljava/lang/String;
 
@@ -1861,7 +1729,6 @@
 
     const-string v1, "changeUrl"
 
-    .line 7
     invoke-static {p0, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -1870,22 +1737,18 @@
 .method public static d()Z
     .locals 1
 
-    .line 1
     sget-boolean v0, Lcom/amap/api/col/l3/jz;->k:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
     sput-boolean v0, Lcom/amap/api/col/l3/jz;->k:Z
 
     const/4 v0, 0x0
 
-    .line 3
     sput-boolean v0, Lcom/amap/api/col/l3/jz;->l:Z
 
-    .line 4
     :cond_0
     sget-boolean v0, Lcom/amap/api/col/l3/jz;->l:Z
 
@@ -1895,7 +1758,6 @@
 .method private static e()[Ljava/lang/String;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/amap/api/col/l3/jz;->m:[Ljava/lang/String;
 
     invoke-virtual {v0}, [Ljava/lang/String;->clone()Ljava/lang/Object;

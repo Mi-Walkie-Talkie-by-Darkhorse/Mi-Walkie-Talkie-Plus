@@ -1,6 +1,5 @@
 .class synthetic Lme/zhanghai/android/materialprogressbar/MaterialProgressBar$1;
 .super Ljava/lang/Object;
-.source "MaterialProgressBar.java"
 
 
 # annotations

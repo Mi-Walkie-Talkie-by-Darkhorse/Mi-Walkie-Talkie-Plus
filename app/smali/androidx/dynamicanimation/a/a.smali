@@ -1,6 +1,5 @@
 .class Landroidx/dynamicanimation/a/a;
 .super Ljava/lang/Object;
-.source "AnimationHandler.java"
 
 
 # annotations
@@ -62,7 +61,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
@@ -75,24 +73,20 @@
 .method constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, La/b/g;
 
     invoke-direct {v0}, La/b/g;-><init>()V
 
     iput-object v0, p0, Landroidx/dynamicanimation/a/a;->a:La/b/g;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Landroidx/dynamicanimation/a/a;->b:Ljava/util/ArrayList;
 
-    .line 4
     new-instance v0, Landroidx/dynamicanimation/a/a$a;
 
     invoke-direct {v0, p0}, Landroidx/dynamicanimation/a/a$a;-><init>(Landroidx/dynamicanimation/a/a;)V
@@ -101,12 +95,10 @@
 
     const-wide/16 v0, 0x0
 
-    .line 5
     iput-wide v0, p0, Landroidx/dynamicanimation/a/a;->e:J
 
     const/4 v0, 0x0
 
-    .line 6
     iput-boolean v0, p0, Landroidx/dynamicanimation/a/a;->f:Z
 
     return-void
@@ -115,12 +107,10 @@
 .method private b()V
     .locals 2
 
-    .line 4
     iget-boolean v0, p0, Landroidx/dynamicanimation/a/a;->f:Z
 
     if-eqz v0, :cond_2
 
-    .line 5
     iget-object v0, p0, Landroidx/dynamicanimation/a/a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -132,7 +122,6 @@
     :goto_0
     if-ltz v0, :cond_1
 
-    .line 6
     iget-object v1, p0, Landroidx/dynamicanimation/a/a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -141,7 +130,6 @@
 
     if-nez v1, :cond_0
 
-    .line 7
     iget-object v1, p0, Landroidx/dynamicanimation/a/a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
@@ -154,7 +142,6 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 8
     iput-boolean v0, p0, Landroidx/dynamicanimation/a/a;->f:Z
 
     :cond_2
@@ -164,7 +151,6 @@
 .method private b(Landroidx/dynamicanimation/a/a$b;J)Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Landroidx/dynamicanimation/a/a;->a:La/b/g;
 
     invoke-virtual {v0, p1}, La/b/g;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -179,7 +165,6 @@
 
     return v1
 
-    .line 2
     :cond_0
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
@@ -189,7 +174,6 @@
 
     if-gez v0, :cond_1
 
-    .line 3
     iget-object p2, p0, Landroidx/dynamicanimation/a/a;->a:La/b/g;
 
     invoke-virtual {p2, p1}, La/b/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
@@ -205,7 +189,6 @@
 .method public static c()Landroidx/dynamicanimation/a/a;
     .locals 2
 
-    .line 1
     sget-object v0, Landroidx/dynamicanimation/a/a;->g:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
@@ -214,7 +197,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     sget-object v0, Landroidx/dynamicanimation/a/a;->g:Ljava/lang/ThreadLocal;
 
     new-instance v1, Landroidx/dynamicanimation/a/a;
@@ -223,7 +205,6 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V
 
-    .line 3
     :cond_0
     sget-object v0, Landroidx/dynamicanimation/a/a;->g:Ljava/lang/ThreadLocal;
 
@@ -241,19 +222,16 @@
 .method a()Landroidx/dynamicanimation/a/a$c;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/dynamicanimation/a/a;->d:Landroidx/dynamicanimation/a/a$c;
 
     if-nez v0, :cond_1
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
 
     if-lt v0, v1, :cond_0
 
-    .line 3
     new-instance v0, Landroidx/dynamicanimation/a/a$e;
 
     iget-object v1, p0, Landroidx/dynamicanimation/a/a;->c:Landroidx/dynamicanimation/a/a$a;
@@ -264,7 +242,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance v0, Landroidx/dynamicanimation/a/a$d;
 
@@ -274,7 +251,6 @@
 
     iput-object v0, p0, Landroidx/dynamicanimation/a/a;->d:Landroidx/dynamicanimation/a/a$c;
 
-    .line 5
     :cond_1
     :goto_0
     iget-object v0, p0, Landroidx/dynamicanimation/a/a;->d:Landroidx/dynamicanimation/a/a$c;
@@ -285,14 +261,12 @@
 .method a(J)V
     .locals 5
 
-    .line 15
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
 
     move-result-wide v0
 
     const/4 v2, 0x0
 
-    .line 16
     :goto_0
     iget-object v3, p0, Landroidx/dynamicanimation/a/a;->b:Ljava/util/ArrayList;
 
@@ -302,7 +276,6 @@
 
     if-ge v2, v3, :cond_2
 
-    .line 17
     iget-object v3, p0, Landroidx/dynamicanimation/a/a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -315,7 +288,6 @@
 
     goto :goto_1
 
-    .line 18
     :cond_0
     invoke-direct {p0, v3, v0, v1}, Landroidx/dynamicanimation/a/a;->b(Landroidx/dynamicanimation/a/a$b;J)Z
 
@@ -323,7 +295,6 @@
 
     if-eqz v4, :cond_1
 
-    .line 19
     invoke-interface {v3, p1, p2}, Landroidx/dynamicanimation/a/a$b;->a(J)Z
 
     :cond_1
@@ -332,7 +303,6 @@
 
     goto :goto_0
 
-    .line 20
     :cond_2
     invoke-direct {p0}, Landroidx/dynamicanimation/a/a;->b()V
 
@@ -342,12 +312,10 @@
 .method public a(Landroidx/dynamicanimation/a/a$b;)V
     .locals 2
 
-    .line 11
     iget-object v0, p0, Landroidx/dynamicanimation/a/a;->a:La/b/g;
 
     invoke-virtual {v0, p1}, La/b/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12
     iget-object v0, p0, Landroidx/dynamicanimation/a/a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->indexOf(Ljava/lang/Object;)I
@@ -356,7 +324,6 @@
 
     if-ltz p1, :cond_0
 
-    .line 13
     iget-object v0, p0, Landroidx/dynamicanimation/a/a;->b:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
@@ -365,7 +332,6 @@
 
     const/4 p1, 0x1
 
-    .line 14
     iput-boolean p1, p0, Landroidx/dynamicanimation/a/a;->f:Z
 
     :cond_0
@@ -375,7 +341,6 @@
 .method public a(Landroidx/dynamicanimation/a/a$b;J)V
     .locals 3
 
-    .line 6
     iget-object v0, p0, Landroidx/dynamicanimation/a/a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -384,14 +349,12 @@
 
     if-nez v0, :cond_0
 
-    .line 7
     invoke-virtual {p0}, Landroidx/dynamicanimation/a/a;->a()Landroidx/dynamicanimation/a/a$c;
 
     move-result-object v0
 
     invoke-virtual {v0}, Landroidx/dynamicanimation/a/a$c;->a()V
 
-    .line 8
     :cond_0
     iget-object v0, p0, Landroidx/dynamicanimation/a/a;->b:Ljava/util/ArrayList;
 
@@ -401,7 +364,6 @@
 
     if-nez v0, :cond_1
 
-    .line 9
     iget-object v0, p0, Landroidx/dynamicanimation/a/a;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -413,7 +375,6 @@
 
     if-lez v2, :cond_2
 
-    .line 10
     iget-object v0, p0, Landroidx/dynamicanimation/a/a;->a:La/b/g;
 
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J

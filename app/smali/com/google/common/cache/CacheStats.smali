@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/cache/CacheStats;
 .super Ljava/lang/Object;
-.source "CacheStats.java"
 
 
 # annotations
@@ -43,7 +42,6 @@
 
     move-wide/from16 v11, p11
 
-    .line 1
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v13, 0x1
@@ -63,7 +61,6 @@
     :cond_0
     const/16 v17, 0x0
 
-    .line 2
     :goto_0
     invoke-static/range {v17 .. v17}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
@@ -78,7 +75,6 @@
     :cond_1
     const/16 v17, 0x0
 
-    .line 3
     :goto_1
     invoke-static/range {v17 .. v17}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
@@ -93,7 +89,6 @@
     :cond_2
     const/16 v17, 0x0
 
-    .line 4
     :goto_2
     invoke-static/range {v17 .. v17}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
@@ -108,7 +103,6 @@
     :cond_3
     const/16 v17, 0x0
 
-    .line 5
     :goto_3
     invoke-static/range {v17 .. v17}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
@@ -123,7 +117,6 @@
     :cond_4
     const/16 v17, 0x0
 
-    .line 6
     :goto_4
     invoke-static/range {v17 .. v17}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
@@ -136,26 +129,19 @@
     :cond_5
     const/4 v13, 0x0
 
-    .line 7
     :goto_5
     invoke-static {v13}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 8
     iput-wide v1, v0, Lcom/google/common/cache/CacheStats;->hitCount:J
 
-    .line 9
     iput-wide v3, v0, Lcom/google/common/cache/CacheStats;->missCount:J
 
-    .line 10
     iput-wide v5, v0, Lcom/google/common/cache/CacheStats;->loadSuccessCount:J
 
-    .line 11
     iput-wide v7, v0, Lcom/google/common/cache/CacheStats;->loadExceptionCount:J
 
-    .line 12
     iput-wide v9, v0, Lcom/google/common/cache/CacheStats;->totalLoadTime:J
 
-    .line 13
     iput-wide v11, v0, Lcom/google/common/cache/CacheStats;->evictionCount:J
 
     return-void
@@ -166,7 +152,6 @@
 .method public averageLoadPenalty()D
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/cache/CacheStats;->loadSuccessCount:J
 
     iget-wide v2, p0, Lcom/google/common/cache/CacheStats;->loadExceptionCount:J
@@ -183,7 +168,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-wide v2, p0, Lcom/google/common/cache/CacheStats;->totalLoadTime:J
 
@@ -204,17 +188,14 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Lcom/google/common/cache/CacheStats;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lcom/google/common/cache/CacheStats;
 
-    .line 3
     iget-wide v2, p0, Lcom/google/common/cache/CacheStats;->hitCount:J
 
     iget-wide v4, p1, Lcom/google/common/cache/CacheStats;->hitCount:J
@@ -272,7 +253,6 @@
 .method public evictionCount()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/cache/CacheStats;->evictionCount:J
 
     return-wide v0
@@ -285,7 +265,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-wide v1, p0, Lcom/google/common/cache/CacheStats;->hitCount:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -356,7 +335,6 @@
 .method public hitCount()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/cache/CacheStats;->hitCount:J
 
     return-wide v0
@@ -365,7 +343,6 @@
 .method public hitRate()D
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/cache/CacheStats;->requestCount()J
 
     move-result-wide v0
@@ -380,7 +357,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-wide v2, p0, Lcom/google/common/cache/CacheStats;->hitCount:J
 
@@ -397,7 +373,6 @@
 .method public loadCount()J
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/cache/CacheStats;->loadSuccessCount:J
 
     iget-wide v2, p0, Lcom/google/common/cache/CacheStats;->loadExceptionCount:J
@@ -410,7 +385,6 @@
 .method public loadExceptionCount()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/cache/CacheStats;->loadExceptionCount:J
 
     return-wide v0
@@ -419,7 +393,6 @@
 .method public loadExceptionRate()D
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/cache/CacheStats;->loadSuccessCount:J
 
     iget-wide v2, p0, Lcom/google/common/cache/CacheStats;->loadExceptionCount:J
@@ -450,7 +423,6 @@
 .method public loadSuccessCount()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/cache/CacheStats;->loadSuccessCount:J
 
     return-wide v0
@@ -463,7 +435,6 @@
 
     move-object/from16 v1, p1
 
-    .line 1
     new-instance v14, Lcom/google/common/cache/CacheStats;
 
     iget-wide v2, v0, Lcom/google/common/cache/CacheStats;->hitCount:J
@@ -546,7 +517,6 @@
 .method public missCount()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/cache/CacheStats;->missCount:J
 
     return-wide v0
@@ -555,7 +525,6 @@
 .method public missRate()D
     .locals 5
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/cache/CacheStats;->requestCount()J
 
     move-result-wide v0
@@ -570,7 +539,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-wide v2, p0, Lcom/google/common/cache/CacheStats;->missCount:J
 
@@ -591,7 +559,6 @@
 
     move-object/from16 v1, p1
 
-    .line 1
     new-instance v14, Lcom/google/common/cache/CacheStats;
 
     iget-wide v2, v0, Lcom/google/common/cache/CacheStats;->hitCount:J
@@ -640,7 +607,6 @@
 .method public requestCount()J
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/cache/CacheStats;->hitCount:J
 
     iget-wide v2, p0, Lcom/google/common/cache/CacheStats;->missCount:J
@@ -653,7 +619,6 @@
 .method public toString()Ljava/lang/String;
     .locals 4
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/MoreObjects;->toStringHelper(Ljava/lang/Object;)Lcom/google/common/base/MoreObjects$ToStringHelper;
 
     move-result-object v0
@@ -716,7 +681,6 @@
 .method public totalLoadTime()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/cache/CacheStats;->totalLoadTime:J
 
     return-wide v0

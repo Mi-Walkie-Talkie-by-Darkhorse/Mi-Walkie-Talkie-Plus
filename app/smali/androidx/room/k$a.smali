@@ -1,6 +1,5 @@
 .class public abstract Landroidx/room/k$a;
 .super Ljava/lang/Object;
-.source "RoomOpenHelper.java"
 
 
 # annotations
@@ -28,10 +27,8 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Landroidx/room/k$a;->a:I
 
     return-void

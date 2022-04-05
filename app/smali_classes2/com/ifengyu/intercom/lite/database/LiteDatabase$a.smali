@@ -1,6 +1,5 @@
 .class final Lcom/ifengyu/intercom/lite/database/LiteDatabase$a;
 .super Landroidx/room/q/a;
-.source "LiteDatabase.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(II)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Landroidx/room/q/a;-><init>(II)V
 
     return-void
@@ -35,7 +33,6 @@
 
     const-string v0, "ALTER TABLE device ADD COLUMN token VERCHAR(64) DEFAULT NULL"
 
-    .line 1
     invoke-interface {p1, v0}, La/g/a/b;->execSQL(Ljava/lang/String;)V
 
     return-void

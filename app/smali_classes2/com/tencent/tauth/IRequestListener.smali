@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/tencent/tauth/IRequestListener;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 
 # virtual methods

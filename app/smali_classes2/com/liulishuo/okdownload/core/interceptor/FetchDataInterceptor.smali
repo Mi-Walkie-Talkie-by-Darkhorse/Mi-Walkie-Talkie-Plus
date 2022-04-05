@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;
 .super Ljava/lang/Object;
-.source "FetchDataInterceptor.java"
 
 # interfaces
 .implements Lcom/liulishuo/okdownload/core/interceptor/Interceptor$Fetch;
@@ -32,16 +31,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;->blockIndex:I
 
-    .line 3
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;->inputStream:Ljava/io/InputStream;
 
-    .line 4
     invoke-virtual {p4}, Lcom/liulishuo/okdownload/DownloadTask;->getReadBufferSize()I
 
     move-result p1
@@ -50,13 +45,10 @@
 
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;->readBuffer:[B
 
-    .line 5
     iput-object p3, p0, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;->outputStream:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
 
-    .line 6
     iput-object p4, p0, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 7
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object p1
@@ -80,7 +72,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->getCache()Lcom/liulishuo/okdownload/core/download/DownloadCache;
 
     move-result-object v0
@@ -91,7 +82,6 @@
 
     if-nez v0, :cond_2
 
-    .line 2
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -106,7 +96,6 @@
 
     invoke-virtual {v0, v1}, Lcom/liulishuo/okdownload/core/download/DownloadStrategy;->inspectNetworkOnWifi(Lcom/liulishuo/okdownload/DownloadTask;)V
 
-    .line 3
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;->inputStream:Ljava/io/InputStream;
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;->readBuffer:[B
@@ -123,7 +112,6 @@
 
     return-wide v0
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;->outputStream:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
 
@@ -135,10 +123,8 @@
 
     int-to-long v0, v0
 
-    .line 5
     invoke-virtual {p1, v0, v1}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->increaseCallbackBytes(J)V
 
-    .line 6
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;->dispatcher:Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;
 
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;->task:Lcom/liulishuo/okdownload/DownloadTask;
@@ -149,13 +135,11 @@
 
     if-eqz v2, :cond_1
 
-    .line 7
     invoke-virtual {p1}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->flushNoCallbackIncreaseBytes()V
 
     :cond_1
     return-wide v0
 
-    .line 8
     :cond_2
     sget-object p1, Lcom/liulishuo/okdownload/core/exception/InterruptException;->SIGNAL:Lcom/liulishuo/okdownload/core/exception/InterruptException;
 

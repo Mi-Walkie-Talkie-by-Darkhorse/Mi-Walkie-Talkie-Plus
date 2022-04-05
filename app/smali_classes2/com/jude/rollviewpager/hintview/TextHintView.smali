@@ -1,6 +1,5 @@
 .class public Lcom/jude/rollviewpager/hintview/TextHintView;
 .super Landroid/widget/TextView;
-.source "TextHintView.java"
 
 # interfaces
 .implements Lcom/jude/rollviewpager/a;
@@ -14,7 +13,6 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -23,7 +21,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0, p1, p2}, Landroid/widget/TextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -34,12 +31,10 @@
 .method public a(II)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/jude/rollviewpager/hintview/TextHintView;->a:I
 
     const/4 p1, -0x1
 
-    .line 2
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setTextColor(I)V
 
     if-eqz p2, :cond_2
@@ -57,7 +52,6 @@
     :cond_0
     const/16 p1, 0x15
 
-    .line 3
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setGravity(I)V
 
     goto :goto_0
@@ -65,7 +59,6 @@
     :cond_1
     const/16 p1, 0x11
 
-    .line 4
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setGravity(I)V
 
     goto :goto_0
@@ -73,13 +66,11 @@
     :cond_2
     const/16 p1, 0x13
 
-    .line 5
     invoke-virtual {p0, p1}, Landroid/widget/TextView;->setGravity(I)V
 
     :goto_0
     const/4 p1, 0x0
 
-    .line 6
     invoke-virtual {p0, p1}, Lcom/jude/rollviewpager/hintview/TextHintView;->setCurrent(I)V
 
     return-void
@@ -88,7 +79,6 @@
 .method public setCurrent(I)V
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

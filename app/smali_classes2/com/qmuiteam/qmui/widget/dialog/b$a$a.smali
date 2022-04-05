@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/widget/dialog/b$a$a;
 .super Ljava/lang/Object;
-.source "QMUIDialog.java"
 
 # interfaces
 .implements Landroid/content/DialogInterface$OnDismissListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/widget/dialog/b$a;Landroid/view/inputmethod/InputMethodManager;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/dialog/b$a$a;->b:Lcom/qmuiteam/qmui/widget/dialog/b$a;
 
     iput-object p2, p0, Lcom/qmuiteam/qmui/widget/dialog/b$a$a;->a:Landroid/view/inputmethod/InputMethodManager;
@@ -42,7 +40,6 @@
 .method public onDismiss(Landroid/content/DialogInterface;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/dialog/b$a$a;->a:Landroid/view/inputmethod/InputMethodManager;
 
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/dialog/b$a$a;->b:Lcom/qmuiteam/qmui/widget/dialog/b$a;

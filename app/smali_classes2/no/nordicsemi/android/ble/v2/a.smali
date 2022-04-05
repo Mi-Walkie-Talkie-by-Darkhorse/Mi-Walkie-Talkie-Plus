@@ -1,6 +1,5 @@
 .class public Lno/nordicsemi/android/ble/v2/a;
 .super Ljava/lang/Object;
-.source "GattError.java"
 
 
 # direct methods
@@ -29,7 +28,6 @@
 
     packed-switch p0, :pswitch_data_2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -336,7 +334,6 @@
 
     if-eq p0, v0, :cond_0
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

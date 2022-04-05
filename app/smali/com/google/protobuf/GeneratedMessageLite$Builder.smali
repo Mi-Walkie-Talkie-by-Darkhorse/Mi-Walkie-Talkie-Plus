@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/protobuf/GeneratedMessageLite$Builder;
 .super Lcom/google/protobuf/AbstractMessageLite$Builder;
-.source "GeneratedMessageLite.java"
 
 
 # annotations
@@ -34,10 +33,8 @@
 .method protected constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/AbstractMessageLite$Builder;-><init>()V
 
-    .line 2
     sget-object v0, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     iput-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->unknownFields:Lcom/google/protobuf/ByteString;
@@ -55,7 +52,6 @@
         }
     .end annotation
 
-    .line 2
     sget-object v0, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     iput-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->unknownFields:Lcom/google/protobuf/ByteString;
@@ -66,7 +62,6 @@
 .method public bridge synthetic clear()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->clear()Lcom/google/protobuf/GeneratedMessageLite$Builder;
 
     move-result-object v0
@@ -77,7 +72,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/AbstractMessageLite$Builder;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->clone()Lcom/google/protobuf/GeneratedMessageLite$Builder;
 
     move-result-object v0
@@ -93,7 +87,6 @@
         }
     .end annotation
 
-    .line 4
     new-instance v0, Ljava/lang/UnsupportedOperationException;
 
     const-string v1, "This is supposed to be overridden by subclasses."
@@ -106,7 +99,6 @@
 .method public bridge synthetic clone()Lcom/google/protobuf/MessageLite$Builder;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->clone()Lcom/google/protobuf/GeneratedMessageLite$Builder;
 
     move-result-object v0
@@ -122,7 +114,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->clone()Lcom/google/protobuf/GeneratedMessageLite$Builder;
 
     move-result-object v0
@@ -141,7 +132,6 @@
 .method public bridge synthetic getDefaultInstanceForType()Lcom/google/protobuf/MessageLite;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$Builder;->getDefaultInstanceForType()Lcom/google/protobuf/GeneratedMessageLite;
 
     move-result-object v0
@@ -152,7 +142,6 @@
 .method public final getUnknownFields()Lcom/google/protobuf/ByteString;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->unknownFields:Lcom/google/protobuf/ByteString;
 
     return-object v0
@@ -174,7 +163,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p1, p4, p2}, Lcom/google/protobuf/CodedInputStream;->skipField(ILcom/google/protobuf/CodedOutputStream;)Z
 
     move-result p1
@@ -192,7 +180,6 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$Builder;->unknownFields:Lcom/google/protobuf/ByteString;
 
     return-object p0

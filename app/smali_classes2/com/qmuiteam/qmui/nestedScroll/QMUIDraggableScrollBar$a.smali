@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$a;
 .super Ljava/lang/Object;
-.source "QMUIDraggableScrollBar.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$a;->a:Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar$a;->a:Lcom/qmuiteam/qmui/nestedScroll/QMUIDraggableScrollBar;
 
     invoke-virtual {v0}, Landroid/view/View;->invalidate()V

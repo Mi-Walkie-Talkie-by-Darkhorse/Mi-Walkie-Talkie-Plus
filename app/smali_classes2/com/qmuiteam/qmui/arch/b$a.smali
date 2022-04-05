@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/b$a;
 .super Ljava/lang/Object;
-.source "QMUIFragment.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/b;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/b$a;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$a;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->isResumed()Z
@@ -55,21 +52,18 @@
 
     if-eqz v0, :cond_1
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$a;->a:Lcom/qmuiteam/qmui/arch/b;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/arch/b;->b(Lcom/qmuiteam/qmui/arch/b;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
@@ -87,12 +81,10 @@
 
     check-cast v1, Ljava/lang/Runnable;
 
-    .line 5
     invoke-interface {v1}, Ljava/lang/Runnable;->run()V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/b$a;->a:Lcom/qmuiteam/qmui/arch/b;
 

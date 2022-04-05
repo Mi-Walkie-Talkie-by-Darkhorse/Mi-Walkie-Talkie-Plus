@@ -1,6 +1,5 @@
 .class public Lcom/bumptech/glide/load/resource/bitmap/b;
 .super Ljava/lang/Object;
-.source "BitmapDrawableEncoder.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/load/g;
@@ -44,13 +43,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/bumptech/glide/load/resource/bitmap/b;->a:Lcom/bumptech/glide/load/engine/x/e;
 
-    .line 3
     iput-object p2, p0, Lcom/bumptech/glide/load/resource/bitmap/b;->b:Lcom/bumptech/glide/load/g;
 
     return-void
@@ -67,7 +63,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/b;->b:Lcom/bumptech/glide/load/g;
 
     invoke-interface {v0, p1}, Lcom/bumptech/glide/load/g;->a(Lcom/bumptech/glide/load/e;)Lcom/bumptech/glide/load/EncodeStrategy;
@@ -103,7 +98,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/bumptech/glide/load/resource/bitmap/b;->b:Lcom/bumptech/glide/load/g;
 
     new-instance v1, Lcom/bumptech/glide/load/resource/bitmap/d;
@@ -144,7 +138,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Lcom/bumptech/glide/load/engine/s;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/bumptech/glide/load/resource/bitmap/b;->a(Lcom/bumptech/glide/load/engine/s;Ljava/io/File;Lcom/bumptech/glide/load/e;)Z

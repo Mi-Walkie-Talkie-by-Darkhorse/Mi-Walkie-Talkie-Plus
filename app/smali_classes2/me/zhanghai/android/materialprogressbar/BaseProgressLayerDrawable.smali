@@ -1,6 +1,5 @@
 .class Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;
 .super Landroid/graphics/drawable/LayerDrawable;
-.source "BaseProgressLayerDrawable.java"
 
 # interfaces
 .implements Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
@@ -66,14 +65,12 @@
 .method public constructor <init>([Landroid/graphics/drawable/Drawable;Landroid/content/Context;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0, p1}, Landroid/graphics/drawable/LayerDrawable;-><init>([Landroid/graphics/drawable/Drawable;)V
 
     const p1, 0x1010033
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-static {p1, v0, p2}, Lme/zhanghai/android/materialprogressbar/internal/ThemeUtils;->getFloatFromAttrRes(IFLandroid/content/Context;)F
 
     move-result p1
@@ -84,10 +81,8 @@
 
     const/high16 v0, 0x1020000
 
-    .line 3
     invoke-virtual {p0, p1, v0}, Landroid/graphics/drawable/LayerDrawable;->setId(II)V
 
-    .line 4
     invoke-virtual {p0, p1}, Landroid/graphics/drawable/LayerDrawable;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -100,10 +95,8 @@
 
     const v0, 0x102000f
 
-    .line 5
     invoke-virtual {p0, p1, v0}, Landroid/graphics/drawable/LayerDrawable;->setId(II)V
 
-    .line 6
     invoke-virtual {p0, p1}, Landroid/graphics/drawable/LayerDrawable;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -116,10 +109,8 @@
 
     const v0, 0x102000d
 
-    .line 7
     invoke-virtual {p0, p1, v0}, Landroid/graphics/drawable/LayerDrawable;->setId(II)V
 
-    .line 8
     invoke-virtual {p0, p1}, Landroid/graphics/drawable/LayerDrawable;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object p1
@@ -128,7 +119,6 @@
 
     iput-object p1, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mProgressDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
-    .line 9
     sget p1, Lme/zhanghai/android/materialprogressbar/R$attr;->colorControlActivated:I
 
     const/high16 v0, -0x1000000
@@ -137,7 +127,6 @@
 
     move-result p1
 
-    .line 10
     invoke-virtual {p0, p1}, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->setTint(I)V
 
     return-void
@@ -148,7 +137,6 @@
 .method public getShowBackground()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mBackgroundDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v0, Lme/zhanghai/android/materialprogressbar/ShowBackgroundDrawable;
@@ -163,7 +151,6 @@
 .method public getUseIntrinsicPadding()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mBackgroundDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     invoke-interface {v0}, Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;->getUseIntrinsicPadding()Z
@@ -176,7 +163,6 @@
 .method public setShowBackground(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mBackgroundDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v0, Lme/zhanghai/android/materialprogressbar/ShowBackgroundDrawable;
@@ -187,14 +173,12 @@
 
     if-eq v0, p1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mBackgroundDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v0, Lme/zhanghai/android/materialprogressbar/ShowBackgroundDrawable;
 
     invoke-interface {v0, p1}, Lme/zhanghai/android/materialprogressbar/ShowBackgroundDrawable;->setShowBackground(Z)V
 
-    .line 3
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mSecondaryProgressDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v0, Lme/zhanghai/android/materialprogressbar/ShowBackgroundDrawable;
@@ -219,7 +203,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v0
@@ -234,26 +217,22 @@
 
     move-result v0
 
-    .line 2
     invoke-static {p1, v0}, Landroidx/core/graphics/c;->c(II)I
 
     move-result v0
 
-    .line 3
     iget-object v1, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mBackgroundDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v1, Lme/zhanghai/android/materialprogressbar/TintableDrawable;
 
     invoke-interface {v1, v0}, Lme/zhanghai/android/materialprogressbar/TintableDrawable;->setTint(I)V
 
-    .line 4
     iget-object v1, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mSecondaryProgressDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v1, Lme/zhanghai/android/materialprogressbar/TintableDrawable;
 
     invoke-interface {v1, v0}, Lme/zhanghai/android/materialprogressbar/TintableDrawable;->setTint(I)V
 
-    .line 5
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mProgressDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v0, Lme/zhanghai/android/materialprogressbar/TintableDrawable;
@@ -277,14 +256,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     invoke-virtual {p1}, Landroid/content/res/ColorStateList;->isOpaque()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v0
@@ -300,7 +277,6 @@
     :cond_0
     const/high16 v0, 0x437f0000    # 255.0f
 
-    .line 3
     iget v1, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mBackgroundAlpha:F
 
     mul-float v1, v1, v0
@@ -318,7 +294,6 @@
     :cond_1
     const/4 v0, 0x0
 
-    .line 4
     :goto_0
     iget-object v1, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mBackgroundDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
@@ -326,14 +301,12 @@
 
     invoke-interface {v1, v0}, Lme/zhanghai/android/materialprogressbar/TintableDrawable;->setTintList(Landroid/content/res/ColorStateList;)V
 
-    .line 5
     iget-object v1, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mSecondaryProgressDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v1, Lme/zhanghai/android/materialprogressbar/TintableDrawable;
 
     invoke-interface {v1, v0}, Lme/zhanghai/android/materialprogressbar/TintableDrawable;->setTintList(Landroid/content/res/ColorStateList;)V
 
-    .line 6
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mProgressDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v0, Lme/zhanghai/android/materialprogressbar/TintableDrawable;
@@ -355,21 +328,18 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mBackgroundDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v0, Lme/zhanghai/android/materialprogressbar/TintableDrawable;
 
     invoke-interface {v0, p1}, Lme/zhanghai/android/materialprogressbar/TintableDrawable;->setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
-    .line 2
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mSecondaryProgressDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v0, Lme/zhanghai/android/materialprogressbar/TintableDrawable;
 
     invoke-interface {v0, p1}, Lme/zhanghai/android/materialprogressbar/TintableDrawable;->setTintMode(Landroid/graphics/PorterDuff$Mode;)V
 
-    .line 3
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mProgressDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     check-cast v0, Lme/zhanghai/android/materialprogressbar/TintableDrawable;
@@ -382,17 +352,14 @@
 .method public setUseIntrinsicPadding(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mBackgroundDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     invoke-interface {v0, p1}, Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;->setUseIntrinsicPadding(Z)V
 
-    .line 2
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mSecondaryProgressDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     invoke-interface {v0, p1}, Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;->setUseIntrinsicPadding(Z)V
 
-    .line 3
     iget-object v0, p0, Lme/zhanghai/android/materialprogressbar/BaseProgressLayerDrawable;->mProgressDrawable:Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;
 
     invoke-interface {v0, p1}, Lme/zhanghai/android/materialprogressbar/IntrinsicPaddingDrawable;->setUseIntrinsicPadding(Z)V

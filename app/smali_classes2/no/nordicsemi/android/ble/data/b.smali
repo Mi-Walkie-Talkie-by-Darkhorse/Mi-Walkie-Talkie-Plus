@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/data/b;
 .super Ljava/lang/Object;
-.source "DataMerger.java"
 
 
 # virtual methods

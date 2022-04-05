@@ -1,6 +1,5 @@
 .class interface abstract Landroidx/recyclerview/widget/b$b;
 .super Ljava/lang/Object;
-.source "ChildHelper.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/IOverlayMenuProvider;
 .super Ljava/lang/Object;
-.source "IOverlayMenuProvider.java"
 
 
 # virtual methods

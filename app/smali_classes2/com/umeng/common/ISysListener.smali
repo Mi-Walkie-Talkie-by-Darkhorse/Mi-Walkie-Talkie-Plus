@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/common/ISysListener;
 .super Ljava/lang/Object;
-.source "ISysListener.java"
 
 
 # virtual methods

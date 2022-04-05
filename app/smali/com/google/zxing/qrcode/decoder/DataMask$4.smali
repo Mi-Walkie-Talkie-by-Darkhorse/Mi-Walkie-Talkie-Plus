@@ -1,6 +1,5 @@
 .class final enum Lcom/google/zxing/qrcode/decoder/DataMask$4;
 .super Lcom/google/zxing/qrcode/decoder/DataMask;
-.source "DataMask.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, v0}, Lcom/google/zxing/qrcode/decoder/DataMask;-><init>(Ljava/lang/String;ILcom/google/zxing/qrcode/decoder/DataMask$1;)V
 
     return-void
@@ -33,7 +31,6 @@
 
     add-int/2addr p1, p2
 
-    .line 1
     rem-int/lit8 p1, p1, 0x3
 
     if-nez p1, :cond_0

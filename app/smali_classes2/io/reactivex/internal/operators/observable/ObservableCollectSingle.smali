@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/observable/ObservableCollectSingle;
 .super Lio/reactivex/Single;
-.source "ObservableCollectSingle.java"
 
 # interfaces
 .implements Lio/reactivex/internal/fuseable/FuseToObservable;
@@ -72,16 +71,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableCollectSingle;->source:Lio/reactivex/ObservableSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableCollectSingle;->initialSupplier:Ljava/util/concurrent/Callable;
 
-    .line 4
     iput-object p3, p0, Lio/reactivex/internal/operators/observable/ObservableCollectSingle;->collector:Lio/reactivex/functions/BiConsumer;
 
     return-void
@@ -99,7 +94,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lio/reactivex/internal/operators/observable/ObservableCollect;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableCollectSingle;->source:Lio/reactivex/ObservableSource;
@@ -127,7 +121,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lio/reactivex/internal/operators/observable/ObservableCollectSingle;->initialSupplier:Ljava/util/concurrent/Callable;
 
@@ -143,7 +136,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     iget-object v1, p0, Lio/reactivex/internal/operators/observable/ObservableCollectSingle;->source:Lio/reactivex/ObservableSource;
 
     new-instance v2, Lio/reactivex/internal/operators/observable/ObservableCollectSingle$CollectObserver;
@@ -159,7 +151,6 @@
     :catchall_0
     move-exception v0
 
-    .line 3
     invoke-static {v0, p1}, Lio/reactivex/internal/disposables/EmptyDisposable;->error(Ljava/lang/Throwable;Lio/reactivex/SingleObserver;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/efs/sdk/pa/PATraceListener;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # virtual methods

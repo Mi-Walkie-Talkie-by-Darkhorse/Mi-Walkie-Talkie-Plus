@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle$GLAmapFocusHits;
 .super Ljava/lang/Object;
-.source "GLOverlayBundle.java"
 
 
 # annotations
@@ -26,20 +25,16 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-wide/16 v0, 0x0
 
-    .line 2
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle$GLAmapFocusHits;->mOverlayHashCode:J
 
-    .line 3
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle$GLAmapFocusHits;->mHitedIndex:J
 
     const-wide/16 v0, 0x3e8
 
-    .line 4
     iput-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlayBundle$GLAmapFocusHits;->mHitedTimes:J
 
     return-void

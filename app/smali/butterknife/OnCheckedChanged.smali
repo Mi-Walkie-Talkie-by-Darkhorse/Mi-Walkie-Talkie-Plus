@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/OnCheckedChanged;
 .super Ljava/lang/Object;
-.source "OnCheckedChanged.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

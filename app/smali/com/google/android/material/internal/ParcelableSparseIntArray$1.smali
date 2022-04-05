@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/internal/ParcelableSparseIntArray$1;
 .super Ljava/lang/Object;
-.source "ParcelableSparseIntArray.java"
 
 # interfaces
 .implements Landroid/os/Parcelable$Creator;
@@ -30,7 +29,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,26 +45,20 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v0
 
-    .line 3
     new-instance v1, Lcom/google/android/material/internal/ParcelableSparseIntArray;
 
     invoke-direct {v1, v0}, Lcom/google/android/material/internal/ParcelableSparseIntArray;-><init>(I)V
 
-    .line 4
     new-array v2, v0, [I
 
-    .line 5
     new-array v3, v0, [I
 
-    .line 6
     invoke-virtual {p1, v2}, Landroid/os/Parcel;->readIntArray([I)V
 
-    .line 7
     invoke-virtual {p1, v3}, Landroid/os/Parcel;->readIntArray([I)V
 
     const/4 p1, 0x0
@@ -74,7 +66,6 @@
     :goto_0
     if-ge p1, v0, :cond_0
 
-    .line 8
     aget v4, v2, p1
 
     aget v5, v3, p1
@@ -98,7 +89,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/internal/ParcelableSparseIntArray$1;->createFromParcel(Landroid/os/Parcel;)Lcom/google/android/material/internal/ParcelableSparseIntArray;
 
     move-result-object p1
@@ -111,7 +101,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     new-array p1, p1, [Lcom/google/android/material/internal/ParcelableSparseIntArray;
 
     return-object p1
@@ -122,7 +111,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/android/material/internal/ParcelableSparseIntArray$1;->newArray(I)[Lcom/google/android/material/internal/ParcelableSparseIntArray;
 
     move-result-object p1

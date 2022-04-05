@@ -1,6 +1,5 @@
 .class final enum Lcom/google/common/cache/LocalCache$Strength$3;
 .super Lcom/google/common/cache/LocalCache$Strength;
-.source "LocalCache.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, v0}, Lcom/google/common/cache/LocalCache$Strength;-><init>(Ljava/lang/String;ILcom/google/common/cache/LocalCache$1;)V
 
     return-void
@@ -39,7 +37,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/base/Equivalence;->identity()Lcom/google/common/base/Equivalence;
 
     move-result-object v0
@@ -69,7 +66,6 @@
 
     if-ne p4, v0, :cond_0
 
-    .line 1
     new-instance p4, Lcom/google/common/cache/LocalCache$WeakValueReference;
 
     iget-object p1, p1, Lcom/google/common/cache/LocalCache$Segment;->valueReferenceQueue:Ljava/lang/ref/ReferenceQueue;

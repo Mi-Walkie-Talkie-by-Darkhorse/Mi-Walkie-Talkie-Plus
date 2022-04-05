@@ -1,6 +1,5 @@
 .class public final enum Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 .super Ljava/lang/Enum;
-.source "GLRouteProperty.java"
 
 
 # annotations
@@ -60,7 +59,6 @@
 .method static constructor <clinit>()V
     .locals 17
 
-    .line 1
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/4 v1, 0x0
@@ -71,7 +69,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_NONAVI:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 2
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/4 v2, 0x1
@@ -82,7 +79,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_NAVI:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 3
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/4 v3, 0x2
@@ -93,7 +89,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_DEFAULT:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 4
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/4 v4, 0x3
@@ -104,7 +99,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_OPEN:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 5
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/4 v5, 0x4
@@ -115,7 +109,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_AMBLE:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 6
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/4 v6, 0x5
@@ -126,7 +119,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_JAM:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 7
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/4 v7, 0x6
@@ -137,7 +129,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_CONGESTED:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 8
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/4 v8, 0x7
@@ -148,7 +139,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_ARROW:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 9
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/16 v9, 0x8
@@ -159,7 +149,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_CHARGE:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 10
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/16 v10, 0x9
@@ -170,7 +159,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_FREE:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 11
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/16 v11, 0xa
@@ -181,7 +169,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_LIMIT:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 12
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/16 v12, 0xb
@@ -192,7 +179,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_SLOWER:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 13
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/16 v13, 0xc
@@ -203,7 +189,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_FASTER:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 14
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/16 v14, 0xd
@@ -214,7 +199,6 @@
 
     sput-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_WRONG:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 15
     new-instance v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     const/16 v15, 0xe
@@ -229,7 +213,6 @@
 
     new-array v14, v14, [Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
-    .line 16
     sget-object v16, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->AMAP_ROUTE_TEXTURE_NONAVI:Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     aput-object v16, v14, v1
@@ -303,7 +286,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -312,7 +294,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -327,7 +308,6 @@
 .method public static values()[Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->$VALUES:[Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;
 
     invoke-virtual {v0}, [Lcom/autonavi/ae/gmap/gloverlay/GLRouteProperty$EAMapRouteTexture;->clone()Ljava/lang/Object;

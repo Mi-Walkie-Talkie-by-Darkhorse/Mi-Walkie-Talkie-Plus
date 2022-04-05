@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/a/g;
 .super Ljava/lang/Object;
-.source "LineDataProvider.java"
 
 # interfaces
 .implements Lb/a/a/a/e/a/b;

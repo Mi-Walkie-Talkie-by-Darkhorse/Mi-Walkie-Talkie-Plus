@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/cache/RemovalListener;
 .super Ljava/lang/Object;
-.source "RemovalListener.java"
 
 
 # annotations

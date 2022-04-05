@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/WebSecurityCheckLogic;
 .super Ljava/lang/Object;
-.source "WebSecurityCheckLogic.java"
 
 
 # virtual methods

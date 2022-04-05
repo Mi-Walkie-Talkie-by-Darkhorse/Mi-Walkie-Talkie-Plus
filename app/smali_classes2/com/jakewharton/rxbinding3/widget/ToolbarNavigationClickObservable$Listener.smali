@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/ToolbarNavigationClickObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "ToolbarNavigationClickObservable.kt"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -95,7 +94,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/ToolbarNavigationClickObservable$Listener;->view:Landroid/widget/Toolbar;
@@ -118,14 +116,12 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/jakewharton/rxbinding3/widget/ToolbarNavigationClickObservable$Listener;->observer:Lio/reactivex/Observer;
 
     sget-object v0, Lkotlin/a;->a:Lkotlin/a;
@@ -139,7 +135,6 @@
 .method protected onDispose()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/ToolbarNavigationClickObservable$Listener;->view:Landroid/widget/Toolbar;
 
     const/4 v1, 0x0

@@ -1,6 +1,5 @@
 .class public Lcom/tencent/open/b/b;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -23,10 +22,8 @@
 .method public constructor <init>(Landroid/os/Bundle;)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -35,7 +32,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
 
     move-result-object v0
@@ -57,7 +53,6 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 4
     iget-object v2, p0, Lcom/tencent/open/b/b;->a:Ljava/util/HashMap;
 
     invoke-virtual {p1, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;

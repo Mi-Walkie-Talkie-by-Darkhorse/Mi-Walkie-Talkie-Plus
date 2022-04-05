@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/simplefastpoint/SimpleFastPointOverlay$PointAdapter;
 .super Ljava/lang/Object;
-.source "SimpleFastPointOverlay.java"
 
 # interfaces
 .implements Ljava/lang/Iterable;

@@ -1,13 +1,11 @@
 .class public Lcom/bumptech/glide/request/h/e;
 .super Ljava/lang/Object;
-.source "ImageViewTargetFactory.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,7 +40,6 @@
         }
     .end annotation
 
-    .line 1
     const-class v0, Landroid/graphics/Bitmap;
 
     invoke-virtual {v0, p2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -51,14 +48,12 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance p2, Lcom/bumptech/glide/request/h/b;
 
     invoke-direct {p2, p1}, Lcom/bumptech/glide/request/h/b;-><init>(Landroid/widget/ImageView;)V
 
     return-object p2
 
-    .line 3
     :cond_0
     const-class v0, Landroid/graphics/drawable/Drawable;
 
@@ -68,14 +63,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 4
     new-instance p2, Lcom/bumptech/glide/request/h/c;
 
     invoke-direct {p2, p1}, Lcom/bumptech/glide/request/h/c;-><init>(Landroid/widget/ImageView;)V
 
     return-object p2
 
-    .line 5
     :cond_1
     new-instance p1, Ljava/lang/IllegalArgumentException;
 

@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/mixed/ObservableConcatMapMaybe;
 .super Lio/reactivex/Observable;
-.source "ObservableConcatMapMaybe.java"
 
 
 # annotations
@@ -66,19 +65,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/mixed/ObservableConcatMapMaybe;->source:Lio/reactivex/Observable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/mixed/ObservableConcatMapMaybe;->mapper:Lio/reactivex/functions/Function;
 
-    .line 4
     iput-object p3, p0, Lio/reactivex/internal/operators/mixed/ObservableConcatMapMaybe;->errorMode:Lio/reactivex/internal/util/ErrorMode;
 
-    .line 5
     iput p4, p0, Lio/reactivex/internal/operators/mixed/ObservableConcatMapMaybe;->prefetch:I
 
     return-void
@@ -96,7 +90,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/mixed/ObservableConcatMapMaybe;->source:Lio/reactivex/Observable;
 
     iget-object v1, p0, Lio/reactivex/internal/operators/mixed/ObservableConcatMapMaybe;->mapper:Lio/reactivex/functions/Function;
@@ -107,7 +100,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lio/reactivex/internal/operators/mixed/ObservableConcatMapMaybe;->source:Lio/reactivex/Observable;
 
     new-instance v1, Lio/reactivex/internal/operators/mixed/ObservableConcatMapMaybe$ConcatMapMaybeMainObserver;

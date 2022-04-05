@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/commonsdk/config/f;
 .super Ljava/lang/Object;
-.source "IFieldWatcher.java"
 
 
 # virtual methods

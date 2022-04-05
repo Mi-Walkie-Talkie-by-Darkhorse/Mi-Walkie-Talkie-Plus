@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lno/nordicsemi/android/ble/annotation/WriteType;
 .super Ljava/lang/Object;
-.source "WriteType.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

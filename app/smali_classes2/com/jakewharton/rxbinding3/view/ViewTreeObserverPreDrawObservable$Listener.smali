@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/view/ViewTreeObserverPreDrawObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "ViewTreeObserverPreDrawObservable.kt"
 
 # interfaces
 .implements Landroid/view/ViewTreeObserver$OnPreDrawListener;
@@ -117,7 +116,6 @@
 
     invoke-static {p3, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/view/ViewTreeObserverPreDrawObservable$Listener;->view:Landroid/view/View;
@@ -134,7 +132,6 @@
 .method protected onDispose()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/ViewTreeObserverPreDrawObservable$Listener;->view:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
@@ -149,21 +146,18 @@
 .method public onPreDraw()Z
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/ViewTreeObserverPreDrawObservable$Listener;->observer:Lio/reactivex/Observer;
 
     sget-object v1, Lkotlin/a;->a:Lkotlin/a;
 
     invoke-interface {v0, v1}, Lio/reactivex/Observer;->onNext(Ljava/lang/Object;)V
 
-    .line 3
     :try_start_0
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/ViewTreeObserverPreDrawObservable$Listener;->proceedDrawingPass:Lkotlin/jvm/a/a;
 
@@ -184,12 +178,10 @@
     :catch_0
     move-exception v0
 
-    .line 4
     iget-object v1, p0, Lcom/jakewharton/rxbinding3/view/ViewTreeObserverPreDrawObservable$Listener;->observer:Lio/reactivex/Observer;
 
     invoke-interface {v1, v0}, Lio/reactivex/Observer;->onError(Ljava/lang/Throwable;)V
 
-    .line 5
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->dispose()V
 
     :cond_0

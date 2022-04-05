@@ -1,6 +1,5 @@
 .class final Lcom/google/common/collect/SortedMultisets;
 .super Ljava/lang/Object;
-.source "SortedMultisets.java"
 
 
 # annotations
@@ -20,7 +19,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -29,7 +27,6 @@
 .method static synthetic access$000(Lcom/google/common/collect/Multiset$Entry;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/SortedMultisets;->getElementOrThrow(Lcom/google/common/collect/Multiset$Entry;)Ljava/lang/Object;
 
     move-result-object p0
@@ -40,7 +37,6 @@
 .method static synthetic access$100(Lcom/google/common/collect/Multiset$Entry;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/SortedMultisets;->getElementOrNull(Lcom/google/common/collect/Multiset$Entry;)Ljava/lang/Object;
 
     move-result-object p0
@@ -70,7 +66,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-interface {p0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
@@ -94,14 +89,12 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-interface {p0}, Lcom/google/common/collect/Multiset$Entry;->getElement()Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance p0, Ljava/util/NoSuchElementException;
 

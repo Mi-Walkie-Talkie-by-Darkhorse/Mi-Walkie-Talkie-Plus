@@ -1,6 +1,5 @@
 .class Landroidx/room/h;
 .super Ljava/lang/Object;
-.source "MultiInstanceInvalidationClient.java"
 
 
 # instance fields
@@ -36,17 +35,14 @@
 .method constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroidx/room/g;Ljava/util/concurrent/Executor;)V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Landroidx/room/h$a;
 
     invoke-direct {v0, p0}, Landroidx/room/h$a;-><init>(Landroidx/room/h;)V
 
     iput-object v0, p0, Landroidx/room/h;->h:Landroidx/room/d;
 
-    .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x0
@@ -55,56 +51,46 @@
 
     iput-object v0, p0, Landroidx/room/h;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 4
     new-instance v0, Landroidx/room/h$b;
 
     invoke-direct {v0, p0}, Landroidx/room/h$b;-><init>(Landroidx/room/h;)V
 
     iput-object v0, p0, Landroidx/room/h;->j:Landroid/content/ServiceConnection;
 
-    .line 5
     new-instance v0, Landroidx/room/h$c;
 
     invoke-direct {v0, p0}, Landroidx/room/h$c;-><init>(Landroidx/room/h;)V
 
     iput-object v0, p0, Landroidx/room/h;->k:Ljava/lang/Runnable;
 
-    .line 6
     new-instance v0, Landroidx/room/h$d;
 
     invoke-direct {v0, p0}, Landroidx/room/h$d;-><init>(Landroidx/room/h;)V
 
     iput-object v0, p0, Landroidx/room/h;->l:Ljava/lang/Runnable;
 
-    .line 7
     new-instance v0, Landroidx/room/h$e;
 
     invoke-direct {v0, p0}, Landroidx/room/h$e;-><init>(Landroidx/room/h;)V
 
-    .line 8
     invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/room/h;->a:Landroid/content/Context;
 
-    .line 9
     iput-object p2, p0, Landroidx/room/h;->b:Ljava/lang/String;
 
-    .line 10
     iput-object p3, p0, Landroidx/room/h;->d:Landroidx/room/g;
 
-    .line 11
     iput-object p4, p0, Landroidx/room/h;->g:Ljava/util/concurrent/Executor;
 
-    .line 12
     iget-object p1, p3, Landroidx/room/g;->a:Ljava/util/HashMap;
 
     invoke-virtual {p1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
     move-result-object p1
 
-    .line 13
     new-instance p2, Landroidx/room/h$f;
 
     new-array p3, v1, [Ljava/lang/String;
@@ -119,7 +105,6 @@
 
     iput-object p2, p0, Landroidx/room/h;->e:Landroidx/room/g$c;
 
-    .line 14
     new-instance p1, Landroid/content/Intent;
 
     iget-object p2, p0, Landroidx/room/h;->a:Landroid/content/Context;
@@ -128,7 +113,6 @@
 
     invoke-direct {p1, p2, p3}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
-    .line 15
     iget-object p2, p0, Landroidx/room/h;->a:Landroid/content/Context;
 
     iget-object p3, p0, Landroidx/room/h;->j:Landroid/content/ServiceConnection;

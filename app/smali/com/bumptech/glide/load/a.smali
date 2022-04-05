@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/load/a;
 .super Ljava/lang/Object;
-.source "Encoder.java"
 
 
 # annotations

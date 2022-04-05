@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/appcompat/widget/s$a;
 .super Ljava/lang/Object;
-.source "FitWindowsViewGroup.java"
 
 
 # annotations

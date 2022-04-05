@@ -1,6 +1,5 @@
 .class public Landroidx/lifecycle/x;
 .super Ljava/lang/Object;
-.source "ViewModelProviders.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance v0, Landroidx/lifecycle/w;
 
     invoke-direct {v0, p0}, Landroidx/lifecycle/w;-><init>(Landroidx/lifecycle/z;)V
@@ -47,7 +45,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 2
     new-instance v0, Landroidx/lifecycle/w;
 
     invoke-direct {v0, p0}, Landroidx/lifecycle/w;-><init>(Landroidx/lifecycle/z;)V

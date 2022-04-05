@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/just/agentweb/WebListenerManager;
 .super Ljava/lang/Object;
-.source "WebListenerManager.java"
 
 
 # virtual methods

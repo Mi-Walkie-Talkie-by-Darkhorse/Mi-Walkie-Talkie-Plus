@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/hs$b;
 .super Ljava/lang/Object;
-.source "DiskLruCache.java"
 
 # interfaces
 .implements Ljava/io/Closeable;
@@ -33,21 +32,16 @@
 .method private constructor <init>(Lcom/amap/api/col/l3/hs;Ljava/lang/String;J[Ljava/io/InputStream;[J)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/hs$b;->a:Lcom/amap/api/col/l3/hs;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p2, p0, Lcom/amap/api/col/l3/hs$b;->b:Ljava/lang/String;
 
-    .line 4
     iput-wide p3, p0, Lcom/amap/api/col/l3/hs$b;->c:J
 
-    .line 5
     iput-object p5, p0, Lcom/amap/api/col/l3/hs$b;->d:[Ljava/io/InputStream;
 
-    .line 6
     iput-object p6, p0, Lcom/amap/api/col/l3/hs$b;->e:[J
 
     return-void
@@ -56,7 +50,6 @@
 .method synthetic constructor <init>(Lcom/amap/api/col/l3/hs;Ljava/lang/String;J[Ljava/io/InputStream;[JB)V
     .locals 0
 
-    .line 1
     invoke-direct/range {p0 .. p6}, Lcom/amap/api/col/l3/hs$b;-><init>(Lcom/amap/api/col/l3/hs;Ljava/lang/String;J[Ljava/io/InputStream;[J)V
 
     return-void
@@ -67,7 +60,6 @@
 .method public final a()Ljava/io/InputStream;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/hs$b;->d:[Ljava/io/InputStream;
 
     const/4 v1, 0x0
@@ -80,7 +72,6 @@
 .method public final close()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/hs$b;->d:[Ljava/io/InputStream;
 
     array-length v1, v0
@@ -92,7 +83,6 @@
 
     aget-object v3, v0, v2
 
-    .line 2
     invoke-static {v3}, Lcom/amap/api/col/l3/hv;->a(Ljava/io/Closeable;)V
 
     add-int/lit8 v2, v2, 0x1

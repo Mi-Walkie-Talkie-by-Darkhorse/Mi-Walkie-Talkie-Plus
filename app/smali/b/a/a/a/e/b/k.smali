@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/b/k;
 .super Ljava/lang/Object;
-.source "IScatterDataSet.java"
 
 # interfaces
 .implements Lb/a/a/a/e/b/h;

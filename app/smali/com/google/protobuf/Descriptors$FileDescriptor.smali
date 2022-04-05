@@ -1,6 +1,5 @@
 .class public final Lcom/google/protobuf/Descriptors$FileDescriptor;
 .super Lcom/google/protobuf/Descriptors$GenericDescriptor;
-.source "Descriptors.java"
 
 
 # annotations
@@ -47,16 +46,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/google/protobuf/Descriptors$GenericDescriptor;-><init>()V
 
-    .line 2
     iput-object p3, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->pool:Lcom/google/protobuf/Descriptors$DescriptorPool;
 
-    .line 3
     iput-object p1, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->proto:Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
-    .line 4
     invoke-virtual {p2}, [Lcom/google/protobuf/Descriptors$FileDescriptor;->clone()Ljava/lang/Object;
 
     move-result-object v0
@@ -65,12 +60,10 @@
 
     iput-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->dependencies:[Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 5
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    .line 6
     array-length v1, p2
 
     const/4 v2, 0x0
@@ -82,7 +75,6 @@
 
     aget-object v4, p2, v3
 
-    .line 7
     invoke-virtual {v4}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getName()Ljava/lang/String;
 
     move-result-object v5
@@ -93,7 +85,6 @@
 
     goto :goto_0
 
-    .line 8
     :cond_0
     new-instance p2, Ljava/util/ArrayList;
 
@@ -101,7 +92,6 @@
 
     const/4 v1, 0x0
 
-    .line 9
     :goto_1
     invoke-virtual {p1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getPublicDependencyCount()I
 
@@ -111,26 +101,22 @@
 
     if-ge v1, v3, :cond_5
 
-    .line 10
     invoke-virtual {p1, v1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getPublicDependency(I)I
 
     move-result v3
 
     if-ltz v3, :cond_4
 
-    .line 11
     invoke-virtual {p1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getDependencyCount()I
 
     move-result v5
 
     if-ge v3, v5, :cond_4
 
-    .line 12
     invoke-virtual {p1, v3}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getDependency(I)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 13
     invoke-virtual {v0, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
@@ -141,7 +127,6 @@
 
     if-nez p4, :cond_3
 
-    .line 14
     new-instance p1, Lcom/google/protobuf/Descriptors$DescriptorValidationException;
 
     const-string p2, "Invalid public dependency: "
@@ -174,7 +159,6 @@
 
     throw p1
 
-    .line 15
     :cond_2
     invoke-interface {p2, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -183,7 +167,6 @@
 
     goto :goto_1
 
-    .line 16
     :cond_4
     new-instance p1, Lcom/google/protobuf/Descriptors$DescriptorValidationException;
 
@@ -193,7 +176,6 @@
 
     throw p1
 
-    .line 17
     :cond_5
     invoke-interface {p2}, Ljava/util/List;->size()I
 
@@ -203,17 +185,14 @@
 
     iput-object p4, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->publicDependencies:[Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 18
     invoke-interface {p2, p4}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    .line 19
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getPackage()Ljava/lang/String;
 
     move-result-object p2
 
     invoke-virtual {p3, p2, p0}, Lcom/google/protobuf/Descriptors$DescriptorPool;->addPackage(Ljava/lang/String;Lcom/google/protobuf/Descriptors$FileDescriptor;)V
 
-    .line 20
     invoke-virtual {p1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getMessageTypeCount()I
 
     move-result p2
@@ -224,7 +203,6 @@
 
     const/4 p2, 0x0
 
-    .line 21
     :goto_3
     invoke-virtual {p1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getMessageTypeCount()I
 
@@ -232,7 +210,6 @@
 
     if-ge p2, p3, :cond_6
 
-    .line 22
     iget-object p3, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->messageTypes:[Lcom/google/protobuf/Descriptors$Descriptor;
 
     new-instance p4, Lcom/google/protobuf/Descriptors$Descriptor;
@@ -259,7 +236,6 @@
 
     goto :goto_3
 
-    .line 23
     :cond_6
     invoke-virtual {p1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getEnumTypeCount()I
 
@@ -271,7 +247,6 @@
 
     const/4 p2, 0x0
 
-    .line 24
     :goto_4
     invoke-virtual {p1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getEnumTypeCount()I
 
@@ -279,7 +254,6 @@
 
     if-ge p2, p3, :cond_7
 
-    .line 25
     iget-object p3, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->enumTypes:[Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     new-instance p4, Lcom/google/protobuf/Descriptors$EnumDescriptor;
@@ -306,7 +280,6 @@
 
     goto :goto_4
 
-    .line 26
     :cond_7
     invoke-virtual {p1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getServiceCount()I
 
@@ -318,7 +291,6 @@
 
     const/4 p2, 0x0
 
-    .line 27
     :goto_5
     invoke-virtual {p1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getServiceCount()I
 
@@ -326,7 +298,6 @@
 
     if-ge p2, p3, :cond_8
 
-    .line 28
     iget-object p3, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->services:[Lcom/google/protobuf/Descriptors$ServiceDescriptor;
 
     new-instance p4, Lcom/google/protobuf/Descriptors$ServiceDescriptor;
@@ -343,7 +314,6 @@
 
     goto :goto_5
 
-    .line 29
     :cond_8
     invoke-virtual {p1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getExtensionCount()I
 
@@ -353,7 +323,6 @@
 
     iput-object p2, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->extensions:[Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
-    .line 30
     :goto_6
     invoke-virtual {p1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getExtensionCount()I
 
@@ -361,7 +330,6 @@
 
     if-ge v2, p2, :cond_9
 
-    .line 31
     iget-object p2, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->extensions:[Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
     new-instance p3, Lcom/google/protobuf/Descriptors$FieldDescriptor;
@@ -402,10 +370,8 @@
         }
     .end annotation
 
-    .line 32
     invoke-direct {p0}, Lcom/google/protobuf/Descriptors$GenericDescriptor;-><init>()V
 
-    .line 33
     new-instance v0, Lcom/google/protobuf/Descriptors$DescriptorPool;
 
     const/4 v1, 0x0
@@ -418,7 +384,6 @@
 
     iput-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->pool:Lcom/google/protobuf/Descriptors$DescriptorPool;
 
-    .line 34
     invoke-static {}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->newBuilder()Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto$Builder;
 
     move-result-object v0
@@ -461,42 +426,34 @@
 
     new-array v0, v1, [Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 35
     iput-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->dependencies:[Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     new-array v0, v1, [Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 36
     iput-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->publicDependencies:[Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     new-array v0, v3, [Lcom/google/protobuf/Descriptors$Descriptor;
 
     aput-object p2, v0, v1
 
-    .line 37
     iput-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->messageTypes:[Lcom/google/protobuf/Descriptors$Descriptor;
 
     new-array v0, v1, [Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
-    .line 38
     iput-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->enumTypes:[Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     new-array v0, v1, [Lcom/google/protobuf/Descriptors$ServiceDescriptor;
 
-    .line 39
     iput-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->services:[Lcom/google/protobuf/Descriptors$ServiceDescriptor;
 
     new-array v0, v1, [Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
-    .line 40
     iput-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->extensions:[Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
-    .line 41
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->pool:Lcom/google/protobuf/Descriptors$DescriptorPool;
 
     invoke-virtual {v0, p1, p0}, Lcom/google/protobuf/Descriptors$DescriptorPool;->addPackage(Ljava/lang/String;Lcom/google/protobuf/Descriptors$FileDescriptor;)V
 
-    .line 42
     iget-object p1, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->pool:Lcom/google/protobuf/Descriptors$DescriptorPool;
 
     invoke-virtual {p1, p2}, Lcom/google/protobuf/Descriptors$DescriptorPool;->addSymbol(Lcom/google/protobuf/Descriptors$GenericDescriptor;)V
@@ -507,7 +464,6 @@
 .method static synthetic access$1300(Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/Descriptors$DescriptorPool;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->pool:Lcom/google/protobuf/Descriptors$DescriptorPool;
 
     return-object p0
@@ -523,7 +479,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->buildFrom(Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;[Lcom/google/protobuf/Descriptors$FileDescriptor;Z)Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     move-result-object p0
@@ -539,17 +494,14 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/Descriptors$DescriptorPool;
 
     invoke-direct {v0, p1, p2}, Lcom/google/protobuf/Descriptors$DescriptorPool;-><init>([Lcom/google/protobuf/Descriptors$FileDescriptor;Z)V
 
-    .line 3
     new-instance v1, Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     invoke-direct {v1, p0, p1, v0, p2}, Lcom/google/protobuf/Descriptors$FileDescriptor;-><init>(Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;[Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$DescriptorPool;Z)V
 
-    .line 4
     invoke-direct {v1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->crossLink()V
 
     return-object v1
@@ -563,7 +515,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->messageTypes:[Lcom/google/protobuf/Descriptors$Descriptor;
 
     array-length v1, v0
@@ -577,14 +528,12 @@
 
     aget-object v4, v0, v3
 
-    .line 2
     invoke-static {v4}, Lcom/google/protobuf/Descriptors$Descriptor;->access$600(Lcom/google/protobuf/Descriptors$Descriptor;)V
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->services:[Lcom/google/protobuf/Descriptors$ServiceDescriptor;
 
@@ -597,14 +546,12 @@
 
     aget-object v4, v0, v3
 
-    .line 4
     invoke-static {v4}, Lcom/google/protobuf/Descriptors$ServiceDescriptor;->access$700(Lcom/google/protobuf/Descriptors$ServiceDescriptor;)V
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_1
 
-    .line 5
     :cond_1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->extensions:[Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
@@ -615,7 +562,6 @@
 
     aget-object v3, v0, v2
 
-    .line 6
     invoke-static {v3}, Lcom/google/protobuf/Descriptors$FieldDescriptor;->access$800(Lcom/google/protobuf/Descriptors$FieldDescriptor;)V
 
     add-int/lit8 v2, v2, 0x1
@@ -642,20 +588,17 @@
         }
     .end annotation
 
-    .line 14
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     const/4 v1, 0x0
 
-    .line 15
     :goto_0
     array-length v2, p2
 
     if-ge v1, v2, :cond_0
 
-    .line 16
     :try_start_0
     invoke-virtual {p1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
 
@@ -669,7 +612,6 @@
 
     const-string v3, "descriptor"
 
-    .line 17
     invoke-virtual {v2, v3}, Ljava/lang/Class;->getField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object v2
@@ -688,7 +630,6 @@
 
     goto :goto_1
 
-    .line 18
     :catch_0
     invoke-static {}, Lcom/google/protobuf/Descriptors;->access$000()Ljava/util/logging/Logger;
 
@@ -735,7 +676,6 @@
 
     goto :goto_0
 
-    .line 19
     :cond_0
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -743,10 +683,8 @@
 
     new-array p1, p1, [Lcom/google/protobuf/Descriptors$FileDescriptor;
 
-    .line 20
     invoke-interface {v0, p1}, Ljava/util/List;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
 
-    .line 21
     invoke-static {p0, p1, p4}, Lcom/google/protobuf/Descriptors$FileDescriptor;->internalBuildGeneratedFileFrom([Ljava/lang/String;[Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;)V
 
     return-void
@@ -757,12 +695,10 @@
 
     const-string v0, "Failed to parse protocol buffer descriptor for generated code."
 
-    .line 1
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 2
     array-length v2, p0
 
     const/4 v3, 0x0
@@ -772,14 +708,12 @@
 
     aget-object v4, p0, v3
 
-    .line 3
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 4
     :cond_0
     :try_start_0
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -794,7 +728,6 @@
     :try_end_0
     .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_3
 
-    .line 5
     :try_start_1
     invoke-static {p0}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->parseFrom([B)Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
@@ -804,7 +737,6 @@
 
     const/4 v2, 0x1
 
-    .line 6
     :try_start_2
     invoke-static {v1, p1, v2}, Lcom/google/protobuf/Descriptors$FileDescriptor;->buildFrom(Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;[Lcom/google/protobuf/Descriptors$FileDescriptor;Z)Lcom/google/protobuf/Descriptors$FileDescriptor;
 
@@ -812,14 +744,12 @@
     :try_end_2
     .catch Lcom/google/protobuf/Descriptors$DescriptorValidationException; {:try_start_2 .. :try_end_2} :catch_1
 
-    .line 7
     invoke-interface {p2, p1}, Lcom/google/protobuf/Descriptors$FileDescriptor$InternalDescriptorAssigner;->assignDescriptors(Lcom/google/protobuf/Descriptors$FileDescriptor;)Lcom/google/protobuf/ExtensionRegistry;
 
     move-result-object p2
 
     if-eqz p2, :cond_1
 
-    .line 8
     :try_start_3
     invoke-static {p0, p2}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->parseFrom([BLcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
@@ -827,7 +757,6 @@
     :try_end_3
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_3 .. :try_end_3} :catch_0
 
-    .line 9
     invoke-direct {p1, p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->setProto(Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;)V
 
     goto :goto_1
@@ -835,7 +764,6 @@
     :catch_0
     move-exception p0
 
-    .line 10
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {p1, v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -849,7 +777,6 @@
     :catch_1
     move-exception p0
 
-    .line 11
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {v1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getName()Ljava/lang/String;
@@ -895,7 +822,6 @@
     :catch_2
     move-exception p0
 
-    .line 12
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     invoke-direct {p1, v0, p0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
@@ -905,7 +831,6 @@
     :catch_3
     move-exception p0
 
-    .line 13
     new-instance p1, Ljava/lang/RuntimeException;
 
     const-string p2, "Standard encoding ISO-8859-1 not supported by JVM."
@@ -918,14 +843,12 @@
 .method public static internalUpdateFileDescriptor(Lcom/google/protobuf/Descriptors$FileDescriptor;Lcom/google/protobuf/ExtensionRegistry;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->proto:Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
     invoke-virtual {v0}, Lcom/google/protobuf/AbstractMessageLite;->toByteString()Lcom/google/protobuf/ByteString;
 
     move-result-object v0
 
-    .line 2
     :try_start_0
     invoke-static {v0, p1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->parseFrom(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ExtensionRegistryLite;)Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
@@ -933,7 +856,6 @@
     :try_end_0
     .catch Lcom/google/protobuf/InvalidProtocolBufferException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/google/protobuf/Descriptors$FileDescriptor;->setProto(Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;)V
 
     return-void
@@ -941,7 +863,6 @@
     :catch_0
     move-exception p0
 
-    .line 4
     new-instance p1, Ljava/lang/IllegalArgumentException;
 
     const-string v0, "Failed to parse protocol buffer descriptor for generated code."
@@ -954,14 +875,12 @@
 .method private setProto(Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;)V
     .locals 4
 
-    .line 1
     iput-object p1, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->proto:Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
     const/4 v0, 0x0
 
     const/4 v1, 0x0
 
-    .line 2
     :goto_0
     iget-object v2, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->messageTypes:[Lcom/google/protobuf/Descriptors$Descriptor;
 
@@ -969,7 +888,6 @@
 
     if-ge v1, v3, :cond_0
 
-    .line 3
     aget-object v2, v2, v1
 
     invoke-virtual {p1, v1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getMessageType(I)Lcom/google/protobuf/DescriptorProtos$DescriptorProto;
@@ -985,7 +903,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 4
     :goto_1
     iget-object v2, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->enumTypes:[Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
@@ -993,7 +910,6 @@
 
     if-ge v1, v3, :cond_1
 
-    .line 5
     aget-object v2, v2, v1
 
     invoke-virtual {p1, v1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getEnumType(I)Lcom/google/protobuf/DescriptorProtos$EnumDescriptorProto;
@@ -1009,7 +925,6 @@
     :cond_1
     const/4 v1, 0x0
 
-    .line 6
     :goto_2
     iget-object v2, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->services:[Lcom/google/protobuf/Descriptors$ServiceDescriptor;
 
@@ -1017,7 +932,6 @@
 
     if-ge v1, v3, :cond_2
 
-    .line 7
     aget-object v2, v2, v1
 
     invoke-virtual {p1, v1}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getService(I)Lcom/google/protobuf/DescriptorProtos$ServiceDescriptorProto;
@@ -1030,7 +944,6 @@
 
     goto :goto_2
 
-    .line 8
     :cond_2
     :goto_3
     iget-object v1, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->extensions:[Lcom/google/protobuf/Descriptors$FieldDescriptor;
@@ -1039,7 +952,6 @@
 
     if-ge v0, v2, :cond_3
 
-    .line 9
     aget-object v1, v1, v0
 
     invoke-virtual {p1, v0}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getExtension(I)Lcom/google/protobuf/DescriptorProtos$FieldDescriptorProto;
@@ -1063,7 +975,6 @@
 
     const/16 v0, 0x2e
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(I)I
 
     move-result v0
@@ -1076,7 +987,6 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getPackage()Ljava/lang/String;
 
@@ -1088,7 +998,6 @@
 
     if-lez v0, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getPackage()Ljava/lang/String;
 
     move-result-object v0
@@ -1137,7 +1046,6 @@
 
     move-result-object p1
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->pool:Lcom/google/protobuf/Descriptors$DescriptorPool;
 
@@ -1147,7 +1055,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 5
     instance-of v0, p1, Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     if-eqz v0, :cond_2
@@ -1158,7 +1065,6 @@
 
     if-ne v0, p0, :cond_2
 
-    .line 6
     check-cast p1, Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     return-object p1
@@ -1172,7 +1078,6 @@
 
     const/16 v0, 0x2e
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(I)I
 
     move-result v0
@@ -1185,7 +1090,6 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getPackage()Ljava/lang/String;
 
@@ -1197,7 +1101,6 @@
 
     if-lez v0, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getPackage()Ljava/lang/String;
 
     move-result-object v0
@@ -1246,7 +1149,6 @@
 
     move-result-object p1
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->pool:Lcom/google/protobuf/Descriptors$DescriptorPool;
 
@@ -1256,7 +1158,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 5
     instance-of v0, p1, Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
     if-eqz v0, :cond_2
@@ -1267,7 +1168,6 @@
 
     if-ne v0, p0, :cond_2
 
-    .line 6
     check-cast p1, Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
     return-object p1
@@ -1281,7 +1181,6 @@
 
     const/16 v0, 0x2e
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(I)I
 
     move-result v0
@@ -1294,7 +1193,6 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getPackage()Ljava/lang/String;
 
@@ -1306,7 +1204,6 @@
 
     if-lez v0, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getPackage()Ljava/lang/String;
 
     move-result-object v0
@@ -1355,7 +1252,6 @@
 
     move-result-object p1
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->pool:Lcom/google/protobuf/Descriptors$DescriptorPool;
 
@@ -1365,7 +1261,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 5
     instance-of v0, p1, Lcom/google/protobuf/Descriptors$Descriptor;
 
     if-eqz v0, :cond_2
@@ -1376,7 +1271,6 @@
 
     if-ne v0, p0, :cond_2
 
-    .line 6
     check-cast p1, Lcom/google/protobuf/Descriptors$Descriptor;
 
     return-object p1
@@ -1390,7 +1284,6 @@
 
     const/16 v0, 0x2e
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->indexOf(I)I
 
     move-result v0
@@ -1403,7 +1296,6 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getPackage()Ljava/lang/String;
 
@@ -1415,7 +1307,6 @@
 
     if-lez v0, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->getPackage()Ljava/lang/String;
 
     move-result-object v0
@@ -1464,7 +1355,6 @@
 
     move-result-object p1
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->pool:Lcom/google/protobuf/Descriptors$DescriptorPool;
 
@@ -1474,7 +1364,6 @@
 
     if-eqz p1, :cond_2
 
-    .line 5
     instance-of v0, p1, Lcom/google/protobuf/Descriptors$ServiceDescriptor;
 
     if-eqz v0, :cond_2
@@ -1485,7 +1374,6 @@
 
     if-ne v0, p0, :cond_2
 
-    .line 6
     check-cast p1, Lcom/google/protobuf/Descriptors$ServiceDescriptor;
 
     return-object p1
@@ -1505,7 +1393,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->dependencies:[Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -1530,7 +1417,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->enumTypes:[Lcom/google/protobuf/Descriptors$EnumDescriptor;
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -1555,7 +1441,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->extensions:[Lcom/google/protobuf/Descriptors$FieldDescriptor;
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -1578,7 +1463,6 @@
 .method public getFullName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->proto:Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
     invoke-virtual {v0}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getName()Ljava/lang/String;
@@ -1599,7 +1483,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->messageTypes:[Lcom/google/protobuf/Descriptors$Descriptor;
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -1616,7 +1499,6 @@
 .method public getName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->proto:Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
     invoke-virtual {v0}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getName()Ljava/lang/String;
@@ -1629,7 +1511,6 @@
 .method public getOptions()Lcom/google/protobuf/DescriptorProtos$FileOptions;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->proto:Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
     invoke-virtual {v0}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getOptions()Lcom/google/protobuf/DescriptorProtos$FileOptions;
@@ -1642,7 +1523,6 @@
 .method public getPackage()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->proto:Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
     invoke-virtual {v0}, Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;->getPackage()Ljava/lang/String;
@@ -1663,7 +1543,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->publicDependencies:[Lcom/google/protobuf/Descriptors$FileDescriptor;
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -1688,7 +1567,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->services:[Lcom/google/protobuf/Descriptors$ServiceDescriptor;
 
     invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -1705,7 +1583,6 @@
 .method public toProto()Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/Descriptors$FileDescriptor;->proto:Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
     return-object v0
@@ -1714,7 +1591,6 @@
 .method public bridge synthetic toProto()Lcom/google/protobuf/Message;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/Descriptors$FileDescriptor;->toProto()Lcom/google/protobuf/DescriptorProtos$FileDescriptorProto;
 
     move-result-object v0

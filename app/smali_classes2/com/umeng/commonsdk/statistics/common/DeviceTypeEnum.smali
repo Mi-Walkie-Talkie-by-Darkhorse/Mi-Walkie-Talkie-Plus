@@ -1,6 +1,5 @@
 .class public final enum Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 .super Ljava/lang/Enum;
-.source "DeviceTypeEnum.java"
 
 
 # annotations
@@ -41,7 +40,6 @@
 .method static constructor <clinit>()V
     .locals 10
 
-    .line 1
     new-instance v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
     const-string v1, "imei"
@@ -54,7 +52,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->IMEI:Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
-    .line 2
     new-instance v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
     const-string v1, "oaid"
@@ -67,7 +64,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->OAID:Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
-    .line 3
     new-instance v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
     const-string v1, "android_id"
@@ -80,7 +76,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->ANDROIDID:Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
-    .line 4
     new-instance v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
     const-string v1, "mac"
@@ -93,7 +88,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->MAC:Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
-    .line 5
     new-instance v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
     const-string v1, "serial_no"
@@ -106,7 +100,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->SERIALNO:Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
-    .line 6
     new-instance v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
     const-string v1, "idfa"
@@ -119,7 +112,6 @@
 
     sput-object v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->IDFA:Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
-    .line 7
     new-instance v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
     const-string v1, "null"
@@ -136,7 +128,6 @@
 
     new-array v1, v1, [Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
-    .line 8
     sget-object v9, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->IMEI:Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
     aput-object v9, v1, v2
@@ -179,13 +170,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    .line 2
     iput-object p3, p0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->deviceIdType:Ljava/lang/String;
 
-    .line 3
     iput-object p4, p0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->description:Ljava/lang/String;
 
     return-void
@@ -194,7 +182,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -209,7 +196,6 @@
 .method public static values()[Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->$VALUES:[Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;
 
     invoke-virtual {v0}, [Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->clone()Ljava/lang/Object;
@@ -226,7 +212,6 @@
 .method public getDescription()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->description:Ljava/lang/String;
 
     return-object v0
@@ -235,7 +220,6 @@
 .method public getDeviceIdType()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/commonsdk/statistics/common/DeviceTypeEnum;->deviceIdType:Ljava/lang/String;
 
     return-object v0

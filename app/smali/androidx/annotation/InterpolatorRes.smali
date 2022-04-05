@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/annotation/InterpolatorRes;
 .super Ljava/lang/Object;
-.source "InterpolatorRes.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

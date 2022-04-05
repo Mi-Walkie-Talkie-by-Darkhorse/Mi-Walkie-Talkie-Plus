@@ -1,6 +1,5 @@
 .class synthetic Lcom/umeng/analytics/pro/ar$1;
 .super Ljava/lang/Object;
-.source "TBaseHelper.java"
 
 
 # annotations

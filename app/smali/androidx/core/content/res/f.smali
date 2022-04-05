@@ -1,6 +1,5 @@
 .class public Landroidx/core/content/res/f;
 .super Ljava/lang/Object;
-.source "TypedArrayUtils.java"
 
 
 # annotations
@@ -31,7 +30,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-static {p1, p2}, Landroidx/core/content/res/f;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result p1
@@ -40,7 +38,6 @@
 
     return p4
 
-    .line 3
     :cond_0
     invoke-virtual {p0, p3, p4}, Landroid/content/res/TypedArray;->getFloat(IF)F
 
@@ -74,7 +71,6 @@
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 
-    .line 6
     invoke-static {p1, p2}, Landroidx/core/content/res/f;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result p1
@@ -83,7 +79,6 @@
 
     return p4
 
-    .line 7
     :cond_0
     invoke-virtual {p0, p3, p4}, Landroid/content/res/TypedArray;->getColor(II)I
 
@@ -117,22 +112,18 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 17
     invoke-static {p1, p3}, Landroidx/core/content/res/f;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_2
 
-    .line 18
     new-instance p1, Landroid/util/TypedValue;
 
     invoke-direct {p1}, Landroid/util/TypedValue;-><init>()V
 
-    .line 19
     invoke-virtual {p0, p4, p1}, Landroid/content/res/TypedArray;->getValue(ILandroid/util/TypedValue;)Z
 
-    .line 20
     iget p3, p1, Landroid/util/TypedValue;->type:I
 
     const/4 v0, 0x2
@@ -147,14 +138,12 @@
 
     if-gt p3, v0, :cond_0
 
-    .line 21
     invoke-static {p1}, Landroidx/core/content/res/f;->a(Landroid/util/TypedValue;)Landroid/content/res/ColorStateList;
 
     move-result-object p0
 
     return-object p0
 
-    .line 22
     :cond_0
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->getResources()Landroid/content/res/Resources;
 
@@ -162,19 +151,16 @@
 
     const/4 p3, 0x0
 
-    .line 23
     invoke-virtual {p0, p4, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result p0
 
-    .line 24
     invoke-static {p1, p0, p2}, Landroidx/core/content/res/a;->a(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroid/content/res/ColorStateList;
 
     move-result-object p0
 
     return-object p0
 
-    .line 25
     :cond_1
     new-instance p0, Ljava/lang/UnsupportedOperationException;
 
@@ -217,7 +203,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 26
     iget p0, p0, Landroid/util/TypedValue;->data:I
 
     invoke-static {p0}, Landroid/content/res/ColorStateList;->valueOf(I)Landroid/content/res/ColorStateList;
@@ -250,7 +235,6 @@
 
     if-nez p1, :cond_0
 
-    .line 29
     invoke-virtual {p0, p2, p3}, Landroid/content/res/Resources;->obtainAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p0
@@ -260,7 +244,6 @@
     :cond_0
     const/4 p0, 0x0
 
-    .line 30
     invoke-virtual {p1, p2, p3, p0, p0}, Landroid/content/res/Resources$Theme;->obtainStyledAttributes(Landroid/util/AttributeSet;[III)Landroid/content/res/TypedArray;
 
     move-result-object p0
@@ -295,22 +278,18 @@
         .end annotation
     .end param
 
-    .line 8
     invoke-static {p1, p3}, Landroidx/core/content/res/f;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 9
     new-instance p1, Landroid/util/TypedValue;
 
     invoke-direct {p1}, Landroid/util/TypedValue;-><init>()V
 
-    .line 10
     invoke-virtual {p0, p4, p1}, Landroid/content/res/TypedArray;->getValue(ILandroid/util/TypedValue;)Z
 
-    .line 11
     iget p3, p1, Landroid/util/TypedValue;->type:I
 
     const/16 v0, 0x1c
@@ -321,7 +300,6 @@
 
     if-gt p3, v0, :cond_0
 
-    .line 12
     iget p0, p1, Landroid/util/TypedValue;->data:I
 
     invoke-static {p0}, Landroidx/core/content/res/b;->b(I)Landroidx/core/content/res/b;
@@ -330,7 +308,6 @@
 
     return-object p0
 
-    .line 13
     :cond_0
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->getResources()Landroid/content/res/Resources;
 
@@ -338,12 +315,10 @@
 
     const/4 p3, 0x0
 
-    .line 14
     invoke-virtual {p0, p4, p3}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
     move-result p0
 
-    .line 15
     invoke-static {p1, p0, p2}, Landroidx/core/content/res/b;->b(Landroid/content/res/Resources;ILandroid/content/res/Resources$Theme;)Landroidx/core/content/res/b;
 
     move-result-object p0
@@ -352,7 +327,6 @@
 
     return-object p0
 
-    .line 16
     :cond_1
     invoke-static {p5}, Landroidx/core/content/res/b;->b(I)Landroidx/core/content/res/b;
 
@@ -382,7 +356,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 27
     invoke-static {p1, p2}, Landroidx/core/content/res/f;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result p1
@@ -393,7 +366,6 @@
 
     return-object p0
 
-    .line 28
     :cond_0
     invoke-virtual {p0, p3}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
@@ -421,7 +393,6 @@
         .end annotation
     .end param
 
-    .line 4
     invoke-static {p1, p2}, Landroidx/core/content/res/f;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result p1
@@ -430,7 +401,6 @@
 
     return p4
 
-    .line 5
     :cond_0
     invoke-virtual {p0, p3, p4}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -452,7 +422,6 @@
 
     const-string v0, "http://schemas.android.com/apk/res/android"
 
-    .line 1
     invoke-interface {p0, v0, p1}, Lorg/xmlpull/v1/XmlPullParser;->getAttributeValue(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
@@ -489,7 +458,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p1, p2}, Landroidx/core/content/res/f;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result p1
@@ -498,7 +466,6 @@
 
     return p4
 
-    .line 2
     :cond_0
     invoke-virtual {p0, p3, p4}, Landroid/content/res/TypedArray;->getInt(II)I
 
@@ -524,7 +491,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 3
     invoke-static {p1, p2}, Landroidx/core/content/res/f;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result p1
@@ -535,7 +501,6 @@
 
     return-object p0
 
-    .line 4
     :cond_0
     invoke-virtual {p0, p3}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
 
@@ -569,7 +534,6 @@
     .annotation build Landroidx/annotation/AnyRes;
     .end annotation
 
-    .line 1
     invoke-static {p1, p2}, Landroidx/core/content/res/f;->a(Lorg/xmlpull/v1/XmlPullParser;Ljava/lang/String;)Z
 
     move-result p1
@@ -578,7 +542,6 @@
 
     return p4
 
-    .line 2
     :cond_0
     invoke-virtual {p0, p3, p4}, Landroid/content/res/TypedArray;->getResourceId(II)I
 

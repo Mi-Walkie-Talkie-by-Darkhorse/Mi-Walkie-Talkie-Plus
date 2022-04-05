@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;
 .super Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;
-.source "GLNaviOverlay.java"
 
 
 # instance fields
@@ -15,10 +14,8 @@
 .method public constructor <init>(ILcom/autonavi/amap/mapcore/interfaces/IAMap;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;-><init>(ILcom/autonavi/amap/mapcore/interfaces/IAMap;I)V
 
-    .line 2
     sget-object p1, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay$EAMapOverlayTpye;->AMAPOVERLAY_NAVI:Lcom/autonavi/ae/gmap/gloverlay/GLOverlay$EAMapOverlayTpye;
 
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
@@ -37,7 +34,6 @@
 .method static synthetic access$000(JIIII)V
     .locals 0
 
-    .line 1
     invoke-static/range {p0 .. p5}, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->nativeSetArcInfo(JIIII)V
 
     return-void
@@ -75,7 +71,6 @@
 .method public SetNaviTexture(IIIII)V
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     move v2, p5
@@ -90,12 +85,10 @@
 
     invoke-static/range {v0 .. v6}, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->nativeSetNaviTextures(JIIIII)V
 
-    .line 2
     iget-object p1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-interface {p1}, Lcom/autonavi/amap/mapcore/interfaces/IAMap;->requestRender()V
 
     :cond_0
@@ -110,7 +103,6 @@
         }
     .end annotation
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -119,7 +111,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     iget v2, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mEngineID:I
 
     invoke-static {v2, v0, v1}, Lcom/autonavi/ae/gmap/GLMapEngine;->destoryOverlay(IJ)V
@@ -131,7 +122,6 @@
 .method public getCarAngle()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->mBearing:I
 
     return v0
@@ -140,7 +130,6 @@
 .method public getCarPosition()Landroid/graphics/Point;
     .locals 3
 
-    .line 1
     new-instance v0, Landroid/graphics/Point;
 
     iget v1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->mPx:I
@@ -155,7 +144,6 @@
 .method public setArcColorsAndAngles(IIIII)V
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     move v2, p1
@@ -176,7 +164,6 @@
 .method public setArcInfo(IIII)V
     .locals 8
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mGLMapView:Lcom/autonavi/amap/mapcore/interfaces/IAMap;
 
     new-instance v7, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay$1;
@@ -203,7 +190,6 @@
 .method public setCarAnimationTime(I)V
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -212,7 +198,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->nativeSetCarAnimationTime(JI)V
 
     :cond_0
@@ -222,7 +207,6 @@
 .method public setCarPosition(III)V
     .locals 6
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     const-wide/16 v2, 0x0
@@ -239,17 +223,13 @@
 
     move v5, p3
 
-    .line 2
     invoke-static/range {v0 .. v5}, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->nativeSetCarPosition(JIIII)V
 
-    .line 3
     :cond_0
     iput p1, p0, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->mPx:I
 
-    .line 4
     iput p2, p0, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->mPy:I
 
-    .line 5
     iput p3, p0, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->mBearing:I
 
     return-void
@@ -258,7 +238,6 @@
 .method public setDirIndicatorAngle(I)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->nativeSetDirIndicatorAngle(JI)V
@@ -269,7 +248,6 @@
 .method public setEndLineTexture(III)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1, p3, p2, p1}, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->nativeSetNaviEndLine(JIII)V
@@ -280,7 +258,6 @@
 .method public setEndPoint(II)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/autonavi/ae/gmap/gloverlay/GLOverlay;->mNativeInstance:J
 
     invoke-static {v0, v1, p1, p2}, Lcom/autonavi/ae/gmap/gloverlay/GLNaviOverlay;->nativeSetEndPoint(JII)V

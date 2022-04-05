@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/update/sealshark/c;
 .super Ljava/lang/Object;
-.source "IDataSplitWrap.java"
 
 
 # annotations

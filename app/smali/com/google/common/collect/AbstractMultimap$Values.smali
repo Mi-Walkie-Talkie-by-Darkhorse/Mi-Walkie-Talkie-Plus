@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/AbstractMultimap$Values;
 .super Ljava/util/AbstractCollection;
-.source "AbstractMultimap.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/common/collect/AbstractMultimap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/AbstractMultimap$Values;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     invoke-direct {p0}, Ljava/util/AbstractCollection;-><init>()V
@@ -42,7 +40,6 @@
 .method public clear()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$Values;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->clear()V
@@ -57,7 +54,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$Values;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     invoke-virtual {v0, p1}, Lcom/google/common/collect/AbstractMultimap;->containsValue(Ljava/lang/Object;)Z
@@ -77,7 +73,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$Values;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     invoke-virtual {v0}, Lcom/google/common/collect/AbstractMultimap;->valueIterator()Ljava/util/Iterator;
@@ -90,7 +85,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/AbstractMultimap$Values;->this$0:Lcom/google/common/collect/AbstractMultimap;
 
     invoke-interface {v0}, Lcom/google/common/collect/Multimap;->size()I

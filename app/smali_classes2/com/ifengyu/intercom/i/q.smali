@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/i/q;
 .super Ljava/lang/Object;
-.source "DolphinCmdUtils.java"
 
 
 # direct methods
@@ -52,13 +51,11 @@
         .end annotation
     .end param
 
-    .line 11
     :try_start_0
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;-><init>()V
 
-    .line 12
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->getType()Lcom/ifengyu/intercom/protos/MitalkProtos$CHTYPE;
 
     move-result-object v1
@@ -89,7 +86,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(Ljava/lang/Long;)V
 
-    .line 13
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasNo()Z
 
     move-result v1
@@ -110,7 +106,6 @@
     :goto_1
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c(I)V
 
-    .line 14
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasType()Z
 
     move-result v1
@@ -133,7 +128,6 @@
     :goto_2
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f(I)V
 
-    .line 15
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasName()Z
 
     move-result v1
@@ -158,7 +152,6 @@
     :goto_3
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(Ljava/lang/String;)V
 
-    .line 16
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasFreq()Z
 
     move-result v1
@@ -177,7 +170,6 @@
     :goto_4
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(I)V
 
-    .line 17
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasCssType()Z
 
     move-result v1
@@ -208,7 +200,6 @@
     :goto_5
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d(I)V
 
-    .line 18
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasFreq2()Z
 
     move-result v1
@@ -227,7 +218,6 @@
     :goto_6
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b(I)V
 
-    .line 19
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasCssType2()Z
 
     move-result v1
@@ -260,7 +250,6 @@
     :catch_0
     move-exception p0
 
-    .line 20
     invoke-virtual {p0}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     const/4 p0, 0x0
@@ -279,12 +268,10 @@
         .end annotation
     .end param
 
-    .line 21
     new-instance v0, Lcom/ifengyu/intercom/ui/setting/UserChannel;
 
     invoke-direct {v0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;-><init>()V
 
-    .line 22
     :try_start_0
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->getType()Lcom/ifengyu/intercom/protos/MitalkProtos$CHTYPE;
 
@@ -316,7 +303,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(Ljava/lang/Long;)V
 
-    .line 23
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasNo()Z
 
     move-result v1
@@ -337,7 +323,6 @@
     :goto_1
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->c(I)V
 
-    .line 24
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasType()Z
 
     move-result v1
@@ -360,7 +345,6 @@
     :goto_2
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->f(I)V
 
-    .line 25
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasName()Z
 
     move-result v1
@@ -385,7 +369,6 @@
     :goto_3
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(Ljava/lang/String;)V
 
-    .line 26
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasFreq()Z
 
     move-result v1
@@ -404,7 +387,6 @@
     :goto_4
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->a(I)V
 
-    .line 27
     invoke-virtual {p0}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasCssType()Z
 
     move-result v1
@@ -435,7 +417,6 @@
     :goto_5
     invoke-virtual {v0, p0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->d(I)V
 
-    .line 28
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasFreq()Z
 
     move-result p0
@@ -454,7 +435,6 @@
     :goto_6
     invoke-virtual {v0, p0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->b(I)V
 
-    .line 29
     invoke-virtual {p1}, Lcom/ifengyu/intercom/protos/MitalkProtos$ChannelInfo;->hasCssType()Z
 
     move-result p0
@@ -487,7 +467,6 @@
     :catch_0
     move-exception p0
 
-    .line 30
     invoke-virtual {p0}, Ljava/io/UnsupportedEncodingException;->printStackTrace()V
 
     :goto_7
@@ -497,7 +476,6 @@
 .method public static a()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object v0
@@ -514,7 +492,6 @@
 .method public static a(Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
     .locals 21
 
-    .line 3
     sget v0, Lcom/ifengyu/intercom/i/d0;->a:I
 
     const/4 v1, 0x1
@@ -529,7 +506,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object v0
@@ -540,7 +516,6 @@
 
     const/4 v3, 0x0
 
-    .line 5
     invoke-virtual/range {p0 .. p0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e()I
 
     move-result v4
@@ -573,7 +548,6 @@
 
     const/4 v13, 0x0
 
-    .line 6
     invoke-virtual/range {p0 .. p0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e()I
 
     move-result v14
@@ -602,12 +576,10 @@
 
     invoke-direct/range {v12 .. v20}, Lcom/ifengyu/intercom/ui/setting/UserChannel;-><init>(Ljava/lang/Long;IILjava/lang/String;IIII)V
 
-    .line 7
     invoke-virtual {v0, v1, v11, v2}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$CHOPTION;Lcom/ifengyu/intercom/ui/setting/UserChannel;Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
 
     goto :goto_0
 
-    .line 8
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
@@ -628,7 +600,6 @@
 .method public static a(Lcom/ifengyu/intercom/ui/setting/UserChannel;Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
     .locals 2
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object v0
@@ -647,7 +618,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 9
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object p1
@@ -658,7 +628,6 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
@@ -675,7 +644,6 @@
 .method public static b(Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
     .locals 21
 
-    .line 3
     sget v0, Lcom/ifengyu/intercom/i/d0;->a:I
 
     const/4 v1, 0x1
@@ -690,7 +658,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 4
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object v0
@@ -701,7 +668,6 @@
 
     const/4 v3, 0x0
 
-    .line 5
     invoke-virtual/range {p0 .. p0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e()I
 
     move-result v4
@@ -734,7 +700,6 @@
 
     const/4 v13, 0x0
 
-    .line 6
     invoke-virtual/range {p0 .. p0}, Lcom/ifengyu/intercom/ui/setting/UserChannel;->e()I
 
     move-result v14
@@ -763,12 +728,10 @@
 
     invoke-direct/range {v12 .. v20}, Lcom/ifengyu/intercom/ui/setting/UserChannel;-><init>(Ljava/lang/Long;IILjava/lang/String;IIII)V
 
-    .line 7
     invoke-virtual {v0, v1, v11, v2}, Lcom/ifengyu/intercom/node/e;->a(Lcom/ifengyu/intercom/protos/MitalkProtos$CHOPTION;Lcom/ifengyu/intercom/ui/setting/UserChannel;Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
 
     goto :goto_0
 
-    .line 8
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
@@ -793,7 +756,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object p1
@@ -804,7 +766,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
@@ -821,7 +782,6 @@
 .method public static c(Lcom/ifengyu/intercom/ui/setting/UserChannel;)V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/node/e;->d()Lcom/ifengyu/intercom/node/e;
 
     move-result-object v0

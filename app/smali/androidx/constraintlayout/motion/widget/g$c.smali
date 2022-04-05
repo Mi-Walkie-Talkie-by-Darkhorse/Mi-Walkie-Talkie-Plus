@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/g$c;
 .super Landroidx/constraintlayout/motion/widget/g;
-.source "KeyCycleOscillator.java"
 
 
 # annotations
@@ -22,14 +21,12 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroidx/constraintlayout/motion/widget/g;-><init>()V
 
     const/4 v0, 0x1
 
     new-array v0, v0, [F
 
-    .line 2
     iput-object v0, p0, Landroidx/constraintlayout/motion/widget/g$c;->g:[F
 
     return-void
@@ -40,7 +37,6 @@
 .method public a(Landroid/view/View;F)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/g$c;->g:[F
 
     invoke-virtual {p0, p2}, Landroidx/constraintlayout/motion/widget/g;->a(F)F
@@ -51,7 +47,6 @@
 
     aput p2, v0, v1
 
-    .line 2
     iget-object p2, p0, Landroidx/constraintlayout/motion/widget/g;->b:Landroidx/constraintlayout/widget/ConstraintAttribute;
 
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/g$c;->g:[F

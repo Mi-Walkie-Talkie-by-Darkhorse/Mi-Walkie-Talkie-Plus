@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/n;
 .super Ljava/lang/Thread;
-.source "ThreadWrapper.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method public constructor <init>(Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 
     return-void
@@ -24,7 +22,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lcom/ifengyu/intercom/node/n;->a:Z
 
     return-void
@@ -33,7 +30,6 @@
 .method public final b()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/ifengyu/intercom/node/n;->a:Z
 
     return v0
@@ -44,10 +40,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/ifengyu/intercom/node/n;->a:Z
 
-    .line 2
     invoke-super {p0}, Ljava/lang/Thread;->interrupt()V
 
     return-void

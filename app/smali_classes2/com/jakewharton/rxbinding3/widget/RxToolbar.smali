@@ -50,7 +50,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxToolbar__ToolbarItemClickObservableKt;->itemClicks(Landroid/widget/Toolbar;)Lio/reactivex/Observable;
 
     move-result-object p0
@@ -85,7 +84,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/jakewharton/rxbinding3/widget/RxToolbar__ToolbarNavigationClickObservableKt;->navigationClicks(Landroid/widget/Toolbar;)Lio/reactivex/Observable;
 
     move-result-object p0

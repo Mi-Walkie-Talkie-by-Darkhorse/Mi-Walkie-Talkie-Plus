@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;
 .super Lorg/osmdroid/views/overlay/Overlay;
-.source "MyLocationNewOverlay.java"
 
 # interfaces
 .implements Lorg/osmdroid/views/overlay/mylocation/IMyLocationConsumer;
@@ -80,7 +79,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/views/overlay/Overlay;->getSafeMenuId()I
 
     move-result v0
@@ -93,7 +91,6 @@
 .method public constructor <init>(Lorg/osmdroid/views/MapView;)V
     .locals 2
 
-    .line 1
     new-instance v0, Lorg/osmdroid/views/overlay/mylocation/GpsMyLocationProvider;
 
     invoke-virtual {p1}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
@@ -110,45 +107,38 @@
 .method public constructor <init>(Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;Lorg/osmdroid/views/MapView;)V
     .locals 5
 
-    .line 2
     invoke-direct {p0}, Lorg/osmdroid/views/overlay/Overlay;-><init>()V
 
-    .line 3
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mPaint:Landroid/graphics/Paint;
 
-    .line 4
     new-instance v0, Landroid/graphics/Paint;
 
     invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mCirclePaint:Landroid/graphics/Paint;
 
-    .line 5
     new-instance v0, Ljava/util/LinkedList;
 
     invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mRunOnFirstFix:Ljava/util/LinkedList;
 
-    .line 6
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsProjected:Landroid/graphics/Point;
 
-    .line 7
     new-instance v0, Landroid/graphics/Point;
 
     invoke-direct {v0}, Landroid/graphics/Point;-><init>()V
 
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
-    .line 8
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
@@ -157,10 +147,8 @@
 
     const/4 v0, 0x1
 
-    .line 9
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->enableAutoStop:Z
 
-    .line 10
     new-instance v1, Lorg/osmdroid/util/GeoPoint;
 
     const/4 v2, 0x0
@@ -169,47 +157,38 @@
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mGeoPoint:Lorg/osmdroid/util/GeoPoint;
 
-    .line 11
     iput-boolean v2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mIsLocationEnabled:Z
 
-    .line 12
     iput-boolean v2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mIsFollowing:Z
 
-    .line 13
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDrawAccuracyEnabled:Z
 
-    .line 14
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mOptionsMenuEnabled:Z
 
     const/16 v1, 0x9
 
     new-array v1, v1, [F
 
-    .line 15
     iput-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMatrixValues:[F
 
-    .line 16
     new-instance v1, Landroid/graphics/Matrix;
 
     invoke-direct {v1}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMatrix:Landroid/graphics/Matrix;
 
-    .line 17
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationRect:Landroid/graphics/Rect;
 
-    .line 18
     new-instance v1, Landroid/graphics/Rect;
 
     invoke-direct {v1}, Landroid/graphics/Rect;-><init>()V
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationPreviousRect:Landroid/graphics/Rect;
 
-    .line 19
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v1
@@ -226,17 +205,14 @@
 
     iput v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mScale:F
 
-    .line 20
     iput-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
-    .line 21
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getController()Lorg/osmdroid/api/IMapController;
 
     move-result-object v1
 
     iput-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapController:Lorg/osmdroid/api/IMapController;
 
-    .line 22
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mCirclePaint:Landroid/graphics/Paint;
 
     const/16 v3, 0x64
@@ -245,17 +221,14 @@
 
     invoke-virtual {v1, v2, v3, v3, v4}, Landroid/graphics/Paint;->setARGB(IIII)V
 
-    .line 23
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mCirclePaint:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setAntiAlias(Z)V
 
-    .line 24
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mPaint:Landroid/graphics/Paint;
 
     invoke-virtual {v1, v0}, Landroid/graphics/Paint;->setFilterBitmap(Z)V
 
-    .line 25
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -276,7 +249,6 @@
 
     move-result-object v0
 
-    .line 26
     invoke-virtual {p2}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -297,10 +269,8 @@
 
     move-result-object p2
 
-    .line 27
     invoke-virtual {p0, v0, p2}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->setDirectionArrow(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
 
-    .line 28
     new-instance p2, Landroid/graphics/PointF;
 
     iget v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mScale:F
@@ -323,7 +293,6 @@
 
     iput-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mPersonHotspot:Landroid/graphics/PointF;
 
-    .line 29
     new-instance p2, Landroid/os/Handler;
 
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -334,7 +303,6 @@
 
     iput-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mHandler:Landroid/os/Handler;
 
-    .line 30
     invoke-virtual {p0, p1}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->setMyLocationProvider(Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;)V
 
     return-void
@@ -343,7 +311,6 @@
 .method static synthetic access$000(Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;)Ljava/util/LinkedList;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mRunOnFirstFix:Ljava/util/LinkedList;
 
     return-object p0
@@ -356,7 +323,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mIsFollowing:Z
 
     return-void
@@ -367,18 +333,14 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mIsLocationEnabled:Z
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->stopLocationProvider()V
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0}, Landroid/view/ViewGroup;->postInvalidate()V
 
     :cond_0
@@ -392,7 +354,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     iget-object p3, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mLocation:Landroid/location/Location;
 
@@ -404,7 +365,6 @@
 
     if-eqz p3, :cond_1
 
-    .line 2
     iget-object p3, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mLocation:Landroid/location/Location;
 
     invoke-virtual {p0, p1, p2, p3}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->drawMyLocation(Landroid/graphics/Canvas;Lorg/osmdroid/views/MapView;Landroid/location/Location;)V
@@ -416,39 +376,32 @@
 .method protected drawMyLocation(Landroid/graphics/Canvas;Lorg/osmdroid/views/MapView;Landroid/location/Location;)V
     .locals 8
 
-    .line 1
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsProjected:Landroid/graphics/Point;
 
     iget-object v2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
     invoke-virtual {v0, v1, v2}, Lorg/osmdroid/views/Projection;->toPixelsFromProjected(Landroid/graphics/Point;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 3
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDrawAccuracyEnabled:Z
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {p3}, Landroid/location/Location;->getAccuracy()F
 
     move-result v0
 
-    .line 5
     invoke-virtual {p3}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v1
 
-    .line 6
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getZoomLevel()I
 
     move-result v3
 
-    .line 7
     invoke-static {v1, v2, v3}, Lorg/osmdroid/util/TileSystem;->GroundResolution(DI)D
 
     move-result-wide v1
@@ -457,21 +410,18 @@
 
     div-float/2addr v0, v1
 
-    .line 8
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mCirclePaint:Landroid/graphics/Paint;
 
     const/16 v2, 0x32
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 9
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mCirclePaint:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 10
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
     iget v2, v1, Landroid/graphics/Point;->x:I
@@ -486,21 +436,18 @@
 
     invoke-virtual {p1, v2, v1, v0, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 11
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mCirclePaint:Landroid/graphics/Paint;
 
     const/16 v2, 0x96
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setAlpha(I)V
 
-    .line 12
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mCirclePaint:Landroid/graphics/Paint;
 
     sget-object v2, Landroid/graphics/Paint$Style;->STROKE:Landroid/graphics/Paint$Style;
 
     invoke-virtual {v1, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
-    .line 13
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
     iget v2, v1, Landroid/graphics/Point;->x:I
@@ -515,20 +462,17 @@
 
     invoke-virtual {p1, v2, v1, v0, v3}, Landroid/graphics/Canvas;->drawCircle(FFFLandroid/graphics/Paint;)V
 
-    .line 14
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMatrix:Landroid/graphics/Matrix;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->getMatrix(Landroid/graphics/Matrix;)V
 
-    .line 15
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMatrix:Landroid/graphics/Matrix;
 
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMatrixValues:[F
 
     invoke-virtual {v0, v1}, Landroid/graphics/Matrix;->getValues([F)V
 
-    .line 16
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -543,7 +487,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 17
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMatrixValues:[F
 
     const/4 v3, 0x2
@@ -562,7 +505,6 @@
 
     const/4 v5, 0x5
 
-    .line 18
     aget v5, v0, v5
 
     neg-float v5, v5
@@ -575,7 +517,6 @@
 
     div-float/2addr v5, v0
 
-    .line 19
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -602,7 +543,6 @@
 
     invoke-virtual {p1, v0, v3, v6, v7}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 20
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -627,7 +567,6 @@
 
     invoke-virtual {p1, v0, v3, v4, v6}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 21
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -654,7 +593,6 @@
 
     invoke-virtual {p1, v0, v3, v4, v6}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 22
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -681,7 +619,6 @@
 
     invoke-virtual {p1, v0, v3, v5, v4}, Landroid/graphics/Canvas;->drawText(Ljava/lang/String;FFLandroid/graphics/Paint;)V
 
-    .line 23
     :cond_1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMatrixValues:[F
 
@@ -709,7 +646,6 @@
 
     double-to-float v0, v2
 
-    .line 24
     iget-object v2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMatrixValues:[F
 
     aget v3, v2, v1
@@ -736,7 +672,6 @@
 
     double-to-float v1, v1
 
-    .line 25
     invoke-virtual {p3}, Landroid/location/Location;->hasBearing()Z
 
     move-result v2
@@ -745,13 +680,10 @@
 
     if-eqz v2, :cond_3
 
-    .line 26
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 27
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getMapOrientation()F
 
-    .line 28
     invoke-virtual {p3}, Landroid/location/Location;->getBearing()F
 
     move-result p2
@@ -764,7 +696,6 @@
 
     sub-float/2addr p2, p3
 
-    .line 29
     :cond_2
     iget-object p3, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
@@ -782,7 +713,6 @@
 
     div-float/2addr v3, v1
 
-    .line 30
     iget-object p3, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
     iget v0, p3, Landroid/graphics/Point;->x:I
@@ -795,7 +725,6 @@
 
     invoke-virtual {p1, p2, v3, v0, p3}, Landroid/graphics/Canvas;->scale(FFFF)V
 
-    .line 31
     iget-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDirectionArrowBitmap:Landroid/graphics/Bitmap;
 
     iget-object p3, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
@@ -820,16 +749,13 @@
 
     invoke-virtual {p1, p2, v0, p3, v1}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 32
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     goto :goto_0
 
-    .line 33
     :cond_3
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
-    .line 34
     iget-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getMapOrientation()F
@@ -854,7 +780,6 @@
 
     div-float/2addr v3, v1
 
-    .line 35
     iget-object p3, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
     iget v0, p3, Landroid/graphics/Point;->x:I
@@ -867,7 +792,6 @@
 
     invoke-virtual {p1, p2, v3, v0, p3}, Landroid/graphics/Canvas;->scale(FFFF)V
 
-    .line 36
     iget-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mPersonBitmap:Landroid/graphics/Bitmap;
 
     iget-object p3, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
@@ -894,7 +818,6 @@
 
     invoke-virtual {p1, p2, v0, p3, v1}, Landroid/graphics/Canvas;->drawBitmap(Landroid/graphics/Bitmap;FFLandroid/graphics/Paint;)V
 
-    .line 37
     invoke-virtual {p1}, Landroid/graphics/Canvas;->restore()V
 
     :goto_0
@@ -906,17 +829,14 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mIsFollowing:Z
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->isMyLocationEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationProvider:Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
 
     invoke-interface {v0}, Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;->getLastKnownLocation()Landroid/location/Location;
@@ -925,16 +845,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->setLocation(Landroid/location/Location;)V
 
-    .line 5
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
     if-eqz v0, :cond_1
 
-    .line 6
     invoke-virtual {v0}, Landroid/view/ViewGroup;->postInvalidate()V
 
     :cond_1
@@ -944,7 +861,6 @@
 .method public enableMyLocation()Z
     .locals 1
 
-    .line 8
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationProvider:Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
 
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->enableMyLocation(Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;)Z
@@ -957,22 +873,18 @@
 .method public enableMyLocation(Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;)Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0, p1}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->setMyLocationProvider(Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;)V
 
-    .line 2
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationProvider:Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
 
     invoke-interface {p1, p0}, Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;->startLocationProvider(Lorg/osmdroid/views/overlay/mylocation/IMyLocationConsumer;)Z
 
     move-result p1
 
-    .line 3
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mIsLocationEnabled:Z
 
     if-eqz p1, :cond_0
 
-    .line 4
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationProvider:Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
 
     invoke-interface {v0}, Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;->getLastKnownLocation()Landroid/location/Location;
@@ -981,16 +893,13 @@
 
     if-eqz v0, :cond_0
 
-    .line 5
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->setLocation(Landroid/location/Location;)V
 
-    .line 6
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
     if-eqz v0, :cond_1
 
-    .line 7
     invoke-virtual {v0}, Landroid/view/ViewGroup;->postInvalidate()V
 
     :cond_1
@@ -1000,7 +909,6 @@
 .method public getEnableAutoStop()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->enableAutoStop:Z
 
     return v0
@@ -1009,7 +917,6 @@
 .method public getLastFix()Landroid/location/Location;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mLocation:Landroid/location/Location;
 
     return-object v0
@@ -1018,7 +925,6 @@
 .method public getMyLocation()Lorg/osmdroid/util/GeoPoint;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mLocation:Landroid/location/Location;
 
     if-nez v0, :cond_0
@@ -1027,7 +933,6 @@
 
     return-object v0
 
-    .line 2
     :cond_0
     new-instance v0, Lorg/osmdroid/util/GeoPoint;
 
@@ -1043,12 +948,10 @@
 
     if-nez p3, :cond_0
 
-    .line 1
     new-instance p3, Landroid/graphics/Rect;
 
     invoke-direct {p3}, Landroid/graphics/Rect;-><init>()V
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1056,21 +959,18 @@
 
     move-result-object v0
 
-    .line 3
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsProjected:Landroid/graphics/Point;
 
     iget-object v2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
     invoke-virtual {v0, v1, v2}, Lorg/osmdroid/views/Projection;->toPixelsFromProjected(Landroid/graphics/Point;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 4
     invoke-virtual {p2}, Landroid/location/Location;->hasBearing()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 5
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDirectionArrowBitmap:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
@@ -1079,12 +979,10 @@
 
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDirectionArrowBitmap:Landroid/graphics/Bitmap;
 
-    .line 6
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->getHeight()I
 
     move-result v1
 
-    .line 7
     invoke-static {v0, v1}, Ljava/lang/Math;->max(II)I
 
     move-result v0
@@ -1093,21 +991,18 @@
 
     const-wide/high16 v2, 0x4000000000000000L    # 2.0
 
-    .line 8
     invoke-static {v2, v3}, Ljava/lang/Math;->sqrt(D)D
 
     move-result-wide v2
 
     mul-double v0, v0, v2
 
-    .line 9
     invoke-static {v0, v1}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide v0
 
     double-to-int v0, v0
 
-    .line 10
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
     iget v2, v1, Landroid/graphics/Point;->x:I
@@ -1122,14 +1017,12 @@
 
     neg-int v0, v0
 
-    .line 11
     div-int/lit8 v0, v0, 0x2
 
     invoke-virtual {p3, v0, v0}, Landroid/graphics/Rect;->offset(II)V
 
     goto :goto_0
 
-    .line 12
     :cond_1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
@@ -1139,7 +1032,6 @@
 
     iget-object v2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mPersonBitmap:Landroid/graphics/Bitmap;
 
-    .line 13
     invoke-virtual {v2}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result v2
@@ -1158,10 +1050,8 @@
 
     add-int/2addr v3, v4
 
-    .line 14
     invoke-virtual {p3, v1, v0, v2, v3}, Landroid/graphics/Rect;->set(IIII)V
 
-    .line 15
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mPersonHotspot:Landroid/graphics/PointF;
 
     iget v1, v0, Landroid/graphics/PointF;->x:F
@@ -1184,18 +1074,15 @@
 
     invoke-virtual {p3, v1, v0}, Landroid/graphics/Rect;->offset(II)V
 
-    .line 16
     :goto_0
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDrawAccuracyEnabled:Z
 
     if-eqz v0, :cond_3
 
-    .line 17
     invoke-virtual {p2}, Landroid/location/Location;->getAccuracy()F
 
     move-result v0
 
-    .line 18
     invoke-virtual {p2}, Landroid/location/Location;->getLatitude()D
 
     move-result-wide v1
@@ -1210,14 +1097,12 @@
 
     float-to-double p1, v0
 
-    .line 19
     invoke-static {p1, p2}, Ljava/lang/Math;->ceil(D)D
 
     move-result-wide p1
 
     double-to-int p1, p1
 
-    .line 20
     iget-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
     iget v0, p2, Landroid/graphics/Point;->x:I
@@ -1234,7 +1119,6 @@
 
     invoke-virtual {p3, v1, v2, v0, p2}, Landroid/graphics/Rect;->union(IIII)V
 
-    .line 21
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mCirclePaint:Landroid/graphics/Paint;
 
     invoke-virtual {p1}, Landroid/graphics/Paint;->getStrokeWidth()F
@@ -1254,14 +1138,12 @@
     :cond_2
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mCirclePaint:Landroid/graphics/Paint;
 
-    .line 22
     invoke-virtual {p1}, Landroid/graphics/Paint;->getStrokeWidth()F
 
     move-result p1
 
     float-to-double p1, p1
 
-    .line 23
     :goto_1
     invoke-static {p1, p2}, Ljava/lang/Math;->ceil(D)D
 
@@ -1271,7 +1153,6 @@
 
     neg-int p1, p1
 
-    .line 24
     invoke-virtual {p3, p1, p1}, Landroid/graphics/Rect;->inset(II)V
 
     :cond_3
@@ -1281,7 +1162,6 @@
 .method public getMyLocationProvider()Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationProvider:Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
 
     return-object v0
@@ -1290,7 +1170,6 @@
 .method public isDrawAccuracyEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDrawAccuracyEnabled:Z
 
     return v0
@@ -1299,7 +1178,6 @@
 .method public isFollowLocationEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mIsFollowing:Z
 
     return v0
@@ -1308,7 +1186,6 @@
 .method public isMyLocationEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mIsLocationEnabled:Z
 
     return v0
@@ -1317,7 +1194,6 @@
 .method public isOptionsMenuEnabled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mOptionsMenuEnabled:Z
 
     return v0
@@ -1326,12 +1202,10 @@
 .method public onCreateOptionsMenu(Landroid/view/Menu;ILorg/osmdroid/views/MapView;)Z
     .locals 2
 
-    .line 1
     sget v0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->MENU_MY_LOCATION:I
 
     add-int/2addr v0, p2
 
-    .line 2
     invoke-virtual {p3}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -1348,12 +1222,10 @@
 
     const/4 v1, 0x0
 
-    .line 3
     invoke-interface {p1, v1, v0, v1, p2}, Landroid/view/Menu;->add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
 
     move-result-object p1
 
-    .line 4
     invoke-virtual {p3}, Landroid/view/ViewGroup;->getContext()Landroid/content/Context;
 
     move-result-object p2
@@ -1368,14 +1240,12 @@
 
     move-result-object p2
 
-    .line 5
     invoke-interface {p1, p2}, Landroid/view/MenuItem;->setIcon(Landroid/graphics/drawable/Drawable;)Landroid/view/MenuItem;
 
     move-result-object p1
 
     const/4 p2, 0x1
 
-    .line 6
     invoke-interface {p1, p2}, Landroid/view/MenuItem;->setCheckable(Z)Landroid/view/MenuItem;
 
     return p2
@@ -1384,51 +1254,37 @@
 .method public onDetach(Lorg/osmdroid/views/MapView;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->disableMyLocation()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
-    .line 3
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapController:Lorg/osmdroid/api/IMapController;
 
-    .line 4
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mHandler:Landroid/os/Handler;
 
-    .line 5
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMatrix:Landroid/graphics/Matrix;
 
-    .line 6
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mCirclePaint:Landroid/graphics/Paint;
 
-    .line 7
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mHandlerToken:Ljava/lang/Object;
 
-    .line 8
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mLocation:Landroid/location/Location;
 
-    .line 9
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapController:Lorg/osmdroid/api/IMapController;
 
-    .line 10
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationPreviousRect:Landroid/graphics/Rect;
 
-    .line 11
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationProvider:Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
 
     if-eqz v1, :cond_0
 
-    .line 12
     invoke-interface {v1}, Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;->destroy()V
 
-    .line 13
     :cond_0
     iput-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationProvider:Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
 
-    .line 14
     invoke-super {p0, p1}, Lorg/osmdroid/views/overlay/Overlay;->onDetach(Lorg/osmdroid/views/MapView;)V
 
     return-void
@@ -1439,12 +1295,10 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mHandler:Landroid/os/Handler;
 
     if-eqz p2, :cond_0
 
-    .line 2
     new-instance v0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay$1;
 
     invoke-direct {v0, p0, p1}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay$1;-><init>(Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;Landroid/location/Location;)V
@@ -1462,38 +1316,31 @@
 .method public onOptionsItemSelected(Landroid/view/MenuItem;ILorg/osmdroid/views/MapView;)Z
     .locals 0
 
-    .line 1
     invoke-interface {p1}, Landroid/view/MenuItem;->getItemId()I
 
     move-result p1
 
     sub-int/2addr p1, p2
 
-    .line 2
     sget p2, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->MENU_MY_LOCATION:I
 
     if-ne p1, p2, :cond_1
 
-    .line 3
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->isMyLocationEnabled()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 4
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->disableFollowLocation()V
 
-    .line 5
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->disableMyLocation()V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->enableFollowLocation()V
 
-    .line 7
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->enableMyLocation()Z
 
     :goto_0
@@ -1510,7 +1357,6 @@
 .method public onPrepareOptionsMenu(Landroid/view/Menu;ILorg/osmdroid/views/MapView;)Z
     .locals 0
 
-    .line 1
     sget p3, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->MENU_MY_LOCATION:I
 
     add-int/2addr p3, p2
@@ -1533,47 +1379,40 @@
 .method public onSnapToItem(IILandroid/graphics/Point;Lorg/osmdroid/api/IMapView;)Z
     .locals 3
 
-    .line 1
     iget-object p4, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mLocation:Landroid/location/Location;
 
     const/4 v0, 0x0
 
     if-eqz p4, :cond_1
 
-    .line 2
     iget-object p4, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p4}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object p4
 
-    .line 3
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsProjected:Landroid/graphics/Point;
 
     iget-object v2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
     invoke-virtual {p4, v1, v2}, Lorg/osmdroid/views/Projection;->toPixelsFromProjected(Landroid/graphics/Point;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 4
     iget-object p4, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsTranslated:Landroid/graphics/Point;
 
     iget v1, p4, Landroid/graphics/Point;->x:I
 
     iput v1, p3, Landroid/graphics/Point;->x:I
 
-    .line 5
     iget v1, p4, Landroid/graphics/Point;->y:I
 
     iput v1, p3, Landroid/graphics/Point;->y:I
 
-    .line 6
     iget p3, p4, Landroid/graphics/Point;->x:I
 
     sub-int/2addr p1, p3
 
     int-to-double v1, p1
 
-    .line 7
     iget p1, p4, Landroid/graphics/Point;->y:I
 
     sub-int/2addr p2, p1
@@ -1594,7 +1433,6 @@
 
     const/4 v0, 0x1
 
-    .line 8
     :cond_0
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
@@ -1606,7 +1444,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 9
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -1632,7 +1469,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
@@ -1641,12 +1477,10 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 2
     iget-boolean v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->enableAutoStop:Z
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->disableFollowLocation()V
 
     goto :goto_0
@@ -1656,7 +1490,6 @@
 
     return p1
 
-    .line 4
     :cond_1
     :goto_0
     invoke-super {p0, p1, p2}, Lorg/osmdroid/views/overlay/Overlay;->onTouchEvent(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
@@ -1669,7 +1502,6 @@
 .method public runOnFirstFix(Ljava/lang/Runnable;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationProvider:Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
 
     if-eqz v0, :cond_0
@@ -1678,7 +1510,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     new-instance v0, Ljava/lang/Thread;
 
     invoke-direct {v0, p1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
@@ -1689,7 +1520,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mRunOnFirstFix:Ljava/util/LinkedList;
 
@@ -1703,13 +1533,10 @@
 .method public setDirectionArrow(Landroid/graphics/Bitmap;Landroid/graphics/Bitmap;)V
     .locals 1
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mPersonBitmap:Landroid/graphics/Bitmap;
 
-    .line 2
     iput-object p2, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDirectionArrowBitmap:Landroid/graphics/Bitmap;
 
-    .line 3
     invoke-virtual {p2}, Landroid/graphics/Bitmap;->getWidth()I
 
     move-result p1
@@ -1726,7 +1553,6 @@
 
     iput p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDirectionArrowCenterX:F
 
-    .line 4
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDirectionArrowBitmap:Landroid/graphics/Bitmap;
 
     invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
@@ -1747,7 +1573,6 @@
 .method public setDrawAccuracyEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mDrawAccuracyEnabled:Z
 
     return-void
@@ -1756,7 +1581,6 @@
 .method public setEnableAutoStop(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->enableAutoStop:Z
 
     return-void
@@ -1765,12 +1589,10 @@
 .method protected setLocation(Landroid/location/Location;)V
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mLocation:Landroid/location/Location;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v1}, Lorg/osmdroid/views/MapView;->getZoomLevel()I
@@ -1781,11 +1603,9 @@
 
     invoke-virtual {p0, v1, v0, v2}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->getMyLocationDrawingBounds(ILandroid/location/Location;Landroid/graphics/Rect;)Landroid/graphics/Rect;
 
-    .line 3
     :cond_0
     iput-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mLocation:Landroid/location/Location;
 
-    .line 4
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {p1}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
@@ -1800,22 +1620,18 @@
 
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mLocation:Landroid/location/Location;
 
-    .line 5
     invoke-virtual {p1}, Landroid/location/Location;->getLongitude()D
 
     move-result-wide v4
 
     iget-object v6, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapCoordsProjected:Landroid/graphics/Point;
 
-    .line 6
     invoke-virtual/range {v1 .. v6}, Lorg/osmdroid/views/Projection;->toProjectedPixels(DDLandroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 7
     iget-boolean p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mIsFollowing:Z
 
     if-eqz p1, :cond_1
 
-    .line 8
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mGeoPoint:Lorg/osmdroid/util/GeoPoint;
 
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mLocation:Landroid/location/Location;
@@ -1826,7 +1642,6 @@
 
     invoke-virtual {p1, v0, v1}, Lorg/osmdroid/util/GeoPoint;->setLatitude(D)V
 
-    .line 9
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mGeoPoint:Lorg/osmdroid/util/GeoPoint;
 
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mLocation:Landroid/location/Location;
@@ -1837,7 +1652,6 @@
 
     invoke-virtual {p1, v0, v1}, Lorg/osmdroid/util/GeoPoint;->setLongitude(D)V
 
-    .line 10
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapController:Lorg/osmdroid/api/IMapController;
 
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mGeoPoint:Lorg/osmdroid/util/GeoPoint;
@@ -1846,7 +1660,6 @@
 
     goto :goto_0
 
-    .line 11
     :cond_1
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
@@ -1862,29 +1675,23 @@
 
     if-eqz v0, :cond_2
 
-    .line 12
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationRect:Landroid/graphics/Rect;
 
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationPreviousRect:Landroid/graphics/Rect;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Rect;->union(Landroid/graphics/Rect;)V
 
-    .line 13
     :cond_2
     iget-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationRect:Landroid/graphics/Rect;
 
     iget v0, p1, Landroid/graphics/Rect;->left:I
 
-    .line 14
     iget v1, p1, Landroid/graphics/Rect;->top:I
 
-    .line 15
     iget v2, p1, Landroid/graphics/Rect;->right:I
 
-    .line 16
     iget p1, p1, Landroid/graphics/Rect;->bottom:I
 
-    .line 17
     iget-object v3, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMapView:Lorg/osmdroid/views/MapView;
 
     invoke-virtual {v3, v0, v1, v2, p1}, Lorg/osmdroid/views/MapView;->invalidateMapCoordinates(IIII)V
@@ -1898,23 +1705,19 @@
 
     if-eqz p1, :cond_1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->isMyLocationEnabled()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->stopLocationProvider()V
 
-    .line 3
     :cond_0
     iput-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationProvider:Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
 
     return-void
 
-    .line 4
     :cond_1
     new-instance p1, Ljava/lang/RuntimeException;
 
@@ -1928,7 +1731,6 @@
 .method public setOptionsMenuEnabled(Z)V
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mOptionsMenuEnabled:Z
 
     return-void
@@ -1937,7 +1739,6 @@
 .method public setPersonHotspot(FF)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mPersonHotspot:Landroid/graphics/PointF;
 
     invoke-virtual {v0, p1, p2}, Landroid/graphics/PointF;->set(FF)V
@@ -1948,7 +1749,6 @@
 .method public setPersonIcon(Landroid/graphics/Bitmap;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mPersonBitmap:Landroid/graphics/Bitmap;
 
     return-void
@@ -1957,15 +1757,12 @@
 .method protected stopLocationProvider()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mMyLocationProvider:Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lorg/osmdroid/views/overlay/mylocation/IMyLocationProvider;->stopLocationProvider()V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lorg/osmdroid/views/overlay/mylocation/MyLocationNewOverlay;->mHandler:Landroid/os/Handler;
 
@@ -1975,7 +1772,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 4
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeCallbacksAndMessages(Ljava/lang/Object;)V
 
     :cond_1

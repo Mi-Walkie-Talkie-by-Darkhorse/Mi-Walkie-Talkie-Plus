@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/ForwardingSortedMap;
 .super Lcom/google/common/collect/ForwardingMap;
-.source "ForwardingSortedMap.java"
 
 # interfaces
 .implements Ljava/util/SortedMap;
@@ -35,7 +34,6 @@
 .method protected constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ForwardingMap;-><init>()V
 
     return-void
@@ -44,14 +42,12 @@
 .method private unsafeCompare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMap;->comparator()Ljava/util/Comparator;
 
     move-result-object v0
 
     if-nez v0, :cond_0
 
-    .line 2
     check-cast p1, Ljava/lang/Comparable;
 
     invoke-interface {p1, p2}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
@@ -60,7 +56,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     invoke-interface {v0, p1, p2}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
@@ -81,7 +76,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMap;->delegate()Ljava/util/SortedMap;
 
     move-result-object v0
@@ -96,7 +90,6 @@
 .method protected bridge synthetic delegate()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMap;->delegate()Ljava/util/SortedMap;
 
     move-result-object v0
@@ -107,7 +100,6 @@
 .method protected bridge synthetic delegate()Ljava/util/Map;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMap;->delegate()Ljava/util/SortedMap;
 
     move-result-object v0
@@ -133,7 +125,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMap;->delegate()Ljava/util/SortedMap;
 
     move-result-object v0
@@ -155,7 +146,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMap;->delegate()Ljava/util/SortedMap;
 
     move-result-object v0
@@ -175,7 +165,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMap;->delegate()Ljava/util/SortedMap;
 
     move-result-object v0
@@ -198,7 +187,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-interface {p0, p1}, Ljava/util/SortedMap;->tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;
 
@@ -208,7 +196,6 @@
 
     move-result-object v1
 
-    .line 2
     invoke-direct {p0, v1, p1}, Lcom/google/common/collect/ForwardingSortedMap;->unsafeCompare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result p1
@@ -239,7 +226,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/common/collect/ForwardingSortedMap;->unsafeCompare(Ljava/lang/Object;Ljava/lang/Object;)I
 
     move-result v0
@@ -258,7 +244,6 @@
 
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ForwardingSortedMap;->tailMap(Ljava/lang/Object;)Ljava/util/SortedMap;
 
     move-result-object p1
@@ -280,7 +265,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMap;->delegate()Ljava/util/SortedMap;
 
     move-result-object v0
@@ -302,7 +286,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ForwardingSortedMap;->delegate()Ljava/util/SortedMap;
 
     move-result-object v0

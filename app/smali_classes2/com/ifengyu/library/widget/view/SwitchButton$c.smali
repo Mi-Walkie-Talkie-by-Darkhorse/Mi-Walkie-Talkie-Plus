@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/library/widget/view/SwitchButton$c;
 .super Ljava/lang/Object;
-.source "SwitchButton.java"
 
 # interfaces
 .implements Landroid/animation/Animator$AnimatorListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/library/widget/view/SwitchButton;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -44,7 +42,6 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 3
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-static {p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->i(Lcom/ifengyu/library/widget/view/SwitchButton;)I
@@ -71,7 +68,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
@@ -83,55 +79,46 @@
 
     invoke-static {p1, v0}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Lcom/ifengyu/library/widget/view/SwitchButton;Z)Z
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-static {p1, v1}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Lcom/ifengyu/library/widget/view/SwitchButton;I)I
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-virtual {p1}, Landroid/view/View;->postInvalidate()V
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-static {p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->f(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     goto :goto_0
 
-    .line 6
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-static {p1, v1}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Lcom/ifengyu/library/widget/view/SwitchButton;I)I
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-virtual {p1}, Landroid/view/View;->postInvalidate()V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-static {p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->f(Lcom/ifengyu/library/widget/view/SwitchButton;)V
 
     goto :goto_0
 
-    .line 9
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-static {p1, v1}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Lcom/ifengyu/library/widget/view/SwitchButton;I)I
 
-    .line 10
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-virtual {p1}, Landroid/view/View;->postInvalidate()V
 
     goto :goto_0
 
-    .line 11
     :cond_3
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
@@ -139,7 +126,6 @@
 
     invoke-static {p1, v0}, Lcom/ifengyu/library/widget/view/SwitchButton;->a(Lcom/ifengyu/library/widget/view/SwitchButton;I)I
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-static {p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->j(Lcom/ifengyu/library/widget/view/SwitchButton;)Lcom/ifengyu/library/widget/view/SwitchButton$e;
@@ -148,7 +134,6 @@
 
     iput v1, p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;->c:I
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-static {p1}, Lcom/ifengyu/library/widget/view/SwitchButton;->j(Lcom/ifengyu/library/widget/view/SwitchButton;)Lcom/ifengyu/library/widget/view/SwitchButton$e;
@@ -163,7 +148,6 @@
 
     iput v0, p1, Lcom/ifengyu/library/widget/view/SwitchButton$e;->d:F
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/SwitchButton$c;->a:Lcom/ifengyu/library/widget/view/SwitchButton;
 
     invoke-virtual {p1}, Landroid/view/View;->postInvalidate()V

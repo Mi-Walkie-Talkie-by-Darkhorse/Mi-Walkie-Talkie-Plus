@@ -1,6 +1,5 @@
 .class Lcom/google/protobuf/RopeByteString;
 .super Lcom/google/protobuf/ByteString;
-.source "RopeByteString.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -48,7 +46,6 @@
     :goto_0
     if-lez v1, :cond_0
 
-    .line 2
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v3
@@ -68,14 +65,12 @@
     :cond_0
     const v1, 0x7fffffff
 
-    .line 3
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 4
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -86,7 +81,6 @@
 
     const/4 v1, 0x0
 
-    .line 5
     :goto_1
     sget-object v2, Lcom/google/protobuf/RopeByteString;->minLengthByDepth:[I
 
@@ -94,7 +88,6 @@
 
     if-ge v1, v3, :cond_1
 
-    .line 6
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -118,28 +111,22 @@
 .method private constructor <init>(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;)V
     .locals 2
 
-    .line 2
     invoke-direct {p0}, Lcom/google/protobuf/ByteString;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 3
     iput v0, p0, Lcom/google/protobuf/RopeByteString;->hash:I
 
-    .line 4
     iput-object p1, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
-    .line 5
     iput-object p2, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
-    .line 6
     invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->size()I
 
     move-result v0
 
     iput v0, p0, Lcom/google/protobuf/RopeByteString;->leftLength:I
 
-    .line 7
     invoke-virtual {p2}, Lcom/google/protobuf/ByteString;->size()I
 
     move-result v1
@@ -148,7 +135,6 @@
 
     iput v0, p0, Lcom/google/protobuf/RopeByteString;->totalLength:I
 
-    .line 8
     invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->getTreeDepth()I
 
     move-result p1
@@ -171,7 +157,6 @@
 .method synthetic constructor <init>(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;Lcom/google/protobuf/RopeByteString$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/google/protobuf/RopeByteString;-><init>(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;)V
 
     return-void
@@ -180,7 +165,6 @@
 .method static synthetic access$400(Lcom/google/protobuf/RopeByteString;)Lcom/google/protobuf/ByteString;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     return-object p0
@@ -189,7 +173,6 @@
 .method static synthetic access$500(Lcom/google/protobuf/RopeByteString;)Lcom/google/protobuf/ByteString;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     return-object p0
@@ -198,7 +181,6 @@
 .method static synthetic access$600()[I
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/protobuf/RopeByteString;->minLengthByDepth:[I
 
     return-object v0
@@ -207,7 +189,6 @@
 .method static concatenate(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/ByteString;
     .locals 6
 
-    .line 1
     instance-of v0, p0, Lcom/google/protobuf/RopeByteString;
 
     const/4 v1, 0x0
@@ -223,7 +204,6 @@
     :cond_0
     move-object v0, v1
 
-    .line 2
     :goto_0
     invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->size()I
 
@@ -233,7 +213,6 @@
 
     goto/16 :goto_2
 
-    .line 3
     :cond_1
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->size()I
 
@@ -246,7 +225,6 @@
 
     goto/16 :goto_2
 
-    .line 4
     :cond_2
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->size()I
 
@@ -262,7 +240,6 @@
 
     if-ge v2, v3, :cond_3
 
-    .line 5
     invoke-static {p0, p1}, Lcom/google/protobuf/RopeByteString;->concatenateBytes(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/LiteralByteString;
 
     move-result-object p0
@@ -272,7 +249,6 @@
     :cond_3
     if-eqz v0, :cond_4
 
-    .line 6
     iget-object v4, v0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v4}, Lcom/google/protobuf/ByteString;->size()I
@@ -287,14 +263,12 @@
 
     if-ge v4, v3, :cond_4
 
-    .line 7
     iget-object p0, v0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     invoke-static {p0, p1}, Lcom/google/protobuf/RopeByteString;->concatenateBytes(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/LiteralByteString;
 
     move-result-object p0
 
-    .line 8
     new-instance p1, Lcom/google/protobuf/RopeByteString;
 
     iget-object v0, v0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
@@ -306,7 +280,6 @@
     :cond_4
     if-eqz v0, :cond_5
 
-    .line 9
     iget-object v3, v0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v3}, Lcom/google/protobuf/ByteString;->getTreeDepth()I
@@ -331,14 +304,12 @@
 
     if-le v3, v4, :cond_5
 
-    .line 10
     new-instance p0, Lcom/google/protobuf/RopeByteString;
 
     iget-object v1, v0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     invoke-direct {p0, v1, p1}, Lcom/google/protobuf/RopeByteString;-><init>(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;)V
 
-    .line 11
     new-instance p1, Lcom/google/protobuf/RopeByteString;
 
     iget-object v0, v0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
@@ -347,7 +318,6 @@
 
     goto :goto_1
 
-    .line 12
     :cond_5
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->getTreeDepth()I
 
@@ -363,14 +333,12 @@
 
     add-int/lit8 v0, v0, 0x1
 
-    .line 13
     sget-object v3, Lcom/google/protobuf/RopeByteString;->minLengthByDepth:[I
 
     aget v0, v3, v0
 
     if-lt v2, v0, :cond_6
 
-    .line 14
     new-instance v0, Lcom/google/protobuf/RopeByteString;
 
     invoke-direct {v0, p0, p1}, Lcom/google/protobuf/RopeByteString;-><init>(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;)V
@@ -379,7 +347,6 @@
 
     goto :goto_2
 
-    .line 15
     :cond_6
     new-instance v0, Lcom/google/protobuf/RopeByteString$Balancer;
 
@@ -396,30 +363,24 @@
 .method private static concatenateBytes(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/LiteralByteString;
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->size()I
 
     move-result v0
 
-    .line 2
     invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->size()I
 
     move-result v1
 
     add-int v2, v0, v1
 
-    .line 3
     new-array v2, v2, [B
 
     const/4 v3, 0x0
 
-    .line 4
     invoke-virtual {p0, v2, v3, v3, v0}, Lcom/google/protobuf/ByteString;->copyTo([BIII)V
 
-    .line 5
     invoke-virtual {p1, v2, v3, v0, v1}, Lcom/google/protobuf/ByteString;->copyTo([BIII)V
 
-    .line 6
     new-instance p0, Lcom/google/protobuf/LiteralByteString;
 
     invoke-direct {p0, v2}, Lcom/google/protobuf/LiteralByteString;-><init>([B)V
@@ -430,26 +391,22 @@
 .method private equalsFragments(Lcom/google/protobuf/ByteString;)Z
     .locals 11
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/RopeByteString$PieceIterator;
 
     const/4 v1, 0x0
 
     invoke-direct {v0, p0, v1}, Lcom/google/protobuf/RopeByteString$PieceIterator;-><init>(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/RopeByteString$1;)V
 
-    .line 2
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/google/protobuf/LiteralByteString;
 
-    .line 3
     new-instance v3, Lcom/google/protobuf/RopeByteString$PieceIterator;
 
     invoke-direct {v3, p1, v1}, Lcom/google/protobuf/RopeByteString$PieceIterator;-><init>(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/RopeByteString$1;)V
 
-    .line 4
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object p1
@@ -464,7 +421,6 @@
 
     const/4 v6, 0x0
 
-    .line 5
     :goto_0
     invoke-virtual {v2}, Lcom/google/protobuf/LiteralByteString;->size()I
 
@@ -472,21 +428,18 @@
 
     sub-int/2addr v7, v4
 
-    .line 6
     invoke-virtual {p1}, Lcom/google/protobuf/LiteralByteString;->size()I
 
     move-result v8
 
     sub-int/2addr v8, v5
 
-    .line 7
     invoke-static {v7, v8}, Ljava/lang/Math;->min(II)I
 
     move-result v9
 
     if-nez v4, :cond_0
 
-    .line 8
     invoke-virtual {v2, p1, v5, v9}, Lcom/google/protobuf/LiteralByteString;->equalsRange(Lcom/google/protobuf/LiteralByteString;II)Z
 
     move-result v10
@@ -506,7 +459,6 @@
     :cond_1
     add-int/2addr v6, v9
 
-    .line 9
     iget v10, p0, Lcom/google/protobuf/RopeByteString;->totalLength:I
 
     if-lt v6, v10, :cond_3
@@ -517,7 +469,6 @@
 
     return p1
 
-    .line 10
     :cond_2
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -528,7 +479,6 @@
     :cond_3
     if-ne v9, v7, :cond_4
 
-    .line 11
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
@@ -545,7 +495,6 @@
     :goto_2
     if-ne v9, v8, :cond_5
 
-    .line 12
     invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object p1
@@ -565,7 +514,6 @@
 .method static newInstanceForTest(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;)Lcom/google/protobuf/RopeByteString;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/RopeByteString;
 
     invoke-direct {v0, p0, p1}, Lcom/google/protobuf/RopeByteString;-><init>(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;)V
@@ -578,7 +526,6 @@
 .method public asReadOnlyByteBuffer()Ljava/nio/ByteBuffer;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->toByteArray()[B
 
     move-result-object v0
@@ -587,7 +534,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->asReadOnlyBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v0
@@ -606,19 +552,16 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     new-instance v1, Lcom/google/protobuf/RopeByteString$PieceIterator;
 
     const/4 v2, 0x0
 
     invoke-direct {v1, p0, v2}, Lcom/google/protobuf/RopeByteString$PieceIterator;-><init>(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/RopeByteString$1;)V
 
-    .line 3
     :goto_0
     invoke-virtual {v1}, Lcom/google/protobuf/RopeByteString$PieceIterator;->hasNext()Z
 
@@ -626,12 +569,10 @@
 
     if-eqz v2, :cond_0
 
-    .line 4
     invoke-virtual {v1}, Lcom/google/protobuf/RopeByteString$PieceIterator;->next()Lcom/google/protobuf/LiteralByteString;
 
     move-result-object v2
 
-    .line 5
     invoke-virtual {v2}, Lcom/google/protobuf/LiteralByteString;->asReadOnlyByteBuffer()Ljava/nio/ByteBuffer;
 
     move-result-object v2
@@ -649,17 +590,14 @@
 
     if-ltz p1, :cond_2
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/RopeByteString;->totalLength:I
 
     if-gt p1, v0, :cond_1
 
-    .line 2
     iget v0, p0, Lcom/google/protobuf/RopeByteString;->leftLength:I
 
     if-ge p1, v0, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1}, Lcom/google/protobuf/ByteString;->byteAt(I)B
@@ -668,7 +606,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v1, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
@@ -681,7 +618,6 @@
     :goto_0
     return p1
 
-    .line 5
     :cond_1
     new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
@@ -713,7 +649,6 @@
 
     throw v0
 
-    .line 6
     :cond_2
     new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
 
@@ -741,12 +676,10 @@
 .method public copyTo(Ljava/nio/ByteBuffer;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1}, Lcom/google/protobuf/ByteString;->copyTo(Ljava/nio/ByteBuffer;)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1}, Lcom/google/protobuf/ByteString;->copyTo(Ljava/nio/ByteBuffer;)V
@@ -759,12 +692,10 @@
 
     add-int v0, p2, p4
 
-    .line 1
     iget v1, p0, Lcom/google/protobuf/RopeByteString;->leftLength:I
 
     if-gt v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1, p2, p3, p4}, Lcom/google/protobuf/ByteString;->copyToInternal([BIII)V
@@ -774,7 +705,6 @@
     :cond_0
     if-lt p2, v1, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     sub-int/2addr p2, v1
@@ -786,12 +716,10 @@
     :cond_1
     sub-int/2addr v1, p2
 
-    .line 4
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1, p2, p3, v1}, Lcom/google/protobuf/ByteString;->copyToInternal([BIII)V
 
-    .line 5
     iget-object p2, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     const/4 v0, 0x0
@@ -815,7 +743,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     instance-of v1, p1, Lcom/google/protobuf/ByteString;
 
@@ -825,11 +752,9 @@
 
     return v2
 
-    .line 2
     :cond_1
     check-cast p1, Lcom/google/protobuf/ByteString;
 
-    .line 3
     iget v1, p0, Lcom/google/protobuf/RopeByteString;->totalLength:I
 
     invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->size()I
@@ -840,7 +765,6 @@
 
     return v2
 
-    .line 4
     :cond_2
     iget v1, p0, Lcom/google/protobuf/RopeByteString;->totalLength:I
 
@@ -848,27 +772,23 @@
 
     return v0
 
-    .line 5
     :cond_3
     iget v0, p0, Lcom/google/protobuf/RopeByteString;->hash:I
 
     if-eqz v0, :cond_4
 
-    .line 6
     invoke-virtual {p1}, Lcom/google/protobuf/ByteString;->peekCachedHashCode()I
 
     move-result v0
 
     if-eqz v0, :cond_4
 
-    .line 7
     iget v1, p0, Lcom/google/protobuf/RopeByteString;->hash:I
 
     if-eq v1, v0, :cond_4
 
     return v2
 
-    .line 8
     :cond_4
     invoke-direct {p0, p1}, Lcom/google/protobuf/RopeByteString;->equalsFragments(Lcom/google/protobuf/ByteString;)Z
 
@@ -880,7 +800,6 @@
 .method protected getTreeDepth()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/RopeByteString;->treeDepth:I
 
     return v0
@@ -889,17 +808,14 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/RopeByteString;->hash:I
 
     if-nez v0, :cond_1
 
-    .line 2
     iget v0, p0, Lcom/google/protobuf/RopeByteString;->totalLength:I
 
     const/4 v1, 0x0
 
-    .line 3
     invoke-virtual {p0, v0, v1, v0}, Lcom/google/protobuf/RopeByteString;->partialHash(III)I
 
     move-result v0
@@ -908,7 +824,6 @@
 
     const/4 v0, 0x1
 
-    .line 4
     :cond_0
     iput v0, p0, Lcom/google/protobuf/RopeByteString;->hash:I
 
@@ -919,7 +834,6 @@
 .method protected isBalanced()Z
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/RopeByteString;->totalLength:I
 
     sget-object v1, Lcom/google/protobuf/RopeByteString;->minLengthByDepth:[I
@@ -944,7 +858,6 @@
 .method public isValidUtf8()Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     iget v1, p0, Lcom/google/protobuf/RopeByteString;->leftLength:I
@@ -955,7 +868,6 @@
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v1}, Lcom/google/protobuf/ByteString;->size()I
@@ -977,7 +889,6 @@
 .method public iterator()Lcom/google/protobuf/ByteString$ByteIterator;
     .locals 2
 
-    .line 2
     new-instance v0, Lcom/google/protobuf/RopeByteString$RopeByteIterator;
 
     const/4 v1, 0x0
@@ -990,7 +901,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/protobuf/RopeByteString;->iterator()Lcom/google/protobuf/ByteString$ByteIterator;
 
     move-result-object v0
@@ -1001,7 +911,6 @@
 .method public newCodedInput()Lcom/google/protobuf/CodedInputStream;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/RopeByteString$RopeInputStream;
 
     invoke-direct {v0, p0}, Lcom/google/protobuf/RopeByteString$RopeInputStream;-><init>(Lcom/google/protobuf/RopeByteString;)V
@@ -1016,7 +925,6 @@
 .method public newInput()Ljava/io/InputStream;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/protobuf/RopeByteString$RopeInputStream;
 
     invoke-direct {v0, p0}, Lcom/google/protobuf/RopeByteString$RopeInputStream;-><init>(Lcom/google/protobuf/RopeByteString;)V
@@ -1029,12 +937,10 @@
 
     add-int v0, p2, p3
 
-    .line 1
     iget v1, p0, Lcom/google/protobuf/RopeByteString;->leftLength:I
 
     if-gt v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/google/protobuf/ByteString;->partialHash(III)I
@@ -1046,7 +952,6 @@
     :cond_0
     if-lt p2, v1, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     sub-int/2addr p2, v1
@@ -1060,14 +965,12 @@
     :cond_1
     sub-int/2addr v1, p2
 
-    .line 4
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1, p2, v1}, Lcom/google/protobuf/ByteString;->partialHash(III)I
 
     move-result p1
 
-    .line 5
     iget-object p2, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     const/4 v0, 0x0
@@ -1086,12 +989,10 @@
 
     add-int v0, p2, p3
 
-    .line 1
     iget v1, p0, Lcom/google/protobuf/RopeByteString;->leftLength:I
 
     if-gt v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/google/protobuf/ByteString;->partialIsValidUtf8(III)I
@@ -1103,7 +1004,6 @@
     :cond_0
     if-lt p2, v1, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     sub-int/2addr p2, v1
@@ -1117,14 +1017,12 @@
     :cond_1
     sub-int/2addr v1, p2
 
-    .line 4
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1, p2, v1}, Lcom/google/protobuf/ByteString;->partialIsValidUtf8(III)I
 
     move-result p1
 
-    .line 5
     iget-object p2, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     const/4 v0, 0x0
@@ -1141,7 +1039,6 @@
 .method protected peekCachedHashCode()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/RopeByteString;->hash:I
 
     return v0
@@ -1150,7 +1047,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/RopeByteString;->totalLength:I
 
     return v0
@@ -1161,7 +1057,6 @@
 
     if-ltz p1, :cond_6
 
-    .line 1
     iget v0, p0, Lcom/google/protobuf/RopeByteString;->totalLength:I
 
     if-gt p2, v0, :cond_5
@@ -1172,7 +1067,6 @@
 
     if-nez v1, :cond_0
 
-    .line 2
     sget-object p1, Lcom/google/protobuf/ByteString;->EMPTY:Lcom/google/protobuf/ByteString;
 
     goto :goto_0
@@ -1184,13 +1078,11 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     iget v0, p0, Lcom/google/protobuf/RopeByteString;->leftLength:I
 
     if-gt p2, v0, :cond_2
 
-    .line 4
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1, p2}, Lcom/google/protobuf/ByteString;->substring(II)Lcom/google/protobuf/ByteString;
@@ -1202,7 +1094,6 @@
     :cond_2
     if-lt p1, v0, :cond_3
 
-    .line 5
     iget-object v1, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     sub-int/2addr p1, v0
@@ -1215,7 +1106,6 @@
 
     goto :goto_0
 
-    .line 6
     :cond_3
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
@@ -1223,7 +1113,6 @@
 
     move-result-object p1
 
-    .line 7
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     const/4 v1, 0x0
@@ -1236,7 +1125,6 @@
 
     move-result-object p2
 
-    .line 8
     new-instance v0, Lcom/google/protobuf/RopeByteString;
 
     invoke-direct {v0, p1, p2}, Lcom/google/protobuf/RopeByteString;-><init>(Lcom/google/protobuf/ByteString;Lcom/google/protobuf/ByteString;)V
@@ -1246,7 +1134,6 @@
     :goto_0
     return-object p1
 
-    .line 9
     :cond_4
     new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -1276,7 +1163,6 @@
 
     throw v0
 
-    .line 10
     :cond_5
     new-instance p1, Ljava/lang/IndexOutOfBoundsException;
 
@@ -1308,7 +1194,6 @@
 
     throw p1
 
-    .line 11
     :cond_6
     new-instance p2, Ljava/lang/IndexOutOfBoundsException;
 
@@ -1345,7 +1230,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/lang/String;
 
     invoke-virtual {p0}, Lcom/google/protobuf/ByteString;->toByteArray()[B
@@ -1365,12 +1249,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1}, Lcom/google/protobuf/ByteString;->writeTo(Ljava/io/OutputStream;)V
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1}, Lcom/google/protobuf/ByteString;->writeTo(Ljava/io/OutputStream;)V
@@ -1388,12 +1270,10 @@
 
     add-int v0, p2, p3
 
-    .line 1
     iget v1, p0, Lcom/google/protobuf/RopeByteString;->leftLength:I
 
     if-gt v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/google/protobuf/ByteString;->writeToInternal(Ljava/io/OutputStream;II)V
@@ -1403,7 +1283,6 @@
     :cond_0
     if-lt p2, v1, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     sub-int/2addr p2, v1
@@ -1415,12 +1294,10 @@
     :cond_1
     sub-int/2addr v1, p2
 
-    .line 4
     iget-object v0, p0, Lcom/google/protobuf/RopeByteString;->left:Lcom/google/protobuf/ByteString;
 
     invoke-virtual {v0, p1, p2, v1}, Lcom/google/protobuf/ByteString;->writeToInternal(Ljava/io/OutputStream;II)V
 
-    .line 5
     iget-object p2, p0, Lcom/google/protobuf/RopeByteString;->right:Lcom/google/protobuf/ByteString;
 
     const/4 v0, 0x0

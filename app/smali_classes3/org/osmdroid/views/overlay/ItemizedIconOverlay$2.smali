@@ -1,6 +1,5 @@
 .class Lorg/osmdroid/views/overlay/ItemizedIconOverlay$2;
 .super Ljava/lang/Object;
-.source "ItemizedIconOverlay.java"
 
 # interfaces
 .implements Lorg/osmdroid/views/overlay/ItemizedIconOverlay$ActiveItem;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lorg/osmdroid/views/overlay/ItemizedIconOverlay;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay$2;->this$0:Lorg/osmdroid/views/overlay/ItemizedIconOverlay;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,10 +36,8 @@
 .method public run(I)Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay$2;->this$0:Lorg/osmdroid/views/overlay/ItemizedIconOverlay;
 
-    .line 2
     iget-object v1, v0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mOnItemGestureListener:Lorg/osmdroid/views/overlay/ItemizedIconOverlay$OnItemGestureListener;
 
     if-nez v1, :cond_0
@@ -50,7 +46,6 @@
 
     return p1
 
-    .line 3
     :cond_0
     invoke-virtual {v0, p1}, Lorg/osmdroid/views/overlay/ItemizedOverlay;->getItem(I)Lorg/osmdroid/views/overlay/OverlayItem;
 

@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$c;
 .super Ljava/lang/Object;
-.source "UpdateMcuActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$c;->a:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,14 +36,12 @@
 .method public run()V
     .locals 4
 
-    .line 1
     new-instance v0, Landroid/content/ContentValues;
 
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
     const/16 v1, 0x9
 
-    .line 2
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -54,7 +50,6 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 3
     sget v1, Lcom/ifengyu/intercom/i/d0;->a:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -65,7 +60,6 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
-    .line 4
     iget-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$c;->a:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;->g(Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;)Ljava/lang/String;
@@ -76,7 +70,6 @@
 
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 5
     iget-object v1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$c;->a:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;->a(Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;)Lcom/ifengyu/intercom/update/dolphin/l;

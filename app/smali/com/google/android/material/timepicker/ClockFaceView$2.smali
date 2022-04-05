@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/timepicker/ClockFaceView$2;
 .super Landroidx/core/view/a;
-.source "ClockFaceView.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/android/material/timepicker/ClockFaceView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/timepicker/ClockFaceView$2;->this$0:Lcom/google/android/material/timepicker/ClockFaceView;
 
     invoke-direct {p0}, Landroidx/core/view/a;-><init>()V
@@ -39,10 +37,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-super {p0, p1, p2}, Landroidx/core/view/a;->onInitializeAccessibilityNodeInfo(Landroid/view/View;Landroidx/core/view/accessibility/b;)V
 
-    .line 2
     sget v0, Lcom/google/android/material/R$id;->material_value_index:I
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getTag(I)Ljava/lang/Object;
@@ -57,7 +53,6 @@
 
     if-lez v3, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/android/material/timepicker/ClockFaceView$2;->this$0:Lcom/google/android/material/timepicker/ClockFaceView;
 
     invoke-static {v0}, Lcom/google/android/material/timepicker/ClockFaceView;->access$200(Lcom/google/android/material/timepicker/ClockFaceView;)Landroid/util/SparseArray;
@@ -83,17 +78,14 @@
 
     const/4 v5, 0x0
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/View;->isSelected()Z
 
     move-result v6
 
-    .line 5
     invoke-static/range {v1 .. v6}, Landroidx/core/view/accessibility/b$c;->a(IIIIZZ)Landroidx/core/view/accessibility/b$c;
 
     move-result-object p1
 
-    .line 6
     invoke-virtual {p2, p1}, Landroidx/core/view/accessibility/b;->b(Ljava/lang/Object;)V
 
     return-void

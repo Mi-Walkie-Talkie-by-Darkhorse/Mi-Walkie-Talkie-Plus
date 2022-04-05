@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/b/g$5;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/tencent/open/b/g;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/b/g$5;->a:Lcom/tencent/open/b/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -42,7 +40,6 @@
 
     const-string v2, "openSDK_LOG.ReportManager"
 
-    .line 1
     :try_start_0
     iget-object v0, v1, Lcom/tencent/open/b/g$5;->a:Lcom/tencent/open/b/g;
 
@@ -54,7 +51,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -76,12 +72,10 @@
 
     invoke-static {v2, v0}, Lcom/tencent/open/a/f;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     invoke-static {}, Lcom/tencent/open/b/e;->a()I
 
     move-result v4
 
-    .line 4
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
     move-result-wide v5
@@ -105,7 +99,6 @@
 
     add-int/lit8 v16, v0, 0x1
 
-    .line 5
     :try_start_1
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
@@ -119,7 +112,6 @@
 
     move-result-object v0
 
-    .line 6
     iget-object v7, v0, Lcom/tencent/open/utils/i$a;->a:Ljava/lang/String;
 
     invoke-static {v7}, Lcom/tencent/open/utils/i;->d(Ljava/lang/String;)Lorg/json/JSONObject;
@@ -137,7 +129,6 @@
     :try_start_2
     const-string v8, "ret"
 
-    .line 7
     invoke-virtual {v7, v8}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v7
@@ -158,7 +149,6 @@
     :goto_0
     if-eqz v7, :cond_2
 
-    .line 8
     :try_start_3
     iget-object v7, v0, Lcom/tencent/open/utils/i$a;->a:Ljava/lang/String;
 
@@ -173,11 +163,9 @@
 
     const/4 v5, 0x1
 
-    .line 9
     :cond_3
     iget-wide v11, v0, Lcom/tencent/open/utils/i$a;->b:J
 
-    .line 10
     iget-wide v7, v0, Lcom/tencent/open/utils/i$a;->c:J
     :try_end_3
     .catch Lorg/apache/http/conn/ConnectTimeoutException; {:try_start_3 .. :try_end_3} :catch_7
@@ -206,7 +194,6 @@
     :catch_2
     move-exception v0
 
-    .line 11
     :try_start_4
     invoke-static {v0}, Lcom/tencent/open/utils/HttpUtils;->getErrorCodeFromException(Ljava/io/IOException;)I
 
@@ -223,7 +210,6 @@
     :catch_3
     move-exception v0
 
-    .line 12
     :try_start_5
     invoke-virtual {v0}, Ljava/lang/Exception;->getMessage()Ljava/lang/String;
 
@@ -237,7 +223,6 @@
 
     move-result-object v0
 
-    .line 13
     invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v6
@@ -246,7 +231,6 @@
 
     goto :goto_3
 
-    .line 14
     :catch_4
     :try_start_6
     iget-object v0, v1, Lcom/tencent/open/b/g$5;->a:Lcom/tencent/open/b/g;
@@ -257,7 +241,6 @@
 
     const-string v0, "doReportVia, NetworkUnavailableException."
 
-    .line 15
     invoke-static {v2, v0}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -274,7 +257,6 @@
 
     goto :goto_2
 
-    .line 16
     :catch_6
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -290,7 +272,6 @@
 
     goto :goto_1
 
-    .line 17
     :catch_7
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
@@ -319,7 +300,6 @@
 
     move v14, v6
 
-    .line 18
     iget-object v6, v1, Lcom/tencent/open/b/g$5;->a:Lcom/tencent/open/b/g;
 
     const-string v7, "mapp_apptrace_sdk"
@@ -336,7 +316,6 @@
 
     if-eqz v5, :cond_4
 
-    .line 19
     :try_start_7
     invoke-static {}, Lcom/tencent/open/b/f;->a()Lcom/tencent/open/b/f;
 
@@ -346,7 +325,6 @@
 
     goto :goto_4
 
-    .line 20
     :cond_4
     invoke-static {}, Lcom/tencent/open/b/f;->a()Lcom/tencent/open/b/f;
 
@@ -358,7 +336,6 @@
 
     invoke-virtual {v3, v0, v4}, Lcom/tencent/open/b/f;->a(Ljava/lang/String;Ljava/util/List;)V
 
-    .line 21
     :goto_4
     iget-object v0, v1, Lcom/tencent/open/b/g$5;->a:Lcom/tencent/open/b/g;
 
@@ -366,7 +343,6 @@
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
-    .line 22
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -392,7 +368,6 @@
 
     const-string v3, "-->doReportVia, exception in serial executor."
 
-    .line 23
     invoke-static {v2, v3, v0}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_5

@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/UrlLoaderImpl$1;
 .super Ljava/lang/Object;
-.source "UrlLoaderImpl.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/just/agentweb/UrlLoaderImpl;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/UrlLoaderImpl$1;->this$0:Lcom/just/agentweb/UrlLoaderImpl;
 
     iput-object p2, p0, Lcom/just/agentweb/UrlLoaderImpl$1;->val$url:Ljava/lang/String;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/UrlLoaderImpl$1;->this$0:Lcom/just/agentweb/UrlLoaderImpl;
 
     iget-object v1, p0, Lcom/just/agentweb/UrlLoaderImpl$1;->val$url:Ljava/lang/String;

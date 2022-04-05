@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/single/SingleFromCallable;
 .super Lio/reactivex/Single;
-.source "SingleFromCallable.java"
 
 
 # annotations
@@ -37,10 +36,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Single;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/single/SingleFromCallable;->callable:Ljava/util/concurrent/Callable;
 
     return-void
@@ -58,15 +55,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lio/reactivex/disposables/Disposables;->empty()Lio/reactivex/disposables/Disposable;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {p1, v0}, Lio/reactivex/SingleObserver;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
-    .line 3
     invoke-interface {v0}, Lio/reactivex/disposables/Disposable;->isDisposed()Z
 
     move-result v1
@@ -75,7 +69,6 @@
 
     return-void
 
-    .line 4
     :cond_0
     :try_start_0
     iget-object v1, p0, Lio/reactivex/internal/operators/single/SingleFromCallable;->callable:Ljava/util/concurrent/Callable;
@@ -92,14 +85,12 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     invoke-interface {v0}, Lio/reactivex/disposables/Disposable;->isDisposed()Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 6
     invoke-interface {p1, v1}, Lio/reactivex/SingleObserver;->onSuccess(Ljava/lang/Object;)V
 
     :cond_1
@@ -108,22 +99,18 @@
     :catchall_0
     move-exception v1
 
-    .line 7
     invoke-static {v1}, Lio/reactivex/exceptions/Exceptions;->throwIfFatal(Ljava/lang/Throwable;)V
 
-    .line 8
     invoke-interface {v0}, Lio/reactivex/disposables/Disposable;->isDisposed()Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    .line 9
     invoke-interface {p1, v1}, Lio/reactivex/SingleObserver;->onError(Ljava/lang/Throwable;)V
 
     goto :goto_0
 
-    .line 10
     :cond_2
     invoke-static {v1}, Lio/reactivex/plugins/RxJavaPlugins;->onError(Ljava/lang/Throwable;)V
 

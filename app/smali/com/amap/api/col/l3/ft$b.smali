@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ft$b;
 .super Ljava/lang/Object;
-.source "TraceManager.java"
 
 # interfaces
 .implements Lcom/amap/api/trace/TraceListener;
@@ -43,12 +42,10 @@
         }
     .end annotation
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/ft$b;->a:Lcom/amap/api/col/l3/ft;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lcom/amap/api/col/l3/ft$b;->b:Ljava/util/List;
 
     return-void
@@ -67,7 +64,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p1, p0, Lcom/amap/api/col/l3/ft$b;->a:Lcom/amap/api/col/l3/ft;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/ft;->a(Lcom/amap/api/col/l3/ft;)Lcom/amap/api/trace/TraceStatusListener;
@@ -86,7 +82,6 @@
 .method public final onRequestFailed(ILjava/lang/String;)V
     .locals 2
 
-    .line 1
     iget-object p1, p0, Lcom/amap/api/col/l3/ft$b;->a:Lcom/amap/api/col/l3/ft;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/ft;->a(Lcom/amap/api/col/l3/ft;)Lcom/amap/api/trace/TraceStatusListener;

@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/MultiPointOverlayOptions;
 .super Ljava/lang/Object;
-.source "MultiPointOverlayOptions.java"
 
 
 # instance fields
@@ -15,15 +14,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/high16 v0, 0x3f000000    # 0.5f
 
-    .line 2
     iput v0, p0, Lcom/amap/api/maps/model/MultiPointOverlayOptions;->b:F
 
-    .line 3
     iput v0, p0, Lcom/amap/api/maps/model/MultiPointOverlayOptions;->c:F
 
     return-void
@@ -34,10 +30,8 @@
 .method public anchor(FF)Lcom/amap/api/maps/model/MultiPointOverlayOptions;
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/amap/api/maps/model/MultiPointOverlayOptions;->b:F
 
-    .line 2
     iput p2, p0, Lcom/amap/api/maps/model/MultiPointOverlayOptions;->c:F
 
     return-object p0
@@ -46,7 +40,6 @@
 .method public getAnchorU()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/MultiPointOverlayOptions;->b:F
 
     return v0
@@ -55,7 +48,6 @@
 .method public getAnchorV()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/maps/model/MultiPointOverlayOptions;->c:F
 
     return v0
@@ -64,7 +56,6 @@
 .method public getIcon()Lcom/amap/api/maps/model/BitmapDescriptor;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/MultiPointOverlayOptions;->a:Lcom/amap/api/maps/model/BitmapDescriptor;
 
     return-object v0
@@ -73,7 +64,6 @@
 .method public icon(Lcom/amap/api/maps/model/BitmapDescriptor;)Lcom/amap/api/maps/model/MultiPointOverlayOptions;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/MultiPointOverlayOptions;->a:Lcom/amap/api/maps/model/BitmapDescriptor;
 
     return-object p0

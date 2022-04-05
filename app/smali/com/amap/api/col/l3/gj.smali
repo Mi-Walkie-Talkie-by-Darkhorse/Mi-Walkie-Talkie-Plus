@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/gj;
 .super Lcom/amap/api/col/l3/ic;
-.source "AuthRequest.java"
 
 
 # annotations
@@ -38,17 +37,14 @@
 .method constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/ic;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Lcom/amap/api/col/l3/gj;->a:Ljava/util/Map;
 
-    .line 3
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
@@ -72,7 +68,6 @@
         }
     .end annotation
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/gj;->a:Ljava/util/Map;
 
     return-object v0
@@ -81,7 +76,6 @@
 .method final a(Ljava/lang/String;)V
     .locals 0
 
-    .line 3
     iput-object p1, p0, Lcom/amap/api/col/l3/gj;->b:Ljava/lang/String;
 
     return-void
@@ -99,12 +93,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/gj;->a:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/gj;->a:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
@@ -124,7 +116,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/gj;->c:Ljava/util/Map;
 
     return-object v0
@@ -142,12 +133,10 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/gj;->c:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->clear()V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/gj;->c:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
@@ -158,7 +147,6 @@
 .method public final c()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/gj;->b:Ljava/lang/String;
 
     return-object v0

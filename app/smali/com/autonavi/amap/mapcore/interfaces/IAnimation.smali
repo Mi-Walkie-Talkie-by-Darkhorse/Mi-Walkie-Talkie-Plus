@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IAnimation;
 .super Ljava/lang/Object;
-.source "IAnimation.java"
 
 
 # virtual methods

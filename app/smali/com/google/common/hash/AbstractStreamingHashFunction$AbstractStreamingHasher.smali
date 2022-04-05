@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;
 .super Lcom/google/common/hash/AbstractHasher;
-.source "AbstractStreamingHashFunction.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method protected constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p1}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;-><init>(II)V
 
     return-void
@@ -35,10 +33,8 @@
 .method protected constructor <init>(II)V
     .locals 2
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/hash/AbstractHasher;-><init>()V
 
-    .line 3
     rem-int v0, p2, p1
 
     if-nez v0, :cond_0
@@ -55,7 +51,6 @@
 
     add-int/lit8 v0, p2, 0x7
 
-    .line 4
     invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
     move-result-object v0
@@ -68,10 +63,8 @@
 
     iput-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
-    .line 5
     iput p2, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->bufferSize:I
 
-    .line 6
     iput p1, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->chunkSize:I
 
     return-void
@@ -80,12 +73,10 @@
 .method private munch()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
-    .line 2
     :goto_0
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
@@ -97,14 +88,12 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, v0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->process(Ljava/nio/ByteBuffer;)V
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
@@ -116,7 +105,6 @@
 .method private munchIfFull()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
@@ -127,7 +115,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->munch()V
 
     :cond_0
@@ -137,7 +124,6 @@
 .method private putBytes(Ljava/nio/ByteBuffer;)Lcom/google/common/hash/Hasher;
     .locals 4
 
-    .line 5
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
 
     move-result v0
@@ -150,17 +136,14 @@
 
     if-gt v0, v1, :cond_0
 
-    .line 6
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->put(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
 
-    .line 7
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
 
-    .line 8
     :cond_0
     iget v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->bufferSize:I
 
@@ -177,7 +160,6 @@
     :goto_0
     if-ge v1, v0, :cond_1
 
-    .line 9
     iget-object v2, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->get()B
@@ -190,11 +172,9 @@
 
     goto :goto_0
 
-    .line 10
     :cond_1
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->munch()V
 
-    .line 11
     :goto_1
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->remaining()I
 
@@ -204,12 +184,10 @@
 
     if-lt v0, v1, :cond_2
 
-    .line 12
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->process(Ljava/nio/ByteBuffer;)V
 
     goto :goto_1
 
-    .line 13
     :cond_2
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
@@ -223,15 +201,12 @@
 .method public final hash()Lcom/google/common/hash/HashCode;
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->munch()V
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->remaining()I
@@ -240,12 +215,10 @@
 
     if-lez v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p0, v0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->processRemaining(Ljava/nio/ByteBuffer;)V
 
-    .line 5
     :cond_0
     invoke-virtual {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->makeHash()Lcom/google/common/hash/HashCode;
 
@@ -263,21 +236,18 @@
 .method protected processRemaining(Ljava/nio/ByteBuffer;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->limit()I
 
     move-result v0
 
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
-    .line 2
     iget v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->chunkSize:I
 
     add-int/lit8 v0, v0, 0x7
 
     invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 3
     :goto_0
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->position()I
 
@@ -289,19 +259,15 @@
 
     const-wide/16 v0, 0x0
 
-    .line 4
     invoke-virtual {p1, v0, v1}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
 
     goto :goto_0
 
-    .line 5
     :cond_0
     invoke-virtual {p1, v1}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
-    .line 6
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->flip()Ljava/nio/Buffer;
 
-    .line 7
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->process(Ljava/nio/ByteBuffer;)V
 
     return-void
@@ -310,12 +276,10 @@
 .method public final putByte(B)Lcom/google/common/hash/Hasher;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->put(B)Ljava/nio/ByteBuffer;
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
@@ -324,7 +288,6 @@
 .method public bridge synthetic putByte(B)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->putByte(B)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -335,7 +298,6 @@
 .method public final putBytes([B)Lcom/google/common/hash/Hasher;
     .locals 2
 
-    .line 3
     array-length v0, p1
 
     const/4 v1, 0x0
@@ -350,7 +312,6 @@
 .method public final putBytes([BII)Lcom/google/common/hash/Hasher;
     .locals 0
 
-    .line 4
     invoke-static {p1, p2, p3}, Ljava/nio/ByteBuffer;->wrap([BII)Ljava/nio/ByteBuffer;
 
     move-result-object p1
@@ -371,7 +332,6 @@
 .method public bridge synthetic putBytes([B)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->putBytes([B)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -382,7 +342,6 @@
 .method public bridge synthetic putBytes([BII)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1, p2, p3}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->putBytes([BII)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -393,12 +352,10 @@
 .method public final putChar(C)Lcom/google/common/hash/Hasher;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putChar(C)Ljava/nio/ByteBuffer;
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
@@ -407,7 +364,6 @@
 .method public bridge synthetic putChar(C)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->putChar(C)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -418,12 +374,10 @@
 .method public final putInt(I)Lcom/google/common/hash/Hasher;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
@@ -432,7 +386,6 @@
 .method public bridge synthetic putInt(I)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->putInt(I)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -443,12 +396,10 @@
 .method public final putLong(J)Lcom/google/common/hash/Hasher;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1, p2}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
@@ -457,7 +408,6 @@
 .method public bridge synthetic putLong(J)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->putLong(J)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -478,7 +428,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p2, p1, p0}, Lcom/google/common/hash/Funnel;->funnel(Ljava/lang/Object;Lcom/google/common/hash/PrimitiveSink;)V
 
     return-object p0
@@ -487,12 +436,10 @@
 .method public final putShort(S)Lcom/google/common/hash/Hasher;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->buffer:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putShort(S)Ljava/nio/ByteBuffer;
 
-    .line 3
     invoke-direct {p0}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->munchIfFull()V
 
     return-object p0
@@ -501,7 +448,6 @@
 .method public bridge synthetic putShort(S)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->putShort(S)Lcom/google/common/hash/Hasher;
 
     move-result-object p1
@@ -514,7 +460,6 @@
 
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
@@ -522,7 +467,6 @@
 
     if-ge v0, v1, :cond_0
 
-    .line 3
     invoke-interface {p1, v0}, Ljava/lang/CharSequence;->charAt(I)C
 
     move-result v1
@@ -540,7 +484,6 @@
 .method public bridge synthetic putUnencodedChars(Ljava/lang/CharSequence;)Lcom/google/common/hash/PrimitiveSink;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/hash/AbstractStreamingHashFunction$AbstractStreamingHasher;->putUnencodedChars(Ljava/lang/CharSequence;)Lcom/google/common/hash/Hasher;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/view/ViewCompat$k;
 .super Ljava/lang/Object;
-.source "ViewCompat.java"
 
 
 # annotations

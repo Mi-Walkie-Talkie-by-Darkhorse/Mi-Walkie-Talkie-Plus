@@ -1,6 +1,5 @@
 .class public Lcom/umeng/umcrash/UMCrashUtils;
 .super Ljava/lang/Object;
-.source "UMCrashUtils.java"
 
 
 # static fields
@@ -11,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -26,7 +24,6 @@
 
     return v0
 
-    .line 1
     :cond_0
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -39,7 +36,6 @@
     :try_start_0
     const-string v1, "android.content.Context"
 
-    .line 2
     invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v1
@@ -48,7 +44,6 @@
 
     new-array v4, v3, [Ljava/lang/Class;
 
-    .line 3
     const-class v5, Ljava/lang/String;
 
     aput-object v5, v4, v0
@@ -61,7 +56,6 @@
 
     aput-object p1, v2, v0
 
-    .line 4
     invoke-virtual {v1, p0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -78,13 +72,11 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-virtual {p0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
-    .line 6
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object p0
@@ -116,7 +108,6 @@
     :try_start_0
     const-string v1, "com.umeng.commonsdk.utils.UMUtils"
 
-    .line 1
     invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object v1
@@ -140,7 +131,6 @@
 
     new-array v5, v3, [Ljava/lang/Class;
 
-    .line 2
     const-class v6, Landroid/content/Context;
 
     aput-object v6, v5, v2
@@ -164,14 +154,12 @@
 
     aput-object p0, v3, v2
 
-    .line 3
     invoke-virtual {v1, v0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 4
     check-cast p0, [Ljava/lang/String;
     :try_end_2
     .catch Ljava/lang/IllegalAccessException; {:try_start_2 .. :try_end_2} :catch_2
@@ -197,7 +185,6 @@
     :try_start_0
     const-string v1, "phone"
 
-    .line 1
     invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
@@ -206,7 +193,6 @@
 
     const-string v2, "android.permission.READ_PHONE_STATE"
 
-    .line 2
     invoke-static {p0, v2}, Lcom/umeng/umcrash/UMCrashUtils;->checkPermission(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result p0
@@ -215,7 +201,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 3
     invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getNetworkOperatorName()Ljava/lang/String;
 
     move-result-object p0
@@ -232,14 +217,12 @@
 .method public static setPuidAndProvider(Ljava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/uc/crashsdk/export/CrashApi;->getInstance()Lcom/uc/crashsdk/export/CrashApi;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-static {}, Lcom/uc/crashsdk/export/CrashApi;->getInstance()Lcom/uc/crashsdk/export/CrashApi;
 
     move-result-object v0
@@ -248,7 +231,6 @@
 
     invoke-virtual {v0, v1, p0}, Lcom/uc/crashsdk/export/CrashApi;->addHeaderInfo(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 3
     invoke-static {}, Lcom/uc/crashsdk/export/CrashApi;->getInstance()Lcom/uc/crashsdk/export/CrashApi;
 
     move-result-object p0
@@ -264,12 +246,10 @@
 .method public static splitByByte(Ljava/lang/String;I)Ljava/lang/String;
     .locals 6
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuffer;
 
     invoke-direct {v0, p1}, Ljava/lang/StringBuffer;-><init>(I)V
 
-    .line 2
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
@@ -282,7 +262,6 @@
     :goto_0
     if-ge v2, v1, :cond_0
 
-    .line 3
     invoke-virtual {p0, v2}, Ljava/lang/String;->charAt(I)C
 
     move-result v4
@@ -291,19 +270,16 @@
 
     move-result-object v4
 
-    .line 4
     invoke-virtual {v4}, Ljava/lang/String;->getBytes()[B
 
     move-result-object v5
 
-    .line 5
     array-length v5, v5
 
     add-int/2addr v3, v5
 
     if-lt p1, v3, :cond_0
 
-    .line 6
     invoke-virtual {v0, v4}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -312,7 +288,6 @@
 
     goto :goto_0
 
-    .line 7
     :catchall_0
     :cond_0
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;

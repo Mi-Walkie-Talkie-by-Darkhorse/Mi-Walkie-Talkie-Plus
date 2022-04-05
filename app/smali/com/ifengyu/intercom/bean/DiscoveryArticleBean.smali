@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;
 .super Ljava/lang/Object;
-.source "DiscoveryArticleBean.java"
 
 # interfaces
 .implements Ljava/io/Serializable;
@@ -31,7 +30,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -42,7 +40,6 @@
 .method public getExcerpt()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->excerpt:Ljava/lang/String;
 
     return-object v0
@@ -51,7 +48,6 @@
 .method public getHeader_image_url()Lcom/ifengyu/intercom/bean/DiscoveryArticleBean$DiscoveryArticleHeaderImageUrl;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->header_image_url:Lcom/ifengyu/intercom/bean/DiscoveryArticleBean$DiscoveryArticleHeaderImageUrl;
 
     return-object v0
@@ -60,7 +56,6 @@
 .method public getId()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->id:I
 
     return v0
@@ -69,7 +64,6 @@
 .method public getMeta()Lcom/ifengyu/intercom/bean/DiscoveryArticleBean$DiscoveryArticleMeta;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->meta:Lcom/ifengyu/intercom/bean/DiscoveryArticleBean$DiscoveryArticleMeta;
 
     return-object v0
@@ -78,7 +72,6 @@
 .method public getTitle()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->title:Ljava/lang/String;
 
     return-object v0
@@ -87,7 +80,6 @@
 .method public setExcerpt(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->excerpt:Ljava/lang/String;
 
     return-void
@@ -96,7 +88,6 @@
 .method public setHeader_image_url(Lcom/ifengyu/intercom/bean/DiscoveryArticleBean$DiscoveryArticleHeaderImageUrl;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->header_image_url:Lcom/ifengyu/intercom/bean/DiscoveryArticleBean$DiscoveryArticleHeaderImageUrl;
 
     return-void
@@ -105,7 +96,6 @@
 .method public setId(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->id:I
 
     return-void
@@ -114,7 +104,6 @@
 .method public setMeta(Lcom/ifengyu/intercom/bean/DiscoveryArticleBean$DiscoveryArticleMeta;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->meta:Lcom/ifengyu/intercom/bean/DiscoveryArticleBean$DiscoveryArticleMeta;
 
     return-void
@@ -123,7 +112,6 @@
 .method public setTitle(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/bean/DiscoveryArticleBean;->title:Ljava/lang/String;
 
     return-void
@@ -132,7 +120,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

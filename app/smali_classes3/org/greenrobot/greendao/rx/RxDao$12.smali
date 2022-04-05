@@ -1,6 +1,5 @@
 .class Lorg/greenrobot/greendao/rx/RxDao$12;
 .super Ljava/lang/Object;
-.source "RxDao.java"
 
 # interfaces
 .implements Ljava/util/concurrent/Callable;
@@ -37,7 +36,6 @@
 .method constructor <init>(Lorg/greenrobot/greendao/rx/RxDao;[Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/greenrobot/greendao/rx/RxDao$12;->this$0:Lorg/greenrobot/greendao/rx/RxDao;
 
     iput-object p2, p0, Lorg/greenrobot/greendao/rx/RxDao$12;->val$entities:[Ljava/lang/Object;
@@ -57,7 +55,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/rx/RxDao$12;->call()[Ljava/lang/Object;
 
     move-result-object v0
@@ -73,7 +70,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lorg/greenrobot/greendao/rx/RxDao$12;->this$0:Lorg/greenrobot/greendao/rx/RxDao;
 
     invoke-static {v0}, Lorg/greenrobot/greendao/rx/RxDao;->access$000(Lorg/greenrobot/greendao/rx/RxDao;)Lorg/greenrobot/greendao/AbstractDao;
@@ -84,7 +80,6 @@
 
     invoke-virtual {v0, v1}, Lorg/greenrobot/greendao/AbstractDao;->saveInTx([Ljava/lang/Object;)V
 
-    .line 3
     iget-object v0, p0, Lorg/greenrobot/greendao/rx/RxDao$12;->val$entities:[Ljava/lang/Object;
 
     return-object v0

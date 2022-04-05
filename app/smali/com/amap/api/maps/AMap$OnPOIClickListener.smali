@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/amap/api/maps/AMap$OnPOIClickListener;
 .super Ljava/lang/Object;
-.source "AMap.java"
 
 
 # annotations

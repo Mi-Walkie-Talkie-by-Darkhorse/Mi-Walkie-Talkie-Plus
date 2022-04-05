@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/xiaomi/infra/galaxy/fds/android/auth/GalaxyFDSCredential;
 .super Ljava/lang/Object;
-.source "GalaxyFDSCredential.java"
 
 
 # virtual methods

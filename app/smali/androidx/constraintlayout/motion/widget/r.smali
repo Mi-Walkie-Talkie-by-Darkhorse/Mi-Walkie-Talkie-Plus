@@ -1,6 +1,5 @@
 .class public abstract Landroidx/constraintlayout/motion/widget/r;
 .super Ljava/lang/Object;
-.source "SplineSet.java"
 
 
 # annotations
@@ -42,19 +41,16 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/16 v0, 0xa
 
     new-array v1, v0, [I
 
-    .line 2
     iput-object v1, p0, Landroidx/constraintlayout/motion/widget/r;->b:[I
 
     new-array v0, v0, [F
 
-    .line 3
     iput-object v0, p0, Landroidx/constraintlayout/motion/widget/r;->c:[F
 
     return-void
@@ -73,7 +69,6 @@
         }
     .end annotation
 
-    .line 3
     new-instance v0, Landroidx/constraintlayout/motion/widget/r$b;
 
     invoke-direct {v0, p0, p1}, Landroidx/constraintlayout/motion/widget/r$b;-><init>(Ljava/lang/String;Landroid/util/SparseArray;)V
@@ -84,7 +79,6 @@
 .method static b(Ljava/lang/String;)Landroidx/constraintlayout/motion/widget/r;
     .locals 1
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/String;->hashCode()I
 
     move-result v0
@@ -312,7 +306,6 @@
 
     return-object p0
 
-    .line 3
     :pswitch_0
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$g;
 
@@ -320,7 +313,6 @@
 
     return-object p0
 
-    .line 4
     :pswitch_1
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$p;
 
@@ -328,7 +320,6 @@
 
     return-object p0
 
-    .line 5
     :pswitch_2
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$o;
 
@@ -336,7 +327,6 @@
 
     return-object p0
 
-    .line 6
     :pswitch_3
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$n;
 
@@ -344,7 +334,6 @@
 
     return-object p0
 
-    .line 7
     :pswitch_4
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$a;
 
@@ -352,7 +341,6 @@
 
     return-object p0
 
-    .line 8
     :pswitch_5
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$a;
 
@@ -360,7 +348,6 @@
 
     return-object p0
 
-    .line 9
     :pswitch_6
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$l;
 
@@ -368,7 +355,6 @@
 
     return-object p0
 
-    .line 10
     :pswitch_7
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$k;
 
@@ -376,7 +362,6 @@
 
     return-object p0
 
-    .line 11
     :pswitch_8
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$d;
 
@@ -384,7 +369,6 @@
 
     return-object p0
 
-    .line 12
     :pswitch_9
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$f;
 
@@ -392,7 +376,6 @@
 
     return-object p0
 
-    .line 13
     :pswitch_a
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$e;
 
@@ -400,7 +383,6 @@
 
     return-object p0
 
-    .line 14
     :pswitch_b
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$j;
 
@@ -408,7 +390,6 @@
 
     return-object p0
 
-    .line 15
     :pswitch_c
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$i;
 
@@ -416,7 +397,6 @@
 
     return-object p0
 
-    .line 16
     :pswitch_d
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$h;
 
@@ -424,7 +404,6 @@
 
     return-object p0
 
-    .line 17
     :pswitch_e
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$c;
 
@@ -432,7 +411,6 @@
 
     return-object p0
 
-    .line 18
     :pswitch_f
     new-instance p0, Landroidx/constraintlayout/motion/widget/r$a;
 
@@ -486,7 +464,6 @@
 .method public a(F)F
     .locals 3
 
-    .line 2
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/r;->a:La/c/a/a/b;
 
     float-to-double v1, p1
@@ -505,14 +482,12 @@
 .method public a(I)V
     .locals 9
 
-    .line 10
     iget v0, p0, Landroidx/constraintlayout/motion/widget/r;->d:I
 
     if-nez v0, :cond_0
 
     return-void
 
-    .line 11
     :cond_0
     iget-object v1, p0, Landroidx/constraintlayout/motion/widget/r;->b:[I
 
@@ -530,13 +505,11 @@
 
     const/4 v1, 0x1
 
-    .line 12
     :goto_0
     iget v2, p0, Landroidx/constraintlayout/motion/widget/r;->d:I
 
     if-ge v0, v2, :cond_2
 
-    .line 13
     iget-object v2, p0, Landroidx/constraintlayout/motion/widget/r;->b:[I
 
     add-int/lit8 v5, v0, -0x1
@@ -554,7 +527,6 @@
 
     goto :goto_0
 
-    .line 14
     :cond_2
     new-array v0, v1, [D
 
@@ -566,7 +538,6 @@
 
     aput v1, v2, v4
 
-    .line 15
     const-class v1, D
 
     invoke-static {v1, v2}, Ljava/lang/reflect/Array;->newInstance(Ljava/lang/Class;[I)Ljava/lang/Object;
@@ -579,7 +550,6 @@
 
     const/4 v3, 0x0
 
-    .line 16
     :goto_1
     iget v5, p0, Landroidx/constraintlayout/motion/widget/r;->d:I
 
@@ -587,7 +557,6 @@
 
     if-lez v2, :cond_3
 
-    .line 17
     iget-object v5, p0, Landroidx/constraintlayout/motion/widget/r;->b:[I
 
     aget v6, v5, v2
@@ -600,7 +569,6 @@
 
     goto :goto_2
 
-    .line 18
     :cond_3
     iget-object v5, p0, Landroidx/constraintlayout/motion/widget/r;->b:[I
 
@@ -614,7 +582,6 @@
 
     aput-wide v5, v0, v3
 
-    .line 19
     aget-object v5, v1, v3
 
     iget-object v6, p0, Landroidx/constraintlayout/motion/widget/r;->c:[F
@@ -632,7 +599,6 @@
 
     goto :goto_1
 
-    .line 20
     :cond_4
     invoke-static {p1, v0, v1}, La/c/a/a/b;->a(I[D[[D)La/c/a/a/b;
 
@@ -646,7 +612,6 @@
 .method public a(IF)V
     .locals 3
 
-    .line 4
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/r;->b:[I
 
     array-length v1, v0
@@ -657,7 +622,6 @@
 
     if-ge v1, v2, :cond_0
 
-    .line 5
     array-length v1, v0
 
     mul-int/lit8 v1, v1, 0x2
@@ -668,7 +632,6 @@
 
     iput-object v0, p0, Landroidx/constraintlayout/motion/widget/r;->b:[I
 
-    .line 6
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/r;->c:[F
 
     array-length v1, v0
@@ -681,7 +644,6 @@
 
     iput-object v0, p0, Landroidx/constraintlayout/motion/widget/r;->c:[F
 
-    .line 7
     :cond_0
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/r;->b:[I
 
@@ -689,14 +651,12 @@
 
     aput p1, v0, v1
 
-    .line 8
     iget-object p1, p0, Landroidx/constraintlayout/motion/widget/r;->c:[F
 
     aput p2, p1, v1
 
     add-int/lit8 v1, v1, 0x1
 
-    .line 9
     iput v1, p0, Landroidx/constraintlayout/motion/widget/r;->d:I
 
     return-void
@@ -708,7 +668,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/constraintlayout/motion/widget/r;->e:Ljava/lang/String;
 
     return-void
@@ -717,7 +676,6 @@
 .method public b(F)F
     .locals 3
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/r;->a:La/c/a/a/b;
 
     float-to-double v1, p1
@@ -736,10 +694,8 @@
 .method public toString()Ljava/lang/String;
     .locals 6
 
-    .line 1
     iget-object v0, p0, Landroidx/constraintlayout/motion/widget/r;->e:Ljava/lang/String;
 
-    .line 2
     new-instance v1, Ljava/text/DecimalFormat;
 
     const-string v2, "##.##"
@@ -748,13 +704,11 @@
 
     const/4 v2, 0x0
 
-    .line 3
     :goto_0
     iget v3, p0, Landroidx/constraintlayout/motion/widget/r;->d:I
 
     if-ge v2, v3, :cond_0
 
-    .line 4
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V

@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/bi;
 .super Lcom/umeng/analytics/pro/bp;
-.source "TBinaryProtocol.java"
 
 
 # annotations
@@ -49,7 +48,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/umeng/analytics/pro/bu;
 
     invoke-direct {v0}, Lcom/umeng/analytics/pro/bu;-><init>()V
@@ -66,7 +64,6 @@
 
     const/4 v1, 0x1
 
-    .line 1
     invoke-direct {p0, p1, v0, v1}, Lcom/umeng/analytics/pro/bi;-><init>(Lcom/umeng/analytics/pro/cd;ZZ)V
 
     return-void
@@ -75,72 +72,58 @@
 .method public constructor <init>(Lcom/umeng/analytics/pro/cd;ZZ)V
     .locals 4
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/umeng/analytics/pro/bp;-><init>(Lcom/umeng/analytics/pro/cd;)V
 
     const/4 p1, 0x0
 
-    .line 3
     iput-boolean p1, p0, Lcom/umeng/analytics/pro/bi;->c:Z
 
     const/4 v0, 0x1
 
-    .line 4
     iput-boolean v0, p0, Lcom/umeng/analytics/pro/bi;->d:Z
 
-    .line 5
     iput-boolean p1, p0, Lcom/umeng/analytics/pro/bi;->f:Z
 
     new-array p1, v0, [B
 
-    .line 6
     iput-object p1, p0, Lcom/umeng/analytics/pro/bi;->i:[B
 
     const/4 p1, 0x2
 
     new-array v1, p1, [B
 
-    .line 7
     iput-object v1, p0, Lcom/umeng/analytics/pro/bi;->j:[B
 
     const/4 v1, 0x4
 
     new-array v2, v1, [B
 
-    .line 8
     iput-object v2, p0, Lcom/umeng/analytics/pro/bi;->k:[B
 
     const/16 v2, 0x8
 
     new-array v3, v2, [B
 
-    .line 9
     iput-object v3, p0, Lcom/umeng/analytics/pro/bi;->l:[B
 
     new-array v0, v0, [B
 
-    .line 10
     iput-object v0, p0, Lcom/umeng/analytics/pro/bi;->m:[B
 
     new-array p1, p1, [B
 
-    .line 11
     iput-object p1, p0, Lcom/umeng/analytics/pro/bi;->n:[B
 
     new-array p1, v1, [B
 
-    .line 12
     iput-object p1, p0, Lcom/umeng/analytics/pro/bi;->o:[B
 
     new-array p1, v2, [B
 
-    .line 13
     iput-object p1, p0, Lcom/umeng/analytics/pro/bi;->p:[B
 
-    .line 14
     iput-boolean p2, p0, Lcom/umeng/analytics/pro/bi;->c:Z
 
-    .line 15
     iput-boolean p3, p0, Lcom/umeng/analytics/pro/bi;->d:Z
 
     return-void
@@ -154,10 +137,8 @@
         }
     .end annotation
 
-    .line 46
     invoke-virtual {p0, p3}, Lcom/umeng/analytics/pro/bi;->d(I)V
 
-    .line 47
     iget-object v0, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/umeng/analytics/pro/cd;->d([BII)I
@@ -177,15 +158,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bi;->w()I
 
     move-result v0
 
-    .line 2
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->d(I)V
 
-    .line 3
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/pro/cd;->h()I
@@ -194,7 +172,6 @@
 
     if-lt v1, v0, :cond_0
 
-    .line 4
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/pro/cd;->f()[B
@@ -211,25 +188,21 @@
 
     move-result-object v1
 
-    .line 5
     iget-object v2, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v2, v0}, Lcom/umeng/analytics/pro/cd;->a(I)V
 
     return-object v1
 
-    .line 6
     :cond_0
     new-array v1, v0, [B
 
-    .line 7
     iget-object v2, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     const/4 v3, 0x0
 
     invoke-virtual {v2, v1, v3, v0}, Lcom/umeng/analytics/pro/cd;->d([BII)I
 
-    .line 8
     invoke-static {v1}, Ljava/nio/ByteBuffer;->wrap([B)Ljava/nio/ByteBuffer;
 
     move-result-object v0
@@ -251,14 +224,12 @@
         }
     .end annotation
 
-    .line 19
     iget-object v0, p0, Lcom/umeng/analytics/pro/bi;->i:[B
 
     const/4 v1, 0x0
 
     aput-byte p1, v0, v1
 
-    .line 20
     iget-object p1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     const/4 v2, 0x1
@@ -276,7 +247,6 @@
         }
     .end annotation
 
-    .line 38
     invoke-static {p1, p2}, Ljava/lang/Double;->doubleToLongBits(D)J
 
     move-result-wide p1
@@ -294,7 +264,6 @@
         }
     .end annotation
 
-    .line 24
     iget-object v0, p0, Lcom/umeng/analytics/pro/bi;->k:[B
 
     shr-int/lit8 v1, p1, 0x18
@@ -315,7 +284,6 @@
 
     const/4 v3, 0x1
 
-    .line 25
     aput-byte v1, v0, v3
 
     shr-int/lit8 v1, p1, 0x8
@@ -326,7 +294,6 @@
 
     const/4 v3, 0x2
 
-    .line 26
     aput-byte v1, v0, v3
 
     and-int/lit16 p1, p1, 0xff
@@ -335,10 +302,8 @@
 
     const/4 v1, 0x3
 
-    .line 27
     aput-byte p1, v0, v1
 
-    .line 28
     iget-object p1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     const/4 v1, 0x4
@@ -356,7 +321,6 @@
         }
     .end annotation
 
-    .line 29
     iget-object v0, p0, Lcom/umeng/analytics/pro/bi;->l:[B
 
     const/16 v1, 0x38
@@ -387,7 +351,6 @@
 
     const/4 v5, 0x1
 
-    .line 30
     aput-byte v1, v0, v5
 
     const/16 v1, 0x28
@@ -402,7 +365,6 @@
 
     const/4 v5, 0x2
 
-    .line 31
     aput-byte v1, v0, v5
 
     const/16 v1, 0x20
@@ -417,7 +379,6 @@
 
     const/4 v5, 0x3
 
-    .line 32
     aput-byte v1, v0, v5
 
     const/16 v1, 0x18
@@ -432,7 +393,6 @@
 
     const/4 v5, 0x4
 
-    .line 33
     aput-byte v1, v0, v5
 
     const/16 v1, 0x10
@@ -447,7 +407,6 @@
 
     const/4 v5, 0x5
 
-    .line 34
     aput-byte v1, v0, v5
 
     const/16 v1, 0x8
@@ -462,7 +421,6 @@
 
     const/4 v6, 0x6
 
-    .line 35
     aput-byte v5, v0, v6
 
     and-long/2addr p1, v3
@@ -473,10 +431,8 @@
 
     const/4 p2, 0x7
 
-    .line 36
     aput-byte p1, v0, p2
 
-    .line 37
     iget-object p1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {p1, v0, v2, v1}, Lcom/umeng/analytics/pro/cd;->b([BII)V
@@ -492,12 +448,10 @@
         }
     .end annotation
 
-    .line 9
     iget-byte v0, p1, Lcom/umeng/analytics/pro/bk;->b:B
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(B)V
 
-    .line 10
     iget-short p1, p1, Lcom/umeng/analytics/pro/bk;->c:S
 
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/bi;->a(S)V
@@ -513,12 +467,10 @@
         }
     .end annotation
 
-    .line 14
     iget-byte v0, p1, Lcom/umeng/analytics/pro/bl;->a:B
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(B)V
 
-    .line 15
     iget p1, p1, Lcom/umeng/analytics/pro/bl;->b:I
 
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/bi;->a(I)V
@@ -534,17 +486,14 @@
         }
     .end annotation
 
-    .line 11
     iget-byte v0, p1, Lcom/umeng/analytics/pro/bm;->a:B
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(B)V
 
-    .line 12
     iget-byte v0, p1, Lcom/umeng/analytics/pro/bm;->b:B
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(B)V
 
-    .line 13
     iget p1, p1, Lcom/umeng/analytics/pro/bm;->c:I
 
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/bi;->a(I)V
@@ -560,45 +509,37 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Lcom/umeng/analytics/pro/bi;->d:Z
 
     if-eqz v0, :cond_0
 
     const/high16 v0, -0x7fff0000
 
-    .line 2
     iget-byte v1, p1, Lcom/umeng/analytics/pro/bn;->b:B
 
     or-int/2addr v0, v1
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(I)V
 
-    .line 4
     iget-object v0, p1, Lcom/umeng/analytics/pro/bn;->a:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(Ljava/lang/String;)V
 
-    .line 5
     iget p1, p1, Lcom/umeng/analytics/pro/bn;->c:I
 
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/bi;->a(I)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v0, p1, Lcom/umeng/analytics/pro/bn;->a:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(Ljava/lang/String;)V
 
-    .line 7
     iget-byte v0, p1, Lcom/umeng/analytics/pro/bn;->b:B
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(B)V
 
-    .line 8
     iget p1, p1, Lcom/umeng/analytics/pro/bn;->c:I
 
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/bi;->a(I)V
@@ -615,12 +556,10 @@
         }
     .end annotation
 
-    .line 16
     iget-byte v0, p1, Lcom/umeng/analytics/pro/bt;->a:B
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(B)V
 
-    .line 17
     iget p1, p1, Lcom/umeng/analytics/pro/bt;->b:I
 
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/bi;->a(I)V
@@ -645,17 +584,14 @@
     :try_start_0
     const-string v0, "UTF-8"
 
-    .line 39
     invoke-virtual {p1, v0}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
 
     move-result-object p1
 
-    .line 40
     array-length v0, p1
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(I)V
 
-    .line 41
     iget-object v0, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     const/4 v1, 0x0
@@ -668,7 +604,6 @@
 
     return-void
 
-    .line 42
     :catch_0
     new-instance p1, Lcom/umeng/analytics/pro/aw;
 
@@ -687,7 +622,6 @@
         }
     .end annotation
 
-    .line 43
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->limit()I
 
     move-result v0
@@ -698,10 +632,8 @@
 
     sub-int/2addr v0, v1
 
-    .line 44
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(I)V
 
-    .line 45
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->array()[B
@@ -731,7 +663,6 @@
         }
     .end annotation
 
-    .line 21
     iget-object v0, p0, Lcom/umeng/analytics/pro/bi;->j:[B
 
     shr-int/lit8 v1, p1, 0x8
@@ -750,10 +681,8 @@
 
     const/4 v1, 0x1
 
-    .line 22
     aput-byte p1, v0, v1
 
-    .line 23
     iget-object p1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     const/4 v1, 0x2
@@ -771,7 +700,6 @@
         }
     .end annotation
 
-    .line 18
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/bi;->a(B)V
 
     return-void
@@ -785,21 +713,17 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     invoke-virtual {p0, p1}, Lcom/umeng/analytics/pro/bi;->d(I)V
 
-    .line 2
     new-array v0, p1, [B
 
-    .line 3
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v0, v2, p1}, Lcom/umeng/analytics/pro/cd;->d([BII)I
 
-    .line 4
     new-instance p1, Ljava/lang/String;
 
     const-string v1, "UTF-8"
@@ -810,7 +734,6 @@
 
     return-object p1
 
-    .line 5
     :catch_0
     new-instance p1, Lcom/umeng/analytics/pro/aw;
 
@@ -836,12 +759,10 @@
 .method public c(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/umeng/analytics/pro/bi;->e:I
 
     const/4 p1, 0x1
 
-    .line 2
     iput-boolean p1, p0, Lcom/umeng/analytics/pro/bi;->f:Z
 
     return-void
@@ -857,7 +778,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->a(B)V
 
     return-void
@@ -873,12 +793,10 @@
 
     if-ltz p1, :cond_2
 
-    .line 2
     iget-boolean v0, p0, Lcom/umeng/analytics/pro/bi;->f:Z
 
     if-eqz v0, :cond_1
 
-    .line 3
     iget v0, p0, Lcom/umeng/analytics/pro/bi;->e:I
 
     sub-int/2addr v0, p1
@@ -889,7 +807,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     new-instance v0, Lcom/umeng/analytics/pro/bq;
 
@@ -915,7 +832,6 @@
     :goto_0
     return-void
 
-    .line 5
     :cond_2
     new-instance v0, Lcom/umeng/analytics/pro/bq;
 
@@ -964,7 +880,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bi;->w()I
 
     move-result v0
@@ -981,7 +896,6 @@
 
     if-ne v2, v3, :cond_0
 
-    .line 2
     new-instance v1, Lcom/umeng/analytics/pro/bn;
 
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bi;->z()Ljava/lang/String;
@@ -1000,7 +914,6 @@
 
     return-object v1
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/umeng/analytics/pro/bq;
 
@@ -1010,13 +923,11 @@
 
     throw v0
 
-    .line 4
     :cond_1
     iget-boolean v2, p0, Lcom/umeng/analytics/pro/bi;->c:Z
 
     if-nez v2, :cond_2
 
-    .line 5
     new-instance v1, Lcom/umeng/analytics/pro/bn;
 
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->b(I)Ljava/lang/String;
@@ -1035,7 +946,6 @@
 
     return-object v1
 
-    .line 6
     :cond_2
     new-instance v0, Lcom/umeng/analytics/pro/bq;
 
@@ -1055,7 +965,6 @@
 .method public j()Lcom/umeng/analytics/pro/bu;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/analytics/pro/bi;->h:Lcom/umeng/analytics/pro/bu;
 
     return-object v0
@@ -1075,7 +984,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bi;->u()B
 
     move-result v0
@@ -1086,13 +994,11 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bi;->v()S
 
     move-result v1
 
-    .line 3
     :goto_0
     new-instance v2, Lcom/umeng/analytics/pro/bk;
 
@@ -1117,7 +1023,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/umeng/analytics/pro/bm;
 
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bi;->u()B
@@ -1151,7 +1056,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/umeng/analytics/pro/bl;
 
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bi;->u()B
@@ -1181,7 +1085,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/umeng/analytics/pro/bt;
 
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bi;->u()B
@@ -1211,7 +1114,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bi;->u()B
 
     move-result v0
@@ -1237,7 +1139,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v0}, Lcom/umeng/analytics/pro/cd;->h()I
@@ -1248,7 +1149,6 @@
 
     if-lt v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v0}, Lcom/umeng/analytics/pro/cd;->f()[B
@@ -1263,14 +1163,12 @@
 
     aget-byte v0, v0, v2
 
-    .line 3
     iget-object v2, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v2, v1}, Lcom/umeng/analytics/pro/cd;->a(I)V
 
     return v0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/bi;->m:[B
 
@@ -1278,7 +1176,6 @@
 
     invoke-direct {p0, v0, v2, v1}, Lcom/umeng/analytics/pro/bi;->a([BII)I
 
-    .line 5
     iget-object v0, p0, Lcom/umeng/analytics/pro/bi;->m:[B
 
     aget-byte v0, v0, v2
@@ -1294,10 +1191,8 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/analytics/pro/bi;->n:[B
 
-    .line 2
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/pro/cd;->h()I
@@ -1310,34 +1205,29 @@
 
     if-lt v1, v3, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v0}, Lcom/umeng/analytics/pro/cd;->f()[B
 
     move-result-object v0
 
-    .line 4
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/pro/cd;->g()I
 
     move-result v2
 
-    .line 5
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1, v3}, Lcom/umeng/analytics/pro/cd;->a(I)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v1, p0, Lcom/umeng/analytics/pro/bi;->n:[B
 
     invoke-direct {p0, v1, v2, v3}, Lcom/umeng/analytics/pro/bi;->a([BII)I
 
-    .line 7
     :goto_0
     aget-byte v1, v0, v2
 
@@ -1366,10 +1256,8 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/analytics/pro/bi;->o:[B
 
-    .line 2
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/pro/cd;->h()I
@@ -1382,34 +1270,29 @@
 
     if-lt v1, v3, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v0}, Lcom/umeng/analytics/pro/cd;->f()[B
 
     move-result-object v0
 
-    .line 4
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/pro/cd;->g()I
 
     move-result v2
 
-    .line 5
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1, v3}, Lcom/umeng/analytics/pro/cd;->a(I)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v1, p0, Lcom/umeng/analytics/pro/bi;->o:[B
 
     invoke-direct {p0, v1, v2, v3}, Lcom/umeng/analytics/pro/bi;->a([BII)I
 
-    .line 7
     :goto_0
     aget-byte v1, v0, v2
 
@@ -1456,10 +1339,8 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/umeng/analytics/pro/bi;->p:[B
 
-    .line 2
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/pro/cd;->h()I
@@ -1472,34 +1353,29 @@
 
     if-lt v1, v3, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v0}, Lcom/umeng/analytics/pro/cd;->f()[B
 
     move-result-object v0
 
-    .line 4
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/pro/cd;->g()I
 
     move-result v2
 
-    .line 5
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1, v3}, Lcom/umeng/analytics/pro/cd;->a(I)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     iget-object v1, p0, Lcom/umeng/analytics/pro/bi;->p:[B
 
     invoke-direct {p0, v1, v2, v3}, Lcom/umeng/analytics/pro/bi;->a([BII)I
 
-    .line 7
     :goto_0
     aget-byte v1, v0, v2
 
@@ -1614,7 +1490,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bi;->x()J
 
     move-result-wide v0
@@ -1634,12 +1509,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/bi;->w()I
 
     move-result v0
 
-    .line 2
     iget-object v1, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v1}, Lcom/umeng/analytics/pro/cd;->h()I
@@ -1648,7 +1521,6 @@
 
     if-lt v1, v0, :cond_0
 
-    .line 3
     :try_start_0
     new-instance v1, Ljava/lang/String;
 
@@ -1668,7 +1540,6 @@
 
     invoke-direct {v1, v2, v3, v0, v4}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
 
-    .line 4
     iget-object v2, p0, Lcom/umeng/analytics/pro/bp;->g:Lcom/umeng/analytics/pro/cd;
 
     invoke-virtual {v2, v0}, Lcom/umeng/analytics/pro/cd;->a(I)V
@@ -1677,7 +1548,6 @@
 
     return-object v1
 
-    .line 5
     :catch_0
     new-instance v0, Lcom/umeng/analytics/pro/aw;
 
@@ -1687,7 +1557,6 @@
 
     throw v0
 
-    .line 6
     :cond_0
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/bi;->b(I)Ljava/lang/String;
 

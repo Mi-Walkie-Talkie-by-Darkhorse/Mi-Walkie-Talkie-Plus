@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;
 .super Ljava/lang/Object;
-.source "ActivateDeviceActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,12 +36,10 @@
 .method public run()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/baseui/BaseActivity;->j()V
 
-    .line 2
     new-instance v0, Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     iget-object v1, p0, Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity$b;->a:Lcom/ifengyu/intercom/ui/activity/ActivateDeviceActivity;
@@ -92,7 +88,6 @@
 
     const v2, 0x7f110093
 
-    .line 3
     invoke-virtual {v1, v2}, Landroid/app/Activity;->getString(I)Ljava/lang/String;
 
     move-result-object v1
@@ -103,7 +98,6 @@
 
     invoke-virtual {v0, v1, v2}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->c(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
-    .line 4
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->a()Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-virtual {v0}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->d()V

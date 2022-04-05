@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/widget/SearchViewQueryTextChangesObservable;
 .super Lcom/jakewharton/rxbinding3/InitialValueObservable;
-.source "SearchViewQueryTextChangesObservable.kt"
 
 
 # annotations
@@ -70,7 +69,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lcom/jakewharton/rxbinding3/InitialValueObservable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/SearchViewQueryTextChangesObservable;->view:Landroid/widget/SearchView;
@@ -83,7 +81,6 @@
 .method protected getInitialValue()Ljava/lang/CharSequence;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/SearchViewQueryTextChangesObservable;->view:Landroid/widget/SearchView;
 
     invoke-virtual {v0}, Landroid/widget/SearchView;->getQuery()Ljava/lang/CharSequence;
@@ -96,7 +93,6 @@
 .method public bridge synthetic getInitialValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/jakewharton/rxbinding3/widget/SearchViewQueryTextChangesObservable;->getInitialValue()Ljava/lang/CharSequence;
 
     move-result-object v0
@@ -124,7 +120,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-static {p1}, Lcom/jakewharton/rxbinding3/internal/Preconditions;->checkMainThread(Lio/reactivex/Observer;)Z
 
     move-result v0
@@ -133,7 +128,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/jakewharton/rxbinding3/widget/SearchViewQueryTextChangesObservable$Listener;
 
@@ -141,12 +135,10 @@
 
     invoke-direct {v0, v1, p1}, Lcom/jakewharton/rxbinding3/widget/SearchViewQueryTextChangesObservable$Listener;-><init>(Landroid/widget/SearchView;Lio/reactivex/Observer;)V
 
-    .line 3
     iget-object v1, p0, Lcom/jakewharton/rxbinding3/widget/SearchViewQueryTextChangesObservable;->view:Landroid/widget/SearchView;
 
     invoke-virtual {v1, v0}, Landroid/widget/SearchView;->setOnQueryTextListener(Landroid/widget/SearchView$OnQueryTextListener;)V
 
-    .line 4
     invoke-interface {p1, v0}, Lio/reactivex/Observer;->onSubscribe(Lio/reactivex/disposables/Disposable;)V
 
     return-void

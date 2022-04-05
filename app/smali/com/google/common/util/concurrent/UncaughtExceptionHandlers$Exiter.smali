@@ -1,6 +1,5 @@
 .class final Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;
 .super Ljava/lang/Object;
-.source "UncaughtExceptionHandlers.java"
 
 # interfaces
 .implements Ljava/lang/Thread$UncaughtExceptionHandler;
@@ -32,7 +31,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     const-class v0, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -51,10 +49,8 @@
 .method constructor <init>(Ljava/lang/Runtime;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;->runtime:Ljava/lang/Runtime;
 
     return-void
@@ -67,7 +63,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     :try_start_0
     sget-object v1, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;->logger:Ljava/util/logging/Logger;
 
@@ -89,7 +84,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     :goto_0
     iget-object p1, p0, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;->runtime:Ljava/lang/Runtime;
 
@@ -100,7 +94,6 @@
     :catchall_0
     move-exception p1
 
-    .line 3
     :try_start_1
     sget-object v1, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
@@ -110,7 +103,6 @@
 
     invoke-virtual {v1, p2}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
 
-    .line 4
     sget-object p2, Ljava/lang/System;->err:Ljava/io/PrintStream;
 
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
@@ -129,7 +121,6 @@
     :catchall_1
     move-exception p1
 
-    .line 5
     iget-object p2, p0, Lcom/google/common/util/concurrent/UncaughtExceptionHandlers$Exiter;->runtime:Ljava/lang/Runtime;
 
     invoke-virtual {p2, v0}, Ljava/lang/Runtime;->exit(I)V

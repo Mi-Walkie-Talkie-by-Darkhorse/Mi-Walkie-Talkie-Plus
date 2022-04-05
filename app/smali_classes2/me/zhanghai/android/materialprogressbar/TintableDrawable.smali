@@ -1,6 +1,5 @@
 .class public interface abstract Lme/zhanghai/android/materialprogressbar/TintableDrawable;
 .super Ljava/lang/Object;
-.source "TintableDrawable.java"
 
 
 # virtual methods

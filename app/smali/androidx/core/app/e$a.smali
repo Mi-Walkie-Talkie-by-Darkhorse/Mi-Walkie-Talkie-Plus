@@ -1,6 +1,5 @@
 .class Landroidx/core/app/e$a;
 .super Ljava/lang/Object;
-.source "BundleCompat.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method public static a(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/IBinder;
     .locals 7
 
-    .line 1
     sget-boolean v0, Landroidx/core/app/e$a;->b:Z
 
     const/4 v1, 0x0
@@ -39,7 +37,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     :try_start_0
     const-class v0, Landroid/os/Bundle;
 
@@ -57,7 +54,6 @@
 
     sput-object v0, Landroidx/core/app/e$a;->a:Ljava/lang/reflect/Method;
 
-    .line 3
     invoke-virtual {v0, v3}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
@@ -69,14 +65,11 @@
 
     const-string v4, "Failed to retrieve getIBinder method"
 
-    .line 4
     invoke-static {v2, v4, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 5
     :goto_0
     sput-boolean v3, Landroidx/core/app/e$a;->b:Z
 
-    .line 6
     :cond_0
     sget-object v0, Landroidx/core/app/e$a;->a:Ljava/lang/reflect/Method;
 
@@ -89,7 +82,6 @@
 
     aput-object p1, v3, v1
 
-    .line 7
     invoke-virtual {v0, p0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -118,10 +110,8 @@
     :goto_1
     const-string p1, "Failed to invoke getIBinder via reflection"
 
-    .line 8
     invoke-static {v2, p1, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 9
     sput-object v4, Landroidx/core/app/e$a;->a:Ljava/lang/reflect/Method;
 
     :cond_1
@@ -131,7 +121,6 @@
 .method public static a(Landroid/os/Bundle;Ljava/lang/String;Landroid/os/IBinder;)V
     .locals 8
 
-    .line 10
     sget-boolean v0, Landroidx/core/app/e$a;->d:Z
 
     const/4 v1, 0x0
@@ -144,7 +133,6 @@
 
     if-nez v0, :cond_0
 
-    .line 11
     :try_start_0
     const-class v0, Landroid/os/Bundle;
 
@@ -160,14 +148,12 @@
 
     aput-object v7, v6, v4
 
-    .line 12
     invoke-virtual {v0, v5, v6}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v0
 
     sput-object v0, Landroidx/core/app/e$a;->c:Ljava/lang/reflect/Method;
 
-    .line 13
     invoke-virtual {v0, v4}, Ljava/lang/reflect/Method;->setAccessible(Z)V
     :try_end_0
     .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
@@ -179,14 +165,11 @@
 
     const-string v5, "Failed to retrieve putIBinder method"
 
-    .line 14
     invoke-static {v2, v5, v0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    .line 15
     :goto_0
     sput-boolean v4, Landroidx/core/app/e$a;->d:Z
 
-    .line 16
     :cond_0
     sget-object v0, Landroidx/core/app/e$a;->c:Ljava/lang/reflect/Method;
 
@@ -199,7 +182,6 @@
 
     aput-object p2, v3, v4
 
-    .line 17
     invoke-virtual {v0, p0, v3}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
     :try_end_1
     .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_1 .. :try_end_1} :catch_3
@@ -224,12 +206,10 @@
     :goto_1
     const-string p1, "Failed to invoke putIBinder via reflection"
 
-    .line 18
     invoke-static {v2, p1, p0}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
     const/4 p0, 0x0
 
-    .line 19
     sput-object p0, Landroidx/core/app/e$a;->c:Ljava/lang/reflect/Method;
 
     :cond_1

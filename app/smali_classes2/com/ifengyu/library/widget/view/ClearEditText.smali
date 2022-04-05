@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/library/widget/view/ClearEditText;
 .super Landroidx/appcompat/widget/AppCompatEditText;
-.source "ClearEditText.java"
 
 # interfaces
 .implements Landroid/view/View$OnFocusChangeListener;
@@ -19,7 +18,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Lcom/ifengyu/library/widget/view/ClearEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     return-void
@@ -28,7 +26,6 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
     .locals 1
 
-    .line 2
     sget v0, Lcom/ifengyu/library/R$attr;->editTextStyle:I
 
     invoke-direct {p0, p1, p2, v0}, Lcom/ifengyu/library/widget/view/ClearEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -39,10 +36,8 @@
 .method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatEditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    .line 4
     invoke-direct {p0}, Lcom/ifengyu/library/widget/view/ClearEditText;->a()V
 
     return-void
@@ -51,7 +46,6 @@
 .method public static a(I)Landroid/view/animation/TranslateAnimation;
     .locals 3
 
-    .line 7
     new-instance v0, Landroid/view/animation/TranslateAnimation;
 
     const/4 v1, 0x0
@@ -60,7 +54,6 @@
 
     invoke-direct {v0, v1, v2, v1, v1}, Landroid/view/animation/TranslateAnimation;-><init>(FFFF)V
 
-    .line 8
     new-instance v1, Landroid/view/animation/CycleInterpolator;
 
     int-to-float p0, p0
@@ -71,7 +64,6 @@
 
     const-wide/16 v1, 0x3e8
 
-    .line 9
     invoke-virtual {v0, v1, v2}, Landroid/view/animation/TranslateAnimation;->setDuration(J)V
 
     return-object v0
@@ -80,7 +72,6 @@
 .method private a()V
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Landroid/widget/EditText;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -93,7 +84,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/EditText;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -106,7 +96,6 @@
 
     iput-object v0, p0, Lcom/ifengyu/library/widget/view/ClearEditText;->a:Landroid/graphics/drawable/Drawable;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/library/widget/view/ClearEditText;->a:Landroid/graphics/drawable/Drawable;
 
@@ -124,13 +113,10 @@
 
     invoke-virtual {v0, v3, v3, v1, v2}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
-    .line 4
     invoke-virtual {p0, v3}, Lcom/ifengyu/library/widget/view/ClearEditText;->setClearIconVisible(Z)V
 
-    .line 5
     invoke-virtual {p0, p0}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    .line 6
     invoke-virtual {p0, p0}, Landroid/widget/EditText;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     return-void
@@ -153,18 +139,14 @@
 .method protected onDetachedFromWindow()V
     .locals 2
 
-    .line 1
     invoke-virtual {p0, p0}, Landroid/widget/EditText;->removeTextChangedListener(Landroid/text/TextWatcher;)V
 
     const/4 v0, 0x0
 
-    .line 2
     invoke-virtual {p0, v0}, Landroid/widget/EditText;->setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
 
-    .line 3
     iput-object v0, p0, Lcom/ifengyu/library/widget/view/ClearEditText;->a:Landroid/graphics/drawable/Drawable;
 
-    .line 4
     const-class v0, Lcom/ifengyu/library/widget/view/ClearEditText;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -175,7 +157,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/library/a/g;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     invoke-super {p0}, Landroid/widget/EditText;->onDetachedFromWindow()V
 
     return-void
@@ -184,14 +165,12 @@
 .method public onFocusChange(Landroid/view/View;Z)V
     .locals 0
 
-    .line 1
     iput-boolean p2, p0, Lcom/ifengyu/library/widget/view/ClearEditText;->b:Z
 
     const/4 p1, 0x0
 
     if-eqz p2, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Landroidx/appcompat/widget/AppCompatEditText;->getText()Landroid/text/Editable;
 
     move-result-object p2
@@ -209,7 +188,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     invoke-virtual {p0, p1}, Lcom/ifengyu/library/widget/view/ClearEditText;->setClearIconVisible(Z)V
 
@@ -220,12 +198,10 @@
 .method public onTextChanged(Ljava/lang/CharSequence;III)V
     .locals 0
 
-    .line 1
     iget-boolean p2, p0, Lcom/ifengyu/library/widget/view/ClearEditText;->b:Z
 
     if-eqz p2, :cond_1
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result p1
@@ -249,7 +225,6 @@
 .method public onTouchEvent(Landroid/view/MotionEvent;)Z
     .locals 4
 
-    .line 1
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
 
     move-result v0
@@ -258,7 +233,6 @@
 
     if-ne v0, v1, :cond_1
 
-    .line 2
     invoke-virtual {p0}, Landroid/widget/EditText;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
@@ -269,7 +243,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
@@ -290,7 +263,6 @@
 
     if-lez v0, :cond_0
 
-    .line 4
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
@@ -321,13 +293,10 @@
 
     const/4 v0, 0x0
 
-    .line 5
     invoke-virtual {p0, v0}, Landroid/widget/EditText;->setError(Ljava/lang/CharSequence;)V
 
-    .line 6
     invoke-virtual {p0, v0}, Landroid/widget/EditText;->setText(Ljava/lang/CharSequence;)V
 
-    .line 7
     :cond_1
     invoke-super {p0, p1}, Landroid/widget/EditText;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -341,7 +310,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     iget-object p1, p0, Lcom/ifengyu/library/widget/view/ClearEditText;->a:Landroid/graphics/drawable/Drawable;
 
     goto :goto_0
@@ -349,7 +317,6 @@
     :cond_0
     const/4 p1, 0x0
 
-    .line 2
     :goto_0
     invoke-virtual {p0}, Landroid/widget/EditText;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
@@ -359,7 +326,6 @@
 
     aget-object v0, v0, v1
 
-    .line 3
     invoke-virtual {p0}, Landroid/widget/EditText;->getCompoundDrawables()[Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
@@ -376,7 +342,6 @@
 
     aget-object v2, v2, v3
 
-    .line 4
     invoke-virtual {p0, v0, v1, p1, v2}, Landroid/widget/EditText;->setCompoundDrawables(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
 
     return-void
@@ -387,7 +352,6 @@
 
     const/4 v0, 0x5
 
-    .line 1
     invoke-static {v0}, Lcom/ifengyu/library/widget/view/ClearEditText;->a(I)Landroid/view/animation/TranslateAnimation;
 
     move-result-object v0

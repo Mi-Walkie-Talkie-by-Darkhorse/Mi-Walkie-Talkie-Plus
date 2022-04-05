@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$d;
 .super Ljava/lang/Object;
-.source "UpdateMcuActivity.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/t$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$d;->a:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$d;->a:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;->c(Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;)Lcom/ifengyu/intercom/ui/widget/view/ProgressCircle$STATE;
@@ -49,7 +46,6 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity$d;->a:Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;->b(Lcom/ifengyu/intercom/update/dolphin/UpdateMcuActivity;)V

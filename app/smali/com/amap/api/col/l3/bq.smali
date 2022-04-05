@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/bq;
 .super Ljava/lang/Object;
-.source "NetFileFetch.java"
 
 # interfaces
 .implements Lcom/amap/api/col/l3/hz$a;
@@ -51,55 +50,42 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/bq;->a:Lcom/amap/api/col/l3/br;
 
     const-wide/16 v0, 0x0
 
-    .line 3
     iput-wide v0, p0, Lcom/amap/api/col/l3/bq;->b:J
 
-    .line 4
     iput-wide v0, p0, Lcom/amap/api/col/l3/bq;->c:J
 
     const/4 v2, 0x1
 
-    .line 5
     iput-boolean v2, p0, Lcom/amap/api/col/l3/bq;->e:Z
 
-    .line 6
     iput-wide v0, p0, Lcom/amap/api/col/l3/bq;->g:J
 
-    .line 7
     invoke-virtual {p3}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v2
 
-    .line 8
     invoke-static {v2}, Lcom/amap/api/col/l3/bl;->a(Landroid/content/Context;)Lcom/amap/api/col/l3/bl;
 
     move-result-object v2
 
     iput-object v2, p0, Lcom/amap/api/col/l3/bq;->f:Lcom/amap/api/col/l3/bl;
 
-    .line 9
     iput-object p1, p0, Lcom/amap/api/col/l3/bq;->a:Lcom/amap/api/col/l3/br;
 
-    .line 10
     iput-object p3, p0, Lcom/amap/api/col/l3/bq;->i:Landroid/content/Context;
 
-    .line 11
     iput-object p2, p0, Lcom/amap/api/col/l3/bq;->k:Ljava/lang/String;
 
-    .line 12
     iput-object p4, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
-    .line 13
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -187,7 +173,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/net/URL;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/bq;->a:Lcom/amap/api/col/l3/br;
@@ -198,21 +183,18 @@
 
     invoke-direct {v0, v1}, Ljava/net/URL;-><init>(Ljava/lang/String;)V
 
-    .line 2
     invoke-virtual {v0}, Ljava/net/URL;->openConnection()Ljava/net/URLConnection;
 
     move-result-object v0
 
     check-cast v0, Ljava/net/HttpURLConnection;
 
-    .line 3
     sget-object v1, Lcom/amap/api/col/l3/p;->c:Ljava/lang/String;
 
     const-string v2, "User-Agent"
 
     invoke-virtual {v0, v2, v1}, Ljava/net/HttpURLConnection;->setRequestProperty(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 4
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->getResponseCode()I
 
     move-result v1
@@ -228,7 +210,6 @@
     :cond_0
     const/4 v1, 0x1
 
-    .line 5
     :goto_0
     invoke-virtual {v0, v1}, Ljava/net/HttpURLConnection;->getHeaderFieldKey(I)Ljava/lang/String;
 
@@ -238,19 +219,16 @@
 
     const-string v3, "Content-Length"
 
-    .line 6
     invoke-virtual {v2, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    .line 7
     invoke-virtual {v0, v2}, Ljava/net/HttpURLConnection;->getHeaderField(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 8
     invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
     move-result v0
@@ -274,12 +252,10 @@
 .method private f()V
     .locals 7
 
-    .line 1
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    .line 2
     iget-object v2, p0, Lcom/amap/api/col/l3/bq;->a:Lcom/amap/api/col/l3/br;
 
     if-eqz v2, :cond_0
@@ -294,13 +270,10 @@
 
     if-lez v6, :cond_0
 
-    .line 3
     invoke-direct {p0}, Lcom/amap/api/col/l3/bq;->g()V
 
-    .line 4
     iput-wide v0, p0, Lcom/amap/api/col/l3/bq;->g:J
 
-    .line 5
     iget-wide v0, p0, Lcom/amap/api/col/l3/bq;->b:J
 
     iget-wide v2, p0, Lcom/amap/api/col/l3/bq;->d:J
@@ -330,7 +303,6 @@
 .method private g()V
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bq;->f:Lcom/amap/api/col/l3/bl;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/bq;->a:Lcom/amap/api/col/l3/br;
@@ -341,7 +313,6 @@
 
     iget-object v2, p0, Lcom/amap/api/col/l3/bq;->a:Lcom/amap/api/col/l3/br;
 
-    .line 2
     invoke-virtual {v2}, Lcom/amap/api/col/l3/br;->d()I
 
     move-result v2
@@ -352,7 +323,6 @@
 
     iget-wide v7, p0, Lcom/amap/api/col/l3/bq;->c:J
 
-    .line 3
     invoke-virtual/range {v0 .. v8}, Lcom/amap/api/col/l3/bl;->a(Ljava/lang/String;IJJJ)V
 
     return-void
@@ -365,7 +335,6 @@
 
     const-string v0, "SiteFileFetch"
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/bq;->i:Landroid/content/Context;
 
@@ -375,7 +344,6 @@
 
     if-eqz v1, :cond_a
 
-    .line 2
     sget v1, Lcom/amap/api/col/l3/fy;->a:I
     :try_end_0
     .catch Lcom/amap/api/maps/AMapException; {:try_start_0 .. :try_end_0} :catch_1
@@ -426,19 +394,16 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     :goto_1
     sget v1, Lcom/amap/api/col/l3/fy;->a:I
 
     if-eq v1, v3, :cond_3
 
-    .line 4
     iget-object v1, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     if-eqz v1, :cond_2
 
-    .line 5
     iget-object v1, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     sget-object v2, Lcom/amap/api/col/l3/bv$a;->a:Lcom/amap/api/col/l3/bv$a;
@@ -448,7 +413,6 @@
     :cond_2
     return-void
 
-    .line 6
     :cond_3
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -500,16 +464,13 @@
     :goto_2
     if-nez v2, :cond_5
 
-    .line 7
     iput-boolean v3, p0, Lcom/amap/api/col/l3/bq;->e:Z
 
-    .line 8
     :cond_5
     iget-boolean v1, p0, Lcom/amap/api/col/l3/bq;->e:Z
 
     if-eqz v1, :cond_7
 
-    .line 9
     invoke-direct {p0}, Lcom/amap/api/col/l3/bq;->e()J
 
     move-result-wide v1
@@ -528,27 +489,22 @@
 
     if-eqz v5, :cond_6
 
-    .line 10
     iput-wide v1, p0, Lcom/amap/api/col/l3/bq;->c:J
 
     :cond_6
     const-wide/16 v1, 0x0
 
-    .line 11
     iput-wide v1, p0, Lcom/amap/api/col/l3/bq;->b:J
 
-    .line 12
     :cond_7
     iget-object v1, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     if-eqz v1, :cond_8
 
-    .line 13
     iget-object v1, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     invoke-interface {v1}, Lcom/amap/api/col/l3/bv;->m()V
 
-    .line 14
     :cond_8
     iget-wide v1, p0, Lcom/amap/api/col/l3/bq;->b:J
 
@@ -558,12 +514,10 @@
 
     if-ltz v5, :cond_9
 
-    .line 15
     invoke-virtual {p0}, Lcom/amap/api/col/l3/bq;->d()V
 
     return-void
 
-    .line 16
     :cond_9
     new-instance v3, Lcom/amap/api/col/l3/bw;
 
@@ -625,20 +579,17 @@
 
     iput-object v1, p0, Lcom/amap/api/col/l3/bq;->m:Lcom/amap/api/col/l3/bm;
 
-    .line 17
     iget-object v1, p0, Lcom/amap/api/col/l3/bq;->l:Lcom/amap/api/col/l3/hz;
 
     invoke-virtual {v1, p0}, Lcom/amap/api/col/l3/hz;->a(Lcom/amap/api/col/l3/hz$a;)V
 
     return-void
 
-    .line 18
     :cond_a
     iget-object v1, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     if-eqz v1, :cond_b
 
-    .line 19
     iget-object v1, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     sget-object v2, Lcom/amap/api/col/l3/bv$a;->b:Lcom/amap/api/col/l3/bv$a;
@@ -654,12 +605,10 @@
     :catch_0
     nop
 
-    .line 20
     iget-object v0, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     if-eqz v0, :cond_c
 
-    .line 21
     sget-object v1, Lcom/amap/api/col/l3/bv$a;->c:Lcom/amap/api/col/l3/bv$a;
 
     invoke-interface {v0, v1}, Lcom/amap/api/col/l3/bv;->a(Lcom/amap/api/col/l3/bv$a;)V
@@ -672,15 +621,12 @@
 
     const-string v2, "download"
 
-    .line 22
     invoke-static {v1, v0, v2}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 23
     iget-object v0, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     if-eqz v0, :cond_d
 
-    .line 24
     sget-object v1, Lcom/amap/api/col/l3/bv$a;->a:Lcom/amap/api/col/l3/bv$a;
 
     invoke-interface {v0, v1}, Lcom/amap/api/col/l3/bv;->a(Lcom/amap/api/col/l3/bv$a;)V
@@ -692,7 +638,6 @@
 .method public final a(Lcom/amap/api/col/l3/bq$a;)V
     .locals 0
 
-    .line 39
     iput-object p1, p0, Lcom/amap/api/col/l3/bq;->h:Lcom/amap/api/col/l3/bq$a;
 
     return-void
@@ -701,17 +646,14 @@
 .method public final a(Ljava/lang/Throwable;)V
     .locals 2
 
-    .line 25
     iget-object v0, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     if-eqz v0, :cond_0
 
-    .line 26
     sget-object v1, Lcom/amap/api/col/l3/bv$a;->b:Lcom/amap/api/col/l3/bv$a;
 
     invoke-interface {v0, v1}, Lcom/amap/api/col/l3/bv;->a(Lcom/amap/api/col/l3/bv$a;)V
 
-    .line 27
     :cond_0
     instance-of p1, p1, Ljava/io/IOException;
 
@@ -719,13 +661,11 @@
 
     return-void
 
-    .line 28
     :cond_1
     iget-object p1, p0, Lcom/amap/api/col/l3/bq;->m:Lcom/amap/api/col/l3/bm;
 
     if-eqz p1, :cond_2
 
-    .line 29
     invoke-virtual {p1}, Lcom/amap/api/col/l3/bm;->a()V
 
     :cond_2
@@ -735,7 +675,6 @@
 .method public final a([BJ)V
     .locals 1
 
-    .line 30
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/bq;->m:Lcom/amap/api/col/l3/bm;
 
@@ -743,10 +682,8 @@
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 31
     iput-wide p2, p0, Lcom/amap/api/col/l3/bq;->b:J
 
-    .line 32
     invoke-direct {p0}, Lcom/amap/api/col/l3/bq;->f()V
 
     return-void
@@ -754,33 +691,27 @@
     :catch_0
     move-exception p1
 
-    .line 33
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     const-string p2, "fileAccessI"
 
     const-string p3, "fileAccessI.write(byte[] data)"
 
-    .line 34
     invoke-static {p1, p2, p3}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 35
     iget-object p1, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     if-eqz p1, :cond_0
 
-    .line 36
     sget-object p2, Lcom/amap/api/col/l3/bv$a;->c:Lcom/amap/api/col/l3/bv$a;
 
     invoke-interface {p1, p2}, Lcom/amap/api/col/l3/bv;->a(Lcom/amap/api/col/l3/bv$a;)V
 
-    .line 37
     :cond_0
     iget-object p1, p0, Lcom/amap/api/col/l3/bq;->l:Lcom/amap/api/col/l3/hz;
 
     if-eqz p1, :cond_1
 
-    .line 38
     invoke-virtual {p1}, Lcom/amap/api/col/l3/hz;->a()V
 
     :cond_1
@@ -790,12 +721,10 @@
 .method public final b()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bq;->l:Lcom/amap/api/col/l3/hz;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/amap/api/col/l3/hz;->a()V
 
     :cond_0
@@ -805,15 +734,12 @@
 .method public final c()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {v0}, Lcom/amap/api/col/l3/bv;->o()V
 
-    .line 3
     :cond_0
     invoke-direct {p0}, Lcom/amap/api/col/l3/bq;->g()V
 
@@ -823,33 +749,26 @@
 .method public final d()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/col/l3/bq;->f()V
 
-    .line 2
     iget-object v0, p0, Lcom/amap/api/col/l3/bq;->j:Lcom/amap/api/col/l3/bv;
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0}, Lcom/amap/api/col/l3/bv;->n()V
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/bq;->m:Lcom/amap/api/col/l3/bm;
 
     if-eqz v0, :cond_1
 
-    .line 5
     invoke-virtual {v0}, Lcom/amap/api/col/l3/bm;->a()V
 
-    .line 6
     :cond_1
     iget-object v0, p0, Lcom/amap/api/col/l3/bq;->h:Lcom/amap/api/col/l3/bq$a;
 
     if-eqz v0, :cond_2
 
-    .line 7
     invoke-interface {v0}, Lcom/amap/api/col/l3/bq$a;->d()V
 
     :cond_2

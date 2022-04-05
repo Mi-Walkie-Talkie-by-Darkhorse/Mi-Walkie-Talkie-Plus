@@ -1,6 +1,5 @@
 .class public Lcom/google/android/material/resources/MaterialAttributes;
 .super Ljava/lang/Object;
-.source "MaterialAttributes.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -34,12 +32,10 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p0
@@ -71,14 +67,12 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/android/material/resources/MaterialAttributes;->resolve(Landroid/content/Context;I)Landroid/util/TypedValue;
 
     move-result-object p0
 
     if-eqz p0, :cond_1
 
-    .line 2
     iget p1, p0, Landroid/util/TypedValue;->type:I
 
     const/16 v0, 0x12
@@ -116,7 +110,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0, p1, p2}, Lcom/google/android/material/resources/MaterialAttributes;->resolveOrThrow(Landroid/content/Context;ILjava/lang/String;)I
 
     move-result p0
@@ -151,14 +144,12 @@
     .annotation build Landroidx/annotation/Px;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/android/material/resources/MaterialAttributes;->resolve(Landroid/content/Context;I)Landroid/util/TypedValue;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    .line 2
     iget v0, p1, Landroid/util/TypedValue;->type:I
 
     const/4 v1, 0x5
@@ -167,7 +158,6 @@
 
     goto :goto_1
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -186,7 +176,6 @@
 
     return p0
 
-    .line 4
     :cond_1
     :goto_1
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -209,7 +198,6 @@
     .annotation build Landroidx/annotation/Px;
     .end annotation
 
-    .line 1
     sget v0, Lcom/google/android/material/R$attr;->minTouchTargetSize:I
 
     sget v1, Lcom/google/android/material/R$dimen;->mtrl_min_touch_target_size:I
@@ -236,19 +224,16 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/android/material/resources/MaterialAttributes;->resolve(Landroid/content/Context;I)Landroid/util/TypedValue;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget p0, v0, Landroid/util/TypedValue;->data:I
 
     return p0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -262,7 +247,6 @@
 
     const/4 p2, 0x1
 
-    .line 4
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -275,7 +259,6 @@
 
     const-string p0, "%1$s requires a value for the %2$s attribute to be set in your app theme. You can either set the attribute in your theme or update your theme to inherit from Theme.MaterialComponents (or a descendant)."
 
-    .line 5
     invoke-static {p0, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p0
@@ -296,7 +279,6 @@
         .end annotation
     .end param
 
-    .line 6
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
@@ -309,7 +291,6 @@
 
     move-result-object p0
 
-    .line 7
     invoke-static {v0, p1, p0}, Lcom/google/android/material/resources/MaterialAttributes;->resolveOrThrow(Landroid/content/Context;ILjava/lang/String;)I
 
     move-result p0

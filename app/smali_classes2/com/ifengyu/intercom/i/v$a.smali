@@ -1,6 +1,5 @@
 .class final Lcom/ifengyu/intercom/i/v$a;
 .super Ljava/lang/Object;
-.source "GaoDeOfflineMapManagerInstance.java"
 
 # interfaces
 .implements Lcom/amap/api/maps/offlinemap/OfflineMapManager$OfflineMapDownloadListener;
@@ -21,7 +20,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,7 +36,6 @@
 .method public onDownload(IILjava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/v;->a()Ljava/util/List;
 
     move-result-object v0
@@ -60,7 +57,6 @@
 
     check-cast v1, Lcom/ifengyu/intercom/i/v$b;
 
-    .line 2
     invoke-interface {v1, p1, p2, p3}, Lcom/ifengyu/intercom/i/v$b;->onDownload(IILjava/lang/String;)V
 
     goto :goto_0
@@ -74,7 +70,6 @@
 
     if-ne p2, p1, :cond_1
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->e()Ljava/lang/String;
 
     move-result-object p1
@@ -93,7 +88,6 @@
 
     const/4 p1, 0x1
 
-    .line 4
     invoke-static {p1}, Lcom/ifengyu/intercom/i/d0;->b(Z)V
 
     :cond_1
@@ -103,7 +97,6 @@
 .method public onRemove(ZLjava/lang/String;Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/ifengyu/intercom/i/v;->a()Ljava/util/List;
 
     move-result-object v0
@@ -125,7 +118,6 @@
 
     check-cast v1, Lcom/ifengyu/intercom/i/v$b;
 
-    .line 2
     invoke-interface {v1, p1, p2, p3}, Lcom/ifengyu/intercom/i/v$b;->onRemove(ZLjava/lang/String;Ljava/lang/String;)V
 
     goto :goto_0

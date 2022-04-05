@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/internal/utils/b$a;
 .super Ljava/lang/Object;
-.source "BaseStationUtils.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/umeng/commonsdk/internal/utils/b;
 
     invoke-static {}, Lcom/umeng/commonsdk/internal/utils/b;->d()Landroid/content/Context;
@@ -41,7 +39,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -50,7 +47,6 @@
 .method static synthetic a()Lcom/umeng/commonsdk/internal/utils/b;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/umeng/commonsdk/internal/utils/b$a;->a:Lcom/umeng/commonsdk/internal/utils/b;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class public final Lokhttp3/internal/http2/Header;
 .super Ljava/lang/Object;
-.source "Header.java"
 
 
 # annotations
@@ -49,7 +48,6 @@
 
     const-string v0, ":"
 
-    .line 1
     invoke-static {v0}, Lokio/ByteString;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object v0
@@ -58,7 +56,6 @@
 
     const-string v0, ":status"
 
-    .line 2
     invoke-static {v0}, Lokio/ByteString;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object v0
@@ -67,7 +64,6 @@
 
     const-string v0, ":method"
 
-    .line 3
     invoke-static {v0}, Lokio/ByteString;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object v0
@@ -76,7 +72,6 @@
 
     const-string v0, ":path"
 
-    .line 4
     invoke-static {v0}, Lokio/ByteString;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object v0
@@ -85,7 +80,6 @@
 
     const-string v0, ":scheme"
 
-    .line 5
     invoke-static {v0}, Lokio/ByteString;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object v0
@@ -94,7 +88,6 @@
 
     const-string v0, ":authority"
 
-    .line 6
     invoke-static {v0}, Lokio/ByteString;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object v0
@@ -107,7 +100,6 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lokio/ByteString;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object p1
@@ -124,7 +116,6 @@
 .method public constructor <init>(Lokio/ByteString;Ljava/lang/String;)V
     .locals 0
 
-    .line 2
     invoke-static {p2}, Lokio/ByteString;->encodeUtf8(Ljava/lang/String;)Lokio/ByteString;
 
     move-result-object p2
@@ -137,16 +128,12 @@
 .method public constructor <init>(Lokio/ByteString;Lokio/ByteString;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 4
     iput-object p1, p0, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
 
-    .line 5
     iput-object p2, p0, Lokhttp3/internal/http2/Header;->value:Lokio/ByteString;
 
-    .line 6
     invoke-virtual {p1}, Lokio/ByteString;->size()I
 
     move-result p1
@@ -169,17 +156,14 @@
 .method public equals(Ljava/lang/Object;)Z
     .locals 3
 
-    .line 1
     instance-of v0, p1, Lokhttp3/internal/http2/Header;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Lokhttp3/internal/http2/Header;
 
-    .line 3
     iget-object v0, p0, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
 
     iget-object v2, p1, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
@@ -194,7 +178,6 @@
 
     iget-object p1, p1, Lokhttp3/internal/http2/Header;->value:Lokio/ByteString;
 
-    .line 4
     invoke-virtual {v0, p1}, Lokio/ByteString;->equals(Ljava/lang/Object;)Z
 
     move-result p1
@@ -210,7 +193,6 @@
 .method public hashCode()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
 
     invoke-virtual {v0}, Lokio/ByteString;->hashCode()I
@@ -223,7 +205,6 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    .line 2
     iget-object v0, p0, Lokhttp3/internal/http2/Header;->value:Lokio/ByteString;
 
     invoke-virtual {v0}, Lokio/ByteString;->hashCode()I
@@ -242,7 +223,6 @@
 
     new-array v0, v0, [Ljava/lang/Object;
 
-    .line 1
     iget-object v1, p0, Lokhttp3/internal/http2/Header;->name:Lokio/ByteString;
 
     invoke-virtual {v1}, Lokio/ByteString;->utf8()Ljava/lang/String;

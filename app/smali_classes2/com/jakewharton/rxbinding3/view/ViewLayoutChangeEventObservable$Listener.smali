@@ -1,6 +1,5 @@
 .class final Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEventObservable$Listener;
 .super Lio/reactivex/android/MainThreadDisposable;
-.source "ViewLayoutChangeEventObservable.kt"
 
 # interfaces
 .implements Landroid/view/View$OnLayoutChangeListener;
@@ -104,7 +103,6 @@
 
     invoke-static {p2, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/android/MainThreadDisposable;-><init>()V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEventObservable$Listener;->view:Landroid/view/View;
@@ -119,7 +117,6 @@
 .method protected onDispose()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEventObservable$Listener;->view:Landroid/view/View;
 
     invoke-virtual {v0, p0}, Landroid/view/View;->removeOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
@@ -140,7 +137,6 @@
 
     invoke-static {p1, v0}, Lkotlin/jvm/b/b;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
     invoke-virtual {p0}, Lio/reactivex/android/MainThreadDisposable;->isDisposed()Z
 
     move-result v0
@@ -149,10 +145,8 @@
 
     move-object v0, p0
 
-    .line 2
     iget-object v11, v0, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEventObservable$Listener;->observer:Lio/reactivex/Observer;
 
-    .line 3
     new-instance v12, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;
 
     move-object v1, v12
@@ -177,7 +171,6 @@
 
     invoke-direct/range {v1 .. v10}, Lcom/jakewharton/rxbinding3/view/ViewLayoutChangeEvent;-><init>(Landroid/view/View;IIIIIIII)V
 
-    .line 4
     invoke-interface {v11, v12}, Lio/reactivex/Observer;->onNext(Ljava/lang/Object;)V
 
     goto :goto_0

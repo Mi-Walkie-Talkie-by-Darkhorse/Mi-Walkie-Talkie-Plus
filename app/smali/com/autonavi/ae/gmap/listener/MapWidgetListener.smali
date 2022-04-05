@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/listener/MapWidgetListener;
 .super Ljava/lang/Object;
-.source "MapWidgetListener.java"
 
 
 # virtual methods

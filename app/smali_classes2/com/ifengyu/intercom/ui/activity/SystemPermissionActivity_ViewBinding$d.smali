@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SystemPermissionActivity_ViewBinding$d;
 .super Lbutterknife/internal/DebouncingOnClickListener;
-.source "SystemPermissionActivity_ViewBinding.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SystemPermissionActivity_ViewBinding;Lcom/ifengyu/intercom/ui/activity/SystemPermissionActivity;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SystemPermissionActivity_ViewBinding$d;->a:Lcom/ifengyu/intercom/ui/activity/SystemPermissionActivity;
 
     invoke-direct {p0}, Lbutterknife/internal/DebouncingOnClickListener;-><init>()V
@@ -35,7 +33,6 @@
 .method public doClick(Landroid/view/View;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/SystemPermissionActivity_ViewBinding$d;->a:Lcom/ifengyu/intercom/ui/activity/SystemPermissionActivity;
 
     invoke-virtual {v0, p1}, Lcom/ifengyu/intercom/ui/activity/SystemPermissionActivity;->onViewClicked(Landroid/view/View;)V

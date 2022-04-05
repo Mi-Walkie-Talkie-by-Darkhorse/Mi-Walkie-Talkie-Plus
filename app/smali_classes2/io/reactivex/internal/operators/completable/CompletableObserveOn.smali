@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/completable/CompletableObserveOn;
 .super Lio/reactivex/Completable;
-.source "CompletableObserveOn.java"
 
 
 # annotations
@@ -21,13 +20,10 @@
 .method public constructor <init>(Lio/reactivex/CompletableSource;Lio/reactivex/Scheduler;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Completable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/completable/CompletableObserveOn;->source:Lio/reactivex/CompletableSource;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/completable/CompletableObserveOn;->scheduler:Lio/reactivex/Scheduler;
 
     return-void
@@ -38,7 +34,6 @@
 .method protected subscribeActual(Lio/reactivex/CompletableObserver;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/completable/CompletableObserveOn;->source:Lio/reactivex/CompletableSource;
 
     new-instance v1, Lio/reactivex/internal/operators/completable/CompletableObserveOn$ObserveOnCompletableObserver;

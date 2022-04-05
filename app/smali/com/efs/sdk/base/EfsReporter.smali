@@ -1,6 +1,5 @@
 .class public Lcom/efs/sdk/base/EfsReporter;
 .super Ljava/lang/Object;
-.source "SourceFile"
 
 
 # annotations
@@ -25,10 +24,8 @@
 .method private constructor <init>(Lcom/efs/sdk/base/EfsReporter$Builder;)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     new-instance v0, Lcom/efs/sdk/base/a/d/a;
 
     invoke-direct {v0, p1}, Lcom/efs/sdk/base/a/d/a;-><init>(Lcom/efs/sdk/base/EfsReporter$Builder;)V
@@ -41,7 +38,6 @@
 .method synthetic constructor <init>(Lcom/efs/sdk/base/EfsReporter$Builder;Lcom/efs/sdk/base/EfsReporter$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/efs/sdk/base/EfsReporter;-><init>(Lcom/efs/sdk/base/EfsReporter$Builder;)V
 
     return-void
@@ -50,7 +46,6 @@
 .method static synthetic access$100(Lcom/efs/sdk/base/EfsReporter;)Lcom/efs/sdk/base/a/c/a;
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/efs/sdk/base/EfsReporter;->getGlobalEnvStruct()Lcom/efs/sdk/base/a/c/a;
 
     move-result-object p0
@@ -63,7 +58,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/efs/sdk/base/a/d/a;->a()Lcom/efs/sdk/base/a/c/a;
 
     move-result-object v0
@@ -89,14 +83,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p1}, Ljava/util/Map;->size()I
 
     move-result v0
 
     if-lez v0, :cond_0
 
-    .line 2
     invoke-direct {p0}, Lcom/efs/sdk/base/EfsReporter;->getGlobalEnvStruct()Lcom/efs/sdk/base/a/c/a;
 
     move-result-object v0
@@ -110,12 +102,10 @@
 .method public flushRecordLogImmediately(Ljava/lang/String;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/efs/sdk/base/a/b/a$b;->a()Lcom/efs/sdk/base/a/b/a;
 
     move-result-object v0
 
-    .line 2
     iget-object v0, v0, Lcom/efs/sdk/base/a/b/a;->c:Lcom/efs/sdk/base/a/b/b;
 
     const/4 v1, 0x1
@@ -126,7 +116,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {v0, p1}, Lcom/efs/sdk/base/a/b/e;->a(Ljava/lang/String;)V
 
     :cond_0
@@ -145,7 +134,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/efs/sdk/base/a/c/a/c;->a()Lcom/efs/sdk/base/a/c/a/c;
 
     move-result-object v0
@@ -169,20 +157,16 @@
         }
     .end annotation
 
-    .line 7
     invoke-static {}, Lcom/efs/sdk/base/a/c/a/c;->a()Lcom/efs/sdk/base/a/c/a/c;
 
     move-result-object v0
 
-    .line 8
     new-instance v1, Ljava/util/HashMap;
 
     iget-object v0, v0, Lcom/efs/sdk/base/a/c/a/c;->d:Lcom/efs/sdk/base/a/c/a/b;
 
-    .line 9
     iget-object v0, v0, Lcom/efs/sdk/base/a/c/a/b;->e:Ljava/util/Map;
 
-    .line 10
     invoke-direct {v1, v0}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
     return-object v1
@@ -191,30 +175,24 @@
 .method public getAllSdkConfig([Ljava/lang/String;Lcom/efs/sdk/base/observer/IConfigCallback;)V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/efs/sdk/base/a/c/a/c;->a()Lcom/efs/sdk/base/a/c/a/c;
 
     move-result-object v0
 
-    .line 2
     iget-object v1, v0, Lcom/efs/sdk/base/a/c/a/c;->e:Ljava/util/Map;
 
     invoke-interface {v1, p2, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     iget-object p1, v0, Lcom/efs/sdk/base/a/c/a/c;->d:Lcom/efs/sdk/base/a/c/a/b;
 
-    .line 4
     iget-object p1, p1, Lcom/efs/sdk/base/a/c/a/b;->e:Ljava/util/Map;
 
-    .line 5
     invoke-interface {p1}, Ljava/util/Map;->isEmpty()Z
 
     move-result p1
 
     if-nez p1, :cond_0
 
-    .line 6
     invoke-virtual {v0}, Lcom/efs/sdk/base/a/c/a/c;->d()V
 
     :cond_0
@@ -224,7 +202,6 @@
 .method public refreshConfig(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/efs/sdk/base/a/c/a/c;->a()Lcom/efs/sdk/base/a/c/a/c;
 
     move-result-object v0
@@ -247,14 +224,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lcom/efs/sdk/base/EfsReporter;->getGlobalEnvStruct()Lcom/efs/sdk/base/a/c/a;
 
     move-result-object v0
 
     if-eqz p2, :cond_1
 
-    .line 2
     iget-object v1, v0, Lcom/efs/sdk/base/a/c/a;->n:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -269,12 +244,10 @@
 
     if-nez v1, :cond_0
 
-    .line 3
     new-instance v1, Ljava/util/LinkedList;
 
     invoke-direct {v1}, Ljava/util/LinkedList;-><init>()V
 
-    .line 4
     iget-object v0, v0, Lcom/efs/sdk/base/a/c/a;->n:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -283,7 +256,6 @@
 
     invoke-virtual {v0, p1, v1}, Ljava/util/concurrent/ConcurrentHashMap;->putIfAbsent(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 5
     :cond_0
     invoke-interface {v1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -294,7 +266,6 @@
 .method public send(Lcom/efs/sdk/base/protocol/ILogProtocol;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/efs/sdk/base/EfsReporter;->sControllerCenter:Lcom/efs/sdk/base/a/d/a;
 
     invoke-virtual {v0, p1}, Lcom/efs/sdk/base/a/d/a;->a(Lcom/efs/sdk/base/protocol/ILogProtocol;)V
@@ -317,7 +288,6 @@
 
     move-object v5, p4
 
-    .line 1
     invoke-virtual/range {v0 .. v5}, Lcom/efs/sdk/base/EfsReporter;->sendSyncImediatelly(Ljava/lang/String;ILjava/lang/String;ZLjava/io/File;)Lcom/efs/sdk/base/http/HttpResponse;
 
     move-result-object p1
@@ -328,7 +298,6 @@
 .method public sendSyncImediatelly(Ljava/lang/String;ILjava/lang/String;ZLjava/io/File;)Lcom/efs/sdk/base/http/HttpResponse;
     .locals 0
 
-    .line 2
     invoke-static {p1, p2, p3, p4, p5}, Lcom/efs/sdk/base/a/d/a;->a(Ljava/lang/String;ILjava/lang/String;ZLjava/io/File;)Lcom/efs/sdk/base/http/HttpResponse;
 
     move-result-object p1
@@ -339,7 +308,6 @@
 .method public setEnableRefreshConfigFromRemote(Z)V
     .locals 1
 
-    .line 1
     invoke-static {}, Lcom/efs/sdk/base/a/c/a/c;->a()Lcom/efs/sdk/base/a/c/a/c;
 
     move-result-object v0

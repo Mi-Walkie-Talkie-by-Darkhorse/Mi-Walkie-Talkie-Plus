@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/download/DownloadChain;
 .super Ljava/lang/Object;
-.source "DownloadChain.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -78,7 +77,6 @@
 .method static constructor <clinit>()V
     .locals 9
 
-    .line 1
     new-instance v8, Ljava/util/concurrent/ThreadPoolExecutor;
 
     sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
@@ -91,7 +89,6 @@
 
     const/4 v1, 0x0
 
-    .line 2
     invoke-static {v0, v1}, Lcom/liulishuo/okdownload/core/Util;->threadFactory(Ljava/lang/String;Z)Ljava/util/concurrent/ThreadFactory;
 
     move-result-object v7
@@ -128,17 +125,14 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connectInterceptorList:Ljava/util/List;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -147,42 +141,32 @@
 
     const/4 v0, 0x0
 
-    .line 4
     iput v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connectIndex:I
 
-    .line 5
     iput v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->fetchIndex:I
 
-    .line 6
     new-instance v1, Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-direct {v1, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
     iput-object v1, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    .line 7
     new-instance v0, Lcom/liulishuo/okdownload/core/download/DownloadChain$1;
 
     invoke-direct {v0, p0}, Lcom/liulishuo/okdownload/core/download/DownloadChain$1;-><init>(Lcom/liulishuo/okdownload/core/download/DownloadChain;)V
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->releaseConnectionRunnable:Ljava/lang/Runnable;
 
-    .line 8
     iput p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->blockIndex:I
 
-    .line 9
     iput-object p2, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
-    .line 10
     iput-object p4, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->cache:Lcom/liulishuo/okdownload/core/download/DownloadCache;
 
-    .line 11
     iput-object p3, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
-    .line 12
     iput-object p5, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->store:Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 
-    .line 13
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object p1
@@ -211,7 +195,6 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v6, Lcom/liulishuo/okdownload/core/download/DownloadChain;
 
     move-object v0, v6
@@ -236,7 +219,6 @@
 .method public cancel()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -251,7 +233,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->currentThread:Ljava/lang/Thread;
 
@@ -265,7 +246,6 @@
 .method public flushNoCallbackIncreaseBytes()V
     .locals 7
 
-    .line 1
     iget-wide v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->noCallbackIncreaseBytes:J
 
     const-wide/16 v2, 0x0
@@ -276,7 +256,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->callbackDispatcher:Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;
 
@@ -292,7 +271,6 @@
 
     invoke-interface {v0, v1, v4, v5, v6}, Lcom/liulishuo/okdownload/DownloadListener;->fetchProgress(Lcom/liulishuo/okdownload/DownloadTask;IJ)V
 
-    .line 3
     iput-wide v2, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->noCallbackIncreaseBytes:J
 
     return-void
@@ -301,7 +279,6 @@
 .method public getBlockIndex()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->blockIndex:I
 
     return v0
@@ -312,7 +289,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->cache:Lcom/liulishuo/okdownload/core/download/DownloadCache;
 
     return-object v0
@@ -325,7 +301,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connection:Lcom/liulishuo/okdownload/core/connection/DownloadConnection;
     :try_end_0
@@ -356,7 +331,6 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->cache:Lcom/liulishuo/okdownload/core/download/DownloadCache;
 
@@ -366,12 +340,10 @@
 
     if-nez v0, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connection:Lcom/liulishuo/okdownload/core/connection/DownloadConnection;
 
     if-nez v0, :cond_1
 
-    .line 3
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->cache:Lcom/liulishuo/okdownload/core/download/DownloadCache;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->getRedirectLocation()Ljava/lang/String;
@@ -382,7 +354,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
@@ -393,7 +364,6 @@
     :goto_0
     const-string v1, "DownloadChain"
 
-    .line 5
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
@@ -410,7 +380,6 @@
 
     invoke-static {v1, v2}, Lcom/liulishuo/okdownload/core/Util;->d(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v1
@@ -425,7 +394,6 @@
 
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connection:Lcom/liulishuo/okdownload/core/connection/DownloadConnection;
 
-    .line 7
     :cond_1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connection:Lcom/liulishuo/okdownload/core/connection/DownloadConnection;
     :try_end_0
@@ -435,7 +403,6 @@
 
     return-object v0
 
-    .line 8
     :cond_2
     :try_start_1
     sget-object v0, Lcom/liulishuo/okdownload/core/exception/InterruptException;->SIGNAL:Lcom/liulishuo/okdownload/core/exception/InterruptException;
@@ -457,7 +424,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->store:Lcom/liulishuo/okdownload/core/breakpoint/DownloadStore;
 
     return-object v0
@@ -468,7 +434,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->info:Lcom/liulishuo/okdownload/core/breakpoint/BreakpointInfo;
 
     return-object v0
@@ -477,7 +442,6 @@
 .method public getOutputStream()Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->cache:Lcom/liulishuo/okdownload/core/download/DownloadCache;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->getOutputStream()Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
@@ -490,7 +454,6 @@
 .method public getResponseContentLength()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->responseContentLength:J
 
     return-wide v0
@@ -501,7 +464,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->task:Lcom/liulishuo/okdownload/DownloadTask;
 
     return-object v0
@@ -510,7 +472,6 @@
 .method public increaseCallbackBytes(J)V
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->noCallbackIncreaseBytes:J
 
     add-long/2addr v0, p1
@@ -523,7 +484,6 @@
 .method isFinished()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
@@ -541,7 +501,6 @@
         }
     .end annotation
 
-    .line 1
     iget v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->fetchIndex:I
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->fetchInterceptorList:Ljava/util/List;
@@ -552,14 +511,12 @@
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->fetchIndex:I
 
     add-int/lit8 v0, v0, -0x1
 
     iput v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->fetchIndex:I
 
-    .line 3
     :cond_0
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->processFetch()J
 
@@ -576,7 +533,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->cache:Lcom/liulishuo/okdownload/core/download/DownloadCache;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->isInterrupt()Z
@@ -585,7 +541,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connectInterceptorList:Ljava/util/List;
 
     iget v1, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connectIndex:I
@@ -606,7 +561,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/liulishuo/okdownload/core/exception/InterruptException;->SIGNAL:Lcom/liulishuo/okdownload/core/exception/InterruptException;
 
@@ -621,7 +575,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->cache:Lcom/liulishuo/okdownload/core/download/DownloadCache;
 
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->isInterrupt()Z
@@ -630,7 +583,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->fetchInterceptorList:Ljava/util/List;
 
     iget v1, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->fetchIndex:I
@@ -651,7 +603,6 @@
 
     return-wide v0
 
-    .line 3
     :cond_0
     sget-object v0, Lcom/liulishuo/okdownload/core/exception/InterruptException;->SIGNAL:Lcom/liulishuo/okdownload/core/exception/InterruptException;
 
@@ -663,20 +614,17 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connection:Lcom/liulishuo/okdownload/core/connection/DownloadConnection;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connection:Lcom/liulishuo/okdownload/core/connection/DownloadConnection;
 
     invoke-interface {v0}, Lcom/liulishuo/okdownload/core/connection/DownloadConnection;->release()V
 
     const-string v0, "DownloadChain"
 
-    .line 3
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
@@ -722,12 +670,10 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 4
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connection:Lcom/liulishuo/okdownload/core/connection/DownloadConnection;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     monitor-exit p0
 
     return-void
@@ -743,7 +689,6 @@
 .method releaseConnectionAsync()V
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->EXECUTOR:Ljava/util/concurrent/ExecutorService;
 
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->releaseConnectionRunnable:Ljava/lang/Runnable;
@@ -758,10 +703,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connectIndex:I
 
-    .line 2
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->releaseConnection()V
 
     return-void
@@ -770,14 +713,12 @@
 .method public run()V
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->isFinished()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
@@ -786,20 +727,17 @@
 
     const/4 v0, 0x1
 
-    .line 3
     :try_start_0
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->start()V
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 4
     :catch_0
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 5
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->releaseConnectionAsync()V
 
     goto :goto_0
@@ -807,21 +745,17 @@
     :catchall_0
     move-exception v1
 
-    .line 6
     iget-object v2, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->finished:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v2, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
-    .line 7
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->releaseConnectionAsync()V
 
-    .line 8
     throw v1
 
     :goto_0
     return-void
 
-    .line 9
     :cond_0
     new-instance v0, Ljava/lang/IllegalAccessError;
 
@@ -841,13 +775,11 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connection:Lcom/liulishuo/okdownload/core/connection/DownloadConnection;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     monitor-exit p0
 
     return-void
@@ -863,7 +795,6 @@
 .method public setRedirectLocation(Ljava/lang/String;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->cache:Lcom/liulishuo/okdownload/core/download/DownloadCache;
 
     invoke-virtual {v0, p1}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->setRedirectLocation(Ljava/lang/String;)V
@@ -874,7 +805,6 @@
 .method public setResponseContentLength(J)V
     .locals 0
 
-    .line 1
     iput-wide p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->responseContentLength:J
 
     return-void
@@ -888,7 +818,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/liulishuo/okdownload/OkDownload;->with()Lcom/liulishuo/okdownload/OkDownload;
 
     move-result-object v0
@@ -897,27 +826,22 @@
 
     move-result-object v0
 
-    .line 2
     new-instance v1, Lcom/liulishuo/okdownload/core/interceptor/RetryInterceptor;
 
     invoke-direct {v1}, Lcom/liulishuo/okdownload/core/interceptor/RetryInterceptor;-><init>()V
 
-    .line 3
     new-instance v2, Lcom/liulishuo/okdownload/core/interceptor/BreakpointInterceptor;
 
     invoke-direct {v2}, Lcom/liulishuo/okdownload/core/interceptor/BreakpointInterceptor;-><init>()V
 
-    .line 4
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connectInterceptorList:Ljava/util/List;
 
     invoke-interface {v3, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 5
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connectInterceptorList:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 6
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connectInterceptorList:Ljava/util/List;
 
     new-instance v4, Lcom/liulishuo/okdownload/core/interceptor/connect/HeaderInterceptor;
@@ -926,7 +850,6 @@
 
     invoke-interface {v3, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 7
     iget-object v3, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connectInterceptorList:Ljava/util/List;
 
     new-instance v4, Lcom/liulishuo/okdownload/core/interceptor/connect/CallServerInterceptor;
@@ -937,15 +860,12 @@
 
     const/4 v3, 0x0
 
-    .line 8
     iput v3, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->connectIndex:I
 
-    .line 9
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->processConnect()Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Connected;
 
     move-result-object v4
 
-    .line 10
     iget-object v5, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->cache:Lcom/liulishuo/okdownload/core/download/DownloadCache;
 
     invoke-virtual {v5}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->isInterrupt()Z
@@ -954,7 +874,6 @@
 
     if-nez v5, :cond_0
 
-    .line 11
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;->dispatch()Lcom/liulishuo/okdownload/DownloadListener;
 
     move-result-object v5
@@ -969,17 +888,14 @@
 
     invoke-interface {v5, v6, v7, v8, v9}, Lcom/liulishuo/okdownload/DownloadListener;->fetchStart(Lcom/liulishuo/okdownload/DownloadTask;IJ)V
 
-    .line 12
     new-instance v5, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;
 
     iget v6, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->blockIndex:I
 
-    .line 13
     invoke-interface {v4}, Lcom/liulishuo/okdownload/core/connection/DownloadConnection$Connected;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v4
 
-    .line 14
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->getOutputStream()Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
 
     move-result-object v7
@@ -988,30 +904,24 @@
 
     invoke-direct {v5, v6, v4, v7, v8}, Lcom/liulishuo/okdownload/core/interceptor/FetchDataInterceptor;-><init>(ILjava/io/InputStream;Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;Lcom/liulishuo/okdownload/DownloadTask;)V
 
-    .line 15
     iget-object v4, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->fetchInterceptorList:Ljava/util/List;
 
     invoke-interface {v4, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 16
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->fetchInterceptorList:Ljava/util/List;
 
     invoke-interface {v1, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 17
     iget-object v1, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->fetchInterceptorList:Ljava/util/List;
 
     invoke-interface {v1, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 18
     iput v3, p0, Lcom/liulishuo/okdownload/core/download/DownloadChain;->fetchIndex:I
 
-    .line 19
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/DownloadChain;->processFetch()J
 
     move-result-wide v1
 
-    .line 20
     invoke-virtual {v0}, Lcom/liulishuo/okdownload/core/dispatcher/CallbackDispatcher;->dispatch()Lcom/liulishuo/okdownload/DownloadListener;
 
     move-result-object v0
@@ -1024,7 +934,6 @@
 
     return-void
 
-    .line 21
     :cond_0
     sget-object v0, Lcom/liulishuo/okdownload/core/exception/InterruptException;->SIGNAL:Lcom/liulishuo/okdownload/core/exception/InterruptException;
 

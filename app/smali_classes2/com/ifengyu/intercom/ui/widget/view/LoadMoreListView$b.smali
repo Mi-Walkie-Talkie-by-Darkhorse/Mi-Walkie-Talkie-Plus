@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/ui/widget/view/LoadMoreListView$b;
 .super Ljava/lang/Object;
-.source "LoadMoreListView.java"
 
 
 # annotations

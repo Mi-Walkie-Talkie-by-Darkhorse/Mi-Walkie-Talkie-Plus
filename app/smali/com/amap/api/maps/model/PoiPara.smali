@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/maps/model/PoiPara;
 .super Ljava/lang/Object;
-.source "PoiPara.java"
 
 
 # instance fields
@@ -13,7 +12,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -24,7 +22,6 @@
 .method public getCenter()Lcom/amap/api/maps/model/LatLng;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/PoiPara;->a:Lcom/amap/api/maps/model/LatLng;
 
     return-object v0
@@ -33,7 +30,6 @@
 .method public getKeywords()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/PoiPara;->b:Ljava/lang/String;
 
     return-object v0
@@ -42,7 +38,6 @@
 .method public setCenter(Lcom/amap/api/maps/model/LatLng;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/PoiPara;->a:Lcom/amap/api/maps/model/LatLng;
 
     return-void
@@ -51,7 +46,6 @@
 .method public setKeywords(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/maps/model/PoiPara;->b:Ljava/lang/String;
 
     return-void

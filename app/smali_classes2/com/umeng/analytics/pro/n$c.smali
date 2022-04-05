@@ -1,6 +1,5 @@
 .class public Lcom/umeng/analytics/pro/n$c;
 .super Ljava/lang/Object;
-.source "CoreProtocolImpl.java"
 
 
 # annotations
@@ -32,32 +31,24 @@
 .method public constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
     const/4 v1, -0x1
 
-    .line 3
     iput v1, p0, Lcom/umeng/analytics/pro/n$c;->b:I
 
-    .line 4
     iput v1, p0, Lcom/umeng/analytics/pro/n$c;->c:I
 
-    .line 5
     iput v1, p0, Lcom/umeng/analytics/pro/n$c;->d:I
 
-    .line 6
     iput v1, p0, Lcom/umeng/analytics/pro/n$c;->e:I
 
-    .line 7
     iput-object v0, p0, Lcom/umeng/analytics/pro/n$c;->f:Lcom/umeng/commonsdk/statistics/noise/ABTest;
 
-    .line 8
     invoke-static {}, Lcom/umeng/analytics/pro/n;->g()Landroid/content/Context;
 
     move-result-object v0
@@ -100,7 +91,6 @@
 
     if-eq p1, v0, :cond_1
 
-    .line 42
     iget-object p1, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
     instance-of p2, p1, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportAtLaunch;
@@ -116,7 +106,6 @@
 
     goto/16 :goto_0
 
-    .line 43
     :cond_1
     iget-object p1, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -124,7 +113,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 44
     move-object v0, p1
 
     check-cast v0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportQuasiRealtime;
@@ -135,7 +123,6 @@
 
     goto/16 :goto_0
 
-    .line 45
     :cond_2
     new-instance p1, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportQuasiRealtime;
 
@@ -143,12 +130,10 @@
 
     int-to-long v0, p2
 
-    .line 46
     invoke-virtual {p1, v0, v1}, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportQuasiRealtime;->setReportInterval(J)V
 
     goto/16 :goto_0
 
-    .line 47
     :cond_3
     iget-object p1, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -161,7 +146,6 @@
     :cond_4
     new-instance p1, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$SmartPolicy;
 
-    .line 48
     invoke-static {}, Lcom/umeng/analytics/pro/n;->g()Landroid/content/Context;
 
     move-result-object p2
@@ -174,7 +158,6 @@
 
     goto :goto_0
 
-    .line 49
     :cond_5
     iget-object p1, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -182,7 +165,6 @@
 
     if-eqz v0, :cond_6
 
-    .line 50
     move-object v0, p1
 
     check-cast v0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportByInterval;
@@ -193,7 +175,6 @@
 
     goto :goto_0
 
-    .line 51
     :cond_6
     new-instance p1, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportByInterval;
 
@@ -211,7 +192,6 @@
 
     goto :goto_0
 
-    .line 52
     :cond_7
     iget-object p1, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -224,7 +204,6 @@
     :cond_8
     new-instance p1, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportWifiOnly;
 
-    .line 53
     invoke-static {}, Lcom/umeng/analytics/pro/n;->g()Landroid/content/Context;
 
     move-result-object p2
@@ -233,7 +212,6 @@
 
     goto :goto_0
 
-    .line 54
     :cond_9
     iget-object p1, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -246,7 +224,6 @@
     :cond_a
     new-instance p1, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportDaily;
 
-    .line 55
     invoke-static {}, Lcom/umeng/analytics/pro/n;->g()Landroid/content/Context;
 
     move-result-object p2
@@ -259,7 +236,6 @@
 
     goto :goto_0
 
-    .line 56
     :cond_b
     iget-object p1, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -276,7 +252,6 @@
 
     goto :goto_0
 
-    .line 57
     :cond_d
     iget-object p1, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -300,7 +275,6 @@
 .method public a(I)I
     .locals 3
 
-    .line 7
     invoke-static {}, Lcom/umeng/analytics/pro/n;->g()Landroid/content/Context;
 
     move-result-object v0
@@ -313,7 +287,6 @@
 
     move-result-object v0
 
-    .line 8
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v0
@@ -351,7 +324,6 @@
 
     const/4 v0, -0x1
 
-    .line 1
     :try_start_0
     invoke-virtual {p0, v0, v0}, Lcom/umeng/analytics/pro/n$c;->a(II)[I
 
@@ -359,14 +331,12 @@
 
     const/4 v1, 0x0
 
-    .line 2
     aget v1, v0, v1
 
     iput v1, p0, Lcom/umeng/analytics/pro/n$c;->b:I
 
     const/4 v1, 0x1
 
-    .line 3
     aget v0, v0, v1
 
     iput v0, p0, Lcom/umeng/analytics/pro/n$c;->c:I
@@ -380,7 +350,6 @@
 .method public a(II)[I
     .locals 7
 
-    .line 4
     invoke-static {}, Lcom/umeng/analytics/pro/n;->g()Landroid/content/Context;
 
     move-result-object v0
@@ -401,7 +370,6 @@
 
     move-result v0
 
-    .line 5
     invoke-static {}, Lcom/umeng/analytics/pro/n;->g()Landroid/content/Context;
 
     move-result-object v2
@@ -430,7 +398,6 @@
 
     if-eq v0, v2, :cond_7
 
-    .line 6
     invoke-static {v0}, Lcom/umeng/commonsdk/statistics/common/ReportPolicy;->isValid(I)Z
 
     move-result v6
@@ -520,7 +487,6 @@
 .method protected b()V
     .locals 11
 
-    .line 1
     invoke-static {}, Lcom/umeng/analytics/pro/n;->g()Landroid/content/Context;
 
     move-result-object v0
@@ -529,7 +495,6 @@
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Lcom/umeng/commonsdk/statistics/noise/Defcon;->isOpen()Z
 
     move-result v1
@@ -544,7 +509,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 3
     iget-object v1, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
     instance-of v6, v1, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DefconPolicy;
@@ -567,7 +531,6 @@
     :goto_0
     if-eqz v1, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
     goto :goto_1
@@ -592,7 +555,6 @@
 
     goto/16 :goto_5
 
-    .line 5
     :cond_2
     invoke-static {}, Lcom/umeng/analytics/pro/n;->g()Landroid/content/Context;
 
@@ -623,7 +585,6 @@
     :cond_3
     const/4 v0, 0x0
 
-    .line 6
     :goto_2
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
 
@@ -633,19 +594,16 @@
 
     if-eqz v0, :cond_4
 
-    .line 7
     sget-boolean v6, Lcom/umeng/commonsdk/statistics/common/MLog;->DEBUG:Z
 
     if-nez v6, :cond_4
 
-    .line 8
     sget-object v6, Lcom/umeng/analytics/pro/i;->K:Ljava/lang/String;
 
     const-string v7, "\\|"
 
     invoke-static {v6, v2, v7, v3, v3}, Lcom/umeng/commonsdk/debug/UMLog;->mutlInfo(Ljava/lang/String;ILjava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
-    .line 9
     :cond_4
     sget-boolean v6, Lcom/umeng/commonsdk/statistics/common/MLog;->DEBUG:Z
 
@@ -653,7 +611,6 @@
 
     if-eqz v0, :cond_5
 
-    .line 10
     new-instance v0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$DebugPolicy;
 
     invoke-static {}, Lcom/umeng/analytics/pro/n;->g()Landroid/content/Context;
@@ -670,7 +627,6 @@
 
     goto :goto_5
 
-    .line 11
     :cond_5
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$c;->f:Lcom/umeng/commonsdk/statistics/noise/ABTest;
 
@@ -696,7 +652,6 @@
 
     if-eqz v0, :cond_a
 
-    .line 12
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$c;->f:Lcom/umeng/commonsdk/statistics/noise/ABTest;
 
     invoke-virtual {v0}, Lcom/umeng/commonsdk/statistics/noise/ABTest;->getTestPolicy()I
@@ -707,7 +662,6 @@
 
     if-ne v0, v7, :cond_9
 
-    .line 13
     invoke-static {}, Lcom/umeng/analytics/pro/n;->g()Landroid/content/Context;
 
     move-result-object v0
@@ -718,7 +672,6 @@
 
     move-result-object v0
 
-    .line 14
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v0
@@ -741,14 +694,12 @@
 
     const v0, 0x15f90
 
-    .line 15
     invoke-virtual {p0, v0}, Lcom/umeng/analytics/pro/n$c;->a(I)I
 
     move-result v0
 
     goto :goto_4
 
-    .line 16
     :cond_7
     iget v0, p0, Lcom/umeng/analytics/pro/n$c;->c:I
 
@@ -756,7 +707,6 @@
 
     goto :goto_4
 
-    .line 17
     :cond_8
     iget v0, p0, Lcom/umeng/analytics/pro/n$c;->e:I
 
@@ -765,7 +715,6 @@
     :cond_9
     const/4 v0, 0x0
 
-    .line 18
     :goto_4
     iget-object v1, p0, Lcom/umeng/analytics/pro/n$c;->f:Lcom/umeng/commonsdk/statistics/noise/ABTest;
 
@@ -781,24 +730,19 @@
 
     goto :goto_5
 
-    .line 19
     :cond_a
     iget v0, p0, Lcom/umeng/analytics/pro/n$c;->d:I
 
-    .line 20
     iget v1, p0, Lcom/umeng/analytics/pro/n$c;->e:I
 
-    .line 21
     iget v7, p0, Lcom/umeng/analytics/pro/n$c;->b:I
 
     if-eq v7, v6, :cond_b
 
-    .line 22
     iget v1, p0, Lcom/umeng/analytics/pro/n$c;->c:I
 
     move v0, v7
 
-    .line 23
     :cond_b
     invoke-direct {p0, v0, v1}, Lcom/umeng/analytics/pro/n$c;->b(II)Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -806,7 +750,6 @@
 
     iput-object v0, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
-    .line 24
     :goto_5
     invoke-static {}, Lcom/umeng/commonsdk/UMConfigure;->isDebugLog()Z
 
@@ -814,7 +757,6 @@
 
     if-eqz v0, :cond_10
 
-    .line 25
     :try_start_0
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -826,7 +768,6 @@
 
     if-eqz v0, :cond_c
 
-    .line 26
     :try_start_1
     sget-object v0, Lcom/umeng/analytics/pro/i;->I:Ljava/lang/String;
 
@@ -834,7 +775,6 @@
 
     goto :goto_6
 
-    .line 27
     :cond_c
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -848,7 +788,6 @@
 
     if-eqz v0, :cond_d
 
-    .line 28
     :try_start_2
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -858,15 +797,12 @@
 
     move-result-wide v9
 
-    .line 29
     div-long/2addr v9, v7
 
-    .line 30
     invoke-static {v9, v10}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 31
     filled-new-array {v6}, [Ljava/lang/String;
 
     move-result-object v3
@@ -875,14 +811,12 @@
 
     aput-object v0, v5, v4
 
-    .line 32
     sget-object v0, Lcom/umeng/analytics/pro/i;->J:Ljava/lang/String;
 
     invoke-static {v0, v2, v1, v3, v5}, Lcom/umeng/commonsdk/debug/UMLog;->mutlInfo(Ljava/lang/String;ILjava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
     goto :goto_6
 
-    .line 33
     :cond_d
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -890,14 +824,12 @@
 
     if-eqz v0, :cond_e
 
-    .line 34
     sget-object v0, Lcom/umeng/analytics/pro/i;->L:Ljava/lang/String;
 
     invoke-static {v0, v2, v1, v3, v3}, Lcom/umeng/commonsdk/debug/UMLog;->mutlInfo(Ljava/lang/String;ILjava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
 
     goto :goto_6
 
-    .line 35
     :cond_e
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -905,7 +837,6 @@
 
     if-eqz v0, :cond_f
 
-    .line 36
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
     check-cast v0, Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportQuasiRealtime;
@@ -914,15 +845,12 @@
 
     move-result-wide v9
 
-    .line 37
     div-long/2addr v9, v7
 
-    .line 38
     invoke-static {v9, v10}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 39
     filled-new-array {v6}, [Ljava/lang/String;
 
     move-result-object v3
@@ -931,7 +859,6 @@
 
     aput-object v0, v5, v4
 
-    .line 40
     sget-object v0, Lcom/umeng/commonsdk/UMConfigure;->umDebugLog:Lcom/umeng/commonsdk/debug/UMLog;
 
     sget-object v0, Lcom/umeng/analytics/pro/i;->M:Ljava/lang/String;
@@ -940,7 +867,6 @@
 
     goto :goto_6
 
-    .line 41
     :cond_f
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
@@ -957,10 +883,8 @@
 .method public c()Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/umeng/analytics/pro/n$c;->b()V
 
-    .line 2
     iget-object v0, p0, Lcom/umeng/analytics/pro/n$c;->a:Lcom/umeng/commonsdk/statistics/common/ReportPolicy$ReportStrategy;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class final Lcom/google/android/material/transition/platform/ScaleProvider$1;
 .super Landroid/animation/AnimatorListenerAdapter;
-.source "ScaleProvider.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Landroid/view/View;FF)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/transition/platform/ScaleProvider$1;->val$view:Landroid/view/View;
 
     iput p2, p0, Lcom/google/android/material/transition/platform/ScaleProvider$1;->val$originalScaleX:F
@@ -43,14 +41,12 @@
 .method public onAnimationEnd(Landroid/animation/Animator;)V
     .locals 1
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/transition/platform/ScaleProvider$1;->val$view:Landroid/view/View;
 
     iget v0, p0, Lcom/google/android/material/transition/platform/ScaleProvider$1;->val$originalScaleX:F
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setScaleX(F)V
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/transition/platform/ScaleProvider$1;->val$view:Landroid/view/View;
 
     iget v0, p0, Lcom/google/android/material/transition/platform/ScaleProvider$1;->val$originalScaleY:F

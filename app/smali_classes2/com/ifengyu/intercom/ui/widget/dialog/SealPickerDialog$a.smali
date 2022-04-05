@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog$a;
 .super Ljava/lang/Object;
-.source "SealPickerDialog.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/view/NumberPickerView$d;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -50,7 +48,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog;
 
@@ -62,7 +59,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog;
 
@@ -74,7 +70,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/SealPickerDialog;
 

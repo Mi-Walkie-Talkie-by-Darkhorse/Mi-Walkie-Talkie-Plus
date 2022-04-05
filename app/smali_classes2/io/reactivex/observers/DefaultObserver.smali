@@ -1,6 +1,5 @@
 .class public abstract Lio/reactivex/observers/DefaultObserver;
 .super Ljava/lang/Object;
-.source "DefaultObserver.java"
 
 # interfaces
 .implements Lio/reactivex/Observer;
@@ -27,7 +26,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -38,15 +36,12 @@
 .method protected final cancel()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/DefaultObserver;->upstream:Lio/reactivex/disposables/Disposable;
 
-    .line 2
     sget-object v1, Lio/reactivex/internal/disposables/DisposableHelper;->DISPOSED:Lio/reactivex/internal/disposables/DisposableHelper;
 
     iput-object v1, p0, Lio/reactivex/observers/DefaultObserver;->upstream:Lio/reactivex/disposables/Disposable;
 
-    .line 3
     invoke-interface {v0}, Lio/reactivex/disposables/Disposable;->dispose()V
 
     return-void
@@ -65,7 +60,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/observers/DefaultObserver;->upstream:Lio/reactivex/disposables/Disposable;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -78,10 +72,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/observers/DefaultObserver;->upstream:Lio/reactivex/disposables/Disposable;
 
-    .line 3
     invoke-virtual {p0}, Lio/reactivex/observers/DefaultObserver;->onStart()V
 
     :cond_0

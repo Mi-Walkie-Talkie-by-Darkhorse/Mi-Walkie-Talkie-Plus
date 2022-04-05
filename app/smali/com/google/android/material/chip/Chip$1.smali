@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/chip/Chip$1;
 .super Lcom/google/android/material/resources/TextAppearanceFontCallback;
-.source "Chip.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/android/material/chip/Chip;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/chip/Chip$1;->this$0:Lcom/google/android/material/chip/Chip;
 
     invoke-direct {p0}, Lcom/google/android/material/resources/TextAppearanceFontCallback;-><init>()V
@@ -45,7 +43,6 @@
         .end annotation
     .end param
 
-    .line 1
     iget-object p1, p0, Lcom/google/android/material/chip/Chip$1;->this$0:Lcom/google/android/material/chip/Chip;
 
     invoke-static {p1}, Lcom/google/android/material/chip/Chip;->access$000(Lcom/google/android/material/chip/Chip;)Lcom/google/android/material/chip/ChipDrawable;
@@ -80,12 +77,10 @@
     :goto_0
     invoke-virtual {p1, p2}, Landroid/widget/CheckBox;->setText(Ljava/lang/CharSequence;)V
 
-    .line 2
     iget-object p1, p0, Lcom/google/android/material/chip/Chip$1;->this$0:Lcom/google/android/material/chip/Chip;
 
     invoke-virtual {p1}, Landroid/widget/CheckBox;->requestLayout()V
 
-    .line 3
     iget-object p1, p0, Lcom/google/android/material/chip/Chip$1;->this$0:Lcom/google/android/material/chip/Chip;
 
     invoke-virtual {p1}, Landroid/widget/CheckBox;->invalidate()V

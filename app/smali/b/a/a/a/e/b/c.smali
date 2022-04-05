@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/b/c;
 .super Ljava/lang/Object;
-.source "IBubbleDataSet.java"
 
 # interfaces
 .implements Lb/a/a/a/e/b/b;

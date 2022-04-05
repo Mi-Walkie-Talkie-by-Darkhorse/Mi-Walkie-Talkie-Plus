@@ -1,6 +1,5 @@
 .class public Lcom/github/mikephil/charting/data/RadarEntry;
 .super Lcom/github/mikephil/charting/data/Entry;
-.source "RadarEntry.java"
 
 
 # annotations
@@ -17,7 +16,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-super {p0}, Lcom/github/mikephil/charting/data/Entry;->c()F
 
     move-result v0

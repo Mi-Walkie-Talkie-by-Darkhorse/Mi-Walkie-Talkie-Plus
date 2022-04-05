@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;
 .super Ljava/lang/Object;
-.source "TileSourceFactory.java"
 
 
 # static fields
@@ -53,7 +52,6 @@
 .method static constructor <clinit>()V
     .locals 18
 
-    .line 1
     new-instance v8, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v0, "http://a.tile.openstreetmap.org/"
@@ -84,7 +82,6 @@
 
     sput-object v8, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->MAPNIK:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 2
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v1, "http://a.tile.opencyclemap.org/cycle/"
@@ -115,7 +112,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->CYCLEMAP:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 3
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v1, "http://openptmap.org/tiles/"
@@ -142,12 +138,10 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->PUBLIC_TRANSPORT:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 4
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->MAPNIK:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->DEFAULT_TILE_SOURCE:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 5
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/CloudmadeTileSource;
 
     const-string v8, "http://c.tile.cloudmade.com/%s/%d/%d/%d/%d/%d%s?token=%s"
@@ -172,7 +166,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->CLOUDMADESTANDARDTILES:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 6
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/CloudmadeTileSource;
 
     filled-new-array {v10, v9, v8}, [Ljava/lang/String;
@@ -195,7 +188,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->CLOUDMADESMALLTILES:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 7
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v1, "http://overlay.openstreetmap.nl/openfietskaart-overlay/"
@@ -218,7 +210,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->FIETS_OVERLAY_NL:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 8
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v1, "http://overlay.openstreetmap.nl/basemap/"
@@ -243,7 +234,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->BASE_OVERLAY_NL:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 9
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v1, "http://overlay.openstreetmap.nl/roads/"
@@ -266,7 +256,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->ROADS_OVERLAY_NL:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 10
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v1, "http://a.tiles.wmflabs.org/hikebike/"
@@ -289,7 +278,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->HIKEBIKEMAP:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 11
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v1, "http://tiles.openseamap.org/seamark/"
@@ -312,7 +300,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->OPEN_SEAMAP:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 12
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory$1;
 
     const-string v1, "https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer/tile/"
@@ -335,7 +322,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->USGS_TOPO:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 13
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory$2;
 
     const-string v1, "https://basemap.nationalmap.gov/arcgis/rest/services/USGSImageryTopo/MapServer/tile/"
@@ -360,7 +346,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->USGS_SAT:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 14
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v1, "http://wms.chartbundle.com/tms/v1.0/wac/"
@@ -385,7 +370,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->ChartbundleWAC:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 15
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v8, "chartbundle.com"
@@ -410,7 +394,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->ChartbundleENRH:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 16
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v1, "http://wms.chartbundle.com/tms/v1.0/enrl/"
@@ -429,7 +412,6 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->ChartbundleENRL:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 17
     new-instance v0, Lorg/osmdroid/tileprovider/tilesource/XYTileSource;
 
     const-string v1, "https://opentopomap.org/"
@@ -454,75 +436,64 @@
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->OpenTopo:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
-    .line 18
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     sput-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
-    .line 19
     sget-object v1, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->MAPNIK:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 20
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     sget-object v1, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->CYCLEMAP:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 21
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     sget-object v1, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->PUBLIC_TRANSPORT:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 22
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     sget-object v1, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->HIKEBIKEMAP:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 23
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     sget-object v1, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->USGS_TOPO:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 24
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     sget-object v1, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->USGS_SAT:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 25
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     sget-object v1, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->ChartbundleWAC:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 26
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     sget-object v1, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->ChartbundleENRH:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 27
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     sget-object v1, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->ChartbundleENRL:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 28
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     sget-object v1, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->OpenTopo:Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
@@ -535,7 +506,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -544,7 +514,6 @@
 .method public static addTileSource(Lorg/osmdroid/tileprovider/tilesource/ITileSource;)V
     .locals 1
 
-    .line 1
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     invoke-interface {v0, p0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -555,7 +524,6 @@
 .method public static containsTileSource(Ljava/lang/String;)Z
     .locals 2
 
-    .line 1
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -575,7 +543,6 @@
 
     check-cast v1, Lorg/osmdroid/tileprovider/tilesource/ITileSource;
 
-    .line 2
     invoke-interface {v1}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->name()Ljava/lang/String;
 
     move-result-object v1
@@ -607,7 +574,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 4
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -627,7 +593,6 @@
 
     check-cast v1, Lorg/osmdroid/tileprovider/tilesource/ITileSource;
 
-    .line 5
     invoke-interface {v1}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->ordinal()I
 
     move-result v2
@@ -636,7 +601,6 @@
 
     return-object v1
 
-    .line 6
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -667,7 +631,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
@@ -687,7 +650,6 @@
 
     check-cast v1, Lorg/osmdroid/tileprovider/tilesource/ITileSource;
 
-    .line 2
     invoke-interface {v1}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->name()Ljava/lang/String;
 
     move-result-object v2
@@ -700,7 +662,6 @@
 
     return-object v1
 
-    .line 3
     :cond_1
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
@@ -734,7 +695,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lorg/osmdroid/tileprovider/tilesource/TileSourceFactory;->mTileSources:Ljava/util/List;
 
     return-object v0

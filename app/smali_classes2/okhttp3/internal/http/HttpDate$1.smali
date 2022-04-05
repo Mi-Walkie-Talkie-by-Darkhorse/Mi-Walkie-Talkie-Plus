@@ -1,6 +1,5 @@
 .class Lokhttp3/internal/http/HttpDate$1;
 .super Ljava/lang/ThreadLocal;
-.source "HttpDate.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/ThreadLocal;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
 .method protected bridge synthetic initialValue()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lokhttp3/internal/http/HttpDate$1;->initialValue()Ljava/text/DateFormat;
 
     move-result-object v0
@@ -48,7 +45,6 @@
 .method protected initialValue()Ljava/text/DateFormat;
     .locals 3
 
-    .line 2
     new-instance v0, Ljava/text/SimpleDateFormat;
 
     sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
@@ -59,10 +55,8 @@
 
     const/4 v1, 0x0
 
-    .line 3
     invoke-virtual {v0, v1}, Ljava/text/DateFormat;->setLenient(Z)V
 
-    .line 4
     sget-object v1, Lokhttp3/internal/Util;->UTC:Ljava/util/TimeZone;
 
     invoke-virtual {v0, v1}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V

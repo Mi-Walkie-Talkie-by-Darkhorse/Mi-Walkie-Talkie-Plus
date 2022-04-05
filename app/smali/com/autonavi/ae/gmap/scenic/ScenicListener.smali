@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/autonavi/ae/gmap/scenic/ScenicListener;
 .super Ljava/lang/Object;
-.source "ScenicListener.java"
 
 
 # virtual methods

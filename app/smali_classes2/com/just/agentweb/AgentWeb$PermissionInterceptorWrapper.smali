@@ -1,6 +1,5 @@
 .class final Lcom/just/agentweb/AgentWeb$PermissionInterceptorWrapper;
 .super Ljava/lang/Object;
-.source "AgentWeb.java"
 
 # interfaces
 .implements Lcom/just/agentweb/PermissionInterceptor;
@@ -33,10 +32,8 @@
 .method private constructor <init>(Lcom/just/agentweb/PermissionInterceptor;)V
     .locals 1
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -49,7 +46,6 @@
 .method synthetic constructor <init>(Lcom/just/agentweb/PermissionInterceptor;Lcom/just/agentweb/AgentWeb$1;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/just/agentweb/AgentWeb$PermissionInterceptorWrapper;-><init>(Lcom/just/agentweb/PermissionInterceptor;)V
 
     return-void
@@ -60,7 +56,6 @@
 .method public intercept(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$PermissionInterceptorWrapper;->mWeakReference:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -73,7 +68,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/just/agentweb/AgentWeb$PermissionInterceptorWrapper;->mWeakReference:Ljava/lang/ref/WeakReference;
 

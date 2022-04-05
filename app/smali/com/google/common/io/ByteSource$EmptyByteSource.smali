@@ -1,6 +1,5 @@
 .class final Lcom/google/common/io/ByteSource$EmptyByteSource;
 .super Lcom/google/common/io/ByteSource$ByteArrayByteSource;
-.source "ByteSource.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/io/ByteSource$EmptyByteSource;
 
     invoke-direct {v0}, Lcom/google/common/io/ByteSource$EmptyByteSource;-><init>()V
@@ -39,7 +37,6 @@
 
     new-array v0, v0, [B
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/common/io/ByteSource$ByteArrayByteSource;-><init>([B)V
 
     return-void
@@ -48,7 +45,6 @@
 .method static synthetic access$200()Lcom/google/common/io/ByteSource$EmptyByteSource;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/io/ByteSource$EmptyByteSource;->INSTANCE:Lcom/google/common/io/ByteSource$EmptyByteSource;
 
     return-object v0
@@ -59,10 +55,8 @@
 .method public asCharSource(Ljava/nio/charset/Charset;)Lcom/google/common/io/CharSource;
     .locals 0
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {}, Lcom/google/common/io/CharSource;->empty()Lcom/google/common/io/CharSource;
 
     move-result-object p1
@@ -73,7 +67,6 @@
 .method public read()[B
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/io/ByteSource$ByteArrayByteSource;->bytes:[B
 
     return-object v0

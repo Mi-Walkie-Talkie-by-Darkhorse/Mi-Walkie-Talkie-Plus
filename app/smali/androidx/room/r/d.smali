@@ -1,6 +1,5 @@
 .class public Landroidx/room/r/d;
 .super Ljava/lang/Object;
-.source "FileUtil.java"
 
 
 # annotations
@@ -34,7 +33,6 @@
         }
     .end annotation
 
-    .line 1
     :try_start_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -52,18 +50,15 @@
 
     move-object v4, p0
 
-    .line 2
     invoke-virtual/range {v3 .. v8}, Ljava/nio/channels/FileChannel;->transferFrom(Ljava/nio/channels/ReadableByteChannel;JJ)J
 
     goto :goto_1
 
-    .line 3
     :cond_0
     invoke-static {p0}, Ljava/nio/channels/Channels;->newInputStream(Ljava/nio/channels/ReadableByteChannel;)Ljava/io/InputStream;
 
     move-result-object v0
 
-    .line 4
     invoke-static {p1}, Ljava/nio/channels/Channels;->newOutputStream(Ljava/nio/channels/WritableByteChannel;)Ljava/io/OutputStream;
 
     move-result-object v1
@@ -72,7 +67,6 @@
 
     new-array v3, v3, [B
 
-    .line 5
     :goto_0
     invoke-virtual {v0, v3}, Ljava/io/InputStream;->read([B)I
 
@@ -80,22 +74,18 @@
 
     if-lez v4, :cond_1
 
-    .line 6
     invoke-virtual {v1, v3, v2, v4}, Ljava/io/OutputStream;->write([BII)V
 
     goto :goto_0
 
-    .line 7
     :cond_1
     :goto_1
     invoke-virtual {p1, v2}, Ljava/nio/channels/FileChannel;->force(Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 8
     invoke-interface {p0}, Ljava/nio/channels/ReadableByteChannel;->close()V
 
-    .line 9
     invoke-virtual {p1}, Ljava/nio/channels/FileChannel;->close()V
 
     return-void
@@ -103,12 +93,9 @@
     :catchall_0
     move-exception v0
 
-    .line 10
     invoke-interface {p0}, Ljava/nio/channels/ReadableByteChannel;->close()V
 
-    .line 11
     invoke-virtual {p1}, Ljava/nio/channels/FileChannel;->close()V
 
-    .line 12
     throw v0
 .end method

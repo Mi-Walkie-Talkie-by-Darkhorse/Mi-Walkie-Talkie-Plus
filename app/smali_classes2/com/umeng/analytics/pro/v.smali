@@ -1,6 +1,5 @@
 .class interface abstract Lcom/umeng/analytics/pro/v;
 .super Ljava/lang/Object;
-.source "SessionIdGenerateService.java"
 
 
 # virtual methods

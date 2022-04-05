@@ -1,6 +1,5 @@
 .class synthetic Lcom/umeng/analytics/Gender$4;
 .super Ljava/lang/Object;
-.source "Gender.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/umeng/analytics/Gender;->values()[Lcom/umeng/analytics/Gender;
 
     move-result-object v0

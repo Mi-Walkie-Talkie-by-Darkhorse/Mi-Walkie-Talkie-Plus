@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/az;
 .super Ljava/lang/Thread;
-.source "OfflineMapDataVerify.java"
 
 
 # instance fields
@@ -13,13 +12,10 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/amap/api/col/l3/az;->a:Landroid/content/Context;
 
-    .line 3
     invoke-static {p1}, Lcom/amap/api/col/l3/bl;->a(Landroid/content/Context;)Lcom/amap/api/col/l3/bl;
 
     move-result-object p1
@@ -34,7 +30,6 @@
 
     const-string v0, "quanguo"
 
-    .line 1
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -43,7 +38,6 @@
 
     const-string p1, "quanguogaiyaotu"
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lcom/amap/api/col/l3/az;->a:Landroid/content/Context;
 
@@ -55,12 +49,10 @@
 
     if-eqz v0, :cond_5
 
-    .line 3
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/aw;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4
     new-instance v2, Ljava/io/File;
 
     iget-object v3, p0, Lcom/amap/api/col/l3/az;->a:Landroid/content/Context;
@@ -79,7 +71,6 @@
 
     return-object v1
 
-    .line 5
     :cond_1
     array-length v3, v2
 
@@ -90,7 +81,6 @@
 
     aget-object v5, v2, v4
 
-    .line 6
     invoke-virtual {v5}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v6
@@ -111,7 +101,6 @@
 
     if-eqz v6, :cond_4
 
-    .line 7
     :cond_2
     invoke-virtual {v5}, Ljava/io/File;->getName()Ljava/lang/String;
 
@@ -125,7 +114,6 @@
 
     if-eqz v6, :cond_4
 
-    .line 8
     invoke-static {v5}, Lcom/amap/api/col/l3/em;->a(Ljava/io/File;)Ljava/lang/String;
 
     move-result-object v1
@@ -136,7 +124,6 @@
 
     invoke-virtual {v5, v1}, Lcom/amap/api/col/l3/bg;->b(Ljava/lang/String;)V
 
-    .line 9
     invoke-virtual {v5}, Lcom/amap/api/col/l3/bj;->c()Ljava/lang/String;
 
     move-result-object v1
@@ -168,17 +155,14 @@
         }
     .end annotation
 
-    .line 26
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 27
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 28
     iget-object v2, p0, Lcom/amap/api/col/l3/az;->a:Landroid/content/Context;
 
     invoke-static {v2}, Lcom/amap/api/col/l3/em;->b(Landroid/content/Context;)Ljava/lang/String;
@@ -187,7 +171,6 @@
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 29
     new-instance v2, Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -196,7 +179,6 @@
 
     invoke-direct {v2, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 30
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v1
@@ -205,7 +187,6 @@
 
     return-object v0
 
-    .line 31
     :cond_0
     invoke-virtual {v2}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
@@ -215,7 +196,6 @@
 
     return-object v0
 
-    .line 32
     :cond_1
     array-length v2, v1
 
@@ -228,7 +208,6 @@
 
     aget-object v5, v1, v4
 
-    .line 33
     invoke-virtual {v5}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v6
@@ -241,28 +220,24 @@
 
     if-eqz v6, :cond_2
 
-    .line 34
     invoke-virtual {v5}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v5
 
     const/16 v6, 0x2e
 
-    .line 35
     invoke-virtual {v5, v6}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v6
 
     if-ltz v6, :cond_2
 
-    .line 36
     invoke-virtual {v5}, Ljava/lang/String;->length()I
 
     move-result v7
 
     if-ge v6, v7, :cond_2
 
-    .line 37
     invoke-virtual {v5, v3, v6}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v5
@@ -291,12 +266,10 @@
         }
     .end annotation
 
-    .line 12
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 13
     iget-object v1, p0, Lcom/amap/api/col/l3/az;->a:Landroid/content/Context;
 
     invoke-static {v1}, Lcom/amap/api/col/l3/em;->a(Landroid/content/Context;)Ljava/lang/String;
@@ -305,10 +278,8 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 14
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 15
     new-instance p2, Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -317,7 +288,6 @@
 
     invoke-direct {p2, v0}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 16
     invoke-virtual {p2}, Ljava/io/File;->exists()Z
 
     move-result v0
@@ -326,7 +296,6 @@
 
     return-void
 
-    .line 17
     :cond_0
     invoke-virtual {p2}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
@@ -336,7 +305,6 @@
 
     return-void
 
-    .line 18
     :cond_1
     array-length v0, p2
 
@@ -349,7 +317,6 @@
 
     aget-object v3, p2, v2
 
-    .line 19
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v4
@@ -362,40 +329,34 @@
 
     if-eqz v4, :cond_2
 
-    .line 20
     invoke-virtual {v3}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v3
 
     const/16 v4, 0x2e
 
-    .line 21
     invoke-virtual {v3, v4}, Ljava/lang/String;->lastIndexOf(I)I
 
     move-result v4
 
     if-ltz v4, :cond_2
 
-    .line 22
     invoke-virtual {v3}, Ljava/lang/String;->length()I
 
     move-result v5
 
     if-ge v4, v5, :cond_2
 
-    .line 23
     invoke-virtual {v3, v1, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 24
     invoke-virtual {p1, v3}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
     move-result v4
 
     if-nez v4, :cond_2
 
-    .line 25
     invoke-virtual {p1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_2
@@ -419,7 +380,6 @@
         }
     .end annotation
 
-    .line 10
     invoke-virtual {p1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -437,7 +397,6 @@
 
     check-cast v0, Lcom/amap/api/col/l3/bg;
 
-    .line 11
     invoke-virtual {v0}, Lcom/amap/api/col/l3/bj;->g()Ljava/lang/String;
 
     move-result-object v0
@@ -465,10 +424,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     iput-object v0, p0, Lcom/amap/api/col/l3/az;->a:Landroid/content/Context;
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/az;->b:Lcom/amap/api/col/l3/bl;
 
     return-void
@@ -477,7 +434,6 @@
 .method public final run()V
     .locals 9
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V

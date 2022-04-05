@@ -1,6 +1,5 @@
 .class final Lio/reactivex/subjects/ReplaySubject$Node;
 .super Ljava/util/concurrent/atomic/AtomicReference;
-.source "ReplaySubject.java"
 
 
 # annotations
@@ -48,10 +47,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/subjects/ReplaySubject$Node;->value:Ljava/lang/Object;
 
     return-void

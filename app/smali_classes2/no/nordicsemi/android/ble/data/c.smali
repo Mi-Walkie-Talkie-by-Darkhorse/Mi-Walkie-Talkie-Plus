@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/data/c;
 .super Ljava/lang/Object;
-.source "DataSplitter.java"
 
 
 # virtual methods

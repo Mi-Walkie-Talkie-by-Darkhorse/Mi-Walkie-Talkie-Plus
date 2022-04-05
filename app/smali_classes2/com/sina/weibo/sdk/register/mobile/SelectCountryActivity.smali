@@ -1,6 +1,5 @@
 .class public Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;
 .super Landroid/app/Activity;
-.source "SelectCountryActivity.java"
 
 # interfaces
 .implements Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar$a;
@@ -66,15 +65,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
     const-string v0, ""
 
-    .line 2
     iput-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->d:Ljava/lang/String;
 
-    .line 3
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -87,7 +83,6 @@
 .method static synthetic a(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->f:Ljava/util/List;
 
     return-object p0
@@ -107,7 +102,6 @@
         }
     .end annotation
 
-    .line 66
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
@@ -118,7 +112,6 @@
 
     const/4 v2, 0x0
 
-    .line 67
     :goto_0
     array-length v3, p1
 
@@ -126,13 +119,11 @@
 
     goto :goto_3
 
-    .line 68
     :cond_0
     aget-object v3, p1, v2
 
     if-eqz v3, :cond_3
 
-    .line 69
     invoke-interface {v3}, Ljava/util/List;->size()I
 
     move-result v4
@@ -141,7 +132,6 @@
 
     const/4 v4, 0x0
 
-    .line 70
     :goto_1
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -154,7 +144,6 @@
     :cond_1
     if-nez v4, :cond_2
 
-    .line 71
     new-instance v5, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$d;
 
     const/4 v6, -0x1
@@ -163,7 +152,6 @@
 
     invoke-interface {v0, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 72
     :cond_2
     new-instance v5, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$d;
 
@@ -189,40 +177,34 @@
 .method private a()V
     .locals 6
 
-    .line 2
     new-instance v0, Landroid/widget/RelativeLayout;
 
     invoke-direct {v0, p0}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->i:Landroid/widget/RelativeLayout;
 
-    .line 3
     new-instance v0, Landroid/widget/RelativeLayout$LayoutParams;
 
     const/4 v1, -0x1
 
     invoke-direct {v0, v1, v1}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(II)V
 
-    .line 4
     iget-object v2, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->i:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v2, v0}, Landroid/widget/RelativeLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 5
     new-instance v0, Lcom/sina/weibo/sdk/component/view/TitleBar;
 
     invoke-direct {v0, p0}, Lcom/sina/weibo/sdk/component/view/TitleBar;-><init>(Landroid/content/Context;)V
 
     const/4 v2, 0x1
 
-    .line 6
     invoke-virtual {v0, v2}, Landroid/widget/RelativeLayout;->setId(I)V
 
     const-string v3, "weibosdk_navigationbar_back.png"
 
     const-string v4, "weibosdk_navigationbar_back_highlighted.png"
 
-    .line 7
     invoke-static {p0, v3, v4}, Lcom/sina/weibo/sdk/utils/f;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Landroid/graphics/drawable/StateListDrawable;
 
     move-result-object v3
@@ -235,38 +217,32 @@
 
     const-string v5, "\u9078\u64c7\u570b\u5bb6"
 
-    .line 8
     invoke-static {p0, v3, v4, v5}, Lcom/sina/weibo/sdk/utils/f;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {v0, v3}, Lcom/sina/weibo/sdk/component/view/TitleBar;->setTitleBarText(Ljava/lang/String;)V
 
-    .line 9
     new-instance v3, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$a;
 
     invoke-direct {v3, p0}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$a;-><init>(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)V
 
     invoke-virtual {v0, v3}, Lcom/sina/weibo/sdk/component/view/TitleBar;->setTitleBarClickListener(Lcom/sina/weibo/sdk/component/view/TitleBar$b;)V
 
-    .line 10
     iget-object v3, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->i:Landroid/widget/RelativeLayout;
 
     invoke-virtual {v3, v0}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
-    .line 11
     new-instance v3, Landroid/widget/FrameLayout;
 
     invoke-direct {v3, p0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
 
     iput-object v3, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->j:Landroid/widget/FrameLayout;
 
-    .line 12
     new-instance v3, Landroid/widget/RelativeLayout$LayoutParams;
 
     invoke-direct {v3, v1, v1}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(II)V
 
-    .line 13
     invoke-virtual {v0}, Landroid/widget/RelativeLayout;->getId()I
 
     move-result v0
@@ -275,43 +251,36 @@
 
     invoke-virtual {v3, v4, v0}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(II)V
 
-    .line 14
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->j:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v3}, Landroid/widget/FrameLayout;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 15
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->i:Landroid/widget/RelativeLayout;
 
     iget-object v3, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->j:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v3}, Landroid/widget/RelativeLayout;->addView(Landroid/view/View;)V
 
-    .line 16
     new-instance v0, Landroid/widget/ListView;
 
     invoke-direct {v0, p0}, Landroid/widget/ListView;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
-    .line 17
     new-instance v0, Landroid/widget/AbsListView$LayoutParams;
 
     invoke-direct {v0, v1, v1}, Landroid/widget/AbsListView$LayoutParams;-><init>(II)V
 
-    .line 18
     iget-object v3, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     invoke-virtual {v3, v0}, Landroid/widget/ListView;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 19
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     const/4 v3, 0x0
 
     invoke-virtual {v0, v3}, Landroid/widget/ListView;->setFadingEdgeLength(I)V
 
-    .line 20
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     new-instance v4, Landroid/graphics/drawable/ColorDrawable;
@@ -320,7 +289,6 @@
 
     invoke-virtual {v0, v4}, Landroid/widget/ListView;->setSelector(Landroid/graphics/drawable/Drawable;)V
 
-    .line 21
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     invoke-static {p0, v2}, Lcom/sina/weibo/sdk/utils/f;->a(Landroid/content/Context;I)I
@@ -329,32 +297,26 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setDividerHeight(I)V
 
-    .line 22
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ListView;->setCacheColorHint(I)V
 
-    .line 23
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ListView;->setDrawSelectorOnTop(Z)V
 
-    .line 24
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ListView;->setScrollingCacheEnabled(Z)V
 
-    .line 25
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ListView;->setScrollbarFadingEnabled(Z)V
 
-    .line 26
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ListView;->setVerticalScrollBarEnabled(Z)V
 
-    .line 27
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     new-instance v2, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$b;
@@ -363,14 +325,12 @@
 
     invoke-virtual {v0, v2}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
-    .line 28
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->j:Landroid/widget/FrameLayout;
 
     iget-object v2, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     invoke-virtual {v0, v2}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
-    .line 29
     new-instance v0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;
 
     const/4 v2, 0x0
@@ -379,22 +339,18 @@
 
     iput-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->h:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;
 
-    .line 30
     iget-object v2, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     invoke-virtual {v2, v0}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
-    .line 31
     new-instance v0, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;
 
     invoke-direct {v0, p0}, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;-><init>(Landroid/content/Context;)V
 
     iput-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->a:Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;
 
-    .line 32
     invoke-virtual {v0, p0}, Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;->setIndexChangeListener(Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar$a;)V
 
-    .line 33
     new-instance v0, Landroid/widget/FrameLayout$LayoutParams;
 
     const/4 v2, -0x2
@@ -403,30 +359,24 @@
 
     const/4 v1, 0x5
 
-    .line 34
     iput v1, v0, Landroid/widget/FrameLayout$LayoutParams;->gravity:I
 
-    .line 35
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->a:Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 36
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->j:Landroid/widget/FrameLayout;
 
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->a:Lcom/sina/weibo/sdk/register/mobile/LetterIndexBar;
 
     invoke-virtual {v0, v1}, Landroid/widget/FrameLayout;->addView(Landroid/view/View;)V
 
-    .line 37
     invoke-static {p0}, Lcom/sina/weibo/sdk/register/mobile/a;->a(Landroid/content/Context;)Lcom/sina/weibo/sdk/register/mobile/a;
 
-    .line 38
     invoke-static {}, Lcom/sina/weibo/sdk/utils/f;->a()Ljava/util/Locale;
 
     move-result-object v0
 
-    .line 39
     sget-object v1, Ljava/util/Locale;->SIMPLIFIED_CHINESE:Ljava/util/Locale;
 
     invoke-virtual {v1, v0}, Ljava/util/Locale;->equals(Ljava/lang/Object;)Z
@@ -437,7 +387,6 @@
 
     const-string v0, "countryCode.txt"
 
-    .line 40
     invoke-static {p0, v0}, Lcom/sina/weibo/sdk/utils/f;->e(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -446,7 +395,6 @@
 
     goto :goto_0
 
-    .line 41
     :cond_0
     sget-object v1, Ljava/util/Locale;->TRADITIONAL_CHINESE:Ljava/util/Locale;
 
@@ -458,7 +406,6 @@
 
     const-string v0, "countryCodeTw.txt"
 
-    .line 42
     invoke-static {p0, v0}, Lcom/sina/weibo/sdk/utils/f;->e(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
@@ -470,14 +417,12 @@
     :cond_1
     const-string v0, "countryCodeEn.txt"
 
-    .line 43
     invoke-static {p0, v0}, Lcom/sina/weibo/sdk/utils/f;->e(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->d:Ljava/lang/String;
 
-    .line 44
     :goto_0
     new-instance v0, Lcom/sina/weibo/sdk/register/mobile/CountryList;
 
@@ -487,31 +432,26 @@
 
     iput-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->e:Lcom/sina/weibo/sdk/register/mobile/CountryList;
 
-    .line 45
     iget-object v0, v0, Lcom/sina/weibo/sdk/register/mobile/CountryList;->a:Ljava/util/List;
 
     iput-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->c:Ljava/util/List;
 
-    .line 46
     invoke-direct {p0, v0}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->a(Ljava/util/List;)[Ljava/util/List;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->b:[Ljava/util/List;
 
-    .line 47
     invoke-direct {p0, v0}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->a([Ljava/util/List;)Ljava/util/List;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->f:Ljava/util/List;
 
-    .line 48
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->h:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;
 
     invoke-virtual {v0}, Landroid/widget/BaseAdapter;->notifyDataSetChanged()V
 
-    .line 49
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->i:Landroid/widget/RelativeLayout;
 
     invoke-virtual {p0, v0}, Landroid/app/Activity;->setContentView(Landroid/view/View;)V
@@ -537,14 +477,12 @@
 
     new-array v0, v0, [Ljava/util/ArrayList;
 
-    .line 52
     new-instance v1, Lcom/sina/weibo/sdk/register/mobile/Country;
 
     invoke-direct {v1}, Lcom/sina/weibo/sdk/register/mobile/Country;-><init>()V
 
     const-string v2, "0086"
 
-    .line 53
     invoke-virtual {v1, v2}, Lcom/sina/weibo/sdk/register/mobile/Country;->a(Ljava/lang/String;)V
 
     const-string v2, "China"
@@ -553,14 +491,12 @@
 
     const-string v4, "\u4e2d\u570b"
 
-    .line 54
     invoke-static {p0, v2, v3, v4}, Lcom/sina/weibo/sdk/utils/f;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
     invoke-virtual {v1, v2}, Lcom/sina/weibo/sdk/register/mobile/Country;->b(Ljava/lang/String;)V
 
-    .line 55
     new-instance v2, Ljava/util/ArrayList;
 
     invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
@@ -569,14 +505,12 @@
 
     aput-object v2, v0, v3
 
-    .line 56
     aget-object v2, v0, v3
 
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     const/4 v1, 0x0
 
-    .line 57
     :goto_0
     invoke-interface {p1}, Ljava/util/List;->size()I
 
@@ -586,7 +520,6 @@
 
     return-object v0
 
-    .line 58
     :cond_0
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -594,7 +527,6 @@
 
     check-cast v2, Lcom/sina/weibo/sdk/register/mobile/Country;
 
-    .line 59
     invoke-virtual {v2}, Lcom/sina/weibo/sdk/register/mobile/Country;->a()Ljava/lang/String;
 
     move-result-object v4
@@ -619,7 +551,6 @@
 
     if-nez v4, :cond_3
 
-    .line 60
     invoke-virtual {v2}, Lcom/sina/weibo/sdk/register/mobile/Country;->a()Ljava/lang/String;
 
     move-result-object v4
@@ -634,7 +565,6 @@
 
     goto :goto_1
 
-    .line 61
     :cond_1
     invoke-virtual {v2}, Lcom/sina/weibo/sdk/register/mobile/Country;->c()Ljava/lang/String;
 
@@ -648,19 +578,16 @@
 
     add-int/lit8 v4, v4, 0x1
 
-    .line 62
     aget-object v5, v0, v4
 
     if-nez v5, :cond_2
 
-    .line 63
     new-instance v5, Ljava/util/ArrayList;
 
     invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     aput-object v5, v0, v4
 
-    .line 64
     :cond_2
     aget-object v4, v0, v4
 
@@ -668,7 +595,6 @@
 
     goto :goto_2
 
-    .line 65
     :cond_3
     :goto_1
     aget-object v4, v0, v3
@@ -684,7 +610,6 @@
 .method static synthetic b(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)[Ljava/util/List;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->b:[Ljava/util/List;
 
     return-object p0
@@ -693,7 +618,6 @@
 .method static synthetic c(Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;)Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->h:Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity$c;
 
     return-object p0
@@ -704,7 +628,6 @@
 .method public a(I)V
     .locals 4
 
-    .line 50
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->b:[Ljava/util/List;
 
     if-eqz v0, :cond_0
@@ -717,7 +640,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 51
     iget-object v0, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->g:Landroid/widget/ListView;
 
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->f:Ljava/util/List;
@@ -741,10 +663,8 @@
 .method protected onCreate(Landroid/os/Bundle;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
-    .line 2
     invoke-direct {p0}, Lcom/sina/weibo/sdk/register/mobile/SelectCountryActivity;->a()V
 
     return-void
@@ -753,7 +673,6 @@
 .method protected onDestroy()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Landroid/app/Activity;->onDestroy()V
 
     return-void
@@ -762,7 +681,6 @@
 .method protected onPause()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Landroid/app/Activity;->onPause()V
 
     return-void

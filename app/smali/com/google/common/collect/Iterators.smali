@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/collect/Iterators;
 .super Ljava/lang/Object;
-.source "Iterators.java"
 
 
 # annotations
@@ -42,14 +41,12 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Iterators$1;
 
     invoke-direct {v0}, Lcom/google/common/collect/Iterators$1;-><init>()V
 
     sput-object v0, Lcom/google/common/collect/Iterators;->EMPTY_LIST_ITERATOR:Lcom/google/common/collect/UnmodifiableListIterator;
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/Iterators$2;
 
     invoke-direct {v0}, Lcom/google/common/collect/Iterators$2;-><init>()V
@@ -62,7 +59,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -82,15 +78,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
 
-    .line 3
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -98,7 +91,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 4
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
@@ -125,7 +117,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
@@ -142,20 +133,17 @@
     :goto_0
     const-string v2, "numberToAdvance must be nonnegative"
 
-    .line 2
     invoke-static {v1, v2}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
     :goto_1
     if-ge v0, p1, :cond_1
 
-    .line 3
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 4
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     add-int/lit8 v0, v0, 0x1
@@ -180,10 +168,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     :cond_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -191,12 +177,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
     invoke-interface {p1, v0}, Lcom/google/common/base/Predicate;->apply(Ljava/lang/Object;)Z
 
     move-result v0
@@ -227,7 +211,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Iterators;->indexOf(Ljava/util/Iterator;Lcom/google/common/base/Predicate;)I
 
     move-result p0
@@ -261,10 +244,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/Iterators$14;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Iterators$14;-><init>(Ljava/util/Iterator;)V
@@ -286,7 +267,6 @@
         }
     .end annotation
 
-    .line 1
     check-cast p0, Ljava/util/ListIterator;
 
     return-object p0
@@ -299,7 +279,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -338,10 +317,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -349,10 +326,8 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    .line 4
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     goto :goto_0
@@ -377,10 +352,8 @@
         }
     .end annotation
 
-    .line 5
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 6
     new-instance v0, Lcom/google/common/collect/Iterators$5;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Iterators$5;-><init>(Ljava/util/Iterator;)V
@@ -404,7 +377,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/ImmutableList;->of(Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -438,7 +410,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-static {p0, p1, p2}, Lcom/google/common/collect/ImmutableList;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -474,7 +445,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {p0, p1, p2, p3}, Lcom/google/common/collect/ImmutableList;->of(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -504,7 +474,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-static {p0}, Lcom/google/common/collect/ImmutableList;->copyOf([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -534,10 +503,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/Iterators$10;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Iterators$10;-><init>(Ljava/util/Iterator;)V
@@ -561,7 +528,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Predicates;->equalTo(Ljava/lang/Object;)Lcom/google/common/base/Predicate;
 
     move-result-object p1
@@ -587,10 +553,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/Iterators$4;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Iterators$4;-><init>(Ljava/lang/Iterable;)V
@@ -610,7 +574,6 @@
         }
     .end annotation
 
-    .line 3
     invoke-static {p0}, Lcom/google/common/collect/Lists;->newArrayList([Ljava/lang/Object;)Ljava/util/ArrayList;
 
     move-result-object p0
@@ -634,7 +597,6 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -642,7 +604,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 2
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -653,18 +614,15 @@
 
     return v1
 
-    .line 3
     :cond_1
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 4
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
 
-    .line 5
     invoke-static {v0, v2}, Lcom/google/common/base/Objects;->equal(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
@@ -673,7 +631,6 @@
 
     return v1
 
-    .line 6
     :cond_2
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
@@ -699,7 +656,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/Iterators;->emptyListIterator()Lcom/google/common/collect/UnmodifiableListIterator;
 
     move-result-object v0
@@ -719,7 +675,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/Iterators;->EMPTY_LIST_ITERATOR:Lcom/google/common/collect/UnmodifiableListIterator;
 
     return-object v0
@@ -737,7 +692,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/Iterators;->EMPTY_MODIFIABLE_ITERATOR:Ljava/util/Iterator;
 
     return-object v0
@@ -759,13 +713,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     new-instance v0, Lcom/google/common/collect/Iterators$7;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Iterators$7;-><init>(Ljava/util/Iterator;Lcom/google/common/base/Predicate;)V
@@ -793,7 +744,6 @@
         }
     .end annotation
 
-    .line 4
     invoke-static {p1}, Lcom/google/common/base/Predicates;->instanceOf(Ljava/lang/Class;)Lcom/google/common/base/Predicate;
 
     move-result-object p1
@@ -819,7 +769,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Iterators;->filter(Ljava/util/Iterator;Lcom/google/common/base/Predicate;)Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -852,7 +801,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 2
     invoke-static {p0, p1}, Lcom/google/common/collect/Iterators;->filter(Ljava/util/Iterator;Lcom/google/common/base/Predicate;)Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -876,7 +824,6 @@
         }
     .end annotation
 
-    .line 1
     array-length v0, p0
 
     const/4 v1, 0x0
@@ -909,30 +856,25 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
     add-int v0, p1, p2
 
-    .line 3
     array-length v1, p0
 
     invoke-static {p1, v0, v1}, Lcom/google/common/base/Preconditions;->checkPositionIndexes(III)V
 
-    .line 4
     invoke-static {p3, p2}, Lcom/google/common/base/Preconditions;->checkPositionIndex(II)I
 
     if-nez p2, :cond_1
 
-    .line 5
     invoke-static {}, Lcom/google/common/collect/Iterators;->emptyListIterator()Lcom/google/common/collect/UnmodifiableListIterator;
 
     move-result-object p0
 
     return-object p0
 
-    .line 6
     :cond_1
     new-instance v0, Lcom/google/common/collect/Iterators$11;
 
@@ -955,10 +897,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/Iterators$13;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Iterators$13;-><init>(Ljava/util/Enumeration;)V
@@ -982,7 +922,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Predicates;->equalTo(Ljava/lang/Object;)Lcom/google/common/base/Predicate;
 
     move-result-object p1
@@ -1010,29 +949,24 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/collect/Iterators;->checkNonnegative(I)V
 
-    .line 2
     invoke-static {p0, p1}, Lcom/google/common/collect/Iterators;->advance(Ljava/util/Iterator;I)I
 
     move-result v0
 
-    .line 3
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    .line 4
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object p0
 
     return-object p0
 
-    .line 5
     :cond_0
     new-instance p0, Ljava/lang/IndexOutOfBoundsException;
 
@@ -1086,13 +1020,10 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 6
     invoke-static {p1}, Lcom/google/common/collect/Iterators;->checkNonnegative(I)V
 
-    .line 7
     invoke-static {p0, p1}, Lcom/google/common/collect/Iterators;->advance(Ljava/util/Iterator;I)I
 
-    .line 8
     invoke-static {p0, p2}, Lcom/google/common/collect/Iterators;->getNext(Ljava/util/Iterator;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -1112,13 +1043,11 @@
         }
     .end annotation
 
-    .line 1
     :cond_0
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
@@ -1147,7 +1076,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 3
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -1181,7 +1109,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -1208,12 +1135,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 2
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
@@ -1222,13 +1147,11 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v1, Ljava/lang/StringBuilder;
 
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 4
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -1266,14 +1189,12 @@
 
     if-ge v0, v2, :cond_1
 
-    .line 5
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v2
 
     if-eqz v2, :cond_1
 
-    .line 6
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v2
@@ -1312,7 +1233,6 @@
 
     goto :goto_0
 
-    .line 7
     :cond_1
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1322,16 +1242,13 @@
 
     const-string p0, ", ..."
 
-    .line 8
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     :cond_2
     const/16 p0, 0x3e
 
-    .line 9
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 10
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
     invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
@@ -1362,7 +1279,6 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 11
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
@@ -1393,12 +1309,10 @@
 
     const-string v0, "predicate"
 
-    .line 1
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1406,12 +1320,10 @@
 
     if-eqz v1, :cond_1
 
-    .line 3
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 4
     invoke-interface {p1, v1}, Lcom/google/common/base/Predicate;->apply(Ljava/lang/Object;)Z
 
     move-result v1
@@ -1445,7 +1357,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-ltz p1, :cond_0
@@ -1460,10 +1371,8 @@
     :goto_0
     const-string v1, "limit is negative"
 
-    .line 2
     invoke-static {v0, v1}, Lcom/google/common/base/Preconditions;->checkArgument(ZLjava/lang/Object;)V
 
-    .line 3
     new-instance v0, Lcom/google/common/collect/Iterators$9;
 
     invoke-direct {v0, p1, p0}, Lcom/google/common/collect/Iterators$9;-><init>(ILjava/util/Iterator;)V
@@ -1494,15 +1403,12 @@
 
     const-string v0, "iterators"
 
-    .line 1
     invoke-static {p0, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-string v0, "comparator"
 
-    .line 2
     invoke-static {p1, v0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     new-instance v0, Lcom/google/common/collect/Iterators$MergingIterator;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Iterators$MergingIterator;-><init>(Ljava/lang/Iterable;Ljava/util/Comparator;)V
@@ -1527,7 +1433,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/google/common/collect/Iterators;->partitionImpl(Ljava/util/Iterator;IZ)Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -1552,7 +1457,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/google/common/collect/Iterators;->partitionImpl(Ljava/util/Iterator;IZ)Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
@@ -1575,7 +1479,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     if-lez p1, :cond_0
@@ -1587,11 +1490,9 @@
     :cond_0
     const/4 v0, 0x0
 
-    .line 2
     :goto_0
     invoke-static {v0}, Lcom/google/common/base/Preconditions;->checkArgument(Z)V
 
-    .line 3
     new-instance v0, Lcom/google/common/collect/Iterators$6;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/google/common/collect/Iterators$6;-><init>(Ljava/util/Iterator;IZ)V
@@ -1616,7 +1517,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 4
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -1640,17 +1540,14 @@
         }
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lcom/google/common/collect/Iterators$PeekingImpl;
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p0, Lcom/google/common/collect/Iterators$PeekingImpl;
 
     return-object p0
 
-    .line 3
     :cond_0
     new-instance v0, Lcom/google/common/collect/Iterators$PeekingImpl;
 
@@ -1674,19 +1571,16 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    .line 1
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 3
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     return-object v0
@@ -1709,7 +1603,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Predicates;->in(Ljava/util/Collection;)Lcom/google/common/base/Predicate;
 
     move-result-object p1
@@ -1735,12 +1628,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     const/4 v0, 0x0
 
-    .line 2
     :cond_0
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
@@ -1749,7 +1640,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 3
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
@@ -1760,7 +1650,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 4
     invoke-interface {p0}, Ljava/util/Iterator;->remove()V
 
     const/4 v0, 0x1
@@ -1783,7 +1672,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Predicates;->in(Ljava/util/Collection;)Lcom/google/common/base/Predicate;
 
     move-result-object p1
@@ -1815,7 +1703,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/Iterators$12;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/Iterators$12;-><init>(Ljava/lang/Object;)V
@@ -1835,7 +1722,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :goto_0
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -1843,7 +1729,6 @@
 
     if-eqz v1, :cond_0
 
-    .line 2
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     add-int/lit8 v0, v0, 0x1
@@ -1872,12 +1757,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/Lists;->newArrayList(Ljava/util/Iterator;)Ljava/util/ArrayList;
 
     move-result-object p0
 
-    .line 2
     invoke-static {p0, p1}, Lcom/google/common/collect/Iterables;->toArray(Ljava/lang/Iterable;Ljava/lang/Class;)[Ljava/lang/Object;
 
     move-result-object p0
@@ -1896,7 +1779,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/Collections2;->STANDARD_JOINER:Lcom/google/common/base/Joiner;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -1940,10 +1822,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/Iterators$8;
 
     invoke-direct {v0, p0, p1}, Lcom/google/common/collect/Iterators$8;-><init>(Ljava/util/Iterator;Lcom/google/common/base/Function;)V
@@ -1967,12 +1847,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Iterators;->filter(Ljava/util/Iterator;Lcom/google/common/base/Predicate;)Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object p0
 
-    .line 2
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result p1
@@ -2015,7 +1893,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 5
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -2039,20 +1916,16 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     instance-of v0, p0, Lcom/google/common/collect/UnmodifiableIterator;
 
     if-eqz v0, :cond_0
 
-    .line 3
     check-cast p0, Lcom/google/common/collect/UnmodifiableIterator;
 
     return-object p0
 
-    .line 4
     :cond_0
     new-instance v0, Lcom/google/common/collect/Iterators$3;
 

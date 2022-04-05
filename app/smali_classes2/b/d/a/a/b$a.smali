@@ -1,6 +1,5 @@
 .class Lb/d/a/a/b$a;
 .super Ljava/lang/Object;
-.source "MultiItemTypeAdapter.java"
 
 # interfaces
 .implements Landroid/view/View$OnClickListener;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lb/d/a/a/b;Lb/d/a/a/c/c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lb/d/a/a/b$a;->b:Lb/d/a/a/b;
 
     iput-object p2, p0, Lb/d/a/a/b$a;->a:Lb/d/a/a/c/c;
@@ -42,21 +40,18 @@
 .method public onClick(Landroid/view/View;)V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lb/d/a/a/b$a;->b:Lb/d/a/a/b;
 
     iget-object v0, v0, Lb/d/a/a/b;->d:Lb/d/a/a/b$c;
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lb/d/a/a/b$a;->a:Lb/d/a/a/c/c;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView$y;->getAdapterPosition()I
 
     move-result v0
 
-    .line 3
     iget-object v1, p0, Lb/d/a/a/b$a;->b:Lb/d/a/a/b;
 
     iget-object v1, v1, Lb/d/a/a/b;->d:Lb/d/a/a/b$c;

@@ -1,6 +1,5 @@
 .class final Lcom/google/common/hash/Hashing$LinearCongruentialGenerator;
 .super Ljava/lang/Object;
-.source "Hashing.java"
 
 
 # annotations
@@ -22,10 +21,8 @@
 .method public constructor <init>(J)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-wide p1, p0, Lcom/google/common/hash/Hashing$LinearCongruentialGenerator;->state:J
 
     return-void
@@ -36,7 +33,6 @@
 .method public nextDouble()D
     .locals 4
 
-    .line 1
     iget-wide v0, p0, Lcom/google/common/hash/Hashing$LinearCongruentialGenerator;->state:J
 
     const-wide v2, 0x27bb2ee687b0b0fdL    # 2.694898184339827E-117

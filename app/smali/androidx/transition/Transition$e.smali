@@ -1,6 +1,5 @@
 .class Landroidx/transition/Transition$e;
 .super Ljava/lang/Object;
-.source "Transition.java"
 
 
 # annotations
@@ -31,12 +30,10 @@
 
     if-nez p0, :cond_0
 
-    .line 1
     new-instance p0, Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 2
     :cond_0
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
 
@@ -44,7 +41,6 @@
 
     if-nez v0, :cond_1
 
-    .line 3
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     :cond_1
@@ -67,10 +63,8 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
 
-    .line 2
     invoke-virtual {p0}, Ljava/util/ArrayList;->isEmpty()Z
 
     move-result p1

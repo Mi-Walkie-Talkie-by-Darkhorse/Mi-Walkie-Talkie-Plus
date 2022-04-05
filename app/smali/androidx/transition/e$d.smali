@@ -1,6 +1,5 @@
 .class Landroidx/transition/e$d;
 .super Ljava/lang/Object;
-.source "FragmentTransitionSupport.java"
 
 # interfaces
 .implements Landroidx/core/os/b$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Landroidx/transition/e;Landroidx/transition/Transition;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/transition/e$d;->a:Landroidx/transition/Transition;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onCancel()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/transition/e$d;->a:Landroidx/transition/Transition;
 
     invoke-virtual {v0}, Landroidx/transition/Transition;->cancel()V

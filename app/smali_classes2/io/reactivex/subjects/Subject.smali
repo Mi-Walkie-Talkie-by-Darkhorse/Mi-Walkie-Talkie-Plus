@@ -1,6 +1,5 @@
 .class public abstract Lio/reactivex/subjects/Subject;
 .super Lio/reactivex/Observable;
-.source "Subject.java"
 
 # interfaces
 .implements Lio/reactivex/Observer;
@@ -24,7 +23,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Observable;-><init>()V
 
     return-void
@@ -59,14 +57,12 @@
     .annotation build Lio/reactivex/annotations/NonNull;
     .end annotation
 
-    .line 1
     instance-of v0, p0, Lio/reactivex/subjects/SerializedSubject;
 
     if-eqz v0, :cond_0
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v0, Lio/reactivex/subjects/SerializedSubject;
 

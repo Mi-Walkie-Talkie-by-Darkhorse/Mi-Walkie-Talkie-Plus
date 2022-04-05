@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/load/k/d/c;
 .super Lcom/bumptech/glide/h;
-.source "DrawableTransitionOptions.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/bumptech/glide/h;-><init>()V
 
     return-void
@@ -35,7 +33,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 2
     invoke-virtual {p1}, Lcom/bumptech/glide/request/i/a$a;->a()Lcom/bumptech/glide/request/i/a;
 
     move-result-object p1
@@ -56,7 +53,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/bumptech/glide/h;->a(Lcom/bumptech/glide/request/i/e;)Lcom/bumptech/glide/h;
 
     move-object p1, p0
@@ -71,7 +67,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/bumptech/glide/request/i/a$a;
 
     invoke-direct {v0}, Lcom/bumptech/glide/request/i/a$a;-><init>()V

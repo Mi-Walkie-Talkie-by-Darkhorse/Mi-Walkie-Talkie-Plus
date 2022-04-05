@@ -1,6 +1,5 @@
 .class public Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;
 .super Ljava/io/InputStream;
-.source "ContentLengthInputStream.java"
 
 
 # instance fields
@@ -13,13 +12,10 @@
 .method public constructor <init>(Ljava/io/InputStream;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->stream:Ljava/io/InputStream;
 
-    .line 3
     iput p2, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->length:I
 
     return-void
@@ -30,7 +26,6 @@
 .method public available()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->length:I
 
     return v0
@@ -44,7 +39,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->stream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
@@ -55,7 +49,6 @@
 .method public mark(I)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->stream:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/InputStream;->mark(I)V
@@ -66,7 +59,6 @@
 .method public markSupported()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->stream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->markSupported()Z
@@ -84,7 +76,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->stream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->read()I
@@ -102,7 +93,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->stream:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/InputStream;->read([B)I
@@ -120,7 +110,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->stream:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/InputStream;->read([BII)I
@@ -138,7 +127,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->stream:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->reset()V
@@ -154,7 +142,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/nostra13/universalimageloader/core/assist/ContentLengthInputStream;->stream:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1, p2}, Ljava/io/InputStream;->skip(J)J

@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$c;
 .super Ljava/lang/Object;
-.source "MobileRegisterActivity.java"
 
 # interfaces
 .implements Lcom/sina/weibo/sdk/net/d;
@@ -25,10 +24,8 @@
 .method constructor <init>(Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +38,6 @@
 
     const-string v0, "error_description"
 
-    .line 1
     invoke-static {}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->b()Ljava/lang/String;
 
     move-result-object v1
@@ -64,7 +60,6 @@
 
     invoke-static {v1, v2}, Lcom/sina/weibo/sdk/utils/c;->a(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 2
     iget-object v1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     invoke-virtual {v1}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;
@@ -77,12 +72,10 @@
 
     const-string v4, "\u670d\u52d9\u5668\u5fd9,\u8acb\u7a0d\u5f8c\u518d\u8a66"
 
-    .line 3
     invoke-static {v1, v2, v3, v4}, Lcom/sina/weibo/sdk/utils/f;->b(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 4
     :try_start_0
     new-instance v2, Lorg/json/JSONObject;
 
@@ -92,7 +85,6 @@
 
     invoke-direct {v2, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 5
     invoke-virtual {v2, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
@@ -103,7 +95,6 @@
 
     if-nez p1, :cond_0
 
-    .line 6
     invoke-virtual {v2, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
@@ -115,10 +106,8 @@
     :catch_0
     move-exception p1
 
-    .line 7
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
-    .line 8
     :cond_0
     :goto_0
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
@@ -137,7 +126,6 @@
 .method public a(Ljava/lang/String;)V
     .locals 3
 
-    .line 9
     invoke-static {}, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;->b()Ljava/lang/String;
 
     move-result-object v0
@@ -158,13 +146,11 @@
 
     if-eqz p1, :cond_0
 
-    .line 10
     :try_start_0
     new-instance v0, Lorg/json/JSONObject;
 
     invoke-direct {v0, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
 
-    .line 11
     iget-object p1, p0, Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity$c;->a:Lcom/sina/weibo/sdk/register/mobile/MobileRegisterActivity;
 
     const-string v1, "cfrom"
@@ -184,7 +170,6 @@
     :catch_0
     move-exception p1
 
-    .line 12
     invoke-virtual {p1}, Ljava/lang/Exception;->printStackTrace()V
 
     :cond_0

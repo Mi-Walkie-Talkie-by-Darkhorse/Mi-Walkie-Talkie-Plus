@@ -1,6 +1,5 @@
 .class Landroidx/constraintlayout/motion/widget/t$a;
 .super Ljava/lang/Object;
-.source "TouchResponse.java"
 
 # interfaces
 .implements Landroid/view/View$OnTouchListener;
@@ -21,7 +20,6 @@
 .method constructor <init>(Landroidx/constraintlayout/motion/widget/t;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

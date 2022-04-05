@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;
 .super Ljava/lang/Object;
-.source "ConnectDeviceActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public run()V
     .locals 5
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
@@ -49,7 +46,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
@@ -62,7 +58,6 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
@@ -97,7 +92,6 @@
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;
 
@@ -107,7 +101,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->a(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;I)V
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
@@ -118,7 +111,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 6
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
@@ -127,7 +119,6 @@
 
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;->c(Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;)Lcom/ifengyu/intercom/bean/BluetoothDeviceBean;
 
-    .line 7
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;
@@ -140,7 +131,6 @@
 
     invoke-virtual {v0, v1}, Lcom/ifengyu/intercom/ui/baseui/c;->a(I)V
 
-    .line 8
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u$b;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity$u;->a:Lcom/ifengyu/intercom/ui/activity/ConnectDeviceActivity;

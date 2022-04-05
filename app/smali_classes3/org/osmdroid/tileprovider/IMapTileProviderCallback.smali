@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/tileprovider/IMapTileProviderCallback;
 .super Ljava/lang/Object;
-.source "IMapTileProviderCallback.java"
 
 
 # virtual methods

@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/core/d/e;
 .super Ljava/lang/Object;
-.source "Pools.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public abstract Lcom/qmuiteam/qmui/widget/section/a;
 .super Landroidx/recyclerview/widget/RecyclerView$g;
-.source "QMUIStickySectionAdapter.java"
 
 
 # annotations

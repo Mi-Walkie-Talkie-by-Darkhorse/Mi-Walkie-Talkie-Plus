@@ -1,6 +1,5 @@
 .class final synthetic Lcom/jakewharton/rxbinding3/view/RxView__ViewVisibilityConsumerKt;
 .super Ljava/lang/Object;
-.source "ViewVisibilityConsumer.kt"
 
 
 # annotations
@@ -137,14 +136,12 @@
     :goto_1
     if-eqz v0, :cond_3
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/view/RxView__ViewVisibilityConsumerKt$visibility$3;
 
     invoke-direct {v0, p0, p1}, Lcom/jakewharton/rxbinding3/view/RxView__ViewVisibilityConsumerKt$visibility$3;-><init>(Landroid/view/View;I)V
 
     return-object v0
 
-    .line 2
     :cond_3
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -158,7 +155,6 @@
 
     throw p0
 
-    .line 3
     :cond_4
     new-instance p0, Ljava/lang/IllegalArgumentException;
 
@@ -190,7 +186,6 @@
 
     const/16 p1, 0x8
 
-    .line 1
     :cond_0
     invoke-static {p0, p1}, Lcom/jakewharton/rxbinding3/view/RxView;->visibility(Landroid/view/View;I)Lio/reactivex/functions/Consumer;
 

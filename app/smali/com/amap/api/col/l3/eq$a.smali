@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/eq$a;
 .super Lcom/amap/api/col/l3/ds;
-.source "ImageWorker.java"
 
 
 # annotations
@@ -42,12 +41,10 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/eq;Lcom/amap/api/col/l3/de$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/eq$a;->d:Lcom/amap/api/col/l3/eq;
 
     invoke-direct {p0}, Lcom/amap/api/col/l3/ds;-><init>()V
 
-    .line 2
     new-instance p1, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -64,7 +61,6 @@
 
     const/4 v1, 0x0
 
-    .line 3
     :try_start_0
     aget-object p1, p1, v0
 
@@ -72,7 +68,6 @@
 
     move-result p1
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/eq$a;->e:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -85,43 +80,35 @@
 
     return-object v1
 
-    .line 5
     :cond_0
     new-instance v2, Ljava/lang/StringBuilder;
 
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
-    .line 6
     iget v3, v0, Lcom/amap/api/col/l3/de$a;->a:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const-string v3, "-"
 
-    .line 7
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 8
     iget v3, v0, Lcom/amap/api/col/l3/de$a;->b:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     const-string v3, "-"
 
-    .line 9
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    .line 10
     iget v3, v0, Lcom/amap/api/col/l3/de$a;->c:I
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
-    .line 11
     invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 12
     iget-object v3, p0, Lcom/amap/api/col/l3/eq$a;->d:Lcom/amap/api/col/l3/eq;
 
     invoke-static {v3}, Lcom/amap/api/col/l3/eq;->a(Lcom/amap/api/col/l3/eq;)Ljava/lang/Object;
@@ -132,7 +119,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 13
     :goto_0
     :try_start_1
     iget-object v4, p0, Lcom/amap/api/col/l3/eq$a;->d:Lcom/amap/api/col/l3/eq;
@@ -147,7 +133,6 @@
 
     if-nez v4, :cond_1
 
-    .line 14
     iget-object v4, p0, Lcom/amap/api/col/l3/eq$a;->d:Lcom/amap/api/col/l3/eq;
 
     invoke-static {v4}, Lcom/amap/api/col/l3/eq;->a(Lcom/amap/api/col/l3/eq;)Ljava/lang/Object;
@@ -158,13 +143,11 @@
 
     goto :goto_0
 
-    .line 15
     :cond_1
     monitor-exit v3
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 16
     :try_start_2
     iget-object v3, p0, Lcom/amap/api/col/l3/eq$a;->d:Lcom/amap/api/col/l3/eq;
 
@@ -180,7 +163,6 @@
 
     if-nez v3, :cond_2
 
-    .line 17
     invoke-direct {p0}, Lcom/amap/api/col/l3/eq$a;->e()Lcom/amap/api/col/l3/de$a;
 
     move-result-object v3
@@ -189,14 +171,12 @@
 
     iget-object v3, p0, Lcom/amap/api/col/l3/eq$a;->d:Lcom/amap/api/col/l3/eq;
 
-    .line 18
     invoke-static {v3}, Lcom/amap/api/col/l3/eq;->c(Lcom/amap/api/col/l3/eq;)Z
 
     move-result v3
 
     if-nez v3, :cond_2
 
-    .line 19
     iget-object v3, p0, Lcom/amap/api/col/l3/eq$a;->d:Lcom/amap/api/col/l3/eq;
 
     invoke-static {v3}, Lcom/amap/api/col/l3/eq;->b(Lcom/amap/api/col/l3/eq;)Lcom/amap/api/col/l3/en;
@@ -217,14 +197,12 @@
 
     if-nez v3, :cond_3
 
-    .line 20
     invoke-virtual {p0}, Lcom/amap/api/col/l3/ds;->c()Z
 
     move-result p1
 
     if-nez p1, :cond_3
 
-    .line 21
     invoke-direct {p0}, Lcom/amap/api/col/l3/eq$a;->e()Lcom/amap/api/col/l3/de$a;
 
     move-result-object p1
@@ -233,21 +211,18 @@
 
     iget-object p1, p0, Lcom/amap/api/col/l3/eq$a;->d:Lcom/amap/api/col/l3/eq;
 
-    .line 22
     invoke-static {p1}, Lcom/amap/api/col/l3/eq;->c(Lcom/amap/api/col/l3/eq;)Z
 
     move-result p1
 
     if-nez p1, :cond_3
 
-    .line 23
     const-class p1, Lcom/amap/api/col/l3/eq;
 
     monitor-enter p1
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 24
     :try_start_3
     iget-object v3, p0, Lcom/amap/api/col/l3/eq$a;->d:Lcom/amap/api/col/l3/eq;
 
@@ -255,7 +230,6 @@
 
     move-result-object v3
 
-    .line 25
     monitor-exit p1
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
@@ -274,7 +248,6 @@
     :goto_2
     if-eqz v3, :cond_4
 
-    .line 26
     iget-object p1, p0, Lcom/amap/api/col/l3/eq$a;->d:Lcom/amap/api/col/l3/eq;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/eq;->b(Lcom/amap/api/col/l3/eq;)Lcom/amap/api/col/l3/en;
@@ -283,7 +256,6 @@
 
     if-eqz p1, :cond_4
 
-    .line 27
     iget-object p1, p0, Lcom/amap/api/col/l3/eq$a;->d:Lcom/amap/api/col/l3/eq;
 
     invoke-static {p1}, Lcom/amap/api/col/l3/eq;->b(Lcom/amap/api/col/l3/eq;)Lcom/amap/api/col/l3/en;
@@ -298,7 +270,6 @@
     :catchall_1
     move-exception p1
 
-    .line 28
     monitor-exit v3
 
     throw p1
@@ -308,7 +279,6 @@
     :catchall_2
     move-exception p1
 
-    .line 29
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-object v1
@@ -317,7 +287,6 @@
 .method private e()Lcom/amap/api/col/l3/de$a;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/eq$a;->e:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -326,7 +295,6 @@
 
     check-cast v0, Lcom/amap/api/col/l3/de$a;
 
-    .line 2
     invoke-static {v0}, Lcom/amap/api/col/l3/eq;->b(Lcom/amap/api/col/l3/de$a;)Lcom/amap/api/col/l3/eq$a;
 
     move-result-object v1
@@ -346,7 +314,6 @@
 .method protected final bridge synthetic a([Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 1
     check-cast p1, [Ljava/lang/Boolean;
 
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/eq$a;->a([Ljava/lang/Boolean;)Landroid/graphics/Bitmap;
@@ -359,7 +326,6 @@
 .method protected final synthetic a(Ljava/lang/Object;)V
     .locals 2
 
-    .line 2
     check-cast p1, Landroid/graphics/Bitmap;
 
     :try_start_0
@@ -429,7 +395,6 @@
 .method protected final synthetic b(Ljava/lang/Object;)V
     .locals 1
 
-    .line 1
     check-cast p1, Landroid/graphics/Bitmap;
 
     invoke-super {p0, p1}, Lcom/amap/api/col/l3/ds;->b(Ljava/lang/Object;)V

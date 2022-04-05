@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/node/transport/b;
 .super Ljava/lang/Object;
-.source "BytesUtil.java"
 
 
 # static fields
@@ -19,14 +18,12 @@
 
     if-eqz p0, :cond_2
 
-    .line 1
     array-length v0, p0
 
     if-nez v0, :cond_0
 
     goto :goto_1
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -34,7 +31,6 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 3
     array-length v1, p0
 
     const/4 v2, 0x0
@@ -50,7 +46,6 @@
 
     new-array v5, v5, [Ljava/lang/Object;
 
-    .line 4
     invoke-static {v4}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
 
     move-result-object v4
@@ -69,7 +64,6 @@
 
     goto :goto_0
 
-    .line 5
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -77,7 +71,6 @@
 
     return-object p0
 
-    .line 6
     :cond_2
     :goto_1
     sget-object p0, Lcom/ifengyu/intercom/node/transport/b;->a:Ljava/lang/String;
@@ -94,24 +87,20 @@
 .method public static a([BI)Ljava/lang/String;
     .locals 5
 
-    .line 7
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0, p1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    .line 8
     array-length v1, p0
 
     if-ge v1, p1, :cond_0
 
-    .line 9
     sget-object p1, Lcom/ifengyu/intercom/node/transport/b;->a:Ljava/lang/String;
 
     const-string v1, "data length is shorter then print command length"
 
     invoke-static {p1, v1}, Lcom/ifengyu/intercom/i/z;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     array-length p1, p0
 
     :cond_0
@@ -126,7 +115,6 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    .line 11
     aget-byte v4, p0, v2
 
     invoke-static {v4}, Ljava/lang/Byte;->valueOf(B)Ljava/lang/Byte;
@@ -147,7 +135,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
@@ -176,11 +163,9 @@
 
     goto :goto_1
 
-    .line 20
     :cond_1
     array-length v2, p0
 
-    .line 21
     array-length v3, p1
 
     if-eq v2, v3, :cond_2
@@ -193,7 +178,6 @@
     :goto_0
     if-ge v3, v2, :cond_4
 
-    .line 22
     aget-byte v4, p0, v3
 
     aget-byte v5, p1, v3
@@ -220,7 +204,6 @@
 
     if-eqz p0, :cond_3
 
-    .line 13
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
@@ -229,7 +212,6 @@
 
     goto :goto_2
 
-    .line 14
     :cond_0
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 
@@ -243,7 +225,6 @@
 
     move-result-object p0
 
-    .line 15
     array-length v0, p0
 
     new-array v1, v0, [Ljava/lang/String;
@@ -255,7 +236,6 @@
     :goto_0
     if-ge v3, v0, :cond_1
 
-    .line 16
     array-length v4, p0
 
     sub-int/2addr v4, v3
@@ -270,14 +250,12 @@
 
     goto :goto_0
 
-    .line 17
     :cond_1
     new-array p0, v0, [B
 
     :goto_1
     if-ge v2, v0, :cond_2
 
-    .line 18
     aget-object v3, v1, v2
 
     const/16 v4, 0x10
@@ -297,7 +275,6 @@
     :cond_2
     return-object p0
 
-    .line 19
     :cond_3
     :goto_2
     sget-object p0, Lcom/ifengyu/intercom/node/transport/b;->a:Ljava/lang/String;
@@ -340,7 +317,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     aget-byte v0, p0, v0
 
     and-int/lit16 v0, v0, 0xff

@@ -1,6 +1,5 @@
 .class public Lcom/liulishuo/okdownload/core/download/DownloadCache;
 .super Ljava/lang/Object;
-.source "DownloadCache.java"
 
 
 # annotations
@@ -35,12 +34,10 @@
 .method private constructor <init>()V
     .locals 1
 
-    .line 3
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 4
     iput-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->outputStream:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
 
     return-void
@@ -53,10 +50,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->outputStream:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
 
     return-void
@@ -67,7 +62,6 @@
 .method public catchException(Ljava/io/IOException;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->isUserCanceled()Z
 
     move-result v0
@@ -76,65 +70,53 @@
 
     return-void
 
-    .line 2
     :cond_0
     instance-of v0, p1, Lcom/liulishuo/okdownload/core/exception/ResumeFailedException;
 
     if-eqz v0, :cond_1
 
-    .line 3
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->setPreconditionFailed(Ljava/io/IOException;)V
 
     goto :goto_0
 
-    .line 4
     :cond_1
     instance-of v0, p1, Lcom/liulishuo/okdownload/core/exception/ServerCanceledException;
 
     if-eqz v0, :cond_2
 
-    .line 5
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->setServerCanceled(Ljava/io/IOException;)V
 
     goto :goto_0
 
-    .line 6
     :cond_2
     sget-object v0, Lcom/liulishuo/okdownload/core/exception/FileBusyAfterRunException;->SIGNAL:Lcom/liulishuo/okdownload/core/exception/FileBusyAfterRunException;
 
     if-ne p1, v0, :cond_3
 
-    .line 7
     invoke-virtual {p0}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->setFileBusyAfterRun()V
 
     goto :goto_0
 
-    .line 8
     :cond_3
     instance-of v0, p1, Lcom/liulishuo/okdownload/core/exception/PreAllocateException;
 
     if-eqz v0, :cond_4
 
-    .line 9
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->setPreAllocateFailed(Ljava/io/IOException;)V
 
     goto :goto_0
 
-    .line 10
     :cond_4
     sget-object v0, Lcom/liulishuo/okdownload/core/exception/InterruptException;->SIGNAL:Lcom/liulishuo/okdownload/core/exception/InterruptException;
 
     if-eq p1, v0, :cond_5
 
-    .line 11
     invoke-virtual {p0, p1}, Lcom/liulishuo/okdownload/core/download/DownloadCache;->setUnknownError(Ljava/io/IOException;)V
 
-    .line 12
     instance-of v0, p1, Ljava/net/SocketException;
 
     if-nez v0, :cond_5
 
-    .line 13
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -163,7 +145,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->outputStream:Lcom/liulishuo/okdownload/core/file/MultiPointOutputStream;
 
     if-eqz v0, :cond_0
@@ -181,7 +162,6 @@
 .method getRealCause()Ljava/io/IOException;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->realCause:Ljava/io/IOException;
 
     return-object v0
@@ -190,7 +170,6 @@
 .method getRedirectLocation()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->redirectLocation:Ljava/lang/String;
 
     return-object v0
@@ -199,7 +178,6 @@
 .method getResumeFailedCause()Lcom/liulishuo/okdownload/core/cause/ResumeFailedCause;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->realCause:Ljava/io/IOException;
 
     check-cast v0, Lcom/liulishuo/okdownload/core/exception/ResumeFailedException;
@@ -214,7 +192,6 @@
 .method isFileBusyAfterRun()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->fileBusyAfterRun:Z
 
     return v0
@@ -223,7 +200,6 @@
 .method public isInterrupt()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->preconditionFailed:Z
 
     if-nez v0, :cond_1
@@ -266,7 +242,6 @@
 .method public isPreAllocateFailed()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->preAllocateFailed:Z
 
     return v0
@@ -275,7 +250,6 @@
 .method isPreconditionFailed()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->preconditionFailed:Z
 
     return v0
@@ -284,7 +258,6 @@
 .method isServerCanceled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->serverCanceled:Z
 
     return v0
@@ -293,7 +266,6 @@
 .method isUnknownError()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->unknownError:Z
 
     return v0
@@ -302,7 +274,6 @@
 .method public isUserCanceled()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->userCanceled:Z
 
     return v0
@@ -313,7 +284,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->fileBusyAfterRun:Z
 
     return-void
@@ -324,10 +294,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->preAllocateFailed:Z
 
-    .line 2
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->realCause:Ljava/io/IOException;
 
     return-void
@@ -338,10 +306,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->preconditionFailed:Z
 
-    .line 2
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->realCause:Ljava/io/IOException;
 
     return-void
@@ -350,7 +316,6 @@
 .method setRedirectLocation(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->redirectLocation:Ljava/lang/String;
 
     return-void
@@ -361,10 +326,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->serverCanceled:Z
 
-    .line 2
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->realCause:Ljava/io/IOException;
 
     return-void
@@ -375,10 +338,8 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->unknownError:Z
 
-    .line 2
     iput-object p1, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->realCause:Ljava/io/IOException;
 
     return-void
@@ -389,7 +350,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     iput-boolean v0, p0, Lcom/liulishuo/okdownload/core/download/DownloadCache;->userCanceled:Z
 
     return-void

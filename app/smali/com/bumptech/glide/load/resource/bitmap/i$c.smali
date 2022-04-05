@@ -1,6 +1,5 @@
 .class interface abstract Lcom/bumptech/glide/load/resource/bitmap/i$c;
 .super Ljava/lang/Object;
-.source "DefaultImageHeaderParser.java"
 
 
 # annotations

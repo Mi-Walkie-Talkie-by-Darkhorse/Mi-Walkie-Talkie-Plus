@@ -1,6 +1,5 @@
 .class public abstract La/d/a/c;
 .super La/d/a/a;
-.source "ResourceCursorAdapter.java"
 
 
 # instance fields
@@ -17,17 +16,14 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p3, p4}, La/d/a/a;-><init>(Landroid/content/Context;Landroid/database/Cursor;Z)V
 
-    .line 2
     iput p2, p0, La/d/a/c;->j:I
 
     iput p2, p0, La/d/a/c;->i:I
 
     const-string p2, "layout_inflater"
 
-    .line 3
     invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -44,7 +40,6 @@
 .method public a(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object p1, p0, La/d/a/c;->k:Landroid/view/LayoutInflater;
 
     iget p2, p0, La/d/a/c;->j:I
@@ -61,7 +56,6 @@
 .method public b(Landroid/content/Context;Landroid/database/Cursor;Landroid/view/ViewGroup;)Landroid/view/View;
     .locals 1
 
-    .line 1
     iget-object p1, p0, La/d/a/c;->k:Landroid/view/LayoutInflater;
 
     iget p2, p0, La/d/a/c;->i:I

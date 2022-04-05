@@ -1,6 +1,5 @@
 .class Lcom/google/common/reflect/Invokable$MethodInvokable;
 .super Lcom/google/common/reflect/Invokable;
-.source "Invokable.java"
 
 
 # annotations
@@ -34,10 +33,8 @@
 .method constructor <init>(Ljava/lang/reflect/Method;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/reflect/Invokable;-><init>(Ljava/lang/reflect/AccessibleObject;)V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/reflect/Invokable$MethodInvokable;->method:Ljava/lang/reflect/Method;
 
     return-void
@@ -48,7 +45,6 @@
 .method getGenericExceptionTypes()[Ljava/lang/reflect/Type;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/Invokable$MethodInvokable;->method:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->getGenericExceptionTypes()[Ljava/lang/reflect/Type;
@@ -61,7 +57,6 @@
 .method getGenericParameterTypes()[Ljava/lang/reflect/Type;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/Invokable$MethodInvokable;->method:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->getGenericParameterTypes()[Ljava/lang/reflect/Type;
@@ -74,7 +69,6 @@
 .method getGenericReturnType()Ljava/lang/reflect/Type;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/Invokable$MethodInvokable;->method:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->getGenericReturnType()Ljava/lang/reflect/Type;
@@ -87,7 +81,6 @@
 .method final getParameterAnnotations()[[Ljava/lang/annotation/Annotation;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/Invokable$MethodInvokable;->method:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->getParameterAnnotations()[[Ljava/lang/annotation/Annotation;
@@ -107,7 +100,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/Invokable$MethodInvokable;->method:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->getTypeParameters()[Ljava/lang/reflect/TypeVariable;
@@ -130,7 +122,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/Invokable$MethodInvokable;->method:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0, p1, p2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
@@ -143,7 +134,6 @@
 .method public final isOverridable()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/reflect/Element;->isFinal()Z
 
     move-result v0
@@ -190,7 +180,6 @@
 .method public final isVarArgs()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/reflect/Invokable$MethodInvokable;->method:Ljava/lang/reflect/Method;
 
     invoke-virtual {v0}, Ljava/lang/reflect/Method;->isVarArgs()Z

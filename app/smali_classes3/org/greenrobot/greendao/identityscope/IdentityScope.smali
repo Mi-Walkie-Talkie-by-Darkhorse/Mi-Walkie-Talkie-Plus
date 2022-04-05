@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/greenrobot/greendao/identityscope/IdentityScope;
 .super Ljava/lang/Object;
-.source "IdentityScope.java"
 
 
 # annotations

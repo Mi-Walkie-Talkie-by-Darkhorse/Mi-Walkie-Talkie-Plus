@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lno/nordicsemi/android/ble/annotation/ConnectionPriority;
 .super Ljava/lang/Object;
-.source "ConnectionPriority.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

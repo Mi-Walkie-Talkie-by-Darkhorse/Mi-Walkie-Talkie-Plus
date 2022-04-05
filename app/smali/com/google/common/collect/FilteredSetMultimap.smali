@@ -1,6 +1,5 @@
 .class interface abstract Lcom/google/common/collect/FilteredSetMultimap;
 .super Ljava/lang/Object;
-.source "FilteredSetMultimap.java"
 
 # interfaces
 .implements Lcom/google/common/collect/FilteredMultimap;

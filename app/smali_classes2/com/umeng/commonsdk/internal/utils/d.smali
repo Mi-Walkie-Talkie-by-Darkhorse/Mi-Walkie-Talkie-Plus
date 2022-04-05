@@ -1,6 +1,5 @@
 .class public Lcom/umeng/commonsdk/internal/utils/d;
 .super Ljava/lang/Object;
-.source "CpuUtil.java"
 
 
 # annotations
@@ -15,7 +14,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -28,7 +26,6 @@
 
     const/4 v1, 0x0
 
-    .line 1
     :try_start_0
     new-instance v2, Lcom/umeng/commonsdk/internal/utils/d$a;
 
@@ -37,7 +34,6 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_7
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 2
     :try_start_1
     new-instance v3, Ljava/io/FileReader;
 
@@ -48,7 +44,6 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_4
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
-    .line 3
     :try_start_2
     new-instance v4, Ljava/io/BufferedReader;
 
@@ -57,7 +52,6 @@
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 4
     :try_start_3
     invoke-virtual {v4}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
@@ -74,7 +68,6 @@
 
     const/4 v8, 0x0
 
-    .line 5
     :goto_0
     :try_start_4
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -96,7 +89,6 @@
 
     const/4 v10, 0x2
 
-    .line 6
     invoke-virtual {v0, v9, v10}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
 
     move-result-object v0
@@ -105,12 +97,10 @@
 
     if-eqz v0, :cond_1
 
-    .line 7
     array-length v9, v0
 
     if-le v9, v5, :cond_1
 
-    .line 8
     aget-object v7, v0, v5
 
     iput-object v7, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->a:Ljava/lang/String;
@@ -120,7 +110,6 @@
     :cond_1
     if-eqz v0, :cond_2
 
-    .line 9
     array-length v9, v0
 
     if-le v9, v5, :cond_2
@@ -140,7 +129,6 @@
     :cond_2
     if-eqz v0, :cond_3
 
-    .line 10
     array-length v9, v0
 
     if-le v9, v5, :cond_3
@@ -155,7 +143,6 @@
 
     if-eqz v9, :cond_3
 
-    .line 11
     aget-object v9, v0, v5
 
     iput-object v9, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->d:Ljava/lang/String;
@@ -168,7 +155,6 @@
 
     if-eqz v0, :cond_4
 
-    .line 12
     :try_start_5
     array-length v10, v0
 
@@ -182,7 +168,6 @@
 
     if-eqz v10, :cond_4
 
-    .line 13
     aget-object v10, v0, v5
 
     iput-object v10, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->e:Ljava/lang/String;
@@ -190,7 +175,6 @@
     :cond_4
     if-eqz v0, :cond_5
 
-    .line 14
     array-length v10, v0
 
     if-le v10, v5, :cond_5
@@ -205,7 +189,6 @@
 
     if-eqz v10, :cond_5
 
-    .line 15
     aget-object v10, v0, v5
 
     iput-object v10, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->f:Ljava/lang/String;
@@ -213,7 +196,6 @@
     :cond_5
     if-eqz v0, :cond_6
 
-    .line 16
     array-length v10, v0
 
     if-le v10, v5, :cond_6
@@ -228,7 +210,6 @@
 
     if-eqz v10, :cond_6
 
-    .line 17
     aget-object v10, v0, v5
 
     iput-object v10, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->g:Ljava/lang/String;
@@ -236,7 +217,6 @@
     :cond_6
     if-eqz v0, :cond_7
 
-    .line 18
     array-length v10, v0
 
     if-le v10, v5, :cond_7
@@ -251,7 +231,6 @@
 
     if-eqz v10, :cond_7
 
-    .line 19
     aget-object v10, v0, v5
 
     iput-object v10, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->h:Ljava/lang/String;
@@ -259,7 +238,6 @@
     :cond_7
     if-eqz v0, :cond_8
 
-    .line 20
     array-length v10, v0
 
     if-le v10, v5, :cond_8
@@ -274,7 +252,6 @@
 
     if-eqz v10, :cond_8
 
-    .line 21
     aget-object v10, v0, v5
 
     iput-object v10, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->i:Ljava/lang/String;
@@ -282,7 +259,6 @@
     :cond_8
     if-eqz v0, :cond_9
 
-    .line 22
     array-length v10, v0
 
     if-le v10, v5, :cond_9
@@ -297,7 +273,6 @@
 
     if-eqz v10, :cond_9
 
-    .line 23
     aget-object v10, v0, v5
 
     iput-object v10, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->j:Ljava/lang/String;
@@ -305,7 +280,6 @@
     :cond_9
     if-eqz v0, :cond_a
 
-    .line 24
     array-length v10, v0
 
     if-le v10, v5, :cond_a
@@ -320,7 +294,6 @@
 
     if-eqz v10, :cond_a
 
-    .line 25
     aget-object v10, v0, v5
 
     iput-object v10, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->k:Ljava/lang/String;
@@ -328,7 +301,6 @@
     :cond_a
     if-eqz v0, :cond_b
 
-    .line 26
     array-length v10, v0
 
     if-le v10, v5, :cond_b
@@ -343,7 +315,6 @@
 
     if-eqz v10, :cond_b
 
-    .line 27
     aget-object v10, v0, v5
 
     iput-object v10, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->l:Ljava/lang/String;
@@ -351,7 +322,6 @@
     :cond_b
     if-eqz v0, :cond_c
 
-    .line 28
     array-length v10, v0
 
     if-le v10, v5, :cond_c
@@ -364,12 +334,10 @@
 
     if-eqz v9, :cond_c
 
-    .line 29
     aget-object v0, v0, v5
 
     iput-object v0, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->e:Ljava/lang/String;
 
-    .line 30
     :cond_c
     invoke-virtual {v4}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
@@ -380,7 +348,6 @@
 
     goto/16 :goto_0
 
-    .line 31
     :cond_d
     :goto_1
     :try_start_6
@@ -388,7 +355,6 @@
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_0
 
-    .line 32
     :catch_0
     :try_start_7
     invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
@@ -442,7 +408,6 @@
     :goto_3
     if-eqz v3, :cond_e
 
-    .line 33
     :try_start_8
     invoke-virtual {v3}, Ljava/io/FileReader;->close()V
     :try_end_8
@@ -457,13 +422,11 @@
     :goto_4
     if-eqz v4, :cond_f
 
-    .line 34
     :try_start_9
     invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
     :try_end_9
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_6
 
-    .line 35
     :catch_6
     :cond_f
     throw v0
@@ -476,7 +439,6 @@
     :goto_5
     if-eqz v0, :cond_10
 
-    .line 36
     :try_start_a
     invoke-virtual {v0}, Ljava/io/FileReader;->close()V
     :try_end_a
@@ -491,7 +453,6 @@
     :goto_6
     if-eqz v4, :cond_11
 
-    .line 37
     :try_start_b
     invoke-virtual {v4}, Ljava/io/BufferedReader;->close()V
     :try_end_b
@@ -501,7 +462,6 @@
     :cond_11
     move v8, v1
 
-    .line 38
     :catch_a
     :goto_7
     iput v8, v2, Lcom/umeng/commonsdk/internal/utils/d$a;->c:I
@@ -519,22 +479,18 @@
 
     const-string v2, "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq"
 
-    .line 1
     filled-new-array {v1, v2}, [Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2
     new-instance v2, Ljava/lang/ProcessBuilder;
 
     invoke-direct {v2, v1}, Ljava/lang/ProcessBuilder;-><init>([Ljava/lang/String;)V
 
-    .line 3
     invoke-virtual {v2}, Ljava/lang/ProcessBuilder;->start()Ljava/lang/Process;
 
     move-result-object v1
 
-    .line 4
     invoke-virtual {v1}, Ljava/lang/Process;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v1
@@ -543,7 +499,6 @@
 
     new-array v2, v2, [B
 
-    .line 5
     :goto_0
     invoke-virtual {v1, v2}, Ljava/io/InputStream;->read([B)I
 
@@ -553,7 +508,6 @@
 
     if-eq v3, v4, :cond_0
 
-    .line 6
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -572,13 +526,11 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 8
     :catch_0
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -597,22 +549,18 @@
 
     const-string v2, "/sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_min_freq"
 
-    .line 1
     filled-new-array {v1, v2}, [Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2
     new-instance v2, Ljava/lang/ProcessBuilder;
 
     invoke-direct {v2, v1}, Ljava/lang/ProcessBuilder;-><init>([Ljava/lang/String;)V
 
-    .line 3
     invoke-virtual {v2}, Ljava/lang/ProcessBuilder;->start()Ljava/lang/Process;
 
     move-result-object v1
 
-    .line 4
     invoke-virtual {v1}, Ljava/lang/Process;->getInputStream()Ljava/io/InputStream;
 
     move-result-object v1
@@ -621,7 +569,6 @@
 
     new-array v2, v2, [B
 
-    .line 5
     :goto_0
     invoke-virtual {v1, v2}, Ljava/io/InputStream;->read([B)I
 
@@ -631,7 +578,6 @@
 
     if-eq v3, v4, :cond_0
 
-    .line 6
     new-instance v3, Ljava/lang/StringBuilder;
 
     invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
@@ -650,13 +596,11 @@
 
     goto :goto_0
 
-    .line 7
     :cond_0
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
-    .line 8
     :catch_0
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
@@ -670,7 +614,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     new-instance v1, Ljava/io/FileReader;
 
@@ -678,7 +621,6 @@
 
     invoke-direct {v1, v2}, Ljava/io/FileReader;-><init>(Ljava/lang/String;)V
 
-    .line 2
     new-instance v2, Ljava/io/BufferedReader;
 
     invoke-direct {v2, v1}, Ljava/io/BufferedReader;-><init>(Ljava/io/Reader;)V
@@ -686,13 +628,11 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_1
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 3
     :try_start_1
     invoke-virtual {v2}, Ljava/io/BufferedReader;->readLine()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object v0
@@ -700,7 +640,6 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 5
     :try_start_2
     invoke-virtual {v2}, Ljava/io/BufferedReader;->close()V
     :try_end_2
@@ -733,7 +672,6 @@
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 6
     :catchall_2
     :cond_0
     throw v0
@@ -742,7 +680,6 @@
     :goto_1
     if-eqz v0, :cond_1
 
-    .line 7
     :try_start_4
     invoke-virtual {v0}, Ljava/io/BufferedReader;->close()V
     :try_end_4

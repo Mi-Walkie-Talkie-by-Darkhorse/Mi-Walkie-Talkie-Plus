@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/service/DownloadService;
 .super Landroid/app/IntentService;
-.source "DownloadService.java"
 
 
 # instance fields
@@ -13,10 +12,8 @@
 
     const-string v0, "DownloadService"
 
-    .line 1
     invoke-direct {p0, v0}, Landroid/app/IntentService;-><init>(Ljava/lang/String;)V
 
-    .line 2
     const-class v0, Lcom/ifengyu/intercom/service/DownloadService;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
@@ -35,7 +32,6 @@
 
     const/4 v0, 0x0
 
-    .line 5
     :try_start_0
     invoke-static {}, Lcom/ifengyu/intercom/g/b;->c()Lcom/ifengyu/intercom/g/c/a;
 
@@ -55,14 +51,12 @@
 
     move-result-object v1
 
-    .line 6
     invoke-virtual {v1}, Lokhttp3/Response;->isSuccessful()Z
 
     move-result v2
 
     if-nez v2, :cond_0
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/service/DownloadService;->a:Ljava/lang/String;
 
     new-instance p2, Ljava/lang/StringBuilder;
@@ -90,12 +84,10 @@
     :cond_0
     const-string v2, "Content-MD5"
 
-    .line 8
     invoke-virtual {v1, v2}, Lokhttp3/Response;->header(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 9
     iget-object v3, p0, Lcom/ifengyu/intercom/service/DownloadService;->a:Ljava/lang/String;
 
     new-instance v4, Ljava/lang/StringBuilder;
@@ -114,10 +106,8 @@
 
     invoke-static {v3, v4}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 10
     iput-object v2, p1, Lcom/ifengyu/intercom/bean/AdModel;->md5:Ljava/lang/String;
 
-    .line 11
     invoke-virtual {p0, v1, p2, p3}, Lcom/ifengyu/intercom/service/DownloadService;->a(Lokhttp3/Response;Ljava/io/File;Ljava/lang/String;)Ljava/io/File;
 
     move-result-object p1
@@ -129,7 +119,6 @@
     :catch_0
     move-exception p1
 
-    .line 12
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     return-object v0
@@ -138,7 +127,6 @@
 .method public static a(Landroid/content/Context;Lcom/ifengyu/intercom/bean/AdModel;)V
     .locals 2
 
-    .line 1
     new-instance v0, Landroid/content/Intent;
 
     const-class v1, Lcom/ifengyu/intercom/service/DownloadService;
@@ -147,15 +135,12 @@
 
     const-string v1, "com.ifengyu.intercom.service.action.DOWNLOAD_FILE"
 
-    .line 2
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     const-string v1, "com.ifengyu.intercom.service.extra.AD_MODEL"
 
-    .line 3
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/io/Serializable;)Landroid/content/Intent;
 
-    .line 4
     invoke-virtual {p0, v0}, Landroid/content/Context;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
     return-void
@@ -177,7 +162,6 @@
 
     const/4 v1, 0x0
 
-    .line 13
     :try_start_0
     invoke-virtual {p1}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
@@ -189,7 +173,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
 
-    .line 14
     :try_start_1
     invoke-virtual {p2}, Ljava/io/File;->exists()Z
 
@@ -197,23 +180,19 @@
 
     if-nez v3, :cond_0
 
-    .line 15
     invoke-virtual {p2}, Ljava/io/File;->mkdirs()Z
 
-    .line 16
     :cond_0
     new-instance v3, Ljava/io/File;
 
     invoke-direct {v3, p2, p3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    .line 17
     new-instance p2, Ljava/io/FileOutputStream;
 
     invoke-direct {p2, v3}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 18
     :goto_0
     :try_start_2
     invoke-virtual {v2, v0}, Ljava/io/InputStream;->read([B)I
@@ -226,18 +205,15 @@
 
     const/4 v1, 0x0
 
-    .line 19
     invoke-virtual {p2, v0, v1, p3}, Ljava/io/FileOutputStream;->write([BII)V
 
     goto :goto_0
 
-    .line 20
     :cond_1
     invoke-virtual {p2}, Ljava/io/FileOutputStream;->flush()V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 21
     :try_start_3
     invoke-virtual {p1}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
 
@@ -247,7 +223,6 @@
 
     if-eqz v2, :cond_2
 
-    .line 22
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_0
@@ -257,10 +232,8 @@
     :catch_0
     move-exception p1
 
-    .line 23
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 24
     :cond_2
     :goto_1
     :try_start_4
@@ -273,7 +246,6 @@
     :catch_1
     move-exception p1
 
-    .line 25
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     :goto_2
@@ -306,7 +278,6 @@
 
     move-object p3, v1
 
-    .line 26
     :goto_3
     :try_start_5
     invoke-virtual {p1}, Lokhttp3/Response;->body()Lokhttp3/ResponseBody;
@@ -317,7 +288,6 @@
 
     if-eqz v1, :cond_3
 
-    .line 27
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_2
@@ -327,14 +297,12 @@
     :catch_2
     move-exception p1
 
-    .line 28
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
     :cond_3
     :goto_4
     if-eqz p3, :cond_4
 
-    .line 29
     :try_start_6
     invoke-virtual {p3}, Ljava/io/FileOutputStream;->close()V
     :try_end_6
@@ -345,10 +313,8 @@
     :catch_3
     move-exception p1
 
-    .line 30
     invoke-virtual {p1}, Ljava/io/IOException;->printStackTrace()V
 
-    .line 31
     :cond_4
     :goto_5
     throw p2
@@ -357,7 +323,6 @@
 .method public onCreate()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Landroid/app/IntentService;->onCreate()V
 
     return-void
@@ -366,7 +331,6 @@
 .method public onDestroy()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Landroid/app/IntentService;->onDestroy()V
 
     return-void
@@ -381,14 +345,12 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p1}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "com.ifengyu.intercom.service.action.DOWNLOAD_FILE"
 
-    .line 2
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
@@ -397,7 +359,6 @@
 
     const-string v0, "com.ifengyu.intercom.service.extra.AD_MODEL"
 
-    .line 3
     invoke-virtual {p1, v0}, Landroid/content/Intent;->getSerializableExtra(Ljava/lang/String;)Ljava/io/Serializable;
 
     move-result-object p1
@@ -406,7 +367,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 4
     iget-object v0, p1, Lcom/ifengyu/intercom/bean/AdModel;->imageUrl:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -415,7 +375,6 @@
 
     if-nez v0, :cond_0
 
-    .line 5
     invoke-virtual {p0}, Landroid/app/IntentService;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v0
@@ -426,14 +385,12 @@
 
     move-result-object v0
 
-    .line 6
     iget-object v1, p1, Lcom/ifengyu/intercom/bean/AdModel;->imageUrl:Ljava/lang/String;
 
     invoke-static {v1}, Lcom/ifengyu/intercom/i/a0;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 7
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v0, v1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
@@ -444,21 +401,18 @@
 
     iput-object v2, p1, Lcom/ifengyu/intercom/bean/AdModel;->imagePath:Ljava/lang/String;
 
-    .line 8
     iget-object v2, p0, Lcom/ifengyu/intercom/service/DownloadService;->a:Ljava/lang/String;
 
     const-string v3, "download start..."
 
     invoke-static {v2, v3}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 9
     invoke-direct {p0, p1, v0, v1}, Lcom/ifengyu/intercom/service/DownloadService;->a(Lcom/ifengyu/intercom/bean/AdModel;Ljava/io/File;Ljava/lang/String;)Ljava/io/File;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    .line 10
     invoke-virtual {v0}, Ljava/io/File;->getParentFile()Ljava/io/File;
 
     move-result-object v0
@@ -469,10 +423,8 @@
 
     const-string v1, "admodel"
 
-    .line 11
     invoke-virtual {v0, v1, p1}, Lcom/ifengyu/intercom/i/g;->a(Ljava/lang/String;Ljava/io/Serializable;)V
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/service/DownloadService;->a:Ljava/lang/String;
 
     const-string v0, "download success!"

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/lite/c/b/g$c;
 .super Ljava/lang/Object;
-.source "SlideVerifyDialogBuilder.java"
 
 
 # annotations

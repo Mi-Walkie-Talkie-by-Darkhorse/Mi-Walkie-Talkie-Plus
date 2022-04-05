@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/dialog/list/a$c;
 .super Landroidx/recyclerview/widget/RecyclerView$y;
-.source "BottomSheetListAdapter.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$y;-><init>(Landroid/view/View;)V
 
     return-void

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lbutterknife/OnTextChanged;
 .super Ljava/lang/Object;
-.source "OnTextChanged.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

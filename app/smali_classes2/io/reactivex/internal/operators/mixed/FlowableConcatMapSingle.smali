@@ -1,6 +1,5 @@
 .class public final Lio/reactivex/internal/operators/mixed/FlowableConcatMapSingle;
 .super Lio/reactivex/Flowable;
-.source "FlowableConcatMapSingle.java"
 
 
 # annotations
@@ -66,19 +65,14 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Lio/reactivex/Flowable;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/mixed/FlowableConcatMapSingle;->source:Lio/reactivex/Flowable;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/mixed/FlowableConcatMapSingle;->mapper:Lio/reactivex/functions/Function;
 
-    .line 4
     iput-object p3, p0, Lio/reactivex/internal/operators/mixed/FlowableConcatMapSingle;->errorMode:Lio/reactivex/internal/util/ErrorMode;
 
-    .line 5
     iput p4, p0, Lio/reactivex/internal/operators/mixed/FlowableConcatMapSingle;->prefetch:I
 
     return-void
@@ -96,7 +90,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lio/reactivex/internal/operators/mixed/FlowableConcatMapSingle;->source:Lio/reactivex/Flowable;
 
     new-instance v1, Lio/reactivex/internal/operators/mixed/FlowableConcatMapSingle$ConcatMapSingleSubscriber;

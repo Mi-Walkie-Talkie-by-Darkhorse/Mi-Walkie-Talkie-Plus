@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/u2/k;
 .super Ljava/lang/Object;
-.source "WriteProgressCallback.java"
 
 
 # virtual methods

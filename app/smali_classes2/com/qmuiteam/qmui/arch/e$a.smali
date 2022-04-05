@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/arch/e$a;
 .super Ljava/lang/Object;
-.source "QMUINavFragment.java"
 
 # interfaces
 .implements Landroidx/fragment/app/FragmentManager$OnBackStackChangedListener;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/arch/e;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/arch/e$a;->a:Lcom/qmuiteam/qmui/arch/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public onBackStackChanged()V
     .locals 3
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/arch/e$a;->a:Lcom/qmuiteam/qmui/arch/e;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->getParentFragmentManager()Landroidx/fragment/app/FragmentManager;
@@ -51,7 +48,6 @@
 
     iget-object v1, p0, Lcom/qmuiteam/qmui/arch/e$a;->a:Lcom/qmuiteam/qmui/arch/e;
 
-    .line 2
     invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->getChildFragmentManager()Landroidx/fragment/app/FragmentManager;
 
     move-result-object v1
@@ -76,7 +72,6 @@
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentTransaction;->commit()I
 
     return-void

@@ -1,6 +1,5 @@
 .class Lcom/just/agentweb/DefaultWebClient$1;
 .super Ljava/lang/Object;
-.source "DefaultWebClient.java"
 
 # interfaces
 .implements Lcom/alipay/sdk/app/H5PayCallback;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/just/agentweb/DefaultWebClient;Landroid/webkit/WebView;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultWebClient$1;->this$0:Lcom/just/agentweb/DefaultWebClient;
 
     iput-object p2, p0, Lcom/just/agentweb/DefaultWebClient$1;->val$view:Landroid/webkit/WebView;
@@ -42,19 +40,16 @@
 .method public onPayResult(Lcom/alipay/sdk/util/H5PayResultModel;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Lcom/alipay/sdk/util/H5PayResultModel;->getReturnUrl()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 3
     new-instance v0, Lcom/just/agentweb/DefaultWebClient$1$1;
 
     invoke-direct {v0, p0, p1}, Lcom/just/agentweb/DefaultWebClient$1$1;-><init>(Lcom/just/agentweb/DefaultWebClient$1;Ljava/lang/String;)V

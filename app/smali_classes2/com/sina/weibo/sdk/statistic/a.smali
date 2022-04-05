@@ -1,6 +1,5 @@
 .class Lcom/sina/weibo/sdk/statistic/a;
 .super Lcom/sina/weibo/sdk/statistic/b;
-.source "AdEventLog.java"
 
 
 # instance fields
@@ -15,15 +14,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/sina/weibo/sdk/statistic/b;-><init>()V
 
     const-string v0, ""
 
-    .line 2
     iput-object v0, p0, Lcom/sina/weibo/sdk/statistic/a;->i:Ljava/lang/String;
 
-    .line 3
     iput-object v0, p0, Lcom/sina/weibo/sdk/statistic/a;->j:Ljava/lang/String;
 
     return-void
@@ -34,7 +30,6 @@
 .method public h()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/statistic/a;->i:Ljava/lang/String;
 
     return-object v0
@@ -43,7 +38,6 @@
 .method public i()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/sina/weibo/sdk/statistic/a;->h:Ljava/lang/String;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/nestedScroll/a;
 .super Ljava/lang/Object;
-.source "IQMUIContinuousNestedBottomView.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/nestedScroll/b;

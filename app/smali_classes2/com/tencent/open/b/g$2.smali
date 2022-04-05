@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/b/g$2;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/tencent/open/b/g;Landroid/os/Bundle;Z)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/b/g$2;->c:Lcom/tencent/open/b/g;
 
     iput-object p2, p0, Lcom/tencent/open/b/g$2;->a:Landroid/os/Bundle;
@@ -46,7 +44,6 @@
 .method public run()V
     .locals 5
 
-    .line 1
     :try_start_0
     new-instance v0, Landroid/os/Bundle;
 
@@ -56,12 +53,10 @@
 
     const-string v2, "1000"
 
-    .line 2
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "imei"
 
-    .line 3
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -74,7 +69,6 @@
 
     const-string v1, "imsi"
 
-    .line 4
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -87,7 +81,6 @@
 
     const-string v1, "android_id"
 
-    .line 5
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -100,7 +93,6 @@
 
     const-string v1, "mac"
 
-    .line 6
     invoke-static {}, Lcom/tencent/open/b/c;->a()Ljava/lang/String;
 
     move-result-object v2
@@ -111,19 +103,16 @@
 
     const-string v2, "1"
 
-    .line 7
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "os_ver"
 
-    .line 8
     sget-object v2, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "position"
 
-    .line 9
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -136,7 +125,6 @@
 
     const-string v1, "network"
 
-    .line 10
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -149,7 +137,6 @@
 
     const-string v1, "language"
 
-    .line 11
     invoke-static {}, Lcom/tencent/open/b/c;->b()Ljava/lang/String;
 
     move-result-object v2
@@ -158,7 +145,6 @@
 
     const-string v1, "resolution"
 
-    .line 12
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -171,7 +157,6 @@
 
     const-string v1, "apn"
 
-    .line 13
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -184,14 +169,12 @@
 
     const-string v1, "model_name"
 
-    .line 14
     sget-object v2, Landroid/os/Build;->MODEL:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "timezone"
 
-    .line 15
     invoke-static {}, Ljava/util/TimeZone;->getDefault()Ljava/util/TimeZone;
 
     move-result-object v2
@@ -206,12 +189,10 @@
 
     const-string v2, "3.2.0.lite"
 
-    .line 16
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v1, "qz_ver"
 
-    .line 17
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -226,7 +207,6 @@
 
     const-string v1, "qq_ver"
 
-    .line 18
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -241,7 +221,6 @@
 
     const-string v1, "qua"
 
-    .line 19
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -258,7 +237,6 @@
 
     const-string v1, "packagename"
 
-    .line 20
     invoke-static {}, Lcom/tencent/open/utils/d;->b()Ljava/lang/String;
 
     move-result-object v2
@@ -267,7 +245,6 @@
 
     const-string v1, "app_ver"
 
-    .line 21
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v2
@@ -282,30 +259,25 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 22
     iget-object v1, p0, Lcom/tencent/open/b/g$2;->a:Landroid/os/Bundle;
 
     if-eqz v1, :cond_0
 
-    .line 23
     iget-object v1, p0, Lcom/tencent/open/b/g$2;->a:Landroid/os/Bundle;
 
     invoke-virtual {v0, v1}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
 
-    .line 24
     :cond_0
     new-instance v1, Lcom/tencent/open/b/b;
 
     invoke-direct {v1, v0}, Lcom/tencent/open/b/b;-><init>(Landroid/os/Bundle;)V
 
-    .line 25
     iget-object v0, p0, Lcom/tencent/open/b/g$2;->c:Lcom/tencent/open/b/g;
 
     iget-object v0, v0, Lcom/tencent/open/b/g;->d:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 26
     iget-object v0, p0, Lcom/tencent/open/b/g$2;->c:Lcom/tencent/open/b/g;
 
     iget-object v0, v0, Lcom/tencent/open/b/g;->d:Ljava/util/List;
@@ -314,7 +286,6 @@
 
     move-result v0
 
-    .line 27
     invoke-static {}, Lcom/tencent/open/utils/d;->a()Landroid/content/Context;
 
     move-result-object v1
@@ -338,7 +309,6 @@
     :cond_1
     const/16 v2, 0x3e9
 
-    .line 28
     iget-object v3, p0, Lcom/tencent/open/b/g$2;->c:Lcom/tencent/open/b/g;
 
     const-string v4, "report_via"
@@ -355,7 +325,6 @@
 
     goto :goto_0
 
-    .line 29
     :cond_2
     iget-object v0, p0, Lcom/tencent/open/b/g$2;->c:Lcom/tencent/open/b/g;
 
@@ -367,15 +336,12 @@
 
     if-nez v0, :cond_4
 
-    .line 30
     invoke-static {}, Landroid/os/Message;->obtain()Landroid/os/Message;
 
     move-result-object v0
 
-    .line 31
     iput v2, v0, Landroid/os/Message;->what:I
 
-    .line 32
     iget-object v2, p0, Lcom/tencent/open/b/g$2;->c:Lcom/tencent/open/b/g;
 
     iget-object v2, v2, Lcom/tencent/open/b/g;->f:Landroid/os/Handler;
@@ -386,14 +352,12 @@
 
     goto :goto_1
 
-    .line 33
     :cond_3
     :goto_0
     iget-object v0, p0, Lcom/tencent/open/b/g$2;->c:Lcom/tencent/open/b/g;
 
     invoke-virtual {v0}, Lcom/tencent/open/b/g;->e()V
 
-    .line 34
     iget-object v0, p0, Lcom/tencent/open/b/g$2;->c:Lcom/tencent/open/b/g;
 
     iget-object v0, v0, Lcom/tencent/open/b/g;->f:Landroid/os/Handler;
@@ -411,7 +375,6 @@
 
     const-string v2, "--> reporVia, exception in sub thread."
 
-    .line 35
     invoke-static {v1, v2, v0}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_4

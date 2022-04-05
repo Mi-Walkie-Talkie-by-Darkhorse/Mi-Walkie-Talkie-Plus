@@ -1,13 +1,11 @@
 .class public final Lcom/amap/api/maps/CameraUpdateFactory;
 .super Ljava/lang/Object;
-.source "CameraUpdateFactory.java"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -16,7 +14,6 @@
 .method public static changeBearing(F)Lcom/amap/api/maps/CameraUpdate;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
     const/high16 v1, 0x43b40000    # 360.0f
@@ -37,7 +34,6 @@
 
     if-nez p1, :cond_0
 
-    .line 1
     new-instance p0, Lcom/amap/api/maps/CameraUpdate;
 
     new-instance p1, Lcom/amap/api/col/l3/ah;
@@ -48,7 +44,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
@@ -86,7 +81,6 @@
 
     if-nez p0, :cond_0
 
-    .line 1
     new-instance p0, Lcom/amap/api/maps/CameraUpdate;
 
     new-instance v0, Lcom/amap/api/col/l3/ah;
@@ -97,7 +91,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     iget-wide v0, p0, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
@@ -109,7 +102,6 @@
 
     move-result-object p0
 
-    .line 3
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
     invoke-static {p0}, Lcom/amap/api/col/l3/aj;->a(Landroid/graphics/Point;)Lcom/autonavi/amap/mapcore/CameraUpdateMessage;
@@ -124,7 +116,6 @@
 .method public static changeTilt(F)Lcom/amap/api/maps/CameraUpdate;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
     invoke-static {p0}, Lcom/amap/api/col/l3/aj;->b(F)Lcom/autonavi/amap/mapcore/CameraUpdateMessage;
@@ -141,7 +132,6 @@
 
     if-nez p0, :cond_0
 
-    .line 1
     new-instance p0, Lcom/amap/api/maps/CameraUpdate;
 
     new-instance v0, Lcom/amap/api/col/l3/ah;
@@ -152,11 +142,9 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
-    .line 3
     invoke-static {p0}, Lcom/amap/api/col/l3/aj;->a(Lcom/amap/api/maps/model/CameraPosition;)Lcom/autonavi/amap/mapcore/CameraUpdateMessage;
 
     move-result-object p0
@@ -171,7 +159,6 @@
 
     if-nez p0, :cond_0
 
-    .line 1
     new-instance p0, Lcom/amap/api/maps/CameraUpdate;
 
     new-instance v0, Lcom/amap/api/col/l3/ah;
@@ -182,7 +169,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
@@ -226,7 +212,6 @@
 
     if-nez p0, :cond_0
 
-    .line 1
     new-instance p0, Lcom/amap/api/maps/CameraUpdate;
 
     new-instance p1, Lcom/amap/api/col/l3/ah;
@@ -237,7 +222,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
@@ -255,7 +239,6 @@
 
     if-nez p0, :cond_0
 
-    .line 3
     new-instance p0, Lcom/amap/api/maps/CameraUpdate;
 
     new-instance p1, Lcom/amap/api/col/l3/ah;
@@ -266,11 +249,9 @@
 
     return-object p0
 
-    .line 4
     :cond_0
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
-    .line 5
     new-instance v1, Lcom/amap/api/col/l3/ag;
 
     invoke-direct {v1}, Lcom/amap/api/col/l3/ag;-><init>()V
@@ -303,7 +284,6 @@
 
     if-nez p0, :cond_0
 
-    .line 1
     new-instance p0, Lcom/amap/api/maps/CameraUpdate;
 
     new-instance p1, Lcom/amap/api/col/l3/ah;
@@ -314,7 +294,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
@@ -346,7 +325,6 @@
 
     if-nez p0, :cond_0
 
-    .line 1
     new-instance p0, Lcom/amap/api/maps/CameraUpdate;
 
     new-instance p1, Lcom/amap/api/col/l3/ah;
@@ -357,7 +335,6 @@
 
     return-object p0
 
-    .line 2
     :cond_0
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
@@ -373,7 +350,6 @@
 .method public static scrollBy(FF)Lcom/amap/api/maps/CameraUpdate;
     .locals 3
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
     new-instance v1, Lcom/amap/api/col/l3/ai;
@@ -396,7 +372,6 @@
 .method public static zoomBy(F)Lcom/amap/api/maps/CameraUpdate;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
     const/4 v1, 0x0
@@ -413,7 +388,6 @@
 .method public static zoomBy(FLandroid/graphics/Point;)Lcom/amap/api/maps/CameraUpdate;
     .locals 1
 
-    .line 2
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
     invoke-static {p0, p1}, Lcom/amap/api/col/l3/aj;->a(FLandroid/graphics/Point;)Lcom/autonavi/amap/mapcore/CameraUpdateMessage;
@@ -428,7 +402,6 @@
 .method public static zoomIn()Lcom/amap/api/maps/CameraUpdate;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
     invoke-static {}, Lcom/amap/api/col/l3/aj;->a()Lcom/autonavi/amap/mapcore/CameraUpdateMessage;
@@ -443,7 +416,6 @@
 .method public static zoomOut()Lcom/amap/api/maps/CameraUpdate;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
     invoke-static {}, Lcom/amap/api/col/l3/aj;->b()Lcom/autonavi/amap/mapcore/CameraUpdateMessage;
@@ -458,7 +430,6 @@
 .method public static zoomTo(F)Lcom/amap/api/maps/CameraUpdate;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/amap/api/maps/CameraUpdate;
 
     invoke-static {p0}, Lcom/amap/api/col/l3/aj;->a(F)Lcom/autonavi/amap/mapcore/CameraUpdateMessage;

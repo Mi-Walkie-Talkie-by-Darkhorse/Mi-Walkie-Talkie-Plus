@@ -1,6 +1,5 @@
 .class final Lcom/jude/rollviewpager/RollPagerView$g;
 .super Landroid/os/Handler;
-.source "RollPagerView.java"
 
 
 # annotations
@@ -30,10 +29,8 @@
 .method public constructor <init>(Lcom/jude/rollviewpager/RollPagerView;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Landroid/os/Handler;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
@@ -48,7 +45,6 @@
 .method public handleMessage(Landroid/os/Message;)V
     .locals 4
 
-    .line 1
     iget-object p1, p0, Lcom/jude/rollviewpager/RollPagerView$g;->a:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p1}, Ljava/lang/ref/WeakReference;->get()Ljava/lang/Object;
@@ -57,7 +53,6 @@
 
     check-cast p1, Lcom/jude/rollviewpager/RollPagerView;
 
-    .line 2
     invoke-virtual {p1}, Lcom/jude/rollviewpager/RollPagerView;->getViewPager()Landroidx/viewpager/widget/ViewPager;
 
     move-result-object v0
@@ -70,7 +65,6 @@
 
     add-int/2addr v0, v1
 
-    .line 3
     invoke-static {p1}, Lcom/jude/rollviewpager/RollPagerView;->b(Lcom/jude/rollviewpager/RollPagerView;)Landroidx/viewpager/widget/a;
 
     move-result-object v2
@@ -83,7 +77,6 @@
 
     const/4 v0, 0x0
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Lcom/jude/rollviewpager/RollPagerView;->getViewPager()Landroidx/viewpager/widget/ViewPager;
 
@@ -91,7 +84,6 @@
 
     invoke-virtual {v2, v0}, Landroidx/viewpager/widget/ViewPager;->setCurrentItem(I)V
 
-    .line 5
     invoke-static {p1}, Lcom/jude/rollviewpager/RollPagerView;->f(Lcom/jude/rollviewpager/RollPagerView;)Lcom/jude/rollviewpager/RollPagerView$e;
 
     move-result-object v2
@@ -104,7 +96,6 @@
 
     invoke-interface {v2, v0, v3}, Lcom/jude/rollviewpager/RollPagerView$e;->a(ILcom/jude/rollviewpager/a;)V
 
-    .line 6
     invoke-static {p1}, Lcom/jude/rollviewpager/RollPagerView;->b(Lcom/jude/rollviewpager/RollPagerView;)Landroidx/viewpager/widget/a;
 
     move-result-object v0

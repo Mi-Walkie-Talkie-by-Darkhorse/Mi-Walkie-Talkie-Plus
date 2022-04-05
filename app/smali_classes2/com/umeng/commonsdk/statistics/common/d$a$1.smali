@@ -1,6 +1,5 @@
 .class Lcom/umeng/commonsdk/statistics/common/d$a$1;
 .super Ljava/lang/Object;
-.source "StoreHelper.java"
 
 # interfaces
 .implements Ljava/io/FilenameFilter;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/umeng/commonsdk/statistics/common/d$a;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/umeng/commonsdk/statistics/common/d$a$1;->a:Lcom/umeng/commonsdk/statistics/common/d$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -40,7 +38,6 @@
 
     const-string p1, "um"
 
-    .line 1
     invoke-virtual {p2, p1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
     move-result p1

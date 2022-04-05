@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/link/a;
 .super Ljava/lang/Object;
-.source "ITouchableSpan.java"
 
 
 # virtual methods

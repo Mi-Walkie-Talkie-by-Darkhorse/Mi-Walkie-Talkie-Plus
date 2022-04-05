@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/util/concurrent/AsyncFunction;
 .super Ljava/lang/Object;
-.source "AsyncFunction.java"
 
 
 # annotations

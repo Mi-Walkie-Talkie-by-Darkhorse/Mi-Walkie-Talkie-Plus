@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/login/LoginFragment$c;
 .super Lcom/ifengyu/intercom/g/d/f;
-.source "LoginFragment.java"
 
 
 # annotations
@@ -24,7 +23,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/login/LoginFragment;Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$c;->c:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$c;->b:Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
@@ -41,20 +39,17 @@
 
     if-nez p1, :cond_0
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$c;->c:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->e(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
 
     return-void
 
-    .line 7
     :cond_0
     iget p2, p1, Lcom/ifengyu/intercom/bean/LoginResult;->errno:I
 
     if-nez p2, :cond_1
 
-    .line 8
     iget-object p2, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$c;->b:Lcom/ifengyu/intercom/lite/enums/LoginTypeEnum;
 
     invoke-virtual {p2}, Ljava/lang/Enum;->name()Ljava/lang/String;
@@ -67,12 +62,10 @@
 
     invoke-static {p2, v0}, Lcom/umeng/analytics/MobclickAgent;->onProfileSignIn(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
     new-instance p2, Ljava/util/HashMap;
 
     invoke-direct {p2}, Ljava/util/HashMap;-><init>()V
 
-    .line 10
     iget-object v0, p1, Lcom/ifengyu/intercom/bean/LoginResult;->data:Lcom/ifengyu/intercom/bean/User;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/bean/User;->userid:Ljava/lang/String;
@@ -81,7 +74,6 @@
 
     invoke-interface {p2, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 11
     iget-object p1, p1, Lcom/ifengyu/intercom/bean/LoginResult;->data:Lcom/ifengyu/intercom/bean/User;
 
     iget-object p1, p1, Lcom/ifengyu/intercom/bean/User;->nickname:Ljava/lang/String;
@@ -90,7 +82,6 @@
 
     invoke-interface {p2, v0, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 12
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$c;->c:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getContext()Landroid/content/Context;
@@ -119,7 +110,6 @@
 
     invoke-static {p1, v0, p2}, Lcom/umeng/analytics/MobclickAgent;->onEventObject(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)V
 
-    .line 13
     invoke-static {}, Lcom/ifengyu/intercom/i/d0;->R()Landroid/content/SharedPreferences;
 
     move-result-object p1
@@ -146,14 +136,12 @@
 
     invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
 
-    .line 14
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$c;->c:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->f(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
 
     goto :goto_0
 
-    .line 15
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$c;->c:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
@@ -170,7 +158,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/bean/LoginResult;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/lite/login/LoginFragment$c;->a(Lcom/ifengyu/intercom/bean/LoginResult;I)V
@@ -181,7 +168,6 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 0
 
-    .line 4
     new-instance p1, Ljava/lang/StringBuilder;
 
     invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
@@ -204,7 +190,6 @@
 
     invoke-static {p2, p1}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$c;->c:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->e(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V
@@ -215,10 +200,8 @@
 .method public a(Lokhttp3/Request;I)V
     .locals 0
 
-    .line 2
     invoke-super {p0, p1, p2}, Lcom/ifengyu/intercom/g/d/b;->a(Lokhttp3/Request;I)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/login/LoginFragment$c;->c:Lcom/ifengyu/intercom/lite/login/LoginFragment;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/lite/login/LoginFragment;->d(Lcom/ifengyu/intercom/lite/login/LoginFragment;)V

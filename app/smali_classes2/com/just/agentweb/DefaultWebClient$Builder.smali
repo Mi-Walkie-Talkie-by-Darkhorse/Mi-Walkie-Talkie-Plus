@@ -1,6 +1,5 @@
 .class public Lcom/just/agentweb/DefaultWebClient$Builder;
 .super Ljava/lang/Object;
-.source "DefaultWebClient.java"
 
 
 # annotations
@@ -34,12 +33,10 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mIsInterceptUnkownScheme:Z
 
     return-void
@@ -48,7 +45,6 @@
 .method static synthetic access$000(Lcom/just/agentweb/DefaultWebClient$Builder;)Landroid/webkit/WebViewClient;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mClient:Landroid/webkit/WebViewClient;
 
     return-object p0
@@ -57,7 +53,6 @@
 .method static synthetic access$100(Lcom/just/agentweb/DefaultWebClient$Builder;)Landroid/webkit/WebView;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mWebView:Landroid/webkit/WebView;
 
     return-object p0
@@ -66,7 +61,6 @@
 .method static synthetic access$200(Lcom/just/agentweb/DefaultWebClient$Builder;)Landroid/app/Activity;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mActivity:Landroid/app/Activity;
 
     return-object p0
@@ -75,7 +69,6 @@
 .method static synthetic access$300(Lcom/just/agentweb/DefaultWebClient$Builder;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mWebClientHelper:Z
 
     return p0
@@ -84,7 +77,6 @@
 .method static synthetic access$400(Lcom/just/agentweb/DefaultWebClient$Builder;)Z
     .locals 0
 
-    .line 1
     iget-boolean p0, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mIsInterceptUnkownScheme:Z
 
     return p0
@@ -93,7 +85,6 @@
 .method static synthetic access$500(Lcom/just/agentweb/DefaultWebClient$Builder;)I
     .locals 0
 
-    .line 1
     iget p0, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mUrlHandleWays:I
 
     return p0
@@ -104,7 +95,6 @@
 .method public build()Lcom/just/agentweb/DefaultWebClient;
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/just/agentweb/DefaultWebClient;
 
     invoke-direct {v0, p0}, Lcom/just/agentweb/DefaultWebClient;-><init>(Lcom/just/agentweb/DefaultWebClient$Builder;)V
@@ -115,7 +105,6 @@
 .method public setActivity(Landroid/app/Activity;)Lcom/just/agentweb/DefaultWebClient$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mActivity:Landroid/app/Activity;
 
     return-object p0
@@ -124,7 +113,6 @@
 .method public setClient(Landroid/webkit/WebViewClient;)Lcom/just/agentweb/DefaultWebClient$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mClient:Landroid/webkit/WebViewClient;
 
     return-object p0
@@ -133,7 +121,6 @@
 .method public setInterceptUnkownUrl(Z)Lcom/just/agentweb/DefaultWebClient$Builder;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mIsInterceptUnkownScheme:Z
 
     return-object p0
@@ -142,7 +129,6 @@
 .method public setPermissionInterceptor(Lcom/just/agentweb/PermissionInterceptor;)Lcom/just/agentweb/DefaultWebClient$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mPermissionInterceptor:Lcom/just/agentweb/PermissionInterceptor;
 
     return-object p0
@@ -151,7 +137,6 @@
 .method public setUrlHandleWays(I)Lcom/just/agentweb/DefaultWebClient$Builder;
     .locals 0
 
-    .line 1
     iput p1, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mUrlHandleWays:I
 
     return-object p0
@@ -160,7 +145,6 @@
 .method public setWebClientHelper(Z)Lcom/just/agentweb/DefaultWebClient$Builder;
     .locals 0
 
-    .line 1
     iput-boolean p1, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mWebClientHelper:Z
 
     return-object p0
@@ -169,7 +153,6 @@
 .method public setWebView(Landroid/webkit/WebView;)Lcom/just/agentweb/DefaultWebClient$Builder;
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/just/agentweb/DefaultWebClient$Builder;->mWebView:Landroid/webkit/WebView;
 
     return-object p0

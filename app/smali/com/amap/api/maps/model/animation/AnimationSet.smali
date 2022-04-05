@@ -1,16 +1,13 @@
 .class public Lcom/amap/api/maps/model/animation/AnimationSet;
 .super Lcom/amap/api/maps/model/animation/Animation;
-.source "AnimationSet.java"
 
 
 # direct methods
 .method public constructor <init>(Z)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/amap/api/maps/model/animation/Animation;-><init>()V
 
-    .line 2
     new-instance v0, Lcom/autonavi/amap/mapcore/animation/GLAnimationSet;
 
     invoke-direct {v0, p1}, Lcom/autonavi/amap/mapcore/animation/GLAnimationSet;-><init>(Z)V
@@ -25,7 +22,6 @@
 .method public addAnimation(Lcom/amap/api/maps/model/animation/Animation;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/animation/Animation;->glAnimation:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
     check-cast v0, Lcom/autonavi/amap/mapcore/animation/GLAnimationSet;
@@ -38,7 +34,6 @@
 .method public cleanAnimation()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/animation/Animation;->glAnimation:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
     check-cast v0, Lcom/autonavi/amap/mapcore/animation/GLAnimationSet;
@@ -51,7 +46,6 @@
 .method public setDuration(J)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/animation/Animation;->glAnimation:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
     invoke-virtual {v0, p1, p2}, Lcom/autonavi/amap/mapcore/animation/GLAnimation;->setDuration(J)V
@@ -62,7 +56,6 @@
 .method public setInterpolator(Landroid/view/animation/Interpolator;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/maps/model/animation/Animation;->glAnimation:Lcom/autonavi/amap/mapcore/animation/GLAnimation;
 
     invoke-virtual {v0, p1}, Lcom/autonavi/amap/mapcore/animation/GLAnimation;->setInterpolator(Landroid/view/animation/Interpolator;)V

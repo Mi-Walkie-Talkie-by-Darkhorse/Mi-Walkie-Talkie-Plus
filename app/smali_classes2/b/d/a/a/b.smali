@@ -1,6 +1,5 @@
 .class public Lb/d/a/a/b;
 .super Landroidx/recyclerview/widget/RecyclerView$g;
-.source "MultiItemTypeAdapter.java"
 
 
 # annotations
@@ -51,16 +50,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$g;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lb/d/a/a/b;->a:Landroid/content/Context;
 
-    .line 3
     iput-object p2, p0, Lb/d/a/a/b;->b:Ljava/util/List;
 
-    .line 4
     new-instance p1, Lb/d/a/a/c/b;
 
     invoke-direct {p1}, Lb/d/a/a/c/b;-><init>()V
@@ -83,7 +78,6 @@
         }
     .end annotation
 
-    .line 6
     iget-object v0, p0, Lb/d/a/a/b;->c:Lb/d/a/a/c/b;
 
     invoke-virtual {v0, p1}, Lb/d/a/a/c/b;->a(Lb/d/a/a/c/a;)Lb/d/a/a/c/b;
@@ -94,7 +88,6 @@
 .method protected a(Landroid/view/ViewGroup;Lb/d/a/a/c/c;I)V
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p3}, Lb/d/a/a/b;->a(I)Z
 
     move-result p1
@@ -103,7 +96,6 @@
 
     return-void
 
-    .line 3
     :cond_0
     invoke-virtual {p2}, Lb/d/a/a/c/c;->a()Landroid/view/View;
 
@@ -115,7 +107,6 @@
 
     invoke-virtual {p1, p3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 4
     invoke-virtual {p2}, Lb/d/a/a/c/c;->a()Landroid/view/View;
 
     move-result-object p1
@@ -132,7 +123,6 @@
 .method public a(Lb/d/a/a/c/c;I)V
     .locals 1
 
-    .line 5
     iget-object v0, p0, Lb/d/a/a/b;->b:Ljava/util/List;
 
     invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -160,7 +150,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lb/d/a/a/b;->c:Lb/d/a/a/c/b;
 
     invoke-virtual {p1}, Landroidx/recyclerview/widget/RecyclerView$y;->getAdapterPosition()I
@@ -175,7 +164,6 @@
 .method protected a()Z
     .locals 1
 
-    .line 7
     iget-object v0, p0, Lb/d/a/a/b;->c:Lb/d/a/a/c/b;
 
     invoke-virtual {v0}, Lb/d/a/a/c/b;->a()I
@@ -206,7 +194,6 @@
 .method public getItemCount()I
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lb/d/a/a/b;->b:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -219,7 +206,6 @@
 .method public getItemViewType(I)I
     .locals 2
 
-    .line 1
     invoke-virtual {p0}, Lb/d/a/a/b;->a()Z
 
     move-result v0
@@ -232,7 +218,6 @@
 
     return p1
 
-    .line 2
     :cond_0
     iget-object v0, p0, Lb/d/a/a/b;->c:Lb/d/a/a/c/b;
 
@@ -252,7 +237,6 @@
 .method public bridge synthetic onBindViewHolder(Landroidx/recyclerview/widget/RecyclerView$y;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Lb/d/a/a/c/c;
 
     invoke-virtual {p0, p1, p2}, Lb/d/a/a/b;->a(Lb/d/a/a/c/c;I)V
@@ -263,7 +247,6 @@
 .method public bridge synthetic onCreateViewHolder(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$y;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lb/d/a/a/b;->onCreateViewHolder(Landroid/view/ViewGroup;I)Lb/d/a/a/c/c;
 
     move-result-object p1
@@ -274,33 +257,28 @@
 .method public onCreateViewHolder(Landroid/view/ViewGroup;I)Lb/d/a/a/c/c;
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lb/d/a/a/b;->c:Lb/d/a/a/c/b;
 
     invoke-virtual {v0, p2}, Lb/d/a/a/c/b;->a(I)Lb/d/a/a/c/a;
 
     move-result-object v0
 
-    .line 3
     invoke-interface {v0}, Lb/d/a/a/c/a;->a()I
 
     move-result v0
 
-    .line 4
     iget-object v1, p0, Lb/d/a/a/b;->a:Landroid/content/Context;
 
     invoke-static {v1, p1, v0}, Lb/d/a/a/c/c;->a(Landroid/content/Context;Landroid/view/ViewGroup;I)Lb/d/a/a/c/c;
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {v0}, Lb/d/a/a/c/c;->a()Landroid/view/View;
 
     move-result-object v1
 
     invoke-virtual {p0, v0, v1}, Lb/d/a/a/b;->a(Lb/d/a/a/c/c;Landroid/view/View;)V
 
-    .line 6
     invoke-virtual {p0, p1, v0, p2}, Lb/d/a/a/b;->a(Landroid/view/ViewGroup;Lb/d/a/a/c/c;I)V
 
     return-object v0
@@ -309,7 +287,6 @@
 .method public setOnItemClickListener(Lb/d/a/a/b$c;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lb/d/a/a/b;->d:Lb/d/a/a/b$c;
 
     return-void

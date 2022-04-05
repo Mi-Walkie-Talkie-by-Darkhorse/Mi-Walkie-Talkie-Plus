@@ -1,6 +1,5 @@
 .class synthetic Lde/hdodenhof/circleimageview/CircleImageView$a;
 .super Ljava/lang/Object;
-.source "CircleImageView.java"
 
 
 # annotations

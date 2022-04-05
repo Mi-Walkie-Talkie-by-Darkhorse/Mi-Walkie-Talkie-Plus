@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/umeng/commonsdk/framework/UMLogDataProtocol;
 .super Ljava/lang/Object;
-.source "UMLogDataProtocol.java"
 
 
 # annotations

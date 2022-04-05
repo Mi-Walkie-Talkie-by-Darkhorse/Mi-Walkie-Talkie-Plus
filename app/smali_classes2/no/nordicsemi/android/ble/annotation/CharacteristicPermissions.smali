@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lno/nordicsemi/android/ble/annotation/CharacteristicPermissions;
 .super Ljava/lang/Object;
-.source "CharacteristicPermissions.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

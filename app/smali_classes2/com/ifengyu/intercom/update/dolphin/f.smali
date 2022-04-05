@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/update/dolphin/f;
 .super Ljava/lang/Object;
-.source "IDolphinUpdateAckReceived.java"
 
 
 # virtual methods

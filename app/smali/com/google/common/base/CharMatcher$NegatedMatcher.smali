@@ -1,6 +1,5 @@
 .class Lcom/google/common/base/CharMatcher$NegatedMatcher;
 .super Lcom/google/common/base/CharMatcher;
-.source "CharMatcher.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/google/common/base/CharMatcher;)V
     .locals 3
 
-    .line 3
     invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
@@ -59,10 +57,8 @@
 .method constructor <init>(Ljava/lang/String;Lcom/google/common/base/CharMatcher;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/base/CharMatcher;-><init>(Ljava/lang/String;)V
 
-    .line 2
     iput-object p2, p0, Lcom/google/common/base/CharMatcher$NegatedMatcher;->original:Lcom/google/common/base/CharMatcher;
 
     return-void
@@ -73,7 +69,6 @@
 .method public bridge synthetic apply(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Character;
 
     invoke-super {p0, p1}, Lcom/google/common/base/CharMatcher;->apply(Ljava/lang/Character;)Z
@@ -86,7 +81,6 @@
 .method public countIn(Ljava/lang/CharSequence;)I
     .locals 2
 
-    .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
@@ -105,7 +99,6 @@
 .method public matches(C)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/CharMatcher$NegatedMatcher;->original:Lcom/google/common/base/CharMatcher;
 
     invoke-virtual {v0, p1}, Lcom/google/common/base/CharMatcher;->matches(C)Z
@@ -120,7 +113,6 @@
 .method public matchesAllOf(Ljava/lang/CharSequence;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/CharMatcher$NegatedMatcher;->original:Lcom/google/common/base/CharMatcher;
 
     invoke-virtual {v0, p1}, Lcom/google/common/base/CharMatcher;->matchesNoneOf(Ljava/lang/CharSequence;)Z
@@ -133,7 +125,6 @@
 .method public matchesNoneOf(Ljava/lang/CharSequence;)Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/CharMatcher$NegatedMatcher;->original:Lcom/google/common/base/CharMatcher;
 
     invoke-virtual {v0, p1}, Lcom/google/common/base/CharMatcher;->matchesAllOf(Ljava/lang/CharSequence;)Z
@@ -146,7 +137,6 @@
 .method public negate()Lcom/google/common/base/CharMatcher;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/base/CharMatcher$NegatedMatcher;->original:Lcom/google/common/base/CharMatcher;
 
     return-object v0
@@ -158,12 +148,10 @@
         value = "java.util.BitSet"
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/BitSet;
 
     invoke-direct {v0}, Ljava/util/BitSet;-><init>()V
 
-    .line 2
     iget-object v1, p0, Lcom/google/common/base/CharMatcher$NegatedMatcher;->original:Lcom/google/common/base/CharMatcher;
 
     invoke-virtual {v1, v0}, Lcom/google/common/base/CharMatcher;->setBits(Ljava/util/BitSet;)V
@@ -172,10 +160,8 @@
 
     const/high16 v2, 0x10000
 
-    .line 3
     invoke-virtual {v0, v1, v2}, Ljava/util/BitSet;->flip(II)V
 
-    .line 4
     invoke-virtual {p1, v0}, Ljava/util/BitSet;->or(Ljava/util/BitSet;)V
 
     return-void
@@ -184,7 +170,6 @@
 .method withToString(Ljava/lang/String;)Lcom/google/common/base/CharMatcher;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/base/CharMatcher$NegatedMatcher;
 
     iget-object v1, p0, Lcom/google/common/base/CharMatcher$NegatedMatcher;->original:Lcom/google/common/base/CharMatcher;

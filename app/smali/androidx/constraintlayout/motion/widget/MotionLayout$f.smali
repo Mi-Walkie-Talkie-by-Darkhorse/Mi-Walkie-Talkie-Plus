@@ -1,6 +1,5 @@
 .class public interface abstract Landroidx/constraintlayout/motion/widget/MotionLayout$f;
 .super Ljava/lang/Object;
-.source "MotionLayout.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public abstract Lcom/github/mikephil/charting/data/b;
 .super Lcom/github/mikephil/charting/data/h;
-.source "BarLineScatterCandleBubbleData.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/github/mikephil/charting/data/h;-><init>()V
 
     return-void
@@ -37,7 +35,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-direct {p0, p1}, Lcom/github/mikephil/charting/data/h;-><init>(Ljava/util/List;)V
 
     return-void

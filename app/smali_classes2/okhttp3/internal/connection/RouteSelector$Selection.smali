@@ -1,6 +1,5 @@
 .class public final Lokhttp3/internal/connection/RouteSelector$Selection;
 .super Ljava/lang/Object;
-.source "RouteSelector.java"
 
 
 # annotations
@@ -40,15 +39,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput v0, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->nextRouteIndex:I
 
-    .line 3
     iput-object p1, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
 
     return-void
@@ -67,7 +63,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Ljava/util/ArrayList;
 
     iget-object v1, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
@@ -80,7 +75,6 @@
 .method public hasNext()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->nextRouteIndex:I
 
     iget-object v1, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
@@ -105,14 +99,12 @@
 .method public next()Lokhttp3/Route;
     .locals 3
 
-    .line 1
     invoke-virtual {p0}, Lokhttp3/internal/connection/RouteSelector$Selection;->hasNext()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iget-object v0, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->routes:Ljava/util/List;
 
     iget v1, p0, Lokhttp3/internal/connection/RouteSelector$Selection;->nextRouteIndex:I
@@ -129,7 +121,6 @@
 
     return-object v0
 
-    .line 3
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 

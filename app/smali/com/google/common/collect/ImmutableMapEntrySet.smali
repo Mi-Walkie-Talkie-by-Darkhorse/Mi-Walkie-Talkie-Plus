@@ -1,6 +1,5 @@
 .class abstract Lcom/google/common/collect/ImmutableMapEntrySet;
 .super Lcom/google/common/collect/ImmutableSet;
-.source "ImmutableMapEntrySet.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableSet;-><init>()V
 
     return-void
@@ -47,17 +45,14 @@
         .end annotation
     .end param
 
-    .line 1
     instance-of v0, p1, Ljava/util/Map$Entry;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    .line 2
     check-cast p1, Ljava/util/Map$Entry;
 
-    .line 3
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMapEntrySet;->map()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
@@ -72,7 +67,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
     move-result-object p1
@@ -92,7 +86,6 @@
 .method isPartialView()Z
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMapEntrySet;->map()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
@@ -117,7 +110,6 @@
 .method public size()I
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMapEntrySet;->map()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
@@ -135,7 +127,6 @@
         value = "serialization"
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ImmutableMapEntrySet$EntrySetSerializedForm;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableMapEntrySet;->map()Lcom/google/common/collect/ImmutableMap;

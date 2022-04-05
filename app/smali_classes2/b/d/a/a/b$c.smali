@@ -1,6 +1,5 @@
 .class public interface abstract Lb/d/a/a/b$c;
 .super Ljava/lang/Object;
-.source "MultiItemTypeAdapter.java"
 
 
 # annotations

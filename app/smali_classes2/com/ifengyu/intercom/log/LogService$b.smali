@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/log/LogService$b;
 .super Landroid/content/BroadcastReceiver;
-.source "LogService.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/log/LogService;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/log/LogService$b;->a:Lcom/ifengyu/intercom/log/LogService;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -35,12 +33,10 @@
 .method public onReceive(Landroid/content/Context;Landroid/content/Intent;)V
     .locals 2
 
-    .line 1
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object p1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/log/LogService;->a()Ljava/lang/String;
 
     move-result-object p2
@@ -63,14 +59,12 @@
 
     const-string p2, "MONITOR_LOG_SIZE"
 
-    .line 3
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/log/LogService$b;->a:Lcom/ifengyu/intercom/log/LogService;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/log/LogService;->b(Lcom/ifengyu/intercom/log/LogService;)V
@@ -80,14 +74,12 @@
     :cond_0
     const-string p2, "android.intent.action.TIME_SET"
 
-    .line 5
     invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/log/LogService$b;->a:Lcom/ifengyu/intercom/log/LogService;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/log/LogService;->e(Lcom/ifengyu/intercom/log/LogService;)Ljava/lang/String;
@@ -102,7 +94,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 7
     invoke-static {}, Lcom/ifengyu/intercom/log/LogService;->a()Ljava/lang/String;
 
     move-result-object p1
@@ -111,7 +102,6 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 8
     new-instance p1, Lcom/ifengyu/intercom/log/LogService$d;
 
     iget-object p2, p0, Lcom/ifengyu/intercom/log/LogService$b;->a:Lcom/ifengyu/intercom/log/LogService;

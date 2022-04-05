@@ -1,6 +1,5 @@
 .class public final Lcom/bumptech/glide/util/k/b;
 .super Ljava/lang/Object;
-.source "GlideTrace.java"
 
 
 # direct methods

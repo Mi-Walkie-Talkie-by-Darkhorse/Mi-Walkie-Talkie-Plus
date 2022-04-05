@@ -1,6 +1,5 @@
 .class public abstract Lcom/google/common/collect/ImmutableList;
 .super Lcom/google/common/collect/ImmutableCollection;
-.source "ImmutableList.java"
 
 # interfaces
 .implements Ljava/util/List;
@@ -52,7 +51,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/RegularImmutableList;
 
     sget-object v1, Lcom/google/common/collect/ObjectArrays;->EMPTY_ARRAY:[Ljava/lang/Object;
@@ -67,7 +65,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lcom/google/common/collect/ImmutableCollection;-><init>()V
 
     return-void
@@ -87,7 +84,6 @@
         }
     .end annotation
 
-    .line 1
     array-length v0, p0
 
     invoke-static {p0, v0}, Lcom/google/common/collect/ImmutableList;->asImmutableList([Ljava/lang/Object;I)Lcom/google/common/collect/ImmutableList;
@@ -117,17 +113,14 @@
 
     if-eq p1, v0, :cond_1
 
-    .line 2
     array-length v0, p0
 
     if-ge p1, v0, :cond_0
 
-    .line 3
     invoke-static {p0, p1}, Lcom/google/common/collect/ObjectArrays;->arraysCopyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
 
     move-result-object p0
 
-    .line 4
     :cond_0
     new-instance p1, Lcom/google/common/collect/RegularImmutableList;
 
@@ -135,7 +128,6 @@
 
     return-object p1
 
-    .line 5
     :cond_1
     new-instance p1, Lcom/google/common/collect/SingletonImmutableList;
 
@@ -147,7 +139,6 @@
 
     return-object p1
 
-    .line 6
     :cond_2
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
 
@@ -168,7 +159,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ImmutableList$Builder;
 
     invoke-direct {v0}, Lcom/google/common/collect/ImmutableList$Builder;-><init>()V
@@ -190,7 +180,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/collect/ObjectArrays;->checkElementsNotNull([Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p0
@@ -216,10 +205,8 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     instance-of v0, p0, Ljava/util/Collection;
 
     if-eqz v0, :cond_0
@@ -259,19 +246,16 @@
         }
     .end annotation
 
-    .line 3
     instance-of v0, p0, Lcom/google/common/collect/ImmutableCollection;
 
     if-eqz v0, :cond_1
 
-    .line 4
     check-cast p0, Lcom/google/common/collect/ImmutableCollection;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->asList()Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
 
-    .line 5
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->isPartialView()Z
 
     move-result v0
@@ -289,7 +273,6 @@
     :cond_0
     return-object p0
 
-    .line 6
     :cond_1
     invoke-interface {p0}, Ljava/util/Collection;->toArray()[Ljava/lang/Object;
 
@@ -316,41 +299,35 @@
         }
     .end annotation
 
-    .line 7
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    .line 8
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
 
     return-object p0
 
-    .line 9
     :cond_0
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 10
     invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
     if-nez v1, :cond_1
 
-    .line 11
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->of(Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
 
     return-object p0
 
-    .line 12
     :cond_1
     new-instance v1, Lcom/google/common/collect/ImmutableList$Builder;
 
@@ -383,7 +360,6 @@
         }
     .end annotation
 
-    .line 13
     array-length v0, p0
 
     if-eqz v0, :cond_1
@@ -392,7 +368,6 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 14
     new-instance v0, Lcom/google/common/collect/RegularImmutableList;
 
     invoke-virtual {p0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
@@ -409,7 +384,6 @@
 
     return-object v0
 
-    .line 15
     :cond_0
     new-instance v0, Lcom/google/common/collect/SingletonImmutableList;
 
@@ -421,7 +395,6 @@
 
     return-object v0
 
-    .line 16
     :cond_1
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
 
@@ -442,7 +415,6 @@
         }
     .end annotation
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/ImmutableList;->EMPTY:Lcom/google/common/collect/ImmutableList;
 
     return-object v0
@@ -460,7 +432,6 @@
         }
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/collect/SingletonImmutableList;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/SingletonImmutableList;-><init>(Ljava/lang/Object;)V
@@ -492,7 +463,6 @@
 
     aput-object p1, v0, p0
 
-    .line 3
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -528,7 +498,6 @@
 
     aput-object p2, v0, p0
 
-    .line 4
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -568,7 +537,6 @@
 
     aput-object p3, v0, p0
 
-    .line 5
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -612,7 +580,6 @@
 
     aput-object p4, v0, p0
 
-    .line 6
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -660,7 +627,6 @@
 
     aput-object p5, v0, p0
 
-    .line 7
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -712,7 +678,6 @@
 
     aput-object p6, v0, p0
 
-    .line 8
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -768,7 +733,6 @@
 
     aput-object p7, v0, p0
 
-    .line 9
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -828,7 +792,6 @@
 
     aput-object p8, v0, p0
 
-    .line 10
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -892,7 +855,6 @@
 
     aput-object p9, v0, p0
 
-    .line 11
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -960,7 +922,6 @@
 
     aput-object p10, v0, p0
 
-    .line 12
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -980,7 +941,6 @@
         }
     .end annotation
 
-    .line 13
     array-length v0, p12
 
     const/16 v1, 0xc
@@ -991,70 +951,56 @@
 
     const/4 v2, 0x0
 
-    .line 14
     aput-object p0, v0, v2
 
     const/4 p0, 0x1
 
-    .line 15
     aput-object p1, v0, p0
 
     const/4 p0, 0x2
 
-    .line 16
     aput-object p2, v0, p0
 
     const/4 p0, 0x3
 
-    .line 17
     aput-object p3, v0, p0
 
     const/4 p0, 0x4
 
-    .line 18
     aput-object p4, v0, p0
 
     const/4 p0, 0x5
 
-    .line 19
     aput-object p5, v0, p0
 
     const/4 p0, 0x6
 
-    .line 20
     aput-object p6, v0, p0
 
     const/4 p0, 0x7
 
-    .line 21
     aput-object p7, v0, p0
 
     const/16 p0, 0x8
 
-    .line 22
     aput-object p8, v0, p0
 
     const/16 p0, 0x9
 
-    .line 23
     aput-object p9, v0, p0
 
     const/16 p0, 0xa
 
-    .line 24
     aput-object p10, v0, p0
 
     const/16 p0, 0xb
 
-    .line 25
     aput-object p11, v0, p0
 
-    .line 26
     array-length p0, p12
 
     invoke-static {p12, v2, v0, v1, p0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    .line 27
     invoke-static {v0}, Lcom/google/common/collect/ImmutableList;->construct([Ljava/lang/Object;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p0
@@ -1070,7 +1016,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/io/InvalidObjectException;
 
     const-string v0, "Use SerializedForm"
@@ -1093,7 +1038,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -1114,7 +1058,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -1142,7 +1085,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableList;->indexOf(Ljava/lang/Object;)I
 
     move-result p1
@@ -1163,7 +1105,6 @@
 .method copyIntoArray([Ljava/lang/Object;I)I
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
@@ -1175,7 +1116,6 @@
 
     add-int v2, p2, v1
 
-    .line 2
     invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -1199,7 +1139,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/collect/Lists;->equalsImpl(Ljava/util/List;Ljava/lang/Object;)Z
 
     move-result p1
@@ -1210,7 +1149,6 @@
 .method public hashCode()I
     .locals 4
 
-    .line 1
     invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
@@ -1224,7 +1162,6 @@
 
     mul-int/lit8 v1, v1, 0x1f
 
-    .line 2
     invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v3
@@ -1260,7 +1197,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-static {p0, p1}, Lcom/google/common/collect/Lists;->indexOfImpl(Ljava/util/List;Ljava/lang/Object;)I
 
@@ -1280,7 +1216,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->listIterator()Lcom/google/common/collect/UnmodifiableListIterator;
 
     move-result-object v0
@@ -1291,7 +1226,6 @@
 .method public bridge synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->iterator()Lcom/google/common/collect/UnmodifiableIterator;
 
     move-result-object v0
@@ -1312,7 +1246,6 @@
 
     goto :goto_0
 
-    .line 1
     :cond_0
     invoke-static {p0, p1}, Lcom/google/common/collect/Lists;->lastIndexOfImpl(Ljava/util/List;Ljava/lang/Object;)I
 
@@ -1334,7 +1267,6 @@
 
     const/4 v0, 0x0
 
-    .line 3
     invoke-virtual {p0, v0}, Lcom/google/common/collect/ImmutableList;->listIterator(I)Lcom/google/common/collect/UnmodifiableListIterator;
 
     move-result-object v0
@@ -1352,7 +1284,6 @@
         }
     .end annotation
 
-    .line 4
     new-instance v0, Lcom/google/common/collect/ImmutableList$1;
 
     invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
@@ -1367,7 +1298,6 @@
 .method public bridge synthetic listIterator()Ljava/util/ListIterator;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableList;->listIterator()Lcom/google/common/collect/UnmodifiableListIterator;
 
     move-result-object v0
@@ -1378,7 +1308,6 @@
 .method public bridge synthetic listIterator(I)Ljava/util/ListIterator;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/google/common/collect/ImmutableList;->listIterator(I)Lcom/google/common/collect/UnmodifiableListIterator;
 
     move-result-object p1
@@ -1397,7 +1326,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -1415,7 +1343,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ImmutableList$ReverseImmutableList;
 
     invoke-direct {v0, p0}, Lcom/google/common/collect/ImmutableList$ReverseImmutableList;-><init>(Lcom/google/common/collect/ImmutableList;)V
@@ -1434,7 +1361,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
@@ -1452,7 +1378,6 @@
         }
     .end annotation
 
-    .line 2
     invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
     move-result v0
@@ -1467,14 +1392,12 @@
 
     if-eq v0, v1, :cond_0
 
-    .line 3
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ImmutableList;->subListUnchecked(II)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p1
 
     return-object p1
 
-    .line 4
     :cond_0
     invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -1486,7 +1409,6 @@
 
     return-object p1
 
-    .line 5
     :cond_1
     invoke-static {}, Lcom/google/common/collect/ImmutableList;->of()Lcom/google/common/collect/ImmutableList;
 
@@ -1498,7 +1420,6 @@
 .method public bridge synthetic subList(II)Ljava/util/List;
     .locals 0
 
-    .line 1
     invoke-virtual {p0, p1, p2}, Lcom/google/common/collect/ImmutableList;->subList(II)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p1
@@ -1516,7 +1437,6 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ImmutableList$SubList;
 
     sub-int/2addr p2, p1
@@ -1529,7 +1449,6 @@
 .method writeReplace()Ljava/lang/Object;
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/ImmutableList$SerializedForm;
 
     invoke-virtual {p0}, Lcom/google/common/collect/ImmutableCollection;->toArray()[Ljava/lang/Object;

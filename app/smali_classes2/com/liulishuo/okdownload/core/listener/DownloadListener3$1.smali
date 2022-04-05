@@ -1,6 +1,5 @@
 .class synthetic Lcom/liulishuo/okdownload/core/listener/DownloadListener3$1;
 .super Ljava/lang/Object;
-.source "DownloadListener3.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/liulishuo/okdownload/core/cause/EndCause;->values()[Lcom/liulishuo/okdownload/core/cause/EndCause;
 
     move-result-object v0

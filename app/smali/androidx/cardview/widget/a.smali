@@ -1,6 +1,5 @@
 .class Landroidx/cardview/widget/a;
 .super Landroidx/cardview/widget/c;
-.source "CardViewApi17Impl.java"
 
 
 # annotations
@@ -13,7 +12,6 @@
 .method constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroidx/cardview/widget/c;-><init>()V
 
     return-void
@@ -24,7 +22,6 @@
 .method public a()V
     .locals 1
 
-    .line 1
     new-instance v0, Landroidx/cardview/widget/a$a;
 
     invoke-direct {v0, p0}, Landroidx/cardview/widget/a$a;-><init>(Landroidx/cardview/widget/a;)V

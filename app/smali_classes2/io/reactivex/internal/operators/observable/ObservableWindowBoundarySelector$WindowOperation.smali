@@ -1,6 +1,5 @@
 .class final Lio/reactivex/internal/operators/observable/ObservableWindowBoundarySelector$WindowOperation;
 .super Ljava/lang/Object;
-.source "ObservableWindowBoundarySelector.java"
 
 
 # annotations
@@ -55,13 +54,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lio/reactivex/internal/operators/observable/ObservableWindowBoundarySelector$WindowOperation;->w:Lio/reactivex/subjects/UnicastSubject;
 
-    .line 3
     iput-object p2, p0, Lio/reactivex/internal/operators/observable/ObservableWindowBoundarySelector$WindowOperation;->open:Ljava/lang/Object;
 
     return-void

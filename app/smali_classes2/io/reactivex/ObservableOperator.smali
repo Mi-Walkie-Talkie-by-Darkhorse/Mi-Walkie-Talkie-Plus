@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/ObservableOperator;
 .super Ljava/lang/Object;
-.source "ObservableOperator.java"
 
 
 # annotations

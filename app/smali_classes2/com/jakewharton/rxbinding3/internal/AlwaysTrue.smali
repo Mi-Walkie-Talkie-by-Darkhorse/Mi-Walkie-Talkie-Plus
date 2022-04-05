@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/internal/AlwaysTrue;
 .super Ljava/lang/Object;
-.source "true.kt"
 
 # interfaces
 .implements Lkotlin/jvm/a/a;
@@ -66,7 +65,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/jakewharton/rxbinding3/internal/AlwaysTrue;
 
     invoke-direct {v0}, Lcom/jakewharton/rxbinding3/internal/AlwaysTrue;-><init>()V
@@ -79,7 +77,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -94,7 +91,6 @@
 
     const/4 v0, 0x1
 
-    .line 3
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object v0
@@ -117,7 +113,6 @@
 
     const/4 p1, 0x1
 
-    .line 4
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1
@@ -128,7 +123,6 @@
 .method public bridge synthetic invoke()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lcom/jakewharton/rxbinding3/internal/AlwaysTrue;->invoke()Ljava/lang/Boolean;
 
     move-result-object v0
@@ -139,7 +133,6 @@
 .method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 0
 
-    .line 2
     invoke-virtual {p0, p1}, Lcom/jakewharton/rxbinding3/internal/AlwaysTrue;->invoke(Ljava/lang/Object;)Ljava/lang/Boolean;
 
     move-result-object p1

@@ -1,6 +1,5 @@
 .class final Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;
 .super Landroid/view/ViewGroup;
-.source "QMUIBasicTabSegment.java"
 
 
 # annotations
@@ -22,15 +21,12 @@
 .method public constructor <init>(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
-    .line 2
     invoke-direct {p0, p2}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;)V
 
     const/4 p1, 0x0
 
-    .line 3
     invoke-virtual {p0, p1}, Landroid/view/ViewGroup;->setClipChildren(Z)V
 
     return-void
@@ -41,10 +37,8 @@
 .method protected dispatchDraw(Landroid/graphics/Canvas;)V
     .locals 4
 
-    .line 1
     invoke-super {p0, p1}, Landroid/view/ViewGroup;->dispatchDraw(Landroid/graphics/Canvas;)V
 
-    .line 2
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->d(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;)Lcom/qmuiteam/qmui/widget/tab/d;
@@ -75,7 +69,6 @@
 
     if-le v0, v1, :cond_1
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
@@ -106,7 +99,6 @@
 .method protected onLayout(ZIIII)V
     .locals 10
 
-    .line 1
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->a(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;)Lcom/qmuiteam/qmui/widget/tab/a;
@@ -117,7 +109,6 @@
 
     move-result-object p1
 
-    .line 2
     invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p2
@@ -131,14 +122,12 @@
     :goto_0
     if-ge v0, p2, :cond_1
 
-    .line 3
     invoke-interface {p1, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Landroid/view/View;
 
-    .line 4
     invoke-virtual {v2}, Landroid/view/View;->getVisibility()I
 
     move-result v2
@@ -159,7 +148,6 @@
 
     goto/16 :goto_4
 
-    .line 5
     :cond_2
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingLeft()I
 
@@ -170,14 +158,12 @@
     :goto_1
     if-ge v1, p2, :cond_8
 
-    .line 6
     invoke-interface {p1, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v2
 
     check-cast v2, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;
 
-    .line 7
     invoke-virtual {v2}, Landroid/widget/FrameLayout;->getVisibility()I
 
     move-result v3
@@ -186,13 +172,11 @@
 
     goto :goto_3
 
-    .line 8
     :cond_3
     invoke-virtual {v2}, Landroid/widget/FrameLayout;->getMeasuredWidth()I
 
     move-result v3
 
-    .line 9
     iget-object v4, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     invoke-static {v4}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->a(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;)Lcom/qmuiteam/qmui/widget/tab/a;
@@ -205,12 +189,10 @@
 
     check-cast v4, Lcom/qmuiteam/qmui/widget/tab/QMUITab;
 
-    .line 10
     iget v5, v4, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->C:I
 
     add-int/2addr v0, v5
 
-    .line 11
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
     move-result v5
@@ -219,23 +201,18 @@
 
     sub-int v7, p5, p3
 
-    .line 12
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingBottom()I
 
     move-result v8
 
     sub-int/2addr v7, v8
 
-    .line 13
     invoke-virtual {v2, v0, v5, v6, v7}, Landroid/widget/FrameLayout;->layout(IIII)V
 
-    .line 14
     iget v5, v4, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->s:I
 
-    .line 15
     iget v7, v4, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->r:I
 
-    .line 16
     iget-object v8, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     invoke-static {v8}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->b(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;)I
@@ -266,14 +243,12 @@
 
     if-eqz v8, :cond_4
 
-    .line 17
     invoke-virtual {v2}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->getContentViewLeft()I
 
     move-result v3
 
     add-int/2addr v0, v3
 
-    .line 18
     invoke-virtual {v2}, Lcom/qmuiteam/qmui/widget/tab/QMUITabView;->getContentViewWidth()I
 
     move-result v3
@@ -283,14 +258,11 @@
 
     if-eq v7, v3, :cond_6
 
-    .line 19
     :cond_5
     iput v0, v4, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->s:I
 
-    .line 20
     iput v3, v4, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->r:I
 
-    .line 21
     :cond_6
     iget v0, v4, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->D:I
 
@@ -298,7 +270,6 @@
 
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
-    .line 22
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->b(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;)I
 
     move-result v0
@@ -326,7 +297,6 @@
 
     goto :goto_1
 
-    .line 23
     :cond_8
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
@@ -340,14 +310,12 @@
 
     if-nez p2, :cond_9
 
-    .line 24
     invoke-virtual {p1}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->a()Z
 
     move-result p1
 
     if-nez p1, :cond_9
 
-    .line 25
     iget-object p1, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     invoke-static {p1}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->a(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;)Lcom/qmuiteam/qmui/widget/tab/a;
@@ -374,17 +342,14 @@
 .method protected onMeasure(II)V
     .locals 12
 
-    .line 1
     invoke-static {p1}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result p1
 
-    .line 2
     invoke-static {p2}, Landroid/view/View$MeasureSpec;->getSize(I)I
 
     move-result p2
 
-    .line 3
     iget-object v0, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->a(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;)Lcom/qmuiteam/qmui/widget/tab/a;
@@ -395,7 +360,6 @@
 
     move-result-object v0
 
-    .line 4
     invoke-interface {v0}, Ljava/util/List;->size()I
 
     move-result v1
@@ -409,14 +373,12 @@
     :goto_0
     if-ge v3, v1, :cond_1
 
-    .line 5
     invoke-interface {v0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v5
 
     check-cast v5, Landroid/view/View;
 
-    .line 6
     invoke-virtual {v5}, Landroid/view/View;->getVisibility()I
 
     move-result v5
@@ -437,7 +399,6 @@
 
     goto/16 :goto_7
 
-    .line 7
     :cond_2
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getPaddingTop()I
 
@@ -451,7 +412,6 @@
 
     sub-int/2addr v3, v5
 
-    .line 8
     iget-object v5, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     invoke-static {v5}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->b(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;)I
@@ -464,7 +424,6 @@
 
     if-ne v5, v7, :cond_4
 
-    .line 9
     div-int v4, p1, v4
 
     const/4 v5, 0x0
@@ -472,14 +431,12 @@
     :goto_1
     if-ge v5, v1, :cond_9
 
-    .line 10
     invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v7
 
     check-cast v7, Landroid/view/View;
 
-    .line 11
     invoke-virtual {v7}, Landroid/view/View;->getVisibility()I
 
     move-result v8
@@ -488,21 +445,17 @@
 
     goto :goto_2
 
-    .line 12
     :cond_3
     invoke-static {v4, v6}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v8
 
-    .line 13
     invoke-static {v3, v6}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v9
 
-    .line 14
     invoke-virtual {v7, v8, v9}, Landroid/view/View;->measure(II)V
 
-    .line 15
     iget-object v7, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     invoke-static {v7}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->a(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;)Lcom/qmuiteam/qmui/widget/tab/a;
@@ -515,10 +468,8 @@
 
     check-cast v7, Lcom/qmuiteam/qmui/widget/tab/QMUITab;
 
-    .line 16
     iput v2, v7, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->C:I
 
-    .line 17
     iput v2, v7, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->D:I
 
     :goto_2
@@ -538,14 +489,12 @@
     :goto_3
     if-ge v5, v1, :cond_6
 
-    .line 18
     invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v9
 
     check-cast v9, Landroid/view/View;
 
-    .line 19
     invoke-virtual {v9}, Landroid/view/View;->getVisibility()I
 
     move-result v10
@@ -557,20 +506,16 @@
     :cond_5
     const/high16 v10, -0x80000000
 
-    .line 20
     invoke-static {p1, v10}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v10
 
-    .line 21
     invoke-static {v3, v6}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result v11
 
-    .line 22
     invoke-virtual {v9, v10, v11}, Landroid/view/View;->measure(II)V
 
-    .line 23
     invoke-virtual {v9}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v9
@@ -585,7 +530,6 @@
 
     add-int/2addr v7, v9
 
-    .line 24
     iget-object v9, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
     invoke-static {v9}, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;->a(Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;)Lcom/qmuiteam/qmui/widget/tab/a;
@@ -598,7 +542,6 @@
 
     check-cast v9, Lcom/qmuiteam/qmui/widget/tab/QMUITab;
 
-    .line 25
     iget v10, v9, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->B:F
 
     iget v11, v9, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->A:F
@@ -607,10 +550,8 @@
 
     add-float/2addr v8, v10
 
-    .line 26
     iput v2, v9, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->C:I
 
-    .line 27
     iput v2, v9, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->D:I
 
     :goto_4
@@ -618,7 +559,6 @@
 
     goto :goto_3
 
-    .line 28
     :cond_6
     iget-object v3, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
@@ -639,14 +579,12 @@
     :goto_5
     if-ge v2, v1, :cond_9
 
-    .line 29
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
     move-result-object v4
 
     check-cast v4, Landroid/view/View;
 
-    .line 30
     invoke-virtual {v4}, Landroid/view/View;->getVisibility()I
 
     move-result v4
@@ -655,7 +593,6 @@
 
     goto :goto_6
 
-    .line 31
     :cond_7
     iget-object v4, p0, Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment$c;->a:Lcom/qmuiteam/qmui/widget/tab/QMUIBasicTabSegment;
 
@@ -671,7 +608,6 @@
 
     int-to-float v5, v3
 
-    .line 32
     iget v6, v4, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->B:F
 
     mul-float v6, v6, v5
@@ -682,7 +618,6 @@
 
     iput v6, v4, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->C:I
 
-    .line 33
     iget v6, v4, Lcom/qmuiteam/qmui/widget/tab/QMUITab;->A:F
 
     mul-float v5, v5, v6
@@ -701,13 +636,11 @@
     :cond_8
     move p1, v7
 
-    .line 34
     :cond_9
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->setMeasuredDimension(II)V
 
     return-void
 
-    .line 35
     :cond_a
     :goto_7
     invoke-virtual {p0, p1, p2}, Landroid/view/ViewGroup;->setMeasuredDimension(II)V

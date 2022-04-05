@@ -1,6 +1,5 @@
 .class public final Landroid/support/v4/media/MediaDescriptionCompat$Builder;
 .super Ljava/lang/Object;
-.source "MediaDescriptionCompat.java"
 
 
 # annotations
@@ -36,7 +35,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -47,7 +45,6 @@
 .method public build()Landroid/support/v4/media/MediaDescriptionCompat;
     .locals 10
 
-    .line 1
     new-instance v9, Landroid/support/v4/media/MediaDescriptionCompat;
 
     iget-object v1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mMediaId:Ljava/lang/String;
@@ -80,7 +77,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mDescription:Ljava/lang/CharSequence;
 
     return-object p0
@@ -93,7 +89,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mExtras:Landroid/os/Bundle;
 
     return-object p0
@@ -106,7 +101,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mIcon:Landroid/graphics/Bitmap;
 
     return-object p0
@@ -119,7 +113,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mIconUri:Landroid/net/Uri;
 
     return-object p0
@@ -132,7 +125,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mMediaId:Ljava/lang/String;
 
     return-object p0
@@ -145,7 +137,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mMediaUri:Landroid/net/Uri;
 
     return-object p0
@@ -158,7 +149,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mSubtitle:Ljava/lang/CharSequence;
 
     return-object p0
@@ -171,7 +161,6 @@
         .end annotation
     .end param
 
-    .line 1
     iput-object p1, p0, Landroid/support/v4/media/MediaDescriptionCompat$Builder;->mTitle:Ljava/lang/CharSequence;
 
     return-object p0

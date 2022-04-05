@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/ifengyu/intercom/lite/e/g/a;
 .super Ljava/lang/Object;
-.source "DeviceBizDataCallback.java"
 
 # interfaces
 .implements Lcom/ifengyu/blelib/c/b;

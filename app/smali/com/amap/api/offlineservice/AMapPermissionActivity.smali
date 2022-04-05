@@ -1,6 +1,5 @@
 .class public Lcom/amap/api/offlineservice/AMapPermissionActivity;
 .super Landroid/app/Activity;
-.source "AMapPermissionActivity.java"
 
 
 # instance fields
@@ -13,7 +12,6 @@
 .method public constructor <init>()V
     .locals 3
 
-    .line 1
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
     const-string v0, "android.permission.WRITE_EXTERNAL_STORAGE"
@@ -22,7 +20,6 @@
 
     const-string v2, "android.permission.READ_PHONE_STATE"
 
-    .line 2
     filled-new-array {v0, v1, v2}, [Ljava/lang/String;
 
     move-result-object v0
@@ -31,7 +28,6 @@
 
     const/4 v0, 0x1
 
-    .line 3
     iput-boolean v0, p0, Lcom/amap/api/offlineservice/AMapPermissionActivity;->a:Z
 
     return-void
@@ -40,7 +36,6 @@
 .method private a(Ljava/lang/String;)I
     .locals 6
 
-    .line 9
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -66,14 +61,12 @@
 
     aput-object p1, v1, v5
 
-    .line 10
     invoke-virtual {v0, p0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ljava/lang/Integer;
 
-    .line 11
     invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
 
     move-result p1
@@ -105,13 +98,11 @@
         }
     .end annotation
 
-    .line 2
     :try_start_0
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    .line 3
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v2, 0x17
@@ -126,7 +117,6 @@
 
     if-lt v1, v2, :cond_2
 
-    .line 4
     array-length v1, p1
 
     const/4 v2, 0x0
@@ -136,21 +126,18 @@
 
     aget-object v3, p1, v2
 
-    .line 5
     invoke-direct {p0, v3}, Lcom/amap/api/offlineservice/AMapPermissionActivity;->a(Ljava/lang/String;)I
 
     move-result v4
 
     if-nez v4, :cond_0
 
-    .line 6
     invoke-direct {p0, v3}, Lcom/amap/api/offlineservice/AMapPermissionActivity;->b(Ljava/lang/String;)Z
 
     move-result v4
 
     if-eqz v4, :cond_1
 
-    .line 7
     :cond_0
     invoke-interface {v0, v3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
     :try_end_0
@@ -167,7 +154,6 @@
     :catchall_0
     move-exception p1
 
-    .line 8
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     const/4 p1, 0x0
@@ -178,7 +164,6 @@
 .method static synthetic a(Lcom/amap/api/offlineservice/AMapPermissionActivity;)V
     .locals 3
 
-    .line 1
     :try_start_0
     new-instance v0, Landroid/content/Intent;
 
@@ -225,7 +210,6 @@
 .method private static a([I)Z
     .locals 4
 
-    .line 12
     :try_start_0
     array-length v0, p0
 
@@ -252,7 +236,6 @@
     :catchall_0
     move-exception p0
 
-    .line 13
     invoke-virtual {p0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_1
@@ -266,7 +249,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -290,14 +272,12 @@
 
     aput-object p1, v2, v0
 
-    .line 2
     invoke-virtual {v1, p0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
     check-cast p1, Ljava/lang/Boolean;
 
-    .line 3
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     move-result p1
@@ -318,7 +298,6 @@
         value = 0x17
     .end annotation
 
-    .line 1
     :try_start_0
     sget p2, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -328,7 +307,6 @@
 
     if-nez p1, :cond_0
 
-    .line 2
     invoke-static {p3}, Lcom/amap/api/offlineservice/AMapPermissionActivity;->a([I)Z
 
     move-result p1
@@ -339,7 +317,6 @@
 
     const/4 p1, 0x0
 
-    .line 3
     :try_start_1
     new-instance p2, Landroid/app/AlertDialog$Builder;
 
@@ -383,7 +360,6 @@
     :try_start_2
     invoke-virtual {p2}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 4
     :goto_0
     iput-boolean p1, p0, Lcom/amap/api/offlineservice/AMapPermissionActivity;->a:Z
     :try_end_2
@@ -395,7 +371,6 @@
     :catchall_1
     move-exception p1
 
-    .line 5
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -404,23 +379,19 @@
 .method protected onResume()V
     .locals 8
 
-    .line 1
     :try_start_0
     invoke-super {p0}, Landroid/app/Activity;->onResume()V
 
-    .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x17
 
     if-lt v0, v1, :cond_1
 
-    .line 3
     iget-boolean v0, p0, Lcom/amap/api/offlineservice/AMapPermissionActivity;->a:Z
 
     if-eqz v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/offlineservice/AMapPermissionActivity;->needPermissions:[Ljava/lang/String;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_2
@@ -523,7 +494,6 @@
     :catchall_2
     move-exception v0
 
-    .line 5
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

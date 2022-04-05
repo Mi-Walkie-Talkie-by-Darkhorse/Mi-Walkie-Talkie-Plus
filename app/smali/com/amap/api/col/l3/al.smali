@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/al;
 .super Ljava/lang/Object;
-.source "OffsetUtil.java"
 
 
 # static fields
@@ -23,7 +22,6 @@
 
     mul-double p0, p0, v0
 
-    .line 21
     sget-wide v0, Lcom/amap/api/col/l3/al;->a:D
 
     const-wide v2, 0x4066800000000000L    # 180.0
@@ -50,7 +48,6 @@
 
     div-double v2, p2, v0
 
-    .line 16
     invoke-static {v2, v3}, Ljava/lang/Math;->cos(D)D
 
     move-result-wide v2
@@ -90,30 +87,25 @@
     :cond_0
     const-string p0, "Jni_wgs2gcj"
 
-    .line 1
     invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
-    .line 2
     sget-boolean v0, Lcom/amap/api/col/l3/al;->b:Z
 
     if-nez v0, :cond_1
 
-    .line 3
     :try_start_0
     invoke-static {p0}, Ljava/lang/System;->loadLibrary(Ljava/lang/String;)V
 
     const/4 p0, 0x1
 
-    .line 4
     sput-boolean p0, Lcom/amap/api/col/l3/al;->b:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     :catchall_0
     :cond_1
     iget-wide v0, p1, Lcom/amap/api/maps/model/LatLng;->longitude:D
@@ -130,7 +122,6 @@
 
     move-result-object p0
 
-    .line 6
     new-instance p1, Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v1, p0, Lcom/autonavi/amap/mapcore/DPoint;->y:D
@@ -143,7 +134,6 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/amap/api/maps/model/LatLng;-><init>(DDZ)V
 
-    .line 7
     invoke-virtual {p0}, Lcom/autonavi/amap/mapcore/DPoint;->recycle()V
 
     return-object p1
@@ -156,7 +146,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 17
     :try_start_0
     iget-wide v2, v1, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
@@ -305,7 +294,6 @@
 
     goto/16 :goto_0
 
-    .line 18
     :cond_0
     new-instance v2, Lcom/amap/api/maps/model/LatLng;
 
@@ -319,7 +307,6 @@
 
     invoke-direct/range {v11 .. v16}, Lcom/amap/api/maps/model/LatLng;-><init>(DDZ)V
 
-    .line 19
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/DPoint;->recycle()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -329,7 +316,6 @@
     :catchall_0
     move-exception v0
 
-    .line 20
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     :cond_1
@@ -339,7 +325,6 @@
 .method private static a(Lcom/autonavi/amap/mapcore/DPoint;Z)Lcom/autonavi/amap/mapcore/DPoint;
     .locals 6
 
-    .line 8
     :try_start_0
     iget-wide v0, p0, Lcom/autonavi/amap/mapcore/DPoint;->y:D
 
@@ -363,7 +348,6 @@
 
     new-array p1, v0, [D
 
-    .line 9
     iget-wide v4, p0, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
     aput-wide v4, p1, v3
@@ -374,7 +358,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 10
     :try_start_1
     invoke-static {p1, v1}, Lcom/autonavi/amap/mapcore/CoordUtil;->convertToGcj([D[D)I
 
@@ -382,7 +365,6 @@
 
     if-eqz p1, :cond_1
 
-    .line 11
     iget-wide v0, p0, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
     iget-wide v4, p0, Lcom/autonavi/amap/mapcore/DPoint;->y:D
@@ -398,11 +380,9 @@
     :catchall_0
     move-exception p1
 
-    .line 12
     :try_start_2
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 13
     :cond_0
     iget-wide v0, p0, Lcom/autonavi/amap/mapcore/DPoint;->x:D
 
@@ -412,12 +392,10 @@
 
     move-result-object v1
 
-    .line 14
     :cond_1
     :goto_0
     invoke-virtual {p0}, Lcom/autonavi/amap/mapcore/DPoint;->recycle()V
 
-    .line 15
     aget-wide v3, v1, v3
 
     aget-wide v0, v1, v2
@@ -440,7 +418,6 @@
 
     mul-double p0, p0, v0
 
-    .line 6
     sget-wide v0, Lcom/amap/api/col/l3/al;->a:D
 
     const-wide v2, 0x4066800000000000L    # 180.0
@@ -467,7 +444,6 @@
 
     div-double v2, p2, v0
 
-    .line 5
     invoke-static {v2, v3}, Ljava/lang/Math;->sin(D)D
 
     move-result-wide v2
@@ -500,7 +476,6 @@
 
     move-object/from16 v1, p1
 
-    .line 1
     :try_start_0
     iget-wide v2, v1, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
@@ -618,7 +593,6 @@
 
     move-result-object v0
 
-    .line 2
     new-instance v8, Lcom/amap/api/maps/model/LatLng;
 
     iget-wide v3, v0, Lcom/autonavi/amap/mapcore/DPoint;->y:D
@@ -637,7 +611,6 @@
 
     move-result-object v2
 
-    .line 3
     invoke-virtual {v0}, Lcom/autonavi/amap/mapcore/DPoint;->recycle()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -647,7 +620,6 @@
     :catchall_0
     move-exception v0
 
-    .line 4
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-object v1
@@ -656,7 +628,6 @@
 .method private static c(D)D
     .locals 1
 
-    .line 1
     new-instance v0, Ljava/math/BigDecimal;
 
     invoke-direct {v0, p0, p1}, Ljava/math/BigDecimal;-><init>(D)V
@@ -669,7 +640,6 @@
 
     move-result-object p0
 
-    .line 2
     invoke-virtual {p0}, Ljava/math/BigDecimal;->doubleValue()D
 
     move-result-wide p0

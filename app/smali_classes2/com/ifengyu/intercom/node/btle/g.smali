@@ -1,6 +1,5 @@
 .class public final Lcom/ifengyu/intercom/node/btle/g;
 .super Ljava/lang/Object;
-.source "CustomNamedThreadFactory.java"
 
 # interfaces
 .implements Ljava/util/concurrent/ThreadFactory;
@@ -28,28 +27,22 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;I)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
     iput-object v0, p0, Lcom/ifengyu/intercom/node/btle/g;->c:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    .line 3
     iput-object p1, p0, Lcom/ifengyu/intercom/node/btle/g;->a:Ljava/lang/String;
 
-    .line 4
     iput-object p2, p0, Lcom/ifengyu/intercom/node/btle/g;->b:Ljava/lang/String;
 
-    .line 5
     iput p3, p0, Lcom/ifengyu/intercom/node/btle/g;->d:I
 
     const/4 p1, 0x0
 
-    .line 6
     invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
 
     return-void
@@ -58,7 +51,6 @@
 .method static synthetic a(Lcom/ifengyu/intercom/node/btle/g;)Ljava/lang/String;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lcom/ifengyu/intercom/node/btle/g;->a:Ljava/lang/String;
 
     return-object p0
@@ -69,7 +61,6 @@
 .method public newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
     .locals 4
 
-    .line 1
     new-instance v0, Lcom/ifengyu/intercom/node/btle/g$b;
 
     new-instance v1, Ljava/lang/StringBuilder;
@@ -100,14 +91,12 @@
 
     invoke-direct {v0, p0, p1, v1, v2}, Lcom/ifengyu/intercom/node/btle/g$b;-><init>(Lcom/ifengyu/intercom/node/btle/g;Ljava/lang/Runnable;Ljava/lang/String;I)V
 
-    .line 2
     new-instance p1, Lcom/ifengyu/intercom/node/btle/g$a;
 
     invoke-direct {p1, p0}, Lcom/ifengyu/intercom/node/btle/g$a;-><init>(Lcom/ifengyu/intercom/node/btle/g;)V
 
     invoke-virtual {v0, p1}, Ljava/lang/Thread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/node/btle/g;->a:Ljava/lang/String;
 
     new-instance v1, Ljava/lang/StringBuilder;

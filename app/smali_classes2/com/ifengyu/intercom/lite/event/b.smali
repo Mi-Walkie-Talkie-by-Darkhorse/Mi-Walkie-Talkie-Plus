@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/event/b;
 .super Ljava/lang/Object;
-.source "ConnectStateEvent.java"
 
 
 # static fields
@@ -23,10 +22,8 @@
 .method public constructor <init>(I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput p1, p0, Lcom/ifengyu/intercom/lite/event/b;->a:I
 
     return-void
@@ -37,7 +34,6 @@
 .method public a()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/ifengyu/intercom/lite/event/b;->a:I
 
     return v0

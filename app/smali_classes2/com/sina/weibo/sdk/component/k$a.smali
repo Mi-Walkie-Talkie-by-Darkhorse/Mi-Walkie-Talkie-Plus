@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/sina/weibo/sdk/component/k$a;
 .super Ljava/lang/Object;
-.source "WidgetRequestParam.java"
 
 
 # annotations

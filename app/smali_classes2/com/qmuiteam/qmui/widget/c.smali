@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/qmuiteam/qmui/widget/c;
 .super Ljava/lang/Object;
-.source "IWindowInsetLayout.java"
 
 
 # virtual methods

@@ -1,6 +1,5 @@
 .class Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout$b;
 .super Ljava/lang/Object;
-.source "QMUIContinuousNestedScrollLayout.java"
 
 # interfaces
 .implements Lcom/qmuiteam/qmui/nestedScroll/b$a;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout$b;->a:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a(II)V
     .locals 9
 
-    .line 1
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout$b;->a:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout;
 
     invoke-static {v0}, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout;->a(Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout;)Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedTopAreaBehavior;
@@ -68,7 +65,6 @@
 
     move v5, v0
 
-    .line 2
     :goto_0
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout$b;->a:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout;
 
@@ -95,7 +91,6 @@
 
     move v7, v0
 
-    .line 3
     :goto_1
     iget-object v0, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout$b;->a:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout;
 
@@ -122,7 +117,6 @@
 
     move v8, v1
 
-    .line 4
     :goto_2
     iget-object v2, p0, Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout$b;->a:Lcom/qmuiteam/qmui/nestedScroll/QMUIContinuousNestedScrollLayout;
 

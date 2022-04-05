@@ -1,6 +1,5 @@
 .class public interface abstract Lbutterknife/Action;
 .super Ljava/lang/Object;
-.source "Action.java"
 
 
 # annotations

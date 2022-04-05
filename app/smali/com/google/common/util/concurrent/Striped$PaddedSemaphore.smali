@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/Striped$PaddedSemaphore;
 .super Ljava/util/concurrent/Semaphore;
-.source "Striped.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, v0}, Ljava/util/concurrent/Semaphore;-><init>(IZ)V
 
     return-void

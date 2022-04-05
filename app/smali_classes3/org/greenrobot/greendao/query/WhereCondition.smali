@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/greenrobot/greendao/query/WhereCondition;
 .super Ljava/lang/Object;
-.source "WhereCondition.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class public interface abstract Lio/reactivex/functions/Function7;
 .super Ljava/lang/Object;
-.source "Function7.java"
 
 
 # annotations

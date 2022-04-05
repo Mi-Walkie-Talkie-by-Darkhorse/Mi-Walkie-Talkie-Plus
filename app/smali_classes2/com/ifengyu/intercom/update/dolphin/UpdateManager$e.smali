@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/update/dolphin/UpdateManager$e;
 .super Lcom/ifengyu/intercom/network/d/d;
-.source "UpdateManager.java"
 
 
 # annotations
@@ -30,7 +29,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-direct {p0, p1, p2, p3, v0}, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$e;-><init>(Lcom/ifengyu/intercom/update/dolphin/UpdateManager;Landroid/app/Activity;Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;Z)V
 
     return-void
@@ -39,18 +37,14 @@
 .method public constructor <init>(Lcom/ifengyu/intercom/update/dolphin/UpdateManager;Landroid/app/Activity;Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;Z)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$e;->d:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
     invoke-direct {p0}, Lcom/ifengyu/intercom/network/d/d;-><init>()V
 
-    .line 3
     iput-object p2, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$e;->a:Landroid/app/Activity;
 
-    .line 4
     iput-object p3, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$e;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;
 
-    .line 5
     iput-boolean p4, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$e;->c:Z
 
     return-void
@@ -65,17 +59,14 @@
 
     const-string v1, "onFailure"
 
-    .line 1
     invoke-static {v0, v1}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$e;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;
 
     sget-object v1, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;->b:Lcom/ifengyu/intercom/update/dolphin/UpdateManager$CHECK_CONDITION;
 
     if-ne v0, v1, :cond_0
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$e;->d:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/update/dolphin/UpdateManager;->g(Lcom/ifengyu/intercom/update/dolphin/UpdateManager;)Lcom/ifengyu/intercom/network/b;
@@ -84,7 +75,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 4
     iget-object v0, p0, Lcom/ifengyu/intercom/update/dolphin/UpdateManager$e;->d:Lcom/ifengyu/intercom/update/dolphin/UpdateManager;
 
     invoke-static {v0}, Lcom/ifengyu/intercom/update/dolphin/UpdateManager;->g(Lcom/ifengyu/intercom/update/dolphin/UpdateManager;)Lcom/ifengyu/intercom/network/b;

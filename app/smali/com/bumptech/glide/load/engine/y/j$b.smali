@@ -1,6 +1,5 @@
 .class final Lcom/bumptech/glide/load/engine/y/j$b;
 .super Ljava/lang/Object;
-.source "SafeKeyGenerator.java"
 
 # interfaces
 .implements Lcom/bumptech/glide/util/k/a$f;
@@ -27,17 +26,14 @@
 .method constructor <init>(Ljava/security/MessageDigest;)V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {}, Lcom/bumptech/glide/util/k/c;->b()Lcom/bumptech/glide/util/k/c;
 
     move-result-object v0
 
     iput-object v0, p0, Lcom/bumptech/glide/load/engine/y/j$b;->b:Lcom/bumptech/glide/util/k/c;
 
-    .line 3
     iput-object p1, p0, Lcom/bumptech/glide/load/engine/y/j$b;->a:Ljava/security/MessageDigest;
 
     return-void
@@ -50,7 +46,6 @@
     .annotation build Landroidx/annotation/NonNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/bumptech/glide/load/engine/y/j$b;->b:Lcom/bumptech/glide/util/k/c;
 
     return-object v0

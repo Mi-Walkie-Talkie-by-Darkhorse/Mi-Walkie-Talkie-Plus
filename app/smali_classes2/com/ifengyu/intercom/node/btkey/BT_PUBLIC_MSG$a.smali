@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG$a;
 .super Ljava/lang/Object;
-.source "BT_PUBLIC_MSG.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method static synthetic a()I
     .locals 1
 
-    .line 1
     sget v0, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG$a;->a:I
 
     return v0
@@ -37,7 +35,6 @@
 .method static synthetic a(I)I
     .locals 0
 
-    .line 2
     sput p0, Lcom/ifengyu/intercom/node/btkey/BT_PUBLIC_MSG$a;->a:I
 
     return p0

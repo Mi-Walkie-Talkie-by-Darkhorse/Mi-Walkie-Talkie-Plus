@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/s$a;
 .super Lcom/ifengyu/intercom/g/d/a;
-.source "MapMarkerClickDialog.java"
 
 
 # annotations
@@ -26,7 +25,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/s;Landroid/text/SpannableStringBuilder;Landroid/text/style/AbsoluteSizeSpan;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s$a;->d:Lcom/ifengyu/intercom/ui/widget/dialog/s;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s$a;->b:Landroid/text/SpannableStringBuilder;
@@ -45,7 +43,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-static {}, Lcom/ifengyu/intercom/ui/widget/dialog/s;->b()Ljava/lang/String;
 
     move-result-object p2
@@ -56,12 +53,10 @@
 
     invoke-static {p2, v0}, Lcom/ifengyu/intercom/i/z;->a(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s$a;->b:Landroid/text/SpannableStringBuilder;
 
     invoke-virtual {p2}, Landroid/text/SpannableStringBuilder;->clear()V
 
-    .line 5
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s$a;->b:Landroid/text/SpannableStringBuilder;
 
     invoke-virtual {p1}, Ljava/lang/Double;->intValue()I
@@ -74,14 +69,12 @@
 
     invoke-virtual {p2, p1}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 6
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s$a;->b:Landroid/text/SpannableStringBuilder;
 
     const-string p2, " m"
 
     invoke-virtual {p1, p2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
-    .line 7
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s$a;->b:Landroid/text/SpannableStringBuilder;
 
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s$a;->c:Landroid/text/style/AbsoluteSizeSpan;
@@ -102,7 +95,6 @@
 
     invoke-virtual {p1, p2, v0, v1, v2}, Landroid/text/SpannableStringBuilder;->setSpan(Ljava/lang/Object;III)V
 
-    .line 8
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/s$a;->d:Lcom/ifengyu/intercom/ui/widget/dialog/s;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/s;->a(Lcom/ifengyu/intercom/ui/widget/dialog/s;)Landroid/widget/TextView;
@@ -120,7 +112,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Double;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/widget/dialog/s$a;->a(Ljava/lang/Double;I)V
@@ -131,7 +122,6 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 1
 
-    .line 2
     invoke-static {}, Lcom/ifengyu/intercom/ui/widget/dialog/s;->b()Ljava/lang/String;
 
     move-result-object p1

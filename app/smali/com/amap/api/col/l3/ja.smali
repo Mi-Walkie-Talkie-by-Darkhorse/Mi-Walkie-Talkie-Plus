@@ -1,6 +1,5 @@
 .class public abstract Lcom/amap/api/col/l3/ja;
 .super Ljava/lang/Object;
-.source "UpdateStrategy.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -20,10 +18,8 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/ja;)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 3
     iput-object p1, p0, Lcom/amap/api/col/l3/ja;->a:Lcom/amap/api/col/l3/ja;
 
     return-void
@@ -34,12 +30,10 @@
 .method public a(I)V
     .locals 1
 
-    .line 3
     iget-object v0, p0, Lcom/amap/api/col/l3/ja;->a:Lcom/amap/api/col/l3/ja;
 
     if-eqz v0, :cond_0
 
-    .line 4
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/ja;->a(I)V
 
     :cond_0
@@ -49,12 +43,10 @@
 .method public a(Z)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ja;->a:Lcom/amap/api/col/l3/ja;
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0, p1}, Lcom/amap/api/col/l3/ja;->a(Z)V
 
     :cond_0
@@ -67,14 +59,12 @@
 .method public b()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ja;->a:Lcom/amap/api/col/l3/ja;
 
     const v1, 0x7fffffff
 
     if-eqz v0, :cond_0
 
-    .line 2
     invoke-virtual {v0}, Lcom/amap/api/col/l3/ja;->b()I
 
     move-result v0
@@ -84,7 +74,6 @@
     :cond_0
     const v0, 0x7fffffff
 
-    .line 3
     :goto_0
     invoke-static {v1, v0}, Ljava/lang/Math;->min(II)I
 
@@ -96,7 +85,6 @@
 .method public final c()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ja;->a:Lcom/amap/api/col/l3/ja;
 
     if-eqz v0, :cond_0
@@ -117,7 +105,6 @@
 
     return v0
 
-    .line 2
     :cond_1
     invoke-virtual {p0}, Lcom/amap/api/col/l3/ja;->a()Z
 

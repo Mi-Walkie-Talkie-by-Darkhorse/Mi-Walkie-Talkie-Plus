@@ -1,6 +1,5 @@
 .class public final Lcom/jakewharton/rxbinding3/widget/SeekBarProgressChangeEvent;
 .super Lcom/jakewharton/rxbinding3/widget/SeekBarChangeEvent;
-.source "SeekBarChangeEvent.kt"
 
 
 # annotations
@@ -75,7 +74,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/jakewharton/rxbinding3/widget/SeekBarChangeEvent;-><init>(Lkotlin/jvm/b/a;)V
 
     iput-object p1, p0, Lcom/jakewharton/rxbinding3/widget/SeekBarProgressChangeEvent;->view:Landroid/widget/SeekBar;
@@ -250,7 +248,6 @@
 .method public final getFromUser()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/jakewharton/rxbinding3/widget/SeekBarProgressChangeEvent;->fromUser:Z
 
     return v0
@@ -259,7 +256,6 @@
 .method public final getProgress()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/jakewharton/rxbinding3/widget/SeekBarProgressChangeEvent;->progress:I
 
     return v0
@@ -270,7 +266,6 @@
     .annotation build Lorg/jetbrains/annotations/NotNull;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/jakewharton/rxbinding3/widget/SeekBarProgressChangeEvent;->view:Landroid/widget/SeekBar;
 
     return-object v0

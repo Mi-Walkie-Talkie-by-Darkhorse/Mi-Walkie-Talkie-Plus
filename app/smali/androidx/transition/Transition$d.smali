@@ -1,6 +1,5 @@
 .class Landroidx/transition/Transition$d;
 .super Ljava/lang/Object;
-.source "Transition.java"
 
 
 # annotations
@@ -30,22 +29,16 @@
 .method constructor <init>(Landroid/view/View;Ljava/lang/String;Landroidx/transition/Transition;Landroidx/transition/s0;Landroidx/transition/x;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/transition/Transition$d;->a:Landroid/view/View;
 
-    .line 3
     iput-object p2, p0, Landroidx/transition/Transition$d;->b:Ljava/lang/String;
 
-    .line 4
     iput-object p5, p0, Landroidx/transition/Transition$d;->c:Landroidx/transition/x;
 
-    .line 5
     iput-object p4, p0, Landroidx/transition/Transition$d;->d:Landroidx/transition/s0;
 
-    .line 6
     iput-object p3, p0, Landroidx/transition/Transition$d;->e:Landroidx/transition/Transition;
 
     return-void

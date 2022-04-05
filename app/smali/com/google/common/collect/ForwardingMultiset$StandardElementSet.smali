@@ -1,6 +1,5 @@
 .class public Lcom/google/common/collect/ForwardingMultiset$StandardElementSet;
 .super Lcom/google/common/collect/Multisets$ElementSet;
-.source "ForwardingMultiset.java"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method public constructor <init>(Lcom/google/common/collect/ForwardingMultiset;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/ForwardingMultiset$StandardElementSet;->this$0:Lcom/google/common/collect/ForwardingMultiset;
 
     invoke-direct {p0}, Lcom/google/common/collect/Multisets$ElementSet;-><init>()V
@@ -52,7 +50,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/ForwardingMultiset$StandardElementSet;->this$0:Lcom/google/common/collect/ForwardingMultiset;
 
     return-object v0

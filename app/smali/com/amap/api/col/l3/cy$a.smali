@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/cy$a;
 .super Ljava/lang/Object;
-.source "MyLocationOverlay.java"
 
 # interfaces
 .implements Landroid/animation/TypeEvaluator;
@@ -25,7 +24,6 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/cy;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/cy$a;->a:Lcom/amap/api/col/l3/cy;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,13 +36,10 @@
 .method public final evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
 
-    .line 1
     check-cast p2, Lcom/amap/api/maps/model/LatLng;
 
-    .line 2
     check-cast p3, Lcom/amap/api/maps/model/LatLng;
 
-    .line 3
     iget-wide v0, p2, Lcom/amap/api/maps/model/LatLng;->latitude:D
 
     float-to-double v2, p1
@@ -57,7 +52,6 @@
 
     add-double/2addr v0, v4
 
-    .line 4
     iget-wide p1, p2, Lcom/amap/api/maps/model/LatLng;->longitude:D
 
     iget-wide v4, p3, Lcom/amap/api/maps/model/LatLng;->longitude:D
@@ -68,7 +62,6 @@
 
     add-double/2addr p1, v2
 
-    .line 5
     new-instance p3, Lcom/amap/api/maps/model/LatLng;
 
     invoke-direct {p3, v0, v1, p1, p2}, Lcom/amap/api/maps/model/LatLng;-><init>(DD)V

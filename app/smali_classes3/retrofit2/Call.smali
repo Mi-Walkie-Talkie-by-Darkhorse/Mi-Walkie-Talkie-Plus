@@ -1,6 +1,5 @@
 .class public interface abstract Lretrofit2/Call;
 .super Ljava/lang/Object;
-.source "Call.java"
 
 # interfaces
 .implements Ljava/lang/Cloneable;

@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/tilesource/CloudmadeTileSource;
 .super Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;
-.source "CloudmadeTileSource.java"
 
 # interfaces
 .implements Lorg/osmdroid/tileprovider/tilesource/IStyledTileSource;
@@ -25,12 +24,10 @@
 .method public constructor <init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     invoke-direct/range {p0 .. p6}, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;-><init>(Ljava/lang/String;IIILjava/lang/String;[Ljava/lang/String;)V
 
     const/4 p1, 0x1
 
-    .line 2
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
@@ -45,7 +42,6 @@
 .method public getStyle()Ljava/lang/Integer;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/CloudmadeTileSource;->mStyle:Ljava/lang/Integer;
 
     return-object v0
@@ -54,7 +50,6 @@
 .method public bridge synthetic getStyle()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/CloudmadeTileSource;->getStyle()Ljava/lang/Integer;
 
     move-result-object v0
@@ -65,12 +60,10 @@
 .method public getTileURLString(Lorg/osmdroid/tileprovider/MapTile;)Ljava/lang/String;
     .locals 5
 
-    .line 1
     invoke-static {}, Lorg/osmdroid/tileprovider/util/CloudmadeUtil;->getCloudmadeKey()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v1
@@ -81,16 +74,13 @@
 
     const-string v2, "CloudMade key is not set. You should enter it in the manifest and call CloudmadeUtil.retrieveCloudmadeKey()"
 
-    .line 3
     invoke-static {v1, v2}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 4
     :cond_0
     invoke-static {}, Lorg/osmdroid/tileprovider/util/CloudmadeUtil;->getCloudmadeToken()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 5
     invoke-virtual {p0}, Lorg/osmdroid/tileprovider/tilesource/OnlineTileSourceBase;->getBaseUrl()Ljava/lang/String;
 
     move-result-object v2
@@ -135,7 +125,6 @@
 
     const/4 v0, 0x4
 
-    .line 6
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getX()I
 
     move-result v4
@@ -168,7 +157,6 @@
 
     aput-object v1, v3, p1
 
-    .line 7
     invoke-static {v2, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p1
@@ -179,7 +167,6 @@
 .method public pathBase()Ljava/lang/String;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/CloudmadeTileSource;->mStyle:Ljava/lang/Integer;
 
     if-eqz v0, :cond_1
@@ -194,7 +181,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -214,7 +200,6 @@
 
     return-object v0
 
-    .line 3
     :cond_1
     :goto_0
     iget-object v0, p0, Lorg/osmdroid/tileprovider/tilesource/BitmapTileSourceBase;->mName:Ljava/lang/String;
@@ -225,7 +210,6 @@
 .method public setStyle(Ljava/lang/Integer;)V
     .locals 0
 
-    .line 2
     iput-object p1, p0, Lorg/osmdroid/tileprovider/tilesource/CloudmadeTileSource;->mStyle:Ljava/lang/Integer;
 
     return-void
@@ -234,7 +218,6 @@
 .method public bridge synthetic setStyle(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/lang/Integer;
 
     invoke-virtual {p0, p1}, Lorg/osmdroid/tileprovider/tilesource/CloudmadeTileSource;->setStyle(Ljava/lang/Integer;)V
@@ -245,7 +228,6 @@
 .method public setStyle(Ljava/lang/String;)V
     .locals 2
 
-    .line 3
     :try_start_0
     invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
 
@@ -261,7 +243,6 @@
 
     goto :goto_0
 
-    .line 4
     :catch_0
     new-instance v0, Ljava/lang/StringBuilder;
 

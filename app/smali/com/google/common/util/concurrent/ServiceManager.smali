@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/util/concurrent/ServiceManager;
 .super Ljava/lang/Object;
-.source "ServiceManager.java"
 
 
 # annotations
@@ -60,7 +59,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     const-class v0, Lcom/google/common/util/concurrent/ServiceManager;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -73,7 +71,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/ServiceManager;->logger:Ljava/util/logging/Logger;
 
-    .line 2
     new-instance v0, Lcom/google/common/util/concurrent/ServiceManager$1;
 
     const-string v1, "healthy()"
@@ -82,7 +79,6 @@
 
     sput-object v0, Lcom/google/common/util/concurrent/ServiceManager;->HEALTHY_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
-    .line 3
     new-instance v0, Lcom/google/common/util/concurrent/ServiceManager$2;
 
     const-string v1, "stopped()"
@@ -106,22 +102,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     invoke-static {p1}, Lcom/google/common/collect/ImmutableList;->copyOf(Ljava/lang/Iterable;)Lcom/google/common/collect/ImmutableList;
 
     move-result-object p1
 
-    .line 3
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->isEmpty()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    .line 4
     sget-object p1, Lcom/google/common/util/concurrent/ServiceManager;->logger:Ljava/util/logging/Logger;
 
     sget-object v0, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
@@ -136,7 +128,6 @@
 
     invoke-virtual {p1, v0, v3, v1}, Ljava/util/logging/Logger;->log(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    .line 5
     new-instance p1, Lcom/google/common/util/concurrent/ServiceManager$NoOpService;
 
     invoke-direct {p1, v2}, Lcom/google/common/util/concurrent/ServiceManager$NoOpService;-><init>(Lcom/google/common/util/concurrent/ServiceManager$1;)V
@@ -145,7 +136,6 @@
 
     move-result-object p1
 
-    .line 6
     :cond_0
     new-instance v0, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
@@ -153,17 +143,14 @@
 
     iput-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
-    .line 7
     iput-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager;->services:Lcom/google/common/collect/ImmutableList;
 
-    .line 8
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     iget-object v1, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-direct {v0, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    .line 9
     invoke-virtual {p1}, Lcom/google/common/collect/ImmutableList;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
@@ -181,7 +168,6 @@
 
     check-cast v1, Lcom/google/common/util/concurrent/Service;
 
-    .line 10
     new-instance v2, Lcom/google/common/util/concurrent/ServiceManager$ServiceListener;
 
     invoke-direct {v2, v1, v0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceListener;-><init>(Lcom/google/common/util/concurrent/Service;Ljava/lang/ref/WeakReference;)V
@@ -192,7 +178,6 @@
 
     invoke-interface {v1, v2, v3}, Lcom/google/common/util/concurrent/Service;->addListener(Lcom/google/common/util/concurrent/Service$Listener;Ljava/util/concurrent/Executor;)V
 
-    .line 11
     invoke-interface {v1}, Lcom/google/common/util/concurrent/Service;->state()Lcom/google/common/util/concurrent/Service$State;
 
     move-result-object v2
@@ -223,7 +208,6 @@
 
     goto :goto_0
 
-    .line 12
     :cond_2
     iget-object p1, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
@@ -235,7 +219,6 @@
 .method static synthetic access$200()Ljava/util/logging/Logger;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/util/concurrent/ServiceManager;->logger:Ljava/util/logging/Logger;
 
     return-object v0
@@ -244,7 +227,6 @@
 .method static synthetic access$300()Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/util/concurrent/ServiceManager;->STOPPED_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
     return-object v0
@@ -253,7 +235,6 @@
 .method static synthetic access$400()Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/util/concurrent/ServiceManager;->HEALTHY_CALLBACK:Lcom/google/common/util/concurrent/ListenerCallQueue$Callback;
 
     return-object v0
@@ -264,7 +245,6 @@
 .method public addListener(Lcom/google/common/util/concurrent/ServiceManager$Listener;)V
     .locals 2
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-static {}, Lcom/google/common/util/concurrent/MoreExecutors;->directExecutor()Ljava/util/concurrent/Executor;
@@ -279,7 +259,6 @@
 .method public addListener(Lcom/google/common/util/concurrent/ServiceManager$Listener;Ljava/util/concurrent/Executor;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {v0, p1, p2}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->addListener(Lcom/google/common/util/concurrent/ServiceManager$Listener;Ljava/util/concurrent/Executor;)V
@@ -290,7 +269,6 @@
 .method public awaitHealthy()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->awaitHealthy()V
@@ -306,7 +284,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->awaitHealthy(JLjava/util/concurrent/TimeUnit;)V
@@ -317,7 +294,6 @@
 .method public awaitStopped()V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->awaitStopped()V
@@ -333,7 +309,6 @@
         }
     .end annotation
 
-    .line 2
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {v0, p1, p2, p3}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->awaitStopped(JLjava/util/concurrent/TimeUnit;)V
@@ -344,7 +319,6 @@
 .method public isHealthy()Z
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->services:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->iterator()Ljava/util/Iterator;
@@ -364,7 +338,6 @@
 
     check-cast v1, Lcom/google/common/util/concurrent/Service;
 
-    .line 2
     invoke-interface {v1}, Lcom/google/common/util/concurrent/Service;->isRunning()Z
 
     move-result v1
@@ -393,7 +366,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->servicesByState()Lcom/google/common/collect/ImmutableMultimap;
@@ -406,7 +378,6 @@
 .method public startAsync()Lcom/google/common/util/concurrent/ServiceManager;
     .locals 7
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->services:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->iterator()Ljava/util/Iterator;
@@ -426,12 +397,10 @@
 
     check-cast v1, Lcom/google/common/util/concurrent/Service;
 
-    .line 2
     invoke-interface {v1}, Lcom/google/common/util/concurrent/Service;->state()Lcom/google/common/util/concurrent/Service$State;
 
     move-result-object v2
 
-    .line 3
     sget-object v3, Lcom/google/common/util/concurrent/Service$State;->NEW:Lcom/google/common/util/concurrent/Service$State;
 
     const/4 v4, 0x1
@@ -462,7 +431,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->services:Lcom/google/common/collect/ImmutableList;
 
@@ -483,13 +451,11 @@
 
     check-cast v1, Lcom/google/common/util/concurrent/Service;
 
-    .line 5
     :try_start_0
     iget-object v2, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {v2, v1}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->tryStartTiming(Lcom/google/common/util/concurrent/Service;)V
 
-    .line 6
     invoke-interface {v1}, Lcom/google/common/util/concurrent/Service;->startAsync()Lcom/google/common/util/concurrent/Service;
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
@@ -499,7 +465,6 @@
     :catch_0
     move-exception v2
 
-    .line 7
     sget-object v3, Lcom/google/common/util/concurrent/ServiceManager;->logger:Ljava/util/logging/Logger;
 
     sget-object v4, Ljava/util/logging/Level;->WARNING:Ljava/util/logging/Level;
@@ -552,7 +517,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->state:Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;
 
     invoke-virtual {v0}, Lcom/google/common/util/concurrent/ServiceManager$ServiceManagerState;->startupTimes()Lcom/google/common/collect/ImmutableMap;
@@ -565,7 +529,6 @@
 .method public stopAsync()Lcom/google/common/util/concurrent/ServiceManager;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/ServiceManager;->services:Lcom/google/common/collect/ImmutableList;
 
     invoke-virtual {v0}, Lcom/google/common/collect/ImmutableList;->iterator()Ljava/util/Iterator;
@@ -585,7 +548,6 @@
 
     check-cast v1, Lcom/google/common/util/concurrent/Service;
 
-    .line 2
     invoke-interface {v1}, Lcom/google/common/util/concurrent/Service;->stopAsync()Lcom/google/common/util/concurrent/Service;
 
     goto :goto_0
@@ -597,7 +559,6 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    .line 1
     const-class v0, Lcom/google/common/util/concurrent/ServiceManager;
 
     invoke-static {v0}, Lcom/google/common/base/MoreObjects;->toStringHelper(Ljava/lang/Class;)Lcom/google/common/base/MoreObjects$ToStringHelper;

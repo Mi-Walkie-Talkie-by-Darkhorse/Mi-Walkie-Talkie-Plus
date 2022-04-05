@@ -1,6 +1,5 @@
 .class public final Lcom/google/common/base/Objects;
 .super Ljava/lang/Object;
-.source "Objects.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method private constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -41,7 +39,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 1
     invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result p0
@@ -84,7 +81,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/google/common/base/MoreObjects;->firstNonNull(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -99,7 +95,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-static {p0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
 
     move-result p0
@@ -121,7 +116,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 2
     new-instance v0, Lcom/google/common/base/Objects$ToStringHelper;
 
     invoke-static {p0}, Lcom/google/common/base/MoreObjects;->simpleName(Ljava/lang/Class;)Ljava/lang/String;
@@ -140,7 +134,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 1
     new-instance v0, Lcom/google/common/base/Objects$ToStringHelper;
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -163,7 +156,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    .line 3
     new-instance v0, Lcom/google/common/base/Objects$ToStringHelper;
 
     const/4 v1, 0x0

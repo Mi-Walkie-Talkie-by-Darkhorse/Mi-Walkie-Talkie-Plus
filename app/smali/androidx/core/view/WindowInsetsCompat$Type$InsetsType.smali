@@ -1,6 +1,5 @@
 .class public interface abstract annotation Landroidx/core/view/WindowInsetsCompat$Type$InsetsType;
 .super Ljava/lang/Object;
-.source "WindowInsetsCompat.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

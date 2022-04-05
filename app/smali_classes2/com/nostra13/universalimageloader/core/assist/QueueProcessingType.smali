@@ -1,6 +1,5 @@
 .class public final enum Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 .super Ljava/lang/Enum;
-.source "QueueProcessingType.java"
 
 
 # annotations
@@ -25,7 +24,6 @@
 .method static constructor <clinit>()V
     .locals 5
 
-    .line 1
     new-instance v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     const/4 v1, 0x0
@@ -50,7 +48,6 @@
 
     new-array v3, v3, [Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
-    .line 2
     sget-object v4, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->FIFO:Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     aput-object v4, v3, v1
@@ -70,7 +67,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -79,7 +75,6 @@
 .method public static valueOf(Ljava/lang/String;)Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
     .locals 1
 
-    .line 1
     const-class v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -94,7 +89,6 @@
 .method public static values()[Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->$VALUES:[Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;
 
     invoke-virtual {v0}, [Lcom/nostra13/universalimageloader/core/assist/QueueProcessingType;->clone()Ljava/lang/Object;

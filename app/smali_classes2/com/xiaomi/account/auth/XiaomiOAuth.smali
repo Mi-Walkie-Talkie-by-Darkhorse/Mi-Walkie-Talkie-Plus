@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/xiaomi/account/auth/XiaomiOAuth;
 .super Ljava/lang/Object;
-.source "XiaomiOAuth.java"
 
 
 # virtual methods

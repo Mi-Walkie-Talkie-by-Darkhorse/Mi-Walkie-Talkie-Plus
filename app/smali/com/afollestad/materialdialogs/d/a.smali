@@ -1,6 +1,5 @@
 .class public Lcom/afollestad/materialdialogs/d/a;
 .super Ljava/lang/Object;
-.source "DialogUtils.java"
 
 
 # direct methods
@@ -13,7 +12,6 @@
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 
-    .line 4
     invoke-static {p0}, Landroid/graphics/Color;->alpha(I)I
 
     move-result v0
@@ -26,22 +24,18 @@
 
     move-result p1
 
-    .line 5
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v0
 
-    .line 6
     invoke-static {p0}, Landroid/graphics/Color;->green(I)I
 
     move-result v1
 
-    .line 7
     invoke-static {p0}, Landroid/graphics/Color;->blue(I)I
 
     move-result p0
 
-    .line 8
     invoke-static {p1, v0, v1, p0}, Landroid/graphics/Color;->argb(IIII)I
 
     move-result p0
@@ -56,12 +50,10 @@
 
     const v0, 0x1010036
 
-    .line 1
     invoke-static {p0, v0}, Lcom/afollestad/materialdialogs/d/a;->e(Landroid/content/Context;I)I
 
     move-result p0
 
-    .line 2
     invoke-static {p0}, Lcom/afollestad/materialdialogs/d/a;->a(I)Z
 
     move-result p0
@@ -78,7 +70,6 @@
     :goto_0
     const v0, 0x3e99999a    # 0.3f
 
-    .line 3
     invoke-static {p0, v0}, Lcom/afollestad/materialdialogs/d/a;->a(IF)I
 
     move-result p0
@@ -95,7 +86,6 @@
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 
-    .line 9
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p0
@@ -112,7 +102,6 @@
 
     move-result-object p0
 
-    .line 10
     :try_start_0
     invoke-virtual {p0, v1, p2}, Landroid/content/res/TypedArray;->getColor(II)I
 
@@ -120,7 +109,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 11
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     return p1
@@ -136,7 +124,6 @@
 .method private static a(Lcom/afollestad/materialdialogs/GravityEnum;)I
     .locals 1
 
-    .line 27
     sget-object v0, Lcom/afollestad/materialdialogs/d/a$b;->a:[I
 
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I
@@ -168,12 +155,10 @@
         .end annotation
     .end param
 
-    .line 20
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 21
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
@@ -182,7 +167,6 @@
 
     invoke-virtual {v1, p1, v0, v2}, Landroid/content/res/Resources;->getValue(ILandroid/util/TypedValue;Z)V
 
-    .line 22
     iget v1, v0, Landroid/util/TypedValue;->type:I
 
     const/16 v2, 0x1c
@@ -193,7 +177,6 @@
 
     if-gt v1, v2, :cond_0
 
-    .line 23
     iget p1, v0, Landroid/util/TypedValue;->data:I
 
     invoke-static {p0, p1}, Lcom/afollestad/materialdialogs/d/a;->b(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
@@ -202,7 +185,6 @@
 
     return-object p0
 
-    .line 24
     :cond_0
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
@@ -210,7 +192,6 @@
 
     if-gt v0, v1, :cond_1
 
-    .line 25
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object p0
@@ -221,7 +202,6 @@
 
     return-object p0
 
-    .line 26
     :cond_1
     invoke-virtual {p0, p1}, Landroid/content/Context;->getColorStateList(I)Landroid/content/res/ColorStateList;
 
@@ -237,7 +217,6 @@
         .end annotation
     .end param
 
-    .line 12
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object v0
@@ -254,7 +233,6 @@
 
     move-result-object p1
 
-    .line 13
     :try_start_0
     invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
 
@@ -264,12 +242,10 @@
 
     if-nez v0, :cond_0
 
-    .line 14
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-object p2
 
-    .line 15
     :cond_0
     :try_start_1
     iget v1, v0, Landroid/util/TypedValue;->type:I
@@ -284,7 +260,6 @@
 
     if-gt v1, v3, :cond_1
 
-    .line 16
     iget p2, v0, Landroid/util/TypedValue;->data:I
 
     invoke-static {p0, p2}, Lcom/afollestad/materialdialogs/d/a;->b(Landroid/content/Context;I)Landroid/content/res/ColorStateList;
@@ -293,12 +268,10 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 17
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-object p0
 
-    .line 18
     :cond_1
     :try_start_2
     invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->getColorStateList(I)Landroid/content/res/ColorStateList;
@@ -309,7 +282,6 @@
 
     if-eqz p0, :cond_2
 
-    .line 19
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-object p0
@@ -334,7 +306,6 @@
         .end annotation
     .end param
 
-    .line 36
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p0
@@ -351,7 +322,6 @@
 
     move-result-object p0
 
-    .line 37
     :try_start_0
     invoke-virtual {p0, v1}, Landroid/content/res/TypedArray;->getDrawable(I)Landroid/graphics/drawable/Drawable;
 
@@ -368,7 +338,6 @@
     :cond_0
     move-object p2, p1
 
-    .line 38
     :goto_0
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
@@ -389,7 +358,6 @@
         .end annotation
     .end param
 
-    .line 28
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p0
@@ -406,7 +374,6 @@
 
     move-result-object p0
 
-    .line 29
     :try_start_0
     invoke-static {p2}, Lcom/afollestad/materialdialogs/d/a;->a(Lcom/afollestad/materialdialogs/GravityEnum;)I
 
@@ -422,36 +389,30 @@
 
     if-eq p1, p2, :cond_0
 
-    .line 30
     sget-object p1, Lcom/afollestad/materialdialogs/GravityEnum;->a:Lcom/afollestad/materialdialogs/GravityEnum;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 31
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     return-object p1
 
-    .line 32
     :cond_0
     :try_start_1
     sget-object p1, Lcom/afollestad/materialdialogs/GravityEnum;->c:Lcom/afollestad/materialdialogs/GravityEnum;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 33
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     return-object p1
 
-    .line 34
     :cond_1
     :try_start_2
     sget-object p1, Lcom/afollestad/materialdialogs/GravityEnum;->b:Lcom/afollestad/materialdialogs/GravityEnum;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    .line 35
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     return-object p1
@@ -475,10 +436,8 @@
         .end annotation
     .end param
 
-    .line 46
     check-cast p0, Lcom/afollestad/materialdialogs/MaterialDialog;
 
-    .line 47
     invoke-virtual {p0}, Lcom/afollestad/materialdialogs/MaterialDialog;->d()Landroid/widget/EditText;
 
     move-result-object v0
@@ -487,7 +446,6 @@
 
     return-void
 
-    .line 48
     :cond_0
     invoke-virtual {p1}, Lcom/afollestad/materialdialogs/MaterialDialog$d;->b()Landroid/content/Context;
 
@@ -503,14 +461,12 @@
 
     if-eqz p1, :cond_2
 
-    .line 49
     invoke-virtual {p0}, Landroid/app/Dialog;->getCurrentFocus()Landroid/view/View;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    .line 50
     invoke-virtual {v0}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
 
     move-result-object p0
@@ -531,7 +487,6 @@
 
     const/4 v0, 0x0
 
-    .line 51
     invoke-virtual {p1, p0, v0}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
     :cond_2
@@ -541,19 +496,16 @@
 .method public static a(Landroid/view/View;Landroid/graphics/drawable/Drawable;)V
     .locals 2
 
-    .line 43
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 v1, 0x10
 
     if-ge v0, v1, :cond_0
 
-    .line 44
     invoke-virtual {p0, p1}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     goto :goto_0
 
-    .line 45
     :cond_0
     invoke-virtual {p0, p1}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
 
@@ -568,7 +520,6 @@
         .end annotation
     .end param
 
-    .line 42
     invoke-static {p0}, Landroid/graphics/Color;->red(I)I
 
     move-result v0
@@ -635,7 +586,6 @@
         .end annotation
     .end param
 
-    .line 39
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p0
@@ -652,7 +602,6 @@
 
     move-result-object p0
 
-    .line 40
     :try_start_0
     invoke-virtual {p0, v1, p2}, Landroid/content/res/TypedArray;->getBoolean(IZ)Z
 
@@ -660,7 +609,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 41
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     return p1
@@ -695,14 +643,12 @@
 
     if-eqz p1, :cond_2
 
-    .line 52
     array-length v1, p1
 
     if-nez v1, :cond_0
 
     goto :goto_1
 
-    .line 53
     :cond_0
     array-length v1, p1
 
@@ -713,7 +659,6 @@
 
     aget-object v3, p1, v2
 
-    .line 54
     invoke-virtual {v3, p0}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v3
@@ -741,7 +686,6 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p0
@@ -758,7 +702,6 @@
 
     move-result-object p0
 
-    .line 2
     :try_start_0
     invoke-virtual {p0, v1, p2}, Landroid/content/res/TypedArray;->getDimensionPixelSize(II)I
 
@@ -766,7 +709,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     invoke-virtual {p0}, Landroid/content/res/TypedArray;->recycle()V
 
     return p1
@@ -784,7 +726,6 @@
 
     const v0, 0x1010036
 
-    .line 8
     invoke-static {p0, v0}, Lcom/afollestad/materialdialogs/d/a;->e(Landroid/content/Context;I)I
 
     move-result p0
@@ -818,7 +759,6 @@
 
     const v2, 0x3ecccccd    # 0.4f
 
-    .line 9
     invoke-static {p1, v2}, Lcom/afollestad/materialdialogs/d/a;->a(IF)I
 
     move-result v2
@@ -827,7 +767,6 @@
 
     aput p1, p0, v1
 
-    .line 10
     new-instance p1, Landroid/content/res/ColorStateList;
 
     invoke-direct {p1, v0, p0}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
@@ -846,10 +785,8 @@
         .end annotation
     .end param
 
-    .line 4
     check-cast p0, Lcom/afollestad/materialdialogs/MaterialDialog;
 
-    .line 5
     invoke-virtual {p0}, Lcom/afollestad/materialdialogs/MaterialDialog;->d()Landroid/widget/EditText;
 
     move-result-object v0
@@ -858,7 +795,6 @@
 
     return-void
 
-    .line 6
     :cond_0
     invoke-virtual {p0}, Lcom/afollestad/materialdialogs/MaterialDialog;->d()Landroid/widget/EditText;
 
@@ -868,7 +804,6 @@
 
     invoke-direct {v1, p0, p1}, Lcom/afollestad/materialdialogs/d/a$a;-><init>(Lcom/afollestad/materialdialogs/MaterialDialog;Lcom/afollestad/materialdialogs/MaterialDialog$d;)V
 
-    .line 7
     invoke-virtual {v0, v1}, Landroid/widget/EditText;->post(Ljava/lang/Runnable;)Z
 
     return-void
@@ -883,7 +818,6 @@
     .annotation build Landroidx/annotation/ColorInt;
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Landroidx/core/content/b;->a(Landroid/content/Context;I)I
 
     move-result p0
@@ -900,7 +834,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/afollestad/materialdialogs/d/a;->a(Landroid/content/Context;IZ)Z
 
     move-result p0
@@ -919,7 +852,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/afollestad/materialdialogs/d/a;->a(Landroid/content/Context;II)I
 
     move-result p0
@@ -936,7 +868,6 @@
 
     const/4 v0, -0x1
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/afollestad/materialdialogs/d/a;->b(Landroid/content/Context;II)I
 
     move-result p0
@@ -953,7 +884,6 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-static {p0, p1, v0}, Lcom/afollestad/materialdialogs/d/a;->a(Landroid/content/Context;ILandroid/graphics/drawable/Drawable;)Landroid/graphics/drawable/Drawable;
 
     move-result-object p0
@@ -968,12 +898,10 @@
         .end annotation
     .end param
 
-    .line 1
     new-instance v0, Landroid/util/TypedValue;
 
     invoke-direct {v0}, Landroid/util/TypedValue;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Landroid/content/Context;->getTheme()Landroid/content/res/Resources$Theme;
 
     move-result-object p0
@@ -982,7 +910,6 @@
 
     invoke-virtual {p0, p1, v0, v1}, Landroid/content/res/Resources$Theme;->resolveAttribute(ILandroid/util/TypedValue;Z)Z
 
-    .line 3
     iget-object p0, v0, Landroid/util/TypedValue;->string:Ljava/lang/CharSequence;
 
     check-cast p0, Ljava/lang/String;

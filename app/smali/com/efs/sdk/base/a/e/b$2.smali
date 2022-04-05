@@ -1,6 +1,5 @@
 .class final Lcom/efs/sdk/base/a/e/b$2;
 .super Ljava/util/HashMap;
-.source "SourceFile"
 
 
 # annotations
@@ -29,12 +28,10 @@
 
     const/4 v0, 0x3
 
-    .line 1
     invoke-direct {p0, v0}, Ljava/util/HashMap;-><init>(I)V
 
     const-wide/32 v0, 0x100000
 
-    .line 2
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0
@@ -45,12 +42,10 @@
 
     const-string v1, "flow_hour"
 
-    .line 3
     invoke-virtual {p0, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     const-wide/32 v0, 0x200000
 
-    .line 4
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v0

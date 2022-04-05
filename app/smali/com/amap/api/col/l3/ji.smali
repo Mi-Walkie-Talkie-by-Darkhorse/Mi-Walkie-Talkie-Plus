@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/ji;
 .super Ljava/lang/Object;
-.source "AmapSensorManager.java"
 
 # interfaces
 .implements Landroid/hardware/SensorEventListener;
@@ -54,108 +53,83 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/ji;->s:Landroid/content/Context;
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/col/l3/ji;->b:Landroid/hardware/Sensor;
 
-    .line 5
     iput-object v0, p0, Lcom/amap/api/col/l3/ji;->c:Landroid/hardware/Sensor;
 
-    .line 6
     iput-object v0, p0, Lcom/amap/api/col/l3/ji;->d:Landroid/hardware/Sensor;
 
     const/4 v0, 0x0
 
-    .line 7
     iput-boolean v0, p0, Lcom/amap/api/col/l3/ji;->e:Z
 
     const-wide/16 v0, 0x0
 
-    .line 8
     iput-wide v0, p0, Lcom/amap/api/col/l3/ji;->f:D
 
     const/4 v2, 0x0
 
-    .line 9
     iput v2, p0, Lcom/amap/api/col/l3/ji;->g:F
 
     const v3, 0x447d5000    # 1013.25f
 
-    .line 10
     iput v3, p0, Lcom/amap/api/col/l3/ji;->t:F
 
-    .line 11
     iput v2, p0, Lcom/amap/api/col/l3/ji;->u:F
 
-    .line 12
     new-instance v2, Lcom/amap/api/col/l3/ji$1;
 
     invoke-direct {v2, p0}, Lcom/amap/api/col/l3/ji$1;-><init>(Lcom/amap/api/col/l3/ji;)V
 
     iput-object v2, p0, Lcom/amap/api/col/l3/ji;->h:Landroid/os/Handler;
 
-    .line 13
     iput-wide v0, p0, Lcom/amap/api/col/l3/ji;->i:D
 
-    .line 14
     iput-wide v0, p0, Lcom/amap/api/col/l3/ji;->j:D
 
-    .line 15
     iput-wide v0, p0, Lcom/amap/api/col/l3/ji;->k:D
 
-    .line 16
     iput-wide v0, p0, Lcom/amap/api/col/l3/ji;->l:D
 
     const/4 v2, 0x3
 
     new-array v2, v2, [D
 
-    .line 17
     iput-object v2, p0, Lcom/amap/api/col/l3/ji;->m:[D
 
-    .line 18
     iput-wide v0, p0, Lcom/amap/api/col/l3/ji;->n:D
 
     const-wide/16 v0, 0x0
 
-    .line 19
     iput-wide v0, p0, Lcom/amap/api/col/l3/ji;->o:J
 
-    .line 20
     iput-wide v0, p0, Lcom/amap/api/col/l3/ji;->p:J
 
     const/16 v0, 0x64
 
-    .line 21
     iput v0, p0, Lcom/amap/api/col/l3/ji;->q:I
 
     const/16 v0, 0x1e
 
-    .line 22
     iput v0, p0, Lcom/amap/api/col/l3/ji;->r:I
 
-    .line 23
     :try_start_0
     iput-object p1, p0, Lcom/amap/api/col/l3/ji;->s:Landroid/content/Context;
 
-    .line 24
     iget-object v0, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
 
     if-nez v0, :cond_0
 
     const-string v0, "sensor"
 
-    .line 25
     invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
@@ -166,7 +140,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_3
 
-    .line 26
     :cond_0
     :try_start_1
     iget-object p1, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
@@ -181,7 +154,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 27
     :catchall_0
     :try_start_2
     iget-object p1, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
@@ -196,7 +168,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    .line 28
     :catchall_1
     :try_start_3
     iget-object p1, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
@@ -221,7 +192,6 @@
 
     const-string v1, "<init>"
 
-    .line 29
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -234,7 +204,6 @@
 
     const-string v0, "AMapSensorManager"
 
-    .line 1
     iget-object v1, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
 
     if-eqz v1, :cond_3
@@ -245,18 +214,15 @@
 
     const/4 v2, 0x1
 
-    .line 2
     iput-boolean v2, p0, Lcom/amap/api/col/l3/ji;->e:Z
 
     const/4 v2, 0x3
 
-    .line 3
     :try_start_0
     iget-object v3, p0, Lcom/amap/api/col/l3/ji;->b:Landroid/hardware/Sensor;
 
     if-eqz v3, :cond_0
 
-    .line 4
     iget-object v3, p0, Lcom/amap/api/col/l3/ji;->b:Landroid/hardware/Sensor;
 
     iget-object v4, p0, Lcom/amap/api/col/l3/ji;->h:Landroid/os/Handler;
@@ -272,10 +238,8 @@
 
     const-string v3, "registerListener mPressure"
 
-    .line 5
     invoke-static {v1, v0, v3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 6
     :cond_0
     :goto_0
     :try_start_1
@@ -283,7 +247,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 7
     iget-object v1, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
 
     iget-object v3, p0, Lcom/amap/api/col/l3/ji;->c:Landroid/hardware/Sensor;
@@ -301,10 +264,8 @@
 
     const-string v3, "registerListener mRotationVector"
 
-    .line 8
     invoke-static {v1, v0, v3}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 9
     :cond_1
     :goto_1
     :try_start_2
@@ -312,7 +273,6 @@
 
     if-eqz v1, :cond_2
 
-    .line 10
     iget-object v1, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
 
     iget-object v3, p0, Lcom/amap/api/col/l3/ji;->d:Landroid/hardware/Sensor;
@@ -331,7 +291,6 @@
 
     const-string v2, "registerListener mAcceleroMeterVector"
 
-    .line 11
     invoke-static {v1, v0, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_3
@@ -341,7 +300,6 @@
 .method public final b()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
 
     if-eqz v0, :cond_2
@@ -352,23 +310,19 @@
 
     const/4 v1, 0x0
 
-    .line 2
     iput-boolean v1, p0, Lcom/amap/api/col/l3/ji;->e:Z
 
-    .line 3
     :try_start_0
     iget-object v1, p0, Lcom/amap/api/col/l3/ji;->b:Landroid/hardware/Sensor;
 
     if-eqz v1, :cond_0
 
-    .line 4
     iget-object v1, p0, Lcom/amap/api/col/l3/ji;->b:Landroid/hardware/Sensor;
 
     invoke-virtual {v0, p0, v1}, Landroid/hardware/SensorManager;->unregisterListener(Landroid/hardware/SensorEventListener;Landroid/hardware/Sensor;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 5
     :catchall_0
     :cond_0
     :try_start_1
@@ -376,7 +330,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 6
     iget-object v0, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/ji;->c:Landroid/hardware/Sensor;
@@ -385,7 +338,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 7
     :catchall_1
     :cond_1
     :try_start_2
@@ -393,7 +345,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 8
     iget-object v0, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
 
     iget-object v1, p0, Lcom/amap/api/col/l3/ji;->d:Landroid/hardware/Sensor;
@@ -410,7 +361,6 @@
 .method public final c()D
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/col/l3/ji;->f:D
 
     return-wide v0
@@ -419,7 +369,6 @@
 .method public final d()F
     .locals 1
 
-    .line 1
     iget v0, p0, Lcom/amap/api/col/l3/ji;->u:F
 
     return v0
@@ -428,7 +377,6 @@
 .method public final e()D
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lcom/amap/api/col/l3/ji;->l:D
 
     return-wide v0
@@ -437,27 +385,21 @@
 .method public final f()V
     .locals 3
 
-    .line 1
     :try_start_0
     invoke-virtual {p0}, Lcom/amap/api/col/l3/ji;->b()V
 
     const/4 v0, 0x0
 
-    .line 2
     iput-object v0, p0, Lcom/amap/api/col/l3/ji;->b:Landroid/hardware/Sensor;
 
-    .line 3
     iput-object v0, p0, Lcom/amap/api/col/l3/ji;->c:Landroid/hardware/Sensor;
 
-    .line 4
     iput-object v0, p0, Lcom/amap/api/col/l3/ji;->a:Landroid/hardware/SensorManager;
 
-    .line 5
     iput-object v0, p0, Lcom/amap/api/col/l3/ji;->d:Landroid/hardware/Sensor;
 
     const/4 v0, 0x0
 
-    .line 6
     iput-boolean v0, p0, Lcom/amap/api/col/l3/ji;->e:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -471,7 +413,6 @@
 
     const-string v2, "destroy"
 
-    .line 7
     invoke-static {v0, v1, v2}, Lcom/amap/api/col/l3/jz;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -490,7 +431,6 @@
 
     return-void
 
-    .line 1
     :cond_0
     :try_start_0
     iget-object v0, p1, Landroid/hardware/SensorEvent;->sensor:Landroid/hardware/Sensor;
@@ -517,14 +457,12 @@
 
     goto/16 :goto_2
 
-    .line 2
     :cond_1
     :try_start_1
     iget-object v0, p0, Lcom/amap/api/col/l3/ji;->c:Landroid/hardware/Sensor;
 
     if-eqz v0, :cond_3
 
-    .line 3
     iget-object p1, p1, Landroid/hardware/SensorEvent;->values:[F
 
     invoke-virtual {p1}, [F->clone()Ljava/lang/Object;
@@ -592,14 +530,12 @@
     :cond_3
     return-void
 
-    .line 4
     :cond_4
     :try_start_2
     iget-object v0, p0, Lcom/amap/api/col/l3/ji;->b:Landroid/hardware/Sensor;
 
     if-eqz v0, :cond_6
 
-    .line 5
     iget-object p1, p1, Landroid/hardware/SensorEvent;->values:[F
 
     invoke-virtual {p1}, [F->clone()Ljava/lang/Object;
@@ -610,7 +546,6 @@
 
     if-eqz p1, :cond_5
 
-    .line 6
     aget v0, p1, v2
 
     iput v0, p0, Lcom/amap/api/col/l3/ji;->g:F
@@ -618,7 +553,6 @@
     :cond_5
     if-eqz p1, :cond_6
 
-    .line 7
     iget v0, p0, Lcom/amap/api/col/l3/ji;->t:F
 
     aget p1, p1, v2
@@ -641,14 +575,12 @@
     :cond_6
     return-void
 
-    .line 8
     :cond_7
     :try_start_3
     iget-object v0, p0, Lcom/amap/api/col/l3/ji;->d:Landroid/hardware/Sensor;
 
     if-eqz v0, :cond_8
 
-    .line 9
     iget-object p1, p1, Landroid/hardware/SensorEvent;->values:[F
 
     invoke-virtual {p1}, [F->clone()Ljava/lang/Object;

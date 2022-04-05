@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/ui/map/f/a/f;
 .super Lorg/osmdroid/views/overlay/OverlayItem;
-.source "MyOverlayItem.java"
 
 
 # instance fields
@@ -11,7 +10,6 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lorg/osmdroid/api/IGeoPoint;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1, p2, p3}, Lorg/osmdroid/views/overlay/OverlayItem;-><init>(Ljava/lang/String;Ljava/lang/String;Lorg/osmdroid/api/IGeoPoint;)V
 
     return-void
@@ -22,7 +20,6 @@
 .method public a()Ljava/lang/Object;
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/map/f/a/f;->a:Ljava/lang/Object;
 
     return-object v0
@@ -31,7 +28,6 @@
 .method public a(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/map/f/a/f;->a:Ljava/lang/Object;
 
     return-void

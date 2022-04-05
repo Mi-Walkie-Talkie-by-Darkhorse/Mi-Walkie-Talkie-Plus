@@ -1,6 +1,5 @@
 .class Landroidx/transition/e$b;
 .super Ljava/lang/Object;
-.source "FragmentTransitionSupport.java"
 
 # interfaces
 .implements Landroidx/transition/Transition$g;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/transition/e;Landroid/view/View;Ljava/util/ArrayList;)V
     .locals 0
 
-    .line 1
     iput-object p2, p0, Landroidx/transition/e$b;->a:Landroid/view/View;
 
     iput-object p3, p0, Landroidx/transition/e$b;->b:Ljava/util/ArrayList;
@@ -56,17 +54,14 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1, p0}, Landroidx/transition/Transition;->removeListener(Landroidx/transition/Transition$g;)Landroidx/transition/Transition;
 
-    .line 2
     iget-object p1, p0, Landroidx/transition/e$b;->a:Landroid/view/View;
 
     const/16 v0, 0x8
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
-    .line 3
     iget-object p1, p0, Landroidx/transition/e$b;->b:Ljava/util/ArrayList;
 
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
@@ -80,7 +75,6 @@
     :goto_0
     if-ge v1, p1, :cond_0
 
-    .line 4
     iget-object v2, p0, Landroidx/transition/e$b;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -126,10 +120,8 @@
         .end annotation
     .end param
 
-    .line 1
     invoke-virtual {p1, p0}, Landroidx/transition/Transition;->removeListener(Landroidx/transition/Transition$g;)Landroidx/transition/Transition;
 
-    .line 2
     invoke-virtual {p1, p0}, Landroidx/transition/Transition;->addListener(Landroidx/transition/Transition$g;)Landroidx/transition/Transition;
 
     return-void

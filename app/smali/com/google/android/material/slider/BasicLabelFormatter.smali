@@ -1,6 +1,5 @@
 .class public final Lcom/google/android/material/slider/BasicLabelFormatter;
 .super Ljava/lang/Object;
-.source "BasicLabelFormatter.java"
 
 # interfaces
 .implements Lcom/google/android/material/slider/LabelFormatter;
@@ -20,7 +19,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -43,7 +41,6 @@
 
     if-ltz v3, :cond_0
 
-    .line 1
     sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     new-array v2, v2, [Ljava/lang/Object;
@@ -71,7 +68,6 @@
 
     if-ltz v3, :cond_1
 
-    .line 2
     sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     new-array v2, v2, [Ljava/lang/Object;
@@ -99,7 +95,6 @@
 
     if-ltz v3, :cond_2
 
-    .line 3
     sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     new-array v2, v2, [Ljava/lang/Object;
@@ -127,7 +122,6 @@
 
     if-ltz v3, :cond_3
 
-    .line 4
     sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
 
     new-array v2, v2, [Ljava/lang/Object;
@@ -148,7 +142,6 @@
 
     return-object p1
 
-    .line 5
     :cond_3
     sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
 

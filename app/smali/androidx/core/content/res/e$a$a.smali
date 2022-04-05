@@ -1,6 +1,5 @@
 .class Landroidx/core/content/res/e$a$a;
 .super Ljava/lang/Object;
-.source "ResourcesCompat.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Landroidx/core/content/res/e$a;Landroid/graphics/Typeface;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Landroidx/core/content/res/e$a$a;->b:Landroidx/core/content/res/e$a;
 
     iput-object p2, p0, Landroidx/core/content/res/e$a$a;->a:Landroid/graphics/Typeface;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Landroidx/core/content/res/e$a$a;->b:Landroidx/core/content/res/e$a;
 
     iget-object v1, p0, Landroidx/core/content/res/e$a$a;->a:Landroid/graphics/Typeface;

@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lio/reactivex/annotations/NonNull;
 .super Ljava/lang/Object;
-.source "NonNull.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

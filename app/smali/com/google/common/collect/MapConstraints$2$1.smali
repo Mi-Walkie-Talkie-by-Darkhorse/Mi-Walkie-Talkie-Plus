@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/MapConstraints$2$1;
 .super Ljava/lang/Object;
-.source "MapConstraints.java"
 
 # interfaces
 .implements Lcom/google/common/collect/Constraint;
@@ -33,7 +32,6 @@
 .method constructor <init>(Lcom/google/common/collect/MapConstraints$2;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/common/collect/MapConstraints$2$1;->this$0:Lcom/google/common/collect/MapConstraints$2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -51,7 +49,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/collect/MapConstraints$2$1;->this$0:Lcom/google/common/collect/MapConstraints$2;
 
     iget-object v1, v0, Lcom/google/common/collect/MapConstraints$2;->val$constraint:Lcom/google/common/collect/MapConstraint;

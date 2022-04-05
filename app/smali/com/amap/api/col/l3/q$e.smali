@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/q$e;
 .super Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector$SimpleOnZoomOutGestureListener;
-.source "GLMapGestureDetector.java"
 
 
 # annotations
@@ -24,12 +23,10 @@
 .method private constructor <init>(Lcom/amap/api/col/l3/q;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/q$e;->b:Lcom/amap/api/col/l3/q;
 
     invoke-direct {p0}, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector$SimpleOnZoomOutGestureListener;-><init>()V
 
-    .line 2
     new-instance p1, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;
 
     invoke-direct {p1}, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;-><init>()V
@@ -42,7 +39,6 @@
 .method synthetic constructor <init>(Lcom/amap/api/col/l3/q;B)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p1}, Lcom/amap/api/col/l3/q$e;-><init>(Lcom/amap/api/col/l3/q;)V
 
     return-void
@@ -53,7 +49,6 @@
 .method public final onZoomOut(Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;)V
     .locals 5
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/amap/api/col/l3/q$e;->b:Lcom/amap/api/col/l3/q;
 
@@ -73,7 +68,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/gesture/ZoomOutGestureDetector;->getFocusX()F
 
@@ -101,7 +95,6 @@
 
     if-gtz v0, :cond_1
 
-    .line 3
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/gesture/BaseGestureDetector;->getTimeDelta()J
 
     move-result-wide v0
@@ -112,26 +105,22 @@
 
     if-gez v4, :cond_1
 
-    .line 4
     iget-object v0, p0, Lcom/amap/api/col/l3/q$e;->b:Lcom/amap/api/col/l3/q;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/q;->n(Lcom/amap/api/col/l3/q;)Z
 
-    .line 5
     iget-object v0, p0, Lcom/amap/api/col/l3/q$e;->a:Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;
 
     const/4 v1, 0x2
 
     iput v1, v0, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;->mGestureState:I
 
-    .line 6
     iput v1, v0, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;->mGestureType:I
 
     new-array v1, v1, [F
 
     const/4 v2, 0x0
 
-    .line 7
     invoke-virtual {p1}, Lcom/autonavi/ae/gmap/gesture/BaseGestureDetector;->getEvent()Landroid/view/MotionEvent;
 
     move-result-object v3
@@ -156,7 +145,6 @@
 
     iput-object v1, v0, Lcom/autonavi/ae/gmap/gesture/EAMapPlatformGestureInfo;->mLocation:[F
 
-    .line 8
     iget-object p1, p0, Lcom/amap/api/col/l3/q$e;->b:Lcom/amap/api/col/l3/q;
 
     iget-object p1, p1, Lcom/amap/api/col/l3/q;->a:Lcom/amap/api/col/l3/u;
@@ -167,7 +155,6 @@
 
     move-result p1
 
-    .line 9
     iget-object v0, p0, Lcom/amap/api/col/l3/q$e;->b:Lcom/amap/api/col/l3/q;
 
     iget-object v0, v0, Lcom/amap/api/col/l3/q;->a:Lcom/amap/api/col/l3/u;
@@ -176,7 +163,6 @@
 
     invoke-interface {v0, v1}, Lcom/amap/api/col/l3/u;->a(I)V
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/col/l3/q$e;->b:Lcom/amap/api/col/l3/q;
 
     iget-object v0, v0, Lcom/amap/api/col/l3/q;->a:Lcom/amap/api/col/l3/u;
@@ -193,10 +179,8 @@
 
     const-string v1, "onZoomOut"
 
-    .line 11
     invoke-static {p1, v0, v1}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 12
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void

@@ -1,6 +1,5 @@
 .class final Lio/reactivex/disposables/RunnableDisposable;
 .super Lio/reactivex/disposables/ReferenceDisposable;
-.source "RunnableDisposable.java"
 
 
 # annotations
@@ -21,7 +20,6 @@
 .method constructor <init>(Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lio/reactivex/disposables/ReferenceDisposable;-><init>(Ljava/lang/Object;)V
 
     return-void
@@ -36,7 +34,6 @@
         .end annotation
     .end param
 
-    .line 1
     check-cast p1, Ljava/lang/Runnable;
 
     invoke-virtual {p0, p1}, Lio/reactivex/disposables/RunnableDisposable;->onDisposed(Ljava/lang/Runnable;)V
@@ -51,7 +48,6 @@
         .end annotation
     .end param
 
-    .line 2
     invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
     return-void
@@ -60,7 +56,6 @@
 .method public toString()Ljava/lang/String;
     .locals 2
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

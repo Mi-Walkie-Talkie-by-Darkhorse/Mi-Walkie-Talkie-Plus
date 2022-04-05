@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment$a;
 .super Ljava/lang/Object;
-.source "LiteChannelFragment.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/lite/base/recycler/c$a;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,7 +45,6 @@
 .method public a(Landroid/view/View;ILcom/ifengyu/intercom/lite/models/ChannelModel;)V
     .locals 0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment$a;->a:Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment;
 
     invoke-static {p3}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;->a(Lcom/ifengyu/intercom/lite/models/ChannelModel;)Lcom/ifengyu/intercom/lite/fragment/LiteChannelEditFragment;
@@ -64,7 +61,6 @@
 .method public bridge synthetic a(Landroid/view/View;ILjava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p3, Lcom/ifengyu/intercom/lite/models/ChannelModel;
 
     invoke-virtual {p0, p1, p2, p3}, Lcom/ifengyu/intercom/lite/fragment/LiteChannelFragment$a;->a(Landroid/view/View;ILcom/ifengyu/intercom/lite/models/ChannelModel;)V

@@ -1,6 +1,5 @@
 .class Lcom/google/android/material/datepicker/MaterialTextInputPicker$1;
 .super Lcom/google/android/material/datepicker/OnSelectionChangedListener;
-.source "MaterialTextInputPicker.java"
 
 
 # annotations
@@ -29,7 +28,6 @@
 .method constructor <init>(Lcom/google/android/material/datepicker/MaterialTextInputPicker;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/google/android/material/datepicker/MaterialTextInputPicker$1;->this$0:Lcom/google/android/material/datepicker/MaterialTextInputPicker;
 
     invoke-direct {p0}, Lcom/google/android/material/datepicker/OnSelectionChangedListener;-><init>()V
@@ -42,7 +40,6 @@
 .method public onIncompleteSelectionChanged()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/datepicker/MaterialTextInputPicker$1;->this$0:Lcom/google/android/material/datepicker/MaterialTextInputPicker;
 
     iget-object v0, v0, Lcom/google/android/material/datepicker/PickerFragment;->onSelectionChangedListeners:Ljava/util/LinkedHashSet;
@@ -64,7 +61,6 @@
 
     check-cast v1, Lcom/google/android/material/datepicker/OnSelectionChangedListener;
 
-    .line 2
     invoke-virtual {v1}, Lcom/google/android/material/datepicker/OnSelectionChangedListener;->onIncompleteSelectionChanged()V
 
     goto :goto_0
@@ -81,7 +77,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/android/material/datepicker/MaterialTextInputPicker$1;->this$0:Lcom/google/android/material/datepicker/MaterialTextInputPicker;
 
     iget-object v0, v0, Lcom/google/android/material/datepicker/PickerFragment;->onSelectionChangedListeners:Ljava/util/LinkedHashSet;
@@ -103,7 +98,6 @@
 
     check-cast v1, Lcom/google/android/material/datepicker/OnSelectionChangedListener;
 
-    .line 2
     invoke-virtual {v1, p1}, Lcom/google/android/material/datepicker/OnSelectionChangedListener;->onSelectionChanged(Ljava/lang/Object;)V
 
     goto :goto_0

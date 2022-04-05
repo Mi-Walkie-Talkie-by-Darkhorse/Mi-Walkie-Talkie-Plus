@@ -1,6 +1,5 @@
 .class Landroidx/multidex/a$a$c;
 .super Ljava/lang/Object;
-.source "MultiDex.java"
 
 # interfaces
 .implements Landroidx/multidex/a$a$a;
@@ -46,7 +45,6 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x3
@@ -55,7 +53,6 @@
 
     const/4 v1, 0x0
 
-    .line 2
     const-class v2, Ljava/io/File;
 
     aput-object v2, v0, v1
@@ -72,14 +69,12 @@
 
     aput-object v3, v0, v1
 
-    .line 3
     invoke-virtual {p1, v0}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object p1
 
     iput-object p1, p0, Landroidx/multidex/a$a$c;->a:Ljava/lang/reflect/Constructor;
 
-    .line 4
     invoke-virtual {p1, v2}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
 
     return-void
@@ -98,7 +93,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/multidex/a$a$c;->a:Ljava/lang/reflect/Constructor;
 
     const/4 v1, 0x3

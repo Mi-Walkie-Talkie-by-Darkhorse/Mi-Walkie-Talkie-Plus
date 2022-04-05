@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider$TileLoader;
 .super Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$TileLoader;
-.source "MapTileSqlCacheProvider.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method protected constructor <init>(Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;
 
     invoke-direct {p0, p1}, Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase$TileLoader;-><init>(Lorg/osmdroid/tileprovider/modules/MapTileModuleProviderBase;)V
@@ -35,7 +33,6 @@
 .method public loadTile(Lorg/osmdroid/tileprovider/MapTileRequestState;)Landroid/graphics/drawable/Drawable;
     .locals 14
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;
 
     invoke-static {v0}, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->access$000(Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;)Ljava/util/concurrent/atomic/AtomicReference;
@@ -54,13 +51,11 @@
 
     return-object v1
 
-    .line 2
     :cond_0
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTileRequestState;->getMapTile()Lorg/osmdroid/tileprovider/MapTile;
 
     move-result-object p1
 
-    .line 3
     invoke-static {}, Lorg/osmdroid/tileprovider/modules/MapTileFileStorageProviderBase;->isSdCardAvailable()Z
 
     move-result v2
@@ -69,7 +64,6 @@
 
     if-nez v2, :cond_2
 
-    .line 4
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v0
@@ -80,7 +74,6 @@
 
     if-eqz v0, :cond_1
 
-    .line 5
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -100,7 +93,6 @@
     :cond_1
     return-object v1
 
-    .line 6
     :cond_2
     iget-object v2, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;
 
@@ -122,7 +114,6 @@
 
     goto/16 :goto_3
 
-    .line 7
     :cond_3
     :try_start_0
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getX()I
@@ -131,14 +122,12 @@
 
     int-to-long v4, v2
 
-    .line 8
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getY()I
 
     move-result v2
 
     int-to-long v6, v2
 
-    .line 9
     invoke-virtual {p1}, Lorg/osmdroid/tileprovider/MapTile;->getZoomLevel()I
 
     move-result v2
@@ -155,7 +144,6 @@
 
     add-long/2addr v4, v6
 
-    .line 10
     iget-object v2, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;
 
     invoke-static {v2}, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->access$100(Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;)Lorg/osmdroid/tileprovider/modules/SqlTileWriter;
@@ -212,19 +200,16 @@
 
     const-wide/16 v4, 0x0
 
-    .line 11
     invoke-interface {v2}, Landroid/database/Cursor;->getCount()I
 
     move-result v6
 
     if-eqz v6, :cond_4
 
-    .line 12
     invoke-interface {v2}, Landroid/database/Cursor;->moveToFirst()Z
 
     const-string v4, "tile"
 
-    .line 13
     invoke-interface {v2, v4}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v4
@@ -235,7 +220,6 @@
 
     const-string v5, "expires"
 
-    .line 14
     invoke-interface {v2, v5}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
 
     move-result v5
@@ -251,7 +235,6 @@
 
     move-object v4, v1
 
-    .line 15
     :goto_0
     invoke-interface {v2}, Landroid/database/Cursor;->close()V
 
@@ -259,7 +242,6 @@
 
     if-nez v4, :cond_6
 
-    .line 16
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v4
@@ -270,7 +252,6 @@
 
     if-eqz v4, :cond_5
 
-    .line 17
     new-instance v4, Ljava/lang/StringBuilder;
 
     invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
@@ -293,7 +274,6 @@
 
     invoke-static {v3, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 18
     sget p1, Lorg/osmdroid/tileprovider/util/Counters;->fileCacheMiss:I
 
     add-int/2addr p1, v2
@@ -303,7 +283,6 @@
     :cond_5
     return-object v1
 
-    .line 19
     :cond_6
     new-instance v7, Ljava/io/ByteArrayInputStream;
 
@@ -311,18 +290,15 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
-    .line 20
     :try_start_1
     invoke-interface {v0, v7}, Lorg/osmdroid/tileprovider/tilesource/ITileSource;->getDrawable(Ljava/io/InputStream;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
 
-    .line 21
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v8
 
-    .line 22
     iget-object v10, p0, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider$TileLoader;->this$0:Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;
 
     invoke-static {v10}, Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;->access$300(Lorg/osmdroid/tileprovider/modules/MapTileSqlCacheProvider;)J
@@ -347,7 +323,6 @@
 
     if-eqz v4, :cond_9
 
-    .line 23
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
 
     move-result-object v5
@@ -358,7 +333,6 @@
 
     if-eqz v5, :cond_8
 
-    .line 24
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -381,11 +355,9 @@
 
     invoke-static {v3, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 25
     :cond_8
     invoke-static {v4}, Lorg/osmdroid/tileprovider/ExpirableBitmapDrawable;->setDrawableExpired(Landroid/graphics/drawable/Drawable;)V
 
-    .line 26
     :cond_9
     sget p1, Lorg/osmdroid/tileprovider/util/Counters;->fileCacheHit:I
 
@@ -395,7 +367,6 @@
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    .line 27
     invoke-static {v7}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
     return-object v4
@@ -414,14 +385,12 @@
     :try_start_2
     const-string v0, "Error loading tile"
 
-    .line 28
     invoke-static {v3, v0, p1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
     if-eqz v7, :cond_a
 
-    .line 29
     invoke-static {v7}, Lorg/osmdroid/tileprovider/util/StreamUtils;->closeStream(Ljava/io/Closeable;)V
 
     :cond_a
@@ -437,7 +406,6 @@
     :cond_b
     throw p1
 
-    .line 30
     :cond_c
     :goto_3
     invoke-static {}, Lorg/osmdroid/config/Configuration;->getInstance()Lorg/osmdroid/config/IConfigurationProvider;
@@ -450,7 +418,6 @@
 
     if-eqz v0, :cond_d
 
-    .line 31
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V

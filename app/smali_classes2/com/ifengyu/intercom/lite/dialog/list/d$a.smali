@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/dialog/list/d$a;
 .super Landroidx/recyclerview/widget/LinearLayoutManager;
-.source "ItemListBuilder.java"
 
 
 # annotations
@@ -18,7 +17,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/dialog/list/d;Landroid/content/Context;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/LinearLayoutManager;-><init>(Landroid/content/Context;)V
 
     return-void
@@ -29,7 +27,6 @@
 .method public generateDefaultLayoutParams()Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
     .locals 3
 
-    .line 1
     new-instance v0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
 
     const/4 v1, -0x1

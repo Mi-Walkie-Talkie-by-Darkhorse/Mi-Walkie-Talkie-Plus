@@ -1,6 +1,5 @@
 .class public Lorg/greenrobot/greendao/async/AsyncOperation;
 .super Ljava/lang/Object;
-.source "AsyncOperation.java"
 
 
 # annotations
@@ -71,29 +70,22 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->type:Lorg/greenrobot/greendao/async/AsyncOperation$OperationType;
 
-    .line 3
     iput p5, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->flags:I
 
-    .line 4
     iput-object p2, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
-    .line 5
     iput-object p3, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->database:Lorg/greenrobot/greendao/database/Database;
 
-    .line 6
     iput-object p4, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->parameter:Ljava/lang/Object;
 
     and-int/lit8 p1, p5, 0x4
 
     if-eqz p1, :cond_0
 
-    .line 7
     new-instance p1, Ljava/lang/Exception;
 
     const-string p2, "AsyncOperation was created here"
@@ -116,7 +108,6 @@
 .method public getCreatorStacktrace()Ljava/lang/Exception;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->creatorStacktrace:Ljava/lang/Exception;
 
     return-object v0
@@ -125,7 +116,6 @@
 .method getDatabase()Lorg/greenrobot/greendao/database/Database;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->database:Lorg/greenrobot/greendao/database/Database;
 
     if-eqz v0, :cond_0
@@ -146,7 +136,6 @@
 .method public getDuration()J
     .locals 5
 
-    .line 1
     iget-wide v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->timeCompleted:J
 
     const-wide/16 v2, 0x0
@@ -155,7 +144,6 @@
 
     if-eqz v4, :cond_0
 
-    .line 2
     iget-wide v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->timeCompleted:J
 
     iget-wide v2, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->timeStarted:J
@@ -164,7 +152,6 @@
 
     return-wide v0
 
-    .line 3
     :cond_0
     new-instance v0, Lorg/greenrobot/greendao/DaoException;
 
@@ -178,7 +165,6 @@
 .method public getMergedOperationsCount()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->mergedOperationsCount:I
 
     return v0
@@ -187,7 +173,6 @@
 .method public getParameter()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->parameter:Ljava/lang/Object;
 
     return-object v0
@@ -198,22 +183,18 @@
 
     monitor-enter p0
 
-    .line 1
     :try_start_0
     iget-boolean v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->completed:Z
 
     if-nez v0, :cond_0
 
-    .line 2
     invoke-virtual {p0}, Lorg/greenrobot/greendao/async/AsyncOperation;->waitForCompletion()Ljava/lang/Object;
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->throwable:Ljava/lang/Throwable;
 
     if-nez v0, :cond_1
 
-    .line 4
     iget-object v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->result:Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -222,7 +203,6 @@
 
     return-object v0
 
-    .line 5
     :cond_1
     :try_start_1
     new-instance v0, Lorg/greenrobot/greendao/async/AsyncDaoException;
@@ -246,7 +226,6 @@
 .method public getSequenceNumber()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->sequenceNumber:I
 
     return v0
@@ -255,7 +234,6 @@
 .method public getThrowable()Ljava/lang/Throwable;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->throwable:Ljava/lang/Throwable;
 
     return-object v0
@@ -264,7 +242,6 @@
 .method public getTimeCompleted()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->timeCompleted:J
 
     return-wide v0
@@ -273,7 +250,6 @@
 .method public getTimeStarted()J
     .locals 2
 
-    .line 1
     iget-wide v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->timeStarted:J
 
     return-wide v0
@@ -282,7 +258,6 @@
 .method public getType()Lorg/greenrobot/greendao/async/AsyncOperation$OperationType;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->type:Lorg/greenrobot/greendao/async/AsyncOperation$OperationType;
 
     return-object v0
@@ -291,7 +266,6 @@
 .method public isCompleted()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->completed:Z
 
     return v0
@@ -300,7 +274,6 @@
 .method public isCompletedSucessfully()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->completed:Z
 
     if-eqz v0, :cond_0
@@ -323,7 +296,6 @@
 .method public isFailed()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->throwable:Ljava/lang/Throwable;
 
     if-eqz v0, :cond_0
@@ -342,7 +314,6 @@
 .method public isMergeTx()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->flags:I
 
     const/4 v1, 0x1
@@ -365,7 +336,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 1
     invoke-virtual {p0}, Lorg/greenrobot/greendao/async/AsyncOperation;->isMergeTx()Z
 
     move-result v0
@@ -404,26 +374,20 @@
 
     const-wide/16 v0, 0x0
 
-    .line 1
     iput-wide v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->timeStarted:J
 
-    .line 2
     iput-wide v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->timeCompleted:J
 
     const/4 v0, 0x0
 
-    .line 3
     iput-boolean v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->completed:Z
 
     const/4 v1, 0x0
 
-    .line 4
     iput-object v1, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->throwable:Ljava/lang/Throwable;
 
-    .line 5
     iput-object v1, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->result:Ljava/lang/Object;
 
-    .line 6
     iput v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->mergedOperationsCount:I
 
     return-void
@@ -436,16 +400,13 @@
 
     const/4 v0, 0x1
 
-    .line 1
     :try_start_0
     iput-boolean v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->completed:Z
 
-    .line 2
     invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
     monitor-exit p0
 
     return-void
@@ -461,7 +422,6 @@
 .method public setThrowable(Ljava/lang/Throwable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->throwable:Ljava/lang/Throwable;
 
     return-void
@@ -472,7 +432,6 @@
 
     monitor-enter p0
 
-    .line 1
     :goto_0
     :try_start_0
     iget-boolean v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->completed:Z
@@ -481,7 +440,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     :try_start_1
     invoke-virtual {p0}, Ljava/lang/Object;->wait()V
     :try_end_1
@@ -493,7 +451,6 @@
     :catch_0
     move-exception v0
 
-    .line 3
     :try_start_2
     new-instance v1, Lorg/greenrobot/greendao/DaoException;
 
@@ -503,7 +460,6 @@
 
     throw v1
 
-    .line 4
     :cond_0
     iget-object v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->result:Ljava/lang/Object;
     :try_end_2
@@ -526,7 +482,6 @@
 
     monitor-enter p0
 
-    .line 5
     :try_start_0
     iget-boolean v0, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->completed:Z
     :try_end_0
@@ -536,7 +491,6 @@
 
     int-to-long v0, p1
 
-    .line 6
     :try_start_1
     invoke-virtual {p0, v0, v1}, Ljava/lang/Object;->wait(J)V
     :try_end_1
@@ -548,7 +502,6 @@
     :catch_0
     move-exception p1
 
-    .line 7
     :try_start_2
     new-instance v0, Lorg/greenrobot/greendao/DaoException;
 
@@ -558,7 +511,6 @@
 
     throw v0
 
-    .line 8
     :cond_0
     :goto_0
     iget-boolean p1, p0, Lorg/greenrobot/greendao/async/AsyncOperation;->completed:Z

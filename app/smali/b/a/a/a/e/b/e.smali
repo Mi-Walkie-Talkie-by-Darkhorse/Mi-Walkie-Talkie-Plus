@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/b/e;
 .super Ljava/lang/Object;
-.source "IDataSet.java"
 
 
 # annotations

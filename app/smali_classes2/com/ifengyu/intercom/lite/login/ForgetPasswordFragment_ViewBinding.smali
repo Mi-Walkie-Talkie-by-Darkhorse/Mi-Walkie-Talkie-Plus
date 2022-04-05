@@ -1,6 +1,5 @@
 .class public Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment_ViewBinding;
 .super Ljava/lang/Object;
-.source "ForgetPasswordFragment_ViewBinding.java"
 
 # interfaces
 .implements Lbutterknife/Unbinder;
@@ -16,13 +15,10 @@
     .annotation build Landroidx/annotation/UiThread;
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment_ViewBinding;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
-    .line 3
     const-class v0, Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
     const v1, 0x7f090426
@@ -37,7 +33,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
-    .line 4
     const-class v0, Lcom/ifengyu/intercom/ui/widget/view/FixedEditText;
 
     const v1, 0x7f090175
@@ -52,7 +47,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->mEtPhone:Lcom/ifengyu/intercom/ui/widget/view/FixedEditText;
 
-    .line 5
     const-class v0, Landroidx/appcompat/widget/AppCompatEditText;
 
     const v1, 0x7f090177
@@ -67,7 +61,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->mEtVerifyCode:Landroidx/appcompat/widget/AppCompatEditText;
 
-    .line 6
     const-class v0, Landroidx/appcompat/widget/AppCompatButton;
 
     const v1, 0x7f090099
@@ -82,7 +75,6 @@
 
     iput-object v0, p1, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->mBtnGetCode:Landroidx/appcompat/widget/AppCompatButton;
 
-    .line 7
     const-class v0, Landroidx/appcompat/widget/AppCompatButton;
 
     const v1, 0x7f090090
@@ -107,34 +99,26 @@
     .annotation build Landroidx/annotation/CallSuper;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment_ViewBinding;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
-    .line 2
     iput-object v1, p0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment_ViewBinding;->a:Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;
 
-    .line 3
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->mTopBar:Lcom/qmuiteam/qmui/widget/QMUITopBarLayout;
 
-    .line 4
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->mEtPhone:Lcom/ifengyu/intercom/ui/widget/view/FixedEditText;
 
-    .line 5
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->mEtVerifyCode:Landroidx/appcompat/widget/AppCompatEditText;
 
-    .line 6
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->mBtnGetCode:Landroidx/appcompat/widget/AppCompatButton;
 
-    .line 7
     iput-object v1, v0, Lcom/ifengyu/intercom/lite/login/ForgetPasswordFragment;->mBtnAction:Landroidx/appcompat/widget/AppCompatButton;
 
     return-void
 
-    .line 8
     :cond_0
     new-instance v0, Ljava/lang/IllegalStateException;
 

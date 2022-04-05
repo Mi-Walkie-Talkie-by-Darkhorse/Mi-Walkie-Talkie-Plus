@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$b;
 .super Ljava/lang/Object;
-.source "LiteSettingFragment.java"
 
 # interfaces
 .implements Landroidx/lifecycle/q;
@@ -34,7 +33,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$b;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,14 +45,12 @@
 .method public a(Lcom/ifengyu/intercom/lite/dto/UpgradeInfoDTO;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p1}, Lcom/ifengyu/intercom/lite/dto/UpgradeInfoDTO;->h()Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$b;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->getResources()Landroid/content/res/Resources;
@@ -67,7 +63,6 @@
 
     move-result-object p1
 
-    .line 3
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$b;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;->mItemUpdate:Lcom/ifengyu/library/widget/view/ItemView;
@@ -76,7 +71,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$b;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;
 
@@ -90,7 +84,6 @@
 
     move-result-object p1
 
-    .line 5
     iget-object v0, p0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$b;->a:Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;
 
     iget-object v0, v0, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment;->mItemUpdate:Lcom/ifengyu/library/widget/view/ItemView;
@@ -104,7 +97,6 @@
 .method public bridge synthetic onChanged(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     check-cast p1, Lcom/ifengyu/intercom/lite/dto/UpgradeInfoDTO;
 
     invoke-virtual {p0, p1}, Lcom/ifengyu/intercom/lite/fragment/LiteSettingFragment$b;->a(Lcom/ifengyu/intercom/lite/dto/UpgradeInfoDTO;)V

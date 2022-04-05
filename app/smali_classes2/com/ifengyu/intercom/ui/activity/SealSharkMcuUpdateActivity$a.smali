@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;
 .super Lcom/ifengyu/intercom/g/d/d;
-.source "SealSharkMcuUpdateActivity.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
 
     invoke-direct {p0, p2, p3}, Lcom/ifengyu/intercom/g/d/d;-><init>(Ljava/lang/String;Ljava/lang/String;)V
@@ -39,14 +37,12 @@
 
     if-eqz p1, :cond_1
 
-    .line 5
     invoke-virtual {p1}, Ljava/io/File;->exists()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    .line 6
     invoke-virtual {p1}, Ljava/io/File;->toString()Ljava/lang/String;
 
     move-result-object v0
@@ -71,19 +67,16 @@
 
     if-eqz v0, :cond_0
 
-    .line 7
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
 
     const/4 v0, 0x4
 
     invoke-static {p2, v0}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->a(Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;I)I
 
-    .line 8
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
 
     invoke-static {p2}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->b(Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;)V
 
-    .line 9
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
 
     invoke-virtual {p1}, Ljava/io/File;->toString()Ljava/lang/String;
@@ -94,26 +87,22 @@
 
     goto :goto_0
 
-    .line 10
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->a(Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;I)I
 
-    .line 11
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->b(Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;)V
 
     goto :goto_0
 
-    .line 12
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->a(Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;I)I
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->b(Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;)V
@@ -125,7 +114,6 @@
 .method public bridge synthetic a(Ljava/lang/Object;I)V
     .locals 0
 
-    .line 1
     check-cast p1, Ljava/io/File;
 
     invoke-virtual {p0, p1, p2}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->a(Ljava/io/File;I)V
@@ -136,7 +124,6 @@
 .method public a(Lokhttp3/Call;Ljava/lang/Exception;I)V
     .locals 1
 
-    .line 2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->a(Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;)Ljava/lang/String;
@@ -163,14 +150,12 @@
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/i/z;->b(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
 
     const/4 p2, 0x3
 
     invoke-static {p1, p2}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->a(Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;I)I
 
-    .line 4
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity$a;->d:Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;->b(Lcom/ifengyu/intercom/ui/activity/SealSharkMcuUpdateActivity;)V

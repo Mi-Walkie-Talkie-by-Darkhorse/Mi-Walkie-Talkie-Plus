@@ -1,6 +1,5 @@
 .class public interface abstract annotation Lcom/qmuiteam/qmui/arch/annotation/LatestVisitRecord;
 .super Ljava/lang/Object;
-.source "LatestVisitRecord.java"
 
 # interfaces
 .implements Ljava/lang/annotation/Annotation;

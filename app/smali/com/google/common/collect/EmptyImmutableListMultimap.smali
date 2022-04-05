@@ -1,6 +1,5 @@
 .class Lcom/google/common/collect/EmptyImmutableListMultimap;
 .super Lcom/google/common/collect/ImmutableListMultimap;
-.source "EmptyImmutableListMultimap.java"
 
 
 # annotations
@@ -28,7 +27,6 @@
 .method static constructor <clinit>()V
     .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/common/collect/EmptyImmutableListMultimap;
 
     invoke-direct {v0}, Lcom/google/common/collect/EmptyImmutableListMultimap;-><init>()V
@@ -41,7 +39,6 @@
 .method private constructor <init>()V
     .locals 2
 
-    .line 1
     invoke-static {}, Lcom/google/common/collect/ImmutableMap;->of()Lcom/google/common/collect/ImmutableMap;
 
     move-result-object v0
@@ -56,7 +53,6 @@
 .method private readResolve()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/common/collect/EmptyImmutableListMultimap;->INSTANCE:Lcom/google/common/collect/EmptyImmutableListMultimap;
 
     return-object v0

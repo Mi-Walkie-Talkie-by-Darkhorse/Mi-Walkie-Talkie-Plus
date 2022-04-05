@@ -1,6 +1,5 @@
 .class public Lorg/greenrobot/greendao/InternalUnitTestDaoAccess;
 .super Ljava/lang/Object;
-.source "InternalUnitTestDaoAccess.java"
 
 
 # annotations
@@ -48,22 +47,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     new-instance v0, Lorg/greenrobot/greendao/internal/DaoConfig;
 
     invoke-direct {v0, p1, p2}, Lorg/greenrobot/greendao/internal/DaoConfig;-><init>(Lorg/greenrobot/greendao/database/Database;Ljava/lang/Class;)V
 
-    .line 3
     invoke-virtual {v0, p3}, Lorg/greenrobot/greendao/internal/DaoConfig;->setIdentityScope(Lorg/greenrobot/greendao/identityscope/IdentityScope;)V
 
     const/4 p1, 0x1
 
     new-array p3, p1, [Ljava/lang/Class;
 
-    .line 4
     const-class v1, Lorg/greenrobot/greendao/internal/DaoConfig;
 
     const/4 v2, 0x0
@@ -78,7 +73,6 @@
 
     aput-object v0, p1, v2
 
-    .line 5
     invoke-virtual {p2, p1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -102,7 +96,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/InternalUnitTestDaoAccess;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     return-object v0
@@ -116,7 +109,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/InternalUnitTestDaoAccess;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     invoke-virtual {v0, p1}, Lorg/greenrobot/greendao/AbstractDao;->getKey(Ljava/lang/Object;)Ljava/lang/Object;
@@ -129,7 +121,6 @@
 .method public getProperties()[Lorg/greenrobot/greendao/Property;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/InternalUnitTestDaoAccess;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     invoke-virtual {v0}, Lorg/greenrobot/greendao/AbstractDao;->getProperties()[Lorg/greenrobot/greendao/Property;
@@ -142,7 +133,6 @@
 .method public isEntityUpdateable()Z
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/InternalUnitTestDaoAccess;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     invoke-virtual {v0}, Lorg/greenrobot/greendao/AbstractDao;->isEntityUpdateable()Z
@@ -162,7 +152,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/InternalUnitTestDaoAccess;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     invoke-virtual {v0, p1, p2}, Lorg/greenrobot/greendao/AbstractDao;->readEntity(Landroid/database/Cursor;I)Ljava/lang/Object;
@@ -182,7 +171,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/InternalUnitTestDaoAccess;->dao:Lorg/greenrobot/greendao/AbstractDao;
 
     invoke-virtual {v0, p1, p2}, Lorg/greenrobot/greendao/AbstractDao;->readKey(Landroid/database/Cursor;I)Ljava/lang/Object;

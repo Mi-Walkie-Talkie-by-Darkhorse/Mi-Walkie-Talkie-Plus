@@ -1,6 +1,5 @@
 .class public interface abstract Lno/nordicsemi/android/ble/w2/a;
 .super Ljava/lang/Object;
-.source "BondingObserver.java"
 
 
 # virtual methods

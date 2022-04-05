@@ -1,6 +1,5 @@
 .class public Lorg/osmdroid/views/overlay/ItemizedIconOverlay;
 .super Lorg/osmdroid/views/overlay/ItemizedOverlay;
-.source "ItemizedIconOverlay.java"
 
 
 # annotations
@@ -60,7 +59,6 @@
         }
     .end annotation
 
-    .line 8
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -91,28 +89,22 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p2}, Lorg/osmdroid/views/overlay/ItemizedOverlay;-><init>(Landroid/graphics/drawable/Drawable;)V
 
     const p2, 0x7fffffff
 
-    .line 2
     iput p2, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mDrawnItemsLimit:I
 
-    .line 3
     new-instance p2, Landroid/graphics/Point;
 
     invoke-direct {p2}, Landroid/graphics/Point;-><init>()V
 
     iput-object p2, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemPoint:Landroid/graphics/Point;
 
-    .line 4
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
-    .line 5
     iput-object p3, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mOnItemGestureListener:Lorg/osmdroid/views/overlay/ItemizedIconOverlay$OnItemGestureListener;
 
-    .line 6
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/ItemizedOverlay;->populate()V
 
     return-void
@@ -132,7 +124,6 @@
         }
     .end annotation
 
-    .line 7
     invoke-virtual {p3}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
@@ -151,19 +142,16 @@
 .method private activateSelectedItems(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;Lorg/osmdroid/views/overlay/ItemizedIconOverlay$ActiveItem;)Z
     .locals 7
 
-    .line 1
     invoke-virtual {p2}, Lorg/osmdroid/views/MapView;->getProjection()Lorg/osmdroid/views/Projection;
 
     move-result-object p2
 
-    .line 2
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getX()F
 
     move-result v0
 
     float-to-int v0, v0
 
-    .line 3
     invoke-virtual {p1}, Landroid/view/MotionEvent;->getY()F
 
     move-result p1
@@ -174,7 +162,6 @@
 
     const/4 v2, 0x0
 
-    .line 4
     :goto_0
     iget-object v3, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
@@ -184,7 +171,6 @@
 
     if-ge v2, v3, :cond_3
 
-    .line 5
     invoke-virtual {p0, v2}, Lorg/osmdroid/views/overlay/ItemizedOverlay;->getItem(I)Lorg/osmdroid/views/overlay/OverlayItem;
 
     move-result-object v3
@@ -193,7 +179,6 @@
 
     goto :goto_2
 
-    .line 6
     :cond_0
     invoke-virtual {v3, v1}, Lorg/osmdroid/views/overlay/OverlayItem;->getMarker(I)Landroid/graphics/drawable/Drawable;
 
@@ -205,13 +190,11 @@
 
     goto :goto_1
 
-    .line 7
     :cond_1
     invoke-virtual {v3, v1}, Lorg/osmdroid/views/overlay/OverlayItem;->getMarker(I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v4
 
-    .line 8
     :goto_1
     invoke-virtual {v3}, Lorg/osmdroid/views/overlay/OverlayItem;->getPoint()Lorg/osmdroid/api/IGeoPoint;
 
@@ -221,7 +204,6 @@
 
     invoke-virtual {p2, v5, v6}, Lorg/osmdroid/views/Projection;->toPixels(Lorg/osmdroid/api/IGeoPoint;Landroid/graphics/Point;)Landroid/graphics/Point;
 
-    .line 9
     iget-object v5, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemPoint:Landroid/graphics/Point;
 
     iget v6, v5, Landroid/graphics/Point;->x:I
@@ -238,7 +220,6 @@
 
     if-eqz v3, :cond_2
 
-    .line 10
     invoke-interface {p3, v2}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay$ActiveItem;->run(I)Z
 
     move-result v3
@@ -269,12 +250,10 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
     invoke-interface {v0, p1, p2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
-    .line 4
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/ItemizedOverlay;->populate()V
 
     return-void
@@ -288,14 +267,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     move-result p1
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/ItemizedOverlay;->populate()V
 
     return p1
@@ -311,14 +288,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     move-result p1
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/ItemizedOverlay;->populate()V
 
     return p1
@@ -332,7 +307,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -347,7 +321,6 @@
 .method public getDrawnItemsLimit()I
     .locals 1
 
-    .line 1
     iget v0, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mDrawnItemsLimit:I
 
     return v0
@@ -356,21 +329,17 @@
 .method public onDetach(Lorg/osmdroid/views/MapView;)V
     .locals 0
 
-    .line 1
     iget-object p1, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
     if-eqz p1, :cond_0
 
-    .line 2
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
     :cond_0
     const/4 p1, 0x0
 
-    .line 3
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
-    .line 4
     iput-object p1, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mOnItemGestureListener:Lorg/osmdroid/views/overlay/ItemizedIconOverlay$OnItemGestureListener;
 
     return-void
@@ -379,7 +348,6 @@
 .method public onLongPress(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 1
 
-    .line 1
     new-instance v0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay$2;
 
     invoke-direct {v0, p0}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay$2;-><init>(Lorg/osmdroid/views/overlay/ItemizedIconOverlay;)V
@@ -394,7 +362,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-super {p0, p1, p2}, Lorg/osmdroid/views/overlay/Overlay;->onLongPress(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
 
@@ -412,7 +379,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mOnItemGestureListener:Lorg/osmdroid/views/overlay/ItemizedIconOverlay$OnItemGestureListener;
 
     invoke-interface {v0, p1, p2}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay$OnItemGestureListener;->onItemLongPress(ILjava/lang/Object;)Z
@@ -425,7 +391,6 @@
 .method public onSingleTapConfirmed(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
     .locals 1
 
-    .line 1
     new-instance v0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay$1;
 
     invoke-direct {v0, p0, p2}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay$1;-><init>(Lorg/osmdroid/views/overlay/ItemizedIconOverlay;Lorg/osmdroid/views/MapView;)V
@@ -440,7 +405,6 @@
 
     goto :goto_0
 
-    .line 2
     :cond_0
     invoke-super {p0, p1, p2}, Lorg/osmdroid/views/overlay/ItemizedOverlay;->onSingleTapConfirmed(Landroid/view/MotionEvent;Lorg/osmdroid/views/MapView;)Z
 
@@ -460,7 +424,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object p3, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mOnItemGestureListener:Lorg/osmdroid/views/overlay/ItemizedIconOverlay$OnItemGestureListener;
 
     invoke-interface {p3, p1, p2}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay$OnItemGestureListener;->onItemSingleTapUp(ILjava/lang/Object;)Z
@@ -483,7 +446,6 @@
 
     const/4 v0, 0x1
 
-    .line 1
     invoke-virtual {p0, v0}, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->removeAllItems(Z)V
 
     return-void
@@ -492,14 +454,12 @@
 .method public removeAllItems(Z)V
     .locals 1
 
-    .line 2
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     if-eqz p1, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/ItemizedOverlay;->populate()V
 
     :cond_0
@@ -514,7 +474,6 @@
         }
     .end annotation
 
-    .line 3
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(I)Ljava/lang/Object;
@@ -523,7 +482,6 @@
 
     check-cast p1, Lorg/osmdroid/views/overlay/OverlayItem;
 
-    .line 4
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/ItemizedOverlay;->populate()V
 
     return-object p1
@@ -537,14 +495,12 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     move-result p1
 
-    .line 2
     invoke-virtual {p0}, Lorg/osmdroid/views/overlay/ItemizedOverlay;->populate()V
 
     return p1
@@ -553,7 +509,6 @@
 .method public setDrawnItemsLimit(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mDrawnItemsLimit:I
 
     return-void
@@ -562,7 +517,6 @@
 .method public size()I
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/osmdroid/views/overlay/ItemizedIconOverlay;->mItemList:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I

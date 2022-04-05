@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/j$d;
 .super Ljava/lang/Object;
-.source "AMapDelegateImp.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -29,15 +28,12 @@
 .method public constructor <init>(Lcom/amap/api/col/l3/j;Landroid/content/Context;Lcom/amap/api/maps/AMap$OnCacheRemoveListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/amap/api/col/l3/j$d;->a:Lcom/amap/api/col/l3/j;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p2, p0, Lcom/amap/api/col/l3/j$d;->b:Landroid/content/Context;
 
-    .line 3
     iput-object p3, p0, Lcom/amap/api/col/l3/j$d;->c:Lcom/amap/api/maps/AMap$OnCacheRemoveListener;
 
     return-void
@@ -48,7 +44,6 @@
 .method public final equals(Ljava/lang/Object;)Z
     .locals 0
 
-    .line 1
     instance-of p1, p1, Lcom/amap/api/col/l3/j$d;
 
     return p1
@@ -61,7 +56,6 @@
 
     const/4 v1, 0x1
 
-    .line 1
     :try_start_0
     iget-object v2, p0, Lcom/amap/api/col/l3/j$d;->b:Landroid/content/Context;
 
@@ -69,22 +63,18 @@
 
     move-result-object v2
 
-    .line 2
     invoke-static {v2}, Lcom/amap/api/col/l3/em;->b(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v3
 
-    .line 3
     invoke-static {v2}, Lcom/amap/api/col/l3/em;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
-    .line 4
     new-instance v4, Ljava/io/File;
 
     invoke-direct {v4, v3}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 5
     invoke-static {v4}, Lcom/autonavi/amap/mapcore/FileUtil;->deleteFile(Ljava/io/File;)Z
 
     move-result v3
@@ -93,7 +83,6 @@
 
     if-eqz v3, :cond_0
 
-    .line 6
     :try_start_1
     new-instance v4, Ljava/io/File;
 
@@ -117,7 +106,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 7
     :goto_0
     :try_start_2
     iget-object v2, p0, Lcom/amap/api/col/l3/j$d;->a:Lcom/amap/api/col/l3/j;
@@ -128,7 +116,6 @@
 
     if-eqz v2, :cond_1
 
-    .line 8
     iget-object v2, p0, Lcom/amap/api/col/l3/j$d;->a:Lcom/amap/api/col/l3/j;
 
     invoke-static {v2}, Lcom/amap/api/col/l3/j;->l(Lcom/amap/api/col/l3/j;)Lcom/amap/api/col/l3/ae;
@@ -139,7 +126,6 @@
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
 
-    .line 9
     :cond_1
     :try_start_3
     iget-object v0, p0, Lcom/amap/api/col/l3/j$d;->a:Lcom/amap/api/col/l3/j;
@@ -148,7 +134,6 @@
 
     if-eqz v0, :cond_2
 
-    .line 10
     iget-object v0, p0, Lcom/amap/api/col/l3/j$d;->a:Lcom/amap/api/col/l3/j;
 
     iget-object v2, v0, Lcom/amap/api/col/l3/j;->f:Lcom/autonavi/ae/gmap/GLMapEngine;
@@ -167,13 +152,11 @@
 
     invoke-virtual/range {v2 .. v8}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
-    .line 11
     :cond_2
     iget-object v0, p0, Lcom/amap/api/col/l3/j$d;->c:Lcom/amap/api/maps/AMap$OnCacheRemoveListener;
 
     if-eqz v0, :cond_3
 
-    .line 12
     iget-object v0, p0, Lcom/amap/api/col/l3/j$d;->c:Lcom/amap/api/maps/AMap$OnCacheRemoveListener;
 
     invoke-interface {v0, v1}, Lcom/amap/api/maps/AMap$OnCacheRemoveListener;->onRemoveCacheFinish(Z)V
@@ -186,7 +169,6 @@
     :catchall_1
     move-exception v0
 
-    .line 13
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -213,12 +195,10 @@
 
     const-string v4, "RemoveCacheRunnable"
 
-    .line 14
     invoke-static {v1, v2, v4}, Lcom/amap/api/col/l3/gv;->c(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_5
 
-    .line 15
     :try_start_5
     iget-object v1, p0, Lcom/amap/api/col/l3/j$d;->a:Lcom/amap/api/col/l3/j;
 
@@ -226,7 +206,6 @@
 
     if-eqz v1, :cond_4
 
-    .line 16
     iget-object v1, p0, Lcom/amap/api/col/l3/j$d;->a:Lcom/amap/api/col/l3/j;
 
     iget-object v2, v1, Lcom/amap/api/col/l3/j;->f:Lcom/autonavi/ae/gmap/GLMapEngine;
@@ -245,13 +224,11 @@
 
     invoke-virtual/range {v2 .. v8}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
-    .line 17
     :cond_4
     iget-object v1, p0, Lcom/amap/api/col/l3/j$d;->c:Lcom/amap/api/maps/AMap$OnCacheRemoveListener;
 
     if-eqz v1, :cond_5
 
-    .line 18
     iget-object v1, p0, Lcom/amap/api/col/l3/j$d;->c:Lcom/amap/api/maps/AMap$OnCacheRemoveListener;
 
     invoke-interface {v1, v0}, Lcom/amap/api/maps/AMap$OnCacheRemoveListener;->onRemoveCacheFinish(Z)V
@@ -264,7 +241,6 @@
     :catchall_4
     move-exception v0
 
-    .line 19
     invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -272,7 +248,6 @@
     :catchall_5
     move-exception v0
 
-    .line 20
     :try_start_6
     iget-object v1, p0, Lcom/amap/api/col/l3/j$d;->a:Lcom/amap/api/col/l3/j;
 
@@ -280,7 +255,6 @@
 
     if-eqz v1, :cond_6
 
-    .line 21
     iget-object v1, p0, Lcom/amap/api/col/l3/j$d;->a:Lcom/amap/api/col/l3/j;
 
     iget-object v4, v1, Lcom/amap/api/col/l3/j;->f:Lcom/autonavi/ae/gmap/GLMapEngine;
@@ -299,13 +273,11 @@
 
     invoke-virtual/range {v4 .. v10}, Lcom/autonavi/ae/gmap/GLMapEngine;->setParamater(IIIIII)V
 
-    .line 22
     :cond_6
     iget-object v1, p0, Lcom/amap/api/col/l3/j$d;->c:Lcom/amap/api/maps/AMap$OnCacheRemoveListener;
 
     if-eqz v1, :cond_7
 
-    .line 23
     iget-object v1, p0, Lcom/amap/api/col/l3/j$d;->c:Lcom/amap/api/maps/AMap$OnCacheRemoveListener;
 
     invoke-interface {v1, v3}, Lcom/amap/api/maps/AMap$OnCacheRemoveListener;->onRemoveCacheFinish(Z)V
@@ -317,10 +289,8 @@
     :catchall_6
     move-exception v1
 
-    .line 24
     invoke-virtual {v1}, Ljava/lang/Throwable;->printStackTrace()V
 
-    .line 25
     :cond_7
     :goto_2
     throw v0

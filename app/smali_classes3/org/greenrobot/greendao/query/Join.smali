@@ -1,6 +1,5 @@
 .class public Lorg/greenrobot/greendao/query/Join;
 .super Ljava/lang/Object;
-.source "Join.java"
 
 
 # annotations
@@ -60,25 +59,18 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lorg/greenrobot/greendao/query/Join;->sourceTablePrefix:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Lorg/greenrobot/greendao/query/Join;->joinPropertySource:Lorg/greenrobot/greendao/Property;
 
-    .line 4
     iput-object p3, p0, Lorg/greenrobot/greendao/query/Join;->daoDestination:Lorg/greenrobot/greendao/AbstractDao;
 
-    .line 5
     iput-object p4, p0, Lorg/greenrobot/greendao/query/Join;->joinPropertyDestination:Lorg/greenrobot/greendao/Property;
 
-    .line 6
     iput-object p5, p0, Lorg/greenrobot/greendao/query/Join;->tablePrefix:Ljava/lang/String;
 
-    .line 7
     new-instance p1, Lorg/greenrobot/greendao/query/WhereCollector;
 
     invoke-direct {p1, p3, p5}, Lorg/greenrobot/greendao/query/WhereCollector;-><init>(Lorg/greenrobot/greendao/AbstractDao;Ljava/lang/String;)V
@@ -93,7 +85,6 @@
 .method public varargs and(Lorg/greenrobot/greendao/query/WhereCondition;Lorg/greenrobot/greendao/query/WhereCondition;[Lorg/greenrobot/greendao/query/WhereCondition;)Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/Join;->whereCollector:Lorg/greenrobot/greendao/query/WhereCollector;
 
     const-string v1, " AND "
@@ -108,7 +99,6 @@
 .method public getTablePrefix()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/Join;->tablePrefix:Ljava/lang/String;
 
     return-object v0
@@ -117,7 +107,6 @@
 .method public varargs or(Lorg/greenrobot/greendao/query/WhereCondition;Lorg/greenrobot/greendao/query/WhereCondition;[Lorg/greenrobot/greendao/query/WhereCondition;)Lorg/greenrobot/greendao/query/WhereCondition;
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/Join;->whereCollector:Lorg/greenrobot/greendao/query/WhereCollector;
 
     const-string v1, " OR "
@@ -143,7 +132,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/Join;->whereCollector:Lorg/greenrobot/greendao/query/WhereCollector;
 
     invoke-virtual {v0, p1, p2}, Lorg/greenrobot/greendao/query/WhereCollector;->add(Lorg/greenrobot/greendao/query/WhereCondition;[Lorg/greenrobot/greendao/query/WhereCondition;)V
@@ -166,7 +154,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/query/Join;->whereCollector:Lorg/greenrobot/greendao/query/WhereCollector;
 
     invoke-virtual {p0, p1, p2, p3}, Lorg/greenrobot/greendao/query/Join;->or(Lorg/greenrobot/greendao/query/WhereCondition;Lorg/greenrobot/greendao/query/WhereCondition;[Lorg/greenrobot/greendao/query/WhereCondition;)Lorg/greenrobot/greendao/query/WhereCondition;

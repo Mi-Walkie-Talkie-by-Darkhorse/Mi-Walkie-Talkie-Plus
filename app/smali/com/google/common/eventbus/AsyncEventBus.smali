@@ -1,6 +1,5 @@
 .class public Lcom/google/common/eventbus/AsyncEventBus;
 .super Lcom/google/common/eventbus/EventBus;
-.source "AsyncEventBus.java"
 
 
 # annotations
@@ -26,17 +25,14 @@
 .method public constructor <init>(Ljava/lang/String;Ljava/util/concurrent/Executor;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/google/common/eventbus/EventBus;-><init>(Ljava/lang/String;)V
 
-    .line 2
     new-instance p1, Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-direct {p1}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
 
     iput-object p1, p0, Lcom/google/common/eventbus/AsyncEventBus;->eventsToDispatch:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-    .line 3
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -53,17 +49,14 @@
 
     const-string v0, "default"
 
-    .line 7
     invoke-direct {p0, v0}, Lcom/google/common/eventbus/EventBus;-><init>(Ljava/lang/String;)V
 
-    .line 8
     new-instance v0, Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-direct {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
 
     iput-object v0, p0, Lcom/google/common/eventbus/AsyncEventBus;->eventsToDispatch:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-    .line 9
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -78,17 +71,14 @@
 .method public constructor <init>(Ljava/util/concurrent/Executor;Lcom/google/common/eventbus/SubscriberExceptionHandler;)V
     .locals 0
 
-    .line 4
     invoke-direct {p0, p2}, Lcom/google/common/eventbus/EventBus;-><init>(Lcom/google/common/eventbus/SubscriberExceptionHandler;)V
 
-    .line 5
     new-instance p2, Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-direct {p2}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
 
     iput-object p2, p0, Lcom/google/common/eventbus/AsyncEventBus;->eventsToDispatch:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
-    .line 6
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
@@ -103,7 +93,6 @@
 .method static synthetic access$001(Lcom/google/common/eventbus/AsyncEventBus;Ljava/lang/Object;Lcom/google/common/eventbus/EventSubscriber;)V
     .locals 0
 
-    .line 1
     invoke-super {p0, p1, p2}, Lcom/google/common/eventbus/EventBus;->dispatch(Ljava/lang/Object;Lcom/google/common/eventbus/EventSubscriber;)V
 
     return-void
@@ -114,13 +103,10 @@
 .method dispatch(Ljava/lang/Object;Lcom/google/common/eventbus/EventSubscriber;)V
     .locals 2
 
-    .line 1
     invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 2
     invoke-static {p2}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
     iget-object v0, p0, Lcom/google/common/eventbus/AsyncEventBus;->executor:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lcom/google/common/eventbus/AsyncEventBus$1;
@@ -135,7 +121,6 @@
 .method protected dispatchQueuedEvents()V
     .locals 2
 
-    .line 1
     :goto_0
     iget-object v0, p0, Lcom/google/common/eventbus/AsyncEventBus;->eventsToDispatch:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
@@ -149,7 +134,6 @@
 
     return-void
 
-    .line 2
     :cond_0
     iget-object v1, v0, Lcom/google/common/eventbus/EventBus$EventWithSubscriber;->event:Ljava/lang/Object;
 
@@ -163,7 +147,6 @@
 .method enqueueEvent(Ljava/lang/Object;Lcom/google/common/eventbus/EventSubscriber;)V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/eventbus/AsyncEventBus;->eventsToDispatch:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     new-instance v1, Lcom/google/common/eventbus/EventBus$EventWithSubscriber;

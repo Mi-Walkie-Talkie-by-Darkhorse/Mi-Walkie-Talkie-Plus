@@ -1,6 +1,5 @@
 .class public Landroidx/media/MediaBrowserServiceCompat$m;
 .super Ljava/lang/Object;
-.source "MediaBrowserServiceCompat.java"
 
 
 # annotations
@@ -39,10 +38,8 @@
 .method constructor <init>(Ljava/lang/Object;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
     iput-object p1, p0, Landroidx/media/MediaBrowserServiceCompat$m;->a:Ljava/lang/Object;
 
     return-void
@@ -53,7 +50,6 @@
 .method a()I
     .locals 1
 
-    .line 2
     iget v0, p0, Landroidx/media/MediaBrowserServiceCompat$m;->e:I
 
     return v0
@@ -62,7 +58,6 @@
 .method a(I)V
     .locals 0
 
-    .line 1
     iput p1, p0, Landroidx/media/MediaBrowserServiceCompat$m;->e:I
 
     return-void
@@ -71,7 +66,6 @@
 .method a(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 3
     new-instance p1, Ljava/lang/UnsupportedOperationException;
 
     new-instance v0, Ljava/lang/StringBuilder;
@@ -111,7 +105,6 @@
 .method public b(Landroid/os/Bundle;)V
     .locals 2
 
-    .line 5
     iget-boolean v0, p0, Landroidx/media/MediaBrowserServiceCompat$m;->c:Z
 
     if-nez v0, :cond_0
@@ -122,15 +115,12 @@
 
     const/4 v0, 0x1
 
-    .line 6
     iput-boolean v0, p0, Landroidx/media/MediaBrowserServiceCompat$m;->d:Z
 
-    .line 7
     invoke-virtual {p0, p1}, Landroidx/media/MediaBrowserServiceCompat$m;->a(Landroid/os/Bundle;)V
 
     return-void
 
-    .line 8
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -163,7 +153,6 @@
         }
     .end annotation
 
-    .line 1
     iget-boolean v0, p0, Landroidx/media/MediaBrowserServiceCompat$m;->c:Z
 
     if-nez v0, :cond_0
@@ -174,15 +163,12 @@
 
     const/4 v0, 0x1
 
-    .line 2
     iput-boolean v0, p0, Landroidx/media/MediaBrowserServiceCompat$m;->c:Z
 
-    .line 3
     invoke-virtual {p0, p1}, Landroidx/media/MediaBrowserServiceCompat$m;->a(Ljava/lang/Object;)V
 
     return-void
 
-    .line 4
     :cond_0
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -210,7 +196,6 @@
 .method b()Z
     .locals 1
 
-    .line 9
     iget-boolean v0, p0, Landroidx/media/MediaBrowserServiceCompat$m;->b:Z
 
     if-nez v0, :cond_1

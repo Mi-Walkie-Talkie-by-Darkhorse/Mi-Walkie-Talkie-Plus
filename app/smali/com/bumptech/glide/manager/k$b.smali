@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/bumptech/glide/manager/k$b;
 .super Ljava/lang/Object;
-.source "RequestManagerRetriever.java"
 
 
 # annotations

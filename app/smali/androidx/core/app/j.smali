@@ -1,6 +1,5 @@
 .class public Landroidx/core/app/j;
 .super Ljava/lang/Object;
-.source "Person.java"
 
 
 # instance fields
@@ -35,7 +34,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/j;->b:Landroidx/core/graphics/drawable/IconCompat;
 
     return-object v0
@@ -46,7 +44,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/j;->d:Ljava/lang/String;
 
     return-object v0
@@ -57,7 +54,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/j;->a:Ljava/lang/CharSequence;
 
     return-object v0
@@ -68,7 +64,6 @@
     .annotation build Landroidx/annotation/Nullable;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/j;->c:Ljava/lang/String;
 
     return-object v0
@@ -77,7 +72,6 @@
 .method public e()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/core/app/j;->e:Z
 
     return v0
@@ -86,7 +80,6 @@
 .method public f()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Landroidx/core/app/j;->f:Z
 
     return v0
@@ -103,20 +96,17 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Landroidx/core/app/j;->c:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     return-object v0
 
-    .line 2
     :cond_0
     iget-object v0, p0, Landroidx/core/app/j;->a:Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_1
 
-    .line 3
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -156,12 +146,10 @@
         }
     .end annotation
 
-    .line 1
     new-instance v0, Landroid/app/Person$Builder;
 
     invoke-direct {v0}, Landroid/app/Person$Builder;-><init>()V
 
-    .line 2
     invoke-virtual {p0}, Landroidx/core/app/j;->c()Ljava/lang/CharSequence;
 
     move-result-object v1
@@ -170,7 +158,6 @@
 
     move-result-object v0
 
-    .line 3
     invoke-virtual {p0}, Landroidx/core/app/j;->a()Landroidx/core/graphics/drawable/IconCompat;
 
     move-result-object v1
@@ -195,7 +182,6 @@
 
     move-result-object v0
 
-    .line 4
     invoke-virtual {p0}, Landroidx/core/app/j;->d()Ljava/lang/String;
 
     move-result-object v1
@@ -204,7 +190,6 @@
 
     move-result-object v0
 
-    .line 5
     invoke-virtual {p0}, Landroidx/core/app/j;->b()Ljava/lang/String;
 
     move-result-object v1
@@ -213,7 +198,6 @@
 
     move-result-object v0
 
-    .line 6
     invoke-virtual {p0}, Landroidx/core/app/j;->e()Z
 
     move-result v1
@@ -222,7 +206,6 @@
 
     move-result-object v0
 
-    .line 7
     invoke-virtual {p0}, Landroidx/core/app/j;->f()Z
 
     move-result v1
@@ -231,7 +214,6 @@
 
     move-result-object v0
 
-    .line 8
     invoke-virtual {v0}, Landroid/app/Person$Builder;->build()Landroid/app/Person;
 
     move-result-object v0

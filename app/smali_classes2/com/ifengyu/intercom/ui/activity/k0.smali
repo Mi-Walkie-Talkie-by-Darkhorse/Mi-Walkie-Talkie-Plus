@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/activity/k0;
 .super Ljava/lang/Object;
-.source "SelectDeviceActivity.java"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -16,7 +15,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;Lcom/ifengyu/intercom/node/ConnectionConfiguration;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/activity/k0;->b:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     iput-object p2, p0, Lcom/ifengyu/intercom/ui/activity/k0;->a:Lcom/ifengyu/intercom/node/ConnectionConfiguration;
@@ -31,7 +29,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     iget-object v0, p0, Lcom/ifengyu/intercom/ui/activity/k0;->b:Lcom/ifengyu/intercom/ui/activity/SelectDeviceActivity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getApplicationContext()Landroid/content/Context;

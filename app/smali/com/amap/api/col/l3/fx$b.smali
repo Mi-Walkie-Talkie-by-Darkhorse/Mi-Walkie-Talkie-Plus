@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/fx$b;
 .super Lcom/amap/api/col/l3/hy;
-.source "AuthConfigManager.java"
 
 
 # annotations
@@ -47,16 +46,12 @@
         }
     .end annotation
 
-    .line 1
     invoke-direct {p0, p1, p2}, Lcom/amap/api/col/l3/hy;-><init>(Landroid/content/Context;Lcom/amap/api/col/l3/gh;)V
 
-    .line 2
     iput-object p3, p0, Lcom/amap/api/col/l3/fx$b;->c:Ljava/lang/String;
 
-    .line 3
     iput-object p4, p0, Lcom/amap/api/col/l3/fx$b;->d:Ljava/util/Map;
 
-    .line 4
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
     const/16 p2, 0x13
@@ -98,7 +93,6 @@
 .method public final c()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/fx$b;->e:Z
 
     if-eqz v0, :cond_0
@@ -116,7 +110,6 @@
 .method public final d()Z
     .locals 1
 
-    .line 1
     iget-boolean v0, p0, Lcom/amap/api/col/l3/fx$b;->e:Z
 
     return v0
@@ -133,7 +126,6 @@
 .method public final g()[B
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/hy;->a:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/amap/api/col/l3/gb;->v(Landroid/content/Context;)Ljava/lang/String;

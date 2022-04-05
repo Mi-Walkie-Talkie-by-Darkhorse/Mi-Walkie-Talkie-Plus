@@ -1,6 +1,5 @@
 .class public final Lcom/google/zxing/oned/EAN13Reader;
 .super Lcom/google/zxing/oned/UPCEANReader;
-.source "EAN13Reader.java"
 
 
 # static fields
@@ -19,7 +18,6 @@
 
     new-array v0, v0, [I
 
-    .line 1
     fill-array-data v0, :array_0
 
     sput-object v0, Lcom/google/zxing/oned/EAN13Reader;->FIRST_DIGIT_ENCODINGS:[I
@@ -44,14 +42,12 @@
 .method public constructor <init>()V
     .locals 1
 
-    .line 1
     invoke-direct {p0}, Lcom/google/zxing/oned/UPCEANReader;-><init>()V
 
     const/4 v0, 0x4
 
     new-array v0, v0, [I
 
-    .line 2
     iput-object v0, p0, Lcom/google/zxing/oned/EAN13Reader;->decodeMiddleCounters:[I
 
     return-void
@@ -74,7 +70,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 1
     sget-object v2, Lcom/google/zxing/oned/EAN13Reader;->FIRST_DIGIT_ENCODINGS:[I
 
     aget v2, v2, v1
@@ -85,7 +80,6 @@
 
     int-to-char p1, v1
 
-    .line 2
     invoke-virtual {p0, v0, p1}, Ljava/lang/StringBuilder;->insert(IC)Ljava/lang/StringBuilder;
 
     return-void
@@ -95,7 +89,6 @@
 
     goto :goto_0
 
-    .line 3
     :cond_1
     invoke-static {}, Lcom/google/zxing/NotFoundException;->getNotFoundInstance()Lcom/google/zxing/NotFoundException;
 
@@ -114,35 +107,28 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/zxing/oned/EAN13Reader;->decodeMiddleCounters:[I
 
     const/4 v1, 0x0
 
-    .line 2
     aput v1, v0, v1
 
     const/4 v2, 0x1
 
-    .line 3
     aput v1, v0, v2
 
     const/4 v3, 0x2
 
-    .line 4
     aput v1, v0, v3
 
     const/4 v3, 0x3
 
-    .line 5
     aput v1, v0, v3
 
-    .line 6
     invoke-virtual {p1}, Lcom/google/zxing/common/BitArray;->getSize()I
 
     move-result v3
 
-    .line 7
     aget p2, p2, v2
 
     const/4 v4, 0x0
@@ -156,14 +142,12 @@
 
     if-ge p2, v3, :cond_2
 
-    .line 8
     sget-object v6, Lcom/google/zxing/oned/UPCEANReader;->L_AND_G_PATTERNS:[[I
 
     invoke-static {p1, v0, p2, v6}, Lcom/google/zxing/oned/UPCEANReader;->decodeDigit(Lcom/google/zxing/common/BitArray;[II[[I)I
 
     move-result v6
 
-    .line 9
     rem-int/lit8 v7, v6, 0xa
 
     add-int/lit8 v7, v7, 0x30
@@ -172,7 +156,6 @@
 
     invoke-virtual {p3, v7}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 10
     array-length v7, v0
 
     const/4 v8, 0x0
@@ -204,18 +187,15 @@
 
     goto :goto_0
 
-    .line 11
     :cond_2
     invoke-static {p3, v5}, Lcom/google/zxing/oned/EAN13Reader;->determineFirstDigit(Ljava/lang/StringBuilder;I)V
 
-    .line 12
     sget-object v4, Lcom/google/zxing/oned/UPCEANReader;->MIDDLE_PATTERN:[I
 
     invoke-static {p1, p2, v2, v4}, Lcom/google/zxing/oned/UPCEANReader;->findGuardPattern(Lcom/google/zxing/common/BitArray;IZ[I)[I
 
     move-result-object p2
 
-    .line 13
     aget p2, p2, v2
 
     const/4 v2, 0x0
@@ -225,7 +205,6 @@
 
     if-ge p2, v3, :cond_4
 
-    .line 14
     sget-object v4, Lcom/google/zxing/oned/UPCEANReader;->L_PATTERNS:[[I
 
     invoke-static {p1, v0, p2, v4}, Lcom/google/zxing/oned/UPCEANReader;->decodeDigit(Lcom/google/zxing/common/BitArray;[II[[I)I
@@ -236,10 +215,8 @@
 
     int-to-char v4, v4
 
-    .line 15
     invoke-virtual {p3, v4}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    .line 16
     array-length v4, v0
 
     const/4 v5, 0x0
@@ -267,7 +244,6 @@
 .method getBarcodeFormat()Lcom/google/zxing/BarcodeFormat;
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/google/zxing/BarcodeFormat;->EAN_13:Lcom/google/zxing/BarcodeFormat;
 
     return-object v0

@@ -1,6 +1,5 @@
 .class interface abstract Lcom/qmuiteam/qmui/arch/g$a;
 .super Ljava/lang/Object;
-.source "Utils.java"
 
 
 # annotations

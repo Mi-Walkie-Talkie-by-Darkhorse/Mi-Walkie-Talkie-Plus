@@ -1,6 +1,5 @@
 .class public Lorg/greenrobot/greendao/rx/RxTransaction;
 .super Lorg/greenrobot/greendao/rx/RxBase;
-.source "RxTransaction.java"
 
 
 # annotations
@@ -16,10 +15,8 @@
 .method public constructor <init>(Lorg/greenrobot/greendao/AbstractDaoSession;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Lorg/greenrobot/greendao/rx/RxBase;-><init>()V
 
-    .line 2
     iput-object p1, p0, Lorg/greenrobot/greendao/rx/RxTransaction;->daoSession:Lorg/greenrobot/greendao/AbstractDaoSession;
 
     return-void
@@ -28,10 +25,8 @@
 .method public constructor <init>(Lorg/greenrobot/greendao/AbstractDaoSession;Lrx/Scheduler;)V
     .locals 0
 
-    .line 3
     invoke-direct {p0, p2}, Lorg/greenrobot/greendao/rx/RxBase;-><init>(Lrx/Scheduler;)V
 
-    .line 4
     iput-object p1, p0, Lorg/greenrobot/greendao/rx/RxTransaction;->daoSession:Lorg/greenrobot/greendao/AbstractDaoSession;
 
     return-void
@@ -40,7 +35,6 @@
 .method static synthetic access$000(Lorg/greenrobot/greendao/rx/RxTransaction;)Lorg/greenrobot/greendao/AbstractDaoSession;
     .locals 0
 
-    .line 1
     iget-object p0, p0, Lorg/greenrobot/greendao/rx/RxTransaction;->daoSession:Lorg/greenrobot/greendao/AbstractDaoSession;
 
     return-object p0
@@ -65,7 +59,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxTransaction$2;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxTransaction$2;-><init>(Lorg/greenrobot/greendao/rx/RxTransaction;Ljava/util/concurrent/Callable;)V
@@ -82,7 +75,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lorg/greenrobot/greendao/rx/RxTransaction;->daoSession:Lorg/greenrobot/greendao/AbstractDaoSession;
 
     return-object v0
@@ -93,7 +85,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     invoke-super {p0}, Lorg/greenrobot/greendao/rx/RxBase;->getScheduler()Lrx/Scheduler;
 
     move-result-object v0
@@ -117,7 +108,6 @@
     .annotation build Lorg/greenrobot/greendao/annotation/apihint/Experimental;
     .end annotation
 
-    .line 1
     new-instance v0, Lorg/greenrobot/greendao/rx/RxTransaction$1;
 
     invoke-direct {v0, p0, p1}, Lorg/greenrobot/greendao/rx/RxTransaction$1;-><init>(Lorg/greenrobot/greendao/rx/RxTransaction;Ljava/lang/Runnable;)V

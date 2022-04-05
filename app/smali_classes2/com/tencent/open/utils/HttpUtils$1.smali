@@ -1,6 +1,5 @@
 .class final Lcom/tencent/open/utils/HttpUtils$1;
 .super Ljava/lang/Thread;
-.source "ProGuard"
 
 
 # annotations
@@ -32,7 +31,6 @@
 .method constructor <init>(Lcom/tencent/connect/auth/QQToken;Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Ljava/lang/String;Lcom/tencent/tauth/IRequestListener;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/utils/HttpUtils$1;->a:Lcom/tencent/connect/auth/QQToken;
 
     iput-object p2, p0, Lcom/tencent/open/utils/HttpUtils$1;->b:Landroid/content/Context;
@@ -57,7 +55,6 @@
 
     const-string v0, "openSDK_LOG.HttpUtils"
 
-    .line 1
     :try_start_0
     iget-object v1, p0, Lcom/tencent/open/utils/HttpUtils$1;->a:Lcom/tencent/connect/auth/QQToken;
 
@@ -73,19 +70,16 @@
 
     move-result-object v1
 
-    .line 2
     iget-object v2, p0, Lcom/tencent/open/utils/HttpUtils$1;->f:Lcom/tencent/tauth/IRequestListener;
 
     if-eqz v2, :cond_0
 
-    .line 3
     iget-object v2, p0, Lcom/tencent/open/utils/HttpUtils$1;->f:Lcom/tencent/tauth/IRequestListener;
 
     invoke-interface {v2, v1}, Lcom/tencent/tauth/IRequestListener;->onComplete(Lorg/json/JSONObject;)V
 
     const-string v1, "OpenApi onComplete"
 
-    .line 4
     invoke-static {v0, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/net/MalformedURLException; {:try_start_0 .. :try_end_0} :catch_7
@@ -102,17 +96,14 @@
     :catch_0
     move-exception v1
 
-    .line 5
     iget-object v2, p0, Lcom/tencent/open/utils/HttpUtils$1;->f:Lcom/tencent/tauth/IRequestListener;
 
     if-eqz v2, :cond_0
 
-    .line 6
     invoke-interface {v2, v1}, Lcom/tencent/tauth/IRequestListener;->onUnknowException(Ljava/lang/Exception;)V
 
     const-string v2, "OpenApi requestAsync onUnknowException"
 
-    .line 7
     invoke-static {v0, v2, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
@@ -120,17 +111,14 @@
     :catch_1
     move-exception v1
 
-    .line 8
     iget-object v2, p0, Lcom/tencent/open/utils/HttpUtils$1;->f:Lcom/tencent/tauth/IRequestListener;
 
     if-eqz v2, :cond_0
 
-    .line 9
     invoke-interface {v2, v1}, Lcom/tencent/tauth/IRequestListener;->onJSONException(Lorg/json/JSONException;)V
 
     const-string v2, "OpenApi requestAsync JSONException"
 
-    .line 10
     invoke-static {v0, v2, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
@@ -138,17 +126,14 @@
     :catch_2
     move-exception v1
 
-    .line 11
     iget-object v2, p0, Lcom/tencent/open/utils/HttpUtils$1;->f:Lcom/tencent/tauth/IRequestListener;
 
     if-eqz v2, :cond_0
 
-    .line 12
     invoke-interface {v2, v1}, Lcom/tencent/tauth/IRequestListener;->onIOException(Ljava/io/IOException;)V
 
     const-string v2, "OpenApi requestAsync IOException"
 
-    .line 13
     invoke-static {v0, v2, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
@@ -156,17 +141,14 @@
     :catch_3
     move-exception v1
 
-    .line 14
     iget-object v2, p0, Lcom/tencent/open/utils/HttpUtils$1;->f:Lcom/tencent/tauth/IRequestListener;
 
     if-eqz v2, :cond_0
 
-    .line 15
     invoke-interface {v2, v1}, Lcom/tencent/tauth/IRequestListener;->onHttpStatusException(Lcom/tencent/open/utils/HttpUtils$HttpStatusException;)V
 
     const-string v2, "OpenApi requestAsync onHttpStatusException"
 
-    .line 16
     invoke-static {v0, v2, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
@@ -174,17 +156,14 @@
     :catch_4
     move-exception v1
 
-    .line 17
     iget-object v2, p0, Lcom/tencent/open/utils/HttpUtils$1;->f:Lcom/tencent/tauth/IRequestListener;
 
     if-eqz v2, :cond_0
 
-    .line 18
     invoke-interface {v2, v1}, Lcom/tencent/tauth/IRequestListener;->onNetworkUnavailableException(Lcom/tencent/open/utils/HttpUtils$NetworkUnavailableException;)V
 
     const-string v2, "OpenApi requestAsync onNetworkUnavailableException"
 
-    .line 19
     invoke-static {v0, v2, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
@@ -192,17 +171,14 @@
     :catch_5
     move-exception v1
 
-    .line 20
     iget-object v2, p0, Lcom/tencent/open/utils/HttpUtils$1;->f:Lcom/tencent/tauth/IRequestListener;
 
     if-eqz v2, :cond_0
 
-    .line 21
     invoke-interface {v2, v1}, Lcom/tencent/tauth/IRequestListener;->onSocketTimeoutException(Ljava/net/SocketTimeoutException;)V
 
     const-string v2, "OpenApi requestAsync onSocketTimeoutException"
 
-    .line 22
     invoke-static {v0, v2, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
@@ -210,17 +186,14 @@
     :catch_6
     move-exception v1
 
-    .line 23
     iget-object v2, p0, Lcom/tencent/open/utils/HttpUtils$1;->f:Lcom/tencent/tauth/IRequestListener;
 
     if-eqz v2, :cond_0
 
-    .line 24
     invoke-interface {v2, v1}, Lcom/tencent/tauth/IRequestListener;->onConnectTimeoutException(Lorg/apache/http/conn/ConnectTimeoutException;)V
 
     const-string v2, "OpenApi requestAsync onConnectTimeoutException"
 
-    .line 25
     invoke-static {v0, v2, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
@@ -228,17 +201,14 @@
     :catch_7
     move-exception v1
 
-    .line 26
     iget-object v2, p0, Lcom/tencent/open/utils/HttpUtils$1;->f:Lcom/tencent/tauth/IRequestListener;
 
     if-eqz v2, :cond_0
 
-    .line 27
     invoke-interface {v2, v1}, Lcom/tencent/tauth/IRequestListener;->onMalformedURLException(Ljava/net/MalformedURLException;)V
 
     const-string v2, "OpenApi requestAsync MalformedURLException"
 
-    .line 28
     invoke-static {v0, v2, v1}, Lcom/tencent/open/a/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_0

@@ -1,6 +1,5 @@
 .class public interface abstract Lorg/osmdroid/views/overlay/ItemizedOverlayControlView$ItemizedOverlayControlViewListener;
 .super Ljava/lang/Object;
-.source "ItemizedOverlayControlView.java"
 
 
 # annotations

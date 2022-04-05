@@ -1,20 +1,17 @@
 .class public final Lcom/amap/api/col/l3/hl;
 .super Ljava/lang/Object;
-.source "InstanceFactory.java"
 
 
 # direct methods
 .method public static a(Landroid/content/Context;Lcom/amap/api/col/l3/gh;Ljava/lang/String;)Ljava/lang/Class;
     .locals 1
 
-    .line 21
     invoke-static {p0, p1}, Lcom/amap/api/col/l3/hl;->c(Landroid/content/Context;Lcom/amap/api/col/l3/gh;)Lcom/amap/api/col/l3/ho;
 
     move-result-object p0
 
     const/4 p1, 0x0
 
-    .line 22
     :try_start_0
     invoke-static {p0}, Lcom/amap/api/col/l3/hl;->a(Lcom/amap/api/col/l3/ho;)Z
 
@@ -22,7 +19,6 @@
 
     if-eqz v0, :cond_0
 
-    .line 23
     invoke-virtual {p0, p2}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object p0
@@ -41,7 +37,6 @@
 
     const-string v0, "loadpn"
 
-    .line 24
     invoke-static {p0, p2, v0}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object p1
@@ -72,12 +67,10 @@
         }
     .end annotation
 
-    .line 1
     invoke-static {p0, p1}, Lcom/amap/api/col/l3/hl;->c(Landroid/content/Context;Lcom/amap/api/col/l3/gh;)Lcom/amap/api/col/l3/ho;
 
     move-result-object p0
 
-    .line 2
     invoke-static {p0, p2, p4, p5}, Lcom/amap/api/col/l3/hl;->a(Lcom/amap/api/col/l3/ho;Ljava/lang/String;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -86,7 +79,6 @@
 
     return-object p0
 
-    .line 3
     :cond_0
     invoke-static {p3, p4, p5}, Lcom/amap/api/col/l3/hl;->a(Ljava/lang/Class;[Ljava/lang/Class;[Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -96,7 +88,6 @@
 
     return-object p0
 
-    .line 4
     :cond_1
     new-instance p0, Lcom/amap/api/col/l3/fv;
 
@@ -124,7 +115,6 @@
         }
     .end annotation
 
-    .line 26
     :try_start_0
     invoke-static {p0}, Lcom/amap/api/col/l3/hl;->a(Lcom/amap/api/col/l3/ho;)Z
 
@@ -132,24 +122,20 @@
 
     if-eqz v0, :cond_0
 
-    .line 27
     invoke-virtual {p0, p1}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
 
     move-result-object p0
 
     if-eqz p0, :cond_0
 
-    .line 28
     invoke-virtual {p0, p2}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
 
     move-result-object p0
 
     const/4 p1, 0x1
 
-    .line 29
     invoke-virtual {p0, p1}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
 
-    .line 30
     invoke-virtual {p0, p3}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -165,7 +151,6 @@
 
     const-string p2, "getWrap"
 
-    .line 31
     invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
@@ -196,7 +181,6 @@
 
     return-object v0
 
-    .line 32
     :cond_0
     :try_start_0
     invoke-virtual {p0, p1}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
@@ -205,10 +189,8 @@
 
     const/4 p1, 0x1
 
-    .line 33
     invoke-virtual {p0, p1}, Ljava/lang/reflect/Constructor;->setAccessible(Z)V
 
-    .line 34
     invoke-virtual {p0, p2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p0
@@ -224,7 +206,6 @@
 
     const-string p2, "gIns2()"
 
-    .line 35
     invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
@@ -235,18 +216,15 @@
 
     const/4 v0, 0x0
 
-    .line 7
     :try_start_0
     invoke-static {p0}, Lcom/amap/api/col/l3/hh;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 8
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 9
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v1
@@ -255,7 +233,6 @@
 
     return-object v0
 
-    .line 10
     :cond_0
     invoke-virtual {p1}, Lcom/amap/api/col/l3/gh;->a()Ljava/lang/String;
 
@@ -269,26 +246,22 @@
 
     move-result-object v1
 
-    .line 11
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 12
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v1
 
     if-eqz v1, :cond_1
 
-    .line 13
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 
-    .line 14
     :cond_1
     invoke-static {p0, v2, p1}, Lcom/amap/api/col/l3/hh;->a(Landroid/content/Context;Ljava/io/File;Lcom/amap/api/col/l3/gh;)V
     :try_end_0
@@ -303,7 +276,6 @@
 
     const-string v1, "isdowned"
 
-    .line 15
     invoke-static {p0, p1, v1}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
@@ -312,7 +284,6 @@
 .method public static a(Landroid/content/Context;Ljava/lang/String;)V
     .locals 2
 
-    .line 5
     :try_start_0
     invoke-static {}, Lcom/amap/api/col/l3/hm;->b()Lcom/amap/api/col/l3/hm;
 
@@ -339,7 +310,6 @@
 
     const-string v0, "rollBack"
 
-    .line 6
     invoke-static {p0, p1, v0}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -354,7 +324,6 @@
 
     if-eqz p1, :cond_0
 
-    .line 16
     invoke-virtual {p1}, Lcom/amap/api/col/l3/hg;->c()Z
 
     move-result v2
@@ -368,7 +337,6 @@
     :cond_0
     const/4 v2, 0x0
 
-    .line 17
     :goto_0
     :try_start_0
     invoke-static {p2, p1}, Lcom/amap/api/col/l3/hn;->a(Lcom/amap/api/col/l3/gh;Lcom/amap/api/col/l3/hg;)Z
@@ -383,7 +351,6 @@
 
     if-eqz v3, :cond_1
 
-    .line 18
     invoke-static {p0, v2}, Lcom/amap/api/col/l3/hn;->a(Landroid/content/Context;Z)Z
 
     move-result v2
@@ -396,7 +363,6 @@
 
     if-nez p1, :cond_1
 
-    .line 19
     invoke-virtual {p2}, Lcom/amap/api/col/l3/gh;->a()Ljava/lang/String;
 
     move-result-object p1
@@ -417,7 +383,6 @@
 
     const-string p2, "isNeedDownload()"
 
-    .line 20
     invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return v1
@@ -428,7 +393,6 @@
 
     if-eqz p0, :cond_0
 
-    .line 25
     invoke-virtual {p0}, Lcom/amap/api/col/l3/ho;->a()Z
 
     move-result v0
@@ -456,7 +420,6 @@
 
     return-void
 
-    .line 9
     :cond_0
     :try_start_0
     invoke-virtual {p1}, Lcom/amap/api/col/l3/hg;->a()Ljava/lang/String;
@@ -489,13 +452,11 @@
 
     goto :goto_0
 
-    .line 10
     :cond_1
     new-instance v0, Lcom/amap/api/col/l3/hf;
 
     invoke-direct {v0, p0, p1, p2}, Lcom/amap/api/col/l3/hf;-><init>(Landroid/content/Context;Lcom/amap/api/col/l3/hg;Lcom/amap/api/col/l3/gh;)V
 
-    .line 11
     invoke-virtual {v0}, Lcom/amap/api/col/l3/hf;->a()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -511,7 +472,6 @@
 
     const-string p2, "dDownload()"
 
-    .line 12
     invoke-static {p0, p1, p2}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
@@ -522,18 +482,15 @@
 
     const/4 v0, 0x0
 
-    .line 1
     :try_start_0
     invoke-static {p0}, Lcom/amap/api/col/l3/hh;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 2
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 3
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v1
@@ -542,7 +499,6 @@
 
     return v0
 
-    .line 4
     :cond_0
     invoke-virtual {p1}, Lcom/amap/api/col/l3/gh;->a()Ljava/lang/String;
 
@@ -556,12 +512,10 @@
 
     move-result-object v1
 
-    .line 5
     new-instance v2, Ljava/io/File;
 
     invoke-direct {v2, v1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
 
-    .line 6
     invoke-virtual {v2}, Ljava/io/File;->exists()Z
 
     move-result v1
@@ -572,7 +526,6 @@
 
     return p0
 
-    .line 7
     :cond_1
     invoke-static {p0, v2, p1}, Lcom/amap/api/col/l3/hh;->a(Landroid/content/Context;Ljava/io/File;Lcom/amap/api/col/l3/gh;)V
     :try_end_0
@@ -587,7 +540,6 @@
 
     const-string v1, "isdowned"
 
-    .line 8
     invoke-static {p0, p1, v1}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     return v0
@@ -602,7 +554,6 @@
 
     return-object v0
 
-    .line 1
     :cond_0
     :try_start_0
     invoke-static {p0, p1}, Lcom/amap/api/col/l3/hl;->b(Landroid/content/Context;Lcom/amap/api/col/l3/gh;)Z
@@ -611,7 +562,6 @@
 
     if-eqz v1, :cond_1
 
-    .line 2
     invoke-static {}, Lcom/amap/api/col/l3/hm;->b()Lcom/amap/api/col/l3/hm;
 
     move-result-object v1
@@ -633,7 +583,6 @@
 
     const-string v1, "gIns1"
 
-    .line 3
     invoke-static {p0, p1, v1}, Lcom/amap/api/col/l3/gs;->a(Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_1

@@ -1,6 +1,5 @@
 .class public final Lcom/amap/api/col/l3/hc;
 .super Landroid/database/sqlite/SQLiteOpenHelper;
-.source "DB.java"
 
 
 # static fields
@@ -25,10 +24,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, p1, p2, v0, p3}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
-    .line 2
     iput-object p4, p0, Lcom/amap/api/col/l3/hc;->a:Lcom/amap/api/col/l3/gy;
 
     return-void
@@ -39,7 +36,6 @@
 .method public final onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/amap/api/col/l3/hc;->a:Lcom/amap/api/col/l3/gy;
 
     invoke-interface {v0, p1}, Lcom/amap/api/col/l3/gy;->a(Landroid/database/sqlite/SQLiteDatabase;)V
@@ -50,7 +46,6 @@
 .method public final onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 0
 
-    .line 1
     iget-object p3, p0, Lcom/amap/api/col/l3/hc;->a:Lcom/amap/api/col/l3/gy;
 
     invoke-interface {p3, p1, p2}, Lcom/amap/api/col/l3/gy;->a(Landroid/database/sqlite/SQLiteDatabase;I)V

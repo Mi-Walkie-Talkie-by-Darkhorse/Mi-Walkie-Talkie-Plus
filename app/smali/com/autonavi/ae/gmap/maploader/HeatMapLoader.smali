@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/ae/gmap/maploader/HeatMapLoader;
 .super Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;
-.source "HeatMapLoader.java"
 
 
 # instance fields
@@ -11,21 +10,16 @@
 .method public constructor <init>(ILcom/autonavi/ae/gmap/GLMapEngine;I)V
     .locals 0
 
-    .line 1
     invoke-direct {p0, p1}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;-><init>(I)V
 
     const/4 p1, 0x0
 
-    .line 2
     iput-object p1, p0, Lcom/autonavi/ae/gmap/maploader/HeatMapLoader;->mMapHeatPoiId:Ljava/lang/String;
 
-    .line 3
     iput-object p2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
-    .line 4
     iput p3, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mDataSource:I
 
-    .line 5
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide p1
@@ -46,7 +40,6 @@
 .method protected getGridParams()Ljava/lang/String;
     .locals 6
 
-    .line 1
     new-instance v0, Ljava/lang/StringBuffer;
 
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
@@ -55,7 +48,6 @@
 
     const/4 v2, 0x0
 
-    .line 2
     :goto_0
     iget-object v3, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mMapTiles:Ljava/util/List;
 
@@ -67,7 +59,6 @@
 
     if-ge v2, v3, :cond_1
 
-    .line 3
     iget-object v3, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mMapTiles:Ljava/util/List;
 
     invoke-interface {v3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -80,28 +71,24 @@
 
     move-result-object v3
 
-    .line 4
     invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v5
 
     if-nez v5, :cond_0
 
-    .line 5
     invoke-super {p0, v3}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isContainIllegal(Ljava/lang/String;)Z
 
     move-result v5
 
     if-nez v5, :cond_0
 
-    .line 6
     invoke-static {v3}, Lcom/autonavi/ae/gmap/utils/GLMapUtil;->isAssic(Ljava/lang/String;)Z
 
     move-result v5
 
     if-eqz v5, :cond_0
 
-    .line 7
     new-instance v5, Ljava/lang/StringBuilder;
 
     invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
@@ -121,13 +108,11 @@
 
     goto :goto_0
 
-    .line 8
     :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
 
     move-result-object v2
 
-    .line 9
     invoke-static {v2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v3
@@ -138,7 +123,6 @@
 
     return-object v5
 
-    .line 10
     :cond_2
     :goto_1
     invoke-virtual {v2, v4}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
@@ -157,7 +141,6 @@
 
     goto :goto_2
 
-    .line 11
     :cond_3
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
@@ -167,7 +150,6 @@
 
     return-object v5
 
-    .line 12
     :cond_4
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -183,7 +165,6 @@
 
     move-result-object v0
 
-    .line 13
     new-instance v1, Ljava/lang/StringBuilder;
 
     const-string v2, "cp=1&mesh="
@@ -206,7 +187,6 @@
 
     return-object v0
 
-    .line 14
     :cond_5
     :goto_2
     invoke-virtual {v2}, Ljava/lang/String;->length()I
@@ -225,7 +205,6 @@
 .method protected getMapAddress()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/GLMapEngine;->getMapSvrAddress()Ljava/lang/String;
@@ -246,7 +225,6 @@
 .method protected isNeedReturn()Z
     .locals 2
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mDataSource:I
 
     const/16 v1, 0x9
@@ -266,7 +244,6 @@
 .method public isRequestValid()Z
     .locals 4
 
-    .line 1
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -285,7 +262,6 @@
 .method protected processReceivedDataByType()V
     .locals 0
 
-    .line 1
     invoke-super {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processReceivedData()V
 
     return-void
@@ -294,7 +270,6 @@
 .method protected processReceivedDataHeader()Z
     .locals 4
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
     const/4 v1, 0x0
@@ -303,7 +278,6 @@
 
     if-le v0, v2, :cond_2
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     invoke-static {v0, v1}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->getInt([BI)I
@@ -312,12 +286,10 @@
 
     if-eqz v0, :cond_0
 
-    .line 3
     invoke-virtual {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->doCancel()V
 
     return v1
 
-    .line 4
     :cond_0
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataSize:I
 
@@ -329,21 +301,17 @@
 
     if-lez v0, :cond_1
 
-    .line 5
     iget-object v3, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     invoke-static {v3, v2, v3, v1, v0}, Lcom/autonavi/ae/gmap/utils/GLConvertUtil;->moveArray([BI[BII)V
 
-    .line 6
     :cond_1
     iput v1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mNextImgDataLength:I
 
     const/4 v0, 0x1
 
-    .line 7
     iput-boolean v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->isReceivedHeader:Z
 
-    .line 8
     invoke-super {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processReceivedData()V
 
     return v0
@@ -357,12 +325,10 @@
 
     if-nez p2, :cond_0
 
-    .line 1
     invoke-super {p0, p1, p2, p3}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->processReceivedTileData([BII)V
 
     return-void
 
-    .line 2
     :cond_0
     invoke-virtual {p0, p1, p2, p3}, Lcom/autonavi/ae/gmap/maploader/HeatMapLoader;->processReceivedTileDataBmp([BII)V
 
@@ -376,7 +342,6 @@
 
     add-int/lit8 v1, v0, 0x1
 
-    .line 1
     :try_start_0
     aget-byte v0, p1, v0
 
@@ -392,14 +357,12 @@
 
     if-ge v4, p3, :cond_0
 
-    .line 2
     new-instance v2, Ljava/lang/String;
 
     const-string v4, "utf-8"
 
     invoke-direct {v2, p1, v1, v0, v4}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
 
-    .line 3
     :cond_0
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
@@ -413,7 +376,6 @@
 
     goto :goto_0
 
-    .line 4
     :cond_1
     iget-object v4, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
@@ -431,7 +393,6 @@
 
     invoke-virtual/range {v4 .. v10}, Lcom/autonavi/ae/gmap/GLMapEngine;->putMapHeatData(I[BIIILjava/lang/String;)Z
 
-    .line 5
     iget-object p1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget p2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -440,14 +401,12 @@
 
     move-result p1
 
-    .line 6
     invoke-virtual {v2}, Ljava/lang/String;->length()I
 
     move-result p2
 
     if-ne p1, p2, :cond_2
 
-    .line 7
     iget-object p1, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mGLMapEngine:Lcom/autonavi/ae/gmap/GLMapEngine;
 
     iget p2, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mEngineID:I
@@ -465,7 +424,6 @@
     :cond_2
     if-eqz v3, :cond_3
 
-    .line 8
     invoke-super {p0}, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->doCancel()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
@@ -477,7 +435,6 @@
     :catchall_0
     move-exception p1
 
-    .line 9
     invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
 
     return-void
@@ -486,14 +443,12 @@
 .method protected processReceivedVersion()V
     .locals 3
 
-    .line 1
     iget v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mDataSource:I
 
     const/16 v1, 0x9
 
     if-ne v0, v1, :cond_0
 
-    .line 2
     iget-object v0, p0, Lcom/autonavi/ae/gmap/maploader/BaseMapLoader;->mReceivedDataBuffer:[B
 
     const/4 v1, 0x0
@@ -509,7 +464,6 @@
 .method public setMapHeatPoiId(Ljava/lang/String;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/autonavi/ae/gmap/maploader/HeatMapLoader;->mMapHeatPoiId:Ljava/lang/String;
 
     return-void

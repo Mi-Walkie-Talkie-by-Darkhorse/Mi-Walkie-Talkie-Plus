@@ -1,6 +1,5 @@
 .class public Lcom/autonavi/amap/mapcore/IPoint;
 .super Landroid/graphics/Point;
-.source "IPoint.java"
 
 # interfaces
 .implements Ljava/lang/Cloneable;
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 2
 
-    .line 1
     new-instance v0, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     const/16 v1, 0x20
@@ -37,7 +35,6 @@
 .method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Landroid/graphics/Point;-><init>()V
 
     return-void
@@ -46,13 +43,10 @@
 .method public constructor <init>(II)V
     .locals 0
 
-    .line 2
     invoke-direct {p0}, Landroid/graphics/Point;-><init>()V
 
-    .line 3
     iput p1, p0, Landroid/graphics/Point;->x:I
 
-    .line 4
     iput p2, p0, Landroid/graphics/Point;->y:I
 
     return-void
@@ -61,7 +55,6 @@
 .method public static obtain()Lcom/autonavi/amap/mapcore/IPoint;
     .locals 2
 
-    .line 1
     sget-object v0, Lcom/autonavi/amap/mapcore/IPoint;->mPool:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->acquire()Ljava/lang/Object;
@@ -72,7 +65,6 @@
 
     if-nez v0, :cond_0
 
-    .line 2
     new-instance v0, Lcom/autonavi/amap/mapcore/IPoint;
 
     invoke-direct {v0}, Lcom/autonavi/amap/mapcore/IPoint;-><init>()V
@@ -82,7 +74,6 @@
     :cond_0
     const/4 v1, 0x0
 
-    .line 3
     invoke-virtual {v0, v1, v1}, Landroid/graphics/Point;->set(II)V
 
     :goto_0
@@ -92,7 +83,6 @@
 .method public static obtain(II)Lcom/autonavi/amap/mapcore/IPoint;
     .locals 1
 
-    .line 4
     sget-object v0, Lcom/autonavi/amap/mapcore/IPoint;->mPool:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->acquire()Ljava/lang/Object;
@@ -103,14 +93,12 @@
 
     if-nez v0, :cond_0
 
-    .line 5
     new-instance v0, Lcom/autonavi/amap/mapcore/IPoint;
 
     invoke-direct {v0, p0, p1}, Lcom/autonavi/amap/mapcore/IPoint;-><init>(II)V
 
     goto :goto_0
 
-    .line 6
     :cond_0
     invoke-virtual {v0, p0, p1}, Landroid/graphics/Point;->set(II)V
 
@@ -123,7 +111,6 @@
 .method public clone()Ljava/lang/Object;
     .locals 1
 
-    .line 1
     :try_start_0
     invoke-super {p0}, Ljava/lang/Object;->clone()Ljava/lang/Object;
 
@@ -138,7 +125,6 @@
     :catch_0
     move-exception v0
 
-    .line 2
     invoke-virtual {v0}, Ljava/lang/CloneNotSupportedException;->printStackTrace()V
 
     const/4 v0, 0x0
@@ -150,7 +136,6 @@
 .method public recycle()V
     .locals 1
 
-    .line 1
     sget-object v0, Lcom/autonavi/amap/mapcore/IPoint;->mPool:Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;
 
     invoke-virtual {v0, p0}, Lcom/autonavi/ae/gmap/maploader/Pools$SynchronizedPool;->release(Ljava/lang/Object;)Z

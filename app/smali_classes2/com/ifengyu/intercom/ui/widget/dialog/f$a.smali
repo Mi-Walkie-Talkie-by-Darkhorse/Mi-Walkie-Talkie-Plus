@@ -1,6 +1,5 @@
 .class Lcom/ifengyu/intercom/ui/widget/dialog/f$a;
 .super Ljava/lang/Object;
-.source "CommonDialog.java"
 
 # interfaces
 .implements Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus$i;
@@ -25,7 +24,6 @@
 .method constructor <init>(Lcom/ifengyu/intercom/ui/widget/dialog/f;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/f$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -38,7 +36,6 @@
 .method public a(Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;Landroid/view/View;)V
     .locals 1
 
-    .line 1
     invoke-virtual {p2}, Landroid/view/View;->getId()I
 
     move-result p2
@@ -49,7 +46,6 @@
 
     goto :goto_0
 
-    .line 2
     :pswitch_0
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/f$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
@@ -59,10 +55,8 @@
 
     if-eqz p2, :cond_0
 
-    .line 3
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;->a()V
 
-    .line 4
     :cond_0
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/f$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
@@ -72,7 +66,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 5
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/f$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->c(Lcom/ifengyu/intercom/ui/widget/dialog/f;)Landroid/content/DialogInterface$OnClickListener;
@@ -85,7 +78,6 @@
 
     goto :goto_0
 
-    .line 6
     :pswitch_1
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/f$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
@@ -95,10 +87,8 @@
 
     if-eqz p2, :cond_1
 
-    .line 7
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;->a()V
 
-    .line 8
     :cond_1
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/f$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
@@ -108,7 +98,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 9
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/f$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->d(Lcom/ifengyu/intercom/ui/widget/dialog/f;)Landroid/content/DialogInterface$OnClickListener;
@@ -121,7 +110,6 @@
 
     goto :goto_0
 
-    .line 10
     :pswitch_2
     iget-object p2, p0, Lcom/ifengyu/intercom/ui/widget/dialog/f$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
@@ -131,10 +119,8 @@
 
     if-eqz p2, :cond_2
 
-    .line 11
     invoke-virtual {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/DialogPlus;->a()V
 
-    .line 12
     :cond_2
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/f$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
@@ -144,7 +130,6 @@
 
     if-eqz p1, :cond_3
 
-    .line 13
     iget-object p1, p0, Lcom/ifengyu/intercom/ui/widget/dialog/f$a;->a:Lcom/ifengyu/intercom/ui/widget/dialog/f;
 
     invoke-static {p1}, Lcom/ifengyu/intercom/ui/widget/dialog/f;->b(Lcom/ifengyu/intercom/ui/widget/dialog/f;)Landroid/content/DialogInterface$OnClickListener;

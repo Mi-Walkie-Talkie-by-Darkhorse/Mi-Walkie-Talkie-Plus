@@ -1,6 +1,5 @@
 .class public interface abstract Lcom/google/common/util/concurrent/FutureFallback;
 .super Ljava/lang/Object;
-.source "FutureFallback.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class final Lcom/amap/api/col/l3/ku$a;
 .super Landroid/content/BroadcastReceiver;
-.source "MapNetLocation.java"
 
 
 # annotations

@@ -1,6 +1,5 @@
 .class synthetic Lcom/afollestad/materialdialogs/a$a;
 .super Ljava/lang/Object;
-.source "DefaultRvAdapter.java"
 
 
 # annotations
@@ -22,7 +21,6 @@
 .method static constructor <clinit>()V
     .locals 3
 
-    .line 1
     invoke-static {}, Lcom/afollestad/materialdialogs/MaterialDialog$ListType;->values()[Lcom/afollestad/materialdialogs/MaterialDialog$ListType;
 
     move-result-object v0

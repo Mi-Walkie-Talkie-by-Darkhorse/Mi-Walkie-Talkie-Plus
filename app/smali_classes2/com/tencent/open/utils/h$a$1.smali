@@ -1,6 +1,5 @@
 .class Lcom/tencent/open/utils/h$a$1;
 .super Ljava/lang/Object;
-.source "ProGuard"
 
 # interfaces
 .implements Ljava/lang/Runnable;
@@ -27,7 +26,6 @@
 .method constructor <init>(Lcom/tencent/open/utils/h$a;Ljava/lang/Runnable;)V
     .locals 0
 
-    .line 1
     iput-object p1, p0, Lcom/tencent/open/utils/h$a$1;->b:Lcom/tencent/open/utils/h$a;
 
     iput-object p2, p0, Lcom/tencent/open/utils/h$a$1;->a:Ljava/lang/Runnable;
@@ -42,7 +40,6 @@
 .method public run()V
     .locals 2
 
-    .line 1
     :try_start_0
     iget-object v0, p0, Lcom/tencent/open/utils/h$a$1;->a:Ljava/lang/Runnable;
 
@@ -50,7 +47,6 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 2
     iget-object v0, p0, Lcom/tencent/open/utils/h$a$1;->b:Lcom/tencent/open/utils/h$a;
 
     invoke-virtual {v0}, Lcom/tencent/open/utils/h$a;->a()V

@@ -1,6 +1,5 @@
 .class public interface abstract Lb/a/a/a/e/b/d;
 .super Ljava/lang/Object;
-.source "ICandleDataSet.java"
 
 # interfaces
 .implements Lb/a/a/a/e/b/h;

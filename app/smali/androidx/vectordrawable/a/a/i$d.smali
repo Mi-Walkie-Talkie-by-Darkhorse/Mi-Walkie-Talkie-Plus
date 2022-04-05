@@ -1,6 +1,5 @@
 .class Landroidx/vectordrawable/a/a/i$d;
 .super Landroidx/vectordrawable/a/a/i$e;
-.source "VectorDrawableCompat.java"
 
 
 # annotations
@@ -56,17 +55,14 @@
 
     const/4 v0, 0x0
 
-    .line 39
     invoke-direct {p0, v0}, Landroidx/vectordrawable/a/a/i$e;-><init>(Landroidx/vectordrawable/a/a/i$a;)V
 
-    .line 40
     new-instance v1, Landroid/graphics/Matrix;
 
     invoke-direct {v1}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v1, p0, Landroidx/vectordrawable/a/a/i$d;->a:Landroid/graphics/Matrix;
 
-    .line 41
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
@@ -75,37 +71,28 @@
 
     const/4 v1, 0x0
 
-    .line 42
     iput v1, p0, Landroidx/vectordrawable/a/a/i$d;->c:F
 
-    .line 43
     iput v1, p0, Landroidx/vectordrawable/a/a/i$d;->d:F
 
-    .line 44
     iput v1, p0, Landroidx/vectordrawable/a/a/i$d;->e:F
 
     const/high16 v2, 0x3f800000    # 1.0f
 
-    .line 45
     iput v2, p0, Landroidx/vectordrawable/a/a/i$d;->f:F
 
-    .line 46
     iput v2, p0, Landroidx/vectordrawable/a/a/i$d;->g:F
 
-    .line 47
     iput v1, p0, Landroidx/vectordrawable/a/a/i$d;->h:F
 
-    .line 48
     iput v1, p0, Landroidx/vectordrawable/a/a/i$d;->i:F
 
-    .line 49
     new-instance v1, Landroid/graphics/Matrix;
 
     invoke-direct {v1}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v1, p0, Landroidx/vectordrawable/a/a/i$d;->j:Landroid/graphics/Matrix;
 
-    .line 50
     iput-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->m:Ljava/lang/String;
 
     return-void
@@ -126,17 +113,14 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Landroidx/vectordrawable/a/a/i$e;-><init>(Landroidx/vectordrawable/a/a/i$a;)V
 
-    .line 2
     new-instance v1, Landroid/graphics/Matrix;
 
     invoke-direct {v1}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v1, p0, Landroidx/vectordrawable/a/a/i$d;->a:Landroid/graphics/Matrix;
 
-    .line 3
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
@@ -145,95 +129,74 @@
 
     const/4 v1, 0x0
 
-    .line 4
     iput v1, p0, Landroidx/vectordrawable/a/a/i$d;->c:F
 
-    .line 5
     iput v1, p0, Landroidx/vectordrawable/a/a/i$d;->d:F
 
-    .line 6
     iput v1, p0, Landroidx/vectordrawable/a/a/i$d;->e:F
 
     const/high16 v2, 0x3f800000    # 1.0f
 
-    .line 7
     iput v2, p0, Landroidx/vectordrawable/a/a/i$d;->f:F
 
-    .line 8
     iput v2, p0, Landroidx/vectordrawable/a/a/i$d;->g:F
 
-    .line 9
     iput v1, p0, Landroidx/vectordrawable/a/a/i$d;->h:F
 
-    .line 10
     iput v1, p0, Landroidx/vectordrawable/a/a/i$d;->i:F
 
-    .line 11
     new-instance v1, Landroid/graphics/Matrix;
 
     invoke-direct {v1}, Landroid/graphics/Matrix;-><init>()V
 
     iput-object v1, p0, Landroidx/vectordrawable/a/a/i$d;->j:Landroid/graphics/Matrix;
 
-    .line 12
     iput-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->m:Ljava/lang/String;
 
-    .line 13
     iget v0, p1, Landroidx/vectordrawable/a/a/i$d;->c:F
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->c:F
 
-    .line 14
     iget v0, p1, Landroidx/vectordrawable/a/a/i$d;->d:F
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->d:F
 
-    .line 15
     iget v0, p1, Landroidx/vectordrawable/a/a/i$d;->e:F
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->e:F
 
-    .line 16
     iget v0, p1, Landroidx/vectordrawable/a/a/i$d;->f:F
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->f:F
 
-    .line 17
     iget v0, p1, Landroidx/vectordrawable/a/a/i$d;->g:F
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->g:F
 
-    .line 18
     iget v0, p1, Landroidx/vectordrawable/a/a/i$d;->h:F
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->h:F
 
-    .line 19
     iget v0, p1, Landroidx/vectordrawable/a/a/i$d;->i:F
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->i:F
 
-    .line 20
     iget-object v0, p1, Landroidx/vectordrawable/a/a/i$d;->l:[I
 
     iput-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->l:[I
 
-    .line 21
     iget-object v0, p1, Landroidx/vectordrawable/a/a/i$d;->m:Ljava/lang/String;
 
     iput-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->m:Ljava/lang/String;
 
-    .line 22
     iget v1, p1, Landroidx/vectordrawable/a/a/i$d;->k:I
 
     iput v1, p0, Landroidx/vectordrawable/a/a/i$d;->k:I
 
     if-eqz v0, :cond_0
 
-    .line 23
     invoke-virtual {p2, v0, p0}, La/b/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 24
     :cond_0
     iget-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->j:Landroid/graphics/Matrix;
 
@@ -241,12 +204,10 @@
 
     invoke-virtual {v0, v1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
-    .line 25
     iget-object p1, p1, Landroidx/vectordrawable/a/a/i$d;->b:Ljava/util/ArrayList;
 
     const/4 v0, 0x0
 
-    .line 26
     :goto_0
     invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
 
@@ -254,20 +215,16 @@
 
     if-ge v0, v1, :cond_5
 
-    .line 27
     invoke-virtual {p1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    .line 28
     instance-of v2, v1, Landroidx/vectordrawable/a/a/i$d;
 
     if-eqz v2, :cond_1
 
-    .line 29
     check-cast v1, Landroidx/vectordrawable/a/a/i$d;
 
-    .line 30
     iget-object v2, p0, Landroidx/vectordrawable/a/a/i$d;->b:Ljava/util/ArrayList;
 
     new-instance v3, Landroidx/vectordrawable/a/a/i$d;
@@ -278,13 +235,11 @@
 
     goto :goto_2
 
-    .line 31
     :cond_1
     instance-of v2, v1, Landroidx/vectordrawable/a/a/i$c;
 
     if-eqz v2, :cond_2
 
-    .line 32
     new-instance v2, Landroidx/vectordrawable/a/a/i$c;
 
     check-cast v1, Landroidx/vectordrawable/a/a/i$c;
@@ -293,31 +248,26 @@
 
     goto :goto_1
 
-    .line 33
     :cond_2
     instance-of v2, v1, Landroidx/vectordrawable/a/a/i$b;
 
     if-eqz v2, :cond_4
 
-    .line 34
     new-instance v2, Landroidx/vectordrawable/a/a/i$b;
 
     check-cast v1, Landroidx/vectordrawable/a/a/i$b;
 
     invoke-direct {v2, v1}, Landroidx/vectordrawable/a/a/i$b;-><init>(Landroidx/vectordrawable/a/a/i$b;)V
 
-    .line 35
     :goto_1
     iget-object v1, p0, Landroidx/vectordrawable/a/a/i$d;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 36
     iget-object v1, v2, Landroidx/vectordrawable/a/a/i$f;->b:Ljava/lang/String;
 
     if-eqz v1, :cond_3
 
-    .line 37
     invoke-virtual {p2, v1, v2}, La/b/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_3
@@ -326,7 +276,6 @@
 
     goto :goto_0
 
-    .line 38
     :cond_4
     new-instance p1, Ljava/lang/IllegalStateException;
 
@@ -345,10 +294,8 @@
 
     const/4 v0, 0x0
 
-    .line 4
     iput-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->l:[I
 
-    .line 5
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->c:F
 
     const-string v1, "rotation"
@@ -361,7 +308,6 @@
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->c:F
 
-    .line 6
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->d:F
 
     const/4 v1, 0x1
@@ -372,7 +318,6 @@
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->d:F
 
-    .line 7
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->e:F
 
     const/4 v1, 0x2
@@ -383,7 +328,6 @@
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->e:F
 
-    .line 8
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->f:F
 
     const-string v1, "scaleX"
@@ -396,7 +340,6 @@
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->f:F
 
-    .line 9
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->g:F
 
     const-string v1, "scaleY"
@@ -409,7 +352,6 @@
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->g:F
 
-    .line 10
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->h:F
 
     const-string v1, "translateX"
@@ -422,7 +364,6 @@
 
     iput v0, p0, Landroidx/vectordrawable/a/a/i$d;->h:F
 
-    .line 11
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->i:F
 
     const-string v1, "translateY"
@@ -437,17 +378,14 @@
 
     const/4 p2, 0x0
 
-    .line 12
     invoke-virtual {p1, p2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    .line 13
     iput-object p1, p0, Landroidx/vectordrawable/a/a/i$d;->m:Ljava/lang/String;
 
-    .line 14
     :cond_0
     invoke-direct {p0}, Landroidx/vectordrawable/a/a/i$d;->b()V
 
@@ -457,12 +395,10 @@
 .method private b()V
     .locals 4
 
-    .line 1
     iget-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->j:Landroid/graphics/Matrix;
 
     invoke-virtual {v0}, Landroid/graphics/Matrix;->reset()V
 
-    .line 2
     iget-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->j:Landroid/graphics/Matrix;
 
     iget v1, p0, Landroidx/vectordrawable/a/a/i$d;->d:F
@@ -475,7 +411,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Matrix;->postTranslate(FF)Z
 
-    .line 3
     iget-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->j:Landroid/graphics/Matrix;
 
     iget v1, p0, Landroidx/vectordrawable/a/a/i$d;->f:F
@@ -484,7 +419,6 @@
 
     invoke-virtual {v0, v1, v2}, Landroid/graphics/Matrix;->postScale(FF)Z
 
-    .line 4
     iget-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->j:Landroid/graphics/Matrix;
 
     iget v1, p0, Landroidx/vectordrawable/a/a/i$d;->c:F
@@ -493,7 +427,6 @@
 
     invoke-virtual {v0, v1, v2, v2}, Landroid/graphics/Matrix;->postRotate(FFF)Z
 
-    .line 5
     iget-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->j:Landroid/graphics/Matrix;
 
     iget v1, p0, Landroidx/vectordrawable/a/a/i$d;->h:F
@@ -518,17 +451,14 @@
 .method public a(Landroid/content/res/Resources;Landroid/util/AttributeSet;Landroid/content/res/Resources$Theme;Lorg/xmlpull/v1/XmlPullParser;)V
     .locals 1
 
-    .line 1
     sget-object v0, Landroidx/vectordrawable/a/a/a;->b:[I
 
     invoke-static {p1, p3, p2, v0}, Landroidx/core/content/res/f;->a(Landroid/content/res/Resources;Landroid/content/res/Resources$Theme;Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
     move-result-object p1
 
-    .line 2
     invoke-direct {p0, p1, p4}, Landroidx/vectordrawable/a/a/i$d;->a(Landroid/content/res/TypedArray;Lorg/xmlpull/v1/XmlPullParser;)V
 
-    .line 3
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     return-void
@@ -541,7 +471,6 @@
 
     const/4 v1, 0x0
 
-    .line 15
     :goto_0
     iget-object v2, p0, Landroidx/vectordrawable/a/a/i$d;->b:Ljava/util/ArrayList;
 
@@ -551,7 +480,6 @@
 
     if-ge v1, v2, :cond_1
 
-    .line 16
     iget-object v2, p0, Landroidx/vectordrawable/a/a/i$d;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -586,7 +514,6 @@
 
     const/4 v1, 0x0
 
-    .line 17
     :goto_0
     iget-object v2, p0, Landroidx/vectordrawable/a/a/i$d;->b:Ljava/util/ArrayList;
 
@@ -596,7 +523,6 @@
 
     if-ge v0, v2, :cond_0
 
-    .line 18
     iget-object v2, p0, Landroidx/vectordrawable/a/a/i$d;->b:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
@@ -622,7 +548,6 @@
 .method public getGroupName()Ljava/lang/String;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->m:Ljava/lang/String;
 
     return-object v0
@@ -631,7 +556,6 @@
 .method public getLocalMatrix()Landroid/graphics/Matrix;
     .locals 1
 
-    .line 1
     iget-object v0, p0, Landroidx/vectordrawable/a/a/i$d;->j:Landroid/graphics/Matrix;
 
     return-object v0
@@ -640,7 +564,6 @@
 .method public getPivotX()F
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->d:F
 
     return v0
@@ -649,7 +572,6 @@
 .method public getPivotY()F
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->e:F
 
     return v0
@@ -658,7 +580,6 @@
 .method public getRotation()F
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->c:F
 
     return v0
@@ -667,7 +588,6 @@
 .method public getScaleX()F
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->f:F
 
     return v0
@@ -676,7 +596,6 @@
 .method public getScaleY()F
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->g:F
 
     return v0
@@ -685,7 +604,6 @@
 .method public getTranslateX()F
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->h:F
 
     return v0
@@ -694,7 +612,6 @@
 .method public getTranslateY()F
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->i:F
 
     return v0
@@ -703,17 +620,14 @@
 .method public setPivotX(F)V
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->d:F
 
     cmpl-float v0, p1, v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput p1, p0, Landroidx/vectordrawable/a/a/i$d;->d:F
 
-    .line 3
     invoke-direct {p0}, Landroidx/vectordrawable/a/a/i$d;->b()V
 
     :cond_0
@@ -723,17 +637,14 @@
 .method public setPivotY(F)V
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->e:F
 
     cmpl-float v0, p1, v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput p1, p0, Landroidx/vectordrawable/a/a/i$d;->e:F
 
-    .line 3
     invoke-direct {p0}, Landroidx/vectordrawable/a/a/i$d;->b()V
 
     :cond_0
@@ -743,17 +654,14 @@
 .method public setRotation(F)V
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->c:F
 
     cmpl-float v0, p1, v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput p1, p0, Landroidx/vectordrawable/a/a/i$d;->c:F
 
-    .line 3
     invoke-direct {p0}, Landroidx/vectordrawable/a/a/i$d;->b()V
 
     :cond_0
@@ -763,17 +671,14 @@
 .method public setScaleX(F)V
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->f:F
 
     cmpl-float v0, p1, v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput p1, p0, Landroidx/vectordrawable/a/a/i$d;->f:F
 
-    .line 3
     invoke-direct {p0}, Landroidx/vectordrawable/a/a/i$d;->b()V
 
     :cond_0
@@ -783,17 +688,14 @@
 .method public setScaleY(F)V
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->g:F
 
     cmpl-float v0, p1, v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput p1, p0, Landroidx/vectordrawable/a/a/i$d;->g:F
 
-    .line 3
     invoke-direct {p0}, Landroidx/vectordrawable/a/a/i$d;->b()V
 
     :cond_0
@@ -803,17 +705,14 @@
 .method public setTranslateX(F)V
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->h:F
 
     cmpl-float v0, p1, v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput p1, p0, Landroidx/vectordrawable/a/a/i$d;->h:F
 
-    .line 3
     invoke-direct {p0}, Landroidx/vectordrawable/a/a/i$d;->b()V
 
     :cond_0
@@ -823,17 +722,14 @@
 .method public setTranslateY(F)V
     .locals 1
 
-    .line 1
     iget v0, p0, Landroidx/vectordrawable/a/a/i$d;->i:F
 
     cmpl-float v0, p1, v0
 
     if-eqz v0, :cond_0
 
-    .line 2
     iput p1, p0, Landroidx/vectordrawable/a/a/i$d;->i:F
 
-    .line 3
     invoke-direct {p0}, Landroidx/vectordrawable/a/a/i$d;->b()V
 
     :cond_0

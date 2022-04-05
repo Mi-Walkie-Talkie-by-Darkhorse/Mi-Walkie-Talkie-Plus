@@ -1,6 +1,5 @@
 .class Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulFuture;
 .super Lcom/google/common/util/concurrent/Futures$ImmediateFuture;
-.source "Futures.java"
 
 
 # annotations
@@ -52,10 +51,8 @@
 
     const/4 v0, 0x0
 
-    .line 1
     invoke-direct {p0, v0}, Lcom/google/common/util/concurrent/Futures$ImmediateFuture;-><init>(Lcom/google/common/util/concurrent/Futures$1;)V
 
-    .line 2
     iput-object p1, p0, Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulFuture;->value:Ljava/lang/Object;
 
     return-void
@@ -71,7 +68,6 @@
         }
     .end annotation
 
-    .line 1
     iget-object v0, p0, Lcom/google/common/util/concurrent/Futures$ImmediateSuccessfulFuture;->value:Ljava/lang/Object;
 
     return-object v0
